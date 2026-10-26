@@ -1,158 +1,276 @@
-钙医学是一门小数点意义重大的专科：**校正钙3.4会让心脏停搏、甲状腺切除后钙1.9会在夜间抽搐、而脊柱T值-3.0预测着终结十年独立生活的那次骨折。**运动系统同时是身体的钙库与内分泌系统最大的器官、本章就是那个接口。
+钙的作用远不止构建骨骼。细胞外液中离子钙的浓度决定神经和肌肉的兴奋性，触发心肌收缩，并为血液凝固所必需。机体利用甲状旁腺激素（PTH）、维生素D和肾脏，以骨骼为巨大的储备库，把总钙严格维持在约2.2至2.6 mmol/L的范围内。当防线失守时，血钙就会升高或降低。当储备库被长期动用，或骨骼更新不良时，骨骼便会变得脆弱。
 
-本章涵盖钙与骨生理、骨质疏松与骨折预防、高钙血症与低钙血症、及代谢性骨病。
+本课介绍钙和磷的生理、高钙血症和低钙血症的病因与检查、维生素D缺乏与骨软化症、骨质疏松症及其治疗，以及佩吉特骨病。作为急症的严重高钙血症和低钙血症见[[endocrine/endocrine-emergencies]]。英国的实践遵循NICE指南NG132（《甲状旁腺功能亢进症》，2019年）、英国国家骨质疏松指南组（NOGG）指南（2022年）以及关于骨折风险评估的NICE CG146。
 
-## 生理
+## 钙的生理 {#sec-physiology}
 
-::: definition 钙调节轴 {#def-physiology}
-**三种激素（甲状旁腺激素——由甲状旁腺钙敏感受体在离子钙下降时释放、作用于骨以动员钙、作用于肾以重吸收钙并排磷并生成1,25双羟维生素D——[[renal/tubular-function]]；维生素D——皮肤光合成然后肝激活再肾激活的旅程、决定其水平的阳光与膳食及肤色与纬度及贫困因素、及其在十二指肠上调钙吸收的基因组作用——[[gastrointestinal/digestion-absorption]]、[[public-health/global-health]]；成纤维细胞生长因子23——偶联磷处理与维生素D代谢抑制的骨细胞激素、其药理表亲是罕见病治疗——[[renal/potassium-calcium-phosphate]]；加降钙素边缘的急性作用）。重建单位（破骨细胞吸收与成骨细胞形成、由核因子κB配体与骨保护素信号及骨细胞机械感知偶联——[[cell-biochemistry/signalling-cell-cycle]]、[[physiology/muscle]]的负荷-转录逻辑；负钙平衡窗口——生长、妊娠与哺乳、绝经、制动——[[obstetrics-gynaecology/postnatal-period]]邻近[[obstetrics-gynaecology/pregnancy-antenatal]]、[[geriatrics-palliative/ageing-frailty]]）。实验室实务（白蛋白校正或离子钙、及危重病中校正错误的警诫——[[clinical-skills/laboratory-tests]]、[[gastrointestinal/liver-function]]；磷-镁-碱性磷酸酶-甲状旁腺激素-维生素D-肌酐组合作为标准筛查；骨转换标志物的专科生态位；及“高钙血症中不恰当地正常的甲状旁腺激素”反射——区分甲状旁腺激素依赖与非依赖病因的判读[[#def-hypercalcaemia]]）。骨骼作为内分泌器官与储备库（钙稳态以结构完整换取——抗骨吸收药理必然以骨量换取某物的原因：非典型股骨骨折与颌骨坏死教训见下[[#def-osteoporosis]]）。**
+机体约99%的钙以羟基磷灰石的形式存在于骨中。血浆钙中约45%为**离子钙**（游离钙），40–45%与蛋白（主要是白蛋白）结合，其余与枸橼酸、磷酸等阴离子形成复合物。只有离子钙具有生物活性并受到调节。
+
+由于实验室通常测定总钙，低白蛋白会降低总钙而不改变离子钙部分。英国常用的校正公式是：
+
+$$
+\text{校正钙} = \text{实测钙} + 0.02 \times (40 - \text{白蛋白})
+$$ {#eq-adjusted-ca}
+
+钙的单位为mmol/L，白蛋白为g/L。各实验室可能使用本地推导的公式；在白蛋白极端值、危重症和肾衰竭时该校正不可靠。在需要准确时，应直接测定离子钙，例如用血气分析仪。酸中毒增加离子钙比例（氢离子把钙从白蛋白上置换下来）；碱中毒则使其减少，这就是过度换气可引起麻刺感和痉挛的原因。
+
+::: definition 调节钙的激素 {#def-physiology}
+- **甲状旁腺激素（PTH）**由四个甲状旁腺分泌，以响应离子钙的下降，这一下降由甲状旁腺细胞上的**钙敏感受体（CaSR）**感知。PTH在数分钟内通过增加远端肾单位的钙重吸收和从骨中释放钙来升高血钙，并在数小时至数天内刺激肾脏**1α-羟化酶**合成活性维生素D。它还使肾脏排出磷。
+- **维生素D**（胆钙化醇）在皮肤中经紫外线B照射合成或从食物中吸收。它在肝脏中羟化为**25-羟维生素D**，即用于评估维生素D状态的储存形式，然后在肾脏中羟化为**1,25-二羟维生素D（骨化三醇）**，即活性激素。骨化三醇增加肠道对钙和磷的吸收。
+- **成纤维细胞生长因子23（FGF23）**由骨细胞产生，通过增加肾脏磷排泄和抑制骨化三醇生成来降低血磷。
+- **降钙素**来自甲状腺C细胞，在某些动物中降低血钙，但在人类钙平衡中作用很小；它在临床上作为甲状腺髓样癌的肿瘤标志物而重要。
+:::
+
+::: theorem PTH可区分血钙异常的病因 {#thm-pth}
+由于甲状旁腺通过负反馈对血钙作出反应，PTH水平必须始终与血钙一起解读：
+
+- **高钙伴PTH升高或不适当地正常**，说明甲状旁腺是来源（PTH依赖性高钙血症）。
+- **高钙伴PTH被抑制**，说明是其他因素在升高血钙，而甲状旁腺已正确地关闭（PTH非依赖性高钙血症）。
+- **低钙伴PTH升高**，说明甲状旁腺在作出恰当反应，问题在于缺乏维生素D、钙，或肾脏的反应能力。
+- **低钙伴PTH降低或不适当地正常**，说明甲状旁腺衰竭（甲状旁腺功能减退症）或被抑制，例如镁缺乏。
+:::
+
+### 骨重建
+
+骨骼不断更新。来源于单核-巨噬细胞系的**破骨细胞**吸收骨；**成骨细胞**合成新的骨基质，随后矿化。成骨细胞系细胞控制破骨细胞：它们表达激活破骨细胞的**RANK配体（RANKL）**，以及作为诱饵受体阻断RANKL的**骨保护素**。埋藏在骨中的骨细胞感受机械负荷并释放抑制骨形成的**硬骨抑素**。这些分子是现代骨质疏松药物的靶点。骨量在三十岁左右达到峰值，此后下降，女性绝经后有一个加速阶段，因为雌激素缺失增加了破骨细胞活性（[[musculoskeletal/bones-joints]]）。
+
+## 高钙血症 {#sec-hypercalcaemia}
+
+::: definition 高钙血症 {#def-hypercalcaemia}
+**高钙血症**是校正钙高于参考范围，通常高于2.6 mmol/L。粗略地说，2.6–3.0 mmol/L为轻度，3.0–3.5为中度，高于3.5为重度。约90%的病例由**原发性甲状旁腺功能亢进症**或**恶性肿瘤**引起。
+:::
+
+其症状常概括为"骨痛、结石、腹痛和精神症状"（"bones, stones, groans and psychic moans"）：骨痛、肾结石、腹痛、便秘、恶心和胰腺炎，以及疲倦、情绪低落和意识模糊。高钙血症还引起**多尿和口渴**，因为钙阻断血管升压素在集合管的作用，进而导致脱水，使血钙进一步升高。心电图可显示QT间期缩短。许多轻度高钙血症患者没有症状。
+
+按PTH划分的病因（[[#thm-pth]]）：
+
+**PTH依赖性**
+- **原发性甲状旁腺功能亢进症**：约85%为单个甲状旁腺腺瘤；多个腺体增生，有时属于MEN1或MEN2A的一部分；甲状旁腺癌罕见。最常见于绝经后女性。
+- **三发性甲状旁腺功能亢进症**：长期继发性甲旁亢后出现的甲状旁腺自主分泌，通常见于肾衰竭。
+- **家族性低尿钙性高钙血症（FHH）**：遗传性、通常为良性的CaSR失活突变，重新设定了血钙调定点。PTH正常或轻度升高，尿钙低。不需要手术。
+- 锂盐，可改变甲状旁腺的调定点。
+
+**PTH非依赖性（PTH被抑制）**
+- **恶性肿瘤**：鳞状细胞癌、肾癌、乳腺癌等分泌**PTH相关肽（PTHrP）**；骨转移；**骨髓瘤**；以及淋巴瘤中不受调控的骨化三醇生成。
+- 维生素D过量（补充剂），或**肉芽肿性疾病**（结节病、结核）中的骨化三醇生成。
+- 甲状腺毒症、肾上腺皮质功能减退、制动、噻嗪类利尿剂、服用碳酸钙引起的乳碱综合征。
+
+为区分FHH与原发性甲旁亢，用同时采集的血液和尿液样本计算**钙/肌酐清除率比值**：
+
+$$
+\text{CCCR} = \frac{[\text{尿钙}] \times [\text{血肌酐}]}{[\text{血钙}] \times [\text{尿肌酐}]}
+$$ {#eq-cccr}
+
+两种肌酐使用相同单位。比值低于约0.01提示FHH；高于0.02提示原发性甲旁亢。CASR基因检测可确诊FHH。
+
+### 原发性甲状旁腺功能亢进症
+
+大多数病例现在是在常规血液检查中发现的。除高钙血症外，其后果还有骨密度降低（尤其是前臂等皮质骨部位）、骨折、肾结石和肾钙质沉着，以及治愈后常能改善的非特异性症状。
+
+**甲状旁腺切除术**是唯一的治愈方法。NICE NG132建议，确诊原发性甲旁亢且有高钙血症症状、终末器官损害（肾结石、脆性骨折或骨质疏松），或白蛋白校正钙**≥2.85 mmol/L**者，应转诊至擅长甲状旁腺手术的外科医生；即使没有这些特征，也建议考虑转诊。术前用超声和甲氧基异丁基异腈（sestamibi）显像（或四维CT等其他影像）定位异常腺体，以便进行聚焦手术。不手术的人需要监测；无法手术时，可用使CaSR对钙更敏感的**西那卡塞（cinacalcet）**降低血钙。
+
+::: warning 不要忘记药物和脱水
+高钙血症常因噻嗪类利尿剂、钙和维生素D补充剂以及脱水而加重，并常在患者因呕吐而不适时被发现。务必复核用药记录，包括非处方补充剂，以及液体状态。反过来，被告知"少喝牛奶"的高钙血症患者得到的是错误建议：限制膳食钙对原发性甲旁亢没有帮助，还可能损害骨骼健康；保持良好的水化才有帮助。
+:::
+
+## 低钙血症 {#sec-hypocalcaemia}
+
+::: definition 低钙血症 {#def-hypocalcaemia}
+**低钙血症**是校正钙低于参考范围，通常低于2.2 mmol/L。它增加神经肌肉兴奋性，引起口周和指尖麻刺感、肌肉痉挛、**手足搐搦**、喉痉挛、抽搐，以及QT间期延长伴心律失常风险。两个经典体征是**陶瑟征（Trousseau's sign）**（血压袖带充气至收缩压以上维持至多三分钟时出现腕部痉挛）和**沃斯特克征（Chvostek's sign）**（叩击耳前面神经时面肌抽动；部分健康人也可阳性）。
+:::
+
+按PTH划分的病因：
+
+- **PTH低（甲状旁腺功能减退症）**：最常见于**甲状腺或甲状旁腺手术后**；自身免疫性；遗传性（包括22q11缺失综合征）；浸润性；以及**镁缺乏**，它既损害PTH分泌，又引起PTH抵抗。质子泵抑制剂、酒精和利尿剂是低镁的常见原因。
+- **PTH高（继发性甲状旁腺功能亢进症）**：**维生素D缺乏**、慢性肾脏病（骨化三醇减少和磷潴留）、吸收不良、急性胰腺炎（钙沉积于脂肪坏死处）、横纹肌溶解，以及药物，尤其是给维生素D缺乏者使用**双膦酸盐和地舒单抗**。
+
+严重或有症状的低钙血症是急症，需在心电监护下**静脉给予葡萄糖酸钙**（[[endocrine/endocrine-emergencies]]）。慢性甲状旁腺功能减退症用**活性维生素D**（阿法骨化醇或骨化三醇）治疗，因为没有PTH时肾脏无法活化维生素D，必要时加用钙剂。目标是使血钙处于正常低值范围，以避免高尿钙和肾结石。
+
+## 维生素D缺乏与骨软化症 {#sec-osteomalacia}
+
+在英国，血清25-羟维生素D低于25 nmol/L一般被视为缺乏，25–50 nmol/L对某些人可能不足。由于英国冬季日光中的紫外线B太少，无法合成维生素D，英国政府建议所有人在秋冬季考虑每日补充维生素D，高风险者全年补充。风险较高的人包括：深色皮肤者，他们需要更多日照才能合成同样多的维生素D；皮肤被遮盖者；居家不出或住在护理院者；以及有吸收不良、肝病或肾病，或服用某些抗惊厥药等酶诱导药物者。
+
+长期缺乏导致新骨基质矿化缺陷。在儿童中，于骨骺闭合之前，这就是**佝偻病**：O形腿、腕部增宽、生长迟缓和肋软骨连接处肿大。在成人中则为**骨软化症**：弥漫性骨痛和压痛、近端肌无力伴鸭步，以及X线上的**Looser带**（假骨折）。血液检查通常显示血钙降低或正常低值、血磷降低、碱性磷酸酶升高和PTH升高。治疗是补充维生素D（先负荷再维持），膳食钙摄入低时加用钙剂。
+
+## 骨质疏松症 {#sec-osteoporosis}
+
+::: definition 骨质疏松症 {#def-osteoporosis}
+**骨质疏松症**是以骨量低和骨微结构破坏为特征、导致骨脆性和骨折风险增加的骨骼疾病。采用双能X线吸收测定法（**DXA**），WHO将其定义为髋部或脊柱骨密度**T值≤−2.5**。T值是与同性别年轻健康成人均值相差的标准差数。T值在−1与−2.5之间为**骨量减少**。**脆性骨折**是从站立高度或更低处跌倒所致的骨折；椎体或髋部脆性骨折通常提示骨质疏松，不论T值如何。
+:::
+
+骨质疏松在骨折发生之前没有症状。典型骨折部位是椎体（常不被察觉，导致身高降低和驼背）、桡骨远端和髋部。髋部骨折后一年内死亡率很高，并常导致丧失独立生活能力。在英国，约一半的50岁以上女性和五分之一的50岁以上男性会发生脆性骨折。
+
+危险因素包括年龄、女性、既往脆性骨折、父母髋部骨折、低体重指数、**糖皮质激素治疗**、吸烟、每日饮酒超过三个单位、类风湿关节炎、过早绝经、男性性腺功能减退、吸收不良、甲亢、原发性甲旁亢以及某些药物（芳香化酶抑制剂、雄激素剥夺治疗）。
+
+**骨折风险评估**使用**FRAX**或**QFracture**等工具，根据临床危险因素（加或不加骨密度）估算10年主要骨质疏松性骨折概率。在英国，NOGG提供与年龄相关的干预阈值。**极高风险者**（例如近期椎体骨折或T值极低）转诊至专科，NOGG 2022建议考虑对他们**首先使用促骨形成药物**。
+
+治疗包括一般措施和药物：
+
+- **一般措施**：摄入充足的钙（最好来自饮食）和维生素D，负重和平衡锻炼，戒烟，限酒，以及**预防跌倒**（[[geriatrics-palliative/falls]]）。
+- **双膦酸盐**（口服阿仑膦酸钠、利塞膦酸钠；每年静脉输注唑来膦酸）与骨矿物结合并抑制破骨细胞。口服双膦酸盐必须空腹用清水送服，服药后至少30分钟保持坐位或立位，以避免食管炎并保证吸收。长期使用罕见但重要的不良反应是**颌骨坏死**和**非典型股骨骨折**；口服约五年（或静脉三年）后应评估是否需要继续，较低风险者可考虑停药间歇。
+- **地舒单抗（denosumab）**是抗RANKL单克隆抗体，每六个月注射一次。停药后骨转换急剧反跳，可发生多发椎体骨折，因此不能在没有计划的情况下停用或延迟，通常需过渡到双膦酸盐。
+- **促骨形成药物**构建新骨：**特立帕肽（teriparatide）**（PTH类似物，每日注射；间歇性PTH刺激骨形成多于骨吸收）和**罗莫佐单抗（romosozumab）**（抗硬骨抑素抗体，每月一次，共12个月；心肌梗死或卒中后避免使用）。之后需序贯使用抗骨吸收药物以保持获益。
+- **激素替代治疗**可预防骨丢失和骨折，尤其适合较年轻的绝经后女性（[[endocrine/reproductive-endocrinology]]）。**雷洛昔芬（raloxifene）**可减少椎体骨折。
+
+开始使用双膦酸盐或地舒单抗之前，应确保钙和维生素D充足、检查肾功能，并建议口腔检查。
+
+## 佩吉特骨病及其他代谢性骨病 {#sec-paget}
+
+**佩吉特骨病（Paget's disease of bone）**是一种局灶性的骨重建紊乱、过度的疾病。受累骨（常为骨盆、脊柱、颅骨、股骨和胫骨）增大、变形，尽管致密却更脆弱。它见于老年人，在英国血统人群中更常见，但患病率已经下降。许多病例是因碱性磷酸酶升高而其他肝功能检查、血钙和血磷均正常而偶然发现的。并发症包括骨痛、畸形（胫骨弯曲、颅骨增大）、脑神经受压或听小骨受累导致的耳聋、骨折、邻近关节骨关节炎，罕见骨肉瘤。核素骨扫描可显示病变范围。单次输注**唑来膦酸**是治疗活动性病变所致骨痛的常用方法。
+
+在**慢性肾脏病**中，骨化三醇生成减少和磷潴留引起继发性甲旁亢，以及一组称为**慢性肾脏病-矿物质和骨异常**的骨与血管改变（[[renal/chronic-kidney-disease]]）。
+
+::: example 常规检查中的发现 {#ex-phpt}
+一位63岁女性常规血液检查校正钙2.78 mmol/L，复查为2.81 mmol/L。PTH 8.9 pmol/L（参考值约1.6–6.9）。她曾患肾结石。eGFR正常。25-羟维生素D为54 nmol/L。24小时尿钙8.4 mmol（升高）。诊断是什么？她是否符合NICE的手术转诊标准？
+::: solution
+**诊断。** 高钙血症伴PTH升高，属于PTH依赖性（[[#thm-pth]]）。她未服用锂盐或噻嗪类药物，维生素D充足，尿钙高不支持FHH。这是**原发性甲状旁腺功能亢进症**。
+
+**手术转诊。** 她的血钙低于2.85 mmol/L，但她曾患**肾结石**，属于终末器官损害。因此她符合NICE NG132转诊至甲状旁腺外科医生的标准。还应做DXA扫描，因为骨质疏松也是另一项指征。
+
+**术前**：定位影像（超声和sestamibi）以计划聚焦式甲状旁腺切除术。在此期间的建议：保持水化，避免噻嗪类药物，不限制膳食钙。
+:::
+:::
+
+::: example 校正血钙 {#ex-adjusted}
+一位75岁髋部骨折男性实测血钙2.05 mmol/L，白蛋白26 g/L。他是否有低钙血症？
+::: solution
+用[[#eq-adjusted-ca]]：
+
+$$
+2.05 + 0.02 \times (40 - 26) = 2.05 + 0.02 \times 14 = 2.05 + 0.28 = 2.33 \text{ mmol/L}。
+$$
+
+校正钙在参考范围内。实测值偏低反映了低白蛋白，这在急性疾病和营养不良中很常见。如果临床仍有疑虑，可测定离子钙，因为白蛋白低时该公式不太可靠。在骨折后开始抗骨质疏松治疗之前，仍应检查并纠正他的维生素D，因为维生素D缺乏时双膦酸盐可引起低钙血症。
+:::
+:::
+
+::: example 家族性还是原发性？ {#ex-fhh}
+一位32岁男性校正钙2.71 mmol/L，PTH 7.4 pmol/L（轻度升高）。他的姐姐也被告知"血钙高"。同时采集的样本：尿钙1.2 mmol/L，尿肌酐8.0 mmol/L，血钙2.71 mmol/L，血肌酐80 µmol/L。计算钙/肌酐清除率比值并解读。
+::: solution
+将血肌酐换算为mmol/L：$80$ µmol/L $= 0.080$ mmol/L。用[[#eq-cccr]]：
+
+$$
+\text{CCCR} = \frac{1.2 \times 0.080}{2.71 \times 8.0} = \frac{0.096}{21.68} \approx 0.0044。
+$$
+
+这远低于0.01，结合家族史以及年轻男性的轻度PTH依赖性高钙血症，强烈提示**家族性低尿钙性高钙血症**。CASR基因检测可确诊。FHH通常无害，**甲状旁腺切除术不能治愈它**，因此诊断的主要目的是避免不必要的手术，并向亲属解释这一发现。应排除维生素D缺乏，因为它会降低尿钙并干扰该比值。
+:::
+:::
+
+::: example 疼痛、无力与碱性磷酸酶升高 {#ex-osteomalacia}
+一位八年前从索马里移居的46岁女性，一年来髋部和大腿酸痛，上楼困难。她的衣着遮盖了大部分皮肤。校正钙2.12 mmol/L，磷0.62 mmol/L（低），碱性磷酸酶310 U/L（升高），PTH 18 pmol/L（升高），25-羟维生素D低于10 nmol/L。诊断是什么？
+::: solution
+**严重维生素D缺乏所致骨软化症**，伴**继发性甲状旁腺功能亢进症**。维生素D低减少钙吸收；PTH升高以维持血钙（[[#thm-pth]]，低钙伴PTH高），这也促使磷从尿中丢失。未矿化的类骨质堆积，成骨细胞活性使碱性磷酸酶升高。近端肌病和骨痛是典型表现。危险因素包括深色皮肤，以及在冬季日照弱的国家穿着遮盖性衣物。
+
+治疗是先负荷后维持的维生素D补充，膳食钙摄入低时加钙，几个月后复查血液。症状在数月内改善。如果疗效不佳，应考虑乳糜泻。有相同危险因素的家庭成员也可从补充剂建议中获益。沟通应具有文化敏感性，不应暗含指责。
+:::
 :::
 
 ::: widget plot
-f: 5.5/(1+exp(-(x-9.6)*7)); 5.5/(1+exp(-(x-11.2)*7))
-x: 7.5, 13
-y: 0, 7
-labels: \text{血浆钙（mmol/L）},\ \text{甲状旁腺激素（pmol/L）};\ \text{正常调定点};\ \text{原发性甲状旁腺功能亢进调定点}
-caption: 甲状旁腺钙敏感受体调定点变得可见（[[#def-physiology]]）：正常腺体随钙上升而陡峭抑制甲状旁腺激素；在原发性甲状旁腺功能亢进中曲线右移且部分自主——那个被称为“也不算太异常”然后被漏掉多年的“钙高而甲状旁腺激素大致正常”模式（[[#def-hypercalcaemia]]、[[clinical-skills/laboratory-tests]]）。同一条曲线思维解释了为何降低甲状旁腺激素的拟钙剂在透析与甲状旁腺癌中重设刻度（[[renal/chronic-kidney-disease]]）。
-:::
-
-## 骨量
-
-::: definition 骨质疏松与骨折预防 {#def-osteoporosis}
-**定义与流行病学（T值网格——正常到骨量减少到骨质疏松——及其骨折概率现实核查、因为多数脆性骨折发生在骨量减少而非骨质疏松的多数人中、而绝对风险工具改变了处方逻辑——骨折风险评估工具带其国家与危险因素校准及其继发病因盲点——[[public-health/screening]]、[[clinical-skills/clinical-reasoning]]）；脆性连锁——椎体（常为无痛的身高丢失与后凸表现）、股骨近端（定义死亡率的事故——[[surgery/orthopaedics]]）、桡骨远端与肱骨近端（[[musculoskeletal/bones-joints]]）；跌倒乘数——把低能量机制变成骨折的老年综合征（[[geriatrics-palliative/falls]]、[[geriatrics-palliative/ageing-frailty]]）。衰老与雌激素之外的病因（糖皮质激素诱导带其预防规程与类固醇骨指导——[[endocrine/adrenal]]、[[musculoskeletal/inflammatory-arthritis]]；雄激素剥夺与芳香化酶抑制剂治疗——[[surgery/breast-endocrine-surgery]]、[[endocrine/reproductive-endocrinology]]；抗癫痫药与质子泵抑制及选择性5羟色胺再摄取抑制剂及免疫抑制剂的贡献——[[pharmacology/adverse-reactions]]、[[nervous-system/epilepsy]]；内分泌过度——甲状腺毒症与甲状旁腺功能亢进及库欣及尿钙过多状态——[[endocrine/thyroid]]、[[endocrine/adrenal]]；消化道吸收不良——乳糜泻与炎症性肠病及减重术后——[[gastrointestinal/bowel-disease]]、[[gastrointestinal/digestion-absorption]]、[[gastrointestinal/clinical-nutrition]]；肾性骨营养不良——[[renal/chronic-kidney-disease]]；及儿童与遗传背景——成骨不全与非意外伤害鉴别——[[genetics/mendelian-inheritance]]、[[paediatrics/safeguarding]]、[[paediatrics/growth-development]]）。评估双能X线吸收及其技术与判读限度；身高丢失的椎体影像；继发病因组合；及能找到可治疗一半患者的骨折与跌倒病史（[[clinical-skills/history-taking]]、[[clinical-skills/medical-imaging]]）。预防与治疗钙与维生素D及蛋白及抗阻运动及吸烟及酒精的基础——[[gastrointestinal/clinical-nutrition]]、[[public-health/prevention-promotion]]、[[psychiatry/substance-use]]；抗骨吸收药——口服双膦酸盐带其直立与吞咽及给药日程仪式及依从崩塌现实、静脉唑来膦酸作为依从解法带急性期反应、及地舒单抗作为那款出色药物、骤停时造成反跳性骨丢失灾难——[[pharmacology/adverse-reactions]]、[[clinical-skills/communication]]；合成代谢药——特立帕肽与阿巴帕肽及罗莫索珠单抗用于严重与已确立的骨质疏松、带顺序规则因为先合成后抗骨吸收而不是相反——[[pharmacology/dosing-principles]]；药物假期与疗程复审逻辑带非典型股骨骨折与颌骨坏死的诚实、及开始之前而非永不给的牙科检查规则（颌骨坏死规则：用抗骨吸收药者颌痛要紧急看牙）；及骨折联络服务与二级预防架构——骨折后倾听者到处方者的流水线、其缺席是本章最大的质量缺口（[[clinical-skills/patient-safety]]、[[public-health/health-systems-economics]]）。甲状旁腺功能减退自身的管理（钙与活性维生素D及如今的甲状旁腺激素替代前沿带高钙尿肾监测——[[#def-hypocalcaemia]]、[[endocrine/thyroid]]外科邻近）。**
-:::
-
-维生素D值得一段诚实的政策背景、因为它比任何检验制造更多的异常结果焦虑。人群维生素D缺乏是真实的、在北方纬度的深肤色者、居家者、遮盖着装者、及吸收不良者中更常见；严重缺乏导致骨软化与肌病、而补充能预防结局。然而、轻度缺乏已被（通过观察性流行病学）归咎于医学中几乎每一种疾病、从感染到抑郁、而随机试验一次次令人失望。因此临床立场是平衡的：妥善治疗有症状与生化缺乏、给真正有风险的人群补充（妊娠与哺乳、机构照护、吸收不良、抗癫痫治疗、极低日照暴露）、而拒绝把维生素D变成万能药。公共卫生杠杆——食品强化、补充规划、测量高风险社区维生素D摄取——在人群层面比个体大剂量更要紧。
-
-::: definition Paget骨病、骨软化与肾骨轴 {#def-other-bone}
-**Paget骨病（局灶破骨细胞马赛克病——副黏病毒与p62假说回响及包涵体、及SQSTM1可遗传簇、及作为血检碱性磷酸酶偶见或骨痛或畸形或病理骨折或椎管狭窄与听力丢失压迫的上升表现——[[gastrointestinal/liver-function]]的碱性磷酸酶同工酶行、[[musculoskeletal/bones-joints]]、[[nervous-system/sensory-systems]]邻近第八对脑神经、[[nervous-system/motor-systems]]邻近脊髓压迫）；同位素骨扫描与X线定性（溶骨前沿与皮质增厚及小梁粗糙及椎体扁平目录——[[clinical-skills/medical-imaging]]）；何时治疗（疼痛及邻近手术及预防性相邻病灶、及作为主力的抗骨吸收药带剂量后低钙与先补维生素D规则——[[#def-hypocalcaemia]]；罕见的肉瘤转化由新痛与影像变化识别——[[pathology/cancer-biology]]）；及大量病变中的高输出心衰与颅骨增厚照片教训（[[cardiovascular/heart-failure]]）。骨软化与佝偻病（矿化缺陷伴类骨质积累——成人以维生素D缺乏为主、带弥漫骨痛与近端肌病及鸭步及假骨折或Looser带放射学、及低钙手足抽搐与骨质疏松误标签陷阱——[[gastrointestinal/liver-function]]的碱性磷酸酶升高、[[musculoskeletal/bones-joints]]、[[nervous-system/motor-systems]]邻近肌病；营养与吸收不良及肾及药物及避光病因、带全球南北与移民的迁徙医学背景——[[gastrointestinal/digestion-absorption]]、[[renal/chronic-kidney-disease]]、[[pharmacology/adverse-reactions]]、[[public-health/global-health]]、[[public-health/determinants-inequalities]]；儿童佝偻病表型带生长失败与腕部肋骨改变及抽搐——[[paediatrics/growth-development]]、[[endocrine/endocrine-emergencies]]；及罕见低磷佝偻病与骨软化家族——X连锁低磷血症与肿瘤诱导骨软化带成纤维细胞生长因子23排磷逻辑与新的酶抑制治疗——[[genetics/mendelian-inheritance]]、[[renal/tubular-function]]）。肾性骨营养不良与慢性肾病矿物骨障碍（衰竭的肾潴留磷并失败于1,25生成而甲状旁腺激素攀升、骨转换要么高要么不动——纤维性骨炎与棕色瘤及儿童骺滑脱灾难——[[renal/chronic-kidney-disease]]、[[renal/tubular-function]]、[[paediatrics/growth-development]]、[[musculoskeletal/bones-joints]]；磷结合剂与维生素D类似物及拟钙剂时代对血管钙化与心血管死亡率的论证——[[cardiovascular/vascular-disease]]、[[renal/potassium-calcium-phosphate]]；及移植后骨的延续带激素与钙调磷酸酶抑制剂效应——[[immunology/transplant-tumour-immunology]]、[[endocrine/adrenal]]）。每种遗传性骨发育不良一句话（成骨不全带骨折与蓝巩膜及听力丢失及牙本质及家族史、及非意外伤害鉴别——[[genetics/mendelian-inheritance]]、[[paediatrics/safeguarding]]；骨骼发育不良矮身材谱——[[paediatrics/growth-development]]、[[endocrine/hypothalamus-pituitary]]生长激素轴背景；及骨硬化与Paget模拟者及高磷酸酶罕见病——[[pathology/diagnostic-pathology]]）。**
-:::
-
-跌倒与骨是同一间门诊的两道门。从站立高度跌伤的骨折是骨脆性的诊断、但摔断髋部的那份脆弱常由若干可纠正的部分组装：低骨量、走错步的肌病与神经病、体位性低血压与镇静药物、双向楼梯与松动地毯、维生素D缺乏与蛋白摄入低。预防第二次骨折的评估把所有走一遍、而起作用的处方通常是一根骨药、三种停掉的药、与一次作业治疗家访的组套。这也是骨折联络模式存在的原因：骨科医师修好骨头、必须有别人修好病因、而没有具名服务第二份工作就是不会发生。
-
-## 钙急症
-
-对钙组合的实务导向：校正或离子钙告诉你暴露、磷酸盐暗示出错的激素（低磷伴高钙指向甲状旁腺激素或类甲状旁腺激素活性、高磷则指向远离甲状旁腺而指向肾、肿瘤溶解、或维生素D过多）、碱性磷酸酶告诉你骨是否在快速重建（骨折愈合、Paget病、骨软化、转移、生长）、而肌酐告诉你这个数字到底可不可信。四个普通检验、按顺序阅读、在任何影像之前定位多数障碍。还有两个习惯预防多数错误。第一、总要把异常钙正经复查（重复样本、正常白蛋白或离子钙、在承诺一年检查或手术之前；止血带或骨髓瘤蛋白带造成的假性高钙存在但不像人们担心的那么常见）。第二、治疗眼前的患者：一个活动患者数月内升到的3.2是紧急而不是急症、而两天内达到2.9伴意识模糊与呕吐则危险——起病速度与症状比小数点更要紧。
-
-::: definition 高钙血症 {#def-hypercalcaemia}
-**识别（按几条轴的症状——骨、结石、腹部呻吟、精神色彩、而真实世界的缩短版：便秘恶心口渴多尿意识模糊与QT缩短、重症心律失常与昏迷——[[cardiovascular/arrhythmias]]、[[geriatrics-palliative/delirium-dementia-care]]、[[renal/potassium-calcium-phosphate]]的浓缩丧失逻辑）。严重度算术（白蛋白校正与离子钙确证、超过3.0或有症状就是收住与静脉通路及心电图区——[[clinical-skills/laboratory-tests]]、[[emergency-critical-care/acute-assessment]]）。按甲状旁腺激素的病因甲状旁腺激素依赖——原发性甲状旁腺功能亢进（常见、通常轻度、[[#def-physiology]]插图的右移曲线、及家族性低尿钙高钙血症模拟者、其尿钙清除率免去一次不必要的甲状旁腺手术——[[genetics/mendelian-inheritance]]、[[renal/urinary-tract]]）与锂及其调定点移动（[[psychiatry/mood-disorders]]的锂监测包、[[renal/tubular-function]]）；非甲状旁腺激素依赖——恶性肿瘤（鳞状与肾及乳腺及骨髓瘤的体液甲状旁腺激素相关蛋白综合征带其速发严重签名、及溶骨与骨转移变体[[pathology/cancer-biology]]、[[blood/lymphoma-myeloma]]、[[gastrointestinal/gi-bleeding-cancer]]、[[respiratory/lung-cancer-pleura]]）、肉芽肿与淋巴瘤的1,25生成（[[pathology/chronic-inflammation-repair]]与[[blood/lymphoma-myeloma]]及结核[[infectious-diseases/tuberculosis]]）、维生素D与A毒性及噻嗪及乳碱及妊娠哺乳状态及Addison危象及甲状腺毒症及制动（[[endocrine/adrenal]]、[[endocrine/thyroid]]、[[pharmacology/adverse-reactions]]、[[obstetrics-gynaecology/postnatal-period]]）。管理（等张盐水容量补充带肾与心谨慎、及除非容量超负荷否则避开袢利尿剂的纠正；恶性疾病用静脉唑来膦酸或帕米膦酸或地舒单抗带抗骨吸收遇上高转换时的低钙监测；降钙素快速耐受用于头48小时桥接；及治疗肿瘤与高钙危象及肾衰竭时透析的注记——[[renal/chronic-kidney-disease]]、[[endocrine/endocrine-emergencies]]）。甲状旁腺手术与无症状标准（定位影像与外科量论证、及正常甲状旁腺激素与钙的治愈证明——[[surgery/gastrointestinal-surgery]]内分泌实践、[[clinical-skills/medical-imaging]]）。**
-:::
-
-::: definition 低钙血症 {#def-hypocalcaemia}
-**识别（神经肌肉兴奋群——口周与手指麻木及手足抽搐及痉挛及喉鸣及癫痫及Chvostek与Trousseau征、及QT延长与低钙心肌病罕见情形——[[nervous-system/epilepsy]]、[[cardiovascular/arrhythmias]]、[[physiology/muscle]]的兴奋生理；及病历里那张教会一代人的口周苍白照片）。病因（外科颈部病史——甲状腺与甲状旁腺及颈清扫术后、带暂时对永久及自体移植细微——[[surgery/gastrointestinal-surgery]]、[[endocrine/thyroid]]；自身免疫多腺体与浸润性及镁缺乏的甲状旁腺功能减退——[[immunology/autoimmunity]]、[[renal/potassium-calcium-phosphate]]的“分泌甲状旁腺激素需要镁”一课；维生素D缺乏与骨软化及佝偻病带全球健康与深肤色及机构照护与北纬度流行病学——[[public-health/global-health]]、[[paediatrics/growth-development]]、[[geriatrics-palliative/ageing-frailty]]；甲状旁腺切除后饥饿骨综合征；胰腺炎与枸橼酸输血及造影及横纹肌溶解及再喂养转移——[[gastrointestinal/pancreas-biliary]]、[[blood/transfusion]]、[[gastrointestinal/clinical-nutrition]]、[[renal/potassium-calcium-phosphate]]；及慢性肾病的继发性甲状旁腺功能亢进慢性低钙倾向——[[renal/chronic-kidney-disease]]）。管理（有症状或严重的急症——静脉葡萄糖酸钙带心脏监测与地高辛上额外心脏谨慎、及避免外渗的留置针考量与重复剂量计划——[[endocrine/endocrine-emergencies]]、[[pharmacology/adverse-reactions]]；低镁时先补镁因为不补甲状旁腺就不应答——[[renal/potassium-calcium-phosphate]]；慢性口服钙与阿法骨化醇或骨化三醇方案带高钙尿肾钙质沉着监测与甲状旁腺激素替代时代——[[renal/urinary-tract]]；及颈部手术路径预防——6-12小时钙与症状教学及出院规则、及甲状旁腺激素或25羟维生素D预测者规程——[[surgery/gastrointestinal-surgery]]、[[endocrine/thyroid]]）。**
-:::
-
-::: example 不起眼的异常 {#ex-phpt}
-63岁女性常规血检显示校正钙2.68（复查2.71）、甲状旁腺激素9.4（正常上限）、肾小球滤过率58、糖化血红蛋白正常；全科记录“钙轻度升高、甲状腺抗体正常、一年后复审”；她有过两次肾“小结石”、未服任何药物。
-::: solution
-**藏在差不多正常数字里的原发性甲状旁腺功能亢进（[[#def-hypercalcaemia]]、[[#def-physiology]]插图）：未被抑制的甲状旁腺激素配正常高到轻度高钙就是诊断、而肾结石加慢性肾病加绝经后骨背景使它是有后果的、不是偶然的——每年复审而不行动是最常见的失败模式。检查组合：**用药清单审计（噻嗪与锂及钙补充及维生素D剂量——[[pharmacology/adverse-reactions]]、[[psychiatry/mood-disorders]]）；24小时尿钙查家族性低尿钙高钙血症与高尿钙风险（[[renal/urinary-tract]]、[[genetics/mendelian-inheritance]]）；非甲状旁腺激素依赖病因排除（骨髓瘤与恶性及肉芽肿旗标——[[blood/lymphoma-myeloma]]、[[infectious-diseases/tuberculosis]]）；椎体影像或骨密度查静默骨折负荷及肾影像（[[clinical-skills/medical-imaging]]）；及对照指南标准的手术转诊谈话（结石与骨及肾及年龄阈值——[[surgery/gastrointestinal-surgery]]内分泌实践）。若非手术管理：监测网格钙与肾小球滤过率与骨密度间隔、补水与结石预防、骨保护的抗骨吸收考虑、症状复查与转诊触发（[[#def-osteoporosis]]、[[public-health/screening]]）；及解释这为何不是甲状腺问题的记录（[[clinical-skills/records-handover]]）。**
-:::
-:::
-
-::: example 甲状腺切除后的夜晚 {#ex-postop-calcium}
-因Graves病全甲状腺切除后16小时、34岁患者报告唇与指刺痛、感觉“恐慌”；校正钙1.92、Chvostek征闪现、QT略长、声嘶但呼吸安静。
-::: solution
-**有症状的术后低钙伴两条需要保护的气道（[[#def-hypocalcaemia]]）：立即静脉葡萄糖酸钙带监测与重复计划（[[endocrine/endocrine-emergencies]]、[[cardiovascular/arrhythmias]]）；镁与维生素D及甲状旁腺激素血检与磷配对（饥饿骨对腺体受挫或被切除——磷的方向把它们分开——[[renal/potassium-calcium-phosphate]]、[[clinical-skills/laboratory-tests]]）；声音与血肿检查（双侧喉返神经麻痹与颈部肿胀急症优先于血钙——[[nervous-system/sensory-systems]]、[[endocrine/thyroid]]外科行、[[surgery/gastrointestinal-surgery]]）；口服钙与阿法骨化醇加量与撤减规程带严格症状教学、及防止再入院的那个院外电话号码（[[clinical-skills/communication]]、[[clinical-skills/patient-safety]]）；血清与尿钙监测查过度治疗（[[renal/urinary-tract]]）；及出院文书（暂时对永久甲状旁腺功能减退的预期、长期内分泌门诊、及若年轻则替代与生育规划——[[obstetrics-gynaecology/contraception-fertility]]、[[endocrine/reproductive-endocrinology]]）。**
-:::
-:::
-
-::: example 全身疼痛的移民祖母 {#ex-osteomalacia}
-71岁女性、近期从阳光充足国家来、基本居家、6个月弥漫酸痛、鸭步、从椅子起身困难、钙2.1、磷0.6、碱性磷酸酶420、甲状旁腺激素18、维生素D 12 nmol/L；骨密度报告“骨量减少”。
-::: solution
-**骨软化、而骨密度那行是个诱饵（[[#def-other-bone]]）：低钙低磷高碱性磷酸酶高甲状旁腺激素伴严重维生素D缺乏与近端肌病的模式是矿化失败、不只是低骨量——而在补充之前为“骨量减少”用双膦酸盐会加重低钙（[[#def-osteoporosis]]顺序规则、[[pharmacology/adverse-reactions]]）。计划：先补充（负荷与维持维生素D及口服钙方案、带饥饿骨与低钾及低镁复查日历——[[renal/potassium-calcium-phosphate]]、[[endocrine/endocrine-emergencies]]邻近手足抽搐监测）；膳食与阳光之外的病因清扫（乳糜泻与炎症性肠病及胰腺吸收不良及药物加速分解及肾处理——[[gastrointestinal/bowel-disease]]、[[gastrointestinal/pancreas-biliary]]、[[pharmacology/adverse-reactions]]）；现在的跌倒与骨折风险（近端肌病跌倒算术与居家安全及力量规划——[[geriatrics-palliative/falls]]、[[gastrointestinal/clinical-nutrition]]蛋白与钙摄入）；假骨折与病理骨折检查（负重安心之前的股骨颈与骨干Looser带影像——[[clinical-skills/medical-imaging]]、[[surgery/orthopaedics]]）；及家庭与社区公共卫生推动（深肤色与纬度与遮面及补充规划、及妊娠哺乳易感性、及孩子的维生素D核查——[[public-health/global-health]]、[[public-health/prevention-promotion]]、[[obstetrics-gynaecology/postnatal-period]]、[[paediatrics/growth-development]]）。**
-:::
-:::
-
-::: example 膝门诊升高的碱性磷酸酶 {#ex-paget}
-74岁男性因膝置换就诊、碱性磷酸酶610而谷氨酰转移酶与胆红素正常、钙正常、新发小腿与髋痛及鞋码变大；X线显示胫骨与骨盆皮质增厚与小梁粗糙。
-::: solution
-**多骨性Paget病、有症状（[[#def-other-bone]]）：孤立碱性磷酸酶升高的骨同工酶逻辑（[[gastrointestinal/liver-function]]碱性磷酸酶行、[[clinical-skills/laboratory-tests]]）、骨扫描绘制病变地图及X线特征表现（[[clinical-skills/medical-imaging]]）；治疗指征（疼痛及邻近承重关节及减少手术出血及脊神经压迫背景——[[musculoskeletal/bones-joints]]、[[nervous-system/motor-systems]]）；单次临床剂量唑来膦酸选项带先补足维生素D及剂量后低钙与急性期反应咨询（[[#def-hypocalcaemia]]、[[pharmacology/adverse-reactions]]）；长远监视（新发局灶疼痛的恶性警报带影像——[[pathology/cancer-biology]]；大量病变的心输出量——[[cardiovascular/heart-failure]]；听力与颅骨检查——[[nervous-system/sensory-systems]]）；及围手术期协调（外科与麻醉医师知晓血管性骨及尺寸与定位错判的含义——[[surgery/orthopaedics]]、[[surgery/anaesthesia-pain]]）。**
-:::
+f: c + 0.02*(40 - x)
+x: 15, 50
+y: 1.8, 3.0
+sliders: c=2.2:1.8:2.8:0.01
+hlines: 2.2; 2.6
+labels: \text{实测钙为 } c \text{ 时的校正钙}
+caption: 用英国常用公式计算的校正钙（mmol/L，纵轴）随白蛋白（g/L，横轴）的变化。移动滑块设定实测钙$c$。白蛋白越低，校正使数值升高越多；白蛋白极低时公式最不可靠。虚线参考线为2.2和2.6 mmol/L。仅为示意。
 :::
 
 ::: quiz
-严重症状性高钙血症的一线治疗是：
-- [x] 等张静脉盐水容量补充
-- [ ] 口服司维拉姆
-- [ ] 单用静脉呋塞米利尿
-- [ ] 皮下骨化三醇
+一位70岁女性血钙3.21 mmol/L，PTH被抑制，碱性磷酸酶升高。以下哪项是最可能的病因？
+- [ ] 原发性甲状旁腺功能亢进症
+- [ ] 家族性低尿钙性高钙血症
+- [x] 累及骨骼或分泌PTHrP的恶性肿瘤
+- [ ] 维生素D缺乏
 ::: solution
-**患者因钙驱动的利钠与利尿而容量枯竭（[[#def-hypercalcaemia]]、[[renal/potassium-calcium-phosphate]]、[[renal/water-sodium]]）；盐水恢复灌注与钙排泄、同时特异药物（双膦酸盐或地舒单抗、短桥降钙素、治疗病因及肾衰竭时透析）随后（[[endocrine/endocrine-emergencies]]）；单用袢利尿剂会恶化容量、而旧的呋塞米狂热已退役；骨化三醇会添加钙（[[renal/tubular-function]]维生素D逻辑[[#def-physiology]]）。**
+PTH被抑制意味着高钙血症是PTH非依赖性的，排除了原发性甲旁亢和FHH。维生素D缺乏引起低钙。恶性肿瘤是最常见的PTH非依赖性病因，尤其在这一血钙水平。她需要评估肿瘤，包括骨髓瘤。
 :::
 :::
 
 ::: history
-**骨与钙谱系：佝偻病流行病学与鱼肝油时代（工业时代“英格兰最佝偻的郡”调查、Goldblatt与Soames 1923年照射麦角固醇、及McCollum与Hess及Windaus及Holt及Sherman多实验室奔向维生素D的竞赛——[[public-health/global-health]]）；甲状旁腺手足抽搐时代（Hunter在次全甲状腺切除中误切的甲状旁腺、Gley与von Hassall的腺体辨认、及MacArthur与Mandelbaum及Aub 1930年代的甲状旁腺功能亢进特征描述——[[endocrine/thyroid]]外科史）；Fuller-Albright学派定义了内分泌骨病（卵巢激素与骨、库欣综合征的骨质疏松、Albright遗传性骨营养不良——[[genetics/mendelian-inheritance]]、[[endocrine/adrenal]]）；Frost的重建定则把骨重建变成一门工程学科（[[#def-physiology]]）；Fleisch与Schenk的双膦酸盐化学偶然（从尿来源抑制因子变成世纪最大骨药——[[pharmacology/drug-receptor]]）；1990年代骨密度与世界卫生组织T值编码及骨折风险时代转向绝对风险（[[public-health/screening]]）；绝经后激素的教训（妇女健康研究与雌激素替代试验曲线及辩论的骨一侧——[[obstetrics-gynaecology/menopause]]）；地舒单抗的核因子κB配体从骨免疫学转化（[[immunology/adaptive-responses]]邻近核因子κB配体生物学）；及骨折联络服务运动使第二次骨折成为可追查的失败（[[clinical-skills/patient-safety]]）。**
+瑞典医学生**伊瓦尔·桑德斯特伦（Ivar Sandström）**于1880年描述了甲状旁腺。1925年，曾参与纯化胰岛素的**詹姆斯·科利普（James Collip）**制备出能升高血钙的活性甲状旁腺提取物。佝偻病被证明可以预防：1919年**爱德华·梅兰比（Edward Mellanby）**用鱼肝油治愈了狗的佝偻病，同年**库尔特·胡尔德钦斯基（Kurt Huldschinsky）**用紫外线治愈了儿童佝偻病，1922年**埃尔默·麦科勒姆（Elmer McCollum）**确定抗佝偻病因子是一种新的维生素，即维生素D。1877年，**詹姆斯·佩吉特（James Paget）**描述了以他的名字命名的骨病。20世纪40年代，麻省总医院的**富勒·奥尔布赖特（Fuller Albright）**把绝经后雌激素丧失与骨质疏松联系起来。
 :::
 
-还有一条床边警诫把本章与急诊和重症章节相连：钙随疾病移动。输血中的枸橼酸、碳酸氢盐与区域枸橼酸抗凝、胰腺炎、横纹肌溶解、肿瘤溶解与再喂养都在静默转移钙、而白蛋白在每个不适患者身上漂移、所以通气患者一个“正常”钙可能是轻度低钙、而一个高钙可能是穿着实验室假象外衣的真实高钙。离子测量、结合背景的判读、及对镁再看一眼、能正确处理病例的多数。
+## 后续内容
 
-## 通向何处
-
-肾处理在[[renal/tubular-function]]与[[renal/potassium-calcium-phosphate]]；外科颈部在[[endocrine/thyroid]]；慢性肾病矿物骨在[[renal/chronic-kidney-disease]]；骨折与固定在[[surgery/orthopaedics]]；跌倒在[[geriatrics-palliative/falls]]；绝经骨丢失在[[obstetrics-gynaecology/menopause]]。
-
-::: exercise 读儿童的骨 {level=2}
-14个月龄婴儿O型腿、腕部增宽、佝偻病串珠、钙2.0、碱性磷酸酶900、甲状旁腺激素25、维生素D 14：诊断及保障与公共卫生层。
-::: solution
-**营养性佝偻病伴继发性甲状旁腺化学（[[#def-other-bone]]、[[paediatrics/growth-development]]）：治疗剂量维生素D带钙覆盖及低钙癫痫监测及一过性愈合痛（[[endocrine/endocrine-emergencies]]、[[renal/potassium-calcium-phosphate]]、[[nervous-system/epilepsy]]）；膳食与日照及母亲状态病史及兄弟姐妹核查（[[gastrointestinal/clinical-nutrition]]、[[public-health/global-health]]）；做得好的保障视角（弯曲对骨折模式鉴别及成骨不全之问、及病史不一致时的非意外伤害流程——[[paediatrics/safeguarding]]、[[genetics/mendelian-inheritance]]）；及家庭支持与补充规划及随访生长及骨科后遗——[[paediatrics/growth-development]]、[[surgery/orthopaedics]]、[[public-health/prevention-promotion]]。**
-:::
-:::
-
-::: exercise 分拣慢性肾病的骨图像 {level=2}
-透析患者甲状旁腺激素3、钙2.5、磷2.0、碱性磷酸酶正常低值、用钙基结合剂与骨化三醇：提示何种骨转换状态、处方错误是什么？
-::: solution
-**低转换骨地带（过度抑制的甲状旁腺激素伴低碱性磷酸酶及正钙平衡——[[#def-other-bone]]、[[renal/chronic-kidney-disease]]）：需纠正的错误（结合剂与骨化三醇的钙负荷带高钙风险与血管钙化担忧——[[cardiovascular/vascular-disease]]、[[renal/potassium-calcium-phosphate]]；及未识别的甲状旁腺激素抑制及为拟钙剂与结合剂切换及维生素D方案的肾科复审）；骨折风险现实（低转换骨会断且愈合差、而骨密度不反映它、双膦酸盐在这里通常是错的——[[#def-osteoporosis]]）；及透析充分性与磷膳食及结合剂时机教育（[[renal/chronic-kidney-disease]]、[[gastrointestinal/clinical-nutrition]]）。**
-:::
-:::
+肾脏对钙和磷的处理见[[renal/potassium-calcium-phosphate]]。骨折及其处理见[[musculoskeletal/fractures]]，跌倒预防见[[geriatrics-palliative/falls]]。钙的急症见[[endocrine/endocrine-emergencies]]。
 
 ::: summary
-- 先按白蛋白校正或直接测离子钙、然后问一个问题：甲状旁腺激素是否被恰当抑制？这分开所有高钙血症。
-- 伴结石、慢性肾病或骨丢失的“轻度”高钙不是轻度；未被抑制的甲状旁腺激素就是自白。
-- 有症状的低钙是气道与心脏急症——静脉钙、查镁、保护颈部手术患者的神经与血肿检查与数字同等要紧。
-- 骨质疏松按绝对风险与绝对背景治疗：依从性、跌倒、继发病因、及先合成后抗骨吸收的顺序、而地舒单抗绝不骤停。
-- 骨折联络原则：每个脆性骨折在被证明否则之前都是一例未诊断的钙骨疾病。
+- 只有离子钙具有活性。按白蛋白校正总钙（$+0.02 \times (40 - \text{白蛋白})$），需要准确时测定离子钙。
+- PTH通过骨、肾和骨化三醇升高血钙；将PTH与血钙一起解读以定位问题。
+- 高钙血症大多为原发性甲旁亢（PTH高或正常）或恶性肿瘤（PTH被抑制）。钙/肌酐清除率比值可识别无需手术的FHH。
+- 原发性甲旁亢有症状、终末器官损害或血钙≥2.85 mmol/L时，NICE建议转诊手术。
+- 低钙血症引起手足搐搦和QT延长；颈部手术后通常由甲状旁腺功能减退引起；要检查镁。
+- 维生素D缺乏引起佝偻病和骨软化症，伴低磷、碱性磷酸酶高和PTH高。
+- 骨质疏松是T值≤−2.5或脆性骨折；用FRAX或QFracture评估风险。治疗用双膦酸盐、地舒单抗（无计划绝不停用），极高风险者用促骨形成药物。
+- 佩吉特骨病表现为单纯碱性磷酸酶升高、骨痛和畸形。
 :::
 
-## 练习
+## 习题
 
-::: exercise 校正血钙 {level=1}
-脓毒症患者总钙3.1而白蛋白20。校正后的可能值与决定是什么？
+::: exercise 校正血钙 {level=1 check="2.10+0.02*(40-28)"}
+实测血钙2.10 mmol/L，白蛋白28 g/L。用$\text{Ca} + 0.02 \times (40 - \text{白蛋白})$计算校正钙（mmol/L）。
 ::: solution
-**应用校正规则（白蛋白每低于正常1 g/L约加0.02 mmol/L——[[#def-hypercalcaemia]]与[[gastrointestinal/liver-function]]的算术）；这里校正后钙仍有意义地升高、而离子部分决定（[[clinical-skills/laboratory-tests]]）；治疗严重度与症状与心电图、而不是原始数字（[[cardiovascular/arrhythmias]]、[[#def-hypercalcaemia]]）；脓毒症背景提出隐匿恶性与肾上腺之问（[[infectious-diseases/fever-sepsis]]、[[endocrine/adrenal]]）。**
+$2.10 + 0.02 \times 12 = 2.10 + 0.24 = 2.34$ mmol/L，在参考范围内。
 :::
 :::
 
-::: exercise 选择药物 {level=1}
-首个口服双膦酸盐年度：谁需要先做牙科复审、及哪些依从事实会改变结局？
+::: exercise 解读PTH {level=1}
+给出可能的病因类别：(a) 血钙2.95，PTH被抑制；(b) 血钙2.75，PTH 9 pmol/L（高）；(c) 甲状腺切除术后两天血钙1.95，PTH测不出；(d) 血钙2.10，PTH 15 pmol/L（高），维生素D 12 nmol/L。
 ::: solution
-**大剂量静脉或肿瘤剂量治疗之前的牙科检查是硬规则、而常规口服双膦酸盐是风险沟通而不是拒不给药（[[#def-osteoporosis]]颌骨坏死行）；依从事实——直立与白水及空腹仪式、及每月选项、及消化道失败时的静脉唑来膦酸后备、及5年复审与药物假期逻辑（[[pharmacology/adverse-reactions]]、[[gastrointestinal/oesophagus-stomach]]、[[clinical-skills/communication]]）。**
+(a) PTH非依赖性高钙血症，最常为恶性肿瘤。(b) PTH依赖性高钙血症，最常为原发性甲旁亢（需排除FHH）。(c) 术后甲状旁腺功能减退症。(d) 维生素D缺乏所致继发性甲旁亢。
 :::
 :::
 
-::: exercise 解释地舒单抗 {level=2}
-“我要停我的骨针、因为我听说了颌骨问题。”准确的谈话是什么？
+::: exercise T值 {level=1}
+分类：(a) 一位无骨折的66岁女性股骨颈T值−1.8；(b) 腰椎T值−2.7；(c) 一位曾发生椎体脆性骨折的72岁老人T值−1.5。
 ::: solution
-**先命名风险再命名反跳（[[#def-osteoporosis]]）：颌骨坏死在骨质疏松剂量下罕见、而牙科卫生及在治疗前或早期完成的择期牙科操作会降低它（[[musculoskeletal/skin]]）；但突然停针会触发快速骨丢失与椎体反跳骨折、所以停药是一个转向另一种抗骨吸收药的计划过渡、不是自由（[[pharmacology/dosing-principles]]、[[clinical-skills/patient-safety]]）；要紧的风险比较（未治疗严重骨质疏松中的骨折对药物罕见事件——绝对数字与她的价值观[[clinical-skills/communication]]、[[epidemiology-ebm/statistics-for-clinicians]]）；及带下一种药与日期的书面计划（[[clinical-skills/records-handover]]）。**
+(a) 骨量减少。(b) 骨质疏松。(c) 临床上为骨质疏松：椎体脆性骨折提示骨骼脆性，不论T值如何，通常需要治疗。
 :::
 :::
 
-::: exercise 追查病因 {level=2}
-55岁未用类固醇而骨质疏松伴骨折：列出五个内分泌、消化道、血液的继发搜寻及其检验。
+::: exercise 计算比值 {level=2 check="round(1000*(4.5*0.070)/(2.80*6.0))/1000"}
+同时采集的样本显示尿钙4.5 mmol/L，尿肌酐6.0 mmol/L，血钙2.80 mmol/L，血肌酐70 µmol/L。计算钙/肌酐清除率比值，保留三位小数，并解读。
 ::: solution
-**甲状腺（TSH与医源性过度替代——[[endocrine/thyroid]]）；甲状旁腺（钙与甲状旁腺激素——[[#def-hypercalcaemia]]）；性腺（绝经时间与睾酮——[[endocrine/reproductive-endocrinology]]）；皮质醇与葡萄糖（库欣筛查与类固醇审计——[[endocrine/adrenal]]）；肠与血（乳糜泻血清学与全血细胞计数及骨髓瘤筛查及尿钙研究——[[gastrointestinal/bowel-disease]]、[[blood/lymphoma-myeloma]]、[[renal/urinary-tract]]）；加药物与维生素D及酒精账本（[[pharmacology/adverse-reactions]]、[[psychiatry/substance-use]]）——[[#def-osteoporosis]]的组合。**
+血肌酐$= 0.070$ mmol/L。CCCR $= (4.5 \times 0.070)/(2.80 \times 6.0) = 0.315/16.8 = 0.01875$，保留三位小数为**0.019**。这接近0.02且远高于0.01，因此FHH可能性小，结果支持原发性甲旁亢（0.01至0.02之间为灰区）。
 :::
 :::
 
-::: exercise 处理危象 {level=2}
-骨髓瘤患者：钙3.8、意识模糊、脱水、肌酐210。写出头八小时。
+::: exercise 地舒单抗 {level=2}
+一位女性已每六个月注射一次地舒单抗共五年。她觉得自己很好，想要停药。解释风险以及应该怎么做。
 ::: solution
-**恶性疾病高钙危象（[[#def-hypercalcaemia]]）：高级复审与收住（[[endocrine/endocrine-emergencies]]）；等张盐水带严格平衡与心脏监测（[[renal/water-sodium]]、[[cardiovascular/heart-failure]]）；按肾与血液科计划静脉唑来膦酸或地舒单抗带24-72小时延迟与低钙监测（[[renal/chronic-kidney-disease]]、[[pharmacology/dosing-principles]]）；严重症状用降钙素桥接带快速耐受警诫；暂停钙与噻嗪及维生素D与乳碱并复审袢利尿剂使用（[[pharmacology/adverse-reactions]]）；意识模糊的谵妄规程（[[geriatrics-palliative/delirium-dementia-care]]）；淋巴瘤与骨髓瘤特异治疗的紧迫性及局部骨危象的放疗（[[blood/lymphoma-myeloma]]）；并行的目标照护谈话（[[geriatrics-palliative/palliative-care]]、[[clinical-skills/communication]]）。**
+地舒单抗只在体内存在时抑制破骨细胞。药效消失后，骨吸收反跳至高于基线，获得的骨量迅速丢失，数月内可发生多发椎体骨折。停药必须有计划：通常的做法是在原本下一次地舒单抗到期前后给予双膦酸盐（常为唑来膦酸），并进行监测。注射不应推迟超过几周。应与她共同决策，并清楚解释为什么"感觉良好"并不意味着治疗可以简单停止。
 :::
 :::
 
-::: exercise 建设骨服务 {level=3}
-设计从急诊到社区的地区二级骨折预防系统。
+::: exercise 颈部手术后的麻刺感 {level=2}
+一位41岁女性甲状腺全切除术当晚诉口周和手指麻刺感。可能的原因是什么？应检查什么？当前最担心的是什么？
 ::: solution
-**捕获（骨折联络服务带急诊与病房与老年骨科触发及同意与排除规则——[[#def-osteoporosis]]、[[surgery/orthopaedics]]）；评估（骨密度与椎体影像及化验及跌倒与用药复审、及衰弱与认知检查——[[geriatrics-palliative/falls]]、[[geriatrics-palliative/delirium-dementia-care]]、[[clinical-skills/medical-imaging]]）；治疗（出院前就开始原则、带合成对抗骨吸收路径及地舒单抗绝不骤停及年度唑来膦酸门诊——[[#def-osteoporosis]]、[[pharmacology/dosing-principles]]）；反哺系统（全科出院信与共享照护及依从随访及反跳骨折警报——[[clinical-skills/records-handover]]）；不平等清扫（按贫困与族裔的骨密度可得与治疗持续性审计、及深肤色人群的维生素D状态——[[public-health/determinants-inequalities]]、[[public-health/global-health]]）；维生素D规划边界（补充政策、及对人群大剂量跌倒与骨折主张的健康怀疑——[[public-health/prevention-promotion]]、[[epidemiology-ebm/systematic-reviews]]）；及关键指标组套（髋部骨折30天死亡率带骨治疗启动率、24个月内第二次骨折、12与24个月治疗持续性、地舒单抗骤停事件、及椎体骨折到合成治疗的时间——[[clinical-skills/patient-safety]]、[[public-health/health-systems-economics]]）。**
+**术后低钙血症**，由甲状旁腺损伤或血供受损所致（一过性或永久性甲状旁腺功能减退）。检查校正（或离子）钙、镁、PTH，并做心电图看QT是否延长。检查沃斯特克征和陶瑟征。当前最担心的是进展为手足搐搦、喉痉挛、抽搐或心律失常：若症状明显或低钙严重，需在心电监护下静脉给予葡萄糖酸钙，然后口服钙剂，常需加用活性维生素D。应纠正低镁，因为它会损害PTH分泌。
+:::
+:::
+
+::: exercise 一个需要鉴别诊断的病例 {level=3}
+一位吸烟的68岁男性出现意识模糊、便秘和多尿。校正钙3.62 mmol/L，PTH测不出，血磷正常，碱性磷酸酶轻度升高，肌酐升高。胸部X线显示肺门肿块。给出高钙血症的鉴别诊断，解释多尿和肾损伤，并概述初步处理。
+::: solution
+**鉴别诊断**（PTH非依赖性）：由**鳞状细胞肺癌**分泌**PTHrP**引起的恶性肿瘤体液性高钙血症（结合肺门肿块和吸烟，最可能）；骨转移；骨髓瘤（查血清游离轻链和蛋白电泳）；结节病或结核等肉芽肿性疾病（通常骨化三醇升高）；维生素D中毒。
+
+**多尿和肾损伤**：钙在集合管拮抗血管升压素（一种获得性AVP抵抗），引起多尿和脱水；脱水降低GFR并减少钙排泄，血钙因而进一步升高，形成恶性循环。高钙血症还引起肾血管收缩。
+
+**初步处理**（原则；请遵循当地指南）：这是严重高钙血症。静脉输注0.9%氯化钠补液，监测液体平衡；补液后静脉给予双膦酸盐（按肾功能调整剂量）；停用噻嗪类及钙或维生素D补充剂；监测血钙、肾功能和电解质；与肿瘤团队一起检查和治疗原发癌症。难治病例可用地舒单抗或降钙素。恶性肿瘤所致高钙血症通常提示疾病已至晚期，因此宜尽早讨论治疗目标。
+:::
+:::
+
+::: exercise 规划骨折联络服务 {level=3}
+某医院治疗了许多脆性骨折患者，但很少有人开始抗骨质疏松治疗。请设计一项骨折联络服务，并说明其主要组成部分的理由。
+::: solution
+**骨折联络服务**系统地识别50岁及以上的脆性骨折患者，并确保他们得到评估和治疗。组成部分：
+
+1. **病例发现**：由一名协调员（常为专科护士）从急诊、骨科和放射科记录中识别所有脆性骨折，包括影像检查中偶然报告的椎体骨折。理由：既往脆性骨折使再次骨折风险约增加一倍，且风险在最初一到两年最高（"近期风险"）。
+2. **评估**：骨折风险（FRAX，必要时加DXA）、跌倒风险，以及继发原因（钙、维生素D、肾功能和甲状腺功能，有指征时筛查骨髓瘤，男性查睾酮）。
+3. **开始治疗**：按NOGG选择合适药物，极高风险者首先使用促骨形成药物；补足维生素D和钙；使用抗骨吸收药物前进行口腔检查。
+4. **预防跌倒**：转诊进行力量和平衡训练、药物审查、居家危险评估。
+5. **沟通与依从性**：将计划告知全科医生，对患者进行教育，并在3–4个月和一年时随访，因为许多人会停用口服双膦酸盐。
+6. **审核**：按国家标准审核数据（例如英国骨折联络服务数据库）。
 :::
 :::

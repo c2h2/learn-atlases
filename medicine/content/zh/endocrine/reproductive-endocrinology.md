@@ -1,157 +1,298 @@
-生殖内分泌学问的是激素环在哪里断了——脑、腺体、性腺、还是靶器官——并用一个四数逻辑回答：促性腺激素、性激素、解剖、与时间。**同一个低睾酮或停经、根据黄体生成素高还是低意味着不同的疾病、而这个区别从磁共振清单一直改变到生育谈话。**
+生殖依赖于下丘脑、垂体和性腺之间的激素对话。在女性中，这一对话以月为周期运行，以排卵或月经结束；在男性中，它使精子生成和睾酮保持稳定。同一条轴在青春期开启，在女性中又于绝经时逐渐关闭。大多数生殖内分泌问题，都可以借助[[endocrine/hypothalamus-pituitary]]中成对结果的逻辑，通过追问故障位于轴的哪一环节来解决。
 
-本章涵盖性腺轴及其检查、闭经与多囊卵巢综合征、男性性腺功能减退与不育、青春期障碍、及性别不一致照护。
+本课介绍下丘脑-垂体-性腺轴及其反馈、月经周期、青春期及其疾病、闭经和多囊卵巢综合征、早发性卵巢功能不全和绝经，以及男性性腺功能减退症。生育治疗、避孕和妇科疾病见[[obstetrics-gynaecology/contraception-fertility]]和[[obstetrics-gynaecology/menopause]]。
 
-## 轴
+## 下丘脑-垂体-性腺轴 {#sec-axis}
 
-::: definition 性腺生理与检查逻辑 {#def-axis}
-**环（下丘脑脉冲式促性腺激素释放激素驱动促性腺细胞的黄体生成素与卵泡刺激素；黄体生成素与卵泡刺激素驱动性腺类固醇生成与配子生成；雌二醇、孕酮与睾酮对垂体与下丘脑反馈、而雌二醇从负反馈切到正反馈产生周期中期黄体生成素峰值——对照[[physiology/hormones]]、[[endocrine/hypothalamus-pituitary]]、及[[cell-biochemistry/signalling-cell-cycle]]的类固醇受体信号阅读）；女性周期（卵泡募集与选择、优势卵泡雌二醇上升、峰值、排卵、黄体孕酮、及黄体撤退时月经——[[#def-axis]]插图；卵巢储备下降与绝经过渡——[[obstetrics-gynaecology/menopause]]）；男性轴（张力性黄体生成素-睾酮伴支持细胞卵泡刺激素支持与抑制素B反馈、使精子生成可能的高睾丸内类固醇梯度、及为何外源性睾酮是一个近乎男性避孕的不育危害——[[psychiatry/substance-use]]邻近合成代谢使用）；共享的胚胎背景（性腺分化、苗勒管与午非管命运及雄激素作用——性发育障碍地图——[[anatomy/embryology]]、[[genetics/mendelian-inheritance]]、[[paediatrics/congenital-genetic]]）。检查逻辑（低性激素伴低或正常低值促性腺激素是中枢性——脑或垂体；伴高促性腺激素则是性腺衰竭；在任何性腺标签之前的泌乳素与甲状腺及皮质醇排除——[[endocrine/hypothalamus-pituitary]]、[[endocrine/thyroid]]、[[endocrine/adrenal]]；测定现实——睾酮时机与分数及性激素结合球蛋白状态、及对女性男性都存在的雌二醇测定限度——[[clinical-skills/laboratory-tests]]；及影像纪律——中枢模式做垂体窝磁共振、有第二性征的闭经做盆腔解剖）。**
+下丘脑神经元以脉冲方式释放**促性腺激素释放激素（GnRH）**，成人约每一到两小时一次。这些神经元本身受分泌**kisspeptin**的神经元驱动，后者整合关于能量储备、应激和性激素的信号。GnRH作用于垂体促性腺激素细胞，使其释放**黄体生成素（LH）**和**卵泡刺激素（FSH）**。
+
+::: definition 促性腺激素的作用 {#def-axis}
+**在睾丸中**：LH刺激**间质细胞（Leydig细胞）**合成睾酮。FSH在局部高浓度睾酮的协同下作用于**支持细胞（Sertoli细胞）**，支持精子生成；支持细胞分泌**抑制素B**，反馈抑制FSH。
+
+**在卵巢中**适用**双细胞模型**：LH刺激**卵泡膜细胞**合成雄激素（雄烯二酮和睾酮），FSH刺激**颗粒细胞**利用**芳香化酶**将这些雄激素转化为雌二醇。FSH还募集卵泡并促其生长。排卵后，卵泡转变为**黄体**，在LH刺激下分泌孕酮和雌二醇。颗粒细胞分泌**抑制素**和**抗米勒管激素（AMH）**；AMH反映小生长卵泡的数量，用作卵巢储备的标志物。
 :::
+
+::: theorem 脉冲式GnRH起兴奋作用，持续性GnRH起抑制作用 {#thm-pulsatility}
+垂体只有在GnRH以脉冲方式到达时才作出反应。持续暴露于GnRH或长效GnRH激动剂，首先引起LH和FSH的短暂激增（"点火效应"），然后使促性腺激素细胞**脱敏**，于是LH、FSH和性激素在数周内降至去势水平。
+:::
+
+::: proof
+促性腺激素细胞上的GnRH受体是G蛋白偶联受体。激活后它们被内吞，必须再循环回到细胞表面，细胞内信号通路也需要时间复位。间隔一小时或更久的脉冲使两次信号之间得以完全恢复。持续刺激使受体保持内吞和解偶联状态，细胞便不再反应。临床上这一点被用于两个相反的方向：用泵给予的**脉冲式**GnRH可使下丘脑性闭经女性恢复排卵，而**持续性**GnRH激动剂（如亮丙瑞林、戈舍瑞林和曲普瑞林）抑制该轴，用于治疗前列腺癌、子宫内膜异位症和中枢性性早熟。GnRH**拮抗剂**则立即起抑制作用，没有点火效应。
+:::
+
+### 两性的反馈
+
+在男性中，睾酮（部分经转化为雌二醇）和抑制素B发挥**负反馈**，使LH、FSH和睾酮保持相当稳定。
+
+在女性中，雌二醇在周期的大部分时间里也发挥负反馈。但当优势卵泡产生的雌二醇保持高水平（高于约700 pmol/L）约36–48小时后，反馈转为**正反馈**：GnRH和垂体反应性急剧上升，产生触发约36小时后排卵的**LH峰**。正反馈在生理学中并不常见，因为它是自我放大的；在这里它产生一个单一、陡峭、定时的事件，之后黄体分泌的孕酮恢复负反馈。
+
+## 月经周期 {#sec-cycle}
+
+典型的周期为21至35天，从出血的第一天算起。
+
+1. **卵泡期。** 随着上一个黄体退化，雌二醇、孕酮和抑制素下降，于是FSH升高并募集一组卵泡。其中一个成为**优势卵泡**：它的FSH受体和芳香化酶最多，其不断升高的雌二醇抑制FSH，使其他卵泡得不到支持而闭锁。雌二醇使子宫内膜增生。卵泡期长度不一，周期长度的差异大多由此而来。
+2. **排卵。** 持续的高雌二醇触发LH峰（正反馈）；卵母细胞在LH峰开始后约36小时排出。
+3. **黄体期。** 黄体分泌孕酮，使子宫内膜转为适合着床的分泌期，并使基础体温升高约0.3–0.5 °C。黄体期相对恒定，约**14天**。未妊娠时黄体退化，孕酮下降，子宫内膜脱落形成月经。如果胚胎着床，滋养层分泌的**人绒毛膜促性腺激素（hCG）**挽救黄体。
+
+由于黄体期恒定，用于证实排卵的孕酮检测应在**预期月经前七天**进行，而不是机械地在第21天。在28天的周期中是第21天；在35天的周期中是第28天。黄体中期孕酮高于约30 nmol/L一般被视为排卵的证据。
 
 ::: widget plot
-f: 150+1000*exp(-((x-12)^2)/7)+350*exp(-((x-21)^2)/11); 3+55*exp(-((x-21)^2)/15)
-x: 1, 28
-y: 0, 1400
-labels: \text{周期日},\ \text{血浆激素};\ \text{雌二醇（pmol/L）};\ \text{孕酮（nmol/L、乘20以缩放）}
-caption: 一张图里的卵巢周期（[[#def-axis]]）：卵泡期雌二醇上升、其在第12-13天触发的正反馈黄体生成素峰（排卵随孕酮起飞而来）、及以撤退与月经告终的黄体孕酮平台。[[obstetrics-gynaecology/contraception-fertility]]与[[#def-fertility]]中的每一种避孕与诱导排卵策略都是对其中一条腿的干预、而黄体孕酮或第2-5天卵泡刺激素与雌二醇的两点血检就是同一条曲线的读数（[[clinical-skills/laboratory-tests]]）。
+f: 6 + 60*exp(-(x-14)^2/1.2); 4 + 22*exp(-(x-13)^2/8) + 12*exp(-(x-21)^2/12); 1 + 30*exp(-(x-21)^2/10)
+x: 0, 28
+y: 0, 70
+vlines: 14
+labels: \text{LH}; \text{雌二醇}; \text{孕酮}
+caption: 28天月经周期示意图（横轴为天数；纵轴为相对激素水平，任意单位）。优势卵泡分泌的雌二醇上升，通过正反馈触发LH峰；随后排卵（竖线）。黄体分泌的孕酮在排卵后约七天达到峰值。曲线形状仅为示意，并非实测值。
 :::
 
-## 女性表现
+## 青春期 {#sec-puberty}
 
-::: definition 闭经、排卵障碍与多囊卵巢综合征 {#def-female}
-**闭经架构（原发性对继发性；第一批分岔——总是首先排除妊娠——[[obstetrics-gynaecology/early-pregnancy]]；第二性征存在；查体或影像看流出道与子宫解剖——[[obstetrics-gynaecology/menstrual-pelvic-disorders]]、[[anatomy/pelvis-perineum]]；然后促性腺激素把卵巢病因从中枢病因分开——[[#def-axis]]）。具体去处（Kallmann综合征与先天性促性腺激素释放激素缺乏、带其嗅觉与中线及肾关联及其青春期与生育诱导规划——[[endocrine/hypothalamus-pituitary]]、[[genetics/mendelian-inheritance]]、[[nervous-system/sensory-systems]]；能量赤字与运动及应激造成功能性下丘脑闭经、带其早期骨与心理层及体重是否恢复的治疗阶梯——[[psychiatry/eating-personality-disorders]]、[[gastrointestinal/clinical-nutrition]]、[[endocrine/bone-calcium]]、[[psychiatry/anxiety-disorders]]；卵巢早衰——自身免疫与医源性及遗传（Turner嵌合、FMR1前突变）搜寻、激素替代用到正常绝经年龄的决定、及生育咨询的诚实——[[genetics/genome-chromosomes]]、[[immunology/autoimmunity]]、[[obstetrics-gynaecology/contraception-fertility]]、[[obstetrics-gynaecology/menopause]]；苗勒管发育不全与雄激素不敏感及横隔与无孔处女膜梗阻性表现——[[genetics/mendelian-inheritance]]、[[paediatrics/congenital-genetic]]、[[obstetrics-gynaecology/menstrual-pelvic-disorders]]；高泌乳素血症——[[endocrine/hypothalamus-pituitary]]；及甲状腺与肾上腺及慢性病病因——[[endocrine/thyroid]]、[[endocrine/adrenal]]）。多囊卵巢综合征（鹿特丹表型——少排卵与无排卵、生化或临床高雄激素、多囊卵巢形态、而排除工作先做；病理生理——胰岛素抵抗驱动的卵巢与肾上腺雄激素过多及黄体生成素脉冲改变及肥胖放大器——[[endocrine/diabetes]]、[[cell-biochemistry/metabolic-integration]]；长期账本——2型糖尿病与代谢综合征及脂肪肝及心血管风险、及无对抗周期的子宫内膜增生与癌风险、及出血管理谈话的重要性——[[gastrointestinal/liver-disease]]、[[cardiovascular/vascular-disease]]、[[gastrointestinal/gi-bleeding-cancer]]、[[obstetrics-gynaecology/menstrual-pelvic-disorders]]；及照护层——复方避孕药或孕激素或左炔诺孕酮宫内系统的周期管理、多毛与痤疮带美容与抗雄激素选项及其避孕要求的阶梯——[[musculoskeletal/skin]]、[[obstetrics-gynaecology/contraception-fertility]]；生育优先策略——来曲唑优先的诱导排卵及二甲双胍生态位及二线选项——[[#def-fertility]]）。多毛与男性化（程度之问——轻度家族性毛发对睾酮分泌肿瘤、带其速发阴蒂增大与低音及痤疮红旗——卵巢与肾上腺影像搜寻——[[endocrine/adrenal]]与卵巢来源搜寻（[[obstetrics-gynaecology/menstrual-pelvic-disorders]]）；及用17羟孕酮筛查的非经典先天性肾上腺增生模拟者——[[genetics/mendelian-inheritance]]、[[endocrine/adrenal]]）。**
+当GnRH脉冲发生器在童年期静止后重新激活时，青春期开始。女孩的首个征象通常是乳房发育（**乳房初发育**），一般在8至13岁之间，随后出现阴毛、生长突增，乳房初发育后约两到三年出现**初潮**。男孩的首个征象是睾丸体积增大至4 mL或以上，一般在9至14岁之间，生长突增在青春期中出现得比女孩晚。青春期分期用**Tanner**分期记录。肾上腺雄激素独立地引起阴毛、腋毛和体味（**肾上腺功能初现**）。
+
+::: definition 性早熟与青春期延迟 {#def-puberty}
+**性早熟**是女孩8岁前或男孩9岁前出现第二性征。若该轴过早开启、LH和FSH升高，为**中枢性**（促性腺激素依赖性）；若性激素来自其他来源（卵巢或睾丸肿瘤、先天性肾上腺皮质增生症、外源性类固醇、McCune–Albright综合征）、LH和FSH被抑制，则为**外周性**（促性腺激素非依赖性）。
+
+**青春期延迟**是女孩13岁时无乳房发育，或男孩14岁时睾丸未增大。病因有**体质性生长和青春期延迟**（常见，常有家族性，尤其见于男孩）；慢性疾病、营养不良、过度运动、垂体功能减退或先天性GnRH缺乏引起的**低促性腺激素性性腺功能减退**（伴嗅觉减退或缺失时为**卡尔曼综合征（Kallmann syndrome）**）；以及性腺衰竭引起的**高促性腺激素性性腺功能减退**，典型者为女孩的**特纳综合征（Turner syndrome）**（45,X）和男孩的**克兰费尔特综合征（Klinefelter syndrome）**（47,XXY）。
 :::
 
-## 男性表现
+中枢性性早熟在女孩中多见得多，女孩通常为特发性；男孩更常发现颅内病因，因此常规行影像检查。长效GnRH激动剂治疗可阻止进展（[[#thm-pulsatility]]）。生长和青春期评估见[[paediatrics/growth-development]]。
 
-::: definition 性腺功能减退、勃起与精液 {#def-male}
-**男性性腺功能减退两数划分伴睾酮在第二个晨起样本确证并按性激素结合球蛋白背景化——[[#def-axis]]、[[clinical-skills/laboratory-tests]]；先天性中枢病因——Kallmann与垂体肿块及既往颅内放疗——[[endocrine/hypothalamus-pituitary]]；获得性中枢——阿片与糖皮质激素及泌乳素及血色病及肥胖及危重病清单、以用药复审作为第一项检查——[[geriatrics-palliative/symptom-control]]、[[endocrine/adrenal]]、[[gastrointestinal/liver-disease]]、[[endocrine/diabetes]]；原发性睾丸病因——Klinefelter综合征带其高身材学习与代谢及肿瘤风险表型、睾丸炎与扭转及化疗、及年龄相关的迟发之争——[[genetics/genome-chromosomes]]、[[paediatrics/congenital-genetic]]、[[surgery/vascular-urological-surgery]]；睾酮治疗谈话（症状归属的诚实——疲劳与性欲对模糊不适、及血细胞比容与前列腺及水肿及睡眠呼吸暂停监测时间表、生育抑制警告、及为受孕有意切换到促性腺激素或停药的通路——[[#def-fertility]]、[[obstetrics-gynaecology/contraception-fertility]]、[[blood/thrombosis-anticoagulation]]）。勃起功能障碍（血管、神经、内分泌与心因混合及其提问顺序；心血管风险预警鸟论证及血脂与血糖及血压审计——[[cardiovascular/coronary-artery-disease]]、[[endocrine/diabetes-complications]]、[[nervous-system/motor-systems]]、[[psychiatry/anxiety-disorders]]；5型磷酸二酯酶抑制剂药理带硝酸酯红规则及性心理与伴侣工作——[[pharmacology/drug-receptor]]、[[clinical-skills/communication]]）。男性乳腺发育（生理对药物对肿瘤的鉴别——螺内酯与西咪替丁及洋地黄及大麻及睾酮撤除及人绒毛膜促性腺激素与雌激素分泌病灶——[[pharmacology/adverse-reactions]]、[[psychiatry/substance-use]]、肾上腺肿瘤风味[[gastrointestinal/gi-bleeding-cancer]]；及乳腺癌排除与影像及外科转诊——[[surgery/breast-endocrine-surgery]]）。不育精液分析先行并复查的纪律带其分析前规则——[[clinical-skills/laboratory-tests]]；梗阻对工厂故障的划分伴卵泡刺激素与精液量及遗传学——囊性纤维化跨膜调控调节因子先天性输精管缺如及核型与微缺失检查——[[genetics/mendelian-inheritance]]、[[genetics/genetic-testing]]；精索静脉曲张之争与性腺毒性暴露史——热与合成类固醇及大麻及化疗及睾丸既往事件——[[psychiatry/substance-use]]、[[surgery/vascular-urological-surgery]]；及与生殖医学共享的伴侣时间线——[[#def-fertility]]。**
+## 闭经与多囊卵巢综合征 {#sec-female}
+
+::: definition 闭经 {#def-female}
+**原发性闭经**是第二性征正常者15岁时仍无月经，或无第二性征发育者13岁时仍无月经。**继发性闭经**是既往月经规律者停经三个月或以上，或既往月经不规律者停经六个月。**月经稀发**是月经不频繁，周期长于35天。
 :::
 
-## 青春期、生育、性别
+任何可能妊娠的闭经者，首先应做**妊娠试验**。之后，病因最好按轴的层次组织：
 
-::: definition 青春期障碍 {#def-puberty}
-**性早熟（中枢性促性腺激素释放激素依赖型——女孩多为特发但脑病变搜寻尤其在男孩与6岁以下、带促性腺激素释放激素激动剂治疗原理——[[endocrine/hypothalamus-pituitary]]、[[paediatrics/growth-development]]；及外周性促性腺激素非依赖型——先天性肾上腺增生带其男性化与危象风险及新生儿筛查回报——[[endocrine/adrenal]]、[[paediatrics/newborn]]；性腺与肾上腺肿瘤及家族性男性限发性性早熟、及带缅因海岸斑块与纤维性骨发育不良的McCune-Albright——[[genetics/mendelian-inheritance]]、[[musculoskeletal/skin]]、[[endocrine/bone-calcium]]；加上外源性雌激素或睾酮暴露审计、包括外用与补剂及同学用品——[[psychiatry/substance-use]]、[[clinical-skills/history-taking]]）；身高与骨龄及心理社会赌注、及以生长曲线与生长速度为先的检查组合——[[paediatrics/growth-development]]、[[clinical-skills/physical-examination]]。青春期延迟与缺失（体质性延迟对病理之问、带家族模式与生长速度及骨龄线索；[[#def-axis]]的低促性腺激素性与高促性腺激素性划分；慢性病与营养不良及运动性能量赤字病因——[[gastrointestinal/clinical-nutrition]]、[[gastrointestinal/bowel-disease]]、[[paediatrics/growth-development]]；及诱导规程与青春期成熟对生育目标的排序、及晚熟者对被诊断者的心理——[[endocrine/hypothalamus-pituitary]]、[[paediatrics/adolescent-health]]）。**
+| 层次 | 例子 | 典型结果 |
+|---|---|---|
+| 下丘脑 | 功能性下丘脑性闭经（能量可利用性低、体重减轻、过度运动、应激）；卡尔曼综合征 | LH、FSH和雌二醇低或正常低值 |
+| 垂体 | 高催乳素血症；垂体肿瘤；希恩综合征 | 催乳素高，或促性腺激素低 |
+| 卵巢 | 多囊卵巢综合征；早发性卵巢功能不全；特纳综合征 | PCOS：FSH正常，LH和雄激素常升高。POI：FSH高，雌二醇低 |
+| 流出道 | 阿谢曼综合征（Asherman syndrome，宫腔粘连）；先天性异常如处女膜闭锁或米勒管发育不全 | 激素正常 |
+| 其他内分泌 | 甲状腺疾病；先天性肾上腺皮质增生症；库欣综合征 | 视各病而定 |
+
+因此基础检查为hCG、FSH、LH、雌二醇、催乳素、TSH和睾酮，必要时行盆腔超声。
+
+**功能性下丘脑性闭经**发生于能量摄入不足以满足能量消耗时，常伴心理应激。下丘脑减少GnRH脉冲以节约能量。它常见于运动员、舞蹈演员和进食障碍患者，是现称**运动相对能量缺乏（RED-S）**这一更广综合征的一部分。低雌激素状态导致骨丢失和应力性骨折。治疗是恢复能量可利用性；复方口服避孕药能产生撤退性出血，但不能纠正根本问题，对骨骼的保护也不如前者。
+
+### 多囊卵巢综合征
+
+**多囊卵巢综合征（PCOS）**是育龄女性最常见的内分泌疾病，约十分之一的女性受累。2023年《多囊卵巢综合征评估与管理国际循证指南》采用修订的鹿特丹标准：成人诊断需具备以下三项中的两项，
+
+1. **排卵功能障碍**（月经不规律）；
+2. **高雄激素**，临床性（多毛、痤疮、雄激素性脱发）或生化性（睾酮或游离雄激素指数升高）；
+3. 超声显示**多囊卵巢形态**，或**AMH**升高，
+
+并排除甲状腺疾病、高催乳素血症和非经典型先天性肾上腺皮质增生症等其他病因。如果成人同时有月经不规律和高雄激素，则无需超声和AMH。在青少年中，月经不规律和高雄激素两者都必须具备，且不使用超声和AMH，因为初潮后数年内多卵泡卵巢和月经不规律都是正常的。
+
+**胰岛素抵抗**在许多PCOS患者中处于核心地位，与体重无关；高胰岛素刺激卵泡膜细胞产生雄激素，并降低**性激素结合球蛋白（SHBG）**，使游离睾酮升高。PCOS与2型糖尿病、妊娠糖尿病、血脂异常、睡眠呼吸暂停、抑郁和焦虑相关；月经稀发时还与子宫内膜增生相关，因为没有孕酮时雌激素对子宫内膜的作用不受拮抗。
+
+**游离雄激素指数**估算未与SHBG结合的睾酮比例：
+
+$$
+\text{FAI} = 100 \times \frac{\text{总睾酮 (nmol/L)}}{\text{SHBG (nmol/L)}}
+$$ {#eq-fai}
+
+处理根据个人的优先需求而定：
+
+- 适当时采取**健康生活方式和体重管理**，可使部分人恢复排卵。
+- **月经不规律和子宫内膜保护**：复方口服避孕药，或周期性孕激素诱导规律的撤退性出血。
+- **多毛**：复方口服避孕药、美容措施、依氟鸟氨酸乳膏，部分病例使用抗雄激素药物（需可靠避孕，因为它们可影响男性胎儿）。
+- **生育**：**来曲唑（letrozole）**（芳香化酶抑制剂）是诱导排卵的一线药物，二甲双胍、促性腺激素和体外受精为进一步选择。
+- **代谢筛查**：定期检查糖尿病、血压和血脂，并筛查情绪障碍。
+
+## 卵巢功能不全与绝经 {#sec-menopause}
+
+卵巢的卵母细胞储备是固定的，在出生前即已形成，并持续减少直至耗竭。**绝经**是最后一次月经，在12个月无出血后确认；在英国平均年龄为51岁。绝经前月经不规律、出现症状的几年称为**围绝经期**。随着卵泡耗竭，抑制素和雌二醇下降，FSH升高。
+
+症状包括**血管舒缩症状**（潮热和盗汗）、睡眠障碍、情绪变化、注意力难以集中、关节疼痛、性欲减退，以及**绝经生殖泌尿综合征**（阴道干涩、性交不适、尿频和反复感染）。从长远看，雌激素丧失加速骨丢失并增加心血管风险。
+
+NICE指南NG23（《绝经：识别与管理》，2024年更新）建议，对45岁以上有典型症状的女性，围绝经期和绝经根据临床诊断，无需FSH检测。FSH可用于40–45岁有症状的女性，以及疑似早发性卵巢功能不全的40岁以下女性。
+
+**激素替代治疗（HRT）**是治疗血管舒缩症状最有效的方法。其原则是：
+
+- 有子宫者需要**雌激素加孕激素**，因为单用雌激素会导致子宫内膜增生和癌。已切除子宫者可单用雌激素。
+- **经皮**雌激素（贴片、凝胶或喷雾）不会使静脉血栓栓塞风险高于基线，这一点与口服雌激素不同，因此在关注该风险时首选。
+- 雌孕激素联合HRT与乳腺癌风险的小幅增加相关，与使用时间长短有关；单用雌激素的HRT几乎不增加或不增加风险。NICE 2024年的更新以绝对数字呈现这些风险，以辅助决策。
+- **阴道雌激素**治疗生殖泌尿症状，全身吸收极少，可长期使用。
+- 非激素选择包括认知行为疗法（NICE推荐用于血管舒缩症状和情绪症状），以及供不能或不愿使用HRT者选用的某些药物。
+
+关于HRT的决策是个体化的，需共同作出，在缓解症状和保护骨骼与风险之间权衡。
+
+::: definition 早发性卵巢功能不全 {#def-poi}
+**早发性卵巢功能不全（POI）**是40岁前卵巢活动丧失。2024年ESHRE指南（与ASRM和国际绝经协会共同制定）的诊断依据是月经稀发或闭经至少四个月，加上**一次**FSH高于25 IU/L；诊断不确定时复查FSH或测定AMH。约1–4%的女性受累。病因包括化疗和放疗、手术、自身免疫病、遗传原因（特纳综合征及其嵌合型、**FMR1前突变**）以及感染，但大多数病例原因不明。
 :::
 
-::: definition 生殖医学 {#def-fertility}
-**评估作为共同检查（定时性交与排卵记录及精液分析与输卵管通畅影像及卵巢储备标志物及宫腔评估——[[obstetrics-gynaecology/contraception-fertility]]、[[clinical-skills/medical-imaging]]；病程与年龄及已知病理的早期转诊触发、及可避免延迟的病因——未治疗无排卵与漏掉男性因素——[[clinical-skills/patient-safety]]）。诱导排卵（多囊卵巢综合征中来曲唑优先带体重与代谢共同优化、及单药对促性腺激素对宫腔内授精对体外受精的升级、及多胎与卵巢过度刺激风险管理及监测纪律——[[#def-female]]、[[gastrointestinal/clinical-nutrition]]、[[obstetrics-gynaecology/menstrual-pelvic-disorders]]）。辅助生殖（体外受精与卵胞浆内单精子注射的适应证及促排方案及选择性单胚胎移植政策、及卵巢过度刺激的血管通透性生理与分诊——[[physiology/homeostasis-body-fluids]]、[[obstetrics-gynaecology/contraception-fertility]]；社会与年龄相关的卵子冷冻谈话、及监管与可及公平之辩——[[public-health/health-systems-economics]]、[[medical-ethics-law/beginning-of-life]]）。孕前与配子健康（体重与糖尿病及甲状腺及风疹免疫及叶酸及疫苗接种及药物致畸审计、及男性抗氧化神话的诚实——[[endocrine/diabetes-complications]]、[[endocrine/thyroid]]、[[obstetrics-gynaecology/pregnancy-antenatal]]、[[public-health/vaccination-programmes]]、[[pharmacology/patient-variation]]）。心理与关系层（不育痛苦与治疗脱落及身份与哀伤工作、及在转诊而不是崩溃时提供咨询、及第三方生殖与代孕伦理——[[obstetrics-gynaecology/contraception-fertility]]、[[medical-ethics-law/beginning-of-life]]、[[medical-ethics-law/ethical-principles]]）。**
+POI患者需要**激素替代至少到平均绝经年龄**，以保护骨骼和心血管健康并缓解症状。这是在补充同龄女性本应拥有的激素，因此绝经后HRT的那些风险数据并不以同样方式适用。偶尔会自发排卵和妊娠，因此如不希望妊娠仍需避孕。这一诊断可能带来沉重打击，尤其在生育方面，心理支持是诊疗的一部分。
+
+## 男性性腺功能减退症 {#sec-male}
+
+::: definition 男性性腺功能减退症 {#def-male}
+**男性性腺功能减退症**是睾酮缺乏、精子生成受损或两者兼有的临床综合征。**原发性性腺功能减退症**（睾丸衰竭）表现为睾酮低而LH和FSH**升高**。**继发性性腺功能减退症**（垂体或下丘脑性）表现为睾酮低而LH和FSH降低或不适当地正常。
 :::
 
-::: definition 性别不一致照护 {#def-gender}
-**框架（性别不一致是一种正当的医疗需求、不同于身份政治、而持续性与痛苦及能力共存条件的评估是与这个人一起做的——不是对其做的——作为个体化选项的关口——[[clinical-skills/communication]]、[[psychiatry/psychiatric-assessment]]、[[medical-ethics-law/consent-capacity]]；排除或共同管理孤独症与创伤及性别不安重叠的诊断澄清工作、及保障职责——[[paediatrics/neurodevelopment]]、[[psychiatry/lifespan-psychiatry]]）。儿童与青少年（社会过渡优先的共识、青春期抑制证据复审时代及其收紧的研究与临床试验条件、及任何性腺毒性路径之前的生育力保存思考——[[paediatrics/adolescent-health]]、[[obstetrics-gynaecology/contraception-fertility]]、[[medical-ethics-law/beginning-of-life]]）。成人（激素方案——雌激素加雄激素抑制或睾酮、带监测组套——经皮对口服炔雌醇历史的血栓风险分层——[[blood/thrombosis-anticoagulation]]、[[cardiovascular/vascular-disease]]；泌乳素与睾酮及雌二醇水平、及未暴露或停药状态的骨密度——[[endocrine/bone-calcium]]、[[endocrine/hypothalamus-pituitary]]；及开始之前的生育咨询因为性腺抑制可能是永久的——[[obstetrics-gynaecology/contraception-fertility]]）。手术与专科接口（性腺切除与癌症及心血管、术后激素延续、及筛查器官清单纪律——还剩哪些器官与组织、适用什么筛查——[[public-health/screening]]、[[gastrointestinal/gi-bleeding-cancer]]）。照护系统层（性别门诊多学科模式与初级照护共享照护、及与全科及急救的沟通卡、及歧视与可及去过渡支持的现实、及关于强证据与弱证据所在的证据诚实——[[public-health/health-systems-economics]]、[[clinical-skills/records-handover]]、[[public-health/determinants-inequalities]]、[[epidemiology-ebm/critical-appraisal]]）。**
+症状包括性欲减退、勃起功能障碍、晨勃消失、疲倦、肌肉量减少、体脂增加、情绪低落、男性乳房发育、体毛减少，久之出现骨质疏松。其中许多症状无特异性，随年龄增长、肥胖和慢性疾病而常见。
+
+睾酮有昼夜节律，进食和急性疾病会使其降低，因此应在**清晨（上午11时前）空腹测定，并在另一时间复查**后再作诊断。英国性医学学会的指南建议，总睾酮低于约8 nmol/L通常提示缺乏，8–12 nmol/L为灰区，此时游离睾酮（由SHBG计算）有帮助。测定LH、FSH、催乳素和SHBG以定位病因。
+
+- **原发性病因**：**克兰费尔特综合征**（47,XXY，最常见的遗传性病因，约每600名男性中有1例，睾丸小而硬，常身材高大）、既往睾丸炎、化疗或放疗、外伤、隐睾。
+- **继发性病因**：肥胖和2型糖尿病（功能性，常可通过减重逆转）、阿片类、糖皮质激素、**合成代谢雄激素类固醇**使用（抑制LH和FSH，导致睾丸萎缩和不育，停药后可持续存在）、高催乳素血症、垂体肿瘤、血色病、卡尔曼综合征。
+
+**睾酮替代**（凝胶或注射）可缓解确诊缺乏者的症状。它抑制LH和FSH，从而抑制精子生成，因此**不**用于希望生育的男性；他们应改用促性腺激素治疗。监测包括血细胞比容（睾酮刺激红细胞生成）、按指南进行的前列腺评估以及症状反应。
+
+**男性乳房发育**是男性乳腺腺体组织增大，反映雌激素与雄激素作用之比升高。新生儿期属正常，青春期常见。其他原因包括肥胖（可能为脂肪而非腺体）、药物（螺内酯、抗雄激素药、合成代谢类固醇、大麻）、肝病、性腺功能减退、甲亢，罕见分泌雌激素或hCG的肿瘤，包括睾丸肿瘤。任何质硬、偏心或迅速增大的肿块都需要评估是否为乳腺癌。
+
+::: warning 不要凭一次随机样本诊断睾酮低下
+餐后或葡萄糖负荷后睾酮可下降四分之一或更多，下午较低，任何急性疾病期间也会下降。单次非空腹的下午样本或患病期间采集的样本常给出假性偏低的结果，可能导致不必要的终身治疗并抑制生育能力。应在身体状况良好时复查空腹清晨样本，并在开始治疗前测定LH和FSH。
 :::
 
-::: example 从未有过月经 {#ex-primary-amenorrhoea}
-16岁女性乳房发育正常但无月经初潮、生长与其余青春期正常、无周期性疼痛、母亲15岁初潮；查体发现一个盲端阴道袋；超声未见子宫。
+::: example 孕酮的检测时机 {#ex-progesterone}
+一位31岁备孕女性月经规律，周期33天。她的全科医生申请了"第21天孕酮"，结果为6 nmol/L。这是否说明她没有排卵？
 ::: solution
-**有乳房、流出道与子宫之问的架构（[[#def-female]]）：两个主要诊断是苗勒管发育不全（46,XX伴卵巢与周期激素正常——子宫是缺失的器官）与完全雄激素不敏感（46,XY伴睾丸及睾酮来源的雌二醇——[[genetics/mendelian-inheritance]]与[[paediatrics/congenital-genetic]]的咨询与性腺切除时机之辩及隐私与告知伦理——[[medical-ethics-law/confidentiality]]、[[medical-ethics-law/beginning-of-life]]）。检查由核型与激素及影像及多学科青少年妇科团队定案（[[clinical-skills/laboratory-tests]]、[[clinical-skills/medical-imaging]]、[[obstetrics-gynaecology/menstrual-pelvic-disorders]]）；然后是及早做并反复做的两场硬谈话——生育预后诚实（子宫移植研究前沿对代孕的法律地理对收养路径——[[obstetrics-gynaecology/contraception-fertility]]、[[medical-ethics-law/beginning-of-life]]）及带同伴联系性与心理支持（[[paediatrics/adolescent-health]]、[[psychiatry/anxiety-disorders]]、[[clinical-skills/communication]]）；加苗勒管发育不全时的肾与骨骼关联扫描（[[renal/urinary-tract]]、[[musculoskeletal/bones-joints]]）。**
+不是。黄体期约14天，因此33天周期的排卵约在第$33 - 14 = 19$天，孕酮的黄体中期峰值约在其后七天，即第$33 - 7 = 26$天。第21天时她仅在排卵后约两天，孕酮尚未完全升高，因此即使有排卵，数值偏低也在预料之中。
+
+应在约**第26天**（预期下次月经前七天）复查。高于约30 nmol/L即可证实排卵。如果月经比预期提前，应根据下次月经的实际日期解读结果。
 :::
 :::
 
-::: example 疲惫的举重者 {#ex-male-hypo}
-38岁健身教练、8个月疲劳与性欲低及勃起困难、20多岁剃光头时满痤疮、睾丸小而硬、血细胞比容0.53、两个晨起样本睾酮3.1、黄体生成素与卵泡刺激素正常低值、泌乳素与铁蛋白及TSH正常。
+::: example 月经停止的年轻女性 {#ex-hypothalamic}
+一位22岁大学运动员已八个月没有月经。她每周跑80 km，今年体重减轻6 kg，BMI 18。妊娠试验阴性。LH 1.2 IU/L，FSH 2.8 IU/L，雌二醇60 pmol/L（低），催乳素和TSH正常。上个月她发生了跖骨应力性骨折。诊断是什么？首要任务是什么？
 ::: solution
-**在被否认之前都是被外部抑制的性腺功能减退（[[#def-male]]）：模式是中枢伴外源雄激素抑制（小睾丸加高血细胞比容加皮肤病史三联）、而谈话是不评判的合成代谢类与选择性雄激素受体调节剂及“正规补剂、还有什么”的病史采集（[[psychiatry/substance-use]]、[[clinical-skills/history-taking]]）。确证与保护清单：**生育意愿之问最先因为它重排一切（[[obstetrics-gynaecology/contraception-fertility]]）；停止或在监督下减量雄激素、带恢复时间表咨询、及在专家手中使用的人绒毛膜促性腺激素与克罗米酚样调节剂加速器（[[#def-fertility]]）；既往使用的心血管与血细胞比容及肝与睡眠及心理健康审计（[[cardiovascular/vascular-disease]]、[[gastrointestinal/liver-disease]]、[[respiratory/control-breathing-tests]]、[[psychiatry/mood-disorders]]）；“不只是补剂”规则能抓住污染粉末病例（[[pharmacology/drug-development-prescribing]]）；及若他两次否认暴露而抑制持续——标准中枢性性腺功能减退检查组合带泌乳素与铁及皮质醇及垂体窝影像（[[endocrine/hypothalamus-pituitary]]、[[gastrointestinal/liver-disease]]、[[clinical-skills/medical-imaging]]）。**
+雌二醇低而LH和FSH也低，说明问题在中枢（下丘脑或垂体）。催乳素和TSH正常，加上训练量大、体重减轻和BMI低，诊断为**功能性下丘脑性闭经**，属于**运动相对能量缺乏（RED-S）**的一部分。低能量可利用性抑制了GnRH脉冲。
+
+她的应力性骨折提示骨骼健康已受影响；低雌激素和低能量可利用性都会减少骨形成。应做**DXA扫描**。
+
+**首要任务**：在运动医学医生、营养师的支持下增加能量可利用性（增加摄入和/或减少训练），如有进食障碍特征则请心理医生参与（[[psychiatry/eating-personality-disorders]]）。复方口服避孕药会产生出血，但不能纠正能量缺乏，不是主要治疗。能量平衡恢复后月经通常会恢复。应以敏感的方式询问进食障碍的筛查问题。
 :::
 :::
 
-::: example 停止周期的赛艇手 {#ex-hypothalamic}
-23岁大学赛艇运动员、体质指数17.5、在训练量增加的一个赛季后14个月没有月经；去年春季“无缘无故”的跖骨应力骨折；卵泡刺激素3.1、黄体生成素2.8、雌二醇90、泌乳素与TSH正常；骨密度示腰椎Z值-2.7。
+::: example 疲倦的举重爱好者 {#ex-male-hypo}
+一位29岁男性与伴侣备孕14个月未成功。他性欲低下，睾丸小。清晨空腹睾酮3.1 nmol/L，LH 0.4 IU/L，FSH 0.3 IU/L，血红蛋白182 g/L。精液分析无精子。他每周去健身房训练五天。应询问什么？可能的解释是什么？
 ::: solution
-**功能性下丘脑闭经且骨已付出代价（[[#def-female]]）：低或正常促性腺激素伴低雌二醇及能量赤字病史且无其他病因、确证中枢抑制；这是相对能量缺乏综合征、不是“运动员常态”（[[#def-axis]]、[[gastrointestinal/clinical-nutrition]]）。计划先按病因层推进：**能量与训练复审带运动营养师与教练谈话（碳水与蛋白及总能量目标及负荷降低协商——[[gastrointestinal/clinical-nutrition]]、教练教育要点属于[[public-health/prevention-promotion]]）；心理层（完美主义与控制及团队压力评估及敏感进行的进食障碍筛查——[[psychiatry/eating-personality-disorders]]、[[psychiatry/anxiety-disorders]]）；骨保护桥（钙与维生素D及蛋白及抗阻负荷方案、及与专科讨论的经皮雌二醇贴带周期性孕激素对口服避孕药优越性之争——[[endocrine/bone-calcium]]、[[obstetrics-gynaecology/contraception-fertility]]）；监测（复查骨密度与骨折复审、及把月经恢复作为恢复生物标志物、及“药片出血不是恢复”的诚实——[[clinical-skills/records-handover]]）；及这一综合征欠她的长期生育与心血管及牙科及情绪咨询（[[obstetrics-gynaecology/contraception-fertility]]、[[psychiatry/mood-disorders]]、[[cardiovascular/vascular-disease]]）。**
+睾酮低而LH和FSH**被抑制**属于继发性性腺功能减退，年轻男性血红蛋白高是一个重要线索。最可能的解释是**使用合成代谢雄激素类固醇**：外源性雄激素抑制GnRH、LH和FSH，因此睾丸萎缩并停止产生精子；如果他最近停用，或使用检测方法测不出的化合物，测得的睾酮就会偏低。
+
+应以不带评判的方式询问他关于合成代谢类固醇、其他提高运动表现的药物和补充剂的使用情况。若证实，第一步是停用。轴的恢复可能需要数月，有时需要专科用hCG或其他药物重新启动精子生成。睾酮治疗会加重他的不育。如果他否认使用，则需检查催乳素、其他垂体激素并行垂体影像检查。还应检查类固醇使用对心血管和肝脏的影响，并提供减少伤害的建议（[[psychiatry/substance-use]]）。
 :::
 :::
 
-::: example 六岁就长高的女孩 {#ex-precocious}
-6岁儿童3个月乳房发育、生长向上跨越百分位、成年身高预测在缩小、骨龄9岁；无头痛或视觉或神经症状；基础检测黄体生成素可测出。
+::: example 多毛与月经不规律 {#ex-pcos}
+一位26岁南亚裔女性自初潮起月经每45–90天一次，面部和腹部毛发过多。睾酮2.4 nmol/L，SHBG 20 nmol/L，催乳素和TSH正常，17-羟孕酮正常。计算游离雄激素指数，并讨论诊断和筛查。
 ::: solution
-**中枢性（促性腺激素释放激素依赖）性早熟伴进展（黄体生成素可测与骨龄超前及生长加速模式——[[#def-puberty]]、[[paediatrics/growth-development]]）：脑病变搜寻带垂体下丘脑磁共振（6岁以上女孩常特发但仍成像规则、及错构瘤与神经胶质瘤及治疗后病因——[[endocrine/hypothalamus-pituitary]]、[[clinical-skills/medical-imaging]]）；治疗决定（促性腺激素释放激素激动剂长效制剂以暂停轴、带身高保护与青春期时机原理及追赶生长监测与骨龄减速证明——[[pharmacology/dosing-principles]]、[[endocrine/hypothalamus-pituitary]]）；排除清扫（严重原发性甲减模拟者及McCune-Albright与卵巢囊肿外周模式——[[endocrine/thyroid]]、[[genetics/mendelian-inheritance]]）；心理社会与保障敏感（同伴之中的身体变化与初潮焦虑、及早期性化与虐待风险意识而不假定——[[paediatrics/adolescent-health]]、[[paediatrics/safeguarding]]）；及家庭期望管理（“让青春期暂停的药”解释、在合适年龄的再评估试验、及学校联络——[[clinical-skills/communication]]、[[clinical-skills/records-handover]]）。**
+用[[#eq-fai]]：
+
+$$
+\text{FAI} = 100 \times \frac{2.4}{20} = 12。
+$$
+
+这高于典型的女性参考值（常引用为低于约5，但各实验室不同），证实存在生化性高雄激素。低SHBG常是胰岛素抵抗的标志，也有促进作用。
+
+她有月经不规律和高雄激素，其他病因（高催乳素血症、甲状腺疾病、非经典型先天性肾上腺皮质增生症）已排除。她符合**PCOS**的标准，无需超声或AMH。
+
+**筛查**：评估2型糖尿病（南亚裔PCOS患者风险特别高；常首选口服葡萄糖耐量试验）、血压、血脂，并筛查抑郁和焦虑。处理按她的优先需求进行：治疗多毛、调节月经并保护子宫内膜，以及在需要时规划生育。睾酮极高（例如高于约5 nmol/L）或迅速男性化，则应改查分泌雄激素的肿瘤。
 :::
 :::
 
 ::: quiz
-15岁男孩15岁男性化、生长速度向上跨越、血压138/92、骨龄超前、睾丸对于青春期分期偏小。最佳下一步检查：
-- [ ] 安慰——晚发育者
-- [x] 17羟孕酮及雄激素与肾上腺肿瘤及先天性肾上腺增生评估
-- [ ] 睾酮注射试验
-- [ ] 骨密度扫描
+一位38岁女性六个月无月经。FSH 68 IU/L，雌二醇低。妊娠试验阴性。下列哪项正确？
+- [ ] 她患下丘脑性闭经，需要增加体重。
+- [x] 她患早发性卵巢功能不全，应提供激素替代至少到平均绝经年龄。
+- [ ] 由于乳腺癌风险，HRT是禁忌。
+- [ ] 不可能妊娠，因此无需避孕。
 ::: solution
-**外周性（促性腺激素非依赖）性早熟或青春期提前伴睾酮驱动的高血压与小睾丸、指向肾上腺雄激素来源——先天性肾上腺增生（经典筛查晚发或非经典）或雄激素分泌性肾上腺肿瘤——[[#def-puberty]]、[[endocrine/adrenal]]、[[gastrointestinal/gi-bleeding-cancer]]；睾丸相对于分期偏小的体征排除中枢青春期（会使睾丸增大）——[[#def-axis]]；先看生长曲线与骨龄（[[paediatrics/growth-development]]、[[clinical-skills/physical-examination]]）。**
+40岁前闭经超过四个月且FSH高于25 IU/L，符合ESHRE 2024年POI标准。激素替代保护骨骼和心血管健康，是在补充其年龄应有的正常生理。偶尔仍可能自发排卵，因此不希望妊娠时需要避孕。
 :::
 :::
 
 ::: history
-**生殖世纪Zondek与Aschheim 1928年的小鼠与家兔尿妊娠试验与激素测定的工业化；Pincus与Rock及Singer的药片试验与Sanger及药片的双重革命——生殖自主、及先于知情同意规范的试验伦理清算——[[medical-ethics-law/research-ethics]]、[[obstetrics-gynaecology/contraception-fertility]]；Schally与Guillemin的促性腺激素释放激素纯化及如今治疗本章半壁江山的激动剂药物家族——[[endocrine/hypothalamus-pituitary]]；Kallmann 1944年“嗅生殖营养不良”家谱开创了遗传性性腺功能减退领域——[[genetics/mendelian-inheritance]]；2003年鹿特丹多囊卵巢综合征共识与之前数十年的表型之争——[[#def-female]]；Steptoe与Edwards 1978年首例外阴受精婴儿出生及它倒逼的伦理监管时代——[[obstetrics-gynaecology/contraception-fertility]]、[[medical-ethics-law/beginning-of-life]]；来曲唑取代克罗米酚的试验；及雄激素检测与长期性腺功能减退流行病学睾酮试验时代的证据核查与试验批评（[[epidemiology-ebm/systematic-reviews]]）。**
+1935年，**欧文·斯坦（Irving Stein）**和**迈克尔·利文撒尔（Michael Leventhal）**描述了伴闭经、多毛和多囊性卵巢增大的女性，即现在所称的PCOS。**格雷戈里·平卡斯（Gregory Pincus）**和**约翰·罗克（John Rock）**研制出复方口服避孕药，1960年首次在美国获批。1978年，**恩斯特·诺比尔（Ernst Knobil）**及其同事在猴子中证明，垂体只对脉冲式GnRH起反应，持续输注则使其关闭，这是GnRH激动剂治疗的基础。同年，第一个体外受精婴儿**路易丝·布朗（Louise Brown）**在奥尔德姆出生，这是**罗伯特·爱德华兹（Robert Edwards）**和**帕特里克·斯特普托（Patrick Steptoe）**工作的成果；爱德华兹于2010年获得诺贝尔奖。
 :::
 
-## 通向何处
+## 后续内容
 
-上游控制在[[endocrine/hypothalamus-pituitary]]；雄激素的肾上腺来源在[[endocrine/adrenal]]；避孕与妊娠在[[obstetrics-gynaecology/contraception-fertility]]；月经与结构妇科在[[obstetrics-gynaecology/menstrual-pelvic-disorders]]；绝经过渡在[[obstetrics-gynaecology/menopause]]；遗传学在[[genetics/mendelian-inheritance]]。
-
-::: exercise 给血检定日期 {level=2}
-一家生殖门诊收到自助网上套餐的“第21天孕酮12 nmol/L”。能得出与不能得出什么？
-::: solution
-**周期日不确定就是整个问题（假定28天错对的概率相当、而晚排卵模拟黄体功能不足——[[#def-axis]]、[[clinical-skills/laboratory-tests]]）；排卵阈以上的黄体中期孕酮只有在排卵后7天取样才能记录排卵（系列孕酮或黄体生成素试纸或监测替代）；这个数字不能给黄体期定日、不能诊断“黄体功能缺陷”（一个没有证实获益治疗的诊断——[[epidemiology-ebm/critical-appraisal]]）、也不能代替精液与输卵管检查（[[#def-fertility]]）；行动——在背景中判读并按规程复查、再按标准转诊（[[clinical-skills/clinical-reasoning]]、[[clinical-skills/records-handover]]）。**
-:::
-:::
-
-::: exercise 为性腺功能减退患者做术前准备 {level=2}
-45岁因全垂体功能减退已用睾酮凝胶18个月、因肩部手术与新伴侣想要孩子而来。一次门诊两套计划。
-::: solution
-**外科层（糖皮质激素与其他轴背景及围手术期睾酮延续、及住院静脉睾酮错误的规避、及术前红细胞与血细胞比容核查——[[surgery/perioperative-care]]、[[endocrine/hypothalamus-pituitary]]、[[blood/haematopoiesis]]）；生育层（停睾酮并切换到促性腺激素或脉冲式促性腺激素释放激素、带血清睾酮与抑制素及精液监测、及3-12个月精子生成恢复咨询——[[#def-male]]、[[#def-fertility]]、[[obstetrics-gynaecology/contraception-fertility]]）；含伴侣的咨询与恢复前空窗的避孕（[[obstetrics-gynaecology/contraception-fertility]]）；及让两套计划都安全的一条记录（共享照护信带停启日期与谁开什么——[[clinical-skills/records-handover]]、[[clinical-skills/patient-safety]]）。**
-:::
-:::
+生育、避孕和绝经的产科与妇科方面详见[[obstetrics-gynaecology/contraception-fertility]]、[[obstetrics-gynaecology/menstrual-pelvic-disorders]]和[[obstetrics-gynaecology/menopause]]。性腺功能减退的染色体病因见[[genetics/chromosomal-disorders]]，骨丢失见[[endocrine/bone-calcium]]。
 
 ::: summary
-- 两个数字、睾酮或雌二醇配黄体生成素与卵泡刺激素、能定位几乎每一例性腺主诉；第三个数字泌乳素清走冒名者。
-- 闭经是一个算法、不是一张贴激素处方：妊娠、解剖、促性腺激素、然后是带自身生育与骨后果的具名诊断。
-- 多囊卵巢综合征是一个终身代谢与子宫内膜风险疾病伴一个生殖阶段、不只是生育障碍。
-- 在生育谈话之前治疗男性性腺功能减退是一个可预见的伤害；外源性睾酮可靠抑制精子生成。
-- 青春期时机障碍多数是良性变异、但男孩、8岁以下、及男性化儿童值得肿瘤搜寻。
-- 性别不一致照护是校准证据、顾及生育、尊重能力的医学并带终身监测职责、不是一次开药就完事。
+- GnRH脉冲驱动LH和FSH；持续性GnRH（或激动剂）在点火效应后抑制该轴。
+- 在卵巢中，卵泡膜细胞在LH作用下合成雄激素，颗粒细胞在FSH作用下将其芳香化为雌二醇。
+- 持续高雌二醇使反馈由负转正，引起LH峰和排卵。
+- 黄体期约14天：在预期下次月经前七天测定孕酮。
+- 性早熟指女孩8岁前或男孩9岁前；青春期延迟指女孩13岁或男孩14岁仍无发育。
+- 闭经：先排除妊娠，再定位层次（下丘脑、垂体、卵巢、流出道）。
+- PCOS（2023年指南）：排卵功能障碍、高雄激素，以及超声多囊卵巢或AMH升高（成人）三项中的两项，并排除类似疾病。
+- POI：40岁前，闭经至少四个月且一次FSH高于25 IU/L；激素替代至平均绝经年龄。
+- 45岁以上根据临床诊断绝经（NICE NG23）；有子宫者HRT需加孕激素；经皮雌激素不增加VTE风险。
+- 男性性腺功能减退：以重复的空腹清晨睾酮确诊；LH和FSH区分原发性与继发性；睾酮治疗抑制生育能力。
 :::
 
-## 练习
+## 习题
 
-::: exercise 构建算法 {level=1}
-继发性闭经、妊娠试验阴性：给出三项筛查与那个能重定向一切的查体发现。
+::: exercise 定位病变 {level=1}
+将下列各项分为原发性或继发性性腺功能减退：(a) 睾酮4 nmol/L，LH 22 IU/L；(b) 雌二醇低，FSH 2 IU/L，LH 1 IU/L；(c) 睾酮5 nmol/L，LH 3 IU/L（正常范围）。
 ::: solution
-**TSH与泌乳素与卵泡刺激素及黄体生成素（有益处时加雌二醇）——[[#def-axis]]；加病史（溢乳与头痛及视觉——[[endocrine/hypothalamus-pituitary]]；运动与体重及应激——[[#def-female]]；潮热与手术及化疗史——卵巢早衰）。重定向的查体发现是雌激素状态与流出道（阴道萎缩改变提示低雌激素；正常男性化与多毛提示多囊卵巢综合征——[[clinical-skills/physical-examination]]）。**
+(a) 原发性（睾丸衰竭）：LH高。(b) 继发性（下丘脑或垂体）。(c) 继发性：睾酮低时，处于正常范围的LH是不适当地偏低。
 :::
 :::
 
-::: exercise 开出生育检查 {level=1}
-32岁伴侣、14个月未保护性交、周期规则：说出四项一线检查与由谁做。
+::: exercise 何时检测 {level=1 check="30-7"}
+一位女性月经规律，周期30天。应在周期第几天测定孕酮以证实排卵？
 ::: solution
-**精液分析、异常则复查（他——[[#def-male]]）；排卵记录（黄体中期孕酮带周期背景——[[#def-axis]]）；输卵管通畅（子宫输卵管造影或超声造影——[[clinical-skills/medical-imaging]]、[[obstetrics-gynaecology/contraception-fertility]]）；卵巢储备与盆腔超声（她、抗苗勒管激素选择性用而不作为守门人——[[clinical-skills/laboratory-tests]]）；及先治病因的纪律（体重与定时性交及吸烟与酒精建议——[[gastrointestinal/clinical-nutrition]]、[[psychiatry/substance-use]]）。**
+预期下次月经前七天：第$30 - 7 = 23$天。
 :::
 :::
 
-::: exercise 解读低睾酮 {level=2}
-一个肥胖打鼾的50岁男性单次样本总睾酮8、未服药物；黄体生成素正常。解释为何这个数字最没意义、该做什么。
+::: exercise 定义 {level=1}
+定义原发性闭经和继发性闭经。
 ::: solution
-**测量优先陷阱（肥胖中单次午后总睾酮伴低性激素结合球蛋白及可能的睡眠呼吸暂停抑制及未透露的阿片使用——[[#def-male]]、[[clinical-skills/laboratory-tests]]、[[respiratory/control-breathing-tests]]）；规范复查（两个晨起空腹样本带黄体生成素与卵泡刺激素及泌乳素及铁蛋白及TSH）；表型工作（睡眠呼吸暂停与肥胖及代谢复审、轻症先做体重规划——[[gastrointestinal/clinical-nutrition]]、[[endocrine/diabetes]]）；任何睾酮之前的生育之问（[[obstetrics-gynaecology/contraception-fertility]]）；及中枢何时成像的决定（极低伴低黄体生成素与症状或其他轴异常——[[endocrine/hypothalamus-pituitary]]）。**
+原发性：第二性征正常者15岁时仍无月经，或无第二性征发育者13岁时仍无月经。继发性：既往月经规律者停经三个月或以上，或既往月经不规律者停经六个月。
 :::
 :::
 
-::: exercise 处理患多囊卵巢综合征的少女 {level=2}
-15岁、初潮后2年、月经稀少、痤疮、体质指数34、超声卵巢呈多囊样。这是多囊卵巢综合征吗、十年计划是什么？
+::: exercise 游离雄激素指数 {level=2 check="100*3.2/16"}
+计算总睾酮3.2 nmol/L、SHBG 16 nmol/L时的游离雄激素指数。
 ::: solution
-**谨慎但有计划（超声在青少年中无信息量、而鹿特丹标准的应用需要青春期成熟、及青年高雄激素生理的细微——[[#def-female]]）；诊断可建立在排卵与临床高雄激素配对伴排除（甲状腺与泌乳素及17羟孕酮——[[clinical-skills/laboratory-tests]]、[[endocrine/thyroid]]、[[endocrine/adrenal]]）；十年计划——代谢风险监测与生活方式技能构建及知晓污名的沟通（[[gastrointestinal/clinical-nutrition]]、[[public-health/prevention-promotion]]、[[psychiatry/anxiety-disorders]]身体意象）；子宫内膜出血保护阈值、及并行而不是事后的避孕规划（[[obstetrics-gynaecology/contraception-fertility]]、[[gastrointestinal/gi-bleeding-cancer]]）；抗雄激素带避孕安全的痤疮与多毛阶梯（[[musculoskeletal/skin]]）；及不确定性与复审日期的记录（[[clinical-skills/records-handover]]）。**
+$100 \times 3.2 / 16 = 20$。
 :::
 :::
 
-::: exercise 就阻滞剂给出建议 {level=2}
-一名对青春期痛苦的13岁儿童的父母问“暂停激素”同时他们“等等看”。给出证据诚实的回答。
+::: exercise 激动剂 {level=2}
+一位7岁女孩出现乳房发育、生长突增和阴毛。GnRH兴奋试验后LH显著升高，脑MRI正常。解释为什么用长效GnRH激动剂治疗，而不是对抗所产生的激素。
 ::: solution
-**当前证据立场（系统综述时代的谨慎——骨密度与神经发育及生育未知、及如今多数系统中青春期抑制附带的研究环境与临床试验条件——[[paediatrics/adolescent-health]]、[[endocrine/bone-calcium]]、[[epidemiology-ebm/systematic-reviews]]）；稳固的东西（心理社会评估与支持优先路径、共病检查组合、带治疗的静观等待与学校联络、及社会措施的可逆性——[[psychiatry/lifespan-psychiatry]]、[[clinical-skills/communication]]）；共享决定架构（记录在案的获益不确定性与监测计划及第二意见与倡导者可得、及若推进任何性腺毒性激素则生育保存讨论——[[medical-ethics-law/consent-capacity]]、[[obstetrics-gynaecology/contraception-fertility]]）；及不抛弃也不抢占儿童自身轨迹的平衡（[[medical-ethics-law/ethical-principles]]、[[clinical-skills/records-handover]]）。**
+她患**中枢性性早熟**：LH反应表明该轴已过早开启。目标是从源头关闭垂体。长效GnRH激动剂提供持续刺激，在短暂点火效应后使促性腺激素细胞脱敏，于是LH、FSH和雌二醇下降（[[#thm-pulsatility]]）。这使青春期暂停到合适的年龄，保护成年身高，并让心理发育跟上。在组织水平阻断雌激素既不能停止该轴，也不能处理其全部效应。
 :::
 :::
 
-::: exercise 重新设计服务 {level=3}
-一个地区生殖医学等待3年、而多囊卵巢综合征照护呈 按邮编的彩票。围绕证据、公平与伦理构建重设计。
+::: exercise HRT咨询 {level=2}
+一位52岁、有子宫的女性有严重潮热，BMI 34。她担心血栓。概述关于HRT讨论的要点。
 ::: solution
-**路径优先（初级与二级照护的共享照护诱导排卵带严格规程与转诊标准、及两级多囊卵巢综合征服务、及开放预约的扫描与精液服务、及宫腔内授精与体外受精委托标准证据复审——[[#def-fertility]]、[[public-health/health-systems-economics]]）；需求与吞吐分析（周期启动等待指标及脱落审计与门诊级失败分析、及用于诱导排卵安全与可及的远程监测、及多胎率与卵巢过度刺激分级质量指标——[[obstetrics-gynaecology/contraception-fertility]]、[[public-health/screening]]）；公平层（贫困与族裔及语言及工作时间可及审计、及成本障碍与交通及托儿、及肿瘤与性别照护路径的生育力保存可及——[[public-health/determinants-inequalities]]、[[obstetrics-gynaecology/contraception-fertility]]、[[medical-ethics-law/justice-resources]]）；伦理层（公布并可申诉的资源分配理由、及成功率沟通标准与数据准确——[[medical-ethics-law/justice-resources]]、[[medical-ethics-law/professionalism-regulation]]）；及亲历者与保障设计输入（沟通标准与在诊断时而不是第三次失败时的咨询——[[psychiatry/lifespan-psychiatry]]、[[clinical-skills/communication]]）。**
+HRT是治疗血管舒缩症状最有效的方法。由于她有子宫，需要雌激素加孕激素（例如微粒化孕酮或左炔诺孕酮宫内节育系统）以保护子宫内膜。她的肥胖增加了基线VTE风险；**经皮**雌激素不会使VTE风险高于基线，这一点与口服雌激素不同，因此首选。雌孕激素联合HRT与乳腺癌风险的小幅、随时间增加的升高相关，应以绝对数字表达。获益包括缓解症状和保护骨骼。也应提供包括CBT在内的非激素选择。决定由她作出，并在定期复诊时重新评估。
+:::
+:::
+
+::: exercise 一个需要鉴别诊断的病例 {level=3}
+一位17岁女孩原发性闭经。她身高142 cm（低于第0.4百分位），乳房发育极少，有颈蹼。FSH 88 IU/L。给出最可能的诊断、两个备选诊断、确诊检查以及处理要点。
+::: hint
+FSH高意味着问题在卵巢。
+:::
+::: solution
+**最可能的诊断**：**特纳综合征**（45,X或嵌合型）：身材矮小、无或极少青春期发育、颈蹼，以及卵巢衰竭（条索状性腺）导致的FSH升高。
+
+**备选诊断**：其他原因的早发性卵巢功能不全（例如儿童期癌症治疗后、自身免疫性、FMR1前突变），但不能解释身材矮小或颈蹼；46,XY性腺发育不全（斯威尔综合征，Swyer syndrome），表现为FSH高和无青春期发育，但身高正常或偏高。
+
+**确诊检查**：核型分析（计数足够多的细胞以检出嵌合）。
+
+**处理**：从低剂量开始逐渐加量的雌激素替代以诱导青春期，然后加用孕激素产生撤退性出血；如果在童年期更早确诊，本可能已提供生长激素；筛查相关疾病（心脏：二叶式主动脉瓣和主动脉缩窄，需终身主动脉监测；肾脏畸形；听力；甲状腺疾病和乳糜泻；糖尿病）；生育咨询，包括赠卵的可能，任何妊娠前均需专科心脏评估；以及心理支持，最好在过渡期服务中进行（[[genetics/chromosomal-disorders]]）。
+:::
+:::
+
+::: exercise 解读临界睾酮 {level=3}
+一位58岁肥胖（BMI 38）伴2型糖尿病的男性有疲倦和性欲低下。下午3时的非空腹样本显示睾酮7.5 nmol/L。讨论如何解读并制定计划。
+::: solution
+该样本不可靠：非空腹、下午采集，且可能处于血糖控制不佳时，这些都会使睾酮降低。应在**上午11时前空腹复查**，同时测LH、FSH、SHBG和催乳素。
+
+肥胖降低SHBG，即使游离睾酮正常也会使总睾酮降低，因此计算游离睾酮很有用。如果确认睾酮低而LH低或正常，最可能的原因是肥胖和糖尿病引起的**功能性继发性性腺功能减退**；应排除其他原因（阿片类、糖皮质激素、高催乳素血症、垂体疾病、血色病）。
+
+首要治疗是基础疾病：减重（适当时包括基于GLP-1的治疗或减重手术）可提高睾酮。如果确认缺乏且症状持续，可在讨论后考虑睾酮治疗，并监测血细胞比容和前列腺，且仅限于他不打算生育的情况。糖尿病中的勃起功能障碍常为血管性或神经性，不论睾酮如何，可能对PDE5抑制剂有效。
 :::
 :::

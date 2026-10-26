@@ -1,158 +1,339 @@
-糖尿病的并发症就是糖尿病本身。**[[endocrine/diabetes]]里的一切——分类之争、器官保护药物、技术——存在的目的都是预防或延迟本章的过程：视网膜与肾及神经的微血管病；心、脑与肢体的大血管病；及足、在那里神经病变与血管病及感染汇合。**现代糖尿病照护以筛查网格是否被填满来评判、因为本章每个并发症都在治疗有效的窗口内无症状。
+糖尿病在两个时间尺度上伤害人体。在数小时内，胰岛素与葡萄糖之间的平衡可能向任一方向失衡：胰岛素过多导致**低血糖**，过少导致**糖尿病酮症酸中毒（DKA）**或**高渗高血糖状态（HHS）**。在数年中，升高的血糖损害眼、肾和神经的小血管，并加速大动脉的动脉粥样硬化。糖尿病仍是劳动年龄成人视力丧失、肾衰竭和下肢截肢的主要原因之一，并使心血管疾病风险大约翻倍。这些损害大多可以预防或延缓，因此筛查和危险因素控制与血糖一样，都是糖尿病诊疗的组成部分。
 
-本章涵盖机制、视网膜病变、肾病、神经病变与糖尿病足、大血管与心代谢照护、及技术与结构化照护脚手架。
+本课介绍低血糖、DKA、DKA与HHS的区别、慢性并发症的机制，以及眼、肾、神经、足和心血管病变的识别、筛查和处理。HHS的完整处理见[[endocrine/endocrine-emergencies]]。英国的实践遵循英国糖尿病学会住院诊疗联合组（JBDS）和NICE的指南。
 
-## 机制
+## 低血糖 {#sec-hypoglycaemia}
 
-::: definition 为何是血管与神经 {#def-mechanisms}
-**四条糖毒性路径（非酶糖基化形成晚期糖基化终末产物、交联基底膜并触发受体介导的炎症；多元醇通路消耗还原型辅酶与肌醇；己糖胺通量转录改变；及二酰甘油蛋白激酶C激活改变血流与通透性——生化四重奏、对照[[cell-biochemistry/energy-metabolism]]与[[cell-biochemistry/metabolic-integration]]阅读）；周细胞丢失与基底膜增厚及内皮功能障碍作为小血管的共同组织学（[[pathology/haemodynamics]]、[[pathology/cell-injury]]）；来自糖尿病控制与并发症试验及英国前瞻性糖尿病研究随访的代谢记忆与遗留效应概念（早期血糖控制在数十年后的回响——[[epidemiology-ebm/systematic-reviews]]）；及使多因素干预成为全领域最高收益策略的多风险协同——血糖乘血压乘血脂乘吸烟乘蛋白尿——[[cardiovascular/hypertension]]、[[cardiovascular/vascular-disease]]、[[psychiatry/substance-use]]。临床转化：危险因素强度思维（为何“糖化血红蛋白64、血压150、吸烟”胜过任何单一数字）、及随之而来早期静默疾病的筛查义务（[[#def-eye]]、[[#def-kidney]]、[[public-health/screening]]）。**
+::: definition 糖尿病中的低血糖 {#def-hypo}
+对于使用胰岛素或胰岛素促泌剂治疗的糖尿病患者，国际低血糖研究组和ADA将低血糖分为：
+
+- **1级**：血糖低于3.9 mmol/L（70 mg/dL）且不低于3.0 mmol/L。属于警戒值。
+- **2级**：血糖低于3.0 mmol/L（54 mg/dL）。具有临床意义的低血糖。
+- **3级**：伴精神或躯体状态改变、需要他人帮助才能恢复的**严重**事件，不论血糖数值。
+
+英国的患者教育常用一条简单规则"**4是底线**"：任何低于4.0 mmol/L的读数都要处理。
 :::
 
-## 微血管三联
+低血糖是糖尿病治疗最常见的急性并发症，也是严格控制的主要障碍。它发生于使用**胰岛素**和**磺脲类**时，单用二甲双胍、SGLT2抑制剂、GLP-1受体激动剂或DPP-4抑制剂时不会发生。常见诱因有漏餐或延迟进餐、计划外运动、饮酒（阻断肝脏糖异生，有时在数小时后才出现）、剂量错误、体重减轻，以及肾功能下降减慢胰岛素和磺脲类的清除。
 
-::: definition 视网膜病变与眼病 {#def-eye}
-**自然史（高滤过期而眼底正常→背景微血管瘤与出血及渗出及静脉串珠→增殖前改变（棉絮斑、视网膜内微血管异常）→增殖期新血管（玻璃体积血与牵拉性脱离急症）加上黄斑病变——局灶与弥漫水肿、随着治疗转移如今是视力丧失最常见原因——[[nervous-system/sensory-systems]]的视网膜解剖与[[pathology/haemodynamics]]）；风险与修饰因素（病程、血糖强度、血压、妊娠——暂时加重视网膜病变的快速改善悖论、及孕前眼底与缓慢稳定规则——[[obstetrics-gynaecology/pregnancy-complications]]、[[endocrine/diabetes]]）。筛查（年度或两年一次的散瞳成像或远程筛查规划及其敏感度目标、及未就诊安全网作为具名的患者安全职责——[[public-health/screening]]、[[clinical-skills/patient-safety]]）。治疗（增殖期与高危疾病的激光光凝带其视野损失取舍；黄斑病变的玻璃体腔抗血管内皮生长因子带其试验持久性与注射时间表负担——抗血管内皮生长因子生物学（[[pathology/chronic-inflammation-repair]]邻近血管生成信号）；不吸收积血与脱离的玻切时代（[[nervous-system/sensory-systems]]）；及白内障与青光眼及麻痹的过多带其“波动视力不等于新眼镜”咨询）。 典型病例与手术妊娠围手术期细微（[[#ex-retina]]、[[obstetrics-gynaecology/pregnancy-complications]]、[[surgery/perioperative-care]]）。**
+症状分为两组。**自主神经**症状（出汗、震颤、心悸、饥饿、焦虑）来自肾上腺素反应，起预警作用。**神经低血糖**症状（意识模糊、注意力难以集中、行为怪异、言语含糊、嗜睡、抽搐、昏迷）来自大脑缺乏葡萄糖。低血糖可能被误认为醉酒、卒中或精神障碍。
+
+**处理**取决于患者能否安全吞咽：
+
+1. **意识清醒且能吞咽**：15–20 g速效碳水化合物（葡萄糖片、定量的含糖饮料或果汁）。10–15分钟后复测，仍低于4.0 mmol/L则重复。恢复后进食长效碳水化合物零食或下一餐。
+2. **嗜睡或不能安全吞咽**：不经口给予任何可能误吸的东西。按当地方案给予**肌内注射胰高血糖素**（或在可获得时经鼻胰高血糖素）或**静脉葡萄糖**（通常为10%葡萄糖）。胰高血糖素通过释放肝糖原起作用，因此在长时间禁食或大量饮酒后效果较差。
+3. **磺脲类所致低血糖**可在许多小时内反复发生，因为药物持续刺激胰岛素分泌。常需要住院观察。
+
+::: theorem 反复低血糖会降低其自身的预警阈值 {#thm-unawareness}
+每次低血糖发作都会使大脑触发肾上腺素反应的血糖水平移向更低的值。反复发作之后，自主神经预警出现得更晚或根本不出现，于是首发表现就是意识模糊。这就是**低血糖感知受损**，它使严重低血糖的风险增加数倍。
 :::
 
-::: definition 肾脏病 {#def-kidney}
-**自然史（高滤过期——年轻1型中估算肾小球滤过率80而不是60的安心陷阱——然后蛋白尿起病、然后肾小球滤过率陡降、及现代对非蛋白尿型与老年起病轨迹的认识——[[renal/filtration]]、[[renal/chronic-kidney-disease]]）；病理（系膜扩张与基底膜增厚到Kimmelstiel-Wilson结节、及不典型规则——血尿或快速下降或无视网膜病变意味着考虑另一种肾小球疾病并活检——[[pathology/diagnostic-pathology]]）；筛查（年度尿白蛋白肌酐比值与肾小球滤过率网格及其治疗阈值映射——[[clinical-skills/laboratory-tests]]、[[public-health/screening]]）。治疗堆栈（带遗留效应紧迫性的血糖控制；最大耐受剂量肾素-血管紧张素系统阻滞带钾与肌酐接受规则——[[renal/potassium-calcium-phosphate]]、[[renal/acute-kidney-injury]]；钠葡萄糖协同转运蛋白2抑制剂作为慢性肾病与心衰与血糖治疗、带早期肾小球滤过率下降解释与病日暂停——[[endocrine/diabetes]]、[[cardiovascular/heart-failure]]、[[endocrine/endocrine-emergencies]]；非奈利酮用于残余蛋白尿带钾警觉[[renal/potassium-calcium-phosphate]]；按蛋白尿分层的血压目标逻辑——[[cardiovascular/hypertension]]；血脂与吸烟及体重及盐管理——[[cardiovascular/vascular-disease]]、[[gastrointestinal/clinical-nutrition]]）；进展层（肾科转诊阈值、慢性肾病叠加问题——贫血与骨矿物及剂量调整及造影纪律——[[renal/chronic-kidney-disease]]、[[blood/anaemia]]、[[endocrine/bone-calcium]]、[[clinical-skills/medical-imaging]]；及带移植与心血管检查现实的肾替代谈话——[[immunology/transplant-tumour-immunology]]、[[surgery/vascular-urological-surgery]]）。整个方案的药物剂量与病日及造影规则属于[[pharmacology/dosing-principles]]与[[endocrine/diabetes]]的病日教学。**
+::: proof
+升糖调节系统会适应其近期经历。低血糖之后，大脑增加葡萄糖摄取，下丘脑的葡萄糖感受神经元重新设定。下一次血糖下降必须更深，才会释放肾上腺素。由于提醒患者的自主神经症状依赖肾上腺素，预警便消失了；而神经低血糖仍在相近的血糖水平开始。"预警"与"功能受损"之间的间隔缩小甚至倒转。糖尿病病程长和自主神经病变会加重这一问题，1型糖尿病早期即出现的胰高血糖素反应丧失也是如此。反之亦然：**严格避免低血糖两到三周**可部分恢复感知，这是治疗的基础。
 :::
 
-::: definition 神经病变与足 {#def-nerve-foot}
-**远端对称性多发性神经病（长度依赖的袜套-手套感觉丧失伴阴性与阳性症状；踝反射消失与10克单丝及音叉检查、及“振动最先走”模式——[[clinical-skills/physical-examination]]、[[nervous-system/motor-systems]]邻近反射生理；绝不能懒惰归因的鉴别——维生素B12与酒精及甲状腺及淀粉样变及骨髓瘤及血管炎及顺铂及人类免疫缺陷病毒及特发性小纤维病——[[blood/anaemia]]、[[psychiatry/substance-use]]、[[endocrine/thyroid]]、[[blood/lymphoma-myeloma]]、[[musculoskeletal/connective-tissue-vasculitis]]、[[infectious-diseases/hiv]]）。自主神经病（多系统目录——伴跌倒的体位性低血压——[[geriatrics-palliative/falls]]、[[cardiovascular/circulation-blood-pressure]]；静息心动过速与运动不耐受及静默缺血——[[cardiovascular/arrhythmias]]、[[cardiovascular/coronary-artery-disease]]；胃轻瘫与早饱及吸收不定——[[gastrointestinal/oesophagus-stomach]]；糖尿病腹泻与夜间为主及溢出性——[[gastrointestinal/digestion-absorption]]、[[gastrointestinal/bowel-disease]]；膀胱张力消失与尿路感染及残余尿测量——[[renal/urinary-tract]]、[[surgery/vascular-urological-surgery]]；勃起与射精功能障碍及血管对神经源混合——[[endocrine/reproductive-endocrinology]]、[[cardiovascular/vascular-disease]]；无汗与代偿性出汗及热不耐受——[[physiology/homeostasis-body-fluids]]；及低血糖无知觉重叠回到[[endocrine/diabetes]]）。局灶与根综合征腕管与其他卡压——[[musculoskeletal/back-pain]]邻近神经压迫与[[nervous-system/motor-systems]]；第三与第六神经麻痹带瞳孔保留教学——[[nervous-system/sensory-systems]]；胸腹根性疼痛模拟急腹症——[[surgery/acute-abdomen]]；及糖尿病腰骶神经根丛神经病（剧烈疼痛与消耗及体重下降的肌萎缩——微血管炎机制一课——[[nervous-system/motor-systems]]）。疼痛性神经病管理（按机制匹配的阶梯——低剂量三环夜间给带睡眠获益与副作用代价——[[nervous-system/headache-pain]]；度洛西汀带5-羟色胺卫生[[pharmacology/adverse-reactions]]与[[psychiatry/mood-disorders]]；加巴喷丁与普瑞巴林带镇静体重及滥用警诫——[[psychiatry/substance-use]]；辣椒素贴剂与外用选项；阿片伤害规避线与难治疼痛专科门诊；睡眠与情绪及功能目标和认知行为治疗及理疗规划——[[psychiatry/anxiety-disorders]]、[[geriatrics-palliative/symptom-control]]）。糖尿病足三联——神经病变加畸形与压迫加缺血加感染——带胼胝与锤状趾及拇囊炎压迫地图、及能在多数溃疡存在之前抓住它们的“鞋与趾甲与水及赤足”病史[[musculoskeletal/bones-joints]]、[[musculoskeletal/skin]]；溃疡评估——探骨与深度及气味及探针、及C反应蛋白与X线及磁共振用于骨髓炎的配对——[[clinical-skills/physical-examination]]、[[clinical-skills/medical-imaging]]；血管评估——脉搏与踝肱指数带中膜钙化假性正常警诫及趾压及经皮氧分压、及血管造影血运重建转诊——[[cardiovascular/vascular-disease]]、[[surgery/vascular-urological-surgery]]；感染——浅对深及骨髓炎带混合菌群与浸渍微生物逻辑及抗生素规则及外科清创对单用抗生素——[[microbiology/antimicrobials]]、[[microbiology/laboratory-diagnosis]]、[[surgery/wounds-surgical-infection]]；减压与全接触石膏及可拆卸助行靴及毛毡层压及依从现实；多学科足服务证据（整章中最大的单项截肢预防干预——团队主导门诊与一站式可得及血管与足病及骨科及整形覆盖——见[[#ex-foot]]的服务论证）、Charcot神经关节病（被误诊为蜂窝织炎的红热肿胀、及固定减压而不是抗生素规则——[[musculoskeletal/bones-joints]]）；及截肢轨迹——首溃疡后小而持续的年发生率、大对小的决定及康复与义肢及对侧肢体保存、及带结构化监测规划第二只足的预防——义肢与康复要点（[[surgery/orthopaedics]]）。**
+感知能力通过问卷评估，如**Gold评分**（七分量表中4分或以上提示感知受损）。处理包括结构化教育、调整胰岛素、带低血糖报警的持续葡萄糖监测，以及在符合标准时使用混合闭环系统（[[endocrine/diabetes]]）。DVLA要求使用胰岛素的驾驶者报告感知受损和反复严重低血糖。
+
+## 糖尿病酮症酸中毒 {#sec-dka}
+
+::: definition 糖尿病酮症酸中毒（JBDS标准） {#def-dka}
+同时具备以下三项即可诊断**糖尿病酮症酸中毒**：
+
+1. **酮血症** ≥ 3.0 mmol/L（毛细血管或静脉血β-羟丁酸），或明显酮尿（尿试纸2+或以上）；
+2. **血糖** > 11.0 mmol/L（198 mg/dL），**或已知糖尿病**；
+3. **酸中毒**：碳酸氢盐 < 15.0 mmol/L和/或静脉pH < 7.3。
+
+第二条标准考虑到了**血糖正常的DKA**，此时血糖接近正常，最常见于服用SGLT2抑制剂者、妊娠期或进食不足时。
 :::
 
-## 更大的血管与其余
+::: proof
+DKA由**胰岛素绝对或相对缺乏**合并**升糖激素**（胰高血糖素、皮质醇、儿茶酚胺、生长激素）过多所致。随之发生三个过程：
 
-::: definition 大血管与心代谢照护 {#def-macro}
-**冠脉病（加速动脉粥样硬化加微血管及心肌纤维化表型产生的静默缺血警诫、射血分数保留心衰与糖尿病心肌病综合征、及梗死周围高血糖预后论证——[[cardiovascular/coronary-artery-disease]]、[[cardiovascular/heart-failure]]）；脑血管（卒中风险与高血糖使结局恶化、及卒中后血糖管理——[[nervous-system/stroke]]）；外周动脉病（跛行与 危急肢体缺血模式带其糖尿病远端与胫前分布及足重叠——[[cardiovascular/vascular-disease]]、[[#def-nerve-foot]]）；危险因素攻击（阈值以上糖尿病者基本全部用他汀、按风险的他汀强度架构——[[cardiovascular/vascular-disease]]；按蛋白尿与年龄的血压目标——[[cardiovascular/hypertension]]；抗血小板用于二级而非常规一级预防——[[blood/haemostasis-bleeding]]；吸烟与酒精及体重及运动及睡眠——[[psychiatry/substance-use]]、[[gastrointestinal/clinical-nutrition]]、[[public-health/prevention-promotion]]）；心肾代谢药物层（钠葡萄糖协同转运蛋白2与肠促胰素类别结局证据回顾——[[endocrine/diabetes]]——带成本与公平及多重用药现实——[[public-health/health-systems-economics]]、[[geriatrics-palliative/polypharmacy]]）。**
+1. **高血糖**：肝脏通过糖异生和糖原分解释放葡萄糖，肌肉和脂肪摄取减少。
+2. **酮症**：失去胰岛素的抑制，脂肪组织释放游离脂肪酸。在肝脏，高胰高血糖素/胰岛素比值使脂肪酸进入线粒体进行β氧化并生成酮体（乙酰乙酸和β-羟丁酸）。酮体是酸，因此发生**阴离子间隙升高型代谢性酸中毒**，伴代偿性深快呼吸（**库斯莫尔呼吸**）。
+3. **脱水和电解质丢失**：尿糖引起**渗透性利尿**，丢失水、钠和钾。呕吐加重丢失。
+
+钾需要特别注意。机体总钾已经耗竭，但就诊时血钾常正常甚至偏高，因为酸中毒和胰岛素缺乏使钾移出细胞。一旦给予胰岛素，钾回到细胞内，血钾可危险地下降。
 :::
 
-::: definition 被忽视的附录：皮肤、骨、心、口与其余 {#def-other}
-**皮肤（类脂渐进性坏死与糖尿病性大泡、及带其胰岛素吸收后果的注射部位脂肪肥大与脂肪萎缩——[[musculoskeletal/skin]]、[[endocrine/diabetes]]注射手艺；感染阈值——蜂窝织炎与念珠菌及葡萄球菌关系——[[infectious-diseases/healthcare-infections]]邻近）。骨与肌（1型低转换状态、2型“强而脆”的骨密度悖论伴跌倒与神经病变及低血糖骨折叠加、及吡格列酮与胰岛素及慢性肾病的贡献与骨折风险评估——[[endocrine/bone-calcium]]、[[geriatrics-palliative/falls]]）。认知与情绪（抑郁与糖尿病痛苦双向负荷带依从后果——[[psychiatry/mood-disorders]]、[[endocrine/diabetes]]；血管认知与痴呆关联——[[nervous-system/dementia-neurodegeneration]]；恐针与低血糖焦虑及回避及紊乱进食筛查——[[psychiatry/anxiety-disorders]]、[[psychiatry/eating-personality-disorders]]）。口（牙周病双向性及属于照护计划的牙科转诊——[[anatomy/head-neck]]）。睡眠与呼吸（睡眠呼吸暂停患病率及其对血糖与血压的治疗效应——[[respiratory/control-breathing-tests]]邻近[[cardiovascular/hypertension]]）。性、泌尿与妇科（勃起功能障碍作为预警信号也是药物靶点——[[endocrine/reproductive-endocrinology]]；反复念珠菌——[[microbiology/fungi-parasites]]；及生育规划与避孕接口——[[obstetrics-gynaecology/contraception-fertility]]）。感染与免疫（中性粒与皮肤屏障及血糖变异性逻辑、及疫苗接种规划依从——流感与肺炎球菌及乙肝原理——[[immunology/innate-immunity]]、[[public-health/vaccination-programmes]]）。围手术期与住院照护（手术当日胰岛素与钠葡萄糖协同转运蛋白2暂停及静脉胰岛素输注规程、及病房低血糖与酮体报警规则——[[surgery/perioperative-care]]、[[endocrine/endocrine-emergencies]]、[[emergency-critical-care/critical-care]]）。**
+DKA主要发生在1型糖尿病，有时是其首发表现。它也发生在2型糖尿病，尤其是服用SGLT2抑制剂者和酮症倾向性2型糖尿病。常见诱因有感染、漏用胰岛素、新诊断、胰岛素泵故障、心肌梗死、胰腺炎、饮酒和某些药物。症状在数小时至一天内发展：口渴、多尿、呕吐、**腹痛**（可酷似外科急腹症）、气促和嗜睡。体征包括脱水、心动过速、库斯莫尔呼吸，以及呼气中丙酮的甜味"烂苹果味"。
+
+**阴离子间隙**有助于量化酸中毒：
+
+$$
+\text{阴离子间隙} = [\text{Na}^+] - ([\text{Cl}^-] + [\text{HCO}_3^-])
+$$ {#eq-anion-gap}
+
+按此公式，典型参考范围约为8–12 mmol/L（部分实验室加上钾，参考范围相应升高）。酸碱推理详见[[renal/acid-base-disorders]]。
+
+### 处理原则
+
+处理遵循书面方案，在英国以JBDS指南为基础。下面的剂量和速率是典型的成人原则；请遵循当地方案。要点是：
+
+- **补液**：静脉输注0.9%氯化钠恢复循环容量，休克时快速输注，然后在随后约12小时内按计划速率输注。年轻成人（因脑水肿风险）、老年人、妊娠期以及心力衰竭或肾衰竭者补液应更谨慎。
+- **固定速率静脉胰岛素输注（FRIII）**，按估计体重**每小时每千克0.1单位**。使用固定速率而非滑动剂量表，是因为目标是关闭酮体生成，而不只是降低血糖。许多方案允许在血糖降至14 mmol/L以下后将速率降至每小时每千克0.05单位，以减少低血糖和低钾血症。
+- **继续患者平时使用的长效基础胰岛素**，以便停止输注时仍有背景胰岛素。
+- 血糖降至14 mmol/L以下后**加用葡萄糖**（通常在盐水之外加输10%葡萄糖），使胰岛素能继续清除酮体而不致低血糖。
+- **钾**：一旦知道血钾且尿量已建立，若血钾≤5.5 mmol/L即在液体中加钾。若低于3.5 mmol/L需上级医师评估，因为可能需要更多钾。
+- **监测**：每小时监测毛细血管血糖和酮体，定期查静脉血气（pH、碳酸氢盐、钾）。JBDS指南的治疗目标是血酮每小时下降至少0.5 mmol/L，静脉碳酸氢盐每小时上升约3 mmol/L，血糖每小时下降约3 mmol/L。
+- **寻找并治疗诱因**，给予血栓预防，并及早请糖尿病团队参与。
+- 不常规输注**碳酸氢盐**。
+
+DKA的**缓解**定义为**血酮低于0.6 mmol/L且静脉pH高于7.3**。患者能进食饮水后，随餐重新开始皮下速效胰岛素，30–60分钟后停止输注；在没有皮下胰岛素作用的情况下停止输注会导致酮症反跳。
+
+提示**重度DKA**、应促使上级医师评估并考虑高依赖病房的指标包括：血酮高于6 mmol/L、碳酸氢盐低于5 mmol/L、静脉pH低于7.0、入院时血钾低于3.5 mmol/L、意识水平下降（GCS低于12）、吸空气时血氧饱和度低于92%、收缩压低于90 mmHg、脉搏高于100或低于60次/分，以及阴离子间隙高于16 mmol/L。
+
+DKA及其治疗的并发症包括低钾血症、低血糖、**脑水肿**（成人罕见，儿童和年轻成人较常见；头痛、意识下降或脉搏减慢是警示征象）、吸入性肺炎、血栓栓塞和急性肾损伤。
+
+::: warning 治疗了血糖而不是酮体
+DKA是由酮体引起的酸中毒，而不是一种血糖疾病。一个常见错误是在血糖降至正常范围而酮体仍高时停止或减少胰岛素输注，结果酸中毒持续甚至加重。对血糖下降的正确反应是**在输液中加入葡萄糖并继续固定速率胰岛素**，直到酮体低于0.6 mmol/L且pH高于7.3。同样，服用SGLT2抑制剂并因呕吐而不适的人，即使血糖正常也需要检测酮体。
 :::
 
-::: definition 技术与结构化照护 {#def-tech}
-**连续与闪光葡萄糖监测（目标范围内时间词汇——70-180 mg/dL目标及低血糖与峰值曲线下面积、及报警与回看功能及数据过载与报警疲劳管理；2型胰岛素治疗者的可及标准之辩与技术公平问题——[[public-health/determinants-inequalities]]）。泵与混合闭环（传感器泵算法三联及其糖化血红蛋白与目标范围内时间及低血糖结局、及24小时支持与部位更换及病日规程、及妊娠与儿童扩展——[[paediatrics/acute-childhood-illness]]、[[obstetrics-gynaecology/pregnancy-complications]]、技术试验证据[[epidemiology-ebm/randomised-trials]]）。结构化教育（课程不是传单原则——问题解决技能与胰岛素调整及疾病管理及驾驶与旅行；同伴与护士及营养师教学团队——[[clinical-skills/communication]]、[[gastrointestinal/clinical-nutrition]]）。照护流程脚手架（诊断登记册与眼足肾及用药复审的自动召回——[[public-health/screening]]；与全科的共享照护公式带平行处方与剂量只改一次——[[clinical-skills/records-handover]]；专科护士负荷模式及其人力现实——[[public-health/health-systems-economics]]；及嵌入门诊的心理支持——[[psychiatry/treatments-mental-health-law]]邻近整合）。不可谈判的文件（病日规则、驾驶状态、生育意愿、足风险分级、及技术密码与支持联系人——预防本章多数灾难的五个字段——[[clinical-skills/patient-safety]]）。**
+### DKA与HHS的比较
+
+**高渗高血糖状态**典型地见于老年2型糖尿病患者。体内有足够的胰岛素防止明显酮症，但不足以控制血糖，血糖在数天内升高，伴严重脱水和极高的渗透压。JBDS对HHS的定义为：低血容量，血糖≥30 mmol/L而无明显酮血症（< 3.0 mmol/L）或酸中毒（pH > 7.3，碳酸氢盐 > 15 mmol/L），渗透压≥320 mOsm/kg。也存在DKA与HHS混合的表现。
+
+| 特征 | DKA | HHS |
+|---|---|---|
+| 典型人群 | 1型糖尿病，任何年龄 | 老年2型糖尿病患者 |
+| 起病 | 数小时至一天 | 数天 |
+| 血糖 | 通常 > 11 mmol/L，可接近正常 | ≥ 30 mmol/L |
+| 酮体 | ≥ 3.0 mmol/L | < 3.0 mmol/L |
+| pH / 碳酸氢盐 | < 7.3和/或 < 15 mmol/L | > 7.3且 > 15 mmol/L |
+| 渗透压 | 升高，程度不一 | ≥ 320 mOsm/kg |
+| 主要危险 | 酸中毒、低钾血症、年轻人脑水肿 | 脱水、血栓形成、渗透压变化过快 |
+
+HHS的处理在若干重要方面有所不同（纠正更慢；除非酮体升高，只有在单纯补液不再降低血糖时才用胰岛素），见[[endocrine/endocrine-emergencies]]。
+
+## 慢性高血糖如何损害组织 {#sec-mechanisms}
+
+大多数细胞能调节自身的葡萄糖摄取，但有些不能：血管内皮、视网膜、肾脏系膜细胞和周围神经大致按血糖浓度成比例地摄取葡萄糖。这些正是受损的组织。
+
+已确定的机制有若干：葡萄糖经**多元醇途径**的通量增加（醛糖还原酶将葡萄糖转化为山梨醇，消耗抗氧化防御所需的NADPH）、**晚期糖基化终产物**的形成（使蛋白质交联并激活炎症受体）、**蛋白激酶C**的激活，以及**己糖胺途径**通量增加。一个统一的假说认为，过多的葡萄糖驱动线粒体产生活性氧，从而激活上述全部四条途径。
+
+临床试验证实了这一联系。1型糖尿病的DCCT和2型糖尿病的UKPDS显示，更好的血糖控制可减少微血管并发症。对两项试验人群的随访显示出**代谢记忆（遗留效应）**：在血糖水平与对照组趋同多年之后，原强化组的并发症仍然更少。早期良好控制具有持久价值。UKPDS显示，对许多结局而言，控制血压至少与控制血糖同样重要。
+
+## 微血管并发症 {#sec-micro}
+
+### 视网膜病变
+
+::: definition 糖尿病眼病 {#def-eye}
+**糖尿病视网膜病变**是视网膜微循环的损害。**背景期（非增殖期）视网膜病变**包括微动脉瘤、点状和斑片状出血以及硬性渗出。**增殖前期**改变反映缺血：棉絮斑、静脉串珠样改变和视网膜内微血管异常。**增殖期视网膜病变**是脆弱新生血管的生长，由缺血视网膜释放的血管内皮生长因子（VEGF）驱动，新生血管可出血进入玻璃体或引起牵拉性视网膜脱离。**糖尿病黄斑病变**（黄斑水肿或中心凹附近的渗出）威胁中心视力，可在任何阶段出现。
+:::
+
+视网膜病变在晚期之前没有症状，因此**筛查**至关重要。NHS糖尿病眼病筛查项目邀请所有12岁及以上的糖尿病患者进行数字视网膜摄影。自2023年10月起，英格兰正将低风险者（连续两次筛查无视网膜病变）改为每两年筛查一次，苏格兰、威尔士和北爱尔兰此前已经这样做；其他人继续每年筛查。治疗包括针对黄斑病变和增殖期病变的玻璃体内**抗VEGF注射**以及**激光光凝**。血糖的快速改善可一过性加重视网膜病变，因此有明显视网膜病变者开始强化治疗时需密切监测。妊娠也会加速视网膜病变，需要更频繁的筛查。
+
+### 肾脏病
+
+::: definition 糖尿病肾脏病 {#def-kidney}
+**糖尿病肾脏病**是归因于糖尿病的慢性肾脏病。最早的征象通常是尿白蛋白升高，以晨尿**白蛋白/肌酐比值（ACR）**测定。按KDIGO分级，ACR低于3 mg/mmol为正常（A1），3–30 mg/mmol为中度增加（A2），高于30 mg/mmol为重度增加（A3）。异常结果需经复查确认，因为运动、感染和月经可使ACR一过性升高。肾功能按eGFR和ACR共同分期（[[renal/chronic-kidney-disease]]）。
+:::
+
+糖尿病早期肾小球呈高滤过状态。数年中，肾小球基底膜增厚和系膜扩张导致白蛋白尿、高血压和GFR下降。并非人人都遵循这一顺序：有些人，尤其是2型糖尿病患者，在没有明显白蛋白尿的情况下GFR下降。
+
+延缓进展的治疗有：
+
+- **控制血压**，有白蛋白尿者使用**ACE抑制剂或血管紧张素受体阻滞剂**；
+- **SGLT2抑制剂**，它降低肾小球内压，在有或无糖尿病者的试验中均显著延缓进展；
+- **非奈利酮（finerenone）**，一种非甾体盐皮质激素受体拮抗剂，用于2型糖尿病合并白蛋白尿性CKD的加用治疗（NICE于2023年推荐）；
+- 控制血糖、他汀类药物和戒烟。
+
+ACE抑制剂、ARB和非奈利酮都会升高血钾，必须监测。
+
+### 神经病变与糖尿病足
+
+::: definition 糖尿病神经病变 {#def-nerve-foot}
+最常见的类型是**远端对称性感觉运动性多发性神经病**，呈长度依赖性，最长的神经最先受累，因此从足趾和足部开始，向上呈"袜套样"（之后为"手套样"）分布。保护性感觉丧失意味着损伤不被察觉。部分人出现**痛性神经病变**，有烧灼样、放射样或电击样疼痛，常在夜间加重。**自主神经病变**引起体位性低血压、胃轻瘫、腹泻、膀胱功能障碍、勃起功能障碍和低血糖感知下降。**局灶性**神经病变包括脑神经麻痹和糖尿病性肌萎缩。
+:::
+
+**糖尿病足溃疡**通常由神经病变（使疼痛消失并改变足的形态和压力）与妨碍愈合的**外周动脉疾病**共同引起。感染可在足部组织中迅速扩散并累及骨（骨髓炎）。
+
+NICE指南NG19规定了足部保护措施：
+
+- 所有糖尿病患者每年进行**足部评估**：视诊、触诊足背动脉搏动，并用**10 g单丝**检查感觉。
+- **风险分层**为低风险、中风险、高风险或活动性足病，风险较高者由足部保护服务更频繁地复查。
+- **活动性足病**（溃疡、扩散性感染、严重肢体缺血、坏疽、疑似夏科足）需在一个工作日内转诊至多学科足病诊疗服务，危及肢体或生命的问题需急诊转诊。
+
+**夏科神经关节病**是发生在神经病变足的骨和关节的破坏性炎症过程。表现为**发热、发红、肿胀的足**，常无痛或仅轻度疼痛，有时发生在轻微外伤之后。它很容易被误认为蜂窝织炎或痛风。若不立即用非负重石膏卸载，中足会塌陷成"摇椅底"畸形并形成溃疡。任何有神经病变的糖尿病患者出现原因不明的足部发热肿胀，在被证实为其他疾病之前，都应按夏科足处理。
+
+痛性神经病变用阿米替林、度洛西汀、普瑞巴林或加巴喷丁等药物治疗（NICE CG173），同时关注睡眠和情绪。
+
+## 大血管病变与更广的图景 {#sec-macro}
+
+糖尿病患者冠心病、卒中和外周动脉疾病的风险约为常人的两倍。由于自主神经病变，心肌梗死可能是"无症状"的。降低这一风险包括：
+
+- **他汀类药物**，按NICE NG238（2023年）使用，该指南推荐大多数心血管风险升高的成人2型糖尿病患者使用他汀，以及年龄超过40岁、病程超过10年、有肾病或有其他危险因素的成人1型糖尿病患者使用他汀；
+- 控制**血压**；
+- **戒烟**；
+- **SGLT2抑制剂和GLP-1受体激动剂**，可减少高风险者的心血管事件或心力衰竭（[[endocrine/diabetes]]）；
+- 已确诊心血管疾病者使用抗血小板治疗。
+
+其他需要关注的并发症包括**牙周病**、**非酒精性脂肪性肝病**、如**类脂质渐进性坏死**的皮肤改变、冻结肩及其他肌肉骨骼问题、感染风险增加，以及常见且影响自我管理的**抑郁和糖尿病困扰**。
+
+由于这些并发症悄无声息地发展，结构化的年度复查是诊疗的核心部分。在英国，复查内容包括HbA1c、血压、血脂、ACR和eGFR、足部评估、视网膜筛查、体重、吸烟和心理健康。
+
+::: example 一位青少年的腹痛 {#ex-dka}
+一位17岁1型糖尿病女孩因呕吐和腹痛24小时就诊。她一直咳嗽不适，"因为没吃东西"而减少了胰岛素用量。她深大呼吸，每分钟28次。血糖24.0 mmol/L，毛细血管酮体5.8 mmol/L，静脉pH 7.08，碳酸氢盐7 mmol/L，钠133，氯98，钾5.6 mmol/L。她体重60 kg。解读结果并概述最初的处理步骤。
+::: solution
+**诊断。** 酮体≥3.0、血糖>11.0、碳酸氢盐<15且pH<7.3：她符合JBDS的全部三项**DKA**标准。诱因：胸部感染和减少胰岛素。
+
+**阴离子间隙**按[[#eq-anion-gap]]：$133 - (98 + 7) = 133 - 105 = 28$ mmol/L，明显升高。
+
+**严重程度。** pH高于7.0，碳酸氢盐高于5，酮体低于6，但仍应仔细评估她是否有其他重度DKA指标，并由上级医师评估。注意，17岁时她可能按儿科（BSPED）或成人（JBDS）方案处理，取决于负责她的团队；年轻人因脑水肿风险需要谨慎补液。
+
+**最初步骤**（示意性成人原则）：
+1. ABCDE评估，建立静脉通路，血和尿培养，胸部X线。
+2. 静脉输注0.9%氯化钠。
+3. FRIII速率为$0.1 \times 60 = 6$单位/小时。
+4. 继续她的基础胰岛素。
+5. 钾：5.6 mmol/L高于5.5，第一袋液体不加钾；1–2小时内复查，因为胰岛素起效后血钾会下降。
+6. 每小时测血糖和酮体；60分钟、2小时时及之后每2小时查静脉血气。
+7. 治疗胸部感染；请糖尿病团队参与；之后与她一起复习患病期间用药规则，因为不进食时减少胰岛素导致了这次发作。
+
+她的腹痛在DKA中很常见，通常随治疗缓解；持续疼痛应促使寻找外科病因。
+:::
+:::
+
+::: example 追踪酮体的下降 {#ex-ketones}
+一位DKA男性开始治疗时血酮为5.4 mmol/L。如果酮体以JBDS目标速率每小时0.5 mmol/L下降，需要多长时间才能达到0.6 mmol/L的缓解阈值？如果下降较慢该怎么办？
+::: solution
+需要下降$5.4 - 0.6 = 4.8$ mmol/L。按每小时0.5 mmol/L计算：
+
+$$
+\frac{4.8}{0.5} = 9.6 \text{ 小时}。
+$$
+
+因此预计约10小时后缓解（pH也必须高于7.3）。如果酮体每小时下降不到0.5 mmol/L（或碳酸氢盐每小时上升不到约3 mmol/L），方案会提示检查：输注是否在运行并已连接，泵是否正常，体重估计是否正确，是否存在未解决的诱因？如果这些都没问题，则提高胰岛素输注速率（通常每小时增加1单位），直到达到目标速率。
+:::
 :::
 
 ::: widget plot
-f: 100-x; 100-5*x
-x: 0, 16
-y: 0, 105
-labels: \text{年},\ \text{估算肾小球滤过率（正常百分比）};\ \text{年龄典型下降};\ \text{进展性糖尿病肾病}
-caption: 陡增的斜率就是疾病。未治疗的进展性糖尿病肾病可失去数倍于年龄典型的年肾小球滤过率——年度白蛋白与滤过率筛查、肾素系统与钠葡萄糖协同转运蛋白2及非奈利酮堆栈、及在悬崖之前转诊的纪律背后的算术（[[#def-kidney]]、[[renal/chronic-kidney-disease]]）；遗留效应与早治疗回报在[[#def-mechanisms]]、试验证据在[[epidemiology-ebm/randomised-trials]]。
+f: max(5.4-0.5*x, 0); max(5.4-0.3*x, 0)
+x: 0, 20
+y: 0, 6
+hlines: 3; 0.6
+labels: \text{酮体按目标速率下降（每小时0.5 mmol/L）}; \text{酮体下降过慢（每小时0.3 mmol/L）}
+caption: DKA治疗中血酮（mmol/L）随治疗时间（小时）的变化，标出诊断阈值（3.0）和缓解阈值（0.6）。按目标速率，酮体在不到10小时内降至0.6 mmol/L；按较慢速率则需16小时，应促使重新检查输注和诱因。简化的线性模型；实际曲线并非直线。
 :::
 
-::: example 无痛的红眼 {#ex-retina}
-41岁1型糖尿病19年（糖化血红蛋白74、最近筛查眼底照片四次“转诊、图像不合格”）注意到一只眼飞蚊与幕帘；该眼视力6/60。
+::: example 反复低血糖 {#ex-hypo-awareness}
+一位52岁、患1型糖尿病30年的公交车司机被发现在停着的车里意识模糊，血糖2.2 mmol/L。他说自己"再也感觉不到低血糖要来了"。他的HbA1c为45 mmol/mol。问题是什么？应该做什么？
 ::: solution
-**增殖期视网膜病变伴玻璃体积血、及一个应被命名的筛查失败（[[#def-eye]]、[[public-health/screening]]）：即刻眼科急症评估（屈光间质混浊时B超与玻璃体切除讨论时机及抗血管内皮生长因子与激光计划——[[nervous-system/sensory-systems]]）；双侧含义（对侧眼已治疗或密切监测、及“图像不合格四次”模式本应在数年前就强制人工散瞳检查——未就诊与未追查的患者安全类别——[[clinical-skills/patient-safety]]）；驾驶标准后果与再评估路径（[[medical-ethics-law/professionalism-regulation]]）；全身诱因搜寻（血压与妊娠及加速改善病史及肾病进展复审——[[cardiovascular/hypertension]]、[[obstetrics-gynaecology/pregnancy-complications]]、[[#def-kidney]]）；技术与教育回应（结构化教育转诊与为稳定性的连续监测讨论——[[#def-tech]]）；及不良事件报告与眼底筛查流程复审（四次图像失败而未升级是一个有可修规则的系统缺陷——[[clinical-skills/records-handover]]、[[public-health/screening]]）。**
-:::
-:::
+他存在**低血糖感知受损**：经过多年糖尿病和频繁低血糖（使用胰岛素而HbA1c低提示如此），他的自主神经预警症状已经丧失（[[#thm-unawareness]]）。这是一次3级（严重）事件，因为他需要别人帮助。
 
-::: example “只是鸡眼”的足 {#ex-foot}
-66岁长病程2型、三年无足病科接触、第二跖骨头下恶臭足底溃疡、能探到骨、周围蜂窝织炎与发热；脉搏触不到、踝肱指数测不出、肌酐较基线升高。
-::: solution
-**由可预防碎片建成的是一个肢体与生命的急症（[[#def-nerve-foot]]）：收住多学科足路径（一站式团队规则与“时间就是组织”时钟——最能减少大截肢的服务）；即刻检查——深部组织培养而不是拭子的纪律及血培养及深部探查及探骨及磁共振查骨髓炎及气体及异物（[[clinical-skills/laboratory-tests]]、[[clinical-skills/medical-imaging]]）；经验性然后定向抗生素带厌氧与耐甲氧西林金黄色葡萄球菌判断及按肾功剂量（[[microbiology/antimicrobials]]、[[renal/chronic-kidney-disease]]）；紧急血管评估（测不出踝肱指数作为胫动脉钙化一课、及趾压及CT血管造影或导管血管造影及血运重建决定——[[surgery/vascular-urological-surgery]]）；脓毒症与急性肾损伤管理及造影风险平衡（[[infectious-diseases/fever-sepsis]]、[[renal/acute-kidney-injury]]）；外科清创与减压及最终重建对截肢决定、及与患者和家属的严重性诚实（相邻组织外科——重建阶梯；大截肢康复与义肢及五年死亡率现实使预防成为全部意义——[[geriatrics-palliative/palliative-care]]邻近预后谈话）。审计痕迹记录中缺失的足风险分级与三年无足病科复审是[[#def-tech]]的永不事件清单；及对侧足的二级预防预约带鞋与趾甲及每日检查及该找谁的教学（[[clinical-skills/communication]]、[[clinical-skills/records-handover]]）。**
-:::
-:::
-
-::: example 讨好的滤过率 {#ex-hyperfiltration}
-22岁1型糖尿病2年、估算肾小球滤过率138且白蛋白正常；报告写“高滤过、可能良性”；她的门诊放心了、肾问题就此关闭。
-::: solution
-**对了一半（[[#def-kidney]]）：高肾小球滤过率确实不是肾衰竭——它是最早期的糖尿病肾表型（胰岛素开放肾小球的钠葡萄糖协同转运蛋白2与管球反馈驱动高滤过——[[renal/filtration]]）而在某些患者预示着蛋白尿与下降；关闭的错误在于写“良性”而不是“年度白蛋白与滤过率及血压及血糖优化”。正确的记录条目血压与血糖目标设定带技术选项谈话——[[endocrine/diabetes]]、[[#def-tech]]；避免肾毒性与造影及脱水的教育带病日规则（[[renal/acute-kidney-injury]]、[[endocrine/endocrine-emergencies]]）；未来生育规划旗标（[[obstetrics-gynaecology/pregnancy-complications]]）；及使轨迹保持在监视下的召回行——斜率而不是单点值的纪律（[[renal/chronic-kidney-disease]]）。**
+**处理**：
+1. **安全**：他必须停止驾驶并通知DVLA；作为公交车司机（第2组驾照），标准更严格。这必须记录在案并谨慎解释，因为这影响他的生计。
+2. **暂时放宽血糖目标**，调整胰岛素，在数周内避免一切低血糖，这可部分恢复感知。
+3. **技术**：带低血糖报警的持续葡萄糖监测；符合条件时使用混合闭环系统。
+4. **教育**：结构化教育（例如DAFNE）和专门的低血糖感知训练。
+5. 寻找促发因素：饮酒、肾功能、注射部位脂肪增生、乳糜泻或肾上腺皮质功能减退（两者均与1型糖尿病相关）。
 :::
 :::
 
-::: example 两次红热的足 {#ex-charcot}
-49岁长病程神经病变患者左足红热肿胀；因“复发性蜂窝织炎”用了两个疗程静脉抗生素；动脉搏动正常、无伤口、无发热、C反应蛋白轻度升高；X线显示中足骨碎裂与弓塌陷。
+::: example 发热肿胀的足 {#ex-charcot}
+一位61岁孟加拉裔女性患2型糖尿病并已知有周围神经病变，右足发红肿胀。右足比左足温度高3 °C，但仅有轻度疼痛。无溃疡，皮肤无破损。CRP正常。她的全科医生已按蜂窝织炎开始使用抗生素。需要担心什么？
 ::: solution
-**急性Charcot神经关节病、两次都被误诊为感染（[[#def-nerve-foot]]）：区分点（无发热与皮肤完整及可触及脉搏及X线碎裂模式对蜂窝织炎的入口与全身毒性；“神经病足中没有伤口的蜂窝织炎应该让你大声说出Charcot”规则——[[clinical-skills/clinical-reasoning]]、[[musculoskeletal/skin]]）；即刻处理全接触石膏与减压与固定而不是抗生素、及静脉血栓与骨折及皮肤检查邻近规则（[[musculoskeletal/bones-joints]]、[[blood/thrombosis-anticoagulation]]）；影像手艺（磁共振早期水肿模式与X线滞后、及感染共存问题——[[clinical-skills/medical-imaging]]）；塌陷的重建前景（支具对矫形融合规划——[[surgery/orthopaedics]]）；抗生素管理复盘（两次不必要的静脉疗程与诊断不确定升级文化——[[infectious-diseases/stewardship-outbreaks]]、[[clinical-skills/patient-safety]]）；及终身足团队注册带“停下、抬腿、打电话”教育（[[clinical-skills/communication]]、[[clinical-skills/records-handover]]）。**
+有神经病变者出现**发热、肿胀、无痛或轻度疼痛的足**，皮肤完整且炎症指标正常，在被证实为其他疾病之前，应视为**活动性夏科神经关节病**。蜂窝织炎通常有入侵门户且炎症指标升高；痛风和深静脉血栓形成是其他鉴别诊断。
+
+她需要在**一个工作日内转诊至多学科足病诊疗服务**（NICE NG19）。应对足部进行制动和卸载，通常使用不可拆卸的全接触石膏，并进行影像检查（X线早期可能正常，以及MRI）。延误有中足塌陷的风险，导致的畸形会引起溃疡和截肢。单用抗生素是错误的治疗。
 :::
 :::
 
 ::: quiz
-年度糖尿病视网膜病变筛查最强有力的论点是：
-- [ ] 症状早出现
-- [x] 威胁视力的疾病在激光与抗血管内皮生长因子能防止失明的窗口内无症状
-- [ ] 筛查治疗糖尿病本身
-- [ ] 它取代血糖控制
+一位DKA患者正在接受固定速率胰岛素输注。5小时后，血糖11.5 mmol/L，酮体2.4 mmol/L，pH 7.26。正确的下一步是什么？
+- [ ] 停止胰岛素输注，因为血糖已接近正常。
+- [ ] 改为可变速率的滑动剂量表。
+- [x] 继续固定速率胰岛素，并在输液中加入10%葡萄糖。
+- [ ] 静脉给予碳酸氢盐。
 ::: solution
-**筛查之所以存在因为可治疗期是静默的（[[#def-eye]]）；症状（幕帘、突然失明）标志晚期事件；规划的价值取决于就诊追查与失效召回——[[public-health/screening]]与[[clinical-skills/patient-safety]]的公共卫生筛查架构与患者安全职责；血糖与血压控制降低发病率但不取消监测（[[cardiovascular/hypertension]]、[[endocrine/diabetes]]）。**
+血糖已降至14 mmol/L以下，但DKA尚未缓解：酮体高于0.6 mmol/L，pH低于7.3。必须继续胰岛素以清除酮体，同时加入葡萄糖防止低血糖。有些方案允许此时将胰岛素速率降至每小时每千克0.05单位，但不能停止。
 :::
 :::
 
 ::: history
-**并发症时代谱系：Kelly 1914年将眼底改变与糖尿病病程相关联、及胰岛素前时代认识到视网膜病变标记长生存者；Kimmelstiel与Wilson 1936年的结节病变描述把“糖尿病肾小球硬化症”从尸检变成活检（[[pathology/diagnostic-pathology]]）；斯堪的纳维亚自然史队列（哥本哈根与Steno纪念进展研究）产出[[#def-kidney]]仍在使用的分期；早期治疗糖尿病视网膜病变研究组与早期光凝试验把激光变成标准照护（[[nervous-system/sensory-systems]]）；糖尿病控制与并发症试验的代谢记忆与英国前瞻性糖尿病研究的多因素时代发现——[[epidemiology-ebm/randomised-trials]]；2000年代国家眼底筛查规划及其就诊不平等教训——[[public-health/screening]]、[[public-health/determinants-inequalities]]；抗血管内皮生长因子从肿瘤学到眼科学的迁移（肿瘤学来源的抗血管生成谱系）；里程碑式心肾代谢试验（恩格列净与卡格列净及达格列净肾病及非奈利酮试验——类别效应时代——[[cardiovascular/heart-failure]]、[[renal/chronic-kidney-disease]]、[[endocrine/diabetes]]）；及十年内从研究装置走到注册设备的闭环试验——[[epidemiology-ebm/randomised-trials]]。**
+在胰岛素问世之前，1型糖尿病的诊断意味着死亡，通常在数月至一两年内死于酮症酸中毒昏迷；**弗雷德里克·艾伦（Frederick Allen）**和**埃利奥特·乔斯林（Elliott Joslin）**的"饥饿饮食"只能短暂延长生命。1874年，德国医生**阿道夫·库斯莫尔（Adolf Kussmaul）**描述了糖尿病昏迷时以他的名字命名的深大费力呼吸。1922年胰岛素应用之后，随着人们寿命延长，慢性并发症成为主要威胁。1936年，**保罗·基默尔施蒂尔（Paul Kimmelstiel）**和**克利福德·威尔逊（Clifford Wilson）**描述了结节性肾小球硬化，即糖尿病特征性的肾脏病变。**DCCT**（1993年）和**UKPDS**（1998年）证明更好的血糖控制可预防微血管并发症，而它们的长期随访揭示了代谢记忆效应。
 :::
 
-## 通向何处
+## 后续内容
 
-血糖与药物架构在[[endocrine/diabetes]]；急症（酮症酸中毒、低血糖）在[[endocrine/endocrine-emergencies]]；肾终点生理在[[renal/filtration]]而进展在[[renal/chronic-kidney-disease]]；视网膜解剖在[[nervous-system/sensory-systems]]；神经生理在[[nervous-system/motor-systems]]；血管生物学在[[cardiovascular/vascular-disease]]。
-
-::: exercise 把低血糖与神经病分开 {level=2}
-一名用胰岛素的患者报告“夜里奇怪的感觉与发抖”；这是夜间低血糖还是自主神经或其他疾病？给出区分计划。
-::: solution
-**用数据不用趣闻夜间连续监测曲线复查查2级事件与模式时间分析——[[#def-tech]]、[[endocrine/diabetes]]；低血糖无知觉重叠咨询（[[endocrine/diabetes]]低血糖行）；若葡萄糖平坦则替代诊断——夜间反流与睡眠呼吸暂停及不安腿及焦虑及心律失常（[[gastrointestinal/oesophagus-stomach]]、[[respiratory/control-breathing-tests]]、[[nervous-system/motor-systems]]邻近睡眠运动障碍、[[cardiovascular/arrhythmias]]、[[psychiatry/anxiety-disorders]]）；用药时机复审（[[pharmacology/dosing-principles]]）；及记录在案的问答使下一位临床医师不重跑整个搜寻（[[clinical-skills/records-handover]]）。**
-:::
-:::
-
-::: exercise 解读踝肱指数 {level=2}
-糖尿病足门诊患者踝肱指数1.35。令人安心吗、接下来是什么？
-::: solution
-**不令人安心——不可压缩、中膜钙化胫动脉的假性升高（糖尿病与慢性肾病及年龄的动脉中膜钙化生理——[[#def-nerve-foot]]、[[cardiovascular/vascular-disease]]、[[renal/chronic-kidney-disease]]）；下一层——趾压与经皮氧测量及运动或反应性充血试验、及肢体威胁规划的双功超声或CT血管造影或导管血管造影（[[clinical-skills/medical-imaging]]、[[surgery/vascular-urological-surgery]]）；伤口背景（溃疡伴“正常”踝肱指数仍有风险、而足团队的血管转诊阈值不应等待静息痛——[[#ex-foot]]）；及全身动脉粥样硬化检查（[[cardiovascular/coronary-artery-disease]]、[[nervous-system/stroke]]）。**
-:::
-:::
-
-::: exercise 带病处方 {level=2}
-一名泵治疗1型患者胃肠病毒感染：泵部位正常、葡萄糖14-18、酮体1.5、呕吐、22:00糖尿病热线号码打不通。病日计划（已写在[[#def-tech]]）本应包含什么、现在会发生什么？
-::: solution
-**计划的四条腿（[[#def-tech]]、[[endocrine/endocrine-emergencies]]）：绝不停基础（泵故障致酮症酸中毒生理与长效注射桥接[[#def-tech]]、[[endocrine/diabetes]]）；额外液体带钠与糖规则（[[renal/water-sodium]]、[[gastrointestinal/clinical-nutrition]]）；酮体行动阈值（血酮层级与何时追加注射何时去医院——必须预先贴在冰箱门上的确切数字）；及24小时人类联系途径（使本患者犹豫的服务号码与院外模糊本身就是缺陷——[[clinical-skills/patient-safety]]）。今晚：急诊评估静脉输液与胰岛素及酮体清除及止吐与血栓复查（[[emergency-critical-care/acute-assessment]]、[[blood/thrombosis-anticoagulation]]）；明天：患者在场的计划重写（[[clinical-skills/communication]]）。**
-:::
-:::
+作为急症的高渗高血糖状态和严重低血糖见[[endocrine/endocrine-emergencies]]。糖尿病的治疗见[[endocrine/diabetes]]。慢性肾脏病、酸碱解读和外周动脉疾病分别见[[renal/chronic-kidney-disease]]、[[renal/acid-base-disorders]]和[[cardiovascular/vascular-disease]]。
 
 ::: summary
-- 并发症在诊断之前开始并静默进展；筛查日历就是临床干预。
-- 微血管病是一个过程在三个器官——视网膜、肾、神经——同样的糖毒性与同样的遗留效应治疗逻辑。
-- 足是一个系统问题：保护、血管流入、感染控制、减压与多学科团队、每一个都在下一个变紧急之前单独可预防。
-- 大血管风险用一个他汀形、转化酶抑制形、钠葡萄糖协同转运蛋白2与肠促胰素形、血压形与吸烟形的组套治疗——绝不单靠糖化血红蛋白数字。
-- 技术改变可能（连续监测、泵、闭环）、但只有结构化照护、教育与可靠登记册在人群尺度改变结局。
+- 低血糖：1级低于3.9，2级低于3.0 mmol/L，3级需要他人帮助。能吞咽者给予15–20 g速效碳水化合物；否则给予胰高血糖素或静脉葡萄糖。磺脲类所致低血糖会复发。
+- 反复低血糖导致感知受损；严格避免低血糖可部分恢复感知。
+- DKA（JBDS）：酮体≥3.0 mmol/L（或尿2+）、血糖>11.0 mmol/L或已知糖尿病，以及碳酸氢盐<15.0 mmol/L和/或pH<7.3。缓解：酮体<0.6且pH>7.3。
+- DKA处理：补液、固定速率胰岛素每小时每千克0.1单位、继续基础胰岛素、血糖低于14 mmol/L时加葡萄糖、谨慎补钾、治疗诱因。治疗酮体，而不是血糖。
+- HHS：血糖≥30 mmol/L，渗透压≥320 mOsm/kg，无明显酮症或酸中毒。
+- 微血管损害源于内皮、视网膜、肾脏和神经不受调控的葡萄糖摄取；早期良好控制具有代谢记忆效应。
+- 筛查眼（视网膜摄影）、肾（ACR和eGFR）和足（每年用单丝复查）；活动性足病在一个工作日内转诊。
+- 心血管风险约增加一倍；他汀、血压控制、戒烟和具有心血管保护作用的降糖药物可降低风险。
 :::
 
-## 练习
+## 习题
 
-::: exercise 填满日历 {level=1}
-29岁1型糖尿病6年：列出今年的监测项目与间隔。
+::: exercise 低血糖分级 {level=1}
+对每个事件分级：(a) CGM读数3.4 mmol/L，由本人处理；(b) 血糖2.6 mmol/L，由本人处理；(c) 血糖3.5 mmol/L伴意识模糊，需要伴侣给予葡萄糖凝胶。
 ::: solution
-**视网膜成像（按规划的年度或两年一次——[[#def-eye]]）；白蛋白比值与肾小球滤过率（年度——[[#def-kidney]]）；足检查与风险分级（每次就诊加年度足病科——[[#def-nerve-foot]]）；血压与血脂及吸烟及体重（风险复审——[[#def-macro]]）；甲状腺与乳糜泻按指征（[[endocrine/thyroid]]、[[gastrointestinal/bowel-disease]]）；病日与驾驶及生育意愿字段（[[#def-tech]]、[[endocrine/endocrine-emergencies]]）。**
+(a) 1级（低于3.9且不低于3.0）。(b) 2级（低于3.0）。(c) 3级：严重，因为需要他人帮助，不论血糖数值。
 :::
 :::
 
-::: exercise 读眼底 {level=1}
-“两个象限静脉串珠与视网膜内微血管异常、无新血管”——分级并说明行动。
+::: exercise 阴离子间隙 {level=1 check="136-(100+10)"}
+用$[\text{Na}^+] - ([\text{Cl}^-] + [\text{HCO}_3^-])$计算钠136、氯100、碳酸氢盐10 mmol/L时的阴离子间隙。
 ::: solution
-**增殖前视网膜病变（[[#def-eye]]：增殖前特征）；行动——缩短间隔复审、眼科转诊阈值核查（4-2-1规则）、及带快速改善警状的血糖与血压强化（[[obstetrics-gynaecology/pregnancy-complications]]）。**
+$136 - (100 + 10) = 26$ mmol/L，阴离子间隙升高。
 :::
 :::
 
-::: exercise 给肾病分期 {level=2}
-长病程2型肾小球滤过率55伴白蛋白比值90；服雷米普利5毫克、钾4.9、糖化血红蛋白66、尚未用钠葡萄糖协同转运蛋白2抑制剂。开出堆栈与监测。
+::: exercise 输注速率 {level=1 check="0.1*82"}
+一位体重82 kg的成人DKA患者，按每小时每千克0.1单位，初始固定速率胰岛素输注速率是每小时多少单位？（示意性计算；请遵循当地方案。）
 ::: solution
-**先最大化再加药（[[#def-kidney]]）：雷米普利滴定带钾与肌酐接受规则（[[renal/potassium-calcium-phosphate]]、[[renal/acute-kidney-injury]]）；加钠葡萄糖协同转运蛋白2抑制剂带早期下降解释与病日暂停（[[endocrine/diabetes]]、[[endocrine/endocrine-emergencies]]）；若蛋白尿持续则加非奈利酮带钾监测；他汀与血压目标及盐（[[cardiovascular/vascular-disease]]、[[cardiovascular/hypertension]]）；二甲双胍剂量核查与病日清单（[[pharmacology/dosing-principles]]）；及转诊复审触发与复查间隔（[[renal/chronic-kidney-disease]]）。**
+$0.1 \times 82 = 8.2$单位/小时。
 :::
 :::
 
-::: exercise 治疗夜间疼痛 {level=2}
-烧灼样夜间足痛、睡眠丧失、情绪低落、肾小球滤过率40、72岁。围绕共病构建神经病理性疼痛计划。
+::: exercise 她是否患DKA？ {level=2}
+一位45岁服用恩格列净的2型糖尿病女性，在腹腔镜胆囊切除术后因呕吐入院。血糖9.2 mmol/L，酮体4.6 mmol/L，静脉pH 7.21，碳酸氢盐12 mmol/L。她是否符合DKA标准？她的处理有何不同？
 ::: solution
-**起始低、加量慢带老年科意识（[[#def-nerve-foot]]疼痛行）：度洛西汀对情绪与睡眠的优势、或低剂量阿米替林带抗胆碱负担核查（[[psychiatry/mood-disorders]]、[[geriatrics-palliative/polypharmacy]]、[[nervous-system/headache-pain]]）；加巴喷丁类按肾剂量并复审镇静与跌倒及滥用（[[renal/chronic-kidney-disease]]、[[geriatrics-palliative/falls]]、[[psychiatry/substance-use]]）；外用辣椒素或利多卡因作为少全身吸收选项（[[musculoskeletal/skin]]）；睡眠卫生与认知行为治疗及理疗及负重及鞋检查（社区理疗与义肢接口）；血糖复审的诚实（疼痛可能不改善；避免快速控制诱发恶化——[[endocrine/diabetes]]）；及慢性疼痛的自杀观念筛查（[[psychiatry/self-harm-suicide-prevention]]）。**
+是的。她酮体≥3.0、已知糖尿病（即使血糖低于11.0也满足血糖标准），碳酸氢盐<15且pH<7.3。这是**血糖正常的DKA**，与SGLT2抑制剂相关，尤其在进食减少和手术应激时。
+
+处理：停用SGLT2抑制剂。由于血糖已低于14 mmol/L，需要**从一开始**就在固定速率胰岛素之外输注含葡萄糖的液体，使胰岛素能够清除酮体而不引起低血糖。密切监测血钾。这个病例说明了为什么在手术前和急性疾病期间要暂停SGLT2抑制剂。
 :::
 :::
 
-::: exercise 给系统闭合环路 {level=3}
-贵地区糖尿病的截肢与透析率高于全国均值。运行改进分析。
+::: exercise ACR {level=2}
+一位38岁1型糖尿病男性晨尿ACR为8 mg/mmol。下一步应做什么？若确认，随后的治疗是什么？
 ::: solution
-**在照护级联中定位失败（[[#def-tech]]）：登记与召回完整度（足风险分级的存在、眼底筛查就诊与未追查、白蛋白覆盖率——[[public-health/screening]]、[[clinical-skills/patient-safety]]）；可得性审计（足病科等待时间与多学科足门诊是否存在及血管转诊路径及抗血管内皮生长因子注射容量及肾科转诊阈值——[[surgery/vascular-urological-surgery]]、[[nervous-system/sensory-systems]]、[[renal/chronic-kidney-disease]]）；处方缺口审计（按贫困三分位的各类药物使用率——[[endocrine/diabetes]]、[[public-health/determinants-inequalities]]）；技术公平复审（按年龄族裔贫困的连续监测与泵可及——[[public-health/determinants-inequalities]]）；住院接口（酮体与低血糖规程及激素与手术糖尿病处方——[[endocrine/endocrine-emergencies]]、[[surgery/perioperative-care]]）；人力与教育（结构化课程完成率与专科护士比例——[[public-health/health-systems-economics]]）；及改进组（测量基线加计划-执行-检查-处理、以[[#def-tech]]的五个不可谈判字段作为合规指标、及一个亲历者小组——[[clinical-skills/records-handover]]）。**
+ACR 8 mg/mmol处于A2（中度增加）范围。应以复查样本确认（三到四个月内三次中两次异常），并排除尿路感染、近期剧烈运动或月经等一过性原因。若确认，他患有伴白蛋白尿的糖尿病肾脏病：给予ACE抑制剂或ARB，在耐受范围内滴定，并监测血钾和肌酐；优化血压、血糖和血脂；并继续每年监测eGFR和ACR。SGLT2抑制剂在2型糖尿病中有作用，但由于酮症酸中毒风险，未获批用于1型糖尿病的肾脏保护。
+:::
+:::
+
+::: exercise 到缓解的时间 {level=2 check="(4.2-0.6)/0.5"}
+某人开始DKA治疗时酮体为4.2 mmol/L。假设以每小时0.5 mmol/L稳定下降，需要多少小时酮体才能降至0.6 mmol/L？
+::: solution
+$(4.2 - 0.6)/0.5 = 3.6/0.5 = 7.2$小时。
+:::
+:::
+
+::: exercise 钾的陷阱 {level=3}
+一位70 kg的成人DKA患者初始血钾为3.1 mmol/L。解释为什么这很危险，以及为什么立即开始胰岛素的常规顺序可能需要改变。
+::: hint
+胰岛素把钾移向哪里？
+:::
+::: solution
+在DKA中，渗透性利尿和呕吐使机体总钾耗竭，但酸中毒和胰岛素缺乏使钾移出细胞，因此血钾通常正常或偏高。就诊时血钾**低**，意味着总钾耗竭严重。胰岛素会把钾驱入细胞，血钾将进一步下降，有发生心律失常和呼吸肌无力的风险。
+
+入院时血钾低于3.5 mmol/L是重度DKA的标志。需要上级医师评估、心电监护，并以高于标准的速率补钾，常需在高依赖病房经中心静脉给予。有些方案会推迟或减少胰岛素，直到补钾开始且血钾上升。继续补液。频繁复查血钾。
+:::
+:::
+
+::: exercise 一个需要鉴别诊断的病例 {level=3}
+一位78岁服用格列齐特和二甲双胍的2型糖尿病男性从护理院被送来，表现为嗜睡。毛细血管血糖1.9 mmol/L。静脉葡萄糖后他恢复了，但三小时后再次嗜睡，血糖2.4 mmol/L。他的eGFR原为55，在腹泻一周后降至24 mL/min/1.73 m²。解释病程，给出这种情况下嗜睡的鉴别诊断，并概述处理。
+::: solution
+**病程**：格列齐特部分经肾脏清除，肾功能下降时其作用延长。腹泻后的急性肾损伤导致药物蓄积和胰岛素持续分泌，因此每次推注葡萄糖后低血糖都会复发。这是**磺脲类所致低血糖**的典型表现。
+
+**嗜睡的鉴别诊断**：反复低血糖（最可能）；脱水和急性肾损伤引起的高渗或尿毒症状态；脓毒症；卒中；任何原因引起的低活动型谵妄；肾上腺皮质功能减退（罕见，但会引起低血糖）；药物作用。
+
+**处理**：住院；持续葡萄糖输注（例如10%葡萄糖）并频繁监测毛细血管血糖至少24小时或直到药物作用消失；难治性磺脲类低血糖有时使用奥曲肽。永久停用格列齐特，eGFR低于30时暂停二甲双胍。补液治疗急性肾损伤。重新审视他的血糖目标：对于衰弱的老年人，避免低血糖比低HbA1c更重要，他的诊疗计划应体现这一点。
 :::
 :::

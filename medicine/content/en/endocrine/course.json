@@ -8,9 +8,9 @@
   "tagline": "The pituitary, thyroid and adrenals, diabetes, bone and calcium, and reproductive hormones",
   "summary": "Hormones coordinate growth, metabolism and reproduction. This course covers the hypothalamus and pituitary, thyroid and adrenal disease, diabetes mellitus and its complications, bone and calcium metabolism, reproductive endocrinology and endocrine emergencies.",
   "overview": [
-    "The endocrine system is the body's slow communication network: hormones secreted into blood, acting on receptors in distant cells, arranged in feedback loops that make the system behave like an engineering control circuit. This is what makes endocrine biochemistry so diagnosable — an axis, a set point, negative feedback, and a pattern of tests that locates the lesion between glands — and what makes its diseases so systemic, because no hormone has a single job.",
-    "The course runs through the axes in physiological order: hypothalamus and pituitary as the master circuits, with the tumours and the syndromes of too much and too little; the thyroid in health and in autoimmunity; the adrenal cortex and medulla, steroid biochemistry and the hypertensive presentations; diabetes mellitus in two chapters, one for pathophysiology and management, one for the acute and chronic complications; calcium and bone with parathyroid and vitamin D; and reproductive endocrinology from puberty to the menopause. A final chapter covers the emergencies — DKA, myxoedema coma, adrenal crisis, phaeochromocytoma, hypercalcaemia, pituitary apoplexy.",
-    "Quantitative reasoning is central throughout: free hormone fractions and binding proteins, the log-linear pituitary–thyroid relationship that makes TSH the screening test, osmolality and sodium correction limits, HbA1c as a weighted average of glycaemia, insulin pharmacokinetics, hormone half-lives and replacement timing. Every patient-facing statement is framed as principle; actual prescribing follows current guidelines and an individual plan."
+    "Hormones are the body's slower signalling system. They travel in the blood, act on receptors in distant tissues, and are organised into axes closed by negative feedback. That organisation makes endocrine disease unusually logical to diagnose: almost every hormone result is read as a pair, the gland's product beside the signal that drives it, and the pattern points to the gland, the pituitary or the hypothalamus.",
+    "The course follows the axes in order: the hypothalamus and pituitary, including tumours and the control of water; the thyroid; the adrenal cortex and medulla; diabetes mellitus in two chapters, one on mechanisms and treatment and one on hypoglycaemia, ketoacidosis and long-term complications; calcium and bone; and reproductive endocrinology from puberty to the menopause. A final chapter gathers the emergencies, from adrenal crisis and thyroid storm to the hyperosmolar hyperglycaemic state and severe hyponatraemia.",
+    "Numbers matter throughout: calculated osmolality, adjusted calcium, the anion gap, HbA1c units, the time to reach a drug's steady state, insulin dose arithmetic and the predictive value of screening tests. Clinical statements follow current UK guidance (NICE, the Joint British Diabetes Societies, the Society for Endocrinology) with international guidance where it is standard. Doses are illustrative principles; real prescribing follows current guidelines and an individual plan."
   ],
   "prerequisites": [
     "anatomy",
@@ -19,14 +19,15 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Explain hypothalamic–pituitary control of each endocrine axis, the logic of short-loop and long-loop feedback, and how patterned hormone results localise a lesion to gland, pituitary or hypothalamus.",
-    "Diagnose and reason about the management of hypopituitarism, prolactinoma, acromegaly, Cushing's disease and syndrome, diabetes insipidus and the SIADH series.",
-    "Describe thyroid hormone synthesis, transport and action; investigate and interpret thyroid function tests; and manage hypothyroidism, thyrotoxicosis, thyroiditis and nodules including cancer principles.",
-    "Outline adrenal steroid biosynthesis and its regulation, and explain the presentations, diagnosis and long-term management of adrenal insufficiency, Cushing's syndrome, primary aldosteronism and phaeochromocytoma.",
-    "Distinguish type 1 from type 2 diabetes in mechanism and management, explain insulin and oral agent pharmacology, titration logic and sick-day rules, and interpret HbA1c and glucose monitoring data.",
-    "Explain the pathogenesis and screening of microvascular and macrovascular diabetic complications, and the recognition and management of hypoglycaemia, diabetic ketoacidosis and the hyperosmolar state.",
-    "Describe calcium and phosphate physiology with parathyroid hormone and vitamin D, diagnose the causes of abnormal corrected calcium, and reason about osteoporosis and Paget's disease.",
-    "Manage endocrine emergencies — myxoedema coma, thyroid crisis, adrenal crisis, phaeochromocytoma crisis, hypercalcaemia, pituitary apoplexy — according to resuscitation-first principles."
+    "Explain hypothalamic–pituitary control of each endocrine axis and use paired hormone results and dynamic tests to localise a lesion to gland, pituitary or hypothalamus.",
+    "Recognise and outline the investigation and management of pituitary tumours, hypopituitarism, hyperprolactinaemia, acromegaly, arginine vasopressin deficiency and resistance, and SIADH.",
+    "Describe thyroid hormone synthesis, transport and action; interpret thyroid function tests; and outline the management of hypothyroidism, thyrotoxicosis, thyroid disease in pregnancy, and thyroid nodules and cancer.",
+    "Explain adrenal physiology and the presentation, diagnosis and management of adrenal insufficiency (including glucocorticoid-induced suppression), Cushing's syndrome, primary aldosteronism, phaeochromocytoma and the adrenal incidentaloma.",
+    "Distinguish the types of diabetes by mechanism, apply the diagnostic criteria, interpret HbA1c and glucose-monitoring data, and explain the principles of drug and insulin treatment and sick-day rules.",
+    "Recognise and outline the management of hypoglycaemia and diabetic ketoacidosis, and explain the mechanisms, screening and prevention of microvascular and macrovascular complications.",
+    "Describe calcium, phosphate and vitamin D physiology; investigate abnormal calcium; and outline the assessment and treatment of osteoporosis, osteomalacia and Paget's disease.",
+    "Explain the hypothalamic–pituitary–gonadal axis and the menstrual cycle, and outline the assessment of disordered puberty, amenorrhoea, PCOS, premature ovarian insufficiency, the menopause and male hypogonadism.",
+    "Outline the resuscitation-first management of endocrine emergencies, including the hyperosmolar hyperglycaemic state, adrenal crisis, thyroid storm, myxoedema coma, severe hyponatraemia, calcium emergencies and pituitary apoplexy."
   ],
   "chapters": [
     {
@@ -48,7 +49,7 @@
     {
       "slug": "adrenal",
       "title": "The adrenal glands",
-      "summary": "Cortisol, aldosterone and adrenaline; Cushing’s syndrome, adrenal insufficiency and phaeochromocytoma.",
+      "summary": "Cortisol, aldosterone and adrenaline; adrenal insufficiency, Cushing's syndrome, primary aldosteronism and phaeochromocytoma.",
       "requires": [
         "endocrine/hypothalamus-pituitary"
       ]
@@ -89,7 +90,7 @@
     {
       "slug": "endocrine-emergencies",
       "title": "Endocrine emergencies",
-      "summary": "Adrenal crisis, thyroid storm, hyperosmolar states and severe electrolyte disturbances.",
+      "summary": "Hyperglycaemic crises, adrenal crisis, thyroid storm and myxoedema coma, and severe sodium and calcium disturbances.",
       "requires": [
         "endocrine/adrenal",
         "endocrine/thyroid",
@@ -101,7 +102,7 @@
     {
       "year": 1849,
       "title": "The liver as an organ of sugar",
-      "detail": "Claude Bernard discovers glycogen in the liver, produces experimental diabetes by puncturing the floor of the fourth ventricle (the piqûre), and shows that the nervous system regulates blood sugar — physiology acquires the concept of a internal milieu under reflex control.",
+      "detail": "Claude Bernard discovers glycogen and the liver's production of glucose, and shows that a puncture in the floor of the fourth ventricle causes glycosuria, evidence that blood sugar is regulated as part of a stable internal environment.",
       "people": [
         "Claude Bernard"
       ]
@@ -109,7 +110,7 @@
     {
       "year": 1889,
       "title": "Pancreatectomy and sugar",
-      "detail": "Oskar Minkowski, with Joseph von Mering, removes a dog's pancreas and produces fatal diabetes with glycosuria, proving that the pancreas secretes something that prevents diabetes and setting the search that Banting and Best would end in 1921.",
+      "detail": "Oskar Minkowski and Joseph von Mering remove a dog's pancreas in Strasbourg and produce fatal diabetes, showing that the pancreas prevents diabetes and starting the search that ended with insulin.",
       "people": [
         "Joseph von Mering",
         "Oskar Minkowski"
@@ -118,7 +119,7 @@
     {
       "year": 1902,
       "title": "Chemical messengers",
-      "detail": "William Bayliss and Ernest Starling, perfusing a isolated loop of dog intestine, show that acid in the duodenum releases a substance in the blood that commands the pancreas to secrete; Starling names such substances hormones in 1905, and the endocrine system becomes a communication system.",
+      "detail": "William Bayliss and Ernest Starling show that acid in the duodenum releases a blood-borne substance, secretin, that makes the pancreas secrete; in 1905 Starling introduces the word hormone for such chemical messengers.",
       "people": [
         "William Bayliss",
         "Ernest Starling"
@@ -127,7 +128,7 @@
     {
       "year": 1909,
       "title": "Thyroid surgery made safe",
-      "detail": "Theodor Kocher receives the Nobel Prize for his work on the thyroid gland; goitre surgery at the Berne Insular Hospital had been lethal, and Kocher's capsular technique and systematic attention to the recurrent laryngeal nerves and parathyroids brought operative mortality under one per cent.",
+      "detail": "Theodor Kocher of Bern receives the Nobel Prize for his work on the physiology, pathology and surgery of the thyroid gland. His careful technique made thyroidectomy safe, and his observation of hypothyroidism after total removal helped show what the gland does.",
       "people": [
         "Theodor Kocher"
       ]
@@ -135,7 +136,7 @@
     {
       "year": 1921,
       "title": "Isolation of insulin",
-      "detail": "At the University of Toronto, Frederick Banting, working with Charles Best under J. J. R. Macleod, isolates an islet extract that normalises glycaemia in the pancreatectomised dog; James Collip's purification makes it safe enough that Leonard Thompson, a seventeen-year-old in ketoacidosis, survives treatment in January 1922 — within a year insulin had turned diabetic ketoacidosis from a death sentence into a manageable event.",
+      "detail": "At the University of Toronto, Frederick Banting and Charles Best, in John Macleod's laboratory, prepare pancreatic extracts that lower blood glucose in diabetic dogs, and James Collip purifies them. In January 1922, 14-year-old Leonard Thompson becomes the first person treated successfully with insulin.",
       "people": [
         "Frederick Banting",
         "Charles Best",
@@ -144,9 +145,9 @@
       ]
     },
     {
-      "year": 1936,
+      "year": 1932,
       "title": "Cushing's syndrome",
-      "detail": "Harvey Cushing, the Boston neurosurgeon who had already named pituitary cachexia and the chromophobe adenoma, describes the syndrome of polyglandular dysfunction with adiposity, hypertension and glycosuria that bears his name, tying a clinical picture to a basophil pituitary tumour.",
+      "detail": "Harvey Cushing, the American neurosurgeon who pioneered pituitary surgery, describes a group of patients with obesity of the trunk, hypertension, purple striae and weakness, and links the syndrome to small basophil adenomas of the pituitary.",
       "people": [
         "Harvey Cushing"
       ]
@@ -154,17 +155,17 @@
     {
       "year": 1950,
       "title": "Cortisone",
-      "detail": "After Kendall's years of work isolating adrenal cortical extracts at Mayo and Reich's synthesis, Hench, Kendall and Reich receive the Nobel Prize for the discovery that cortisone relieves the manifestations of adrenal insufficiency and suppresses inflammation — the birth of steroid therapy and of its huge iatrogenic aftermath.",
+      "detail": "Philip Hench, Edward Kendall and Tadeus Reichstein share the Nobel Prize for work on the hormones of the adrenal cortex. Kendall and Reichstein isolated the corticosteroids, and in 1948 Hench gave cortisone to a woman with rheumatoid arthritis with dramatic effect, beginning the era of glucocorticoid therapy and its adverse effects.",
       "people": [
         "Philip Hench",
         "Edward Kendall",
-        "Tadeus Reich"
+        "Tadeus Reichstein"
       ]
     },
     {
       "year": 1959,
       "title": "Measuring the unmeasurable",
-      "detail": "Rosalyn Yalow and Solomon Berson develop radioimmunoassay using antibodies and radioactive insulin to measure peptide hormones at minute concentrations in blood; every subsequent hormone assay, and much of endocrinology as a precision specialty, rests on the technique (Yalow's Nobel Prize, 1977).",
+      "detail": "Rosalyn Yalow and Solomon Berson describe radioimmunoassay, using antibodies and radioactively labelled insulin to measure hormones at tiny concentrations in blood. Almost all later hormone assays build on the method, and Yalow receives the Nobel Prize in 1977.",
       "people": [
         "Rosalyn Yalow",
         "Solomon Berson"
@@ -173,35 +174,71 @@
     {
       "year": 1978,
       "title": "Human insulin made in bacteria",
-      "detail": "Teams at Genentech — working with Howard Goodman's laboratory — insert the human insulin gene into bacteria, and biosynthetic human insulin follows; the first genetically engineered medicine licensed for human use (approved 1982), opening the era of recombinant hormones from growth hormone to erythropoietin.",
+      "detail": "Scientists at Genentech, with collaborators at the City of Hope, produce human insulin in bacteria using recombinant DNA. Biosynthetic human insulin is approved in 1982, the first medicine made by genetic engineering.",
       "people": [
-        "Howard Goodman",
         "David Goeddel",
-        "Dennis Kleid"
+        "Dennis Kleid",
+        "Arthur Riggs",
+        "Keiichi Itakura"
       ]
     }
   ],
   "references": [
     {
-      "title": "The Endocrine Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the gland and the hormone.",
-      "slug": "ref1"
+      "title": "Williams Textbook of Endocrinology",
+      "authors": "Melmed S, Auchus RJ, Goldfine AB, Rosen CJ, Kopp PA (eds)",
+      "year": 2024,
+      "note": "The standard comprehensive reference for clinical endocrinology (15th edition).",
+      "slug": "williams"
     },
     {
-      "title": "The Endocrine Guide",
-      "authors": "Textbook",
+      "title": "Oxford Handbook of Endocrinology and Diabetes",
+      "authors": "Turner HE, Eastell R, Grossman A (eds)",
+      "year": 2022,
+      "note": "A concise, practical UK-based guide to diagnosis and management (4th edition).",
+      "slug": "oxford-handbook"
+    },
+    {
+      "title": "Greenspan's Basic and Clinical Endocrinology",
+      "authors": "Gardner DG, Shoback D (eds)",
+      "year": 2017,
+      "note": "A readable textbook linking endocrine physiology to clinical disease (10th edition).",
+      "slug": "greenspan"
+    },
+    {
+      "title": "Type 2 diabetes in adults: management (NG28)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2026,
+      "note": "NICE guideline for type 2 diabetes, updated in 2026 with new recommendations on medicines; read alongside NG17 for type 1 diabetes.",
+      "slug": "nice-ng28"
+    },
+    {
+      "title": "The management of diabetic ketoacidosis in adults",
+      "authors": "Joint British Diabetes Societies for Inpatient Care",
+      "year": 2023,
+      "note": "UK guideline for DKA in adults (revised 2021, with a care pathway updated in 2023), with companion JBDS guidance on the hyperosmolar hyperglycaemic state and on hypoglycaemia.",
+      "slug": "jbds-dka"
+    },
+    {
+      "title": "Thyroid disease: assessment and management (NG145)",
+      "authors": "National Institute for Health and Care Excellence",
       "year": 2019,
-      "note": "A rigorous treatment of the gland and the system.",
-      "slug": "ref2"
+      "note": "NICE guideline on thyroid function testing, hypothyroidism, thyrotoxicosis and thyroid nodules.",
+      "slug": "nice-ng145"
     },
     {
-      "title": "Clinical Endocrine",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the hormone and the practice.",
-      "slug": "ref3"
+      "title": "Society for Endocrinology Endocrine Emergency Guidance",
+      "authors": "Society for Endocrinology",
+      "year": 2016,
+      "note": "Concise UK guidance for acute adrenal insufficiency, hyponatraemia, hypercalcaemia and hypocalcaemia, published in Endocrine Connections.",
+      "slug": "sfe-emergency"
+    },
+    {
+      "title": "Clinical guideline for the prevention and treatment of osteoporosis",
+      "authors": "National Osteoporosis Guideline Group (NOGG)",
+      "year": 2022,
+      "note": "UK guidance on fracture risk assessment, intervention thresholds and drug treatment, published in Archives of Osteoporosis.",
+      "slug": "nogg"
     }
   ],
   "next": [

@@ -1,158 +1,339 @@
-The complications of diabetes are what diabetes is. **Everything in [[endocrine/diabetes]] — the classification arguments, the organ-protection drugs, the technology — exists to prevent or delay the processes in this chapter: microangiopathy of retina, kidney and nerve; macrovascular disease of heart, brain and limbs; and the foot, where neuropathy and vascular disease and infection converge.** Modern diabetes care is judged by whether the screening grids get filled, because every complication here is asymptomatic in the window where treatment works.
+Diabetes harms people in two time frames. Over hours, the balance between insulin and glucose can fail in either direction: too much insulin causes **hypoglycaemia**, too little causes **diabetic ketoacidosis (DKA)** or the **hyperosmolar hyperglycaemic state (HHS)**. Over years, raised glucose damages small blood vessels in the eye, kidney and nerves, and accelerates atherosclerosis in large arteries. Diabetes remains a leading cause of sight loss in working-age adults, of kidney failure and of lower-limb amputation, and it roughly doubles the risk of cardiovascular disease. Most of this damage can be prevented or delayed, which is why screening and risk-factor control are as much a part of diabetes care as glucose.
 
-This chapter covers mechanisms, retinopathy, kidney disease, neuropathy and the diabetic foot, macrovascular and cardiometabolic care, and the technology and structured-care scaffolding.
+This lesson covers hypoglycaemia, DKA, the distinction between DKA and HHS, the mechanisms of chronic complications, and the recognition, screening and management of eye, kidney, nerve, foot and cardiovascular disease. The full management of HHS is in [[endocrine/endocrine-emergencies]]. UK practice follows guidance from the Joint British Diabetes Societies for Inpatient Care (JBDS) and NICE.
 
-## Mechanisms
+## Hypoglycaemia {#sec-hypoglycaemia}
 
-::: definition Why vessels and nerves {#def-mechanisms}
-**The four glucose-toxicity routes (non-enzymatic glycation forming AGEs that cross-link basement membrane and trigger RAGE-mediated inflammation; the polyol pathway consuming NADPH and myo-inositol; hexosamine-flux transcriptional changes; and DAG-PKC activation altering blood flow and permeability — the biochemical quartet, read against [[cell-biochemistry/energy-metabolism]] and [[cell-biochemistry/metabolic-integration]]); pericyte loss and basement-membrane thickening and endothelial dysfunction as the shared histology of the small vessel ([[pathology/haemodynamics]], [[pathology/cell-injury]]); the concept of metabolic memory and legacy effect from the DCCT/UKPDS follow-ups (early glycaemic control echoing decades later — [[epidemiology-ebm/systematic-reviews]]); and the multi-risk synergy that made multifactorial intervention the highest-yield strategy in the whole field — glycaemia times blood pressure times lipids times smoking times albuminuria — [[cardiovascular/hypertension]], [[cardiovascular/vascular-disease]], [[psychiatry/substance-use]]. Clinical translation: risk-factor-intensity thinking (why "HbA1c 64, BP 150, smoker" outranks any single number) and the screening obligation that follows from silent early disease ([[#def-eye]], [[#def-kidney]], [[public-health/screening]]).**
+::: definition Hypoglycaemia in diabetes {#def-hypo}
+For people with diabetes treated with insulin or insulin secretagogues, the International Hypoglycaemia Study Group and the ADA classify hypoglycaemia as:
+
+- **Level 1**: glucose below 3.9 mmol/L (70 mg/dL) and at or above 3.0 mmol/L. An alert value.
+- **Level 2**: glucose below 3.0 mmol/L (54 mg/dL). Clinically important hypoglycaemia.
+- **Level 3**: a **severe** event with altered mental or physical state, needing another person's help to recover, whatever the glucose value.
+
+UK education often uses the simple rule "**4 is the floor**": treat any reading below 4.0 mmol/L.
 :::
 
-## The microvascular trio
+Hypoglycaemia is the commonest acute complication of diabetes treatment and the main barrier to tight control. It occurs with **insulin** and **sulfonylureas**, not with metformin, SGLT2 inhibitors, GLP-1 receptor agonists or DPP-4 inhibitors used alone. Common triggers are a missed or delayed meal, unplanned exercise, alcohol (which blocks hepatic gluconeogenesis, sometimes hours later), a dosing error, weight loss, and declining kidney function, which slows the clearance of insulin and sulfonylureas.
 
-::: definition Retinopathy and eye disease {#def-eye}
-**Natural history (hyperfiltration-and-fundus-normal → background microaneurysms-and-haemorrhages-and-exudates-and-venous-beading → pre-proliferative changes (Cotton-wool spots, IRMA) → proliferative new vessels (the vitreous-haemorrhage-and-tractional-detachment emergencies) plus maculopathy — the focal-and-diffuse oedema that is now the commonest cause of visual loss with treatment shifts — [[nervous-system/sensory-systems]]'s retinal anatomy and [[pathology/haemodynamics]]); risk and modifiers (duration, glycaemic intensity, blood pressure, pregnancy — the rapid-improvement-paradox that temporarily worsens retinopathy, and the pre-pregnancy-fundus-and-slow-stabilisation rule — [[obstetrics-gynaecology/pregnancy-complications]], [[endocrine/diabetes]]). Screening (the annual or biennial dilated-image or tele-screening programmes and their sensitivity targets and the fail-to-attend safety-netting that is a named patient-safety responsibility — [[public-health/screening]], [[clinical-skills/patient-safety]]). Treatment (laser photocoagulation for proliferative and high-risk disease with its field-loss trade-off; intravitreal anti-VEGF for maculopathy and its trial-durability and injection-schedule burden — anti-VEGF biology ([[pathology/chronic-inflammation-repair]]-adjacent angiogenesis signalling); the vitrectomy era for non-clearing haemorrhage and detachment ([[nervous-system/sensory-systems]]); and the cataract-and-glaucoma-and-palsy excesses with their "fluctuating vision ≠ new glasses" counselling). Worked cases and the surgical-pregnancy-perioperative nuances ([[#ex-retina]], [[obstetrics-gynaecology/pregnancy-complications]], [[surgery/perioperative-care]]).**
+Symptoms come in two groups. **Autonomic** symptoms (sweating, tremor, palpitations, hunger, anxiety) arise from the adrenaline response and act as warnings. **Neuroglycopenic** symptoms (confusion, difficulty concentrating, odd behaviour, slurred speech, drowsiness, seizures, coma) arise from glucose lack in the brain. Hypoglycaemia can be mistaken for drunkenness, stroke or a psychiatric disturbance.
+
+**Treatment** depends on whether the person can swallow safely:
+
+1. **Conscious and able to swallow**: 15–20 g of fast-acting carbohydrate (glucose tablets, a measured amount of sugary drink or juice). Recheck after 10–15 minutes and repeat if still below 4.0 mmol/L. Once recovered, eat a longer-acting carbohydrate snack or the next meal.
+2. **Drowsy or unable to swallow safely**: nothing by mouth that could be aspirated. Give **intramuscular glucagon** (or intranasal glucagon where available) or **intravenous glucose**, typically 10% glucose, according to local protocol. Glucagon works by releasing liver glycogen, so it is less effective after prolonged fasting or heavy alcohol intake.
+3. **Sulfonylurea-induced hypoglycaemia** can recur for many hours because the drug keeps stimulating insulin. Admission and observation are often needed.
+
+::: theorem Recurrent hypoglycaemia lowers its own warning threshold {#thm-unawareness}
+Each episode of hypoglycaemia shifts the glucose level at which the brain triggers the adrenaline response to a lower value. After repeated episodes, the autonomic warning comes later or not at all, so the first sign is confusion. This is **impaired awareness of hypoglycaemia**, which increases the risk of severe hypoglycaemia several-fold.
 :::
 
-::: definition Kidney disease {#def-kidney}
-**Natural history (the hyperfiltration phase — the eGFR-80-not-60-reassurance-trap in young type-1 — then albuminuria-onset, then steepening eGFR decline, with the modern recognition of non-albuminuric and older-onset trajectories — [[renal/filtration]], [[renal/chronic-kidney-disease]]); the pathology (mesangial expansion and GBM thickening to Kimmelstiel-Wilson nodules, and the atypical-rule — haematuria-or-rapid-decline-or-absent-retinopathy means consider another glomerular disease and biopsy [[renal/urinary-tract]]-adjacent [[pathology/diagnostic-pathology]]); screening (the annual albumin-creatinine-ratio and eGFR grid and its treatment-threshold mapping — [[clinical-skills/laboratory-tests]], [[public-health/screening]]). Treatment stack (glycaemic control with the legacy-effect urgency; RAAS blockade at maximally-tolerated dose with potassium-and-creatinine acceptance-rules — [[renal/potassium-calcium-phosphate]], [[renal/acute-kidney-injury]]; SGLT2 inhibitors as CKD-and-heart-failure-and-glycaemia therapy with the early-eGFR-dip-explanation and sick-day-holds — [[endocrine/diabetes]], [[cardiovascular/heart-failure]], [[endocrine/endocrine-emergencies]]; finerenone for residual albuminuria with potassium vigilance [[renal/potassium-calcium-phosphate]]; blood-pressure targets with the albuminuria-stratified logic — [[cardiovascular/hypertension]]; lipid-and-smoking-and-weight-and-salt management — [[cardiovascular/vascular-disease]], [[gastrointestinal/clinical-nutrition]]); the progression tier (the nephrology-referral thresholds, the CKD-compounding issues — anaemia-and-bone-mineral-and-dose-adjustments-and-contrast-discipline — [[renal/chronic-kidney-disease]], [[blood/anaemia]], [[endocrine/bone-calcium]], [[clinical-skills/medical-imaging]]; and the renal-replacement conversation with the transplant-and-cardiovascular-workup realities — [[immunology/transplant-tumour-immunology]], [[surgery/vascular-urological-surgery]]. Drug-dose-and-sick-day-and-contrast rules across the regimen belong to [[pharmacology/dosing-principles]] and the SADMANS teaching of [[endocrine/diabetes]].**
+::: proof
+The counter-regulatory system adapts to its recent history. After hypoglycaemia, the brain increases glucose uptake and the hypothalamic glucose-sensing neurons reset. The next fall in glucose must be deeper before adrenaline is released. Because the autonomic symptoms that warn the person depend on adrenaline, the warning is lost; meanwhile neuroglycopenia still begins at a similar glucose level. The gap between "warning" and "impairment" closes, or reverses. Long diabetes duration and autonomic neuropathy add to the problem, as does loss of the glucagon response, which occurs early in type 1 diabetes. The reverse is also true: **strict avoidance of hypoglycaemia for two to three weeks** can partly restore awareness, which is the basis of treatment.
 :::
 
-::: definition Neuropathy and the foot {#def-nerve-foot}
-**Distal symmetric polyneuropathy (the length-dependent stocking-glove sensory loss with negative and positive symptoms; the ankle-reflex-loss-and-10-g-monofilor-tuning-fork-examination and the "vibration-goes-first" pattern — [[clinical-skills/physical-examination]], [[nervous-system/motor-systems]]-adjacent-reflex-physiology; the differential that must not be lazily attributed — B12-and-alcohol-and-thyroid-and-amyloid-and-myeloma-and-vasculitic-and-cis-platinum-and-HIV-and-idiopathic-small-fibre-disease — [[blood/anaemia]], [[psychiatry/substance-use]], [[endocrine/thyroid]], [[blood/lymphoma-myeloma]], [[musculoskeletal/connective-tissue-vasculitis]], [[infectious-diseases/hiv]]). Autonomic neuropathy (the multi-system catalogue — postural-hypotension-with-falls — [[geriatrics-palliative/falls]], [[cardiovascular/circulation-blood-pressure]]; resting-tachycardia-and-exercise-intolerance-and-silent-ischaemia — [[cardiovascular/arrhythmias]], [[cardiovascular/coronary-artery-disease]]; gastroparesis-and-early-satiety-and-erratic-absorption — [[gastrointestinal/oesophagus-stomach]]; diabetic-diarrhoea-and-nocturnal-predominance-and-overflow — [[gastrointestinal/digestion-absorption]], [[gastrointestinal/bowel-disease]]; bladder-atony-and-utinary-infections-and-retention-measurement — [[renal/urinary-tract]], [[surgery/vascular-urological-surgery]]; erectile-and-ejaculatory-dysfunction-and-the-vascular-versus-neurogenic-mix — [[endocrine/reproductive-endocrinology]], [[cardiovascular/vascular-disease]]; anhidrosis-and-compensatory-sweating-and-heat-intolerance — [[physiology/homeostasis-body-fluids]]; and the hypo-unawareness-overlap back in [[endocrine/diabetes]]). Focal and root syndromes (carpal-and-other-entrapments — [[musculoskeletal/back-pain]]-adjacent-nerve-compression-and-[[nervous-system/motor-systems]]; third-and-sixth-nerve-palsies-with-pupil-sparing-teaching — [[nervous-system/sensory-systems]]; thoraco-abdominal-radicular-pain-mimicking-acute-abdomen — [[surgery/acute-abdomen]]; and diabetic lumbosacral radiculoplexus neuropathy (the amyotrophy with severe pain, wasting and weight loss — the microvasculitic-mechanisms-lesson — [[nervous-system/motor-systems]]). Painful neuropathy management (the mechanism-matched ladder — low-dose-tricyclic-at-night-with-sleep-benefit-and-side-effect-cost — [[nervous-system/headache-pain]], [[endocrine/diabetes-complications]]-own-glycaemic-review; duloxetine with the serotonergic-hygiene [[pharmacology/adverse-reactions]] and [[psychiatry/mood-disorders]]; gabapentin-and-pregabalin-with-sedation-weight-and-misuse-cautions — [[psychiatry/substance-use]]; capsaicin-patches-and-topical-options; the opioid-harm-avoidance-line-and-the-refractory-pain-specialist-clinic; the sleep-and-mood-and-function-goals-and-CBT-and-physiotherapy-programme — [[psychiatry/anxiety-disorders]], [[geriatrics-palliative/symptom-control]]). The diabetic foot (the triad — neuropathy-plus-deformity-and-pressure-plus-ischaemia-plus-infection — with the callus-and-hammer-toe-and-bunion-pressure-map and the "footwear-and-nail-and-water-and-barefoot" history that catches most ulcers before they exist [[musculoskeletal/bones-joints]], [[musculoskeletal/skin]]; assessment of an ulcer — probe-to-bone-and-depth-and-probe-and-odor-and-sounding and the CRP-and-X-ray-MRI-for-osteomyelitis-pairing — [[clinical-skills/physical-examination]], [[clinical-skills/medical-imaging]]; the vascular assessment — pulses-and-ABI-with-the-medial-calcification-falsification-caveat-and toe-pressure-and-TcPO2 and the angiography-revascularisation-referral — [[cardiovascular/vascular-disease]], [[surgery/vascular-urological-surgery]]; infection — superficial-versus-deep-and-osteomyelitis-with-the-mixed-flora-and-maceration-organism-logic-and-antibiotic-rules-and-surgical-debridement-vs-antibiotics-alone — [[microbiology/antimicrobials]], [[microbiology/laboratory-diagnosis]], [[surgery/wounds-surgical-infection]]; the offloading-and-decompression-and-total-contact-cast-and-removable-walker-boots-and-felt-lamination-and-adherence-reality — [[musculoskeletal/skin]]-adjacent; the multidisciplinary-foot-service-evidence (the single biggest amputation-prevention intervention in the whole chapter — team-led-clinics-and-one-stop-access-and-vascular-and-podiatry-and-orthopaedic-and-plastic-coverage — see the service argument in [[#ex-foot]]), Charcot neuroarthropathy (the hot swollen misdiagnosed as cellulitis and the immobilise-and-offload-not-antibiotics rule — [[musculoskeletal/bones-joints]]); and the amputation-trajectory — the small-but-persistent annual incidence after first ulcer, the major-versus-minor-decision-and-the-rehabilitation-and-prosthesis-and-contralateral-limb-preservation-and-the-prevention-of-the-second-foot-with-the-structured-surveillance-programme — the prosthetics-and-rehabilitation points ([[surgery/orthopaedics]])).**
+Awareness is assessed with questionnaires such as the **Gold score** (a score of 4 or more on a seven-point scale suggests impaired awareness). Management includes structured education, adjusting insulin, continuous glucose monitoring with alarms and, where criteria are met, hybrid closed-loop systems ([[endocrine/diabetes]]). The DVLA requires drivers who use insulin to report impaired awareness and recurrent severe hypoglycaemia.
+
+## Diabetic ketoacidosis {#sec-dka}
+
+::: definition Diabetic ketoacidosis (JBDS criteria) {#def-dka}
+**Diabetic ketoacidosis** is diagnosed when all three of the following are present:
+
+1. **Ketonaemia** ≥ 3.0 mmol/L (capillary or blood β-hydroxybutyrate), or significant ketonuria (2+ or more on a urine dipstick);
+2. **Blood glucose** > 11.0 mmol/L (198 mg/dL), **or known diabetes**;
+3. **Acidosis**: bicarbonate < 15.0 mmol/L and/or venous pH < 7.3.
+
+The second criterion allows for **euglycaemic DKA**, in which glucose is near normal, most often in people taking SGLT2 inhibitors, in pregnancy, or with poor food intake.
 :::
 
-## The bigger vessels and the rest
+::: proof
+DKA results from **absolute or relative insulin deficiency** together with excess **counter-regulatory hormones** (glucagon, cortisol, catecholamines, growth hormone). Three processes follow:
 
-::: definition Macrovascular and cardiometabolic care {#def-macro}
-**Coronary disease (the accelerated-atheroma-plus-microvascular-and-myocardial-fibrosis-phenotype producing the silent-ischaemia caveat, the heart-failure-with-preserved-ejection-fraction-and-diabetic-cardiomyopathy-syndrome and the peri-infarct-hyperglycaemia-prognosis-argument — [[cardiovascular/coronary-artery-disease]], [[cardiovascular/heart-failure]]); cerebrovascular (the stroke-risk-and-outcome-worsening-with-hyperglycaemia and the post-stroke glucose-management — [[nervous-system/stroke]]); peripheral arterial disease (the claudication-and-critical-limb-ischaemia patterns with their diabetes-distal-and-tibial distribution and the foot-overlap — [[cardiovascular/vascular-disease]], [[#def-nerve-foot]]); the risk-factor-attack (statin-for-essentially-all-with-diabetes-above-thresholds and the high-intensity-plus-acep? — no: the statin-intensity-by-risk architecture — [[cardiovascular/vascular-disease]]; blood-pressure targets by albuminuria and age — [[cardiovascular/hypertension]]; antiplatelet-for-secondary-not-routinely-primary-prevention — [[blood/haemostasis-bleeding]]; smoking-and-alcohol-and-weight-and-exercise-and-sleep — [[psychiatry/substance-use]], [[gastrointestinal/clinical-nutrition]], [[public-health/prevention-promotion]]); the cardiorenal-metabolic-drug-layer (the SGLT2-and-GLP1-class-outcome-evidence as a recap — [[endocrine/diabetes]] — with the cost-and-equity-and-polypharmacy-realism — [[public-health/health-systems-economics]], [[geriatrics-palliative/polypharmacy]]).**
+1. **Hyperglycaemia**: the liver releases glucose by gluconeogenesis and glycogenolysis, and muscle and fat take up less.
+2. **Ketosis**: without insulin's restraint, adipose tissue releases free fatty acids. In the liver, the high glucagon-to-insulin ratio directs them into mitochondria for β-oxidation and ketone body formation (acetoacetate and β-hydroxybutyrate). Ketone bodies are acids, so a **raised anion gap metabolic acidosis** develops, with compensatory deep, rapid breathing (**Kussmaul respiration**).
+3. **Dehydration and electrolyte loss**: glucose in the urine causes an **osmotic diuresis**, with loss of water, sodium and potassium. Vomiting adds to the losses.
+
+Potassium needs special attention. Total body potassium is depleted, but the serum potassium is often normal or high at presentation, because acidosis and lack of insulin shift potassium out of cells. Once insulin is given, potassium moves back into cells and serum levels can fall dangerously.
 :::
 
-::: definition The neglected appendices: skin, bone, mind, mouth and the rest {#def-other}
-**Skin (necrobiosis lipoidica and bullosis diabeticorum and the injection-site lipohypertrophy-and-lipodystrophy with their insulin-absorption-consequences — [[musculoskeletal/skin]], [[endocrine/diabetes]]-injection-craft; the infection thresholds — cellulitis-and-candida-and-staff-relationship — [[infectious-diseases/healthcare-infections]]-adjacent). Bone and muscle (the type-1 low-turnover state, the type-2 "strong-but-fragile" bone-density paradox with falls-and-neuropathy-and-hypoglycaemic-fracture-compounding, and the pioglitazone-and-insulin-and-CKD-contributions and fracture-risk-assessment — [[endocrine/bone-calcium]], [[geriatrics-palliative/falls]]). Cognition and mood (the depression-and-diabetes-distress-bidirectional-load with adherence consequences — [[psychiatry/mood-disorders]], [[endocrine/diabetes]]; the vascular-cognitive-and-dementia-association — [[nervous-system/dementia-neurodegeneration]]; the needle-and-hypo-anxiety-and-avoidance-and-disordered-eating-screen — [[psychiatry/anxiety-disorders]], [[psychiatry/eating-personality-disorders]]). Mouth (the periodontal-disease-bidirectionality and the dental-referral-belonging-in-the-care-plan — [[anatomy/head-neck]]). Sleep and respiration (the OSA-prevalence-and-treatment-effect-on-glucose-and-BP — [[respiratory/control-breathing-tests]]-adjacent [[cardiovascular/hypertension]]). Sexual, urological and gynaecological (erectile-dysfunction-as-canary-and-as-drug-target — [[endocrine/reproductive-endocrinology]]; recurrent candida — [[microbiology/fungi-parasites]]; and the pregnancy-planning and contraception-interfaces — [[obstetrics-gynaecology/contraception-fertility]]). Infection and immunity (the neutrophil-and-skin-barrier-and-glycaemic-variability-logic and the vaccination-programme adherence — influenza-and-pneumococcal-and-hepatitis-B-rationale — [[immunology/innate-immunity]], [[public-health/vaccination-programmes]]). Perioperative and inpatient care (the day-of-surgery-insulin-and-SGLT2-holds-and-the-IV-insulin-infusion-protocols-and-the-ward-hypo-and-ketone-alert-rules — [[surgery/perioperative-care]], [[endocrine/endocrine-emergencies]], [[emergency-critical-care/critical-care]]).**
+DKA occurs mainly in type 1 diabetes, sometimes as its first presentation. It also occurs in type 2 diabetes, particularly with SGLT2 inhibitors and in ketosis-prone type 2 diabetes. Common precipitants are infection, missed insulin doses, a new diagnosis, insulin pump failure, myocardial infarction, pancreatitis, alcohol and some drugs. Symptoms develop over hours to a day: thirst, polyuria, vomiting, **abdominal pain** (which can mimic a surgical abdomen), breathlessness and drowsiness. Signs include dehydration, tachycardia, Kussmaul breathing and a sweet "pear-drop" smell of acetone on the breath.
+
+The **anion gap** helps quantify the acidosis:
+
+$$
+\text{anion gap} = [\text{Na}^+] - ([\text{Cl}^-] + [\text{HCO}_3^-])
+$$ {#eq-anion-gap}
+
+A typical reference range for this formula is about 8–12 mmol/L (some laboratories add potassium, which raises the range). Acid-base reasoning is developed in [[renal/acid-base-disorders]].
+
+### Management principles
+
+Management follows a written protocol, in the UK based on the JBDS guideline. The doses and rates below are the typical adult principles; follow local protocols. The essential elements are:
+
+- **Fluid**: restore circulating volume with intravenous 0.9% sodium chloride, rapidly if the person is shocked, then at a planned rate over the next 12 hours or so. Fluid is given more cautiously in young adults (because of the risk of cerebral oedema), older people, in pregnancy, and in heart or kidney failure.
+- **Fixed-rate intravenous insulin infusion (FRIII)** at **0.1 units per kg per hour** based on estimated weight. A fixed rate, rather than a sliding scale, is used because the aim is to switch off ketone production, not just to lower glucose. Many protocols allow the rate to be reduced to 0.05 units/kg/h once glucose falls below 14 mmol/L, to reduce hypoglycaemia and hypokalaemia.
+- **Continue the person's usual long-acting basal insulin**, so that there is background insulin when the infusion stops.
+- **Add glucose** (typically 10% glucose alongside the saline) once blood glucose falls below 14 mmol/L, so that insulin can continue to clear ketones without causing hypoglycaemia.
+- **Potassium**: once the potassium is known and urine output is established, add potassium to the fluids if serum potassium is 5.5 mmol/L or below. If it is below 3.5 mmol/L, senior review is needed because more potassium may be required.
+- **Monitor** capillary glucose and ketones hourly and venous blood gas (pH, bicarbonate, potassium) regularly. Treatment targets in the JBDS guideline are a fall in blood ketones of at least 0.5 mmol/L per hour, a rise in venous bicarbonate of about 3 mmol/L per hour, and a fall in glucose of about 3 mmol/L per hour.
+- **Look for and treat the precipitant**, give thromboprophylaxis, and involve the diabetes team early.
+- **Bicarbonate** infusion is not routinely used.
+
+**Resolution** of DKA is defined as **blood ketones below 0.6 mmol/L and venous pH above 7.3**. Once the person is eating and drinking, subcutaneous rapid-acting insulin is restarted with a meal, and the infusion is stopped 30–60 minutes later; stopping the infusion without subcutaneous insulin on board leads to rebound ketosis.
+
+Indicators of **severe DKA** that should prompt senior review and consideration of a high-dependency setting include blood ketones above 6 mmol/L, bicarbonate below 5 mmol/L, venous pH below 7.0, potassium below 3.5 mmol/L on admission, reduced consciousness (GCS below 12), oxygen saturation below 92% on air, systolic blood pressure below 90 mmHg, pulse above 100 or below 60, and an anion gap above 16 mmol/L.
+
+Complications of DKA and its treatment include hypokalaemia, hypoglycaemia, **cerebral oedema** (rare in adults, more common in children and young adults; headache, falling consciousness or slowing pulse are warning signs), aspiration pneumonia, thromboembolism and acute kidney injury.
+
+::: warning Treating the glucose instead of the ketones
+DKA is an acidosis caused by ketones, not a disease of glucose. A common error is to stop or reduce the insulin infusion when glucose falls into the normal range, while ketones are still high. The acidosis then persists or worsens. The correct response to falling glucose is to **add glucose to the drip and continue the fixed-rate insulin** until ketones are below 0.6 mmol/L and pH is above 7.3. Similarly, a person taking an SGLT2 inhibitor who is unwell with vomiting needs a ketone check even if glucose is normal.
 :::
 
-::: definition Technology and structured care {#def-tech}
-**Continuous and flash glucose monitoring (the time-in-range-vocabulary — 70-180 mg/dL targets-and-hypo-and-spike-areas-under-the-curve, the alert-and-look-back-features and the data-overload-and-alarm-fatigue-management; the access-criteria debates for type-2-insulin-treated and the equity-of-technology question — [[endocrine/diabetes-complications]]-own-figure-thinking, [[public-health/determinants-inequalities]]). Pumps and hybrid closed-loop (the sensor-pump-algorithm-triad and its HbA1c-and-time-in-range-and-hypo outcomes and the 24-hour-support-and-site-change-and-sick-day-protocols and the pregnancy-and-childhood expansion — [[paediatrics/acute-childhood-illness]], [[obstetrics-gynaecology/pregnancy-complications]], [[genetics/genomic-medicine]]-no: the tech-trial evidence [[epidemiology-ebm/randomised-trials]]). Structured education (the course-not-leaflet principle — problem-solving-skills-and-insulin-adjustment-and-illness-management-and-driving-and-travel; the peer-and-nurse-and-dietitian-teaching-team — [[clinical-skills/communication]], [[gastrointestinal/clinical-nutrition]]). The care-process scaffolding (the diagnosis register and automated recall for eyes-and-feet-and-kidneys-and-drug-review — [[public-health/screening]]; the shared-care-formula with the GP-parallel-prescriptions-and-dose-changes-written-once — [[clinical-skills/records-handover]]; the specialist-nurse-caseload-model and its workforce realities — [[public-health/health-systems-economics]]; and the psychological-support-embedded-in-clinics — [[psychiatry/treatments-mental-health-law]]-adjacent-integration). The non-negotiable documents (the sick-day rules, the driving status, the pregnancy-intentions, the foot-risk grade and the technology passwords-and-support-contacts — the five fields that prevent most of the chapter's disasters — [[clinical-skills/patient-safety]]).**
+### DKA and HHS compared
+
+The **hyperosmolar hyperglycaemic state** typically affects older people with type 2 diabetes. There is enough insulin to prevent significant ketosis but not enough to control glucose, which rises over days, with profound dehydration and very high osmolality. The JBDS defines HHS by hypovolaemia, glucose ≥ 30 mmol/L without significant ketonaemia (< 3.0 mmol/L) or acidosis (pH > 7.3, bicarbonate > 15 mmol/L), and osmolality ≥ 320 mOsm/kg. Mixed DKA–HHS presentations occur.
+
+| Feature | DKA | HHS |
+|---|---|---|
+| Typical person | Type 1 diabetes, any age | Older adult with type 2 diabetes |
+| Onset | Hours to a day | Days |
+| Glucose | Usually > 11 mmol/L, can be near normal | ≥ 30 mmol/L |
+| Ketones | ≥ 3.0 mmol/L | < 3.0 mmol/L |
+| pH / bicarbonate | < 7.3 and/or < 15 mmol/L | > 7.3 and > 15 mmol/L |
+| Osmolality | Raised, variable | ≥ 320 mOsm/kg |
+| Main danger | Acidosis, hypokalaemia, cerebral oedema in the young | Dehydration, thrombosis, too-rapid osmolar shifts |
+
+The management of HHS differs in important ways (slower correction, insulin only once fluids alone stop lowering glucose unless ketones are raised) and is covered in [[endocrine/endocrine-emergencies]].
+
+## How chronic hyperglycaemia damages tissues {#sec-mechanisms}
+
+Most cells regulate their glucose uptake, but some cannot: the endothelium, the retina, the kidney's mesangial cells, and peripheral nerves take up glucose roughly in proportion to its concentration in blood. These are the tissues that suffer.
+
+Several mechanisms have been identified: flux of glucose through the **polyol pathway** (aldose reductase converts glucose to sorbitol, consuming NADPH needed for antioxidant defence), formation of **advanced glycation end-products** that cross-link proteins and activate inflammatory receptors, activation of **protein kinase C**, and increased flux through the **hexosamine pathway**. A unifying hypothesis is that excess glucose drives mitochondrial production of reactive oxygen species, which activates all four.
+
+Clinical trials confirm the link. The DCCT in type 1 diabetes and the UKPDS in type 2 diabetes showed that better glucose control reduces microvascular complications. Follow-up of both trial populations showed a **legacy effect**: people who had been in the intensive group still had fewer complications years after their glucose levels had converged with the control group. Early good control has lasting value. Blood pressure control was shown in the UKPDS to be at least as important as glucose for many outcomes.
+
+## Microvascular complications {#sec-micro}
+
+### Retinopathy
+
+::: definition Diabetic eye disease {#def-eye}
+**Diabetic retinopathy** is damage to the retinal microcirculation. **Background (non-proliferative) retinopathy** includes microaneurysms, dot and blot haemorrhages, and hard exudates. **Pre-proliferative** changes reflect ischaemia: cotton-wool spots, venous beading and intraretinal microvascular abnormalities. **Proliferative retinopathy** is the growth of fragile new vessels, driven by vascular endothelial growth factor (VEGF) from ischaemic retina, which can bleed into the vitreous or cause tractional retinal detachment. **Diabetic maculopathy** (macular oedema or exudates near the fovea) threatens central vision and can occur at any stage.
+:::
+
+Retinopathy causes no symptoms until it is advanced, so **screening** is essential. The NHS Diabetic Eye Screening Programme invites everyone with diabetes aged 12 and over for digital retinal photography. Since October 2023, England has been moving people at low risk (no retinopathy on two consecutive screens) to two-yearly screening, as Scotland, Wales and Northern Ireland had already done; others continue yearly. Treatments include intravitreal **anti-VEGF injections** for maculopathy and proliferative disease, and **laser photocoagulation**. Rapid improvement of glucose can transiently worsen retinopathy, so people with significant retinopathy starting intensive treatment are monitored closely. Pregnancy also accelerates retinopathy and needs more frequent screening.
+
+### Kidney disease
+
+::: definition Diabetic kidney disease {#def-kidney}
+**Diabetic kidney disease** is chronic kidney disease attributed to diabetes. The earliest sign is usually raised urinary albumin, measured as the **albumin-to-creatinine ratio (ACR)** on an early-morning urine sample. In KDIGO categories, ACR below 3 mg/mmol is normal (A1), 3–30 mg/mmol is moderately increased (A2) and above 30 mg/mmol is severely increased (A3). Abnormal results are confirmed on repeat samples, because exercise, infection and menstruation can raise the ACR transiently. Kidney function is staged by eGFR and ACR together ([[renal/chronic-kidney-disease]]).
+:::
+
+Early in diabetes the glomeruli hyperfilter. Over years, glomerular basement membrane thickening and mesangial expansion lead to albuminuria, hypertension and declining GFR. Not everyone follows this order: some people, particularly with type 2 diabetes, lose GFR without much albuminuria.
+
+The treatments that slow progression are:
+
+- **blood pressure control**, with an **ACE inhibitor or angiotensin receptor blocker** for people with albuminuria;
+- **SGLT2 inhibitors**, which reduce intraglomerular pressure and slow progression substantially in trials of people with and without diabetes;
+- **finerenone**, a non-steroidal mineralocorticoid receptor antagonist, for people with type 2 diabetes and albuminuric CKD as an add-on (recommended by NICE in 2023);
+- glucose control, statins, and stopping smoking.
+
+ACE inhibitors, ARBs and finerenone all raise potassium, which must be monitored.
+
+### Neuropathy and the diabetic foot
+
+::: definition Diabetic neuropathy {#def-nerve-foot}
+The commonest form is **distal symmetrical sensorimotor polyneuropathy**, a length-dependent loss affecting the longest nerves first, so it begins in the toes and feet and spreads upwards in a "stocking" (and later "glove") distribution. Loss of protective sensation means that injuries go unnoticed. Some people develop **painful neuropathy**, with burning, shooting or electric pains, often worse at night. **Autonomic neuropathy** causes postural hypotension, gastroparesis, diarrhoea, bladder dysfunction, erectile dysfunction and reduced hypoglycaemia awareness. **Focal** neuropathies include cranial nerve palsies and diabetic amyotrophy.
+:::
+
+A **diabetic foot ulcer** usually results from a combination of neuropathy, which removes pain and alters foot shape and pressure, and **peripheral arterial disease**, which impairs healing. Infection can spread rapidly through the tissues of the foot and into bone (osteomyelitis).
+
+NICE guideline NG19 sets out foot protection:
+
+- **Annual foot assessment** for everyone with diabetes: inspection, palpation of foot pulses, and sensation testing with a **10 g monofilament**.
+- **Risk stratification** into low, moderate, high risk or active foot problem, with more frequent review by a foot protection service for those at higher risk.
+- **Active foot problems** (ulceration, spreading infection, critical limb ischaemia, gangrene, suspected Charcot foot) need referral to a multidisciplinary foot care service within one working day, and limb- or life-threatening problems need emergency referral.
+
+**Charcot neuroarthropathy** is a destructive inflammatory process in the bones and joints of a neuropathic foot. It presents as a **hot, red, swollen foot**, often painless or only mildly painful, sometimes after minor trauma. It is easily mistaken for cellulitis or gout. Without immediate offloading in a non-weight-bearing cast, the midfoot collapses into a "rocker-bottom" deformity that ulcerates. Any person with diabetes and neuropathy who has an unexplained hot swollen foot should be treated as having Charcot foot until proven otherwise.
+
+Painful neuropathy is treated with drugs such as amitriptyline, duloxetine, pregabalin or gabapentin (NICE CG173), with attention to sleep and mood.
+
+## Macrovascular disease and the wider picture {#sec-macro}
+
+People with diabetes have about twice the risk of coronary heart disease, stroke and peripheral arterial disease. Myocardial infarction may be "silent" because of autonomic neuropathy. Reducing this risk involves:
+
+- **statins**, offered according to NICE NG238 (2023), which recommends statins for most adults with type 2 diabetes with raised cardiovascular risk and for adults with type 1 diabetes who are over 40, have had diabetes for more than 10 years, have nephropathy or have other risk factors;
+- **blood pressure** control;
+- **stopping smoking**;
+- **SGLT2 inhibitors and GLP-1 receptor agonists**, which reduce cardiovascular events or heart failure in people at high risk ([[endocrine/diabetes]]);
+- antiplatelet therapy for those with established cardiovascular disease.
+
+Other complications to look for include **periodontal disease**, **non-alcoholic fatty liver disease**, skin changes such as **necrobiosis lipoidica**, frozen shoulder and other musculoskeletal problems, increased infection risk, and **depression and diabetes distress**, which are common and affect self-management.
+
+Because these complications develop silently, structured annual review is a core part of care. In the UK it covers HbA1c, blood pressure, lipids, ACR and eGFR, foot assessment, retinal screening, weight, smoking, and psychological wellbeing.
+
+::: example Abdominal pain in a teenager {#ex-dka}
+A 17-year-old girl with type 1 diabetes presents with 24 hours of vomiting and abdominal pain. She has been unwell with a cough and has been taking less insulin "because she isn't eating". She is breathing deeply at 28 breaths per minute. Glucose 24.0 mmol/L, capillary ketones 5.8 mmol/L, venous pH 7.08, bicarbonate 7 mmol/L, sodium 133, chloride 98, potassium 5.6 mmol/L. She weighs 60 kg. Interpret the results and outline the first steps.
+::: solution
+**Diagnosis.** Ketones ≥ 3.0, glucose > 11.0 and bicarbonate < 15 with pH < 7.3: she meets all three JBDS criteria for **DKA**. Precipitants: a chest infection and reduced insulin.
+
+**Anion gap** using [[#eq-anion-gap]]: $133 - (98 + 7) = 133 - 105 = 28$ mmol/L, markedly raised.
+
+**Severity.** pH is above 7.0, bicarbonate above 5 and ketones below 6, but she should be assessed carefully for other markers of severe DKA and reviewed by a senior clinician. Note that at 17 she may be managed under paediatric (BSPED) or adult (JBDS) protocols depending on the team caring for her; young people need cautious fluid replacement because of the risk of cerebral oedema.
+
+**First steps** (illustrative adult principles):
+1. ABCDE assessment, intravenous access, blood and urine cultures, chest X-ray.
+2. Intravenous 0.9% sodium chloride.
+3. FRIII at $0.1 \times 60 = 6$ units per hour.
+4. Continue her basal insulin.
+5. Potassium: 5.6 mmol/L is above 5.5, so no potassium in the first bag; recheck within 1–2 hours, because it will fall as insulin acts.
+6. Hourly glucose and ketones; venous gas at 60 minutes, 2 hours and 2-hourly thereafter.
+7. Treat the chest infection; involve the diabetes team; later, review sick-day rules with her, because reducing insulin when not eating caused this episode.
+
+Her abdominal pain is common in DKA and usually resolves with treatment; persistent pain should prompt a search for a surgical cause.
+:::
+:::
+
+::: example Tracking the fall in ketones {#ex-ketones}
+A man with DKA has a blood ketone level of 5.4 mmol/L at the start of treatment. If ketones fall at the JBDS target rate of 0.5 mmol/L per hour, how long will it take to reach the resolution threshold of 0.6 mmol/L? What should be done if the fall is slower?
+::: solution
+The required fall is $5.4 - 0.6 = 4.8$ mmol/L. At 0.5 mmol/L per hour:
+
+$$
+\frac{4.8}{0.5} = 9.6 \text{ hours}.
+$$
+
+So resolution would be expected after about 10 hours (pH must also be above 7.3). If ketones are not falling at least 0.5 mmol/L per hour (or bicarbonate not rising about 3 mmol/L per hour), the protocol prompts a check: is the infusion running and connected, is the pump working, is the weight estimate correct, and is there an unresolved precipitant? If these are fine, the insulin infusion rate is increased (commonly by 1 unit per hour) until the target rate is achieved.
+:::
 :::
 
 ::: widget plot
-f: 100-x; 100-5*x
-x: 0, 16
-y: 0, 105
-labels: \text{years},\ \text{eGFR (\% of normal)};\ \text{age-typical decline};\ \text{progressive diabetic kidney disease}
-caption: The steepening slope is the disease. Untreated progressive diabetic kidney disease can lose several times the age-typical annual eGFR — the arithmetic behind annual ACR-and-eGFR screening, RAAS-and-SGLT2-and-finerenone stacking, and the referral-before-the-cliff discipline ([[#def-kidney]], [[renal/chronic-kidney-disease]]); the legacy-effect and early-treatment-payoff sits in [[endocrine/diabetes-complications]]-mechanisms [[#def-mechanisms]] and the trial evidence in [[epidemiology-ebm/randomised-trials]].
+f: max(5.4-0.5*x, 0); max(5.4-0.3*x, 0)
+x: 0, 20
+y: 0, 6
+hlines: 3; 0.6
+labels: \text{Ketones falling at target (0.5 mmol/L per hour)}; \text{Ketones falling too slowly (0.3 mmol/L per hour)}
+caption: Blood ketones (mmol/L) against hours of treatment in DKA, with the diagnostic threshold (3.0) and the resolution threshold (0.6) marked. At the target rate, ketones reach 0.6 mmol/L in under 10 hours; at the slower rate it takes 16 hours, which should prompt a review of the infusion and the precipitant. Simplified linear model; real curves are not straight lines.
 :::
 
-::: example The painless red eye {#ex-retina}
-A 41-year-old with 19 years of type 1 diabetes (HbA1c 74, last screening fundus photograph "refer, unsuitable image" four times) notices floaters and a curtain in one eye; vision 6/60 that eye.
+::: example Repeated hypoglycaemia {#ex-hypo-awareness}
+A 52-year-old bus driver with type 1 diabetes for 30 years was found confused at the wheel of his parked car with a glucose of 2.2 mmol/L. He says he "never feels hypos coming any more". His HbA1c is 45 mmol/mol. What is the problem, and what should be done?
 ::: solution
-**Proliferative retinopathy with vitreous haemorrhage, and a screening failure to name ([[#def-eye]], [[public-health/screening]]): the immediate ophthalmology-emergency assessment (B-scan-when-media-opaque and the vitrectomy-discussion-timing and the anti-VEGF-and-laser plan — [[nervous-system/sensory-systems]]); the bilateral implication (the fellow eye treated or under close surveillance and the "unsuitable-image four times" pattern that should have forced manual-dilated examination years earlier — the fail-to-attend-and-fail-to-chase patient-safety categories — [[clinical-skills/patient-safety]]); the driving-standard consequence and re-assessment pathway ([[medical-ethics-law/professionalism-regulation]]); the systemic trigger-hunt (BP and pregnancy-and-accelerated-improvement history and kidney-progression review — [[cardiovascular/hypertension]], [[obstetrics-gynaecology/pregnancy-complications]], [[#def-kidney]]); the technology-and-education response (the structured-education-referral and CGM-for-stability-discussion — [[#def-tech]]); and the incident-report-and-eye-screening-process-review (the four-failed-images-without-escalation is a system defect with a fixable rule — [[clinical-skills/records-handover]], [[public-health/screening]]).**
-:::
-:::
+He has **impaired awareness of hypoglycaemia**: after many years of diabetes and frequent low glucose (suggested by a low HbA1c on insulin), his autonomic warning symptoms have been lost ([[#thm-unawareness]]). This was a level 3 (severe) event because he needed help.
 
-::: example The foot that was "just a corn" {#ex-foot}
-A 66-year-old with long type-2 and no podiatry contact for three years presents with a malodorous plantar ulcer under the second metatarsal head, probing to bone, with surrounding cellulitis and fever; pulses impalpable, ABI unrecordable, creatinine raised from baseline.
-::: solution
-**A limb-and-life emergency built from preventable pieces ([[#def-nerve-foot]]): admit to the multidisciplinary foot pathway (the one-stop-team rule and the "time is tissue" clock — the service that most reduces major amputation); the immediate work — deep-tissue-culture-not-swab-discipline-and-blood-cultures-and-deep-exploration-and-probe-to-bone-and-MRI-for-osteomyelitis-and-gas-and-foreign-body ([[clinical-skills/laboratory-tests]], [[clinical-skills/medical-imaging]]); empiric-then-directed-antibiotics-with-anaerobic-and-MRSA-judgement-and-dose-for-renal-function ([[microbiology/antimicrobials]], [[renal/chronic-kidney-disease]]); the urgent vascular assessment (the unrecordable-ABI-as-tibial-calcification-lesson and the toe-pressure-and-CTA-or-angiography-and-revascularisation-decision — [[surgery/vascular-urological-surgery]]); the sepsis-and-AKI-management-and-contrast-risk-balancing ([[infectious-diseases/fever-sepsis]], [[renal/acute-kidney-injury]]); the surgical-debridement-and-offloading-and-eventual-reconstruction-versus-amputation-decisions-and-the-seriousness-honesty-with-the-patient-and-family ([[surgery/orthopaedics]]-adjacent-tissue-surgery — the reconstructive ladder; the major-amputation-rehabilitation-and-prosthesis-and-five-year-mortality-reality that makes prevention the whole point — [[geriatrics-palliative/palliative-care]]-adjacent-prognostic-conversations). The audit trail (the absent foot-risk-grade in the record and the three-years-without-podiatry-review is the never-event list of [[#def-tech]]; and the secondary-prevention-appointment for the other foot with the footwear-and-nail-and-check-daily-and-who-to-call-when teaching ([[clinical-skills/communication]], [[clinical-skills/records-handover]])).**
-:::
-:::
-
-::: example The flattering glomerular filtration rate {#ex-hyperfiltration}
-A 22-year-old with two years of type 1 diabetes has eGFR 138 and normal ACR; the report says "hyperfiltration, likely benign"; her clinic is reassured and the kidney question is closed.
-::: solution
-**Half-right ([[#def-kidney]]): the high eGFR is indeed not kidney failure — it is the earliest diabetic-kidney phenotype (the SGLT2-and-tubuloglomer-feedback-driven hyperfiltration of insulin-opened-glomeruli — [[renal/filtration]]) and in some patients presages albuminuria-and-decline; the closing error is writing "benign" instead of "annual-ACR-and-eGFR-and-BP-and-glycaemic-optimisation". The right chart entries (the blood-pressure-and-glycaemic-target-setting with the technology-options conversation — [[endocrine/diabetes]], [[#def-tech]]; the avoid-nephrotoxins-and-contrast-and-dehydration-education with the sick-day-rules ([[renal/acute-kidney-injury]], [[endocrine/endocrine-emergencies]]); the future-pregnancy-planning-flag ([[obstetrics-gynaecology/pregnancy-complications]]); and the recall-rows that keep the trajectory under watch — the eGFR-slope-not-spot-value discipline ([[renal/chronic-kidney-disease]]).**
+**Actions**:
+1. **Safety**: he must stop driving and inform the DVLA; as a bus driver (Group 2 licence), the standards are stricter. This must be documented and explained with care, as it affects his livelihood.
+2. **Relax glucose targets** temporarily and adjust insulin to avoid all hypoglycaemia for several weeks, which can partly restore awareness.
+3. **Technology**: continuous glucose monitoring with low-glucose alarms; a hybrid closed-loop system if eligible.
+4. **Education**: structured education (for example DAFNE) and specific hypoglycaemia awareness training.
+5. Look for contributors: alcohol, kidney function, injection-site lipohypertrophy, coeliac disease or adrenal insufficiency (both associated with type 1 diabetes).
 :::
 :::
 
-::: example The hot swollen foot, twice {#ex-charcot}
-A 49-year-old with long neuropathy has a red-hot swollen left foot; two courses of IV antibiotics for "recurrent cellulitis"; a,b-normal pulses, no wound, no fever, CRP mildly raised; X-ray shows midfoot-bone-fragmentation-and-arch-collapse.
+::: example The hot swollen foot {#ex-charcot}
+A 61-year-old woman of Bangladeshi heritage with type 2 diabetes and known peripheral neuropathy has a red, swollen right foot. It is 3 °C warmer than the left foot but only mildly painful. There is no ulcer and no break in the skin. CRP is normal. Her GP has started antibiotics for cellulitis. What is the concern?
 ::: solution
-**Acute Charcot neuroarthropathy, misdiagnosed as infection both times ([[#def-nerve-foot]]): the discriminators (the afebrile-and-intact-skin-and-palpable-pulses-and-radiographic-fragmentation pattern versus the portal-of-entry-and-systemic-toxicity of cellulitis; the "cellulitis-without-a-wound-in-a-neuropathic-foot should make you say Charcot aloud" rule — [[clinical-skills/clinical-reasoning]], [[musculoskeletal/skin]]); the immediate management (total-contact-casting-and-offloading-and-immobilisation-not-antibiotics, and the VTE-fracture-and-skin-check-adjacent rules ([[musculoskeletal/bones-joints]], [[blood/thrombosis-anticoagulation]]); the imaging craft (MRI-early-oedema-patterns-and-the-radiographic-late-lead-and-the-infection-co-existence-question — [[clinical-skills/medical-imaging]]); the reconstructive-horizon for collapse (the bracing-versus-osteo-arthrodesis-planning — [[surgery/orthopaedics]]); the antibiotic-stewardship-debrief (two-unnecessary-IV-courses and the diagnostic-uncertainty-escalation-culture — [[infectious-diseases/stewardship-outbreaks]], [[clinical-skills/patient-safety]]); and the foot-team enrolment-for-life with the "stop-and-raise-the-leg-and-call" education ([[clinical-skills/communication]], [[clinical-skills/records-handover]]).**
+A **hot, swollen, painless or mildly painful foot** in a person with neuropathy, with intact skin and normal inflammatory markers, is **active Charcot neuroarthropathy** until proven otherwise. Cellulitis usually has a portal of entry and raised inflammatory markers; gout and deep vein thrombosis are other differentials.
+
+She needs referral to the **multidisciplinary foot care service within one working day** (NICE NG19). The foot is immobilised and offloaded, usually in a non-removable total-contact cast, and imaged (X-ray, which may be normal early, and MRI). Delay risks collapse of the midfoot and a deformity that leads to ulceration and amputation. Antibiotics alone are the wrong treatment.
 :::
 :::
 
 ::: quiz
-The strongest argument for annual diabetic retinopathy screening is:
-- [ ] Symptoms appear early
-- [x] Vision-threatening disease is asymptomatic during the window when laser and anti-VEGF prevent loss
-- [ ] Screening treats diabetes itself
-- [ ] It replaces glycaemic control
+A person with DKA is on a fixed-rate insulin infusion. After 5 hours, glucose is 11.5 mmol/L, ketones 2.4 mmol/L and pH 7.26. What is the correct next step?
+- [ ] Stop the insulin infusion because glucose is nearly normal.
+- [ ] Switch to a variable-rate sliding scale.
+- [x] Continue the fixed-rate insulin and add 10% glucose to the fluids.
+- [ ] Give intravenous bicarbonate.
 ::: solution
-**Screening exists because the treatable phase is silent ([[#def-eye]]); symptoms (curtain, sudden loss) mark late events; the programme's value depends on attendance-chasing and fail-safe recall — the public-health-screening architecture and patient-safety responsibilities of [[public-health/screening]] and [[clinical-skills/patient-safety]]; glycaemic and BP control lower incidence but do not remove surveillance ([[cardiovascular/hypertension]], [[endocrine/diabetes]]).**
+Glucose has fallen below 14 mmol/L, but DKA has not resolved: ketones are above 0.6 mmol/L and pH is below 7.3. The insulin must continue to clear ketones, and glucose is added to prevent hypoglycaemia. Some protocols allow the insulin rate to be reduced to 0.05 units/kg/h at this point, but not stopped.
 :::
 :::
 
 ::: history
-**The complication-era genealogy: Kelly's 1914-correlation-of-fundus-changes-with-duration-of-diabetes and the pre-insulin-era recognition that retinopathy marked the long survivor; Kimmelstiel and Wilson's 1936-nodular-lesion-description converting "diabetic glomerulosclerosis" from autopsy to biopsy ([[pathology/diagnostic-pathology]]); the Scandinavian natural-history cohorts (the Copenhagen and Steno-Memorial progression studies) that produced the staging still used in [[#def-kidney]]; the ETDRS and early-photocoagulation trials turning laser into standard care ([[nervous-system/sensory-systems]]); the DCCT metabolic-memory and UKPDS multifactorial-era findings — [[epidemiology-ebm/randomised-trials]]; the national eye-screening programmes of the 2000s and their attendance-inequity lessons — [[public-health/screening]], [[public-health/determinants-inequalities]]; the anti-VEGF migration from oncology to ophthalmology (the oncology-derived anti-angiogenic lineage ([[gastrointestinal/gi-bleeding-cancer]]-adjacent VEGF biology))); the landmark cardiorenal-metabolic trials (EMPA-REG-and-CREDENCE-and-DAPA-CKD-and-FIDELIO — the class-effect era — [[cardiovascular/heart-failure]], [[renal/chronic-kidney-disease]], [[endocrine/diabetes]]); and the closed-loop trials that moved from research rigs to licensed devices in a decade ([[epidemiology-ebm/randomised-trials]]).**
+Before insulin, a diagnosis of type 1 diabetes meant death, usually in ketoacidotic coma, within months to a couple of years; the "starvation diets" of **Frederick Allen** and **Elliott Joslin** extended life only briefly. In 1874 the German physician **Adolf Kussmaul** described the deep, laboured breathing of diabetic coma that bears his name. After insulin's introduction in 1922, chronic complications became the main threat as people lived longer. In 1936 **Paul Kimmelstiel** and **Clifford Wilson** described nodular glomerulosclerosis, the characteristic kidney lesion of diabetes. The **DCCT** (1993) and the **UKPDS** (1998) proved that better glucose control prevents microvascular complications, and their long-term follow-up revealed the legacy effect.
 :::
 
 ## Where this leads
 
-Glycaemic and drug architecture in [[endocrine/diabetes]]; emergencies (DKA, hypos) in [[endocrine/endocrine-emergencies]]; renal endpoint physiology in [[renal/filtration]] and progression in [[renal/chronic-kidney-disease]]; retinal anatomy in [[nervous-system/sensory-systems]]; nerve physiology in [[nervous-system/motor-systems]]; vascular biology in [[cardiovascular/vascular-disease]].
-
-::: exercise Separate hypo from neuropathy {level=2}
-A patient on insulin reports "funny feelings and shakiness at night"; is this nocturnal hypoglycaemia or autonomic/other disease? Give the discriminating plan.
-::: solution
-**Use the data, not the anecdote (the overnight-CGM-trace-review for level-2-events-and-the-pattern-time-analysis — [[#def-tech]], [[endocrine/diabetes]]; the hypoglycaemia-unawareness-overlap-counselling ([[endocrine/diabetes]]-hypo-row); and the alternatives if glucose is flat — nocturnal-reflux-and-OSA-and-restless-legs-and-anxiety-and-arrhythmia ([[gastrointestinal/oesophagus-stomach]], [[respiratory/control-breathing-tests]], [[nervous-system/sensory-systems]]-no: the RLS-neurology — [[nervous-system/motor-systems]]-adjacent-sleep-movement-disorders, [[cardiovascular/arrhythmias]], [[psychiatry/anxiety-disorders]]); the medication-timing-review ([[pharmacology/dosing-principles]]); and the documented-question-and-answer so the next clinician does not re-run the whole hunt ([[clinical-skills/records-handover]]).**
-:::
-:::
-
-::: exercise Interpret the ankle-brachial index {level=2}
-An ABI of 1.35 in a diabetic foot clinic patient. Reassuring or not, and what next?
-::: solution
-**Not reassuring — the incompressible, medially-calcified-tibial-vessels false-elevation (the diabetes-and-CKD-and-age arterial-media-calcinosis physiology — [[#def-nerve-foot]], [[cardiovascular/vascular-disease]], [[renal/chronic-kidney-disease]]); the next tier — toe-pressure-and-transcutaneous-oxygen-measurement-and-exercise-or-reactive-hyperaemia-testing, and the duplex-or-CTA-or-catheter-angiography-for-limb-threat-planning ([[clinical-skills/medical-imaging]], [[surgery/vascular-urological-surgery]]); the wound-context (an ulcer-with-a-"normal"-ABI-is-still-at-risk, and the foot-team-vascular-referral-threshold-should-not-wait-for-rest-pain — [[#ex-foot]]); and the systemic-atheroma-check ([[cardiovascular/coronary-artery-disease]], [[nervous-system/stroke]]).**
-:::
-:::
-
-::: exercise Prescribe through an illness {level=2}
-A pump-treated type-1 with a gastro-viral illness: pump-site fine, glucose 14-18, ketones 1.5, vomiting, phone number for the diabetic-line unavailable at 22:00. What should the sick-day plan (already written in [[#def-tech]]) have contained, and what happens now?
-::: solution
-**The plan's four limbs ([[#def-tech]], [[endocrine/endocrine-emergencies]]): never-stop-basal (the DKA-from-pump-failure physiology and the long-acting-injection-bridge [[#def-tech]], [[endocrine/diabetes]]); extra-fluids-with-sodium-and-sugar-rules ([[renal/water-sodium]], [[gastrointestinal/clinical-nutrition]]); ketone-action-thresholds (the blood-ketone-tiers and when-inject-extra-and-when-go-in — the exact numbers that must pre-exist on the fridge-door); and a 24-hour-human-contact-route (the service-number-and-out-of-hours-ambiguity that made this patient hesitate is itself the defect — [[clinical-skills/patient-safety]]). Tonight: emergency-department-assessment-for-IV-fluids-and-insulin-and-ketone-clearance-and-the-antiemetic-and-thrombosis-review ([[emergency-critical-care/acute-assessment]], [[blood/thrombosis-anticoagulation]]); tomorrow: the plan-rewrite-with-the-patient-present ([[clinical-skills/communication]]).**
-:::
-:::
+The hyperosmolar hyperglycaemic state and severe hypoglycaemia as emergencies are covered in [[endocrine/endocrine-emergencies]]. Treatment of diabetes is in [[endocrine/diabetes]]. Chronic kidney disease, acid–base interpretation and peripheral arterial disease are developed in [[renal/chronic-kidney-disease]], [[renal/acid-base-disorders]] and [[cardiovascular/vascular-disease]].
 
 ::: summary
-- Complications begin before diagnosis and progress silently; the screening calendar is the clinical intervention.
-- Microangiopathy is one process in three organs — retina, kidney, nerve — with the same glucose-toxicity biochemistry and the same legacy-effect treatment logic.
-- The foot is a systems problem: protection, vascular inflow, infection control, offloading and the multidisciplinary team, each individually preventable before the next becomes urgent.
-- Macrovascular risk is treated with a statin-shaped, ACE-shaped, SGLT2-GLP1-shaped, blood-pressure-shaped and smoking-shaped package — never with the HbA1c number alone.
-- Technology changes what is possible (CGM, pumps, closed loop) but only structured care, education and reliable registers change outcomes at population scale.
+- Hypoglycaemia: level 1 below 3.9, level 2 below 3.0 mmol/L, level 3 needs assistance. Treat with 15–20 g fast carbohydrate if able to swallow; otherwise glucagon or IV glucose. Sulfonylurea hypoglycaemia recurs.
+- Recurrent hypoglycaemia causes impaired awareness; strict avoidance can partly restore it.
+- DKA (JBDS): ketones ≥ 3.0 mmol/L (or urine 2+), glucose > 11.0 mmol/L or known diabetes, and bicarbonate < 15.0 mmol/L and/or pH < 7.3. Resolution: ketones < 0.6 and pH > 7.3.
+- DKA management: fluids, fixed-rate insulin 0.1 units/kg/h, continue basal insulin, add glucose below 14 mmol/L, careful potassium replacement, treat the cause. Treat the ketones, not the glucose.
+- HHS: glucose ≥ 30 mmol/L, osmolality ≥ 320 mOsm/kg, without significant ketosis or acidosis.
+- Microvascular damage follows unregulated glucose uptake in endothelium, retina, kidney and nerve; good early control has a legacy effect.
+- Screen eyes (retinal photography), kidneys (ACR and eGFR) and feet (annual review with monofilament); refer active foot problems within one working day.
+- Cardiovascular risk is roughly doubled; statins, blood pressure control, smoking cessation and cardioprotective glucose-lowering drugs reduce it.
 :::
 
 ## Exercises
 
-::: exercise Fill the calendar {level=1}
-A 29-year-old with 6-year type 1: list the surveillance items and intervals for this year.
+::: exercise Classify the hypoglycaemia {level=1}
+Classify each event: (a) CGM reading 3.4 mmol/L, treated by the person; (b) glucose 2.6 mmol/L, treated by the person; (c) glucose 3.5 mmol/L with confusion requiring a partner to give glucose gel.
 ::: solution
-**Retinal imaging (annual-or-biennial-by-programme — [[#def-eye]]); ACR-and-eGFR (annual — [[#def-kidney]]); foot inspection-and-risk-grading (every-consult-plus-annual-podiatry — [[#def-nerve-foot]]); BP-and-lipids-and-smoking-and-weight (risk-reviews — [[#def-macro]]); thyroid-and-coeliac-where-indicated ([[endocrine/thyroid]], [[gastrointestinal/bowel-disease]]); the sick-day-and-driving-and-pregnancy-intention-fields ([[#def-tech]], [[endocrine/endocrine-emergencies]]).**
+(a) Level 1 (below 3.9 and at or above 3.0). (b) Level 2 (below 3.0). (c) Level 3: severe, because another person's help was needed, whatever the glucose value.
 :::
 :::
 
-::: exercise Read the fundus {level=1}
-"Venous beading and IRMA in two quadrants, no new vessels" — grade it and state the action.
+::: exercise The anion gap {level=1 check="136-(100+10)"}
+Calculate the anion gap, using $[\text{Na}^+] - ([\text{Cl}^-] + [\text{HCO}_3^-])$, for sodium 136, chloride 100 and bicarbonate 10 mmol/L.
 ::: solution
-**Pre-proliferative retinopathy ([[#def-eye]]: the pre-proliferative features); the action — shortened-interval-review, ophthalmology-referral-threshold-check (the 4-2-1 rules), and glycaemic-and-BP-intensification-with-the-rapid-improvement-caution ([[obstetrics-gynaecology/pregnancy-complications]]).**
+$136 - (100 + 10) = 26$ mmol/L, a raised anion gap.
 :::
 :::
 
-::: exercise Stage the kidney {level=2}
-eGFR 55 with ACR 90 in long type 2; on ramipril 5 mg, K 4.9, HbA1c 66, no SGLT2 yet. Prescribe the stack and the monitoring.
+::: exercise The infusion rate {level=1 check="0.1*82"}
+What is the initial fixed-rate insulin infusion rate, in units per hour, for an adult with DKA who weighs 82 kg, using 0.1 units/kg/h? (Illustrative calculation; follow local protocol.)
 ::: solution
-**Maximise-then-add ([[#def-kidney]]): ramipril-titration-with-K-and-creatinine-acceptance-rules ([[renal/potassium-calcium-phosphate]], [[renal/acute-kidney-injury]]); add-SGLT2-with-the-early-dip-explanation-and-sick-day-hold ([[endocrine/diabetes]], [[endocrine/endocrine-emergencies]]); add-finerenone-if-albuminuria-persists-with-potassium-surveillance; statin-and-BP-target-and-salt ([[cardiovascular/vascular-disease]], [[cardiovascular/hypertension]]); the-metformin-dose-check-and-the-SADMANS-list ([[pharmacology/dosing-principles]]); and the referral-review-triggers-and-recheck-intervals ([[renal/chronic-kidney-disease]]).**
+$0.1 \times 82 = 8.2$ units per hour.
 :::
 :::
 
-::: exercise Treat the night pains {level=2}
-Burning nocturnal feet, sleep loss, low mood, eGFR 40, age 72. Build the neuropathic-pain plan around the comorbidities.
+::: exercise Does she have DKA? {level=2}
+A 45-year-old woman with type 2 diabetes taking empagliflozin is admitted with vomiting after a laparoscopic cholecystectomy. Glucose 9.2 mmol/L, ketones 4.6 mmol/L, venous pH 7.21, bicarbonate 12 mmol/L. Does she meet the criteria for DKA, and what is different about her management?
 ::: solution
-**Start-low-go-slow with geriatric-awareness ([[#def-nerve-foot]]-pain-row): duloxetine-advantages-for-mood-and-sleep-or-low-dose-amitriptyline-with-anticholinergic-burden-check ([[psychiatry/mood-disorders]], [[geriatrics-palliative/polypharmacy]], [[nervous-system/headache-pain]]); gabapentinoid-with-renal-dosing-and-sedation-and-falls-and-misuse-review ([[renal/chronic-kidney-disease]], [[geriatrics-palliative/falls]], [[psychiatry/substance-use]]); topical-capsaicin-or-lidocaine-as-sparingly-systemic-options ([[musculoskeletal/skin]]); sleep-hygiene-and-CBT-and-physio-and-weight-bearing-and-footwear-check (the rehab-physio link (the community-physiotherapy and prosthetics interface)); the glycaemic-review-honesty (pain-may-not-improve; avoid rapid-control-induced-worsening — [[endocrine/diabetes]]); and the mood-and-suicidal-ideation-screen-with-chronic-pain ([[psychiatry/self-harm-suicide-prevention]]).**
+Yes. She has ketones ≥ 3.0, known diabetes (which satisfies the glucose criterion even though glucose is under 11.0), and bicarbonate < 15 with pH < 7.3. This is **euglycaemic DKA**, associated with SGLT2 inhibitors, particularly with reduced food intake and surgical stress.
+
+Management: stop the SGLT2 inhibitor. Because glucose is already below 14 mmol/L, glucose-containing fluid is needed **from the start** alongside the fixed-rate insulin, so that insulin can be given to clear ketones without causing hypoglycaemia. Monitor potassium closely. This case illustrates why SGLT2 inhibitors are paused before surgery and during acute illness.
 :::
 :::
 
-::: exercise Close the loop on the system {level=3}
-Your district's amputation and dialysis rates for diabetes are above the national mean. Run the improvement analysis.
+::: exercise The ACR {level=2}
+A 38-year-old man with type 1 diabetes has an early-morning urine ACR of 8 mg/mmol. What should happen next, and what treatment would follow if it is confirmed?
 ::: solution
-**Locate the failure in the care cascade ([[#def-tech]]): registers-and-recall-completeness (foot-risk-grade-presence, eye-screen-attendance-and-fail-to-chase, ACR-coverage — [[public-health/screening]], [[clinical-skills/patient-safety]]); access-audit (podiatry-wait-times-and-MDT-foot-clinic-existence-and-vascular-referral-pathways-and-anti-VEGF-injection-capacity-and-nephrology-referral-thresholds — [[surgery/vascular-urological-surgery]], [[nervous-system/sensory-systems]], [[renal/chronic-kidney-disease]]); prescribing-gap-audit (SGLT2-and-GLP1-and-finerenone-and-statin-and-ACE-uptake-by-deprivation-tertile — [[endocrine/diabetes]], [[public-health/determinants-inequalities]]); technology-equity-review (CGM-and-pump-access-by-age-ethnicity-deprivation — [[public-health/determinants-inequalities]]); the inpatient-interface (ketone-and-hypo-protocols-and-steroid-and-surgery-diabetes-prescribing — [[endocrine/endocrine-emergencies]], [[surgery/perioperative-care]]); workforce-and-education (structured-courses-completion and specialist-nurse ratios — [[public-health/health-systems-economics]]); and the improvement-set (measure-baseline-PDSA-with-the-five-non-negotiable-fields-of-[[#def-tech]]-as-compliance-indicators and a lived-experience-panel — [[clinical-skills/records-handover]]).**
+An ACR of 8 mg/mmol is in the A2 (moderately increased) range. It should be confirmed with repeat samples (two of three abnormal over three to four months), excluding transient causes such as urinary infection, recent intense exercise or menstruation. If confirmed, he has diabetic kidney disease with albuminuria: offer an ACE inhibitor or ARB, titrated as tolerated with monitoring of potassium and creatinine; optimise blood pressure, glucose and lipids; and continue annual eGFR and ACR monitoring. SGLT2 inhibitors have a role in type 2 diabetes but are not licensed for kidney protection in type 1 diabetes because of the ketoacidosis risk.
+:::
+:::
+
+::: exercise Time to resolution {level=2 check="(4.2-0.6)/0.5"}
+A person's ketones are 4.2 mmol/L at the start of DKA treatment. Assuming a steady fall of 0.5 mmol/L per hour, how many hours until ketones reach 0.6 mmol/L?
+::: solution
+$(4.2 - 0.6)/0.5 = 3.6/0.5 = 7.2$ hours.
+:::
+:::
+
+::: exercise A potassium trap {level=3}
+In a 70 kg adult with DKA, the initial potassium is 3.1 mmol/L. Explain why this is dangerous, and why the usual sequence of starting insulin immediately may need to change.
+::: hint
+Where does insulin move potassium?
+:::
+::: solution
+In DKA, total body potassium is depleted by osmotic diuresis and vomiting, but acidosis and insulin lack shift potassium out of cells, so serum potassium is usually normal or high. A **low** potassium at presentation means total body depletion is severe. Insulin will drive potassium into cells and the serum level will fall further, risking cardiac arrhythmias and respiratory muscle weakness.
+
+A potassium below 3.5 mmol/L on admission is a marker of severe DKA. It requires senior review, cardiac monitoring, and potassium replacement at higher rates than standard, often through a central line in a high-dependency setting. Some protocols delay or reduce insulin until potassium is being replaced and rising. Fluids continue. Potassium is checked frequently.
+:::
+:::
+
+::: exercise A case with a differential {level=3}
+A 78-year-old man with type 2 diabetes on gliclazide and metformin is brought from a care home with drowsiness. Capillary glucose is 1.9 mmol/L. He recovers with intravenous glucose but is drowsy again three hours later with glucose 2.4 mmol/L. His eGFR, previously 55, is now 24 mL/min/1.73 m² after a week of diarrhoea. Explain the course, give a differential diagnosis for drowsiness in this setting, and outline management.
+::: solution
+**Course**: gliclazide is cleared partly by the kidney, and its effect is prolonged when kidney function falls. Acute kidney injury after diarrhoea has led to accumulation and prolonged insulin secretion, so hypoglycaemia recurs after each glucose bolus. This is typical of **sulfonylurea-induced hypoglycaemia**.
+
+**Differential** for drowsiness: recurrent hypoglycaemia (most likely); hyperosmolar or uraemic state from dehydration and AKI; sepsis; stroke; hypoactive delirium from any cause; adrenal insufficiency (rare, but causes hypoglycaemia); drug effects.
+
+**Management**: admit; continuous glucose infusion (for example 10% glucose) with frequent capillary glucose checks for at least 24 hours or as long as the drug effect lasts; octreotide is sometimes used for refractory sulfonylurea hypoglycaemia. Stop gliclazide permanently, and pause metformin while eGFR is below 30. Treat the AKI with fluids. Review his glucose targets: in a frail older person, avoiding hypoglycaemia matters more than a low HbA1c, and his care plan should reflect that.
 :::
 :::

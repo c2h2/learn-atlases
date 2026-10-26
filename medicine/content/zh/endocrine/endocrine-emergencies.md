@@ -1,172 +1,351 @@
-内分泌急症共享一张临床面孔——不适、意识模糊、脱水的患者——也共享一种救命的诊断习惯：**问是什么激素缺失、泛滥、或使细胞缺燃料、并尽早查便宜的数字（葡萄糖、酮体、钠、钾、钙、皮质醇）、因为每一个的治疗都是特异的、而治错的那个会杀人。**本章是整个内分泌课程的急性医学伴侣。
+内分泌急症在床旁常常看起来很相似：一个身体不适、意识模糊、脱水或低血压的人，却没有明显的原因可以解释。区分它们的是少数几项便宜快捷的测定（毛细血管血糖、酮体、钠、钾、钙、渗透压），以及追问哪种激素缺乏或过多的习惯。每种急症都有特异的治疗，有几种一旦漏诊即可致命，而一旦识别则处理直接明了。有些急症，如肾上腺危象，必须在确诊之前凭怀疑即开始治疗。
 
-本章涵盖糖尿病酮症酸中毒与高渗状态、肾上腺危象、甲状腺急症、钠与钙紊乱、低血糖及胰岛素技术危害。
+本课汇集了急诊内科团队会遇到的内分泌急症：高血糖危象（详述高渗高血糖状态）、严重低血糖、肾上腺危象、甲状腺危象和黏液水肿昏迷、严重低钠血症、急性高钙血症和低钙血症、垂体卒中以及嗜铬细胞瘤危象。糖尿病酮症酸中毒的完整处理见[[endocrine/diabetes-complications]]。下文所有剂量均为用于说明原则的典型成人方案；实际治疗遵循现行的当地方案和国家指南。
 
-## 胰岛素与葡萄糖急症
+## 共同的处理思路 {#sec-approach}
 
-::: definition 糖尿病酮症酸中毒与高血糖高渗 {#def-dka}
-**病理生理（绝对或相对胰岛素缺乏加对抗调节过多——胰高血糖素、皮质醇、儿茶酚胺、生长激素——开启脂解、酮体生成与肝糖输出；酮体化学、渗透性脱水级联与Kussmaul代偿、对照[[cell-biochemistry/lipid-amino-acid-metabolism]]、[[renal/water-sodium]]、[[renal/potassium-calcium-phosphate]]与[[renal/acid-base-disorders]]的阴离子间隙算术阅读；“正常血糖酮症酸中毒”变见于钠葡萄糖协同转运蛋白2抑制、妊娠、饥饿与酒精——[[endocrine/diabetes]]、[[obstetrics-gynaecology/pregnancy-complications]]）。诊断（葡萄糖-酮体-酸中毒三联，英国糖尿病联合学会（JBDS）指南给出数值：血酮≥3.0 mmol/L或尿酮≥2+、血糖>11.0 mmol/L或已知糖尿病、碳酸氢盐<15.0 mmol/L和/或静脉pH<7.3——之后以阴离子间隙与每小时毛细血管酮体追踪缓解至酮体<0.6 mmol/L且pH>7.3；假性低钠校正、及淀粉酶升高不是胰腺炎的警诫——[[clinical-skills/laboratory-tests]]、[[gastrointestinal/pancreas-biliary]]模拟行；及定义这次入院诱因搜寻——漏用或使用失败的胰岛素与泵故障及感染及新发糖尿病及药物病因——[[endocrine/diabetes-complications]]、[[surgery/perioperative-care]]）。管理规程（逐小时组套——液体先行的复苏带平衡晶体对生理盐水的氯负荷及脑水肿思考、及按体重与共病滴定的策略——[[emergency-critical-care/shock-fluids]]、[[renal/acute-kidney-injury]]；固定静脉胰岛素而不是滑动量表、葡萄糖下降速率配速带含糖液体加入、及以酮体清除而不是血糖正常化为停止规则；钾规程带胰岛素低钾危害及低时早早加钾的纪律——[[renal/potassium-calcium-phosphate]]；碳酸氢盐很少用的规则；监测网格与静脉血栓预防——[[blood/thrombosis-anticoagulation]]；及预防反跳酮症的皮下重叠过渡技术）。并发症清单各有其章——年轻患者的脑水肿（头痛与变慢及插管阈值逻辑）、医源性低血糖与低钾及低磷、横纹肌溶解、急性呼吸窘迫综合征及胃内容误吸风险——[[emergency-critical-care/critical-care]]、[[respiratory/gas-exchange]]、[[gastrointestinal/oesophagus-stomach]]；及重症与肾替代生态位——[[renal/chronic-kidney-disease]]。高血糖高渗状态（JBDS标准：低血容量、血糖≥30 mmol/L而无明显酮血症（<3.0 mmol/L）或酸中毒（pH>7.3、碳酸氢盐>15 mmol/L）、渗透压≥320 mOsm/kg——典型者为老年2型、其胰岛素足以抑制生酮但不足以控制高血糖、及严重脱水与血栓及谵妄表型；更温和的液体与胰岛素算术带脑水肿与肌溶解警诫及药物诱因审计——激素与噻嗪及非典型抗精神病药——[[endocrine/adrenal]]、[[psychiatry/psychotic-disorders]]、[[geriatrics-palliative/polypharmacy]]）；去向之问（照护层级与高度依赖转诊标准及“这个人为何晚发就诊”的服务分析——[[emergency-critical-care/acute-assessment]]、[[public-health/health-systems-economics]]）。**
+每一种急症都从**ABCDE评估**开始（[[emergency-critical-care/acute-assessment]]），内分泌病因自然地融入其中。
+
+- **D代表"绝不能忘记血糖"**（"don't ever forget glucose"）：对每位意识水平下降、抽搐、行为怪异或虚脱的人测毛细血管血糖。
+- 任何身体不适的糖尿病患者都要**测酮体**，不论血糖高低。
+- 尽早送检**钠、钾、钙、葡萄糖和渗透压**；它们快速，并指向特定诊断。
+- 在给予类固醇之前**抽血查皮质醇**（必要时查甲状腺功能），但绝不能让采样延误治疗。
+- **寻找诱因**：感染、漏服药物、新药、手术、心肌梗死。
+
+::: theorem 凭怀疑补充缺失的激素 {#thm-suspicion}
+当某种内分泌急症有可能存在、且特异治疗安全时，应在确诊之前给予治疗。疑似肾上腺危象时给予氢化可的松，疑似低血糖时给予葡萄糖，是最清楚的例子：如果怀疑有误，两者都无害；如果怀疑正确，延误可致命。
 :::
 
-::: definition 作为急症的低血糖 {#def-hypo}
-**急性治疗（清醒患者先快后长效碳水规则、及意识丧失患者静脉葡萄糖浓度与通路选择对肌注与鼻内胰高血糖素及摇匀与预充装置技术及其失败模式——[[emergency-critical-care/acute-assessment]]、[[endocrine/diabetes-complications]]）。磺脲问题（长期观察规则因为复发就是机制、及奥曲肽选项、及避免单用葡萄糖输注陷阱——[[endocrine/diabetes]]）。非糖尿病或先前稳定糖尿病患者的“为何是现在”鉴别——脓毒症与肾上腺皮质功能减退及肝与肾衰竭及酒精及胰岛素或磺脲误用及伪装性及胰岛素瘤及激素缺乏及减重术后倾倒及非胰岛素瘤胰源性低血糖综合征清单——[[infectious-diseases/fever-sepsis]]、[[endocrine/adrenal]]、[[gastrointestinal/liver-disease]]、[[renal/chronic-kidney-disease]]、[[psychiatry/substance-use]]、[[psychiatry/eating-personality-disorders]]、[[gastrointestinal/pancreas-biliary]]胰岛素瘤行、[[surgery/gastrointestinal-surgery]]倾倒行；监护下72小时禁食检查规程、及在记录到低血糖那一刻的C肽与胰岛素原及抗体及磺脲筛查判读——[[clinical-skills/laboratory-tests]]。驾驶与保障叠加（驾照标准与严重发作后不得驾驶及职业职责——[[medical-ethics-law/professionalism-regulation]]；及老年低血糖放宽决定——[[geriatrics-palliative/polypharmacy]]、[[endocrine/diabetes-complications]]）。**
+::: proof
+这一决策基于代价的不对称。对没有肾上腺皮质功能减退的人给予单剂氢化可的松，最多造成一过性高血糖和皮质醇结果受干扰，而先抽血即可避免后者。未经治疗的肾上腺危象会在数小时内进展为难治性休克。同样，给非低血糖者葡萄糖只会短暂升高血糖；未经治疗的神经低血糖会导致脑损伤。当不必要治疗的危害小而不治疗的危害大时，治疗阈值就应低。同样的推理**不**适用于有严重风险的治疗，如高渗盐水或快速纠正渗透压，这些需要确认和仔细滴定。
 :::
 
-## 激素急症
+## 高血糖危象 {#sec-hyperglycaemia}
+
+两种高血糖急症是**糖尿病酮症酸中毒（DKA）**和**高渗高血糖状态（HHS）**。以下标准来自英国糖尿病学会住院诊疗联合组（JBDS）。
+
+::: definition DKA与HHS（JBDS标准） {#def-dka}
+**糖尿病酮症酸中毒**需同时具备：
+
+- 血酮 ≥ 3.0 mmol/L，或尿酮2+或以上；
+- 血糖 > 11.0 mmol/L，或已知糖尿病；
+- 碳酸氢盐 < 15.0 mmol/L和/或静脉pH < 7.3。
+
+当血酮低于0.6 mmol/L且静脉pH高于7.3时，DKA缓解。
+
+**高渗高血糖状态**的特征为：
+
+- 低血容量；
+- 显著高血糖，血糖 ≥ 30 mmol/L（540 mg/dL），无明显酮血症（血酮 < 3.0 mmol/L）或酸中毒（pH > 7.3，碳酸氢盐 > 15 mmol/L）；
+- 渗透压 ≥ 320 mOsm/kg。
+
+部分人同时符合两者的标准，按DKA–HHS混合型处理。
+:::
+
+DKA在数小时内发展，主要见于1型糖尿病，其治疗（补液、每小时每千克0.1单位的固定速率静脉胰岛素、继续基础胰岛素、血糖降至14 mmol/L以下后加葡萄糖、谨慎补钾）见[[endocrine/diabetes-complications]]。
+
+### 高渗高血糖状态
+
+HHS典型地见于老年2型糖尿病患者，有时糖尿病此前未被诊断。体内有足够的胰岛素抑制酮体生成，但不足以控制血糖。数天中血糖攀升，渗透性利尿耗竭水和电解质，而患者常常难以获得饮水或口渴感减退，于是严重脱水。典型的液体缺失为体重的10–20%。诱因包括感染、心肌梗死、卒中，以及糖皮质激素、噻嗪类和某些抗精神病药等药物。
+
+表现为意识模糊、嗜睡，或可酷似卒中的局灶性神经体征，并伴严重脱水征象。死亡率高于DKA，主要源于年龄、合并症和并发症：**血栓形成**（心肌梗死、卒中、外周动脉闭塞）、抽搐、纠正过快引起的**脑水肿**和**渗透性脱髓鞘**，以及足跟压力性损伤。
+
+渗透压的估算同[[endocrine/hypothalamus-pituitary]]：
+
+$$
+\text{计算渗透压} = 2[\text{Na}^+] + [\text{葡萄糖}] + [\text{尿素}]
+$$ {#eq-osm}
+
+JBDS的HHS处理原则是：
+
+- **补液优先。** 静脉0.9%氯化钠是主要治疗；单纯补液即可通过稀释以及恢复肾灌注和葡萄糖排泄来降低血糖。最初12小时通常需要数升的液体正平衡，心力衰竭者需更谨慎。
+- **缓慢纠正。** 目标是渗透压每小时下降**3–8 mOsm/kg**，血糖每小时下降**不超过5 mmol/L**。随着血糖下降（水回到细胞内），血钠起初常常**上升**；只要渗透压在下降，这是预期之中且可接受的，但24小时内血钠下降不应超过**10 mmol/L**。
+- **胰岛素晚用、小剂量。** 只有在单纯补液后血糖不再下降时，才开始每小时每千克**0.05单位**的固定速率静脉胰岛素输注；若有明显酮血症（血酮高于1 mmol/L）则立即开始。过早使用胰岛素会把葡萄糖和水驱入细胞，可导致循环衰竭。
+- **预防并发症。** 预防性低分子肝素（有时使用全量抗凝）、保护足部、按需补钾，以及治疗诱因。
+
+::: warning HHS中血钠上升不是更换液体的理由
+治疗中随着血糖下降，水离开细胞外间隙进入细胞，测得的血钠上升。团队有时因此改用低渗液体，这可使渗透压下降过快。正确的问题是**计算渗透压**是否在以合适的速率下降。血钠上升而渗透压下降是预期的模式；只有在液体正平衡充分而渗透压不再下降时，才考虑改用0.45%盐水。
+:::
+
+## 严重低血糖 {#sec-hypoglycaemia}
+
+不能安全吞咽者的低血糖是急症。遵循JBDS低血糖指南的原则：
+
+- **静脉葡萄糖**：通常为10%葡萄糖（例如约15分钟内输注150–200 mL）或20%葡萄糖（75–100 mL）。浓度更高的50%葡萄糖对静脉有刺激性，应尽量避免。
+- 无静脉通路时**肌内注射胰高血糖素**。肝糖原耗竭者（营养不良、过量饮酒、长时间禁食）胰高血糖素效果较差，对磺脲类过量效果也不佳。
+- 10–15分钟后复测血糖，必要时重复；清醒后给予口服碳水化合物。
+- **寻找原因。** 磺脲类和长效胰岛素相关的低血糖可在许多小时内复发，需要葡萄糖输注和观察。对非糖尿病者的低血糖必须进行检查：尽可能在**低血糖发作当时**抽血查胰岛素、C肽、β-羟丁酸和磺脲类筛查。病因包括脓毒症、肝衰竭、肾上腺皮质功能减退、酒精、营养不良、胰岛素瘤，以及无意或故意给予胰岛素或磺脲类。
+
+## 肾上腺危象 {#sec-adrenal}
 
 ::: definition 肾上腺危象 {#def-addisonian}
-**生理（皮质醇缺乏血管张力丧失与儿茶酚胺抵抗、加原发性疾病中醛固酮丢失的利钠、被合并疾病或手术或骤停激素揭示——[[endocrine/adrenal]]、[[physiology/autonomic-nervous-system]]、[[cardiovascular/circulation-blood-pressure]]）。识别（液体与升压药对液体与升压药反应差的低血压休克伴恶心呕吐腹痛意识模糊低血糖低钠高钾及代谢性酸中毒及嗜酸性粒细胞增多线索——“不是外科急腹症的急腹症”与无热源发热模式——[[renal/water-sodium]]、[[renal/potassium-calcium-phosphate]]、[[renal/acid-base-disorders]]、[[blood/haematopoiesis]]；Waterhouse-Friderichsen与抗凝出血肾上腺梗死病因——[[blood/haemostasis-bleeding]]）。行动（抽皮质醇与促肾上腺皮质激素、然后立即治疗静脉氢化可的松100毫克加积极补液加葡萄糖、并且不等任何结果；急性氢化可的松剂量下不需要氟氢可的松那一点；及为何激素之后升压药才起效的儿茶酚胺抵抗解释——[[endocrine/adrenal]]、[[emergency-critical-care/shock-fluids]]）。后续（诱因搜寻与感染治疗；缓慢减量与生理替代规划及四件安全件——卡、针、病日规则、手环——及手术与疾病覆盖规程——[[surgery/perioperative-care]]、[[endocrine/diabetes-complications]]病日兄弟；及“病房上这个患者为何低钠又低血压”的习惯、它能抓住激素门诊的院内获得性危象——[[clinical-skills/patient-safety]]、[[geriatrics-palliative/polypharmacy]]）。**
+**肾上腺危象**是皮质醇缺乏引起的危及生命的急性恶化，表现为低血压或休克，常伴呕吐、腹痛、意识模糊、发热、低钠血症、高钾血症（原发性疾病）和低血糖。它发生于已知肾上腺皮质功能减退者患病期间、糖皮质激素药物被停用或未能吸收者，也可以是艾迪生病的首发表现。
 :::
+
+高风险人群包括艾迪生病、垂体功能减退、先天性肾上腺皮质增生症患者，以及任何长期服用糖皮质激素的人（[[endocrine/adrenal]]）。常见诱因有胃肠炎（既增加需要量又妨碍片剂吸收）、感染、手术和创伤。注意寻找**类固醇急救卡**。
+
+处理（英国内分泌学会急诊指南）应立即进行，不等待结果：
+
+1. **立即静脉或肌内注射氢化可的松100 mg**，然后24小时内给予氢化可的松200 mg，持续输注或每6小时50 mg。
+2. 用0.9%氯化钠**快速补液复苏**，通常第一小时1升，之后根据反应调整。
+3. 处理**低血糖**，监测血钾和血钠。
+4. 治疗诱因，并请内分泌团队参与。
+5. 病情稳定并能进食后，改为较大剂量的口服糖皮质激素，数日内减至维持量。原发性疾病者在氢化可的松剂量低于每日约50 mg时重新开始氟氢可的松（更高剂量本身已有足够的盐皮质激素活性）。
+6. 出院前复习**患病期间用药规则**、紧急注射培训和类固醇急救卡，因为一次危象意味着预防失败了。
+
+## 甲状腺急症 {#sec-thyroid}
 
 ::: definition 甲状腺危象与黏液水肿昏迷 {#def-thyroid-emergencies}
-**甲状腺毒症危象（儿茶酚胺致敏的多系统失代偿——发热与快速心律失常及衰竭及激越或昏迷及肝损伤及腹泻——可评分但无论如何都要治疗、由感染与手术及碘负荷及产褥及依从不良及外伤诱发——[[endocrine/thyroid]]、[[endocrine/diabetes-complications]]感染思考、[[surgery/perioperative-care]]；作为组套的管理——β阻滞用普萘洛尔带哮喘与衰竭警诫及艾司洛尔输注生态位——[[respiratory/asthma-copd]]、[[cardiovascular/heart-failure]]；硫脲类在前、碘在后的顺序、带先阻断有机化后阻断释放的逻辑——[[endocrine/thyroid]]药理、[[pharmacology/drug-receptor]]；激素阻断T4向T3转化及肾上腺支持原理——[[endocrine/adrenal]]；考来烯胺肠肝循环技巧——[[gastrointestinal/digestion-absorption]]；降温与通气及重症照护及血浆置换生态位——[[emergency-critical-care/critical-care]]、[[blood/transfusion]]；及稳定后的确定性源头计划——[[surgery/gastrointestinal-surgery]]）。黏液水肿昏迷（失代偿甲状腺功能减退的低体温与低通气及低钠及低血糖及心动过缓及肠麻痹及昏迷综合征、由寒冷与感染及镇静药及手术及依从不良诱发——同一批诱因反过来——[[geriatrics-palliative/falls]]、[[infectious-diseases/fever-sepsis]]、[[pharmacology/adverse-reactions]]、[[renal/water-sodium]]抗利尿激素逻辑；管理——甲状腺激素之前先给氢化可的松这条常青顺序规则、静脉左甲状腺素或碘塞罗宁策略之争、被动复温与监测下的钠纠正及通气决定及葡萄糖——[[endocrine/adrenal]]、[[endocrine/thyroid]]、[[renal/water-sodium]]、[[emergency-critical-care/airway-ventilation]]；及诱因治疗与不要给每个甲减心脏病患者过多甲状腺激素的教训——[[cardiovascular/coronary-artery-disease]]）。**
+**甲状腺危象**是伴一个或多个器官系统失代偿的危及生命的甲状腺毒症：发热、心动过速或心房颤动、心力衰竭、激越、谵妄、抽搐或昏迷，以及胃肠或肝功能障碍（呕吐、腹泻、黄疸）。**Burch–Wartofsky评分量表**有助于判断：45分或以上高度提示，25–44分提示危象前期。
+
+**黏液水肿昏迷**是严重失代偿的甲减，伴意识水平下降（不一定是昏迷）、低体温、心动过缓、通气不足伴二氧化碳潴留、低钠血症和低血糖。主要见于长期患病或未经治疗的甲减老年女性。
 :::
 
-::: definition 钠、钙与水急症 {#def-sodium-calcium}
-**急性严重低钠血症（脑水肿机制与癫痫或恶化阈值、及高渗盐水冲击方案带再评估、及对抗渗透性脱髓鞘的总纠正上限护栏——[[renal/water-sodium]]、[[nervous-system/motor-systems]]、[[nervous-system/epilepsy]]；病因配对——抗利尿激素分泌不当综合征对低容量、及肾上腺与甲状腺排除、及噻嗪与选择性5羟色胺再摄取抑制剂及卡马西平及摇头丸及术后抗利尿激素清单——[[endocrine/adrenal]]、[[endocrine/thyroid]]、[[pharmacology/adverse-reactions]]、[[psychiatry/substance-use]]、[[surgery/perioperative-care]]；及过度纠正救援再策略——去氨加压素与葡萄糖重新降低方案——[[endocrine/hypothalamus-pituitary]]）。严重高钠血症（渗透性脑容积缩小与纠正过快时的颅内出血风险；尿崩与口渴缺失及盐中毒及渗透性利尿病因；及控制下降速率带频繁钠测量的纪律——[[renal/water-sodium]]、[[endocrine/hypothalamus-pituitary]]尿崩行、[[geriatrics-palliative/delirium-dementia-care]]取水途径护理失败邻近）。钙危象（重度高钙综合征——容量消耗然后盐水然后双膦酸盐或地舒单抗、及治疗恶性或甲状旁腺危象、及肾衰竭透析生态位；及低钙手足抽搐与癫痫及心律失常急症——静脉钙带心脏监测与先补镁、及气道与喉鸣注记——[[endocrine/bone-calcium]]完整治疗页、[[cardiovascular/arrhythmias]]、[[nervous-system/epilepsy]]、[[renal/potassium-calcium-phosphate]]）。嗜铬细胞瘤危象（高血压脑病与爆发肺水肿及休克变体、及先α后β规则、及避免胰高血糖素与甲氧氯普胺及造影触发、及重症尼卡地平或硝普钠或酚妥拉明与镁时代、及切除后低血压与低血糖监测——[[endocrine/adrenal]]、[[respiratory/gas-exchange]]水肿、[[emergency-critical-care/critical-care]]）。肾替代邻近电解质生态位——[[renal/chronic-kidney-disease]]。**
+两者通常都由应激触发：感染、手术、创伤、分娩；甲状腺危象还可由放射性碘或停用抗甲状腺药物诱发；黏液水肿昏迷还可由寒冷暴露、镇静剂和阿片类诱发。
+
+**甲状腺危象**在高依赖病房处理，治疗针对甲状腺激素作用的每一步：
+
+- **阻断肾上腺素能效应**：β受体阻滞剂，常用普萘洛尔，大剂量时还能减少T4向T3的转化（心力衰竭时慎用）。
+- **阻断新激素合成**：硫脲类药物。危象时常首选丙硫氧嘧啶，因为它还抑制外周T4向T3的转化；卡比马唑为替代选择。
+- **阻断激素释放**：碘剂（例如卢戈氏碘液），**在硫脲类药物至少一小时后**给予，以免额外的碘被用来合成更多激素。
+- **糖皮质激素**（氢化可的松或地塞米松）：减少T4向T3的转化，并覆盖可能存在的相对肾上腺皮质功能不全。
+- **支持治疗**：降温、补液、治疗诱因，心房颤动时视情况抗凝。避免用阿司匹林退热，因为它会把甲状腺激素从结合蛋白上置换下来。
+
+**黏液水肿昏迷**的处理：
+
+- **先用糖皮质激素**：在排除合并肾上腺皮质功能减退之前，于甲状腺激素之前或同时给予氢化可的松，因为甲状腺激素增加皮质醇清除，可诱发肾上腺危象。
+- **甲状腺激素替代**：在专科指导下静脉给予左甲状腺素或碘塞罗宁。剂量需要在纠正危险状态与诱发心肌缺血或心律失常之间取得平衡，尤其是患心脏病的老年人。
+- **支持治疗**：气道支持，对高碳酸血症进行通气；**被动**复温（主动体外加温可引起血管扩张和循环衰竭）；纠正低血糖和低钠血症；谨慎补液；治疗感染，感染可能不伴发热。
+
+## 钠的紊乱 {#sec-sodium}
+
+低钠血症是住院患者最常见的电解质异常。其病因和血管升压素的作用见[[endocrine/hypothalamus-pituitary]]和[[renal/water-sodium]]。这里聚焦于急症：严重症状以及纠正过快的危险。
+
+::: definition 严重症状性低钠血症 {#def-sodium-calcium}
+**低钠血症**是血钠低于135 mmol/L；**重度**低钠血症是低于125 mmol/L。**严重症状**反映脑水肿：呕吐、抽搐、意识水平下降（格拉斯哥昏迷评分≤8）或心肺窘迫。**急性**低钠血症（有记录表明在48小时内发生）更危险，因为大脑来不及适应；慢性低钠血症耐受性较好，但若纠正过快，更易发生**渗透性脱髓鞘综合征**。
 :::
 
-## 第一小时，绘制成图
+2014年欧洲低钠血症临床实践指南（由欧洲内分泌学会、欧洲重症医学会和欧洲肾脏最佳实践组织制定）对**严重症状**的建议是：
 
-::: definition 内分泌崩溃的黄金一小时逻辑 {#def-golden-hour}
-**本章每个急症都回报同样的第一小时、而[[#def-golden-hour]]插图的推理值得作为一个顺序而不是疾病清单来记忆：**识别（模式识别触发——深大呼吸加呕吐、休克加低钠、停用抗甲状腺药后发热加房颤、意识模糊加噻嗪加跌倒、昏迷加寒冷加老年甲状腺病史——每个配一个床边数字检验：酮体、钠、葡萄糖、抽皮质醇——[[clinical-skills/physical-examination]]、[[emergency-critical-care/acute-assessment]]）；先抽血再治疗（黄金规则：诊断血检绝不能延迟救命的激素、液体或葡萄糖——上面的氢化可的松与液体及葡萄糖及胰岛素及抗甲状腺组套——[[endocrine/adrenal]]、[[#def-dka]]、[[#def-thyroid-emergencies]]）；顺序正确（液体先于胰岛素、钾先于或同时于胰岛素、氢化可的松先于甲状腺素、α先于β、硫脲先于碘、为抖动的心电图给钙——每一个都是一小章伤害规避——[[clinical-skills/patient-safety]]、[[pharmacology/dosing-principles]]）；给纠正限速（钠与葡萄糖及渗透压速率上限带再评估化学与过度纠正救援选项——[[renal/water-sodium]]）；升级并并行搜寻诱因（感染与缺血及内分泌诱因清扫、及高级与重症标准——[[infectious-diseases/fever-sepsis]]、[[emergency-critical-care/critical-care]]）；及交接给预防（具名诱因的出院小结、病日规则与救援套件及驾驶与技术复审、及反复就诊者的事件旗标——[[clinical-skills/records-handover]]、[[endocrine/diabetes-complications]]）。**
+- 静脉**推注3%高渗盐水150 mL**，20分钟内输完，边监测血钠边重复（通常最多两次），目标是**血钠升高5 mmol/L**，这通常足以改善症状；
+- 然后停用高渗盐水并治疗病因；
+- **第一个24小时内血钠升高限制在10 mmol/L以内**，此后每24小时不超过8 mmol/L。
+
+对于渗透性脱髓鞘高风险者，许多临床医生采用更谨慎的24小时约8 mmol/L的上限：血钠低于105 mmol/L、酒精滥用、营养不良、低钾血症或晚期肝病者。
+
+纠正过度最常发生在血管升压素释放的原因被突然去除时：例如低血容量者接受补液、停用噻嗪类或去氨加压素，或补充皮质醇时。此时肾脏排出大量稀释尿，血钠迅速上升。如果血钠上升过快，可在专科监督下用不含电解质的水，部分病例加用去氨加压素，减缓或逆转这一趋势。
+
+粗略估算输注一升液体效应的**Adrogué–Madias公式**为：
+
+$$
+\Delta[\text{Na}^+] \approx \frac{[\text{Na}^+]_{\text{输注液}} - [\text{Na}^+]_{\text{血清}}}{\text{体液总量} + 1}
+$$ {#eq-adrogue}
+
+女性和老年男性的体液总量约为0.5 × 体重，年轻男性约为0.6 × 体重。它忽略了持续的尿液丢失，因此只是初步估计；保证纠正安全的是频繁测定血钠。
+
+## 钙的紊乱 {#sec-calcium}
+
+**急性严重高钙血症**（校正钙高于3.5 mmol/L，或较低但有症状）引起脱水、意识模糊、呕吐、心律失常和肾损伤（[[endocrine/bone-calcium]]）。英国内分泌学会急诊指南：
+
+1. 静脉输注0.9%氯化钠**补液**，常为24小时内4–6升，根据年龄及心肾功能调整。
+2. 补液后**静脉给予双膦酸盐**（例如唑来膦酸或帕米膦酸，按肾功能调整剂量）；血钙在2–4天内下降。
+3. 停用促发药物（噻嗪类、钙和维生素D补充剂、锂盐）。
+4. 寻找并治疗病因；难治病例可使用降钙素、地舒单抗或透析。高钙血症由骨化三醇驱动时（肉芽肿性疾病、某些淋巴瘤），糖皮质激素有效。
+
+**急性严重低钙血症**（校正钙低于1.9 mmol/L，或出现手足搐搦、抽搐、心律失常或QT延长等症状时的任何水平）用**静脉葡萄糖酸钙**治疗：通常将10%葡萄糖酸钙10–20 mL加入5%葡萄糖50–100 mL中，在心电监护下10分钟内输完，必要时随后持续输注。必须测定并补充**镁**，因为镁低时低钙血症无法纠正。氯化钙刺激性更强，留用于心搏骤停和重症监护。
+
+## 垂体卒中与嗜铬细胞瘤危象 {#sec-other}
+
+::: definition 垂体卒中 {#def-apoplexy}
+**垂体卒中**是垂体肿瘤（常为此前未知的肿瘤）的突发出血或梗死。表现为**突发剧烈头痛**（可酷似蛛网膜下腔出血）、呕吐、**视力丧失**或视野缺损，以及海绵窦内脑神经受压引起的**眼肌麻痹**。急性ACTH缺乏可引起肾上腺危象。
+:::
+
+处理：对任何身体不适或有视觉、神经体征者，抽血查皮质醇后立即给予**氢化可的松**，补液，紧急**MRI**（无MRI时行CT），并转诊神经外科和内分泌团队。视力严重下降、视野恶化或意识水平下降时考虑手术减压；许多其他患者在密切监测下保守治疗。所有人之后都需要评估垂体功能。
+
+**嗜铬细胞瘤危象**是嗜铬细胞瘤或副神经节瘤释放儿茶酚胺的突然激增，由麻醉、手术、药物（糖皮质激素、甲氧氯普胺、未经α阻滞的β受体阻滞剂）或肿瘤挤压诱发。它引起严重高血压或高低血压交替、心律失常、心肌缺血或心肌病、肺水肿和多器官衰竭。在重症监护中处理：**α受体阻滞**（静脉酚妥拉明，或按当地实践使用其他药物），在α阻滞建立之前避免β阻滞，并给予支持治疗；病情稳定后再行手术（[[endocrine/adrenal]]）。
+
+::: example 在家中被发现意识模糊的老年男性 {#ex-hhs}
+一位81岁服用二甲双胍的2型糖尿病男性，在尿路感染数天后被发现意识模糊。他皮肤干燥、嗜睡。血钠148 mmol/L，血糖42 mmol/L，尿素18 mmol/L，血酮0.8 mmol/L，静脉pH 7.36，碳酸氢盐23 mmol/L。计算渗透压，作出诊断，并设定最初数小时的治疗目标。
+::: solution
+**渗透压**按[[#eq-osm]]：
+
+$$
+2 \times 148 + 42 + 18 = 296 + 60 = 356 \text{ mOsm/kg}。
+$$
+
+**诊断。** 血糖≥30 mmol/L，渗透压≥320 mOsm/kg，酮体低于3.0 mmol/L，pH高于7.3，碳酸氢盐高于15 mmol/L，并有临床低血容量：**HHS**，由感染诱发。
+
+**目标**（JBDS原则）：
+- 补液优先：0.9%氯化钠，目标是最初12小时内液体正平衡，注意心力衰竭。
+- 渗透压每小时下降3–8 mOsm/kg，因此最初6小时约下降18–48 mOsm/kg，从356降至约308到338之间。
+- 血糖每小时下降不超过5 mmol/L。
+- 血钠起初可能上升；24小时内下降不应超过10 mmol/L。
+- 只有在单纯补液后血糖不再下降时，才给予每小时每千克0.05单位的胰岛素（他的酮体低于1 mmol/L）。
+- 低分子肝素、保护足跟、监测血钾、抗生素治疗感染，急性期停用二甲双胍。
+:::
+:::
+
+::: example 艾迪生病女性的呕吐与虚脱 {#ex-crisis}
+一位34岁艾迪生病女性腹泻、呕吐24小时，无法保留氢化可的松片剂。她没有紧急注射套装。她嗜睡，血压72/40 mmHg，血钠124 mmol/L，血钾6.1 mmol/L，血糖3.2 mmol/L。最初15分钟内应做什么？
+::: solution
+在被证实为其他疾病之前，这就是**肾上腺危象**，治疗不等待（[[#thm-suspicion]]）。
+
+1. ABCDE；建立静脉通路；抽血查皮质醇、ACTH（可选）、电解质、血糖和培养，但不延误治疗。
+2. 立即**静脉注射氢化可的松100 mg**（静脉通路困难时肌内注射）。
+3. **0.9%氯化钠**1升快速输注，然后再评估。
+4. 静脉葡萄糖纠正低血糖。
+5. 做心电图评估高钾血症；它通常随氢化可的松和补液而纠正，但心电图明显改变时需按标准方法治疗高钾血症。
+6. 然后24小时内给予氢化可的松200 mg，治疗胃肠炎，并请内分泌团队参与。
+
+出院前：患病期间用药规则、为她和家人提供紧急注射套装及培训，以及类固醇急救卡。这次发作本是可以预防的。
+:::
+:::
+
+::: example 血钠会升高多少？ {#ex-adrogue}
+一位体重60 kg的70岁女性发生抽搐。她的血钠为112 mmol/L。用Adrogué–Madias公式估算推注150 mL 3%盐水（钠513 mmol/L）后血钠升高多少。达到欧洲指南5 mmol/L升高目标是否可能需要不止一次推注？
+::: solution
+老年女性的体液总量：$0.5 \times 60 = 30$ L。
+
+每升3%盐水的变化，按[[#eq-adrogue]]：
+
+$$
+\frac{513 - 112}{30 + 1} = \frac{401}{31} \approx 12.9 \text{ mmol/L（每升）}。
+$$
+
+150 mL（0.15 L）：$12.9 \times 0.15 \approx 1.9$ mmol/L。
+
+因此每次推注预计使血钠升高约2 mmol/L，达到5 mmol/L的升高可能需要两到三次推注。这与指南边监测血钠边重复推注的做法一致。该估计忽略了尿量，必须通过测定核实；症状改善后，第一个24小时内总升高限制在10 mmol/L以内，而她的危险因素（年龄、可能为慢性）支持采用更低的目标。
+:::
 :::
 
 ::: widget plot
-f: 100*exp(-0.8*x); 100*exp(-0.25*x)
-x: 0, 8
-y: 0, 100
-labels: \text{崩溃后小时数},\ \text{生存百分比};\ \text{第一小时内治疗的危象};\ \text{延迟后治疗的危象}
-caption: 使内分泌急症自成一类分诊的残酷算术（[[#def-golden-hour]]）：未治疗的肾上腺危象与未治疗的危象风暴带着陡峭、部分可恢复的死亡率曲线、而今天的酮症酸中毒主要死于延迟与治疗本身的并发症（[[#def-addisonian]]、[[#def-thyroid-emergencies]]、[[#def-dka]]）。指数曲线是来自历史与现代队列量级的示意教学形状、不是校准的风险计算器（[[epidemiology-ebm/measuring-disease]]、[[emergency-critical-care/critical-care]]）。
+f: 112 + 0.33*x; 112 + 0.8*x
+x: 0, 24
+y: 108, 134
+hlines: 122
+labels: \text{在限度内纠正}; \text{纠正过度}
+caption: 起始血钠为112 mmol/L者血钠（mmol/L）随治疗时间（小时）的变化。水平线标出第一个24小时允许的10 mmol/L升高。早期快速升高约5 mmol/L可缓解症状，但若继续以该速率上升（常因肾脏开始排出稀释尿），就会超过限度，有发生渗透性脱髓鞘的风险。简化的直线模型。
 :::
 
-::: definition 垂体卒中与其他内分泌“模拟急症” {#def-apoplexy}
-**垂体卒中（垂体窝肿瘤突然出血或梗死综合征——雷击样头痛伴颈强直与视力丧失及眼肌麻痹尤其第三对脑神经及上睑下垂及复视、及伴急性促肾上腺皮质激素丧失休克与低钠的垂体功能减退——蛛网膜下腔出血与脑膜炎及海绵窦及动脉瘤鉴别、蛛网膜下腔出血路径必须抓住——[[nervous-system/stroke]]、[[nervous-system/headache-pain]]、[[endocrine/hypothalamus-pituitary]]；诊断执行带紧急垂体窝影像加查血的头颅CT、及动脉瘤可能时的血管成像——[[clinical-skills/medical-imaging]]；及管理——应激剂量氢化可的松先给因为它才是杀人的东西、然后液体与钠、及按视觉状态与意识水平的多学科神经外科眼科减压决定、然后完整激素替代重建带长期轴与复发监测——[[endocrine/adrenal]]、[[endocrine/thyroid]]、[[#def-sodium-calcium]]、[[surgery/perioperative-care]]）。其他值得命名的模拟者（甲状腺毒性周期性瘫痪——年轻男性碳水后弛缓伴低钾并揭开甲状腺功能亢进——[[endocrine/thyroid]]、[[renal/potassium-calcium-phosphate]]、[[nervous-system/motor-systems]]；Addison性色素沉着低血压被作为抑郁与厌食及体重下降收入精神科——[[psychiatry/mood-disorders]]、[[endocrine/adrenal]]；黏液水肿性肠麻痹与大细胞贫血及心包积液表现带插管困难与药物清除崩塌——[[gastrointestinal/bowel-disease]]、[[blood/anaemia]]、[[cardiovascular/heart-failure]]、[[pharmacology/absorption-distribution]]；已在[[#def-sodium-calcium]]覆盖的嗜铬细胞瘤多系统危象；及甲状腺术后低钙喉鸣与癫痫及QT延长的快速反应——[[endocrine/bone-calcium]]、[[respiratory/mechanics-breathing]]、[[cardiovascular/arrhythmias]]）。共同主线是常见急症内分泌病因——急性医学医师把激素问题留在休克、昏迷、癫痫、无力与心律失常的前五鉴别里的原因——[[emergency-critical-care/acute-assessment]]。**
-:::
-
-::: example 不是外科的腹痛 {#ex-dka-abdo}
-17岁呕吐2天、全腹痛与深大呼吸；葡萄糖31、酮体6.8、pH 7.05、碳酸氢盐8、白细胞19、体温37.2；糖尿病团队到达之前外科团队被请去“排除阑尾”。
+::: example 发热、激越与心房颤动 {#ex-storm}
+一位41岁格雷夫斯病女性两个月前停用了卡比马唑。她现在患肺炎，体温39.4 °C，心房颤动心率160次/分，激越、腹泻并有轻度黄疸。游离T4 68 pmol/L。概述处理，并解释用药顺序。
 ::: solution
-**以经典内科腹部模拟者呈现的糖尿病酮酸中毒（[[#def-dka]]）：酸中毒动力学造成疼痛、而白细胞升高是应激反应不是腹膜炎（被误读为焦虑的Kussmaul呼吸、及在治疗数小时内安静的“急腹症”——[[renal/acid-base-disorders]]、[[respiratory/mechanics-breathing]]）；给外科的回答是规程加观察、不是阑尾切除、同时保持低门槛：若酸中毒纠正后腹痛仍在就复查（[[surgery/acute-abdomen]]内科模拟清单）。这里值得一提的管理细节：**年轻患者脑水肿警觉（液体速率与钠轨迹及神经检查及甘露醇或高渗救援准备——[[renal/water-sodium]]、[[nervous-system/motor-systems]]）；诱因分类（新发1型带抗体与C肽检测对漏用胰岛素对泵故障对感染——[[endocrine/diabetes]]、[[endocrine/diabetes-complications]]）；教育不惩罚的伦理（青少年依从不良谈话与家庭会议及技术选项转诊——[[paediatrics/adolescent-health]]、[[clinical-skills/communication]]）；酮酸中毒复发预防规划（病日规则与酮体仪及24小时可得、及面向未来的驾驶与游泳及酒精咨询——[[#def-hypo]]、[[medical-ethics-law/professionalism-regulation]]、[[psychiatry/substance-use]]）；及若酸中毒纠正而腹痛不纠正则事件复审（[[clinical-skills/patient-safety]]、[[clinical-skills/records-handover]]）。**
-:::
-:::
+这是**甲状腺危象**：伴发热、快速心律失常、中枢神经系统和胃肠/肝功能障碍的严重甲状腺毒症，由感染和停用抗甲状腺药物诱发。她的Burch–Wartofsky评分将远高于45。
 
-::: example 低钠的跌倒门诊患者 {#ex-hypo-na}
-82岁服苄氟噻嗪与舍曲林、两次跌倒及一周“不是她本人”后被送来；钠118、钾3.3、毛细血管再充盈正常、外观等容量、意识模糊但能活动、无癫痫；肌酐因脱水标志升高。
-::: solution
-**有两个药物罪魁与低钾转折的症状性严重低钠血症（[[#def-sodium-calcium]]、[[renal/water-sodium]]）：噻嗪加选择性5羟色胺再摄取抑制剂双击（噻嗪损害稀释及抗利尿激素分泌不当综合征、低钾使浓缩问题更糟——[[pharmacology/adverse-reactions]]、[[psychiatry/mood-disorders]]）；停两药并计划替代（[[geriatrics-palliative/polypharmacy]]、[[cardiovascular/hypertension]]）；急性克制悖论（她有症状但未癫痫——小剂量高渗盐水伴紧急钠复测的决定对谨慎纠正带监测、速率上限、及渗透性脱髓鞘高风险标签（低钾、低血清渗透压、噻嗪、女性、高龄）——[[nervous-system/motor-systems]]、[[renal/potassium-calcium-phosphate]]）；噻嗪低钾的镁核查（[[renal/tubular-function]]）；过度纠正监测与救援规程（去氨加压素或葡萄糖重新降低方案及每2-4小时钠化学——[[endocrine/hypothalamus-pituitary]]）；诱因闭合（甲减与肾上腺血检及用药对账及跌倒理疗（[[endocrine/thyroid]]、[[endocrine/adrenal]]、[[geriatrics-palliative/falls]]））；及把噻嗪再挑战谨慎永久标记的去处方记录（[[clinical-skills/records-handover]]）。**
-:::
-:::
+**在高依赖病房处理：**
+1. **β受体阻滞剂**（例如普萘洛尔）控制心率和肾上腺素能症状，如有心力衰竭需谨慎。
+2. **硫脲类药物**：丙硫氧嘧啶（还能减少T4向T3的转化）或卡比马唑。她的黄疸需要监测，肝功能会影响药物选择，因为丙硫氧嘧啶可引起肝损伤。
+3. **在硫脲类药物至少一小时后给予碘剂**，使其阻断激素释放而不为新的合成提供原料。
+4. **糖皮质激素**，减少外周转化并覆盖相对肾上腺皮质功能不全。
+5. **支持治疗**：降温、补液、抗生素治疗肺炎、对心房颤动作抗凝决策；避免阿司匹林。
 
-::: example 安静低体温的患者 {#ex-myoedema}
-76岁养老院住民长期“甲状腺功能低下”伴痴呆、被发现嗜睡而寒冷；核心体温32.1、心率48、血压90/55、钠124、葡萄糖3.4、血气二氧化碳潴留、肌酐升高；家属说“她几个月前停了药”。
-::: solution
-**黏液水肿昏迷——失代偿甲减带低体温低通气低钠低血糖心动过缓四联及停药病史（[[#def-thyroid-emergencies]]、[[endocrine/thyroid]]）：顺序纪律（抽血培养与TSH及游离T4及皮质醇与促肾上腺皮质激素、然后任何甲状腺激素之前静脉氢化可的松因为肾上腺危象风险——[[endocrine/adrenal]]；按高级复审定静脉左甲状腺素或碘塞罗宁策略、带老年心脏缺血谨慎——[[cardiovascular/coronary-artery-disease]]）；支持组套（受控速率被动复温与监测下钠纠正带渗透性脱髓鞘护栏及谨慎补液与葡萄糖、及通气决定带二氧化碳麻醉克制——[[renal/water-sodium]]、[[emergency-critical-care/airway-ventilation]]、[[nervous-system/motor-systems]]）；诱因清扫（感染筛查带发热反应钝化警诫及用药与依从审计及寒冷暴露——[[infectious-diseases/fever-sepsis]]、[[geriatrics-palliative/polypharmacy]]、[[pharmacology/adverse-reactions]]）；重症去向与对家属的死亡率诚实（[[emergency-critical-care/critical-care]]、[[geriatrics-palliative/palliative-care]]）；及恢复期的系统修复发现长期停药——依从与能力与配药复审、易吞服与泡罩及照护者教育计划、及“这是可预防的”记录（[[clinical-skills/communication]]、[[medical-ethics-law/consent-capacity]]、[[clinical-skills/records-handover]]、[[public-health/health-systems-economics]]配药服务）。**
-:::
-:::
-
-::: example 神经外科的尿量 {#ex-triphase}
-颅咽管瘤切除后第3天：尿500毫升/小时持续6小时、钠154、患者镇静到无法按要求饮水；然后第6天同一患者钠降到124而尿量低。
-::: solution
-**教科书顺序的经典损伤后三相抗利尿激素反应（[[#def-sodium-calcium]]、[[endocrine/hypothalamus-pituitary]]）：第6天第二相抗利尿激素样抗利尿相解释了后半段、而延续第一相的去氨加压素正是在这里造成危险低钠。运行规则：**每小时尿与电解质及钠监测带两个方向的目标、及针对利尿的匹配补充与取水途径或静脉葡萄糖匹配计划（[[renal/water-sodium]]）；去氨加压素剂量与突破日规程及在称永久之前的停药规则（[[endocrine/hypothalamus-pituitary]]）；两相共同的钠纠正速率护栏（过快上升与过快下降危害[[nervous-system/motor-systems]]）；口渴机制破坏的识别（前下丘脑损伤与口渴缺失是隐藏的永久风险、及终身水计划与医疗警示（护理液体平衡记录的纪律——[[clinical-skills/patient-safety]]））；及第2周再评估与关于三种可能轨迹的出院教育（[[clinical-skills/communication]]、[[clinical-skills/records-handover]]）。**
+康复后通常建议确定性治疗（放射性碘或手术）（[[endocrine/thyroid]]）。
 :::
 :::
 
 ::: quiz
-酮症酸中毒伴低血容量休克患者的第一种静脉液体是：
-- [x] 等张晶体容量扩充
-- [ ] 0.18%葡萄糖
-- [ ] 碳酸氢钠
-- [ ] 5%白蛋白
+一位72岁女性在家中被发现嗜睡、全身发冷。体温33.1 °C，心率44次/分，血钠121 mmol/L，血糖3.1 mmol/L，pCO₂升高。TSH极高。首先应给予哪种激素治疗？
+- [ ] 单独静脉给予左甲状腺素
+- [x] 氢化可的松，在甲状腺激素之前或同时给予
+- [ ] 口服碘塞罗宁
+- [ ] 用加温毯进行主动体外复温
 ::: solution
-**容量先行（[[#def-dka]]、[[emergency-critical-care/shock-fluids]]）；不给液体的胰岛素会通过把水驱入细胞内而恶化休克、葡萄糖只在血糖降至接近正常时加入而胰岛素继续、碳酸氢盐只用于极端酸中毒的特异标准、而晶体在渗透性脱水的间隙组合中胜过大分子（[[renal/water-sodium]]）；平衡液对0.9%氯化钠之争及其氯负荷与肾脏结局证据在[[renal/acute-kidney-injury]]与[[epidemiology-ebm/randomised-trials]]。**
+这很可能是**黏液水肿昏迷**。此时无法排除合并肾上腺皮质功能减退（自身免疫性或垂体性），而甲状腺激素会增加皮质醇清除，因此氢化可的松应在静脉甲状腺激素之前或同时给予。复温应为被动复温，必要时支持通气，并纠正血糖和血钠。
 :::
 :::
 
 ::: history
-**急症内分泌谱系：胰岛素前时代的“糖尿病昏迷”病房与Banting及Best的首例患者片段（[[endocrine/diabetes]]历史）；酮酸中毒规程谱系——“大剂量皮下胰岛素”时代在1970年代让位于小剂量静脉输注规程、在Austin与Alberti团队的药代动力学工作之后、及重塑儿科液体速率的脑水肿流行病学（[[paediatrics/acute-childhood-illness]]、[[epidemiology-ebm/randomised-trials]]）；滑动量表数十年未经审视的统治及其证据降级（[[pharmacology/dosing-principles]]）；Addison病与皮质醇替代使危象从1950年起成为可治事件（[[endocrine/adrenal]]历史）；甲状腺危象标准时代（Burch-Wartofsky评分使诊断显式化、及组套照护带来的结局改善——[[endocrine/thyroid]]）；症状性低钠的高渗盐水试验与纠正上限的二十年实验（渗透性脱髓鞘病例系列把今天的速率上限写进每一份指南——[[nervous-system/motor-systems]]、[[renal/water-sodium]]）；及钠葡萄糖协同转运蛋白2正常血糖酮酸中毒信号及其对上市后监测的标签与教育教训（[[endocrine/diabetes]]、[[pharmacology/adverse-reactions]]、[[public-health/health-systems-economics]]）。**
+1937年，病理学家**哈罗德·希恩（Harold Sheehan）**描述了严重产后出血后的垂体前叶坏死，即现在所称的希恩综合征。1957年，**威廉·施瓦茨（William Schwartz）**和**弗雷德里克·巴特（Frederic Bartter）**描述了两位肺癌患者出现低钠血症伴尿液不适当浓缩，这是后来称为SIADH的首次描述。1959年，**雷蒙德·亚当斯（Raymond Adams）**、**莫里斯·维克多（Maurice Victor）**和**埃利奥特·曼考尔（Elliott Mancall）**描述了酒精依赖和营养不良者的脑桥中央髓鞘溶解。20世纪80年代，**理查德·斯特恩斯（Richard Sterns）**等人确立了它与慢性低钠血症快速纠正之间的联系，这就是为什么纠正限度如今成为每一部低钠血症指南的组成部分。
 :::
 
-## 系统视角：预防这次入院
+## 后续内容
 
-::: definition 预防堆栈 {#def-prevention}
-**内分泌急症在急性呈现中很少见，因为它们大多可预防、而每一章的失败都对应一个可修的系统缺口。用药安全堆栈（胰岛素与钠葡萄糖协同转运蛋白2及激素及锂及抗甲状腺药及磺脲高危药物清单、带按患者书写并按病房可读的病日与围手术期及疾病规程——[[pharmacology/patient-variation]]、[[surgery/perioperative-care]]、[[clinical-skills/patient-safety]]）；教育堆栈（结构化教育权利——酮酸中毒与低血糖及激素课程带诊断时而不是第三次危象时开酮体仪与胰高血糖素、及回授记录——[[endocrine/diabetes-complications]]、[[clinical-skills/communication]]、[[public-health/prevention-promotion]]）；可及堆栈（24小时专科建议线与开放预约门诊、及偏远岛屿与学校及养老院的电子会诊、及成本与读写及语言障碍审计——[[public-health/health-systems-economics]]、[[public-health/determinants-inequalities]]）；记录堆栈（伴器官衰竭旗标的问题清单及Addison与糖尿病登记册及智能重复处方与配药安全网、及急救与院外对激素依赖的可见性——[[clinical-skills/records-handover]]、[[emergency-critical-care/acute-assessment]]）；病房系统堆栈（低血糖管理政策带低血糖规程审计、及静脉血栓与酮酸中毒及钠医嘱组、及普通病房人员的内分泌急症照护胜任力——[[geriatrics-palliative/polypharmacy]]与病房护理胜任力（[[clinical-skills/clinical-reasoning]]））；及人群堆栈（以酮酸中毒呈现的新发1型糖尿病作为国家报告的质量指标、及公众意识运动评估、及就诊酮酸中毒率的不平等——[[public-health/screening]]、[[epidemiology-ebm/observational-studies]]、[[public-health/determinants-inequalities]]）。**
-:::
-
-## 通向何处
-
-基础疾病管理在[[endocrine/diabetes]]、[[endocrine/adrenal]]、[[endocrine/thyroid]]、[[endocrine/bone-calcium]]；电解质生理在[[renal/water-sodium]]、[[renal/potassium-calcium-phosphate]]与[[renal/acid-base-disorders]]；复苏脚手架在[[emergency-critical-care/shock-fluids]]与[[emergency-critical-care/acute-assessment]]；围手术期预防在[[surgery/perioperative-care]]。
-
-::: exercise 解开混合图像 {level=2}
-一名酮酸中毒患者68岁、肌钙蛋白升高3倍、ST压低、白细胞24伴咳痰。这是心梗、肺炎、还是酮酸中毒同时造成两者？
-::: solution
-**三者都可能的推理（酮酸中毒应激中常见的需求缺血2型心梗、感染常常就是诱因、及白细胞升高的应激逻辑（[[#def-dka]]、[[cardiovascular/coronary-artery-disease]]、[[infectious-diseases/fever-sepsis]]））；并行路径——系列心电图与肌钙蛋白轨迹及稳定时超声、及平衡出血风险的抗栓决定、及导管室之问由高级医师一起而不是轮流决定（[[emergency-critical-care/acute-assessment]]、[[blood/haemostasis-bleeding]]）；治疗酮酸中毒与肺炎并给氧与镇痛与监测（[[renal/acid-base-disorders]]、[[microbiology/antimicrobials]]）；及为二级预防记录诱因（[[clinical-skills/records-handover]]）。**
-:::
-:::
-
-::: exercise 给学校打电话 {level=2}
-一名9岁Addison病患者在学校郊游中没有备用氢化可的松；他开始发热与呕吐。写下你希望本来就存在的计划。
-::: solution
-**预先存在的包裹（[[endocrine/adrenal]]、[[endocrine/endocrine-emergencies]]）：员工受训的肌注氢化可的松带核查有效期的套件及书面剂量阶梯及终止安排及医疗警示饰品及家长与门诊回电；校内的病日传单与郊游药物双重核查（现场一份备用、车里一份、门诊登记一份[[clinical-skills/patient-safety]]）；早期医疗复审触发线（呕吐等于注射等于住院、不是观察等待——儿科Addison病例中延迟到死的教训[[paediatrics/acute-childhood-illness]]）；给全科与院外及儿科急诊的共享照护信（[[clinical-skills/records-handover]]）；及适龄而不制造恐惧的家庭与儿童赋能培训（[[clinical-skills/communication]]、[[paediatrics/adolescent-health]]）。**
-:::
-:::
-
-## 急症中的处方
-
-急症内分泌处方有自身的伤害清单、它应当放在上面的治疗组套旁边。黏液水肿昏迷中的左甲状腺素经静脉给予、带心脏谨慎、绝不是人群性的“每个低TSH都治”反射——后者本身就造成老年患者的心房颤动、骨丢失与心绞痛——同一分子、同一份指南、却因剂量与年龄与背景不同而风险列相反——一堂指征对反射的处方课（[[endocrine/thyroid]]、[[cardiovascular/arrhythmias]]、[[endocrine/bone-calcium]]、[[pharmacology/adverse-reactions]]）。氢化可的松在抽血之后给予是安全的；诊断顾虑从来不是不给的理由、尽管它会干扰后来的动态试验、所以抽样本并记录并转诊的逻辑要紧（[[endocrine/adrenal]]、[[clinical-skills/laboratory-tests]]）。碘在硫脲之前会加速甲状腺毒症——那个有命名机制的碘在硫脲前顺序错误（[[endocrine/thyroid]]、[[pharmacology/drug-receptor]]）。嗜铬细胞瘤中β阻滞先于α阻滞会留下无对抗的α刺激并能诱发肺水肿与卒中——规则与其灾难配对（[[endocrine/adrenal]]、[[respiratory/gas-exchange]]、[[nervous-system/stroke]]）。磺脲低血糖只用葡萄糖处理会喂养β细胞并反弹到更深的低血糖——观察期药代动力学一课（[[#def-hypo]]、[[pharmacology/metabolism-excretion]]）。而用药史本身就是急症记录：激素、抗甲状腺药、钠葡萄糖协同转运蛋白2抑制剂、锂、造成破坏性垂体炎与肾上腺炎的免疫检查点抑制剂、及非法睾酮与合成代谢供应链——每一个都是可逆、可命名的病因——用药史本身就是一种复苏药、而把它问好好是一门带死亡率的临床技能（[[endocrine/hypothalamus-pituitary]]、[[pathology/cancer-biology]]、[[psychiatry/substance-use]]、[[clinical-skills/history-taking]]）。
+DKA和低血糖详见[[endocrine/diabetes-complications]]；肾上腺皮质功能减退和嗜铬细胞瘤见[[endocrine/adrenal]]；甲状腺疾病见[[endocrine/thyroid]]；钙紊乱见[[endocrine/bone-calcium]]。休克和液体治疗详见[[emergency-critical-care/shock-fluids]]，重症监护的总体框架见[[emergency-critical-care/critical-care]]。
 
 ::: summary
-- 激素急症靠模式识别、而不是等激素测定：休克伴低钠就是危象直到被排除、深大呼吸伴呕吐就是酮酸中毒直到被排除、停卡比马唑后发热伴房颤就是甲状腺危象直到被排除。
-- 顺序规则救命：液体先于胰岛素、钾同时于胰岛素、氢化可的松先于甲状腺素、α先于β、以及皮质醇可在任何别处抽血但照样治疗。
-- 补钠要慢、补钙要快；大脑对错误方向的任一极端都不原谅。
-- 每个急症都有一个诱因、而出院计划必须命名它、否则下一次入院已经排好队。
-- 四件工具——病日规则、酮体仪、激素卡与注射培训、胰高血糖素与低血糖救援——是最便宜的重症监护。
+- 对每位虚脱或意识模糊者测血糖，对每位身体不适的糖尿病患者测酮体。
+- 治疗安全时凭怀疑即治疗：低血糖给葡萄糖，肾上腺危象给氢化可的松。
+- DKA（JBDS）：酮体≥3.0 mmol/L或尿2+，血糖>11.0 mmol/L或已知糖尿病，碳酸氢盐<15.0和/或pH<7.3。
+- HHS：血糖≥30 mmol/L，渗透压≥320 mOsm/kg，无明显酮症或酸中毒。补液优先；渗透压每小时下降3–8 mOsm/kg；血糖每小时下降≤5 mmol/L；仅在单纯补液失效时给予每小时每千克0.05单位胰岛素；预防血栓。
+- 肾上腺危象：立即静脉或肌内注射氢化可的松100 mg，然后24小时内200 mg，同时补液。
+- 甲状腺危象：β受体阻滞剂、硫脲类、一小时后碘剂、糖皮质激素、支持治疗。黏液水肿昏迷：先用氢化可的松，静脉甲状腺激素，被动复温。
+- 严重症状性低钠血症：推注150 mL 3%盐水，目标升高5 mmol/L；24小时内纠正限制在10 mmol/L（高风险者更低）。
+- 严重高钙血症：先补液，再静脉双膦酸盐；症状性低钙血症：心电监护下静脉葡萄糖酸钙，并纠正镁。
+- 垂体卒中：氢化可的松、影像检查、神经外科评估。嗜铬细胞瘤危象：α阻滞，绝不先用β阻滞。
 :::
 
-## 练习
+## 习题
 
-::: exercise 给复苏排序 {level=1}
-酮症酸中毒伴钾2.9：胰岛素医嘱为何改变、顺序是什么？
+::: exercise 计算渗透压 {level=1 check="2*152+38+22"}
+用$2[\text{Na}^+] + [\text{葡萄糖}] + [\text{尿素}]$计算血钠152 mmol/L、血糖38 mmol/L、尿素22 mmol/L时的渗透压（mOsm/kg）。
 ::: solution
-**胰岛素把钾驱入细胞内、而在钾已危急时开始它有导致心律失常与呼吸肌衰竭的风险（[[#def-dka]]、[[renal/potassium-calcium-phosphate]]、[[cardiovascular/arrhythmias]]）；暂停或延迟胰岛素直到钾补到阈值以上伴持续监测、然后以全速率开始并同时输注钾；液体与观察医嘱并行推进（[[emergency-critical-care/acute-assessment]]）。**
+$2 \times 152 + 38 + 22 = 304 + 60 = 364$ mOsm/kg。
 :::
 :::
 
-::: exercise 诊断这份休克 {level=1}
-一名低血压、低钠、高钾、低血糖的产后女性、“自那次困难分娩以来一直疲惫”：说出诊断与两条即刻医嘱。
+::: exercise 说出急症 {level=1}
+写出最可能的急症：(a) 已知垂体肿物的男性突发头痛、双颞侧视野缺损和复视；(b) 未经治疗甲减的老年女性低体温、心动过缓和嗜睡；(c) 患白癜风和1型糖尿病者出现低血压、高钾血症和低钠血症。
 ::: solution
-**Sheehan综合征肾上腺危象（[[endocrine/adrenal]]、[[endocrine/hypothalamus-pituitary]]、[[obstetrics-gynaecology/pregnancy-complications]]）：先静脉氢化可的松与补液（[[emergency-critical-care/shock-fluids]]）；然后葡萄糖、电解质与皮质醇及促肾上腺皮质激素取样、及在皮质醇之后再给甲状腺素（[[endocrine/thyroid]]、[[renal/water-sodium]]）。**
+(a) 垂体卒中。(b) 黏液水肿昏迷。(c) 原发性肾上腺皮质功能减退（艾迪生病）引起的肾上腺危象；自身免疫病常聚集出现。
 :::
 :::
 
-::: exercise 无害地处理 {level=2}
-老年患者磺脲诱导的低血糖在救护车上对静脉葡萄糖有反应；第3小时复发、第6小时再发。修好计划。
+::: exercise 用药顺序 {level=1}
+甲状腺危象中，为什么碘剂要在硫脲类药物至少一小时后给予？
 ::: solution
-**认识长半衰期持续分泌机制（[[#def-hypo]]、[[endocrine/diabetes]]）；收住与延长观察带频繁血糖检查与静脉葡萄糖延续及底物进食规则；奥曲肽抑制胰岛素分泌选项及其监测；避免反复冲击只是在追赶（[[emergency-critical-care/acute-assessment]]）；用药对账与肾功能复审及去处方谈话（[[geriatrics-palliative/polypharmacy]]、[[renal/chronic-kidney-disease]]）；及驾驶与养老院通报和换成非致低血糖药物（[[medical-ethics-law/professionalism-regulation]]、[[endocrine/diabetes-complications]]）。**
+先给碘剂会为新的甲状腺激素合成提供原料，可能加重甲状腺毒症。硫脲类药物先阻断甲状腺过氧化物酶，这样随后给予的碘剂只起抑制储存激素释放的作用。
 :::
 :::
 
-::: exercise 执行危象组套 {level=2}
-29岁产后、停了卡比马唑、发热39.6、心率165房颤、激越、腹泻、皮肤黄染：给出头两小时组套与关于肝指标的诊断警诫。
+::: exercise 渗透压目标 {level=2 check="340-6*8"}
+一位HHS患者渗透压为340 mOsm/kg。如果渗透压以每小时8 mOsm/kg的最大推荐速率下降，6小时后是多少？
 ::: solution
-**凭疑似就治疗危象（[[#def-thyroid-emergencies]]、[[endocrine/thyroid]]）：监测与重症及高度依赖床位、及治疗诱因感染培养与覆盖（[[infectious-diseases/fever-sepsis]]、[[emergency-critical-care/critical-care]]）；用艾司洛尔或普萘洛尔β阻滞带心衰警诫（[[cardiovascular/heart-failure]]、[[cardiovascular/arrhythmias]]）；卡比马唑或丙硫氧嘧啶然后数小时后碘的顺序（[[endocrine/thyroid]]药理）；氢化可的松（[[endocrine/adrenal]]）；降温与补液及葡萄糖及电解质（[[renal/water-sodium]]、[[renal/potassium-calcium-phosphate]]）；肝黄疸作为危象肝功能障碍对药物肝毒性对肝炎的鉴别（[[gastrointestinal/liver-function]]判读行、[[microbiology/viruses]]）；及稳定后的重启与依从及避孕及哺乳及确定性计划（[[obstetrics-gynaecology/postnatal-period]]、[[obstetrics-gynaecology/contraception-fertility]]）。**
+$340 - 6 \times 8 = 340 - 48 = 292$ mOsm/kg。实际中下降较慢很常见，也可接受；每小时下降超过8 mOsm/kg有脑水肿和渗透性脱髓鞘的风险。
 :::
 :::
 
-::: exercise 预防下一次 {level=2}
-一名自身免疫多腺体综合征患者一年内有两次酮酸中毒入院与一次肾上腺危象。理想的预防包裹包含什么？
+::: exercise 估算血钠升高 {level=2 check="round(10*0.15*(513-118)/(0.6*80+1))/10"}
+一位体重80 kg的35岁急性低钠血症男性（血钠118 mmol/L）接受150 mL 3%盐水（钠513 mmol/L）推注。用Adrogué–Madias公式、体液总量取$0.6 \times$体重，估算血钠升高，保留一位小数。
 ::: solution
-**个人急症计划（胰岛素的病日规则带酮体仪与联系电话及何时来、及激素的病日规则与注射套件与卡片手环——[[endocrine/diabetes]]、[[endocrine/adrenal]]、[[endocrine/diabetes-complications]]）；技术与教育复审（连续葡萄糖监测与泵或注射策略及结构化课程、及依从障碍与成本与读写及贫困审计——[[#def-hypo]]教育邻近、[[public-health/determinants-inequalities]]）；24小时专科可得与开放转诊约定（[[public-health/health-systems-economics]]）；每次就诊后的诱因台账与事件学习（[[clinical-skills/patient-safety]]、[[clinical-skills/records-handover]]）；心理与家庭支持及学校或工作场所计划（[[psychiatry/anxiety-disorders]]、[[paediatrics/adolescent-health]]如适用）；及多腺体监测时间表（按规程的甲状腺与维生素B12及性腺及维生素D及乳糜泻筛查——[[endocrine/thyroid]]、[[blood/anaemia]]、[[gastrointestinal/bowel-disease]]、[[immunology/autoimmunity]]）。**
+体液总量$= 0.6 \times 80 = 48$ L。每升变化$= (513 - 118)/(48 + 1) = 395/49 = 8.06$ mmol/L。0.15 L：$8.06 \times 0.15 = 1.21$，保留一位小数为**1.2 mmol/L**。
 :::
 :::
 
-::: exercise 书写病房急症清单 {level=3}
-构建内分泌病房急症预设：五个场景、第一小时动作、需储备的药物与液体、及永不事件。
+::: exercise HHS还是DKA {level=2}
+一位58岁2型糖尿病女性血糖36 mmol/L，酮体3.8 mmol/L，pH 7.24，碳酸氢盐13 mmol/L，钠145，尿素14。请分类并说明对治疗的意义。
 ::: solution
-**五个（酮酸中毒与高渗状态[[#def-dka]]；肾上腺危象[[#def-addisonian]]；甲状腺危象与黏液水肿昏迷[[#def-thyroid-emergencies]]；重度高与低钠血症[[#def-sodium-calcium]]；低钙与钙危象[[endocrine/bone-calcium]]治疗页）：带负责人的第一小时动作（液体与胰岛素及钾及酮体网格；氢化可的松与培养及葡萄糖；α阻滞呼叫清单；高渗盐水冲击与速率上限核查表）；储备清单（静脉钾浓度与卡片及双人核查规则[[clinical-skills/patient-safety]]、3%高渗盐水放在神经与内分泌车上、静脉葡萄糖酸钙及其与冠脉骤停的关联[[cardiovascular/arrhythmias]]、静脉氢化可的松100带恢复设施、葡萄糖浓度与鼻内及肌注胰高血糖素、静脉抗甲状腺药与碘及激素及β阻滞、及甘露醇或高渗脑水肿套件[[nervous-system/motor-systems]]）；流程单与报警标准（每小时钾与每小时葡萄糖及每2小时钠观察组、及带高级呼叫触发器的升级标准[[emergency-critical-care/acute-assessment]]）；永不事件清单（在低钾酮酸中毒中先开胰岛素；在疑似Sheehan中先给甲状腺素；在高钠酮酸中毒邻近的低钠混淆中给低张液体；在有癫痫的低钠中过快重新降低钠；及酮酸中毒纠正后缺失的过渡重叠规程导致反跳酮症[[#def-dka]]）；及审计循环（发作到胰岛素时间与到激素时间及纠正速率合规与再入院原因编码——[[public-health/health-systems-economics]]、[[clinical-skills/records-handover]]）。**
+渗透压$= 2 \times 145 + 36 + 14 = 340$ mOsm/kg。她符合DKA标准（酮体≥3.0、已知糖尿病、碳酸氢盐<15、pH<7.3），也符合HHS的血糖和渗透压标准：**DKA–HHS混合型**。由于有明显酮血症，需要从一开始就使用胰岛素，而不是等待单纯补液失效。但因为她处于高渗状态，补液以及渗透压和血糖的下降必须像HHS那样谨慎控制。上级医师和糖尿病团队的参与必不可少。
 :::
 :::
 
-## 更进一步
+::: exercise 一个需要鉴别诊断的病例 {level=3}
+一位26岁女性在大出血并发的急诊剖宫产后第三天，补液后仍嗜睡、低血压。血钠126 mmol/L，血糖2.9 mmol/L，血钾4.2 mmol/L。她一直无法哺乳。给出鉴别诊断、最可能的内分泌病因以及即刻处理。
+::: hint
+想一想哪个腺体在妊娠期增大且依赖于脆弱的血供。
+:::
+::: solution
+**鉴别诊断**：持续出血；脓毒症（子宫内膜炎、切口感染）；肺栓塞；围产期心肌病；药物作用；以及**希恩综合征引起的急性垂体功能减退**（产后垂体梗死）。
 
-感染病学思维一段话：按源头、途径、宿主与时间思考。在命名综合征之前先确定源头；问暴露史允许什么、而本地耐药图使什么可能；一切都要为你面前站着的宿主调整；并把时钟当作一种药——脓毒症、心内膜炎与脑膜炎的结局是小时的函数。然后对照该专科的两种失败模式审计自己：在非典型呈现演变时锚定在第一个似是而非的病原体上、以及从不降级——一次应该在第三天发生却没有发生的窄谱切换。两种失败都能靠一个习惯治好：在每一次复审时重新问一句，昨天这个故事说了什么而今天不再说了。
+**最可能的内分泌病因**：希恩综合征引起的**继发性肾上腺皮质功能减退**。低血糖和低钠血症而血钾正常，符合皮质醇缺乏而醛固酮保留；不能哺乳符合催乳素缺乏。
+
+**即刻处理**：抽血查皮质醇（之后查其他垂体激素），然后**立即静脉注射氢化可的松100 mg**（[[#thm-suspicion]]）；静脉葡萄糖；补液；同时寻找并治疗其他病因。如需要甲状腺激素，应在糖皮质激素之后。垂体MRI和内分泌随访，评估所有轴。她将需要患病期间用药规则和类固醇急救卡。
+:::
+:::
+
+::: exercise 设计预防组合措施 {level=3}
+一项医院审核发现，过去一年中有三例肾上腺危象和两例DKA发生在入院之后。请提出一套住院预防组合措施，并说明每一项的理由。
+::: solution
+**预防肾上腺危象**
+1. 入院时**识别**正在接受糖皮质激素替代或长期服用类固醇的人（电子警示、用药核对、类固醇急救卡）。理由：这些人无法产生应激反应。
+2. **绝不漏用**：将氢化可的松标记为关键药物；禁食或呕吐时改为胃肠外给予氢化可的松。
+3. 按方案在手术和急性疾病时给予**应激剂量**。
+
+**预防DKA**
+1. 1型糖尿病**绝不漏用胰岛素**：即使禁食，基础胰岛素也要继续；适当时使用可变速率胰岛素输注。理由：胰岛素缺乏数小时内即可导致酮症。
+2. 手术前和急性疾病期间**暂停SGLT2抑制剂**，并对服用这类药物的不适者检测酮体。
+3. 1型糖尿病血糖高于12 mmol/L时，或服用SGLT2抑制剂者身体不适时，**监测酮体**。
+4. 允许合适的患者自行管理胰岛素，并及早请住院糖尿病团队参与。
+
+**两者共同**：员工培训、关键药物清单、快速升级通道，以及对漏用剂量和结局的审核。
+:::
+:::

@@ -1,151 +1,287 @@
-糖尿病是世界上大多数地区最常见的慢性病、也是二十一世纪健康挑战的原型：**一生的自我管理、几年就变一次的治疗武器库、及同时是血管、神经与代谢的并发症。**本章涵盖分类、病理生理、治疗架构与低血糖；并发症与技术住在[[endocrine/diabetes-complications]]。
+糖尿病是由胰岛素过少、胰岛素作用不足或两者兼有所致的慢性血糖升高状态。全球有超过5亿成人患糖尿病，英国有400多万人，其中大多数为2型糖尿病。它的重要性与其说在于血糖本身，不如说在于多年高血糖对血管和神经的损害，以及治疗本身的危险，首先是低血糖。现代诊疗变化迅速：保护心脏和肾脏的药物、持续葡萄糖监测、能自行调节的胰岛素泵，以及2型糖尿病可通过减重获得缓解的发现。
 
-本章涵盖1型与2型糖尿病、其他特异类型、诊断与监测、药物治疗、胰岛素与低血糖。
+本课介绍胰岛素的分泌和作用、糖尿病的分型和病理生理、诊断与监测，以及1型和2型糖尿病的治疗。急性和慢性并发症见[[endocrine/diabetes-complications]]。英国的实践遵循NICE指南NG17（成人1型糖尿病）和NG28（成人2型糖尿病）；美国糖尿病协会（ADA）每年发布《糖尿病诊疗标准》。
 
-## 它是什么
+## 胰岛素：分泌与作用 {#sec-insulin}
 
-::: definition 分类与病理生理 {#def-classification}
-**1型（自身免疫性β细胞破坏——谷氨酸脱羧酶与IA2及ZnT8及胰岛素自身抗体、人类白细胞抗原II类风险架构、CD8 T细胞胰岛炎、及包含蜜月期的C肽下降动力学——[[immunology/autoimmunity]]、[[immunology/adaptive-responses]]、[[genetics/common-disease-genetics]]；儿童期以酮症酸中毒的峰型表现、及被误贴标签为2型多年的成人迟发自身免疫性糖尿病——[[paediatrics/acute-childhood-illness]]、[[endocrine/endocrine-emergencies]]；胰岛移植与抗CD3延迟预防研究前沿——1型预防试验文献）。2型（双重缺陷——肝、肌与脂肪的胰岛素抵抗伴代偿性高胰岛素血症、及在诊断时已然可观的β细胞衰竭、糖毒性与脂毒性的“凶险环”——[[cell-biochemistry/lipid-amino-acid-metabolism]]、[[cell-biochemistry/metabolic-integration]]；八组织生理——脂肪流、肝糖输出、肌摄取、肠肠促胰素缺陷、胰岛淀粉样变、α细胞胰高血糖素、脑食欲信号、及肾重吸收上调——下面每一类药物类别的原理；遗传学——数百个效应微小的常见变异、强家族模式、两种方向上都误导临床医师走向“MODY自满”——[[genetics/common-disease-genetics]]；驱动因素——脂肪分布与异位脂肪及不活动及睡眠与食品环境与贫困——[[public-health/determinants-inequalities]]、[[public-health/prevention-promotion]]）。其他特定类型（单基因——MODY家族：葡萄糖激酶永久性轻度、肝核因子1A与4A磺脲敏感、及新生儿糖尿病遗传学——[[genetics/mendelian-inheritance]]；胰腺性——胰腺炎与胰切除及血色病及囊性纤维化、及被低估的3c型——[[gastrointestinal/pancreas-biliary]]、[[gastrointestinal/liver-disease]]、[[genetics/mendelian-inheritance]]；内分泌性——库欣、肢端肥大症、嗜铬细胞瘤、甲状腺毒症作为继发原因——[[endocrine/adrenal]]、[[endocrine/hypothalamus-pituitary]]、[[endocrine/thyroid]]；药物与化学性——糖皮质激素与钙调磷酸酶抑制剂及伴其精神分裂症代谢负担的抗精神病药、及造成爆炸性胰岛素缺乏糖尿病的检查点抑制剂——[[pharmacology/adverse-reactions]]、[[psychiatry/psychotic-disorders]]、[[immunology/vaccines-immunotherapy]]；妊娠——妊娠糖尿病及其产后轨迹——[[obstetrics-gynaecology/pregnancy-complications]]、[[endocrine/diabetes-complications]]；及全球实践遇到的营养不良相关与非典型表型——[[public-health/global-health]]）。**
+胰岛素由胰岛（朗格汉斯岛）的**β细胞**合成。它先合成为**胰岛素原**，后者裂解为等量的胰岛素和**C肽**。C肽不像胰岛素那样被肝脏大量清除，也不存在于注射的胰岛素中，因此是衡量个体自身胰岛素分泌的有用指标。
+
+葡萄糖通过一连串事件刺激胰岛素释放：
+
+1. 葡萄糖经葡萄糖转运体进入β细胞，被**葡萄糖激酶**磷酸化，后者充当细胞的葡萄糖感受器。
+2. 葡萄糖代谢使ATP/ADP比值升高。
+3. ATP关闭**ATP敏感性钾（K-ATP）通道**，使细胞膜去极化。
+4. 电压门控钙通道开放，钙内流，胰岛素颗粒被释放。
+
+磺脲类药物直接关闭K-ATP通道而不论血糖高低，这就是它们可引起低血糖的原因。称为**肠促胰素**的肠道激素，主要是**胰高血糖素样肽1（GLP-1）**和**葡萄糖依赖性促胰岛素多肽（GIP）**，在进餐后放大胰岛素释放。这解释了为什么口服葡萄糖比静脉给予同量葡萄糖产生更多的胰岛素。
+
+::: definition 胰岛素的作用 {#def-insulin-action}
+胰岛素是机体主要的**合成代谢**和储能激素：
+
+- **肝脏**：抑制葡萄糖输出（糖异生和糖原分解），促进糖原储存，抑制酮体生成。
+- **骨骼肌**：通过将**GLUT4**转运体转移到细胞表面增加葡萄糖摄取；促进糖原和蛋白质合成。
+- **脂肪组织**：增加葡萄糖摄取和脂肪储存；强烈抑制**脂肪分解**。
+- **所有细胞**：使钾进入细胞。
+
+其主要对手，即**升糖（反调节）激素**，是胰高血糖素、肾上腺素、皮质醇和生长激素。
 :::
 
-::: definition 诊断与监测 {#def-diagnosis}
-**诊断数字（空腹血浆葡萄糖≥7.0 mmol/L、口服葡萄糖耐量试验2小时≥11.1、糖化血红蛋白≥48 mmol/mol（6.5%）、或随机≥11.1伴明确症状——确证规则与无症状者复查要求；妊娠阈值与产后口服葡萄糖耐量试验义务——[[obstetrics-gynaecology/pregnancy-complications]]）。糖化血红蛋白诚实的局限（血红蛋白病与胎儿血红蛋白及贫血及网织红细胞增多及慢性肾病与促红细胞生成素及妊娠使其失真——糖化白蛋白与连续监测的替代——[[blood/haemoglobin-disorders]]、[[blood/anaemia]]、[[renal/chronic-kidney-disease]]、[[clinical-skills/laboratory-tests]]）。诊断时的表型（渗透症状四联——口渴多尿体重下降视物模糊——及[[endocrine/endocrine-emergencies]]的酮症酸中毒与高渗表现；长期无症状而诊断时并发症已存在的2型——筛查讨论之所以要紧的原因——[[public-health/screening]]）。监测（糖化血红蛋白间隔与目标个体化原则——致残性低血糖风险对并发症回报——[[endocrine/diabetes-complications]]；如今补充糖化血红蛋白的目标范围内时间与连续监测指标——[[endocrine/diabetes-complications]]的目标范围内时间词汇；年度并发症检查（眼、肾、神经、足、心血管风险）其时间表住在[[endocrine/diabetes-complications]]；类型不明时的C肽与抗体检查——成人酮症酸中毒与消瘦2型困境由[[clinical-skills/laboratory-tests]]而不是习惯解决；及每个用泼尼松龙住院患者的“激素诱发高血糖”午间模式识别——[[endocrine/adrenal]]、[[surgery/perioperative-care]]）。**
+不同作用需要不同量的胰岛素。抑制脂肪分解和酮体生成只需少量；抑制肝脏葡萄糖输出需要更多；驱动葡萄糖进入肌肉需要的最多。这一排序解释了为什么仍能分泌部分胰岛素的2型糖尿病患者很少发生酮症酸中毒，而几乎不能分泌胰岛素的1型糖尿病患者在漏用胰岛素后数小时内即可发生。燃料代谢的整合见[[cell-biochemistry/metabolic-integration]]。
+
+## 分型 {#sec-classification}
+
+::: definition 糖尿病的类型 {#def-classification}
+- **1型糖尿病**：β细胞的自身免疫性破坏导致胰岛素绝对缺乏。通常存在胰岛自身抗体（抗GAD、IA-2、胰岛素或ZnT8抗体）。可在任何年龄起病。成人中一种缓慢进展、起初常被误认为2型的类型称为**成人隐匿性自身免疫性糖尿病（LADA）**。
+- **2型糖尿病**：**胰岛素抵抗**合并进行性**β细胞功能衰竭**。与体脂过多（尤其是肝脏和腹部脂肪）、缺乏体力活动、年龄、家族史和种族密切相关。
+- **单基因糖尿病**：由单个基因缺陷引起，包括**青少年发病的成人型糖尿病（MODY）**和新生儿糖尿病。
+- **继发于其他疾病的糖尿病**：胰腺疾病（胰腺炎、胰腺癌、囊性纤维化、血色病）、内分泌疾病（库欣综合征、肢端肥大症）和药物（糖皮质激素、某些抗精神病药、免疫检查点抑制剂）。
+- **妊娠糖尿病**：妊娠期首次发现的高血糖（[[obstetrics-gynaecology/pregnancy-complications]]）。
 :::
 
-## 治疗架构
+### 1型糖尿病
 
-::: definition 生活方式、药片与肠促胰素 {#def-tablets}
-**基础（不只限碳水的食物质量咨询带糖尿病专科护士与营养师架构、及糖尿病缓解低热量规划证据——带体重循环与公平警诫的DIRECT谱系——[[gastrointestinal/clinical-nutrition]]、[[public-health/prevention-promotion]]；带其葡萄糖摄取生物学与低血糖调整规则的体力活动——[[physiology/muscle]]、[[endocrine/diabetes-complications]]；睡眠应激与酒精——[[psychiatry/substance-use]]）。二甲双胍（一线直到禁忌、带AMPK与线粒体肝糖原异生机制——[[cell-biochemistry/energy-metabolism]]、[[pharmacology/drug-receptor]]；维生素B12消耗与消化道剂量滴定的艺术及病日与造影暂停规则及休克中的乳酸酸中毒生理——[[gastrointestinal/digestion-absorption]]、[[renal/acute-kidney-injury]]、[[endocrine/endocrine-emergencies]]的病日教育）。磺脲类与格列奈类（三磷酸腺苷敏感性钾通道关闭的胰岛素促泌剂——[[physiology/membrane-potentials]]、[[physiology/hormones]]；低血糖与体重增加的税、长效格列本脲在老年与肾损害的危害及驾驶规则——[[geriatrics-palliative/polypharmacy]]、[[renal/chronic-kidney-disease]]、[[medical-ethics-law/professionalism-regulation]]）。吡格列酮（过氧化物酶体增殖物激活受体γ脂肪增敏剂、带其胰岛素增敏的优雅与水肿骨折体重及膀胱信号账本——[[cardiovascular/heart-failure]]、[[endocrine/bone-calcium]]、[[renal/urinary-tract]]）。二肽基肽酶4抑制剂（肠促胰素增强剂、带葡萄糖依赖性安全性与温和效力及诚实的胰腺炎与关节痛副作用账本、及它们为何被注射肠促胰素取代——[[gastrointestinal/pancreas-biliary]]、[[endocrine/diabetes-complications]]）。钠葡萄糖协同转运蛋白2抑制剂（肾糖排泄类别——其药理是一堂反转的[[renal/tubular-function]]课；心衰与慢性肾病中独立于血糖的类别效应证据——利钠与管球反馈及酮体转移机制——[[cardiovascular/heart-failure]]、[[renal/chronic-kidney-disease]]；及安全简报——生殖器真菌感染与脱水及正常血糖酮症酸中毒教育及围手术期与疾病病日暂停——[[microbiology/fungi-parasites]]、[[endocrine/endocrine-emergencies]]、[[surgery/perioperative-care]]）。胰高血糖素样肽1受体激动剂与双重激动剂（肠促胰素架构药物——葡萄糖依赖性胰岛素释放与胰高血糖素抑制及胃排空延迟及中枢食欲——[[physiology/hormones]]、[[gastrointestinal/oesophagus-stomach]]；体重与心血管结局证据及新的双重激动剂效力层级——[[cardiovascular/coronary-artery-disease]]；消化道耐受性滴定阶梯、胃轻瘫警诫及甲状腺C细胞类别信号背景与胰腺炎史细微——[[endocrine/thyroid]]、[[gastrointestinal/pancreas-biliary]]；及围操作误吸规则之辩——[[surgery/anaesthesia-pain]]）。减重与代谢手术（缓解与心血管及死亡率数据、及从最后手段手术更早谈话的转移、带其长期维生素与骨及血糖随访义务——[[surgery/gastrointestinal-surgery]]、[[gastrointestinal/clinical-nutrition]]、[[endocrine/bone-calcium]]）。**
+在遗传易感者中（HLA-DR3和DR4单倍型风险最强），T细胞在数月至数年内破坏β细胞。自身抗体在症状出现之前很久就已出现。当大部分β细胞功能丧失后高血糖才显现，患者表现为口渴、多尿、体重减轻和疲倦，有时以**糖尿病酮症酸中毒**起病。开始胰岛素治疗后可能出现短暂的部分恢复期，即"蜜月期"。1型糖尿病常合并其他自身免疫病，尤其是自身免疫性甲状腺病和乳糜泻。
+
+### 2型糖尿病
+
+大多数2型糖尿病患者存在胰岛素抵抗：组织需要更多胰岛素才能达到同样的效果。肝脏和胰腺中堆积的脂肪起核心作用。多年来β细胞通过分泌更多胰岛素来代偿。当它们无法跟上时糖尿病就出现了，而β细胞功能会继续下降，这就是治疗通常需要随时间强化的原因。
+
+南亚裔、华裔、非洲裔黑人和加勒比非洲裔人群患2型糖尿病的风险更高，并在更低的体重指数和更年轻时出现。因此NICE在评估这些人群的风险时使用较低的BMI阈值。2型糖尿病在青少年和年轻成人中的诊断日益增多，在这一人群中病情往往更具侵袭性。
+
+### 单基因糖尿病
+
+约1–2%的糖尿病是单基因的，其中很多被误诊为1型或2型。线索包括年轻时确诊、跨越数代的强家族史、胰岛抗体阴性，以及确诊多年后C肽仍保留。**HNF1A-MODY**对小剂量磺脲类药物反应极好，常可停用胰岛素。**GCK-MODY**自出生起即有轻度、稳定的空腹高血糖，除妊娠期外无需治疗。正确诊断可改变治疗并使亲属能接受检测（[[genetics/genetic-testing]]）。
+
+## 诊断与监测 {#sec-diagnosis}
+
+::: definition 诊断标准 {#def-diagnosis}
+对于非妊娠成人，符合以下任意一项即可诊断糖尿病（WHO标准，NICE采用）：
+
+- **空腹血浆葡萄糖** ≥ 7.0 mmol/L（126 mg/dL）；
+- 75 g口服葡萄糖耐量试验中**2小时血浆葡萄糖** ≥ 11.1 mmol/L（200 mg/dL）；
+- **HbA1c** ≥ 48 mmol/mol（6.5%）；
+- 有高血糖症状者**随机血浆葡萄糖** ≥ 11.1 mmol/L（200 mg/dL）。
+
+无症状时，异常结果应经复查确认。在英国，HbA1c 42–47 mmol/mol（6.0–6.4%）或空腹血糖5.5–6.9 mmol/L称为**非糖尿病性高血糖**（糖尿病前期），提示高风险。
 :::
 
-::: definition 胰岛素与低血糖 {#def-insulin}
-**胰岛素（基础类似物与中效鱼精蛋白锌对德谷霉素动力学、餐时类似物、及预混对基础餐时对泵哲学——基础需求对餐时覆盖推理——[[pharmacology/drug-receptor]]邻近动力学；1型要义——碳水计数与校正系数及胰岛素碳水比及脂肪蛋白餐时时机及运动与病日规则、及[[endocrine/diabetes-complications]]的技术路径；2型强化——先基础然后基础加及肠促胰素组合及注射层级及何时停止假装口服治疗有效；妊娠——严格目标人胰岛素优先规则——[[obstetrics-gynaecology/pregnancy-complications]]；及可及一章——冷链与笔针与共用及成本障碍与放弃胰岛素流行率、及生物类似药与价格与转换困惑问题——[[public-health/global-health]]、[[public-health/determinants-inequalities]]、[[pharmacology/patient-variation]]）。低血糖（对抗调节衰竭生理——胰高血糖素然后肾上腺素然后钝化的肾上腺素伴感知受损——[[physiology/hormones]]、[[physiology/autonomic-nervous-system]]；“稳定”患者开始跌落时要搜寻的病因——肾功能减退清除下降及肾上腺功能减退及甲状腺及酒精及药物无意重叠及新注射剂误读——[[renal/chronic-kidney-disease]]、[[endocrine/adrenal]]、[[endocrine/thyroid]]、[[psychiatry/substance-use]]、[[geriatrics-palliative/polypharmacy]]；治疗——先快后长效碳水规则及胰高血糖素急救装置选择与培训及摇匀技术、及静脉葡萄糖浓度与通路决定——[[endocrine/endocrine-emergencies]]、[[emergency-critical-care/acute-assessment]]；及善后——感知受损评估与驾驶及职业咨询带驾照申报职责与医学标准、β阻滞剂症状掩蔽细微、及目标放宽决定——[[medical-ethics-law/professionalism-regulation]]、[[cardiovascular/hypertension]]；严重低血糖病因死亡率信号与避免每一次发作的康复逻辑——ACCORD邻近谨慎及结构化教育与持续葡萄糖监测逆转感知受损的证据——[[endocrine/diabetes-complications]]）。注射手艺属于每一次复查脂肪肥大与硬结避免的轮换与部位检查常规、它默默解释了三分之一的失控控制、及重复用针与笔储存物理及注射后等待时机习惯、及在升级到注射剂之前询问的恐针史、及真正去看部位后再改剂量的[[clinical-skills/physical-examination]]纪律。**
+**糖化血红蛋白（HbA1c）**是葡萄糖与血红蛋白非酶促结合形成的。由于红细胞寿命约120天，HbA1c反映此前两到三个月的平均血糖，并更偏重最近几周。它以IFCC单位（mmol/mol）报告，较早的DCCT百分比仍被广泛认知：
+
+$$
+\text{HbA1c (mmol/mol)} = 10.929 \times (\text{HbA1c}\,\% - 2.15)
+$$ {#eq-hba1c}
+
+::: warning HbA1c何时会误导
+HbA1c既取决于血糖，也取决于红细胞寿命。当红细胞较年轻时它会假性**偏低**：溶血、近期失血或输血、治疗缺铁时、妊娠，以及某些血红蛋白变异体。缺铁时它可假性**偏高**。在儿童和青少年、疑似1型糖尿病、妊娠期、开始服用升高血糖的药物后两个月内，或急性疾病时，不应使用HbA1c诊断糖尿病。这些情况下应使用血浆葡萄糖。儿童或年轻成人疑似1型糖尿病应当天转诊，而不是等待HbA1c结果。
+:::
+
+日常监测越来越多地使用**持续葡萄糖监测（CGM）**：皮下的小传感器每隔几分钟测定一次组织间液葡萄糖，并将读数发送到手机或读取器。NICE推荐所有成人1型糖尿病患者使用CGM，部分使用胰岛素的2型糖尿病患者也可使用。CGM报告**目标范围内时间**，即读数处于3.9至10.0 mmol/L之间的比例；国际共识目标是范围内时间超过70%，低于3.9 mmol/L的时间少于4%。它还能显示HbA1c掩盖的模式，如夜间低血糖。
+
+## 2型糖尿病的治疗 {#sec-t2}
+
+治疗目标是缓解症状、预防并发症和避免伤害。血糖只是目标之一。心血管疾病是2型糖尿病的主要死因，因此血压、血脂和吸烟与血糖同样重要（[[endocrine/diabetes-complications]]）。
+
+### 生活方式与缓解
+
+结构化教育、健康饮食、体力活动和减重是基础。减重的作用不止于改善控制。在2018年发表的**DiRECT**试验中，英国基层医疗中病程不足六年的2型糖尿病患者接受低热量全代餐计划；12个月时46%获得缓解，缓解与减重幅度密切相关。NHS现在为符合条件者提供类似计划。缓解的定义是停用降糖药物至少三个月后HbA1c低于48 mmol/mol；这并非治愈，仍需继续监测。
+
+预防同样有效。在美国**糖尿病预防计划**（2002年）中，与安慰剂相比，强化生活方式干预使糖耐量受损进展为糖尿病的风险降低58%，二甲双胍降低31%。NHS糖尿病预防计划为非糖尿病性高血糖者提供行为支持。
+
+### 降糖药物
+
+::: definition 2型糖尿病的主要药物类别 {#def-tablets}
+- **二甲双胍（metformin）**减少肝脏葡萄糖输出。单用不引起体重增加或低血糖。胃肠道不良反应常见（缓释剂型耐受性更好）。可引起维生素B12缺乏；由于罕见的乳酸酸中毒风险，eGFR低于30 mL/min/1.73 m²时避免使用。
+- **SGLT2抑制剂**（达格列净、恩格列净、卡格列净）阻断近端小管对葡萄糖的重吸收，使葡萄糖随尿排出。它们降低体重和血压，在大型试验中减少心力衰竭住院并延缓慢性肾脏病进展。不良反应包括生殖器真菌感染、容量不足和**糖尿病酮症酸中毒**，后者可在血糖接近正常时发生。
+- **GLP-1受体激动剂**（例如司美格鲁肽、利拉鲁肽、度拉糖肽）和GIP/GLP-1双受体激动剂**替尔泊肽（tirzepatide）**增强葡萄糖依赖性胰岛素释放、抑制胰高血糖素、延缓胃排空并降低食欲。它们带来显著的体重减轻；部分可减少心血管事件。恶心常见。
+- **DPP-4抑制剂**（格列汀类）延长机体自身肠促胰素的作用。不影响体重，耐受性好，效果中等。
+- **磺脲类**（格列齐特）刺激胰岛素释放。有效且廉价，但会引起**低血糖**和体重增加。
+- **吡格列酮（pioglitazone）**改善胰岛素敏感性。引起液体潴留和体重增加，心力衰竭时避免使用。
+- **胰岛素**用于其他治疗无法控制血糖时、合并其他疾病或妊娠期间，以及存在明显分解代谢或酮症时。
+:::
+
+如今药物的选择既取决于血糖，也同样取决于合并症。2026年2月，NICE更新了NG28：对大多数成人2型糖尿病患者，现推荐初始治疗即给予**缓释二甲双胍联合SGLT2抑制剂**，除非有禁忌，衰弱者需谨慎。已确诊动脉粥样硬化性心血管疾病者还应给予GLP-1受体激动剂；40岁前确诊者，考虑包括GLP-1受体激动剂或替尔泊肽在内的三联治疗。这一领域的指南变化很快，处方者应遵循现行版本。ADA和欧洲糖尿病研究协会采取类似思路，根据心脏、肾脏和体重方面的获益选择药物，而不论HbA1c高低。
+
+### 血糖目标
+
+目标应个体化。NICE建议：以生活方式或单一不引起低血糖的药物治疗的成人，HbA1c目标为48 mmol/mol（6.5%）；服用可能引起低血糖药物者为53 mmol/mol（7.0%）。对于衰弱、预期寿命有限或跌倒风险高的老年人，宜采用较宽松的目标，因为对他们而言低血糖的危险更大。
+
+## 1型糖尿病的治疗 {#sec-t1}
+
+1型糖尿病患者从确诊起即需终身使用胰岛素。目标是模拟正常生理：在两餐之间和夜间维持低而平稳的**基础**胰岛素水平，进餐时给予**餐时（大剂量）**胰岛素。
+
+::: definition 胰岛素类型与方案 {#def-insulin}
+- **速效胰岛素类似物**（门冬胰岛素、赖脯胰岛素、谷赖胰岛素）约15分钟内起效，持续3–5小时；餐前即刻注射。
+- **长效胰岛素类似物**（甘精胰岛素、地特胰岛素、德谷胰岛素）在约一天或更长时间内提供相对平坦的作用曲线，用作基础胰岛素。
+- 较早的**可溶性（常规）**和**中效（低精蛋白）**人胰岛素，以及固定比例的**预混**胰岛素仍在使用，主要用于2型糖尿病。
+
+1型糖尿病的标准方案是**每日多次注射（基础-餐时）**：每日一到两次长效类似物，加每餐一次速效类似物。另一选择是用胰岛素泵进行**持续皮下胰岛素输注**。
+:::
+
+患者根据所吃碳水化合物的量和当前血糖调整餐时胰岛素。这需要结构化教育，例如英国的**DAFNE**（为正常饮食调整剂量）课程。使用两个个人参数：
+
+- **胰岛素碳水化合物比**：一个单位胰岛素覆盖的碳水化合物克数；
+- **校正因子**（胰岛素敏感系数）：一个单位胰岛素使血糖降低多少mmol/L。
+
+**混合闭环系统**通过算法将CGM传感器与胰岛素泵连接，每隔几分钟自动调整基础胰岛素；使用者仍需告知进餐。2023年12月，NICE技术评估TA943推荐混合闭环系统用于儿童和青少年、孕妇或计划妊娠者，以及在最佳管理下HbA1c仍≥58 mmol/mol（7.5%）或有致残性低血糖的成人。NHS正在分阶段推广。
+
+NICE NG17建议成人1型糖尿病的HbA1c目标为48 mmol/mol（6.5%）或更低，同时尽量减少低血糖。严格控制的里程碑证据来自1993年发表的**糖尿病控制与并发症试验（DCCT）**，它显示强化胰岛素治疗可减少视网膜病变、肾病和神经病变，代价是低血糖增多。
+
+::: theorem 1型糖尿病绝不能停用胰岛素 {#thm-sickday}
+在1型糖尿病中，疾病会增加胰岛素需要量，因为感染和应激使升糖激素增加。即使患者不进食，肝脏仍持续产生葡萄糖；没有胰岛素时，脂肪分解和酮体生成将不受控制地进行。因此患病期间基础胰岛素必须始终继续，而且常常需要追加剂量。
+:::
+
+糖尿病患者的**患病期间用药规则（sick-day rules）**包括：绝不停用胰岛素；更频繁地监测血糖（1型糖尿病或服用SGLT2抑制剂者还要监测酮体）；持续饮水；如果血糖和酮体高，按个人计划追加速效胰岛素；如果呕吐、无法保留液体或酮体持续升高，应紧急求助。服用某些片剂的人在导致脱水的疾病期间应**暂时停用**这些药物。英国的一个记忆口诀是**SADMANS**：**磺脲类**（sulfonylureas）、**ACE抑制剂**、**利尿剂**（diuretics）、**二甲双胍**（metformin）、**ARB**、**NSAID**和**SGLT2抑制剂**。人体脱水时，这些药物中的每一种都会增加低血糖、急性肾损伤、乳酸酸中毒或酮症酸中毒的风险。
+
+开车的糖尿病患者必须符合DVLA标准，其重点是低血糖感知能力以及驾驶前和驾驶中的血糖监测。
+
+::: example HbA1c单位换算 {#ex-hba1c}
+一位从国外迁来的55岁男性带来一份"HbA1c 8.0%"的结果。换算成mmol/mol是多少？与53 mmol/mol的目标相比如何？
+::: solution
+用[[#eq-hba1c]]：
+
+$$
+10.929 \times (8.0 - 2.15) = 10.929 \times 5.85 = 63.9 \text{ mmol/mol}。
+$$
+
+四舍五入为**64 mmol/mol**，比53 mmol/mol的目标高11 mmol/mol。一个有用的量级参照：48 mmol/mol ≈ 6.5%，53 ≈ 7.0%，64 ≈ 8.0%，75 ≈ 9.0%。旧单位每相差1%，约相当于11 mmol/mol。
+:::
+:::
+
+::: example 计算餐时剂量 {#ex-bolus}
+一位23岁1型糖尿病女性的胰岛素碳水化合物比为每10 g一个单位，校正因子为每2.5 mmol/L一个单位，目标血糖6.0 mmol/L。午餐前她的血糖为11.0 mmol/L，计划摄入60 g碳水化合物。按她的计划应注射多少速效胰岛素？（示意性数值；每个人的比值由其糖尿病团队共同设定。）
+::: solution
+**进餐剂量：** $60 \text{ g} \div 10 \text{ g/单位} = 6$个单位。
+
+**校正剂量：** 她的血糖高于目标$11.0 - 6.0 = 5.0$ mmol/L，因此为$5.0 \div 2.5 = 2$个单位。
+
+**合计：** $6 + 2 = 8$个单位。
+
+两点实际修正：如果她在过去几小时内注射过速效胰岛素，部分仍有活性（"活性胰岛素"），校正剂量应减少；饭后计划运动通常需要较小剂量。胰岛素泵和智能笔软件会自动完成这些计算。
+:::
+:::
+
+::: example 并非看起来的那一型 {#ex-mody}
+一位24岁女性15岁时被诊断为"1型糖尿病"并使用胰岛素。她每日仅用14个单位，HbA1c为52 mmol/mol。她的母亲、外祖父和舅舅都患糖尿病，均在二十多岁时确诊。确诊九年后随机样本C肽仍可明确测出，胰岛自身抗体阴性。可能的诊断是什么？为什么重要？
+::: solution
+1型糖尿病起病九年后，C肽通常很低或测不出，抗体通常阳性，胰岛素需要量也更高。三代人均年轻时确诊糖尿病，提示**常染色体显性遗传**。最可能的诊断是**MODY**，很可能是HNF1A-MODY（伴进行性高血糖的最常见类型）。
+
+应提供基因检测。若确诊HNF1A-MODY，她可能可以从胰岛素改为小剂量磺脲类药物，此型对其非常敏感。她的亲属可接受检测，她的每个孩子都有50%的概率遗传该变异。妊娠方面需要专科建议，因为治疗选择不同。
+:::
+:::
+
+::: example 伴心脏病的新诊断患者 {#ex-comorbids}
+一位62岁巴基斯坦裔男性，两年前曾患心肌梗死，两次HbA1c均为61 mmol/mol。eGFR 72 mL/min/1.73 m²，BMI 29 kg/m²。根据现行英国指南的原则概述初始治疗计划。
+::: solution
+**降糖：** 对于已确诊动脉粥样硬化性心血管疾病者，现行NICE指南（2026年更新的NG28）是从一开始就给予缓释二甲双胍联合SGLT2抑制剂，并加用GLP-1受体激动剂如司美格鲁肽以保护心血管。应向他讲解SGLT2抑制剂的患病期间用药规则和酮症酸中毒风险，以及生殖器卫生。
+
+**心血管风险：** 高强度他汀（心肌梗死后他应已在使用）、控制血压、针对冠心病按指征使用抗血小板治疗，如有吸烟则戒烟。
+
+**教育与支持：** 结构化教育、饮食建议（关注其文化饮食习惯）、体力活动和体重管理。
+
+**筛查：** 视网膜筛查、尿白蛋白/肌酐比值、足部评估。
+
+**目标：** 如能在无低血糖的情况下实现，HbA1c 48 mmol/mol是合理的，因为这些药物单用不会引起低血糖。
+:::
 :::
 
 ::: widget plot
-f: 100/(1+exp(-(x-62)*0.18)); 20
-x: 36, 110
-y: 0, 105
-labels: \text{糖化血红蛋白（mmol/mol）},\ \text{视网膜病变患病率（\%）};\ \text{人群模式};\ \text{背景率}
-caption: 血糖与微血管终点之间接近阈值的关系（糖化血红蛋白跨越上的视网膜病变经典流行病学、在约58-64 mmol/mol之上陡升）是血糖目标背后的证据——也是其个体化背后的证据、因为曲线左端在长病程疾病中用低血糖风险购买（[[#def-insulin]]、[[endocrine/diabetes-complications]]）；读一个S形风险曲线也属于[[epidemiology-ebm/diagnostic-tests]]与[[epidemiology-ebm/statistics-for-clinicians]]的治疗阈值逻辑。
-:::
-
-::: example 错了八年的诊断 {#ex-mody}
-26岁、自幼消瘦、18岁被贴上1型糖尿病标签（抗体阴性、21岁仍产生C肽）、现在基础餐时胰岛素下糖化血红蛋白58；他父亲与祖母都“从四十多岁起吃药片”；诊断时无酮尿。
-::: solution
-**在基因分型之前都是MODY——多代消瘦抗体阴性C肽阳性模式就是转诊触发（[[#def-classification]]）：通过临床遗传服务送单基因组合、期间继续当前治疗（[[genetics/genetic-testing]]）；若是肝核因子1A或4A——磺脲敏感性意味着常可停胰岛素（带低血糖与驾驶再咨询——[[#def-insulin]]、[[medical-ethics-law/professionalism-regulation]]）；若是葡萄糖激酶MODY——终身轻度空腹高血糖不进展而治疗不帮助规则、妊娠除外、那里胎儿基因型决定一切（[[obstetrics-gynaecology/pregnancy-complications]]、[[genetics/mendelian-inheritance]]）；家系级联（检测亲属及保险与生育规划谈话、及在每条记录中重贴诊断标签——[[clinical-skills/records-handover]]、[[genetics/genomic-medicine]]）；及一般教训——C肽比单纯抗体更常解决“哪种糖尿病”（[[clinical-skills/laboratory-tests]]）。**
-:::
-:::
-
-::: example 带三个同伴的新诊断 {#ex-comorbids}
-58岁新诊断2型（糖化血红蛋白72）同时有确定的动脉粥样硬化疾病、估算肾小球滤过率48伴蛋白尿、体质指数36；他开卡车。
-::: solution
-**在一个方案里治三种病与糖尿病、记住法律与安全叠加（[[#def-tablets]]、[[#def-insulin]]）：针对肾与心及葡萄糖的钠葡萄糖协同转运蛋白2抑制剂、及针对体重与动脉粥样硬化及血糖的胰高血糖素样肽1受体激动剂、带其联合逻辑——器官保护优先时代（[[renal/chronic-kidney-disease]]、[[cardiovascular/heart-failure]]、[[cardiovascular/coronary-artery-disease]]、[[gastrointestinal/clinical-nutrition]]）；按肾小球滤过率规则减量二甲双胍（[[renal/tubular-function]]、[[pharmacology/dosing-principles]]）；商用驾驶者避免诱发低血糖的药物磺脲与胰岛素的驾照问题及职业健康转诊（[[medical-ethics-law/professionalism-regulation]]、[[endocrine/diabetes-complications]]）；血压血脂与抗血小板及吸烟与酒精组套（[[cardiovascular/hypertension]]、[[cardiovascular/vascular-disease]]、[[psychiatry/substance-use]]）；结构化教育与驾驶标准及体检日期（[[clinical-skills/communication]]）；及“这现在是一种慢性心肾体重疾病而不是糖问题”的转诊谈话——改善依从的框架（[[gastrointestinal/clinical-nutrition]]）。**
-:::
-:::
-
-::: example 不是2型的那个 {#ex-lada}
-34岁低体质指数“2型糖尿病”诊断2年女性、格列齐特失败、然后大剂量二甲双胍加吡格列酮；糖化血红蛋白88、体重下降、常规尿酮2+、甲状腺病家族史。
-::: solution
-**成人迟发自身免疫性糖尿病——抗体阳性、缓慢破坏性的1型变体、在成年期呈现并在β细胞储备耗尽后表现得像1型（[[#def-classification]]）：这里的自白是消瘦体型、磺脲继发失败、无法解释的体重下降与酮尿——及自身免疫家族聚集（[[immunology/autoimmunity]]、[[endocrine/thyroid]]）。在换掉一切之前先确证：谷氨酸脱羧酶抗体（加或不加IA2与ZnT8）与刺激餐后C肽——能决定问题与预后的那一对（[[clinical-skills/laboratory-tests]]）；然后胰岛素优先的挽救带1型技术与教育组套及酮症酸中毒安全培训（[[#def-insulin]]、[[endocrine/endocrine-emergencies]]）；停磺脲并复审吡格列酮（及吡格列酮在胰岛素缺乏中的无效）（[[#def-tablets]]）；病日规则与酮体仪发放及新低血糖风险类别的驾驶再评估（[[medical-ethics-law/professionalism-regulation]]）；提供的多腺体自身免疫筛查（甲状腺功能与维生素B12及Addison症状审计——[[endocrine/adrenal]]、[[blood/anaemia]]）；及在所有记录中重贴标签加“你的药片为何不再有效”的解释、在两年浪费之后修复信任（[[clinical-skills/communication]]、[[clinical-skills/records-handover]]）。**
-:::
-:::
-
-::: example 跌倒与清晨 {#ex-elderly-hypo}
-81岁独居、服格列齐特缓释与二甲双胍（估算肾小球滤过率一年内从62降至44）、已有三次无人看见的跌倒与“不对劲”的清晨；此方案下糖化血红蛋白46。
-::: solution
-**长效磺脲蓄积造成反复未识别的低血糖（[[#def-insulin]]低血糖行、[[renal/chronic-kidney-disease]]清除行）：81岁的糖化血红蛋白46是警报不是奖杯——比所需更严的目标买来了跌倒、而成年人的指南上限高得多（衰弱与预期寿命及获益潜伏期逻辑——[[geriatrics-palliative/polypharmacy]]、[[geriatrics-palliative/falls]]）。计划：停或换格列齐特缓释（短效药物与肾剂量规则及与患者的去处方谈话——[[pharmacology/adverse-reactions]]）；书面放宽目标（骨折或跌倒风险及58-64 mmol/mol地带及为何低血糖是急性危险——[[endocrine/bone-calcium]]、[[cardiovascular/arrhythmias]]）；日常安全网（胰高血糖素与家庭及进餐模式及酒精审计——[[psychiatry/substance-use]]、[[endocrine/endocrine-emergencies]]）；并行的跌倒检查（视力与体位及足与肌力及住所——[[geriatrics-palliative/falls]]、[[nervous-system/sensory-systems]]）；若她开车则停止驾驶谈话（[[medical-ethics-law/professionalism-regulation]]）；及监测计划（用药复审节奏与肾功能及低血糖日记、及社会隔离安全电话——[[clinical-skills/records-handover]]）。**
-:::
+f: x*exp(1-x/1.2)/1.2; 0.35
+x: 0, 12
+y: 0, 1.1
+labels: \text{速效类似物（餐时）}; \text{长效类似物（基础）}
+caption: 皮下注射后胰岛素作用曲线示意图，纵轴为相对效应，横轴为小时。速效类似物在约1–2小时达峰，5小时左右基本消退，因此用于覆盖一餐；长效类似物提供低而平坦的背景作用。仅为示意形状；实际曲线因剂量、部位和个体而异。
 :::
 
 ::: quiz
-作为监测工具最不可靠的糖化血红蛋白出现在：
-- [ ] 肥胖
-- [x] 用促红细胞生成素治疗的慢性肾病与血红蛋白病
-- [ ] 高血压
-- [ ] 他汀治疗
+一位19岁1型糖尿病患者患胃肠炎，不能进食。她的基础胰岛素应如何处理？
+- [ ] 停用，直到她恢复进食，以避免低血糖。
+- [x] 继续使用，密切监测血糖和酮体，并按患病期间计划追加速效胰岛素。
+- [ ] 减半并停止监测酮体。
+- [ ] 改用二甲双胍。
 ::: solution
-**红细胞寿命与血红蛋白变异疾病扭曲糖化读数（[[#def-diagnosis]]、[[blood/haemoglobin-disorders]]、[[blood/anaemia]]、[[renal/chronic-kidney-disease]]）；替代——糖化白蛋白带其自身警诫及血浆葡萄糖谱与连续监测指标（[[clinical-skills/laboratory-tests]]、[[endocrine/diabetes-complications]]）；同样的警觉适用于妊娠（[[obstetrics-gynaecology/pregnancy-complications]]）。**
+疾病会增加胰岛素需要量，没有基础胰岛素，即使不进食她也会发生酮症酸中毒。基础胰岛素必须始终继续（[[#thm-sickday]]）。如果她无法保留液体或酮体升高，需要紧急医疗评估。
 :::
 :::
 
 ::: history
-**糖尿病三千年的文字线索（梵语的“蜜”尿与古代寻水试验；Aretaeus生动的第二世纪描述；Willis 1674年记录甜味而命名“mellitus”）；von Mering与Minkowski 1889年的胰切除狗定位了内分泌；Banting与Best及Collip及MacLeod 1921-22的多伦多提取物与首位患者的临床胜利（1923年诺贝尔奖）及令人惊讶的速产公共卫生胜利、然后是放弃专利只收一加元——[[public-health/global-health]]；1936年Hagedorn鱼精蛋白锌长效胰岛素时代与1946年的中效胰岛素；人胰岛素重组DNA革命（1978-82）与类似物设计时代（1996年的赖脯与门冬及甘精——[[pharmacology/drug-receptor]]）；糖化血红蛋白测定的1960年代发现到标准化（液相色谱与国际临床化学联合会数学[[clinical-skills/laboratory-tests]]）；1993年的糖尿病控制与并发症试验证明血糖暴露原则、而1998年的英国前瞻性糖尿病研究使二甲双胍与血压及血脂医学成为核心——[[epidemiology-ebm/randomised-trials]]；从Bayliss与Starling的促胰液素（1902）经Nauck的肠促胰素效应工作到艾塞那肽与利拉鲁肽的肠促胰素生物学（[[gastrointestinal/digestion-absorption]]的激素谱系）；根皮苷糖尿偶然发现史：钠葡萄糖协同转运蛋白2偶然发现（[[renal/tubular-function]]）变成器官保护剂；及2010-2020年代的人工胰腺与连续监测浪潮——[[endocrine/diabetes-complications]]。**
+1889年，斯特拉斯堡的**奥斯卡·闵科夫斯基（Oskar Minkowski）**和**约瑟夫·冯·梅林（Joseph von Mering）**证明切除狗的胰腺会导致致命的糖尿病。1921年，在多伦多大学**约翰·麦克劳德（John Macleod）**的实验室中，**弗雷德里克·班廷（Frederick Banting）**和**查尔斯·贝斯特（Charles Best）**制备出能降低糖尿病狗血糖的胰腺提取物，**詹姆斯·科利普（James Collip）**对其进行了纯化。1922年1月，14岁的**伦纳德·汤普森（Leonard Thompson）**成为第一位成功接受胰岛素治疗的人。班廷和麦克劳德获得1923年诺贝尔奖，并分别与贝斯特和科利普分享了奖金。**DCCT**（1993年）和由**罗伯特·特纳（Robert Turner）**与**鲁里·霍尔曼（Rury Holman）**领导的**英国前瞻性糖尿病研究**（UKPDS，1998年）证实，更好的血糖控制可减少1型和2型糖尿病的微血管并发症。
 :::
 
-## 通向何处
+## 后续内容
 
-并发症与技术住在[[endocrine/diabetes-complications]]；急症在[[endocrine/endocrine-emergencies]]；营养杠杆在[[gastrointestinal/clinical-nutrition]]；肾与心血管终点在[[renal/chronic-kidney-disease]]与[[cardiovascular/heart-failure]]；妊娠在[[obstetrics-gynaecology/pregnancy-complications]]；药物机制在[[pharmacology/drug-receptor]]。
-
-::: exercise 制定运动计划 {level=2}
-27岁泵治疗1型患者10周后跑半程马拉松。为训练与比赛日写出血糖调整计划。
-::: solution
-**先生理（运动中与其后肌糖摄取上升伴糖原再补充需求造成的晚发低血糖风险——[[physiology/muscle]]、[[physiology/autonomic-nervous-system]]）：按强度的碳水调整规则及运动前血糖与基础率降低策略（临时基础率降低与活性胰岛素时间逻辑——[[#def-insulin]]）；赛前练习着装（贴好的葡萄糖表与泵部位及防磨计划及寒冷天气输注管路护理——[[endocrine/diabetes-complications]]）；强度训练前的酮体与疾病排除规则（[[endocrine/endocrine-emergencies]]）；连续葡萄糖监测报警设置与同伴报警及赛事后勤简报（[[endocrine/diabetes-complications]]）；及赛后酒精与恢复之夜计划（[[psychiatry/substance-use]]、[[gastrointestinal/clinical-nutrition]]）。**
-:::
-:::
-
-::: exercise 评判转诊 {level=2}
-42岁2型、体质指数41、最大治疗下糖化血红蛋白69、及新发蛋白尿，问“他表哥做的那个绕路手术”。给出循证回答与路径。
-::: solution
-**代谢减重手术的适格性与现实（[[#def-tablets]]手术行、[[surgery/gastrointestinal-surgery]]）：缓解与心血管及肾终点证据及其年龄与病程修饰因素、及没有随访就不可避免的体重回升（[[cardiovascular/coronary-artery-disease]]、[[renal/chronic-kidney-disease]]）；术前要求（心理与进食评估及酒精咨询及12-24个月承诺框架——[[psychiatry/eating-personality-disorders]]、[[gastrointestinal/clinical-nutrition]]、[[clinical-skills/communication]]）；围手术期药理（钠葡萄糖协同转运蛋白2暂停与肠促胰素暂停及胰岛素减量及静脉血栓与抗凝计划——[[endocrine/endocrine-emergencies]]、[[blood/thrombosis-anticoagulation]]、[[surgery/anaesthesia-pain]]）；术式选择与袖状对绕流的反流与糖尿病取舍（[[gastrointestinal/oesophagus-stomach]]邻近反流论证、[[gastrointestinal/clinical-nutrition]]）；终身补充与骨及监测组套（[[endocrine/bone-calcium]]、[[gastrointestinal/clinical-nutrition]]）；及诚实的统计（缓解概率随病程更长与C肽更低而下降——尊重他表哥生存者偏差趣闻的共享决定——[[epidemiology-ebm/observational-studies]]、[[clinical-skills/clinical-reasoning]]）。**
-:::
-:::
-
-::: exercise 向怀疑者解释 {level=2}
-“我只是轻微糖尿病——药片只是让医生高兴。”以会诊身份回答。
-::: solution
-**用患者的模型而不是你的模型迎接阶段：[[#def-insulin]]插图的S形风险曲线解释（损害在阈值之上静默积累、症状来得很晚）、现代方案“器官保护而不是降糖”的重构（[[#def-tablets]]）、具体的功能锚点（视力、肾、足、心、精力、度假与患病规划——[[endocrine/diabetes-complications]]）、不用恐吓的不作为诚实代价数字、及尊重自主的结尾（他的目标设定指标——工作、家庭、运动——而方案可协商、疾病不可——[[clinical-skills/communication]]、[[medical-ethics-law/ethical-principles]]）；及带商定复审日期的书面小结（[[clinical-skills/records-handover]]）。**
-:::
-:::
+低血糖、酮症酸中毒和长期并发症见[[endocrine/diabetes-complications]]，高渗高血糖状态见[[endocrine/endocrine-emergencies]]。妊娠合并糖尿病见[[obstetrics-gynaecology/pregnancy-complications]]，作为公共卫生问题的糖尿病见[[public-health/non-communicable-disease]]。
 
 ::: summary
-- 先分类：抗体与C肽检测比年龄远更常解决1型对2型对MODY的问题。
-- 糖化血红蛋白是一台出色而脆弱的仪器——按红细胞生理判读它、并在测定说谎时更换监测。
-- 2型治疗如今是器官保护治疗：钠葡萄糖协同转运蛋白2与肠促胰素类别凭心、肾与体重结局赢得位置、不亚于血糖。
-- 胰岛素在1型不可替代、并在许多2型终将必要；方案要匹配这个人——包括其工作、其读写能力与其钱包。
-- 先前控制良好患者每一次低血糖都是一个鉴别诊断（肾、肾上腺、酒精、剂量错误）——在反射性放宽目标之前先搜寻它。
+- 葡萄糖关闭β细胞的K-ATP通道以释放胰岛素；肠促胰素放大这一反应。C肽反映内源性胰岛素。
+- 胰岛素抑制肝脏葡萄糖输出、脂肪分解和酮体生成，并驱动葡萄糖进入肌肉和脂肪；少量胰岛素即可抑制酮体，这就是酮症酸中毒主要是胰岛素绝对缺乏之病的原因。
+- 1型糖尿病是自身免疫性β细胞破坏；2型糖尿病是胰岛素抵抗合并进行性β细胞衰竭；单基因糖尿病常被误诊。
+- 诊断：空腹血糖≥7.0、OGTT 2小时血糖≥11.1、HbA1c≥48 mmol/mol，或有症状时随机血糖≥11.1 mmol/L。要知道HbA1c何时会误导。
+- 2型糖尿病的治疗结合生活方式、减重（可获缓解）以及根据心血管、肾脏和体重获益选择的药物；截至2026年，NICE推荐大多数成人一线使用二甲双胍联合SGLT2抑制剂。
+- 1型糖尿病的治疗是基础-餐时胰岛素或胰岛素泵，配合碳水化合物计算、CGM，并越来越多地使用混合闭环系统。
+- 1型糖尿病绝不停用胰岛素；导致脱水的疾病期间暂停SADMANS药物。
 :::
 
-## 练习
+## 习题
 
-::: exercise 正确诊断 {level=1}
-一次空腹葡萄糖7.4、无症状成人。下一步？相同数字伴多尿与体重下降6公斤？
+::: exercise 作出诊断 {level=1}
+对于非妊娠成人，下列哪些符合糖尿病标准？(a) 空腹血糖6.4 mmol/L；(b) 无症状、两次HbA1c 50 mmol/mol；(c) 随机血糖13.2 mmol/L伴口渴和体重减轻；(d) HbA1c 44 mmol/mol。
 ::: solution
-**复查确证（或糖化血红蛋白与口服葡萄糖耐量配对）——单值规则（[[#def-diagnosis]]）；伴明确症状且随机或空腹值超过阈值、则立即诊断并开始管理（[[#def-classification]]、[[clinical-skills/history-taking]]）；加类型检查组合、不明时用抗体与C肽（[[clinical-skills/laboratory-tests]]）及诊断时的并发症基线与驾驶及工作谈话（[[endocrine/diabetes-complications]]、[[medical-ethics-law/professionalism-regulation]]）。**
+(b)和(c)符合标准。(a)为非糖尿病性高血糖（WHO术语中的空腹血糖受损）。(d)处于非糖尿病性高血糖范围（42–47 mmol/mol）。
 :::
 :::
 
-::: exercise 选择第二种药 {level=1}
-二甲双胍不耐受？给出一线替代、及那个你必须按指征论证的药：磺脲、吡格列酮、二肽基肽酶4、钠葡萄糖协同转运蛋白2、肠促胰素。
+::: exercise 换算单位 {level=1 check="round(10.929*(7.5-2.15))"}
+用$10.929 \times (\% - 2.15)$将HbA1c 7.5%换算为mmol/mol，四舍五入到整数。
 ::: solution
-**体重与低血糖及成本及器官谱各不相同（[[#def-tablets]]）：磺脲——便宜快速但有低血糖与体重及驾驶含义（[[#def-insulin]]、[[medical-ethics-law/professionalism-regulation]]）；吡格列酮——持久但水肿骨折及肝毒性规则（[[endocrine/bone-calcium]]、[[cardiovascular/heart-failure]]）；二肽基肽酶4——安全温和的加药（[[gastrointestinal/pancreas-biliary]]邻近警诫）；钠葡萄糖协同转运蛋白2与肠促胰素——当心、肾或体重主导时指征优先的选择（[[renal/chronic-kidney-disease]]、[[cardiovascular/heart-failure]]）；及每次都带许可与职业及生育规划核查的共享决定（[[clinical-skills/communication]]）。**
+$10.929 \times 5.35 = 58.47$，四舍五入为**58 mmol/mol**。
 :::
 :::
 
-::: exercise 写出病日规则 {level=2}
-给一名用胰岛素、钠葡萄糖协同转运蛋白2抑制剂与血管紧张素转换酶抑制剂的1型患者胃肠炎的病日建议及“何时来医院”标准。
+::: exercise 说出药物 {level=1}
+说出最可能解释下列每种情况的药物类别：(a) 反复生殖器念珠菌感染；(b) 低血糖和体重增加；(c) 恶心和明显体重减轻；(d) 维生素B12降低。
 ::: solution
-**暂停钠葡萄糖协同转运蛋白2与血管紧张素转换酶抑制剂及二甲双胍（若在用）、而绝不暂停胰岛素、并频繁测酮体与葡萄糖、并用含钠液体补水（口服补液盐算术与疾病时钠葡萄糖协同转运蛋白2的正常血糖酮症酸中毒危害——[[endocrine/endocrine-emergencies]]、[[renal/water-sodium]]、[[renal/acute-kidney-injury]]）；红线标准持续呕吐、酮体、嗜睡、液体留不住→急诊评估而不是消息软件（[[emergency-critical-care/acute-assessment]]）；及书面抄送全科与病日卡（[[clinical-skills/records-handover]]、[[geriatrics-palliative/polypharmacy]]）。**
+(a) SGLT2抑制剂。(b) 磺脲类（或胰岛素）。(c) GLP-1受体激动剂或替尔泊肽。(d) 二甲双胍。
 :::
 :::
 
-::: exercise 修复感知 {level=2}
-34岁1型糖尿病15年患者直到严重时才感觉到低血糖、两次几乎在驾驶时失去意识。管理综合征而不只是数字。
+::: exercise 餐时剂量 {level=2 check="45/15+(14-6)/2"}
+一位1型糖尿病男性的胰岛素碳水化合物比为每15 g一个单位，校正因子为每2 mmol/L一个单位，目标为6 mmol/L。他的血糖为14 mmol/L，将摄入45 g碳水化合物。按他的计划应注射多少单位？（示意性计算。）
 ::: solution
-**低血糖相关自主神经衰竭（[[#def-insulin]]的严格控制低血糖致低血糖循环生理）：立即停止驾驶的义务与驾照通报（[[medical-ethics-law/professionalism-regulation]]）；先放宽再重训——数周严格避免低血糖规划加技术（[[endocrine/diabetes-complications]]的实时报警与低血糖暂停及混合闭环选项）在许多人中恢复感知（[[endocrine/diabetes-complications]]）；方案重设计（减少或移动基础类似物峰值及比例再校准及运动计划——[[#def-insulin]]）；带伴侣参与的结构化教育与胰高血糖素处方及培训（[[clinical-skills/communication]]）；及心理层（恐针与低血糖焦虑及回避及紊乱进食筛查——[[psychiatry/anxiety-disorders]]、[[psychiatry/eating-personality-disorders]]）。**
+进餐：$45/15 = 3$个单位。校正：$(14 - 6)/2 = 4$个单位。合计$3 + 4 = 7$个单位。
 :::
 :::
 
-::: exercise 解读模式 {level=2}
-一名用泼尼松龙40毫克的住院患者：夜间葡萄糖5.8、13:00 17.9、19:00 16.4、22:00 9.2。解释并为出院安全处方。
+::: exercise 误导性的HbA1c {level=2}
+一位70岁2型糖尿病女性HbA1c为41 mmol/mol，但家庭血糖读数大多在10至14 mmol/L之间。她最近发生过消化道出血并输血。解释这种不一致。
 ::: solution
-**激素午后飙升签名（泼尼松龙肝糖原异生与胰岛素拮抗效应的4-8小时药效学延迟——[[endocrine/adrenal]]、[[cell-biochemistry/metabolic-integration]]、[[pharmacology/dosing-principles]]）；晨间正常傍晚升高的谱要求激素晨服时用中效胰岛素策略、或两次每日与泼尼松龙匹配的方案而不是基础为主的胰岛素（[[#def-insulin]]、[[surgery/perioperative-care]]邻近桥接）；出院安全（减量与低血糖风险的递减计划、激素期间的病日与驾驶建议、及糖尿病团队或全科的归属带持续则6周糖化血红蛋白——[[endocrine/endocrine-emergencies]]、[[geriatrics-palliative/polypharmacy]]、[[clinical-skills/records-handover]]）；及标记激素性糖尿病可能可逆而不总是（[[pharmacology/adverse-reactions]]）。**
+HbA1c反映红细胞存活期间的葡萄糖暴露。失血和输血后，她的很大一部分红细胞是新生成的（来自骨髓的代偿）或来自献血者，被糖化的时间很短。因此她的HbA1c低估了真实血糖。在接下来的两到三个月里，她的血糖读数（或CGM）是更好的参考。
 :::
 :::
 
-::: exercise 重新设计门诊 {level=3}
-为器官保护时代重画一个地区2型服务：登记、规程化治疗阶梯、技术可及、公平与结局。
+::: exercise 患病期间的建议 {level=2}
+一位66岁2型糖尿病男性服用二甲双胍、达格列净、雷米普利和呋塞米。他出现呕吐和腹泻。他应暂停哪些药物？为什么？
 ::: solution
-**登记与召回（带年度并发症日期与护士主导模式的诊断登记册——[[endocrine/diabetes-complications]]、[[public-health/screening]]）；规程化早期强化（诊断数周内按指征用钠葡萄糖协同转运蛋白2或肠促胰素的路径、及与初级照护的共享照护处方约定——[[#def-tablets]]、[[public-health/health-systems-economics]]）；技术阶梯（连续葡萄糖监测可及标准与混合闭环转诊及智能笔与应用读写层级——[[endocrine/diabetes-complications]]；数字处方与数据主权及数据所有权及互通性政策——[[medical-ethics-law/confidentiality]]）；教育与自我管理（带口译服务与通俗材料及同伴导师的结构化课程、及门诊内营养师与心理配置——[[gastrointestinal/clinical-nutrition]]、[[psychiatry/anxiety-disorders]]）；公平工程（按贫困指数定向的外展与工作时间门诊、及成本与放弃胰岛素审计、及族裔特异风险与筛查规则——[[public-health/determinants-inequalities]]、[[public-health/screening]]）；生育优先政策（孕前避孕与妊娠前停止致畸药物、及受孕前缓解逻辑——[[obstetrics-gynaecology/contraception-fertility]]、[[obstetrics-gynaecology/pregnancy-complications]]）；及结局组套（糖化血红蛋白与目标范围内时间分布而不是均值、低血糖住院率、按族裔与贫困的类别使用率、视网膜摄影覆盖率、肾病进展率、截肢发生率、患者报告结局、及到胰岛素的时间与放弃胰岛素安全指标——[[clinical-skills/patient-safety]]、[[public-health/global-health]]）。**
+按SADMANS：**二甲双胍**（若发生急性肾损伤有乳酸酸中毒风险）、**达格列净**（酮症酸中毒和容量不足风险）、**雷米普利**和**呋塞米**（脱水时急性肾损伤风险）。待他正常进食饮水24–48小时后重新开始，如果无法保留液体应求助。如果他使用磺脲类或胰岛素，需要更密切地监测血糖；胰岛素不能简单停用。
+:::
+:::
+
+::: exercise 为病例分型 {level=3}
+一位34岁加勒比黑人男性因口渴和体重减轻就诊，血糖28 mmol/L，酮体3.8 mmol/L，pH正常。给予胰岛素治疗。六个月后，他已停用胰岛素，仅服用二甲双胍，HbA1c为49 mmol/mol。抗体阴性，C肽保留。讨论其分型。
+::: hint
+部分2型糖尿病患者以酮症起病。
+:::
+::: solution
+这种模式是**酮症倾向性2型糖尿病**（有时称"Flatbush糖尿病"），尤其多见于非洲裔黑人和加勒比非洲裔人群。他们以严重高血糖和酮症起病，有时为酮症酸中毒，原因是葡萄糖毒性暂时抑制了β细胞功能。经胰岛素治疗后β细胞功能恢复，许多人可以停用胰岛素。抗体阴性和C肽保留不支持1型糖尿病和LADA。
+
+分型很重要：他不需要终身胰岛素，但有反复酮症的风险，因此应了解预警征象并有明确的应对计划。起病时的鉴别诊断包括1型糖尿病，因此当时开始胰岛素治疗是正确的；在获得检查结果和了解病程后再重新分型。
+:::
+:::
+
+::: exercise 解读CGM数据 {level=3}
+一位41岁1型糖尿病女性HbA1c为50 mmol/mol，看起来很理想。她的CGM报告显示目标范围内时间58%，低于3.9 mmol/L的时间9%，高于10.0 mmol/L的时间33%。解读这些数据，并提出需要探究的问题。
+::: solution
+HbA1c是平均值，相似的平均值既可来自平稳的血糖，也可来自大幅波动。她的CGM显示大幅波动：范围内时间低于70%的目标，低于范围的时间超过4%目标的两倍，高于范围的时间也很高。这个"好"的HbA1c部分是频繁低血糖把平均值拉低的结果。
+
+需要探究：低血糖何时发生（夜间低血糖提示基础胰岛素过多；餐后低血糖提示胰岛素碳水化合物比过强或餐时注射时机不当）；高血糖是否紧随低血糖的处理之后（过度纠正）；运动和饮酒模式；注射部位（脂肪增生导致吸收不稳定）；以及她对低血糖的感知。可选措施包括结构化教育、调整基础和餐时参数，以及在符合标准时使用混合闭环系统。
 :::
 :::

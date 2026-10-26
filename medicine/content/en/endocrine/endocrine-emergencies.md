@@ -1,176 +1,351 @@
-Endocrine emergencies share one clinical face - the unwell, confused, dehydrated patient - and one diagnostic habit that saves lives: **ask what hormone is missing, flooding, or starving the cells of fuel, and check the cheap numbers (glucose, ketones, sodium, potassium, calcium, cortisol) early, because the treatment of each is specific and the treatment of the wrong one can kill.** This chapter is the acute-medicine companion to the whole endocrine course.
+Endocrine emergencies often look alike at the bedside: a person who is unwell, confused, dehydrated or hypotensive, with nothing obvious to explain it. What separates them is a handful of cheap, fast measurements (capillary glucose, ketones, sodium, potassium, calcium, osmolality) and the habit of asking which hormone is missing or in excess. Each emergency has a specific treatment, and several are fatal if missed but straightforward once recognised. Some, such as adrenal crisis, must be treated on suspicion, before the diagnosis is confirmed.
 
-This chapter covers diabetic ketoacidosis and hyperosmolar states, adrenal crisis, thyroid emergencies, disordered sodium and calcium, hypoglycaemia and the insulin-technology hazards.
+This lesson brings together the endocrine emergencies an acute medical team will meet: hyperglycaemic crises (with the hyperosmolar hyperglycaemic state in detail), severe hypoglycaemia, adrenal crisis, thyroid storm and myxoedema coma, severe hyponatraemia, acute hypercalcaemia and hypocalcaemia, pituitary apoplexy and phaeochromocytoma crisis. The full management of diabetic ketoacidosis is in [[endocrine/diabetes-complications]]. All doses below are typical adult regimens given to illustrate principles; real treatment follows current local protocols and national guidance.
 
-## Insulin and glucose emergencies
+## A common approach {#sec-approach}
 
-::: definition Diabetic ketoacidosis and hyperosmolar hyperglycaemia {#def-dka}
-**Pathophysiology (absolute-or-relative insulin deficiency plus counter-regulatory excess - glucagon, cortisol, catecholamines, growth hormone - switching on lipolysis, ketogenesis and hepatic glucose output; the ketone-body chemistry, the osmotic-dehydration cascade and the Kussmaul compensation, read with [[cell-biochemistry/lipid-amino-acid-metabolism]], [[renal/water-sodium]], [[renal/potassium-calcium-phosphate]] and the [[renal/acid-base-disorders]] anion-gap arithmetic; the "euglycaemic DKA" variant under SGLT2 inhibition, pregnancy, starvation and alcohol - [[endocrine/diabetes]], [[obstetrics-gynaecology/pregnancy-complications]]). Diagnosis (the glucose-ketones-acidosis triad, which the UK Joint British Diabetes Societies (JBDS) guideline makes numeric: blood ketones ≥3.0 mmol/L or ketonuria ≥2+, blood glucose >11.0 mmol/L or known diabetes, and bicarbonate <15.0 mmol/L and/or venous pH <7.3 — with the anion gap and hourly capillary ketones then tracking resolution to ketones <0.6 mmol/L and pH >7.3; the pseudo-hyponatraemia correction and the raised-amylase-not-pancreatitis caveat - [[clinical-skills/laboratory-tests]], [[gastrointestinal/pancreas-biliary]]-mimic-row; and the precipitant-hunt that defines the admission - the missed-or-failed-insulin-and-pump-failure-and-infection-and-new-diabetes-and-drug causes - [[endocrine/diabetes-complications]], [[surgery/perioperative-care]]). Management protocol (the hour-by-hour bundle - fluid-first resuscitation with the balanced-crystalloid-versus-saline-chloride-load-and-cerebral-oedema-thinking and the weight-and-comorbidity-titrated strategy - [[emergency-critical-care/shock-fluids]], [[renal/acute-kidney-injury]]; fixed intravenous insulin rather than sliding-scale, the glucose-fall-rate pacing with glucose-containing-fluid addition, and the ketone-clearance-not-glucose-normalisation stopping rule; the potassium protocol with the insulin-hypokalaemia-hazard and the add-potassium-early-when-low discipline - [[renal/potassium-calcium-phosphate]]; the bicarbonate-rarely rules; the monitoring grid and VTE prophylaxis - [[blood/thrombosis-anticoagulation]]; and the transition-to-subcutaneous-overlap-technique that prevents rebound-ketosis). The complications list each with its chapter - cerebral oedema in young patients (the headache-and-slowing-down-and-intubation-threshold logic), the iatrogenic hypoglycaemia and hypokalaemia and hypophosphataemia, rhabdomyolysis, ARDS and the stomach-content aspiration risk - [[emergency-critical-care/critical-care]], [[respiratory/gas-exchange]], [[musculoskeletal/bones-joints]]-rhabdo-row, the gastroparesis-aspiration link in [[gastrointestinal/oesophagus-stomach]]; and the ICU-and-renal-replacement-niches - [[renal/chronic-kidney-disease]]). Hyperosmolar hyperglycaemic state (JBDS criteria: hypovolaemia, glucose ≥30 mmol/L without significant ketonaemia (<3.0 mmol/L) or acidosis (pH >7.3, bicarbonate >15 mmol/L), and osmolality ≥320 mOsm/kg — typically the older type-2 patient with enough insulin to suppress ketogenesis but not hyperglycaemia, and the profound-dehydration-and-thrombosis-and-delirium phenotype; the gentler-fluid-and-insulin arithmetic with the cerebral-oedema-and-myolysis caution and the medication-precipitant audit - steroids-and-thiazides-and-atypicals - [[endocrine/adrenal]], [[psychiatry/psychotic-disorders]], [[geriatrics-palliative/polypharmacy]]); the disposition questions (the level-of-care-and-high-dependency-transfer-criteria and the "why did this person present late" service-analysis - [[emergency-critical-care/acute-assessment]], [[public-health/health-systems-economics]]).**
+Every emergency starts with an **ABCDE assessment** ([[emergency-critical-care/acute-assessment]]), and the endocrine causes fit into it naturally.
+
+- **D for "don't ever forget glucose"**: a capillary glucose in every person with reduced consciousness, seizure, odd behaviour or collapse.
+- **Measure ketones** in anyone with diabetes who is unwell, regardless of glucose.
+- Send **sodium, potassium, calcium, glucose and osmolality** early; they are quick and point to specific diagnoses.
+- **Take blood for cortisol** (and, if relevant, thyroid function) before giving steroids, but never let the sample delay treatment.
+- **Search for the precipitant**: infection, missed medication, a new drug, surgery, a myocardial infarction.
+
+::: theorem Treat the missing hormone on suspicion {#thm-suspicion}
+When an endocrine emergency is plausible and the specific treatment is safe, give the treatment before confirmation. Hydrocortisone for suspected adrenal crisis and glucose for suspected hypoglycaemia are the clearest examples: both are harmless if the suspicion is wrong, and delay can be fatal if it is right.
 :::
 
-::: definition Hypoglycaemia as an emergency {#def-hypo}
-**The acute treatment (the conscious-patient fast-then-long-acting-carbohydrate rule and the unconscious-patient IV-dextrose-concentration-and-line-choices versus IM-and-intranasal-glucagon-and-the-shake-and-prime-device-technique-and-its-failure-modes - [[emergency-critical-care/acute-assessment]], [[endocrine/diabetes-complications]]). The Sulfonylurea problem (the long-observation-rule-because-recurrence-is-the-mechanism-and-the-octreotide-option-and-the-avoid-dextrose-infusions-alone-trap - [[endocrine/diabetes]]). The "why now" differential in a non-diabetic or a previously stable diabetic - the sepsis-and-adrenal-insufficiency-and-hepatic-and-renal-failure-and-alcohol-and-insulin-or-sulfonylurea-misadministration-and-factitious-and-insulinoma-and-hormone-deficiency-and-post-bariatric-dumping-and-non-insulinoma-pancreatogenous-hypoglycaemia-syndrome list - [[infectious-diseases/fever-sepsis]], [[endocrine/adrenal]], [[gastrointestinal/liver-disease]], [[renal/chronic-kidney-disease]], [[psychiatry/substance-use]], [[psychiatry/eating-personality-disorders]], [[gastrointestinal/pancreas-biliary]]-insulinoma-row, [[surgery/gastrointestinal-surgery]]-dumping-row; the supervised-72-hour-fast-investigation-protocol and the C-peptide-and-proinsulin-and-antibody-and-sulfonylurea-screen interpretation at the moment of documented hypoglycaemia - [[clinical-skills/laboratory-tests]]. The driving-and-safeguarding overlay (the DVLA-style-standards-and-no-driving-after-severe-episode-and-occupational-duty - [[medical-ethics-law/professionalism-regulation]]; and the older-adult-hypoglycaemia-relaxation-decision - [[geriatrics-palliative/polypharmacy]], [[endocrine/diabetes-complications]]).**
+::: proof
+The decision rests on asymmetric costs. A single dose of hydrocortisone in someone without adrenal insufficiency causes, at most, transient hyperglycaemia and a confounded cortisol result, which can be avoided by taking blood first. Untreated adrenal crisis progresses to refractory shock within hours. Similarly, glucose given to someone who is not hypoglycaemic briefly raises glucose; untreated neuroglycopenia causes brain injury. When the harm of treating unnecessarily is small and the harm of not treating is large, the threshold for treatment should be low. The same reasoning does **not** apply to treatments with serious risks, such as hypertonic saline or rapid correction of osmolality, which need confirmation and careful titration.
 :::
 
-## The hormone emergencies
+## Hyperglycaemic crises {#sec-hyperglycaemia}
+
+The two hyperglycaemic emergencies are **diabetic ketoacidosis (DKA)** and the **hyperosmolar hyperglycaemic state (HHS)**. The criteria below are those of the Joint British Diabetes Societies for Inpatient Care (JBDS).
+
+::: definition DKA and HHS (JBDS criteria) {#def-dka}
+**Diabetic ketoacidosis** requires all of:
+
+- blood ketones ≥ 3.0 mmol/L, or urine ketones 2+ or more;
+- blood glucose > 11.0 mmol/L, or known diabetes;
+- bicarbonate < 15.0 mmol/L and/or venous pH < 7.3.
+
+DKA is resolved when blood ketones are below 0.6 mmol/L and venous pH is above 7.3.
+
+**Hyperosmolar hyperglycaemic state** is characterised by:
+
+- hypovolaemia;
+- marked hyperglycaemia, glucose ≥ 30 mmol/L (540 mg/dL), without significant ketonaemia (blood ketones < 3.0 mmol/L) or acidosis (pH > 7.3, bicarbonate > 15 mmol/L);
+- osmolality ≥ 320 mOsm/kg.
+
+Some people meet criteria for both, and are treated as mixed DKA–HHS.
+:::
+
+DKA develops over hours, mainly in type 1 diabetes, and its treatment (fluids, fixed-rate intravenous insulin at 0.1 units/kg/h, continued basal insulin, glucose once blood glucose falls below 14 mmol/L, careful potassium) is described in [[endocrine/diabetes-complications]].
+
+### The hyperosmolar hyperglycaemic state
+
+HHS typically affects older adults with type 2 diabetes, sometimes previously undiagnosed. Enough insulin is present to suppress ketogenesis, but not to control glucose. Over several days, glucose climbs, an osmotic diuresis drains water and electrolytes, and the person, often with limited access to water or reduced thirst, becomes profoundly dehydrated. Fluid deficits of 10–20% of body weight are typical. Precipitants include infection, myocardial infarction, stroke, and drugs such as glucocorticoids, thiazides and some antipsychotics.
+
+Presentation is with confusion, drowsiness, or focal neurological signs that can mimic a stroke, along with signs of severe dehydration. Mortality is higher than in DKA, largely because of age, comorbidity and complications: **thrombosis** (myocardial infarction, stroke, peripheral arterial occlusion), seizures, **cerebral oedema** and **osmotic demyelination** from too-rapid correction, and pressure damage to the heels.
+
+Osmolality is estimated as in [[endocrine/hypothalamus-pituitary]]:
+
+$$
+\text{calculated osmolality} = 2[\text{Na}^+] + [\text{glucose}] + [\text{urea}]
+$$ {#eq-osm}
+
+The JBDS principles of HHS management are:
+
+- **Fluid first.** Intravenous 0.9% sodium chloride is the main treatment; fluid alone lowers glucose by dilution and by restoring kidney perfusion and glucose excretion. A positive fluid balance of several litres is usually needed over the first 12 hours, more cautiously in heart failure.
+- **Correct slowly.** Aim for a fall in osmolality of **3–8 mOsm/kg per hour** and a fall in glucose of **no more than 5 mmol/L per hour**. Sodium often **rises** at first as glucose falls (water moves back into cells); this is expected and acceptable as long as osmolality falls, but the fall in sodium should not exceed **10 mmol/L in 24 hours**.
+- **Insulin late and low.** Start a fixed-rate intravenous insulin infusion at **0.05 units/kg/h** only once glucose stops falling with fluids alone, or immediately if there is significant ketonaemia (blood ketones above 1 mmol/L). Early insulin drives glucose and water into cells and can cause circulatory collapse.
+- **Prevent complications.** Prophylactic low-molecular-weight heparin (full anticoagulation is sometimes used), foot protection, potassium replacement as needed, and treatment of the precipitant.
+
+::: warning The sodium rise in HHS is not a reason to change fluid
+As glucose falls during treatment, water leaves the extracellular space and enters cells, and the measured sodium rises. Teams sometimes respond by switching to hypotonic fluid, which can make osmolality fall too fast. The right question is whether the **calculated osmolality** is falling at an appropriate rate. A rising sodium with falling osmolality is the expected pattern; switching to 0.45% saline is considered only if osmolality stops falling despite adequate positive fluid balance.
+:::
+
+## Severe hypoglycaemia {#sec-hypoglycaemia}
+
+Hypoglycaemia in a person who cannot swallow safely is an emergency. Following the JBDS hypoglycaemia guideline principles:
+
+- **Intravenous glucose**: typically 10% glucose (for example 150–200 mL over about 15 minutes) or 20% glucose (75–100 mL). More concentrated 50% glucose is irritant to veins and is avoided where possible.
+- **Intramuscular glucagon** if there is no intravenous access. Glucagon is less effective in people with depleted liver glycogen (malnutrition, alcohol excess, prolonged fasting) and does not work well in sulfonylurea overdose.
+- Recheck glucose after 10–15 minutes and repeat if needed; once awake, give oral carbohydrate.
+- **Find the cause.** Sulfonylurea-related and long-acting insulin-related hypoglycaemia can recur for many hours and needs a glucose infusion and observation. In a person without diabetes, hypoglycaemia demands investigation: blood for insulin, C-peptide, beta-hydroxybutyrate and a sulfonylurea screen should be taken **at the time of hypoglycaemia** if possible. Causes include sepsis, liver failure, adrenal insufficiency, alcohol, malnutrition, insulinoma and inadvertent or deliberate administration of insulin or sulfonylureas.
+
+## Adrenal crisis {#sec-adrenal}
 
 ::: definition Adrenal crisis {#def-addisonian}
-**The physiology (cortisol-deficiency vasoparesis and catecholamine-resistance plus aldosterone-loss natriuresis in primary disease, unmasked by intercurrent illness, surgery or abrupt steroid withdrawal - [[endocrine/adrenal]], [[physiology/autonomic-nervous-system]], [[cardiovascular/circulation-blood-pressure]]). Recognition (the hypotension-shock-poorly-responsive-to-fluids-and-vasopressors with nausea-vomiting-abdominal-pain-confusion-hypoglycaemia-hyponatraemia-hyperkalaemia-and-metabolic-acidosis-and-eosinophilia-clues - the "abdominal-catastrophe-that-is-not" and the fever-without-source pattern - [[renal/water-sodium]], [[renal/potassium-calcium-phosphate]], [[renal/acid-base-disorders]], [[blood/haematopoiesis]]; the waterhouse-friderichsen-and-anticoagulant-haemorrhage-adrenal-infarction cause - [[blood/haemostasis-bleeding]]). Action (draw-the-cortisol-and-ACTH-and-then-treat-immediately-with-IV-hydrocortisone-100-mg-plus-aggressive-fluids-plus-glucose-and-do-not-wait-for-any-result; the fludrocortisone-unnecessary-in-the-acute-hydrocortisone-dose-point; and the catecholamine-resistance-explanation-for-why-pressors-work-after-steroid - [[endocrine/adrenal]], [[emergency-critical-care/shock-fluids]]). The follow-through (the precipitant hunt and infection-treatment; the slow-taper-and-physiological-replacement-planning and the four-safety-artefacts - card, injection, sick-day-rules, bracelet - and the operative-and-illness-cover protocols - [[surgery/perioperative-care]], [[endocrine/diabetes-complications]]-sick-day-siblings; and the "why is this patient hyponatraemic-and-hypotensive-on-the-ward" habit that catches hospital-acquired-crisis-in-steroid-clinics - [[clinical-skills/patient-safety]], [[geriatrics-palliative/polypharmacy]]).**
+**Adrenal crisis** is an acute, life-threatening deterioration due to cortisol deficiency, with hypotension or shock, often with vomiting, abdominal pain, confusion, fever, hyponatraemia, hyperkalaemia (in primary disease) and hypoglycaemia. It occurs in people with known adrenal insufficiency during illness, in those whose glucocorticoid medication has been stopped or not absorbed, and as the first presentation of Addison's disease.
 :::
+
+People at risk include those with Addison's disease, hypopituitarism, congenital adrenal hyperplasia, and anyone taking long-term glucocorticoids ([[endocrine/adrenal]]). Common triggers are gastroenteritis (which both increases need and prevents absorption of tablets), infection, surgery and trauma. Look for a **Steroid Emergency Card**.
+
+Management (Society for Endocrinology emergency guidance) is immediate and does not wait for results:
+
+1. **Hydrocortisone 100 mg intravenously or intramuscularly at once**, then hydrocortisone 200 mg over 24 hours, as a continuous infusion or as 50 mg every 6 hours.
+2. **Rapid fluid resuscitation** with 0.9% sodium chloride, typically 1 litre over the first hour, then guided by response.
+3. Treat **hypoglycaemia** and monitor potassium and sodium.
+4. Treat the precipitant, and involve the endocrine team.
+5. Once the person is stable and eating, return to oral glucocorticoid at a higher dose, tapering to maintenance over a few days. Fludrocortisone is restarted in primary disease once the hydrocortisone dose is below about 50 mg per day (higher doses have enough mineralocorticoid activity).
+6. Before discharge, review **sick-day rules**, emergency injection training and the steroid card, since a crisis is a sign that prevention failed.
+
+## Thyroid emergencies {#sec-thyroid}
 
 ::: definition Thyroid storm and myxoedema coma {#def-thyroid-emergencies}
-**Thyrotoxic crisis (the catecholamine-sensitized-multi-system-decompensation - fever-and-tachyarrhythmia-and-failure-and-agitation-or-coma-and-hepatic-injury-and-diarrhoea - scored-but-treat-anyway, precipitated by infection-and-surgery-and-iodine-load-and-partum-and-non-adherence-and-trauma - [[endocrine/thyroid]], [[endocrine/diabetes-complications]]-infection-think, [[surgery/perioperative-care]]; management as a bundle - beta-blockade-propranolol-with-the-asthma-and-failure-cautions-and-the-esmolol-infusion-niche - [[respiratory/asthma-copd]], [[cardiovascular/heart-failure]]; the thionamide-then-iodine-order-with-the-organification-block-before-hormone-release-block-logic - [[endocrine/thyroid]]-pharmacology, [[pharmacology/drug-receptor]]; the steroid-block-of-T4-to-T3-conversion-and-adrenal-support-rationale - [[endocrine/adrenal]]; the cholestyramine-enterohepatic-trick - [[gastrointestinal/digestion-absorption]]; the cooling-and-ventilation-and-ICU-care and the plasma-exchange-niche - [[emergency-critical-care/critical-care]], [[blood/transfusion]]; and the definitive-source-plan once stable - [[surgery/gastrointestinal-surgery]]). Myxoedema coma (the hypothermia-hypoventilation-hyponatraemia-hypoglycaemia-bradycardia-ilus-coma syndrome of decompensated hypothyroidism, precipitated by cold-and-infection-and-sedatives-and-surgery-and-non-adherence - the same-precipitants-in-reverse - [[geriatrics-palliative/falls]], [[infectious-diseases/fever-sepsis]], [[pharmacology/adverse-reactions]], [[renal/water-sodium]]-ADH-logic; management - hydrocortisone-before-thyroid-hormone-the-evergreen-sequence-rule, IV-levothyroxine-or-liothyronine-strategy-debates, passive-rewarming-and-monitored-sodium-correction-and-ventilation-decision-and-glucose - [[endocrine/adrenal]], [[endocrine/thyroid]], [[renal/water-sodium]], [[emergency-critical-care/airway-ventilation]]; and the precipitant-treatment-and-do-not-give-excess-thyroid-hormone-to-every-hypothyroid-cardiac-patient-lessons - [[cardiovascular/coronary-artery-disease]]).**
+**Thyroid storm** is life-threatening thyrotoxicosis with decompensation of one or more organ systems: fever, tachycardia or atrial fibrillation, heart failure, agitation, delirium, seizures or coma, and gastrointestinal or hepatic dysfunction (vomiting, diarrhoea, jaundice). The **Burch–Wartofsky Point Scale** helps: a score of 45 or more is highly suggestive, 25–44 suggests impending storm.
+
+**Myxoedema coma** is severe decompensated hypothyroidism with reduced consciousness (not always coma), hypothermia, bradycardia, hypoventilation with carbon dioxide retention, hyponatraemia and hypoglycaemia. It mainly affects older women with long-standing or untreated hypothyroidism.
 :::
 
-::: definition Sodium, calcium and water emergencies {#def-sodium-calcium}
-**Acute severe hyponatraemia (the cerebral-oodema-mechanism and the seizure-or-deterioration threshold, and the hypertonic-saline-bolus-regimen-with-reassessment-and-the-total-correction-limit-guardrails-against-osmotic-demyelination - [[renal/water-sodium]], [[nervous-system/motor-systems]], [[nervous-system/epilepsy]]; the cause-pair-the-SIADH-versus-hypovolaemia-and-the-adrenal-and-thyroid-exclusions-and-the-thiazide-and-SSRI-and-carbamazepine-and-ecstasy-and-post-operative-ADH-list - [[endocrine/adrenal]], [[endocrine/thyroid]], [[pharmacology/adverse-reactions]], [[psychiatry/substance-use]], [[surgery/perioperative-care]]; and the overcorrection-rescue-restrategy - the desmopressin-and-dextrose-re-lowering-protocol - [[endocrine/hypothalamus-pituitary]]). Severe hypernatraemia (the osmotic-brain-volume-shrinkage-and-intracranial-haemorrhage-risk-with-too-fast-correction; the DI-and-hypodipsia-and-salt-poisoning-and-osmotic-diuresis-causes; and the controlled-fall-rate-with-frequent-sodium-measurement-discipline - [[renal/water-sodium]], [[endocrine/hypothalamus-pituitary]]-DI-rows, [[geriatrics-palliative/delirium-dementia-care]]-access-to-water-nursing-failures-adjacent). Calcium crises (the hypercalcaemic-severe-syndrome - volume-depletion-then-saline-then-bisphosphonate-or-denosumab-and-treat-the-malignancy-or-parathyroid-crisis-and-the-renal-failure-dialysis-niche; and the hypocalcaemic-tetany-and-seizure-and-arrhythmia-emergency - IV-calcium-with-cardiac-monitoring-and-magnesium-first-and-the-airway-and-stridor-note - [[endocrine/bone-calcium]]-full-treatment-pages, [[cardiovascular/arrhythmias]], [[nervous-system/epilepsy]], [[renal/potassium-calcium-phosphate]]). Phaeochromocytoma crisis (the hypertensive-encephalopathy-and-flash-oedema-and-shock-variants-and-the-alpha-then-beta-rule-and-the-avoidance-of-glucagon-and-metoclopramide-and-contrast-triggers-and-the-ICU-nicardipine-or-nitroprusside-or-phentolamine-and-magnesium-era-and-the-post-resection-hypotension-and-hypoglycaemia-watch - [[endocrine/adrenal]], [[respiratory/gas-exchange]]-oedema, [[emergency-critical-care/critical-care]]). the dialysis-and-continuous-renal-replacement-adjacent electrolyte niches - [[renal/chronic-kidney-disease]].)**
+Both are usually triggered by a stressor: infection, surgery, trauma, childbirth, or, for storm, radioiodine or stopping antithyroid drugs; for myxoedema coma, cold exposure, sedatives and opioids.
+
+**Thyroid storm** is managed in a high-dependency setting with treatment directed at each step of thyroid hormone action:
+
+- **Block the adrenergic effects**: a beta-blocker, commonly propranolol, which also reduces conversion of T4 to T3 at high doses (with caution in heart failure).
+- **Block new hormone synthesis**: a thionamide. Propylthiouracil is often preferred in storm because it also inhibits peripheral T4-to-T3 conversion; carbimazole is an alternative.
+- **Block hormone release**: iodine (for example Lugol's iodine), given **at least an hour after the thionamide**, so the extra iodine is not used to make more hormone.
+- **Glucocorticoids** (hydrocortisone or dexamethasone): reduce T4-to-T3 conversion and cover possible relative adrenal insufficiency.
+- **Supportive care**: cooling, fluids, treatment of the precipitant, anticoagulation for atrial fibrillation as appropriate. Aspirin is avoided as an antipyretic because it displaces thyroid hormone from binding proteins.
+
+**Myxoedema coma** management:
+
+- **Glucocorticoid first**: give hydrocortisone before or with thyroid hormone until coexisting adrenal insufficiency is excluded, because thyroid hormone increases cortisol clearance and can precipitate adrenal crisis.
+- **Thyroid hormone replacement**: intravenous levothyroxine or liothyronine under specialist guidance. Doses are a balance between correcting a dangerous state and provoking myocardial ischaemia or arrhythmia, especially in older people with heart disease.
+- **Supportive care**: airway support and ventilation for hypercapnia; **passive** rewarming (active external warming can cause vasodilation and collapse); correction of hypoglycaemia and hyponatraemia; cautious fluids; and treatment of infection, which may present without fever.
+
+## Disorders of sodium {#sec-sodium}
+
+Hyponatraemia is the commonest electrolyte abnormality in hospital. Its causes and the role of vasopressin are covered in [[endocrine/hypothalamus-pituitary]] and [[renal/water-sodium]]. Here the focus is the emergency: severe symptoms and the danger of correcting too fast.
+
+::: definition Severe symptomatic hyponatraemia {#def-sodium-calcium}
+**Hyponatraemia** is a serum sodium below 135 mmol/L; **profound** hyponatraemia is below 125 mmol/L. **Severe symptoms** reflect cerebral oedema: vomiting, seizures, reduced consciousness (Glasgow Coma Scale ≤ 8) or cardiorespiratory distress. **Acute** hyponatraemia (documented as developing within 48 hours) is more dangerous because the brain has had no time to adapt; chronic hyponatraemia is better tolerated but more vulnerable to **osmotic demyelination syndrome** if corrected rapidly.
 :::
 
+The 2014 European clinical practice guideline on hyponatraemia (from the European Society of Endocrinology, the European Society of Intensive Care Medicine and European Renal Best Practice) recommends, for **severe symptoms**:
 
-## The first hour, plotted
+- an intravenous **bolus of 150 mL of 3% hypertonic saline** over 20 minutes, repeated (usually up to twice) while checking sodium, aiming for a **rise of 5 mmol/L**, which is usually enough to improve symptoms;
+- then stopping hypertonic saline and treating the cause;
+- **limiting the rise in sodium to 10 mmol/L in the first 24 hours** and 8 mmol/L in each subsequent 24 hours.
 
-::: definition The golden-hour logic of endocrine collapse {#def-golden-hour}
-**Every emergency in this chapter rewards the same first hour, and the [[#def-golden-hour]] figure-style reasoning is worth memorising as a sequence rather than a disease list: **recognise (the pattern-recognition triggers - deep-breathing-plus-vomiting, shock-plus-hyponatraemia, fever-plus-AF-after-stopped-antithyroid-drug, confusion-plus-thiazide-plus-falls, coma-plus-cold-plus-old-thyroid-history - each with its one-number bedside test: ketones, sodium, glucose, cortisol-draw - [[clinical-skills/physical-examination]], [[emergency-critical-care/acute-assessment]]); resample-then-treat (the golden rule that diagnostic bloods must never delay life-saving hormone, fluid or glucose - hydrocortisone-and-fluids-and-glucose-and-insulin-and-antithyroid-bundles above - [[endocrine/adrenal]], [[#def-dka]], [[#def-thyroid-emergencies]]); sequence-correctly (fluids-before-insulin, potassium-before-or-with-insulin, hydrocortisone-before-thyroxine, alpha-before-beta, thionamide-before-iodine, calcium-for-the-quivering-ECG - each a small chapter of harm-avoidance - [[clinical-skills/patient-safety]], [[pharmacology/dosing-principles]]); rate-limit-the-corrections (the sodium-and-glucose-and-osmolality-speed-limits with reassessment chemistry and the overcorrection-rescue options - [[renal/water-sodium]]); escalate-and-search-for-precipitants-in-parallel (the infection-and-ischaemia-and-endocrine-precipitant sweep and the senior-and-ICU-criteria - [[infectious-diseases/fever-sepsis]], [[emergency-critical-care/critical-care]]); and hand-over-to-prevention (the named-precipitant-discharge-summary, the sick-day-rules-and-rescue-kit-and-driving-and-technology-review, and the incident-flags-for-recurrent-attenders - [[clinical-skills/records-handover]], [[endocrine/diabetes-complications]]).**
+Many clinicians use a more cautious limit of about 8 mmol/L in 24 hours for people at high risk of osmotic demyelination: those with sodium below 105 mmol/L, alcohol misuse, malnutrition, hypokalaemia or advanced liver disease.
+
+Overcorrection happens most often when the cause of vasopressin release is suddenly removed: for example when a hypovolaemic person receives fluid, when a thiazide or desmopressin is stopped, or when cortisol is replaced. The kidney then excretes large volumes of dilute urine and sodium rises quickly. If sodium is rising too fast, the trend can be slowed or reversed under specialist supervision with electrolyte-free water and, in some cases, desmopressin.
+
+A rough estimate of the effect of one litre of an infusion uses the **Adrogué–Madias formula**:
+
+$$
+\Delta[\text{Na}^+] \approx \frac{[\text{Na}^+]_{\text{infusate}} - [\text{Na}^+]_{\text{serum}}}{\text{total body water} + 1}
+$$ {#eq-adrogue}
+
+with total body water about 0.5 × weight in women and older men, and 0.6 × weight in younger men. It ignores ongoing urine losses, so it is only a starting estimate; frequent sodium measurement is what keeps correction safe.
+
+## Disorders of calcium {#sec-calcium}
+
+**Acute severe hypercalcaemia** (adjusted calcium above 3.5 mmol/L, or lower with symptoms) causes dehydration, confusion, vomiting, arrhythmia and kidney injury ([[endocrine/bone-calcium]]). Society for Endocrinology emergency guidance:
+
+1. **Rehydrate** with intravenous 0.9% sodium chloride, often 4–6 litres over 24 hours, adjusted for age and cardiac and renal function.
+2. **Intravenous bisphosphonate** (for example zoledronate or pamidronate, with dose adjusted for kidney function) once rehydrated; calcium falls over 2–4 days.
+3. Stop contributing drugs (thiazides, calcium and vitamin D supplements, lithium).
+4. Find and treat the cause; in refractory cases, calcitonin, denosumab or dialysis may be used. Glucocorticoids are effective when hypercalcaemia is driven by calcitriol (granulomatous disease, some lymphomas).
+
+**Acute severe hypocalcaemia** (adjusted calcium below 1.9 mmol/L, or any level with symptoms such as tetany, seizures or arrhythmia, or a prolonged QT) is treated with **intravenous calcium gluconate**: typically 10–20 mL of 10% calcium gluconate in 50–100 mL of 5% glucose over 10 minutes with ECG monitoring, followed by an infusion if needed. **Magnesium** must be measured and replaced, because hypocalcaemia will not correct while magnesium is low. Calcium chloride is more irritant and is reserved for cardiac arrest and critical care.
+
+## Pituitary apoplexy and phaeochromocytoma crisis {#sec-other}
+
+::: definition Pituitary apoplexy {#def-apoplexy}
+**Pituitary apoplexy** is sudden haemorrhage into, or infarction of, a pituitary tumour, often previously unknown. It presents with **sudden severe headache** (which can mimic subarachnoid haemorrhage), vomiting, **visual loss** or field defects, and **ophthalmoplegia** from compression of the cranial nerves in the cavernous sinus. Acute ACTH deficiency can cause adrenal crisis.
+:::
+
+Management: **hydrocortisone** immediately in anyone who is unwell or has visual or neurological signs (after taking blood for cortisol), fluids, urgent **MRI** (or CT if MRI is not available), and referral to the neurosurgical and endocrine teams. Surgical decompression is considered for severely reduced acuity, worsening visual fields or reduced consciousness; many others are managed conservatively with close monitoring. All need later assessment of pituitary function.
+
+**Phaeochromocytoma crisis** is a surge of catecholamines from a phaeochromocytoma or paraganglioma, triggered by anaesthesia, surgery, drugs (glucocorticoids, metoclopramide, beta-blockers without alpha-blockade) or tumour manipulation. It causes severe hypertension or alternating hypertension and hypotension, arrhythmia, myocardial ischaemia or cardiomyopathy, pulmonary oedema and multi-organ failure. Management is in critical care: **alpha-blockade** (intravenous phentolamine, or other agents per local practice), avoidance of beta-blockade until alpha-blockade is established, and supportive care; surgery follows once stable ([[endocrine/adrenal]]).
+
+::: example An older man found confused at home {#ex-hhs}
+An 81-year-old man with type 2 diabetes treated with metformin is found confused after several days of a urinary infection. He is dry and drowsy. Sodium 148 mmol/L, glucose 42 mmol/L, urea 18 mmol/L, blood ketones 0.8 mmol/L, venous pH 7.36, bicarbonate 23 mmol/L. Calculate his osmolality, make the diagnosis, and set treatment targets for the first hours.
+::: solution
+**Osmolality** using [[#eq-osm]]:
+
+$$
+2 \times 148 + 42 + 18 = 296 + 60 = 356 \text{ mOsm/kg}.
+$$
+
+**Diagnosis.** Glucose ≥ 30 mmol/L, osmolality ≥ 320 mOsm/kg, ketones below 3.0 mmol/L, pH above 7.3 and bicarbonate above 15 mmol/L, with clinical hypovolaemia: **HHS**, precipitated by infection.
+
+**Targets** (JBDS principles):
+- Fluid first: 0.9% sodium chloride, aiming for a positive balance over the first 12 hours, watching for heart failure.
+- Osmolality to fall by 3–8 mOsm/kg per hour, so over the first 6 hours a fall of roughly 18–48 mOsm/kg, from 356 to somewhere between about 308 and 338.
+- Glucose to fall by no more than 5 mmol/L per hour.
+- Sodium may rise initially; its fall should not exceed 10 mmol/L in 24 hours.
+- Insulin at 0.05 units/kg/h only once glucose stops falling with fluids alone (his ketones are below 1 mmol/L).
+- Low-molecular-weight heparin, heel protection, potassium monitoring, antibiotics for the infection, stop metformin while acutely unwell.
+:::
+:::
+
+::: example Vomiting and collapse in a woman with Addison's disease {#ex-crisis}
+A 34-year-old woman with Addison's disease has had diarrhoea and vomiting for 24 hours and could not keep her hydrocortisone tablets down. She did not have an emergency injection kit. She is drowsy, blood pressure 72/40 mmHg, sodium 124 mmol/L, potassium 6.1 mmol/L, glucose 3.2 mmol/L. What should be done in the first 15 minutes?
+::: solution
+This is **adrenal crisis** until proven otherwise, and treatment does not wait ([[#thm-suspicion]]).
+
+1. ABCDE; intravenous access; take blood for cortisol, ACTH (optional), electrolytes, glucose and cultures, without delaying treatment.
+2. **Hydrocortisone 100 mg intravenously** immediately (intramuscularly if access is difficult).
+3. **0.9% sodium chloride**, 1 litre rapidly, then reassess.
+4. Treat the hypoglycaemia with intravenous glucose.
+5. ECG for the hyperkalaemia; it usually corrects with hydrocortisone and fluids, but significant ECG changes need standard hyperkalaemia treatment.
+6. Then hydrocortisone 200 mg over 24 hours, treatment of the gastroenteritis, and involvement of the endocrine team.
+
+Before discharge: sick-day rules, an emergency injection kit with training for her and her family, and the Steroid Emergency Card. This episode was preventable.
+:::
+:::
+
+::: example How much will the sodium rise? {#ex-adrogue}
+A 70-year-old woman weighing 60 kg has a seizure. Her sodium is 112 mmol/L. Use the Adrogué–Madias formula to estimate the rise in sodium from a 150 mL bolus of 3% saline (sodium 513 mmol/L). Is the European target of a 5 mmol/L rise likely to need more than one bolus?
+::: solution
+Total body water for an older woman: $0.5 \times 60 = 30$ L.
+
+Change per litre of 3% saline, using [[#eq-adrogue]]:
+
+$$
+\frac{513 - 112}{30 + 1} = \frac{401}{31} \approx 12.9 \text{ mmol/L per litre}.
+$$
+
+For 150 mL (0.15 L): $12.9 \times 0.15 \approx 1.9$ mmol/L.
+
+So each bolus is expected to raise sodium by about 2 mmol/L, and reaching a 5 mmol/L rise may need two or three boluses. This is consistent with the guideline's approach of repeating the bolus while checking sodium. The estimate ignores urine output and must be checked by measurement; after symptoms improve, the total rise is limited to 10 mmol/L in the first 24 hours, and her risk factors (age, possible chronicity) argue for a lower target.
+:::
 :::
 
 ::: widget plot
-f: 100*exp(-0.8*x); 100*exp(-0.25*x)
-x: 0, 8
-y: 0, 100
-labels: \text{hours from collapse},\ %\ \text{survival};\ \text{crisis treated in first hour};\ \text{crisis treated after delay}
-caption: The brutal arithmetic that makes endocrine emergencies a triage category of their own ([[#def-golden-hour]]): untreated adrenal crisis and untreated storm carry steep, partly-recoverable mortality curves, while DKA today dies mostly of the complications of delay and of treatment itself ([[#def-addisonian]], [[#def-thyroid-emergencies]], [[#def-dka]]). The exponentials are illustrative teaching shapes from historical and modern cohort magnitudes, not calibrated risk calculators ([[epidemiology-ebm/measuring-disease]], [[emergency-critical-care/critical-care]]).
+f: 112 + 0.33*x; 112 + 0.8*x
+x: 0, 24
+y: 108, 134
+hlines: 122
+labels: \text{Correction within the limit}; \text{Overcorrection}
+caption: Serum sodium (mmol/L) against hours of treatment for a person starting at 112 mmol/L. The horizontal line marks the 10 mmol/L rise allowed in the first 24 hours. A brisk early rise of about 5 mmol/L relieves symptoms, but continuing at that rate, often because the kidney starts excreting dilute urine, overshoots the limit and risks osmotic demyelination. Simplified straight-line model.
 :::
 
-::: definition Pituitary apoplexy and other endocrine "mimic emergencies" {#def-apoplexy}
-**Pituitary apoplexy (the sudden-haemorrhage-or-infarction-of-a-sellar-tumour syndrome - thunderclap-headache-with-nuchal-rigidity-and-visual-loss-and-ophthalmoplegia-especially-CN-III-and-ptosis-and-diplopia-and-hypopituitarism-with-acute-ACTH-loss-shock-and-hyponatraemia - the SAH-and-meningitis-and-cavernous-sinus-and-aneurysm-differential that subarachnoid-haemorrhage-pathways must catch - [[nervous-system/stroke]], [[nervous-system/headache-pain]], [[endocrine/hypothalamus-pituitary]]; the diagnosis-executed-with-urgent-sellar-imaging-plus-CT-head-for-blood-and-angio-when-aneurysm-live - [[clinical-skills/medical-imaging]]; and the management - stress-dose-hydrocortisone-first-because-it-is-the-thing-that-kills-then-fluids-sodium-and-multidisciplinary-neurosurgical-ophthalmic-decompression-decisions-on-visual-status-and-conscious-level-and-then-the-full-hormone-replacement-rebuild-with-the-long-term-axis-and-recurrence-surveillance - [[endocrine/adrenal]], [[endocrine/thyroid]], [[#def-sodium-calcium]], [[surgery/perioperative-care]]). The other mimics worth naming (the thyrotoxic-periodic-paralysis-young-man-flaccid-after-carbohydrate-with-hypokalaemia-and-hyperthyroidism-unmasking - [[endocrine/thyroid]], [[renal/potassium-calcium-phosphate]], [[nervous-system/motor-systems]]; the Addisonian-pigmented-hypotensive-presenting-as-depression-and-anorexia-and-weight-loss-psychiatric-admission - [[psychiatry/mood-disorders]], [[endocrine/adrenal]]; the myxoedematous-ileus-and-macrocytic-anæmia-and-pericardial-effusion-presentation-with-the-intubation-difficulties-and-drug-clearance-collapse - [[gastrointestinal/bowel-disease]], [[blood/anaemia]], [[cardiovascular/heart-failure]], [[pharmacology/absorption-distribution]]; the Phaeochromocytoma-multi-system-crisis-already-covered-in-[[#def-sodium-calcium]]; and the hypocalcaemic-post-thyroid-surgery-stridor-and-seizure-and-qt-prolongation-rapid-response - [[endocrine/bone-calcium]], [[respiratory/mechanics-breathing]], [[cardiovascular/arrhythmias]]). The common thread is the endocrine-cause-of-a-common-emergency - the reason the acute-medicine doctor keeps hormone questions in the first-five-differential for shock, coma, seizure, weakness and arrhythmia - [[emergency-critical-care/acute-assessment]].)**
-:::
-
-::: example The abdominal pain that is not surgical {#ex-dka-abdo}
-A 17-year-old with 2 days of vomiting, generalised abdominal pain and deep sighing respirations; glucose 31, ketones 6.8, pH 7.05, bicarbonate 8, WCC 19, temperature 37.2; surgical team asked to "exclude an appendix" before the diabetes team arrives.
+::: example Fever, agitation and atrial fibrillation {#ex-storm}
+A 41-year-old woman with Graves' disease stopped carbimazole two months ago. She now has pneumonia, a temperature of 39.4 °C, atrial fibrillation at 160 beats per minute, agitation, diarrhoea and mild jaundice. Free T4 is 68 pmol/L. Outline management, explaining the order of the drugs.
 ::: solution
-**Diabetic ketoacidosis presenting as the classic medical-abdomen-mimic ([[#def-dka]]): the acidosis-kinetics-cause the pain and the leucocytosis-stress-response-not-peritonitis (the Kussmaul breathing misread as anxiety and the "acute abdomen" that quiets within hours of treatment - [[renal/acid-base-disorders]], [[respiratory/mechanics-breathing]]); the answer to the surgeons is the protocol plus observation, not an appendicectomy, while keeping a low threshold to re-examine if pain persists after acidosis closes ([[surgery/acute-abdomen]]-medical-mimics-list). The management details worth naming here: **the-young-patient-cerebral-oedema-vigilance (the-fluid-rate-and-sodium-trajectory-and-neuro-check-and-mannitol-or-hypertonic-rescue-readiness - [[renal/water-sodium]], [[nervous-system/motor-systems]]); the-precipitant-classification (new-type-1-with-antibody-and-C-peptide-testing versus missed-insulin-versus-pump-failure-versus-infection - [[endocrine/diabetes]], [[endocrine/diabetes-complications]]); the-education-not-punishment-ethics (the-adolescent-non-adherence-conversation and the family-meeting and the technology-options-referral - [[paediatrics/adolescent-health]], [[clinical-skills/communication]]); the-DKA-recurrence-prevention-programme (the-sick-day-rules-and-ketone-meter-and-24-hour-access-and-the-driving-and-swimming-and-alcohol-counselling for the future - [[#def-hypo]], [[medical-ethics-law/professionalism-regulation]], [[psychiatry/substance-use]]); and the incident-review-if-the-acidosis-closes-but-the-pain-does-not ([[clinical-skills/patient-safety]], [[clinical-skills/records-handover]]).**
-:::
-:::
+This is **thyroid storm**: severe thyrotoxicosis with fever, tachyarrhythmia, central nervous system and gastrointestinal/hepatic dysfunction, precipitated by infection and stopping antithyroid drugs. Her Burch–Wartofsky score would be well above 45.
 
-::: example The hyponatraemic falls clinic patient {#ex-hypo-na}
-An 82-year-old on bendroflumethiazide and sertraline is brought in after two falls and a week of "not herself"; Na 118, K 3.3, normal CRT, euvolaemic-appearing, confused but mobilising, no seizures; creatinine raised on dehydration markers.
-::: solution
-**Symptomatic severe hyponatraemia with two drug culprits and a hypokalaemia twist ([[#def-sodium-calcium]], [[renal/water-sodium]]): the thiazide-plus-SSRI double-hit (thiazide-impaired-dilution-and-SSRI-SIADH-with-hypokalaemia-worsening-the-concentration-problem - [[pharmacology/adverse-reactions]], [[psychiatry/mood-disorders]]); stop-both-with-substitutes-planned ([[geriatrics-palliative/polypharmacy]], [[cardiovascular/hypertension]]); the acute-restraint-paradox (she is symptomatic-but-not-seizing - the hypertonic-saline-small-bolus-with-urgent-sodium-remeasurement-decision-versus-cautious-correction-with-monitoring, the-rate-limit-and-the-high-risk-for-osmotic-demyelination-label (low-K, low-serum-osmolality, thiazide, women, older age) - [[nervous-system/motor-systems]], [[renal/potassium-calcium-phosphate]]); the-thiazide-hypokalaemia-magnesium-check ([[renal/tubular-function]]); the overcorrection-watch-and-rescue-protocol (the-desmopressin-or-dextrose-re-lowering-plan-and-q2-4h-sodium-chemistry - [[endocrine/hypothalamus-pituitary]]); the-precipitant-closure (the-hypothyroid-and-adrenal-bloods-and-the-drug-reconciliation-and-the-falls-physiotherapy ([[endocrine/thyroid]], [[endocrine/adrenal]], [[geriatrics-palliative/falls]]); and the-deprescribing-note-permanently-marking-thiazide-rechallenge-caution ([[clinical-skills/records-handover]]).**
-:::
-:::
+**Management in a high-dependency setting:**
+1. **Beta-blocker** (for example propranolol) to control heart rate and adrenergic symptoms, with caution if she has heart failure.
+2. **Thionamide**: propylthiouracil (also reduces T4-to-T3 conversion) or carbimazole. Her jaundice needs monitoring, and liver function influences the choice because propylthiouracil can cause liver injury.
+3. **Iodine at least one hour after the thionamide**, so that it blocks hormone release without fuelling new synthesis.
+4. **Glucocorticoid** to reduce peripheral conversion and cover relative adrenal insufficiency.
+5. **Supportive care**: cooling, fluids, antibiotics for pneumonia, anticoagulation decision for atrial fibrillation; avoid aspirin.
 
-::: example The quiet hypothermic patient {#ex-myoedema}
-An 76-year-old nursing-home resident with long "underactive thyroid" and dementia is found drowsy and cold; temperature 32.1 core, HR 48, BP 90/55, Na 124, glucose 3.4, CO2 retained on gas, creatinine raised; family "she stopped her tablets months ago".
-::: solution
-**Myxoedema coma - decompensated hypothyroidism with the hypothermia-hypoventilation-hyponatraemia-hypoglycaemia-bradycardia tetrad and a stopped-medication history ([[#def-thyroid-emergencies]], [[endocrine/thyroid]]): the sequence discipline (blood-cultures-and-TSH-and-free-T4-and-cortisol-and-ACTH-drawn, then IV-hydrocortisone-before-any-thyroid-hormone because of the adrenal-crisis-risk - [[endocrine/adrenal]]; IV-levothyroxine-or-liothyronine-strategy-per-senior-review-with-the-cardiac-ischaemia-caution-in-the-elderly - [[cardiovascular/coronary-artery-disease]]); the supportive bundle (passive-rewarming-at-a-controlled-rate-and-monitored-sodium-correction-with-the-osmotic-demyelination-guardrails-and-cautious-fluids-and-glucose-and-ventilation-decision-with-the-CO2-narcosis-restraint - [[renal/water-sodium]], [[emergency-critical-care/airway-ventilation]], [[nervous-system/motor-systems]]); the precipitant sweep (infection-screen-with-the-blunted-fever-response-caveat-and-the-drug-and-compliance-audit-and-the-cold-exposure - [[infectious-diseases/fever-sepsis]], [[geriatrics-palliative/polypharmacy]], [[pharmacology/adverse-reactions]]); the-ICU-destination-and-the-mortality-honesty-with-the-family ([[emergency-critical-care/critical-care]], [[geriatrics-palliative/palliative-care]]); and the recovery-phase systems-fix (the-long-stopped-tablets-discovered - the adherence-and-capacity-and-dispensing-review, the easy-swallow-and-blister-and-carer-education plan, and the record-note-that-this-was-preventable ([[clinical-skills/communication]], [[medical-ethics-law/consent-capacity]], [[clinical-skills/records-handover]], [[public-health/health-systems-economics]]-dispensing-services)).**
-:::
-:::
-
-::: example The neurosurgical urine output {#ex-triphase}
-Day 3 after craniopharyngioma resection: urine 500 mL/hour for 6 hours, sodium 154, patient too sedated to drink on request; then on day 6 the same patient's sodium falls to 124 with low output.
-::: solution
-**The classic post-injury triphase ADH response in textbook order ([[#def-sodium-calcium]], [[endocrine/hypothalamus-pituitary]]): phase-2 SIADH-like-anticidiuretic-phase-on-day-6-explains-the-second-half-and-is-where-continuing-desmopressin-from-phase-1-causes-dangerous-hyponatraemia. The running rules: **hourly-urine-and-electrolyte-and-sodium-monitoring-with-targets-in-both-directions-and-the-match-replacement-for-the-diuresis-and-the-access-to-water-or-IV-dextrose-matching-plan ([[renal/water-sodium]]); the desmopressin-dose-and-breakthrough-day-protocol-and-the-stop-rules-before-calling-it-permanent ([[endocrine/hypothalamus-pituitary]]); the sodium-correction-rate-guardrails-across-both-phases (the too-fast-up-and-too-fast-down-hazards [[nervous-system/motor-systems]]); the-thirst-mechanism-disruption-recognition (anterior-hypothalamic-damage-and-adipsia-the-hidden-permanent-risk-and-the-forever-water-plan-and-medical-alert (the nursing fluid-balance-charting discipline - [[clinical-skills/patient-safety]])); and the-week-2-reassessment-and-discharge-education-about-the-three-possible-trajectories ([[clinical-skills/communication]], [[clinical-skills/records-handover]]).**
+After recovery, definitive treatment (radioiodine or surgery) is usually recommended ([[endocrine/thyroid]]).
 :::
 :::
 
 ::: quiz
-The first IV fluid for a patient in DKA with hypovolaemic shock is:
-- [x] Isotonic crystalloid volume expansion
-- [ ] 0.18 % dextrose
-- [ ] Sodium bicarbonate
-- [ ] 5 % albumin
+A 72-year-old woman is found drowsy and cold at home. Temperature 33.1 °C, heart rate 44, sodium 121 mmol/L, glucose 3.1 mmol/L, pCO₂ raised. TSH is very high. What is the first hormone treatment?
+- [ ] Intravenous levothyroxine alone
+- [x] Hydrocortisone, given before or with thyroid hormone
+- [ ] Liothyronine by mouth
+- [ ] Active external rewarming with heating blankets
 ::: solution
-**Volume-first ([[#def-dka]], [[emergency-critical-care/shock-fluids]]); insulin-without-fluids-worsens-shock-by-driving-water-intracellularly, dextrose comes only when glucose falls toward-normal with insulin continuing, bicarbonate only for the extreme-acidosis-specific-criteria, and crystalloid beats colloid for the osmotic-dehydration compartment mix ([[renal/water-sodium]]); the balanced-versus-0.9 %-saline debate and its chloride-loading and renal-outcome evidence sits with [[renal/acute-kidney-injury]] and [[epidemiology-ebm/randomised-trials]].**
+This is likely **myxoedema coma**. Coexisting adrenal insufficiency (autoimmune or pituitary) cannot be excluded at this point, and thyroid hormone increases cortisol clearance, so hydrocortisone is given first or together with intravenous thyroid hormone. Rewarming should be passive, ventilation supported if needed, and glucose and sodium corrected.
 :::
 :::
 
 ::: history
-**The emergency-endocrinology lineage: the " diabetic coma" wards of the pre-insulin era and Banting-and-Best's first-patient-vignette ([[endocrine/diabetes]]-history); the DKA-protocol genealogy - the "large-dose subcutaneous insulin" era giving way to the small-dose intravenous-infusion protocols of the 1970s after Austin-and-Alberti's-group's-pharmacokinetic-work and the cerebral-oedema-epidemiology that reshaped paediatric fluid rates ([[paediatrics/acute-childhood-illness]], [[epidemiology-ebm/randomised-trials]]); the sliding-scale's decades-long-unexamined-reign and its evidence-demotion ([[pharmacology/dosing-principles]]); Addison's-disease-and-cortisol-replacement-making-crisis-a-treatable-event-from-1950-onward ([[endocrine/adrenal]]-history); the thyroid-storm-criteria-era (the Burch-Wartofsky-score-making-the-diagnosis-explicit-and-the-outcome-improvement-with-bundle-care - [[endocrine/thyroid]]); the hypertonic-saline-for-symptomatic-hyponatraemia-trials and the two-decade-experiment-of-the-correction-limits (the Scherzer-adjacent-osmotic-demyelination-case-series that wrote today's rate-limits into every guideline - [[nervous-system/motor-systems]], [[renal/water-sodium]]); and the SGLT2-euglycaemic-DKA-signal-and-its-labelling-and-education-lesson for post-marketing surveillance ([[endocrine/diabetes]], [[pharmacology/adverse-reactions]], [[public-health/health-systems-economics]]).**
+In 1937 the pathologist **Harold Sheehan** described necrosis of the anterior pituitary after severe postpartum haemorrhage, now called Sheehan syndrome. In 1957 **William Schwartz** and **Frederic Bartter** described two people with lung cancer who had hyponatraemia with inappropriately concentrated urine, the first description of what became SIADH. In 1959 **Raymond Adams**, **Maurice Victor** and **Elliott Mancall** described central pontine myelinolysis in people with alcohol dependence and malnutrition. Its link with rapid correction of chronic hyponatraemia, established in the 1980s by **Richard Sterns** and others, is why correction limits now form part of every hyponatraemia guideline.
 :::
-
-
-## Systems view: preventing the admission
-
-::: definition The prevention stack {#def-prevention}
-**Endocrine emergencies are unusual among acute presentations in being mostly preventable, and each chapter's failure maps to a fixable system gap. The medication-safety stack (the insulin-and-SGLT2-and-steroid-and-lithium-and-antithyroid-and-SUV high-risk-drug list with sick-day-and-perioperative-and-illness protocols written per-patient and readable per-ward - [[pharmacology/patient-variation]], [[surgery/perioperative-care]], [[clinical-skills/patient-safety]]); the education stack (the structured-education-entitlement - DKA-and-hypo-and-steroid-courses-with-ketone-and-glucagon-prescribing-at-diagnosis-not-at-third-crisis and the teach-back-documentation - [[endocrine/diabetes-complications]], [[clinical-skills/communication]], [[public-health/prevention-promotion]]); the access stack (the 24-hour-specialist-advice-line-and-open-access-clinics-and-e-consulating-for-remote-islands-and-schools-and-care-homes and the cost-and-literacy-and-language-barriers audit - [[public-health/health-systems-economics]], [[public-health/determinants-inequalities]]); the record stack (the problem-list-with-organ-failure-flags-and-the-addison-and-diabetes-registers-and-the-smart-repeat-and-dispensing-safety-net and the paramedic-and-out-of-hours visibility of steroid-dependence - [[clinical-skills/records-handover]], [[emergency-critical-care/acute-assessment]]); the ward-systems stack (the hypoglycaemia-management-policy-with-hypo-protocol-audits-and-the-vTE-and-DKA-and-sodium-order-sets-and-the-endocrine-acute-care-competency-for-general-ward-staff - [[geriatrics-palliative/polypharmacy]] and ward-nursing competency ([[clinical-skills/clinical-reasoning]])); and the population stack (the new-diabetes-type-1-presenting-in-DKA-as-a-nationally-reported-quality-indicator-and-the-public-awareness-campaign-evaluation-and-the-inequality-in-attended-DKA-rates - [[public-health/screening]], [[epidemiology-ebm/observational-studies]], [[public-health/determinants-inequalities]]).**
-:::
-
 
 ## Where this leads
 
-Underlying disease management in [[endocrine/diabetes]], [[endocrine/adrenal]], [[endocrine/thyroid]], [[endocrine/bone-calcium]]; the electrolyte physiology in [[renal/water-sodium]], [[renal/potassium-calcium-phosphate]] and [[renal/acid-base-disorders]]; resuscitation scaffolding in [[emergency-critical-care/shock-fluids]] and [[emergency-critical-care/acute-assessment]]; perioperative prevention in [[surgery/perioperative-care]].
-
-::: exercise Untangle the mixed picture {level=2}
-A 68-year-old in DKA has troponin 3x raised, ST depression, and WCC 24 with a productive cough. Is this an MI, a pneumonia, or the DKA doing both?
-::: solution
-**All-three-reasoning (the demand-ischaemia-type-2-MI-common-in-DKA-stress-and-the-infection-frequently-the-precipitant-and-the-leucocytosis-stress-logic ([[#def-dka]], [[cardiovascular/coronary-artery-disease]], [[infectious-diseases/fever-sepsis]]); the parallel pathway - serial-ECGs-and-troponin-trajectory-and-echo-when-stable-and-antithrombotic-decision-balancing-any-bleeding-risk-and-the-catheter-lab-question-decided-by-seniors-together-not-in-turns ([[emergency-critical-care/acute-assessment]], [[blood/haemostasis-bleeding]]); treat the DKA and the pneumonia and give oxygen and analgesia and monitor ([[renal/acid-base-disorders]], [[microbiology/antimicrobials]]); and the-precipitant-documentation-for-secondary-prevention ([[clinical-skills/records-handover]]).**
-:::
-:::
-
-::: exercise Phone the school {level=2}
-A 9-year-old with Addison's disease is at a school trip with no spare hydrocortisone; he develops fever and vomiting. Write the plan you wish already existed.
-::: solution
-**The-pre-existing-package ([[endocrine/adrenal]], [[endocrine/endocrine-emergencies]]): the-staff-trained-IM-hydrocortisone-with-expiry-checked-kit-and-the-written-dose-ladder-and-the-stand-down-arrangements-and-the-medical-alert-jewellery-and-the-parent-and-clinic-callback; the-sick-day-leaflet-in-the-school-and-the-trip-medication-double-check-belt-brace (spare-at-site-spare-in-car-and-clinic-register [[clinical-skills/patient-safety]]); the-early-medical-review-tripwire (vomiting-equals-injection-equals-hospital-not-watch-and-wait - the-delay-to-death-in-paediatric-Addison-cases-lesson [[paediatrics/acute-childhood-illness]]); the-shared-care-letter-to-GP-and-out-of-hours-and-paediatric-emergency ([[clinical-skills/records-handover]]); and the-family-and-child-empowerment-training-age-appropriate-and-not-fear-based ([[clinical-skills/communication]], [[paediatrics/adolescent-health]]).**
-:::
-:::
-
-
-## Prescribing in the emergency
-
-Emergency endocrine prescribing has its own harm-list, and it belongs next to the treatment bundles above. Levothyroxine in myxoedema coma is given intravenously with cardiac caution and never as the population "treat every low TSH" reflex, which itself causes atrial fibrillation, bone loss and angina in older patients - the same molecule in the same guideline with opposite risk columns depending on dose, age and context - a lesson in indication-versus-reflex prescribing ([[endocrine/thyroid]], [[cardiovascular/arrhythmias]], [[endocrine/bone-calcium]], [[pharmacology/adverse-reactions]]). Hydrocortisone is safe once drawn-but-given; the diagnostic worry is never a reason to withhold it, though it will confound later dynamic testing, so the sample-and-record-and-refer logic matters ([[endocrine/adrenal]], [[clinical-skills/laboratory-tests]]). Iodine before thionamide accelerates thyrotoxicosis - the "Fritz-Wolff-reflex" ordering error with a named mechanism ([[endocrine/thyroid]], [[pharmacology/drug-receptor]]). Beta-blockade before alpha-blockade in phaeochromocytoma leaves unopposed alpha-stimulation and can precipitate pulmonary oedema and stroke - the rule and its catastrophe pair ([[endocrine/adrenal]], [[respiratory/gas-exchange]], [[nervous-system/stroke]]). Dextrose-only management of sulfonylurea hypoglycaemia feeds the beta-cell and rebounds into deeper hypoglycaemia - the observation-period pharmacokinetics lesson ([[#def-hypo]], [[pharmacology/metabolism-excretion]]). And the drug-history itself is the emergency record: steroids, antithyroid drugs, SGLT2 inhibitors, lithium, immune-checkpoint inhibitors causing destructive hypophysitis and adrenalitis, and the illicit testosterone-and-anabolic-supply chain - each a reversible, nameable cause - the drug history is a resuscitation drug in itself, and asking it well is a clinical skill with mortality attached ([[endocrine/hypothalamus-pituitary]], [[pathology/cancer-biology]], [[psychiatry/substance-use]], [[clinical-skills/history-taking]]).
+DKA and hypoglycaemia are covered in depth in [[endocrine/diabetes-complications]]; adrenal insufficiency and phaeochromocytoma in [[endocrine/adrenal]]; thyroid disease in [[endocrine/thyroid]]; calcium disorders in [[endocrine/bone-calcium]]. Shock and fluid therapy are developed in [[emergency-critical-care/shock-fluids]], and the general structure of critical care in [[emergency-critical-care/critical-care]].
 
 ::: summary
-- Hormonal emergencies are recognised by pattern, not by waiting for the hormone assay: shock-with-hyponatraemia-is-crisis-until-excluded, deep-breathing-with-vomiting-is-DKA-until-excluded, fever-with-afib-after-stopping-carbimazole-is-storm-until-excluded.
-- Sequencing rules save lives: fluids before insulin, potassium with insulin, hydrocortisone before thyroxine, alpha before beta, and cortisol-draw-but-treat-anywhere-else.
-- Correct sodium slowly and calcium fast; the brain forgives neither extreme in the wrong direction.
-- Every emergency has a precipitant and the discharge-plan must name it, or the next admission is scheduled.
-- The four artefacts - sick-day rules, ketone meters, steroid cards and injection training, glucagon and hypo-rescue - are the cheapest intensive care there is.
+- Check glucose in every collapsed or confused person, and ketones in every unwell person with diabetes.
+- Treat on suspicion when treatment is safe: glucose for hypoglycaemia, hydrocortisone for adrenal crisis.
+- DKA (JBDS): ketones ≥ 3.0 mmol/L or urine 2+, glucose > 11.0 mmol/L or known diabetes, bicarbonate < 15.0 and/or pH < 7.3.
+- HHS: glucose ≥ 30 mmol/L, osmolality ≥ 320 mOsm/kg, no significant ketosis or acidosis. Fluid first; osmolality down 3–8 mOsm/kg/h; glucose down ≤ 5 mmol/L/h; insulin 0.05 units/kg/h only when fluids alone stop working; thromboprophylaxis.
+- Adrenal crisis: hydrocortisone 100 mg IV/IM immediately, then 200 mg over 24 hours, with fluids.
+- Thyroid storm: beta-blocker, thionamide, iodine an hour later, glucocorticoid, supportive care. Myxoedema coma: hydrocortisone first, IV thyroid hormone, passive rewarming.
+- Severe symptomatic hyponatraemia: 150 mL 3% saline boluses aiming for a 5 mmol/L rise; limit correction to 10 mmol/L in 24 hours (lower in high-risk people).
+- Severe hypercalcaemia: rehydrate, then IV bisphosphonate; symptomatic hypocalcaemia: IV calcium gluconate with ECG monitoring, and correct magnesium.
+- Pituitary apoplexy: hydrocortisone, imaging, neurosurgical review. Phaeochromocytoma crisis: alpha-blockade, never beta-blockade first.
 :::
 
 ## Exercises
 
-::: exercise Sequence the resuscitation {level=1}
-DKA with K 2.9: why does the insulin order change and what is the sequence?
+::: exercise Calculate the osmolality {level=1 check="2*152+38+22"}
+Calculate the osmolality, in mOsm/kg, for sodium 152 mmol/L, glucose 38 mmol/L and urea 22 mmol/L, using $2[\text{Na}^+] + [\text{glucose}] + [\text{urea}]$.
 ::: solution
-**Insulin-drives-potassium-intracellularly-and-starting-it-with-K-already-critical-risks-arrhythmia-and-respiratory-muscle-failure ([[#def-dka]], [[renal/potassium-calcium-phosphate]], [[cardiovascular/arrhythmias]]); hold-or-delay-insulin-until-potassium-repleted-above-threshold-with-continuous-monitoring-then-start-at-full-rate-with-potassium-running; the-fluid-and-observation-orders-proceed-in-parallel ([[emergency-critical-care/acute-assessment]]).**
+$2 \times 152 + 38 + 22 = 304 + 60 = 364$ mOsm/kg.
 :::
 :::
 
-::: exercise Diagnose the shock {level=1}
-A hypotensive, hyponatraemic, hyperkalaemic, hypoglycaemic post-partum woman who "has always been tired since a difficult birth": name the diagnosis and the two immediate orders.
+::: exercise Name the emergency {level=1}
+Give the most likely emergency: (a) sudden headache, bitemporal field loss and double vision in a man with a known pituitary mass; (b) hypothermia, bradycardia and drowsiness in an older woman with untreated hypothyroidism; (c) hypotension, hyperkalaemia and hyponatraemia in a person with vitiligo and type 1 diabetes.
 ::: solution
-**Sheehan-syndrome-adrenal-crisis ([[endocrine/adrenal]], [[endocrine/hypothalamus-pituitary]], [[obstetrics-gynaecology/pregnancy-complications]]): IV-hydrocortisone-and-fluids-first ([[emergency-critical-care/shock-fluids]]); then glucose, electrolytes-and-cortisol-and-ACTH-sampling-and-later-thyroxine-after-cortisol ([[endocrine/thyroid]], [[renal/water-sodium]]).**
+(a) Pituitary apoplexy. (b) Myxoedema coma. (c) Adrenal crisis from primary adrenal insufficiency (Addison's disease); autoimmune diseases cluster together.
 :::
 :::
 
-::: exercise Manage without harm {level=2}
-Sulfonylurea-induced hypoglycaemia in an elderly patient responds to IV dextrose in the ambulance; it recurs at hour 3, and again at hour 6. Fix the plan.
+::: exercise Order the drugs {level=1}
+In thyroid storm, why is iodine given at least an hour after the thionamide?
 ::: solution
-**Recognise-the-long-half-life-continuous-secretion-mechanism ([[#def-hypo]], [[endocrine/diabetes]]); admission-and-prolonged-observation-with-frequent-glucose-checks-and-IV-dextrose-continuation-and-substrate-food-rules; the-octreotide-suppresses-insulin-secretion-option-and-its-monitoring; the-avoid-repeated-boluses-only-chasing ([[emergency-critical-care/acute-assessment]]); the medication-reconciliation-and-kidney-function-review-and-deprescribing-conversation ([[geriatrics-palliative/polypharmacy]], [[renal/chronic-kidney-disease]]); and-the-driving-and-carehome-notification-and-the-switch-to-non-hypoglycaemic-agent ([[medical-ethics-law/professionalism-regulation]], [[endocrine/diabetes-complications]]).**
+Iodine given first would provide substrate for new thyroid hormone synthesis and could worsen thyrotoxicosis. The thionamide blocks thyroid peroxidase first, so that the subsequent iodine acts only to inhibit release of stored hormone.
 :::
 :::
 
-::: exercise Run the storm bundle {level=2}
-A 29-year-old post-partum, off-carbimazole, fever 39.6, HR 165 AF, agitated, diarrhoea, jaundice-tinged: give the first-two-hours bundle and the diagnostic caution about the liver numbers.
+::: exercise The osmolality target {level=2 check="340-6*8"}
+A person with HHS has an osmolality of 340 mOsm/kg. If osmolality falls at the maximum recommended rate of 8 mOsm/kg per hour, what will it be after 6 hours?
 ::: solution
-**Treat-storm-on-suspicion ([[#def-thyroid-emergencies]], [[endocrine/thyroid]]): monitor-and-ICU-and-high-dependency-bed-and-treat-the-precipitant-infection-cultures-and-cover ([[infectious-diseases/fever-sepsis]], [[emergency-critical-care/critical-care]]); beta-blockade-with-esmolol-or-propranolol-and-the-heart-failure-caution ([[cardiovascular/heart-failure]], [[cardiovascular/arrhythmias]]); the-carbimazole-or-PTU-then-iodine-hours-later-order ([[endocrine/thyroid]]-pharmacology); hydrocortisone ([[endocrine/adrenal]]); cooling-and-fluids-and-glucose-and-electrolytes ([[renal/water-sodium]], [[renal/potassium-calcium-phosphate]]); the-liver-jaundice-as-storm-hepatic-dysfunction-versus-drug-hepatotoxicity-versus-hepatitis-decompression ([[gastrointestinal/liver-function]]-interpretation-row, [[microbiology/viruses]]); and the-after-stabilisation-restart-and-adherence-and-contraception-and-breastfeeding-and-definitive-plan ([[obstetrics-gynaecology/postnatal-period]], [[obstetrics-gynaecology/contraception-fertility]]).**
+$340 - 6 \times 8 = 340 - 48 = 292$ mOsm/kg. In practice a slower fall is common and acceptable; falling faster than 8 mOsm/kg per hour risks cerebral oedema and osmotic demyelination.
 :::
 :::
 
-::: exercise Prevent the next one {level=2}
-A patient with autoimmune polyglandular syndrome has had two DKA admissions and one adrenal crisis in a year. What does the ideal prevention package contain?
+::: exercise Estimate the sodium rise {level=2 check="round(10*0.15*(513-118)/(0.6*80+1))/10"}
+A 35-year-old man weighing 80 kg with acute hyponatraemia (sodium 118 mmol/L) receives a 150 mL bolus of 3% saline (sodium 513 mmol/L). Use the Adrogué–Madias formula with total body water $0.6 \times$ weight to estimate the rise in sodium, rounded to one decimal place.
 ::: solution
-**The-personal-emergency-plan (the-sick-day-rules-for-insulin-with-ketone-meters-and-contact-numbers-and-when-to-come-in and the-steroid-sick-day-rules-and-injection-kit-and-cards-bracelet - [[endocrine/diabetes]], [[endocrine/adrenal]], [[endocrine/diabetes-complications]]); the-technology-and-education-review (the-CGM-and-pump-or-injection-strategy-and-structured-course-and-the-adherence-barriers-and-cost-and-literacy-and-deprivation-audit - [[#def-hypo]]-education-adjacent, [[public-health/determinants-inequalities]]); the-24-hour-specialist-access-and-the-open-referral-compact ([[public-health/health-systems-economics]]); the-precipitant-ledger-after-each-attendance-and-the-incident-learning ([[clinical-skills/patient-safety]], [[clinical-skills/records-handover]]); the-psychological-and-family-support-and-school-or-workplace-plans ([[psychiatry/anxiety-disorders]], [[paediatrics/adolescent-health]]-if-applicable); and the-polyglandular-surveillance-schedule (thyroid-and-B12-and-gonadal-and-vitamin-D-coeliac-screening-by-protocol - [[endocrine/thyroid]], [[blood/anaemia]], [[gastrointestinal/bowel-disease]], [[immunology/autoimmunity]]).**
+TBW $= 0.6 \times 80 = 48$ L. Change per litre $= (513 - 118)/(48 + 1) = 395/49 = 8.06$ mmol/L. For 0.15 L: $8.06 \times 0.15 = 1.21$, which rounds to **1.2 mmol/L**.
 :::
 :::
 
-::: exercise Write the ward emergency list {level=3}
-Build the endocrine-ward emergency pre-sets: the five scenarios, the first-hour actions, the drugs and fluids to stock, and the never-events.
+::: exercise HHS or DKA {level=2}
+A 58-year-old woman with type 2 diabetes has glucose 36 mmol/L, ketones 3.8 mmol/L, pH 7.24, bicarbonate 13 mmol/L, sodium 145, urea 14. Classify and explain the implications for treatment.
 ::: solution
-**The five (DKA-and-HHS [[#def-dka]]; adrenal-crisis [[#def-addisonian]]; thyroid-storm-and-myoedema-coma [[#def-thyroid-emergencies]]; severe-hypo-and-hypernatraemia [[#def-sodium-calcium]]; hypo-calcium-and-calcium-crisis [[endocrine/bone-calcium]]-treatment-pages): the-first-hour-actions-with-owners (fluids-and-insulin-and-potassium-and-ketones-grid; hydrocortisone-and-cultures-and-glucose; the-alpha-blockade-call-list; the-hypertonic-saline-bolus-and-rate-limit-checklists); the-stocking-list (the-IV-potassium-concentrations-and-cards-and-the-double-check-rules [[clinical-skills/patient-safety]], hypertonic-saline-3-%-on-the-neuro-and-endo-trolley, IV-calcium-gluconate-and-dignity-of-the-coronary-arrest-link [[cardiovascular/arrhythmias]], IV-hydrocortisone-100-with-recovery-facility, the dextrose concentrations-and-glucagon-nasal-and-IM, IV-antithyroid-and-iodine-and-steroid-and-beta-blockade, and the mannitol-or-hypertonic-cerebral-oedema-set [[nervous-system/motor-systems]]); the-flowsheets-and-alert-criteria (the-hourly-K-and-hourly-glucose-and-q2h-sodium-observation-sets-and-the-escalation-criteria-with-senior-calls-triggers [[emergency-critical-care/acute-assessment]]); the-never-event-list (started-insulin-before-potassium-in-hypokalaemic-DKA; thyroxine-before-hydrocortisone-in-suspected-Sheehan; hypotonic-fluids-in-hypernatraemic-DKA-adjacent-hyponatraemia-mix-ups; re-lowering-sodium-too-fast-in-a-hyponatraemia-with-seizures; and the-missing-transition-overlap-protocol-after-DKA-resolution-with-rebound-ketosis [[#def-dka]]); and the-audit-cycle (the-episode-time-to-insulin-and-time-to-steroid-and-correction-rate-compliance-and-readmission-reason-coding — [[public-health/health-systems-economics]], [[clinical-skills/records-handover]]).**
+Osmolality $= 2 \times 145 + 36 + 14 = 340$ mOsm/kg. She meets the DKA criteria (ketones ≥ 3.0, known diabetes, bicarbonate < 15, pH < 7.3) and the glucose and osmolality criteria for HHS: a **mixed DKA–HHS** picture. Because there is significant ketonaemia, insulin is needed from the start rather than waiting for fluids alone to stop working. But because she is hyperosmolar, fluids and the fall in osmolality and glucose must be managed cautiously, as in HHS. Senior and diabetes team input is essential.
 :::
 :::
 
-## Taking it further
+::: exercise A case with a differential {level=3}
+A 26-year-old woman, three days after an emergency caesarean section complicated by massive haemorrhage, is drowsy and hypotensive despite fluids. Sodium 126 mmol/L, glucose 2.9 mmol/L, potassium 4.2 mmol/L. She has not been able to breastfeed. Give a differential diagnosis, the most likely endocrine cause, and immediate management.
+::: hint
+Think about which gland enlarges in pregnancy and depends on a vulnerable blood supply.
+:::
+::: solution
+**Differential**: ongoing haemorrhage; sepsis (endometritis, wound infection); pulmonary embolism; peripartum cardiomyopathy; drug effects; and **acute hypopituitarism from Sheehan syndrome** (postpartum pituitary infarction).
 
-The infectious-diseases mindset in one paragraph: think in source, route, host and time. Identify the source before naming the syndrome; ask what the exposure history permits and what the local resistance map makes likely; adjust everything for the host standing in front of you; and treat the clock as a drug - the sepsis, endocarditis and meningitis outcomes are functions of hours. Then audit yourself against the two failure modes of the specialty: anchoring on the first plausible organism while the atypical presentation evolves, and de-escalating never - the narrow-spectrum switch that should happen on day three and does not. Both failures are curable by the habit of re-asking, at every review, what the story said yesterday that it no longer says today.
+**Most likely endocrine cause**: Sheehan syndrome causing **secondary adrenal insufficiency**. Hypoglycaemia and hyponatraemia with normal potassium fit cortisol deficiency with preserved aldosterone; failure of lactation fits prolactin deficiency.
+
+**Immediate management**: take blood for cortisol (and later other pituitary hormones), then **hydrocortisone 100 mg intravenously immediately** ([[#thm-suspicion]]); intravenous glucose; fluids; look for and treat other causes in parallel. Thyroid hormone, if needed, comes after glucocorticoid. MRI of the pituitary and endocrine follow-up, with assessment of all axes. She will need sick-day rules and a steroid emergency card.
+:::
+:::
+
+::: exercise Design a prevention bundle {level=3}
+A hospital audit finds three adrenal crises and two cases of DKA in the past year that occurred after admission. Propose an inpatient prevention bundle and justify each element.
+::: solution
+**Adrenal crisis prevention**
+1. **Identify** people on glucocorticoid replacement or long-term steroids at admission (electronic alert, medicines reconciliation, steroid card). Justification: these people cannot mount a stress response.
+2. **Never omit doses**: mark hydrocortisone as a critical medicine; give parenteral hydrocortisone if nil by mouth or vomiting.
+3. **Stress dosing** for surgery and acute illness according to protocol.
+
+**DKA prevention**
+1. **Never omit insulin** in type 1 diabetes: basal insulin continues even when nil by mouth; use a variable-rate insulin infusion when appropriate. Justification: insulin deficiency leads to ketosis within hours.
+2. **Pause SGLT2 inhibitors** before surgery and during acute illness, and check ketones in unwell people taking them.
+3. **Ketone monitoring** when glucose is above 12 mmol/L in type 1 diabetes, or when unwell on SGLT2 inhibitors.
+4. Allow appropriate people to self-manage insulin, and involve the inpatient diabetes team early.
+
+**Across both**: staff education, critical-medicines lists, prompt escalation pathways, and audit of omitted doses and outcomes.
+:::
+:::

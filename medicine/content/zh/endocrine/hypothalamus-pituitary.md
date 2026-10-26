@@ -1,148 +1,323 @@
-垂体是内分泌系统的总机，因此下丘脑-垂体疾病在别处制造两类问题：**驱动过多（一个分泌性腺瘤鞭打靶腺）或过少（垂体功能减退、其中每个下游腺体都是“继发性”衰竭）。加上解剖——一个楔在垂体窝内、视交叉之下、浸在垂体门脉系统里的腺体——你就得到医学上最富教益的化学与几何组合。**
+垂体只有豌豆大小，位于颅底的一个骨性凹窝中，却决定着甲状腺、肾上腺皮质、性腺、肝脏生长信号和乳腺的输出。它是在其上方约一厘米处的下丘脑指挥下完成这些工作的。一旦理解了这种结构，内分泌学的大部分内容都会变得容易，因为几乎每一项激素检测都要成对解读：靶腺的产物，以及驱动该腺体的垂体信号。
 
-本章涵盖垂体解剖与试验、腺瘤与肿块效应、垂体功能减退、高泌乳素血症、肢端肥大症、库欣病、及抗利尿激素障碍。
+本课介绍下丘脑-垂体单元的解剖、使成对结果能够定位病变的反馈逻辑、垂体肿瘤及其引起的激素过多和缺乏综合征，以及垂体后叶对水的调控。库欣综合征的肾上腺病因见[[endocrine/adrenal]]；作为急症的垂体卒中见[[endocrine/endocrine-emergencies]]。
 
-## 总机
+## 解剖与各条轴 {#sec-anatomy}
 
-::: definition 轴、解剖与动态试验 {#def-axes}
-**架构（下丘脑释放与抑制激素——促甲状腺激素释放激素、促肾上腺皮质激素释放激素、促性腺激素释放激素、生长激素释放激素加生长抑素、多巴胺——经低压门脉系统到达腺垂体、这就是为何下丘脑疾病常升高泌乳素（多巴胺抑制丧失、“垂体柄效应”）而摧毁其他各轴；神经垂体作为携带抗利尿激素与催产素的神经组织——[[renal/water-sodium]]、[[obstetrics-gynaecology/labour-birth]]；静脉与海绵窦关系及视交叉的视神经纤维解剖——[[anatomy/head-neck]]、[[nervous-system/sensory-systems]]）。五条腺垂体轴（促甲状腺细胞-甲状腺[[endocrine/thyroid]]；促肾上腺皮质激素细胞-肾上腺[[endocrine/adrenal]]；促生长激素细胞-肝-胰岛素样生长因子1；促乳素细胞-乳腺与性腺[[endocrine/reproductive-endocrinology]]；促性腺激素细胞-性腺——加上[[obstetrics-gynaecology/contraception-fertility]]与[[paediatrics/growth-development]]的发育与临床背景）。反馈逻辑（长环与短环负反馈使垂体衰竭是中枢性而不是外周性——TSH低伴T4低是垂体、TSH高伴T4低是甲状腺——[[physiology/homeostasis-body-fluids]]的调定点机器、[[physiology/hormones]]的分类）。试验规则（功能减退用兴奋试验、功能亢进用抑制试验；动态试验——胰岛素耐受或胰高血糖素查皮质醇与生长激素轴、禁水与 copeptin 查抗利尿激素[[#def-adh]]、地塞米松抑制与口服葡萄糖负荷[[#def-prolactin]]；单一激素快照的陷阱——中枢性疾病中重游离T4而非依赖TSH[[gastrointestinal/liver-function]]——[[endocrine/thyroid]]的中枢性甲减行、晨起皮质醇带其测定与时机警诫[[endocrine/adrenal]]、用胰岛素样生长因子1对抗生长激素的脉冲噪声；及强制的先肾上腺后甲状腺替代规则——[[#def-hypopituitary]]）。影像与视野（垂体方案MRI带海绵窦与垂体柄判读；正式视野与视交叉模式视野计——[[clinical-skills/medical-imaging]]、[[nervous-system/sensory-systems]]）。**
+垂体由两个来源不同的部分组成。**垂体前叶**（腺垂体）由胚胎口腔顶部向上生长而来。它是真正的腺体：其细胞自行合成并分泌激素。**垂体后叶**（神经垂体）由脑向下生长而来。它不含合成激素的细胞，只有下丘脑神经元的神经末梢，释放在下丘脑合成的激素。
+
+因此两部分的调控方式不同。下丘脑神经元将释放激素和抑制激素分泌到正中隆起的毛细血管床中。这些血管沿**垂体柄**下行，形成**垂体门静脉**，并在垂体前叶开放为第二个毛细血管床。释放激素无需先在体循环中稀释，就能以高浓度到达垂体细胞。垂体后叶不需要门脉系统：轴突本身沿垂体柄下行。
+
+垂体位于蝶骨的**蝶鞍**内。其上方隔着一层硬脑膜皱襞的是**视交叉**，来自每侧视网膜鼻侧半的纤维在此交叉。两侧是**海绵窦**，其中走行着颈内动脉和第Ⅲ、Ⅳ、Ⅴ1、Ⅴ2和Ⅵ对脑神经。这些毗邻结构解释了垂体肿瘤的占位效应。
+
+::: definition 垂体前叶的各条轴 {#def-axes}
+**内分泌轴**是由下丘脑激素、垂体激素和靶腺激素组成、并由负反馈闭合的链条。垂体前叶有六种主要激素：
+
+| 下丘脑信号 | 垂体激素 | 靶器官 | 主要产物 |
+|---|---|---|---|
+| 促甲状腺激素释放激素（TRH） | 促甲状腺激素（TSH） | 甲状腺 | 甲状腺素（T4）、三碘甲腺原氨酸（T3） |
+| 促肾上腺皮质激素释放激素（CRH），加上血管升压素 | 促肾上腺皮质激素（ACTH） | 肾上腺皮质 | 皮质醇 |
+| 促性腺激素释放激素（GnRH） | 黄体生成素（LH）和卵泡刺激素（FSH） | 卵巢、睾丸 | 雌二醇、孕酮、睾酮、抑制素 |
+| 生长激素释放激素（GHRH）；生长抑素起抑制作用 | 生长激素（GH） | 肝脏及其他组织 | 胰岛素样生长因子1（IGF-1） |
+| 多巴胺起抑制作用 | 催乳素 | 乳腺 | 乳汁生成 |
+
+催乳素是例外：它的主要下丘脑调控是**抑制性**的，通过多巴胺实现。因此，任何切断垂体柄或阻断多巴胺的因素都会使催乳素升高，而其他激素下降。
 :::
 
-::: definition 腺瘤与肿块效应 {#def-adenomas}
-**流行病学与分类（偶发微腺瘤在现代影像上常见——把垂体功能减退锚定在一个偶发瘤上而漏掉真正病因的陷阱[[clinical-skills/clinical-reasoning]]；大小与激素状态决定检查组合：每个垂体肿块在贴上“无功能性”标签之前都要做激素轴全套加视觉评估；罕见的癌与类癌模拟[[gastrointestinal/pancreas-biliary]]邻近病理[[pathology/cancer-diagnosis]]）。分泌综合征（泌乳素瘤[[#def-prolactin]]；生长激素——[[#def-prolactin]]；促肾上腺皮质激素——[[#def-prolactin]]；甲状腺与促性腺激素分泌的罕见病、其表现是肿块加模拟）。无功能腺瘤与肿块综合征（硬膜牵张的头痛；视交叉压迫先双颞侧偏盲然后视力丧失及瞳孔与视神经萎缩后遗——[[nervous-system/sensory-systems]]；压迫造成垂体功能减退；脑积水与侵袭性海绵窦神经麻痹——[[anatomy/head-neck]]；作为急症的卒中——见[[endocrine/endocrine-emergencies]]）。管理（经蝶手术作为减压与多数生长激素及促肾上腺皮质激素病灶的一线——缓解与脑脊液漏与尿崩并发症判读[[surgery/gastrointestinal-surgery]]邻近颅底[[nervous-system/motor-systems]]；残余灶的放疗与放射外科带垂体功能减退与继发肿瘤的潜伏期——[[public-health/environmental-occupational]]邻近辐射风险；按细胞类型的药物治疗[[#def-prolactin]]；及稳定残余灶的监测影像节奏[[public-health/screening]]）。颅咽管瘤与垂体窝邻居（双峰儿童与老年成人带钙化的囊肿、及垂体柄-下丘脑综合征的多食与肥胖及垂体功能减退[[gastrointestinal/clinical-nutrition]]与[[paediatrics/growth-development]]；视觉与认知随访及下丘脑性肥胖管理的现实[[public-health/prevention-promotion]]邻近；加上Rathke囊肿、脑膜瘤、转移与淋巴瘤的鉴别——[[blood/lymphoma-myeloma]]、[[pathology/diagnostic-pathology]]）。**
+垂体后叶释放两种在视上核和室旁核合成的激素。**精氨酸血管升压素（AVP）**又称抗利尿激素，调控肾脏的水排泄。**催产素**促进射乳和子宫收缩。
+
+## 反馈与成对结果的解读 {#sec-feedback}
+
+::: theorem 负反馈可定位病变 {#thm-feedback}
+在一条闭合的轴中，靶腺激素抑制其自身的垂体和下丘脑驱动信号。因此：
+
+1. 如果**靶腺衰竭**（原发性衰竭），其激素下降，垂体激素**升高**。
+2. 如果**垂体或下丘脑衰竭**（继发性或三发性衰竭），靶腺激素下降，垂体激素**降低或不适当地正常**。
+3. 如果**靶腺自主性功能亢进**，其激素升高，垂体激素**被抑制**。
+4. 如果**垂体肿瘤分泌**促激素，垂体激素和靶腺激素均升高。
 :::
 
-::: definition 垂体功能减退 {#def-hypopituitary}
-**病因（垂体或下丘脑手术与放疗；卒中[[endocrine/endocrine-emergencies]]；切除时代；颅咽管瘤[[#def-adenomas]]；外伤与蛛网膜下腔出血带隐匿的生长激素与促性腺激素流失文献[[nervous-system/stroke]]；Sheehan的产后坏死——[[obstetrics-gynaecology/pregnancy-complications]]、[[obstetrics-gynaecology/postnatal-period]]；妊娠与检查点抑制剂治疗的淋巴细胞性垂体炎——[[obstetrics-gynaecology/pregnancy-antenatal]]、[[immunology/vaccines-immunotherapy]]邻近免疫相关内分泌病（[[endocrine/thyroid]]）；浸润性——结节病、IgG4、组织细胞病、血色病——[[gastrointestinal/liver-disease]]、[[immunology/autoimmunity]]；先天发育不良与垂体柄中断带新生儿低血糖与小阴茎表现——[[paediatrics/newborn]]、[[genetics/mendelian-inheritance]]）。模式（典型丧失顺序——生长激素、然后促性腺激素、然后促甲状腺与促肾上腺皮质激素而神经垂体抗利尿激素通常幸免——解释为何儿童以身材不长就诊[[paediatrics/growth-development]]而成人以疲劳与性欲减退先于可怕缺陷就诊）。按轴症状（皮质醇——疲劳低血压恶心与脆弱、在应激下变成危象[[endocrine/endocrine-emergencies]]；甲状腺——迟钝模拟者；性腺——闭经与性欲与勃起及不育群[[endocrine/reproductive-endocrinology]]；生长激素——体成分与生活质量与骨与心血管综合征[[gastrointestinal/clinical-nutrition]]与[[cardiovascular/vascular-disease]]；神经垂体——受损下丘脑病例的抗利尿激素[[#def-adh]]）。诊断（中枢模式生化加兴奋试验——[[clinical-skills/laboratory-tests]]；及病态甲状腺或阿片或外源性类激素图像能模拟每一条轴的规则[[pharmacology/adverse-reactions]]、[[endocrine/adrenal]]的外源抑制行）。替代顺序要紧：氢化可的松在左甲状腺素之前、因为甲状腺激素加速皮质醇清除并能诱发危象——[[endocrine/adrenal]]、[[endocrine/thyroid]]；应激剂量、激素卡与病日规则及急救针培训——[[endocrine/endocrine-emergencies]]、[[geriatrics-palliative/polypharmacy]]邻近依从性；左甲状腺素滴定到游离T4而非TSH[[endocrine/thyroid]]；性激素替代带生育路径切换——[[endocrine/reproductive-endocrinology]]、[[obstetrics-gynaecology/contraception-fertility]]；及确诊缺乏的成人生长激素替代带胰岛素样生长因子1滴定、成本与公平之辩、及血糖与肿瘤监测警诫——[[public-health/health-systems-economics]]、肿瘤学谨慎文献（[[pharmacology/adverse-reactions]]）。长远（死亡过多的原因——肾上腺替代不足的危象、生长激素与性腺缺乏中的心血管、及下丘脑性肥胖与肿块效应后遗——年度复审带骨密度[[endocrine/bone-calcium]]、血脂[[cardiovascular/vascular-disease]]、及驾驶与保险谈话[[medical-ethics-law/professionalism-regulation]]；及垂体功能减退合并妊娠计划[[obstetrics-gynaecology/pregnancy-complications]]）。**
+::: proof
+反馈使垂体像恒温器一样工作。当腺体输出下降时，垂体感知到不足并增强信号；输出升高时，则减弱信号。垂体激素高而靶腺激素低，意味着控制器在正常工作，但腺体无法响应，故故障在腺体。垂体激素低或正常而靶腺激素低，意味着控制器本身对很大的误差信号没有反应。因此，在这种情况下"正常"的垂体结果其实是异常的：一个正常工作的垂体本应在"大声呼喊"。同样的推理反过来，可以区分腺体自主性亢进（控制器被关闭）与分泌性垂体肿瘤（控制器卡在开启状态）。
 :::
 
-## 分泌综合征
+关键的习惯是绝不单独解读一个结果。游离T4为8 pmol/L本身意义不大，直到与TSH配对。TSH为2.0 mU/L看似令人放心，但与低游离T4并列时，它就是垂体疾病的证据。
 
-::: definition 泌乳素、生长激素与促肾上腺皮质激素过多 {#def-prolactin}
-**高泌乳素血症（多巴胺张力抑制生理——[[physiology/hormones]]；主导真实世界实践的用药病因——抗精神病药及其D2阻滞与利培酮及甲氧氯普胺的强度排序、及不造成精神科伤害地管理抗精神病药引起高泌乳素血症之辩——[[psychiatry/psychotic-disorders]]、[[pharmacology/adverse-reactions]]；原继发性甲减的促甲状腺激素释放激素驱动——[[endocrine/thyroid]]；垂体柄压迫[[#def-adenomas]]；大分子泌乳素——把一个常规数字变成一次不必要扫描的测定假象——[[clinical-skills/laboratory-tests]]；钩状效应——它在一个巨大肿瘤中伪造一个小数字）。后果（溢乳、少经与闭经、不育及勃起与性欲丧失带低雌激素的骨密度代价——[[endocrine/bone-calcium]]、[[gastrointestinal/clinical-nutrition]]——骨侵蚀故事属于[[endocrine/reproductive-endocrinology]]）。治疗（多巴胺激动剂优先即使在巨大腺瘤——卡麦角林主导的药物缩小胜利——[[pharmacology/drug-receptor]]；抗拒或卒中或脑脊液漏时手术；妊娠计划——受孕即停激动剂逻辑对侵袭性巨大腺瘤继续、孕期视野时间表——[[obstetrics-gynaecology/pregnancy-complications]]；及长期骨与性腺管理[[endocrine/reproductive-endocrinology]]）。肢端肥大症（隐匿的生长激素过多——鞋与戒指与下颌与声音的病史使诊断延迟数年、软组织与骨骼及出汗表型伴额部隆起与下颌过大及睡眠呼吸暂停与腕管；心肌病与高血压及糖尿病及结肠息肉与甲状腺结节的共病账本——[[cardiovascular/heart-failure]]、[[endocrine/diabetes]]、[[gastrointestinal/bowel-disease]]、[[endocrine/thyroid]]、[[respiratory/mechanics-breathing]]邻近睡眠呼吸暂停[[nervous-system/sensory-systems]]邻近耳鼻喉与声音[[anatomy/head-neck]]；诊断——胰岛素样生长因子1然后不能被抑制的口服葡萄糖试验带现代测定警诫[[clinical-skills/laboratory-tests]]及MRI；治疗——可切除病灶经蝶优先[[#def-adenomas]]、然后生长抑素类似物（奥曲肽与兰瑞肽带胆石与脂肪泻与心动过缓监测——[[gastrointestinal/pancreas-biliary]]）、培维索孟（受体阻断的工程故事——[[pharmacology/drug-receptor]]）、及难治者放疗；按共病定制的随访与生化控制后过多死亡率正常化的论证——[[public-health/screening]]）。库欣病（皮质醇过多综合征及其诊断陷阱在[[endocrine/adrenal]]自己的半章里处理：尿游离皮质醇与深夜唾液及地塞米松抑制的筛查三联、促肾上腺皮质激素依赖性划分、岩下窦采样的技术、及经蝶治愈与缓解对肾上腺切除时代的争论[[surgery/gastrointestinal-surgery]]与[[endocrine/adrenal]]；这里注意垂体侧的手艺——MRI阴性微腺瘤的手术决定、术后暂时性然后持续性肾上腺皮质功能不全的管理——[[endocrine/adrenal]]、[[endocrine/endocrine-emergencies]]——及假性库欣混杂因素：抑郁、酒精、肥胖、多囊卵巢与依从不良——[[psychiatry/mood-disorders]]、[[psychiatry/substance-use]]、[[endocrine/reproductive-endocrinology]]、[[pharmacology/patient-variation]]）。**
+### 基础试验与动态试验
+
+有些激素可以通过单次基础样本判断：TSH配游离T4，LH和FSH配雌二醇或睾酮，以及催乳素。另一些激素呈脉冲式或节律性分泌，单个数值可能误导。皮质醇在清晨达到峰值，午夜前后最低；GH呈阵发性释放，主要在睡眠中。
+
+对于这些激素，使用**动态试验**。规则很简单：
+
+- 如果怀疑**缺乏**，就设法**兴奋**腺体。不能升高即证实缺乏。例如：评估肾上腺储备的短程促皮质素（Synacthen）试验，以及评估GH和ACTH储备的胰岛素耐受试验或胰高血糖素兴奋试验。
+- 如果怀疑**过多**，就设法**抑制**它。不能下降即证实自主分泌。例如：肢端肥大症中口服葡萄糖负荷对GH的抑制，以及库欣综合征中地塞米松对皮质醇的抑制。
+
+::: warning 在垂体疾病中，TSH正常并不能排除甲状腺激素缺乏
+在继发性（中枢性）甲状腺功能减退症中，TSH可以低、正常甚至轻度升高，因为受损垂体产生的TSH生物活性可能较低。诊断和监测中枢性甲减应使用游离T4。垂体疾病患者若按"使TSH正常化"来调整左甲状腺素剂量，通常会治疗不足。
 :::
 
-::: definition 腺体层面的抗利尿激素障碍 {#def-adh}
-**（抗利尿激素生理与肾处理在[[renal/water-sodium]]；本章拥有病灶层面的视角。）中枢性尿崩症（颅脑损伤与肿瘤及手术及浸润性病因——经蝶术后三相反应带其暂时性-持续性-双相日历、每个病房在称“慢性”之前都该知道[[surgery/gastrointestinal-surgery]]邻近；诊断——配对的血浆与尿渗透压及钠带copeptin的现代角色、及禁水试验的旧世界逻辑——[[clinical-skills/laboratory-tests]]；去氨加压素滴定带突破日安全规则与低钠规避——[[renal/water-sodium]]；口渴完整性要求及取水途径与识别芯片与医疗警示手环纪律）。肾性尿崩症（锂与高钙及低钾及用药清单——[[psychiatry/substance-use]]——锂的肾小管毒性属于[[renal/tubular-function]]与[[psychiatry/mood-disorders]]的监测包；先天性抗利尿激素受体与血管加压素受体2隐性遗传史[[genetics/mendelian-inheritance]]；治疗病因加噻嗪悖论与阿米洛利用于锂及低溶质饮食[[renal/tubular-function]]、[[gastrointestinal/clinical-nutrition]]）。妊娠尿崩与胎盘血管加压素酶故事[[obstetrics-gynaecology/pregnancy-complications]]。原继发性烦渴（精神科与口干模拟者、及用copeptin或监护下试验的鉴别——[[psychiatry/psychotic-disorders]]、[[endocrine/endocrine-emergencies]]的低钠危险）。抗利尿激素分泌不当综合征（异位抗利尿激素小细胞癌与肺及中枢神经及用药病因——[[gastrointestinal/pancreas-biliary]]与[[respiratory/lung-cancer-pleura]]与[[nervous-system/stroke]]及[[pharmacology/adverse-reactions]]的抗精神病药与抗癫痫药与选择性5羟色胺再摄取抑制剂及氯磺丙脲清单；等容量低钠的检查组合带强制的皮质醇与甲状腺排除——[[endocrine/adrenal]]、[[endocrine/thyroid]]——及从限液到尿素与托伐普坦带过度纠正护栏的治疗阶梯——[[renal/water-sodium]]、[[endocrine/endocrine-emergencies]]）。**
+## 垂体肿瘤 {#sec-tumours}
+
+::: definition 垂体腺瘤 {#def-adenomas}
+**垂体腺瘤**是垂体前叶细胞的良性肿瘤。由于这类肿瘤可局部侵袭、生物学行为谱较宽，2022年WHO分类将其称为**垂体神经内分泌肿瘤（PitNET）**；两种名称都在使用。直径小于10 mm的为**微腺瘤**；10 mm及以上的为**大腺瘤**。肿瘤还分为**功能性**（过量分泌某种激素，最常见为催乳素、GH或ACTH）和**无功能性**（无临床激素过多表现；成人中最常见的大腺瘤）。
 :::
 
-::: example 垂体柄数字 {#ex-stalk}
-34岁女性闭经与头痛6个月；MRI显示9毫米垂体病灶；泌乳素1250 mIU/L（轻度升高）、TSH与游离T4正常、视野完整。她因双相谱系疾病一年前开始服利培酮。
+垂体肿瘤可以通过三种方式造成问题：
+
+1. 功能性肿瘤引起的**激素过多**：催乳素瘤、肢端肥大症、库欣病，或少见的分泌TSH的肿瘤。
+2. 大腺瘤压迫正常垂体组织或垂体柄时引起的**激素缺乏**。
+3. 对周围结构的**占位效应**。
+
+典型的占位效应是**双颞侧偏盲**。向上生长的肿瘤从下方压迫视交叉，而来自鼻侧视网膜的交叉纤维正走行于此。这些纤维传导颞侧视野，因此双眼颞侧视野缺失，常始于上象限。患者本人很少察觉；通常在正规视野检查中发现，或因为常撞到侧面的物体而被发现。向侧方扩展进入海绵窦可因脑神经麻痹引起复视。头痛常见，但无特异性。
+
+许多小的垂体病变是在因其他原因进行的扫描中偶然发现的。这类**偶发瘤**在普通人群中很常见。评估要回答三个问题：它是否分泌激素、是否引起垂体功能减退、是否威胁视力？小的无功能偶发瘤通常通过复查影像进行随访。
+
+### 垂体功能减退症
+
+::: definition 垂体功能减退症 {#def-hypopituitary}
+**垂体功能减退症**是一种或多种垂体激素的缺乏。**全垂体功能减退症**是所有垂体激素均缺失。病因包括垂体肿瘤及其治疗（手术或放疗）、垂体卒中、创伤性脑损伤、蛛网膜下腔出血、浸润性和炎症性疾病（结节病、垂体炎）、严重产后出血后的希恩综合征（Sheehan syndrome），以及日益增多的、用于癌症治疗的免疫检查点抑制剂。
+:::
+
+在肿瘤压迫时，激素通常按可识别的顺序丧失：GH和促性腺激素最先，然后是TSH，ACTH最后。由于垂体柄受压，催乳素常常升高而非降低。
+
+症状是各靶腺缺乏的表现，但程度较轻。继发性肾上腺皮质功能减退引起乏力、体重减轻和低血压，并可引起低钠血症。它不会引起艾迪生病（Addison's disease）那样的失盐、高钾血症或色素沉着，因为醛固酮主要受肾素-血管紧张素系统而非ACTH调控，而且ACTH是低而不是高。继发性甲减引起疲倦和畏寒。促性腺激素缺乏引起闭经、性欲减退、勃起功能障碍和不育。成人GH缺乏导致精力下降、中心性脂肪增加以及肌肉和骨量减少；儿童GH缺乏导致身材矮小。
+
+替代治疗针对靶腺激素：氢化可的松、左甲状腺素、性激素，以及部分病例中的GH。注射促性腺激素可恢复生育能力。
+
+::: warning 先补充皮质醇，再补充甲状腺素
+对于同时存在ACTH和TSH缺乏的患者，先开始左甲状腺素可诱发肾上腺危象。甲状腺激素加快皮质醇代谢并提高代谢需求，使皮质醇不足暴露出来。应先开始或同时开始糖皮质激素替代，甲状腺素随后。所有接受糖皮质激素替代的人都需要掌握患病期间的用药规则（sick-day rules）并持有类固醇急救卡（[[endocrine/adrenal]]）。
+:::
+
+## 垂体激素过多综合征 {#sec-excess}
+
+### 催乳素
+
+::: definition 高催乳素血症 {#def-prolactin}
+**高催乳素血症**是血清催乳素升高。高催乳素抑制GnRH脉冲，从而降低LH、FSH和性激素。女性表现为月经稀发或闭经、不孕，有时出现**溢乳**（不适当的乳汁分泌）。男性表现为性欲低下、勃起功能障碍，肿瘤较大时还有占位效应，因为男性往往就诊较晚。
+:::
+
+病因最好按机制记忆：
+
+- **生理性**：妊娠、哺乳、应激（包括静脉穿刺）、睡眠。
+- **阻断多巴胺的药物**：大多数抗精神病药（尤其是利培酮和氨磺必利）、甲氧氯普胺和多潘立酮。这是轻度升高最常见的原因。
+- **到达垂体的多巴胺减少**：任何较大的鞍区肿物压迫垂体柄（**垂体柄效应**）。
+- **分泌催乳素的肿瘤（催乳素瘤）**。
+- **其他**：原发性甲减（TRH刺激催乳素分泌）、慢性肾脏病（清除减少），以及**巨催乳素**，即催乳素与免疫球蛋白G形成的复合物，许多检测方法可以测出它，但它没有生物活性。
+
+升高的幅度有提示意义。催乳素达数千mU/L并伴大腺瘤，提示大催乳素瘤。大型无功能大腺瘤伴轻度升高（例如低于2,000 mU/L），属于垂体柄效应；肿瘤本身并不分泌催乳素。区分两者很重要，因为催乳素瘤通常在药物治疗后缩小，而无功能肿瘤不会。
+
+**多巴胺受体激动剂**（首选卡麦角林（cabergoline），溴隐亭（bromocriptine）是较早的替代药物）是大多数催乳素瘤的一线治疗，即便是威胁视力的大肿瘤也是如此。它们降低催乳素，通常在数周内使肿瘤缩小。重要的不良反应包括恶心、体位性低血压和**冲动控制障碍**（病理性赌博、性欲亢进、强迫性购物），应事先告知患者。在帕金森病所用的较高剂量下，卡麦角林可引起心脏瓣膜纤维化，因此部分病例需超声心动图监测。手术用于不耐受或耐药者。
+
+### 生长激素：肢端肥大症
+
+**肢端肥大症**是成人的GH过多，几乎都由垂体腺瘤引起。在骨骺闭合之前，GH过多导致**巨人症**。GH主要通过肝脏产生的IGF-1起作用。变化在数年中缓慢发展：手足增大（戒指和鞋子不再合适）、面容粗糙伴下颌和眉弓突出、牙列稀疏、舌体增大、多汗、头痛、腕管综合征和关节病。严重后果主要是心血管方面的：高血压、心肌病、2型糖尿病和阻塞性睡眠呼吸暂停。结肠息肉也更常见。
+
+筛查试验是**血清IGF-1**，它反映全天GH分泌的总和。确诊依据是在75 g**口服葡萄糖耐量试验**中GH不能被抑制；健康人的葡萄糖会抑制GH。治疗通常为**经蝶窦手术**。手术未能治愈时，可使用生长抑素类似物（奥曲肽、兰瑞肽）、GH受体拮抗剂培维索孟（pegvisomant）及放疗。
+
+### ACTH：库欣病
+
+**库欣病**是由分泌ACTH的垂体腺瘤引起的皮质醇过多。它是内源性库欣综合征最常见的病因。这些肿瘤通常是微腺瘤，常常小到MRI无法显示。皮质醇过多的检查，以及如何区分垂体、异位和肾上腺来源，见[[endocrine/adrenal]]。
+
+## 垂体后叶与水 {#sec-water}
+
+血管升压素将血浆渗透压维持在大约275–295 mOsm/kg的狭窄范围内。下丘脑的渗透压感受器探测到渗透压升高，同时触发口渴和血管升压素释放。血管升压素作用于肾集合管的**V2受体**，将**水通道蛋白2**插入细胞膜，使水被重吸收、尿液被浓缩。血容量大幅下降也会刺激血管升压素分泌，并可凌驾于渗透压调控之上。肾脏方面的内容见[[renal/water-sodium]]。
+
+血浆渗透压可由常规结果估算：
+
+$$
+\text{计算渗透压} \approx 2[\text{Na}^+] + [\text{葡萄糖}] + [\text{尿素}]
+$$ {#eq-osm}
+
+所有浓度单位均为mmol/L。钠乘以2，是为了计入与其相伴的阴离子。
+
+::: definition 精氨酸血管升压素缺乏与抵抗 {#def-adh}
+**精氨酸血管升压素缺乏（AVP-D）**，旧称中枢性尿崩症，是血管升压素分泌不足。**精氨酸血管升压素抵抗（AVP-R）**，旧称肾性尿崩症，是肾脏对血管升压素反应不足。2022年，一个国际工作组更改了这些名称，并得到主要内分泌学会的认可，原因是"尿崩症"（diabetes insipidus）常与糖尿病（diabetes mellitus）混淆，有时造成有害后果。两种疾病都引起稀释尿的**多尿**（成人每日尿量超过约3 L），伴口渴和**多饮**。
+:::
+
+AVP缺乏的病因包括垂体手术、头部外伤、下丘脑附近的肿瘤（如颅咽管瘤）、浸润性疾病（朗格汉斯细胞组织细胞增生症、结节病）和罕见的遗传类型；许多病例原因不明。值得注意的是，普通的垂体腺瘤很少引起AVP缺乏，因为血管升压素是在下丘脑合成的。鞍区肿物伴多尿的患者应提示考虑其他诊断。AVP抵抗的病因包括锂盐、高钙血症、低钾血症，以及遗传性V2受体或水通道蛋白2缺陷。
+
+主要的鉴别诊断是**原发性烦渴**：过度饮水，有时与精神疾病相关，它稀释血浆、抑制血管升压素，并冲刷掉肾髓质的浓缩梯度。此时血钠倾向于正常低值，而AVP缺乏时血钠倾向于正常高值，因为患者在不断追补丢失的水分。
+
+经典试验是**禁水试验**。在监护下禁止饮水，同时测定体重、血浆渗透压和尿渗透压。如果尿液能正常浓缩，则该轴完整（原发性烦渴，尽管冲刷效应会削弱反应）。如果不能浓缩，则给予**去氨加压素（desmopressin）**，一种合成的V2受体激动剂：尿渗透压升高提示AVP缺乏，不升高提示AVP抵抗。近年来的研究显示，在高渗盐水或精氨酸刺激后测定**和肽素（copeptin）**（血管升压素前体的一个稳定片段），区分AVP缺乏与原发性烦渴更为准确，已在专科中心使用。
+
+AVP缺乏的治疗是去氨加压素。主要危险是在随意饮水的同时使用去氨加压素引起**低钠血症**，因此需要指导患者饮水并监测血钠。垂体手术后可出现**三相反应**：一过性AVP缺乏，然后数日内受损神经元不适当地释放血管升压素（伴低钠血症），如果死亡的神经元足够多，最后发展为永久性缺乏。
+
+### 抗利尿不适当综合征
+
+相反的问题是，尽管血浆渗透压低，血管升压素分泌仍持续存在。这就是**抗利尿激素分泌失调综合征（SIADH）**，也称抗利尿不适当综合征。其基本诊断特征是：
+
+- 低渗性低钠血症（血浆渗透压低于275 mOsm/kg）；
+- 尿液不适当地浓缩（尿渗透压高于100 mOsm/kg）；
+- 在正常盐和水摄入下尿钠高于30 mmol/L；
+- 临床上容量正常；
+- 甲状腺和肾上腺功能正常，近期未使用利尿剂。
+
+常见病因有肺部疾病（肺炎、小细胞癌）、中枢神经系统疾病（脑膜炎、出血、头部外伤）、药物（SSRI类、卡马西平、环磷酰胺、阿片类）以及伴疼痛和恶心的术后状态。限水是慢性SIADH的一线治疗。纠正血钠的安全速度以及严重症状性低钠血症的处理，见[[endocrine/endocrine-emergencies]]。
+
+::: example 一位疲倦男性的成对结果 {#ex-stalk}
+一位48岁男性两年来乏力、性欲低下、勃起功能障碍。他开始撞到门框。检查结果：睾酮4.1 nmol/L（低），LH 1.2 IU/L（正常低值），游离T4 9 pmol/L（低），TSH 1.8 mU/L（正常），上午9时皮质醇110 nmol/L（低），催乳素1,150 mU/L（升高；参考上限约400）。MRI显示一个28 mm的鞍区肿物压迫视交叉。请解读这些结果，并判断这是否为催乳素瘤。
 ::: solution
-**两个似是而非的病因与一个检验区分它们（[[#def-prolactin]]）：泌乳素瘤的泌乳素大致与大小成比例——巨大腺瘤对应巨大数字（常>2000-6000 mIU/L）、而9毫米微腺瘤很少超过几百；垂体柄效应加利培酮能舒适地解释1250——解药是与精神科合作的监护下药物替换（一个低泌乳素风险的药物）与数周后复查水平、不是垂体手术（[[psychiatry/psychotic-disorders]]、[[pharmacology/adverse-reactions]]、[[clinical-skills/clinical-reasoning]]）。检查组合的其余部分：**先做妊娠试验（[[obstetrics-gynaecology/early-pregnancy]]）；腺垂体全套含晨起皮质醇之问（[[clinical-skills/laboratory-tests]]）；促性腺激素与雌二醇模式用于低下性对高泌乳素性闭经的划分（[[endocrine/reproductive-endocrinology]]）；若数字不守规矩则查大分子泌乳素（[[clinical-skills/laboratory-tests]]）；长期闭经的骨密度与雌激素替代思考（[[endocrine/bone-calcium]]）；及给这个偶见者的清晰MRI监测规则、使该病灶不会变成诊断（[[public-health/screening]]、[[clinical-skills/records-handover]]）。**
+**第1步：定位缺乏。** 低睾酮而LH不升高、低游离T4而TSH正常、低皮质醇，全都符合[[#thm-feedback]]的第2种模式：垂体对下降的靶腺激素没有反应。他患有继发性性腺功能减退、继发性甲减和可能的继发性肾上腺皮质功能减退。
+
+**第2步：解释撞门。** 28 mm肿物压迫视交叉提示双颞侧偏盲，使双侧周边视野丧失。需要正规视野检查。
+
+**第3步：解读催乳素。** 28 mm的大催乳素瘤通常会使催乳素达到数千至数万mU/L。大肿瘤伴催乳素升高至1,150 mU/L，符合**伴垂体柄效应的无功能大腺瘤**。（实验室还会通过稀释样本复测，排查"钩状效应"，即催乳素极高时检测读数反而假性偏低的一种检测伪差。）
+
+**第4步：处理顺序。** 先开始糖皮质激素替代，再开始左甲状腺素（见上方警示）。紧急转诊至垂体多学科团队。威胁视力的无功能大腺瘤采用经蝶窦手术治疗；多巴胺受体激动剂能降低催乳素，但不能缩小这种肿瘤，也不能挽救他的视力。
 :::
 :::
 
-::: example 筛查困境 {#ex-cushing}
-41岁体重增加、服舍曲林的抑郁、每日2单位酒精、高血压与皮肤变薄：夜间1毫克地塞米松抑制后08:00皮质醇145 nmol/L（轻度未被抑制）、尿游离皮质醇正常两次、深夜唾液皮质醇正常一次。
+::: example 新处方后出现溢乳 {#ex-prolactin-drug}
+一位26岁患精神分裂症的女性四个月前改用利培酮。她的月经停止，并注意到乳头有乳白色溢液。妊娠试验阴性。催乳素2,400 mU/L。甲状腺功能和肾功能正常。最可能的原因是什么？下一步应如何处理？
 ::: solution
-**一个模棱的筛查、不是一个诊断（[[endocrine/adrenal]]的筛查阶梯与[[#def-prolactin]]库欣行）：在场的是混杂因素（抑郁与失眠与肥胖的假性库欣生理——[[psychiatry/mood-disorders]]、[[physiology/hormones]]的应激轴；依从性与时机复查——[[pharmacology/patient-variation]]）。动作：在更严格条件下重复（贴标签之前两个不同模态的异常试验；地塞米松水平与细胞色素P450 3A4相互作用用药审查——[[pharmacology/metabolism-excretion]]）；抑郁与酒精优化后复测路径；午夜唾液与尿的不一锤定音（复查尿游离皮质醇带肌酐清除核查——[[clinical-skills/laboratory-tests]]、[[renal/filtration]]）；及记录清晰的停止规则：“轻度生化异常而无特征”要被随访、而不是被查进放射科（[[clinical-skills/patient-safety]]、[[clinical-skills/records-handover]]）——促肾上腺皮质激素与定位级联保留给真正的生化（[[endocrine/adrenal]]）。**
+在服用阻断多巴胺的抗精神病药的人中，这种幅度的催乳素升高最常见的原因就是药物本身。利培酮是最容易升高催乳素的抗精神病药之一。妊娠、甲减和肾病均已排除。
+
+下一步不是突然停药，那样有精神病复发的风险。若临床上合适，处方者和精神科团队可考虑换用不升高催乳素的抗精神病药（常用阿立哌唑），之后复查催乳素。如果无法换药，或催乳素持续升高，可行垂体MRI以排除同时存在的肿瘤。高催乳素血症导致的长期性腺功能减退会降低骨密度，因此未经处理的持续闭经需要重视。决策应与她本人及其精神科团队共同作出（[[psychiatry/psychotic-disorders]]）。
 :::
 :::
 
-::: example 多尿的精神科病房患者 {#ex-polydipsia}
-45岁服氯氮平的精神分裂症患者每日饮约9升；尿渗透压140伴血浆275与钠138；监护下过夜禁水后尿渗透压升至520；加去氨加压素几乎无增加。
+::: example 低钠血症中渗透压的计算 {#ex-osmolality}
+一位71岁因肺炎入院的男性，血钠124 mmol/L，葡萄糖6.0 mmol/L，尿素4.0 mmol/L。实测血浆渗透压258 mOsm/kg，尿渗透压480 mOsm/kg，尿钠54 mmol/L。他临床容量正常，未服用利尿剂，甲状腺功能和皮质醇正常。请计算渗透压并解读。
 ::: solution
-**原发性烦渴、不是尿崩症（禁水试验生理：内源性抗利尿激素存在、肾脏有反应、髓质冲洗解释次最大的520——[[#def-adh]]、[[renal/water-sodium]]、[[renal/tubular-function]]的浓度梯度侵蚀）。区分为何要紧：本例给去氨加压素会造成低钠伴癫痫风险（过度纠正反转的伤害——[[endocrine/endocrine-emergencies]]、[[renal/water-sodium]]）；管理是行为与药物的（口渴回路与抗精神病药口干审查——[[psychiatry/psychotic-disorders]]、[[pharmacology/adverse-reactions]]；随病房作息的定时补液与低盐饮食；复发期间的钠监测；及风险规则：合并发病或限制会把烦渴变成急性低钠、反之变成高钠——[[clinical-skills/patient-safety]]）；copeptin时代的脚注（刺激后copeptin如今无需禁水表演即可分开多数病例——[[clinical-skills/laboratory-tests]]）。**
+用[[#eq-osm]]：
+
+$$
+2 \times 124 + 6.0 + 4.0 = 248 + 10 = 258 \text{ mOsm/kg}。
+$$
+
+计算值与实测渗透压一致，因此没有未测定的渗透性物质（无渗透压间隙）。低钠血症是**低渗性**的（258低于275）。尿液被浓缩（480 mOsm/kg，远高于100），说明尽管血浆稀释，血管升压素仍在起作用。尿钠高于30 mmol/L，容量正常，甲状腺、肾上腺和利尿剂原因均已排除。这符合**SIADH**的标准，此处最可能由肺炎引起。处理是治疗肺炎并限水，同时密切监测血钠。
+:::
+:::
+
+::: example 精神科病房中的多尿 {#ex-polydipsia}
+一位39岁女性每日尿量约7 L。血钠136 mmol/L，尿渗透压110 mOsm/kg。她因双相障碍服用锂盐。在监护下的禁水试验中，她的血浆渗透压升至301 mOsm/kg，而尿渗透压仍为160 mOsm/kg。给予去氨加压素后，尿渗透压为180 mOsm/kg。诊断是什么？
+::: solution
+**解读禁水阶段。** 血浆渗透压已升至正常范围以上，这对血管升压素是强烈刺激，但尿液几乎没有浓缩。这排除了原发性烦渴，因为后者会出现浓缩（即使部分减弱）。
+
+**解读去氨加压素阶段。** 健康的肾脏，或缺乏血管升压素的肾脏，对去氨加压素应有尿渗透压的大幅升高，通常远超50%。这里从160升至180 mOsm/kg，升高$20/160 = 12.5\%$。肾脏对血管升压素没有反应。
+
+**诊断：** **精氨酸血管升压素抵抗**（肾性尿崩症），锂盐是明显的病因。锂通过钠通道进入集合管细胞，并减少水通道蛋白2的表达。处理需与她的精神科医生共同进行：是否继续锂盐、确保她随时能获得饮水、检查血钙（高钙血症也会引起抵抗），并认识到如果她无法饮水（例如术后或患病期间），她有发生严重高钠血症的风险。
 :::
 :::
 
 ::: widget plot
-f: 100+95*x; 560
-x: 0, 5
-y: 0, 700
-labels: \text{去氨加压素后小时数},\ \text{尿渗透压（mOsm/kg）};\ \text{中枢性尿崩反应};\ \text{抗利尿激素完整参考下限}
-caption: 去氨加压素反应的理念（[[#def-adh]]）：一个尿稀的中枢性抗利尿激素缺乏患者在完整肾受体的外源去氨加压素起作用后迅速浓缩（[[renal/tubular-function]]的水通道蛋白2机器）、而肾性尿崩几乎不动（[[renal/tubular-function]]的锂与通道病变故事）、及原发性烦渴在去氨加压素之前的禁水中浓缩（[[psychiatry/psychotic-disorders]]）。现代实践用配对copeptin与渗透压化学生取代经典两日试验的多数（[[clinical-skills/laboratory-tests]]、[[renal/water-sodium]]）；去氨加压素过量补充的低钠危险是[[endocrine/endocrine-emergencies]]主题、带其[[renal/water-sodium]]渗透性脱髓鞘推论（[[nervous-system/motor-systems]]）。
-:::
-
-::: example 卒中交接 {#ex-apoplexy}
-52岁已知1.4厘米无功能腺瘤患者被送来，伴雷击样头痛、呕吐、视物模糊与低血压；钠126、随机皮质醇98 nmol/L、血糖3.1。
-::: solution
-**垂体卒中——腺体内出血的急症（[[endocrine/endocrine-emergencies]]一章拥有规程；这里的各轴）：急性皮质醇缺乏伴低血糖与低钠及低血压即刻致命、并在一切之前给应激剂量氢化可的松（[[endocrine/adrenal]]、[[endocrine/endocrine-emergencies]]）；低钠的判读（皮质醇丧失解抑制的抗利尿激素加容量——[[renal/water-sodium]]的纠正过快护栏）；视觉与神经外科决定合作时正式视野、紧急MRI、及为减压的内外科联合审查——[[nervous-system/sensory-systems]]、[[nervous-system/motor-systems]]；凝血病排除（[[blood/haemostasis-bleeding]]）；及之后（垂体功能减退全套替代方案及其先激素后甲状腺的顺序——[[#def-hypopituitary]]；驾驶与驾照申报及医疗警示手环谈话（[[medical-ethics-law/professionalism-regulation]]）；钠与液体轨迹记录（以渗透压为首的[[renal/water-sodium]]）；及卒中进高血压邻近的重症生理——[[emergency-critical-care/critical-care]]）。**
-:::
+f: 100*x/(1+x); 100*0.3*x/(1+0.3*x)
+x: 0, 20
+y: 0, 100
+labels: \text{正常垂体反应}; \text{储备降低}
+caption: 动态试验的简化示意。刺激（横轴，任意单位）产生激素反应（纵轴，最大值的百分比）。储备降低的腺体基础水平可能正常，但对刺激反应不良，这就是用兴奋试验检测缺乏的原因。仅为示意模型。
 :::
 
 ::: quiz
-在合并促肾上腺皮质激素与促甲状腺激素缺乏时、替代必须始于：
-- [ ] 左甲状腺素、以恢复代谢清除
-- [x] 氢化可的松、因为甲状腺激素加速皮质醇清除并能诱发肾上腺危象
-- [ ] 两者同时足量
-- [ ] 生长激素
+一位60岁女性游离T4降低，TSH为1.5 mU/L（在参考范围内）。下列哪项正确？
+- [ ] 她的甲状腺功能正常，因为TSH正常。
+- [x] 这种模式提示继发性甲减，需要评估垂体。
+- [ ] 她患原发性甲减，应以TSH随访。
+- [ ] TSH正常证明问题出在甲状腺本身。
 ::: solution
-**甲状腺素加速皮质醇代谢（[[endocrine/adrenal]]的皮质醇动力学与[[endocrine/thyroid]]的药理）暴露致死性低皮质醇血症——[[#def-hypopituitary]]的顺序规则；生长激素若用则最后、且只在肾上腺轴稳定之后（[[endocrine/endocrine-emergencies]]）；病日与驾驶咨询属于同一教学时刻（[[clinical-skills/communication]]、[[medical-ethics-law/professionalism-regulation]]）。**
+游离T4降低时，正常工作的垂体应产生高TSH。正常的TSH是不适当地偏低，说明控制器在衰竭（[[#thm-feedback]]，第2种模式）。她需要检查其他垂体轴，尤其是皮质醇，并行垂体影像检查。治疗应以游离T4而非TSH监测。
 :::
 :::
 
 ::: history
-**内分泌-垂体谱系：Hillis于1921年的神经垂体提取物（“漏斗部”）开启了激素替代医学；Cushing于1900-12年的肢端肥大症与外科系列（外科医师-内科医师原型——[[surgery/gastrointestinal-surgery]]邻近）；Sheehan于1937年的产后坏死临床病理语料库（[[obstetrics-gynaecology/pregnancy-complications]]）；门脉血管解剖描述（Popa与Fielding 1930）解释了垂体柄效应（[[anatomy/head-neck]]）；Schally与Guillemin长达十年的促性腺激素释放激素与促甲状腺激素释放激素分离及测序（1977年诺贝尔奖）创造了类似药产业（[[pharmacology/drug-receptor]]）；Carlsson的多巴胺发现使泌乳素抑制治疗成为可能（[[psychiatry/psychotic-disorders]]邻近药理谱系）；Hardy与经蝶时代的显微外科及Wilson的经蝶标准化（[[surgery/gastrointestinal-surgery]]）；现代岩下窦采样与7特斯拉MRI用于隐匿库欣的手艺（[[endocrine/adrenal]]）；copeptin兴起取代禁水表演（[[clinical-skills/laboratory-tests]]）；及检查点抑制剂垂体炎文献提醒所有人旧病会有新病因（[[immunology/vaccines-immunotherapy]]、[[endocrine/endocrine-emergencies]]）。**
+垂体通过血液而非神经受脑调控的观点，由英国解剖学家**杰弗里·哈里斯（Geoffrey Harris）**在20世纪40至50年代提出，他证明门静脉将下丘脑信号输送到垂体前叶。证据来自**罗歇·吉耶曼（Roger Guillemin）**和**安德鲁·沙利（Andrew Schally）**：他们在相互竞争的实验室中处理了数十万只羊和猪的下丘脑组织，分离并测定了TRH（1969年）和GnRH（1971年）的序列。他们与**罗莎琳·耶洛（Rosalyn Yalow）**分享了1977年诺贝尔生理学或医学奖，耶洛发明的放射免疫分析使测定血液中的这些激素成为可能。更早时，**哈维·库欣（Harvey Cushing）**在20世纪最初几十年开创了垂体手术，并于1932年描述了由垂体嗜碱性腺瘤引起、如今以他的名字命名的综合征。
 :::
 
-## 通向何处
+## 后续内容
 
-靶腺在[[endocrine/thyroid]]、[[endocrine/adrenal]]、[[endocrine/reproductive-endocrinology]]；急症（卒中、危象、钠）在[[endocrine/endocrine-emergencies]]；水与钠生理在[[renal/water-sodium]]；生长在[[paediatrics/growth-development]]；妊娠相互作用在[[obstetrics-gynaecology/pregnancy-complications]]；视觉解剖在[[nervous-system/sensory-systems]]。
-
-::: exercise 出院前咨询 {level=2}
-46岁新诊断全垂体功能减退者问度假、牙科与道路事故。用病日语法回答。
-::: solution
-**四条规则（[[#def-hypopituitary]]、[[endocrine/adrenal]]）：发热性疾病、手术与牙科操作时口服氢化可的松加倍或三倍、伴呕吐即注射规则；肌注氢化可的松套件带家庭培训、卡片与医疗警示手环（[[clinical-skills/communication]]）；实务——度假时区给药、过安检的带针信件、胃肠炎规程、及适用处的驾驶申报规则（[[medical-ethics-law/professionalism-regulation]]）；及处方顺序的安全解释——左甲状腺素加量之前先稳定氢化可的松（[[endocrine/thyroid]]）。适用时加上妊娠与分娩激素计划（[[obstetrics-gynaecology/labour-birth]]）与带共享照护全科信的年度复审邀请（[[clinical-skills/records-handover]]）。**
-:::
-:::
-
-::: exercise 先做哪个试验 {level=2}
-选出最佳单项初检及其陷阱：疑似中枢性尿崩；疑似肢端肥大症；疑似库欣病；疑似泌乳素瘤。
-::: solution
-**中枢性尿崩——多尿窗口中配对的血浆与尿渗透压及钠及copeptin、陷阱：采样前水负荷（[[#def-adh]]、[[clinical-skills/laboratory-tests]]）；肢端肥大症——胰岛素样生长因子1然后口服葡萄糖抑制、陷阱：测定的年龄性别参考值与非空腹血糖效应（[[#def-prolactin]]）；库欣病——两个异常一线筛查（尿游离皮质醇、深夜唾液、1毫克地塞米松）、陷阱：假性库欣与测定交叉反应（[[endocrine/adrenal]]）；泌乳素瘤——空腹晨起泌乳素带大分子筛查、陷阱：药物与大分子及垂体柄——[[#ex-stalk]]的课。MRI每一次都在生化之后（[[clinical-skills/clinical-reasoning]]）。**
-:::
-:::
+甲状腺轴详见[[endocrine/thyroid]]，肾上腺轴详见[[endocrine/adrenal]]。性腺轴、青春期和生育见[[endocrine/reproductive-endocrinology]]。垂体卒中和严重低钠血症是急症，见[[endocrine/endocrine-emergencies]]。视觉通路见[[nervous-system/sensory-systems]]，激素作用的一般原理见[[physiology/hormones]]。
 
 ::: summary
-- 任何激素对“不恰当地正常”（T4低而TSH低或正常）都要想垂体、且绝不孤立地治一条轴。
-- 每个垂体窝肿块在处理之前都要全套轴加视野；偶发瘤与垂体柄效应惯常伪装成病因。
-- 甲状腺激素之前先补皮质醇；病日规则与驾驶影响要在第一天教、不是在随访时。
-- 泌乳素是最被药物混杂的激素、也是最可药物治疗的分泌性肿瘤。
-- 抗利尿激素障碍用配对血浆尿化学与copeptin定位；中枢性尿崩对去氨加压素有反应、肾性没有、而烦渴需要精神科到席。
+- 垂体前叶是受门静脉输送的下丘脑激素调控的腺体；垂体后叶是神经组织，释放在下丘脑合成的血管升压素和催产素。
+- 成对解读激素。靶腺激素低而垂体激素高，意味着腺体衰竭；靶腺激素低而垂体激素低或正常，意味着垂体或下丘脑衰竭。
+- 用兴奋试验检测缺乏，用抑制试验检测过多。
+- 垂体肿瘤引起激素过多、垂体功能减退和占位效应，典型者为双颞侧偏盲。
+- 在垂体功能减退症中，先补充皮质醇再补充甲状腺素，并以游离T4监测中枢性甲减。
+- 大肿瘤伴催乳素轻度升高提示垂体柄效应；阻断多巴胺的药物是轻度高催乳素血症最常见的原因。多巴胺受体激动剂可治疗大多数催乳素瘤。
+- 肢端肥大症以IGF-1筛查，以口服葡萄糖负荷后GH不能被抑制确诊。
+- AVP缺乏和AVP抵抗（旧称尿崩症）引起稀释性多尿；SIADH引起伴尿液不适当浓缩的低渗性低钠血症。
 :::
 
-## 练习
+## 习题
 
-::: exercise 解读这一对 {level=1}
-游离T4 6 pmol/L（低）、TSH 1.2（正常）：接下来三个动作是什么？
+::: exercise 解读成对结果 {level=1}
+对下列每组结果，判断问题属于原发性、继发性还是腺体自主性功能亢进：(a) 皮质醇低，ACTH高；(b) 游离T4高，TSH测不出；(c) 睾酮低，LH低。
 ::: solution
-**中枢性甲减模式（[[#def-axes]]反馈逻辑）：腺垂体全套含晨起皮质醇与泌乳素（[[clinical-skills/laboratory-tests]]）；病态甲状腺与用药及恢复状态审计（[[pharmacology/adverse-reactions]]）；及MRI带临床相关、及在治疗之前的先肾上腺后甲状腺替代规则（[[#def-hypopituitary]]、[[endocrine/adrenal]]、[[endocrine/thyroid]]）。**
+(a) 原发性肾上腺皮质功能减退：垂体对低皮质醇的反应是升高ACTH。(b) 甲状腺自主性功能亢进（例如格雷夫斯病或毒性结节）：高T4抑制了TSH。(c) 继发性性腺功能减退：垂体对低睾酮没有反应，因此病变位于垂体或下丘脑。
 :::
 :::
 
-::: exercise 说出综合征 {level=1}
-配对：双颞侧视野缺损加泌乳素90；溢乳加闭经加泌乳素4800；打鼾加手变大加胰岛素样生长因子1高；体重增加加瘀斑加皮质醇节律丧失。
+::: exercise 视野 {level=1}
+解释为什么垂体大腺瘤通常引起双眼颞侧视野缺失。
 ::: solution
-**无功能腺瘤伴垂体柄效应（[[#def-adenomas]]、[[#def-prolactin]]）；巨大泌乳素瘤（药物优先——[[#def-prolactin]]）；肢端肥大症（[[#def-prolactin]]生长激素行）；库欣综合征——诊断阶梯住在[[endocrine/adrenal]]。**
+肿瘤向上扩展，从下方压迫视交叉。在视交叉处，来自每侧视网膜鼻侧半的纤维交叉。鼻侧视网膜接受来自颞侧视野的光线。损伤交叉纤维因而使每只眼的颞侧视野丧失：即双颞侧偏盲。
 :::
 :::
 
-::: exercise 处理三相期 {level=2}
-经蝶术后第2天患者尿量400毫升/时而钠150；第5天他变得少尿而钠128。解释并处理每一相。
+::: exercise 计算渗透压 {level=1 check="2*131+12+9"}
+某人血钠131 mmol/L，葡萄糖12 mmol/L，尿素9 mmol/L。用$2[\text{Na}^+] + [\text{葡萄糖}] + [\text{尿素}]$计算血浆渗透压（mOsm/kg）。
 ::: solution
-**经典三相反应（[[#def-adh]]）：第一相轴突休克的中枢性尿崩（去氨加压素覆盖带平稳静脉补液与每6小时钠——过度纠正与反跳规则[[renal/water-sodium]]、[[endocrine/endocrine-emergencies]]）；第二相濒死末梢的抗利尿分泌漏出相（停去氨加压素并限液、监视低钠伴癫痫风险）；第三相潜在的永久化在数周而不是数小时决定（[[clinical-skills/records-handover]]）；预防两种经典伤害——被漏的高钠尿崩与医源性低钠癫痫——的病房规程（[[clinical-skills/patient-safety]]）。**
+$2 \times 131 + 12 + 9 = 262 + 21 = 283$ mOsm/kg。
 :::
 :::
 
-::: exercise 分析这份疲劳 {level=2}
-38岁产后（大出血、无泌乳、此后闭经）疲劳、畏寒与性欲减退2年：勾勒诊断与安全的第一张处方。
+::: exercise 哪种肿瘤？ {level=2}
+一位33岁女性闭经。MRI显示22 mm的垂体肿物。催乳素为(a) 9,800 mU/L或(b) 1,300 mU/L。分别给出可能的诊断和一线治疗。
+::: hint
+比较催乳素升高的幅度与肿瘤的大小。
+:::
 ::: solution
-**在被推翻之前都是Sheehan综合征垂体功能减退（[[#def-hypopituitary]]、[[obstetrics-gynaecology/pregnancy-complications]]）：轴组合（皮质醇、游离T4与TSH、促性腺激素与雌二醇、泌乳素不能升高及胰岛素样生长因子1——[[clinical-skills/laboratory-tests]]）；MRI的空或部分空垂体窝；第一张处方是氢化可的松、数日后加左甲状腺素（[[endocrine/adrenal]]、[[endocrine/thyroid]]）；然后性激素替代与骨保护及生育路径用促性腺激素而非克罗米酚的计划（[[endocrine/reproductive-endocrinology]]、[[obstetrics-gynaecology/contraception-fertility]]）；病日培训激素卡与急救针及驾驶与生育规划谈话（[[endocrine/endocrine-emergencies]]、[[clinical-skills/communication]]、[[medical-ethics-law/professionalism-regulation]]）。**
+(a) 大催乳素瘤：催乳素极高，与大肿瘤相称。一线治疗是多巴胺受体激动剂如卡麦角林，通常能降低催乳素并缩小肿瘤。(b) 伴垂体柄效应的无功能大腺瘤：肿瘤压迫垂体柄，阻止多巴胺到达催乳素细胞，引起轻度升高。多巴胺受体激动剂能降低催乳素但不能缩小肿瘤；如果肿瘤威胁视力或在增大，通常需要手术。两种情况都需评估垂体功能减退。
 :::
 :::
 
-::: exercise 审计这个偶发瘤 {level=2}
-偏头痛MRI发现1.4厘米垂体窝病灶：泌乳素2600 mIU/L、其余一切正常、视野完整。“观察与扫描”伤害了谁、计划是什么？
+::: exercise 去氨加压素反应 {level=2 check="round(100*(620-210)/210)"}
+在禁水试验中，禁水结束时尿渗透压达到210 mOsm/kg，给予去氨加压素后为620 mOsm/kg。计算给予去氨加压素后升高的百分比（四舍五入到整数百分比），并给出可能的诊断。
 ::: solution
-**一个巨大泌乳素瘤（泌乳素与大小的一致性证明分泌——不是偶发瘤——[[#def-prolactin]]）：只观察带扫描通过延迟药物治愈而伤害（骨丢失与性腺功能减退与肿块进展[[endocrine/bone-calcium]]、[[endocrine/reproductive-endocrinology]]）；计划是卡麦角林带泌乳素与睾酮及骨与垂体影像随访、然后在选定应答者中减量与停药规则（[[pharmacology/dosing-principles]]、[[public-health/screening]]）；头痛与病灶巧合的咨询（偏头痛不会缓解——期望管理——[[clinical-skills/communication]]、[[nervous-system/headache-pain]]）；及为病历记录误贴标签风险的事件式文书（[[clinical-skills/patient-safety]]、[[clinical-skills/records-handover]]）。**
+升高$= (620 - 210)/210 \times 100 = 410/210 \times 100 = 195.2\%$，四舍五入为**195%**。肾脏自身不能浓缩尿液，但对外源性血管升压素反应强烈，因此问题在于缺乏血管升压素：**精氨酸血管升压素缺乏**（中枢性尿崩症）。
 :::
 :::
 
-::: exercise 设计垂体功能减退服务 {level=3}
-构建从从卒中入院到成人垂体功能减退随访的内分泌-神经外科联合路径、包括安全关键项与机会公平的可及性。
+::: exercise 术后低钠血症 {level=2}
+一位52岁男性经蝶窦手术后第5天，血钠从141降至127 mmol/L。第1–2天他曾有多尿。解释这一过程以及接下来可能发生什么。
 ::: solution
-**急性通道：卒中套件（应激剂量氢化可的松优先、以钠与血糖为首的复苏——[[endocrine/endocrine-emergencies]]、[[renal/water-sodium]]；当日眼科与神经外科审查带视野与瞳孔记录；垂体方案MRI——[[clinical-skills/medical-imaging]]；恶化者的重症-神经-眼科-内分泌三联——[[emergency-critical-care/critical-care]]）；出院要点激素卡与注射培训及病日传单及医疗警示手环——[[endocrine/adrenal]]；记录在案的驾驶与职业建议及一贯适用的发证机构规则——[[medical-ethics-law/professionalism-regulation]]；出院前预约带轴重评的随访（[[clinical-skills/records-handover]]）。慢性通道（面向全科的共享照护计划带替代表与监测间隔——[[geriatrics-palliative/polypharmacy]]）；年度复审（体重与体成分、按风险的骨密度、血脂与心血管风险、生育规划门诊可及性——[[endocrine/bone-calcium]]、[[cardiovascular/vascular-disease]]、[[endocrine/reproductive-endocrinology]]）；生长激素替代可及性政策带其公平与证据之辩——[[public-health/health-systems-economics]]、[[public-health/determinants-inequalities]]；妊娠与分娩计划（分娩时氢化可的松与去氨加压素相容性——[[obstetrics-gynaecology/labour-birth]]、[[obstetrics-gynaecology/pregnancy-complications]]）；及永不事件清单（先甲状腺素后氢化可的松、头痛分诊中漏掉的卒中、未记录的驾驶建议、未培训的急救针、及复杂替代丢失的全科交接——[[clinical-skills/patient-safety]]）。**
+这符合**三相反应**。垂体柄损伤首先中止血管升压素释放（多尿，第1–2天）。随后受损神经元退变，不受调控地释放储存的血管升压素，引起类似SIADH的低钠血症期，通常在第5–10天前后。如果死亡的神经元很多，储存耗尽后便发展为永久性AVP缺乏。他需要密切监测血钠和液体平衡，在第二期限水，并在之后评估是否需要去氨加压素。第一期所开的任何去氨加压素在第二期必须停用。
+:::
+:::
+
+::: exercise 肢端肥大症的检查 {level=2}
+一位45岁男性IGF-1升高。解释为什么用口服葡萄糖耐量试验而不是单次随机GH水平来确诊肢端肥大症。
+::: solution
+GH呈脉冲式分泌，因此单次随机水平在健康人中可能很高（处于脉冲中），在肢端肥大症患者中也可能正常（处于脉冲之间）。IGF-1反映平均GH作用，是良好的筛查试验。健康人的葡萄糖负荷会抑制GH；在肢端肥大症中，肿瘤自主分泌，GH不能被抑制。这正是一般规则的应用：用抑制试验检测过多。
+:::
+:::
+
+::: exercise 一个需要鉴别诊断的病例 {level=3}
+一位34岁女性，八个月前分娩时发生需要输血的大量产后出血，现诉无法哺乳、月经未恢复、极度疲倦和畏寒。血钠129 mmol/L。给出最可能的诊断，解释每一项表现，列出两个备选诊断，并概述当前的首要任务。
+::: hint
+垂体在妊娠期增大，其血供在休克时可能衰竭。
+:::
+::: solution
+**最可能的诊断：希恩综合征**（产后垂体坏死）。垂体在妊娠期增大，在严重出血和低血压时易发生缺血。
+
+- 不能哺乳：催乳素缺乏。
+- 月经未恢复：促性腺激素缺乏。
+- 疲倦、畏寒：继发性甲减和皮质醇缺乏。
+- 低钠血症：皮质醇缺乏损害自由水排泄（皮质醇正常情况下抑制血管升压素），甲减亦有参与。
+
+**备选诊断**：淋巴细胞性垂体炎（垂体的自身免疫性炎症，典型发生于妊娠晚期或产后，常伴头痛）；产后甲状腺炎的甲减期（TSH会升高）；产后抑郁（不能解释低钠血症或不能哺乳，但可能同时存在）。
+
+**首要任务**：检查上午9时皮质醇和ACTH、游离T4和TSH、LH、FSH、雌二醇和催乳素；然后**先开始氢化可的松**，再开始左甲状腺素，并给予患病期间用药规则和类固醇急救卡。如果她身体不适或低血压，应按可能的肾上腺危象处理，不必等待结果。安排垂体MRI和内分泌随访，并讨论未来生育问题（促性腺激素治疗可恢复生育能力）。
+:::
+:::
+
+::: exercise 设计检验结果解读规则 {level=3}
+一家医院实验室希望为游离T4结果添加自动注释。请提出一条规则，规定注释何时应提示垂体疾病而非原发性甲状腺疾病，用反馈原理说明其依据，并指出该规则可能给出误导性提示的一种情况。
+::: solution
+**规则**：如果游离T4低于参考范围且TSH不升高（低于参考上限），注释为"游离T4低而TSH不升高，可能提示继发性甲减；如临床合适，请考虑垂体评估。"
+
+**依据**：根据负反馈，若垂体正常工作，低游离T4应使TSH升至参考范围以上。不升高的TSH是不适当的，提示控制器在衰竭（[[#thm-feedback]]）。
+
+**误导情况**（任举一例）：危重症患者的非甲状腺疾病，TSH和T4一过性同时下降而无垂体疾病；甲亢近期治疗后，T4下降后TSH可持续被抑制数周；抑制TSH的药物，如大剂量糖皮质激素或多巴胺；或检测干扰。因此注释应建议结合临床，而不是直接给出诊断。
 :::
 :::

@@ -1,150 +1,296 @@
-Thyroid medicine runs on one feedback loop and three clinical traps. **The loop: hypothalamus-pituitary-thyroid negative feedback makes TSH the most sensitive screening number in medicine. The traps: TSH lies during illness, symptoms are unspecific, and the gland's diseases cluster in women, post-partum periods and the immune-prone.** Get the loop right and every abnormal result becomes a solvable puzzle rather than a prescription.
+Thyroid disease is common, often slow to declare itself, and usually easy to diagnose once someone thinks of it. Thyroid hormone sets the metabolic pace of almost every tissue, so too much or too little produces symptoms everywhere: in the heart, the gut, the skin, the mind and the menstrual cycle. The laboratory tests are among the most frequently requested in medicine, and reading them well depends on one idea from [[endocrine/hypothalamus-pituitary]]: the pituitary watches the thyroid and responds to it.
 
-This chapter covers thyroid physiology and testing, hypothyroidism, hyperthyroidism, nodules and cancer.
+This lesson covers the synthesis, transport and action of thyroid hormone, the interpretation of thyroid function tests, hypothyroidism and thyrotoxicosis and their treatment, thyroid disease in pregnancy, and the assessment of thyroid nodules and cancer. Thyroid storm and myxoedema coma are covered as emergencies in [[endocrine/endocrine-emergencies]]. UK practice follows NICE guideline NG145 (Thyroid disease: assessment and management, 2019) and the British Thyroid Association; American Thyroid Association guidance is similar in most respects.
 
-## Physiology and testing
+## Making and carrying thyroid hormone {#sec-physiology}
 
-::: definition Thyroid hormone synthesis and action {#def-physiology}
-**Synthesis (iodide trapped by the sodium-iodide symporter — the transporter whose dietary-iodine dependence drives the deficiency-and-iodisation history — [[cell-biochemistry/membranes-transport]], [[public-health/global-health]]; organification and coupling by thyroperoxidase with hydrogen peroxide generation via DUOX — the TPO of Hashimoto's antibodies ([[immunology/autoimmunity]]); secretion predominantly T4 with peripheral deiodination to T3 by tissue deiodinases, and the amiodarone-and-selenium-and-sick-cell modulation of that step ([[pharmacology/adverse-reactions]]); transport largely protein-bound (thyroxine-binding globulin and albumin — the pregnancy-oestrogen and nephrotic-and-liver alterations of total-versus-free hormone — [[obstetrics-gynaecology/pregnancy-antenatal]], [[gastrointestinal/liver-function]]). Actions (nuclear-receptor transcription setting basal metabolic rate, mitochondrial activity and beta-adrenergic sensitivity — [[cell-biochemistry/signalling-cell-cycle]], [[physiology/hormones]], [[physiology/homeostasis-body-fluids]] thermoregulation; cardiovascular effects — rate, contractility, diastolic relaxation — [[cardiovascular/cardiac-cycle]], [[cardiovascular/arrhythmias]]; growth and skeletal maturation and bone turnover — [[paediatrics/growth-development]], [[endocrine/bone-calcium]]; neuropsychiatric and gut effects — [[psychiatry/mood-disorders]], [[gastrointestinal/bowel-disease]]-no: the motility link sits with [[gastrointestinal/digestion-absorption]]; pregnancy and fetal thyroid development — [[obstetrics-gynaecology/pregnancy-complications]], [[paediatrics/newborn]]-screening [[public-health/screening]]). Feedback (log-linear pituitary response: a small free-T4 change moves TSH orders of magnitude — the reason TSH is the screening test and the reason over- and under-replacement are detectable long before symptoms — [[physiology/hormones]], [[endocrine/hypothalamus-pituitary]]).)**
+The thyroid is built from **follicles**: spheres of epithelial cells surrounding a lumen filled with **colloid**, which is mostly a large protein called **thyroglobulin**. Hormone synthesis happens at the boundary between the cells and the colloid.
+
+::: definition Thyroid hormone synthesis {#def-physiology}
+1. **Iodide trapping.** The **sodium–iodide symporter (NIS)** on the basal membrane concentrates iodide from blood into the follicular cell.
+2. **Oxidation and organification.** At the apical membrane, **thyroid peroxidase (TPO)** oxidises iodide and attaches it to tyrosine residues in thyroglobulin, forming mono- and di-iodotyrosine.
+3. **Coupling.** TPO joins two iodotyrosines to form **thyroxine (T4)**, with four iodine atoms, or **tri-iodothyronine (T3)**, with three.
+4. **Storage and release.** The iodinated thyroglobulin is stored in the colloid. Under TSH stimulation, cells take it back up, digest it, and release T4 and T3 into the blood.
+
+The thyroid secretes mostly T4. About 80% of circulating T3 comes from removal of one iodine from T4 in peripheral tissues by **deiodinase** enzymes. T3 binds the nuclear thyroid hormone receptor about ten times more strongly than T4, so T4 acts largely as a reservoir and **prohormone**.
 :::
 
-::: definition Testing and interpretation {#def-testing}
-**The panel (TSH first in ambulatory care; free T4 and free T3 to grade; the traps: non-thyroidal illness with its low-T3 and then-low-T4-and-recovery-phase-TSH-swing — do not test thyroid function in inpatients unless the gland is the question — [[clinical-skills/laboratory-tests]]; drugs (amiodarone's iodine load and dual actions, glucocorticoids and dopamine suppressing TSH, lithium's dual hypo-and-hyper output, biotin-assay interference and the supplement-lab war — [[pharmacology/adverse-reactions]]); central hypothyroidism with its normal-or-low TSH and low free T4 — the free-T4-reliance rule from [[endocrine/hypothalamus-pituitary]]). Subclinical disease (raised TSH with normal free T4 — the symptoms-overlap, the 10 mIU/L threshold, the antibody-positive-and-symptomatic-and-pregnancy-and-lipid modifiers for treating, and the watch-with-repeat-at-3-months default — [[geriatrics-palliative/polypharmacy]]; low TSH with normal free T4-and-T3 — the atrial-fibrillation-and-fracture-and-postmenopausal-calculation and the exogenous-over-replacement-audit — [[cardiovascular/arrhythmias]], [[endocrine/bone-calcium]]). Antibodies and imaging (anti-TPO for Hashimoto-prediction-and-post-partum-risk; TSH-receptor-stimulating-and-blocking-antibodies for Graves and its eye disease and the transplacental-neonatal-risk transfer — [[immunology/autoimmunity]], [[obstetrics-gynaecology/pregnancy-complications]]; ultrasound's role for nodules and its uselessness for function; scintigraphy for the toxic-nodule-versus-thyroiditis-versus-Graves question ([[clinical-skills/medical-imaging]]); the incidental-thyroid-finding-follow-up rules on neck CT and PET — [[public-health/screening]]).**
+TSH drives every step: iodide uptake, TPO activity, thyroglobulin synthesis, hormone release, and growth of the gland itself. Chronic TSH stimulation therefore produces a **goitre** (an enlarged thyroid), as in iodine deficiency, where low hormone output raises TSH.
+
+In the blood, more than 99% of T4 and T3 is bound to proteins, chiefly **thyroxine-binding globulin (TBG)**, with transthyretin and albumin. Only the tiny **free** fraction enters cells and exerts feedback. Total hormone levels change whenever binding proteins change: oestrogen (pregnancy, the combined pill) raises TBG and total T4, while free T4 stays normal. This is why laboratories measure **free T4** and **free T3**.
+
+Inside cells, T3 binds nuclear receptors that act as transcription factors. The effects therefore take days to appear and fade. T3 increases basal metabolic rate and heat production, increases the number and sensitivity of cardiac β-adrenergic receptors (hence the tachycardia of thyrotoxicosis), speeds gut transit, and is essential for brain development in the fetus and infant. Untreated congenital hypothyroidism causes permanent intellectual disability, which is why every newborn in the UK is screened with a heel-prick blood test ([[paediatrics/newborn]]).
+
+## Thyroid function tests {#sec-testing}
+
+::: theorem TSH as the first-line test {#thm-tsh}
+Over the physiological range, the logarithm of TSH falls approximately linearly as free T4 rises. A small change in free T4 therefore produces a large, multiplicative change in TSH. Provided the pituitary is normal and the person is in a steady state, **TSH is the most sensitive single test of thyroid status**, and it is the recommended first-line test.
 :::
 
-## The two common diseases
+::: proof
+Each individual has a narrow personal set point for free T4, narrower than the population reference range. If the thyroid begins to fail, free T4 drifts down from that set point but may stay within the population range. The pituitary detects the drift and, because of the steep log-linear relationship, raises TSH several-fold. The TSH result therefore leaves the reference range before the free T4 does. This explains **subclinical** thyroid disease: abnormal TSH with free T4 still in the reference range. The same reasoning shows when TSH fails as a guide: when the pituitary is diseased (central hypothyroidism), and when the axis is not in a steady state, for example in the weeks after starting treatment or during severe illness.
+:::
+
+Typical adult reference ranges are about 0.4–4.0 mU/L for TSH and 10–22 pmol/L for free T4, but each laboratory sets its own.
+
+| Pattern | TSH | Free T4 | Usual meaning |
+|---|---|---|---|
+| Primary hypothyroidism | High | Low | Thyroid failure, most often autoimmune |
+| Subclinical hypothyroidism | High | Normal | Early or mild thyroid failure |
+| Primary thyrotoxicosis | Suppressed | High (or normal with high T3) | Graves' disease, toxic nodule, thyroiditis |
+| Subclinical hyperthyroidism | Suppressed | Normal | Mild excess, often nodular; or over-replacement |
+| Central hypothyroidism | Low or normal | Low | Pituitary or hypothalamic disease |
+| Non-thyroidal illness | Low, normal or transiently high | Low or normal; low T3 | Severe illness, not thyroid disease |
+| High TSH and high free T4 | High or normal | High | Assay interference, poor adherence to levothyroxine, rarely a TSH-secreting tumour or thyroid hormone resistance |
+
+Other useful tests are **TPO antibodies** (present in most people with autoimmune hypothyroidism), **TSH-receptor antibodies (TRAb)** (diagnostic of Graves' disease), and **thyroid uptake scintigraphy** with technetium or iodine, which shows whether the gland is overactive (high uptake) or leaking stored hormone (low uptake).
+
+::: warning Interpreting results in hospital and on biotin
+Do not diagnose thyroid disease from a single set of results taken during acute illness unless the clinical picture demands it. **Non-thyroidal illness** lowers T3 first and can lower T4 and TSH; in recovery, TSH may transiently rise above the reference range. Repeat the tests after recovery. Also ask about **biotin** supplements: high-dose biotin interferes with many immunoassays and can produce a pattern that mimics Graves' disease. Drugs matter too: amiodarone, lithium, high-dose glucocorticoids and immune checkpoint inhibitors all affect thyroid tests or thyroid function.
+:::
+
+## Hypothyroidism {#sec-hypo}
 
 ::: definition Hypothyroidism {#def-hypothyroid}
-**Causes ( Hashimoto thyroiditis — the T-cell-destructive-and-anti-TPO/Tg-antibody disease with its polyglandular-autoimmune-and-coeliac-and-vitiligo-and-turner associations and its lymphoma-escalation risk — [[immunology/autoimmunity]], [[endocrine/reproductive-endocrinology]]-adjacent-polyglandular, [[gastrointestinal/bowel-disease]], [[musculoskeletal/skin]], [[genetics/genome-chromosomes]], [[blood/lymphoma-myeloma]]; worldwide iodine deficiency and the iodisation programmes — [[public-health/global-health]], [[public-health/prevention-promotion]]; drugs (amiodarone-and-lithium-and-checkpoint-inhibitors-and-interferon-and-tyrosine-kinase-inhibitors — [[pharmacology/adverse-reactions]], [[immunology/vaccines-immunotherapy]], [[cardiovascular/arrhythmias]]); post-thyroiditis (silent, subacute De Quervain's painful post-viral with its pain-and-CRP pattern ([[infectious-diseases/fever-sepsis]]-adjacent), and post-partum — [[obstetrics-gynaecology/postnatal-period]]); post-surgical-and-radioiodine ([[surgery/gastrointestinal-surgery]]); congenital-dyshormonogenesis-and-agenesis caught by newborn screening — [[paediatrics/newborn]], [[genetics/mendelian-inheritance]]; pituitary causes — [[endocrine/hypothalamus-pituitary]]). Presentation (the non-specific-fatigue-cold-intolerance-weight-and-constipation-and-menorrhagia-and-carpal-tunnel-and-hoarseness-and-depression-voice-of-thyroid-disease — the symptom-overlap that makes biochemistry decisive — [[clinical-skills/history-taking]], [[psychiatry/mood-disorders]]; the myxoedema extremes — hypothermia, effusions, ileus, coma — [[endocrine/endocrine-emergencies]], [[geriatrics-palliative/falls]]-adjacent hypothermia presentations; the check-the-others sweep — B12-and-iron-and-coeliac-and-diabetes-and-these-are-not-the-same-thing — [[blood/anaemia]], [[gastrointestinal/bowel-disease]], [[endocrine/diabetes-complications]]). Treatment (levothyroxine's weight-dosed start and cardiac-and-elderly-and-myxoedema-cautious start — [[cardiovascular/coronary-artery-disease]]; the absorption rules — empty-stomach-and-coffee-and-calcium-and-iron-and-PPI-and-soya interactions, the adherence-and-brand-switching problem and the "resistant hypothyroidism" work-up that is usually pseudomalabsorption — [[pharmacology/absorption-distribution]], [[pharmacology/patient-variation]]; monitoring at 6-8 weeks then annually with the pregnancy-dose-increase rule — [[obstetrics-gynaecology/pregnancy-antenatal]]; the subclinical-treatment-thresholds above — [[#def-testing]]; and the overtreatment hazards — iatrogenic thyrotoxicosis with atrial fibrillation and bone loss — [[cardiovascular/arrhythmias]], [[endocrine/bone-calcium]]; myxoedema-coma belongs to [[endocrine/endocrine-emergencies]]: IV or NG replacement plus hydrocortisone-before-thyroid ([[endocrine/adrenal]]) plus passive rewarming-and-precipitant-hunting).**
+**Primary hypothyroidism** is underproduction of thyroid hormone by the thyroid gland, with a raised TSH. In iodine-sufficient countries the commonest cause is **chronic autoimmune (Hashimoto's) thyroiditis**, with TPO antibodies. Other causes are previous radioiodine or thyroid surgery, drugs (amiodarone, lithium, checkpoint inhibitors), the hypothyroid phase of thyroiditis, and, worldwide, **iodine deficiency**. **Subclinical hypothyroidism** is a raised TSH with free T4 in the reference range.
 :::
 
-::: definition Hyperthyroidism {#def-hyperthyroid}
-**Causes (Graves disease — the stimulating TSH-receptor antibodies driving diffuse hyperplasia, with orbitopathy from the shared orbital-fibroblast antigen and smoking as the dominant modifiable risk — [[immunology/autoimmunity]], [[psychiatry/substance-use]]-adjacent-smoking-cessation, [[nervous-system/sensory-systems]]; toxic adenoma and toxic multinodular goitre — the autonomous-somatic-TSH-receptor-signalling biology — [[genetics/cancer-genetics]]-adjacent; thyroiditis mislabelled as hyperthyroidism (the low-uptake painful-or-painless-or-drug-induced-or-post-partum destructive release with its self-limited course — the differential that saves thyrostatic drugs and radioiodine — [[#def-testing]]; the exogenous and factitious and struma-ovarii rarities — [[psychiatry/eating-personality-disorders]]-adjacent-thyrotoxicosis-factitia, [[obstetrics-gynaecology/gynaecological-cancer]]). Presentation (the adrenergic-storm-of-symptoms — palpitation-and-weight-loss-despite-appetite-and-heat-intolerance-and-tremor-and-diarrhoea-and-anxiety-and-proximal-myopathy-and-oligomenorrhoea — the differentials: panic disorder and phaeochromocytoma and carcinoid and stimulant use — [[psychiatry/anxiety-disorders]], [[endocrine/adrenal]]-no-phaeo-own [[endocrine/adrenal]], [[gastrointestinal/pancreas-biliary]]; the elderly apathetic and the atrial-fibrillation-only presentations — [[geriatrics-palliative/falls]], [[cardiovascular/arrhythmias]]; signs that separate: diffuse-goitre-with-bruit-and-eyesigns-and-pre-tibial-myxedema-and-acropachy [[musculoskeletal/skin]]). Treatment by cause (antithyroid drugs — carbimazole/methimazole first with propylthiouracil's-black-box-hepatotoxicity-niche-in-first-trimester-and-storm — the dose-titration-versus-block-and-replace strategies, the agranulocytosis-safety-net-leaflet-and-stop-for-sore-throat-and-fever rule with same-day-FBC — [[pharmacology/adverse-reactions]], [[blood/haematopoiesis]], [[infectious-diseases/fever-sepsis]]; the 12-18-month-course-and-remission-versus-relapse arithmetic with TRAb-predicted-success — [[#def-hyperthyroid]]; radioiodine (the ablation-versus-earlier-surgery-in-large-glands-and-the-eye-disease-worsening-risk-and-steroid-cover-in-active-orbitopathy-and-the-pregnancy-and-conception-interval-rules — [[clinical-skills/medical-imaging]]-adjacent-nuclear-medicine, [[obstetrics-gynaecology/pregnancy-complications]], [[immunology/transplant-tumour-immunology]]-no); and surgery (the near-total-versus-hemithyroid-decision, the recurrent-laryngeal-nerve-and-hypoparathyroidism-rates as the surgeon-volume argument — [[surgery/gastrointestinal-surgery]], [[endocrine/bone-calcium]]); beta-blockade-and-rate-control-for-the-symptomatic-interval plus the thyroid-cardiac-caution-with-asthma — [[respiratory/asthma-copd]], [[cardiovascular/arrhythmias]]; the orbitopathy programme (smoking-cessation, selenium-in-mild-disease, steroid-pulses-and-orbital-radiotherapy-and-decompression-sequencing for sight-threatening disease, the eyelag-and-optic-nerve-emergency-recognitions — [[nervous-system/sensory-systems]], [[surgery/gastrointestinal-surgery]]); and thyrotoxic storm — see [[endocrine/endocrine-emergencies]].**
+Hypothyroidism is several times more common in women and its prevalence rises with age. Symptoms are nonspecific: tiredness, weight gain, cold intolerance, constipation, dry skin, hair thinning, low mood, slowed thinking, menorrhagia and muscle aches. Signs include bradycardia, slow-relaxing tendon reflexes, periorbital puffiness and, in severe long-standing disease, **myxoedema** (non-pitting thickening of the skin from glycosaminoglycan deposition). Laboratory clues include raised cholesterol, raised creatine kinase, macrocytosis and hyponatraemia. Because the symptoms overlap with depression, the menopause and ordinary fatigue, the diagnosis rests on blood tests.
+
+Treatment is **levothyroxine** (synthetic T4), taken once daily, ideally on an empty stomach and apart from calcium and iron supplements, which reduce absorption. The principles are:
+
+- In most adults under about 65 without heart disease, NICE suggests starting near full replacement, about 1.6 micrograms per kg per day (illustrative; doses come from a current formulary for the individual).
+- In older people and those with ischaemic heart disease, start low and increase slowly, because a sudden rise in metabolic rate can provoke angina or arrhythmia.
+- Adjust the dose by TSH, rechecking after enough time for a new steady state (see [[#ex-steadystate]]).
+- Over-replacement, with a suppressed TSH, increases the risk of atrial fibrillation and osteoporosis.
+
+Combination therapy with liothyronine (T3) is not routinely recommended by NICE; some people with persistent symptoms are assessed in specialist services.
+
+For subclinical hypothyroidism, NICE NG145 suggests considering levothyroxine when TSH is 10 mU/L or higher on two tests three months apart, and considering a six-month trial in adults under 65 with symptoms when TSH is above the reference range but below 10. In older adults, mildly raised TSH is common and treatment usually brings no benefit.
+
+## Thyrotoxicosis {#sec-hyper}
+
+::: definition Thyrotoxicosis and hyperthyroidism {#def-hyperthyroid}
+**Thyrotoxicosis** is the clinical state caused by excess thyroid hormone, from any source. **Hyperthyroidism** is thyrotoxicosis caused by overproduction by the thyroid gland. The distinction matters because thyrotoxicosis from **thyroiditis** (release of stored hormone from an inflamed gland) or from excess levothyroxine is not hyperthyroidism and is not treated with antithyroid drugs.
+:::
+
+The main causes are:
+
+- **Graves' disease**, the commonest cause in the UK. Antibodies that stimulate the TSH receptor (TRAb) drive diffuse gland growth and overproduction. It is most common in young and middle-aged women, often with a family history of autoimmune disease. Features specific to Graves' disease are a diffuse goitre (sometimes with a bruit), **thyroid eye disease**, and rarely pretibial myxoedema and thyroid acropachy.
+- **Toxic multinodular goitre** and **toxic adenoma**: autonomous nodules that secrete hormone independent of TSH, more common in older people and in regions of past iodine deficiency.
+- **Thyroiditis**: subacute (de Quervain's) thyroiditis follows a viral illness and causes a painful, tender gland with raised inflammatory markers; painless and **postpartum thyroiditis** are autoimmune. All cause a transient thyrotoxic phase with low uptake on scintigraphy, often followed by a hypothyroid phase, then recovery.
+- **Drugs**: amiodarone (two types: iodine-induced overproduction and destructive thyroiditis), excess levothyroxine, iodine contrast in a nodular gland.
+
+Symptoms reflect a raised metabolic rate and increased adrenergic sensitivity: weight loss despite good appetite, heat intolerance, sweating, palpitations, tremor, anxiety, irritability, diarrhoea, oligomenorrhoea and proximal muscle weakness. Signs include tachycardia or **atrial fibrillation**, fine tremor, warm moist skin and lid lag. Older people may have few adrenergic features and present with weight loss, atrial fibrillation, heart failure or low mood ("apathetic thyrotoxicosis").
+
+### Treatment
+
+**Beta-blockers** (for example propranolol) relieve tremor, palpitations and anxiety quickly, whatever the cause, while definitive treatment takes effect.
+
+**Antithyroid drugs** (thionamides) block TPO. **Carbimazole** (converted to methimazole) is first-line in the UK. **Propylthiouracil** is preferred in the first trimester of pregnancy because carbimazole is associated with a specific pattern of birth defects, but propylthiouracil carries a higher risk of severe liver injury, so it is otherwise second-line. Two regimens are used: **titration** (adjusting the dose to keep free T4 normal) and **block and replace** (a higher dose that blocks the gland completely, plus levothyroxine). A course usually lasts 12 to 18 months; about half of people with Graves' disease relapse after stopping.
+
+The most important adverse effect of both thionamides is **agranulocytosis**, a sudden, severe fall in neutrophils that is rare but potentially fatal. Everyone starting a thionamide must be told, verbally and in writing, to stop the drug and have an urgent full blood count if they develop a sore throat, mouth ulcers, fever or other signs of infection.
+
+**Radioactive iodine (radioiodine)** is taken up by the thyroid and destroys it over weeks to months. NICE recommends it as the first-line definitive treatment for most adults with Graves' disease, unless antithyroid drugs are judged more likely to achieve remission or radioiodine is unsuitable. It is contraindicated in pregnancy and breastfeeding, pregnancy must be avoided for a period afterwards, and it can worsen thyroid eye disease, particularly in smokers, so active eye disease may require steroid cover or an alternative. Most people eventually become hypothyroid and need lifelong levothyroxine.
+
+**Surgery** (total thyroidectomy) is chosen for large goitres with compressive symptoms, suspicious nodules, active moderate-to-severe eye disease, or by preference. Risks include damage to the **recurrent laryngeal nerve** (hoarseness) and to the parathyroid glands (hypocalcaemia; see [[endocrine/bone-calcium]]).
+
+For toxic nodules and toxic multinodular goitre, remission with drugs does not occur, so radioiodine or surgery is usually advised. Thyroiditis is treated symptomatically with beta-blockers and, for painful subacute thyroiditis, anti-inflammatory drugs.
+
+**Thyroid eye disease** results from autoimmune inflammation of the orbital fat and muscles. It causes grittiness, redness, proptosis, lid retraction and double vision. Stopping smoking is the most effective modifiable step. Selenium helps mild disease. Moderate-to-severe active disease is treated by specialists with intravenous glucocorticoids or other immunotherapy. **Optic neuropathy**, with loss of colour vision or acuity, is an emergency.
+
+## Thyroid disease in pregnancy {#sec-pregnancy}
+
+Pregnancy changes thyroid physiology. Oestrogen raises TBG. Human chorionic gonadotrophin (hCG), which is structurally similar to TSH, stimulates the thyroid in the first trimester, so TSH normally falls and trimester-specific ranges are used. The fetus depends on maternal T4 until its own thyroid works at around 12 weeks of gestation.
+
+Women already taking levothyroxine usually need a higher dose as soon as pregnancy is confirmed. In Graves' disease, TRAb can cross the placenta and cause fetal or neonatal thyrotoxicosis, even in a woman previously treated with radioiodine or surgery, so TRAb is measured in pregnancy. Postpartum thyroiditis occurs in the year after delivery. These conditions are managed jointly with obstetric teams ([[obstetrics-gynaecology/pregnancy-complications]]).
+
+## Goitre, nodules and cancer {#sec-nodules}
+
+Thyroid nodules are extremely common: many are found by touch, and far more by ultrasound. Most are benign. The task is to find the few cancers without operating on everyone.
+
+::: definition Assessment of a thyroid nodule {#def-cancer}
+1. **TSH first.** A suppressed TSH suggests an autonomously functioning ("hot") nodule, which is very rarely malignant; scintigraphy confirms it.
+2. **Ultrasound.** Features that raise suspicion include a solid hypoechoic nodule, microcalcifications, irregular margins, a shape taller than it is wide, and abnormal neck lymph nodes. UK practice grades nodules **U1 to U5** under the British Thyroid Association system; other systems such as ACR TI-RADS are used elsewhere.
+3. **Fine-needle aspiration cytology** of suspicious nodules. UK reports use categories **Thy1 to Thy5**; many countries use the equivalent **Bethesda** system (categories I to VI). Indeterminate results may lead to diagnostic hemithyroidectomy or molecular testing.
+:::
+
+The main thyroid cancers are:
+
+- **Papillary carcinoma**: the commonest, often in younger adults, spreads to neck lymph nodes, and has an excellent prognosis. Previous radiation exposure, especially in childhood, is a risk factor.
+- **Follicular carcinoma**: spreads through the blood to lung and bone; distinguishing it from a benign follicular adenoma requires histology showing capsular or vascular invasion, so cytology alone cannot make the diagnosis.
+- **Medullary carcinoma**: arises from the calcitonin-producing **parafollicular C cells**. Calcitonin and CEA are tumour markers. About a quarter of cases are hereditary, caused by **RET** mutations, as part of **multiple endocrine neoplasia type 2 (MEN2)**. Phaeochromocytoma must be excluded before surgery.
+- **Anaplastic carcinoma**: rare, in older adults, rapidly growing and with a poor prognosis.
+- **Thyroid lymphoma**: rare, associated with Hashimoto's thyroiditis.
+
+Differentiated (papillary and follicular) cancers are treated by surgery, with radioiodine ablation in higher-risk cases and TSH suppression with levothyroxine in some. Follow-up uses serum **thyroglobulin**, which should be undetectable after complete treatment.
+
+A caution about **overdiagnosis**: in countries where ultrasound screening became widespread, the number of small papillary cancers diagnosed rose sharply while deaths from thyroid cancer did not change. Many small papillary cancers would never have caused harm. Screening for thyroid cancer in people without symptoms is therefore not recommended, and very small low-risk cancers may be managed by active surveillance in specialist centres ([[public-health/screening]]).
+
+::: example Waiting for a steady state {#ex-steadystate}
+A 42-year-old woman with Hashimoto's thyroiditis starts levothyroxine. Levothyroxine has a half-life of about 7 days. What fraction of the eventual steady-state level is reached after 6 weeks, and when should her TSH be rechecked?
+::: solution
+With repeated daily dosing, the approach to steady state follows the drug's half-life. After $n$ half-lives, the fraction of steady state reached is
+
+$$
+1 - \left(\tfrac{1}{2}\right)^{n}.
+$$
+
+Six weeks is 42 days, which is $42/7 = 6$ half-lives. The fraction is $1 - (1/2)^6 = 1 - 1/64 = 63/64 \approx 0.984$, or **98.4%**. After about 5 half-lives (5 weeks) she is above 96% of steady state.
+
+TSH lags further behind because the pituitary must readjust. Rechecking TSH about **6 to 8 weeks** after starting or changing the dose therefore gives a meaningful result; checking at 2 weeks would show a value still moving and might lead to an unnecessary dose increase. The same timing applies after any dose change.
+:::
 :::
 
 ::: widget plot
-f: 14*exp(-x/16)+1; 1.0
-x: 0, 48
-y: 0, 16
-labels: \text{months},\ \text{TSH-receptor antibody index};\ \text{Graves on antithyroid-drug course};\ \text{upper reference limit}
-caption: The antithyroid-drug course and its decision point ([[#def-hyperthyroid]]): TSH-receptor antibody titre falls over a 12-18-month course, and the level at withdrawal predicts relapse — the antibody curve behind the "stop-or-continue" conversation; persisting antibodies favour definitive therapy (radioiodine or surgery) while normalisation supports a monitored withdrawal ([[immunology/autoimmunity]]-antibody-kinetics, [[clinical-skills/laboratory-tests]], [[clinical-skills/communication]]'s shared decision).
+f: 100*(1-2^(-x/7)); 100*(1-2^(-x/3.5))
+x: 0, 70
+y: 0, 105
+hlines: 100
+labels: \text{Half-life 7 days (levothyroxine)}; \text{Half-life 3.5 days, for comparison}
+caption: Approach to steady state with regular daily dosing, as a percentage of the final level (vertical axis) against days since starting (horizontal axis). With a 7-day half-life, about 97% of the steady state is reached after 5 weeks, which is why thyroid function is rechecked 6–8 weeks after a dose change. Simplified one-compartment model.
 :::
 
-## Lumps and cancers
-
-::: definition Goitre, nodules and thyroid cancer {#def-cancer}
-**Goitre (the physiological-hypertrophy logic — iodine deficiency, pregnancy, puberty, goitrogens — versus the pathological infiltrates; the pressure-and-airway-and-vessels syndrome (retrosternal extension with the thoracic-inlet signs and the CT-before-anaesthetic-imagining-panic rule — [[anatomy/thorax]], [[clinical-skills/medical-imaging]], [[surgery/anaesthesia-pain]]-adjacent-airway-planning; the superior-vena-caval and recurrent-nerve complications — [[cardiovascular/vascular-disease]], [[nervous-system/sensory-systems]]; the lymphoma-in-Hashimoto transformation with its rapid-growth-and-B-symptoms [[blood/lymphoma-myeloma]], [[immunology/immunodeficiency]]-adjacent)). Nodule assessment (the TSH-then-sonography-then-cytology algorithm — hot-nodules-rarely-malignant-so-scan-when-TSH-low; ultrasound risk features (microcalcifications, taller-than-wide, irregular margin, extrathyroidal extension) and repeat-sizing; fine-needle-aspiration with the Bethesda reporting system and its management mapping — benign-repeat, indeterminate-molecular-testing-or-lobectomy, malignant-surgery ([[pathology/diagnostic-pathology]], [[clinical-skills/laboratory-tests]]); and the false-reassurance of a "benign" result in a high-suspicion-sonography lesion needing re-biopsy — [[clinical-skills/clinical-reasoning]]). Thyroid cancers (papillary — the BRAF-and-RAS-mapkinase-signal cancers, the lymphatic spread and the excellent-prognosis-with-risk-stratified-surgery-and-radioiodine-selection ([[genetics/cancer-genetics]], [[surgery/gastrointestinal-surgery]], thyroglobulin follow-up — [[clinical-skills/laboratory-tests]]); follicular — the haematogenous-spread-and-molecular-testing-versus-diagnostic-lobectomy argument; medullary — the C-cell-calcitonin-and-CEA-markers-and-RET-germline-testing-and-prophylactic-thyroidectomy-timings-with-MEN2-pheochromocytoma-first-logic ([[genetics/mendelian-inheritance]], [[genetics/genetic-testing]], [[endocrine/reproductive-endocrinology]]-no: phaeochromocytoma row of [[endocrine/adrenal]], [[surgery/breast-endocrine-surgery]]-no: the endocrine-surgery home — use [[surgery/gastrointestinal-surgery]]; anaplastic — the aggressive-older-patient-disease with its airway-first-management and modern BRAF-MEK-combination-answers ([[nervous-system/sensory-systems]]-adjacent-nerve-invasion, [[geriatrics-palliative/palliative-care]]); and the incidental-small-papillary active-surveillance era — [[public-health/screening]]'s overdiagnosis-paradox). The post-treatment architecture (thyroglobulin-and-antibody-pair follow-up, radioiodine-scan and whole-body dosimetry logic, TSH-suppression intensity by risk — [[endocrine/hypothalamus-pituitary]]-adjacent-axis-suppression, [[cardiovascular/arrhythmias]]-and-[[endocrine/bone-calcium]]-as-the-suppression-costs; the external-beam-and-targeted-therapy-rarities; and the recurrence-and-second-malignancy-long-haul [[public-health/screening]]).**
-:::
-
-::: example The inpatient trap {#ex-sick}
-An ICU patient with pneumonia has TSH 0.4, free T4 8 (low), free T3 2.1 (very low); he is on hydrocortisone for asthma and had amiodarone for AF last month. The ward team asks whether to "start thyroxine".
+::: example Thyrotoxicosis after a sore throat {#ex-thyroiditis}
+A 38-year-old man of South Asian heritage has three weeks of palpitations, sweating and a painful neck, following a flu-like illness. The thyroid is tender. Free T4 is 38 pmol/L, TSH below 0.01 mU/L, CRP 64 mg/L. TRAb is negative. Technetium scintigraphy shows almost no uptake. What is the diagnosis and how should it be managed?
 ::: solution
-**Do not treat non-thyroidal illness (the low-T3-first pattern with its T4-and-TSH-phase progression — the recovery-phase-TSH-transient-rise caveat; [[#def-testing]]: this is physiology, not hypothyroidism, and replacement trials in ICU showed no benefit and possible harm — the T3-infusion-history's modern verdict — [[epidemiology-ebm/randomised-trials]]). The contributors here: critical illness itself, hydrocortisone's central TSH-suppression ([[pharmacology/adverse-reactions]]), and amiodarone's iodine-and-pharmacology double-hit ([[cardiovascular/arrhythmias]]). The right actions: **treat the illness and de-escalate the steroids ([[respiratory/asthma-copd]]), re-check thyroid function at recovery (weeks, with the interpretation caveat), ask whether amiodarone continues and if thyroid baseline existed (the pre-amiodarone-thyroid-screen-and-6-monthly-protocols and the amiodarone-induced-hypo-versus-hyper-thyroidism-split — the uptake-and-TRAb-and-ultrasound-differentiation for the hyper variety [[#def-hypothyroid]], [[#def-hyperthyroid]]); and write into the record that this pattern must not become a lifelong-thyroxine-misdiagnosis — the incident-class of "inpatient TSH treated as hypothyroidism" — [[clinical-skills/records-handover]], [[clinical-skills/patient-safety]].)**
+Thyrotoxicosis with a painful, tender gland after a viral illness, raised inflammatory markers, negative TRAb and **low uptake** is **subacute (de Quervain's) thyroiditis**. The gland is inflamed and leaking stored hormone, not overproducing it.
+
+Antithyroid drugs would be useless, because synthesis is not increased, and could cause harm. Management is symptomatic: a beta-blocker for adrenergic symptoms and anti-inflammatory treatment for pain (a non-steroidal drug, or a short course of prednisolone if severe). He should be warned that a hypothyroid phase may follow in weeks to months, so thyroid function is repeated; most people recover normal function, though a minority need long-term levothyroxine.
 :::
 :::
 
-::: example The planning conversation {#ex-graves}
-A 29-year-old woman with newly diagnosed Graves disease (TRAb high, free T4 42, mild eye signs, smoker, wants pregnancy within a year) asks about the "tablet, radiation or surgery" choice.
+::: example A choice of treatment in Graves' disease {#ex-graves}
+A 29-year-old woman has newly diagnosed Graves' disease: free T4 42 pmol/L, TSH suppressed, TRAb strongly positive, mild eye grittiness without diplopia. She smokes and hopes to become pregnant within a year. Outline the treatment options and the factors that favour each.
 ::: solution
-**Counsel against her priorities ([[#def-hyperthyroid]]): antithyroid drugs are the starting path (with the 12-18-month-remission-honesty: partial-odds and relapse-common [[#def-hyperthyroid]]); radioiodine is relatively wrong for her plan (the conception-delay-interval rules, the orbitopathy-worsening-in-smokers-with-eye-signs — the steroid-cover-or-avoidance decision — and the lifelong-hypothyroidism-probability — [[obstetrics-gynaecology/pregnancy-complications]], [[nervous-system/sensory-systems]]); surgery suits the large-gland-pregnancy-planning-or-drug-failure case (with its nerve-and-parathyroid risks and permanent-replacement reality — [[surgery/gastrointestinal-surgery]], [[endocrine/bone-calcium]]). The pregnancy-specific counsel (conception-in-remission-with-stable-doses-preferred; propylthouracil? — no: the first-trimester-propylthiouracil-versus-carbimazole-embryopathy-profile-switch-and-the-minimum-effective-dose-and-breastfeeding-compatibility — [[pharmacology/patient-variation]], [[obstetrics-gynaecology/pregnancy-complications]]; the TRAb-crossing-and-neonatal-thyroid-disease risk with fetal-and-newborn monitoring — [[paediatrics/newborn]], [[immunology/adaptive-responses]]). The modifiables: **the smoking-cessation-offer as an eye-disease intervention — [[psychiatry/substance-use]]; the contraception-until-stable discussion ([[obstetrics-gynaecology/contraception-fertility]]); the agranulocytosis-leaflet-issued-and-understood documented ([[blood/haematopoiesis]]); and the shared-decision note so the next clinic does not restart the menu from scratch ([[clinical-skills/communication]], [[clinical-skills/records-handover]]).**
+**Immediate**: a beta-blocker for symptoms. Strong advice and support to stop smoking, which lowers the risk of eye disease worsening.
+
+**Antithyroid drugs**: carbimazole, with written and verbal agranulocytosis advice. A 12–18-month course gives a chance of remission. Because she plans pregnancy, she should use contraception while on carbimazole and discuss timing with her specialist; if she becomes pregnant during treatment, she may be switched to propylthiouracil for the first trimester.
+
+**Radioiodine**: NICE's usual first-line definitive option, but less suited to her now. She would need to avoid pregnancy for a period after treatment (commonly at least 6 months), it may worsen her eye disease (she smokes and has eye symptoms), and TRAb may persist and affect a later pregnancy.
+
+**Surgery**: a total thyroidectomy gives a quick, definitive cure and avoids radiation, and is reasonable if she wants certainty before pregnancy. It means lifelong levothyroxine and carries small risks to the recurrent laryngeal nerves and parathyroids.
+
+The decision is shared, documented, and revisited as her plans change.
 :::
 :::
 
-::: example The apathetic ninety-year-old {#ex-apathetic}
-A 90-year-old care-home resident falls twice in a month; new atrial fibrillation with rate 130, weight down 4 kg over 6 months, "quiet, not herself"; no tremor, no goitre palpable, TSH 0.01 with free T4 28.
+::: example An older woman with atrial fibrillation {#ex-apathetic}
+An 84-year-old woman has lost 5 kg over six months and has new atrial fibrillation at 128 beats per minute. She is withdrawn rather than anxious and has no tremor. TSH is below 0.01 mU/L and free T4 is 27 pmol/L. Scintigraphy shows patchy increased uptake in an enlarged nodular gland. What is happening and what are the priorities?
 ::: solution
-**Apathetic thyrotoxicosis of the old (the opposite of the textbook adrenergic picture — [[#def-hyperthyroid]]-presentation-row): the "falls + new AF + weight loss + apathy" quartet in a non-tremulous patient, often with no palpable gland behind the sternum ([[#def-cancer]]-goitre-row, [[anatomy/thorax]]); the causes skew to toxic-nodular-and-subclinical presentations versus Graves — scintigraphy settles it and changes therapy ([[clinical-skills/medical-imaging]], [[#def-testing]]). Management: **rate-control-strategy-and-anticoagulation-decision for the AF with her fall-risk arithmetic ([[cardiovascular/arrhythmias]], [[blood/thrombosis-anticoagulation]]); cautious antithyroid-drug initiation (lower doses, watch the agranulocytosis-leaflet comprehension in cognitive impairment — [[blood/haematopoiesis]], [[clinical-skills/communication]]); the bone-and-frailty consequences of even mild over-treatment ([[endocrine/bone-calcium]], [[geriatrics-palliative/falls]]); the definitive-therapy-in-the-very-old question (radioiodine-versus-long-low-dose-drugs with the adherence-and-monitoring reality — [[geriatrics-palliative/polypharmacy]]); the delirium-and-depression-differential documented ([[geriatrics-palliative/delirium-dementia-care]], [[psychiatry/mood-disorders]]); and the "why did nobody check TFTs at the first fall" service-point ([[clinical-skills/patient-safety]], [[geriatrics-palliative/falls]]-AF-thyroid-screen rule).**
+This is thyrotoxicosis from a **toxic multinodular goitre**, presenting as **apathetic thyrotoxicosis**, a pattern common in older people: weight loss, atrial fibrillation and low mood rather than tremor and anxiety.
+
+Priorities:
+1. **Rate control** with a beta-blocker, and an assessment of stroke and bleeding risk for anticoagulation ([[cardiovascular/arrhythmias]]).
+2. **Restore euthyroidism** with carbimazole (with agranulocytosis advice adapted to her circumstances and her carers).
+3. **Definitive treatment**: nodular disease does not remit, so radioiodine is usually advised; long-term low-dose carbimazole is an alternative for some frail people.
+4. Consider her bone health, since thyrotoxicosis accelerates bone loss ([[endocrine/bone-calcium]]).
+
+Atrial fibrillation often reverts to sinus rhythm once she is euthyroid.
 :::
 :::
 
-::: example The raised calcitonin {#ex-medullary}
-A 36-year-old has a 1.5 cm thyroid nodule; cytology is suspicious for medullary carcinoma; basal calcitonin 480 pg/mL, CEA raised; her father died of a "heart attack at 41" and a cousin has "adrenal tumours".
+::: example A neck lump with a family history {#ex-medullary}
+A 36-year-old woman has a 1.5 cm thyroid nodule. Cytology suggests medullary carcinoma and serum calcitonin is markedly raised. Her father had "episodes of very high blood pressure" and died suddenly at 41. What should be done before thyroid surgery, and why?
 ::: solution
-**Medullary thyroid carcinoma with a MEN2 family signal until proven otherwise ([[#def-cancer]]-medullary-row): the RET-germline-testing rule and the phaeochromocytoma-exclusion-BEFORE-any-surgery-or-anaesthesia (metanephrines-and-the-hypertensive-crisis-hazard — [[endocrine/adrenal]], [[surgery/anaesthesia-pain]], [[endocrine/endocrine-emergencies]]); the primary workup (calcitonin-and-CEA baselines, neck-and-liver imaging with the marrow-and-bone-modality choices — [[clinical-skills/medical-imaging]], [[pathology/cancer-diagnosis]]); the surgery (total-thyroidectomy-with-central-node-dissection and the external-beam-versus-kinase-inhibitor-questions for advanced disease — vandetanib-cabozantinib-selpercatinib-genotype-matched-RET-inhibitors — [[pharmacology/dosing-principles]], [[genetics/genomic-medicine]]); the family cascade (the RET-positive-child prophylactic-thyroidectomy-timing-tables-by-mutation-risk-class and the ethical-weight-of-children's-surgery — [[paediatrics/congenital-genetic]], [[medical-ethics-law/beginning-of-life]], [[genetics/genetic-testing]]); the long-haul tumour-marker follow-up and the phaeo-and-parathyroid-surveillance schedule for MEN2A ([[endocrine/reproductive-endocrinology]]-adjacent-parathyroid [[endocrine/bone-calcium]], [[endocrine/adrenal]]); and the documentation of the father's-early-death-as-clue (the family-history re-take that changes a diagnosis — [[clinical-skills/history-taking]], [[clinical-skills/records-handover]]).**
+Medullary thyroid carcinoma with a family history suggesting phaeochromocytoma raises strong suspicion of **MEN2** due to a germline **RET** mutation.
+
+Before any surgery or anaesthetic, **phaeochromocytoma must be excluded** with plasma or urine metanephrines. An undiagnosed phaeochromocytoma can cause a fatal hypertensive crisis during anaesthesia. If present, it is treated first, after alpha-blockade ([[endocrine/adrenal]]).
+
+She should also have calcium and PTH measured (MEN2A includes primary hyperparathyroidism), genetic counselling and RET testing. The thyroid operation is a total thyroidectomy with central neck node dissection. If she carries a RET mutation, relatives can be tested, and children who carry it are offered prophylactic thyroidectomy at an age guided by the specific mutation ([[genetics/cancer-genetics]]).
 :::
 :::
 
 ::: quiz
-A pituitary patient on adequate levothyroxine is monitored with:
-- [ ] TSH alone
-- [x] Free T4, because TSH is unreliable in central hypothyroidism
-- [ ] Thyroid antibodies
-- [ ] Radioiodine uptake
+A woman taking the combined oral contraceptive pill has a raised total T4, normal free T4 and normal TSH. What is the explanation?
+- [ ] Early Graves' disease
+- [x] Oestrogen has raised thyroxine-binding globulin
+- [ ] Subclinical hypothyroidism
+- [ ] Assay interference from biotin
 ::: solution
-**Central hypothyroidism produces a normal-low-or-mildly-raised-and-bioinactive TSH — free T4 is the tracking number ([[#def-testing]], [[endocrine/hypothalamus-pituitary]]'s rule); antibodies and uptake measure the gland, not the brain; dose-adequacy review and pregnancy goal-setting belong with [[obstetrics-gynaecology/pregnancy-complications]].**
+Oestrogen increases TBG, so more T4 is bound and total T4 rises. The free hormone, which drives feedback and tissue effects, is unchanged, and so is TSH. She is euthyroid. This is why free T4 is measured rather than total T4.
 :::
 :::
 
 ::: history
-**Thyroid medicine's layered history (art-history goitre portraits to Parry's 1786 case description; Basedow and von Basedow's 19th-century triad of goitre, eye signs and tachycardia; Kocher's thyroidectomy-mastery and the 1909-Nobel-with-its-adjacent-myxoedema-cautionary-reputation — [[surgery/gastrointestinal-surgery]]; Harington-and-Kendall's 1914-thyroxine-crystallisation and the commercial-then-synthetic-tablet-era [[pharmacology/drug-receptor]]; Hashimoto's 1912 German-language dissertation that became the prototype organ-specific autoimmune disease — [[immunology/autoimmunity]]; the iodised-salt public-health victory after the Goitre-Creep-of-the-Alps-and-Lakes-regions — [[public-health/prevention-promotion]], [[public-health/global-health]]; radioiodine's Manhattan-Project-derivative-1940s-therapy-birth ([[clinical-skills/medical-imaging]]-nuclear-medicine-lineage); McKenzie's bioassay era leading to the 1988-TSH-receptor-cloning that converted Graves into a definable antibody disease — [[genetics/genomic-medicine]]; the newborn-screening-and-congenital-hypothyroidism-programmes — [[paediatrics/newborn]], [[public-health/screening]]; and the modern Bethesda-and-molecular-nodule era reducing diagnostic thyroidectomies — [[pathology/diagnostic-pathology]], [[public-health/screening]]'s-overdiagnosis-honesty).**
+In 1891 **George Murray**, in Newcastle, treated a woman with myxoedema by injecting an extract of sheep thyroid; she lived for almost three decades more on thyroid extract. The Swiss surgeon **Theodor Kocher** made thyroidectomy safe and in 1883 described the hypothyroidism that followed total removal; he received the Nobel Prize in Physiology or Medicine in 1909. In 1912 **Hakaru Hashimoto** described the lymphocytic goitre that bears his name. **Edward Kendall** isolated crystalline thyroxine at the Mayo Clinic in 1914, and **Charles Harington** determined and synthesised its structure in 1926–27. In 1941 **Saul Hertz** in Boston gave the first therapeutic dose of radioactive iodine for hyperthyroidism.
 :::
 
 ## Where this leads
 
-The feedback loop and its failures in [[endocrine/hypothalamus-pituitary]]; emergencies (storm, myxoedema coma) in [[endocrine/endocrine-emergencies]]; bone consequences of both excess and deficiency in [[endocrine/bone-calcium]]; pregnancy management in [[obstetrics-gynaecology/pregnancy-complications]]; autoimmunity in [[immunology/autoimmunity]]; the surgical and radioiodine delivery in [[surgery/gastrointestinal-surgery]].
-
-::: exercise Set the threshold {level=2}
-TSH 11 with normal free T4 and positive anti-TPO in three patients: (a) 24-year-old trying to conceive; (b) 68-year-old with palpitations, TSH 7.5 on recheck; (c) 82-year-old, TSH 9, fatigue. Treat or watch?
-::: solution
-**(a) treat — subclinical-hypothyroidism-and-fertility/pregnancy-lower-thresholds-and-the-fetal-thyroxine-dependence argument ([[#def-hypothyroid]], [[obstetrics-gynaecology/pregnancy-antenatal]], [[obstetrics-gynaecology/contraception-fertility]]); (b) usually watch-and-repeat — mild-TSH-rise-with-fluctuation-and-symptom-mismatch-plus-antibody-status-context, the AF-and-bone-risk-of-treating-too-hard ([[#def-testing]], [[cardiovascular/arrhythmias]], [[endocrine/bone-calcium]]); (c) default watch — TSH-under-10-in-the-oldest-with-non-specific-symptoms and the treatment-burden-and-over-treatment-harms ([[geriatrics-palliative/polypharmacy]]); all three get the reason-recorded-and-review-date-booked discipline ([[clinical-skills/records-handover]], [[clinical-skills/communication]]).**
-:::
-:::
-
-::: exercise Fix the absorption {level=2}
-A patient's TSH is 22 despite "levothyroxine 125 µg"; pharmacy records show month-by-month late refills, she takes it with coffee and a calcium tablet, and has new coeliac disease. Untangle and prescribe.
-::: solution
-**Multi-hit pseudoresistance ([[#def-hypothyroid]]-treatment-row): adherence-first-non-judgemental-clarification-and-the-blister-pack-and-days-of-week-strategy ([[pharmacology/patient-variation]], [[clinical-skills/communication]]); timing-correction — empty-stomach-with-water-and-30-60-minutes-before-coffee-and-separate-calcium-and-iron-by-4-hours ([[pharmacology/absorption-distribution]]); the coeliac-mucosa-effect-on-absorption and the gluten-free-diet-then-dose-re-titration ([[gastrointestinal/bowel-disease]], [[gastrointestinal/digestion-absorption]]); and the weekly-overlap-dose-option for documented missed days ([[pharmacology/dosing-principles]]); then repeat-TSH-in-6-8-weeks-not-2 and the stop-rule for "resistance" that is adherence-solved ([[clinical-skills/laboratory-tests]], [[clinical-skills/records-handover]]).**
-:::
-:::
+Thyroid storm and myxoedema coma are covered in [[endocrine/endocrine-emergencies]]. The general principles of hormone receptors and feedback are in [[physiology/hormones]]. Autoimmune thyroid disease is a model of organ-specific autoimmunity ([[immunology/autoimmunity]]), and newborn screening for congenital hypothyroidism is described in [[paediatrics/newborn]].
 
 ::: summary
-- TSH is exquisitely sensitive but meaningless in inpatients and unreliable in pituitary disease; free T4 decides those cases.
-- Hypothyroidism is mostly Hashimoto's or iatrogenic; levothyroxine is an absorption-diva drug — time its administration, audit adherence, and re-dose in pregnancy.
-- Hyperthyroidism management is cause-specific: destructive thyroiditis needs only beta-blockade and patience, Graves offers drugs-radioiodine-surgery trade-offs, and toxic nodules remit with neither tablets nor wait.
-- Every nodule follows the TSH-ultrasound-cytology algorithm; medullary cancer mandates RET testing and phaeochromocytoma exclusion before surgery.
-- The thyroid is the interface organ — pregnancy, amiodarone, lithium, checkpoint inhibitors and the post-partum period all ask about it.
+- The thyroid traps iodide (NIS), iodinates thyroglobulin (TPO) and secretes mainly T4, which is converted to the more active T3 in tissues.
+- Over 99% of thyroid hormone is protein-bound; measure free T4, because binding proteins change with oestrogen and illness.
+- Because of the log-linear TSH–free T4 relationship, TSH is the most sensitive first-line test, except in pituitary disease and in non-steady states.
+- Hashimoto's thyroiditis is the commonest cause of hypothyroidism; treat with levothyroxine, adjust by TSH 6–8 weeks after a change, start low in older people and heart disease.
+- Thyrotoxicosis is not always hyperthyroidism: thyroiditis has low uptake and is not treated with antithyroid drugs.
+- Graves' disease is treated with antithyroid drugs, radioiodine or surgery; warn everyone on carbimazole or propylthiouracil about agranulocytosis.
+- Assess nodules with TSH, ultrasound and cytology; medullary cancer suggests MEN2 and requires exclusion of phaeochromocytoma before surgery.
+- Small papillary cancers are often overdiagnosed; screening people without symptoms is not recommended.
 :::
 
 ## Exercises
 
-::: exercise Read the result {level=1}
-Interpret: TSH 0.01, free T4 30, free T3 14, on thyroxine 150 µg daily for Hashimoto's.
+::: exercise Read the pattern {level=1}
+Name the most likely diagnosis for each: (a) TSH 18 mU/L, free T4 6 pmol/L; (b) TSH 7.2 mU/L, free T4 14 pmol/L; (c) TSH below 0.01 mU/L, free T4 45 pmol/L, TRAb positive.
 ::: solution
-**Exogenous-or-endogenous thyrotoxicosis: the low-TRAb-context and the dose-history separate factitious-or-prescription-error-over-replacement ([[#def-hypothyroid]]-overtreatment-row, [[#def-hyperthyroid]]-exogenous-row, [[psychiatry/eating-personality-disorders]] when intentional); check the actual-ingested-dose-vs-prescribed-and-absorption-change-and-batch-switch ([[pharmacology/absorption-distribution]], [[pharmacology/patient-variation]]); the atrial-fibrillation-and-bone risks of sustained suppression — [[cardiovascular/arrhythmias]], [[endocrine/bone-calcium]].**
+(a) Overt primary hypothyroidism. (b) Subclinical hypothyroidism: raised TSH with normal free T4; repeat in about three months before deciding on treatment. (c) Graves' disease: thyrotoxicosis with stimulating TSH-receptor antibodies.
 :::
 :::
 
-::: exercise Name the pattern {level=1}
-Painful goitre, fever, very high ESR/CRP, low uptake, 3 weeks post-viral: diagnosis and treatment?
+::: exercise The essential warning {level=1}
+What must a person starting carbimazole be told about sore throats, and why?
 ::: solution
-**Subacute (De Quervain) thyroiditis ([[#def-hypothyroid]]-causes row and [[#def-hyperthyroid]]-thyroiditis row): self-limiting destructive release — NSAIDs-or-steroids-for-severe-cases and beta-blocker-for-symptoms; NOT antithyroid drugs ([[pharmacology/adverse-reactions]]-unnecessary-harm-route); the expected hypothyroid-then-recover sequence with follow-up-thyroid-function ([[clinical-skills/laboratory-tests]], [[gastrointestinal/gi-bleeding-cancer]]-no: the post-viral link — [[infectious-diseases/fever-sepsis]]-adjacent).**
+Carbimazole can rarely cause agranulocytosis, a severe fall in neutrophils that can lead to overwhelming infection. If they develop a sore throat, mouth ulcers, fever or other signs of infection, they should stop the drug and seek an urgent full blood count. The advice should be given verbally and in writing and recorded.
 :::
 :::
 
-::: exercise Manage the nodule {level=2}
-1.8 cm hypoechoic nodule with microcalcifications and irregular margins; TSH normal; Bethesda V on two aspirates. Plan and counsel.
+::: exercise Steady state {level=1 check="1-(1/2)^4"}
+Levothyroxine has a half-life of about 7 days. Assuming simple first-order kinetics, what fraction of steady state is reached 28 days after starting a regular daily dose? Give the exact fraction or decimal.
 ::: solution
-**Suspicious-sonography-plus-suspicious-cytology equals near-certain-papillary-carcinoma-pathway ([[#def-cancer]]): total-versus-hemithyroid-decision-by-size-extrathyroidal-and-node-status-and-preference with the central-compartment-node-sampling nuance ([[surgery/gastrointestinal-surgery]]); the preoperative-cord-and-node-mapping ([[clinical-skills/medical-imaging]], [[nervous-system/sensory-systems]]-nerve-check); the thyroglobulin-baseline-before-surgery rule ([[clinical-skills/laboratory-tests]]); the post-op radioiodine-selection and TSH-suppression-intensity by risk ([[#def-cancer]]-follow-up, [[endocrine/hypothalamus-pituitary]]-adjacent-suppression); the scar-and-voice-and-long-term-tablets counselling ([[clinical-skills/communication]], [[#def-hypothyroid]]); and the excellent-prognosis-perspective-with-recurrence-surveillance ([[public-health/screening]]).**
+28 days is 4 half-lives, so the fraction is $1 - (1/2)^4 = 1 - 1/16 = 15/16 = 0.9375$.
 :::
 :::
 
-::: exercise Sort the screening {level=2}
-Which of these need thyroid testing now: (a) 30-year-old with new generalised anxiety; (b) 55-year-old ICU sepsis (case in [[#ex-sick]]); (c) 88-year-old with new AF; (d) 32-year-old 6 weeks post-partum with fatigue and a family history of thyroid disease; (e) patient starting amiodarone?
+::: exercise The illustrative starting dose {level=2 check="1.6*65"}
+NICE suggests a starting levothyroxine dose of about 1.6 micrograms per kg per day for adults under 65 without cardiovascular disease. For a 65 kg adult, what daily dose in micrograms does this formula give, before rounding to an available tablet strength? (Illustrative calculation only; doses are set for the individual from a current formulary.)
 ::: solution
-**(a) yes-with-boundaries — first-episode-psychiatric-presentation-thyroid-screen-is-standard ([[#def-hypothyroid]], [[#def-hyperthyroid]]-psychiatric-mimicry, [[psychiatry/anxiety-disorders]]); (b) no ([[#ex-sick]] teaching); (c) yes — AF-at-any-age-gets-TSH ([[cardiovascular/arrhythmias]]); (d) yes — post-partum-thyroiditis-risk-with-baseline-and-3-6-months-checks ([[obstetrics-gynaecology/postnatal-period]]); (e) yes-baseline-then-6-monthly-with-the-interpretation-caveats ([[pharmacology/adverse-reactions]]).**
+$1.6 \times 65 = 104$ micrograms per day. In practice this would be rounded to a dose that can be given with available tablets, commonly 100 micrograms, and then adjusted by TSH.
 :::
 :::
 
-::: exercise Interpret the post-partum {level=2}
-8 weeks post-partum: palpitations and insomnia; TSH 0.02, free T4 30, TRAb negative, low uptake, mild neck discomfort, breastfeeding. Graves or not, and what now?
+::: exercise Hot or cold {level=2}
+Explain why a thyroid nodule in a person with a suppressed TSH is usually investigated with scintigraphy rather than fine-needle aspiration first.
 ::: solution
-**Post-partum thyroiditis thyrotoxic phase (the low-uptake-TRAb-negative-destructive pattern in its classic window — [[#def-hypothyroid]]-[[#def-hyperthyroid]]-causes-rows, [[obstetrics-gynaecology/postnatal-period]]): beta-blocker-and-reassurance-not-carbimazole ([[pharmacology/adverse-reactions]]); the expected-hypothyroid-phase-and-the-6-monthly-follow-up-and-the-permanent-hypothyroidism-long-term-rate ([[#def-hypothyroid]]); the breastfeeding-medication-safety-check ([[pharmacology/patient-variation]]); the "this is not the start-of-life-with-Graves" distinction that changes the whole 10-year story ([[clinical-skills/communication]]); and the future-pregnancy-and-checkpoint-inhibitor-and-lithium-alert-card documentation ([[clinical-skills/records-handover]], [[immunology/vaccines-immunotherapy]]).**
+A suppressed TSH suggests that the nodule may be autonomously secreting thyroid hormone. If scintigraphy shows that the nodule takes up tracer avidly (a "hot" nodule) while the rest of the gland is suppressed, it is a toxic adenoma, and these are very rarely malignant. Cytology of hot nodules can also look worrying and lead to unnecessary surgery. Scintigraphy therefore answers the key question with less harm.
 :::
 :::
 
-::: exercise Build the thyroid nodule service {level=3}
-Design a joint endocrine-endocrine-surgery-radiology-cytopathology nodule clinic: entry, minimum dataset, molecular policy, equity and audit.
+::: exercise Amiodarone {level=2}
+A man taking amiodarone for ventricular arrhythmia has a TSH of 0.01 mU/L and a free T4 of 34 pmol/L. Explain the two mechanisms by which amiodarone can cause thyrotoxicosis and why the distinction matters.
 ::: solution
-**Entry and triage (the sonography-risk-and-TSH-and-cytology-algorithm with the "hot-nodule-gets-scan-not-fna" rule — [[#def-cancer]], [[gastrointestinal/liver-function]]-no: [[#def-testing]]; open-access-to-ultrasound-compacts-with-primary-care [[public-health/health-systems-economics]]); multidisciplinary-clinic-model (the radiologist-cytopathologist-surgeon-endocrinologist-table-and-same-visit-USB-re-biopsy-pathway [[clinical-skills/medical-imaging]] [[pathology/diagnostic-pathology]]; the molecular-testing policy for indeterminate Bethesda III/IV with its cost-and-equity-rules-and-turnaround-targets [[genetics/genomic-medicine]] [[public-health/determinants-inequalities]]); surgery-standards (the volume-outcome-threshold and the nerve-monitoring-and-parathyroid-identification-programmes and the consent-numbers on nerve-and-hypoparathyroidism [[surgery/gastrointestinal-surgery]] [[endocrine/bone-calcium]]); follow-up (thyroglobulin-and-antibody-interpretation and the surveillance-sonography-intervals and the active-surveillance protocol for low-risk microcarcinomas [[clinical-skills/laboratory-tests]] [[public-health/screening]] [[surgery/gastrointestinal-surgery]]); the special-lanes (pediatric-nodules-higher-malignancy-rate [[paediatrics/congenital-genetic]]; MEN2/RET-family-pathway-with-phaeo-first-prophylactic-thyroidectomy-timings [[genetics/genetic-testing]] [[endocrine/adrenal]]; pregnancy-incidental-nodules [[obstetrics-gynaecology/pregnancy-complications]]); and the audit set (cancer-detection-rate-per-cytology-grade, indeterminate-rate, completion-hemithyroid-equipoise, patient-decision-aid-uptake, time-from-suspicious-scan-to-surgery, and the overdiagnosis-and-lifetime-radiation-and-unnecessary-thyroidectomy-counter-KPIs [[clinical-skills/patient-safety]] [[public-health/health-systems-economics]]).**
+Amiodarone contains a large amount of iodine. **Type 1** amiodarone-induced thyrotoxicosis is iodine-driven overproduction, usually in a gland with pre-existing nodules or latent Graves' disease; it is treated with thionamides. **Type 2** is a destructive thyroiditis caused by the drug's direct toxicity, releasing stored hormone; it is treated with glucocorticoids, and thionamides do not help. Mixed forms occur. The distinction, made with ultrasound, uptake and clinical features in specialist care, decides the treatment. Whether to continue amiodarone is a joint decision with cardiology.
+:::
+:::
+
+::: exercise Interpret the inpatient results {level=3}
+A 67-year-old man in intensive care with pneumonia has TSH 0.2 mU/L, free T4 9 pmol/L and free T3 2.1 pmol/L (all low). He received hydrocortisone and dopamine infusions. The team asks whether to start levothyroxine. Give a reasoned answer and a follow-up plan.
+::: solution
+The most likely explanation is **non-thyroidal illness**: severe illness lowers T3 first (reduced peripheral conversion), then T4 and TSH. Glucocorticoids and dopamine both suppress TSH. Trials of thyroid hormone in critical illness have not shown benefit, so levothyroxine is not recommended on these results.
+
+Central hypothyroidism is the main alternative. It is unlikely here but cannot be completely excluded; clues would be known pituitary disease, other pituitary deficiencies, or a low cortisol before the hydrocortisone.
+
+**Plan**: no thyroid treatment now; record in the notes that the results were taken during critical illness; repeat thyroid function 6 or more weeks after recovery. During recovery TSH may rise transiently above the reference range, which should not be mistaken for primary hypothyroidism. If free T4 stays low with a non-raised TSH after recovery, assess the pituitary.
+:::
+:::
+
+::: exercise Overdiagnosis {level=3}
+A health system proposes offering neck ultrasound to all adults over 40 "to find thyroid cancer early". Using the evidence from countries where this has happened, explain why this is likely to cause more harm than good.
+::: solution
+Small papillary thyroid cancers are very common at autopsy and most never cause symptoms or death. Where widespread ultrasound screening has occurred, the incidence of diagnosed thyroid cancer rose many-fold, almost entirely small papillary cancers, while thyroid cancer mortality stayed flat. This is the signature of **overdiagnosis**: finding disease that would not have caused harm.
+
+The harms include anxiety, biopsies, thyroidectomies with risks of recurrent laryngeal nerve injury and permanent hypoparathyroidism, lifelong levothyroxine, and cost. Because mortality does not fall, the screening programme cannot offset these harms. Screening is therefore not recommended for people without symptoms or risk factors; the exceptions are specific high-risk groups such as RET mutation carriers ([[public-health/screening]]).
 :::
 :::

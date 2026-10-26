@@ -1,150 +1,296 @@
-甲状腺医学运行在一个反馈环与三个临床陷阱上。**这个环：下丘脑-垂体-甲状腺负反馈使TSH成为医学上最敏感的筛查数字。三个陷阱：TSH在患病期间说谎、症状无特异性、而腺体的疾病聚集在女性、产后时期与免疫易感者。把这个环搞对、每个异常结果就变成一个可解的谜题而不是一张处方。**
+甲状腺疾病很常见，往往表现缓慢，而一旦有人想到它，通常就容易诊断。甲状腺激素设定了几乎所有组织的代谢节奏，因此激素过多或过少都会在全身各处引起症状：心脏、胃肠道、皮肤、精神和月经周期。其实验室检查是医学中最常申请的检查之一，而准确解读它们依赖于[[endocrine/hypothalamus-pituitary]]中的一个观点：垂体监视着甲状腺并对其作出反应。
 
-本章涵盖甲状腺生理与试验、甲状腺功能减退、甲状腺功能亢进、结节与肿瘤。
+本课介绍甲状腺激素的合成、转运和作用，甲状腺功能检查的解读，甲状腺功能减退症和甲状腺毒症及其治疗，妊娠期甲状腺疾病，以及甲状腺结节和甲状腺癌的评估。甲状腺危象和黏液水肿昏迷作为急症见[[endocrine/endocrine-emergencies]]。英国的实践遵循NICE指南NG145（《甲状腺疾病：评估与管理》，2019年）和英国甲状腺协会的建议；美国甲状腺协会的指南在大多数方面与之相似。
 
-## 生理与试验
+## 甲状腺激素的合成与转运 {#sec-physiology}
 
-::: definition 甲状腺激素的合成与作用 {#def-physiology}
-**合成碘被钠碘同向转运体捕获——这一转运体的膳食碘依赖性驱动了缺碘与碘化的历史——[[cell-biochemistry/membranes-transport]]、[[public-health/global-health]]；甲状腺过氧化物酶的有机化与偶联伴通过DUOX产生过氧化氢——桥本抗体的那个过氧化物酶（[[immunology/autoimmunity]]）；分泌以T4为主并在外周经组织脱碘酶脱碘为T3、及胺碘酮与硒及病态细胞对该步骤的调节（[[pharmacology/adverse-reactions]]）；转运大部分结合蛋白（甲状腺素结合球蛋白与白蛋白——妊娠雌激素及肾病与肝改变对总激素对游离激素——[[obstetrics-gynaecology/pregnancy-antenatal]]、[[gastrointestinal/liver-function]]）。作用（核受体转录设定基础代谢率、线粒体活性与β肾上腺素敏感性——[[cell-biochemistry/signalling-cell-cycle]]、[[physiology/hormones]]、[[physiology/homeostasis-body-fluids]]体温调节；心血管效应——心率、收缩力、舒张松弛——[[cardiovascular/cardiac-cycle]]、[[cardiovascular/arrhythmias]]；生长与骨骼成熟及骨转换——[[paediatrics/growth-development]]、[[endocrine/bone-calcium]]；神经精神与消化道效应——[[psychiatry/mood-disorders]]、胃肠动力联系在[[gastrointestinal/digestion-absorption]]；妊娠与胎儿甲状腺发育——[[obstetrics-gynaecology/pregnancy-complications]]、[[paediatrics/newborn]]筛查[[public-health/screening]]）。反馈（对数线性的垂体应答：一点游离T4变化就使TSH移动数个数量级——这就是TSH是筛查试验的原因、也是过度与不足替代在症状之前很久就可检出的原因——[[physiology/hormones]]、[[endocrine/hypothalamus-pituitary]]）。**
+甲状腺由**滤泡**构成：滤泡是由上皮细胞围成的球体，内腔充满**胶质**，胶质主要是一种称为**甲状腺球蛋白**的大分子蛋白。激素合成发生在细胞与胶质的交界处。
+
+::: definition 甲状腺激素的合成 {#def-physiology}
+1. **碘摄取。** 基底膜上的**钠-碘同向转运体（NIS）**将碘离子从血液中浓集到滤泡细胞内。
+2. **氧化与有机化。** 在顶端膜，**甲状腺过氧化物酶（TPO）**氧化碘离子，并将其连接到甲状腺球蛋白的酪氨酸残基上，形成一碘酪氨酸和二碘酪氨酸。
+3. **偶联。** TPO将两个碘化酪氨酸连接起来，形成含四个碘原子的**甲状腺素（T4）**或含三个碘原子的**三碘甲腺原氨酸（T3）**。
+4. **储存与释放。** 碘化的甲状腺球蛋白储存在胶质中。在TSH刺激下，细胞将其重新摄回、消化，并把T4和T3释放入血。
+
+甲状腺主要分泌T4。循环中约80%的T3来自外周组织中**脱碘酶**从T4上脱去一个碘。T3与核内甲状腺激素受体的结合力约为T4的十倍，因此T4主要作为储备和**激素原**发挥作用。
 :::
 
-::: definition 试验与解读 {#def-testing}
-**组合（门诊中TSH先行；游离T4与游离T3分级；陷阱：非甲状腺疾病带其低T3然后低T4及恢复期TSH摆动——除非腺体就是问题、否则不要在住院患者中查甲状腺功能——[[clinical-skills/laboratory-tests]]；药物（胺碘酮的碘负荷与双重作用、糖皮质激素与多巴胺抑制TSH、锂的双重低下与亢进输出、生物素测定干扰及补剂与实验室之争——[[pharmacology/adverse-reactions]]）；中枢性甲减带其正常或低TSH与低游离T4——来自[[endocrine/hypothalamus-pituitary]]的依赖游离T4规则）。亚临床疾病（TSH升高伴游离T4正常——症状重叠、10 mIU/L阈值、抗体阳性与有症状及妊娠及血脂等治疗修饰因素、及每3个月复查的观察默认——[[geriatrics-palliative/polypharmacy]]；TSH低伴游离T4与T3正常——心房颤动与骨折及绝经后计算及外源性过度替代审计——[[cardiovascular/arrhythmias]]、[[endocrine/bone-calcium]]）。抗体与影像（抗过氧化物酶用于桥本预测与产后风险；TSH受体刺激与阻断抗体用于Graves病及其眼病及经胎盘新生儿风险传递——[[immunology/autoimmunity]]、[[obstetrics-gynaecology/pregnancy-complications]]；超声对结节的角色与其对功能的无用；闪烁显像用于毒性结节对甲状腺炎对Graves之问（[[clinical-skills/medical-imaging]]）；颈部CT与PET上甲状腺偶见发现的随访规则——[[public-health/screening]]）。**
+TSH驱动每一个步骤：碘摄取、TPO活性、甲状腺球蛋白合成、激素释放以及腺体本身的生长。因此慢性TSH刺激会导致**甲状腺肿**（甲状腺增大），例如在碘缺乏时，激素产出低使TSH升高。
+
+在血液中，99%以上的T4和T3与蛋白结合，主要是**甲状腺素结合球蛋白（TBG）**，其次是转甲状腺素蛋白和白蛋白。只有极少的**游离**部分能进入细胞并发挥反馈作用。结合蛋白一旦改变，总激素水平就会随之改变：雌激素（妊娠、复方口服避孕药）使TBG和总T4升高，而游离T4保持正常。这就是实验室测定**游离T4**和**游离T3**的原因。
+
+在细胞内，T3与作为转录因子的核受体结合。因此其效应需要数天才能出现和消退。T3提高基础代谢率和产热，增加心脏β肾上腺素能受体的数量和敏感性（因此甲状腺毒症时出现心动过速），加快胃肠转运，并且是胎儿和婴儿大脑发育所必需的。未经治疗的先天性甲减会导致永久性智力障碍，这就是英国每个新生儿都通过足跟血检查进行筛查的原因（[[paediatrics/newborn]]）。
+
+## 甲状腺功能检查 {#sec-testing}
+
+::: theorem TSH作为一线检查 {#thm-tsh}
+在生理范围内，TSH的对数随游离T4升高而近似线性下降。因此游离T4的小幅变化会引起TSH大幅度的、倍数级的变化。只要垂体正常且处于稳态，**TSH就是反映甲状腺状态最敏感的单项检查**，也是推荐的一线检查。
 :::
 
-## 两种常见病
-
-::: definition 甲状腺功能减退 {#def-hypothyroid}
-**病因（桥本甲状腺炎——T细胞破坏性伴抗过氧化物酶与甲状腺球蛋白抗体的疾病、带其多腺体自身免疫及乳糜泻及白癜风及Turner关联及淋巴瘤升级风险——[[immunology/autoimmunity]]、[[endocrine/reproductive-endocrinology]]邻近多腺体、[[gastrointestinal/bowel-disease]]、[[musculoskeletal/skin]]、[[genetics/genome-chromosomes]]、[[blood/lymphoma-myeloma]]；全世界碘缺乏与碘化规划——[[public-health/global-health]]、[[public-health/prevention-promotion]]；药物（胺碘酮与锂及检查点抑制剂及干扰素及酪氨酸激酶抑制剂——[[pharmacology/adverse-reactions]]、[[immunology/vaccines-immunotherapy]]、[[cardiovascular/arrhythmias]]）；甲状腺炎后（静默性、亚急性De Quervain疼痛性病毒后带其疼痛与C反应蛋白模式（[[infectious-diseases/fever-sepsis]]邻近）、及产后——[[obstetrics-gynaecology/postnatal-period]]）；术后与放射性碘后（[[surgery/gastrointestinal-surgery]]）；先天性激素合成障碍与发育不全由新生儿筛查捕获——[[paediatrics/newborn]]、[[genetics/mendelian-inheritance]]；垂体病因——[[endocrine/hypothalamus-pituitary]]）。表现（非特异疲劳畏寒体重与便秘及月经多及腕管及声嘶及抑郁的甲状腺疾病之声——使生化具决定性的症状重叠——[[clinical-skills/history-taking]]、[[psychiatry/mood-disorders]]；黏液水肿极端——低体温、积液、肠麻痹、昏迷——[[endocrine/endocrine-emergencies]]、[[geriatrics-palliative/falls]]邻近低体温表现；查其他的清扫——维生素B12与铁及乳糜泻及糖尿病而这些不是一回事——[[blood/anaemia]]、[[gastrointestinal/bowel-disease]]、[[endocrine/diabetes-complications]]）。治疗左甲状腺素按体重起始与心脏及老年及黏液水肿的谨慎起始——[[cardiovascular/coronary-artery-disease]]；吸收规则——空腹及咖啡及钙及铁及质子泵抑制及大豆相互作用、依从性与换品牌问题、及通常是假性吸收不良的“抵抗性甲减”检查组合——[[pharmacology/absorption-distribution]]、[[pharmacology/patient-variation]]；6-8周然后每年监测带妊娠加量规则——[[obstetrics-gynaecology/pregnancy-antenatal]]；上面的亚临床治疗阈值——[[#def-testing]]；及过度治疗危害——医源性甲状腺毒症伴心房颤动与骨丢失——[[cardiovascular/arrhythmias]]、[[endocrine/bone-calcium]]；黏液水肿昏迷属于[[endocrine/endocrine-emergencies]]：静脉或胃管替代加先甲状腺的氢化可的松（[[endocrine/adrenal]]）加被动复温与诱因搜寻。**
+::: proof
+每个人都有一个狭窄的个人游离T4调定点，比人群参考范围更窄。如果甲状腺开始衰竭，游离T4会从该调定点向下漂移，但仍可能处于人群参考范围之内。垂体察觉到这种漂移，并且由于陡峭的对数线性关系，使TSH升高数倍。因此TSH结果比游离T4更早超出参考范围。这解释了**亚临床**甲状腺疾病：TSH异常而游离T4仍在参考范围内。同样的推理也说明了TSH何时失效：当垂体有病变时（中枢性甲减），以及当轴未处于稳态时，例如开始治疗后的数周内或严重疾病期间。
 :::
 
-::: definition 甲状腺功能亢进 {#def-hyperthyroid}
-**病因（Graves病——刺激型TSH受体抗体驱动弥漫增生、带共享成纤维细胞抗原的眼病及作为主导可修改风险的吸烟——[[immunology/autoimmunity]]、[[psychiatry/substance-use]]邻近戒烟、[[nervous-system/sensory-systems]]；毒性腺瘤与毒性多结节性甲状腺肿——自主性体细胞TSH受体信号生物学——[[genetics/cancer-genetics]]邻近；被误贴标签为甲亢的甲状腺炎（低摄取的疼痛或无痛或药物性或产后破坏性释放带其自限病程——挽救抗甲状腺药与放射性碘的鉴别——[[#def-testing]]）；外源性与伪装性及卵巢甲状腺肿的罕见病——[[psychiatry/eating-personality-disorders]]邻近伪装甲状腺毒症、[[obstetrics-gynaecology/gynaecological-cancer]]）。表现（肾上腺素风暴症状——心悸与食欲好而体重下降及畏热及震颤及腹泻及焦虑及近端肌病及月经少——鉴别：惊恐障碍与嗜铬细胞瘤与类癌及兴奋剂使用——[[psychiatry/anxiety-disorders]]、[[endocrine/adrenal]]、[[gastrointestinal/pancreas-biliary]]；老年淡漠型与只表现心房颤动的表现——[[geriatrics-palliative/falls]]、[[cardiovascular/arrhythmias]]；区分的体征：弥漫甲状腺肿伴杂音及眼部体征及胫前黏液水肿及骨膜病[[musculoskeletal/skin]]）。按病因治疗（抗甲状腺药——卡比马唑或甲巯咪唑优先、丙硫氧嘧啶在黑框肝毒性生态位用于早孕与危象——剂量滴定对阻断加替代策略、粒细胞缺乏安全网传单及咽痛发热即停药规则带当日全血细胞计数——[[pharmacology/adverse-reactions]]、[[blood/haematopoiesis]]、[[infectious-diseases/fever-sepsis]]；12-18个月疗程与缓解对复发算术带受体抗体预测的成功——[[#def-hyperthyroid]]）；放射性碘（消融对大腺体更早手术、及眼病恶化风险及活动性眼病的激素覆盖、及妊娠与受孕间隔规则——[[clinical-skills/medical-imaging]]邻近核医学、[[obstetrics-gynaecology/pregnancy-complications]]）；及手术（近全对腺叶切除决定、喉返神经与甲状旁腺功能减退率作为外科量-结局论证——[[surgery/gastrointestinal-surgery]]、[[endocrine/bone-calcium]]）；症状间歇期的β阻滞与心率控制带哮喘中的甲状腺心脏谨慎——[[respiratory/asthma-copd]]、[[cardiovascular/arrhythmias]]；眼病规划（戒烟、轻症补硒、激素冲击与眼眶放疗及减压顺序用于威胁视力的疾病、眼睑闭合与视神经急症的识别——[[nervous-system/sensory-systems]]、[[surgery/gastrointestinal-surgery]]）；及甲状腺危象——见[[endocrine/endocrine-emergencies]]。**
+成人典型参考范围约为TSH 0.4–4.0 mU/L、游离T4 10–22 pmol/L，但各实验室会自行设定。
+
+| 模式 | TSH | 游离T4 | 通常含义 |
+|---|---|---|---|
+| 原发性甲减 | 高 | 低 | 甲状腺衰竭，最常为自身免疫性 |
+| 亚临床甲减 | 高 | 正常 | 早期或轻度甲状腺衰竭 |
+| 原发性甲状腺毒症 | 被抑制 | 高（或正常而T3高） | 格雷夫斯病、毒性结节、甲状腺炎 |
+| 亚临床甲亢 | 被抑制 | 正常 | 轻度过多，常为结节性；或替代过量 |
+| 中枢性甲减 | 低或正常 | 低 | 垂体或下丘脑疾病 |
+| 非甲状腺疾病 | 低、正常或一过性升高 | 低或正常；T3低 | 严重疾病，并非甲状腺疾病 |
+| TSH高且游离T4高 | 高或正常 | 高 | 检测干扰、左甲状腺素服用依从性差，罕见为分泌TSH的肿瘤或甲状腺激素抵抗 |
+
+其他有用的检查包括**TPO抗体**（大多数自身免疫性甲减患者阳性）、**TSH受体抗体（TRAb）**（可诊断格雷夫斯病），以及使用锝或碘的**甲状腺摄取显像**，它显示腺体是功能亢进（摄取高）还是在泄漏储存的激素（摄取低）。
+
+::: warning 住院患者和服用生物素者结果的解读
+除非临床情况确有必要，不要根据急性病期间单次检查结果诊断甲状腺疾病。**非甲状腺疾病**首先降低T3，并可降低T4和TSH；在恢复期，TSH可能一过性升高到参考范围以上。应在康复后复查。还要询问是否服用**生物素**补充剂：大剂量生物素会干扰许多免疫测定，可产生类似格雷夫斯病的结果模式。药物也很重要：胺碘酮、锂盐、大剂量糖皮质激素和免疫检查点抑制剂都会影响甲状腺检查结果或甲状腺功能。
+:::
+
+## 甲状腺功能减退症 {#sec-hypo}
+
+::: definition 甲状腺功能减退症 {#def-hypothyroid}
+**原发性甲状腺功能减退症**是甲状腺本身甲状腺激素生成不足，伴TSH升高。在碘充足的国家，最常见的病因是**慢性自身免疫性（桥本）甲状腺炎**，伴TPO抗体阳性。其他病因有既往放射性碘治疗或甲状腺手术、药物（胺碘酮、锂盐、检查点抑制剂）、甲状腺炎的甲减期，以及在全球范围内的**碘缺乏**。**亚临床甲减**是TSH升高而游离T4在参考范围内。
+:::
+
+甲减在女性中多见数倍，其患病率随年龄增加。症状无特异性：疲倦、体重增加、畏寒、便秘、皮肤干燥、头发稀疏、情绪低落、思维迟缓、月经过多和肌肉酸痛。体征包括心动过缓、腱反射松弛期延长、眶周浮肿，以及在严重长期病例中出现**黏液水肿**（因糖胺聚糖沉积导致的非凹陷性皮肤增厚）。实验室线索包括胆固醇升高、肌酸激酶升高、大细胞性改变和低钠血症。由于症状与抑郁、绝经和普通疲劳重叠，诊断依赖血液检查。
+
+治疗用**左甲状腺素（levothyroxine）**（合成T4），每日一次，最好空腹服用，并与会减少其吸收的钙剂和铁剂错开。原则如下：
+
+- 对大多数65岁以下、无心脏病的成人，NICE建议接近完全替代剂量起始，约每日每千克体重1.6微克（仅为示意；剂量应根据现行处方集为个人确定）。
+- 对老年人和缺血性心脏病患者，从低剂量开始并缓慢加量，因为代谢率骤然升高可诱发心绞痛或心律失常。
+- 按TSH调整剂量，在建立新稳态所需的足够时间后复查（见[[#ex-steadystate]]）。
+- 替代过量导致TSH被抑制，会增加心房颤动和骨质疏松的风险。
+
+NICE不常规推荐与碘塞罗宁（liothyronine，T3）联合治疗；部分症状持续者在专科评估。
+
+对于亚临床甲减，NICE NG145建议：当相隔三个月的两次检测TSH均≥10 mU/L时，考虑使用左甲状腺素；对于65岁以下有症状、TSH高于参考范围但低于10的成人，考虑为期六个月的试验性治疗。在老年人中，TSH轻度升高很常见，治疗通常无益。
+
+## 甲状腺毒症 {#sec-hyper}
+
+::: definition 甲状腺毒症与甲状腺功能亢进症 {#def-hyperthyroid}
+**甲状腺毒症**是任何来源的甲状腺激素过多所引起的临床状态。**甲状腺功能亢进症**是由甲状腺生成过多所致的甲状腺毒症。这一区分很重要，因为**甲状腺炎**（炎症腺体释放储存的激素）或左甲状腺素过量所致的甲状腺毒症并不是甲亢，不用抗甲状腺药物治疗。
+:::
+
+主要病因有：
+
+- **格雷夫斯病（Graves' disease）**，英国最常见的病因。刺激TSH受体的抗体（TRAb）驱动腺体弥漫性增大和激素生成过多。最常见于青中年女性，常有自身免疫病家族史。格雷夫斯病特有的表现包括弥漫性甲状腺肿（有时可闻及血管杂音）、**甲状腺眼病**，以及罕见的胫前黏液水肿和甲状腺杵状指。
+- **毒性多结节性甲状腺肿**和**毒性腺瘤**：不依赖TSH自主分泌激素的结节，在老年人和既往碘缺乏地区更常见。
+- **甲状腺炎**：亚急性（德奎尔万，de Quervain）甲状腺炎发生于病毒感染之后，引起腺体疼痛、压痛和炎症指标升高；无痛性甲状腺炎和**产后甲状腺炎**是自身免疫性的。它们都引起一过性甲状腺毒症期，显像摄取低，常随后出现甲减期，然后恢复。
+- **药物**：胺碘酮（两型：碘诱导的激素生成过多和破坏性甲状腺炎）、左甲状腺素过量、结节性甲状腺接受碘造影剂。
+
+症状反映代谢率升高和肾上腺素能敏感性增加：食欲良好但体重减轻、怕热、多汗、心悸、震颤、焦虑、易激惹、腹泻、月经稀发和近端肌无力。体征包括心动过速或**心房颤动**、细震颤、皮肤温暖潮湿和眼睑迟落。老年人可能很少有肾上腺素能表现，而以体重减轻、心房颤动、心力衰竭或情绪低落为表现（"淡漠型甲状腺毒症"）。
+
+### 治疗
+
+**β受体阻滞剂**（例如普萘洛尔）能迅速缓解震颤、心悸和焦虑，无论病因如何，可在确定性治疗起效之前使用。
+
+**抗甲状腺药物**（硫脲类）抑制TPO。**卡比马唑（carbimazole）**（在体内转化为甲巯咪唑）是英国的一线药物。妊娠早期首选**丙硫氧嘧啶（propylthiouracil）**，因为卡比马唑与一种特定的出生缺陷模式有关；但丙硫氧嘧啶严重肝损伤的风险较高，因此在其他情况下为二线药物。有两种方案：**滴定法**（调整剂量使游离T4维持正常）和**阻断-替代法**（较大剂量完全阻断腺体，同时加用左甲状腺素）。疗程通常为12至18个月；约一半格雷夫斯病患者停药后复发。
+
+两种硫脲类药物最重要的不良反应是**粒细胞缺乏症**，即中性粒细胞突然严重下降，罕见但可能致命。每一位开始使用硫脲类药物的人都必须以口头和书面形式被告知：如果出现咽痛、口腔溃疡、发热或其他感染征象，应停药并紧急查全血细胞计数。
+
+**放射性碘**被甲状腺摄取，并在数周至数月内破坏腺体。NICE推荐其作为大多数成人格雷夫斯病的一线确定性治疗，除非判断抗甲状腺药物更可能获得缓解，或放射性碘不适用。妊娠和哺乳期禁用，治疗后一段时间内必须避免妊娠，而且它可加重甲状腺眼病，尤其是吸烟者，因此活动性眼病可能需要糖皮质激素保护或选择其他治疗。大多数人最终会发生甲减，需要终身服用左甲状腺素。
+
+**手术**（甲状腺全切除术）适用于有压迫症状的大甲状腺肿、可疑结节、活动性中重度眼病，或出于个人意愿。风险包括**喉返神经**损伤（声音嘶哑）和甲状旁腺损伤（低钙血症；见[[endocrine/bone-calcium]]）。
+
+对于毒性结节和毒性多结节性甲状腺肿，药物不能使其缓解，因此通常建议放射性碘或手术。甲状腺炎采用对症治疗，使用β受体阻滞剂；疼痛性亚急性甲状腺炎加用抗炎药物。
+
+**甲状腺眼病**由眼眶脂肪和眼外肌的自身免疫性炎症引起。它导致异物感、眼红、眼球突出、眼睑退缩和复视。戒烟是最有效的可改变措施。硒对轻度病变有益。中重度活动性病变由专科医生采用静脉糖皮质激素或其他免疫治疗。出现色觉或视力下降的**视神经病变**是急症。
+
+## 妊娠期甲状腺疾病 {#sec-pregnancy}
+
+妊娠改变甲状腺生理。雌激素使TBG升高。人绒毛膜促性腺激素（hCG）结构与TSH相似，在妊娠早期刺激甲状腺，因此TSH正常会下降，需使用妊娠各期特异的参考范围。在胎儿自身甲状腺约于妊娠12周开始工作之前，胎儿依赖母体的T4。
+
+已在服用左甲状腺素的女性，通常一经确认妊娠就需要增加剂量。在格雷夫斯病中，TRAb可通过胎盘引起胎儿或新生儿甲状腺毒症，即使母亲以前接受过放射性碘或手术治疗也可能发生，因此妊娠期要检测TRAb。产后甲状腺炎发生在分娩后一年内。这些情况由内分泌与产科团队共同管理（[[obstetrics-gynaecology/pregnancy-complications]]）。
+
+## 甲状腺肿、结节与癌 {#sec-nodules}
+
+甲状腺结节极为常见：许多可以触及，超声能发现的更多。绝大多数是良性的。任务是在不让每个人都接受手术的前提下找出少数癌症。
+
+::: definition 甲状腺结节的评估 {#def-cancer}
+1. **首先查TSH。** TSH被抑制提示结节可能是自主功能性（"热"）结节，极少为恶性；显像可证实。
+2. **超声。** 增加怀疑的特征包括实性低回声结节、微钙化、边缘不规则、纵横比大于1（高大于宽），以及颈部淋巴结异常。英国的实践采用英国甲状腺协会的**U1至U5**分级；其他地区使用ACR TI-RADS等系统。
+3. 对可疑结节行**细针穿刺细胞学**检查。英国报告使用**Thy1至Thy5**分类；许多国家使用相应的**Bethesda**系统（Ⅰ至Ⅵ类）。不确定的结果可能需要诊断性甲状腺腺叶切除或分子检测。
+:::
+
+主要的甲状腺癌有：
+
+- **乳头状癌**：最常见，多见于较年轻的成人，转移至颈部淋巴结，预后极好。既往放射暴露，尤其是儿童期暴露，是危险因素。
+- **滤泡状癌**：经血行转移至肺和骨；与良性滤泡性腺瘤的区分需要组织学显示包膜或血管侵犯，因此仅凭细胞学无法诊断。
+- **髓样癌**：起源于分泌降钙素的**滤泡旁C细胞**。降钙素和CEA是肿瘤标志物。约四分之一的病例是遗传性的，由**RET**突变引起，属于**多发性内分泌腺瘤病2型（MEN2）**的一部分。术前必须排除嗜铬细胞瘤。
+- **未分化癌**：罕见，见于老年人，生长迅速，预后差。
+- **甲状腺淋巴瘤**：罕见，与桥本甲状腺炎相关。
+
+分化型（乳头状和滤泡状）癌采用手术治疗，高风险病例加放射性碘清甲，部分病例用左甲状腺素抑制TSH。随访采用血清**甲状腺球蛋白**，完全治疗后应测不出。
+
+关于**过度诊断**的警示：在超声筛查普及的国家，诊断出的小乳头状癌数量急剧上升，而甲状腺癌死亡率没有变化。许多小乳头状癌本不会造成危害。因此不建议对无症状人群进行甲状腺癌筛查，极小的低风险癌可在专科中心采取主动监测（[[public-health/screening]]）。
+
+::: example 等待稳态 {#ex-steadystate}
+一位42岁桥本甲状腺炎女性开始服用左甲状腺素。左甲状腺素的半衰期约为7天。6周后达到最终稳态水平的多少？应何时复查TSH？
+::: solution
+在每日重复给药时，接近稳态的过程取决于药物的半衰期。经过$n$个半衰期后，达到稳态的比例为
+
+$$
+1 - \left(\tfrac{1}{2}\right)^{n}。
+$$
+
+6周即42天，相当于$42/7 = 6$个半衰期。比例为$1 - (1/2)^6 = 1 - 1/64 = 63/64 \approx 0.984$，即**98.4%**。约5个半衰期（5周）后，她已达到稳态的96%以上。
+
+由于垂体需要重新调整，TSH的变化更滞后。因此在开始治疗或调整剂量后约**6至8周**复查TSH，才能得到有意义的结果；2周时检查会显示一个仍在变化的数值，可能导致不必要的加量。任何剂量调整后都适用同样的时间安排。
+:::
 :::
 
 ::: widget plot
-f: 14*exp(-x/16)+1; 1.0
-x: 0, 48
-y: 0, 16
-labels: \text{月份},\ \text{TSH受体抗体指数};\ \text{抗甲状腺药疗程中的Graves病};\ \text{参考值上限}
-caption: 抗甲状腺药疗程与其决策点（[[#def-hyperthyroid]]）：TSH受体抗体滴度在12-18个月疗程中下降、而停药时水平预测复发——“停还是续”谈话背后的抗体曲线；持续抗体倾向确定性治疗（放射性碘或手术）而正常化支持有监测的停药（[[immunology/autoimmunity]]抗体动力学、[[clinical-skills/laboratory-tests]]、[[clinical-skills/communication]]的共享决定）。
+f: 100*(1-2^(-x/7)); 100*(1-2^(-x/3.5))
+x: 0, 70
+y: 0, 105
+hlines: 100
+labels: \text{半衰期7天（左甲状腺素）}; \text{半衰期3.5天（作对比）}
+caption: 每日规律给药时接近稳态的过程，纵轴为最终水平的百分比，横轴为开始用药后的天数。半衰期为7天时，5周后约达到稳态的97%，这就是剂量调整后6–8周复查甲状腺功能的原因。简化的单室模型。
 :::
 
-## 肿块与肿瘤
-
-::: definition 甲状腺肿、结节与甲状腺癌 {#def-cancer}
-**甲状腺肿生理性肥大逻辑——碘缺乏、妊娠、青春期、致甲状腺肿物质——对病理性浸润；压迫与气道与血管综合征（胸骨后延伸带胸廓入口体征及在麻醉想象恐慌之前做CT的规则——[[anatomy/thorax]]、[[clinical-skills/medical-imaging]]、[[surgery/anaesthesia-pain]]邻近气道规划；上腔静脉与喉返神经并发症——[[cardiovascular/vascular-disease]]、[[nervous-system/sensory-systems]]；桥本中的淋巴瘤转化带其迅速生长与B症状[[blood/lymphoma-myeloma]]、[[immunology/immunodeficiency]]邻近）。结节评估（TSH然后超声然后细胞学的算法——热结节很少恶性所以TSH低时做扫描；超声风险特征（微钙化、纵横比大于1、边缘不规则、腺外侵犯）与重复测量；细针穿刺带Bethesda报告系统及其管理映射——良性复查、不确定分子检测或腺叶切除、恶性手术（[[pathology/diagnostic-pathology]]、[[clinical-skills/laboratory-tests]]）；及高可疑超声病灶中“良性”结果的假性安心需要再穿刺——[[clinical-skills/clinical-reasoning]]）。甲状腺癌（乳头状——BRAF与RAS丝裂原活化蛋白激酶信号癌、淋巴播散、及带风险分层手术与放射性碘选择的极好预后（[[genetics/cancer-genetics]]、[[surgery/gastrointestinal-surgery]]、甲状腺球蛋白随访——[[clinical-skills/laboratory-tests]]）；滤泡状——血行播散及分子检测对诊断性腺叶切除之争；髓样——C细胞降钙素与癌胚抗原标志物及RET胚系检测及预防性甲状腺切除时机带2型多发性内分泌腺瘤病先处理嗜铬细胞瘤逻辑（[[genetics/mendelian-inheritance]]、[[genetics/genetic-testing]]、[[endocrine/adrenal]]的嗜铬细胞瘤行、[[surgery/gastrointestinal-surgery]]作为内分泌外科之家）；间变——老年侵袭性患者带其气道优先管理与现代BRAF与MEK联合答案（[[nervous-system/sensory-systems]]邻近神经侵犯、[[geriatrics-palliative/palliative-care]]）；及偶发小乳头状的主动监测时代——[[public-health/screening]]的过度诊断悖论）。治疗后架构（甲状腺球蛋白与抗体配对随访、放射性碘扫描与全身剂量学逻辑、按风险的TSH抑制强度——[[endocrine/hypothalamus-pituitary]]邻近轴抑制、[[cardiovascular/arrhythmias]]与[[endocrine/bone-calcium]]作为抑制的代价；外照射与靶向治疗的罕见情形；及复发与继发恶性肿瘤的长远——[[public-health/screening]]）。**
-:::
-
-::: example 住院患者陷阱 {#ex-sick}
-一名肺炎ICU患者TSH 0.4、游离T4 8（低）、游离T3 2.1（很低）；他因哮喘用氢化可的松、上月因房颤用过胺碘酮。病房团队问是否“开始甲状腺素”。
+::: example 咽痛后的甲状腺毒症 {#ex-thyroiditis}
+一位38岁南亚裔男性，在一次流感样疾病后出现三周心悸、出汗和颈部疼痛。甲状腺有压痛。游离T4 38 pmol/L，TSH低于0.01 mU/L，CRP 64 mg/L。TRAb阴性。锝显像几乎无摄取。诊断是什么？应如何处理？
 ::: solution
-**不要治疗非甲状腺疾病（低T3为首的模式带其T4与TSH期进展——恢复期TSH一过性升高的警诫；[[#def-testing]]：这是生理不是甲减、而ICU中的替代试验未显示获益且可能有害——T3输注历史的现代判决——[[epidemiology-ebm/randomised-trials]]）。本例的贡献因素：危重病本身、氢化可的松的中枢TSH抑制（[[pharmacology/adverse-reactions]]）、及胺碘酮的碘与药理双重打击（[[cardiovascular/arrhythmias]]）。正确的动作：**治疗疾病并降级激素（[[respiratory/asthma-copd]]）、在恢复期复查甲状腺功能（数周、带解读警诫）、询问胺碘酮是否继续及是否存在甲状腺基线（胺碘酮前甲状腺筛查与每6个月规程、及胺碘酮诱导低下对亢进的划分——亢进型的摄取与受体抗体及超声鉴别[[#def-hypothyroid]]、[[#def-hyperthyroid]]）；并在病历写下这一模式绝不能变成长期甲状腺素误诊——“住院患者TSH被当作甲减治疗”这一事件类别——[[clinical-skills/records-handover]]、[[clinical-skills/patient-safety]]。**
+病毒感染后出现腺体疼痛和压痛、炎症指标升高、TRAb阴性且**摄取低**的甲状腺毒症，是**亚急性（德奎尔万）甲状腺炎**。腺体发炎并泄漏储存的激素，而不是生成过多。
+
+抗甲状腺药物无效，因为合成并未增加，反而可能造成伤害。处理为对症治疗：β受体阻滞剂缓解肾上腺素能症状，抗炎治疗缓解疼痛（非甾体抗炎药，严重时短程泼尼松龙）。应告知他数周至数月后可能出现甲减期，因此需复查甲状腺功能；大多数人能恢复正常功能，少数需要长期服用左甲状腺素。
 :::
 :::
 
-::: example 规划的谈话 {#ex-graves}
-29岁新诊断Graves病女性（受体抗体高、游离T4 42、轻度眼部体征、吸烟、希望一年内怀孕）询问“药片、放射线还是手术”的选择。
+::: example 格雷夫斯病治疗方式的选择 {#ex-graves}
+一位29岁女性新诊断为格雷夫斯病：游离T4 42 pmol/L，TSH被抑制，TRAb强阳性，有轻度眼部异物感但无复视。她吸烟，希望一年内怀孕。概述治疗选择以及支持各选择的因素。
 ::: solution
-**针对她的优先事项咨询（[[#def-hyperthyroid]]）：抗甲状腺药是起始路径（带12-18个月缓解的诚实：部分概率且复发常见[[#def-hyperthyroid]]）；放射性碘对她的计划相对错误（受孕延迟间隔规则、吸烟且有眼部体征者眼病恶化——激素覆盖或回避的决定——及终身甲减概率——[[obstetrics-gynaecology/pregnancy-complications]]、[[nervous-system/sensory-systems]]）；手术适合大腺体计划生育或药物失败的情形（带其神经与甲状旁腺风险及永久替代现实——[[surgery/gastrointestinal-surgery]]、[[endocrine/bone-calcium]]）。妊娠专门咨询（首选缓解中受孕且剂量稳定；丙硫氧嘧啶？——不：早孕丙硫氧嘧啶对卡比马唑胚胎病谱的切换及最小有效剂量与哺乳相容性——[[pharmacology/patient-variation]]、[[obstetrics-gynaecology/pregnancy-complications]]；受体抗体通过及新生儿甲状腺病风险带胎儿与新生儿监测——[[paediatrics/newborn]]、[[immunology/adaptive-responses]]）。可修改项：**作为眼病干预的戒烟提供——[[psychiatry/substance-use]]；稳定之前的避孕讨论（[[obstetrics-gynaecology/contraception-fertility]]）；粒细胞缺乏传单已发放并理解记录在案（[[blood/haematopoiesis]]）；及共享决定记录、使下次门诊不必从菜单重新开始（[[clinical-skills/communication]]、[[clinical-skills/records-handover]]）。**
+**即刻处理**：β受体阻滞剂缓解症状。强烈建议并支持她戒烟，以降低眼病加重的风险。
+
+**抗甲状腺药物**：卡比马唑，并以书面和口头形式告知粒细胞缺乏的风险。12–18个月的疗程有缓解的机会。由于她计划妊娠，服用卡比马唑期间应采取避孕措施，并与专科医生讨论时机；如果治疗期间怀孕，妊娠早期可能需改用丙硫氧嘧啶。
+
+**放射性碘**：NICE通常的一线确定性治疗，但目前不太适合她。治疗后她需要在一段时间内避免妊娠（通常至少6个月），它可能加重她的眼病（她吸烟且有眼部症状），而且TRAb可能持续存在并影响之后的妊娠。
+
+**手术**：甲状腺全切除术能迅速、确定地治愈，并避免放射，如果她希望在妊娠前获得确定的结果，这是合理的选择。这意味着终身服用左甲状腺素，并有损伤喉返神经和甲状旁腺的小风险。
+
+决策应共同作出、记录在案，并随她计划的变化而重新审视。
 :::
 :::
 
-::: example 九十岁的淡漠 {#ex-apathetic}
-90岁养老院住民一个月内跌倒两次；新发心房颤动心率130、6个月体重下降4公斤、“安静、不是平时的她”；无震颤、触不到甲状腺肿、TSH 0.01伴游离T4 28。
+::: example 伴心房颤动的老年女性 {#ex-apathetic}
+一位84岁女性六个月内体重减轻5 kg，新发心房颤动，心率128次/分。她表现为淡漠而非焦虑，无震颤。TSH低于0.01 mU/L，游离T4 27 pmol/L。显像显示增大的结节性甲状腺内呈斑片状摄取增高。发生了什么？首要任务是什么？
 ::: solution
-**老人的淡漠型甲状腺毒症（教科书肾上腺素图像的反面——[[#def-hyperthyroid]]表现行）：不震颤患者中“跌倒加新房加体重下降加淡漠”四联、常因胸骨后触不到腺体（[[#def-cancer]]甲状腺肿行、[[anatomy/thorax]]）；病因偏向毒性结节性与亚临床表现而不是Graves——闪烁显像定夺并改变治疗（[[clinical-skills/medical-imaging]]、[[#def-testing]]）。管理：心房颤动的**心率控制策略与抗凝决定**带她的跌倒风险算术（[[cardiovascular/arrhythmias]]、[[blood/thrombosis-anticoagulation]]）；谨慎启动抗甲状腺药（更低剂量、注意认知损害者对粒细胞缺乏传单的理解——[[blood/haematopoiesis]]、[[clinical-skills/communication]]）；即便轻度过度治疗的骨与衰弱后果（[[endocrine/bone-calcium]]、[[geriatrics-palliative/falls]]）；高龄者确定性治疗之问（放射性碘对长期低剂量药物带依从与监测现实——[[geriatrics-palliative/polypharmacy]]）；记录在案的谵妄与抑郁鉴别（[[geriatrics-palliative/delirium-dementia-care]]、[[psychiatry/mood-disorders]]）；及“为何第一次跌倒时没人查甲功”的服务要点（[[clinical-skills/patient-safety]]、[[geriatrics-palliative/falls]]心房颤动甲状腺筛查规则）。**
+这是由**毒性多结节性甲状腺肿**引起的甲状腺毒症，表现为**淡漠型甲状腺毒症**，这是老年人常见的模式：体重减轻、心房颤动和情绪低落，而非震颤和焦虑。
+
+首要任务：
+1. 用β受体阻滞剂**控制心室率**，并评估卒中和出血风险以决定抗凝（[[cardiovascular/arrhythmias]]）。
+2. 用卡比马唑**恢复甲状腺功能正常**（粒细胞缺乏的告知应根据她本人及照护者的情况调整）。
+3. **确定性治疗**：结节性病变不会缓解，因此通常建议放射性碘；对部分衰弱者，长期小剂量卡比马唑是另一选择。
+4. 关注她的骨骼健康，因为甲状腺毒症会加速骨丢失（[[endocrine/bone-calcium]]）。
+
+甲状腺功能恢复正常后，心房颤动常会转复为窦性心律。
 :::
 :::
 
-::: example 降钙素升高 {#ex-medullary}
-36岁有1.5厘米甲状腺结节；细胞学可疑髓样癌；基础降钙素480 pg/mL、癌胚抗原升高；她父亲“41岁心脏病发作”去世而一名表亲有“肾上腺肿瘤”。
+::: example 有家族史的颈部肿块 {#ex-medullary}
+一位36岁女性有一个1.5 cm的甲状腺结节。细胞学提示髓样癌，血清降钙素显著升高。她的父亲曾有"血压极高的发作"，41岁时猝死。甲状腺手术前应做什么？为什么？
 ::: solution
-**在被证明否则之前都是带2型多发性内分泌腺瘤病家族信号的甲状腺髓样癌（[[#def-cancer]]髓样行）：RET胚系检测规则及在任何手术或麻醉之前排除嗜铬细胞瘤（甲氧基肾上腺素与高血压危象危害——[[endocrine/adrenal]]、[[surgery/anaesthesia-pain]]、[[endocrine/endocrine-emergencies]]）；初步检查组合（降钙素与癌胚抗原基线、颈部与肝影像带骨髓与骨模态选择——[[clinical-skills/medical-imaging]]、[[pathology/cancer-diagnosis]]）；手术（全甲状腺切除带中央区淋巴结清扫、及晚期疾病的外照射对激酶抑制剂之问——凡德他尼与卡博替尼及基因型匹配的RET抑制剂——[[pharmacology/dosing-principles]]、[[genetics/genomic-medicine]]）；家系级联（RET阳性儿童的预防性甲状腺切除时机按突变风险等级表、及儿童手术的伦理重量——[[paediatrics/congenital-genetic]]、[[medical-ethics-law/beginning-of-life]]、[[genetics/genetic-testing]]）；长远肿瘤标志物随访及2A型的嗜铬与甲状旁腺监测时间表（[[endocrine/bone-calcium]]、[[endocrine/adrenal]]）；及把父亲的早逝作为线索记录（改变诊断的家族史重取——[[clinical-skills/history-taking]]、[[clinical-skills/records-handover]]）。**
+甲状腺髓样癌伴提示嗜铬细胞瘤的家族史，高度怀疑由胚系**RET**突变引起的**MEN2**。
+
+在任何手术或麻醉之前，**必须用血浆或尿液甲氧基肾上腺素类物质排除嗜铬细胞瘤**。未被诊断的嗜铬细胞瘤可在麻醉期间引起致命的高血压危象。如果存在，应先经α受体阻滞后治疗嗜铬细胞瘤（[[endocrine/adrenal]]）。
+
+她还应检查血钙和PTH（MEN2A包括原发性甲状旁腺功能亢进症），接受遗传咨询和RET检测。甲状腺手术为甲状腺全切除加中央区淋巴结清扫。如果她携带RET突变，亲属可接受检测，携带突变的儿童可在根据具体突变确定的年龄接受预防性甲状腺切除术（[[genetics/cancer-genetics]]）。
 :::
 :::
 
 ::: quiz
-一名垂体患者服用足量左甲状腺素，其监测用：
-- [ ] 单查TSH
-- [x] 游离T4、因为TSH在中枢性甲减中不可靠
-- [ ] 甲状腺抗体
-- [ ] 放射性碘摄取
+一位服用复方口服避孕药的女性总T4升高，游离T4和TSH正常。原因是什么？
+- [ ] 早期格雷夫斯病
+- [x] 雌激素使甲状腺素结合球蛋白升高
+- [ ] 亚临床甲减
+- [ ] 生物素引起的检测干扰
 ::: solution
-**中枢性甲减产生正常-低或轻度升高且生物学失活的TSH——游离T4是追踪数字（[[#def-testing]]、[[endocrine/hypothalamus-pituitary]]的规则）；抗体与摄取测量的是腺体不是脑；剂量充足性复审与妊娠目标设定属于[[obstetrics-gynaecology/pregnancy-complications]]。**
+雌激素增加TBG，因此结合的T4增多，总T4升高。驱动反馈和组织效应的游离激素不变，TSH也不变。她的甲状腺功能正常。这就是测定游离T4而非总T4的原因。
 :::
 :::
 
 ::: history
-**甲状腺医学的分层历史艺术史的甲状腺肿肖像到Parry 1786年的病例描述；Basedow与von Basedow的19世纪甲状腺肿与眼部体征及心动过速三联；Kocher的甲状腺切除精通与1909年诺贝尔奖及其邻近黏液水肿的警世名声——[[surgery/gastrointestinal-surgery]]；Harington与Kendall 1914年的甲状腺素结晶与商业然后合成药片时代[[pharmacology/drug-receptor]]；Hashimoto 1912年的德语论文成为器官特异自身免疫病的原型——[[immunology/autoimmunity]]；在阿尔卑斯与湖区甲状腺肿蔓延之后的碘盐公共卫生胜利——[[public-health/prevention-promotion]]、[[public-health/global-health]]；放射性碘作为曼哈顿计划衍生物的1940年代治疗诞生（[[clinical-skills/medical-imaging]]核医学谱系）；McKenzie的生物测定时代导向1988年TSH受体克隆、把Graves病变成一个可定义的抗体疾病——[[genetics/genomic-medicine]]；新生儿筛查与先天性甲减规划——[[paediatrics/newborn]]、[[public-health/screening]]；及现代Bethesda与分子结节时代减少了诊断性甲状腺切除——[[pathology/diagnostic-pathology]]、[[public-health/screening]]的过度诊断诚实。**
+1891年，纽卡斯尔的**乔治·默里（George Murray）**用羊甲状腺提取物注射治疗一位黏液水肿女性；她依靠甲状腺提取物又生活了将近三十年。瑞士外科医生**特奥多尔·科赫尔（Theodor Kocher）**使甲状腺切除术变得安全，并于1883年描述了甲状腺全切除后出现的甲减；他于1909年获得诺贝尔生理学或医学奖。1912年，**桥本策（Hakaru Hashimoto）**描述了以他的名字命名的淋巴细胞性甲状腺肿。**爱德华·肯德尔（Edward Kendall）**于1914年在梅奥诊所分离出结晶甲状腺素，**查尔斯·哈林顿（Charles Harington）**在1926–1927年确定并合成了其结构。1941年，波士顿的**索尔·赫兹（Saul Hertz）**首次用治疗剂量的放射性碘治疗甲亢。
 :::
 
-## 通向何处
+## 后续内容
 
-反馈环及其失能在[[endocrine/hypothalamus-pituitary]]；急症（危象、黏液水肿昏迷）在[[endocrine/endocrine-emergencies]]；过多与不足两者的骨后果在[[endocrine/bone-calcium]]；妊娠管理在[[obstetrics-gynaecology/pregnancy-complications]]；自身免疫在[[immunology/autoimmunity]]；外科与放射性碘的交付在[[surgery/gastrointestinal-surgery]]。
-
-::: exercise 设定阈值 {level=2}
-三名患者TSH 11伴游离T4正常且抗过氧化物酶阳性：(a) 24岁备孕女性；(b) 68岁心悸、复查TSH 7.5；(c) 82岁、TSH 9、疲劳。治疗还是观察？
-::: solution
-**(a) 治疗——亚临床甲减与生育及妊娠的更低阈值及胎儿甲状腺素依赖论证（[[#def-hypothyroid]]、[[obstetrics-gynaecology/pregnancy-antenatal]]、[[obstetrics-gynaecology/contraception-fertility]]）；(b) 通常观察并复查——轻度TSH升高伴波动及症状不匹配加抗体状态背景、过度治疗的心房颤动与骨风险（[[#def-testing]]、[[cardiovascular/arrhythmias]]、[[endocrine/bone-calcium]]）；(c) 默认观察——最高龄者TSH低于10伴非特异症状、及治疗负担与过度治疗危害（[[geriatrics-palliative/polypharmacy]]）；三人都获得记录理由与预约复审日期的纪律（[[clinical-skills/records-handover]]、[[clinical-skills/communication]]）。**
-:::
-:::
-
-::: exercise 修复吸收 {level=2}
-患者“左甲状腺素125 µg”下TSH仍22；药房记录显示逐月延迟取药、她与咖啡及一片钙同服、且新诊断乳糜泻。解开并处方。
-::: solution
-**多击假性抵抗（[[#def-hypothyroid]]治疗行）：依从优先的不评判澄清及泡罩包装与星期策略（[[pharmacology/patient-variation]]、[[clinical-skills/communication]]）；时机纠正——空腹用水服、咖啡前30-60分钟、钙与铁间隔4小时（[[pharmacology/absorption-distribution]]）；乳糜泻黏膜对吸收的影响及无麸质饮食后剂量再滴定（[[gastrointestinal/bowel-disease]]、[[gastrointestinal/digestion-absorption]]）；及记录在案的漏服日周剂量重叠选项（[[pharmacology/dosing-principles]]）；然后6-8周而不是2周复查TSH、及对已被依从性解决的“抵抗”的停止规则（[[clinical-skills/laboratory-tests]]、[[clinical-skills/records-handover]]）。**
-:::
-:::
+甲状腺危象和黏液水肿昏迷见[[endocrine/endocrine-emergencies]]。激素受体和反馈的一般原理见[[physiology/hormones]]。自身免疫性甲状腺疾病是器官特异性自身免疫的典型（[[immunology/autoimmunity]]），先天性甲减的新生儿筛查见[[paediatrics/newborn]]。
 
 ::: summary
-- TSH极敏感但在住院患者中毫无意义、在垂体疾病中不可靠；病例由游离T4决定。
-- 甲减多数是桥本或医源性；左甲状腺素是一味吸收娇气药——安排服药时间、审计依从性、并在妊娠中重新定量。
-- 甲亢管理按病因：破坏性甲状腺炎只需β阻滞与耐心、Graves病提供药物与放射性碘与手术的取舍、而毒性结节既不靠药片也不靠等待而缓解。
-- 每个结节遵循TSH-超声-细胞学算法；髓样癌强制RET检测与手术前嗜铬细胞瘤排除。
-- 甲状腺是接口器官——妊娠、胺碘酮、锂、检查点抑制剂与产后时期都会问到它。
+- 甲状腺摄取碘离子（NIS），使甲状腺球蛋白碘化（TPO），主要分泌T4，T4在组织中转化为活性更强的T3。
+- 99%以上的甲状腺激素与蛋白结合；应测定游离T4，因为结合蛋白会随雌激素和疾病变化。
+- 由于TSH与游离T4呈对数线性关系，TSH是最敏感的一线检查，但垂体疾病和非稳态时例外。
+- 桥本甲状腺炎是甲减最常见的病因；用左甲状腺素治疗，调整剂量后6–8周按TSH调整，老年人和心脏病患者从低剂量开始。
+- 甲状腺毒症不一定是甲亢：甲状腺炎摄取低，不用抗甲状腺药物治疗。
+- 格雷夫斯病用抗甲状腺药物、放射性碘或手术治疗；所有服用卡比马唑或丙硫氧嘧啶的人都应被告知粒细胞缺乏的风险。
+- 用TSH、超声和细胞学评估结节；髓样癌提示MEN2，术前须排除嗜铬细胞瘤。
+- 小乳头状癌常被过度诊断；不建议对无症状人群筛查。
 :::
 
-## 练习
+## 习题
 
-::: exercise 解读结果 {level=1}
-解读：TSH 0.01、游离T4 30、游离T3 14、因桥本每日服甲状腺素150 µg。
+::: exercise 解读结果模式 {level=1}
+写出最可能的诊断：(a) TSH 18 mU/L，游离T4 6 pmol/L；(b) TSH 7.2 mU/L，游离T4 14 pmol/L；(c) TSH低于0.01 mU/L，游离T4 45 pmol/L，TRAb阳性。
 ::: solution
-**外源性或内源性甲状腺毒症：低受体抗体背景与剂量病史分开伪装或处方错误的过度替代（[[#def-hypothyroid]]过度治疗行、[[#def-hyperthyroid]]外源行、故意时见[[psychiatry/eating-personality-disorders]]）；核查实际摄入剂量对处方及吸收改变与批次更换（[[pharmacology/absorption-distribution]]、[[pharmacology/patient-variation]]）；持续抑制的心房颤动与骨风险——[[cardiovascular/arrhythmias]]、[[endocrine/bone-calcium]]。**
+(a) 显性原发性甲减。(b) 亚临床甲减：TSH升高而游离T4正常；在决定是否治疗前约三个月后复查。(c) 格雷夫斯病：伴刺激性TSH受体抗体的甲状腺毒症。
 :::
 :::
 
-::: exercise 说出模式 {level=1}
-疼痛性甲状腺肿、发热、血沉与C反应蛋白很高、摄取低、病毒后3周：诊断与治疗？
+::: exercise 必不可少的警告 {level=1}
+开始服用卡比马唑的人必须被告知关于咽痛的什么内容？为什么？
 ::: solution
-**亚急性（De Quervain）甲状腺炎（[[#def-hypothyroid]]病因行与[[#def-hyperthyroid]]甲状腺炎行）：自限的破坏性释放——非甾体抗炎药或重症用激素及β阻滞剂对症；不是抗甲状腺药（[[pharmacology/adverse-reactions]]不必要伤害路径）；预期的先甲减后恢复序列带随访甲状腺功能（[[clinical-skills/laboratory-tests]]、病毒后联系——[[infectious-diseases/fever-sepsis]]邻近）。**
+卡比马唑罕见情况下可引起粒细胞缺乏症，即中性粒细胞严重下降，可导致暴发性感染。如果出现咽痛、口腔溃疡、发热或其他感染征象，应停药并紧急查全血细胞计数。该建议应口头和书面给予，并记录在案。
 :::
 :::
 
-::: exercise 管理这个结节 {level=2}
-1.8厘米低回声结节伴微钙化与边缘不规则；TSH正常；两次穿刺均为Bethesda V。计划与咨询。
+::: exercise 稳态 {level=1 check="1-(1/2)^4"}
+左甲状腺素的半衰期约为7天。假设为简单的一级动力学，开始每日规律给药后28天，达到稳态的比例是多少？请给出精确分数或小数。
 ::: solution
-**可疑超声加可疑细胞学等于几乎确定的乳头状癌路径（[[#def-cancer]]）：按大小与腺外侵犯及淋巴结状态及偏好的全对腺叶决定带中央区淋巴结取样细微（[[surgery/gastrointestinal-surgery]]）；术前声带与淋巴结测绘（[[clinical-skills/medical-imaging]]、[[nervous-system/sensory-systems]]神经检查）；术前甲状腺球蛋白基线规则（[[clinical-skills/laboratory-tests]]）；术后按风险的放射性碘选择与TSH抑制强度（[[#def-cancer]]随访、[[endocrine/hypothalamus-pituitary]]邻近抑制）；疤痕与声音及长期药片咨询（[[clinical-skills/communication]]、[[#def-hypothyroid]]）；及带复发监测的极好预后视角（[[public-health/screening]]）。**
+28天为4个半衰期，因此比例为$1 - (1/2)^4 = 1 - 1/16 = 15/16 = 0.9375$。
 :::
 :::
 
-::: exercise 排定筛查 {level=2}
-下列哪些现在需要甲状腺检查：(a) 30岁新发广泛焦虑；(b) 55岁ICU脓毒症（[[#ex-sick]]的病例）；(c) 88岁新发心房颤动；(d) 32岁产后6周疲劳且有甲状腺病家族史；(e) 即将开始胺碘酮的患者？
+::: exercise 示意性起始剂量 {level=2 check="1.6*65"}
+NICE建议65岁以下、无心血管疾病的成人左甲状腺素起始剂量约为每日每千克1.6微克。对于65 kg的成人，按此公式在按可用片剂规格取整之前，每日剂量是多少微克？（仅为示意性计算；剂量应根据现行处方集为个人确定。）
 ::: solution
-**(a) 是、带边界——首次精神科呈现的甲状腺筛查是标准（[[#def-hypothyroid]]、[[#def-hyperthyroid]]精神科模拟、[[psychiatry/anxiety-disorders]]）；(b) 否（[[#ex-sick]]的教导）；(c) 是——任何年龄的心房颤动都查TSH（[[cardiovascular/arrhythmias]]）；(d) 是——产后甲状腺炎风险带基线及3-6个月检查（[[obstetrics-gynaecology/postnatal-period]]）；(e) 是、基线然后每6个月带解读警诫（[[pharmacology/adverse-reactions]]）。**
+$1.6 \times 65 = 104$微克/日。实际中会取整为可用片剂能给出的剂量，常为100微克，然后按TSH调整。
 :::
 :::
 
-::: exercise 解读产后病例 {level=2}
-产后8周：心悸与失眠；TSH 0.02、游离T4 30、受体抗体阴性、摄取低、轻度颈部不适、哺乳中。是Graves病吗、现在怎么办？
+::: exercise 热结节还是冷结节 {level=2}
+解释为什么对TSH被抑制者的甲状腺结节，通常先做显像而不是细针穿刺。
 ::: solution
-**产后甲状腺炎甲状腺毒症期（其经典窗口的低摄取抗体阴性破坏模式——[[#def-hypothyroid]]与[[#def-hyperthyroid]]病因行、[[obstetrics-gynaecology/postnatal-period]]）：β阻滞剂与安心而不是卡比马唑（[[pharmacology/adverse-reactions]]）；预期的甲减期及每6个月随访及永久性甲减的长期比率（[[#def-hypothyroid]]）；哺乳用药安全核查（[[pharmacology/patient-variation]]）；“这不是一段与Graves病共同人生的开始”的区分改变整个十年故事（[[clinical-skills/communication]]）；及未来妊娠与检查点抑制剂及锂警示卡的记录（[[clinical-skills/records-handover]]、[[immunology/vaccines-immunotherapy]]）。**
+TSH被抑制提示该结节可能在自主分泌甲状腺激素。如果显像显示结节强烈摄取示踪剂（"热"结节）而腺体其余部分被抑制，那就是毒性腺瘤，而毒性腺瘤极少为恶性。热结节的细胞学表现也可能令人担忧，导致不必要的手术。因此显像能以更小的伤害回答关键问题。
 :::
 :::
 
-::: exercise 建设甲状腺结节服务 {level=3}
-设计一个内分泌-内分泌外科-放射-细胞病理联合结节门诊：入口、最小组套、分子政策、公平与审计。
+::: exercise 胺碘酮 {level=2}
+一位因室性心律失常服用胺碘酮的男性，TSH 0.01 mU/L，游离T4 34 pmol/L。解释胺碘酮引起甲状腺毒症的两种机制，以及为何区分它们很重要。
 ::: solution
-**入口与分诊超声风险与TSH及细胞学算法带“热结节做扫描不做穿刺”规则——[[#def-cancer]]、[[#def-testing]]；对初级照护开放预约超声（[[public-health/health-systems-economics]]）；多学科门诊模型（放射-细胞病理-外科-内分泌医师的圆桌带同次就诊再穿刺路径[[clinical-skills/medical-imaging]]、[[pathology/diagnostic-pathology]]；Bethesda III/IV不确定者的分子检测政策带成本与公平规则及周转时间目标[[genetics/genomic-medicine]]、[[public-health/determinants-inequalities]]）；外科标准（量-结局阈值及神经监测与甲状旁腺辨认规划及神经与甲状旁腺功能减退的知情同意数字[[surgery/gastrointestinal-surgery]]、[[endocrine/bone-calcium]]）；随访（甲状腺球蛋白与抗体判读及监测超声间隔及低危微癌的主动监测规程[[clinical-skills/laboratory-tests]]、[[public-health/screening]]、[[surgery/gastrointestinal-surgery]]）；专门通道（儿童结节更高恶性率[[paediatrics/congenital-genetic]]；2型多发性内分泌腺瘤病与RET家族路径带先处理嗜铬及预防性甲状腺切除时机[[genetics/genetic-testing]]、[[endocrine/adrenal]]；妊娠偶发结节[[obstetrics-gynaecology/pregnancy-complications]]）；及审计组套（按细胞学分级的癌检出率、不确定率、完成腺叶切除、患者决策辅助使用率、从可疑扫描到手术时间、及过度诊断与终身辐射与不必要甲状腺切除的反向关键指标[[clinical-skills/patient-safety]]、[[public-health/health-systems-economics]]）。**
+胺碘酮含大量碘。**1型**胺碘酮所致甲状腺毒症是碘驱动的激素生成过多，通常发生于原有结节或潜在格雷夫斯病的腺体；用硫脲类药物治疗。**2型**是药物直接毒性引起的破坏性甲状腺炎，释放储存的激素；用糖皮质激素治疗，硫脲类药物无效。也存在混合型。在专科中结合超声、摄取和临床特征进行区分，以决定治疗。是否继续使用胺碘酮需与心内科共同决定。
+:::
+:::
+
+::: exercise 解读住院患者的结果 {level=3}
+一位67岁男性因肺炎住在重症监护病房，TSH 0.2 mU/L，游离T4 9 pmol/L，游离T3 2.1 pmol/L（均低）。他接受了氢化可的松和多巴胺输注。团队询问是否应开始左甲状腺素。请给出有理有据的回答和随访计划。
+::: solution
+最可能的解释是**非甲状腺疾病**：严重疾病首先降低T3（外周转化减少），然后是T4和TSH。糖皮质激素和多巴胺都会抑制TSH。危重症中使用甲状腺激素的试验并未显示获益，因此不建议根据这些结果使用左甲状腺素。
+
+中枢性甲减是主要的备选诊断。此处可能性不大，但不能完全排除；线索包括已知垂体疾病、其他垂体激素缺乏，或使用氢化可的松之前皮质醇低。
+
+**计划**：目前不进行甲状腺治疗；在病历中记录这些结果是在危重症期间获得的；康复后6周或更久复查甲状腺功能。恢复期TSH可能一过性升高到参考范围以上，不应误认为原发性甲减。如果康复后游离T4仍低而TSH不升高，应评估垂体。
+:::
+:::
+
+::: exercise 过度诊断 {level=3}
+某卫生系统提议为所有40岁以上的成人提供颈部超声检查，"以早期发现甲状腺癌"。根据已经这样做的国家的证据，解释为什么这可能弊大于利。
+::: solution
+小乳头状甲状腺癌在尸检中非常常见，大多数从未引起症状或死亡。在广泛开展超声筛查的地方，诊断出的甲状腺癌发病率上升了许多倍，几乎全部是小乳头状癌，而甲状腺癌死亡率保持不变。这是**过度诊断**的标志：发现了本不会造成伤害的疾病。
+
+危害包括焦虑、活检、伴有喉返神经损伤和永久性甲状旁腺功能减退风险的甲状腺切除术、终身服用左甲状腺素以及费用。由于死亡率没有下降，筛查项目无法抵消这些危害。因此不建议对无症状或无危险因素的人群筛查；例外是特定高风险人群，例如RET突变携带者（[[public-health/screening]]）。
 :::
 :::

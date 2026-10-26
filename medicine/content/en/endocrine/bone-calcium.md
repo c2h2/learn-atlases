@@ -1,158 +1,276 @@
-Calcium medicine is the specialty of small numbers with large consequences: **a corrected calcium of 3.4 stops hearts, a post-thyroidectomy calcium of 1.9 seizes in the night, and a spine T-score of -3.0 predicts the fracture that ends a decade of independence.** The musculoskeletal system doubles as the body's calcium bank and the endocrine system's largest organ, and this chapter is the interface.
+Calcium does more than build bone. The concentration of ionised calcium in the extracellular fluid sets the excitability of nerve and muscle, triggers cardiac contraction, and is needed for blood clotting. The body defends it tightly, within a range of roughly 2.2 to 2.6 mmol/L for total calcium, using parathyroid hormone (PTH), vitamin D and the kidney, with the skeleton as a huge reservoir. When the defence fails, calcium rises or falls. When the reservoir is drawn on for too long, or the skeleton is renewed badly, bones become fragile.
 
-This chapter covers calcium and bone physiology, osteoporosis and fracture prevention, hypercalcaemia and hypocalcaemia, and the metabolic bone diseases.
+This lesson covers calcium and phosphate physiology, the causes and investigation of hypercalcaemia and hypocalcaemia, vitamin D deficiency and osteomalacia, osteoporosis and its treatment, and Paget's disease of bone. Severe hypercalcaemia and hypocalcaemia as emergencies are covered in [[endocrine/endocrine-emergencies]]. UK practice follows NICE guideline NG132 (Hyperparathyroidism, 2019), the National Osteoporosis Guideline Group (NOGG) guideline (2022) and NICE CG146 on fracture risk assessment.
 
-## Physiology
+## Calcium physiology {#sec-physiology}
 
-::: definition The calcium-regulatory axis {#def-physiology}
-**The three hormones (PTH — released by the parathyroid calcium-sensing receptor in response to falling ionised calcium, acting on bone to mobilise calcium, on the kidney to reabsorb calcium and excrete phosphate and to make 1,25-dihydroxy-vitamin D — [[renal/tubular-function]]; vitamin D — the skin-photosynthesis-then-hepatic-then-renal-activation journey, the sunlight-and-diet-and-skin-phototype-and-latitude-and-deprivation determinants of status, and its genomic calcium-absorption-upregulation at the duodenum — [[gastrointestinal/digestion-absorption]], [[public-health/global-health]], [[endocrine/hypothalamus-pituitary]]-adjacent-endocrinology-of-obesity; FGF23 — the osteocyte hormone coupling phosphate handling and vitamin-D-metabolism suppression, whose pharmacological cousins are rare-disease treatments — [[renal/potassium-calcium-phosphate]]; plus calcitonin's marginal acute role). The remodelling unit (osteoclast resorption and osteoblast formation, coupled by RANKL-OPG signalling and osteocyte mechanosensing — [[cell-biochemistry/signalling-cell-cycle]], [[physiology/muscle]]'s loading-transcription logic; the negative calcium-balance windows — growth, pregnancy-and-lactation, menopause, immobilisation — [[obstetrics-gynaecology/postnatal-period]]-adjacent [[obstetrics-gynaecology/pregnancy-antenatal]], [[geriatrics-palliative/ageing-frailty]]). The laboratory pragmatics (albumin-corrected-or-ionised-calcium and the correction-error-in-critical-illness caveat — [[clinical-skills/laboratory-tests]], [[gastrointestinal/liver-function]]; the phosphate-magnesium-alkaline-phosphatase-PTH-vitamin-D-creatinine panel as the standard screen; bone-turnover-markers' specialist niche; and the "PTH-inappropriately-normal-in-hypercalcaemia" reflex — the interpretation that separates PTH-dependent from PTH-independent causes [[#def-hypercalcaemia]]). The skeleton as endocrine and reservoir (calcium homeostasis traded for structural integrity — the reason anti-resorptive pharmacology inevitably trades bone mass for something: the atypical-femoral-fracture and osteonecrosis-of-jaw lessons below [[#def-osteoporosis]]).**
+About 99% of the body's calcium is in bone, as hydroxyapatite. Of the calcium in plasma, roughly 45% is **ionised** (free), 40–45% is bound to proteins, mainly albumin, and the rest is complexed with anions such as citrate and phosphate. Only ionised calcium is biologically active and regulated.
+
+Because laboratories usually measure total calcium, a low albumin lowers the total without changing the ionised fraction. A common UK correction is:
+
+$$
+\text{adjusted calcium} = \text{measured calcium} + 0.02 \times (40 - \text{albumin})
+$$ {#eq-adjusted-ca}
+
+with calcium in mmol/L and albumin in g/L. Laboratories may use their own locally derived formula, and the adjustment is unreliable at extremes of albumin, in critical illness and in kidney failure. When accuracy matters, ionised calcium is measured directly, for example on a blood gas analyser. Acidosis increases the ionised fraction (hydrogen ions displace calcium from albumin); alkalosis decreases it, which is why hyperventilation can cause tingling and cramps.
+
+::: definition The calcium-regulating hormones {#def-physiology}
+- **Parathyroid hormone (PTH)** is secreted by the four parathyroid glands in response to a fall in ionised calcium, sensed by the **calcium-sensing receptor (CaSR)** on parathyroid cells. PTH raises calcium within minutes by increasing calcium reabsorption in the distal nephron and releasing calcium from bone, and over hours to days by stimulating renal **1α-hydroxylase** to make active vitamin D. It also makes the kidney excrete phosphate.
+- **Vitamin D** (cholecalciferol) is made in the skin under ultraviolet B light or absorbed from food. It is hydroxylated in the liver to **25-hydroxyvitamin D**, the storage form measured to assess vitamin D status, and then in the kidney to **1,25-dihydroxyvitamin D (calcitriol)**, the active hormone. Calcitriol increases intestinal absorption of calcium and phosphate.
+- **Fibroblast growth factor 23 (FGF23)**, made by osteocytes, lowers phosphate by increasing renal phosphate excretion and suppressing calcitriol production.
+- **Calcitonin**, from thyroid C cells, lowers calcium in some animals but has little role in human calcium balance; it matters clinically as a tumour marker for medullary thyroid cancer.
+:::
+
+::: theorem PTH distinguishes the causes of abnormal calcium {#thm-pth}
+Because the parathyroid glands respond to calcium by negative feedback, the PTH level must always be read alongside the calcium:
+
+- **High calcium with high or inappropriately normal PTH** means the parathyroids are the source (PTH-dependent hypercalcaemia).
+- **High calcium with suppressed PTH** means something else is raising calcium and the parathyroids have correctly switched off (PTH-independent hypercalcaemia).
+- **Low calcium with high PTH** means the parathyroids are responding appropriately, and the problem is lack of vitamin D, calcium or the kidney's ability to respond.
+- **Low calcium with low or inappropriately normal PTH** means the parathyroids have failed (hypoparathyroidism) or are being suppressed, for example by magnesium deficiency.
+:::
+
+### Bone remodelling
+
+Bone is constantly renewed. **Osteoclasts**, derived from the monocyte–macrophage lineage, resorb bone; **osteoblasts** lay down new matrix, which mineralises. Osteoblast lineage cells control osteoclasts: they express **RANK ligand (RANKL)**, which activates osteoclasts, and **osteoprotegerin**, a decoy receptor that blocks RANKL. Osteocytes buried in bone sense mechanical load and release **sclerostin**, which inhibits bone formation. These molecules are the targets of modern osteoporosis drugs. Bone mass peaks in the third decade and declines thereafter, with an accelerated phase in women after the menopause, when the loss of oestrogen increases osteoclast activity ([[musculoskeletal/bones-joints]]).
+
+## Hypercalcaemia {#sec-hypercalcaemia}
+
+::: definition Hypercalcaemia {#def-hypercalcaemia}
+**Hypercalcaemia** is an adjusted calcium above the reference range, typically above 2.6 mmol/L. As a rough guide, 2.6–3.0 mmol/L is mild, 3.0–3.5 moderate, and above 3.5 severe. About 90% of cases are due to **primary hyperparathyroidism** or **malignancy**.
+:::
+
+The symptoms are often summarised as "bones, stones, groans and psychic moans": bone pain, kidney stones, abdominal pain, constipation, nausea and pancreatitis, and fatigue, low mood and confusion. Hypercalcaemia also causes **polyuria and thirst**, because calcium blocks the action of vasopressin in the collecting duct, which in turn causes dehydration that raises calcium further. The ECG may show a short QT interval. Many people with mild hypercalcaemia have no symptoms.
+
+Causes, divided by PTH ([[#thm-pth]]):
+
+**PTH-dependent**
+- **Primary hyperparathyroidism**: a single parathyroid adenoma in about 85% of cases; hyperplasia of several glands, sometimes as part of MEN1 or MEN2A; parathyroid carcinoma is rare. It is commonest in postmenopausal women.
+- **Tertiary hyperparathyroidism**: autonomous parathyroid secretion after long-standing secondary hyperparathyroidism, usually in kidney failure.
+- **Familial hypocalciuric hypercalcaemia (FHH)**: an inherited, usually benign, inactivating CaSR mutation that resets the calcium set point. PTH is normal or mildly raised and urinary calcium is low. It needs no surgery.
+- Lithium, which shifts the parathyroid set point.
+
+**PTH-independent (PTH suppressed)**
+- **Malignancy**: secretion of **PTH-related peptide (PTHrP)** by squamous cell, renal, breast and other cancers; bone metastases; **myeloma**; and, in lymphoma, unregulated calcitriol production.
+- Excess vitamin D (supplements) or calcitriol production in **granulomatous disease** (sarcoidosis, tuberculosis).
+- Thyrotoxicosis, adrenal insufficiency, immobilisation, thiazide diuretics, milk-alkali syndrome with calcium carbonate.
+
+To separate FHH from primary hyperparathyroidism, the **calcium-to-creatinine clearance ratio** is calculated from a paired blood and urine sample:
+
+$$
+\text{CCCR} = \frac{[\text{urine Ca}] \times [\text{serum creatinine}]}{[\text{serum Ca}] \times [\text{urine creatinine}]}
+$$ {#eq-cccr}
+
+with both creatinines in the same units. A ratio below about 0.01 suggests FHH; above 0.02 suggests primary hyperparathyroidism. Genetic testing of CASR confirms FHH.
+
+### Primary hyperparathyroidism
+
+Most cases are now found on routine blood tests. Beyond hypercalcaemia, the consequences are reduced bone density (especially at cortical sites such as the forearm), fractures, kidney stones and nephrocalcinosis, and nonspecific symptoms that often improve after cure.
+
+**Parathyroidectomy** is the only cure. NICE NG132 recommends referral to a surgeon with expertise in parathyroid surgery for people with confirmed primary hyperparathyroidism who have symptoms of hypercalcaemia, end-organ disease (kidney stones, fragility fractures or osteoporosis), or an albumin-adjusted calcium of **2.85 mmol/L or above**, and suggests considering referral even without these features. Before surgery, the abnormal gland is localised with ultrasound and sestamibi scintigraphy (or other imaging such as four-dimensional CT), allowing a focused operation. People who do not have surgery are monitored, and **cinacalcet**, which makes the CaSR more sensitive to calcium, can lower calcium when surgery is not possible.
+
+::: warning Do not forget the drugs and the dehydration
+Hypercalcaemia is often made worse by thiazide diuretics, calcium and vitamin D supplements, and dehydration, and is often discovered when someone becomes unwell with vomiting. Always review the drug chart, including over-the-counter supplements, and the fluid status. Conversely, a person with hypercalcaemia who is told to "drink less milk" has been given the wrong advice: dietary calcium restriction does not help in primary hyperparathyroidism and may worsen bone health; maintaining good hydration does help.
+:::
+
+## Hypocalcaemia {#sec-hypocalcaemia}
+
+::: definition Hypocalcaemia {#def-hypocalcaemia}
+**Hypocalcaemia** is an adjusted calcium below the reference range, typically below 2.2 mmol/L. It increases neuromuscular excitability, causing perioral and fingertip tingling, muscle cramps, **carpopedal spasm**, laryngospasm, seizures, and a prolonged QT interval with risk of arrhythmia. Two classic signs are **Trousseau's sign** (carpal spasm when a blood pressure cuff is inflated above systolic pressure for up to three minutes) and **Chvostek's sign** (twitching of the facial muscles when the facial nerve is tapped in front of the ear; present in some healthy people).
+:::
+
+Causes, divided by PTH:
+
+- **Low PTH (hypoparathyroidism)**: most often after **thyroid or parathyroid surgery**; autoimmune; genetic (including 22q11 deletion syndrome); infiltration; and **magnesium deficiency**, which both impairs PTH secretion and causes PTH resistance. Proton pump inhibitors, alcohol and diuretics are common causes of low magnesium.
+- **High PTH (secondary hyperparathyroidism)**: **vitamin D deficiency**, chronic kidney disease (reduced calcitriol and phosphate retention), malabsorption, acute pancreatitis (calcium deposits in fat necrosis), rhabdomyolysis, and drugs, notably **bisphosphonates and denosumab** given to someone who is vitamin D deficient.
+
+Severe or symptomatic hypocalcaemia is an emergency treated with **intravenous calcium gluconate** under cardiac monitoring ([[endocrine/endocrine-emergencies]]). Chronic hypoparathyroidism is treated with **active vitamin D** (alfacalcidol or calcitriol), because without PTH the kidney cannot activate vitamin D, with calcium supplements as needed. The aim is a calcium in the low-normal range, to avoid hypercalciuria and kidney stones.
+
+## Vitamin D deficiency and osteomalacia {#sec-osteomalacia}
+
+In the UK, a serum 25-hydroxyvitamin D below 25 nmol/L is generally taken to indicate deficiency, and 25–50 nmol/L may be inadequate for some people. Because UK sunlight contains too little ultraviolet B to make vitamin D in winter, the UK Government advises that everyone consider a daily vitamin D supplement in autumn and winter, and that people at higher risk take one all year. Risk is higher in people with darker skin, who need more sunlight to make the same amount of vitamin D; people who cover their skin; those who are housebound or in care homes; and those with malabsorption, liver or kidney disease, or who take enzyme-inducing drugs such as some anticonvulsants.
+
+Prolonged deficiency leads to defective mineralisation of new bone matrix. In children, before the growth plates fuse, this is **rickets**: bowed legs, widened wrists, delayed growth and swelling of the costochondral junctions. In adults it is **osteomalacia**: diffuse bone pain and tenderness, proximal muscle weakness with a waddling gait, and **Looser zones** (pseudofractures) on X-ray. Blood tests typically show low or low-normal calcium, low phosphate, raised alkaline phosphatase and raised PTH. Treatment is vitamin D replacement (a loading regimen followed by maintenance), with calcium if dietary intake is low.
+
+## Osteoporosis {#sec-osteoporosis}
+
+::: definition Osteoporosis {#def-osteoporosis}
+**Osteoporosis** is a skeletal disease of low bone mass and deterioration of bone microarchitecture, leading to fragility and increased fracture risk. Using dual-energy X-ray absorptiometry (**DXA**), the WHO defines it as a bone mineral density **T-score of −2.5 or below** at the hip or spine. The T-score is the number of standard deviations from the mean of young healthy adults of the same sex. A T-score between −1 and −2.5 is **osteopenia**. A **fragility fracture** is one caused by a fall from standing height or less; a vertebral or hip fragility fracture usually indicates osteoporosis whatever the T-score.
+:::
+
+Osteoporosis is silent until a fracture occurs. The typical fractures are of the vertebrae (often unnoticed, causing height loss and kyphosis), the distal radius, and the hip. Hip fractures carry a high mortality in the following year and often cause loss of independence. About half of women and one in five men over 50 in the UK will have a fragility fracture.
+
+Risk factors include age, female sex, previous fragility fracture, parental hip fracture, low body mass index, **glucocorticoid therapy**, smoking, alcohol above three units a day, rheumatoid arthritis, early menopause, hypogonadism in men, malabsorption, hyperthyroidism, primary hyperparathyroidism and certain drugs (aromatase inhibitors, androgen deprivation therapy).
+
+**Fracture risk assessment** uses tools such as **FRAX** or **QFracture**, which estimate the 10-year probability of a major osteoporotic fracture from clinical risk factors, with or without bone density. In the UK, NOGG provides age-dependent intervention thresholds. People at **very high risk** (for example, with recent vertebral fractures or a very low T-score) are referred to specialist services, and NOGG 2022 recommends considering an **anabolic drug first** for them.
+
+Treatment combines general measures and drugs:
+
+- **General**: adequate calcium (ideally from diet) and vitamin D, weight-bearing and balance exercise, stopping smoking, limiting alcohol, and **falls prevention** ([[geriatrics-palliative/falls]]).
+- **Bisphosphonates** (alendronate, risedronate orally; zoledronate by yearly infusion) bind bone mineral and inhibit osteoclasts. Oral bisphosphonates must be taken on an empty stomach with water, sitting or standing upright for at least 30 minutes, to avoid oesophagitis and allow absorption. Rare but important adverse effects of long-term use are **osteonecrosis of the jaw** and **atypical femoral fractures**; after about five years of oral (or three of intravenous) treatment, the need to continue is reviewed, and a treatment pause may be appropriate for people at lower risk.
+- **Denosumab** is a monoclonal antibody to RANKL, injected every six months. When it is stopped, bone turnover rebounds sharply and multiple vertebral fractures can occur, so it must not be stopped or delayed without a plan, usually transition to a bisphosphonate.
+- **Anabolic agents** build new bone: **teriparatide** (a PTH analogue given by daily injection; intermittent PTH stimulates formation more than resorption) and **romosozumab** (an antibody to sclerostin, given monthly for 12 months; avoided after myocardial infarction or stroke). They are followed by an antiresorptive drug to preserve the gain.
+- **Hormone replacement therapy** prevents bone loss and fractures and is an option particularly for younger postmenopausal women ([[endocrine/reproductive-endocrinology]]). **Raloxifene** reduces vertebral fractures.
+
+Before starting a bisphosphonate or denosumab, calcium and vitamin D should be replete and kidney function checked, and a dental review is advised.
+
+## Paget's disease and other metabolic bone disease {#sec-paget}
+
+**Paget's disease of bone** is a focal disorder of disorganised, excessive bone remodelling. Affected bones (commonly the pelvis, spine, skull, femur and tibia) are enlarged, deformed and weaker despite being dense. It affects older people and is more common in people of British descent, although its prevalence has fallen. Many cases are found incidentally from a raised **alkaline phosphatase** with otherwise normal liver tests, and normal calcium and phosphate. Complications include bone pain, deformity (bowing of the tibia, enlargement of the skull), deafness from cranial nerve compression or ossicle involvement, fractures, osteoarthritis of nearby joints and, rarely, osteosarcoma. An isotope bone scan shows the extent. A single infusion of **zoledronate** is the usual treatment for bone pain due to active disease.
+
+In **chronic kidney disease**, falling calcitriol production and phosphate retention cause secondary hyperparathyroidism and a group of bone and vascular changes called **CKD–mineral and bone disorder** ([[renal/chronic-kidney-disease]]).
+
+::: example A routine finding {#ex-phpt}
+A 63-year-old woman has an adjusted calcium of 2.78 mmol/L on routine bloods. Repeat is 2.81 mmol/L. PTH is 8.9 pmol/L (reference about 1.6–6.9). She has had a kidney stone. eGFR is normal. 25-hydroxyvitamin D is 54 nmol/L. A 24-hour urine calcium is 8.4 mmol (raised). What is the diagnosis, and does she meet NICE criteria for surgical referral?
+::: solution
+**Diagnosis.** Hypercalcaemia with a raised PTH is PTH-dependent ([[#thm-pth]]). She is not taking lithium or thiazides, her vitamin D is replete, and a high urinary calcium argues against FHH. This is **primary hyperparathyroidism**.
+
+**Surgical referral.** Her calcium is below 2.85 mmol/L, but she has had a **kidney stone**, which is end-organ disease. She therefore meets NICE NG132 criteria for referral to a parathyroid surgeon. A DXA scan should also be done, since osteoporosis would be a further indication.
+
+**Before surgery**: localisation imaging (ultrasound and sestamibi) to plan a focused parathyroidectomy. Advice in the meantime: maintain hydration, avoid thiazides, do not restrict dietary calcium.
+:::
+:::
+
+::: example Correcting the calcium {#ex-adjusted}
+A 75-year-old man with a hip fracture has a measured calcium of 2.05 mmol/L and albumin 26 g/L. Is he hypocalcaemic?
+::: solution
+Using [[#eq-adjusted-ca]]:
+
+$$
+2.05 + 0.02 \times (40 - 26) = 2.05 + 0.02 \times 14 = 2.05 + 0.28 = 2.33 \text{ mmol/L}.
+$$
+
+The adjusted calcium is within the reference range. The low measured value reflects low albumin, common in acute illness and malnutrition. If clinical concern persisted, ionised calcium could be measured, since the formula is less reliable at low albumin. Before starting osteoporosis treatment after his fracture, his vitamin D should still be checked and corrected, because bisphosphonates can cause hypocalcaemia in vitamin D deficiency.
+:::
+:::
+
+::: example Familial or primary? {#ex-fhh}
+A 32-year-old man has an adjusted calcium of 2.71 mmol/L and PTH 7.4 pmol/L (mildly raised). His sister was told she had "high calcium" too. Paired samples: urine calcium 1.2 mmol/L, urine creatinine 8.0 mmol/L, serum calcium 2.71 mmol/L, serum creatinine 80 µmol/L. Calculate the calcium-to-creatinine clearance ratio and interpret it.
+::: solution
+Convert serum creatinine to mmol/L: $80$ µmol/L $= 0.080$ mmol/L. Using [[#eq-cccr]]:
+
+$$
+\text{CCCR} = \frac{1.2 \times 0.080}{2.71 \times 8.0} = \frac{0.096}{21.68} \approx 0.0044.
+$$
+
+This is well below 0.01, which, with a family history and mild PTH-dependent hypercalcaemia in a young man, strongly suggests **familial hypocalciuric hypercalcaemia**. CASR genetic testing confirms it. FHH is usually harmless and **parathyroidectomy does not cure it**, so the main purpose of the diagnosis is to avoid an unnecessary operation and to explain the finding to relatives. Vitamin D deficiency should be excluded, since it can lower urinary calcium and confuse the ratio.
+:::
+:::
+
+::: example Aches, weakness and a raised ALP {#ex-osteomalacia}
+A 46-year-old woman who moved from Somalia eight years ago has a year of aching in her hips and thighs and difficulty climbing stairs. She wears clothing that covers most of her skin. Calcium 2.12 mmol/L (adjusted), phosphate 0.62 mmol/L (low), alkaline phosphatase 310 U/L (raised), PTH 18 pmol/L (raised), 25-hydroxyvitamin D below 10 nmol/L. What is the diagnosis?
+::: solution
+**Osteomalacia due to severe vitamin D deficiency**, with **secondary hyperparathyroidism**. Low vitamin D reduces calcium absorption; PTH rises to defend calcium ([[#thm-pth]], low calcium with high PTH), which also drives phosphate loss in the urine. Unmineralised osteoid accumulates and osteoblast activity raises the alkaline phosphatase. Proximal myopathy and bone pain are typical. Risk factors include darker skin and covering clothing in a country with weak winter sunlight.
+
+Treatment is vitamin D replacement with a loading regimen then maintenance, with calcium if dietary intake is low, and repeat bloods after a few months. Symptoms improve over months. Coeliac disease should be considered if she does not respond. Family members who share her risk factors may also benefit from advice about supplements. The conversation should be culturally sensitive and not imply blame.
+:::
 :::
 
 ::: widget plot
-f: 5.5/(1+exp(-(x-9.6)*7)); 5.5/(1+exp(-(x-11.2)*7))
-x: 7.5, 13
-y: 0, 7
-labels: \text{plasma calcium (mmol/L)},\ \text{PTH (pmol/L)};\ \text{normal set-point};\ \text{primary hyperparathyroid set-point}
-caption: The parathyroid calcium-sensing set-point made visible ([[#def-physiology]]): normal glands suppress PTH steeply as calcium rises; in primary hyperparathyroidism the curve is right-shifted and partially autonomous — the "normal-ish PTH with a high calcium" pattern that gets called "not really abnormal" and then is missed for years ([[#def-hypercalcaemia]], [[clinical-skills/laboratory-tests]]). The same curve-thinking explains why PTH-reducing calcimimetics reset the dial in dialysis and parathyroid carcinoma ([[renal/chronic-kidney-disease]]).
-:::
-
-## Bone mass
-
-::: definition Osteoporosis and fracture prevention {#def-osteoporosis}
-**Definition and epidemiology (the T-score grid — normal to osteopenia to osteoporosis — and its fracture-probability reality-check, since most fragility fractures occur in the osteopenic-not-osteoporotic majority and absolute-risk tools changed the prescribing logic — FRAX with its country-and-risk-factor-calibration and its secondary-cause blind-spots — [[public-health/screening]], [[clinical-skills/clinical-reasoning]]); the fragility-franchise — vertebra (often painless height-loss-and-kyphosis presentations), proximal femur (the mortality-defining event — [[surgery/orthopaedics]]), distal radius and proximal humerus ([[musculoskeletal/bones-joints]]); the falls multiplier — the geriatric syndrome that turns low-energy mechanisms into fractures ([[geriatrics-palliative/falls]], [[geriatrics-palliative/ageing-frailty]]). Causes beyond ageing and oestrogen (glucocorticoid-induced-with-the-prevention-protocol-and-the-steroid-bone-guidance — [[endocrine/adrenal]], [[musculoskeletal/inflammatory-arthritis]]; androgen-deprivation-and-aromatase-inhibitor-therapy — [[surgery/breast-endocrine-surgery]], [[endocrine/reproductive-endocrinology]]; antiepileptic-and-PPI-and-SSRI-and-immunosuppressant-contributions — [[pharmacology/adverse-reactions]], [[nervous-system/epilepsy]]; endocrine-overdrive — thyrotoxicosis and hyperparathyroidism and Cushing and hypercalciuric-states — [[endocrine/thyroid]], [[endocrine/adrenal]]; gastrointestinal malabsorption — coeliac and IBD and post-bariatric — [[gastrointestinal/bowel-disease]], [[gastrointestinal/digestion-absorption]], [[gastrointestinal/clinical-nutrition]]; renal osteodystrophy — [[renal/chronic-kidney-disease]]; and the childhood-and-genetic contexts — osteogenesis-imperfecta and the non-accidental-injury-differential — [[genetics/mendelian-inheritance]], [[paediatrics/safeguarding]], [[paediatrics/growth-development]]). Assessment (DXA and its technique-and-interpretation limits; vertebral-imaging-for-height-loss; the secondary-cause panel; and the fracture-and-falls-history that finds the treatable half ([[clinical-skills/history-taking]], [[clinical-skills/medical-imaging]])). Prevention and treatment (the calcium-and-vitamin-D-and-protein-and-resistance-exercise-and-smoking-and-alcohol foundations — [[gastrointestinal/clinical-nutrition]], [[public-health/prevention-promotion]], [[psychiatry/substance-use]]; anti-resorptives — oral-bisphosphonates-with-the-upright-and-swallow-and-dose-schedule-ritual-and-adherence-collapse-reality, IV-zoledronate-as-the-adherence-solution-with-the-acute-phase-reaction, and denosumab-as-the-brilliant-drug-with-the-rebound-bone-loss-disaster-when-stopped-abruptly — [[pharmacology/adverse-reactions]], [[clinical-skills/communication]]; anabolics — teriparatide-and-abaloparatide-and-romosozumab-for-severe-and-established-osteoporosis with the sequencing-rules-because-anabolics-then-anti-resorptives-not-vice-versa — [[pharmacology/dosing-principles]]; the drug-holiday-and-duration-review logic with the atypical-femoral-fracture-and-osteonecrosis-of-jaw-honesty-and-the-dental-check-before-start-not-never-give-reflex — [[musculoskeletal/skin]], (the ONJ rule: jaw pain on an anti-resorptive meets a dentist urgently); and the fracture-liaison-service-and-secondary-prevention-architecture — the post-fracture-listener-to-prescriber pipeline whose absence is the biggest quality gap in this chapter ([[clinical-skills/patient-safety]], [[public-health/health-systems-economics]]). Hypoparathyroidism's own management (the calcium-and-active-vitamin-D-and-now-PTH-replacement-frontier with the hypercalciuric-renal-surveillance — [[#def-hypocalcaemia]], [[endocrine/thyroid]]-surgical-adjacent).)**
-:::
-
-Vitamin D deserves one honest paragraph of policy context, because it generates more abnormal-result anxiety than any other test. Population vitamin D deficiency is real, more common in darker skin at northern latitudes, in the housebound, in covered dress, and in malabsorption; severe deficiency causes osteomalacia and myopathy, and repletion prevents those outcomes. Modest deficiency, however, has been blamed - by observational epidemiology - for almost every disease in medicine, from infection to depression, with randomised trials repeatedly disappointing. The clinical position is therefore balanced: treat symptomatic and biochemical deficiency properly, supplement the groups at genuine risk (pregnancy and lactation, institutional care, malabsorption, anticonvulsant therapy, very low sunlight exposure), and decline to turn vitamin D into a universal medicine. The public-health levers - food fortification, supplementation programmes, measuring uptake of vitamin D in at-risk communities - matter at population level more than individual megadoses.
-
-::: definition Paget disease, osteomalacia and the renal bone axis {#def-other-bone}
-**Paget disease of bone (the focal osteoclastic-mosaic-disorder — the paramyxovirus-and-p62-hypothesis-echo-and-inclusion-bodies, the SQSTM1-heritable-cluster, and the rising-presentation-as-an-incidental-alkaline-phosphatase-on-bloods-or-bone-pain-or-deformity-or-pathological-fracture-or-the-spinal-stenosis-and-hearing-loss-compressions — [[gastrointestinal/liver-function]]'s ALP-isoenzyme-row, [[musculoskeletal/bones-joints]], [[nervous-system/sensory-systems]]-adjacent-eighth-nerve, [[nervous-system/motor-systems]]-adjacent-cord-compression); the isotope-bone-scan-and-Xray-characterisation (the lytic-front-and-cortical-thickening-and-trabecular-coarsening-and-vertebra-plana-catalogue — [[clinical-skills/medical-imaging]]); when-to-treat (pain-and-surgery-adjacent-and-preventative-adjacent-lesions-and-the-antiresorptive-mainstay-with-the-post-dose-hypocalcaemia-and-vitamin-D-first-rule — [[#def-hypocalcaemia]]; the rare sarcomatous-transformation-recognised-by-new-pain-and-imaging-change — [[pathology/cancer-biology]]); and the high-output-cardiac-failure-in-voluminous-disease-and-the-skull-thickening-photograph-lessons ([[cardiovascular/heart-failure]]). Osteomalacia and rickets (the mineralisation-defect-with-osteoid-accumulation — vitamin-D-deficiency-dominant-in-adults-with-the-diffuse-bone-pain-and-proximal-myopathy-and-waddling-gait-and-pseudofracture-or-Loou-zone-radiology-and-the-hypocalcaemic-tetany-and-osteoporosis-mislabel-trap — [[gastrointestinal/liver-function]]'s-ALP-rise, [[musculoskeletal/bones-joints]], [[nervous-system/motor-systems]]-adjacent-myopathy; the nutritional-and-malabsorption-and-renal-and-drug-and-sunavoidance-causes-with-the-global-north-south-and-immigration-migration-medicine-context — [[gastrointestinal/digestion-absorption]], [[renal/chronic-kidney-disease]], [[pharmacology/adverse-reactions]], [[public-health/global-health]], [[public-health/determinants-inequalities]]; the childhood-rickets-phenotype-with-growth-failure-and-wrist-costochondral-changes-and-seizures — [[paediatrics/growth-development]], [[endocrine/endocrine-emergencies]]; and the rare hypophosphataemic-rickets-and-osteomalacia-family — X-linked-hypophosphataemia-and-tumour-induced-osteomalacia-with-the-FGF23-phosphate-wasting-logic-and-the-new-enzyme-inhibitor-therapy — [[genetics/mendelian-inheritance]], [[renal/tubular-function]]). Renal osteodystrophy and CKD-mineral-bone disorder (the failing-kidney-retains-phosphate-and-fails-1,25-production-and-PTH-climbs-and-bone-turnover-goes-either-high-or-adynamic — the fibrous-osteoditis-and-osteitis-fibrosa-cystica-brown-tumour-and-slipped-epiphysis-paediatric-catastrophe — [[renal/chronic-kidney-disease]], [[renal/tubular-function]], [[paediatrics/growth-development]], [[musculoskeletal/bones-joints]]; the phosphate-binder-and-vitamin-D-analogue-and-calcimimetic-era-against-the-vascular-calcification-and-cardiovascular-mortality-argument — [[cardiovascular/vascular-disease]], [[renal/potassium-calcium-phosphate]]; and the transplant-bone-continuation-with-steroid-and-CNI-effects — [[immunology/transplant-tumour-immunology]], [[endocrine/adrenal]]). The genetic bone dysplasias in one line each (osteogenesis-imperfecta-with-fractures-and-blue-sclerae-and-hearing-loss-and-dentin-and-family-history-and-the-non-accidental-injury-differential — [[genetics/mendelian-inheritance]], [[paediatrics/safeguarding]]; the skeletal-dysplasias-short-stature-spectrum — [[paediatrics/growth-development]], [[endocrine/hypothalamus-pituitary]]-GH-axis context; and the osteopetrosis-and-Paget-mimics-and-hyperphosphatasia-rarities — [[pathology/diagnostic-pathology]]).**
-:::
-
-Falls and bones are the same clinic viewed from two doors. A fracture from standing height is a diagnosis of bone fragility, but the fragility that breaks a hip is often assembled from several correctable parts: the low bone mass, the myopathy and neuropathy that misstep, the orthostatic hypotension and the sedating medicines, the bifocal stairs and the loose carpet, the vitamin D deficiency and the low protein intake. The assessment that prevents the second fracture walks through all of these, and the prescription that works is usually a combination of one bone drug, three medicines stopped, and one occupational therapy visit. This is also why the fracture liaison model exists: the orthopaedic surgeon fixes the bone, someone else must fix the cause, and without a named service the second job simply does not happen.
-
-## The calcium emergencies
-
-A practical orientation to the calcium panel: the corrected or ionised calcium tells you the exposure, the phosphate hints at the hormone at fault (a low phosphate with a high calcium points at PTH or PTH-like activity, a high phosphate points away from the parathyroids and towards the kidney, tumour lysis, or vitamin D excess), the alkaline phosphatase tells you whether bone is remodelling fast (fracture healing, Paget disease, osteomalacia, metastases, growth), and the creatinine tells you whether the number can be trusted at all. Four ordinary tests, read in order, localise most disorders before any imaging. Two further habits prevent most errors. First, always re-check an abnormal calcium properly (repeat sample, normal albumin or ionised, before committing to a year of investigations or surgery; pseudohypercalcaemia from a tourniquet or a myeloma band exists but is rarer than people fear). Second, treat the patient in front of you: a calcium of 3.2 developed over months in a mobile patient is urgent but not an emergency, whereas 2.9 reached in two days with confusion and vomiting is dangerous - speed of onset and symptoms matter more than the decimal point.
-
-::: definition Hypercalcaemia {#def-hypercalcaemia}
-**Recognition (the symptoms-in-a-couple-of-axes — bones-stones-abdominal-groans-psychic-overtones-and-the-real-world-shortened-version: constipation-nausea-thirst-polyuria-confusion-and-short-QT-with-severe-case-arrhythmia-and-coma — [[cardiovascular/arrhythmias]], [[nervous-system/dementia-neurodegeneration]]-adjacent-acute-confusion-against-delirium [[geriatrics-palliative/delirium-dementia-care]], [[renal/potassium-calcium-phosphate]]'s-concentration-loss-logic). Severity arithmetic (albumin-correction-and-ionised-calcium-confirm-and-above-3.0-or-symptomatic-is-the-admission-and-IV-access-and-ECG-zone — [[clinical-skills/laboratory-tests]], [[emergency-critical-care/acute-assessment]]). Causes by PTH (PTH-dependent — primary hyperparathyroidism (common, usually mild, the right-shifted-curve of [[#def-physiology]]-figure, the familial-hypocalciuric-hypercalcaemia-mimic whose urine-calcium-clearance spares a needless-parathyroidectomy — [[genetics/mendelian-inheritance]], [[renal/urinary-tract]]) and lithium with its set-point-shift ([[psychiatry/mood-disorders]]'s-lithium-monitoring-package, [[renal/tubular-function]]); PTH-independent — malignancy (the humoral PTHrP syndrome of squamous-and-renal-and-breast-and-myeloma with its rapid-onset-severity signature and the osteolytic-and-bone-metastases-variants [[pathology/cancer-biology]], [[blood/lymphoma-myeloma]], [[gastrointestinal/gi-bleeding-cancer]], [[respiratory/lung-cancer-pleura]]), granulomatous-and-lymphomatous-1,25-production ([[pathology/chronic-inflammation-repair]] and [[blood/lymphoma-myeloma]] and tuberculosis [[infectious-diseases/tuberculosis]]), vitamin-D-and-A-toxicity-and-thiazide-and-milk-alkali-and-pregnancy-lactation-states-and-addisonian-crisis-and-thyrotoxicosis-and-immobilisation ([[endocrine/adrenal]], [[endocrine/thyroid]], [[pharmacology/adverse-reactions]], [[obstetrics-gynaecology/postnatal-period]]). Management (the isotonic-saline-volume-replenishment-with-the-renal-and-cardiac-caution-and-the-avoid-loop-diuretics-unless-volume-overloaded-correction; IV-zoledronate-or-pamidronate-or-denosumab-for-malignancy-with-the-hypocalcaemia-watch-when-anti-resorptive-meets-high-turnover; calcitonin-tachyphylaxis-for-the-first-48-hours-bridge; the treat-the-tumour-and-hypercalciuric-crisis-and-dialysis-for-renal-failure-notes — [[renal/chronic-kidney-disease]], [[endocrine/endocrine-emergencies]]). Parathyroid surgery and the asymptomatic-criteria (the localisation-imaging-and-surgeon-volume-argument-and-the-normal-PTH-and-calcium-cure-proof — [[surgery/gastrointestinal-surgery]]-endocrine-practice, [[clinical-skills/medical-imaging]]).**
-:::
-
-::: definition Hypocalcaemia {#def-hypocalcaemia}
-**Recognition (the neuromuscular-excitability-cluster — perioral-and-finger-numbness-and-tetany-and-cramps-and-stridor-and-seizures-and-Chvostek-and-Trousseau-and-prolonged-QT-with-the-hypocalcaemic-cardiomyopathy-rarity — [[nervous-system/epilepsy]], [[cardiovascular/arrhythmias]], [[physiology/muscle]]'s-excitability-physiology; the chalky-circumoral-photograph-in-the-notes-that-teaches-a-generation). Causes (the surgical-neck-history — post-thyroid-and-parathyroid-and-neck-dissection-with-the-transient-versus-permanent-and-the-autotransplant-nuance — [[surgery/gastrointestinal-surgery]], [[endocrine/thyroid]]; hypoparathyroid-autoimmune-polyglandular-and-infiltrative-and-Mg-deficient-states — [[immunology/autoimmunity]], [[endocrine/adrenal]]-adjacent-polyglandular, [[renal/potassium-calcium-phosphate]]'s-magnesium-required-for-PTH-secretion-lesson; vitamin-D-deficiency-and-osteomalacia-and-rickets-with-the-global-health-and-dark-skin-and-institutionalisation-and-north-latitude-epidemiology — [[public-health/global-health]], [[paediatrics/growth-development]], [[geriatrics-palliative/ageing-frailty]]; hungry-bone-syndrome-post-parathyroidectomy; pancreatitis-and-citrate-transfusion-and-contrast-and-rhabdomyolysis-and-refeeding-shifts — [[gastrointestinal/pancreas-biliary]], [[blood/transfusion]], [[gastrointestinal/clinical-nutrition]], [[renal/potassium-calcium-phosphate]]; and CKD's-second-hyperparathyroid-chronic-hypocalcaemic-tendency — [[renal/chronic-kidney-disease]]). Management (the symptomatic-or-severe-emergency — IV-calcium-gluconate-with-cardiac-monitoring-and-extra-cardiac-caution-on-digoxin-and-the-cannula-avoidance-of-extravasation-and-the-repeat-dose-plan — [[endocrine/endocrine-emergencies]], [[pharmacology/adverse-reactions]], [[surgery/wounds-surgical-infection]]-adjacent-tissue-injury; magnesium-correction-first-when-low-because-the-parathyroids-won't-answer-without-it — [[renal/potassium-calcium-phosphate]]; the chronic-oral-calcium-and-alfacalcidol-or-calcitriol-regimen-with-the-hypercalciuria-nephrocalcinosis-surveillance-and-the-PTH-replacement-era — [[renal/urinary-tract]]; and the neck-surgery-pathway-prevention — the-calcium-at-6-12-hours-and-symptom-teaching-and-discharge-rules-and-the-PTH-or-25D-predictor-protocols-[[surgery/gastrointestinal-surgery]], [[endocrine/thyroid]]).)**
-:::
-
-::: example The unimpressive abnormality {#ex-phpt}
-A 63-year-old woman's routine bloods show corrected calcium 2.68 (repeat 2.71), PTH 9.4 (upper-normal), eGFR 58, HbA1c normal; her GP notes "mildly raised calcium, thyroid antibodies normal, review in a year"; she has had two renal "small stones" and takes no drugs.
-::: solution
-**Primary hyperparathyroidism hiding in normal-ish numbers ([[#def-hypercalcaemia]], [[#def-physiology]]-widget): the non-suppressed-PTH-with-high-normal-to-mildly-raised-calcium is the diagnosis, and the nephrolithiasis-plus-CKD-plus-postmenopausal-bone-context makes it consequential, not incidental — the yearly-review-without-action is the commonest failure mode. The workup: **the-medicine-list-audit (thiazides-and-lithium-and-calcium-supplements-and-vitamin-D-dose — [[pharmacology/adverse-reactions]], [[psychiatry/mood-disorders]]); the-24-hour-urinary-calcium-for-FHHH-and-hypercalciuric-risk ([[renal/urinary-tract]], [[genetics/mendelian-inheritance]]); the-PTH-independent-cause-exclusion (myeloma-and-malignancy-and-granulomatous-flags — [[blood/lymphoma-myeloma]], [[infectious-diseases/tuberculosis]]); the-vertebral-imaging-or-DXA-for-the-silent-fracture-burden-and-the-renal-imaging ([[clinical-skills/medical-imaging]]); and the-surgery-referral-conversation-against-the-guideline-criteria (stone-and-bone-and-renal-and-age-thresholds — [[surgery/gastrointestinal-surgery]]-endocrine-practice). If-managed-non-operatively: the-surveillance-grid (calcium-and-eGFR-and-DXA-intervals, the-hydration-and-stone-prevention, the-anti-resorptive-consideration-for-bone-protection, the-symptom-recheck-and-the-trigger-to-refer ([[#def-osteoporosis]], [[public-health/screening]]); and the record-note-explaining-why-this-is-not-a-thyroid-problem ([[clinical-skills/records-handover]]).**
-:::
-:::
-
-::: example The night after thyroidectomy {#ex-postop-calcium}
-Sixteen hours after total thyroidectomy for Graves disease, a 34-year-old reports tingling lips and fingers and feels "panicky"; calcium 1.92 corrected, Chvostek flickered-on, QT slightly long, voice hoarse but breathing quiet.
-::: solution
-**Symptomatic post-surgical hypocalcaemia with the two airways to protect ([[#def-hypocalcaemia]]): immediate-IV-calcium-gluconate-with-monitoring-and-repeat-plan ([[endocrine/endocrine-emergencies]], [[cardiovascular/arrhythmias]]); the magnesium-and-vitamin-D-and-PTH-bloods-and-Phosphate-pair (hungry-bones-versus-gland-stunned-or-removed — the-phosphate-direction-separates-them — [[renal/potassium-calcium-phosphate]], [[clinical-skills/laboratory-tests]]); the-voice-and-haematoma-check (the bilateral-recurrent-laryngeal-nerve-palsy-and-neck-swelling-emergencies-that-outrank-the-calcium — [[nervous-system/sensory-systems]], [[endocrine/thyroid]]-surgical-rows, [[surgery/gastrointestinal-surgery]]); the-oral-calcium-and-alfacalcidol-escalation-and-weaning-protocol-with-the-strict-symptom-teaching-and-the-out-of-hours-phone-number-that-prevents-the-readmission ([[clinical-skills/communication]], [[clinical-skills/patient-safety]]); the-serum-and-urine-calcium-surveillance-for-over-treatment ([[renal/urinary-tract]]); and the-discharge-documentation (transient-versus-permanent-hypoparathyroidism-expectation, the-long-term-endocrine-clinic-and-the-replacement-and-pregnancy-planning-if-young — [[obstetrics-gynaecology/contraception-fertility]], [[endocrine/reproductive-endocrinology]]).**
-:::
-:::
-
-::: example The aching immigrant grandmother {#ex-osteomalacia}
-A 71-year-old woman, recently arrived from a sun-rich country and largely housebound, has 6 months of diffuse aching, a waddling gait, difficulty rising from a chair, HbA1c irrelevant, calcium 2.1, phosphate 0.6, ALP 420, PTH 18, vitamin D 12 nmol/L; DXA reports "osteopenia".
-::: solution
-**Osteomalacia, and the DXA line is a decoy ([[#def-other-bone]]): the low-calcium-low-phosphate-high-ALP-high-PTH-with-profound-vitamin-D-deficiency-and-proximal-myopathy pattern is mineralisation-failure, not merely low-mass — and bisphosphonate-for-"osteopenia" before repletion would worsen the hypocalcaemia ([[#def-osteoporosis]]-sequencing-rule, [[pharmacology/adverse-reactions]]). The plan: **repletion-first (the loading-and-maintenance-vitamin-D-and-oral-calcium-scheme with the hungry-bone-and-hypokalaemia-and-hypomagnesaemia-recheck-calendar — [[renal/potassium-calcium-phosphate]], [[endocrine/endocrine-emergencies]]-adjacent-tetany-watch); the cause-sweep-beyond-diet-and-sun (coeliac-and-IBD-and-pancreatic-malabsorption-and-drug-accelerated-catabolism-and-renal-handling — [[gastrointestinal/bowel-disease]], [[gastrointestinal/pancreas-biliary]], [[pharmacology/adverse-reactions]]); the falls-and-fracture-now-risk (the proximal-myopathy-falls-arithmetic-and-home-safety-and-strength-programme — [[geriatrics-palliative/falls]], [[gastrointestinal/clinical-nutrition]]-protein-and-calcium-intake); the pseudofracture-and-pathological-fracture-check (the femoral-neck-and-shaft Loou-zone-imaging-before-weight-bearing-reassurance — [[clinical-skills/medical-imaging]], [[surgery/orthopaedics]]); and the family-and-community-public-health-nudge (the dark-skin-and-latitude-and-veiling-and-supplementation-programmes-and-the-pregnancy-lactation-vulnerability-and-the-child's-vitamin-D-check — [[public-health/global-health]], [[public-health/prevention-promotion]], [[obstetrics-gynaecology/postnatal-period]], [[paediatrics/growth-development]]).**
-:::
-:::
-
-::: example The raised alkaline phosphatase of the knee clinic {#ex-paget}
-A 74-year-old man attending for knee replacement has ALP 610 with normal GGT and bilirubin, calcium normal, new shin and hip pain and rising shoe size of the feet; X-rays show cortical thickening and coarsened trabeculae of the tibia and pelvis.
-::: solution
-**Polyostotic Paget disease, symptomatic ([[#def-other-bone]]): the isolated-ALP-rise-bone-isoenzyme-logic ([[gastrointestinal/liver-function]]-ALP-row, [[clinical-skills/laboratory-tests]]), the bone-scan-for-disease-map-and-the-Xray-characteristic-features ([[clinical-skills/medical-imaging]]); the treatment indication (pain-and-adjacent-to-a-weighing-joint-and-planned-surgery-reducing-bleeding-and-the-spinal-nerve-compression-contexts — [[musculoskeletal/bones-joints]], [[nervous-system/motor-systems]]); the single-clinical-dose-zoledronate-option-with-the-vitamin-D-replete-first-and-post-dose-hypocalcaemia-and-acute-phase-reaction-counselling ([[#def-hypocalcaemia]], [[pharmacology/adverse-reactions]]); the long-haul watches (the new-localised-pain-malignancy-alert-with-imaging — [[pathology/cancer-biology]]; the cardiac-output-in-voluminous-disease — [[cardiovascular/heart-failure]]; the hearing-and-skull-checks — [[nervous-system/sensory-systems]]); and the perioperative coordination (the surgeon-and-anaesthetist-aware-of-the-vascular-bone-and-mis-sizing-and-positioning-implications — [[surgery/orthopaedics]], [[surgery/anaesthesia-pain]]).**
-:::
+f: c + 0.02*(40 - x)
+x: 15, 50
+y: 1.8, 3.0
+sliders: c=2.2:1.8:2.8:0.01
+hlines: 2.2; 2.6
+labels: \text{Adjusted calcium for measured calcium } c
+caption: Adjusted calcium (mmol/L, vertical axis) against albumin (g/L, horizontal axis) using the common UK formula. Move the slider to set the measured calcium $c$. The lower the albumin, the more the adjustment raises the value; the formula is least reliable at very low albumin. Dashed reference lines at 2.2 and 2.6 mmol/L. Illustrative only.
 :::
 
 ::: quiz
-First-line treatment for severe symptomatic hypercalcaemia is:
-- [x] Isotonic intravenous saline volume replacement
-- [ ] Oral sevelamer
-- [ ] IV furosemide diuresis alone
-- [ ] Subcutaneous calcitriol
+A 70-year-old woman has a calcium of 3.21 mmol/L, a suppressed PTH and a raised alkaline phosphatase. Which of these is the most likely cause?
+- [ ] Primary hyperparathyroidism
+- [ ] Familial hypocalciuric hypercalcaemia
+- [x] Malignancy with bone involvement or PTHrP secretion
+- [ ] Vitamin D deficiency
 ::: solution
-**These patients are volume-depleted from calcium-driven natriuresis-and-diuresis ([[#def-hypercalcaemia]], [[renal/potassium-calcium-phosphate]], [[renal/water-sodium]]); saline restores perfusion and calcium excretion while the specific agents (bisphosphonate/denosumab, short-bridge-calcitonin, treat-the-cause-and-dialysis-if-renal-failure) follow ([[endocrine/endocrine-emergencies]]); loop-diuretics-only-worsen-volume-and-the-old-furosemide-mania-is-retired; calcitriol would add calcium ([[renal/tubular-function]]-vitamin-D-logic [[#def-physiology]]).**
+A suppressed PTH means the hypercalcaemia is PTH-independent, ruling out primary hyperparathyroidism and FHH. Vitamin D deficiency causes low calcium. Malignancy is the commonest PTH-independent cause, especially at this level of calcium. She needs assessment for cancer, including myeloma.
 :::
 :::
 
 ::: history
-**Bone-and-calcium's lineage: the rickets-epidemiology-and-cod-liver-oil-era (the industrial-age "England's-ricketiest-county" surveys, Goldblatt-and-Soames' 1923-irradiated-ergosterol and the McCollum-Hess-Windaus-Holt-Sherman-multi-lab-race to vitamin D — [[public-health/global-health]]); the parathyroid-tetany era (Hunter's mis-excised parathyroids-in-subtotal-thyroidectomy, Gley-and-von-Hassall's-gland-identification, and MacArthur-and-Mandelbaum-and-Aub's-1930s-hyperparathyroidism-characterisation — [[endocrine/thyroid]]-surgical-history); Fuller-Albright's-school-defining-the-endocrine-bone-diseases (ovarian-hormone-and-bone, Cushing-syndrome's-osteoporosis, Albright-hereditary-osteodystrophy [[genetics/mendelian-inheritance]], [[endocrine/adrenal]]); Frost's-mechanostat turning bone remodelling into an engineering discipline ([[#def-physiology]]); Fleisch-and-Schenk's-bisphosphonate accident-of-chemistry (the urine-derived-inhibitor-that-became-the-century's-biggest-bone-drug — [[pharmacology/drug-receptor]]); the-1990s-DXA-and-WHO-T-score-codification and the FRAX-era shift to absolute risk ([[public-health/screening]]); the-post-menopausal-hormone-lesson (the HERS-then-WHI-curve-and-the-bone-side-of-the-debate — [[obstetrics-gynaecology/menopause]]); denosumab's-RANKL-translation-from-osteoimmunology ([[immunology/adaptive-responses]]-adjacent-RANKL-biology); and the-fracture-liaison-services-movement making the-second-fracture-a-traceable-failure ([[clinical-skills/patient-safety]]).**
+The Swedish medical student **Ivar Sandström** described the parathyroid glands in 1880. In 1925 **James Collip**, who had helped purify insulin, prepared an active parathyroid extract that raised blood calcium. Rickets was shown to be preventable: in 1919 **Edward Mellanby** cured rickets in dogs with cod liver oil, in the same year **Kurt Huldschinsky** cured children with ultraviolet light, and in 1922 **Elmer McCollum** identified the antirachitic factor as a new vitamin, vitamin D. In 1877 **James Paget** described the disease of bone that bears his name. In the 1940s **Fuller Albright** at Massachusetts General Hospital linked postmenopausal oestrogen loss to osteoporosis.
 :::
-
-One more bedside caution ties this chapter to the emergency and critical care chapters: calcium moves with illness. Citrate in transfusion, bicarbonate and citrate regional drainage, pancreatitis, rhabdomyolysis, tumour lysis and refeeding all shift calcium quietly, and albumin drifts in every unwell patient, so a "normal" calcium in a ventilated patient may be a mild hypocalcaemia and a high one may be real hypercalcaemia wearing a lab artefact's clothing. Ionised measurement, contextual interpretation and a second look at the magnesium close most of these cases correctly.
 
 ## Where this leads
 
-Renal handling in [[renal/tubular-function]] and [[renal/potassium-calcium-phosphate]]; the surgical neck in [[endocrine/thyroid]]; CKD-mineral-bone in [[renal/chronic-kidney-disease]]; fractures and fixation in [[surgery/orthopaedics]]; falls in [[geriatrics-palliative/falls]]; menopause bone-loss in [[obstetrics-gynaecology/menopause]].
-
-::: exercise Read the paediatric bones {level=2}
-A 14-month-old with bowed legs, widened wrists, rachitic rosary, calcium 2.0, ALP 900, PTH 25, vitamin D 14: diagnosis, immediate treatment and the safeguarding and public-health layers.
-::: solution
-**Nutritional-rickets-with-secondary-hypoparathyroid-chemistry ([[#def-other-bone]], [[paediatrics/growth-development]]): treatment-dose-vitamin-D-with-calcium-cover-and-the-hypocalcaemic-seizure-watch-and-the-healing-pain-transient ([[endocrine/endocrine-emergencies]], [[renal/potassium-calcium-phosphate]], [[nervous-system/epilepsy]]); the diet-and-sunlight-and-maternal-status-history-and-siblings-check ([[gastrointestinal/clinical-nutrition]], [[public-health/global-health]]); the safeguarding-lens-done-well (bowing-versus-fracture-pattern-differential-and-the-osteogenesis-imperfecta-question-and-the-non-accidental-injury-process-if-inconsistent-history — [[paediatrics/safeguarding]], [[genetics/mendelian-inheritance]]); and the family-support-and-supplementation-programme-and-follow-up-growth-and-orthopaedic-sequelae ([[paediatrics/growth-development]], [[surgery/orthopaedics]], [[public-health/prevention-promotion]]).**
-:::
-:::
-
-::: exercise Sort the CKD bone picture {level=2}
-Dialysis patient, PTH 3, calcium 2.5, phosphate 2.0, ALP low-normal, on calcium-based binders and calcitriol: what bone-turnover state is suggested and what are the prescribing errors?
-::: solution
-**Adynamic-bone-territory (the over-suppressed-PTH-with-low-ALP-and-positive-calcium-balance — [[#def-other-bone]], [[renal/chronic-kidney-disease]]): the errors-to-correct (the-calcium-load-from-binders-and-calcitriol-with-hypercalcaemia-risk-and-vascular-calcification-concern — [[cardiovascular/vascular-disease]], [[renal/potassium-calcium-phosphate]]; the-PTH-suppression-without-recognising-it-and-the-nephrology-review-for-calcimimetic-and-binder-switch-and-vitamin-D-approach); the-fracture-risk-reality (adynamic-bone-breaks-and-heals-poorly-and-the-DXA-does-not-reflect-it-and-bisphosphonates-are-usually-wrong-here — [[#def-osteoporosis]]); and the-dialysis-adequacy-and-phosphate-diet-and-binder-timing-education ([[renal/chronic-kidney-disease]], [[gastrointestinal/clinical-nutrition]]).**
-:::
-:::
+The kidney's handling of calcium and phosphate is in [[renal/potassium-calcium-phosphate]]. Fractures and their management are in [[musculoskeletal/fractures]], and falls prevention in [[geriatrics-palliative/falls]]. Emergencies of calcium are in [[endocrine/endocrine-emergencies]].
 
 ::: summary
-- Albumin-correct or ionise, then ask one question: is the PTH appropriately suppressed? That splits all hypercalcaemia.
-- "Mild" hypercalcaemia with stones, CKD or bone loss is not mild; a non-suppressed PTH is the tell.
-- Symptomatic hypocalcaemia is an airway-and-cardiac emergency — IV calcium, check magnesium, protect the neck-surgery patient's nerves and haematoma-check as much as the number.
-- Osteoporosis is treated by absolute risk and absolute context: adherence, falls, secondary causes, and anabolic-then-anti-resorptive sequencing, with denosumab never stopped abruptly.
-- The fracture-liaison principle: every fragility fracture is an un-diagnosed calcium-bone disease until proven otherwise.
+- Only ionised calcium is active. Adjust total calcium for albumin ($+0.02 \times (40 - \text{albumin})$), or measure ionised calcium when accuracy matters.
+- PTH raises calcium via bone, kidney and calcitriol; read PTH with calcium to locate the problem.
+- Hypercalcaemia is mostly primary hyperparathyroidism (PTH high or normal) or malignancy (PTH suppressed). The calcium-to-creatinine clearance ratio identifies FHH, which needs no surgery.
+- NICE refers primary hyperparathyroidism for surgery when there are symptoms, end-organ disease or calcium ≥ 2.85 mmol/L.
+- Hypocalcaemia causes tetany and long QT; after neck surgery, hypoparathyroidism is the usual cause; check magnesium.
+- Vitamin D deficiency causes rickets and osteomalacia with low phosphate, high ALP and high PTH.
+- Osteoporosis is a T-score ≤ −2.5 or a fragility fracture; assess risk with FRAX or QFracture. Treat with bisphosphonates, denosumab (never stop without a plan) or anabolic agents for very high risk.
+- Paget's disease presents with isolated raised ALP, bone pain and deformity.
 :::
 
 ## Exercises
 
-::: exercise Correct the calcium {level=1}
-Total calcium 3.1 with albumin 20 in a septic patient. What is the likely corrected value and the decision?
+::: exercise Adjust the calcium {level=1 check="2.10+0.02*(40-28)"}
+Measured calcium is 2.10 mmol/L and albumin 28 g/L. Calculate the adjusted calcium in mmol/L using $\text{Ca} + 0.02 \times (40 - \text{albumin})$.
 ::: solution
-**Apply the correction rule (add roughly 0.02 mmol/L per 1 g/L below normal albumin — the arithmetic of [[#def-hypercalcaemia]] and [[gastrointestinal/liver-function]]); here the corrected calcium remains meaningfully raised and the ionised fraction decides ([[clinical-skills/laboratory-tests]]); treat severity-and-symptoms-and-ECG, not the raw number ([[cardiovascular/arrhythmias]], [[#def-hypercalcaemia]]); the sepsis-context-raises-occult-malignancy-and-adrenal questions ([[infectious-diseases/fever-sepsis]], [[endocrine/adrenal]]).**
+$2.10 + 0.02 \times 12 = 2.10 + 0.24 = 2.34$ mmol/L, within the reference range.
 :::
 :::
 
-::: exercise Choose the drug {level=1}
-First oral bisphosphonate year: who needs a dental review first, and what adherence facts change outcomes?
+::: exercise Read the PTH {level=1}
+Give the likely category of cause: (a) calcium 2.95, PTH suppressed; (b) calcium 2.75, PTH 9 pmol/L (high); (c) calcium 1.95, PTH undetectable two days after thyroidectomy; (d) calcium 2.10, PTH 15 pmol/L (high), vitamin D 12 nmol/L.
 ::: solution
-**The-dental-check-before-high-dose-IV-or-cancer-dose-therapy-is-the-hard-rule, with-routine-oral-bisphosphonate-risk-communication-not-withholding ([[#def-osteoporosis]] ONJ-row); the adherence facts — upright-and-plain-water-and-empty-stomach-ritual-and-the-monthly-option-and-the-IV-zoledronate-fallback-for-gastrointestinal-failure-and-the-5-year-review-and-drug-holiday-logic ([[pharmacology/adverse-reactions]], [[gastrointestinal/oesophagus-stomach]], [[clinical-skills/communication]]).**
+(a) PTH-independent hypercalcaemia, most often malignancy. (b) PTH-dependent hypercalcaemia, most often primary hyperparathyroidism (exclude FHH). (c) Postsurgical hypoparathyroidism. (d) Secondary hyperparathyroidism due to vitamin D deficiency.
 :::
 :::
 
-::: exercise Explain denosumab {level=2}
-"I am stopping my bone injection because I have heard about jaw problems." What is the accurate conversation?
+::: exercise The T-score {level=1}
+Classify: (a) T-score −1.8 at the femoral neck in a 66-year-old woman with no fractures; (b) T-score −2.7 at the lumbar spine; (c) T-score −1.5 in a 72-year-old who has had a vertebral fragility fracture.
 ::: solution
-**Name-the-risk-then-name-the-rebound ([[#def-osteoporosis]]): osteonecrosis-of-jaw-is-rare-at-osteoporotic-doses-and-dental-hygiene-and-elective-dental-work-before-or-early-in-treatment-reduce-it ([[musculoskeletal/skin]]); but abrupt-denosing-withdrawal-triggers-rapid-bone-loss-and-vertebral-rebound-fractures, so stopping-is-a-planned-transition-to-an-anti-resorptive-not-a-freedom ([[pharmacology/dosing-principles]], [[clinical-skills/patient-safety]]); the-risk-comparison-that-matters (fracture-in-untreated-severe-osteoporosis-versus-drug-rarities — absolute-numbers-and-her-values [[clinical-skills/communication]], [[epidemiology-ebm/statistics-for-clinicians]]); and the written-plan-with-the-next-agent-and-date ([[clinical-skills/records-handover]]).**
+(a) Osteopenia. (b) Osteoporosis. (c) Clinically, osteoporosis: a vertebral fragility fracture indicates skeletal fragility whatever the T-score, and treatment is usually indicated.
 :::
 :::
 
-::: exercise Chase the cause {level=2}
-A 55-year-old with osteoporosis and fractures on no steroids: list the five secondary-endocrine-GI-haematological hunts and their tests.
+::: exercise Calculate the ratio {level=2 check="round(1000*(4.5*0.070)/(2.80*6.0))/1000"}
+Paired samples show urine calcium 4.5 mmol/L, urine creatinine 6.0 mmol/L, serum calcium 2.80 mmol/L and serum creatinine 70 µmol/L. Calculate the calcium-to-creatinine clearance ratio, rounded to three decimal places, and interpret it.
 ::: solution
-**Thyroid (TSH-and-iatrogenic-over-replacement — [[endocrine/thyroid]]); parathyroid (calcium-PTH — [[#def-hypercalcaemia]]); gonadal (menopause-timing-and-testosterone — [[endocrine/reproductive-endocrinology]]); cortisol-and-glucose (Cushing-screen-and-steroid-audit — [[endocrine/adrenal]]); gut-and-blood (coeliac-serology-and full blood count-and-myeloma-screen-and-calciuric-study — [[gastrointestinal/bowel-disease]], [[blood/lymphoma-myeloma]], [[renal/urinary-tract]]); plus the drug-and-vitamin-D-and-alcohol ledger ([[pharmacology/adverse-reactions]], [[psychiatry/substance-use]]) — the panel of [[#def-osteoporosis]].**
+Serum creatinine $= 0.070$ mmol/L. CCCR $= (4.5 \times 0.070)/(2.80 \times 6.0) = 0.315/16.8 = 0.01875$, which rounds to **0.019**. This is close to 0.02 and well above 0.01, so FHH is unlikely and the result supports primary hyperparathyroidism (values between 0.01 and 0.02 are a grey zone).
 :::
 :::
 
-::: exercise Manage the crisis {level=2}
-A myeloma patient: calcium 3.8, confused, dehydrated, creatinine 210. Write the first eight hours.
+::: exercise Denosumab {level=2}
+A woman has received denosumab every six months for five years. She wants to stop because she feels well. Explain the risk and what should happen.
 ::: solution
-**Malignancy-hypercalcaemia-crisis ([[#def-hypercalcaemia]]): senior-review-and-admission ([[endocrine/endocrine-emergencies]]); isotonic-saline-with-strict-balance-and-cardiac-monitoring ([[renal/water-sodium]], [[cardiovascular/heart-failure]]); IV-zoledronate-or-denosumab-per-renal-and-haematology-plan-with-the-24-72-hour-lag-and-the-hypocalcaemia-watch ([[renal/chronic-kidney-disease]], [[pharmacology/dosing-principles]]); calcitonin-bridge-for-severe-symptoms-with-the-tachyphylaxis-caveat; hold-calcium-thiazides-vitamin-D-milk-alkali-and-review-loop-use ([[pharmacology/adverse-reactions]]); the-confusion-delirium-protocol ([[geriatrics-palliative/delirium-dementia-care]]); the-lymphoma-and-myeloma-specific-therapy-urgency-and-the-radiotherapy-for-local-bone-crisis ([[blood/lymphoma-myeloma]]); and the-goals-of-care-conversation-in-parallel ([[geriatrics-palliative/palliative-care]], [[clinical-skills/communication]]).**
+Denosumab suppresses osteoclasts only while it is present. When it wears off, bone resorption rebounds above baseline, the bone gained is quickly lost, and multiple vertebral fractures can occur within months. Stopping must be planned: the usual approach is to give a bisphosphonate (often zoledronate) around the time the next denosumab dose would have been due, with monitoring. Doses should not be delayed by more than a few weeks. The decision is shared with her, with a clear explanation of why "feeling well" does not mean the treatment can simply stop.
 :::
 :::
 
-::: exercise Build the bone service {level=3}
-Design the district secondary-fracture-prevention system from emergency department to community.
+::: exercise Tingling after neck surgery {level=2}
+On the evening after a total thyroidectomy, a 41-year-old woman reports tingling around her mouth and in her fingers. What is the likely cause, what should be checked, and what is the immediate concern?
 ::: solution
-**Capture (the-fracture-liaison-service-with-ED-and-ward-and-orthogeriatric-triggers-and-consent-and-exclusions-rules — [[#def-osteoporosis]], [[surgery/orthopaedics]]); assess (the-DXA-and-vertebral-imaging-and-labs-and-falls-and-medicines-reviews-and-the-frailty-and-cognition-checks — [[geriatrics-palliative/falls]], [[geriatrics-palliative/delirium-dementia-care]], [[clinical-skills/medical-imaging]]); treat (the-start-before-discharge-principle-with-the-anabolic-versus-anti-resorptive-pathway-and-the-denosumab-stop-never-and-the-zoledronate-annual-clinic — [[#def-osteoporosis]], [[pharmacology/dosing-principles]]); refeed-the-system (the-GP-discharge-letter-and-shared-care-and-adherence-follow-up-and-rebound-fracture-alerts — [[clinical-skills/records-handover]]); the-inequity-sweep (the-deprivation-and-ethnicity-uptake-audit-for-DXA-access-and-treatment-persistence-and-vitamin-D-status-in-dark-skinned-populations — [[public-health/determinants-inequalities]], [[public-health/global-health]]); the-vitamin-D-programme-boundaries (the-supplementation-policy-and-the-healthy-skepticism-about-population-high-dose-fall-and-fracture-claims — [[public-health/prevention-promotion]], [[epidemiology-ebm/systematic-reviews]]); and the-KPI-set (hip-fracture-30-day-mortality-with-bone-therapy-initiation-rate, second-fracture-within-24-months, treatment-persistence-at-12-and-24-months, denosumab-abrupt-stop-incidents, and time-to-anabolic-for-vertebral-fractures — [[clinical-skills/patient-safety]], [[public-health/health-systems-economics]]).**
+**Postsurgical hypocalcaemia** from parathyroid damage or devascularisation (transient or permanent hypoparathyroidism). Check adjusted (or ionised) calcium, magnesium, PTH and an ECG for QT prolongation. Look for Chvostek's and Trousseau's signs. The immediate concern is progression to tetany, laryngospasm, seizures or arrhythmia: if she has significant symptoms or severe hypocalcaemia she needs intravenous calcium gluconate with cardiac monitoring, then oral calcium and often active vitamin D. Low magnesium should be corrected, since it impairs PTH secretion.
+:::
+:::
+
+::: exercise A case with a differential {level=3}
+A 68-year-old man who smokes presents with confusion, constipation and polyuria. Adjusted calcium 3.62 mmol/L, PTH undetectable, phosphate normal, ALP mildly raised, creatinine raised. Chest X-ray shows a hilar mass. Give a differential diagnosis for the hypercalcaemia, explain the polyuria and kidney injury, and outline initial management.
+::: solution
+**Differential** (PTH-independent): humoral hypercalcaemia of malignancy from **PTHrP** secreted by a **squamous cell lung cancer** (most likely given the hilar mass and smoking); bone metastases; myeloma (check serum free light chains and protein electrophoresis); granulomatous disease such as sarcoidosis or tuberculosis (would usually show raised calcitriol); vitamin D toxicity.
+
+**Polyuria and kidney injury**: calcium antagonises vasopressin in the collecting duct (an acquired AVP resistance), causing polyuria and dehydration; dehydration lowers GFR and reduces calcium excretion, so calcium rises further, a vicious cycle. Hypercalcaemia also causes renal vasoconstriction.
+
+**Initial management** (principles; follow local guidance): this is severe hypercalcaemia. Rehydrate with intravenous 0.9% sodium chloride, monitoring fluid balance; once rehydrated, give an intravenous bisphosphonate (dose adjusted for kidney function); stop thiazides and calcium or vitamin D supplements; monitor calcium, kidney function and electrolytes; and investigate and treat the underlying cancer with the oncology team. Denosumab or calcitonin may be used in refractory cases. Hypercalcaemia of malignancy usually signals advanced disease, so early discussion of goals of care is appropriate.
+:::
+:::
+
+::: exercise Plan a fracture liaison service {level=3}
+A hospital treats many people with fragility fractures but few are started on bone treatment. Design a fracture liaison service and justify its main components.
+::: solution
+A **fracture liaison service** systematically identifies people aged 50 or over with a fragility fracture and ensures assessment and treatment. Components:
+
+1. **Case finding**: a coordinator (often a specialist nurse) identifies all fragility fractures from emergency department, orthopaedic and radiology records, including vertebral fractures reported incidentally on imaging. Justification: a previous fragility fracture roughly doubles the risk of another, and risk is highest in the first one to two years ("imminent risk").
+2. **Assessment**: fracture risk (FRAX with DXA where helpful), falls risk, and secondary causes (calcium, vitamin D, kidney and thyroid function, myeloma screen when indicated, testosterone in men).
+3. **Treatment initiation**: an appropriate drug per NOGG, anabolic first for very high risk; vitamin D and calcium repletion; dental review before antiresorptives.
+4. **Falls prevention**: referral for strength and balance training, medication review, home hazard assessment.
+5. **Communication and adherence**: a plan to the GP, patient education, and follow-up at 3–4 months and one year, because many people stop oral bisphosphonates.
+6. **Audit**: data against national standards (for example the UK Fracture Liaison Service Database).
 :::
 :::

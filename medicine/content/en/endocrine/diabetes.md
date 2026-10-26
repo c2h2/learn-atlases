@@ -1,151 +1,287 @@
-Diabetes mellitus is the commonest chronic disease in most of the world and the prototype of the twenty-first-century health challenge: **a lifetime of self-management, a therapeutic armamentarium that changes every few years, and complications that are vascular, neural and metabolic all at once.** This chapter covers classification, pathophysiology, treatment architecture and hypoglycaemia; the complications and the technologies live in [[endocrine/diabetes-complications]].
+Diabetes mellitus is a state of chronically raised blood glucose caused by too little insulin, too little insulin effect, or both. It affects more than 500 million adults worldwide and over 4 million people in the UK, most with type 2 diabetes. Its importance lies less in the glucose itself than in what years of hyperglycaemia do to blood vessels and nerves, and in the dangers of its treatment, above all hypoglycaemia. Modern care has changed rapidly: drugs that protect the heart and kidneys, continuous glucose monitoring, insulin pumps that adjust themselves, and the discovery that type 2 diabetes can go into remission with weight loss.
 
-This chapter covers type 1 and type 2 diabetes, other specific types, diagnosis and monitoring, drug therapy, insulin and hypoglycaemia.
+This lesson covers insulin secretion and action, the classification and pathophysiology of diabetes, diagnosis and monitoring, and treatment of type 1 and type 2 diabetes. Acute and chronic complications are covered in [[endocrine/diabetes-complications]]. UK practice follows NICE guidelines NG17 (type 1 diabetes in adults) and NG28 (type 2 diabetes in adults); the American Diabetes Association (ADA) publishes annual Standards of Care.
 
-## What it is
+## Insulin: secretion and action {#sec-insulin}
 
-::: definition Classification and pathophysiology {#def-classification}
-**Type 1 (autoimmune beta-cell destruction — the GAD, IA2, ZnT8 and insulin autoantibodies, the HLA class-II risk architecture, the CD8-T-cell insulitis and the C-peptide-decline kinetics including the honeymoon period — [[immunology/autoimmunity]], [[immunology/adaptive-responses]], [[genetics/common-disease-genetics]]; the childhood peak presentation with DKA and the adult-onset LADA mislabelled as type 2 for years — [[paediatrics/acute-childhood-illness]], [[endocrine/endocrine-emergencies]]; the islet-transplantation-and-anti-CD3-delay-prevention research frontier — [[immunology/transplant-tumour-immunology]], [[geriatrics-palliative/ageing-frailty]]-no: keep the science where it works — the type-1-prevention-trials literature). Type 2 (the twin defects — insulin resistance in liver, muscle and fat with compensatory hyperinsulinaemia, and beta-cell failure that is already substantial at diagnosis, the "ominous circle" of glucotoxicity and lipotoxicity — [[cell-biochemistry/lipid-amino-acid-metabolism]], [[cell-biochemistry/metabolic-integration]]; the eight-tissue physiology — adipose flux, hepatic glucose output, muscle uptake, gut incretin defect, islet amyloid and alpha-cell glucagon and brain appetite signalling and renal reabsorption upregulation — the rationale behind every drug class below; the genetics — hundreds of common variants of small effect, a strong family-pattern that misleads clinicians into "MODY" complacency either way — [[genetics/common-disease-genetics]]; the drivers — adiposity distribution and ectopic fat and inactivity and sleep and food environment and deprivation — [[public-health/determinants-inequalities]], [[public-health/prevention-promotion]]). Other specified types (monogenic — the MODY family: GCK permanent-mild and HNF1A/HNF4A sulfonylurea-responsive and neonatal-diabetes genetics — [[genetics/mendelian-inheritance]]; pancreatic — pancreatitis and pancreatectomy and haemochromatosis and cystic fibrosis and the under-recognised type-3c — [[gastrointestinal/pancreas-biliary]], [[gastrointestinal/liver-disease]], [[respiratory/respiratory-infections]]-adjacent-CF [[genetics/mendelian-inheritance]]; endocrine — Cushing, acromegaly, phaeochromocytoma, thyrotoxicosis as secondary causes — [[endocrine/adrenal]], [[endocrine/hypothalamus-pituitary]], [[endocrine/thyroid]]; drug-and-chemical — glucocorticoids and calcineurin-inhibitors and antipsychotics-with-theirschizophrenia-metabolic-burden and checkpoint inhibitors causing explosive insulin-deficient diabetes — [[pharmacology/adverse-reactions]], [[psychiatry/psychotic-disorders]], [[immunology/vaccines-immunotherapy]]; pregnancy — gestational diabetes and its post-partum trajectory — [[obstetrics-gynaecology/pregnancy-complications]], [[endocrine/diabetes-complications]]; and the malnutrition-related and atypical phenotypes that global practice meets — [[public-health/global-health]]).**
+Insulin is made by the **beta cells** of the pancreatic islets of Langerhans. It is synthesised as **proinsulin**, which is cleaved into insulin and **C-peptide** in equal amounts. C-peptide is not cleared by the liver to the same extent as insulin and is not present in injected insulin, so it is a useful measure of a person's own insulin production.
+
+Glucose stimulates insulin release through a chain of events:
+
+1. Glucose enters the beta cell through a glucose transporter and is phosphorylated by **glucokinase**, which acts as the cell's glucose sensor.
+2. Metabolism of glucose raises the ratio of ATP to ADP.
+3. ATP closes **ATP-sensitive potassium (K-ATP) channels**, depolarising the cell membrane.
+4. Voltage-gated calcium channels open, calcium enters, and insulin granules are released.
+
+Sulfonylureas work by closing the K-ATP channel directly, regardless of glucose, which is why they can cause hypoglycaemia. Gut hormones called **incretins**, mainly **glucagon-like peptide 1 (GLP-1)** and **glucose-dependent insulinotropic polypeptide (GIP)**, amplify insulin release after a meal. This explains why oral glucose produces more insulin than the same glucose given intravenously.
+
+::: definition The actions of insulin {#def-insulin-action}
+Insulin is the body's main **anabolic** and fuel-storage hormone:
+
+- **Liver**: suppresses glucose output (gluconeogenesis and glycogen breakdown), promotes glycogen storage, and suppresses ketone production.
+- **Skeletal muscle**: increases glucose uptake by moving **GLUT4** transporters to the cell surface; promotes glycogen and protein synthesis.
+- **Adipose tissue**: increases glucose uptake and fat storage; strongly suppresses **lipolysis**.
+- **All cells**: moves potassium into cells.
+
+Its main opponents, the **counter-regulatory hormones**, are glucagon, adrenaline, cortisol and growth hormone.
 :::
 
-::: definition Diagnosis and monitoring {#def-diagnosis}
-**Diagnostic numbers (fasting plasma glucose ≥7.0 mmol/L, 2-hour ≥11.1 on OGTT, HbA1c ≥48 mmol/mol (6.5 %), or random ≥11.1 with unequivocal symptoms — confirmation rules and the asymptomatic-repeat requirement; the gestational thresholds and the post-partum OGTT obligation — [[obstetrics-gynaecology/pregnancy-complications]]). HbA1c's honest limitations (haemoglobinopathies and HbF and anaemia and reticulocytosis and CKD-and-EPO and pregnancy distort it — the fructosamine-and-continuous-monitoring workarounds — [[blood/haemoglobin-disorders]], [[blood/anaemia]], [[renal/chronic-kidney-disease]], [[clinical-skills/laboratory-tests]]). The phenotype at diagnosis (the osmotic-symptom tetra — thirst-polyuria-weight-loss-blurred-vision — and the DKA-and-HHS presentations of [[endocrine/endocrine-emergencies]]; the long-asymptomatic type-2 with complications already present at diagnosis — the reason screening discussions matter — [[public-health/screening]]). Monitoring (HbA1c intervals and the target-individualisation principle — the disabling-hypoglycaemia-risk-vs-complications-payoff — [[endocrine/diabetes-complications]]; time-in-range and the continuous-monitoring metrics now complementing HbA1c — the TIR-vocabulary from [[endocrine/diabetes-complications]]; the annual complication check (eyes, kidneys, nerves, feet, cardiovascular risk) whose schedule lives with [[endocrine/diabetes-complications]]; the C-peptide-and-antibody-work when the type is unclear — the adult-DKA-and-lean-T2 dilemmas solved by [[clinical-skills/laboratory-tests]] not habit; and the "steroid-induced hyperglycaemia" morning-pattern recognition in every inpatient on prednisolone — [[endocrine/adrenal]], [[surgery/perioperative-care]]).**
+Different actions need different amounts of insulin. Suppressing lipolysis and ketogenesis needs only a little; suppressing liver glucose output needs more; driving glucose into muscle needs most. This ranking explains why people with type 2 diabetes, who still make some insulin, rarely develop ketoacidosis, while people with type 1 diabetes, who make almost none, can develop it within hours of missing insulin. The integration of fuel metabolism is covered in [[cell-biochemistry/metabolic-integration]].
+
+## Classification {#sec-classification}
+
+::: definition Types of diabetes {#def-classification}
+- **Type 1 diabetes**: autoimmune destruction of beta cells leading to absolute insulin deficiency. Islet autoantibodies (against GAD, IA-2, insulin or ZnT8) are usually present. It can start at any age. A slowly progressive form in adults, often initially mistaken for type 2, is called **latent autoimmune diabetes in adults (LADA)**.
+- **Type 2 diabetes**: **insulin resistance** combined with progressive **beta-cell failure**. It is strongly associated with excess body fat, especially in the liver and abdomen, physical inactivity, age, family history and ethnicity.
+- **Monogenic diabetes**: caused by a single-gene defect, including **maturity-onset diabetes of the young (MODY)** and neonatal diabetes.
+- **Diabetes secondary to other conditions**: pancreatic disease (pancreatitis, pancreatic cancer, cystic fibrosis, haemochromatosis), endocrine disease (Cushing's syndrome, acromegaly), and drugs (glucocorticoids, some antipsychotics, immune checkpoint inhibitors).
+- **Gestational diabetes**: hyperglycaemia first recognised in pregnancy ([[obstetrics-gynaecology/pregnancy-complications]]).
 :::
 
-## Treatment architecture
+### Type 1 diabetes
 
-::: definition Lifestyle, tablets and incretins {#def-tablets}
-**Foundations (food-quality-not-only-carbohydrate counselling with the diabetes-specialist-nurse-and-dietitian architecture and the diabetes-remission-low-calorie-programme evidence — the DiRECT lineage with its weight-cycle-and-equity caveats — [[gastrointestinal/clinical-nutrition]], [[public-health/prevention-promotion]]; physical activity with its glucose-uptake biology and hypoglycaemia-adjustment rules — [[physiology/muscle]], [[endocrine/diabetes-complications]]; sleep-stress-and-alcohol — [[psychiatry/substance-use]], [[geriatrics-palliative/delirium-dementia-care]]-adjacent-elderly-routines). Metformin (first-line-until-contraindicated with the AMPK-and-mitochondrial-hepatic-glucose MOA — [[cell-biochemistry/energy-metabolism]], [[pharmacology/drug-receptor]]; the B12-drain and the gastrointestinal-dose-titration art and the sick-day-and-contrast-holds rules and the lactic-acidosis-in-shock physiology — [[gastrointestinal/digestion-absorption]], [[renal/acute-kidney-injury]], [[endocrine/endocrine-emergencies]]'s-sick-day-education, SADMANS-acronym-member [[gastrointestinal/digestion-absorption]]). Sulfonylureas and glinides (the K-ATP-channel-closure insulin secretagogue — [[physiology/membrane-potentials]], [[physiology/hormones]]; the hypoglycaemia-and-weight-gain tax, the long-acting-glibenclide-hazard-in-old-age-and-renal-impairment and the driving rules — [[geriatrics-palliative/polypharmacy]], [[renal/chronic-kidney-disease]], [[medical-ethics-law/professionalism-regulation]]). Pioglitazone (the PPAR-gamma adipose-sensitiser with its insulin-sensitising elegance and its oedema-fracture-weight-and-bladder-signal ledger — [[cardiovascular/heart-failure]], [[endocrine/bone-calcium]], [[gastrointestinal/gi-bleeding-cancer]]-adjacent-urothelial-caution [[renal/urinary-tract]]). DPP-4 inhibitors (the incretin-potentiator with the glucose-dependency safety and modest efficacy and the honest pancreatitis-and-joint-pain side-effect ledger, and why they were displaced by the injectable incretins — [[gastrointestinal/pancreas-biliary]], [[endocrine/diabetes-complications]]). SGLT2 inhibitors (the renal-glucose-recretion class — the transporter whose pharmacology is a [[renal/tubular-function]] lesson in reverse; the class-effect evidence in heart failure and chronic kidney disease independent of glycaemia — the natriuresis-and-tubuloglomer-feedback-and-ketone-shift mechanisms — [[cardiovascular/heart-failure]], [[renal/chronic-kidney-disease]]; and the safety brief — genital-mycolgia? — no: the genital mycotic infection and dehydration and the euglycaemic-DKA education and the perioperative-and-illness-sick-day holds — [[microbiology/fungi-parasites]], [[endocrine/endocrine-emergencies]], [[surgery/perioperative-care]]). GLP-1 receptor agonists and dual agonists (the incretin-architecture drugs — glucose-dependent insulin release and glucagon suppression and delayed gastric emptying and central appetite — [[physiology/hormones]], [[gastrointestinal/oesophagus-stomach]]; the weight and cardiovascular-outcome evidence and the newer dual-agonist potency tier — [[cardiovascular/coronary-artery-disease]]; the gastrointestinal-tolerability-titration ladder, the gastroparesis-caution and the thyroid-C-cell-class-signal-context and pancreatitis-history nuances — [[endocrine/thyroid]], [[gastrointestinal/pancreas-biliary]]; and the peri-procedural-aspiration-rules debate — [[surgery/anaesthesia-pain]]). Bariatric and metabolic surgery (the remission-and-cardiovascular- and mortality-data and the deferral-operation-of-last-resort-to-earlier-conversation shift, with its long-term vitamin-and-bone-and-glycaemia-follow-up obligations — [[surgery/gastrointestinal-surgery]], [[gastrointestinal/clinical-nutrition]], [[endocrine/bone-calcium]]).**
+In a genetically susceptible person (HLA-DR3 and DR4 haplotypes carry the strongest risk), T cells destroy beta cells over months to years. Autoantibodies appear long before symptoms. Hyperglycaemia emerges once most beta-cell function has been lost, and the person presents with thirst, polyuria, weight loss and tiredness, sometimes in **diabetic ketoacidosis**. A short "honeymoon" period of partial recovery may follow the start of insulin. Type 1 diabetes is associated with other autoimmune diseases, especially autoimmune thyroid disease and coeliac disease.
+
+### Type 2 diabetes
+
+Most people with type 2 diabetes are insulin resistant: their tissues need more insulin to achieve the same effect. Fat accumulating in the liver and pancreas plays a central role. For years the beta cells compensate by secreting more insulin. Diabetes appears when they can no longer keep up, and beta-cell function continues to decline, which is why treatment usually has to be intensified over time.
+
+The risk of type 2 diabetes is higher, and it appears at a lower body mass index and a younger age, in people of South Asian, Chinese, Black African and African-Caribbean heritage. NICE therefore uses lower BMI thresholds for these groups when assessing risk. Type 2 diabetes is increasingly diagnosed in adolescents and young adults, in whom it tends to be more aggressive.
+
+### Monogenic diabetes
+
+About 1–2% of diabetes is monogenic, and much of it is misdiagnosed as type 1 or type 2. Clues are diabetes diagnosed young, a strong family history across several generations, absent islet antibodies and preserved C-peptide years after diagnosis. **HNF1A-MODY** responds very well to low-dose sulfonylureas, often allowing insulin to be stopped. **GCK-MODY** causes mild, stable fasting hyperglycaemia from birth that needs no treatment outside pregnancy. Correct diagnosis changes treatment and allows relatives to be tested ([[genetics/genetic-testing]]).
+
+## Diagnosis and monitoring {#sec-diagnosis}
+
+::: definition Diagnostic criteria {#def-diagnosis}
+In a non-pregnant adult, diabetes is diagnosed (WHO criteria, used by NICE) by any of:
+
+- **fasting plasma glucose** ≥ 7.0 mmol/L (126 mg/dL);
+- **2-hour plasma glucose** ≥ 11.1 mmol/L (200 mg/dL) during a 75 g oral glucose tolerance test;
+- **HbA1c** ≥ 48 mmol/mol (6.5%);
+- **random plasma glucose** ≥ 11.1 mmol/L (200 mg/dL) in a person with symptoms of hyperglycaemia.
+
+Without symptoms, an abnormal result should be confirmed by a repeat test. In the UK, an HbA1c of 42–47 mmol/mol (6.0–6.4%) or fasting glucose of 5.5–6.9 mmol/L is called **non-diabetic hyperglycaemia** (prediabetes) and indicates high risk.
 :::
 
-::: definition Insulin and hypoglycaemia {#def-insulin}
-**Insulin (basal analogs-and-NPH-versus-degludec-kinetics, bolus analogs, and the mix-versus-basal-bolus-versus-pump philosophy — the basal-need-vs-prandial-cover reasoning — [[pharmacology/drug-receptor]]-adjacent-kinetics; type-1 essentials — carbohydrate counting-and-correction-factors-and-insulin-to-carb-ratios-and-fat-protein-bolus-timing-and-exercise-and-sick-day rules and the technology pathway in [[endocrine/diabetes-complications]]; type-2 intensification — the basal-first then-basal-plus-and-GLP1-combinations and the-injectable-hierarchy-and-when-to-stop-pretending-oral-therapy-works; pregnancy — the tight-targets human-insulin-first rules — [[obstetrics-gynaecology/pregnancy-complications]]; and the access chapter — cold-chain-and-pen-needle-and-sharing-and-cost-barriers-and-insulin-forgoing-prevalence and the biosimilar-and-price-and-conversion-confusion problems — [[public-health/global-health]], [[public-health/determinants-inequalities]], [[pharmacology/patient-variation]]). Hypoglycaemia (the counter-regulatory failure physiology — glucagon-then-adrenaline-then-blunted-adrenaline-with-impaired-awareness — [[physiology/hormones]], [[physiology/autonomic-nervous-system]]; the causes to hunt when a "stable" patient starts dropping — renal-decline-clearance-fall-and-adrenal-insufficiency-and-thyroid-and-alcohol-and-unintentioned-overlap-of-drugs-and-the-new-injectable-misreading — [[renal/chronic-kidney-disease]], [[endocrine/adrenal]], [[endocrine/thyroid]], [[psychiatry/substance-use]], [[geriatrics-palliative/polypharmacy]]; treatment — the fast-then-long-acting-carbohydrate rule and glucagon rescue device-selection-and-training-and-shake-technique and the IV-dextrose-concentration-and-line-decisions — [[endocrine/endocrine-emergencies]], [[emergency-critical-care/acute-assessment]]; and the aftermath — the impaired-awareness-assessment-and-driving-and-occupation-counselling-with-licensing-duty-and-the-DVLA-style-medical-standards, the beta-blocker-symptom-masking nuance, and the target-relaxation decision — [[medical-ethics-law/professionalism-regulation]], [[cardiovascular/hypertension]]; the severe-hypoglycaemia-causes-mortality-signal-and-the-avoid-every-episode-rehabilitation-logic — the ACCORD-adjacent caution and the structured-education-and-CGT/CGM-reversal-of-impaired-awareness evidence — [[endocrine/diabetes-complications]].** Injection craft belongs in every review (the lipohypertrophy-and-lump-avoidance-rotation-and-site-inspection routine that silently explains a third of erratic control, the needle-reuse-and-pen-storage physics, the inject-and-wait-timing habits, and the fear-of-needles history asked before escalating to injectables — [[gastrointestinal/clinical-nutrition]]-adjacent-skin-and-fat-biology, [[musculoskeletal/skin]]-adjacent-lump-check, and the [[clinical-skills/physical-examination]] discipline of actually-looking-at-the-sites-before-changing-doses).**
+**Glycated haemoglobin (HbA1c)** forms when glucose attaches non-enzymatically to haemoglobin. Because red cells live about 120 days, HbA1c reflects average glucose over the preceding two to three months, weighted towards the most recent weeks. It is reported in IFCC units (mmol/mol), with the older DCCT percentage still widely recognised:
+
+$$
+\text{HbA1c (mmol/mol)} = 10.929 \times (\text{HbA1c}\,\% - 2.15)
+$$ {#eq-hba1c}
+
+::: warning When HbA1c misleads
+HbA1c depends on red-cell lifespan as well as glucose. It is falsely **low** when red cells are young: haemolysis, recent blood loss or transfusion, treatment of iron deficiency, pregnancy, and in some haemoglobin variants. It can be falsely **high** in iron deficiency. It should not be used to diagnose diabetes in children and young people, in suspected type 1 diabetes, in pregnancy, within two months of starting drugs that raise glucose, or in acute illness. In these settings, use plasma glucose. Suspected type 1 diabetes in a child or young adult is a same-day referral, not a reason to wait for an HbA1c.
+:::
+
+Day-to-day monitoring increasingly uses **continuous glucose monitoring (CGM)**: a small sensor under the skin measures interstitial glucose every few minutes and sends readings to a phone or reader. NICE recommends CGM for all adults with type 1 diabetes and for some with type 2 diabetes on insulin. CGM reports **time in range**, the proportion of readings between 3.9 and 10.0 mmol/L; an international consensus target is more than 70% in range with less than 4% below 3.9 mmol/L. It also shows patterns that HbA1c hides, such as night-time hypoglycaemia.
+
+## Treating type 2 diabetes {#sec-t2}
+
+The aims of treatment are to relieve symptoms, prevent complications and avoid harm. Glucose is only one target. Cardiovascular disease is the main cause of death in type 2 diabetes, so blood pressure, lipids and smoking matter as much as glucose ([[endocrine/diabetes-complications]]).
+
+### Lifestyle and remission
+
+Structured education, healthy eating, physical activity and weight loss are the foundation. Weight loss can do more than improve control. In the **DiRECT** trial, published in 2018, people with type 2 diabetes of less than six years' duration in UK primary care followed a low-calorie total diet replacement programme; 46% were in remission at 12 months, and remission was closely related to the amount of weight lost. The NHS now offers a similar programme to eligible people. Remission is defined as HbA1c below 48 mmol/mol at least three months after stopping glucose-lowering drugs; it is not a cure, and monitoring continues.
+
+Prevention works too. In the US **Diabetes Prevention Program** (2002), intensive lifestyle change reduced progression from impaired glucose tolerance to diabetes by 58% and metformin by 31% compared with placebo. The NHS Diabetes Prevention Programme offers behavioural support to people with non-diabetic hyperglycaemia.
+
+### Glucose-lowering drugs
+
+::: definition The main drug classes for type 2 diabetes {#def-tablets}
+- **Metformin** reduces hepatic glucose output. It does not cause weight gain or hypoglycaemia on its own. Gastrointestinal side effects are common (modified-release forms are better tolerated). It can cause vitamin B12 deficiency, and is avoided when eGFR is below 30 mL/min/1.73 m² because of the rare risk of lactic acidosis.
+- **SGLT2 inhibitors** (dapagliflozin, empagliflozin, canagliflozin) block glucose reabsorption in the proximal tubule, so glucose is lost in urine. They lower weight and blood pressure and, in large trials, reduce heart failure hospitalisation and slow progression of chronic kidney disease. Adverse effects include genital fungal infections, volume depletion and **diabetic ketoacidosis**, which may occur with near-normal glucose.
+- **GLP-1 receptor agonists** (for example semaglutide, liraglutide, dulaglutide) and the dual GIP/GLP-1 agonist **tirzepatide** enhance glucose-dependent insulin release, suppress glucagon, slow gastric emptying and reduce appetite. They produce substantial weight loss; some reduce cardiovascular events. Nausea is common.
+- **DPP-4 inhibitors** (gliptins) prolong the action of the body's own incretins. They are weight-neutral and well tolerated, with modest effect.
+- **Sulfonylureas** (gliclazide) stimulate insulin release. They are effective and cheap but cause **hypoglycaemia** and weight gain.
+- **Pioglitazone** improves insulin sensitivity. It causes fluid retention and weight gain and is avoided in heart failure.
+- **Insulin** is needed when other treatments fail to control glucose, during intercurrent illness or pregnancy, and whenever there is significant catabolism or ketosis.
+:::
+
+Treatment choice now depends on comorbidity as much as on glucose. In February 2026 NICE updated NG28: for most adults with type 2 diabetes it now recommends offering **modified-release metformin together with an SGLT2 inhibitor** as initial treatment, unless contraindicated, with caution in people living with frailty. People with established atherosclerotic cardiovascular disease are also offered a GLP-1 receptor agonist, and for those diagnosed before age 40, triple therapy including a GLP-1 receptor agonist or tirzepatide is considered. Guidance in this area is changing quickly, and prescribers follow the current version. The ADA and the European Association for the Study of Diabetes take a similar approach, choosing agents for heart, kidney and weight benefits independent of HbA1c.
+
+### Glycaemic targets
+
+Targets are individualised. NICE suggests an HbA1c target of 48 mmol/mol (6.5%) for adults managed by lifestyle or a single drug that does not cause hypoglycaemia, and 53 mmol/mol (7.0%) for those taking a drug that can cause hypoglycaemia. Looser targets suit older people with frailty, limited life expectancy or a high risk of falls, where hypoglycaemia is the greater danger.
+
+## Treating type 1 diabetes {#sec-t1}
+
+People with type 1 diabetes need insulin for life, from diagnosis. The aim is to imitate normal physiology: a low, steady **basal** insulin level between meals and overnight, and **bolus** doses to cover meals.
+
+::: definition Insulin types and regimens {#def-insulin}
+- **Rapid-acting analogues** (insulin aspart, lispro, glulisine) start within about 15 minutes and last 3–5 hours; they are injected just before meals.
+- **Long-acting analogues** (insulin glargine, detemir, degludec) give a relatively flat profile over about a day or longer and provide basal insulin.
+- Older **soluble (regular)** and **intermediate-acting (isophane)** human insulins, and fixed **premixed** combinations, are still used, mainly in type 2 diabetes.
+
+The standard regimen in type 1 diabetes is **multiple daily injections (basal–bolus)**: a long-acting analogue once or twice daily plus a rapid-acting analogue with each meal. The alternative is **continuous subcutaneous insulin infusion** by an insulin pump.
+:::
+
+People adjust their mealtime insulin to the amount of carbohydrate eaten and to their current glucose. This requires structured education, such as the UK **DAFNE** (Dose Adjustment For Normal Eating) course. Two personal parameters are used:
+
+- the **insulin-to-carbohydrate ratio**: grams of carbohydrate covered by one unit;
+- the **correction factor** (insulin sensitivity factor): how many mmol/L one unit lowers glucose.
+
+**Hybrid closed-loop systems** link a CGM sensor to an insulin pump through an algorithm that adjusts basal insulin automatically every few minutes; the user still announces meals. In December 2023 NICE technology appraisal TA943 recommended hybrid closed-loop systems for children and young people, for pregnant women or those planning pregnancy, and for adults whose HbA1c remains at 58 mmol/mol (7.5%) or higher or who have disabling hypoglycaemia despite best management. Roll-out is being phased across the NHS.
+
+NICE NG17 suggests a target HbA1c of 48 mmol/mol (6.5%) or lower for adults with type 1 diabetes, while minimising hypoglycaemia. The landmark evidence for tight control came from the **Diabetes Control and Complications Trial (DCCT)**, published in 1993, which showed that intensive insulin therapy reduced retinopathy, nephropathy and neuropathy, at the cost of more hypoglycaemia.
+
+::: theorem Insulin must never be stopped in type 1 diabetes {#thm-sickday}
+In type 1 diabetes, illness raises insulin requirements, because infection and stress increase counter-regulatory hormones. Even if a person is not eating, the liver keeps producing glucose and, without insulin, fat breakdown and ketone production proceed unchecked. Basal insulin must therefore always be continued during illness, and extra doses are often needed.
+:::
+
+**Sick-day rules** for people with diabetes include: never stop insulin; check glucose more often (and ketones in type 1 diabetes or on SGLT2 inhibitors); keep drinking fluids; take extra rapid-acting insulin according to a personal plan if glucose and ketones are high; and seek urgent help if vomiting, unable to keep fluids down, or if ketones remain high. People on certain tablets are advised to **pause them temporarily** during dehydrating illness. A UK memory aid lists them as **SADMANS**: **s**ulfonylureas, **A**CE inhibitors, **d**iuretics, **m**etformin, **A**RBs, **N**SAIDs and **S**GLT2 inhibitors. Each of these drugs raises the risk of hypoglycaemia, acute kidney injury, lactic acidosis or ketoacidosis when a person is dehydrated.
+
+People with diabetes who drive must meet DVLA standards, which focus on hypoglycaemia awareness and glucose monitoring before and during driving.
+
+::: example Converting HbA1c units {#ex-hba1c}
+A 55-year-old man moving from abroad brings a result of "HbA1c 8.0%". What is this in mmol/mol, and how does it compare with a target of 53 mmol/mol?
+::: solution
+Using [[#eq-hba1c]]:
+
+$$
+10.929 \times (8.0 - 2.15) = 10.929 \times 5.85 = 63.9 \text{ mmol/mol}.
+$$
+
+This rounds to **64 mmol/mol**, which is 11 mmol/mol above a target of 53 mmol/mol. A useful sense of scale: 48 mmol/mol ≈ 6.5%, 53 ≈ 7.0%, 64 ≈ 8.0%, 75 ≈ 9.0%. Each 1% step in the old units is about 11 mmol/mol.
+:::
+:::
+
+::: example Calculating a mealtime dose {#ex-bolus}
+A 23-year-old woman with type 1 diabetes uses an insulin-to-carbohydrate ratio of 1 unit per 10 g and a correction factor of 1 unit per 2.5 mmol/L, with a target glucose of 6.0 mmol/L. Before lunch her glucose is 11.0 mmol/L and she plans to eat 60 g of carbohydrate. How much rapid-acting insulin does her plan suggest? (Illustrative numbers; each person's ratios are set with their diabetes team.)
+::: solution
+**Meal dose:** $60 \text{ g} \div 10 \text{ g per unit} = 6$ units.
+
+**Correction dose:** her glucose is $11.0 - 6.0 = 5.0$ mmol/L above target, so $5.0 \div 2.5 = 2$ units.
+
+**Total:** $6 + 2 = 8$ units.
+
+Two practical refinements: if she has had rapid-acting insulin in the past few hours, some is still active ("insulin on board") and the correction should be reduced; and planned exercise after the meal usually calls for a smaller dose. Pump and smart-pen software performs these calculations automatically.
+:::
+:::
+
+::: example Not the type it seemed {#ex-mody}
+A 24-year-old woman was diagnosed with "type 1 diabetes" at 15 and uses insulin. Her HbA1c is 52 mmol/mol on only 14 units a day. Her mother, maternal grandfather and uncle all have diabetes, diagnosed in their twenties. Her C-peptide, measured on a random sample, is clearly detectable nine years after diagnosis, and islet autoantibodies are negative. What is the likely diagnosis and why does it matter?
+::: solution
+Nine years after the onset of type 1 diabetes, C-peptide would usually be very low or undetectable, antibodies are usually present, and insulin needs are higher. Diabetes in three generations, diagnosed young, suggests **autosomal dominant inheritance**. The most likely diagnosis is **MODY**, probably HNF1A-MODY (the commonest form with progressive hyperglycaemia).
+
+Genetic testing should be offered. If HNF1A-MODY is confirmed, she may be able to switch from insulin to a low-dose sulfonylurea, to which this form is very sensitive. Her relatives can be tested, and her children each have a 50% chance of inheriting the variant. For pregnancy, specialist advice is needed because treatment choices differ.
+:::
+:::
+
+::: example A new diagnosis with heart disease {#ex-comorbids}
+A 62-year-old man of Pakistani heritage, with a myocardial infarction two years ago, has an HbA1c of 61 mmol/mol on two tests. eGFR is 72 mL/min/1.73 m², BMI 29 kg/m². Outline the initial treatment plan according to the principles of current UK guidance.
+::: solution
+**Glucose-lowering:** with established atherosclerotic cardiovascular disease, current NICE guidance (NG28 as updated in 2026) is to offer modified-release metformin with an SGLT2 inhibitor from the start, and to add a GLP-1 receptor agonist such as semaglutide for cardiovascular protection. He should be counselled about SGLT2 inhibitor sick-day rules and the risk of ketoacidosis, and about genital hygiene.
+
+**Cardiovascular risk:** high-intensity statin (he should already be on one after his infarction), blood-pressure control, antiplatelet therapy as indicated for his coronary disease, and smoking cessation if relevant.
+
+**Education and support:** structured education, dietary advice (with attention to cultural food practices), physical activity, and weight management.
+
+**Screening:** retinal screening, urine albumin-to-creatinine ratio, foot assessment.
+
+**Target:** HbA1c 48 mmol/mol is reasonable if achieved without hypoglycaemia, since these drugs do not cause hypoglycaemia on their own.
+:::
 :::
 
 ::: widget plot
-f: 100/(1+exp(-(x-62)*0.18)); 20
-x: 36, 110
-y: 0, 105
-labels: \text{HbA1c (mmol/mol)},\ \text{retinopathy prevalence (\%)};\ \text{population pattern};\ \text{background rate}
-caption: The near-threshold relationship between glycaemia and microvascular endpoints (the classic epidemiology of retinopathy across HbA1c, with the steep rise above roughly 58-64 mmol/mol) is the evidence behind glycaemic targets — and behind their individualisation, since the curve's left is bought with hypoglycaemia risk in long-duration disease ([[#def-insulin]], [[endocrine/diabetes-complications]]); reading a sigmoid risk curve also belongs to [[epidemiology-ebm/diagnostic-tests]] and the treatment-threshold logic of [[epidemiology-ebm/statistics-for-clinicians]].
-:::
-
-::: example The wrong diagnosis for eight years {#ex-mody}
-A 26-year-old, lean since childhood, was labelled type-1 diabetes at 18 (antibody-negative, still producing C-peptide at 21), now HbA1c 58 on basal-bolus insulin; his father and grandmother both took "tablets from their forties"; no ketonuria at diagnosis.
-::: solution
-**MODY until genotyped — the multi-generation-lean-antibody-negative-C-peptide-positive pattern is the referral trigger ([[#def-classification]]): send the monogenic-panel through the clinical-genetics service and continue current therapy meanwhile ([[genetics/genetic-testing]]); if HNF1A-or-HNF4A — the sulfonylurea-responsiveness means insulin can often be stopped (with the hypoglycaemia-and-driving re-counselling — [[#def-insulin]], [[medical-ethics-law/professionalism-regulation]]); if GCK-MODY — the lifelong-mild-fastings-hyperglycaemia-doesn't-progress-and-treatment-doesn't-help rule, with the exception of pregnancy-where-fetal-genotype-decides-everything ([[obstetrics-gynaecology/pregnancy-complications]], [[genetics/mendelian-inheritance]]); the family cascade (testing relatives and the insurance-and-pregnancy-planning conversations and re-labelling the diagnosis in every record — [[clinical-skills/records-handover]], [[genetics/genomic-medicine]]); and the general lesson — C-peptide is the test that settles "which diabetes" more often than antibodies alone ([[clinical-skills/laboratory-tests]]).**
-:::
-:::
-
-::: example The new diagnosis with three co-things {#ex-comorbids}
-A 58-year-old with newly diagnosed type 2 (HbA1c 72) also has established atherosclerotic disease, an eGFR of 48 with albuminuria, and BMI 36; he drives a lorry.
-::: solution
-**Treat the three diseases and the diabetes in one regimen, remembering the legal-and-safety overlay ([[#def-tablets]], [[#def-insulin]]): the SGLT2-inhibitor-for-kidney-and-heart-and-glucose-and-the-GLP1-receptor-agonist-for-weight-and-ASCVD-and-glycaemia-with-their-combination-logic — the organ-protector-first-era ([[renal/chronic-kidney-disease]], [[cardiovascular/heart-failure]], [[cardiovascular/coronary-artery-disease]], [[gastrointestinal/clinical-nutrition]]); metformin-at-reduced-dose-per-eGFR-rules ([[renal/tubular-function]], [[pharmacology/dosing-principles]]); avoid hypoglycaemia-inducing agents in a commercial driver (the sulfonylurea-and-insulin-licensing-problem and the occupational-medicine-referral ([[medical-ethics-law/professionalism-regulation]], [[endocrine/diabetes-complications]])); the blood-pressure-lipid-and-antiplatelet-and-smoking-and-alcohol-package ([[cardiovascular/hypertension]], [[cardiovascular/vascular-disease]], [[psychiatry/substance-use]]); the structured-education-and-driving-standards-and-medical-review-dates ([[clinical-skills/communication]]); and the referral-conversation-that-this-is-now-a-chronic-cardio-renal-weight-disease-not-a-sugar-problem — the framing that improves adherence ([[public-health/health-systems-economics]]-adjacent-consultation-design, [[gastrointestinal/clinical-nutrition]]).**
-:::
-:::
-
-::: example The type-2 who was not {#ex-lada}
-A 34-year-old woman with low-BMI "type 2 diabetes" diagnosed 2 years ago has failed gliclazide and then high-dose metformin plus pioglitazone; HbA1c 88, weight falling, ketones 2+ on a routine urine, family history of thyroid disease.
-::: solution
-**Latent autoimmune diabetes in adults (LADA) — the antibody-positive, slowly-destructive type-1-variant that presents in adulthood and behaves like type 1 once beta-cell reserve is gone ([[#def-classification]]): the tells here are the lean-habitus, the secondary-sulfonylurone-failure, the unexplained weight loss and the ketonuria — and the autoimmune family clustering ([[immunology/autoimmunity]], [[endocrine/thyroid]]). Confirm before switching everything: **GAD-antibodies (± IA2/ZnT8) and C-peptide after a stimulant meal — the pair that settles the question and the prognosis ([[clinical-skills/laboratory-tests]]); then the insulin-first rescue with the type-1-technology-and-education package and DKA-safety training ([[#def-insulin]], [[endocrine/endocrine-emergencies]]); stop-the-sulfonylurone-and-review-pioglitazone (and the pioglitazone-in-insulinopenia futility) ([[#def-tablets]]); the sick-day-rules-and-ketone-meter issue and the driving re-assessment for the new hypoglycaemia-risk-category ([[medical-ethics-law/professionalism-regulation]]); the polyglandular-autoimmune screen offered (thyroid-function and B12-addison-symptoms-audit — [[endocrine/adrenal]], [[blood/anaemia]]); and the re-labelling-in-all-records plus the "why-your-tablets-stopped-working" explanation that repairs trust after two wasted years ([[clinical-skills/communication]], [[clinical-skills/records-handover]]).**
-:::
-:::
-
-::: example The falls and the mornings {#ex-elderly-hypo}
-An 81-year-old living alone, on gliclazide MR and metformin (eGFR fell from 62 to 44 over a year), has had three unwitnessed falls and "off" mornings; HbA1c 46 on this regimen.
-::: solution
-**Recurrent unrecognised hypoglycaemia from long-acting sulfonylurea accumulation ([[#def-insulin]]-hypo-row, [[renal/chronic-kidney-disease]]-clearance-row): the HbA1c-46-in-an-81-year-old is the alarm not the trophy — the tighter-than-needed target bought falls, and in older adults the guideline ceiling is far higher (frailty-and-life-expectancy-and-benefit-latency logic — [[geriatrics-palliative/polypharmacy]], [[geriatrics-palliative/falls]]). The plan: **stop-or-substitute-gliclazide-MR (the short-acting-agent-and-renal-dose rules and the-deprescribing-conversation with the patient — [[pharmacology/adverse-reactions]]); relax-the-target-in-writing (fracture-or-falls-risk-and-the-58-64-mmol/mol-territory-and-why-hypoglycaemia-is-the-acute-danger — [[endocrine/bone-calcium]], [[cardiovascular/arrhythmias]]); the-everyday-safety-net (glucagon-and-household-and-meal-pattern-and-alcohol-audit — [[psychiatry/substance-use]], [[endocrine/endocrine-emergencies]]); the falls-workout-in-parallel (vision-and-postural-and-foot-and-strength-and-housing — [[geriatrics-palliative/falls]], [[nervous-system/sensory-systems]]); the driving-cessation-conversation-if-she-drives ([[medical-ethics-law/professionalism-regulation]]); and the monitoring-plan (medication-review-cadence-and-renal-and-hypo-diary-and-the-social-isolation-safety-call — [[clinical-skills/records-handover]]).**
-:::
+f: x*exp(1-x/1.2)/1.2; 0.35
+x: 0, 12
+y: 0, 1.1
+labels: \text{Rapid-acting analogue (bolus)}; \text{Long-acting analogue (basal)}
+caption: Schematic insulin action profiles after a subcutaneous injection, plotted as relative effect against hours. The rapid-acting analogue peaks at about 1–2 hours and is largely gone by 5 hours, so it covers a meal; the long-acting analogue gives a low, flat background. Illustrative shapes only; real profiles vary with dose, site and individual.
 :::
 
 ::: quiz
-HbA1c is least reliable as a monitoring tool in:
-- [ ] Obesity
-- [x] Chronic kidney disease with erythropoietin therapy and haemoglobinopathy
-- [ ] Hypertension
-- [ ] Statin therapy
+A 19-year-old with type 1 diabetes has gastroenteritis and is not eating. What should happen to her basal insulin?
+- [ ] Stop it until she is eating again, to avoid hypoglycaemia.
+- [x] Continue it, monitor glucose and ketones closely, and give extra rapid-acting insulin according to her sick-day plan.
+- [ ] Halve it and stop checking ketones.
+- [ ] Replace it with metformin.
 ::: solution
-**Red-cell-lifespan-and-Hb-variant disorders distort glycation readouts ([[#def-diagnosis]], [[blood/haemoglobin-disorders]], [[blood/anaemia]], [[renal/chronic-kidney-disease]]); alternatives — fructosamine-with-its-own-caveats-and-plasma-glucose-profiles-and-continuous-monitoring-metrics ([[clinical-skills/laboratory-tests]], [[endocrine/diabetes-complications]]); the same vigilance applies in pregnancy ([[obstetrics-gynaecology/pregnancy-complications]]).**
+Illness raises insulin requirements, and without basal insulin she will develop ketoacidosis even if she is not eating. Basal insulin is always continued ([[#thm-sickday]]). If she cannot keep fluids down or ketones rise, she needs urgent medical assessment.
 :::
 :::
 
 ::: history
-**Diabetes' 3000-year paper trail (the Sanskrit "madhu" honey-urine and the ancient water-finding tests; Aretaeus's vivid second-century description; Willis's 1674-sweet-taste-noting that named "mellitus"); von Mering and Minkowski's 1889-pancreatectomy-dog that localised the internal secretion; Banting, Best, Collip and MacLeod's 1921-22-toronto-extract-and-the-first-patient-clinical-triumph (Nobel 1923) and the astonishing-speed-manufacturing-public-health-victory-then-the-royalty-relinquishment-for-one-canadian-dollar — [[public-health/global-health]]; the 1936-Hagedorn-protamine-zinc-long-acting-insulin-era and the 1946-NPH; the human-insulin-recombinant-DNA-revolution (1978-82) and the analog-design-era (1996s-lispro-aspart-and-glargine — [[pharmacology/drug-receptor]]); HbA1c-measurement's 1960s-discovery-to-standardisation (the HPLC-and-IFCC-mathematics [[clinical-skills/laboratory-tests]]); the DCCT (1993) proving the glycaemic-exposure principle and the UKPDS (1998) making metformin and blood-pressure-and-lipid-medicine central — [[epidemiology-ebm/randomised-trials]]; the incretin biology from Bayliss-and-Starling's secretin (1902) through Nauck's-incretin-effect-work-to-exenatide-and-liraglutide ([[gastrointestinal/digestion-absorption]]'s hormone lineage); the SGLT2-odds-accident (the floridzin-phlorizin-glucosuria-history-[[renal/tubular-function]]) becoming organ-protectors; and the artificial-pancreas-and-continuous-monitoring-wave of the 2010s-2020s — [[endocrine/diabetes-complications]].**
+In 1889 **Oskar Minkowski** and **Joseph von Mering** in Strasbourg showed that removing a dog's pancreas caused fatal diabetes. In 1921 at the University of Toronto, **Frederick Banting** and **Charles Best**, working in the laboratory of **John Macleod**, prepared pancreatic extracts that lowered glucose in diabetic dogs, and **James Collip** purified them. In January 1922, 14-year-old **Leonard Thompson** became the first person to be treated successfully with insulin. Banting and Macleod received the Nobel Prize in 1923 and shared their prize money with Best and Collip respectively. The **DCCT** (1993) and the **UK Prospective Diabetes Study** (UKPDS, 1998), led by **Robert Turner** and **Rury Holman**, established that better glucose control reduces microvascular complications in type 1 and type 2 diabetes.
 :::
 
 ## Where this leads
 
-The complications and technologies in [[endocrine/diabetes-complications]]; emergencies in [[endocrine/endocrine-emergencies]]; nutrition levers in [[gastrointestinal/clinical-nutrition]]; the renal and cardiovascular endpoints in [[renal/chronic-kidney-disease]] and [[cardiovascular/heart-failure]]; pregnancy in [[obstetrics-gynaecology/pregnancy-complications]]; drug mechanisms in [[pharmacology/drug-receptor]].
-
-::: exercise Set the exercise plan {level=2}
-A 27-year-old with type 1 on pump-therapy runs a half-marathon in 10 weeks. Write the glucose-adjustment plan for training and race day.
-::: solution
-**The physiology first (muscle glucose uptake rises during-and-after exercise with late-hypoglycaemia risk from glycogen-repletion demand — [[physiology/muscle]], [[physiology/autonomic-nervous-system]]): carb-adjustment-by-intensity rules and the pre-exercise-glucose-and-basal-reduction-strategies (temporary-basal-rate-reduction-and-active-insulin-time-logic — [[#def-insulin]]); the practice-race-day-dressing (glucose-tables-taped-and-the-pump-site-and-chafe-plan-and-cold-weather-infusion-set-care — [[endocrine/diabetes-complications]]); the ketone-and-illness-exclusion-rule-before-hard-sessions ([[endocrine/endocrine-emergencies]]); the CGM-alert-settings-and-partner-alarm-and-race-crew-briefing ([[endocrine/diabetes-complications]]); and the post-race-alcohol-and-recovery-night plan ([[psychiatry/substance-use]], [[gastrointestinal/clinical-nutrition]]).**
-:::
-:::
-
-::: exercise Judge the referral {level=2}
-A 42-year-old with type 2, BMI 41, HbA1c 69 despite maximal therapy, and new albuminuria asks about "the bypass operation his cousin had". Give the evidence-based answer and the pathway.
-::: solution
-**Metabolic-bariatric-surgery-eligibility-and-realities ([[#def-tablets]]-surgery-row, [[surgery/gastrointestinal-surgery]]): the remission-and-cardiovascular-and-renal-endpoint evidence and its age-and-duration-modifiers-and-the-inevitable-regain-without-follow-up ([[cardiovascular/coronary-artery-disease]], [[renal/chronic-kidney-disease]]); the pre-op requirements (the psychological-and-eating-assessment-and-the-alcohol-counselling-and-the-12-24-month-commitment-framing — [[psychiatry/eating-personality-disorders]], [[gastrointestinal/clinical-nutrition]], [[clinical-skills/communication]]); the peri-operative pharmacology (the SGLT2-hold-and-GLP1-hold-and-insulin-reduction-and-VTE-and-anticoagulation-plans — [[endocrine/endocrine-emergencies]], [[blood/thrombosis-anticoagulation]], [[surgery/anaesthesia-pain]]); the procedure-choice-and-sleeve-versus-bypass-reflux-and-diabetes trade-off ([[gastrointestinal/oesophagus-stomach]]-adjacent-reflux-argument, [[gastrointestinal/clinical-nutrition]]); the lifelong supplementation-and-bone-and-surveillance-package ([[endocrine/bone-calcium]], [[gastrointestinal/clinical-nutrition]]); and the honest statistics (remission-probability-declines-with-longer-diabetes-and-lower-C-peptide — the shared-decision that respects his cousin's survivorship-bias anecdote — [[epidemiology-ebm/observational-studies]], [[clinical-skills/clinical-reasoning]]).**
-:::
-:::
-
-::: exercise Explain to the sceptic {level=2}
-"I am only slightly diabetic — the tablets are just to keep the doctors happy." Answer as a consult.
-::: solution
-**Meet the stage with the patient's model, not yours: the sigmoid risk-curve explanation of [[#def-insulin]]-figure (damage accrues silently above the threshold, symptoms come late), the "organ-protection, not sugar" reframe of the modern regimen ([[#def-tablets]]), the concrete functional anchors (vision, kidneys, feet, heart, energy, holidays-illness-planning — [[endocrine/diabetes-complications]]), the honest cost-of-inaction numbers without scare-tactics, the autonomy-respecting close (his goals set the targets — work, family, sport — and the plan is negotiable while the disease is not — [[clinical-skills/communication]], [[medical-ethics-law/ethical-principles]]); and a written summary with the agreed review date ([[clinical-skills/records-handover]]).**
-:::
-:::
+Hypoglycaemia, ketoacidosis and long-term complications are covered in [[endocrine/diabetes-complications]], and the hyperosmolar hyperglycaemic state in [[endocrine/endocrine-emergencies]]. Diabetes in pregnancy is covered in [[obstetrics-gynaecology/pregnancy-complications]], and diabetes as a public-health problem in [[public-health/non-communicable-disease]].
 
 ::: summary
-- Classify first: antibody and C-peptide testing settles the type-1-versus-type-2-versus-MODY question far more often than age does.
-- HbA1c is a superb and fragile instrument — interpret it against red-cell physiology and substitute monitoring when the assay lies.
-- Type-2 therapy is now organ-protection therapy: SGLT2 and GLP-1 classes earn their place by heart, kidney and weight outcomes as much as glucose.
-- Insulin is irreplaceable in type 1 and eventually in many type 2; the regimen should match the person — including their job, their literacy and their wallet.
-- Every hypoglycaemia in a previously controlled patient is a differential diagnosis (renal, adrenal, alcohol, dosing-error) — hunt it before raising targets reflexively.
+- Glucose closes beta-cell K-ATP channels to release insulin; incretins amplify the response. C-peptide measures endogenous insulin.
+- Insulin suppresses hepatic glucose output, lipolysis and ketogenesis and drives glucose into muscle and fat; small amounts suppress ketones, which is why ketoacidosis is mainly a disease of absolute insulin deficiency.
+- Type 1 diabetes is autoimmune beta-cell destruction; type 2 combines insulin resistance with progressive beta-cell failure; monogenic diabetes is often misdiagnosed.
+- Diagnosis: fasting glucose ≥7.0, 2-hour OGTT glucose ≥11.1, HbA1c ≥48 mmol/mol, or random glucose ≥11.1 mmol/L with symptoms. Know when HbA1c misleads.
+- Type 2 treatment combines lifestyle, weight loss (remission is possible) and drugs chosen for cardiovascular, kidney and weight benefits; as of 2026, NICE recommends metformin plus an SGLT2 inhibitor first-line for most adults.
+- Type 1 treatment is basal–bolus insulin or a pump, with carbohydrate counting, CGM and increasingly hybrid closed-loop systems.
+- Never stop insulin in type 1 diabetes; pause SADMANS drugs during dehydrating illness.
 :::
 
 ## Exercises
 
-::: exercise Diagnose correctly {level=1}
-Fasting glucose 7.4 on one occasion, asymptomatic adult. Next step? Same numbers with polyuria and 6 kg loss?
+::: exercise Make the diagnosis {level=1}
+Which of these meets the criteria for diabetes in a non-pregnant adult? (a) fasting glucose 6.4 mmol/L; (b) HbA1c 50 mmol/mol on two occasions without symptoms; (c) random glucose 13.2 mmol/L with thirst and weight loss; (d) HbA1c 44 mmol/mol.
 ::: solution
-**Repeat-to-confirm (or HbA1c/OHTT pair) — the single-value rule ([[#def-diagnosis]]); with unequivocal symptoms and random or fasting values above threshold, diagnose-now-and-start-management ([[#def-classification]], [[clinical-skills/history-taking]]); plus the type-workup with antibodies-and-C-peptide-if-unclear ([[clinical-skills/laboratory-tests]]) and the complication-baseline-and-driving-and-work conversations at diagnosis ([[endocrine/diabetes-complications]], [[medical-ethics-law/professionalism-regulation]]).**
+(b) and (c) meet the criteria. (a) is non-diabetic hyperglycaemia (impaired fasting glucose in WHO terms). (d) is in the non-diabetic hyperglycaemia range (42–47 mmol/mol).
 :::
 :::
 
-::: exercise Choose the second drug {level=1}
-Metformin-intolerant? Give first-line alternatives and the one you must justify by indication: sulfonylurea, pioglitazone, DPP-4, SGLT2, GLP-1.
+::: exercise Convert the units {level=1 check="round(10.929*(7.5-2.15))"}
+Convert an HbA1c of 7.5% to mmol/mol using $10.929 \times (\% - 2.15)$, rounded to the nearest whole number.
 ::: solution
-**Weight/hypoglycaemia/cost/organ profiles differ ([[#def-tablets]]): sulfonylurea — cheap-fast-but-hypoglycaemia-and-weight-and-driving-implications ([[#def-insulin]], [[medical-ethics-law/professionalism-regulation]]); pioglitazone — durable-but-oedema-fracture-and-hepatotoxicity-rules ([[endocrine/bone-calcium]], [[cardiovascular/heart-failure]]); DPP-4 — safe-mild-and-add-on ([[gastrointestinal/pancreas-biliary]]-adjacent-cautions); SGLT2/GLP-1 — the indication-first choices when heart, kidney or weight dominate ([[renal/chronic-kidney-disease]], [[cardiovascular/heart-failure]]); and the shared-decision with the-licence-and-occupation-and-pregnancy-planning checks each time ([[clinical-skills/communication]]).**
+$10.929 \times 5.35 = 58.47$, which rounds to **58 mmol/mol**.
 :::
 :::
 
-::: exercise Write the sick-day rules {level=2}
-Give the SADMANS-holding advice plus the "when to come in" criteria for a type-1 patient on insulin, SGLT2 and an ACE inhibitor with gastroenteritis.
+::: exercise Name the drug {level=1}
+Name the drug class most likely to explain each: (a) recurrent genital thrush; (b) hypoglycaemia and weight gain; (c) nausea and substantial weight loss; (d) low vitamin B12.
 ::: solution
-**Hold-the-SGLT2-and-ACE-and-metformin-if-present-and-never-hold-the-insulin-and-test-ketones-and-glucose-often-and-hydrate-with-sodium-containing-fluids ([[gastrointestinal/digestion-absorption]]'s ORS arithmetic and the euglycaemic-DKA-hazard of SGLT2-with-illness — [[endocrine/endocrine-emergencies]], [[renal/water-sodium]], [[renal/acute-kidney-injury]]); the red-line criteria (persistent vomiting, ketones, drowsiness, no fluid retention → emergency assessment, not WhatsApp ([[emergency-critical-care/acute-assessment]])); and the written-carbon-copy-to-GP-and-sick-day-card ([[clinical-skills/records-handover]], [[geriatrics-palliative/polypharmacy]]).**
+(a) SGLT2 inhibitor. (b) Sulfonylurea (or insulin). (c) GLP-1 receptor agonist or tirzepatide. (d) Metformin.
 :::
 :::
 
-::: exercise Fix the awareness {level=2}
-A 34-year-old with 15 years of type 1 has stopped feeling hypos until they are severe, twice nearly lost consciousness driving. Manage the syndrome, not just the numbers.
+::: exercise The bolus {level=2 check="45/15+(14-6)/2"}
+A man with type 1 diabetes has an insulin-to-carbohydrate ratio of 1 unit per 15 g and a correction factor of 1 unit per 2 mmol/L, with a target of 6 mmol/L. His glucose is 14 mmol/L and he will eat 45 g of carbohydrate. How many units does his plan suggest? (Illustrative calculation.)
 ::: solution
-**Hypoglycaemia-associated-autonomic-failure (the strict-control-hypoglycaemia-hypoglycaemia-cycle physiology of [[#def-insulin]]): immediate-driving-cessation-obligation-and-licensing-notification ([[medical-ethics-law/professionalism-regulation]]); relax-then-retrain — a few-weeks-strict-hypo-avoidance-programme-plus-technology (the real-time-alerts-and-low-glucose-suspend-and-hybrid-loop-options of [[endocrine/diabetes-complications]]) restores awareness in many ([[endocrine/diabetes-complications]]); regimen redesign (reduce-or-move-the-basal-analog-peak-and-the-ratio-recalibration-and-exercise-plan — [[#def-insulin]]); structured-education-with-partner-involvement-and-glucagon-prescription-and-training ([[clinical-skills/communication]]); and the psychological-layer (needle-and-hypo-anxiety-and-avoidance-and-disordered-eating-screen — [[psychiatry/anxiety-disorders]], [[psychiatry/eating-personality-disorders]]).**
+Meal: $45/15 = 3$ units. Correction: $(14 - 6)/2 = 4$ units. Total $3 + 4 = 7$ units.
 :::
 :::
 
-::: exercise Interpret the pattern {level=2}
-An inpatient on prednisolone 40 mg: overnight glucose 5.8, 13:00 17.9, 19:00 16.4, 22:00 9.2. Explain and prescribe safely for discharge.
+::: exercise The misleading HbA1c {level=2}
+A 70-year-old woman with type 2 diabetes has an HbA1c of 41 mmol/mol but home glucose readings mostly between 10 and 14 mmol/L. She recently had a gastrointestinal bleed and a blood transfusion. Explain the discrepancy.
 ::: solution
-**The steroid-afternoon-spike signature (the 4-8-hour pharmacodynamic delay of prednisolone's hepatic-gluconeogenic-and-insulin-antagonist effect — [[endocrine/adrenal]], [[cell-biochemistry/metabolic-integration]], [[pharmacology/dosing-principles]]); the morning-normal-evening-high profile asks for the NPH-at-steroid-morning-strategy, or-twice-daily-prednisolone-matched-regimen-and-not-for-basal-heavy-insulin ([[#def-insulin]], [[surgery/perioperative-care]]-adjacent-bridging); the discharge-safety (the reducing-dose-and-hypoglycaemia-risk-taper-plan, the sick-day-and-driving-advice-for-the-steroid-period, and the diabetes-team-or-GP ownership with HbA1c-at-6-weeks-if-persistent — [[endocrine/endocrine-emergencies]], [[geriatrics-palliative/polypharmacy]], [[clinical-skills/records-handover]]); and flagging steroid-diabetes-as-possibly-reversible-but-not-always ([[pharmacology/adverse-reactions]]).**
+HbA1c reflects glucose exposure over the life of the red cells. After blood loss and transfusion, a large proportion of her red cells are new (from the bone marrow response) or donated, and have had little time to become glycated. Her HbA1c therefore underestimates her true glucose. Her glucose readings (or CGM) are the better guide for the next two to three months.
 :::
 :::
 
-::: exercise Redesign the clinic {level=3}
-Redraw a district type-2 service for the organ-protection era: registration, protocolised therapy steps, technology access, equity and outcomes.
+::: exercise Sick-day advice {level=2}
+A 66-year-old man with type 2 diabetes takes metformin, dapagliflozin, ramipril and furosemide. He develops vomiting and diarrhoea. Which drugs should he temporarily pause, and why?
 ::: solution
-**Registry-and-recall (the-diagnosis-register-with-annual-complication-dates-and-nurse-led-models — [[endocrine/diabetes-complications]], [[public-health/screening]]); protocolised-early-intensification (the SGLT2-or-GLP1-for-indication-within-weeks-of-diagnosis-pathway-and-the-shared-care-prescribing-compact-with-primary-care — [[#def-tablets]], [[public-health/health-systems-economics]]); the-technology-ladder (the-CGM-access-criteria-and-the-hybrid-loop-referral-and-the-smart-pen-and-app-literacy-tier — [[endocrine/diabetes-complications]]; the digital-prescription-and-data-sovereignty-and-data-ownership-and-interoperability-policies — [[medical-ethics-law/confidentiality]]); education-and-self-management (structured-courses-with-interpretation-services-and-plain-language-materials-and-peer-mentors and the in-clinic dietitian-and-psychology-fabric — [[gastrointestinal/clinical-nutrition]], [[psychiatry/anxiety-disorders]]); equity engineering (the deprivation-index-targeted-outreach-and-working-hours-clinics-and-the-cost-and-insulin-forgoing-audit-and-the-ethnicity-specific-risk-and-screening-rules — [[public-health/determinants-inequalities]], [[public-health/screening]]); the pregnancy-first policy (pre-conception-contraception-and-stopping-teratogenic-agents-before-pregnancy-and-the-remission-before-conception-logic — [[obstetrics-gynaecology/contraception-fertility]], [[obstetrics-gynaecology/pregnancy-complications]]); and the outcome set (HbA1c-and-TIR-distributions-not-means, hypoglycaemia-admission-rate, SGLT2-and-GLP1-uptake-by-ethnicity-and-deprivation, retinal-photography-coverage, kidney-progression-rates, amputation-incidence, PROMs and the time-to-insulin-and-insulin-forgoing-safety-metric — [[clinical-skills/patient-safety]], [[public-health/global-health]]).**
+Using SADMANS: **metformin** (risk of lactic acidosis if he develops acute kidney injury), **dapagliflozin** (risk of ketoacidosis and volume depletion), **ramipril** and **furosemide** (risk of acute kidney injury when dehydrated). He should restart them once he is eating and drinking normally for 24–48 hours, and seek help if he cannot keep fluids down. If he were on a sulfonylurea or insulin, he would need closer glucose monitoring; insulin is not simply stopped.
+:::
+:::
+
+::: exercise Classify the case {level=3}
+A 34-year-old man of Black Caribbean heritage presents with thirst and weight loss, glucose 28 mmol/L and ketones 3.8 mmol/L with a normal pH. He is treated with insulin. Six months later he is off insulin with an HbA1c of 49 mmol/mol on metformin. Antibodies are negative and C-peptide is preserved. Discuss the classification.
+::: hint
+Some people with type 2 diabetes present with ketosis.
+:::
+::: solution
+This pattern is **ketosis-prone type 2 diabetes** (sometimes called "Flatbush diabetes"), described particularly in people of Black African and African-Caribbean heritage. They present with severe hyperglycaemia and ketosis, sometimes ketoacidosis, because glucose toxicity temporarily suppresses beta-cell function. With insulin treatment, beta-cell function recovers, and many can stop insulin. Negative antibodies and preserved C-peptide argue against type 1 diabetes and LADA.
+
+The classification matters: he does not need lifelong insulin, but he is at risk of recurrent ketosis, so he should know the warning signs and have a clear plan. The differential at presentation included type 1 diabetes, which is why insulin was correctly started; classification was revisited once results and the clinical course were known.
+:::
+:::
+
+::: exercise Interpret CGM data {level=3}
+A 41-year-old woman with type 1 diabetes has an HbA1c of 50 mmol/mol, which looks excellent. Her CGM report shows time in range 58%, time below 3.9 mmol/L 9%, and time above 10.0 mmol/L 33%. Interpret the data and suggest what to explore.
+::: solution
+Her HbA1c is an average, and a similar average can come from steady glucose or from wide swings. Her CGM shows wide swings: time in range is below the 70% target, time below range is more than twice the under-4% target, and time above range is high. The "good" HbA1c is partly produced by frequent hypoglycaemia pulling the average down.
+
+To explore: when the lows happen (overnight lows suggest too much basal insulin; post-meal lows suggest an insulin-to-carbohydrate ratio that is too strong or mistimed boluses); whether highs follow treatment of lows (over-treatment); exercise and alcohol patterns; injection sites (lipohypertrophy causes erratic absorption); and her awareness of hypoglycaemia. Options include structured education, adjusting basal and bolus parameters, and, if criteria are met, a hybrid closed-loop system.
 :::
 :::

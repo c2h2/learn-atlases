@@ -1,146 +1,300 @@
-The adrenal glands are two small factories whose failures and excesses each produce a syndrome, one of which (untreated adrenal crisis) kills in hours and another of which (exogenous steroid excess) is the most common cause of the disease it mimics. **Endocrine hypertension lives here too: aldosterone excess and catecholamine excess are the two "checkable" causes that every resistant-hypertension protocol should hunt.**
+Each adrenal gland weighs only a few grams but contains two organs. The outer **cortex** makes steroid hormones: cortisol, aldosterone and adrenal androgens. The inner **medulla** is a modified sympathetic ganglion that secretes adrenaline. Too little cortisol can kill within hours; too much, over years, damages bone, muscle, skin, blood vessels and the mind. Aldosterone excess is one of the commonest curable causes of high blood pressure, and is greatly under-diagnosed.
 
-This chapter covers adrenal physiology and testing, adrenal insufficiency, Cushing's syndrome, hyperaldosteronism, phaeochromocytoma and incidentalomas.
+This lesson covers adrenal physiology, adrenal insufficiency (including the suppression caused by glucocorticoid medicines), Cushing's syndrome, primary aldosteronism, phaeochromocytoma, congenital adrenal hyperplasia and the incidental adrenal mass. The emergency management of adrenal crisis and phaeochromocytoma crisis is in [[endocrine/endocrine-emergencies]].
 
-## Physiology and testing
+## Physiology {#sec-physiology}
 
-::: definition The three zones and their hormones {#def-physiology}
-**Architecture (zona glomerulosa makes aldosterone under renin-angiotensin and potassium drive — not ACTH-primary; zona fasciculata makes cortisol under pituitary ACTH with its strong diurnal rhythm — [[physiology/hormones]]; zona reticularis makes adrenal androgens; the medulla is a modified sympathetic ganglion secreting catecholamines — [[physiology/autonomic-nervous-system]], [[anatomy/abdomen]]); steroid biochemistry (cholesterol to pregnenolone at StAR and CYP11A1, then the branch enzymes CYP21A2, CYP11B1/2, CYP17A1 and aldosterone synthase — the congenital-adrenal-hyperplasia enzyme blocks and their salt-wasting-virilising-hypertensive phenotypes are [[genetics/mendelian-inheritance]]-and-[[paediatrics/congenital-genetic]]-and-[[endocrine/reproductive-endocrinology]] territory; [[cell-biochemistry/lipid-amino-acid-metabolism]]). Cortisol actions (gluconeogenesis and insulin antagonism and proteolysis and liporepartitioning — [[cell-biochemistry/metabolic-integration]], [[endocrine/diabetes]]; permissive catecholamine effect on vascular tone — [[cardiovascular/circulation-blood-pressure]]; immune reprogramming and the steroid-lymphocyte story — [[immunology/innate-immunity]], [[immunology/adaptive-responses]]; bone and muscle and skin and brain — [[endocrine/bone-calcium]], [[psychiatry/mood-disorders]]; 11β-HSD2 inactivation of cortisol in mineralocorticoid-target cells — the licence for aldosterone specificity, lost in licorice and apparent-mineralocorticoid-excess — [[renal/tubular-function]]). Aldosterone actions (the distal nephron sodium-potassium exchange and the potassium-sensing loop — [[renal/tubular-function]], [[renal/potassium-calcium-phosphate]]; the escape physiology and why oedema is absent). The tests (morning cortisol and the short Synacthen test for insufficiency with the assay-threshold and recent-steroid caveats — [[clinical-skills/laboratory-tests]]; the Cushing triad of screening — urinary free cortisol, overnight 1 mg dexamethasone, late-night salivary — and the two-abnormal-tests rule; the aldosterone-renin ratio with its drug and potassium and posture and renal-function confounders — the beta-blocker-false-positive and ACE-inhibitor-and-diuretic-false-negative arithmetic — [[clinical-skills/laboratory-tests]], [[cardiovascular/hypertension]]; plasma and urinary metanephrines for phaeochromocytoma with the tricyclic-and-sympathomimetic and stress-of-venepuncture caveats; and the dynamic-testing philosophy of [[endocrine/hypothalamus-pituitary]]).**
+::: definition The adrenal zones and their hormones {#def-physiology}
+The adrenal cortex has three layers, each with its own enzymes and controller:
+
+| Zone | Main product | Main controller |
+|---|---|---|
+| Zona glomerulosa (outer) | Aldosterone (mineralocorticoid) | Angiotensin II and plasma potassium |
+| Zona fasciculata (middle) | Cortisol (glucocorticoid) | ACTH |
+| Zona reticularis (inner) | Dehydroepiandrosterone (DHEA) and other androgens | ACTH |
+| Medulla | Adrenaline, some noradrenaline | Sympathetic preganglionic nerves |
+
+All adrenal steroids are made from cholesterol by a series of enzymes, mostly cytochrome P450 enzymes. Important ones include **21-hydroxylase** (needed for both cortisol and aldosterone) and **11β-hydroxylase** (the last step to cortisol).
 :::
 
-## Too little
+The separate control of aldosterone has a key clinical consequence. Because aldosterone is driven mainly by the renin–angiotensin system and potassium rather than by ACTH, a pituitary cause of adrenal insufficiency leaves aldosterone largely intact, while destruction of the adrenal gland removes it.
+
+**Cortisol** has a strong **circadian rhythm**: it peaks soon after waking and reaches its lowest point around midnight. It also rises sharply with physical stress such as infection, surgery or trauma. Its actions include:
+
+- raising blood glucose by stimulating gluconeogenesis and opposing insulin;
+- breaking down muscle protein and redistributing fat to the trunk;
+- maintaining blood pressure by making blood vessels responsive to catecholamines;
+- suppressing inflammation and immune responses;
+- helping the kidney excrete free water;
+- affecting mood, sleep and memory.
+
+Cortisol can also bind the mineralocorticoid receptor. The kidney protects that receptor with the enzyme **11β-hydroxysteroid dehydrogenase type 2**, which converts cortisol to inactive cortisone. When cortisol levels are very high, as in ectopic ACTH secretion, the enzyme is overwhelmed and cortisol acts like aldosterone, causing hypokalaemia and hypertension.
+
+**Aldosterone** acts on the distal nephron to reabsorb sodium and secrete potassium and hydrogen ions ([[renal/tubular-function]]).
+
+## Adrenal insufficiency {#sec-insufficiency}
 
 ::: definition Adrenal insufficiency {#def-insufficiency}
-**Primary (Addison's disease — the autoimmune adrenalitis that dominates developed-world series with its polyglandular clustering with thyroid, gonadal, gastric, skin and pituitary disease — [[immunology/autoimmunity]], [[endocrine/thyroid]], [[endocrine/reproductive-endocrinology]], [[gastrointestinal/oesophagus-stomach]]'s pernicious-anaemia-row, [[musculoskeletal/skin]]'s vitiligo; infections — tuberculosis and fungal and HIV — [[infectious-diseases/tuberculosis]], [[infectious-diseases/hiv]], [[microbiology/fungi-parasites]]; haemorrhage especially with anticoagulants and sepsis — [[blood/haemostasis-bleeding]], [[infectious-diseases/fever-sepsis]]; infiltrative — metastases and amyloid and IgG4 and haemochromatosis — [[gastrointestinal/liver-disease]], [[pathology/chronic-inflammation-repair]]; drugs — the steroid-suppression-rebound and the etomidate-and-ketoconazole-and-checkpoint-inhibitor endocrinopathies — [[pharmacology/adverse-reactions]], [[immunology/vaccines-immunotherapy]]). Secondary (the commonest cause of all — exogenous steroid withdrawal suppressing the HPA axis, with the inhaled-and-topical-and-joint-injection and adrenal-suppression-surprise list — [[respiratory/asthma-copd]], [[musculoskeletal/inflammatory-arthritis]], [[geriatrics-palliative/polypharmacy]]; and pituitary disease — [[endocrine/hypothalamus-pituitary]]). The difference that treats (primary loses mineralocorticoid — hyperkalaemia, hyponatraemia, postural drop, pigmentation from ACTH co-secretion — [[renal/potassium-calcium-phosphate]], [[renal/water-sodium]]; secondary keeps aldosterone so electrolytes are often bland, and never needs fludrocortisone — the diagnostic ACTH split). Presentation (the insidious fatigue-weight-loss-craving-salt-hunger-nausea-hypotension syndrome mislabelled as depression or IBS for months — [[psychiatry/mood-disorders]], [[gastrointestinal/bowel-disease]]; the crisis — vomiting-shock-hypoglycaemia-hyponatraemia-hyperkalaemia with a mortality that is entirely a function of recognition time — [[endocrine/endocrine-emergencies]], [[emergency-critical-care/shock-fluids]], [[renal/acute-kidney-injury]]). Diagnosis (cortisol low-with-ACTH-high equals primary; short Synacthen non-response with its recent-steroid and secondary-zone-partial-suppression caveats; adrenal autoantibodies and imaging for aetiology — [[clinical-skills/laboratory-tests]], [[clinical-skills/medical-imaging]]). Treatment (hydrocortisone replacement divided to mimic the rhythm — the adherence-and-intercurrent-illness dose-doubling rules, the emergency injection and the MedAlert and steroid-card and sick-day protocol as the four safety artefacts — with fludrocortisone for primary; the perioperative stress-dose ladder in [[surgery/perioperative-care]]; over-replacement bone-and-weight-and-mood vigilance — [[endocrine/bone-calcium]], [[gastrointestinal/clinical-nutrition]]; and education as the primary intervention — the teach-back on injection, the illness video, and the driving rules for syncope episodes — [[clinical-skills/communication]], [[medical-ethics-law/professionalism-regulation]]).**
+**Adrenal insufficiency** is inadequate production of cortisol, with or without aldosterone deficiency.
+
+- **Primary adrenal insufficiency (Addison's disease)** is failure of the adrenal cortex. In the UK about four in five cases are autoimmune; other causes include tuberculosis (the commonest cause worldwide), adrenal haemorrhage, metastases, HIV-associated infections, and inherited conditions. Both cortisol and aldosterone are lost, and ACTH is high.
+- **Secondary adrenal insufficiency** is ACTH deficiency from pituitary disease. **Tertiary** adrenal insufficiency is CRH deficiency from the hypothalamus. The commonest cause of all is suppression of the axis by **glucocorticoid medication**. Aldosterone is preserved, and ACTH is low or normal.
 :::
 
-## Too much
+The symptoms of cortisol deficiency are vague and develop slowly: fatigue, weakness, loss of appetite, weight loss, nausea, abdominal pain, dizziness on standing, salt craving and low mood. Primary disease adds two specific features. **Hyperpigmentation**, of skin creases, scars, gums and the inside of the cheeks, occurs because ACTH and melanocyte-stimulating hormone come from the same precursor (pro-opiomelanocortin), and ACTH is very high. Pigmentation can be harder to see on darker skin, where the buccal mucosa and palmar creases are useful places to look. **Hyperkalaemia** with hyponatraemia reflects the loss of aldosterone.
+
+Many people with Addison's disease see several doctors before diagnosis, and some present for the first time in **adrenal crisis**: hypotension, vomiting, confusion and collapse, often triggered by an infection. Adrenal crisis is an emergency in which treatment should not wait for confirmation ([[endocrine/endocrine-emergencies]]).
+
+### Testing
+
+- A **9 a.m. cortisol** is a useful first test. A very low value (for example below about 100 nmol/L) strongly suggests adrenal insufficiency; a value above about 400–450 nmol/L makes it unlikely. Cut-offs depend on the assay, and the result is unreliable in people taking oral oestrogen, which raises cortisol-binding globulin.
+- The **short Synacthen test** confirms the diagnosis. Synthetic ACTH (tetracosactide) is given and cortisol measured at 30 minutes and often 60 minutes. A healthy adrenal responds with a rise above an assay-specific threshold, commonly around 420–450 nmol/L with modern assays. Failure to rise confirms adrenal insufficiency.
+- **ACTH** separates primary (high ACTH) from secondary (low or normal ACTH). **Renin** is high in primary disease because aldosterone is lacking. **Adrenal autoantibodies** (to 21-hydroxylase) support autoimmune Addison's disease.
+
+In recent-onset secondary adrenal insufficiency, for example in the first weeks after pituitary surgery, the adrenals have not yet atrophied and can still respond to Synacthen, so a normal short Synacthen test does not exclude it.
+
+### Replacement and sick-day rules
+
+Treatment replaces what is missing. **Hydrocortisone** is given in divided doses, larger in the morning, to imitate the natural rhythm; a typical adult total is around 15–25 mg per day (illustrative; follow local guidance). In primary disease, **fludrocortisone** replaces aldosterone, adjusted by blood pressure, potassium and renin.
+
+The body normally raises cortisol output several-fold during illness. A person on replacement cannot do this, so education is central:
+
+- **Sick-day rules**: double the usual glucocorticoid dose during illness with fever or when antibiotics are needed, and seek help early.
+- If vomiting or unable to take tablets, give an **emergency intramuscular hydrocortisone injection** (people and families are trained to do this) and seek urgent medical care.
+- Carry the **NHS Steroid Emergency Card** (introduced in 2020) and consider a medical alert bracelet.
+- Extra glucocorticoid cover is given for surgery, labour and invasive procedures.
+
+::: theorem Exogenous glucocorticoids suppress the axis {#thm-suppression}
+Glucocorticoid medicines exert negative feedback on the hypothalamus and pituitary just like cortisol. Taken at doses above physiological replacement for weeks, they suppress CRH and ACTH, and the adrenal cortex atrophies from lack of stimulation. If the medicine is stopped suddenly, or if the person becomes acutely ill, the adrenals cannot respond, and adrenal crisis may follow. Recovery of the axis after stopping can take months.
+:::
+
+The 2024 joint European Society of Endocrinology and Endocrine Society guideline on glucocorticoid-induced adrenal insufficiency advises that people taking the equivalent of prednisolone 5 mg per day or more for four weeks or longer should be considered at risk. The risk also applies to high-dose inhaled, intra-articular and topical steroids, and to combinations, especially with drugs that inhibit CYP3A4 (such as ritonavir) and raise steroid levels. Such people need a steroid emergency card, sick-day advice, and a gradual taper when the drug is withdrawn.
+
+For comparing doses, approximate glucocorticoid equivalents are: hydrocortisone 20 mg ≈ prednisolone 5 mg ≈ dexamethasone 0.75 mg.
+
+## Cushing's syndrome {#sec-cushing}
 
 ::: definition Cushing's syndrome {#def-cushing}
-**Causes ranked by reality (exogenous, exogenous, exogenous — the prescription-and-injection-and-cream-and-inhaler-and-herbal-adulteration audit before any blood test — [[pharmacology/adverse-reactions]], [[musculoskeletal/skin]]; then ACTH-secreting pituitary adenoma (Cushing's disease — [[endocrine/hypothalamus-pituitary]); adrenal tumours (mostly unilateral, imaging-and-biochemistry concordant — [[clinical-skills/medical-imaging]]); and ectopic ACTH (small-cell lung carcinoma and neuroendocrine tumours with their rapid-catabolic presentation — [[respiratory/lung-cancer-pleura]], [[gastrointestinal/pancreas-biliary]]). Recognition (the discriminating features — easy bruising, proximal myopathy, violaceous striae, dorsocervical and facial fat redistribution, and the poor-specificity cluster of obesity-and-hypertension-and-diabetes-and-oligomenorrhoea-and-depression-and-back-pain — [[endocrine/diabetes]], [[cardiovascular/hypertension]], [[endocrine/bone-calcium]], [[psychiatry/mood-disorders]], [[endocrine/reproductive-endocrinology]]; and the morbidity ledger — infection and thrombosis and fractures and cardiac — [[immunology/innate-immunity]], [[blood/thrombosis-anticoagulation]]). Confirm (two abnormal screening tests of different modalities, then morning ACTH to split dependent from independent, then high-dose suppression and CRH and the inferior petrous sinus sampling gradient for the MRI-negative dependent case — [[endocrine/hypothalamus-pituitary]]-craft, [[clinical-skills/laboratory-tests]], [[clinical-skills/medical-imaging]]; the pseudo-Cushing confounders — depression, alcohol, obesity, PCOS, shift work and poor adherence — and the late-night-salivary-and-urinary-discordance tie-breakers — [[psychiatry/mood-disorders]], [[psychiatry/substance-use]], [[endocrine/reproductive-endocrinology]]). Treat (transsphenoidal surgery first for disease with its remission-and-adrenal-insufficiency-recovery journey — [[endocrine/hypothalamus-pituitary]], [[endocrine/endocrine-emergencies]]; unilateral adrenalectomy for adrenal sources ([[surgery/gastrointestinal-surgery]]-endocrine-surgery practice; the steroid-cover-and-recovery-months protocol); medical bridge or destination — steroidogenesis inhibitors and the pituitary-directed and receptor-blocking options with their monitoring — [[pharmacology/dosing-principles]]; and the definitive-versus-bilateral-adrenalectomy debate in occult sources). The post-cure era (the prolonged glucocorticoid-cover while the axis awakens — months of fatigue-and-arthralgia-and-mood-swing counselling and the crisis-precautions continuation — [[endocrine/endocrine-emergencies]], [[clinical-skills/communication]]; and the slow-melting bone, weight and psychological burden with its quality-of-life metrics and cardiovascular-risk residual — [[endocrine/bone-calcium]], [[gastrointestinal/clinical-nutrition]], [[public-health/prevention-promotion]]).**
+**Cushing's syndrome** is the clinical picture caused by prolonged exposure to excess glucocorticoid. The commonest cause is **exogenous** glucocorticoid medication. **Endogenous** Cushing's syndrome is divided into:
+
+- **ACTH-dependent** (about 80%): **Cushing's disease**, an ACTH-secreting pituitary adenoma (the majority), or **ectopic ACTH** secretion by a tumour elsewhere, such as small-cell lung cancer or a neuroendocrine tumour.
+- **ACTH-independent**: an adrenal adenoma or carcinoma secreting cortisol, which suppresses ACTH.
 :::
 
-::: definition Aldosterone excess and catecholamine excess {#def-aldosteronism}
-**Primary aldosteronism (the autonomous-aldosterone hypertension — the adenoma-versus-bilateral-hyperplasia split that drives the treatment fork; the epidemiology now "common" not "rare" — up to a fifth of hypertension-clinic attendees with the resistant-hypertension enrichment — [[cardiovascular/hypertension]]; case-finding triggers — resistant or early-onset hypertension, hypokalaemia spontaneous-or-diuretic-induced, adrenal incidentaloma, family history of early stroke — [[renal/potassium-calcium-phosphate]], [[nervous-system/stroke]]; the aldosterone-renin ratio with its drug-withdrawal-and-potassium-correction-and-renal-function-and-circadian caveats — the false-positive and false-negative pharmacology — [[pharmacology/adverse-reactions]], [[clinical-skills/laboratory-tests]]; confirmatory suppression testing by protocol or straight-to-surgery-pathway logic; adrenal CT and the adrenal-vein-sampling truth-telling (the imaging-discordance rate that makes sampling the arbiter in surgical candidates — [[clinical-skills/medical-imaging]]); treatment — unilateral laparoscopic adrenalectomy versus mineralocorticoid-receptor blockade with spironolactone-and-eplerenone (gynaecomastia-and-hyperkalaemia-and-pregnancy rules — [[endocrine/reproductive-endocrinology]], [[renal/potassium-calcium-phosphate]]) with the target of controlled blood pressure and normal potassium rather than the aldosterone number; the target-organ reward — the excess fibrosis-and-atrial-fibrillation-and-CKD-and-metabolic risk of aldosterone beyond blood pressure — [[cardiovascular/arrhythmias]], [[renal/chronic-kidney-disease]], [[endocrine/diabetes]]; and the low-renin-hypertension differential — the mineralocorticoid-mimics: licorice and carbenoxolone and the apparent-mineralocorticoid-excess syndrome and Liddle syndrome (the epithelial-sodium-channel gain-of-function treated by amiloride not spironolactone — [[renal/tubular-function]], [[genetics/mendelian-inheritance]]) and the renin-secreting and renovascular secondary-hyperaldosterone states — [[cardiovascular/vascular-disease]], [[renal/filtration]]). **Phaeochromocytoma and paraganglioma (the catecholamine-secreting tumours of chromaffin tissue — the extra-adrenal sympathetic paragangliomas with their noradrenergic-only chemistry and head-and-neck parasympathetic paragangliomas' different behaviour — [[anatomy/head-neck]]; the genetics now in most — the VHL-MEN2-NF1-SDH-x cascade and the "test-most-young-and-family-history" consensus — [[genetics/cancer-genetics]], [[genetics/genetic-testing]], [[endocrine/reproductive-endocrinology]], the retinal haemangioblastoma check — [[nervous-system/sensory-systems]]; the presentation (the classically-paroxysmal headache-palpitations-sweating triad and the hypertensive-crisis-with-catecholamine-cardiomyopathy-and-pulmonary-oedema-and-stroke-and-hyperglycaemia-lurking-list — [[cardiovascular/heart-failure]], [[respiratory/gas-exchange]]-adjacent-oedema, [[nervous-system/stroke]], [[endocrine/diabetes]] — plus the sustained-hypertension-and-incidentaloma and the shock-pseudo-sepsis extremes); the diagnosis (plasma free metanephrines with pre-analytic rigour and the drug-interference table, then CT/MRI and functional imaging — [[clinical-skills/laboratory-tests]], [[clinical-skills/medical-imaging]]; the rules — no biopsy-before-blockade and no-unprepared-anaesthesia — [[surgery/anaesthesia-pain]]); the preparation and surgery (alpha-blockade-first-then-beta-never-beta-first with the postural-drop-and-salt-and-fluid-loading logic and the intraoperative-crisis pharmacology — phentolamine-and-sodium-nitroprusside-and-magnesium-and-noradrenaline-replacement-after-clamp — [[surgery/gastrointestinal-surgery]], [[emergency-critical-care/critical-care]], [[pharmacology/autonomic-drugs]]; the after (recurrence- and metastasis-surveillance by genotype — SDH's malignancy risk — [[public-health/screening]]; the family cascade testing — [[genetics/genetic-testing]]; and the rare bladder-paraganglioma micturition-syncope and carotid-body tumour variants — [[renal/urinary-tract]], [[anatomy/head-neck]]).**
+Many features of Cushing's syndrome are common in the general population: weight gain, hypertension, diabetes, low mood. The features that best discriminate are those caused by protein breakdown: **easy bruising**, **wide purple striae** (more than 1 cm), **proximal muscle weakness** and **thin skin**, together with facial plethora. Others include central obesity with a rounded face and dorsocervical fat pad, osteoporosis and fractures, infections, menstrual disturbance, acne and hirsutism, and in children, weight gain with slowing growth.
+
+Investigation proceeds in a fixed order, and the first rule is to exclude exogenous steroid, including inhaled, topical and injected forms.
+
+1. **Confirm cortisol excess** with one or two of:
+   - **1 mg overnight dexamethasone suppression test**: dexamethasone at 11 p.m., cortisol at 9 a.m. In health cortisol suppresses (below 50 nmol/L); in Cushing's syndrome it does not.
+   - **Late-night salivary cortisol**: loss of the normal midnight low.
+   - **24-hour urinary free cortisol**: total daily output.
+2. **Determine ACTH dependence** by measuring plasma ACTH. Suppressed ACTH points to an adrenal source; normal or high ACTH points to a pituitary or ectopic source.
+3. **Localise**: adrenal CT for ACTH-independent disease; pituitary MRI, and often **inferior petrosal sinus sampling** to compare central and peripheral ACTH, for ACTH-dependent disease.
+
+Conditions such as depression, alcohol excess, severe obesity and poorly controlled diabetes can mildly activate the axis and produce false-positive tests ("pseudo-Cushing's"). Testing is therefore reserved for people with suggestive features, multiple progressive features, or unusual findings for their age, such as osteoporosis or hypertension in a young adult.
+
+Treatment is removal of the source: trans-sphenoidal pituitary surgery, adrenalectomy, or resection of the ectopic tumour. Drugs that block steroid synthesis, such as metyrapone and osilodrostat, control cortisol while waiting for surgery or when surgery fails. After successful surgery the remaining normal axis is suppressed, so glucocorticoid replacement is needed for months.
+
+## Primary aldosteronism {#sec-aldosteronism}
+
+::: definition Primary aldosteronism {#def-aldosteronism}
+**Primary aldosteronism** is aldosterone production that is inappropriately high and independent of renin. The two main causes are **bilateral adrenal hyperplasia** and a unilateral **aldosterone-producing adenoma (Conn's syndrome)**. The excess aldosterone retains sodium and causes hypertension, suppresses renin, and may cause hypokalaemia.
 :::
 
-::: widget plot
-f: 60+430*exp(-((x-8)^2)/14); 55
-x: 0, 24
-y: 0, 520
-labels: \text{hour of day},\ \text{plasma cortisol (nmol/L)};\ \text{normal diurnal rhythm};\ \text{midnight floor}
-caption: The cortisol clock that endocrine testing depends on ([[#def-physiology]]): the 08:00 peak, the near-midnight trough, and the two clinical corollaries — morning cortisol and ACTH are the comparators against historical reference ranges, while loss of the midnight rhythm is the earliest Cushing fingerprint, which is why late-night salivary sampling exists ([[#def-cushing]], [[clinical-skills/laboratory-tests]]). Sample-timing discipline is the same argument as the metanephrine and aldosterone pre-analytic rules ([[#def-aldosteronism]]); the iatrogenic rhythm-flattening by night-shift dosing of steroids and its Cushing-promotion trade-off sits with [[pharmacology/dosing-principles]] and [[musculoskeletal/inflammatory-arthritis]].
+Primary aldosteronism is found in roughly 5–10% of people with hypertension, and more in resistant hypertension. Most patients have a normal potassium, so hypokalaemia should not be required before testing. It matters because aldosterone damages the heart, kidneys and vessels beyond the effect of blood pressure alone, raising the risk of atrial fibrillation, stroke and heart failure, and because it has specific treatments.
+
+Screening uses the **aldosterone-to-renin ratio (ARR)**. A high ARR, with aldosterone that is not low, suggests primary aldosteronism. Several drugs alter renin and aldosterone and therefore the ratio: mineralocorticoid receptor antagonists and diuretics raise renin (false negatives), and beta-blockers lower renin (false positives). Hypokalaemia lowers aldosterone and should be corrected before testing. A positive screen is usually confirmed by a suppression test such as the **saline infusion test**, in which aldosterone fails to fall in primary aldosteronism.
+
+People who would consider surgery then have adrenal CT and **adrenal vein sampling**, which compares aldosterone from each adrenal vein to find out whether the excess comes from one side. CT alone is unreliable because small non-functioning adenomas are common. Unilateral disease is treated by **laparoscopic adrenalectomy**, which often cures hypokalaemia and improves or cures hypertension. Bilateral disease is treated with a **mineralocorticoid receptor antagonist** such as spironolactone (gynaecomastia is a common adverse effect) or eplerenone.
+
+Who should be screened is changing. UK practice has traditionally targeted people with resistant hypertension, hypokalaemia, hypertension at a young age, an adrenal incidentaloma, or atrial fibrillation without another cause. In 2025 the Endocrine Society guideline suggested screening everyone with hypertension, a conditional recommendation that reflects how often the diagnosis is missed ([[cardiovascular/hypertension]]).
+
+## Phaeochromocytoma {#sec-phaeo}
+
+A **phaeochromocytoma** is a catecholamine-secreting tumour of the adrenal medulla; a similar tumour arising from sympathetic or parasympathetic ganglia outside the adrenal is a **paraganglioma**. The classic presentation is paroxysmal: episodes of headache, sweating and palpitations, with hypertension that may be sustained or episodic. Many tumours are now found incidentally on imaging.
+
+The screening test is **plasma free metanephrines** (or urinary fractionated metanephrines). Metanephrines are produced continuously within the tumour from catecholamines, so they are a more reliable marker than catecholamines, which are released intermittently. Imaging (CT or MRI, sometimes functional imaging) follows a positive biochemical test, not the reverse.
+
+Up to about 40% of phaeochromocytomas and paragangliomas are associated with a germline mutation, for example in **RET** (MEN2), **VHL** (von Hippel–Lindau disease), **NF1** (neurofibromatosis type 1) or the **SDH** genes. Genetic testing is offered to everyone with these tumours.
+
+Treatment is surgical removal after **alpha-blockade** (with phenoxybenzamine or doxazosin) for one to two weeks, with generous fluid and salt intake to re-expand the contracted blood volume. A beta-blocker may be added afterwards to control tachycardia.
+
+::: warning Never beta-block first in phaeochromocytoma
+Giving a beta-blocker alone to a person with a phaeochromocytoma blocks β2-mediated vasodilation in skeletal muscle and leaves α-mediated vasoconstriction unopposed. Blood pressure can rise sharply and dangerously. Alpha-blockade comes first, always. The same reasoning is why phaeochromocytoma must be excluded before surgery in anyone with suspected MEN2.
 :::
 
-::: example The hyponatraemic collapse {#ex-crisis}
-A 61-year-old woman on prednisolone 30 mg for polymyalgia has stopped it 10 days ago ("ran out, felt fine"); now vomiting, confused, Na 124, K 5.6, glucose 2.9, BP 88/50, CRP normal.
+## Congenital adrenal hyperplasia and the incidental adrenal mass {#sec-cah}
+
+**Congenital adrenal hyperplasia (CAH)** is a group of autosomal recessive defects in cortisol synthesis. About 95% are due to **21-hydroxylase deficiency**. Low cortisol removes feedback, ACTH rises, and the adrenal is driven to make large amounts of the precursors before the block, which are diverted into androgens. In the severe salt-wasting form, aldosterone is also deficient, and affected newborns can present with a life-threatening salt-losing crisis in the first weeks of life. Girls with the classical form may be born with virilised genitalia. The diagnostic marker is a raised **17-hydroxyprogesterone**. Milder, non-classical forms present later with hirsutism and irregular periods, and enter the differential diagnosis of polycystic ovary syndrome ([[endocrine/reproductive-endocrinology]]).
+
+An **adrenal incidentaloma** is an adrenal mass found on imaging done for another reason. They are found on a few per cent of abdominal CT scans, more often with age. The 2023 European Society of Endocrinology guideline, produced with the European Network for the Study of Adrenal Tumours, asks two questions:
+
+1. **Is it malignant?** A homogeneous mass with an attenuation of 10 Hounsfield units or less on unenhanced CT is lipid-rich and almost certainly a benign adenoma, and needs no further imaging. Larger or indeterminate masses need further imaging or specialist review.
+2. **Is it secreting hormone?** Every person should have a 1 mg overnight dexamethasone suppression test. A post-dexamethasone cortisol above 50 nmol/L indicates **mild autonomous cortisol secretion**, which is associated with hypertension, diabetes and cardiovascular risk. People with hypertension or hypokalaemia are tested for primary aldosteronism, and metanephrines are measured unless the mass is clearly a lipid-rich adenoma.
+
+::: example The collapse three weeks after stopping steroids {#ex-crisis}
+A 67-year-old woman with polymyalgia rheumatica took prednisolone 15 mg daily for five months, then stopped it abruptly because of weight gain. Three weeks later she has diarrhoea and vomiting, is confused, and has a blood pressure of 78/40 mmHg. Sodium is 126 mmol/L, potassium 4.4 mmol/L, glucose 3.4 mmol/L. Explain the picture and the immediate management.
 ::: solution
-**Adrenal crisis on a background of secondary-plus-primary-flavoured insufficiency — and the potassium is the clue that this axis is not simply "steroid withdrawal" (in pure secondary disease aldosterone survives; check the ACTH and renin once stable — [[#def-insufficiency]]); the first hour ([[endocrine/endocrine-emergencies]], [[emergency-critical-care/shock-fluids]]): immediate IV hydrocortisone (do not wait for the serum cortisol — draw and run), rapid crystalloid for the volume-depleted circulation ([[renal/water-sodium]]), glucose for the hypoglycaemia ([[endocrine/diabetes]]), and the correction-rate guardrails for the sodium ([[renal/water-sodium]]-osmotic-demyelination, [[nervous-system/motor-systems]]); the precipitant search in parallel (infection with normal CRP caveat — [[immunology/innate-immunity]]; the drug-and-compliance story — [[pharmacology/adverse-reactions]]); the after (the slow-steroid-taper-with-physiological-cover plan, the recovery-of-axis-patience-and-bridging-hydrocortisone rules, the short Synacthen confirmation before labelling life-long — [[clinical-skills/laboratory-tests]]; and the four safety artefacts — steroid card, emergency injection with trained household, sick-day rules and the clinic-letter to the prescriber who started the prednisolone — [[clinical-skills/communication]], [[geriatrics-palliative/polypharmacy]], [[musculoskeletal/inflammatory-arthritis]]-taper-protocol).**
+**Mechanism.** Five months of prednisolone at three times the physiological equivalent (15 mg prednisolone ≈ 60 mg hydrocortisone) suppressed her axis ([[#thm-suppression]]). Her adrenals have atrophied. When the drug stopped and gastroenteritis struck, she could not mount a cortisol response.
+
+**The features fit secondary adrenal insufficiency.** Hypotension reflects lost vascular responsiveness to catecholamines and volume loss. Hyponatraemia reflects impaired free-water excretion. Hypoglycaemia reflects loss of cortisol's support of gluconeogenesis. Potassium is normal because aldosterone is preserved.
+
+**Management** is that of adrenal crisis, without waiting for results: take blood for cortisol if it does not delay treatment, give **hydrocortisone 100 mg intravenously or intramuscularly immediately**, then continuing hydrocortisone (commonly 200 mg over 24 hours), rapid intravenous 0.9% sodium chloride, glucose for the hypoglycaemia, and treatment of the precipitant. Doses here are typical adult regimens; follow local guidance. Once recovered, she needs glucocorticoid replacement with a slow taper, sick-day rules, a steroid emergency card, and later testing of axis recovery. Her original condition also needs review.
 :::
 :::
 
-::: example The resistant third drug {#ex-conn}
-A 48-year-old on amlodipine, ramipril and indapamide: BP 158/94, K 3.0, TSH normal, eGFR 72, snoring and daytime sleepiness, father died of stroke at 51.
+::: example Resistant hypertension with a low potassium {#ex-conn}
+A 44-year-old man of Black African heritage has blood pressure 168/102 mmHg despite amlodipine, ramipril and indapamide. Potassium is 3.2 mmol/L. His aldosterone is 640 pmol/L and direct renin concentration 2.0 mU/L. The laboratory's illustrative screening threshold for the ARR is 70 pmol/mU. Calculate the ratio and plan the next steps.
 ::: solution
-**Textbook primary-aldosteronism case-finding trigger-storm ([[#def-aldosteronism]]): resistant hypertension plus hypokalaemia plus early-stroke family history plus suspected obstructive sleep apnoea as amplifier ([[cardiovascular/hypertension]], [[renal/potassium-calcium-phosphate]], ([[respiratory/asthma-copd]], [[respiratory/control-breathing-tests]])). The protocol with the trap-list: **correct potassium first (aldosterone is potassium-driven — a false-negative with low K), then the aldosterone-renin ratio while holding the confounders (the spironolactone-and-amiloride-withdrawal window and the beta-blocker-and-NSAID false-positives and the ACE-inhibitor-and-dihydropyridine false-negatives — [[pharmacology/adverse-reactions]]); the MR-safety-window for spironolactone re-introduction if BP control demands it ([[renal/potassium-calcium-phosphate]]); confirm and subtype (adrenal CT then adrenal vein sampling for surgical candidates, and the honest discussion that most are bilateral hyperplasia best served by MR-blockade — [[clinical-skills/medical-imaging]], [[clinical-skills/communication]]); the OSA and salt-and-weight programme ([[public-health/prevention-promotion]]); and the target-organ follow-up (the AF-and-CKD-and-fracture surveillance beyond the clinic BP number — [[cardiovascular/arrhythmias]], [[renal/chronic-kidney-disease]], [[endocrine/bone-calcium]]) plus the family screening logic if a monogenic low-renin syndrome surfaces — [[genetics/genetic-testing]], [[renal/tubular-function]] (Liddle on amiloride, the "spironolactone-did-nothing" tell).**
+$$
+\text{ARR} = \frac{640}{2.0} = 320 \text{ pmol/mU},
+$$
+
+well above the illustrative threshold of 70. Renin is suppressed while aldosterone is high: the pattern of primary aldosteronism.
+
+**Interpreting with care.** Ramipril and indapamide would be expected to raise renin, which would lower the ratio, so a high ratio despite them is more convincing. Hypokalaemia lowers aldosterone, so it should be corrected and the test repeated if the result were borderline.
+
+**Next steps**: specialist referral; a confirmatory test (for example saline infusion); adrenal CT; and, if he would accept surgery, adrenal vein sampling to look for a unilateral source. If unilateral, laparoscopic adrenalectomy; if bilateral, a mineralocorticoid receptor antagonist. Hypertension in a young adult that is resistant to three drugs is itself a reason to look for secondary causes.
 :::
 :::
 
-::: example The 3.4 cm incidentaloma {#ex-incidentaloma}
-A 55-year-old's renal-colicky-pain CT shows a well-circumscribed 3.4 cm adrenal mass with low attenuation; since diagnosis he has had "sweaty anxious nights"; plasma metanephrines come back 3x raised.
+::: example Screening in a low-prevalence group {#ex-screening}
+A clinic proposes doing the 1 mg overnight dexamethasone suppression test in all people with type 2 diabetes and obesity to find Cushing's syndrome. Suppose the prevalence in this group is 1%, the test sensitivity 95% and the specificity 85% (illustrative values; obesity and poorly controlled diabetes raise the false-positive rate). What is the positive predictive value?
 ::: solution
-**Two rules just collided ([[#def-aldosteronism]]-phaeo-rows, [[clinical-skills/clinical-reasoning]]): every adrenal incidentaloma gets a hormonal work-up (the Cushing-screen and the aldosterone-renin-if-hypertensive and the metanephrines — the mild-autonomous-cortisol-secretion-syndrome and phaeo fractions that imaging cannot see — [[clinical-skills/laboratory-tests]]), and every positive-metanephrine mass is a phaeochromocytoma until blocked-and-resected. The sequence: **the CT-characteristics caveat (low attenuation suggests adenoma but proves nothing biochemically — [[clinical-skills/medical-imaging]]); the repeat-metanephrines-with-pre-analytic-rigour-and-the-drug-audit ([[pharmacology/adverse-reactions]]); MRI-characterisation and functional imaging for the extra-adrenal hunt ([[clinical-skills/medical-imaging]]); the alpha-before-beta blockade and salt-loading preparation and the no-palpation-and-no-biopsy warning — the biopsy-of-an-unblocked-phaeo story is a classic harm ([[surgery/anaesthesia-pain]], [[endocrine/endocrine-emergencies]]); surgical resection with arterial-and-anaesthetic expertise and the post-clamp-hypotension-and-hypoglycaemia watch ([[surgery/gastrointestinal-surgery]], [[emergency-critical-care/critical-care]]); the genetics offer (the age-and-family-and-multifocality rules — [[genetics/genetic-testing]], [[genetics/cancer-genetics]], [[endocrine/reproductive-endocrinology]]); and the long surveillance and the "anxiety-was-the-tumour" debrief that restores credibility to future symptom-reporting ([[public-health/screening]], [[clinical-skills/communication]], [[psychiatry/anxiety-disorders]]).**
+Consider 10,000 people. With 1% prevalence, 100 have Cushing's syndrome and 9,900 do not.
+
+- True positives: $0.95 \times 100 = 95$.
+- False positives: $(1 - 0.85) \times 9{,}900 = 0.15 \times 9{,}900 = 1{,}485$.
+
+$$
+\text{PPV} = \frac{95}{95 + 1{,}485} = \frac{95}{1{,}580} \approx 0.060.
+$$
+
+Only about **6%** of positive tests would be true. More than 15 people would need further investigation for every true case found. This is why guidelines advise testing only people with discriminating features, where the prior probability is higher. You can explore how prevalence changes the predictive value in the figure below.
 :::
 :::
 
-::: example The hypokalaemic rapid decline {#ex-ectopic}
-A 63-year-old heavy smoker, known COPD, arrives with 3 weeks of proximal weakness, new confusion, glucose 19, K 2.4 on three supplements, metabolic alkalosis, and facial plethora developing "over weeks"; ACTH 340, cortisol unsuppressed on all screens; CT shows a right hilar mass.
+::: widget bayes
+mode: test
+prevalence: 0.01
+sensitivity: 0.95
+specificity: 0.85
+:::
+
+::: example An incidental adrenal mass {#ex-incidentaloma}
+A 58-year-old woman has a CT scan for kidney stones that shows a 2.8 cm homogeneous left adrenal mass of 6 Hounsfield units. She has hypertension and type 2 diabetes. What investigations are needed?
 ::: solution
-**Ectopic ACTH from an intrathoracic tumour — the rapid-catabolic Cushing variant where the classic fat-redistribution never gets time to form ([[#def-cushing]]: the mineralocorticoid-overflow syndrome of massive cortisol saturating 11β-HSD2 explains the hypokalaemic alkalosis and hypertension — [[renal/tubular-function]], [[renal/potassium-calcium-phosphate]], [[physiology/hormones]]-receptor-specificity logic); the acute management (aggressive potassium-and-magnesium repletion with the arrhythmia watch — [[renal/potassium-calcium-phosphate]], [[cardiovascular/arrhythmias]]; glucose control — [[endocrine/diabetes]]; the steroidogenesis-blocking emergency options (metyrapone-or-ketoconazole-with-LFT-vigilance, or IV agents in ICU) to break the cortisol toxicity before tumour therapy — [[pharmacology/dosing-principles]], [[emergency-critical-care/critical-care]]; the infection-and-VTE-prophylaxis-thinking (the steroid-immunoparesis and hypercoagulability ledger — [[immunology/innate-immunity]], [[blood/thrombosis-anticoagulation]]); the tissue diagnosis and staging of the thoracic source ([[respiratory/lung-cancer-pleura]], [[pathology/cancer-diagnosis]]); and the definitive plan (tumour treatment plus the post-cure adrenal-insufficiency-cover logic of [[#def-cushing]]-post-cure-row, with the prognosis-honest communication — [[geriatrics-palliative/palliative-care]], [[clinical-skills/communication]]).**
+**Malignancy.** A homogeneous mass under 4 cm with attenuation of 10 HU or less is a lipid-rich benign adenoma. No further imaging is needed for this question.
+
+**Hormone secretion.**
+1. A **1 mg overnight dexamethasone suppression test**. If cortisol is above 50 nmol/L, she has mild autonomous cortisol secretion (or more), which may contribute to her hypertension and diabetes; further assessment and a discussion of adrenalectomy versus medical management of the comorbidities would follow.
+2. Because she has hypertension, an **aldosterone-to-renin ratio**.
+3. Metanephrines are not routinely required for a mass with attenuation of 10 HU or less, because phaeochromocytomas are almost never lipid-rich, although many centres still measure them.
+
+She should be told clearly what has been found and why the tests are being done, since incidental findings cause understandable anxiety.
 :::
 :::
 
 ::: quiz
-In a patient with phaeochromocytoma, starting a beta-blocker before alpha-blockade is dangerous because:
-- [x] Unopposed alpha-mediated vasoconstriction can precipitate hypertensive crisis and pulmonary oedema
-- [ ] It causes hypoglycaemia
-- [ ] It blocks catecholamine release
-- [ ] It causes irreversible bradycardia only
+A woman with autoimmune Addison's disease has hyperpigmentation and hyperkalaemia. A man with a pituitary tumour and ACTH deficiency has neither. What explains the difference?
+- [ ] The man has a higher ACTH than the woman.
+- [x] In primary disease ACTH is high and aldosterone is lost; in secondary disease ACTH is low and aldosterone is preserved.
+- [ ] Hyperkalaemia is caused by cortisol deficiency.
+- [ ] Pigmentation is caused by low aldosterone.
 ::: solution
-**Beta-2 vasodilation removed, alpha constriction unopposed, and the afterload surge lands on a catecholamine-contracted circulation — the crisis-and-oedema physiology of [[#def-aldosteronism]] with its [[respiratory/gas-exchange]] and [[cardiovascular/circulation-blood-pressure]] consequences; the correct order (alpha-then-beta, never the reverse, never a lone beta) is one of pharmacology's permanent red rules — [[pharmacology/autonomic-drugs]], [[endocrine/endocrine-emergencies]].**
+Pigmentation comes from high ACTH (and related melanocortin peptides), which happens only in primary disease. Hyperkalaemia comes from aldosterone deficiency; aldosterone depends on the renin–angiotensin system and survives ACTH deficiency.
 :::
 :::
 
 ::: history
-**Addison's 1855 description of "melas prepuctio" adrenal consumption and the long pre-cortisol era when the disease was a death sentence — the Endocrine Society's classic cases; Kendall's 1914-chloroform-extracts-from-slaughterhouse-adrenals-through-the-Great-Western-cattle-market (thousands of metres of gland for milligrams) and Hench-and-Cartland's 1940s-cortisone-era that made rheumatoid-arthritis-and-addisonism-treatable overnight (Nobel 1950) — [[musculoskeletal/inflammatory-arthritis]], [[immunology/innate-immunity]]; the Synacthen (tetracosactide) test's standardisation; Conn's 1955-description of the "hypertensive syndrome with adrenal cortical adenoma and hypokalaemia" — the first curable-hypertension story — [[cardiovascular/hypertension]], [[renal/potassium-calcium-phosphate]]; the chromaffin-reaction-era (Fraenkel-and-Fraenkel's 1912-operation-of-Langerhans's-tumour) meeting the modern-genetics-flood (the VHL-MEN2-SDH cascade — [[genetics/cancer-genetics]]); the adrenal-vein-sampling-conversion of the 1990s-2000s that proved CT-wrong-half-the-time ([[clinical-skills/medical-imaging]]); the inferior-petrous-sinus-sampling craft era for occult Cushing ([[endocrine/hypothalamus-pituitary]]); and the checkpoint-inhibitor-hypophysitis-and-adrenalitis literature adding twenty-first-century causes to two-millennia-old glands ([[immunology/vaccines-immunotherapy]]).**
+In 1855 **Thomas Addison**, at Guy's Hospital in London, described a fatal illness of anaemia-like weakness, a feeble heart, gastric upset and skin discoloration, associated with diseased adrenal glands. The following year **Charles-Édouard Brown-Séquard** showed that removing both adrenals was fatal in animals. **Edward Kendall** and **Tadeus Reichstein** isolated the adrenal cortical steroids in the 1930s, and in 1948 **Philip Hench** at the Mayo Clinic gave cortisone to a woman with rheumatoid arthritis, with dramatic effect; Hench, Kendall and Reichstein shared the 1950 Nobel Prize. In 1955 **Jerome Conn** described primary aldosteronism in a woman with hypertension, muscle weakness and hypokalaemia, cured by removing an adrenal tumour.
 :::
 
 ## Where this leads
 
-The pituitary drivers in [[endocrine/hypothalamus-pituitary]]; emergencies (crisis, phaeo, storms) in [[endocrine/endocrine-emergencies]]; the steroid-metabolic consequences in [[endocrine/diabetes]]; bone in [[endocrine/bone-calcium]]; genetics in [[genetics/cancer-genetics]]; hypertension in [[cardiovascular/hypertension]]; perioperative steroid management in [[surgery/perioperative-care]].
-
-::: exercise Read the ratio, twice {level=2}
-An ARR returns "positive" at 350 in a patient on propranolol for migraine, K 3.2, eGFR 55, sampled at 15:00 standing after a busy clinic. List the problems and rebuild the protocol.
-::: solution
-**Four-plus confounders ([[#def-aldosteronism]], [[clinical-skills/laboratory-tests]]): beta-blockers suppress renin (false-positive direction), hypokalaemia suppresses aldosterone (false-negative — and itself a finding to chase), reduced-eGFR distorts both and changes thresholds, and the timing-and-posture rules were broken; the rebuild — correct potassium, hold MR-antagonists-and-amiloride-for-weeks and substitute verapamil-or-doxazosin-etc by protocol, morning-seated-after-activity-standard, repeat-with-confirmation-testing logic, and the renal-function caveat in interpretation ([[renal/chronic-kidney-disease]], [[pharmacology/adverse-reactions]]); and the reminder that a suppressed-renin-with-normal-aldosterone-on-a-beta-blocker can still mean autonomous disease — the second-test-discipline ([[cardiovascular/hypertension]]).**
-:::
-:::
-
-::: exercise Adjust for the pill {level=2}
-A woman on a combined oral contraceptive has "high total cortisol" and equivocal dexamethasone suppression; free cortisol and salivary tests are normal. Explain and plan.
-::: solution
-**Oestrogen raises cortisol-binding globulin, inflating total cortisol and total-thyroxine-style measurements without changing free hormone ([[#def-physiology]]-binding-protein-row, [[endocrine/thyroid]]-parallel, [[pharmacology/patient-variation]]); hence the rule to use free-cortisol or salivary or late-night modalities when oestrogen is on board ([[clinical-skills/laboratory-tests]]); the plan — trust the normal free-cortisol-and-salivary-pair, no further imaging, document the binding-protein explanation so the next clinician does not restart the cascade ([[clinical-skills/records-handover]], [[clinical-skills/patient-safety]]); and the same reasoning applied to the TBG-and-pregnancy and nephrotic-and-cirrhosis perturbations ([[obstetrics-gynaecology/pregnancy-antenatal]], [[gastrointestinal/liver-function]]).**
-:::
-:::
+Adrenal crisis and phaeochromocytoma crisis are covered in [[endocrine/endocrine-emergencies]]. Cushing's disease is introduced in [[endocrine/hypothalamus-pituitary]]. Secondary hypertension is placed in context in [[cardiovascular/hypertension]], and the adverse effects of therapeutic glucocorticoids in [[pharmacology/adverse-reactions]].
 
 ::: summary
-- Adrenal insufficiency is diagnosed with cortisol and ACTH and a Synacthen test, and is survived through education: cards, injections, sick-day rules and perioperative cover.
-- Exogenous steroids remain the top cause of both Cushing's syndrome and of secondary adrenal insufficiency — audit prescriptions before ordering tests.
-- Cushing confirmation needs two abnormal screens of different type before anyone touches an MRI.
-- Primary aldosteronism is a common, curable contributor to hypertension; interpret the aldosterone-renin ratio with drugs and potassium in mind, and let vein sampling, not CT, decide surgery.
-- Phaeochromocytoma is biochemistry first, alpha-blockade before beta-blockade, genetics for most, and never, ever biopsied unprepared.
+- The cortex makes aldosterone (controlled by renin–angiotensin and potassium), cortisol and androgens (controlled by ACTH); the medulla makes adrenaline.
+- Primary adrenal insufficiency causes pigmentation, hyperkalaemia and high ACTH; secondary disease spares aldosterone and has low ACTH.
+- Glucocorticoid medicines are the commonest cause of adrenal insufficiency; people at risk need a steroid emergency card, sick-day rules and a gradual taper.
+- Diagnose adrenal insufficiency with a 9 a.m. cortisol and short Synacthen test; never delay treatment of suspected adrenal crisis.
+- Exclude exogenous steroid first in suspected Cushing's syndrome; confirm cortisol excess, measure ACTH, then localise.
+- Primary aldosteronism is common, often normokalaemic, and screened with the aldosterone-to-renin ratio; adrenal vein sampling finds unilateral disease.
+- Phaeochromocytoma is diagnosed with metanephrines; alpha-block before beta-block; offer genetic testing.
+- Assess every adrenal incidentaloma for malignancy (unenhanced CT attenuation) and hormone excess (dexamethasone test, and others as indicated).
 :::
 
 ## Exercises
 
-::: exercise Interpret the morning cortisol {level=1}
-Random 14:00 cortisol 220 nmol/L in a unwell patient: can this exclude adrenal insufficiency? What can?
+::: exercise Primary or secondary {level=1}
+A person has a low 9 a.m. cortisol. List three findings that would point to primary rather than secondary adrenal insufficiency.
 ::: solution
-**No — timing-and-illness-and-binding-protein-confound ([[#def-physiology]], [[clinical-skills/laboratory-tests]]); exclusion needs an adequate-stimulation response (short Synacthen peak threshold) in the right clinical and drug context, ideally morning-baseline with ACTH ([[#def-insufficiency]]); in the acutely unwell patient, treat-first-and-test-without-delay-logic applies ([[endocrine/endocrine-emergencies]]).**
+Any three of: high plasma ACTH; hyperpigmentation; hyperkalaemia; raised renin (low aldosterone); positive 21-hydroxylase antibodies; other autoimmune disease such as vitiligo or type 1 diabetes. Secondary disease shows low or normal ACTH, no pigmentation and preserved aldosterone.
 :::
 :::
 
-::: exercise Name the electrolyte signature {level=1}
-Hyponatraemia with hyperkalaemia and high ACTH; versus hyponatraemia with normal potassium and low ACTH — which is which?
+::: exercise Steroid equivalents {level=1 check="7.5*4"}
+Using the approximate equivalence hydrocortisone 20 mg ≈ prednisolone 5 mg, what dose of hydrocortisone in mg is equivalent to prednisolone 7.5 mg daily?
 ::: solution
-**Primary (Addison's — aldosterone lost, potassium retained, renin-and-ACTH up, pigmentation — [[#def-insufficiency]], [[renal/potassium-calcium-phosphate]]) versus secondary (pituitary — aldosterone preserved via renin, ACTH low — [[endocrine/hypothalamus-pituitary]]); both can present as crisis ([[endocrine/endocrine-emergencies]]) and both need hydrocortisone, only one needs fludrocortisone.**
+Hydrocortisone is a quarter as potent as prednisolone, so multiply by 4: $7.5 \times 4 = 30$ mg of hydrocortisone.
 :::
 :::
 
-::: exercise Sort the hypertension {level=2}
-Which second-opinion work-up for: (a) 32-year-old on three drugs with K 3.1; (b) 60-year-old with episodic headache and sweating and retinopathy; (c) 44-year-old with proximal myopathy, bruises and new insulin-requiring diabetes?
+::: exercise Who needs a card {level=1}
+State which of the following people should be considered at risk of glucocorticoid-induced adrenal insufficiency: (a) prednisolone 30 mg for 5 days for asthma; (b) prednisolone 10 mg daily for 6 months; (c) high-dose inhaled fluticasone taken with ritonavir.
 ::: solution
-**(a) aldosterone-renin-ratio-pathway-with-potassium-correction-and-drug-management ([[#def-aldosteronism]], [[cardiovascular/hypertension]]); (b) metanephrines-then-imaging-with-no-contrast-unprepared-anaesthesia-or-biopsy-rules ([[#def-aldosteronism]]); (c) Cushing-screen-triple-with-the-exogenous-audit-first ([[#def-cushing]], [[endocrine/diabetes]], [[pharmacology/adverse-reactions]]); each starts with the case-finding-trigger table of [[#def-aldosteronism]] and [[#def-cushing]].**
+(a) Not usually: a short course under three to four weeks rarely causes clinically important suppression, although repeated courses add up. (b) Yes: more than 5 mg prednisolone daily for more than four weeks. (c) Yes: ritonavir inhibits CYP3A4, greatly increasing systemic exposure to inhaled fluticasone; iatrogenic Cushing's syndrome and adrenal suppression are well described.
 :::
 :::
 
-::: exercise Plan the taper {level=2}
-A 39-year-old with asthma on prednisolone 10 mg daily for 8 months asks about stopping. Write the physiology-based plan.
+::: exercise The ratio {level=2 check="480/1.5"}
+Calculate the aldosterone-to-renin ratio for aldosterone 480 pmol/L and direct renin concentration 1.5 mU/L. Give the value in pmol/mU.
 ::: solution
-**The suppression-risk rules (duration-above-3-weeks-and-dose-above-physiological-and-the-nightly-versus-morning-regimen nuance — [[respiratory/asthma-copd]], [[#def-insufficiency]]): assess-then-step-down-by-small-decrements-with-Adrenal-Insufficiency-recovery-monitoring-and-morning-cortisol-and-short-Synacthen-at-the-physiological-threshold ([[clinical-skills/laboratory-tests]]); the bridge-plan (asthma-control-review-and-inhaled-optimisation-before-each-step [[respiratory/asthma-copd]]-and-[[pharmacology/dosing-principles]]); the intercurrent-illness-and-dental-and-surgery-cover-education-during-the-taper ([[surgery/perioperative-care]], [[endocrine/endocrine-emergencies]]); the withdrawal-symptom-versus-crisis-counselling ([[clinical-skills/communication]]); and the taper-speed-and-relapse-pause-rules documented in one shared plan ([[clinical-skills/records-handover]], [[geriatrics-palliative/polypharmacy]]).**
+$480 / 1.5 = 320$ pmol/mU. With suppressed renin and non-low aldosterone, this would be a positive screen for primary aldosteronism at most laboratory thresholds.
 :::
 :::
 
-::: exercise Advise the operation {level=2}
-A 44-year-old with a cortisol-secreting adrenal adenoma and suppressed ACTH undergoes laparoscopic adrenalectomy. What covers the post-operative period and why can it be miserable?
+::: exercise Interpret the dexamethasone test {level=2}
+After 1 mg dexamethasone at 11 p.m., a woman's 9 a.m. cortisol is 290 nmol/L. She takes the combined oral contraceptive pill and has depression. Discuss the interpretation.
 ::: solution
-**The unilateral-with-suppression setup means the remaining gland is asleep ([[#def-cushing]]-post-cure-row): perioperative-and-then-tapering-hydrocortisone-cover on the pituitary-adrenal-awakening timeline of weeks-to-over-a-year ([[surgery/perioperative-care]], [[endocrine/endocrine-emergencies]]); the cortisol-withdrawal syndrome (fatigue-arthralgia-nausea-low-mood-and-postural-symptoms-with-normal-bloods) counselled-in-advance so it is not misread as surgical failure or new disease ([[clinical-skills/communication]], [[psychiatry/mood-disorders]]); the sick-day-rules-and-card-for-the-cover-period ([[#def-insufficiency]]); and the metabolic-melting follow-up (weight-remodel-and-glucose-and-BP-improvement-vs-persistence, bone-recovery and the depression-recovery curve — [[endocrine/diabetes]], [[endocrine/bone-calcium]], [[gastrointestinal/clinical-nutrition]]).**
+In health cortisol falls below 50 nmol/L after 1 mg dexamethasone, so this is a failure to suppress. Two factors can cause false positives here. Oral oestrogen raises cortisol-binding globulin and therefore total cortisol, so the pill should ideally be stopped for about six weeks before testing, or a test less affected by binding (late-night salivary cortisol, 24-hour urinary free cortisol) used. Depression can mildly activate the axis. The result should not be taken as proof of Cushing's syndrome; repeat or alternative testing in a specialist setting is needed, guided by how many discriminating clinical features she has.
 :::
 :::
 
-::: exercise Design the adrenal incidentaloma protocol {level=3}
-Write the radiology-triggered pathway from CT report to discharge or clinic, covering hormones, imaging characteristics, size rules, phaeo-safety and genetics.
+::: exercise The positive predictive value {level=2 check="round(100*(0.95*0.05)/(0.95*0.05+0.15*0.95))"}
+Repeat the calculation in [[#ex-screening]] for a group with a prevalence of 5%, sensitivity 95% and specificity 85%. Give the positive predictive value as a percentage rounded to the nearest whole number.
 ::: solution
-**Report-template triggers (the adrenal-protocol-and-attenuation-and-shape-features and the "do-not-reduce-a-mass-to-an-adjjective" radiology rule — [[clinical-skills/medical-imaging]]; hormone panel by default — metanephrines, Cushing-screen, aldosterone-renin-if-hypertensive-or-hypokalaemic, and the mild-autonomous-cortisol-secretion-discussion — [[clinical-skills/laboratory-tests]], [[#def-cushing]], [[#def-aldosteronism]]; the safety interlocks — no-biopsy-and-no-surgery-until-phaeo-excluded-and-blocked ([[endocrine/endocrine-emergencies]], [[surgery/anaesthesia-pain]]); the size-and-surgery rules (growth-and-suspicious-imaging-and-above-4-cm-discussion-with-the-cancer-absolute-risk-numbers — [[surgery/gastrointestinal-surgery]]); the follow-up grid (repeat-imaging-and-reassessment-intervals-with-the-contrast-and-radiation-burden-logic-and-stop-rules — [[public-health/screening]], [[public-health/environmental-occupational]]); the genetics lane for the young, bilateral, multifocal or family-history cohort — [[genetics/genetic-testing]], [[genetics/cancer-genetics]], [[endocrine/reproductive-endocrinology]]; the documentation and safety-net letters that close the loop in primary care ([[clinical-skills/records-handover]], [[clinical-skills/patient-safety]]); and the audit set (phaeo-detected-before-intervention rate, biochemical-work-up completeness, resection-specimen-malignancy-rate as the over-surgery counter-KPI, and time-from-CT-to-decision — [[public-health/health-systems-economics]]).**
+True positives per person: $0.95 \times 0.05 = 0.0475$. False positives: $0.15 \times 0.95 = 0.1425$. PPV $= 0.0475/(0.0475 + 0.1425) = 0.0475/0.19 = 0.25$, i.e. **25%**. Raising the prior probability from 1% to 5% raises the PPV from about 6% to 25%: selecting who to test matters as much as the test itself.
+:::
+:::
+
+::: exercise Paroxysms {level=3}
+A 31-year-old woman has episodes of pounding headache, sweating and palpitations. Her blood pressure is 182/110 mmHg during one episode. Her GP has started propranolol for "anxiety with palpitations". Discuss the differential diagnosis, the danger of the current treatment, and the investigation plan.
+::: hint
+Consider what unopposed α-adrenergic stimulation does to blood pressure.
+:::
+::: solution
+**Differential**: phaeochromocytoma or paraganglioma; panic disorder; thyrotoxicosis; drug use (cocaine, amphetamines) or withdrawal; hypoglycaemia; less often carcinoid syndrome or menopause-related flushing (unlikely at 31).
+
+**Danger**: if this is a phaeochromocytoma, a non-selective beta-blocker given without prior alpha-blockade removes β2-mediated vasodilation and can provoke a severe hypertensive crisis. The propranolol should be reviewed urgently.
+
+**Plan**: plasma free metanephrines (or 24-hour urinary metanephrines), thyroid function, and a careful drug history. If metanephrines are clearly raised, cross-sectional imaging of the abdomen and pelvis to locate the tumour; then referral to a specialist team for alpha-blockade, surgery and genetic testing. If metanephrines are normal, phaeochromocytoma is very unlikely and the other diagnoses can be explored.
+:::
+:::
+
+::: exercise Design a steroid safety process {level=3}
+A hospital finds that several people on long-term prednisolone developed adrenal crisis after surgery. Design a process to prevent this, using the physiology of axis suppression to justify each step.
+::: solution
+A good answer covers identification, education and action at each risky point:
+
+1. **Identify** at-risk people from prescribing records: prednisolone equivalent of 5 mg or more daily for four weeks or more, high-dose inhaled or other routes, and interacting drugs such as CYP3A4 inhibitors. Justification: these doses suppress CRH and ACTH ([[#thm-suppression]]).
+2. **Flag** them in the electronic record and issue a **steroid emergency card**.
+3. **Educate** them on sick-day rules and never stopping steroids abruptly.
+4. **Perioperative protocol**: give extra glucocorticoid cover at induction and for the first postoperative days, scaled to the size of the operation, because the suppressed adrenals cannot provide the normal surgical stress response.
+5. **Prompt recognition**: unexplained postoperative hypotension, vomiting, hyponatraemia or hypoglycaemia in such patients triggers immediate hydrocortisone.
+6. **Withdrawal**: taper slowly when stopping long-term steroids, and test axis recovery where appropriate.
+7. **Audit** adherence and incidents.
 :::
 :::

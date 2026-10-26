@@ -1,148 +1,323 @@
-The pituitary is the endocrine system's switchboard, and hypothalamic-pituitary disease therefore produces two kinds of problems everywhere else: **too much drive (a secreting adenoma whipping a target gland) or too little (hypopituitarism, in which every downstream gland is "secondarily" failed).** Add the anatomy — a gland wedged in the sella beneath the optic chiasm and bathed in a portal blood system — and you get medicine's most instructive combination of chemistry and geometry.
+The pituitary gland is the size of a pea and sits in a bony cup at the base of the skull, yet it sets the output of the thyroid, the adrenal cortex, the gonads, the liver's growth signal and the breast. It does this under instruction from the hypothalamus a centimetre above it. Most of endocrinology is easier once this arrangement is clear, because nearly every hormone test is read as a pair: the gland's product and the pituitary signal that drives it.
 
-This chapter covers pituitary anatomy and testing, adenomas and mass effects, hypopituitarism, hyperprolactinaemia, acromegaly, Cushing's disease, and the ADH disorders.
+This lesson covers the anatomy of the hypothalamic–pituitary unit, the feedback logic that lets paired results localise a lesion, the pituitary tumours and the syndromes of hormone excess and deficiency they cause, and the posterior pituitary's control of water. Adrenal causes of Cushing's syndrome are in [[endocrine/adrenal]]; pituitary apoplexy as an emergency is in [[endocrine/endocrine-emergencies]].
 
-## The switchboard
+## Anatomy and the axes {#sec-anatomy}
 
-::: definition Axes, anatomy and dynamic testing {#def-axes}
-**Architecture (hypothalamic releasing and inhibiting hormones — TRH, CRH, GnRH, GHRH-plus-somatostatin, dopamine — reaching the anterior pituitary through the low-pressure portal system, which is why hypothalamic disease often raises prolactin (loss of dopamine inhibition, the "stalk effect") while destroying the other axes; the posterior pituitary as neural tissue carrying ADH and oxytocin — [[renal/water-sodium]], [[obstetrics-gynaecology/labour-birth]]; venous and cavernous relations and the chiasm's optic nerve fibre anatomy — [[anatomy/head-neck]], [[nervous-system/sensory-systems]]). The five anterior axes (thyrotroph-thyroid [[endocrine/thyroid]]; corticotroph-adrenal [[endocrine/adrenal]]; somatotroph-liver-IGF-1; lactotroph-mammary-gonadal [[endocrine/reproductive-endocrinology]]; gonadotroph-gonads — plus the developmental and clinical context of [[obstetrics-gynaecology/contraception-fertility]] and [[paediatrics/growth-development]]). Feedback logic (the long-loop and short-loop negative feedback that makes pituitary failure central rather than peripheral — TSH-low-with-T4-low is pituitary, TSH-high-with-T4-low is thyroid — [[physiology/homeostasis-body-fluids]]'s set-point machinery, [[physiology/hormones]]'s classification). The testing rules (stimulation for hypofunction, suppression for hyperfunction; dynamic tests — insulin-tolerance-or-glucagon-for-cortisol-and-GH axes, water-deprivation-and-copeptin for ADH [[#def-adh]], dexamethasone-suppression and oral-glucose-loading [[#def-prolactin]]-[[#def-prolactin]]; the pitfalls of single-hormone snapshots — free-T4-over-TSH-reliance in central disease [[gastrointestinal/liver-function]]— [[endocrine/thyroid]]'s central-hypothyroidism-row, morning-cortisol-with-its-assay-and-timing-caveats [[endocrine/adrenal]], IGF-1-for-GH's-pulse-noise; and the mandatory adrenal-before-thyroid replacement rule — [[#def-hypopituitary]]). Imaging and visuals (pituitary-protocol MRI with the cavernous-sinus and stalk reading; formal visual fields and the chiasmal-pattern perimetry — [[clinical-skills/medical-imaging]], [[nervous-system/sensory-systems]]).**
+The pituitary has two parts with different origins. The **anterior pituitary** (adenohypophysis) grows up from the roof of the embryonic mouth. It is a true gland: its cells make and secrete their own hormones. The **posterior pituitary** (neurohypophysis) grows down from the brain. It contains no hormone-making cells, only the nerve endings of hypothalamic neurons, which release hormones made in the hypothalamus.
+
+The two parts are therefore controlled differently. Hypothalamic neurons secrete releasing and inhibiting hormones into a capillary bed in the median eminence. These blood vessels run down the **pituitary stalk** as the **hypophyseal portal veins** and open into a second capillary bed in the anterior pituitary. The releasing hormones reach the pituitary cells at high concentration without first being diluted in the general circulation. The posterior pituitary needs no portal system: the axons themselves run down the stalk.
+
+The gland lies in the **sella turcica** of the sphenoid bone. Above it, separated by a fold of dura, is the **optic chiasm**, where the fibres from the nasal half of each retina cross. On each side lies the **cavernous sinus**, which carries the internal carotid artery and cranial nerves III, IV, V1, V2 and VI. These neighbours explain the mass effects of pituitary tumours.
+
+::: definition The anterior pituitary axes {#def-axes}
+An **endocrine axis** is a chain of hypothalamic hormone, pituitary hormone and target-gland hormone, closed by negative feedback. The anterior pituitary has six main hormones:
+
+| Hypothalamic signal | Pituitary hormone | Target | Main product |
+|---|---|---|---|
+| Thyrotrophin-releasing hormone (TRH) | Thyroid-stimulating hormone (TSH) | Thyroid | Thyroxine (T4), tri-iodothyronine (T3) |
+| Corticotrophin-releasing hormone (CRH), with vasopressin | Adrenocorticotrophic hormone (ACTH) | Adrenal cortex | Cortisol |
+| Gonadotrophin-releasing hormone (GnRH) | Luteinising hormone (LH) and follicle-stimulating hormone (FSH) | Ovary, testis | Oestradiol, progesterone, testosterone, inhibin |
+| Growth hormone-releasing hormone (GHRH); somatostatin inhibits | Growth hormone (GH) | Liver and other tissues | Insulin-like growth factor 1 (IGF-1) |
+| Dopamine inhibits | Prolactin | Breast | Milk production |
+
+Prolactin is the exception: its main hypothalamic control is **inhibitory**, through dopamine. Anything that cuts the stalk or blocks dopamine therefore raises prolactin while the other hormones fall.
 :::
 
-::: definition Adenomas and mass effects {#def-adenomas}
-**Epidemiology and classification (incidental microadenomas are common on modern imaging — the pitfall of anchoring hypopituitarism onto an incidentaloma and missing the true cause [[clinical-skills/clinical-reasoning]]; size and hormone status define the work-up: every pituitary mass gets the hormone-axis panel plus visual assessment before the label "non-functioning"; the rare carcinoma and the NEN-mimic [[gastrointestinal/pancreas-biliary]]-adjacent-pathology [[pathology/cancer-diagnosis]]). Secretory syndromes (prolactinoma [[#def-prolactin]]; GH — [[#def-prolactin]]; ACTH — [[#def-prolactin]]; the thyroid- and gonadotroph-secreting rarities whose presentations are mass-plus-mimicry). Non-functioning adenomas and the mass syndrome (headache from dural stretch; chiasmal compression with bitemporal hemianopia first then visual loss and the pupillary and optic-atrophy sequelae — [[nervous-system/sensory-systems]]; hypopituitarism by compression; hydrocephalus and the invasive-cavernous-sinus-nerve-palsies — [[anatomy/head-neck]]; apoplexy as an emergency — see [[endocrine/endocrine-emergencies]]). Management (transsphenoidal surgery as first-line for decompression and for most somatotroph-corticotroph lesions — the remission-and-CSF-leak-and-DI complication reading [[surgery/gastrointestinal-surgery]]-adjacent-skull-base [[nervous-system/motor-systems]]; radiotherapy and radiosurgery for residuals with the hypopituitarism-and-second-tumour latency — [[public-health/environmental-occupational]]-adjacent radiation-risk; medical therapy by cell type [[#def-prolactin]]-[[#def-prolactin]]; and the surveillance imaging rhythm for stable residuals [[public-health/screening]]). **Craniopharyngioma and sellar neighbours (the bimodal-childhood-and-older-adult cyst with calcification and the stalk-hypothalamic syndrome of hyperphagia-obesity-and-hypopituitarism [[gastrointestinal/clinical-nutrition]]-and-[[paediatrics/growth-development]]; the visual-and-cognitive follow-up and the hypothalamic-obesity management reality — [[public-health/prevention-promotion]]-adjacent; plus the Rathke-cyst, meningioma, metastasis and lymphoma differentials — [[blood/lymphoma-myeloma]], [[pathology/diagnostic-pathology]]).**
+The posterior pituitary releases two hormones made in the supraoptic and paraventricular nuclei. **Arginine vasopressin (AVP)**, also called antidiuretic hormone, controls water excretion by the kidney. **Oxytocin** drives milk ejection and uterine contraction.
+
+## Feedback and how to read paired results {#sec-feedback}
+
+::: theorem Negative feedback localises the lesion {#thm-feedback}
+In a closed axis, the target-gland hormone suppresses its own pituitary and hypothalamic drivers. As a result:
+
+1. If the **target gland fails** (primary failure), its hormone falls and the pituitary hormone **rises**.
+2. If the **pituitary or hypothalamus fails** (secondary or tertiary failure), the target hormone falls and the pituitary hormone is **low or inappropriately normal**.
+3. If the **target gland is autonomously overactive**, its hormone is high and the pituitary hormone is **suppressed**.
+4. If a **pituitary tumour secretes** the trophic hormone, both the pituitary hormone and the target hormone are high.
 :::
+
+::: proof
+Feedback makes the pituitary act like a thermostat. When the gland's output falls, the pituitary senses the shortfall and turns up its signal; when output rises, it turns the signal down. A pituitary hormone that is high while the target hormone is low means the controller is working but the gland cannot respond, so the fault lies in the gland. A pituitary hormone that is low or normal while the target hormone is low means the controller itself is not responding to a large error signal. A "normal" pituitary result is therefore abnormal in this setting: a working pituitary would be shouting. The same argument, run in reverse, separates autonomous gland overactivity (controller switched off) from a secreting pituitary tumour (controller stuck on).
+:::
+
+The key habit is never to read one result alone. A free T4 of 8 pmol/L means little until it is paired with the TSH. A TSH of 2.0 mU/L looks reassuring, but beside a low free T4 it is evidence of pituitary disease.
+
+### Basal and dynamic tests
+
+Some hormones can be judged from a single basal sample: TSH with free T4, LH and FSH with oestradiol or testosterone, and prolactin. Others are pulsatile or rhythmic, so a single value can mislead. Cortisol peaks in the early morning and is lowest around midnight; GH is released in bursts, mostly in sleep.
+
+For these, **dynamic tests** are used. The rule is simple:
+
+- If you suspect **deficiency**, try to **stimulate** the gland. A failure to rise confirms deficiency. Examples: the short Synacthen test for adrenal reserve, and the insulin tolerance test or glucagon stimulation test for GH and ACTH reserve.
+- If you suspect **excess**, try to **suppress** it. A failure to fall confirms autonomous secretion. Examples: GH suppression by an oral glucose load in acromegaly, and cortisol suppression by dexamethasone in Cushing's syndrome.
+
+::: warning A normal TSH does not exclude thyroid deficiency in pituitary disease
+In secondary (central) hypothyroidism the TSH may be low, normal or even slightly raised, because the TSH made by a damaged pituitary can be biologically less active. Free T4 is the test to diagnose and to monitor central hypothyroidism. A person with pituitary disease whose levothyroxine dose is adjusted to "normalise the TSH" will usually be under-treated.
+:::
+
+## Pituitary tumours {#sec-tumours}
+
+::: definition Pituitary adenoma {#def-adenomas}
+A **pituitary adenoma** is a benign tumour of anterior pituitary cells. Because these tumours can invade locally and behave in a spectrum of ways, the 2022 WHO classification calls them **pituitary neuroendocrine tumours (PitNETs)**; both names are in use. A **microadenoma** is under 10 mm in diameter; a **macroadenoma** is 10 mm or more. Tumours are also classified as **functioning** (secreting a hormone in excess, most often prolactin, GH or ACTH) or **non-functioning** (no clinical hormone excess; the commonest macroadenoma in adults).
+:::
+
+A pituitary tumour can cause trouble in three ways:
+
+1. **Hormone excess** from a functioning tumour: prolactinoma, acromegaly, Cushing's disease, or rarely a TSH-secreting tumour.
+2. **Hormone deficiency** when a macroadenoma compresses normal pituitary tissue or the stalk.
+3. **Mass effect** on the surrounding structures.
+
+The classic mass effect is a **bitemporal hemianopia**. A tumour growing upwards presses on the chiasm from below, where the crossing fibres from the nasal retinas run. These fibres carry the temporal visual fields, so both temporal fields are lost, often starting in the upper quadrants. People rarely notice it themselves; it is found on formal visual-field testing or because they bump into things at the side. Lateral spread into the cavernous sinus can cause double vision through cranial nerve palsies. Headache is common but nonspecific.
+
+Many small pituitary lesions are found by chance on scans done for other reasons. These **incidentalomas** are common in the general population. Work-up asks three questions: is it secreting anything, is it causing hypopituitarism, and is it threatening vision? Small, non-functioning incidentalomas are usually monitored with repeat imaging.
+
+### Hypopituitarism
 
 ::: definition Hypopituitarism {#def-hypopituitary}
-**Causes (pituitary or hypothalamic surgery and radiotherapy; apoplexy [[endocrine/endocrine-emergencies]]; the resection era; craniopharyngioma [[#def-adenomas]]; trauma and subarachnoid hemorrhage with the insidious-GH-and-gonadotropin-loss literature [[nervous-system/stroke]]; Sheehan's post-partum necrosis — [[obstetrics-gynaecology/pregnancy-complications]], [[obstetrics-gynaecology/postnatal-period]]; lymphocytic hypophysitis of pregnancy and checkpoint-inhibitor therapy — [[obstetrics-gynaecology/pregnancy-antenatal]], [[immunology/vaccines-immunotherapy]]-adjacent immune-related endocrinopathies ([[endocrine/thyroid]]); infiltrative — sarcoid, IgG4, histiocytosis, haemochromatosis — [[gastrointestinal/liver-disease]], [[immunology/autoimmunity]]; congenital-hypoplasia-and-pituitary-stalk-interruption with the neonatal-hypoglycaemia-micropenis-presentation — [[paediatrics/newborn]], [[genetics/mendelian-inheritance]]). Pattern (the typical loss sequence — GH, then gonadotropins, then TSH-ACTH-with-posterior-ADH-usually-spared — explaining why children present with growth failure [[paediatrics/growth-development]] and adults with fatigue-and-libido-loss-before-the-scary-deficits). Symptoms by axis (cortisol — the exhaustion-hypotension-nausea-and-fragility that becomes crisis under stress [[endocrine/endocrine-emergencies]]; thyroid — the sluggish-mimic; gonadal — the amenorrhoea-libido-erectile-infertility cluster [[endocrine/reproductive-endocrinology]]; GH — the body-composition-quality-of-life-bone-cardiovascular syndrome [[gastrointestinal/clinical-nutrition]]-and-[[cardiovascular/vascular-disease]]; posterior — ADH in the injured-hypothalamus cases [[#def-adh]]). Diagnosis (the central-pattern biochemistry plus stimulation testing — [[clinical-skills/laboratory-tests]]; and the rule that a sick-euthyroid-or-opioid-or-exogenous-steroid picture can mimic every axis — [[pharmacology/adverse-reactions]], [[endocrine/adrenal]]'s exogenous-suppression-row). Replacement (the order that matters: hydrocortisone BEFORE levothyroxine, because thyroid hormone accelerates cortisol clearance and can precipitate crisis — [[endocrine/adrenal]], [[endocrine/thyroid]]; stress dosing, the steroid-card-and-sick-day rules and the emergency-injection training — [[endocrine/endocrine-emergencies]], [[geriatrics-palliative/polypharmacy]]-adjacent-adherence; levothyroxine-titrated-to-free-T4-not-TSH [[endocrine/thyroid]]; sex-steroid replacement with the fertility-route-switch — [[endocrine/reproductive-endocrinology]], [[obstetrics-gynaecology/contraception-fertility]]; and adult-growth-hormone-replacement for confirmed deficiency with the IGF-1-titration, cost-and-equity debate, and glucose-and-malignancy-surveillance caveats — [[public-health/health-systems-economics]], the oncology-caution literature ([[pharmacology/adverse-reactions]])). Long-haul (the causes of excess mortality — adrenal under-replacement crises, cardiovascular in GH-gonadal deficiency, and the hypothalamic-obesity and mass-effect residuals — the annual review with the DEXA-bone [[endocrine/bone-calcium]], lipids [[cardiovascular/vascular-disease]], and the driving-and-insurance conversation [[medical-ethics-law/professionalism-regulation]]; and the pregnancy-with-hypopituitarism plan — [[obstetrics-gynaecology/pregnancy-complications]]).**
+**Hypopituitarism** is deficiency of one or more pituitary hormones. **Panhypopituitarism** is loss of all of them. Causes include pituitary tumours and their treatment (surgery or radiotherapy), pituitary apoplexy, traumatic brain injury, subarachnoid haemorrhage, infiltrative and inflammatory disease (sarcoidosis, hypophysitis), Sheehan syndrome after severe postpartum haemorrhage, and, increasingly, immune checkpoint inhibitors used in cancer treatment.
 :::
 
-## The secretory syndromes
+With a compressing tumour, hormones are typically lost in a recognisable order: GH and the gonadotrophins first, then TSH, and ACTH last. Prolactin often rises rather than falls because of stalk compression.
 
-::: definition Prolactin, GH and ACTH excess {#def-prolactin}
-**Hyperprolactinaemia (the dopamine-tonic-inhibition physiology — [[physiology/hormones]]; the drug causes that dominate real-world practice — antipsychotics with their D2 blockade and the risperidone-and-metoclopramide-potency-ranking and the debate about managing antipsychotic-induced hyperprolactinaemia without psychiatric harm — [[psychiatry/psychotic-disorders]], [[pharmacology/adverse-reactions]]; primary hypothyroidism's TRH-drive — [[endocrine/thyroid]]; stalk-compression [[#def-adenomas]]; macroprolactin — the assay artefact that converts a routine number into a needless scan — [[clinical-skills/laboratory-tests]]; the hook effect that fakes a small number in a giant tumour). Consequences (galactorrhoea, oligo-amenorrhoea, infertility, erectile and libido loss with the hypoestrogenic-bone-density-cost — [[endocrine/bone-calcium]], [[gastrointestinal/clinical-nutrition]]— the bone-erosion story belongs [[endocrine/reproductive-endocrinology]]). Treatment (dopamine-agonist-first even in macroadenomas — the medical-shrinkage triumph with cabergoline's dominance — [[pharmacology/drug-receptor]]; surgery for resistance-or-apoplexy-or-CSF-leak; the pregnancy plan — stop-agonist-on-conception-logic-versus-continue-in-invasive-macroadenoma, the visual-fields-in-pregnancy schedule — [[obstetrics-gynaecology/pregnancy-complications]]; and the long-term bone-and-gonadal management — [[endocrine/reproductive-endocrinology]]). **Acromegaly (insidious GH excess — the shoe-and-ring-and-jaw-and-voice history that delays diagnosis for years, the soft-tissue, skeletal and sweating phenotype with frontal bossing, macrognathia, sleep apnoea and carpal tunnel; the cardiomyopathy-hypertension-diabetes-and-colonic-polyp-and-thyroid-nodule comorbidity ledger — [[cardiovascular/heart-failure]], [[endocrine/diabetes]], [[gastrointestinal/bowel-disease]], [[endocrine/thyroid]], [[respiratory/mechanics-breathing]]-adjacent-OSA [[nervous-system/sensory-systems]]-adjacent-ent-voice [[anatomy/head-neck]]; diagnosis — IGF-1 then the non-suppressible oral-glucose-test with the modern assay caveats [[clinical-skills/laboratory-tests]] and the MRI; treatment — transsphenoidal-first for resectable disease [[#def-adenomas]], then somatostatin analogs (octreotide-and-lanreotide with the gallstone-and-steatorrhoea-and-bradycardia monitoring — [[gastrointestinal/pancreas-biliary]]), pegvisomant (the receptor-blocking-engineering story — [[pharmacology/drug-receptor]]), and radiotherapy for the refractory; the comorbidity-tailored follow-up and the excess-mortality-normalisation-with-biochemical-control argument — [[public-health/screening]]). **Cushing's disease (the cortisol-excess syndrome and its diagnosis-pitfalls are worked in [[endocrine/adrenal]]'s own chapter-half: the screening triad of urinary-free-cortisol-late-night-salivary-dexamethasone-suppression, the ACTH-dependence split, the inferior-petrous-sinus-sampling-instrumentation and the transsphenoidal-cure-and-remission-versus-adrenalectomy-era-debate [[surgery/gastrointestinal-surgery]]-and-[[endocrine/adrenal]]; here note the pituitary-side craft — the MRI-negative-microadenoma-surgery-decision, the post-operative-transient-then-persistent-adrenal-insufficiency-management — [[endocrine/adrenal]], [[endocrine/endocrine-emergencies]] — and the pseudo-Cushing confounders: depression, alcohol, obesity, PCOS and poor adherence — [[psychiatry/mood-disorders]], [[psychiatry/substance-use]], [[endocrine/reproductive-endocrinology]], [[pharmacology/patient-variation]]).**
+The symptoms are those of each target-gland deficiency, but softened. Secondary adrenal insufficiency causes fatigue, weight loss and hypotension, and can cause hyponatraemia. It does not cause the salt wasting, hyperkalaemia or pigmentation of Addison's disease, because aldosterone is controlled mainly by the renin–angiotensin system, not by ACTH, and because ACTH is low rather than high. Secondary hypothyroidism causes tiredness and cold intolerance. Gonadotrophin deficiency causes loss of periods, loss of libido, erectile dysfunction and infertility. GH deficiency in adults causes reduced energy, increased central fat and reduced muscle and bone mass; in children it causes short stature.
+
+Replacement follows the target-gland hormones: hydrocortisone, levothyroxine, sex steroids and, in selected cases, GH. Fertility can be restored with gonadotrophin injections.
+
+::: warning Replace cortisol before thyroxine
+In a person with both ACTH and TSH deficiency, starting levothyroxine first can precipitate an adrenal crisis. Thyroid hormone speeds up the metabolism of cortisol and raises metabolic demand, unmasking the cortisol deficit. Glucocorticoid replacement starts first, or at the same time; thyroxine follows. Everyone on glucocorticoid replacement needs sick-day rules and a steroid emergency card ([[endocrine/adrenal]]).
 :::
 
-::: definition The ADH disorders at the level of the gland {#def-adh}
-**(ADH physiology and the renal handling live in [[renal/water-sodium]]; this chapter owns the lesion-level view.) Central diabetes insipidus (the head-injury-and-tumour-and-surgery-and-infiltrative causes — the post-transsphenoidal-triphase-response with its transient-persistent-biphasic calendar that every ward should know before calling "chronic" [[surgery/gastrointestinal-surgery]]-adjacent; the diagnosis — paired plasma-and-urine osmolality-and-sodium with copeptin's modern role and the water-deprivation-test's-old-world-logic — [[clinical-skills/laboratory-tests]]; desmopressin titration with the breakthrough-day safety rule and hyponatraemia-avoidance — [[renal/water-sodium]]; the thirst-integrity requirement and the access-to-water-and-lookup-chip-and-medical-alert-bracelet discipline). Nephrogenic DI (the lithium-and-hypercalcaemia-and-hypokalaemia-and-drug list — [[psychiatry/substance-use]]— lithium's renal channel toxicity belongs [[renal/tubular-function]] and [[psychiatry/mood-disorders]]'s-monitoring-package; the congenital-ADHR-and-AVPR2-recessive-history [[genetics/mendelian-inheritance]]; treatment of the cause plus thiazide-paradox-and-amiloride-for-lithium-and-low-solute-diet [[renal/tubular-function]], [[gastrointestinal/clinical-nutrition]]). Gestational DI and the placental-vasopressinase story — [[obstetrics-gynaecology/pregnancy-complications]]. Primary polydipsia (the psychiatric-and-dry-mouth-mimic and the differentiation with copeptin-or-supervised-testing — [[psychiatry/psychotic-disorders]], [[endocrine/endocrine-emergencies]]'s-hyponatraemia-danger). SIADH (the ectopic-ADH small-cell-cholangiocarcinoma-and-pulmonary-and-CNS-and-drug causes — [[gastrointestinal/liver-disease]]— [[gastrointestinal/pancreas-biliary]] and [[respiratory/lung-cancer-pleura]] and [[nervous-system/stroke]] and [[pharmacology/adverse-reactions]]'s antipsychotic-anticonvulsant-SSRI-chlorpropamide list; the euvolaemic-hyponatraemia work-up with the mandatory cortisol-and-thyroid-exclusion — [[endocrine/adrenal]], [[endocrine/thyroid]] — and the treatment ladder from fluid restriction to urea-and-tolvaptan-with-overcorrection-guardrails — [[renal/water-sodium]], [[endocrine/endocrine-emergencies]]).**
+## Syndromes of pituitary hormone excess {#sec-excess}
+
+### Prolactin
+
+::: definition Hyperprolactinaemia {#def-prolactin}
+**Hyperprolactinaemia** is a raised serum prolactin. High prolactin suppresses GnRH pulses, so it lowers LH, FSH and the sex steroids. In women it causes oligomenorrhoea or amenorrhoea, infertility and sometimes **galactorrhoea** (inappropriate milk production). In men it causes low libido, erectile dysfunction and, with larger tumours, mass effects, because men tend to present later.
 :::
 
-::: example The stalk number {#ex-stalk}
-A 34-year-old woman with 6 months of amenorrhoea and headaches has a 9 mm pituitary lesion on MRI; prolactin is 1250 mIU/L (mildly raised), TSH and free T4 normal, visual fields full. She is on risperidone for bipolar-spectrum illness started a year ago.
+The causes are best remembered by mechanism:
+
+- **Physiological**: pregnancy, breastfeeding, stress (including venepuncture), sleep.
+- **Drugs that block dopamine**: most antipsychotics (risperidone and amisulpride especially), metoclopramide and domperidone. This is the commonest cause of a modest rise.
+- **Loss of dopamine reaching the pituitary**: stalk compression by any large sellar mass (the **stalk effect**).
+- **Prolactin-secreting tumour (prolactinoma)**.
+- **Other**: primary hypothyroidism (TRH stimulates prolactin), chronic kidney disease (reduced clearance), and **macroprolactin**, a complex of prolactin with immunoglobulin G that is measured by many assays but is biologically inactive.
+
+The size of the rise is informative. A prolactin of several thousand mU/L with a macroadenoma points to a macroprolactinoma. A modest rise, say under 2,000 mU/L, with a large non-functioning macroadenoma is the stalk effect; the tumour itself does not secrete prolactin. Distinguishing the two matters because prolactinomas usually shrink with medication, while non-functioning tumours do not.
+
+**Dopamine agonists** (cabergoline is preferred; bromocriptine is an older alternative) are first-line treatment for most prolactinomas, even large ones threatening vision. They lower prolactin and usually shrink the tumour within weeks. Important adverse effects include nausea, postural hypotension and **impulse-control disorders** (pathological gambling, hypersexuality, compulsive shopping), which people should be warned about. At the higher doses used in Parkinson's disease, cabergoline can cause cardiac valve fibrosis, so echocardiographic monitoring is used in some cases. Surgery is reserved for intolerance or resistance.
+
+### Growth hormone: acromegaly
+
+**Acromegaly** is GH excess in an adult, almost always from a pituitary adenoma. Before the growth plates fuse, GH excess causes **gigantism**. GH acts largely through IGF-1 made in the liver. The changes develop slowly over years: enlargement of the hands and feet (rings and shoes no longer fit), coarsening of the face with a prominent jaw and brow, widely spaced teeth, a large tongue, sweating, headache, carpal tunnel syndrome and arthropathy. The serious consequences are cardiovascular: hypertension, cardiomyopathy, type 2 diabetes and obstructive sleep apnoea. Colonic polyps are more common.
+
+The screening test is a **serum IGF-1**, which integrates GH secretion over the day. Diagnosis is confirmed by failure of GH to suppress during a 75 g **oral glucose tolerance test**; in health, glucose suppresses GH. Treatment is usually **trans-sphenoidal surgery**. Somatostatin analogues (octreotide, lanreotide), the GH-receptor antagonist pegvisomant, and radiotherapy are used when surgery does not cure.
+
+### ACTH: Cushing's disease
+
+**Cushing's disease** is cortisol excess caused by an ACTH-secreting pituitary adenoma. It is the commonest cause of endogenous Cushing's syndrome. These tumours are usually microadenomas, often too small to see on MRI. The investigation of cortisol excess, and how to separate pituitary, ectopic and adrenal sources, is covered in [[endocrine/adrenal]].
+
+## The posterior pituitary and water {#sec-water}
+
+Vasopressin keeps plasma osmolality within a narrow range, roughly 275–295 mOsm/kg. Osmoreceptors in the hypothalamus detect a rise in osmolality, which triggers both thirst and vasopressin release. Vasopressin acts on **V2 receptors** in the renal collecting duct, inserting **aquaporin-2** water channels into the cell membrane so that water is reabsorbed and urine is concentrated. A large fall in blood volume also stimulates vasopressin, and can override osmotic control. The renal side of this story is in [[renal/water-sodium]].
+
+The plasma osmolality can be estimated from routine results:
+
+$$
+\text{calculated osmolality} \approx 2[\text{Na}^+] + [\text{glucose}] + [\text{urea}]
+$$ {#eq-osm}
+
+with all concentrations in mmol/L. Sodium is doubled to account for its accompanying anions.
+
+::: definition Arginine vasopressin deficiency and resistance {#def-adh}
+**Arginine vasopressin deficiency (AVP-D)**, formerly called cranial or central diabetes insipidus, is inadequate vasopressin secretion. **Arginine vasopressin resistance (AVP-R)**, formerly nephrogenic diabetes insipidus, is an inadequate renal response to vasopressin. The names were changed in 2022 by an international working group, endorsed by the major endocrine societies, because "diabetes insipidus" was being confused with diabetes mellitus, sometimes with harmful consequences. Both conditions cause **polyuria** (more than about 3 L of urine per day in an adult) of dilute urine, with thirst and **polydipsia**.
+:::
+
+Causes of AVP deficiency include pituitary surgery, head injury, tumours near the hypothalamus (such as craniopharyngioma), infiltration (Langerhans cell histiocytosis, sarcoidosis), and rare genetic forms; many cases are idiopathic. Notably, an ordinary pituitary adenoma rarely causes AVP deficiency, because vasopressin is made in the hypothalamus. A person with a sellar mass and polyuria should prompt thoughts of another diagnosis. Causes of AVP resistance include lithium, hypercalcaemia, hypokalaemia and inherited V2-receptor or aquaporin-2 defects.
+
+The main differential is **primary polydipsia**: excessive drinking, sometimes associated with mental illness, which dilutes the plasma, suppresses vasopressin and washes out the renal medullary concentration gradient. Here plasma sodium tends to be low-normal, whereas in AVP deficiency it tends to be high-normal because the person is chasing water losses.
+
+The classical test is the **water deprivation test**. Fluids are withheld under supervision while weight, plasma osmolality and urine osmolality are measured. If the urine concentrates normally, the axis is intact (primary polydipsia, though washout can blunt the response). If it does not, **desmopressin**, a synthetic V2 agonist, is given: a rise in urine osmolality points to AVP deficiency, no rise to AVP resistance. More recently, measurement of **copeptin**, a stable fragment of the vasopressin precursor, after hypertonic saline or arginine stimulation has been shown to discriminate AVP deficiency from primary polydipsia more accurately, and is used in specialist centres.
+
+Treatment of AVP deficiency is desmopressin. The main danger is **hyponatraemia** if desmopressin is taken while drinking freely, so people are advised about fluid intake and sodium is monitored. After pituitary surgery there can be a **triphasic response**: transient AVP deficiency, then a few days of inappropriate vasopressin release from damaged neurons (with hyponatraemia), then permanent deficiency if enough neurons have died.
+
+### The syndrome of inappropriate antidiuresis
+
+The opposite problem is vasopressin secretion that persists despite low plasma osmolality. This is the **syndrome of inappropriate antidiuretic hormone secretion (SIADH)**, also called the syndrome of inappropriate antidiuresis. Its essential diagnostic features are:
+
+- hypotonic hyponatraemia (plasma osmolality below 275 mOsm/kg);
+- inappropriately concentrated urine (urine osmolality above 100 mOsm/kg);
+- urine sodium above 30 mmol/L on a normal salt and water intake;
+- clinical euvolaemia;
+- normal thyroid and adrenal function, and no recent diuretic use.
+
+Common causes are lung disease (pneumonia, small-cell carcinoma), central nervous system disease (meningitis, haemorrhage, head injury), drugs (SSRIs, carbamazepine, cyclophosphamide, opioids) and postoperative states with pain and nausea. Fluid restriction is the first-line treatment for chronic SIADH. The safe rate of correcting sodium, and the management of severe symptomatic hyponatraemia, are in [[endocrine/endocrine-emergencies]].
+
+::: example A pair of results in a tired man {#ex-stalk}
+A 48-year-old man has had two years of tiredness, low libido and erectile dysfunction. He has started to bump into door frames. Results: testosterone 4.1 nmol/L (low), LH 1.2 IU/L (low-normal), free T4 9 pmol/L (low), TSH 1.8 mU/L (normal), 9 a.m. cortisol 110 nmol/L (low), prolactin 1,150 mU/L (raised; reference upper limit about 400). MRI shows a 28 mm sellar mass compressing the chiasm. Interpret the results and decide whether this is a prolactinoma.
 ::: solution
-**Two plausible causes and one test distinguishes them ([[#def-prolactin]]): prolactinomas raise prolactin roughly with size — a macro number (often >2000-6000 mIU/L) for a macroadenoma, whereas a 9 mm microadenoma would rarely exceed a few hundred; stalk-effect-plus-risperidone comfortably explains 1250 — the antidote is a supervised drug-substitution-with-psychiatry (a lower-prolactin-risk agent) and repeat levels weeks later, not pituitary surgery ([[psychiatry/psychotic-disorders]], [[pharmacology/adverse-reactions]], [[clinical-skills/clinical-reasoning]]). The rest of the workup: **the pregnancy test first ([[obstetrics-gynaecology/early-pregnancy]]); the full anterior-axis panel including the morning-cortisol question ([[clinical-skills/laboratory-tests]]); the gonadotropin-oestradiol pattern for the hypo-hypo-versus-hyperprolactinaemic-amenorrhoea split ([[endocrine/reproductive-endocrinology]]); the macroprolactin check if the numbers misbehave ([[clinical-skills/laboratory-tests]]); the bone-density-and-oestrogen-replacement-thinking for prolonged amenorrhoea ([[endocrine/bone-calcium]]); and the clear MRI-surveillance rule for the incidental-looker so the lesion does not become the diagnosis ([[public-health/screening]], [[clinical-skills/records-handover]]).**
+**Step 1: localise the deficiencies.** Low testosterone with a non-raised LH, low free T4 with a normal TSH, and low cortisol all follow pattern 2 of [[#thm-feedback]]: the pituitary is not responding to falling target hormones. He has secondary hypogonadism, secondary hypothyroidism and probable secondary adrenal insufficiency.
+
+**Step 2: explain the bumping.** A 28 mm mass pressing on the chiasm suggests a bitemporal hemianopia, which removes peripheral vision on both sides. Formal visual fields are needed.
+
+**Step 3: interpret the prolactin.** A macroprolactinoma of 28 mm would usually produce prolactin in the thousands to tens of thousands of mU/L. A rise to 1,150 mU/L with a large tumour fits a **non-functioning macroadenoma with stalk effect**. (Laboratories also check for the "hook effect", an assay artefact in which extremely high prolactin reads falsely low, by repeating on a diluted sample.)
+
+**Step 4: management order.** Start glucocorticoid replacement first, then levothyroxine (the warning above). Refer urgently to the pituitary multidisciplinary team. A non-functioning macroadenoma threatening vision is treated by trans-sphenoidal surgery; a dopamine agonist would lower the prolactin but would not shrink this tumour or save his vision.
 :::
 :::
 
-::: example The screening dilemma {#ex-cushing}
-A 41-year-old with weight gain, depression on sertraline, 2 units of alcohol daily, hypertension and thin skin: overnight 1 mg dexamethasone gives a 08:00 cortisol of 145 nmol/L (mildly non-suppressed), urinary free cortisol normal x2, late-night salivary cortisol normal x1.
+::: example Galactorrhoea after a new prescription {#ex-prolactin-drug}
+A 26-year-old woman with schizophrenia was switched to risperidone four months ago. Her periods have stopped and she has noticed milky nipple discharge. A pregnancy test is negative. Prolactin is 2,400 mU/L. Thyroid function and renal function are normal. What is the most likely cause, and what should happen next?
 ::: solution
-**An equivocal screen, not a diagnosis ([[endocrine/adrenal]]'s screening ladder and [[#def-prolactin]]-Cushing's-row): the confounders present (depression-and-insomnia-and-obesity pseudo-Cushing physiology — [[psychiatry/mood-disorders]], [[physiology/hormones]]'s stress axis; adherence-and-timing re-check — [[pharmacology/patient-variation]]). The moves: repeat-with-stricter-conditions (two abnormal tests of DIFFERENT modalities before labelling; the dexamethasone-level-and-CYP3A4-interaction-drug review — [[pharmacology/metabolism-excretion]]); the depression-and-alcohol-optimisation-then-retest path; the midnight-salivary-and-urinary-discordance tie-breaker (repeat UFC with creatinine-clearance-check — [[clinical-skills/laboratory-tests]], [[renal/filtration]]); and the clear stop-rule documenting that "mild biochemical abnormality without features" is followed, not investigated into radiology ([[clinical-skills/patient-safety]], [[clinical-skills/records-handover]]) — with the ACTH-and-localisation cascade reserved for genuine biochemistry ([[endocrine/adrenal]]).**
+The commonest cause of a prolactin rise of this size in someone taking a dopamine-blocking antipsychotic is the drug itself. Risperidone is among the antipsychotics most likely to raise prolactin. Pregnancy, hypothyroidism and kidney disease have been excluded.
+
+The next step is not to stop the drug abruptly, which risks relapse of psychosis. The prescriber and psychiatric team can consider switching to a prolactin-sparing antipsychotic (aripiprazole is often used) if clinically appropriate, and recheck prolactin afterwards. If switching is not possible, or if prolactin stays high, a pituitary MRI is reasonable to exclude a coincident tumour. Long-term hypogonadism from hyperprolactinaemia lowers bone density, so an untreated, persistent amenorrhoea needs attention. The decision is shared with her and her psychiatric team ([[psychiatry/psychotic-disorders]]).
 :::
 :::
 
-::: example The polyuric psychiatric ward patient {#ex-polydipsia}
-A 45-year-old with schizophrenia on clozapine drinks ~9 L/day; urine osmolality 140 with plasma 275 and sodium 138; after supervised overnight water deprivation urine osmolality rises to 520; desmopressin adds little.
+::: example Calculating osmolality in hyponatraemia {#ex-osmolality}
+A 71-year-old man admitted with pneumonia has sodium 124 mmol/L, glucose 6.0 mmol/L, urea 4.0 mmol/L. His measured plasma osmolality is 258 mOsm/kg, urine osmolality 480 mOsm/kg and urine sodium 54 mmol/L. He appears euvolaemic, takes no diuretics, and his thyroid function and cortisol are normal. Calculate the osmolality and interpret the picture.
 ::: solution
-**Primary polydipsia, not diabetes insipidus (the deprivation-test physiology: endogenous ADH present, kidneys responsive, medullary washout explaining the submaximal 520 — [[#def-adh]], [[renal/water-sodium]], [[renal/tubular-function]]'s concentration-gradient erosion). Why the distinction matters: desmopressin in this patient causes hyponatraemia-with-seizure-risk (the overcorrection-reversed harm — [[endocrine/endocrine-emergencies]], [[renal/water-sodium]]); management is behavioural-and-medicational (the thirst-circuit and antipsychotic-dry-mouth review — [[psychiatry/psychotic-disorders]], [[pharmacology/adverse-reactions]]; scheduled-fluids-with-ward-routine and the low-salt diet; the sodium-monitoring during relapses; and the risk rule that intercurrent illness-or-restriction turns polydipsia into acute hyponatraemia or the opposite into hypernatraemia — [[clinical-skills/patient-safety]]); the copeptin-era footnote (stimulated copeptin now separates most cases without deprivation theatrics — [[clinical-skills/laboratory-tests]]).**
+Using [[#eq-osm]]:
+
+$$
+2 \times 124 + 6.0 + 4.0 = 248 + 10 = 258 \text{ mOsm/kg}.
+$$
+
+The calculated value matches the measured osmolality, so there is no unmeasured osmole (no osmolar gap). The hyponatraemia is **hypotonic** (258 is below 275). The urine is concentrated (480 mOsm/kg, well above 100), so vasopressin is acting even though plasma is dilute. The urine sodium is above 30 mmol/L, he is euvolaemic, and thyroid, adrenal and diuretic causes have been excluded. This meets the criteria for **SIADH**, here most likely driven by pneumonia. Management is to treat the pneumonia and restrict fluid, with careful monitoring of the sodium.
+:::
+:::
+
+::: example Polyuria on a psychiatric ward {#ex-polydipsia}
+A 39-year-old woman passes about 7 L of urine a day. Plasma sodium is 136 mmol/L and urine osmolality 110 mOsm/kg. She takes lithium for bipolar disorder. During a supervised water deprivation test her plasma osmolality rises to 301 mOsm/kg while urine osmolality stays at 160 mOsm/kg. After desmopressin, urine osmolality is 180 mOsm/kg. What is the diagnosis?
+::: solution
+**Interpret the deprivation phase.** Plasma osmolality has risen above the normal range, which is a strong stimulus to vasopressin, yet the urine has barely concentrated. This rules out primary polydipsia, in which concentration would occur (if partly blunted).
+
+**Interpret the desmopressin phase.** A healthy kidney, or a kidney deprived of vasopressin, should respond to desmopressin with a large rise in urine osmolality, usually well over 50%. Here it rose from 160 to 180 mOsm/kg, a rise of $20/160 = 12.5\%$. The kidney is not responding to vasopressin.
+
+**Diagnosis:** **arginine vasopressin resistance** (nephrogenic diabetes insipidus), and lithium is the obvious cause. Lithium enters collecting duct cells through sodium channels and reduces aquaporin-2 expression. Management is shared with her psychiatrist: whether to continue lithium, ensuring she always has access to water, checking calcium (hypercalcaemia also causes resistance), and knowing that she is at risk of severe hypernatraemia if she cannot drink, for example after surgery or during an illness.
 :::
 :::
 
 ::: widget plot
-f: 100+95*x; 560
-x: 0, 5
-y: 0, 700
-labels: \text{hours after desmopressin},\ \text{urine osmolality (mOsm/kg)};\ \text{central DI response};\ \text{intact-ADH reference floor}
-caption: The desmopressin-response idea ([[#def-adh]]): a dilute-urine patient with central ADH deficiency concentrates briskly once exogenous desmopressin acts on intact renal receptors (the [[renal/tubular-function]] aquaporin-2 machinery), whereas nephrogenic DI barely moves (the lithium-and-channel-lesion story of [[renal/tubular-function]]) and primary polydipsia concentrates with water-deprivation-before-DDAVP ([[psychiatry/psychotic-disorders]]). Modern practice substitutes paired copeptin-osmolality chemistry for much of the classic two-day test ([[clinical-skills/laboratory-tests]], [[renal/water-sodium]]); the hyponatraemia danger of desmopressin-overrepletion is an [[endocrine/endocrine-emergencies]] topic with its [[renal/water-sodium]] osmotic-demyelination corollary ([[nervous-system/motor-systems]]).
-:::
-
-::: example The apoplexy handover {#ex-apoplexy}
-A 52-year-old with a known 1.4 cm non-functioning adenoma is brought in with thunderclap headache, vomiting, blurred vision and hypotension; Na 126, cortisol random 98 nmol/L, glucose 3.1.
-::: solution
-**Pituitary apoplexy — the bleed-into-adenoma emergency ([[endocrine/endocrine-emergencies]]-chapter owns the protocol; the axes here): the acute-cortisol-deficiency-with-hypoglycaemia-hyponatraemia-and-hypotension is the immediate killer and gets stress-dose-hydrocortisone-before-everything-else ([[endocrine/adrenal]], [[endocrine/endocrine-emergencies]]); the hyponatraemia reading (cortisol-loss-disinhibited-ADH plus volume — the too-fast-correction guardrails of [[renal/water-sodium]]); the visual-and-neuro-surgical-decision (formal fields when cooperative, urgent MRI and neurosurgical-and-endocrine-joint-review for decompression — [[nervous-system/sensory-systems]], [[nervous-system/motor-systems]]; the coagulopathy-exclusion ([[blood/haemostasis-bleeding]]); and the after (the full hypopituitarism-replacement-programme and its steroid-first-then-thyroid sequencing — [[#def-hypopituitary]]; the driving-and-DVLA-style-reporting and medical-alert-bracelet conversation ([[medical-ethics-law/professionalism-regulation]]); the sodium-and-fluid-trajectory charting (the osmolality-led [[renal/water-sodium]]); and the apoplexy-into-hypertension-adjacent-ICU-physiology — [[emergency-critical-care/critical-care]]).**
-:::
+f: 100*x/(1+x); 100*0.3*x/(1+0.3*x)
+x: 0, 20
+y: 0, 100
+labels: \text{Normal pituitary response}; \text{Reduced reserve}
+caption: A simplified picture of dynamic testing. A stimulus (horizontal axis, arbitrary units) produces a hormone response (vertical axis, percentage of maximum). A gland with reduced reserve may have a normal basal level but responds poorly to stimulation, which is why deficiency is tested by stimulating. Illustrative model only.
 :::
 
 ::: quiz
-In combined ACTH and TSH deficiency, replacement must begin with:
-- [ ] Levothyroxine, to restore metabolic clearance
-- [x] Hydrocortisone, because thyroid hormone accelerates cortisol clearance and can precipitate adrenal crisis
-- [ ] Both simultaneously at full dose
-- [ ] Growth hormone
+A 60-year-old woman has a low free T4 and a TSH of 1.5 mU/L (within the reference range). Which statement is correct?
+- [ ] Her thyroid function is normal because the TSH is normal.
+- [x] This pattern suggests secondary hypothyroidism and needs pituitary assessment.
+- [ ] She has primary hypothyroidism and should be followed by TSH.
+- [ ] A normal TSH proves the thyroid gland is the source of the problem.
 ::: solution
-**Thyroxine-speeds-cortisol-metabolism ([[endocrine/adrenal]]'s cortisol kinetics and [[endocrine/thyroid]]'s pharmacology) unmasking fatal hypocortisolaemia — the sequence rule for [[#def-hypopituitary]]; GH-if-anything-comes last and only after the adrenal axis is stabilised ([[endocrine/endocrine-emergencies]]); the sick-day-and-driving-counselling belongs to the same teaching moment ([[clinical-skills/communication]], [[medical-ethics-law/professionalism-regulation]]).**
+With a low free T4, a working pituitary should produce a high TSH. A normal TSH is inappropriately low, so the controller is failing ([[#thm-feedback]], pattern 2). She needs the other pituitary axes checked, especially cortisol, and pituitary imaging. Treatment would be monitored by free T4, not TSH.
 :::
 :::
 
 ::: history
-**The endocrine-pituitary lineage: Hillis's 1921 posterior-pituitary-extract (the "infundin") that began hormone-replacement medicine; Cushing's 1900-12 acromegaly-and-surgical series (the surgeon-physician archetype — [[surgery/gastrointestinal-surgery]]-adjacent); Sheehan's 1937 post-partum necrosis clinico-pathological corpus ([[obstetrics-gynaecology/pregnancy-complications]]); the portal-vascular anatomy description (Popa and Fielding 1930) that explained the stalk effect ([[anatomy/head-neck]]); Schally-and-Guillemin's decade-long GnRH-and-TRH isolation-and-sequencing (Nobel 1977) that created the analogue-drug industry ([[pharmacology/drug-receptor]]); Carlsson's dopamine discovery making prolactin-inhibition therapy possible ([[psychiatry/psychotic-disorders]]-adjacent-pharmacology-tree); Hardy-and-Transsphenoidal-era microsurgery and Wilson's transsphenoidal-standardisation ([[surgery/gastrointestinal-surgery]]); the modern inferior-petrous-sinus-sampling and 7T-MRI craft for occult Cushing's ([[endocrine/adrenal]]); copeptin's rise replacing water-deprivation theatrics ([[clinical-skills/laboratory-tests]]); and the checkpoint-inhibitor-hypophysitis literature reminding everyone that old diseases get new causes ([[immunology/vaccines-immunotherapy]], [[endocrine/endocrine-emergencies]]).**
+The idea that the pituitary is controlled by the brain through blood rather than nerves was developed by the British anatomist **Geoffrey Harris** in the 1940s and 1950s, who showed that the portal vessels carry hypothalamic signals to the anterior pituitary. Proof came when **Roger Guillemin** and **Andrew Schally**, working in rival laboratories and processing hypothalamic tissue from hundreds of thousands of sheep and pigs, isolated and sequenced TRH (1969) and GnRH (1971). They shared the 1977 Nobel Prize in Physiology or Medicine with **Rosalyn Yalow**, whose radioimmunoassay made it possible to measure these hormones in blood. Earlier, **Harvey Cushing** had pioneered pituitary surgery in the first decades of the twentieth century and, in 1932, described the syndrome caused by pituitary basophil adenomas that now bears his name.
 :::
 
 ## Where this leads
 
-The target glands in [[endocrine/thyroid]], [[endocrine/adrenal]], [[endocrine/reproductive-endocrinology]]; the emergencies (apoplexy, crisis, sodium) in [[endocrine/endocrine-emergencies]]; water and sodium physiology in [[renal/water-sodium]]; growth in [[paediatrics/growth-development]]; pregnancy interactions in [[obstetrics-gynaecology/pregnancy-complications]]; visual anatomy in [[nervous-system/sensory-systems]].
-
-::: exercise Counsel before discharge {level=2}
-A 46-year-old newly diagnosed with panhypopituitarism asks about holidays, dentistry and road accidents. Answer in sick-day grammar.
-::: solution
-**The four rules ([[#def-hypopituitary]], [[endocrine/adrenal]]): double-or-triple oral hydrocortisone for febrile illness, surgery and dental work, with the inject-if-vomiting rule; the IM-hydrocortisone kit with family training, cards and a medical-alert bracelet ([[clinical-skills/communication]]); the practicalities — time-zone dosing on holidays, needle-carrying letters for security, gastroenteritis protocols, and driving-declaration rules where relevant ([[medical-ethics-law/professionalism-regulation]]); and the safety explanation for prescription sequencing — hydrocortisone steady-state before levothyroxine escalation ([[endocrine/thyroid]]). Add the pregnancy-and-labour steroid plan when applicable ([[obstetrics-gynaecology/labour-birth]]) and the annual-review invitation with the shared-care GP letter ([[clinical-skills/records-handover]]).**
-:::
-:::
-
-::: exercise Which test first {level=2}
-Choose the single best initial test and its trap: suspected central DI; suspected acromegaly; suspected Cushing's disease; suspected prolactinoma.
-::: solution
-**Central DI — paired plasma-and-urine osmolality with sodium and copeptin in the polyuric window, trap: water-loading before sampling ([[#def-adh]], [[clinical-skills/laboratory-tests]]); acromegaly — IGF-1 then the oral-glucose suppression, traps: assay-age-sex norms and non-fasting glucose effects ([[#def-prolactin]]); Cushing's disease — two abnormal first-line screens (UFC, late-night salivary, 1 mg dexamethasone), traps: pseudo-Cushing and assay cross-reactivity ([[endocrine/adrenal]]); prolactinoma — fasting morning prolactin with macro screen, traps: drugs-and-macro-and-stalk — the [[#ex-stalk]] lesson. MRI comes after the biochemistry every time ([[clinical-skills/clinical-reasoning]]).**
-:::
-:::
+The thyroid axis is examined in detail in [[endocrine/thyroid]] and the adrenal axis in [[endocrine/adrenal]]. The gonadal axis, puberty and fertility are in [[endocrine/reproductive-endocrinology]]. Pituitary apoplexy and severe hyponatraemia are emergencies covered in [[endocrine/endocrine-emergencies]]. The visual pathways are described in [[nervous-system/sensory-systems]], and general principles of hormone action in [[physiology/hormones]].
 
 ::: summary
-- Think pituitary for any hormone pair that is "inappropriately normal" (low T4 with low/normal TSH) and never treat a single axis in isolation.
-- Every sellar mass gets the full axis panel plus visual fields before management; incidentalomas and stalk effects routinely masquerade as the cause.
-- Replace cortisol before thyroid hormone; teach sick-day rules and driving implications on day one, not in follow-up.
-- Prolactin is the most drug-confounded hormone and the most medically treatable secretory tumour.
-- ADH disorders are located with paired plasma-urine chemistry and copeptin; central DI responds to desmopressin, nephrogenic does not, and polydipsia needs psychiatry at the table.
+- The anterior pituitary is a gland controlled by hypothalamic hormones carried in portal veins; the posterior pituitary is nerve tissue that releases vasopressin and oxytocin made in the hypothalamus.
+- Read hormones in pairs. Low target hormone with high pituitary hormone means gland failure; low target hormone with low or normal pituitary hormone means pituitary or hypothalamic failure.
+- Test deficiency by stimulation and excess by suppression.
+- Pituitary tumours cause hormone excess, hypopituitarism and mass effects, classically bitemporal hemianopia.
+- In hypopituitarism, replace cortisol before thyroxine, and monitor central hypothyroidism by free T4.
+- A modest prolactin rise with a large tumour suggests stalk effect; drugs that block dopamine are the commonest cause of mild hyperprolactinaemia. Dopamine agonists treat most prolactinomas.
+- Acromegaly is screened with IGF-1 and confirmed by failure of GH suppression on an oral glucose load.
+- AVP deficiency and AVP resistance (formerly diabetes insipidus) cause dilute polyuria; SIADH causes hypotonic hyponatraemia with inappropriately concentrated urine.
 :::
 
 ## Exercises
 
 ::: exercise Interpret the pair {level=1}
-Free T4 6 pmol/L (low), TSH 1.2 (normal): what are the next three steps?
+For each result pair, state whether the problem is primary, secondary, or autonomous gland overactivity: (a) low cortisol, high ACTH; (b) high free T4, undetectable TSH; (c) low testosterone, low LH.
 ::: solution
-**Central-hypothyroidism pattern ([[#def-axes]] feedback logic): full anterior-axis panel including morning cortisol and prolactin ([[clinical-skills/laboratory-tests]]); the sick-euthyroid-and-drug-and-recovery-state audit ([[pharmacology/adverse-reactions]]); and MRI-with-clinical-correlation plus the adrenal-before-thyroid-replacement rule before treating ([[#def-hypopituitary]], [[endocrine/adrenal]], [[endocrine/thyroid]]).**
+(a) Primary adrenal insufficiency: the pituitary is responding to low cortisol by raising ACTH. (b) Autonomous thyroid overactivity (for example Graves' disease or a toxic nodule): high T4 has suppressed TSH. (c) Secondary hypogonadism: the pituitary is not responding to low testosterone, so the lesion is in the pituitary or hypothalamus.
 :::
 :::
 
-::: exercise Name the syndrome {level=1}
-Match: bitemporal field loss + prolactin 90; galactorrhoea + amenorrhoea + prolactin 4800; snoring + enlarged hands + IGF-1 high; weight-gain + bruising + loss of cortisol rhythm.
+::: exercise The visual field {level=1}
+Explain why a pituitary macroadenoma typically causes loss of the temporal fields of both eyes.
 ::: solution
-**Non-functioning-adenoma-with-stalk-effect ([[#def-adenomas]], [[#def-prolactin]]); macroprolactinoma (medical-first — [[#def-prolactin]]); acromegaly ([[#def-prolactin]]-GH-row); Cushing's syndrome — the diagnostic ladder lives in [[endocrine/adrenal]].**
+The tumour expands upwards and presses on the optic chiasm from below. At the chiasm the fibres from the nasal half of each retina cross. The nasal retina receives light from the temporal visual field. Damaging the crossing fibres therefore removes the temporal field of each eye: a bitemporal hemianopia.
 :::
 :::
 
-::: exercise Run the triphase {level=2}
-Day 2 after transsphenoidal surgery the patient has urine output 400 mL/h with sodium 150; day 5 he becomes oliguric with sodium 128. Explain and manage each phase.
+::: exercise Calculated osmolality {level=1 check="2*131+12+9"}
+A person has sodium 131 mmol/L, glucose 12 mmol/L and urea 9 mmol/L. Calculate the plasma osmolality in mOsm/kg using $2[\text{Na}^+] + [\text{glucose}] + [\text{urea}]$.
 ::: solution
-**The classical triphase response ([[#def-adh]]): phase-1 axonal-shock central DI (desmopressin-cover-with-flattrate-IV-fluids-and-q6h-Na — the overcorrection-and-rebound rules [[renal/water-sodium]], [[endocrine/endocrine-emergencies]]); phase-2 the anti-diuretic-secretory-leak phase from dying-terminals (stop-DDAVP-and-restrict-and-watch-hyponatraemia-with-seizure-risk); phase-3 potential permanence decided at weeks, not hours ([[clinical-skills/records-handover]]); the ward-protocol that prevents the two classic harms — missed-hypernatraemic-DI and iatrogenic-hyponatraemic-seizure ([[clinical-skills/patient-safety]]).**
+$2 \times 131 + 12 + 9 = 262 + 21 = 283$ mOsm/kg.
 :::
 :::
 
-::: exercise Work the fatigue {level=2}
-A 38-year-old with 2 years of fatigue, cold-intolerance and low libido post-partum (massive haemorrhage, no lactation, amenorrhoea since): outline the diagnosis and the safe first prescription.
+::: exercise Which tumour? {level=2}
+A 33-year-old woman has amenorrhoea. MRI shows a 22 mm pituitary mass. Prolactin is (a) 9,800 mU/L or (b) 1,300 mU/L. For each value, give the likely diagnosis and first-line treatment.
+::: hint
+Compare the size of the prolactin rise with the size of the tumour.
+:::
 ::: solution
-**Sheehan-syndrome hypopituitarism until disproved ([[#def-hypopituitary]], [[obstetrics-gynaecology/pregnancy-complications]]): the axis panel (cortisol, free-T4-and-TSH, gonadotropins-oestradiol, prolactin-failure-to-rise-and-Igf-1 — [[clinical-skills/laboratory-tests]]); MRI's empty-or-partially-empty sella; the first prescription is hydrocortisone, with levothyroxine added days later ([[endocrine/adrenal]], [[endocrine/thyroid]]); then sex-steroid-replacement-and-bone-protection and the fertility-route-gonadotropins-not-clomifene plan ([[endocrine/reproductive-endocrinology]], [[obstetrics-gynaecology/contraception-fertility]]); the sick-day-training-steroid-card-and-emergency-injection and the driving-and-pregnancy-planning conversations ([[endocrine/endocrine-emergencies]], [[clinical-skills/communication]], [[medical-ethics-law/professionalism-regulation]]).**
+(a) A macroprolactinoma: very high prolactin in proportion to a large tumour. First-line treatment is a dopamine agonist such as cabergoline, which usually lowers prolactin and shrinks the tumour. (b) A non-functioning macroadenoma with stalk effect: the tumour compresses the stalk and blocks dopamine from reaching lactotrophs, causing a modest rise. A dopamine agonist would lower the prolactin but not shrink the tumour; treatment is usually surgery if it threatens vision or is growing, and assessment for hypopituitarism is needed in either case.
 :::
 :::
 
-::: exercise Audit the incidentaloma {level=2}
-A 1.4 cm sellar lesion found on migraine MRI: prolactin 2600 mIU/L, everything else normal, fields full. Who is harmed by "watch and scan", and what is the plan?
+::: exercise The desmopressin response {level=2 check="round(100*(620-210)/210)"}
+In a water deprivation test, urine osmolality reaches 210 mOsm/kg at the end of deprivation and 620 mOsm/kg after desmopressin. Calculate the percentage rise after desmopressin, rounded to the nearest whole percent, and state the likely diagnosis.
 ::: solution
-**A macroprolactinoma (the prolactin-size concordance proves secretion — not an incidentaloma — [[#def-prolactin]]): observation-with-scans-only harms through delayed-medical-cure (bone-loss-hypogonadism-mass-progression [[endocrine/bone-calcium]], [[endocrine/reproductive-endocrinology]]); the plan is cabergoline with prolactin-and-testosterone-and-bone-and-pituitary-imaging follow-up, then taper-and-withdrawal-attempt-rules in selected responders ([[pharmacology/dosing-principles]], [[public-health/screening]]); the headache-lesion-coincidence counselling (migraine will not remit — expectation management — [[clinical-skills/communication]], [[nervous-system/headache-pain]]); and the incident-style documentation of the mislabelling-risk for the record ([[clinical-skills/patient-safety]], [[clinical-skills/records-handover]]).**
+Rise $= (620 - 210)/210 \times 100 = 410/210 \times 100 = 195.2\%$, which rounds to **195%**. The kidney cannot concentrate on its own but responds strongly to exogenous vasopressin, so the problem is lack of vasopressin: **arginine vasopressin deficiency** (cranial diabetes insipidus).
 :::
 :::
 
-::: exercise Design the hypopit service {level=3}
-Build the joint endocrine-neurosurgery pathway from admission apoplexy to adult hypopituitary follow-up, including safety-critical items and equity of access.
+::: exercise Hyponatraemia after surgery {level=2}
+Five days after trans-sphenoidal surgery, a 52-year-old man's sodium falls from 141 to 127 mmol/L. On days 1–2 he had polyuria. Explain the sequence and what might happen next.
 ::: solution
-**Acute lane: the apoplexy-pack (stress-dose-hydrocortisone-first, sodium-and-glucose-led-resuscitation — [[endocrine/endocrine-emergencies]], [[renal/water-sodium]]; same-day ophthalmology-and-neurosurgery review with the visual-fields-and-pupil-record; MRI-with-pituitary-protocol — [[clinical-skills/medical-imaging]]; the ICU-neuro-ophthalmology-endocrine triad for the deteriorating — [[emergency-critical-care/critical-care]]); discharge essentials (the steroid-card-and-injection-training-and-sick-day-leaflet-and-medical-alert-bracelet — [[endocrine/adrenal]]; the driving-and-occupation advice documented and the licensing-body rules applied consistently — [[medical-ethics-law/professionalism-regulation]]; the follow-up-with-axes-reassessment appointment before admission ends — [[clinical-skills/records-handover]]). Chronic lane (the shared-care GP-facing-plan with the replacement table and monitoring intervals — [[geriatrics-palliative/polypharmacy]]; the annual review (weight-and-composition, bone-density-by-risk, lipids-and-cardiovascular-risk, fertility-planning-clinic-availability — [[endocrine/bone-calcium]], [[cardiovascular/vascular-disease]], [[endocrine/reproductive-endocrinology]]); the GH-replacement-access-policy with its equity-and-evidence-debates — [[public-health/health-systems-economics]], [[public-health/determinants-inequalities]]; the pregnancy-and-labour plan (hydrocortisone-in-labour and desmopressin-compatibility — [[obstetrics-gynaecology/labour-birth]], [[obstetrics-gynaecology/pregnancy-complications]]); and the never-event list (thyroxine-before-hydrocortisone, missed-apoplexy-in-headache-triage, un-documented-driving-advice, un-trained-emergency-injection, and the lost-GP-handover for complex replacement — [[clinical-skills/patient-safety]]).**
+This fits the **triphasic response**. Damage to the stalk first stops vasopressin release (polyuria, days 1–2). Then the damaged neurons degenerate and release their stored vasopressin unregulated, causing an SIADH-like phase with hyponatraemia, typically around days 5–10. If many neurons have died, permanent AVP deficiency follows once the stores are exhausted. He needs close monitoring of sodium and fluid balance, fluid restriction during the second phase, and review of whether he needs desmopressin afterwards. Any desmopressin prescribed during phase 1 must be stopped during phase 2.
+:::
+:::
+
+::: exercise Acromegaly testing {level=2}
+A 45-year-old man has a raised IGF-1. Explain why an oral glucose tolerance test is used to confirm acromegaly rather than a single random GH level.
+::: solution
+GH is secreted in pulses, so a single random level can be high in a healthy person (during a pulse) or normal in a person with acromegaly (between pulses). IGF-1 reflects average GH action and is a good screening test. In health, a glucose load suppresses GH; in acromegaly the tumour secretes autonomously and GH fails to suppress. This applies the general rule: test excess by trying to suppress it.
+:::
+:::
+
+::: exercise A case with a differential {level=3}
+A 34-year-old woman, eight months after a delivery complicated by a major postpartum haemorrhage requiring transfusion, reports that she could not breastfeed, her periods have not returned, and she feels exhausted and cold. Sodium is 129 mmol/L. Give the most likely diagnosis, explain each feature, list two alternative diagnoses, and outline the immediate priorities.
+::: hint
+The pituitary enlarges in pregnancy and depends on a blood supply that can fail in shock.
+:::
+::: solution
+**Most likely diagnosis: Sheehan syndrome** (postpartum pituitary necrosis). The pituitary enlarges in pregnancy and is vulnerable to ischaemia during severe haemorrhage and hypotension.
+
+- Failure of lactation: prolactin deficiency.
+- No return of periods: gonadotrophin deficiency.
+- Exhaustion, cold intolerance: secondary hypothyroidism and cortisol deficiency.
+- Hyponatraemia: cortisol deficiency impairs free-water excretion (cortisol normally restrains vasopressin), with hypothyroidism contributing.
+
+**Alternatives**: lymphocytic hypophysitis (autoimmune inflammation of the pituitary, which typically presents late in pregnancy or postpartum, often with headache); postpartum thyroiditis in its hypothyroid phase (would show a high TSH); postnatal depression (does not explain the hyponatraemia or failure of lactation, but may coexist).
+
+**Priorities**: check 9 a.m. cortisol and ACTH, free T4 and TSH, LH, FSH, oestradiol and prolactin; then start **hydrocortisone first**, then levothyroxine, with sick-day rules and an emergency steroid card. If she is unwell or hypotensive, treat as possible adrenal crisis without waiting for results. Arrange pituitary MRI and endocrine follow-up, and discuss future fertility (which can be restored with gonadotrophin treatment).
+:::
+:::
+
+::: exercise Design a test interpretation rule {level=3}
+A hospital laboratory wants to add an automatic comment to free T4 results. Propose a rule for when the comment should suggest pituitary disease rather than primary thyroid disease, explain how feedback justifies it, and name one situation in which the rule would give a misleading suggestion.
+::: solution
+**Rule**: if free T4 is below the reference range and TSH is not raised (below the upper reference limit), comment that "low free T4 with non-raised TSH may indicate secondary hypothyroidism; consider pituitary assessment if clinically appropriate."
+
+**Justification**: by negative feedback, a low free T4 should drive TSH above the reference range if the pituitary is working. A TSH that is not raised is inappropriate and implies the controller is failing ([[#thm-feedback]]).
+
+**Misleading situations** (any one): non-thyroidal illness in a critically ill person, where TSH and T4 both fall temporarily without pituitary disease; recent treatment of hyperthyroidism, when TSH can stay suppressed for weeks after T4 has fallen; drugs that suppress TSH, such as high-dose glucocorticoids or dopamine; or assay interference. The comment should therefore advise clinical correlation rather than state a diagnosis.
 :::
 :::
