@@ -1,142 +1,357 @@
-Resuscitation is the applied science of the last five minutes: the physiology of circulatory arrest, the sequence that buys time until the cause is reversed, the medicine that arrives in the right dose at the right rhythm, and the judgment about when starting - and when stopping - serves the patient. **This chapter covers the arrest itself (the rhythms and their mechanisms, high-quality CPR as a pharmacological intervention delivered by hands, the ALS algorithm and the reversible causes, the special circumstances of hypothermia and drowning and pregnancy and toxins), the peri-arrest states that the algorithm is really about (the unstable bradycardias and tachyarrhythmias and the syncope that was actually a pause), the post-resuscitation phase (the coronary angiography question, temperature management, the prognostication that must wait), and the decisions around CPR itself (the ceilings-of-care and resuscitation-plan conversations, the termination-of-efforts rules, and the system - from dispatcher-assisted compression-only CPR through public defibrillators to extracorporeal resuscitation). Its culture is a team culture: the algorithm is easy and the performance is not, which is why the modern curriculum is as much human-factors training as pharmacology.**
+When the heart stops pumping, the brain loses consciousness within about ten seconds and begins to suffer irreversible injury within minutes. Resuscitation is the set of actions that keeps some blood flowing during those minutes, restores a perfusing rhythm where that is possible, and then protects the organs that were starved. It is one of the few areas of medicine where a fixed sequence, practised until it is automatic, clearly saves lives.
 
-## The arrest
+This chapter follows the patient through the event. It starts with what cardiac arrest is and why chest compressions work, then covers basic and advanced life support, the reversible causes, arrests in special circumstances, the rhythms that come just before or after an arrest, care after the return of circulation, and the decisions about whether to attempt resuscitation at all. The algorithms follow the Resuscitation Council UK (RCUK) adult guidelines of 2021; the October 2025 update keeps the same drug timing. Doses quoted are the standard adult values printed in those algorithms and are given for teaching; practice follows current local guidance.
 
-::: definition Cardiac arrest: mechanism, algorithm and reversible causes {#def-arrest}
-**The mechanism: effective circulation stops (the ventricular fibrillation and pulseless-ventricular-tachycardia of the ischaemic-myocardium-in-electrical-storm which is the majority of sudden witnessed adult arrests and the one the defibrillator fixes, the asystole-and-PEA-of-empty-hearts-exhausted-myocardia-and-the-lesions-below which are the arrest-rhythms-of-delayed-arrivals-and-of-non-cardial-causes), and the whole discipline is the arithmetic of flow-debt (the brain's minutes, the myocardium's and kidneys' hours, the CPR-generated-flow-substitutes-for-a-fraction-of-normal-which-is-why-compressions-are-a-drug-with-a-dose: depth-and-rate-and-full-release-and-minimal-interruptions-each-with-trial-and-register-derived-mortality-effects-and-the-physical-and-mental-fatigue-curves-that-make-mechanical-devices-an-interesting-adjunct-not-a-replacement-and-the-120-per-minute-and-5-6-cm-and-'stay-on-the-patient'-culture-that-every-team-drills). The ALS algorithm as a decision tree with two branches: the shockable (the defibrillation-as-soon-as-possible-with-the-biphasic-150-200J-or-escalating-protocol and the drug timing of the UK Resuscitation Council 2021 and ERC 2025 algorithms (adrenaline 1 mg and amiodarone 300 mg after the third shock, then adrenaline every 3–5 minutes, i.e. every alternate two-minute cycle, and a further amiodarone 150 mg after the fifth shock) and-the-dual-sequential-defibrillation-for-refractory-VF-which-is-a-2020s-adjacent-trial-in-progress-and-the-'minimise-pauses-around-the-shock'-discipline) and the non-shockable (the adrenaline-as-soon-as-possible-as-the-differentiator-and-the-rhythm-recheck-every-two-minutes-which-is-also-the-ECG-interpretation-window-because-a-fine-VF-misread-as-asystole-is-the-reversal-that-some-deaths-turn-on) - all of it run against the clock by a team with named roles (the leader-not-the-compressor, the timer-and-documenter, the airway, the access, the defibrillation, and the closed-loop-communication-and-clear-pauses-and-'who-is-doing-what-by-when' from the CRM literature that measurably improves-what-minds-alone-forget). The reversible causes chased during the compressions because the algorithm without the Hs-and-Ts is a metronome (the hypoxia-and-hypo-hyperkalaemia-and-hypothermia-and-hydrogen-ion acidosis-and-hypoglycaemia-and-hypovolaemia-and-tension-pneumothorax-and-tamponade-and-thrombosis-coronary-and-pulmonary-and-tables-toxic-ingestion: each with its bedside diagnostic during CPR - the gas and the potassium and the ultrasound-look-at-the-heart-and-the-lungs-and-the-volume-and-the-tract-history-and-the-pre-hospital-12-lead-from-the-ambulance-which-is-evidence-preserved-in-asystole-and-the-'give-calcium-if-hyperkalaemic-or-hypocalcaemic-hyperkalaemia-being-the-arrest-cause-with-the-fastest-cure'-culture-of-the-renal-unit) and each with its own reversal-resuscitation (the dialysis-or-CRRT-after-ROSC-for-the-high-potassium, the needle-decompression-and-chest-tube, the pericardiocentesis, the thrombolysis-or-embolectomy-for-the-massive-PE-arrest-with-the-'CPR-longer-if-thrombolysed'-rule-that-breaks-teams'-termination-habits, and the fluids-and-blood-for-the-bleeding-arrest). Special circumstances rewrite the rules: the hypothermia (the 'not dead until warm and dead' with the ECLS-rewarming-transport-decision and the ventricular-arrhythmias-not-treated-under-30-degrees-C-and-the-thyroxine-and-adrenal-and-sepsis-and-drug-contributions), the drowning (the ventilatory-first-CPR-and-the-cervical-spine-not-obsessive-and-the-surf-and-submersion-time-that-buys-neurological-recovery-even-after-an-hour-in-icy-water), the pregnant patient (the left-lateral-uterine-displacement-hand-and-the-perimortem-caesarean-section-at-five-minutes-which-is-the-fastest-both-patients-obstetric-procedure-and-the-most-feared-and-the-most-drilled-and-the-defibrillation-safety-for-the-fetus-which-is-a-non-issue), the toxins (the lipid-emulsion-for-the-local-anaesthetic-and-lipophilic-drug-poisonings-and-the-sodium-bicarbonate-for-the-tricyclic-QRS-and-the-specific-antidotes-in-the-poisoning-chapter), and the pacing-dependent-and-device-patient (the pacemaker-and-ICD-interrogation-and-magnet-over-the-ICD-therapies-and-the-external-pads-clear-of-the-device-and-the-'is-the-ICD-firing-into-a-LEADS-fracture-or-into-VF'-differential-which-is-diagnosed-from-the-shock-log). And ROSC: the post-arrest syndrome is its own resuscitation phase (the post-cardiac-arrest-syndrome of reperfusion-injury-and-myocardial-stunning-and-the-vasopressor-and-ventilation-strategy-targeting-normoxia-normocapnia-and-hypotension-avoidance-because-the-arterial-pressure-is-the-cerebral-perfusion-pressure-and-the-coronary-angiography-straight-to-STEMI-positive-or-cath-lab-with-haemodynamic-stability-for-selected-non-STEMI-per-the-2020s-COCA-and-TOMAHAWK-era-nuance-and-the-EEG-bispectral-index-and-multimodal-neuroprognostication-covered-in-the-critical-care-chapter-not-at-hour-six-when-nobody-can-tell-you-yet).**
+## What cardiac arrest is {#sec-arrest}
+
+::: definition Cardiac arrest {#def-arrest}
+**Cardiac arrest** is the sudden loss of effective cardiac output. The person is unresponsive and is not breathing normally. In practice it is recognised clinically, not by feeling for a pulse, because pulse checks by trained and untrained people are unreliable.
+
+The rhythm on the monitor falls into one of two groups:
+
+- **Shockable rhythms**: **ventricular fibrillation (VF)**, chaotic electrical activity with no organised contraction, and **pulseless ventricular tachycardia (pVT)**, a fast broad-complex rhythm that produces no output. A defibrillator shock can terminate both.
+- **Non-shockable rhythms**: **asystole**, the absence of electrical activity, and **pulseless electrical activity (PEA)**, an organised rhythm that would normally produce a pulse but does not. A shock does not help; the treatment is CPR, adrenaline and finding the cause.
+
+**Return of spontaneous circulation (ROSC)** means a perfusing rhythm has come back, shown by a pulse, a rising end-tidal CO₂ or an arterial pressure trace.
 :::
 
-## Before and after the arrest
+The two groups differ in cause and prognosis. VF is typically the first rhythm when an adult collapses suddenly from acute myocardial ischaemia or an inherited or structural heart disease. It is the most treatable arrest: when a defibrillator is applied within the first few minutes, a large proportion of people survive. Asystole and PEA are more often the end result of something else, such as hypoxia, bleeding, a pulmonary embolus or a metabolic disturbance, or they are what VF decays into if no one intervenes. Their outcome depends on finding and reversing that cause.
 
-::: definition Peri-arrest states, the decision to attempt, and the system {#def-peri}
-**The peri-arrest medicine the algorithm exists for: unstable bradycardias (the atropine-not-for-the-complete-heart-block-with-wide-complex-or-transplanted-hearts-adjacent-honest-limits and the pacing choices - the adrenaline-or-dopamine-infusion-as-a-bridge-and-the-transtelephone-advice-because-a-symptomatic-2:1-or-3rd-degree-block-with-syncope-is-an-admission-and-a-pacing-plan-not-an-outpatient-recheck - and the hyperkalaemia-and-hypothermia-and-drug-overdose-bradycardias-that-need-their-own-treatments-not-pacing-and-the-'bradycardia-in-a-dying-person-is-usually-protective-not-the-problem'-ceiling-of-care-clause that prevents the atropine-then-pacing-then-adrenaline-escalation-on-someone-whose-heart-is-stopping-as-part-of-dying). The unstable tachyarrhythmias (the synchronised-cardioversion-for-the-unstable-with-the-sedation-never-delayed-for-perfect-fasting-conditions-and-the-energy-and-patch-position-and-synchronisation-mode-checklist-which-is-the-most-drilled-and-most-fumbled-procedure-in-crash-cart-competence, the adenosine-for-the-regular-wide-or-narrow-SVT-idiopathic-versus-the-degenerated-and-the-amiodarone-for-the-stable-VT-which-then-needs-the-ischaemia-and-structural-workup-as-admission-not-discharge-with-a-letter, and the pre-excitation traps: the AF-with-WPW-that-kills-any-clinician-who-gives-verapamil-or-digoxin-or-adenosine-and-the-'wide-regular-and-fast-in-a-young-person-think-accessory-pathway'-discipline that is on every toxicology and arrhythmia safety list). The syncope that was a pause or a storm (the asystolic-alarm-and-carotid-sinus-and-inherent-conduction-disease-and-arrhythmogenic-RV-cardiomyopathy-and-long-QT-and-Brugada-and-CPVT-contexts-covered-by-the-cardiology-and-geriatric-chapters-and-the-'exertional-or-supine-or-recurrent-in-junction-with-a-family-history'-admit-now-flag). The decision to attempt CPR: the ethical-medical-surgical-judgment-of-physiology-and-values-not-a-yes-no-to-a-form (the Resuscitation-Council-and-General-Medical-Council-and-BMA-and-Royal-Colleges-era-statements-and-the-2016-2023-English-law-era-after-the-TM-and-Winston-Paterson-adjacent-cases-on-consent-and-CPR-and-'clinically-assisted-nutrition-and-hydration'-and-the-ReSPECT-and-'escalation-of-care-planning-and-treatment-and-recommendation'-records which ended the era of the-default-resuscitation-and-the-never-try-debate-into-a-procedural-medicine: a recommendation-discussed-with-patient-or-family-where-possible-documented-available-at-the-crisis-and-revisit-able-and-a-medical-legal-debate-about-patients'-consent-to-not-being-attempted-still-unevenly-settled); the termination of resuscitation rules (the ALS-and-BLS-stopping-criteria-applied-together-not-cherry-picked - no reversible-cause-suspected, no-shockable-rhythm-and-no-witnessed-no-bystander-CPR-'no-flow' interval and the arrest seen by trained eyes in a monitored setting with continuous CPR, and the honest rule-of-humility that the decision is made by the resuscitation-officer and the team's moral distress gets the debrief because the human-factors-research-shows-'when-do-we-stop'-is-the-crisis-of-unanswered-team-stress-and-burnout-questions); and the system around the out-of-hospital cardiac arrest (the chain of survival: the dispatcher-assisted-televised-CPR-coaching-and-'all-compressions-for-laypeople'-simplicity and the public-access-defibrillation-and-AED-and-volunteer-responder-apps-whose-Swedish-and-Dutch-and-Japanese-register-data-show-real-survival-moves-when-they-reach-before-the-ambulance-and-the-'shock-first-for-witnessed-collapse'-logic and the mechanical-CPR-and-ECPR-ECLS-transport era (the ARREST-and-INCEPTION-and-CIRCUS-era-trials-and-observational-data-of-the-2020s showing refractory-shockable-arrests-survivable-with-ECMO-and-hospitals-now-flying-ECMO-teams-to-arrests-which-is-resuscitation-medicine-becoming-a-logistics-sport) and the equity data that keep appearing (the public arrest survival by neighbourhood income and race in several countries - bystander-CPR-training-and-AED-placement-being-public-health-medicine-with-strings-attached-because-a-community-where-people-fear-litigation-or-police-at-the-scene-produces-untouched-bodies-in-real-time). Last: the family at the bedside (the 'family-present-during-resuscitation'-with-a-named-support-person evidence showing no-harm-and-appreciation which is now the standard many services implement-and-the-coroner's-adjacent-argument-for-it-when-the-relatives-learned-after-that-they-could-have-been-there).**
+Overall outcomes are sobering. In the UK, roughly one in ten people treated by ambulance services for out-of-hospital cardiac arrest survive to leave hospital, and roughly one in five of those who arrest in hospital do. Survival is much higher in witnessed VF with early bystander CPR and early defibrillation, which is why the system around the arrest matters as much as the hospital.
+
+### Why compressions work
+
+::: theorem Coronary perfusion pressure {#thm-cpp}
+During CPR, the heart muscle is perfused during the release phase of each compression, in the same way it is perfused in diastole. The driving pressure is the **coronary perfusion pressure (CPP)**:
+
+$$
+\text{CPP} = P_{\text{aortic, diastolic}} - P_{\text{right atrial, diastolic}}
+$$ {#eq-cpp}
+
+ROSC becomes likely only when CPP is high enough (in human studies, successful resuscitation was rare with CPP below about 15 mmHg). Good chest compressions generate roughly a quarter to a third of normal cardiac output.
 :::
 
-## Post-arrest medicine
-
-::: definition Post-resuscitation care and prognostication {#def-post}
-**ROSC is a new critical illness (the post-cardiac-arrest syndrome: the myocardial stunning with its haemodynamic lability and the vasoplegia and the need to avoid both hypertension and the hypotension-which-is-the-cerebral-perfusion-crime (the MAP-target literature with its 'higher is better up to a point' nuance and the noradrenaline-adjacent-first-line-practice), the ischaemia-reperfusion-inflammatory-cascade-that-looks-like-sepsis-and-gets-antibiotics-anyway-and-the-early-feeding-and-blood-glucose-not-too-low-and-not-12 mmol/L-mania, and the ventilation that targets normal (the hyperoxia-harm-signals-of-the-2020s-air-and-oxygen-and-ICU-AOMI-and-EXACT-and-IDEO-AIR-trials-era-and-the-hypercapnia-versus-normocapnia-trials-which-landed-on-'avoid-the-extremes'-and-the-seizure-detection-because-non-convulsive-status-after-arrest-is-common-and-continuous-EEG-should-be-routine-in-comatose-survivors-because-treated-or-not-the-EEG-changes-management-and-prognosis). Temperature management's corrected chapter (the 2013 TTM-and-2016-TTM2-era-that-converted-'therapeutic-hypothermia-32-34'-into-'prevention-of-fever'-after-the-negative-large-trial-and-the-TTM3-of-2023-out-of-hospital-precooling-disappointment and the honest current position: avoid fever, do not shiver them for hours at 33 unless a protocol-drilled unit - which is a story in evidence-based-medicine-correction worth teaching because whole guidelines were rewritten and hospitals stopped doing what they had drilled for a decade). Coronary reperfusion (the emergent-angiography-for-STEMI-obvious-and-the-COCA-and-TOMAHAWK-and-EMERGE-and-FOAM-adjacent-era-answering-'routine-immediate-angiography-in-comatose-NSTEMI-ROSC-does-not-help'-on-average-with-the-cardiogenic-shock-and-electrical-instability-patients-excluded-by-the-trials-and-included-by-the-cath-lab-which-is-how-all-these-trials-work-and-the-ECPR-pathways-where-it-exists-keep-the-decision-parallel-and-expert). Neuroprognostication as the specialty's hardest clock (the multimodal-and-must-wait-rules: the clinical-exams-delayed-past-sedation-and-neuromuscular-blockade-and-rewarming-with-the-pupils-and-corneals-and-myoclonus-status-and-the-'not-before-72-hours-after-ROSC-and-normothermia-and-no-sedation-confounders'-floor which the ERC-ESICM-guidelines-encode-because-early-exams-are-wrong-and-self-fulfilling and the auxiliary modalities with their specificities (the neuron-specific-enolase-trending-and-its-assay-variability-caveats-and-the-S100B and the bilateral-absent-N20s-and-the-status-myoclonicus-and-the-diffusion-MRI-restricted-cortical-cascade-and-the-EEG-background-and-reactivity and the GCS-motor-1-3-days-era-which-are-never-used-alone-because-the-error-is-the-single-test). The withdrawal-of-life-sustaining-therapy-process (the UK-and-European-parallel-consultation-model-not-the-single-doctor-decision and the 'we are continuing everything while we find out' bridge-sentence-to-families and the organ-donation-bridge-where-the-donation-question-must-not-race-the-prognostication-question-in-the-same-family's-ears-and-the-donation-after-circulatory-death-withdrawal-protocols-where-hospitals-have-learned-to-do-both-with-sequential-dignity which is the ethics chapter's analysis and this chapter's checklist). And the survivors' medicine the guidelines are only now catching up on (the post-cardiac-arrest-syndrome-of-the-living: the cognitive-and-fatigue-and-anxiety-and-PTSD-and-employment-and-driving-counselling-and-ICU-acquired-weakness-and-the-cardiac-rehabilitation-and-the-ICD-for-the-arrhythmic-substrate-and-the-family's-second-diagnosis-and-the-'why-me-and-why-not-me'-follow-up-clinic-which-is-the-only-happy-ending-this-chapter-writes.)**
+::: proof
+Each compression squeezes blood out of the chest into the aorta. Because the aortic valve closes on release, aortic pressure stays raised while the chest recoils, and the gap between the aortic and right atrial pressures pushes blood through the coronary arteries. That pressure builds up over a run of compressions; it does not appear with the first one. When compressions stop, for a pulse check, a rhythm check or a change of rescuer, aortic pressure falls within seconds and CPP collapses. On restarting, it takes many compressions to get back to where it was. This is why the guidelines insist on minimal interruptions, why full chest recoil matters (leaning on the chest raises right atrial pressure and lowers CPP), and why compressions continue while the defibrillator charges.
 :::
 
-::: example The 58-year-old in refractory VF {#ex-ecpr}
-45 minutes of CPR for witnessed VF arrest at the gym; seven shocks, adrenaline x4, amiodarone given; still VF; the team is tiring, the paramedic says 'another one', the new doctor wants to stop because 'it has been an hour'.
+The useful number to track is the **chest compression fraction**: the proportion of the arrest during which compressions are actually being delivered. Teams aim for well over 80%. Every second of pause has a cost.
+
+::: widget plot
+f: 100*exp(-0.12*x); 100*exp(-0.06*x)
+x: 0, 20
+y: 0, 100
+labels: \text{no bystander CPR}; \text{bystander CPR}
+caption: A simplified teaching model of how the chance of surviving a VF arrest falls with minutes before the first shock. The values are illustrative, not clinical data: without CPR the chance falls steeply, roughly 10% of its value for each minute; good bystander CPR roughly halves the rate of decline. The curves show why the chain of survival is built around early CPR and early defibrillation rather than around the hospital.
+:::
+
+## Basic life support {#sec-bls}
+
+Basic life support (BLS) is what any rescuer does before equipment arrives. The adult sequence is:
+
+1. Check that it is safe to approach, then check for a response by speaking and gently shaking the shoulders.
+2. Open the airway with a head tilt and chin lift and look for normal breathing for no more than ten seconds. **Agonal breathing**, slow, irregular gasps, is common in the first minutes of an arrest and must not be mistaken for normal breathing.
+3. If the person is unresponsive and not breathing normally, call for help (999 or 112 outside hospital; the hospital arrest number inside), and ask for an automated external defibrillator (AED).
+4. Start chest compressions: hands on the lower half of the sternum, depth 5–6 cm, rate 100–120 per minute, allowing full recoil, with 30 compressions to 2 breaths if the rescuer is trained and willing to give breaths. Untrained rescuers give compressions only, guided by the ambulance dispatcher.
+5. Attach the AED as soon as it arrives and follow its prompts. Continue CPR between analyses.
+
+The **chain of survival** names four links: early recognition and a call for help, early CPR, early defibrillation, and post-resuscitation care. Public-access defibrillators, dispatcher-assisted CPR and volunteer responder apps all strengthen the first three links, and they make the largest difference to outcome.
+
+## Advanced life support {#sec-als}
+
+Advanced life support (ALS) adds a manual defibrillator, airway management, vascular access, drugs and a structured search for the cause. Its backbone is the two-minute cycle: two minutes of uninterrupted CPR, a brief pause to look at the rhythm, a shock if indicated, and then straight back to compressions.
+
+::: algorithm The ALS algorithm (RCUK 2021) {#def-als}
+1. Confirm cardiac arrest, call the resuscitation team, start CPR at 30:2 and attach defibrillator pads or monitor.
+2. Pause briefly to assess the rhythm.
+3. **If shockable (VF or pVT):** give one shock (biphasic, at least 150 J for the first shock, or as the manufacturer advises), then resume CPR immediately for two minutes without checking the pulse or rhythm. Reassess the rhythm at the end of each cycle and shock again if still shockable.
+   - After the **third shock**: give **adrenaline 1 mg IV/IO** and **amiodarone 300 mg IV/IO**.
+   - Then repeat adrenaline 1 mg every 3–5 minutes (in practice every other cycle).
+   - After the **fifth shock**: give a further **amiodarone 150 mg**.
+4. **If non-shockable (PEA or asystole):** resume CPR and give **adrenaline 1 mg IV/IO as soon as access is obtained**, then every 3–5 minutes.
+5. Throughout: high-quality compressions with minimal interruptions; give oxygen; use waveform capnography; secure the airway when skilled help is present; obtain IV access (IO if IV is not achievable); identify and treat reversible causes.
+6. If ROSC occurs, move to post-resuscitation care.
+:::
+
+A few details make the algorithm work in practice.
+
+**Shocks.** Compressions continue while the defibrillator charges; the pause for the shock itself should be under about five seconds. After a shock, compressions restart at once. Even a successful shock is usually followed by a short period in which the stunned heart produces little output, so a pause to feel for a pulse wastes perfusion and rarely finds one. Pad position matters: the lateral (apical) pad belongs in the mid-axillary line, and the 2025 RCUK update specifically highlights how often it is placed too far forward. In a **witnessed, monitored VF arrest** (for example in the catheter laboratory) where the defibrillator is already attached, up to three quick successive shocks may be given before starting compressions.
+
+**Airway and breathing.** A bag-mask, often with an oropharyngeal airway, is enough at first. A supraglottic airway or tracheal tube is inserted only by someone skilled enough to do it with an interruption to compressions of less than about five seconds. Once an advanced airway is in place, compressions become continuous and ventilation is given at about 10 breaths per minute. **Waveform capnography** confirms tube placement, shows the quality of CPR (end-tidal CO₂ rises with better compressions) and often gives the first sign of ROSC as a sudden rise.
+
+**Access and drugs.** IV access is tried first, with intraosseous (IO) access when IV is not possible. The PARAMEDIC-3 trial (2024), which randomised about 6,000 out-of-hospital arrests in England and Wales to an IO-first or IV-first strategy, found no difference in 30-day survival. Adrenaline increases the chance of ROSC. In the PARAMEDIC2 trial (2018), adrenaline in out-of-hospital arrest improved 30-day survival (3.2% against 2.4% with placebo) but did not significantly increase survival with a favourable neurological outcome (2.2% against 1.9%). That is why the algorithm keeps adrenaline but puts compressions and defibrillation first. Amiodarone is given for VF or pVT that persists after shocks; lidocaine is an alternative when amiodarone is unavailable.
+
+::: warning Interrupting compressions to do something else
+The commonest error in a real arrest is not a wrong drug but a long pause: stopping CPR to put in a cannula, to intubate, to take a blood gas, to look with ultrasound or to discuss the plan. Every one of these can be done during compressions or in a pause of a few seconds. A team leader who keeps hands on the chest has done more for the patient than one who gets every drug exactly on time.
+:::
+
+### The reversible causes
+
+::: definition The four Hs and four Ts {#def-hts}
+The reversible causes of cardiac arrest are remembered as:
+
+| The four Hs | The four Ts |
+|---|---|
+| **H**ypoxia | **T**hrombosis (coronary or pulmonary) |
+| **H**ypovolaemia | **T**ension pneumothorax |
+| **H**ypo- or hyperkalaemia and other metabolic disorders | **T**amponade (cardiac) |
+| **H**ypothermia or hyperthermia | **T**oxins |
+
+They are considered in every arrest and are the main business of the team during non-shockable arrests.
+:::
+
+Each cause has a bedside clue and a specific treatment. A blood gas during CPR gives potassium, haemoglobin, glucose and pH within a minute. Point-of-care ultrasound, used by a trained operator during the rhythm-check pause, can show a pericardial effusion, a dilated right ventricle suggesting pulmonary embolus, or an empty heart suggesting hypovolaemia. The history matters too: a dialysis patient who has missed sessions, a trauma patient, a patient with a central line who suddenly deteriorates, a known overdose.
+
+| Cause | Typical clue | Specific treatment |
+|---|---|---|
+| Hypoxia | Asphyxia, airway obstruction, respiratory arrest first | Oxygen and effective ventilation |
+| Hypovolaemia | Bleeding, trauma, sepsis | Fluids and blood, control of bleeding |
+| Hyperkalaemia | Renal failure, missed dialysis, broad complexes before arrest | IV calcium, insulin–glucose, bicarbonate; dialysis |
+| Hypothermia | Exposure, immersion | Rewarming, ideally extracorporeal |
+| Thrombosis (PE) | Recent surgery, immobility, dilated RV | Thrombolysis; continue CPR 60–90 min afterwards |
+| Thrombosis (coronary) | Chest pain before collapse, VF | Coronary angiography, sometimes during mechanical CPR |
+| Tension pneumothorax | Trauma, ventilation, central line | Decompression (finger thoracostomy or needle) |
+| Tamponade | Penetrating trauma, after cardiac surgery | Pericardiocentesis or thoracotomy |
+| Toxins | History, toxidrome | Specific antidote (see [[emergency-critical-care/poisoning]]) |
+
+### The team
+
+ALS is delivered by a team, and much of its failure is a failure of teamwork. A good team has one leader who stands back and does not perform procedures, named roles (compressions, airway, defibrillator, drugs and access, recording), and **closed-loop communication**: an instruction is given to a named person, repeated back, and confirmed when done. The leader says the plan for the next cycle aloud before the pause, so the pause is short and everyone knows what will happen. Compressors swap every two minutes because the quality of compressions falls with fatigue well before the rescuer notices it.
+
+::: example Timing the drugs in a shockable arrest {#ex-timing}
+A 63-year-old man collapses in a hospital car park. The team arrives with a defibrillator; the first rhythm is VF. The first shock is given at time 0 minutes and the rhythm remains VF at each subsequent check. Assuming perfect two-minute cycles, at what times are the first adrenaline, the first amiodarone and the second amiodarone given?
 ::: solution
-**Refractory-VF-is-the-one-arrest-that-escapes-the-clock ([[#def-arrest]], [[#def-peri]], [[emergency-critical-care/critical-care]]): the judgment - 'witnessed, bystander-CPR, shockable-and-ongoing, age-58, no-comorbidity-known: this is the phenotype the ECPR literature and every ECLS-candidate-checklist protects, and "it has been an hour" is not a reason to stop when the rhythm is still VF and perfusion is being mechanically maintained - the reason the hour matters is that the hospital with ECLS is fifteen minutes away; the moves in order - 'call-for-the-ECPR-or-ECLS-referral-now-not-when-you-decide (the regional-perfusion-strategy-and-the-mechanical-CPR-device-to-protect-the-team-and-the-'no-unsafe-pause-during-transfer'-loading-dock-choreography and the continue-compressions-in-the-ambulance-and-the-lab culture), the reversal-hunt-during-transport (the potassium and the thrombolytic-thought-for-a-massive-PE-differential and the bilateral needle decompressions if the story says trauma or asthma or central-line and the double-sequential-shocks-if-your-protocol-had-them), and the team's own management (the two-minutes-for-the-'we-have-a-plan'-brief-not-a-vote-with-the-tiring-compressor-rotating-and-the-moral-distress-named-and-deferred-because-in-the-stopping-decision-research-the-worst-outcome-for-staff-is-an-unexplained-stop and the family-reunification-officer-tasked-separately-because-the-family-watching-an-hour-CPR-is-the-other-never-forgotten-scene). At the cannulation-table the perfusion team decides; this chapter's job was recognising that this arrest has a ticket.**
-:::
-:::
+With two-minute cycles, shocks fall at 0, 2, 4, 6, 8 minutes and so on: the third shock is at 4 minutes and the fifth at 8 minutes.
 
-::: example The 'flat trace' on the care-home call {#ex-notrial}
-A 91-year-old care-home resident with advanced dementia and recent hospital admission for heart failure is found unresponsive at breakfast; care home calls 999; the paramedic asks the arriving ED doctor on the phone 'do you want us to try?' The home's records show no resuscitation plan; the daughter is on holiday in Spain.
-::: solution
-**The-question-is-bigger-than-the-999-call ([[#def-peri]], [[geriatrics-palliative/end-of-life-care]], [[medical-ethics-law/end-of-life-ethics]]): the immediate answer - 'attempted unless there is a valid, applicable, documented decision or clinical judgement that CPR would not work or not serve her; the paramedic's question is legitimate and the phone answer should be made by the most senior clinician able, with two minutes of history (is she dying? did anyone ever have the conversation? does the home know her wishes?) - because the era of default-CPR-everywhere and the era of never-try-elderly-people-are both dead and what replaced them is process: a recommendation made and recorded in advance, not improvised by a panicked caller; the CPR that happens tonight - 'the proportionate-efforts-frame (the shocks-and-adrenaline-for-a-shockable-arrest-versus-the-not-continuing-past-the-first-cycle-in-a-frail-woman-dying-of-end-stage-heart-failure-which-is-not-the-same-legal-or-ethical-act-but-both-decisions-need-an-owner-and-a-record), the daughter-on-Spain-telephoned-as-fast-as-the-billing-code-was-not and the home's-'why-was-there-no-plan'-question-asked-tomorrow-not-tonight; and the morning after either way - 'the serious-incident-or-coroner-route-for-an-unplanned-arrest-without-a-plan-is-the-system's-version-of-candour (the care-home-with-no anticipatory-care-planning and the hospital-discharge-summary-that-said-'escalation-plan-to-be-discussed'-for-six-months are the findings in these coroner's narratives), which is why the ReSPECT-style-process and the 'did anyone ask her what she wanted' audit are this chapter's boring, life-saving medicine.'**
+- First adrenaline 1 mg and amiodarone 300 mg: after the third shock, as compressions restart, at about 4 minutes.
+- Further adrenaline: every 3–5 minutes, which in practice means every other cycle, at about 8, 12, 16 minutes.
+- Second amiodarone 150 mg: after the fifth shock, at about 8 minutes.
+
+During all of this the team is asking why this man is in VF. A coronary occlusion is the likeliest cause, and a 12-lead ECG after ROSC, or early discussion with the cardiology team if VF is refractory, is part of the plan.
 :::
 :::
 
 ::: example The arrest with potassium 8.1 {#ex-k-arrest}
-A 46-year-old dialysis patient misses two sessions, found collapsed; monitor shows wide-complex bradycardia deteriorating to a sine-wave pattern then PEA; last K recorded 6.2, missed dialysis, on spironolactone and an ACE inhibitor.
+A 46-year-old woman on haemodialysis has missed two sessions. She is brought in drowsy, with a broad-complex bradycardia at 30 per minute, and shortly after arrival the trace becomes a slow sine-wave pattern and she has no pulse. A venous gas taken during CPR shows potassium 8.1 mmol/L and pH 7.12. What is the cause of the arrest and how is it treated?
 ::: solution
-**The-fastest-cure-in-arrest-medicine ([[#def-arrest]], [[renal/potassium-calcium-phosphate]], [[renal/acute-kidney-injury]]): the minutes - 'this is hyperkalaemic arrest until disproved and the treatment is the diagnosis: IV calcium (the gluconate or the chloride through a good line - the membrane stabilisation begins in a minute and buys the rest), then the insulin-dextrose and the beta-agonide-nebuliser-and-bicarbonate-in-the-volume-over-dialysis-patient-debated-adjacent-shift-therapies, then the definitive plan which is CPR-plus-dialysis-or-CRRT-running (the ECMO-or-ECLS-bridge-for-refractory-cases-in-centres-with-it-and-the-'do-not-stop-for-potassium'-culture because this arrest reverses completely and inexplicably at the bedside while the defibrillator waits - the teams that know this do compressions for an hour for a pH-and-potassium-problem that no other cause would forgive); the confirmations - 'the ECG-evolution-and-the-missed-dialysis-history-and-the-drug-list-and-the-crush-and-bowel-ischaemia-and-addisonian-differentials and the glucose that is often simultaneously wrong in both directions; and the prevention that the review writes (the missed-dialysis-follow-up-systems-and-the-dialysis-unit-and-GP-shared-medication-list-and-the-'she-stopped-because-she-felt-fine'-adherence-history which is the CKD and renal chapters' continuity-of-care argument with a body count when it fails).**
-:::
-:::
+This is PEA from **hyperkalaemia**, one of the four Hs. The broad, slow complexes merging into a sine wave are the classic progression.
 
-::: example The patient who is 'not breathing but has a pulse' {#ex-ppi-arrest}
-Found on the bathroom floor, RR 4 and snoring, SpO2 84 percent, pinpoint pupils, GCS 6, pulse 62, warm; partner says 'she takes the strong painkillers from last time and maybe the tablets for sleep'.
-::: solution
-**The-arrest-that-is-still-a-respiratory-arrest ([[#def-arrest]], [[emergency-critical-care/poisoning]], [[geriatrics-palliative/delirium-dementia-care]]): the ABC reality - 'the hypoxic-bradycardic-unresponsive-adult-with-a-pulse-is-an-airway-and-breathing-problem-treated-before-it-becomes-an-arrest-problem: bag-mask-ventilation-with-the-opioid-toxidrome-in-the-front-pocket (the pinpoint pupils and the respiratory depression and the reduced bowel sounds and the history), naloxone-given-titrated-to-ventilation-not-to-consciousness (the small repeated doses because the 0.4 mg bolus in an opioid-dependent patient produces the pain-and-vomiting-and-aspiration-and-withdrawal-storm that defeats its own purpose, and the infusion-or-repeated-dose-decision-for-the-long-acting-and-the-slow-release-formulations whose absorption the partner's 'maybe the tablets for sleep' has made unpredictable), and the co-ingestant reality (the benzodiazepine-or-alcohol-or-gabapentinoid-deepening-the-coma-which-flumazenil-must-not-touch-because-of-the-seizure-risk-in-mixed-and-dependent-patients which is the poisoning chapter's rule restated at the bedside); the rest of the primary survey - 'the glucose already done, the head-injury-and-hypothermia-and-sepsis-and-stroke-mimic-hunt (the pupils are not everything - the pontine and the organophosphate and the clonidine and the sedative-hypnotic differentials), the ECG (the QT and the sodium-channel-blocking co-ingestants), the paracetamol-and-salicylate-levels-asked-in-every-uncertain-ingestion-even-at-this-hour-because-the-liver-does-not-report-its-own-betrayal-until-day-two; and the disposition - 'the-ICU-or-high-dependency-unit-ventilated-or-not-depending-on-the-airway-protection-trajectory-with-the-brief-that-'she-came-in-not-breathing'-is-understood-in-every-handover-and-the-mental-health-and-dependency-support-and-take-home-naloxone-and-anaconda-adjacent-drug-service-referral-which-is-the-only-CPR-this-patient's-next-year-needs'.**
-:::
-:::
+1. Continue high-quality CPR and give adrenaline according to the non-shockable branch.
+2. Give **IV calcium** (calcium chloride or gluconate, as in the local hyperkalaemia guideline). It stabilises the myocardial membrane within minutes but does not lower potassium.
+3. Shift potassium into cells with **insulin and glucose**, with close glucose monitoring; sodium bicarbonate may be given in severe acidosis or prolonged arrest.
+4. Arrange removal of potassium: **dialysis** is the definitive treatment and can be started during or soon after resuscitation in some centres.
 
-::: exercise Handle the ICD patient in arrest {level=2}
-A 55-year-old with a dual-chamber ICD collapses in the waiting room; monitor shows VF; the device is audibly shocking every 90 seconds; two shocks have already been delivered externally by the AED. Sequence ALS around the device and state the magnet's role.
-::: solution
-**CPR-with-a-cardioverter-defibrillator-onboard ([[#def-peri]], [[cardiovascular/arrhythmias]]): the sequence - 'the device is an ally not an obstacle: continue ALS with the pads placed clear of the generator (the anterior-posterior position is classic), shock as normal when advised (the device shocks and external shocks do not make defibrillation unsafe between them - treat the rhythm not the hardware), and have the magnet to hand: the magnet over an ICD suspends further tachyarrhythmia detection and therapy (it does NOT reprogram pacing modes in modern devices and does not stop the bradycardia pacing), which is useful when the device is shockingly-energetically-inappropriate (the SVT or myopotential or lead-fracture oversensing that fires into a perfusing rhythm) and harmful if you apply it during genuine VF where the device is correctly trying to save her between your shocks - the audible-shocks-versus-monitor-rhythm correlation is the bedside test that tells you which situation you are in; after ROSC - 'the device interrogated as the best witness (the stored EGMs give the pre-arrest rhythm and the onset - the torsades-versus-ischaemia-versus-device-failure-versus-lead-fragmentation diagnosis and theQT and the stimulant history and the shocks-appropriateness-questions), the pacing-dependent patient whose magnet use during the arrest unmasked dependence (the backup pacing and the pacing-programmer-brought-to-the-bedside culture), the pocket-and-sterility-notes-for-the-explant-if-infection-the-cause and the ICD-clinic-and-cardiology-shared-follow-up-in-the-discharge-summary-because-the-device-knows-this-patient's-arrest-better-than-any-witness-and-it-should-testify-at-the-right-moment-not-at-a-crash-call.'**
+Hyperkalaemic arrest can respond to treatment after a prolonged resuscitation, so teams should not stop early while the cause is being corrected. After ROSC she needs repeated potassium and glucose measurements, cardiac monitoring and urgent dialysis. See [[renal/potassium-calcium-phosphate]] for the physiology.
 :::
 :::
-
-::: exercise Judge the pause {level=1}
-Nursing station asks you to look at a 78-year-old pre-syncopal telemetry strip: sinus rhythm with a 5.5-second pause, then junctional escape at 38. She is on amlodipine only. Admit or investigate as outpatient, and why?
-::: solution
-**Symptomatic-pause-medicine ([[#def-peri]], [[cardiovascular/arrhythmias]]): the answer - 'admit: a 5.5-second pause with presyncope is a pacing indication territory (the conduction-disease-versus-extrinsic-cause separation - the drugs audited (the amlodipine is not the culprit, the secret eye drops and the OTC and the herbal list must be asked), the electrolytes and thyroid and ischaemia and Lyme-and-infiltrative-and-myeloma-and-sarcoid-and-hemochromatosis-adjacent-young-patient-versus-degenerative-old-patient workup), the atropine-response-questioned-and-the-escape-rhythm-character-read (a wide slow escape is more ominous than a brisk junctional one), the monitoring-and-pacing-pad-availability overnight and the permanent-pacing-conversation-with-the-physiologist (the conduction-disease-burden-percentages-that-predict-AV-block-progression and the lead-versus-conduction-system-pacing-versus-physiological-pacing-era-choices and the MRI-compatibility-and-infection-and-pocket-haematoma-consents-in-a-78-year-old-which-sound-distant-now-and-are-next-Tuesday). The ambulatory-outpatient-holter version of this patient is the one who falls down stairs between the appointment and the recording, which is why symptomatic pauses get watched where resuscitation is available.'**
-:::
-:::
-
-::: exercise Manage the post-ROSC hour {level=2}
-A 63-year-old achieves ROSC after 22 minutes for out-of-hospital VF, is unresponsive, BP 88/54 on no infusion, ECG shows ST elevation inferiorly, temp 35.9 spontaneously, glucose 11, CT head done elsewhere 'normal'. Order the next two hours.
-::: solution
-**Post-arrest-medicine-execute ([[#def-post]], [[cardiovascular/coronary-artery-disease]]): the reperfusion - 'she is STEMI-positive which ends the debate: cath-lab-now with the PCI and the antiplatelets and the shock-adjacent-mechanical-support-thoughts (the IABP-and-IMPELLA-and-ECMO-era-mechanical-circulatory-support-decision-is-a-cath-lab-and-ICU-joint-call-not-a-protocol); the haemodynamics - 'the MAP target that protects the brain and the coronaries (the noradrenaline to keep MAP well above the hypotensive range - typically >65 and many would say higher in this stunned-myocardium-vasoplegia-phase per the post-arrest literature with its per-patient-nuance), the fluid-responsibility-reassessment-against-the-echo-look, and the repeat-lactate-and-urine-output-as-the-nurse-facing-trend; the ventilation and temperature - 'the oxygenation-band-not-the-maximum (the room-air-versus-high-oxygen trials' lesson applied: titrate to normoxia), the normocapnia target with the gas-checks-and-the-waveform, and the fever-prevention-protocol (the antipyretics-and-surface-cooling-for-the-37-plus-trajectory-not-the-33-degree-protocol unless your unit runs one properly), the glucose-not-too-low-not-12-plus with the insulin-sliding-not-stacking, the seizure-detection-with-a-low-EEG-threshold-and-the-non-convulsive-status-that-presents-as-'no-reason', the sedation-minimised-but-shivering-and-coughing-suppressed-while-ventilated, and the family - 'the prognostication promise made now and kept later ("it is too early to know anything about her brain - the rules forbid judging before the third day and we will not"), which is the most important sentence in this hour and the hardest to resist saying.**
-:::
-:::
-
-::: exercise Design the dispatcher-to-defibrillator programme {level=3}
-Your region's out-of-hospital survival to discharge is 6 percent with wide spatial variation; bystander CPR in half of arrests; AEDs registered but rarely fetched; public arrest locations concentrated in the homes of the elderly alone. Build the chain-of-survival programme with its equity design and its measurement.
-::: solution
-**Chain-of-survival-engineering ([[#def-peri]], [[public-health/prevention-promotion]], [[clinical-skills/patient-safety]]): the diagnosis - 'survival is a logistics curve: witnessed-shockable arrests in reachable places survive, unwitnessed-non-shockable arrests in the elderly-alone-at-home do not, and the programme must attack both the physics (time to CPR and shock) and the demography (who is alone where); the dispatch half - 'the dispatcher-assisted-telecommunicated-CPR-coaching-in-all-languages-with-the-'hands-only-and-we-count-with-you'-script-audited-for-completion-and-dispatch-assisted-arrival-times-published-because-the-randomised-coaching-evidence-is-established-and-the-implementation-variability-is-the-gap and the next-respondent-and-volunteer-responder-apps (the Swedish-Dutch-and-Danish-and-London models) with their response-time data and the good-samaritan-and-employment-protection-legal-repair-without-which-people-who-leave-a-tilt-and-a-checkout-do-not-come-back; the defibrillator half - 'the AED-registry-to-dispatch-navigation-integration-so-the-call-handler-sends-someone-to-the-visible-box-with-a-battery-schedule-someone-owns-and-the-strategic-relocation-to-the-actual-arrest-map-with-a-'look-up'-programme (the night-time and rural coverage and the workplace-and-school-and-places-of-worship-and-taxi-and-farm-outbuildings-that-the-office-park-campaigns-never-fund-which-is-why-some-postcodes-have-AEDs-nobody-walks-past) and the training-and-willingness-programmes-that-teach-people-to-touch-people-with-confidence-not-just-to-pass-a-test (the bystander-CPR-rate-by-ethnicity-and-neighborhood-and-age-which-in-the-US-and-UK-data-are-a-differential-in-probability-of-being-resuscitated-at-all-which-makes-this-a-civil-rights-infrastructure-project-with-a-battery-compartment); the elderly-alone-at-home truth - 'the honest half of the programme cannot fix every arrest (the unwitnessed-non-shockable-home-arrest-survival-is-single-digit-and-rising-compression-rates-move-the-few-survivable-ones-and-the-'do-we-want-this-at-all'-planning is the conversation above) but the local authority and telecare and links between ambulance crews and falls and crisis services is where prevention meets the chain; and the measurement - 'the Utstein-core-set-reported-published-by-service-with-the-bystander-CPR-and-shock-and-ROSC-and-survival-to-discharge-and-neurological-outcome-and-equity-stratification-and-the-arrest-location-map-review-after-each-winter-because-a-chain-of-survival-without-a-registry-is-just-a-slogan-with-batteries.'**
-:::
-:::
-
 
 ::: quiz
-During CPR for asystole, the single pharmacological intervention with the best mortality evidence is:
-- [ ] High-dose adrenaline
-- [ ] Sodium bicarbonate routinely
-- [x] Adrenaline 1 mg IV as soon as possible for non-shockable rhythms
-- [ ] Calcium gluconate for all
+During a non-shockable arrest the rhythm check shows asystole. What should happen next?
+- [ ] Shock at 150 J in case it is fine VF.
+- [x] Resume compressions immediately and give adrenaline 1 mg as soon as access is available, while the team looks for a reversible cause.
+- [ ] Give amiodarone 300 mg.
+- [ ] Wait for three cycles before giving any drug.
 ::: solution
-**Early adrenaline is the non-shockable branch's differentiating drug (conventional dose; high-dose showed no benefit and possible harm; bicarbonate and calcium are for specific indications, not routine) - [[#def-arrest]].**
+Asystole is non-shockable, so the next step is CPR with adrenaline as soon as possible, and a structured search for the four Hs and four Ts. Amiodarone belongs to the shockable branch. If the trace might be fine VF, check the gain and leads quickly, but shocking true asystole does not help and the pause harms coronary perfusion.
 :::
 :::
 
-::: widget plot
-f: 60; 100*exp(-(x-0)*0.08)*0.85; 100*exp(-(x-0)*0.08)*0.35; 100*exp(-(x-0)*0.08)*0.12; 4
-x: 0, 15
-y: 0, 100
-labels: \text{minutes to defibrillation},\ \text{percent survival (illustrative)}\ \text{witnessed VF, early CPR};\ \text{witnessed, no bystander CPR};\ \text{unwitnessed non-shockable (baseline low)}
-caption: Survival to shockable arrest decays roughly 7-10 percent per untreated minute; the whole chain of survival is a race against that slope ([[#def-arrest]], [[#def-peri]]).
+## Arrests in special circumstances {#sec-special}
+
+Some causes change the algorithm itself.
+
+- **Hypothermia.** A cold heart is resistant to drugs and shocks, and the cold brain tolerates low flow better. If the core temperature is below 30 °C, give up to three shocks and withhold adrenaline until it reaches 30 °C; between 30 and 35 °C double the interval between adrenaline doses. Extracorporeal rewarming (ECMO or cardiopulmonary bypass) is the treatment of choice, and resuscitation is often continued until the patient is rewarmed.
+- **Pregnancy.** From about 20 weeks, the uterus compresses the inferior vena cava when the woman lies flat, so the uterus is displaced manually to the left during CPR. If there is no ROSC within about four minutes, the team prepares for **resuscitative hysterotomy** (perimortem caesarean section), aiming to deliver within five minutes. Emptying the uterus improves venous return and is done primarily to help the mother.
+- **Pulmonary embolism.** If PE is the likely cause, thrombolysis is given during CPR, and CPR then continues for 60–90 minutes to give the drug time to work.
+- **Drowning.** The arrest is asphyxial, so ventilation matters early: five initial rescue breaths are given before compressions.
+- **Trauma.** Traumatic arrest is usually caused by bleeding, tension pneumothorax, tamponade or hypoxia, and treating these takes priority over chest compressions, which do little in an empty heart.
+- **Anaphylaxis and toxins.** These are covered in [[emergency-critical-care/anaphylaxis]] and [[emergency-critical-care/poisoning]]. Some toxins call for prolonged resuscitation, because the drug may wear off or be removed while CPR maintains flow.
+
+**Extracorporeal CPR (ECPR)**, putting a patient in refractory arrest onto venoarterial ECMO, is available in some centres for carefully selected patients: typically a witnessed arrest with bystander CPR, a shockable rhythm and a short time to the ECMO team. It is a bridge that buys time to treat the cause, such as a blocked coronary artery.
+
+::: example The 58-year-old in refractory VF {#ex-ecpr}
+A 58-year-old man collapses at a gym. A staff member starts CPR immediately and the gym AED delivers a shock within four minutes. The ambulance crew continues ALS. After 25 minutes he has received seven shocks, three doses of adrenaline and both doses of amiodarone, and he is still in VF. End-tidal CO₂ during compressions is 3.5 kPa. A junior doctor suggests stopping because "it has been nearly half an hour". How should the team think about this?
+::: solution
+**Refractory VF** in a younger patient with a witnessed arrest and immediate bystander CPR is the group in which prolonged resuscitation is most worthwhile. The rhythm is still shockable, the end-tidal CO₂ suggests compressions are generating some flow, and an acute coronary occlusion is the likeliest cause.
+
+- Duration alone is not a reason to stop. Stopping rules in shockable arrest look at the whole picture, not the clock.
+- If the region has an ECPR service, it should be contacted early, because candidacy depends on time. A mechanical compression device allows good CPR during transport.
+- Within the shockable algorithm, the team can check pad position and consider a change of pad vector; a Canadian trial in 2022 (DOSE VF) reported better survival with vector change or dual sequential shocks in refractory VF, and some services include these options in their protocols.
+- The reversible causes are reviewed again: potassium, tension pneumothorax, PE.
+
+The decision is owned by the senior clinician, explained to the team, and followed by a debrief whatever the outcome.
+:::
+:::
+
+## Before and after the arrest: peri-arrest rhythms {#def-peri}
+
+Many arrests are preceded by a rhythm disturbance that could have been treated, and many patients after ROSC have unstable rhythms. The RCUK peri-arrest algorithms ask one question first: **are there adverse features?** These are **shock** (hypotension, pallor, sweating, confusion), **syncope**, **myocardial ischaemia** (chest pain or ischaemic ECG changes) and **heart failure** (pulmonary oedema, raised jugular venous pressure).
+
+::: definition Peri-arrest management of bradycardia and tachycardia {#def-periarrest}
+**Bradycardia.** If adverse features are present, give **atropine 500 micrograms IV**, repeated if needed up to a total of 3 mg. If the response is inadequate, or there is a high risk of asystole (recent asystole, Mobitz type II block, complete heart block with broad QRS complexes, or a ventricular pause longer than 3 seconds), arrange **pacing**, with an isoprenaline or adrenaline infusion or transcutaneous pacing as a bridge to transvenous pacing.
+
+**Tachycardia with adverse features.** Give **synchronised DC cardioversion** under sedation or anaesthesia, up to three attempts; if unsuccessful, give amiodarone 300 mg IV over 10–20 minutes and repeat the shock.
+
+**Tachycardia without adverse features.** Look at the QRS width and regularity. A regular narrow-complex tachycardia is treated with vagal manoeuvres, then **adenosine** as a rapid IV bolus (6 mg, then 12 mg, then 18 mg if needed) with ECG recording. An irregular narrow-complex tachycardia is usually atrial fibrillation and is rate-controlled. A broad-complex tachycardia is treated as ventricular tachycardia unless there is clear evidence otherwise.
+:::
+
+Two traps deserve emphasis. First, a slow heart rate is sometimes the consequence of another problem that needs its own treatment: hyperkalaemia, hypothermia, raised intracranial pressure, or poisoning with a beta-blocker, calcium-channel blocker or digoxin. Second, **pre-excited atrial fibrillation** in Wolff–Parkinson–White syndrome looks like an irregular, very fast broad-complex tachycardia. Drugs that block the atrioventricular node, including adenosine, verapamil and digoxin, can speed conduction down the accessory pathway and precipitate VF. When such a patient is unstable, synchronised cardioversion is the safe choice. More detail is in [[cardiovascular/arrhythmias]].
+
+## After ROSC: post-resuscitation care {#def-post}
+
+ROSC is the start of a new critical illness, the **post-cardiac arrest syndrome**. It has four parts: brain injury from the period without flow, myocardial dysfunction (stunning) that can last for days, a systemic inflammatory response from ischaemia and reperfusion that can resemble sepsis, and whatever disease caused the arrest.
+
+::: definition Post-resuscitation care: the main targets {#def-postcare}
+After ROSC the priorities, following the ERC–ESICM guidance used in the UK, are:
+
+- **Airway and breathing**: secure the airway if the patient is not awake; target SpO₂ **94–98%** (both hypoxaemia and high arterial oxygen are avoided) and normal arterial PaCO₂.
+- **Circulation**: obtain a 12-lead ECG; target a mean arterial pressure above about **65 mmHg** (systolic above 100 mmHg), with fluids and vasopressors as needed; treat the cause.
+- **Coronary angiography**: immediate in ST-elevation on the ECG; in patients without ST-elevation it is considered when an acute coronary cause is likely, rather than performed routinely.
+- **Temperature**: actively **prevent fever** (temperature above 37.7 °C) for at least 72 hours in patients who remain comatose.
+- **Brain**: treat seizures, avoid hypoglycaemia and marked hyperglycaemia, and record an EEG in comatose patients.
+- **Prognosis**: assess neurological prognosis only after at least **72 hours**, once sedation has cleared, using several tests together.
+:::
+
+Two areas of post-arrest care have changed in ways worth knowing. Temperature management was once "therapeutic hypothermia" at 32–34 °C. The TTM trial (2013) found no difference between 33 °C and 36 °C, and the larger TTM2 trial (2021) found no benefit of 33 °C over normothermia with active treatment of fever. Current practice is therefore to prevent fever rather than to cool. Coronary angiography is similar: for patients resuscitated from arrest without ST-elevation, the COACT (2019) and TOMAHAWK (2021) trials found no survival benefit from immediate routine angiography compared with a delayed or selective approach.
+
+**Neuroprognostication** is deliberately slow. Clinical examination in the first days is confounded by sedatives, neuromuscular blockers, hypothermia and organ failure, and an early pessimistic prediction that leads to withdrawal of treatment becomes self-fulfilling. The ERC–ESICM approach combines examination (pupillary and corneal reflexes, motor response), neurophysiology (EEG patterns and somatosensory evoked potentials, in which bilaterally absent N20 responses predict poor outcome), blood biomarkers such as neuron-specific enolase, and brain imaging. A poor outcome is predicted only when two or more of these agree. Survivors often have fatigue, cognitive problems, anxiety and low mood, and should be offered follow-up and rehabilitation; their families also need support.
+
+::: example A patient after ROSC {#ex-postrosc}
+A 70-year-old woman has ROSC after 15 minutes of in-hospital arrest (initial rhythm PEA, cause thought to be hypoxia from a blocked tracheostomy, now replaced). She is ventilated. Observations: SpO₂ 100% on FiO₂ 1.0, PaO₂ 48 kPa, PaCO₂ 3.2 kPa, BP 84/46 mmHg (mean 59), temperature 36.4 °C, glucose 14 mmol/L. Her 12-lead ECG shows sinus tachycardia without ST-elevation. Which values are off target, and what changes follow?
+::: solution
+Compare each value with the post-resuscitation targets in [[#def-postcare]]:
+
+- **Oxygen**: PaO₂ 48 kPa on FiO₂ 1.0 is far above normal. Reduce FiO₂ to keep SpO₂ 94–98%.
+- **Carbon dioxide**: PaCO₂ 3.2 kPa is low (hyperventilation), which constricts cerebral vessels. Reduce minute ventilation to bring PaCO₂ to the normal range.
+- **Blood pressure**: MAP 59 mmHg is below about 65. Give a fluid bolus if she is likely to respond and start a vasopressor such as noradrenaline; echocardiography helps separate myocardial stunning from hypovolaemia.
+- **Temperature**: 36.4 °C is acceptable; the aim is to prevent fever over the next 72 hours.
+- **Glucose**: 14 mmol/L is high and should be treated according to the unit's protocol, avoiding hypoglycaemia.
+
+The arrest was hypoxic, not coronary, and there is no ST-elevation, so emergency angiography is not indicated. Prognosis is not discussed in definitive terms until at least 72 hours.
+:::
+:::
+
+## Decisions about resuscitation {#sec-decisions}
+
+CPR is a medical treatment. For most people who die at the end of a progressive illness, it cannot restart the heart for any useful length of time and exposes them to an undignified and often painful death. In the UK, decisions not to attempt CPR (**DNACPR** decisions) are made in advance by the senior clinician responsible, ideally as part of a wider plan that records what treatments a person would and would not want. The **ReSPECT** process (Recommended Summary Plan for Emergency Care and Treatment) is used in many areas for this.
+
+Several principles are settled. A DNACPR decision applies only to CPR; it does not mean withholding other treatment, such as antibiotics, fluids or admission to hospital. The patient should be involved in the decision unless this would cause them physical or psychological harm: in **Tracey v Cambridge University Hospitals** (2014) the Court of Appeal held that failing to involve a patient breached her right to respect for private life under Article 8 of the European Convention on Human Rights. Where the patient lacks capacity, those close to them are consulted, but a clinician is not obliged to offer CPR that will not work. Decisions must be recorded where they can be found in an emergency and reviewed when circumstances change. The law and ethics are discussed in [[medical-ethics-law/end-of-life-ethics]].
+
+Stopping a resuscitation attempt is a senior decision based on the whole picture: the time without CPR, the initial rhythm, the response to treatment, end-tidal CO₂ trends, reversible causes still to be treated, and what is known of the patient. A low end-tidal CO₂ after prolonged ALS is associated with a poor outcome but is not used alone. Many services now let relatives be present during resuscitation if they wish, with a staff member to support them; studies of family presence have not shown harm to the resuscitation and suggest some benefit to relatives.
+
+::: example The care home call {#ex-notrial}
+A 91-year-old woman with advanced dementia and severe heart failure, admitted twice in the last three months, is found unresponsive and not breathing at breakfast in her care home. Staff call 999 and start compressions. No resuscitation plan can be found. Her daughter is abroad. The paramedics arrive four minutes later; the monitor shows asystole. What should guide their decision?
+::: solution
+In the absence of a valid DNACPR decision or advance decision, the default is to start resuscitation, and the care home staff were right to begin. But clinicians are not obliged to continue CPR that cannot succeed. The paramedics' guidelines allow them to stop when resuscitation would be futile, taking into account an unwitnessed arrest, asystole, and advanced, irreversible illness that was expected to cause death. A short, honest phone call to the daughter, as soon as practical, explains what happened.
+
+The larger failure happened earlier. Someone with advanced dementia and end-stage heart failure, admitted twice recently, should have had an emergency care plan discussed with her (while she could take part) and with her family. Learning from the event belongs in a review the next day, not on scene. Recording the plan in a ReSPECT form at the next hospital discharge would have spared everyone, including her, this ending.
+:::
+:::
+
+::: example A slow pulse after a fall {#ex-ppi-arrest}
+A 79-year-old man is brought in after a collapse without warning. His pulse is 32 per minute, BP 78/40 mmHg, and he is pale and sweaty. The ECG shows complete heart block with broad QRS complexes. His medicines include bisoprolol and ramipril; potassium is 5.2 mmol/L. How should he be managed?
+::: solution
+He has bradycardia with adverse features (shock and syncope), so treatment starts immediately.
+
+1. ABCDE assessment, oxygen if hypoxaemic, IV access, continuous monitoring with pacing-capable defibrillator pads attached.
+2. **Atropine 500 micrograms IV**, repeated up to 3 mg. Atropine often has little effect on complete heart block with broad complexes, because the block is below the AV node.
+3. He is at high risk of asystole (complete heart block with broad QRS), so arrange **transvenous pacing**. As a bridge, start an isoprenaline or adrenaline infusion or **transcutaneous pacing** with analgesia and sedation.
+4. Look for reversible contributors: the beta-blocker is stopped, potassium is only mildly raised, and myocardial infarction (especially inferior) is excluded with ECG and troponin.
+
+If he remains in complete heart block after the beta-blocker has worn off, a permanent pacemaker is indicated.
+:::
+:::
+
+::: history
+Closed-chest cardiac massage was described in 1960 by William Kouwenhoven, James Jude and Guy Knickerbocker at Johns Hopkins, after Knickerbocker noticed that pressing defibrillator paddles firmly onto a dog's chest raised its arterial pressure. Combined with the mouth-to-mouth ventilation championed by Peter Safar and James Elam in the late 1950s, it became cardiopulmonary resuscitation. Defibrillation had already been used on the exposed heart by Claude Beck in 1947, and in the early 1960s Bernard Lown developed the direct-current defibrillator and the synchronised shock for cardioversion. In 1966 Frank Pantridge and John Geddes in Belfast put a portable defibrillator in an ambulance, the first mobile coronary care unit, and showed that defibrillation could be brought to the patient. The International Liaison Committee on Resuscitation (ILCOR), founded in 1992, now reviews the evidence on which national guidelines, including those of the Resuscitation Council UK, are based.
 :::
 
 ## Where this leads
 
-The arrhythmia substrate is in [[cardiovascular/arrhythmias]] and [[cardiovascular/electrophysiology-ecg]], shock states in [[emergency-critical-care/shock-fluids]], the airway during and after intubation in [[emergency-critical-care/airway-ventilation]], toxidromes in [[emergency-critical-care/poisoning]], and post-arrest ICU and prognostication detail in [[emergency-critical-care/critical-care]].
-
-::: history
-**Resuscitation's history starts when medicine decided that a stopped heart and stalled breathing were mechanical problems with mechanical remedies. The eighteenth-century societies for 'recovery of the apparently drowned' - the Dutch and humanely-institutes campaigns that drilled mouth-to-mouth, bellows and warming across northern Europe - were the first public resuscitation education, complete with the premature-burial anxieties that produced safety coffins and grave bells. The modern trinity arrived in three jumps. In 1960 Kouwenhoven, Jude and Knickerbocker reported closed-chest massage at Johns Hopkins, and within a decade CPR had spread from operating theatres to first-aid manuals. The defibrillator's arc ran from the 1899 observation that electricity could throw the heart into fibrillation, through Claude Beck's direct shock of an open heart in 1947, Zoll's external device in 1956 and Lown's synchronized cardioversion in the early 1960s, to the epidemiology of Seattle and Belfast: Frank Pantridge's work showed that most prehospital deaths were ventricular fibrillation and that defibrillation before admission saved lives - the argument that created the paramedic defibrillator and, later, public-access defibrillation. The third jump was organisation: the first national CPR standards of the 1960s-70s, the international liaison committee era that converged the nations onto one ticking protocol, and the resuscitation registries (CARES, EuReCa, the Swedish and Norwegian and UK registers) whose public reporting moved survival curves more than most drugs did. Out-of-hospital systems then became a comparative-science field: Copenhagen, Houston, Phoenix and Seattle competed over EMS models; dispatcher-assisted compression-only CPR changed what emergency calls sound like; and the 2010s-2020s extracorporeal resuscitation trials (ARREST, INCEPTION, the ECMO-transport cohorts and the CIRCUS-era controversies) turned refractory arrest into transport medicine. Temperature management supplies the textbook lesson in humility: prophylactic cooling at 33 degrees C was guideline dogma until the TTM2 trial found no advantage over fever prevention, and hospitals stopped doing what they had drilled for a decade. Underneath the technical history runs the ethical one: once CPR worked often enough to matter, medicine had to decide when not to use it - the 1975 formalisation of the do-not-resuscitate order, the 1980s futile-care debates and the Futrelle letters, the President's Commission and the self-determination law that followed Cruzan, and Britain's long route from 'never try' custom through the Paterson and TM judgments to ReSPECT records - with disability-rights objections to quality-of-life stopping rules still on the record. Resuscitation's biggest discoveries, in the end, were a pair of hands, a shock, a phone call, a registry and the discipline to stop - each of which had to be discovered, defended and drilled.** - [[cardiovascular/arrhythmias]], [[medical-ethics-law/end-of-life-ethics]], [[public-health/health-systems-economics]].**
-:::
+The physiology of shock and fluid resuscitation is in [[emergency-critical-care/shock-fluids]]; airway management and ventilation in [[emergency-critical-care/airway-ventilation]]; organ support after ROSC in [[emergency-critical-care/critical-care]]; the arrhythmias themselves in [[cardiovascular/arrhythmias]]; the assessment that should catch deterioration before arrest in [[emergency-critical-care/acute-assessment]].
 
 ::: summary
-- Cardiac arrest is flow-debt: high-quality CPR (depth, rate, full recoil, minimal pauses) is a dosed intervention, and survival in shockable arrest decays by the minute until defibrillation.
-- Run the algorithm with named roles and chase the reversible causes in parallel; the Hs and Ts are the differential, and several have bedside diagnoses and cures that outrank the epinephrine.
-- Peri-arrest medicine is the prevention: unstable tachycardias get synchronised cardioversion, blocks with syncope get admissions and pacing plans, and pre-excited AF must never meet a nodal blocker.
-- Terminate-resuscitation decisions follow agreed criteria plus clinical judgment, made by a named senior with the team briefed; futility is a recommendation process, not a reflex or a rule of thumb.
-- ROSC begins a new critical illness: avoid hypo- and hyper-tension, normoxia and normocapnia, angiography when it is indicated, fever prevention, and neuroprognostication only after 72 normothermic unsedated hours, multimodally.
-- The chain of survival is public health: dispatcher coaching, bystander CPR, defibrillators where people are, and equitable placement decide most arrests long before this chapter's drugs arrive.
+- Cardiac arrest is recognised by unresponsiveness and absent normal breathing. Rhythms are shockable (VF, pVT) or non-shockable (PEA, asystole).
+- Compressions generate a coronary perfusion pressure that builds slowly and collapses as soon as they stop: depth 5–6 cm, rate 100–120/min, full recoil, minimal pauses.
+- RCUK ALS (2021, timing unchanged in 2025): in shockable rhythms, adrenaline 1 mg and amiodarone 300 mg after the third shock, adrenaline every 3–5 minutes thereafter, amiodarone 150 mg after the fifth shock; in non-shockable rhythms, adrenaline 1 mg as soon as possible and every 3–5 minutes.
+- Search for the four Hs and four Ts in every arrest; some causes (hypothermia, pregnancy, PE, trauma) change the algorithm.
+- Peri-arrest rhythms are managed by asking about adverse features: shock, syncope, ischaemia, heart failure.
+- After ROSC: SpO₂ 94–98%, normal PaCO₂, MAP above about 65 mmHg, angiography for ST-elevation, fever prevention for 72 hours, prognosis not before 72 hours and only on several concordant tests.
+- Decisions not to attempt CPR are made in advance, involve the patient, apply only to CPR and are recorded where they can be found.
 :::
 
 ## Exercises
 
-::: exercise Run the rhythm {level=1}
-AED/monitor shows coarse VF; bystander CPR ongoing; you have a biphasic pad-equipped defibrillator and one colleague. Sequence the first four minutes.
+::: exercise Compression fraction {level=1 check="0.84"}
+During a 10-minute resuscitation, the total time without compressions (rhythm checks, shocks, airway insertion) adds up to 96 seconds. What is the chest compression fraction? Give it as a decimal to two decimal places.
+::: hint
+Compression fraction is time with compressions divided by total time.
+:::
 ::: solution
-**Four-minutes-of-ALS ([[#def-arrest]]): the sequence - 'confirm-and-continue-compressions-while-pads-on (the pause-minimisation-culture: rhythm check every two minutes only), charge-before-pause if the device allows, synchronisation-mode-off, clear-and-shock-150-200J-or-escalating, resume compressions immediately for two minutes without pausing for a pulse or rhythm check after the shock (even a successful shock is usually followed by a spell of weak or absent cardiac output from post-shock myocardial stunning, so a pause to feel for a pulse costs perfusion and rarely finds one), second shock at two minutes, third shock at four minutes, and only then — with compressions already resumed — adrenaline 1 mg IV/IO and amiodarone 300 mg IV/IO; thereafter adrenaline every 3–5 minutes (every alternate cycle) and a further amiodarone 150 mg after the fifth shock, and the reversible-cause-list-out-loud-from-minute-two (the potassium and the hypoxia and the trauma and the thromboembolic screens and the pre-hospital-12-lead-if-it-exists); the team - 'a-leader-with-hands-off-compressions, the closed-loop ('shock delivered, resume at 110, time 04:12'), and the 'who has the airway and who has the access' by minute three because the intubation-decision-can-wait-and-the-perfusion-cannot-and-the-second-drug-route-the-intraosseous-considered-early-in-a-peripheral-access-failure because minutes spent on veins are minutes not spent on brains.'**
+Total time is 600 seconds; time with compressions is $600 - 96 = 504$ seconds. The compression fraction is $504/600 = 0.84$, which meets the usual aim of above 0.8.
 :::
 :::
 
-::: exercise Cardiovert the unstable {level=2}
-A 34-year-old with palpitations is light-headed, HR 210, regular wide-complex, BP 82/50; awake but anxious. Script the next five minutes, the drug you do not give, and the trap if she had WPW.
+::: exercise Coronary perfusion pressure {level=1 check="18"}
+During CPR, an arterial line shows an aortic diastolic (relaxation-phase) pressure of 30 mmHg and a central venous line shows a right atrial pressure of 12 mmHg at the same moment. Calculate the coronary perfusion pressure in mmHg.
 ::: solution
-**Unstable-Wide-Complex-Tachycardia ([[#def-peri]], [[cardiovascular/arrhythmias]]): the five minutes - 'call-for-help-and-anaesthesia-by-name, the monitored-synchronised-mode-check-again-after-every-action (the synchronisation-mark-on-the-R-wave-or-you-are-defibrillating-by-accident-and-the-pads-are-on-and-front-back-if-possible), the sedation-that-is-not-a-fasting-audit (the propofol-or-etomidate-small-titres-with-a-canula-and-bag-by-the-head-because-this-cardioversion-is-better-with-it-and-the-fast-five-seconds-of-unconsciousness-that-make-people-forget-the-consent-sentence-asked-briefly-while-she-can-hear-it), the-shock (typically 150-200J-biphasic-synchronised-escalating-protocol), immediate-ECG-after, and-the-admission-workout-of-why-a-34-year-old-has-this (the structural-and-ischaemia-and-channelopathy-and-electrolyte-and-stimulant-workup-because-the-cardioversion-is-the-beginning-of-the-diagnosis-not-the-end); the drug not given - 'verapamil-and-diltiazem-into-undifferentiated-wide-complex-tachycardia-is-a-death-pattern (the pre-excited AF and the mis-called SVT with hypotension); and the WPW trap - 'if the rhythm is irregular and very fast and wide (pre-excited AF), amiodarone-and-adenosine-and-all-nodal-blockers-are-wrong (the accessory pathway is the antegrade limb) and synchronised cardioversion is the safe answer, which is why the defibrillator is on before the pharmacy is.'**
+Using [[#eq-cpp]], $\text{CPP} = 30 - 12 = 18$ mmHg. This is just above the level (about 15 mmHg) below which ROSC was rarely achieved in human studies; deeper compressions with full recoil would aim to raise it.
 :::
 :::
 
-::: exercise Pace the block {level=2}
-A 72-year-old presents with syncope; ECG: intermittent 3rd-degree AV block, ventricular rate 34, hypotensive, on bisoprolol and digoxin for 'palpitations'; potassium 6.9 in a heart-failure patient on ramipril. What is the order of treatment and what must not be assumed?
+::: exercise Total amiodarone {level=1 check="450"}
+An adult remains in VF through six shocks, managed exactly according to the RCUK algorithm. What total dose of amiodarone (in mg) has been given by the time of the sixth shock?
 ::: solution
-**Polypharmacy-syncope-with-a-lesson ([[#def-peri]], [[cardiovascular/arrhythmias]], [[renal/potassium-calcium-phosphate]]): the order - 'first stop making the problem (the bisoprolol and digoxin and ramipril stopped and recorded as stopped), second treat the reversible causes as the actual arrhythmia therapy (the calcium gluconate for the membrane in hyperkalaemia-with-ECG-changes-which-works-in-minutes-then-the-insulin-dextrose-and-the-consideration-of-dialysis-in-this-renal-and-digoxin-context-with-the-digoxin-level-and-digoxin-specific-antibody-fragments-(DigiFab)-at-hand-because-hyperkalaemia-plus-digoxin-toxicity-is-a-two-headed-bradycardia-and-the-LFT-and-renal-and-volume-and-urine-output-and-ECG-evolution-decide-the-antidote-versus-the-pacing-versus-the-dialysis-order), third the bridge (the atropine-likely-futile-and-not-for-this-mechanism-and-the-adrenaline-or-dopamine-infusion-or-temporary-pacing-with-the-transvenous-route-timing-against-the-potassium-trajectory-and-the-external-pacing-pads-on-immediately-even-if-unpleasant-because-she-is-the-'might-arrest-from-a-pause'-phenotype); and the non-assumption - 'the drugs are contributors but a 72-year-old with syncope and high-degree block needs the conduction-disease-workup-and-the-permanent-pacing-decision-after-the-electrolytes-and-drugs-are-corrected (the 'it was just the beta-blocker' discharge is how this patient returns with a pacemaker-and-a-bruise or does not return); and the medication-review-lesson for the GP letter: the bisoprolol-digoxin-ramipril-triple in an older heart-failure patient is an AV-block-and-hyperkalaemia-and-falls prescription, which is the polypharmacy chapter's chapter in this woman's arrest.'**
+Amiodarone 300 mg is given after the third shock and 150 mg after the fifth: $300 + 150 = 450$ mg. No further amiodarone is given in the algorithm after the fifth shock.
 :::
 :::
 
-::: exercise Write your unit's arrest policy {level=3}
-Design the hospital-wide resuscitation and deterioration policy for a 900-bed teaching hospital: training, equipment, response structure, ceilings-of-care records, equity, and measurement including moral distress.
+::: exercise Counting adrenaline doses {level=2 check="3"}
+In a shockable arrest with perfect two-minute cycles, the first shock is at 0 minutes and the rhythm remains VF. Adrenaline is given after the third shock and then every other cycle. How many doses of adrenaline have been given by the rhythm check at 14 minutes (count a dose given at 14 minutes as not yet given)?
 ::: solution
-**Resuscitation-as-a-system ([[#def-arrest]], [[#def-peri]], [[clinical-skills/patient-safety]]): training-and-competence - 'the-risk-weighted-curriculum (every-clinician-annual ALS-or-BLS-with-hands-on-time and the-simulation-based-team-training-with-in-situ-crash-calls-in-the-actual-corridors-because-the-in-situ-simulation-literature-shows-team-behaviour-changes-in-the-room-where-the-arrest-happens-not-in-the-skillslab-and-the-mock-code-audits-with-the-observed-compression-fraction-scored), equipment - 'the-crash-cart-standardised-hospitalwide-with-monthly-checks-and-the-syringe-and-defibrillator-locations-mapped-and-tested-because-the-'where-is-the-trolley'-minutes-are-measurable-and-the-ICU-and-ward-pads-and-BC-circuit-suitability-and-the-adult-paediatric-switch-culture (the wrong-key-and-wrong-energy-events are classic latent-error findings); the response structure - 'one-arrest-number-one-algorithm-one-set-of-roles-with-a-critical-care-or-anaesthetic-senior-present-or-phone-for-every-expected-arrest-and-mechanical-CPR-and-ECMO-transport-agreements-written-not-hoped-and-the-24-7-ECG-read-and-echo-access-that-turns-'PERC'-decisions-into-evidence; the ceilings-of-care layer - 'the single hospitalwide treatment-and-recommendation-record (ReSPECT-adjacent model) with a mandatory-completion-for-flagged-cohorts (the frail-elderly and advanced-organ-failure and dementia admissions get the 'would you attempt CPR and why' documentation during the admission review not during the arrest), the advance-decision-register-check-embedded-in-the-admission-process, and the escalation-plans that travel with the patient between the care home and the trust which is the data-integration-project nobody funds and every coroner asks about; the equity-and-moral-distress measurement - 'the CPR-attempts-and-survival and the non-attempt rates reported by age-frailty-ethnicity-disability-and-whether-the-person-lived-in-an-institution because the non-attempt decision literature and the disability-rights critiques deserve a dashboard not a debate, and the staff-debrief-and-distress-survey-after-arrests-with-action-thresholds-because-a-hospital-that-reports-zero-moral-distress-is-not-a-safe-hospital-it-is-a-silent-one). The annual report line that keeps it all honest: 'of the patients who died after attempted CPR last year, how many had a documented, discussed resuscitation plan six months earlier' - because the policy's real deliverable is not better arrests, it is fewer of them'.**
+Shocks fall at 0, 2, 4, 6, 8, 10, 12 and 14 minutes. The first adrenaline follows the third shock at 4 minutes, then every other cycle at 8 and 12 minutes. The next would be at 16 minutes. So **3** doses have been given before the 14-minute check.
+:::
+:::
+
+::: exercise Shockable or not {level=1}
+For each situation, state whether the rhythm is shockable and the first drug that is given: (a) VF that persists after the first shock; (b) PEA with a narrow-complex rhythm at 60 per minute; (c) asystole in a hypothermic patient with a core temperature of 27 °C.
+::: solution
+(a) Shockable. No drug is given until after the third shock, when adrenaline 1 mg and amiodarone 300 mg are given.
+(b) Non-shockable. Adrenaline 1 mg as soon as access is obtained, with a determined search for a cause such as hypovolaemia, tamponade or PE, which often produce narrow-complex PEA.
+(c) Non-shockable. Below 30 °C adrenaline is withheld until the patient is rewarmed to 30 °C; the priority is CPR and rewarming, ideally extracorporeal.
+:::
+:::
+
+::: exercise A PEA arrest with a clue {level=2}
+A 67-year-old man is on day 5 after a hip replacement. He becomes suddenly breathless, then collapses. The monitor shows a narrow-complex rhythm at 120 per minute, with no pulse. Point-of-care ultrasound during a rhythm check shows a dilated right ventricle and a small, vigorously contracting left ventricle with no pericardial fluid. What is the most likely cause, what is the specific treatment, and how does it change the resuscitation?
+::: solution
+Sudden breathlessness after orthopaedic surgery followed by PEA with a dilated right ventricle points to **massive pulmonary embolism** (one of the Ts). The specific treatment is **thrombolysis** during CPR (surgical or catheter embolectomy are alternatives where available). Because the thrombolytic takes time to act, CPR is continued for 60–90 minutes after it is given before the attempt is judged unsuccessful. Recent surgery increases bleeding risk, but in cardiac arrest from PE the risk of death without thrombolysis outweighs it.
+:::
+:::
+
+::: exercise Interpreting post-ROSC care {level=2}
+Two hours after ROSC from an out-of-hospital VF arrest, a 55-year-old man is sedated and ventilated in the ICU. His temperature is 38.3 °C. A relative asks whether he will wake up. What do you do about the temperature, and how do you answer the question?
+::: solution
+A temperature of 38.3 °C is above the 37.7 °C threshold, and fever after cardiac arrest is associated with worse neurological outcome. The ICU treats it actively (antipyretics, surface or intravascular temperature control) and continues fever prevention for at least 72 hours.
+
+To the relative: it is too early to know. Sedation and the effects of the arrest make examination unreliable for at least 72 hours, and the team will then use several tests together (examination, EEG, blood tests and scans) before forming a view. Honest uncertainty, with a plan and a time for the next conversation, is the right answer.
+:::
+:::
+
+::: exercise A DNACPR decision {level=3}
+A 76-year-old woman with metastatic lung cancer, now bedbound and sleeping most of the day, is admitted with pneumonia. She has capacity. The registrar believes CPR would not succeed. Describe how the decision should be made and recorded, and explain what it does and does not change about her treatment.
+::: solution
+The decision is a clinical judgement that CPR would not be successful, made by the senior responsible clinician. Because she has capacity, she should be told about it and invited to discuss it, unless there is a good reason to believe the conversation itself would cause her physical or psychological harm (Tracey, 2014). The conversation is best framed around what matters to her and what treatment will and will not help, not as a request for permission to withhold a futile intervention. With her agreement, her family can be included.
+
+The decision is recorded on the hospital's form (or a ReSPECT plan), in the notes, and communicated to the team and, on discharge, to her GP and community services. It applies only to CPR: she can still receive antibiotics, oxygen, fluids, symptom control and, if appropriate, escalation to other treatments. It is reviewed if her condition or wishes change.
+:::
+:::
+
+::: exercise Bradycardia with a twist {level=3}
+An 81-year-old woman taking digoxin, furosemide and ramipril is brought in confused and vomiting. Heart rate is 38 per minute (junctional rhythm), BP 86/50 mmHg, potassium 6.4 mmol/L, creatinine raised from her baseline. Discuss the differential diagnosis of her bradycardia and how management differs from the standard bradycardia algorithm.
+::: solution
+The bradycardia has adverse features (shock), but its likely causes are **digoxin toxicity** (vomiting, confusion, junctional rhythm), precipitated by **acute kidney injury** reducing digoxin excretion, and **hyperkalaemia**, which both reflects digoxin toxicity and worsens conduction. Ischaemia should also be excluded.
+
+Management still starts with ABCDE and atropine is reasonable, but the specific treatments matter more. **Digoxin-specific antibody fragments** reverse digoxin toxicity and are indicated for life-threatening arrhythmia or significant hyperkalaemia in this context. Hyperkalaemia is treated in the usual way with insulin and glucose; the use of calcium in digoxin toxicity has historically been debated, and local toxicology advice (in the UK, TOXBASE or the National Poisons Information Service) should be followed. Digoxin and ramipril are stopped, fluids are given for the kidney injury, and pacing is reserved for bradycardia that does not respond. The general lesson is to ask why the heart is slow before reaching for the pacing wire.
 :::
 :::

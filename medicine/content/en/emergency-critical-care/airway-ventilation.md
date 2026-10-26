@@ -1,142 +1,305 @@
-Airway and breathing are the first two letters of every resuscitation for a reason: hypoxia kills in minutes and the interventions are among the most technically and cognitively demanding in acute medicine. **This chapter covers airway assessment and management from positioning and suction through supraglottic devices to rapid-sequence intubation and the cannot-intubate-cannot-oxygenate escape (front-of-neck access), the peri-intubation period as its own resuscitation (the haemodynamic and hypoxaemic risk-management most courses still under-teach), oxygen as a prescribed drug with target ranges and toxicity (the liberal-versus-conservative-oxygen trial era), non-invasive and high-flow respiratory support and their honest indications, and invasive mechanical ventilation done lung-protectively with the ARDS evidence (the tidal-volume and plateau-pressure and PEEP and prone-position and paralysis hierarchy) and weaned with the liberation protocols. Its governing facts: intubation outside the theatre is a haemodynamic and hypoxaemic event that must be prepared for like one, and the ventilator is a pressurised drug-delivery device whose dose can heal or tear lung.**
+Oxygen stores in the body are small. An adult breathing air holds roughly enough oxygen in the lungs and blood for a few minutes, and the brain is the first organ to suffer when supply stops. Keeping the airway open, getting oxygen into the lungs and carbon dioxide out, and taking over breathing when the patient cannot do it are therefore the first priorities of emergency care, and the main daily work of the intensive care unit.
 
-## The airway
+This chapter covers the airway (assessment, simple manoeuvres, adjuncts, tracheal intubation and the plan for when intubation fails), respiratory failure and its types, oxygen therapy, high-flow nasal oxygen, CPAP and non-invasive ventilation, and the principles of invasive mechanical ventilation, including lung-protective ventilation in acute respiratory distress syndrome. UK guidance is followed: the British Thoracic Society (BTS) for oxygen and non-invasive ventilation, and the Difficult Airway Society (DAS) for intubation. Practical airway skills are learned on courses and under supervision, not from a page.
 
-::: definition Airway assessment and management {#def-airway}
-**The assessment first: the predicted-difficult-airway-markers (the Mallampati-and-thyromental-and-interincisor-and-neck-mobility-and-edentulous-versus-protruding-teeth-versus-beard-and-facial-trauma-and-angioedema-and-burn-inhalational-injury-and-stridor-and-'cannot-lie-flat'-orthopnea-of-a-mediastinal-mass-real-life-versus-video-reels versions and the 'difficult-bag-mask-ventilation'-predictors (the BMI-and-beard-and-elderly-edentulous-and-upper-airway-obstruction) which are the more dangerous prediction because the rescue route assumes you can ventilate); the pre-oxygenation-optimisation (the positioning (the ramp and the ears-above-sternal-notch and the reverse-Trendelenburg-for-the-obese and the apnoeic-oxygenation-with-the-nasal-sprinkle-which-is-not-trivial-it-is-minutes-of-safety), the pre-oxygenation-technique-verified (the two-breaths-maximal-or-eight-breaths-normal-tidal-and-the-ETCO2-square-wave-confirmation and the desaturation-threshold-set-in-expectation-because-a-high-AP-SIB-obese-patient-who-desaturates-in-60-seconds-was-never-pre-oxygenated-and-you-have-minutes-not-seconds-and-plan-A-and-plan-Z-should-be-said-aloud-before-paralysis); the devices in sequence: the chin-jaw-and-oropharyngeal-and-nasopharyngeal-airway-and-suction-and-repositioning-which-resolve-more-'difficult-airways'-than-any-tube, the supraglottic-devices-second-generation-with-gastric-drainage-as-rescue-and-bridge (the 'they are not for anaesthetised-patient-airway-maintenance-only'-period-we-are-in-and-the-second-attempt-not-infinite-attempt-culture), and tracheal intubation: the direct-versus-video-laryngoscope-debate-settling-into-'video-first-where-the-staff-are-trained-with-it'-evidence (the DICES-and-USA-2022-2024-cluster-trials-which-showed-the-device-is-not-the-technique-and-the-technician-training-does-the-work), the bougie-and-the-hyperextended-versus-sniffing-position-and-the-burp-and-the-external-laryngeal-manipulation-and-the-'look-at-the-glottis-not-the-monitor'-discipline and the cuff-inflation-and-first-ETCO2-and-bilateral-auscultation-and-the-chest-x-ray-confirmation-and-the-depth-at-teeth-documented; the rapid-sequence-induction-with-paralysis-drug-set (the ketamine-or-propofol-or-etomidate-or-thiopental-versus-hypovolaemia-versus-myocardial-dysfunction-choices and the rocuronium-versus-succinylcholine-with-the-potassium-and-burns-and-neuromuscular-disease-contraindication-list-and-the-sugammadex-era-changing-the-neostigmine-rescue-culture-and-the-topicalised-awake-technique-or-inhalational-or-sketched-topicalised-awake-fiberoptic-for-the-'I-die-lying-flat'-and-'my-airway-disappears-asleep'-patients which belongs to planned-difficult-airway-not-to- bravado); the cannot-intubate-cannot-oxygenate escape which is the chapter's most important minute (the call-for-help-early-and-plan-Z-supraglottic-attempt-and-attempted-reoxygenation-and-then-the-surgical-front-of-neck-access-at-the-cricothyroid-membrane-with-the-bistoury-not-the-needle-for-the-can't-ventilate-can't-intubate-scalpel-bougie-tube-or-the-'kit'-device-taught-universally-now-because-the-needled-cricothyroid-puncture-fails-in-tense-neck-anatomy-and-the-2015-2024-Difficult-Airway-Society-guidelines-era-which-redefined-CICO-speed-thresholds-and-'you-are-not-the-first-person-to-ever-need-this'-reassurance-included-and-the-antecedent-skill-of-recognising-you-are-on-the-path-early which is the real competence); and the post-intubation and surgical-airway adjuncts (the tube-securement-and-depth-documented-and-cuff-pressure-monitored-and-the-VAP-prevention-bundle-head-of-bed-and-oral-care-and-sedation-vacation-and-DVT-and-stress-ulcer-prophylaxis-debate-and-the-'post-extubation-stridor-treated-early-with-nebulised-adrenaline-and-steroid-and-reintubation-thresholds'-competence-and-the-tracheostomy-decision-timing-evidence-still-maturing-but-the-'early-versus-late'-outcome-trials-which-found-fewer-pneumonia-and-shorter-sedation-days-and-no-mortality-difference-with-the-real-benefit-being-nursing-and-communication-and-weaning-which-is-the-dignity-literature's-version-of-the-same-finding).**
+## The airway {#def-airway}
+
+::: definition Airway obstruction and its recognition {#def-obstruction}
+The **airway** is the passage from the nose and mouth to the alveoli; in emergency care the term usually means the upper airway down to the trachea. **Airway obstruction** may be partial or complete.
+
+- **Partial obstruction** is noisy: **snoring** (the tongue and soft palate in a patient with reduced consciousness), **gurgling** (fluid such as blood or vomit), **stridor** (a high-pitched sound from narrowing at or above the larynx, usually inspiratory) and **wheeze** (lower airway narrowing, usually expiratory).
+- **Complete obstruction** is silent despite breathing effort: the chest moves in and the abdomen out on inspiration ("see-saw" or paradoxical breathing), and no air movement is felt at the mouth.
+
+The commonest cause of obstruction in an unconscious patient is loss of muscle tone, allowing the tongue and soft tissues to fall back against the posterior pharynx.
 :::
 
-## Breathing support
+**Simple manoeuvres** come first and are often enough. A **head tilt and chin lift** lifts the tongue away from the back of the throat; a **jaw thrust** does the same without moving the neck and is preferred when a cervical spine injury is possible. Fluid is removed with a rigid suction catheter under direct vision.
 
-::: definition Oxygen, non-invasive support and the ventilated patient {#def-ventilation}
-**Oxygen-as-a-drug: the prescription grammar (the indication-and-target-range-and-review-date-with-the-'target-94-98-or-88-92-if-retaining-or-at-risk'-BTS-and-NICE-era-range-logic-with-the-COPD-and-morbid-obesity-and-neuromuscular-and-chest-wall-and-birth-prematurity-groups-named-because-the-hypercapnic-risk-is-not-a-COPD-monopoly) and the 2017-2024 liberal-versus-conservative-trial-wave (the AVOID-and-DEO2-and-EXACT-and-ICU-ARI-and-ACTIVE-AIR-and-UK-CAOS-and-LOCO2-and-EAT-ICU-adjacent-myocardial-infarction-oxygen-trials-mostly-answering-'no-benefit-and-some-signals-of-harm-from-hyperoxia'-with-the-CAOS-and-ICU-AIR-and-ACTIVE-AIR-pooled-logic-that-normal-saturations-do-not-must-be-normalised-as-a-default-everywhere-and-the-oxygen-toxicity-and-absorption-atelectasis-and-hypercapnia-physiology-explained-to-juniors-who-were-raised-on-the-'flow-meter-is-always-right'-fallacy-and-the-nasal-cannula-versus-mask-versus-HFNO-versus-non-rebreather-device-escalation-ladder-with-the-'is-the-device-fitting-and-is-she-wearing-it'-check-before-every-escalation which is five-litres-of-humility-before-five-litres-of-oxygen); the non-invasive and high-flow layer: the HFNO-evidence-arc (the FLORRI and HIGH and the post-extubation and hypoxaemic-ward trials which made the 40-60 L/min heated-humidified-system a real floor-capable tool with the honest caveats about the immunocompromised-EuSoCC-arrest-signal-and-the-'it-delivers-oxygen-not-ventilation-in-most-adults'-physics-lesson), the NIV-with-its-solid-indications (the COPD-exacerbation-with-pH-under-7.35-and-the-cardiogenic-pulmonary-oedema-and-the-obesity-hypoventilation-and-ALS-adjacent-chronic-respiratory-insufficiency-where-the-mortality-numbers-are-real-and-the-intubation-avoidance-is-the-endpoint-and-the-de-novo-hypoxaemic-failure-where-NIV-fails-and-delays-intubation-and-kills-which-is-the-one-branch-of-this-evidence-that-is-not-ambiguous-and-the-30-to-60-minute-reassessment-rule-that-separates-the-good-NIV-from-the-creeping-death); and invasive ventilation's protective arithmetic (the ARDSNet-6-ml/kg-predicted-body-weight-and-plateau-under-28-and-then-under-30-and-the-PEEP-FiO2-tables-from-the-ADEM-2-and-EXPRESS-and-EPISep-adjacent-titration-debates-and-the-driving-pressure and mechanical-power research era-and-the-recruitment-manoeuvre-and-prone-positioning-PROSEVA-and-FAGEN-and-PREVENT-ALPS-era-with-prone's-survival-benefit-in-severe-ARDS-robust-while-the-routine-recruitment-and-high-PEEP-strategies-had-more-successes-than-past-patients-experience-and-the-early-paralysis-ACURASYS-versus-ROSE-and-ATACC-trial-resolution-'not-routine-consider-for-specific-cases'-and-the-spontaneous-breathing-trials-and-liberation-protocols-and-the-SPaRCL-and-other-weaning-adjacent-evidence-and-the-after-hours-and-weekend-effect-on-ventilated-patients-that-registers-keep-rediscovering-which-is-why-the-'ventilated-patients-need-a-senior-decision-maker-present'-staffing-argument-exists). The peri-intubation resuscitation deserves its own paragraph because it is where chapters meet: the hypotensive-hypovolaemic-acidotic-severely-hypoxaemic-patient-about-to-lose-their-own-respiratory-drive-is-a-cardiac-arrest-in-anticipation-so-the-preparation-is-the-procedure (the-fluid-or-pressor-orr-running-before-induction-where-haemodynamically-appropriate-and-the-choose-the-right-induction-drug-for-this-heart-and-the-have-the-difficult-airway-trolley-and-surgeon-on-the-phone-for-the-neck-that-swells-and-the-first-pass-is-the-safest-pass-because-each-attempt-costs-oxygen-and-raises-oedema-and-the-team-briefing-that-says-who-intubates-who-presses-who-cuts-and-at-what-point-do-we-call-for-help-which-is-the-crisis-resource-management-the-airway-curriculum-was-built-around).' - [[respiratory/gas-exchange]], [[respiratory/control-breathing-tests]], [[emergency-critical-care/critical-care]]**
+**Airway adjuncts** hold the airway open:
+
+- An **oropharyngeal (Guedel) airway**, sized from the incisors to the angle of the jaw, is tolerated only by patients with a markedly reduced level of consciousness; a patient who gags on it does not need it.
+- A **nasopharyngeal airway** is better tolerated by semi-conscious patients. It is used with caution in suspected basal skull fracture.
+- A **supraglottic airway device** (such as an i-gel or laryngeal mask airway) sits over the larynx and allows ventilation without passing through the vocal cords. It is quick to insert and is used in cardiac arrest and as a rescue device when intubation fails, but it does not reliably protect against aspiration.
+
+### Tracheal intubation
+
+Placing a cuffed tube through the vocal cords into the trachea protects the lungs from aspiration, allows ventilation at high pressures, and allows suction of the lower airway. In emergencies it is usually done by **rapid sequence induction (RSI)**: after preoxygenation, an induction drug and a fast-acting neuromuscular blocker are given in quick succession, and the tube is placed without manual ventilation where possible, to reduce the risk of aspirating stomach contents.
+
+Indications include failure to maintain or protect the airway (reduced consciousness, burns or swelling), failure of oxygenation or ventilation despite less invasive support, anticipated deterioration (for example before transfer of a patient with a severe head injury) and the need for deep sedation or anaesthesia.
+
+Intubation of a critically ill patient is dangerous. Cardiovascular collapse, hypoxaemia and cardiac arrest around intubation are common, because induction drugs cause vasodilatation and myocardial depression, positive pressure ventilation reduces venous return, and the patient may have little oxygen reserve. This is why the 2025 DAS guidelines emphasise the **physiologically difficult airway**, in which the danger comes from the patient's physiology rather than their anatomy.
+
+::: algorithm The failed-intubation plan (DAS 2025) {#def-das}
+The Difficult Airway Society guideline for unanticipated difficult tracheal intubation in adults (published 2025) keeps a simple sequence, with oxygen delivered throughout:
+
+- **Plan A, tracheal intubation**: optimise position, preoxygenation and first-attempt success (videolaryngoscopy, a bougie, external laryngeal manipulation), with a limited number of attempts.
+- **Plan B, supraglottic airway**: if intubation fails, insert a second-generation supraglottic airway to oxygenate, then stop and think: wake the patient, continue with the supraglottic airway, or attempt intubation through it.
+- **Plan C, facemask ventilation**: if the supraglottic airway fails, attempt facemask ventilation with optimal technique; if it works, wake the patient or make a plan.
+- **Plan D, emergency front-of-neck airway**: if the situation is **"can't intubate, can't oxygenate" (CICO)**, declare it out loud and perform a front-of-neck airway, usually a scalpel–bougie–tube cricothyroidotomy through the cricothyroid membrane.
 :::
 
-## The syndromes at the interface
+Every intubation is confirmed by **waveform capnography**: a sustained, regular CO₂ trace with each breath. Seeing the tube pass the cords, chest movement and misting of the tube are not reliable. In cardiac arrest a low but present trace still confirms placement; a flat trace means the tube is not in the trachea until proven otherwise ("no trace, wrong place"). The Fourth National Audit Project of the Royal College of Anaesthetists (NAP4, 2011) found that failure to use capnography contributed to many airway-related deaths in intensive care, and capnography is now standard for every ventilated patient.
 
-::: definition Acute hypoxaemic and hypercapnic failure: the decisions {#def-syndromes}
-**The two failure types organise everything (the type-1 hypoxaemic and type-2 hypercapnic with the blood-gas grammar and the A-a-gap-and-shunt-versus-dead-space-versus-hypoventilation-versus-DLTS-physiology which the respiratory chapters teach and the acute-medicine application keeps to four decisions: does this patient need more oxygen, does this patient need support, does this patient need intubation, and is intubation going to help this patient - the last question having a legitimate 'no' whose documentation is the palliative-care chapter's and the ethics chapter's shared competence); the acute-hypoxaemic-failure-workflow: the chest-x-ray-and-CT-and-CTPA-decisions-against-probability (the pneumonia-versus-oedema-versus-PE-versus-ARDS-versus-haemorrhage-versus-'the-lungs-are-clear-and-the-lactate-is-normal-so-think-anaemia-and-methaemoglobinemia-and-cyanide-and-shunt-and-high-output-states'-differential-the-rare-pink-patient-with-a-saturation-that-does-not-match-the-gas-and-the-co-oximeter-answer-and-the-'breathless-with-clear-chest'-list-of-PE-and-anxiety-and-metabolic-acidosis-Kussmaul-and-diaphragm-paralysis-and-obesity-and-myasthenia-and-anaemia-and-caisson-disease-adjacent-haemoglobin-affinity-rarities-which-is-a-clinical-medicine-examination-in-one-paragraph), the HFNO-and-NIV-and-prone-adjacent-awake-prone-positioning-trial-in-hypoxaemic-patients-to-buy-time-bought-real-time-in-2020-and-the-HFNO-versus-NIV-versus-intubation-decision-nodes-from-the-IMPROVHNOFLORA-and-EMVIGILANCE-and-EuSoCC-and-LUNG-UITIMATE-adjacent-literature-whose-honest-summary-is-HFNO-for-pure-hypoxaemic-ward-patients-may-avoid-intubation-in-selected-cohorts-but-do-not-delay-intubation-in-those-getting-worse-and-the-'do-not-put-all-eggs-in-non-invasive-devices'-ICU-safety-culture-and-the-ARDS-diagnosis-Berlin-definition-with-its-P/F-severity-bands-and-the-echocardiography-and-lung-ultrasound-and-CT-adjacent-cause-attribution-because-treating-cardiogenic-oedema-as-ARDS-is-a-vent-mode-mistake-and-vice-versa-is-a-diuretic-mistake; the acute-hypercapnic-failure: the COPD-exacerbation-pathway (the-controlled-oxygen-and-bronchodilators-and-steroids-and-antibiotics-when-indicated-and-NIV-for-pH-under-7.35-with-persistence-on-optimised-medical-therapy-and-the-'NIV-needs-a-review-clock-of-1-hour-and-an-intubation-plan-that-has-been-touched-by-someone-competent'-rule and the avoid-intubation-if-possible-physiology-trap (the 'we will just intubate and sort it later' in severe hypercapnia-and-air-trapping-with-its-pH-collapse-and-hypotension-and-barotrauma-and-weaning-nightmare which is why the NIV-first-COPD-culture-spread-because-the-evidence-was-generated-first in COPD with the pH and P/F numbers behind it), and the obesity-hypoventilation-neuromuscular-and-driven-hypoventilation-versions with their own NIV-and-weight-and-reversal-medicine-answers; and the airway-emergency-syndromes at this interface (the epiglottitis and retropharyngeal-peritonsillar-abscess-'do-not-prod-the-tongue-in-the-child-and-the-airway-securement-is-the-procedure'-rules the ENT chapters hold, and the anaphylaxis-airway-edema-timed-to-the-epinephrine-not-the-anaesthetist-arrival which is the next chapter's).**
+::: warning "No trace, wrong place"
+Clinicians who see a flat capnography trace after intubation sometimes blame the monitor, the sampling line or "low output", and leave the tube in place. An oesophageal intubation kills by hypoxaemia within minutes. If there is no trace, remove the tube, oxygenate with a mask or supraglottic airway, and try again. A flat trace in cardiac arrest is particularly likely to be misread, because a correctly placed tube still gives a low but definite waveform during effective CPR.
 :::
 
-::: example The 72-year-old with 'just a COPD exacerbation' {#ex-niv}
-pH 7.22, pCO2 9.6, pO2 8.1 on 15 L via non-rebreather from the ambulance, drowsy but rousable; the ward 'cannot do NIV at night'; the plan reads 'nebs, antibiotics, steroids, review in the morning'.
+## Respiratory failure {#def-syndromes}
+
+::: definition Respiratory failure {#def-respfailure}
+**Respiratory failure** is failure of the respiratory system to maintain adequate gas exchange. It is defined by arterial blood gases:
+
+- **Type 1 (hypoxaemic) respiratory failure**: PaO₂ below 8 kPa (60 mmHg) with a normal or low PaCO₂. The problem is in gas exchange in the lung: ventilation–perfusion mismatch or shunt (pneumonia, pulmonary oedema, ARDS, pulmonary embolism).
+- **Type 2 (hypercapnic) respiratory failure**: PaCO₂ above 6.0–6.5 kPa (45–49 mmHg), usually with hypoxaemia. The problem is inadequate ventilation: a failing respiratory pump (COPD exacerbation, exhaustion in asthma, neuromuscular disease, chest wall disease, obesity hypoventilation) or reduced respiratory drive (opioids, sedatives, brain injury).
+
+Acute hypercapnia causes a **respiratory acidosis** (pH below 7.35). In chronic hypercapnia the kidneys retain bicarbonate and the pH is near normal; an acute rise on top of this ("acute-on-chronic") lowers the pH.
+:::
+
+The alveolar gas equation separates hypoventilation from lung disease.
+
+::: theorem Alveolar gas equation and the A–a gradient {#thm-aa}
+The alveolar partial pressure of oxygen is approximately
+
+$$
+P_AO_2 = F_iO_2 \times (P_{\text{atm}} - P_{H_2O}) - \frac{P_aCO_2}{R}
+$$ {#eq-alveolar}
+
+with atmospheric pressure about 101.3 kPa at sea level, water vapour pressure 6.3 kPa at 37 °C, and respiratory quotient $R \approx 0.8$. The **alveolar–arterial (A–a) gradient** is $P_AO_2 - P_aO_2$. In a young adult breathing air it is below about 2 kPa (15 mmHg), rising with age.
+:::
+
+::: proof
+Inspired gas is warmed and humidified in the airways, so its oxygen partial pressure is $F_iO_2 \times (P_{\text{atm}} - P_{H_2O})$: about 20 kPa on air. In the alveoli, oxygen is taken up and carbon dioxide added; because more oxygen is consumed than CO₂ produced (the ratio is $R$), the oxygen pressure falls by $P_aCO_2/R$, using arterial PaCO₂ as an estimate of alveolar PCO₂. If the lung transfers gas normally, arterial PO₂ is only slightly below alveolar. Pure hypoventilation (for example opioid toxicity) raises PaCO₂ and lowers $P_AO_2$, but the gradient stays normal. A wide gradient means the problem lies in the lung itself: ventilation–perfusion mismatch, shunt or, less often, a diffusion defect.
+:::
+
+::: example Hypoxaemia from the brain or the lung? {#ex-aa}
+Two patients breathe air at sea level. (a) A 34-year-old woman after a heroin overdose: PaO₂ 7.5 kPa, PaCO₂ 8.0 kPa. (b) A 34-year-old man with pneumonia: PaO₂ 9.0 kPa, PaCO₂ 5.0 kPa. Calculate each A–a gradient and interpret.
 ::: solution
-**The-one-hour-that-decides-the-week ([[#def-ventilation]], [[#def-syndromes]], [[respiratory/asthma-copd]]): the correction - 'this is acute hypercapnic respiratory failure with acidosis and the single intervention with a mortality benefit is NIV started now not in the morning and the 15-L-non-rebreather is part of the problem (the uncontrolled-oxygen-in-a-retainer with the Haldane-and-hypoxic-drive-and-VQ-mismatch-physiology this patient is living the demonstration of) so the oxygen goes to a venturi-or-saturation-target-88-92-and-the-abg-gets-rechecked-in-30-minutes-because-drowsiness-on-oxygen-is-not-'settling-to-sleep-it-is-the-narcosis; the logistics that are the medicine - 'the-NIV-capable-bed-transfer-respiratory-high-dependency-or-ICU-or-ED-resus-bay-because-NIV-works-with-monitored-nursing-ratios-not-with-a-mask-and-hope and the 'if NIV fails or is inappropriate, what then' conversation had now (the ceiling question answered with the patient awake enough to answer because intubating-end-stage-COPD-is-a-plan-not-an-accident and the Do-Not-Attempt-Cardiopulmonary-Resuscitation-or-treatment-and-recommendation-record-updated-same-shift-not-at-2am), the intubation-equipment-checked-by-name-because-if-she-crashes-the-difficult-airway-trolley-is-hers-today; and the bundle around it - 'the-bronchodilators-and-prednisolone-and-antibiotics-per-exacerbation-indication-and-the-pneumonia-and-PE-and-DAH-and-heart-failure-re-examination-because-not-all-'COPD-exacerbations'-are-and-the-flu-and-COVID-status-and-the-NIV-interface-comfort-and-face-to-face-presence-because-NIV-failure-is-often-mask-intolerance-and-the-nurse-with-ten-minutes-is-an-efficacy-variable-documented-in-the-NIV-adherence-literature.**
+(a) $P_AO_2 = 0.21 \times 95 - 8.0/0.8 = 19.95 - 10.0 = 9.95$ kPa. Gradient $= 9.95 - 7.5 = 2.45$ kPa, close to normal. Her hypoxaemia is almost entirely explained by **hypoventilation** (type 2 failure from respiratory depression). Treatment is to restore ventilation: airway support, bag-mask ventilation and naloxone.
+
+(b) $P_AO_2 = 19.95 - 5.0/0.8 = 13.7$ kPa. Gradient $= 13.7 - 9.0 = 4.7$ kPa, clearly widened. His hypoxaemia comes from a **gas exchange problem** in the lung (V/Q mismatch and shunt from consolidation), type 1 failure. Treatment is oxygen and treating the pneumonia.
+:::
+:::
+
+## Oxygen therapy {#def-ventilation}
+
+Oxygen is a drug. It is prescribed with a **target saturation range**, and the dose is adjusted to stay within it.
+
+::: definition Target oxygen saturations (BTS) {#def-targets}
+The British Thoracic Society guideline on emergency oxygen use (2017) recommends:
+
+- **94–98%** for most acutely ill adults.
+- **88–92%** for patients at risk of **hypercapnic respiratory failure**: COPD, severe obesity, cystic fibrosis, chest wall deformity and neuromuscular disease, pending blood gas results.
+- In critical illness (cardiac arrest, shock, sepsis, major trauma, anaphylaxis), start with **high-concentration oxygen** via a reservoir mask at 15 L/min, then titrate to target once the patient is stable.
+
+Oxygen is not given to patients who are not hypoxaemic merely because they are breathless or have chest pain; in acute myocardial infarction and stroke without hypoxaemia it has no benefit.
+:::
+
+Why does oxygen harm some patients with COPD? In those with chronic hypercapnia, high-concentration oxygen raises the PaCO₂, mainly by worsening ventilation–perfusion matching (hypoxic pulmonary vasoconstriction is released in poorly ventilated areas) and through the Haldane effect, with a smaller contribution from reduced respiratory drive. The result can be a dangerous acidosis. The answer is not to withhold oxygen from a hypoxaemic patient, but to titrate it to 88–92% with a controlled device such as a Venturi mask.
+
+**Delivery devices** range from nasal cannulae (1–4 L/min) through simple face masks and **Venturi masks**, which deliver a fixed oxygen concentration (24%, 28%, 35%, 40%, 60%), to reservoir ("non-rebreathe") masks.
+
+**High-flow nasal oxygen (HFNO)** delivers warmed, humidified gas at up to about 60 L/min with a set oxygen fraction. The high flow matches the patient's inspiratory demand, washes out dead space and gives a small amount of positive airway pressure. It is comfortable, allows eating and talking, and is widely used for type 1 respiratory failure.
+
+## Non-invasive respiratory support {#sec-niv}
+
+**Continuous positive airway pressure (CPAP)** applies the same pressure throughout the breathing cycle through a tight-fitting mask or hood. It recruits collapsed alveoli and improves oxygenation, so it is used in type 1 failure: acute cardiogenic pulmonary oedema, and some cases of pneumonia. It does not directly increase ventilation.
+
+**Non-invasive ventilation (NIV)**, often called BiPAP, adds a higher pressure during inspiration (inspiratory positive airway pressure, IPAP) to a lower expiratory pressure (EPAP). The difference supports each breath and increases tidal volume, so NIV treats **hypercapnic (type 2) failure**.
+
+::: definition Indications for NIV in COPD {#def-niv}
+The BTS/Intensive Care Society guideline on acute hypercapnic respiratory failure (2016) recommends NIV for patients with an exacerbation of COPD whose **pH is below 7.35 and PaCO₂ above 6.5 kPa** persisting despite immediate optimal medical treatment (controlled oxygen, nebulised bronchodilators, steroids, antibiotics where indicated). Before starting, there should be a clear decision about what happens if NIV fails: whether the patient would be intubated or whether NIV is the ceiling of treatment. Blood gases are repeated within 1–2 hours and the settings adjusted.
+:::
+
+NIV is not appropriate for patients who cannot protect their airway, have copious secretions, are vomiting, have facial trauma or an untreated pneumothorax, or are so unwell that delaying intubation would be dangerous.
+
+::: example The 72-year-old with "just a COPD exacerbation" {#ex-niv}
+A 72-year-old woman with COPD is brought in by ambulance after receiving 15 L/min oxygen by reservoir mask for 40 minutes. She is drowsy. SpO₂ 99%. Arterial gas: pH 7.21, PaCO₂ 10.4 kPa, PaO₂ 24 kPa, bicarbonate 33 mmol/L. What is happening, and what should be done?
+::: solution
+She has **acute-on-chronic hypercapnic (type 2) respiratory failure** with a respiratory acidosis. The raised bicarbonate shows chronic CO₂ retention; the low pH shows an acute rise. Her PaO₂ of 24 kPa is far higher than needed, and uncontrolled oxygen has probably contributed to her rising PaCO₂ and drowsiness.
+
+1. **Titrate oxygen down** at once to a target of 88–92%, using a Venturi mask (for example 28%). Do not remove oxygen entirely: PaO₂ would fall rapidly.
+2. Give nebulised bronchodilators (driven by air with supplementary oxygen by nasal cannula, if needed), steroids, and antibiotics if infection is suspected.
+3. Repeat the gas. If pH remains below 7.35 with PaCO₂ above 6.5 kPa, start **NIV**, having agreed a ceiling of treatment with her and her family if possible.
+4. Recheck the gas 1–2 hours after starting NIV. Worsening acidosis or drowsiness despite good NIV calls for a decision about intubation.
+:::
+:::
+
+## Mechanical ventilation {#sec-mv}
+
+Invasive ventilation pushes gas into the lungs under positive pressure through a tracheal or tracheostomy tube. The ventilator controls one variable and lets the others follow.
+
+- In **volume control**, the clinician sets the tidal volume; the airway pressure depends on the compliance and resistance of the lungs.
+- In **pressure control**, the clinician sets the inspiratory pressure; the tidal volume depends on the lungs.
+- In **pressure support**, the patient triggers every breath and the ventilator adds a set pressure, so the patient controls the rate. It is used during weaning.
+
+Every mode also sets the **positive end-expiratory pressure (PEEP)**, which keeps alveoli open at the end of expiration, and the **fraction of inspired oxygen (FiO₂)**. Oxygenation is controlled mainly by FiO₂ and PEEP (mean airway pressure); CO₂ clearance by minute ventilation (tidal volume times rate).
+
+### Ventilator-induced lung injury and lung-protective ventilation
+
+Mechanical ventilation can itself injure the lungs, by overdistension (**volutrauma**), high pressure (**barotrauma**) and repeated opening and collapse of alveoli (**atelectrauma**). The injured lung in ARDS is functionally small, "baby lung": a normal tidal volume delivered to it overstretches the aerated portion.
+
+::: definition Acute respiratory distress syndrome (ARDS) {#def-ards}
+**ARDS** is acute, diffuse, inflammatory lung injury causing increased permeability of the alveolar–capillary barrier, bilateral lung opacities and hypoxaemia not fully explained by cardiac failure or fluid overload. Under the **Berlin definition** (2012), it begins within one week of a known insult and is graded by the PaO₂/FiO₂ ratio with PEEP of at least 5 cmH₂O:
+
+| Severity | PaO₂/FiO₂ (mmHg) | PaO₂/FiO₂ (kPa) |
+|---|---|---|
+| Mild | 200–300 | 26.7–40 |
+| Moderate | 100–200 | 13.3–26.7 |
+| Severe | ≤100 | ≤13.3 |
+
+A **global definition** proposed in 2023 extends this to patients on high-flow nasal oxygen (at least 30 L/min), allows the SpO₂/FiO₂ ratio where blood gases are not available, and accepts lung ultrasound as imaging, so that ARDS can be recognised in settings with limited resources.
+:::
+
+The cornerstone of ARDS care is **lung-protective ventilation**. The ARDS Network trial (2000) compared tidal volumes of 6 and 12 mL/kg of predicted body weight: the lower volume reduced mortality from 39.8% to 31.0%.
+
+::: algorithm Lung-protective ventilation {#def-lpv}
+1. Calculate **predicted body weight** (PBW) from height and sex, not actual weight: men $50 + 0.91 \times (\text{height in cm} - 152.4)$ kg; women $45.5 + 0.91 \times (\text{height in cm} - 152.4)$ kg.
+2. Set tidal volume at about **6 mL/kg PBW** (range 4–8).
+3. Keep **plateau pressure ≤30 cmH₂O**.
+4. Aim for a **driving pressure** (plateau pressure minus PEEP) as low as possible; values above about 15 cmH₂O are associated with higher mortality.
+5. Use enough PEEP to keep alveoli open, guided by FiO₂/PEEP tables or the response to changes.
+6. Accept a raised PaCO₂ (**permissive hypercapnia**) as long as the pH stays acceptable (often above about 7.20).
+7. In moderate to severe ARDS (PaO₂/FiO₂ below 150 mmHg, about 20 kPa), use **prone positioning** for at least 16 hours a day.
+:::
+
+Prone positioning improves the matching of ventilation and perfusion and distributes stress more evenly through the lung. In the PROSEVA trial (2013), early prolonged proning in severe ARDS reduced 28-day mortality from 32.8% to 16.0%. Other options in severe cases include neuromuscular blockade for a limited period and, in selected patients at specialist centres, **venovenous ECMO**, which oxygenates the blood outside the body while the lungs rest.
+
+::: widget plot
+f: 30*x/(x+40); 30*x/(x+40) - 0.00005*a*x^2
+x: 0, 120
+y: 0, 30
+sliders: a=5:0:10:1
+labels: \text{ideal recruitment}; \text{with overdistension}
+caption: A schematic of lung inflation: pressure on the horizontal axis (arbitrary units), volume on the vertical. In a healthy lung, more pressure gives more volume until the lung fills. When the slider adds overdistension, the upper part of the curve flattens and then turns down: extra pressure stretches already-open alveoli without adding useful volume, which is the injury that low tidal volumes and plateau-pressure limits are designed to avoid. Illustrative only.
+:::
+
+::: example Set the ventilator {#ex-pbw}
+A 45-year-old man, 180 cm tall and weighing 110 kg, is intubated for severe pneumonia. His PaO₂/FiO₂ ratio is 15 kPa (about 113 mmHg) on PEEP 10 cmH₂O, with bilateral opacities. Classify his ARDS, calculate an initial tidal volume, and check his driving pressure if the plateau pressure is 28 cmH₂O.
+::: solution
+A PaO₂/FiO₂ of 15 kPa (113 mmHg) lies in the **moderate** band (100–200 mmHg).
+
+Predicted body weight: $50 + 0.91 \times (180 - 152.4) = 50 + 25.1 = 75.1$ kg. At 6 mL/kg PBW, the tidal volume is $6 \times 75.1 \approx 450$ mL. (Using his actual weight of 110 kg would give 660 mL, a dangerous overestimate: lung size depends on height, not body fat.)
+
+Driving pressure $= 28 - 10 = 18$ cmH₂O. The plateau pressure is within the limit of 30, but the driving pressure is high. The team might reduce tidal volume further (towards 5 mL/kg), accept a higher PaCO₂, reassess PEEP, and, with a PaO₂/FiO₂ ratio below 150 mmHg, start prone positioning.
 :::
 :::
 
 ::: example The intubation that caused an arrest {#ex-periintub}
-A 64-year-old with bowel obstruction and septic shock, pH 7.18 lactate 6, on noradrenaline 0.1; the team proceeds to intubation for 'respiratory failure' with RR 30; propofol given; two-minute first attempt with desaturation to 82; then pulseless electrical activity.
+A 61-year-old woman with septic shock from pneumonia is on high-flow oxygen at FiO₂ 0.8 with SpO₂ 89%, BP 86/50 mmHg on noradrenaline, and respiratory rate 38/min. A junior anaesthetist plans a standard RSI. Within a minute of induction her blood pressure becomes unrecordable and she has a PEA arrest. Why, and how could it have been prevented?
 ::: solution
-**Peri-intubation-arrest-is-predictable-and-preventable-medicine ([[#def-airway]], [[#def-syndromes]], [[emergency-critical-care/resuscitation]]): the physiology of the crash - 'the acidotic patient depends on their own respiratory compensation (the pCO2 of 2.5 they are generating is keeping pH alive) and paralysis-and-apnoea-removes-it-within-a-minute (the pH-plummets-arithmetically) and-sepsis-and-hypovolaemia-and-positive-pressure-and-sedation-sum-into-the-hypotensive-arrest-and-the-desaturation-started-from-a-low-reserve so the case was a loaded gun and the propofol pulled the trigger; the version that goes right - 'resuscitate-before-and-during-intubation (the-fluid-or-pressor-running-and-turned-up-pre-induction and the-ROSC-equivalent-of-a-ketamine-induction-for-this-haemodynamic and the-avoid-or-halve-sedatives-with-the-RSI-paralytic-shortening-apnoea-and-the-ventilator-settings-preset-for-compensation (the-high-minute-ventilation-and-RR-to-match-her-own-so-the-post-intubation-pH-does-not-orbit-down-and-the-double-check-the-ETT-position-because-oesophageal-intubation-in-an-arrest-is-a-separate-avoidable-death), the pre-oxygenation-with-HFNC-or-NIV-adjacent-apnoeic-oxygenation-borrowed-and-the-maximal-attempt-minimisation-with-the-'two-optimised-attempts-by-the-best-operator-then-plan-B'-discipline and the-urgent-ENT-and-difficult-airway-trolley-and-surgeon-present-or-aware-for-the-shock-airway-and-the-decompression-bilated-chest-and-the-flail-abdomen-vent-reassessment-if-pressure-high), and the arrest algorithm modified (the-reversible-causes-hunt-with-the-airway-and-tension-pneumothorax-and-hypovolaemia-and-acidosis-first-and-the-'is-this-really-a-PEA-arrest-or-a-profound-acidotic-hypovolaemic-near-arrest-treated-by-fixing-those'-judgment-which-decides-whether-you-get-ROSC-or-write-a-death-certificate-with-the-word-'aspiration'-on-it). The final rule the airway literature repeats: if you can, fix the shock, decompress the gut and correct the potassium and acid before the tube - sometimes NIV-or-HFNO-with-a-considered-intubation-plan-holds-the-seam and intubation becomes an elective procedure at 6am with the surgeon scrubbed.**
+She had a **physiologically difficult airway**: severe hypoxaemia with little oxygen reserve, shock with high sympathetic tone, and a high respiratory rate (often a sign of severe metabolic acidosis that she was compensating for).
+
+At induction, three things happened together: the induction drug removed her sympathetic tone and depressed her myocardium; positive pressure ventilation reduced venous return; and apnoea while the tube was placed caused her saturation to fall and her CO₂ to rise, worsening acidosis.
+
+Prevention: resuscitate before intubation (fluid if responsive, vasopressor running and increased, push-dose vasopressor drawn up); preoxygenate with high-flow nasal oxygen or NIV and keep oxygen flowing during laryngoscopy; choose a cardiovascularly stable induction drug at a reduced dose; have the most experienced operator perform the intubation; set the ventilator rate to match her pre-intubation minute ventilation; and brief the team with a plan for arrest. Peri-intubation arrest is managed as in [[emergency-critical-care/resuscitation#def-als]].
 :::
 :::
 
 ::: example The post-thyroidectomy swelling {#ex-haematoma}
-Six hours after thyroidectomy a 46-year-old stridor, restless, neck swollen and firmer, saturated 91 percent on 15 litres; the surgeon is 20 minutes away; the anaesthetist is asked to 'come and intubate'.
+Four hours after a thyroidectomy, a 48-year-old woman becomes anxious and breathless, with stridor and a tense swelling in the front of her neck. What is happening and what is the immediate treatment?
 ::: solution
-**The-cause-is-outside-the-airway ([[#def-airway]], [[#def-syndromes]], [[surgery/perioperative-care]]): the decision - 'this is venous congestion and mechanical compression from a neck haematoma: the airway may be difficult or impossible to intubate because the anatomy is distorted externally and oedematous, and induction without decompression can convert a breathing patient into a cannot-intubate-cannot-oxygenate patient within minutes; therefore the first move is to open the wound, evacuate the clot and release the deep sutures at the bedside with the scalpel and gloved fingers, now, by whoever is sterile-capable, while the anaesthetist and the airway trolley and the surgeon are en route - decompression often restores the airway enough that intubation, when needed, is then semi-elective and the trachea accessible if front-of-neck access becomes necessary; the preparation - 'the-most-experienced-intubator-present-or-on-the-phone, the patient awake-upright-oxygenated-and-not-flattened, the difficult-airway-and-surgical-airway-equipment-open-in-the-room-because-post-compression-anatomy-may-need-a-smaller-tube-and-a-video-laryngoscope-and-a-surgeon-primed-for-tracheostomy-instead-and-the-co-agulation-and-return-to-theatre-plan-for-the-bleeding-source. The teaching point every thyroid-unit induction teaches: the definitive airway manoeuvre in this scenario is a bedside decompression, and the intubation attempt that precedes it is the error that fills the coroner's narratives; the anti-coagulation and blood-pressure and vomit-straining contributors get sorted afterwards.'**
+An expanding **haematoma** in the neck after thyroid surgery compresses the veins and lymphatics, causing laryngeal oedema and progressive airway obstruction. It is an emergency.
+
+The immediate treatment is to **open the wound at the bedside**: cut the skin sutures and the deeper muscle layer stitches to release the haematoma (the SCOOP approach: Skin exposure, Cut sutures, Open skin, Open muscles, Pack wound), while calling for senior anaesthetic and surgical help and giving high-flow oxygen. Decompression often improves the airway rapidly. She then returns to theatre for control of the bleeding, with intubation by an experienced anaesthetist prepared for a difficult airway, because the laryngeal oedema may persist after decompression.
 :::
 :::
 
 ::: example The breathless patient with clear lungs {#ex-clear-chest}
-A 58-year-old post-crash femoral-fracture patient day 2 becomes breathless; SpO2 88 percent on air, clear chest auscultation, RR 28, sinus tachycardia 118; the saturations do not improve past 92 percent on 15 litres; the junior wants 'more oxygen and nebs'.
+A 39-year-old man is breathless with SpO₂ 88% on air, respiratory rate 30/min and pulse 118/min. His chest is clear on auscultation and his chest X-ray is normal. Arterial gas on air: PaO₂ 7.4 kPa, PaCO₂ 4.0 kPa. What should be considered?
 ::: solution
-**The-shunt-physiology-of-a-clinical-probability ([[#def-syndromes]], [[emergency-critical-care/shock-fluids]]): the read - 'bilateral-clear-lungs-and-hypoxaemia-refractory-to-oxygen-suggests-shunt-or-perfusion-failure: the day-2-post-fracture differential (fat-embolism-with-its-petechiae-and-neurological-features, pulmonary-embolus, early-ARDS, atelectasis-versus-consolidation-on-a-chest-x-ray-that-lags) plus the 'saturation-gap' mimics (the methaemoglobinaemia-from-topical-anaesthetics-or-dapsone-or-certain-sprays with the chocolate-blood-co-oximeter-diagnosis) which are the classic 'does not respond to oxygen' answers; the work of the next hour - 'the-abg-not-the-oximeter-decision-making-plus-the-CTPA-versus-leg-compression-plus-echocardiographic-strain-versus-fat-embolism-clinical-diagnosis-versus-early-lung-ultrasound-comet-tails and the resuscitation-side-effect check (the-opioid-with-held-respirations-versus-this-picture-and-the-aspirin-versus-anticoagulation-for-the-fracture-surgery-plan conversation with the surgeon early because the fixation cannot sit in a queue either); the escalation of support decided by trajectory - 'the-HFNO-or-NIV-question-for-hypoxaemic-failure-honestly-answered-as-HFNO-may-buy-time-and-NIV-is-wrong-here-for-the-hypoxaemic-shunt-pattern-and-the-intubation-threshold-in-fat-embolism-is-ventilatory-failure-and-exhaustion-not-a-saturation-number-because-the-disease-burns-through-several-days-and-then-reverses-which-is-worth-knowing-when-considering-how-hard-to-push.'**
-:::
-:::
+Hypoxaemia with a clear chest and normal chest X-ray means the lung parenchyma looks normal but gas exchange is impaired. $P_AO_2 = 19.95 - 4.0/0.8 = 14.95$ kPa, so the A–a gradient is about 7.6 kPa: markedly widened.
 
-::: exercise Position and pre-oxygenate {level=1}
-A 130-kg woman with BMI-47 obstructive-sleep-apnoea needs urgent intubation for worsening pneumonia hypoxia. What makes pre-oxygenation succeed or fail, and what does 'failure' change about your plan?
-::: solution
-**Pre-oxygenation-as-prognosis ([[#def-airway]]): the success-factors - 'the-ramped-position-audited-not-assumed (the external-auditory-matus-above-the-sternal-notch and the reverse-Trendelenburg-and-the-brief-and-the-pillows-and-who-knows-how-to-ramp-this-patient), awake-position-choice (she may have been sitting upright for weeks and lying her flat for laryngoscopy is the injury to the airway you can still avoid: consider the-sitting-intubation-plan), the-high-flow-or-non-rebreather-with-good-seal-and-the-nasal-sprinkle-apnoeic-oxygenation and the 'denitrogenation time is shorter than you think: measure, watch the fall-through and stop at 20 percent below your desat-threshold because you have lost a third of the safe-apnoea-time already. The failure - 'if-pre-oxygenation-cannot-get-her-safe-then-awake-intubation-is-the-right-operation-not-a-failure-of-courage (the topicalised awake technique with her breathing maintained, the ENT-and-surgical-airway-backup-planned-and-present-or-dialable) and the 'plan-B-through-Z-out-loud' because desaturation-at-60-seconds-in-a-BMI-47-septic-patient-is-the-arrest-during-the-second-attempt-you-did-not-have. The documentation of position-attempted-and-times-is-for-her-next-intubation-as-much-as-for-yours.'**
+The leading cause is **pulmonary embolism**, which causes V/Q mismatch without visible lung changes. Others include an intracardiac or intrapulmonary shunt, early pneumonia (especially *Pneumocystis* in immunosuppressed patients), and methaemoglobinaemia (where SpO₂ reads low despite a normal PaO₂; not the case here, as his PaO₂ is low). He needs oxygen to target, a Wells score, CT pulmonary angiography and anticoagulation if PE is likely. See [[respiratory/interstitial-vascular-disease]].
 :::
 :::
-
-::: exercise Judge the extubation {level=2}
-ICU day 8, COPD and obesity, intubated for hypercapnic failure now improving: cuff-leak present but small, cough weak, secretions frequent, she passed a 30-minute spontaneous breathing trial on pressure-support-5-PEEP-5 with RR 26 and saturations 93 percent. Extubate, re-intubate, or tracheostomy? Argue with yourself.
-::: solution
-**The-liberation-judgment-call ([[#def-airway]], [[#def-ventilation]]): the case for - 'the trial-passed-with-mild-tachypnoea-but-trials-are-not-crystals: the real predictors are the cough-strength and secretion-volume and the mental-status-trajectory and whether she can protect the airway and clear what she makes, and a small cuff-leak with a weak cough is the extubation-failure-profile with a face; the case against tracheostomy now - 'day-8-tracheostomy-in-a-possibly-liberable-patient-is-a-premature-stoma-with-its-complication-and-long-term-trach-and-stigma-and-communication-and-funeral-arrangement-implications-not-a-neutral-safety-move and yet the 14-day rule-of-thumb evidence (the early-versus-late trials) says late is not fatal and many units negotiate with 'we extubate to preventive NIV or HFNO and re-assess liberation in 48 hours and talk tracheostomy only if she fails twice or secretion burden dominates'. The version this patient deserves - 'the-planned-graded-extubation (the end-of-trial-with-NIV-on-immediately-for-a-COPD-hypercapnic-patient-which-is-the-preventive-NIV-evidence-and-the-paediatric-and-cardiac-analogues-of-'extubate-with-a-plan-not-a-hope' and the suction-catheter-at-hand and the re-intubation-equipment-checked-and-the-'call-us-for-the-stridor-not-the-panic'-education and the 72-hour-ICU-or-HDU-observation-and-the-physiotherapy-and-cough-assistance-and-mucokinetic-plan-and-the-swallow-and-nutrition-and-denture-and-mobility-work-which-is-what-'extubation-success'-actually-consists-of-while-the-tracheostomy-decision-gets-its-second-meeting-if-she-fails.'**
-:::
-:::
-
-::: exercise Audit the oxygen safety {level=2}
-Your audit: 96 percent of oxygen prescriptions have no target range, night-time saturations of 84 percent are treated with 'turn it up' by protocol, and COPD patients arrive from care homes on 6 litres unmonitored. Design the oxygen-therapy programme the BTS standards imply.
-::: solution
-**Oxygen-governance ([[#def-ventilation]], [[clinical-skills/patient-safety]]): the-programme - 'oxygen-written-as-a-drug-in-the-medicines-record-with-indication-and-target-range-and-review-date-because-the-guidelines-are-unambiguous-and-the-systems-are-not, the device-and-flow-escalation-ladder-on-one-page-at-every-bed-space-with-the-'check-the-patient-not-the-dial'-steps (position, seal, adherence, secretions) printed under the flowmeter, and the nursing protocol that a documented desaturation triggers an assessment-not-an-empirical-increase-because-'turn-it-up'-is-the-physical-therapy-of-bad-medicine. The-hypoxaemia-and-hypercapnia-safety-nets - 'the-'low-saturation-escalation'-plan-requires-an-ABG-or-gas-in-chronic-retainers-and-an-RRR-review-with-the-reason-recorded-because-treating-hypoxaemia-is-right-and-treating-hyperoxaemia-is-also-right-and-the-occult-type-2-cancer-who-is-quietly-narcotising-is-in-your-care-home-cohort-tonight. The-education-and-audit - 'the-oxygen-competency-for-all-prescribers-and-nurses-with-the-annual-fire-drill-style-audit (the-'saturation-gap'-cases-with-no-reason-code-and-the-oxygen-weaning-refusal-without-review) and the discharge-oxygen rules with the outpatient respiratory follow-up that the oxygen-disease-home-oxygen-trials-adjacent-guidance-mandates-because-home-oxygen-is-a-treatment-with-indications-not-a-comfort-item-left-on-forever-and-the-evidence-there-requires-arterial-verification. The metric that matters: the proportion of patients whose oxygen was ever stopped - because a therapy nobody discontinues is a habit, and oxygen's whole history is the habit's biography.'**
-:::
-:::
-
-::: exercise Run the pre-hospital airway debate {level=3}
-Your EMS medical director proposes allowing paramedics to perform supraglottic placement, ketamine-assisted intubation and needle cricothyroidotomy in out-of-hospital cardiac arrest; the anaesthesia and emergency-medicine consultants object that 'the evidence in airway management is weak'. Write the decision memo using the evidence hierarchy honestly and the system perspective.
-::: solution
-**EMS-airway-policy-decision ([[#def-airway]], [[emergency-critical-care/resuscitation]], [[public-health/prevention-promotion]]): the honest-evidence-summary - 'the airway-management literature is dominated by observational data because randomising arrest airways is near-impossible; what we have is: the CPR-quality literature (any airway that stops compressions is harmful), the aspiration-versus-facial-trauma-versus-failed-intubation trade-offs of pre-hospital intubation observational series, the strong consensus for basic airway and bag-valve competence and the CICO protocols, and the Scandinavian and US cohort data that supraglottic and (in experienced hands) advanced airways can be safe without survival detriment, plus the recent trials of video-assisted and first-pass emphasis that mostly change how, not whether; therefore 'weak evidence' is true as a mortality statement and false as an inaction statement; the system-design answer - 'the-procedure-must-not-outcompete-compressions-and-shock-and-transport (the-'no-stopping-CPR-for-a-second-intubation-attempt'-rule and the 'hot-transport-to-a-hospital-with-an-ECMO-and-airway-capability' alternative philosophy that the Japanese-and-Danish-and-Cincinnati-comparisons-illustrate-better-then-Europe-argued), and the competency model (the-'low-volume-procedures-need-high-volume-operators'-problem-solved-by-restricting-skill-mix-to-crew-who-do-enough-of-them-or-not-offering-them-at-all-and-the-'the-needle-cric-was-never-used-and-nobody-trained'-paradox-where-readiness-itself-decays), the measurement (the-'airway-mastery'-metrics-required-to-activate-the-programme-with-first-pass-success-and-complication-and-'can't-ventilate-never-did-the-surgical-rescue'-incident-triggers-for-training-suspension-because-the-programme-is-only-good-if-it-can-be-turned-off-when-it-stops-being-good); the memo's closing paragraph - 'the consultants are right that no trial will bless this and wrong that therefore nothing should change: the evidence supports a competency-gated, compression-protecting, escalation-capped programme with real-time quality monitoring, a deferral pathway for the difficult airway (land-and-load-and-hand-over-to-the-hospital-airway-team-earlier-and-more-often), and the honest statement to the public that the strongest pre-hospital interventions for arrest are still hands-on-chest, a defibrillator and a rapid ride, and this airway expansion buys a minority of patients a bridge, not a cure.'**
-:::
-:::
-
 
 ::: quiz
-The strongest mortality-benefit indications for non-invasive ventilation in acute settings are:
-- [ ] De novo hypoxaemic respiratory failure from pneumonia
-- [x] Hypercapnic acidosis in COPD exacerbation and cardiogenic pulmonary oedema
-- [ ] Post-cardiac-arrest routine support
-- [ ] Aspiration pneumonitis
+A ventilated patient's capnography trace, which was normal, suddenly becomes flat. His oxygen saturation is starting to fall. Which is the most likely cause to check first?
+- [ ] Hyperventilation.
+- [x] Displacement or disconnection of the tracheal tube, or complete obstruction of the circuit or tube.
+- [ ] Improving cardiac output.
+- [ ] A faulty pulse oximeter.
 ::: solution
-**NIV's hard evidence is in COPD exacerbation with acidosis and in cardiogenic pulmonary oedema; in pure de novo hypoxaemic failure it can fail harmfully and delay intubation - [[#def-ventilation]].**
+A sudden loss of the CO₂ trace in a ventilated patient means no gas is coming back from the lungs: the tube is out of the trachea, disconnected or blocked, or (if the patient is also losing output) cardiac arrest. Check the patient and the tube immediately. A useful mnemonic for sudden deterioration in a ventilated patient is DOPES: Displacement, Obstruction, Pneumothorax, Equipment failure, Stacked breaths.
 :::
 :::
 
-::: widget plot
-f: 45; 6; 30; 12; 50
-x: 1, 5
-y: 0, 100
-labels: \text{respiratory support step},\ \text{percent (illustrative effect sizes)}\ \text{COPD-NIV mortality reduction (approx)};\ \text{ARDS low-tidal-volume mortality absolute reduction};\ \text{prone in severe ARDS mortality reduction};\ \text{HFNO-intubation-avoidance (selected patients)}
-caption: Respiratory support works in the right syndrome; the chart is why the diagnosis precedes the device ([[#def-ventilation]], [[#def-syndromes]]).
+::: history
+During the Copenhagen poliomyelitis epidemic of 1952, the Blegdam Hospital was overwhelmed with patients with respiratory paralysis, and most of those placed in the few available negative-pressure ventilators ("iron lungs") died. The anaesthetist Bjørn Ibsen proposed treating them instead with tracheostomy and manual positive-pressure ventilation with a rubber bag. Hundreds of medical and dental students took turns squeezing the bags around the clock, and mortality fell dramatically. Gathering the most seriously ill patients in one area with constant attention became a model for the intensive care unit. Mechanical positive-pressure ventilators replaced the students within a few years. ARDS was described by David Ashbaugh, Thomas Petty and colleagues in Denver in 1967, and the ARDS Network trial of 2000 showed that ventilation itself could cause harm, changing ventilator practice worldwide.
 :::
 
 ## Where this leads
 
-The underlying physiology is in [[respiratory/gas-exchange]] and [[respiratory/mechanics-breathing]] and [[respiratory/control-breathing-tests]], asthma and COPD specifics in [[respiratory/asthma-copd]], ARDS and the ICU interface in [[emergency-critical-care/critical-care]], anaesthetic airway practice in [[surgery/anaesthesia-pain]], and the ceiling-of-care conversations in [[medical-ethics-law/end-of-life-ethics]].
-
-::: history
-**The airway and the ventilator have separate histories that merged in the intensive-care ward. Airway history begins with instrumentation: William McEwen's intubations in the 1870s, Kirstein's direct laryngoscopy of the 1890s, Guedel's airway and the cuffed tube of the early 1930s that made controlled ventilation safe enough to be routine, and Sells' 1941 monograph that classified intubation technique and its failures - the same taxonomy residents still learn. Then came epidemiology as aScourge: Beecher's 1956 audit of anaesthetic deaths, and the closed-claims analyses from Australia and the United States in the 1980s-2000s that converted 'difficult airway' from craft-lore into checklists, mandatory capnography, and the guidelines of the Difficult Airway Society and American Society of Anesthesiologists; the fourth National Audit Project of 2013 delivered the modern indictment - many catastrophic airway deaths involved non-anaesthetists, sedation without an airway plan, or junior operators left alone at night - which is the ancestor of every peri-intubation briefing now taught. The surgical airway moved in parallel from tracheotomy's 19th-century respectability, through the infection-scarred interwar years, to cricothyroidotomy as a resuscitation skill with kits carrying instruction labels, because when it is needed the operator has usually never done it. Ventilator history is engineering plus epidemic: the Drinker-Shaw iron lung of 1928, and the Copenhagen polio winter of 1952 when Bjorn Ibsen's scheme - paralyse, ventilate long, humidify, keep them awake and nurse them one-to-many - cut mortality from some 90 percent to 40 and invented intensive-care medicine almost in one act, with Ivar Lassen's unit formalising the positive-pressure polio-ward lineage. The iatrogenic phase followed: PEEP and high-frequency and nitric-oxide eras taught that supporting gas exchange is not harmless, the 1994-2012 ARDS definitions made a research subject of the injured lung, and the ARDSNet trial of 2000 - 31 versus 12 percent mortality on tidal volume alone - remains critical care's most consequential experiment and the proof that a ventilator delivers a dose. Proning was rehabilitated by PROSEVA in 2013 after two decades of the 1976 Douglas-Fishman observation gathering dust, and the 2015-2024 high-flow and non-invasive ward-trial wave, with 2020's crash course in proning and ventilator triage, completed the device-economics picture. Oxygen closed the circle: from vital-air optimism through the retinopathy-of-prematurity reversal of the 1950s to the 2017-2024 conservative-oxygen trials showing hyperoxia is an exposure worth 50,000 patients to disprove - which is the history's warning in one line: every breathing intervention was discovered twice, once as rescue and once as injury, and the interval is measured in patients.** - [[respiratory/gas-exchange]], [[surgery/anaesthesia-pain]], [[medical-ethics-law/justice-resources]].**
-:::
+The physiology of gas exchange and the oxygen–haemoglobin curve are in [[respiratory/gas-exchange]] and [[respiratory/respiratory-failure]]; COPD and asthma in [[respiratory/asthma-copd]]. The long-term care of ventilated patients, sedation and weaning are in [[emergency-critical-care/critical-care]]. Anaesthesia, including routine airway management, is in [[surgery/anaesthesia-pain]].
 
 ::: summary
-- Airway management is a preparation discipline: predict difficulty, optimise position and pre-oxygenation, verify with capnography, and know your escape route (supraglottic rescue, then front-of-neck access) before paralyzing.
-- Peri-intubation is a resuscitation: fix hypotension, hypoxia, acidosis and hypovolaemia first where possible, choose induction drugs for this heart, and treat first-pass optimisation as a safety outcome.
-- Oxygen is a prescribed drug with target ranges and toxicity; the liberal-oxygen era ended quietly trial by trial - normal saturations are not a goal.
-- NIV saves lives in COPD acidosis and cardiogenic oedema; HFNO helps selected hypoxaemic patients; in de novo hypoxaemic failure do not let a device delay an indicated intubation.
-- Lung-protective ventilation is arithmetic: 6 ml/kg predicted body weight, plateau limits, PEEP titration, proning in severe ARDS, and liberation protocols with spontaneous breathing trials.
-- The decision not to intubate is as clinical as the decision to: ceilings, ceilings-of-care records, and honest conversations belong to the same competency as the laryngoscope.
+- Airway obstruction is noisy when partial and silent when complete; start with head tilt, chin lift or jaw thrust, suction and adjuncts.
+- Tracheal intubation in emergencies uses rapid sequence induction; critically ill patients are physiologically at risk, so resuscitate before induction.
+- DAS 2025: Plan A intubation, Plan B supraglottic airway, Plan C facemask, Plan D front-of-neck airway in "can't intubate, can't oxygenate". Confirm every tube with waveform capnography: no trace, wrong place.
+- Type 1 respiratory failure is hypoxaemia with normal or low PaCO₂; type 2 adds a PaCO₂ above about 6.5 kPa. The A–a gradient distinguishes lung disease from hypoventilation.
+- Oxygen is prescribed to a target: 94–98% for most, 88–92% for those at risk of hypercapnia.
+- CPAP improves oxygenation; NIV supports ventilation and is used in COPD with pH below 7.35 and PaCO₂ above 6.5 kPa despite medical treatment.
+- In ARDS: tidal volume about 6 mL/kg predicted body weight, plateau pressure 30 cmH₂O or less, low driving pressure, adequate PEEP, and prone positioning when PaO₂/FiO₂ is below 150 mmHg.
 :::
 
 ## Exercises
 
-::: exercise Sequence the crash airway {level=1}
-You induce a 95-kg patient with severe angioedema; direct laryngoscopy grade 4, two attempts fail, SpO2 88 percent falling, cannot ventilate by mask. State the next four actions with timings.
+::: exercise Predicted body weight {level=1 check="342"}
+A woman is 165 cm tall and weighs 95 kg. Calculate a tidal volume of 6 mL/kg predicted body weight, rounded to the nearest whole mL.
 ::: solution
-**CICO-executed ([[#def-airway]]): the four - 'call-the-difficult-airway-trolley-and-the-second-senior-and-state-'this-is-CICO'-by-name (the plan-Z-supraglottic-rescue-attempt-once - a second-generation device sized right - while the neck-is-located-and-marked because the guidelines count this as the last non-surgical step and the clock here is minutes not attempts); if-ventilation-not-established-front-of-neck-access-now (the scalpel-cricothyroidotomy technique on the antaryoid-notch with the-'I-have-declared-this-and-someone-is-bringing-the-kit-and-surgery-knows'-team-briefing and the tube-or-catheter-over-guide-wire-and-cuff-inflated-and-ETCO2-confirmed), and-the-'can-I-ventilate-via-the-surgical-airway-so-stop-fighting-the-mouth'-logic and the post-rescue (the formal ENT-and-ICU-plan-for-the-definitive-airway-and-the-incident-reported-and-debriefed-same-shift-because-the-operator-will-need-a-colleague-more-than-a-counselor and the documentation of times and attempts because the patient may wake in a coroner's-adjacent-argument-about-whether-you-followed-the-algorithm-you-should-have-followed).'**
+PBW $= 45.5 + 0.91 \times (165 - 152.4) = 45.5 + 11.466 = 56.966$ kg. Tidal volume $= 6 \times 56.966 = 341.8$, which rounds to **342 mL**. Her actual weight is irrelevant to lung size.
 :::
 :::
 
-::: exercise Titrate the ventilator {level=2}
-Moderate ARDS, P/F 140, ventilated 8 ml/kg at 12 with plateau 31, pH 7.24 pCO2 6.5: write the next 24 hours of vent management including the rescue ladder and its sequence.
+::: exercise Driving pressure {level=1 check="18"}
+A ventilated patient has a plateau pressure of 30 cmH₂O and a PEEP of 12 cmH₂O. What is the driving pressure in cmH₂O?
 ::: solution
-**Protective-ladder ([[#def-ventilation]]): the correction - 'drop to 6 ml/kg-predicted-body-weight (the male-and-female-height-based PBW arithmetic done, not actual weight) accepting the permissive-hypercapnia-pH-floor (the bicarbonate-and-renal-compensation-time-and-the-buffer-debate-answered-sparingly) and drive plateau under 28 (the sedation-and-possibly-early-paralysis-to-stop-the-double-triggering-and-drive-down-RR-for-plateau-not-for-CO2); the oxygenation side - 'the-PEEP-FiO2-table-with-PEEP-titration-against-compliance-and-recruitability (the-open-lung-versus-recruitment-manoeuvre-trial-lessons-applied-to-the-recruitable-homogeneous-CT-pattern-not-the-fibrotic-one) and-the-early-prone-consideration-for-this-P/F-with-a-16-hour-target-when-it-can-be-run-safely (the prone-with-a-trained-team-and-the-ABG-and-EIT-or-compliance-response-tracking and the-ROSE-and-ACURASYS-adjacent-neuromuscular-blockade-role-adjacent-to-proning-decided-as-a-pair); the rest of the 24 hours - 'the-drivers-treatment (the-fluid-conservative-ARMA-strategy-once-shock-free and the-cause-found-and-treated-and-the-platelet-and-ventilator-associated-pneumonia-bundle) and-the-ventilator-synchrony-audit (the auto-PEEP-with-the-expiratory-time-fix and the secretions and the asynchrony-modes-matched-to-the-sedation-depth) and-the-spontaneous-trial-thought-about-from-day-two-not-day-eight-because-liberation-is-a-strategy-not-an-event.'**
+Driving pressure $= 30 - 12 = 18$ cmH₂O. This is above about 15, which is associated with higher mortality; reducing the tidal volume would lower it.
 :::
 :::
 
-::: exercise Prescribe oxygen correctly {level=2}
-Write the oxygen order (device, target, review, wean) for: (a) COPD exacerbation, prior intubation, obese; (b) post-arrest ROSC on air with SpO2 99 percent in the ambulance; (c) community-acquired pneumonia, 12 years old, SpO2 90 percent, WHO fast-track criteria.
+::: exercise A–a gradient {level=2 check="4.7"}
+A patient breathing air at sea level has PaO₂ 9.0 kPa and PaCO₂ 5.0 kPa. Using $P_{\text{atm}} = 101.3$ kPa, $P_{H_2O} = 6.3$ kPa and $R = 0.8$, calculate the A–a gradient in kPa (to one decimal place).
 ::: solution
-**Three-orders ([[#def-ventilation]]): (a) the-venturi-24-or-28-percent-or-controlled-system-with-target-88-92-and-abg-in-30-60-minutes-on-the-acute-respiratory-protocol-and-the-NIV-criteria-and-ceiling-planned-and-the-weight-and-sleep-disordered-breathing-questions-because-'prior-intubation-obese-COPD'-is-the-hypercapnia-hat-trick and the-escalation-stop-review-written-so-nursing-can-titrate-both-directions; (b) the-titrate-down-approach (the-ambulance-oxygen-continues-but-the-ICU-AIR-and-CAOS-and-ACTIVE-AIR-era-say-normal-saturations-are-enough-and-hyperoxia-signals-are-not-reassuring so set target-94-98-with-blood-gas-and-titration-and-the-'oxygen-de-prescription'-review-daily because post-arrest hyperoxia is the exposure the trials named); (c) the-paediatric-version (the-94-plus-target-with-the-oxygen-therapy-guidelines-and-the-clinical-review-and-the-who-children's-hospital-admission-criteria-honoured-and-the-fever-and-fluid-and-antibiotics-and-safety-net-and-the-'oxygen-is-a-drug-in-children-too'-weaning-plan because keeping him on oxygen to be safe is how discharge gets delayed by a saturation the parents can outrun at home.'**
+$P_AO_2 = 0.21 \times (101.3 - 6.3) - 5.0/0.8 = 19.95 - 6.25 = 13.7$ kPa. Gradient $= 13.7 - 9.0 = 4.7$ kPa, which is widened and points to a problem in the lung.
 :::
 :::
 
-::: exercise Design the airway-safety programme {level=3}
-Your trust's serious incidents: two peri-intubation arrests, one failed tracheostomy, three 'unplanned extubations', and night-time intubations led by the most junior available doctor. Build the programme with its structure, training, equipment and measurement.
+::: exercise Type of respiratory failure {level=1}
+Classify each arterial gas (all on air) as normal, type 1 or type 2 respiratory failure, and suggest one likely cause: (a) PaO₂ 7.2 kPa, PaCO₂ 4.1 kPa; (b) PaO₂ 7.0 kPa, PaCO₂ 8.9 kPa, pH 7.26, HCO₃⁻ 30 mmol/L; (c) PaO₂ 12.5 kPa, PaCO₂ 5.1 kPa.
 ::: solution
-**Airway-safety-system ([[#def-airway]], [[clinical-skills/patient-safety]]): the structure - 'a-single-airway-lead-with-clinical-governance-teeth (the airway-committee-with-anaesthetics-and-ED-and-ICU-and-ENT-and-surgery-and-nursing-represented because the incidents happen between departments and the programme must too), the-risk-stratified-staffing-rule (the-'expected-difficult-airway-and-ICU-and-ED-and-obese-and-angioedema-and-partial-obstruction-airway-gets-two-consultants-or-a-consultant-plus-practitioner-with-a-planned-technique'-policy-which-is-the-NAP4-and-DAS-adjacent-expectation and the night-time rule that the second-arrival-is-a-right-not-a-favour-because-two-of-your-three-incidents-were-solo); the training - 'the-in-situ-difficult-airway-and-CICO-and-surgical-airway-drills-with-time-to-scalpel-measured (the-simulation-and-squad-team-and-ENT-on-the-communication-plan-and-the-'it-is-the-rehearsal-not-the-lecture'-evidence and the-anaesthesia-and-EM-and-ICU-registrars-on-a-shared-curriculum-because-shared-language-is-what-makes-two-seniors-work and the-nursing-and-ODPs-on-tube-security-and-early-deterioration-escalation); the equipment - 'the-difficult-airway-trolley-standardised-hospitalwide-audited-monthly-with-pictures-and-checklists-and-the-video-laryngoscope-on-it-with-charging-discipline-and-the-cricothyroidotomy-kit-on-every-airway-territory-trolley-with-the-instruction-card-because-memory-fails-at-50-seconds-and-the-tracheostomy-emergency-pack-and-the-'trach-in-situ-alarm'-escalation-card-for-ward-staff-who-should-never-be-the-first-to-figure-it-out; the measurement - 'first-pass-success-rate-and-failure-and-complication-rates-audited-by-operator-grade-and-time-of-day (the OASIS-adjacent-registry-participation-because-your-numbers-improve-when-they-are-counted), peri-intubation-arrests-and-cardiac-complications-as-sentinel-adjacent-tracked-events-with-each-one-debriefed-within-48-hours-and-reported-to-the-programme-and-the-'planned-versus-unplanned'-split-for-every-ICU-extubation-and-tracheostomy-decision-with-the-weaning-and-trach-clinics-that-make-the-'when'-decision-timely and the annual airway-safety-report-published-internally-with-the-mortality-and-morbid-mortality-numbers-and-the-staff-confidence-survey-because-a-programme-that-cannot-produce-people-comfortable-with-the-scalpel-is-only-half-a-programme.**
+(a) Type 1: hypoxaemia with low PaCO₂ (hyperventilation). Pneumonia, pulmonary oedema or pulmonary embolism.
+(b) Type 2: hypoxaemia with hypercapnia and acidosis; the raised bicarbonate suggests acute-on-chronic. A COPD exacerbation.
+(c) Normal.
+:::
+:::
+
+::: exercise Prescribe oxygen {level=2}
+Write the oxygen prescription for: (a) a 55-year-old with pneumonia and SpO₂ 90% on air, no lung disease; (b) a 68-year-old with COPD and SpO₂ 85% on air, previous hypercapnic failure; (c) a 50-year-old with chest pain and SpO₂ 97% on air.
+::: solution
+(a) Target 94–98%; start with nasal cannulae 2–4 L/min or a simple face mask, titrated to target.
+(b) Target 88–92%; a 24% or 28% Venturi mask, with an arterial gas to check PaCO₂ and pH, and recheck after changes.
+(c) No oxygen; he is not hypoxaemic. Monitor saturations with a target of 94–98% if he becomes hypoxaemic.
+:::
+:::
+
+::: exercise Sequence the crash airway {level=2}
+During an emergency intubation, the first attempt at laryngoscopy with a videolaryngoscope fails and the saturation is 90%. Describe the next steps according to the DAS plan.
+::: solution
+Call for help early and keep oxygen flowing. Within Plan A, optimise and make a limited further attempt if appropriate (adjust position, use a bougie, external laryngeal pressure, a different blade or operator). If intubation fails, declare it and move to **Plan B**: insert a second-generation supraglottic airway and oxygenate. If that works, stop and think: wake the patient if possible, or continue with the supraglottic airway, or intubate through it with a fibreoptic scope. If it fails, **Plan C**: facemask ventilation with two people and adjuncts. If this also fails and saturation is falling, declare **"can't intubate, can't oxygenate"** and perform **Plan D**, a scalpel cricothyroidotomy, without delay.
+:::
+:::
+
+::: exercise NIV or not? {level=2}
+A 65-year-old man with COPD has pH 7.31, PaCO₂ 7.8 kPa and PaO₂ 8.4 kPa on 28% oxygen after an hour of nebulisers and steroids. He is alert and coughing up moderate sputum. Should he have NIV, and what else must be decided?
+::: solution
+Yes. He meets the criteria (pH below 7.35 and PaCO₂ above 6.5 kPa despite optimal medical treatment), is alert and can clear secretions. Before starting, the team must agree and document what happens if NIV fails: escalation to intubation and ICU, or NIV as the ceiling of treatment. This should involve him. Blood gases are rechecked within 1–2 hours; failure to improve leads to a review of the settings, the mask fit and the plan.
+:::
+:::
+
+::: exercise Design the extubation {level=3}
+A 58-year-old woman has been ventilated for 6 days for pneumonia. She is now on pressure support 8 cmH₂O, PEEP 5 cmH₂O, FiO₂ 0.35, with SpO₂ 96%, respiratory rate 18/min, and she obeys commands and coughs well. A 30-minute spontaneous breathing trial is successful. What else should be assessed before extubation, and what are the risk factors for extubation failure?
+::: solution
+Before extubation: level of consciousness and ability to follow commands; strength of cough and the volume of secretions; airway patency (a cuff leak test may be used if laryngeal oedema is suspected); haemodynamic stability; fluid balance; and a plan for post-extubation support. Risk factors for failure include age over 65, heart failure, COPD, a weak cough, copious secretions, a positive fluid balance, a prolonged ventilation period and a high body mass index. In high-risk patients, prophylactic NIV or high-flow nasal oxygen after extubation reduces the risk of reintubation. Weaning is covered further in [[emergency-critical-care/critical-care]].
 :::
 :::

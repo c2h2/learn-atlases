@@ -5,12 +5,12 @@
   "area": "clinical",
   "level": 3,
   "order": 230,
-  "tagline": "The ABCDE approach, resuscitation, shock, poisoning, anaphylaxis and intensive care",
-  "summary": "Emergencies leave little time to think, so they are managed with structured approaches. This course covers the assessment of the acutely ill patient, cardiac arrest and resuscitation, shock and fluid therapy, airway and ventilation, poisoning, anaphylaxis, the care of critically ill patients, and triage in major incidents.",
+  "tagline": "The ABCDE approach, resuscitation, shock, airway and ventilation, poisoning, anaphylaxis, intensive care and major incidents",
+  "summary": "Emergencies leave little time to think, so they are managed with structured approaches. This course covers the assessment of the acutely ill patient, cardiac arrest and resuscitation, shock and fluid therapy, airway and ventilation, poisoning, anaphylaxis and acute asthma, the care of critically ill patients, and triage in major incidents.",
   "overview": [
-    "Emergency and critical care medicine is applied physiology under time pressure. The patient has not had time to develop a diagnosis; the clinician must instead recognise and reverse a threat to airway, breathing, circulation, neurological function or temperature in the order those systems will fail. This course teaches that ordered aggression: structured assessment, immediate resuscitation, and the specific emergencies that fill an acute medical take and a resus room.",
-    "It begins with the primary survey — the ABCDE approach and the recognition of the deteriorating patient — then resuscitation science, shock and fluids, the airway and mechanical ventilation, and the toxicology and anaphylaxis cases that arrive fastest. The final chapters widen to the intensive care unit, where ventilation, haemodynamic support, sedation, nutrition and the prevention of ICU-acquired complications are managed day by day, and to major incidents, where the same logic is turned from one patient to many: triage, command structures and the ethics of scarce resources.",
-    "Because these topics are procedural and quantitative, the course leans on numbers: shock indices, fluid balance and sodium correction limits, ventilation targets and driving pressure, toxin syndromes recognised by pupils and physiology rather than by history. Management details follow local and national guidelines — this is education about principles, and the doses that appear are illustrative only."
+    "Emergency and critical care medicine is applied physiology under time pressure. An acutely ill patient rarely arrives with a diagnosis, so the clinician must first find and reverse whatever threatens the airway, breathing, circulation or brain, in the order in which those failures kill, and only then work out the cause. This course teaches that structured approach and the specific emergencies that fill a resuscitation room and an acute medical take.",
+    "It begins with the ABCDE assessment, early-warning scores and escalation, then covers cardiac arrest and the peri-arrest rhythms, shock and intravenous fluids, the airway, oxygen therapy and mechanical ventilation, poisoning, and anaphylaxis with acute severe asthma. The later chapters move to the intensive care unit, where organs are supported for days or weeks and the complications of treatment must be prevented, and to major incidents, where the same logic is applied to many patients at once.",
+    "The course uses numbers where they help decisions: NEWS2 scores, oxygen delivery, the A–a gradient, predicted body weight and driving pressure, the anion and osmolar gaps, the paracetamol treatment line, SOFA scores and triage counts. UK guidance is followed (Resuscitation Council UK, NICE, the British Thoracic Society, the Difficult Airway Society, NHS England), with the dates of the versions used. Doses appear only as the standard adult values printed in those guidelines, for teaching; practice follows current local guidance."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -19,14 +19,16 @@
     "renal"
   ],
   "outcomes": [
-    "Perform a structured ABCDE assessment of the acutely unwell adult, recognise the deteriorating patient early, and initiate escalation and treatment simultaneously.",
-    "Explain the physiology of cardiac arrest, the evidence for high-quality compressions, shockable rhythms, defibrillation, adrenaline and post-resuscitation care, and describe reversible causes (the Hs and Ts).",
-    "Classify shock — hypovolaemic, cardiogenic, distributive, obstructive — from history, examination and bedside data, and reason about fluid resuscitation, its monitoring and its harms.",
-    "Assess the airway (including the difficult airway plan), describe indications and complications of tracheal intubation and surgical airway, and outline modes and settings of mechanical ventilation with an eye to lung-protective strategy.",
-    "Recognise poisoning by toxidrome, apply general decontamination and elimination principles, name the specific antidotes and their indications, and manage the common overdose presentations according to poison-centre and guideline practice.",
-    "Recognise anaphylaxis, distinguish it from mimics, and describe adrenaline-based management, observation and follow-up; outline acute severe asthma and its escalation.",
-    "Describe the care of the ventilated intensive-care patient: sedation and delirium, weaning, nutrition, glycaemic control, prevention of line and ventilator-associated complications, and time-limited trials of treatment.",
-    "Apply triage systems and the incident command structure to a major incident or mass-casualty situation, and discuss the ethical differences between individual and mass-casualty medicine."
+    "Perform a structured ABCDE assessment of an acutely unwell adult, calculate and act on a NEWS2 score, and escalate clearly using SBAR.",
+    "Explain why chest compressions work, apply the Resuscitation Council UK adult ALS algorithm including drug timing in shockable and non-shockable rhythms, and search for the reversible causes of cardiac arrest.",
+    "Manage peri-arrest bradycardia and tachycardia by recognising adverse features, and outline the targets of post-resuscitation care and the principles of decisions about CPR.",
+    "Classify shock as hypovolaemic, cardiogenic, distributive or obstructive, calculate oxygen delivery, and reason about fluid responsiveness, choice of fluid, vasopressors and the management of major haemorrhage.",
+    "Assess and manage the airway, follow the Difficult Airway Society plan for failed intubation, prescribe oxygen to a target, and interpret respiratory failure with the A–a gradient.",
+    "Describe the indications for CPAP and non-invasive ventilation, and the principles of lung-protective mechanical ventilation and prone positioning in ARDS.",
+    "Recognise poisoning by toxidrome and investigation, apply decontamination and enhanced elimination appropriately, interpret the UK paracetamol treatment line, and describe the specific treatment of common serious poisonings and the care of the person who has self-harmed.",
+    "Recognise anaphylaxis and its mimics, outline its emergency treatment and follow-up according to UK guidance, distinguish bradykinin-mediated angio-oedema, and grade acute asthma.",
+    "Describe the organisation of critical care, sepsis and the SOFA score, sedation and delirium, weaning, nutrition, prevention of ICU-acquired complications, communication with families and recovery after critical illness.",
+    "Apply UK major incident structures (METHANE, command levels, JESIP) and mass-casualty triage, and discuss the ethics of allocating care when resources are overwhelmed."
   ],
   "chapters": [
     {
@@ -104,7 +106,7 @@
     {
       "year": 1902,
       "title": "Anaphylaxis described",
-      "detail": "Charles Richet and Paul Portier, injecting anemone toxin repeatedly in dogs, find that a previously tolerated dose now kills: they name the phenomenon anaphylaxis and open the immunological understanding of the fastest emergency in medicine.",
+      "detail": "Charles Richet and Paul Portier find that dogs given a second small dose of a sea anemone toxin, weeks after a first, collapse and die within minutes. They name the phenomenon anaphylaxis, 'against protection'. Richet received the Nobel Prize in 1913.",
       "people": [
         "Charles Richet",
         "Paul Portier"
@@ -112,83 +114,120 @@
     },
     {
       "year": 1947,
-      "title": "Defibrillation in the chest",
-      "detail": "Claude Beck at Case Western Reserve applies alternating current directly to the exposed heart of a child in arrest and restores a perfusing rhythm; within fifteen years anterior-posterior external shock with a pulsatile DC discharge (Lown and colleagues) brings defibrillation to the bedside.",
+      "title": "Defibrillation of the exposed heart",
+      "detail": "Claude Beck, a surgeon in Cleveland, restores a perfusing rhythm in a teenage boy who developed ventricular fibrillation during chest surgery, by applying a shock directly to the heart: the first successful human defibrillation.",
       "people": [
         "Claude Beck"
       ]
     },
     {
       "year": 1952,
-      "title": "Polio and the birth of intensive care",
-      "detail": "During the Copenhagen polio epidemic, anaesthetist Bjørn Ibsen replaces iron lungs with tracheostomy and manual positive-pressure ventilation, staffed by medical students in shifts around the clock — nursing-intensive, monitoring-heavy care of individually ventilated patients in a dedicated ward, the first modern ICU; that same year Virginia Apgar publishes her newborn scoring system.",
+      "title": "Polio and the first intensive care unit",
+      "detail": "During the Copenhagen poliomyelitis epidemic, the anaesthetist Bjørn Ibsen treats respiratory paralysis with tracheostomy and manual positive-pressure ventilation, delivered around the clock by medical students. Mortality falls sharply, and grouping such patients together becomes the model for intensive care.",
       "people": [
-        "Bjørn Ibsen",
-        "Virginia Apgar"
+        "Bjørn Ibsen"
       ]
     },
     {
       "year": 1960,
-      "title": "Closed-chest massage",
-      "detail": "William Kouwenhoven, Guy Jude and James Knickerbocker, studying electrical injury in dogs, demonstrate that external chest compression can maintain circulation without opening the chest; with mouth-to-mouth breathing revived by Peter Safar, it becomes the cardiopulmonary resuscitation taught to professionals and public alike.",
+      "title": "Closed-chest cardiac massage",
+      "detail": "William Kouwenhoven, James Jude and Guy Knickerbocker at Johns Hopkins report that rhythmic external chest compression can maintain circulation in cardiac arrest. Combined with the mouth-to-mouth ventilation championed by Peter Safar and James Elam, it becomes cardiopulmonary resuscitation.",
       "people": [
         "William Kouwenhoven",
-        "Guy Jude",
-        "James Knickerbocker"
+        "James Jude",
+        "Guy Knickerbocker",
+        "Peter Safar"
       ]
     },
     {
       "year": 1962,
-      "title": "The synchronized shock",
-      "detail": "Bernard Lown's group in Boston introduces the damped direct-current discharge and R-wave synchronization, making cardioversion safe; the same group's work on lignocaine and the study of arrhythmias in monitored coronary patients define the modern coronary care unit.",
+      "title": "Direct-current defibrillation and cardioversion",
+      "detail": "Bernard Lown and colleagues in Boston introduce the direct-current defibrillator and the synchronised shock, making cardioversion of arrhythmias safe and defibrillation more effective.",
       "people": [
         "Bernard Lown"
       ]
     },
     {
-      "year": 1967,
-      "title": "ABC — airway, breathing, circulation",
-      "detail": "Peter Safar, working in Baltimore with James Elam's earlier mouth-to-mouth experiments, systematises airway obstruction relief, rescue breathing and chest compression into a single sequence, writes the first intensive care textbook and founds the school of resuscitation research from which bystander-CPR programmes descend.",
+      "year": 1966,
+      "title": "The mobile coronary care unit",
+      "detail": "Frank Pantridge and John Geddes in Belfast equip an ambulance with a portable defibrillator and send it to patients with suspected heart attacks, showing that defibrillation can be brought to the patient before hospital.",
       "people": [
-        "Peter Safar"
+        "Frank Pantridge",
+        "John Geddes"
       ]
     },
     {
       "year": 2000,
-      "title": "One set of international guidelines",
-      "detail": "The International Liaison Committee on Resuscitation, formed a decade earlier to reconcile national councils, publishes the first coordinated resuscitation guidelines; regular five-yearly review, with treatment recommendations graded by evidence, makes resuscitation practice a single teachable standard worldwide.",
+      "title": "International resuscitation guidelines and lung-protective ventilation",
+      "detail": "The International Liaison Committee on Resuscitation (founded 1992) publishes the first international consensus guidelines on resuscitation. The same year, the ARDS Network trial shows that ventilating patients with ARDS at 6 rather than 12 mL/kg of predicted body weight reduces mortality.",
       "people": [
-        "ILCOR"
+        "ILCOR",
+        "ARDS Network"
       ]
     },
     {
-      "year": 2013,
-      "title": "ECMO for refractory arrest",
-      "detail": "Extracorporeal membrane oxygenation used during cardiac arrest (ECPR) and for refractory cardiogenic shock and respiratory failure moves from case series into selected-centre protocols, converting the ICU into a place where circulation and gas exchange can be replaced outright while the cause is treated.",
+      "year": 2004,
+      "title": "The Civil Contingencies Act",
+      "detail": "The UK Civil Contingencies Act sets out the duties of emergency responders, including the NHS, to assess risk, plan and exercise for emergencies, providing the legal framework for major incident planning.",
       "people": []
     }
   ],
   "references": [
     {
-      "title": "The Emergency Textbook",
-      "authors": "Standard",
+      "authors": "Resuscitation Council UK",
+      "year": 2021,
+      "title": "Adult Advanced Life Support Guidelines",
+      "note": "The UK adult ALS algorithm, peri-arrest algorithms and post-resuscitation care used throughout the resuscitation chapter; the 2025 update keeps the same drug timing.",
+      "slug": "rcuk-als"
+    },
+    {
+      "authors": "Resuscitation Council UK",
+      "year": 2021,
+      "title": "Emergency treatment of anaphylaxis: guidelines for healthcare providers",
+      "note": "UK guidance on recognition, IM adrenaline, refractory anaphylaxis, observation and follow-up.",
+      "slug": "rcuk-anaphylaxis"
+    },
+    {
+      "authors": "Royal College of Physicians",
+      "year": 2017,
+      "title": "National Early Warning Score (NEWS) 2: standardising the assessment of acute-illness severity in the NHS",
+      "note": "The early-warning score and graded clinical response used in UK hospitals.",
+      "slug": "news2"
+    },
+    {
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2013,
+      "title": "Intravenous fluid therapy in adults in hospital (CG174, updated 2017)",
+      "note": "The 5 Rs of fluid prescribing, resuscitation boluses and routine maintenance requirements.",
+      "slug": "nice-cg174"
+    },
+    {
+      "authors": "Jonathan P. Wyatt, Robert G. Taylor, Kerstin de Wit and Emily J. Hotton",
       "year": 2020,
-      "note": "The standard reference for the patient and the system.",
-      "slug": "ref1"
+      "title": "Oxford Handbook of Emergency Medicine, 5th edition",
+      "note": "A compact, UK-oriented reference to emergency department practice, including toxicology and major incidents.",
+      "slug": "ohem"
     },
     {
-      "title": "The Emergency Guide",
-      "authors": "Textbook",
+      "authors": "Andrew D. Bersten and Jonathan M. Handy (eds)",
       "year": 2019,
-      "note": "A rigorous treatment of the patient and the system.",
-      "slug": "ref2"
+      "title": "Oh's Intensive Care Manual, 8th edition",
+      "note": "A comprehensive textbook of intensive care medicine covering organ support, sepsis and ICU organisation.",
+      "slug": "oh"
     },
     {
-      "title": "Clinical Emergency",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the system and the practice.",
-      "slug": "ref3"
+      "authors": "Difficult Airway Society",
+      "year": 2025,
+      "title": "Difficult Airway Society 2025 guidelines for management of unanticipated difficult tracheal intubation in adults",
+      "note": "The Plan A to D approach to failed intubation, with emphasis on oxygenation and the physiologically difficult airway (British Journal of Anaesthesia).",
+      "slug": "das-2025"
+    },
+    {
+      "authors": "British Thoracic Society",
+      "year": 2017,
+      "title": "BTS guideline for oxygen use in healthcare and emergency settings",
+      "note": "Target saturation ranges and the safe prescription of oxygen, including in patients at risk of hypercapnia.",
+      "slug": "bts-oxygen"
     }
   ],
   "next": []

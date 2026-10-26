@@ -1,143 +1,325 @@
-Shock is the state in which oxygen delivery fails cellular demand; the entire specialty of acute circulatory care is finding which of the four machines is broken (the volume, the pump, the pipes or the valve-blockage), giving the right first litre rather than the next ten, and reversing perfusion before the lactate writes obituaries. **This chapter covers shock physiology and its bedside measurement (why capillary refill beat the central line in a trial and why the lactate is a stopwatch not a score), the fluid debate (crystalloid types and the balanced-solution era, the ROTE framework and the collapse of 'early goal-directed therapy' into individualised care, fluid responsiveness and its honest limits, fluid overload as a treated diagnosis), and the type-specific resuscitations: haemorrhagic shock with its damage-control and blood-product arithmetic, septic shock's vessel problem and the vasopressor ladder, cardiogenic shock's cruel pharmacology-and-device interface, and the obstructive and endocrine mimics. Its two slogans: 'fluids are a drug with a dose and a toxicity', and 'the best fluid is the one that matches what you lost, given when stopping is also a plan'.**
+Shock is not the same as low blood pressure. It is a failure of the circulation to deliver enough oxygen to meet the needs of the tissues, and it can be present while the blood pressure is still normal. Cells that are short of oxygen switch to anaerobic metabolism, produce lactate, and eventually fail; organs follow, and a patient who stays in shock for long enough develops multiple organ failure even after the cause is fixed. Recognising shock early, working out which kind it is, and restoring oxygen delivery without causing new harm are the core skills of this chapter.
 
-## The physiology and the measurement
+The chapter starts with the physiology of oxygen delivery and blood pressure, then classifies shock into four types, then covers the bedside assessment, intravenous fluids and their harms, vasopressors and inotropes, and the specific management of haemorrhage, sepsis, cardiogenic and obstructive shock. UK guidance (NICE CG174 on intravenous fluids, NICE NG253 on sepsis) and international guidance (Surviving Sepsis Campaign 2021) are followed; doses and volumes are given as typical adult values for teaching, and practice follows local protocols.
 
-::: definition Shock: mechanism and bedside haemodynamics {#def-shock}
-**The mechanism: oxygen delivery (the cardiac-output-times-content product) against extraction-and-critical-demand (the anaerobic-threshold-and-lactate-appearing-when-extraction-cannot-close-the-gap which is the only thing the lactate really means - a marker of the gap not of the dose and not of the fluid), and the four failure patterns: hypovolaemic (the lost volume - blood, plasma, water, salt: the haemorrhage and dehydration and burns and third-spacing and the adynamic-gut-and-poor-intake-physiology-of-geriatrics), cardiogenic (the pump - infarct and myocarditis and valve and tamponade-sibling-terrain and the terminal failure states, the profile of cold-and-wet with its own chapter below), distributive (the pipes dilated and leaky - sepsis and anaphylaxis and adrenal-crisis and neurogenic and the drug-overdose-vasoplegias, the warm shock that foolsthe-eyeball-until-the-late-clamping), and obstructive (the plumbing-blocked-before-the-pump - the tamponade and the tension pneumothorax and the massive embolus and the rare atrial-myxoma-and-aortic-dissection-into-the-coronary-ostium presentations). The clinical measurement renaissance: the old monitoring era (the CVP-and-the-early-goal-directed-therapy-bundles of the 2001 Rivers protocol) was overturned by better trials and better physiology (the ProCESS-and-ARISE-and-ProMISe-2014-replication-trials that killed the protocolised-65-percent-CVP-and-ScvO2 ritual without killing the underlying virtue of early recognition-and-antibiotics-and-appropriate-fluids-and-vasopressors, and the ANDROMEDA-SHOCK-2019 trial that made the capillary-refill-time - a thumb and a watch - non-inferior to lactate-guided resuscitation and more pleasant for everyone): the modern bedside set is the pulse-pressure-and-transit-time-and-Bar-Elsay-physics (the shock-index-of-HR-over-SBP-above-0.8-as-the-occult-shock-flag and the mottling-score-and-the-ear-lobe-perfusion-detectives), the dynamic-versus-static-fluid-responsiveness-concepts (the CVP-never-predicted-anything and the respiratory-variation-and-passive-leg-raise-and-mini-fluid-challenge-which-ask-the-heart-a-question-instead-of-measuring-its-resting-state and the honest limit that responsiveness is not benefit - giving fluid to a fluid-responsive patient who does not need it is how overload is prescribed), the bedside ultrasound as the circulatory-triage (the IVC-collapsibility-in-a-spontaneously-breathing-patient-read-carefully, the four-chamber-squeeze-quality, the pericardial-and-pleural-and-free-fluid-and-the-lung-sliding-versus-comet-tails-versus-absent-pulses-siding-with-a-tamponade-versus-hypovolaemia-versus-pump-failure-versus-embolus-in-minutes-which-is-the-shock-ET-echo-literature's-genuine-advance-and-the-'look-at-the-arms-of-the-resuscitation' IVC-line-and-jugular-vitals), and the stages worth teaching (the compensated-young-person-compensates-then-crashes-then-arrests trajectory, the occult shock with normal blood pressure and dead capillaries, and the irreversible-shock concept modernised into 'prolonged-shock-without-rescue-causes-endothelial-and-mitochondrial-injury-that-fluids-then-worsen' which is the deep reason the early-minutes argument is everything). The trajectory tool the exam loves and the ward ignores: nobody in shock has a normal lactate clearance and nobody with a rising lactate is improving - the repeat-lactate-and-the-repeat-clinical-examination-is-the-monitor-not-the-first-number.' - [[cardiovascular/cardiac-cycle]], [[cardiovascular/heart-failure]], [[infectious-diseases/fever-sepsis]].**
+## The physiology of shock {#sec-physiology}
+
+Tissues need oxygen. The amount delivered each minute depends on how much blood the heart pumps and how much oxygen that blood carries.
+
+::: theorem Oxygen delivery {#thm-do2}
+**Oxygen delivery** ($\dot{D}O_2$) is the product of cardiac output and arterial oxygen content:
+
+$$
+\dot{D}O_2 = \text{CO} \times C_aO_2 \times 10
+$$ {#eq-do2}
+
+where CO is in L/min, $C_aO_2$ is in mL of oxygen per dL of blood, and the factor 10 converts dL to L. Arterial oxygen content is mostly oxygen bound to haemoglobin, with a small dissolved fraction:
+
+$$
+C_aO_2 = 1.34 \times \text{Hb} \times S_aO_2 + 0.0225 \times P_aO_2
+$$ {#eq-cao2}
+
+with Hb in g/dL, $S_aO_2$ as a fraction and $P_aO_2$ in kPa. A healthy adult at rest receives about 1,000 mL of oxygen per minute and uses about 250 mL.
 :::
 
-## Fluids
-
-::: definition Fluid therapy: types, phases and harms {#def-fluids}
-**The menu and its evidence: the crystalloids (the 0.9-percent-saline's-iatrogenic-hyperchloraemic-acidosis-and-its-renal-vasoconstriction-signals-from-the-smart-and-salt-ed-2018-trials-and-the-BaSIS-and-CONSYSTOR-and-Split-AND-OTHER-trials-which-together-moved-most-guidelines-toward-balanced-solutions (the Hartmann's and Plasma-Lyte-type) for large-volume-resuscitation with the honest notes: the acidosis-effect-is-modest, the mortality-differences-are-uncertain-except-in-renal-signals-and-the-saline-still-belongs-in-cerebral-and-hypochloraemic-alkalotic-and-sodium-specific-situations which is nuance the saline-versus-balanced holy-wars keep flattening), the colloids (the albumin's-surviving-sepsis-era-signals-kept-alive-against-the-SAFE-trial's-earlier-'none-is-safe-everywhere' conclusion and the hydroxyethyl-starch's-complete-death-by-regulatory-ban-and-renal-and-coagulopathy-harms-which-is-the-cautionary-tale-of-a-flavour-of-the-month-drug-30-years-long), and the replacement-matching-logic (the blood-for-blood-solution-for-salt-water-for-sugar-and-the-'surgeons-say-saline-anaesthetists-say-colloid-intensivists-say-no'-consultation-theatre-of-any-operating-day). The phases (the ROSE-adjacent framework taught everywhere now): resuscitation (the life-saving-fast-dose-to-restore-perfusion-with-a-stopping-rule-called-a-reassessment), optimization (the deficit-top-up-and-fluid-responsiveness-testing-where-the-uncertainty-is-real), treatment (the maintenance-and-drug-vehicles-and-the-loss-replacement-run-quietly-and-the-fluid-prescription-with-a-millilitre-per-hour-number-a-reason-and-an-end-and-evolution-where-the-liquid-positive-patients-of-2005-became-the-de-resuscitation-and-negative-balance-patients-of-the-2020s-sequential-organ-failure-sessions (the diuretic-and-ultrafiltration-and-FLUID-PRO-evidence-maturing-adjacent-practice-and-the-30-percent-positive-balance-in-ARDS-and-AKI-data-which-are-why-a-chart-with-a-fluid-balance-row-is-a-clinical-instrument). The harms named: the pulmonary-oedema-nobody-callled-an-error (the positive-balance-orthopaedic-ward-dozing-on-saline-with-hypotension-that-is-actually-over-diuresis-treated-with-more-saline-then-hypoxia-treated-with-more-saline-which-is-the-iatrogenic-drift-loop every audit finds), the tissue-edema-and-wound-and-gut-and-renal-capsule-consequences-of-ten-litres (the abdominal-compartment-syndrome-adjacent-end-of-the-spectrum), the dilutional-coagulopathy-of-crystalloid-resuscitation-which-is-why-haemorrhage-protocols-say-blood-products-early-and-saline-never, and the hyponatraemic-and-hyperchloraemic-and-hyperkalaemic-chemistries-of-the-wrong-solution-for-the-wrong-patient (the liver-and-cardiac-and-renal-and-neurosurgical-contraindication-pairs which the fluid-choices-by-comorbidity-tables teach properly). And the governance of it all: the IV-fluid-stewardship movement (the NICE-and-European-guideline-3-day-review-rules-and-the-'every-IV-fluid-order-needs-an-indication-a-rate-and-a-stop-review'-chart-fields and the nursing-observation-that-the-drip-is-still-running-because-in-a-survey-of-hospital-overload-the-most-common-cause-of-the-tenth-bag-was-nobody-having-decided-about-the-ninth.**
+::: proof
+Each gram of fully saturated haemoglobin binds about 1.34 mL of oxygen, so the bound oxygen per dL is $1.34 \times \text{Hb} \times S_aO_2$. Oxygen dissolved in plasma follows Henry's law and is small: about 0.0225 mL/dL for each kPa of $P_aO_2$ (0.003 mL/dL per mmHg). Multiplying the content per dL by the volume pumped per minute gives the delivery. The equation shows the three ways delivery can fail: the heart pumps too little (hypovolaemic, cardiogenic or obstructive shock), the blood carries too little (anaemia, hypoxaemia, carbon monoxide), or the oxygen is delivered but cannot reach or be used by the cells (maldistribution of flow in distributive shock, mitochondrial dysfunction in sepsis). It also shows why raising $P_aO_2$ far above normal adds little, while correcting a low haemoglobin or cardiac output adds a lot.
 :::
 
-## The resuscitations
+Blood pressure is regulated, not delivered. Mean arterial pressure (MAP) is approximately the product of cardiac output and systemic vascular resistance (SVR):
 
-::: definition Type-specific shock management {#def-types}
-**Haemorrhagic shock: the haemorrhagic-shock-of-the-young-and-old-with-the-vessel-locatable-and-not-physiology-unknown-era-lessons (the permissive-hypotension-in-ruptured-aneurysm-and-non-compressible-torso-bleeding-until-surgical-haemostasis-balance-and-the-direct-pressure-and-tourniquet-and-pelvic-binder-and-resuscitative-endovascular-balloon-occlusion-of-the-aorta-REBOA-adjacent-mechanical-haemostasis-temporisation-whose-evidence-era-is-currently-arguing-with-itself and the lethal-triad-of-acidosis-hypothermia-and-coagulopathy-whose-antidote-is-damage-control-surgery-physiology-warm-blood-and-speed which is surgical-chapters'-territory-approached-from-the-resus-side); the massive-transfusion-protocols (the 1:1:1-or-2 plasma-platelet-RBC-approach-born-in-Combats-and-validated-by-PROMISE-and-MATTERS-and-the-prothrombin-complex-and-fibrinogen-concentrate-adjacent-first-hour-factor-replacement-and-the-TXA-given-early-not-late-within-three-hours-or-not-at-all-CRASH-2-era-and-the-post-partum-WOMAN-trial-timing-and-the-viscoelastic-haemostasis-testing-HAEMOMETRY-ROTG-and-TEG-guided-alternative-protocols-which-the-trials-say-are-safe-and-may-save-allogeneic-platelets-and-the-platelet-count-and-fibrinogen-and-calcium-and-pH-and-lactate-clearance-and-temperature-serial-panel-that-is-the-real-time-anaesthesia-ICU-scoreboard); the calcium-kept-normal-and-warmed-blood-and-4-factor-PCC-with-anticoagulant-reversal-adjacent-drug-specific-rules (which the poisoning and haemostasis chapters detail); septic shock: the vasoplegia-treatment-paradigm (the '30 ml/kg then vasopressors-early-2021-surviving-sepsis-guidelines-and-the-CLOVERS-and-ARISE-and-PROCODE-and-ANDROMEDA-era-individualisation-with-the-STOP-AHEAD-trial-questions-still-open-because-dynamic-assessment-beats-protocolised-volumes and the norepinephrine-first-vasopressin-second-and-dobutamine-or-epinephrine-for-the-cardiac-dysfunction-adjacent-ladder-and-the-hydrocortisone-for-the-refractory-vasopressor-dependent-phenotype and the source-control-clock-because-no-pressor-fixes-an-empyema or a dead bowel and the antibiotics-in-the-first-hour-for-shock-and-triage-hours-for-not with the door-to-needle-and-triage-reform-numbers-which-are-the-infection-chapters'-own-and-the-vitamin-C-and-therapeutic-plasma-and-bicarbonate-for-lactate-not-phenomena-which-is-a-graveyard-of-resuscitation-fads). Cardiogenic shock: the 'cold-and-wet-not-cold-and-dry-not-wet-and-cold-not-confused' classification (the Forrester and SCAI stages and the epidemiology-shift-with-MI-related-shock-shrinking-in-incidence-and-heart-failure-exacerbation-shock-growing-which-changes-who-you-see) and its pharmacology-geography (the noradrenaline-for-the-hypotension with the arrhythmia-caveats and the dobutamine-or-milrinone-inotropy-with-the-oxygen-demand-and-hypotension-costs and the afterload-reduction-where-the-pressure-tolerates and the mechanical support ladder (the IABP-shrunk-by-IABP-SHOCK-II and the Impella-and-ECMO-and-surgical-and-transplant-bridging-decisions-of-the-DANAMI-SHOCK-and-ECLS-Shock-adjacent-arguments-that-are-live-and-centre-dependent-which-means-early-transfer-before-the-lactate-argues-back); and the mimics that must not get the sepsis-bundle-instead-of-the-needle (the tamponade-with-its-pulsus-paradox-and-plethora-and-diagnosis-in-three-seconds-on-echo and the tension-pneumothorax-decompressed-on-suspicion-not-on-xray and the adrenal-crisis-which-is-hypotension-flattened-by-hydrocortisone-in-a-steroid-withdrawer or a hyponatraemic-hyperkalaemic-Addisonian and the myxoedema-with-its-bradycardia-hypothermia-and-precipitant-history and the neurogenic-shock-with-its-warm-flaccid-bradycardic-paraplegic-and-its-fluids-then-vasopressors-and-its-atropine-for-the-bradycardia and the peripartum and the anaphylaxis-whose-epinephrine-is-its-chapter's-first-sentence).**
+$$
+\text{MAP} \approx \text{CO} \times \text{SVR}, \qquad \text{MAP} \approx \text{DBP} + \tfrac{1}{3}(\text{SBP} - \text{DBP})
+$$ {#eq-map}
+
+When cardiac output falls, the sympathetic nervous system raises SVR by constricting arterioles, and blood pressure is maintained. That is why early shock shows itself as tachycardia, cool pale peripheries, slow capillary refill, a narrow pulse pressure and a fall in urine output before hypotension appears. Organs such as the brain and kidneys autoregulate their blood flow within a range of pressures, and a MAP of about **65 mmHg** is the usual minimum target in adults, higher in some patients with chronic hypertension.
+
+## Types of shock {#def-shock}
+
+::: definition Shock and its four types {#def-shock-types}
+**Shock** is life-threatening circulatory failure in which oxygen delivery is inadequate for the metabolic needs of the tissues, causing cellular dysoxia. It is usually accompanied by hypotension (MAP below 65 mmHg or systolic below 90 mmHg), signs of poor perfusion and a raised blood lactate, but none of these is required.
+
+| Type | Mechanism | Examples | Typical findings |
+|---|---|---|---|
+| **Hypovolaemic** | Loss of circulating volume, low preload | Haemorrhage, vomiting and diarrhoea, burns, diabetic ketoacidosis | Cold peripheries, flat neck veins, low cardiac output, high SVR |
+| **Cardiogenic** | Pump failure | Myocardial infarction, myocarditis, arrhythmia, acute valve failure | Cold peripheries, raised JVP, pulmonary oedema, low cardiac output |
+| **Distributive** | Loss of vascular tone, maldistribution of flow | Sepsis, anaphylaxis, spinal cord injury (neurogenic), adrenal crisis | Often warm peripheries early, bounding pulse, low SVR, high or normal cardiac output |
+| **Obstructive** | Blockage to filling or emptying of the heart | Tension pneumothorax, cardiac tamponade, massive pulmonary embolism | Raised JVP, clear lungs, low cardiac output |
+
+Patients often have more than one type: septic shock with myocardial depression, or haemorrhage in a patient on beta-blockers.
+:::
+
+**Lactate** is a useful marker. A blood lactate above 2 mmol/L in a patient with suspected infection indicates hypoperfusion or cellular stress, and above 4 mmol/L is associated with high mortality. Lactate is not only a marker of oxygen debt: adrenaline, liver failure, metformin and seizures also raise it. A falling lactate after treatment is reassuring; a rising one is not.
+
+The **shock index**, heart rate divided by systolic blood pressure, is a quick bedside indicator. It is normally about 0.5–0.7; values above 1 suggest significant shock, especially in bleeding, even when the blood pressure is still in the normal range.
+
+::: example Classify the shock {#ex-classify}
+Three patients arrive in the resuscitation room.
+
+(a) A 71-year-old man with crushing chest pain, BP 82/56 mmHg, pulse 112/min, cold clammy hands, crackles to both mid-zones and a raised JVP.
+(b) A 34-year-old woman with fever and a red, swollen leg, BP 78/40 mmHg, pulse 128/min, warm hands, bounding pulse, lactate 5.2 mmol/L.
+(c) A 25-year-old motorcyclist with a stab wound to the left chest, BP 74/50 mmHg, pulse 136/min, distended neck veins, muffled heart sounds, equal breath sounds.
+
+Classify each.
+::: solution
+(a) **Cardiogenic shock**, almost certainly from myocardial infarction: cold peripheries (low output, high SVR) with signs of high filling pressures (raised JVP and pulmonary oedema). Fluid boluses are likely to worsen the oedema; he needs an ECG, urgent reperfusion and support of cardiac output.
+
+(b) **Distributive (septic) shock** from cellulitis or necrotising fasciitis: vasodilatation with warm peripheries and a wide pulse pressure early on, and a high lactate. Treatment is antibiotics, source control (urgent surgical review for necrotising infection), fluids and noradrenaline.
+
+(c) **Obstructive shock** from **cardiac tamponade**: penetrating chest trauma, hypotension, distended neck veins and muffled heart sounds (Beck's triad), with equal breath sounds making tension pneumothorax less likely. He needs immediate decompression of the pericardium, in trauma usually by thoracotomy.
+:::
+:::
+
+## Assessing the shocked patient {#sec-assessment}
+
+Assessment follows ABCDE (see [[emergency-critical-care/acute-assessment]]), with these specific questions:
+
+1. **Is the patient in shock?** Look for tachycardia, hypotension, slow capillary refill, mottled skin, confusion, a urine output below 0.5 mL/kg/h and a raised lactate.
+2. **Which type?** Feel the peripheries (warm or cold), look at the neck veins, listen to the lungs and heart, and look for bleeding, infection and the cause. **Point-of-care ultrasound** shows the size and contraction of the left and right ventricles, pericardial fluid, the inferior vena cava, free fluid in the abdomen and pneumothorax, and can classify shock within minutes in trained hands.
+3. **Is the patient likely to respond to fluid?** See below.
+4. **What is the cause, and can it be fixed now?** Bleeding needs haemostasis, sepsis needs antibiotics and source control, a blocked coronary artery needs reperfusion, a tension pneumothorax needs decompression.
+
+### Fluid responsiveness
+
+A patient is **fluid responsive** if their stroke volume rises significantly (usually by 10–15% or more) after a fluid challenge. This depends on where they sit on their Frank–Starling curve. On the steep part of the curve, more preload stretches the ventricle and increases stroke volume. On the flat part, extra fluid raises filling pressures without raising output, and simply leaks into the lungs and tissues. In critically ill patients, only about half are fluid responsive at any given time.
+
+The **passive leg raise** is a reversible fluid challenge: lifting the legs to 45° with the trunk flat returns about 300 mL of venous blood to the heart. If stroke volume or cardiac output (measured by echocardiography or a cardiac output monitor, not by blood pressure alone) rises by about 10% or more, the patient is likely to respond to fluid. Static measurements such as a single central venous pressure reading predict fluid responsiveness poorly.
+
+::: widget plot
+f: a*(1-exp(-x/6))
+x: 0, 25
+y: 0, 130
+sliders: a=90:30:130:5
+labels: \text{stroke volume}
+caption: A simplified Frank–Starling curve: stroke volume (mL, vertical axis) against preload (end-diastolic filling, arbitrary units, horizontal axis). The slider sets contractility. On the steep left part of the curve a fluid bolus raises stroke volume; on the flat right part the same bolus raises filling pressure with little gain, which is where fluid causes oedema. A weak ventricle (low contractility) reaches the flat part sooner. The model is illustrative, not a clinical tool.
+:::
+
+## Intravenous fluids {#def-fluids}
+
+::: definition Intravenous fluid types and the purposes of fluid therapy {#def-fluid-types}
+**Crystalloids** are solutions of electrolytes (and sometimes glucose) in water. **Isotonic saline** (0.9% sodium chloride) contains 154 mmol/L each of sodium and chloride, more chloride than plasma. **Balanced crystalloids** (such as Hartmann's solution or Plasma-Lyte) have a composition closer to plasma, with lactate, acetate or gluconate replacing some chloride. **Glucose 5%** distributes into total body water once the glucose is metabolised and is not a resuscitation fluid. **Colloids** contain large molecules that stay in the circulation longer: **human albumin solution** and synthetic colloids such as gelatins and starches.
+
+NICE guideline CG174 (adults in hospital) describes fluid therapy by its purpose, the **"5 Rs"**: **R**esuscitation, **R**outine maintenance, **R**eplacement of ongoing losses, **R**edistribution (for example into tissues in sepsis) and **R**eassessment. For resuscitation it recommends a bolus of 500 mL of crystalloid containing sodium 130–154 mmol/L over less than 15 minutes, followed by reassessment. Routine maintenance in adults is about 25–30 mL/kg/day of water with roughly 1 mmol/kg/day each of sodium, potassium and chloride and 50–100 g/day of glucose.
+:::
+
+Only about a quarter of an isotonic crystalloid bolus stays in the plasma for long; the rest moves into the interstitial space, where it causes oedema. The glycocalyx lining the endothelium is damaged in sepsis and inflammation, so even colloids leak. That is why fluid helps early in shock but becomes harmful once the patient is no longer responsive.
+
+**Which crystalloid?** Large volumes of 0.9% saline cause a hyperchloraemic metabolic acidosis. In the SMART trial (2018), adults in US ICUs given balanced crystalloids had slightly fewer major adverse kidney events (a composite of death, new dialysis or persistent renal dysfunction) than those given saline. Two large trials (BaSICS, 2021, and PLUS, 2022) found no significant difference in mortality. Balanced crystalloids are now the usual choice in most patients, with saline preferred in some situations, such as traumatic brain injury (because some balanced solutions are slightly hypotonic) or hypochloraemic alkalosis from vomiting.
+
+**Colloids.** Starch solutions were found to cause harm: in the 6S trial (2012) hydroxyethyl starch increased mortality and the need for renal replacement in severe sepsis, and in the CHEST trial (2012) increased the use of renal replacement therapy. Their use has been suspended or severely restricted in the UK and Europe. Albumin was found to be as safe as saline in general ICU patients (SAFE trial, 2004), but associated with higher mortality in traumatic brain injury; it is used selectively, for example in large-volume paracentesis in liver disease.
+
+**How much?** The phases of resuscitation help: an early **salvage** phase, when fluid can be life-saving; an **optimisation** phase, when each bolus is given only if it is likely to help; a **stabilisation** phase, when fluid is given only for maintenance and losses; and a **de-escalation** phase, when excess fluid is removed. Positive fluid balance in ICU patients is associated with worse outcomes. In septic shock, the CLASSIC (2022) and CLOVERS (2023) trials found no difference in mortality between restrictive and more liberal fluid strategies after initial resuscitation, which supports a cautious, reassessed approach rather than large fixed volumes.
+
+::: warning Treating a number instead of the patient
+A low blood pressure or a low urine output in a patient who has already had several litres of fluid is often not a sign that more fluid is needed. Repeated boluses given to "fill the tank" without checking whether the previous bolus helped lead to pulmonary oedema, abdominal compartment syndrome, gut oedema and poor wound healing. Before each bolus, ask whether the patient is still fluid responsive; if not, the answer is usually a vasopressor, an inotrope, or treating the cause.
+:::
+
+## Vasopressors and inotropes {#sec-vasopressors}
+
+**Vasopressors** constrict blood vessels and raise SVR; **inotropes** increase the force of contraction of the heart.
+
+| Drug | Main receptor actions | Main use |
+|---|---|---|
+| **Noradrenaline** | α₁ ≫ β₁ | First-line vasopressor in septic and most vasodilatory shock |
+| **Vasopressin** | V₁ receptors | Added to noradrenaline in septic shock |
+| **Adrenaline** | β₁, β₂ and α₁ | Anaphylaxis; cardiac arrest; second-line in septic shock |
+| **Dobutamine** | β₁ (with some β₂) | Inotrope for low cardiac output (cardiogenic shock, septic myocardial depression) |
+| **Metaraminol** | α₁ | Short-term peripheral vasopressor (for example during anaesthesia or before central access) |
+
+The Surviving Sepsis Campaign (2021) recommends noradrenaline as the first-line vasopressor, targeting an initial MAP of 65 mmHg, with vasopressin added when noradrenaline doses are rising. Vasopressors can be started through a good peripheral cannula while a central line is placed, to avoid delay. Steroids (hydrocortisone) are suggested for septic shock with an ongoing vasopressor requirement.
+
+## Shock by type: specific management {#def-types}
+
+### Haemorrhagic shock
+
+Bleeding is treated by stopping it. Fluids buy time but cannot replace surgical, endoscopic or radiological control.
+
+::: algorithm Principles of managing major haemorrhage {#def-haemorrhage}
+1. **Control the bleeding**: direct pressure, tourniquets for limb haemorrhage, pelvic binders, surgery, endoscopy or interventional radiology.
+2. **Activate the major haemorrhage protocol** so that blood components arrive in packs without delay.
+3. **Permissive hypotension** in trauma until bleeding is controlled: aim for a palpable radial pulse or a systolic pressure of about 80–90 mmHg rather than a normal blood pressure, unless there is a traumatic brain injury, where a higher pressure is needed to protect cerebral perfusion.
+4. **Give blood components, not crystalloid**: red cells and plasma in a high ratio, with platelets and fibrinogen replacement (cryoprecipitate or fibrinogen concentrate) guided by laboratory or point-of-care tests.
+5. **Tranexamic acid** early (within 3 hours of injury) in trauma.
+6. **Prevent the lethal triad** of hypothermia, acidosis and coagulopathy: warm all fluids and the patient, correct calcium (citrate in blood products binds it).
+:::
+
+The evidence behind these principles comes from trauma trials. **CRASH-2** (2010), in more than 20,000 trauma patients, found that tranexamic acid given within 3 hours reduced all-cause mortality (14.5% against 16.0%); given after 3 hours it was not beneficial. **PROPPR** (2015) compared transfusion of plasma, platelets and red cells in a 1:1:1 ratio with a 1:1:2 ratio in severely injured patients. The 1:1:1 group achieved haemostasis more often and had fewer deaths from exsanguination at 24 hours, but there was no significant difference in all-cause mortality at 24 hours or 30 days. Transfusion practice is covered in more detail in [[blood/transfusion]], and trauma care in [[surgery/trauma]].
+
+### Septic shock
+
+**Sepsis** is life-threatening organ dysfunction caused by a dysregulated host response to infection; **septic shock** is sepsis with persistent hypotension requiring vasopressors to keep MAP at 65 mmHg or more, and a lactate above 2 mmol/L despite adequate fluid resuscitation (the Sepsis-3 definitions of 2016). Management rests on early recognition (see [[emergency-critical-care/acute-assessment]]), blood cultures followed by antibiotics within an hour for those at highest risk, source control, fluids given in reassessed boluses, and noradrenaline. The Surviving Sepsis Campaign suggests about 30 mL/kg of crystalloid within the first 3 hours for sepsis-induced hypoperfusion, a weak recommendation that should be adjusted to the patient. The details are in [[infectious-diseases/fever-sepsis]].
+
+### Cardiogenic shock
+
+The commonest cause is acute myocardial infarction, and the most important treatment is **early revascularisation**: in the SHOCK trial (1999), emergency revascularisation did not significantly reduce mortality at 30 days, but mortality at 6 months was lower. Fluids are given cautiously, if at all. Low output is supported with inotropes such as dobutamine and with noradrenaline for hypotension. Mechanical circulatory support has had mixed results: the intra-aortic balloon pump did not reduce mortality in IABP-SHOCK II (2012), while in the DanGer Shock trial (2024), a microaxial flow pump reduced mortality at 180 days in selected patients with ST-elevation infarction and cardiogenic shock, at the cost of more complications. Arrhythmias causing shock are treated as described in [[emergency-critical-care/resuscitation#def-periarrest]].
+
+### Obstructive shock
+
+The three main causes each need a mechanical fix: **tension pneumothorax** (decompression), **cardiac tamponade** (pericardiocentesis or surgical drainage) and **massive pulmonary embolism** (thrombolysis, or surgical or catheter-directed embolectomy). All three cause a raised JVP and can be distinguished at the bedside by examination and ultrasound.
+
+### Anaphylactic and other distributive shock
+
+Anaphylaxis needs adrenaline first; fluids are added for persistent hypotension. It is covered in [[emergency-critical-care/anaphylaxis]]. **Neurogenic shock**, after high spinal cord injury, combines hypotension with bradycardia because sympathetic outflow is lost; it is treated with fluids, vasopressors and atropine for bradycardia. **Adrenal crisis** needs IV hydrocortisone.
+
+## Worked cases
+
+::: example Oxygen delivery in anaemia {#ex-do2}
+A 66-year-old woman with a slow upper gastrointestinal bleed has Hb 80 g/L (8 g/dL), SaO₂ 97%, PaO₂ 12 kPa and a cardiac output of 5 L/min. Calculate her oxygen delivery, and the cardiac output she would need to maintain it if her Hb were normal at 150 g/L instead. What does this mean for her heart?
+::: solution
+By [[#eq-cao2]]:
+
+$$
+C_aO_2 = 1.34 \times 8 \times 0.97 + 0.0225 \times 12 = 10.40 + 0.27 = 10.67 \text{ mL/dL}
+$$
+
+By [[#eq-do2]], $\dot{D}O_2 = 5 \times 10.67 \times 10 \approx 533$ mL/min, about half of normal.
+
+With Hb 15 g/dL and the same saturation, $C_aO_2 \approx 1.34 \times 15 \times 0.97 + 0.27 = 19.77$ mL/dL, so the same delivery would need only $533 / (19.77 \times 10) \approx 2.7$ L/min. The other way round, to deliver a normal 1,000 mL/min at her Hb she would need a cardiac output of about $1000 / 106.7 \approx 9.4$ L/min. Anaemia forces the heart to work much harder; in a patient with coronary disease that extra work can provoke ischaemia, which is why a restrictive transfusion threshold is adjusted for people with active cardiac disease.
+:::
 :::
 
 ::: example The variceal bleeder given nine litres {#ex-overload}
-A 58-year-old with alcoholic cirrhosis, haematemesis, BP 84/50; the pre-hospital and ED team give 4 litres saline while grouping blood; on arrival he is hypoxic with crackles, INR 2.4, Hb 68, abdomen tense, still bleeding; the ward plan reads 'more fluid for renal protection'.
+A 52-year-old man with alcohol-related cirrhosis has a variceal haemorrhage. Over the first night he receives 6 L of 0.9% saline and 3 L of other crystalloid to keep his systolic pressure above 110 mmHg, plus 2 units of red cells. In the morning he is breathless with bilateral crackles, his abdomen is tense, his Hb is 62 g/L and his chloride is 118 mmol/L. What went wrong?
 ::: solution
-**Haemorrhagic-shock-medicine-reordered ([[#def-types]], [[#def-fluids]], [[gastrointestinal/liver-disease]]): the correction - 'in bleeding shock the crystalloid is a placeholder with two harms (the dilution of the clotting factors he never had and the pressure-against-the-clot-and-the-portal-pressure-that-rebleeds-it which is the 'permissive hypotension until haemostasis' logic plus the pulmonary-oedema-he-now-has from the four litres which is why the massive-transfusion-not-massive-saline principle exists); the reorder - 'the blood-now (the O-negative-or-emergency-group-and-the-1:1:1-protocol-and-the-fibrinogen-or-cryoprecipitate-for-the-low-levels-and-the-TXA-per-local-variceal-practice-and-the-calcium-and-the-warm-fluid-and-the-terlipressin-or-vasopressin-adjacent-splanchnic-agent-and-the-antibiotic-prophylaxis-that-reduces-rebleed-and-death-in-cirrhotic-bleeds-which-is-the-most-neglected-drug-in-this-scene-and-the-endoscopy-clock-and-the-balloon-tamponade-as-a-bridge-not-a-plan for the uncontrolled); the destination - 'the-bleeding-cirrhotic-needs-a-unit-with-endoscopy-and-radiology-TIPS-and-surgery-that-will-survive-it and the ICU-and-transplant-centre-conversation-early-because-his-Child-and-MELD-are-part-of-the-prognosis-sentence-and-the-'intubate-for-endoscopy-with-haemodynamic-anaesthesia-present'-sequence-that-avoids-the-arrest-on-induction-which-is-this-population's-signature-event-and-the-renal-protection-the-ward-wanted-is-perfusion-and-blood-and-withholding-nephrotoxins-not-normal-saline-which-his-kidneys-would-report-as-worse'.**
+Several things.
+
+- **Crystalloid instead of blood.** Bleeding was replaced with saline, which dilutes haemoglobin and clotting factors and does not carry oxygen. Red cells (in variceal bleeding, typically to a restrictive target of about 70–80 g/L) and correction of coagulopathy were needed.
+- **Chasing a normal blood pressure.** In variceal haemorrhage, over-transfusion and over-filling raise portal pressure and can provoke re-bleeding. A lower target pressure is accepted until bleeding is controlled.
+- **Saline excess.** Six litres of 0.9% saline caused a hyperchloraemic acidosis, and the sodium load worsened ascites and pulmonary oedema.
+- **Missed definitive treatment.** The priorities were terlipressin, antibiotic prophylaxis and urgent endoscopy with band ligation; fluids were a bridge to these.
+
+He now needs diuresis or careful removal of fluid, correction of anaemia with blood, and endoscopy if not done. See [[gastrointestinal/liver-disease]].
 :::
 :::
 
-::: example The septic ICU patient who is 'fluid responsive' {#ex-responsive}
-Day 2 septic shock from pyelonephritis, 6 litres given, noradrenaline 0.2 microg/kg/min, lactate 3.1 down from 5.8, anuric, weight plus 9 kg; the passive leg raise raises stroke volume 18 percent; the registrar says 'more fluid, she is responsive', the ICU consultant says 'she has had enough'.
+::: example The septic patient who is "fluid responsive" {#ex-responsive}
+A 59-year-old woman with pneumonia and septic shock has received 3 L of balanced crystalloid in the emergency department and is on noradrenaline. In ICU, her MAP is 62 mmHg. A passive leg raise increases her stroke volume (measured by echocardiography) from 52 to 55 mL. Her lungs have new crackles and her PaO₂/FiO₂ ratio is falling. Should she have another bolus?
 ::: solution
-**Responsiveness-versus-responsibility ([[#def-shock]], [[#def-fluids]], [[renal/acute-kidney-injury]]): the reconciliation - 'both are right about different questions: the passive leg raise answers 'will the stroke volume rise' (yes), the intensivist is asking 'will she benefit' (probably not - a responder in the euvolaemic-to-overloaded-9-kg-positive-anuric-range usually converts the fluid into pulmonary and gut and renal-capsular oedema, and the more the patient is fluid-replete-but-still-hypotensive the more the answer is 'fix the vessels' not 'fill the tank'); the decisions in front of you - 'the escalation of vasopressors (the norepinephrine titrated-to-MAP-in-this-phenotype's-usually-65-plus-nuance and the vasopressin-addition-with-its-sparing-data and the consideration of the stress-dose-steroids-in-this-pressor-trajectory per the surviving-sepsis-2021-leanings) rather than the seventh litre, the reassessment that treats fluid as a reversible decision (the mini-fluid-challenge-with-200-300 ml-with-a-pre-specified-abort-if-no-signal-and-a-plan-to-stop-because-fluids-are-a-test-with-a-stopping-rule-not-a-ritual-and-the-echo-relook-for-the-pump-and-the-ventilation-effects), the source-control re-audit (the obstructed infected kidney: the urology-and-the-nephrostomy-or-stent-decision-which-is-the-only-intervention-that-changes-this-lactate-curve and the day-3-fluid-strategy-which-in-a-9-kg-positive-anuric-patient-is-de-resuscitation-discussion-with-CRRT-planning-which-also-treats-the-hyperkalaemia-and-the-volume-and-the-uraemia-in-one-decision-and-the-renal-recovery-trajectory-tracked-as-the-prognosis-sentence). The teaching: fluid responsiveness is an argument you can lose politely; fluid tolerance is the patient's, and 9 kg says she has spent hers.'**
+The rise in stroke volume is $(55 - 52)/52 \approx 5.8\%$, below the usual threshold of about 10%. She is **not fluid responsive**, and she already shows signs of fluid harm (worsening oxygenation). Another bolus is unlikely to raise her cardiac output and likely to worsen her lungs.
+
+The better response is to **increase noradrenaline** to reach a MAP of at least 65 mmHg, consider adding vasopressin, check whether her left ventricle is contracting poorly (septic cardiomyopathy) and, if so, consider dobutamine, and confirm that source control and antibiotics are adequate. Once she is stable, the aim becomes to bring her fluid balance back towards neutral.
 :::
 :::
 
 ::: example The anaphylaxis that was called asthma {#ex-epi-missed}
-A 34-year-old with peanut exposure, wheeze, BP 78/40, tongue swelling; treated as 'severe asthma' with nebulised salbutamol and hydrocortisone and 2 litres saline; ten minutes later obtunded with stridor.
+A 27-year-old man collapses in a restaurant. He is wheezy, has an urticarial rash on his chest, BP 70/40 mmHg, pulse 140/min. A bystander gives him his salbutamol inhaler, and the paramedics start a fluid bolus. On arrival he is still hypotensive and wheezy. What has been missed?
 ::: solution
-**The-epinephrine-window ([[#def-types]], [[emergency-critical-care/anaphylaxis]], [[respiratory/asthma-copd]]): the correction - 'hypotension-plus-airway-signs-plus-cutaneous-or-exposure-history-is-anaphylaxis-and-the-treatment-that-was-missing-is-intramuscular-epinephrine-in-the-mid-anterolateral-thigh-repeated-every-few-minutes-as-needed-which-is-safer-in-this-setting-than-any-clinician's-cardiac-anxiety-and-the-'it-looked-like-asthma'-trap-is-why-the-algorithms-put-the-thigh-first-when-BP-is-low-because-asthma-does-not-swelling-the-tongue-or-drop-the-pressure-and-fluids-alone-flood-a-dilated-leaky-vascular-bed-without-fixing-it; the rescue-now - 'the-high-flow-oxygen-and-the-epinephrine-and-the-lying-flat-with-legs-up (the collapsed-venous-return-of-sitting-anaphylaxis-which-kills-by-posture-adjacent-precautions and the airway-equipment-at-the-bedroom-door-because-the-tongue-and-larynx-edema-progression-is-minutes-fast-and-the-early-senior-anaesthetist-for-the-cannot-intubate-planned-in-advance-and-the-adrenaline-infusion-for-refractory-shock-with-a-central-or-good-peripheral-titration-and-the-glucagon-for-the-beta-blocked-patient-who-does-not-respond-which-is-the-poisoning-and-anaphylaxis-chapter-overlap-question-exams-love; and the after - 'the-observe-long-enough-for-biphasic-reactions-and-the-adrenaline-device-prescription-with-training-and-the-allergy-referral-and-the-written-plan because the second attendances are mostly in people who were sent home with antihistamines and a story.**
+This is **anaphylaxis** with **distributive shock** and bronchospasm: sudden onset after a likely food trigger, skin features, respiratory compromise and hypotension. Salbutamol treats only the wheeze, and fluid alone cannot overcome the profound vasodilatation and capillary leak.
+
+The missing treatment is **intramuscular adrenaline**, 500 micrograms (0.5 mL of 1 mg/mL) into the anterolateral thigh for an adult, repeated after 5 minutes if there is no improvement, with the patient lying flat (legs raised if tolerated) and high-flow oxygen. Fluid boluses are still appropriate for persistent hypotension. If two doses of IM adrenaline have not worked, the patient has **refractory anaphylaxis** and needs an adrenaline infusion under critical care guidance. See [[emergency-critical-care/anaphylaxis]].
 :::
 :::
 
-::: exercise Interpret the lactate {level=1}
-Give the differential and next step for: (a) lactate 4.2 in a metformin-and-sepsis patient with normal BP; (b) lactate 3.8 in an asthma attack on salbutamol, pink and perfusing; (c) lactate 6.0 with a flat abdomen and atrial fibrillation and 'pain out of proportion'.
+::: example The tamponade in the "sepsis" bed {#ex-tamponade}
+A 68-year-old woman on chemotherapy for lung cancer is admitted with breathlessness, fever of 37.9 °C and hypotension (BP 84/60 mmHg, pulse 120/min). She is treated for neutropenic sepsis with antibiotics and 2 L of fluid, but becomes more breathless and more hypotensive. Her JVP is raised to the angle of the jaw, her lungs are clear, and her systolic pressure falls by 15 mmHg on inspiration. Her ECG shows small QRS complexes that alternate in height. What is happening?
 ::: solution
-**Lactate-in-context ([[#def-shock]]): (a) the type-B-and-type-A-mix - the metformin-associated-and-sepsis-adjacent-reduced-clearance-plus-occult-hypoperfusion picture: treat the infection and reperfuse and re-check (and hold the metformin with the contrast-and-renal-plan); (b) the salbutamol-and-work-of-breathing-and-mild-hypoxaemia type-B-lactate that is not shock: do not bolus a perfusing patient, treat the asthma and watch the trend; and (c) the surgical-lactate that outruns the examination: the atrial-fibrillation-embolus-to-a-mesenteric-artery-with-a-soft-abdomen-early (the pain-out-of-proportion-and-lactate-with-a-normal-looking-bowel-on-x-ray pattern) - the CT-angiography-now-and-vascular-surgery-now because this lactate is the only honest thing in the room and the bowel is dying faster than the number is rising.**
+**Cardiac tamponade**, most likely from a malignant pericardial effusion. The clues are hypotension with a raised JVP and clear lungs (obstructive, not distributive, physiology), **pulsus paradoxus** (an inspiratory fall in systolic pressure of more than 10 mmHg), and low-voltage complexes with **electrical alternans** from the heart swinging in the effusion. Fluids may briefly help by raising filling pressure, but the definitive treatment is urgent **echocardiography** and **pericardiocentesis**. Infection may coexist, so antibiotics continue. The lesson is that a patient who worsens as expected treatment is given needs reclassifying, with the neck veins and an ultrasound probe.
 :::
 :::
-
-::: exercise Choose the fluid {level=2}
-Pick and justify for: (a) DKA, 96-year-old-weight-50-kg, Na 128 corrected, K 3.1; (b) cirrhotic with spontaneous bacterial peritonitis and AKI; (c) Trauma arriving Hb 55; (d) hypernatraemic dehydration 82-year-old, Na 162.
-::: solution
-**Fluid-matching ([[#def-fluids]]): (a) the 0.9-percent-saline-or-balanced-first-then-potassium-replacement-before-insulin-and-the-12.5-25 ml/kg-first-hour-range-in-older-CKD-adjacent-cardiac-risk-which-means-reassess-after-each-litre-not-per-protocol and the cerebral-considerations-if-younger (the NICE-older-DKA-fluid-rate-arguments); (b) the albumin-per-the-SBPI-and-AKI-adjacent-guidance-with-the-paracentesis-and-antibiotics-and-noradrenaline-if-needed-because-hepatorenic-physiology-treats-itself-only-with-volume-that-stays-intravascular-briefly; (c) nothing-that-is-not-blood: the-MTP-over-saline-as-the-variceal-example-taught and the crystalloid-only-to-keep-a-line; (d) the slow-correcting-hypo-tonic-solution-arithmetic (the 5-percent-dextrose-or-half-strength-saline-calculation with the under-10-mmol-per-day-sodium-fall and the-48-hour-and-recheck-schedule-because-162-to-140-in-an-afternoon-is-how-you-make-a-quadriparesis and the-NG-or-oral-water-route-when-it-works because a thirsty conscious patient drinking is the oldest and best hypotonic fluid.**
-:::
-:::
-
-::: exercise Run the shock clinic {level=2}
-The ED 'shock bay' protocol meeting: your current deaths include two cirrhotic bleeds given saline, one 'sepsis' that was an adrenal crisis, one trauma given eleven units before anyone mentioned fibrinogen, and one post-MI shock patient who died at 3am in a hospital without mechanical support. Write the protocol's five rules.
-::: solution
-**Five-rules-from-four-deaths ([[#def-types]], [[clinical-skills/patient-safety]]): rule-1-blood-matches-loss - 'haemorrhage-resuscitation-starts-with-the-massive-transfusion-activation-criteria-and-balanced-products-and-fibrinogen-check-by-name-and-TXA-in-the-clock-and-the-calcium-and-warmth-ordered-with-them-not-after-the-third-unit-because-that-protocol-is-the-trauma-literature-imported-wholesale-and-saves-the-cirrhotics-too; rule-2-the-hypotension-history-check - 'the-steroid-inhaler-or-prednisolone-or-immunotherapy-or-post-partum-haemorrhage-Sheehan-history-and-the-hyponatraemia-hyperkalaemia-hypoglycaemia-look-make-the-hydrocortisone-a-second-screen-not-a-third-opinion and the 'treat-shock-not-labels' reflex that steroids cost nothing; rule-3-vasopressors-early-and-fluids-with-a-stopping-rule - 'the norepinephrine-while-the-second-litre-debates-itself rule and the dynamic reassessment and the de-escalation note; rule-4-the-destination-decision-is-resuscitation - 'the-MI-shock-transfer-before-arrest (the regional cardiac arrest and shock network with pre-hospital ECG triage) and the bleeding destination (endoscopy and interventional radiology and transplant capability) and the anaphylaxis and PE pathways each having a phone number that answers, because 'we had the drug and lost the hospital' is a category of preventable death no fluid can fix; rule-5-the-audit-loop - 'every shock death reviewed against the four mechanisms with the timing of each decision graphed against the lactate and the protocol amended on paper within the month because shock care improves in cycles of protocol-replication-amendment and the alternative is the same four deaths with new patients' names.**
-:::
-:::
-
-
-::: example The tamponade in the 'sepsis' bed {#ex-tamponade}
-A 61-year-old with metastatic lung cancer admitted 'for IV antibiotics, fever and hypotension'; 3 litres saline, noradrenaline started, lactate 3.4; now JVP to the angle of the jaw, pulsus paradoxus 24 mmHg, ECG low-voltage with electrical alternans on the monitor strip the nurse points at.
-::: solution
-**Obstructive-shock-armor-wearing-distributive-shock's-uniform ([[#def-shock]], [[#def-types]], [[respiratory/lung-cancer-pleura]]): the read - 'the fever was real but the physiology is tamponade (the malignant effusion accumulating in a patient whose "sepsis" fluid-refractory hypotension is the very definition of a preload problem), and the bedside echo that should have preceded the third litre shows the swooping heart in its fluid jacket; the sequence - 'the-urgent-echocardiography-and-pericardiocentesis-by-the-most-experienced-hands-with-the-surgeon-aware-because-malignant-and-loculated-and-post-radiation-effusions-are-not-textbook-drainages and the fluid-and-pressor-bridge-that-buys-minutes-not-days-because-tamponade-tolerates-neither-withdrawal-nor-waiting and the definitive plan after drainage (the window or the indwelling-pericardial-catheter and the oncology-prognosis-conversation-because-recurrence-is-the-natural-history which is palliative-medicine-territory-inside-a-procedure-indication); and the system-point - 'the "sepsis protocol" is a superb servant and a terrible diagnoses: the screening-bundle-that-triggers-antibiotics-should-also-trigger-the-question-"what-else-looks-like-this" for the tamponade-and-tension-pneumothorax-and-PE-and-adrenal-and-bleeding-and-cardiogenic-six every time the pressure does not answer the second litre.**
-:::
-:::
-
-::: exercise Advise the ward on the crashing asthmatic's circulation {level=2}
-A near-fatal asthma patient peri-intubation becomes hypotensive 78/40 with a plateau pressure of 44 and a rising peak-pressure gap; the anaesthetist shouts 'fluid' while the surgeon says 'needle'. Who is right about what?
-::: solution
-**Peri-intubation-hypotension-differential ([[#def-shock]], [[respiratory/asthma-copd]], [[emergency-critical-care/airway-ventilation]]): both might be - 'dynamic-hyperinflation-is-the-commonest-cause (the breath-stacked-against-6-breaths-a-minute-ventilator-squeezing-the-pleural-pressure-until-the-ventriciles-cannot-fill: the disconnection-and-expiratory-hold-and-long-expiratory-time-and-RR-reduction-and-permissive-hypercapnia-ventilator-strategy and the manual-decompression-disconnect-and-watch-the-pressure-fall-and-the-BP-come-up diagnostic-therapeutic-manoeuvre-which-answers-in-ten-seconds), the tension-pneumothorax-is-the-second (the bilateral auscultation and the ultrasound-signal-loss and the needle-if-she-does-not-recover-from-the-hyperinflation-movements-which-is-why-the-surgeon-is-in-the-room-and-the-pleural-drains-end-up-sited-more-often-than-anyone-admits), the fluid-and-pressor-third (the post-indication-vasodilation-and-dehydration-post-theophylline-and-steroids-and-insensible-losses-and-the-noradrenaline-running-as-standard-in-this-procedure-era) and the pneumomediastinum-and-mucus-plugging-and-endobronchial-tube-malposition-differentials. The order that saves her: disconnect and deflate, ventilate slower, resuscitate the pressure, then needla if the story still says air-trapped-under-pressure-which-is-a-diagnosis-you-prove-by-what-fixed-her-not-by-who-shouted-loudest.**
-:::
-:::
-
 
 ::: quiz
-In undifferentiated hypotensive septic shock after initial fluid boluses with persistent hypoperfusion, the next best step is:
-- [ ] More crystalloid guided by CVP targets
-- [ ] Vitamin C infusion
-- [x] Early norepinephrine with reassessment of fluid responsiveness and source control
-- [ ] Hydroxyethyl starch for volume expansion
+A 45-year-old man with septic shock has received 30 mL/kg of crystalloid. His MAP is 58 mmHg and his lactate is 4.8 mmol/L. A passive leg raise produces no change in cardiac output. What is the most appropriate next step?
+- [ ] A further 2 L of 0.9% saline.
+- [ ] A 500 mL bolus of hydroxyethyl starch.
+- [x] Start or increase noradrenaline to a MAP of at least 65 mmHg.
+- [ ] Wait for the lactate to be repeated in 6 hours.
 ::: solution
-**Modern practice: norepinephrine early when perfusion stays poor after initial fluid, dynamic reassessment rather than protocolised litres, antibiotics-and-source-control as the actual cure, and starch contraindicated - [[#def-types]], [[#def-fluids]].**
+He is not fluid responsive, so further fluid is unlikely to help and may harm him. Noradrenaline is the first-line vasopressor for septic shock. Starch solutions increase mortality and kidney injury in sepsis and should not be used.
 :::
 :::
 
-::: widget plot
-f: 100*exp(-x*0.25); 100*(1-exp(-(x-0)*0.7))*0.6; 55; 20; 40
-x: 0, 8
-y: 0, 100
-labels: \text{litres of resuscitation fluid (illustrative)},\ \text{percent}\ \text{probability of benefit from the next litre};\ \text{probability of harm (edema, dilution, overload)};\ \text{survival effect of early vasopressor (illustrative)};\ \text{positive-balance harm curve (illustrative)}
-caption: The fluid response curve inverts; the skilled resuscitator rides it to its peak and stops ([[#def-shock]], [[#def-fluids]]).
+::: history
+Intravenous fluid therapy began with cholera. In 1832, during the epidemic that reached Britain, the Edinburgh physician Thomas Latta injected a salt solution into the veins of dying patients, some of whom recovered; the technique was then largely forgotten for decades. In the 1880s Sydney Ringer, working on frog hearts at University College London, found that a physiological solution needed calcium and potassium as well as sodium; in 1932 the American paediatrician Alexis Hartmann added lactate to Ringer's solution to treat acidosis, giving Hartmann's solution. Ernest Starling's work around 1896 on the forces across the capillary wall and, in 1918, on the relation between filling and output of the heart gave the physiology behind fluid resuscitation. In 2001 Emanuel Rivers reported early goal-directed therapy for septic shock; three large trials in 2014 (ProCESS, ARISE and ProMISe) found no benefit from the protocol over usual care, an important lesson in how improved background care can erase the effect of a protocol.
 :::
 
 ## Where this leads
 
-The sepsis-specific pharmacology and bundles are in [[infectious-diseases/fever-sepsis]], haemorrhage and damage-control surgery in [[surgery/trauma]] and [[obstetrics-gynaecology/pregnancy-complications]], the transplant and liver context in [[gastrointestinal/liver-disease]], the ICU interface in [[emergency-critical-care/critical-care]], and poisoning-related vasoplegia in [[emergency-critical-care/poisoning]].
-
-::: history
-**Shock's history is medicine discovering that blood pressure is a symptom. The world wars made it a science: the 'shell shock' psychiatrists and the capillary-bed surgeons argued over names while Wiggers, Cannon and their contemporaries built haemorrhagic-shock physiology in animal models, and the Korean War era proved that stored citrated blood worked at scale - and that the plasma-expander industry selling albumin and synthetic colloids as replacements leaked, literally and evidentially, a lesson ending in the hydroxyethyl-starch renal and coagulopathy trials and the regulator's black letters of 2013, the thirty-year life of a bad drug in one clause. The central-venous-pressure era then crowned and fell: what began as careful physiology degraded into a number to beat, Rivers' 2001 early-goal-directed-therapy trial turned the protocol into emergency-department dogma, and the ProCESS, ARISE and ProMISe replications of 2014-15 showed the virtue was early recognition, antibiotics and prompt perfusion restoration - not the ritualised six litres and the catheter: the most instructive episode in modern critical-care evidence sociology. The vasopressor story ran the other way, toward refinement: noradrenaline from 1940s chemistry to first-line, vasopressin as the sparing second agent, the 2018 steroid trials (APROCCHSS and ADRENAL) settling a war the 1980s started, angiotensin II finding a niche, and dopamine quietly demoted by its own arrhythmias - a rare clean victory for evidence over familiarity. The haemorrhage line was exported from the battlefield: damage-control laparotomy coined in the US combat surgically, the 1:1:1 plasma-platelet-red-cell haemostatic resuscitation recognised in Iraq and Afghanistan, tranexamic acid's luck-when-given-early (CRASH-2 in trauma, the WOMAN trial in post-partum haemorrhage), permissive hypotension for non-compressible torso bleeding, and the REBOA-and-aortic-compression device era with its open trials and open arguments. Meanwhile the overload counter-revolution accumulated: the positive-fluid-balance outcome epidemiology of the 2000s, the fluid-conservative ARDS-era trials, and the 2020s de-resuscitation trial wave, ending with 'fluid overload' as a coded diagnosis rather than an accident. The chapter's moral from its own history: resuscitation advances fastest when it stops trusting its favourite number - the CVP, the supine pressure, the single lactate, the protocol - and starts trusting the reassessed patient.** - [[physiology/integrative-physiology]], [[surgery/trauma]], [[infectious-diseases/fever-sepsis]].**
-:::
+The care of the patient in shock continues in the intensive care unit ([[emergency-critical-care/critical-care]]). Sepsis is covered in [[infectious-diseases/fever-sepsis]], heart failure and cardiogenic shock in [[cardiovascular/heart-failure]], blood products in [[blood/transfusion]], the kidney's response to shock in [[renal/acute-kidney-injury]], and the pathology of shock in [[pathology/haemodynamics]].
 
 ::: summary
-- Shock is an oxygen-delivery failure with four mechanisms; the bedside set (capillary refill, shock index, mottling, lactate trend, focused echo) locates the machine that broke faster than any single monitor.
-- Fluids are a dosed drug: balanced crystalloid matched to the loss, given in reassessed boluses during resuscitation, then stopped, then often reversed; responsiveness is not benefit and the tenth litre has its own evidence.
-- Haemorrhage is treated with blood-first damage-control physiology (products early, calcium and warmth, TXA early, haemostasis as the resuscitation) and permissive hypotension where the literature supports it.
-- Septic shock is a vessel problem: antibiotics and source control as the cure, norepinephrine early, more fluid only with a stopping rule, steroids for the refractory, and no vitamin-C folk pharmacology.
-- Cardiogenic shock needs the support ladder (pressor, inotrope, mechanical support) and early transfer to where that ladder exists; its MI and heart-failure subgroups have different evidence and different consultants.
-- The mimics - tamponade, tension pneumothorax, adrenal crisis, myxoedema, neurogenic - are identified by examining the patient and are cured by a needle, a hormone or a pressor, not by a litre.
+- Shock is inadequate oxygen delivery to the tissues; hypotension is a late sign. Oxygen delivery = cardiac output × arterial oxygen content.
+- Four types: hypovolaemic, cardiogenic, distributive and obstructive. Warm or cold peripheries, the neck veins, the lungs and ultrasound distinguish them.
+- Lactate above 2 mmol/L signals hypoperfusion; a shock index above 1 suggests significant shock.
+- Give fluid in 500 mL boluses of crystalloid and reassess; only fluid-responsive patients benefit, and the passive leg raise tests this. Balanced crystalloids are usually preferred; starches cause harm.
+- Noradrenaline is the first-line vasopressor (target MAP 65 mmHg); dobutamine supports a failing ventricle.
+- Haemorrhage: stop the bleeding, use permissive hypotension in trauma, give blood components in high ratios, and give tranexamic acid within 3 hours. PROPPR (2015): 1:1:1 against 1:1:2 gave more haemostasis and fewer exsanguination deaths at 24 hours, without a significant difference in 24-hour or 30-day mortality.
+- Cardiogenic shock needs revascularisation; obstructive shock needs decompression or clot removal.
 :::
 
 ## Exercises
 
-::: exercise Classify the shock {level=1}
-Assign mechanism and immediate action: (a) 22-year-old post-splenectomy-day-2, HR 128, BP 92/64, drain 400 ml blood; (b) 68-year-old day-3 MI, oliguric, cool, JVP to the ear, crackles; (c) 30-year-old T6 spinal injury, HR 48, BP 80/45, warm dry; (d) 55-year-old on immunotherapy, BP 78/40 with hyponatraemia and hyperkalaemia.
+::: exercise Mean arterial pressure {level=1 check="83"}
+A patient's blood pressure is 110/70 mmHg. Estimate the mean arterial pressure using the formula in [[#eq-map]], rounded to the nearest whole mmHg.
 ::: solution
-**Four-machines ([[#def-shock]], [[#def-types]]): (a) haemorrhage until proven otherwise: the blood-and-return-to-theatre-question-now (the drain-output-trajectory-and-clotting-panel-and-the-1:1:1-and-the-damage-control-thinking - crystalloid only to keep the arm accessible); (b) cardiogenic cold-and-wet: the echo-and-the-lactate-and-the-avoid-fluid-boluses instinct and the noradrenaline-and-inotrope-and-transfer-for-support-decision-and-the-revascularisation-question-because-that-artery-may-still-be-closable; (c) neurogenic: the fluids-then-vasopressors-and-atropine-for-the-symptomatic-bradycardia-and-the-'warm-shock-that-is-not-sepsis'-pattern-recognition-and-the-spinal-shock-and-epidural-and-autonomic-dysreflexia-adjacent-neurosurgical-context; and (d) adrenal crisis: the hydrocortisone-now-and-glucose-and-culture-and-fluids-with-the-immunotherapy-hypophysitis-or-adrenalitis-flag-raised-for-endocrine-confirmation-later-because-hypophysitis-is-a-known-checkpoint-inhibitor-class-adjacent-effect-and-this-is-the-one-hypotension-that-answers-a-steroid-in-minutes.'**
+$\text{MAP} \approx 70 + \tfrac{1}{3}(110 - 70) = 70 + 13.3 = 83.3$, which rounds to **83 mmHg**.
 :::
 :::
 
-::: exercise Write the massive transfusion order {level=2}
-A 40-year-old motorcycle rider, Hb 62 on arrival, BP unrecordable, temp 34.2, pH 7.1, lactate 7: start and run the massive-transfusion protocol with its five co-interventions and its serial-lab panel.
+::: exercise Shock index {level=1 check="1.4"}
+A man with a stab wound to the abdomen has a pulse of 126/min and a systolic blood pressure of 90 mmHg. Calculate his shock index (to one decimal place) and interpret it.
 ::: solution
-**Damage-control-resuscitation-execute ([[#def-types]]): the order - 'the-MTP-activation-with-balanced-1:1:1-RBC-plasma-platelets-and-the-emergency-drawer-factors-or-early-fibrinogen-replacement-per-protocol-and-the-viscoelastic-testing-if-the-lab-runs-it-with-its-prothrombin-complex-adjacent-role-in-anticoagulated-patients (her anticoagulation status from the paramedic matters) and-the-group-O-negative-versus-type-specific-decision-made-and-documented; the co-interventions - 'the calcium (the citrate-is-hypotension-and-cardiac-arrest-in-a-massive-transfusion and the gram-by-gram-or-ionised-monitored replacement), the warm-everything (the fluid-and-blood-warmers-and-the-forced-air-blonket-and-the-room's-thermostat-because-the-lethal-triad-collapses-when-you-warm-the-patient), the TXA-within-3-hours-or-not-at-all-and-the-actual-dose-and-timing-documented-and-the-surgical-haemostasis-or-angioembolisation-or-packing-with-the-'she-is-coagulopathic-leave-the-oozing-and-pack-and-resuscitate'-damage-control-logic-and-the-acidosis-treated-by-perfusion-not-bicarbonate); the serial panel - 'the-thromboelastometry-or-standard-coags-and-fibrinogen-and-platelets-and-ionised-calcium-and-lactate-and-base-deficit-and-blood-gas-every-cycle-because-the-protocol's-job-is-to-anticipate-the-third-triad-member-the-patient-has-not-earned-yet; and the ceiling conversation (the-non-survivable-injury-or-not-decision-made-by-the-senior-and-the-trauma-surgeon-not-the-clock-and-the-transfusion-stopped-because-it-is-not-working-not-because-the-stock-ran-out which is the hardest 5 minutes of this kind of day.'**
+Shock index $= 126 / 90 = 1.4$. A value above 1 suggests significant blood loss, even though his systolic pressure is still at the lower limit of normal. He needs the major haemorrhage protocol and a surgical opinion.
 :::
 :::
 
-::: exercise Stop the fluids {level=2}
-The post-pancreatitis fluid-collection patient, day 8 in HDU, was 14 kg positive; now noradrenaline coming off, saturations falling, abdomen tight, bladder pressure 24, creatinine rising, lactate flat; a colleague suggests 'more fluid, the pressure dips with position'. Argue the de-resuscitation prescription.
+::: exercise Oxygen delivery {level=2 check="764"}
+Calculate the oxygen delivery (in mL/min, to the nearest whole number) of a patient with cardiac output 5 L/min, Hb 120 g/L and SaO₂ 95%, ignoring dissolved oxygen.
+::: hint
+Convert Hb to g/dL first, then use [[#eq-cao2]] without the dissolved term and [[#eq-do2]].
+:::
 ::: solution
-**De-resuscitation-as-a-prescription ([[#def-shock]], [[#def-fluids]], [[gastrointestinal/pancreas-biliary]]): the argument - 'the position-dip-is-the-venous-return-of-an-abdomen-too-full-to-fill and the bladder-pressure-of-24-with-a-rising-creatinine-and-falling-compliance-is-abdominal-hypertension-bordering-compartment-syndrome: fluid will worsen the very physiology you are trying to outrun; the prescription - 'the-negative-balance-plan (the-IV-stopped-or-reduced-to-essential-drug-vehicles-only-which-means-the-antifungals-and-the-proton-pump-inhibitor-need-a-review-not-a-raincoat of saline), the diuresis-at-high-dose-with-renal-response-monitoring-or-CRRT-for-slow-ultrafiltration-because-this-kidney-may-not-answer-furosemide-and-CRRT-is-the-volume-tool-here, the-sedation-and-analgesia-and-ng-decompression-and-nutrition-route-review-that-make-the-abdomen-tolerate-its-contents and the surgical-and-radiology-relook-for-the-drainable-collection-and-the-necrosectomy-timing-because-infected-necrosis-is-the-source-the-vasopressor-keeps-remembering), the escalation-backwards (the decompressive-laparotomy-or-percutaneous-drainage-for-true-compartment-syndrome-with-its-mortality-and-open-abdomen-ostomy-morbidity-conversation-honest-about-both) and the monitoring that decides between them (the serial-bladder-pressure-and-ventilator-pressures-and-renal-and-lactate-trajectory-and-the-perfusion-recheck-not-the-position-test).'**
+Hb is 12 g/dL. $C_aO_2 = 1.34 \times 12 \times 0.95 = 15.276$ mL/dL. $\dot{D}O_2 = 5 \times 15.276 \times 10 = 763.8$, which rounds to **764 mL/min**.
 :::
 :::
 
-::: exercise Design the hospital fluid stewardship programme {level=3}
-Your audit: 62 percent of inpatient IV-fluid orders lack an indication or stop-date, sodium-containing fluids are half of volume, the 'routine 5-percent-dextrose-at-night' is alive and well, and hypokalaemias and overload events follow. Build the programme that the fluid chapters and the polypharmacy chapter would co-sign.
+::: exercise Fluid balance {level=1 check="800"}
+Over 24 hours, a patient receives 3,200 mL of IV and oral fluid. Urine output is 1,100 mL, nasogastric losses are 600 mL and insensible losses are estimated at 700 mL. What is the estimated net fluid balance in mL (positive means a gain)?
 ::: solution
-**Fluid-stewardship ([[#def-fluids]], [[geriatrics-palliative/polypharmacy]], [[clinical-skills/patient-safety]]): the diagnosis - 'fluids are prescribing: the same governance that fixed drug charts applies and the audit lines are the same (indication, dose, route, review); the levers - 'the-fluid-order-set-with-mandatory-fields (the indication-rate-stop-review-triple-which-is-the-drug-chart's-grammar-borrowed-because-it-works and the daily-fluid-balance-row-that-nurses-actually-complete-when-it-is-a-column-not-a-quest and the-balanced-crystalloid-formulary-default-with-saline-restricted-to-its-real-indications (the hypochloraemic-alkalosis and the neurosurgical sodium and the DKA-first-phase-pairs) which the balanced-solution-era-trials-support-as-a-default and the 'IV-fluids-day' and 3-day-review-audits-and-the-removal-of-the-nightly-5-percent-dextrose-reflex-by-name-because-that-heritage-order-hyponatraemias-elderly-women-in-particular-and-outlived-every-rationale-for-it); the-education-that-sticks - 'the-fluid-and-electrolyte-teaching-run-by-renal-and-intensive-care-with-case-based-abnormality-rounds (the hyponatraemia-correction-speed-and-od-adjacent-lessons-and-the-thirst-versus-volume-versus-deficit-versus-maintenance-distinctions-the-NICE-leaflets-teach-in-diagrams) and the nursing-initiative-to-stop-the-unreviewed-bag-with-a-documented-escalation-because-the-nurse-at-the-pole-is-the-fluid-overload-safety-net; the metrics - 'the-30-day-prevalence-of-positive-fluid-balance-and-the-hospital-sodium-and-potassium-events-and-the-overload-codes-and-the-'fluids-ordered-without-review-by-72-hours'-rate-and-the-staff-knowledge-pre-post-questions-and-the-audit-of-who-owns-each-number; and the tie-back - 'the programme reports into the same prescribing-quality and patient-safety architecture as the deprescribing work because a tenth bag of saline with no indication is the polypharmacy chapter's adverse drug reaction with a drip tube, and the patient with 9 kg of iatrogenic fluid and a wound that will not heal and kidneys that never recovered is one of medicine's least-counted and most-countable harms.**
+Losses are $1100 + 600 + 700 = 2400$ mL. Net balance $= 3200 - 2400 = +800$ mL. Insensible losses are an estimate (they rise with fever, tachypnoea and open wounds), so daily weights are a useful check.
+:::
+:::
+
+::: exercise Choose the fluid {level=2}
+For each patient, suggest an appropriate fluid and give a reason: (a) a 30-year-old with diarrhoea, BP 92/60 mmHg, normal sodium; (b) a 70-year-old with cirrhosis having 6 L of ascites drained; (c) a 25-year-old with a gunshot wound and BP 70/40 mmHg; (d) a 40-year-old with a severe head injury and hypotension.
+::: solution
+(a) A 500 mL bolus of a balanced crystalloid such as Hartmann's solution, reassessed, then replacement of ongoing losses including potassium.
+(b) Human albumin solution, to prevent post-paracentesis circulatory dysfunction (following hepatology guidance, typically given per litre of ascites removed).
+(c) Blood components through the major haemorrhage protocol (red cells and plasma in a high ratio, with platelets and fibrinogen guided by tests), tranexamic acid, permissive hypotension and immediate surgical control; crystalloid kept to a minimum.
+(d) Isotonic crystalloid (0.9% saline is often preferred over slightly hypotonic balanced solutions) and blood if bleeding; albumin is avoided in traumatic brain injury, and permissive hypotension does not apply because cerebral perfusion pressure must be maintained.
+:::
+:::
+
+::: exercise Interpret the lactate {level=2}
+A 63-year-old man with type 2 diabetes taking metformin is admitted with vomiting and acute kidney injury. His BP is 118/72 mmHg, pulse 88/min, capillary refill 2 seconds, and lactate 6.1 mmol/L with a pH of 7.18. Is he in shock?
+::: solution
+His circulation looks adequate: normal blood pressure, heart rate and capillary refill. A very high lactate with acidosis but without signs of hypoperfusion suggests a cause other than shock. **Metformin-associated lactic acidosis**, precipitated by acute kidney injury reducing metformin excretion, is likely. Metformin is stopped, fluids correct dehydration, and renal replacement therapy may be needed for severe acidosis because it removes both the acid and the drug. Lactate is a marker of cellular stress or impaired clearance, not a pure measure of perfusion.
+:::
+:::
+
+::: exercise Massive transfusion order {level=2}
+A 41-year-old woman is brought in after a road traffic collision with a pelvic fracture, BP 78/50 mmHg and pulse 140/min. Write the first 15 minutes of her management as a numbered plan.
+::: solution
+1. Call the trauma team and assess her with catastrophic haemorrhage control first, then ABCDE.
+2. Apply a pelvic binder at the level of the greater trochanters.
+3. Activate the major haemorrhage protocol; take bloods including crossmatch, coagulation, fibrinogen and a venous gas with lactate and ionised calcium.
+4. Give tranexamic acid (1 g IV over 10 minutes, followed by a 1 g infusion over 8 hours in adults, per local trauma protocol) within 3 hours of injury.
+5. Transfuse red cells and plasma in a high ratio through a warmer; add platelets and cryoprecipitate guided by results; give calcium if ionised calcium is low.
+6. Permissive hypotension: aim for a palpable radial pulse or systolic about 80–90 mmHg until haemorrhage control (no head injury suspected).
+7. Arrange definitive haemorrhage control: interventional radiology embolisation or surgical packing, depending on local resources and response.
+8. Keep her warm and reassess repeatedly.
+:::
+:::
+
+::: exercise When to stop the fluids {level=3}
+On day 3 of ICU admission for septic shock from a perforated diverticulum (now operated on), a 72-year-old woman is off noradrenaline. Her cumulative fluid balance is +7.5 L, she has peripheral and sacral oedema, her PaO₂/FiO₂ ratio is falling, and her urine output is 0.4 mL/kg/h. The nurse asks whether she needs another bolus for the low urine output. Discuss.
+::: solution
+She has moved from the salvage and optimisation phases to the **de-escalation** phase. Her circulation no longer needs support, and she shows harm from fluid: oedema, worsening gas exchange and possibly renal venous congestion, which itself lowers urine output. A low urine output is not, by itself, an indication for fluid. The plan is to stop maintenance fluids where possible (concentrating drugs and feed), assess her volume status with clinical examination and ultrasound, and start a trial of diuretics once she is haemodynamically stable, monitoring kidney function and electrolytes. If diuretics fail and fluid overload is threatening her lungs, renal replacement therapy can remove fluid. The aim is to return her cumulative balance towards zero.
+:::
+:::
+
+::: exercise A shocked patient with two problems {level=3}
+A 79-year-old man taking bisoprolol for ischaemic heart disease is admitted with melaena. His pulse is 78/min and BP 92/58 mmHg; he is pale and confused, and his Hb is 71 g/L. The junior doctor notes that he is "not tachycardic, so probably not shocked". Discuss the error and the management.
+::: solution
+Beta-blockers blunt the tachycardic response to blood loss, so a normal heart rate does not exclude shock; the low blood pressure, pallor and confusion indicate significant hypovolaemia. His cardiac disease means that both anaemia and hypotension threaten myocardial oxygen supply ([[#thm-do2]]). Management: ABCDE, two large-bore cannulae, crossmatch and transfusion (a slightly higher Hb threshold is reasonable given his ischaemic heart disease, following local guidance), Glasgow–Blatchford risk scoring, withholding the beta-blocker and any antiplatelet or anticoagulant while weighing the risks with the cardiology team, and urgent endoscopy after resuscitation. See [[gastrointestinal/gi-bleeding-cancer]].
 :::
 :::

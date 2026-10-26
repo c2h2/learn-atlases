@@ -1,142 +1,326 @@
-Anaphylaxis is immunology at the bedside: mast-cell and basophil degranulation releasing a mediator storm that turns airways, vessels and gut into one organ system under attack - and a treatment algorithm so simple (intramuscular adrenaline, lie flat, repeat, call for help) that every death is a systems audit waiting to happen. **This chapter covers the mechanism and its clinical faces (the IgE-mediated food, drug, venom and latex syndromes; the non-IgE pathways of contrast, NSAIDs and direct mast-cell activators; the mastocytosis and asthma risk strata), the diagnostic criteria and the differential that kills by mimicry (the vasovagal faint given adrenaline and the asthma attack given nothing, the hereditary angioedema and the mast-cell tumours), the management from the first minute through refractory shock and the ICU, and the after (the tryptase timing, the allergy referral, the adrenaline auto-injector training, the biphasic-observation judgment and the register-and-avoidance medicine that prevents the second - which is where most of the preventable deaths actually occur, at the follow-up that never happened).**
+Anaphylaxis can take a healthy person to cardiac arrest within minutes of eating a nut, being stung by a wasp or receiving an antibiotic. It is also among the most treatable emergencies: a single intramuscular injection of adrenaline, given early, reverses most reactions. Most deaths from anaphylaxis involve delay in giving adrenaline, an upright posture during the reaction, or failure to recognise what is happening. This chapter is about recognising anaphylaxis quickly, treating it correctly, and reducing the risk of a further reaction.
 
-## The mechanism
+The chapter covers the mechanism and triggers, the diagnostic criteria and the conditions that mimic anaphylaxis, emergency treatment according to the Resuscitation Council UK (RCUK) guideline of 2021, the management of reactions that do not respond, observation, mast cell tryptase testing and follow-up, angio-oedema without urticaria, and acute severe asthma, which shares many of the same features and treatments. Doses quoted are the standard values printed in the UK guidelines and are included for teaching; practice follows current local guidance.
 
-::: definition Mechanism, triggers and the fatal phenotypes {#def-mechanism}
-**The immunology: re-exposure of the sensitised (the prior asymptomatic contact that produced specific IgE bound to high-affinity Fc-epsilon-receptors on mast cells and basophils) meeting the same allergen and cross-linking the surface IgE into the degranulation signal that releases the preformed granule (histamine, tryptase, chymase, heparin) and synthesises the lipid mediators (the prostaglandin-D2 and leukotriene-C4 thunder-duo) and the cytokines - a mediator profile whose organ effects spell the syndrome: the arteriolar-dilation-and-venous-leak (the hypotension and the oedema and the third-spacing that makes anaphylactic shock a volume-and-tone emergency in one), the bronchospasm-and-mucosal-swelling-and-mucus (the wheeze-and-stridor-and-the-cough-that-is-the-herald-symptom-child-version), the gut-cramping-and-vomiting-and-diarrhoea (the under-recognised 'she just threw up and collapsed' presentation), and the uterine-and-bladder contraction and the sense-of-doom which is a documented symptom worth asking about afterwards; the trigger categories as epidemiology (the foods of childhood-and-young-adult-life (the peanut-and-tree-nut-and-hen-egg-and-milk-and-wheat-ω5-gliadin-dependant-exercise-version-and-shellfish-and-sesame-with-the-new-US-allergen-labelling-era and the Alpha-gal-tick-associated-delayed-meat-allergy-reach) the drugs of perioperative and hospital life (the neuromuscular-blocking-agents-remaining-the-leading-perioperative-cause-with-the-chlorhexidine-and-latex-and-curariform-cross-reactivity-and-the-antibiotics-especially-tryptase-releasing-and-the-opioid-direct-mast-cell-degranulation-mimics-and-the-platinum-compounds-and-mab-adjacent-infusion-reactions-and-the-drug-desensitization-protocols-which-are-allergy-clinic-medicine) the venoms (the Hymenoptera with the mastocytosis-risk-flag-and-the-venom-immunotherapy-cure-rate-which-is-the-most-effective-prevention-in-this-chapter), the cofactor-dependent (the exercise-or-NSAID-or-alcohol-or-menstruation-or-temperature-drop-with-food-dependent-exercise-anaphylaxis-as-the-signature-reversible-diagnosis-and-the-perioperative-cases-where-everything-was-given-and-the-trigger-was-the-sandwich-at-11am), the non-immunological activators (the radiocontrast-direct-mast-cell-and-basophil-effects-with-the-'prior-reaction-predicts-next-reaction-and-premedication-only-reduces-mild-breakthroughs'-reality and the NSAID-exacerbated-respiratory-disease-and-the-ACE-inhibitor-bradykinin-angioedema-which-is-not-anaphylaxis-and-is-a-different-chapter's-lesson-restated-here-because-it-arrives-in-the-same-resus-bay); the risk strata for fatal anaphylaxis (the asthma-with-uncontrolled-or-severe-airway-disease-as-the-respiratory-death-predisposition-and-the-cardiovascular-disease-and-beta-and-ACE-inhibitor-therapy-associated-severity-adjacent-literature-and-the-mastocytosis-and-raised-baseline-tryptase-and-clonal-mast-cell-disease-discoveries-that-keep-appearing-in-adult-venom-and-idiopathic-cases-and-the-adolescent-and-young-adult-phenotype-with-hiding-the-ingredients-and-delayed-adrenaline-being-the-recurring-autopsy-finding); and the fatal phenotypes worth memorising because they direct the follow-up as much as the emergency (the adults die of cardiovascular collapse often with minimal skin signs and the children and asthmatics die of airway obstruction with the 'just asthma' mislabel in nearly every review - the UK National Registry data assembled by Pumphrey and the Australian and US fatality series agreeing on the same four lessons across three decades: no adrenaline or too little, too late, the wrong diagnosis, the unrecognized trigger, and the failure to refer).**
+## The mechanism {#def-mechanism}
+
+::: definition Anaphylaxis {#def-anaphylaxis}
+**Anaphylaxis** is a serious, systemic hypersensitivity reaction that is usually rapid in onset and may cause death. Severe anaphylaxis is characterised by potentially life-threatening compromise of the **airway**, **breathing** and/or **circulation**, and may occur without typical skin features or circulatory shock being present.
+
+Most reactions are **IgE-mediated** (allergic): a previously sensitised person has IgE antibodies to the trigger bound to the high-affinity IgE receptors (FcεRI) on mast cells and basophils, and re-exposure cross-links them, causing rapid release of mediators. Some reactions are **non-IgE-mediated**, through direct mast cell activation (for example via the MRGPRX2 receptor by some drugs), complement activation or other pathways; they are clinically indistinguishable and treated the same way.
 :::
 
-## The diagnosis
+The mediators explain the clinical picture. **Histamine**, released within seconds from preformed granules, causes vasodilatation, increased vascular permeability, itching and smooth muscle contraction. **Tryptase**, also preformed, is a marker of mast cell activation. Newly synthesised **leukotrienes** and **prostaglandins** cause prolonged bronchoconstriction and vascular leak, and **platelet-activating factor** contributes to hypotension and is linked to the severity of reactions. In severe anaphylaxis, up to a third or more of the circulating plasma volume can move into the tissues within minutes, causing distributive and hypovolaemic shock at once.
 
-::: definition Recognition, criteria and the mimics {#def-recognition}
-**The criteria (the World-Allergy-Organization-and-NICE-and-Resuscitation-Council-era-practical-definition: acute onset of minutes-to-hours with involvement of skin-mucosa (the universal urticaria-flush-angioedema-itch-or-lump-and-throat-tightness-opening) PLUS at least one of breathing compromise (the wheeze-stridor-hypoxaemia-bradycardia-adjacent-hypoxia-death-sign) or circulatory compromise (the hypotension-and-collapse-and-the-'I-feel-like-I'm-going-to-die'-cardiac-output-warning) or, after known-allergen-exposure, the gut alone counts - and the honest addendum that severe reactions can begin with just one system and without any skin signs (the faint-with-hives-then-arrest and the perioperative 'the ETCO2 fell and the BP followed' first-signs-in-an-anaesthetised-patient version which is why anaesthesia protocols treat unexplained intraoperative collapse as anaphylaxis-with-the-workup-afterwards); the grading systems (the Ring-and-Messer and the Brown and the WAO severity classifications with their 'grading is retrospective and treatment is not' caveat - the patient who is 'only' grade 2 at minute one decides whether she is grade 4 at minute ten) and the timing fingerprints (the IgE food reactions usually minutes to 30 minutes and the drug and perioperative within minutes of exposure and the Alpha-gal and some tick-associated meat syndromes at 3-6 hours which is how they escape food-diary detection and the exercise-dependent cases arriving at the park not the restaurant); the differential that matters because the treatments are opposite in three of them (the vasovagal faint with bradycardia and pale calm skin which is the most-common-adrenaline-given-in-error and the correct answer is lying-flat-and-fluids-and-no-adrenaline-unless-circulation-truly-fails (the intramuscular-adrenaline-in-a-vagal-episode-is-miserable-but-not-usentially-lethal-in-the-young-and-the-judgment-call-belongs-to-someone-who-has-seen-both); the acute severe asthma where adrenaline is not first-line and the inhaled bronchodilator-and-steroid-and-oxygen-and-magnesium protocol with the recognition that asthma-and-anaphylaxis-coexist-in-the-same-attack (the postural-drop-and-hives-and-food-history decide it); hereditary and ACE-inhibitor bradykinin angioedema (no urticaria, no itch, slow-evolving swelling, abdominal attacks, family or drug history, and the C4-and-C1-esterase-inhibitor-deficiency-testing-and-icatibant-or-C1-inhibitor-concentrate-or-ecallantide-adjacent-specific-medicines-which-do-not-work-on-histamine-and-vice-versa and the airway-surgery-anaesthesia-warnings); the other mimics (the panic-and-hyperventilation-with-normal-observations-and-the-carcinoid-and-phaoeochromocytoma-and-medullary-thyroid-carcinoma-flushing-syndromes-and-the-scombroid-fish-histamine-poisoning-which-is-anaphylaxis-by-another-route-treated-with-the-same-adrenaline-and-antihistamines-and-the-superior-vena-cava-and-vasovagal-and-syncope-from-any-cause-differential-where-a-blood-pressure-and-a-saturation-and-a-skin-inspection-separate-the-conditions-in-60-seconds); and the investigation that documents the mechanism (the mast-cell-tryptase: the elevated acute sample at 1-2 hours-with-the-24-hour-or-weekly-baseline-sample-mandatory-because-a-'normal-tryptase'-without-a-baseline-misses-mastocytosis-and-the-value-of-a-rising-acute-sample-over-baseline-confirmed-the-diagnosis-when-the-clinics-are-ambiguous-and-the-negative-tryptase-does-not-exclude-because-food-reactions-release-less-than-drug-and-venom-reactions-and-the-timing-is-everything) and the follow-up allergy workup (the skin-prick and specific IgE and component diagnostics (the Ara-h2-and-Bet-v1-and-Cor-a-9-style-molecular-programs-which-decide-who-actually-avoids-peanut-versus-whose-positive-Blood-test-is-past-sensitisation) and the challenge-tests-and-basophil-activation-tests-and-the-mastocytosis-workup-with-the KIT-D816V-and-bone-marrow-and-mediate-symptoms-trajectory-and-the-'who-needs-an-adrenaline-auto-injector-versus-a-steroid-prednisolone-course-and-a-spring-allergy-clinic-slot'-decisions-which-are-the-actual-reason-the-emergency-physician's-referral-matters).**
+Common triggers differ by age:
+
+- **Foods** are the commonest trigger in children and young adults: peanut, tree nuts, milk, egg, sesame, fish and shellfish.
+- **Drugs** are the commonest trigger in adults and the commonest cause of fatal anaphylaxis in the UK: antibiotics (especially beta-lactams), neuromuscular blocking agents and chlorhexidine during anaesthesia, NSAIDs, and radiological contrast media.
+- **Venom** from wasp and bee stings.
+- **Idiopathic** anaphylaxis, where no trigger is found, which should prompt testing for a mast cell disorder.
+
+Cofactors make reactions more likely or more severe: exercise, alcohol, NSAIDs, fever, menstruation and lack of sleep. In **food-dependent exercise-induced anaphylaxis**, a food (classically wheat) is tolerated at rest but causes anaphylaxis when followed by exercise. Fatal food reactions are more likely in adolescents and young adults, in people with asthma (particularly if poorly controlled), and when adrenaline is delayed.
+
+::: theorem Why adrenaline is the treatment {#thm-adrenaline}
+Adrenaline is the only first-line drug for anaphylaxis because it counteracts all of the main mechanisms of the reaction at once:
+
+- **α₁-adrenoceptor** agonism causes vasoconstriction, raising blood pressure and reducing mucosal oedema (including laryngeal oedema);
+- **β₁** agonism increases heart rate and contractility;
+- **β₂** agonism causes bronchodilatation and **reduces further mediator release** from mast cells.
 :::
 
-## The treatment
-
-::: definition Management: adrenaline, fluids, refractory anaphylaxis and the after {#def-management}
-**The first minute (the recognition-and-positioning-seconds-that-save-lives: stop-the-trigger (the infusion-clamped-the-venom-stinger-scraped-not-squeezed-the-food-spit-out) and call-for-help-and-lie-flat-with-legs-up (the dead-from-sitting-up-syndrome: the empty-ventricle-sudden-death-of-the-sitting-or-standing-anaphylactic-patient which the Resuscitation-Council-and-EAACI-position-warning-makes-a-bold-facility-design-lesson) and adrenaline (epinephrine) intramuscularly into the mid-anterolateral-thigh - the drug that reverses the pathophysiology molecule-by-molecule (the alpha-1 tone for the vessels and oedema, the beta-1 inotropy and chronotropy, the beta-2 bronchodilation and mast-cell-stabilisation and the reason antihistamines and steroids cannot substitute); the dose grammar (the adult 500 micrograms IM of the 1-in-1000 with the 10-microgram-per-kg-paediatric-scaled-dose-and-the-1-in-10000-intravenous-route-reserved-for-diluted-titrated-use-by-the-resuscitation-team-in-arrest-or-near-arrest-with-the-'IM-early-IV-carefully'-rule-that-keeps-people-alive-and-the-repetition-every-5-minutes-as-needed-because-underdosing-and-delay-are-the-actual-fatality-variables); the next ten minutes (the high-flow-oxygen-and-nebulised-salbutamol-for-the-wheeze-and-adrenaline-adjacent-epinephrine-continuation-and-the-large-fluid-boluses-of-crystalloid-because-40-percent-of-the-volume-leaves-the-circulation-in-10-minutes-and-the-epinephrine-infusion-for-refractory-shock-which-is-a-ICU-phone-call-now-not-a-ward-decision-later-with-glucagon-for-the-beta-blocked-patient-whose-adrenaline-cannot-get-a-receptor-and-the-consideration-of-methylene-blue-or-vasopressin-in-the-specialist-refractory-case-lists); the adjuncts honestly (the antihistamines-and-steroids-as-the-second-line-comfort-medicines-with-uncertain-effect-on-the-reaction-itself-and-the-steroids-not-relieving-the-biphasic-risk-proven-anyway-which-is-why-they-follow-adrenaline-instead-of-replacing-it and the 'never let the antihistamine delay the adrenaline' line on every anaphylaxis poster ever printed); the refractory and ICU phase (the differential re-check (was it anaphylaxis at all - the tamponade-and-tension-pneumothorax-and-PE-and-adrenal-crisis-shock-mimics-re-screened), the adrenaline-infusion-and-arterial-line-and-ventilation-strategy-for-the-swelling-airway-with-the-'intubate-early-awake-if-possible-or-surgical-airway-planned'-decision-and-the-ICU-observation-for-severe-reactions-and-the-vasopressor-weaning-when-the-leak-seals-which-usually-happens-in-hours-because-that-is-what-makes-this-reversible); the observation and biphasic decision (the second-wave-of-symptoms-without-re-exposure-in-a-minority-of-severe-cases-peaking-within-hours-and-the-admission-for-6-plus-hours-for-severe-or-multi-system-or-late-presenting-reactions-and-the-'sent-home-after-two-hours'-cases-in-every-coroner's-file-and-the-discharge-competency-that-the-observed-recovered-patient-gets-the-adrenaline-prescription-and-training); and the after (the adrenaline-auto-injector-prescription-with-the-teach-back-with-the-trainer-device-and-the-'two-doses-carry-them-both-and-show-everyone-who-looks-after-you'-culture-and-the-trigger-investigation-referral-to-allergy-with-the-tryptase-results-attached-and-the-avoidance-and-label-reading-and-cofactor-counselling-and-the-venom-immunotherapy-for-sting-anaphylaxis-which-is-a-cure-with-95-percent-plus-protection-for-venom-and-the-medical-record-flag-and-school-and-workplace-plans-and-the-anaphylaxis-action-plan-on-a-card-and-the-pregnancy-and-driving-and-adventure-insurance-questions-answered-because-epinephrine-decides-those-and-the-register-and-epidemiology-loop-where-the-UK-and-Australian-and-Nordic-fatality-and-severity-registries-keep-producing-the-same-preventable-factors-and-the-only-cure-in-the-chapter-is-the-followup-clinic-that-calls-back).**
+::: proof
+The deadly features of anaphylaxis are upper airway obstruction from laryngeal oedema, bronchospasm, and shock from vasodilatation and capillary leak. Antihistamines block only H₁ receptors, so they relieve itch and urticaria but act slowly and have no effect on the leukotriene- and PAF-driven components or on established bronchospasm and shock. Corticosteroids take hours to act. Adrenaline acts within minutes on the end organs (vessels, bronchi, heart) whatever the mediator, and its β₂ action, by raising cyclic AMP in mast cells, damps the release of more mediator. The intramuscular route is preferred to subcutaneous because absorption from muscle is faster and more reliable, and to intravenous bolus because IV bolus adrenaline causes dangerous hypertension and arrhythmias in a patient who still has a circulation.
 :::
+
+## Recognition {#def-recognition}
+
+::: definition Diagnostic criteria for anaphylaxis (WAO 2020) {#def-criteria}
+The World Allergy Organization (2020) criteria state that anaphylaxis is highly likely when either of the following is fulfilled:
+
+1. **Acute onset** of an illness (minutes to several hours) with involvement of the **skin and/or mucosa** (generalised hives, itch or flushing, swollen lips, tongue or uvula) **and at least one of**: respiratory compromise (breathlessness, wheeze, stridor, hypoxaemia); reduced blood pressure or associated symptoms of end-organ dysfunction (collapse, syncope, incontinence); or severe gastrointestinal symptoms (severe crampy abdominal pain, repetitive vomiting), especially after exposure to a non-food allergen.
+2. **Acute onset of hypotension, bronchospasm or laryngeal involvement** after exposure to a known or highly probable allergen for that patient (minutes to several hours), **even without typical skin involvement**.
+:::
+
+The RCUK guideline expresses the same idea for rapid use: anaphylaxis is likely when there is a sudden onset and rapid progression of symptoms, **life-threatening airway and/or breathing and/or circulation problems**, and usually skin and mucosal changes. The A, B and C problems are:
+
+- **Airway**: swelling of the throat and tongue, difficulty swallowing or breathing, hoarse voice, stridor.
+- **Breathing**: shortness of breath, wheeze, persistent cough, tiredness from effort, confusion from hypoxia, cyanosis, respiratory arrest.
+- **Circulation**: signs of shock (pale, clammy, tachycardic, hypotensive), dizziness, collapse, reduced consciousness, cardiac arrest.
+
+Skin changes are absent in up to about a fifth of cases, especially when the presentation is circulatory collapse, and they may be hard to see in people with darker skin, where urticaria may look raised but not red and flushing may not be visible. Look closely at the lips, mouth, eyes and palms, and ask the patient about itching.
+
+### Mimics
+
+Several conditions can resemble anaphylaxis:
+
+| Condition | How it differs |
+|---|---|
+| **Vasovagal syncope** | Pallor, sweating, nausea and **bradycardia**, with rapid recovery on lying flat; no urticaria, wheeze or angio-oedema |
+| **Acute asthma** | Wheeze without skin features, hypotension or a trigger exposure; but anaphylaxis can present as bronchospasm in people with asthma |
+| **Panic attack** | Breathlessness, tingling and tachycardia, without hypotension, hypoxaemia, wheeze or urticaria (flushing can occur) |
+| **Generalised urticaria or isolated angio-oedema** | Skin and mucosal features without airway, breathing or circulation compromise |
+| **Bradykinin-mediated angio-oedema** (ACE inhibitors, hereditary angio-oedema) | Swelling without urticaria or itch; does not respond reliably to adrenaline |
+| **Septic shock, scombroid fish poisoning, flushing syndromes** | Different context; scombroid causes flushing and headache after eating spoiled fish, from histamine in the fish |
+
+If in doubt, give adrenaline. The harms of IM adrenaline in an adult without anaphylaxis are small; the harms of withholding it in anaphylaxis can be fatal.
+
+## Emergency treatment {#def-management}
+
+::: algorithm Emergency treatment of anaphylaxis (RCUK 2021) {#def-algorithm}
+1. **Recognise** anaphylaxis using ABCDE, call for help, and **remove the trigger** if possible (stop an infusion; do not try to squeeze out a sting, flick it off).
+2. **Position**: lie the patient flat with legs raised if hypotensive; let them sit up if breathing is difficult (but not stand or walk); place in the recovery position if unconscious and breathing. Sudden standing or sitting upright can cause fatal cardiovascular collapse ("empty ventricle").
+3. **Give intramuscular adrenaline** (1 mg/mL, i.e. 1:1000) into the **anterolateral thigh**:
+   - adults and children over 12 years: **500 micrograms (0.5 mL)**;
+   - children 6–12 years: **300 micrograms (0.3 mL)**;
+   - children 6 months to 6 years: **150 micrograms (0.15 mL)**;
+   - infants under 6 months: **100–150 micrograms (0.1–0.15 mL)**.
+4. **Repeat IM adrenaline after 5 minutes** if A, B or C problems persist.
+5. **High-flow oxygen**, monitoring (pulse oximetry, ECG, blood pressure), IV access.
+6. **IV fluid bolus** for circulatory problems: 500–1,000 mL crystalloid in adults (10 mL/kg in children).
+7. If A, B or C problems persist after **two doses of IM adrenaline**, treat as **refractory anaphylaxis**.
+8. In cardiac arrest, start CPR and follow the ALS algorithm.
+:::
+
+Some points are often misunderstood:
+
+- **Antihistamines are not first-line.** RCUK 2021 removed chlorphenamine from the emergency algorithm. A non-sedating oral antihistamine can be given after the patient is stabilised, for skin symptoms.
+- **Corticosteroids are no longer given routinely.** There is no good evidence that they prevent biphasic reactions. They may be given after initial resuscitation for refractory reactions or ongoing asthma or shock.
+- **Inhaled bronchodilators** help persistent wheeze after adrenaline, as in asthma, but do not replace it.
+- IV adrenaline is given **only by experienced specialists**, as an infusion, in a monitored setting (except during cardiac arrest, when the ALS dose of 1 mg IV is used).
+
+::: definition Refractory anaphylaxis {#def-refractory}
+**Refractory anaphylaxis** is anaphylaxis with respiratory and/or cardiovascular problems that persist despite **two appropriate doses of IM adrenaline**. Management (with early critical care involvement) is:
+
+- continue IM adrenaline every 5 minutes until a **low-dose IV adrenaline infusion** is started by experienced staff;
+- give rapid IV fluid boluses (shock is partly hypovolaemic);
+- manage the airway early if obstruction is progressing;
+- consider alternative vasopressors (noradrenaline, vasopressin, metaraminol) for persistent shock and **glucagon** in patients taking beta-blockers, which can make anaphylaxis resistant to adrenaline;
+- consider nebulised adrenaline for upper airway obstruction and bronchodilators for bronchospasm, alongside, not instead of, systemic adrenaline.
+:::
+
+::: warning Giving adrenaline late, or in the wrong place
+The commonest errors in anaphylaxis are delayed adrenaline (waiting to see whether antihistamines work, or not recognising anaphylaxis without a rash), the wrong route (subcutaneous, or an IV bolus of 1 mg/mL adrenaline intended for IM use, which can cause fatal arrhythmias and hypertension), and the wrong posture (sitting or standing a hypotensive patient). Adrenaline should be given early, intramuscularly into the thigh, with the patient lying down.
+:::
+
+## After the emergency {#sec-after}
+
+### Observation
+
+Anaphylaxis can recur after apparent recovery, a **biphasic reaction**, usually within 12 hours. The RCUK guideline (2021) uses a risk-stratified period of observation after symptoms resolve:
+
+- at least **2 hours** for patients with a good response to a single dose of adrenaline given within 30 minutes of the reaction, who have been given two adrenaline auto-injectors and trained to use them, and have adequate supervision;
+- at least **6 hours** for patients who needed two doses of IM adrenaline, or who had a previous biphasic reaction;
+- at least **12 hours** for patients with a severe reaction needing more than two doses of adrenaline, patients with severe asthma or a severe respiratory component, those in whom the trigger may still be being absorbed (for example slow-release drugs), those presenting late at night, and those in areas where emergency care may be hard to reach.
+
+Children are usually admitted under a paediatric team (NICE CG134).
+
+### Mast cell tryptase
+
+Serum **mast cell tryptase** helps confirm that a reaction was anaphylaxis, which is particularly useful when the diagnosis is uncertain (for example during anaesthesia). Tryptase peaks about 1–2 hours after the onset of symptoms and has a half-life of about 2 hours.
+
+::: definition Tryptase sampling and interpretation {#def-tryptase}
+Following UK guidance (NICE CG134 and RCUK), blood for tryptase is taken:
+
+1. as soon as feasible after emergency treatment has started (without delaying resuscitation);
+2. a second sample ideally within **1–2 hours** (and no later than 4 hours) from the onset of symptoms;
+3. a **baseline** sample at least 24 hours after complete recovery (or at follow-up in an allergy clinic).
+
+A rise is regarded as significant if the peak exceeds **(1.2 × baseline) + 2 ng/mL** (the "20% + 2" rule). A normal tryptase does not exclude anaphylaxis, particularly in food reactions. A raised baseline suggests a mast cell disorder or hereditary alpha-tryptasaemia.
+:::
+
+::: widget plot
+f: 5 + 20*(x/1.5)*exp(1-x/1.5); 5
+x: 0, 12
+y: 0, 30
+labels: \text{serum tryptase (ng/mL)}; \text{baseline}
+caption: A simplified, illustrative tryptase curve after anaphylaxis starting at time 0 (hours on the horizontal axis). The level peaks at around 1–2 hours and falls back towards baseline over the following hours, which is why the second sample is taken within 1–2 hours of onset and the baseline sample at least 24 hours after recovery. The numbers are not clinical reference values.
+:::
+
+### Discharge and follow-up
+
+Before going home, every patient who has had anaphylaxis should, following NICE CG134 and RCUK guidance:
+
+- be referred to a **specialist allergy service** to identify the trigger;
+- be given **two adrenaline auto-injectors** (UK regulatory advice is that people prescribed auto-injectors should carry two at all times), and be trained in how and when to use them, ideally with a trainer device;
+- receive written information about anaphylaxis, avoidance of the suspected trigger, and an emergency action plan;
+- have a review of other medicines and conditions, such as poorly controlled asthma and beta-blocker or ACE inhibitor use, which may make reactions more severe or harder to treat;
+- be told about patient support organisations.
+
+Venom immunotherapy greatly reduces the risk of severe reactions to future stings in people with systemic reactions to wasp or bee venom, and oral immunotherapy for peanut allergy is available for some children through specialist services.
+
+## Angio-oedema without urticaria {#sec-angioedema}
+
+**Angio-oedema** is swelling of the deeper layers of the skin or mucosa, often of the lips, tongue, face, genitals or bowel wall. Most cases accompany urticaria and are histamine-mediated, responding to antihistamines and, if part of anaphylaxis, to adrenaline. Angio-oedema **without urticaria or itch** suggests a **bradykinin-mediated** cause:
+
+- **ACE inhibitor-induced angio-oedema**: ACE breaks down bradykinin, so inhibition raises its levels. It can occur at any time, even after years of treatment, and is more common in people of Black African or Caribbean descent. The ACE inhibitor must be stopped permanently and an alternative chosen.
+- **Hereditary angio-oedema (HAE)**: an autosomal dominant deficiency or dysfunction of C1-esterase inhibitor, causing recurrent swelling of the skin, abdominal attacks and potentially fatal laryngeal swelling. Attacks are treated with **C1-esterase inhibitor concentrate** or the bradykinin B2 receptor antagonist **icatibant**. Complement C4 is low.
+
+Bradykinin-mediated angio-oedema does not respond reliably to adrenaline, antihistamines or steroids, but adrenaline is still given if anaphylaxis cannot be excluded. The priority is the airway: early senior anaesthetic and ENT involvement, with preparation for a difficult airway.
+
+## Acute severe asthma {#sec-asthma}
+
+Asthma and anaphylaxis overlap: asthma is a risk factor for fatal anaphylaxis, and both present with wheeze and breathlessness. Acute asthma in adults is managed in the UK according to the BTS/SIGN guideline (2019); the joint BTS, NICE and SIGN guideline of 2024 covers the diagnosis and long-term management of asthma.
+
+::: definition Severity of acute asthma in adults (BTS/SIGN) {#def-asthma}
+- **Moderate**: increasing symptoms; peak expiratory flow (PEF) more than 50–75% of best or predicted; no features of acute severe asthma.
+- **Acute severe**: any one of PEF 33–50% of best or predicted; respiratory rate 25/min or more; heart rate 110/min or more; inability to complete sentences in one breath.
+- **Life-threatening**: in a patient with severe asthma, any one of PEF below 33%; SpO₂ below 92%; PaO₂ below 8 kPa; **normal PaCO₂ (4.6–6.0 kPa)**; silent chest; cyanosis; poor respiratory effort; arrhythmia; exhaustion; altered conscious level; hypotension.
+- **Near-fatal**: raised PaCO₂ and/or the need for mechanical ventilation with raised inflation pressures.
+:::
+
+Treatment follows ABCDE: oxygen to a target SpO₂ of 94–98%; nebulised **salbutamol** (oxygen-driven), repeated or back-to-back in severe attacks, with nebulised **ipratropium** added in severe or life-threatening asthma; **corticosteroids** (oral prednisolone, or IV hydrocortisone if oral is not possible) for at least five days; a single dose of IV **magnesium sulphate** in acute severe asthma that has not responded to initial bronchodilators; and early senior and critical care review for life-threatening features. A blood gas is needed if SpO₂ is below 92% or there are life-threatening features. Intubation in severe asthma is a high-risk procedure performed by an experienced anaesthetist, and ventilation must allow enough time for expiration to prevent dynamic hyperinflation. Chronic management is covered in [[respiratory/asthma-copd]].
+
+## Worked cases
 
 ::: example The peanut at the party {#ex-peanut}
-A 14-year-old with known peanut allergy eats a biscuit, develops widespread hives, vomiting, wheeze and says 'my throat is closing'; her mother gives oral antihistamine and salbutamol; 20 minutes later an ambulance is called; on arrival BP 78/40, drowsy; the school's auto-injector 'we were told not to use it unless sure'.
+A 16-year-old boy with known peanut allergy and asthma eats a cake at a party. Within 15 minutes he has an itchy rash, swollen lips, a hoarse voice and wheeze. Friends sit him on a chair. When paramedics arrive, his SpO₂ is 89%, pulse 132/min and BP 80/48 mmHg. He did not bring his auto-injectors. Describe the management.
 ::: solution
-**A-death-rehearsal-with-three-fixable-errors ([[#def-management]], [[#def-recognition]]): the errors - 'anaphylaxis-with-two-system-involved-called-and-adrenaline-not-given: the antihistamine-treats-the-skin-and-the-salbutamol-the-wheeze-and-neither-touches-the-vasodilation-and-leak-and-the-'not-sure'-paralysis-in-the-school-policy-is-exactly-what-the-guidelines-abolish-by-stating-treat-if-in-doubt-in-a-known-allergic-with-breathing-or-circulation-signs; the resuscitation - 'adrenaline-500-micrograms-IM-now-and-repeat-every-5-minutes-to-effect (the-lying-flat-with-legs-raised-and-high-flow-oxygen-and-fluids-20-ml-per-kg-boluses-and-nebulised-salbutamol-added-and-the-adrenaline-infusion-and-ICU-for-the-refractory and the-steroids-and-chlorphenamine-after-adrenaline-not-instead-and-the-tryptase-samples-timed-1-2-hours-plus-baseline-in-a-week-which-the-admission-did-not-order-first-time-because-that-too-is-a-findings-list-item); the disposition - 'the-6-plus-hour-observation-for-a-severe-multisystem-attack-with-the-biphasic-risk-and-the-asthma-comorbidity-optimisation-because-her-friends'-hospital-is-now-a-paediatric-allergy-referral-urgency (the component-diagnosis-and-oral-food-challenge-plan-and-the-school-and-club-action-plans-rewritten-with-the-parent-not-the-child-being-embarrassed-and-the-second-auto-injector-carried-by-the-child-herself-because-adolescents-are-the-highest-risk-group-for-fatal-anaphylaxis-and-the-courage-question-is-what-kills-them); and the systems fix - 'the-school-medicine-policy-that-says-'if-in-doubt-give-it'-with-training-for-all-staff-and-no-single-responsible-adult-and-the-emergency-medicine's-copy-of-her-plan-in-the-record-and-the-death-review-committees-around-the-world-that-have-been-saying-the-same-two-sentences-since-1992: adrenaline early, refer afterwards.'**
+He meets the criteria for **anaphylaxis**: rapid onset after exposure to a known allergen, skin and mucosal features, and airway (hoarseness), breathing (wheeze, hypoxaemia) and circulation (hypotension) problems. He has two risk factors for a fatal reaction: adolescence and asthma.
+
+1. **Lie him flat** with legs raised; he may sit up slightly if breathing is very difficult, but must not stand.
+2. **IM adrenaline 500 micrograms** (0.5 mL of 1 mg/mL) into the anterolateral thigh, immediately.
+3. High-flow oxygen; monitoring; IV access and a 500–1,000 mL crystalloid bolus for hypotension.
+4. **Repeat IM adrenaline after 5 minutes** if there is no improvement; if A, B or C problems persist after two doses, treat as refractory anaphylaxis with IV adrenaline infusion by experienced staff.
+5. Nebulised salbutamol for persistent wheeze, after adrenaline.
+6. In hospital: tryptase samples, observation for at least 6 hours if two doses were needed (12 hours if more, or given his severe respiratory involvement), then two auto-injectors with training, an allergy referral and a review of his asthma control.
+
+Sitting him upright was dangerous: it can cause collapse from reduced venous return.
 :::
 :::
 
-::: example The collapse after induction {#ex-anaesthetic}
-Ten minutes after propofol, fentanyl and rocuronium for a routine hernia, the anaesthetist reports impossible ventilation, ETCO2 falling to near zero, BP 55/30, and a flush under the surgical drape the surgeon only now notices.
+::: example Collapse after induction of anaesthesia {#ex-anaesthetic}
+A 52-year-old woman is anaesthetised for elective surgery. Within 3 minutes of receiving co-amoxiclav and a neuromuscular blocking agent, her blood pressure falls from 128/78 to 56/30 mmHg, her heart rate rises to 140/min, and the ventilator pressures rise. No rash is visible under the drapes. What is the diagnosis and the approach?
 ::: solution
-**Perioperative-anaphylaxis-executed ([[#def-mechanism]], [[#def-management]]): the minutes - 'declare-it-and-treat-it ("this is anaphylaxis until proven otherwise"), stop-and-document-all-recent-administered-agents-with-times (the trigger list: the neuromuscular blocker first with the chlorhexidine-on-the-skin-and-the-latex-gloves-and-the-antibiotic-timing-to-be-separated), adrenaline-IV-in-titrated-boluses-for-the-collapsed-ventilated-under-general-anaesthesia-patient-(the-50-microgram-escalating-or-100-1000-microgram-for-severe-shock-per-the-association-of-anaesthetists-guidance-with-the-IM-route-for-the-less-monitored-settings-restated-because-IV-adrenaline-is-a-resuscitation-doctor-skill-not-a-reflex) and call-for-senior-help-and-the-difficult-airway-trolley-because-the-airway-swells-and-100-percent-oxygen-and-massive-fluids-for-the-capillary-leak-and-the-vasopressor-infusion-and-consider-glucagon-and-asthma-protocol-adjacent-therapy-for-the-bronchospasm-that-does-not-release; the operating decision - 'surgery-stop-if-finishable-later-vs-complete-if-stopping-is-dangerous-with-the-surgeon-declaring-and-the-ICU-destination-decided-in-the-same-breath; the after - 'the-tryptase-samples-at-1-2-hours-and-baseline-at-24h-plus and the urgent allergy-referral-with-the-time-documented-drug-list-for-the-skin-prick-and-specific-IgE-and-SAFE-like-testing-and-the-causative-agent-labelled-in-the-notes-as-'avoid'/'investigated'/'unknown'-with-the-medical-alert-bracelet-culture-for-the-confirmed-NMBA-or-latex-or-chlorhexidine-who-will-face-anaesthesia-again-someday-because-anaesthetic-anaphylaxis-recurs-most-often-when-the-workup-did-not-happen-and-the-report-to-the-national-anaphylaxis-vigilance-registration-which-is-how-the-next-hospital's-formulary-changes.'**
+This is **perioperative anaphylaxis** until proven otherwise: severe hypotension and bronchospasm within minutes of drugs commonly responsible (antibiotics, neuromuscular blockers, chlorhexidine). Skin signs are often absent or hidden under drapes; criterion 2 of the WAO definition is met by hypotension and bronchospasm after exposure to a probable allergen.
+
+The anaesthetist calls for help, stops all possible triggers, gives 100% oxygen and, because she is in theatre with IV access and monitoring, gives **IV adrenaline** in small titrated boluses, as anaesthetic guidance allows for experienced staff, followed by an infusion if needed. Rapid IV fluids are given, and surgery is postponed if possible. If cardiac arrest occurs, ALS starts.
+
+Tryptase samples are taken at the times described in [[#def-tryptase]]. She is referred to a specialist perioperative allergy clinic; the UK Royal College of Anaesthetists' Sixth National Audit Project (NAP6, 2018) studied perioperative anaphylaxis and found antibiotics to be the commonest identified cause. All suspected drugs are recorded as possible allergens until testing is complete.
 :::
 :::
 
 ::: example The runner who collapsed twice {#ex-fdeia}
-A 27-year-old marathon trainee has twice collapsed after runs, once with urticaria and wheeze; both times after eating a new snack bar; episodes resolved with 'an allergic reaction' treatment; allergy clinic is booked for month eight; she plans a half-marathon next weekend and has stopped eating before runs.
+A 24-year-old woman has had two episodes of widespread urticaria, lip swelling and collapse while jogging, both times about 30 minutes after eating a sandwich. She eats bread most days without problems. What diagnosis should be considered, and how is it confirmed?
 ::: solution
-**Food-dependent-exercise-induced-anaphylaxis-(-FDEIA-)([[#def-mechanism]], [[#def-recognition]]): the pattern - 'the reaction requires the food AND the cofactor (exercise, NSAID, alcohol, heat, menstruation) within a few hours: neither alone provokes, which is why skin-prick and food diaries look contradictory and the ω5-gliadin-wheat-component connection is the classic teaching case; the workup - 'the careful timed history (the snack ingredients and the interval and the NSAID-or-alcohol use and the humidity), the specific IgE to the suspected food with components where available, and the supervised combined challenge (food-then-treadmill-in-a-resuscitation-capable-unit) which is the only way to prove and disprove it and the reason early allergy referral matters rather than month-eight; the management - 'adrenaline-auto-injectors-x2-with-training and the cofactor-avoidance-plan-that-actually-lets-her-run (food-withdrawal-before-exercise-is-crude-and-often-unnecessary-when-identified-precisely-with-the-allergist-and-NSAID-avoidance-timing-and-the-training-partner-who-carries-the-injector-and-knows-the-action-plan) and the pre-race-medical-declaration-question-answered-honestly-because-race-medic-teams-need-to-know-which-collapse-is-which and the discussion that FDEIA waxes and wanes and some patients outgrow it which supervised re-challenges-over-years-can-demonstrate; and the reason this example exists - 'she is the phenotype that dies: young, recurrent, self-managing, waiting for a clinic, stopping the wrong things (the carbohydrates) instead of the right combination, which is what the 40-week-wait costs in a preventable-death epidemiology.'**
+**Food-dependent exercise-induced anaphylaxis**, most often caused by **wheat** (sensitisation to omega-5 gliadin). The food is tolerated at rest; exercise (and other cofactors such as NSAIDs or alcohol) lowers the threshold for a reaction.
+
+She should be referred to an allergy clinic, where specific IgE to omega-5 gliadin and skin testing can support the diagnosis. Management is to avoid exercise for several hours after eating the trigger food (or to avoid the food before exercise), to carry two adrenaline auto-injectors, to exercise with a companion, and to stop exercising at the first symptom. A mast cell disorder is considered if the history is atypical.
 :::
 :::
 
-::: example The ACE-inhibitor lip {#ex-angioedema}
-A 62-year-old on ramipril presents with a swollen upper lip evolving over 18 hours, no itch, no rash, mild abdominal cramping last week; a locum gives adrenaline, hydrocortisone and chlorphenamine 'in case' and books 'allergy follow-up'.
+::: example The ACE inhibitor lip {#ex-angioedema}
+A 63-year-old Black British man taking ramipril for 4 years presents with a grossly swollen lower lip and tongue, developing over 3 hours. He has no rash, no itch, no wheeze and normal blood pressure. He can speak and swallow. What is the likely mechanism and the management?
 ::: solution
-**Bradykinin-not-histamine ([[#def-recognition]], [[cardiovascular/hypertension]]): the discrimination - 'slow-evolving-oedema-without-urticaria-or-pruritus-with-prior-abdominal-attacks-is-the-bradykinin-ACE-inhibitor-angioedema-and-it-can-progress-to-the-tongue-larynx-and-gut-and-the-fact-that-adrenaline-and-antihistamines-do-little-for-it-is-diagnostic-information-not-treatment-failure; the plan - 'stop-the-ACE-inhibitor-permanently-record-as-a-drug-reaction-not-'angioedema-unclear'-and-the-ARB-caution-and- DPP-4-inhibitor-and-sacubitril-adjacent-interaction-notes-and-the-airway-observation-decision-by-trajectory-and-anaesthetic-early-involvement-for-tongue-and-floor-of-mouth-progression (the awake-fibreoptic-or-surgical-airway-planning-not-serial-intubation-attempts), the specific-medicines-question (the icatibant and C1-inhibitor-concentrate and ecallantide evidence mainly from hereditary angioedema with uncertain ACE-inhibitor-trial results which is why 'supportive plus airway' remains the honest answer and the trial literature should be quoted to the family asking why nothing is shrinking it); the workup - 'the-C4-and-C1-inhibitor-level-and-function-and-the-hereditary-angioedema-types-I-II-and-normal-C1INH-variants-testing-especially-if-recurrent-or-family-history-because-HAE-type-I-hidden-in-'ACE-angioedema'-diagnoses-is-the-missed-diagnosis-with-lifelong-implications (triggers, contraception and oestrogen avoidance, pregnancy and dental-procedure planning, the C1-inhibitor-concentrate-and-lanadelumab-and-generous-prefilled-syringe-home-therapy-and-the-attacks-in-the-bowel-misdiagnosed-as-surgical-acute-abdomen-history) and the first-degree-relatives-screening-which-is-what-the-allergy-follow-up-should-actually-do; and the system point - 'the-locum's-'just-in-case'-adrenaline-teaches-the-chapter's-second-half: recognise the pathway before choosing the antagonist.'**
+**ACE inhibitor-induced angio-oedema**: swelling without urticaria or itch, in a person taking an ACE inhibitor (it can start after years of treatment, and is more common in people of Black African or Caribbean descent). The mechanism is **bradykinin accumulation**, not mast cell activation.
+
+1. **Airway first**: assess for stridor, voice change and drooling; involve senior anaesthetic and ENT colleagues early; prepare for a difficult airway (awake fibreoptic intubation or a surgical airway may be needed if it progresses).
+2. Because anaphylaxis cannot always be excluded, IM adrenaline may be given if there are any airway concerns, although its effect on bradykinin-mediated swelling is unreliable. Antihistamines and steroids are unlikely to help.
+3. **Stop the ACE inhibitor permanently**, document it as an adverse reaction, and choose an alternative antihypertensive. Angiotensin receptor blockers carry a small risk of recurrence and are used with caution after specialist advice.
+4. Observe until the swelling is clearly resolving; this may take 24–72 hours.
 :::
 :::
 
-::: exercise Manage the refractory reaction {level=2}
-A 45-year-old on atenolol for migraine has wasp-sting anaphylaxis: three IM adrenaline doses, BP still 70/40, wheeze improving; the ICU is ten minutes away. What changes because of the beta-blocker and what must you not do?
+::: example A child's dose {#ex-childdose}
+A 4-year-old girl weighing 17 kg develops stridor and urticaria after eating egg. Using RCUK age bands, what IM adrenaline dose and volume of 1 mg/mL adrenaline should be given?
 ::: solution
-**Beta-blocked-anaphylaxis ([[#def-management]], [[pharmacology/autonomic-drugs]]): the physiology - 'the atenolol blunts the beta-receptor targets adrenaline is stimulating, so the drug keeps working on the airways (beta-2 bronchodilation partly via spare receptors) while the circulation lags (the 'improving wheeze, stubborn shock' dissociation); what changes - 'give-glucagon-IV/IO (the 1-2 mg bolus-and-infusion that bypasses the receptor to raise cAMP directly - the antiarrhythmic-and-emetic side effects worth knowing before you push it) alongside continued adrenaline-with-a-low-threshold-for-a-titrated-IV-infusion-through-a-good-line rather than serial IM injections against a blocked periphery and generous fluids because the leak-and-pool physiology is additive and the-consideration-of-vasopressin-or-methylene-blue-in-hands-that-run-refractory-distribution-shock-protocols and-urgent-ICU-and-possibly-ECMO-in-the-never-recovering-while-continuing-to-question-the-diagnosis (the tension pneumothorax and adrenal and cardiac causes re-screened); what not to do - 'escalate-atropine-instead-of-adrenaline-thoughtfully-and-never-use-IV-pushing-undiluted-ampoules-in-panic-and-do-not-give-beta-blockers-back-and-do-not-diagnose-'refractory'-before-checking-dose-and-route-and-cannula-patency which is where most 'adrenaline-resistant' cases actually live.'**
+For a child aged 6 months to 6 years, the dose is **150 micrograms**. At a concentration of 1 mg/mL (1,000 micrograms/mL), the volume is $150 / 1000 = 0.15$ mL, into the anterolateral thigh. The dose is repeated after 5 minutes if there is no improvement. The RCUK guideline uses age bands rather than exact weight so that the dose can be given quickly. Children's auto-injectors come in fixed doses, and a specialist will choose the right one at follow-up.
 :::
 :::
-
-::: exercise Interpret the tryptase {level=2}
-Two anaphylaxis admissions: patient A acute tryptase 38 µg/L with a 24-hour baseline of 4; patient B acute 9 µg/L with baseline 8.5. Report both, and state the three mistakes in tryptase ordering.
-::: solution
-**Tryptase-with-manners ([[#def-recognition]]): the read - 'A: a significant acute rise over baseline confirms mast-cell activation consistent with anaphylaxis (the consensus acute-versus-baseline formula (roughly 1.2 times baseline plus 2 µg/L) is exceeded comfortably); B: no meaningful rise, which neither excludes anaphylaxis (food reactions and milder or early-sampled reactions release less; the timing matters most) nor explains the episode, so the clinical criteria stand and the differential re-opens; the three mistakes - 'sample-too-early-or-too-late (the 1-2-hour-with-a-7.5-hour-plus-exclusion-window-physiology and the forgotten baseline), no-baseline-sample-ordered-ever-which-misses-mastocytosis and hereditary alpha-tryptasaemia-and-makes-a-'normal'-result-meaningless-and-mistake-three - over-reading-a-single-mildly-elevated-baseline-which-is-commoner-than-anyone-admits (the KIT-D816V-and-hereditary-alpha-tryptasaemia-and-'baseline-above-8-asks-the-mastocytosis-question'-referral-culture that turns a lab number into a haematology-workup and venom-anaphylaxis-risk-stratification which is why the venom patient's baseline tryptase changes her immunotherapy counselling; and the record-keeping: the result with its timings travels with the referral because this test is worthless as a snapshot and precious as a pair.'**
-:::
-:::
-
-::: exercise Advise the school {level=1}
-A head teacher emails: 'Child X has nut allergy; staff are terrified of being blamed; we have one Epipen in the office and no policy.' Give the eight-point response that makes adults brave and children safe.
-::: solution
-**School-anaphylaxis-medicine ([[#def-management]]): the points - '1) individual healthcare plan with the child's photo, trigger list, symptom picture and stepwise adrenaline instruction signed by clinicians and parents together; 2) 'if in doubt, give it' written and countersigned by the medical director - guidelines and the law in most jurisdictions protect reasonable emergency administration and the fear of blame is answered on paper before the first incident; 3) stock adrenaline auto-injectors with two available at all times plus the child's own where prescribed, in-date-tracked and stored out of lockboxes nobody can open fast; 4) every-staff annual hands-on training with trainers and a register, including lunchtime and sports and bus supervisors because incidents happen off-timetable; 5) the no-single-responsible-adult rule (rosters that cover trips, sick days and SAT weeks); 6) inclusion not quarantine: careful risk-managed shared tables, not a nut-free theatre that stigmatises, with food-technology and party policies written from the evidence not the panic; 7) the emergency-services and parent notification routes and the practice-drill that finds the policy's holes before an incident does; 8) the review date with the allergy team, because children's diagnosis, dosage and courage all change by year group and the plan written in Year 2 that is still in the drawer in Year 7 is the anaphylaxis-death-in-the-education-systems-coroner's-report-in-one-sentence.**
-:::
-:::
-
-::: exercise Handle the venom patient {level=2}
-A 52-year-old beekeeper survives a mass-sting anaphylaxis with hypotension and wheeze, recovered in six hours; he declines 'the injections' at referral because 'I was fine by morning'. What does he not know, and what is your argument?
-::: solution
-**Venom-anaphylaxis-and-the-cure-nobody-picks-up ([[#def-mechanism]], [[#def-management]], [[immunology/hypersensitivity]]): what he does not know - 'Hymenoptera-venom-anaphylaxis-recurs-in-a-substantial-fraction-of-untreated-similarly-sensitised-re-stings-with-circulatory-cases-most-at-risk (the studies that built venom-immunotherapy's-evidence show dramatic recurrence reduction - the 90-95-percent-plus protection for wasp and the high-but-not-absolute for bee - over three-to-five-years of maintenance which is why 'I was fine' is the most dangerous sentence in allergy follow-up) and his baseline tryptase-and-mastocytosis-screen-should-be-checked-because-clonal-mast-cell-disease-concentrates-in-venom-anaphylaxis-and-raises-severity-which-changes-the-risk-conversation-completely; the argument built his way - 'the-re-sting-exposure-is-occupational-and-guaranteed (his bees decide his next dose), the VIT-schedule (the rush-and-conventional-protocols and the maintenance injections and the adrenaline-continuation-counselling) with the adverse-reaction-and-adherence-honesty (the systemic-reaction-rate-during-build-up-and-the-pre-medication-adjacent-management-and-why-the-clinic-stays-30-minutes) and the alternative (lifelong-carrier-of-adrenaline-and-avoidance-and-a-career-question) and the shared decision if he still declines documented with the recurrence figures he was told; and the practical - 'the beekeeping-suit-and-early-leaving-apiary-advice-that-actually-matters-for-him-more-than-restaurant-labels and-the-tryptase-and-haematology-referral-if-the-baseline-was-high-and-the-occupational-health-and-insurance-and-driving-questions and the reminder for the service: the venom clinic with a nurse who phones the defaulters is the single-highest-yield-contact-in-preventive-allergy-medicine-because-this-man-was-decided-by-morning-and-the-literature-says-he-is-average.'**
-:::
-:::
-
 
 ::: quiz
-First-line treatment of anaphylaxis with hypotension is:
-- [ ] IV chlorphenamine and hydrocortisone
-- [ ] Nebulised salbutamol and observation
-- [x] Adrenaline (epinephrine) intramuscularly into the mid-outer thigh, repeated every 5 minutes as needed, with the patient lying flat and IV fluids
-- [ ] Oral antihistamine and discharge when the rash settles
+A 34-year-old man has generalised urticaria and lip swelling 20 minutes after taking amoxicillin. He is breathing comfortably with no wheeze, stridor or voice change, SpO₂ 98%, and BP 128/80 mmHg. What is the best description of this reaction?
+- [ ] Anaphylaxis requiring immediate IM adrenaline.
+- [x] An acute allergic reaction without features of anaphylaxis, which needs observation because it may progress.
+- [ ] Bradykinin-mediated angio-oedema.
+- [ ] A vasovagal reaction.
 ::: solution
-**Adrenaline is the only first-line drug; delay and underdosing are the dominant contributors to fatal outcomes, and positioning and volume replacement are part of the minute-one management - [[#def-management]].**
+He has skin and mucosal features but no airway, breathing or circulation compromise and no severe gastrointestinal symptoms, so he does not currently meet the criteria for anaphylaxis. He needs observation, a non-sedating antihistamine for the skin symptoms, adrenaline ready if he deteriorates, and the reaction recorded as a suspected penicillin allergy pending allergy assessment. The presence of urticaria and the timing after a drug make bradykinin-mediated angio-oedema unlikely.
 :::
 :::
 
-::: widget plot
-f: 100*exp(-(x-0)*0.35); 60; 4; 1; 50
-x: 0, 12
-y: 0, 100
-labels: \text{minutes from onset (illustrative)},\ \text{percent}\ \text{probability adrenaline reverses progression};\ \text{biphasic reaction risk band, severe attacks (scaled)};\ \text{case-fatality of treated anaphylaxis (scaled x100)};\ \text{urticaria-only reactions (do not delay adrenaline if systemic)}
-caption: Anaphylaxis is the most reversible shock and the least forgiving of delay ([[#def-mechanism]], [[#def-management]]).
+::: history
+In 1901, on a cruise organised by Prince Albert I of Monaco, the physiologists Charles Richet and Paul Portier studied the toxin of the Portuguese man-of-war. Back in Paris they found that dogs given a second, small dose of a sea anemone toxin weeks after a first dose collapsed and died within minutes. In 1902 they named the phenomenon **anaphylaxis**, "against protection", because the first exposure had made the animal more vulnerable instead of immune. Richet received the Nobel Prize in Physiology or Medicine in 1913. Adrenaline had been isolated as a pure substance in 1901 by Jōkichi Takamine. In 1921 Carl Prausnitz and Heinz Küstner showed that a factor in the serum of an allergic person could transfer sensitivity to another person's skin, and in 1966–67 Kimishige and Teruko Ishizaka in the USA, and independently Gunnar Johansson and Hans Bennich in Sweden, identified that factor as a new class of antibody, IgE.
 :::
 
 ## Where this leads
 
-The receptor pharmacology of adrenaline is in [[pharmacology/drug-receptor]] and [[pharmacology/autonomic-drugs]], the immunological mechanism in [[immunology/hypersensitivity]], perioperative triggers in [[surgery/anaesthesia-pain]], the food-allergy and paediatric context in [[paediatrics/acute-childhood-illness]], and poison-mimics in [[emergency-critical-care/poisoning]].
-
-::: history
-**Anaphylaxis's history begins with a word about dogs: the 1902-1903 work of Portier and Richet, who, attempting to immunise against sea-anemone venom on the scientific expedition of Prince Albert I of Monaco, found that re-exposure killed some animals dramatically instead of protecting them, naming the phenomenon ana-phylaxis - 'without protection' - and earning Richet the 1956 Nobel Prize while Portier, who had injected himself repeatedly, died in 1929 from his own experimental wasp-venom sensitisation, a death the field has never stopped citing. The twentieth century dissected the reaction: the Prausnitz-Küstner 1921 transfer experiment that proved a serum factor (recovered as IgE in 1966 by the Ishizakas) carried allergy's specificity; the mast cell and histamine pharmacology whose blockers made anaphylaxis's skin and gut symptoms treatable and its cardiovascular and airway components not; and Coca's and others' clinical taxonomy of the atopic syndromes. Then, in 1966, the treatment that changed everything arrived quietly: the work of the Resuscitation Council and Simons and Levine and the anaesthesia literature established intramuscular self-administered adrenaline as the intervention, and the EpiPen era that followed made it carryable, with anaphylaxis kits and school policies and the still-unsettled finding that the drug saves lives but too few people are willing to use it. The epidemiological turn came with the fatality registries: the UK's National Registry reports from the early 1990s onward and the Australian and US series and the French and Scandinavian studies that converged on the same portrait of deaths - food in the community, drugs and venoms perioperatively and out, adrenaline omitted or late, diagnosis wrong, referral absent - and the EAACI and WAO and Anaphylaxis Campaign guidelines of 2011-2021 that standardised definitions so incidence could be counted (a hundred-plusfold variation in reported rates showing that definitions, not biology, drove the numbers). Mast-cell biology supplies the modern chapter: the tryptase-era diagnosis (the 1980s assay), the hereditary and acquired angioedema separations (the C1-inhibitor story from the 1960s onward), the recognition of mastocytosis and clonal mast-cell disease hiding in 'idiopathic' and venom cases, and the Alpha-gal syndrome - the tick-associated, delayed, sugar-antigen meat allergy that began as a Southeastern US clinical oddity and became a global case study in how a novel allergy is discovered slowly (the veterinary and patient-advocacy leads and the lone-star-tick research and the 2010s-2020s map) - an allergy new enough that many clinicians still miss its 4-hour delay. Treatment innovation continues (the adrenaline infusion-pump and intranasal-delivery trials, the monoclonal-adjacent anti-IgE omalizumab for food-allergy desensitisation licensing of the 2020s and the venom-immunotherapy cure-rate literature since the 1911-1957 bee-venom lineage and the allergen-immunotherapy pipelines), while the core drug remains a century-old adrenal extract. The policy half of the history: the food-labelling campaigns from Denmark and Australia through the US FASTER Act, the school-medicine law waves from the USA's 'Ryan's law' states (named for a boy who died at a birthday party after a hidden ingredient) and the UK's Natasha-Edelman-and-Oliver-Leaf-adjacent-review-and-14-gram-rule debates, and the public-access adrenaline-auto-injector controversies in schools and restaurants which are democracy's way of legislating what the registries found.** - [[immunology/hypersensitivity]], [[pharmacology/autonomic-drugs]], [[public-health/prevention-promotion]].**
-:::
+The immunology of hypersensitivity reactions is in [[immunology/hypersensitivity]]; distributive shock in [[emergency-critical-care/shock-fluids]]; airway management in [[emergency-critical-care/airway-ventilation]]; cardiac arrest in anaphylaxis in [[emergency-critical-care/resuscitation]]; asthma in [[respiratory/asthma-copd]]; and drug allergy in [[pharmacology/adverse-reactions]].
 
 ::: summary
-- Anaphylaxis is mast-cell and basophil degranulation - usually IgE-mediated - causing simultaneous airway, circulatory, skin and gut failure; the diagnosis is clinical and the criteria (acute onset plus breathing or circulation or, post-exposure, gut) exist to stop hesitation.
-- Adrenaline intramuscularly in the mid-thigh, repeated every 5 minutes, is the only first-line treatment; lying flat with legs raised and early large-volume IV fluids treat the empty-circulation physiology; antihistamines and steroids are adjuncts that must never delay adrenaline.
-- The fatal phenotypes are delayed adrenaline, the asthmatic airway death and the cardiovascular adult collapse; the commonest errors across every registry are the same: not recognising, not injecting, not lying flat, not referring.
-- Three mimics change management: the vasovagal faint (no adrenaline, fluids and position), severe asthma (bronchodilator-first, but coexisting anaphylaxis gets adrenaline), and bradykinin angioedema (antihistamine- and adrenaline-resistant, specific medicines).
-- Tryptase with a baseline sample, allergy referral, auto-injector training with teach-back, written action plans, trigger-specific prevention (venom immunotherapy, drug labelling, food plans) and observation for biphasic reactions are the medicine after the medicine.
-- Anaphylaxis is highly recurrent and highly preventable: the follow-up clinic, the school and workplace plans, and the registers are where its mortality curve actually bends.
+- Anaphylaxis is a severe, rapid systemic hypersensitivity reaction with life-threatening airway, breathing or circulation problems, usually with skin and mucosal changes, which may be absent.
+- Adrenaline counteracts vasodilatation, bronchospasm and mediator release; it is the only first-line drug.
+- RCUK 2021: lie the patient flat, give IM adrenaline into the thigh (500 micrograms for adults and children over 12; 300 micrograms 6–12 years; 150 micrograms 6 months to 6 years), repeat after 5 minutes, give oxygen and fluids. Antihistamines and steroids are not first-line.
+- Refractory anaphylaxis (no response to two IM doses) needs a low-dose IV adrenaline infusion by experienced staff and critical care support.
+- Observe for 2, 6 or 12 hours depending on risk; take tryptase samples (soon after treatment, at 1–2 hours, and baseline after 24 hours; significant if peak > 1.2 × baseline + 2 ng/mL).
+- Discharge with two adrenaline auto-injectors, training, an action plan and allergy referral.
+- Angio-oedema without urticaria suggests a bradykinin-mediated cause (ACE inhibitors, hereditary angio-oedema) that responds poorly to adrenaline.
+- Acute severe asthma: PEF 33–50%, RR ≥25, HR ≥110 or inability to complete sentences; a normal PaCO₂ is a life-threatening feature.
 :::
 
 ## Exercises
 
-::: exercise Dose and sequence the adrenaline {level=1}
-Give the IM adrenaline dose (adult and paediatric) and the first-ten-minutes sequence for a 9-year-old, 28 kg, with peanut anaphylaxis: urticaria, stridor, HR 150, BP 80/50, on 100 percent oxygen already.
+::: exercise Tryptase threshold {level=1 check="9.2"}
+A patient's baseline tryptase is 6 ng/mL. Using the "20% + 2" rule, above what peak value (in ng/mL) is the acute rise regarded as significant?
 ::: solution
-**The-grammar ([[#def-management]]): dose - 'adrenaline (epinephrine) IM: adult 500 micrograms of 1-in-1000; paediatric 10 micrograms/kg (this child 280 micrograms - practically the 300 microgram auto-injector dose or 0.28 ml of 1-in-1000 drawn up), repeatable every 5 minutes as needed into the mid-outer thigh; sequence - 'stop-eating-lie-flat-with-legs-raised (stridor-and-hypotension-decide-posture-and-route: she must not sit to be comforted), call-for-anaesthetics-or-paediatric-critical-care-now-because-stridor-is-the-intubation-question-in-minutes-not-hours-and-100-percent-oxygen-with-nebulised-adrenaline-for-the-upper-airway-and-nebulised-salbutamol-if-wheeze-too-and-IV-access-with-20-ml-per-kg-fluid-boluses-repeated-and-IV-adrenaline-infusion-for-refractory-collapse-by-those-trained-for-it-and-the-observation-for-biphasic-admission-and-tryptase-samples-timed-1-2-hours-and-baseline-in-24h-plus-and-the-adrenaline-auto-injector-prescription-with-teach-back-for-both-parents-and-the-school-and-the-allergy-referral-and-the-asthma-control-check-that-is-actually-a-safety-check.**
+Threshold $= 1.2 \times 6 + 2 = 9.2$ ng/mL. A peak above this supports mast cell activation.
+:::
+:::
+
+::: exercise Adrenaline volume {level=1 check="0.3"}
+An 8-year-old boy has anaphylaxis. What volume (in mL) of 1 mg/mL adrenaline should be given intramuscularly according to RCUK 2021?
+::: solution
+For children aged 6–12 years, the dose is 300 micrograms. At 1,000 micrograms/mL this is $300 / 1000 = 0.3$ mL.
+:::
+:::
+
+::: exercise Peak flow {level=1 check="40"}
+A woman whose best peak flow is 450 L/min presents with acute asthma and a peak flow of 180 L/min. What percentage of her best is this, and what severity does it indicate on its own?
+::: solution
+$180 / 450 = 0.40$, which is **40%**. A PEF of 33–50% of best is a feature of **acute severe** asthma. Other features (SpO₂, PaCO₂, ability to speak, exhaustion) must be checked for life-threatening signs.
 :::
 :::
 
 ::: exercise Separate the faint from the reaction {level=2}
-A 17-year-old at a vaccination clinic collapses minutes after an injection; HR 44, BP 80/50, pale, sweating, moving all limbs, no rash, saturating 99 percent on air. The queue of parents panics; a staff member grabs the anaphylaxis kit. Manage the moment and the clinic's policy.
+A 19-year-old student faints during a vaccination clinic, a minute after the injection. She is pale and sweaty, with a pulse of 48/min, and recovers within 1 minute of lying down. Another student, 10 minutes after her injection, becomes flushed and wheezy, with a pulse of 130/min and BP 82/50 mmHg. Distinguish the two.
 ::: solution
-**Vasovagal-not-anaphylaxis ([[#def-recognition]], [[#def-management]]): the discrimination - 'the-bradycardia-and-pallor-and-nausea-and-transient-collapse-after-needles-in-a-teenager-is-the-vasovagal-reflex-not-mast-cell-medication-release (anaphylaxis is tachycardic-or-at-least-not-bradycardic-usually-with-skin-or-respiratory-signs-and-the-oximeter-and-the-observation-and-the-60-second-history-of-'anything-itchy-or-tight'-separate-them); the treatment - 'lay-flat-legs-up-reassure-repeat-dose-of-glucose-if-hungry-and-observe-and-the-adrenaline-is-not-given-because-a-vagal-patient-gets-a-painful-trembling-poorly-perfused-thigh-injection-that-can-itself-cause-aspiration-and-convulsion-from-transient-hypertension-and-cerebral-hypoperfusion-with-the-honest-clause-that-if-the-diagnosis-genuinely-becomes-uncertain-anaphylaxis-treatment-wins-because-adrenaline's-risk-in-a-teenager-is-far-below-an-under-treated-anaphylaxis's; and the clinic-policy - 'the-needle-injury-to-the-queue's-eyeballs-is-why-vaccination-sites-have-recovery-positions-and-5-15-minute-sitting-observation-and-trained-staff-not-ambulance-bays-because-post-vaccination-syncope-injuries-and-mass-psychogenic-reactions-in-school-halls-are-more-common-than-vaccine-anaphylaxis-in-every-audit-and-both-are-managed-by-this-chapter's-other-medicine: calm-predictable-words-said-by-someone-who-knows-which-one-this-is.'**
+The first student had a **vasovagal faint**: immediate onset, pallor, **bradycardia** and rapid recovery on lying flat, without skin, airway or breathing features. She needs reassurance and observation.
+
+The second student has **anaphylaxis**: onset within minutes after exposure, flushing, wheeze, **tachycardia** and hypotension. She needs IM adrenaline 500 micrograms immediately, lying flat, oxygen and the full anaphylaxis algorithm. Vaccination clinics keep adrenaline at hand for this reason.
 :::
 :::
 
-::: exercise Write the discharge bundle {level=2}
-A 31-year-old recovering from a first epinephrine-treated shellfish anaphylaxis, no prior allergy history, wants to go home with 'the tablets'. List everything that has to happen before she leaves, and the two errors the follow-up clinic sees most.
+::: exercise Interpret the tryptase {level=2}
+A man had a suspected reaction during anaesthesia. Tryptase was 21 ng/mL at 1 hour; the baseline sample, taken 6 weeks later, is 4 ng/mL. Is the rise significant, and what does a normal baseline exclude?
 ::: solution
-**Anaphylaxis-discharge-competence ([[#def-management]]): the bundle - 'the-observation-period-appropriate-to-severity-biphasic-risk-and-asthma-status-and-the-adrenaline-auto-injector-x2-prescription-with-demonstration-and-teach-back-with-the-trainer-and-expiry-and-storage-and-travel-and-carry-always-counselling-and-the-written-anaphylaxis-action-plan-and-referral-to-allergy-with-acute-and-baseline-tryptase-ordered-or-booked-and-the-skin-prick-and-specific-IgE-and-component-plan-and-the-trigger-investigation-including-the-cofactors (the NSAID and alcohol and exercise-dependent questions and the-shellfish-type-and-dose-and-restaurant-vs-home-story) and-the-avoidance-and-label-reading-and-cross-contamination-education-and-the-condition-specific-precautions (the fish-allergy-and-cooking-vapour-and-the-'cooked-shellfish-often-tolerated-versus-not' nuance decided later with the allergist not tonight) and the safety-net-with-a-cohabitant-present-and-when-to-call-999 and the medical-alert-bracelet-discussion and driving-work-and-pregnancy-planning-questions-and-the-GP-informed-today-because-next-time-may-not-happen-near-a-hospital; the two errors - 'no-adrenaline-prescribed-because-'it-was-only-once'-is-error-one and no-referral-booked-because-'she-looked-fine'-is-error-two: the follow-up clinic's regulars are people who had a second, worse reaction or who avoid an entire food group on a mislabelled blood-test-positive-and-both-outcomes-are-preventable-by-tonight's-paperwork-and-tonight's-phone-call.'**
+The threshold is $1.2 \times 4 + 2 = 6.8$ ng/mL. The peak of 21 ng/mL is well above this, so the rise is significant and supports anaphylaxis. A normal baseline makes an underlying mast cell disorder or hereditary alpha-tryptasaemia less likely. He needs specialist perioperative allergy testing to identify the culprit drug.
 :::
 :::
 
-::: exercise Design the region's anaphylaxis programme {level=3}
-Your region: adrenaline given in only half of pre-hospital anaphylaxis calls, three schools with no policy, no auto-injector supply route to GP practices at acceptable cost, adult allergy follow-up at 40 weeks, and no fatality review pathway. Build the programme with legal, training and data components.
+::: exercise The beta-blocked patient {level=2}
+A 66-year-old woman taking bisoprolol develops anaphylaxis after a wasp sting. She has had two doses of IM adrenaline 5 minutes apart and remains hypotensive (BP 74/40 mmHg) and bradycardic (pulse 52/min). What is happening and what are the next steps?
 ::: solution
-**Anaphylaxis-system ([[#def-mechanism]], [[#def-management]], [[public-health/prevention-promotion]], [[immunology/hypersensitivity]]): the pre-hospital half - 'the-ambulance-and-paramedic-adrenaline-audit-with-'give-it-if-in-doubt'-protocol-change-and-training-and-needle-free-simplicity-because-the-international-evidence-is-unambiguous-and-the-barriers-are-confidence-and-litigation-fear-answered-with-protocols-and-good-samaritan-law-explained-and-the-public-access-auto-injector-pilot-evaluation-done-as-a-trial-not-a-press-release-with-the-pharmacy-and-GP-supply-and-funding-route-fixed-first-because-adolescents-cannot-carry-prescriptions-that-arrive-in-six-weeks; the schools-and-workplaces - 'legally-backed-individual-health-care-plans (the school-medicine-duty-framework: stock-auto-injectors-in-every-school-with-training-and-no-single-person-bottleneck-and-the-food-messaging-lessons-that-save-the-restaurant-deaths) and the restaurant-and-caterer-allergen-labelling-and-14-gram-rule-adjacent-enforcement-which-is-prevention-medicine-in-trading-standards-clothing; the clinical-pathway half - 'the-'all-anaphylaxis-referred'-rule-with-an-adult-and-paediatric-allergy-service-capacity-justified-by-the-referral-volume-projections (the-40-week-wait-is-how-avoidance-mistakes-and-repeat-ed-visits-compound) and the allergy-nurse-practitioner-led-adrenaline-and-action-plan-and-venom-immunotherapy-same-clinic-access (the VIT-cure-rate-means-the-waitlist-is-lives-delayed) and the drug-allergy-and-desensitisation-and-PEN-parallel-track-because-the-hospital-drug-rechallenge-and-avoidance-decisions-currently-happen-by-email between specialties; and the data and accountability half - 'the-anaphylaxis-incidence-and-severity-and-adrenaline-administration-and-follow-up-completion-indicators-reported-with-the-deaths-reviewed-through-the-national-patient-inquiry-or-serious-incident-route-with-the-cause-of-death-method-coded-because-'food-induced-anaphylaxis'-is-frequently-mis-coded-as-asthma-death-which-erases-the-epidemiology-that-funds-the-programme and the region's annual anaphylaxis report naming the schools without policies and the EDs without tryptase ordering as improvement targets because this chapter's deaths keep happening in exactly the gaps between medicine and administration that any board can close.'**
+She has **refractory anaphylaxis**, made more resistant by beta-blockade, which blunts the β₁ and β₂ effects of adrenaline and may produce bradycardia. Next steps: call critical care; continue IM adrenaline every 5 minutes until a **low-dose IV adrenaline infusion** is started by experienced staff; give rapid IV fluid boluses; consider **glucagon**, which raises cyclic AMP in the heart independently of β-receptors; and consider other vasopressors if shock persists. Later, she should be referred to an allergy clinic for consideration of venom immunotherapy, and her need for a beta-blocker reviewed.
+:::
+:::
+
+::: exercise Write the discharge plan {level=2}
+A 30-year-old woman has recovered from anaphylaxis after eating a curry containing cashew nuts; she needed one dose of IM adrenaline given within 10 minutes. List the elements of her discharge plan.
+::: solution
+- Observation for at least 2 hours after resolution of symptoms (she responded to one early dose), provided the other conditions are met: she has two auto-injectors, has been trained, and has someone with her.
+- Prescription of **two adrenaline auto-injectors**, training with a trainer device, and advice to carry both at all times.
+- Written information and an emergency action plan; advice to avoid cashew and other tree nuts until assessed, and how to read food labels and ask about ingredients when eating out.
+- Referral to a **specialist allergy service**.
+- Tryptase samples documented, with a baseline arranged.
+- Information about support organisations, and a letter to her GP.
+:::
+:::
+
+::: exercise Asthma or anaphylaxis? {level=3}
+A 26-year-old man with asthma is brought in 30 minutes after a meal at a Thai restaurant with severe wheeze, SpO₂ 90%, pulse 128/min and BP 94/58 mmHg. He has no rash. His friend says he has peanut allergy but "it's never been serious". Discuss the differential and the first steps.
+::: solution
+This could be an acute exacerbation of asthma, but anaphylaxis presenting mainly as bronchospasm and hypotension after exposure to a probable allergen (peanut is common in Thai cooking) meets WAO criterion 2 even without skin involvement. His asthma makes a fatal reaction more likely, and hypotension with severe wheeze is unusual in asthma alone.
+
+He should be treated for **anaphylaxis**: IM adrenaline 500 micrograms immediately, lying flat or semi-recumbent for breathing, high-flow oxygen, IV fluids for hypotension, and nebulised salbutamol and ipratropium for bronchospasm, with repeat IM adrenaline at 5 minutes if needed. Asthma treatment (steroids, magnesium) can be added. Tryptase samples help clarify the diagnosis later. He needs auto-injectors, an allergy referral and an asthma review. If in doubt, give adrenaline.
 :::
 :::

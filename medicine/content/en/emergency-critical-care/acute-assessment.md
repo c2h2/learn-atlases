@@ -1,142 +1,318 @@
-Emergency and acute-medicine assessment is the discipline of the undifferentiated patient: deciding within minutes how sick this person is, what kills them in the next hour, and what must happen in what order - before the diagnosis exists. **This chapter covers the triage layer (the systems, their scoring logic and their known failure modes), the structured human assessment (ABCDE done as a treatment-triggering algorithm rather than a ritual, the vital-signs read as trajectory and context, the focused history and the 'why now' question), the recognition and initial management of the undifferentiated critically ill adult (the septic, the shocked, the short of breath, the collapsed, the confused), the escalation machinery (the early-warning scores, the deterioration bundles, the time-critical networks for heart attack, stroke, trauma and toxic ingestion), and the department as a system (crowding as a mortality risk, the discharge safety net, and the medicolegal grammar of documentation). The chapter's spine is one sentence from every resuscitation-room wall: 'nobody dies of a diagnosis - they die of physiology nobody treated while somebody waited for the diagnosis'.**
+A patient who is acutely unwell rarely arrives with a diagnosis. They arrive breathless, confused, cold and clammy, or simply "not right", and the clinician has to act before knowing the cause. The approach taught in this chapter solves that problem by changing the question. Instead of asking "what is the diagnosis?", the clinician asks "what is about to kill this person, and can I stop it?", and works through the body systems in the order in which their failure kills fastest.
 
-## Triage and the structure
+The chapter covers that structured approach (ABCDE), the early-warning scores that help ward staff spot deterioration, the triage systems used at the emergency department front door, and the communication and escalation that turn recognition into action. The guidance followed is that of the Resuscitation Council UK (RCUK), the Royal College of Physicians (NEWS2) and NICE; local policies differ in detail.
 
-::: definition Triage and the ABCDE method {#def-triage}
-**Triage is not speed, it is allocation: the four-plus national systems (the Manchester Triage System with its presentation-based flow charts and five-category times, the Canadian Triage-and-Acute-Sensitivity-Level-with-its-CTAS-grading, the Australian ATS, the US 5-level-Emergency-Severity-Index and the care-network-equivalents) all solve the same impossible problem - predicting which of today's arrivals will deteriorate - and all share the same known misses: the behavioural-health and self-harm presentations timed out of the queue, the older adults whose 'normal-looking' vitals hide pneumonia and myocardial infarction and sepsis (the atypical-presentation literature and the geriatric-triage-error cluster), the women with cardiac disease triaged as anxious (the sex-gap-in-chest-pain-research and the symptom-dismissal data), the racial-bias-in-pain-assessment findings, and the 'frequent attender' whose fifth attendance contains the anaphylaxis - which is why the good departments triage twice (the front door and the re-triage of the waiting room with its nurse-reassessment-intervals because deterioration in the chair is a documented system failure in most ED deaths). The method everyone shares: primary survey as ABCDE with simultaneous treatment (the airway-with-the-cough-and-the-stridor-and-the-'can-you-swallow-it-all' questions; the breathing with the saturations-and-the-work-of-breathing-and-the-'can-you-finish-a-sentence'-test which is the best monitor in the room; the circulation with the pulse-pressure-and-capillary-refill-and-the-lactate-and-the-lying-and-sitting-versions-of-the-history; the disability with the AVPU-and-GCS-and-Glasgow-Coma-Scale-motor-and-the-glucose-because-hypoglycaemia-mimics-stroke-and-the-pupils-with-the-eye-drop-and-insulin-history-questions; the exposure with the temperature-and-the-rash-and-the-pressure-area-and-the-'back-of-the-neck-and-the-groin'-that-someone-must-actually-look-at-in-the-feverish-obese-patient); the resuscitation-room version of the same algorithm with its adjuncts (the blood gas doing the work of three tests, the ultrasound doing the work of a guess at the physiology - the E-FAST and the lung-sliding-and-the-IVC-and-the-clot-and-the-pericardial-fluid-in-minutes, and the 12-lead in any of the four horsemen presentations because an ECG is the cheapest life in emergency medicine); the second survey after stabilisation (the AMPLE/SAMPLE history from whoever travelled with them and the paramedic and the GP system, the drug-and-allergy-and-anticoagulation-and-recent-instrumentation-lists, and the 'what were you doing before' question that generates the mechanism - the fall from height versus the fall from standing is a different disease each time); and the documentation as clinical instrument (the times, the initial vital signs before analgesia and fluids changed them, the negative findings you relied on, because the coroner and the lawyer and the next hospital all read the record you wrote at 02:00 and no version of the shift exists outside it).**
+## Why a structured approach {#sec-why}
+
+Studies of patients who have a cardiac arrest or are admitted unexpectedly to intensive care on general wards keep finding the same pattern: in the hours beforehand, their observations were abnormal, the abnormalities were recorded, and nobody acted on them, or the response was too slow or too junior. The 2005 report of the National Confidential Enquiry into Patient Outcome and Death (NCEPOD), *An Acute Problem?*, described this in UK hospitals, and NICE guideline CG50 (2007) on acutely ill adults in hospital set out the response: regular observations, a scoring system to trigger escalation, and a graded response with clear responsibilities.
+
+The fix has two parts. The first is a **reliable way of examining** a sick patient that does not depend on knowing the diagnosis. The second is a **reliable system** that makes sure abnormal findings lead to a response.
+
+::: theorem Treat the first problem first {#thm-order}
+In an acutely ill patient, problems are assessed and treated in the order **Airway, Breathing, Circulation, Disability, Exposure**. A problem found at one step is treated before moving on, and the patient is reassessed from the start after any intervention or change.
 :::
 
-## The undifferentiated sick patient
-
-::: definition The undifferentiated critically ill adult {#def-critill}
-**The recognition-first paradigm: outcome research keeps producing the same finding (the time-to-antibiotic and time-to-vasopressor and time-to-defibrillation literatures) - mortality in the first hours tracks recognition-to-treatment intervals more than diagnostic elegance, which is why the acute-physician's working questions are triage questions: (1) is this person dying of oxygen (the saturations, the work of breathing, the gas, and the decision about escalation to NIV or intubation in asthma, COPD, pneumonia, pulmonary oedema and the obese-hypoventilation presentations, each with its own trap - the COPD patient's oxygen-induced-hypercapnia-and-the-target-88-92-band-and-the-asthma-patient-with-normal-saturations-and-a-rising-pCO2-who-is-about-to-arrest); (2) perfusing (the shock recognition that is the next chapter's, with the lactate and the pulse-pressure and the mottled-transit-time-and-the-'she-lays-back-and-dizzy' history and the bedside echo where staff can use it); (3) septic (the screening criteria's-evolution-from-SIRS-to-SOFA-to-qSOFA-to-the-NICE-and-US-crenellated-sepsis-bundles with the honest position that the bundles saved lives and the criteria over-triggered, the 'sepsis six within the hour' culture, the source hunt with the mouth-and-the-urine-and-the-line-and-the-skin-and-the-C-diff-and-the-testicular-and-prostatic-and-spinal-and-joint questions that the abdominal-pain-workup-misses, and the 'not all fevers are sepsis and all sepsis-fevers-can-present-as-falls-and-confusion-in-the-over-75s'-both-directions-of-error); (4) toxic-metabolic (the glucose in every altered patient, the sodium and calcium and magnesium and the paracetamol level in every overdose-intent and every 'accidental' ingestion, the opioid toxidrome's pupil-ventilation-coma pattern, the salicylate that breathes like sepsis and the carbon-monoxide headache cluster in a household, and the renal and hepatic failure presentations with their own confusion); (5) the four horsemen still ticking (the ECG-and-troponin-and-CTPA-and-CT-head-and-lumbar-puncture-in-the-meningitis-and-the-'worst-headache-of-my-life'-saH-subtleties-and-the-anaortic-dissection-with-its-equal-BP-in-both-arms-check-and-the-testicular-and-epiglottic-and-mesenteric-and-limb-ischaemia-'time-is-organ'-syndromes where the pain-out-of-proportion-to-signs sentence is the whole clinical art); and the deteriorating-patient machine (the early-warning scores and their honest evidence - NEWS2's modest but real reduction in ICU-arrest transfers in the trials and the critical-care-outreach-models-and-the-'escalate-early-even-when-you-are-wrong-about-the-diagnosis'-culture and the patient-at-the-centre-of-the-deteriorating-patient-syllabus and the SBAR handover that the research says prevents more harm than any drug). The geriatric and psychiatric extensions because they are the majority of modern assessment volume: the older adult with the functional-decline-as-presenting-complaint (the 'she is not mobilising' that is a fracture or a urosepsis or a subdural and the delirium-screen-that-every-confused-older-person-gets-covered-in-the-geriatric-chapter) and the acutely disturbed patient (the medical-causes-exclusion-with-glucose-and-hypoxia-and-head-injury-and-drugs-and-the-restraint-medicine-and-law-covered-elsewhere-and-the-'is-she-safe-to-be-in-this-building-with-these-people'question-which-is-psychiatric-triage-not-pharmacology).**
+::: proof
+The order follows how quickly each failure causes death. A completely obstructed airway kills in a few minutes, because oxygen delivery to the brain stops. Failure of breathing (inadequate ventilation or gas exchange) kills a little more slowly, as stored oxygen in the lungs and blood is used up. Circulatory failure (shock) causes death over minutes to hours as tissues become ischaemic. Neurological problems (disability) and those found on full exposure, such as a rash or hidden bleeding, usually act more slowly still. Treating a low blood pressure in a patient whose airway is obstructed achieves nothing, because the blood being pumped carries no oxygen. Reassessment is needed because the patient's state changes: the airway that was patent may obstruct as consciousness falls, and the oxygen saturation that improved may fall again.
 :::
 
-## The department as a system
+## The ABCDE assessment {#def-triage}
 
-::: definition The emergency department and the time-critical network {#def-system}
-**Time targets as clinical tools with side-effects: the 4-hour-wait standard and its 8-hour-and-12-hour cousins and the US-Door-to-Balloon-and-Door-to-Needle-and-Door-to-CT eras (the time-to-needle and time-to-balloon data saving myocardium and brain, the stroke pathway with its pre-hospital-notification-and-one-stop-CT-and-CTA-and-thrombectomy-networks and the 'stroke chameleons' the clock misses (the dissections and the hypoglycaemia and the post-ictal and the young patients), the major-trauma-triage-criteria-and-trauma-network-activation-with-its-primary-survey-in-the-helipad-and-the-'scoop-and-run-versus-stay-and-play'-argument-settled-by-the-austere-environments-into-'load-and-shout'-and-constituent-transport-lessons, and the honest counter-literature (target-driven-medicine's distortions - the trolley-bay medicine, the late presentations 'gaming' their own arrival times, the ambulance handover delays that turn the 4-hour clock into a hostage negotiation which is the 2020s UK emergency-care crisis's defining mechanism); crowding's medicine (the board-wide flow failure whose outcomes are measured: increased mortality among admitted patients who waited, the left-without-being-seen-then-died cases and the coroners' narratives, the corridor trolleys as a pressure-injury-and-fall-and-medication-error environment, and the demand-capacity-mitigations with actual evidence - the assessment units and the virtual wards and the same-day clinics and the nursing-home-with-a-same-day-review-bypass-which-are-how-the-geriatric-and-palliative-chapters'-services-actually-reduce-the-ED's-deaths-remotely); the discharge contract (the 'did we explain what to watch for and what to do' safety net in the patient's own words, the analgesia-and-anticoagulation-and-OT-and-GP-letter-and-the-booking-before-leaving-not-arranging, the 'sick-refusers' and their capacity-and-documentation-grammar, and the frequent-attender-plan-that-treats-the-whole-person-with-a-named-GP-and-a-single-care-plan-because-the-alternative-is-either-neglect-or-admission-by-exhaustion); the paediatric and obstetric exceptions that bend every rule (the children-are-different-physics and the weight-based-dose-arithmetic-and-the-Paediatric-Early-Warning-Scores-and-'think-SEPSIS-again' and the child-protection-adjacent-fracture-patterns-and-non-accidental-injury-considerations-covered-in-paediatrics, and the collapsed pregnant woman whose physiology and differentials belong to the obstetric chapters - both of which justify the department's two separate resuscitation cultures); and the human-factors layer (the junior-decision-thresholds-and-the-'when-in-doubt-shout-out'-escalacy-culture-as-a-mortality-variable, the fatigue-and-night-shift-error-data, the violence-against-ed-staff-as-a-safety-and-workforce-crisis, and the debrief-and-learning-system-because-the-department-sees-more-low-probability-high-consequence-events-in-a-year-than-most-specialties-see-in-a-career-and-has-the-worst-schedule-for-processing-them).**
+::: definition The ABCDE approach {#def-abcde}
+The **ABCDE approach** is a systematic assessment and immediate treatment of the acutely unwell patient, examining in turn the **A**irway, **B**reathing, **C**irculation, **D**isability (neurological state and glucose) and **E**xposure (full examination of the skin and body, and temperature). At each step the clinician looks, listens and feels, treats what is found, and calls for help early. A full history and secondary examination follow once immediate threats have been addressed.
 :::
 
-::: example The 64-year-old with 'indigestion' at 03:00 {#ex-atypical}
-A woman with diabetes and hypertension presents with two hours of epigastric pain and nausea; triage category 3, 'likely gastritis'; GP letter attached; initial observations HR 96, BP 104/68, RR 20, SpO2 97 percent; waiting 3 hours; now 'sweating and tired'. Nobody has re-triaged her.
+Before starting, the clinician checks that the environment is safe, puts on appropriate protective equipment, and makes a first impression: does the patient look ill? A quick question such as "How are you?" tests airway, breathing and brain at once. A patient who answers in full sentences has a patent airway, enough breath to speak and adequate cerebral perfusion for now.
+
+### A: Airway
+
+Look for signs of obstruction: noisy breathing (snoring, gurgling, stridor), see-saw movement of the chest and abdomen, use of accessory muscles, and in complete obstruction, silence despite effort. Common causes are a reduced level of consciousness (the tongue and soft tissues fall back), vomit or blood, foreign bodies, swelling (anaphylaxis, angio-oedema, burns, infection) and trauma.
+
+Simple treatment comes first: head tilt and chin lift or jaw thrust, suction under direct vision, an oropharyngeal or nasopharyngeal airway, and high-concentration oxygen through a mask with a reservoir bag. A patient who cannot protect their airway needs skilled help early. Airway management is described in [[emergency-critical-care/airway-ventilation]].
+
+### B: Breathing
+
+Count the **respiratory rate** for a full 15–30 seconds; it is the most sensitive single sign of illness and the one most often guessed. Note the depth and pattern of breathing, the work of breathing, cyanosis, and the oxygen saturation by pulse oximetry. Feel the trachea and chest expansion, percuss, and listen.
+
+Abnormal findings point to treatable causes: wheeze (asthma, COPD, anaphylaxis), a silent chest in severe asthma, absent breath sounds and a hyper-resonant hemithorax (pneumothorax; if tension, with hypotension and tracheal deviation, decompress immediately), crackles (pulmonary oedema or pneumonia), and dullness (effusion or consolidation). Give oxygen to a target saturation, usually **94–98%**, or **88–92%** in patients at risk of hypercapnic respiratory failure, following British Thoracic Society guidance. An arterial blood gas measures oxygenation, ventilation (PaCO₂) and acid–base state.
+
+Pulse oximeters can overestimate oxygen saturation in people with darker skin, which means hypoxaemia can be missed; when the reading does not fit the clinical picture, check an arterial gas.
+
+### C: Circulation
+
+Look at the colour of the hands and face, and feel the temperature of the peripheries. Measure the **capillary refill time** by pressing on a fingertip held at heart level for five seconds; normal refill is under 2 seconds. Count the pulse rate and note its rhythm and volume, measure the blood pressure, and look for jugular venous distension, signs of bleeding and a low urine output. Listen to the heart.
+
+The commonest cause of shock in acutely ill adults is hypovolaemia (bleeding, vomiting, diarrhoea, sepsis-related vasodilatation), but cardiogenic and obstructive causes must be considered (see [[emergency-critical-care/shock-fluids]]). Insert one or two wide-bore cannulae, take blood (including cultures if infection is possible, a venous gas with lactate, and a crossmatch if bleeding), and give a fluid bolus (typically 500 mL of a balanced crystalloid over less than 15 minutes in adults) unless there is evidence of heart failure, reassessing after each bolus. Obtain a 12-lead ECG in chest pain or arrhythmia.
+
+### D: Disability
+
+Assess the level of consciousness with **ACVPU** (Alert; new Confusion; responds to Voice; responds to Pain; Unresponsive) or the Glasgow Coma Scale (GCS). Look at the pupils (size, symmetry, reaction), and look for focal neurological signs and seizures. **Always measure the capillary blood glucose**: hypoglycaemia (glucose below 4 mmol/L) is easy to treat and is a common reason for confusion, seizures or coma. Review drugs that can depress consciousness, notably opioids and sedatives; naloxone reverses opioid toxicity.
+
+::: definition Glasgow Coma Scale {#def-gcs}
+The **Glasgow Coma Scale** scores three responses to the best stimulus, from 3 (no response) to 15 (fully alert):
+
+| Response | Score |
+|---|---|
+| **Eyes**: open spontaneously / to sound / to pressure / none | 4 / 3 / 2 / 1 |
+| **Verbal**: orientated / confused / words / sounds / none | 5 / 4 / 3 / 2 / 1 |
+| **Motor**: obeys commands / localises / normal flexion / abnormal flexion / extension / none | 6 / 5 / 4 / 3 / 2 / 1 |
+
+A GCS of 8 or less is often used as a rough marker of a patient who may be unable to protect their airway, but it is a prompt for senior assessment, not an automatic indication for intubation.
+:::
+
+### E: Exposure
+
+Expose the patient fully while preserving dignity and preventing heat loss. Look for rashes (a non-blanching rash in meningococcal disease), bleeding, wounds, swollen or painful limbs, injection sites and signs of pressure damage. Measure the temperature. Look at drug charts, fluid balance charts and the notes.
+
+After the primary survey, the clinician takes a focused history (often from relatives, paramedics or the notes), completes the examination, reviews investigations, makes a working diagnosis and plan, and decides on the right place of care. The **AMPLE** history is a useful short form: **A**llergies, **M**edicines, **P**ast medical history (and pregnancy), **L**ast meal, and **E**vents leading up to the illness.
+
+::: warning A normal value is not a reassuring value
+A young, fit patient can maintain a normal blood pressure while losing a large volume of blood, by vasoconstriction and tachycardia; hypotension may appear only when compensation fails. In acute asthma, a "normal" PaCO₂ is a sign of exhaustion, because a breathless patient should be blowing it off. Patients taking beta-blockers may not become tachycardic. Older people may have sepsis without a fever. Interpret every number in the light of the patient, the trend and the other signs, and do not let one normal observation overrule a clinical impression that the patient is unwell.
+:::
+
+## Early-warning scores {#def-critill}
+
+Ward patients usually deteriorate gradually. The physiological changes are often detectable hours before a cardiac arrest, but they are spread across several observations and are easy to miss one by one. An **early-warning score** combines them into a single number with a set response.
+
+::: definition National Early Warning Score 2 (NEWS2) {#def-news2}
+**NEWS2**, published by the Royal College of Physicians in 2017 and used across the NHS, scores seven parameters from 0 to 3 and adds them together.
+
+| Parameter | 3 | 2 | 1 | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|---|---|---|
+| Respiratory rate (/min) | ≤8 | | 9–11 | 12–20 | | 21–24 | ≥25 |
+| SpO₂ scale 1 (%) | ≤91 | 92–93 | 94–95 | ≥96 | | | |
+| Air or oxygen | | Oxygen | | Air | | | |
+| Systolic BP (mmHg) | ≤90 | 91–100 | 101–110 | 111–219 | | | ≥220 |
+| Pulse (/min) | ≤40 | | 41–50 | 51–90 | 91–110 | 111–130 | ≥131 |
+| Consciousness | | | | Alert | | | New confusion, V, P or U |
+| Temperature (°C) | ≤35.0 | | 35.1–36.0 | 36.1–38.0 | 38.1–39.0 | ≥39.1 | |
+
+A separate **SpO₂ scale 2** is used for patients with confirmed hypercapnic respiratory failure whose target saturation is 88–92%, so that they are not scored as abnormal for being on target.
+
+The response is graded: an aggregate score of **1–4** prompts a ward-based response from the registered nurse; a score of **3 in any single parameter** prompts urgent review by a ward-based doctor; an aggregate of **5–6** is a key threshold for an **urgent** response by a clinician competent in acute illness; and **7 or more** demands an **emergency** response, usually by a critical care outreach or medical emergency team.
+:::
+
+NEWS2 is a tool, not a diagnosis. It is good at identifying patients at higher risk of death or ICU admission in the next 24 hours, but it does not replace judgement. A patient with a low score whom an experienced nurse is worried about deserves review; a patient with a stable, chronically raised score (for example, a person with COPD on long-term oxygen scored on the wrong scale) may not need repeated emergency calls. The trend over several sets of observations is often more informative than one value.
+
+Early-warning scores also underpin the sepsis pathway. In NICE guideline NG253 (2025), which replaced NG51 for people aged 16 or over, an adult in an acute hospital with suspected infection and a NEWS2 of 7 or more is treated as high risk and should receive antibiotics within 1 hour; a score of 5 or 6 calls for review within 1 hour, with antibiotics within 3 hours unless there are signs that raise the risk, such as a lactate above 2 mmol/L or acute kidney injury. The details are in [[infectious-diseases/fever-sepsis]].
+
+::: widget bayes
+mode: test
+prevalence: 0.05
+sensitivity: 0.8
+specificity: 0.85
+title: An early-warning trigger as a diagnostic test
+caption: A simplified model with illustrative numbers. Suppose 5% of patients on a ward will deteriorate seriously within 24 hours, and a trigger threshold catches 80% of them while correctly leaving 85% of the others untriggered. Most patients who trigger will still not deteriorate, which is why responders see many "false alarms". Move the sliders: lowering the threshold raises sensitivity but lowers specificity and multiplies calls; raising it misses deteriorating patients. Hospitals choose thresholds such as NEWS2 5 and 7 by balancing these costs.
+:::
+
+::: example Calculating a NEWS2 score {#ex-news2}
+A 74-year-old woman on a surgical ward, two days after a bowel resection, has these observations: respiratory rate 23/min, SpO₂ 95% on 2 L/min nasal oxygen (no history of hypercapnic respiratory failure), BP 104/62 mmHg, pulse 112/min, alert, temperature 38.4 °C. Calculate her NEWS2 and state the response.
 ::: solution
-**A-death-pattern-in-three-acts ([[#def-triage]], [[#def-critill]]): act one - 'the atypical-inferior/posterior-infarction-in-a-diabetic-woman: the epigastric-and-nausea-and-fatigue presentation is the sex-and-age gap in chest-pain medicine, and 'she could be having a heart attack' does not require chest pain, it requires an ECG which costs nothing and takes ninety seconds and should have been done at triage under every chest-pain and epigastric-pain flow chart in the country; act two - 'the deterioration in the waiting room: three hours, no re-triage, the sweating-and-tired sentence is a pre-arrest description and should have been a re-evaluation trigger (the NEWS2 with the shock-index-in-mind and the repeat ECG which now shows the ST changes and the cath-lab activation that was an hour ago in a different hospital); act three - 'the system fixes the coroner asks for: the triage-flow-chart-compliance-audit (did the epigastric algorithm include the ECG rule for diabetics and women and over-50s), the waiting-room-observation-interval-policy-with-a-nurse-reassessment-clock (and the 'staff can see who is deteriorating' assumption tested not assumed), and the nursing-initiated-ECG-competence-and-train-in-the-'she-looks-wrong'-pathway because in every review of a waiting-room death the question is not why did nobody diagnose it but why did nobody look again'. The clinical bottom line: her STEMI pathway runs from the moment anyone does the ECG, and the antiplatelets and the heparin and the activation are the treatment - and the re-triage system is the diagnosis of the department's disease.**
+Using scale 1 for SpO₂:
+
+| Parameter | Value | Score |
+|---|---|---|
+| Respiratory rate | 23 | 2 |
+| SpO₂ | 95% | 1 |
+| Air or oxygen | Oxygen | 2 |
+| Systolic BP | 104 | 1 |
+| Pulse | 112 | 2 |
+| Consciousness | Alert | 0 |
+| Temperature | 38.4 | 1 |
+
+Total: $2 + 1 + 2 + 1 + 2 + 0 + 1 = 9$. A score of 7 or more needs an **emergency** response, by the critical care outreach or medical emergency team. With fever, tachycardia and tachypnoea after bowel surgery, she should be assessed with ABCDE immediately and treated as possible sepsis from an anastomotic leak, with antibiotics within an hour, blood cultures, lactate, fluids, and an urgent surgical review.
 :::
 :::
 
-::: example The 22-year-old with asthma and 'normal saturations' {#ex-asthma}
-Status asthmaticus: SpO2 98 percent on air, RR 28, unable to complete sentences, silent chest on auscultation, exhausted, pCO2 6.1 kPa on the gas; the junior wants 'more nebs and reassessment in an hour'.
+## Triage at the front door {#def-system}
+
+An emergency department sees patients in the order of clinical need, not of arrival. **Triage** (from the French *trier*, to sort) is the rapid assessment that sets that order.
+
+::: definition Emergency department triage {#def-edtriage}
+**Triage** is a brief, structured assessment on arrival that assigns each patient a priority category, which determines how soon they must be seen by a clinician. In the UK the **Manchester Triage System** is widely used. It uses presentation-specific flowcharts and key discriminators (life threat, pain, haemorrhage, conscious level, temperature, acuity) to assign one of five categories:
+
+| Category | Colour | Target time to clinician |
+|---|---|---|
+| 1 Immediate | Red | 0 minutes |
+| 2 Very urgent | Orange | 10 minutes |
+| 3 Urgent | Yellow | 60 minutes |
+| 4 Standard | Green | 120 minutes |
+| 5 Non-urgent | Blue | 240 minutes |
+
+Triage is repeated if the patient's condition changes while waiting.
+:::
+
+Triage is deliberately quick and cannot detect everything. Some time-critical conditions present atypically: myocardial infarction as breathlessness or "indigestion", particularly in older people, women and people with diabetes; aortic dissection as back pain; sepsis as confusion. Departments therefore use **time-critical pathways**, such as the ST-elevation myocardial infarction pathway to primary angioplasty, the stroke thrombolysis and thrombectomy pathway, the major trauma network and the sepsis pathway, which bypass the usual queue once a trigger is met.
+
+Triage of many casualties at once in a major incident uses different, simpler tools and is described in [[emergency-critical-care/major-incidents]].
+
+## Communication and escalation {#sec-escalation}
+
+Recognising a sick patient helps only if the right person comes, fast enough. Clear communication is a clinical skill.
+
+::: definition SBAR {#def-sbar}
+**SBAR** is a structured format for communicating about a patient, especially when asking for help:
+
+- **Situation**: who you are, where you are, which patient, and the problem in one sentence ("I am calling about Mrs Khan in bed 12, who has a NEWS2 of 9 and I think she has sepsis").
+- **Background**: the relevant history and reason for admission.
+- **Assessment**: the ABCDE findings and what you think is happening.
+- **Recommendation**: what you need, and by when ("I need you to see her within 15 minutes").
+
+The person receiving the call repeats back the key facts and the agreed action.
+:::
+
+Escalation also includes being clear about **ceilings of treatment**. For a frail patient with severe, irreversible illness, the right response to deterioration may be ward-based treatment and comfort rather than intensive care. That decision is best made calmly in advance, with the patient and family, and documented (for example on a ReSPECT form), not improvised at 3 a.m. Resuscitation decisions are discussed in [[emergency-critical-care/resuscitation]].
+
+Patients and families often notice deterioration first. Since 2024, NHS England has been introducing **Martha's Rule**, which gives patients, families and staff the right to request an urgent independent review by a critical care outreach team if they are worried that a patient is getting worse and their concerns are not being acted on.
+
+Finally, most hospitals have a **critical care outreach** or **rapid response team** that reviews deteriorating ward patients. The evidence that such teams reduce mortality is mixed (the Australian MERIT cluster-randomised trial, published in 2005, did not show a reduction in its combined outcome), but they are now standard practice, and their benefit seems to depend on the wards actually calling them early.
+
+## Worked cases
+
+::: example The 64-year-old with "indigestion" {#ex-atypical}
+A 64-year-old man with type 2 diabetes attends at 03:00 with upper abdominal discomfort and nausea for two hours. He is sweaty. Respiratory rate 22/min, SpO₂ 96% on air, pulse 108/min, BP 96/60 mmHg, alert, temperature 36.7 °C. He says it is "just indigestion" and asks for an antacid. How should he be assessed?
 ::: solution
-**Near-fatal-asthma-wearing-a-normal-oximeter ([[#def-critill]], [[respiratory/asthma-copd]]): the read - 'the oxygen saturation is the one number that lies in asthma: a near-normal SpO2 with a rising or normal-high pCO2 and a silent chest and exhaustion is the pre-arrest pattern (the obstruction is so severe that neither gas nor sound moves), and the pCO2 in an asthmatic who is not tiring should be low - a "normal" carbon dioxide in this clinical picture is respiratory failure in disguise; the next ten minutes - 'high-flow-oxygen-and-salbutamol-and-ipsatropium-nebulised-or-better-still-the-MDI-with-spacer-in-severe-attack-protocols-and-IV-magnesium-given-early-not-after-the-fourth-neb-and-IV-steroids-on-the-first-assessment-and-IV-fluids-and-the-epinephrine-question-for-the-crash-adjacent-per-resuscitation-council-and-BTS-SIGN-pathways, and senior-anaesthetic-help-called-now-not-in-an-hour-because-intubating-this-physiology-is-the-hardest-airway-in-the-building-and-the-team-should-be-choosing-the-moment-not-meeting-it-in-arrest; and the escalation-and-ICU-conversation (the NIV's-weak-evidence-in-asthma-versus-COPD distinction, the ketamine-induction-adjacent-ventilation-strategy-and-permissive-hypercapnia-and-the-ICU-arrival-because-this-patient-needs-a-ventilated-bed-or-a-nearly-ventilated-one, and the documentation of the severity classification near-fatal/life-threatening per the guidelines which is what the ward and the ICU and the GP and the asthma-nurse and the follow-up steroid-and-inhaler-and-technique-and-trigger plan all hang off'.**
+**First impression and ABCDE.** He is talking (A patent), mildly tachypnoeic with normal saturation (B), and tachycardic and hypotensive with sweating (C): he has signs of shock. His NEWS2 is $2 + 0 + 0 + 2 + 1 + 0 + 0 = 5$ (RR 22 scores 2, BP 96 scores 2, pulse 108 scores 1), which needs an urgent clinical response, and in the emergency department he would be triaged as very urgent.
+
+**Immediate actions.** Cannulate, take bloods (including troponin and lactate), and **record a 12-lead ECG within 10 minutes**. Upper abdominal pain with sweating and hypotension in a man with diabetes is myocardial infarction until proven otherwise; inferior infarction in particular causes epigastric pain, nausea, bradycardia or hypotension. The differential includes pancreatitis, a perforated ulcer, ruptured abdominal aortic aneurysm and biliary sepsis, all of which also need urgent action.
+
+If the ECG shows ST-elevation, he goes onto the primary PCI pathway. The general lesson is that diabetes, older age and female sex make atypical presentations of myocardial ischaemia more common, and that a patient's own explanation is not a diagnosis.
 :::
 :::
 
-::: example The 55-year-old with 'back pain and a funny feeling' {#ex-aaa}
-Telephoned from a waiting-room chair: sudden interscapular pain, sweaty, BP 88/60, pulses present, ECG 'old T changes', morphine given by the triage nurse for presumed musculoskeletal pain; ten minutes later she collapses.
+::: example The 22-year-old with asthma and "normal" saturations {#ex-asthma}
+A 22-year-old woman with asthma arrives after two days of increasing wheeze. She can speak only in short phrases. Respiratory rate 30/min, SpO₂ 94% on air, pulse 124/min, BP 118/74 mmHg. Peak flow is 40% of her best. An arterial gas on air shows PaO₂ 8.6 kPa and PaCO₂ 5.6 kPa. Is she improving?
 ::: solution
-**Rupture-is-happening-in-a-triage-category ([[#def-critill]], [[cardiovascular/vascular-disease]]): the instant - 'sudden severe back pain plus hypotension plus a "funny feeling" plus morphine-need-in-a-smoker-over-50 is a rupturing abdominal or dissecting thoracic aneurysm until proven otherwise: the moves are simultaneous (resus-room, two large-bore cannulae-and-group-and-save-and-crossmatch-activated-and-the-CT-scanner-warned-and-the-vascular-surgeon-or-cardiac-surgeon-paged-by-name-not-by-bleep-chain-not-by-rota-hope) and the blood-pressure-target-judgment (permissive-hypotension-and-beta-blockade-for-dissection-versus-fluid-for-rupture-differ-and-the-scan-and-the-surgeon-decide-within-minutes-which-disease-this-is); the errors to name in the review - 'the "back pain" triage category that skipped the blood pressure in a woman (the same literature as the atypical-ACS miss: pain-plus-hypotension-is-not-musculoskeletal-until-something-else-is-explained), the morphine-without-a-second-set-of-observations (analgesia is right, the observation gap around it is the finding), and the bed-side-of-the-CT-door-trolley-bay-death-statistic this case nearly joins; and the system - 'the 'back pain with red flags' decision-support-at-triage (the over-50-sudden-pain-plus-hypotension prompt that is the aneurysm-dissection-and-PE-and-sepsis bundle in one alert) and the ED's own rule that any patient who needs opioids for pain gets a doctor's-differential-not-just-a-prescription because the analgesia is the test that the diagnosis was already asking.**
+No. Several features place her in **life-threatening acute asthma** under British asthma guidance: peak flow 33–50% of best defines acute severe asthma, but a **normal PaCO₂ (4.6–6.0 kPa)** in an acute attack is a life-threatening feature. A breathless, tachypnoeic patient should have a low PaCO₂; a normal value means she is tiring and can no longer ventilate adequately. Her saturation of 94% is just above the life-threatening threshold (below 92%).
+
+Treatment follows the ABCDE sequence: high-flow oxygen to SpO₂ 94–98%, nebulised salbutamol (often driven by oxygen and given back-to-back) with ipratropium, oral or IV corticosteroid, and senior and critical care review now, with IV magnesium sulphate considered. She needs repeated gases; a rising PaCO₂ or exhaustion means intubation by an experienced anaesthetist. More detail is in [[emergency-critical-care/anaphylaxis]] and [[respiratory/asthma-copd]].
 :::
 :::
 
-::: example The 19-year-old who 'came in drunk' {#ex-drunk}
-Brought by police at 01:00, 'drunk', unresponsive to voice, RR 8, SpO2 91 percent on room air, glucose 5.8; nurse wants 'recovery position and sleep it off'.
+::: example The 55-year-old with back pain and "a funny feeling" {#ex-aaa}
+A 55-year-old man who smokes presents with sudden severe low back pain radiating to the left groin, followed by feeling faint. Pulse 118/min, BP 88/54 mmHg, pale, capillary refill 4 seconds. He was triaged as "musculoskeletal back pain" at the front desk because he walked in. What should happen?
 ::: solution
-**The-two-diagnoses-that-kill-quietly-look-like-drunk ([[#def-critill]], [[emergency-critical-care/poisoning]]): the minute-to-minute - 'respiratory depression is not intoxication: the airway-bag-if-not-ventilating-adequately, the naloxone-given-and-titrated-to-ventilation-not-to-consciousness (the opioid toxidrome with a co-ingestant or a synthetic that outruns standard doses - repeat and consider infusion), the glucose rechecked (hers is normal but the paracetamol level is not and never will be until asked), the head-injury hunt (the unwitnessed-collapse-and-assault pattern in a 'drunk' is a subdural until the CT says otherwise, and the police custody request does not outrank the CT); the workup that the word 'drunk' replaced - 'the gas (the co-ingestants and the anion gap and the paracetamol-and-salicylate levels in every intentional-or-uncertain ingestion, the pregnancy test, the CT head if any focal sign or prolonged impairment or anticoagulation or unwitnessed head strike), the temperature (the hypothermia-that-reads-as-sleeping) and the safeguarding-layers (the drink-spiking-and-sexual-assault-considerations and the mental-health-assessment when she is fully herself, which she may not be for hours); and the culture - 'the "drunk" triage label is one of the three words (with "anxious", "frequent attender" and "drug-seeker") that have preceded avoidable deaths in more coroner's narratives than most diseases, and the department's rule should be that intoxication is a diagnosis of exclusion made after the gas, the glucose, the head and the airway are safe, not before'.**
+He has **shock** (tachycardia, hypotension, prolonged capillary refill, pallor) with sudden back and groin pain. In a man over 50 who smokes, this is a **ruptured abdominal aortic aneurysm** until proven otherwise; renal colic, the commonest alternative diagnosis, does not cause shock.
+
+1. Move him to the resuscitation area and call the vascular surgical team and senior emergency clinician immediately.
+2. Two large-bore cannulae, bloods including crossmatch, activation of the **massive haemorrhage protocol** if he deteriorates.
+3. **Permissive hypotension**: do not chase a normal blood pressure with large volumes of fluid, which can worsen bleeding; aim to maintain consciousness and a systolic pressure of roughly 70–90 mmHg until the bleeding is controlled, following local protocol.
+4. Bedside ultrasound can show an aneurysm quickly. A CT angiogram is done only if he is stable enough; an unstable patient with a known aneurysm goes straight to theatre or endovascular repair.
+
+The triage error, labelling by first impression rather than physiology, is the teaching point: abnormal observations should always override the presenting complaint.
 :::
 :::
 
-::: exercise Apply an early-warning score {level=1}
-Compute NEWS2 and respond: 62-year-old post-cholecystectomy day 1: T 36.9, RR 24, SpO2 93 percent on air, BP 98/58, HR 104, new confusion. What does the number oblige you to do?
+::: example The 19-year-old who "came in drunk" {#ex-drunk}
+A 19-year-old man is brought in by friends at 01:00, smelling of alcohol, drowsy and incoherent. The friends say he had been drinking and "fell over earlier". Respiratory rate 14/min, SpO₂ 97% on air, pulse 58/min, BP 158/92 mmHg. He opens his eyes to pressure, makes incomprehensible sounds and localises to pressure. What is his GCS, and what must be excluded?
 ::: solution
-**Score-to-action ([[#def-system]]): the arithmetic - 'RR 24 (2), SpO2 93 (2), new O2 requirement-none-but-93-is-a-2, BP 98/58 (2 - the 91-100 band), HR 104 (1 - the 91-110 band), consciousness new confusion (3), temperature normal (0): total 10 which is the "emergency response" threshold in every version of the scheme. The obligations: the immediate review at the bedside by a senior (not a telephone order), the A-to-E assessment, the sepsis-and-bleed-and-hypoxia-and-drug-differential-worked (the bile leak and the collection and the chest and the PE and the opioids-and-benzodiazepine load in the chart), the escalation to the critical-care outreach team for consideration of transfer, and the communication to the surgical team and the family, all of which the score is designed to compel against hierarchy and quiet shift-cultures. The meta-answer: a score without its action is a number; the department that calculates NEWS2 and then discusses it is the department the trials did not study.'**
-:::
-:::
+GCS: eyes to pressure **E2**, incomprehensible sounds **V2**, localises **M5**: total **9**.
 
-::: exercise Run a deteriorating-patient call {level=2}
-On call, a nurse reports 'he is not right'; you find a 70-year-old conservatively managed diverticulitis patient, drowsy, mottled, HR 126, BP 82/48, lactate 5.4. The surgical team say 'we knew he was failing'. Manage the next hour including the goals conversation.
-::: solution
-**Septic-shock-with-a-history ([[#def-critill]], [[surgery/acute-abdomen]], [[geriatrics-palliative/palliative-care]]): the hour - 'the sepsis-bundle-run-catch-up-style: cultures, broad-antibiotics-within-the-hour-yes-but-minutes-better, 30 ml/kg balanced crystalloid with the response reassessed (the repeat-lactate-and-the-blood-pressure-and-the-urine-output-and-the-vasopressor-start-early-through-a-good-line-if-fluids-fail-because-'fluids-first'-is-not-'fluids-forever'), the source-control question answered by a surgeon at the bedside with a CT not on the telephone (the perforation-versus-drainable-collection-versus-diffuse-peritonitis decision determines whether ICU-stabilise-then-theatre or theatre-now or comfort-not-dictated-by-a-CT-train), the ICU-invitation-made-in-the-same-minute-as-the-noradrenaline-thought, and the 'we knew he was failing' sentence taken at face value and audited later - today it is not a conflict, it is an anamnesis that says recognition was late, which changes what you do for his next scan, not who you shout at now; and the goals - 'his baseline (the independent-man-with-dementia-of-his-own?) and his previously recorded preferences and the family in the room for the honest parallel-track sentence ('we are treating the infection and I am worried he may die from it; here is what we are doing and here is what we would and would not do if he worsens tonight'), the ceiling-of-care recorded in the notes the ICU will read, and the palliative-medicine-team-invited-as-symptom-experts-not-as-surrender which is the palliative chapter's concurrent-care model applied at maximum speed.**
-:::
-:::
+Alcohol is a diagnosis of exclusion. A reduced GCS in someone who has been drinking must not be attributed to alcohol until the following have been checked:
 
-::: exercise Fix the discharge {level=2}
-A 26-year-old with sickle cell disease and recurrent presentations leaves your ED at 05:00 with 'pain relief and follow-up GP': no long analgesia prescription, no hydration plan, a hydroxyurea query nobody checked, and the letter says 'rule vs vaso-occlusive crisis'. What should the discharge have contained, and what is the frequent-attender trap here?
-::: solution
-**Discharge-as-a-clinical-artefact ([[#def-system]], [[blood/haemoglobin-disorders]]): the standard for this patient - 'the named crisis-plan (the WHO-ladder-plus-regular-plus-breakthrough-analgesia-take-home-with-antiemetic-and-laxative-and-the-'my-hematology-plan'-document-which-good-services-issue-as-an-individualised-sick-day-and-crisis-protocol-with-the-opioid-doses-that-worked-here-recorded-because-'the-notes-say-she-is-drug-seeking'-is-often-'the-notes-say-what-she-actually-needs-was-never-written-down'), the safety-net (fever-and-chest-pain-and-neurological-and-'this-is-worse-than-usual'-advice-in-her-words-and-the-predicted-route-back (which unit, which team), the haemoglobin-question-if-bleed-or-hyperhemolysis, and the follow-up-with-the-sickle-cell-team-not-the-GP-alone-because-hydroxyurea-and-transfusion-status-and-vasculopathy-are-specialty-medicine-and-the-'query-hydroxyurea'-line-is-a-referral-failure-dressed-as-a-diagnosis); the trap - 'the frequent-attender label in sickle cell and other chronic-pain conditions is the intersection of real disease, undertreated outpatient care and stigma, and the correction is the individualised plan owned jointly by the specialty team and the ED (the single-document-and-the-one-phone-number-and-the-'this-plan-is-reviewed-annually'-culture), because otherwise the system oscillates between two errors - the opioid-stigma under-treatment that the sickle-cell mortality audits keep finding and the six-hour-ED-visit-for-pain-that-a-day-unit-or-home-treatment-pathway-should-have-provided - neither of which is the patient's behaviour and both of which are in your discharge data tonight.**
-:::
-:::
+- **Hypoglycaemia**: measure capillary glucose immediately; alcohol inhibits gluconeogenesis.
+- **Head injury**: he fell. A slow pulse with high blood pressure (part of Cushing's response) suggests raised intracranial pressure. He needs a CT head scan urgently according to NICE head injury guidance, with neurosurgical referral if a haematoma is found.
+- **Other drugs or poisons**, including opioids (look at the pupils and respiratory rate) and co-ingestions.
+- **Airway protection**: with a GCS of 9 and vomiting risk, place him in a monitored area with suction and senior airway review.
 
-::: exercise Design the department's capacity and safety plan {level=3}
-Your city's EDs: 4-hour breach rate 35 percent, 100-plus daily ambulance handovers over 60 minutes, corridor trolleys nightly, and the 7-day mortality in over-75s admitted out of hours 30 percent above weekday daytime rates. Write the plan that a clinician and a chief executive could both sign.
-::: solution
-**Capacity-as-patient-safety ([[#def-triage]], [[#def-system]], [[public-health/health-systems-economics]]): the joint premise - 'the two signatories must agree the finding: crowding, handover-delay and out-of-hours admission are clinical exposures with effect sizes, not comfort problems, and the plan's levers are the evidence's levers; the demand side - 'the same-day-access-and-urgent-community-response-and-virtual-ward-capacity-built-to-the-actual-ambulance-arrival-pattern-not-the-contract-figure (the GP-and-urgent-care-centre-parallel-pathways-with-clinical-staffing-that-actually-attracts-the-low-acuity-demand-because-a-shut-door-just-moves-the-ambulance), the care-home-and-frailty-bypass (the 'frail-elderly-assessment-at-ambulance-door-and-one-stop-assessment-unit' models with their admission-reduction data which is the geriatric chapter's service reused as an ED intervention), and the mental-health-crisis-alternatives-which-is-where-the-4-hour-pressure-and-the-cruelty-come-from-in-the-same-report; the flow side - 'the escalation-board-with-real-powers-and-predicted-daily-dilemmas (the discharge-lounge-and-the-porter-and-transport-war-room-and-'social-care-not-medical'-beds-bypassed-by-the-d2a-and-reablement-which-is-a-nursing-and-occupational-therapy-funding-decision-made-clinical-because-the-occupancy-crisis-then-arrives-in-your-resus-bay-at-03:00), and the handover reform (the paramedic-handover-bays-with-monitored-ambulances-and-the-'handover-in-under-10-minutes'-targets-with-clinical-staffing-agreed-with-the-union-and-the-ambulance-service-as-a-safety-intervention-because-the-handover-chair-is-a-treatment-delay-machine); the out-of-hours-mortality-question answered head-on - 'the seven-day-safety-establishment (the senior-decision-maker-in-resus-at-2am-not-just-on-call, the consultant-surgery-and-medicine-presence-modelled-to-the-acuity-curve-not-the-office-hours-curve, the overnight-radiography-and-lab-and-echo-access-that-makes-the-different-diagnosis-and-death-gap-a-staffing-chart-question, and the deterioration-protocol-reliability-audit-done-at-night-specifically-which-is-the-only-way-to-find-out-why-'we-knew-he-was-failing'-happens-between-midnight-and-seven); and the transparency - 'the daily-reported-metrics (handover-delays-and-corridor-trolley-counts-and-ambulance-diversion-hours-and-the-predicted-daily-escalation-decisions-with-reasons-published-because-the-public-debate-on-ED-failures-has-been-run-with-worse-data-than-this-and-because-shame-safely-aimed-at-schedules-is-the-cheapest-safety-intervention-medicine-has). If the clinician cannot sign it the plan is not safe; if the chief executive cannot fund it it is not a plan.'**
+The friends' story helps, but the label "drunk" is one of the classic routes to a missed extradural haematoma.
 :::
 :::
-
 
 ::: quiz
-The most reliable early indicator of deterioration in the emergency department waiting area is:
-- [ ] A single normal oxygen saturation at triage
-- [ ] The patient's triage category from arrival
-- [x] A change from previously recorded observations and clinical appearance over serial assessments
-- [ ] Absence of chest pain on direct questioning
+A 68-year-old woman on a medical ward has a NEWS2 of 3, made up only of a respiratory rate of 26/min. What is the appropriate response?
+- [ ] Repeat observations in 12 hours, because the aggregate score is low.
+- [x] Urgent review by a ward-based doctor, because a single parameter scores 3.
+- [ ] Immediate call to the cardiac arrest team.
+- [ ] No action unless the score reaches 5.
 ::: solution
-**Trends and re-assessment beat any single snapshot; that is why waiting-area re-triage intervals and early-warning scores exist and why a normal saturation is the least informative number in asthma - [[#def-triage]], [[#def-critill]].**
+A score of 3 in any single parameter triggers an urgent ward-based review, even when the total is below 5. A respiratory rate of 26 is a common early sign of sepsis, pulmonary embolism, heart failure or metabolic acidosis, and it is often the first observation to change.
 :::
 :::
 
-::: widget plot
-f: 2.5+ (x*1.1); 4; 1.3*x; 6; 9
-x: 0, 10
-y: 0, 20
-labels: \text{hours since arrival (illustrative)},\ \text{percent mortality signal (illustrative, scaled)}\ \text{time-to-antibiotic sepsis bundles};\ \text{door-to-balloon delay and myocardium};\ \text{ED crowding and 7-day mortality (illustrative slope)};\ \text{stroke thrombectomy 'time is brain' curve}
-caption: In emergency medicine the clock is a vital sign; the graph is why networks and targets exist ([[#def-system]]).**
+::: history
+The idea of sorting casualties by need goes back to Dominique-Jean Larrey, Napoleon's chief surgeon, who in the 1790s organised "flying ambulances" and treated soldiers according to the severity of their wounds rather than their rank. The emergency department as a specialty is much newer: emergency medicine was recognised in the USA in 1979, and in the UK the specialty developed from "casualty" departments through the second half of the twentieth century. The ABCDE sequence came from trauma care, popularised by the Advanced Trauma Life Support course, first run in Nebraska in 1978 and adopted by the American College of Surgeons in 1980, and was adapted for medical patients by the Resuscitation Council UK. Early-warning scores were developed in British hospitals in the late 1990s; the Royal College of Physicians published a standardised National Early Warning Score in 2012 and NEWS2 in 2017.
 :::
 
 ## Where this leads
 
-Shock physiology and fluids are the next chapter ([[emergency-critical-care/shock-fluids]]), the airway and ventilation decisions in [[emergency-critical-care/airway-ventilation]], the arrest in [[emergency-critical-care/resuscitation]], the toxicological syndromes in [[emergency-critical-care/poisoning]], and the older-adult and mental-health assessment extensions in [[geriatrics-palliative/ageing-frailty]] and [[psychiatry/psychiatric-assessment]].
-
-::: history
-**Emergency medicine's history is triage, resuscitation and the queue. The ancestry is military and municipal: Larrey's flying ambulances and the etymology of triage (the French surgeons 'sorting the wounded'), the railroad and factory accident wards of nineteenth-century cities, and the first purpose-built accident services (the London Accident Station of 1930 and the US hospital 'accident rooms' that were, until mid-century, usually the least-prestige corner of surgery). The specialty itself was founded in the 1960s-70s on three continents almost at once - Cincinnati and the American boarding-and-crash-room reform movement, the Australian and British resuscitation-room schools - and professionalised through the Resuscitation Council, the American Board of Emergency Medicine and the British College of Emergency Medicine, which turned 'emergency physician' from a rotator into a career, the trauma-system build (R. Adams Cowley and the Maryland helicopter service, Cook County's trunkey-era surgery, the American College of Surgeons' trauma-centre verification system, and Britain's 2000s network rebuild after the Elliott and Jamieson-era reports found that Londoners were dying of treatable injuries - a finding that was historically interesting mainly for being fifty years late), and the invention of coronary care from the other direction (the 1960s Kuhn and Queen's Square and Papworth and Maryland CCU era, followed by the realisation that the earliest hours decide infarct size - which is how the CCU's monitor migrated into the emergency department), and and the 1995-2015 thrombolysis-PCI-thrombectomy network era, which taught everyone that time targets are drugs: the NINDS tissue-plasminogen-activator trial, the primary-angioplasty pathway trials, and the 'drip and ship versus ship and drip' logistics arguments, which is medicine doing operations research. The triage-science (the triage-science of the 1990s-2000s (the Manchester Triage System, CTAS and the Emergency Severity Index and their validation cohorts) whose reliability literature keeps producing the same under-triage findings - older adults, women with cardiac pain and behavioural-health presentations - in every country's audits) and the early-warning-score movement (the modified-early-warning-score heritage of the 1990s, the Patient at the Centre curriculum of 2005, the NEWS2 roll-out and the NCEPOD 'Boxes' report era, and the national patient-safety agency's recognise-assess-communicate toolkit) represent the same idea hospitalised: that deterioration is visible to ordinary staff with a protocol and an escalation path. The queue's epidemiology is the newest and ugliest chapter: the 2010s-2020s crowding-and-ambulance-handover-delay literature (the ACEP, Royal College of Emergency Physicians, Care Quality Commission and Canadian Institute for Health Information reports and the editorials on boarding-mortality signals, culminating in the 2022-23 British winter crises that made 'four hours' a political profanity and the full-hospital-policy era that normalised overnight corridor care), the violence-against-emergency-workers-research-and-postcode-culture-questions, and the 'ED as the healthcare system's pressure gauge' finding (when primary care and social care and mental-health-crisis-services and beds fail, their demand arrives at the ambulance bay and the mortality attaches to the people who could not be admitted or safely discharged). The history teaches the chapter's method with borrowed force: the time-target and early-warning and network-activation technologies are the only interventions in medicine that work by changing when people look, not only what they do - which is why this specialty's greatest discoveries are schedules.** - [[cardiovascular/coronary-artery-disease]], [[nervous-system/stroke]], [[surgery/trauma]].**
-:::
+Cardiac arrest and the peri-arrest rhythms are in [[emergency-critical-care/resuscitation]]; the circulation step expands into [[emergency-critical-care/shock-fluids]]; the airway and breathing steps into [[emergency-critical-care/airway-ventilation]]; the D step for poisoned patients into [[emergency-critical-care/poisoning]]. The history and examination skills used after the primary survey are covered in [[clinical-skills/physical-examination]], and the safety culture that makes escalation work in [[clinical-skills/patient-safety]].
 
 ::: summary
-- Triage allocates risk in the absence of diagnosis and fails predictably (older adults, women, behavioural-health and low-credibility patients); serial re-assessment of the waiting room is the safety net the evidence demands.
-- ABCDE is a treatment-triggering algorithm, not an inspection: each step has named rescues, and the second survey after stabilisation supplies the history and mechanism the first skipped.
-- In the undifferentiated patient, run the oxygen-perfusion-sepsis-metabolic-horsemen questions in parallel; treat time-critical physiology before the diagnosis is tidy.
-- A normal saturation can hide pre-arrest asthma and a normal temperature can hide geriatric sepsis: read trend, context and the shape of the patient.
-- Time targets work when they are networked (cath lab, stroke, trauma) and harm when they are gamed; crowding is a mortality variable and a system output.
-- The discharge is a clinical act: the safety net in the patient's words, the booked follow-up before departure, and the record that tells the next clinician what was excluded and how.
+- Assess and treat acutely ill patients in the order Airway, Breathing, Circulation, Disability, Exposure; treat what you find before moving on, call for help early, and reassess after every intervention.
+- Count the respiratory rate properly; it is the most sensitive sign of deterioration. Always check glucose in a patient with altered consciousness.
+- NEWS2 combines seven observations; 1–4 needs a ward response, 3 in a single parameter urgent ward review, 5–6 an urgent response and 7 or more an emergency response. Use scale 2 for SpO₂ only in confirmed hypercapnic failure.
+- Normal numbers can be falsely reassuring: compensation in young people, beta-blockers, exhaustion in asthma, absent fever in older people, oximeter error in darker skin.
+- Emergency department triage (such as the Manchester system) sets priority by physiology and discriminators; abnormal observations override the presenting complaint.
+- Escalate with SBAR, state what you need and by when, and plan ceilings of treatment in advance.
 :::
 
 ## Exercises
 
-::: exercise Read the vitals {level=1}
-Interpret and act: (a) 30-year-old, RR 32, SpO2 99 percent, HR 110, 'just anxious'; (b) 78-year-old post-fall, HR 60 on bisoprolol, BP 90/60, warm, confused; (c) 45-year-old, HR 120, BP 160/95, agitated, dilated pupils, diaphoresis.
+::: exercise Score the observations {level=1 check="7"}
+A 58-year-old man has: respiratory rate 21/min, SpO₂ 93% on air (scale 1), BP 132/80 mmHg, pulse 96/min, alert, temperature 39.3 °C. Calculate his NEWS2 and state the response it requires.
+::: hint
+Score each of the seven parameters from the table in [[#def-news2]], remembering that breathing air scores 0.
+:::
 ::: solution
-**Three-shapes-three-actions ([[#def-critill]]): (a) 'anxiety' with tachypnoea and tachycardia is a physiological diagnosis until excluded - the metabolic-acidosis-with-compensatory-hyperventilation-differential (DKA-with-a-normal-sugar-euglycaemic-adjacent-SGLT2-inhibitor-history-or-the-early-sepsis-or-the-pulmonary-embolus-or-the-salicylate - do the gas and the glucose and the pregnancy test before the label); (b) the beta-blocked blunt-heart-rate-response-in-a-bleeding-or-septic-older-adult: the relative bradycardia with hypotension and confusion post-fall is a bleed and a shock until proven otherwise (the trauma primary survey, the pelvis and abdomen and the head-injury-thoughts, and the bloods-and-crossmatch-and-senior-now-because-'elderly-fall' is a triage category not a diagnosis); (c) the sympathomimetic toxidrome (the cocaine-and-amphetamine-and-entactogen-list and the anticholinergic-and-serotonin-and-NMS-and-thyroid-storm-differential from the drugs-and-psych history, the cooling and the benzodiazepine-first management and the 'don't fight a stimulant with physical restraint alone' safety lesson, and the CT head if the pupils and fever and rigidity point elsewhere). All three answers share the chapter's habit: the vitals are the patient talking, the drug list and age are the translators.**
+Respiratory rate 21 scores 2; SpO₂ 93% scores 2; air scores 0; BP 132 scores 0; pulse 96 (band 91–110) scores 1; alert scores 0; temperature 39.3 °C scores 2. The total is $2 + 2 + 0 + 0 + 1 + 0 + 2 = 7$, which requires an emergency response from a team with critical care competencies.
 :::
 :::
 
-::: exercise Triage the mass-casualty shift {level=2}
-Coach crash, 40 arrivals in 30 minutes, your ED is already full: triage the first wave using the system's logic and state the three decisions you will defend afterwards in court or coroner's terms.
+::: exercise Glasgow Coma Scale {level=1 check="10"}
+A patient opens her eyes to sound, uses inappropriate words, and flexes her arm away from a painful stimulus with normal flexion. What is her GCS?
 ::: solution
-**Disaster-triage-is-triage-with-different-morals ([[#def-triage]], [[emergency-critical-care/major-incidents]]): the method - 'count-categorise-tag-communicate: immediate-urgent-delayed-minor-expectant under the incident-plan categories (the life-threat-but-survivable get the theatre and the catheter and the airway - the tension pneumothorax and the compressible haemorrhage and the compromised airway beat the head-injury-beyond-help and the moribund-abdominal-injury because in a mass-casualty setting resources-are-allocated-to-survivable-physiology-not-to-sickest-feelings-which-is-the-ethical-difference-between-incident-medicine-and-normal-medicine and must be said aloud to the team), the two-pass rule (nothing declared dead without a second check and a designated officer because 'expectant' has a body-count-adjacent-error-rate), and the paediatric-and-unaccompanied-children-segregation-and-the-family-reunification-desk-which-is-not-soft-it-is-the-incident's-verification-system; and the three defensible records - 'the triage-categories-with-times-and-by-whom (the tags preserved), the resource decisions taken against the declared plan (the ICU-bed-assignment and the CT-scan-sequencing rationale), and the 'this is a major incident' declaration time - because the law and the inquiry judge whether the system acted consistently with its published plan, and the plan's legitimacy depends on the decision-making being traceable and the expectant patients having received their palliative-and-dignity-care-which-incident-medicine-documents-as-care-not-abandonment'.**
+Eyes to sound E3, words V3, normal flexion M4: $3 + 3 + 4 = 10$.
 :::
 :::
 
-::: exercise Do the deterioration call {level=2}
-Ward nurse phones you at 22:40: patient six days post-laparotomy, NEWS2 score 7, HR 118, BP 96/58 on the monitor, urine output 10 ml/h, lactate not done, 'the registrar saw her at four and said she was fine'. Script the phone call, the arrival and the first hour.
+::: exercise Which scale? {level=1}
+A 71-year-old man with severe COPD and documented previous hypercapnic respiratory failure is admitted with an exacerbation. His prescribed target saturation is 88–92%. His SpO₂ is 90% on 1 L/min oxygen. Which SpO₂ scale should be used, and how many points does his saturation score?
 ::: solution
-**The-SBAR-and-what-follows ([[#def-system]], [[#def-critill]], [[surgery/perioperative-care]]): the call - 'SBAR-as-she-taught-and-as-you-answer: Situation (deteriorating, score 7, day 6), Background (laparotomy for what, epidural and antibiotics current), Assessment (tachy-hypotensive-oliguric-lactate-not-done-my-concern-is-anastomotic-leak-or-collections-or-PE), Recommendation ("I am coming now; please start oxygen and IV fluids and draw the bloods and get the gas while I am here, and please page the surgical registrar too") - and the call's real content is a time commitment, not a sympathy; the arrival - 'the A-to-E re-survey with the wound and the drains and the abdomen examined and the imaging and theatre list decision made early (the leak at day 5-7 is a relaparotomy-question-not-a-meropenem-question and the surgeon-with-a-sterile-gown-deciding-by-midnight-is-the-outcome), the sepsis-bundle-completed-not-restarted (cultures-then-antibiotics-lactate-fluids-lactate-repeat-and-the-vasopressor-decision-in-the-resus-bay-if-she-stays-hypotensive-with-ICU-invited-not-referred), and the communication with the family ('she is much worse, we think the join may have leaked, we are taking her to theatre') documented with a time; and the system - 'the 'registrar saw her at four' is not a conflict, it is data: the score was lower then and the deterioration is the point, so the handover-culture-fix (the NEWS2-escalation-protocol-that-tells-nurses-exactly-what-to-call-and-exactly-who-comes-and-the-review-note-that-says-'reviewed-again-at-22:40-because'-which-is-the-record-that-protects-everyone-except-the-system-that-skipped-it).**
+SpO₂ scale 2 is used because he has confirmed hypercapnic respiratory failure and a prescribed target of 88–92%. On scale 2, a saturation of 88–92% scores 0. (He still scores 2 for being on oxygen.) Scoring him on scale 1 would add 3 points and could trigger unnecessary emergency calls; using scale 2 in someone without confirmed hypercapnic failure would hide hypoxaemia.
 :::
 :::
 
-::: exercise Design the department's safety programme {level=3}
-Your ED's serious incidents cluster: waiting-room deteriorations, missed atypical ACS, paediatric analgesia delays, mental-health patients in the same 4-hour pressure, and two 'sick-refusers' with bad outcomes. Write the programme with interventions, owners and measures, and the equity analysis.
+::: exercise SBAR call {level=2}
+Write an SBAR handover for the woman in [[#ex-news2]] (NEWS2 of 9 two days after bowel resection) to the surgical registrar.
 ::: solution
-**ED-safety-by-failure-mode ([[#def-triage]], [[#def-system]], [[clinical-skills/patient-safety]]): waiting-room-deterioration - 'the re-triage-clock-with-a-protocol (the nurse-reassessment-intervals-and-nursing-initiated-ECG-and-blood-gas-competencies-and-the-'anyone-can-ask-for-re-triage'-patient-information-card-and-the-observation-unit-where-nobody-sits-unscored-after-4-hours; measure: deteriorations-outside clinical areas and ECG-to-arrival-time); missed-atypical-ACS - 'the decision-support-on-the-triage-form-for-the-epigastric-and-the-woman-and-the-diabetic-and-the-over-50-(the 'consider ECG' prompts aimed not sprayed because alert-fatigue is why the old rules died) and the sex-and-age-gap teaching-in-the-department-briefings-because-the-data-on-women's-chest-pain-dismissal-is-not-a-myth-and-the-fix-is-a-second-look-not-a-blame; measure: troponin-positive-and-missed-ACS-arrivals-and-time-to-ECG-disaggregated-by-sex-and-age); paediatric-analgesia - 'the weight-tape-and-pre-mixed-syringe-and-PO-sucrose-and-splint-first-culture-and-the-'children-die-quietly'-observation-protocol-because-the-paediatric-ED-analgesia-delay-literature-and-the-CEMACH-style-findings-are-the-argument; mental-health-in-the-4-hour-machine - 'the-parallel-pathway (the single-room-not-a-corridor-with-ligature-risk-reduction-and-mental-health-practitioner-assessment-inside-the-waiting-time-targets-changed-by-the-MHSA-adjacent-reform-because-a-4-hour-target-applied-to-a-psychosis-is-a-cruelty-with-a-metric-and-the-suitable-place-of-assessment-standards-are-the-legal-floor) and the liaison-team-staffed-to-the-actual-arrivals-not-the-2015-establishment; the sick-refusers - 'the-capacity-assessment-on-a-proforma-with-a-support-step-and-a-named-reviewer-and-a-'she-can-refuse-this-and-here-is-what-we-can-still-offer'-family-conversation-because-the-coroner's-question-in-both-cases-was-'who-actually-spoke-to-her'; the equity-analysis - 'the whole programme reports by sex, age band, ethnicity, deprivation, disability and interpreter-need because the department's failure modes are not randomly distributed and the two dead refusers and the analgesia gaps and the under-triaged 78-year-olds will cluster exactly where the national data says they do - and the programme's success is measured in those gaps closing, not in the aggregate four-hour percentage improving, because aggregates are how safety programmes hide.**
+**Situation**: "This is Alex, the FY1 on Ward 7. I'm calling about Mrs Grace Adeyemi, 74, in bed 4. She has a NEWS2 of 9 and I am worried she has sepsis."
+**Background**: "She is day 2 after an anterior resection for cancer. She was well yesterday."
+**Assessment**: "Airway patent. RR 23, SpO₂ 95% on 2 L, chest clear. Pulse 112, BP 104/62, cool peripheries, capillary refill 3 seconds. Alert, glucose 7.2. Temperature 38.4, abdomen more tender than yesterday. I've taken cultures and a gas; lactate 3.1. I think she may have an anastomotic leak."
+**Recommendation**: "I've started antibiotics and a fluid bolus. I need you to see her within 15 minutes, and I think outreach should be called. Is there anything you want me to do before you arrive?" The registrar repeats back the key details and the agreed time.
+:::
+:::
+
+::: exercise Triage categories {level=2}
+Assign a Manchester Triage colour (red, orange, yellow, green or blue) to each patient and give one reason: (a) a 40-year-old with crushing chest pain and sweating; (b) a 30-year-old with a two-week-old sprained ankle, walking normally; (c) a 75-year-old with new confusion and a temperature of 39 °C; (d) a 25-year-old who is not breathing.
+::: solution
+(a) Orange (very urgent): severe pain with possible acute coronary syndrome; ECG within 10 minutes.
+(b) Blue or green (non-urgent or standard): no life threat, minimal pain, chronic problem.
+(c) Orange (very urgent): altered conscious level with fever suggests sepsis or meningitis.
+(d) Red (immediate): airway and breathing compromise; this is a resuscitation case.
+Local flowcharts determine the exact category; the principle is that physiology and key discriminators set priority.
+:::
+:::
+
+::: exercise The falsely reassuring blood pressure {level=2}
+A 28-year-old woman is 7 weeks pregnant and has lower abdominal pain. Pulse 122/min, BP 112/70 mmHg, capillary refill 3 seconds, pale. The triage nurse notes that her blood pressure is normal. Explain why this patient may be in shock and what diagnosis must be excluded.
+::: solution
+Young, healthy adults compensate for blood loss by vasoconstriction and tachycardia, maintaining blood pressure until a large proportion of their circulating volume has been lost. Her tachycardia, pallor and slow capillary refill indicate significant hypovolaemia despite a normal systolic pressure. Her shock index (pulse divided by systolic pressure) is $122/112 \approx 1.1$, which is raised. In early pregnancy with abdominal pain, a **ruptured ectopic pregnancy** must be excluded: urgent senior review, two large-bore cannulae, crossmatch, bedside ultrasound and gynaecology referral.
+:::
+:::
+
+::: exercise Deterioration overnight {level=3}
+An 82-year-old man was admitted with pneumonia. His NEWS2 at 20:00 was 2, at 00:00 was 4, and at 04:00 is 6 (respiratory rate 24, SpO₂ 93% on 2 L oxygen, pulse 104, BP 108/64, alert, temperature 37.9). He has a ReSPECT form stating that he would not want intubation or CPR, but would want "everything else". The nurse asks whether it is worth calling anyone. Discuss the response.
+::: solution
+Yes. The score has risen steadily and has crossed the urgent-response threshold, which requires review by a clinician competent in acute illness. The trend is as important as the value. A ceiling of treatment that excludes intubation and CPR does not exclude escalation: he still wants antibiotics, oxygen, fluids and possibly non-invasive ventilation or a higher level of care if that fits his wishes and is likely to help. The reviewing clinician performs an ABCDE assessment, checks the antibiotic choice and timing, considers complications (empyema, sepsis, heart failure, pulmonary embolism), takes a blood gas, and decides with the patient and family whether a trial of a higher level of care is appropriate. "Not for CPR" never means "not for review".
+:::
+:::
+
+::: exercise Hypoglycaemia in D {level=3}
+A 47-year-old woman with type 1 diabetes is found by her partner sweaty and incoherent. Paramedics record GCS 11, capillary glucose 1.9 mmol/L, pulse 102/min, BP 138/84 mmHg. She cannot swallow safely. Outline the treatment and the questions that need answering before she goes home.
+::: solution
+She has severe hypoglycaemia with reduced consciousness, so oral glucose is unsafe. Treatment (following local protocol) is **IV glucose** (for example 10% glucose) or, if IV access is not available, **IM glucagon**. Glucose is rechecked after 10–15 minutes and treatment repeated until it is above 4 mmol/L, followed by a long-acting carbohydrate once she can eat.
+
+Before discharge: why did this happen (missed meal, alcohol, exercise, insulin error, kidney impairment, new adrenal or thyroid problem)? Is the insulin dose right? Was it a long-acting insulin, which may cause recurrent hypoglycaemia needing longer observation? Does she have impaired awareness of hypoglycaemia? She needs advice about driving (DVLA rules on severe hypoglycaemia), and follow-up with her diabetes team.
 :::
 :::
