@@ -1,141 +1,388 @@
-Epidemiology is the physiology of populations: incidence and prevalence are its vital signs, study designs its examination manoeuvres, and bias its differential diagnosis. **This opening chapter supplies the measures and their arithmetic - incidence (cumulative incidence and incidence rate, the risk-versus-rate distinction students must not blur), prevalence and its determinants (the steady-state relationship to incidence and duration, the screening and survival implications), the rates and ratios everyone quotes (relative risk, odds ratio, hazard ratio, attributable and population-attributable fractions with their causation politics), and the standardisation apparatus (crude versus adjusted rates, direct and indirect standardisation, why international comparisons are largely methodology) - plus the vital-statistics and case-definition craft on which the screening and vaccination chapters are built.**
+A district reports 300 people living with multiple sclerosis and 12 new diagnoses this year. A newspaper says deaths from a cancer have "doubled". A drug leaflet says a side effect is "common". Each statement is a measurement of disease, and each one can mean very different things depending on what was counted, in whom, and over what period.
 
-## The vital signs
+Epidemiology starts with counting. Before we can ask whether smoking causes lung cancer or whether a drug prevents strokes, we need precise ways to say how much disease there is and how fast it is appearing. This chapter builds that vocabulary: prevalence, incidence, mortality and survival measures, standardisation, and the measures that compare two groups. Later chapters use every one of these terms.
 
-::: definition Incidence, prevalence and their relationship {#def-measures}
-**Prevalence is the proportion diseased at a time point (point prevalence, period prevalence); it is a photograph, and it is what most 'the burden of X' headlines actually report. Incidence is new events in at-risk people over time: cumulative incidence (the risk - a proportion, needing the follow-up window stated) and incidence rate (the person-time denominator, which is why it must always be windowed). The relationship - prevalence approximates incidence times average duration in steady state - is the chapter's most productive formula: a disease's prevalence rises when incidence rises or when people survive longer without cure (the HIV and heart-failure prevalence paradox: treatment success raises the burden statistic), and screening inflates prevalence at diagnosis through earlier detection (the screening chapter's debt to this line). The at-risk denominator is a skill: numerators need populations (the 'risk of X in people with Y' headlines that divide by the wrong base), incidence-rate calculations require person-time hygiene (the 'at risk until event, death or exit' censoring logic that prefaces the survival chapter), and the absolute-versus-relative distinction governs both (a doubled rare risk is small, and a 5 percent reduction of a common risk is a busy clinic). The measures carry design consequences: cumulative incidence suits fixed cohorts, rates suit dynamic populations, prevalence suits planning and incidence suits causation, since only incidence observes the exposed before the event. The clinical translations are everywhere: the 10-year cardiovascular risk is a cumulative incidence from competing-risk models (the overestimation caused by ignoring death as a competing event), the number-needed-to-treat is the inverse of an absolute risk difference (the relative-risk-only trials' chronic deception), and an outbreak's attack rate is a cumulative incidence in an exposure-defined population. The measurement layer arrives early: case definitions (the sensitivity-specificity trade-off in surveillance ascertainment), diagnostic drift and coding change (the coding-tide prevalence artefacts), and changing denominators (migration, ageing, and the apparent epidemic caused by a better test). Four permanent questions to instil: what is the numerator's definition, what is the denominator's population, what is the time window, and what is the comparison - the reflex that survives every media distortion.**
+## Counting cases {#counting}
+
+Every measure of disease frequency is a fraction. The numerator counts cases. The denominator counts the people who could have become cases. Most errors in reading epidemiological numbers come from not asking what sits on each side of the fraction.
+
+::: definition Case definition and population at risk {#def-case}
+A **case definition** is the set of criteria a person must meet to be counted as having the condition. It may be clinical (symptoms and signs), laboratory based, or a combination, and it often has levels of certainty such as *suspected*, *probable* and *confirmed*.
+
+The **population at risk** is the group of people who are capable of developing the condition during the period of observation. People who already have the condition, or who cannot get it, are excluded from the denominator of an incidence measure.
 :::
 
-## Comparing populations
+Two examples show why both parts matter. A woman who has had a hysterectomy is not at risk of cancer of the cervix, so including her in the denominator lowers the apparent incidence. And if a surveillance system changes its case definition, say from "confirmed by culture" to "confirmed by culture or by PCR", the number of cases can rise sharply although nothing has changed in the population. When a count jumps, the first question is always whether the definition, the test or the reporting changed.
 
-::: definition Rates, ratios and the causation arithmetic {#def-ratios}
-**The comparison zoo, each with its habitat: the risk ratio (relative risk - intuitive, cohort-native), the risk difference (absolute - the public-health truth signal and the NNT's parent), the odds ratio (the case-control workhorse, the logistic-regression output, and the rare-disease approximation to the risk ratio whose violations produce most misread papers - the 'odds ratio of 3 that was a risk ratio of 1.6' class), the rate ratio (person-time comparisons), and the hazard ratio (the ratio of instantaneous rates whose proportional-hazards assumption must be checked before the single-number story is told). The fraction family carries policy weight: the attributable fraction among the exposed (the proportion of the exposed group's disease preventible by removing the exposure) and the population-attributable fraction (the population share dependent on exposure prevalence) - with the standing caution that population-attributable-fraction arithmetic inherits every confounding failure of its risk ratio, so it is interpretation, not experiment. The ratio-versus-difference choice is distributional politics: a new treatment that halves a common risk widens absolute inequality between high- and low-risk groups (the prevention-of-inequality findings), which is why equity audits now appear in guidelines. The survival apparatus: the Kaplan-Meier curve (the product-limit estimator, its censoring at random assumption, and the informative drop-out that trials commit quietly), the log-rank test (one degree of freedom comparing whole curves), the median-versus-landmark reading problem (the hazard ratio with crossing curves), and the restricted mean survival time and other summaries when proportional hazards fails. Rate comparison across populations needs standardisation because crude rates confound biology with age structure: international 'best cancer survival' rankings mostly measure demographics and diagnostic fashion, and hospital outcome league tables are statistical instruments before they are quality statements - the funnel-plot and small-number literacy belongs to the appraisal chapters.**
+## Prevalence {#prevalence}
+
+::: definition Prevalence {#def-prevalence}
+**Prevalence** is the proportion of a population that has the condition at a given time:
+
+$$
+\text{prevalence} = \frac{\text{number of people with the condition}}{\text{number of people in the population}}
+$$
+
+**Point prevalence** refers to a single moment (for example, 1 January). **Period prevalence** counts everyone who had the condition at any time during an interval (for example, during the past 12 months). Prevalence is a proportion. It has no units and lies between 0 and 1, though it is often written as a percentage or per 1,000 or per 100,000.
 :::
 
-## The adjustments
+Prevalence describes the burden of disease. It tells a health service how many people need a diabetes clinic, how many inhalers to buy, or how many hospital beds are occupied by people with dementia. It is what a cross-sectional survey measures, because a survey looks at a population at one point in time.
 
-::: definition Standardisation, vital statistics and valid counting {#def-standardisation}
-**Standardisation answers the question 'is this place sicker or just older?' Direct standardisation applies each group's age-specific rates to a common standard population (the world and European standard traditions) - intuitive, but it needs the same detail for every group. Indirect standardisation applies standard rates to each group's structure to yield the standardised mortality ratio (observed over expected), the engine of occupational cohort studies and hospital outcome tables, with two traps: standardised mortality ratios across populations with different structures are not comparable to each other, and the expected rate drifts as the reference population gets healthier, making industrial-cohort ratios decline almost by themselves. The vital-statistics layer: cause-of-death certification (the immediate-cause-chain versus contributing-conditions logic and the underlying-cause selection rules that make international mortality data a legal and medical construct), registration completeness (where births and deaths are not registered, rates cannot exist - the civil-registration development problem), and garbage coding of ill-defined causes (redistributed by the burden-of-disease methods). The counting lessons endure: guard the denominator (population estimates between censuses, de-facto versus de-jure population problems, and the migration-adjustment errors that distort small-population comparisons), the numerator (diagnostic capability, availability of autopsy and death investigation, and the disease-classification revision effects that masquerade as time trends), and the population at risk (occupational person-time, the healthy-worker effect, and the crude-to-cause-specific-to-standardised hierarchy of rates). One more craft point: a rate is a model - the choice of numerator definition, denominator, window and adjustment encodes theory - and good epidemiologists state the model before quoting the number, which is the habit this course's appraisals drill.**
+Prevalence does not tell us about risk. A condition can be highly prevalent because it is common to develop or because people live with it for a long time. Type 2 diabetes and HIV infection in countries with good access to antiretroviral therapy are prevalent mainly because people survive with them for decades. A rapidly fatal cancer can have a high incidence and a low prevalence.
+
+## Incidence {#incidence}
+
+Incidence measures the occurrence of *new* cases. There are two versions, and they answer different questions.
+
+::: definition Incidence: risk and rate {#def-incidence}
+The **cumulative incidence**, or **risk**, is the proportion of an initially disease-free population that develops the condition during a stated period:
+
+$$
+\text{risk} = \frac{\text{new cases during the period}}{\text{people at risk at the start of the period}}
+$$
+
+A risk is a probability. It must always be quoted with its time period ("the 10-year risk of a heart attack is 12%").
+
+The **incidence rate** divides new cases by the total **person-time** at risk, the sum of the time each person was observed while free of the condition:
+
+$$
+\text{incidence rate} = \frac{\text{new cases}}{\text{total person-time at risk}}
+$$
+
+Its units are "per person-year" (or per 1,000 person-years, and so on). A rate is not a probability. It describes how fast new cases arise, like speed describes how fast distance is covered.
 :::
 
-::: example Read the headline {#ex-headline}
-A press release: 'New snack habit doubles kidney-cancer risk, study finds.' The source is a prospective cohort: 41 cases among 40,000 exposed and 82 among 80,000 unexposed over 10 years, reported as hazard ratio 2.0 (95 percent confidence interval 1.3 to 3.0).
+Risk is the natural measure when everyone is followed for the same period, as in a short trial or an outbreak. Rates are needed when people enter and leave observation at different times: they join a registry late, move away, die of something else, or develop the outcome and so stop contributing time at risk. Person-time handles all of these by giving each person credit only for the time they were actually observed and at risk.
+
+::: example Person-time in a dialysis unit {#ex-persontime}
+A dialysis unit follows 40 patients for up to 2 years to measure the occurrence of line infections. Thirty patients complete 2 years without infection. Six develop an infection, on average after 1 year. Four transfer to another unit after 6 months, free of infection. Calculate the incidence rate, and explain why "6 out of 40" is not a satisfactory answer.
 ::: solution
-**The four questions plus one ([[#def-measures]], [[#def-ratios]]): Absolute versus relative: cumulative incidence is 41/40,000 (1.0 per thousand) versus 82/80,000 (1.0 per thousand) - the doubling lives in the modelled person-time comparison with covariate adjustments; the ten-year risk difference is near zero and the number needed to abstain is astronomical. Window: a hazard ratio of 2.0 needs the follow-up distribution stated; 'doubles risk' at year nine of a ten-year study says nothing about year two. Proportional hazards: no curve inspection reported, so the single-number summary is provisional. Confounding and measurement: how was snack habit measured, once, at baseline? Exposure misclassification usually biases toward the null, which makes a 2.0 from a sloppy exposure measure less impressive, not more; and reverse causation (pre-diagnostic symptoms changing diet) is the standing alternative. The plus-one: the event count (123 cases total) - small-numbers instability, the interval's width, and the publication venue's prior. The honest translation: 'in this cohort the ten-year kidney-cancer risk was about one in a thousand either way; the relative signal is real-ish and the absolute risk is tiny; nobody should change their diet for it, though diet as a renal-risk marker deserves its own better-measured studies.'**
-:::
+Add up the time at risk:
+
+- 30 patients × 2 years = 60 person-years
+- 6 patients × 1 year = 6 person-years (each stops contributing at the time of infection)
+- 4 patients × 0.5 years = 2 person-years
+
+Total person-time = 68 person-years. The incidence rate is $6/68 = 0.088$ per person-year, or about 88 per 1,000 person-years.
+
+The figure 6/40 = 15% treats the four transferred patients as if they had been followed for the full 2 years and stayed infection-free. We do not know that. They might have developed an infection after transfer. The person-time approach uses exactly the information we have and no more.
 :::
 
-::: example The prevalence paradox {#ex-prevalence}
-Your health board's diabetes briefing shows prevalence tripling in one district over fifteen years while the register's newly-registered incidence has been flat for six years. The Director of Public Health asks whether the epidemic is 'real'.
-::: solution
-**Decompose before you panic ([[#def-measures]], [[#def-standardisation]], [[endocrine/diabetes]]): the prevalence equation first: tripling with flat incidence means duration lengthened - diagnostically (the detection surge raised the registered pool) and therapeutically (survival improved; the cure that never arrives makes prevalence rise, the same arithmetic as HIV's and heart failure's curves). The decomposition: the incidence trend (with the at-risk denominator's own change - obesity, ageing, migration), detection intensity (the screening and case-finding years, the diagnostic-code changes, the incidence-of-diagnosis versus incidence-of-disease problem), and survival (the improved cardiovascular and renal outcomes that keep people in the register). Each implies different board action: real incidence rise argues for prevention spend; detection-driven rise argues for holding incidence flat in reporting; survival-driven rise argues for complication services (the retinal, renal and foot programmes - success costs clinic space). The standardisation trap: crude district comparisons must be age-standardised before the epidemic is even localised - a district's new older workforce could age-adjust the headline away. The honest briefing: three curves (age-standardised incidence, prevalence, one-year survival), the register's completeness estimate, and the sentence the board needs: 'part of the epidemic is us getting it right; the part that is not is where your money should go.'**
-:::
 :::
 
-::: quiz
-A disease's prevalence in steady state is best approximated by:
-- [ ] Incidence divided by duration
-- [x] Incidence multiplied by average duration
-- [ ] The case-fatality rate times the attack rate
-- [ ] The survival fraction at five years
-::: solution
-**P ≈ I × D: prevalence is the pool, incidence the inflow and duration the residence time - which is why treatments that prolong life without cure raise prevalence - [[#def-measures]].**
+::: warning "Rate" is not a synonym for "proportion"
+Newspapers, and many papers, call any fraction a "rate": the "prevalence rate", the "case fatality rate", the "attack rate". Strictly, a rate has time in its denominator. A prevalence of 8% is not a rate, and neither is a 5-year risk of 12%. The distinction matters when you compare studies: a rate of 10 per 1,000 person-years and a 10-year risk of 10% are not the same quantity, and they only approximately agree when the outcome is uncommon. When you read "rate", check the units. If there is no time unit, it is a proportion.
 :::
+
+## How incidence and prevalence are linked {#linking}
+
+Think of a population as a bath. New cases flow in through the tap at the incidence rate. Cases leave through the plughole by recovery or death. The water in the bath at any moment is the prevalence pool. If the tap and the plughole are steady, the level settles where inflow equals outflow.
+
+::: theorem Prevalence, incidence and duration {#thm-prev-inc}
+In a stable population in which the incidence rate $I$ and the mean duration of the condition $D$ do not change over time,
+
+$$
+\frac{P}{1-P} = I \times D
+$$ {#eq-prev-odds}
+
+where $P$ is the prevalence. When the condition is uncommon ($P$ below about 10%), $1-P$ is close to 1 and
+
+$$
+P \approx I \times D.
+$$ {#eq-prev-approx}
+:::
+
+::: proof
+Suppose the population contains $N$ people, of whom $NP$ have the condition and $N(1-P)$ do not. New cases arise only among those without the condition, so the number of new cases per year is $I \times N(1-P)$. Cases end, by recovery or death, at a rate of $1/D$ per case per year, so the number leaving the pool per year is $NP/D$.
+
+In a steady state, the inflow equals the outflow:
+
+$$
+I \, N(1-P) = \frac{NP}{D}.
+$$
+
+Dividing both sides by $N(1-P)$ and multiplying by $D$ gives $P/(1-P) = I D$. When $P$ is small, $P/(1-P) \approx P$, which gives the approximation.
+:::
+
+The relation explains several patterns that surprise people. A treatment that keeps people alive longer without curing them *raises* prevalence, because $D$ increases. This happened with HIV after effective antiretroviral therapy, and it happens with many cancers as survival improves. Conversely, a disease can become less prevalent either because fewer people develop it or because people die of it faster. Prevalence alone cannot tell these apart.
+
+::: example Prevalence from incidence and duration {#ex-prevalence}
+In a fictional population the incidence of a chronic condition is 4 per 1,000 person-years, and people live with it for an average of 20 years. Estimate its prevalence, assuming a steady state.
+::: solution
+$I = 0.004$ per year and $D = 20$ years, so $I \times D = 0.08$.
+
+The approximation gives $P \approx 0.08$, or 8%.
+
+The exact relation gives $P/(1-P) = 0.08$, so $P = 0.08/1.08 = 0.074$, or 7.4%.
+
+The approximation overestimates prevalence a little because the condition is not rare. Both answers depend on the steady-state assumption, which fails if incidence is rising, if survival is improving, or if migration changes the population.
+:::
+
 :::
 
 ::: widget plot
-f: 100*(0.4+0.5*(1-exp(-x/20))); 120; 0; 1; 60
-x: 0, 100
-y: 0, 100
-labels: \text{average disease duration (years, illustrative)},\ \text{prevalence index};\ \text{P \approx I \times D: the survival-driven prevalence rise};\ \text{the screening-era detection step};\ \text{cure programmes bend the curve down}
-caption: Prevalence rises with duration: better survival and better detection both inflate it - incidence is the curve that reports truth about risk ([[#def-measures]]).
+f: a*x/(1+a*x); a*x
+x: 0, 40
+y: 0, 0.7
+sliders: a=0.01:0.001:0.05:0.001
+labels: \text{exact prevalence}; I \times D
+caption: Steady-state prevalence against the mean duration of a condition (years), for an incidence rate $a$ per person-year set by the slider. The straight line is the approximation $P \approx I \times D$. The two agree while prevalence is low and separate as the condition becomes common. This is a simplified model that assumes a stable population.
+:::
+
+## Mortality and survival {#mortality}
+
+Death is the most reliably recorded health event, and mortality statistics are the oldest data in epidemiology. Several measures are in routine use, and their denominators differ.
+
+::: definition Common mortality and survival measures {#def-mortality}
+- The **crude mortality rate** is the number of deaths in a year divided by the mid-year population, usually per 1,000 or per 100,000 per year.
+- The **cause-specific mortality rate** counts only deaths from one cause, using the same denominator.
+- The **case fatality** (often called the case fatality rate or ratio) is the proportion of people with a condition who die of it within a stated period. Its denominator is cases, not the whole population.
+- The **infant mortality rate** is the number of deaths under 1 year of age per 1,000 live births in the same year.
+- The **maternal mortality ratio** is the number of maternal deaths per 100,000 live births.
+- The **5-year survival** is the proportion of people with a diagnosis who are alive 5 years later. **Net survival** (or relative survival) compares this with the survival expected in people of the same age and sex in the general population, so that deaths from other causes are allowed for.
+:::
+
+Case fatality and mortality rate are often confused. Suppose a town of 50,000 has an outbreak with 400 cases and 12 deaths. The case fatality is 12/400 = 3%: it describes how dangerous the disease is for someone who catches it. The mortality rate from the outbreak is 12/50,000, or 24 per 100,000: it describes the impact on the whole town. A disease can have a high case fatality and a low population mortality if few people catch it, and the reverse.
+
+Survival figures need care too. Survival measured from diagnosis gets longer if diagnosis happens earlier, even when the date of death does not change at all. This is **lead-time bias**, discussed in [[epidemiology-ebm/bias-confounding]], and it is the reason screening programmes are judged by mortality, not by survival from diagnosis.
+
+When people are followed for different lengths of time, survival is estimated with the **Kaplan–Meier method**. The follow-up time is divided at each death. At each death, the probability of surviving that moment is the number who survive divided by the number still under observation. Multiplying these probabilities gives the survival curve. People who leave the study alive are **censored**: they count in the denominator up to the time they leave and then drop out of it. The method and the hazard ratio used to compare two curves are covered in [[epidemiology-ebm/statistics-for-clinicians]].
+
+## Comparing populations fairly: standardisation {#standardisation}
+
+Crude mortality rates are dominated by age. A seaside town full of retired people will have a higher crude death rate than a university town, even if every age group in the seaside town is healthier. To compare populations with different age structures we standardise.
+
+::: definition Direct and indirect standardisation {#def-standardisation}
+**Direct standardisation** applies the age-specific rates of each study population to a single **standard population** (for example the 2013 European Standard Population). The result, the **age-standardised rate**, is the rate each population would have if it had the standard age structure. Direct standardisation needs reliable age-specific rates in each population.
+
+**Indirect standardisation** goes the other way. It applies the age-specific rates of a reference population (often the national rates) to the age structure of the study population. This gives the number of **expected** deaths. The **standardised mortality ratio** is
+
+$$
+\text{SMR} = \frac{\text{observed deaths}}{\text{expected deaths}},
+$$
+
+often multiplied by 100. An SMR of 100 means mortality is as expected for the age structure; 150 means 50% more deaths than expected. Indirect standardisation is used when the study population is small, so its own age-specific rates would be unstable.
+:::
+
+::: example Two towns {#ex-direct}
+Two fictional towns each have 10,000 residents. Their age structure and age-specific mortality rates (deaths per 1,000 per year) are:
+
+| Age group | Town A population | Town A rate | Town B population | Town B rate | Standard population |
+|---|---|---|---|---|---|
+| Under 45 | 2,000 | 1 | 6,000 | 1.5 | 5,000 |
+| 45–64 | 3,000 | 5 | 3,000 | 7 | 3,000 |
+| 65 and over | 5,000 | 40 | 1,000 | 50 | 2,000 |
+
+Compare the crude and age-standardised mortality rates.
+::: solution
+**Crude rates.** Town A has $2 + 15 + 200 = 217$ deaths, a crude rate of 21.7 per 1,000. Town B has $9 + 21 + 50 = 80$ deaths, a crude rate of 8.0 per 1,000. Town A looks far worse.
+
+**Directly standardised rates.** Apply each town's rates to the standard population of 10,000:
+
+- Town A: $5 \times 1 + 3 \times 5 + 2 \times 40 = 100$ deaths, so 10.0 per 1,000.
+- Town B: $5 \times 1.5 + 3 \times 7 + 2 \times 50 = 128.5$ deaths, so 12.85 per 1,000.
+
+After standardisation, Town B has the higher mortality. Every age-specific rate in Town B is higher than in Town A. Town A's high crude rate came entirely from its older population. Age here is acting as a confounder, a third factor linked both to the "exposure" (living in Town A) and to the outcome (death). Confounding is the subject of [[epidemiology-ebm/bias-confounding]].
+:::
+
+:::
+
+::: example An occupational SMR {#ex-smr}
+A fictional cohort of 8,000 factory workers records 45 deaths in one year. National death rates per 1,000 per year are 0.8 at ages 20–39, 4 at ages 40–59 and 12 at ages 60–64. The cohort contains 4,000, 3,000 and 1,000 workers in these groups. Calculate the SMR.
+::: solution
+Expected deaths, using national rates:
+
+- $4{,}000 \times 0.8/1{,}000 = 3.2$
+- $3{,}000 \times 4/1{,}000 = 12$
+- $1{,}000 \times 12/1{,}000 = 12$
+
+Total expected = 27.2. SMR = $45/27.2 = 1.65$, or 165. The workers had about 65% more deaths than people of the same ages nationally.
+
+Interpreting this needs caution. Workers are usually *healthier* than the general population, because people who are very unwell tend not to be employed. This **healthy worker effect** pushes occupational SMRs below 100, so an SMR of 165 is even more striking than it looks. Also, SMRs from different cohorts should not be compared directly with each other, because each is standardised to its own age structure.
+:::
+
+:::
+
+## Comparing groups: measures of association and impact {#association}
+
+Most epidemiological questions compare an exposed group with an unexposed group. There are two ways to compare: by division, which gives a relative measure, and by subtraction, which gives an absolute measure.
+
+::: definition Measures of association and impact {#def-association}
+Let $R_1$ be the risk of the outcome in the exposed group and $R_0$ the risk in the unexposed group.
+
+- The **risk ratio** (relative risk) is $RR = R_1/R_0$. The **rate ratio** is the same with incidence rates.
+- The **risk difference** (absolute risk difference) is $RD = R_1 - R_0$.
+- The **odds** of an outcome are $R/(1-R)$. The **odds ratio** is
+
+$$
+OR = \frac{R_1/(1-R_1)}{R_0/(1-R_0)}.
+$$
+
+- The **attributable fraction among the exposed** is $(RR-1)/RR$: the proportion of cases among exposed people that would not have occurred without the exposure, if the association is causal.
+- The **population attributable fraction** is the proportion of all cases in the population that would not have occurred without the exposure. With $p$ the proportion of the population exposed,
+
+$$
+PAF = \frac{p(RR-1)}{1 + p(RR-1)}.
+$$
+:::
+
+A ratio of 1 and a difference of 0 both mean no association. A risk ratio of 2 means the risk in the exposed is twice that in the unexposed. It says nothing about how large either risk is.
+
+The relative measures describe the *strength* of an association and are the usual currency of causal research. The absolute measures describe the *size* of the effect for individuals and for services. The number needed to treat is simply the reciprocal of a risk difference, and it is developed in [[epidemiology-ebm/statistics-for-clinicians]].
+
+::: example One cohort, five numbers {#ex-cohort-measures}
+In a fictional cohort, 200 people exposed to a solvent and 800 unexposed people are followed for 5 years. Thirty of the exposed and 40 of the unexposed develop a liver condition. Calculate the RR, RD, OR, the attributable fraction among the exposed, and the population attributable fraction.
+::: solution
+$R_1 = 30/200 = 0.15$ and $R_0 = 40/800 = 0.05$.
+
+- $RR = 0.15/0.05 = 3$.
+- $RD = 0.15 - 0.05 = 0.10$: 10 extra cases per 100 exposed people over 5 years.
+- $OR = (30/170)/(40/760) = 0.1765/0.0526 = 3.35$. The OR is further from 1 than the RR because the outcome is not rare.
+- Attributable fraction among the exposed $= (3-1)/3 = 2/3$. About two in three cases among exposed workers would not have occurred without the solvent, if the link is causal.
+- Here the cohort itself is the population, with $p = 200/1{,}000 = 0.2$. $PAF = 0.2 \times 2/(1 + 0.2 \times 2) = 0.4/1.4 = 0.286$. Check: the overall risk is $70/1{,}000 = 0.07$, and $(0.07 - 0.05)/0.07 = 0.286$. Removing the exposure would prevent about 29% of all cases.
+:::
+
+:::
+
+::: example Reading a headline {#ex-headline}
+A newspaper reports that a new contraceptive pill "doubles the risk" of venous thromboembolism. In the fictional study behind it, the annual risk was 2 per 10,000 women with the older pill and 4 per 10,000 with the new one. How should a clinician explain this to a woman choosing a pill?
+::: solution
+The relative risk is $4/2 = 2$, so the headline is accurate. The risk difference is $4 - 2 = 2$ per 10,000 women per year. Put another way, if 10,000 women switched to the new pill for a year, about 2 additional women would have a clot.
+
+Both numbers are true, and both are needed. The relative risk shows that the pill has a real effect on clotting. The absolute risk shows how small that effect is for one woman over one year, and it can be set against the absolute risks of the alternatives, including the much higher risk of thrombosis during pregnancy. Presenting only relative changes tends to exaggerate harms and benefits alike, which is why good patient information gives absolute numbers, ideally as natural frequencies ("2 in 10,000").
+:::
+
+:::
+
+::: quiz
+A new treatment for a chronic disease prevents deaths but does not cure anyone. Over the following decade, incidence stays the same. What happens to prevalence?
+- [ ] It falls, because fewer people die of the disease.
+- [x] It rises, because people live longer with the disease.
+- [ ] It stays the same, because incidence has not changed.
+- [ ] It cannot change, because prevalence depends only on incidence.
+::: solution
+Prevalence depends on incidence *and* duration ([[#thm-prev-inc]]). If incidence is unchanged and people live longer with the condition, the mean duration $D$ increases, so the prevalence pool grows. A rising prevalence is therefore not, on its own, evidence that a disease is becoming more common.
+:::
+:::
+
+## Sources of data {#data}
+
+Epidemiological measures are only as good as the data behind them. The main sources in the UK and most other high-income countries are:
+
+- **Vital registration**: births and deaths, with the cause of death coded from the death certificate using the International Classification of Diseases (ICD).
+- **The census**: the denominator for most population rates.
+- **Disease registries**: cancer registries, congenital anomaly registers and others that aim to capture every new case in a defined area.
+- **Notification and surveillance systems**: for infectious diseases, from clinicians and laboratories.
+- **Routine health service data**: hospital admissions, primary care records and prescribing data. These are rich but were collected for care, not research, so diagnoses may be incomplete or coded inconsistently.
+- **Surveys**: health surveys measure prevalence of conditions and risk factors that never reach a health service.
+
+Each has typical weaknesses. Death certificates are less accurate for older people with several conditions. Registries depend on complete reporting. Routine data change when coding rules or payment systems change. A trend in a routine dataset should always be checked against a change in how the data were collected.
+
+::: history
+Systematic counting of disease began with **John Graunt**, a London haberdasher. In 1662 he published *Natural and Political Observations Made upon the Bills of Mortality*, an analysis of the weekly lists of burials in London. He noticed that more boys than girls were born, that deaths were concentrated in early childhood, and that the city's deaths regularly exceeded its baptisms, so London grew only by migration. He also built a rough table of survival by age, a forerunner of the life table.
+
+Two centuries later, **William Farr** became compiler of abstracts at the new General Register Office for England and Wales in 1839. Farr designed a classification of causes of death, computed rates with proper denominators, and used them to compare districts and occupations. His statistics provided the data that **John Snow** used in 1854 when he compared cholera deaths among households supplied by two London water companies, one drawing water from a sewage-polluted stretch of the Thames. Snow's study was, in effect, an incidence comparison between an exposed and an unexposed group: the basic design of the cohort study.
 :::
 
 ## Where this leads
 
-Study designs are appraised in [[epidemiology-ebm/observational-studies]] and their errors in [[epidemiology-ebm/bias-confounding]]; effect measures recur in [[epidemiology-ebm/statistics-for-clinicians]]; screening's prevalence arithmetic in [[public-health/screening]]; outbreak rates in [[public-health/communicable-disease-control]]; and appraisal practice in [[epidemiology-ebm/critical-appraisal]].
-
-::: history
-**The field's measures were built by clerks before philosophers. John Graunt's bills of mortality (1662) turned parish death records into the first population arithmetic (the 'by the smoke and the plague' cause tallies and the sex-ratio observations); William Petty's political arithmetic proposed counting everything that moved and cost. Sushilock's and Halley's life tables made mortality a mathematical object (Halley's Breslau table, later the insurance actuaries' engine). The nineteenth century industrialised counting: Chadwick's sanitary surveys used mortality arithmetic as prosecution evidence, the registrar-general's classifications made cause of death a statistics problem (and the 'suicide-versus-accidental-death' coding debates anticipated today's controversy by 150 years), and the epidemiological trinity was assembled: Snow's cholera comparisons (the two-water-company attack-rate table of 1854 as the first rate-ratio argument), the industrial diseases from phossy-jaw to byssinosis (the occupational rate tables), and the medical-officer-of-health district morbidity statistics. The twentieth century formalised the measures: the 'cohort-versus-cross-section' vocabulary, the incidence-prevalence-mortality relationship's explicit statement (the Greenwood and Major Greenwood school), the 'person-time' apparatus (the life-table and actuary methods imported into epidemiology), and the 'standardised-mortality-ratio' tradition from the industrial cohort studies of the 1950s. The effect-measure wars have their own historiography: the relative-versus-absolute-risk arguments from the field's earliest debates, the odds ratio's empire built by the case-control method and logistic regression, and the modern corrections (the 'rethink the odds ratio' papers, the risk-difference and number-needed-to-treat reforms, and the hazard ratio's proportional-hazards audit movement). The demographic transition and its measurement became a global programme in the late twentieth century: the civil-registration-and-vital-statistics strengthening agendas, the verbal-autopsy methods for the uncounted dead, the Global Burden of Disease enterprise (the 'DALY-and-mixed-methods'-synthesis and its disability-weight disputes), and the pandemic's forensic-demography moment (the excess-mortality-definition arguments that made 'counting the dead' a front-page methods debate).** - [[epidemiology-ebm/observational-studies]], [[public-health/global-health]].**
-:::
+The measures in this chapter are the raw material of every study design. [[epidemiology-ebm/observational-studies]] shows which measures each design can estimate. [[epidemiology-ebm/bias-confounding]] explains how a measure can be distorted, as age distorted the crude death rates in [[#ex-direct]]. [[epidemiology-ebm/statistics-for-clinicians]] adds the uncertainty that surrounds every estimate.
 
 ::: summary
-- Incidence counts new events in at-risk people over time (risk or rate); prevalence counts existing disease at a time point; P ≈ I × D explains most 'rising burden' headlines without any change in true risk.
-- Ratios are not differences: the relative risk sells, the risk difference governs (the NNT is its inverse), and population-attributable fractions add exposure prevalence to make - but their causal reading requires the confounding chapter's scepticism first.
-- Odds ratios travel as risk ratios when they should not (common outcomes), hazard ratios summarise non-proportional hazards badly, and every single-number effect measure deserves its curve inspection.
-- Comparing populations requires standardisation because age structures differ: direct standardisation for like-for-like detail, standardised mortality ratios for small numbers, and neither without stated assumptions.
-- Mortality data are constructed: certification chains, underlying-cause rules, registration completeness and classification revisions all belong in a trend's caveat list.
-- The numerator, denominator, window and comparison are the four permanent questions - the numeracy reflex this course drills on every subsequent design.
-:::
-
-## Exercises
-::: example The registry that doubled {#ex-registry}
-A regional stroke registry reports incidence doubling over 20 years while mortality fell by half. Two consultants argue on the letters page: one claims an epidemic, the other claims an artefact. Adjudicate with the measurement toolkit.
-::: solution
-**Both-are-right-proportionally ([[#def-measures]], [[#def-standardisation]]): the artefact channels to quantify: detection (the stroke-unit and imaging-era expansion, the 'TIA-and-minor-stroke-now-coded' effect, the ambulance-diversion and private-admission capture changes), classification (the ICD coding drift, the death-certificate-versus-discharge-diagnosis differences, and the 'autopsy-withdrawal' effect that inflates community incidence as in-hospital counting falls), and denominators (ageing - the strongest true-increase candidate - migration, and the at-risk population estimates). The epidemic channels: genuine risk-factor change (obesity and diabetes prevalence, the air-pollution literature, and the 'younger-onset' signals). The adjudication method: age-standardise the incidence series, restrict to the first-admission and confirmed-imaging subsets (the most stable ascertainment), chart the mild-versus-severe case split over time (if the doubling is all minor strokes, celebrate detection), and read incidence with mortality and survivorship together (the falling case-fatality makes prevalence rise and long-term survival make first-events rarer per capita - competing-risk corrections matter). The verdict template: 'roughly two-thirds of the doubling is older counting and older people; a residual true increase in the under-65s survives the adjustments and is the prevention programme's assignment.' The editorial lesson: incidence claims need ascertainment audits attached, and letters pages rarely carry them.**
-:::
-:::
-
-::: example The SMR that flattered {#ex-smr}
-An occupational cohort of factory workers shows a standardised mortality ratio for lung cancer of 0.8 against the national population; the works doctor concludes the workplace is protective. Identify the two biases and design the corrective analysis.
-::: solution
-**Healthy-workers-and-referents ([[#def-standardisation]], [[#def-ratios]], [[public-health/environmental-occupational]]): bias one, the healthy-worker effect: employed populations are selected for health at hire and retained by continued fitness, so national-population reference rates understate their expected mortality (the 'the SMR is 0.8 for everything' signature - check whether all causes are low, which is the giveaway). Bias two: the referent choice (the national rate mixes ever- and never-workers and drifts with deindustrialisation; the correct comparator is internal). The corrective analysis: exposure-response stratification inside the cohort (the dose-response that no selection artefact produces cleanly), employment-duration strata (the healthy-worker-survivor bias grows with tenure - the 'duration-since-hire' modelling with time-since-first-hire lags), the 'other-white-collar-at-the-same-factory' referent, smoking data adjustment if records allow (the confounding channel the internal comparator partly handles), and the healthy-worker-survivor bias' lag and censoring treatments (the 'left-truncation-and-employment-exit-censoring' technical layer that modern occupational packages handle). The communication: the 0.8 is an artefact with a direction - the absence of excess against the nation is weak evidence; the absence of a dose-response is the stronger claim, and only if exposure reconstruction was adequate. The union representative deserves the same sentence: 'we cannot tell you it is safe from this number; we can tell you what a better study would show.'**
-:::
+- Every frequency measure is a fraction: check what is counted as a case and who is in the denominator.
+- **Prevalence** is the proportion of a population with a condition at a time. It measures burden and is what cross-sectional surveys estimate.
+- **Risk** (cumulative incidence) is the proportion of initially disease-free people who develop the condition over a stated period. The **incidence rate** divides new cases by person-time and has units of "per person-year".
+- In a steady state, $P/(1-P) = I \times D$, so $P \approx I \times D$ for uncommon conditions. Longer survival with a disease raises its prevalence.
+- Case fatality has cases as its denominator; mortality rates have the whole population. Survival from diagnosis is inflated by earlier diagnosis.
+- Crude rates are distorted by age structure. Direct standardisation gives age-standardised rates; indirect standardisation gives the SMR (observed/expected).
+- Relative measures (RR, rate ratio, OR) describe the strength of an association; absolute measures (risk difference, attributable fractions) describe its size and public health importance. Report both.
 :::
 
 ## Exercises
 
-::: exercise Compute the four measures {level=1}
-In a cohort of 10,000 followed 5 years: 100 new disease events; 40 people already had the disease at baseline; at the end, 120 people have it. Compute cumulative incidence, incidence rate, point prevalence at entry and at exit, stating every assumption.
+::: exercise Point prevalence {level=1 check="8"}
+A survey of 4,250 adults finds 340 people with current asthma. What is the point prevalence, as a percentage?
 ::: solution
-**Arithmetic-with-assumptions ([[#def-measures]]): Cumulative incidence: 100/9,960 at-risk over 5 years (about 1.0 percent; the entry-prevalent 40 leave the denominator - the 'at risk' requirement). Incidence rate: person-time denominator approximated as 9,960 people x 5 years minus lost time for events (about 49,600 person-years; the exact figure needs event dates - state the uniform-hazard approximation), giving about 2.0 per 1,000 person-years. Prevalence: entry 40/10,000 (0.4 percent), exit 120/10,000 (1.2 percent; assuming in-migration and deaths net to zero - an assumption worth a footnote). Then the teaching point: P ≈ I × D checks roughly (1.0 per 1,000 per year x about 12 years' average duration ≈ 1.2 percent), and every one of these numbers changes if the window, the at-risk rule or the population accounting changes - which is why the definition paragraph travels with the number.**
+Prevalence = $340/4{,}250 = 0.08$, or 8%.
 :::
 :::
 
-::: exercise Fix the headline {level=1}
-Rewrite these three press sentences into epidemiologically honest ones, keeping them readable: 'Coffee causes cancer (risk up 30 percent)'; 'Diabetes cases at record high'; 'Vaccine cut deaths by half in the trial'.
+::: exercise Incidence rate {level=1 check="5"}
+A cohort accumulates 3,600 person-years of follow-up and records 18 new cases of a condition. What is the incidence rate per 1,000 person-years?
 ::: solution
-**Translation-with-integrity ([[#def-measures]], [[#def-ratios]]): Coffee: 'In this study, coffee drinkers had 30 percent more of this rare cancer than non-drinkers (from about 3 to 4 cases per 10,000 over 10 years); the absolute difference is small, the association does not prove cause, and confounding by smoking and reverse causation are live alternatives.' Diabetes: 'The number of people registered with diabetes is at a record high; because incidence has been flat and survival has improved, most of this rise reflects longer duration and better detection, not more new disease this year.' Vaccine: 'In the randomised trial, vaccinated participants died at half the rate of placebo participants over the follow-up period (12 versus 24 deaths per 10,000); the absolute benefit depends on how common death is in the group being considered.' The craft rule being drilled: every effect claim names numerator, denominator, window, comparison and the design that generated it - and a rewrite that fits those constraints is almost never as quotable as the distortion, which is the epidemiologist's tax on good communication.**
+Rate $= 18/3{,}600 = 0.005$ per person-year, which is 5 per 1,000 person-years.
 :::
 :::
 
-::: exercise Choose the measure {level=2}
-For each scenario pick the effect measure you would lead with and defend the choice: (a) counselling a patient about a drug's benefit; (b) deciding whether to fund a screening programme; (c) estimating what fraction of your hospital's COPD admissions smoking cessation would prevent; (d) comparing two hospitals' surgical mortality.
+::: exercise Which measure? {level=1}
+Which measure of frequency best answers each question? (a) How many people in a district need long-term insulin supplies? (b) Does living near a busy road increase the chance of developing childhood asthma? (c) How dangerous is a new strain of influenza for a person who catches it?
 ::: solution
-**Measures-have-audiences ([[#def-ratios]], [[#def-standardisation]]): (a) risk difference and NNT at her baseline risk (the ratio without the absolute is manipulation; her numbers come from her risk, not the trial's average). (b) cost per QALY from a model whose effect inputs are both ratio and absolute (the funders need absolute events per population and the ratio's uncertainty carried through). (c) population-attributable fraction among your patients (the exposure prevalence among cases version is cleaner for a hospital catchment), with the honest caveat that it assumes causality and would shrink if confounding were removed. (d) standardised mortality ratio or directly standardised rate with funnel-plot limits and case-severity adjustment (crude comparisons are indefensible; the SMR-versus-expected model must state its reference and its confidence), plus the small-hospital warning about interval width. The meta-answer: the measure follows the decision - individual choice wants absolutes, population planning wants fractions and rates, and fair comparison wants standardisation with its assumptions published.**
+(a) Prevalence, because the question is about current burden and service need. (b) Incidence (risk or rate) in exposed and unexposed children, compared by a risk ratio or rate ratio, because the question is about developing a new condition. (c) Case fatality, the proportion of cases who die, because the denominator should be people who are infected, not the whole population.
 :::
 :::
 
-::: exercise Reconcile the surveys {level=2}
-Two prevalence estimates of adult asthma in your country differ by triple: a questionnaire survey (12 percent) and health-records-based registry data (4 percent). Explain the methods behind both numbers and which questions each answers.
+::: exercise Mortality versus case fatality {level=2 check="24"}
+An outbreak in a town of 50,000 people causes 400 cases and 12 deaths. What is the mortality rate from the outbreak per 100,000 population? What is the case fatality?
+::: hint
+The two measures share a numerator but not a denominator.
+:::
 ::: solution
-**Prevalence-is-a-method ([[#def-measures]], [[#def-standardisation]], [[respiratory/asthma-copd]]): the questionnaire's 12 percent: 'lifetime-ever-told-plus-symptom-based-definitions inflate (the 'current-versus-ever-versus-doctor-diagnosed' definition tiers), and 'wheezy-phenotype-questions' capture obesity-related-dyspnoea-and-viral-wheeze-not-asthma; the translation-and-recall differences across survey waves matter too. The registry's 4 percent: 'recorded-diagnosis prevalence measures care-seeking plus coding plus registration (the 'asthma-in-visible-people'-problem: the untreated, the discharged-without-code, the private-care-invisible), and it under-counts exactly the groups with access barriers. So the answers: the questionnaire estimates symptom-experience prevalence (the 'asthma epidemiology' literature's ISAAC-and-ECRHS-era comparability with objective testing - the metacholine-subset studies showing questionnaire over-diagnosis); the registry estimates diagnosed-in-system prevalence (the service-planning denominator: medications dispensed, clinic loads, severe-asthma-candidate-fractions). The reconciliation method: a linkage-or-validated-sample study (questionnaire-positive people with normal spirometry quantify the gap), plus reporting both numbers with definitions attached - and the teaching point for the board: 'the 8-percent difference is your undiagnosed-and-overdiagnosed-population, and both halves are clinical work.'**
+Mortality rate $= 12/50{,}000 = 0.00024$, which is 24 per 100,000. Case fatality $= 12/400 = 3\%$. The first describes the effect on the town; the second describes the danger to an infected person.
 :::
 :::
 
-::: exercise Design the vital-statistics upgrade {level=2}
-A partner ministry asks your public-health team to help improve cause-of-death data. Write the technical-assistance plan: the legal layer, the certification chain, the coding apparatus, the audit tools and the metrics of improvement.
+::: exercise Prevalence from incidence {level=2 check="2.91"}
+A condition has an incidence of 2 per 1,000 person-years and a mean duration of 15 years. Using the exact steady-state relation $P/(1-P) = I \times D$, find the prevalence as a percentage, rounded to 2 decimal places.
 ::: solution
-**Counting-the-dead-seriously ([[#def-standardisation]], [[public-health/global-health]]): legal layer - 'the civil-registration mandate, death-before-burial-and-cremation permits, the medically-certified-death requirement with a medical-certifier-of-cause qualification standard (the 'who-may-sign-the-certificate' policy question), and the electronic-registration legal equivalence. Certification chain: the Part-one-chain-versus-Part-two-conditions training (the 'do-not-write-cardiac-arrest' school with its examples), the verbal-autopsy systems where no medical attendance, and the medicolegal-autopsy and death-investigation routes for violent and undetermined deaths (the registrar-and-coroner-model comparison). Coding apparatus: the ICD implementation (version transitions and their trend breaks managed by dual-coding periods), the cause-of-death interpretation and automated coding (the 'garbage-code' and 'invalid-entry' feedback loops), and the mortality-database linkage to hospital records (the 'verbals-versus-hospital-records'-redundancy resolution). Audit tools: the certifier-level ill-defined-cause dashboards, the re-certification reliability studies (the chart-versus-certificate agreement sampling), and the 'red-flag-cause-sudden-shifts' surveillance that catches both true epidemics and coding floods. Metrics: registration completeness, medical-certification fraction, garbage-code share, and cause-specific mortality-comparison-with-sentinel-surveillance agreement. The honest first year: expect registered mortality to rise as the system improves - the classic misreading is celebrating the fall.**
+$I \times D = 0.002 \times 15 = 0.03$. Then $P = 0.03/1.03 = 0.029126$, which is 2.91%. The approximation $P \approx I \times D$ would give 3.00%.
 :::
 :::
 
-::: exercise Appraise the ratio {level=3}
-A common outcome (30 percent baseline) study reports an odds ratio of 2.2 for an exposure and calls it 'more than double the risk'. A second study with the same 2.2 odds ratio in a low-baseline (2 percent) population calls the same phrase. Unpack both, then state when the odds ratio and risk ratio diverge and by how much, with formula intuition.
+::: exercise An SMR {level=2 check="125"}
+An occupational cohort has 2,000 people aged 40–49, 1,500 aged 50–59 and 500 aged 60–64. National death rates in these groups are 3, 8 and 12 per 1,000 per year. In one year the cohort records 30 deaths. Calculate the SMR, expressed with 100 meaning "as expected".
 ::: solution
-**The-or-divergence-lesson ([[#def-ratios]], [[epidemiology-ebm/bias-confounding]]): the arithmetic: with baseline risk 30 percent, an odds ratio of 2.2 corresponds to a risk of 56.7 percent, a risk ratio of 1.9 and a risk difference of 27 points; with baseline 2 percent the same odds ratio gives risk 4.2 percent, risk ratio 2.1, risk difference 2.2 points. The 'more than double' phrase is roughly right in the rare-outcome study and wrong in both directions for interpretation in the common one (the risk ratio is under 2, and the public-health weight differs 12-fold). Formula intuition: the odds ratio compares odds, and as risks climb past about 10 percent odds accelerate above probabilities - hence 'the rare-disease assumption' that case-control odds ratios quietly require for risk-ratio reading; the correction formulas exist for reviewers (RR = OR/(1 - P0 + P0 x OR)). The appraisal reflexes this installs: ask the baseline risk before accepting any ratio (the NNT and the number harmed need it), check which measure the regression actually printed (logistic odds ratios presented as relative risks are the most common single error in medical literature - the 'OR-RR-mismatch' surveys), and remember the log-linear-versus-logistic choice is a modelling decision with interpretive consequences (the modified-Poisson and log-binomial remedies). The essay-grade closing line: ratios without denominators are rhetoric; the odds ratio is a mathematically convenient quantity that must be translated, not quoted.**
-:::
-:::
-::: exercise Audit the pandemic numbers {level=2}
-Early in a respiratory pandemic, country A reports 400 deaths and country B reports 4,000; commentary claims country B's epidemic is ten times worse. Write the statistical caveat memo listing every reason the comparison might mislead, and the better measures you would construct.
-::: solution
-**Comparing-the-uncountable ([[#def-standardisation]], [[#def-measures]]): the misleads list: death certification policy (confirmed-test-only versus probable-and-excess definitions - the 'excess-mortality' literature exists because of this), testing coverage (deaths-untested die uncounted), the demographic and structural differences (age, comorbidity prevalence, household density, occupation - everything needing standardisation before any comparison), the healthcare-access differences (dying at home versus in hospital changes certification), the counting-date versus death-date delays (the 'epidemic-curve-artefact' of reporting lags), the population denominators (tourism, migration, the tourist-with-a-heart-attack effect in small destinations), and the political economy of reporting (the 'incentives-to-undercount' governance variable that no statistical adjustment fixes). Better measures: age-standardised weekly all-cause mortality versus baseline years (the excess-death standard, robust to certification but blind to cause), test-positivity-weighted infection estimates (the seroprevalence surveys), and per-capita rates within comparable subpopulations (city-to-city, region-to-region, where structures resemble). The memo's closing rule: report the ratio of excess deaths, not the count of named ones; and compare like structures before like systems, which is most claims about pandemic competence skipping.**
+Expected deaths $= 2{,}000 \times 0.003 + 1{,}500 \times 0.008 + 500 \times 0.012 = 6 + 12 + 6 = 24$. SMR $= 30/24 \times 100 = 125$. The cohort had 25% more deaths than expected for its age structure, and the healthy worker effect means the true excess may be larger.
 :::
 :::
 
-::: exercise Teach the NNT properly {level=3}
-Design a 30-minute session for registrars on absolute and relative effects, using statin primary-prevention numbers. Include the worked calculations, the graph that makes it click, and the clinical scenarios where each framing is the honest one.
+::: exercise Population attributable fraction {level=2 check="33.3"}
+A quarter of adults in a population are exposed to a risk factor, which triples the risk of a disease (RR = 3). Assuming the association is causal, what percentage of all cases in the population is attributable to the exposure? Give the answer to 1 decimal place.
 ::: solution
-**An-NNT-workshop ([[#def-ratios]], [[clinical-skills/communication]], [[cardiovascular/coronary-artery-disease]]): the worked core: a 55-year-old with 11 percent 10-year cardiovascular risk; statins reduce relative risk about 25-30 percent per mmol/L LDL reduction (the CTT meta-analyses) - absolute benefit about 3 points over 10 years, NNT about 30; her 65-year-old brother at 31 percent risk gets about 9 points, NNT 11; the framing question: 'statins cut heart attacks by a quarter' is true for both and meaningless for both. The graph that clicks: the two risk distributions before and after treatment overlaid, showing the shifted curve and the small areas between them - the 'population-shift-versus-individual-treatment' Rose diagram, which also previews the prevention-inequality result (shifting the curve widens absolute gaps between tails). The honesty scenarios: relative risk is the right lead for mechanism and comparing drugs (the ratio travels across baselines better than absolutes when the biology is multiplicative); absolute risk is the right lead for consent, for de-implementation, and for resource talks; and the number-harmed must sit beside the number-treated (the myalgia and diabetes numbers with their own absolutes, or the exercise is persuasion theatre). The assessment: give them a press release with one ratio and one denominator missing; they must produce the NNT range it could hide. The closing line: 'a ratio is a relationship; an absolute is a person - prescribing happens to people.'**
+$PAF = \dfrac{p(RR-1)}{1+p(RR-1)} = \dfrac{0.25 \times 2}{1 + 0.25 \times 2} = \dfrac{0.5}{1.5} = 0.333$, so 33.3%. A strong risk factor affecting a minority can account for a smaller share of cases than a weak risk factor affecting nearly everyone.
+:::
+:::
+
+::: exercise Direct standardisation {level=3 check="11.35"}
+A fictional region has age-specific mortality rates of 0.5, 6 and 60 per 1,000 per year at ages 0–39, 40–69 and 70 and over. A standard population is 50% aged 0–39, 35% aged 40–69 and 15% aged 70 and over. Calculate the directly age-standardised mortality rate per 1,000 per year.
+::: hint
+Weight each age-specific rate by the share of the standard population in that age group, then add.
+:::
+::: solution
+Standardised rate $= 0.50 \times 0.5 + 0.35 \times 6 + 0.15 \times 60 = 0.25 + 2.1 + 9 = 11.35$ per 1,000 per year. The result is meaningful only for comparison with another population standardised to the same standard.
+:::
+:::
+
+::: exercise Odds ratio for a common outcome {level=3 check="2.43"}
+In a fictional cohort, 120 of 400 exposed people and 90 of 600 unexposed people develop an outcome. Calculate the risk ratio and the odds ratio. Give the odds ratio to 2 decimal places, and explain why the two differ.
+::: solution
+Risks: $120/400 = 0.30$ and $90/600 = 0.15$, so $RR = 2.0$.
+
+Odds: $120/280 = 0.4286$ and $90/510 = 0.1765$, so $OR = 0.4286/0.1765 = 2.43$.
+
+The OR exceeds the RR because the outcome is common. Odds and risks are close only when risks are small, since then $1-R \approx 1$. Describing an OR of 2.43 as "2.4 times the risk" would overstate the effect. [[epidemiology-ebm/observational-studies]] explains when the OR is a good approximation to the RR.
+:::
+:::
+
+::: exercise Interpreting a rising prevalence {level=3}
+In a fictional country, the recorded prevalence of type 1 diabetes in children doubled over 20 years, while the incidence rose by only 20%. Suggest explanations, and say what further data would help you decide between them.
+::: solution
+From $P \approx I \times D$, prevalence can rise through incidence or through duration. A 20% rise in incidence cannot by itself double prevalence, so other explanations are likely:
+
+1. **Longer duration within the age band.** Children diagnosed younger remain in the "children with diabetes" pool for more years. Earlier age at onset increases $D$ for a childhood prevalence even though type 1 diabetes is not curable at any age.
+2. **Better ascertainment.** A new national register or better coding in primary care may capture cases that were missed before. This changes the recorded numbers without a real change in disease.
+3. **Population change**, such as migration of families with affected children, or a change in the denominator.
+4. **A non-steady state.** If incidence rose recently and steeply, prevalence lags behind and the simple relation does not hold.
+
+Useful data include age at diagnosis over time, the date and method of case ascertainment, mortality among affected children (which in high-income countries is very low), and checks of the denominator against census data.
 :::
 :::

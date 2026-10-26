@@ -1,143 +1,287 @@
-The randomised trial is the one design that converts an association into a comparison with a guarantee, and the guarantee is worth understanding precisely: randomisation balances measured and unmeasured confounding in expectation, and everything else the profession believes about trials - blinding, allocation concealment, intention to treat, registration - exists to protect that guarantee from the ways it actually fails. **This chapter covers the principle and its history, the architecture (parallel, crossover, factorial, platform, adaptive and cluster designs with their analysis obligations), conduct and reporting (consort-style reporting, allocation concealment versus blinding, the attrition and protocol-deviation handling that intention to treat governs), interpretation (the intention-to-treat-versus-per-protocol reading pair, non-inferiority's arithmetic, and the subgroup fiction), and the ethics and politics of trials (equipoise, registration and publication bias, placebo's contested place, and the community-consent problems of international research). **
+In the 1980s many patients who survived a heart attack had frequent ventricular ectopic beats on their ECG, and these patients were known to have a higher risk of sudden death. Drugs such as flecainide and encainide suppressed the ectopic beats very effectively. It seemed obvious that they would save lives. The Cardiac Arrhythmia Suppression Trial (CAST) tested this by randomly assigning patients to the drugs or to placebo. In 1989 it was stopped early: patients given the active drugs were dying at a higher rate than those given placebo.
 
-## The principle
+CAST shows why the randomised controlled trial sits at the centre of evidence about treatment. Reasonable mechanisms, good observational data and expert confidence can all point the wrong way. This chapter explains how randomisation works, how trials are designed and analysed, and what to look for when reading one.
 
-::: definition Why randomisation works and what it buys {#def-principle}
-**Confounding is population structure; randomisation dissolves it by construction: coin-flip allocation makes observed and unobserved confounders equally likely in the arms, so the difference in outcomes estimates the difference caused - in expectation, on average over the possible coin flips, which is why the trial's validity is a statement about the design rather than the particular sample (the 'randomisation-test' conceptual foundation that permits exact inference without distributional assumptions). The three corollaries every clinician should own. One: balance is probabilistic, so observed imbalance is not a validity threat unless it is extreme, chance imbalance is handled by the analysis's variance rather than adjustment, and 'the arms differed at baseline' critiques are usually noise-chasing (the covariate-adjustment question is subtler than slogans: adjusted analyses of randomised data remain valid, and precision gains are legitimate; reweighting after randomisation reopens the confounding door the design closed). Two: randomisation buys no external validity: the trial population is a selected population (eligibility criteria, consent, site geography - the 'representativeness-of-the-randomised' literature and the pragmatic-trial movement's answer) and generalisation remains an argument, never a guarantee. Three: the guarantee covers the estimand - the average effect on the trial-eligible population under the trial's care conditions - and every extrapolation (to your multimorbid 82-year-old, to your under-resourced district general) is a transportability assumption to be stated. Power, precision and the difference between 'no effect' and 'no evidence of effect' belong here too: underpowered trials are ethically questionable because they answer nothing (the 'uninformative-trial-as-unethical' position that replaced 'small-positive-trial-beats-large-none'), and the null-interval reading (the confidence interval's exclusion bounds as the clinically meaningful statement) is the correct report of a non-significant result. The chapter's historical anchor is that none of this was obvious: before 1948 the therapeutic literature was case-series and conviction, and Bradford Hill's streptomycin trial - with its coin-tube randomisation, its protocol-defined criteria and its contemporaneous critics complaining about the untreated controls - established the template in the same decade as Fisher's Statistical Methods for Research Workers supplied the mathematics and the British Medical Journal's 'The Lancet's own 1950s editorial battles' institutionalised the argument.**
+## Why randomise? {#why}
+
+Observational comparisons of treatments suffer from **confounding by indication**: patients receive treatments for reasons that also affect their prognosis ([[epidemiology-ebm/bias-confounding]]). Adjustment can deal only with the confounders that were measured. Randomisation deals with all of them at once.
+
+::: theorem What randomisation achieves {#thm-randomisation}
+If participants are allocated to treatment groups by a random process that nobody can predict or influence, then:
+
+1. every characteristic of the participants, measured or unmeasured, known or unknown, has the same distribution in each group in expectation, so the groups differ systematically only in the treatment they are assigned;
+2. any remaining imbalance is due to chance, and its likely size is quantified by standard statistical methods, which therefore give valid confidence intervals and p-values for the treatment effect.
 :::
 
-## The architecture
+::: proof
+Suppose a characteristic $X$ (age, disease severity, a genetic variant nobody has discovered) takes any distribution in the trial population. If allocation is random, the probability of being assigned to treatment is the same for every participant, whatever their value of $X$. Allocation is therefore statistically independent of $X$, and the expected distribution of $X$ is identical in both groups. Because this holds for every characteristic simultaneously, it holds for every cause of the outcome other than treatment.
 
-::: definition Designs and their obligations {#def-designs}
-**Parallel-group superiority trials are the default: two or more arms, randomised, blinded where possible, powered for the primary endpoint with the multiplicity corrections that secondary endpoints require (the familywise-error arithmetic that turns 'and it also reduced depression and fractures' into either pre-specified hierarchy or hypothesis-generating colour). Crossover trials (each participant their own control) buy precision by removing between-person variance, at the price of the carry-over condition (the washout and short-stable-disease logic), period effects and the analysis that must respect the design (sequence, period, treatment effects; the 'two-sequence-two-period-crossover' equivalence-testing subtleties and the regulatory distrust of carry-over-assuming analyses). Factorial designs test two interventions at once with efficiency and interaction-estimation caveats (the 'the-B-group-and-folic-acid-recurrence-trials'-as-the-canonical-success class). Cluster randomisation (clinics, schools, wards randomised) exists for interventions that cannot be delivered person-by-person (surgical technique, screening programmes, hand-hygiene campaigns), and its obligations are the intraclass-correlation-inflated-sample-size arithmetic, the individual-level-analysis fallacy that the reporting checklists hunt, and the recruitment-bias risks that blinding cannot fix. The modern expansion: platform and basket and umbrella designs (the ICMJE-2018-reform-and-UK-Durham-platform-definition literature; the superiority-by-comparison-within-platform multiplicity structures; the oncology basket trials' shared-molecular-target logic and umbrella's tumour-agnostic-approval-adjacent debates), adaptive designs (sample-size re-estimation, response-adaptive randomisation and early-stopping rules with their type-I-error and interpretive cautions - the 'adaptive-innovation-or-optional-stopping-p-hacking-with-extra-steps' argument), and the pragmatic and registry trials (the 'explanatory-versus-pragmatic' continuum's two-dimensional classification, the EXPAND-and-PEAGAS-and-PIQUE-adjacent guidance, and the trial-within-cohort designs that make randomisation cheap when cohorts exist). At the design end belongs the equivalence-and-non-inferiority machinery's statistics, which the interpretation definition treats at length.**
+In any single trial the groups will differ somewhat by chance, more so in small trials. But because the allocation process is known, the probability of differences of any given size can be calculated, and this is what a p-value or confidence interval describes. In an observational study the process that determined treatment is unknown, so no such calculation can account for bias.
 :::
 
-## Conduct and interpretation
+Randomisation protects the comparison only at the moment of allocation. After that, the groups can be made unequal again by differences in care, in measurement or in who is analysed. The rest of trial design is about preserving the balance that randomisation creates.
 
-::: definition Conduct, reporting and the reading pair {#def-conduct}
-**Allocation concealment is not blinding: concealment (central or pharmacy-controlled randomisation; the sealed-envelope era's documented selection failures) protects the moment of assignment, while blinding protects measurement, attrition and co-intervention - and both failures lean toward the investigators' hopes, which is why the risk-of-bias tools (Cochrane's RoB 2 with its signalling questions) interrogate them separately. Blinding's deeper literature is empirical: the open-versus-hidden administration studies in pain and Parkinson's disease made the expectation component of treatment measurable, the placebo-response research showed its scale, and the 'no-blinding-in-surgery-and physiotherapy' problem drove the sham-control solutions the conduct definition covers. Reporting is the same fight at paper length: the CONSORT statement and its extensions (cluster, non-inferiority, pragmatic, pilot) turned 'describe what you randomised' into a checklist whose absence is itself a quality signal; the registration movement (ClinicalTrials registration before enrolment, the International Committee of Medical Journal Editors' policy, the WHO registry and its data-element minimum) exists because the trials that never reported were the largest bias in medicine (the outcome-reporting-bias studies - the 'changing-the-primary-outcome' prevalence surveys, and the Turner-et-al meta-research on antidepressant publication showing the treatment-effect distortion that registration-plus-reporting can fix); and the 'protocol-versus-paper' audit - comparing registered outcomes with published ones - is now a standard appraisal manoeuvre, which is why this chapter's exercises make readers do it. The analysis layer: intention to treat is the discipline of analysing by allocated arm so the randomisation contrast survives non-adherence, crossovers and withdrawal - with its honest companion statements (as-treated analyses answer 'if taken', per-protocol needs its own selection-bias defence, and non-inferiority trials read the two differently enough that guidelines demand concordance); attrition is intention to treat's enemy (the 20-percent-loss threshold folklore, and the correct rule that loss matters when it differs by arm in ways related to outcome, which is why 'reasons similar between groups' assertions without tables are red flags); and multiplicity is intention-to-treat's quiet budget (the alpha-spending of interim looks, the gatekeeping of secondary endpoints, the familywise arithmetic that separates confirmatory claims from hypothesis generation). The chapter's endpoint is reading skill: a trial's estimate, its interval, its bias landscape and its transportability are four separate questions, and most clinical controversies - and most journal errors - are one of the four smuggled into another.**
+## Framing the trial {#framing}
+
+::: definition Elements of a randomised controlled trial {#def-rct}
+A **randomised controlled trial** (RCT) allocates participants at random to two or more interventions and compares outcomes. Its question is usually written in **PICO** form:
+
+- **Population**: who is eligible (inclusion and exclusion criteria);
+- **Intervention**: the treatment being tested;
+- **Comparator**: placebo, usual care, or an active alternative;
+- **Outcomes**: what is measured, when, and how.
+
+The **primary outcome** is the single outcome on which the main conclusion and the sample size are based. **Secondary outcomes** are supporting. A **surrogate outcome** is a laboratory measure or physical sign used in place of an outcome that matters to patients, such as cholesterol in place of heart attacks. A **composite outcome** combines several events, such as "cardiovascular death, myocardial infarction or stroke".
 :::
 
-::: example The non-inferiority question {#ex-ni}
-A new once-weekly antibiotic seeks non-inferiority to daily standard therapy for pneumonia: margin 12 percentage points on radiographic cure, observed difference -3 points (95 percent confidence interval -9 to +3), non-significant difference claimed as 'equivalent'. Critique, then state the correct reading.
+The choice of outcome determines what a trial can show. Surrogates allow small, fast trials, but they are trustworthy only when changing the surrogate by that treatment reliably changes the clinical outcome. CAST is the classic warning: suppressing ectopic beats, a surrogate, was associated with *more* deaths. Composite outcomes increase the number of events and so the power, but they can mislead when the components differ in importance and the treatment effect is driven by the least serious one.
+
+The comparator matters as much. Placebo control is appropriate when no effective treatment exists. When one does, the Declaration of Helsinki (most recently revised in 2024) requires that new treatments be tested against the best proven intervention, except in limited circumstances. The trial must also start from **equipoise**: genuine uncertainty in the expert community about which treatment is better.
+
+## Allocation and blinding {#allocation}
+
+::: definition Sequence generation and allocation concealment {#def-concealment}
+The **allocation sequence** is the list that determines which treatment each participant receives. It should be generated by a truly random method, such as computer-generated random numbers. Variants include:
+
+- **simple randomisation**, like tossing a coin for each participant;
+- **block randomisation**, which keeps group sizes balanced at intervals (for example, every block of 4 contains two of each treatment);
+- **stratified randomisation**, which randomises separately within important prognostic groups, such as centre or disease stage;
+- **minimisation**, which assigns each new participant to the arm that best balances selected prognostic factors, with a random element.
+
+**Allocation concealment** means that the person enrolling a participant cannot know or predict the next assignment until the participant has been irreversibly entered into the trial. The usual method is central randomisation by telephone or a web system.
+:::
+
+Concealment is different from blinding, and in some ways more important. If a recruiting clinician can see that the next envelope is "surgery", they may delay enrolling a frail patient until the next allocation is "medical". Without anyone intending to cheat, the groups become unequal. Studies comparing trials with adequate and inadequate concealment have found that poorly concealed trials tend to report larger treatment effects. Alternation, allocation by date of birth or by hospital number, and envelopes that can be held up to the light are all inadequate.
+
+::: definition Blinding {#def-blinding}
+**Blinding** (or masking) means that one or more groups of people involved in a trial do not know which treatment each participant received. The groups that can be blinded are participants, the clinicians caring for them, the people assessing outcomes, and the people analysing data.
+
+Labels such as "single-blind" and "double-blind" are used inconsistently. A trial report should say exactly who was blinded and how.
+:::
+
+Blinding prevents differences in care, in reporting of symptoms and in the assessment of outcomes. Its importance depends on the outcome. Death is hard to misjudge. Pain, function and the decision to admit a patient to hospital are much more open to influence. When blinding of participants is impossible, as in most surgical or physiotherapy trials, blinding the outcome assessors is still usually feasible and valuable.
+
+::: example A trial with leaky allocation {#ex-concealment}
+In a fictional trial of early surgery versus conservative care for a hip fracture, the surgeon at one centre is given a stack of sealed envelopes and opens the next one when a patient consents. After the trial, it is found that patients randomised to surgery at that centre were younger and fitter than those randomised to conservative care, while groups at other centres were similar. What probably happened, and how should this have been prevented?
 ::: solution
-**Margins-and-inherited-bias ([[#def-conduct]], [[#def-principle]]): the arithmetic: non-inferiority is declared when the confidence interval's upper bound stays below the margin (+3 is below 12, so statistical non-inferiority holds); the 'equivalent' claim is language abuse - non-inferiority means 'not worse by more than the margin we chose', and the margin is a policy decision (12 points on radiographic cure is enormous: clinically the new drug could be materially worse and still pass). The threats to hide in: assay sensitivity (did the trial have the ability to detect a difference at all? if the standard arm performed poorly - the 'biocrecreep-and-declining-virulence' problem, the placebo-sensitive endpoint, the mild-population selection - non-inferiority becomes 'both arms were bad' - the historical-meta-analysis and 'constancy-assumption' literature), and the ITT-versus-per-protocol tension (intention-to-treat analysis in non-inferiority can favour the new drug by diluting both arms toward each other - the reason both analyses must agree, and why major protocol deviations are the equivalent of unblinding). The correct reading in one sentence: 'in this population, with this definition of cure, the weekly antibiotic was not shown to be worse than daily therapy by more than the prespecified 12-point margin; whether that margin and that endpoint matter to your patients is a separate judgement.' The appraiser's closing habits: ask what the active comparator achieved historically (assay sensitivity made visible), whether the endpoint is the one clinicians care about, and whether the margin was set by the sponsor's regulatory statisticians or by clinical consensus.**
+The envelopes were opened by the person enrolling patients, and they were probably not opaque or not strictly sequential. If the surgeon could see or guess the next allocation, they could, perhaps unconsciously, enrol a fit patient when the next envelope was "surgery" and wait when it was "conservative". The allocation sequence may have been random, but **allocation concealment** failed, so the groups were selected rather than randomised.
+
+Prevention: central, web-based or telephone randomisation, performed only after the patient's eligibility and consent are recorded. If envelopes must be used, they should be sequentially numbered, opaque, sealed, and opened only after the patient's details are written on them, with an audit of the order. The analysis should report baseline characteristics by centre, and the trial's results should be interpreted with caution.
 :::
 :::
 
-::: example The stopped-for-benefit trial {#ex-stop}
-A cardiovascular outcome trial stops early after a median 1.8 years because the primary endpoint crossed its interim boundary: hazard ratio 0.78, P = 0.004 in the published report. The guideline group debates how to weigh it.
+## Trial designs {#designs}
+
+- **Parallel group**: each participant receives one intervention for the whole trial. This is the default design.
+- **Crossover**: each participant receives both treatments in random order, separated by a washout period. Each person acts as their own control, so fewer participants are needed. It suits stable chronic conditions with treatments whose effects wear off, such as some treatments for migraine prophylaxis or chronic pain, and it fails when the treatment cures the condition or has lasting effects (**carry-over**).
+- **Factorial**: two or more interventions are tested at once by randomising each participant to each intervention. A 2×2 factorial design (A or not, B or not) answers two questions for nearly the price of one, provided the treatments do not interact. ISIS-2, discussed below, randomised patients to streptokinase, aspirin, both or neither.
+- **Cluster**: groups such as general practices, wards or villages are randomised rather than individuals. This suits interventions delivered to groups and avoids contamination between arms, but outcomes within a cluster are correlated. The sample size must be multiplied by the **design effect**, $1 + (m-1)\rho$, where $m$ is the average cluster size and $\rho$ the intracluster correlation coefficient.
+- **Explanatory and pragmatic trials**: an explanatory trial asks whether a treatment can work under ideal conditions, with selected patients and strict protocols. A pragmatic trial asks whether it works in routine practice, with broad eligibility and usual care. Most trials lie between these poles.
+- **Adaptive and platform trials** allow prespecified changes as data accumulate, such as dropping an ineffective arm. A **platform trial** tests several treatments against a shared control and adds new ones over time. The UK RECOVERY trial, set up in 2020, used this design to test treatments for people admitted to hospital with COVID-19. Within months it showed that dexamethasone reduced 28-day mortality in patients receiving oxygen or mechanical ventilation, and that several other widely used treatments did not help.
+
+### Superiority and non-inferiority {#non-inferiority}
+
+Most trials ask whether a new treatment is better than the comparator: a **superiority** trial. Sometimes a new treatment is cheaper, safer or easier, and the question is only whether it is not unacceptably worse.
+
+::: definition Non-inferiority trial {#def-noninferiority}
+A **non-inferiority trial** tests whether a new treatment is not worse than an active comparator by more than a prespecified **non-inferiority margin**, $\Delta$. The margin is chosen before the trial, on clinical and statistical grounds, to be smaller than the effect the comparator is known to have over placebo.
+
+Non-inferiority is shown if the whole confidence interval for the difference (new minus standard, for a harmful outcome) lies below $+\Delta$.
+:::
+
+Non-inferiority trials have particular weaknesses. Poor conduct, such as many participants not taking their allocated treatment, makes the two arms look alike and so favours a finding of non-inferiority. For this reason the per-protocol analysis is given at least as much weight as the intention-to-treat analysis. And a series of non-inferiority trials, each accepting a slightly worse treatment, can drift towards a treatment that is no better than placebo, a problem called **biocreep**.
+
+::: example Reading a non-inferiority result {#ex-ni}
+A fictional trial compares a new oral anticoagulant with warfarin for stroke prevention in atrial fibrillation. The prespecified margin is an absolute increase of 2 percentage points in stroke over 2 years. Interpret three possible results for the risk difference (new minus warfarin): (a) 0.5 percentage points, 95% CI −0.5 to 1.5; (b) 0.3, 95% CI −0.3 to 2.6; (c) −1.2, 95% CI −2.2 to −0.2.
 ::: solution
-**Early-stopping-statistics ([[#def-conduct]], [[#def-principle]], [[cardiovascular/coronary-artery-disease]]): the effect-size inflation mechanism: stopping when a random high touches the boundary overestimates the true benefit (the bias-adjacent 'winner's-curse' and 'stop-at-the-peak' properties of group-sequential designs - the conditional bias the sequential-likelihood methods correct but published point estimates rarely apply), and the confidence interval's nominal coverage is conditional on the stopping rule, so the reported 0.78 is an upper bound on the truth's likely size, not its best guess. The other distortions: the truncated follow-up (fewer events than planned, less precision for the secondary endpoints and safety - the 'mortality-uncertainty-and-hard-endpoint-immaturity' problem that early-stopping papers under-report), the harm signal's incomplete accrual (the early-benefit-early-harm-blindness asymmetry), and the information-censoring of the remaining trials' teams (the 'impact-of-stopping-on-the-rest-of-the-evidence-ecosystem' literature - other trials lose recruitment, meta-analyses lose randomised comparisons). The guideline group's remedy: the trial-sequential-analysis and cumulative-meta-analysis frame (is the cumulative information across all trials past the required-information frontier? has the futility-or-benefit boundary been crossed in the totality, not one trial's peek), treat the point estimate as optimistic and the pooled estimate with its diversity as the anchor, and demand the long-term safety and mortality follow-up that stopping made impossible - by protocol amendment, continued registry follow-up or the trial's own extension study, which the best groups now pre-specify alongside the interim plan.**
+**(a)** The upper limit of 1.5 is below the margin of 2, so non-inferiority is shown. The interval includes 0, so superiority is not shown.
+
+**(b)** The upper limit of 2.6 exceeds the margin, so non-inferiority is **not** shown. The trial is inconclusive: the new drug could be up to 2.6 points worse, which is more than was judged acceptable. It does not show that the drug is inferior.
+
+**(c)** The whole interval lies below 0. Non-inferiority is shown, and the new drug is also superior. Testing for superiority after non-inferiority has been shown is acceptable if it was prespecified, because the confidence interval is the same.
+
+In each case, check that the margin was set in advance and justified, and that the per-protocol analysis agrees.
 :::
 :::
 
-::: example The crossover that carried over {#ex-crossover}
-A two-period crossover trial of a preventer inhaler in stable asthma reports superior lung function with the new drug (difference in morning peak flow 25 L/min, P < 0.001), analysed as simple paired difference; 9 percent withdrew in period one, all from the new-drug sequence; no washout was used because 'the drug is inhaled and local'.
+## How many participants? {#sample-size}
+
+::: definition Power and sample size {#def-power}
+A trial can make two kinds of error. A **type I error** is concluding that there is a difference when there is none; its probability is the significance level $\alpha$, usually 0.05. A **type II error** is failing to detect a real difference; its probability is $\beta$. **Power**, $1 - \beta$, is the probability that the trial detects a true difference of a specified size. Trials are usually designed with power of 80% or 90%.
+
+For comparing two proportions $p_1$ and $p_2$, the approximate number needed in each group is
+
+$$
+n = \frac{(z_{1-\alpha/2} + z_{1-\beta})^2 \,[\,p_1(1-p_1) + p_2(1-p_2)\,]}{(p_1 - p_2)^2},
+$$ {#eq-samplesize}
+
+where $z_{1-\alpha/2} = 1.96$ for a two-sided $\alpha$ of 0.05, and $z_{1-\beta} = 0.84$ for 80% power or $1.28$ for 90% power.
+:::
+
+The formula shows the main drivers. The sample size depends on the square of the difference to be detected: halving the target difference roughly quadruples the sample size. It is larger when outcomes are rare relative to the difference sought. It rises with the power and stringency demanded.
+
+The target difference should be the smallest difference that would matter clinically, or a realistic estimate of the effect. Choosing an optimistic large effect to make a trial affordable is common, and it produces underpowered trials that end with "no significant difference" when a smaller but worthwhile effect may well exist.
+
+::: example A sample size calculation {#ex-samplesize}
+A fictional trial will test whether a new rehabilitation programme reduces 1-year readmission after a stroke from 10% to 7%. How many participants are needed in each arm for 80% power at a two-sided significance level of 0.05?
 ::: solution
-**Carry-over-is-a-design-question ([[#def-designs]], [[#def-conduct]]): the technical faults stacked: no washout with a preventer corticosteroid whose anti-inflammatory effect persists weeks - the period-two measurement is a mixture of two treatments (the carry-over that the two-sequence crossover's sequence-by-period interaction should have detected, and which the simple paired-difference analysis had already assumed away by ignoring sequence and period); the 9 percent withdrawal concentrated in one sequence is differential attrition with the period-and-treatment structure confounded (the 'crossover-with-dropouts-reduce-to-parallel-analysis-after-period-one' remedy sacrifices half the data - which is the price of the design's fragility); and asthma's own variability and season (the period effect the design should balance but the dropout unbalances). The correct reanalysis: first test sequence, period and carry-over (the parallel-test fallback - compare only period-one between-arm means - and its honest power loss); report both the crossover-model and parallel-model estimates when they disagree, which they now do; and state the estimand (within-person effect under full washout versus population effect of the strategy). The lesson for readers: crossover trials borrow precision from within-person comparison and repay it with the carry-over and period conditions - which is why regulators and the reporting checklists (the CROSSOVER-extension items on sequence and washout) treat positive crossover results without carry-over diagnostics as provisional at best. The clinical summary: 'the analysis assumes a washout the protocol skipped; the valid part is the first-period comparison, and that difference is smaller and not significant - the drug's case is unfinished, not proven.'**
+$p_1 = 0.10$, $p_2 = 0.07$, $(1.96 + 0.84)^2 = 7.84$.
+
+$p_1(1-p_1) + p_2(1-p_2) = 0.09 + 0.0651 = 0.1551$.
+
+$(p_1 - p_2)^2 = 0.0009$.
+
+$n = 7.84 \times 0.1551/0.0009 = 1{,}351.1$, rounded **up** to 1,352 per arm, or 2,704 in total. Allowing for 10% loss to follow-up, about 1,503 per arm should be recruited ($1{,}352/0.9$, rounded up).
+
+Detecting a three-point absolute reduction needs a large trial. If the programme is expected to be delivered to groups, a cluster design would increase the number further by the design effect.
 :::
 :::
+
+::: widget hypothesis
+test: z
+tail: two
+alpha: 0.05
+effect: 0.3
+n: 50
+caption: The null and alternative distributions of a test statistic. The effect is in standard deviation units. Increase the sample size $n$ and watch the power rise; reduce the effect and see how quickly a trial becomes underpowered. A simplified model of a trial with a continuous outcome.
+:::
+
+## Analysis {#analysis}
+
+::: definition Intention to treat and per protocol {#def-itt}
+In an **intention-to-treat** (ITT) analysis, every participant is analysed in the group to which they were randomised, whatever treatment they actually received and whether or not they completed it.
+
+In a **per-protocol** analysis, only participants who received the allocated treatment as specified are included. In an **as-treated** analysis, participants are grouped by the treatment they actually received.
+:::
+
+ITT preserves the balance created by randomisation, so it is the primary analysis for superiority trials. It estimates the effect of *offering* a treatment in practice, including the effect of people stopping or switching. Per-protocol and as-treated analyses break randomisation, because the people who adhere or switch are not a random subset.
+
+::: example Crossing over {#ex-itt}
+In a fictional trial, 1,000 patients with a vascular condition are randomised to surgery or medical treatment, 500 in each arm. In the surgery arm, 50 patients become too unwell for surgery and receive medical treatment; 15 of them die. Of the 450 who have surgery, 36 die. In the medical arm, 30 patients later have surgery anyway, and 3 of them die; of the 470 who stay on medical treatment, 47 die. Compare the ITT, per-protocol and as-treated results.
+::: solution
+**ITT**: surgery arm $51/500 = 10.2\%$; medical arm $50/500 = 10.0\%$. No difference.
+
+**Per protocol** (excluding crossovers): surgery $36/450 = 8.0\%$; medical $47/470 = 10.0\%$.
+
+**As treated**: received surgery $(36 + 3)/480 = 8.1\%$; received medical treatment $(15 + 47)/520 = 11.9\%$.
+
+The per-protocol and as-treated analyses make surgery look beneficial. But the patients who were too unwell for surgery had a death rate of 30%, and they were moved out of the surgery group. Surgery looks good partly because the sickest patients were not operated on. The ITT analysis, which keeps the randomised groups intact, shows no advantage for a policy of offering surgery.
+:::
+:::
+
+**Missing data** threaten every trial. If participants who drop out differ in prognosis between arms, the comparison is biased. Methods such as multiple imputation can help when the reasons for missingness are understood, and sensitivity analyses should test how much conclusions depend on assumptions about the missing outcomes. The best protection is keeping losses small.
+
+**Subgroup analyses** ask whether the effect differs between groups of patients. They are often misleading. With many subgroups, some will show apparently different effects by chance. ISIS-2, a large trial published in 1988, showed that aspirin reduced deaths after myocardial infarction. To make the point, the investigators analysed patients by astrological star sign: for those born under Gemini or Libra, aspirin appeared to have no benefit. Credible subgroup effects are few, prespecified with a predicted direction, supported by a formal test of interaction, biologically plausible, and replicated.
+
+**Stopping early** for benefit is sometimes right, but trials stopped early, especially with few events, tend to overestimate the treatment effect, because they stop at a random high. Interim analyses should be planned in advance with strict stopping rules and overseen by an independent data monitoring committee.
+
+::: warning A "non-significant" trial has not shown "no effect"
+A trial that finds no statistically significant difference has not shown that the treatments are equivalent. If the confidence interval for the difference is wide, it is compatible with both a worthwhile benefit and harm, and the trial was simply too small. Before concluding "no effect", look at the confidence interval: does it exclude a difference that would matter to patients? Only then is "no important difference" a fair conclusion. Showing equivalence or non-inferiority requires a trial designed for it.
+:::
+
+## Registration and reporting {#reporting}
+
+Trials that find no effect are less likely to be published, and outcomes that look unfavourable are sometimes left out of reports. Both distort the evidence. Two safeguards have become standard.
+
+**Registration.** In 2004 the International Committee of Medical Journal Editors announced that its member journals would consider a trial for publication only if it had been registered in a public registry before the first participant was enrolled; the policy applied to trials starting recruitment on or after 1 July 2005. Registries such as ClinicalTrials.gov and the ISRCTN registry record the primary outcome in advance, so that readers can check whether the published outcome is the one that was planned.
+
+**Protocols and reporting guidelines.** The **SPIRIT** statement (2013, updated in 2025) lists what a trial protocol should contain. The **CONSORT** statement, first published in 1996 and updated in 2001, 2010 and 2025, lists what a trial report should contain: CONSORT 2025 has a 30-item checklist and a participant flow diagram, and adds a section on open science such as data sharing and access to the protocol. The flow diagram shows how many people were screened, randomised, allocated, followed up and analysed in each arm, and it is the first thing to look at when reading a trial.
 
 ::: quiz
-Intention-to-treat analysis primarily protects:
-- [ ] Statistical power
-- [x] The randomisation guarantee when participants deviate from allocated treatment
-- [ ] Blinding integrity
-- [ ] Publication prospects
+A trial randomises 400 patients to a new drug or placebo. Twenty per cent of the drug group stop taking it because of side effects. The authors report a per-protocol analysis showing a significant benefit, and an intention-to-treat analysis showing a smaller benefit that is not statistically significant. Which statement is most accurate?
+- [ ] The per-protocol result is more valid because it reflects patients who actually took the drug.
+- [x] The intention-to-treat result is the primary unbiased comparison; the per-protocol result may be biased because people who tolerate the drug differ from those who do not.
+- [ ] Both results are equally valid; the truth lies between them.
+- [ ] The trial proves the drug is ineffective.
 ::: solution
-**Analysing by allocated arm regardless of what was taken preserves the confounding-free contrast randomisation created; per-protocol analyses reintroduce selection - [[#def-conduct]].**
+Only the intention-to-treat comparison keeps the groups formed by randomisation. People who stop a drug because of side effects may differ in health and prognosis from those who continue, so excluding them creates a non-random comparison. The ITT estimate of a modest benefit with a wide interval is the fair summary: the drug may help, but this trial has not shown it convincingly. It certainly has not shown the drug is ineffective.
 :::
 :::
 
-::: widget plot
-f: 100*exp(-((x-50)^2)/200)/(100*exp(0)); 105; 0; 1; 60
-x: 20, 80
-y: 0, 100
-labels: \text{observed-risk-reduction-percent},\ \text{density (illustrative)};\\ \text{true-effect-distribution-for-stopped-early-trials};\\ \text{published-peak (the stopping-boundary peak)};\\ \text{the shrinkage from 40 to 25 percent in repeat trials}
-caption: Trials stopped at an interim high-water mark overstate benefit; the distribution of confirmed effects sits left of the published peak ([[#def-conduct]]).
+::: history
+In 1747, James Lind, a naval surgeon aboard HMS *Salisbury*, took twelve sailors with scurvy and gave pairs of them different remedies, including cider, vinegar, sea water and oranges and lemons. The two given citrus fruit recovered rapidly. Lind's was a controlled comparison, but not a randomised one.
+
+Randomisation came from agricultural science: Ronald Fisher argued in the 1920s and in *The Design of Experiments* (1935) that random allocation was what made a statistical test valid. Austin Bradford Hill brought the idea into medicine. The Medical Research Council's trial of streptomycin for pulmonary tuberculosis, published in the *British Medical Journal* in 1948, allocated patients using random sampling numbers, with assignments held in sealed envelopes at a central office, and compared them with patients on bed rest alone. Streptomycin was in short supply, which made it ethically acceptable to allocate it by chance.
+
+The trial is usually described as the first properly randomised clinical trial. Its methods, including concealed central allocation and assessment of chest radiographs by readers who did not know the treatment, set the template for modern trials.
 :::
 
 ## Where this leads
 
-Ethics of consent, equipoise and placebo are worked in [[medical-ethics-law/research-ethics]]; systematic pooling of trials in [[epidemiology-ebm/systematic-reviews]]; appraisal drills in [[epidemiology-ebm/critical-appraisal]]; statistics in [[epidemiology-ebm/statistics-for-clinicians]]; and trial-derived evidence in every clinical course's guidance.
+The statistics needed to read trial results, including confidence intervals, p-values, the number needed to treat and hazard ratios, are in [[epidemiology-ebm/statistics-for-clinicians]]. Combining trials is the subject of [[epidemiology-ebm/systematic-reviews]], and appraising a single trial for a clinical decision is covered in [[epidemiology-ebm/critical-appraisal]].
 
 ::: summary
-- Randomisation balances all confounders, measured and not, in expectation - a guarantee about the design, not the sample; covariate imbalance is usually noise and adjustment is legitimate refinement, not repair.
-- Randomisation buys no external validity: generalising from trial-eligible bodies to your patients is an assumption to state, and the pragmatic-trial and effectiveness literature exists to test it.
-- Allocation concealment protects assignment, blinding protects measurement and attrition; both fail toward the investigators' hopes, so risk-of-bias assessment treats them as separate engineering controls.
-- Intention-to-treat preserves the randomisation contrast when participants deviate; the per-protocol contrast answers 'what happens when taken' and requires its own design logic - the pair is read together, and non-inferiority flips their hierarchy.
-- Non-inferiority margins are policy choices, and assay sensitivity is the design's load-bearing assumption; 'equivalent' is a word trials do not earn.
-- Early stopping for benefit inflates effect estimates and truncates safety and mortality evidence; read point estimates from stopped trials as optimistic upper bounds and the totality of trials as the evidence.
-- Registration and reporting discipline (prospectively registered primary endpoints, complete outcome reporting, individual-participant-data sharing) are the difference between a body of trials and an advocacy document.
+- Randomisation balances known and unknown prognostic factors in expectation and gives statistical tests their meaning. It removes confounding by indication.
+- Trials are framed by PICO. Primary outcomes should matter to patients; surrogate and composite outcomes need care, as CAST showed.
+- **Allocation concealment** protects randomisation at enrolment; **blinding** protects the groups afterwards. Report who was blinded rather than "double-blind".
+- Designs include parallel, crossover, factorial, cluster (multiply sample size by $1 + (m-1)\rho$), pragmatic, adaptive and platform trials.
+- **Non-inferiority** is shown when the whole confidence interval lies within a prespecified margin.
+- Sample size depends on the square of the target difference, the baseline risk, $\alpha$ and power. Underpowered trials yield inconclusive results.
+- **Intention to treat** is the primary analysis for superiority trials; per-protocol and as-treated analyses break randomisation.
+- Be sceptical of subgroup claims and of trials stopped early for benefit. A non-significant result is not proof of no effect.
+- Trials should be registered before enrolment (ICMJE policy since 2005), follow a SPIRIT protocol and be reported to CONSORT 2025.
 :::
 
 ## Exercises
 
-::: exercise Explain randomisation {level=1}
-A patient asks why a trial flips a coin for her treatment rather than letting the best doctor decide. Give the three-sentence answer and the one-sentence honest caveat.
+::: exercise Concealment or blinding? {level=1}
+Explain the difference between allocation concealment and blinding, and say why concealment is possible in every trial while blinding is not.
 ::: solution
-**The-plainest-true-answer ([[#def-principle]]): the three sentences: 'both treatments are reasonable, and nobody knows which is better - that is why the trial exists; if doctors choose, the healthier and luckier patients will drift to whichever treatment doctors suspect, and the comparison will measure suspicion, not medicine; the coin keeps the two groups alike in every way we can see and, more importantly, every way we cannot, so the difference in results is the difference the treatment makes.' The caveat: 'you are giving up the chance that a doctor's judgement matches you better than the coin does - we accept that only when the uncertainty is genuine, and you can leave at any time; and whatever happens in this trial, we will still treat you as an individual - the coin decides the study drug, not your care.' The teaching add-on for trainees: this conversation is clinical equipoise in lay words (the ethics definition's clinical-facing translation), and the sentence 'nobody knows which is better' is the trial's entire justification - if it is not true for her, the honest answer is a referral, not a randomisation.**
+Allocation concealment hides the *next* assignment from those enrolling participants, until the participant is entered. It protects the randomisation process from selection bias. Blinding hides the assignment *after* allocation from participants, clinicians, outcome assessors or analysts, protecting against differences in care and in measurement. Concealment is always possible because it only requires that the sequence be held centrally or securely. Blinding is impossible when the treatments are obviously different, such as surgery versus tablets, although outcome assessors can usually still be blinded.
 :::
 :::
 
-::: exercise Grade the bias {level=2}
-Apply risk-of-bias reasoning to a trial with: sealed-envelope allocation at each site, pharmacist-blinded but participant-unblinded design (active versus identical-looking active), 18 percent attrition concentrated in the intervention arm with 'reasons similar between groups' asserted, and a primary outcome changed in a conference presentation before database lock. Report domain by domain with the direction of concern.
+::: exercise An ITT risk difference {level=1 check="4.5"}
+In a fictional trial, 30 of 400 participants randomised to a new treatment and 48 of 400 randomised to standard care have a stroke. Calculate the absolute risk reduction in percentage points, by intention to treat.
 ::: solution
-**Risk-of-bias-as-narrative ([[#def-conduct]]): Randomisation process: sealed envelopes at site - high concern (allocation-concealment failure modes documented for envelopes and site-generated lists; the bias direction favors the investigators' expectations). Deviations from intended interventions: participants unblinded with two actives - some concern (expectation effects on subjective outcomes and on co-interventions; the 'identical-looking-active' control at least protects against differential dropout narratives, partially). Missing outcome data: 18 percent differential attrition with an assertion instead of a table - high concern (differential loss related to both treatment and outcome is the informative-censoring condition that biases every analysis; sensitivity analyses - worst-case, multiple imputation with tipping points - are mandatory before any claim). Measurement of the outcome: partially mitigated by the pharmacist blinding for objective endpoints, concerning for patient-reported ones. Selection of the reported result: the conference-presented endpoint switch before database lock - high concern (selective outcome reporting with its known effect-direction bias; the protocol-and-registration-comparison the reviewer should demand, and the 'results-first-then-protocol-retrieval' failure mode). The overall verdict: the trial cannot support a causal claim at the claimed precision; its unbiased residue is the difference-of-proportions after best-case-worst-case bounding, and the correct summary sentence is 'uncertain, possibly beneficial, requires a concealed-allocation blinded trial with pre-registered outcomes'. The teaching point: risk-of-bias assessment is not box-ticking; each domain names a mechanism with a direction, and the assessment is the mechanism's story.**
+Risks are $30/400 = 7.5\%$ and $48/400 = 12.0\%$. The absolute risk reduction is $12.0 - 7.5 = 4.5$ percentage points.
 :::
 :::
 
-::: exercise Design the surgical trial {level=2}
-Arthroscopic partial meniscectomy versus supervised exercise for degenerative knee meniscal tear: design the definitive trial against the specific biases of surgical research, using the exercise programme's published sham-surgery precedent.
+::: exercise Design effect {level=1 check="1.95"}
+A cluster trial randomises general practices, with an average of 20 participants per practice and an intracluster correlation coefficient of 0.05. What is the design effect?
 ::: solution
-**Sham-surgery-rigour ([[#def-principle]], [[#def-conduct]], [[musculoskeletal/back-pain]]): the design: parallel superiority, allocation-concealed central randomisation, and a sham-arthroscopy control (incisions, arthroscope insertion, no resection - the precedent's own ethical and feasibility arguments addressed in the ethics section), with the surgeon-blinded-to-allocation-after-closure reality and participant-blinding preserved; the co-intervention symmetry that makes it work: both arms receive identical supervised exercise (the 'exercise-dose-standardisation-and-adherence-audit' the physical-therapy literature learned the hard way), identical follow-up contact frequency (the 'therapeutic-encounter-equivalence' point), and identical analgesic ladder protocols with rescue-medication consumption as a process endpoint. Outcomes: patient-reported pain and function (the minimum-core-outcome-set trials use) as primary, with the mechanical-symptom subscale (the locking-and-catching class where surgery might genuinely differ - the 'symptom-defined-subgroups' literature that argues the degenerative-tear diagnosis itself matters), plus re-operation and crossover as harms. Analysis: intention-to-treat with crossover accounted (the 'effect-of-treatment-as-allocated' estimand's limits made explicit), pre-specified subgroup by mechanical symptoms and radiographic osteoarthritis grade, and the equivalence-of-exercise-dose check. The precedent's lessons: the published trials (the 'Moseley-and-Katz-and-Sihonen-adjacent sham-programme' results - exercise and sham statistically indistinguishable from real surgery at one to two years for degenerative tears, the 'off-label-procedure-habit' finding that reshaped guidelines and left a residual debate about locking symptoms) show both the design's power and the specialty's resistance: recruitment, surgeon equipoise, and the 'the-real-surgery-is-different-when-you-believe' performance effects that the blinding checks must measure. The reporting: CONSORT extension for non-pharmacological treatments, with the sham-surgery ethics justification verbatim from the approvals.**
+Design effect $= 1 + (m - 1)\rho = 1 + 19 \times 0.05 = 1.95$. The trial needs nearly twice as many participants as an individually randomised trial with the same power.
 :::
 :::
 
-::: exercise Interpret the subgroup forest {level=2}
-A heart-failure trial's subgroup figure shows benefit in diabetics (hazard ratio 0.6) and none in non-diabetics (1.1), interaction P = 0.07, and the press release leads with 'works better in diabetics'. Write the interpretation memo for your journal club.
+::: exercise Sample size {level=2 check="196"}
+A trial aims to detect a reduction in an outcome from 20% to 10%, with a two-sided $\alpha$ of 0.05 and 80% power. Using $z$ values of 1.96 and 0.84 and the formula in [[#def-power]], how many participants are needed in each arm?
 ::: solution
-**Subgroups-interaction-and-multiplicity ([[#def-conduct]], [[epidemiology-ebm/statistics-for-clinicians]], [[cardiovascular/heart-failure]]): the memo's three moves. First: interaction first, never within-group: the difference between 0.6 and 1.1 must be tested as an interaction (it was: P = 0.07 - not the conventional threshold, and subgroup interactions are underpowered by design since the trial's power calculation ignored the split). Second: multiplicity: subgroup figures are the 'many-roads-to-a-headline' structure (twenty subgroups at alpha 0.05 guarantee some apparent heterogeneity; the 'false-discovery-rate-and-subgroup-detection-methods' literature - the 'Subgroup-Analysis-and-Forest-Plot-fashions' critiques of the 2000s that the reporting guidelines absorbed). Third: plausibility and prior: is there a mechanism the diabetes subgroup would exploit (the class-effect biology, the confounded-by-metformin-adjacent interactions that drug-interaction-aware analyses chase), and is the finding consistent with the drug's other trials and the condition's epidemiology? The verdict: 'the trial's overall estimate applies to both groups unless a compelling pre-specified interaction survives multiplicity-aware testing; treat diabetics as treated - the subgroup finding is a hypothesis for the next trial's stratification, and the press release is a manufactured difference.' The closing habit for readers: the only subgroup finding that should change practice is one the trial was designed to test (the pre-specified-with-power stratified-randomisation designs) - everything else is the epidemiology of tomorrow's questions.**
+$n = (1.96 + 0.84)^2 \times [0.2 \times 0.8 + 0.1 \times 0.9]/(0.2 - 0.1)^2 = 7.84 \times 0.25/0.01 = 196$ per arm.
 :::
 :::
 
-::: exercise Argue the placebo control {level=3}
-A trial of a new antidepressant for moderate depression proposes placebo-controlled arms with a two-week washout of prior medication. Write both sides of the ethics argument, then the compromise designs that ethicists and regulators have accepted.
+::: exercise A smaller target {level=2 check="902"}
+The same investigators decide that a reduction from 20% to 15% would also be worthwhile. Using the same $z$ values, how many participants are needed per arm? Round up to a whole number.
 ::: solution
-**Placebo-between-science-and-duty ([[#def-conduct]], [[medical-ethics-law/research-ethics]]): For: the assay-sensitivity argument (the antidepressant placebo-response literature - expectation, ritual and regression-to-the-mean produce response rates that make active-versus-active trials uninterpretable for a first approval; the 'no-evidence-of-effect-versus-no-effect-evidence' asymmetry that underpowers non-inferiority designs), and the scientific-value-creates-ethics argument (a trial that cannot answer its question is itself unethical - the equipoise requirement cuts both ways). Against: theDeclaration-of-Helsinki's 'best-proven-method' clause and its interpretation history (the post-TG1990s-AIDS-trial debates' permanent scars), the washout question (participants stable on treatment made symptomatic for the trial - the 'designinduced-harm-and-no-alternative-arm' critique, the suicide-risk monitoring obligations), and the structural point: moderate depression has proven treatments with acceptable effect sizes, so the question 'better than nothing' is not the question patients need asked. The compromise architecture now standard: add-on designs (new agent versus placebo added to stabilising standard treatment - answers incremental value, sacrifices assay cleanliness), the shortened-placebo-exposure designs with early escape and rescue protocols (the 'rescue-medication-and-predetermined-stopping-criteria' apparatus the psychopharmacology trials' ethics approvals require), active-comparator non-inferiority with assay-sensitivity demonstration via historical and concurrent-biomarker anchors, the enriched-enrollment designs (the 'enriched-enrollment-randomised-response' with its informed-consent disclosure obligations and the 'withdrawal-confound' critiques), and the patient-preference trials that randomise only the equipoised (the preference-design literature that preserves blinding and autonomy together). The verdict structure for the actual protocol: placebo-only-with-washout-in-moderate-depression is hard to defend when effective treatment exists and monitoring can catch deterioration; the add-on-with-rescue-and-short-exposure design answers the regulatory question within the ethical constraint, and the trial's registration and consent must say which question it is answering, since 'safety-and-efficacy' covers both.**
+$n = 7.84 \times [0.2 \times 0.8 + 0.15 \times 0.85]/(0.05)^2 = 7.84 \times 0.2875/0.0025 = 901.6$, rounded up to 902 per arm. Halving the target difference has increased the sample size more than fourfold, because the variance term also rose slightly.
 :::
 :::
 
-::: exercise Write the statistical analysis plan {level=3}
-Draft the sections of a statistical analysis plan for a two-arm randomised superiority trial that would survive the 'protocol-versus-published-report' audit: population, outcomes, handling of deviation, missing data, interim, and multiplicity.
+::: exercise Choose the design {level=2}
+Suggest a design for each question. (a) Does a nurse-led education programme in general practices reduce emergency admissions for asthma? (b) Does a new inhaler reduce symptoms more than the current inhaler in stable asthma? (c) Do vitamin D supplements and omega-3 fatty acids each prevent cancer?
 ::: solution
-**An-SAP-as-contract ([[#def-conduct]], [[epidemiology-ebm/statistics-for-clinicians]]): Population: the intention-to-treat set defined by randomisation with the 'as-randomised' variables frozen at baseline (the post-randomisation-changes-are-outcomes-not-covariates rule), and the modified-ITT set if a biological-plausibility window matters, declared as primary or supportive with reasons. Outcomes: one primary with its measure, time-point and responder definition fixed before the first participant; the secondary hierarchy with gatekeeping (the 'no-claim-without-testing-through-the-gate' multiplicity structure - Hochmuth-and-Bonferroni-and-gatekeeping-adjacent choices named, not improvised); safety as a complete-listing discipline not a hypothesis hunt. Deviations: the handling stated by category (crossover - as-randomised primary with the as-treated analysis for mechanism discussion and its assumptions; adherence - never adjusted by post-randomisation behaviour in primary claims; protocol-eligible-but-randomised-by-error - reported and analysed as-randomised with sensitivity exclusion). Missing data: the assumed mechanism per outcome, the imputation strategy (multiple imputation with covariates, pattern-mixtures for non-monotone dropout), and the tipping-point analysis pre-specified for the primary outcome when loss exceeds a named threshold. Interim: number, timing, boundary (O'Brien-Fleming's conservative early bars named with the alpha-spending function), the independent-data-monitoring-committee charter, the blinding of interim results, and the stopping rule's bias acknowledgement (the effect-size-optimism statement and the continuation-follow-up plan). Multiplicity: the full family's alpha budget with the accounting shown (which tests spend which fraction, and what happens to the leftovers), and the 'no-subgroup-claims-from-the-primary-model-without-interaction-testing-through-a-pre-specified-tree' rule. The final section names what will be shared (protocol, SAP with version history, analysis code, individual-participant-data availability terms) because the audit that tests all of the above is someone else comparing the registry entry with the paper, and the best SAP is written to survive that, not just the statistician.**
-:::
-:::
-::: history
-**The trial's genealogy begins with experiments nobody called trials: James Lind's 1747 citrus comparison at sea (six pairs, one intervention each, the six-day duration and the modest question that still define the form) and the variolation and naval-diet comparisons of the same century. Nineteenth-century clinical medicine produced interventions at scale and left evaluation to anecdote and conviction. The formal machinery arrived in the 1920s-40s: Fisher's randomisation and significance apparatus at Rothamsted (the agricultural plots that generated analysis of variance, and the tea-tasting lady whose objection still warns against reading mechanism into significance), then the Medical Research Council's streptomycin trial in tuberculosis (1948) with its envelope-coin randomisation, its untreated-control controversy and its 'is-randomisation-ethical' letters - the arguments unchanged for seven decades - followed by the whooping-cough vaccine field trials and, in 1954, the Salk polio trial, the largest placebo-controlled experiment ever run. The methodical deepening: the double-blind and placebo era of the 1950s (Beecher's 1955 essay measuring the placebo enterprise; the Veterans Administration's comparative clinical trials of antihypertensives and anticoagulants, whose 'is-comparative-trialship-ethical' dispute with the schools of therapeutic judgement was settled by the evidence and by the results' humility); the birth of the intention-to-treat principle in the same veterans' and coronary-drug literature; the CONSORT statement's 1996 origin as a methodologists' quiet revolt against unreadable reports, its 2010 revision, and its extension family (cluster, non-inferiority, pilot-and-feasibility, pragmatic); the registration campaigns (the 2004 International Committee of Medical Journal Editors' deadline that made prospective registration real, the WHO registry and its minimum data set, and the trials-by-proxy legal argument that ran alongside); and the replication-and-reform wave of the 2010s (the registered-report movement from psychology, the individual-participant-data meta-analysis infrastructure, the adaptive-and-platform-design reformation of oncology and pandemic trials, and the trial-registry audits that turned protocol-versus-paper comparison into a standing public health surveillance function - because the field's mature verdict is that a completed unreported trial is as much a research-misconduct event as a fabricated dataset).** ** - [[medical-ethics-law/research-ethics]], [[epidemiology-ebm/systematic-reviews]].**
-:::
-
-::: example The registry trial {#ex-registry}
-Your health system's electronic record can randomise 20,000 hypertensive patients to two treatment algorithms without consent forms per arm. Draft the governance memo: equipoise, consent tiers, data protection, and the return-of-results obligation.
-::: solution
-**Research-as-usual-care-governance ([[#def-principle]], [[#def-conduct]], [[medical-ethics-law/research-ethics]]): The equipoise case: the two algorithms are genuinely contested guideline options (the 'less-intensification-versus-treat-to-target' debate the trials never resolved at population scale) - clinical equipoise is documented, which is the ethics prerequisite and the public justification. Consent tiers: the full-consent pilot for feasibility; then the 'broad-consent-with-opt-out' model (the stored-data-and-biobank consent architectures, the 'alert-overrides-actual-review' warning), the 'notification-plus-opt-out' model many pragmatic trials use for minimal-risk comparative-effectiveness randomisation (the 'clinicial-equipoise-as-risk-reduction' argument: the patient receives one of the options they would have received anyway), with the opt-out route as easy as the enrolment route and no care consequences either way. Data protection: the data-minimisation and pseudonymisation layers, the control-access-audit trail, and the 'research-use-of-clinical-data' lawful basis with its information-governance-access approval documented for the public. Return of results: the aggregate dashboard published to participants' clinicians and the public within the year; the individual-result question handled by the trial's own care logic (results that matter clinically are generated by care, not research, in a well-designed registry trial - the design feature worth stating); and the stopping-and-change governance (the independent committee that can halt the randomisation, the pre-specified conditions, and how a mid-trial guideline change is handled - the 'background-drift' protocol amendment path). The community layer: patient-public-involvement in the choice of the algorithm pair (the 'outcomes-patients-value' framing that also fixes the endpoint), publication of both arms' results regardless of direction (the registration and reporting commitments written into the funding), and the honest sentence the memo must contain: the trial's power comes from patients being patients, and every governance choice must keep that legitimate rather than merely legal.**
+(a) A **cluster randomised trial**, randomising practices, because the programme is delivered to whole practices and individual randomisation would lead to contamination. The sample size must allow for the design effect. (b) A **crossover trial** could work, because stable asthma returns to baseline after a washout and each patient can act as their own control; a parallel trial is the alternative if carry-over is a concern. (c) A **2×2 factorial trial**, randomising each participant to vitamin D or placebo and to omega-3 or placebo, answering both questions in one trial, provided the two do not interact.
 :::
 :::
 
-## Exercises
-
-::: exercise Spot the reporting sin {level=1}
-Identify the reporting failure in each: (a) a trial's registered primary outcome was 'all-cause mortality at 90 days' but the paper reports 'cardiovascular death at 90 days plus a composite'; (b) 960 of 1,000 participants completed, and the flow diagram lumps 40 into 'other'; (c) the methods cite 'appropriate statistical tests'; (d) the discussion opens 'no significant difference was found, demonstrating equivalence'.
+::: exercise Interpret a subgroup claim {level=3}
+A large fictional trial of a blood pressure drug shows an overall 15% relative reduction in strokes. The authors report 24 subgroup analyses; in one, women under 60, the drug appears to have no effect (risk ratio 1.02, 95% CI 0.80 to 1.30). A press release states that "the drug does not work in younger women". Evaluate this claim.
 ::: solution
-**CONSORT-in-four-moves ([[#def-conduct]]): (a) outcome-switching - the selective-reporting problem registration was created to police; the correct practice is protocol-anchored reporting with the switch disclosed and both results presented. (b) attrition-opacity - the flow diagram's job is to make loss inspectable (the 2x2 of loss by arm and reason); 'other' defeats it and defeats the missing-data judgement. (c) analysis-opacity - CONSORT demands the methods identify 'all statistical methods used', including how the primary analysis handled censoring, imbalance and multiplicity; 'appropriate tests' is a randomised-trial's version of 'treated conservatively'. (d) the absent-evidence fallacy and the non-inferiority usurpation - a non-significant superiority test demonstrates neither equivalence nor absence of effect; equivalence claims require equivalence designs, margins and intervals read against the margin. The exercise's point: all four are checklist items, and checklist failures are not clerical - each one is a mechanism with a direction, which is what the grading exercise teaches readers to see.**
+The claim is weak. With 24 subgroups, at least one is expected to differ by chance even if the true effect is the same in all. The subgroup result has a wide confidence interval that includes the overall effect of 0.85, so it is compatible with the drug working just as well in younger women. The relevant question is whether the effect in this subgroup differs from the effect in others, which requires a test of interaction, not a separate test within the subgroup. The analysis was probably not prespecified with a predicted direction, and there is no obvious biological reason for the difference. Younger women also have few strokes, so the subgroup has low power. The best estimate for younger women remains the overall effect, until a prespecified analysis or another trial shows otherwise.
 :::
 :::
 
-::: exercise Defend the design choice {level=2}
-A grant panel rejects your proposal for an open-label trial as 'unreliable'. Defend open-blinded-endpoint designs (the open-label-with-objective-endpoint precedent literature) with the bias structure stated, and concede the endpoints where blinding remains mandatory.
+::: exercise Design a surgical trial {level=3}
+Surgeons wish to compare arthroscopic surgery with physiotherapy for persistent knee pain from a degenerative meniscal tear. Outline the key design features of a trial, explaining how you would deal with the difficulties of blinding and crossover.
 ::: solution
-**Blinding-is-a-specific-defence ([[#def-conduct]], [[clinical-skills/patient-safety]]): The argument: blinding defends against expectation-driven effects on subjective outcomes, differential attrition and differential co-intervention; where the outcome is objective and centrally adjudicated (death, reinfarction on prespecified imaging criteria, laboratory-confirmed infection, hospital discharge administrative endpoints), the expectation channel narrows and the design's cost-effectiveness and generalisability advantages dominate - the 'open-label-with-blinded-endpoint-assessment' literature (the open-label-with-blinded-endpoint-assessment precedent literature and the 'modestly-biased-and-much-cheaper' modelling defence) and the evidence that sham-controlled surgery-and-device trials' double-blinding of physical procedures carries its own harms (the anaesthesia-and-incision risks) and its own unblinding failures (the 'patients-usually-guess' studies). The concessions: subjective patient-reported outcomes (pain, fatigue, mood - the placebo literature's home ground) demand blinding or at minimum allocation-concealed assessment by blinded raters with the statistician masked; adherence-driven endpoints are contaminated by knowledge of assignment (the 'differential-dropout-in-open-antiviral-trials' examples); and 'open' must still mean concealed allocation, pre-registered endpoints, blinded outcome committees and objective primary endpoints - the reporting guidance for open trials exists so that 'open-label' is a design, not an excuse. The panel answer in one line: 'we blind where belief changes the measurement and we measure where belief cannot; the alternative - sham-randomising what we cannot blind - buys theatre, not validity.'**
+- **Question and population**: adults with persistent knee pain and a degenerative meniscal tear on imaging, after a period of initial conservative care, without locking or advanced osteoarthritis.
+- **Comparator**: a structured physiotherapy programme. A placebo (sham) surgery arm, in which an arthroscopy is performed without the therapeutic procedure, would allow blinding of participants and assessors and has been used in trials of this question; it raises ethical issues that must be justified by genuine uncertainty and informed consent.
+- **Randomisation**: computer-generated, central, concealed, stratified by centre and perhaps by age.
+- **Blinding**: if no sham arm, participants and surgeons cannot be blinded, so use patient-reported outcomes that are validated and ask outcome assessors and analysts to be blinded. Acknowledge the risk of expectation bias.
+- **Primary outcome**: a validated knee pain and function score at 12 or 24 months, with a prespecified minimal clinically important difference used to set the sample size.
+- **Crossover**: some physiotherapy patients will ask for surgery. Record it, do not prevent it if clinically justified, and analyse by intention to treat as primary, with per-protocol analysis as secondary. Report crossover rates clearly.
+- **Registration and reporting**: register before enrolment, publish the protocol following SPIRIT, report to CONSORT including the extension for non-pharmacological treatments, and report harms in both arms.
 :::
 :::

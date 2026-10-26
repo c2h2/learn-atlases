@@ -1,142 +1,296 @@
-Critical appraisal is the clinical examination of published claims: the habit of asking, of every paper that would change practice, what it measured, what could have gone wrong, and whether the numbers can bear the conclusions. **This capstone chapter assembles the course's tools into reading procedure: the appraisal questions by design (the filter-and-forestry approach that a competent clinician runs in twenty minutes), the special pathologies (spin, selective reporting, conflicts, salami publication, the image-integrity layer, and predation), the guideline-complexity layer (appaising guidelines as documents of evidence-plus-values), and the practice endpoint: reading under uncertainty, changing minds including your own, and teaching the habit to a generation raised on abstracts and posters.**
+A 68-year-old man brings a newspaper cutting to his appointment. A new trial, it says, shows that a widely used drug "cuts the risk of dementia by a third". He wants to know whether he should be taking it. Answering him well needs everything in this course: knowing what kind of study it was, whether its result is likely to be true, how large the benefit is in absolute terms, whether the people in the trial resemble him, what the harms are, and what he himself values. This is **critical appraisal**: the systematic assessment of research to judge its validity, its results and its relevance to a particular decision.
 
-## The procedure
+This final chapter brings the earlier chapters together into a practical method. It covers the steps of evidence-based practice, a framework for appraising any study, how to apply results to individual patients, common ways in which research is presented misleadingly, and how clinical guidelines are made and judged.
 
-::: definition Appraisal by design, in reading order {#def-procedure}
-**The competent reader arrives with questions, and each design's questions are its validity conditions read backwards. For a randomised trial (the chapters' worked example): were participants clearly eligible-and-representative (the population question), was allocation concealed and assignment unexpected (selection), was anyone blinded for outcomes that care about belief (measurement), did follow-up differ by arm with reasons tabulated (attrition), was the analysis by allocated arm and the outcome the registered one (the reporting chain), and is the effect's interval clinically legible in absolute terms (the interpretation layer) - the Cochrane-risk-of-bias domains converted into a reading order rather than a scoring form. For diagnostic studies: the spectrum (consecutive-and-unselected versus the two-grocers design), the reference standard's reality and blinding, the verification path of the test-negatives, and the operating characteristics at the threshold the paper's own conclusion uses. For prognostic and aetiological cohorts: the selection mechanisms, the outcome's ascertainment independence from exposure measurement, the confounding plan visible as a diagram or absent as an excuse, and the duration-versus-latency adequacy. For systematic reviews: the question match, the search date, the flow, the bias tool's use, and the model and prediction interval. For qualitative research (whose appraisal literacy the curricula are rebuilding): the paradigm's own warrants - sampling logic, data saturation's defensible claim, reflexivity statements, the analytic method's audit trail - judged by the tradition's criteria, not a distorted quantitative imitation. The cross-cutting forensics: baseline-table interrogation (the 'too-good-to-be-randomised' balance pattern that has unseveral trials), the methods-to-results concordance pass (does the analysis described produce the analysis reported), the figure-and-supplement audit (the 're-plot-the-main-result' discipline that catches unit and axis sins), and the closing clinical question the whole apparatus serves: given this evidence's honest weight, does it change my threshold for action - the evidence-based-medicine triumvirate's original formulation (best evidence, clinical expertise, patient values) whose second and third legs appraisal literature keeps letting atrophy.**
+## Evidence-based practice {#ebm}
+
+::: definition Evidence-based medicine {#def-ebm}
+In the words of David Sackett and colleagues (1996), **evidence-based medicine** is "the conscientious, explicit and judicious use of current best evidence in making decisions about the care of individual patients". It integrates three things: the best available research evidence, the clinician's expertise, and the patient's values and circumstances.
+
+It is usually described as five steps:
+
+1. **Ask** an answerable clinical question.
+2. **Acquire** the best evidence to answer it.
+3. **Appraise** the evidence for validity, results and applicability.
+4. **Apply** it, together with clinical expertise and the patient's values.
+5. **Assess** the outcome and one's own performance.
 :::
 
-## The pathologies
+Evidence-based medicine is sometimes caricatured as "cookbook medicine" that ignores the patient. The definition says the opposite. Evidence informs the decision; it does not make it. A treatment with a clear average benefit may be the wrong choice for a person whose priorities, other illnesses or circumstances differ from those of the trial participants.
 
-::: definition Misleading by omission and commission {#def-pathologies}
-**The misleading-innovation literature deserves a place in every curriculum: the 'spin' taxonomy (conclusions discordant with primary results - the 'shifted-to-secondary-endpoints' and 'safety-omitted' classes with their quantified prevalence in non-inferiority trials' abstracts), the positive-result-framing industry (the subgroup-as-headline, the relative-risk-only-abstract, the composite-endpoint-anchoring whose driver component the paper's own results disowns), and their detection heuristics: read the primary-outcome result before the conclusion; compare the abstract's claims to the registry's recorded primary; and read the secondary endpoints' forest before accepting the composite. Selective and distorted reporting: outcome switching (the registry-versus-paper comparisons), the 'multiple-publications-of-one-trial' salami economy (the trial-register cross-referencing that reveals the publication-count inflation), and post-hoc re-definitions (the 'responder-index-improvement' genres). Conflicts of interest are an evidence-quality domain now, not a confession: the sponsorship-concordance literature (financial ties' direction-of-effect consistency across industry-funded trials and guideline panels), the ghost- and guest-authorship audits (the gift-authorship prevalence in industry-authored documents), and the disclosure forms read as data sources (who designed, analysed and had veto - the 'key-question' translation). Research-integrity forensics has professionalised: image duplication and manipulation screening (the PubPeer tradition's citizen-science origins, the retraction-machinery studies and retracted-papers'-citation-half-lives), statistical-forensics tools (the digit-based last-digit and birthday-paradox anomalies, the GRIM-and-StroopTest-and-MatchTables class whose false-positive rates the practitioners themselves report), and the honest posture the field learned late: integrity screening is probabilistic, accusatory only in aggregate, and better built into journals than bolted on after tweets. Publication ethics's lighter touches: the predatory-publishing ecosystem (the 'special-issue-spam-and-fake-impact-factors-and-honorary-editors' apparatus documented in the library-science literature) and its appraisal heuristics (who invited this, what did it cost, is the editorship real). The chapter's meta-rule: the pathologies cluster - a trial with concealment failure and outcome switching and undisclosed sponsorship is the common pattern, which is why appraisal reads as a gestalt of the trustworthy and the exercise sections drill it.**
+### Asking and acquiring {#asking}
+
+A good clinical question has four parts, the **PICO** elements: the patient or **population**, the **intervention** (or exposure, or test), the **comparison**, and the **outcome**. "Does a statin prevent dementia?" becomes "In adults over 65 without dementia (P), does a statin (I), compared with no statin (C), reduce the 5-year incidence of dementia (O)?" Each element suggests search terms, and the question type suggests the best study design:
+
+| Question type | Best primary design |
+|---|---|
+| Therapy or prevention | Randomised controlled trial |
+| Diagnosis | Cross-sectional study of consecutive patients against a reference standard |
+| Prognosis | Cohort study of patients at a common, early point in their illness |
+| Harm or aetiology | Randomised trial if feasible; usually cohort or case-control study |
+
+Busy clinicians should search **pre-appraised** sources first: evidence-based guidelines, systematic reviews (such as the Cochrane Library) and evidence summaries, before individual studies. A good systematic review has already done the searching and appraisal that a single reader cannot.
+
+## A framework for appraisal {#framework}
+
+::: theorem The three appraisal questions {#thm-appraisal}
+Every research study, whatever its design, can be appraised by asking three questions in order:
+
+1. **Are the results valid?** Was the study designed and conducted in a way that protects against bias?
+2. **What are the results?** How large is the effect, and how precise is the estimate?
+3. **Will the results help with my patient?** Are the participants, interventions and outcomes similar enough to my situation, and do the benefits outweigh the harms and costs?
 :::
 
-## The practice
-
-::: definition Guidelines, uncertainty and teaching the habit {#def-practice}
-**Appraising guidelines is appraisal at one remove: the question set - who wrote it (the committee's conflict architecture and the patient-inclusion reality), what evidence engine (systematic reviews' currency and the de-duplication integrity), how recommendations were graded (the evidence-to-decision table's visibility - the 'strong-recommendation-against-thin-evidence' cases where values or resources did the work, and those reasons deserve the paper's own word count), what it says about variation and equity (the underserved-population extrapolations), when it updates and how dissent is recorded (the minority-vote tradition's decline and its cost to legitimacy), and its implementation realism (the recommendation's resource assumptions against local capacity - the 'guideline-as-utopia' failure mode). The practice of reading under uncertainty - the endpoint all of this serves - has learnable behaviours: naming your prior (the 'would-this-change-my-mind-if-reversed' test that exposes motivated reading), holding effect estimates as intervals including the null's neighbourhood, distinguishing 'no evidence' from 'evidence of no effect' from 'evidence is immature', and the calibration habit (the 'if-I-acted-on-this-every-day' absolute-risk arithmetic that converts relative claims into clinic behaviour). The implementation literature informs the reading: evidence arrives through summaries, opinion leaders and the clinician's own patients' questions (the knowledge-translation frameworks - the 'the-gap-is-not-the-library'-era Synthesis-without-application findings that the audit-feedback-and-local-champion interventions move imperfectly), which is why appraisal pairs with the communication chapters: appraising for oneself is statistics; appraising for a patient is language. Teaching the habit: the appraisal-curriculum evidence (the 'journal-club-with-structured-tools-versus-free-discussion' studies' small effects, the spaced-and-assessed-with-feedback design's superiority, and the deliberate-practice-with-cases finding), the workplace tools that outlive courses (the one-page design-specific question sheets, the registry-checking reflexes, the 'read-the-protocol-first' culture), and the intellectual-honesty layer the chapter closes on: appraisal applies hardest to the paper that confirms your practice, the finding that flatters your drug and the guideline you wrote - because the purpose of the apparatus is not to catch bad authors but to protect your own future patients from your present convictions, which is the one bias no tool can detect from outside.**
+::: proof
+The order matters because each question depends on the one before. If a study is seriously biased, the size of its effect is not worth interpreting, because it may reflect the bias rather than the truth; so validity comes first. If a valid study shows an effect too small or too imprecise to matter, there is nothing to apply; so the results come second. Only a valid study with an important result raises the question of applicability, which depends on the individual patient and setting and cannot be answered by the study alone. Structured checklists, such as those of the Critical Appraisal Skills Programme (CASP), are elaborations of these three questions for particular designs.
 :::
 
-::: example Twenty minutes {#ex-twenty}
-Appraise, in the time it takes the train, this trial report: 'Statin versus usual care in adults over 75 with no cardiovascular disease: 3,000 participants, 5 years, primary outcome cardiovascular death and hospitalisation combined; hazard ratio 0.81 (0.68 to 0.96), P = 0.015; funded by a foundation grant.'
+The detailed questions differ by study type.
+
+**Therapy (randomised trial)**
+
+- Was allocation randomised and concealed ([[epidemiology-ebm/randomised-trials]])?
+- Were the groups similar at baseline?
+- Were participants, clinicians and outcome assessors blinded, as far as possible?
+- Was follow-up complete, and were participants analysed in the groups to which they were randomised?
+- Was the primary outcome prespecified, registered and important to patients?
+- Results: the absolute and relative effect, NNT and confidence intervals ([[epidemiology-ebm/statistics-for-clinicians]]); harms.
+
+**Diagnosis (test accuracy study)**
+
+- Was there an independent, blind comparison with an appropriate reference standard?
+- Did the patients include the spectrum in whom the test would be used in practice?
+- Did everyone receive the reference standard, whatever the test result?
+- Results: sensitivity, specificity and, ideally, likelihood ratios ([[epidemiology-ebm/diagnostic-tests]]).
+
+**Prognosis (cohort study)**
+
+- Was the sample representative and assembled at a common point in the course of the disease (an **inception cohort**)?
+- Was follow-up long enough and complete?
+- Were outcomes defined objectively and assessed blind to prognostic factors?
+- Results: the probability of outcomes over time, with confidence intervals; if a prediction model is involved, was it validated?
+
+**Harm (cohort or case-control study)**
+
+- Were the compared groups similar apart from the exposure, and were confounders measured and adjusted for ([[epidemiology-ebm/bias-confounding]])?
+- Were exposures and outcomes measured in the same way in each group?
+- Was follow-up long enough? Is there a dose-response relation? Is the association consistent across studies?
+- Results: the relative risk or odds ratio and the number needed to harm.
+
+Reporting guidelines such as CONSORT (trials), STARD (diagnostic accuracy), STROBE (observational studies) and PRISMA (systematic reviews) list what a paper should report. A study that does not report an item cannot be appraised on it, but adherence to a reporting guideline is not in itself a sign of quality: a badly designed study can be well reported.
+
+::: example Appraising a trial abstract {#ex-appraisal}
+A fictional abstract reads: "In a double-blind trial, 4,000 adults aged 60–80 with hypertension were randomised to drug X or placebo. Over 4 years, the primary composite outcome of cardiovascular death, myocardial infarction, stroke or hospitalisation for angina occurred in 6.0% with drug X and 8.0% with placebo (hazard ratio 0.74, 95% CI 0.60 to 0.92). Drug X reduced cardiovascular events by 26%." Appraise it.
 ::: solution
-**The-forestry-run ([[#def-procedure]], [[epidemiology-ebm/statistics-for-clinicians]]): Population: over-75s, primary prevention - a group excluded from most statin trials, so the question is genuinely policy-relevant and the eligibility-and-consent pattern needs checking (the 'representativeness-of-the-oldest-old' question - healthy-volunteer skew would attenuate generalisability of a benefit). Outcome: the composite - what drove it? The results table's components: if hospitalisation (soft, care-seeking-influenced, unblindable in an open-label design) drives a mortality-neutral effect, the claim weakens; check whether mortality alone is reported and its interval. Design: was it blinded (a placebo-controlled trial in this age is rare; open-label status downgrades a soft composite substantially - the 'knowing-you-are-treated' admission-behaviour channel). Reporting: registered? Primary outcome matching the registry? The flow diagram's attrition by arm (the differential-loss question at 5 years in the oldest-old where death competes with hospitalisation - the composite-handling of mortality-and-morbidity-outcomes literature). Power: 3,000 over 5 years is modest - the interval's lower bound (0.68) may exceed the minimal important benefit for an asymptomatic population; the absolute risk difference (the events table divided by the denominators) decides. The reading's verdict in three lines: 'a signal consistent with benefit in an understudied population, driven probably by the composite's soft component, with an effect size whose plausibility depends on absolutes the abstract omits; the shared decision changes now for the frail and the very-old, and the trial arms equipoise rather than ending it.' The training point: the whole run is reading the right four tables and asking the design's five questions, and the P-value contributed nothing any of them could not say better.**
+**Validity.** Randomised and described as double-blind, which is promising. The abstract does not say how allocation was concealed, how many were lost to follow-up, or whether analysis was by intention to treat; these must be checked in the full paper and its CONSORT flow diagram. Check that the composite outcome was the registered primary outcome.
+
+**Results.** The relative reduction is 26%; the absolute reduction is $8.0 - 6.0 = 2.0$ percentage points over 4 years, an NNT of 50. The interval excludes 1 but is compatible with a relative reduction as small as 8%. The composite outcome mixes serious events (death, infarction, stroke) with a softer one (hospitalisation for angina). The paper's breakdown by component should be examined: if most of the difference comes from angina admissions, the clinical value is smaller than the headline suggests.
+
+**Applicability.** The trial included 60–80-year-olds with hypertension; are they similar to my patient in risk, comorbidity and other treatments? What were the adverse effects and discontinuation rates, and what is the cost?
+
+The headline "reduced cardiovascular events by 26%" is a relative effect on a composite outcome. A fair summary would be: "Over 4 years, about 2 in every 100 people treated avoided one of these events, mainly [component], with these side effects."
 :::
 :::
 
-::: example The guideline and the village {#ex-village}
-A national hypertension guideline's treat-to-target threshold update (130/80) is implemented verbatim in your practice; your audit finds 22 percent of the newly-eligible patients are over 80, and the trial evidence for that threshold rested on adults under 75 with, mostly, higher baseline risk than your register's.
+## From the study to the patient {#applying}
+
+Trials report average effects in selected populations. Two adjustments help translate them to an individual.
+
+**Is my patient so different that the results cannot apply?** Rather than asking whether the patient would have met every inclusion criterion, ask whether there is a compelling biological or clinical reason why the treatment would not work, or would be more harmful, in this person. Very old, frail or multimorbid patients, pregnant women and children are often excluded from trials, and for them extrapolation needs particular care.
+
+**How large is the benefit for my patient?** Relative effects are often fairly constant across baseline risk, but absolute effects are not. If the relative risk reduction is $RRR$ and the patient's expected event rate without treatment is $PEER$, the patient's absolute risk reduction is $PEER \times RRR$ and their NNT is
+
+$$
+NNT_{\text{patient}} = \frac{1}{PEER \times RRR}.
+$$ {#eq-nnt-patient}
+
+The patient's baseline risk may come from a validated risk score (for example, QRISK3 for 10-year cardiovascular risk in the UK) or from clinical judgement expressed as a multiple of the trial's control-group risk.
+
+::: widget plot
+f: 1/(x*r)
+x: 0.01, 0.5
+y: 0, 200
+sliders: r=0.25:0.05:0.8:0.05
+labels: \text{NNT}
+caption: The number needed to treat for a patient whose baseline risk is on the horizontal axis, for a treatment with the relative risk reduction set by the slider. The same treatment can have an NNT of 10 in a high-risk patient and well over 100 in a low-risk one. A simplified model assuming the relative effect is constant across baseline risk.
+:::
+
+::: example Two patients, one trial {#ex-individual}
+A treatment reduces 10-year cardiovascular events by 25% in relative terms. Patient A, a 70-year-old man who smokes and has diabetes, has a 10-year risk of 20%. Patient B, a 50-year-old woman with mildly raised cholesterol and no other risk factors, has a 10-year risk of 5%. Calculate each patient's NNT, and discuss how the decision might differ.
 ::: solution
-**Guideline-appraisal-in-the-field ([[#def-practice]], [[epidemiology-ebm/statistics-for-clinicians]], [[cardiovascular/hypertension]]): The appraisal: the threshold's evidence base re-read at the level of its population (the SPRINT-and-BP-lowering-trials' eligibility, the frail-older-exclusions, the 'ambulatory-versus-office-measurement' context, and the guideline's own certainty-downgrade for the very-old - the evidence-to-decision table where 'possible-harm-from-overtreatment-in-frailty' met 'cardiovascular-benefit-in-selected-older-adults'), the implementation's fidelity failure (the target-population mapping that skipped the age interaction), and the equity-and-workload math (22 percent of a register is a queue, and queues degrade the care of the well-evidenced majority). The response set: practice-level adaptation documented within the guideline's permitted discretion (the 'individualised-thresholds-with-shared-decision-for-80-plus-and-frailty' protocols that several national bodies explicitly allow), the audit as the trigger record, the deprescribing-and-lying-episode-and-fall-risk-review for the newly-eligible (the 'treat-the-person-annual-review-adjacent' pathway), and the feedback loop to the guideline's implementation support (the 'field-discovers-the-extrapolation-gap' reports that guideline bodies increasingly publish as amendments). The teaching version: a guideline is a technology transfer document, and its evidence stops where its population ends; implementing beyond the evidence is not compliance but improvisation, which must be either documented as local policy or declined with reasons. The consultation translation for the 82-year-old newly labelled hypertensive: the absolute-benefit numbers for people her age (the smaller-benefit, faster-harm arithmetic), her own priorities (the 'what matters to you' frame), and the honest sentence: 'the trial that mostly set this number did not include many people like you; here is what we do know, and here is what we would be guessing.'**
+Patient A: $ARR = 0.20 \times 0.25 = 0.05$, so $NNT = 20$ over 10 years.
+
+Patient B: $ARR = 0.05 \times 0.25 = 0.0125$, so $NNT = 80$ over 10 years.
+
+Expressed as natural frequencies: of 100 people like patient A, about 5 would avoid an event over 10 years by taking the treatment; of 100 people like patient B, about 1.
+
+If the treatment causes a side effect in, say, 1 in 100 people, the balance is clearly favourable for patient A and much closer for patient B. Patient B may reasonably decide that a 1-in-80 chance of benefit over 10 years is not worth daily medication, while another person with the same risk might choose treatment. Both are evidence-based decisions. The evidence sets out the options; the patient's values decide between them.
+:::
+:::
+
+**Shared decision-making** is the process by which clinician and patient reach such decisions together. NICE guideline NG197 (2021) sets out how it should be done in the NHS: discussing options including doing nothing, presenting benefits and harms as absolute risks in natural frequencies over a stated time, using the same denominator for all options, and using patient decision aids where they exist. Risk communication research shows that people understand "5 in 100" more accurately than "5%" or "a 25% reduction", and that icon arrays help.
+
+## How evidence can mislead {#misleading}
+
+Even valid studies can be presented in ways that exaggerate their message.
+
+- **Relative effects without absolute ones.** "Halves the risk" may mean a fall from 2 in 10,000 to 1 in 10,000.
+- **Surrogate outcomes.** Effects on blood tests or imaging are presented as if they were effects on health. CAST, in [[epidemiology-ebm/randomised-trials]], is the cautionary example.
+- **Composite outcomes** driven by their least important component.
+- **Spin.** Emphasis on secondary outcomes or subgroups when the primary outcome was not statistically significant, or a conclusion that is more favourable than the results justify. Comparing the abstract's conclusion with the prespecified primary outcome is a quick check.
+- **Selective reporting.** Outcomes or analyses that differ from those registered. Check the trial registry.
+- **Inappropriate comparators**, such as an active comparator at a low dose, or a placebo when an effective treatment exists.
+- **Short follow-up** for a chronic treatment, which can miss late harms and overestimate durable benefit.
+- **Conflicts of interest.** Industry funding is associated with conclusions more favourable to the sponsor's product, even when risk of bias appears similar. Conflicts should be declared and taken into account, not used to dismiss a study automatically.
+- **Publication bias**, discussed in [[epidemiology-ebm/systematic-reviews]].
+
+::: warning "Statistically significant" is not "worth doing"
+The question for a patient is not whether a difference is statistically significant, but whether the expected benefit, in absolute terms over a relevant period, outweighs the harms, burdens and costs, given their priorities. A highly significant result from a huge trial can correspond to an NNT of several hundred. Always convert results into absolute benefits and harms before discussing them.
+:::
+
+## Clinical guidelines {#guidelines}
+
+::: definition Clinical practice guideline {#def-guideline}
+A **clinical practice guideline** is a set of systematically developed recommendations to help clinicians and patients make decisions about care in specific circumstances. A trustworthy guideline is based on systematic reviews of the evidence, developed by a multidisciplinary group including patients, managed for conflicts of interest, explicit about the link between evidence and each recommendation, externally reviewed, and updated.
+
+Under GRADE, each recommendation has a **direction** (for or against) and a **strength**: **strong** when the guideline panel is confident that the desirable effects clearly outweigh the undesirable ones for nearly everyone, and **conditional** (weak) when the balance is closer or depends on values, so that different choices are reasonable for different people.
+:::
+
+NICE in England develops guidelines using the methods in its manual *Developing NICE guidelines*, with GRADE used to assess certainty for most review questions, and committee judgements recorded explicitly. Its wording signals strength: "offer" for strong recommendations and "consider" for conditional ones. GRADE's **Evidence to Decision** framework makes the panel consider not only benefits, harms and certainty, but also values, resource use, equity, acceptability and feasibility.
+
+Guidelines differ between countries and organisations, because panels weigh evidence, costs and values differently, and because they were written at different times. The quality of a guideline's development can be assessed with the **AGREE II** instrument (2010), whose 23 items cover scope and purpose, stakeholder involvement, rigour of development, clarity of presentation, applicability, and editorial independence.
+
+Guidelines are tools, not rules. They describe what is best for most patients in a defined situation. Departing from a guideline for good reasons, recorded and discussed with the patient, is consistent with evidence-based practice; following one mechanically for a patient it was not designed for is not.
+
+::: example Two guidelines disagree {#ex-guidelines}
+A practitioner finds that a UK guideline recommends offering a preventive drug when 10-year risk is 10% or more, while a guideline from another country uses a threshold of 7.5%, and a third from a professional society recommends it for anyone with a particular risk factor. How should these be reconciled for a patient?
+::: solution
+First, check whether the guidelines answer the same question and use the same risk calculator, since different risk scores give different numbers for the same person. Second, compare their evidence bases and dates: a newer guideline may include trials the older one did not. Third, look at how each weighed costs and values. A national body that must consider cost-effectiveness for a whole health system may set a different threshold from a professional society focused on individual benefit, and both can be reasonable. Fourth, use AGREE II to judge the rigour and independence of each, including whether panel members had conflicts of interest.
+
+Thresholds such as 7.5% or 10% are policy choices on a continuous scale of benefit. For a patient near the threshold, the recommendation is likely to be conditional, and the decision should rest on that person's absolute benefit, the harms and burdens, and their preferences, as set out in [[#ex-individual]]. In UK practice the NICE guideline would normally be the reference point, with the reasoning recorded if the decision departs from it.
+:::
+:::
+
+::: example Appraising a diagnostic study {#ex-diagnostic}
+A fictional study evaluates ultrasound for appendicitis in 300 children with abdominal pain at one hospital. Of 120 children with appendicitis, ultrasound was positive in 100; of 180 without, it was positive in 18. Children with positive scans went to surgery, and the diagnosis was confirmed by histology; children with negative scans were followed up by telephone at 2 weeks. Appraise the study.
+::: solution
+**Validity.** The population is appropriate: consecutive children with suspected appendicitis, the spectrum in whom the test is used. But there is **differential verification**: positive scans were verified by histology, negative ones by follow-up. Follow-up may miss some cases (a child who recovered or attended another hospital), which would inflate sensitivity. Was the person doing the scan blinded to the clinical findings? Probably not, which can bias results in either direction.
+
+**Results.** Sensitivity $= 100/120 = 83\%$; specificity $= 162/180 = 90\%$. $LR^+ = 0.833/0.10 = 8.3$; $LR^- = 0.167/0.90 = 0.19$. A positive scan substantially increases the probability of appendicitis; a negative scan reduces it moderately, but not enough to exclude it when clinical suspicion is high.
+
+**Applicability.** Ultrasound accuracy depends heavily on operator skill and on the child's build; results from a specialist centre may not transfer to a hospital where scans are done by less experienced staff, out of hours.
 :::
 :::
 
 ::: quiz
-The strongest single check on a trial's outcome reporting is:
-- [ ] The discussion section's limitations paragraph
-- [x] Comparing published outcomes and analyses with the prospective registration record
-- [ ] The reference list's recency
-- [ ] Number of authors
+A trial of a new drug reports no significant difference in its prespecified primary outcome, mortality at 1 year. The abstract's conclusion says: "Drug Y significantly improved quality of life and reduced hospital readmission in patients under 65, and represents a promising new option." What is the main problem?
+- [ ] The trial should have used a composite outcome.
+- [x] Spin: the conclusion emphasises secondary outcomes and a subgroup while the primary outcome was not improved.
+- [ ] Quality of life is not a valid outcome.
+- [ ] Patients under 65 should have been excluded.
 ::: solution
-**The registry-versus-paper comparison catches outcome switching and analysis drift directly; limitations paragraphs report only the authors' chosen candour - [[#def-pathologies]].**
+The trial's prespecified question was answered: no significant effect on 1-year mortality. Highlighting secondary outcomes and a subgroup, without stating the primary result clearly, is **spin**. Secondary and subgroup findings are hypothesis-generating and need confirmation. A fair conclusion would state the primary result first and describe other findings as exploratory.
 :::
 :::
 
-::: widget plot
-f: 100*(1/(1+exp(-(x-50)/8))); 105; 0; 1; 60
-x: 10, 90
-y: 0, 100
-labels: \text{appraisal\ score\ (illustrative)},\ \text{probability\ conclusion\ survives\ replication};\ \text{the 'feels-strong' zone is often bias-adjacent};\ \text{concordance-not-certainty\ is realistic};\ \text{confirmation-bias\ danger\ (your-practice-confirming\ paper)}
-caption: Appraisal skill correlates with survival of conclusions - but the steepest part of the curve is the confidence you feel exactly when the evidence flatters you ([[#def-practice]]).
+::: history
+The term "evidence-based medicine" was introduced by Gordon Guyatt of McMaster University in Hamilton, Canada, in an editorial in *ACP Journal Club* in 1991, and brought to wide attention by the Evidence-Based Medicine Working Group's article in *JAMA* in 1992, which called it "a new approach to teaching the practice of medicine". It grew from the clinical epidemiology developed at McMaster from the late 1960s by David Sackett and colleagues, who had taught clinicians to read the literature critically with a series of "readers' guides" in the early 1980s.
+
+Sackett moved to Oxford in 1994, where he led the new Centre for Evidence-Based Medicine, and in 1996 he and colleagues wrote the *BMJ* editorial "Evidence based medicine: what it is and what it isn't", which gave the definition quoted in this chapter and stressed the role of clinical expertise and patient choice. In England, NICE was established in 1999 to produce national guidance based on systematic reviews of evidence and cost-effectiveness. The GRADE Working Group, founded in 2000, produced the system now used by most guideline developers for rating evidence and recommendations.
 :::
 
 ## Where this leads
 
-Every chapter is this chapter's prerequisite: designs in [[epidemiology-ebm/observational-studies]] and [[epidemiology-ebm/randomised-trials]], error in [[epidemiology-ebm/bias-confounding]], numbers in [[epidemiology-ebm/statistics-for-clinicians]], tests in [[epidemiology-ebm/diagnostic-tests]], syntheses in [[epidemiology-ebm/systematic-reviews]], and the clinical application in [[clinical-skills/clinical-reasoning]] and [[clinical-skills/records-handover]]'s guideline culture.
-
-::: history
-**Critical appraisal's prehistory is the rope-walk between therapeutic fashion and scepticism: the eighteenth-century debate over bleeding (whose pro and camp argued from cases and theory for decades), Louis's numerical method (the 1825-1834 pneumonia-counting pamphlets that made 'did-it-help' an arithmetic question and provoked the profession's first documented methods-rejection of a colleague's data), and the therapeutic-nihilism century that followed. The modern apparatus grew from the same postwar soil as the trial: Bradford Hill's 1966 Principles of Medical Statistics (the 'read-your-own-figures' tradition), Mainland's insistence on statistical authorship in clinical investigation, the 'clinical-biostatistics-and-JAMA-editing' school of the 1960s-70s, and the McMaster group's 1981-82 users'-guides-to-the-medical-literature series that named the discipline in magazine form and put the questions on index cards nationwide. Evidence-based-medicine's 1992 JAMA statement (the 'Sackett-and-Guyatt-and-Guyer' manifesto with its 'the-continuous-self-education-and-the-examination-of-evidence' framing), the Rational Clinical Examination series' bedside numbers, and the Cochrane-and-GRADE institutionalisations made appraisal the curriculum's spine in English-speaking schools by the 2000s, while the 'evidence-based-medicine-critiqued' literature (the qualitative-research and clinical-judgment defences - the 'Haynes-and-Rycroft-Malone-and-Greenhalgh' traditions) kept the movement honest about its reductionisms. The pathology layer is newer: the 'unreported- trials' surveys of the 1980s-90s (the 'and-they-are-never-published' scandals' quantification), the spin and outcome-switching literatures of the 2000s-10s, the image-forensics and PubPeer era after 2010, the retraction-wave analyses, the replication crisis's cross-discipline contagion, and the trust-in-science emergency of the 2020s that made appraisal a civic rather than a professional competence - the pandemic's flood of fast, flawed and contested papers collapsing the distinction between reading a journal and reading the news. The current frontier is the one the practice definition names: appraisal integrated into clinical workflow (the point-of-care evidence tools with their own bias audits), taught with feedback that sticks (the 'journal-club-effectiveness' literature finally producing a working design), and practised on oneself - the reflexive turn that recognises appraisal as the prevention of one's own future errors rather than the prosecution of other people's past ones.** - [[public-health/screening]]'s-appraisal-dependence, [[clinical-skills/communication]].**
-:::
+This chapter closes the course. The measures of [[epidemiology-ebm/measuring-disease]], the designs of [[epidemiology-ebm/observational-studies]] and [[epidemiology-ebm/randomised-trials]], the threats in [[epidemiology-ebm/bias-confounding]], the arithmetic of [[epidemiology-ebm/diagnostic-tests]] and [[epidemiology-ebm/statistics-for-clinicians]], and the synthesis of [[epidemiology-ebm/systematic-reviews]] are the tools; appraisal is the habit of using them on every piece of evidence that reaches the clinic. The population perspective continues in [[public-health]].
 
 ::: summary
-- Appraisal is design-specific: each study type's validity conditions (concealment, blinding, attrition, verification, spectrum, search, transitivity) become the reading questions, and a twenty-minute structured pass outperforms an hour of vibes.
-- The pathologies cluster and point the same way: spin, outcome switching, selective inclusion and undisclosed conflicts correlate with sponsorship and with findings that flatter existing practice - which is the pattern that should raise the alarm, not the individual flaw.
-- Registry-versus-paper comparison is the single highest-yield forensic; the second is recomputing the headline from the tables.
-- Guidelines are evidence plus values plus resources: appraise the evidence engine and the decision table, and treat unlabelled extrapolations (age, frailty, the global south) as the implementation risks they are.
-- Reading under uncertainty is a trainable behaviour: name your prior, read absolute effects, distinguish the three nulls, and apply the apparatus hardest where it confirms you.
-- Appraisal is the course's endpoint because clinical judgement is where evidence, expertise and the patient's values are reconciled - and the reconciliation is auditable only if the evidence was read honestly first.
+- Evidence-based medicine integrates the best research evidence with clinical expertise and the patient's values, in five steps: ask, acquire, appraise, apply, assess.
+- Frame questions with PICO, match the question type to the best design, and search pre-appraised sources (guidelines, systematic reviews) first.
+- Appraise every study by asking, in order: are the results valid, what are they, and will they help my patient?
+- Translate relative effects into absolute ones using the patient's own baseline risk: $NNT = 1/(PEER \times RRR)$. The same treatment can be clearly worthwhile for one patient and marginal for another.
+- Shared decision-making (NICE NG197) uses absolute risks in natural frequencies and decision aids.
+- Watch for relative-only reporting, surrogate and composite outcomes, spin, selective reporting, poor comparators, short follow-up and conflicts of interest.
+- Trustworthy guidelines rest on systematic reviews, manage conflicts and grade recommendations as strong or conditional; AGREE II assesses their quality. Guidelines inform decisions but do not replace judgement.
 :::
 
 ## Exercises
 
-::: exercise Run the registry check {level=1}
-A trial's paper reports improvement on a 'composite wellness score' as its primary outcome; ClinicalTrials.gov lists '6-minute walk distance' as the primary. Write the two-paragraph assessment this discrepancy justifies and the one it does not.
+::: exercise Frame the question {level=1}
+A 30-year-old woman with recurrent urinary tract infections asks whether cranberry products would help. Write a PICO question and name the best study design to answer it.
 ::: solution
-**Switching-inference-with-proportionality ([[#def-pathologies]]): The justified paragraphs: first, the observation and its mechanism (a prespecified primary changed after the trial ran; per the outcome-switching literature, switched outcomes carry inflated effect estimates on average, so the reported benefit's credibility is reduced and the walk-distance result must be sought and reported - in the paper's supplement, the registry's results posting, or by author contact). Second, the consequence (the trial can inform the new outcome's hypothesis but cannot claim its confirmatory primary was met; guideline bodies should treat it as supportive evidence with downgrade, and reviewers should require the original analysis presented alongside). What the discrepancy does not justify: a fraud verdict - switches occur for defensible reasons (a better validated measure, a pilot's finding) disclosed transparently, and the assessment should say which of the two the paper's own reporting favours (the presence or absence of a stated amendment date and reason). The professional phrasing that keeps the reviewer credible: 'the change is material to interpretation and its justification is absent; we request the pre-specified analysis and will report both regardless of direction' - the sentence that has recovered unreported primary outcomes more often than accusation has.**
+P: adult women with recurrent urinary tract infections. I: cranberry products (juice or capsules) taken regularly. C: placebo or no treatment. O: number of symptomatic, culture-confirmed infections over 12 months; also adverse effects and adherence. Best design: a randomised placebo-controlled trial, or a systematic review of such trials.
 :::
 :::
 
-::: exercise Grade your reading {level=2}
-Your last three practice-changing reads: for each, write the one-sentence appraisal sentence (design, strongest limitation, effect in absolutes, action taken) and identify which pathology the sentence most risks concealing.
+::: exercise An individual NNT {level=1 check="34"}
+A treatment has a relative risk reduction of 20%. A patient's baseline risk over the relevant period is 15%. What is the patient's NNT, rounded up to a whole number?
 ::: solution
-**The-self-audit-structure ([[#def-practice]]): The template demonstrated: 'open-label randomised adherence trial, unblinded soft primary (self-reported adherence), absolute difference 11 percent (interval 3-20), adopted for our clinic's text-reminder system' - concealed-pathology risk: the soft-endpoint inflation quietly underweighted because the intervention was cheap and the author liked the idea (the 'plausible-mechanism-permits-lazy-appraisal' pattern). Second demonstration: 'cohort study of shift work and diabetes, HR 1.27 after adjustment, no interaction analysis for sleep vs diet mediation, no change yet' - risk: mechanism-seduction, treating an association paper as a causal demonstration because the story is compelling. Third: 'Cochrane review, moderate certainty, prediction interval crossing one, still cited in the prescriber letter' - risk: the certainty-label drift between the evidence table and the patient information. The exercise's pedagogy (the 'appraisal-diary' method from the evidence-based-medicine teaching literature): the writing forces the specificity that recognition-tests do not measure, and the pathology-naming line is the metacognition trainees report as the transferable part. The cohort's honest summary after one term: most errors were not statistics but desires - the diary catches them earlier than any tool.**
-:::
-:::
-::: example The image tells {#ex-image}
-A reader notices the 'independent' western blot lane in figure 2b of a high-impact signalling paper is a mirrored crop of figure 3a's control lane; the senior author's reply offers 'honest duplication error in assembly'. Write your assessment and its escalation ladder.
-::: solution
-**Image-forensics-proportionality ([[#def-pathologies]]): The technical note: mirrored-and-reused panels are the class's most diagnostic signature (accidental duplication happens; orientation-flipped re-use across figures is an assembly choice, and the 'honest error' defence requires examining the other panels' integrity and the authors' data availability), and the assessment should state exactly what was found with coordinates and the image-processing evidence (levels plots and edge-matching, per the forensic method papers), distinguishing 'unexplained similarity' from 'misconduct' as the field's careful retraction notices learned to phrase. The ladder: request the original uncropped images (the journal's data-availability policy is the lever; refusal or 'hard drives failed' is itself the finding); journal correspondence and editorial escalation (the retraction-versus-correction decision tree from the Retraction Watch case-law, with image-level errors in central figures trending toward retraction because the result's credibility cannot survive); institutional notification where journals stall (the research-integrity-offices route and its timelines); and the live-discussion layer (PubPeer's pre-publication peer review's legitimate role, the defamation-savvy phrasing, and the corrected-record duty when the authors do produce clean originals). The reader's discipline the case teaches: never allege intent from pixels, always report what is visible, and let the requests for originals do the accusing. The systemic footnote: the paper's citation half-life after such notices, and the retraction-bias literature showing retracted findings persist in citations and textbooks, are the reasons the appraisal chapters insist on re-checking the live status of load-bearing papers before guideline updates cite them.**
+$ARR = 0.15 \times 0.20 = 0.03$. $NNT = 1/0.03 = 33.3$, rounded up to 34.
 :::
 :::
 
-::: example The predatory invitation {#ex-predatory}
-A respected clinician accepts a 'Distinguished Professor' title from an online journal that emailed an invite, promises rapid publication, and lists editors the department has never heard of; the same site now solicits your residency programme's case reports.
+::: exercise Scaling the trial NNT {level=1 check="17"}
+A trial reports an NNT of 50. Your patient's baseline risk is three times that of the trial's control group, and you assume the relative effect is the same. Estimate your patient's NNT, rounded up.
 ::: solution
-**Predation-appraised ([[#def-pathologies]], [[#def-practice]]): The taxonomy: predatory publishing as the citation-farm-and-fee-reversal business model (Beall's-list era's genealogy, the successor lists' whack-a-mole and the 'is-it-predatory-or-just-new-and-low-income' false-positive problem the library literature refines), with the tells this case shows: unsolicited honorary titles, rapid-publication promises, unverifiable editorial boards (the 'dead-editor-and-hijacked-journal' audits' finding: check current boards against the people themselves), and journal names adjacent to real ones. The risks named precisely: for the residents, a 'publication' that will not survive any promotion or appraisal review and teaches the wrong citation habits; for the department, the credential-washing the title-granting sites monetise (the 'honorary-degree-scams-adjacent-academic-title-farms' literature), and the subtlest harm: legitimate-looking citations that pollute future systematic reviews' search results (the screening-toolkits' documented inclusion of predatory-journal papers). The response: verify via the committee-on-publication-ethics-code-of-conduct and directory-of-open-access-journals cross-checks (thinking-critically-about-the-lists', the 'DOAJ-and-WHO-INDEXED-for-low-income-legitimacy' distinction), decline in writing with the department's citation-ethics policy attached, warn the trainees with the five-minute teaching (who invited, what does it charge, is the editorship real, does the website work, is it indexed where indexes are audited), and report the title-farm to the relevant fraud-and-credentials bodies if the clinician is senior enough to matter. The institutional layer: promotion committees now screening submission-targets against predatory-lists with the appeal route for legitimately new journals - the policy that makes the individual refusal unnecessary next time.**
+The absolute benefit scales with baseline risk, so the NNT divides by the same factor: $50/3 = 16.7$, rounded up to 17.
 :::
 :::
 
-## Exercises
-
-::: exercise Read the abstract cold {level=1}
-An abstract ends: 'Treatment Z significantly improved survival (P = 0.03) with an acceptable safety profile.' List the six questions the sentence cannot answer and which document sections hold each answer.
+::: exercise Events prevented per 1,000 {level=2 check="24"}
+A patient's 5-year risk of an event is 12%. A treatment has a relative risk of 0.8. How many events would be prevented per 1,000 such patients treated for 5 years?
 ::: solution
-**Abstract-scepticism-drill ([[#def-practice]], [[#def-pathologies]]): The six: What is the absolute survival difference (results table's event counts, not the P-value); which survival - overall or the composite the methods name (the outcomes section); significantly against what and over what period (the trial design and follow-up duration); who was excluded, and does anyone reading this resemble them (eligibility and flow diagram); was survival the registered primary outcome (the registry comparison); and what does 'acceptable safety' conceal (the harm table - the 'safety-reported-inadequately-in-trials' literature's central complaint, with withdrawal-for-adverse-events and specific anticipated harms the places to look). The section-mapping matters because the skill being drilled is not suspicion but navigation: knowing which table holds which correction converts a one-line claim into an appraisal in minutes, and the 'acceptable-safety' phrase's own history (the 'post-hoc-safety-pooling' genres) is why the guideline chapters treat abstracts as advertisements with citations.**
+Risk with treatment $= 0.12 \times 0.8 = 0.096$. The ARR is $0.024$, which is 24 events prevented per 1,000 patients over 5 years (NNT 42).
 :::
 :::
 
-::: exercise Spot the conflict {level=2}
-A guideline panel member co-chairs a society committee funded by the manufacturer of the drugs the guideline recommends. The declaration form says 'no conflicts'. Write the appraisal note's paragraph on this, and the structural reform the evidence supports.
+::: exercise Likelihood ratio from a paper {level=2 check="5"}
+A diagnostic accuracy study reports sensitivity 75% and specificity 85%. What is the positive likelihood ratio?
 ::: solution
-**Conflicts-as-structure ([[#def-pathologies]], [[#def-practice]]): The appraisal paragraph: disclosure forms capture declared financial relationships; the committee-chair relationship is a structural conflict (fiduciary to the funder plus role in drafting recommendations) that most forms miss by design (the 'indirect-and-past-and-organisational-conflicts' gaps the guideline-conflict audits document), and its direction is empirically established (the industry-association-concordance literature's consistent findings on panel composition and recommendation breadth). The note should also record the countervailing possibility - the member may be right - because the remedy is process, not personality. The structural reforms with evidence: majority-no-conflict requirements for guideline panels (the Institute-of-Medicine-reform-adjacent standards and several funders' adoption), public decision records with votes and dissent (the 'minority-opinion-paragraphs' whose disappearance the guidelines-transparency critiques mourn), firewalls between society funding and guideline budgets (the dedicated-fund models), and chair-level exclusion from the specific recommendation's voting (the 'recuse-and-record' practice). The honest closing sentence for the appraisal: the guideline's recommendation may survive re-appraisal on its merits - the audit question is whether the process could have known what it was doing, and on these facts, it could not have.**
+$LR^+ = 0.75/(1 - 0.85) = 0.75/0.15 = 5$. A positive result moderately increases the probability of disease.
 :::
 :::
 
-::: exercise Appraise the qualitative study {level=2}
-A qualitative interview study of vaccine-hesitant parents (22 interviews, thematic analysis) concludes hesitancy is 'driven by trust failures, not misinformation'. A commissioner proposes citing it to redirect a communications budget. Appraise on the tradition's terms.
+::: exercise Spot the problems {level=2}
+A press release says: "A new drug reduced LDL cholesterol by 50% and cut the risk of heart attack in half among people with diabetes, a landmark trial has found." The trial's registered primary outcome was major adverse cardiovascular events in all participants, and was not significantly reduced. List the problems with the press release.
 ::: solution
-**Qualitative-appraisal-seriously ([[#def-procedure]], [[#def-pathologies]]): The warrants to inspect: sampling logic (the 'maximum-variation-and-saturation' claim - who was in the 22 and who could not be reached: the actively-refusing and the hard-to-engage are the population's decisive strata), data quality (interview guide and length - the difference between 20-minute telephone accounts and hour-long conversations), analytic transparency (the codebook-to-theme audit trail, whether dissenting cases were coded, the 'themes-that-were-always-there' prior check), reflexivity (the team's stated position on vaccination - hesitancy research's asymmetry problem: interviewers who are certain can accidentally extract accounts of trust rather than of conviction), and the claim's elevation ('driven by' is a causal-and-weighted phrase a 22-person interview study cannot carry - the appropriate finding is 'participants experienced hesitancy through trust relationships', which is different and still useful). The commissioner's translation: the study supports trust-based-communication hypotheses (and converges with the survey-experimental literature's messengers-matter findings - the 'meta-inference-across-methods' move), does not support reallocating the misinformation-programmes budget wholesale, and the citation the evidence supports is 'qualitative work suggests framing matters more to hesitancy than factual exposure alone' - a design-hypothesis sentence, not a funding formula. The teaching add-on: the appraisal vocabulary (saturation, reflexivity, transferability) is not ceremony; each term names a specific way a qualitative claim can outrun its data, which is the same crime the quantitative chapters catalogue in other dialects.**
+- LDL reduction is a **surrogate outcome**; what matters is clinical events.
+- "Cut the risk in half" is a **relative** effect with no absolute figures or time period.
+- The heart attack result in people with diabetes is a **secondary outcome in a subgroup**, not the primary result; with a non-significant primary outcome, it is hypothesis-generating at best.
+- The primary outcome, which was not improved, is not mentioned: **spin** and selective reporting.
+- Harms and costs are not mentioned.
+A fair summary would lead with the non-significant primary outcome.
 :::
 :::
 
-::: exercise Appraise the model {level=2}
-A cost-effectiveness analysis of a new screening programme reports 'dominant' (cost-saving and more effective). Its model: lifetime horizon, adherence assumptions from a single trial, no disutility weights for over-diagnosis, and funding from the technology's manufacturer. Write the appraisal's four moves and the one question that decides whether to trust the economics.
+::: exercise Benefit and harm {level=3 check="30"}
+For illustration, suppose a patient with atrial fibrillation has an annual stroke risk of 5% without anticoagulation. An anticoagulant reduces stroke risk by 60% in relative terms and increases the annual risk of major bleeding by 1.5 percentage points. How many strokes would be prevented per 1,000 such patients per year? Compare this with the number of extra major bleeds, and discuss.
 ::: solution
-**Model-appraisal-moves ([[#def-procedure]], [[public-health/screening]], [[public-health/health-systems-economics]]): Move one, structure: does the decision tree or Markov model match the disease's natural history and the programme's real comparators (the 'vs-no-screening-versus-vs-current-optimised-care' question that decides whether the result is policy-relevant); the transition-probability sources labelled. Move two, parameters: the adherence-from-one-trial generalisation (the screened-population-adherence literature's lower real-world rates - and the 'dominance' result's sensitivity to exactly this parameter, which the paper's own one-way tornado should show), the over-diagnosis omission (with no false-positive disutility the benefit side carries only advantages - the structural optimism the screening-model appraisal checklists enforce), and the utility values' provenance. Move three, uncertainty: probabilistic sensitivity analysis present? (deterministic-only is a red flag), and whether 'dominant' survives the parameter distributions' tails (dominance probabilities below about 80 percent deserve the euphemism label). Move four, independence: manufacturer funding with the model's assumptions listed by who chose them - the 'assumption-setting-as-advocacy' mechanism the independent-reanalysis literature documents. The deciding question: does an independent or publicly-commissioned analysis exist using the same methods on the trial data (the appraisal shortcut the health-technology-assessment world institutionalises - NICE-and-CADTH-dual-reviews-adjacent), because a model is an argument in spreadsheets and the only audit is someone else's spreadsheet.**
+Strokes prevented $= 1{,}000 \times 0.05 \times 0.60 = 30$ per 1,000 per year (NNT about 34). Extra major bleeds $= 1{,}000 \times 0.015 = 15$ per 1,000 per year (NNH about 67).
+
+So about 30 strokes are prevented for every 15 extra major bleeds. The comparison also depends on severity: an ischaemic stroke from atrial fibrillation is often disabling or fatal, while many major bleeds are treatable, though some (such as intracranial haemorrhage) are devastating. For most patients with this level of risk the balance favours anticoagulation, which is why guidelines recommend it, but for a patient with a much lower stroke risk or a much higher bleeding risk the balance shifts. The figures are illustrative; real decisions use validated scores for stroke and bleeding risk and current guidance.
 :::
 :::
 
-::: exercise Write the limitation {level=2}
-You are the author writing the limitations paragraph of your own cohort study. Given this course, write it: four named biases, each with its direction and magnitude reasoning, and the one sentence you must resist adding.
+::: exercise Appraise a prognosis study {level=3}
+A fictional study reports that "patients with condition Z have an excellent prognosis: 95% are alive at 5 years". The patients were recruited from a specialist tertiary clinic, where the median time from diagnosis to first visit was 3 years, and 30% were lost to follow-up. Appraise the claim.
 ::: solution
-**Limitations-as-forensics ([[#def-procedure]], [[epidemiology-ebm/bias-confounding]]): The model paragraph: 'Selection: participation was 54 percent, and non-participants were likely younger and less healthy; because both traits predict exposure and outcome jointly, the healthy-volunteer mechanism biases the exposure contrast away from null in the direction of the healthier-exposed pattern, unquantified but bounded by the non-response survey's differences. Exposure measurement: self-reported intake at baseline misclassifies with age-and-recall patterns that should attenuate the association (a bias toward the null that would make the observed effect conservative). Loss to follow-up: 12 percent, differential by exposure but not obviously by eventual outcome status; the worst-case assignment of missing events leaves the point estimate within 8 percent. Residual confounding: adjustment covered the measured determinants; a confounder would need prevalence-difference and strength near the values our E-value calculation names to explain the whole effect - comparable to smoking's correlates, so implausible-but-not-impossible.' The resisted sentence: 'the study has many limitations' - the unfalsifiable hedge that concedes nothing and explains nothing; the discipline this course instils is that each limitation must carry a direction and an order of magnitude, and the paragraph earns its word limit only when it tells readers how wrong the answer might be and which way.**
+- **Not an inception cohort.** Patients reached the tertiary clinic a median of 3 years after diagnosis, so those who died early, or had rapidly progressive disease, never entered the study. This survivorship bias makes the prognosis look better than it is.
+- **Referral bias.** A tertiary clinic sees a selected group, which could be more severe (worse prognosis) or more stable and well-resourced (better prognosis); either way, results may not apply to newly diagnosed patients in general practice.
+- **Loss to follow-up of 30%** is large. If those lost had worse outcomes, for example because they were too ill to attend, 5-year survival is overestimated. A sensitivity analysis assuming worse outcomes for those lost would show how fragile the 95% figure is.
+- Survival should be measured from a defined, early point (diagnosis), using Kaplan–Meier methods, with a confidence interval.
+The claim of "excellent prognosis" is not supported for a newly diagnosed patient.
 :::
 :::
 
-::: exercise Teach appraisal to a patient {level=1}
-A patient brings a newspaper claim ('bacon causes cancer, study says') and asks whether to give it up. Use the course's apparatus in patient-facing language: three questions you ask together, and the honest summary you offer about processed meat and risk.
+::: exercise Judge a guideline {level=3}
+A guideline on a new screening test was written by a panel of eight specialists, five of whom receive consultancy fees from the test's manufacturer. It recommends the test strongly for everyone over 50, citing two observational studies, and does not mention harms. Using the principles of trustworthy guideline development and AGREE II, critique it.
 ::: solution
-**Appraisal-out-loud ([[#def-practice]], [[public-health/non-communicable-disease]]): The three questions translated: 'How was it studied - did they follow people or feed them?' (cohort-and-classification evidence versus experiments, and why the word 'causes' in headlines almost always means 'was associated in people who also differed in fifty other ways'); 'Big or small?' (the absolute-risk framing: processed-meat classifications raise lifetime bowel-cancer risk by a few percentage points on a baseline of several, against smoking's tenfold-plus and screening's measurable mortality reduction - the ranking that is the actual medical advice); and 'Would this change anything if reversed?' (the values conversation - what bacon is worth to her against the absolute numbers). The honest summary: the classification is real (the monograph-and-IARC-machinery's evidence quality on colorectal cancer is strong from many study types that agree, which is exactly what the 'the-evidence-is-wrong' genre cannot say), the effect is modest per slice-week, and 'reduce if you like, drop if you want, and do not let it distract from the bowel-screen and the blood-pressure numbers that carry the bigger absolutes' - the consultation this chapter exists to make routine: appraisal is not cynicism about evidence, it is accounting for uncertainty together.**
+- **Stakeholder involvement**: the panel lacks generalists, methodologists, patients and public representatives.
+- **Editorial independence and conflicts of interest**: most of the panel have financial ties to the manufacturer, with no evidence that conflicted members were excluded from voting.
+- **Rigour of development**: no systematic review is described; two observational studies are a weak and probably selected evidence base for a screening test, where lead-time, length-time and overdiagnosis biases are serious. Evidence for screening should ideally come from randomised trials with mortality or other patient-important outcomes.
+- **Strength of recommendation**: a strong recommendation on low or very low certainty evidence is inconsistent with GRADE, except in rare, defined situations.
+- **Harms**: false positives, further investigations, overdiagnosis and costs are not considered, so the balance of benefits and harms cannot be judged.
+- **Applicability**: resource implications and implementation are not addressed.
+The guideline should not be relied on. A clinician should look for guidance from an independent body, such as the UK National Screening Committee for screening programmes.
 :::
 :::

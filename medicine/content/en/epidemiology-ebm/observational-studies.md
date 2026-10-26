@@ -1,142 +1,325 @@
-Observational study designs are medicine's way of learning from life when experiments are impossible, unethical or merely expensive. **This chapter teaches the hierarchy and its honest limits: the case report and series (hypothesis birthplace, weak proof), cross-sectional surveys (prevalence and its snapshots, temporality's absence), cohort studies (the workhorse of risk - design, person-time, loss to follow-up, and the environmental and occupational dynasties they built), case-control studies (rare-disease efficiency, matching's bargains, and the exposure-ascertainment craft), and the ecological and natural-experiment designs (population-level exposure variation as accidental trials). Throughout, the moral: the design fixes what questions can be asked, and the appraiser's first job is reading off the answer.**
+Many of the most important facts in medicine were never tested in a randomised trial. Nobody randomised people to smoke, to drink contaminated water, or to take a drug in pregnancy to see whether it harmed the baby. These causes of disease were found by watching what happens to people in ordinary life and comparing groups carefully. Studies of this kind are called **observational**, because the investigator observes exposures and outcomes but does not assign them.
 
-## The catalogue
+This chapter describes the main observational designs, what each can and cannot measure, and how to choose between them. It uses the measures of frequency and association from [[epidemiology-ebm/measuring-disease]]. The biases that threaten these designs are covered in detail in [[epidemiology-ebm/bias-confounding]].
 
-::: definition Descriptive designs: reports, series, surveys and ecological studies {#def-descriptive}
-**The case report is epidemiology's case-control study of one (n=1 with a story): incapable of establishing rates or causes, yet responsible for memorable discoveries (the thalidomide-phenamide-recognition-adjacent 'signal-detection-by-clinician' tradition, the adverse-drug-reaction literature's backbone, and the 'first-description' papers of emerging infections). Its appraisal questions are attribution questions: could anything else explain this sequence (the chance-coincidence base rates, the dechallenge-and-rechallenge as nature's mini-experiment, the Naranjo-and-WHO-UMC-causality-scales that formalise the judgement). Case series add a denominator-free pattern (the 'cluster-of-rare-things-in-one-place' as hypothesis generator - the sarcomas-in-a-town and leukaemia-in-a-street whose famous investigations mostly found coincidence, teaching the regression-to-the-mean-and-multi-year expected-counts arithmetic that cancer-cluster enquiries institutionalised). Cross-sectional surveys measure exposure and outcome in the same breath: prevalence, associations without temporal direction (the classic 'does the fatigue cause the depression or the reverse'), and their design craft - sampling frames, response rates and non-response bias (the 'healthy-volunteer' and hard-to-reach skews), question-wording and mode effects, and the weighting needed to generalise. They nonetheless carry real programmes (the national health and nutrition examination surveys' physical-measures tradition, the workplace screens, and the pandemic antibody surveys whose representativeness arithmetic mattered more than their laboratory). Ecological studies compare populations (the 'fat-in-the-diet-versus-breast-cancer' arms-raised-then-drawn controversy, the 'salt-and-blood-pressure-across-villages' INTERSALT line, the air-pollution-and-admission-rate time-series with their own quasi-experimental turn): cheap, hypothesis-rich, and vulnerable to the ecological fallacy (group associations need not hold - or may reverse - within individuals, Robinson's classic on literacy and immigration), which is why ecological evidence leads policy debates but follows individual-level evidence in causal verdicts - with the standing exception of genuinely population-level exposures (the water-fluoridation, tax-and-consumption, and smoking-ban-and-infarction-studies whose units must be populations and whose methods grew a natural-experiment literature to answer the criticism).**
+## Matching the question to the design {#question}
+
+A study design is a strategy for answering a question. The first step in reading or planning any study is to state the question precisely. Most clinical and public health questions fall into a few types:
+
+- **How common is it?** This needs a measure of prevalence or incidence in a defined population.
+- **What causes it?** This needs a comparison of outcomes between people with and without an exposure.
+- **Does this treatment work?** This needs a comparison of treated and untreated people that is protected against confounding, ideally by randomisation ([[epidemiology-ebm/randomised-trials]]).
+- **What will happen to this patient?** This is a question of prognosis, usually answered by following a group of patients over time.
+
+Observational designs differ in the direction in which they look. A **cohort study** starts from exposure and looks forward to outcome. A **case-control study** starts from outcome and looks back to exposure. A **cross-sectional study** measures both at once. Each direction has strengths, and each has typical weaknesses.
+
+## Descriptive designs {#descriptive}
+
+::: definition Case reports, case series, cross-sectional and ecological studies {#def-descriptive}
+A **case report** describes a single patient. A **case series** describes a group of patients with the same condition or exposure. Neither has a comparison group.
+
+A **cross-sectional study** measures exposures and outcomes in a sample of a population at one point in time. It estimates prevalence, and it can compare prevalence between groups, but it usually cannot show which came first.
+
+An **ecological study** uses groups, such as countries, regions or years, as the unit of analysis. Exposure and outcome are measured as group averages, for example national salt consumption and national stroke mortality.
 :::
 
-## Cohorts
+Case reports and case series are often the first signal of something new. The first reports of AIDS in 1981 were case series of young men with *Pneumocystis* pneumonia and Kaposi sarcoma. The link between thalidomide and limb defects was first noticed by clinicians who saw an unusual cluster of cases. Signals like these generate hypotheses. Without a comparison group, they cannot test them.
 
-::: definition Cohort studies: architecture, bias budget and famous yields {#def-cohorts}
-**The cohort study's logic - classify by exposure before outcomes occur - buys temporality and incidence at the price of time, money and attrition. Architecture: prospective (the Framingham-and-Doll-Hill-British-doctors lineage, the physicians-and-nurses-and-women's-health cohort dynasties, and the modern biobanks whose 'recruit-then-wait-for-eternity's-diseases' design made hypothesis-free -omics possible), retrospective-or-historic-cohort (employment records reconstructing exposure decades - the occupational workhorse), and the administrative-data cohorts (the registry-linked Scandinavian-and-NHS-database tradition where entire nations are the cohort and the exposure is a policy or a prescription). The measures it produces are the chapter's: risk and rate, risk ratios and rate ratios, the survival curves and their hazards. The bias budget has named line-items: selection at recruitment (the 'healthy-volunteer-effect' that makes cohort participants leaner and less-smoky than the nation - external validity's quiet tax), loss to follow-up (the complete-case fantasy; the missing-at-random assumption its analyses actually need; inverse-probability-weighting-and-multiple-imagination's remedies; and the honest rule that differential loss - the exposed disappearing more - is the fatal variety), measurement drift (baseline exposure misclassification toward the null versus time-varying exposure's methodological demands - the 'cumulative-average-current-exposure' analyses of occupational and pharmacoepidemiology), and the confounding the next chapter owns. Cohort strengths make it the default for common exposures and multiple outcomes (one dataset, many diseases - the efficiency that funds the big cohorts) and for studying rare exposures (the exposed-worker-and-unique-population cohorts where randomisation is unthinkable). Its weaknesses: slow and expensive for rare outcomes (the 'ten-thousand-persons-for-one-leukaemia' arithmetic that sends rare-disease questions to case-control designs), useless for outcomes shorter than the visit interval, and hostage to the exposure's popularity (the 'cohort-effects-versus-age-effects' age-period-cohort identification problem that makes life-course claims treacherous). The reporting standards (STROBE) and the negative controls (the 'association-with-conditions-unrelated-to-the-exposure' falsification tests increasingly required of high-stakes cohorts) are the appraiser's checklists; the causal-reformulation tools (target-trial emulation and clone-censor-weight designs migrating from epidemiology's methodological journals into clinical-epidemiology practice) mark the field's current ambition: observational designs engineered to borrow randomisation's logic where randomisation is impossible.**
-:::
+Cross-sectional surveys are the workhorse of public health monitoring. The Health Survey for England, for example, measures the prevalence of obesity, hypertension and smoking each year. Their weakness for causal questions is **temporal ambiguity**. If a survey finds that people who are unemployed are more often depressed, it cannot tell whether unemployment led to depression or depression led to job loss. Cross-sectional studies also count prevalent cases, so they over-represent people who live a long time with a condition.
 
-## Case-control
+Ecological studies are cheap, because they use routine data, and they are the right design when the exposure genuinely acts at the level of a group, such as a law, a fluoridated water supply or air pollution across a city. Their danger is the **ecological fallacy**: assuming that an association seen between groups also holds between individuals.
 
-::: definition Case-control studies and natural experiments {#def-case-control}
-**The case-control study starts from outcome and looks backwards for exposure: everyone with the rare disease (cases), a sampled comparison set (controls), and the exposure odds compared - the odds ratio as the design's native output (valid risk-ratio proxy when the outcome is rare, the 'rare-disease-assumption' clause students should recite with its exceptions). The controls are the design: they represent the source population's exposure distribution (the 'would-have-been-a-case' principle), so control selection is the bias budget's largest line - hospital controls (the Berkson's bias of admission-rate differences), neighbourhood-and-population-registry controls (the directory-era and now-telephone-and-address-sampling traditions), density-versus-risk-set sampling (the nested case-control within cohorts, where matching on time-at-risk and risk-set structure makes the odds ratio a rate-ratio estimate without surveying everyone). Matching's bargain (efficiency and control of key confounders like age-and-centre) costs analytic rigour (matched analysis is mandatory - conditional logistic regression - and matched variables cannot be studied), a trade beginners forget in both directions. The design's signature vulnerabilities: recall bias (the mothers-of-affected-children's superior-and-more-anxious-memory that made the 'maternal-drugs-and-malformations' literature a cautionary tale), interviewer bias (differential probing of cases - the standardised-blinded-instrument answer), and selection (the 'survivor-as-case' problem for fatal outcomes). Its signature strengths: speed and power for rare or long-latency outcomes (the diethylstilbestrol-and-vaginal-cancer case-control series as the design's finest hour, still a candidate-causation landmark achieved in months), and the case-crossover variant (each person their own control for transient exposures and acute events - the 'trigger-of-myocardial-infarction-by-exertion-and-debate' design). Natural-experiment designs exploit as-if-random variation in who-is-exposed (the 'draft-lottery' and 'distance-to-facility' and 'policy-rollout-timing' instruments, difference-in-differences before-and-after-with-controls comparisons interrupted-time-series with their autocorrelation-corrected analyses, regression-discontinuity around thresholds, and Mendelian randomisation using genetic variants as exposure proxies - the instrument-validity assumptions stated honestly: relevance, independence and exclusion). The hierarchy's honest summary: these designs approximate randomisation through design and analysis but never through balance-in-expectation, which is why the confounding chapter's scepticism is permanent furniture.**
-:::
-
-::: example The cluster on the street {#ex-cluster}
-Six cases of a rare lymphoma in eight years on one 300-metre street; parents have made a group; the local health protection team asks you to join the response.
+::: example National diets and breast cancer {#ex-ecological}
+In a well-known 1975 analysis, Armstrong and Doll compared many countries and found a strong correlation between average dietary fat consumption and breast cancer mortality. Can we conclude that a woman who eats more fat has a higher risk of breast cancer?
 ::: solution
-**Expected-counts-before-headlines ([[#def-descriptive]], [[epidemiology-ebm/measuring-disease]], [[public-health/communicable-disease-control]]): the first arithmetic: the expected number in that population from national age-sex-specific rates is a fraction of one case - so six is alarming in naive terms; but the multiple-comparisons problem is the real statistician: the city contains many 300-metre segments, the 'hot-spots-on-a-map' scanning (the Morris and Kulldorff scan-statistics tradition that separates shouting clusters from spatially-coherent ones), and expected counts with Poisson tails plus space-time interaction tests. The investigation template (the cancer-cluster protocols): verify diagnoses and definitions (the pathology review - clusters have died of misclassification), build the real cohort (who lived where when - the address histories the registry lacks), compute rates with person-time by address rather than postcode aspiration, then the exposure hunt if anything survives: a specific carcinogen's presence, its exposure-response, and the literature's sober catalogue of investigated clusters that found causes (rare: the environmental ones mostly negative) versus lives disrupted. The communication that the arithmetic must serve: 'we cannot yet tell you it is chance, and we can tell you chance looks like this often - here is what we will do in the next 90 days and who to contact.' The human medicine the team often forgets: the affected families, the 'what-would-change-our-answer' transparency, and publishing the result whatever it says - because the field's handling of the famous clusters (the Dover-and-Woburn-and-Layton-street sagas) shows the cost when uncertainty is communicated late or falsely.**
+No. The data show that *countries* with higher fat consumption had higher breast cancer rates. Within those countries, we do not know whether the women who developed breast cancer were the ones eating more fat.
+
+Countries with high fat consumption also differed in many other ways: they were wealthier, women had fewer children and had them later, they were taller, and they had more access to diagnosis. Any of these could explain the national pattern. Later cohort studies that measured diet in individual women found much weaker associations between fat intake and breast cancer than the international comparison suggested.
+
+The ecological study was useful because it raised a hypothesis. Testing that hypothesis needed individual data.
 :::
 :::
 
-::: example The nested sample {#ex-nested}
-Your cohort has 120,000 people, 400 incident pancreatic cancers in ten years, and stored baseline serum; the project budget supports 600 laboratory assays. Design the study and its analysis.
+## Cohort studies {#cohort}
+
+::: definition Cohort study {#def-cohort}
+A **cohort study** identifies a group of people who are free of the outcome, measures their exposure, and follows them over time to record new cases of the outcome. The incidence (risk or rate) of the outcome is compared between exposed and unexposed people, usually as a **risk ratio** or **rate ratio**.
+
+In a **prospective** cohort study, exposure is measured now and participants are followed into the future. In a **retrospective** (historical) cohort study, both exposure and outcome have already happened and are reconstructed from existing records, but the logic is the same: exposure is defined first, and outcomes are counted afterwards.
+:::
+
+Cohort studies have several strengths:
+
+- They show the **time order** of exposure and outcome, which is one of the strongest arguments for causation.
+- They measure **incidence** directly, so they give absolute risks as well as relative ones.
+- One cohort can study **many outcomes** of the same exposure. The British Doctors Study, started in 1951, eventually reported on smoking and lung cancer, heart disease, chronic lung disease and many other causes of death.
+- Exposure is recorded before the outcome is known, which protects against **recall bias**.
+
+Their weaknesses mirror these strengths. Prospective cohorts are slow and expensive, and they are inefficient for rare outcomes: to see 50 cases of a disease with an incidence of 1 per 10,000 per year, you need 100,000 person-years of follow-up. People drop out, and if those who drop out differ in risk from those who stay, the estimates are biased. And because exposure is not assigned at random, exposed and unexposed people may differ in other ways that affect the outcome. That is confounding, the central weakness of every observational design.
+
+::: example Night shifts and diabetes {#ex-cohort}
+A fictional occupational cohort follows 5,000 night-shift nurses and 10,000 day-shift nurses for 10 years. During follow-up, 300 night-shift nurses and 400 day-shift nurses develop type 2 diabetes. Calculate the 10-year risks, the risk ratio and the risk difference. What are the main threats to the conclusion that night work causes diabetes?
 ::: solution
-**Nested-case-control-done-right ([[#def-case-control]], [[#def-cohorts]]): the design: all 400 cases plus about 1,200 controls (3-4 per case, the diminishing-returns point of the efficiency curve) sampled by risk-set density sampling - each control selected from those at risk when its case was diagnosed - which preserves person-time and yields an odds ratio estimating the rate ratio without cohort-wide assays. The exposure question needs baseline-sample comparability: storage time, freeze-thaw cycles and specimen handling must be masked and balanced (the 'pre-analytical' bias that has killed nested studies), with laboratory personnel blinded to case-control status. Matching: risk-set time is mandatory by design; age-and-sex-and-fasting-status handled in the sampling or the model; and the variables you match, you cannot study. Analysis: conditional logistic regression honouring the matched sets, with power computed for the sampled design (the case-control approximation to the full-cohort analysis), and the incident-case-only rule versus prevalent-case contamination stated. The upgrades: the 'controls-as-biospecimen-library' re-use (future exposures demand consent and data-protection terms written before the freezer is opened), the absolute-risk translation of findings (cohort person-time gives the baseline risk the odds ratio lacks - the appraisers' missing denominator), and the negative-control exposure (a biomarker unaffected by the hypothesised pathway) as the falsification the reviewers will demand. The reporting: STROBE-nested checklists, the sampled-versus-source-population flow diagram, and honest statement of the one number the design cannot give (incidence in the exposed, without the full-cohort assays).**
+Risk in night-shift nurses $= 300/5{,}000 = 0.06$ (6%). Risk in day-shift nurses $= 400/10{,}000 = 0.04$ (4%).
+
+Risk ratio $= 0.06/0.04 = 1.5$. Risk difference $= 0.02$, or 2 extra cases per 100 nurses over 10 years.
+
+Threats to a causal interpretation:
+
+- **Confounding.** Night-shift workers may differ in age, body mass index, smoking, diet, physical activity or socioeconomic position. These need to be measured and adjusted for.
+- **Selection into and out of night work.** Nurses who tolerate night shifts poorly may switch to day work, so the night group becomes increasingly selected. If illness causes people to leave night work, the comparison is distorted.
+- **Loss to follow-up**, if those who leave the cohort differ in risk.
+- **Ascertainment.** If night workers have more occupational health checks, their diabetes may be diagnosed more completely.
+
+A risk ratio of 1.5 is a moderate association that could be produced by modest confounding. Consistency with other studies, a dose-response relation with years of night work, and a plausible mechanism (disrupted circadian regulation of glucose metabolism) would all strengthen the case.
 :::
 :::
 
-::: quiz
-The essential weakness of cross-sectional studies for causal inference is:
-- [ ] They cannot measure prevalence
-- [x] They measure exposure and outcome simultaneously, so temporal direction cannot be established
-- [ ] They are always too small
-- [ ] They cannot be repeated
+Some cohorts became landmarks. The **Framingham Heart Study** began in 1948 in a town in Massachusetts, enrolling adults and examining them every two years. It established raised blood pressure, raised cholesterol, smoking and diabetes as risk factors for coronary heart disease, and the phrase "risk factor" itself came into wide use through its reports. UK Biobank, which recruited about half a million adults between 2006 and 2010, is a modern example that links questionnaire, physical, genetic and imaging data to health records.
+
+## Case-control studies {#case-control}
+
+When an outcome is rare, a cohort study wastes most of its effort following people who never become cases. A case-control study reverses the logic.
+
+::: definition Case-control study {#def-case-control}
+A **case-control study** starts with people who have the outcome (**cases**) and a comparison group without it (**controls**), and compares their past exposures. Because the investigator chooses how many cases and controls to include, the study cannot estimate the risk of the outcome. It estimates the **odds ratio**: the odds of exposure among cases divided by the odds of exposure among controls.
+
+With the usual table,
+
+| | Cases | Controls |
+|---|---|---|
+| Exposed | $a$ | $b$ |
+| Unexposed | $c$ | $d$ |
+
+$$
+OR = \frac{a/c}{b/d} = \frac{ad}{bc}.
+$$ {#eq-or}
+
+Controls should come from the same population that produced the cases. The guiding question is: if this control had developed the disease, would they have been included as a case?
+:::
+
+Case-control studies are fast, cheap and efficient for rare diseases, and they can examine many exposures for one outcome. They were the design that first linked smoking to lung cancer, aspirin in children to Reye syndrome, and maternal diethylstilbestrol to vaginal adenocarcinoma in daughters.
+
+Two problems dominate. The first is **selection of controls**. Hospital controls are convenient, but they are in hospital for a reason, and that reason may be related to the exposure. If controls for a lung cancer study were drawn from patients with chronic bronchitis, many would be smokers and the association would be underestimated. The second is **recall bias**. People with a serious illness search their memories for causes, so cases may report past exposures more completely than controls. Using records made before the outcome, rather than interviews, avoids this.
+
+::: example A case-control study of smoking {#ex-case-control}
+A fictional hospital-based case-control study, in the style of the early smoking studies, recruits 200 people with lung cancer and 200 controls admitted with other conditions. Of the cases, 180 are smokers; of the controls, 120 are smokers. Calculate and interpret the odds ratio.
 ::: solution
-**Same-breath measurement leaves 'did the exposure precede the outcome?' unanswerable - the classic chicken-and-egg of symptom-and-fatigue research - [[#def-descriptive]].**
+The table is: cases exposed $a = 180$, cases unexposed $c = 20$; controls exposed $b = 120$, controls unexposed $d = 80$.
+
+$$
+OR = \frac{180 \times 80}{120 \times 20} = \frac{14{,}400}{2{,}400} = 6.
+$$
+
+The odds of having smoked are six times higher among people with lung cancer than among controls. Because lung cancer is rare in the population as a whole, the odds ratio approximates the risk ratio (see [[#thm-rare-disease]]), so smokers have roughly six times the risk of non-smokers.
+
+Note what cannot be calculated: the risk of lung cancer in smokers. The 50:50 split of cases and controls was chosen by the investigators, so $180/(180+120)$ is not a risk of anything.
 :::
 :::
+
+### Why the odds ratio approximates the risk ratio {#rare-disease}
+
+::: theorem The rare-disease assumption {#thm-rare-disease}
+Suppose a source population contains $N_1$ exposed and $N_0$ unexposed people, of whom $A_1$ and $A_0$ develop the disease. If controls are a random sample of the people who did **not** develop the disease, the case-control odds ratio estimates
+
+$$
+OR = \frac{A_1/(N_1-A_1)}{A_0/(N_0-A_0)},
+$$
+
+the odds ratio in the source population. When the disease is rare in both groups, $N_1 - A_1 \approx N_1$ and $N_0 - A_0 \approx N_0$, so
+
+$$
+OR \approx \frac{A_1/N_1}{A_0/N_0} = RR.
+$$
+
+If instead controls are sampled from the people still at risk at the time each case occurs (**incidence density sampling**), the odds ratio estimates the **rate ratio** directly, with no rare-disease assumption.
+:::
+
+::: proof
+In the source population, the odds of exposure among cases are $A_1/A_0$. If controls are a random sample of non-cases with sampling fraction $f$, they contain about $f(N_1-A_1)$ exposed and $f(N_0-A_0)$ unexposed people. Cases are usually all included, with sampling fraction $g$. Then
+
+$$
+OR = \frac{gA_1/gA_0}{f(N_1-A_1)/f(N_0-A_0)} = \frac{A_1/(N_1-A_1)}{A_0/(N_0-A_0)}.
+$$
+
+The sampling fractions cancel, which is why the investigator's choice of how many controls to recruit does not bias the odds ratio. The odds of disease in each group, $A/(N-A)$, approach the risk $A/N$ when $A$ is small compared with $N$, so the odds ratio approaches the risk ratio.
+
+With incidence density sampling, the number of controls drawn from each exposure group is proportional to the person-time that group spends at risk, $T_1$ and $T_0$. The odds ratio becomes $(A_1/A_0)/(T_1/T_0) = (A_1/T_1)/(A_0/T_0)$, which is the rate ratio.
+:::
+
+The reasoning was set out by Jerome Cornfield in 1951, and it is what made case-control studies quantitatively respectable.
 
 ::: widget plot
-f: 100/(1+exp(-(x-3)/1)); 105; 0; 1; 60
-x: 0, 6
-y: 0, 100
-labels: \text{controls per case},\ \text{relative}\ \text{statistical efficiency};\ \text{case-control efficiency: steep then flat (the 1:4 rule)};\ \text{cost per case rises linearly beyond}\ 1\text{:}4;\ \text{matched-analysis complexity grows too}
-caption: Case-control efficiency saturates around four controls per case - design is arithmetic, not enthusiasm ([[#def-case-control]]).
+f: r*(1-x)/(1-r*x); r
+x: 0, 0.45
+y: 0, 8
+sliders: r=2:0.2:2.2:0.1
+labels: \text{odds ratio}; \text{risk ratio}
+caption: The odds ratio corresponding to a fixed risk ratio $r$ (slider), plotted against the risk of the outcome in the unexposed group. When the outcome is rare (left of the plot) the two are almost equal. As the baseline risk rises, the odds ratio moves further from 1 than the risk ratio. The same happens for protective exposures with $r$ below 1.
+:::
+
+::: warning Odds ratios are not risk ratios when the outcome is common
+Logistic regression produces odds ratios, so they appear in cohort studies and trials as well as in case-control studies. When the outcome is common, an odds ratio of 3 does not mean "three times the risk". For example, if 20% of unexposed people have the outcome and the risk ratio is 2, the odds ratio is 2.67. Reporting the odds ratio as if it were a risk ratio exaggerates the effect. When the baseline risk is above about 10%, ask for risk ratios or absolute risks.
+:::
+
+::: example When the outcome is common {#ex-common}
+A fictional cross-sectional study of 1,000 adults finds that 40% of people who sleep less than 6 hours report back pain, compared with 25% of those who sleep longer. The paper reports an odds ratio of 2.0 and its press release says "short sleepers have double the risk of back pain". Is that right?
+::: solution
+The prevalence ratio is $0.40/0.25 = 1.6$. The odds are $0.40/0.60 = 0.667$ and $0.25/0.75 = 0.333$, so the odds ratio is $0.667/0.333 = 2.0$. The paper's odds ratio is correct, but the press release has translated it into a "double" risk when the actual ratio of proportions is 1.6.
+
+There is a second problem. This is a cross-sectional study, so it measures prevalence, not risk, and it cannot show whether short sleep led to back pain or back pain disturbed sleep. A more accurate statement is: "back pain was 1.6 times as common among people who slept less than 6 hours, and the direction of the association is unknown."
+:::
+:::
+
+## Variations and hybrids {#hybrids}
+
+Several designs combine features of cohorts and case-control studies.
+
+- A **nested case-control study** is carried out inside an existing cohort. All cases arising in the cohort are taken, and for each one, a few controls are sampled from cohort members still at risk at that time. Exposure data, such as stored blood samples, need to be analysed only for the cases and their controls. This saves money while keeping the cohort's prospective measurement of exposure.
+- A **case-cohort study** compares all cases with a random subcohort drawn at the start. The same subcohort can serve as the comparison group for several different outcomes.
+- A **case-crossover study** uses each case as their own control. It compares exposure just before the event with exposure at earlier times in the same person. It suits brief exposures with immediate effects, such as heavy exertion before a heart attack or mobile phone use before a car crash.
+- A **natural experiment** exploits an event that changed exposure for one group and not another, roughly at random. Snow's comparison of households served by two water companies in 1854 is the classic example. Modern variants include comparisons before and after a policy change, and Mendelian randomisation, which uses genetic variants that influence an exposure as a natural randomisation.
+
+::: example Choosing a design for a rare outcome {#ex-design}
+A regulator receives reports that a newly licensed antibiotic may cause acute liver failure. The background incidence of acute liver failure is about 1 per 100,000 per year. National primary care records cover several million patients, including prescriptions and hospital diagnoses. Which design would you choose?
+::: solution
+A prospective cohort recruited for the purpose would need millions of person-years to see enough cases, so it is impractical.
+
+A **nested case-control study** within the primary care database is efficient. Every patient with acute liver failure becomes a case. For each case, several controls of the same age and sex who were in the database and free of liver failure on the date of the case's diagnosis are sampled. Exposure to the antibiotic in a defined window before that date is taken from prescription records. Because prescriptions were recorded before anyone developed liver failure, recall bias is avoided. Because controls are sampled from those at risk at the time of each case, the odds ratio estimates the rate ratio.
+
+The main threats are confounding by indication (the infections being treated, or other drugs and alcohol, may themselves cause liver injury), misclassification of exposure if prescriptions were not taken, and misclassification of the outcome. Comparing the new antibiotic with another antibiotic used for the same infections, rather than with no antibiotic, reduces confounding by indication. This is called an **active comparator** design.
+:::
+:::
+
+## Comparing the designs {#comparison}
+
+| Design | Starts from | Main measure | Good for | Main weaknesses |
+|---|---|---|---|---|
+| Case series | Cases | None (description) | New diseases, rare adverse events | No comparison group |
+| Ecological | Groups | Correlation between group rates | Group-level exposures, hypotheses | Ecological fallacy, confounding |
+| Cross-sectional | A sample at one time | Prevalence, prevalence ratio or OR | Burden of disease, service planning | Temporal ambiguity, prevalent cases |
+| Cohort | Exposure | Risk, rate, RR, rate ratio, risk difference | Common outcomes, rare exposures, several outcomes | Slow, costly, loss to follow-up, confounding |
+| Case-control | Outcome | Odds ratio | Rare outcomes, several exposures | Control selection, recall bias, confounding |
+
+There is no single best design. The best design is the one that can answer the question with the time, money and data available, and whose weaknesses can be recognised and dealt with.
+
+Observational studies should be reported following the **STROBE** statement (Strengthening the Reporting of Observational Studies in Epidemiology), first published in 2007. It lists the items a reader needs to judge a cohort, case-control or cross-sectional study, including how participants were selected, how exposures and outcomes were measured, how missing data were handled and which confounders were adjusted for.
+
+::: quiz
+An investigator wants to know whether a common anti-epileptic drug taken in early pregnancy increases the risk of a rare congenital heart defect (about 1 in 2,000 births). Which design is most efficient?
+- [ ] A prospective cohort of pregnant women taking the drug and not taking it
+- [x] A case-control study of babies with and without the defect, with exposure taken from prescription records made during pregnancy
+- [ ] A cross-sectional survey of children with heart defects
+- [ ] An ecological study comparing countries with high and low use of the drug
+::: solution
+The outcome is rare, so a case-control study is efficient: it assembles all available cases rather than waiting for them to occur. Taking exposure from prescription records made during pregnancy avoids recall bias, which is a real concern when mothers of affected babies are interviewed. A cohort would be valid but would need very large numbers. A cross-sectional survey has no comparison group for exposure, and an ecological comparison cannot link the exposure to individual pregnancies.
+:::
+:::
+
+::: history
+In 1950 two case-control studies of smoking and lung cancer appeared within months of each other: Ernst Wynder and Evarts Graham in the *Journal of the American Medical Association*, and Richard Doll and Austin Bradford Hill in the *British Medical Journal*. Doll and Hill interviewed patients with lung cancer in London hospitals and compared them with patients admitted for other conditions. They found that heavy smoking was far more common among the cases, and that the association rose with the amount smoked.
+
+Critics argued that case-control studies were open to bias in the choice of controls and in what patients remembered. Doll and Hill responded with a prospective cohort. In 1951 they wrote to all doctors on the British medical register, asking about their smoking habits, and then followed their deaths. The first report in 1954 confirmed the association with lung cancer. The study continued for fifty years. Its 2004 report showed that men born between 1900 and 1930 who smoked cigarettes throughout their lives died, on average, about ten years earlier than lifelong non-smokers, and that stopping smoking at any age gained years of life.
+
+Meanwhile, in 1951, Jerome Cornfield showed mathematically that the odds ratio from a case-control study approximates the relative risk when the disease is rare. Together, these developments gave chronic disease epidemiology its two basic designs.
 :::
 
 ## Where this leads
 
-The error taxonomy is [[epidemiology-ebm/bias-confounding]]; effect-measure mechanics in [[epidemiology-ebm/statistics-for-clinicians]]; the experimental comparison in [[epidemiology-ebm/randomised-trials]]; appraisal drills in [[epidemiology-ebm/critical-appraisal]]; outbreak applications in [[public-health/communicable-disease-control]]; and screening-evidence designs in [[public-health/screening]].
+Every observational design can be distorted by selection bias, measurement error and confounding. [[epidemiology-ebm/bias-confounding]] explains how to recognise and reduce them, and how to judge whether an association is causal. When an intervention can be assigned, the randomised trial removes confounding by design: see [[epidemiology-ebm/randomised-trials]].
 
 ::: summary
-- Design determines the permitted questions: reports and series attribute single sequences, surveys measure prevalence without direction, cohorts observe exposure before outcome, case-control studies sample outcome to find exposure, and ecological and natural-experiment designs treat populations or policy variation as the unit.
-- Cohort studies buy temporality and incidence; their bias budget is healthy-volunteer selection, differential loss to follow-up, and exposure measurement drift, and they fail economically for rare outcomes.
-- Case-control studies are the rare-disease workhorse whose make-or-break is control selection; matching buys precision at the price of mandatory matched analysis, and recall and interviewer biases are the design's permanent suspects.
-- Odds ratios are the native output and honest rate-ratio proxies under risk-set sampling and rarity; the appraiser should always ask what the ratio would look like as an absolute.
-- Natural experiments borrow randomisation's logic through instruments, difference-in-differences and regression discontinuity; their credibility rests on stated and testable assumptions, not on the phrase 'observational'.
-- Every design's verdict comes with its assumptions attached: the STROBE-style reporting standards exist to make those assumptions readable, and appraisers should read them first.
-:::
-
-## Exercises
-::: history
-**The designs grew from problems too stubborn for experiments. The case-series instinct - collect the curious cases - runs from Percival Pott's 1775 observation that chimney sweeps' scrotal cancers shared a soot, through the first descriptions that populated medicine, to the signal-detection committees of modern pharmacovigilance. The cohort idea was born where records outlived memories: William Farr's cholera mortality tables for the water companies (the 1849-54 reports whose comparisons Snow weaponised), the nineteenth-century life-insurance and factory records, and then the twentieth century's epidemiological dynasties - the Framingham Heart Study (1948) inventing 'risk factor', the British Doctors Study (1951-2001) proving Doll and Hill's causal inference about smoking to the last smoker, the Nurses' Health Study's women's-health catalogue, and the Helsinki and Helsinki-offspring birth cohorts' perinatal legacy. Post-war occupational medicine built the historic-cohort template from payroll archives, and the Scandinavian personal-identification-number registries turned whole nations into cohorts (the 'registers-as-time-machines' school Thyssen and Lynoe documented), while the UK's General Practice Research Database tradition made pharmacoepidemiology a routine regulator's tool. The case-control design matured more slowly: the 1920s-50s 'retrospective' studies of tuberculosis household contacts, Li's 1961 polio-tonsillectomy case-control formulation and the 'method of contrasting cases with non-diseased' language, then the storm of its classic results - the diethylstilbestrol clear-cell adenocarcinoma papers of 1971 (a case-control series that banned a drug in months), endometrial cancer and oestrogen, and the methodological corrections that followed (Breslow and Day's two-volume bible of the 1980s, the control-selection treatises, Berkson's bias's eponymous caution). Matching, odds ratios and logistic regression arrived together in the 1970s-80s, as did the warnings about recall bias in teratogen pharmacoepidemiology. The ecological tradition carries its own famous fights: the diet-and-cancer maps (Armstrong and Doll's international correlations), Keys's Seven Countries correlations (the fat-versus-heart-disease maps that built the dietary consensus and its backlash), and the salt-and-blood-pressure village surveys; each fight was finally settled not by better correlations but by individual-level and trial evidence, which is the ecological design's permanent sentence. Natural-experiment methods entered medicine through econometrics' credibility revolution (difference-in-differences, regression discontinuity and instrumental variables migrating into health-services journals after the 1990s Card-Krueger debates), while Mendelian randomisation (Gray and Smith's 2000s formalisation of Katan's 1986 idea) gave epidemiology a genetic instrument when confounding refused to die. The current synthesis is the 'target-trial' programme (Hernan and Robins' programme of restating observational questions as hypothetical trials) and the mega-evidence era (the UK Biobank's half-million-person re-analysis of every old exposure claim), which keeps producing the field's oldest verdict: associations dissolve, designs improve, and causation remains an argument about assumptions.** - [[epidemiology-ebm/bias-confounding]], [[epidemiology-ebm/statistics-for-clinicians]].**
-:::
-
-::: example The survey that flattered {#ex-survey}
-A workplace mental-health survey (62 percent response, online, advertised two weeks ahead) finds 9 percent depression prevalence, below the national 18 percent; the occupational-health lead proposes 'we are healthier than the country'.
-::: solution
-**Non-response-is-the-sample ([[#def-descriptive]], [[epidemiology-ebm/measuring-disease]]): the biases stacked: the healthy-worker effect (the absent, dismissed and too-depressed-to-click are missing by design of the medium), voluntary-response skew (both directions possible - distressed staff sometimes seek any microphone, so the net direction is an empirical question, not a certainty), the coverage frame (precarious and outsourced staff excluded from the platform), and the instrument (self-answered screening versus diagnostic interview prevalence are different quantities - screening tools over-call mild cases in low-stress weeks and under-call stigma-heavy presentations). The corrective toolkit: response-rate benchmarks and comparison with census demographics (weight the responders to the workforce's age, sex, role and grade structure), a non-response follow-up study (call 100 refusals - the answer usually lives there), and the calibration question (compare the survey against the trust's own sick-leave, EAP-contact and turnover data - convergent internal indicators are worth more than the national headline). The honest statement: 'our measured depression risk is a biased estimate of unknown direction from a 62 percent sample; the same survey's loneliness and burnout items show the gradient, and gradients survive response bias better than means.' The programme decision the survey actually supports: the within-firm distribution and the qualitative themes - not the comparison that made the press release.'**
-:::
-:::
-
-::: example The policy as experiment {#ex-policy}
-Your region implemented a smoking ban in public places 18 months ago; the acute trusts report fewer admissions for 'heart attack'. The health director asks whether the ban caused the drop and how to answer the tobacco-industry-funded rebuttal.
-::: solution
-**Difference-in-differences-with-everybody-watching ([[#def-case-control]], [[#def-descriptive]], [[public-health/communicable-disease-control]]): the design to run: interrupted-time-series with controls - daily or weekly infarction admissions before and after in your region and in comparable regions without bans (the parallel-trends assumption: show the pre-periods moving together), adjusted for season, influenza activity and population change (the 'population-attribution-of-admissions' denominator work that bans' critics attack first), and dose-response by the ban's enforcement intensity and by the smoke-free-air-quality measurements (the third-party particulate data that convert a policy variable into an exposure variable). The known literature: the Cochrane and meta-analytic syntheses of ban-era infarction declines (modest and consistent effects, second-hand-smoke mechanisms - the platelet-and-endothelium rapid effects that make biologically plausible the large early drops; the controversy itself is instructive - the 'ban-benefits-and-its-industry-adversaries' methodological-war literature). The confounders to pre-empt: concurrent smoking-cessation funding, air-quality improvements, ambulance-pathway changes (the 'primary-PCI-network' rollout that moves admission counts without moving infarction rates - use both endpoints) and the fall in restaurant smoking that a voluntary-then-banned design separates. The rebuttal answer: publish the protocol before the results, use the control regions the critics would choose, and state the assumptions in the press release - the design's credibility is its pre-registration, which is what policy epidemiology borrowed from trials and what its opponents never do.**
-:::
+- Observational studies observe exposures and outcomes without assigning them. They are often the only ethical or practical way to study causes of disease and harms of treatment.
+- Case reports and case series generate hypotheses but have no comparison group. Cross-sectional studies measure prevalence but usually cannot show which came first. Ecological studies compare groups and risk the ecological fallacy.
+- **Cohort studies** start from exposure, follow people forward and measure incidence, giving risk ratios, rate ratios and risk differences. They show time order and suit rare exposures and several outcomes, but are slow and lose participants.
+- **Case-control studies** start from outcome and compare past exposure, giving the odds ratio $ad/bc$. They suit rare outcomes, but depend on well-chosen controls and are vulnerable to recall bias.
+- The odds ratio approximates the risk ratio when the outcome is rare; with incidence density sampling it estimates the rate ratio. For common outcomes, odds ratios exaggerate risk ratios.
+- Nested case-control, case-cohort and case-crossover designs combine efficiency with good measurement. STROBE describes how observational studies should be reported.
 :::
 
 ## Exercises
 
-::: exercise Choose the design {level=1}
-Match each question to the best design and name the one thing the design can never establish: (a) rare Guillain-Barré after a new vaccine; (b) long-term cancer risk after occupational diesel exposure; (c) national prevalence of vitamin D deficiency; (d) does a school-based anti-bullying programme reduce absences?
+::: exercise A cohort risk ratio {level=1 check="3"}
+In a fictional cohort, 45 of 1,500 exposed people and 30 of 3,000 unexposed people develop an outcome during 5 years. What is the risk ratio?
 ::: solution
-**Designs-are-questions-asked ([[#def-cohorts]], [[#def-case-control]], [[#def-descriptive]]): (a) vaccine safety signals: passive and active spontaneous-reporting systems and, for rates, a cohort of vaccinees versus contemporaneous unvaccinated comparators (the 'self-controlled-risk-interval' design for transient outcomes - each person their own control across time) - what no design fixes: the report-only numerator and the background-rate assumption. (b) historic cohort from employment records with exposure matrices, or nested case-control within it - it cannot prove exposure accuracy for individuals deceased in 1975. (c) cross-sectional survey with probability sampling and blood-measure standardisation - no temporality and no causation (and the 'season-of-testing' confound that vitamin D literature is famous for). (d) cluster-randomised trial by school if feasible, else stepped-wedge with controls - the observational fallback cannot exclude that the schools that volunteer differ in every way that matters. The meta-point: design choice follows incidence, latency, ethics and who can be randomised; the unfixable thing is always an assumption, and the appraiser reads for which one.**
+Risks are $45/1{,}500 = 0.03$ and $30/3{,}000 = 0.01$. The risk ratio is $0.03/0.01 = 3$.
 :::
 :::
 
-::: exercise Fix the case-control {level=2}
-Reviewers reject a case-control study of hair-dye and lymphoma whose controls were hospital patients for orthopaedic and ENT conditions. Explain Berkson's bias concretely for this comparison and redesign control selection with three defensible options and their costs.
+::: exercise A case-control odds ratio {level=1 check="3.5"}
+A fictional case-control study finds that 60 of 100 cases and 30 of 100 controls were exposed. Calculate the odds ratio.
 ::: solution
-**Controls-represent-exposure ([[#def-case-control]]): Berkson's mechanism: hospital controls are selected by admission rates, and if dye-related conditions (or the occupations and lifestyles that co-travel with dye use) raise admission probability differently across control diagnoses, the exposure distribution among controls no longer represents the source population - the classic example: ENT controls over-represent the smoking-and-drinking classes that frequent those clinics, distorting any exposure correlated with those habits. Options: population controls from address registers (cleanest exposure representativeness, expensive and declining cooperation, and the demographic-skew problem the response-rate literature documents); friend-or-neighbourhood controls (matches the environmental exposures that are the study's confounders, introduces social-class and lifestyle overmatching); and hospital controls with admission-rate-aware selection (the 'diagnoses-unrelated-to-the-exposure' rules of modern multi-disease designs, with sensitivity analyses across control groups - the 'control-group-concordance' check the classic method papers propose). The redesign also fixes: incident-not-prevalent cases (survivor bias - the 'aggressive-lymphoma-dies-before-enrolment' subset problem), blinded structured exposure interviews with product-specific questionnaires (the 'dye' definition disaster of the older literature), and interviewers masked to case status. The appraiser's line: every case-control study is its control group; the exposure instrument is second.**
+$a = 60$, $c = 40$, $b = 30$, $d = 70$. $OR = (60 \times 70)/(30 \times 40) = 4{,}200/1{,}200 = 3.5$.
 :::
 :::
 
-::: exercise Appraise the cohort claim {level=2}
-A 20-year cohort reports that coffee drinkers live longer (hazard ratio 0.88, 95 percent confidence interval 0.83 to 0.93). List the seven design-and-analysis issues you would demand the authors address, and which single additional analysis most strengthens the claim.
+::: exercise Name the design {level=1}
+Name the design: (a) a researcher compares national rates of bowel cancer with national meat consumption across 30 countries; (b) 400 children with leukaemia and 800 children without it are asked about past X-ray exposure; (c) 20,000 adults complete a dietary questionnaire and are followed through hospital records for 15 years; (d) a survey asks 3,000 adults about current smoking and current cough.
 ::: solution
-**Coffee-causality-checklist ([[#def-cohorts]], [[epidemiology-ebm/measuring-disease]], [[epidemiology-ebm/bias-confounding]]): (1) exposure measurement: baseline-only self-report (one cup or four? filtered or espresso? the 'quantification-then-forget' problem) - time-varying models needed; (2) reverse causation: sick-quoter effect (people cut coffee when ill - the 'lagged-analysis-and-exclusion-of-early-follow-up' remedy); (3) confounding by the healthy-coffee-drinker phenotype (income, activity, alcohol moderation) - directed acyclic graph stated and the adjustments justified not decorative; (4) residual confounding - the 'socioeconomic-position-residual' sensitivity analysis; (5) selection: healthy-volunteer and survivor biases and their direction; (6) proportional hazards and curve inspection (the 0.88 could be 0.99 for a decade then a cliff); (7) the dose-response and biological-plausibility frame plus the negative-control exposure (a decoy beverage with no plausible mechanism - if it also 'protects', the model is guilty). The single strongest addition: a within-family-or-mendelian-randomisation-or-at-least-an-exposure-genotype-proxy-analysis for coffee metabolism (CYP1A2 variants as the instrument) - it cannot replace a trial but it breaks the healthy-user confounding that no adjustment list ever fully kills. The appraisal verdict template: 'association robust to much, causal only if you accept the unmeasured-confounding assumptions; the direction of every listed bias mostly favours coffee, which is precisely what a coffee-lover would predict and what the method must transcend, not confirm.'**
+(a) Ecological study. (b) Case-control study. (c) Prospective cohort study. (d) Cross-sectional study.
 :::
 :::
 
-::: exercise Design the rare-outcome study {level=2}
-You must study whether a fertility treatment causes ovarian borderline tumours (incidence ~2 per 100,000 woman-years; the exposed population nationally is 40,000 treated women/year). Design the study with numbers, and state why the naive cohort fails and what the design sacrifices.
+::: exercise Matched pairs {level=2 check="2.5"}
+In a fictional individually matched case-control study, each case has one control of the same age and sex. In 40 pairs, the case was exposed and the control was not. In 16 pairs, the control was exposed and the case was not. In the remaining pairs both or neither were exposed. Estimate the matched odds ratio.
+::: hint
+Only the discordant pairs carry information about the association.
+:::
 ::: solution
-**Arithmetic-first-design ([[#def-case-control]], [[#def-cohorts]]): the naive cohort: 40,000 exposed women yield ~0.8 expected tumours per year - following them for a decade yields fewer cases than a case series needs, so the prospective-only cohort is a census of zeros. The design: national registry-based nested case-control (every incident tumour nationally - perhaps 60-80 exposed-year cases over a decade when linked to treatment registers - with 4-10 controls sampled per case from the treated-and-at-risk population, density sampling on age and calendar time), exposure as the treatment-register record (the 'complete-capture-of-confounded-by-indication' gold standard several Scandinavian studies exploited: parity, BMI and subtype where registers allow). Analysis: conditional logistic with dose (cycles, protocols), time-since-treatment windows (the latency logic), and the 'never-treated-subfertility-women-within-registers' comparator question that defines the causal contrast asked (treated-versus-untreated-infertile is not treated-versus-fertile - the confounding-by-indication that the next chapter makes famous). The sacrifices: no primary tumour tissue or histology detail from registers (the validation substudies), no symptomatology that preceded treatment, and odds-ratio-as-rate-ratio reading (defensible at this rarity). The power line that wins the grant: 4:1 sampling with registry linkage delivers 80 percent power for the effect sizes the literature fights over, at a cost that makes the cohort fantasy look like vanity.**
+For a matched-pair design, the odds ratio is the ratio of the two kinds of discordant pair: $40/16 = 2.5$. Concordant pairs contribute nothing, because within them case and control do not differ in exposure.
 :::
 :::
 
-::: exercise Critique the ecological claim {level=2}
-A country-level correlation (r=0.8) between sugar availability and diabetes prevalence across 90 nations produces a ministerial claim that sugar explains most of the diabetes epidemic. Give the three levels of error in the claim and what individual-level evidence would add.
+::: exercise Temporal ambiguity {level=2}
+A cross-sectional survey finds that people with chronic pain are twice as likely to be taking opioid medicines as people without chronic pain, and that people taking opioids report worse pain scores. A commentator concludes that opioids make pain worse. Discuss.
 ::: solution
-**Ecological-error-triple ([[#def-descriptive]], [[epidemiology-ebm/bias-confounding]]): error one, the ecological fallacy: national aggregates correlate without individuals being exposed-and-affected (the diabetes cases may be in the poorer quintiles of low-sugar countries while the sugar flows to the rich - the within-versus-between decomposition the Robinson-class examples teach). Error two, the confounder commons: national sugar availability tracks urbanisation, sedentary work, portion sizes, ultra-processed-food penetration, and screening intensity (measured diabetes rises with its detection); multi-country regressions cannot adjust what registers do not record. Error three, the measurement asymmetry: food-balance-sheet 'availability' overstates consumption, and diabetes prevalence definitions and diagnostic intensity vary nationally (the 'apparent-epidemic-of-diabetes-diagnosis' literature). Individual-level evidence adds: cohort studies of sugar-sweetened-beverage intake with adjustment for total energy and adiposity (the 'is-it-obesity-mediation-or-direct-effect' analyses - most individual-level effect runs through weight), trials of beverage substitution (the ad-libitum-feeding trials' weight outcomes - the mechanism evidence), and within-country natural experiments of sugar taxes (the Mexican and South-African beverage-purchase data - the cleanest quasi-experimental line). The policy-adjacent honesty: individual evidence supports sugar-reduction as part of the obesity environment; it does not support 'sugar explains most of it', and the ecological map remains useful for hypothesis and advocacy, which is the claim the r=0.8 can actually bear.**
+The survey measures exposure (opioid use) and outcome (pain) at the same time, so it cannot show which came first. The most obvious explanation is that people with severe pain are prescribed opioids: the "outcome" causes the "exposure". This is **reverse causation**, and in a treatment context it is also called **confounding by indication**. Opioid-induced hyperalgesia is a real phenomenon, but this design cannot detect it. A cohort following people from the start of treatment, with comparison against similar people treated differently, would be needed, and a randomised trial would be better still.
 :::
 :::
 
-::: exercise Reconcile two studies {level=3}
-A cohort finds a strong association between night-shift work and breast cancer; a large case-control study finds none; a meta-analysis pooling them reports low heterogeneity and a positive summary. Adjudicate, then say what the meta-analysis did wrong.
+::: exercise Loss to follow-up {level=2 check="2.25"}
+A fictional cohort enrols 1,000 exposed and 1,000 unexposed people. Among exposed people, 800 complete follow-up and 100 have the outcome. Among unexposed people, 900 complete follow-up and 50 have the outcome. Calculate the risk ratio among those who completed follow-up. Then find the lowest and highest risk ratios that could be true if the outcomes of those lost were known.
 ::: solution
-**Designs-disagree-with-reasons ([[#def-cohorts]], [[#def-case-control]], [[epidemiology-ebm/systematic-reviews]]): the cohort side: working women (the healthy-worker effect protects shift workers' baseline health - the direction that would bias toward null), exposure misclassification (retired-and-reassigned-shift-decades job titles), and the confounders cohorts handle imperfectly (reproductive history, BMI, alcohol, screening - the 'screening-detection-bias' that shift workers attend mammography differently cuts both ways). The case-control side: recall bias (cases' shift-memory over-reporting would bias upward - the null here is 'cleaner' of that worry), survivor bias (women who developed symptoms left shifts or the workforce - a null generator), and the definition problem ('ever-shifted-versus-years-of-shifting-versus-current' - exposure contrasts that are not the same exposure. The adjudication: the dose-response question decides - if the cohort's effect concentrates in the longest-shifted and most-dark-exposed women, a circadian mechanism (melatonin suppression, vitamin D, timing of eating) gains plausibility; if it is uniform across ever-versus-never, healthy-shift-worker attenuation argues the cohort's signal is confounding surviving in the wrong direction. The case-control's null is then a survivor-and-recall artefact, and the cohort's positive a detection-and-confounding artefact, and both may be wrong about the truth. The meta-analysis's sins: pooling across incompatible exposure definitions (the 'garbage-in-precision-out' failure), heterogeneity hidden by low power (95-percent-intervals-of-the-I-squared-class), and 'summary-effect' language when the honest verdict is 'the designs disagree because they measured different things in different populations' - the subgroup-and-meta-regression-then-restricted-literature the good reviews publish instead.**
+Among completers: $(100/800)/(50/900) = 0.125/0.0556 = 2.25$.
+
+Lowest possible: all 200 exposed people lost had no outcome, and all 100 unexposed people lost had it. RR $= (100/1{,}000)/(150/1{,}000) = 0.67$.
+
+Highest possible: all 200 exposed people lost had the outcome, and no unexposed person lost had it. RR $= (300/1{,}000)/(50/1{,}000) = 6$.
+
+The extreme scenarios are unlikely, but the range from 0.67 to 6 shows how much uncertainty losses of 10–20% can create when they are larger than the number of outcomes. Good cohorts work hard to keep losses low and compare the characteristics of those lost with those retained.
 :::
 :::
 
-::: exercise Write the reporting flow diagram {level=3}
-Draft the participant-flow (STROBE figure one) for a 20-year occupational cohort of two million workers with linked mortality, including every exclusion, censoring rule and analytic-population definition, and the accompanying table that makes the denominators auditable.
+::: exercise From risk ratio to odds ratio {level=3 check="2.67"}
+In a fictional cohort, the risk of an outcome is 20% in unexposed people and the risk ratio for exposure is 2. What is the odds ratio, to 2 decimal places? Comment on how a reader might be misled.
 ::: solution
-**Auditable-denominators ([[#def-cohorts]], [[epidemiology-ebm/measuring-disease]]): the flow: source records (the two-million hires over the window) - exclusions with reasons and counts (missing exposure dates, death before hire-date reconciliation, duplicate national-identification numbers - the 'data-cleaning-archives' the reviewer cannot reconstruct without you); entry definition (the 'delay-and-washout' rule excluding prevalent disease at the index date if the outcome is incidence), person-time accounting (entry, censoring at death, emigration (with its completeness caveat - the 'lost-to-follow-up-abroad' that under-ascertains deaths), end of coverage and the lag rules for latency), and the final person-years by exposure stratum. The table: by exposure level - workers, deaths, person-years, crude rate, expected deaths, standardised mortality ratio with confidence intervals, and the missing-data indicators (percent with exposure estimated by job-title algorithm - the 'allocation-exposure-and-its-misclassification-direction' footnote). The two analysis populations declared: the primary 'all-workers-with-any-exposure-estimate' and the secondary 'high-quality-exposure-subset', with the expectation stated that they agree or the exposure metric is the finding. The sensitivity-analysis list pre-specified: emigration-informative censoring (worst-case re-assignment of lost workers), alternative lag lengths, and the internal unexformed-comparator (the 'office-workers-in-the-same-factories' referent that the healthy-worker critique demands). The caption's sentence that distinguishes serious registers from press releases: 'person-time is computed only while employment coverage is verifiable; losses are quantified and their plausible effect on rates is bounded in Appendix S.'**
+The risk in the exposed is $2 \times 0.2 = 0.4$. Odds: $0.4/0.6 = 0.667$ and $0.2/0.8 = 0.25$. The odds ratio is $0.667/0.25 = 2.67$ (exactly $8/3$).
+
+Equivalently, $OR = RR(1-R_0)/(1 - RR \cdot R_0) = 2 \times 0.8/0.6$. A reader who interprets 2.67 as "2.67 times the risk" overstates the effect by a third. With an outcome this common, the risk ratio should be reported.
 :::
 :::
 
-::: exercise Teach the hierarchy {level=1}
-Design a five-minute whiteboard sequence teaching junior doctors the design hierarchy from case report to trial, using one exposure (alcohol) and one outcome (cirrhosis) as the running example. Include the two questions each design can and cannot answer.
+::: exercise Controls for a hospital study {level=3}
+A fictional case-control study of coffee drinking and pancreatic cancer recruits cases from a gastroenterology unit and controls from patients admitted to the same unit with other gastrointestinal conditions, such as peptic ulcer and reflux disease. It finds a strong association with coffee. What is the likely problem, and how would you redesign the study?
 ::: solution
-**One-exposure-five-designs ([[#def-descriptive]], [[#def-cohorts]], [[#def-case-control]]): Frame 1, case report: the 34-year-old with ascites and no viral markers - can say 'this happened after this', cannot say how often or whether the alcohol did it. Frame 2, cross-section: the clinic survey finding 40 percent of cirrhotics are current drinkers - prevalence and association, no direction (could the liver disease have changed the drinking? reverse-causation arrow drawn in red). Frame 3, cohort: 100,000 drinkers and non-drinkers followed for incidence - the temporal arrow, absolute rates (the per-1,000-year numbers the patients ask for), the dose-response curve, and the honest limits (healthy-drinker confounding, twenty-year cost). Frame 4, case-control: 300 cirrhosis cases, 600 population controls, exposure odds compared - fast and cheap for a rare outcome, but the recall-and-selection asterisks printed large. Frame 5, natural experiment and trial ethics: you cannot randomise drinking (the 'trial-that-will-never-happen' line), but Mendelian-randomisation studies of ALDH2 variants and the alcohol-policy natural experiments (tax changes and cirrhosis mortality time series - the 'experiments-nature-and-parliaments-run' frame) give the as-if-random evidence. The closing question to the room: 'why does the hierarchy exist at all?' - because each design buys one thing (temporality, precision, speed, ethics) and pays in one currency (bias, cost, time, feasibility), and good appraisal is knowing which purchase was made.**
+The controls are not representative of the population that produced the cases. Patients with peptic ulcer and reflux disease are often advised to reduce coffee, or stop drinking it because it worsens symptoms. Their coffee consumption is therefore lower than in the general population, so cases appear to drink more coffee by comparison. The association may be produced entirely by the choice of controls.
+
+A redesign would sample controls from the population that gave rise to the cases, for example from the general practice lists of the same catchment area, matched on age and sex. If hospital controls are used, they should be drawn from a range of conditions unrelated to the exposure. Coffee consumption should be measured with the same standardised questionnaire in cases and controls, and ideally refer to a period before symptoms started. Smoking must be measured and adjusted for, since it is associated with both coffee drinking and pancreatic cancer.
+:::
+:::
+
+::: exercise Design a study {level=3}
+A health authority wants to know whether living near a new waste incinerator increases the risk of childhood asthma. Asthma is common, affecting roughly 1 in 10 children. Outline a suitable observational design and the main biases you would guard against.
+::: solution
+Because the outcome is common and the exposure is defined by place, a **cohort** design using routine records is feasible: identify children living at different distances from the incinerator, or with different modelled exposure to its emissions, and compare the incidence of new asthma diagnoses in primary care records after it opened. A comparison of the change in incidence before and after opening, against a similar area without an incinerator, strengthens the design (a difference-in-differences natural experiment).
+
+Main biases:
+
+- **Confounding** by socioeconomic position, housing quality, parental smoking and traffic pollution, which are often worse near industrial sites. These must be measured or the comparison area matched on them.
+- **Ascertainment bias** if publicity about the incinerator leads parents nearby to seek medical advice more often, or doctors to diagnose asthma more readily. Using objective markers, such as prescriptions for preventer inhalers or emergency admissions, helps.
+- **Exposure misclassification** if distance is a poor proxy for actual emissions, which depend on wind direction and stack height. Dispersion modelling is better than simple distance.
+- **Migration**: families with children who have asthma may move away from, or towards, the site.
+
+An ecological comparison of asthma rates in wards near and far from the plant would be quicker but more vulnerable to confounding and the ecological fallacy.
 :::
 :::

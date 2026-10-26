@@ -1,148 +1,355 @@
-Diagnostic tests are applied Bayes' theorem: a test result is a piece of evidence that moves a pre-test probability by its likelihood ratio, and the profession's chronic illness is forgetting either half of that sentence. **This chapter teaches the 2x2 and its derivatives (sensitivity, specificity, predictive values and their prevalence dependence), likelihood ratios and the nomogram discipline they enforce, receiver-operating-characteristic curves and their comparison traps, the reference-standard and verification-bias problems that corrupt the whole edifice at its foundations, and the decision-analytic endpoint the chapter exists to reach: when a test changes what you do, which is the only clinically meaningful definition of usefulness.**
+A 45-year-old woman with no symptoms has a screening blood test for a cancer. The test is described as "90% sensitive and 95% specific", and her result is positive. How likely is it that she has the cancer? When this question is put to doctors and medical students, many answer "about 90%" or "about 95%". If the cancer affects 1 in 100 women like her, the correct answer is about 15%.
 
-## The arithmetic
+This gap between intuition and arithmetic is the reason for this chapter. A test result is evidence, and evidence changes a probability that existed before the test. To interpret a test you need two things: how good the test is at telling people with and without the condition apart, and how likely the condition was in the first place. The chapter develops both, using the 2×2 table, predictive values, likelihood ratios and Bayes' theorem, and then looks at how test accuracy studies can mislead.
 
-::: definition Sensitivity, specificity and the prevalence trap {#def-measures}
-**The two-by-two of test against truth defines the pair the test owns and the pair the patient owns. The test's intrinsic pair: sensitivity (true-positive rate - the rule-out ambition, SnNout's imperfect mnemonic) and specificity (true-negative rate - the SpPin counterpart, both statements strictly true only at 100 percent and useful as intuition at none). The patient's pair: positive and negative predictive values - the probabilities the clinician actually quotes - which are not properties of the test but of the test in a population: predictive values slide with prevalence (a test that returns mostly false positives among screened 1-percent-prevalence populations returns mostly true positives among 40-percent-prevalence outpatients), which is why test-criticism papers that report only sensitivity and specificity answer the wrong question and why the same assays earn terrible reputations in emergency departments and excellent ones in specialist clinics. The informed clinician's toolset: the likelihood ratio positive (sensitivity over 1-specificity) and negative (1-sensitivity over specificity), which combine odds-formerly-pre-test-odds into post-test odds on any prevalence, are the stable quantities a test really has; the pre-test probability is a clinical estimate with a name (the 'gestalt with citations' of prediction rules and admission rates) and the whole chapter reduces to using it honestly. Threshold mechanics: sensitivity and specificity trade along the decision cut-point (the ROC curve's existence proof), and cut-point choice imports prevalence, harm and cost (the troponin 99th-percentile-and-sex-specific-adjacent threshold controversies, the HbA1c 6.5-versus-7.0 debates) - so 'the' operating characteristics of a continuous test are a family, and papers quoting one number from a curve without the curve are half-reporting. Multiple testing and serial strategies: parallel testing raises sensitivity (any-positive rules out), series raises specificity (both-positive rules in), and the combinations' arithmetic is the chapter's small algebra with clinical names (the Wells-then-D-dimer-then-imaging sequences of suspected thrombosis as the canonical serial design - with its conditional-independence caveat that the likelihood ratios multiply only if the tests' errors are uncorrelated given disease, which same-mechanism pairs violate).**
+## The 2×2 table {#table}
+
+Test accuracy is measured by comparing the test with a **reference standard** (sometimes called the gold standard), the best available way of deciding who really has the condition. Biopsy, angiography, culture or long-term follow-up are typical reference standards.
+
+::: definition The 2×2 table {#def-2x2}
+When a test with a positive or negative result is compared with a reference standard, each person falls into one of four cells:
+
+| | Condition present | Condition absent |
+|---|---|---|
+| Test positive | $a$: true positives (TP) | $b$: false positives (FP) |
+| Test negative | $c$: false negatives (FN) | $d$: true negatives (TN) |
+
+The columns are defined by the reference standard; the rows by the test. Every accuracy measure in this chapter is a ratio of cells in this table.
 :::
 
-## The curve and the comparison
+The **prevalence** in the study, also called the **pre-test probability**, is $(a + c)/(a + b + c + d)$: the proportion of people tested who actually have the condition.
 
-::: definition ROC analysis, AUC and its discontents {#def-roc}
-**The receiver-operating-characteristic curve plots sensitivity against 1-specificity across every threshold (its origin in radar signal-detection theory survives as its vocabulary: d-prime and the equicorrelated normal-model idealisations). The area under the curve (AUC, the concordance statistic - the probability a random case scores above a random control) summarises discrimination across thresholds with one number, and every good use of it comes with warnings the statistics manuals repeat to few readers: AUC ignores clinical utility by averaging over thresholds no one would use (an excellent AUC can accompany a useless operating region), treats the false-positive and false-negative trade as symmetric when patients and diseases decide otherwise, is prevalence-blind in exactly the way predictive values are not (the 'AUC-looks-great-in-enriched-samples' trap), and comparison is treacherous (correlated ROC curves from paired designs need DeLong-or-bootstrap methods; AUC-versus-AUC contests often reflect the reference standard more than the tests). Better displays for decisions: partial AUC over the clinically plausible specificity range, decision-curve analysis (net benefit across thresholds - the modern appraisal standard for prediction and diagnostic models), and the plain clinical-utility frame: does using this test, at this threshold, in this population, change management and improve outcomes? - the three-step ladder (efficacy of the test, effectiveness of the testing strategy, patient outcomes) that screening and diagnostic-research literatures converged on and that most test evaluations climb only the first rung. Comparison designs: paired-reference designs (both tests on consecutive series with blinding and adjudication), the incremental-value studies (does the new test add to the old model's AUC or net benefit - the Delong-and-IDI-and-NRI-statistics whose statistical fashion and subsequent critique both ran at academic speed), and the cross-validation discipline for the prediction-rule era (the risk of optimism when the same data derive and validate - the TRIPOD and prediction-model reporting reforms). The clinical-epidemiology classics keep teaching: the 'troponin-versus-MI-not-troponin-versus-ischaemia' semantic trap (measuring myocardial injury, deciding infarction), the D-dimer's age-adjusted thresholds and prevalence-dependent exclusion power, and the faecal-calprotectin and CRP stories of tests thriving or failing as a function of care-pathway placement rather than intrinsic quality.**
+## Sensitivity and specificity {#sens-spec}
+
+::: definition Sensitivity and specificity {#def-sens-spec}
+**Sensitivity** is the proportion of people *with* the condition who test positive:
+
+$$
+\text{sensitivity} = \frac{a}{a+c} = \frac{TP}{TP + FN}.
+$$
+
+**Specificity** is the proportion of people *without* the condition who test negative:
+
+$$
+\text{specificity} = \frac{d}{b+d} = \frac{TN}{TN + FP}.
+$$
+
+Sensitivity is read down the "condition present" column; specificity down the "condition absent" column. Neither depends on how many people in the sample have the condition, so, in principle, both are properties of the test.
 :::
 
-## The foundations
+A highly sensitive test rarely misses the condition, so a *negative* result is reassuring. A highly specific test rarely labels healthy people as having the condition, so a *positive* result is informative. Most tests trade one against the other: making a test more sensitive by lowering its threshold for positivity usually makes it less specific.
 
-::: definition Reference standards, verification bias and test evaluation design {#def-reference}
-**A test's apparent quality is bounded by its gold standard's reality: the imperfect-reference problem (angiography against which ECG tests are judged is itself error-laden - the 'correction-for-imperfect-reference' methods and their unpopularity), the reference-standard cascade (culture-negative endocarditis and biopsy-negative disease where the truth is a clinical adjudication, so the diagnostic-label uncertainty propagates to the operating characteristics - the 'sicker-controls-and-winded-cases' of classic study populations), and differential verification (different reference standards for positive and negative results - a design that manufactures favourable numbers). Verification (work-up) bias is the field's signature error: only test-positives (or the clinically worried) get the truth revealed, so sensitivity is computed on revealed cases and specificity on the assumed-well; remedies: follow the unverified to hard outcomes, masked independent verification, and the statistical corrections whose assumptions are strong and rarely checked. Incorporation bias - when the test under study is part of the reference diagnosis (imaging in the clinical-radiologic-asthma-diagnosis, troponin in the myocardial-injury label) - inflates agreement by construction and deserves its own paragraph because it is endemic and deniable. The evaluation pyramid mirrors diagnostic assessment to patients: analytic validity (does the assay measure what it claims - metrology, precision, interference), clinical validity (the operating characteristics in appropriate populations - the phase-3 of diagnostics), clinical utility (randomised trials of testing strategies - the neglected apex that explains why so many tests with true numbers change nothing: the prostate-specific-secretion and tumour-marker and 'testing-without-treatment-thresholds' literatures), and the implementation and economic layers (turnaround time as a clinical variable, test-stacking as a behavioural phenomenon, the 'normal-result-anchoring' and 'incidentaloma-cascade' harms that guidelines now cost). Reporting standards (STARD and its extensions) operationalise the appraisal checklist: consecutive-and-unselected design, blinding, prespecified thresholds, verification of both results' fates. The clinical teaching closes on Bayes with the strongest practical sentence in the chapter: a test is worth ordering exactly when the result could change management - the pre-test-probability question ('what will I do differently if positive?') is both the ethical and the arithmetic filter, and the tests that fail it generate the cascade of incidental findings that this website's safety chapters count as harm.**
+In practice sensitivity and specificity are less fixed than the definition suggests. A test usually detects advanced disease more easily than early disease, so its sensitivity is higher in a hospital population with severe cases than in a screening population. Specificity is often lower in people with other conditions that mimic the target condition. This variation is called **spectrum effect**, and it is why accuracy figures from one setting should be transferred to another with care.
+
+## Predictive values {#predictive}
+
+Sensitivity and specificity answer the question "if a person has the condition, how likely is a positive test?" The patient and the clinician want the reverse: "given this positive test, how likely is the condition?"
+
+::: definition Predictive values {#def-predictive}
+The **positive predictive value** (PPV) is the proportion of people with a positive test who have the condition:
+
+$$
+PPV = \frac{a}{a+b}.
+$$
+
+The **negative predictive value** (NPV) is the proportion of people with a negative test who do not have the condition:
+
+$$
+NPV = \frac{d}{c+d}.
+$$
+
+Predictive values are read *across the rows* of the table. They depend on the prevalence of the condition in the people tested as well as on the test's sensitivity and specificity.
 :::
 
-::: example The incidentaloma {#ex-incidental}
-A healthy 40-year-old's 'check-up' CT shows a 9-mm adrenal nodule; the follow-up pathway begins. What does the chapter say about the probability that this helps?
+::: example The same test in two settings {#ex-prevalence}
+A test has sensitivity 90% and specificity 95%. Calculate its PPV and NPV (a) in a screening population with prevalence 1%, and (b) in a specialist clinic where 30% of referred patients have the condition.
 ::: solution
-**Prevalence-meets-specificity ([[#def-measures]], [[#def-reference]], [[endocrine/adrenal]]): the arithmetic: adrenal incidentalomas are overwhelmingly benign (the adenoma-prevalence-at-autopsy-and-smodern-imaging data: several percent of adults, functional-secreting fractions in the low single digits), so a positive 'nodule-found' result carries a predictive value for significance set by the workup pathway's thresholds, not the scan's resolution. The cascade: the biochemical screen (false-positive dexamethasone-tests among the non-secreting - the specificity-against-prevalence problem again), the imaging characterisation rounds, the repeat scans with their radiation-and-anxiety budgets, and the rare surgery with its real morbidity - the whole arrow of care triggered by an imaging finding whose pre-test probability of clinical importance was near population baseline. The guideline defence: structured pathways exist precisely because the nodule's predictive value depends on size-and-density-cutoffs with published operating characteristics, and the 9-mm-benign-appearing-lesion class now has explicit 'minimal-or-no-follow-up' recommendations in several systems. The clinical verdict for the patient: the honest numbers ('at this size and appearance, well under one percent chance of anything that needs treatment; the pathway's tests have their own false-positive tails'), the option of watchful re-imaging framed by the guideline, and the teaching point for the referrer: the check-up CT was the test whose management-changing probability was assumed rather than estimated - the chapter's rule in reverse. The system lesson: screening-the-unscreenable is an old vice with new radiology; the incidentaloma rate is a quality indicator of test ordering, not of imaging.**
+Use natural frequencies: imagine 10,000 people.
+
+**(a) Prevalence 1%.** 100 have the condition: 90 test positive (TP) and 10 test negative (FN). 9,900 do not: 5% of them, 495, test positive (FP), and 9,405 test negative (TN).
+
+$PPV = 90/(90 + 495) = 90/585 = 15.4\%$. $NPV = 9{,}405/9{,}415 = 99.9\%$.
+
+**(b) Prevalence 30%.** 3,000 have the condition: 2,700 TP and 300 FN. 7,000 do not: 350 FP and 6,650 TN.
+
+$PPV = 2{,}700/3{,}050 = 88.5\%$. $NPV = 6{,}650/6{,}950 = 95.7\%$.
+
+The test is identical, but in the screening setting about 85% of positive results are false, because the few true positives are outnumbered by false positives from the very large healthy group. In the clinic, most positives are true. This is the answer to the question at the start of the chapter.
 :::
 :::
 
-::: example The rule-out that ruled {#ex-ddimer}
-An emergency department with 4 percent pulmonary-embolism prevalence adopts D-dimer plus clinical score to exclude embolism. Two years on, the miss rate is discussed at morbidity-and-mortality meeting: three missed diagnoses, all with 'negative' D-dimer.
+Natural frequencies, as in this example, are the easiest way to explain test results to patients and colleagues. Saying "out of 1,000 women like you, about 10 have the cancer; 9 of them would test positive, and about 50 of the 990 without it would also test positive" makes the result far easier to grasp than conditional probabilities.
+
+::: widget bayes
+mode: test
+prevalence: 0.01
+sensitivity: 0.9
+specificity: 0.95
+caption: Bayes' theorem as natural frequencies. Move the prevalence slider from screening levels (around 1%) to clinic levels (30% or more) and watch the positive predictive value change while sensitivity and specificity stay fixed. Then see how much specificity has to rise before a positive screening result becomes more likely true than false.
+:::
+
+## Likelihood ratios and Bayes' theorem {#lr}
+
+Predictive values must be recalculated for every prevalence. Likelihood ratios avoid this, because they separate the contribution of the test from the contribution of the pre-test probability.
+
+::: definition Likelihood ratios {#def-lr}
+The **likelihood ratio** of a test result is the probability of that result in people with the condition divided by its probability in people without the condition.
+
+For a positive result:
+
+$$
+LR^{+} = \frac{\text{sensitivity}}{1 - \text{specificity}}.
+$$
+
+For a negative result:
+
+$$
+LR^{-} = \frac{1 - \text{sensitivity}}{\text{specificity}}.
+$$
+
+A likelihood ratio above 1 makes the condition more likely; below 1, less likely; equal to 1, the result is useless. For tests with several result levels (for example, a blood test reported in bands), each band has its own **multilevel likelihood ratio**, the proportion of people with the condition in that band divided by the proportion of people without it in that band.
+:::
+
+To use a likelihood ratio we convert probabilities to odds. If the probability is $p$, the odds are $p/(1-p)$; and odds $o$ convert back to probability as $o/(1+o)$.
+
+::: theorem Bayes' theorem in odds form {#thm-bayes}
+For a test result with likelihood ratio $LR$,
+
+$$
+\text{post-test odds} = \text{pre-test odds} \times LR.
+$$ {#eq-bayes-odds}
+
+Tests whose results are conditionally independent given disease status can be applied in sequence by multiplying their likelihood ratios.
+:::
+
+::: proof
+Let $D$ be the condition and $R$ the test result. Bayes' theorem gives
+
+$$
+P(D \mid R) = \frac{P(R \mid D)\,P(D)}{P(R)}, \qquad P(\bar D \mid R) = \frac{P(R \mid \bar D)\,P(\bar D)}{P(R)}.
+$$
+
+Dividing the first by the second cancels $P(R)$:
+
+$$
+\frac{P(D \mid R)}{P(\bar D \mid R)} = \frac{P(R \mid D)}{P(R \mid \bar D)} \times \frac{P(D)}{P(\bar D)}.
+$$
+
+The left side is the post-test odds, the first factor on the right is the likelihood ratio, and the second is the pre-test odds. For a positive result, $P(R \mid D)$ is the sensitivity and $P(R \mid \bar D)$ is $1 - $ specificity, giving $LR^+$. If a second test result $R_2$ is independent of $R_1$ within the diseased group and within the non-diseased group, then $P(R_1, R_2 \mid D) = P(R_1 \mid D)P(R_2 \mid D)$, and the same for $\bar D$, so the likelihood ratios multiply.
+:::
+
+As rough guides, likelihood ratios above 10 or below 0.1 usually cause large, often decisive, changes in probability. Ratios of 5 to 10 or 0.1 to 0.2 cause moderate changes. Ratios between 0.5 and 2 rarely change management. The **Fagan nomogram** is a chart that does the conversion graphically: a straight line from the pre-test probability through the likelihood ratio gives the post-test probability.
+
+::: example A rule-out test {#ex-ruleout}
+In this illustration, a D-dimer assay for pulmonary embolism has sensitivity 95% and specificity 40% (illustrative figures of the right order; real values depend on the assay and the population). Calculate its likelihood ratios. What is the post-test probability after a negative result in (a) a patient whose clinical pre-test probability is 15%, and (b) a patient whose pre-test probability is 50%?
 ::: solution
-**Safety-of-a-strategy-vs-property-of-a-test ([[#def-measures]], [[#def-roc]], [[cardiovascular/vascular-disease]]): the numbers to separate: D-dimer's sensitivity near 95-99 percent with specificity in the 40-60 percent range yields, at 4 percent prevalence, a negative predictive value above 99.5 percent (the post-test probability with a negative result and a low-or-intermediate score - the likelihood-ratio-negative arithmetic giving roughly 1 in several hundred) - so three misses in a large series is within statistical expectation, not necessarily failure; the appraisal questions: were the scores applied honestly (the physician 'gestalt upgrade' that bypasses the rule-out), were the high-prevalence presentations (post-partum, malignancy, recent surgery, prior thromboembolism) excluded from the pathway as protocols require (the conditional-dependence-and-prevalence-ceiling conditions - the rule-outs fail where pre-test probability defies the assay's exclusion power), and were the misses truly D-dimer-negative or documentation-negative (the 'test-ordered-too-late-in-symptom-course' and 'result-not-acted-on' classes that audit separates). The strategy-level evidence: the years of management-outcome safety data from the randomised path-trial lineage (the strategy's miss-rate endpoints, the 30-day-follow-up designs that define acceptable exclusion safety) versus the assay's standalone numbers. The meeting's output: not abandoning the pathway (the computed-tomography-radiation-and-contrast-and-length-of-stay savings are large and evidenceed) but tightening its edges - the prevalence ceiling documented locally, the high-risk-conditions override taught, the documentation chain audited, and the miss-rate monitoring with its own confidence intervals so that three misses are read as statistics, not scandals.**
+$LR^- = (1 - 0.95)/0.40 = 0.125$ and $LR^+ = 0.95/(1 - 0.40) = 1.58$.
+
+**(a)** Pre-test odds $= 0.15/0.85 = 0.176$. Post-test odds $= 0.176 \times 0.125 = 0.022$. Post-test probability $= 0.022/1.022 = 2.2\%$. That is low enough that most clinicians would not pursue imaging.
+
+**(b)** Pre-test odds $= 1$. Post-test odds $= 0.125$. Post-test probability $= 0.125/1.125 = 11.1\%$. That is still too high to stop investigating.
+
+A positive result barely changes the probability ($LR^+ = 1.58$), so a positive D-dimer does not diagnose embolism. The test is useful only for ruling out, and only when the clinical probability is already low. This is why guidelines, including NICE's guidance on venous thromboembolism, use a clinical probability score such as the Wells score first and reserve D-dimer for patients whose clinical probability is low.
 :::
 :::
+
+::: example Multilevel likelihood ratios {#ex-multilevel}
+Serum ferritin is used to diagnose iron deficiency. Suppose, for illustration, that the likelihood ratios for iron deficiency are 50 for ferritin below 15 µg/L, 3 for 15–34 µg/L, 0.5 for 35–100 µg/L and 0.1 above 100 µg/L. An older man with anaemia has a pre-test probability of iron deficiency of 30%. What is the post-test probability if his ferritin is (a) 20 µg/L, (b) 120 µg/L?
+::: solution
+Pre-test odds $= 0.3/0.7 = 0.429$.
+
+**(a)** Post-test odds $= 0.429 \times 3 = 1.29$; probability $= 1.29/2.29 = 56\%$.
+
+**(b)** Post-test odds $= 0.429 \times 0.1 = 0.043$; probability $= 4.1\%$.
+
+If the test had been reduced to "positive" (below 35) or "negative", a ferritin of 20 would have been treated the same as a ferritin of 5, which carries far stronger evidence. Keeping the bands preserves information. Note also that ferritin rises with inflammation, so in a patient with active inflammatory disease a "normal" ferritin is weaker evidence against iron deficiency; the likelihood ratios themselves depend on the population.
+:::
+:::
+
+::: warning SnNout and SpPin are rules of thumb, not guarantees
+The mnemonics say that a **S**ensitive test, when **N**egative, rules **out** (SnNout), and a **S**pecific test, when **P**ositive, rules **in** (SpPin). They are useful reminders of which way each property points. But a negative result from a test with 95% sensitivity rules out disease only if the pre-test probability is low, as [[#ex-ruleout]] showed. And a "specific" test with low sensitivity can still have a modest likelihood ratio. A test rules a diagnosis in or out only in combination with the pre-test probability, and the likelihood ratio is the honest measure of its strength.
+:::
+
+## Combining tests {#combining}
+
+Two tests can be used in **series**, where the second is done only if the first is positive and both must be positive to diagnose; or in **parallel**, where either positive result counts.
+
+If the two tests err independently, then:
+
+- In series, sensitivity $= s_A \times s_B$ and specificity $= 1 - (1 - c_A)(1 - c_B)$, where $s$ is sensitivity and $c$ specificity. Series testing increases specificity and lowers sensitivity. Screening programmes often work this way: a cheap sensitive test followed by a more specific confirmatory one.
+- In parallel, sensitivity $= 1 - (1 - s_A)(1 - s_B)$ and specificity $= c_A \times c_B$. Parallel testing increases sensitivity at the cost of specificity, which suits situations where missing the diagnosis is dangerous.
+
+The independence assumption is often false. Two imaging tests that both struggle with small lesions will tend to miss the same patients, so combining them adds less than the formulas suggest.
+
+::: example Two tests in sequence {#ex-serial}
+A patient has a pre-test probability of 10% for a condition. Test A is positive ($LR^+ = 4$), and then test B is positive ($LR^+ = 6$). Assuming conditional independence, what is the post-test probability?
+::: solution
+Pre-test odds $= 0.1/0.9 = 0.111$. After both tests, odds $= 0.111 \times 4 \times 6 = 2.67$. Probability $= 2.67/3.67 = 72.7\%$.
+
+Each test on its own would have given 31% (test A) or 40% (test B). Together they make the condition likely. If the tests measure overlapping features, the true combined likelihood ratio is less than 24 and this estimate is too high.
+:::
+:::
+
+## ROC curves and thresholds {#roc}
+
+Many tests give a continuous result, such as a concentration of troponin, PSA or glucose. Choosing a cut-off turns the result into "positive" or "negative", and every cut-off gives a different pair of sensitivity and specificity.
+
+::: definition ROC curve and area under the curve {#def-roc}
+A **receiver operating characteristic (ROC) curve** plots sensitivity (the true positive rate) against $1 - $ specificity (the false positive rate) for every possible threshold of a continuous test. A useless test lies on the diagonal. A perfect test passes through the top-left corner.
+
+The **area under the curve** (AUC, also called the c-statistic) summarises discrimination across all thresholds. It equals the probability that a randomly chosen person with the condition has a more abnormal test result than a randomly chosen person without it. An AUC of 0.5 means no discrimination; 1.0 means perfect discrimination.
+
+The **Youden index**, $J = \text{sensitivity} + \text{specificity} - 1$, is one way to pick a threshold: the point on the curve furthest above the diagonal.
+:::
+
+The slope of the ROC curve at any point equals the likelihood ratio for a result at that threshold, which links the curve back to Bayes' theorem.
+
+::: example Choosing a threshold {#ex-threshold}
+An illustrative biomarker for a serious bacterial infection in febrile children has the following accuracy at four thresholds:
+
+| Threshold | Sensitivity | Specificity | Youden $J$ |
+|---|---|---|---|
+| 10 | 0.98 | 0.40 | 0.38 |
+| 20 | 0.92 | 0.70 | 0.62 |
+| 30 | 0.80 | 0.85 | 0.65 |
+| 40 | 0.60 | 0.95 | 0.55 |
+
+Which threshold should be used?
+::: solution
+The Youden index is highest at 30. But the Youden index weights a false negative and a false positive equally, and they are not equal here. Missing a serious bacterial infection in a child can be fatal; a false positive leads to further tests and perhaps a short course of antibiotics.
+
+If the test is used to decide which children can safely go home, a low threshold of 10 or 20 makes sense, because sensitivity matters most: at 10, only 2% of infections are missed, and the negative likelihood ratio is $0.02/0.40 = 0.05$. If the test were used to select children for an invasive procedure, a higher threshold would be appropriate.
+
+The right threshold depends on the consequences of each kind of error and on the prevalence in the population tested, not on a single statistic.
+:::
+:::
+
+## When is a test worth doing? {#thresholds}
+
+A test is useful only if it can change what happens to the patient. Pauker and Kassirer described this in 1980 with two thresholds. Below the **test threshold**, the probability of disease is so low that no plausible result would justify treatment, so the test should not be done. Above the **treatment threshold**, the probability is so high that treatment should start whatever the result. Testing is worthwhile between the two, where a result can move the probability across the line at which treatment becomes the better choice.
+
+This explains why testing low-risk people often does harm. In a population where the condition is very rare, most positive results are false, and each one can lead to further investigations, anxiety and sometimes harmful treatment. It also explains why a test that is excellent in a specialist clinic can be unhelpful in general practice.
+
+## How test accuracy studies go wrong {#study-bias}
+
+Accuracy figures are only as good as the study that produced them. Common biases are:
+
+- **Spectrum bias.** Comparing clearly diseased patients with healthy volunteers, a "diagnostic case-control" design, inflates both sensitivity and specificity. The test should be evaluated in a consecutive series of patients in whom the diagnosis is genuinely in doubt.
+- **Partial verification bias.** If only patients with positive test results receive the reference standard, false negatives are rarely found, so sensitivity is overestimated and specificity underestimated.
+- **Differential verification bias.** If positive and negative patients receive different reference standards (say, biopsy for positives and clinical follow-up for negatives), the reference standards may disagree with each other.
+- **Incorporation bias.** If the test result is part of the reference standard, agreement is inflated.
+- **Review bias.** If the person interpreting the test knows the reference standard result, or the reverse, interpretation can be influenced. Blinded interpretation prevents it.
+- **Imperfect reference standard.** If the reference standard itself makes errors, a new test that is better than the reference can appear worse.
+
+Diagnostic accuracy studies should be reported following **STARD** (Standards for Reporting of Diagnostic Accuracy Studies; the current version is STARD 2015). Systematic reviews of test accuracy assess the risk of bias in primary studies using **QUADAS-2** (2011).
+
+Finally, accuracy is not the same as benefit. A more accurate test helps patients only if it leads to better decisions and those decisions lead to better outcomes. The strongest evidence that a test is worth using comes from randomised trials comparing testing strategies, which measure patient outcomes rather than accuracy.
 
 ::: quiz
-A test's positive predictive value depends on:
-- [ ] Only sensitivity and specificity
-- [x] Sensitivity, specificity and the prevalence of disease in the tested population
-- [ ] Only prevalence
-- [ ] The reference standard's sample size
+A new rapid test for an infection has sensitivity 98% and specificity 98%. It is offered to everyone attending a festival, where the prevalence of the infection is about 0.1%. Which statement is correct?
+- [ ] A positive result means the person almost certainly has the infection.
+- [x] Most positive results will be false positives.
+- [ ] The test's sensitivity will be much lower at the festival.
+- [ ] The negative predictive value will be low.
 ::: solution
-**Predictive values are test-in-population quantities (Bayes again): the same test is more accurate where disease is common - the reason operating theatres' and primary care's results differ - [[#def-measures]].**
+In 100,000 people, about 100 are infected and 98 test positive. Of the 99,900 uninfected, 2% (1,998) also test positive. The PPV is $98/(98 + 1{,}998) = 4.7\%$, so about 95% of positives are false. The NPV is very high, because almost everyone is uninfected. Sensitivity and specificity have not changed; what changed is the pre-test probability. A positive result needs confirmation with a different test.
 :::
 :::
 
-::: widget plot
-f: 100*(0.95*x/(0.95*x+0.05*(1-x))); 100; 0; 1; 60
-x: 0, 1
-y: 0, 100
-labels: \text{prevalence},\ \text{positive predictive value};\\ \text{test with 95\%\ sens, 95\%\ spec};\\ \text{half of positives false near prevalence } 5\%;\\ \text{screening territory: mostly false positives}
-caption: One test, many accuracies: positive predictive value as a function of prevalence (sens 95 percent, spec 95 percent) - the curve every test-ordering decision sits on ([[#def-measures]]).
+::: history
+The words *sensitivity* and *specificity* were introduced into medical statistics by Jacob Yerushalmy in 1947, in work on how consistently radiologists read chest films for tuberculosis. The mathematics was much older: Thomas Bayes's essay on inverse probability was published after his death, in 1763, by his friend Richard Price.
+
+In 1959 Robert Ledley and Lee Lusted argued in *Science* that medical diagnosis could be described in terms of probability and Bayes' theorem, and ROC analysis, developed for radar signal detection, was soon applied to medical imaging. In 1975 Terrence Fagan published his nomogram for converting pre-test to post-test probability with a likelihood ratio. In 1980 Stephen Pauker and Jerome Kassirer described the test and treatment thresholds, giving clinicians a way to decide whether a test was worth doing at all. The methods were brought to the bedside in the 1980s and 1990s by the clinical epidemiologists at McMaster University, including David Sackett, whose teaching made the likelihood ratio a routine tool of evidence-based medicine.
 :::
 
 ## Where this leads
 
-Screening's population version is [[public-health/screening]]; prediction rules and their validation appear in [[clinical-skills/clinical-reasoning]]; the imaging modalities' operating characteristics in [[clinical-skills/medical-imaging]]; laboratory medicine's analytic validity in [[clinical-skills/laboratory-tests]]; and the decision-analysis tools in [[epidemiology-ebm/statistics-for-clinicians]].
-
-::: history
-**Diagnostic-test logic has a triple genealogy. The clinical-semiology tradition (Corvisart's percussion, Laennec's stethoscope and the sign-to-disease inference chains of nineteenth-century hospitals) made bedside findings into probabilistic evidence before anyone wrote the fractions (the 'physical-diagnosis-renaissance' of the 1960s-80s - Feinstein and Sackett's diagnostic-manifesto era - turned the physical examination into measured likelihood ratios: the 'rhonchi-versus-wheezes-interobserver' studies, the cirrhosis-physical-signs papers whose numbers still teach). The laboratory era began with the receiver-operating-characteristic transfer from radar (the Greenwald-and-Swets detection-theory migration of the 1950s-60s), the screening-programme epidemiology of the same decades (the 'natural-history-of-treatment-era-disease' concept from the lung-screening failures, lead-time and length bias's clinical birth in the 1970s tuberculosis-and-breast debates), and the troponin-and-immunoassay-era threshold arguments. Bayes re-entered clinical medicine through the 1970s-80s clinical-epidemiology schools (the Casscells-Greinstein-Pauker-and-Pauker 'post-test-probability-nomogram' of the '80s, the 'predictive-value-idiosyncrasy' debates - Schulman and the 'the-epidemiology-of-testing' paper that told clinicians to abandon predictive-value talk - and the failure of that teaching programme, still instructive). Evidence-based-medicine's diagnostic-product (the Rational Clinical Examination series from 1993, the JAMA-users'-guides-to-the-medical-literature diagnostic reviews, the STARD reporting initiative of 2003 and its 2015 revision) standardised appraisal; the prediction-model boom (Framingham-through-QRISK-to-the-'machine-learning-diagnostics-2018-2023-era' of external-validation audits - the 'many-external-validations-none-above-chance' verdicts and the PROBAT-and-AHA-and-NICE-adjacent implementation lessons) supplied modern cautionary tales at scale. The frontier is the one this chapter's endpoint demands: randomised trials of testing strategies (the 'test-then-treat' designs of chest-pain and anticoagulation-rule-out programmes) and the de-implementation literature's finding that most diagnostic overuse (daily bloods, surveillance imaging, tumour-marker checks without action thresholds) survives on habit rather than evidence, which makes test-ordering, like screening itself, a behavioural-public-health problem with a stethoscope.** - [[clinical-skills/clinical-reasoning]], [[public-health/screening]].**
-:::
+Screening adds further problems of lead time, length time and overdiagnosis, discussed in [[epidemiology-ebm/bias-confounding]]. Appraising a diagnostic accuracy paper is covered in [[epidemiology-ebm/critical-appraisal]], and pooling accuracy studies in [[epidemiology-ebm/systematic-reviews]].
 
 ::: summary
-- A test is evidence, not verdict: sensitivity and specificity are the test's properties; predictive values - what clinicians quote - are properties of the test in a population, and likelihood ratios with honest pre-test probability are how the two connect.
-- Thresholds are decisions wearing measurement's clothes: sensitivity-specificity trade along the cut-point, and cut-point choice imports prevalence, harm and cost, which is why 'the' operating characteristics of continuous tests are a curve, not a pair.
-- AUC summarises discrimination while hiding utility: read the operating region clinicians will use, prefer partial-area and net-benefit displays, and treat cross-study AUC duels as reference-standard contests.
-- Test evaluations stand or fall on reference standards and verification design: incorporation, work-up and imperfect-reference biases corrupt results at foundations most papers never inspect.
-- The validity ladder (analytic, clinical, utility) explains why accurate tests often change nothing; randomised evidence belongs at the strategy level, and the ordering question is always 'will this change management?'.
-- Diagnostic cascades (incidentalomas, false-positive tails, testing-the-untestable-prevalence) are the harms chapter of laboratory medicine; test ordering is a clinical decision with population-scale consequences.
-:::
-
-## Exercises
-::: example The AI triage that validated poorly {#ex-ai}
-A deep-learning chest-x-ray triage tool reports area under the curve 0.97 on its development data; the deploying trust plans to cut overnight reporting. External validation at three hospitals yields 0.83, worse on nights, portable films and minority skin-tone-adjacent input variations.
-::: solution
-**From-AUC-to-auditing ([[#def-roc]], [[#def-reference]], [[clinical-skills/medical-imaging]]): the decline's usual names: spectrum bias (development data enriched for obvious disease and clean acquisition - the 'enriched-prevalence-and-equipment-homogeneity' inflation), label leakage or weak reference standards (the training labels' own noise correlated with imaging protocol), overfitting-with-optimism (internal validation reusing the same distributions - the external-validation literature's 'same-hospital-same-shuffle' critique), and deployment shift (portable films, positioning, population mix). The appraisal standards the procurement should have enforced: TRIPOD-plus-AI reporting, independent-and-multisite external validation with the intended population and devices, calibration as well as discrimination (the operating point's predicted-versus-observed risk - a 0.97-AUC model can still be useless at the chosen threshold), subgroup performance by acquisition type and demographic strata with confidence intervals, and the decision-curve or net-benefit analysis at plausible thresholds. The clinical-governance reality: an overnight-triage deployment changes the human-in-the-loop's pre-test probabilities and liability surface, so prospective silent-trial evaluation (shadow mode measuring concordance and miss-patterns before any workflow change), the 'AI-suggests-radiologist-decides-versus-AI-prioritises-queue' distinction with its different error profiles, and post-market surveillance with pre-specified drift alarms. The equity dimension the validation surfaced: performance gaps across acquisition conditions map onto who gets portable films and night cover - the bias-confounding chapter's population-structure lesson in silicon. The go-decision: not the headline AUC but the subgroup calibration-plus-net-benefit-plus-shadow-mode-triad, with the cut to overnight automation contingent on all three in the deployment's own data.**
-:::
-:::
-
-::: example The tumour-marker follow-up {#ex-marker}
-A follow-up protocol orders CA-125 every three months after apparently cured ovarian cancer; over five years the cohort shows 'earlier recurrence detection' but no survival gain, and a rising cholecystectomy-for-benign-disease rate. Review the protocol.
-::: solution
-**Monitoring-is-a-testing-strategy ([[#def-reference]], [[#def-measures]], [[obstetrics-gynaecology/gynaecological-cancer]]): the evidence levels: analytic validity (the assay is fine), clinical validity (CA-125 rises before symptoms in most recurrences - true), clinical utility (the randomised trial that compared intensive-marker-and-imaging follow-up with symptom-focused follow-up in ovarian cancer found no survival advantage and more toxicity from early salvage's treatment of asymptomatic recurrence - the 'monitoring-trials-are-rarer-than-monitored-conditions' problem, and the same logic as the tumour-marker surveillance literature's Cochrane verdicts). The protocol's arithmetic: rising PSA-and-CA-125-class markers' predictive value for actionable recurrence versus the treatment-threshold structure (if earlier treatment of asymptomatic recurrence does not improve survival or quality of life, earlier knowing is earlier anxiety plus its cascades - the cholecystectomy-for-surgical-candidates-with-benign-disease detail is the cascade made visible). The review's outputs: align follow-up intervals with the survival-curve's hazard period (the recurrence-risk-timeline evidence), reserve imaging-and-second-line-preparation for symptomatic-or-protocol-defined-confirmation, define the marker's action threshold before ordering it (the 'never-order-a-test-without-a-plan-for-each-result' rule), offer symptom-recurrence-education with equal rigour (the trials' non-inferior arm deserves informed choice), and audit the protocol's harms dashboard (biopsies, resections, scan-incidentalomas, and the anxiety measures the quality-of-life literature now takes seriously). The governance line: surveillance protocols outlive their evidence by decades; this one should be closed with the trial data attached, not continued because closing it feels like withdrawing care.**
-:::
+- Test accuracy is measured against a reference standard in a 2×2 table of true and false positives and negatives.
+- **Sensitivity** is the proportion of people with the condition who test positive; **specificity** is the proportion without it who test negative. They vary with the spectrum of disease.
+- **Predictive values** answer the clinical question but depend strongly on prevalence: at low prevalence even a good test gives mostly false positives.
+- **Likelihood ratios** ($LR^+ = $ sens$/(1-$spec$)$, $LR^- = (1-$sens$)/$spec) combine with pre-test odds by multiplication: post-test odds = pre-test odds × LR. Multilevel likelihood ratios keep the information in graded results.
+- SnNout and SpPin are rough guides; whether a test rules in or out depends on the pre-test probability.
+- Series testing raises specificity; parallel testing raises sensitivity. Independence is often assumed but not true.
+- ROC curves show the trade-off across thresholds; the AUC summarises discrimination; the best threshold depends on the costs of each error.
+- Accuracy studies are biased by unrepresentative spectrum, partial or differential verification, incorporation and unblinded reading. STARD guides reporting; QUADAS-2 assesses bias.
 :::
 
 ## Exercises
 
-::: exercise Compute the consequences {level=1}
-A test has sensitivity 90 percent, specificity 90 percent. In populations of 1,000 tested, compute positive predictive value and the false-positive-to-true-positive ratio at prevalence 1 percent, 10 percent and 50 percent, and state one real clinical setting for each prevalence.
+::: exercise Sensitivity {level=1 check="90"}
+A study of 1,000 patients finds 72 true positives, 8 false negatives, 45 false positives and 875 true negatives. Calculate the sensitivity as a percentage.
 ::: solution
-**Prevalence-walk ([[#def-measures]]): At 1 percent: 10 true positives (9 detected) plus 99 false positives (the 990 healthy times 10 percent) - PPV 8.3 percent, ten false positives for every true one: the low-prevalence screening-and-incidentaloma territory (general-population aneurysm and thyroid-cancer-type screening's classic arithmetic). At 10 percent: 90 true positives (81 detected) plus 81 false positives - PPV 50 percent, the coin-flip zone of many secondary-care referrals (the 'test-ordered-in-a-10-percent-clinic' class where half of positives are noise). At 50 percent: 450 true positives (405 detected) plus 225 false positives - PPV 64 percent, the pre-selected high-risk setting (symptomatic cohorts, tertiary-centre prevalence) where even here a positive is far from certainty - the lesson that no amount of assay improvement fixes a bad pre-test probability as cheaply as a better referral filter. The teaching add-on: the same test's negative predictive value stays comforting everywhere (above 98 percent even at 50 percent prevalence) - which is why the rule-out ambitions this chapter mocks often work, and the rule-in ones fail.**
+Sensitivity $= 72/(72 + 8) = 72/80 = 0.90$, or 90%. (Specificity is $875/920 = 95.1\%$.)
 :::
 :::
 
-::: exercise Fix the study {level=2}
-A new urinary antigen test is evaluated in 200 confirmed cases (all culture-positive pneumonia) and 200 healthy blood-donor controls, yielding sensitivity 95, specificity 97. List the design flaws and rebuild the evaluation to produce numbers a clinician could use.
+::: exercise Positive predictive value {level=1 check="61.5"}
+Using the same study (72 true positives, 45 false positives), calculate the positive predictive value as a percentage to 1 decimal place.
 ::: solution
-**Two-grocers-not-a-spectrum ([[#def-reference]], [[#def-roc]]): the flaws: extreme-case (two-grocers) design inflates both measures (the cases are the most severe culture-positive fraction; the controls are healthier than any differential-diagnosis population - the 'spectrum-effect' that makes such numbers vanish at the bedside); no consecutive accrual or clinical-suspicion framing (the population the test serves is undifferentiated respiratory presentations); blood-donor controls miss the confounders that share antigenicity or inflammation; no verification of test-negatives (the culture-negative pneumonias that the reference standard itself misses - verification bias with the imperfect reference, since culture is the gold standard that is gold-plated: sensitivity far from 1). The rebuild: consecutive adults presenting with suspected community-acquired pneumonia across primary, secondary and intensive-care strata; composite reference standard with blinded adjudication (clinical, microbiological and radiological follow-up at 30 days, with the adjudication panel masked to the new test); the full spectrum including the mimics (heart failure, bronchitic exacerbations, the 'test-positive-other-diagnoses' classes); prespecified thresholds and the ROC with partial-area reporting; subgroup operating characteristics by severity, age and prior antibiotics (the biological-gradient literature); and reporting per STARD with the flow diagram of who received which reference fate. The clinician's-useful output: likelihood ratios by result band stratified by care setting, and the numbers plugged into a decision-curve or treatment-threshold analysis for the local pulmonology prevalence.**
+$PPV = 72/(72 + 45) = 72/117 = 0.6154$, or 61.5%. This applies only to populations with the same prevalence as the study, here $80/1{,}000 = 8\%$.
 :::
 :::
 
-::: exercise Combine the tests {level=2}
-For suspected endocarditis, blood cultures (sensitivity 0.85, specificity 0.99) and echocardiography are used; a colleague proposes 'both positive = definite, either positive = probable'. Evaluate the series-versus-parallel arithmetic and its conditional-independence assumption.
+::: exercise A likelihood ratio {level=1 check="18"}
+A test has sensitivity 90% and specificity 95%. What is its positive likelihood ratio?
 ::: solution
-**Series-and-parallel-with-caveats ([[#def-measures]]): the algebra: parallel testing (any positive) raises sensitivity and lowers specificity (0.85 plus the echo's contribution against cultures' misses - useful when missing endocarditis is catastrophic); series testing (both positive) raises specificity and lowers sensitivity (the rule-in strategy for high-stakes treatment decisions). The stated rule is a hybrid: 'both-positive' as a series rule-in (definite) and 'either-positive' as a parallel rule-out (probable triggers workup) - clinically sensible as a management lattice if the operating points match local prevalence and the consequences of each tier. The independence trap: the likelihood-ratio-multiplication used to combine tests is valid only if, given disease status, the tests' errors are uncorrelated; cultures and echocardiographic findings share determinants (prior antibiotics depress both; small vegetations and negative cultures co-occur; prosthetic valves distort both) - so the naive combined sensitivity and specificity are optimistic, and the empirical joint distribution from paired data (the '2x2x2-of-the-two-tests-versus-final-diagnosis' table the modified-Duke-work-era papers publish) must replace multiplication. The clinical-epidemiology addition: the Duke criteria themselves as a Bayesian evidence-combination instrument (major and minor criteria as likelihood-ratio-weighted findings with empirical validation against pathology), which is what 'combining tests' looks like when it is done properly: not algebra, but a validated scoring system whose joint behaviour was measured.**
+$LR^+ = 0.90/(1 - 0.95) = 0.90/0.05 = 18$.
 :::
 :::
 
-::: exercise Choose the threshold {level=2}
-Troponin thresholds: the 99th-percentile upper reference limit versus high-sensitivity assays with sex-specific and age-adjusted cut-points versus delta-change algorithms. Frame the decision using this chapter's threshold machinery and name the costs each choice pays.
+::: exercise Post-test probability {level=2 check="81.8"}
+A patient's pre-test probability is 20%. A test with $LR^+ = 18$ is positive. What is the post-test probability, as a percentage to 1 decimal place?
 ::: solution
-**Thresholds-are-triage-policies ([[#def-measures]], [[#def-roc]]): the axes: lowering the decision threshold raises sensitivity (fewer missed myocardial-injuries) at specificity's cost (more type-2-injury-and-chronic-kidney-and-myocarditis-and-pe-candidate positives - the false-positive tail lands in monitored-bed and angiography currency); the 99th-percentile convention is a statistical artefact with clinical consequences (the '1-percent-of-healthy-have-above-it-by-construction' problem), and sex-specific thresholds correct the male-biased reference that under-diagnosed women (the equity-of-cut-points literature's strongest finding). The delta-change and algorithmic strategies (0/1-or-0/2-hour-rise-and-fall rules) buy specificity back by demanding kinetic injury rather than a level above a threshold - the serial-measurement design that also cuts chest-pain-unit stays (the pathway-trial evidence). The costs named per choice: missed-injury-harm, downstream-angio-and-admission-load, the chronic-elevation-population's psychological and economic drag, and the 'myocardial-injury-is-not-infarction' semantic-education bill. The framing: the threshold is where the care pathway's capacities set the operating point - high-sensitivity-assays-plus-pathways-plus-clinician-estimates-beat-any-single-number, which is why every guideline now publishes algorithms rather than cut-offs; and the appraisal test for any new-threshold-paper: the operating characteristics of the whole algorithm, prospective, with 30-day-MACE-endpoints, not the assay's standalone ROC.**
+Pre-test odds $= 0.2/0.8 = 0.25$. Post-test odds $= 0.25 \times 18 = 4.5$. Probability $= 4.5/5.5 = 0.818$, or 81.8%.
 :::
 :::
 
-::: exercise Audit the screening test-up {level=2}
-Your occupational-health service screens 2,000 asymptomatic warehouse staff with a resting 12-lead ECG for 'cardiac fitness'; sensitivity for coronary disease about 50 percent, specificity 90 percent. Project the cascade and write the abolition memo.
+::: exercise Screening at low prevalence {level=2 check="19.9"}
+A screening test has sensitivity 99% and specificity 98%. The prevalence of the condition in the screened population is 0.5%. Calculate the positive predictive value as a percentage to 1 decimal place.
+::: hint
+Work with 100,000 people, or use $PPV = \dfrac{\text{sens} \times p}{\text{sens} \times p + (1-\text{spec})(1-p)}$.
+:::
 ::: solution
-**Screening-asymptomatic-low-risk ([[#def-measures]], [[#def-reference]], [[public-health/screening]]): the arithmetic at a working-age prevalence near 2 percent: 40 real cases (20 detected) and 196 false positives - ten false alarms per true finding, each launching the ECG-interpretation-drift cascade (repeat tracings, exercise tests with their own false-positive tails, CT angiography and catheterisations with rare real harm, work restrictions, insurance and anxiety effects - the occupational-medicine literature's 'unfit-for-duty-with-normal-hearts' cohort). The chapter's verdict criteria: no evidence that screening asymptomatic low-risk adults improves outcomes (the US-preventive-services-task-force never-recommendation class), no action threshold that the result changes before symptoms would, and a false-positive rate that guarantees net harm at this prevalence. The memo's structure: the numbers above (in workers-per-1,000 language the union and management both read), the guideline citations, the harm-pathway projection, the cost per detected-and-then-treated-true-case (the six-figure-per-QALY class of arithmetic that ends these programmes), and the alternative: cardiovascular-risk-factor screening with proven pathways (blood pressure, lipids per age-and-risk rules, smoking, diabetes) plus the symptom-reporting route protected from stigma. The politics: the ECG felt responsible; the audit shows it was theatre with a catheterisation tail; the replacement protocol keeps the job duties and drops the trace.**
+In 100,000 people, 500 have the condition and 495 test positive. Of 99,500 without it, 2% (1,990) test positive. $PPV = 495/(495 + 1{,}990) = 495/2{,}485 = 0.199$, or 19.9%. Four out of five positive results are false, despite the excellent test.
 :::
 :::
 
-::: exercise Design the strategy trial {level=3}
-Design the randomised trial proving that a new rapid sepsis biomarker improves outcomes when added to standard assessment in emergency departments. Specify participants, intervention, comparator, endpoints, the process-outcome layer and the analysis pitfalls unique to testing-strategy trials.
+::: exercise Tests in parallel {level=2 check="94"}
+Two independent tests have sensitivities of 80% and 70% and specificities of 90% and 95%. They are used in parallel, so a patient is called positive if either test is positive. What is the combined sensitivity, as a percentage? What is the combined specificity?
 ::: solution
-**Testing-strategy-trial-design ([[#def-reference]], [[#def-roc]], [[infectious-diseases/fever-sepsis]]): participants: consecutive adults with suspected sepsis across departments (the pragmatic enrolment that keeps the spectrum honest); intervention: biomarker result returned before the treatment decision with a protocol anchor (the 'test-plus-clinical-assessment-versus-clinical-assessment-with-test-withheld-from-decision'-design); comparator: standard care with the assay measured-but-hidden (the 'measurement-only-control' that separates test effects from trial-effect Hawthorne). Endpoints: the time-to-antibiotics-and-ICU-and-death ladder (process first: door-to-needle and blood-culture-before-antibiotic rates; then organ-failure-free-days; mortality underpowered unless enormous - the sample-size honesty that strategy trials publish up front). The pitfalls that make these trials hard: the treatment-threshold interaction (a test only helps where uncertainty exceeds the treatment threshold's width - the stratification by clinical-certainty strata), co-intervention drift (the control arm learning from the trial's sepsis-bundle enthusiasm - the 'background-improvement' that buries effects), antibiotic-side-effects (the over-treatment tail: resistance and Clostridioides-difficile counted as harms or the trial is advocacy), adherence (clinicians ignoring the test in both arms - the 'test-utilisation-as-a-mediator' analysis), and the verification-of-outcomes-by-protocol-not-by-test (the reference-standard-independence the chapter's foundations demand). The analysis: intention-to-treat on the strategy, pre-specified subgroup-by-certainty, the cost-effectiveness alongside (test price per avoided-ICU-day - the payer's endpoint), and the reporting per the testing-strategies-extension checklists. The closing design sentence: a test that changes management in 3 percent of patients must show benefit larger than that 3 percent's uncertainty interval can hide, which is why most sepsis-biomarker trials measure hope rather than help.**
-:::
-:::
-::: exercise Explain likelihood ratios {level=1}
-A medical student asks why likelihood ratios are 'better' than predictive values and why nobody uses them. Give the ten-line explanation with one worked number and the behavioural obstacle named honestly.
-::: solution
-**Ratios-versus-habits ([[#def-measures]]): the explanation: a likelihood ratio converts pre-test odds to post-test odds at any prevalence (the odds-multiplier property), so the test's information content is separated from the patient's context - predictive values fuse the two and therefore mislead when moved between clinics; worked number: a positive result with likelihood-ratio-positive 8 on a 10-percent pre-test probability (odds 0.11) gives post-test odds 0.89 - about 47 percent - the clinician then asks the only remaining question: does 47 percent change what I do? The obstacle named: odds are cognitively foreign (the nomogram-and-percent-probability teaching studies show people reason in percentages, so the field teaches 'probability bars' and Firth-style nomograms), guidelines bury likelihood ratios in tables, and electronic ordering systems display reference ranges instead of consequences. The honest addendum: the evidence that likelihood-ratio teaching changes prescribing behaviour is modest - the calculation is easy and the habit is not, which is why the chapter keeps returning to pre-test probability as the moral centre of test-ordering.**
+Combined sensitivity $= 1 - (1 - 0.8)(1 - 0.7) = 1 - 0.2 \times 0.3 = 0.94$, or 94%. Combined specificity $= 0.90 \times 0.95 = 0.855$, or 85.5%. Parallel testing catches more cases at the cost of more false positives.
 :::
 :::
 
-::: exercise Appraise the comparison paper {level=2}
-A paper claims test A beats test B: AUC 0.91 versus 0.84, p less than 0.001, but A is new digital tomosynthesis in young women while B is older film mammography in an older cohort, both single-centre. Write your peer-review paragraph.
+::: exercise When a negative test is not enough {level=2 check="13.0"}
+A patient with classic symptoms has a pre-test probability of 60% for a condition. A test with $LR^- = 0.1$ is negative. What is the post-test probability, as a percentage to 1 decimal place? Should the condition be considered excluded?
 ::: solution
-**Comparison-integrity-review ([[#def-roc]]): the review should make four moves: name the design fault first (unpaired populations with different age-and-risk-structure and different equipment-generations confound modality with cohort and era - the comparison answers 'A in these women versus B in those women in 2004', and AUC's prevalence-sensitivity means the younger lower-prevalence cohort may favour the worse test - the 'AUC-paradox-and-enriched-samples' literature), demand the paired-design remedy (historical-reader or crossover-implicit-stimulation designs with both modalities read on the same women, DeLong-or-bootstrap paired comparison), interrogate the operating region (partial-AUC-or-sensitivity-at-fixed-specificity in the screening-relevant 90-plus-percent range - the whole-area advantage may live where no clinical decision occurs), and question the endpoint (cancer-detection-rates-adjacent-outputs-versus-interval-cancers-and-recall-and-biopsy-rates-and-ultimate-mortality-outcomes-that-screening-trials-measure). Constructive asks: external validation on the older-film cohort's successor population, cost-and-throughput reporting, and the net-benefit-or- decision-curve display the journal's prediction-model guidelines already require. The tone: the modality may genuinely be better; the comparison as designed cannot demonstrate it, and mammographic history (the digital-versus-film-substitution trials) shows exactly this style of claim failing prospective audit.**
+Pre-test odds $= 0.6/0.4 = 1.5$. Post-test odds $= 1.5 \times 0.1 = 0.15$. Probability $= 0.15/1.15 = 0.130$, or 13.0%. A one-in-eight chance of a serious condition is not an exclusion. When clinical suspicion is high, a negative result from a good test lowers the probability but often not far enough, and further investigation is needed.
 :::
 :::
 
-::: exercise Solve the false-positive crisis {level=3}
-Your newborn screening programme's new mass-spectrometry panel has per-condition sensitivity 95, specificity 99.9, screening 500,000 infants annually across 30 conditions; the confirmed-disease yield is 400 infants but families of 1,500 receive abnormal-result letters. Design the programme's response across communication, confirmation pathways, data governance and the ethics of condition selection.
+::: exercise Partial verification {level=3 check="97.6"}
+A new test is evaluated in 1,000 patients, of whom 100 truly have the condition. The test's true sensitivity is 80% and true specificity 90%. All patients who test positive receive the reference standard, but only a random 10% of those who test negative do. If the investigators calculate sensitivity using only the verified patients, what value will they report, as a percentage to 1 decimal place?
+::: hint
+First fill in the full 2×2 table. Then keep all positives and 10% of negatives.
+:::
 ::: solution
-**Screening-at-scale-ethics ([[#def-measures]], [[#def-reference]], [[paediatrics/newborn]], [[medical-ethics-law/justice-resources]]): the arithmetic stated publicly: even 99.9-percent-specificity generates 500-plus false alarms per 500,000 tested before the second-tier-test layer; the observed 1,500 letters-per-400-cases reflects condition-multiplication and the treat-with-suspicion protocols whose thresholds are deliberately low - the programme's job is to make that trade visible, not to pretend it away. Communication: the abnormal-result letter's design evidence (parents read 'abnormal' as 'affected'; the second-letter-versus-phone-call-and-named-nurse pathways that reduce harm), the equity-and-interpretation requirements (language services, literacy-appropriate materials, the 'what-comes-next-in-days' timeline), and the parental-trust data showing candour about false positives preserves uptake while reassurance-by-omission destroys it. Confirmation pathways: the same-day-second-tier-testing-and-urgent-contact structures (the turnaround-time-as-clinical-harm metric), the metabolic-team capacity matched to the false-positive tail (not to the confirmed-case count - the resourcing error most expansion proposals repeat), and the results-return governance so no family is suspended between laboratories. Data governance: the saved-blood-spot-research-use rules (the consent-models controversy, the 'identifiable-versus-coded-versus-anonymised' tiers, the retention-limit politics and the surveillance-versus-benefit argument), the equity audits of residual-risk-by-ethnicity in condition-detection, and the publication of programme-level operating characteristics including the false-alarm burden. Condition-selection ethics: the Wilson-Jungner-and-continuing-justification criteria applied honestly (treatment availability and effectiveness thresholds, the mild-phenotype-and-overdiagnosis problems the expanded-panel literature debates, the 'whose-condition-gets-the-panel-slot-and-who-advocates' political economy), with disability-community testimony as a standing agenda item rather than a comment box. The programme's report card: cases found, alarms survived, time-to-answer, uptake-equity, and the families' own survey - the last as a board-reported metric, because a screening programme optimised on detection alone is an argumentative essay, not a service.**
+Full table: 80 TP, 20 FN, 90 FP, 810 TN. All 170 positives are verified. Of the 830 negatives, 10% are verified: 2 FN and 81 TN.
+
+Reported sensitivity $= 80/(80 + 2) = 0.976$, or 97.6%, instead of the true 80%. Reported specificity $= 81/(81 + 90) = 47.4\%$, instead of 90%. Partial verification inflates sensitivity and deflates specificity. The correction is to verify a random sample of negatives and weight them back up, or better, to apply the reference standard to everyone.
+:::
+:::
+
+::: exercise A new test in a new setting {level=3}
+A company reports that its blood test for colorectal cancer has sensitivity 95% and specificity 97%, based on 200 patients with known advanced cancer and 200 healthy blood donors. A general practitioner asks whether to use it in patients with vague abdominal symptoms. Advise them.
+::: solution
+The study used a **diagnostic case-control** design: people with obvious, advanced disease against healthy volunteers. This maximises the apparent accuracy. Advanced cancers are easier to detect than early ones, so sensitivity in symptomatic primary care patients, many of whom would have earlier cancers, is likely to be lower. Healthy donors lack the conditions that cause false positives, such as inflammatory bowel disease or other cancers, so specificity in real patients is likely to be lower too.
+
+Even taking the figures at face value, the prevalence of colorectal cancer among patients with vague symptoms in primary care is low, perhaps a few per cent. At 2% prevalence, PPV $= 0.95 \times 0.02/(0.95 \times 0.02 + 0.03 \times 0.98) = 39\%$, so most positives would still be false.
+
+Before adoption, the test should be evaluated in a consecutive series of symptomatic primary care patients, with everyone receiving an appropriate reference standard (colonoscopy, or follow-up for those not investigated), interpreted blind, and reported to STARD. It should then be compared with existing approaches, such as faecal immunochemical testing, which NICE recommends to guide referral for suspected colorectal cancer in primary care. Ideally, its effect on patient outcomes should be studied, not just its accuracy.
 :::
 :::

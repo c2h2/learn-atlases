@@ -6,22 +6,23 @@
   "level": 2,
   "order": 190,
   "tagline": "Measuring disease, study designs, bias and confounding, trials, diagnostic tests and appraising evidence",
-  "summary": "Good medicine rests on good evidence. This course covers how disease frequency and risk are measured, observational and experimental study designs, bias, confounding and causation, the evaluation of diagnostic tests, randomised trials and the statistics clinicians need, systematic reviews and meta-analysis, and how to appraise evidence and use guidelines.",
+  "summary": "Good medicine rests on good evidence. This course covers how disease frequency and association are measured, observational study designs, bias, confounding and causal inference, the evaluation of diagnostic tests, randomised trials and the statistics clinicians need to read them, systematic reviews and meta-analysis, and how to appraise evidence, apply it to individual patients and use guidelines.",
   "overview": [
-    "Epidemiology is the physics of disease in populations, and evidence-based medicine is its clinical twin: the discipline of asking a question, choosing the design that can answer it, and reading the result without being deceived. A clinician meets both daily — a trial abstract quoted in clinic, a screening invitation, a new test with a sensitivity in its advertisement — and the difference between practising on evidence and being misled by it is technical, learnable and testable.",
-    "The course builds the measurement layer first: incidence, prevalence, rates and ratios, survival curves and the difference between them. Then study designs — cohort, case-control, cross-sectional, ecological — with their measures of association (risk ratio, odds ratio) and their characteristic biases. Confounding and bias get their own chapter, including the statistics of adjustment. Diagnostic testing is treated as applied Bayes: sensitivity, specificity, likelihood ratios and the prevalence that dominates post-test probability. Randomised trials, their allocation, blinding, power and intention-to-treat analysis, lead into confidence intervals and hypothesis testing; systematic reviews and meta-analysis close the methods; and a final chapter on critical appraisal ties it together with worked appraisals of real study types.",
-    "Every statistical idea appears with a clinical number attached — a number needed to treat, a positive predictive value at two different prevalences, a hazard ratio read off a Kaplan–Meier curve — and with its failure mode: regression to the mean, the baseline-risk fallacy, the odds ratio stretched to imitate the risk ratio, the funnel plot that hides heterogeneity. Interactive figures let you move prevalence, sensitivity and study size and watch the answers change."
+    "Epidemiology studies how disease is distributed in populations and what determines it. Evidence-based medicine applies the same methods to clinical decisions: asking a precise question, finding the study design that can answer it, and reading the result without being misled. Clinicians meet both every day, in a trial result quoted in clinic, a screening invitation, or a new test advertised by its sensitivity. The difference between using evidence well and being misled by it is a set of skills that can be learned.",
+    "The course starts with measurement: prevalence, incidence, mortality and survival, standardisation, and the measures that compare groups. It then covers observational designs (cross-sectional, ecological, cohort and case-control studies), and the biases, confounding and causal reasoning that apply to all of them. Diagnostic testing is treated as applied Bayes' theorem: sensitivity, specificity, predictive values and likelihood ratios. The chapters on randomised trials and on statistics explain allocation, blinding, power, intention to treat, confidence intervals, p-values, the number needed to treat and hazard ratios. Systematic reviews and meta-analysis show how evidence is combined and graded, and the final chapter brings everything together in critical appraisal and the use of guidelines.",
+    "Every idea comes with a worked number: a person-time rate, a positive predictive value at two prevalences, a pooled risk ratio, an NNT for patients with different baseline risks. Each also comes with its typical failure: the ecological fallacy, Simpson's paradox, immortal time, regression to the mean, an odds ratio reported as a risk ratio, a funnel plot with missing studies. Interactive figures let you change prevalence, baseline risk and sample size and see how the answers change."
   ],
   "prerequisites": [],
   "outcomes": [
-    "Define and calculate incidence, prevalence, and the main mortality and survival measures, and choose the right measure for a given question.",
-    "Describe cohort, case-control, cross-sectional and ecological designs, their measures of association (risk ratio, odds ratio, rate ratio), their biases and their proper uses, including the rare-disease logic of the odds ratio.",
-    "Identify sources of selection, information and confounding bias, distinguish confounding from effect modification, and explain how restriction, matching and adjustment deal with each.",
-    "Use sensitivity, specificity, predictive values and likelihood ratios to interpret a diagnostic test, and apply Bayes' reasoning to show why prevalence dominates post-test probability.",
-    "Explain the design of a randomised controlled trial — allocation concealment, blinding, sample size and power, intention-to-treat — and appraise reported trials for these features.",
-    "Interpret confidence intervals, p-values and hazard ratios correctly, and state what each does not mean.",
-    "Explain systematic reviews and meta-analysis: protocol, search, heterogeneity, forest plots, publication bias, and GRADE-style grading of evidence.",
-    "Appraise a research article — question, design, participants, measurement, analysis, conclusions — and summarise its applicability to a clinical decision."
+    "Define and calculate prevalence, risk, incidence rate, mortality measures and standardised rates, and choose the right measure for a question.",
+    "Describe cross-sectional, ecological, cohort and case-control designs, calculate their measures of association, and explain when an odds ratio approximates a risk ratio.",
+    "Recognise selection bias, information bias and confounding, distinguish confounding from effect modification, and explain how design and analysis control them.",
+    "Apply Bradford Hill's viewpoints to judge whether an association is likely to be causal.",
+    "Calculate and interpret sensitivity, specificity, predictive values and likelihood ratios, and use Bayes' theorem to find post-test probabilities.",
+    "Explain randomisation, allocation concealment, blinding, sample size, non-inferiority and intention-to-treat analysis, and recognise their failures in published trials.",
+    "Interpret confidence intervals, p-values, absolute and relative risk reductions, numbers needed to treat and hazard ratios, and state what each does not mean.",
+    "Explain the methods of systematic reviews and meta-analysis, read a forest plot and funnel plot, and grade the certainty of evidence with GRADE.",
+    "Appraise a study for validity, results and applicability, individualise its results using a patient's baseline risk, and judge the trustworthiness of clinical guidelines."
   ],
   "chapters": [
     {
@@ -92,24 +93,32 @@
     {
       "year": 1662,
       "title": "Natural and political observations",
-      "detail": "John Graunt tabulates the London Bills of Mortality, notices regularities — sex ratios, urban excess of deaths, the shape of epidemic years — and invents the statistical study of human populations, including a life table and the first 'political arithmetic'.",
+      "detail": "John Graunt analyses the London Bills of Mortality. He notes that more boys than girls are born, that many deaths occur in early childhood, and that London grows only through migration, founding the statistical study of populations.",
       "people": [
         "John Graunt"
       ]
     },
     {
+      "year": 1747,
+      "title": "Lind's scurvy experiment",
+      "detail": "James Lind, a naval surgeon on HMS Salisbury, gives pairs of sailors with scurvy different remedies. The two given oranges and lemons recover quickly: an early controlled comparison of treatments, though not a randomised one.",
+      "people": [
+        "James Lind"
+      ]
+    },
+    {
       "year": 1854,
       "title": "The Broad Street pump",
-      "detail": "John Snow maps cholera deaths around Soho's Broad Street pump, tests the water company hypothesis by comparing mortality in houses supplied by two companies, and intervenes on the strength of argument while the aetiological agent remains invisible — the founding field study of epidemiology (with William Farr's vital statistics as its necessary companion).",
+      "detail": "John Snow maps cholera deaths around the Broad Street pump in Soho and compares cholera mortality in households supplied by two water companies, one drawing sewage-contaminated water from the Thames. William Farr's vital statistics at the General Register Office supply the denominators.",
       "people": [
         "John Snow",
         "William Farr"
       ]
     },
     {
-      "year": 1898,
-      "title": "Experimental epidemiology",
-      "detail": "The US Army board of Reed, Carroll, Agramonte and Lazear tests Carlos Finlay's mosquito hypothesis in Havana by letting cultured Aedes aegypti bite volunteers — a controlled experiment, carried out with fatal seriousness (Lazear died of the disease he was studying): yellow fever transmission is proved, and Gorgas later clears Havana and the Panama Canal zone.",
+      "year": 1900,
+      "title": "Yellow fever and the mosquito",
+      "detail": "The US Army commission led by Walter Reed, with James Carroll, Aristides Agramonte and Jesse Lazear, tests Carlos Finlay's hypothesis in Cuba and shows that yellow fever is transmitted by the mosquito Aedes aegypti. Lazear dies of the disease during the work.",
       "people": [
         "Walter Reed",
         "James Carroll",
@@ -119,76 +128,96 @@
       ]
     },
     {
-      "year": 1935,
-      "title": "The design of experiments",
-      "detail": "Ronald Fisher's Design of Experiments, built on randomisation and replication argued from agricultural stations, supplies the statistical grammar of the controlled trial: why randomise, how to block, what a null hypothesis is and what a significance level does.",
-      "people": [
-        "Ronald Fisher"
-      ]
-    },
-    {
       "year": 1948,
-      "title": "The first modern randomised trial",
-      "detail": "The Medical Research Council's trial of streptomycin in advanced pulmonary tuberculosis — random allocation by sealed envelopes, prespecified outcomes, and the frank admission that 'no strict comparison was planned' — sets the template, and Austin Bradford Hill becomes the subject's conscience for fifty years.",
+      "title": "The streptomycin trial",
+      "detail": "The Medical Research Council's trial of streptomycin for pulmonary tuberculosis, designed by Austin Bradford Hill, allocates patients by random numbers held centrally in sealed envelopes. It is widely regarded as the first properly randomised clinical trial.",
       "people": [
-        "Austin Bradford Hill",
-        "Medical Research Council"
+        "Austin Bradford Hill"
       ]
     },
     {
       "year": 1950,
       "title": "Smoking and lung cancer",
-      "detail": "Richard Doll and Bradford Hill publish a hospital-based case-control study from London, followed by the British doctors' prospective cohort (1954 onwards); the causal inference, argued against the alternatives of the day with consistency, dose–response and temporality, becomes the model for chronic-disease epidemiology and for public action on an exposure.",
+      "detail": "Richard Doll and Austin Bradford Hill publish a case-control study linking smoking to lung cancer, and in 1951 begin the British Doctors Study, a cohort followed for fifty years. In 1965 Hill sets out his viewpoints for judging causation.",
       "people": [
         "Richard Doll",
         "Austin Bradford Hill"
       ]
     },
     {
-      "year": 1979,
-      "title": "Effectiveness and efficiency",
-      "detail": "Archie Cochrane's short book argues that medicine squanders money on treatments never tested, and that where a treatment's effect is genuinely uncertain, randomisation is not only ethical but obligatory; a 1987 lecture repeats the challenge, and the systematic-review movement that follows takes him as its patron.",
+      "year": 1972,
+      "title": "Effectiveness and Efficiency",
+      "detail": "Archie Cochrane's book argues that health services should use treatments shown by randomised trials to work. In 1979 he criticises the profession for having no organised, regularly updated summary of all relevant randomised trials.",
       "people": [
         "Archie Cochrane"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "Evidence-based medicine",
+      "detail": "The Evidence-Based Medicine Working Group, led from McMaster University by Gordon Guyatt, publishes its manifesto in JAMA, building on the clinical epidemiology of David Sackett and colleagues.",
+      "people": [
+        "Gordon Guyatt",
+        "David Sackett"
       ]
     },
     {
       "year": 1993,
       "title": "The Cochrane Collaboration",
-      "detail": "Following Iain Chalmers's decades of scepticism about unaccumulated trials (including his own obstetric work on antenatal steroids), the Cochrane Collaboration is founded in Oxford to maintain registered, collaborative systematic reviews of healthcare — evidence as a public, continuously updated good.",
+      "detail": "Building on Iain Chalmers's systematic reviews of trials in pregnancy and childbirth, the Cochrane Collaboration is founded to prepare, maintain and disseminate systematic reviews of health care.",
       "people": [
-        "Iain Chalmers",
-        "Archie Cochrane"
+        "Iain Chalmers"
       ]
     },
     {
-      "year": 2018,
-      "title": "Preregistration and replication",
-      "detail": "After a decade of replication failures in psychology and medicine, journals, funders and trial registries move towards prospective registration, published protocols and reporting of all outcomes; the episode teaches epidemiologists' oldest lesson — that unreported analysis is the largest bias in the literature.",
+      "year": 2004,
+      "title": "Trial registration",
+      "detail": "The International Committee of Medical Journal Editors announces that its journals will publish trials only if they were registered before enrolment began, for trials starting recruitment from 1 July 2005, a major step against selective publication.",
       "people": []
     }
   ],
   "references": [
     {
-      "title": "The Epidemiology Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the study and the population.",
-      "slug": "ref1"
-    },
-    {
-      "title": "The Epidemiology Guide",
-      "authors": "Textbook",
+      "title": "Gordis Epidemiology",
+      "authors": "David D. Celentano and Moyses Szklo",
       "year": 2019,
-      "note": "A rigorous treatment of the study and the system.",
-      "slug": "ref2"
+      "note": "Sixth edition. A clear introductory textbook covering measures of disease, study designs, bias, causation, screening and the evaluation of diagnostic tests, with many worked examples."
     },
     {
-      "title": "Clinical Epidemiology",
-      "authors": "Reference",
+      "title": "How to Read a Paper: The Basics of Evidence-Based Healthcare",
+      "authors": "Trisha Greenhalgh",
+      "year": 2019,
+      "note": "Sixth edition. A short, practical guide to appraising trials, diagnostic studies, systematic reviews, guidelines and qualitative research."
+    },
+    {
+      "title": "Evidence-Based Medicine: How to Practice and Teach EBM",
+      "authors": "Sharon E. Straus, Paul Glasziou, W. Scott Richardson and R. Brian Haynes",
       "year": 2018,
-      "note": "A practical treatment of the population and the practice.",
-      "slug": "ref3"
+      "note": "Fifth edition. The standard handbook of the five steps of evidence-based practice, with appraisal guides for therapy, diagnosis, prognosis and harm."
+    },
+    {
+      "title": "Users' Guides to the Medical Literature: A Manual for Evidence-Based Clinical Practice",
+      "authors": "Gordon Guyatt, Drummond Rennie, Maureen O. Meade and Deborah J. Cook (eds)",
+      "year": 2015,
+      "note": "Third edition. The JAMA Evidence guide to reading and applying the medical literature, including the GRADE approach."
+    },
+    {
+      "title": "Essential Medical Statistics",
+      "authors": "Betty R. Kirkwood and Jonathan A. C. Sterne",
+      "year": 2003,
+      "note": "Second edition. A thorough account of the statistics used in medical research, from confidence intervals to regression and survival analysis."
+    },
+    {
+      "title": "Modern Epidemiology",
+      "authors": "Timothy L. Lash, Tyler J. VanderWeele, Sebastien Haneuse and Kenneth J. Rothman",
+      "year": 2021,
+      "note": "Fourth edition. The advanced reference on epidemiological methods, including causal inference, bias analysis and study design."
+    },
+    {
+      "title": "Cochrane Handbook for Systematic Reviews of Interventions",
+      "authors": "Julian P. T. Higgins, James Thomas, Jacqueline Chandler and others (eds)",
+      "year": 2019,
+      "note": "Second edition (version 6), updated online. The reference for review methods, risk of bias (RoB 2), meta-analysis and GRADE."
     }
   ],
   "next": [

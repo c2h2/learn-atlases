@@ -1,142 +1,294 @@
-Statistics is the grammar of clinical evidence: p-values, confidence intervals, hazard ratios and regression coefficients are words whose meanings are settled by the rules in this chapter, and most published misreadings are grammar errors, not arithmetic ones. **This chapter covers inference (sampling variation, standard errors, confidence intervals as the honest estimate-plus-uncertainty format, and p-values with their misreadings and their 2016-2019 reform debate), comparison (the choice of test as a choice of model, the parametric-nonparametric question, and multiple testing's budget), association (correlation, regression - linear and logistic - and survival analysis's censoring and proportional-hazards contract), and decision statistics (absolute risk, number-needed-to-treat, meta-analysis's inverse-variance logic, and the equivalence and non-inferiority arithmetic).**
+A trial abstract reports: "The new treatment reduced stroke (7.5% vs 12.0%; relative risk 0.63, 95% CI 0.40 to 0.97; p = 0.03)." A clinician who reads this needs to know what each of those numbers means, which of them answer the questions a patient will ask, and what none of them can say. This chapter covers the statistical ideas that appear in almost every clinical paper: variability and standard errors, confidence intervals, p-values, absolute and relative effects, the number needed to treat, survival analysis and regression. The aim is not to make you a statistician but to let you read results accurately and explain them honestly.
 
-## Inference
+We use one fictional trial throughout: 800 people at high risk of stroke are randomised, 400 to a new treatment and 400 to standard care. Over 3 years, 30 people in the treatment group and 48 in the control group have a stroke.
 
-::: definition Variation, standard error and the confidence interval {#def-inference}
-**Every sample is one draw from a distribution of possible samples; the standard error quantifies that spread (the square-root-of-n law whose policy consequence - doubling precision requires quadrupling the sample - is the most quoted fact in the chapter), and the central limit theorem licenses the normal-style interval for means from almost any parent distribution (the 't-distribution-for-small-samples' refinement, and the bootstrap's answer when even that licence seems doubtful - resampling the data ten thousand times to read off the sampling distribution empirically). The confidence interval is the report format the chapter insists on: the 95-percent interval's correct definition (a procedure that covers the truth in 95 percent of samples - the coverage definition whose misuse as '95 percent probability the parameter lies here' the 2010s saw statisticians defend in public), its reading discipline (the interval's bounds translated to clinical consequence - 'excludes a 15-percent reduction but cannot exclude 2 percent' is a sentence, 'p > 0.05' is a shrug), and its relationship to the p-value (the interval is the family of non-rejected nulls - the duality that makes the p-value's information redundant once the interval exists). The p-value's reform arc belongs to the history: the null-hypothesis-significance-testing hybrid (Fisher's significance versus Neyman-Pearson's decision procedure, a marriage neither would have accepted), the 'less-than-0.05' convention's status as a 1925 editorial habit with legal powers, the American-Statistical-Association's 2016 and 2019 statements (the 'p-values-and-statistical-significance' exchange, the proposed 'e-value'-terminology retreat), and the practical conclusions the field kept: report effects with intervals, define thresholds before seeing data, treat 0.05 as a fence-post not a cliff, and never call a comparison of two non-significant results a significant difference (the 'difference-between-significant-and-not' error's own retraction wave). The multiplicity budget completes inference: with ten tests at alpha 0.05 the familywise false-positive probability nears 40 percent (the Bonferroni-and-gatekeeping corrections' arithmetic, and the preregistration-plus-hierarchy discipline that makes secondary claims honest). Finally the estimation-versus-decision frame (the 'new-statistics' debate's constructive residue: trials serve cumulative evidence, so the interval that feeds meta-analysis matters more than the accept-reject verdict - which is why this website's exercises read intervals everywhere).**
+## Describing data {#describing}
+
+A **mean** is the arithmetic average; a **median** is the middle value when observations are ordered. For skewed data, such as length of hospital stay or income, a few large values pull the mean upwards, so the median is the better summary. The spread of data is described by the **standard deviation** (SD) or, for skewed data, the interquartile range.
+
+::: definition Standard deviation and standard error {#def-se}
+The **standard deviation** (SD) describes how much individual observations vary around their mean. It is a property of the population and does not get smaller as more people are measured.
+
+The **standard error** (SE) describes how precisely a sample statistic, such as a mean, estimates the corresponding population value. For a mean of $n$ independent observations,
+
+$$
+SE = \frac{SD}{\sqrt{n}}.
+$$
+
+For a proportion $p$ estimated from $n$ people, $SE = \sqrt{p(1-p)/n}$. The standard error shrinks as the sample grows.
 :::
 
-## Association
+The two are often confused, and some papers report the SE because it is smaller and makes data look tidier. The rule is simple: use the SD to describe the people in a study, and the SE (or better, a confidence interval) to describe the uncertainty of an estimate.
 
-::: definition Tests, models and their assumptions {#def-models}
-**Test choice is model choice: the t-test compares means under approximate normality of the sample mean (not of the raw data - the 'normality-of-differences' assumption's pragmatic version), its non-parametric counterparts (Mann-Whitney and Wilcoxon) compare distributions or medians' ranks and answer a subtly different question (the 'test-of-location-versus-test-of-shape' ambiguity when spreads differ - a fact many mis-paired analyses conceal); chi-square and Fisher's exact test handle proportions with expected-count rules; and the 'right-test' decision tree is really the question 'what is the estimand and what is the data-generating process?'. Regression extends comparison to adjustment: linear regression's assumptions (linearity-in-parameters - not normal-y-data; homoscedasticity and independence matter for the interval, and robust-standard-error remedies exist), logistic regression's odds-ratio output (the case-control chapter's warning about ratio inflation for common outcomes restated: logistic models are mathematically convenient, not naturally interpretable, and the risk-ratio regressions and standardised-probability outputs modern software offers should be preferred for clinical audiences), and the Poisson-and-negative-binomial and survival-family counterparts for counts and times. Model mechanics appraisers should own: sample-size-versus-parameter ratios (the 'ten-events-per-variable' rule's modest modern defence and its bootstrap-era revisions), collinearity (coefficients that trade places across specifications - the diagnostic is instability, not significance), the reference-category effect (odds ratios read against whichever group the software chose), interaction-versus-stratification (the main-effects-plus-product-term test's lower power and the 'subgroup-as-interaction' rule), and the prediction-versus-explanation divorce (cross-validation and calibration-in-the-large for models that must act; coefficient interpretation for models that explain - the two literatures' vocabulary collision). Survival analysis is its own contract: censoring's non-informative assumption (the 'dropout-unrelated-to-future-event-given-observed-history' condition and its usual violation), the Kaplan-Meier curve as the primary visual (the 'at-risk' table beneath it mandatory reading - curves from twenty remaining patients are anecdote with confidence bands), the log-rank test and hazard ratio's proportional-hazards requirement (the Schoenfeld-residual and log-log-curve inspection that the 2010s cardiology-and-oncology trials made standard because their therapies violated proportionality dramatically - the 'delayed-treatment-effect' examples with their early-flat-late-split curves and the restricted-mean and weighted-hazard remedies), and the competing-risks subtlety (cumulative-incidence functions versus censoring-away death when the question is cause-specific in old populations). The chapter's rule for all of it: the statistic's name tells you the question it answers; the appraiser's first move is asking whether that is the clinical question.**
+## Confidence intervals {#ci}
+
+::: definition Confidence interval {#def-ci}
+A **95% confidence interval** (CI) is a range calculated from the data by a method that, if the study were repeated many times, would include the true population value in 95% of repetitions.
+
+For an estimate that is approximately normally distributed, the 95% CI is
+
+$$
+\text{estimate} \pm 1.96 \times SE.
+$$ {#eq-ci}
+
+Ratio measures, such as risk ratios, odds ratios and hazard ratios, are calculated on the log scale and then transformed back, so their intervals are not symmetrical around the estimate.
 :::
 
-## Decisions
+The practical interpretation is that values inside the interval are reasonably compatible with the data, and values well outside it are not. A wide interval means the study is imprecise. A narrow interval means it is precise, though not necessarily unbiased: a confidence interval accounts for random error only ([[epidemiology-ebm/bias-confounding]]).
 
-::: definition Effect sizes, meta-analysis and equivalence arithmetic {#def-decisions}
-**Effect sizes before significance: absolute risk differences and their inverse (the number-needed-to-treat - with its interval version's asymptote trap when the difference crosses zero, and the 'NNT-harmonisation' proposals), relative risks with their baseline-risk dependence (the 'same-relative-risk-different-absolute-benefit' arithmetic that makes risk-based treatment thresholds rational), and the standardised-mean-difference for continuous outcomes (the Cohen's-d folklore's 'small-medium-large' labels that the effect-size-reform literature rejects as dimensionless nonsense without a clinical anchor). Equivalence and non-inferiority are the decision problems made explicit: the margin as a statement of clinical indifference (who sets it - the trial-versus-guideline-versus-sponsor debate), the two-one-sided-tests procedure (the interval entirely inside the margin), and the assay-sensitivity condition the trial chapter inherited (an inferior treatment declared non-inferior when the active control underperforms - the 'bio-creep' and 'historical-controls' literatures). Meta-analysis is the inverse-variance weighted average of effects (the fixed-effect model's common-truth assumption the random-effects model formally relaxes with the between-study variance tau-squared - and the critique that random-effects intervals still assume exchangeability, that small-study effects bias the pooled estimate toward the small studies' exaggeration, and that tau-squared's own estimation from few studies is unreliable - the Hartung-Knapp and Paule-Mandel adjusted-confidence-interval refinements and the prediction-interval-for-future-settings recommendation). The funnel-plot-and-Egger's-test asymmetry apparatus (publication-bias-detection's limited-power reputation), the trim-and-fill remedy's fragility, the 'contact-the-authors-or-lose-the-data' grey-literature principle and the registry-mining correction that now outperform all statistics of bias: getting every trial. The heterogeneity reading: the I-squared's interpretation-by-context caution (a high I-squared among trials of one drug in one disease is an anomaly worth chasing; a modest I-squared across a heterogeneous literature is expected), the subgroup-and-meta-regression multiplicity discipline, and the trial-sequential-analysis's answer to 'how many meta-analyses until we know' (the cumulative-information boundaries that tell guideline groups when the evidence is complete rather than merely positive). The clinical endpoint: statistics supply the evidence's size, precision and consistency; the decision needs values (patient and clinician), applicability (your population's baseline risk), and the cost-and-harm frame - which is why this chapter's final definition is the critical-appraisal chapter's first.**
+It is not quite correct to say "there is a 95% probability that the true value lies in this interval". The true value is fixed; it is the interval that varies from study to study. The figure below shows this directly.
+
+::: widget confidence
+dist: normal
+n: 20
+level: 0.95
+intervals: 50
+caption: Fifty simulated studies, each estimating the same true mean from a sample of 20. Each line is one study's 95% confidence interval. About 95% of the intervals contain the true value, but any single interval either does or does not. Change the sample size and see the intervals narrow; change the confidence level and see the trade-off between width and coverage.
 :::
 
-::: example Read the interval {#ex-interval}
-A trial reports 'major cardiovascular events: 9.8 versus 10.1 percent, hazard ratio 0.97 (95 percent confidence interval 0.86 to 1.10), P = 0.65 for the new preventive'. Write the three-sentence evidence statement for your guideline group and identify what additional evidence would change it.
+::: example A confidence interval for a proportion {#ex-ci-proportion}
+A surgical audit finds 40 complications in 200 operations. Calculate the complication rate with its 95% confidence interval.
 ::: solution
-**Intervals-speak-first ([[#def-inference]], [[#def-decisions]], [[cardiovascular/coronary-artery-disease]]): The statement: 'In this trial of 20,000 treated for five years, the new preventive reduced major events by an absolute 0.3 percentage points (hazard ratio 0.97); the confidence interval excludes reductions larger than 14 percent and increases larger than 10 percent, so a clinically meaningful benefit of the size used to justify such therapies is unlikely, while a small benefit and a small harm are both compatible with the data.' The reading discipline being demonstrated: interval-bounds translated to clinical consequence (14 percent relative is the threshold of relevance for a preventive with this cost-and-harm profile), absolute framing (0.3 points over five years - the number-needed-to-treat of about 330 for five years stated in the guideline's plain-language summary), and the P-value's role (0.65 confirms the point estimate is noise-adjacent; the interval already said everything). What changes it: event-count (the trial's 2,000 events may be underpowered for the 10-15-percent effect that would matter to younger patients - the next trial's information requirement, or the individual-participant-data meta-analysis that adds the low-risk strata), the endpoint's composition (the soft-component-driven hazard ratios this literature is famous for - a mortality-or-hard-event reanalysis), and the population's baseline risk (the interval's absolute reading depends on the 10 percent starting point; the 2-percent-risk question needs its own trial or model). The guideline conclusion: 'no recommendation for the new preventive beyond current standard therapy; the residual uncertainty concerns small effects in low-risk groups, which is a research priority, not a prescribing licence.'**
+$p = 40/200 = 0.20$.
+
+$SE = \sqrt{0.20 \times 0.80/200} = \sqrt{0.0008} = 0.0283$.
+
+95% CI $= 0.20 \pm 1.96 \times 0.0283 = 0.20 \pm 0.055$, so 14.5% to 25.5%.
+
+The true complication rate for this surgeon is plausibly anywhere between about 15% and 25%. If the national rate were 15%, these data would not be strong evidence that the surgeon is worse. This simple (Wald) interval is adequate here; for small samples or proportions near 0 or 1, better methods such as the Wilson interval should be used.
 :::
 :::
 
-::: example The funnel plot argues back {#ex-funnel}
-A meta-analysis of a widely used antiemetic in pregnancy pools 31 trials: odds ratio for malformation 0.94 (0.86 to 1.02), funnel plot asymmetric, Egger P = 0.004; the authors conclude 'no increased risk, and small-study effects inflate safety in the published literature'. Assess.
+## P-values and hypothesis tests {#p-values}
+
+::: definition P-value, significance and errors {#def-pvalue}
+A **null hypothesis** states that there is no difference between groups (for example, the true risk ratio is 1). A **p-value** is the probability of obtaining a result at least as extreme as the one observed, if the null hypothesis were true.
+
+If the p-value is below a prespecified **significance level** $\alpha$, conventionally 0.05, the result is called **statistically significant**. Rejecting a true null hypothesis is a **type I error** (probability $\alpha$); failing to reject a false one is a **type II error** (probability $\beta$). **Power**, $1 - \beta$, is the probability of detecting an effect of a specified size.
+:::
+
+A p-value is easy to misread. It is **not**:
+
+- the probability that the null hypothesis is true;
+- the probability that the result occurred "by chance";
+- a measure of the size or importance of an effect.
+
+A large trial can produce a tiny p-value for a trivial effect. A small trial can produce a large p-value for an important effect that it was too small to detect. In 2016 the American Statistical Association issued a formal statement making these points, and recommending that p-values be interpreted alongside estimates, confidence intervals and context, not in isolation.
+
+**Multiple testing** inflates false positives. If 20 independent comparisons are made where no true differences exist, the probability that at least one reaches $p < 0.05$ is $1 - 0.95^{20}$, about 64%. Trials therefore name a single primary outcome in advance, and analyses of many outcomes or subgroups should be treated as hypothesis-generating unless corrected for multiplicity.
+
+::: theorem Confidence intervals and p-values agree {#thm-duality}
+For the usual tests, a two-sided p-value is below 0.05 if and only if the 95% confidence interval excludes the null value (0 for a difference, 1 for a ratio).
+:::
+
+::: proof
+Both are built from the same estimate and standard error. The test statistic is $z = (\text{estimate} - \text{null value})/SE$, and $p < 0.05$ two-sided exactly when $|z| > 1.96$. That inequality is the same as saying that the null value lies more than $1.96 \times SE$ from the estimate, which is the same as saying that it lies outside the interval $\text{estimate} \pm 1.96 \times SE$. For ratios, the same argument applies on the log scale, where the null value is $\ln 1 = 0$. (Small discrepancies can occur when the test and the interval are calculated by slightly different methods.)
+:::
+
+The confidence interval therefore contains everything the p-value says, and more: it shows the size of the effect and the range of values compatible with the data. This is why journals, following the argument of Gardner and Altman in 1986, ask authors to report confidence intervals rather than p-values alone.
+
+::: example Statistical and clinical significance {#ex-significance}
+A fictional drug lowers systolic blood pressure by a mean of 1.5 mmHg more than placebo in a trial of 20,000 people (95% CI 1.0 to 2.0 mmHg, $p < 0.001$). A second fictional drug lowers it by 8 mmHg more than placebo in a trial of 60 people (95% CI −1 to 17 mmHg, $p = 0.08$). Which result is more important?
 ::: solution
-**Asymmetry-is-a-scene-not-a-verdict ([[#def-decisions]]): the reading: the pooled null-with-tight-interval is the headline the guideline reads, and the trim-and-fill-adjusted 'corrected' estimate (0.99) reassures; but the asymmetry's sources are not interchangeable: publication bias (small harmful-effect trials unpublished or unanalysed - the 'and-they-are-never-published' class the registry mining literature found for antidepressants and surgical mesh), small-study bias (lower methodological quality, different populations and doses, the 'early-trials-optimism-in-different-directions' pattern), true heterogeneity (dose, timing, indication - the 'morning-sickness-severity' confounding of who gets antiemetics at all, the channel that no meta-analysis of observational safety data can fully close), and chance (the Egger test's low power with fewer than forty studies cuts both ways). The verdict the data support: 'no evidence of a malformation signal in the synthesised randomised evidence, with residual asymmetry whose most plausible cause is reporting practices in older trials rather than true harm' - which is weaker than 'safe' in the way the prescription literature learned: the antiemesis-and-thalidomide-adjacent historical memory the editors invoke, the correct comparison being not 'is the meta-analysis perfect' but 'what is the quality of the underlying trials and their registries' (the 'sister-safety-database-and-cohort' studies that actually power rare-outcome safety). The action: recommend on the whole evidence (trials plus the large cohorts plus pharmacovigilance with its own bias structure), state the asymmetry honestly in the guideline's evidence profile, and let the GRADE downgrade for suspected reporting bias stand where it belongs.**
+The first result is highly statistically significant, but the whole interval lies between 1 and 2 mmHg, an effect too small to matter for most individual patients. The large trial has measured a small effect precisely.
+
+The second result is not statistically significant, but the point estimate is large, and the interval runs from a slight rise to a 17 mmHg fall. The data are compatible with no effect and with a very large one. The trial is too small to tell, and a larger trial is justified.
+
+Neither p-value tells you what matters. The confidence intervals, judged against the smallest difference that would be clinically important (the **minimal clinically important difference**, MCID), do.
 :::
 :::
 
-::: example The overfit prediction model {#ex-overfit}
-A sepsis-risk score developed on 40,000 admissions reports area under the curve 0.92 with 'internal validation by 10-fold cross-validation' and 38 predictors; external validation at two hospitals yields 0.71 and 0.66. The vendor's brochure still says 0.92.
+## Absolute and relative effects {#effects}
+
+::: definition Measures of treatment effect and the number needed to treat {#def-nnt}
+Let the risk of the outcome be $R_C$ in the control group (the **control event rate**) and $R_T$ in the treatment group.
+
+- **Absolute risk reduction**: $ARR = R_C - R_T$.
+- **Relative risk**: $RR = R_T/R_C$.
+- **Relative risk reduction**: $RRR = 1 - RR = (R_C - R_T)/R_C$.
+- **Number needed to treat**: $NNT = 1/ARR$, the number of people who must be treated for the stated time for one extra person to benefit. By convention it is rounded **up** to a whole number.
+
+When a treatment increases an adverse outcome, the corresponding **number needed to harm** is $NNH = 1/(R_T - R_C)$ for that outcome.
+
+An NNT is meaningful only with its comparator, outcome and time period ("40 people treated for 5 years to prevent one heart attack").
+:::
+
+::: example The running trial {#ex-nnt}
+In the trial described at the start of the chapter, 30/400 people in the treatment group and 48/400 in the control group had a stroke over 3 years. Calculate the ARR, RR, RRR and NNT, with a 95% CI for the ARR and the RR.
 ::: solution
-**Apparent-versus-true-performance ([[#def-models]], [[#def-decisions]]): The optimism explanation: development-site signal (local prevalence, ordering habits, documentation style) is learned as if general; 38 predictors on a moderate event count risks overfitting even with cross-validation (which shares the development data's distributions - the 'internal-validation-detects-optimism-not-transportability' lesson), and site-specific relationships (the 'our-lactate-ordering-differs' classes) fail externally exactly as expected. The appraisal standards the brochure must meet: external validation on temporally and geographically separate data reported per TRIPOD and PROBAST (the prediction-model bias tools), calibration as well as discrimination (an AUC of 0.71 with perfect calibration is usable at its own thresholds; 0.92 with systematic miscalibration is dangerous - the decision-curve and calibration-plot pair, not the single index), the update-or-recalibrate analysis (the 'local-intercept-and-slope-correction' route that often rescues usable performance at one coefficient's cost), the impact studies (does using the score change clinician behaviour and patient outcomes - the three-level evidence ladder the diagnostics chapter built: validation, verification, utility), and the fairness subgroup table (age, sex, ethnicity, deprivation strata - the 'model-performance-parity' audits that procurement now asks for). The procurement answer: the model is a promising draft of a product; buy the recalibration-and-prospective-impact study, not the brochure. The teaching line: a prediction model's AUC is a property of its population as much as its mathematics - which is why this website's statistics chapters insist that every number in a paper carries its data's address.**
+$R_T = 30/400 = 0.075$; $R_C = 48/400 = 0.12$.
+
+**ARR** $= 0.12 - 0.075 = 0.045$ (4.5 percentage points). Its SE is $\sqrt{0.075 \times 0.925/400 + 0.12 \times 0.88/400} = 0.0209$, so the 95% CI is $0.045 \pm 0.041$, or 0.4 to 8.6 percentage points.
+
+**RR** $= 0.075/0.12 = 0.625$; **RRR** $= 37.5\%$. On the log scale, $\ln RR = -0.470$ and
+
+$$
+SE(\ln RR) = \sqrt{\tfrac{1}{30} - \tfrac{1}{400} + \tfrac{1}{48} - \tfrac{1}{400}} = 0.222.
+$$
+
+The 95% CI is $\exp(-0.470 \pm 1.96 \times 0.222)$, which is 0.40 to 0.97.
+
+**NNT** $= 1/0.045 = 22.2$, rounded up to 23 people treated for 3 years to prevent one stroke. Inverting the ARR limits gives an NNT CI of 12 to 250: the data are compatible with a substantial benefit or with a very small one.
+
+The interval for the RR excludes 1, and the interval for the ARR excludes 0, consistent with the p-value of about 0.03 quoted in the abstract.
+:::
+:::
+
+Relative and absolute measures tell different stories, and both are needed. Relative effects are often fairly constant across patients with different baseline risks. Absolute effects are not. A relative risk reduction of 25% means an ARR of 2.5 percentage points (NNT 40) for a patient whose risk is 10%, but only 0.5 points (NNT 200) for a patient whose risk is 2%. This is why the decision to treat depends on the individual's baseline risk, a point developed in [[epidemiology-ebm/critical-appraisal]].
+
+Presenting only relative effects makes treatments look more impressive. "Reduces the risk of stroke by 37%" sounds more persuasive than "reduces it from 12% to 7.5% over 3 years", although they describe the same result. Both doctors and patients judge treatments more favourably when given relative figures. Good practice is to give absolute risks with and without treatment, in natural frequencies, over a stated time.
+
+::: warning Regression to the mean
+Patients are often selected for treatment, or for a study, because a measurement is unusually high: a blood pressure of 170 mmHg, a cholesterol at the top of the range, a bad week of symptoms. Any measurement includes random variation, so a person picked because of an extreme reading will, on average, have a less extreme reading next time, even with no treatment at all. This is **regression to the mean**. It makes untreated patients appear to improve, and makes any treatment given after an extreme reading appear to work. A randomised control group, which regresses equally, is the remedy. It also explains why a single high reading should be repeated before a diagnosis is made.
+:::
+
+## Survival analysis {#survival}
+
+Many trials measure time to an event, such as death, relapse or hospital admission. Participants are followed for different lengths of time, and some reach the end of the study without the event. Their observations are **censored**: we know only that their event, if any, happens after their last follow-up.
+
+::: definition Kaplan–Meier curve and hazard ratio {#def-hr}
+The **Kaplan–Meier estimate** of survival is a step function that drops at each event time. At each event, the probability of surviving that moment is the number not having the event divided by the number still at risk; censored participants leave the risk set without causing a drop. The survival curve is the product of these probabilities.
+
+The **hazard** is the instantaneous rate of the event among those still at risk. The **hazard ratio** (HR) compares the hazards in two groups. An HR of 0.75 means that, at any time, people in the treatment group have the event at three-quarters of the rate of those in the control group. It is usually estimated with the **Cox proportional hazards model**, which assumes that the ratio is constant over time.
+:::
+
+When reading a survival result, look at the curves, not just the HR. Check how many people remain at risk at later times (often shown below the plot): the tail of a curve based on a handful of people is unreliable. Look for curves that cross, which suggests that hazards are not proportional and that a single HR is a poor summary. And translate the HR into absolute terms where possible, such as the difference in the proportion alive at 5 years or in median survival.
+
+::: example Reading a survival result {#ex-survival}
+A fictional cancer trial reports overall survival with an HR of 0.80 (95% CI 0.70 to 0.92). Median survival was 14 months with the new drug and 12 months with the standard drug. At 3 years, 18% and 13% of patients were alive. How would you summarise this for a patient?
+::: solution
+The HR means that at any time the death rate was about 20% lower with the new drug, and the interval (0.70 to 0.92) excludes 1, so the result is unlikely to be due to chance alone. In absolute terms, half of the patients lived longer than 14 months with the new drug and 12 months with the standard drug, a difference of about 2 months in median survival. At 3 years, about 18 in 100 patients were alive with the new drug compared with 13 in 100 with the standard drug.
+
+A fair summary for a patient might be: "On average people lived about 2 months longer, and a few more were still alive after 3 years: about 18 in every 100 compared with 13." This would be weighed against side effects, quality of life and the patient's own priorities. The relative figure "20% lower risk of death" alone would give a misleading impression of the size of the benefit.
+:::
+:::
+
+## Regression and prediction {#regression}
+
+Regression models describe how an outcome depends on several variables at once:
+
+- **Linear regression** for continuous outcomes, such as blood pressure.
+- **Logistic regression** for binary outcomes, giving odds ratios.
+- **Cox regression** for time to event, giving hazard ratios.
+- **Poisson regression** for counts and rates, giving rate ratios.
+
+In observational research these models are used to adjust for confounders. Their coefficients are then interpreted as the association with one variable "holding the others constant", which is only as good as the choice and measurement of the other variables.
+
+Regression is also used to build **clinical prediction models**, such as cardiovascular risk scores. Two warnings apply. First, a model fitted to too few events will **overfit**: it describes the noise in the development data and predicts poorly in new patients. A common rough guide is to have at least 10 outcome events for each candidate predictor, though current methods calculate the required sample size more carefully. Second, a model must be **validated** in new data, ideally from a different setting, and checked for **discrimination** (the c-statistic, or area under the ROC curve; see [[epidemiology-ebm/diagnostic-tests]]) and **calibration** (whether predicted risks match observed risks).
+
+Correlation is not causation, and a strong correlation coefficient says nothing about the size of an effect. Ice cream sales and drowning are correlated because both rise in hot weather.
+
+::: example Regression to the mean in a clinic {#ex-rtm}
+A practice invites 200 patients whose last cholesterol was above 7.5 mmol/L to a new dietary education session. Six weeks later the mean cholesterol in the group has fallen by 0.6 mmol/L. The practice manager concludes that the session works. What else could explain the fall?
+::: solution
+The patients were selected *because* their last reading was high. Cholesterol varies from day to day and with laboratory error, so many of those above 7.5 mmol/L had a reading above their usual level. On re-testing, their values will tend to be lower even without any intervention. This is regression to the mean, and it can easily account for a fall of this size.
+
+Other explanations include changes made by patients after being told their result (they may have started medication or changed diet independently) and seasonal variation. To find out whether the session works, the practice would need a comparison group selected in the same way, ideally randomised to session or no session, with both groups re-tested at six weeks. Using the average of two baseline measurements to select patients would also reduce the effect.
 :::
 :::
 
 ::: quiz
-A 95 percent confidence interval for a mean difference of 2.1 mmHg (0.2 to 4.0) means:
-- [ ] There is 95 percent probability the true difference lies in this interval
-- [x] The procedure producing such intervals covers the true difference in 95 percent of repeated samples; this interval excludes zero but not small effects
-- [ ] 95 percent of patients benefit by between 0.2 and 4.0 mmHg
-- [ ] The difference is clinically important
+A trial reports a hazard ratio for death of 0.85 with a 95% CI of 0.72 to 1.01 ($p = 0.06$). Which conclusion is best supported?
+- [ ] The treatment has no effect on mortality.
+- [ ] The treatment reduces mortality by 15%.
+- [x] The data are compatible with a mortality reduction of up to about 28% and with a very small increase; the trial is inconclusive.
+- [ ] The result would have been significant with a one-sided test, so the treatment works.
 ::: solution
-**The coverage definition (the frequentist one the reform debates defended): the interval is a statement about procedures and data, not a personal probability about this parameter - and 'excludes zero' is not 'is important' - [[#def-inference]], [[#def-decisions]].**
+The interval includes 1, so the trial has not shown a statistically significant effect, but it does not show "no effect" either: most of the interval lies on the side of benefit. The honest summary is uncertainty. Switching to a one-sided test after seeing the data is not legitimate. A systematic review combining this trial with others may resolve the question.
 :::
 :::
 
-::: widget plot
-f: 100*exp(-((x-0)^2)/18); 105; 0; 1; 60
-x: -1.5, 1.5
-y: 0, 100
-labels: \text{standardised effect (true effect zero)},\ \text{density};\\ \text{the } P<0.05 \text{ tails: 5 percent of a null world};\\ \text{the 'significant' slice is 2.5 percent each side};\\ \text{observed effects that pass the fence include this null hump}
-caption: When the null is true, one test in twenty says 'significant' - the fence-post is a frequency promise, not a probability about your trial ([[#def-inference]]).
+::: history
+William Sealy Gosset, a chemist at the Guinness brewery in Dublin, published the *t*-distribution in 1908 under the pen name "Student", to deal with the small samples used in quality control. Ronald Fisher developed significance testing and popularised the 5% level as a convenient threshold in the 1920s, while Jerzy Neyman and Egon Pearson developed the framework of hypothesis tests with type I and type II errors in the late 1920s and 1930s. Neyman also introduced the confidence interval in 1937.
+
+Survival analysis took its modern form when Edward Kaplan and Paul Meier published their estimator in 1958, and David Cox introduced the proportional hazards model in 1972. In medicine, Martin Gardner and Douglas Altman's 1986 paper in the *British Medical Journal* argued for confidence intervals rather than p-values alone, and journals changed their instructions to authors. Andreas Laupacis, David Sackett and Robin Roberts proposed the number needed to treat in 1988 as a clinically meaningful way to express treatment effects.
 :::
 
 ## Where this leads
 
-Every design chapter uses this vocabulary: [[epidemiology-ebm/observational-studies]], [[epidemiology-ebm/randomised-trials]], [[epidemiology-ebm/diagnostic-tests]]; pooling is extended in [[epidemiology-ebm/systematic-reviews]]; decision thresholds in [[public-health/screening]]; and appraisal drilling in [[epidemiology-ebm/critical-appraisal]].
+These ideas are applied to pooling studies in [[epidemiology-ebm/systematic-reviews]], and to deciding whether a result applies to a particular patient in [[epidemiology-ebm/critical-appraisal]]. The design features that make the statistics trustworthy are in [[epidemiology-ebm/randomised-trials]].
 
 ::: summary
-- Report effects with intervals and read the interval's bounds as clinical statements; the p-value is a summary of the same data with a bad reputation for being misread - which it has earned.
-- The confidence interval's definition is about procedures across samples, the test's assumptions are about the estimand, and the choice between tests is the choice of what question is being asked of the data.
-- Multiplicity is a budget: ten tests spend alpha whether the analyst acknowledges it or not; pre-registration, gatekeeping and honest secondary-claim labels are the accounting.
-- Odds ratios are convenient, not interpretable; hazard ratios require proportional hazards; survival curves require their at-risk tables; and subgroup claims require interaction tests.
-- Meta-analysis averages with inverse-variance weights and inherits every trial's bias; funnel asymmetry names a suspect, not a culprit, and prediction intervals tell guideline groups about new settings better than pooled means.
-- Equivalence and non-inferiority put the decision margin inside the statistics, which is the chapter's final lesson: numbers never travel to conclusions without values escorting them.
-:::
-
-## Exercises
-::: history
-**The chapter's machinery has two ancestries that met late. The mathematical: de Moivre and Bernoulli's probability, Gauss and Laplace's error theory and least squares (the comet-tracking mathematics that became regression), Galton's correlation and regression-to-the-mean (the eugenicist's vocabulary that statistics never quite escaped and appraisers should pronounce with its history attached), Pearson's coefficient and hypothesis tests, Student-Gosset's small-sample t-distribution written under a brewery's pseudonym, and Fisher's 1920s synthesis - maximum likelihood, analysis of variance, the 0.05 fence-post's 1925 printing, and the exact-design-of-experiments cult of randomisation whose agricultural proving grounds the trials chapter met. The decision-theoretic: Neyman and Pearson's power-and-error framework (the alpha-beta architecture and the confidence interval's coverage definition, deliberately separated from Fisher's inductive interpretation - the divorce whose custody battle the 2016-19 statements re-litigated), Wald's sequential and statistical-decision theory (the war years' industrial sampling that made stopping rules and the operating-characteristics way of thinking), and the Bayesian restoration (Raiffa and Schlaifer's decisions-theoretic program, Savitz and Lichtenstein's descriptive findings on human probabilistic reasoning that became the base-rates literature, and Ziv and Medawar's clinical-Bayes era through Kassirer and Kopelman's diagnostic-reasoning textbooks). The clinical marriage came through the chronic-disease trials and their counting problems: life-tables borrowed from actuarial science, then Kaplan-Meier's 1958 product-limit estimator (virology's dilution-assay origin the eponym's footnote keeps), Cox's 1972 partial likelihood (the semiparametric simplification that made the hazard ratio clinical prose), and Greenfield's and Fleiss's meta-analysis formalisations (the 'averaging-trials' debates from Glass's 1976 coining through the Chalmers brothers' obstetric-tabulation programme, the 'controlled-trial-documents'-era insistence that the literature itself needed systematic review, and the Cochrane Collaboration's 1993 institutionalisation with its risk-of-bias and funnel-plot apparatus). The 2010s reform wave followed the replication crisis's self-examination (the 'p-curve-and-p-hacking' literature, the Registered-Reports movement, the ASA's 2016 and 2019 significance statements, the 'Retire-Statistical-Significance' and 'Retire-P-Value' exchanges and the open-data-and-code infrastructure that made their recommendations enforceable), while the prediction-model revolution (machine-learning diagnostics' external-validation audits and the TRIPOD-and-PROBAST-and-DECIDE-MAGNET-adjacent assessment frameworks) reopened the explanation-versus-prediction question this chapter's model definition closes. The lesson the field keeps relearning: statistics is the logic of uncertainty applied to human institutions, and institutions corrupt the logic quietly unless the methods section is read as an audit.** - [[epidemiology-ebm/critical-appraisal]], [[epidemiology-ebm/systematic-reviews]].**
-:::
-
-::: example The regression that hid nothing {#ex-regression}
-A study of antibiotic duration reports: each additional day associated with 4 percent higher 30-day readmission (adjusted odds ratio per day 1.04, 1.01 to 1.07) in a logistic model with 22 covariates on 480 events. Write your appraisal of the modelling, listing the four checks you would run before believing the direction.
-::: solution
-**Per-day-odds-ratios-and-their-traps ([[#def-models]], [[#def-decisions]]): Check one, linearity-in-the-log-odds: 'per-day' presumes a constant multiplicative effect - plot the non-parametric or spline version (short stays and long stays carry confounded indications; the 'confounding-by-indication-and-severity' signal usually lives at both ends). Check two, events-per-variable: 480 events over 22 covariates sits near the rule's floor and below what modern simulations consider safe for stable adjusted estimates - look for the reduced-model or penalised (ridge-or-lasso) sensitivity analyses, and note whether the covariate list was pre-specified by a diagram (the infection-severity markers adjusted could be mediators of the duration's own effect - the 'adjusting-for-the-mechanism-away' risk runs the other way here). Check three, the outcome's competing risk: readmission and death compete (the 'dead-people-reappear-less' problem - cause-specific versus cumulative-incidence methods change the estimand). Check four, clustering and multiplicity: patients within wards, prescribers and hospitals induce correlated outcomes (the design-effect correction the methods must state), and 'per-day' plus twenty-two covariates plus secondary endpoints invites the multiplicity budget nobody paid. The direction question it cannot answer: duration is prescribed for severity - the severity-adjustment residual confounding that the propensity-and-instrumental-variable reanalyses of similar literature typically halve such effects. The appraisal summary: 'a hypothesis-generating association whose methods cannot currently separate prescribing logic from causal harm; the 4 percent is an uncalibrated signal, not an effect estimate.'**
-:::
+- The SD describes variation between people; the SE describes the precision of an estimate and shrinks as $1/\sqrt{n}$.
+- A 95% CI is estimate ± 1.96 SE (on the log scale for ratios). It shows the size of an effect and the range compatible with the data, and it reflects random error only.
+- A p-value is the probability of data at least this extreme if the null hypothesis were true. It is not the probability that the null is true, and it does not measure effect size. Multiple testing inflates false positives.
+- The CI excludes the null value exactly when $p < 0.05$, so the CI carries more information.
+- Report absolute effects (ARR, NNT = 1/ARR, rounded up) alongside relative effects (RR, RRR). Absolute benefit depends on baseline risk.
+- Statistical significance is not clinical importance: compare the CI with the minimal clinically important difference.
+- Survival analysis handles censoring with Kaplan–Meier curves; the hazard ratio compares event rates over time and assumes proportional hazards.
+- Regression adjusts for several variables; prediction models must avoid overfitting and be validated for discrimination and calibration.
+- Regression to the mean makes extreme values move towards average on re-measurement; only a control group protects against it.
 :::
 
 ## Exercises
 
-::: exercise Translate the statistics {level=1}
-Convert each into a two-sentence plain-language statement for a patient leaflet, keeping the uncertainty: (a) risk ratio 0.80 (0.65 to 0.98); (b) mean difference -3.2 points on a 100-point scale (-6.1 to +0.3); (c) hazard ratio 1.05 (0.99 to 1.12).
+::: exercise Standard error {level=1 check="2"}
+A sample of 36 patients has a mean haemoglobin of 128 g/L with a standard deviation of 12 g/L. What is the standard error of the mean, in g/L?
 ::: solution
-**Interval-translation-drill ([[#def-inference]]): (a) 'Over the study period, 12 in 100 people who took the treatment had the event versus 15 in 100 who did not. The true benefit could be as large as cutting events by a third or as small as almost none; we are confident it does not increase them.' (b) 'On average people felt 3 points better on a 100-point scale, but the true average could be anywhere from 6 points better to slightly worse; we cannot say the treatment made a real difference.' (c) 'The results are compatible with a 5 percent higher rate of the event, or a small lower rate; most likely the treatment makes little or no difference either way.' The grading criteria: absolute numbers where prevalence is known, the interval's bounds translated to consequence, the absence of 'significant' as a synonym for 'real', and no promise where the interval withholds one - the leaflet that passes is the one the trust's lawyer and the patient both call honest.**
+$SE = 12/\sqrt{36} = 12/6 = 2$ g/L. The 95% CI for the mean is $128 \pm 3.9$, about 124 to 132 g/L.
 :::
 :::
 
-::: exercise Choose the analysis {level=2}
-Specify the primary analysis for each: (a) two-arm trial, binary outcome, unequal group sizes, rare events; (b) quality-of-life score (skewed, floor effects) between three independent clinics; (c) time-to-discharge with 30 percent still admitted at study end; (d) vaccine effectiveness from a test-negative design. Name the estimand with each.
+::: exercise Number needed to treat {level=1 check="20"}
+In a fictional trial, 20% of control patients and 15% of treated patients have the outcome over 2 years. What is the NNT?
 ::: solution
-**Estimand-first-selection ([[#def-models]], [[#def-inference]]): (a) risk difference (or odds ratio with rarity caveats) with a Fisher-exact-or-mid-p interval and, if clustering present, its design effect; logistic-with-treatment-contrast for adjustment - not chi-square p alone; estimand: absolute effect on the treated population. (b) the Kruskal-Wallis-then-Dunn route for ranks or, better, an ordinal-or-quantile-regression framing given the floor effects (the 'shift-versus-strictly-stochastic-ordering' estimand); mean-difference ANOVA answers a question the skewed data make secondary. (c) Kaplan-Meier plus Cox for the hazard-ratio summary with proportional-hazards diagnostics and the restricted-mean as the robust companion; estimand: effect on the discharge-time distribution, stated with the censoring mechanism. (d) the odds ratio from the case-control-style logistic model with test-negative design - vaccine effectiveness as 1-minus-OR, with the assumptions named (help-seeking and test behaviour equal across the exposed-decision pathways); estimand: effectiveness against infection-causing-illness requiring testing. The exercise's rule: the test is the estimand's servant, and the discussion section should never have to discover what the methods chose.**
+$ARR = 0.20 - 0.15 = 0.05$. $NNT = 1/0.05 = 20$: twenty people treated for 2 years to prevent one outcome. The RRR is 25%.
 :::
 :::
 
-::: exercise Spot the p-hacking {level=2}
-A paper's methods state: 'Normality was tested and data log-transformed where non-normal; the primary endpoint was analysed at 6, 12 and 24 months, with the 12-month result reported; baseline imbalance in smoking was corrected by adding it as a covariate when it changed the estimate.' List the flexibility points and their multiplicity cost.
+::: exercise Number needed to harm {level=1 check="50"}
+In the same trial, a side effect occurs in 3% of treated patients and 1% of controls. What is the number needed to harm?
 ::: solution
-**Garden-of-forking-paths-audit ([[#def-inference]], [[#def-models]]): The flexibility inventory: transformation choice post-hoc (normality-testing-then-transforming - the 'test-the-assumption' loop whose inflation is modest and acknowledged), outcome-timing selection (three time-points analysed, one reported - the classic temporal cherry-pick: three tests at alpha 0.05 give roughly 14 percent familywise false-positive probability even before the others learn), covariate-contingent-adjustment ('add smoking if it changes the estimate' is the definition of specification searching - adjustment should follow a pre-specified model from a diagram, because 'changed the estimate' can mean either removing confounding or removing the mediator or buying significance), and the unstated defaults (intention-to-treat-versus-per-protocol, outlier exclusions, the responder dichotomies the paper's supplements reveal). The cumulative multiplicity is unquantifiable because it is not a number of tests but a decision tree - the 'garden of forking paths' formulation (Gelman and Loken) that the preregistration and registered-report reforms answer structurally. The appraisal verdict: 'the reported effect's p-value is conditional on an analyst's journey the paper documents honestly but no correction can price; treat the finding as a pre-registered hypothesis to be re-tested, not a claim.' The teaching addition: the tell is not the individual choice (each is defensible in isolation) but the contingency of all of them on the results themselves.**
+The absolute risk increase is $0.03 - 0.01 = 0.02$, so $NNH = 1/0.02 = 50$. For every 50 people treated for 2 years, one extra person has the side effect, while one in 20 avoids the outcome.
 :::
 :::
 
-::: exercise Explain the meta-analysis {level=2}
-A meta-analysis reports pooled risk ratio 0.85 (0.78 to 0.93), I-squared 62 percent, prediction interval 0.68 to 1.04 across nine trials. Explain to a guideline group what to conclude and what the prediction interval adds to the confidence interval.
+::: exercise A confidence interval for a proportion {level=2 check="17.2"}
+A screening programme finds that 18 of 150 people invited did not attend. Calculate the 95% confidence interval for the non-attendance rate using the simple (Wald) method, and give the upper limit as a percentage to 1 decimal place.
 ::: solution
-**Two-intervals-two-questions ([[#def-decisions]], [[epidemiology-ebm/systematic-reviews]]): The confidence interval answers: 'what is the average effect across these trials' (the mean, with its precision). The prediction interval answers: 'what might the effect be in a new setting' - incorporating the between-trial variation the pooled mean flattens; here it includes 1.0, so a future population could see no benefit. The 62-percent I-squared says the trial effects vary more than sampling explains - so the pooled 0.85 is an average whose distribution matters, and the hunt is on for what differs (populations, doses, risks of bias - the meta-regression and subgroup exploration that are hypothesis-generators unless pre-specified). The conclusion the group can defend: 'probably beneficial on average, with genuine possibility of null-or-no effect in particular settings; recommend conditionally, identify the moderators that predict benefit, and consider the individual-participant-data update that can test them properly.' The lesson the double-interval format teaches: statistical heterogeneity is not noise to be minimized but information about the intervention's context-dependence - the difference between 'it works' and 'it works here, for these patients, at this dose', which is what guidelines are licensed to say.**
+$p = 18/150 = 0.12$. $SE = \sqrt{0.12 \times 0.88/150} = 0.0265$. $1.96 \times SE = 0.052$. The interval is 0.068 to 0.172, so the upper limit is 17.2%.
 :::
 :::
 
-::: exercise Fix the sample size {level=2}
-A pilot feasibility study (n=24) is proposed 'to show the intervention reduces falls (power 80 percent, alpha 0.05, effect size d=0.5)'. Diagnose every sample-size sin and rebuild the calculation honestly.
+::: exercise A confidence interval for a risk ratio {level=2 check="0.82"}
+In a fictional trial, 20 of 200 treated patients and 40 of 200 controls have an event. Calculate the risk ratio and the upper limit of its 95% confidence interval, using $SE(\ln RR) = \sqrt{1/a - 1/n_1 + 1/c - 1/n_0}$. Give the upper limit to 2 decimal places.
 ::: solution
-**Size-the-question ([[#def-inference]], [[#def-decisions]]): The sins: feasibility conflated with efficacy (a pilot's confidence interval for a standardised effect spans the plausible universe at n=24 - the 'pilot-for-pilot-ness-only' reform position), the effect size imported from wishful literature rather than the minimal clinically important difference (d=0.5 for falls - falls outcomes are skewed zero-inflated counts; standardised differences are the wrong currency; the estimand should be rate ratios or risk differences with the clinically important difference from patients), alpha-and-power without variance, cluster structure, or dropout (nursing-home falls trials' intraclass correlations routinely double the required n; the 'falls-count-overdispersion' sample-size methods exist), and 'power 80 percent' copied rather than earned against the trial's cost and ethics (the 'ethical-sample-size' literature's optimum-information framings). The rebuild: define the estimand (incidence-rate ratio of falls, intervention versus usual care, in care-home residents), the minimal important effect from residents and guideline panels (say 25 percent relative), the control rate from registry data, overdispersion and clustering parameters from the pilot's variance (that is what pilots are for), the dropout inflation from the setting's history, and the resulting n stated with its sensitivity table. The pilot's proper role: feasibility, variance and fidelity - with the 'no-efficacy-claims' sentence in its protocol, because the field's audit trail shows pilots reanalysed as evidence are where optimistic doses are born.**
+$RR = (20/200)/(40/200) = 0.5$.
+
+$SE(\ln RR) = \sqrt{1/20 - 1/200 + 1/40 - 1/200} = \sqrt{0.065} = 0.255$.
+
+Upper limit $= \exp(\ln 0.5 + 1.96 \times 0.255) = 0.5 \times e^{0.4997} = 0.82$. The lower limit is $0.5 \times e^{-0.4997} = 0.30$. The interval, 0.30 to 0.82, excludes 1.
 :::
 :::
 
-::: exercise Grade the hazard ratio {level=3}
-An oncology trial's primary analysis reports hazard ratio 0.74 (P = 0.008) with Kaplan-Meier curves that overlap for four months then diverge; the supplementary appendix offers no proportional-hazards diagnostics. Write the statistical review: the diagnosis, the alternative estimands with their computations sketched, and the reporting you would require.
+::: exercise An individual NNT {level=2 check="42"}
+A treatment reduces the relative risk of an outcome by 30%. A patient's estimated 5-year risk without treatment is 8%. Estimate this patient's NNT over 5 years, rounded up to a whole number.
 ::: solution
-**Non-proportional-hazards-review ([[#def-models]], [[#def-inference]]): The diagnosis: early curve overlap then divergence is the delayed-effect pattern (typical of immunotherapies' mechanism), under which the log-rank test retains some power but the hazard ratio is a time-averaged blend of two different regimes - '0.74' describes no moment of the trial, and the confidence interval's coverage logic (which assumes proportional hazards) is nominal. Alternative estimands, each sketched: restricted mean survival time difference (area under the curves to a prespecified horizon - assumption-light and clinically reportable as 'months gained at 24 months'), milestone survival differences with Greenwood intervals (the 12-and-24-month rates - the format guidelines and patients understand), weighted log-rank tests (max-combo and Fleming-Harrington's late-weighted family for detection, with the multiplicity of weighting choices declared), piecewise hazard ratios (first-four-months versus post-divergence, with the caution that the change-point's data-driven choice is a flexibility point), and the mixture-cure or delayed-effect models (fraction-cured and long-survivor-plateau estimation where tumour types show it). The required reporting: the Schoenfeld-or-Smirnov diagnostics and log-negative-log plots (the visual test whose absence this review indicts), the pre-specified primary with its alternative pre-specified (the 'delayed-effect-as-known-possibility' design that should have anticipated its own mechanism - the statistical-analysis-plan lesson), the at-risk table and censoring patterns per curve arm, and the absolute benefit at clinically relevant horizons beside every relative summary. The review's bottom line: 'the trial may well show real benefit; the number it publishes is the wrong summary of its own evidence, and the correct numbers - months gained at two years and the plateau fraction - are more persuasive, not less, once the curves are read honestly.'**
+$ARR = 0.08 \times 0.30 = 0.024$. $NNT = 1/0.024 = 41.7$, rounded up to 42. A patient with a 24% baseline risk would have an NNT of 14 from the same treatment.
 :::
 :::
 
-::: exercise Teach regression to clinicians {level=3}
-Design a 20-minute interactive session teaching adjusted odds ratios to registrars who will read guidelines all career. Include the worked dataset moment where adjustment changes the answer, the one misreading to hunt in their own practice, and the transfer task.
+::: exercise Multiple comparisons {level=2 check="64.2"}
+A study compares two groups on 20 independent outcomes, none of which truly differs. Each test uses $\alpha = 0.05$. What is the probability, as a percentage to 1 decimal place, that at least one comparison is statistically significant?
 ::: solution
-**Adjustment-taught-by-conflict ([[#def-models]], [[#def-inference]]): The hook: a 2x2x2 table they compute themselves (the smoking-coffee-and-pancreatitis-or-the-treatment-age-Simpson-reversal classics - crude odds ratio adverse, stratified benign, because age or smoking concentrates in one group) - adjustment changes the answer, and they did the Mantel-Haenszel weighting with their hands. The lecture-in-eight-minutes: regression as stratification-continued (the 'one-model-does-all-strata' idea), logistic output as log-odds and the exponentiate-to-odds-ratio step (with the common-outcome inflation from the ratios chapter re-derived numerically: an adjusted OR of 1.8 on a 30-percent baseline is a risk ratio nearer 1.4 - they compute it), and the 'adjust-for-causes-not-consequences-not-mediators' diagram from the bias chapter imported in one slide. The misreading to hunt: 'independently associated' recited as 'causes' - and its guideline consequence (the 'protective-factor-prescription' fallacy, the statin-and-HRT-and-hormone-therapy healthy-user history as the cautionary film). The transfer task: a real guideline's evidence table with two adjusted-effect claims; they write the sentence naming what was adjusted, what should not have been, and what remains confounded - then check it against the guideline's own footnotes. The closing device: each registrar's next journal club gets the sentence 'what did the model adjust for, and should it have?' as their assigned line in the critique - the habit is the session; the arithmetic is available on every ward wall.**
+The probability that none is significant is $0.95^{20} = 0.358$. So the probability that at least one is significant is $1 - 0.358 = 0.642$, or 64.2%. A "significant" finding among many outcomes is weak evidence unless it was the prespecified primary outcome or the analysis was corrected for multiplicity.
 :::
 :::
 
-::: exercise Judge the interim {level=2}
-A trial's second interim analysis (55 percent information) shows the primary endpoint's P = 0.048; the data monitoring committee's recommendation reaches the press as 'trial hits primary endpoint'. Explain the boundary logic, the stopping decision's statistics, and the publication the public deserves.
+::: exercise When the NNT interval crosses infinity {level=3}
+A fictional trial finds an ARR of 2 percentage points with a 95% CI of −1 to 5 points. What is the NNT, and how should its confidence interval be described?
 ::: solution
-**Boundaries-versus-headlines ([[epidemiology-ebm/randomised-trials]], [[#def-inference]]): The boundary logic: group-sequential designs spend alpha at looks; an O'Brien-Fleming boundary at 55-percent-information is typically around P = 0.02-0.03, so P = 0.048 at that look does not cross the design's bar - continuing is the protocol's answer (stopping here spends the design's honesty and produces an optimistically biased estimate - the winner's-curse property the early-stopping literature documents). If instead a boundary were crossed, the statistics of stopping: the point estimate is conditionally biased upward (the sequential-likelihood and median-unbiased corrections exist but are rarely published), the safety and secondary endpoints are immature (the information they lacked when the champagne opened), and the confidence interval's nominal coverage is only restored by the boundary-aware methods. The publication the public deserves: the interim's existence and design registered before the look; the boundary-and-estimate reported together (the 'P-value-relative-to-boundary' format, not 'hit the endpoint'); the follow-up commitment stated (stopping-randomised-but-following-anyway designs and their ethics-review conditions); and the meta-analytic framing (trial-sequential-analysis style: is the cumulative evidence across trials past the required information? one boundary-crossing trial inside an immature literature is the classic premature-consensus setup the cardiology and thrombolysis histories rehearsed). The press-office correction the committee should issue itself: 'the analysis did not cross the pre-specified stopping boundary; the trial continues as planned' - which is what a data monitoring committee's charter is for, and whose absence from the news cycle is the story.**
+$NNT = 1/0.02 = 50$. Inverting the confidence limits gives $1/0.05 = 20$ (benefit) and $1/(-0.01) = -100$, an NNH of 100. Because the ARR interval includes 0, the NNT interval passes through infinity (no effect). It should be reported as "NNT 50 (95% CI: NNT 20 to infinity to NNH 100)", which means the data are compatible with benefit for 1 in 20 treated, with no effect, or with harm for 1 in 100. Reporting "NNT 50 (−100 to 20)" is confusing and wrong. Altman described this convention in 1998.
+:::
+:::
+
+::: exercise Interpreting two trials {level=3}
+Two fictional trials test the same drug for reducing pain on a 0–100 scale, where the minimal clinically important difference is 10 points. Trial A: mean difference 4 points (95% CI 2 to 6). Trial B: mean difference 12 points (95% CI −2 to 26). Interpret each trial, and explain what a clinician should conclude.
+::: solution
+**Trial A** shows a statistically significant difference, but the whole interval lies below the MCID of 10. The drug probably has a real but clinically unimportant average effect. (Some individual patients may still benefit more than average.)
+
+**Trial B** is not statistically significant, because the interval includes 0. But the point estimate exceeds the MCID, and the interval extends well above it. The trial is imprecise: the drug could have no effect or a large one.
+
+Taken together, the precise Trial A suggests that a large average effect is unlikely, since its upper limit is 6. The clinician should conclude that the average benefit is probably small, and look for a systematic review combining all trials. Neither trial supports the statement "the drug works" or "the drug does not work" on the basis of its p-value alone.
 :::
 :::
