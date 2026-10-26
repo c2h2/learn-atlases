@@ -5,12 +5,12 @@
   "area": "systems",
   "level": 2,
   "order": 140,
-  "tagline": "Digestion and absorption, the gut, the liver, the pancreas and biliary tract, and clinical nutrition",
-  "summary": "The gut digests and absorbs food and the liver processes what is absorbed. This course covers the physiology of digestion, disorders of the oesophagus, stomach and bowel, gastrointestinal bleeding and cancer, the liver and its diseases, the pancreas and biliary tract, and clinical nutrition.",
+  "tagline": "Digestion and absorption, the oesophagus, stomach and bowel, the liver, the pancreas and biliary tract, and clinical nutrition",
+  "summary": "The gut digests and absorbs food, and the liver processes what is absorbed. This course covers the physiology of digestion, disorders of the oesophagus, stomach and bowel, gastrointestinal bleeding and cancer, liver tests and liver disease, the pancreas and biliary tract, and clinical nutrition.",
   "overview": [
-    "The gastrointestinal tract does one job — get fuel and water from outside the body to inside — and does it through motility, secretion, digestion, absorption and a mucosal barrier carrying the body's largest lymphoid mass, all while the liver metabolises, detoxifies, synthesises and regulates on an industrial scale. Diseases of the system present with a short list of symptoms (pain, altered bowel habit, bleeding, vomiting, jaundice, weight loss, dysphagia) whose combinations localise the lesion better than almost any other branch of medicine.",
-    "This course begins with the physiology you need: secretion and its control, motility, digestion and absorption, and the enterohepatic circulation. It then moves regionally — oesophagus and stomach (reflux, ulcer disease and Helicobacter, dyspepsia, cancer); the small and large bowel (coeliac disease, inflammatory bowel disease, coeliac's mimics, diverticular disease, obstruction, irritable bowel); gastrointestinal bleeding and cancer screening and surveillance. Liver chapters cover liver function tests as a physiological puzzle, then jaundice, hepatitis, cirrhosis and its complications, and liver failure; then pancreatitis and biliary disease. A final chapter on clinical nutrition ties it together: starvation metabolism, enteral and parenteral feeding, and the refeeding problem.",
-    "Quantitative work runs throughout: clearance and synthetic tests of liver function, the transtubular handling of bile salts, osmotic and faecal gap arithmetic in diarrhoea, rising bilirubin fractions, pancreatic enzyme kinetics, energy and nitrogen requirements. Clinical cases follow each mechanism, because in gastroenterology the history is the differential — and the differentials are long and the treatments frequently unromantic."
+    "The gastrointestinal tract moves, secretes, digests and absorbs: it takes in food and about 2 litres of drink a day, adds about 7 litres of its own secretions, and returns almost all of it to the body. The liver then processes what has been absorbed, makes most plasma proteins and clears drugs and bilirubin. Diseases of the system present with a fairly short list of symptoms, such as pain, a change in bowel habit, bleeding, vomiting, jaundice, weight loss and difficulty swallowing, and the pattern of these symptoms often points to the organ involved.",
+    "The course starts with the physiology of motility, secretion, digestion and absorption, including the enterohepatic circulation and the mechanisms of diarrhoea. It then works through the oesophagus and stomach (dysphagia, reflux, Helicobacter pylori and peptic ulcer), the small and large bowel (coeliac disease, inflammatory bowel disease, irritable bowel syndrome, diverticular disease and appendicitis), and gastrointestinal bleeding and cancer, including bowel cancer screening. Two chapters cover the liver: how to read liver tests and approach jaundice, and the causes and complications of liver disease. The pancreas and biliary tract follow, and a final chapter covers malnutrition, refeeding syndrome, enteral and parenteral nutrition and obesity.",
+    "Each chapter combines mechanisms with worked clinical cases and simple calculations, such as the faecal osmotic gap, the Glasgow–Blatchford score, the R ratio, FIB-4, MELD, the serum–ascites albumin gradient and nutritional requirements. Management is described in principle and refers to current UK guidance from NICE and the British Society of Gastroenterology, with international guidance where it is standard."
   ],
   "prerequisites": [
     "anatomy",
@@ -20,14 +20,15 @@
     "microbiology"
   ],
   "outcomes": [
-    "Explain the secretion, motility and absorptive functions of each gut region and their neural and hormonal control, and locate common drug targets (proton pump, prokinetic, antisecretory).",
-    "Evaluate dyspepsia, reflux and dysphagia: the mechanisms of lower oesophageal sphincter failure, peptic ulcer disease with Helicobacter and NSAIDs, and the alarm features that mandate endoscopy.",
-    "Work through acute and chronic upper and lower gastrointestinal bleeding: localise, estimate severity from observations and bloods, and describe resuscitation and endoscopic principles.",
-    "Explain the mechanisms of diarrhoea (osmotic, secretory, inflammatory, motility) and use stool osmotic gap and history to classify a case; outline coeliac disease pathogenesis and diagnosis.",
-    "Compare Crohn's disease and ulcerative colitis in pathology, distribution, manifestations outside the gut, investigation and treatment strategy, including biologics logic.",
-    "Interpret liver function tests — hepatocellular versus cholestatic — and work through jaundice, the causes of acute and chronic hepatitis, cirrhosis with its complications (varices, ascites, encephalopathy, spontaneous bacterial peritonitis, hepatocellular carcinoma) and acute liver failure.",
-    "Apply the pathophysiology and severity assessment of acute and chronic pancreatitis and of gallstone disease and its complications, including cholangitis.",
-    "Calculate energy, fluid and nitrogen requirements, describe enteral and parenteral nutrition and their complications, and recognise refeeding syndrome risk and prevention."
+    "Explain the motility, secretion, digestion and absorption of each region of the gut, their neural and hormonal control, and the enterohepatic circulation of bile salts.",
+    "Classify diarrhoea as osmotic, secretory, inflammatory or motility-related, and use the faecal osmotic gap and the pattern of deficiencies to localise malabsorption.",
+    "Evaluate dysphagia, reflux and dyspepsia, explain the role of Helicobacter pylori and NSAIDs in peptic ulcer, and recognise the alarm features that require urgent endoscopy.",
+    "Compare Crohn's disease and ulcerative colitis, recognise acute severe colitis, and describe the diagnosis and management of coeliac disease, irritable bowel syndrome, diverticulitis and appendicitis.",
+    "Assess and outline the management of upper and lower gastrointestinal bleeding, including risk scoring, and describe the investigation of iron deficiency and the principles of bowel cancer screening.",
+    "Interpret liver blood tests as patterns of injury, cholestasis and synthetic failure, and work through the causes of jaundice.",
+    "Describe the main causes of liver disease and the complications of cirrhosis, including portal hypertension, ascites, spontaneous bacterial peritonitis, encephalopathy and hepatocellular carcinoma.",
+    "Diagnose gallstone disease, cholangitis and acute pancreatitis, grade the severity of pancreatitis, and recognise the presentation of pancreatic and biliary cancer.",
+    "Screen for malnutrition, estimate energy, protein and fluid requirements, prevent refeeding syndrome, and choose between oral, enteral and parenteral nutrition."
   ],
   "chapters": [
     {
@@ -106,92 +107,137 @@
     {
       "year": 1822,
       "title": "A window into the stomach",
-      "detail": "After a gunshot leaves Alexis St Martin's stomach fistulated, William Beaumont at Fort Hancock and later in New Haven performs controlled digestion experiments through the opening — the first direct observations of gastric secretion, motility and the effects of emotion and food on digestion.",
+      "detail": "A gunshot wound leaves Alexis St Martin with a permanent opening into his stomach. The army surgeon William Beaumont uses it over the next decade to sample gastric juice and observe digestion directly, publishing his experiments in 1833.",
       "people": [
         "William Beaumont"
       ]
     },
     {
       "year": 1868,
-      "title": "The first endoscope",
-      "detail": "Adolf Kussmaul builds a 'gastroscope' from a lion tamer's pharyngoscope and demonstrates it on a sword-swallower; gastrointestinal endoscopy has begun, though safe upper-tract examination must wait for Katsch and Schindler's semirigid instrument (1932) and then for fibreoptics.",
+      "title": "Looking inside the stomach",
+      "detail": "Adolf Kussmaul passes a rigid tube into the stomach of a professional sword-swallower, an early demonstration that the upper gut could be inspected directly.",
       "people": [
         "Adolf Kussmaul"
       ]
     },
     {
-      "year": 1897,
-      "title": "The psychosomatic stomach",
-      "detail": "Ivan Pavlov's chronic-denervation preparations ('sham feeding') show that appetite and gastric secretion are reflexes of the head — a discovery that made him a Nobel laureate and launched a century of work on brain–gut interaction that still frames functional dyspepsia and IBS.",
-      "people": [
-        "Ivan Pavlov"
-      ]
-    },
-    {
       "year": 1902,
-      "title": "Secretin — the first hormone",
-      "detail": "Bayliss and Starling's perfusion experiments in the dog gut identify a blood-borne messenger released from duodenal mucosa by acid; the finding, in the organ of digestion, gives physiology its concept of hormonal regulation.",
+      "title": "Secretin, the first hormone",
+      "detail": "William Bayliss and Ernest Starling show that acid in the duodenum triggers pancreatic secretion through a substance carried in the blood, which they call secretin. Starling later introduces the word \"hormone\".",
       "people": [
         "William Bayliss",
         "Ernest Starling"
       ]
     },
     {
+      "year": 1904,
+      "title": "The nervous control of digestion",
+      "detail": "Ivan Pavlov receives the Nobel Prize in Physiology or Medicine for his work on the nervous control of digestive secretion, including the cephalic phase of gastric secretion.",
+      "people": [
+        "Ivan Pavlov"
+      ]
+    },
+    {
       "year": 1957,
       "title": "The flexible endoscope",
-      "detail": "Basil Hirschowitz, with a Nikon micro-engineer and a University of Pittsburgh physicist, builds the first fibreoptic gastroduodenoscope; within a decade upper gastrointestinal endoscopy replaces the barium meal as the first investigation for dyspepsia and becomes a therapeutic instrument.",
+      "detail": "Basil Hirschowitz and colleagues test the first fibreoptic gastroscope, which makes inspection and biopsy of the upper gut routine.",
       "people": [
         "Basil Hirschowitz"
       ]
     },
     {
-      "year": 1979,
-      "title": "A new way to stop acid",
-      "detail": "Astra researchers building on receptor physiology and H+/K+-ATPase biology take omeprazole — the first proton pump inhibitor — into clinical use at the end of the decade; profound, long-lasting acid suppression transforms ulcer, reflux and bleeding disease, and becomes one of the world's best-selling drug classes.",
+      "year": 1965,
+      "title": "The Australia antigen",
+      "detail": "Baruch Blumberg identifies an antigen later shown to be the surface protein of hepatitis B virus, leading to diagnostic tests and vaccines. He shares the 1976 Nobel Prize.",
       "people": [
-        "Astra (research team of Bengt-Ivar Wallmark and Lars-Henning Jönsson)"
+        "Baruch Blumberg"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Liver transplantation",
+      "detail": "After a first attempt in 1963, Thomas Starzl in Denver performs the first liver transplant with prolonged survival. Roy Calne in Cambridge later develops the European programme.",
+      "people": [
+        "Thomas Starzl",
+        "Roy Calne"
       ]
     },
     {
       "year": 1982,
       "title": "Helicobacter pylori",
-      "detail": "Barry Marshall and Robin Warren in Perth grow the curved bacterium from gastric biopsies and argue that it, not stress or acid alone, causes most peptic ulcer and predicts cancer; after Marshall's self-inoculation and worldwide trials, peptic ulcer becomes a curable infectious disease and Warren and Marshall share the 2005 Nobel Prize.",
+      "detail": "Robin Warren and Barry Marshall in Perth culture a spiral bacterium from gastric biopsies and propose that it causes gastritis and peptic ulcer. Eradication therapy turns ulcer disease into a curable infection, and they receive the Nobel Prize in 2005.",
       "people": [
-        "Barry Marshall",
-        "Robin Warren"
+        "Robin Warren",
+        "Barry Marshall"
       ]
     },
     {
-      "year": 1988,
-      "title": "Transplant becomes routine",
-      "detail": "After Starzl's early and disheartening Cleveland liver grafts and Calne's piggyback technique in Cambridge, orthotopic liver transplantation with cyclosporine-based immunosuppression is established for end-stage and acute liver disease — a niche for the model of MELD-based allocation adopted in 1999 that puts the sickest first.",
+      "year": 1989,
+      "title": "Hepatitis C is identified",
+      "detail": "Michael Houghton and colleagues clone the genome of the main cause of non-A, non-B hepatitis. Harvey Alter, Michael Houghton and Charles Rice share the 2020 Nobel Prize, and direct-acting antivirals now cure most infections.",
       "people": [
-        "Thomas Starzl",
-        "Roy Calne"
+        "Michael Houghton",
+        "Harvey Alter",
+        "Charles Rice"
       ]
     }
   ],
   "references": [
     {
-      "title": "The Gastrointestinal Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the organ and the gut.",
+      "title": "Sleisenger and Fordtran's Gastrointestinal and Liver Disease, 11th edition",
+      "authors": "Mark Feldman, Lawrence S. Friedman, Lawrence J. Brandt (eds)",
+      "year": 2021,
+      "note": "The comprehensive reference textbook of gastroenterology and hepatology.",
       "slug": "ref1"
     },
     {
-      "title": "The Gastrointestinal Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the organ and the system.",
+      "title": "Sherlock's Diseases of the Liver and Biliary System, 13th edition",
+      "authors": "James S. Dooley, Anna S. F. Lok, Guadalupe Garcia-Tsao, Massimo Pinzani (eds)",
+      "year": 2018,
+      "note": "A classic clinical textbook of hepatology.",
       "slug": "ref2"
     },
     {
-      "title": "Clinical Gastrointestinal",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the gut and the practice.",
+      "title": "Kumar and Clark's Clinical Medicine, 10th edition",
+      "authors": "Adam Feather, David Randall, Mona Waterhouse (eds)",
+      "year": 2020,
+      "note": "A standard UK textbook of medicine with clear gastroenterology and liver chapters.",
       "slug": "ref3"
+    },
+    {
+      "title": "Guyton and Hall Textbook of Medical Physiology, 14th edition",
+      "authors": "John E. Hall, Michael E. Hall",
+      "year": 2020,
+      "note": "Gastrointestinal physiology: motility, secretion, digestion and absorption.",
+      "slug": "ref4"
+    },
+    {
+      "title": "Gastro-oesophageal reflux disease and dyspepsia in adults: investigation and management (CG184)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2014,
+      "note": "UK guidance on dyspepsia, reflux and Helicobacter pylori; updated 2019.",
+      "slug": "ref5"
+    },
+    {
+      "title": "Nutrition support for adults: oral nutrition support, enteral tube feeding and parenteral nutrition (CG32)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2006,
+      "note": "UK guidance on malnutrition screening, requirements and refeeding syndrome; updated 2017.",
+      "slug": "ref6"
+    },
+    {
+      "title": "Guidelines on the management of abnormal liver blood tests",
+      "authors": "Philip N. Newsome et al. (British Society of Gastroenterology)",
+      "year": 2018,
+      "note": "Published in Gut; the basis of the liver aetiology screen.",
+      "slug": "ref7"
+    },
+    {
+      "title": "Guidelines on the management of ascites in cirrhosis",
+      "authors": "Guruprasad P. Aithal et al. (British Society of Gastroenterology and British Association for the Study of the Liver)",
+      "year": 2021,
+      "note": "Published in Gut; covers diagnostic paracentesis, diuretics, albumin and spontaneous bacterial peritonitis.",
+      "slug": "ref8"
     }
   ],
   "next": [

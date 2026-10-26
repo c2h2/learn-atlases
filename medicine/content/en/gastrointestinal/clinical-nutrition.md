@@ -1,144 +1,327 @@
-Nutrition is the branch of medicine in which the commonest error is not prescribing it and the second commonest is starting it dangerously. **The gut is an organ that atrophies when unused and heals when fed; starvation carries a metabolic signature (the refeeding electrolyte crash) as real as diabetic ketoacidosis; and hospital malnutrition behaves like an epidemic that every ward sees and few count.** This chapter is the physiology of feeding sick people, safely.
+Malnutrition is common in hospital and in the community, and it is easy to miss. Around one in three adults admitted to hospital in the UK is at risk of malnutrition on screening, and the proportion is higher in care homes. Malnourished people heal more slowly, get more infections, lose muscle strength, stay longer in hospital and are more likely to die. Yet malnutrition is often unrecorded, because people with a normal or high body weight can still be malnourished and because illness itself reduces appetite.
 
-This chapter covers nutritional assessment and deficiency, enteral nutrition, parenteral nutrition and intestinal failure, and the refeeding-syndrome hazard.
+At the other end of the spectrum, obesity affects about a quarter of adults in England and drives type 2 diabetes, cardiovascular disease, fatty liver disease and many cancers. Both problems are matters of nutrition, and both are increasingly treated with medical and surgical tools.
 
-## Assessment
+This chapter covers nutritional assessment and screening, the physiology of starvation, how to estimate requirements, refeeding syndrome, enteral and parenteral nutrition, intestinal failure, and the medical management of obesity. It builds on digestion and absorption in [[gastrointestinal/digestion-absorption]] and the biochemistry of nutrients in [[cell-biochemistry/nutrition]].
 
-::: definition Requirements, screening and deficiency {#def-assessment}
-**Requirements (roughly 25-30 kcal/kg/day and 1.0-1.5 g protein/kg/day rising with injury and sepsis — the hypermetabolic-versus-autophagy debate of critical care — [[gastrointestinal/clinical-nutrition]]'s own phase logic; water and electrolyte arithmetic — [[renal/water-sodium]]; the micronutrient ledger below). Screening (why every admission gets one: the MUST tool and SGA and MUST's twin national tools; the dietitian-referral triggers; the "weight-chart-and-albumin-are-not-a-diagnosis" correction — [[clinical-skills/laboratory-tests]], [[geriatrics-palliative/polypharmacy]]-adjacent-depression-and-dentition-checks — [[psychiatry/mood-disorders]], [[nervous-system/sensory-systems]]; the oral-health-and-denture-and-swallow first-hour-basics [[clinical-skills/physical-examination]]). Malnutrition definitions (the GLIM-criteria formalisation of "reduced intake plus weight loss plus functional decline"; sarcopenia-muscle-loss as the outcome that predicts everything — [[geriatrics-palliative/ageing-frailty]]). The deficiency map (protein-energy malnutrition as marasmus-and-wasting-versus-kwashiorkor-and-oedema-and-low-albumin-and-flaky-paint-dermatosis — the global-health dual and the hospital oedematous-misfed variant — [[public-health/global-health]], [[public-health/prevention-promotion]]); thiamine (the Wernicke-Korsakoff emergency and the "glucose-before-thiamine" myth-debunk-order — [[nervous-system/dementia-neurodegeneration]], [[psychiatry/substance-use]], [[emergency-critical-care/acute-assessment]]; refeeding-context prophylaxis dosing); vitamin C (the garden-and-tea-and-tin-opener scurvy with perifollicular haemorrhage and corkscrew hairs and poor wound-healing — [[surgery/wounds-surgical-infection]], [[musculoskeletal/skin]], [[blood/haemostasis-bleeding]]-adjacent-vascular-fragility, and [[public-health/determinants-inequalities]]'s food-poverty framing); vitamin D-and-calcium (the osteomalacia-and-myopathy picture — [[endocrine/bone-calcium]]); vitamin A (night-blindness-and-xerophthalmia and the repletion-restart-arithmetic — [[nervous-system/sensory-systems]], [[public-health/global-health]]); vitamin K (the correctable INR — [[gastrointestinal/liver-function]], [[blood/haemostasis-bleeding]]); B12-and-folate (the [[gastrointestinal/digestion-absorption]]-lesson-anaemia-neuropathy pair and metformin-and-PPI-and-dietary causes); iron (the address-rule and the hepcidin-of-inflammation confound — [[blood/anaemia]], [[immunology/innate-immunity]]); the trace elements (zinc — the rash-and-diarrhoea-and-alopecia-acrodermatitis picture and the wound-healing claim, copper — the anaemia-neutropenia-and-myelopathy mimicking B12 deficiency, selenium — the cardiomyopathy and the parenteral-nutrition-omission history — [[cardiovascular/heart-failure]], [[pathology/environmental-pathology]]); and the fat-soluble-versus-water-soluble pharmacokinetic logic that predicts who runs out first ([[gastrointestinal/digestion-absorption]]'s absorption addresses, [[pharmacology/absorption-distribution]]).**
+## Starvation physiology
+
+The body has three fuel stores. **Glycogen** in the liver provides glucose for about a day. **Fat** is the largest store, enough for weeks in a person of normal weight. **Protein** is not a store at all; every gram used for fuel comes from muscle, enzymes or other working tissue.
+
+::: theorem Starvation shifts the body from glucose to ketones to spare protein {#thm-starvation}
+In prolonged fasting, the body progressively reduces its use of glucose and increases its use of fat-derived fuels. By the end of the first week the brain obtains much of its energy from **ketone bodies**, which reduces the need to make glucose from amino acids and so slows the loss of muscle protein.
 :::
 
-::: definition Refeeding syndrome {#def-refeeding}
-**Mechanism (starvation switches to fat-and-ketone burning with depleted intracellular phosphate stores despite near-normal serum levels; carbohydrate reintroduction triggers insulin, which drives phosphate, potassium and magnesium intracellularly plus sodium-and-water retention and thiamine-consumption — an electrolyte avalanche over 2-5 days: hypophosphataemia with respiratory-muscle failure, cardiac arrhythmia and rhabdomyolysis; hypokalaemia and hypomagnesaemia with their arrhythmia and replacement-resistance arithmetic; fluid shifts with heart failure; the Wernicke precipitant; [[renal/potassium-calcium-phosphate]]'s replacement pharmacology, [[cardiovascular/arrhythmias]], [[physiology/muscle]]'s ATP chemistry, [[cell-biochemistry/energy-metabolism]]). High-risk criteria (BMI below ~16-18.5 territory, >10-15 % weight loss in 3-6 months, little-or-no intake >7-10 days, low baseline electrolytes, plus the alcohol-and-surgery-and-chemotherapy modifiers; the intermediate-risk tier); the protocol (check-and-replete-electrolytes-and-thiamine-and-multivitamins BEFORE and during refeeding; start low-and-go-slow calories with daily-then-twice-weekly monitoring; ECG-and-fluid-balance discipline; the modern higher-initiation-calories trials with their safety conditions and the "fastest safe rather than slowest" debate — [[epidemiology-ebm/randomised-trials]]); the clinical settings (anorexia nervosa refeeding — [[psychiatry/eating-personality-disorders]]; the older medical inpatient; the bariatric and post-surgical patient — [[surgery/perioperative-care]]; the palliative cachexia paradox where feeding does not reverse the trajectory — [[geriatrics-palliative/palliative-care]]); and the team rule (the dietitian-written-refeeding-plan-and-the-nurse-monitored-electrolyte-schedule as the never-event-avoidance architecture — [[clinical-skills/patient-safety]], [[clinical-skills/records-handover]]).**
+::: proof
+After an overnight fast, insulin falls and glucagon rises. The liver breaks down glycogen and begins **gluconeogenesis**, using lactate, glycerol and amino acids from muscle. The brain and red cells initially depend on glucose, so early fasting costs a substantial amount of protein each day.
+
+As fasting continues, low insulin allows lipolysis to release fatty acids, which most tissues use directly. The liver oxidises fatty acids and converts the acetyl-CoA into **ketone bodies** (acetoacetate and β-hydroxybutyrate). Over several days, blood ketones rise enough for the brain to take them up and use them. As the brain's demand for glucose falls, so does the need for gluconeogenesis from amino acids, and urinary nitrogen loss decreases. Resting energy expenditure also falls, partly through reduced thyroid hormone activation.
+
+Illness changes this adaptation. In sepsis, trauma and major surgery, stress hormones and cytokines drive protein breakdown regardless of energy intake, and ketosis is blunted. A critically ill person can lose muscle rapidly even when fed, which is why nutrition in acute illness reduces losses rather than preventing them completely.
 :::
 
-## Feeding tubes and drips
+The adaptation also explains why refeeding is risky. During starvation, intracellular stores of phosphate, potassium, magnesium and thiamine are depleted, even when blood levels look normal. Feeding reverses the hormonal state abruptly.
 
-::: definition Enteral nutrition {#def-enteral}
-**The maxim ("if the gut works, use it" — mucosal integrity-and-tract-patency-and-immune-and-metabolic-cost arguments; the critical-care trials — the CALORIES-and-EPaNIC-and-NUTREA-comparisons — that moved early-trophic-feeding-then-escalation into routine — [[emergency-critical-care/critical-care]]). Access (nasogastric for short-term with the placement-verification and misplacement-injury history and the capnography-or-X-ray rule — [[clinical-skills/patient-safety]]; post-pyloric and nasojejunal for high-aspiration-risk-or-gastric-paresis — [[gastrointestinal/oesophagus-stomach]]'s gastroparesis section; PEG and RIG and radiologically-inserted-gastrostomy and surgical jejunostomy with the early-dislodgement-and-buried-bumper-and-gastrocolic-fistula complications and the stoma-care teaching — [[surgery/gastrointestinal-surgery]]). Regimens (whole-protein-versus-peptide-based-versus-elemental-formula selection — [[cell-biochemistry/proteins-enzymes]]'s PepT1 absorption lesson; continuous-versus-bolus feeding with the aspiration-question; fibre-addition logic; the drug-administration-pitfalls — crush-versus-liquid-versus-extended-release-ruin and the phenytoin-and-fluoroquinolone-and-levothyroxine-binding interactions with feeds — [[pharmacology/absorption-distribution]], [[pharmacology/drug-receptor]]). Monitoring-and-complications (gastric-residual-controversy and the prokinetic options — [[gastrointestinal/oesophagus-stomach]]; diarrhoea-multifactorial-with-C-difficile-and-laxatives-and-rate — [[microbiology/antimicrobials]], [[gastrointestinal/digestion-absorption]]; aspiration-prevention-head-elevation-and-oral-care — [[respiratory/respiratory-infections]] and the ventilator-associated-pneumonia package [[infectious-diseases/healthcare-infections]]; tube-blockage-and-flushing-discipline; the metabolic-track — glucose-insulin-regimens and electrolytes and the refeeding interface [[#def-refeeding]]). Disease-specific uses (the stroke pathway — early-formal-swallow-assessment-and-NG-feeding-first-with-the-PEG-after-2-3-weeks-if-persistent-dysphagia-decision and the coma-and-end-of-life-PEG-ethics — [[nervous-system/stroke]], [[medical-ethics-law/end-of-life-ethics]], [[medical-ethics-law/consent-capacity]]; exclusive-enteral-nutrition-as-first-line-induction-in-paediatric-Crohn's with its bone-and-growth-superiority-versus-steroids argument — [[gastrointestinal/bowel-disease]], [[paediatrics/growth-development]], [[endocrine/bone-calcium]]; the head-and-neck-cancer radiotherapy-feeding plan and PEG-before-treatment — the pelvic-radiation-mucositis parallel ([[obstetrics-gynaecology/gynaecological-cancer]]) and the head-and-neck oncology anatomy ([[anatomy/head-neck]]); pancreatitis — early oral feeding with nasoenteric-no-benefit-over-nasogastric — [[gastrointestinal/pancreas-biliary]]'s pancreatitis section; the ICU early-feeding-hour-target and the interruption-audit — [[emergency-critical-care/critical-care]]; dysphagia-management and the IDDSI-framework and the capacity-and-assisted-feeding conversation — [[geriatrics-palliative/delirium-dementia-care]], [[clinical-skills/communication]]).**
+## Assessment and screening
+
+::: definition Malnutrition and nutritional screening {#def-assessment}
+**Malnutrition** is a state in which a deficiency of energy, protein and other nutrients causes measurable adverse effects on body composition, function or clinical outcome. NICE guideline CG32 defines it in adults as any of:
+
+- a body mass index (BMI) below 18.5 kg/m²;
+- unintentional weight loss of more than 10% within the last 3 to 6 months;
+- a BMI below 20 kg/m² with unintentional weight loss of more than 5% within the last 3 to 6 months.
+
+**Screening** identifies people at risk so that they can be assessed and treated. In the UK the commonest tool is the **Malnutrition Universal Screening Tool** (MUST), which scores BMI, recent unintentional weight loss and the effect of acute illness on intake. NICE recommends screening on admission to hospital, at first outpatient appointments, and on registration with a GP practice where there is clinical concern.
 :::
 
-::: definition Parenteral nutrition and intestinal failure {#def-parenteral}
-**Indications (the gut unavailable or failing: obstruction-and-intestinal-failure-with-short-bowel-syndrome and high-output fistula and prolonged ileus and mesenteric ischaemia recovery and the antepartum-teratogen-era niche — [[surgery/gastrointestinal-surgery]], [[gastrointestinal/bowel-disease]]'s fulminant-colitis-window [[gastrointestinal/bowel-disease]]; the contraindications and the palliative-futility conversation — [[geriatrics-palliative/palliative-care]], [[medical-ethics-law/end-of-life-ethics]]). Prescription (the central-venous-access requirement with its CLABSI-and-thrombosis burden — [[infectious-diseases/healthcare-infections]]; the all-in-one-bag arithmetic — dextrose-and-lipid energy split with the lipid-entrapment-of-drugs note, amino-acid-nitrogen targets, the trace-element-and-vitamin-mix omission-errors history, and the electrolyte-fluid individualisation with renal-and-hepatic adjustments — [[renal/chronic-kidney-disease]], [[gastrointestinal/liver-function]]; the daily-then-weekly monitoring grid — glucose-insulin sliding-scale coverage and BID and U&Es-and-LFTs-and-triglycerides — [[endocrine/diabetes-complications]]-adjacent-insulin-delivery [[pharmacology/dosing-principles]]). Complications (the metabolic — hyperglycaemia-and-hypoglycaemia-on-stoppage-and-electrolyte-shifts-and-refeeding-interface [[#def-refeeding]] and the essential-fatty-acid-deficiency and trace-element-deficiency-of-omission; the line — sepsis with line-change-and-lock-technique-and-antibiotic-choices and candidaemias — [[microbiology/fungi-parasites]], [[microbiology/antimicrobials]], catheter-related-bloodstream-infection-bundles — [[infectious-diseases/healthcare-infections]], [[clinical-skills/patient-safety]] — and central-vein thrombosis — [[cardiovascular/vascular-disease]]; the liver — intestinal-failure-associated-liver-disease with the cyclical-feeding-and-lipid-formulation-modifications and the sepsis-and-small-bowel-overgrowth contributors [[microbiology/microbiota]] and the transplant-threshold — [[gastrointestinal/liver-disease]], [[immunology/transplant-tumour-immunology]]). Short bowel syndrome (the anatomical-functional classification; the acute phase — fluid-and-electrolyte-resuscitation-with-the-Na-and-Mg-and-K-ledger [[renal/potassium-calcium-phosphate]] and the acid-base question of D-lactic acidosis and bicarbonate handling [[renal/acid-base-disorders]]; the adaptive phase — trophic-hormone-driven mucosal hypertrophy over months with the gluten-and-fibre-and-complex-carbohydrate diet evolution and the adaptation-curve figure below; the antisecretory-and-antimotility ladder — PPI-or-H2-high-dose-and-loperamide-and-opioid-analogues-and-codeine-and-octreotide-with-its-gallstone-and-steatorrhoea-trade-offs — [[gastrointestinal/oesophagus-stomach]]-and-[[gastrointestinal/digestion-absorption]]; teduglutide — the GLP-2 analogue that enhances absorption with its mucosal-growth-and-polyp-surveillance-and-theoretical-cancer-cautions — [[endocrine/diabetes]]'s incretin-family biology and [[gastrointestinal/gi-bleeding-cancer]]'s surveillance logic; the bile-acid-and-fat-soluble-vitamin-and-B12-and-magnesium supplementation map [[#def-assessment]]; the oral-rehydration-solution-for-stoma-and-high-output physiology [[gastrointestinal/digestion-absorption]]'s SGLT1 lesson; and the PPI-hypermotility-and-D-lactate-and-renal-stone-and-bone disease-package — [[renal/urinary-tract]], [[endocrine/bone-calcium]]). Home parenteral nutrition (the intestinal-failure-unit referral-timing and the survival-and-5-year-reality; the home-pump technology-and-line-care-and-anticoagulation-locks and the patient-as-practitioner training — [[clinical-skills/patient-safety]]; the complication-ledger — line-sepsis-and-liver-and-thrombosis-and-fertility-and-pregnancy-with-PN — [[obstetrics-gynaecology/pregnancy-complications]]; and the transplant-options-intestinal-and-multivisceral with their immunosuppression-and-quality-of-life trade-offs — [[immunology/transplant-tumour-immunology]], [[medical-ethics-law/justice-resources]]).**
-:::
+| MUST step | Score 0 | Score 1 | Score 2 |
+|---|---|---|---|
+| BMI (kg/m²) | above 20 | 18.5–20 | below 18.5 |
+| Unplanned weight loss in 3–6 months | under 5% | 5–10% | over 10% |
+| Acutely ill and no or likely no intake for more than 5 days | | | 2 |
+
+A total of 0 indicates low risk, 1 medium risk and 2 or more high risk. Screening is the start, not the end: a high score triggers a full assessment, usually by a dietitian, and a care plan.
+
+International criteria from the Global Leadership Initiative on Malnutrition (**GLIM**, 2019) diagnose malnutrition when at least one **phenotypic** criterion (weight loss, low BMI or reduced muscle mass) is combined with at least one **aetiological** criterion (reduced intake or absorption, or inflammation from disease). This recognises that people with obesity can also be malnourished, particularly when they lose muscle during illness.
+
+A nutritional assessment covers diet history, weight history, examination for muscle wasting, oedema and signs of specific deficiencies, functional measures such as grip strength, and relevant blood tests. **Serum albumin is not a marker of nutritional status**: it falls in inflammation and with fluid shifts, and may be normal in severe starvation, as in anorexia nervosa.
 
 ::: widget plot
-f: 60*exp(-x/6)+8; 60*(1-exp(-x/5))
-x: 0, 18
-y: 0, 65
-labels: \text{months after massive resection},\ \text{percent};\ \text{PN requirement (\% of day-1 dose)};\ \text{enteral tolerance (\% of target)}
-caption: Intestinal adaptation after massive small-bowel resection ([[#def-parenteral]]): adaptive mucosal hypertrophy and fluid-and-electrolyte-and-absorptive recovery let parenteral nutrition taper over 12-24 months in most patients (the colon's energy-harvesting role if in continuity matters — [[gastrointestinal/digestion-absorption]]'s fermentation row); the illustration is curve-shaped teaching for the "will I be on drips forever" conversation ([[clinical-skills/communication]]) and the referral-and-rehabilitation timing of intestinal-failure services ([[public-health/health-systems-economics]]).
+f: 100*(a - x)/a
+x: 40, 90
+y: 0, 30
+sliders: a=70:50:100:1
+hlines: 5; 10
+labels: \text{unintentional weight loss (\%)}
+caption: Percentage weight loss plotted against current weight (kg) for a usual weight a (slider). The horizontal lines mark 5% and 10%, the thresholds used by MUST and NICE CG32 over 3 to 6 months. A loss that looks small in kilograms can cross these thresholds in a lighter person.
 :::
 
-::: example The dangerous second meal {#ex-refeeding}
-A 23-year-old with anorexia nervosa (BMI 13.2, 6 kg lost in 2 months, eating <200 kcal/day for weeks) is admitted for medical stabilisation; baseline K 3.4, phosphate 1.1, Mg 0.86, thiamine not yet given; the ward starts a "build-up diet" today and K becomes 2.7 and phosphate 0.5 tomorrow.
+### Estimating requirements
+
+For most adults, NICE CG32 suggests that nutrition support should provide, in total from all sources:
+
+- **energy**: 25–35 kcal/kg/day;
+- **protein**: 0.8–1.5 g/kg/day, which is about 0.13–0.24 g of nitrogen/kg/day;
+- **fluid**: 30–35 mL/kg/day, with allowance for extra losses;
+- adequate electrolytes, minerals, micronutrients and fibre.
+
+Protein is about 16% nitrogen by weight, so grams of protein divided by 6.25 gives grams of nitrogen. Energy needs are lower in people who are immobile or critically ill in the first days, and higher in recovery, sepsis, burns and with increased activity. Predictive equations such as the Henry or Harris–Benedict equations estimate resting energy expenditure from weight, height, age and sex; indirect calorimetry measures it in specialist settings. In obesity, calculating needs from actual body weight overestimates them, so an adjusted weight is used.
+
+**Nitrogen balance** compares nitrogen intake with nitrogen loss. Most nitrogen is lost as urea in urine, so losses can be estimated from a 24-hour urine collection. A negative balance means the body is breaking down protein; a positive balance means it is building tissue.
+
+### Micronutrients
+
+Specific deficiencies are common in malnutrition and in particular diseases.
+
+| Nutrient | Main features of deficiency | Typical settings |
+|---|---|---|
+| Thiamine (B1) | Wernicke encephalopathy, neuropathy, heart failure | alcohol dependence, vomiting, refeeding, bariatric surgery |
+| Vitamin B12 | megaloblastic anaemia, neuropathy | pernicious anaemia, ileal disease, gastrectomy |
+| Folate | megaloblastic anaemia | poor diet, coeliac disease, alcohol |
+| Vitamin D | osteomalacia, rickets | little sun exposure, darker skin at high latitude, malabsorption |
+| Vitamin K | bleeding, raised INR | malabsorption, antibiotics, no intake |
+| Zinc | rash, poor wound healing, diarrhoea | high-output stomas, fistulas, parenteral nutrition |
+| Iron | microcytic anaemia | blood loss, coeliac disease, bariatric surgery |
+
+**Wernicke encephalopathy** causes confusion, ataxia and abnormal eye movements, though most people have only one or two of these. It must be treated urgently with parenteral thiamine, and thiamine should be given **before** glucose in at-risk people, because glucose metabolism consumes thiamine and can precipitate it.
+
+## Refeeding syndrome
+
+::: definition Refeeding syndrome {#def-refeeding}
+**Refeeding syndrome** is the potentially fatal shift of fluid and electrolytes that can occur when nutrition is restarted after a period of starvation. Its hallmark is **hypophosphataemia**, often with hypokalaemia, hypomagnesaemia, thiamine deficiency and sodium and fluid retention. Under NICE CG32, a person is at **high risk** if they have **one** of:
+
+- BMI below 16 kg/m²;
+- unintentional weight loss of more than 15% in the last 3 to 6 months;
+- little or no nutritional intake for more than 10 days;
+- low potassium, phosphate or magnesium before feeding;
+
+or **two** of:
+
+- BMI below 18.5 kg/m²;
+- unintentional weight loss of more than 10% in the last 3 to 6 months;
+- little or no nutritional intake for more than 5 days;
+- a history of alcohol misuse, or drugs including insulin, chemotherapy, antacids or diuretics.
+:::
+
+The mechanism follows from starvation physiology. Feeding, especially with carbohydrate, causes insulin to rise. Insulin drives glucose, phosphate, potassium and magnesium into cells, and phosphate is consumed in making ATP and 2,3-BPG. Plasma levels fall sharply, sometimes within hours to days. Low phosphate causes muscle weakness, including respiratory muscle failure, heart failure, arrhythmias, haemolysis, confusion and seizures. Insulin also causes sodium and water retention, and a heart weakened by starvation can fail under the new volume load. Increased carbohydrate metabolism uses up thiamine and can precipitate Wernicke encephalopathy.
+
+Prevention follows NICE CG32. In people at high risk, nutrition is started at no more than **10 kcal/kg/day**, or 5 kcal/kg/day in extreme cases (for example BMI below 14 or negligible intake for more than 15 days), and increased to full needs over 4 to 7 days. Thiamine and other B vitamins are given before feeding starts and for the first 10 days. Potassium, phosphate and magnesium are supplemented and monitored daily at first, together with fluid balance and cardiac status. Specific doses come from local protocols. Over-cautious underfeeding has its own harm, particularly in anorexia nervosa, where specialist guidance supports faster increases with close monitoring.
+
+::: example A dangerous second meal {#ex-refeeding}
+A 72-year-old man who lives alone is admitted after being found on the floor. He has eaten very little for about 2 weeks and drinks heavily. Weight 48 kg, height 1.75 m. Potassium 3.2 mmol/L, phosphate 0.6 mmol/L (low), magnesium 0.6 mmol/L (low). The admitting team starts a full diet and intravenous glucose. On day 3 he is weak, breathless and confused, with ankle oedema and a phosphate of 0.25 mmol/L. Explain what happened and what should have been done.
 ::: solution
-**Iatrogenic refeeding syndrome (the [[#def-refeeding]] mechanism in textbook sequence — insulin-on-carbohydrate driving phosphate-potassium-magnesium intracellularly with thiamine consumption): the immediate saves (IV-phosphate-potassium-magnesium replacement with cardiac monitoring and the concentration-rate rules — [[renal/potassium-calcium-phosphate]], [[cardiovascular/arrhythmias]]; parenteral-then-enteral thiamine-plus-multivitamin BEFORE-or-with calories and the glucose-order myth-correction — [[nervous-system/dementia-neurodegeneration]]; slow-the-calories-and-re-advance-after-electrolyte-stabilisation with the dietitian protocol; the daily-monitored-bloods-and-fluid-balance-and-ECG-chart; and the psychiatric-co-management without weight-shaming and the MDT-with-family — [[psychiatry/eating-personality-disorders]], [[clinical-skills/communication]]). The system post-mortem (the refeeding-risk-screen should have flagged BMI-and-recent-loss on admission — the MUST-or-equivalent at first contact — [[clinical-skills/patient-safety]]; the dietitian-refeeding-plan and electrolyte-schedule ownership — [[clinical-skills/records-handover]]; and the training-point that refeeding hypophosphataemia is a never-event-adjacent harm when screened-for — the refeeding-guideline implementation literature — [[public-health/health-systems-economics]]).**
+**Step 1: assess his risk on admission.** BMI $= 48/1.75^2 = 15.7$ kg/m², which is below 16. He had little intake for more than 10 days and low potassium, phosphate and magnesium before feeding. Each of these alone makes him **high risk** for refeeding syndrome, and he also has a history of alcohol misuse.
+
+**Step 2: explain the deterioration.** Full feeding and glucose caused a rise in insulin, which drove phosphate, potassium and magnesium into cells. Severe **hypophosphataemia** caused muscle weakness, including the respiratory muscles, and confusion. Sodium and water retention with a starved myocardium caused oedema and possibly heart failure. Glucose without thiamine also risked **Wernicke encephalopathy**, which may contribute to his confusion.
+
+**Step 3: what should have happened.** Thiamine and vitamin B complex before any glucose or feed; correction of electrolytes alongside feeding; feeding started at no more than 10 kcal/kg/day, about 480 kcal/day for him, increasing over 4 to 7 days; daily monitoring of electrolytes, fluid balance and clinical state; and dietitian input. He now needs urgent replacement of phosphate, potassium and magnesium, parenteral thiamine, a temporary reduction in feeding, and cardiac monitoring.
 :::
 :::
 
-::: example The stroke with no safe swallow {#ex-stroke-feed}
-Six days post-stroke with left hemiplegia, a 79-year-old fails speech-and-language therapy twice (thin-liquid aspiration), cannot take >200 kcal/day orally, is aphasic but consistently indicates refusal of tubes when shown pictures; her daughter insists "do whatever it takes".
+## Enteral nutrition
+
+The order of choice is simple: if the gut works, use it. Oral nutrition is first, with food fortification and oral nutritional supplements. When a person cannot eat enough safely, **enteral tube feeding** is used.
+
+::: definition Enteral nutrition and its routes {#def-enteral}
+**Enteral nutrition** is the delivery of nutrition into the gastrointestinal tract, usually through a tube. The main routes are:
+
+- **nasogastric** (NG) tube, for short-term feeding, usually up to about 4 weeks;
+- **nasojejunal** (NJ) tube, when the stomach does not empty or there is a high risk of aspiration or pancreatitis;
+- **gastrostomy**, placed endoscopically (PEG) or radiologically (RIG), for longer-term feeding, usually when it is likely to be needed for more than about 4 weeks;
+- **jejunostomy**, often placed during upper gastrointestinal surgery.
+:::
+
+Enteral feeding preserves the gut barrier, is cheaper, and has fewer infectious complications than parenteral nutrition. Its main risks are tube misplacement, aspiration, diarrhoea and metabolic disturbance.
+
+**Placing an NG tube in the lung and then feeding through it is a "Never Event"** in the NHS. Before first use, and before each feed, the tube's position is checked by testing aspirate with pH indicator paper: a pH of **5.5 or below** supports gastric placement. If no aspirate is obtained or the pH is above 5.5, a chest radiograph interpreted by a trained person is required. Older methods such as listening for air ("whoosh test") are unsafe and must not be used.
+
+::: example A stroke with an unsafe swallow {#ex-stroke-feed}
+A 78-year-old woman has had a large left middle cerebral artery stroke. A speech and language therapist finds that she aspirates thin fluids and food, and she is unlikely to swallow safely for some time. She is drowsy but stable. How should her nutrition be provided in the first days and in the longer term?
 ::: solution
-**The 2-3-week decision moved early ([[#def-enteral]]): NG-feeding is the bridge with proven acceptability while waiting for spontaneous recovery; PEG is the right operation only if dysphagia persists past the usual ~2-3 week window — and only if consistent with the patient's own decisions ([[nervous-system/stroke]]-and-[[medical-ethics-law/consent-capacity]]). The architecture: **best-interest-or-capacity-analysis for a patient who can indicate choices (supported-decision-making with communication-aid-and-SLT-time and the second-opinion-swallow-review — [[clinical-skills/communication]], [[medical-ethics-law/consent-capacity]]); the daughter-conversation (explaining prognosis-curves, the aspiration-and-pneumonia realities, hand-feeding-comfort-care option, and what "whatever it takes" means here — [[clinical-skills/communication]], [[respiratory/respiratory-infections]]); the documentation (the swallowing-series trajectory, the risk-meals agreement, the ReSPECT-equivalent escalation summary — [[clinical-skills/records-handover]]); and the after (the dietetic texture-modified-IDDSI-plan, the oral-care-hygiene that cuts pneumonia independently — [[infectious-diseases/healthcare-infections]] — and the rehabilitation-and-community-nursing handover — [[geriatrics-palliative/end-of-life-care]]-adjacent-place-of-care-principle).**
+**Step 1: early feeding.** People with stroke who cannot swallow safely should start nasogastric feeding early, usually within 24 hours of admission, unless this is not in their interests. Early enteral feeding avoids dehydration and malnutrition. Trials in stroke (the FOOD trials, 2005) found that early tube feeding was reasonable and that early **PEG**, compared with NG feeding, did not improve outcome.
+
+**Step 2: tube safety.** Confirm the NG tube's position before each use by aspirate pH of 5.5 or below, or by chest radiograph. Nurse her sitting up during feeds. If she repeatedly pulls out the tube, a nasal bridle may be considered.
+
+**Step 3: longer term.** If she is still unable to swallow safely after about 4 weeks and continued feeding is in her best interests, a gastrostomy is considered.
+
+**Step 4: decision-making.** She may not have capacity to decide about tube feeding. Decisions should be made in her best interests, taking into account any advance decisions, her known wishes and values, and the views of those close to her, in line with the Mental Capacity Act ([[medical-ethics-law/consent-capacity]]). Nutrition by tube is a medical treatment that can be withheld or withdrawn when it is not in a person's best interests.
 :::
 :::
 
-::: example The formula first-line {#ex-een}
-A 12-year-old boy has 8 weeks of diarrhoea, perianal disease and weight falling two centile channels; faecal calprotectin 2400, CRP 38, albumin 34; colonoscopy and imaging show ileocolonic Crohn's without structuring or penetrating disease; his parents dread steroids.
+Enteral nutrition can also be a **treatment** for disease. In children with active Crohn's disease, **exclusive enteral nutrition**, in which a liquid formula is the only source of nutrition for 6 to 8 weeks, is recommended as first-line therapy to induce remission. It works about as well as corticosteroids for luminal disease, promotes mucosal healing and supports growth.
+
+::: example Formula as first-line treatment {#ex-een}
+A 12-year-old boy of Somali heritage has a 6-month history of abdominal pain, diarrhoea and weight loss, and has fallen from the 50th to the 9th centile for height. Ileocolonoscopy confirms ileal and colonic Crohn's disease. His parents are worried about steroids. Explain the place of exclusive enteral nutrition and the practical issues.
 ::: solution
-**Paediatric luminal Crohn's, moderate (the [[gastrointestinal/bowel-disease]]-classification): exclusive enteral nutrition is genuinely first-line — 6-8 weeks of formula-only (polymeric accepted over elemental — the palatability-adherence trade) induces remission as effectively as steroids with superior bone-mass-and-growth-and microbiome effects and no adrenal-or-bone harm ([[paediatrics/growth-development]], [[endocrine/bone-calcium]], [[microbiology/microbiota]], [[gastrointestinal/bowel-disease]]); the practical package (the dietitian-and-psychology support and the flavour-and-friendliness tricks and the feed-pump-overnight option — [[clinical-skills/communication]], [[psychiatry/anxiety-disorders]]-adjacent-adherence-work; the perianal-care-and-iron-and-vitamin-D-and-B12-repletion — [[blood/anaemia]], [[renal/potassium-calcium-phosphate]]; the normal labs-do-not-stop-the-course rule and the weekly-weight-and-albumin-CRP trajectory); the step-up decision (biologic-or-immunomodulator maintenance after induction by risk profile — [[gastrointestinal/bowel-disease]]-and-[[immunology/vaccines-immunotherapy]]); the school-and-family logistics and the transition-planning habit ([[paediatrics/adolescent-health]], [[clinical-skills/records-handover]]); and the honest comparison for the parents (steroids: faster-but-not-better-for-growth; formula: slower-but-multiple-payoffs — the trial data behind the sentence — [[epidemiology-ebm/systematic-reviews]]).**
+**Step 1: rationale.** In children with active luminal Crohn's disease, European paediatric guidance recommends **exclusive enteral nutrition** (EEN) as first-line induction therapy. It induces remission in most children, promotes mucosal healing and supports catch-up growth, without the adverse effects of corticosteroids on growth, bones and appearance. His falling height centile makes avoiding steroids especially valuable.
+
+**Step 2: practical issues.** He would drink a complete liquid formula as his only nutrition, usually for 6 to 8 weeks, with water allowed. Some children need a nasogastric tube if they cannot drink enough. Support from a paediatric dietitian and the family is essential, and social situations such as school meals need planning. Cultural and religious factors, such as fasting periods, should be discussed.
+
+**Step 3: afterwards.** Food is reintroduced gradually, and maintenance treatment, often an immunomodulator or biologic, is started to keep him in remission. Growth and puberty are monitored.
 :::
 :::
 
-::: example The bag under the table {#ex-highoutput}
-Day 9 after emergency small-bowel resection for volvulus, a 46-year-old has a jejunostomy with 1.9 L/24 h of effluent, urine output 400 mL, creatinine 158, Na 130, Mg 0.58, and is drinking freely "to keep up".
-::: solution
-**High-output jejunostomy with depletion AKI and hypomagnesaemia (the sodium-and-water-loss physiology of [[renal/water-sodium]], the magnesium lesson of [[renal/potassium-calcium-phosphate]], the prerenal hit [[renal/acute-kidney-injury]]): the counterintuitive prescription (stop the hypotonic free-water drinking — it converts to more effluent via sodium-pull — [[gastrointestinal/digestion-absorption]]'s osmosis-and-solvent-drag rules); the IV-then-oral plan (IV-replacement-and-then-structured-sip-regimen-of-sodium-containing-oral-rehydration-solution-with-the-SGLT1-glucose-coupling — [[gastrointestinal/digestion-absorption]]'s ORS physiology — given in small frequent amounts alongside meals not instead of them); the drug ladder (the high-dose-PPI-and-loperamide-and-codeine-schedule-and-opioid-taper-planning and the octreotide-in-refractory-output-with-gallstone-and-steatorrhoea-warnings — [[gastrointestinal/oesophagus-stomach]], [[gastrointestinal/pancreas-biliary]]); the dietetics (the energy-dense-low-residue-advice-and-fat-and-fibre-individualisation — [[gastrointestinal/clinical-nutrition]]-own-SBS-plan); the watch-list (the skin-and-appliance-care — [[musculoskeletal/skin]]; the line-and-home-PN-threshold-at-persistent-output-and-readmission-trajectory — [[#def-parenteral]]; and the electrolyte-and-creatinine-monitoring-schedule with the intestinal-failure-unit-referral-timing — [[clinical-skills/records-handover]]).**
+## Parenteral nutrition and intestinal failure
+
+::: definition Parenteral nutrition and intestinal failure {#def-parenteral}
+**Parenteral nutrition** (PN) is the intravenous delivery of nutrients: amino acids, glucose, lipid, electrolytes, vitamins and trace elements. It is used when the gut cannot be used, or cannot absorb enough, for a sustained period. It is usually given through a central venous catheter, because the solution is hyperosmolar.
+
+**Intestinal failure** is a reduction of gut function below the minimum needed to absorb macronutrients and/or water and electrolytes, so that intravenous supplementation is required. It is classified as **type 1** (acute and short-term, such as after abdominal surgery), **type 2** (prolonged acute, often in metabolically unstable people with complications such as fistulas, needing weeks to months of PN) and **type 3** (chronic, needing long-term home PN).
 :::
+
+Indications for PN include intestinal failure, prolonged ileus, high-output fistulas, severe malabsorption and bowel obstruction where enteral feeding is impossible. PN is not used simply because enteral feeding is inconvenient.
+
+Complications fall into three groups:
+
+- **Catheter-related**: **bloodstream infection**, which is the most important and is minimised by strict aseptic technique and a dedicated lumen; thrombosis; and occlusion.
+- **Metabolic**: hyperglycaemia, refeeding syndrome, electrolyte disturbance and fluid overload.
+- **Long-term**: **intestinal failure–associated liver disease**, metabolic bone disease and micronutrient imbalance.
+
+People with type 3 intestinal failure can live for many years on home PN, managed by specialist centres. Some are suitable for intestinal rehabilitation, GLP-2 analogue therapy such as teduglutide, or intestinal transplantation.
+
+### High-output stomas and short bowel
+
+After extensive small-bowel resection, the remaining length and anatomy determine outcome. People with a **jejunostomy** and a short remaining small bowel lose large volumes of fluid and sodium. Stoma effluent contains about 90–100 mmol/L of sodium. Drinking plain water or other low-sodium fluids makes losses **worse**, because sodium moves from the blood into the lumen to make the contents isotonic, and the water follows it out of the stoma ([[gastrointestinal/digestion-absorption]]).
+
+::: example The bag that keeps filling {#ex-highoutput}
+A 58-year-old woman had extensive small-bowel resection for mesenteric ischaemia and now has a jejunostomy. Her stoma produces 3 litres a day. She is thirsty and drinks large volumes of tea and water. Sodium 131 mmol/L, creatinine rising, urine sodium below 10 mmol/L. Explain her problem and outline management principles.
+::: solution
+**Step 1: mechanism.** The jejunum is leaky to sodium and cannot absorb it against a concentration gradient. When she drinks a hypotonic fluid, sodium moves from her blood into the lumen until the contents are isotonic, and then leaves through the stoma. The more she drinks, the more sodium and water she loses. Her low urine sodium shows the kidneys are conserving sodium as hard as they can: she is **sodium and water depleted** with a pre-renal kidney injury.
+
+**Step 2: management principles.**
+- **Restrict hypotonic oral fluids** (water, tea, juice) to about 1 litre a day.
+- Drink a **glucose–electrolyte solution** with a sodium of about 90 mmol/L or more, such as St Mark's solution, which allows sodium and water to be absorbed by sodium–glucose co-transport.
+- Reduce output with **loperamide** taken before meals, and a **PPI** to reduce gastric secretion; codeine may be added.
+- Give intravenous saline initially to correct dehydration and kidney injury.
+- Monitor weight, output, urine sodium and magnesium.
+
+**Step 3: longer term.** If output cannot be controlled, she may need parenteral fluids or nutrition at home under a specialist intestinal failure team, and assessment for GLP-2 analogue therapy.
+:::
+:::
+
+## Obesity
+
+**Obesity** is defined by BMI: 25–29.9 kg/m² is overweight, 30–34.9 is obesity class I, 35–39.9 class II and 40 or more class III. Because people of South Asian, Chinese, other Asian, Middle Eastern, Black African and African-Caribbean family background have a higher risk of type 2 diabetes and cardiovascular disease at lower BMI, NICE uses lower thresholds for them: overweight from 23 kg/m² and obesity from 27.5 kg/m². BMI does not measure fat distribution, so NICE also recommends the **waist-to-height ratio**, with a value of 0.5 or more indicating increased central adiposity.
+
+Obesity results from a long-term imbalance between energy intake and expenditure, shaped by genetics, the food environment, sleep, medications, social and economic factors, and hormonal regulation of appetite ([[public-health/non-communicable-disease]]). It is a chronic, relapsing condition, and stigma towards people with obesity is common in health care and is itself harmful.
+
+Management in the UK follows NICE guideline NG246 (2025):
+
+- **Behavioural interventions** combining diet, physical activity and behaviour change.
+- **Medicines**, used alongside these: **GLP-1 receptor agonists** such as semaglutide, and the dual GIP and GLP-1 receptor agonist **tirzepatide**, act on appetite centres and slow gastric emptying. They produce substantial weight loss in trials, but weight tends to return when they are stopped. Their use is governed by NICE technology appraisals with criteria on BMI and comorbidity. Nausea, vomiting and constipation are common; pancreatitis and gallbladder disease are recognised risks.
+- **Bariatric surgery**, such as sleeve gastrectomy and Roux-en-Y gastric bypass, for people with severe obesity who meet criteria. Surgery produces the largest and most durable weight loss and often remission of type 2 diabetes.
+
+Bariatric surgery creates lifelong nutritional needs. After gastric bypass, food bypasses the duodenum and much of the stomach, so iron, calcium, vitamin D, B12 and folate absorption all fall. People need lifelong supplements and annual blood tests. Vomiting after surgery can cause **thiamine deficiency** and Wernicke encephalopathy, and "dumping syndrome" can follow rapid delivery of sugary food into the small bowel.
+
+::: warning A normal weight does not exclude malnutrition
+A person can have a normal or high BMI and still be malnourished, particularly after rapid weight loss, during critical illness, or with muscle loss hidden by fat or oedema. Use weight change over time, intake, and muscle mass, not BMI alone. Equally, a low albumin does not diagnose malnutrition; it reflects inflammation and fluid status more than nutrition.
 :::
 
 ::: quiz
-The hallmark electrolyte disturbance of refeeding syndrome is:
-- [ ] Hyperkalaemia
-- [x] Hypophosphataemia
-- [ ] Hypercalcaemia
-- [ ] Hypernatraemia
+A nasogastric tube has been placed in a drowsy man. The aspirate has a pH of 6.5. What should happen next?
+- [ ] Start feeding at a low rate and monitor for coughing
+- [ ] Inject 20 mL of air and listen over the stomach
+- [x] Do not feed; obtain a chest radiograph interpreted by a trained person, or re-test according to local policy
+- [ ] Accept placement because pH below 7 is acidic
 ::: solution
-**Insulin-driven cellular uptake depletes already-diminished phosphate stores within 2-5 days of carbohydrate reintroduction — the respiratory-failure-rhabdomyolysis-arrhythmia triad follows, with hypokalaemia and hypomagnesaemia alongside ([[#def-refeeding]], [[renal/potassium-calcium-phosphate]]); sodium-and-water retention causes the oedema, not hypernatraemia ([[renal/water-sodium]]); prevention is thiamine-plus-electrolyte-repletion-then-slow-but-safely-escalating calories ([[psychiatry/eating-personality-disorders]]-and-[[public-health/global-health]]'s therapeutic-nutrition-products context).**
+A pH above **5.5** does not confirm gastric placement. Acid suppression can raise gastric pH, but a misplaced tube in the lung or oesophagus can also give a pH above 5.5. Feeding must not start. The next step follows local policy, usually a chest radiograph interpreted by a competent person. The "whoosh" test is unreliable and must never be used. Feeding through a misplaced tube is a Never Event.
 :::
 :::
 
 ::: history
-**The artificial-nutrition century (the post-war-total-parenteral-nutrition-programmes and Dudrick's 1960s subclavian-catheter-paediatric-revolution — [[paediatrics/acute-childhood-illness]]-adjacent; the essential-amino-acid-and-lipid-emulsion-chemistry era — [[cell-biochemistry/lipid-amino-acid-metabolism]]); the "if the gut works, use it" enteral-counterrevolution and the nasogastric-misplacement-inquiry that changed UK safety law-class practice ([[clinical-skills/patient-safety]]); PEG's 1980s arrival (Gauderer-and-Ponsky's gastrostomy-triangle); ERAS-and-Kehlet's surgical-starvation-myth-dismantling (carbohydrate-loading and early feeding — [[surgery/perioperative-care]]); the refeeding-syndrome-recognition-wave (the refed-refugee-and-anorexia case-series of the 1990s-2000s that put phosphate monitoring into guidelines — [[public-health/global-health]], [[psychiatry/eating-personality-disorders]]); the EEN-for-paediatric-Crohn's trials that made a formula a first-line drug ([[gastrointestinal/bowel-disease]], [[paediatrics/growth-development]]); the GLIM-malnutrition-definition-consensus-2015 (malnutrition-as-diagnosis-codification — [[public-health/health-systems-economics]]); teduglutide's GLP-2-repurposing from incretin biology ([[endocrine/diabetes]]'s hormone lineage); and the intestinal-failure-and-transplant services that turned "incompatible with life" into a chronic-condition clinic ([[immunology/transplant-tumour-immunology]], [[medical-ethics-law/justice-resources]]).**
+In 1944–45 Ancel Keys led the Minnesota Starvation Experiment, in which 36 conscientious objectors underwent 6 months of semi-starvation followed by controlled refeeding; its detailed record of the physical and psychological effects of starvation is still cited today. Severe complications of refeeding were described in starved prisoners of war after the Second World War. In 1968 Stanley Dudrick and colleagues in Philadelphia showed that beagle puppies, and then an infant with short bowel, could grow normally on intravenous nutrition alone through a central venous catheter, establishing total parenteral nutrition. In the UK, BAPEN launched the Malnutrition Universal Screening Tool in 2003.
+:::
+
+::: summary
+- Malnutrition is common and under-recognised; screen with MUST and assess fully when the score is 2 or more.
+- Starvation shifts metabolism from glucose to ketones to spare protein; illness overrides this and drives muscle loss.
+- NICE CG32 suggests 25–35 kcal/kg/day, 0.8–1.5 g protein/kg/day and 30–35 mL fluid/kg/day; nitrogen equals protein divided by 6.25.
+- Refeeding syndrome is hypophosphataemia with other electrolyte and fluid shifts; in high-risk people start at 10 kcal/kg/day or less and give thiamine first.
+- If the gut works, use it. Check NG tube position by aspirate pH of 5.5 or below or by chest radiograph before every use.
+- Parenteral nutrition is for intestinal failure; catheter infection is its main hazard.
+- In high-output stomas, restrict hypotonic fluids and give high-sodium oral rehydration solution.
+- Obesity is managed with behavioural support, GLP-1-based medicines and bariatric surgery, each with nutritional consequences.
 :::
 
 ## Where this leads
 
-Absorption physiology in [[gastrointestinal/digestion-absorption]]; the IBD nutrition-first options in [[gastrointestinal/bowel-disease]]; liver-disease protein logic in [[gastrointestinal/liver-disease]]; renal-adjustment arithmetic in [[renal/chronic-kidney-disease]]; repletion pharmacology in [[renal/potassium-calcium-phosphate]]; surgical pathways in [[surgery/perioperative-care]]; the ethics of feeding at life's end in [[medical-ethics-law/end-of-life-ethics]].
-
-::: exercise Order the first 24 hours {level=2}
-Write the admission orders for the patient in [[#ex-refeeding]]: calories, supplements, bloods, monitoring, and who owns each.
-::: solution
-**A protocol answer (guideline-specific numbers vary; the architecture matters — [[#def-refeeding]]): dietitian-calculated-starting-calories-with-graded-increase-and-NO-starvation-reset; thiamine-and-multivitamin-before-first-feed-and-for-the-first-weeks ([[nervous-system/dementia-neurodegeneration]]); baseline-and-daily-then-titrate-down-electrolytes-Mg-phosphate-K-with-the-repletion-thresholds-and-IV-rates ([[renal/potassium-calcium-phosphate]]); daily-weights-fluid-balance-and-ECG-when-low; named nursing-observation-set and medical-review-cadence; the psychiatric-shared-care-and-refeeding-safety-netting ([[psychiatry/eating-personality-disorders]]); and the documented-plan-owner-plus-escalation-criteria (confusion-chest-pain-arrhythmia → immediate medical review — [[clinical-skills/patient-safety]], [[clinical-skills/records-handover]]).**
-:::
-:::
-
-::: exercise Read the residuals {level=2}
-An ICU patient on continuous NG feeds at 60 mL/h has two gastric-residual volumes of 480 and 520 mL without vomiting, distension or vasopressor escalation. Stop the feeds?
-::: solution
-**No — the reflex is outdated ([[#def-enteral]]-monitoring-row): single high residuals have poor predictive value for aspiration and stopping feeds costs calories-days; the checklist instead (head-elevation-and-cuffed-tube-and-oral-care-continuing — [[respiratory/respiratory-infections]]; examine-for-actual-intolerance — distension-and-pain-and-ileus-and-ischaemia-signs [[surgery/acute-abdomen]], [[emergency-critical-care/critical-care]]; prokinetic-consideration and post-pyloric-conversion-if-recurrent [[gastrointestinal/oesophagus-stomach]]'s gastroparesis-pharmacology; feed-hold-only-for-the-symptomatic-or-high-risk-episodes-with-a-protocol-and-a-restart-time); and the documentation-with-the-goal-rates ([[clinical-skills/records-handover]], [[clinical-skills/patient-safety]]).**
-:::
-:::
-
-::: exercise Do the maths {level=2}
-A 55-kg woman with BMI 15 and 14 kg unintentional loss over 4 months: compute her daily energy and protein targets at full feeds, the refeeding-risk category, and what must be normal before escalation.
-::: solution
-**Targets (the 25-30 kcal/kg and 1.0-1.5 g/kg/kg rules of [[#def-assessment]]: roughly 1400-1650 kcal and 55-80 g protein per day once advanced, dietitian-refined); risk (BMI-and-loss-magnitude put her high-risk on any guideline — [[#def-refeeding]]); the escalation-gate (phosphate, potassium, magnesium normal-or-replaced, thiamine-and-multivitamin started, ECG-and-renal-function-checked, fluid-balance-charted — [[renal/potassium-calcium-phosphate]], [[cardiovascular/arrhythmias]], [[renal/acute-kidney-injury]]); and the cause-workup-in-parallel (the malignancy-and-depression-and-dementia-and-gastrointestinal-triple-test — [[gastrointestinal/gi-bleeding-cancer]], [[psychiatry/mood-disorders]], [[geriatrics-palliative/delirium-dementia-care]] — since refeeding an undiagnosed cause is medicine's most common missed-diagnosis trap [[clinical-skills/clinical-reasoning]]).**
-:::
-:::
-
-::: summary
-- Screen everyone, refer early, and treat malnutrition as a diagnosis with criteria, not an adjective.
-- Refeeding kills through hypophosphataemia: thiamine and electrolytes before calories, monitored escalation, and a named owner for the schedule.
-- The enteral route preserves the gut, costs less and infects less; the PEG question is about time and patient goals, not convenience.
-- Parenteral nutrition is life-saving organ support with three serials of hazards: metabolic, line, and liver — each with protocols that only work if someone owns them.
-- Intestinal failure is a chronic-disease specialty: adaptation takes months, teduglutide and antisecretory care shrink PN dependence, and home PN buys survival at measured cost.
-:::
+The physiology of digestion and absorption that nutrition depends on is in [[gastrointestinal/digestion-absorption]]. Nutrition in pancreatitis is discussed in [[gastrointestinal/pancreas-biliary]], and in Crohn's disease in [[gastrointestinal/bowel-disease]]. Eating disorders, including refeeding in anorexia nervosa, are in [[psychiatry/eating-personality-disorders]]. Perioperative nutrition is in [[surgery/perioperative-care]], and the metabolic effects of diabetes and obesity in [[endocrine/diabetes]].
 
 ## Exercises
 
-::: exercise Write the deficiency {level=1}
-Name the deficiency behind each: follicular hyperkeratosis with bleeding gums; stomatitis with axillary dermatitis and anaemia; acrodermatitis around mouth and anus in a tube-fed child; dementia-dermatitis-diarrhoea.
+::: exercise Score MUST {level=1}
+A 66-year-old woman has a BMI of 19.2 kg/m² and has lost 7% of her weight in the last 4 months. She is not acutely unwell. Calculate her MUST score and state her risk category.
 ::: solution
-**Vitamin-C-scurvy ([[#def-assessment]], [[blood/haemostasis-bleeding]]); riboflavin (B2) deficiency ([[#def-assessment]]); zinc deficiency with the acquired-acrodermatitis picture ([[#def-assessment]], [[musculoskeletal/skin]]); niacin deficiency-pellagra with its Hartnup-and-ischaemic-overlap — ([[gastrointestinal/digestion-absorption]]'s PepT1/transport lesson and [[genetics/mendelian-inheritance]]).**
+BMI 18.5–20: 1 point. Weight loss 5–10%: 1 point. No acute disease effect: 0. Total **2**: **high risk**. She needs a full nutritional assessment, dietitian referral and a care plan.
 :::
 :::
 
-::: exercise Set the feed {level=1}
-A 70-kg septic patient on day 2 of ventilation with no contraindications: give the route, the day-1 calorie strategy and the aspiration bundle.
+::: exercise Name the deficiency {level=1}
+Name the most likely deficiency: (a) confusion, ataxia and nystagmus in a person with alcohol dependence; (b) bleeding gums and corkscrew hairs in an older man living on tea and toast; (c) a raised INR in a person with prolonged steatorrhoea; (d) bone pain and proximal muscle weakness in a woman who rarely goes outdoors.
 ::: solution
-**Enteral-nasoenteric-or-nasogastric-first (the early-trophic-feeding-then-escalation evidence — [[#def-enteral]], [[emergency-critical-care/critical-care]]); permissive-underfeeding-day-1-then-progressive-targets (the EPaNIC-and-NUTREA-era nuance — [[pharmacology/dosing-principles]]-adjacent-monitoring); head-elevation-30-degrees-and-cuffed-tube-checks-and-oral-care-and-residual-interpretation-without-reflexive-stopping (the aspiration bundle — [[respiratory/respiratory-infections]], [[clinical-skills/patient-safety]]); the refeeding-risk-check-first ([[#def-refeeding]]); and the drug-through-tube audit ([[pharmacology/absorption-distribution]]).**
+(a) Thiamine (Wernicke encephalopathy). (b) Vitamin C (scurvy). (c) Vitamin K. (d) Vitamin D (osteomalacia).
 :::
 :::
 
-::: exercise Protect the line {level=2}
-A home-PN patient on three-times-weekly feeds presents with rigors 30 minutes after connecting at home; line-puncture-site is clean; WBC 14, she is haemodynamically stable after antibiotics from her community kit. Manage the episode and the prevention.
+::: exercise Check the tube {level=1}
+List the steps to confirm the position of a nasogastric tube before the first feed, and explain why listening for injected air is no longer used.
 ::: solution
-**Presumed-line-infection-until-proven (the paired-line-and-peripheral-cultures rule and the do-not-use-the-line discipline — [[#def-parenteral]], [[microbiology/laboratory-diagnosis]], [[infectious-diseases/healthcare-infections]]): the organism-specific decision (coagulase-negative-staphylococcus-with-antibiotic-lock-and-line-salvage-versus-Staphylococcus-aureus-or-Candida-or-pseudomonas-demanding-removal — [[microbiology/antimicrobials]], [[microbiology/bacteria]] and [[microbiology/fungi-parasites]]); the admission-thresholds (sepsis-physiology-and-tunnel-infection-and-endocarditis-question — [[emergency-critical-care/shock-fluids]], [[cardiovascular/valve-congenital-disease]]-adjacent-IE-workup); the prevention-audit (the home-technique-review-and-flush-and-cap-and-mask-and-glove-habits, the hub-antiseptic-technique-and-drying-time, the ethanol-and-citrate-lock-schedules, and the monthly chlorhexidine-dressing cadence — [[clinical-skills/patient-safety]]); and the surveillance register (the per-line-day-infection-rate as the unit KPI and the early-intestinal-failure-team-review-with-liver-and-transplant-timing-implications — [[public-health/health-systems-economics]], [[immunology/transplant-tumour-immunology]]).**
+Aspirate fluid from the tube and test it with CE-marked pH indicator paper. A pH of 5.5 or below supports gastric placement and feeding can begin. If no aspirate can be obtained or the pH is above 5.5, obtain a chest radiograph interpreted by a competent person, and do not feed until position is confirmed. Listening for air is unreliable because sound can be transmitted from a tube in the lung or oesophagus, and its use has been linked to deaths.
 :::
 :::
 
-::: exercise Explain the taper {level=2}
-A short-bowel patient with an end-jejunostomy on 1.5 L/day PN declines tapering "because the drips keep me alive". Use the adaptation curve in the counselling.
+::: exercise Estimate requirements {level=2 check="1500"}
+A 60 kg woman recovering from surgery is to receive enteral nutrition. Using 25 kcal/kg/day, what is her daily energy target in kcal? Using 1.0 g/kg/day of protein, how many grams of nitrogen is that?
+::: hint
+Nitrogen is protein divided by 6.25.
+:::
 ::: solution
-**The curve ([[#def-parenteral]]-figure): adaptation runs for 12-24 months, so a measured taper is the test of adaptation; the practical sequence (the overnight-PN-transfer-first-freeing-daytime, the oral-rehydration-solution-sip-programme-with-the-SGLT1-formula — [[gastrointestinal/digestion-absorption]]'s ORS lesson —, the complex-carbohydrate-dietitian-plan and the loperamide-and-PPI-titration and the teduglutide-eligibility-review — [[endocrine/diabetes]]-family-biology); the risks named honestly (the dehydration-readmission-cycle and the D-lactate-and-acid-base-and-renal-and-bone-long-tail — [[renal/acid-base-disorders]], [[renal/urinary-tract]], [[endocrine/bone-calcium]]); the gains quantified (the line-sepsis-and-liver-and-thrombosis risk-per-line-year — [[#def-parenteral]]-complications-row, [[infectious-diseases/healthcare-infections]]); and the shared plan (the structured-fluid-and-weight-and-electrolyte-monitoring-schedule, the intestinal-failure-nurse contact and the no-shame-back-to-PN rule if sick — [[clinical-skills/records-handover]], [[clinical-skills/communication]]).**
+Energy $= 25 \times 60 = 1500$ kcal/day. Protein $= 1.0 \times 60 = 60$ g/day, which is $60/6.25 = 9.6$ g of nitrogen per day. These are starting estimates; the dietitian adjusts them to her clinical progress, weight and activity.
 :::
 :::
 
-::: exercise Build the nutrition service {level=3}
-Design the hospital-wide malnutrition and refeeding safety programme: screening, pathway, workforce, PN governance and audit.
+::: exercise Start low {level=2 check="450"}
+A 45 kg woman with anorexia of illness is at high risk of refeeding syndrome under NICE CG32. What is the maximum starting energy intake in kcal/day, using 10 kcal/kg/day? What must be given before feeding begins?
+::: hint
+Multiply her weight by 10.
+:::
 ::: solution
-**Screening (the admission-and-weekly-MUST-or-validated-tool rule with dietitian-referral-triggers and the medical-note-why-not-if-skipped — [[#def-assessment]], [[clinical-skills/patient-safety]]); pathways (the refeeding-protocol-with-electrolyte-schedule-ownership — [[#def-refeeding]]; the enteral-formulary-and-tube-insertion-and-verification-SOP — [[#def-enteral]]; the PEG-and-RIG-pathway-and-complication-reporting — [[surgery/gastrointestinal-surgery]]; the dysphagia-and-IDDSI-clinic-with-SLP — [[nervous-system/stroke]] — and the end-of-life-assisted-feeding-ethics-consult-service — [[medical-ethics-law/end-of-life-ethics]], [[geriatrics-palliative/palliative-care]]); PN governance (the specialist-nutrition-support-team-approval-and-daily-review-model, the aseptic-compounding-pharmacy-partnership, the CLABSI-bundle-and-lock-policy, and the liver-disease-and-transplant-referral-triggers — [[#def-parenteral]], [[infectious-diseases/healthcare-infections]], [[gastrointestinal/liver-disease]]); workforce-and-access (the dietitian-staffing-per-bed-benchmark-and-interpreter-provision-and-community-discharge-links — [[public-health/health-systems-economics]], [[public-health/determinants-inequalities]]); and the audit set (screening-completeness, time-to-dietitian-review, refeeding-protocol-adherence-and-hypophosphataemia-incidence, enteral-feed-interruption-hours, CLABSI-per-1000-line-days, malnutrition-prevalence-by-ward, and the weight-loss-in-hospital-figure-as-the-never-improving-KPI — [[clinical-skills/patient-safety]]).**
+$10 \times 45 = 450$ kcal/day. Thiamine and other B vitamins should be given before feeding begins and continued for the first 10 days, with electrolytes checked and replaced as needed. Intake is increased to full requirements over 4 to 7 days with daily monitoring. For eating disorders, specialist guidance may allow faster increases under close supervision.
+:::
+:::
+
+::: exercise Percentage weight loss {level=2 check="12.9"}
+A man's usual weight was 70 kg. Four months later he weighs 61 kg without trying to lose weight. Calculate his percentage weight loss to one decimal place. Does he meet a NICE criterion for malnutrition?
+::: hint
+Percentage loss is the loss divided by the usual weight, times 100.
+:::
+::: solution
+Loss $= 70 - 61 = 9$ kg. Percentage $= 9/70 \times 100 = 12.86\%$, which is **12.9%** to one decimal place. This is more than 10% unintentional loss within 3 to 6 months, so he meets the NICE CG32 definition of **malnutrition**, whatever his BMI.
+:::
+:::
+
+::: exercise Calculate nitrogen balance {level=3 check="-4"}
+A patient in intensive care receives 75 g of protein a day. A 24-hour urine collection contains 12 g of urea nitrogen. Assume an additional 4 g of nitrogen is lost through stool, skin and non-urea urinary compounds. Calculate the nitrogen balance in g/day and interpret it. What would you consider if the balance stayed negative despite adequate feeding?
+::: hint
+Nitrogen intake is protein divided by 6.25.
+:::
+::: solution
+Nitrogen intake $= 75/6.25 = 12$ g/day. Nitrogen loss $= 12 + 4 = 16$ g/day. Balance $= 12 - 16 = -4$ g/day. The patient is losing nitrogen, which corresponds to about $4 \times 6.25 = 25$ g of protein, or roughly 125 g of lean tissue, a day.
+
+In critical illness, stress hormones and cytokines drive protein breakdown that feeding cannot fully prevent. A persistently negative balance prompts review of protein provision (increasing towards the upper end of the recommended range if appropriate), control of the underlying illness and infection, early mobilisation and rehabilitation. Overfeeding with energy does not correct catabolism and can cause hyperglycaemia and fatty liver.
+:::
+:::
+
+::: exercise Plan nutrition after bariatric surgery {level=3}
+A 42-year-old woman of Pakistani heritage has had a Roux-en-Y gastric bypass. Explain which nutrients are at risk and why, how they should be monitored, and which symptom in the first months should prompt urgent thiamine.
+::: hint
+Think about which parts of the gut are bypassed and what is absorbed there.
+:::
+::: solution
+**At risk and why:** **iron** and **calcium**, because the duodenum, where both are mainly absorbed, is bypassed, and acid is reduced; **vitamin D**, with reduced fat absorption and, in people with darker skin, reduced skin synthesis at UK latitudes; **vitamin B12**, because little intrinsic factor and acid reach food; **folate**; **protein**, from reduced intake; and **thiamine**, especially if she vomits.
+
+**Monitoring:** lifelong daily multivitamin and mineral supplements, calcium and vitamin D, and B12 injections or high-dose oral B12 according to local protocol; blood tests for full blood count, ferritin, folate, B12, calcium, vitamin D and parathyroid hormone at intervals after surgery and then at least annually; and dietitian follow-up. Pregnancy planning needs extra attention to supplements.
+
+**Urgent symptom:** **persistent vomiting**, which can rapidly deplete thiamine and lead to Wernicke encephalopathy. Confusion, ataxia or eye movement abnormalities need immediate parenteral thiamine.
 :::
 :::

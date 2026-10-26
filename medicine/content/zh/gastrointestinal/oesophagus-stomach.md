@@ -1,150 +1,326 @@
-食管与胃把进食变成安全、受酸控制的预备——而它们的疾病跟随工程学：**一根可能梗阻、可能无法松弛、可能把酸向上泄漏的动力管道；一座可能向无防御的黏膜过度交付、或被教会我们胃医学的那颗细菌瘫痪的酸工厂。**本章也是医学三个伟大现代故事居住之地：幽门螺杆菌、质子泵抑制剂、及反流Barrett腺癌序列。
+烧心、消化不良和吞咽困难是人们就医最常见的原因之一。大多数情况下病因是良性的，治疗也简单。其中少数人患有癌症、危险的动力障碍或溃疡并发症，临床技能就在于早期把这两类人区分开来。
 
-本章涵盖食管动力与吞咽困难、反流病、消化不良与溃疡病、胃瘫与呕吐综合征、及胃肿瘤。
+本章先把食管和胃作为工作中的器官加以介绍，然后讨论它们的主要疾病：吞咽困难和食管动力障碍，胃食管反流病和Barrett食管，幽门螺杆菌和消化性溃疡病，消化不良及其报警特征，以及胃轻瘫。食管癌和胃癌以及上消化道出血的处理见[[gastrointestinal/gi-bleeding-cancer]]。
 
-## 食管
+## 吞咽与吞咽困难
 
-::: definition 食管动力与吞咽困难 {#def-dysphagia}
-**工程学（上三分之一横纹肌过渡到下三分之二平滑肌受肌间神经控制——[[gastrointestinal/digestion-absorption]]的模式；原发蠕动作为吞咽传播的波、加上局部扩张引起的继发蠕动；下食管括约肌作为一个张力性高压带、带一氧化氮与血管活性肠肽介导的一过性松弛——正常排气与多数反流的引擎——[[gastrointestinal/digestion-absorption]]的动力模式）；解剖与安全吞咽背景在[[anatomy/thorax]]与[[anatomy/head-neck]]（喉返与主动脉邻居）及误吸防御交叉链接（[[respiratory/respiratory-infections]]的吸入性肺炎路径）。** **吞咽困难解读（[[clinical-skills/history-taking]]的症状架构）：口咽性（卒中、神经退行性与肌病性——第一口就呛咳与鼻反流与憩室——[[nervous-system/stroke]]、[[nervous-system/movement-disorders]]、[[nervous-system/motor-systems]]）对食管性（数秒后的胸骨后“卡住”）；先固体后液体进行性伴体重下降=机械性直到被证明否则（狭窄与蹼与癌——紧急癌症路径规则）对两者从一开始且间歇=动力（失弛缓与痉挛）；潴留食物反流、胸痛（在心脏排除之后——[[cardiovascular/coronary-artery-disease]]）、及夜间咳嗽与喉炎延伸。** **检查：警示图像的紧急上消化道内镜加活检与分期（[[gastrointestinal/gi-bleeding-cancer]]路径）；钡餐用于蹼与环与憩室与形态（[[clinical-skills/medical-imaging]]）；高分辨率测压作为动力生理参考（芝加哥分类的失弛缓类型——I型无收缩、II型压迫钳夹、III型痉挛保留蠕动的模仿——这个名称本身来自“a”加“chalasia”、即不能松弛）；定时钡餐与功能性管腔成像平面测量作为辅助；酸碱阻抗用于症状反流相关（[[#def-gerd]]）。** 失弛缓的处理一段：**松弛失败（肌间抑制神经元丢失——假性失弛缓的癌与Chagas模仿者（邻近[[microbiology/fungi-parasites]]的锥虫病史））通过使括约肌失能来治疗气囊扩张（分级球囊的穿孔风险与同次入院准备——[[surgery/acute-abdomen]]）、Heller肌切开（其后迷走神经切断Dorf关系）、经口内镜肌切开（2010年Inoue时代的自然腔道技术）、及为衰弱者的肉毒与钙拮抗剂硝酸酯权宜、终身反流与潴留及癌监测随访（[[gastrointestinal/gi-bleeding-cancer]]）及饮食与进食行为辅导（[[gastrointestinal/clinical-nutrition]]）。**
+吞咽分为三期。**口腔期**中，舌把食物形成食团并向后推送；这是随意的。**咽期**中，由脑干协调的反射封闭鼻腔和喉，打开食管上括约肌，在不到一秒内把食团挤入食管。**食管期**中，蠕动波把食团向下推送，同时**食管下括约肌**（LOS）舒张，让食团进入胃。
+
+食管上三分之一为横纹肌，下三分之二为平滑肌。LOS不是一块独立的解剖肌肉，而是一段持续收缩的平滑肌区，并得到环绕它的膈脚的加强。它的静息张力阻止胃酸进入食管。吞咽时的舒张依赖释放一氧化氮和血管活性肠肽的抑制性神经。
+
+::: definition 吞咽困难 {#def-dysphagia}
+**吞咽困难**是吞咽有困难：感觉食物或液体在下行途中卡住或延迟。它不同于**吞咽痛**（吞咽时疼痛），也不同于**癔球症**（与吞咽无关的咽部异物感）。吞咽困难有两种分类方式：
+
+- **按部位。** **口咽性**吞咽困难是启动吞咽困难，伴咳嗽、呛噎或鼻腔反流。**食管性**吞咽困难是吞下后感觉食物卡住。
+- **按机制。** **机械性**吞咽困难由管腔狭窄引起，如狭窄或肿瘤。**动力性**吞咽困难由蠕动或LOS舒张障碍引起。
 :::
 
-::: definition 反流病：机制、并发症、治疗 {#def-gerd}
-**机制：一过性下食管括约肌松弛（主导事件）、括约肌张力过低、及裂孔结构破坏（滑动食管裂孔疝几何——[[anatomy/thorax]]）、清除受损（蠕动失败与唾液碳酸氢盐之问——[[gastrointestinal/digestion-absorption]]的酸分泌生理）、及黏膜抵抗失败；夜间平卧、餐食构成、及肥胖腹内压修正项（邻近[[endocrine/diabetes]]的代谢流行病学、妊娠进程（[[obstetrics-gynaecology/pregnancy-antenatal]]）、及婴儿生理性反流及其安抚医学（[[paediatrics/growth-development]]））——加症状谱（烧心与反食；非典型胸痛与慢性咳嗽与哮喘加重与喉炎与牙侵蚀与夜间哮喘之问（[[respiratory/asthma-copd]]与耳鼻喉相邻检查程序）、带其较弱的反流因果证据、及言语与吞咽团队的接口）。** **并发症：糜烂性食管炎（洛杉矶分级）伴出血与狭窄（[[gastrointestinal/gi-bleeding-cancer]]及本章自己的吞咽困难课）；Barrett食管——对酸碱胆损伤的肠上皮化生适应（特化对干细胞起源之辩、及邻近Correa的化生异型增生癌序列逻辑——[[pathology/chronic-inflammation-repair]]）带其腺癌风险监测（按长度、异型增生、嗜酸细胞计数分层的间隔——[[public-health/screening]]的过度诊断警诫）及内镜治疗阶梯（异型增生的射频消融与冷冻、结节的内镜黏膜切除与黏膜下剥离——[[gastrointestinal/gi-bleeding-cancer]]与[[surgery/gastrointestinal-surgery]]）；及食管外误吸损伤环（[[respiratory/respiratory-infections]]）。** **治疗：在相关处调整生活方式（减重与抬高与触发因素与酒精与烟草的证据诚实（[[public-health/prevention-promotion]]）——进餐时机与床头抬高的力学）；藻酸盐抗酸屏障（餐后与孕期选项（[[obstetrics-gynaecology/pregnancy-antenatal]]））；抑酸（在正确餐前时机的质子泵抑制剂（[[gastrointestinal/digestion-absorption]]的分泌与酸曲线课——4-8周愈合试验与按需对维持最小剂量策略及去处方规程——[[gastrointestinal/digestion-absorption]]的酸曲线教学））；用于间断夜间症状并诚实对待快速耐受（[[pharmacology/adverse-reactions]]）的H2阻滞剂；带不同结合方式的钾竞争性酸阻滞剂（伏诺拉生时代）（[[pharmacology/drug-receptor]]与[[microbiology/antimicrobials]]的幽门螺杆菌方案用途）；抗反流手术（腹腔镜胃底折叠——吞咽困难与腹胀与胀气综合征的取舍、磁括约肌与经口无切口选项、术前测压与酸测定的要求、及“先处理肥胖减重”逻辑（[[surgery/gastrointestinal-surgery]]与袖状胃对反流者的选择教训——邻近[[endocrine/diabetes]]的减重规划及袖状胃加重反流论点））。妊娠反流阶梯与儿科红旗变体在各自章节（[[obstetrics-gynaecology/pregnancy-antenatal]]、[[paediatrics/acute-childhood-illness]]）。**
-:::
+通常在做任何检查之前，病史就能区分这些类别。口咽性吞咽困难提示神经或肌肉疾病，如卒中、帕金森病、运动神经元病或重症肌无力，由于有误吸风险，需要言语和语言治疗师评估（[[nervous-system/stroke]]）。对食管性吞咽困难，两个问题最有帮助：
 
-::: example 部分有效者 {#ex-barrett}
-一名57岁男性、烧心10年、肥胖、既往吸烟、“多数早晨早餐后”服奥美拉唑40毫克；新发固体吞咽困难3个月、体重下降4公斤；血红蛋白108、铁蛋白20。
+- **只是固体，还是固体和液体都有困难？** 机械性狭窄先影响固体，因为液体仍能通过。动力障碍从一开始就同时影响固体和液体。
+- **进行性还是间歇性？** 数周内稳步加重的吞咽困难提示正在生长的癌症或逐渐收紧的消化性狭窄。间歇性吞咽困难提示食管环、嗜酸性粒细胞性食管炎或痉挛性动力障碍。
+
+新出现的吞咽困难是报警症状。截至2026年，NICE指南NG12建议，任何年龄的吞咽困难者均应接受紧急直接通道上消化道内镜检查，在两周内完成。
+
+### 贲门失弛缓症
+
+**贲门失弛缓症**是一种原发性动力障碍，LOS不能舒张，正常蠕动消失。其基础病变是肌间神经丛中抑制性神经元变性。没有一氧化氮信号，括约肌保持关闭，其上方的食管逐渐扩张。病因通常不明；拉丁美洲的克氏锥虫（*Trypanosoma cruzi*）感染所致的恰加斯病可造成完全相同的表现。
+
+贲门失弛缓症典型表现为固体和液体均吞咽困难、反流未消化的食物、胸痛和体重下降。钡餐可显示扩张的食管在LOS处逐渐变细成光滑的"鸟嘴"状。诊断性检查是**高分辨率测压**，测量吞咽过程中沿食管全长的压力。芝加哥分类（4.0版，2021年）按食管体部的压力模式把贲门失弛缓症分为三型：I型无收缩，II型全食管增压，III型出现提前的痉挛性收缩。必须进行内镜检查以排除可模仿贲门失弛缓症的食管胃交界处癌症（"假性贲门失弛缓症"）。
+
+没有任何治疗能恢复丧失的神经元。所有治疗都是降低LOS的阻力：
+
+- **气囊扩张**：球囊撑开并部分撕裂括约肌。
+- **腹腔镜Heller肌切开术**：手术切开肌层，通常同时做部分胃底折叠术以减少日后的反流。
+- **经口内镜下肌切开术（POEM）**：经内镜隧道从内部切开肌层。它对III型贲门失弛缓症特别有用，因为切口可以向上延伸到痉挛段，但术后反流常见。
+- 括约肌内注射**肉毒毒素**：对过于虚弱、不能接受其他治疗的患者是一种暂时性选择。
+
+::: example 吃下去又吐出来 {#ex-achalasia}
+一名42岁巴西裔男性，18个月来固体和液体均吞咽困难。夜间反流未消化的食物，体重下降8 kg。上消化道内镜见食管扩张、有食物潴留，无肿瘤。高分辨率测压显示LOS不能舒张，每次吞咽均有全食管增压。诊断是什么？结合他的背景还应考虑什么？有哪些治疗选择？
 ::: solution
-**警示征伴慢性反流：不论年龄的紧急内镜指征（[[gastrointestinal/gi-bleeding-cancer]]路径、而铁缺乏加吞咽困难这一组合绝不可归因于“食管很差”——[[blood/anaemia]]的病因搜寻规则与[[gastrointestinal/digestion-absorption]]的铁地址）。** 所见与动作：**洛杉矶C或D级消化性狭窄对易碎肿块（活检与分期同[[#def-tumours]]的癌）、及经典的长段Barrett伴结节区；质子泵抑制剂技术纠正（餐前30-60分钟时机、及对部分有效者的每日两次试验（[[gastrointestinal/digestion-absorption]]的酸分泌生理——酸曲线图）带依从谈话（[[pharmacology/patient-variation]]））；若狭窄：活检后扩张加质子泵抑制剂加量及再狭窄规划；若异型增生Barrett：内镜治疗（射频消融与内镜黏膜切除）带监测间隔（[[public-health/screening]]与[[gastrointestinal/gi-bleeding-cancer]]）；若腺癌：多学科团队路径（[[surgery/gastrointestinal-surgery]]与新辅助放化疗试验级联（[[pathology/cancer-diagnosis]]））；体重、吸烟与酒精规划（[[public-health/prevention-promotion]]）；及“为什么现在改变”的记录（把Barrett吞咽困难转折作为病历里的红旗教学、好让未来任何团队不再只用加剂量治疗（[[clinical-skills/records-handover]]））。**
+**第1步：吞咽困难分类。** 一开始就固体和液体均吞咽困难，伴未消化食物反流，提示**动力性**障碍而非狭窄。
+
+**第2步：解读检查。** LOS不能舒张伴全食管增压，按芝加哥分类属于**II型贲门失弛缓症**。内镜已排除交界处肿瘤，这是诊断原发性贲门失弛缓症之前必不可少的。
+
+**第3步：考虑恰加斯病。** 他在克氏锥虫流行地区长大。恰加斯病破坏肌间神经元，造成同样的表现。值得检查血清学，因为恰加斯病还可累及心脏和结肠。
+
+**第4步：治疗选择。** II型贲门失弛缓症对三种主要治疗反应都很好：气囊扩张、腹腔镜Heller肌切开术加胃底折叠术或POEM。选择取决于当地的专业经验，以及在讨论风险（如扩张导致穿孔、POEM后反流）之后他本人的意愿。夜间反流还有误吸风险，因此治疗不应拖延。
 :::
 :::
 
-::: example 反上来的咖啡 {#ex-achalasia}
-一名49岁女性18个月来固体与液体同样吞咽困难、餐后数小时反流未消化食物、夜间咳嗽、体重下降7公斤；她曾被当作哮喘与反流治疗而无效。胃镜显示胃食管交界处抵抗性狭窄伴潴留液体；活检正常。
+### 嗜酸性粒细胞性食管炎
+
+**嗜酸性粒细胞性食管炎**是一种由过敏原驱动的慢性食管炎症。最常见于年轻男性，常伴哮喘、湿疹或食物过敏。典型病史是固体食物间歇性吞咽困难和**食团嵌塞**发作，即一块肉卡住，必须经内镜取出。内镜可见环状改变、纵行沟和白色渗出物，但也可以看起来正常，因此需要在多个水平取活检。当活检显示每高倍视野至少15个嗜酸性粒细胞，同时有食管功能障碍症状且无其他原因时即可诊断。治疗选择包括PPI、吞服的局部糖皮质激素如布地奈德（budesonide）口崩片、饮食排除疗法，以及对狭窄进行扩张。
+
+## 胃食管反流病
+
+每个人都会有一些胃内容物反流到食管，主要在餐后。当它引起令人困扰的症状或造成损害时，就成为疾病。
+
+::: definition 胃食管反流病 {#def-gerd}
+**胃食管反流病**（GORD）是胃内容物反流引起令人困扰的症状（如烧心和反流）或并发症的一种疾病。它分为：
+
+- **糜烂性食管炎**，内镜下可见黏膜破损，按**洛杉矶分级**从A级（破损小于5 mm）到D级（破损至少累及四分之三周径）。
+- **非糜烂性反流病**，有典型症状但食管外观正常。这一型更常见。
+
+并发症包括消化性狭窄、出血和**Barrett食管**。
+:::
+
+### 反流为什么会发生
+
+胃与食管之间的屏障由两部分组成：LOS本身和膈脚。反流主要通过三种机制发生：
+
+- **一过性LOS松弛。** 这是与吞咽无关的短暂松弛，由胃上部的牵张触发。它们是大多数人的主要机制，这就是反流常在大餐后发生的原因。
+- **LOS静息压低。** 这在重症中更重要。吸烟、饮酒、油腻食物以及钙通道阻滞剂和硝酸酯类等药物会降低LOS压力。
+- **食管裂孔疝。** 当胃上部经膈食管裂孔向上滑动时，膈脚不再加强LOS，交界处下方形成一个酸袋。
+
+肥胖增加腹内压，是主要的危险因素。妊娠时腹内压升高，同时孕激素使LOS松弛。损害程度还取决于酸与食管接触的时间，蠕动减弱或餐后很快躺下时接触时间延长。
+
+### 处理
+
+截至2026年，英国的实践遵循NICE指南CG184（消化不良和胃食管反流病）。概要如下：
+
+- **生活方式措施**：减重、戒烟、晚餐少量、夜间症状者抬高床头，以及审查加重反流的药物。
+- **抑酸**：足量PPI治疗4周或8周，然后减至能控制症状的最低剂量，或改为"按需"使用。重度食管炎通常需要更长疗程和维持治疗。抗酸药和藻酸盐有助于偶发症状。
+- **手术**：腹腔镜胃底折叠术，即用胃底包绕食管下段，适用于证实有反流、对PPI有效但不愿长期服药的人，或持续反流者。可能的副作用包括吞咽困难和不能嗳气。
+
+PPI有效且总体安全，但长期使用与艰难梭菌（*Clostridioides difficile*）感染、低镁血症以及B12（可能还有钙）吸收减少有关。这些关联是定期审查剂量的理由，而不是对需要PPI的人拒绝使用的理由。
+
+::: warning "烧心"可能来自心脏
+劳累时胸骨后烧灼感、休息后缓解，即使发生在已知有反流的人身上，也应首先视为心绞痛，直到排除为止。反过来，食管痉挛可引起对硝酸酯类有反应的压榨性胸痛，因为硝酸酯类使各处平滑肌松弛。对PPI或硝酸酯类有反应并不能确定病变器官。必须先评估心脏原因（[[cardiovascular/coronary-artery-disease]]）。
+:::
+
+### Barrett食管
+
+**Barrett食管**是食管下段正常的鳞状上皮被柱状上皮取代，内镜下表现为一条橙红色黏膜舌从胃食管交界处向上延伸至少1 cm，并经活检证实。它是对长期反流的一种反应，是大多数**食管腺癌**的前驱病变，经历从化生、低级别异型增生、高级别异型增生到癌的序列。
+
+对于没有异型增生的Barrett食管，个人的癌变风险很低，约为每年千分之几，但这种情况很常见，因此设有监测计划。根据英国胃肠病学会的指导，监测间隔主要取决于病变段的长度和有无异型增生。异型增生会改变处理方式。高级别异型增生和早期癌现在通常采用内镜治疗：先切除可见病变（内镜下切除），再消融剩余的Barrett黏膜，常用射频消融。
+
+::: example 部分有效的患者 {#ex-barrett}
+一名61岁肥胖白人男性，烧心20年，症状发作时服用奥美拉唑。首次内镜检查发现交界处上方有一段6 cm的橙红色黏膜。活检示肠化生，无异型增生。请解释诊断及其意义，以及随访原则。
 ::: solution
-**经典失弛缓（[[#def-dysphagia]]）：固体液体从一开始都有的模式、潴留食物反流、被贴错标签的反流与哮喘十年（夜间误吸咳嗽路径——邻近[[respiratory/respiratory-infections]]与[[respiratory/asthma-copd]]）、及既支持（交界处扩张、潴留液体、黏膜正常）又必须完成活检与超声内镜或计算机断层以排除交界处假性失弛缓——癌与浸润性及Chagas模仿者（[[gastrointestinal/gi-bleeding-cancer]]与邻近[[microbiology/fungi-parasites]]的锥虫流行病学、[[public-health/global-health]]）的内镜。用高分辨率测压确认综合松弛压升高伴蠕动消失；芝加哥分型指导治疗选择（[[#def-dysphagia]]）；可获得时用定时钡餐与功能性管腔成像辅助（[[clinical-skills/medical-imaging]]）。按风险与偏好治疗：**气囊扩张（分级、讨论穿孔风险并做外科准备——[[surgery/acute-abdomen]]）、Heller肌切开（带其胃底折叠配对的反流逻辑）或经口内镜肌切开（其自身反流取舍的内镜肌切开）——随机比较与共享决策谈话（[[surgery/gastrointestinal-surgery]]、[[clinical-skills/communication]]）；不耐受者用肉毒与硝酸酯钙通道阻滞剂；哮喘、牙齿与营养清扫（[[gastrointestinal/clinical-nutrition]]、[[respiratory/asthma-copd]]）；及为潴留症状与反复狭窄及小幅升高癌风险的长间隔随访（[[gastrointestinal/gi-bleeding-cancer]]、[[public-health/screening]]）。**
+**第1步：诊断。** 柱状黏膜从交界处向上延伸超过1 cm，活检有肠化生，即**Barrett食管**。6 cm属于长段。
+
+**第2步：意义。** Barrett食管是食管腺癌的主要前驱病变。他的危险因素符合典型特征：男性、白人、50岁以上、肥胖和长期反流。每年的癌变风险仍然较低，但病变段越长风险越高。
+
+**第3步：随访原则。** 应按国家指南设定的间隔为他提供内镜监测，按标准方式取活检以寻找异型增生。只有在发现异型增生或早期癌时他能够耐受治疗，监测才有价值，因此这是一个共同决策。
+
+**第4步：治疗反流。** 持续PPI治疗适合用于控制症状、愈合食管炎，这也使活检更容易判读。减重和戒烟可减少反流。如果发现高级别异型增生，专科团队通常会提供内镜下切除和消融。
 :::
 :::
 
-## 酸器官
+## 胃、幽门螺杆菌与消化性溃疡
 
-::: definition 消化不良、幽门螺杆菌与溃疡病 {#def-peptic}
-**消化不良（上腹痛与烧灼与餐后饱胀与早饱综合征）：按年龄与红旗把关的路径（现行指南的60岁以下检测并治疗幽门螺杆菌、60岁或有红旗者检查的结构——[[gastrointestinal/gi-bleeding-cancer]]转诊、及非甾体抗炎药与阿司匹林与铁复审（[[pharmacology/adverse-reactions]]与[[blood/anaemia]]））；阴性或治疗后持续：功能性消化不良（罗马Ⅳ餐后不适综合征与上腹痛综合征、带容受受损与内脏高敏感及幽门螺杆菌后遗与社会心理放大机制（[[gastrointestinal/bowel-disease]]的脑肠框架））——治疗：阳性则根除幽门螺杆菌、质子泵抑制剂试验、三环类（低剂量阿米替林作为带睡眠获益的神经调节剂——邻近[[nervous-system/headache-pain]]）、米氮平适应选项、促动力药温和证据、认知行为治疗与肠道导向治疗（[[gastrointestinal/bowel-disease]]共享规划）、膳食模式试验（[[gastrointestinal/clinical-nutrition]]）、及诚实的症状期望谈话（[[clinical-skills/communication]]）。** **消化性溃疡病：两个可用药预防的故事（非甾体抗炎药与幽门螺杆菌独立而协同的风险——环氧化酶1黏膜防御丢失（[[gastrointestinal/digestion-absorption]]）与幽门螺杆菌炎症酸度及十二指肠遗传程序）；幽门螺杆菌生物学（尿素酶氨云与螺旋运动及CagA与VacA效应因子及全身地图流行病学——[[microbiology/bacterial-pathogenesis]]的经典）；诊断（尿素呼气与粪便抗原及内镜快速尿素酶与组织学及培养及耐药聚合酶链面板——[[microbiology/laboratory-diagnosis]]；近期质子泵抑制剂与抗生素及出血的假阴性、及治疗后至少4周确认规则——[[clinical-skills/laboratory-tests]]）；根除克拉霉素三联对铋剂四联对序贯对伏诺拉生阿莫西林对左氧氟沙星与利福布汀救援序列——按本地耐药指导（[[microbiology/antimicrobials]]与耐药地理的管理管理（[[public-health/global-health]]））。溃疡并发症各占半章：出血（[[gastrointestinal/gi-bleeding-cancer]]）、穿孔（[[surgery/acute-abdomen]]）、穿透（后壁十二指肠胰腺咬痛与胃瘫瘢痕变形（[[gastrointestinal/pancreas-biliary]]））及胃出口梗阻（潴留食物呕吐与低氯碱中毒图像——[[renal/acid-base-disorders]]自己的代谢性碱中毒课与外科解除决定[[surgery/gastrointestinal-surgery]]）。胃泌素瘤（四分之一伴多发性内分泌腺病1型的胃泌素分泌神经内分泌肿瘤（[[endocrine/reproductive-endocrinology]]））——多发而难治及远段溃疡与腹泻（[[gastrointestinal/digestion-absorption]]的分泌性一行）呈现、带空腹胃泌素与酸分泌诊断与定位影像（生长抑素受体正电子发射断层）。应激性溃疡预防（重症监护的凝血病通气烧伤标准与质子泵抑制剂对H2对不用的辩论——[[emergency-critical-care/critical-care]]）。**
+胃黏膜能在自身胃酸中存活，靠的是一套分层防御。表面细胞分泌黏液和碳酸氢盐，在上皮旁形成接近中性的一层。紧密连接阻止酸反向渗漏。丰富的血供清除进入的酸并输送碳酸氢盐。由环氧合酶（COX）合成的**前列腺素**刺激黏液和碳酸氢盐分泌并维持血流。当酸和胃蛋白酶压倒这些防御时，就形成溃疡。
+
+::: theorem 攻击超过防御时形成溃疡 {#thm-ulcer}
+当酸和胃蛋白酶的损伤作用超过黏膜的保护能力时，就发生消化性溃疡。几乎所有消化性溃疡都源于打破这一平衡的两种原因之一：幽门螺杆菌（*Helicobacter pylori*）感染，或使用包括阿司匹林在内的非甾体抗炎药（NSAID）。
 :::
 
-::: definition 胃瘫与呕吐综合征 {#def-gastroparesis}
-**胃瘫排空延迟——4小时核素扫描或呼气试验——而无机械性梗阻；糖尿病性迷走与Cajal间质细胞及肠肌病（[[endocrine/diabetes-complications]]与血糖速率干扰混杂因素）、病毒后、术后（胃底与幽门去神经的迷走神经切断权重课）、药物阿片与抗胆碱能及胰高血糖素样肽1激动剂（[[endocrine/diabetes]]自己的胃瘫模仿者与围操作期暂停规则）及神经退行性（帕金森与线粒体（[[nervous-system/movement-disorders]]）病因）；症状餐后饱胀与恶心与呕吐未消化食物与腹胀、及食物递送不匹配的血糖过山车（[[endocrine/diabetes-complications]]的胰岛素时机困境）；处理阶梯：**少量低脂低纤维餐与液体热量与咀嚼力学（[[gastrointestinal/clinical-nutrition]]）、止吐与促动力（多潘立酮的延长QT与供应安排（[[pharmacology/adverse-reactions]]）、红霉素的胃动素激动伴快速耐受（[[gastrointestinal/digestion-absorption]]的胃动素动力模式）、普芦卡必利的血清素5HT4选项、及甲氧氯普胺的迟发性运动障碍红线（[[nervous-system/movement-disorders]]））、血糖与水化及维生素补充（[[gastrointestinal/clinical-nutrition]]）、难治层幽门干预（内镜胃肌切开与球囊及肉毒的阴性随机试验教训）、胃电刺激温和的现代表现、及空肠喂养管与全肠外营养边界（[[gastrointestinal/clinical-nutrition]]与肠内对肠外之辩）；及排除清单（机械性出口梗阻、恶性、大麻与周期性模式）。** 大麻性多呕吐与周期性呕吐（刻板发作性呕吐伴发作间期健康与热水澡强迫（瞬时受体电位香草素与 大麻素受体假说）带大麻停用作为界定性检验（[[psychiatry/substance-use]]）、氟哌啶醇与辣椒素急性选项、及舒马曲坦与托吡酯的偏头痛共享回路逻辑（[[nervous-system/headache-pain]]）及线粒体与家族史关联、及“不是胃瘫的胃瘫诊断”陷阱）。反刍（餐后不费力反流再咀嚼或吐出、带习得习惯生理与膈肌呼吸行为治愈（邻近[[gastrointestinal/bowel-disease]]的行为规划）——及抗反流手术失败模仿者的警告）。**
+::: proof
+幽门螺杆菌是一种螺旋形、有鞭毛的细菌，生活在胃的黏液层中。它产生**尿素酶**，把尿素转化为氨和二氧化碳；氨中和细菌周围的酸。它在所有感染者中引起慢性胃炎，胃炎的分布模式决定结局：
+
+- 感染主要在**胃窦**时，产生生长抑素的D细胞减少。胃泌素升高，健康胃体的胃酸分泌增加。更多的酸到达十二指肠，在那里形成胃型上皮斑块并被感染。结果是**十二指肠溃疡**。
+- 感染累及**胃体**时，损伤壁细胞并导致萎缩。胃酸分泌减少，但削弱的黏膜发生溃疡（**胃溃疡**），多年后萎缩和肠化生增加**胃癌**风险。
+
+**NSAID**抑制COX-1，从而减少黏膜前列腺素，去除了防御的关键部分。它们还直接损伤上皮。风险随剂量、年龄超过65岁、既往溃疡，以及与抗凝药、抗血小板药、糖皮质激素或SSRI合用而增加。
+
+去除病因通常就能治愈疾病。根除幽门螺杆菌后，幽门螺杆菌相关溃疡很少复发；停用NSAID后，NSAID溃疡可以愈合。
 :::
+
+::: definition 消化性溃疡病 {#def-peptic}
+**消化性溃疡**是由酸和胃蛋白酶引起的胃或十二指肠黏膜缺损，深达黏膜肌层以下。十二指肠溃疡比胃溃疡常见。主要并发症有：
+
+- **出血**，表现为呕血或黑便（[[gastrointestinal/gi-bleeding-cancer]]）。
+- **穿孔**，表现为突发剧烈腹痛和腹膜炎。
+- **胃出口梗阻**，由幽门处瘢痕或水肿引起，表现为呕吐。
+
+胃溃疡应取活检或随访以排除癌症，因为恶性溃疡可以看起来是良性的。
+:::
+
+### 幽门螺杆菌的检测与治疗
+
+基层医疗使用非侵入性检查：
+
+- **碳13尿素呼气试验**：受检者吞服标记的尿素，胃内尿素酶释放出标记的CO₂进入呼气。
+- **粪便抗原试验**：检测粪便中的幽门螺杆菌蛋白。
+- **血清学**检测抗体，但治愈后仍保持阳性，因此不能显示现症感染或证实根除。
+
+PPI和抗生素会抑制细菌，导致呼气试验和粪便试验假阴性。检测前应停用PPI 2周，且4周内不得使用抗生素。内镜检查时可用活检尿素酶试验或组织学。
+
+治疗是PPI联合两种抗生素。截至2026年，NICE CG184建议使用PPI加阿莫西林（amoxicillin）以及克拉霉素（clarithromycin）或甲硝唑（metronidazole）之一，每日两次，疗程7天；对青霉素过敏者使用不含青霉素的方案，并根据既往抗生素暴露选择。欧洲指南（Maastricht VI/佛罗伦萨共识，2022年）在克拉霉素耐药常见的地区倾向于14天方案和含铋剂的四联疗法。抗生素耐药，尤其是克拉霉素耐药，是治疗失败的主要原因，应根据当地耐药情况选择方案。具体方案和剂量来自当前的当地指南和处方集。
+
+诊断性检测中有两点在实践中很重要。第一，幽门螺杆菌的患病率差异很大：英国年轻人中较低，而在儿童期感染率高的地区长大的人中高得多。第二，如图所示，当患病率低时，即使非常好的检测，阳性预测值也只是中等。
+
+::: widget bayes
+mode: test
+prevalence: 0.1
+sensitivity: 0.95
+specificity: 0.95
+caption: 一个灵敏度和特异度均为95%的示意性呼气试验。患病率为10%时，约三分之一的阳性结果是假阳性。提高患病率，可以看到阳性预测值上升。图中数字仅用于教学，不代表某一具体检测的性能。
+:::
+
+::: example NSAID溃疡 {#ex-ulcer-bleed}
+一名74岁骨关节炎女性，每天服用萘普生（naproxen）6个月，同时服用小剂量阿司匹林。她排黑色柏油样便2天，站立时感觉要晕倒。复苏后，内镜见一个1.5 cm的胃溃疡伴可见血管，予内镜治疗。活检尿素酶试验阳性。请解释她溃疡的原因，并概述防止复发必须做的事。
+::: solution
+**第1步：找出原因。** 她有两个独立原因共同作用。萘普生和阿司匹林抑制COX-1，减少黏膜前列腺素（[[#thm-ulcer]]）。她还感染了幽门螺杆菌。她的年龄以及NSAID与阿司匹林合用都进一步增加了风险。
+
+**第2步：急性期处理。** 黑便伴体位性症状意味着失血量大。复苏、风险评分、内镜止血以及内镜后使用PPI是标准流程，见[[gastrointestinal/gi-bleeding-cancer]]。
+
+**第3步：防止复发。**
+- **根除幽门螺杆菌**，并在之后确认根除，因为她发生了有并发症的溃疡。
+- **停用萘普生**，用其他方法治疗关节炎，如对乙酰氨基酚（paracetamol）、外用NSAID和物理治疗。
+- **审查阿司匹林。** 如果用于心血管疾病二级预防，获益通常超过风险，一般在PPI保护下尽早恢复；如果只是一级预防，停用是合理的。这是与她本人及其心脏科医生共同作出的决定。
+- **胃溃疡随访**：通常安排复查内镜以确认愈合并再次活检，因为胃溃疡可能是恶性的。
+:::
+:::
+
+## 消化不良与报警特征
+
+**消化不良**描述一组上腹部症状：上腹痛或烧灼感、餐后饱胀和早饱。大多数接受检查的消化不良患者没有结构性病因。他们患的是**功能性消化不良**，按罗马IV标准定义为令人困扰的症状至少持续3个月、在诊断前至少6个月开始，且内镜下无结构性解释。功能性消化不良是真实存在的：它反映胃容受功能改变、部分人胃排空延迟以及内脏高敏感。
+
+在英国，根据NICE CG184，基层医疗中未经检查的消化不良有两条大致途径。有**报警特征**者转诊内镜检查。其他人先审查用药和接受生活方式建议，然后采用幽门螺杆菌"检测并治疗"策略，或者用足量PPI一个月；症状持续时改用另一种。
+
+::: definition 上消化道癌的报警特征 {#def-alarm}
+截至2026年，NICE NG12建议对以下人群进行**紧急直接通道上消化道内镜检查**，两周内完成：
+
+- 任何年龄的**吞咽困难**；或
+- **55岁及以上伴体重下降**，同时有上腹痛、反流或消化不良中的任何一项。
+
+对于55岁及以上治疗无效的消化不良者，或上腹痛伴血红蛋白低者，以及其他一些组合，也建议考虑非紧急内镜检查。与胃癌相符的**上腹部肿块**应紧急转诊至疑似癌症通道。各地流程在细节上可能不同。
+:::
+
+这些标准是一种权衡。年龄阈值反映了上消化道癌随年龄急剧增加；对有报警症状的年轻人，如果临床判断有疑虑，仍应检查。体重下降、缺铁性贫血、持续呕吐和家族史都会提高怀疑程度。
+
+## 胃轻瘫与呕吐
+
+::: definition 胃轻瘫 {#def-gastroparesis}
+**胃轻瘫**是在没有机械性梗阻的情况下固体胃排空延迟，伴恶心、呕吐、早饱、饱胀和腹胀等症状。标准检查是对放射性标记固体餐进行4小时**胃排空闪烁显像**。4小时时滞留超过10%为异常。
+:::
+
+最常见的已知病因是**糖尿病**（通过迷走神经自主神经病变，且急性高血糖本身就减慢排空）、损伤迷走神经的**手术**，以及药物，尤其是阿片类药物和GLP-1受体激动剂。许多病例为特发性，常发生在病毒感染之后。诊断胃轻瘫之前，必须经内镜排除胃出口梗阻。
+
+处理是循序渐进的：优化血糖，尽可能停用减慢排空的药物，采用少量多餐、低脂低纤维饮食，较重者改为流质或糊状食物。促动力药有重要的局限。**甲氧氯普胺**（metoclopramide）是多巴胺D2拮抗剂，可引起锥体外系反应和迟发性运动障碍，在英国其使用限于最长5天的短疗程。**多潘立酮**（domperidone）较不容易通过血脑屏障，但有QT间期延长和心律失常风险，使用也相应受限。**红霉素**刺激胃动素受体，但持续使用会失去效果。重症可能需要在专科中心进行空肠喂养或胃电刺激。
 
 ::: example 呕吐的糖尿病患者 {#ex-gastroparesis}
-一名41岁1型糖尿病（糖化血红蛋白78 mmol/mol、视网膜病变）6个月来餐后饱胀、进食3小时后呕吐未消化食物、及血糖剧烈波动伴中午重度低血糖；胃镜正常。
+一名35岁南亚裔女性，患1型糖尿病22年，有视网膜病变和周围神经病变。一年来逐渐出现恶心、早饱，呕吐出数小时前吃下的食物。她的血糖波动难以预测，餐后出现原因不明的低血糖。内镜见食物残留，无梗阻。请解释她的症状和血糖模式，并概述下一步检查和处理原则。
 ::: solution
-**糖尿病性胃瘫[[#def-gastroparesis]]的诊断：长病程糖尿病微血管与肠神经病变背景、食物递送与胰岛素不匹配的低血糖签名胰岛素剂量时机对胃排空混乱（[[endocrine/diabetes-complications]]与餐前对餐时给药之辩）及阴性内镜排除出口病变（[[#def-peptic]]的胃出口梗阻）。确认：**4小时排空扫描带停药与血糖小于15的预条件（[[clinical-skills/medical-imaging]]）及营养素校准；处理这一恶性循环：营养师主导的少量低脂低纤维频繁餐与混合热量液体方案（[[gastrointestinal/clinical-nutrition]]）；胰岛素策略更换餐后给药或泵的方波输出及持续监测警报（[[endocrine/diabetes]]自己的技术医学）；促动力试验（餐前多潘立酮带心电图与延长QT登记（[[pharmacology/adverse-reactions]]）或小剂量红霉素带快速耐受规划（[[gastrointestinal/digestion-absorption]]的胃动素动力模式））；带延长QT卫生的止吐选择及大麻酒精周期性排除（[[psychiatry/substance-use]]）；作为促动力本身的血糖稳定（高血糖减慢排空的环路[[endocrine/diabetes-complications]]）；难治转诊（幽门干预与神经肠单元及空肠喂养决定——[[gastrointestinal/clinical-nutrition]]与[[surgery/gastrointestinal-surgery]]）；及共同照护记录（围手术期碳水负荷禁忌与病日液体规程（[[surgery/perioperative-care]]）——[[clinical-skills/records-handover]]）。**
-:::
-:::
+**第1步：机制。** 长期糖尿病伴视网膜病变和神经病变，提示她也有累及迷走神经的**自主神经病变**。失去迷走神经输入会损害胃底容受功能和胃窦研磨，固体排空缓慢。内镜下无梗阻却有食物残留，支持**糖尿病性胃轻瘫**。
 
-::: widget plot
-f: 95/(1+exp(-(x-3)*1.2)); 100/(1+exp(-(x-0.02)*400))
-x: 0, 10
-y: 0, 105
-labels: \text{质子泵抑制剂治疗天数},\ \text{烧心缓解（占最终效应的百分比）};\ \text{质子泵抑制剂（受泵周转限制）};\ \text{抗酸药（立即）}
-caption: 为何质子泵抑制剂感觉慢而抗酸药感觉快（[[gastrointestinal/digestion-absorption]]）：泵阻滞随每个给药周期累积、直到分泌能力周转与阻滞平衡（2-5天的爬坡），而抗酸药与藻酸盐对腔内酸立即起效（桥梁与挽救角色——[[#def-gerd]]）。这条曲线也是依从咨询图：“试过奥美拉唑两天”的患者并没有试过奥美拉唑（[[pharmacology/patient-variation]]、[[clinical-skills/communication]]）——而同一个药效学逻辑支撑着餐前时机指示与延迟的按需策略（[[gastrointestinal/digestion-absorption]]的酸曲线图）。
-:::
+**第2步：血糖模式。** 她的胰岛素是按一餐饭的预期吸收时间给的，但食物并没有按预期到达小肠。速效胰岛素达峰时食物仍在胃内，造成低血糖；之后食物最终排空时，血糖升高。排空不规律因此导致血糖不规律。高血糖还会进一步减慢排空，形成恶性循环。
 
-## 上消化道肿瘤
+**第3步：确诊。** 在血糖控制尚可时进行4小时胃排空闪烁显像，可量化延迟程度。
 
-::: definition 胃癌与食管癌，及淋巴瘤与间质瘤一角 {#def-tumours}
-**胃癌（[[gastrointestinal/gi-bleeding-cancer]]分期与治疗路径；本章是病因与癌前生理）：Correa级联（正常黏膜→慢性幽门螺杆菌胃炎→萎缩性胃炎→肠化生→异型增生→腺癌——[[pathology/chronic-inflammation-repair]]的多步癌变教材、及解释全球地图与移民转变研究的遗传流行病学（[[genetics/common-disease-genetics]]、[[public-health/global-health]]））；风险幽门螺杆菌——一级预防级证据、部分胃癌与遗传性弥漫型的CDH1胚系变异（[[genetics/cancer-genetics]]、[[genetics/genetic-testing]]的预防性全胃切除困境）、恶性贫血伴自身免疫萎缩性胃炎（[[gastrointestinal/digestion-absorption]]的监测推论、胆汁反流与既往部分胃切除、吸烟、盐与腌制食物及家族性腺瘤性息肉病与非息肉病综合征背景（[[gastrointestinal/bowel-disease]]））；呈现早期无特异——进行性吞咽困难、体重下降、上腹痛、铁缺乏、及“安全”期后的厌食（[[clinical-skills/history-taking]]的红旗清单）与体征（Virchow结与Sister Mary Joseph结节及锁骨上淋巴结（[[anatomy/back-upper-limb]]、[[anatomy/abdomen]]））；类型溃疡型与浸润型及Lauren肠型弥漫型分类——带CDH1与E-cadherin生物学的弥漫型（[[pathology/cancer-biology]]）及皮革袋胃（弥漫浸润型胃癌）及贲门与远端的部位差异（[[gastrointestinal/gi-bleeding-cancer]]手术范围逻辑）。** 食管癌：两种类型、两个病因大陆（鳞癌——吸烟与酒精及啜饮极烫饮料及潜在失弛缓及Plummer-Vinson蹼及头颈鳞癌场癌化（[[clinical-skills/clinical-reasoning]]）；腺癌——反流与Barrett及肥胖的流行病学（[[endocrine/diabetes]]代谢集群）及日益上升的西方发病率而鳞癌在下降（[[public-health/determinants-inequalities]]）），二者共同呈现于进行性吞咽困难、体重下降、及铁缺乏；诊断与分期（[[gastrointestinal/gi-bleeding-cancer]]的紧急路径及内镜超声与正电子发射断层及诊断性腹腔镜用于分期腹膜疾病）、及治疗与姑息（支架与管饲及放射，参见[[surgery/gastrointestinal-surgery]]与[[pathology/cancer-diagnosis]]及[[geriatrics-palliative/end-of-life-care]]的症状工作）。** 淋巴病变与间质瘤一角：与幽门螺杆菌相关的胃黏膜相关淋巴组织淋巴瘤（根除作为治愈性治疗的分期依赖性——[[clinical-skills/clinical-reasoning]]、[[gastrointestinal/gi-bleeding-cancer]]）及胃肠道间质瘤Cajal间质细胞同源受体酪氨酸激酶生物学及伊马替尼作为靶向治疗的转变故事（[[pharmacology/drug-development-prescribing]]、[[gastrointestinal/digestion-absorption]]的起搏器注脚）。**
-:::
-
-::: example 凌晨三点的咖啡渣样呕吐 {#ex-ulcer-bleed}
-一名72岁因手痛服双氯芬酸、置入支架后服低剂量阿司匹林、从未检测幽门螺杆菌者，因上腹痛与咖啡渣样呕吐醒来；心率112、血压98/60、血红蛋白84（先前130）、尿素14、肌酐110、国际标准化比值正常；格拉斯哥昏迷评分15。
-::: solution
-**伴休克指数升高的上消化道出血[[gastrointestinal/gi-bleeding-cancer]]一课的管理：气道呼吸循环与大口径通路和配血（[[emergency-critical-care/acute-assessment]]）、限制性输血阈值70-80（[[blood/transfusion]]）、尿素升高伴肌酐正常作为消化血液蛋白负荷（[[renal/water-sodium]]）、风险评分（[[gastrointestinal/gi-bleeding-cancer]]的Glasgow-Blatchford与Rockall）、及在安排紧急内镜与内镜止血时的质子泵抑制剂静滴或大剂量口服（内镜套夹与热凝与注射武器库、及再出血时二次内镜对介入栓塞对外科手术的阶梯——[[surgery/acute-abdomen]]、[[surgery/gastrointestinal-surgery]]与[[clinical-skills/medical-imaging]]）。** 病因（非甾体抗炎药加阿司匹林加未检测幽门螺杆菌的三重打击[[#def-peptic]]）：**溃疡活检与根除规划（[[microbiology/antimicrobials]]）及二级预防架构支架患者止血后继续阿司匹林对暂停的决定（[[cardiovascular/coronary-artery-disease]]与[[nervous-system/stroke]]的二级预防权重）及外用药优先与对乙酰氨基酚策略的非甾体抗炎药替换方案、及必要时用质子泵抑制剂覆盖非甾体抗炎药的决定（[[pharmacology/adverse-reactions]]）、及根除幽门螺杆菌并确认治愈（[[gastrointestinal/gi-bleeding-cancer]]的预防再出血证据）及长期质子泵抑制剂处方（[[gastrointestinal/digestion-absorption]]的风险复审核实）及防止本次入院重演的记录（[[clinical-skills/records-handover]]、[[geriatrics-palliative/polypharmacy]]）。**
+**第4步：处理原则。** 调整胰岛素时间，考虑连续血糖监测和胰岛素泵；少量多餐、低脂低纤维饮食；在监管限制范围内短期使用止吐药或促动力药。需要专科营养和糖尿病团队参与，如果体重下降可能需要营养支持（[[gastrointestinal/clinical-nutrition]]）。
 :::
 :::
 
 ::: quiz
-Barrett食管被定义为：
-- [ ] 对抗酸药无反应的症状性反流
-- [x] 胃食管交界处以上柱状黏膜食管中的肠化生杯状细胞
-- [ ] 内镜下任何柱状上皮食管
-- [ ] 仅高级别异型增生
+一名30岁男性在服用PPI期间做尿素呼气试验呈阳性。完成根除治疗两周后，在仍服用PPI的情况下复查呼气试验为阴性。你能得出什么结论？
+- [ ] 已证实根除
+- [x] 阴性结果可能是虚假的安慰，因为PPI和近期的抗生素抑制了细菌
+- [ ] 第一次检测一定是假阳性
+- [ ] 他应改用血清学来证实治愈
 ::: solution
-**定义是组织学的带杯状细胞的肠化生——[[pathology/chronic-inflammation-repair]]的化生规划、及[[#def-gerd]]中本章自己的化生定义、因为腺癌风险跟随特化肠型化生及其异型增生进展、不跟随症状或颜色（[[gastrointestinal/gi-bleeding-cancer]]的监测立论与[[public-health/screening]]的条件项需要一个组织学闸门）；长度与异型增生随后设定监测间隔（[[#def-gerd]]与[[#ex-barrett]]）。按西方约定、看似柱状上皮而无杯状细胞的食管不是Barrett（[[#def-gerd]]）。**
+PPI和抗生素抑制幽门螺杆菌并降低尿素酶活性，因此呼气试验和粪便试验可能**假阴性**。服用PPI时的阳性结果仍然有意义，因为抑制只会降低而不会升高信号。根除检测需在抗生素停用至少4周、PPI停用2周后进行。血清学不能证实治愈，因为成功根除后抗体仍持续存在。
 :::
 :::
 
 ::: history
-**酸疾病谱系：假饲狗与Pavlov的迷走（1900年代）；Katsch与分次试验餐时代的胃液分析；Schwarz的“无酸无溃疡”（1910）——随后被Black的H2阻滞剂与泵药物推翻（[[gastrointestinal/digestion-absorption]]的酸曲线图）；** **Barrett 1950年的描述（战后反流狭窄流行与1960-80年代的腺癌流行（1990年代发病率上升分析——[[gastrointestinal/gi-bleeding-cancer]]））；** **Marshall与Warren 1983年自我给药的幽门螺杆菌传奇[[microbiology/bacteria]]自己的自我感染故事、溃疡治愈时代（1989年《柳叶刀》根除试验使复发从70%降到不足10%）、及2005年诺贝尔奖（邻近[[infectious-diseases/stewardship-outbreaks]]的幽门螺杆菌抗生素耐药警告[[microbiology/antimicrobials]]）；** **测压革命（1970年代灌注导管时代）与2000年代高分辨率测压芝加哥分类（[[#def-dysphagia]]）；** **质子泵抑制剂时代及其去处方清算（[[gastrointestinal/digestion-absorption]]与[[geriatrics-palliative/polypharmacy]]）；腹腔镜胃底折叠与经口内镜肌切开及经口内镜胃折叠的外科技术弧线（[[surgery/gastrointestinal-surgery]]）；及上消化道的检查点与HER2及claudin 18.2分子肿瘤学（[[genetics/genomic-medicine]]与邻近[[immunology/vaccines-immunotherapy]]的免疫检查点医学）。**
-:::
-
-## 通向何处
-
-分泌生理在[[gastrointestinal/digestion-absorption]]；出血与癌症路径在[[gastrointestinal/gi-bleeding-cancer]]；外科处理在[[surgery/gastrointestinal-surgery]]而穿孔在[[surgery/acute-abdomen]]；幽门螺杆菌微生物学在[[microbiology/bacteria]]；药物机制在[[pharmacology/drug-receptor]]；脑肠功能重叠在[[gastrointestinal/bowel-disease]]；营养挽救在[[gastrointestinal/clinical-nutrition]]；Barrett监测在[[public-health/screening]]。
-
-::: exercise 凌晨两点的板状腹 {level=2}
-一名58岁男性、服用萘普生与氯吡格雷、突发弥漫性腹痛6小时；腹肌紧张、肝浊音界消失、X线显示膈下游离气体。写出第一个小时与 确定性决定。
-::: solution
-**穿孔的消化性溃疡直到被证明否则（[[surgery/acute-abdomen]]与[[#def-peptic]]）：第一个小时：气道呼吸循环与静脉通路与大剂量阿片及抗生素及鼻胃管及液体复苏（[[emergency-critical-care/acute-assessment]]、[[emergency-critical-care/shock-fluids]]）；氯吡格雷的逆转决策与抗血小板暂停及血小板输注的有限作用（[[blood/haemostasis-bleeding]]、[[cardiovascular/coronary-artery-disease]]）；紧急手术（腹腔镜探查与修补（带胃网膜瓣）及彻底冲洗、及病灶活检——因为“良性”溃疡穿孔中有一小部分是癌性溃疡（[[gastrointestinal/gi-bleeding-cancer]]、[[surgery/gastrointestinal-surgery]]））；及事后审计（幽门螺杆菌状态与根除、非甾体抗炎药替换与风险沟通、及记录以打断“他会再次穿孔”的循环（[[clinical-skills/records-handover]]、[[geriatrics-palliative/polypharmacy]]））。教训：台X线在四十分钟之内就把鉴别变成决定——在腹部、影像常常只是把病史中最危险的那个选项确认一遍（[[clinical-skills/medical-imaging]]）。**
-:::
-:::
-
-::: exercise 分拣这份胸痛 {level=2}
-一名45岁女性有劳力性胸闷与夜间烧心；运动试验阴性。给出你如何处理这两种可能的诊断、及为何“质子泵抑制剂试验”既合理又不够。
-::: solution
-**并行、不是串行（[[#def-gerd]]、[[cardiovascular/coronary-artery-disease]]、[[clinical-skills/clinical-reasoning]]）：患者症状同时存在时，两者都可以为真；运动试验阴性显著降低（而未消除）阻塞性冠状动脉疾病的可能性、尤其在她的风险较低时（[[cardiovascular/coronary-artery-disease]]的验前概率规则、[[epidemiology-ebm/diagnostic-tests]]）。反流评估：带警示征者内镜及8周正确给药的质子泵抑制剂试验餐前、足量、依从（[[gastrointestinal/digestion-absorption]]的酸曲线）；若有效则支持但不能证明反流安慰剂反应在烧心中很高（[[pharmacology/drug-receptor]]的期望效应文献）；若症状持续而反流证据薄弱则进行酸碱阻抗与测压、以区分真正的难治性反流与功能烧心及反流高敏感（[[#def-gerd]]的症状相关）；持续胸痛考虑心脏与食管起源均可能（食管痉挛与高压下括约肌的相似性——[[#def-dysphagia]]的动力课、及共享的内脏传入汇聚（[[nervous-system/headache-pain]]））；并把质子泵抑制剂试验当作诊断试验来读、需要更明确的证据（[[epidemiology-ebm/statistics-for-clinicians]]）。沟通：解释为什么两者都要继续随访及为什么一个阳性质子泵抑制剂试验不是诊断（[[clinical-skills/communication]]）。**
-:::
+二十世纪的大部分时间里，消化性溃疡被归咎于压力和胃酸，治疗靠饮食、抗酸药和手术。1982年，西澳大利亚珀斯的病理学家沃伦（Robin Warren）和内科医生马歇尔（Barry Marshall）从胃活检中培养出一种弯曲的细菌，并提出它引起胃炎和溃疡。为验证这一点，马歇尔于1984年喝下了该菌的培养液，随后发生急性胃炎。随后的试验表明根除该菌可防止溃疡复发，沃伦和马歇尔获得了2005年诺贝尔生理学或医学奖。与此同时，希尔施维茨（Basil Hirschowitz）及其同事于1957年试用了第一台纤维光学胃镜，使上消化道的直接观察和活检成为常规。
 :::
 
 ::: summary
-- 吞咽困难按部位、按病程、按固体液体分开：口咽性需要不同的检查路径，而进行性固体到液体加体重下降就是紧急内镜指征。
-- 反流是括约肌松弛与清除及黏膜防御的疾病；质子泵抑制剂改变症状与愈合、而机械性组件（裂孔疝、大量夜间酸）解释了部分质子泵抑制剂无效者。
-- 幽门螺杆菌与非甾体抗炎药解释了大多数消化性溃疡；根除治愈疾病并降低再出血，而停用环氧化酶1抑制剂恢复防御。
-- 胃瘫是一个排除性诊断，其治疗首先是营养与时机（少量低脂低纤维餐、调整胰岛素），而促动力药物受心脏与迟发性运动障碍的毒性限制。
-- 上消化道癌在警示征之后出现；Barrett是肠化生的组织学诊断，是监测与内镜治疗的门径。
+- 吞咽困难分为口咽性或食管性，机械性或动力性。按NICE NG12，任何年龄新出现的吞咽困难都需要紧急内镜检查。
+- 贲门失弛缓症是抑制性肌间神经元丧失，导致LOS不能舒张。测压可确诊；治疗是降低括约肌阻力。
+- GORD主要源于一过性LOS松弛、LOS压力低和食管裂孔疝。生活方式改变和PPI是主要治疗；手术适合经过选择的患者。
+- Barrett食管是慢性反流引起的柱状化生，是食管腺癌的前驱病变；异型增生采用内镜治疗。
+- 几乎所有消化性溃疡都由幽门螺杆菌或NSAID引起。去除病因即可治愈疾病。
+- 呼气和粪便试验需停用PPI 2周、停用抗生素4周；血清学不能证实治愈。
+- 胃轻瘫是无梗阻的排空延迟，最常见于糖尿病、手术或药物；促动力药有重要的安全限制。
 :::
 
-## 练习
+## 后续内容
 
-::: exercise 分拣吞咽困难 {level=1}
-各以一种病因分类：(a) 3周进行性先固体后液体吞咽困难、体重下降8公斤、68岁；(b) 2年间断固体液体同等吞咽困难伴未消化食物反流；(c) 卒中后第一口就呛咳。
+上消化道出血以及食管癌和胃癌见[[gastrointestinal/gi-bleeding-cancer]]。胃酸分泌的生理见[[gastrointestinal/digestion-absorption]]，抑酸药的药理学见[[pharmacology/drug-receptor]]。穿孔性溃疡的外科处理属于[[surgery/acute-abdomen]]的内容。
+
+## 习题
+
+::: exercise 吞咽困难分类 {level=1}
+对下列每种情况，说明吞咽困难是口咽性还是食管性，机械性还是动力性：(a)卒中后每次喝水都呛咳；(b)一名70岁体重下降者，3个月来吃肉、继而吃面包越来越困难；(c)一开始就固体和液体均有困难，伴未消化食物反流。
 ::: solution
-**(a) 伴警示征的机械性梗阻→紧急内镜癌症路径（[[gastrointestinal/gi-bleeding-cancer]]、[[#def-tumours]]）；(b) 失弛缓模式（[[#def-dysphagia]]——测压与钡餐、并在同一次内镜或超声内镜排除假性失弛缓）；(c) 伴误吸风险的口咽性吞咽困难→吞咽评估与言语治疗优先（[[nervous-system/stroke]]、[[respiratory/respiratory-infections]]的误吸路径、及[[gastrointestinal/clinical-nutrition]]的喂养决定）。**
+(a)口咽性，神经肌肉性。吞咽反射受损，误吸风险高，需要言语和语言治疗评估。(b)食管性，机械性，进行性伴体重下降：必须经紧急内镜排除癌症。(c)食管性，动力性：贲门失弛缓症是典型病因。
 :::
 :::
 
-::: exercise 给药片定时 {level=1}
-给出正确的质子泵抑制剂指示并从生理解释；说出同次门诊要核查的两个吸收相互作用。
+::: exercise 服药时机 {level=1}
+解释为什么质子泵抑制剂在早餐前30～60分钟服用效果最好，以及为什么其完全疗效需要数天才能建立。
 ::: solution
-**“早餐前三十到六十分钟”——泵激活偶联（[[gastrointestinal/digestion-absorption]]的酸分泌生理与其酸曲线图）及部分有效者的每日两次与分服选项（[[#def-gerd]]）；相互作用：铁的溶解性与酮康唑与厄洛替尼及甲氨蝶呤清除及氯吡格雷（奥美拉唑经CYP2C19）（[[pharmacology/absorption-distribution]]、[[pharmacology/metabolism-excretion]]、[[cardiovascular/coronary-artery-disease]]、[[blood/anaemia]]）、及去处方复审（[[gastrointestinal/digestion-absorption]]的质子泵抑制剂风险复审教学）。**
+PPI只与分泌小管中处于活化状态的质子泵不可逆结合。大多数质子泵由进餐激活，因此在进餐前不久服药，可使血药浓度峰值与最多的活化质子泵同时出现。当时未活化的质子泵逃过抑制，新的质子泵又不断合成，因此规律服药3～5天后抑酸作用才逐渐累积达到稳态。
 :::
 :::
 
-::: exercise 开具根除方案 {level=2}
-给出一名青霉素过敏患者的一线幽门螺杆菌方案逻辑、及治疗后确认规则。
+::: exercise 呼气试验结果 {level=1}
+说出两种检测幽门螺杆菌现症感染的非侵入性检查，并解释为什么不用血清学证实根除。呼气试验前必须做什么以避免假阴性？
 ::: solution
-**过敏先行的推理（[[microbiology/antimicrobials]]）：青霉素过敏排除阿莫西林（所以用铋剂四联、或在有耐药数据时基于克拉霉素的方案、或左氧氟沙星——取决于本地药敏判断（[[public-health/global-health]]与[[microbiology/laboratory-diagnosis]]的耐药检测可得性））；在获批地区的伏诺拉生组合（[[pharmacology/drug-receptor]]）；依从与副作用辅导铋剂黑便与金属味及甲硝唑遇酒精（[[pharmacology/adverse-reactions]]）及十四天疗程纪律（[[microbiology/antimicrobials]]与[[clinical-skills/communication]]）。确认：**治疗至少4周后且停质子泵抑制剂至少2周的尿素呼气或粪便抗原（假阴性机制[[clinical-skills/laboratory-tests]]及出血与抗生素警诫）——及“确认治愈而不是重复经验性三联”的用药管理（[[infectious-diseases/stewardship-outbreaks]]）。**
+碳13尿素呼气试验和粪便抗原试验。血清学检测IgG抗体，治愈后仍持续数月至数年，因此不能区分现症感染和既往感染。检测前应停用PPI 2周，4周内避免使用抗生素，因为两者都抑制细菌并降低尿素酶活性。
 :::
 :::
 
-::: exercise 解读排空检查 {level=2}
-4小时胃排空扫描在一名服阿片与胰高血糖素样肽1激动剂、糖化血红蛋白130的呕吐患者中显示4小时潴留28%（正常<10%）。可以得出什么、不可以得出什么？
+::: exercise 预测值 {level=2 check="68"}
+某呼气试验的灵敏度为95%，特异度为95%。在幽门螺杆菌感染率为10%的人群中使用。阳性结果中真阳性占百分之几？答案取最接近的整数百分比。
+::: hint
+设想1,000人。有多少人感染？有多少未感染者检测阳性？
+:::
 ::: solution
-**错误条件下的阳性检查：阿片与胰高血糖素样肽1激动剂及急性高血糖（大于15 mmol/L）都减慢排空（[[#def-gastroparesis]]的混杂因素；[[endocrine/diabetes-complications]]的血糖速率规则；[[pharmacology/adverse-reactions]]）、所以在停药与控制血糖并重复之前该结果不能确立胃瘫（[[clinical-skills/laboratory-tests]]的重复检查逻辑）；它也不能排除机械性病变（[[#def-gastroparesis]]的内镜预条件）；而症状与排空的相关性很差（治疗综合征而不是治疗扫描的纪律）。结论：**只有在去除混杂之后，该扫描才作为饮食与促动力规划的严重度锚点（[[gastrointestinal/clinical-nutrition]]）——记录下来好让下一个团队重新解读（[[clinical-skills/records-handover]]）。**
+1,000人中，100人感染，其中95人检测阳性。900名未感染者中5%检测阳性：45个假阳性。阳性预测值$= 95/(95 + 45) = 95/140 = 0.679$，约为**68%**。在这一患病率下，每三个阳性结果就有一个是错的，因此当验前概率较高时检测效果最好。
 :::
 :::
 
-::: exercise 为皮革袋胃咨询 {level=2}
-一名44岁患者有早饱、体重下降、两次表浅活检不能定性、计算机断层显示弥漫胃壁增厚；家族史包括两例年轻乳腺癌。正在发生什么、及遗传谈话？
+::: exercise 解读排空检查 {level=2 check="25"}
+胃排空检查中，进餐后立即测得胃内放射性为400 kBq。经衰变校正后，4小时时剩余100 kBq。4小时时滞留了百分之几的食物？胃排空是否延迟？
+::: hint
+滞留率等于剩余放射性除以初始放射性。
+:::
 ::: solution
-**伴黏膜下印戒细胞扩散的弥漫型胃癌（表浅活检阴性的经典——超声内镜深活检与腹腔镜及腹膜细胞学检查程序（[[clinical-skills/medical-imaging]]与[[gastrointestinal/gi-bleeding-cancer]]）；[[#def-tumours]]的皮革袋胃僵硬收缩胃生理）。年轻年龄与弥漫型及乳腺癌家族模式提示CDH1与CTNNA1遗传性弥漫型胃癌（[[genetics/mendelian-inheritance]]与[[genetics/cancer-genetics]]及小叶癌关联[[surgery/breast-endocrine-surgery]]）：遗传转诊与检测（[[genetics/genetic-testing]]）、带咨询的亲属预测性检测（[[genetics/genomic-medicine]]、及降低风险的全胃切除带“漏检印戒细胞”的病理诚实[[surgery/gastrointestinal-surgery]]）、及家庭的保险与生育谈话（[[clinical-skills/communication]]与[[medical-ethics-law/consent-capacity]]）。治疗轨道：**按分期把关的决定（围手术期化疗与腹腔热灌注化疗试验生态位及姑息全身治疗、及早期支架或胃空肠吻合解除出口受累、及空肠造口营养的远虑——[[gastrointestinal/clinical-nutrition]]与[[geriatrics-palliative/palliative-care]]）。**
+滞留率$= 100/400 = 0.25$，即**25%**。4小时滞留超过10%为异常，因此胃排空延迟。解读时应了解检查当时的血糖和用药，因为高血糖和阿片类药物会减慢排空。
 :::
 :::
 
-::: exercise 构建反流路径 {level=3}
-设计一个社区与医院的反流路径、从自我保健到胃底折叠、带监测伦理与妊娠婴儿儿科分支。
+::: exercise 保护胃 {level=2}
+一名68岁类风湿关节炎男性需要长期服用萘普生。他还服用泼尼松龙，近期心肌梗死后服用氯吡格雷（clopidogrel）和阿司匹林。列出他发生消化性溃疡并发症的危险因素，并描述降低风险的原则。
+::: hint
+考虑每种药物、他的年龄以及幽门螺杆菌的作用。
+:::
 ::: solution
-**自我与初级照护：药师与全科医师的藻酸盐与生活方式第一、及4-8周质子泵抑制剂试验带正确时机指示（[[gastrointestinal/digestion-absorption]]的酸曲线教学材料）、及红旗停止规则（[[gastrointestinal/gi-bleeding-cancer]]路径、[[clinical-skills/history-taking]]）。二级照护分诊：治疗失败与非典型症状评估（内镜与酸碱阻抗与测压决策树——术前测压强制规则[[#def-gerd]]）；部分有效者审计依从与时机与夜间酸与功能重叠及胆汁酸之问、及食管高敏感与脑肠环（[[gastrointestinal/bowel-disease]]共享规划、邻近[[psychiatry/treatments-mental-health-law]]的治疗）。外科之门：客观反流证明与疝解剖及肥胖策略（袖状胃对胃底折叠的顺序——[[surgery/gastrointestinal-surgery]]与邻近[[endocrine/diabetes]]的减重服务、[[gastrointestinal/clinical-nutrition]]）。监测伦理：Barrett间隔分层与需筛人数、及内镜治疗平等可及、及贫困接受率差距（[[public-health/screening]]与[[public-health/determinants-inequalities]]）。分支：妊娠阶梯（按安全分层的药物——[[obstetrics-gynaecology/pregnancy-antenatal]]与[[pharmacology/patient-variation]]）；婴儿（“快乐吐奶儿”安抚脚本与生长受阻红旗——[[paediatrics/growth-development]]与[[paediatrics/acute-childhood-illness]]）；及老年衰弱（多重用药复审与先行吞咽评估——[[geriatrics-palliative/polypharmacy]]与邻近[[geriatrics-palliative/falls]]的去适应）。关键指标：红旗到内镜时间、胃底折叠后满意度与再干预、Barrett在癌确诊时的治疗阶段、及抗酸处方安全日志（[[clinical-skills/patient-safety]]与[[clinical-skills/records-handover]]）。**
+**危险因素：** 年龄超过65岁；NSAID；糖皮质激素与NSAID合用；双联抗血小板治疗；以及心血管疾病本身。**原则：** 审查是否真的需要NSAID，在最短时间内使用最低有效剂量，并考虑替代方案；检测幽门螺杆菌，阳性则根除；在使用这一组合期间处方PPI进行胃保护；与心脏科协调双联抗血小板治疗的疗程。处方决定遵循现行指南和个体化风险评估。
+:::
+:::
+
+::: exercise 一个需要鉴别诊断的病例 {level=3}
+一名58岁女性，3个月来上腹不适、早饱，非故意体重下降6 kg。她一直在服用非处方PPI，症状部分缓解。血红蛋白104 g/L，铁蛋白低。给出鉴别诊断，说明NICE NG12的建议，并解释为什么对PPI部分有效并不能令人放心。
+::: hint
+应用[[#def-alarm]]中的年龄和体重下降标准。
+:::
+::: solution
+**鉴别诊断：** 胃癌、消化性溃疡（幽门螺杆菌或NSAID相关）、交界处食管腺癌、胰腺癌、胃淋巴瘤；只有在排除结构性疾病后才考虑功能性消化不良。缺铁提示慢性失血，也增加了对结直肠癌的担忧。
+
+**指南：** 她55岁以上、体重下降并有上腹部症状，因此NG12建议**紧急直接通道上消化道内镜检查**，两周内完成。她的缺铁性贫血还需要按国家指南检查下消化道。
+
+**PPI陷阱：** PPI可以使恶性溃疡表面愈合并暂时缓解症状，因此部分有效并不能排除癌症，反而可能延误诊断。报警特征优先于对治疗的反应。
+:::
+:::
+
+::: exercise 建立消化不良诊疗路径 {level=3}
+你被要求按照NICE CG184和NG12，为新发消化不良的成人设计一条基层医疗路径。按顺序描述各决策点，并解释幽门螺杆菌"检测并治疗"背后的道理。
+::: hint
+从报警特征开始，然后是用药和生活方式，再是两条治疗途径。
+:::
+::: solution
+1. **筛查报警特征**（[[#def-alarm]]）。如有，按标准要求转诊紧急或非紧急内镜检查。
+2. **审查用药**，尤其是NSAID、阿司匹林、双膦酸盐、钙通道阻滞剂和糖皮质激素，并就体重、吸烟、饮酒和进餐时间给出生活方式建议。
+3. **选择首个治疗**：检测幽门螺杆菌、阳性则治疗，或者给予4周足量PPI。症状持续时改用另一种方法。
+4. **随访**：将PPI减至最低有效剂量或按需使用；在指南建议时复查幽门螺杆菌；症状持续或出现报警特征时转诊。
+
+"检测并治疗"之所以有效，是因为幽门螺杆菌是溃疡病中主要的可去除病因。根除可治愈大多数溃疡并降低未来风险，因此依据非侵入性检测进行治疗可以使许多人免于内镜检查。在幽门螺杆菌常见的地方其价值最大；在低患病率人群中阳性预测值下降，可先采用经验性PPI治疗。
 :::
 :::

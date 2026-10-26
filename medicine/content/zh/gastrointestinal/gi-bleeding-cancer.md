@@ -1,148 +1,326 @@
-消化道出血是医学上伟大的时间关键综合征之一、而结直肠癌是其伟大的可检出可预防疾病之一。本章把两者连起来：同一批内镜、影像、外科医师与肿瘤董事会为两者服务、而临床推理——定位血、排除癌——是一门技能。
+在实践中，消化道出血与消化道癌症密切相关。有些出血突然发生且危及生命，例如胃溃疡侵蚀动脉或静脉曲张破裂。有些出血缓慢且看不见，数月中造成缺铁性贫血；这种隐性出血往往是癌症的第一个征象。在英国，消化道癌症合计造成的死亡多于其他任何一组癌症，单是结直肠癌就是癌症死亡的第二大原因。
 
-本章涵盖上、下消化道出血的评估与处理、隐匿出血与铁缺乏、及结直肠与肛门癌。
+本章介绍急性上、下消化道出血，静脉曲张出血，缺铁与隐性出血，食管、胃、结肠、直肠和肛门的癌症，遗传性癌症综合征，以及肠癌筛查。它建立在[[gastrointestinal/oesophagus-stomach]]中的溃疡病和[[gastrointestinal/liver-disease]]中的门静脉高压的基础上。
 
-## 出血
+## 急性上消化道出血
 
 ::: definition 上消化道出血 {#def-ugib}
-**定义与负担（呕血与“咖啡渣”与黑便；乳头以上的出血——解剖在[[anatomy/abdomen]]；消化性病与静脉曲张与恶性及黏膜撕裂作为病因集、带[[gastrointestinal/oesophagus-stomach]]的溃疡药理学作为人群驱动）。评估：气道呼吸循环、并为呕血与意识迟钝者保护气道（[[emergency-critical-care/airway-ventilation]]）、两条大口径通路配血（[[emergency-critical-care/acute-assessment]]）；休克指数与体位征带β阻滞剂与年龄警诫（[[emergency-critical-care/resuscitation]]与邻近[[geriatrics-palliative/falls]]的直立性低血压）；尿素升高伴肌酐近正常作为消化蛋白吸收（[[renal/water-sodium]]——与真性肾损伤的氮质血症混淆[[renal/acute-kidney-injury]]）；风险评分（Glasgow-Blatchford决定谁需要入院与内镜——门诊可适合的低分患者（[[#def-ugib]]）——及预测死亡率的Rockall与AIMS65（[[clinical-skills/clinical-reasoning]]））；及鉴别摄入的注记（红色食物与甜菜与铁与来自鼻或肺的血——[[anatomy/head-neck]]与[[respiratory/respiratory-infections]]的咯血区分[[clinical-skills/history-taking]]）。处理：复苏并采用限制性输血阈值70-80克每升、除活动性大量出血与缺血（[[blood/transfusion]]；需求缺血例外——[[cardiovascular/coronary-artery-disease]]）；高危溃疡用大剂量质子泵抑制剂（[[gastrointestinal/oesophagus-stomach]]的酸生理[[gastrointestinal/digestion-absorption]]）；早期内镜（24小时内；复苏后立即用于不稳定者）带止血武器库（肾上腺素注射加热凝或机械夹双联治疗、内镜套夹与止血粉救援——[[surgery/gastrointestinal-surgery]]的边界）及再出血阶梯（二次内镜、然后血管造影栓塞（[[clinical-skills/medical-imaging]]）或外科（修补或切除决定——[[surgery/acute-abdomen]]））；内镜前促动力红霉素以清洁视野（[[gastrointestinal/digestion-absorption]]的胃动素注）；及按病因的收尾（停非甾体抗炎药并根除幽门螺杆菌并继续质子泵抑制剂——[[gastrointestinal/oesophagus-stomach]]与[[microbiology/antimicrobials]]；恶性活检与分期[[#def-crc]]）。大出血规程的要点：大出血方案激活（1:1:1比例的血浆血小板红细胞策略与纤维蛋白原——[[blood/transfusion]]与[[blood/haemostasis-bleeding]]）、氨甲环酸的“不要给”教训（HALT-IT：无死亡率获益、更多静脉血栓与癫痫——[[epidemiology-ebm/randomised-trials]]）、按药物抗凝逆转（华法林用维生素K加凝血酶原复合物、及特异性拮抗剂考虑、及直接口服抗凝药的暂停重启算术——[[blood/thrombosis-anticoagulation]]、[[blood/haemostasis-bleeding]]与[[pharmacology/adverse-reactions]]）、及重症监护与气道阈值（[[emergency-critical-care/critical-care]]）。曲张静脉出血在[[#def-variceal]]有自己的算法。**
+**上消化道出血**发生在Treitz韧带（十二指肠空肠曲）近端。其表现为：
+
+- **呕血**：呕出鲜血或变质的"咖啡渣样"物；
+- **黑便**：黑色、柏油样、恶臭的粪便，来自在肠道中被消化的血液；
+- 少数情况下为**便血**（经直肠排出鲜红色血），这时出血非常迅速，血液很快通过肠道；这提示大出血。
+
+最常见的原因是**消化性溃疡**、**食管炎和胃炎**、**静脉曲张**、剧烈呕吐后食管胃交界处的**Mallory–Weiss撕裂**，以及**恶性肿瘤**。
 :::
 
-::: definition 曲张静脉出血与下消化道出血 {#def-variceal}
-**曲张静脉出血（已知或隐匿肝硬化伴呕血——[[gastrointestinal/liver-disease]]的门脉高压解剖与[[anatomy/abdomen]]的门体分流血管）：即刻包裹是抗生素预防（诺氟沙星或头孢曲松的死亡率获益——[[microbiology/antimicrobials]]）、内镜前开始的血管活性治疗（特利加压素带其低钠与缺血警诫——[[renal/water-sodium]]与[[cardiovascular/vascular-disease]]、或在用处的生长抑素类似物——[[gastrointestinal/pancreas-biliary]]的奥曲肽表亲）、带输血上限的复苏（过度输血升高门脉压并再出血的生理——[[blood/transfusion]]）、及早期内镜带套扎（邻近[[surgery/gastrointestinal-surgery]]的内镜实践）；失败路径：气囊填塞桥接（三腔管作为几分钟而不是几天的装置）、先行或救援的门体分流（分流生理与肝性脑病的取舍——[[gastrointestinal/liver-disease]]与[[clinical-skills/medical-imaging]]的介入套件）、及移植中心谈话（[[gastrointestinal/liver-disease]]与[[immunology/transplant-tumour-immunology]]）；及二级预防包裹（套扎监测间隔加非选择性β阻滞剂滴定——邻近[[cardiovascular/hypertension]]的药理学与[[gastrointestinal/liver-disease]]的失代偿预防算术）。** **下消化道出血（便血与暗红及直肠鲜红——先排除快速的上消化道出血、因为10-15%的“直肠出血”是伴休克的上消化道大出血——[[#def-ugib]]）：按年龄的病因集（憩室病——最常见的大量下消化道出血、无痛而多数自限——[[gastrointestinal/bowel-disease]]的憩室节）；血管发育不良与血管扩张带其主动脉瓣狭窄与慢性肾病及血管性血友病关联——[[cardiovascular/valve-congenital-disease]]、[[renal/chronic-kidney-disease]]与[[blood/haemostasis-bleeding]]的血管性血友病机制；感染性与炎症性肠病及缺血性结肠炎（先痛的节段性分水岭梗死模式——[[anatomy/abdomen]]的边缘动脉、[[gastrointestinal/bowel-disease]]与[[cardiovascular/vascular-disease]]）；痔与裂与直肠炎一组（[[gastrointestinal/bowel-disease]]）及盆腔放疗后出血（[[surgery/gastrointestinal-surgery]]）——见下面的放射性直肠炎行；肿瘤（[[#def-crc]]的呈现——为何50岁以上每一例便血都要检查）；息肉切除与活检后延迟出血（数日后的模式与抗栓规划——[[gastrointestinal/bowel-disease]]的操作镇静暂停与[[blood/thrombosis-anticoagulation]]）；及上消化道源模仿者（年轻人的Meckel憩室——[[anatomy/embryology]]的卵黄肠残留与[[paediatrics/acute-childhood-illness]]）。路径：按观察与血气乳酸做风险分层与收住（[[emergency-critical-care/shock-fluids]]）；肠道准备与结肠镜（与[[gastrointestinal/bowel-disease]]质量指标相同的准备科学）在诊断性入院窗口内；对正在出血者做计算机断层血管造影（需要每分钟出血速率——扫描时机的生理[[clinical-skills/medical-imaging]]）带栓塞（非诊断性血管造影与缺血风险警诫——[[surgery/acute-abdomen]]）；核医学标记红细胞扫描的生态位；持续不明的组合（重复上下内镜带侧视十二指肠镜、胶囊内镜与装置小肠镜带其滞留安全检查（[[gastrointestinal/bowel-disease]]的通畅胶囊规则）——[[clinical-skills/medical-imaging]]）；及外科最后的决定（部位在血管造影上不确定时的节段对全结肠切除两难——[[surgery/gastrointestinal-surgery]]）。放射性直肠炎与出血性放射性肠炎值得自己一行：在宫颈前列腺与妇科癌的盆腔放疗后（[[obstetrics-gynaecology/gynaecological-cancer]]与[[surgery/vascular-urological-surgery]]）、毛细血管扩张性出血用硫糖铝与福尔马林及氩等离子凝固处理（邻近[[gastrointestinal/bowel-disease]]的内镜实践与[[geriatrics-palliative/symptom-control]]）。**
+**血尿素**升高而肌酐正常是上消化道出血的典型表现。在小肠被消化的血液蛋白被吸收并转化为尿素，低血容量又减少尿素排泄。
+
+### 评估与复苏
+
+第一步与任何急症相同：气道、呼吸和循环，建立大口径静脉通路，采血查全血细胞计数、尿素和电解质、肝功能、凝血以及血型鉴定和交叉配血。最初几小时血红蛋白可以正常，因为丢失的是全血，血液稀释尚未发生。脉搏、血压、体位变化、毛细血管再充盈和尿量是早期判断失血量更好的指标。
+
+输血采取**限制性**策略。Villanueva及其同事2013年的一项试验发现，在上消化道出血中，血红蛋白低于70 g/L而非90 g/L时才输血，可减少再出血和死亡。现在大多数指南采用约70 g/L的阈值，心血管疾病患者阈值较高，约80 g/L，并针对持续大出血进行调整。过度输血会升高门静脉压力，可能加重静脉曲张出血。凝血异常和抗凝药按当地流程处理。
+
+有两种看似合理的治疗并不推荐。**氨甲环酸**在HALT-IT试验（2020年）中没有降低死亡，并增加了静脉血栓。NICE不推荐**内镜前使用PPI**，但对溃疡进行内镜治疗后应给予PPI。
+
+::: theorem 风险分层决定在哪里处理、多快处理 {#thm-gbs}
+在急性上消化道出血中，应在内镜前使用经过验证的风险评分，决定谁需要紧急干预、谁可以安全地在门诊处理。**Glasgow–Blatchford评分**（GBS）只使用就诊时可获得的临床和实验室数据。
+
+| 项目 | 数值 | 分数 |
+|---|---|---|
+| 血尿素（mmol/L） | 6.5–7.9 / 8.0–9.9 / 10.0–24.9 / ≥ 25 | 2 / 3 / 4 / 6 |
+| 血红蛋白，男性（g/L） | 120–129 / 100–119 / < 100 | 1 / 3 / 6 |
+| 血红蛋白，女性（g/L） | 100–119 / < 100 | 1 / 6 |
+| 收缩压（mmHg） | 100–109 / 90–99 / < 90 | 1 / 2 / 3 |
+| 脉搏 ≥ 100次/分 | | 1 |
+| 黑便 | | 1 |
+| 晕厥 | | 2 |
+| 肝病 | | 2 |
+| 心力衰竭 | | 2 |
+
+评分为0（NICE）或0～1（欧洲和英国学会指南）可识别出风险极低、可不住院处理的人。分数越高，越可能需要输血或干预。
 :::
 
-::: definition 隐匿出血与铁缺乏 {#def-occult}
-**无声的出血：缺铁性贫血是一个症状、不是一个诊断——[[blood/anaemia]]那条强制病因搜寻的规则消化道失血、带乳糜二项的吸收不良（[[gastrointestinal/bowel-disease]]与[[gastrointestinal/digestion-absorption]]的铁地址生理、月经与献血及溶血病史（[[obstetrics-gynaecology/menstrual-pelvic-disorders]]与[[blood/haemoglobin-disorders]]））。双向内镜带十二指肠活检是标准；阴性时的算法（小肠胶囊首选用于黏膜病变、装置小肠镜用于治疗、断层肠系膜成像用于肿块与小肠肿瘤集（[[gastrointestinal/bowel-disease]]自己的小肠新生物行）及罕见病变（Dieulafoy的粗大血管与Heyde综合征的血管发育不良——[[cardiovascular/valve-congenital-disease]]——及躲过标准内镜的克罗恩溃疡——[[gastrointestinal/bowel-disease]]））；筛查之外的粪便血红蛋白检测（粪便免疫化学作为症状分诊工具带其间隔与饮食警诫——[[public-health/screening]]与[[clinical-skills/laboratory-tests]]）；及“试验性补铁”陷阱：只补铁不做内镜是若干有记录的癌症延迟索赔的机制（[[clinical-skills/patient-safety]]与[[#ex-delay]]）。**
+::: proof
+这一评分结合了三类指标。血尿素和血红蛋白反映**失血量**。脉搏、血压和晕厥反映**机体对失血的代偿**。肝病和心力衰竭反映耐受进一步出血的**储备**以及有静脉曲张的可能性。没有任何这些异常的人很少需要输血、内镜治疗或手术，因此收入院只会增加费用和风险而无获益。加入内镜所见的**Rockall评分**主要在内镜后用于估计死亡风险。
 :::
 
-::: widget plot
-f: 95/(1+exp(-(x-7.5)*0.5)); 55/(1+exp(-(x-11)*0.4))
-x: 0, 20
-y: 0, 100
-labels: \text{Glasgow-Blatchford评分},\ \text{概率（百分比）};\ \text{需要干预（内镜或输血或手术）};\ \text{极高危征}
-caption: Glasgow-Blatchford评分（血红蛋白、尿素、肌酐、脉搏、呈现、黑便、晕厥与肝病——2000年原始推导与验证队列）把入院评分映射到干预概率（[[#def-ugib]]）：极低评分（不超过1）支撑门诊路径、而高评分把内镜提前并把复苏加强（[[clinical-skills/clinical-reasoning]]、[[emergency-critical-care/acute-assessment]]）。评分条目直接读出生理学——尿素项是消化血吸收（[[renal/water-sodium]]）、脉搏项是低血容量（[[emergency-critical-care/resuscitation]]）——这就是为何该评分在医院之间传播得很好（邻近[[public-health/health-systems-economics]]的实施科学）。
-:::
+### 内镜
 
-::: example 呕血的肝硬化患者 {#ex-variceal}
-一名52岁酒精相关肝硬化（已知静脉曲张、腹水）患者呕血400毫升；心率118、血压92/58、血红蛋白82、国际标准化比值1.6、胆红素68、体温37.9。
+NICE（CG141）建议，对严重出血且不稳定的患者，**复苏后立即**行内镜检查；对其他所有人，在入院**24小时内**完成。内镜能明确出血来源并进行风险分层：活动性喷血、可见血管或附着血凝块的溃疡再出血风险高，需要治疗。内镜治疗把止血夹等机械方法或热凝与肾上腺素注射结合使用；单用肾上腺素是不够的。高危溃疡成功治疗后给予大剂量PPI以稳定血凝块，因为胃蛋白酶和酸会溶解纤维蛋白。
+
+如果再次出血，重复内镜。如果内镜失败，选择包括**介入放射学**栓塞出血动脉，或**手术**。
+
+::: example 为出血评分 {#ex-ugib}
+一名68岁男性黑便2天。他因背痛服用布洛芬（ibuprofen）。脉搏每分钟102次，血压104/70 mmHg。无晕厥。血红蛋白108 g/L，尿素11.2 mmol/L，肌酐正常。无肝病或心力衰竭。计算他的Glasgow–Blatchford评分并决定处理场所。
 ::: solution
-**在内镜说明否则之前推定为曲张静脉：包裹（[[#def-variceal]]）——保护气道并把输血限制到70-80克每升（[[blood/transfusion]]、[[emergency-critical-care/airway-ventilation]]）、静脉头孢曲松（细菌易位与再出血及死亡率的证据——[[microbiology/antimicrobials]]与[[immunology/innate-immunity]]的屏障防御课）、特利加压素带钠与缺血观察（[[renal/water-sodium]]、[[cardiovascular/vascular-disease]]）、及紧急内镜带套扎；国际标准化比值1.6并不受保护这一注记（肝循环再平衡与新鲜冰冻血浆无益的容量问题——[[blood/haemostasis-bleeding]]与[[gastrointestinal/liver-disease]]；可获得时用血栓弹力图或旋转血栓弹力测定指导——[[blood/transfusion]]）；失败计划72小时内再出血升级为重复内镜、气囊填塞桥接与先行门体分流（[[clinical-skills/medical-imaging]]与邻近[[immunology/transplant-tumour-immunology]]的中心静脉逻辑）；及本次住院的次要收益酒精治疗转诊与戒断覆盖（[[psychiatry/substance-use]]）、失代偿加重晚期肝病分期与移植谈话（[[gastrointestinal/liver-disease]]）、营养与肌少症规划（[[gastrointestinal/clinical-nutrition]]）、疫苗与肝炎状态补齐[[immunology/vaccines-immunotherapy]]、[[gastrointestinal/liver-disease]]的病毒性肝炎节、及家庭与目标记录（[[clinical-skills/communication]]、[[medical-ethics-law/consent-capacity]]）。**
+使用[[#thm-gbs]]中的表：
+
+- 尿素11.2 mmol/L：4分。
+- 男性血红蛋白108 g/L：3分。
+- 收缩压104 mmHg：1分。
+- 脉搏每分钟102次：1分。
+- 黑便：1分。
+- 晕厥、肝病、心力衰竭：0分。
+
+总分$= 4 + 3 + 1 + 1 + 1 = 10$。
+
+10分远高于低风险阈值。他需要入院、复苏，并在24小时内（如病情不稳定则更早）进行内镜检查。应停用NSAID，并检测幽门螺杆菌。
 :::
 :::
 
-::: example 只是“缺铁”的疲乏 {#ex-delay}
-一名64岁男性在一次私人就诊中因疲乏被给予三个月口服铁；随后全血细胞显示血红蛋白96、平均红细胞体积76、铁蛋白9。他报告“数周”黑便。未做过胃镜或结肠镜。
+## 静脉曲张出血
+
+::: definition 静脉曲张出血 {#def-variceal}
+**静脉曲张**是门静脉压力升高时形成的扩张的门体侧支静脉，最常见于食管下段和胃上部。**静脉曲张出血**是这些静脉之一破裂。它主要发生在肝硬化和门静脉高压患者中，短期死亡率高。
+:::
+
+静脉曲张出血的处理与溃疡出血不同。对已知或疑似肝硬化的上消化道出血患者，标准方法包括：
+
+- 内镜前开始使用**血管活性药物**，如**特利加压素**（terlipressin）。特利加压素是一种血管升压素类似物，收缩内脏小动脉，从而减少门静脉血流。
+- **预防性抗生素**，因为这些患者常合并细菌感染，治疗感染可减少再出血和死亡。
+- 食管静脉曲张行**内镜下套扎**。胃静脉曲张常用组织胶注射治疗。
+- 如果出血无法控制，或在部分高危患者中早期使用，行**经颈静脉肝内门体分流术**（TIPS）。临时的气囊压迫管可作为过渡。
+- 谨慎补充血容量，避免过度输血。
+
+一级和二级预防静脉曲张出血的非选择性β受体阻滞剂和套扎见[[gastrointestinal/liver-disease]]。
+
+::: example 肝硬化患者呕血 {#ex-variceal}
+一名52岁酒精性肝硬化女性呕出大量鲜血。脉搏每分钟124次，血压86/50 mmHg。她嗜睡。请概述第一个小时的处理，并解释每一步的意义。
 ::: solution
-**64岁男性的缺铁性贫血除非双向内镜说明否则就是消化道失血（或右侧结直肠癌）（[[#def-occult]]）：这一段正是有记录的诊断错误模式——补铁而不检查（[[clinical-skills/patient-safety]]事件类别与再转诊义务信（[[clinical-skills/records-handover]]））。现在：紧急路径（两周等待癌症转诊机制与不要重复补铁试验规则（[[gastrointestinal/gi-bleeding-cancer]]路径；适应证已强时不需要粪便免疫化学——[[public-health/screening]]））；检查（胃镜与结肠镜带末端回肠检查与十二指肠活检、内镜阴性时的计算机断层小肠方案[[#def-occult]]、及作为第二混杂因素的乳糜血清学（[[gastrointestinal/bowel-disease]]））；常见所见与动作（右侧结肠癌——[[#def-crc]]手术与分期、胃溃疡带活检——[[gastrointestinal/oesophagus-stomach]]、萎缩性胃炎幽门螺杆菌模式、血管发育不良——[[cardiovascular/valve-congenital-disease]]的Heyde关联、及用药史（非甾体抗炎药与阿司匹林与直接口服抗凝药——[[pharmacology/adverse-reactions]]与[[blood/thrombosis-anticoagulation]]））；铁的补足（口服对静脉的决定带炎症性肠病活动期警诫（[[gastrointestinal/bowel-disease]]与[[blood/anaemia]]））；及系统教训（安全网信与全科闭环——[[clinical-skills/patient-safety]]及[[public-health/health-systems-economics]]的初级照护二线审查）。**
+**第1步：保护气道。** 她嗜睡并在呕血，误吸风险很大。早期请麻醉科评估气道保护是合适的，尤其是在内镜前。
+
+**第2步：复苏。** 建立大口径通路，采血交叉配血，鉴于休克启动大出血预案。稳定后按限制性目标输注红细胞，因为过度输血会升高门静脉压力。按当地流程纠正凝血和血小板，如有条件参考黏弹性检测。
+
+**第3步：给予特利加压素和抗生素**，一旦怀疑静脉曲张出血，在内镜前就开始。特利加压素降低门静脉压力；抗生素减少感染、再出血和死亡。
+
+**第4步：内镜**，复苏后尽快进行，对出血的食管静脉曲张行套扎。
+
+**第5步：为失败做准备。** 如果出血持续，气囊压迫可以争取时间，同时安排TIPS。鉴于饮酒史应给予硫胺素，并监测酒精戒断和肝性脑病。
 :::
 :::
 
-## 下消化道癌
+## 下消化道出血
+
+**下消化道出血**来自结肠、直肠或肛门，表现为**便血**，即排出鲜红色或暗红色血液。成人最常见的原因是**憩室出血**、**痔**、**缺血性结肠炎**、**炎症性肠病**、**结直肠癌或息肉**（包括息肉切除术后出血）以及**血管发育不良**。
+
+大多数下消化道出血会自行停止。英国胃肠病学会（2019年）推荐使用**Oakland评分**，它综合年龄、性别、既往因下消化道出血住院、直肠指检所见、心率、血压和血红蛋白。评分8分或以下且无其他住院理由者，可以出院并安排紧急门诊检查。不稳定的患者，例如**休克指数**（心率除以收缩压）大于1者，应行**CT血管造影**定位出血，再由介入放射科处理。任何便血伴休克者都要考虑上消化道来源，因为快速的上消化道出血可以这样表现。
+
+::: example 大量无痛性出血 {#ex-diverticular}
+一名79岁男性无痛性经直肠排出大量鲜血和血块。他因房颤服用阿哌沙班（apixaban）。脉搏每分钟118次，血压96/60 mmHg，血红蛋白92 g/L。计算他的休克指数并概述处理步骤。
+::: solution
+**休克指数**$= 118/96 = 1.23$。大于1提示血流动力学不稳定。
+
+**第1步：复苏**并采血交叉配血。
+
+**第2步：考虑抗凝药。** 阿哌沙班是Xa因子抑制剂。处理按当地流程，取决于出血严重程度和末次服药时间；危及生命的出血可考虑特异性逆转剂或凝血酶原复合物浓缩物。停用抗凝的卒中风险需日后与心脏科权衡。
+
+**第3步：排除上消化道来源。** 他的血流动力学不稳定意味着可能有快速的上消化道出血，因此可能需要早期行上消化道内镜，特别是在尿素升高时。
+
+**第4步：定位出血。** CT血管造影可显示造影剂漏入肠腔。如有，介入放射科可栓塞动脉。老年人无痛性大量出血是**憩室出血**或血管发育不良的典型表现。
+
+**第5步：随访。** 病情稳定后需行结肠镜检查寻找出血来源并排除癌症。
+:::
+:::
+
+## 隐性出血与缺铁
+
+::: definition 隐性消化道出血 {#def-occult}
+**隐性消化道出血**是患者看不见、但可由检查发现的失血，典型表现为**缺铁性贫血**或粪便免疫化学检测阳性。**不明原因出血**是在上消化道内镜和结肠镜检查后仍未找到来源的出血，常来自小肠。
+:::
+
+缺铁性贫血很常见，必须找出原因。在男性和绝经后女性中，最需要排除的是癌症引起的消化道失血。英国胃肠病学会指南（2021年）建议对所有缺铁性贫血者检测乳糜泻，并对男性和绝经后女性行**双向内镜**（上消化道内镜和结肠镜），除非有明显的消化道外原因。绝经前女性的检查更有选择性，因为月经失血是常见原因。尿液检查潜血是检查的一部分，因为泌尿系癌症也可引起贫血。如果两项内镜都正常而贫血持续，用**胶囊内镜**检查小肠。
+
+::: example "只是缺铁" {#ex-delay}
+一名71岁孟加拉裔女性在常规验血时发现血红蛋白98 g/L，平均红细胞体积72 fL，铁蛋白5 µg/L。她感觉疲倦，但没有胃肠道症状。她的全科医生给她开了口服铁剂。六个月后，她因盲肠癌导致的肠梗阻入院。哪里出了错？本应怎样做？
+::: solution
+**第1步：错误。** 绝经后女性的缺铁性贫血只做了治疗而没有寻找原因。没有症状并不能排除癌症：**右半结肠癌**常缓慢出血，引起贫血而不改变排便习惯，因为右半结肠内粪便呈液态，容易通过肿瘤。
+
+**第2步：正确的路径。** 确认缺铁（铁蛋白低伴小细胞性贫血），检查乳糜泻血清学和尿液，并按疑似癌症通道转诊检查消化道。NICE NG12把60岁及以上成人的缺铁性贫血列为应促使评估结直肠癌的特征之一。补铁应同时开始，而不是替代检查。
+
+**第3步：教训。** 缺铁是一个发现，而不是诊断。纠正贫血可能掩盖基础疾病的进展。
+:::
+:::
+
+::: warning 治疗数字而不是治疗病因
+服用铁剂后血红蛋白上升只说明贫血得到纠正，并不能说明其病因无碍。凡可能有消化道失血的人，即使贫血有反应，也应继续检查。
+:::
+
+## 食管癌与胃癌
+
+**食管癌**有两种病因不同的主要类型。**鳞状细胞癌**主要发生在食管上段和中段，与吸烟、饮酒、过烫饮料和不良饮食有关；它是全球最主要的类型，在从伊朗北部经中亚到中国的地带以及东非发病率很高。**腺癌**发生在食管下段，由Barrett食管发展而来，与反流、肥胖和男性有关；它现在是英国和其他西方国家最常见的类型。
+
+**胃癌**几乎都是腺癌。全球主要的危险因素是慢性幽门螺杆菌感染，经萎缩性胃炎和肠化生导致**肠型**癌。**弥漫型**癌浸润胃壁而不形成肿块（"皮革胃"），与环境的关系较小。编码E-钙黏着蛋白的*CDH1*胚系变异引起**遗传性弥漫型胃癌**。东亚发病率最高，日本和韩国设有筛查计划。
+
+两种癌症通常就诊较晚，表现为吞咽困难、体重下降、贫血、消化不良或呕吐，这就是[[gastrointestinal/oesophagus-stomach]]中的报警特征如此重要的原因。诊断依靠内镜和活检，然后用CT、PET-CT分期，有时还需超声内镜和腹腔镜。局限性疾病的根治性治疗把化疗或放化疗与手术结合。很早期的癌可经内镜切除。晚期疾病采用姑息性化疗、免疫治疗或靶向药物，吞咽困难可放置支架。
+
+## 结直肠癌
 
 ::: definition 结直肠癌 {#def-crc}
-**流行病学与病因（世界第四常见癌、发病率随西方化上升而筛查与年轻发病趋势改变着地图——[[public-health/global-health]]、[[public-health/determinants-inequalities]]；腺瘤—癌序列（APC到KRAS到TP53及抑癌与癌基因的逐步打击——[[pathology/cancer-biology]]的多步癌变教材、及[[genetics/cancer-genetics]]的结直肠例证）与锯齿状通路（BRAF突变与CpG岛甲基化表型及右侧及老年及女性偏向——[[pathology/cancer-diagnosis]]的分子面板）；错配修复缺陷与微卫星不稳定及Lynch综合征（[[gastrointestinal/bowel-disease]]的息肉病章）、及散发性MLH1启动子甲基化（BRAF作为区分工具——[[pathology/cancer-diagnosis]]）；风险因素（炎症性肠病病程与范围及原发性硬化性胆管炎[[gastrointestinal/bowel-disease]]与[[gastrointestinal/liver-disease]]、既往盆腔放疗[[obstetrics-gynaecology/gynaecological-cancer]]、糖尿病与肥胖及代谢综合征[[endocrine/diabetes]]、红肉与加工肉及酒精及低纤维及久坐[[public-health/non-communicable-disease]]、炎症性肠病与息肉病综合征家族史[[gastrointestinal/bowel-disease]]、2型糖尿病[[endocrine/diabetes]]、及遗传性黑色素瘤胰肾综合征罕见））。呈现（右侧病变的出血与缺铁（[[blood/anaemia]]）与肿块与疲劳、左侧的排便习惯改变与狭窄及“笔细”便与梗阻及穿孔、及直肠癌的里急后重与血便及黏液及排尿症状——[[clinical-skills/history-taking]]；筛查的兴起意味着更多无症状与早期阶段（[[public-health/screening]]））；转移症状（肝与肺与骨及脑——[[gastrointestinal/liver-disease]]与[[respiratory/lung-cancer-pleura]]与[[musculoskeletal/back-pain]]）。检查（[[clinical-skills/clinical-reasoning]]）：体检包括腹部与腹股沟及直肠指检及直肠乙状结肠镜（在直肠症状中——[[clinical-skills/physical-examination]]）；全结肠镜带活检作为诊断（[[gastrointestinal/bowel-disease]]的准备与质量指标）；分期计算机断层胸腹盆（[[clinical-skills/medical-imaging]]）及直肠癌的盆腔磁共振带系膜筋膜状态（[[anatomy/pelvis-perineum]]与[[surgery/gastrointestinal-surgery]]）及肝转移的肝期扫描及PET的选定作用；癌胚抗原作为基线与随访的有用工具（其假阳性与吸烟及肝病——[[clinical-skills/laboratory-tests]]）；及遗传评审触发（错配修复与微卫星及年龄及家族史——[[genetics/genetic-testing]]、[[gastrointestinal/bowel-disease]]）。分期与治疗（[[surgery/gastrointestinal-surgery]]与[[pathology/cancer-diagnosis]]与[[pathology/cancer-diagnosis]]的TNM与结直肠专用原则）：结肠癌的手术切除带淋巴结采样（D2与完整结肠中系膜切除的质量概念）、高危二期的辅助化疗（[[pathology/cancer-diagnosis]]的分子分层与[[pharmacology/drug-development-prescribing]]的氟尿嘧啶及奥沙利铂）及错配修复缺陷II期“不要给氟尿嘧啶单药”的教训；直肠癌的新辅助治疗（长程放化疗或全程新辅助治疗及器官保留与“观察等待”反应适应策略——[[surgery/gastrointestinal-surgery]]、[[clinical-skills/records-handover]]）及手术的括约肌保存对腹会阴切除及造口（[[gastrointestinal/bowel-disease]]的造口护理与[[geriatrics-palliative/symptom-control]]）。转移性疾病：可切除肝转移的治愈机会（[[gastrointestinal/liver-disease]]与[[surgery/gastrointestinal-surgery]]的分期肝切除与消融）；全身治疗按分子（RAS与BRAF及HER2及NTRK及错配修复状态——[[pharmacology/drug-development-prescribing]]的靶向与免疫时代、[[immunology/vaccines-immunotherapy]]的错配修复缺陷检查点）及姑息（[[geriatrics-palliative/palliative-care]]的症状与支架与造口）。筛查与监测：粪便隐血与免疫化学及乙状结肠镜及结肠成像及多靶点粪便检测的国家差异（[[public-health/screening]]的证据标准与偏倚陷阱——领先时间与长度偏倚——[[gastrointestinal/digestion-absorption]]的患病算术）；腺瘤与早期癌的内镜监测间隔（息肉切除后的监测结肠镜——[[gastrointestinal/bowel-disease]]）；炎症性肠病的异型增生监测（[[gastrointestinal/bowel-disease]]）；及Lynch与息肉病监测（[[gastrointestinal/bowel-disease]]）。术后随访的CT与内镜及癌胚抗原方案及其关于生存获益的持续辩论（[[epidemiology-ebm/randomised-trials]]）。**
+**结直肠癌**是结肠或直肠的恶性肿瘤，几乎都是**腺癌**。大多数由良性**腺瘤性息肉**经**腺瘤-癌序列**发展而来，即在约10年或更长时间内突变逐步积累。扩散用**TNM系统**描述：肿瘤穿透肠壁的深度（T）、淋巴结受累（N）和远处转移（M），最常转移到肝。
 :::
+
+经典的腺瘤-癌序列包括*APC*抑癌基因丢失，继而*KRAS*激活，再后*TP53*丢失，这一模型常与二十世纪八十年代末福格尔斯坦（Bert Vogelstein）的工作联系在一起。另一条途径是**DNA错配修复**缺陷，产生**微卫星不稳定**的肿瘤。由于息肉变成癌很慢，发现并切除息肉可以预防癌症，这是筛查的基础。
+
+危险因素包括年龄、家族史、炎症性肠病、肥胖、缺乏体力活动、大量摄入红肉和加工肉类、饮酒和吸烟。
+
+症状取决于部位。**左半结肠和直肠**肿瘤引起直肠出血、排便习惯改变、里急后重和梗阻。**右半结肠**肿瘤更常表现为缺铁性贫血、体重下降或肿块。
+
+在英国，可能患结直肠癌症状的人在基层医疗中用**粪便免疫化学检测**（FIT）分诊，该检测测定粪便中的血红蛋白。截至2026年，NICE诊断指南DG56建议，对FIT结果至少为每克粪便10 µg血红蛋白的成人进行疑似癌症转诊。直肠肿块不必等FIT即可转诊；如果临床有疑虑，即使检测阴性也不应延误转诊。
+
+结肠癌的治疗是连同其淋巴结的手术切除，淋巴结阳性者术后辅助化疗。直肠癌用盆腔MRI分期，术前可能接受放疗或放化疗。肝转移有时可以根治性切除。
+
+::: widget bayes
+mode: test
+prevalence: 0.03
+sensitivity: 0.9
+specificity: 0.85
+caption: 有症状人群中低阈值粪便免疫化学检测的示意数据。患病率为3%时，大多数阳性结果是假阳性，但阴性结果使癌症的可能性大大降低。这些是四舍五入的教学数字，不代表某一具体检测的性能。
+:::
+
+### 遗传性综合征
+
+::: definition 遗传性结直肠癌综合征 {#def-polyposis}
+- **林奇综合征**由DNA错配修复基因（*MLH1*、*MSH2*、*MSH6*、*PMS2*）或*EPCAM*的胚系变异引起。它是常染色体显性遗传，引起结直肠癌（常不伴大量息肉）以及子宫内膜、卵巢、胃、小肠和泌尿道的癌症。NICE建议对所有结直肠癌和子宫内膜癌检测错配修复缺陷，以发现受累家族。
+- **家族性腺瘤性息肉病**（FAP）由*APC*胚系变异引起。它是常染色体显性遗传，从青春期开始出现数百至数千个结直肠腺瘤，如不做预防性结肠切除几乎必然发生癌症。十二指肠腺瘤和硬纤维瘤是重要的结肠外表现。
+- **MUTYH相关息肉病**是常染色体隐性遗传，引起数量较少的腺瘤。
+:::
+
+患有这些综合征的人从年轻时就接受结肠镜监测，其亲属可接受遗传咨询和检测（[[genetics/cancer-genetics]]）。CAPP2试验表明，阿司匹林可降低林奇综合征的癌症风险。
+
+### 肠癌筛查
+
+筛查的目的是在较早期发现癌症，并在息肉变成癌之前切除。在英格兰，NHS肠癌筛查计划每2年向50～74岁的人寄送一次居家FIT试剂盒。结果达到或超过计划阈值（2026年英格兰为120 µg/g，并计划降低）者，可接受结肠镜检查。苏格兰使用80 µg/g的阈值。这需要在灵敏度与所需的结肠镜检查能力之间权衡。筛查原则见[[public-health/screening]]。
+
+## 肛门癌与肛管
 
 ::: definition 肛门癌 {#def-anal}
-**肛门癌（人乳头瘤病毒驱动的鳞状大多数——[[microbiology/viruses]]的致癌人乳头瘤病毒、及[[immunology/vaccines-immunotherapy]]与[[public-health/vaccination-programmes]]的疫苗接种规划论证）：风险（男男性行为与人类免疫缺陷病毒及免疫抑制及吸烟及生殖器人乳头瘤病毒病变史——[[infectious-diseases/hiv]]与[[infectious-diseases/immunocompromised-host]]与[[obstetrics-gynaecology/gynaecological-cancer]]的宫颈人乳头瘤病毒框定）；呈现（被误标为痔的出血与疼痛与肿块与肛门瘙痒——[[#def-occult]]与[[clinical-skills/clinical-reasoning]]的诊断诱惑；腹股沟淋巴结区域检查——[[anatomy/pelvis-perineum]]与[[anatomy/lower-limb]]的淋巴链）；诊断（活检与正电子发射断层及磁共振局部分期及腹股沟淋巴结细针穿刺——[[clinical-skills/medical-imaging]]与[[pathology/cancer-diagnosis]]）；治疗（Nigro的放化疗优先范式——带括约肌保留的根治治愈故事作为肿瘤学伟大的保守胜利之一——[[surgery/gastrointestinal-surgery]]的放疗实施实践及邻近[[pharmacology/dosing-principles]]的丝裂霉素与氟尿嘧啶或顺铂方案）；持续或复发疾病的挽救（腹会阴切除带永久性结肠造口及腹股沟清扫决定、及难治期的免疫治疗时代——[[immunology/vaccines-immunotherapy]]）；高危群组的人肛门上皮内瘤变与高分辨率肛门镜监测规划（人类免疫缺陷病毒阳性男男性行为者筛查试验与过度治疗的平衡——[[public-health/screening]]及肛门生殖疾病多学科文献——[[obstetrics-gynaecology/gynaecological-cancer]]）；及后遗症管理放射性直肠炎出血（[[#def-variceal]]的放射性直肠炎行）、功能与性及肛门疼痛结局邻近[[gastrointestinal/bowel-disease]]的肛门直肠生理及邻近[[musculoskeletal/back-pain]]的盆腔疼痛门诊、及节制与造口护理伙伴关系（邻近[[clinical-skills/records-handover]]的社区访视护士负荷及[[geriatrics-palliative/symptom-control]]）。**
+**肛门癌**最常见的是肛管**鳞状细胞癌**。大多数病例由高危型**人乳头瘤病毒**的持续感染引起，尤其是HPV 16型。HIV感染者、男男性行为者、既往有宫颈、外阴或阴道上皮内瘤变的女性，以及器官移植后免疫抑制者风险较高。
 :::
 
-::: example 大量无痛的出血 {#ex-diverticular}
-一名78岁因房颤服阿哌沙班的患者排出大量暗红软便与血块、觉晕眩；心率112、血压100/60、血红蛋白88（基线130）、腹部软而不痛、无黑便。
-::: solution
-**伴血流动力学受损的下消化道出血：同时进行的工作（[[#def-variceal]]与[[#def-ugib]]的规程）：复苏与配血（[[emergency-critical-care/resuscitation]]）、快速上消化道源的胃管灌洗或先胃镜之问（10-15%规则）、阿哌沙班管理（末次给药时机与特异性逆转剂或凝血酶原复合物考虑及机械对药物逆转的取舍——[[blood/thrombosis-anticoagulation]]与[[blood/haemostasis-bleeding]]）；及定位规划：活动出血时的计算机断层血管造影（速率阈值的物理——[[clinical-skills/medical-imaging]]）带栓塞、对快速准备结肠镜带内镜治疗（夹闭血管或肾上腺素或氩等离子模式）；诊断（憩室出血经典地就是这个无痛大量暗红模式——[[gastrointestinal/bowel-disease]]的憩室行——而老年人盲肠的替代是血管发育不良）；再出血的算术（输血需求与再出血率、及部位未知时节段对盲目次全结肠切除[[surgery/gastrointestinal-surgery]]；放射学纹影定位实践[[clinical-skills/medical-imaging]]）；及房颤与抗凝的决定后（卒中风险与出血风险的评分对话及恢复时机数日对数周的证据缺口诚实——[[cardiovascular/arrhythmias]]与[[blood/thrombosis-anticoagulation]]与[[nervous-system/stroke]]）；及“真的是下消化道吗”的收尾（上消化道源阴性的工作、及隐匿恶性缺铁筛查[[#def-occult]]、出血后结肠镜以排除癌、及节段性结肠炎的鉴别[[gastrointestinal/bowel-disease]]）。**
-:::
-:::
+肛门癌表现为出血、疼痛、肿块、瘙痒或分泌物，这些症状很容易被归咎于痔。主要治疗是**放化疗**，大多数人能保留肛门括约肌；手术留给残留或复发的病变。HPV疫苗接种预计会降低发病率。
 
-::: example 血栓性“痔” {#ex-anal}
-一名38岁人类免疫缺陷病毒感染者（CD4 220、病毒未抑制）肛门疼痛与出血及“血栓性痔”4个月、两次用外用药与镇痛方案治疗；现在肛门缘有一个3厘米溃疡性硬结病变与一个硬的腹股沟淋巴结。
+**痔**是肛管血管垫的增大。它引起排便后手纸上或便池中的鲜红色出血，通常无痛，并可脱出。肛缘处疼痛、张力高的紫色肿块通常是**血栓性外痔**。肛裂引起排便时的锐痛和少量鲜血。
+
+::: example 并不是痔的出血 {#ex-anal}
+一名48岁HIV感染男性，抗逆转录病毒治疗有效，4个月来肛门出血和不适。他被告知是痔，使用药膏无改善。检查发现肛缘有一个质硬的溃疡性病变和一个质硬的腹股沟淋巴结。最可能的诊断是什么？下一步怎么做？
 ::: solution
-**在活检之前是肛门癌（[[#def-anal]]）：被误标的直肠症状伴一个可见的良性原因、人类免疫缺陷病毒与男男性行为及人乳头瘤病毒的风险叠加（[[infectious-diseases/hiv]]——免疫缺陷中人乳头瘤病毒疾病负荷、[[infectious-diseases/immunocompromised-host]]）、及延迟对警觉的推理（[[clinical-skills/clinical-reasoning]]、[[clinical-skills/patient-safety]]）。现在：**肛缘病变的咬取活检与腹股沟淋巴结细针穿刺；正电子发射断层计算机体层与盆腔磁共振分期（[[clinical-skills/medical-imaging]]、[[pathology/cancer-diagnosis]]）；根治性放化疗优先计划（Nigro范式——丝裂霉素加氟尿嘧啶带调强放疗——邻近[[surgery/gastrointestinal-surgery]]与[[pharmacology/dosing-principles]]的方案）并行运行人类免疫缺陷病毒病毒抑制规划（与艾滋病团队做抗逆转录病毒相互作用复审——[[infectious-diseases/hiv]]与[[pharmacology/metabolism-excretion]]）；肛门癌人类免疫缺陷病毒生存缺口与临床试验可及性公平论证（[[public-health/determinants-inequalities]]）；肛门上皮内瘤变与宫颈及阴茎的领域监测及性健康伙伴（邻近[[obstetrics-gynaecology/gynaecological-cancer]]的筛查逻辑[[public-health/screening]]）；仅在持续疾病时的造口与挽救谈话（[[surgery/gastrointestinal-surgery]]）；疼痛与排便管理及戒烟的支持照护（[[geriatrics-palliative/symptom-control]]、[[psychiatry/substance-use]]）；及疫苗与伴侣讨论（人乳头瘤病毒疫苗规划论证——[[public-health/vaccination-programmes]]与[[immunology/vaccines-immunotherapy]]）。**
+**第1步：识别模式。** 质硬的溃疡性肛门病变伴腹股沟淋巴结肿大并不是痔的典型表现。对于属于高危人群的HIV感染男性，最可能的诊断是**肛门鳞状细胞癌**。齿状线以下的肛管引流至腹股沟淋巴结。
+
+**第2步：下一步。** 按疑似癌症通道紧急转诊；麻醉下检查并活检；用盆腔MRI和CT或PET-CT分期；对淋巴结行细针穿刺。治疗由多学科团队制定，通常是放化疗。
+
+**第3步：教训。** 治疗无效或有不典型发现的肛门直肠症状需要检查和活检。在没有正规检查之前，绝不能把持续症状归咎于痔。
 :::
 :::
 
 ::: quiz
-急性消化道出血中的氨甲环酸：
-- [ ] 推荐给所有上消化道出血
-- [x] 不推荐：HALT-IT试验显示无生存获益而癫痫与静脉血栓增多
-- [ ] 替代内镜止血
-- [ ] 是直接口服抗凝药的逆转剂
+一名58岁男性有一次呕血。他的Glasgow–Blatchford评分为0。根据NICE，最合适的处理是什么？
+- [ ] 收入院，12小时内紧急内镜
+- [ ] 给予氨甲环酸并留观一夜
+- [x] 考虑早期出院，安排门诊内镜
+- [ ] 内镜前开始PPI静脉输注
 ::: solution
-**HALT-IT（12000例随机试验——[[epidemiology-ebm/randomised-trials]]与[[public-health/health-systems-economics]]的外推性讨论）关闭了一个从合理到有效的落差：氨甲环酸未减少消化道出血死亡而增加癫痫与静脉血栓（[[#def-ugib]]）；这个案例是“机制合理而错误”、以及为何试验先于规程的一课（[[epidemiology-ebm/statistics-for-clinicians]]的机会论证）。逆转是按药物的——达比加群用艾美赛珠单抗、凝血因子Xa抑制剂用特异性逆转剂或凝血酶原复合物考虑、华法林用维生素K加凝血酶原复合物（[[blood/thrombosis-anticoagulation]]、[[blood/haemostasis-bleeding]]）。**
+Glasgow–Blatchford评分为0可识别出需要干预风险极低的人。NICE建议考虑**早期出院**并安排门诊随访。氨甲环酸在HALT-IT中没有降低死亡率，并增加了血栓。不推荐内镜前使用PPI。
 :::
 :::
 
 ::: history
-**消化道出血与肿瘤照护的谱系：Harvey的循环与外科出血时代（19世纪的结扎与止血时代——[[surgery/vascular-urological-surgery]]）；胃溃疡与非甾体抗炎药的觉醒（1970年代吡罗昔康药物警戒与环氧合酶时代——[[pharmacology/drug-receptor]]）；曲张静脉硬化然后套带的弧线及1988-89年的经颈静脉肝内门体分流（[[clinical-skills/medical-imaging]]）；2020年HALT-IT阴性试验（[[epidemiology-ebm/randomised-trials]]）；内镜止血武器库的演化（从加热探头到夹子到内镜套夹到止血粉的弧线——[[surgery/gastrointestinal-surgery]]）；2000年胶囊内镜优先的小肠民主化（[[clinical-skills/medical-imaging]]）；Heald 1982年的全直肠系膜切除（把复发减半的解剖——[[anatomy/pelvis-perineum]]）；Nigro 1974年肛门癌的放化疗治愈（[[microbiology/viruses]]的人乳头瘤病毒病因随后）；氟尿嘧啶奥沙利铂与靶向治疗时代及微卫星不稳定免疫治疗的示范（[[immunology/vaccines-immunotherapy]]、[[genetics/genomic-medicine]]）；国家筛查规划（从粪便隐血到粪便免疫化学的转变与肠道内镜试点——[[public-health/screening]]）；及国民健康服务的两周等待与癌症候诊时间问责架构（[[public-health/health-systems-economics]]、[[clinical-skills/patient-safety]]）。**
-:::
-
-## 通向何处
-
-上消化道病因与预防在[[gastrointestinal/oesophagus-stomach]]；门脉高压与静脉曲张在[[gastrointestinal/liver-disease]]；憩室与炎症性肠病出血在[[gastrointestinal/bowel-disease]]；外科与肿瘤交付在[[surgery/gastrointestinal-surgery]]；Lynch与息肉病遗传学在[[gastrointestinal/bowel-disease]]与[[genetics/cancer-genetics]]；筛查设计在[[public-health/screening]]；复苏在[[emergency-critical-care/resuscitation]]。
-
-::: exercise 规划息肉切除后出血 {level=2}
-一名74岁服阿司匹林与氯吡格雷（药物洗脱支架8周前）的患者切除了一个20毫米息肉；第4天他在家排出凝血块、然后停止。规则是什么、你本来会做什么是不同？
-::: solution
-**息肉切除后延迟出血（第1-14天、焦痂脱落机制——[[gastrointestinal/bowel-disease]]与[[#def-variceal]]）：多数自行平息；风险因素（大小与右侧及抗栓药）；预防架构（择期大息肉切除的抗栓规划：阿司匹林继续、与心内科讨论的P2Y12受体抑制剂暂停对推迟操作决定（邻近[[cardiovascular/coronary-artery-disease]]与[[blood/thrombosis-anticoagulation]]与[[surgery/perioperative-care]]的支架时机规则：择期手术理想上在必需的双联抗血小板治疗窗口之后、桥接而不是停用原则、高危切除的内镜夹或套圈预防、及关于出血时机的明确术后书面建议——[[clinical-skills/patient-safety]]与[[clinical-skills/records-handover]]））；再就诊路径（收住并内镜带夹闭计划、及邻近[[#def-ugib]]的输血阈值算术）；及不再发生环路（事件报告与操作预约表中的支架条款——[[clinical-skills/patient-safety]]）。**
-:::
-:::
-
-::: exercise 不要漏掉这个内瘘 {level=2}
-一名69岁、主动脉移植物修复后3年、有自限的“先导”呕血、计算机断层显示移植物周围气体与液体。说出诊断、先导出血的生理与路径。
-::: solution
-**继发性主动脉肠内瘘（移植物蚀入十二指肠第三部的灾难——[[anatomy/abdomen]]的腹膜后关系、[[cardiovascular/vascular-disease]]与[[surgery/vascular-urological-surgery]]）：先导出血是初始主动脉肠孔的暂时填塞——数小时到数天的表面恢复然后失血致死（[[#def-ugib]]与[[emergency-critical-care/resuscitation]]）。路径：**以计算机断层作为移植物方案（移植物周围气体液体及肠管牵附征象——[[clinical-skills/medical-imaging]]）、在没有外科与血管在场时不做病房内镜激发（复苏并复苏并转到带大量血源与旁路准备的血管外科单元的计划——[[blood/transfusion]]、[[surgery/vascular-urological-surgery]]）、解剖外旁路或腔内桥接到确定性修复策略、及感染移植物移除逻辑（邻近[[microbiology/bacteria]]的移植物感染与[[surgery/vascular-urological-surgery]]）；及记录中的规则（移植物携带者的任何消化道出血都是内瘘直到排除——把它写进入院表格[[clinical-skills/patient-safety]]）。**
-:::
+1996年，罗卡尔（Tim Rockall）及其同事根据一项英国全国上消化道出血审计发表了一个风险评分；2000年，格拉斯哥的布拉奇福德（Oliver Blatchford）及其同事发表了一个可在内镜前使用的评分。粪便潜血检测的随机试验改变了结直肠癌筛查：由曼德尔（Jack Mandel）领导、1993年发表的明尼苏达试验，以及由哈德卡斯尔（Jack Hardcastle）领导、1996年发表的诺丁汉试验，都显示结直肠癌死亡率下降。1990年，费伦（Eric Fearon）和福格尔斯坦提出了结直肠肿瘤发生的遗传模型，使腺瘤-癌序列成为一个分子层面的故事。
 :::
 
 ::: summary
-- 上消化道出血：评分（Glasgow-Blatchford）、以限制性阈值复苏、质子泵抑制剂与24小时内内镜、并沿内镜介入放射外科阶梯升级；氨甲环酸不属于其中。
-- 疑似曲张静脉出血：抗生素加血管活性药加保护气道限制性输血加早套扎、以门体分流作为救援、移植谈话近在咫尺。
-- 下消化道出血通常是憩室性而自限；按出血速率逻辑用结肠镜或计算机断层血管造影定位；抗凝的逆转与恢复算术塑造结局。
-- 年长男性与绝经后女性的铁缺乏在双向内镜说明否则之前是消化道失血——绝不在未做内镜时治疗。
-- 结直肠癌沿腺瘤癌序列运行、可筛查、并按分期治疗：带全直肠系膜切除的手术、新辅助与辅助化疗及放疗的分级组合、及转移性疾病中的分子选择（微卫星不稳定、RAS、BRAF、HER2）；肛门癌由放化疗治愈。
+- 上消化道出血表现为呕血或黑便；消化性溃疡是最常见原因。尿素升高提示上消化道来源。
+- 先复苏，限制性输血，内镜前使用Glasgow–Blatchford评分，24小时内行内镜检查。
+- 不推荐氨甲环酸和内镜前PPI；高危溃疡内镜治疗后给予大剂量PPI。
+- 静脉曲张出血需要在内镜前使用特利加压素和抗生素，行套扎，出血持续时行TIPS。
+- 下消化道出血通常会停止；Oakland评分指导出院，CT血管造影为不稳定患者定位出血。
+- 男性和绝经后女性的缺铁性贫血需要检查消化道。
+- 大多数结直肠癌由腺瘤发展而来。FIT用于有症状者分诊（阈值10 µg/g）和筛查（英格兰120 µg/g）。
+- 林奇综合征和FAP是主要的遗传性综合征；肛门癌由HPV驱动。
 :::
 
-## 练习
+## 后续内容
 
-::: exercise 给这次出血评分 {level=1}
-血红蛋白115、尿素12.5、肌酐95、脉搏96、无黑便、无晕厥、无肝病、以呕血就诊。Glasgow-Blatchford逻辑意味着什么？
+消化性溃疡病和上消化道癌的报警特征见[[gastrointestinal/oesophagus-stomach]]。门静脉高压和静脉曲张出血的预防见[[gastrointestinal/liver-disease]]。炎症性肠病和憩室病见[[gastrointestinal/bowel-disease]]。诊断试验准确性见[[epidemiology-ebm/diagnostic-tests]]，癌症遗传学见[[genetics/cancer-genetics]]，外科治疗见[[surgery/gastrointestinal-surgery]]。
+
+## 习题
+
+::: exercise 上消化道还是下消化道？ {level=1}
+对下列每种表现，说明更可能是上消化道还是下消化道来源，并说明理由：(a)黑便，尿素18 mmol/L，肌酐正常；(b)用力排便后手纸上有鲜红色血；(c)便血伴脉搏每分钟130次和尿素升高。
 ::: solution
-**一个低而非零的评分（每个条目计分——贫血与尿素与脉搏有贡献——[[#def-ugib]]的条目；接近低的评分落在曲线左侧、干预概率不大）。实践：**极低（不超过1）的患者可进入门诊粪便免疫化学加质子泵抑制剂与安全网路径带快速可及内镜（[[#def-ugib]]的图注与验证队列）；这个混合图像（尿素升高、心动过速存在）收住做住院内镜（[[clinical-skills/clinical-reasoning]]、[[emergency-critical-care/acute-assessment]]）。**
+(a)上消化道：黑便和不成比例升高的尿素来自被消化的血液。(b)下消化道，来自肛管，典型为痔或肛裂。(c)可能是上消化道：快速的上消化道出血可很快排出鲜红色血，尿素升高和休克支持这一点。应及早考虑上消化道内镜。
 :::
 :::
 
-::: exercise 不要输更多 {level=1}
-为何限制性输血阈值尤其适合曲张静脉出血？
+::: exercise 为什么不用氨甲环酸？ {level=1}
+解释为什么急性消化道出血不常规使用氨甲环酸，尽管它能降低创伤的死亡率。
 ::: solution
-**过度输血升高门脉压并增加再出血与死亡率（[[#def-variceal]]与[[blood/transfusion]]）：内脏血流动力学（[[renal/water-sodium]]的容量室逻辑与[[cardiovascular/circulation-blood-pressure]]）、稀释性凝血障碍与柠檬酸钙层次（[[blood/haemostasis-bleeding]]与[[emergency-critical-care/resuscitation]]的大量输血方案算术）、及目标70-80并对缺血例外的规则（[[cardiovascular/coronary-artery-disease]]）；肝硬化的再平衡止血使追逐国际标准化比值既无效又有害容量（[[gastrointestinal/liver-disease]]、[[blood/haemostasis-bleeding]]）。**
+HALT-IT试验（2020年）把约12,000名消化道出血患者随机分为氨甲环酸组和安慰剂组。结果发现出血死亡没有减少，静脉血栓栓塞事件增加。在一种出血情况下有效的治疗，不能假定在另一种情况下也有效；消化道出血在病因和时间进程上都不同于创伤。
 :::
 :::
 
-::: exercise 定位这个隐匿出血 {level=2}
-一名55岁血红蛋白82、铁蛋白8、重复胃镜与结肠镜正常包括十二指肠活检与末端回肠插管。下一步与其顺序？
+::: exercise 年轻女性的缺铁 {level=1}
+一名32岁月经量多的女性患缺铁性贫血。英国指南建议她做哪些检查？何时需要消化道检查？
 ::: solution
-**隐匿的显性或隐性出血（[[#def-occult]]）：当质量或间隔要求时二次上下内镜（漏诊率——[[clinical-skills/patient-safety]]）；内镜之外首选小肠胶囊内镜（滞留风险筛查、及疑克罗恩或非甾体抗炎药膈膜时的通畅胶囊——[[gastrointestinal/bowel-disease]]与[[pharmacology/adverse-reactions]]）；胶囊阳性时用装置辅助小肠镜治疗（[[clinical-skills/medical-imaging]]）；肠系膜血管造影计算机断层或多期计算机断层用于肿块与小肠肿瘤集（[[gastrointestinal/bowel-disease]]）；罕见病变清单（Heyde的血管发育不良——[[cardiovascular/valve-congenital-disease]]；Dieulafoy——[[#def-ugib]]；Meckel——[[anatomy/embryology]]；带鼻出血与家族史的遗传性出血性毛细血管扩张——[[genetics/mendelian-inheritance]]与[[blood/haemostasis-bleeding]]）；及吸收不良重审（低免疫球蛋白A警诫下的乳糜血清学[[gastrointestinal/bowel-disease]]、及膳食与献血史再问[[blood/anaemia]]）。**
+建议所有缺铁性贫血者做乳糜泻血清学检查和尿液检查。月经量多是可能的原因，通常不需要常规消化道检查。如果她有胃肠道症状、明显的结直肠癌家族史，或补铁后贫血无反应，则需要消化道检查。
 :::
 :::
 
-::: exercise 选择这个手术 {level=2}
-一名71岁有一个环周中位直肠腺癌、距肛缘6厘米、磁共振cT3b N1伴环周切缘受威胁；无转移。列出治疗顺序与功能咨询。
+::: exercise 计算Glasgow–Blatchford评分 {level=2 check="13"}
+一名60岁女性黑便并有一次晕厥。脉搏每分钟108次，血压96/60 mmHg，血红蛋白95 g/L，尿素9.0 mmol/L。无肝病或心力衰竭。计算她的Glasgow–Blatchford评分。
+::: hint
+使用[[#thm-gbs]]中的表，记住血红蛋白分段因性别而异。
+:::
 ::: solution
-**局部进展期中位直肠癌（[[#def-crc]]）：新辅助治疗顺序（长程放化疗对短程放疗对带氟尿嘧啶奥沙利铂巩固的全程新辅助治疗——试验级联[[epidemiology-ebm/systematic-reviews]]与[[surgery/gastrointestinal-surgery]]）、再分期、然后前切除带全直肠系膜切除[[anatomy/pelvis-perineum]]的直肠系膜筋膜与自主神经平面——排尿与性功能及排便后果要诚实地咨询（[[clinical-skills/communication]]、邻近[[obstetrics-gynaecology/contraception-fertility]]的生育保存转诊用于较年轻患者）；环周切缘受威胁及超出全直肠系膜切除平面的替代（侧方盆腔淋巴结清扫之问及髂内淋巴结与壁外血管侵犯的报告——[[pathology/cancer-diagnosis]]）；辅助化疗完成与监测（邻近[[public-health/screening]]的计算机断层与癌胚抗原方案）；完全临床缓解的观察等待选项及其密集内镜与磁共振随访义务（[[surgery/gastrointestinal-surgery]]、[[clinical-skills/records-handover]]）；及造口与盆腔放疗长期功能之争放射性直肠炎出血风险[[#def-variceal]]与肛门直肠功能轨迹（邻近[[gastrointestinal/bowel-disease]]的生理学检测）。**
+尿素9.0 mmol/L：3分。女性血红蛋白95 g/L：6分。收缩压96 mmHg：2分。脉搏108：1分。黑便：1分。晕厥：2分。肝病和心力衰竭：0分。总分$= 3 + 6 + 2 + 1 + 1 + 2 = 13$。
+
+**13**分提示高风险：她需要入院、复苏和早期内镜检查。
 :::
 :::
 
-::: exercise 主持这个多学科团队 {level=3}
-一名62岁已切除的Ⅲ期结肠癌患者经胚系检测发现Lynch综合征；两个成年子女30岁与27岁。处理患者、家庭与系统。
+::: exercise 休克指数 {level=2 check="1.2"}
+一名直肠出血男性脉搏每分钟120次，收缩压100 mmHg。计算他的休克指数（保留一位小数），并说明这对影像检查意味着什么。
+::: hint
+休克指数是心率除以收缩压。
+:::
 ::: solution
-**患者层：辅助化疗决定（Ⅲ期指征成立——微卫星不稳定的预后与预测细微之处及氟尿嘧啶单药之问——[[pharmacology/dosing-principles]]与[[immunology/vaccines-immunotherapy]]的检查点数据向更早分期升级的试验[[surgery/gastrointestinal-surgery]]）；Lynch的同时与异时风险算术诊断时的扩大切除讨论[[surgery/gastrointestinal-surgery]]、若患者为女性的妇科风险与外科预防谈话（[[obstetrics-gynaecology/gynaecological-cancer]]、[[medical-ethics-law/confidentiality]]）、每年到每两年结肠镜监测间隔及上消化道内镜之问（[[public-health/screening]]与[[gastrointestinal/bowel-disease]]自己的Lynch定义行）；阿司匹林与CAPP2的提供及其出血警诫（[[cardiovascular/vascular-disease]]、[[gastrointestinal/oesophagus-stomach]]）；家庭层：两个子女的预测性检测路径（开始筛查的年龄按综合征为20至30多岁、级联检测的物流、及“有风险及我们为何打电话”的信对保密限制——[[genetics/genetic-testing]]与[[medical-ethics-law/confidentiality]]）；系统层：遗传门诊与家族史数据库的交接、筛查规划注册、文件与知情同意架构、及检测不应依赖居住地的公平核查（[[public-health/determinants-inequalities]]、[[public-health/health-systems-economics]]、[[clinical-skills/records-handover]]）——外加试验与登记册提供（邻近[[geriatrics-palliative/palliative-care]]的早期姑息整合用于症状负荷而不是分期、[[medical-ethics-law/research-ethics]]）。**
+休克指数$= 120/100 = 1.2$。大于1提示血流动力学不稳定。在考虑过上消化道来源之后，英国指南建议对不稳定患者行CT血管造影定位出血，如发现出血点则行栓塞。
 :::
 :::
 
-::: exercise 解释这个痔的陷阱 {level=2}
-为何出血的癌被标为痔、什么保障措施能纠正？
+::: exercise FIT的预测值 {level=2 check="16"}
+在一组有下消化道症状的人中，3%患有结直肠癌。在所选阈值下，FIT的灵敏度为90%，特异度为85%。检测阳性者中患癌的比例是百分之几？取最接近的整数百分比。
+::: hint
+以10,000人计算。
+:::
 ::: solution
-**归因错误的机制（[[clinical-skills/clinical-reasoning]]与[[clinical-skills/patient-safety]]的安全架构）：常见良性来源的基础率、可见的痔满足了搜寻、肛门直肠检查的省略、“年轻因此良性”的启发式（早发上升的教训[[#def-crc]]）、及再就诊的处理（[[medical-ethics-law/professionalism-regulation]]的索赔类别）。保障：带强制直肠指检与粪便免疫化学检测的便血与年龄及报警征决策规则（[[clinical-skills/physical-examination]]、[[clinical-skills/laboratory-tests]]）；带过度检查保险栓的癌症路径转诊标准（[[gastrointestinal/gi-bleeding-cancer]]路径、[[public-health/screening]]）；第二次意见与铁检查触发器及安全网记录（[[clinical-skills/records-handover]]、[[clinical-skills/patient-safety]]）；痔治疗资格规则（在需要时排除癌之后才套扎[[gastrointestinal/bowel-disease]]自己的痔行、[[surgery/gastrointestinal-surgery]]）；及漏诊审计的反馈回路与患者倡导的“再去查一次”运动（[[public-health/prevention-promotion]]、[[medical-ethics-law/professionalism-regulation]]）。**
+10,000人中300人患癌，其中270人检测阳性。9,700名无癌者中15%检测阳性：1,455人。阳性预测值$= 270/(270 + 1455) = 270/1725 = 0.157$，取整数为**16%**。约六分之五的阳性结果是假阳性，但结肠镜检查仍然合理，因为检测阳性者的患癌风险远高于3%的基线水平。
+:::
+:::
+
+::: exercise 解读家族史 {level=3}
+一名38岁女性的母亲49岁患子宫内膜癌，舅舅45岁患结直肠癌。舅舅的肿瘤免疫组化显示MSH2蛋白缺失。可能是什么综合征？应为这名女性提供什么？她有哪些癌症风险？
+::: hint
+肿瘤中错配修复蛋白缺失指向一个特定的综合征。
+:::
+::: solution
+**可能的综合征：** 林奇综合征。两名一级或二级亲属年轻时患林奇综合征相关癌症，且肿瘤中MSH2缺失，提示*MSH2*胚系变异。
+
+**应提供：** 转诊临床遗传科进行咨询，最好在受累亲属中确认变异后再进行预测性检测。如果她携带该变异：定期结肠镜监测（在英国通常每2年一次，起始年龄由所涉基因决定），讨论用阿司匹林化学预防，以及在完成生育后讨论降低妇科风险的手术。
+
+**有风险的癌症：** 首先是结直肠癌和子宫内膜癌，也包括卵巢、胃、小肠、胰腺、胆道和泌尿道癌症。
+:::
+:::
+
+::: exercise 规划筛查阈值 {level=3}
+某筛查计划正在考虑把FIT阈值从120降到80 µg/g。请解释这对检出癌症、假阳性、结肠镜需求和危害的预期影响，以及为什么筛查计划选择的阈值高于有症状者使用的10 µg/g。
+::: hint
+考虑筛查人群与有症状人群中癌症患病率的差异。
+:::
+::: solution
+**降低阈值的影响：** 灵敏度升高，因此检出更多的癌和进展期腺瘤，且分期更早。特异度下降，因此更多没有重要疾病的人得到阳性结果。结肠镜需求大幅增加，更多检查一无所获，穿孔和出血等并发症的绝对数也增加。
+
+**为什么筛查采用较高阈值：** 无症状筛查人群中的癌症患病率远低于有症状者。在低患病率下，低阈值会使每发现一例癌症产生大量假阳性，而结肠镜能力有限。在有症状者中，较高的患病率使10 µg/g这一灵敏阈值合理，从而很少漏诊癌症。因此筛查计划设定阈值时要平衡获益、危害和能力，并随着能力增长而降低阈值。
 :::
 :::

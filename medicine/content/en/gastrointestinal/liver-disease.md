@@ -1,144 +1,289 @@
-Chronic liver disease is one disease with a thousand causes and a hundred ways to decompensate. The organising logic: **whatever the insult, fibrosis accumulates, sinusoidal pressure rises, and the patient crosses from compensated to decompensated — the point at which ascites, bleeding, encephalopathy or jaundice appear and prognosis is measured in a couple of years without transplantation or reversal of the cause.** Everything in this chapter serves those two sentences.
+Liver disease is one of the few major causes of death in the UK that rose steadily through the late twentieth and early twenty-first centuries, and it kills people at a younger age than heart disease or most cancers. Three causes dominate: alcohol, metabolic dysfunction linked to obesity and diabetes, and viral hepatitis. All three are largely preventable, and all three cause damage silently for years before symptoms appear.
 
-This chapter covers the aetiologies of chronic liver disease and the recognition, prevention and management of portal hypertension and decompensation.
+The common pathway is **fibrosis**. Repeated injury activates hepatic stellate cells, which lay down collagen. Over years, fibrosis links portal tracts and central veins, and the liver's architecture is replaced by nodules of regenerating hepatocytes surrounded by scar. This is **cirrhosis**. Cirrhosis has two consequences that drive almost every complication: **portal hypertension**, because scar and distorted vessels resist blood flow, and **hepatocellular failure**, because there are fewer working cells.
 
-## Causes
+This chapter covers the main causes of liver disease, then cirrhosis and its complications, acute liver failure and transplantation. It assumes the interpretation of liver tests from [[gastrointestinal/liver-function]].
 
-::: definition Steatosis, alcohol and drugs {#def-causes}
-**Metabolic dysfunction-associated steatotic liver disease (MASLD — the 2023 renaming of "non-alcoholic fatty liver disease" with its cardiometabolic criteria, an act of nomenclature as much as science, and the overlap category with alcohol — MetALD — [[gastrointestinal/liver-disease]]'s honest-advice corollary): the epidemiology (a quarter of adults, rising with obesity — [[endocrine/diabetes]], [[public-health/determinants-inequalities]]); pathogenesis (insulin resistance and adipose-lipid flux and de-novo lipogenesis and lipotoxic species and the gut-fibre-microbiome second hit — [[cell-biochemistry/lipid-amino-acid-metabolism]], [[microbiology/microbiota]]); the histological spectrum (steatosis → steatohepatitis with ballooning and lobular inflammation → fibrosis with the perisinusoidal and periportal patterns); the clinical problem (it is silent, so the FIB-4-then-elastography cascade is case-finding in diabetes and primary-care obesity clinics — [[clinical-skills/medical-imaging]], [[public-health/screening]]); and the management (weight loss with exercise and diet — the histology-responding thresholds; the statin-myth correction and cardiovascular-risk primacy — [[cardiovascular/vascular-disease]], [[pharmacology/adverse-reactions]]; the GLP-1-receptor-agonist and resmetirom and FXR-agonist evidence waves — [[endocrine/diabetes]], [[gastrointestinal/liver-function]]'s bile-acid-note [[gastrointestinal/digestion-absorption]]; bariatric-surgery co-benefits and its perioperative nuances — [[surgery/gastrointestinal-surgery]]). **Alcohol-related liver disease (the dose-duration-curve of risk, with the genotype-and-smoking-and-obesity-viral cofactors — [[pharmacology/patient-variation]], [[psychiatry/substance-use]]): pathogenesis (acetaldehyde and oxidative and nitrosative stress and immune activation — [[cell-biochemistry/lipid-amino-acid-metabolism]]'s alcohol pathways, [[immunology/innate-immunity]]'s gut-derived endotoxin signalling); the presentations (steatosis-reversible, hepatitis, cirrhosis — and the AST:ALT ratio with its GGT-and-MCV-and-CDT biomarker set and their honesty limits — [[gastrointestinal/liver-function]]); acute severe alcoholic hepatitis (the jaundice-fever-tender-hepatomegaly-malaise syndrome, the discriminant-score and other prognostic scores, the steroid trial with infection-and-GI-bleed-and-renal guards and the non-response stopping rule, and the nutrition-first rest of the treatment — [[gastrointestinal/clinical-nutrition]]); the withdrawal-and-dependence management running in parallel (thiamine-before-glucose and the Wernicke-Korsakoff watchfulness — [[nervous-system/dementia-neurodegeneration]], [[psychiatry/substance-use]]; the hepatology-addiction joint-visit and the transplant-programme-appropriateness conversation — [[medical-ethics-law/justice-resources]]). **Drug-induced liver injury (DILI: the predictable dose-related type (paracetamol's NAPQI chemistry — [[emergency-critical-care/poisoning]], [[pharmacology/metabolism-excretion]]) versus the idiosyncratic metabolic-and-immune types (the HLA associations of flucloxacillin-and-nevirapine-and-amoxicillin-clavulanate — [[pharmacology/patient-variation]], [[immunology/antigen-recognition]]); the culprit list that recurs (antibiotics, NSAID-anticonvulsants-antithyroid-drugs, TB regimens — [[infectious-diseases/tuberculosis]], antiretrovirals, herbals-and-green-tea-extract-and-anabolic-steroids, the checkpoint-inhibitor and other oncology-agent hepatic immune toxicities — [[immunology/vaccines-immunotherapy]]-adjacent irAE management [[gastrointestinal/gi-bleeding-cancer]]); the diagnosis of exclusion with latency logic and the RUCAM-style causality scoring; Hy's law (the hepatocellular-plus-jaundice combination and its mortality signal) and the mandatory-reporting habit — [[pharmacology/adverse-reactions]], [[pharmacology/drug-development-prescribing]].**
+## Causes of liver disease
+
+::: definition Steatotic, alcohol-related and drug-induced liver disease {#def-causes}
+- **Metabolic dysfunction-associated steatotic liver disease** (MASLD) is fat in more than 5% of hepatocytes with at least one cardiometabolic risk factor (such as obesity, type 2 diabetes, hypertension or dyslipidaemia) and no other cause. Its inflammatory form, with hepatocyte injury, is **metabolic dysfunction-associated steatohepatitis** (MASH). These terms replaced "non-alcoholic fatty liver disease" in 2023.
+- **Alcohol-related liver disease** ranges from steatosis to **alcoholic hepatitis** and cirrhosis.
+- **Drug-induced liver injury** (DILI) is liver damage caused by a medicine, herbal product or supplement. It may be dose-dependent and predictable, as with paracetamol, or idiosyncratic and unpredictable, as with amoxicillin–clavulanate.
 :::
 
-::: definition Genetic, autoimmune and cholestatic diseases {#def-other-causes}
-**Hereditary haemochromatosis (HFE C282Y homozygosity, the increased transferrin-saturation-first screen and the ferritin-second step, the penetrance problem and family-cascade-testing; the iron-in-the-organ syndrome (liver-fibrosis-and-HCC-risk, diabetes, arthropathy-and-pseudogout, cardiomyopathy-and-arrhythmia, hypogonadism, skin pigmentation, fatigue — [[endocrine/diabetes]], [[endocrine/reproductive-endocrinology]], [[musculoskeletal/inflammatory-arthritis]]-adjacent-calcium-pyrophosphate [[musculoskeletal/bones-joints]], [[cardiovascular/heart-failure]], [[endocrine/bone-calcium]]); treatment by venesection with the ferritin-target and erythropoietin-limits logic (the transfusion-dependent cousins with secondary iron overload — [[blood/transfusion]], [[blood/haematopoiesis]]); the alcohol-and-MASLD cofactor elimination as the real intervention — [[#def-causes]]; and the screening-programme debate ([[public-health/screening]]). Wilson disease (ATP7B copper transport, the young-patient rule (hepatitis or unexplained cirrhosis or neuropsychiatric disease under 40 — psychiatric presentations mislabelled for years — [[psychiatry/psychotic-disorders]]), the low caeruleoplasmin-and-high-urinary-copper-and-Kayser-Fleischer-ring workup and the biopsy-copper assay, penicillamine-and-trientine-and-zinc therapy with the haematologic-and-neurologic monitoring, the liver-transplant rescue for fulminant disease, and the sibling-testing-and-treatment obligation — [[genetics/mendelian-inheritance]], [[genetics/genetic-testing]]). Alpha-1-antitrypsin deficiency (the PiZZ polymerisation-storage disease with its lung pairing — [[respiratory/interstitial-vascular-disease]]-and-[[genetics/common-disease-genetics]]). Autoimmune hepatitis (the middle-aged-woman-and-occasionally-anyone pattern; ANA-and-SMA-and-raised-IgG-and-interface-hepatitis; the treat-and-taper-and-relapse protocol with azathioprine maintenance and TPMT checks — [[pharmacology/patient-variation]]; overlap syndromes with PBC-and-PSC and the IgG4-related sclerosing disease that mimics both and answers to steroids — [[immunology/autoimmunity]], [[gastrointestinal/liver-function]]'s antibody panel, [[pathology/diagnostic-pathology]]). Primary sclerosing cholangitis (the young-man-with-IBD cholangiopathy — [[gastrointestinal/bowel-disease]]'s UC pairing; the beading-and-stricturing cholangiogram and the dominant-stricture-brush-cytology discipline — [[clinical-skills/medical-imaging]], [[pathology/cancer-diagnosis]]; the cholangiocarcinoma-and-gallbladder-neoplasia surveillance programmes and their yield debates — [[gastrointestinal/pancreas-biliary]], [[public-health/screening]]; no proven medical therapy, transplant for decompensation and the transplant-recurrence-and-IBD-colectomy-timepoint puzzles — [[immunology/transplant-tumour-immunology]]). Chronic viral hepatitis B and C get their own microbiology treatment ([[microbiology/viruses]], [[infectious-diseases/hiv]]-adjacent-coinfection-clinics): the C-cure-era and B-suppression-era implications for fibrosis regression, HCC-risk reduction and the "case-finding is screening" public-health strategy — [[public-health/screening]], [[public-health/global-health]].**
+### Steatotic liver disease
+
+MASLD is now the commonest liver disease in many countries, affecting roughly a quarter to a third of adults. Most people with it have simple steatosis and will never develop liver complications; their main risk is cardiovascular disease. A minority develop MASH and progressive fibrosis. **Fibrosis stage is the strongest predictor of liver-related outcome**, which is why the FIB-4 index and elastography described in [[gastrointestinal/liver-function]] are central to care.
+
+Treatment is weight loss through diet and physical activity, with control of diabetes, blood pressure and lipids. A loss of 7–10% of body weight can reduce steatohepatitis and sometimes fibrosis. Drugs that cause weight loss, such as GLP-1 receptor agonists, and bariatric surgery can help. Specific drugs for MASH have begun to be licensed in some countries, and their use follows current guidance. The 2023 nomenclature also defines **MetALD** for people with MASLD who drink moderate amounts of alcohol, recognising that the two causes often coexist.
+
+### Alcohol
+
+Alcohol is metabolised in the liver mainly by alcohol dehydrogenase and, at high intake, by CYP2E1. Both pathways generate NADH, which promotes fat synthesis and steatosis, and acetaldehyde, which damages proteins and triggers inflammation. Almost everyone who drinks heavily develops steatosis, which reverses with abstinence. A minority develop cirrhosis; risk rises with amount and duration, and with female sex, obesity and genetic variants such as *PNPLA3*.
+
+**Alcoholic hepatitis** is an acute inflammatory illness in a heavy drinker: jaundice, fever, a tender enlarged liver, and a neutrophil leukocytosis, often with AST around twice ALT but rarely above 300–400 U/L. Severity is assessed with scores such as the **Maddrey discriminant function**:
+
+$$
+\text{DF} = 4.6 \times (\text{PT}_{\text{patient}} - \text{PT}_{\text{control}}) + \text{bilirubin (mg/dL)}
+$$ {#eq-df}
+
+A DF of 32 or more indicates severe disease with a high short-term mortality. To convert bilirubin from µmol/L to mg/dL, divide by 17.1. The STOPAH trial (2015) found that prednisolone did not significantly improve survival at 90 days or 1 year in severe alcoholic hepatitis; it may give a small short-term benefit in selected people, and its use is a specialist decision. Abstinence, nutrition, treatment of infection and management of alcohol withdrawal are central.
+
+### Viral hepatitis
+
+| Virus | Genome | Main route | Chronic infection | Notes |
+|---|---|---|---|---|
+| Hepatitis A | RNA | faecal–oral | no | vaccine available |
+| Hepatitis B | DNA | blood, sexual, mother to child | about 90% if infected at birth, under 5% if infected as an adult | vaccine available; antivirals suppress |
+| Hepatitis C | RNA | blood (injecting drug use, unsafe medical procedures) | about 75% | direct-acting antivirals cure over 95% |
+| Hepatitis D | RNA | blood | yes | needs hepatitis B to replicate |
+| Hepatitis E | RNA | faecal–oral; undercooked pork in Europe | only in immunosuppressed people | severe in pregnancy (genotypes 1 and 2) |
+
+**Hepatitis B serology** is interpreted from a few markers. **HBsAg** (surface antigen) means current infection; if it persists beyond 6 months the infection is chronic. **Anti-HBc IgM** indicates recent infection. **Anti-HBs** indicates immunity, from vaccination alone (anti-HBc negative) or from cleared infection (anti-HBc positive). **HBeAg** and **HBV DNA** measure viral replication. Chronic hepatitis B is treated with nucleos(t)ide analogues such as tenofovir or entecavir when there is significant viral replication, inflammation or fibrosis. These drugs suppress the virus but rarely clear it, so treatment is usually long-term. Hepatitis B reactivation can occur with chemotherapy or biologic drugs, so screening is required before them.
+
+**Hepatitis C** is now curable in most people with 8–12 weeks of oral direct-acting antivirals. The WHO has set a goal of eliminating viral hepatitis as a public health threat by 2030, which depends on finding the many people who do not know they are infected ([[public-health/communicable-disease-control]]).
+
+### Autoimmune, cholestatic and genetic diseases
+
+::: definition Autoimmune, cholestatic and inherited liver diseases {#def-other-causes}
+- **Autoimmune hepatitis**: immune attack on hepatocytes, commoner in women, with raised ALT, raised IgG and anti-smooth muscle or antinuclear antibodies. It responds to corticosteroids and azathioprine.
+- **Primary biliary cholangitis** (PBC): autoimmune destruction of small intrahepatic bile ducts, mainly in middle-aged women, with a cholestatic pattern and anti-mitochondrial antibodies. First-line treatment is ursodeoxycholic acid; second-line drugs are used if the response is inadequate.
+- **Primary sclerosing cholangitis** (PSC): inflammation and stricturing of intra- and extrahepatic bile ducts, strongly associated with ulcerative colitis, diagnosed by MRCP showing a "beaded" biliary tree. No drug has been shown to slow it. It carries a high risk of **cholangiocarcinoma** and colorectal cancer.
+- **Hereditary haemochromatosis**: iron overload, usually from homozygosity for the *HFE* C282Y variant, with a raised transferrin saturation and ferritin. Treated by venesection.
+- **Wilson disease**: autosomal recessive copper accumulation caused by variants in *ATP7B*, affecting the liver and brain. Treated with chelators or zinc.
+- **Alpha-1 antitrypsin deficiency**: misfolded protein (usually the PiZZ genotype) accumulates in hepatocytes, causing liver disease, while low circulating levels cause emphysema.
 :::
 
-## Decompensation
-
-::: definition Portal hypertension and its complications {#def-portal}
-**Physiology (sinusoidal resistance from architectural distortion plus endothelial dysfunction, then splanchnic vasodilatation with effective arterial underfilling, then RAAS-and-ADH-and-sympathetic retention and a hyperdynamic circulation — read across with [[renal/water-sodium]], [[cardiovascular/circulation-blood-pressure]] and [[endocrine/adrenal]]'s aldosterone; the hepatic venous pressure gradient as the surrogate measure and the clinically-significant threshold that predicts decompensation). Ascites (the SAAG — a serum-ascites albumin gradient of ≥11 g/L says portal hypertension, and total protein then separates cardiac from cirrhotic causes — [[#ex-ascites]], [[gastrointestinal/liver-function]]'s synthesis page; the workup always includes a cell count and culture for spontaneous bacterial peritonitis before anything else — [[#def-infections-complications]]; treatment: sodium restriction and spironolactone-furosemide titration with potassium-and-creatinine monitoring ([[renal/potassium-calcium-phosphate]], [[renal/acute-kidney-injury]]), large-volume paracentesis with albumin replacement, the refractory-ascites tier (TIPS with its encephalopathy trade-off — [[gastrointestinal/liver-disease]]'s own vascular-approach [[clinical-skills/medical-imaging]]; the indwelling-pump-and-peritoneovenous relics; transplant-timing), and the do-not-do list (NSAIDs-and-aminoglycosides-and-aggressive-diuresis-in-hyponatraemia — [[pharmacology/adverse-reactions]], [[renal/water-sodium]]). Varices and bleeding ([[anatomy/abdomen]]'s portosystemic routes; the screening-endoscopy-and-non-selective-beta-blocker-versus-banding primary-prophylaxis rules, the statin-and-portal-pressure-hypothesis frontier — [[cardiovascular/vascular-disease]]-adjacent; acute variceal haemorrhage belongs to [[gastrointestinal/gi-bleeding-cancer]]'s protocol). Hepatic encephalopathy (the ammonia-and-neuroinflammation-and-manganese-and-GABA-A-neurosteroid multi-hit with astrocyte swelling — [[cell-biochemistry/energy-metabolism]]'s astrocyte glutamine chemistry, ([[physiology/membrane-potentials]]-adjacent glial physiology); the West-Haven grading and the minimal-encephalopathy-driving-and-occupation-counselling obligation — [[medical-ethics-law/professionalism-regulation]]-adjacent-driving-licensing rules; the precipitant hunt — infection and bleeding and constipation and dehydration and sedatives — before labelling; lactulose titration and rifaximin prevention with stewardship caveats — [[microbiology/antimicrobials]]; and the transplant-and-TIPS-selection implications — [[gastrointestinal/liver-function]]'s encephalopathy references). Hepatorenal syndrome (the diagnosis-of-exclusion with no-structural-disease-and-volume-expand-test logic, terlipressin-albumin reversal bridging to transplant, the AKI-susceptibility of the cirrhotic and the nephrotoxin-avoidance list — [[renal/acute-kidney-injury]], [[renal/filtration]]). Coagulopathy (the rebalanced haemostasis of reduced pro- AND anti-coagulants, the INR-as-nonsense-in-this-setting argument with TEG/ROTEM correction, and the procedure-threshold arithmetic that protects patients from unnecessary plasma — [[blood/haemostasis-bleeding]], [[blood/transfusion]], [[gastrointestinal/liver-function]]'s synthesis lesson). Sarcopenia, frailty and bone disease (the muscle-is-a-organ-of-metabolic-reserve argument and the transplant-outcome data — [[geriatrics-palliative/ageing-frailty]], [[gastrointestinal/clinical-nutrition]], [[endocrine/bone-calcium]]); the infection-and-AKI-and-GI-bleeding triggers of acute-on-chronic liver failure (the ACLF syndromes with their ICU-stratified mortality — [[emergency-critical-care/critical-care]], [[infectious-diseases/fever-sepsis]]); vaccination-and-screening hygiene (hepatitis A-and-B-and-pneumococcal-and-annual-influenza; the HCC-ultrasound-surveillance-for-cirrhosis rule and its AFP caveats — [[public-health/vaccination-programmes]], [[public-health/screening]]); and transplantation (indications and the MELD-allocation engine — [[gastrointestinal/liver-function]]'s scores; the absolute and relative contraindication debates, the alcohol-programme requirement ethics — [[medical-ethics-law/justice-resources]]; living-donor and split-liver options — [[surgery/gastrointestinal-surgery]]; the post-transplant immunosuppression-and-recurrence-and-metabolic-syndrome long-haul — [[immunology/transplant-tumour-immunology]], [[geriatrics-palliative/polypharmacy]]); the palliative-care parallel track for symptom burden and honest prognostication, including the liver-unit partnership for the transplant-ineligible — [[geriatrics-palliative/palliative-care]], [[medical-ethics-law/end-of-life-ethics]].)**
-:::
-
-::: definition Spontaneous bacterial peritonitis and infection rules {#def-infections-complications}
-**SBP (the translocation-driven, often-silent infection of ascitic fluid without a surgical source: why every cirrhotic admission and every deterioration gets a diagnostic tap — the polymorphonuclear count ≥250/µL treatment threshold, culture-with-blood-culture-bottles technique to beat the low-bacterial-count problem, third-generation-cephalosporin empirical cover with local-resistance awareness, albumin's renal-protection dosing in the high-risk groups, and the norfloxacin-or-trimethoprim secondary-prophylaxis rule — [[microbiology/antimicrobials]], [[clinical-skills/laboratory-tests]]; the "simultaneous treatment of the precipitant" triad of hepatorenal, hypotension and hypovolaemia — [[renal/acute-kidney-injury]], [[emergency-critical-care/shock-fluids]]). The wider infection book (cirrhotic immunoparalysis — a combined innate-and-adaptive failure that behaves like a drug-induced immunodeficiency — [[immunology/innate-immunity]], [[immunology/immunodeficiency]]; the high rates of urinary, chest and skin infection and the atypical-presentation vigilance; the antimicrobial-stewardship tightrope with MDR risk — [[infectious-diseases/healthcare-infections]], [[infectious-diseases/stewardship-outbreaks]]; fungal peritonitis and mucosal-cutaneous-cryptococcal risks in the severe-and-antibiotic-exposed — [[microbiology/fungi-parasites]]); and the admission-bundle common sense (drugs-to-hold — NSAID-diuretic-ACE-inhibitor-beta-blocker-dose-during-bleeding-or-AKI — [[pharmacology/adverse-reactions]], [[renal/water-sodium]]; albumin-and-volume reasoning; and the goals-of-care conversation early in frequent-admitter trajectories — [[geriatrics-palliative/palliative-care]], [[clinical-skills/records-handover]]).**
-:::
-
-::: example The confused ascites admission {#ex-ascites}
-A 56-year-old with alcohol-related cirrhosis is brought in confused and febrile; tense ascites, HR 110, BP 96/58, temp 38.4; bilirubin 85, INR 1.9, creatinine 155 (baseline 85), Na 127, WBC 16, lactate 3.1; ascitic tap: 900 polymorphs/µL, protein 8 g/L.
+::: example Heavy ferritin {#ex-haemochromatosis}
+A 49-year-old man of Irish heritage has fatigue, joint pain in the hands and newly diagnosed type 2 diabetes. ALT 68 U/L. Ferritin 1,850 µg/L, transferrin saturation 78%. He drinks 8 units of alcohol a week. Genetic testing shows homozygosity for *HFE* C282Y. Explain the mechanism, the significance of the ferritin level, and the principles of treatment.
 ::: solution
-**Decompensated cirrhosis with SBP, encephalopathy, AKI and hyponatraemia — one decompensation never travels alone ([[#def-portal]], [[#def-infections-complications]]): the SBP diagnosis is made (PMN 900 ≥ 250; the low protein flags high-recurrence-risk fluid — [[clinical-skills/laboratory-tests]]); start the cephalosporin and the albumin protocol and send blood-and-ascites-cultures-in-bottles at the bedside ([[microbiology/antimicrobials]], [[infectious-diseases/fever-sepsis]]); the AKI workup-and-volume-question (the albumin challenge-and-hold-the-diuretics-and-NSAID-and-ACE-inhibitor-audit-and-look-for-the-bleed — [[renal/acute-kidney-injury]], [[gastrointestinal/gi-bleeding-cancer]]); the encephalopathy precipitant sweep (infection found, constipation-and-dehydration-and-benzodiazepine-and-GI-bleed-and-hyponatraemia-corrected-too-fast next — [[renal/water-sodium]]'s osmotic-demyelination rule, [[pharmacology/adverse-reactions]]); the hyponatraemia reading (dilutional and prognostic — fluid-restriction-reasoning and the vaptan-honesty — [[renal/water-sodium]]); the SBP-albumin-and-terlipressin-availability-and-crit-care-thresholds (the ACLF grade and the ICU conversation — [[emergency-critical-care/critical-care]]); the secondary-prophylaxis-and-diuretic-optimisation-and-nutrition-and-abstinence-support plan before discharge ([[gastrointestinal/clinical-nutrition]], [[psychiatry/substance-use]]); the transplant-centre-referral-timing and the goals documentation ([[medical-ethics-law/end-of-life-ethics]], [[clinical-skills/records-handover]]); and the teaching point: a diagnostic tap on admission is the single action that changes this outcome — write it into the protocol ([[clinical-skills/patient-safety]]).**
+**Mechanism.** HFE protein helps the liver sense iron stores and make **hepcidin**. In C282Y homozygotes hepcidin is inappropriately low, so ferroportin stays active and the gut absorbs too much iron ([[gastrointestinal/digestion-absorption]]). The excess is deposited in the liver, pancreas, joints, heart, skin and pituitary.
+
+**Interpreting the results.** A raised transferrin saturation is the earliest and most specific sign. Ferritin reflects the amount of stored iron, but is also raised by inflammation, alcohol and fatty liver. A ferritin above 1,000 µg/L with raised ALT increases the likelihood of advanced fibrosis or cirrhosis, so he needs fibrosis assessment, by elastography or biopsy. His diabetes and arthropathy are typical features of iron overload.
+
+**Treatment.** **Venesection**, removing about 450–500 mL of blood at a time, initially weekly and then less often, until ferritin is low-normal, then maintenance. This is cheap and effective. If cirrhosis is present he needs 6-monthly surveillance for hepatocellular carcinoma. First-degree relatives should be offered testing.
 :::
 :::
+
+::: example Jaundice on a psychiatric ward {#ex-wilson}
+A 19-year-old woman is admitted with jaundice. Over the previous year she has developed low mood, clumsy handwriting and slurred speech. Bilirubin 210 µmol/L, ALT 160 U/L, ALP 30 U/L (low), haemoglobin 82 g/L with a negative direct antiglobulin test, INR 2.4. What diagnosis must be considered urgently, and how is it confirmed?
+::: solution
+**Pattern recognition.** A young person with liver disease and neuropsychiatric features should be assumed to have **Wilson disease** until it is excluded. Copper accumulates in the liver and, when the liver's capacity is exceeded, in the brain (especially the basal ganglia), causing movement disorder and psychiatric change.
+
+**The blood results.** The combination of acute liver injury, **Coombs-negative haemolysis** from copper released into the blood, a disproportionately **low ALP**, and a high INR is typical of Wilson disease presenting as **acute liver failure**.
+
+**Confirmation.** Low serum **caeruloplasmin**, high 24-hour urinary copper, **Kayser–Fleischer rings** on slit-lamp examination, and genetic testing for *ATP7B* variants. Liver copper content can be measured on biopsy.
+
+**Urgency.** With jaundice, a high INR and haemolysis, she needs immediate discussion with a liver transplant unit. Wilson disease presenting as acute liver failure usually requires transplantation. Less severe disease is treated with copper chelators, such as penicillamine or trientine, or zinc, for life. Siblings should be screened.
+:::
+:::
+
+## Cirrhosis and its complications
+
+Cirrhosis is **compensated** when there have been no complications, and **decompensated** once the person has developed ascites, variceal bleeding, hepatic encephalopathy or jaundice. Survival falls sharply after decompensation: from many years in compensated disease to a median of around 2 years.
+
+Severity is scored in two main ways. The **Child–Pugh score** adds points for bilirubin, albumin, INR, ascites and encephalopathy. A total of 5–6 is class A, 7–9 class B and 10–15 class C. The **MELD score** uses bilirubin, INR and creatinine:
+
+$$
+\text{MELD} = 3.78\ln(\text{bilirubin, mg/dL}) + 11.2\ln(\text{INR}) + 9.57\ln(\text{creatinine, mg/dL}) + 6.43
+$$ {#eq-meld}
+
+Values below 1 are set to 1. MELD predicts 3-month mortality and has been used to prioritise people for transplantation in the United States; a version adding sodium (MELD-Na) is now common. The UK uses the related **UKELD** score to decide when to list a person for transplantation.
 
 ::: widget plot
-f: 100*exp(-0.36*x); 100*exp(-0.09*x)
-x: 0, 5
-y: 0, 105
-labels: \text{years since first decompensation},\ \text{survival (\%)};\ \text{compensated-then-decompensated course};\ \text{post-successful-transplant (illustrative)}
-caption: The clinical cliff this chapter is built around: median survival falls to roughly two years after the first decompensation in patients who remain transplant-ineligible or unreferred, while successful transplantation resets the trajectory ([[#def-portal]] and the registry cohorts behind the MELD-era analyses — [[immunology/transplant-tumour-immunology]], [[medical-ethics-law/justice-resources]]). The curves are the reason "compensated → decompensated" is the axis of surveillance, referral-timing and palliative-integration decisions ([[public-health/screening]], [[geriatrics-palliative/palliative-care]]), and why the referral question is asked at the first ascitic tap, not the third ([[clinical-skills/clinical-reasoning]]).
+f: 3.78*ln(x) + 11.2*ln(a) + 9.57*ln(b) + 6.43
+x: 1, 30
+y: 0, 50
+sliders: a=1.5:1:4:0.1; b=1:1:4:0.1
+labels: \text{MELD score}
+caption: The MELD score plotted against bilirubin (mg/dL) for chosen values of INR (a) and creatinine (b, mg/dL). Bilirubin acts through a logarithm, so doubling it adds about 2.6 points wherever you start, while a rise in creatinine adds a lot. A simplified teaching illustration, not a clinical calculator.
 :::
 
-::: example The heavy ferritin {#ex-haemochromatosis}
-A 49-year-old man with new type-2 diabetes and arthralgias: ferritin 1450 µg/L, transferrin saturation 78 %, ALT 88, hepatitis serology negative, alcohol 6 units/week, no anaemia; mother had "liver trouble and diabetes".
+### Portal hypertension
+
+::: definition Portal hypertension {#def-portal}
+**Portal hypertension** is raised pressure in the portal venous system. It is measured indirectly as the **hepatic venous pressure gradient** (HVPG), the difference between wedged and free hepatic venous pressures. Normal HVPG is up to 5 mmHg. An HVPG of **10 mmHg or more** is **clinically significant portal hypertension**: it predicts varices and decompensation. Variceal bleeding rarely occurs below 12 mmHg.
+:::
+
+::: theorem Portal pressure is flow times resistance {#thm-portal}
+As in any vessel, portal pressure gradient equals portal blood flow multiplied by resistance to that flow: $\Delta P = Q \times R$. Portal hypertension in cirrhosis results from both an increase in resistance and an increase in flow, and treatments act on one or both.
+:::
+
+::: proof
+**Resistance** rises first. Fibrosis and nodules distort the sinusoids, and activated stellate cells contract while the damaged endothelium makes less nitric oxide, adding a reversible component.
+
+**Flow** rises next. Splanchnic arterioles dilate, because of nitric oxide and other vasodilators that the diseased liver fails to clear, so more blood pours into the portal system. Systemic vasodilatation lowers effective arterial volume, activating the renin–angiotensin–aldosterone and sympathetic systems, which retain sodium and water. This **hyperdynamic circulation** explains ascites and the kidney's vulnerability.
+
+The treatments follow. Non-selective beta-blockers reduce flow, by lowering cardiac output (β1) and allowing splanchnic vasoconstriction (β2 blockade). Carvedilol adds α1 blockade, which reduces intrahepatic resistance. Terlipressin constricts splanchnic arterioles. TIPS bypasses the resistance altogether by connecting the portal and hepatic veins.
+:::
+
+Portal blood seeks lower-pressure routes back to the systemic circulation through **portosystemic collaterals**, at the gastro-oesophageal junction (varices), the umbilicus (caput medusae) and the rectum. Blood bypassing the liver carries ammonia and other toxins into the systemic circulation. Congestion enlarges the spleen, which traps platelets, so a **low platelet count** is often the first clue to cirrhosis.
+
+Current consensus (Baveno VII, 2022) recommends a non-selective beta-blocker, preferably **carvedilol**, for people with compensated cirrhosis and clinically significant portal hypertension, to prevent decompensation. People with medium or large varices who cannot take beta-blockers have endoscopic band ligation. The management of acute variceal bleeding is in [[gastrointestinal/gi-bleeding-cancer]].
+
+### Ascites and spontaneous bacterial peritonitis
+
+**Ascites** is free fluid in the peritoneal cavity. In cirrhosis it results from portal hypertension and sodium retention. A diagnostic paracentesis is performed in everyone with new ascites and in everyone with ascites admitted to hospital. The **serum–ascites albumin gradient** (SAAG) is the serum albumin minus the ascitic albumin. A SAAG of **11 g/L or more** indicates portal hypertension; a lower gradient suggests peritoneal disease such as malignancy or tuberculosis.
+
+Treatment of ascites in cirrhosis follows British Society of Gastroenterology guidance (2020): moderate dietary salt restriction, and **spironolactone**, an aldosterone antagonist, with **furosemide** added if needed. Tense or refractory ascites is drained by **large-volume paracentesis**; when more than 5 L is removed, human albumin solution is given, 8 g per litre removed, to prevent circulatory dysfunction and kidney injury. TIPS is an option for selected people with refractory ascites.
+
+::: definition Spontaneous bacterial peritonitis and other complications {#def-infections-complications}
+- **Spontaneous bacterial peritonitis** (SBP) is infection of ascitic fluid without a surgical source, diagnosed by an ascitic **neutrophil count above 250 cells/mm³**. It often causes few abdominal signs and may present only with confusion, AKI or deterioration. It is treated with antibiotics according to local guidance, with intravenous albumin to reduce the risk of kidney failure.
+- **Hepatic encephalopathy** is brain dysfunction from liver insufficiency and portosystemic shunting, graded clinically from mild confusion (West Haven grade 1) to coma (grade 4). Ammonia is a major contributor.
+- **Hepatorenal syndrome–acute kidney injury** (HRS-AKI) is functional kidney failure in advanced cirrhosis from intense renal vasoconstriction. It is treated with terlipressin and albumin.
+- **Hepatocellular carcinoma** (HCC) arises mainly in cirrhotic livers. People with cirrhosis are offered **ultrasound surveillance every 6 months**, with or without alpha-fetoprotein.
+:::
+
+Hepatic encephalopathy is usually triggered by something. The common precipitants are infection, gastrointestinal bleeding, constipation, dehydration and electrolyte disturbance, sedative drugs and alcohol. Treatment is to find and correct the precipitant, and to give **lactulose**, which acidifies the colon, traps ammonia as ammonium and speeds transit. **Rifaximin**, a poorly absorbed antibiotic, reduces recurrence.
+
+::: example A confused admission with ascites {#ex-ascites}
+A 58-year-old man with alcohol-related cirrhosis, abstinent for a year, is brought in because he has become drowsy and muddled over 2 days. He is afebrile with mild abdominal discomfort. He has tense ascites and a flapping tremor (asterixis). Creatinine has risen from 80 to 150 µmol/L. Diagnostic paracentesis shows an ascitic neutrophil count of 620 cells/mm³; ascitic albumin 9 g/L, serum albumin 29 g/L. Interpret the findings and outline management.
 ::: solution
-**HFE haemochromatosis until proven otherwise (the transferrin-saturation-first rule — [[#def-other-causes]]): confirm with HFE-genotype (C282Y-homozygosity in the great-majority), then stage the damage (elastography-or-MRI-iron-and-fibrosis assessment and the MRI-quantitative-iron option — [[clinical-skills/medical-imaging]]; the diabetes-pancreatic and cardiac-and-gonadal-and-joint evaluations — [[endocrine/diabetes-complications]], [[cardiovascular/heart-failure]], [[endocrine/reproductive-endocrinology]], [[musculoskeletal/bones-joints]]); treat with venesection (the weekly-to-fortnightly induction to the ferritin-target with the haemoglobin-brake — [[blood/haematopoiesis]], [[blood/anaemia]]-adjacent-iron-erythropoiesis physiology [[gastrointestinal/digestion-absorption]]) and the fatigue-and-joint-and-libido-symptoms that often persist despite iron-depletion (counselling the expectations gap — [[clinical-skills/communication]]); eliminate the cofactors (alcohol minimisation, weight and metabolic control, hepatitis-A-and-B vaccination — [[gastrointestinal/liver-function]]'s synthesis-protection logic, [[public-health/vaccination-programmes]]); the family tier (first-degree-relative testing with the cascade-testing logistics and the insurance-and-reproduction counselling — [[genetics/genetic-testing]], [[genetics/mendelian-inheritance]]); and the HCC-surveillance-boundary (cirrhosis-stage surveillance only — [[public-health/screening]], [[gastrointestinal/gi-bleeding-cancer]]).**
+**Step 1: the ascitic fluid.** SAAG $= 29 - 9 = 20$ g/L, which is at least 11, so the ascites is due to portal hypertension. An ascitic neutrophil count of 620 cells/mm³ is above 250: **spontaneous bacterial peritonitis**, even though he has no fever and few abdominal signs.
+
+**Step 2: the confusion.** Drowsiness with asterixis is **hepatic encephalopathy**, here precipitated by infection.
+
+**Step 3: the kidney.** His creatinine has risen by more than 1.5 times baseline, which is AKI. In SBP, AKI may progress to hepatorenal syndrome.
+
+**Step 4: management.** Start antibiotics immediately according to local guidance, and send ascitic fluid in blood culture bottles. Give intravenous albumin, which reduces kidney failure and death in SBP with renal dysfunction. Stop diuretics and nephrotoxic drugs. Give lactulose to produce two to three soft stools a day, and look for other precipitants such as gastrointestinal bleeding. After recovery he needs long-term antibiotic prophylaxis against recurrent SBP and assessment for liver transplantation.
 :::
 :::
 
-::: example The psychiatric admission with jaundice {#ex-wilson}
-A 21-year-old nursing student is sectioned for acute psychosis and slurred, clumsy speech; she is jaundiced; FBC shows Hb 88 with reticulocytes 9 %, Coombs negative; bilirubin 142 with a mixed pattern, ALT 420, ALP only 60, INR 2.1, albumin 30.
+::: warning Normal aminotransferases do not exclude cirrhosis
+In established cirrhosis there may be too few active hepatocytes to release much ALT, so the liver enzymes can be normal or only mildly raised. Clues lie elsewhere: a low platelet count, low albumin, raised INR or bilirubin, an AST:ALT ratio above 1, and signs such as spider naevi or splenomegaly. Use a fibrosis test rather than the ALT to judge severity.
+:::
+
+### Surgery in cirrhosis
+
+People with cirrhosis tolerate surgery poorly. Bleeding, infection, poor wound healing, ascitic leak and post-operative decompensation are all more common, and risk rises steeply with Child–Pugh class and MELD score. Elective surgery is generally safe in Child–Pugh A, needs careful assessment in class B, and is usually avoided in class C. Emergency surgery carries the highest risk.
+
+::: example A cirrhotic awaiting hip replacement {#ex-preop}
+A 66-year-old woman with MASLD cirrhosis is referred for an elective hip replacement. Bilirubin 41 µmol/L, albumin 30 g/L, INR 1.6, mild ascites controlled on spironolactone, no encephalopathy. Calculate her Child–Pugh class and discuss her surgical risk.
 ::: solution
-**Wilson disease until excluded — the "hepatic-plus-neuropsychiatric-plus-Coombs-negative-haemolysis-in-the-young" triad is board-exam classic and ward-level miss ([[#def-other-causes]]): the ALP-bilirubin-mismatch (low ALP relative to injury is the hint — [[gastrointestinal/liver-function]]), and the psychiatric-first-presentation epidemiology (the mislabelled-years history — [[psychiatry/psychotic-disorders]], [[medical-ethics-law/consent-capacity]]-adjacent-capacity-assessment-in-acute-hepatic-encephalopathy-vs-primary-psychiatric-disease [[psychiatry/psychiatric-assessment]]). The workup: **seramiceruleoplasmin-with-caveats-acute-phase-and-protein-loss, 24-hour-urinary-copper, slit-lamp-for-Kayser-Fleischer-rings ([[nervous-system/sensory-systems]]), FBC-and-haptoglobin-and-blood-film for the haemolysis ([[blood/haemoglobin-disorders]]-and-[[blood/anaemia]]), and the biopsy-copper-quantitation-or-genetic-testing when non-invasive tests equivocal ([[pathology/diagnostic-pathology]], [[genetics/genetic-testing]]). Management is a medical emergency when synthetic function is failing (the King's-College-fulminant-Wilson criteria — early transplant-centre transfer, the plasma-exchange-and-MARS-bridging-niche — [[emergency-critical-care/poisoning]]-adjacent-extracorporeal-logic [[gastrointestinal/liver-function]]'s-INR-trajectory, [[surgery/gastrointestinal-surgery]]); the chelation-and-zinc-maintenance-and-neurologic-worsening-monitoring protocol for non-fulminant disease; the copper-related Amenorrhoea-and-hypothyroid-and-renal-tubular-check ([[endocrine/thyroid]], [[renal/tubular-function]]); the lifelong-sibling-screening-and-cascade-testing duty ([[genetics/genetic-testing]]); and the psychiatric-co-management without sedative-encephalopathy-collateral-damage ([[psychiatry/psychotic-disorders]], [[pharmacology/adverse-reactions]]).**
+**Child–Pugh points:** bilirubin 34–50 µmol/L: 2; albumin 28–35 g/L: 2; INR below 1.7: 1; mild, controlled ascites: 2; no encephalopathy: 1. Total $= 2 + 2 + 1 + 2 + 1 = 8$, which is **class B**.
+
+**Risk.** Class B cirrhosis carries a substantially higher risk of complications and death after major surgery than class A. A hip replacement is elective and aims to improve quality of life, so the decision needs a careful, shared discussion of benefits and risks with her, the orthopaedic surgeon, an anaesthetist and a hepatologist.
+
+**Optimisation if surgery goes ahead.** Control ascites beforehand; assess nutrition and frailty; check for varices; avoid nephrotoxic drugs and sedatives; manage blood products according to viscoelastic testing rather than the INR alone, because the INR does not reflect bleeding risk well in cirrhosis; and plan post-operative care in a centre with hepatology support.
 :::
 :::
 
-::: example The cirrhotic awaiting hip replacement {#ex-preop}
-A 64-year-old with compensated alcohol-related cirrhosis (ascites once, now controlled; bilirubin 28, albumin 32, INR 1.4, platelets 96, MELD 12) is listed for total hip replacement for avascular necrosis. Orthopaedics asks: "cleared?"
-::: solution
-**"Cleared" is the wrong question — quantify and optimise ([[#def-portal]]): the bleeding-and-infection-and-decompensation risk is real but scoreable (Child-Pugh-and-MELD-and-the-NSQIP-liver-indices; MELD-12-carries-a-multi-fold-surgical-mortality-risk and the elective-surgery-deferral-versus-proceed debate — [[surgery/perioperative-care]]); the optimisation window (abstinence-even-short-pre-op-intervals-help-and-muscle-and-nutrition-build-up — [[gastrointestinal/clinical-nutrition]], [[psychiatry/substance-use]]; ascites-and-hyponatraemia-and-renal-function-optimisation — [[renal/water-sodium]]; vaccination-and-dental-and-skin-sepsis-decisions — [[public-health/vaccination-programmes]]); the INR-1.4-is-not-a-contraindication-and-plasma-is-not-the-plan argument (rebalanced-haemostasis and viscoelastic-testing-guided transfusion, the platelet-threshold reasoning and TEG-intraoperative-availability — [[blood/haemostasis-bleeding]], [[blood/transfusion]]); the intraoperative-and-postoperative physiology (avoid-nephrotoxins-and-hypovolaemia-and-constipation-and-sedative-load; the encephalopathy-and-AKI-and-SBP-triggers cluster in the first post-operative fortnight — [[renal/acute-kidney-injury]], [[#def-infections-complications]], [[pharmacology/adverse-reactions]]); the VTE-prophylaxis-paradox-continues (cirrhosis-and-immobility-and-arthroplasty-equal-high-risk-despite-the-INR — [[blood/thrombosis-anticoagulation]]); and the honest joint consultation (the risk-numbers, the deferral-conditions-if-decompensated, and the documented goals — [[clinical-skills/communication]], [[surgery/perioperative-care]], [[clinical-skills/records-handover]]).**
-:::
-:::
+## Acute liver failure and transplantation
+
+**Acute liver failure** is severe liver injury with coagulopathy (INR at least 1.5) and **hepatic encephalopathy** in a person without pre-existing liver disease, developing over days to weeks. In the UK, **paracetamol overdose** is the commonest cause. Others include viral hepatitis, idiosyncratic drug reactions, autoimmune hepatitis, Wilson disease, ischaemia and pregnancy-related liver disease. Acetylcysteine is given for paracetamol toxicity and is also used in some non-paracetamol cases. Management of poisoning is in [[emergency-critical-care/poisoning]].
+
+People with acute liver failure should be discussed early with a specialist liver unit, because they can deteriorate within hours. Complications include cerebral oedema, infection, hypoglycaemia, kidney failure and multiorgan failure. Criteria such as the **King's College criteria** identify those unlikely to survive without transplantation.
+
+**Liver transplantation** is indicated for acute liver failure meeting transplant criteria, decompensated cirrhosis with a poor predicted survival, HCC within agreed size and number criteria, and some metabolic diseases. Survival is good: in the UK, most recipients are alive at 5 years. The limiting factors are organ supply, lifelong immunosuppression and recurrence of some diseases. People with alcohol-related liver disease are assessed for transplantation in the same way as others, including support for sustained abstinence.
 
 ::: quiz
-SAAG is calculated as:
-- [ ] Ascitic-fluid albumin minus serum albumin
-- [x] Serum albumin minus ascitic-fluid albumin; ≥11 g/L indicates portal hypertension
-- [ ] Serum protein divided by ascitic protein
-- [ ] Ascitic LDH over serum LDH
+A 45-year-old woman with cirrhosis has ascites. Ascitic albumin 12 g/L, serum albumin 18 g/L, ascitic neutrophils 90 cells/mm³. Which statement is correct?
+- [ ] The SAAG of 6 g/L shows the ascites is not due to portal hypertension
+- [x] The SAAG of 6 g/L is low, so another cause such as peritoneal malignancy or tuberculosis should be considered
+- [ ] The neutrophil count confirms spontaneous bacterial peritonitis
+- [ ] A low SAAG is typical of cirrhotic ascites
 ::: solution
-**The gradient works because portal pressure pushes protein-poor water into the peritoneum — high gradient (≥11 g/L) in cirrhosis, cardiac ascites and Budd-Chiari; low gradient in peritoneal disease (TB, carcinomatosis, nephrotic) — [[#ex-ascites]], [[#def-portal]], [[renal/urinary-tract]]-adjacent-nephrotic-protein-loss [[gastrointestinal/clinical-nutrition]]; the total protein then separates cardiac (high) from cirrhotic (low), and the same Starling arithmetic governs the oedema chapters — [[gastrointestinal/digestion-absorption]] and [[cardiovascular/heart-failure]].**
+SAAG $= 18 - 12 = 6$ g/L, below 11. A low gradient argues against portal hypertension as the cause, which is unexpected in cirrhosis, so peritoneal disease (malignancy, tuberculosis) or other causes such as nephrotic syndrome, pancreatitis or serositis should be sought; occasionally two causes coexist. The neutrophil count of 90 is below 250, so SBP is not present.
 :::
 :::
 
 ::: history
-**Cirrhosis's long nosology (Laennec's 1819 post-mortem-kitchen description of the "hobnail" liver; the 1950s World-Gastroenterology-Congress brawl over the protein-deficiency versus hepatitis theories, later settled only partly in favour of each — [[public-health/global-health]]'s nutritional-era echo); the alcohol-disease-naming politics (the "alcoholic cirrhosis" label and its therapeutic-nihilism consequences — the modern alcohol-associated-liver-disease renaming movement, [[psychiatry/substance-use]], [[clinical-skills/communication]]); Trousseau's 1865 "bronze diabetes" and the 1996-HFE-gene identification (the genotype-era screening debate — [[public-health/screening]]); Wilson's 1912 progressive-lenticular-degeneration and Cumings's copper theory ([[genetics/mendelian-inheritance]]); the autoimmune-hepatitis era (the 1950s-60s gammaglobulin-infusion disasters reversed by the corticosteroid-trials — [[pharmacology/adverse-reactions]]); the transplant lineage (Starzl's 1963 canine-then-human liver grafts; the piggyback and living-donor refinements — [[immunology/transplant-tumour-immunology]], [[surgery/gastrointestinal-surgery]]); the hepatitis-B-vaccine-then-hepatitis-C-cure arc ([[microbiology/viruses]], [[public-health/vaccination-programmes]], [[microbiology/antimicrobials]]'s DAA chemistry); the MELD-allocation-implementation controversies ([[medical-ethics-law/justice-resources]]); and the MASLD-consensus renaming of 2023 ([[gastrointestinal/liver-disease]]'s own nomenclature-note — the language-matters argument [[clinical-skills/communication]]).**
+In 1965 Baruch Blumberg found an antigen in the blood of an Aboriginal Australian man, the "Australia antigen", which was later shown to be the surface protein of hepatitis B virus. This led to diagnostic tests and the first hepatitis B vaccines, and Blumberg shared the 1976 Nobel Prize. In 1989 Michael Houghton and colleagues at Chiron, working with Daniel Bradley, cloned the genome of the virus responsible for most "non-A, non-B" hepatitis, naming it hepatitis C. Harvey Alter, Michael Houghton and Charles Rice received the 2020 Nobel Prize for this work. In surgery, Thomas Starzl performed the first human liver transplant in Denver in 1963 and the first with prolonged survival in 1967; Roy Calne in Cambridge developed the European programme and introduced ciclosporin immunosuppression in the late 1970s.
+:::
+
+::: summary
+- Alcohol, metabolic dysfunction and viral hepatitis cause most liver disease; fibrosis stage determines prognosis.
+- MASLD is fatty liver with cardiometabolic risk factors; treatment centres on weight loss and risk factor control.
+- Severe alcoholic hepatitis is identified by scores such as the Maddrey discriminant function (32 or more); abstinence and nutrition are central.
+- Hepatitis B is suppressed by antivirals and prevented by vaccination; hepatitis C is curable with direct-acting antivirals.
+- Autoimmune hepatitis, PBC, PSC, haemochromatosis, Wilson disease and alpha-1 antitrypsin deficiency each have a characteristic test pattern.
+- Portal hypertension (HVPG 10 mmHg or more is clinically significant) drives varices, ascites and splenomegaly; carvedilol reduces decompensation.
+- Tap every ascites admission: a SAAG of 11 g/L or more means portal hypertension, and neutrophils above 250 cells/mm³ mean SBP.
+- Child–Pugh and MELD grade severity; acute liver failure and decompensated cirrhosis need early specialist and transplant assessment.
 :::
 
 ## Where this leads
 
-Test interpretation in [[gastrointestinal/liver-function]]; the variceal-bleeding protocol in [[gastrointestinal/gi-bleeding-cancer]]; biliary intervention in [[gastrointestinal/pancreas-biliary]]; nutrition in cirrhosis in [[gastrointestinal/clinical-nutrition]]; the renal physiology of ascites in [[renal/water-sodium]] and [[renal/acute-kidney-injury]]; allocation ethics in [[medical-ethics-law/justice-resources]]; transplant immunology in [[immunology/transplant-tumour-immunology]].
-
-::: exercise Decide on steroids {level=2}
-A 45-year-old has severe alcoholic hepatitis (discriminant score high, bilirubin 340, INR 1.8) with HE grade 2 and no GI bleed; cultures negative at 12 hours. Do you start prednisolone?
-::: solution
-**The guarded-yes pathway ([[#def-causes]]): exclude-and-treat the infection first (the negative-at-12-hours-not-48-hours caveat — [[#def-infections-complications]], [[microbiology/laboratory-diagnosis]]); the contraindication sweep (active-GI-bleed, renal-failure-uncontrolled, HBV-uncovered; the pancreatitis-and-hepatotoxic-drugs audit — [[gastrointestinal/pancreas-biliary]], [[microbiology/viruses]]); the score-based treatment with the day-7 Lille stop-rule decision (continuing steroids past non-response harms — [[pharmacology/dosing-principles]]); the abstinence-therapy-engagement-without-withholding-treatment (the treatment-contraindicated-in-active-drinking-policies evidence-gap and the equity argument — [[medical-ethics-law/justice-resources]], [[psychiatry/substance-use]]); the nutrition-first parallel (the high-protein-high-calorie target with the thiamine-and-folate-and-phosphate-repletion before feeding — [[gastrointestinal/clinical-nutrition]], [[nervous-system/dementia-neurodegeneration]]); and the transplant-for-selected-steroid-refractory-severe-alcoholic-hepatitis-centres-programme and its strict-selection ethics ([[immunology/transplant-tumour-immunology]], [[medical-ethics-law/justice-resources]]).**
-:::
-:::
-
-::: exercise Spot the ACLF {level=2}
-Week 3 of an admission for SBP, a cirrhotic becomes hypotensive with rising creatinine, bilirubin 220 and INR 2.6; blood cultures grow ESBL E. coli. Name the syndrome, the drivers and the decision-making shift.
-::: solution
-**Acute-on-chronic liver failure (infection-precipitated organ failures with the immune-paralysis-and-metabolic-reprogramming pathophysiology — [[#def-infections-complications]], [[immunology/innate-immunity]]): the drivers-to-break (source-control-antibiotics-for-ESBL-with-senior-microbiology-input — [[microbiology/antimicrobials]], [[infectious-diseases/stewardship-outbreaks]]; the noradrenaline-and-albumin-and-consider-renal-replacement-ICU-care — [[emergency-critical-care/critical-care]], [[emergency-critical-care/shock-fluids]], [[renal/acute-kidney-injury]]; the terlipressin-eligibility-question — [[#def-portal]]); the trajectory numbers (ACLF-grade-2-3 mortality climbing steeply — the ICU-and-transplant-centre-conversation-now logic — [[#def-portal]]-widget-[[gastrointestinal/liver-function]]'s-score-set); and the decision-making shift (transplant-team-early-referral-for-ACLF-reversal-window-or-explicit-ceiling-of-care-documentation-and-family-involvement — [[immunology/transplant-tumour-immunology]], [[medical-ethics-law/end-of-life-ethics]], [[geriatrics-palliative/palliative-care]], [[clinical-skills/records-handover]]).**
-:::
-:::
-
-::: summary
-- Fibrosis from any cause converges on sinusoidal hypertension; the compensated-to-decompensated transition is the prognosis-defining step.
-- Cause-specific therapy changes the natural history: weight and metabolic control for MASLD, abstinence for alcohol, venesection for haemochromatosis, chelation for Wilson, immunosuppression for autoimmune hepatitis, cure for hepatitis C, suppression for B.
-- Every decompensation is a search: ascites needs a diagnostic tap, encephalopathy needs a precipitant, AKI needs a volume-and-drug audit, and infection needs early cultures-and-antibiotics.
-- Prognosis is tracked with composite scores; referral for transplantation is a timing decision made at the first decompensation, not the last.
-- Vaccinate, screen for HCC where indicated, protect bone and muscle, and run palliative care in parallel for symptom burden and honest goals.
-:::
+Upper gastrointestinal bleeding from varices is managed in [[gastrointestinal/gi-bleeding-cancer]]. Biliary causes of liver disease are in [[gastrointestinal/pancreas-biliary]], and nutritional care in cirrhosis in [[gastrointestinal/clinical-nutrition]]. The virology of hepatitis viruses is in [[microbiology/viruses]], alcohol use disorders in [[psychiatry/substance-use]], and paracetamol poisoning in [[emergency-critical-care/poisoning]].
 
 ## Exercises
 
-::: exercise Grade and hunt {level=1}
-A cirrhotic patient has sporadic disorientation and flapping tremor. Grade it and list six precipitants to exclude tonight.
+::: exercise Read the hepatitis B serology {level=1}
+Interpret each pattern: (a) HBsAg negative, anti-HBc negative, anti-HBs positive; (b) HBsAg negative, anti-HBc positive, anti-HBs positive; (c) HBsAg positive for 9 months, anti-HBc IgG positive, anti-HBs negative.
 ::: solution
-**Grade-3-or-4 hepatic encephalopathy by West-Haven criteria (the flapping asterixis with impaired consciousness — [[#def-portal]]): infection (SBP, urine, chest — [[#def-infections-complications]]); GI bleeding ([[gastrointestinal/gi-bleeding-cancer]]); constipation and dehydration ([[renal/acute-kidney-injury]]); drugs (benzodiazepines, opioids, alcohol-withdrawal-cover — [[pharmacology/adverse-reactions]], [[psychiatry/substance-use]]); electrolyte and sodium shifts ([[renal/water-sodium]], [[renal/potassium-calcium-phosphate]]); and the structural-or-hypoglycaemic mimics (subdural, stroke, low glucose — [[nervous-system/stroke]], [[emergency-critical-care/acute-assessment]]). Treat lactulose-titration-and-rifaximin while hunting ([[microbiology/antimicrobials]]).**
+(a) Immunity from **vaccination**: only the surface antibody is present. (b) Immunity from **past infection that has cleared**. (c) **Chronic hepatitis B infection**: HBsAg persisting beyond 6 months. Further tests (HBeAg, HBV DNA, ALT, fibrosis assessment) decide on treatment.
 :::
 :::
 
-::: exercise Choose the prophylaxis {level=1}
-Which cirrhotic patients need (a) a non-selective beta-blocker, (b) SBP secondary prophylaxis, (c) HCC ultrasound surveillance?
+::: exercise Name the disease {level=1}
+Match each finding with a disease: (a) anti-mitochondrial antibody; (b) beaded bile ducts on MRCP in a man with ulcerative colitis; (c) low caeruloplasmin and Kayser–Fleischer rings; (d) transferrin saturation 82%; (e) raised IgG and anti-smooth muscle antibody.
 ::: solution
-**(a) Clinically-significant-portal-hypertension or medium-large-varices (or high-risk small varices) — the banding-alternative and the hypotension-AKI-bleed caveats ([[#def-portal]], [[cardiovascular/hypertension]]-adjacent beta-blocker pharmacology, [[gastrointestinal/gi-bleeding-cancer]]); (b) after any SBP episode (and the primary-prophylaxis low-protein-with-advanced-failure niche) — [[#def-infections-complications]]; (c) all cirrhotic patients and the selected high-grade-fibrosis groups (hepatitis-B-and-haemochromatosis boundaries) — [[public-health/screening]], [[#ex-haemochromatosis]].**
+(a) Primary biliary cholangitis. (b) Primary sclerosing cholangitis. (c) Wilson disease. (d) Haemochromatosis (or other iron overload). (e) Autoimmune hepatitis.
 :::
 :::
 
-::: exercise Interpret the coagulopathy {level=2}
-An INR of 1.8 in a stable cirrhotic is called "auto-anticoagulated". Explain why that phrase is dangerous before (a) a liver biopsy and (b) an admission for variceal bleeding.
+::: exercise Why lactulose? {level=1}
+Explain how lactulose reduces hepatic encephalopathy, and list four common precipitants that should be sought in a person with cirrhosis who becomes confused.
 ::: solution
-**Rebalanced haemostasis: pro- and anti-factor reductions cancel, the INR reflects low factor VII but not thrombin-generation reserve, and portal-VWF-and-factor-VIII rise offset it ([[#def-portal]], [[blood/haemostasis-bleeding]], [[gastrointestinal/liver-function]]'s factor-VIII-endothelium note): (a) biopsy-risk assessment uses viscoelastic testing and procedural technique, not INR-chasing plasma ([[blood/transfusion]], [[clinical-skills/patient-safety]]); (b) "auto-anticoagulation" never protects — variceal haemorrhage occurs with the same INR, and the bleeding protocol plus rebalanced-platelet-and-fibrinogen arithmetic governs resuscitation ([[gastrointestinal/gi-bleeding-cancer]]); also flag the preserved-or-elevated VTE risk during immobility ([[blood/thrombosis-anticoagulation]]).**
+Lactulose is fermented by colonic bacteria to organic acids, which lower colonic pH. Ammonia (NH₃) is converted to ammonium (NH₄⁺), which is poorly absorbed and is excreted; the laxative effect also shortens the time for ammonia production and absorption. Common precipitants: infection (including SBP), gastrointestinal bleeding, constipation, dehydration or electrolyte disturbance (often from diuretics), and sedative drugs or alcohol.
 :::
 :::
 
-::: exercise Manage the fluid {level=2}
-Tense ascites with Na 126 and creatinine 140 on furosemide 80 mg and spironolactone 200 mg: give the next 48 hours.
+::: exercise Calculate the SAAG {level=2 check="22"}
+A person with ascites has serum albumin 30 g/L and ascitic albumin 8 g/L. Calculate the serum–ascites albumin gradient in g/L and interpret it.
+::: hint
+Subtract the ascitic albumin from the serum albumin.
+:::
 ::: solution
-**Stop-or-hold the diuretics and re-expand judiciously ([[renal/water-sodium]], [[renal/acute-kidney-injury]] — the hepatorenal-provocation warning); exclude SBP-by-tap and bleed-and-infection-screen ([[#def-infections-complications]]); the large-volume-paracentesis-with-albumin for symptom relief and renal-protection dosing ([[#def-portal]]); the potassium-and-creatinine monitoring cadence ([[renal/potassium-calcium-phosphate]]); the NSAID-and-aminoglycoside-and-contrast-avoidance list ([[pharmacology/adverse-reactions]], [[clinical-skills/medical-imaging]]'s contrast rules); the hyponatraemia reading (dilutional; fluid-restriction-when-severe-and-symptomatic-logic with the too-fast-correction guard — [[renal/water-sodium]], [[nervous-system/motor-systems]]'s osmotic-demyelination teaching); and the transplant-referral-and-TIPS-versus-serial-paracentesis strategy conversation ([[immunology/transplant-tumour-immunology]], [[medical-ethics-law/justice-resources]], [[geriatrics-palliative/palliative-care]]).**
+SAAG $= 30 - 8 = 22$ g/L. This is 11 g/L or more, so the ascites is due to **portal hypertension**, most often cirrhosis. Heart failure and Budd–Chiari syndrome also produce a high gradient.
 :::
 :::
 
-::: exercise Judge the hepatitis {level=2}
-A jaundiced, febrile patient after 6 weeks of nitrofurantoin for recurrent UTI: ALT 1200, IgG raised, ANA positive, eosinophils raised, bile ducts normal on imaging. What is the diagnosis and its traps?
+::: exercise Albumin after paracentesis {level=2 check="64"}
+During large-volume paracentesis, 8 L of ascites is removed. Using the British guidance of 8 g of albumin per litre removed when more than 5 L is drained, how many grams of albumin should be given? Why is it given?
+::: hint
+Multiply the volume removed by the dose per litre.
+:::
 ::: solution
-**Drug-induced liver injury with an autoimmune-phenotype (nitrofurantoin's classic chronic picture — the female-predominance and autoantibody positivity that invite the autoimmune-hepatitis label — [[#def-causes]], [[immunology/autoimmunity]], [[gastrointestinal/liver-function]]'s R-ratio): the traps are stopping-at-infection-treatment-too-late (Hy's-law risk — [[pharmacology/adverse-reactions]]); the biopsy when drug-versus-autoimmune matters (plasma-cell-rich interface hepatitis favours autoimmune — [[pathology/diagnostic-pathology]]); the rechallenge-never-and-the-record-and-report habit ([[clinical-skills/records-handover]], [[pharmacology/drug-development-prescribing]]); the alternative-explanations sweep (viral, Wilson under-40, ischaemic, biliary — [[microbiology/viruses]], [[#def-other-causes]]); the steroid-question when stopping fails to reverse the autoimmune-pattern ([[#def-other-causes]]); and the drug-causality-documentation that saves the next clinician months ([[clinical-skills/clinical-reasoning]], [[pharmacology/patient-variation]]'s-HLA-mechanism-note).**
+$8 \times 8 = 64$ g of albumin. Removing a large volume of ascites causes a further fall in effective arterial volume and activation of vasoconstrictor systems, known as post-paracentesis circulatory dysfunction. This can cause hyponatraemia, kidney injury and reaccumulation of ascites. Albumin expands the circulating volume and reduces these complications.
 :::
 :::
 
-::: exercise Redesign the service {level=3}
-A district hospital notes late transplant referrals and high SBP-mortality. Build a liver-decompensation bundle and its audit.
+::: exercise Judge severity in alcoholic hepatitis {level=2 check="73"}
+A 41-year-old woman with alcoholic hepatitis has a prothrombin time of 24 seconds (control 12 seconds) and a bilirubin of 300 µmol/L. Calculate the Maddrey discriminant function, rounded to the nearest whole number, and interpret it.
+::: hint
+Convert bilirubin to mg/dL by dividing by 17.1.
+:::
 ::: solution
-**The bundle (each with a named owner and an evidence hook): mandatory-diagnostic-paracentesis-on-all-cirrhotic-admissions-with-ascites-and-PMN-counting-protocol ([[#def-infections-complications]], [[clinical-skills/laboratory-tests]]); the time-to-antibiotics-and-albumin target ([[infectious-diseases/fever-sepsis]], [[renal/acute-kidney-injury]]); the encephalopathy-precipitant-checklist and the driving-counselling-documented-item ([[#def-portal]], [[medical-ethics-law/professionalism-regulation]]-adjacent-licensing-duty); the AKI-and-nephrotoxin-and-diuretic-hold rules ([[renal/water-sodium]], [[pharmacology/adverse-reactions]]); the nutrition-and-abstinence-therapy joint-clinic ([[gastrointestinal/clinical-nutrition]], [[psychiatry/substance-use]]); the variceal-screening-and-prophylaxis register ([[#def-portal]], [[gastrointestinal/gi-bleeding-cancer]]); the vaccination-and-HCC-surveillance registers ([[public-health/vaccination-programmes]], [[public-health/screening]]); the transplant-referral triggers at first-decompensation and at MELD-score-thresholds with a no-blame-early-conversation script ([[immunology/transplant-tumour-immunology]], [[medical-ethics-law/justice-resources]], [[geriatrics-palliative/palliative-care]]); and the audit panel (SBP-time-to-tap-and-time-to-antibiotics, 30-and-90-day readmission-and-ACLF-mortality, transplant-referral-stage-at-referral, HCC-surveillance-uptake-and-stage-at-diagnosis, and the patient-reported-symptom-burden — [[clinical-skills/patient-safety]], [[public-health/health-systems-economics]]).**
+Bilirubin $= 300/17.1 = 17.54$ mg/dL. DF $= 4.6 \times (24 - 12) + 17.54 = 55.2 + 17.54 = 72.74$, which rounds to **73**. This is well above 32, indicating **severe alcoholic hepatitis** with a high risk of death in the next month. She needs specialist care, assessment for infection, nutritional support, management of withdrawal, and a specialist decision about corticosteroids, whose benefit is at most short-term.
+:::
+:::
+
+::: exercise Compensated or decompensated? {level=3}
+A 55-year-old man with hepatitis C cirrhosis was cured with antivirals 3 years ago. He feels well. Platelets 95 × 10⁹/L, liver stiffness 28 kPa, no ascites and no history of bleeding, and endoscopy shows small varices. What stage of disease is he in, does cure of hepatitis C remove his risks, and what follow-up does he need?
+::: hint
+Think about portal hypertension and cancer risk after the cause is removed.
+:::
+::: solution
+**Stage:** **compensated cirrhosis** with **clinically significant portal hypertension**, suggested by the low platelets, high liver stiffness and the presence of varices.
+
+**Does cure remove risk?** Viral cure stops the main driver of injury, and fibrosis and portal pressure often improve over years. But established cirrhosis and portal hypertension may persist, and the **risk of hepatocellular carcinoma remains** after cure, though it is lower.
+
+**Follow-up:** a non-selective beta-blocker, preferably carvedilol, to reduce the risk of decompensation, in line with Baveno VII; **6-monthly ultrasound surveillance for HCC**; periodic assessment of liver function; vaccination against hepatitis A and B and pneumococcus; and advice on alcohol, weight and drugs to avoid. Re-infection is possible with renewed exposure, so harm-reduction advice should be offered where relevant.
+:::
+:::
+
+::: exercise Interpret a MELD score {level=3 check="19"}
+A 60-year-old man with cirrhosis has bilirubin 4 mg/dL, INR 2.0 and creatinine 1.0 mg/dL. Calculate his MELD score using [[#eq-meld]], rounded to the nearest whole number. What happens to the score if his creatinine rises to 2.0 mg/dL, and why is kidney function weighted so heavily?
+::: hint
+$\ln 4 = 1.386$, $\ln 2 = 0.693$ and $\ln 1 = 0$.
+:::
+::: solution
+$\text{MELD} = 3.78 \times 1.386 + 11.2 \times 0.693 + 9.57 \times 0 + 6.43 = 5.24 + 7.76 + 0 + 6.43 = 19.43$, which rounds to **19**.
+
+If creatinine rises to 2.0 mg/dL, the creatinine term becomes $9.57 \times 0.693 = 6.63$, and the score rises to about 26. A single doubling of creatinine adds more than a doubling of bilirubin ($3.78 \times 0.693 = 2.6$ points).
+
+Kidney function is weighted heavily because, in advanced cirrhosis, a rising creatinine usually reflects the circulatory failure of portal hypertension (the path towards hepatorenal syndrome), and it is one of the strongest predictors of short-term death. Note also that creatinine overestimates kidney function in people with low muscle mass, which is common in cirrhosis, so a "normal" creatinine can be falsely reassuring.
 :::
 :::

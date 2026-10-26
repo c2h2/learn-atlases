@@ -1,144 +1,327 @@
-营养学是这样一个医学分支：最常见的错误不开处方，第二常见的错误危险地开始处方。**肠道是一个不用就萎缩、喂养就愈合的器官；饥饿带一个代谢特征（再喂养的电解质崩落）、与糖尿病酮症酸中毒同样真实；而医院营养不良表现得像一场每个病房都见过却很少有人统计的流行。**本章是给患者安全喂食的生理学。
+营养不良在医院和社区中都很常见，也很容易被忽视。在英国，筛查显示约三分之一的住院成人有营养不良风险，养老院中的比例更高。营养不良的人伤口愈合慢，感染多，肌力下降，住院时间更长，死亡的可能性也更大。然而营养不良常常没有被记录下来，因为体重正常甚至偏高的人也可能营养不良，而且疾病本身就会降低食欲。
 
-本章涵盖营养评估与缺乏、肠内营养、肠外营养与肠衰竭、及再喂养综合征的危害。
+在另一端，肥胖影响英格兰约四分之一的成年人，推动2型糖尿病、心血管疾病、脂肪性肝病和许多癌症的发生。这两个问题都属于营养问题，也越来越多地用内科和外科手段治疗。
 
-## 评估
+本章介绍营养评估和筛查、饥饿的生理、如何估算需要量、再喂养综合征、肠内和肠外营养、肠衰竭，以及肥胖的内科处理。它以[[gastrointestinal/digestion-absorption]]中的消化吸收和[[cell-biochemistry/nutrition]]中的营养素生物化学为基础。
 
-::: definition 需求、筛查与缺乏 {#def-assessment}
-**需求（约每日每公斤25-30千卡、每日每公斤1.0-1.5克蛋白、随损伤与脓毒症上升——重症的代谢亢进对自噬之争——[[gastrointestinal/clinical-nutrition]]自己的时相逻辑；水与电解质的算术——[[renal/water-sodium]]；下面的微量营养素台账）。筛查为何每次入院都要做一个：MUST工具与主观整体评估、及国家工具的双胞胎；营养师转诊触发项；“体重曲线与白蛋白不是一个诊断”的纠正——[[clinical-skills/laboratory-tests]]、邻近[[geriatrics-palliative/polypharmacy]]的抑郁与牙齿检查——[[psychiatry/mood-disorders]]、[[nervous-system/sensory-systems]]；口腔健康与义齿及吞咽的第一小时基本功（[[clinical-skills/physical-examination]]）。营养不良定义（GLIM标准把“摄入减少加体重下降加功能下降”正式化；肌少症的肌肉丢失作为预测一切的那个结局——[[geriatrics-palliative/ageing-frailty]]）。缺乏地图（蛋白能量营养不良表现为消瘦型消耗、对水肿型伴低白蛋白与“漆皮”皮炎——全球健康的二元对与医院水肿型喂养不当变异——[[public-health/global-health]]、[[public-health/prevention-promotion]]）；硫胺素（Wernicke-Korsakoff急症与“先葡萄糖后硫胺素”神话的破除顺序——[[nervous-system/dementia-neurodegeneration]]、[[psychiatry/substance-use]]、[[emergency-critical-care/acute-assessment]]；再喂养情境的预防剂量）；维生素C（花园与茶与罐头刀的坏血病伴毛囊周围出血与螺旋状毛及伤口愈合不良——[[surgery/wounds-surgical-infection]]、[[musculoskeletal/skin]]、邻近[[blood/haemostasis-bleeding]]的血管脆性、及[[public-health/determinants-inequalities]]的食物贫困框定）；维生素D与钙（骨软化与肌病图像——[[endocrine/bone-calcium]]）；维生素A（夜盲与干眼病、及补充重启的算术——[[nervous-system/sensory-systems]]、[[public-health/global-health]]）；维生素K（可纠正的国际标准化比值——[[gastrointestinal/liver-function]]、[[blood/haemostasis-bleeding]]）；维生素B12与叶酸（[[gastrointestinal/digestion-absorption]]一课的贫血神经病变配对、及二甲双胍与质子泵抑制剂及膳食原因）；铁（地址规则与炎症的铁调素混杂——[[blood/anaemia]]、[[immunology/innate-immunity]]）；微量元素（锌——皮疹与腹泻及脱发肢端皮炎图像及伤口愈合的主张、铜——贫血中性粒细胞减少及模仿维生素B12缺乏的脊髓病、硒——心肌病及肠外营养遗漏史——[[cardiovascular/heart-failure]]、[[pathology/environmental-pathology]]）；及脂溶性对水溶性的药代动力学逻辑、它能预测谁先耗尽（[[gastrointestinal/digestion-absorption]]的吸收地址、[[pharmacology/absorption-distribution]]）。**
+## 饥饿生理
+
+人体有三种燃料储备。肝内的**糖原**可提供约一天的葡萄糖。**脂肪**是最大的储备，体重正常的人足够维持数周。**蛋白质**根本不是储备；用作燃料的每一克都来自肌肉、酶或其他正在工作的组织。
+
+::: theorem 饥饿使机体从葡萄糖转向酮体以节约蛋白质 {#thm-starvation}
+在长时间禁食中，机体逐步减少对葡萄糖的利用，增加对脂肪来源燃料的利用。到第一周末，脑的大部分能量来自**酮体**，这减少了由氨基酸合成葡萄糖的需要，从而减缓肌肉蛋白的丢失。
 :::
 
-::: definition 再喂养综合征 {#def-refeeding}
-**机制（饥饿切换到脂肪与酮体燃烧、细胞内磷酸盐储备耗竭而血清水平近正常；重新引入碳水化合物触发胰岛素、把磷酸盐与钾及镁驱入细胞内、并伴钠水潴留与硫胺素消耗——2-5天的电解质雪崩：伴呼吸肌衰竭与心律失常及横纹肌溶解的低磷血症；带其心律失常与补不抵抗算术的低钾与低镁；伴心衰的液体转移；Wernicke的触发项；[[renal/potassium-calcium-phosphate]]的替代药理学、[[cardiovascular/arrhythmias]]、[[physiology/muscle]]的三磷酸腺苷化学、[[cell-biochemistry/energy-metabolism]]）。高风险标准（体质指数低于约16-18.5地带、3-6个月内体重下降超过10-15%、摄入极少或无超过7-10天、基线电解质低、加上酒精与手术及化疗的修正项；中等风险层）；规程（在再喂养之前与之中检查并补充电解质及硫胺素及多种维生素；从低热量开始缓慢增加、带每日然后每周两次的监测；心电与液体平衡纪律；现代较高起始热量的试验及其安全条件、及“最快而非最慢的安全”之争——[[epidemiology-ebm/randomised-trials]]）；临床情境（神经性厌食的再喂养——[[psychiatry/eating-personality-disorders]]；年长的内科住院患者；减重与术后患者——[[surgery/perioperative-care]]；姑息恶病质悖论、在那里喂养不能逆转轨迹——[[geriatrics-palliative/palliative-care]]）；及团队规则（营养师书写的再喂养计划与护士监测的电解质时间表作为避免“从未发生事件”的架构——[[clinical-skills/patient-safety]]、[[clinical-skills/records-handover]]）。**
+::: proof
+禁食一夜后，胰岛素下降，胰高血糖素上升。肝分解糖原并开始**糖异生**，利用乳酸、甘油和来自肌肉的氨基酸。脑和红细胞起初依赖葡萄糖，因此禁食早期每天要消耗相当多的蛋白质。
+
+随着禁食继续，低胰岛素使脂解释放脂肪酸，大多数组织直接利用脂肪酸。肝氧化脂肪酸，把乙酰辅酶A转化为**酮体**（乙酰乙酸和β-羟丁酸）。几天之内，血酮升高到足以被脑摄取利用。脑对葡萄糖的需求下降，由氨基酸进行糖异生的需要也随之下降，尿氮丢失减少。静息能量消耗也下降，部分是由于甲状腺激素活化减少。
+
+疾病改变了这种适应。在脓毒症、创伤和大手术中，应激激素和细胞因子无论能量摄入如何都会驱动蛋白质分解，酮症也被削弱。危重患者即使有喂养也会迅速丢失肌肉，这就是为什么急性疾病中的营养只能减少丢失，而不能完全防止丢失。
 :::
 
-## 喂养管与输注
+这种适应也解释了再喂养为什么有风险。饥饿期间，细胞内的磷酸盐、钾、镁和硫胺素储备被耗竭，即使血液水平看起来正常。喂养会突然逆转激素状态。
 
-::: definition 肠内营养 {#def-enteral}
-**格言（“如果肠道能用就用它”——黏膜完整性与管道通畅及免疫与代谢成本的论证；让早期滋养喂养然后升级进入常规的重症试验——CALORIES与EPaNIC与NUTREA比较——[[emergency-critical-care/critical-care]]）。通路（短期的鼻胃管带位置验证与误置损伤史及二氧化碳波形或X线规则——[[clinical-skills/patient-safety]]；高误吸风险或胃排空延迟时用幽门后与鼻空肠——[[gastrointestinal/oesophagus-stomach]]的胃轻瘫节；经皮内镜胃造口与放射引导下胃造口及手术空肠造口、带早期脱管与埋藏保险杠及结肠胃瘘并发症、及造口护理教学——[[surgery/gastrointestinal-surgery]]）。方案（完整蛋白对肽基对要素型配方选择——[[cell-biochemistry/proteins-enzymes]]的PepT1吸收课；持续对推注喂养带误吸之问；纤维添加逻辑；给药陷阱——可压碎对液体对缓释剂毁损、及苯妥英与氟喹诺酮及左甲状腺素与喂养剂的结合相互作用——[[pharmacology/absorption-distribution]]、[[pharmacology/drug-receptor]]）。监测与并发症（胃残余量之争与促动力选项——[[gastrointestinal/oesophagus-stomach]]；腹泻多因素伴艰难拟梭菌及缓泻剂及速率——[[microbiology/antimicrobials]]、[[gastrointestinal/digestion-absorption]]；误吸预防的抬高床头与口腔护理——[[respiratory/respiratory-infections]]及呼吸机相关肺炎包裹[[infectious-diseases/healthcare-infections]]；管道堵塞与冲洗纪律；代谢轨道——葡萄糖胰岛素方案与电解质及再喂养接口[[#def-refeeding]]）。按疾病的用途（卒中路径——早期正式吞咽评估与先鼻胃喂养、若吞咽困难持续则2-3周后改经皮胃造口的决定、及昏迷与终末期胃造口的伦理——[[nervous-system/stroke]]、[[medical-ethics-law/end-of-life-ethics]]、[[medical-ethics-law/consent-capacity]]；单纯肠内营养作为儿科克罗恩的一线诱导、及其骨与生长优于激素的论证——[[gastrointestinal/bowel-disease]]、[[paediatrics/growth-development]]、[[endocrine/bone-calcium]]；头颈癌的放疗喂养计划与治疗前胃造口——盆腔放射黏膜炎的平行情形（[[obstetrics-gynaecology/gynaecological-cancer]]）与头颈肿瘤解剖（[[anatomy/head-neck]]）；胰腺炎——早期经口喂养、鼻肠管并不优于鼻胃——[[gastrointestinal/pancreas-biliary]]的胰腺炎节；重症的早期喂养小时目标与中断审计——[[emergency-critical-care/critical-care]]；吞咽困难管理与国际膳食动作标准框架、及能力与协助进食的谈话——[[geriatrics-palliative/delirium-dementia-care]]、[[clinical-skills/communication]]。）**
+## 评估与筛查
+
+::: definition 营养不良与营养筛查 {#def-assessment}
+**营养不良**是能量、蛋白质和其他营养素缺乏，对身体成分、功能或临床结局造成可测量不良影响的状态。NICE指南CG32对成人的定义为符合以下任何一项：
+
+- 体重指数（BMI）低于18.5 kg/m²；
+- 最近3～6个月内非故意体重下降超过10%；
+- BMI低于20 kg/m²，且最近3～6个月内非故意体重下降超过5%。
+
+**筛查**找出有风险的人，以便对他们进行评估和治疗。在英国最常用的工具是**营养不良通用筛查工具**（MUST），它对BMI、近期非故意体重下降以及急性疾病对摄入的影响计分。NICE建议在入院时、首次门诊时以及有临床顾虑时在全科诊所登记时进行筛查。
 :::
 
-::: definition 肠外营养与肠衰竭 {#def-parenteral}
-**适应证（肠道不可用或衰竭：梗阻与伴短肠综合征的肠衰竭、高输出内瘘、迁延的麻痹性肠梗阻、肠系膜缺血恢复、及产前致畸时代的生态位——[[surgery/gastrointestinal-surgery]]、[[gastrointestinal/bowel-disease]]的暴发性结肠炎窗口；禁忌证与姑息无益的谈话——[[geriatrics-palliative/palliative-care]]、[[medical-ethics-law/end-of-life-ethics]]）。处方（中心静脉通路要求及其导管血流感染与血栓负荷——[[infectious-diseases/healthcare-infections]]；全合一袋的算术——葡萄糖与脂质能量分配带脂质包裹药物的注记、氨基酸氮靶目标、微量元素与维生素混合遗漏错误史、及带肾肝调整的电解质与液体个体化——[[renal/chronic-kidney-disease]]、[[gastrointestinal/liver-function]]；每日然后每周的监测网格——葡萄糖胰岛素滑动覆盖及每日两次、及尿素电解质肝功能与甘油三酯——邻近[[endocrine/diabetes-complications]]的胰岛素给药[[pharmacology/dosing-principles]]）。并发症（代谢的——高血糖与停止时的低血糖及电解质转移及再喂养接口[[#def-refeeding]]、及必需脂肪酸缺乏与遗漏造成的微量元素缺乏；管道的——带换管与封管技术及抗生素选择的导管脓毒症及念珠菌血症——[[microbiology/fungi-parasites]]、[[microbiology/antimicrobials]]、导管相关血流感染包裹——[[infectious-diseases/healthcare-infections]]、[[clinical-skills/patient-safety]]——及中心静脉血栓——[[cardiovascular/vascular-disease]]；肝的——肠衰竭相关肝病带循环喂养与脂质配方修改、及脓毒症与小肠细菌过度生长的贡献项[[microbiology/microbiota]]、及移植阈值——[[gastrointestinal/liver-disease]]、[[immunology/transplant-tumour-immunology]]）。短肠综合征（解剖功能分类；急性期——液体与电解质复苏带钠镁钾台账[[renal/potassium-calcium-phosphate]]、及D乳酸酸中毒与碳酸氢盐处理的酸碱之问[[renal/acid-base-disorders]]；适应期——数月内营养激素驱动的黏膜肥大、带麸质与纤维及复合碳水的膳食演化、及下方的适应曲线图；抗分泌与抗动力阶梯——大剂量质子泵抑制剂或H2受体拮抗剂、及洛哌丁胺与阿片类似物及可待因及奥曲肽带其胆石与脂肪腹泻取舍——[[gastrointestinal/oesophagus-stomach]]与[[gastrointestinal/digestion-absorption]]；替度格鲁肽——增强吸收的胰高糖素样肽2类似物、带其黏膜生长与息肉监测及理论上的癌症警诫——[[endocrine/diabetes]]的肠促胰素家族生物学与[[gastrointestinal/gi-bleeding-cancer]]的监测逻辑；胆汁酸与脂溶性维生素及维生素B12及镁的补充地图[[#def-assessment]]；用于造口与高输出的口服补液盐生理、[[gastrointestinal/digestion-absorption]]的钠葡萄糖协同转运蛋白1课；及质子泵抑制剂高动力与D乳酸及肾结石与骨病包裹——[[renal/urinary-tract]]、[[endocrine/bone-calcium]]）。家庭肠外营养（肠衰竭单元的转诊时机、及生存与5年的现实；家庭泵技术与管道护理及抗凝封管、及患者作为操作者的培训——[[clinical-skills/patient-safety]]；并发症台账——导管脓毒症与肝与血栓及生育及带肠外营养的妊娠——[[obstetrics-gynaecology/pregnancy-complications]]；及肠与多器官移植选项带其免疫抑制与生活质量的取舍——[[immunology/transplant-tumour-immunology]]、[[medical-ethics-law/justice-resources]]）。**
-:::
+| MUST步骤 | 0分 | 1分 | 2分 |
+|---|---|---|---|
+| BMI（kg/m²） | 高于20 | 18.5–20 | 低于18.5 |
+| 3～6个月内非计划体重下降 | 低于5% | 5–10% | 超过10% |
+| 急性疾病且无摄入或可能无摄入超过5天 | | | 2 |
+
+总分0分为低风险，1分为中风险，2分或以上为高风险。筛查是开始而不是结束：高分会触发全面评估（通常由营养师进行）并制定护理计划。
+
+全球营养不良领导倡议（**GLIM**，2019年）的国际标准规定，至少一项**表型**标准（体重下降、BMI低或肌肉量减少）与至少一项**病因**标准（摄入或吸收减少，或疾病引起的炎症）同时存在时，即可诊断营养不良。这承认了肥胖者也可以营养不良，尤其是在疾病期间丢失肌肉时。
+
+营养评估包括饮食史、体重史、检查有无肌肉消耗、水肿和特定缺乏的体征、握力等功能指标，以及相关的血液检查。**血清白蛋白不是营养状态的标志物**：它在炎症和液体转移时下降，而在严重饥饿时（如神经性厌食症）可以正常。
 
 ::: widget plot
-f: 60*exp(-x/6)+8; 60*(1-exp(-x/5))
-x: 0, 18
-y: 0, 65
-labels: \text{大范围切除后的月数},\ \text{百分比};\ \text{肠外营养需求（第1天剂量的百分比）};\ \text{肠内耐受（目标的百分比）}
-caption: 大范围小肠切除后的肠道适应（[[#def-parenteral]]）：适应性黏膜肥大、及液体与电解质及吸收的恢复，让多数患者在12-24个月内逐步撤除肠外营养（结肠在通路中时的能量收获角色很重要——[[gastrointestinal/digestion-absorption]]的发酵行）；这张图是给“我会永远输注吗”这场谈话的曲线形教学（[[clinical-skills/communication]]）、及肠衰竭服务的转诊与康复时机（[[public-health/health-systems-economics]]）。
+f: 100*(a - x)/a
+x: 40, 90
+y: 0, 30
+sliders: a=70:50:100:1
+hlines: 5; 10
+labels: \text{非故意体重下降（\%）}
+caption: 在平常体重为a（滑块）时，体重下降百分比随当前体重（kg）变化的曲线。两条水平线标出5%和10%，即MUST和NICE CG32在3～6个月内使用的阈值。按千克看起来不多的下降，在体重较轻的人身上就可能越过这些阈值。
 :::
+
+### 估算需要量
+
+对大多数成人，NICE CG32建议营养支持在所有来源合计应提供：
+
+- **能量**：25～35 kcal/kg/d；
+- **蛋白质**：0.8～1.5 g/kg/d，约相当于氮0.13～0.24 g/kg/d；
+- **液体**：30～35 mL/kg/d，并考虑额外丢失；
+- 足够的电解质、矿物质、微量营养素和膳食纤维。
+
+蛋白质按重量约含16%的氮，因此蛋白质克数除以6.25即为氮的克数。卧床不动者和危重患者最初几天能量需要较低；恢复期、脓毒症、烧伤和活动增加时较高。Henry方程或Harris–Benedict方程等预测公式根据体重、身高、年龄和性别估算静息能量消耗；在专科环境中可用间接测热法测定。肥胖者如按实际体重计算会高估需要量，因此使用校正体重。
+
+**氮平衡**比较氮的摄入与丢失。大部分氮以尿素形式经尿丢失，因此可根据24小时尿液估算丢失量。负平衡意味着机体在分解蛋白质；正平衡意味着在合成组织。
+
+### 微量营养素
+
+特定营养素缺乏在营养不良和某些疾病中很常见。
+
+| 营养素 | 缺乏的主要表现 | 典型情况 |
+|---|---|---|
+| 硫胺素（B1） | Wernicke脑病、神经病变、心力衰竭 | 酒精依赖、呕吐、再喂养、减重手术 |
+| 维生素B12 | 巨幼细胞性贫血、神经病变 | 恶性贫血、回肠疾病、胃切除 |
+| 叶酸 | 巨幼细胞性贫血 | 饮食不良、乳糜泻、酒精 |
+| 维生素D | 骨软化症、佝偻病 | 日晒少、高纬度地区肤色较深者、吸收不良 |
+| 维生素K | 出血、INR升高 | 吸收不良、抗生素、无摄入 |
+| 锌 | 皮疹、伤口愈合不良、腹泻 | 高排出量造口、瘘、肠外营养 |
+| 铁 | 小细胞性贫血 | 失血、乳糜泻、减重手术 |
+
+**Wernicke脑病**引起意识模糊、共济失调和眼球运动异常，但大多数人只有其中一两项。必须紧急肠外给予硫胺素治疗；对高危人群，硫胺素应在葡萄糖**之前**给予，因为葡萄糖代谢消耗硫胺素，可诱发该病。
+
+## 再喂养综合征
+
+::: definition 再喂养综合征 {#def-refeeding}
+**再喂养综合征**是在一段时间饥饿后重新开始营养时可能发生的、可致命的液体和电解质转移。其标志是**低磷血症**，常伴低钾血症、低镁血症、硫胺素缺乏以及水钠潴留。按NICE CG32，符合以下**一项**者为**高风险**：
+
+- BMI低于16 kg/m²；
+- 最近3～6个月内非故意体重下降超过15%；
+- 几乎没有营养摄入超过10天；
+- 喂养前钾、磷或镁偏低；
+
+或符合以下**两项**：
+
+- BMI低于18.5 kg/m²；
+- 最近3～6个月内非故意体重下降超过10%；
+- 几乎没有营养摄入超过5天；
+- 有酒精滥用史，或使用胰岛素、化疗药、抗酸药或利尿剂等药物。
+:::
+
+其机制源于饥饿生理。喂养，尤其是碳水化合物，使胰岛素升高。胰岛素把葡萄糖、磷酸盐、钾和镁驱入细胞，磷酸盐在合成ATP和2,3-BPG时被消耗。血浆水平急剧下降，有时在数小时到数天内发生。低磷引起肌无力（包括呼吸肌衰竭）、心力衰竭、心律失常、溶血、意识模糊和癫痫发作。胰岛素还引起水钠潴留，被饥饿削弱的心脏可能在新的容量负荷下衰竭。碳水化合物代谢增加耗尽硫胺素，可诱发Wernicke脑病。
+
+预防遵循NICE CG32。对高风险者，营养起始量不超过**10 kcal/kg/d**，极端情况下（例如BMI低于14或几乎无摄入超过15天）为5 kcal/kg/d，并在4～7天内增加到全量。开始喂养前及最初10天给予硫胺素和其他B族维生素。补充钾、磷和镁，开始时每天监测，同时监测液体平衡和心脏状况。具体剂量来自当地方案。过于谨慎的喂养不足本身也有害，尤其在神经性厌食症中，专科指南支持在密切监测下更快地增加。
 
 ::: example 危险的第二餐 {#ex-refeeding}
-一名23岁神经性厌食患者（体质指数13.2、2个月下降6公斤、数周进食低于每日200千卡）因医学稳定而入院；基线钾3.4、磷酸盐1.1、镁0.86、尚未给硫胺素；病房今天开始“增重膳食”、明天钾降到2.7、磷酸盐0.5。
+一名72岁独居男性被发现倒在地上后入院。他约2周几乎没有进食，大量饮酒。体重48 kg，身高1.75 m。钾3.2 mmol/L，磷0.6 mmol/L（低），镁0.6 mmol/L（低）。接诊团队开始给他全量饮食和静脉葡萄糖。第3天他虚弱、气促、意识模糊，踝部水肿，磷0.25 mmol/L。解释发生了什么，以及本应怎样做。
 ::: solution
-**医源性再喂养综合征（[[#def-refeeding]]的机制以教科书顺序上演——胰岛素在碳水驱动下把磷酸盐钾镁驱入细胞内并消耗硫胺素）：即刻的挽救（静脉磷酸盐钾镁替代带心电监测及浓度速率规则——[[renal/potassium-calcium-phosphate]]、[[cardiovascular/arrhythmias]]；在热量之前或同时给硫胺素加多种维生素、及葡萄糖顺序的神话纠正——[[nervous-system/dementia-neurodegeneration]]；放慢热量并在电解质稳定后按营养师方案重新推进；每日监测的血液与液体平衡及心电记录；及不羞辱体重的精神科共同管理与带家庭的多学科——[[psychiatry/eating-personality-disorders]]、[[clinical-skills/communication]]）。系统的失效分析（再喂养风险筛查本应在入院时标记体质指数与近期下降——首次接触即用MUST或等价工具——[[clinical-skills/patient-safety]]；营养师再喂养计划与电解质时间表的归属——[[clinical-skills/records-handover]]；及教学要点：在已筛查的情况下，再喂养低磷血症是一种接近“从未发生事件”的伤害——再喂养指南实施文献——[[public-health/health-systems-economics]]）。**
+**第1步：评估入院时的风险。** BMI $= 48/1.75^2 = 15.7$ kg/m²，低于16。他几乎没有摄入超过10天，喂养前钾、磷和镁偏低。其中任何一项单独都使他成为再喂养综合征**高风险**者，他还有酒精滥用史。
+
+**第2步：解释病情恶化。** 全量喂养和葡萄糖使胰岛素升高，把磷酸盐、钾和镁驱入细胞。严重的**低磷血症**引起包括呼吸肌在内的肌无力和意识模糊。水钠潴留加上饥饿的心肌引起水肿，可能还有心力衰竭。在没有硫胺素的情况下给予葡萄糖还有诱发**Wernicke脑病**的风险，这可能是他意识模糊的原因之一。
+
+**第3步：本应怎样做。** 在给予任何葡萄糖或喂养之前先给硫胺素和复合维生素B；喂养同时纠正电解质；喂养起始量不超过10 kcal/kg/d，对他约为480 kcal/d，在4～7天内逐渐增加；每天监测电解质、液体平衡和临床状况；并请营养师参与。他现在需要紧急补充磷、钾和镁，肠外给予硫胺素，暂时减少喂养，并进行心脏监测。
 :::
 :::
 
-::: example 没有安全吞咽的卒中 {#ex-stroke-feed}
-卒中后第6天、左侧偏瘫的79岁患者两次未通过言语治疗评估（稀液体误吸）、经口无法摄入超过每日200千卡；她有失语、但在看到图片时一致表示拒绝插管；她的女儿坚持“不惜一切代价”。
+## 肠内营养
+
+选择的顺序很简单：肠道能用就用。首先是经口营养，包括食物强化和口服营养补充剂。当患者无法安全地吃够时，使用**肠内管饲**。
+
+::: definition 肠内营养及其途径 {#def-enteral}
+**肠内营养**是把营养送入胃肠道，通常经管道。主要途径有：
+
+- **鼻胃管**（NG），用于短期喂养，通常最长约4周；
+- **鼻空肠管**（NJ），用于胃不能排空，或误吸、胰腺炎风险高时；
+- **胃造口**，经内镜（PEG）或放射介入（RIG）放置，用于较长期喂养，通常在可能需要超过约4周时；
+- **空肠造口**，常在上消化道手术时放置。
+:::
+
+与肠外营养相比，肠内喂养保护肠屏障，更便宜，感染并发症更少。其主要风险是管道位置错误、误吸、腹泻和代谢紊乱。
+
+**在NHS中，把鼻胃管放入肺内并经其喂养属于"绝不应发生事件"**。首次使用前和每次喂养前，用pH试纸检测抽吸液来核查管道位置：pH **5.5或以下**支持位于胃内。如果抽不出液体或pH高于5.5，需要拍胸片并由受过培训的人判读。听诊注入空气（"嗖嗖试验"）等旧方法不安全，绝不能使用。
+
+::: example 吞咽不安全的卒中患者 {#ex-stroke-feed}
+一名78岁女性发生大面积左侧大脑中动脉卒中。言语和语言治疗师发现她会误吸稀薄液体和食物，在相当长一段时间内不太可能安全吞咽。她嗜睡但病情稳定。最初几天和长期应如何为她提供营养？
 ::: solution
-**被提前的2-3周决定（[[#def-enteral]]）：鼻胃喂养是等待自发恢复期间已被证明可接受的桥梁；只有吞咽困难超过通常约2-3周窗口仍持续时、经皮胃造口才是正确的手术——且只有与患者本人的决定一致时（[[nervous-system/stroke]]与[[medical-ethics-law/consent-capacity]]）。架构：**对一个能表达选择的患者做最佳利益或能力分析（带沟通辅助与言语治疗时间的支持性决策、及第二次意见的吞咽复审——[[clinical-skills/communication]]、[[medical-ethics-law/consent-capacity]]）；与女儿的谈话（解释预后曲线、误吸与肺炎的现实、手工喂食舒适照护选项、及此处“不惜一切代价”意味着什么——[[clinical-skills/communication]]、[[respiratory/respiratory-infections]]）；文件（吞咽系列轨迹、风险餐约定、相当于“照护上限建议”的升级摘要——[[clinical-skills/records-handover]]）；及之后营养师的国际膳食动作标准质地修改计划、能独立降低肺炎的口腔卫生——[[infectious-diseases/healthcare-infections]]——及康复与社区护理的交接（邻近[[geriatrics-palliative/end-of-life-care]]的照护地点原则）。**
+**第1步：早期喂养。** 不能安全吞咽的卒中患者应及早开始鼻胃管喂养，通常在入院24小时内，除非这不符合其利益。早期肠内喂养可避免脱水和营养不良。卒中试验（FOOD试验，2005年）发现早期管饲是合理的，而与鼻胃管喂养相比，早期**PEG**并未改善结局。
+
+**第2步：管道安全。** 每次使用前通过抽吸液pH 5.5或以下或胸片确认鼻胃管位置。喂养时让她保持坐位。如果她反复拔管，可考虑使用鼻固定带。
+
+**第3步：长期。** 如果约4周后她仍不能安全吞咽，且继续喂养符合她的最佳利益，考虑行胃造口。
+
+**第4步：决策。** 她可能没有能力决定是否管饲。应按照《心智能力法》（[[medical-ethics-law/consent-capacity]]），依据她的最佳利益作出决定，考虑任何预先决定、她已知的意愿和价值观，以及亲近之人的意见。管饲营养是一种医疗措施，当它不符合患者最佳利益时可以不给予或撤除。
 :::
 :::
 
-::: example 配方作为一线 {#ex-een}
-一名12岁男孩腹泻8周、肛周病变、体重下滑两个百分位通道；粪钙卫蛋白2400、C反应蛋白38、白蛋白34；结肠镜与影像显示回结肠型克罗恩病、无狭窄无穿透；父母害怕激素。
+肠内营养也可以是疾病的**治疗**。对于活动性克罗恩病患儿，推荐**全肠内营养**作为诱导缓解的一线治疗，即6～8周内只以液体配方作为唯一营养来源。对肠腔病变，它的效果与糖皮质激素相当，并能促进黏膜愈合、支持生长。
+
+::: example 把配方作为一线治疗 {#ex-een}
+一名12岁索马里裔男孩6个月来腹痛、腹泻、体重下降，身高从第50百分位降到第9百分位。回结肠镜证实为回肠和结肠克罗恩病。他的父母担心激素。请解释全肠内营养的地位和实际问题。
 ::: solution
-**儿科管腔型克罗恩病、中度（[[gastrointestinal/bowel-disease]]的分类）：单纯肠内营养真正是一线——6-8周纯配方（多聚体被接受优于要素型——适口性与依从性的取舍）诱导缓解的效果与激素相当、而骨量与生长及微生物群效应更优、且无肾上腺或骨损害（[[paediatrics/growth-development]]、[[endocrine/bone-calcium]]、[[microbiology/microbiota]]、[[gastrointestinal/bowel-disease]]）；实操包裹（营养师与心理支持、及口味与友好度技巧、及夜间喂养泵选项——[[clinical-skills/communication]]、邻近[[psychiatry/anxiety-disorders]]的依从工作；肛周护理与铁及维生素D及维生素B12的补足——[[blood/anaemia]]、[[renal/potassium-calcium-phosphate]]）；及“化验正常也不要中断疗程”规则与每周体重及白蛋白C反应蛋白轨迹；升级决定（按风险谱在诱导后用生物制剂或免疫调节剂维持——[[gastrointestinal/bowel-disease]]与[[immunology/vaccines-immunotherapy]]）；学校与家庭的物流及过渡规划习惯（[[paediatrics/adolescent-health]]、[[clinical-skills/records-handover]]）；及给父母的诚实比较（激素：更快但对生长并不更好；配方：更慢但有多重回报——这句话背后的试验数据——[[epidemiology-ebm/systematic-reviews]]）。**
+**第1步：理由。** 对于活动性肠腔克罗恩病患儿，欧洲儿科指南推荐**全肠内营养**（EEN）作为一线诱导治疗。它使大多数患儿缓解，促进黏膜愈合，支持追赶生长，且没有糖皮质激素对生长、骨骼和外貌的不良影响。他的身高百分位下降，使避免激素尤其有价值。
+
+**第2步：实际问题。** 他将以完全液体配方作为唯一营养，通常持续6～8周，允许喝水。有些孩子喝不够，需要鼻胃管。儿科营养师和家庭的支持必不可少，学校午餐等社交场合需要提前计划。应讨论文化和宗教因素，如斋戒期。
+
+**第3步：之后。** 逐步恢复食物，并开始维持治疗（常为免疫调节剂或生物制剂）以保持缓解。监测生长和青春期发育。
 :::
 :::
 
-::: example 桌下的袋子 {#ex-highoutput}
-因扭转急诊小肠切除后第9天、一名46岁患者空肠造口每24小时流出1.9升、尿量400毫升、肌酐158、钠130、镁0.58、并且自由地喝水“以补上”。
-::: solution
-**高输出空肠造口伴耗竭性急性肾损伤与低镁血症（[[renal/water-sodium]]的钠水丢失生理、[[renal/potassium-calcium-phosphate]]的镁课、及肾前打击[[renal/acute-kidney-injury]]）：反直觉的处方（停止低渗自由水饮水——它通过钠抽吸转化为更多引流液——[[gastrointestinal/digestion-absorption]]的渗透与溶剂拖曳规则）；先静脉后口服计划（静脉替代、然后结构化的含钠口服补液液小口方案、带钠葡萄糖协同转运蛋白1的葡萄糖偶联——[[gastrointestinal/digestion-absorption]]的口服补液盐生理——少量多次、随餐而不是替代餐）；药物阶梯（大剂量质子泵抑制剂与洛哌丁胺与可待因方案及阿片减量规划、及难治输出时用奥曲肽带胆石与脂肪泻警告——[[gastrointestinal/oesophagus-stomach]]、[[gastrointestinal/pancreas-biliary]]）；营养学（高能量低渣建议、及脂肪与纤维个体化——[[gastrointestinal/clinical-nutrition]]自己的短肠规划）；观察清单（皮肤与造口袋护理——[[musculoskeletal/skin]]；在持续输出与再入院轨迹时的导管与家庭肠外营养阈值——[[#def-parenteral]]；及带肠衰竭单元转诊时机的电解质与肌酐监测时间表——[[clinical-skills/records-handover]]）。**
+## 肠外营养与肠衰竭
+
+::: definition 肠外营养与肠衰竭 {#def-parenteral}
+**肠外营养**（PN）是经静脉输送营养素：氨基酸、葡萄糖、脂肪、电解质、维生素和微量元素。当肠道在较长时间内不能使用或不能吸收足够营养时使用。由于溶液为高渗，通常经中心静脉导管输注。
+
+**肠衰竭**是肠道功能下降到低于吸收宏量营养素和/或水和电解质所需的最低水平，因而需要静脉补充。它分为**1型**（急性、短期，如腹部手术后）、**2型**（迁延性急性，常见于有瘘等并发症、代谢不稳定的患者，需要数周至数月的PN）和**3型**（慢性，需要长期家庭PN）。
 :::
+
+PN的适应证包括肠衰竭、长时间肠梗阻（麻痹性）、高排出量瘘、严重吸收不良，以及无法进行肠内喂养的肠梗阻。不能仅仅因为肠内喂养不方便就使用PN。
+
+并发症分为三类：
+
+- **导管相关**：**血流感染**最为重要，通过严格无菌技术和专用管腔使其降到最低；血栓形成；以及堵塞。
+- **代谢性**：高血糖、再喂养综合征、电解质紊乱和液体过负荷。
+- **长期**：**肠衰竭相关肝病**、代谢性骨病和微量营养素失衡。
+
+3型肠衰竭患者可以在专科中心管理下依靠家庭PN生活多年。部分人适合肠康复、替度鲁肽（teduglutide）等GLP-2类似物治疗或小肠移植。
+
+### 高排出量造口与短肠
+
+广泛小肠切除后，剩余肠段的长度和解剖决定结局。有**空肠造口**且剩余小肠较短的人会丢失大量液体和钠。造口排出液含钠约90～100 mmol/L。饮用白开水或其他低钠液体会使丢失**加重**，因为钠从血液进入肠腔使内容物等渗，水随之从造口流出（[[gastrointestinal/digestion-absorption]]）。
+
+::: example 不断充满的造口袋 {#ex-highoutput}
+一名58岁女性因肠系膜缺血行广泛小肠切除，现有空肠造口。她的造口每天排出3升。她口渴，大量饮茶和水。钠131 mmol/L，肌酐上升，尿钠低于10 mmol/L。解释她的问题并概述处理原则。
+::: solution
+**第1步：机制。** 空肠对钠通透性高，不能逆浓度梯度吸收钠。她喝下低渗液体时，钠从血液进入肠腔直到内容物等渗，然后经造口流出。她喝得越多，丢失的钠和水就越多。尿钠低说明肾在尽力保钠：她处于**钠和水缺乏**状态，伴肾前性肾损伤。
+
+**第2步：处理原则。**
+- **限制低渗口服液体**（水、茶、果汁），每天约1升。
+- 饮用钠约90 mmol/L或更高的**葡萄糖-电解质溶液**，如St Mark's溶液，使钠和水能通过钠-葡萄糖协同转运被吸收。
+- 餐前服用**洛哌丁胺**减少排出量，用**PPI**减少胃分泌；可加用可待因。
+- 开始时静脉输注生理盐水，纠正脱水和肾损伤。
+- 监测体重、排出量、尿钠和镁。
+
+**第3步：长期。** 如果排出量不能控制，她可能需要在专科肠衰竭团队管理下在家中接受肠外补液或营养，并评估GLP-2类似物治疗。
+:::
+:::
+
+## 肥胖
+
+**肥胖**按BMI定义：25～29.9 kg/m²为超重，30～34.9为I级肥胖，35～39.9为II级，40或以上为III级。由于南亚、中国、其他亚洲、中东、非洲黑人和非裔加勒比家庭背景的人在较低BMI时就有较高的2型糖尿病和心血管疾病风险，NICE对他们使用较低的阈值：23 kg/m²起为超重，27.5 kg/m²起为肥胖。BMI不能反映脂肪分布，因此NICE还推荐**腰围身高比**，0.5或以上提示中心性肥胖增加。
+
+肥胖源于能量摄入与消耗之间的长期失衡，受遗传、食物环境、睡眠、药物、社会经济因素以及食欲的激素调节影响（[[public-health/non-communicable-disease]]）。它是一种慢性、易复发的疾病，医疗中对肥胖者的歧视很常见，而这种歧视本身就有害。
+
+在英国，处理遵循NICE指南NG246（2025年）：
+
+- **行为干预**，结合饮食、体力活动和行为改变。
+- **药物**，与上述措施同时使用：**GLP-1受体激动剂**如司美格鲁肽（semaglutide），以及GIP和GLP-1受体双重激动剂**替尔泊肽**（tirzepatide），作用于食欲中枢并减慢胃排空。试验中它们带来显著的体重下降，但停药后体重往往回升。其使用受NICE技术评估管理，有BMI和合并症方面的标准。恶心、呕吐和便秘常见；胰腺炎和胆囊疾病是公认的风险。
+- **减重手术**，如袖状胃切除术和Roux-en-Y胃旁路术，用于符合标准的重度肥胖者。手术带来最大、最持久的体重下降，常使2型糖尿病缓解。
+
+减重手术造成终身的营养需求。胃旁路术后食物绕过十二指肠和胃的大部分，因此铁、钙、维生素D、B12和叶酸的吸收都下降。患者需要终身补充并每年验血。术后呕吐可导致**硫胺素缺乏**和Wernicke脑病，含糖食物快速进入小肠可引起"倾倒综合征"。
+
+::: warning 体重正常不能排除营养不良
+BMI正常甚至偏高的人仍可能营养不良，尤其是在体重快速下降后、危重疾病期间，或肌肉丢失被脂肪或水肿掩盖时。应依据体重随时间的变化、摄入量和肌肉量，而不仅仅是BMI。同样，低白蛋白不能诊断营养不良；它更多反映炎症和液体状态，而不是营养。
 :::
 
 ::: quiz
-再喂养综合征的标志性电解质紊乱是：
-- [ ] 高钾血症
-- [x] 低磷血症
-- [ ] 高钙血症
-- [ ] 高钠血症
+一名嗜睡男性刚放置了鼻胃管。抽吸液pH为6.5。下一步应怎么做？
+- [ ] 以低速开始喂养并观察有无咳嗽
+- [ ] 注入20 mL空气并在胃部听诊
+- [x] 不要喂养；拍胸片并由受过培训的人判读，或按当地政策重新检测
+- [ ] 接受此位置，因为pH低于7就是酸性
 ::: solution
-**胰岛素驱动的细胞内摄取在重新引入碳水化合物后2-5天内耗尽本已减少的磷酸盐储备——随后是呼吸衰竭、横纹肌溶解与心律失常三联、并伴低钾与低镁（[[#def-refeeding]]、[[renal/potassium-calcium-phosphate]]）；钠水潴留造成水肿、而不是高钠血症（[[renal/water-sodium]]）；预防是硫胺素加电解质补足、然后缓慢而安全地升级热量（[[psychiatry/eating-personality-disorders]]、及[[public-health/global-health]]的治疗营养产品背景）。**
+pH高于**5.5**不能确认位于胃内。抑酸治疗可使胃内pH升高，但位置错误、位于肺或食管内的管道也可得到高于5.5的pH。绝不能开始喂养。下一步遵循当地政策，通常是拍胸片并由有资质的人判读。"嗖嗖试验"不可靠，绝不能使用。经位置错误的管道喂养属于"绝不应发生事件"。
 :::
 :::
 
 ::: history
-**人工营养的世纪（战后全肠外营养规划、与Dudrick 1960年代经锁骨下导管儿科革命——邻近[[paediatrics/acute-childhood-illness]]；必需氨基酸与脂肪乳剂化学时代——[[cell-biochemistry/lipid-amino-acid-metabolism]]）；“如果肠道能用就用它”的肠内反击、及改变英国安全实践级别的鼻胃管误置调查（[[clinical-skills/patient-safety]]）；经皮胃造口1980年代的到来（Gauderer与Ponsky的胃造口三角）；ERAS与Kehlet对外科饥饿神话的拆除（碳水负荷与早期喂养——[[surgery/perioperative-care]]）；再喂养综合征的识别浪潮（1990-2000年代被再喂养的难民与厌食症病例系列、把磷酸盐监测写入指南——[[public-health/global-health]]、[[psychiatry/eating-personality-disorders]]）；让一瓶配方成为一线药物的儿科克罗恩单纯肠内营养试验（[[gastrointestinal/bowel-disease]]、[[paediatrics/growth-development]]）；2015年GLIM营养不良定义共识（把营养不良作为诊断的代码化——[[public-health/health-systems-economics]]）；替度格鲁肽从肠促胰素生物学来的胰高糖素样肽2再利用（[[endocrine/diabetes]]的激素谱系）；及把“与生命不相容”变成一个慢性病门诊的肠衰竭与移植服务（[[immunology/transplant-tumour-immunology]]、[[medical-ethics-law/justice-resources]]）。**
-:::
-
-## 通向何处
-
-吸收生理在[[gastrointestinal/digestion-absorption]]；炎症性肠病的营养优先选项在[[gastrointestinal/bowel-disease]]；肝病的蛋白逻辑在[[gastrointestinal/liver-disease]]；肾调整的算术在[[renal/chronic-kidney-disease]]；补足药理学在[[renal/potassium-calcium-phosphate]]；外科路径在[[surgery/perioperative-care]]；生命尽头喂养的伦理在[[medical-ethics-law/end-of-life-ethics]]。
-
-::: exercise 开出头24小时的医嘱 {level=2}
-为[[#ex-refeeding]]中的患者写入院医嘱：热量、补充、血液、监测、及每一项的负责人。
-::: solution
-**一个规程式答案（指南特定数字各异；架构才重要——[[#def-refeeding]]）：营养师计算的起始热量带分级增加、并且不做饥饿重置；在首餐之前及最初数周给硫胺素与多种维生素（[[nervous-system/dementia-neurodegeneration]]）；基线及每日、然后递减滴定的镁磷酸盐钾、带补充阈值与静脉速率（[[renal/potassium-calcium-phosphate]]）；每日体重液体平衡、及低值时的心电；具名的护理观察集与医师查房节奏；精神科共享照护与再喂养安全网（[[psychiatry/eating-personality-disorders]]）；及记录在案的计划负责人加升级标准（意识混乱、胸痛、心律失常→立即医学复审——[[clinical-skills/patient-safety]]、[[clinical-skills/records-handover]]）。**
-:::
-:::
-
-::: exercise 读残余量 {level=2}
-一名重症患者持续鼻胃喂养每小时60毫升、两次胃残余量为480与520毫升、无呕吐无腹胀也未升级血管升压药。停喂养吗？
-::: solution
-**不——这个反射已经过时（[[#def-enteral]]的监测行）：单次高残余量对误吸的预测价值差、而停止喂养要付出天数与热量的代价；取而代之的清单（继续抬高床头与带囊导管及口腔护理——[[respiratory/respiratory-infections]]；检查真实的不耐受——腹胀与疼痛及麻痹及缺血征象[[surgery/acute-abdomen]]、[[emergency-critical-care/critical-care]]；促动力考虑、及反复时改为幽门后喂养——[[gastrointestinal/oesophagus-stomach]]的胃轻瘫药理学；仅对有症状或高危发作时按规程暂停并给出重启时间）；及带目标速率的记录（[[clinical-skills/records-handover]]、[[clinical-skills/patient-safety]]）。**
-:::
-:::
-
-::: exercise 算这笔账 {level=2}
-一名55岁女性体质指数15、4个月非自愿下降14公斤：计算她足量喂养时的每日能量与蛋白靶目标、再喂养风险类别、及升级前什么必须正常。
-::: solution
-**靶目标（[[#def-assessment]]的每公斤25-30千卡与每公斤1.0-1.5克规则：一旦推进约每日1400-1650千卡与55-80克蛋白、由营养师细化）；风险（体质指数与下降幅度在任何指南中都把她置于高风险——[[#def-refeeding]]）；升级之门（磷酸盐、钾、镁正常或已补充、硫胺素与多种维生素已开始、心电与肾功能已查、液体平衡已记录——[[renal/potassium-calcium-phosphate]]、[[cardiovascular/arrhythmias]]、[[renal/acute-kidney-injury]]）；并行的病因检查（恶性与抑郁与痴呆及消化道三重检查——[[gastrointestinal/gi-bleeding-cancer]]、[[psychiatry/mood-disorders]]、[[geriatrics-palliative/delirium-dementia-care]]——因为给一个未诊断的病因再喂养是医学最常见的漏诊陷阱[[clinical-skills/clinical-reasoning]]）。**
-:::
+1944～1945年，基斯（Ancel Keys）领导了明尼苏达饥饿实验，36名出于良心拒服兵役者经历了6个月的半饥饿，随后接受有控制的再喂养；其对饥饿身心影响的详细记录至今仍被引用。第二次世界大战后，在饥饿的战俘中描述了再喂养的严重并发症。1968年，费城的达德里克（Stanley Dudrick）及其同事证明，比格犬幼犬以及随后一名短肠婴儿可以仅靠经中心静脉导管的静脉营养正常生长，从而确立了全肠外营养。在英国，BAPEN于2003年推出了营养不良通用筛查工具。
 :::
 
 ::: summary
-- 筛查每一个人、尽早转诊、并把营养不良当作一个有标准的诊断来对待、而不是一个形容词。
-- 再喂养通过低磷血症杀人：热量之前先给硫胺素与电解质、有监测的升级、及一个时间表的具名负责人。
-- 肠内路径保护肠道、成本更低、感染更少；经皮胃造口之问关于时间与患者目标、不是便利。
-- 肠外营养是救命的器官支持、带三串危害：代谢、导管、与肝——每一串都有规程、而规程只有专人负责才有效。
-- 肠衰竭是一门慢性病专科：适应需要数月、替度格鲁肽与抗分泌照护缩小肠外营养依赖、而家庭肠外营养以可测量的代价换来生存。
+- 营养不良常见且识别不足；用MUST筛查，评分2分或以上时进行全面评估。
+- 饥饿使代谢从葡萄糖转向酮体以节约蛋白质；疾病会推翻这种适应，驱动肌肉丢失。
+- NICE CG32建议25～35 kcal/kg/d、蛋白质0.8～1.5 g/kg/d和液体30～35 mL/kg/d；氮等于蛋白质除以6.25。
+- 再喂养综合征是低磷血症伴其他电解质和液体转移；高风险者从10 kcal/kg/d或更低开始，并先给硫胺素。
+- 肠道能用就用。每次使用前通过抽吸液pH 5.5或以下或胸片核查鼻胃管位置。
+- 肠外营养用于肠衰竭；导管感染是其主要危害。
+- 高排出量造口时，限制低渗液体并给予高钠口服补液。
+- 肥胖用行为支持、基于GLP-1的药物和减重手术处理，每一种都有营养方面的后果。
 :::
 
-## 练习
+## 后续内容
 
-::: exercise 写出缺乏 {level=1}
-说出每个背后的缺乏：毛囊角化过度伴牙龈出血；口炎伴腋窝皮炎及贫血；管饲儿童口周与肛周肢端皮炎；痴呆皮炎腹泻。
+营养所依赖的消化吸收生理见[[gastrointestinal/digestion-absorption]]。胰腺炎中的营养见[[gastrointestinal/pancreas-biliary]]，克罗恩病中的营养见[[gastrointestinal/bowel-disease]]。进食障碍，包括神经性厌食症的再喂养，见[[psychiatry/eating-personality-disorders]]。围手术期营养见[[surgery/perioperative-care]]，糖尿病和肥胖的代谢影响见[[endocrine/diabetes]]。
+
+## 习题
+
+::: exercise MUST计分 {level=1}
+一名66岁女性BMI 19.2 kg/m²，最近4个月体重下降7%。她没有急性疾病。计算她的MUST评分并说明风险类别。
 ::: solution
-**维生素C坏血病（[[#def-assessment]]、[[blood/haemostasis-bleeding]]）；核黄素（维生素B2）缺乏（[[#def-assessment]]）；锌缺乏带获得性肢端皮炎图像（[[#def-assessment]]、[[musculoskeletal/skin]]）；烟酸缺乏糙皮病带其Hartnup病与缺血重叠（[[gastrointestinal/digestion-absorption]]的转运体课与[[genetics/mendelian-inheritance]]）。**
+BMI 18.5～20：1分。体重下降5～10%：1分。无急性疾病影响：0分。总分**2**：**高风险**。她需要全面营养评估、转诊营养师并制定护理计划。
 :::
 :::
 
-::: exercise 设定这个喂养 {level=1}
-一名70公斤脓毒症患者机械通气第2天、无禁忌证：给出路径、第1天热量策略与误吸包裹。
+::: exercise 说出缺乏的营养素 {level=1}
+说出最可能缺乏的营养素：(a)酒精依赖者出现意识模糊、共济失调和眼球震颤；(b)一名只吃茶和吐司的老年男性牙龈出血、毛发呈螺旋状；(c)长期脂肪泻者INR升高；(d)一名很少外出的女性骨痛和近端肌无力。
 ::: solution
-**肠内、鼻肠或鼻胃优先（早期滋养喂养然后升级的证据——[[#def-enteral]]、[[emergency-critical-care/critical-care]]）；第1天允许性喂养不足、然后渐进目标（EPaNIC与NUTREA时代的细微——邻近[[pharmacology/dosing-principles]]的监测）；抬高床头30度与带囊导管检查及口腔护理、及不加反射性停喂的残余量解读（误吸包裹——[[respiratory/respiratory-infections]]、[[clinical-skills/patient-safety]]）；先做再喂养风险核查（[[#def-refeeding]]）；及经管给药审计（[[pharmacology/absorption-distribution]]）。**
+(a)硫胺素（Wernicke脑病）。(b)维生素C（坏血病）。(c)维生素K。(d)维生素D（骨软化症）。
 :::
 :::
 
-::: exercise 保护这条通路 {level=2}
-一名家庭肠外营养患者每周三次输注、在家连接后30分钟出现寒战；穿刺部位清洁；白细胞14、她用社区急救包的抗生素后血流动力学稳定。处理这一次发作与预防。
+::: exercise 核查管道 {level=1}
+列出首次喂养前确认鼻胃管位置的步骤，并解释为什么不再使用听诊注入空气的方法。
 ::: solution
-**在证明否则之前推定导管感染（导管与外周配对培养规则、及不要使用该导管的纪律——[[#def-parenteral]]、[[microbiology/laboratory-diagnosis]]、[[infectious-diseases/healthcare-infections]]）：按菌种的决定（凝固酶阴性葡萄球菌用抗生素封管与保管、对金黄色葡萄球菌或念珠菌或假单胞菌则要求拔除——[[microbiology/antimicrobials]]、[[microbiology/bacteria]]、[[microbiology/fungi-parasites]]）；入院阈值（脓毒症生理与隧道感染及心内膜炎之问——[[emergency-critical-care/shock-fluids]]、邻近[[cardiovascular/valve-congenital-disease]]的感染性心内膜炎检查程序）；预防审计（家庭技术复审及冲洗与帽盖及口罩与手套习惯、接头消毒技术及干燥时间、乙醇与柠檬酸盐封管时间表、及每月氯己定敷料节奏——[[clinical-skills/patient-safety]]）；及监测登记册（每导管日感染率作为单元关键指标、及早期肠衰竭团队复审带肝与移植时机含义——[[public-health/health-systems-economics]]、[[immunology/transplant-tumour-immunology]]）。**
+从管中抽吸液体，用有CE标志的pH试纸检测。pH 5.5或以下支持位于胃内，可以开始喂养。如果抽不出液体或pH高于5.5，拍胸片并由有资质的人判读，位置确认之前不得喂养。听诊空气不可靠，因为位于肺或食管内的管道也能传出声音，这种方法已与死亡事件相关。
 :::
 :::
 
-::: exercise 解释这个减量 {level=2}
-一名末端空肠造口的短肠患者每日依赖1.5升肠外营养、拒绝减量“因为输液让我活着”。在咨询中使用适应曲线。
+::: exercise 估算需要量 {level=2 check="1500"}
+一名60 kg女性正从手术中恢复，将接受肠内营养。按25 kcal/kg/d计算，她每天的能量目标是多少kcal？按蛋白质1.0 g/kg/d计算，相当于多少克氮？
+::: hint
+氮等于蛋白质除以6.25。
+:::
 ::: solution
-**曲线（[[#def-parenteral]]的图）：适应持续12-24个月、所以有测量的减量就是对适应的检验；实操顺序（先转移到夜间肠外营养以释放白天、带钠葡萄糖协同转运蛋白配方的口服补液盐小口规划——[[gastrointestinal/digestion-absorption]]的口服补液盐课——复合碳水的营养师计划、及洛哌丁胺与质子泵抑制剂滴定、及替度格鲁肽资格审查——[[endocrine/diabetes]]的家族生物学）；诚实说出的风险（脱水再入院循环、及D乳酸与酸碱及肾与骨的长尾——[[renal/acid-base-disorders]]、[[renal/urinary-tract]]、[[endocrine/bone-calcium]]）；量化的收益（每导管年的导管脓毒症与肝及血栓风险——[[#def-parenteral]]的并发症行、[[infectious-diseases/healthcare-infections]]）；及共享计划（结构化的液体与体重及电解质监测时间表、肠衰竭护士联系人、及生病时回到肠外营养的无羞辱规则——[[clinical-skills/records-handover]]、[[clinical-skills/communication]]）。**
+能量$= 25 \times 60 = 1500$ kcal/d。蛋白质$= 1.0 \times 60 = 60$ g/d，相当于$60/6.25 = 9.6$ g氮/d。这些是起始估计；营养师会根据她的临床进展、体重和活动加以调整。
 :::
 :::
 
-::: exercise 建设这个营养服务 {level=3}
-设计全院性的营养不良与再喂养安全规划：筛查、路径、人力、肠外营养治理与审计。
+::: exercise 从低量开始 {level=2 check="450"}
+一名45 kg因疾病导致厌食的女性，按NICE CG32属再喂养综合征高风险。按10 kcal/kg/d计算，最大起始能量摄入是多少kcal/d？开始喂养前必须给予什么？
+::: hint
+用她的体重乘以10。
+:::
 ::: solution
-**筛查（入院与每周的MUST或验证工具规则、带营养师转诊触发项、及若跳过则在病历中写明理由——[[#def-assessment]]、[[clinical-skills/patient-safety]]）；路径（带电解质时间表归属的再喂养规程——[[#def-refeeding]]；肠内配方册与管道置入及验证的标准操作程序——[[#def-enteral]]；经皮胃造口路径与并发症报告——[[surgery/gastrointestinal-surgery]]；带言语治疗师的吞咽困难与国际膳食动作标准门诊——[[nervous-system/stroke]]——及终末期协助进食伦理咨询服务——[[medical-ethics-law/end-of-life-ethics]]、[[geriatrics-palliative/palliative-care]]）；肠外营养治理（专科营养支持团队批准与每日复审模式、无菌配制药学伙伴关系、导管血流感染包裹与封管政策、及肝病与移植转诊触发项——[[#def-parenteral]]、[[infectious-diseases/healthcare-infections]]、[[gastrointestinal/liver-disease]]）；人力与可及性（每床营养师配置基准及口译提供及社区出院衔接——[[public-health/health-systems-economics]]、[[public-health/determinants-inequalities]]）；及审计组（筛查完整性、到营养师复审时间、再喂养规程依从性与低磷血症发生率、肠内喂养中断小时数、每1000导管日的导管血流感染、按病房的营养不良流行率、及住院期间体重下降数字这个必须不断改善的关键指标——[[clinical-skills/patient-safety]]）。**
+$10 \times 45 = 450$ kcal/d。开始喂养前应给予硫胺素和其他B族维生素，并持续最初10天，同时检查电解质并按需补充。在每日监测下，于4～7天内把摄入增加到全量。对进食障碍，专科指南可能允许在密切监督下更快地增加。
+:::
+:::
+
+::: exercise 体重下降百分比 {level=2 check="12.9"}
+一名男性平常体重70 kg。四个月后，他在没有刻意减重的情况下体重为61 kg。计算他的体重下降百分比，保留一位小数。他是否符合NICE的营养不良标准？
+::: hint
+下降百分比等于下降量除以平常体重再乘以100。
+:::
+::: solution
+下降量$= 70 - 61 = 9$ kg。百分比$= 9/70 \times 100 = 12.86\%$，保留一位小数为**12.9%**。这在3～6个月内超过了10%的非故意下降，因此无论BMI如何，他都符合NICE CG32对**营养不良**的定义。
+:::
+:::
+
+::: exercise 计算氮平衡 {level=3 check="-4"}
+一名重症监护患者每天摄入75 g蛋白质。24小时尿液含尿素氮12 g。假设另有4 g氮经粪便、皮肤和尿中非尿素化合物丢失。计算氮平衡（g/d）并加以解读。如果喂养充足而平衡仍为负，你会考虑什么？
+::: hint
+氮摄入量等于蛋白质除以6.25。
+:::
+::: solution
+氮摄入$= 75/6.25 = 12$ g/d。氮丢失$= 12 + 4 = 16$ g/d。平衡$= 12 - 16 = -4$ g/d。患者在丢失氮，相当于每天约$4 \times 6.25 = 25$ g蛋白质，或约125 g瘦组织。
+
+在危重疾病中，应激激素和细胞因子驱动的蛋白质分解是喂养无法完全阻止的。持续负平衡提示需要审查蛋白质供给（适当时增加到推荐范围的上限）、控制基础疾病和感染、早期活动和康复。过度供给能量不能纠正分解代谢，还会引起高血糖和脂肪肝。
+:::
+:::
+
+::: exercise 规划减重手术后的营养 {level=3}
+一名42岁巴基斯坦裔女性接受了Roux-en-Y胃旁路术。解释哪些营养素有缺乏风险及其原因、应如何监测，以及术后最初几个月中哪种症状应促使紧急给予硫胺素。
+::: hint
+考虑哪些肠段被绕过，以及那里吸收什么。
+:::
+::: solution
+**有风险的营养素及原因：** **铁**和**钙**，因为两者主要吸收部位十二指肠被绕过，且胃酸减少；**维生素D**，因为脂肪吸收减少，而且肤色较深的人在英国纬度下皮肤合成减少；**维生素B12**，因为与食物接触的内因子和胃酸很少；**叶酸**；**蛋白质**，因摄入减少；以及**硫胺素**，尤其是在她呕吐时。
+
+**监测：** 终身每日服用复合维生素和矿物质补充剂、钙和维生素D，按当地方案注射B12或口服大剂量B12；术后按间隔、之后至少每年检查全血细胞计数、铁蛋白、叶酸、B12、钙、维生素D和甲状旁腺激素；并由营养师随访。计划怀孕时需要特别注意补充剂。
+
+**紧急症状：** **持续呕吐**，它可迅速耗竭硫胺素并导致Wernicke脑病。出现意识模糊、共济失调或眼球运动异常时需要立即肠外给予硫胺素。
 :::
 :::

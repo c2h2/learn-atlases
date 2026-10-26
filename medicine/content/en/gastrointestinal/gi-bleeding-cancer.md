@@ -1,148 +1,326 @@
-Gastrointestinal bleeding is one of medicine's great time-critical syndromes, and colorectal cancer is one of its great detectable-and-preventable diseases. This chapter joins them: the same endoscopes, scans, surgeons and tumour boards serve both, and the clinical reasoning — blood located, cancer excluded — is one skill.
+Gastrointestinal bleeding and gastrointestinal cancer are linked in practice. Some bleeding is sudden and life-threatening, such as a gastric ulcer eroding an artery or ruptured varices. Some is slow and invisible, producing iron deficiency anaemia over months; this occult bleeding is often the first sign of a cancer. Gastrointestinal cancers together cause more deaths than any other group of cancers in the UK, and colorectal cancer alone is the second commonest cause of cancer death.
 
-This chapter covers the assessment and management of upper and lower GI bleeding, occult bleeding and iron deficiency, and colorectal and anal cancer.
+This chapter covers acute upper and lower gastrointestinal bleeding, variceal bleeding, iron deficiency and occult bleeding, cancers of the oesophagus, stomach, colon, rectum and anus, hereditary cancer syndromes, and bowel cancer screening. It builds on ulcer disease from [[gastrointestinal/oesophagus-stomach]] and on portal hypertension from [[gastrointestinal/liver-disease]].
 
-## Bleeding
+## Acute upper gastrointestinal bleeding
 
 ::: definition Upper gastrointestinal bleeding {#def-ugib}
-**Definition and burden (haematemesis and "coffee-grounds" and melaena; the bleed above the duodenal papilla — anatomy in [[anatomy/abdomen]]; peptic disease and varices and malignancy and mucosal tears as the cause-set, with the [[gastrointestinal/oesophagus-stomach]]'s ulcer pharmacology as the population driver). Assessment: the ABC-and-airway-protection-for-the-haematemesis-and-obtunded ([[emergency-critical-care/airway-ventilation]]), two-large-bore-lines-and-crossmatch ([[emergency-critical-care/acute-assessment]]); the shock index and postural signs with their beta-blocker-and-age caveats ([[emergency-critical-care/resuscitation]] and [[geriatrics-palliative/falls]]-adjacent-orthostasis); the urea-rising-with-near-normal-creatinine as digested-protein absorption ([[renal/water-sodium]] — the azotaemia confusion with true renal injury [[renal/acute-kidney-injury]]); the risk scores (the Glasgow-Blatchford deciding who needs admission and endoscopy at all — the outpatient-eligible low-score patient ([[#def-ugib]]) — and the Rockall-and-AIMS65 predicting mortality ([[clinical-skills/clinical-reasoning]]); and the differential-ingestion notes (red-currents-and-beetroot-and-iron-and-blood-from-the-nose-or-lung — [[anatomy/head-neck]] and [[respiratory/respiratory-infections]]'s haemoptysis distinction [[clinical-skills/history-taking]]). Management: resuscitation-with-the-restrictive-transfusion-threshold-70-80-g/L-except-active-massive-bleeding-and-ischaemia ([[blood/transfusion]]; demand-ischaemia exceptions — [[cardiovascular/coronary-artery-disease]]); high-dose-PPI-for-the-high-risk-ulcer ([[gastrointestinal/oesophagus-stomach]]'s acid-physiology [[gastrointestinal/digestion-absorption]]); early endoscopy (within 24 hours; immediate-for-the-unstable-after-resuscitation) with the haemostasis arsenal (adrenaline-injection-plus-thermal-or-mechanical-clip dual-therapy, the over-the-scope-clip and the haemostatic-powder rescue — [[surgery/gastrointestinal-surgery]]'s boundary) and the rebleeding ladder (second-look-endoscopy, then angiographic embolisation ([[clinical-skills/medical-imaging]]) or surgery (the patch-or-resection decision — [[surgery/acute-abdomen]])); prokinetic-erythromycin-before-endoscopy-for-view-clearing ([[gastrointestinal/digestion-absorption]]'s motilin note); and the cause-specific closes (NSAID-stop-and-H-pylori-eradicate-and-PPI-continue — [[gastrointestinal/oesophagus-stomach]]-and-[[microbiology/antimicrobials]]; the malignancy biopsy-and-staging [[#def-crc]]). The massive upper-bleed protocol: major-bleb? — no: the major-haemorrhage activation (the 1:1:1-or-ratio-plasma-platelet-red-cell strategy and fibrinogen — [[blood/transfusion]] and [[blood/haemostasis-bleeding]]), the tranexamic-acid-DO-NOT-GIVE lesson (HALT-IT: no mortality benefit, more venous thromboembolism and seizures — [[epidemiology-ebm/randomised-trials]]), the anticoagulation-reversal-per-agent (the vitamin-K-plus-PCC-for-warfarin and idarucizumab-and-andexanet-considerations and the DOAC hold-restart arithmetic — [[blood/thrombosis-anticoagulation]] and [[blood/haemostasis-bleeding]] and [[pharmacology/adverse-reactions]]), and the ICU-and-airway threshold ([[emergency-critical-care/critical-care]]). Variceal bleeding gets its own algorithm in [[#def-variceal]].
+**Upper gastrointestinal bleeding** arises proximal to the ligament of Treitz, at the duodenojejunal flexure. It presents with:
+
+- **haematemesis**: vomiting fresh blood or altered "coffee-ground" material;
+- **melaena**: black, tarry, offensive stool from blood digested during its passage through the gut;
+- rarely **haematochezia** (red blood per rectum), when bleeding is so brisk that blood passes through quickly; this signals a major bleed.
+
+The commonest causes are **peptic ulcer**, **oesophagitis and gastritis**, **varices**, a **Mallory–Weiss tear** at the oesophagogastric junction after retching, and **malignancy**.
 :::
 
-::: definition Variceal bleeding, and lower-GI bleeding {#def-variceal}
-**Variceal bleeding (the known-or-occult-cirrhotic with haematemesis — the portal-hypertension anatomy of [[gastrointestinal/liver-disease]] and the portosystemic-shunt vessels of [[anatomy/abdomen]]): the immediate bundle is antibiotic-prophylaxis (the norfloxacin-or-ceftriaxone mortality benefit — [[microbiology/antimicrobials]]), vasoactive-therapy started before endoscopy (terlipressin with its hyponatraemia-and-ischaemia caveats — [[renal/water-sodium]] and [[cardiovascular/vascular-disease]], or somatostatin-analogues where used — [[gastrointestinal/pancreas-biliary]]'s octreotide cousin), resuscitation-with-transfusion-cap (the over-transfusion-raises-portal-pressure-and-rebleed physiology — [[blood/transfusion]]) and early endoscopy with band ligation ([[surgery/gastrointestinal-surgery]]-adjacent endoscopy practice); failure pathways: the balloon-tamponade bridge (the triple-lumen tube as minutes-not-days device), the pre-emptive-or-rescue TIPS (the shunt physiology and encephalopathy trade-off — [[gastrointestinal/liver-disease]] and [[clinical-skills/medical-imaging]]'s interventional suite) and the transplant-centre conversation ([[gastrointestinal/liver-disease]] and [[immunology/transplant-tumour-immunology]]); and the secondary-prophylaxis package (band-surveillance-intervals plus non-selective beta-blocker titration — [[cardiovascular/hypertension]]-adjacent pharmacology and [[gastrointestinal/liver-disease]]'s decompensation-prevention arithmetic). **Lower-GI bleeding (haematochezia and maroon and bright-red per rectum — the brisk-upper-bleed exclusion first, since 10-15 % of "rectal bleeding" is a massive upper source with shock — [[#def-ugib]]): the cause-set by age (diverticular disease — the most common massive lower bleed, painless and self-limiting in most — [[gastrointestinal/bowel-disease]]'s diverticular section); angiodysplasia and vascular ectasias with their aortic-stenosis-and-CKD-and-VWD-associations — [[cardiovascular/valve-congenital-disease]] and [[renal/chronic-kidney-disease]] and [[blood/haemostasis-bleeding]]'s von Willebrand mechanics; colitis infective-and-IBD-and-ischaemic (the segmental-watershed infarct with pain-first pattern — [[anatomy/abdomen]]'s marginal artery, [[gastrointestinal/bowel-disease]] and [[cardiovascular/vascular-disease]]); the haemorrhoid-fissure-proctitis set ([[gastrointestinal/bowel-disease]]) and post-pelvic-radiotherapy bleeding ([[surgery/gastrointestinal-surgery]]) — see the RT-proctitis row below; neoplasm (the [[#def-crc]] presentation — why every PR bleed over 50 gets examined); post-polypectomy and post-biopsy delayed bleeds (the days-later pattern and antithrombotic-planning — [[gastrointestinal/bowel-disease]]'s procedure-sedation-holds and [[blood/thrombosis-anticoagulation]]); and the upper-source mimics (the Meckel's diverticulum in the young — [[anatomy/embryology]]'s vitellointestinal remnant and [[paediatrics/acute-childhood-illness]]). Pathway: risk-stratify-and-admit-by-observations-and-ABG-lactate ([[emergency-critical-care/shock-fluids]]); bowel-prep-and-colonoscopy (the same preparation science as [[gastrointestinal/bowel-disease]]'s quality metrics) within diagnostic admission windows; CT-angiography for the actively bleeding (requires ml-per-minute bleeding rates — the scan-timing physiology [[clinical-skills/medical-imaging]]) with embolisation (the non-diagnostic-angiography and ischaemia-risk caveats — [[surgery/acute-abdomen]]); the nuclear-medicine tagged-cell scan niche; the persistent-obscure pair (repeat upper-and-lower endoscopy with side-viewing duodenoscopy, capsule endoscopy and device-enteroscopy with its retention-safety checks ([[gastrointestinal/bowel-disease]]'s patency-capsule rule) — [[clinical-skills/medical-imaging]]); and the surgery-last decisions (the segmental-versus-subtotal-colectomy dilemma when the site is angiographically-uncertain — [[surgery/gastrointestinal-surgery]]). RT-proctitis and haemorrhagic-radiation-enteritis deserve their own line: after pelvic-radiotherapy for cervical-prostate-and-gynaecological cancer ([[obstetrics-gynaecology/gynaecological-cancer]] and [[surgery/vascular-urological-surgery]]), the telangiectatic bleeds managed with sucralfate-and-formalin-and-argon-plasma-coagulation ([[gastrointestinal/bowel-disease]]-adjacent endoscopy practice and [[geriatrics-palliative/symptom-control]]).**
+A raised **blood urea** with a normal creatinine is typical of upper bleeding. Blood proteins digested in the small intestine are absorbed and converted to urea, and hypovolaemia reduces urea excretion.
+
+### Assessment and resuscitation
+
+The first steps are those of any emergency: airway, breathing and circulation, large-bore intravenous access, and blood for full blood count, urea and electrolytes, liver tests, clotting, and group and crossmatch. Haemoglobin can be normal in the first hours, because whole blood is lost and haemodilution has not yet occurred. Pulse, blood pressure, postural change, capillary refill and urine output are better early guides to the volume lost.
+
+Blood transfusion follows a **restrictive** strategy. A 2013 trial by Villanueva and colleagues found that transfusing when haemoglobin fell below 70 g/L, rather than 90 g/L, reduced rebleeding and death in upper gastrointestinal bleeding. Most guidance now uses a threshold of about 70 g/L, with a higher threshold of about 80 g/L in people with cardiovascular disease, and adjusts for ongoing massive bleeding. Over-transfusion raises portal pressure and can worsen variceal bleeding. Clotting abnormalities and anticoagulants are managed according to local protocols.
+
+Two treatments that seem logical are not recommended. **Tranexamic acid** did not reduce death in the HALT-IT trial (2020) and increased venous thrombosis. **PPIs before endoscopy** are not recommended by NICE, although they are given after endoscopic treatment of an ulcer.
+
+::: theorem Risk stratification decides where and how fast {#thm-gbs}
+In acute upper gastrointestinal bleeding, a validated risk score should be used before endoscopy to decide who needs urgent intervention and who can be managed safely as an outpatient. The **Glasgow–Blatchford score** (GBS) uses only clinical and laboratory data available at presentation.
+
+| Item | Value | Points |
+|---|---|---|
+| Blood urea (mmol/L) | 6.5–7.9 / 8.0–9.9 / 10.0–24.9 / ≥ 25 | 2 / 3 / 4 / 6 |
+| Haemoglobin, men (g/L) | 120–129 / 100–119 / < 100 | 1 / 3 / 6 |
+| Haemoglobin, women (g/L) | 100–119 / < 100 | 1 / 6 |
+| Systolic BP (mmHg) | 100–109 / 90–99 / < 90 | 1 / 2 / 3 |
+| Pulse ≥ 100 per minute | | 1 |
+| Melaena | | 1 |
+| Syncope | | 2 |
+| Hepatic disease | | 2 |
+| Cardiac failure | | 2 |
+
+A score of 0 (NICE) or 0–1 (European and British society guidance) identifies people at very low risk who may be managed without admission. Higher scores predict the need for transfusion or intervention.
 :::
 
-::: definition Occult bleeding and iron deficiency {#def-occult}
-**The silent bleed: iron-deficiency anaemia is a symptom, not a diagnosis — the [[blood/anaemia]] rule that mandates a source hunt (gastrointestinal blood loss, malabsorption with its coeliac-duo ([[gastrointestinal/bowel-disease]] and the [[gastrointestinal/digestion-absorption]]'s iron-address physiology), menstrual and donation and haemolysis history ([[obstetrics-gynaecology/menstrual-pelvic-disorders]] and [[blood/haemoglobin-disorders]])). Bidirectional endoscopy with duodenal biopsies is the standard; when negative, the algorithm (small-bowel capsule first for the mucosal lesions, device-enteroscopy for therapy, cross-sectional CT-mesenteric for masses and the small-bowel tumour set ([[gastrointestinal/bowel-disease]]'s own small-bowel-neoplasm row) and the rare lesions (the Dieulafoy's-calibre-vessel and the Heyde's-syndrome-angiodysplasia — [[cardiovascular/valve-congenital-disease]] — and the Crohn's-ulcer hidden from standard scopes — [[gastrointestinal/bowel-disease]])); faecal haemoglobin testing outside screening (the FIT as a symptomatic-triage tool with its interval-and-diet caveats — [[public-health/screening]] and [[clinical-skills/laboratory-tests]]); and the trial-of-iron trap: replenishing and not scoping is the mechanism of several documented cancer-delay claims ([[clinical-skills/patient-safety]] and [[#ex-delay]]).**
+::: proof
+The score combines markers of three things. Blood urea and haemoglobin reflect the **amount of blood lost**. Pulse, blood pressure and syncope reflect the **body's compensation** for that loss. Liver disease and heart failure reflect the **reserve** to tolerate further bleeding and the likelihood of varices. A person with none of these abnormalities rarely needs transfusion, endoscopic therapy or surgery, so admitting them adds cost and risk without benefit. The **Rockall score**, which adds endoscopic findings, is mainly used after endoscopy to estimate the risk of death.
 :::
 
-::: widget plot
-f: 95/(1+exp(-(x-7.5)*0.5)); 55/(1+exp(-(x-11)*0.4))
-x: 0, 20
-y: 0, 100
-labels: \text{Glasgow-Blatchford score},\ \text{probability (\%)};\ \text{needs intervention (scope/transfusion/surgery)};\ \text{very high-risk stigmata}
-caption: The Glasgow-Blatchford score (haemoglobin, urea, creatinine, pulse, presentation, melena, syncope and hepatic disease — the original 2000 derivation and the validation cohorts) maps admission score to intervention probability ([[#def-ugib]]): the very-low scores (≤1) underpin outpatient pathways, while high scores pull endoscopy earlier and resuscitation harder ([[clinical-skills/clinical-reasoning]], [[emergency-critical-care/acute-assessment]]). Score components read physiology directly — the urea term is digested-blood absorption ([[renal/water-sodium]]), the pulse term is hypovolaemia ([[emergency-critical-care/resuscitation]]) — which is why the score travels between hospitals well ([[public-health/health-systems-economics]]-adjacent implementation science).
-:::
+### Endoscopy
 
-::: example The cirrhotic with haematemesis {#ex-variceal}
-A 52-year-old with alcohol-related cirrhosis (known varices, ascites) has 400 mL haematemesis; HR 118, BP 92/58, Hb 82, INR 1.6, bilirubin 68, temperature 37.9.
+NICE (CG141) recommends endoscopy **immediately after resuscitation** in unstable patients with severe bleeding, and **within 24 hours** of admission for everyone else. Endoscopy identifies the source and stratifies risk: an ulcer with active spurting, a visible vessel or an adherent clot has a high risk of rebleeding and is treated. Endoscopic therapy combines a mechanical method, such as clips, or thermal coagulation, with adrenaline injection; adrenaline alone is not enough. After successful treatment of a high-risk ulcer, a high-dose PPI is given to keep the clot stable, because pepsin and acid dissolve fibrin.
+
+If bleeding recurs, endoscopy is repeated. If it fails, the options are **interventional radiology** with embolisation of the bleeding artery, or **surgery**.
+
+::: example Score the bleed {#ex-ugib}
+A 68-year-old man presents with 2 days of melaena. He takes ibuprofen for back pain. Pulse 102 per minute, blood pressure 104/70 mmHg. No syncope. Haemoglobin 108 g/L, urea 11.2 mmol/L, creatinine normal. He has no liver disease or heart failure. Calculate his Glasgow–Blatchford score and decide on the setting of care.
 ::: solution
-**Presumed variceal until endoscopy says otherwise: the bundle ([[#def-variceal]]) — protected-airway-and-restricted-transfusion-to-70-80-g/L ([[blood/transfusion]], [[emergency-critical-care/airway-ventilation]]), IV ceftriaxone (the bacterial-translocation-and-rebleed-and-mortality evidence — [[microbiology/antimicrobials]] and [[immunology/innate-immunity]]'s barrier-defence lesson), terlipressin-with-sodium-and-ischaemia-watch ([[renal/water-sodium]], [[cardiovascular/vascular-disease]]) and urgent endoscopy with banding; the INR-1.6-is-not-protected note (the rebalanced-circulation of cirrhosis and the Futile-Fresh-Frozen-Plasma volume problem — [[blood/haemostasis-bleeding]] and [[gastrointestinal/liver-disease]]; TEG/ROTEM guidance where available — [[blood/transfusion]]); the failure plan (rebleeding within 72 hours escalates to re-endoscopy, the balloon-tamponade bridge and pre-emptive TIPS ([[clinical-skills/medical-imaging]] and [[immunology/transplant-tumour-immunology]]-adjacent center-portal logic)); and the admission's secondary gains (the alcohol-treatment referral and withdrawal-cover ([[psychiatry/substance-use]]), the decompensation-augments-advanced-liver-disease staging and transplant-conversation ([[gastrointestinal/liver-disease]]), the nutrition-and-sarcopenia plan ([[gastrointestinal/clinical-nutrition]]), the vaccination-and-hepatitis-status catch-up ([[immunology/vaccines-immunotherapy]], [[gastrointestinal/liver-disease]]'s viral-hepatitis sections) and the family-and-goals documentation ([[clinical-skills/communication]], [[medical-ethics-law/consent-capacity]]).**
+Using the table in [[#thm-gbs]]:
+
+- Urea 11.2 mmol/L: 4 points.
+- Haemoglobin 108 g/L in a man: 3 points.
+- Systolic BP 104 mmHg: 1 point.
+- Pulse 102 per minute: 1 point.
+- Melaena: 1 point.
+- Syncope, liver disease, cardiac failure: 0.
+
+Total $= 4 + 3 + 1 + 1 + 1 = 10$.
+
+A score of 10 is far above the low-risk threshold. He needs admission, resuscitation, and endoscopy within 24 hours, or sooner if he becomes unstable. The NSAID should be stopped, and *H. pylori* should be tested for.
 :::
 :::
 
-::: example The fatigue that was "just iron" {#ex-delay}
-A 64-year-old man is given three months of oral iron at a private visit for tiredness; FBC then shows Hb 96, MCV 76, ferritin 9. He reports dark stools "some weeks". No gastroscopy or colonoscopy has been done.
+## Variceal bleeding
+
+::: definition Variceal bleeding {#def-variceal}
+**Varices** are dilated portosystemic collateral veins that develop when portal pressure rises, most often in the lower oesophagus and upper stomach. **Variceal bleeding** is the rupture of one of these veins. It occurs mainly in people with cirrhosis and portal hypertension and carries a high short-term mortality.
+:::
+
+Variceal bleeding is managed differently from ulcer bleeding. In a person with known or suspected cirrhosis who has an upper gastrointestinal bleed, the standard approach includes:
+
+- **Vasoactive drugs**, such as **terlipressin**, started before endoscopy. Terlipressin is a vasopressin analogue that constricts the splanchnic arterioles and so reduces portal inflow.
+- **Prophylactic antibiotics**, because bacterial infection is common in these patients and treating it reduces rebleeding and death.
+- **Endoscopic band ligation** for oesophageal varices. Gastric varices are often treated with tissue adhesive injection.
+- **Transjugular intrahepatic portosystemic shunt** (TIPS) if bleeding cannot be controlled, or early in selected high-risk people. A temporary balloon tamponade tube can be a bridge.
+- Careful volume replacement, avoiding over-transfusion.
+
+Prevention of first or recurrent variceal bleeding with non-selective beta-blockers and banding is covered in [[gastrointestinal/liver-disease]].
+
+::: example Haematemesis in cirrhosis {#ex-variceal}
+A 52-year-old woman with alcohol-related cirrhosis vomits a large volume of fresh blood. Pulse 124 per minute, blood pressure 86/50 mmHg. She is drowsy. Outline the first hour of management and explain why each step matters.
 ::: solution
-**Iron-deficiency anaemia in a 64-year-old man is gastrointestinal blood loss (or a right-sided colorectal cancer) until bidirectional endoscopy says otherwise ([[#def-occult]]): this vignette is a documented-diagnostic-error pattern — iron without investigation ([[clinical-skills/patient-safety]]-incident-class and the duty-to-re-refer letter ([[clinical-skills/records-handover]])). Now: the urgent pathway (the 2-week-wait-cancer referral mechanics and the do-not-repeat-the-trial-of-iron rule ([[gastrointestinal/gi-bleeding-cancer]]-pathways; FIT-not-needed when the indication is already strong — [[public-health/screening]])); the investigations (the gastroscopy-and-colonoscopy-with-ileoscopy-and-duodenal-biopsies, the CT-if-scopes-negative small-bowel protocol [[#def-occult]], and the coeliac serology as the second-cofounder ([[gastrointestinal/bowel-disease]])); the common findings-and-moves (right-sided colon cancer — [[#def-crc]]-surgery-and-staging, gastric ulcer with biopsy — [[gastrointestinal/oesophagus-stomach]], the atrophic-gastritis-H-pylori pattern, angiodysplasia — [[cardiovascular/valve-congenital-disease]]'s Heyde link, and the drug history (NSAID and aspirin and DOAC — [[pharmacology/adverse-reactions]]-and-[[blood/thrombosis-anticoagulation]])); the iron-completion (the oral-versus-intravenous decision with the IBD-active-disease caveat ([[gastrointestinal/bowel-disease]]-and-[[blood/anaemia]])); and the systems lesson (the safety-netting letter and GP-loop-closure — [[clinical-skills/patient-safety]] and the primary-care second-line reviews of [[public-health/health-systems-economics]]).**
+**Step 1: protect the airway.** She is drowsy and vomiting blood, so aspiration is a major risk. Early anaesthetic review for airway protection is appropriate, particularly before endoscopy.
+
+**Step 2: resuscitate.** Large-bore access, blood for crossmatch, and activation of the major haemorrhage protocol given her shock. Transfuse red cells with a restrictive target once she is stabilised, because over-transfusion increases portal pressure. Correct clotting and platelets according to local protocols and viscoelastic testing if available.
+
+**Step 3: give terlipressin and antibiotics** as soon as variceal bleeding is suspected, before endoscopy. Terlipressin lowers portal pressure; antibiotics reduce infection, rebleeding and mortality.
+
+**Step 4: endoscopy** as soon as she is resuscitated, with band ligation of bleeding oesophageal varices.
+
+**Step 5: plan for failure.** If bleeding continues, balloon tamponade can buy time while TIPS is arranged. Thiamine should be given because of her alcohol history, and she needs monitoring for alcohol withdrawal and hepatic encephalopathy.
 :::
 :::
 
-## Cancers of the lower gut
+## Lower gastrointestinal bleeding
+
+**Lower gastrointestinal bleeding** arises from the colon, rectum or anus and presents as **haematochezia**, the passage of red or maroon blood. The commonest causes in adults are **diverticular bleeding**, **haemorrhoids**, **ischaemic colitis**, **inflammatory bowel disease**, **colorectal cancer or polyps** (including bleeding after polypectomy) and **angiodysplasia**.
+
+Most lower bleeding stops spontaneously. The British Society of Gastroenterology (2019) recommends the **Oakland score**, which combines age, sex, previous admission with lower bleeding, rectal examination findings, heart rate, blood pressure and haemoglobin. People with a score of 8 or less, without other reasons for admission, can be discharged for urgent outpatient investigation. Unstable patients, judged for example by a **shock index** (heart rate divided by systolic blood pressure) above 1, should have **CT angiography** to locate the bleeding before interventional radiology. An upper source must be considered in anyone with haematochezia and shock, because a brisk upper bleed can present this way.
+
+::: example Massive painless bleeding {#ex-diverticular}
+A 79-year-old man has passed a large amount of red blood and clots per rectum without pain. He takes apixaban for atrial fibrillation. Pulse 118 per minute, blood pressure 96/60 mmHg, haemoglobin 92 g/L. Calculate his shock index and outline the steps of management.
+::: solution
+**Shock index** $= 118/96 = 1.23$. A value above 1 indicates haemodynamic instability.
+
+**Step 1: resuscitate** and send blood for crossmatch.
+
+**Step 2: consider the anticoagulant.** Apixaban is a factor Xa inhibitor. Management follows local protocols and depends on the severity of bleeding and the time of the last dose; specific reversal agents or prothrombin complex concentrate may be considered in life-threatening bleeding. The stroke risk of stopping anticoagulation must be weighed later with cardiology.
+
+**Step 3: exclude an upper source.** His instability means a brisk upper bleed is possible, so upper endoscopy may be needed early, particularly if urea is raised.
+
+**Step 4: locate the bleeding.** CT angiography can show contrast leaking into the bowel. If it does, interventional radiology can embolise the artery. Painless massive bleeding in an older person is typical of **diverticular bleeding** or angiodysplasia.
+
+**Step 5: follow-up.** Once stable, colonoscopy is needed to look for the source and to exclude cancer.
+:::
+:::
+
+## Occult bleeding and iron deficiency
+
+::: definition Occult gastrointestinal bleeding {#def-occult}
+**Occult gastrointestinal bleeding** is blood loss that is not visible to the person but is detected by a test, typically as **iron deficiency anaemia** or a positive faecal immunochemical test. **Obscure bleeding** is bleeding whose source is not found after upper endoscopy and colonoscopy, and it often comes from the small bowel.
+:::
+
+Iron deficiency anaemia is common, and its cause must be found. In men and postmenopausal women, gastrointestinal blood loss from cancer is the most important cause to exclude. British Society of Gastroenterology guidance (2021) recommends testing for coeliac disease in everyone with iron deficiency anaemia, and **bidirectional endoscopy** (upper endoscopy and colonoscopy) for men and postmenopausal women, unless there is an obvious non-gastrointestinal cause. Premenopausal women are investigated more selectively, because menstrual loss is the usual cause. Urinalysis for blood is part of the work-up because renal tract cancers can cause anaemia. If both endoscopies are normal and anaemia persists, **capsule endoscopy** examines the small bowel.
+
+::: example "Just iron deficiency" {#ex-delay}
+A 71-year-old woman of Bangladeshi heritage is noted to have a haemoglobin of 98 g/L with a mean cell volume of 72 fL and a ferritin of 5 µg/L on routine blood tests. She feels tired but has no gastrointestinal symptoms. Her GP starts oral iron. Six months later she is admitted with bowel obstruction from a caecal cancer. What went wrong, and what should have happened?
+::: solution
+**Step 1: the error.** Iron deficiency anaemia in a postmenopausal woman was treated without looking for its cause. Lack of symptoms does not exclude cancer: **right-sided colon cancers** often bleed slowly and cause anaemia without any change in bowel habit, because stool in the right colon is liquid and passes a tumour easily.
+
+**Step 2: the correct pathway.** Confirm iron deficiency (low ferritin with microcytic anaemia), check coeliac serology and urinalysis, and refer for investigation of the gastrointestinal tract under the suspected cancer pathway. NICE NG12 lists iron deficiency anaemia in adults aged 60 or over among the features that should prompt assessment for colorectal cancer. Iron replacement should be started at the same time, not instead of investigation.
+
+**Step 3: the lesson.** Iron deficiency is a finding, not a diagnosis. Correcting the anaemia can mask the progress of the underlying disease.
+:::
+:::
+
+::: warning Treating the number instead of the cause
+A rising haemoglobin on iron tablets is reassuring only about the anaemia, not about its cause. In anyone where gastrointestinal blood loss is possible, investigation should proceed even if the anaemia responds.
+:::
+
+## Oesophageal and gastric cancer
+
+**Oesophageal cancer** has two main types with different causes. **Squamous cell carcinoma** occurs mainly in the upper and middle oesophagus and is linked to smoking, alcohol, very hot drinks and poor diet; it is the dominant type worldwide, with high rates in a belt from northern Iran across central Asia to China, and in eastern Africa. **Adenocarcinoma** occurs in the lower oesophagus, arises from Barrett's oesophagus, and is linked to reflux, obesity and male sex; it is now the commonest type in the UK and other Western countries.
+
+**Gastric cancer** is almost always adenocarcinoma. The main risk factor worldwide is chronic *H. pylori* infection, which leads through atrophic gastritis and intestinal metaplasia to the **intestinal type** of cancer. The **diffuse type**, which infiltrates the wall without forming a mass ("linitis plastica"), is less tied to environment. Germline variants in *CDH1*, which encodes E-cadherin, cause **hereditary diffuse gastric cancer**. Rates are highest in East Asia, where Japan and South Korea have screening programmes.
+
+Both cancers usually present late, with dysphagia, weight loss, anaemia, dyspepsia or vomiting, which is why the alarm features in [[gastrointestinal/oesophagus-stomach]] matter. Diagnosis is by endoscopy and biopsy, followed by staging with CT, PET-CT and sometimes endoscopic ultrasound and laparoscopy. Curative treatment for localised disease combines chemotherapy or chemoradiotherapy with surgery. Very early cancers can be removed endoscopically. Advanced disease is treated with palliative chemotherapy, immunotherapy or targeted drugs, and with stents for dysphagia.
+
+## Colorectal cancer
 
 ::: definition Colorectal cancer {#def-crc}
-**Epidemiology and prevention: the adenoma-carcinoma sequence (the APC-MAPK-p53-and-mismatch-repair-molecular progression — [[pathology/cancer-diagnosis]] and the serrated-BRAF-CpG-island alternative), the lifetime-risk-and-age-curve and the concerning early-onset rise (the obesity-and-antibiotic-and-Western-diet hypotheses — [[public-health/determinants-inequalities]] and the audit-implications for younger presentations); the proven-prevention levers: screening (below), aspirin-in-Lynch (the CAPP2 randomised evidence — [[cardiovascular/vascular-disease]]-adjacent and [[public-health/prevention-promotion]]) with its no-general-population-recommendation honesty ([[epidemiology-ebm/systematic-reviews]]), the red-and-processed-meat-and-alcohol-and-obesity-and-smoking-and-inactivity data ([[public-health/prevention-promotion]], [[psychiatry/substance-use]]-adjacent-alcohol-epidemiology), and the inflammatory-bowel-disease-risk-and-surveillance-colonoscopy ([[gastrointestinal/bowel-disease]]-and-[[public-health/screening]]).** **Screening programmes: the faecal-immunochemical-test-and-bowel-scope-and-invitational-colonoscopy architecture ([[public-health/screening]]'s sensitivity-specificity-and-overdiagnosis arithmetic), the colonoscopic-polypectomy-and-histology-grading, and the interval-cancer concept ([[clinical-skills/patient-safety]]'s quality metrics). Presentation and diagnosis: changed-bowel-habit-with-bleed-and-weight-loss-and-iron-deficiency-and-hidden-blood, the obstruction-and-perforation-and-mass first-presentations ([[surgery/acute-abdomen]]), the tenesmus-and-rectal-mass-and-haemorrhoid-mislabel trap ([[#ex-delay]] and [[clinical-skills/clinical-reasoning]]); the DRE-and-flexible-sigmoidoscopy-and-full-colonoscopy-with-biopsy work-up ([[clinical-skills/physical-examination]]); staging (CT-chest-abdomen-pelvis, the MRI-pelvis for rectal primaries with its circumferential-resection-margin-and-extramural-vascular-invasion reporting — [[clinical-skills/medical-imaging]], CEA-baseline-not-diagnostic ([[clinical-skills/laboratory-tests]]), PET-in-the-metastasectomy-candidate, and the MDT and TNM of [[pathology/cancer-diagnosis]]). Management by stage: the surgery ([[surgery/gastrointestinal-surgery]]: right and left hemicolectomy and the anterior resection and abdominoperineal excision with its stoma consequences ([[gastrointestinal/clinical-nutrition]] stoma-diet counselling, the pelvic-nerve sexual-and-bladder-function consequences — [[anatomy/pelvis-perineum]] — and the reconstruction options — [[surgery/gastrointestinal-surgery]]); the total-mesorectal-excision plane (the Heald anatomy of [[anatomy/pelvis-perineum]]) that halved local recurrence; the neoadjuvant-chemoradiotherapy-and-short-course-radiotherapy-and-total-neoadjuvant-therapy sequences for rectal cancer with the watch-and-wait-for-complete-clinical-response paradigm ([[surgery/gastrointestinal-surgery]]-and-[[geriatrics-palliative/symptom-control]]-adjacent organ-preservation trade-offs); the adjuvant-FOLFOX-and-CAPOX-and-MSI-directed-de-escalation ([[immunology/vaccines-immunotherapy]]'s checkpoint-inhibitor MSI trials in earlier stages); the metastatic tier (the liver-limited-metastasectomy-and-ablation-and-portal-embolisation programme and peritoneal-disease cytoreduction-and-HIPEC selection debates ([[surgery/gastrointestinal-surgery]]) and the molecular-targeted ladder — RAS-and-BRAF-and-HER2-and-MSI-testing for anti-EGFR-and-anti-VEGF-and-encorafenib-and-checkpoint-choices ([[genetics/genomic-medicine]]); the palliative tier (the obstructing-tumour stent-or-stoma decisions ([[surgery/acute-abdomen]]-and-[[surgery/gastrointestinal-surgery]]), the bleeding-and-pain radiotherapy, the defunctioning-and-pelvic-bleeding arithmetic and the specialist-palliative co-management — [[geriatrics-palliative/palliative-care]]-and-[[geriatrics-palliative/symptom-control]]); and the follow-up-and-surveillance-colonoscopy-and-CT-and-CEA schedules and the CEA-triggered-reimaging cascade's over-investigation debates ([[public-health/screening]]). The genetic tier: Lynch syndrome and the polyposis syndromes are detailed in [[gastrointestinal/bowel-disease]]'s own chapter role, but their surgical expression (the extended-colectomy choices and the prophylactic decisions) lives here ([[surgery/gastrointestinal-surgery]], [[genetics/cancer-genetics]] and the [[obstetrics-gynaecology/gynaecological-cancer]] gynaecological-surveillance for Lynch women).**
+**Colorectal cancer** is a malignant tumour of the colon or rectum, almost always an **adenocarcinoma**. Most arise from benign **adenomatous polyps** through the **adenoma–carcinoma sequence**, an accumulation of mutations over about 10 years or more. Spread is described with the **TNM system**: depth of invasion through the bowel wall (T), lymph node involvement (N) and distant metastasis (M), most often to the liver.
 :::
+
+The adenoma–carcinoma sequence classically involves loss of the *APC* tumour suppressor gene, then *KRAS* activation, then *TP53* loss, a model often linked to Bert Vogelstein's work in the late 1980s. A second route, through defective **DNA mismatch repair**, produces tumours with **microsatellite instability**. Because polyps are slow to become cancers, finding and removing them prevents cancer, which is the basis of screening.
+
+Risk factors include age, a family history, inflammatory bowel disease, obesity, physical inactivity, high intake of red and processed meat, alcohol and smoking.
+
+Symptoms depend on position. **Left-sided and rectal** tumours cause rectal bleeding, change in bowel habit, tenesmus and obstruction. **Right-sided** tumours more often present with iron deficiency anaemia, weight loss or a mass.
+
+In the UK, people with symptoms that could be colorectal cancer are triaged in primary care with a **faecal immunochemical test** (FIT), which measures haemoglobin in stool. As of 2026, NICE diagnostics guidance DG56 recommends a suspected cancer referral for adults with a FIT result of at least 10 µg of haemoglobin per gram of faeces. A rectal mass is referred without waiting for FIT, and referral should not be delayed if there is clinical concern despite a negative test.
+
+Treatment of colon cancer is surgical resection with its lymph nodes, followed by adjuvant chemotherapy for node-positive disease. Rectal cancer is staged with pelvic MRI and may be treated with radiotherapy or chemoradiotherapy before surgery. Liver metastases can sometimes be resected with curative intent.
+
+::: widget bayes
+mode: test
+prevalence: 0.03
+sensitivity: 0.9
+specificity: 0.85
+caption: Illustrative figures for a faecal immunochemical test at a low threshold in people with symptoms. At 3% prevalence most positive results are false positives, but a negative result makes cancer much less likely. The values are rounded teaching figures, not the performance of a specific assay.
+:::
+
+### Hereditary syndromes
+
+::: definition Hereditary colorectal cancer syndromes {#def-polyposis}
+- **Lynch syndrome** is caused by a germline variant in a DNA mismatch repair gene (*MLH1*, *MSH2*, *MSH6*, *PMS2*) or *EPCAM*. It is autosomal dominant and causes colorectal cancer, often without many polyps, and cancers of the endometrium, ovary, stomach, small bowel and urinary tract. NICE recommends testing all colorectal and endometrial cancers for mismatch repair deficiency to find affected families.
+- **Familial adenomatous polyposis** (FAP) is caused by a germline *APC* variant. It is autosomal dominant and produces hundreds to thousands of colorectal adenomas from adolescence, with near-certain cancer without prophylactic colectomy. Duodenal adenomas and desmoid tumours are important extra-colonic features.
+- **MUTYH-associated polyposis** is autosomal recessive and causes a smaller number of adenomas.
+:::
+
+People with these syndromes have colonoscopic surveillance from a young age, and relatives are offered genetic counselling and testing ([[genetics/cancer-genetics]]). Aspirin reduces the risk of cancer in Lynch syndrome, as shown in the CAPP2 trial.
+
+### Bowel cancer screening
+
+Screening aims to find cancer at an earlier stage and to remove polyps before they become cancer. In England, the NHS Bowel Cancer Screening Programme sends a home FIT kit every 2 years to people aged 50 to 74. A result at or above the programme threshold, 120 µg/g in England in 2026 with a planned reduction, leads to an offer of colonoscopy. Scotland uses a threshold of 80 µg/g. The trade-off is between sensitivity and the colonoscopy capacity needed. Screening principles are discussed in [[public-health/screening]].
+
+## Anal cancer and the anal canal
 
 ::: definition Anal cancer {#def-anal}
-**Anal carcinoma (the HPV-driven squamous majority — [[microbiology/viruses]]'s oncogenic-HPV and the [[immunology/vaccines-immunotherapy]]-and-[[public-health/vaccination-programmes]] vaccination-programme argument): risk (the MSM-and-HIV-and-immunosuppression-and-smoking-and-genital-HPV-lesion-history — [[infectious-diseases/hiv]] and [[infectious-diseases/immunocompromised-host]] and [[obstetrics-gynaecology/gynaecological-cancer]]'s cervical-HPV framing); presentation (the bleeding-and-pain-and-mass-and-pruritus-anus mislabelled as haemorrhoids — the [[#def-occult]]-and-[[clinical-skills/clinical-reasoning]]-diagnostic-temptation; the inguinal-node basin examination — [[anatomy/pelvis-perineum]] and [[anatomy/lower-limb]]'s nodal chains); diagnosis (the biopsy-and-PET-and-MRI-local-staging-and-inguinal-node-FNA — [[clinical-skills/medical-imaging]] and [[pathology/cancer-diagnosis]]); treatment (the Nigro chemoradiation-first paradigm — the definitive-cure-with-sphincter-preservation story as one of oncology's great conservative-triumphs — [[surgery/gastrointestinal-surgery]]'s radiation-delivery-practice and [[pharmacology/dosing-principles]]-adjacent mitomycin-and-5FU-or-cisplatin schedules); the persistent-or-recurrent disease salvage (the abdominoperineal-excision-with-permanent-colostomy and the inguinal-dissection decisions and the immunotherapy-for-refractory era — [[immunology/vaccines-immunotherapy]]); the anal-intraepithelial-neoplasia and high-resolution-anoscopy surveillance programs for high-risk groups (the HIV-positive-MSM-screening-trials and the over-treatment-balance — [[public-health/screening]] and the anogenital-disease MDT literature — [[obstetrics-gynaecology/gynaecological-cancer]]); and the sequelae management (the radiation proctitis bleeding (RT-proctitis row in [[#def-variceal]]), the functional-and-sexual-and-anal-pain outcomes ([[gastrointestinal/bowel-disease]]-adjacent anorectal physiology and [[musculoskeletal/back-pain]]-adjacent pelvic-pain clinics) and the continence-and-stoma-nursing partnership ([[clinical-skills/records-handover]]-adjacent community-DN-caseloads and [[geriatrics-palliative/symptom-control]]).**
+**Anal cancer** is most often a **squamous cell carcinoma** of the anal canal. Most cases are caused by persistent infection with high-risk **human papillomavirus**, especially HPV 16. Risk is higher in people with HIV, in men who have sex with men, in women with previous cervical, vulval or vaginal neoplasia, and with immunosuppression after organ transplantation.
 :::
 
-::: example The massive painless bleed {#ex-diverticular}
-A 78-year-old on apixaban for atrial fibrillation passes a large volume of maroon stool and clots, feels faint; HR 112, BP 100/60, Hb 88 (baseline 130), abdomen soft and painless, no melaena.
-::: solution
-**Lower-GI bleeding with haemodynamic compromise: the simultaneous work ([[#def-variceal]] and [[#def-ugib]]-protocols): resuscitation-and-crossmatch ([[emergency-critical-care/resuscitation]]), the nasogastric-lavage-or-EGD-first-question for the brisk-upper-source (the 10-15 % rule), apixaban management (the last-dose-timing-and-andexanet-or-PCC-consideration and the mechanical-versus-drug-reversal trade-off — [[blood/thrombosis-anticoagulation]] and [[blood/haemostasis-bleeding]]), and the localising-plan: CT-angiography during active bleeding (the rate-threshold physics — [[clinical-skills/medical-imaging]]) with embolisation, versus rapid-prep colonoscopy with endoscopic therapy (the clipped-vessel-or-adrenaline-or-argon patterns); the diagnosis (diverticular bleeds are classically this painless-massive-maroon pattern — [[gastrointestinal/bowel-disease]]'s diverticular-row — with angiodysplasia the elderly-caecum alternative); the recurrent-bleed arithmetic (the transfusion-need-and-rebleed-rate and the segmental-versus-blind-subtotal-colectomy-when-site-unknown [[surgery/gastrointestinal-surgery]]; the radiological-tattoo-localisation practice [[clinical-skills/medical-imaging]]); the AF-and-anticoagulation after-decision (the CHA2DS2-VASc-and-Bleeding-risk-versus-stroke-risk conversation and the resumption-timing-days-versus-weeks evidence-gap honesty — [[cardiovascular/arrhythmias]]-and-[[blood/thrombosis-anticoagulation]]-and-[[nervous-system/stroke]]); and the "was-it-really-lower?" close (the upper-source-negative work and the iron-deficiency-occult-malignancy screen [[#def-occult]], the post-bleed colonoscopy to exclude the cancer and the segmental colitis differentials [[gastrointestinal/bowel-disease]]).**
-:::
-:::
+Anal cancer presents with bleeding, pain, a lump, itching or discharge, symptoms easily attributed to haemorrhoids. The primary treatment is **chemoradiotherapy**, which preserves the anal sphincter in most people; surgery is kept for residual or recurrent disease. HPV vaccination is expected to reduce incidence.
 
-::: example The thrombosed haemorrhoid {#ex-anal}
-A 38-year-old man living with HIV (CD4 220, not virally suppressed) has 4 months of anal pain, bleeding and a "thrombosed haemorrhoid" treated twice with topical therapy and an analgesic plan; now there is a 3 cm ulcerated, indurated lesion at the anal margin and a hard inguinal node.
+**Haemorrhoids** are enlarged vascular cushions of the anal canal. They cause bright red bleeding on the paper or in the pan after defecation, typically painless, and prolapse. A painful, tense purple lump at the anal margin is usually a **thrombosed external haemorrhoid**. Anal fissures cause sharp pain on defecation with a little bright blood.
+
+::: example Bleeding that was not haemorrhoids {#ex-anal}
+A 48-year-old man living with HIV, on effective antiretroviral therapy, has 4 months of anal bleeding and discomfort. He was told he had haemorrhoids and used creams without improvement. Examination shows a firm, ulcerated lesion at the anal verge and a hard inguinal lymph node. What is the likely diagnosis, and what are the next steps?
 ::: solution
-**Anal cancer until biopsied ([[#def-anal]]): the mislabelled-PR-symptom trap with a visible benign cause, the HIV-and-MSM-and-HPV risk stacking ([[infectious-diseases/hiv]] — the HPV-disease-burden in immunocompromise, [[infectious-diseases/immunocompromised-host]]), and the delay-versus-alarm reasoning ([[clinical-skills/clinical-reasoning]], [[clinical-skills/patient-safety]]). Now: **punch biopsy of the margin lesion and FNA of the inguinal node; PET-CT and pelvic MRI staging ([[clinical-skills/medical-imaging]], [[pathology/cancer-diagnosis]]); the curative chemoradiation-first plan (the Nigro paradigm — mitomycin-plus-5FU with intensity-modulated radiotherapy — [[surgery/gastrointestinal-surgery]]-and-[[pharmacology/dosing-principles]]-adjacent schedules) with the HIV-viral-suppression programme run in parallel (the ART-interaction review with the HIV team — [[infectious-diseases/hiv]] and [[pharmacology/metabolism-excretion]]); the anal-cancer-HIV survival-gap and clinical-trial-access equity argument ([[public-health/determinants-inequalities]]); the AIN-and-cervical-and-penile field surveillance and the sexual-health partnership ([[obstetrics-gynaecology/gynaecological-cancer]]-adjacent-screening-logic [[public-health/screening]]); the ostomy-and-salvage conversation only for persistent disease ([[surgery/gastrointestinal-surgery]]); the pain-and-bowel-management and smoking-cessation supportive care ([[geriatrics-palliative/symptom-control]], [[psychiatry/substance-use]]); and the vaccination-and-partner discussion (the HPV-vaccine programme argument — [[public-health/vaccination-programmes]] and [[immunology/vaccines-immunotherapy]]).**
+**Step 1: recognise the pattern.** A firm, ulcerated anal lesion with an enlarged inguinal node is not typical of haemorrhoids. In a man living with HIV, a group at higher risk, **anal squamous cell carcinoma** is the likely diagnosis. The anal canal below the dentate line drains to the inguinal nodes.
+
+**Step 2: next steps.** Urgent referral on a suspected cancer pathway; examination under anaesthesia with biopsy; staging with pelvic MRI and CT or PET-CT; and fine-needle sampling of the node. Treatment is planned by a multidisciplinary team, and is usually chemoradiotherapy.
+
+**Step 3: the lesson.** Anorectal symptoms that do not respond to treatment, or with atypical findings, need examination and biopsy. Persistent symptoms should never be attributed to haemorrhoids without a proper examination.
 :::
 :::
 
 ::: quiz
-Tranexamic acid in acute gastrointestinal bleeding:
-- [ ] Is recommended for all upper bleeds
-- [x] Is not recommended: the HALT-IT trial showed no survival benefit and more seizures and venous thromboembolism
-- [ ] Replaces endoscopic haemostasis
-- [ ] Is the reversal agent for direct oral anticoagulants
+A 58-year-old man has had an episode of haematemesis. His Glasgow–Blatchford score is 0. According to NICE, what is the most appropriate management?
+- [ ] Admit for urgent endoscopy within 12 hours
+- [ ] Give tranexamic acid and observe overnight
+- [x] Consider early discharge with outpatient endoscopy
+- [ ] Start a PPI infusion before endoscopy
 ::: solution
-**HALT-IT (the 12 000-patient randomised trial — [[epidemiology-ebm/randomised-trials]]-and-[[public-health/health-systems-economics]]'s generalisability discussion) closed a plausible-to-efficacy gap: TXA did not reduce death from GI bleeding while increasing seizures and VTE ([[#def-ugib]]); the case is a lesson in mechanism-plausible-but-wrong and in why trials precede protocols ([[epidemiology-ebm/statistics-for-clinicians]]'s-chance-argument). Reversal is agent-specific — idarucizumab for dabigatran, andexanet-or-PCC-considerations for factor-Xa inhibitors, vitamin-K-plus-PCC for warfarin ([[blood/thrombosis-anticoagulation]], [[blood/haemostasis-bleeding]]).**
+A Glasgow–Blatchford score of 0 identifies people at very low risk of needing intervention. NICE suggests considering **early discharge** with outpatient follow-up. Tranexamic acid did not reduce mortality in HALT-IT and increased thrombosis. PPIs are not recommended before endoscopy.
 :::
 :::
 
 ::: history
-**The GI-bleeding and cancer-care lineage: Harvey's circulation and the surgical haemorrhage-era (the nineteenth-century ligation-and-haemostasis era — [[surgery/vascular-urological-surgery]]); the gastric-ulcer-and-NSAID-awakening (the piroxicam-1970s-pharmacovigilance and the COX-era [[pharmacology/drug-receptor]]); the variceal-sclerotherapy-then-banding arc and the TIPS of 1988-89 ([[clinical-skills/medical-imaging]]); the HALT-IT-2020-negative-trial ([[epidemiology-ebm/randomised-trials]]); the endoscopic-haemostasis-arsenal evolution (the heater-probe-to-clip-to-OTSC-to powder arc [[surgery/gastrointestinal-surgery]]); the capsule-endoscopy-first-2000-small-bowel-democratisation ([[clinical-skills/medical-imaging]]); Heald's-total-mesorectal-excision-1982 (the anatomy-that-halved-recurrence [[anatomy/pelvis-perineum]]); the Nigro-1974 chemoradiation-cure of anal cancer ([[microbiology/viruses]]'s HPV-aetiology-follows); the FOLFOX-and-targeted-therapy era and the MSI-immunotherapy-demonstrations ([[immunology/vaccines-immunotherapy]], [[genetics/genomic-medicine]]); the national screening programmes (the FOBT-to-FIT-transition and bowel-scope pilots — [[public-health/screening]]); and the two-week-wait and cancer-waiting-times accountability architecture of the NHS ([[public-health/health-systems-economics]], [[clinical-skills/patient-safety]]).**
+In 1996 Tim Rockall and colleagues published a risk score derived from a national UK audit of upper gastrointestinal bleeding, and in 2000 Oliver Blatchford and colleagues in Glasgow published a score that could be used before endoscopy. Colorectal cancer screening was transformed by randomised trials of faecal occult blood testing: the Minnesota trial, led by Jack Mandel and published in 1993, and the Nottingham trial led by Jack Hardcastle, published in 1996, both showed reduced colorectal cancer mortality. In 1990 Eric Fearon and Bert Vogelstein proposed the genetic model of colorectal tumorigenesis that made the adenoma–carcinoma sequence a molecular story.
+:::
+
+::: summary
+- Upper gastrointestinal bleeding presents with haematemesis or melaena; peptic ulcer is the commonest cause. A raised urea suggests an upper source.
+- Resuscitate first, transfuse restrictively, use the Glasgow–Blatchford score before endoscopy, and perform endoscopy within 24 hours.
+- Tranexamic acid and pre-endoscopy PPIs are not recommended; a high-dose PPI follows endoscopic treatment of a high-risk ulcer.
+- Variceal bleeding needs terlipressin and antibiotics before endoscopy, band ligation, and TIPS if bleeding continues.
+- Lower bleeding usually stops; the Oakland score guides discharge, and CT angiography locates bleeding in unstable patients.
+- Iron deficiency anaemia in men and postmenopausal women requires investigation of the gastrointestinal tract.
+- Most colorectal cancers arise from adenomas. FIT is used to triage symptomatic people (threshold 10 µg/g) and for screening (120 µg/g in England).
+- Lynch syndrome and FAP are the main hereditary syndromes; anal cancer is driven by HPV.
 :::
 
 ## Where this leads
 
-Upper-GI causes and prevention in [[gastrointestinal/oesophagus-stomach]]; portal hypertension and varices in [[gastrointestinal/liver-disease]]; diverticular and IBD bleeding in [[gastrointestinal/bowel-disease]]; the surgical and oncological delivery in [[surgery/gastrointestinal-surgery]] and [[surgery/gastrointestinal-surgery]]; Lynch and polyposis genetics in [[gastrointestinal/bowel-disease]] and [[genetics/cancer-genetics]]; screening design in [[public-health/screening]]; resuscitation in [[emergency-critical-care/resuscitation]].
-
-::: exercise Plan the polypectomy bleed {level=2}
-A 74-year-old on aspirin and clopidogrel (drug-eluting stent 8 weeks ago) has a 20 mm polyp removed; on day 4 he passes clots at home, then stops. What are the rules, and what would you have done differently?
-::: solution
-**Delayed post-polypectomy bleeding (days 1-14, the eschar-slough mechanism — [[gastrointestinal/bowel-disease]]-and-[[#def-variceal]]): most settle; risk factors (size-and-right-side-and-antithrombotics); the prevention architecture (elective-large-polypectomy antithrombotic planning: aspirin continues, the P2Y12-hold-versus-delay-the-procedure decision with cardiology — [[cardiovascular/coronary-artery-disease]]-and-[[blood/thrombosis-anticoagulation]]-and-[[surgery/perioperative-care]]-adjacent stent-timing rules: elective surgery ideally after the mandatory DAPT window, the bridge-not-stop principle, endoscopic clip-or-endoloop prophylaxis for high-risk resections and clear post-procedure written advice about bleeding timing — [[clinical-skills/patient-safety]] and [[clinical-skills/records-handover]]); the re-presentation pathway (the admit-and-scope-with-clipping plan and the transfusion-threshold arithmetic [[#def-ugib]]-adjacent); and the never-again loop (the incident-report and the stent-clause-in-the-procedure-bookings-form — [[clinical-skills/patient-safety]]).**
-:::
-:::
-
-::: exercise Do not miss the fistula {level=2}
-A 69-year-old, three years post aortic-graft repair, has a self-limiting "herald" haematemesis and a CT showing gas and fluid around the graft. Name the diagnosis, the physiology of the herald bleed and the pathway.
-::: solution
-**Secondary aorto-enteric fistula (the graft-eroding-into-duodenum-3 catastrophe — [[anatomy/abdomen]]'s retroperitoneal relations, [[cardiovascular/vascular-disease]]-and-[[surgery/vascular-urological-surgery]]): the herald bleed is the temporary tamponade of the initial aortic-enteric hole — hours-to-days of apparent recovery before exsanguination ([[#def-ugib]]-and-[[emergency-critical-care/resuscitation]]). The pathway: **CT-with-contrast-as-graft-protocol (the perigraft-gas-fluid-and-tethering-bowel signs — [[clinical-skills/medical-imaging]]), no endoscopy-provocation-in-a-ward-setting-without-surgical-and-vascular-presence (the resuscitate-and-transfer-to-arterial-unit-with-x-bloom-blood-and-bypass-preparedness plan — [[blood/transfusion]] [[surgery/vascular-urological-surgery]]), the extra-anatomic-bypass-or-endovascular-bridge-to-definitive-repair strategies and the septic-graft-removal logic ([[microbiology/bacteria]]-adjacent-graft-infection and [[surgery/vascular-urological-surgery]]); and the rule-in-the-notes (any GI bleed in a graft-carrier is a fistula until excluded — put it in the admission proforma [[clinical-skills/patient-safety]]).**
-:::
-:::
-
-::: summary
-- Upper-GI bleeding: score (Glasgow-Blatchford), resuscitate with restrictive thresholds, PPI and endoscopy within 24 hours, and escalate along the endoscopy-IR-surgery ladder; tranexamic acid does not belong.
-- Suspected variceal bleeding: antibiotics plus vasoactive drugs plus protected-airway-restricted-transfusion plus early banding, with TIPS as the rescue and the transplant conversation close at hand.
-- Lower-GI bleeding is usually diverticular and self-limiting; localise with colonoscopy or CT-angiography by bleeding-rate logic; the anticoagulation reversal-and-resumption arithmetic shapes outcomes.
-- Iron deficiency in older men and post-menopausal women is GI blood loss until bidirectional endoscopy says otherwise — never treat without scoping.
-- Colorectal cancer runs on the adenoma-carcinoma sequence, is screenable, and is treated by stage: surgery with total-mesorectal excision, neoadjuvant and adjuvant chemotherapy and radiotherapy in graded combinations, and molecular selection (MSI, RAS, BRAF, HER2) in metastatic disease; anal cancer is cured by chemoradiation.
-:::
+Peptic ulcer disease and the alarm features for upper gastrointestinal cancer are in [[gastrointestinal/oesophagus-stomach]]. Portal hypertension and the prevention of variceal bleeding are in [[gastrointestinal/liver-disease]]. Inflammatory bowel disease and diverticular disease are in [[gastrointestinal/bowel-disease]]. Diagnostic test accuracy is developed in [[epidemiology-ebm/diagnostic-tests]], cancer genetics in [[genetics/cancer-genetics]], and surgical treatment in [[surgery/gastrointestinal-surgery]].
 
 ## Exercises
 
-::: exercise Score the bleed {level=1}
-Hb 115, urea 12.5, creatinine 95, pulse 96, no melena, no syncope, no liver disease, presenting with haematemesis. What does the Glasgow-Blatchford logic imply?
+::: exercise Upper or lower? {level=1}
+For each presentation, state whether an upper or lower source is more likely and why: (a) melaena with a urea of 18 mmol/L and normal creatinine; (b) bright red blood on the toilet paper after straining; (c) haematochezia with a pulse of 130 per minute and a raised urea.
 ::: solution
-**A low-but-not-zero score (each component scores — anaemia and urea-and-pulse contribute — the [[#def-ugib]] components; near-low scores sit on the left of [[#def-ugib]] with modest intervention probability). Practice: the very-low (≤1) patient may enter an outpatient-FIT-and-PPI-and-safety-net pathway with rapid-access endoscopy ([[#def-ugib]] caption and the validation cohorts); this mixed picture (urea-up, tachycardia-present) admits for inpatient endoscopy [[clinical-skills/clinical-reasoning]], [[emergency-critical-care/acute-assessment]].**
+(a) Upper: melaena and a disproportionately raised urea from digested blood. (b) Lower, from the anal canal, typically haemorrhoids or a fissure. (c) Possibly upper: a brisk upper bleed can pass red blood rapidly, and the raised urea and shock support it. Upper endoscopy should be considered early.
 :::
 :::
 
-::: exercise Do not transfuse more {level=1}
-Why do restrictive transfusion thresholds suit variceal bleeding especially?
+::: exercise Why not tranexamic acid? {level=1}
+Explain why tranexamic acid is not routinely used in acute gastrointestinal bleeding, even though it reduces death in trauma.
 ::: solution
-**Over-transfusion raises portal pressure and re-bleeding and mortality ([[#def-variceal]] and [[blood/transfusion]]): the splanchnic-haemodynamics ([[renal/water-sodium]]'s volume-compartment logic and [[cardiovascular/circulation-blood-pressure]]), the dilutional-coagulopathy and citrate-calcium layers ([[blood/haemostasis-bleeding]] and [[emergency-critical-care/resuscitation]]'s massive-protocol arithmetic), and the target-70-80-with-exceptions-for-ischaemia([[cardiovascular/coronary-artery-disease]]) rule; the cirrhotic's rebalanced-haemostasis makes INR-chasing futile and volume-harmful ([[gastrointestinal/liver-disease]], [[blood/haemostasis-bleeding]]).**
+The HALT-IT trial (2020) randomised about 12,000 people with gastrointestinal bleeding to tranexamic acid or placebo. It found no reduction in death from bleeding, and an increase in venous thromboembolic events. Treatments that work in one bleeding setting cannot be assumed to work in another; gastrointestinal bleeding differs from trauma in its causes and timing.
 :::
 :::
 
-::: exercise Localise the obscure {level=2}
-A 55-year-old with Hb 82, ferritin 8, repeat gastroscopy and colonoscopy normal including duodenal biopsies and terminal ileum intubated. Next steps and their order?
+::: exercise Iron deficiency in a younger woman {level=1}
+A 32-year-old woman with heavy periods has iron deficiency anaemia. Which tests are recommended for her by British guidance, and when would gastrointestinal investigation be needed?
 ::: solution
-**Obscure-overt-or-occult bleeding ([[#def-occult]]): second-look upper-and-lower endoscopy when quality or intervals demand (the missed-lesion rates — [[clinical-skills/patient-safety]]); small-bowel capsule endoscopy first-line beyond the scopes (the retention-risk screen and patency-capsule when Crohn's or NSAID-diaphragm suspected — [[gastrointestinal/bowel-disease]]-and-[[pharmacology/adverse-reactions]]); device-assisted enteroscopy for therapy when capsule positive ([[clinical-skills/medical-imaging]]); CT-mesenteric-angiography or multiphasic CT for masses and the small-bowel tumour set ([[gastrointestinal/bowel-disease]]); the rare-lesion check-list (Heyde's angiodysplasia — [[cardiovascular/valve-congenital-disease]]; Dieulafoy — [[#def-ugib]]; Meckel — [[anatomy/embryology]]; hereditary haemorrhagic telangiectasia with epistaxis and family history — [[genetics/mendelian-inheritance]] and [[blood/haemostasis-bleeding]]); and the malabsorption-re-audit (coeliac-serology-on-a-low-IgA-caution [[gastrointestinal/bowel-disease]] and the diet-and-donation-history re-ask [[blood/anaemia]]).**
+Coeliac serology is recommended for everyone with iron deficiency anaemia, and urinalysis. Heavy menstrual loss is the likely cause, and gastrointestinal investigation is not routinely needed. It would be needed if she had gastrointestinal symptoms, a strong family history of colorectal cancer, or anaemia that does not respond to iron replacement.
 :::
 :::
 
-::: exercise Choose the operation {level=2}
-A 71-year-old has a circumferential mid-rectal adenocarcinoma 6 cm from the anal verge, MRI cT3b N1 with threatened circumferential resection margin; no metastases. Lay out the treatment sequence and the functional counsels.
+::: exercise Calculate a Glasgow–Blatchford score {level=2 check="13"}
+A 60-year-old woman presents with melaena and one episode of fainting. Pulse 108 per minute, blood pressure 96/60 mmHg, haemoglobin 95 g/L, urea 9.0 mmol/L. She has no liver disease or heart failure. Calculate her Glasgow–Blatchford score.
+::: hint
+Use the table in [[#thm-gbs]] and remember that haemoglobin bands differ by sex.
+:::
 ::: solution
-**Locally-advanced mid-rectal cancer ([[#def-crc]]): neoadjuvant-therapy sequencing (long-term chemoradiation versus short-course radiotherapy versus total-neoadjuvant-therapy with FOLFOX-consolidation — the trial-cascades [[epidemiology-ebm/systematic-reviews]] and [[surgery/gastrointestinal-surgery]]), restaging, then anterior-resection-with-total-mesorectal-excision ([[anatomy/pelvis-perineum]]'s mesorectal fascia and the autonomic-nerve planes — the urinary-and-sexual-and-functional consequences counselled with honesty [[clinical-skills/communication]] [[obstetrics-gynaecology/contraception-fertility]]-adjacent-fertility-preservation-referral-for-younger-patients); the threatened-circumferential-resection-margin-and-beyond-TME-plane alternatives (the lateral-pelvic-lymph-node-dissection-question and the internal-iliac-node and extramural-vascular-invasion reporting — [[pathology/cancer-diagnosis]]); adjuvant-chemotherapy completion and surveillance ([[public-health/screening]]-adjacent-CT-and-CEA-schedules); the complete-clinical-response watch-and-wait option and its intensive-endoscopy-and-MRI-follow-up-obligation ([[surgery/gastrointestinal-surgery]], [[clinical-skills/records-handover]]); and the stoma-and-pelvic-radiotherapy-long-term-function debates (the radiotherapy-proctitis-bleed risk [[#def-variceal]] and the anorectal-function trajectory [[gastrointestinal/bowel-disease]]-adjacent-physiology-testing).**
+Urea 9.0 mmol/L: 3. Haemoglobin 95 g/L in a woman: 6. Systolic BP 96 mmHg: 2. Pulse 108: 1. Melaena: 1. Syncope: 2. Liver disease and cardiac failure: 0. Total $= 3 + 6 + 2 + 1 + 1 + 2 = 13$.
+
+A score of **13** indicates high risk: she needs admission, resuscitation and early endoscopy.
 :::
 :::
 
-::: exercise Run the MDT {level=3}
-A 62-year-old with resected stage-III colon cancer is found on germline testing to have Lynch syndrome; two adult children are 30 and 27. Handle the patient, the family and the system.
+::: exercise Shock index {level=2 check="1.2"}
+A man with rectal bleeding has a pulse of 120 per minute and a systolic blood pressure of 100 mmHg. Calculate his shock index to one decimal place, and state what it implies for imaging.
+::: hint
+Shock index is heart rate divided by systolic blood pressure.
+:::
 ::: solution
-**Patient tier: adjuvant-chemotherapy decision (the stage-III-indication stands — the MSI-prognostic-and-predictive-nuances and fluoropyrimidine-monotherapy-question — [[pharmacology/dosing-principles]] and [[immunology/vaccines-immunotherapy]]'s checkpoint-data-escalating-into-earlier-stages-trials [[surgery/gastrointestinal-surgery]]); the Lynch-synchronous-and-metachronous-risk arithmetic (the extended-resection-discussion-at-diagnosis [[surgery/gastrointestinal-surgery]], the gynaecological-risk-and-surgical-prophylaxis conversation for the patient if female [[obstetrics-gynaecology/gynaecological-cancer]] [[medical-ethics-law/confidentiality]], the annual-to-biennial colonoscopic surveillance intervals and upper-endoscopy-question ([[public-health/screening]] and [[gastrointestinal/bowel-disease]]-own-Lynch-definition-row)); the aspirin-and-CAPP2-offer with its bleeding-caveats ([[cardiovascular/vascular-disease]] [[gastrointestinal/oesophagus-stomach]]); the family tier: the predictive-testing pathway for both children (the age-to-start-screening-20s-30s-by-syndrome rules, the cascade-testing logistics, and the "at-risk-and-why-we-call" letter versus the confidentiality limits — [[genetics/genetic-testing]] and [[medical-ethics-law/confidentiality]]); the system tier: the genetics-clinic-and-family-history-database handover, the screening-programme-enrolment, the documentation and consent architecture and the equity-check-that-testing-need-not-depend-on-postcode ([[public-health/determinants-inequalities]] [[public-health/health-systems-economics]] [[clinical-skills/records-handover]]) — plus the trial-and-registry offers ([[geriatrics-palliative/palliative-care]]-adjacent-early-palliative-integration-for-symptom-burden-not-stage [[medical-ethics-law/research-ethics]]).**
+Shock index $= 120/100 = 1.2$. A value above 1 indicates haemodynamic instability. British guidance recommends CT angiography to locate the bleeding in unstable patients, followed by embolisation if a bleeding point is found, after an upper source has been considered.
 :::
 :::
 
-::: exercise Explain the haemorrhoid trap {level=2}
-Why do bleeding cancers get labelled haemorrhoids, and what safeguards fix it?
+::: exercise Predictive value of FIT {level=2 check="16"}
+In a group of people with lower gastrointestinal symptoms, 3% have colorectal cancer. A FIT has 90% sensitivity and 85% specificity at the chosen threshold. What percentage of people with a positive test have cancer? Round to the nearest whole percent.
+::: hint
+Work with 10,000 people.
+:::
 ::: solution
-**Attribution-error mechanics ([[clinical-skills/clinical-reasoning]] and [[clinical-skills/patient-safety]]'s-safety-architecture): the common-benign-source base-rate, the visible-haemorrhoids-satisfying-searching, the anorectal-examination-omission, the "young-therefore-benign" heuristic (the early-onset-rise lesson [[#def-crc]]), and the repeat-presentation-processing ([[medical-ethics-law/professionalism-regulation]]-claim-categories). Safeguards: the PR-bleed-and-age-and-alarm decision-rules with mandatory DRE-and-fit-testing ([[clinical-skills/physical-examination]] [[clinical-skills/laboratory-tests]]); the cancer-pathway-referral-criteria-with-overinvestigation-safeties ([[gastrointestinal/gi-bleeding-cancer]]-pathways [[public-health/screening]]); the second-opinion-and-iron-check triggers and safety-netting documentation ([[clinical-skills/records-handover]] [[clinical-skills/patient-safety]]); the haemorrhoid-treatment-eligibility rules (banding-only-after-cancer-exclusion-when-indicated [[gastrointestinal/bowel-disease]]-own-haemorrhoid-row [[surgery/gastrointestinal-surgery]]); and the feedback-loops of missed-diagnosis audits and the patient-advocacy "get-it-checked-twice" campaigns ([[public-health/prevention-promotion]] [[medical-ethics-law/professionalism-regulation]]).**
+Of 10,000 people, 300 have cancer and 270 test positive. Of 9,700 without cancer, 15% test positive: 1,455. Positive predictive value $= 270/(270 + 1455) = 270/1725 = 0.157$, so **16%** to the nearest whole percent. About five in six positive tests are false positives, but colonoscopy is still justified because the risk of cancer in a person with a positive test is far above the background 3%.
+:::
+:::
+
+::: exercise Interpret a family history {level=3}
+A 38-year-old woman's mother had endometrial cancer at 49 and her maternal uncle had colorectal cancer at 45. The uncle's tumour showed loss of MSH2 protein on immunohistochemistry. What syndrome is likely, what should be offered to the woman, and what cancers is she at risk of?
+::: hint
+Loss of a mismatch repair protein in a tumour points to a specific syndrome.
+:::
+::: solution
+**Likely syndrome:** Lynch syndrome. Two first-degree or second-degree relatives with Lynch-associated cancers at young ages, and loss of MSH2 in a tumour, suggest a germline *MSH2* variant.
+
+**What to offer:** referral to clinical genetics for counselling and, ideally after a variant is confirmed in an affected relative, predictive testing. If she carries the variant: regular colonoscopic surveillance (in the UK, typically every 2 years from an age set by the gene involved), a discussion of aspirin for chemoprevention, and discussion of gynaecological risk-reducing surgery when her family is complete.
+
+**Cancers at risk:** colorectal and endometrial cancer above all, and also ovarian, gastric, small bowel, pancreatic, biliary and urinary tract cancers.
+:::
+:::
+
+::: exercise Plan the screening threshold {level=3}
+A screening programme is considering lowering its FIT threshold from 120 to 80 µg/g. Explain the expected effects on cancers detected, false positives, colonoscopy demand and harms, and why a programme would choose a higher threshold than the 10 µg/g used for people with symptoms.
+::: hint
+Consider how the prevalence of cancer differs between screened and symptomatic populations.
+:::
+::: solution
+**Effects of lowering the threshold:** sensitivity rises, so more cancers and advanced adenomas are detected, at an earlier stage. Specificity falls, so more people without significant disease have positive results. Colonoscopy demand rises substantially, with more procedures that find nothing, and more complications such as perforation and bleeding in absolute terms.
+
+**Why screening uses a higher threshold:** the prevalence of cancer in an asymptomatic screened population is far lower than in people with symptoms. At low prevalence a low threshold would generate very large numbers of false positives for each cancer found, and colonoscopy capacity is limited. In symptomatic people the higher prevalence justifies a sensitive threshold of 10 µg/g, so that few cancers are missed. Programmes therefore set thresholds to balance benefits, harms and capacity, and lower them as capacity grows.
 :::
 :::

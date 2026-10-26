@@ -1,143 +1,315 @@
-"Liver function tests" is the most misleading name in laboratory medicine: **the enzymes measure injury, the biochemistry measures excretion, and only two numbers — the prothrombin time and, imperfectly, albumin — measure function.** Reading the panel as a physiology puzzle (injury pattern? excretion block? synthesis failure?) rather than a traffic light is the skill this chapter teaches, because the same ALT of 300 can mean gym supplements, hepatitis, or an hour of ischaemic shock.
+The liver is the body's main metabolic organ. It receives almost everything absorbed from the gut before the rest of the body sees it, stores and releases glucose, makes most plasma proteins, clears drugs and toxins, and secretes bile. It has a large reserve: a healthy person can lose more than half of it and stay well, and it can regenerate.
 
-This chapter covers the tests of liver injury and excretion, the interpretation patterns, jaundice and its management, and the assessment of synthetic reserve.
+"Liver function tests" are among the most frequently requested blood tests, and abnormal results are found in a large proportion of the people who have them. Most of the panel does not actually measure function. The enzymes show **injury**, bilirubin shows **excretion**, and only albumin and the prothrombin time reflect **synthetic function**. Reading the panel well means asking three questions: is there injury, is there blockage of bile flow, and is the liver failing to make what it should?
 
-## Reading the panel
+This chapter covers the structure and functions of the liver, the metabolism of bilirubin, the interpretation of liver blood tests, the approach to jaundice, and the work-up of abnormal results. The diseases themselves are in [[gastrointestinal/liver-disease]].
 
-::: definition Injury markers and excretion markers {#def-injury}
-**Hepatocellular release (ALT and AST leak across damaged membranes — ALT the more liver-specific, AST also from muscle and red cells, so a raised AST with normal ALT asks about haemolysis and myopathy ([[blood/haemoglobin-disorders]], [[musculoskeletal/bones-joints]]); the magnitude logic — thousands in ischaemic and toxic injury (the shock-liver and paracetamol curves — [[gastrointestinal/liver-disease]], [[emergency-critical-care/poisoning]]), hundreds in viral and drug hepatitis, mild-and-chronic in fatty liver and alcohol ([[gastrointestinal/liver-disease]]'s AST:ALT ratio caveat and its cirrhosis flip); AST-with-ALT-in-muscle-disease-and-after-marathons and the intramuscular-injection trap ([[clinical-skills/laboratory-tests]]). Cholestatic markers (alkaline phosphatase — biliary canalicular membrane plus bone, so the confirm-or-reject sequence is GGT or ALP-isoenzymes, then the differential: large bile duct obstruction ([[gastrointestinal/pancreas-biliary]]), infiltrative disease (granuloma, amyloid, metastases, abscess — [[pathology/diagnostic-pathology]]), drugs, pregnancy, and bone turnover (Paget, healing fracture, growth — [[endocrine/bone-calcium]], [[musculoskeletal/bones-joints]]); GGT as the hepatic confirmation with its own alcohol-and-enzyme-induction sensitivity ([[pharmacology/metabolism-excretion]]); bilirubin as the excretion product — the unconjugated (pre-hepatic: haemolysis, ineffective erythropoiesis, resorbing haematoma, Gilbert's reduced UGT1A1 promoter activity — [[blood/anaemia]], [[genetics/mendelian-inheritance]]) versus conjugated (the hepatocellular-leak and obstructive patterns with dark urine and pale stools and pruritus — [[#def-jaundice]]); the urine dipstick separates them at the bedside (conjugated is water-soluble and appears in urine; urobilinogen patterns in the classic grid — [[clinical-skills/laboratory-tests]], [[#ex-patterns]]). The mixed-pattern referee (the R-ratio: ALT/alkaline-phosphatase quotient classifying hepatocellular, cholestatic or mixed and routing the work-up — drug causality scoring with the latency-and-rechallenge logic — [[pharmacology/adverse-reactions]], [[gastrointestinal/liver-disease]]'s DILI chapter-half).)**
+## Structure and blood supply
+
+The adult liver weighs about 1.5 kg and receives about a quarter of the cardiac output. It has a **dual blood supply**. About three quarters of its blood flow comes from the **portal vein**, carrying nutrient-rich but partly deoxygenated blood from the gut, spleen and pancreas. About a quarter comes from the **hepatic artery**, carrying oxygenated blood. Each supplies roughly half of the liver's oxygen. Blood from both mixes in the **sinusoids**, wide leaky capillaries lined by fenestrated endothelium, and drains to the central veins, hepatic veins and inferior vena cava.
+
+The functional unit can be described in two ways. The **lobule** is a hexagon centred on a central vein with portal tracts at its corners. Each portal tract holds a branch of the portal vein, a branch of the hepatic artery and a bile duct. The **acinus** is centred on the portal tract instead, and it reflects blood flow better. Blood enters at the portal tract and flows outward to the central vein, so the acinus has three zones:
+
+- **Zone 1 (periportal)** receives the most oxygen and nutrients. It is the main site of gluconeogenesis, oxidative metabolism and urea synthesis.
+- **Zone 2** is intermediate.
+- **Zone 3 (centrilobular)**, next to the central vein, receives the least oxygen. It has the most cytochrome P450 activity, especially CYP2E1, and is where glycolysis and lipogenesis are concentrated.
+
+Zonation explains patterns of injury. Zone 3 is damaged first by **ischaemia**, because it is at the end of the oxygen supply, and by **paracetamol** overdose, because its P450 enzymes make the toxic metabolite there.
+
+Besides hepatocytes, the liver contains **Kupffer cells**, macrophages in the sinusoids that remove bacteria and debris from portal blood; **stellate cells** in the space between sinusoids and hepatocytes, which store vitamin A and, when activated by injury, produce the collagen of fibrosis; and **cholangiocytes**, which line the bile ducts and modify bile.
+
+## What the liver does
+
+The liver's functions fall into five groups.
+
+- **Carbohydrate metabolism.** After a meal the liver stores glucose as glycogen. In fasting it releases glucose from glycogen and then makes it by gluconeogenesis. Severe liver failure therefore causes hypoglycaemia.
+- **Protein metabolism.** The liver makes most plasma proteins, including albumin and most clotting factors, and converts ammonia from amino acid breakdown into urea. Failure of urea synthesis lets ammonia rise, contributing to hepatic encephalopathy.
+- **Lipid metabolism.** The liver makes cholesterol, lipoproteins and bile salts, oxidises fatty acids, and in fasting makes ketone bodies.
+- **Clearance.** The liver metabolises and excretes drugs, hormones and toxins, mainly by oxidation (phase 1, often cytochrome P450) and conjugation (phase 2). It also clears bilirubin.
+- **Storage and immunity.** It stores glycogen, iron, copper, vitamin A, vitamin B12 and folate, and its Kupffer cells filter portal blood.
+
+## Bilirubin metabolism
+
+::: definition Bilirubin and its two forms {#def-bilirubin}
+**Bilirubin** is the yellow end product of haem breakdown. About 80% comes from old red cells removed by macrophages in the spleen, and the rest from other haem proteins and ineffective red cell production. It exists in plasma in two main forms:
+
+- **Unconjugated bilirubin**: insoluble in water, carried in blood bound to albumin, not filtered by the kidney, and therefore never found in urine. It is sometimes called "indirect" bilirubin after the laboratory reaction.
+- **Conjugated bilirubin**: bilirubin joined to glucuronic acid in the hepatocyte. It is water-soluble, so when it accumulates in blood it is filtered into the urine and makes the urine dark. It is sometimes called "direct" bilirubin.
 :::
 
-::: definition Synthetic function and reserve {#def-synthesis}
-**The proteins that answer the question "can the liver do its job": albumin (synthesised only by hepatocytes, distributed extravascularly, half-life around three weeks — so a low albumin reports chronic disease or capillary leak and inflammation, never acute injury, and doubles as one of [[gastrointestinal/liver-disease]]'s ascites-formation variables and a negative acute-phase reactant — [[immunology/innate-immunity]]; the nutrition-and-nephrotic-and-gut-loss differentials — [[gastrointestinal/clinical-nutrition]], [[renal/urinary-tract]]-adjacent-protein-losing-state [[gastrointestinal/digestion-absorption]]); the clotting factors (the liver makes all of them except factor VIII/vWF, made by endothelium — so a prolonged PT with normal-or-high factor VIII is liver pattern, while a high factor VIII with prolonged PT says inflammation or vitamin K antagonism — [[blood/haemostasis-bleeding]]; factor VII's short half-life makes the PT/INR the real-time bedside function test, [[#def-synthesis]] — the paracetamol-protocol and acute-liver-failure INR criteria follow from it — [[emergency-critical-care/poisoning]], [[gastrointestinal/liver-disease]]); vitamin K dependence (factors II, VII, IX, X plus proteins C and S need dietary vitamin K and absorbed fat — so cholestasis, prolonged prothrombin time corrects with vitamin K, while hepatocellular failure does not, the therapeutic-correction test — [[#ex-synthesis]]; [[gastrointestinal/digestion-absorption]]'s fat-soluble-vitamin absorption rule and the [[blood/haemostasis-bleeding]] mechanism page). Non-routine function probes (the indocyanine-green clearance and LiMax breath tests used in resection planning — [[surgery/gastrointestinal-surgery]]'s future-left-liver arithmetic; ammonia's poor bedside performance in chronic disease but its role in the acute-failure encephalopathy staging — [[gastrointestinal/liver-disease]]). Composite scores (Child-Pugh: bilirubin, albumin, INR, ascites, encephalopathy — the bedside five; MELD and its modern revisions: bilirubin, INR, creatinine, sodium — the transplant-allocation engine — [[gastrointestinal/liver-disease]]'s listing rules, [[renal/chronic-kidney-disease]]'s creatinine-caveats, [[immunology/transplant-tumour-immunology]]'s allocation ethics — [[medical-ethics-law/justice-resources]]-no); and the warning that both scores fail in acute injury, where trajectory (INR and lactate and pH and bilirubin slope — the King's-College-criteria logic — [[emergency-critical-care/poisoning]]) beats any single day's number.)**
+The pathway has five steps, and each can go wrong.
+
+1. **Production.** In macrophages, haem oxygenase opens the haem ring to form biliverdin, which biliverdin reductase converts to unconjugated bilirubin.
+2. **Transport.** Unconjugated bilirubin travels to the liver bound to albumin.
+3. **Uptake.** Hepatocytes take it up through transporters on the sinusoidal membrane.
+4. **Conjugation.** The enzyme **UDP-glucuronosyltransferase 1A1** (UGT1A1) attaches one or two glucuronic acid molecules.
+5. **Excretion.** Conjugated bilirubin is pumped into bile by the transporter **MRP2**. This step is energy-dependent and is the rate-limiting step, so in hepatocellular disease conjugated bilirubin leaks back into blood.
+
+In the gut, bacteria convert bilirubin to **urobilinogen**. Most is oxidised to stercobilin, which colours stool brown. Some is reabsorbed and excreted in urine. If bile cannot reach the gut, stool becomes pale and urinary urobilinogen disappears.
+
+**Jaundice** is yellow discoloration of the skin, sclerae and mucous membranes from raised bilirubin. Normal serum bilirubin is below about 20 µmol/L (1.2 mg/dL), and jaundice usually becomes visible at around 40–50 µmol/L (2.3–2.9 mg/dL). It is seen first in the sclerae, and in people with darker skin the sclerae and the palate are the most reliable places to look.
+
+### Inherited disorders of bilirubin handling
+
+**Gilbert syndrome** is the commonest. It is caused by reduced UGT1A1 activity, usually because of an extra TA repeat in the gene's promoter, and affects several per cent of the population. It produces a mild, fluctuating **unconjugated** hyperbilirubinaemia, typically rising during fasting, intercurrent illness or exertion. Liver enzymes are normal and there is no haemolysis. It is harmless, and the main reason to recognise it is to avoid unnecessary investigation. It can increase the toxicity of some drugs metabolised by UGT1A1, such as the chemotherapy drug irinotecan.
+
+**Crigler–Najjar syndrome** is a rare, more severe deficiency of UGT1A1. In type 1 the enzyme is absent and very high unconjugated bilirubin can cross the infant blood–brain barrier and cause **kernicterus**. Type 2 is milder and responds to enzyme induction with phenobarbital.
+
+**Dubin–Johnson syndrome** is a defect of MRP2 that causes a benign **conjugated** hyperbilirubinaemia, with a characteristically dark liver.
+
+## Reading the liver panel
+
+::: definition Markers of injury and of cholestasis {#def-injury}
+- **Alanine aminotransferase** (ALT) is found mainly in hepatocyte cytoplasm. A raised ALT indicates hepatocellular injury and is fairly specific for the liver.
+- **Aspartate aminotransferase** (AST) is found in hepatocytes (cytoplasm and mitochondria) and also in muscle, heart and red cells, so it is less specific.
+- **Alkaline phosphatase** (ALP) is found in the bile canalicular membrane and also in bone and placenta. A raised ALP of liver origin indicates **cholestasis**, impaired bile flow.
+- **Gamma-glutamyl transferase** (GGT) is found in bile duct cells. It rises with ALP in cholestasis, which confirms that a raised ALP is from the liver. It is also induced by alcohol and some drugs.
+- **Bilirubin** reflects the balance of production, uptake, conjugation and excretion.
 :::
 
-::: example Three painless numbers {#ex-patterns}
-(a) 35-year-old gym instructor: ALT 210, AST 180, ALP 95, GGT 140, bilirubin 14, albumin 44, INR 1.0, no symptoms, takes a protein-and-"liver support" supplement. (b) 68-year-old: ALP 520, GGT 480, bilirubin 62, ALT 140, dark urine, pale stools, itchy. (c) 22-year-old student: bilirubin 38 with everything else normal, rises after a 24-hour fast and exam week.
-::: solution
-**(a) Hepatocellular-injury pattern (R-ratio high — [[#def-injury]]): stop the supplement and alcohol, repeat at 2-4 weeks with the full second-tier panel (hepatitis serology — [[microbiology/viruses]]; autoimmune — ANA, SMA, IgG; ferritin-and-transferrin saturation; caeruleoplasmin under 40 — [[gastrointestinal/liver-disease]]'s Wilson row; coeliac serology; and imaging with elastography — [[clinical-skills/medical-imaging]]); supplement-and-herbal causality reporting ([[pharmacology/adverse-reactions]], [[infectious-diseases/stewardship-outbreaks]]-no: pharmacovigilance reporting — [[pharmacology/drug-development-prescribing]]). (b) Cholestatic-obstructive pattern (conjugated hyperbilirubinaemia with pruritus and the pale-stool chemistry — [[#def-jaundice]]): urgent imaging (ultrasound first for the ducts and gallbladder — [[clinical-skills/medical-imaging]]) then MRCP or CT, and the cause-hunt: stones, stricture and the painless-jaundice-malignancy pathway (pancreatic head and cholangiocarcinoma and ampullary — [[gastrointestinal/pancreas-biliary]], [[gastrointestinal/gi-bleeding-cancer]]). (c) Isolated unconjugated hyperbilirubinaemia, fasting-exacerbated: Gilbert syndrome (the UGT1A1 promoter variant, present in ~5-10 %, a benign diagnosis of exclusion that deserves a written explanation so no future clinician re-investigates — [[genetics/mendelian-inheritance]], [[clinical-skills/communication]], [[clinical-skills/records-handover]]); the haemolysis exclusion (FBC and reticulocytes and LDH and haptoglobin — [[blood/anaemia]]) completes it.)
-:::
+::: definition Markers of synthetic function {#def-synthesis}
+- **Albumin** is made only by the liver. Its plasma half-life is about 3 weeks, so it falls slowly in liver failure. It is also low in inflammation, malnutrition, nephrotic syndrome and protein-losing enteropathy, so a low albumin is not specific.
+- **Prothrombin time** (PT), or the **INR**, depends on clotting factors II, VII, IX and X, all made in the liver with the help of vitamin K. Factor VII has a half-life of about 6 hours, so the PT changes within a day of acute liver failure. It is the most sensitive routine marker of acute loss of synthetic function.
+- **Glucose** falls only when liver failure is severe.
+
+A prolonged PT can also be caused by **vitamin K deficiency** or **warfarin**. Giving vitamin K intravenously separates these: the PT corrects within a day if the liver is working.
 :::
 
-::: example The young man with dark urine {#ex-hepatitis}
-A 24-year-old returned from South-East Asia 3 weeks ago with nausea, right-upper-quadrant ache and dark urine; bilirubin 95, ALT 2100, ALP 140, albumin 40, INR 1.1; hepatitis A IgM positive, HBsAg negative, HIV negative.
-::: solution
-**Acute hepatitis A with a preserved-synthesis picture (the magnitude logic of [[#def-injury]]: ALT in the thousands, the normal INR-and-albumin excluding the worrying minority — [[#def-synthesis]]). Management is supportive-and-stewardship: **avoid alcohol-and-hepatotoxins-and-paracetamol-above-therapeutic-doses ([[emergency-critical-care/poisoning]], [[pharmacology/adverse-reactions]]); no antivirals; the admission triggers are INR-rise, encephalopathy and intractable vomiting (the acute-liver-failure transfer criteria and transplant-centre contact rules — [[gastrointestinal/liver-disease]], [[emergency-critical-care/critical-care]]); food-handler-and-occupation exclusion periods and the household-and-sexual-partner post-exposure prophylaxis (vaccine-or-immunoglobulin windows — [[public-health/vaccination-programmes]], [[public-health/communicable-disease-control]], sexual-health liaison ([[obstetrics-gynaecology/contraception-fertility]])); the notification-and-tracing obligation (the UK-style statutory notification and the travel-history cluster-hunting — [[public-health/communicable-disease-control]], [[microbiology/laboratory-diagnosis]]); the follow-up (the relapsing-and-cholestatic-course weeks-later variant and the normalisation timeline before the "fit" sign-off — [[clinical-skills/communication]]; and the prevention closing-loop (hepatitis-A vaccination for the travel-clinic cohort, and the hepatitis-B-and-C status-and-vaccination-and-cure-pathway check while the bloods are open — [[microbiology/viruses]], [[public-health/screening]]).**
+### Patterns
+
+The ratio of injury to cholestasis gives the first classification. The **R ratio** compares ALT and ALP, each expressed as a multiple of its upper limit of normal (ULN):
+
+$$
+R = \dfrac{\text{ALT}/\text{ULN}_{\text{ALT}}}{\text{ALP}/\text{ULN}_{\text{ALP}}}
+$$ {#eq-r}
+
+An R of 5 or more indicates a **hepatocellular** pattern, 2 or less a **cholestatic** pattern, and between 2 and 5 a **mixed** pattern. The R ratio was developed for drug-induced liver injury, but it is a useful general framework.
+
+::: theorem The pattern points to the process {#thm-pattern}
+The size and pattern of the abnormality narrow the differential before any specific test is done:
+
+- **ALT in the thousands** (above about 1,000 U/L): ischaemic hepatitis, paracetamol or other toxic injury, acute viral hepatitis, and occasionally the passage of a common bile duct stone.
+- **ALT raised a few times** (under about 5 times ULN), persisting: metabolic dysfunction-associated steatotic liver disease, alcohol, chronic hepatitis B or C, haemochromatosis, autoimmune hepatitis, drugs and coeliac disease.
+- **Cholestatic pattern**: bile duct obstruction (stones, tumours), primary biliary cholangitis, primary sclerosing cholangitis, drugs, and infiltration by tumour, granulomas or amyloid.
+- **AST:ALT ratio above 2**: suggests alcohol-related liver disease. A ratio above 1 in other chronic liver diseases suggests cirrhosis.
 :::
+
+::: proof
+The enzymes leak from damaged cells, so their level reflects the number of cells injured at once. Ischaemia and paracetamol kill large numbers of zone 3 hepatocytes simultaneously, producing very high levels. Chronic diseases injure fewer cells at any moment, producing modest, persistent rises.
+
+ALP rises in cholestasis not mainly because it leaks, but because bile salts retained in the hepatocyte induce its synthesis and release it from the canalicular membrane. This takes days, which is why a common bile duct stone can cause a brief spike in ALT before ALP rises.
+
+Alcohol depletes pyridoxal phosphate, a cofactor needed for ALT activity, and damages mitochondria, which release mitochondrial AST. The AST:ALT ratio therefore rises in alcohol-related disease. In cirrhosis from any cause, reduced clearance of AST by sinusoidal cells contributes to a ratio above 1.
 :::
+
+The two aminotransferases also fall at different rates after a single injury, which helps date it. AST has a plasma half-life of about 17 hours, ALT about 47 hours. After an acute insult, AST falls faster, so the AST:ALT ratio drops below 1 within a couple of days.
 
 ::: widget plot
-f: 100*0.5^(x/0.25); 100*0.5^(x/20); 100*0.5^(x/60)
-x: 0, 5
-y: 0, 105
-labels: \text{days},\ \text{plasma activity (\% of normal)};\ \text{factor VII (t\frac{1}{2}\approx6\ h)};\ \text{albumin (t\frac{1}{2}\approx20\ d)};\ \text{IgG (t\frac{1}{2}\approx21\ d,\ for scale)}
-caption: Half-life explains which number is a function test. Factor VII falls within hours of synthetic failure or warfarin and corrects within a day of vitamin K or fresh plasma — the prothrombin time is therefore the acute-function-and-prognosis number in paracetamol protocols and acute liver failure ([[#def-synthesis]], [[emergency-critical-care/poisoning]], [[gastrointestinal/liver-disease]]). Albumin and IgG move over weeks: low albumin is a chronicity-and-distribution marker, not an acute one ([[immunology/adaptive-responses]]-adjacent globulin contrast: chronic hepatitis raises globulins while albumin falls — the inverted A/G ratio as a stethoscope-grade clue — [[clinical-skills/laboratory-tests]]).
+f: 3000*exp(-ln(2)*x/17); 2000*exp(-ln(2)*x/47)
+x: 0, 150
+y: 0, 3000
+labels: \text{AST (half-life about 17 h)}; \text{ALT (half-life about 47 h)}
+caption: Illustrative fall in plasma AST and ALT (U/L) over hours after a single acute liver insult, such as an episode of shock, assuming first-order clearance and no ongoing injury. AST starts higher but falls faster, so the ratio inverts within about a day. Ongoing injury would keep both elevated.
+:::
+
+::: example Three panels {#ex-patterns}
+Classify each panel as hepatocellular, cholestatic or mixed, and suggest a likely cause. Upper limits of normal: ALT 40 U/L, ALP 130 U/L.
+
+(a) A 70-year-old woman after cardiac arrest: ALT 3,200, AST 4,800, ALP 140, bilirubin 30 µmol/L.
+
+(b) A 60-year-old man with painless jaundice and weight loss: ALT 90, ALP 780, GGT 650, bilirubin 210 µmol/L, dark urine and pale stools.
+
+(c) A 45-year-old woman with obesity and type 2 diabetes: ALT 72, AST 50, ALP 110, GGT 80, bilirubin normal.
+::: solution
+Use [[#eq-r]].
+
+(a) $R = (3200/40)/(140/130) = 80/1.08 = 74$. **Hepatocellular**, with very high aminotransferases soon after an episode of low blood flow: **ischaemic hepatitis** ("shock liver"). AST higher than ALT early is typical. Both should fall quickly if perfusion is restored.
+
+(b) $R = (90/40)/(780/130) = 2.25/6 = 0.375$. **Cholestatic**, with conjugated hyperbilirubinaemia, dark urine and pale stools: obstruction to bile flow. Painless jaundice with weight loss at this age raises strong concern for **carcinoma of the head of the pancreas** or cholangiocarcinoma. Ultrasound and then CT are the next steps ([[gastrointestinal/pancreas-biliary]]).
+
+(c) $R = (72/40)/(110/130) = 1.8/0.846 = 2.1$. The ratio is in the **mixed** range but close to the cholestatic boundary, and the absolute changes are mild. In someone with obesity and diabetes, **metabolic dysfunction-associated steatotic liver disease** is the most likely cause, but the standard aetiology screen and an assessment of fibrosis are still needed.
+:::
+:::
+
+::: example A young man with dark urine {#ex-hepatitis}
+A 24-year-old man returns from travelling in South Asia. He has a week of malaise, nausea and right upper quadrant discomfort, and then notices dark urine and yellow eyes. ALT 2,100 U/L, ALP 210 U/L, bilirubin 95 µmol/L, INR 1.1. What is the likely diagnosis, how is it confirmed, and which result is most important for his safety?
+::: solution
+**Pattern.** ALT in the thousands with a modest ALP rise is a **hepatocellular** pattern of acute hepatitis. Dark urine means the excess bilirubin is conjugated.
+
+**Likely causes.** After travel to South Asia, acute **hepatitis A** or **hepatitis E** are most likely, both spread by the faecal–oral route. Acute hepatitis B, drug or herbal injury, and other viral infections are also considered, and paracetamol use should always be asked about.
+
+**Confirmation.** Hepatitis A IgM, hepatitis E IgM (and HEV RNA where available), hepatitis B surface antigen and core IgM, and a history of drugs, alcohol and supplements.
+
+**The key safety result is the INR.** An INR of 1.1 shows that synthetic function is preserved. A rising INR, or any confusion, would suggest progression towards **acute liver failure** and would need urgent discussion with a liver unit. Most people with hepatitis A or E recover fully with supportive care; hepatitis E can be severe in pregnancy and in people with existing liver disease. Close contacts may be offered hepatitis A vaccination according to public health guidance.
+:::
+:::
+
+::: example A high INR without liver disease {#ex-synthesis}
+A 66-year-old man is in intensive care after a perforated diverticulum. He has been on broad-spectrum antibiotics and has not eaten for 10 days. His INR is 2.4. ALT, ALP and bilirubin are normal and he takes no anticoagulant. Explain the likely cause and how to test it.
+::: solution
+**Reasoning.** The liver panel shows no injury or cholestasis, so liver failure is unlikely. The likely cause is **vitamin K deficiency**: he has had no dietary intake for 10 days, and broad-spectrum antibiotics reduce vitamin K production by gut bacteria. Without vitamin K the liver cannot gamma-carboxylate factors II, VII, IX and X, so they do not work even though they are made.
+
+**Test.** Give intravenous vitamin K and repeat the INR after 12–24 hours. Rapid correction confirms deficiency and normal synthetic capacity. Failure to correct would point to genuine liver failure or another coagulopathy, such as disseminated intravascular coagulation in sepsis. Doses follow local guidance.
+:::
+:::
+
+::: example Itching and fatigue {#ex-pbc}
+A 52-year-old woman has 18 months of fatigue and generalised itching, worse at night. ALP 410 U/L, GGT 380 U/L, ALT 55 U/L, bilirubin normal. Ultrasound shows normal bile ducts. Anti-mitochondrial antibody is positive at high titre. What is the diagnosis, and what does the normal bilirubin tell you?
+::: solution
+**Pattern.** A cholestatic pattern with a raised GGT confirms that the ALP comes from the liver. Normal ducts on ultrasound exclude large duct obstruction, so this is **intrahepatic cholestasis**.
+
+**Diagnosis.** A cholestatic pattern with a positive **anti-mitochondrial antibody** in a middle-aged woman is diagnostic of **primary biliary cholangitis** (PBC), an autoimmune destruction of small intrahepatic bile ducts. A liver biopsy is not usually needed. Itching and fatigue are typical.
+
+**The normal bilirubin.** In PBC bilirubin rises late, when many ducts have been lost. A normal bilirubin indicates early-stage disease, and bilirubin is one of the strongest markers of prognosis. Treatment and monitoring of PBC are covered in [[gastrointestinal/liver-disease]].
+:::
 :::
 
 ## Jaundice
 
-::: definition The jaundiced patient: anatomy of a differential {#def-jaundice}
-**Detection (scleral icterus above roughly 40 µmol/L; the yellow skin-and-sclera with bile staining in prolonged obstructive disease; the dark-urine-pale-stool question that separates conjugated hyperbilirubinaemia at the bedside — [[clinical-skills/history-taking]]). Pre-hepatic (haemolysis and ineffective erythropoiesis: the unconjugated-dominant picture with normal urine, raised LDH-haptoglobin-reticulocyte markers, and the crises of [[blood/haemoglobin-disorders]] (sickle and thalassaemia and spherocytosis and G6PD), autoimmune haemolysis ([[immunology/autoimmunity]], [[blood/anaemia]]), the transfusion-reaction ([[blood/transfusion]]), and the resorbing-haematoma arithmetic; neonatal jaundice and its kernicterus-threshold physiology — [[paediatrics/newborn]], [[blood/haemoglobin-disorders]]-own-Rh-lesson-adjacent [[obstetrics-gynaecology/pregnancy-complications]]). Hepatocellular (every cause of hepatitis — viral, alcoholic, drug-induced, autoimmune, ischaemic, Wilson, the sepsis-associated cholestasis — [[gastrointestinal/liver-disease]], [[microbiology/viruses]], [[emergency-critical-care/poisoning]]; the conjugated fraction leaks alongside enzymes). Post-hepatic/obstructive (stones ascending into and compressing the biliary tree — [[gastrointestinal/pancreas-biliary]]; strictures benign-and-malignant; cholangiocarcinoma and pancreatic-head and ampullary tumours — [[gastrointestinal/pancreas-biliary]], [[gastrointestinal/gi-bleeding-cancer]]; PSC and IgG4 disease — [[gastrointestinal/liver-disease]], [[immunology/autoimmunity]]; mirizzi and the surgical-clips-adjacent-iatrogenic-stricture — [[surgery/gastrointestinal-surgery]]). The obstructive-syndrome consequences: pruritus (the bile-acid-and-lysophosphatidic-acid-and-autotaxin itch biology and its ladder of treatment — rifampicin, opiate antagonists, sertraline, fibrates and the nasobiliary-or-stent decompression option — [[geriatrics-palliative/symptom-control]], [[gastrointestinal/pancreas-biliary]]); fat-soluble-vitamin malabsorption with a correctable INR ([[#ex-synthesis]], [[gastrointestinal/digestion-absorption]]); the infection risk (obstructed-infected-bile is a urological-sepsis-equivalent emergency: Charcot's periodic fevers-and-jaundice-and-RUQ-pain and the Reynolds pentad, urgent ERCP drainage and antibiotics — [[gastrointestinal/pancreas-biliary]], [[emergency-critical-care/shock-fluids]], [[infectious-diseases/fever-sepsis]]); the renal hit (bile-cast nephropathy and the hepatorenal physiology — [[renal/acute-kidney-injury]]); and the palliative-perspective on malignant obstructive jaundice (stent-versus-surgical-bypass and the itching-and-survival calculus — [[geriatrics-palliative/palliative-care]], [[surgery/gastrointestinal-surgery]]).**
+::: definition Classification of jaundice {#def-jaundice}
+Jaundice is classified by where bilirubin handling fails:
+
+- **Pre-hepatic**: too much bilirubin is produced, as in haemolysis or ineffective erythropoiesis, or conjugation is reduced, as in Gilbert syndrome. Bilirubin is mainly **unconjugated**, the urine is not dark, and liver enzymes are normal.
+- **Hepatic (hepatocellular)**: hepatocytes are damaged, as in viral, alcoholic, drug-induced or autoimmune hepatitis and cirrhosis. Both forms of bilirubin rise, and aminotransferases are raised.
+- **Post-hepatic (obstructive, cholestatic)**: bile cannot reach the gut, because of gallstones in the common bile duct, pancreatic or biliary cancer, or strictures. Bilirubin is mainly **conjugated**, urine is dark, stools are pale, and ALP and GGT are raised. Itching is common.
 :::
 
-::: example The high INR with a normal liver history {#ex-synthesis}
-A 74-year-old on warfarin (indication: mechanical aortic valve) presents with gastroenteritis and INR 8.4 without bleeding; bilirubin 52, ALP 410, ALT 90, albumin 34. CT shows a 2 cm pancreatic-head mass with dilated ducts.
-::: solution
-**Two interactions and a diagnosis ([[#def-synthesis]], [[#def-jaundice]]): (i) the cholestatic picture (conjugated bilirubin and ALP up, duct dilation) means vitamin-K malabsorption compounding warfarin — give vitamin K slowly-and-with-cover and recheck, because a mechanical valve punishes over-correction ([[blood/haemostasis-bleeding]], [[cardiovascular/valve-congenital-disease]], [[gastrointestinal/pancreas-biliary]]-adjacent-jaundice-relief-by-stent which will also fix the INR); (ii) gastroenteritis-and-reduced-intake-plus-antibiotics-often-explain-such INR excursions — the drug-disease-interaction review ([[pharmacology/metabolism-excretion]], [[pharmacology/adverse-reactions]], [[geriatrics-palliative/polypharmacy]]). Triage decisions: the bleeding-no-bleeding algorithm for INR (vitamin-K-dose-and-prothrombin-complex-concentrate rules — [[blood/haemostasis-bleeding]], [[blood/transfusion]]); the painless-jaundice-cancer-pathway activation (pancreatic-protocol CT and MDT — [[gastrointestinal/pancreas-biliary]], [[gastrointestinal/gi-bleeding-cancer]]); the pre-procedure coagulopathy correction-without-warfarin-panic (the stent or biopsy planning — [[clinical-skills/patient-safety]]); and the honest goals conversation before the staging is complete ([[clinical-skills/communication]], [[geriatrics-palliative/palliative-care]]).**
-:::
-:::
-::: example The itchy fatigue {#ex-pbc}
-A 54-year-old woman with 18 months of fatigue and arthralgia has an incidental ALP 2.5x normal; ALT mildly raised, bilirubin and albumin and INR normal, dry eyes and an underactive thyroid on levothyroxine; ANA low-titre, AMA-M2 strongly positive.
-::: solution
-**Primary biliary cholangitis (the middle-aged-woman cholestatic pattern with fatigue-and-pruritus-and-arthralgia and autoimmune-cluster — thyroid and sicca and scleroderma-overlap — [[gastrointestinal/liver-disease]]'s PBC section, [[immunology/autoimmunity]], [[endocrine/thyroid]], [[musculoskeletal/inflammatory-arthritis]]). Confirm-and-stage: **AMA-M2-with-cholestatic-biochemistry usually needs no biopsy ([[pathology/diagnostic-pathology]]-and-[[gastrointestinal/liver-disease]]); the overlap-hepatitis question (ALT-rise and IgG driving a biopsy-versus-treat decision), and fibrosis assessment (elastography with the congestion-and-obesity caveats — [[clinical-skills/medical-imaging]]). Treat-and-monitor: **ursodeoxycholic-acid dose-by-weight with the biochemical-response criteria at 12 months (the Paris-and-GLOBE prognostic logic — [[gastrointestinal/digestion-absorption]]'s bile-acid physiology and [[gastrointestinal/liver-disease]]), second-line agents for inadequate response, and the transplant-timing-with-prognostic-scores conversation ([[immunology/transplant-tumour-immunology]]). Symptom-and-risk management: **the fatigue appraisal (thyroid-and-anaemia-and-sleep-and-depression audit before labelling it hepatic — [[psychiatry/mood-disorders]], [[blood/anaemia]]); the itch ladder ([[geriatrics-palliative/symptom-control]], [[#def-jaundice]]); the bone health (vitamin-D-and-calcium-and-density-scan — [[endocrine/bone-calcium]]); the fat-soluble-vitamin and lipid checks ([[gastrointestinal/digestion-absorption]], [[cardiovascular/vascular-disease]]-adjacent-dyslipidaemia-interpretation-in-cholestasis); the varices-and-portal-hypertension surveillance even before cirrhosis ([[gastrointestinal/liver-disease]], [[gastrointestinal/gi-bleeding-cancer]]); and the HCC-surveillance-boundary rule (cirrhosis-stage only — [[public-health/screening]]).**
-:::
+The first practical question is whether the bile ducts are dilated. **Abdominal ultrasound** answers it quickly. Dilated ducts mean extrahepatic obstruction, which is then investigated with CT, magnetic resonance cholangiopancreatography (MRCP) or endoscopic ultrasound. Non-dilated ducts point to hepatocellular disease or intrahepatic cholestasis.
+
+The urine dipstick helps at the bedside. Bilirubin in the urine means conjugated hyperbilirubinaemia. Absent urobilinogen suggests complete obstruction.
+
+::: warning Painless jaundice is not reassuring
+Gallstones usually cause pain. Progressive jaundice without pain, especially with weight loss in an older adult, should be treated as cancer of the pancreas or bile ducts until proven otherwise. A palpable, non-tender gallbladder in a jaundiced person (Courvoisier's law) makes stones unlikely, because stone-bearing gallbladders are usually fibrosed and do not distend.
 :::
 
-::: definition The abnormal-result work-up algorithm {#def-workup}
-**Step 0 — repeat and interpret (transient elevations from exercise, injections, intercurrent infection and lab variance are common; the asymptomatic-mild-elevation pathway deserves patience not radiology — the high-value-testing movement [[clinical-skills/patient-safety]]); confirm the pattern (R-ratio; ALP source with GGT or isoenzymes; bilirubin fractionation; albumin and INR for the function question). Step 1 — history and exposure audit: alcohol-with-biomarkers (the CDT-and-MCV-and-GGT pattern and its limitations — [[clinical-skills/laboratory-tests]], [[psychiatry/substance-use]]); drugs and supplements with latency-and-predictability reasoning ([[pharmacology/adverse-reactions]], [[gastrointestinal/liver-disease]]'s DILI); metabolic risk (the MASLD-metabolic-syndrome-axis with FIB-4 triage and the primary-care-stealth-epidemic framing — [[gastrointestinal/liver-disease]], [[endocrine/diabetes]]); and the epidemiological risk factors (travel, tattoos, transfusions, injection drug use and birth-cohort risk — [[microbiology/viruses]], [[public-health/global-health]]). Step 2 — the standard panel: hepatitis A/B/C serology with the acute-versus-chronic-and-vaccinated distinctions ([[microbiology/viruses]], [[public-health/vaccination-programmes]]); autoimmune (ANA, SMA, IgG for the autoimmune-hepatitis pattern; AMA-M2 for PBC; IgG4 for the lymphoplasmacytic-sclerosing disease — [[immunology/autoimmunity]], [[gastrointestinal/liver-disease]], [[gastrointestinal/pancreas-biliary]]); metabolic (ferritin-with-transferrin-saturation for the HFE-haemochromatosis-screen-and-acute-phase-confound — [[blood/haemoglobin-disorders]]-adjacent-iron-biology-[[blood/anaemia]]; transferrin saturation and HLA-typing-referral rules; caeruleoplasmin-with-exchangeable-copper-and-24-hour-urinary-copper for Wilson under 40 — [[genetics/mendelian-inheritance]], [[gastrointestinal/liver-disease]]; alpha-1-antitrypsin phenotype with the lung pairing — [[respiratory/interstitial-vascular-disease]], [[genetics/common-disease-genetics]]); and coeliac-serology, thyroid, and the muscle check (CK) when AST-dominant ([[endocrine/thyroid]], [[musculoskeletal/bones-joints]]). Step 3 — imaging: ultrasound with Doppler (the steatosis-echotexture, ducts, vessels, caudate lobe and spleen signs of portal hypertension — [[clinical-skills/medical-imaging]]), elastography (the stiffness staging of fibrosis with its obesity-and-inflammation-and-congestion caveats — [[gastrointestinal/liver-disease]]'s FIB-4-then-elastography cascades), and MRCP-or-CT for the cholestatic pattern ([[clinical-skills/medical-imaging]]). Step 4 — the histology decision: when serology is uninformative, when autoimmune-overlap or steatohepatitis-grading matters, or for staging (the transjuginal-route option in coagulopathy — [[gastrointestinal/liver-disease]]-and-[[pathology/diagnostic-pathology]]-and-[[clinical-skills/medical-imaging]]'s interventional radiology). Step 5 — the follow-up rule: unexplained abnormalities get a defined re-look date and a named owner, the graveyard of "abnormal LFTs, repeat" referrals is a patient-safety artefact ([[clinical-skills/records-handover]], [[public-health/health-systems-economics]]).**
+## Investigating abnormal liver tests
+
+::: definition The standard work-up {#def-workup}
+British Society of Gastroenterology guidance (2018) recommends that adults with abnormal liver blood tests, whatever the level and duration, should be considered for a **liver aetiology screen**:
+
+- abdominal ultrasound;
+- hepatitis B surface antigen and hepatitis C antibody, with PCR if positive;
+- anti-mitochondrial, anti-smooth muscle and antinuclear antibodies, and serum immunoglobulins;
+- simultaneous ferritin and transferrin saturation.
+
+Further tests are added when the clinical picture suggests them, such as alpha-1 antitrypsin level, caeruloplasmin in younger people, and coeliac serology. Alcohol intake and metabolic risk factors are assessed in everyone.
 :::
+
+Finding the cause is only half of the task. The other half is deciding whether the person has **advanced fibrosis**, because that determines prognosis and the need for specialist care. Fibrosis is not reflected in the aminotransferases, which can be normal in cirrhosis. Non-invasive tests are used instead. The simplest is the **FIB-4 index**:
+
+$$
+\text{FIB-4} = \dfrac{\text{age (years)} \times \text{AST (U/L)}}{\text{platelets }(10^9/\text{L}) \times \sqrt{\text{ALT (U/L)}}}
+$$ {#eq-fib4}
+
+Commonly used cut-offs are below 1.30, suggesting a low risk of advanced fibrosis, and above 3.25, suggesting a high risk. Values in between are indeterminate and are followed by a second test, such as the Enhanced Liver Fibrosis blood test or transient elastography (FibroScan), which measures liver stiffness. Age raises FIB-4, so a higher lower cut-off is often used in people over 65.
 
 ::: quiz
-The best bedside evidence of impaired hepatic synthetic function is:
-- [ ] Low albumin
-- [x] A prolonged prothrombin time/INR that fails to correct fully with vitamin K
-- [ ] Raised ALT
-- [ ] Conjugated hyperbilirubinaemia
+A 30-year-old man has a bilirubin of 38 µmol/L, almost all unconjugated, found when he had a viral illness. ALT, ALP, GGT, full blood count, reticulocytes and haptoglobin are normal. What is the most likely explanation?
+- [ ] Early primary sclerosing cholangitis
+- [ ] Compensated haemolysis
+- [x] Gilbert syndrome
+- [ ] Dubin–Johnson syndrome
 ::: solution
-**Factor VII's hours-long half-life makes PT/INR the acute-function test; failure to correct with vitamin K separates hepatocellular failure from cholestatic vitamin-K malabsorption ([[#def-synthesis]], [[#ex-synthesis]], [[blood/haemostasis-bleeding]]). Low albumin reports chronicity and distribution ([[#def-synthesis]]); ALT reports injury ([[#def-injury]]); conjugated bilirubin reports excretion ([[#def-jaundice]]); the King's College and transplant-listing use of INR follows ([[gastrointestinal/liver-disease]], [[emergency-critical-care/poisoning]]).**
+An isolated **unconjugated** hyperbilirubinaemia with normal liver enzymes and no evidence of haemolysis (normal reticulocytes and haptoglobin), unmasked by illness, is typical of **Gilbert syndrome**. Dubin–Johnson syndrome causes a conjugated hyperbilirubinaemia. Primary sclerosing cholangitis is cholestatic, with raised ALP. No further investigation is needed beyond confirming this pattern.
 :::
 :::
 
 ::: history
-**Bilirubin's chemistry lineage (the bile-pigment investigations of the 19th century; the van den Bergh reaction of 1916 splitting direct from indirect — the test still naming the fractions in [[#def-injury]]); the "serum hepatitis" epidemiology of the World Wars (the yellow-fever-transfusion-epidemiology of the early 20th century; the Australia antigen 1965 leading to HBV and its vaccine — [[public-health/vaccination-programmes]]), and the 1989 hepatitis-C discovery (the Houghton/Choo Chiron subtraction-cloning that converted most post-transfusion hepatitis into a diagnosable-and-curable disease — [[blood/transfusion]], [[microbiology/viruses]], [[infectious-diseases/stewardship-outbreaks]]-no: the direct-acting-antivirals-cure-era [[microbiology/antimicrobials]]); the alkaline-phosphatase-isoenzyme era separating bone from liver; the Child classification (1964 — the surgeon's bedside five) and the MELD score's 2001 transplant-allocation revolution with its ethics-of-utility debates ([[medical-ethics-law/justice-resources]], [[immunology/transplant-tumour-immunology]]); the Gilbert-syndrome-promoter-variant description (1990s — [[genetics/mendelian-inheritance]]); and the elastography-then-FIB-4 wave that made fibrosis staging a clinic-number rather than a biopsy ([[clinical-skills/medical-imaging]], [[public-health/screening]]).**
+In 1901 Augustin Gilbert and Pierre Lereboullet in Paris described a mild, familial jaundice that now carries Gilbert's name. In 1913 the Dutch physician Abraham Albert Hijmans van den Bergh adapted Ehrlich's diazo reaction to measure bilirubin in serum and showed that some reacted "directly" and some only after alcohol was added, "indirectly". This distinction, later explained as conjugated and unconjugated bilirubin, became the basis of the clinical classification of jaundice. In the 1950s Albert Rappaport described the liver acinus and its zones, which explained why ischaemia and toxins damage particular parts of the lobule.
+:::
+
+::: summary
+- The liver has a dual blood supply and is organised into acinar zones; zone 3 is most vulnerable to ischaemia and paracetamol.
+- Bilirubin is made from haem, carried unconjugated on albumin, conjugated by UGT1A1 and excreted into bile by MRP2. Only conjugated bilirubin appears in urine.
+- ALT and AST show injury, ALP and GGT show cholestasis, and albumin and the PT reflect synthetic function. Correct vitamin K deficiency before blaming the liver for a high INR.
+- The R ratio classifies patterns as hepatocellular, cholestatic or mixed; very high ALT suggests ischaemia, toxins or acute viral hepatitis.
+- Jaundice is pre-hepatic, hepatic or post-hepatic. Ultrasound first asks whether the ducts are dilated.
+- Abnormal liver tests deserve a standard aetiology screen and an assessment of fibrosis, for example with FIB-4.
 :::
 
 ## Where this leads
 
-The diseases themselves in [[gastrointestinal/liver-disease]]; the obstructive and biliary toolkit in [[gastrointestinal/pancreas-biliary]]; bleeding risk and coagulopathy in [[blood/haemostasis-bleeding]]; drug mechanisms in [[pharmacology/adverse-reactions]]; the viral laboratory in [[microbiology/viruses]]; the imaging ladder in [[clinical-skills/medical-imaging]]; resection planning in [[surgery/gastrointestinal-surgery]].
-
-::: exercise Read the acute panel {level=1}
-Paracetamol overdose at 24 hours: ALT 4500, INR 3.4 rising, bilirubin 45, creatinine 165, pH 7.28, lactate 4. Which numbers decide the transfer, and to where?
-::: solution
-**The prognostic trajectory set (arterial pH/lactate, INR slope, creatinine, encephalopathy grade, bilirubin late — the King's College criteria arithmetic in the paracetamol chapter of [[gastrointestinal/liver-disease]] and [[emergency-critical-care/poisoning]]): this profile meets transplant-centre referral criteria — early senior contact and transfer to the liver unit with the airway-and-cerebral-oedema-and-CRRT logistics en route ([[emergency-critical-care/critical-care]], [[renal/acute-kidney-injury]], [[emergency-critical-care/airway-ventilation]]); the INR here is the [[#def-synthesis]] number in its most consequential role.**
-:::
-:::
-
-::: exercise Explain Gilbert to a patient {level=1}
-Write the three-sentence explanation you would send after the [[#ex-patterns]](c) result, and name the one thing to avoid.
-::: solution
-**Suggested wording: "Your bloods show a harmless inherited difference in bilirubin handling (Gilbert syndrome) — it affects several per cent of people, explains the mild yellowing in stress, fasting and illness, needs no treatment and does not damage the liver." Add: avoid the fasting-and-crash-dieting and dehydration triggers, keep the result letter for future clinicians ([[clinical-skills/communication]], [[clinical-skills/records-handover]], [[genetics/mendelian-inheritance]]); and re-check only if new symptoms arise ([[clinical-skills/patient-safety]]).**
-:::
-:::
-
-::: summary
-- Enzymes report injury, bilirubin reports excretion, INR reports acute function, and albumin reports chronic function — four different questions in one tube.
-- Classify first with the R-ratio and the urine dipstick, then confirm the ALP source, then run the exposure audit before the expensive panel.
-- Unconjugated jaundice is haemolysis, erythropoiesis or Gilbert; conjugated jaundice needs the ducts imaged urgently, and painless progressive jaundice is a cancer pathway until excluded.
-- Cholestatic coagulopathy corrects with vitamin K; hepatocellular coagulopathy does not — the correction test is cheap physiology.
-- Every abnormal result gets a repeat date, an owner, and a stop rule; "repeat LFTs" without either is the commonest non-diagnosis in referrals.
-:::
+The diseases behind these patterns, cirrhosis and its complications, and scoring of severity with Child–Pugh and MELD are in [[gastrointestinal/liver-disease]]. Obstructive jaundice from stones and tumours is in [[gastrointestinal/pancreas-biliary]]. Haemolysis as a cause of jaundice is in [[blood/anaemia]], drug metabolism in [[pharmacology/metabolism-excretion]], and the general principles of laboratory tests in [[clinical-skills/laboratory-tests]].
 
 ## Exercises
 
-::: exercise Split the bilirubin {level=1}
-A patient has bilirubin 78 with urobilinogen absent-ish in dark urine and pale stools. Which fraction predominates and what must be imaged?
+::: exercise Conjugated or unconjugated? {level=1}
+For each condition, state whether the raised bilirubin is mainly conjugated or unconjugated, and whether bilirubin appears in the urine: (a) hereditary spherocytosis; (b) a gallstone in the common bile duct; (c) Gilbert syndrome; (d) Dubin–Johnson syndrome.
 ::: solution
-**Conjugated (water-soluble, hence dark urine; absent stercobilin makes stools pale and urobilinogen low — the classic grid of [[#def-injury]] and [[#def-jaundice]]): image the ducts — ultrasound then MRCP/CT for the obstructive set (stones, stricture, tumour) — [[clinical-skills/medical-imaging]], [[gastrointestinal/pancreas-biliary]].**
+(a) Unconjugated, no urinary bilirubin (haemolysis). (b) Conjugated, bilirubin in urine (obstruction). (c) Unconjugated, no urinary bilirubin (reduced conjugation). (d) Conjugated, bilirubin in urine (defective MRP2 excretion).
 :::
 :::
 
-::: exercise Name the pattern {level=1}
-ALT 620, ALP 130, bilirubin 45, albumin 40, INR 1.0. Hepatocellular, cholestatic or mixed? Name three causes.
+::: exercise Which tests measure function? {level=1}
+Explain why ALT is not a test of liver "function", and name the two routine tests that best reflect synthetic function. Which responds faster to acute liver failure, and why?
 ::: solution
-**Hepatocellular (R-ratio high — [[#def-injury]]): viral hepatitis, drug-induced injury (including supplements), autoimmune hepatitis, ischaemic ("shock liver") or Wilson in the young — [[microbiology/viruses]], [[pharmacology/adverse-reactions]], [[gastrointestinal/liver-disease]]. The normal albumin and INR say the event is recent; INR is the number to watch — [[#def-synthesis]].**
+ALT is an enzyme that leaks from damaged hepatocytes; it measures injury, not the liver's capacity to work, and it can be normal in end-stage cirrhosis. The tests of synthetic function are **albumin** and the **prothrombin time** (or INR). The PT responds faster, because factor VII has a half-life of about 6 hours, whereas albumin has a half-life of about 3 weeks.
 :::
 :::
 
-::: exercise Interpret the isolated ALP {level=2}
-A 78-year-old woman: ALP 340, GGT normal, calcium and phosphate normal, mild knee pain. Explain and plan.
+::: exercise Explain Gilbert syndrome {level=1}
+In plain language suitable for a patient, explain what Gilbert syndrome is and why it does not need treatment.
 ::: solution
-**Bone-origin ALP (normal GGT excludes hepatic — the two-enzyme cross-check of [[#def-injury]]): Paget disease, osteomalacia (check vitamin D and PTH — [[endocrine/bone-calcium]]), healing fracture or high-turnover bone metastases are the differential ([[musculoskeletal/bones-joints]], [[gastrointestinal/gi-bleeding-cancer]]-adjacent-bony-disease); plan: vitamin-D-and-chemistry panel, targeted imaging/bone-scan by symptoms, and the incidental-management honesty about elderly asymptomatic Paget ([[clinical-skills/patient-safety]]-avoid-over-investigation, [[geriatrics-palliative/polypharmacy]]).**
+Gilbert syndrome is a common, inherited difference in how the liver handles bilirubin, a yellow substance made when old red blood cells are broken down. The liver enzyme that processes bilirubin works a little more slowly than usual, so bilirubin can rise slightly, especially when someone is unwell or has not eaten for a while, and the eyes may look a little yellow. The liver itself is healthy, it does not lead to liver disease, and it does not need treatment. It is worth mentioning to doctors because it can affect how a few medicines are handled.
 :::
 :::
 
-::: exercise Judge the correction {level=2}
-Two jaundiced patients both have INR 1.7: one with an 8 cm gallstone-obstructed common bile duct, one with alcoholic hepatitis. What does vitamin K do to each, and why?
+::: exercise Calculate the R ratio {level=2 check="7.5"}
+A person taking a new antibiotic has ALT 600 U/L (ULN 40) and ALP 260 U/L (ULN 130). Calculate the R ratio and classify the pattern.
+::: hint
+Express each value as a multiple of its upper limit of normal before dividing.
+:::
 ::: solution
-**Obstructive patient: vitamin-K malabsorption from absent luminal bile means the INR largely corrects (the synthesis machinery is intact — [[#def-synthesis]], [[gastrointestinal/digestion-absorption]]); alcoholic hepatitis: factor synthesis itself is failed, so vitamin K does little — the non-correction marks hepatocellular failure and prognosis ([[gastrointestinal/liver-disease]], [[#def-workup]]-no: [[#def-synthesis]]); note both use the same mechanism page as warfarin and the bleeding-risk arithmetic — [[blood/haemostasis-bleeding]], [[blood/thrombosis-anticoagulation]].**
+ALT is $600/40 = 15$ times ULN. ALP is $260/130 = 2$ times ULN. $R = 15/2 = 7.5$. This is above 5, so the pattern is **hepatocellular**. Drug-induced liver injury is the leading possibility, and the drug should be reviewed; other causes must still be excluded.
 :::
 :::
 
-::: exercise Triage the referral {level=2}
-A 45-year-old with BMI 34 and type-2 diabetes is referred for "ALT 70, 2 years". Ultrasound shows fatty liver. Organise the assessment and the fibrosis question.
+::: exercise Calculate FIB-4 {level=2 check="3.16"}
+A 60-year-old man has AST 50 U/L, ALT 40 U/L and platelets 150 × 10⁹/L. Calculate his FIB-4 to two decimal places and interpret it using cut-offs of 1.30 and 3.25.
+::: hint
+Use [[#eq-fib4]]; the square root of 40 is about 6.32.
+:::
 ::: solution
-**MASLD-metabolic-axis disease with the only outcome-defining question being fibrosis stage ([[gastrointestinal/liver-disease]], [[endocrine/diabetes]]): alcohol quantification-and-biomarkers, the exclusion panel (viral, autoimmune, iron, caeruleoplasmin, coeliac — [[#def-workup]]), the drug review (statins-are-usably-safe-clarification and the GLP-1-and-SGLT2-metabolic-candidates — [[pharmacology/adverse-reactions]], [[endocrine/diabetes]]); FIB-4 from the same bloods then elastography where indeterminate (the cascade arithmetic — [[clinical-skills/medical-imaging]], [[public-health/screening]]); the metabolic-optimisation prescription (weight-loss-target, exercise, and the statin-and-cardiovascular-risk management — [[cardiovascular/circulation-blood-pressure]], [[public-health/prevention-promotion]]); the surveillance decision (HCC-scan-for-cirrhosis-only rule and the alcohol-and-hepatitis-cofactor elimination — [[public-health/screening]]); and the documented-stop-rule-for-a-normal-FIB-4-low-risk-patient (the over-investigation-avoidance with a re-check interval — [[clinical-skills/patient-safety]], [[clinical-skills/records-handover]]).**
+$\text{FIB-4} = (60 \times 50)/(150 \times \sqrt{40}) = 3000/(150 \times 6.325) = 3000/948.7 = 3.16$. This lies between 1.30 and 3.25, so it is **indeterminate**. A second test, such as the Enhanced Liver Fibrosis test or transient elastography, is needed to decide whether he has advanced fibrosis.
 :::
 :::
 
-::: exercise Build the jaundice clinic {level=3}
-Design a one-stop "jaundice and abnormal LFTs" service: entry, staffing, diagnostics, escalation and audit.
+::: exercise Date the injury {level=2 check="250"}
+In an illustrative model, AST is 2,000 U/L immediately after a single episode of hypotension, its half-life is 17 hours, and there is no further injury. What would the AST be after 51 hours?
+::: hint
+51 hours is three half-lives.
+:::
 ::: solution
-**Entry: single-tier-triage of primary-care FIB-4-referrals plus the 2-week-wait painless-jaundice stream ([[gastrointestinal/gi-bleeding-cancer]] pathways; [[public-health/health-systems-economics]]'s waiting-time rules); same-day bloods (the pattern panel of [[#def-injury]] with INR-and-vitamin-K-at-first-contact — [[#def-synthesis]]) and same-visit ultrasound with contrast-enhanced option ([[clinical-skills/medical-imaging]]); specialist-nurse-and-consultant-gastroenterology staffing with on-site elastography and liver-team MDT slots ([[public-health/health-systems-economics]]); the obstruction fast-track (MRCP-then-ERCP-with-antibiotics-and-sepsis-protocol — [[gastrointestinal/pancreas-biliary]], [[infectious-diseases/fever-sepsis]], [[emergency-critical-care/shock-fluids]]); the malignant-obstruction lane (tissue acquisition, stenting, pancreatic-cancer MDT and early palliative parallel-clinic — [[gastrointestinal/pancreas-biliary]], [[surgery/gastrointestinal-surgery]], [[geriatrics-palliative/palliative-care]]); the chronic-disease lanes (the viral-hepatitis cure pathway and contact-tracing-and-vaccination — [[microbiology/viruses]], [[public-health/vaccination-programmes]], [[public-health/communicable-disease-control]]; the autoimmune and PBC early-treatment arms — [[gastrointestinal/liver-disease]], [[immunology/autoimmunity]]); the safety nets (defined re-look dates and owners for unexplained results — [[#def-workup]], [[clinical-skills/records-handover]]; the INR-and-bleeding-day-unit rule; and Gilbert's written-explanation template so the benign result closes the loop — [[clinical-skills/communication]]); and the audit set (time-to-decompression-for-cholangitis, stage-at-diagnosis of pancreatobiliary cancer, fibrosis-staging completeness at first hepatology visit, and the rate of unresolved "repeat-LFT" referrals — [[clinical-skills/patient-safety]], [[public-health/health-systems-economics]]).**
+$51/17 = 3$ half-lives. $2000 \times (1/2)^3 = 2000/8 = 250$ U/L. A steady fall like this supports a single ischaemic insult. A plateau or rise would suggest ongoing injury.
+:::
+:::
+
+::: exercise A jaundice case with a differential {level=3}
+A 74-year-old woman has 3 weeks of jaundice, itching, dark urine and pale stools, without pain. She has lost 5 kg. Bilirubin 240 µmol/L, ALP 690 U/L, ALT 120 U/L, INR 1.6. Give the differential diagnosis, the first imaging test, and explain the raised INR.
+::: hint
+Classify the jaundice, then think about the absorption of fat-soluble vitamins.
+:::
+::: solution
+**Classification.** Conjugated hyperbilirubinaemia with dark urine, pale stools and a cholestatic pattern: **post-hepatic (obstructive) jaundice**.
+
+**Differential.** Painless jaundice with weight loss: carcinoma of the head of the pancreas, cholangiocarcinoma, ampullary carcinoma, and, less likely without pain, common bile duct stones. Drug-induced cholestasis and primary biliary cholangitis are less likely with this presentation.
+
+**First imaging.** Abdominal **ultrasound** to look for dilated bile ducts and a mass, followed by contrast CT for staging.
+
+**The raised INR.** Bile salts are not reaching the gut, so fat and **vitamin K** are poorly absorbed. Clotting factors II, VII, IX and X cannot be activated. Intravenous vitamin K should correct the INR within a day, which matters before any biliary intervention such as ERCP or stenting.
+:::
+:::
+
+::: exercise Triage abnormal results {level=3}
+A GP has three patients with abnormal liver tests. (a) A 35-year-old with an isolated ALT of 55 U/L, BMI 33 and normal aetiology screen, FIB-4 0.8. (b) A 58-year-old who drinks 50 units of alcohol a week, AST 90, ALT 40, platelets 110 × 10⁹/L. (c) A 40-year-old with ALT 300 U/L for 6 months, positive anti-smooth muscle antibody and raised IgG. Decide who needs specialist referral and why.
+::: hint
+For each, consider the cause, the risk of advanced fibrosis, and whether a specific treatment exists.
+:::
+::: solution
+(a) Likely **steatotic liver disease** with a low FIB-4, so the risk of advanced fibrosis is low. Manage in primary care with lifestyle and cardiovascular risk management, and repeat fibrosis assessment periodically according to guidance. Referral is not routinely needed.
+
+(b) **Alcohol-related liver disease** is likely: AST:ALT above 2 and a low platelet count, which suggests portal hypertension and possible cirrhosis. He needs alcohol support, fibrosis assessment and, given the low platelets, referral to hepatology. NICE recommends assessment for cirrhosis in people with harmful drinking.
+
+(c) A persistent hepatocellular pattern with anti-smooth muscle antibody and raised IgG suggests **autoimmune hepatitis**, which is treatable and can progress to cirrhosis without treatment. Refer to hepatology for liver biopsy and treatment.
 :::
 :::

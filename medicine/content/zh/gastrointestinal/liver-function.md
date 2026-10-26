@@ -1,144 +1,315 @@
-“肝功能检验”是实验室医学中最误导人的名字：**酶测量损伤、生化测量排泄、而只有两个数字——凝血酶原时间、及不完美的白蛋白——测量功能。**把这一组检验读成一道生理谜题（损伤模式？排泄阻塞？合成失败？）而不是一个红绿灯，就是本章要教的手艺、因为同一个300的丙氨酸氨基转移酶可以意味着健身补剂、肝炎、或一小时的缺血性休克。
+肝是机体主要的代谢器官。从肠道吸收的几乎所有物质都先经过肝，然后才到达身体其他部分；肝储存和释放葡萄糖，合成大多数血浆蛋白，清除药物和毒素，并分泌胆汁。它的储备很大：健康人失去一半以上的肝仍可保持健康，而且肝能够再生。
 
-本章涵盖肝损伤与排泄的检验、解读模式、黄疸及其处理、及合成储备的评估。
+"肝功能试验"是最常申请的血液检查之一，在接受检查的人中，相当一部分结果异常。这组检查的大部分并不真正测定功能。酶反映**损伤**，胆红素反映**排泄**，只有白蛋白和凝血酶原时间反映**合成功能**。读好这组检查，就是要问三个问题：有没有损伤？胆汁流动有没有受阻？肝有没有不能合成它应当合成的东西？
 
-## 读这一组检验
+本章介绍肝的结构和功能、胆红素代谢、肝脏血液检查的解读、黄疸的诊断思路，以及异常结果的检查流程。疾病本身见[[gastrointestinal/liver-disease]]。
 
-::: definition 损伤标志物与排泄标志物 {#def-injury}
-**肝细胞释放丙氨酸氨基转移酶与天门冬氨酸氨基转移酶经受损膜漏出——丙氨酸氨基转移酶更肝特异、天门冬氨酸氨基转移酶还来自肌肉与红细胞、所以天门冬氨酸氨基转移酶升高而丙氨酸氨基转移酶正常要问溶血与肌病（[[blood/haemoglobin-disorders]]、[[musculoskeletal/bones-joints]]）；幅度逻辑——缺血与中毒损伤中数千（休克肝与扑热息痛曲线——[[gastrointestinal/liver-disease]]、[[emergency-critical-care/poisoning]]）、病毒性与药物性肝炎中数百、脂肪肝与酒精中轻度而慢性（[[gastrointestinal/liver-disease]]的天门冬氨酸氨基转移酶比丙氨酸氨基转移酶警诫及其肝硬化翻转）；肌肉疾病与马拉松后天门冬氨酸氨基转移酶伴丙氨酸氨基转移酶、及肌肉内注射陷阱（[[clinical-skills/laboratory-tests]]）。胆汁淤积标志物碱性磷酸酶——胆小管膜加骨、所以确认或排除的顺序是γ谷氨酰转移酶或碱性磷酸酶同工酶、然后鉴别：大胆管梗阻（[[gastrointestinal/pancreas-biliary]]）、浸润性疾病（肉芽肿、淀粉样变、转移、脓肿——[[pathology/diagnostic-pathology]]）、药物、妊娠、及骨转换（Paget、骨折愈合、生长——[[endocrine/bone-calcium]]、[[musculoskeletal/bones-joints]]）；γ谷氨酰转移酶作为肝的来源确认、带其自身的酒精与酶诱导敏感性（[[pharmacology/metabolism-excretion]]）；胆红素作为排泄产物——非结合型（肝前：溶血、无效红细胞生成、血肿吸收、Gilbert的UGT1A1启动子活性降低——[[blood/anaemia]]、[[genetics/mendelian-inheritance]]）对结合型（肝细胞漏出与梗阻模式伴浓尿与陶土便及瘙痒——[[#def-jaundice]]）；尿试纸在床边把两者分开（结合型溶于水而出现在尿中；经典方格中的尿胆原模式——[[clinical-skills/laboratory-tests]]、[[#ex-patterns]]）。混合模式的裁判（R值：丙氨酸氨基转移酶与碱性磷酸酶商把损伤分为肝细胞性、胆汁淤积性或混合并决定检查路径——药物因果性评分带潜伏期与再激发逻辑——[[pharmacology/adverse-reactions]]、[[gastrointestinal/liver-disease]]的药物性肝损半章）。**
+## 结构与血液供应
+
+成人肝重约1.5 kg，接受约四分之一的心输出量。它有**双重血供**。约四分之三的血流来自**门静脉**，携带来自肠、脾和胰腺、富含营养但部分脱氧的血液。约四分之一来自**肝动脉**，携带含氧血。两者各提供肝约一半的氧。两路血液在**肝血窦**中混合；肝血窦是宽阔、通透性高的毛细血管，内衬有窗孔的内皮，血液经中央静脉、肝静脉流入下腔静脉。
+
+肝的功能单位有两种描述方式。**肝小叶**是以中央静脉为中心的六边形，角上为门管区。每个门管区含有门静脉分支、肝动脉分支和胆管。**肝腺泡**则以门管区为中心，更好地反映了血流。血液从门管区进入，向外流向中央静脉，因此腺泡分为三个区：
+
+- **1区（门管周围）**接受最多的氧和营养物质。它是糖异生、氧化代谢和尿素合成的主要部位。
+- **2区**居中。
+- **3区（小叶中心）**紧邻中央静脉，接受的氧最少。它的细胞色素P450活性最高，尤其是CYP2E1，糖酵解和脂肪生成也集中于此。
+
+分区解释了损伤的分布。3区最先受到**缺血**损害，因为它位于供氧的末端；也最先受到**对乙酰氨基酚**过量的损害，因为那里的P450酶生成毒性代谢产物。
+
+除肝细胞外，肝还含有**库普弗细胞**，即血窦中的巨噬细胞，清除门静脉血中的细菌和碎屑；**星状细胞**，位于血窦与肝细胞之间的间隙，储存维生素A，受损伤激活后产生纤维化的胶原；以及衬覆胆管、修饰胆汁的**胆管细胞**。
+
+## 肝的功能
+
+肝的功能可分为五组。
+
+- **碳水化合物代谢。** 餐后肝把葡萄糖以糖原形式储存。空腹时，它先分解糖原释放葡萄糖，然后经糖异生合成葡萄糖。因此严重肝衰竭会导致低血糖。
+- **蛋白质代谢。** 肝合成大多数血浆蛋白，包括白蛋白和大多数凝血因子，并把氨基酸分解产生的氨转化为尿素。尿素合成障碍使血氨升高，参与肝性脑病的发生。
+- **脂质代谢。** 肝合成胆固醇、脂蛋白和胆盐，氧化脂肪酸，空腹时生成酮体。
+- **清除。** 肝主要通过氧化（I相，常为细胞色素P450）和结合（II相）代谢并排泄药物、激素和毒素。它也清除胆红素。
+- **储存与免疫。** 肝储存糖原、铁、铜、维生素A、维生素B12和叶酸，库普弗细胞过滤门静脉血。
+
+## 胆红素代谢
+
+::: definition 胆红素及其两种形式 {#def-bilirubin}
+**胆红素**是血红素分解的黄色终产物。约80%来自被脾内巨噬细胞清除的衰老红细胞，其余来自其他血红素蛋白和无效红细胞生成。它在血浆中主要有两种形式：
+
+- **非结合胆红素**：不溶于水，在血液中与白蛋白结合运输，不被肾小球滤过，因此尿中从不出现。按实验室反应命名，有时称为"间接"胆红素。
+- **结合胆红素**：在肝细胞内与葡萄糖醛酸结合的胆红素。它溶于水，因此在血中蓄积时会滤入尿液，使尿色变深。有时称为"直接"胆红素。
 :::
 
-::: definition 合成功能与储备 {#def-synthesis}
-**回答“肝能完成它的工作吗”的蛋白：白蛋白（仅由肝细胞合成、分布于血管外、半衰期约三周——所以低白蛋白报告的是慢性病或毛细血管漏及炎症、从不报告急性损伤、并兼任[[gastrointestinal/liver-disease]]的腹水形成变量之一及负急性期反应物——[[immunology/innate-immunity]]；营养与肾病及肠道丢失的鉴别——[[gastrointestinal/clinical-nutrition]]、邻近[[renal/urinary-tract]]的蛋白丢失状态[[gastrointestinal/digestion-absorption]]）；凝血因子（肝合成除第八因子与血管性血友病因子以外的全部、后者由内皮合成——所以凝血酶原时间延长而第八因子正常或偏高是肝的模式、而第八因子升高伴凝血酶原时间延长说明炎症或维生素K拮抗——[[blood/haemostasis-bleeding]]；第七因子的短半衰期使凝血酶原时间与国际标准化比值成为真正的床旁功能检验（[[#def-synthesis]]）——扑热息痛方案与急性肝衰竭的国际标准化比值标准由此而来——[[emergency-critical-care/poisoning]]、[[gastrointestinal/liver-disease]]）；维生素K依赖因子Ⅱ、Ⅶ、Ⅸ、Ⅹ加蛋白C与S需要膳食维生素K与吸收的脂肪——所以胆汁淤积中凝血酶原时间延长可被维生素K纠正、而肝细胞衰竭不能、即治疗性纠正试验（[[#ex-synthesis]]；[[gastrointestinal/digestion-absorption]]的脂溶性维生素吸收规则与[[blood/haemostasis-bleeding]]的机制页）。非常规功能探针（吲哚菁绿清除与利麦息呼气试验用于切除规划——[[surgery/gastrointestinal-surgery]]的剩余左肝算术；氨在慢性病中床旁表现差、但在急性衰竭的脑病分期中有作用——[[gastrointestinal/liver-disease]]）。综合评分（Child-Pugh：胆红素、白蛋白、国际标准化比值、腹水、脑病——床旁五项；MELD及其现代修订：胆红素、国际标准化比值、肌酐、钠——移植分配的引擎——[[gastrointestinal/liver-disease]]的列队规则、[[renal/chronic-kidney-disease]]的肌酐警诫、[[immunology/transplant-tumour-immunology]]的分配伦理——[[medical-ethics-law/justice-resources]]）；及警告：两个评分在急性损伤中都失效、在那里轨迹（国际标准化比值与乳酸及酸碱度及胆红素斜率——King's College标准逻辑——[[emergency-critical-care/poisoning]]）胜过任何单日的数字。**
+这一途径分为五步，每一步都可能出错。
+
+1. **生成。** 在巨噬细胞中，血红素加氧酶打开血红素环形成胆绿素，胆绿素还原酶再把胆绿素转化为非结合胆红素。
+2. **运输。** 非结合胆红素与白蛋白结合运往肝。
+3. **摄取。** 肝细胞通过血窦膜上的转运体摄取胆红素。
+4. **结合。** **UDP-葡萄糖醛酸基转移酶1A1**（UGT1A1）结合一个或两个葡萄糖醛酸分子。
+5. **排泄。** 结合胆红素由转运体**MRP2**泵入胆汁。这一步耗能，是限速步骤，因此在肝细胞性疾病中结合胆红素会反流入血。
+
+在肠道中，细菌把胆红素转化为**尿胆原**。大部分被氧化为粪胆素，使粪便呈棕色。一部分被重吸收并经尿排出。如果胆汁不能到达肠道，粪便颜色变浅，尿中尿胆原消失。
+
+**黄疸**是胆红素升高引起的皮肤、巩膜和黏膜黄染。正常血清胆红素低于约20 µmol/L（1.2 mg/dL），黄疸通常在约40～50 µmol/L（2.3～2.9 mg/dL）时变得可见。巩膜最先出现黄染，在肤色较深的人中，巩膜和腭部是最可靠的观察部位。
+
+### 遗传性胆红素代谢障碍
+
+**Gilbert综合征**最常见。它由UGT1A1活性降低引起，通常是该基因启动子多了一个TA重复，影响百分之几的人口。它造成轻度、波动性的**非结合**高胆红素血症，典型地在禁食、并发疾病或劳累时升高。肝酶正常，没有溶血。它是无害的，认识它的主要意义是避免不必要的检查。它可以增加某些经UGT1A1代谢药物的毒性，例如化疗药伊立替康（irinotecan）。
+
+**Crigler–Najjar综合征**是罕见的、更严重的UGT1A1缺乏。1型完全缺乏该酶，极高的非结合胆红素可以穿过婴儿的血脑屏障，引起**核黄疸**。2型较轻，对苯巴比妥（phenobarbital）的酶诱导有反应。
+
+**Dubin–Johnson综合征**是MRP2缺陷，引起良性的**结合**高胆红素血症，肝脏颜色特征性地变深。
+
+## 读懂肝脏检查
+
+::: definition 损伤标志物与胆汁淤积标志物 {#def-injury}
+- **丙氨酸氨基转移酶**（ALT）主要存在于肝细胞胞质中。ALT升高提示肝细胞损伤，对肝脏相当特异。
+- **天冬氨酸氨基转移酶**（AST）存在于肝细胞（胞质和线粒体），也存在于肌肉、心脏和红细胞中，因此特异性较差。
+- **碱性磷酸酶**（ALP）存在于胆小管膜，也存在于骨和胎盘。肝源性ALP升高提示**胆汁淤积**，即胆汁流动受损。
+- **γ-谷氨酰转移酶**（GGT）存在于胆管细胞中。胆汁淤积时它与ALP一起升高，从而证实升高的ALP来自肝。它也会被酒精和某些药物诱导。
+- **胆红素**反映生成、摄取、结合和排泄之间的平衡。
 :::
 
-::: example 三个无症状的数字 {#ex-patterns}
-(a) 35岁健身教练：丙氨酸氨基转移酶210、天门冬氨酸氨基转移酶180、碱性磷酸酶95、γ谷氨酰转移酶140、胆红素14、白蛋白44、国际标准化比值1.0、无症状、服蛋白与“护肝”补剂。(b) 68岁：碱性磷酸酶520、γ谷氨酰转移酶480、胆红素62、丙氨酸氨基转移酶140、浓尿、陶土便、瘙痒。(c) 22岁学生：胆红素38而其他全部正常、在禁食24小时与考试周后升高。
-::: solution
-**(a) 肝细胞损伤模式（R值高——[[#def-injury]]）：停补剂与酒精、2-4周后复查并做完整的二线组（肝炎血清学——[[microbiology/viruses]]；自身免疫——抗核抗体、抗平滑肌抗体、免疫球蛋白G；铁蛋白与转铁蛋白饱和度；40岁以下者的铜蓝蛋白（低于0.2克每升）——[[gastrointestinal/liver-disease]]的Wilson行；乳糜血清学；及带弹性成像的影像——[[clinical-skills/medical-imaging]]）；补剂与草药因果性报告（[[pharmacology/adverse-reactions]]、药物警戒报告——[[pharmacology/drug-development-prescribing]]）。(b) 胆汁淤积梗阻模式（结合型高胆红素血症伴瘙痒与陶土便化学——[[#def-jaundice]]）：紧急影像（先超声看胆管与胆囊——[[clinical-skills/medical-imaging]]）然后磁共振胆胰管成像或计算机断层、及病因搜寻：结石、狭窄、及无痛黄疸肿瘤路径（胰头与胆管癌及壶腹部——[[gastrointestinal/pancreas-biliary]]、[[gastrointestinal/gi-bleeding-cancer]]）。(c) 孤立非结合高胆红素血症、禁食加重：Gilbert综合征（UGT1A1启动子变异、见于约5-10%、一个应获得书面解释的良性排除诊断、以免未来的临床医师重复检查——[[genetics/mendelian-inheritance]]、[[clinical-skills/communication]]、[[clinical-skills/records-handover]]）；溶血排除（全血细胞与网织红细胞及乳酸脱氢酶与结合珠蛋白——[[blood/anaemia]]）使其完整。**
-:::
+::: definition 合成功能标志物 {#def-synthesis}
+- **白蛋白**只由肝合成。其血浆半衰期约3周，因此肝衰竭时下降缓慢。炎症、营养不良、肾病综合征和蛋白丢失性肠病时它也降低，因此低白蛋白并不特异。
+- **凝血酶原时间**（PT）或**INR**取决于凝血因子II、VII、IX和X，它们都由肝在维生素K的帮助下合成。因子VII的半衰期约6小时，所以急性肝衰竭一天内PT就会改变。它是急性合成功能丧失最敏感的常规指标。
+- **葡萄糖**只有在肝衰竭严重时才下降。
+
+PT延长也可由**维生素K缺乏**或**华法林**引起。静脉给予维生素K可以区分：如果肝功能正常，PT在一天内纠正。
 :::
 
-::: example 浓尿的年轻人 {#ex-hepatitis}
-一名24岁三周前从东南亚归来、恶心、右上腹钝痛与浓尿；胆红素95、丙氨酸氨基转移酶2100、碱性磷酸酶140、白蛋白40、国际标准化比值1.1；甲型肝炎免疫球蛋白M阳性、乙型肝炎表面抗原阴性、人类免疫缺陷病毒阴性。
-::: solution
-**合成功能保留图像的急性甲型肝炎（[[#def-injury]]的幅度逻辑：数千的丙氨酸氨基转移酶、正常的国际标准化比值与白蛋白排除了令人担忧的少数——[[#def-synthesis]]）。处理是支持与管理性：**避免酒精与肝毒素及超治疗剂量的扑热息痛（[[emergency-critical-care/poisoning]]、[[pharmacology/adverse-reactions]]）；不用抗病毒药；入院触发项是国际标准化比值升高、脑病与顽固呕吐（急性肝衰竭的转诊标准与移植中心联络规则——[[gastrointestinal/liver-disease]]、[[emergency-critical-care/critical-care]]）；食品从业者与职业排除期、及家庭与性伴侣暴露后预防疫苗或免疫球蛋白窗口——[[public-health/vaccination-programmes]]、[[public-health/communicable-disease-control]]、性健康联络（[[obstetrics-gynaecology/contraception-fertility]]）；通报与追踪义务（法定通报与旅行史集群搜寻——[[public-health/communicable-disease-control]]、[[microbiology/laboratory-diagnosis]]）；随访（数周后复发与胆汁淤积病程变异、及在签“痊愈”前的正常化时间线——[[clinical-skills/communication]]）；及预防的闭环（旅行门诊队列的甲肝疫苗、及在血液已开时查乙肝丙肝状态及疫苗及治愈路径——[[microbiology/viruses]]、[[public-health/screening]]）。**
+### 模式
+
+损伤与胆汁淤积的比值给出第一步分类。**R比值**比较ALT和ALP，两者各自以正常上限（ULN）的倍数表示：
+
+$$
+R = \dfrac{\text{ALT}/\text{ULN}_{\text{ALT}}}{\text{ALP}/\text{ULN}_{\text{ALP}}}
+$$ {#eq-r}
+
+R值5或以上为**肝细胞性**模式，2或以下为**胆汁淤积性**模式，介于2和5之间为**混合性**模式。R比值是为药物性肝损伤而制定的，但它是一个有用的通用框架。
+
+::: theorem 模式指向病变过程 {#thm-pattern}
+在做任何特异性检查之前，异常的幅度和模式就能缩小鉴别诊断的范围：
+
+- **ALT达数千**（高于约1,000 U/L）：缺血性肝炎、对乙酰氨基酚或其他毒性损伤、急性病毒性肝炎，偶尔见于胆总管结石通过时。
+- **ALT升高数倍**（低于约5倍ULN）且持续：代谢功能障碍相关脂肪性肝病、酒精、慢性乙型或丙型肝炎、血色病、自身免疫性肝炎、药物和乳糜泻。
+- **胆汁淤积模式**：胆管梗阻（结石、肿瘤）、原发性胆汁性胆管炎、原发性硬化性胆管炎、药物，以及肿瘤、肉芽肿或淀粉样物的浸润。
+- **AST:ALT比值大于2**：提示酒精相关性肝病。在其他慢性肝病中比值大于1提示肝硬化。
 :::
+
+::: proof
+酶从受损细胞中漏出，因此其水平反映同时受损的细胞数量。缺血和对乙酰氨基酚同时杀死大量3区肝细胞，产生极高的水平。慢性疾病在任何时刻损伤的细胞较少，产生中度、持续的升高。
+
+胆汁淤积时ALP升高主要不是因为漏出，而是因为潴留在肝细胞内的胆盐诱导其合成并把它从胆小管膜上释放出来。这需要几天时间，所以胆总管结石可以在ALP升高之前引起ALT短暂飙升。
+
+酒精耗竭ALT活性所需的辅因子磷酸吡哆醛，并损伤线粒体，后者释放线粒体AST。因此酒精相关疾病中AST:ALT比值升高。在任何原因引起的肝硬化中，血窦细胞对AST的清除减少，也促成比值大于1。
 :::
+
+两种氨基转移酶在一次损伤后的下降速度也不同，这有助于判断损伤时间。AST的血浆半衰期约17小时，ALT约47小时。急性损伤后AST下降更快，因此AST:ALT比值在一两天内降到1以下。
 
 ::: widget plot
-f: 100*0.5^(x/0.25); 100*0.5^(x/20); 100*0.5^(x/60)
-x: 0, 5
-y: 0, 105
-labels: \text{天数},\ \text{血浆活性（正常百分比）};\ \text{因子VII（半衰期约6小时）};\ \text{白蛋白（半衰期约20天）};\ \text{免疫球蛋白G（半衰期约21天、仅为比例）}
-caption: 半衰期解释了哪个数字是功能检验。第七因子在合成失败或华法林后数小时内下降、并在维生素K或新鲜血浆后一天内纠正——因此凝血酶原时间是扑热息痛方案与急性肝衰竭中的急性功能与预后数字（[[#def-synthesis]]、[[emergency-critical-care/poisoning]]、[[gastrointestinal/liver-disease]]）。白蛋白与免疫球蛋白G以周为单位变动：低白蛋白是一个慢性与分布标志物、不是急性的（邻近[[immunology/adaptive-responses]]的球蛋白对照：慢性肝炎升高球蛋白而白蛋白下降——倒置的白蛋白球蛋白比作为听诊器级别的线索——[[clinical-skills/laboratory-tests]]）。
+f: 3000*exp(-ln(2)*x/17); 2000*exp(-ln(2)*x/47)
+x: 0, 150
+y: 0, 3000
+labels: \text{AST（半衰期约17 h）}; \text{ALT（半衰期约47 h）}
+caption: 一次急性肝损伤（如一次休克）后血浆AST和ALT（U/L）随时间（小时）下降的示意图，假设为一级清除且无持续损伤。AST起点较高但下降更快，因此比值在约一天内倒转。持续损伤会使两者都保持升高。
+:::
+
+::: example 三组检查 {#ex-patterns}
+把每组检查分为肝细胞性、胆汁淤积性或混合性，并提出可能的原因。正常上限：ALT 40 U/L，ALP 130 U/L。
+
+(a) 一名70岁女性心脏骤停后：ALT 3,200，AST 4,800，ALP 140，胆红素30 µmol/L。
+
+(b) 一名60岁男性，无痛性黄疸伴体重下降：ALT 90，ALP 780，GGT 650，胆红素210 µmol/L，尿色深，粪便色浅。
+
+(c) 一名45岁肥胖伴2型糖尿病女性：ALT 72，AST 50，ALP 110，GGT 80，胆红素正常。
+::: solution
+使用[[#eq-r]]。
+
+(a) $R = (3200/40)/(140/130) = 80/1.08 = 74$。**肝细胞性**，在一次低血流事件后不久氨基转移酶极高：**缺血性肝炎**（"休克肝"）。早期AST高于ALT是典型表现。如果灌注恢复，两者都应很快下降。
+
+(b) $R = (90/40)/(780/130) = 2.25/6 = 0.375$。**胆汁淤积性**，伴结合性高胆红素血症、尿色深和粪便色浅：胆汁流动受阻。这个年龄无痛性黄疸伴体重下降，高度怀疑**胰头癌**或胆管癌。下一步是超声，然后是CT（[[gastrointestinal/pancreas-biliary]]）。
+
+(c) $R = (72/40)/(110/130) = 1.8/0.846 = 2.1$。比值处于**混合性**范围，但接近胆汁淤积的界限，且绝对变化轻微。在肥胖和糖尿病患者中，**代谢功能障碍相关脂肪性肝病**是最可能的原因，但仍需要标准病因筛查和纤维化评估。
+:::
+:::
+
+::: example 尿色深的年轻男性 {#ex-hepatitis}
+一名24岁男性在南亚旅行后回国。他乏力、恶心、右上腹不适一周，随后发现尿色深、眼睛发黄。ALT 2,100 U/L，ALP 210 U/L，胆红素95 µmol/L，INR 1.1。最可能的诊断是什么？如何证实？哪项结果对他的安全最重要？
+::: solution
+**模式。** ALT数千而ALP轻度升高，属于急性肝炎的**肝细胞性**模式。尿色深说明多出的胆红素是结合型的。
+
+**可能的原因。** 到南亚旅行后，最可能是急性**甲型肝炎**或**戊型肝炎**，两者都经粪-口途径传播。也要考虑急性乙型肝炎、药物或草药损伤以及其他病毒感染，并且总是要询问对乙酰氨基酚的使用情况。
+
+**证实。** 甲型肝炎IgM、戊型肝炎IgM（有条件时加HEV RNA）、乙型肝炎表面抗原和核心抗体IgM，以及药物、酒精和补充剂的用药史。
+
+**关键的安全指标是INR。** INR 1.1说明合成功能保留。INR上升或出现任何意识模糊，提示进展为**急性肝衰竭**，需要紧急与肝病中心讨论。大多数甲型或戊型肝炎患者经支持治疗可完全康复；戊型肝炎在妊娠和原有肝病者中可能很严重。根据公共卫生指南，密切接触者可接种甲型肝炎疫苗。
+:::
+:::
+
+::: example 没有肝病的高INR {#ex-synthesis}
+一名66岁男性因憩室穿孔在重症监护病房。他一直使用广谱抗生素，10天没有进食。INR 2.4。ALT、ALP和胆红素正常，未服用抗凝药。请解释可能的原因以及如何验证。
+::: solution
+**推理。** 肝脏检查显示没有损伤或胆汁淤积，因此肝衰竭不太可能。可能的原因是**维生素K缺乏**：他10天没有膳食摄入，广谱抗生素又减少了肠道细菌产生的维生素K。没有维生素K，肝无法对因子II、VII、IX和X进行γ-羧化，因此这些因子虽然被合成却不起作用。
+
+**验证。** 静脉给予维生素K，12～24小时后复查INR。迅速纠正可证实缺乏，并说明合成能力正常。如果不能纠正，则提示真正的肝衰竭或其他凝血病，例如脓毒症中的弥散性血管内凝血。剂量遵循当地指南。
+:::
+:::
+
+::: example 瘙痒和乏力 {#ex-pbc}
+一名52岁女性乏力和全身瘙痒18个月，夜间加重。ALP 410 U/L，GGT 380 U/L，ALT 55 U/L，胆红素正常。超声显示胆管正常。抗线粒体抗体高滴度阳性。诊断是什么？胆红素正常说明什么？
+::: solution
+**模式。** 胆汁淤积模式伴GGT升高，证实ALP来自肝。超声胆管正常排除了大胆管梗阻，因此这是**肝内胆汁淤积**。
+
+**诊断。** 中年女性胆汁淤积模式伴**抗线粒体抗体**阳性，可诊断**原发性胆汁性胆管炎**（PBC），一种对肝内小胆管的自身免疫性破坏。通常不需要肝活检。瘙痒和乏力是典型表现。
+
+**胆红素正常。** PBC中胆红素在后期大量胆管丧失时才升高。胆红素正常提示疾病处于早期，而胆红素是最有力的预后指标之一。PBC的治疗和监测见[[gastrointestinal/liver-disease]]。
+:::
 :::
 
 ## 黄疸
 
-::: definition 黄疸患者：一个鉴别的解剖 {#def-jaundice}
-**检出巩膜黄染在约40微摩尔每升以上；长时间梗阻性疾病中的皮肤与巩膜发黄带胆盐染色；把结合型高胆红素血症在床边分开的浓尿陶土便之问（[[clinical-skills/history-taking]]）。肝前（溶血与无效红细胞生成：以非结合为主的图像伴尿正常、升高的乳酸脱氢酶与结合珠蛋白与网织红细胞标志物、及[[blood/haemoglobin-disorders]]的危象（镰状与地中海贫血与球形红细胞增多症与葡萄糖六磷酸脱氢酶缺乏）、自身免疫溶血（[[immunology/autoimmunity]]、[[blood/anaemia]]）、输血反应（[[blood/transfusion]]）、及血肿吸收的算术；新生儿黄疸及其胆红素脑病阈值生理——[[paediatrics/newborn]]、邻近[[blood/haemoglobin-disorders]]自己的Rh教训[[obstetrics-gynaecology/pregnancy-complications]]）。肝细胞性（每一种肝炎病因——病毒性、酒精性、药物性、自身免疫性、缺血性、Wilson、脓毒症相关胆汁淤积——[[gastrointestinal/liver-disease]]、[[microbiology/viruses]]、[[emergency-critical-care/poisoning]]；结合型部分随酶一起漏出）。肝后梗阻性（结石上行进入并压迫胆道系统——[[gastrointestinal/pancreas-biliary]]；狭窄良性与恶性；胆管癌与胰头及壶腹部肿瘤——[[gastrointestinal/pancreas-biliary]]、[[gastrointestinal/gi-bleeding-cancer]]；原发性硬化性胆管炎与免疫球蛋白G4疾病——[[gastrointestinal/liver-disease]]、[[immunology/autoimmunity]]；Mirizzi及邻近手术夹的医源性狭窄——[[surgery/gastrointestinal-surgery]]）。梗阻综合征的后果：瘙痒（胆汁酸与溶血磷脂酸及自分泌毒素的瘙痒生物学及其治疗阶梯——利福平、阿片拮抗剂、舍曲林、贝特类、及鼻胆管或支架减压选项——[[geriatrics-palliative/symptom-control]]、[[gastrointestinal/pancreas-biliary]]）；脂溶性维生素吸收不良伴可纠正的国际标准化比值（[[#ex-synthesis]]、[[gastrointestinal/digestion-absorption]]）；感染风险（梗阻感染的胆汁是一个泌尿系脓毒症级别的急症：Charcot的周期发热与黄疸及右上腹痛、及Reynolds五联征、紧急内镜胆道引流与抗生素——[[gastrointestinal/pancreas-biliary]]、[[emergency-critical-care/shock-fluids]]、[[infectious-diseases/fever-sepsis]]）；肾的打击（胆型肾病与肝肾生理——[[renal/acute-kidney-injury]]）；及恶性梗阻性黄疸的姑息视角（支架对外科旁路、及瘙痒与生存的演算——[[geriatrics-palliative/palliative-care]]、[[surgery/gastrointestinal-surgery]]）。**
+::: definition 黄疸的分类 {#def-jaundice}
+黄疸按胆红素处理在哪一环节失败来分类：
+
+- **肝前性**：胆红素生成过多，如溶血或无效红细胞生成；或结合减少，如Gilbert综合征。胆红素主要为**非结合型**，尿色不深，肝酶正常。
+- **肝性（肝细胞性）**：肝细胞受损，如病毒性、酒精性、药物性或自身免疫性肝炎以及肝硬化。两种胆红素都升高，氨基转移酶升高。
+- **肝后性（梗阻性、胆汁淤积性）**：胆汁不能到达肠道，原因有胆总管结石、胰腺或胆道癌症或狭窄。胆红素主要为**结合型**，尿色深，粪便色浅，ALP和GGT升高。瘙痒常见。
 :::
 
-::: example 肝病史正常的高国际标准化比值 {#ex-synthesis}
-一名74岁服华法林（适应证：机械主动脉瓣）的患者因胃肠炎就诊、国际标准化比值8.4而无出血；胆红素52、碱性磷酸酶410、丙氨酸氨基转移酶90、白蛋白34。计算机断层显示一个2厘米胰头肿块伴胆管扩张。
-::: solution
-**两个相互作用与一个诊断（[[#def-synthesis]]、[[#def-jaundice]]）：(i) 胆汁淤积图像（结合胆红素与碱性磷酸酶升高、胆管扩张）意味着维生素K吸收不良叠加华法林——缓慢给药维生素K并带覆盖及复查、因为机械瓣会惩罚过度纠正（[[blood/haemostasis-bleeding]]、[[cardiovascular/valve-congenital-disease]]、邻近[[gastrointestinal/pancreas-biliary]]的支架退黄也会修正国际标准化比值）；(ii) 胃肠炎与摄入减少加抗生素常常解释这样的国际标准化比值波动——药物疾病相互作用复审（[[pharmacology/metabolism-excretion]]、[[pharmacology/adverse-reactions]]、[[geriatrics-palliative/polypharmacy]]）。分诊决定：国际标准化比值的出血无出血算法（维生素K剂量与凝血酶原复合物规则——[[blood/haemostasis-bleeding]]、[[blood/transfusion]]）；无痛黄疸癌症路径启动（胰腺方案计算机断层与多学科——[[gastrointestinal/pancreas-biliary]]、[[gastrointestinal/gi-bleeding-cancer]]）；操作前凝血障碍纠正而不恐慌停华法林（支架或活检规划——[[clinical-skills/patient-safety]]）；及分期完成前的诚实目标谈话（[[clinical-skills/communication]]、[[geriatrics-palliative/palliative-care]]）。**
-:::
+第一个实际问题是胆管是否扩张。**腹部超声**能很快回答这个问题。胆管扩张意味着肝外梗阻，接着用CT、磁共振胰胆管成像（MRCP）或超声内镜检查。胆管不扩张则指向肝细胞性疾病或肝内胆汁淤积。
+
+尿试纸在床旁也有帮助。尿中有胆红素意味着结合性高胆红素血症。尿胆原缺失提示完全梗阻。
+
+::: warning 无痛性黄疸并不令人放心
+胆结石通常引起疼痛。进行性无痛性黄疸，尤其是老年人伴体重下降，在被证明不是之前都应当作胰腺或胆管癌对待。黄疸患者可触及无压痛的胆囊（Courvoisier定律）使结石不太可能，因为有结石的胆囊通常已纤维化而不会扩张。
 :::
 
-::: example 瘙痒的疲乏 {#ex-pbc}
-一名54岁女性18个月疲乏与关节痛、偶然发现碱性磷酸酶正常值的2.5倍；丙氨酸氨基转移酶轻度升高、胆红素与白蛋白及国际标准化比值正常、干眼、服左甲状腺素的甲状腺功能减退；抗核抗体低滴度、抗线粒体抗体M2强阳性。
-::: solution
-**原发性胆汁性胆管炎（中年女性的胆汁淤积模式伴疲乏与瘙痒及关节痛及自身免疫集群——甲状腺与干燥及硬皮病重叠——[[gastrointestinal/liver-disease]]的原发性胆汁性胆管炎节、[[immunology/autoimmunity]]、[[endocrine/thyroid]]、[[musculoskeletal/inflammatory-arthritis]]）。确认并分期：**抗线粒体抗体M2伴胆汁淤积生化通常无需活检（[[pathology/diagnostic-pathology]]与[[gastrointestinal/liver-disease]]）；重叠肝炎之问（丙氨酸氨基转移酶升高与免疫球蛋白G驱动活检对治疗的决定）、及纤维化评估（弹性成像带淤血与肥胖警诫——[[clinical-skills/medical-imaging]]）。治疗并监测：**按体重的熊去氧胆酸剂量带12个月的生化反应标准（Paris与GLOBE的预后逻辑——[[gastrointestinal/digestion-absorption]]的胆汁酸生理与[[gastrointestinal/liver-disease]]）、反应不足时的二线药、及带预后评分的移植时机谈话（[[immunology/transplant-tumour-immunology]]）。症状与风险管理：**疲乏评定（在标为肝源之前先做甲状腺与贫血及睡眠及抑郁审计——[[psychiatry/mood-disorders]]、[[blood/anaemia]]）；瘙痒阶梯（[[geriatrics-palliative/symptom-control]]、[[#def-jaundice]]）；骨健康（维生素D与钙及骨密度扫描——[[endocrine/bone-calcium]]）；脂溶性维生素与血脂检查（[[gastrointestinal/digestion-absorption]]、邻近[[cardiovascular/vascular-disease]]的血脂异常解读在胆汁淤积中）；甚至在肝硬化之前的静脉曲张与门脉高压监测（[[gastrointestinal/liver-disease]]、[[gastrointestinal/gi-bleeding-cancer]]）；及肝细胞癌监测边界规则（仅肝硬化期——[[public-health/screening]]）。**
-:::
+## 检查异常的肝脏检查结果
+
+::: definition 标准检查流程 {#def-workup}
+英国胃肠病学会指南（2018年）建议，肝脏血液检查异常的成人，无论异常程度和持续时间如何，都应考虑进行**肝病病因筛查**：
+
+- 腹部超声；
+- 乙型肝炎表面抗原和丙型肝炎抗体，阳性者做PCR；
+- 抗线粒体抗体、抗平滑肌抗体和抗核抗体，以及血清免疫球蛋白；
+- 同时检测铁蛋白和转铁蛋白饱和度。
+
+根据临床情况增加其他检查，如α1-抗胰蛋白酶水平、年轻人的铜蓝蛋白和乳糜泻血清学。所有人都要评估饮酒量和代谢危险因素。
 :::
 
-::: definition 异常结果的检查算法 {#def-workup}
-**第0步——重复并解读（运动、注射、并发感染与实验室变异造成的一过性升高很常见；无症状轻度升高的路径值得耐心而不是放射学——高价值检验运动[[clinical-skills/patient-safety]]）；确认模式（R值；碱性磷酸酶来源用γ谷氨酰转移酶或同工酶；胆红素分组；白蛋白与国际标准化比值回答功能之问）。第1步——病史与暴露审计：酒精带生物标志物（缺失糖基化转铁蛋白与平均红细胞体积及γ谷氨酰转移酶模式及其局限——[[clinical-skills/laboratory-tests]]、[[psychiatry/substance-use]]）；药物与补剂带潜伏期与可预测性推理（[[pharmacology/adverse-reactions]]、[[gastrointestinal/liver-disease]]的药物性肝损）；代谢风险（代谢相关脂肪性肝病的代谢综合征轴带FIB-4分诊、及初级照护隐匿流行的框定——[[gastrointestinal/liver-disease]]、[[endocrine/diabetes]]）；及流行病学风险因素（旅行、文身、输血、注射毒品与出生队列风险——[[microbiology/viruses]]、[[public-health/global-health]]）。第2步——标准组：甲乙丙肝血清学带急性对慢性对已接种疫苗的区分（[[microbiology/viruses]]、[[public-health/vaccination-programmes]]）；自身免疫（抗核抗体、抗平滑肌抗体、免疫球蛋白G用于自身免疫性肝炎模式；抗线粒体抗体M2用于原发性胆汁性胆管炎；免疫球蛋白G4用于淋巴浆细胞硬化性疾病——[[immunology/autoimmunity]]、[[gastrointestinal/liver-disease]]、[[gastrointestinal/pancreas-biliary]]）；代谢（铁蛋白带转铁蛋白饱和度用于遗传性血色病筛查及急性期混杂——邻近[[blood/haemoglobin-disorders]]的铁生物学[[blood/anaemia]]；转铁蛋白饱和度与人类白细胞抗原分型转诊规则；40岁以下者的铜蓝蛋白带可交换铜及24小时尿铜用于Wilson——[[genetics/mendelian-inheritance]]、[[gastrointestinal/liver-disease]]；α1抗胰蛋白酶表型带肺的配对——[[respiratory/interstitial-vascular-disease]]、[[genetics/common-disease-genetics]]）；及乳糜血清学、甲状腺、及当天门冬氨酸氨基转移酶为主时的肌肉检查（肌酸激酶）（[[endocrine/thyroid]]、[[musculoskeletal/bones-joints]]）。第3步——影像：带多普勒的超声（脂肪变的回声质地、胆管、血管、尾状叶与脾的门脉高压征——[[clinical-skills/medical-imaging]]）、弹性成像（纤维化的硬度分期带肥胖与炎症及淤血警诫——[[gastrointestinal/liver-disease]]的FIB-4然后弹性成像级联）、及胆汁淤积模式的磁共振胆胰管成像或计算机断层（[[clinical-skills/medical-imaging]]）。第4步——组织学决定：当血清学无信息、当自身免疫重叠或脂肪性肝炎分级重要、或为分期（凝血障碍中的经颈静脉路径选项——[[gastrointestinal/liver-disease]]、[[pathology/diagnostic-pathology]]、及[[clinical-skills/medical-imaging]]的介入放射学）。第5步——随访规则：无法解释的异常有一个明确的复查日期与一个具名负责人、“肝功能异常、复查”转诊的墓地是一个患者安全产物（[[clinical-skills/records-handover]]、[[public-health/health-systems-economics]]）。**
-:::
+找到病因只是任务的一半。另一半是判断患者是否有**进展期纤维化**，因为这决定预后以及是否需要专科诊治。纤维化并不反映在氨基转移酶上，肝硬化时氨基转移酶可以正常。因此要用非侵入性检查。最简单的是**FIB-4指数**：
+
+$$
+\text{FIB-4} = \dfrac{\text{年龄（岁）} \times \text{AST (U/L)}}{\text{血小板 }(10^9/\text{L}) \times \sqrt{\text{ALT (U/L)}}}
+$$ {#eq-fib4}
+
+常用的界值是：低于1.30提示进展期纤维化风险低，高于3.25提示风险高。介于两者之间为不确定，需要第二项检查，如增强肝纤维化（ELF）血液检查或瞬时弹性成像（FibroScan），后者测定肝硬度。年龄会使FIB-4升高，因此65岁以上者常使用较高的低界值。
 
 ::: quiz
-肝合成功能受损的最佳床旁证据是：
-- [ ] 白蛋白降低
-- [x] 凝血酶原时间与国际标准化比值延长、且维生素K不能完全纠正
-- [ ] 丙氨酸氨基转移酶升高
-- [ ] 结合型高胆红素血症
+一名30岁男性在患病毒感染时发现胆红素38 µmol/L，几乎全部为非结合型。ALT、ALP、GGT、全血细胞计数、网织红细胞和结合珠蛋白均正常。最可能的解释是什么？
+- [ ] 早期原发性硬化性胆管炎
+- [ ] 代偿性溶血
+- [x] Gilbert综合征
+- [ ] Dubin–Johnson综合征
 ::: solution
-**第七因子数小时的半衰期使凝血酶原时间成为急性功能检验；维生素K不能纠正把肝细胞衰竭与胆汁淤积性维生素K吸收不良分开（[[#def-synthesis]]、[[#ex-synthesis]]、[[blood/haemostasis-bleeding]]）。低白蛋白报告慢性与分布（[[#def-synthesis]]）；丙氨酸氨基转移酶报告损伤（[[#def-injury]]）；结合胆红素报告排泄（[[#def-jaundice]]）；King's College与移植列队对国际标准化比值的用法随之而来（[[gastrointestinal/liver-disease]]、[[emergency-critical-care/poisoning]]）。**
+孤立的**非结合性**高胆红素血症，肝酶正常，无溶血证据（网织红细胞和结合珠蛋白正常），在患病时显露出来，是**Gilbert综合征**的典型表现。Dubin–Johnson综合征引起结合性高胆红素血症。原发性硬化性胆管炎为胆汁淤积性，ALP升高。除确认这一模式外不需要进一步检查。
 :::
 :::
 
 ::: history
-**胆红素的化学谱系（19世纪的胆汁色素研究；1916年van den Bergh反应把直接对间接分开——这个检验仍在[[#def-injury]]中为这两个组分命名）；两次世界大战的“血清性肝炎”流行病学（20世纪初黄热病输血流行病学；1965年澳大利亚抗原导向乙型肝炎病毒及其疫苗——[[public-health/vaccination-programmes]]）、及1989年丙型肝炎的发现（Houghton与Choo的Chiron减法克隆把大多数输血后肝炎转化为可诊断可治愈的疾病——[[blood/transfusion]]、[[microbiology/viruses]]、直接抗病毒药治愈时代[[microbiology/antimicrobials]]）；碱性磷酸酶同工酶时代把骨与肝分开；Child分类（1964年——外科医师的床旁五项）及MELD评分2001年的移植分配革命及其效用伦理之争（[[medical-ethics-law/justice-resources]]、[[immunology/transplant-tumour-immunology]]）；Gilbert综合征启动子变异的描述（1990年代——[[genetics/mendelian-inheritance]]）；及弹性成像然后FIB-4的浪潮把纤维化分期变成一个门诊数字而不是一块活检（[[clinical-skills/medical-imaging]]、[[public-health/screening]]）。**
-:::
-
-## 通向何处
-
-疾病本身在[[gastrointestinal/liver-disease]]；梗阻与胆道工具箱在[[gastrointestinal/pancreas-biliary]]；出血风险与凝血障碍在[[blood/haemostasis-bleeding]]；药物机制在[[pharmacology/adverse-reactions]]；病毒实验室在[[microbiology/viruses]]；影像阶梯在[[clinical-skills/medical-imaging]]；切除规划在[[surgery/gastrointestinal-surgery]]。
-
-::: exercise 读这份急性检验组 {level=1}
-一名20岁扑热息痛过量后4小时的患者：丙氨酸氨基转移酶80、国际标准化比值1.2、肌酐90、pH 7.34、乳酸2.0。下一步是什么、哪些数字要盯？
-::: solution
-**一个尚不严重但可能变严重的肝（[[#def-injury]]的幅度逻辑：数千是随后的数——酶在24-96小时达峰——[[emergency-critical-care/poisoning]]）：按时间轴绘线的扑热息痛浓度并按列线图处理并给乙酰半胱氨酸（[[emergency-critical-care/poisoning]]、[[pharmacology/absorption-distribution]]）；要盯的数字是国际标准化比值（第七因子的实时功能——[[#def-synthesis]]与图）、肌酐与酸中毒及乳酸（King's College标准——[[gastrointestinal/liver-disease]]、[[renal/acute-kidney-injury]]）、及意识（[[gastrointestinal/liver-disease]]）；转诊重症与移植中心规则（[[emergency-critical-care/critical-care]]）；及“不要单次采样定论”规则（[[clinical-skills/clinical-reasoning]]）。**
-:::
-:::
-
-::: exercise 向患者解释Gilbert {level=1}
-用不超过五句话向一名焦虑的22岁学生解释她的结果。
-::: solution
-**要点（[[#ex-patterns]]）：这是Gilbert综合征；约每十到二十人有一人；它意味着肝处理胆红素的酶略慢，而不是肝受损；它不会进展、不需要治疗、也不需要复查；在禁食、生病、考试或熬夜后数字会跳高、在情况下是正常的。加上一个书面记录与一张卡，以免未来的检查被重复（[[clinical-skills/communication]]、[[clinical-skills/records-handover]]、[[genetics/mendelian-inheritance]]）；并警告其他临床医师不要做腹部超声与肝炎筛查的连锁（[[clinical-skills/patient-safety]]、[[public-health/screening]]的过度检查面）。**
-:::
+1901年，巴黎的吉尔伯特（Augustin Gilbert）和勒雷布莱（Pierre Lereboullet）描述了一种轻度的家族性黄疸，现在以吉尔伯特的名字命名。1913年，荷兰医生希曼斯·范登伯格（Abraham Albert Hijmans van den Bergh）把埃利希（Ehrlich）的重氮反应用于测定血清胆红素，发现一部分胆红素"直接"反应，另一部分只有在加入酒精后才反应，即"间接"反应。这一区别后来被解释为结合胆红素与非结合胆红素，成为黄疸临床分类的基础。二十世纪五十年代，拉帕波特（Albert Rappaport）描述了肝腺泡及其分区，解释了为什么缺血和毒素会损伤小叶的特定部分。
 :::
 
 ::: summary
-- 酶报告损伤与排泄、而只有国际标准化比值（及不完美地白蛋白）报告功能；记住R值与碱性磷酸酶来源确认。
-- 半衰期决定意义：第七因子以小时计（因此凝血酶原时间是急性功能数字）、白蛋白以周计（因此它是慢性与分布的标志）。
-- 黄疸分为肝前（非结合、尿正常）、肝细胞性与肝后（结合、浓尿陶土便）；梗阻感染胆汁是急症。
-- 异常结果的路径是重复、分型、暴露审计、标准组、影像、然后选择性活检——外加一个具名的复查日期。
-- 维生素K纠正凝血酶原时间的能力把胆汁淤积与肝细胞衰竭分开；Child-Pugh与MELD是慢性病数字而轨迹是急性数字。
+- 肝有双重血供，并按腺泡分区组织；3区最易受缺血和对乙酰氨基酚损伤。
+- 胆红素由血红素生成，以非结合形式结合白蛋白运输，经UGT1A1结合，经MRP2排入胆汁。只有结合胆红素出现在尿中。
+- ALT和AST反映损伤，ALP和GGT反映胆汁淤积，白蛋白和PT反映合成功能。把INR升高归咎于肝之前，先纠正维生素K缺乏。
+- R比值把模式分为肝细胞性、胆汁淤积性或混合性；ALT极高提示缺血、毒素或急性病毒性肝炎。
+- 黄疸分为肝前性、肝性或肝后性。超声首先回答胆管是否扩张。
+- 肝脏检查异常应进行标准病因筛查和纤维化评估，例如FIB-4。
 :::
 
-## 练习
+## 后续内容
 
-::: exercise 拆分这个胆红素 {level=1}
-一名患者胆红素78、浓尿中尿胆原几乎缺失、陶土便。哪个组分占主、必须成像什么？
+这些模式背后的疾病、肝硬化及其并发症，以及用Child–Pugh和MELD评估严重程度见[[gastrointestinal/liver-disease]]。结石和肿瘤引起的梗阻性黄疸见[[gastrointestinal/pancreas-biliary]]。溶血作为黄疸的原因见[[blood/anaemia]]，药物代谢见[[pharmacology/metabolism-excretion]]，实验室检查的一般原则见[[clinical-skills/laboratory-tests]]。
+
+## 习题
+
+::: exercise 结合型还是非结合型？ {level=1}
+对下列每种疾病，说明升高的胆红素主要是结合型还是非结合型，以及尿中是否出现胆红素：(a)遗传性球形红细胞增多症；(b)胆总管结石；(c)Gilbert综合征；(d)Dubin–Johnson综合征。
 ::: solution
-**结合型（溶于水、因此浓尿；粪胆素缺失使粪便变白而尿胆原低——[[#def-injury]]与[[#def-jaundice]]的经典方格）：给胆管成像——先超声、然后磁共振胆胰管成像或计算机断层查梗阻一组（结石、狭窄、肿瘤）——[[clinical-skills/medical-imaging]]、[[gastrointestinal/pancreas-biliary]]。**
+(a)非结合型，尿中无胆红素（溶血）。(b)结合型，尿中有胆红素（梗阻）。(c)非结合型，尿中无胆红素（结合减少）。(d)结合型，尿中有胆红素（MRP2排泄缺陷）。
 :::
 :::
 
-::: exercise 说出这个模式 {level=1}
-丙氨酸氨基转移酶620、碱性磷酸酶130、胆红素45、白蛋白40、国际标准化比值1.0。肝细胞性、胆汁淤积性还是混合？说出三个病因。
+::: exercise 哪些检查反映功能？ {level=1}
+解释为什么ALT不是肝"功能"的检查，并说出最能反映合成功能的两项常规检查。哪一项对急性肝衰竭反应更快？为什么？
 ::: solution
-**肝细胞性（R值高——[[#def-injury]]）：病毒性肝炎、药物性损伤（包括补剂）、自身免疫性肝炎、缺血性（“休克肝”）、或年轻人的Wilson——[[microbiology/viruses]]、[[pharmacology/adverse-reactions]]、[[gastrointestinal/liver-disease]]。正常的白蛋白与国际标准化比值说明事件是新近的；国际标准化比值是要盯的数字——[[#def-synthesis]]。**
+ALT是从受损肝细胞中漏出的酶；它测定损伤，而不是肝的工作能力，在终末期肝硬化时可以正常。反映合成功能的检查是**白蛋白**和**凝血酶原时间**（或INR）。PT反应更快，因为因子VII半衰期约6小时，而白蛋白半衰期约3周。
 :::
 :::
 
-::: exercise 解读孤立的碱性磷酸酶 {level=2}
-一名78岁女性：碱性磷酸酶340、γ谷氨酰转移酶正常、钙与磷酸盐正常、轻度膝痛。解释并规划。
+::: exercise 解释Gilbert综合征 {level=1}
+用适合患者理解的通俗语言，解释什么是Gilbert综合征以及为什么不需要治疗。
 ::: solution
-**骨源的碱性磷酸酶（正常的γ谷氨酰转移酶排除肝源——[[#def-injury]]的双酶交叉核对）：Paget病、骨软化（查维生素D与甲状旁腺激素——[[endocrine/bone-calcium]]）、骨折愈合、或高转换骨转移是鉴别（[[musculoskeletal/bones-joints]]、邻近[[gastrointestinal/gi-bleeding-cancer]]的骨疾病）；规划：**维生素D与化学组、按症状的靶向影像或骨扫描、及对无症状老年Paget偶然发现的诚实管理（[[clinical-skills/patient-safety]]的避免过度检查、[[geriatrics-palliative/polypharmacy]]）。**
+Gilbert综合征是一种常见的、遗传性的肝脏处理胆红素方式上的差异；胆红素是旧红细胞分解时产生的一种黄色物质。处理胆红素的肝酶工作得比一般人稍慢，因此胆红素可能轻度升高，尤其是在生病或一段时间没吃东西时，眼睛可能看起来有点黄。肝本身是健康的，它不会导致肝病，也不需要治疗。值得告诉医生，因为它会影响少数几种药物的处理。
 :::
 :::
 
-::: exercise 判断这个纠正 {level=2}
-两名黄疸患者国际标准化比值都是1.7：一名胆总管被8厘米胆石梗阻、一名酒精性肝炎。维生素K对各做什么、为何？
+::: exercise 计算R比值 {level=2 check="7.5"}
+某人服用一种新抗生素后，ALT 600 U/L（ULN 40），ALP 260 U/L（ULN 130）。计算R比值并对模式分类。
+::: hint
+相除之前先把每个值表示为其正常上限的倍数。
+:::
 ::: solution
-**梗阻患者：**肠腔胆汁缺失意味着维生素K吸收不良、所以国际标准化比值大部分纠正（合成机器完好——[[#def-synthesis]]、[[gastrointestinal/digestion-absorption]]）；酒精性肝炎：**因子合成本身已失败、所以维生素K作用有限——不纠正标记肝细胞衰竭与预后（[[gastrointestinal/liver-disease]]、[[#def-synthesis]]）；注意两者用的是与华法林相同的机制页与出血风险算术——[[blood/haemostasis-bleeding]]、[[blood/thrombosis-anticoagulation]]。**
+ALT为$600/40 = 15$倍ULN。ALP为$260/130 = 2$倍ULN。$R = 15/2 = 7.5$。大于5，因此为**肝细胞性**模式。药物性肝损伤是首要考虑，应审查该药物；仍需排除其他原因。
 :::
 :::
 
-::: exercise 分诊这份转诊 {level=2}
-一名45岁体质指数34及2型糖尿病的患者因“丙氨酸氨基转移酶70、2年”被转诊。超声显示脂肪肝。组织评估与纤维化之问。
+::: exercise 计算FIB-4 {level=2 check="3.16"}
+一名60岁男性AST 50 U/L，ALT 40 U/L，血小板150 × 10⁹/L。计算他的FIB-4（保留两位小数），并用1.30和3.25的界值进行解读。
+::: hint
+使用[[#eq-fib4]]；40的平方根约为6.32。
+:::
 ::: solution
-**代谢相关脂肪性肝病的代谢轴疾病、而唯一决定结局的问题是纤维化分期（[[gastrointestinal/liver-disease]]、[[endocrine/diabetes]]）：酒精量化与生物标志物、排除组（病毒、自身免疫、铁、铜蓝蛋白、乳糜——[[#def-workup]]）、药物复审（他汀通常是安全的澄清、及胰高糖素样肽1与钠葡萄糖协同转运蛋白2的代谢候选——[[pharmacology/adverse-reactions]]、[[endocrine/diabetes]]）；用同一份血的FIB-4、然后不确定时做弹性成像（级联算术——[[clinical-skills/medical-imaging]]、[[public-health/screening]]）；代谢优化处方（减重目标、运动、及他汀与心血管风险管理——[[cardiovascular/circulation-blood-pressure]]、[[public-health/prevention-promotion]]）；监测决定（仅肝硬化者做肝细胞癌扫描规则、及消除酒精与肝炎辅因子——[[public-health/screening]]）；及低FIB-4低风险患者的书面停止规则（带复查间隔的避免过度检查——[[clinical-skills/patient-safety]]、[[clinical-skills/records-handover]]）。**
+$\text{FIB-4} = (60 \times 50)/(150 \times \sqrt{40}) = 3000/(150 \times 6.325) = 3000/948.7 = 3.16$。介于1.30和3.25之间，因此为**不确定**。需要第二项检查，如ELF检测或瞬时弹性成像，以判断他是否有进展期纤维化。
 :::
 :::
 
-::: exercise 建设这个黄疸门诊 {level=3}
-设计一个一站式的“黄疸与肝功能异常”服务：入口、人力、诊断、升级与审计。
+::: exercise 判断损伤时间 {level=2 check="250"}
+在一个示意模型中，一次低血压发作后AST立即为2,000 U/L，其半衰期为17小时，且无进一步损伤。51小时后AST是多少？
+::: hint
+51小时是三个半衰期。
+:::
 ::: solution
-**入口：初级照护FIB-4转诊的单层分诊、加两周等待的无痛黄疸流（[[gastrointestinal/gi-bleeding-cancer]]路径；[[public-health/health-systems-economics]]的候诊时间规则）；当日血液（[[#def-injury]]的模式组、首次接触即查国际标准化比值与维生素K——[[#def-synthesis]]）及同次就诊超声带增强选项（[[clinical-skills/medical-imaging]]）；专科护士与消化内科顾问的人力带院内弹性成像及肝团队多学科时段（[[public-health/health-systems-economics]]）；梗阻快速通道（磁共振胆胰管成像然后内镜带抗生素及脓毒症规程——[[gastrointestinal/pancreas-biliary]]、[[infectious-diseases/fever-sepsis]]、[[emergency-critical-care/shock-fluids]]）；恶性梗阻通道（组织获取、支架、胰腺癌多学科、及早期姑息并行门诊——[[gastrointestinal/pancreas-biliary]]、[[surgery/gastrointestinal-surgery]]、[[geriatrics-palliative/palliative-care]]）；慢性病通道（病毒性肝炎治愈路径与接触追踪及疫苗——[[microbiology/viruses]]、[[public-health/vaccination-programmes]]、[[public-health/communicable-disease-control]]；自身免疫与原发性胆汁性胆管炎的早期治疗分支——[[gastrointestinal/liver-disease]]、[[immunology/autoimmunity]]）；安全网（无法解释结果的明确复查日期与负责人——[[#def-workup]]、[[clinical-skills/records-handover]]；国际标准化比值与出血日单元规则；及Gilbert的书面解释模板，让良性结果闭环——[[clinical-skills/communication]]）；及审计组（胆管炎的到减压时间、胰胆肿瘤的分期诊断、首次肝病就诊时纤维化分期完整性、及未解决的“复查肝功能”转诊率——[[clinical-skills/patient-safety]]、[[public-health/health-systems-economics]]）。**
+$51/17 = 3$个半衰期。$2000 \times (1/2)^3 = 2000/8 = 250$ U/L。这样稳定的下降支持单次缺血性损伤。平台或上升则提示持续损伤。
+:::
+:::
+
+::: exercise 一个需要鉴别诊断的黄疸病例 {level=3}
+一名74岁女性黄疸、瘙痒、尿色深、粪便色浅3周，无疼痛。体重下降5 kg。胆红素240 µmol/L，ALP 690 U/L，ALT 120 U/L，INR 1.6。给出鉴别诊断和首选影像检查，并解释INR升高的原因。
+::: hint
+先对黄疸分类，再考虑脂溶性维生素的吸收。
+:::
+::: solution
+**分类。** 结合性高胆红素血症伴尿色深、粪便色浅和胆汁淤积模式：**肝后性（梗阻性）黄疸**。
+
+**鉴别诊断。** 无痛性黄疸伴体重下降：胰头癌、胆管癌、壶腹癌，以及可能性较小的（无疼痛）胆总管结石。按这种表现，药物性胆汁淤积和原发性胆汁性胆管炎可能性较小。
+
+**首选影像。** 腹部**超声**观察胆管是否扩张及有无肿块，然后行增强CT分期。
+
+**INR升高。** 胆盐不能到达肠道，因此脂肪和**维生素K**吸收不良。凝血因子II、VII、IX和X无法被激活。静脉补充维生素K应在一天内纠正INR，这在ERCP或支架置入等胆道干预之前很重要。
+:::
+:::
+
+::: exercise 为异常结果分诊 {level=3}
+一名全科医生有三名肝脏检查异常的患者。(a)一名35岁者，孤立性ALT 55 U/L，BMI 33，病因筛查正常，FIB-4 0.8。(b)一名58岁者，每周饮酒50单位，AST 90，ALT 40，血小板110 × 10⁹/L。(c)一名40岁者，ALT 300 U/L持续6个月，抗平滑肌抗体阳性，IgG升高。判断谁需要专科转诊并说明理由。
+::: hint
+对每个人考虑病因、进展期纤维化风险以及是否有特异性治疗。
+:::
+::: solution
+(a)可能是**脂肪性肝病**，FIB-4低，因此进展期纤维化风险低。在基层医疗处理生活方式和心血管风险，并按指南定期复查纤维化评估。通常不需要转诊。
+
+(b)可能是**酒精相关性肝病**：AST:ALT大于2，血小板低，提示门静脉高压和可能的肝硬化。他需要戒酒支持和纤维化评估，鉴于血小板低应转诊肝病科。NICE建议对有害饮酒者评估是否有肝硬化。
+
+(c)持续肝细胞性模式伴抗平滑肌抗体阳性和IgG升高提示**自身免疫性肝炎**，它可以治疗，不治疗可进展为肝硬化。应转诊肝病科行肝活检和治疗。
 :::
 :::

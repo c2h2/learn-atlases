@@ -1,152 +1,307 @@
-大肠以三种临床声音失败：**阑尾与憩室的急腹症、炎症性肠病的慢性复发、及肠易激的功能性噪声。知道你在回答哪一种声音——以及如何证明——是本章的手艺；同一个钙卫蛋白、内镜与计算机断层把三者分开。**
+小肠和大肠的疾病，既有需要在数小时内手术的情况，也有要管理几十年的终身疾病。阑尾炎和复杂性憩室炎是外科急症。乳糜泻和炎症性肠病是慢性免疫性疾病，可以控制但目前尚不能治愈。肠易激综合征非常常见，造成真实的痛苦，却完全没有结构性病变。
 
-本章涵盖阑尾炎与憩室病、炎症性肠病、乳糜病与息肉综合征、及包括便秘与失禁在内的功能性肠病。
+这些疾病的症状相互重叠。腹痛、腹泻、腹胀和排便习惯改变在所有这些疾病中都可能出现。临床医生的任务是识别符合哪种模式，用少数精心选择的检查加以证实，既不漏诊严重疾病，也不对功能性症状过度检查。
 
-::: definition 阑尾炎 {#def-appendix}
-**病理生理腔内梗阻——粪石、感染后淋巴组织增生、偶见种子或肿瘤——然后黏液扩张、细菌侵入、透壁炎症；从内脏性脐周痛（中肠传入——[[anatomy/abdomen]]的牵涉痛皮节）进展到伴腹膜刺激的躯体性右下腹痛；盲肠位置变异（盆腔位与盲肠后位与肝下位——延迟诊断的非典型呈现、及妊娠的向上移位——[[obstetrics-gynaecology/pregnancy-complications]]）。诊断：病史与查体模式（迁移性疼痛、厌食、低热、压痛伴腹膜刺激、反跳与咳嗽征——[[clinical-skills/physical-examination]]）、评分系统（Alvarado与急性阑尾炎炎症评分及儿童阑尾炎评分——[[clinical-skills/clinical-reasoning]]）、血液检查（中性粒细胞增多与C反应蛋白——[[clinical-skills/laboratory-tests]]）及影像（儿童与青年首选分级压迫超声——辐射纪律[[clinical-skills/medical-imaging]]与[[public-health/environmental-occupational]]的辐射负荷；对成人可疑病例准确率高的计算机断层；妊娠用磁共振；诊断性腹腔镜的妇科诊断红利——[[obstetrics-gynaecology/menstrual-pelvic-disorders]]）。绝不能漏的鉴别：宫外孕与卵巢扭转与盆腔炎与胃肠炎与肠系膜淋巴结炎与Meckel与克罗恩与盲肠癌与肾绞痛（[[renal/urinary-tract]]、[[obstetrics-gynaecology/early-pregnancy]]、及本章自己的克罗恩回肠炎一行）。处理：阑尾切除（腹腔镜为标准、保护切口的取出——邻近手术部位感染与穿刺孔转移的卫生[[surgery/wounds-surgical-infection]]与[[surgery/gastrointestinal-surgery]]）带围手术期抗生素单剂规则（[[microbiology/antimicrobials]]）；抗生素优先试验（APPAC与CODA——非复杂性阑尾炎的非手术管理、带可观的复发与粪石失败曲线——[[#def-appendix]]、[[epidemiology-ebm/randomised-trials]]）及共享决策框定（[[clinical-skills/communication]]）；穿孔病例（复苏与广谱覆盖及源头控制；影像引流加间隔对立即阑尾切除辩论的炎性包块或脓肿路径[[clinical-skills/medical-imaging]]与[[surgery/acute-abdomen]]）；年长者（盲肠癌伪装规则：右侧炎症非手术处理后间隔影像或结肠镜——[[gastrointestinal/gi-bleeding-cancer]]）；及黏液性肿瘤陷阱（不要粉碎可疑的阑尾；腹膜假黏液瘤路径——[[surgery/gastrointestinal-surgery]]与[[pathology/cancer-diagnosis]]）。**
+本章介绍乳糜泻、克罗恩病和溃疡性结肠炎、显微镜下结肠炎、肠易激综合征和便秘、憩室病以及阑尾炎。结直肠癌和息肉病综合征见[[gastrointestinal/gi-bleeding-cancer]]。
+
+## 乳糜泻
+
+::: definition 乳糜泻 {#def-coeliac}
+**乳糜泻**是一种小肠的慢性免疫介导性疾病，由膳食中的**麸质**（小麦、大麦和黑麦中的蛋白质）在遗传易感者中触发。它引起**绒毛萎缩**、**隐窝增生**和**上皮内淋巴细胞**增多，主要累及近端小肠，严格无麸质饮食后可恢复。
 :::
 
-::: definition 憩室病 {#def-diverticular}
-**病理生理（获得性假憩室——黏膜在环形肌的直穿血管进入点疝出——在西方世界发生于乙状结肠；分段运动与高压及低纤维及结缔组织及致便秘药物的假说——[[gastrointestinal/digestion-absorption]]的动力与[[geriatrics-palliative/polypharmacy]]的阿片钙剂可乐定清单；右侧与结肠及亚洲模式、及遗传与激素及免疫抑制修正项（移植人群被高估——[[immunology/transplant-tumour-immunology]]））。呈现谱：无症状憩室（偶然发现的计算机断层与结肠镜所见、其咨询必须避免治疗正统的恐慌——纤维、及对坚果种子爆米花的辟谣）；症状性非复杂疾病（左侧疼痛与腹胀及排便紊乱——肠易激重叠、及利福昔明与美沙拉秦主张带阴性试验的诚实——[[epidemiology-ebm/systematic-reviews]]）；急性憩室炎（先疼痛后发热与C反应蛋白、左髂窝的反向阑尾炎）；及复杂疾病（Hinchey框架：结肠周围脓肿、盆腔或弥漫化脓性或粪性腹膜炎、内瘘——结肠膀胱带气尿与粪尿及反复尿路感染环（[[renal/urinary-tract]]）、结肠阴道、结肠结肠——邻近[[obstetrics-gynaecology/menstrual-pelvic-disorders]]；狭窄伴梗阻模仿癌——切除标本规则（[[gastrointestinal/gi-bleeding-cancer]]）；游离穿孔伴粪性腹膜炎[[surgery/acute-abdomen]]）；憩室出血（无痛大量下消化道出血——见[[gastrointestinal/gi-bleeding-cancer]]）。诊断：增强计算机断层作为主力（结肠周围条索与脓肿与游离气体的阅片——[[clinical-skills/medical-imaging]]）、一次发作后6-8周的排除癌结肠镜（间隔癌率论点——[[public-health/screening]]）、及按严重度与共病及免疫抑制决定门诊对住院。处理：非复杂轻症发作日益不用抗生素处理（观察证据与选择性抗生素运动——邻近[[infectious-diseases/stewardship-outbreaks]]的憩室炎用药管理、及清晰的复诊规则记录[[clinical-skills/records-handover]]）；脓肿路径（抗生素与经皮引流——[[clinical-skills/medical-imaging]]）；腹膜炎路径（化脓性腹膜炎腹腔镜冲洗试验的失望、Hartmann手术对选定患者一期吻合带转流性回肠造口——还纳并发症与永不还纳的算术[[surgery/gastrointestinal-surgery]]；衰弱免疫抑制者的损伤控制逻辑[[emergency-critical-care/shock-fluids]]与[[immunology/transplant-tumour-immunology]]）；择期手术决定（发作次数不是指征——从“数发作”转向症状负担与并发症与免疫抑制判断——[[surgery/gastrointestinal-surgery]]、[[clinical-skills/communication]]的造口与生活质量咨询）；及憩室相关结肠炎（与憩室病相关的节段性结肠炎——乙状结肠之间黏膜保留的炎症、既不是炎症性肠病也不是癌而居于两者之间——[[pathology/diagnostic-pathology]]）。**
-:::
+在英国，乳糜泻约影响每100人中的1人，但大多数病例未被诊断。几乎所有患者都携带**HLA-DQ2**或**HLA-DQ8**。在**组织转谷氨酰胺酶**（tTG）修饰麸质肽、使其带更多负电荷之后，这些HLA分子能特别有效地把这些肽呈递给T细胞。麸质特异性CD4 T细胞随即驱动炎症，上皮内淋巴细胞杀伤肠上皮细胞。B细胞产生针对tTG本身的抗体，这是主要血液检查的基础。
 
-::: definition 遗传性息肉病与癌综合征 {#def-polyposis}
-**家族性腺瘤性息肉病（腺瘤性结肠息肉病——在APC胚系打击带体细胞第二次打击下、由数百至数千结直肠腺瘤近乎完全外显；[[genetics/cancer-genetics]]的两击逻辑）：青少年期起病的出血与腹泻、肠外台账（十二指肠与壶腹腺瘤作为现代死亡主因、胃息肉、甲状腺、硬纤维瘤与结肠切除后的肠系膜病变、先天性视网膜色素上皮肥厚与骨瘤——Gardner重叠；[[endocrine/thyroid]]）带儿童期起的年度或两年一次监测架构（按Spigelman分期的上消化道内镜与结肠镜乙状镜间隔——[[public-health/screening]]）、及手术决定（预防性结肠切除或全结直肠切除带回肠储袋对回肠直肠选项、及妊娠与硬纤维瘤警诫——[[surgery/gastrointestinal-surgery]]、[[obstetrics-gynaecology/contraception-fertility]]）；化学预防试验（非甾体抗炎药与舒林酸与塞来昔布息肉预防故事——[[pharmacology/adverse-reactions]]）。衰减型家族性腺瘤性息肉病与MUTYH隐性表亲（起病更晚、息肉更少、额外结肠癌风险及碱基切除修复生物学——[[genetics/common-disease-genetics]]）。Peutz-Jeghers（带树枝状平滑肌的错构瘤性息肉、皮肤黏膜色素沉着——[[musculoskeletal/skin]]——及青少年的肠套叠与出血[[paediatrics/acute-childhood-illness]]、加上乳腺与妇科及胰腺及睾丸癌风险——[[surgery/breast-endocrine-surgery]]、[[obstetrics-gynaecology/gynaecological-cancer]]、[[gastrointestinal/pancreas-biliary]]、[[surgery/vascular-urological-surgery]]）；幼年性息肉病与SMAD4及骨形态发生蛋白受体（多发幼年性息肉、与小鼻和毛细血管扩张的遗传性出血性毛细血管扩张重叠[[genetics/mendelian-inheritance]]与[[blood/haemostasis-bleeding]]）、及带监测的癌风险；Cowden与PTEN（毛根鞘瘤与巨头及甲状腺及乳腺及子宫内膜聚集——[[endocrine/thyroid]]、[[surgery/breast-endocrine-surgery]]、[[obstetrics-gynaecology/gynaecological-cancer]]）；及Lynch综合征的常用章节（错配修复胚系突变伴微卫星不稳定肿瘤、早发右侧优势、子宫内膜与卵巢及尿路上皮及胃及皮脂腺风险——[[renal/urinary-tract]]、[[obstetrics-gynaecology/gynaecological-cancer]]、[[musculoskeletal/skin]]的Muir-Torre；带BRAF排除散发的肿瘤微卫星不稳与错配修复免疫组化筛查算法——[[pathology/cancer-diagnosis]]、[[gastrointestinal/gi-bleeding-cancer]]；从二十余岁起的结肠镜监测与CAPP2阿司匹林提议及降低风险的子宫切除双侧输卵管卵巢切除讨论——[[public-health/screening]]、[[medical-ethics-law/consent-capacity]]；及微卫星不稳定的免疫检查点治疗含义——[[immunology/vaccines-immunotherapy]]）。门诊架构（家族史采集规则与系谱图绘制——[[clinical-skills/history-taking]]；遗传检测级联与儿童的预测性检测带适龄监测起点共识——[[genetics/genetic-testing]]；及初级照护登记册与接受率不平等核查——[[public-health/determinants-inequalities]]。）**
-:::
+由于这些HLA型别很常见，携带DQ2或DQ8并不意味着患病。但如果两者都没有，乳糜泻就非常不可能，因此HLA分型主要用于排除诊断。
 
-::: widget plot
-f: 100*(1-exp(-0.28*x)); 100*(1-exp(-0.12*x))
-x: 0, 5
-y: 0, 70
-labels: \text{抗生素优先治疗后年数},\ \text{累积事件（百分比）};\ \text{复发（阑尾炎）};\ \text{复杂事件率}
-caption: 非复杂性阑尾炎的抗生素优先算术（APPAC与CODA试验格局——[[#def-appendix]]、[[epidemiology-ebm/randomised-trials]]）：复发在第一年陡峭累积、多数会复发的患者早期复发、粪石预测失败、而复杂事件率保持低位——支撑一次诚实的“两种你都可以选”咨询并附上记录的复发规划（[[clinical-skills/communication]]、[[clinical-skills/records-handover]]）；胆囊切除相邻的全腹保守对确定性策略比较见[[surgery/gastrointestinal-surgery]]。
+### 临床表现
+
+腹泻、脂肪泻和体重下降的经典表现如今已是少数。更多的人表现为：
+
+- 对口服铁剂无反应的缺铁性贫血，或叶酸缺乏；
+- 乏力、腹胀，或类似肠易激综合征的症状；
+- 骨质疏松症或骨软化症；
+- **疱疹样皮炎**，一种发生在肘、膝和臀部的瘙痒性水疱疹；
+- 肝酶异常、不孕，或共济失调、神经病变等神经系统症状；
+- 儿童生长不良或青春期延迟。
+
+乳糜泻在1型糖尿病、自身免疫性甲状腺病、唐氏综合征患者以及乳糜泻患者的一级亲属中更常见。NICE指南NG20列出了应提供检测的人群。
+
+### 诊断
+
+一线检查是**IgA抗tTG抗体**，同时测定**总IgA**。之所以需要总IgA，是因为约2%的乳糜泻患者有IgA缺乏，tTG会假阴性。此时使用基于IgG的检测。
+
+只有在患者仍进食麸质时，血清学和活检才可靠。NICE建议检测前至少6周、每天不止一餐含有麸质。检测前开始无麸质饮食是诊断混乱最常见的原因之一。
+
+在成人中，传统上通过**十二指肠活检**显示典型组织学来确诊。在儿童中，欧洲儿科指南（ESPGHAN 2020）允许在tTG-IgA至少为正常上限10倍且第二份标本肌内膜抗体阳性时不做活检即可诊断。2025年英国胃肠病学会指南把类似的**免活检选择**扩展到在二级医疗机构接受评估、有症状、tTG-IgA至少为正常上限10倍的成人，前提是经过共同决策；有红旗特征时仍应做内镜。实践正在变化，应查阅当地指南。
+
+### 处理
+
+治疗是终身、严格的**无麸质饮食**，并有营养师支持。大多数人能耐受未被污染的燕麦。其他内容包括检查并纠正铁、叶酸、B12、钙和维生素D；在有指征时评估骨密度；由于**脾功能低下**，接种肺炎球菌疫苗。坚持饮食后血清学在数月内下降，可用于监测依从性。
+
+治疗后症状持续通常是由于继续接触麸质，往往是无意的。少数人患有**难治性乳糜泻**，有发生**肠病相关T细胞淋巴瘤**的风险。长期未治疗的乳糜泻还与小肠腺癌有关。
+
+::: example 活检绒毛扁平的贫血 {#ex-coeliac}
+一名29岁爱尔兰裔女性患缺铁性贫血，口服铁剂3个月无改善。她有轻度腹胀和稀便。她的姐姐患1型糖尿病。tTG-IgA为正常上限的21倍，总IgA正常。请解释口服铁剂无效的原因、如何确诊，以及她需要怎样的随访。
+::: solution
+**第1步：口服铁剂为何无效。** 铁在十二指肠和空肠上段吸收（[[gastrointestinal/digestion-absorption]]）。乳糜泻恰恰对这一区域损害最重，因此即使大剂量口服铁剂也吸收很差。
+
+**第2步：确诊。** tTG-IgA超过正常上限10倍且总IgA正常，使乳糜泻非常可能。根据当地实践和她的意愿，可在她仍进食麸质时做十二指肠活检确诊；或根据近期英国成人指南，在专科评估和共同决策后免于活检。在此之前她不得开始无麸质饮食。
+
+**第3步：处理和随访。** 在营养师支持下终身无麸质饮食；补铁，如口服仍无效则静脉补铁；检查叶酸、B12、钙和维生素D；决定是否评估骨密度；因脾功能低下接种肺炎球菌疫苗。随后一年复查血清学应显示tTG下降。一级亲属，包括她患1型糖尿病的姐姐，风险较高，可以提供检测。
+:::
 :::
 
 ## 炎症性肠病
 
+**炎症性肠病**（IBD）指两种主要的慢性疾病：**克罗恩病**和**溃疡性结肠炎**（UC）。两者通常始于青少年或青年期，都反复复发和缓解，都源于遗传易感者对肠道细菌的异常免疫反应。
+
+已知的遗传风险位点超过200个。在克罗恩病中，细菌细胞壁成分的感受器*NOD2*及自噬基因的变异提示细菌处理缺陷。环境因素也很重要。吸烟增加克罗恩病的风险和严重程度，但出于尚不清楚的原因，与较低的UC风险相关。随着国家工业化，发病率上升，提示饮食和微生物群的改变参与其中（[[microbiology/microbiota]]）。
+
 ::: definition 克罗恩病与溃疡性结肠炎 {#def-ibd}
-**病因四条腿的凳子：易感基因——两百余个位点、克罗恩的NOD2与白细胞介素23受体及自噬及屏障通路、溃疡性结肠炎的上皮与细胞因子——[[genetics/common-disease-genetics]]；微生物群（菌群失调、多样性降低、变形菌门暴发——[[microbiology/microbiota]]）；环境（卫生与感染与抗生素与阑尾切除及吸烟悖论：吸烟加重克罗恩而似乎在溃疡性结肠炎中保护——一个绝不可用作建议的真相、[[psychiatry/substance-use]]与[[public-health/prevention-promotion]]；膳食与乳化剂及西方化假说——[[public-health/global-health]]）；及免疫（耐受破坏伴分歧的辅助T17与1型及2型架构——[[immunology/tolerance-regulation]]与[[immunology/adaptive-responses]]）。分类：溃疡性结肠炎限于结肠、自肛缘连续的黏膜炎症（直肠炎对左半对广泛——E1至E3范围图）克罗恩则从口到肛任何部位、透壁、节段、带蒙特利尔年龄行为位置编码；肛周克罗恩作为其自身的疾病面孔；炎症性肠病未分类一角（[[pathology/diagnostic-pathology]]）。肠外表现：红斑结节与坏脓性皮肤关节病与葡萄膜炎与原发性硬化性胆管炎及血栓及骨质疏松及疲乏一组（[[musculoskeletal/skin]]、[[musculoskeletal/bones-joints]]、[[musculoskeletal/inflammatory-arthritis]]、[[nervous-system/sensory-systems]]、[[gastrointestinal/liver-disease]]的原发性硬化性胆管炎胆管造影、[[blood/thrombosis-anticoagulation]]与[[endocrine/bone-calcium]]）；注意肠外活动的平行对顺序逻辑（一些跟随管腔疾病——红斑、葡萄膜炎、外周关节炎；一些不跟随——强直性脊柱炎、原发性硬化性胆管炎）。并发症：狭窄与穿透型克罗恩表型（内瘘肠皮肤肠膀胱直肠阴道——邻近[[obstetrics-gynaecology/menstrual-pelvic-disorders]]；脓肿）、中毒性巨结肠与暴发性结肠炎（[[surgery/acute-abdomen]]的鉴别清单）、消化道出血（[[gastrointestinal/gi-bleeding-cancer]]）、结直肠癌风险与监测规划（[[gastrointestinal/gi-bleeding-cancer]]与[[public-health/screening]]）、静脉血栓栓塞（活动性炎症性肠病作为主要暂时危险因素——预防规则[[blood/thrombosis-anticoagulation]]）、营养不良与生长迟缓（儿科优先项与单纯肠内营养诱导——[[paediatrics/growth-development]]、[[gastrointestinal/clinical-nutrition]]）、及原发性硬化性胆管炎与胆管癌重叠（[[gastrointestinal/liver-disease]]与[[gastrointestinal/pancreas-biliary]]）。检查：粪钙卫蛋白与乳铁蛋白分诊（功能对器质的分界及其质子泵抑制剂与非甾体抗炎药假阳性——[[clinical-skills/laboratory-tests]]、[[#def-functional]]）；C反应蛋白与白蛋白与血小板及铁检查及维生素B12（疾病与营养台账——[[blood/anaemia]]、[[gastrointestinal/digestion-absorption]]）；每次复发时排除感染（艰难拟梭菌与肠道病原及难治结肠的巨细胞病毒——按[[microbiology/laboratory-diagnosis]]与[[infectious-diseases/healthcare-infections]]检测）；带定位活检的内镜（克罗恩回肠与溃疡性结肠炎连续的阅片及异型增生监测方案——[[pathology/diagnostic-pathology]]）；断层影像（克罗恩小肠磁共振肠道成像、带在狭窄被排除前胶囊滞留的警诫——[[clinical-skills/medical-imaging]]；肛周疾病的经会阴与盆腔磁共振——[[anatomy/pelvis-perineum]]）；及骨与维生素D及疫苗接种状态基线（[[endocrine/bone-calcium]]、[[public-health/vaccination-programmes]]）。治疗架构（达标治疗时代：症状加钙卫蛋白加内镜与透壁愈合——STRIDE共识逻辑）：5氨基水杨酸口服加局部（联合优越性及美沙拉秦剂量与肾毒性监测[[renal/chronic-kidney-disease]]、[[pharmacology/adverse-reactions]]）；糖皮质激素用于诱导绝不用于维持（静脉氢化可的松重症方案与布地奈德的首过效应特征——[[endocrine/adrenal]]与[[pharmacology/metabolism-excretion]]）；免疫调节剂（硫唑嘌呤带硫嘌呤甲基转移酶与NUDT15药物遗传学及淋巴瘤与皮肤癌警诫——[[pharmacology/patient-variation]]、[[musculoskeletal/skin-cancer]]；甲氨蝶呤带叶酸与肝毒性纤维化警惕[[gastrointestinal/liver-disease]]）；生物制剂与小分子（抗肿瘤坏死因子及英夫利西单抗起源的兔抗血清故事——[[immunology/vaccines-immunotherapy]]；抗整合素维得利珠的肠道选择性——[[immunology/adaptive-responses]]的淋巴细胞 转运课；抗白细胞介素12/23与抗白细胞介素23及激酶抑制剂及鞘氨醇受体调节剂时代带其血栓与感染及带状疱疹安全框架——[[pharmacology/adverse-reactions]]、[[infectious-diseases/immunocompromised-host]]）；治疗药物监测与免疫原性（抗药抗体算术与联合治疗理由——[[pharmacology/dosing-principles]]、[[immunology/adaptive-responses]]）；重症溃疡性结肠炎方案（Truelove-Witts标准、静脉激素、按排便频率与C反应蛋白的第3天决定点——Oxford评分——带英夫利西或环孢素救援及失败者手术——[[#ex-asuc]]；血栓预防与腹部影像及激素延续细微——[[blood/thrombosis-anticoagulation]]、[[clinical-skills/medical-imaging]]）；手术：溃疡性结肠炎（全结直肠切除带回肠储袋肛管吻合——J形储袋及其功能与失败及储袋炎（见[[#ex-asuc]]；失禁与脓毒症及储袋失败路径[[surgery/gastrointestinal-surgery]]及本章自己的节制生理、[[gastrointestinal/digestion-absorption]]的动力节）对末端回肠造口）对克罗恩（保肠哲学：成形术、有限切除、高吻合与内镜复发率被术后预防策略缓解——[[surgery/gastrointestinal-surgery]]）；肛周算法（麻醉下检查、挂线引流、抗肿瘤坏死因子首选药物治疗、及罕见的转流）；及特殊情形（妊娠：缓解期受孕、多数药物可相容、甲氨蝶呤致畸停用规则及少量生物制剂通过说明——[[obstetrics-gynaecology/pregnancy-complications]]、[[pharmacology/patient-variation]]；免疫抑制前后接种并避开活疫苗——[[public-health/vaccination-programmes]]；每次入院区分感染与复发；及从儿科的照护过渡——[[paediatrics/adolescent-health]]、[[clinical-skills/records-handover]]）。**
+| 特征 | 克罗恩病 | 溃疡性结肠炎 |
+|---|---|---|
+| 部位 | 从口腔到肛门任何部位；最常见于回肠末段和结肠 | 直肠，向上连续累及结肠 |
+| 分布 | 节段性，有"跳跃病变" | 从直肠开始连续分布 |
+| 深度 | 透壁性（全层） | 黏膜层 |
+| 组织学 | 部分病例有非干酪性肉芽肿 | 隐窝脓肿，杯状细胞减少 |
+| 并发症 | 狭窄、瘘管、脓肿、肛周病变 | 中毒性巨结肠、大出血 |
+| 典型症状 | 腹痛、腹泻、体重下降 | 血性腹泻、便急、里急后重 |
+| 吸烟 | 增加风险和严重程度 | 与较低风险相关 |
+
+约10%的结肠炎病例无法分类，称为**未分类IBD**。病变范围和行为用**蒙特利尔分类**描述。
 :::
 
-::: example 第3天的决定 {#ex-asuc}
-一名广泛溃疡性结肠炎的26岁患者（每日8次血便、心率104、体温38.1、血红蛋白96、C反应蛋白98）被收入院、给静脉氢化可的松、粪便检查包括艰难拟梭菌均阴性；到第3天：7次血便、C反应蛋白82、白蛋白24。
+### 临床特征
+
+克罗恩病由其深度决定。由于炎症贯穿肠壁全层，它可造成梗阻性**狭窄**、通向其他器官或皮肤的**瘘管**，以及**脓肿**。回肠病变引起右下腹痛，可类似阑尾炎。伴肛裂、肛瘘和脓肿的肛周病变很常见。回肠炎症或切除导致B12缺乏和胆汁酸腹泻。
+
+UC总是累及直肠。直肠炎引起直肠出血、便急和**里急后重**，即排便不尽感。广泛性结肠炎引起频繁的血性腹泻。最令人担忧的并发症是**中毒性巨结肠**，即结肠扩张伴全身中毒，可能穿孔。
+
+两种疾病都有**肠外表现**：外周关节炎和脊柱关节炎，巩膜外层炎和葡萄膜炎，结节性红斑和坏疽性脓皮病，以及（尤其是UC）**原发性硬化性胆管炎**（[[gastrointestinal/liver-disease]]）。任一疾病的长期广泛性结肠炎都会增加结直肠癌风险，因此提供结肠镜监测。
+
+### 检查
+
+**粪便钙卫蛋白**是中性粒细胞释放到肠腔的一种蛋白质。其升高提示肠道炎症。NICE推荐在基层医疗中，对新出现下消化道症状、不怀疑癌症的成人，用它帮助区分IBD与肠易激综合征。钙卫蛋白正常使IBD不太可能，许多人因此免于结肠镜检查。
+
+诊断依靠**回结肠镜**加活检。小肠克罗恩病用MR小肠成像或胶囊内镜评估，肛周病变用盆腔MRI评估。每次发作都必须做粪便感染检查，包括艰难梭菌，因为感染可以模仿或诱发复发。
+
+### 治疗
+
+治疗有两个目标：在发作时诱导缓解，并维持缓解。目标越来越不仅是控制症状，还包括**黏膜愈合**，因为它预示并发症更少。
+
+- **氨基水杨酸类**（5-ASA，如美沙拉秦（mesalazine））是轻中度UC的一线药物，口服和直肠给药。在克罗恩病中作用很小。
+- **糖皮质激素**在两种疾病中都能诱导缓解，但不用于维持，因为其不良反应，且它们不能维持缓解。
+- **硫嘌呤类**（硫唑嘌呤（azathioprine）、巯嘌呤（mercaptopurine））维持缓解。开始前检测硫嘌呤甲基转移酶（TPMT）活性，因为活性低会导致严重骨髓抑制。
+- **生物制剂**：抗TNF抗体（英夫利西单抗（infliximab）、阿达木单抗（adalimumab））、维得利珠单抗（vedolizumab，通过α4β7整合素阻断肠道特异性淋巴细胞归巢）以及乌司奴单抗（ustekinumab）和较新的抗IL-23药物。开始前需筛查结核病和乙型肝炎，因为它们可能被再激活。
+- **小分子药物**：Janus激酶（JAK）抑制剂，如托法替布（tofacitinib）和乌帕替尼（upadacitinib），以及S1P受体调节剂。
+- **手术**：在UC中，结肠切除可治愈结肠病变，许多人选择回肠储袋肛管吻合术。在克罗恩病中，手术用于治疗狭窄等并发症，但疾病往往在吻合口复发。
+
+药物选择遵循国家指南（NICE技术评估和英国胃肠病学会IBD指南）以及个体因素。
+
+### 急性重症溃疡性结肠炎
+
+急性重症UC是内科急症。按**Truelove和Witts标准**定义：每天血便6次或以上，加上至少一项全身中毒征象，即体温高于37.8 °C、脉搏每分钟超过90次、血红蛋白低于105 g/L，或ESR超过30 mm/h。
+
+标准处理包括入院、静脉糖皮质激素、静脉血栓栓塞预防（IBD发作时血栓倾向很强）、粪便检查排除感染、腹部平片观察结肠扩张，以及消化内科与结直肠外科早期联合管理。在**第3天**评估反应。在1996年最初的牛津研究中，第3天每天大便超过8次，或3～8次且CRP高于45 mg/L的患者，大多最终需要结肠切除。这些**牛津标准**现在用于启动**挽救治疗**，即英夫利西单抗或环孢素（ciclosporin），或结肠切除。
+
+::: example 第三天的决定 {#ex-asuc}
+一名26岁巴基斯坦裔广泛性UC男性入院，每天血便9次，脉搏每分钟104次，体温38.1 °C，血红蛋白96 g/L，CRP 98 mg/L。粪便感染检查阴性。他接受静脉氢化可的松和依诺肝素治疗。第3天他每天仍有7次血便，CRP 62 mg/L。腹部平片无结肠扩张。他第3天的状况意味着什么？有哪些选择？
 ::: solution
-**静脉激素无效的重症溃疡性结肠炎（Truelove-Witts定义与Oxford第3天标准——C反应蛋白与排便次数持续预示结肠切除——[[#def-ibd]]）：救援决定就在现在、不是“再多一天”：英夫利西（带结核与肝炎筛查实践（[[infectious-diseases/tuberculosis]]、[[public-health/communicable-disease-control]]）；抗肿瘤坏死因子机制（[[immunology/vaccines-immunotherapy]]））或钙调磷酸酶抑制剂（环孢素与他克莫司带药物浓度与镁及神经毒性监测——[[pharmacology/dosing-principles]]、[[renal/potassium-calcium-phosphate]]）或手术——按本地专长与患者价值选择（[[clinical-skills/communication]]）。进行中的照护清单：**血栓预防（活动性炎症性肠病的高凝与直肠出血对抗凝的道德算术——[[blood/thrombosis-anticoagulation]]）；营养与液体与电解质（及输血阈值——[[gastrointestinal/clinical-nutrition]]、[[blood/transfusion]]、[[renal/water-sodium]]）；腹胀监测中毒性巨结肠（影像与外科复查规则——[[surgery/acute-abdomen]]、[[clinical-skills/medical-imaging]]）；避免抗胆碱能与阿片及“禁食教条”（结肠运动的药理学——[[pharmacology/adverse-reactions]]、[[gastrointestinal/digestion-absorption]]的动力节）；激素难治疾病的巨细胞病毒活检本章自己的难治规则与[[microbiology/viruses]]的发作处理；从第1天起有结直肠外科医师参与的结肠切除谈话（腹腔镜次全结肠切除带末端回肠造口作为急诊手术、及稍后J形储袋路径——[[surgery/gastrointestinal-surgery]]、[[anatomy/pelvis-perineum]]）；及为一名26岁患者的心理与生育及重返工作框定（炎症性肠病护士与过渡及依从规划——[[clinical-skills/records-handover]]、[[public-health/health-systems-economics]]）。**
+**第1步：确认严重程度。** 入院时他每天血便超过6次，伴发热、心动过速和贫血：按Truelove和Witts标准为**急性重症UC**。
+
+**第2步：应用第3天评估。** 他每天大便7次（3～8次之间），CRP高于45 mg/L。他符合激素治疗失败的**牛津标准**，提示如果不改变治疗，结肠切除的可能性很高。
+
+**第3步：选择。** 只用激素继续等待会增加并发症风险。选择包括**挽救性药物治疗**，即英夫利西单抗或环孢素（试验中两者效果相近），或**结肠切除**。使用英夫利西单抗前需筛查结核病和乙型肝炎。这一决定与他本人共同作出，并与结直肠外科医生联合制定，以免挽救治疗失败时延误手术。每天继续评估：腹痛加重、结肠扩张或穿孔征象意味着需要紧急结肠切除。
+
+**第4步：解释理由。** 在这种情况下结肠切除并不是治疗失败。当药物治疗无效时，它切除病变器官，挽救生命。
 :::
 :::
 
-## 慢性腹泻、乳糜病与功能性脑肠
-
-::: definition 乳糜病 {#def-coeliac}
-**一个在易感个体中由麸质驱动的免疫介导疾病（人类白细胞抗原DQ2或DQ8呈递脱酰胺麸肽、组织转谷氨酰胺酶作为自身抗原、带绒毛萎缩与隐窝增生及全身炎症的T细胞反应——[[immunology/adaptive-responses]]、[[genetics/common-disease-genetics]]的最强的遗传关联及一半风险；血清阳性亲属与同卵双生的不完全一致率提示环境触发（[[genetics/genome-chromosomes]]））。患病率约1%，多数未诊断（[[public-health/screening]]的病例发现辩论：基于风险的检测对人群筛查，带低外显率的“静息”病例）。经典表现（脂肪泻、腹胀、体重下降、贫血、骨痛、儿童生长迟缓——[[paediatrics/growth-development]]、[[gastrointestinal/digestion-absorption]]的近端小肠地址：铁、叶酸、钙在十二指肠与空肠）现少于以缺铁、疲乏、转氨酶升高、口腔溃疡、骨质疏松、神经系统表现（共济失调与周围神经病——[[nervous-system/motor-systems]]、[[blood/anaemia]]）或完全无症状被检出。诊断（[[clinical-skills/laboratory-tests]]）：血清学组织转谷氨酰胺酶免疫球蛋白A加总免疫球蛋白A（排除免疫球蛋白A缺乏的假阴性——[[immunology/immunodeficiency]]）在内镜前于正常麸质饮食下；十二指肠活检显示绒毛萎缩与隐窝增生及上皮内淋巴细胞增加（带Marsh分类的病理——[[pathology/diagnostic-pathology]]）；人类白细胞抗原分型主要用于排除（阴性几乎排除）；血清学阳性且活检典型时的免活检路径在特定儿科指南中被接受。启动无麸质饮食前确认（饮食之后血清学与组织学正常化会让诊断无法确定）。共病（1型糖尿病与自身免疫甲状腺病[[endocrine/diabetes-complications]]与[[endocrine/thyroid]]及自身免疫多腺体综合征[[immunology/autoimmunity]]、唐氏与Turner综合征[[genetics/chromosomal-disorders]]、免疫球蛋白A缺乏[[immunology/immunodeficiency]]、及疱疹样皮炎[[musculoskeletal/skin]]——其麸敏与肠病变可无肠道症状）。管理（[[gastrointestinal/clinical-nutrition]]）：严格的无麸质饮食及营养师及标签与污染教育、复查血清学作为依从标志（下降但通常不完全正常化）、筛查并治疗骨病（[[endocrine/bone-calcium]]的钙与维生素D及双能X线骨密度检查）、纠正铁与叶酸及维生素B12缺乏（[[blood/anaemia]]）、在持续性或复发性症状中考虑辅助药（[[epidemiology-ebm/statistics-for-clinicians]]的试验现状）、在诊断后数月仍不改善则重新诊断（难治性乳糜病与肠病型T细胞淋巴瘤[[blood/lymphoma-myeloma]]、显微镜下结肠炎[[gastrointestinal/bowel-disease]]、及替代解释——[[gastrointestinal/pancreas-biliary]]）；以及监测（[[public-health/screening]]、[[clinical-skills/records-handover]]）。**
+::: widget markov
+matrix: 0.9,0.1; 0.4,0.6
+states: Remission; Flare
+start: 0
+steps: 24
+caption: 一个刻意简化的示意模型，描述IBD等复发缓解型疾病，按月转移。处于缓解期（Remission）的人下个月发作的概率为10%；处于发作期（Flare）的人进入缓解的概率为40%。平稳分布显示长期来看在每种状态中度过的月份比例。这些概率是为教学虚构的，并非来自研究。
 :::
 
-::: definition 功能性肠病与便秘 {#def-functional}
-**肠易激综合征（罗马Ⅳ：伴排便习惯改变的反复腹痛、基于症状的诊断带有限的血液与钙卫蛋白及乳糜及寄生虫筛查——阳性诊断模型、不是垃圾桶——[[#def-ibd]]的分界与[[clinical-skills/clinical-reasoning]]）；病理生理作为脑肠调节失常：内脏高敏感与动力改变与黏膜免疫激活及微生物群改变及通透性及中枢疼痛处理、带早期逆境与焦虑及下丘脑垂体肾上腺轴流行病学（[[physiology/hormones]]的应激轴、[[psychiatry/mood-disorders]]、[[psychiatry/anxiety-disorders]]、[[microbiology/microbiota]]、[[immunology/innate-immunity]]）；亚型（腹泻为主——胆汁酸吸收不良与维生素B12与无脾及甲状腺功能亢进及缓泻剂滥用的鉴别[[gastrointestinal/digestion-absorption]]与[[endocrine/thyroid]]；便秘为主与混合；疼痛为主带解痉与三环逻辑）。红旗排除（血、体重下降、夜间症状、50岁后起病、家族史、贫血、钙卫蛋白升高——[[gastrointestinal/gi-bleeding-cancer]]的紧急路径转诊），包括漏诊癌与卵巢癌模仿者审计（[[clinical-skills/patient-safety]]、[[obstetrics-gynaecology/gynaecological-cancer]]）。处理：治疗联盟与解释先行（患者接受而不觉得被打发的脑肠表述——[[clinical-skills/communication]]）；带营养师先行膳食试验（规律进餐与脂肪与咖啡因与酒精及低发酵寡糖双糖单糖和多元醇再引入纪律——[[gastrointestinal/clinical-nutrition]]）；针对症状的药（解痉药与薄荷油、便秘用渗透性缓泻剂而腹泻不用、便秘用聚乙二醇与利那洛肽及普芦卡必利[[gastrointestinal/clinical-nutrition]]与[[pharmacology/adverse-reactions]]、腹泻用洛哌丁胺与可待因类似物带炎症性肠病警诫、在SeHCAT逻辑适用时用胆汁酸螯合剂[[gastrointestinal/pancreas-biliary]]、及带胰腺与Oddi括约肌警诫的依托剂[[gastrointestinal/pancreas-biliary]]）；神经调节剂与脑肠治疗（低剂量三环用于疼痛、选择性血清素再摄取与双重再摄取抑制的证据诚实（邻近[[psychiatry/treatments-mental-health-law]]）、肠道导向催眠与认知行为治疗的需治数值得一知——[[epidemiology-ebm/systematic-reviews]]）；及难治者重新考虑（重审诊断、显微镜下结肠炎、胆汁酸、内异症、带巨结肠模仿危险的慢性肠假性梗阻[[gastrointestinal/bowel-disease]]、[[physiology/autonomic-nervous-system]]）。显微镜下结肠炎（慢性水样腹泻而结肠镜正常、需要活检的诊断；胶原性对淋巴细胞性；非甾体抗炎药质子泵抑制剂选择性血清素再摄取抑制关联[[pharmacology/adverse-reactions]]；布地奈德优先——[[gastrointestinal/digestion-absorption]]的腹泻分类学）。慢性便秘（慢传输对功能性排便障碍对药物性阿片铁剂维拉帕米可乐定[[pharmacology/adverse-reactions]]与[[geriatrics-palliative/polypharmacy]]对出口型（肛门直肠测压与球囊排出及排粪造影检查程序、生物反馈优先——邻近[[gastrointestinal/clinical-nutrition]]的动力门诊实践）；粪嵌塞伴溢出性腹泻陷阱（邻近[[geriatrics-palliative/falls]]的谵妄呈现与“先清空后维持”规则[[clinical-skills/physical-examination]]）；及为出口功能完整的罕见真慢传输结肠做外科选择——[[surgery/gastrointestinal-surgery]]）。粪便失禁（产伤括约肌损伤——[[obstetrics-gynaecology/labour-birth]]、神经源性——[[nervous-system/motor-systems]]、直肠脱垂邻近[[gastrointestinal/bowel-disease]]、及认知与衰弱呈现——[[geriatrics-palliative/delirium-dementia-care]]：节制评估、[[gastrointestinal/digestion-absorption]]的肛门括约肌生理、及从膳食与规律排便及肛周皮肤护理到骶神经刺激[[surgery/gastrointestinal-surgery]]的阶梯；问这一问题的分寸——[[clinical-skills/communication]]。）**
+### 显微镜下结肠炎
+
+**显微镜下结肠炎**引起慢性非血性水样泻，结肠镜下结肠外观正常；诊断依靠活检显示上皮下胶原带增厚（**胶原性结肠炎**）或上皮内淋巴细胞增多（**淋巴细胞性结肠炎**）。它最常见于老年女性，与药物（主要是NSAID、PPI和SSRI）、吸烟以及乳糜泻有关。口服布地奈德有效。对患水样泻的老年人，即使结肠外观正常也必须取活检。
+
+## 功能性肠病与便秘
+
+::: definition 肠易激综合征与便秘 {#def-functional}
+**肠易激综合征**（IBS）是一种肠-脑互动障碍，按**罗马IV标准**定义：最近3个月内平均每周至少1天反复腹痛，伴以下两项或以上：疼痛与排便相关；排便频率改变；粪便性状改变。症状必须在诊断前至少6个月开始。IBS按主要的粪便类型分为便秘型、腹泻型、混合型和未定型。
+
+**慢性便秘**是持续的排便困难、排便次数少或排便不尽。**粪便嵌塞**是直肠或结肠内一团患者无法排出的硬便。
 :::
 
-::: example 左髂窝的火 {#ex-diverticulitis}
-一名肾移植后服硫唑嘌呤的71岁患者、左髂窝疼痛与发热4天；计算机断层显示乙状结肠憩室炎伴4.5厘米结肠周围脓肿而无游离液体；白细胞14、C反应蛋白210、乳酸2.2、肌酐140（基线110）。
-::: solution
-**免疫抑制患者的复杂憩室炎（Hinchey Ⅱ地带——[[#def-diverticular]]）：收住；血培养与广谱抗生素（与他克莫司硫唑嘌呤方案及抗生素硫唑嘌呤白细胞减少陷阱的移植相互作用复审——[[immunology/transplant-tumour-immunology]]、[[pharmacology/metabolism-excretion]]、[[blood/haematopoiesis]]）；4.5厘米积聚的计算机断层引导经皮引流（引流对单用抗生素的尺寸逻辑——[[clinical-skills/medical-imaging]]）；急性肾损伤与脓毒症观察（[[renal/acute-kidney-injury]]、[[emergency-critical-care/shock-fluids]]）；激素与移植穿孔风险及低阈值外科复审警告（免疫抑制掩盖腹膜刺激征——系列查体与乳酸纪律——[[clinical-skills/clinical-reasoning]]）；失败路径（持续脓毒症→手术；移植患者的Hartmann对切除带术中冲洗对转流性回肠造口加引流判断——[[surgery/acute-abdomen]]、[[surgery/gastrointestinal-surgery]]）；恢复规划（间隔结肠镜因癌模仿——[[gastrointestinal/gi-bleeding-cancer]]）；及善后（为择期切除的免疫抑制与复发论证只讨论一次、不按发作计数[[surgery/gastrointestinal-surgery]]、及由移植团队写入的出血卡与病日规则[[renal/chronic-kidney-disease]]与[[clinical-skills/records-handover]]）。**
-:::
-:::
+IBS约影响十分之一的人，女性更常见。其机制包括**内脏高敏感**（肠道扩张引起疼痛的阈值降低）、动力改变、肠道微生物群变化、低度免疫激活，以及大脑对肠道信号的处理改变。它有时始于一次胃肠炎之后。
 
-::: example 活检扁平的贫血 {#ex-coeliac}
-一名47岁女性疲乏伴缺铁性贫血（血红蛋白102、铁蛋白11、尽管口服铁“多年”）；胃镜正常报告“黏膜正常”而未取活检；她询问麸质。
-::: solution
-**两个错误与一次修补（[[#def-coeliac]]）：成人缺铁要求一个来源与乳糜之问（见[[#def-coeliac]]与[[gastrointestinal/gi-bleeding-cancer]]的隐匿出血规则）；而乳糜的组织学是斑片状而位于十二指肠——球部与十二指肠后部帽状活检才是技术（[[pathology/diagnostic-pathology]]、邻近[[clinical-skills/medical-imaging]]的内镜质量）。修补：**现在做组织转谷氨酰胺酶免疫球蛋白A加总免疫球蛋白A（她仍在吃麸质——不要在血清学与活检之前开始无麸质饮食——[[clinical-skills/laboratory-tests]]）；若阳性、带正确活检重复胃镜；若已无麸质、则讨论监督下麸质激发或人类白细胞抗原排除；鉴别清扫（幽门螺杆菌与萎缩性胃炎、月经过多——[[obstetrics-gynaecology/menstrual-pelvic-disorders]]、非甾体抗炎药失血、血管发育不良——[[gastrointestinal/gi-bleeding-cancer]]）；一旦确诊：营养师与骨及疫苗无脾套餐（[[endocrine/bone-calcium]]、[[public-health/vaccination-programmes]]）、甲状腺与糖尿病及家系筛查提议（[[endocrine/thyroid]]、[[endocrine/diabetes]]、[[public-health/screening]]）；及依从与社交生活与食堂与假期辅导（[[gastrointestinal/clinical-nutrition]]、[[clinical-skills/communication]]）。**
-:::
-:::
+IBS根据症状模式作出阳性诊断，而不仅仅是排除其他一切。在英国，NICE指南CG61建议对符合标准者做少量检查：全血细胞计数、ESR或CRP，以及乳糜泻血清学。粪便钙卫蛋白有助于排除IBD，症状可能提示卵巢癌的女性应检查CA125。只有存在**红旗特征**时才需要进一步检查：非故意体重下降、直肠出血、肠癌或卵巢癌家族史、贫血、腹部或直肠肿块，或60岁以后排便习惯改变。
+
+处理从清楚的解释和明确的诊断开始。饮食建议包括规律进餐、调整纤维摄入，以及限制咖啡因、酒精和碳酸饮料。**低FODMAP饮食**限制可发酵的短链碳水化合物，可能有帮助，但应在营养师指导下进行。药物治疗针对主要症状：解痉药用于腹痛，卵叶车前子（ispaghula）或聚乙二醇等泻药用于便秘（乳果糖会加重腹胀），洛哌丁胺（loperamide）用于腹泻，小剂量三环类抗抑郁药作为腹痛的二线治疗。心理治疗，包括肠道导向催眠疗法和认知行为疗法，对症状持续者有帮助。
+
+成人便秘通常是功能性的，但药物是常见原因：阿片类药物、抗胆碱能药、铁剂、钙通道阻滞剂和含铝抗酸药。代谢性原因包括甲状腺功能减退症和高钙血症。**粪便嵌塞**在虚弱的老年人中尤其常见，可以反常地表现为腹泻。
 
 ::: example 其实是便秘的腹泻 {#ex-impaction}
-一名84岁安老院住民患痴呆、服阿米替林与维拉帕米与可待因对乙酰氨基酚、“腹泻5天”污染床铺；腹部膨隆、直肠充满软粪、C反应蛋白正常。
+一名86岁住在养老院的女性，一周来每天数次漏出稀便。工作人员已开始给她服用洛哌丁胺。她因膝痛服用可待因-对乙酰氨基酚复方制剂，近来变得更加糊涂。她腹部膨隆，直肠指检发现直肠内充满硬便。请解释发生了什么并概述处理。
 ::: solution
-**粪嵌塞伴溢出性失禁（越过嵌塞直肠的反常腹泻——[[#def-functional]]、邻近[[geriatrics-palliative/delirium-dementia-care]]的呈现、及抗胆碱能阿片钙通道阻滞剂致便秘三联——[[pharmacology/adverse-reactions]]、[[geriatrics-palliative/polypharmacy]]）。计划：停用或替换肇事药（镇痛方案复审与去处方谈话——[[geriatrics-palliative/polypharmacy]]）；解除嵌塞（大剂量聚乙二醇方案与栓剂及手法清除顺序、带肛门覆盖与皮肤保护[[gastrointestinal/clinical-nutrition]]、[[musculoskeletal/skin]]、[[geriatrics-palliative/symptom-control]]）；维持的聚乙二醇加刺激性缓泻及定时排便与水化及纤维谨慎及如厕可及规划（痴呆节制与移动及交接护理计划——[[clinical-skills/records-handover]]）；红旗复查（梗阻与巨结肠已排除——[[surgery/acute-abdomen]]与[[gastrointestinal/bowel-disease]]；新发直肠出血与癌之问——[[gastrointestinal/gi-bleeding-cancer]]）；及谵妄与跌倒风险环路（抗胆碱能负荷评分与环境及缓泻剂对账——[[geriatrics-palliative/falls]]）。**
+**第1步：识别溢出性腹泻。** 阿片类药物减慢结肠转运，活动减少和饮水不足又加重这一点。硬便积聚在直肠内。嵌塞上方的粪便被细菌液化，这些液体从嵌塞周围漏出：**溢出性腹泻**。直肠指检是关键发现。
+
+**第2步：认识到目前治疗的危害。** 洛哌丁胺进一步减慢转运，加重嵌塞。应当停用。
+
+**第3步：处理原则。** 用栓剂或灌肠清空直肠，然后口服聚乙二醇等渗透性泻药直到排便规律。审查阿片类药物，如果仍需镇痛，改用其他镇痛药或加用规律泻药。鼓励饮水和活动。检查有无尿潴留，它常与嵌塞同时存在。
+
+**第4步：意识模糊。** 便秘是老年人**谵妄**的常见诱因。治疗后她的意识模糊应会好转，但也需要检查感染或药物作用等其他原因（[[geriatrics-palliative/delirium-dementia-care]]）。
 :::
+:::
+
+## 憩室病
+
+::: definition 憩室病 {#def-diverticular}
+**憩室**是结肠壁在血管穿入肌层的薄弱处疝出的小黏膜囊袋。有憩室存在称为**憩室病（diverticulosis）**。**憩室性疾病（diverticular disease）**指憩室引起症状。**憩室炎**是憩室的炎症或感染；伴脓肿、穿孔、瘘管、梗阻或出血时为**复杂性**憩室炎。
+:::
+
+在西方人群中，憩室主要发生在乙状结肠，并随年龄增长变得非常常见：80岁以上的人远超过一半有憩室。低纤维饮食、肥胖、吸烟和NSAID增加风险。在亚洲部分地区，憩室更常见于右侧。
+
+急性憩室炎典型表现为左下腹痛、发热和炎症指标升高。腹部CT可确诊并显示并发症。穿孔用**Hinchey分级**分级，从局限性结肠周围脓肿（I期）到粪性腹膜炎（IV期）。
+
+截至2026年，NICE指南NG147建议，对全身情况良好的急性憩室炎患者考虑**不使用抗生素的策略**，给予对乙酰氨基酚等简单镇痛药，并告知症状加重时复诊。由于可能有穿孔风险，最好避免使用NSAID和阿片类药物。对全身情况不佳、免疫抑制或有严重合并症者使用抗生素。脓肿可在影像引导下引流，弥漫性腹膜炎需要急诊手术。憩室出血见[[gastrointestinal/gi-bleeding-cancer]]。
+
+::: example 左髂窝疼痛 {#ex-diverticulitis}
+一名64岁加勒比黑人男性，左下腹痛2天。体温37.6 °C，脉搏每分钟88次，血压正常。左髂窝压痛，无肌紧张。白细胞计数13 × 10⁹/L，CRP 70 mg/L。他此外情况良好，无其他疾病。最可能的诊断是什么？按NICE NG147应如何处理？
+::: solution
+**第1步：可能的诊断。** 六十多岁男性左髂窝疼痛伴低热和炎症指标升高，是典型的**急性憩室炎**。鉴别诊断包括伴局部穿孔的结直肠癌、结肠炎，以及在老年人中的缺血性结肠炎。
+
+**第2步：严重程度。** 他全身情况良好：无心动过速、低血压或腹膜刺激征，无合并症。如果能进食饮水且疼痛可控，可在社区处理。
+
+**第3步：处理。** NICE建议考虑**不使用抗生素**，用对乙酰氨基酚镇痛，并明确告知如果疼痛加重、出现高热或不能饮水应复诊。如果病情变差，需要做CT并使用抗生素。
+
+**第4步：随访。** 恢复后，如果近期未检查过结肠，应按当地流程评估结肠，因为结直肠癌的表现可以类似憩室炎。
+:::
+:::
+
+## 阑尾炎
+
+::: definition 阑尾炎 {#def-appendix}
+**急性阑尾炎**是阑尾的炎症，通常由粪石或淋巴组织增生阻塞阑尾腔，继而细菌侵入阑尾壁引起。未经治疗可进展为坏疽和**穿孔**，形成脓肿或弥漫性腹膜炎。
+:::
+
+阑尾炎是年轻人中最常见的外科急症。经典病史是脐周开始疼痛，在一天内转移到**右髂窝**，伴食欲减退、恶心和低热。早期疼痛定位不清，因为它来自中肠的内脏传入神经，牵涉到脐区。当炎症累及有躯体神经支配的壁腹膜时，疼痛就定位了。
+
+临床表现常不典型。盲肠后位阑尾可引起腰部疼痛，盆位阑尾可引起腹泻或泌尿系症状。幼儿、老年人和孕妇常就诊较晚，穿孔率较高。Alvarado评分或阑尾炎炎症反应评分等评分把症状、体征和血液检查结合起来估计风险。影像选择取决于具体人群：儿童和妊娠者首选超声，大多数成人用CT。育龄女性必须做妊娠试验以排除异位妊娠。
+
+腹腔镜阑尾切除术仍是标准治疗。包括2020年CODA试验在内的试验表明，**单用抗生素**可以治疗许多经CT证实的单纯性阑尾炎，但其中一部分人日后需要阑尾切除，有阑尾粪石时失败更常见。这现已成为与合适患者讨论的一种选择。外科方面见[[surgery/acute-abdomen]]。
+
+::: warning 白细胞计数正常不能排除阑尾炎
+炎症指标支持诊断，但在早期可以正常。诊断依靠病史和反复体检。数小时内的连续复查，必要时加影像学，比依赖单次血液检查更安全。
 :::
 
 ::: quiz
-粪钙卫蛋白最佳描述为：
-- [x] 一种中性粒细胞来源的蛋白、反映肠道炎症、用于区分功能性与器质性肠病
-- [ ] 一种麸质敏感的检验
-- [ ] 仅溃疡性结肠炎的特异标志物
-- [ ] 一种胰功能不全的检验
+一名52岁女性患慢性非血性水样泻。她服用兰索拉唑和舍曲林（sertraline）。结肠镜显示结肠外观正常。内镜医生本应怎样做？
+- [ ] 不需再做什么：结肠镜正常可以排除炎症性原因
+- [x] 从结肠取活检，因为显微镜下结肠炎只能通过组织学诊断
+- [ ] 只有回肠末段看起来异常时才取活检
+- [ ] 安排CT扫描代替活检
 ::: solution
-**钙卫蛋白（与乳铁蛋白）追踪粪便中的中性粒细胞负荷——在炎症性肠病、感染、非甾体抗炎药损伤与结直肠新生物中升高、在肠易激中正常；其高阴性预测值正是让不必要的结肠镜远离功能性肠病门诊的东西（[[epidemiology-ebm/diagnostic-tests]]的诊断检验算术——[[#def-functional]]、[[#def-ibd]]）；假阳性陷阱：质子泵抑制剂与非甾体抗炎药及操作时机（[[clinical-skills/laboratory-tests]]）；粪弹性蛋白酶是胰腺检验（[[gastrointestinal/pancreas-biliary]]）而组织转谷氨酰胺酶血清学是乳糜检验（[[#def-coeliac]]）。**
+**显微镜下结肠炎**引起慢性水样泻，结肠肉眼外观正常。诊断依靠活检显示胶原带增厚或上皮内淋巴细胞增多。她有两个药物危险因素：PPI和SSRI。在因慢性腹泻做结肠镜检查时，随机结肠活检是标准做法。
 :::
 :::
 
 ::: history
-**阑尾切除的世纪（Reclus 1889年针对不必要手术的“阑尾大屠杀”论战、被McBurney的定位与两次世界大战的外科信条逆转；2010年代的抗生素优先试验把钟摆摆回——[[#def-appendix]]）；随低纤维西方膳食而来的憩室病流行（Painter 1960年代的手术野观察与压力研究——[[#def-diverticular]]）；Crohn与加拿大1932年的描述及长达数十年的区域肠炎对结核之争在高结核负担地区的实践中仍然鲜活（邻近[[gastrointestinal/liver-disease]]的鉴别、[[public-health/global-health]]）；5氨基水杨酸柳氮磺吡啶的故事（一个风湿科副产品变成结肠炎标准——邻近[[musculoskeletal/inflammatory-arthritis]]）；从硫嘌呤到生物制剂的免疫抑制弧线（1991年兔抗肿瘤坏死因子抗血清创立英夫利西——[[immunology/vaccines-immunotherapy]]的抗体嵌合生物学）；乳糜病的重新发现（Dicke的荷兰饥饿冬季临床观察、van de Kamer 1950年用脂肪平衡证明麸质损伤、及1997年组织转谷氨酰胺酶自身抗原的识别使血清学成为可能——[[#def-coeliac]]与[[immunology/autoimmunity]]）；罗马标准与功能性肠病的脑肠重构（[[#def-functional]]与[[psychiatry/anxiety-disorders]]）；及现代达标治疗与储袋时代的结局登记册（邻近[[public-health/health-systems-economics]]的审计科学）。**
-:::
-
-## 通向何处
-
-出血与癌症路径在[[gastrointestinal/gi-bleeding-cancer]]；吸收与腹泻机制在[[gastrointestinal/digestion-absorption]]；手术与造口在[[surgery/gastrointestinal-surgery]]；营养挽救在[[gastrointestinal/clinical-nutrition]]；免疫在[[immunology/tolerance-regulation]]；微生物群在[[microbiology/microbiota]]；原发性硬化性胆管炎与肝重叠在[[gastrointestinal/liver-disease]]。
-
-::: exercise 分开家族 {level=2}
-归入家族性腺瘤性息肉病、Lynch、Peutz-Jeghers或MUTYH：(a) 39岁右侧结肠癌、另一亲属子宫内膜癌；(b) 16岁200枚息肉；(c) 同胞有双等位胚系碱基切除基因变异、45岁15枚腺瘤；(d) 12岁小肠套叠伴唇部色斑。
-::: solution
-**(a) Lynch（错配修复、早发右侧及子宫内膜集群——[[#def-polyposis]]、[[genetics/cancer-genetics]]）；(b) 经典家族性腺瘤性息肉病（APC、预防性手术谈话——[[surgery/gastrointestinal-surgery]]）；(c) MUTYH相关息肉病（隐性碱基切除修复——[[genetics/common-disease-genetics]]）；(d) Peutz-Jeghers（STK11、错构瘤套叠与色素沉着、及终身多器官监测——[[paediatrics/acute-childhood-illness]]、[[surgery/breast-endocrine-surgery]]）。四者都需要遗传家系级联（[[genetics/genetic-testing]]、[[public-health/screening]]）。**
-:::
-:::
-
-::: exercise 进行抗生素优先的谈话 {level=2}
-使用[[#def-appendix]]的复发曲线：一名24岁首次发作非复杂性阑尾炎的患者问，选择抗生素会让他承诺什么。
-::: solution
-**要说出的数字：有意义的早期复发（多数在第一年内、到5年累积可观——[[#def-appendix]]的图）、一个不大的复杂事件风险、粪石作为失败预测项、及计算机断层与再次就诊的安全网；不构成承诺的（间隔阑尾切除并非常规规则、饮食无证据基础、可早返工作）；框定（正当选择共享决策、书面复诊规则、外科复审开放可及、回归手术无需自责——[[clinical-skills/communication]]、[[clinical-skills/records-handover]]、[[epidemiology-ebm/statistics-for-clinicians]]的绝对风险沟通）；及随访（门诊预约加复发日记、及避免抗生素的用药管理论证——[[infectious-diseases/stewardship-outbreaks]]）。**
-:::
+1888年，伦敦的吉（Samuel Gee）描述了儿童的"乳糜病"，并提出饮食是治疗的关键。病因是在第二次世界大战期间发现的：荷兰儿科医生迪克（Willem-Karel Dicke）注意到，在1944～1945年饥荒期间面包短缺时，乳糜泻患儿病情好转，面包恢复供应后又复发。二十世纪五十年代初，他和同事证明小麦麸质是致病因素。炎症性肠病的两种形式也在同一时期被区分开来：威尔克斯（Samuel Wilks）于1859年使用了"溃疡性结肠炎"一词，克罗恩（Burrill Crohn）、金茨堡（Leon Ginzburg）和奥本海默（Gordon Oppenheimer）于1932年在纽约描述了局限性回肠炎。
 :::
 
 ::: summary
-- 阑尾炎按评分与影像诊断并守辐射纪律；抗生素优先是一个带记录复发曲线的正当选择、而50岁以上者需要回答盲肠癌之问。
-- 憩室病横跨无症状到腹膜炎；处理按严重度匹配、免疫抑制降低每一条阈值、而择期手术决定跟随症状而不是发作计数。
-- 炎症性肠病按达标治疗并带阶梯式免疫武器库；重症结肠炎有第3天的救援或手术决定、血栓预防、及从第1天起在场的外科医师。
-- 乳糜病是在含麸质饮食下先血清学后活检、由营养师管理一生、并监测难治疾病与淋巴瘤。
-- 肠易激是一个阳性的脑肠诊断、带聚焦的红旗筛查；显微镜下结肠炎、胆汁酸性腹泻、及嵌塞伴溢出是被漏掉的模仿者。
+- 乳糜泻是由麸质驱动、受HLA-DQ2/DQ8限制的肠病。在患者进食麸质时检测tTG-IgA和总IgA；用终身无麸质饮食治疗。
+- 克罗恩病为节段性、透壁性，可累及消化道任何部位；溃疡性结肠炎为连续性、黏膜性，始于直肠。
+- 粪便钙卫蛋白区分炎症性与功能性疾病；IBD的诊断需要回结肠镜和活检。
+- 急性重症UC按Truelove和Witts标准定义；第3天治疗无反应（牛津标准）则启动挽救治疗或结肠切除。
+- IBS根据罗马IV标准和少量检查作出阳性诊断；有红旗特征需要进一步检查。
+- NICE NG147建议对全身情况良好的急性憩室炎患者不使用抗生素。
+- 阑尾炎是临床诊断，评分和影像学提供支持；腹腔镜阑尾切除是标准治疗，单用抗生素是部分单纯性病例的选择。
 :::
 
-## 练习
+## 后续内容
 
-::: exercise 打分 {level=1}
-一名18岁患者：迁移性右下腹痛、厌食、反跳痛、体温37.6、中性粒细胞88%、无影像。评分并给出计划。
+吸收不良背后的生理见[[gastrointestinal/digestion-absorption]]。结直肠癌、息肉病综合征和下消化道出血见[[gastrointestinal/gi-bleeding-cancer]]。克罗恩病的营养治疗和肠衰竭见[[gastrointestinal/clinical-nutrition]]。IBD和乳糜泻的免疫学见[[immunology/autoimmunity]]，急腹症的外科见[[surgery/acute-abdomen]]。
+
+## 习题
+
+::: exercise 克罗恩病还是结肠炎？ {level=1}
+对下列每项特征，说明它更典型于克罗恩病还是溃疡性结肠炎：(a)肛瘘；(b)从直肠开始的连续炎症；(c)非干酪性肉芽肿；(d)中毒性巨结肠；(e)跳跃病变伴回肠末段狭窄。
 ::: solution
-**Alvarado约8分（迁移1、厌食1、反跳2、低热1、中性粒细胞增多2——评分条目见[[#def-appendix]]）：高概率外科预约；计划是外科复审、并按本地实践先影像或直接腹腔镜（年轻女性的辐射论证与诊断性腹腔镜的妇科红利——[[clinical-skills/medical-imaging]]与[[obstetrics-gynaecology/menstrual-pelvic-disorders]]）；一个低风险的替代是带系列查体的主动观察（[[clinical-skills/clinical-reasoning]]）。**
+(a)克罗恩病。(b)溃疡性结肠炎。(c)克罗恩病。(d)溃疡性结肠炎，但重症克罗恩结肠炎也可发生。(e)克罗恩病。
 :::
 :::
 
-::: exercise 说出这个并发症 {level=1}
-说出每个背后隐藏的憩室并发症：(a) 尿中有气体与粪质；(b) 大量无痛暗红软便；(c) 无法与癌区分的梗阻性乙状结肠肿块。
+::: exercise 检测乳糜泻 {level=1}
+一名35岁男性希望检测乳糜泻。他两个月前因为麸质使他腹胀而停止食用。应做哪些检查？检测前他必须做什么？
 ::: solution
-**(a) 结肠膀胱内瘘伴气尿与粪尿及反复尿路感染（[[#def-diverticular]]、[[renal/urinary-tract]]）；(b) 憩室出血（[[gastrointestinal/gi-bleeding-cancer]]）；(c) 带癌均势的良性狭窄——为诊断与治疗而切除（[[gastrointestinal/gi-bleeding-cancer]]、[[surgery/gastrointestinal-surgery]]）。**
+一线检查是tTG-IgA加总IgA。无麸质饮食时，血清学和活检都变得不可靠。他需要重新摄入麸质，每天不止一餐，至少6周后再检测。如果他无法耐受，HLA-DQ2/DQ8分型阴性至少可以排除乳糜泻。
 :::
 :::
 
-::: exercise 两次保护患者 {level=2}
-一名30岁克罗恩病患者正在用英夫利西与硫唑嘌呤、因复发就诊；粪便艰难拟梭菌毒素阳性。两者都要处理。
+::: exercise Truelove和Witts标准 {level=1}
+一名UC女性每天血便7次，体温37.5 °C，脉搏每分钟96次，血红蛋白118 g/L，ESR 22 mm/h。她是否符合急性重症UC的标准？请解释。
 ::: solution
-**治感染也治炎症、并重新审视免疫抑制：口服万古霉素或非达霉素方案按严重度升级、及感染控制通报习惯（[[infectious-diseases/healthcare-infections]]、[[public-health/communicable-disease-control]]）；在中度疾病中不要反射性停生物制剂但要复审硫嘌呤（白细胞减少与炎症性肠病复发的混淆[[blood/haematopoiesis]]）；感染中用激素的复发治疗两难（短疗程带有效艰难拟梭菌覆盖的判断——[[#def-ibd]]）；血栓预防继续（[[blood/thrombosis-anticoagulation]]）；“不需要治愈检验但要症状监测、且仅在至少7天后复测”规则（[[clinical-skills/laboratory-tests]]）；及抗生素暴露复发风险及多次复发时的粪微生物群治疗考虑（[[microbiology/microbiota]]、[[gastrointestinal/bowel-disease]]）。**
+符合。她每天血便至少6次，脉搏每分钟超过90次是一项全身中毒征象。一项全身征象即已足够。她需要入院，在专科管理下静脉使用糖皮质激素。
 :::
 :::
 
-::: exercise 诊断这份正常的结肠镜 {level=2}
-一名62岁女性慢性水样腹泻8个月、体重下降6公斤；结肠镜“正常”、钙卫蛋白轻度升高、正在服兰索拉唑与舍曲林。缺了什么？
+::: exercise 计算倍数 {level=2 check="21.4"}
+某实验室tTG-IgA的正常上限为7 U/mL。某人结果为150 U/mL。这是正常上限的多少倍（保留一位小数）？是否超过免活检路径使用的10倍阈值？
+::: hint
+用结果除以正常上限。
+:::
 ::: solution
-**在活检之前是显微镜下结肠炎（[[#def-functional]]：内镜正常、水样腹泻伴轻度钙卫蛋白升高的模式需要随机结肠活检——[[pathology/diagnostic-pathology]]的淋巴细胞性对胶原性组织学）；质子泵抑制剂与选择性血清素再摄取抑制关联（[[pharmacology/adverse-reactions]]）带一个去处方试验；及其他模仿者重审（胆汁酸性腹泻、乳糜血清学、胰功能不全、显微镜下疾病的药物清单——[[gastrointestinal/digestion-absorption]]、[[#def-coeliac]]、[[gastrointestinal/pancreas-biliary]]）。确认并治疗：**布地奈德诱导与减量、带激素节省选项讨论（邻近[[#def-ibd]]的药理学）及感染后与肠易激重叠的症状管理（[[#def-functional]]）。**
+$150/7 = 21.43$，保留一位小数为正常上限的**21.4**倍。超过了10倍阈值。是否适合免活检诊断仍取决于就诊场所、总IgA、患者年龄和症状以及现行指南。
 :::
 :::
 
-::: exercise 权衡这个储袋 {level=2}
-为一名29岁药物难治溃疡性结肠炎男性咨询、他在继续英夫利西加硫嘌呤与重建性全结直肠切除带J形储袋之间选择。
+::: exercise 长期的发作比例 {level=2 check="20"}
+在图中的示意模型里，处于缓解期的人每月发作的概率为0.1，处于发作期的人每月进入缓解的概率为0.4。长期来看，有百分之几的月份处于发作期？
+::: hint
+达到平衡时，从缓解流向发作的量等于反向流量：$0.1\,\pi_R = 0.4\,\pi_F$，且$\pi_R + \pi_F = 1$。
+:::
 ::: solution
-**两栏框架：内科保留（持久缓解的机会与其修正项——依从与吸烟与艰难拟梭菌与病程；持续的监测结肠镜与生物制剂成本及感染风险——[[#def-ibd]]、[[public-health/screening]]、[[infectious-diseases/immunocompromised-host]]）对外科治愈（手术：全结直肠切除带回肠储袋肛管吻合、造口及其还纳之旅及临时回肠造口率；功能：每日4-6次排便、第1年夜间渗漏、及储袋失败与造口终点；并发症：三分之一储袋炎及慢性储袋炎及袖套炎及狭窄及生育影响——邻近[[obstetrics-gynaecology/contraception-fertility]]的生精小管与盆腔神经逻辑[[anatomy/pelvis-perineum]]；及储袋之外：与结肠切除无关的原发性硬化性胆管炎发生及罕见储袋新生物——[[gastrointestinal/liver-disease]]、[[gastrointestinal/gi-bleeding-cancer]]）。决策架构（不可逆性的诚实、生活质量数字、性与生育及职业影响、造口护理演示、第二次意见的权利、及记录的复述——[[clinical-skills/communication]]、[[medical-ethics-law/consent-capacity]]、[[surgery/gastrointestinal-surgery]]）。**
+由$0.1\,\pi_R = 0.4\,\pi_F$得$\pi_R = 4\pi_F$。由$\pi_R + \pi_F = 1$得$5\pi_F = 1$，故$\pi_F = 0.2$。长期来看**20%**的月份处于发作期。如果一种维持治疗药物把每月发作概率减半到0.05，则$\pi_F = 0.05/(0.05 + 0.4) = 0.111$，约11%。
 :::
 :::
 
-::: exercise 安全运行肠易激门诊 {level=3}
-在一所地区综合医院设计一个护士主导的肠易激门诊：入组标准、最小数据集、红旗之门、治疗阶梯与治理。
+::: exercise 生物制剂之前 {level=2}
+一名23岁克罗恩病女性即将开始使用英夫利西单抗。列出首剂前需要的筛查检查，并解释每项的理由。
+::: hint
+考虑抗TNF治疗可能再激活的感染，以及疫苗接种。
+:::
 ::: solution
-**入组：罗马Ⅳ阳性诊断模板带血液钙卫蛋白乳糜全血细胞C反应蛋白甲状腺功能最小数据集、及按流行度的粪便感染与寄生虫筛查（[[#def-functional]]、[[clinical-skills/laboratory-tests]]、[[microbiology/laboratory-diagnosis]]）；红旗之门（肛门镜检查无法解释的便血、体重下降、夜间症状、50岁后起病、结直肠癌或炎症性肠病家族史、贫血或钙卫蛋白升高、可触及肿块——两周等待转诊翻译规则[[gastrointestinal/gi-bleeding-cancer]]、[[clinical-skills/history-taking]]）；治疗阶梯（解释诊断→营养师与膳食试验带再引入纪律→针对症状的药理学→神经调节剂→脑肠心理规划→难治重新检查门诊[[gastrointestinal/clinical-nutrition]]、[[psychiatry/treatments-mental-health-law]]、[[pharmacology/adverse-reactions]]）；及治理（开放可及内镜与断层影像约定及到诊断时间关键指标[[public-health/health-systems-economics]]、[[clinical-skills/medical-imaging]]）；“不道歉的诊断”记录标准（病历必须写明肠易激及理由[[clinical-skills/records-handover]]）；长期可待因与洛哌丁胺及抗胆碱能负荷的用药安全审计（[[geriatrics-palliative/polypharmacy]]）；患者信息与支持团体材料及贫困与口译可及性核查（[[public-health/determinants-inequalities]]、[[clinical-skills/communication]]）；及结局数据集（严重度量表、生活质量、初级照护再就诊与影像率——过度检查的反制[[clinical-skills/patient-safety]]）——并为高焦虑亚组可获得心理机制与条件化表述（[[psychiatry/anxiety-disorders]]）。**
+**结核病筛查**：病史、胸片和γ干扰素释放试验，因为TNF对维持肉芽肿至关重要，潜伏性结核可能再激活。**乙型肝炎**血清学，因为再激活可引起重症肝炎；按当地政策检测**丙型肝炎和HIV**。**水痘**免疫状态，因为免疫抑制时原发水痘可能很严重。应更新疫苗接种，一旦开始免疫抑制则避免活疫苗。妊娠试验或讨论避孕和妊娠计划也是计划的一部分。
+:::
+:::
+
+::: exercise 这是IBS吗？ {level=3}
+一名67岁男性4个月来大便变稀，下腹绞痛，排便后缓解。体重下降3 kg。血红蛋白112 g/L，铁蛋白低。他问这是否是肠易激综合征。请给出有理有据的回答和鉴别诊断。
+::: hint
+检查发病年龄和红旗特征。
+:::
+::: solution
+他的症状符合IBS的腹痛模式，但**不应**诊断为IBS。他有几项红旗特征：60岁以后起病、体重下降和**缺铁性贫血**。**鉴别诊断：** 首先是结直肠癌，然后是IBD、显微镜下结肠炎、乳糜泻和药物相关腹泻。他需要按疑似癌症通道检查下消化道，通常按NICE NG12进行粪便免疫化学检测和结肠镜检查，并检查缺铁的原因（[[gastrointestinal/gi-bleeding-cancer]]）。
+:::
+:::
+
+::: exercise 一个右髂窝病例 {level=3}
+一名24岁女性下腹痛18小时，现以右髂窝最重，伴恶心，体温37.9 °C。她的末次月经在6周前。给出鉴别诊断、必不可少的首项检查，并解释如何选择影像检查。
+::: hint
+既要考虑胃肠道原因，也要考虑妇科原因。
+:::
+::: solution
+**鉴别诊断：** 急性阑尾炎；**异位妊娠**（月经推迟）；卵巢囊肿破裂或扭转；盆腔炎；肠系膜淋巴结炎；回肠末段克罗恩病；以及尿路感染或输尿管结石。
+
+**必不可少的首项检查：** **妊娠试验**。阳性结果会从根本上改变诊断和处理，因为异位妊娠破裂危及生命（[[obstetrics-gynaecology/early-pregnancy]]）。
+
+**影像：** 如果她已怀孕，首选盆腔超声。如果未怀孕，超声可评估卵巢，有时也能看到阑尾；诊断仍不确定时，成人常用CT。反复体检很重要。如果证实为阑尾炎，腹腔镜既可诊断又可治疗，对部分单纯性病例也可选择单用抗生素。
 :::
 :::

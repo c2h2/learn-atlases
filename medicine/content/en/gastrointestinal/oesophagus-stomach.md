@@ -1,150 +1,326 @@
-The oesophagus and stomach convert eating into safe, acid-controlled preparation — and their diseases follow the engineering: **a motility tube that can obstruct, fail to relax, or leak acid upward; and an acid factory that can over-deliver into an unprotected mucosa, or be disabled by the bacterium that taught us gastric medicine.** This chapter is also where three of medicine's great modern stories live: *Helicobacter pylori*, the proton-pump inhibitor, and the reflux–Barrett–adenocarcinoma sequence.
+Heartburn, indigestion and difficulty swallowing are among the commonest reasons people see a doctor. Most of the time the cause is benign and the treatment is simple. A small minority of these people have cancer, a dangerous motility disorder or a complication of an ulcer, and the clinical skill lies in telling the two groups apart early.
 
-This chapter covers oesophageal motility and dysphagia, reflux disease, dyspepsia and ulcer disease, gastroparesis and vomiting syndromes, and gastric tumours.
+This chapter covers the oesophagus and stomach as working organs and then their main disorders: dysphagia and oesophageal motility disorders, gastro-oesophageal reflux disease and Barrett's oesophagus, *Helicobacter pylori* and peptic ulcer disease, dyspepsia and its alarm features, and gastroparesis. Cancer of the oesophagus and stomach, and the management of upper gastrointestinal bleeding, are covered in [[gastrointestinal/gi-bleeding-cancer]].
 
-## The oesophagus
+## Swallowing and dysphagia
 
-::: definition Oesophageal motility and dysphagia {#def-dysphagia}
-**Engineering (striated muscle upper third transitioning to smooth muscle lower two-thirds under myenteric control — [[gastrointestinal/digestion-absorption]]'s patterns; primary peristalsis as the swallow-propagated wave plus secondary peristalsis from local distension; the lower oesophageal sphincter (LES) as a tonic high-pressure zone with nitric-oxide-and-VIP-mediated transient relaxations (tLESRs) that are the engine of both normal venting and most reflux — [[gastrointestinal/digestion-absorption]]'s motility patterns); anatomy and safe-swallowing context in [[anatomy/thorax]] and [[anatomy/head-neck]] (the recurrent-laryngeal and aortic neighbours) and the aspiration-defence cross-link ([[respiratory/respiratory-infections]]'s aspiration-pneumonia route).** **Dysphagia reading ([[clinical-skills/history-taking]]'s symptom-architecture): oropharyngeal (the stroke, neurodegenerative and myopathic — coughing-and-choking-at-the-first-sip and nasal-regurgitation and diverticula — [[nervous-system/stroke]], [[nervous-system/movement-disorders]], [[nervous-system/motor-systems]]) versus oesophageal (the retrosternal "stuck" seconds later); solids-then-liquids progressive-and-weight-loss = mechanical until proven otherwise (stricture-and-web-and-carcinoma — the urgent-cancer-pathway rule) versus both-from-the-start-and-intermittent = motility (achalasia-and-spasm); regurgitation-of-retained-food, chest pain (after cardiac exclusion — [[cardiovascular/coronary-artery-disease]]) and the nocturnal-cough-and-laryngitis extensions.** **Investigations: urgent upper-endoscopy-with-biopsies-and-staging for the alarm picture ([[gastrointestinal/gi-bleeding-cancer]] pathways); barium swallow for webs-and-rings-and-diverticula-and-morphology ([[clinical-skills/medical-imaging]]); high-resolution manometry as the motility-physiology reference (the Chicago-classification achalasia types (I absent-contracted, II compressed-pinch-all, III spastic-preserved-peristalsis-mimic) — the name itself from a- plus -chalasia, failure to relax); timed-barium and functional-lumen-imaging-planimetry as adjuncts; pH-impedance for the symptom-reflux correlation ([[#def-gerd]]).**** Achalasia management in one paragraph: the relaxation-failure (myenteric-inhibitory-neuron loss — the pseudoachalasia-cancer-and-Chagas-mimics ([[microbiology/fungi-parasites]]-adjacent-trypanosomal-history)) treated by disabling the sphincter (pneumatic-distension (the graded-balloon perforation-risk-and-same-admission-preparedness — [[surgery/acute-abdomen]]), surgical Heller myotomy (the posterior-vagotomy-Dorf-relationship), peroral endoscopic myotomy (the 2010-Inoue-era natural-orifice technique) and botulinum and calcium-antagonist-nitrate temporising for the frail), with lifelong reflux-and-retention-and-cancer surveillance follow-up ([[gastrointestinal/gi-bleeding-cancer]]) and diet-and-eating-behaviour coaching ([[gastrointestinal/clinical-nutrition]]).**
+Swallowing has three phases. In the **oral phase**, the tongue forms a bolus and pushes it back; this is voluntary. In the **pharyngeal phase**, a reflex coordinated by the brainstem closes off the nose and larynx, opens the upper oesophageal sphincter and squeezes the bolus into the oesophagus in under a second. In the **oesophageal phase**, a peristaltic wave carries the bolus down while the **lower oesophageal sphincter** (LOS) relaxes to let it into the stomach.
+
+The upper third of the oesophagus is striated muscle and the lower two thirds smooth muscle. The LOS is not a distinct anatomical muscle but a zone of tonically contracted smooth muscle, helped by the crura of the diaphragm that wrap around it. Its resting tone keeps acid out of the oesophagus. Relaxation for swallowing depends on inhibitory nerves that release nitric oxide and vasoactive intestinal peptide.
+
+::: definition Dysphagia {#def-dysphagia}
+**Dysphagia** is difficulty swallowing: a sensation that food or liquid sticks or is delayed on its way down. It differs from **odynophagia** (pain on swallowing) and from **globus** (a feeling of a lump in the throat not related to swallowing). Dysphagia is classified in two ways:
+
+- **By site.** **Oropharyngeal** dysphagia is difficulty starting a swallow, with coughing, choking or nasal regurgitation. **Oesophageal** dysphagia is a feeling that food sticks after it has been swallowed.
+- **By mechanism.** **Mechanical** dysphagia is caused by narrowing of the lumen, such as a stricture or tumour. **Motility** dysphagia is caused by failure of peristalsis or LOS relaxation.
 :::
 
-::: definition Reflux disease: mechanism, complications, therapy {#def-gerd}
-**Mechanisms: tLESRs (the dominant event), sphincter hypotension and hiatus disruption (the sliding-hiatus-hernia geometry — [[anatomy/thorax]]), impaired clearance (the peristaltic-failure and saliva-bicarbonate question — [[gastrointestinal/digestion-absorption]]'s acid-secretion physiology) and mucosal resistance failure; the nocturnal-supine and meal-composition and obesity-intra-abdominal-pressure modifiers ([[endocrine/diabetes]]-adjacent-metabolic-epidemiology and the pregnancy-progression ([[obstetrics-gynaecology/pregnancy-antenatal]]) and infant-physiological-reflux-and-its-reassurance-medicine ([[paediatrics/growth-development]])) — plus the symptom-spectrum (heartburn-and-regurgitation; the atypical-chest-pain-and-chronic-cough-and-asthma-exacerbation-and-laryngitis-and-dental-erosion-and-nocturnal-asthma-question ([[respiratory/asthma-copd]] and the ENT-adjacent workups) with their weak-reflux-causality-evidence and the speech-and-swallow-team interface).** **Complications: erosive oesophagitis (Los-Angeles grades) with bleeding-and-stricture ([[gastrointestinal/gi-bleeding-cancer]]-and-[[gastrointestinal/oesophagus-stomach]]-own-dysphagia-lesson); Barrett's oesophagus — the intestinal-metaplasia-adaptation-to-acid-bile-injury (the specialisation-versus-stem-cell-origin debate and Correa-adjacent-metaplasia-dysplasia-carcinoma-sequence logic — [[pathology/chronic-inflammation-repair]]) with its adenocarcinoma-risk-surveillance (interval-stratified-by-length-dysplasia-eosinophil-count-practice — [[public-health/screening]]'s over-diagnosis-caveat) and endotherapy ladder (radiofrequency-ablation-and-cryo for dysplasia, EMR-and-ESD for the nodule — [[gastrointestinal/gi-bleeding-cancer]]-and-[[surgery/gastrointestinal-surgery]]); and the extra-oesophageal aspiration-injury loop ([[respiratory/respiratory-infections]]).** **Therapy: lifestyle-where-relevant (the weight-loss-and-elevation-and-trigger-and-alcohol-and-tobacco-evidence-honesty ([[public-health/prevention-promotion]]) — the meal-timing and bed-head-elevation mechanics); alginate-antacid barriers (the post-meal-and-pregnancy option ([[obstetrics-gynaecology/pregnancy-antenatal]])); acid suppression (PPIs at the correct pre-meal timing ([[gastrointestinal/digestion-absorption]]'s secretion-and-acid-curve lesson — and the 4-8-week-healing-trial and the on-demand-versus-maintenance-minimum-dose strategy and the deprescribing protocol ([[gastrointestinal/digestion-absorption]]'s acid-curve teaching)); H2-blockers for intermittent nocturnal symptoms with tachyphylaxis-honesty ([[pharmacology/adverse-reactions]]); potassium-competitive acid blockers (the vonoprazan-era) with their different binding ([[pharmacology/drug-receptor]]-and-[[microbiology/antimicrobials]]'s-H-pylori-regimen-use)); anti-reflux surgery (the laparoscopic fundoplication — the dysphagia-and-bloating-and-gas-bloat trade-offs, the magnetic-sphincter and transoral incisionless options, the pre-operative manometry-and-pH requirements and the obesity-bariatric-first logic ([[surgery/gastrointestinal-surgery]] and the sleeve-versus-choosing-lesson for refluxers — [[endocrine/diabetes]]-adjacent-bariatric-programmes and the reflux-worsening-sleeve-argument). Pregnancy-reflux-ladder and paediatric-red-flag variations in their home chapters ([[obstetrics-gynaecology/pregnancy-antenatal]], [[paediatrics/acute-childhood-illness]]).**
+The history usually separates these categories before any test. Oropharyngeal dysphagia points to neurological or muscular disease such as stroke, Parkinson's disease, motor neurone disease or myasthenia gravis, and needs a speech and language assessment because of the risk of aspiration ([[nervous-system/stroke]]). In oesophageal dysphagia, two questions help most:
+
+- **Solids only, or solids and liquids?** Mechanical narrowing first causes trouble with solids, because liquids still pass. Motility disorders affect solids and liquids from the start.
+- **Progressive or intermittent?** Steadily worsening dysphagia over weeks suggests a growing cancer or a tightening peptic stricture. Intermittent dysphagia suggests a ring, eosinophilic oesophagitis or a spastic motility disorder.
+
+New dysphagia is an alarm symptom. As of 2026, NICE guideline NG12 recommends urgent direct access upper gastrointestinal endoscopy, to be performed within two weeks, for people of any age with dysphagia.
+
+### Achalasia
+
+**Achalasia** is a primary motility disorder in which the LOS fails to relax and normal peristalsis is lost. The underlying lesion is degeneration of the inhibitory neurons in the myenteric plexus. Without nitric oxide signalling, the sphincter stays closed and the oesophagus above it slowly dilates. The cause is usually unknown; Chagas disease, from *Trypanosoma cruzi* infection in Latin America, produces an identical picture.
+
+Achalasia typically causes dysphagia for both solids and liquids, regurgitation of undigested food, chest pain and weight loss. A barium swallow may show a dilated oesophagus tapering to a smooth "bird's beak" at the LOS. The diagnostic test is **high-resolution manometry**, which measures pressure along the oesophagus during swallows. The Chicago Classification (version 4.0, 2021) divides achalasia into three types by the pattern of pressure in the oesophageal body: type I with no contractility, type II with pan-oesophageal pressurisation, and type III with premature spastic contractions. Endoscopy is always needed to exclude a cancer at the oesophagogastric junction, which can mimic achalasia ("pseudoachalasia").
+
+No treatment restores the lost neurons. All treatments reduce the resistance of the LOS:
+
+- **Pneumatic dilatation**: a balloon stretches and partly tears the sphincter muscle.
+- **Laparoscopic Heller myotomy**: the muscle is cut surgically, usually combined with a partial fundoplication to reduce later reflux.
+- **Peroral endoscopic myotomy (POEM)**: the muscle is cut from inside through an endoscopic tunnel. It is particularly useful for type III achalasia, because the cut can be extended up the spastic segment, but reflux afterwards is common.
+- **Botulinum toxin injection** into the sphincter: a temporary option for people too frail for the other treatments.
+
+::: example Food that comes back up {#ex-achalasia}
+A 42-year-old man of Brazilian origin has had 18 months of difficulty swallowing both solids and liquids. He brings up undigested food at night and has lost 8 kg. Upper endoscopy shows a dilated oesophagus with retained food and no tumour. High-resolution manometry shows failure of LOS relaxation and pressurisation of the whole oesophagus with every swallow. What is the diagnosis, what else should be considered given his background, and what are the treatment options?
+::: solution
+**Step 1: classify the dysphagia.** Dysphagia for solids and liquids from the start, with regurgitation of undigested food, suggests a **motility** disorder rather than a stricture.
+
+**Step 2: interpret the tests.** Failure of LOS relaxation with pan-oesophageal pressurisation is **type II achalasia** on the Chicago Classification. Endoscopy has excluded a tumour at the junction, which is essential before calling this primary achalasia.
+
+**Step 3: consider Chagas disease.** He grew up in a region where *Trypanosoma cruzi* is endemic. Chagas disease destroys myenteric neurons and causes the same picture. Serology is worth checking, because Chagas disease can also affect the heart and colon.
+
+**Step 4: treatment options.** Type II achalasia responds well to all three main treatments: pneumatic dilatation, laparoscopic Heller myotomy with fundoplication, or POEM. The choice depends on local expertise and on his preferences after discussion of the risks, such as perforation with dilatation and reflux after POEM. The night-time regurgitation also carries a risk of aspiration, so treatment should not be delayed.
 :::
+:::
+
+### Eosinophilic oesophagitis
+
+**Eosinophilic oesophagitis** is a chronic, allergen-driven inflammation of the oesophagus. It is commonest in young men, often with asthma, eczema or food allergy. The typical story is intermittent dysphagia for solids and episodes of **food bolus impaction**, where a piece of meat sticks and must be removed endoscopically. Endoscopy may show rings, furrows and white exudates, but can look normal, so biopsies from several levels are required. The diagnosis is made when biopsies show at least 15 eosinophils per high-power field, with symptoms of oesophageal dysfunction and no other cause. Treatment options include PPIs, swallowed topical corticosteroids such as budesonide orodispersible tablets, elimination diets, and dilatation for strictures.
+
+## Gastro-oesophageal reflux disease
+
+Some reflux of stomach contents into the oesophagus happens in everyone, mainly after meals. It becomes disease when it causes troublesome symptoms or damage.
+
+::: definition Gastro-oesophageal reflux disease {#def-gerd}
+**Gastro-oesophageal reflux disease** (GORD) is a condition in which reflux of gastric contents causes troublesome symptoms, such as heartburn and regurgitation, or complications. It is divided into:
+
+- **Erosive oesophagitis**, with mucosal breaks visible at endoscopy, graded by the **Los Angeles classification** from A (breaks under 5 mm) to D (breaks involving at least three quarters of the circumference).
+- **Non-erosive reflux disease**, with typical symptoms but a normal-looking oesophagus. This is the commoner form.
+
+Complications include peptic stricture, bleeding and **Barrett's oesophagus**.
+:::
+
+### Why reflux happens
+
+The barrier between stomach and oesophagus has two parts: the LOS itself and the diaphragmatic crura. Reflux occurs mainly through three mechanisms:
+
+- **Transient LOS relaxations.** These are brief relaxations not triggered by swallowing, set off by stretch of the upper stomach. They are the main mechanism in most people, which is why reflux follows large meals.
+- **Low resting LOS pressure.** This is more important in severe disease. Smoking, alcohol, fatty food and drugs such as calcium channel blockers and nitrates lower LOS pressure.
+- **Hiatus hernia.** When the upper stomach slides up through the diaphragmatic hiatus, the crura no longer reinforce the LOS, and a pocket of acid sits just below the junction.
+
+Obesity raises intra-abdominal pressure and is a major risk factor. Pregnancy combines high abdominal pressure with progesterone-related LOS relaxation. Damage also depends on how long acid stays in contact with the oesophagus, which rises when peristalsis is weak or when people lie down soon after eating.
+
+### Management
+
+As of 2026, UK practice follows NICE guideline CG184 (dyspepsia and gastro-oesophageal reflux disease). In outline:
+
+- **Lifestyle measures**: weight loss, stopping smoking, smaller evening meals, raising the head of the bed for night-time symptoms, and reviewing drugs that worsen reflux.
+- **Acid suppression**: a full-dose PPI for 4 or 8 weeks, then stepping down to the lowest dose that controls symptoms, or to "on-demand" use. Severe oesophagitis usually needs a longer course and maintenance treatment. Antacids and alginates help with occasional symptoms.
+- **Surgery**: laparoscopic fundoplication, in which the gastric fundus is wrapped round the lower oesophagus, is an option for people with proven reflux who respond to PPIs but do not want long-term medication, or who have persistent regurgitation. Possible side effects include difficulty swallowing and inability to belch.
+
+PPIs are effective and generally safe, but long-term use is associated with *Clostridioides difficile* infection, hypomagnesaemia and reduced absorption of B12 and possibly calcium. These associations are a reason to review the dose regularly, not a reason to withhold PPIs from people who need them.
+
+::: warning "Heartburn" may be the heart
+Retrosternal burning on exertion, relieved by rest, is angina until proven otherwise, even in someone with known reflux. Conversely, oesophageal spasm can cause crushing chest pain that responds to nitrates, because nitrates relax smooth muscle everywhere. A response to a PPI or to nitrates does not identify the organ. Cardiac causes must be assessed first ([[cardiovascular/coronary-artery-disease]]).
+:::
+
+### Barrett's oesophagus
+
+**Barrett's oesophagus** is the replacement of the normal squamous lining of the lower oesophagus by columnar epithelium, seen at endoscopy as a tongue of salmon-pink mucosa extending at least 1 cm above the gastro-oesophageal junction and confirmed on biopsy. It is a response to long-standing reflux and is the precursor of most **oesophageal adenocarcinoma**, through a sequence from metaplasia to low-grade dysplasia, high-grade dysplasia and cancer.
+
+The cancer risk for an individual with non-dysplastic Barrett's is low, in the order of a few per thousand per year, but the condition is common, so surveillance programmes exist. Under British Society of Gastroenterology guidance, the surveillance interval depends mainly on the length of the segment and the presence of dysplasia. Dysplasia changes management. High-grade dysplasia and early cancer are now usually treated endoscopically, by removing visible lesions (endoscopic resection) and then ablating the remaining Barrett's mucosa, often with radiofrequency ablation.
 
 ::: example The partial responder {#ex-barrett}
-A 57-year-old man with 10 years of heartburn, obese, ex-smoker, takes omeprazole 40 mg "most mornings after breakfast"; 3 months of new solid dysphagia and 4 kg weight loss; Hb 108 with ferritin 20.
+A 61-year-old white man with obesity has had heartburn for 20 years and takes omeprazole when symptoms flare. His first endoscopy shows a 6 cm segment of salmon-pink mucosa above the junction. Biopsies show intestinal metaplasia without dysplasia. Explain the diagnosis, its significance and the principles of his follow-up.
 ::: solution
-**Alarm-features-with-chronic-reflux: the urgent endoscopy indication regardless of age ([[gastrointestinal/gi-bleeding-cancer]]-pathways and the iron-deficiency-plus-dysphagia combination that must not be attributed to "bad oesophagus" — [[blood/anaemia]]'s-cause-hunt-rule and [[gastrointestinal/digestion-absorption]]'s-iron-address).** The findings-and-moves: **the LA-C-or-D peptic stricture versus the friable mass (biopsies-and-staging as for [[#def-tumours]]-cancers) and, classically, long-segment Barrett's with a nodular area; the PPI-technique correction (the 30-60-minute-pre-meal timing and the twice-daily-trial for the partial responder ([[gastrointestinal/digestion-absorption]]'s acid-secretion physiology — the acid-curve figure curve) with the adherence-conversation ([[pharmacology/patient-variation]])); if stricture: the dilation-after-biopsies-and-PPI-intensification-and-the-re-stricture-program; if dysplastic-Barrett: the endotherapy (radiofrequency-ablation and EMR) with the surveillance-intervals ([[public-health/screening]]-and-[[gastrointestinal/gi-bleeding-cancer]]); if adenocarcinoma: the MDT-pathway ([[surgery/gastrointestinal-surgery]] and the neoadjuvant-chemoradiotherapy-trials-cascade ([[pathology/cancer-diagnosis]])); the weight-and-smoking-and-alcohol-plan ([[public-health/prevention-promotion]]); and the "why-this-changed-now" documentation (the Barrett-dysphagia-pivot as a red-flag-teaching in the record so no future team re-treats-with-dose-alone ([[clinical-skills/records-handover]])).**
+**Step 1: diagnosis.** Columnar mucosa extending more than 1 cm above the junction, with intestinal metaplasia on biopsy, is **Barrett's oesophagus**. A 6 cm segment is a long segment.
+
+**Step 2: significance.** Barrett's oesophagus is the main precursor lesion of oesophageal adenocarcinoma. His risk factors fit the typical profile: male sex, white ethnicity, age over 50, obesity and long-standing reflux. The annual risk of cancer remains low, but it is higher with longer segments.
+
+**Step 3: follow-up principles.** He should be offered endoscopic surveillance at an interval set by national guidance, with biopsies taken in a standard pattern to look for dysplasia. Surveillance is only worthwhile if he would be fit for treatment should dysplasia or early cancer be found, so it is a shared decision.
+
+**Step 4: treat the reflux.** Continuous PPI therapy is appropriate to control symptoms and heal any oesophagitis, which also makes biopsies easier to interpret. Weight loss and stopping smoking reduce reflux. If high-grade dysplasia were found, endoscopic resection and ablation would normally be offered by a specialist team.
 :::
 :::
 
-::: example The coffee that comes back up {#ex-achalasia}
-A 49-year-old woman has 18 months of dysphagia to solids and liquids alike, regurgitation of undigested food hours after meals, nocturnal cough, and 7 kg weight loss; she has been treated for asthma and reflux without benefit. Gastroscopy shows resistant narrowing at the gastro-oesophageal junction with retained fluid; biopsies are normal.
+## The stomach, *Helicobacter pylori* and peptic ulcer
+
+The stomach lining survives its own acid because of a layered defence. Surface cells secrete mucus and bicarbonate, creating a layer at near-neutral pH next to the epithelium. Tight junctions stop acid leaking back. A rich blood supply removes any acid that enters and delivers bicarbonate. **Prostaglandins**, made by cyclo-oxygenase (COX), stimulate mucus and bicarbonate secretion and maintain blood flow. An ulcer forms when acid and pepsin overcome these defences.
+
+::: theorem Ulcers form when aggression exceeds defence {#thm-ulcer}
+Peptic ulceration occurs when the damaging effect of acid and pepsin exceeds the protective capacity of the mucosa. Almost all peptic ulcers have one of two causes that tip this balance: infection with *Helicobacter pylori*, or the use of non-steroidal anti-inflammatory drugs (NSAIDs), including aspirin.
+:::
+
+::: proof
+*H. pylori* is a spiral, flagellated bacterium that lives in the mucus layer of the stomach. It makes **urease**, which converts urea to ammonia and carbon dioxide; the ammonia buffers acid around the organism. It causes chronic gastritis in everyone it infects, and the pattern of gastritis determines the outcome:
+
+- When infection is mainly in the **antrum**, it reduces somatostatin-producing D cells. Gastrin rises, and acid secretion from the healthy body of the stomach increases. More acid reaches the duodenum, where patches of gastric-type epithelium form and become infected. The result is **duodenal ulcer**.
+- When infection involves the **body** of the stomach, it damages parietal cells and causes atrophy. Acid output falls, but the weakened mucosa ulcerates (**gastric ulcer**), and over years atrophy and intestinal metaplasia increase the risk of **gastric cancer**.
+
+**NSAIDs** inhibit COX-1 and so reduce mucosal prostaglandins, removing a key part of the defence. They also damage the epithelium directly. The risk rises with dose, age over 65, previous ulcer, and co-prescription with anticoagulants, antiplatelet drugs, corticosteroids or SSRIs.
+
+Removing the cause usually cures the disease. Eradicating *H. pylori* makes recurrence of an *H. pylori*-associated ulcer uncommon, and stopping NSAIDs allows NSAID ulcers to heal.
+:::
+
+::: definition Peptic ulcer disease {#def-peptic}
+A **peptic ulcer** is a break in the gastric or duodenal mucosa that extends through the muscularis mucosae, caused by acid and pepsin. Duodenal ulcers are more common than gastric ulcers. The main complications are:
+
+- **Bleeding**, presenting with haematemesis or melaena ([[gastrointestinal/gi-bleeding-cancer]]).
+- **Perforation**, presenting with sudden severe abdominal pain and peritonitis.
+- **Gastric outlet obstruction**, from scarring or oedema at the pylorus, presenting with vomiting.
+
+Gastric ulcers should be biopsied, or followed up, to exclude cancer, because a malignant ulcer can look benign.
+:::
+
+### Testing for and treating *H. pylori*
+
+Non-invasive tests are used in primary care:
+
+- The **carbon-13 urea breath test**: the person swallows labelled urea, and urease in the stomach releases labelled CO₂ into the breath.
+- The **stool antigen test**: detects *H. pylori* proteins in faeces.
+- **Serology** detects antibodies but stays positive after cure, so it cannot show active infection or confirm eradication.
+
+PPIs and antibiotics suppress the organism and cause false-negative breath and stool tests. The person should stop PPIs for 2 weeks and must not have had antibiotics for 4 weeks before testing. At endoscopy, a biopsy urease test or histology can be used.
+
+Treatment combines a PPI with two antibiotics. As of 2026, NICE CG184 recommends a 7-day twice-daily course of a PPI with amoxicillin and either clarithromycin or metronidazole, with a regimen that avoids penicillin for people who are allergic, and choice informed by previous antibiotic exposure. European guidance (Maastricht VI/Florence, 2022) favours 14-day regimens and bismuth-containing quadruple therapy where clarithromycin resistance is common. Antibiotic resistance, especially to clarithromycin, is the main cause of failure, and local resistance patterns should guide the choice. Details of regimens and doses come from current local guidance and formularies.
+
+Two features of diagnostic testing matter in practice. First, prevalence of *H. pylori* varies widely: it is lower in young people in the UK and much higher in people who grew up in regions with high childhood infection rates. Second, even a very good test has a modest positive predictive value when prevalence is low, as the figure shows.
+
+::: widget bayes
+mode: test
+prevalence: 0.1
+sensitivity: 0.95
+specificity: 0.95
+caption: An illustrative breath test with 95% sensitivity and specificity. At 10% prevalence about a third of positive results are false positives. Raise the prevalence to see the positive predictive value improve. The figures are for teaching, not the performance of a specific test.
+:::
+
+::: example An NSAID ulcer {#ex-ulcer-bleed}
+A 74-year-old woman with osteoarthritis has taken naproxen daily for 6 months and also takes low-dose aspirin. She has 2 days of black, tarry stools and feels faint on standing. After resuscitation, endoscopy shows a 1.5 cm gastric ulcer with a visible vessel, which is treated endoscopically. A biopsy urease test is positive. Explain the causes of her ulcer, and outline what must happen to prevent a recurrence.
 ::: solution
-**Classic achalasia ([[#def-dysphagia]]): the both-solids-and-liquids-from-onset pattern, the retained-food regurgitation, the mislabelled-reflux-and-asthma decade (the nocturnal aspiration-cough route — [[respiratory/respiratory-infections]]-and-[[respiratory/asthma-copd]]-adjacent), and the endoscopy that both supports (dilated junction, retained fluid, normal mucosa) and must complete (biopsies-and-EUS-or-CT-to-exclude pseudoachalasia at the junction — cancer-and-infiltrative-and-Chagas-mimics ([[gastrointestinal/gi-bleeding-cancer]] and [[microbiology/fungi-parasites]]-adjacent-trypanosomal-epidemiology [[public-health/global-health]])). Confirm with high-resolution manometry (integrated-relaxation-pressure-elevated with absent peristalsis; Chicago typing guides therapy choice ([[#def-dysphagia]]); the timed-barium and functional-lumen-imaging adjuncts where available ([[clinical-skills/medical-imaging]]). Treatment by risk-and-preference: **pneumatic dilation (graded, perforation-risk-discussed-and-surgical-preparedness — [[surgery/acute-abdomen]]), Heller myotomy (with its fundoplication-pairing reflux logic) or POEM (the endoscopic myotomy with its own reflux trade-off) — the randomised-comparisons-and-shared-decision conversation ([[surgery/gastrointestinal-surgery]], [[clinical-skills/communication]]); botulinum and nitrates-calcium-blockers for the unfit; the asthma-and-dental-and-nutrition clean-up ([[gastrointestinal/clinical-nutrition]], [[respiratory/asthma-copd]]); and the long-interval follow-up for retained-symptoms-and-recurrent-stricturing-and-the-small-elevated-cancer-risk ([[gastrointestinal/gi-bleeding-cancer]], [[public-health/screening]]).**
+**Step 1: identify the causes.** She has two independent causes acting together. Naproxen and aspirin inhibit COX-1 and reduce mucosal prostaglandins ([[#thm-ulcer]]). She also has *H. pylori* infection. Her age, and the combination of an NSAID with aspirin, both increase risk further.
+
+**Step 2: acute management.** Melaena with postural symptoms means significant blood loss. Resuscitation, risk scoring, endoscopic haemostasis and a PPI after endoscopy are the standard sequence, covered in [[gastrointestinal/gi-bleeding-cancer]].
+
+**Step 3: prevent recurrence.**
+- **Eradicate *H. pylori***, and confirm eradication afterwards, because she has had a complicated ulcer.
+- **Stop the naproxen** and use alternatives for her arthritis, such as paracetamol, topical NSAIDs and physiotherapy.
+- **Review the aspirin.** If it is for secondary prevention of cardiovascular disease, the benefit usually outweighs the risk, and it is generally restarted early with PPI protection; if it was for primary prevention only, stopping it is reasonable. This is a joint decision with her and her cardiologist.
+- **Gastric ulcer follow-up**: repeat endoscopy is usually arranged to confirm healing and rebiopsy, because a gastric ulcer may be malignant.
 :::
 :::
 
-## The acid organ
+## Dyspepsia and the alarm features
 
-::: definition Dyspepsia, *H. pylori* and ulcer disease {#def-peptic}
-**Dyspepsia (the epigastric-pain-and-burning-and-postprandial-fullness-and-satiety syndrome): the age-and-alarm-gated pathway (the test-and-treat-for-H-pylori-under-60-and-investigate-the-over-60-or-alarm structure of current guidelines — [[gastrointestinal/gi-bleeding-cancer]]-referrals and the NSAID-and-aspirin-and-iron-review ([[pharmacology/adverse-reactions]] and [[blood/anaemia]])); once-negative-or-post-treatment-persistence: functional dyspepsia (the Rome-IV postprandial-distress-and-epigastric-pain syndromes with the impaired-accommodation-and-visceral-hypersensitivity-and-H-pylori-aftermath-and-psychosocial- amplification mechanisms ([[gastrointestinal/bowel-disease]]'s gut-brain framing))) — treatment: H. pylori-eradication-if-positive, PPI-trial, the tricyclic (low-dose amitriptyline as neuromodulator with sleep benefit — [[nervous-system/headache-pain]]-adjacent)-mirtazapine-accommodation-options, the prokinetic-modest-evidence, CBT-and-gut-directed-therapies ([[gastrointestinal/bowel-disease]]-shared-programmes), diet-pattern-trials ([[gastrointestinal/clinical-nutrition]]) and the honest-symptom-expectation conversation ([[clinical-skills/communication]]).** **Peptic ulcer disease: the two-drug-prevention story (NSAID-and-H-pylori-independent-and-synergistic-risk — the COX-1-mucosal-defense-loss ([[gastrointestinal/digestion-absorption]]) and the H-pylori-inflammation-acidity-and-duodenal-allelic-programmes); H-pylori biology (the urease-ammonia-cloud-and-corkscrew-motility-and-CagA-VacA-effector-and-body-map-epidemiology — [[microbiology/bacterial-pathogenesis]]'s classic); diagnosis (the urea-breath and stool-antigen and endoscopic-rapid-urease-and-histology-and-culture-and-PCR-resistance-panels — [[microbiology/laboratory-diagnosis]]; the recent-PPI-and-antibiotic-and-bleeding false-negatives and post-treatment-confirmation-at-≥4-weeks rules — [[clinical-skills/laboratory-tests]]); eradication (the clarithromycin-triple-versus-bismuth-quadruple-versus-concomitant-versus-vonoprazan-amoxicillin-versus-levofloxacin-and-rifabutin-rescue-sequences — local-resistance-guided ([[microbiology/antimicrobials]] and the stewardship-of-resistance-geography ([[public-health/global-health]])). Ulcer complications each have their chapter-half: bleeding ([[gastrointestinal/gi-bleeding-cancer]]), perforation ([[surgery/acute-abdomen]]), penetration (the posterior-duodenal-pancreatic-gnaw and gastroparesis-scar-deformation ([[gastrointestinal/pancreas-biliary]])) and gastric-outlet-obstruction (the retained-food vomiting and hypochloraemic-alkalosis picture — [[renal/acid-base-disorders]]'s [[renal/acid-base-disorders]]-own-metabolic-alkalosis-lesson and the surgical-release-decision [[surgery/gastrointestinal-surgery]]). Zollinger-Ellison (the gastrin-secreting-neuroendocrine-tumour with MEN1-in-a-quarter ([[endocrine/reproductive-endocrinology]])) — the multiple-and-refractory-and-distal-ulcers-and-diarrhoea ([[gastrointestinal/digestion-absorption]]'s secretory-row) presentation with the fasting-gastrin-and-acid-output-diagnosis and localisation-imaging (the somatostatin-receptor-PET). Stress-ulcer-prophylaxis (the ICU-coagulopathy-ventilation-burn-criteria and PPI-versus-H2-versus-none-debate — [[emergency-critical-care/critical-care]]).**
+**Dyspepsia** describes a group of upper abdominal symptoms: epigastric pain or burning, post-meal fullness and early satiety. Most people with dyspepsia who are investigated have no structural cause. They have **functional dyspepsia**, defined by the Rome IV criteria as bothersome symptoms for at least 3 months, beginning at least 6 months before diagnosis, with no structural explanation at endoscopy. Functional dyspepsia is real: it reflects altered gastric accommodation, delayed emptying in some people, and visceral hypersensitivity.
+
+Primary care management of uninvestigated dyspepsia in the UK, following NICE CG184, has two broad routes. People with **alarm features** are referred for endoscopy. Everyone else has a drug review and lifestyle advice, and then either a "test and treat" approach for *H. pylori* or a month of full-dose PPI, then the other if symptoms continue.
+
+::: definition Alarm features for upper gastrointestinal cancer {#def-alarm}
+As of 2026, NICE NG12 recommends **urgent direct access upper gastrointestinal endoscopy**, within two weeks, for:
+
+- **dysphagia** at any age; or
+- people **aged 55 or over with weight loss** and any of upper abdominal pain, reflux or dyspepsia.
+
+It also recommends considering non-urgent endoscopy for people aged 55 or over with treatment-resistant dyspepsia, or with upper abdominal pain and a low haemoglobin, among other combinations. An **upper abdominal mass** consistent with stomach cancer prompts an urgent suspected-cancer referral. Local pathways may differ in detail.
 :::
 
-::: definition Gastroparesis and the vomiting syndromes {#def-gastroparesis}
-**Gastroparesis (the delayed emptying — 4-hour scintigraphy or breath-test — without mechanical obstruction; the diabetic (vagal-and-ICC-and-enteric-myopathy ([[endocrine/diabetes-complications]] and the glucose-rate-interference-confound)), post-viral, post-surgical (the fundic-and-pyloric-denervation weight-of-vagotomy lesson), drug (opioids-and-anticholinergics-and-GLP1-agonists ([[endocrine/diabetes]]'s own-gastroparesis-mimic-and-the-peri-procedural-hold-rules) and neurodegenerative (the Parkinsonian-and-mitochondrial ([[nervous-system/movement-disorders]]) aetiologies); symptoms (the postprandial-fullness-and-nausea-and-vomiting-of-undigested-food-and-bloating-and-the-glycaemic-rollercoaster-of-food-delivery-mismatch ([[endocrine/diabetes-complications]]'s insulin-timing-agony)); management ladder: **the small-low-fat-low-fibre-meal-and-liquid-calories-and-chew mechanics ([[gastrointestinal/clinical-nutrition]]), the antiemetics-and-prokinetics (domperidone's-QT-and-supply-arrangements ([[pharmacology/adverse-reactions]])-and-erythromycin's-motilin-agonism-with-tachyphylaxis ([[gastrointestinal/digestion-absorption]]'s motilin-motility patterns)-and-prucalopride's-5HT4-option and metoclopramide's-tardive-dyskinesia-red-line ([[nervous-system/movement-disorders]])), the-glycaemic-and-hydration-and-vitamin-repletion ([[gastrointestinal/clinical-nutrition]]), the refractory-tier (pyloric-interventions (G-POEM and balloon and Botox's-negative-RCT-lesson), gastric-stimulation's-modest-modern-reading, and the feeding-jejunostomy-and-TPN-boundary ([[gastrointestinal/clinical-nutrition]] and the enteral-versus-parenteral debate)); and the exclusion list (the mechanical-outlet-obstruction and the malignant and the cannabis and the cyclic patterns).**** Cannabinoid-hyperemesis and cyclic vomiting (the stereotyped episodic vomiting with wellness-between and the hot-shower-compulsion (the TRPV1-and-cannabinoid-receptor-hypothesis) with the cannabis-cessation-defining-test ([[psychiatry/substance-use]]), the haloperidol-and-capsaicin acute options and the sumatriptan-and-topiramate migraine-shared-circuit logic ([[nervous-system/headache-pain]]) and the mitochondrial-and-family-history-associations and the "gastroparesis-diagnosis-that-wasn't" trap). Rumination (the post-meal-effortless-regurgitation-and-rechew-or-spit with the learned-habit physiology and the diaphragm-breathing-behavioural-cure ([[gastrointestinal/bowel-disease]]-adjacent-behavioural-programmes) — and the antireflux-surgery failure-mimic warning).**
+These criteria are a balance. The age threshold reflects the steep rise of upper gastrointestinal cancer with age; younger people with alarm symptoms are still investigated when clinical judgement suggests concern. Weight loss, iron deficiency anaemia, persistent vomiting and a family history all raise suspicion.
+
+## Gastroparesis and vomiting
+
+::: definition Gastroparesis {#def-gastroparesis}
+**Gastroparesis** is delayed gastric emptying of solids in the absence of mechanical obstruction, with symptoms such as nausea, vomiting, early satiety, fullness and bloating. The standard test is **gastric emptying scintigraphy** of a radiolabelled solid meal over 4 hours. Retention of more than 10% of the meal at 4 hours is abnormal.
 :::
+
+The commonest identified causes are **diabetes**, through vagal autonomic neuropathy and acute hyperglycaemia, which itself slows emptying; **surgery** that damages the vagus nerves; and drugs, especially opioids and GLP-1 receptor agonists. Many cases are idiopathic, often after a viral illness. Before diagnosing gastroparesis, gastric outlet obstruction must be excluded by endoscopy.
+
+Management is step by step: optimise blood glucose, stop drugs that slow emptying where possible, and use small, frequent, low-fat and low-fibre meals, with liquid or puréed food in more severe cases. Prokinetic drugs have important limits. **Metoclopramide**, a dopamine D2 antagonist, can cause extrapyramidal effects and tardive dyskinesia, and in the UK its use is restricted to short courses of up to 5 days. **Domperidone** does not cross the blood–brain barrier as readily, but carries a risk of QT prolongation and arrhythmia, and is restricted accordingly. **Erythromycin** stimulates motilin receptors but loses effect with continued use. Severe cases may need jejunal feeding or gastric electrical stimulation in specialist centres.
 
 ::: example The vomiting diabetic {#ex-gastroparesis}
-A 41-year-old with type-1 diabetes (HbA1c 78 mmol/mol, retinopathy) has 6 months of post-meal fullness, vomiting undigested food 3 hours after eating, and erratic glucose swings with severe hypoglycaemia at noon; gastroscopy is normal.
+A 35-year-old woman of South Asian heritage has had type 1 diabetes for 22 years, with retinopathy and peripheral neuropathy. Over a year she has developed nausea, early satiety and vomiting of food eaten many hours before. Her glucose readings swing unpredictably, with unexplained hypoglycaemia after meals. Endoscopy shows food residue but no obstruction. Explain her symptoms and her glucose pattern, and outline the next test and management principles.
 ::: solution
-**Diabetic gastroparesis (the [[#def-gastroparesis]]-diagnosis: the long-diabetes-duration microvascular-and-enteric-neuropathy context, the food-delivery-insulin-mismatch hypoglycaemia signature (the insulin-dose-timing-versus-gastric-emptying-chaos ([[endocrine/diabetes-complications]] and the pre-meal-versus-post-meal dosing debate) and the negative endoscopy excluding the outlet lesion ([[#def-peptic]]'s gastric-outlet-obstruction)). Confirm: **the 4-hour-emptying-scan with the drug-hold-and-glycaemia<15-preconditions ([[clinical-skills/medical-imaging]]) and the nutrient-calibration; treat the spiral: the dietitian-led small-low-fat-low-fibre-frequent-meals-and-blended-calorie-liquid plan ([[gastrointestinal/clinical-nutrition]]); the insulin-strategy switch (the post-meal-dosing-or-pump-square-wave-and-continuous-monitoring-alarms ([[endocrine/diabetes]]-own-technology-medicine)); the prokinetic trial (domperidone-before-meals-with-the-ECG-and-QT-register ([[pharmacology/adverse-reactions]]) or erythromycin-low-dose with tachyphylaxis-planning ([[gastrointestinal/digestion-absorption]]'s motilin motility patterns)); the antiemetic-selection-with-QT-hygiene and the cannabis-alcohol-cyclic-exclusion ([[psychiatry/substance-use]]); the glycaemic-stabilisation-as-prokinetic-itself (the hyperglycaemia-slows-emptying loop [[endocrine/diabetes-complications]]); the refractory-referral (pyloric-intervention and neuroenteric-unit and the jejunostomy-feeding decision — [[gastrointestinal/clinical-nutrition]] and [[surgery/gastrointestinal-surgery]]); and the shared-care documentation (the peri-operative carbohydrate-loading-contraindication and the sick-day-liquid-regime ([[surgery/perioperative-care]]) — [[clinical-skills/records-handover]]).**
-:::
-:::
+**Step 1: mechanism.** Long-standing diabetes with retinopathy and neuropathy suggests she also has **autonomic neuropathy** involving the vagus. Loss of vagal input impairs fundic accommodation and antral grinding, so solids empty slowly. Food residue at endoscopy without obstruction supports **diabetic gastroparesis**.
 
-::: widget plot
-f: 95/(1+exp(-(x-3)*1.2)); 100/(1+exp(-(x-0.02)*400))
-x: 0, 10
-y: 0, 105
-labels: \text{days of PPI therapy},\ \text{heartburn relief (\% of eventual effect)};\ \text{PPI (pump-turnover-limited)};\ \text{antacid (immediate)}
-caption: Why PPIs feel slow and antacids feel fast ([[gastrointestinal/digestion-absorption]]): the pump-blockade accumulates with each dosing cycle until secretory-capacity turnover balances blockade (the 2-5-day ramp), while antacids and alginates act instantly on luminal acid (the bridge-and-rescue role — [[#def-gerd]]). The curve is also the adherence-counselling figure: the patient who "trialled omeprazole for two days" has not trialled omeprazole ([[pharmacology/patient-variation]], [[clinical-skills/communication]]) — and the same pharmacodynamic logic underlies the pre-meal-timing instruction and the delayed-on-demand strategy ([[gastrointestinal/digestion-absorption]]'s acid-curve figure).
-:::
+**Step 2: glucose pattern.** Her insulin is timed for a meal that does not reach the small intestine as expected. Rapid-acting insulin peaks while food is still in the stomach, causing hypoglycaemia; later, when the food finally empties, glucose rises. Erratic emptying therefore causes erratic glucose. High glucose also slows emptying further, creating a cycle.
 
-## Tumours of the upper gut
+**Step 3: confirm.** Gastric emptying scintigraphy over 4 hours, done when her glucose is reasonably controlled, will quantify the delay.
 
-::: definition Gastric and oesophageal cancer, and the lymphoma-GIST corner {#def-tumours}
-**Oesophageal adenocarcinoma (the Barrett-sequence terminal — [[#def-gerd]]'s complication-and-surveillance-argument) versus squamous (the smoking-and-alcohol-and-caustic-and-achalasia-and-plummer-vingon-and-poor-fruit-vegetable-and-hot-drink epidemiology and the worldwide-belt geography — [[public-health/global-health]] and [[public-health/environmental-occupational]]; the head-and-neck second-primary field — [[anatomy/head-neck]]-adjacent ENT-endoscopy practice) with the shared presentation (progressive solids-dysphagia-and-weight-loss-and-iron-deficiency-and-haematemesis — the [[clinical-skills/history-taking]]-urgent-pathway and the CT-and-PET-and-EUS-and-laparoscopy-and-biopsy staging ([[clinical-skills/medical-imaging]]) and the treatment arms (resectable (neoadjuvant-chemoradiotherapy-cross-trial-cascades with the surgery of [[surgery/gastrointestinal-surgery]]) versus locally-advanced (definitive chemoradiation and immunotherapy-cascade additions) versus metastatic (the HER2-and-claudin-18.2-and-PD-L1-and-MSI-molecular-selection era — [[genetics/genomic-medicine]]) and the dysphagia-palliation (stent-and-brachytherapy-and-feeding-tube and the laser-and-debulking options — [[geriatrics-palliative/symptom-control]])). **Gastric cancer (the Correa inflammation-metaplasia-dysplasia-carcinoma sequence with the H-pylori-class-1-carcinogen and the autoimmune-atrophic-gastritis-pernicious-anaemia and the familial-gastric-cancer-and-CDH1-hereditary-diffuse-gastric-cancer-and-Lynch-and-Peutz-Jeghers-and-FAP-genetics ([[genetics/cancer-genetics]]-and-[[genetics/mendelian-inheritance]] and the [[gastrointestinal/bowel-disease]]-polyposis-crosstown); the intestinal (cohesive-and-expansile) versus diffuse (signet-ring-and-linitis-plastica-and-discordant-cell-adhesion) dichotomy; presentation (the late-dyspepsia-mimic with the "GORD-at-70-is-cancer-until-endoscoped" rule ([[clinical-skills/history-taking]] urgency rules and [[gastrointestinal/gi-bleeding-cancer]]); staging-and-treatment (the D2-gastrectomy-with-lymphadenectomy-perioperative-chemotherapy-trials and the HIPEC-niche-debates and the molecular-add-ons ([[surgery/gastrointestinal-surgery]]); the palliation (the gastrojejunostomy-versus-stent and bleeding-RT decisions and the nutrition-jejunostomy — [[gastrointestinal/clinical-nutrition]]); the Japan-and-Korea-screening-endoscopy-programmes contrast ([[public-health/screening]]). **MALT lymphoma (the H-pylori-driven lymphoid-lesion whose early stage is cured by eradication alone in 70-80 % — medicine's cleanest infection-to-cancer-causality demonstration ([[microbiology/bacteria]] and [[immunology/adaptive-responses]]); the t(11;18)-predicting-antibiotic-failure; the radiotherapy-and-rituximab-beyond-stage options — [[blood/lymphoma-myeloma]]). **GIST (the mesenchymal-ICC-derived tumour ([[gastrointestinal/digestion-absorption]]'s Cajal-lineage note) with KIT/PDGFRA mutations and the imatinib-and-sunitinib-and-regorafenib-kinase-inhibitor ladder and the anatomic-resection-not-lymphadenectomy-surgery and the surveillance-rupture-risk — [[genetics/cancer-genetics]]-and-[[surgery/gastrointestinal-surgery]]). **Benign-corner (the gastric polyps-and-PPI-parity-rationale ([[gastrointestinal/digestion-absorption]]'s-own-deprescribing-reasoning) and the fundic-gland-cyst-reassurance ([[gastrointestinal/digestion-absorption]]'s-acid-curve figure) and the vascular ectasia-and-gastric-cardia-watermelon-antrum-bleeds ([[gastrointestinal/gi-bleeding-cancer]] and [[cardiovascular/vascular-disease]]-adjacent) and the benign structuring-lesion-set of [[#def-dysphagia]] and [[#def-gerd]]).**
-:::
-
-::: example The 3 a.m. coffee-ground vomit {#ex-ulcer-bleed}
-A 72-year-old on diclofenac for hands and low-dose aspirin post-stent, H. pylori-never-tested, wakes with epigastric pain and coffee-ground vomit; HR 112, BP 98/60, Hb 84 (previous 130), urea 14, creatinine 110, INR normal; GCS 15.
-::: solution
-**Upper-GI bleeding with shock-index-raise ([[gastrointestinal/gi-bleeding-cancer]]-management-in-that-lesson: the ABC-and-large-bore-access-and-crossmatch ([[emergency-critical-care/acute-assessment]]), the restrictive-transfusion-threshold-70-80 ([[blood/transfusion]]), the urea-rise-with-normal-creatinine as the digested-blood-protein-load ([[renal/water-sodium]]), the risk-scores ([[gastrointestinal/gi-bleeding-cancer]]'s-Glasgow-Blatchford-and-Rockall) and the PPI-drip-or-high-dose-oral-while-arranging-urgent-endoscopy-with-endoscopic-haemostasis (the over-the-scope-clip-and-thermal-and-injection-arsenal and the re-bleed-second-scope-versus-IR-embolisation-versus-surgery-ladder — [[surgery/acute-abdomen]]-and-[[surgery/gastrointestinal-surgery]] and [[clinical-skills/medical-imaging]]).** The cause (the NSAID-plus-aspirin-plus-untested-H-pylori triple-hit [[#def-peptic]]): **the ulcer-biopsies-and-eradication-plan ([[microbiology/antimicrobials]]) and the secondary-prevention architecture (the aspirin-continuation-after-haemostasis-in-the-stent-patient-vs-hold-decision ([[cardiovascular/coronary-artery-disease]] and [[nervous-system/stroke]]'s-secondary-prevention-weight) and the NSAID-replacement-plan with topical-first and paracetamol strategies and the PPI-covered-NSAID-if-essential decision ([[pharmacology/adverse-reactions]]) and the H-pylori-eradicate-and-test-cure ([[gastrointestinal/gi-bleeding-cancer]]-prevention-rebleed-evidence)) and the long-term-PPI-prescription ([[gastrointestinal/digestion-absorption]]'s-risk-review-honesty) and the documentation that prevents this admission's repeat ([[clinical-skills/records-handover]], [[geriatrics-palliative/polypharmacy]]).**
+**Step 4: management principles.** Adjust insulin timing and consider continuous glucose monitoring and an insulin pump; small, frequent, low-fat, low-fibre meals; and short-term antiemetic or prokinetic treatment within regulatory limits. Specialist dietetic and diabetes input is needed, and nutritional support may be required if she loses weight ([[gastrointestinal/clinical-nutrition]]).
 :::
 :::
 
 ::: quiz
-Barrett's oesophagus is defined by:
-- [ ] Symptomatic reflux unresponsive to antacids
-- [x] Intestinal metaplasia (goblet cells) in oesophageal column-lined mucosa above the gastro-oesophageal junction
-- [ ] Any columnar-lined oesophagus on endoscopy
-- [ ] High-grade dysplasia only
+A 30-year-old man has a positive urea breath test performed while he was taking a PPI. Two weeks after a course of eradication therapy, while still on the PPI, a repeat breath test is negative. What can you conclude?
+- [ ] Eradication has been confirmed
+- [x] The negative test may be falsely reassuring because the PPI and the recent antibiotics suppress the bacterium
+- [ ] The first test must have been a false positive
+- [ ] He should switch to serology to confirm cure
 ::: solution
-**The definition is histological (intestinal metaplasia with goblet cells — [[pathology/chronic-inflammation-repair]]'s-metaplasia-programme [[gastrointestinal/oesophagus-stomach]]-own-metaplasia-definition-in-[[#def-gerd]]), because the adenocarcinoma risk tracks the specialised-intestinal-metaplasia and its dysplasia progression, not symptoms or colour ([[gastrointestinal/gi-bleeding-cancer]]-surveillance-rationale and [[public-health/screening]]'s-conditionals-need-a-histological-gate); length-and-dysplasia-then-set-the-surveillance-interval ([[#def-gerd]] and [[#ex-barrett]]). A column-lined-appearing-oesophagus-without-goblet-cells is not Barrett's in Western-convention ([[#def-gerd]]).**
+PPIs and antibiotics suppress *H. pylori* and reduce urease activity, so breath and stool tests can be **falsely negative**. A positive test on a PPI is still meaningful, because suppression lowers rather than raises the signal. A test of cure needs to be done at least 4 weeks after antibiotics and 2 weeks after stopping the PPI. Serology cannot confirm cure because antibodies persist after successful eradication.
 :::
 :::
 
 ::: history
-**The acid-disease genealogy: the sham-dogs and Pavlov's-vagus (1900s); Katsch-and-the-fractionated-test-meal-era-gastric-analysis; Schwarz's "no acid, no ulcer" (1910) — then overturned by Black's-H2-blockers-and-the-pump-drugs ([[gastrointestinal/digestion-absorption]]'s acid-curve figure);** **Barrett's 1950 description (the post-war-reflux-stricture-epidemic and the adenocarcinoma-epidemic-of-the-1960s-80s (the rising-incidence analyses of the 1990s — [[gastrointestinal/gi-bleeding-cancer]]));** **Marshall-and-Warren's 1983 self-dose-and-self-experiment H-pylori-saga ([[microbiology/bacteria]]-own-self-infection-story), the-peptic-ulcer-cure-era (the-1989-Lancet-eradication-trials-recurrence-drop-from-70 %-to-<10 %), the-2005-Nobel ([[infectious-diseases/stewardship-outbreaks]]-adjacent-H-pylori-antibiotic-resistance-warning [[microbiology/antimicrobials]]);** **the-manometry-revolution (the 1970s perfused-catheter era) and the 2000s-HRM-Chicago-classification ([[#def-dysphagia]]);** **the-PPI-era-and-its-deprescribing-reckoning ([[gastrointestinal/digestion-absorption]]-and-[[geriatrics-palliative/polypharmacy]]); the laparoscopic-fundoplication-and-POEM-and-TIF-surgical-technology-arc ([[surgery/gastrointestinal-surgery]]); and **the-checkpoint-and-HER2-and-claudin-18.2 molecular-oncology-of-the-upper-tract ([[genetics/genomic-medicine]] and [[immunology/vaccines-immunotherapy]]-adjacent-immune-checkpoint-medicine).**
+For most of the twentieth century peptic ulcer was blamed on stress and acid, and treated with diets, antacids and surgery. In 1982 the pathologist Robin Warren and the physician Barry Marshall in Perth, Western Australia, cultured a curved bacterium from gastric biopsies and proposed that it caused gastritis and ulcers. To test this, Marshall drank a culture of the organism in 1984 and developed acute gastritis. Trials then showed that eradicating the bacterium prevented ulcer recurrence, and Warren and Marshall received the Nobel Prize in Physiology or Medicine in 2005. In parallel, Basil Hirschowitz and colleagues tested the first fibreoptic gastroscope in 1957, which made direct inspection and biopsy of the upper gut routine.
+:::
+
+::: summary
+- Dysphagia is oropharyngeal or oesophageal, and mechanical or motility-related. New dysphagia at any age warrants urgent endoscopy under NICE NG12.
+- Achalasia is loss of inhibitory myenteric neurons, so the LOS fails to relax. Manometry makes the diagnosis; treatments reduce sphincter resistance.
+- GORD arises mainly from transient LOS relaxations, low LOS pressure and hiatus hernia. Lifestyle change and PPIs are the mainstay; surgery suits selected people.
+- Barrett's oesophagus is columnar metaplasia from chronic reflux and the precursor of oesophageal adenocarcinoma; dysplasia is treated endoscopically.
+- Almost all peptic ulcers are caused by *H. pylori* or NSAIDs. Removing the cause cures the disease.
+- Breath and stool tests need 2 weeks off PPIs and 4 weeks off antibiotics; serology cannot confirm cure.
+- Gastroparesis is delayed emptying without obstruction, most often from diabetes, surgery or drugs; prokinetics have important safety limits.
 :::
 
 ## Where this leads
 
-Secretion physiology in [[gastrointestinal/digestion-absorption]]; bleeding and cancer pathways in [[gastrointestinal/gi-bleeding-cancer]]; the surgical management in [[surgery/gastrointestinal-surgery]] and perforation in [[surgery/acute-abdomen]]; *H. pylori* microbiology in [[microbiology/bacteria]]; drug mechanisms in [[pharmacology/drug-receptor]]; gut-brain functional overlap with [[gastrointestinal/bowel-disease]]; nutrition rescue in [[gastrointestinal/clinical-nutrition]]; Barrett's surveillance in [[public-health/screening]].
-
-::: exercise The 2 a.m. rigid abdomen {level=2}
-A 63-year-old on ibuprofen and prednisolone for arthritis has sudden epigastric pain now generalised; abdomen board-like, supine radiograph shows free air. Outline the first six hours and the prevention lesson.
-::: solution
-**Perforated peptic ulcer with peritonitis ([[#def-peptic]]-complication-row and [[surgery/acute-abdomen]]-pathway): the resuscitation-and-broad-spectrum-antibiotics-and-analgesia-and-NPO-and-surgical-reference-urgent-laparotomy-(omental-patch)-or-laparoscopic-lavage-selection ([[emergency-critical-care/acute-assessment]], [[surgery/acute-abdomen]], [[microbiology/antimicrobials]]); the sepsis-physiology monitoring ([[emergency-critical-care/shock-fluids]] and [[immunology/innate-immunity]]-adjacent-SIRS-framing); the steroid-and-NSAID synergistic-risk recognition ([[pharmacology/adverse-reactions]], [[endocrine/adrenal]]-adjacent-stress-dose-steroid-coverage [[surgery/perioperative-care]]); the H-pylori-test-and-eradication-at-recovery-and-NSAID-avoidance-or-PPI-protection-and-the-steroid-sparing-rheumatology-conversation ([[microbiology/antimicrobials]], [[musculoskeletal/inflammatory-arthritis]]-adjacent-DMARD-sparing, [[geriatrics-palliative/polypharmacy]]); and the morbidity-and-mortality-and-never-event-framing where delay occurred ([[clinical-skills/patient-safety]]).**
-:::
-:::
-
-::: exercise Sort the chest pain {level=2}
-A 44-year-old with 6 months of retrosternal pain, worse lying and after meals, normal ECG and troponin, partial PPI response: what is the evidence-based work-up and the honest framing of "oesophageal chest pain"?
-::: solution
-**Cardiac-exclusion-first (the age-and-risk-timed troponin-and-ECG-serial-protocol and the remaining-coronary-risk-conversation — [[cardiovascular/coronary-artery-disease]] and [[clinical-skills/physical-examination]]), then the reflux-arm: **endoscopy (erosive-disease-and-Barrett's and the eosinophilic-oesophagitis-biopsies ([[gastrointestinal/gi-bleeding-cancer]] and [[immunology/hypersensitivity]]-adjacent-food-protein-allergy)), ambulatory-pH-impedance-off-or-on-therapy with symptom-association-probability ([[#def-gerd]], [[clinical-skills/laboratory-tests]]-adjacent), and manometry before any intervention ([[#def-dysphagia]]). The functional-category framing (oesophageal-hypersensitivity-and-no-reflux-causality: the gut-brain-therapy options and the placebo-honest-trial-structure — [[gastrointestinal/bowel-disease]]-shared-programmes and [[epidemiology-ebm/systematic-reviews]]-adjacent-evidence-of-TCAs-for-pain-not-motility) plus the reassurance-and-expectation-management conversation ([[clinical-skills/communication]]) and the red-flag-return-rules ([[clinical-skills/records-handover]]).**
-:::
-:::
-
-::: summary
-- Dysphagia reading (solids-then-liquids-progressive = mechanical; both-from-onset-intermittent = motility) drives who gets the urgent endoscope; manometry and Chicago typing drive who gets which myotomy.
-- Reflux is tLESR-driven; its mucosal and extra-oesophageal complications, Barrett's histological surveillance, and the fundoplication-versus-PPI decision are the same physiology at four depths.
-- Ulcer disease is now two preventable-drug diseases (NSAID and H. pylori) plus rarities (ZES, stress); diagnosis is endoscopic, management includes eradication-and-test-cure to end the recurrence.
-- Functional dyspepsia and gastroparesis are gut-brain and emptying disorders treated with mechanism-matched, honesty-framed ladders; cannabinoid hyperemesis is the great mimicker — cannabis-cessation is diagnostic and therapeutic.
-- Upper-GI cancers are prevention targets (H. pylori, smoking, alcohol, obesity, Barrett's surveillance) and molecular-medicine exemplars (HER2, claudin-18.2, MSI, PD-L1, KIT in GIST); MALT is cured by antibiotics.
-:::
+Upper gastrointestinal bleeding and cancers of the oesophagus and stomach are in [[gastrointestinal/gi-bleeding-cancer]]. The physiology of acid secretion is in [[gastrointestinal/digestion-absorption]], and the pharmacology of acid-suppressing drugs in [[pharmacology/drug-receptor]]. Surgical management of perforated ulcer is part of [[surgery/acute-abdomen]].
 
 ## Exercises
 
 ::: exercise Sort the dysphagia {level=1}
-Classify with one cause each: (a) 3-week progressive solids-then-liquids dysphagia, 8 kg loss, age 68; (b) 2-year intermittent solids-liquids-equal dysphagia with regurgitation of undigested food; (c) choking at first sip post-stroke.
+For each of the following, state whether the dysphagia is oropharyngeal or oesophageal, and mechanical or motility-related: (a) coughing on every drink after a stroke; (b) progressive difficulty with meat, then bread, over 3 months in a 70-year-old who has lost weight; (c) difficulty with solids and liquids from the start, with regurgitation of undigested food.
 ::: solution
-**(a) Mechanical-obstruction-with-alarm → urgent endoscopy-cancer-pathway ([[gastrointestinal/gi-bleeding-cancer]], [[#def-tumours]]); (b) achalasia-pattern ([[#def-dysphagia]] — manometry and barium with pseudoachalasia excluded at the same endoscopy/EUS); (c) oropharyngeal-dysphagia with aspiration-risk → swallow-assessment-and-SLP-priority ([[nervous-system/stroke]], [[respiratory/respiratory-infections]]'s-aspiration-route and [[gastrointestinal/clinical-nutrition]]'s feeding-decision).**
+(a) Oropharyngeal, neuromuscular. The swallow reflex is impaired, so aspiration risk is high and speech and language assessment is needed. (b) Oesophageal, mechanical, and progressive with weight loss: cancer must be excluded by urgent endoscopy. (c) Oesophageal, motility: achalasia is the classic cause.
 :::
 :::
 
 ::: exercise Time the tablets {level=1}
-Give the correct PPI instruction and explain it physiologically; name two absorption interactions to check at the same consultation.
+Explain why proton pump inhibitors work best when taken 30 to 60 minutes before breakfast, and why their full effect takes several days to develop.
 ::: solution
-**"Thirty-to-sixty-minutes before breakfast" — the pump-activation-coupling ([[gastrointestinal/digestion-absorption]]'s acid-secretion physiology and acid-curve figure-there) with the twice-daily-and-split options for partial responders ([[#def-gerd]]-no: [[#def-gerd]]); interactions: iron-solubility-and-ketoconazole-and-erlotinib-and-methotrexate-clearance-and-clopidogrel(omeprazole-CYP2C19)-[[pharmacology/absorption-distribution]]-and-[[pharmacology/metabolism-excretion]]-and-[[cardiovascular/coronary-artery-disease]]-and-[[blood/anaemia]]-and-[[gastrointestinal/digestion-absorption]]'-deprescribing-review ([[gastrointestinal/digestion-absorption]]'s PPI-risk-review teaching).**
+PPIs bind irreversibly only to proton pumps that are active in the secretory canaliculi. Most pumps are activated by a meal, so taking the drug shortly before eating means peak blood levels coincide with the largest number of active pumps. Pumps that were inactive at the time escape, and new pumps are made continuously, so acid suppression accumulates over 3 to 5 days of regular dosing until a steady state is reached.
 :::
 :::
 
-::: exercise Prescribe eradication {level=2}
-Give the first-line H-pylori regimen logic in a penicillin-allergic patient, and the post-treatment confirmation rules.
+::: exercise The breath test result {level=1}
+Name two non-invasive tests for active *H. pylori* infection and explain why serology is not used to confirm eradication. What must happen before a breath test to avoid a false negative?
 ::: solution
-**Allergy-first-reasoning ([[microbiology/antimicrobials]]): the penicillin-allergy-eliminates-amoxicillin (so the bismuth-quadruple or the clarithromycin-based-with-resistance-data-or-levofloxacin-with-local-ESR-sensitivity-judgement — [[public-health/global-health]]-and-[[microbiology/laboratory-diagnosis]]-resistance-testing-availability); the vonoprazan-combinations where licensed ([[pharmacology/drug-receptor]]); adherence-and-side-effect-coaching (the-bismuth-black-stool-and-the-metallic-taste-and-alcohol-with-metronidazole ([[pharmacology/adverse-reactions]]) and fourteen-day course discipline [[microbiology/antimicrobials]]-and-[[clinical-skills/communication]]). Confirmation: **the urea-breath-or-stool-antigen at ≥4 weeks post-treatment and ≥2 weeks off PPI (the-false-negative-mechanisms [[clinical-skills/laboratory-tests]] and the bleed-and-antibiotic-caveats) — and the "cure-not-repeat-empiric-triples" stewardship ([[infectious-diseases/stewardship-outbreaks]]).**
+The carbon-13 urea breath test and the stool antigen test. Serology detects IgG antibodies, which persist for months to years after cure, so it cannot distinguish current from past infection. Before testing, PPIs should be stopped for 2 weeks and antibiotics avoided for 4 weeks, because both suppress the bacterium and reduce urease activity.
 :::
 :::
 
-::: exercise Interpret the emptying study {level=2}
-The 4-hour gastric-emptying scan shows 28 % retention at 4 hours (normal <10 %) in a vomiting patient on opioids and an GLP-1 agonist, HbA1c 130. What may and may not be concluded?
+::: exercise Predictive value {level=2 check="68"}
+A breath test has 95% sensitivity and 95% specificity. It is used in a population where 10% of people have *H. pylori*. What percentage of positive results are true positives? Give your answer to the nearest whole percent.
+::: hint
+Imagine 1,000 people. How many are infected, and how many uninfected people test positive?
+:::
 ::: solution
-**Positive-study-in-the-wrong-conditions: opioids-and-GLP1-agonists-and-acute-hyperglycaemia-(>15 mmol/L)-all-delay-emptying ([[#def-gastroparesis]]-confounders; [[endocrine/diabetes-complications]]-glucose-rate-rule; [[pharmacology/adverse-reactions]]), so the result cannot establish gastroparesis until drugs-held-and-glycaemia-controlled-and-repeated ([[clinical-skills/laboratory-tests]]-repeat-testing-logic); nor can it exclude the mechanical (the endoscopy-precondition [[#def-gastroparesis]]); and symptom-correlation-with-emptying-is-poor (the treatment-of-syndrome-not-scan-discipline). Conclusion: **the scan is a severity-anchor for the diet-prokinetic-plan only after confounder-removal ([[gastrointestinal/clinical-nutrition]]) — document-so-the-next-team-reinterprets ([[clinical-skills/records-handover]]).**
+Of 1,000 people, 100 are infected and 95 of them test positive. Of the 900 uninfected, 5% test positive: 45 false positives. Positive predictive value $= 95/(95 + 45) = 95/140 = 0.679$, so about **68%**. One in three positive results is wrong at this prevalence, which is why testing works best when the pre-test probability is reasonable.
 :::
 :::
 
-::: exercise Counsel the linitis plastica {level=2}
-A 44-year-old has early satiety, weight loss, non-diagnostic superficial biopsies twice, CT showing diffuse gastric-wall thickening; the family history includes two breast cancers young. What is happening, and the genetic conversation?
+::: exercise Interpret the emptying study {level=2 check="25"}
+In a gastric emptying study, 400 kBq of activity is measured in the stomach immediately after the meal. After decay correction, 100 kBq remains at 4 hours. What percentage of the meal is retained at 4 hours, and is emptying delayed?
+::: hint
+Retention is the remaining activity divided by the initial activity.
+:::
 ::: solution
-**Diffuse-gastric-cancer-with-submucosal-signet-ring-spread (the superficial-biopsy-negative-classic — the EUS-deep-biopsy-and-laparoscopy-and-peritoneal-cytology-work-up [[clinical-skills/medical-imaging]]-and-[[gastrointestinal/gi-bleeding-cancer]]; the linitis-plastica-stiff-contracted-stomach-physiology of [[#def-tumours]]). The young-age-and-diffuse-and-family-breast-cancer-pattern raises CDH1-and-CTNNA1 hereditary diffuse gastric cancer ([[genetics/mendelian-inheritance]]-and-[[genetics/cancer-genetics]]-and-the-breast-lobular-association [[surgery/breast-endocrine-surgery]]): the genetic-referral-and-testing ([[genetics/genetic-testing]]), the predictive-testing-in-relatives-with-counselling ([[genetics/genomic-medicine]] and the risk-reducing-total-gastrectomy-with-missed-signet-rings-pathology-honesty [[surgery/gastrointestinal-surgery]]), and the family's insurance-and-reproduction-conversations ([[clinical-skills/communication]] and [[medical-ethics-law/consent-capacity]]). Management-track: **the staging-gated decisions (the peri-operative chemotherapy and HIPEC-trial-niches and palliative-systemic-therapy and the early-stent-or-gastrojejunostomy-for-outlet-compromise and feeding-jejunostomy-nutrition-forethought — [[gastrointestinal/clinical-nutrition]]-and-[[geriatrics-palliative/palliative-care]]).**
+Retention $= 100/400 = 0.25$, or **25%**. More than 10% retained at 4 hours is abnormal, so gastric emptying is delayed. The test should be interpreted with knowledge of glucose levels and drugs at the time, because hyperglycaemia and opioids slow emptying.
 :::
 :::
 
-::: exercise Build the reflux pathway {level=3}
-Design a community-and-hospital pathway for reflux, from self-care to fundoplication, with surveillance ethics and the pregnancy-infant-paediatric branches.
+::: exercise Protect the stomach {level=2}
+A 68-year-old man with rheumatoid arthritis needs long-term naproxen. He also takes prednisolone and, after a recent myocardial infarction, clopidogrel and aspirin. List his risk factors for peptic ulcer complications and describe the principles of reducing his risk.
+::: hint
+Think about each drug, his age, and the role of *H. pylori*.
+:::
 ::: solution
-**Self-and-primary-care: the pharmacist-and-GP-alginate-and-lifestyle-first step and the 4-8-week-PPI-trial with the correct-timing instruction ([[gastrointestinal/digestion-absorption]]'s acid-curve teaching material) and the alarm-stop-rules ([[gastrointestinal/gi-bleeding-cancer]] pathways [[clinical-skills/history-taking]]). Secondary-care-triage: the-treatment-failure-and-atypical-symptom assessment (the endoscopy-and-pH-impedance-and-manometry decision-tree — pre-surgery manometry-mandatory rule [[#def-gerd]]); the partial-responder audit (adherence-and-timing-and-nocturnal-acid-and-functional-overlap and the bile-acid-question and the oesophageal-hypersensitivity-and-gut-brain-limb ([[gastrointestinal/bowel-disease]]-shared-programmes [[psychiatry/treatments-mental-health-law]]-adjacent-therapies)). Surgery-door: the objective-reflux-demonstration-and-hernia-anatomy-and-obesity-strategy (the sleeve-versus-fundoplication sequencing — [[surgery/gastrointestinal-surgery]]-and-[[endocrine/diabetes]]-adjacent-bariatric-service [[gastrointestinal/clinical-nutrition]]). Surveillance-ethics: the Barrett's-interval-stratification-and-the-number-needed-to-screen-and-the-equal-access-to-endotherapy-and-the-deprivation-uptake-gap ([[public-health/screening]]-and-[[public-health/determinants-inequalities]]). Branches: the pregnancy ladder (the safety-tiered drugs — [[obstetrics-gynaecology/pregnancy-antenatal]]-and-[[pharmacology/patient-variation]]), the infant (the happy-spitter reassurance-script and the faltering-growth-red-flag — [[paediatrics/growth-development]]-and-[[paediatrics/acute-childhood-illness]]) and the elderly and frail (the polypharmacy review and swallow assessment first — [[geriatrics-palliative/polypharmacy]]-and-[[geriatrics-palliative/falls]]-adjacent-deconditioning). KPIs: time-to-endoscopy-for-alarms, post-fundoplication-satisfaction-and-re-intervention, Barrett's-treatment-stage-at-cancer-diagnosis and the antacid-prescribing-safety-log ([[clinical-skills/patient-safety]] and [[clinical-skills/records-handover]]).**
+**Risk factors:** age over 65; an NSAID; corticosteroids combined with an NSAID; dual antiplatelet therapy; and the cardiovascular disease itself. **Principles:** review whether an NSAID is truly needed and use the lowest effective dose for the shortest time, considering alternatives; test for and eradicate *H. pylori* if present; prescribe a PPI for gastroprotection while he takes this combination; and coordinate with cardiology about the duration of dual antiplatelet therapy. Prescribing decisions follow current guidance and an individual risk assessment.
+:::
+:::
+
+::: exercise A case with a differential {level=3}
+A 58-year-old woman has 3 months of epigastric discomfort, early satiety and 6 kg unintentional weight loss. She has been taking an over-the-counter PPI with partial relief. Haemoglobin is 104 g/L with a low ferritin. Give a differential diagnosis, state what NICE NG12 recommends, and explain why a partial response to a PPI is not reassuring.
+::: hint
+Apply the age and weight-loss criteria in [[#def-alarm]].
+:::
+::: solution
+**Differential:** gastric cancer, peptic ulcer (*H. pylori* or NSAID-related), oesophageal adenocarcinoma at the junction, pancreatic cancer, gastric lymphoma, and functional dyspepsia only after structural disease is excluded. Iron deficiency suggests chronic blood loss, which also raises concern about colorectal cancer.
+
+**Guidance:** she is over 55 with weight loss and upper abdominal symptoms, so NG12 recommends **urgent direct access upper gastrointestinal endoscopy** within 2 weeks. Her iron deficiency anaemia also needs investigation of the lower gastrointestinal tract under national guidance.
+
+**The PPI trap:** PPIs can heal the surface of a malignant ulcer and relieve symptoms temporarily, so a partial response does not exclude cancer and can delay diagnosis. Alarm features take precedence over response to treatment.
+:::
+:::
+
+::: exercise Build a dyspepsia pathway {level=3}
+You are asked to design a primary care pathway for adults with new dyspepsia, consistent with NICE CG184 and NG12. Describe the decision points in order, and explain the reasoning behind "test and treat" for *H. pylori*.
+::: hint
+Start with the alarm features, then medications and lifestyle, then the two treatment routes.
+:::
+::: solution
+1. **Screen for alarm features** ([[#def-alarm]]). If present, refer for urgent or non-urgent endoscopy as the criteria specify.
+2. **Review medication**, especially NSAIDs, aspirin, bisphosphonates, calcium channel blockers and corticosteroids, and give lifestyle advice on weight, smoking, alcohol and meal timing.
+3. **Choose a first treatment**: either test for *H. pylori* and treat if positive, or give a 4-week course of full-dose PPI. If symptoms persist, use the other approach.
+4. **Follow up**: step PPIs down to the lowest effective dose or on-demand use; re-test for *H. pylori* where guidance advises; refer if symptoms persist or alarm features develop.
+
+"Test and treat" works because *H. pylori* is the main remediable cause of ulcer disease. Eradication cures most ulcers and reduces future risk, so treating on a non-invasive test avoids endoscopy for many people. Its value is greatest where *H. pylori* is common; in low-prevalence groups the positive predictive value falls and empirical PPI therapy may be used first.
 :::
 :::
