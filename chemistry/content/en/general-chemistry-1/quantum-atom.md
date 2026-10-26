@@ -284,7 +284,7 @@ The photon energy is
 $$
 E = \frac{hc}{400.0\times 10^{-9}} = 4.966\times 10^{-19}\ \mathrm{J} = \frac{4.966\times 10^{-19}}{1.602176634\times 10^{-19}} = 3.100\ \mathrm{eV}.
 $$
-Einstein's equation gives $K_\max = 3.100 - 1.95 = 1.15\ \mathrm{eV}$. The work function limits the precision to the hundredth of an electronvolt. The threshold wavelength for this surface is $hc/\phi = 636\ \mathrm{nm}$, so a $700\ \mathrm{nm}$ lamp, at $1.77\ \mathrm{eV}$, ejects nothing however bright it is made. Brightness would change the number of electrons at $400\ \mathrm{nm}$, not the $1.15\ \mathrm{eV}$.
+Einstein's equation gives $K_\mathrm{max} = 3.100 - 1.95 = 1.15\ \mathrm{eV}$. The work function limits the precision to the hundredth of an electronvolt. The threshold wavelength for this surface is $hc/\phi = 636\ \mathrm{nm}$, so a $700\ \mathrm{nm}$ lamp, at $1.77\ \mathrm{eV}$, ejects nothing however bright it is made. Brightness would change the number of electrons at $400\ \mathrm{nm}$, not the $1.15\ \mathrm{eV}$.
 :::
 :::
 

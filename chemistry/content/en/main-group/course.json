@@ -99,14 +99,14 @@
   "history": [
     {
       "year": 1766,
-      "title": "Cavendish identifies hydrogen",
-      "detail": "Henry Cavendish shows that the 'inflammable air' given off by metals dissolving in acids is a distinct substance, and that burning it produces nothing but water — disposing of the idea that water is an element and founding the chemistry of the first element in the table.",
+      "title": "Cavendish characterises inflammable air (hydrogen)",
+      "detail": "In his paper on 'factitious airs' Henry Cavendish shows that the 'inflammable air' given off by metals such as zinc and iron dissolving in dilute acids is a distinct substance, far lighter than ordinary air. His later experiments (carried out from 1781 and published in 1784) showed that burning it with air or oxygen gives water, which disposed of the idea that water is an element.",
       "people": ["Henry Cavendish"]
     },
     {
       "year": 1807,
       "title": "Davy isolates sodium and potassium by electrolysis",
-      "detail": "Humphry Davy passes currents through molten potash and soda at the Royal Institution and obtains beads of potassium and sodium, proving they are metals and establishing electrolysis as the extraction method for the most electropositive elements — the method still used for sodium, magnesium and aluminium.",
+      "detail": "Humphry Davy passes currents through molten potash and soda at the Royal Institution and obtains beads of potassium and sodium, proving they are metals and establishing electrolysis as the extraction method for the most electropositive elements — the method still used for sodium and aluminium and for much of the world's magnesium.",
       "people": ["Humphry Davy"]
     },
     {
@@ -130,7 +130,7 @@
     {
       "year": 1932,
       "title": "Pauling creates the electronegativity scale",
-      "detail": "Linus Pauling extracts from bond enthalpies a single number per element — the tendency of an atom in a molecule to hold electrons — and with it quantifies partial ionic character, the polarity of every main-group bond and the rules for the structures of oxoanions.",
+      "detail": "Linus Pauling extracts from bond enthalpies a single number per element — the tendency of an atom in a molecule to hold electrons — and with it estimates the partial ionic character and polarity of main-group bonds.",
       "people": ["Linus Pauling"]
     },
     {
@@ -187,13 +187,13 @@
       "title": "The Nature of the Chemical Bond",
       "authors": "Linus Pauling",
       "year": 1939,
-      "note": "The origin of electronegativity, hybridisation and the rules for oxoacid strength read in their original, quantitative form."
+      "note": "Electronegativity, hybridisation and resonance in Pauling's own words; the first edition is the historical source for the ideas of the periodic-trends and bonding chapters."
     },
     {
       "title": "Descriptive Inorganic Chemistry",
       "authors": "Geoff Rayner-Canham and Tina Overton",
-      "year": 2016,
-      "note": "A gentler entry to the survey chapters, organised exactly as this course is; good for first-pass reading before the denser texts."
+      "year": 2014,
+      "note": "Sixth edition. A gentler entry to the survey chapters, organised exactly as this course is; good for first-pass reading before the denser texts."
     },
     {
       "title": "The Periodic Table: Its Story and Its Significance",
