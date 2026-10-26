@@ -1,143 +1,313 @@
-Drug metabolism is the body's chemical recycling service: **it makes lipid-soluble molecules water-soluble enough to excrete, and in doing so it activates prodrugs, creates toxic metabolites, and generates most of the drug interactions and idiosyncratic reactions in medicine.** Phase-one reactions - chiefly the cytochrome P450 oxidations - functionalise the molecule; phase-two conjugations - glucuronidation, acetylation, sulfation, methylation, glutathione coupling - caption it for export. Which enzyme handles a drug, how variable that enzyme is between people, and what induces or inhibits it explain half of clinical pharmacology's practical problems.
+The properties that let a drug be absorbed from the gut and reach its target, mainly lipid solubility, are the same properties that stop the kidney from getting rid of it. A lipid-soluble molecule filtered at the glomerulus simply diffuses back into the blood from the tubule. The body solves this by chemically changing such molecules into more water-soluble ones, mostly in the liver, so that they can be excreted in urine or bile. This is **drug metabolism** (also called biotransformation). Drugs that are already water-soluble, such as gentamicin, lithium and many penicillins, are excreted by the kidney largely unchanged.
 
-This chapter covers phase-one and phase-two metabolism, the pharmacogenetics of metabolising enzymes, induction and inhibition, and the extrahepatic and non-hepatic routes that matter clinically.
+This chapter describes the two phases of metabolism and the cytochrome P450 enzymes, the induction and inhibition of those enzymes that underlie many serious drug interactions, and the routes of excretion. It then brings elimination together in two quantities, **clearance** and **half-life**, and explains what happens when elimination becomes saturated. Absorption and distribution were the subject of [[pharmacology/absorption-distribution]]; how clearance sets a dosing regimen is developed in [[pharmacology/dosing-principles]].
 
-## The two phases
+## The aims and sites of metabolism {#sec-sites}
 
-::: definition Phase-one reactions {#def-phase1}
-**Cytochrome-P450-oxidations-as-the-main-event (the haem-thiolate cycle in words - substrate binding shifts the spin state, two electrons arrive from NADPH-P450 reductase, oxygen is activated, one atom is inserted into the substrate and water forms and the isozyme-families-that-run-clinical-medicine (CYP3A4-and-3A5-roughly-half-of-all-drug-metabolism-CYP2D6-the-overweight-polymorphic-workhorse-of-psychiatry-and-cardiology-CYP2C9-warfarin-phenytoin-NSAIDs-CYP2C19-clopidogrel-PPIs-CYP1A2-caffeine-theophylline-clozapine-and-FMO3-not-a-CYP-but-the-nitrogen-oxidiser-of-smells-and-drugs) - [[cell-biochemistry/proteins-enzymes]]); the reactions beyond oxidation - hydrolysis by esterases and amidases (remifentanil, morphine glucuronides, organophosphate scavenger enzymes), and ethanol's dehydrogenation to acetaldehyde then aldehyde dehydrogenase, with the flush polymorphism, disulfiram and the metronidazole folklore read honestly; the toxic intermediates as the price of progress - NAPQI from paracetamol via CYP2E1, detoxified by glutathione, the whole acetaminophen crisis in one molecule the therapeutic window shrinking with alcohol induction, fasting and glutathione depletion, and N-acetylcysteine rescue as glutathione precursor - the treatment line's origin in prescient 1970s research - [[emergency-critical-care/poisoning]], [[gastrointestinal/liver-disease]]) and the halogenated anaesthetic oxidation to acyl halides causing immune hepatitis - the halothane heritage, desflurane and sevoflurane's compound F, and the chemical stability hierarchy and the bioactivation-of-reactive-intermediates-forming-haptens-driving-idiosyncratic-drug-reactions-with-HLA-associations the nevirapine, flucloxacillin and abacavir episodes covered in [[pharmacology/adverse-reactions]] and [[pharmacology/patient-variation]] - [[pharmacology/adverse-reactions]], [[immunology/adaptive-responses]]; and the non-CYP-oxidations - monoamine-oxidases-in-mitochondria-outer-membrane-dietary-and-neurotransmitter-tyramine-cheese-question-answered-with modern selectivity data and of-oncology-dose-reduction-triumphs - [[renal/urinary-tract]], [[blood/lymphoma-myeloma]], [[infectious-diseases/stewardship-outbreaks]].**
+The liver is the main site of drug metabolism, but not the only one. The wall of the small intestine contains the same CYP3A4 enzyme that is abundant in liver, and contributes to first-pass metabolism. Plasma esterases hydrolyse suxamethonium and remifentanil within minutes, which is why both have such short actions. The lung, kidney and skin also metabolise some drugs.
+
+Metabolism usually, but not always, inactivates a drug. Its products fall into four groups.
+
+- **Inactive metabolites**: the usual outcome, for example the glucuronide of paracetamol.
+- **Active metabolites** that add to or prolong the effect. Diazepam is converted to desmethyldiazepam, which has a much longer half-life. Morphine is partly converted to morphine-6-glucuronide, an active analgesic that is excreted by the kidney and accumulates in renal impairment, causing drowsiness and respiratory depression.
+- **Prodrugs** that need metabolism to work. Codeine is converted to morphine by CYP2D6; clopidogrel is activated by CYP2C19 and other enzymes; enalapril and ramipril are hydrolysed to their active forms enalaprilat and ramiprilat; levodopa is decarboxylated to dopamine in the brain.
+- **Toxic metabolites.** A small fraction of paracetamol is oxidised to a reactive intermediate, N-acetyl-p-benzoquinone imine (NAPQI), which is normally detoxified immediately by conjugation with glutathione. When glutathione is depleted after an overdose, NAPQI binds to liver proteins and causes hepatocellular necrosis. Acetylcysteine works by replenishing glutathione. The recognition and management of paracetamol overdose follow national guidance ([[emergency-critical-care/poisoning]]).
+
+## Phase I and phase II reactions {#sec-phases}
+
+Metabolism is traditionally divided into two phases. Phase I reactions introduce or expose a reactive group; phase II reactions attach a large polar molecule to it. Many drugs undergo both, in that order, but some go straight to phase II and some are excreted after phase I alone.
+
+::: definition Phase I reactions and the cytochrome P450 system {#def-phase1}
+**Phase I** reactions are oxidation, reduction and hydrolysis. They add or unmask a functional group such as –OH, –NH₂ or –COOH, usually making the molecule slightly more polar and providing a site for conjugation.
+
+Most phase I oxidations are carried out by the **cytochrome P450 (CYP) enzymes**, a superfamily of haem-containing mono-oxygenases located mainly in the smooth endoplasmic reticulum of hepatocytes and enterocytes. They are named by family, subfamily and individual enzyme: CYP3A4 is family 3, subfamily A, enzyme 4. A small number of enzymes metabolise most drugs:
+
+| Enzyme | Examples of substrates | Notes |
+|---|---|---|
+| CYP3A4 | Ciclosporin, tacrolimus, simvastatin, atorvastatin, many calcium channel blockers, midazolam, many HIV and cancer drugs | Most abundant in liver and gut wall; involved in the metabolism of the largest share of drugs |
+| CYP2D6 | Codeine, tramadol, many antidepressants and antipsychotics, metoprolol, tamoxifen | Genetically polymorphic; not inducible |
+| CYP2C9 | S-warfarin, phenytoin, many NSAIDs, some sulfonylureas | Polymorphic; important in warfarin dosing |
+| CYP2C19 | Clopidogrel (activation), proton pump inhibitors, some antidepressants | Polymorphic |
+| CYP1A2 | Theophylline, clozapine, olanzapine, caffeine | Induced by tobacco smoke |
+| CYP2E1 | Ethanol, a small part of paracetamol | Induced by chronic alcohol use |
+
+Other phase I enzymes are also important: alcohol dehydrogenase and aldehyde dehydrogenase (ethanol), monoamine oxidase (catecholamines, serotonin, tyramine), xanthine oxidase (mercaptopurine) and many esterases and amidases.
 :::
 
-## Conjugation and its politics
+::: definition Phase II conjugation {#def-phase2}
+**Phase II** reactions attach an endogenous polar group to the drug or its phase I metabolite, producing a conjugate that is usually inactive and readily excreted in urine or bile. The main reactions are:
 
-::: definition Phase-two conjugations {#def-phase2}
-**Glucuronidation as the UGT workhorse - UDP-glucuronic acid donation making huge hydrophilic anions for renal excretion, and the clinical UGTs: UGT2B7 for morphine, NSAIDs and valproate, and UGT1A1 for bilirubin and irinotecan's active metabolite SN-38, with the TA-repeat promoter polymorphism Gilbert syndrome meets drug metabolism - hyperbilirubinaemia with fasting and atazanavir, and genotype-guided irinotecan dose reduction for neutropenia - [[gastrointestinal/liver-function]], [[paediatrics/newborn]]); Acetylation at NAT2's bimodal polymorphism - the slow and fast acetylator population genetics, the isoniazid neuropathy and hepatitis in slow acetylators with pyridoxine co-prescription, and the hydralazine and procainamide lupus in slow acetylators, with the immunology of acetylated metabolites only partly answered and the aromatic-amine detoxification failing in slow acetylators, with the bladder-cancer occupational epidemiology link) - [[infectious-diseases/tuberculosis]], [[musculoskeletal/connective-tissue-vasculitis]], [[pathology/environmental-pathology]]); sulfation, methylation and glutathione as alternatives - the sulfotransferases saturating where glucuronidation fails, and COMT inhibitors entacapone and opicapone adding levodopa bioavailability without crossing the blood-brain barrier - [[nervous-system/movement-disorders]]; and the conjugation immaturity and saturation clinics - neonatal glucuronidation immaturity (chloramphenicol grey baby, prolonged morphine half-life), why pregnancy and oestrogen therapy induce the same lamotrigine pathway at different ages, and zero-versus-first-order saturation for paracetamol, ethanol and phenytoin, with the phenytoin maintenance-dose cliff that mandates level monitoring and the prodrug-activation-by-esterases-and-CYPs (the clopidogrel-two-step-CYP2C19-activation-with-loss-of-function-alleles-and-platelet-function-testing-versus-genetics-versus-prasugrel-ticagrelor-not-needing-activation and the oseltamivir-and-valganciclovir-and-levodopa-and-codeine-CYP2D6-tramadol-and-oxycodone-active-metabolite-lessons - CYP2D6-ultrarapid-metabolisers-codeine-deaths-post-tonsillectomy-contraindication-remembered - [[blood/thrombosis-anticoagulation]], [[pharmacology/patient-variation]])).**
+- **glucuronidation**, by UDP-glucuronosyltransferases (UGTs): the highest-capacity pathway, used by morphine, paracetamol, lorazepam and bilirubin;
+- **sulfation**, by sulfotransferases: high affinity but low capacity, so it saturates (paracetamol at high doses);
+- **acetylation**, by N-acetyltransferase 2 (NAT2): isoniazid, hydralazine, some sulfonamides;
+- **glutathione conjugation**: detoxification of reactive intermediates such as NAPQI;
+- **methylation**: for example by thiopurine S-methyltransferase (TPMT) for azathioprine and mercaptopurine.
 :::
 
-## Turning the system up and down
+Several of these enzymes vary between people, and the variation has clinical consequences. About half of people of European ancestry are **slow acetylators**, carrying low-activity NAT2 variants; they are more likely to develop peripheral neuropathy from isoniazid and drug-induced lupus from hydralazine. Neonates have low UGT activity, which is why chloramphenicol caused the fatal "grey baby syndrome" in newborns given adult-derived doses. People with Gilbert syndrome have reduced UGT1A1 activity and are at higher risk of toxicity from irinotecan, whose active metabolite is cleared by that enzyme. These and other genetic variants are discussed in [[pharmacology/patient-variation]].
 
-::: definition Induction and inhibition {#def-induce-inhibit}
-**Enzyme-inhibition-as-the-fast-interaction (the-reversible-competitive-versus-mechanism-based-inactivation-in-words and the onsets-in-days-limited-by-enzyme-turnover-not-drug-half-life-with-CYP2C9-and-2D6-and-3A4-and-1A2-clinical-rosters (the azole-antifungals-macrolides-not-erythromycin-vs-clarithromycin-versus-azithromycin-am_I-read-the-evidence-versus-am-I-safe-by-class-extrapolation-versus-not-and the protease-inhibitor-and-cobicistat-pharmacokinetic-boosting-as-intentional-therapy-with-HIV-versus-drug-drug-cohort-mathematics and the grapefruit-furanocoumarin-time-dependent-gut-wall-3A4-inactivation-with-the-washout-of-72-hours-plus-versus-the-contralateral-grapefruit-myth-busting and the cimetidine-versus-ranitidine-family-history-and-the-ciprofloxacin-CYP1A2-theophylline-tizanidine-agomelatine-duet and the fluvoxamine-caffeine-and-clozapine-and-ramelteon-recheck-everything-when-started and the amiodarone-warfarin-digoxin-versapamil-triple-play-requiring-30-50-percent-warfarin-dose-cuts) - [[cardiovascular/arrhythmias]], [[infectious-diseases/stewardship-outbreaks]], [[psychiatry/treatments-mental-health-law]]); induction-as-the-slow-both-ways (the nuclear-receptor-sensors - PXR-CAR-and-AhR-ligand-activated-transcription-with-new-protein-synthesis-explaining-onset-in-days-and-offset-in-weeks and the rifampicin-as-protagonist-lowering-contraceptives-DOACs-azoles-antiretrovirals-methadone-buprenorphine-immunosuppressants-with-transplant-rejection-and-addisonian-crisis-reports (the rifabutin-with-dose-reduction-compromise-and-the-TB-HIV-co-treatment-navigator-algorithms) - [[infectious-diseases/tuberculosis]], [[obstetrics-gynaecology/contraception-fertility]]) and the enzyme-auto-induction-and-rebound carbamazepine self-induction shortening its own half-life over weeks, then slowly back when stopped, with barbiturate history lessons and the conjugation-enzyme-inhibition-and-induction-too valproate inhibiting lamotrigine glucuronidation and halving clearance - hence the famously slow lamotrigine titration for rash risk, with both sides of the interaction taught against each other - [[nervous-system/epilepsy]], [[psychiatry/mood-disorders]]; and the transporter-interactions-bundled-here-for-clinical-reality P-glycoprotein, OATP, OCT, MATE and BCRP interactions raising dabigatran and statin exposure (the gemfibrozil OATP1B1 lesson), the cobicistat and dolutegravir OCT2 creatinine bump without injury, and metformin lactic acidosis in kidney and transporter polymorphism context - [[endocrine/diabetes]], [[renal/chronic-kidney-disease]].**
+## Turning metabolism up and down {#sec-induction}
+
+Metabolic enzymes are not fixed in amount or activity. Some drugs and other substances increase their synthesis; others block them. These two processes explain a large share of clinically important drug interactions.
+
+::: definition Enzyme induction and enzyme inhibition {#def-induce-inhibit}
+**Enzyme induction** is an increase in the amount of a metabolising enzyme, usually because the inducing substance activates a nuclear receptor (such as the pregnane X receptor) that increases transcription of the enzyme's gene. Because new protein has to be made, induction develops over several days to about two weeks, and wears off over a similar period after the inducer is stopped. Its effect is to lower the concentration and effect of drugs metabolised by the induced enzyme, or to increase the formation of active or toxic metabolites.
+
+Important inducers include rifampicin (the most powerful in common use), carbamazepine, phenytoin, phenobarbital, St John's wort, and some HIV drugs such as efavirenz. Tobacco smoke induces CYP1A2 through the aryl hydrocarbon receptor; the effect comes from the hydrocarbons in smoke, not from nicotine, so nicotine replacement does not maintain it.
+
+**Enzyme inhibition** is a reduction in enzyme activity, usually by competitive or irreversible binding of the inhibitor. It begins as soon as the inhibitor reaches sufficient concentration, typically within a day or two, and raises the concentration of drugs that depend on the inhibited enzyme. Important inhibitors include clarithromycin and erythromycin, azole antifungals (fluconazole, itraconazole, voriconazole), HIV protease inhibitors and their boosters ritonavir and cobicistat, grapefruit juice (intestinal CYP3A4), amiodarone, diltiazem and verapamil, and, for CYP2D6, fluoxetine and paroxetine.
 :::
 
-::: example The transplant clinic interaction {#ex-transplant}
-A renal transplant recipient on tacrolimus starts fluconazole for candidiasis; three days later creatinine is up, she is tremulous, and a week after that a different clinic restarts rifampicin for latent TB without telling anyone.
+The consequence of an interaction depends on the affected drug more than on the inhibitor or inducer. It is serious when the affected drug has a narrow therapeutic index, a steep concentration–effect relationship, and when one pathway carries most of its metabolism. Typical high-risk combinations are listed below; prescribers check every new combination against the BNF interactions resource or an equivalent.
+
+| Combination | Mechanism | Possible consequence |
+|---|---|---|
+| Simvastatin + clarithromycin or itraconazole | CYP3A4 inhibition | Myopathy and rhabdomyolysis |
+| Tacrolimus or ciclosporin + clarithromycin or azoles | CYP3A4 inhibition | Nephrotoxicity, neurotoxicity |
+| Warfarin + fluconazole, metronidazole or amiodarone | CYP2C9 inhibition (and others) | Raised INR, bleeding |
+| Combined hormonal contraceptive + rifampicin or carbamazepine | Induction | Contraceptive failure |
+| Clozapine and stopping smoking | Loss of CYP1A2 induction | Rising clozapine level, toxicity |
+| Azathioprine or mercaptopurine + allopurinol | Xanthine oxidase inhibition | Severe bone marrow suppression |
+
+::: example A transplant patient prescribed an antibiotic {#ex-transplant}
+A 52-year-old man of Pakistani heritage, who had a kidney transplant three years ago, takes tacrolimus, mycophenolate and prednisolone. His tacrolimus trough level has been stable in the target range. His GP prescribes clarithromycin for a chest infection. Five days later he feels shaky, has a headache, and his creatinine has risen from 110 to 180 µmol/L. Explain the mechanism, and what the correct approach would have been.
 ::: solution
-**Two-interactions-one-graft ([[#def-induce-inhibit]], [[immunology/transplant-tumour-immunology]]): the-inhibition-phase - fluconazole-inhibiting-CYP3A4-and-slightly-P-gp-raising-tacrolimus-levels-convulsively (the narrow therapeutic index meaning levels within days with correct trough timing, and the tremor-headache-hyperkalaemia-hypertension-creatinine triad that is toxicity, not rejection - short courses often managed with a temporary dose cut, plus the azole potency differences and voriconazole's own CYP2C19 pharmacogenetics - [[renal/acute-kidney-injury]]); the-induction-phase - rifampicin-as-PXR-agonist-reducing-tacrolimus-levels-toward-zero-over-days-to-weeks induction takes days but the latent-TB course runs months, and unreported co-prescribing loses grafts - the rifabutin with dose increase and close levels compromise, or non-rifamycin regimens discussed with specialists, the mild isoniazid inhibition contrast, and pyridoxine always for neuropathy risk groups - [[infectious-diseases/tuberculosis]]; the system repair - the shared-medication-list-that-both-clinics-see-and-the-transplant-coordinator-as-gatekeeper-and-the-pharmacy-interaction-alert-that-fires-on-prescribing-not-reading red-flag communication with name, time, place and teach-back, and latent-TB screening and treatment algorithms in immunosuppressed populations decided before, not during - [[clinical-skills/records-handover]], [[clinical-skills/patient-safety]]; and the clinical-numbers-habit - therapeutic drug monitoring literacy: which-drug-levels-to-take-when-trough-versus-random-and-what-to-do-with-a-rise (the tacrolimus-versus-ciclosporin-versus-sirolimus-profiles and the steroid-dose-effects-on-levels and the post-rejection-augmentation-protocol-consequences - [[clinical-skills/laboratory-tests]]).**
+Tacrolimus is metabolised mainly by CYP3A4 and CYP3A5 in the gut wall and liver, and is also a P-gp substrate. Clarithromycin is a potent inhibitor of CYP3A4 (and of P-gp). Within a day or two of starting it, the clearance of tacrolimus falls and its bioavailability rises, so concentrations climb towards a new, much higher steady state. Tacrolimus has a narrow therapeutic index: the tremor and headache are typical neurotoxicity, and the rise in creatinine is consistent with calcineurin-inhibitor nephrotoxicity.
+
+The safer approach is to avoid the interaction: choose an antibiotic that does not inhibit CYP3A4 (for example, depending on the infection and local guidance, amoxicillin or doxycycline), or, if a macrolide is essential, involve the transplant team so that the tacrolimus dose can be reduced and levels checked closely. Now, the tacrolimus level should be measured urgently, clarithromycin stopped or switched, and the transplant team contacted. Once clarithromycin is stopped, inhibition wears off over a few days and the dose may need to return to its previous level.
 :::
 :::
 
-::: example The polypharmacy clinic {#ex-polyclinic}
-A 68-year-old on fluvoxamine for OCD, started two weeks ago, now has palpitations and tremor; the medication list includes theophylline and tizanidine.
+::: example Clozapine and a quit attempt {#ex-clozapine-smoking}
+A 38-year-old woman with schizophrenia has been stable for two years on clozapine. She smokes 25 cigarettes a day. On admission to hospital for an elective operation she is unable to smoke and is given nicotine patches. On day five she becomes very drowsy and has a generalised seizure. Explain.
 ::: solution
-**CYP1A2-as-the-clue ([[#def-induce-inhibit]], [[#def-phase1]]): the pattern-recognition - fluvoxamine-as-potent-CYP1A2-and-2C19-and-some-3A4-inhibitor with theophylline's narrow index and toxicity symptoms - tremor, palpitations, nausea, insomnia, seizures - tizanidine hypotension and sedation if co-prescribed, clozapine levels tripling if that were the psychiatric drug, and the forbidden agomelatine and ramelteon combinations - check levels, hold or reduce, serial interpretation - [[psychiatry/anxiety-disorders]], [[respiratory/asthma-copd]]; the-smoking-variable - CYP1A2 induction by polycyclic aromatic hydrocarbons means hospital smoking cessation raises caffeine, clozapine and olanzapine levels within weeks - pre-admission smoking status as a vital sign, admission dose-reduction plans taught everywhere then breached everywhere, and vaping's unknown effect versus combustion - [[psychiatry/treatments-mental-health-law]], [[public-health/prevention-promotion]]; and the systematic-answer - interaction reconciliation by half-life, index width and monitoring availability, not by scare - keep if monitored versus switch versus stop, prescriber-pharmacist communication with teach-back, and the OTC, herbal and dietary history (caffeine, energy drinks, charred and grilled meats, cruciferous induction, and St John's wort's 3A4 induction and contraceptive-failure history) - [[pharmacology/patient-variation]], [[clinical-skills/history-taking]].**
+Clozapine is metabolised mainly by CYP1A2. Polycyclic aromatic hydrocarbons in tobacco smoke induce CYP1A2, so people who smoke need substantially higher clozapine doses to reach the same plasma concentration than people who do not. Her dose was set while the enzyme was induced.
+
+When she stopped smoking, the induction wore off over several days, CYP1A2 activity fell, and her clozapine concentration rose, in some cases to around double the previous level. Sedation and seizures are dose-related adverse effects of clozapine. Nicotine replacement does not prevent this because nicotine itself is not the inducer.
+
+The principle is to anticipate it: any change in smoking status (including switching to e-cigarettes, which do not induce CYP1A2) in a person taking clozapine should prompt monitoring of plasma levels and a planned dose reduction, guided by the mental health team. If the person later resumes smoking, levels fall and relapse becomes a risk ([[psychiatry/psychotic-disorders]]).
 :::
 :::
 
-::: example The jaundiced patient's medicines {#ex-liver-dose}
-A 55-year-old with alcoholic cirrhosis (Child-Pugh C) on diazepam for withdrawal prophylaxis, gabapentin, and omeprazole becomes progressively drowsy with asterixis; is this over-sedation, hepatic encephalopathy, or both?
+## Excretion {#sec-excretion}
+
+Drugs and their metabolites leave the body mainly in urine and bile. Volatile anaesthetics leave through the lungs, and small amounts of many drugs appear in sweat, saliva and breast milk.
+
+**Renal excretion** combines three processes along the nephron ([[renal/tubular-function]]).
+
+1. **Glomerular filtration.** Only unbound drug is filtered, at a rate equal to the glomerular filtration rate (GFR) multiplied by the unbound fraction. Large molecules such as heparin and most antibodies are not filtered.
+2. **Active tubular secretion** in the proximal tubule. Organic anion transporters (OATs) secrete acidic drugs such as penicillins, methotrexate and many diuretics; organic cation transporters (OCTs) secrete bases such as metformin. Secretion can remove even protein-bound drug, and its transporters are sites of interactions. Probenecid inhibits penicillin secretion and was once used deliberately to prolong penicillin levels; NSAIDs and proton pump inhibitors can reduce the secretion of methotrexate, raising its toxicity.
+3. **Passive tubular reabsorption.** As water is reabsorbed, the drug concentration in the tubule rises. Lipid-soluble, un-ionised drug diffuses back into the blood; polar or ionised drug stays in the urine. Urine pH changes the ionised fraction of weak acids and bases ([[pharmacology/absorption-distribution]]), which is the basis of urinary alkalinisation in salicylate poisoning.
+
+**Biliary excretion** removes larger, polar molecules, typically conjugates with a molecular weight above about 500. Some glucuronides excreted in bile are hydrolysed by gut bacteria, and the released drug is reabsorbed. This **enterohepatic circulation** prolongs the action of drugs such as mycophenolate and some oestrogens. Repeated doses of activated charcoal can interrupt it for a few drugs in poisoning.
+
+## Clearance and half-life {#sec-clearance}
+
+Elimination is best described by clearance. It is the single most important pharmacokinetic parameter for long-term dosing, because it determines the steady-state concentration produced by a given dose rate.
+
+::: theorem Clearance, elimination rate constant and half-life {#thm-clearance}
+**Clearance** (CL) is the volume of plasma from which drug is completely removed per unit time:
+
+$$
+CL = \frac{\text{rate of elimination}}{\text{plasma concentration}}.
+$$ {#eq-cl}
+
+Clearances by different organs add: $CL_{\text{total}} = CL_{\text{renal}} + CL_{\text{hepatic}} + \ldots$. When CL is constant (first-order elimination), the concentration after an intravenous bolus falls exponentially,
+
+$$
+C(t) = C_0\,e^{-kt}, \qquad k = \frac{CL}{V_d},
+$$ {#eq-decay}
+
+and the **elimination half-life**, the time for the concentration to halve, is
+
+$$
+t_{1/2} = \frac{\ln 2}{k} = \frac{0.693\,V_d}{CL}.
+$$ {#eq-thalf}
+:::
+
+::: proof
+The amount of drug in the body is $A = V_d\,C$. By the definition of clearance, the rate of elimination is $CL \cdot C$, so $\dfrac{dA}{dt} = -CL \cdot C$. Dividing by the constant $V_d$ gives $\dfrac{dC}{dt} = -\dfrac{CL}{V_d}\,C = -kC$. The solution of this first-order differential equation is $C(t) = C_0 e^{-kt}$. Setting $C = C_0/2$ gives $e^{-kt_{1/2}} = 1/2$, so $t_{1/2} = \ln 2/k = 0.693\,V_d/CL$.
+:::
+
+The last equation is worth reading carefully. Half-life is a *derived* quantity: it depends on both volume and clearance. A drug can have a long half-life because it is cleared slowly or because it is spread through a very large volume, and the two situations have different consequences. Amiodarone's half-life of weeks to months comes mainly from its enormous volume of distribution. In heart failure, the volume of distribution of some drugs falls while their clearance also falls, and the half-life can stay the same even though the steady-state concentration rises.
+
+After one half-life 50% of the drug remains, after two 25%, after three 12.5%, after four 6.25% and after five about 3%. For practical purposes a drug is considered eliminated after four to five half-lives. The same rule, approached from the other side, gives the time to reach steady state during regular dosing ([[pharmacology/dosing-principles]]).
+
+**Renal clearance** can be measured directly as $CL_R = (U \times \dot{V})/P$, where $U$ is the urine concentration, $\dot V$ the urine flow rate and $P$ the plasma concentration. Comparing it with the filtration clearance (unbound fraction × GFR) shows what the tubule is doing: a higher value means net secretion, a lower one net reabsorption.
+
+**Hepatic clearance** depends on hepatic blood flow $Q$ (about 1.5 L/min in an adult) and the fraction of drug removed in one pass through the liver, the **extraction ratio** $E$: $CL_H = Q \times E$.
+
+- **High-extraction drugs** ($E$ above about 0.7), such as propranolol, lidocaine, morphine and glyceryl trinitrate, are removed almost completely in one pass. Their clearance is limited by blood flow, so it falls in heart failure and shock. Their oral bioavailability is low and very sensitive to liver disease.
+- **Low-extraction drugs** ($E$ below about 0.3), such as warfarin, phenytoin, theophylline and diazepam, are removed slowly. Their clearance is limited by enzyme capacity and by protein binding, so it is changed by enzyme induction and inhibition but little by blood flow.
+
+::: example Half-life from volume and clearance {#ex-thalf}
+An illustrative drug has a volume of distribution of 42 L and a clearance of 6 L/h. (a) What is its elimination half-life? (b) After an intravenous dose produces a concentration of 8 mg/L, how long until it falls to 1 mg/L? (c) If renal impairment halves the clearance, what happens to the half-life?
 ::: solution
-**Liver-failure-sedation-two-ways ([[#def-phase2]], [[#def-induce-inhibit]], [[gastrointestinal/liver-disease]]): the pharmacokinetic arm - diazepam's oxidative clearance destroyed by cirrhosis with active desmethyldiazepam accumulating over days, the lorazepam-oxazepam-temepam glucuronide-only switch doctrine, gabapentin's clean renal handling but additive sedation, and omeprazole exposure rising in liver failure, usually irrelevant; the hypoalbuminaemia raising free fractions and third spacing diluting hydrophilic drugs. The pharmacodynamic arm - the cirrhotic brain's increased benzodiazepine-receptor sensitivity and GABAergic tone synergising with ammonia, benzodiazepines worsening minimal and overt encephalopathy, and the flumazenil diagnostic trap that precipitates seizures in dependent patients - [[pathology/cell-injury]]. And the ward-systems arm - symptom-triggered versus fixed reducing withdrawal dosing in liver disease with the guideline answer of oxazepam or lorazepam, thiamine before glucose, and magnesium, potassium and phosphate repletion - [[gastrointestinal/liver-disease]], [[psychiatry/substance-use]]; plus treating the encephalopathy - lactulose, rifaximin and the precipitant hunt for bleeding, infection, constipation and dehydration - while holding sedatives, with the medication review in the bundle and documentation of what each drug did, recorded at [[clinical-skills/records-handover]].**
+(a) $k = CL/V_d = 6/42 = 0.143$ per hour, and $t_{1/2} = 0.693 \times 42/6 \approx 4.9$ hours.
+
+(b) A fall from 8 to 1 mg/L is three halvings (8 → 4 → 2 → 1), so it takes $3 \times 4.9 \approx 14.6$ hours.
+
+(c) With CL = 3 L/h, $t_{1/2} = 0.693 \times 42/3 \approx 9.7$ hours: the half-life doubles. Both the time for a dose to wear off and the time to reach steady state double, and, at an unchanged dose rate, the steady-state concentration doubles too.
 :::
 :::
 
-::: example The herbal surprise {#ex-herbal}
-A renal transplant recipient who 'only' started St John's wort for low mood develops rising creatinine; separately her friend on sertraline takes the same herb and feels jittery and warm.
-::: solution
-**Two-herbs-two-mechanisms ([[#def-induce-inhibit]], [[#def-phase1]]): the rejection near-miss - St John's wort as a PXR and CAR agonist inducing CYP3A4 and P-glycoprotein across intestine, liver and kidney, collapsing tacrolimus levels; the ciclosporin rejection case-series heritage, the onset-in-days and offset-in-weeks taper with level rechecks, and the priority interaction list - garlic and ginkgo with antithrombotics, licorice causing mineralocorticoid hypertension and hypokalaemia, and the high-risk transplant, oncology and immunomodulatory polyherbals - [[immunology/transplant-tumour-immunology]], [[blood/haemostasis-bleeding]]. The serotonin load - St John's wort's own reuptake inhibition, mild MAO activity and CYP effects stacked, so sertraline plus herb produces agitation, tremor, sweating and diarrhoea; the differential with neuroleptic malignant syndrome, the toxicity grading, discontinuation, supportive care and cyproheptadine's evidence grade - [[psychiatry/mood-disorders]], [[emergency-critical-care/poisoning]]. And the consultation skill - asking about herbal and complementary products without judgement, the photograph-your-shelf approach, the 'natural does not mean inert' explanation that works, and steering patients from internet alarm toward curated resources - [[clinical-skills/history-taking]], [[clinical-skills/communication]].**
+## When elimination saturates {#sec-saturation}
+
+Clearance is constant only while the metabolising enzymes or transporters work well below their maximum capacity. Enzymes follow **Michaelis–Menten kinetics**: the rate of metabolism rises with concentration but levels off at a maximum.
+
+::: definition First-order and zero-order elimination {#def-orders}
+The rate of elimination by a saturable process is
+
+$$
+\text{rate} = \frac{V_{\max}\,C}{K_m + C},
+$$ {#eq-mm}
+
+where $V_{\max}$ is the maximum rate and $K_m$ the concentration at which the rate is half maximal.
+
+- When $C \ll K_m$, the rate is approximately $(V_{\max}/K_m)\,C$: proportional to concentration. This is **first-order** elimination, with constant clearance $V_{\max}/K_m$ and a constant half-life. Most drugs at therapeutic doses behave this way.
+- When $C \gg K_m$, the rate approaches $V_{\max}$: a constant amount is removed per unit time regardless of concentration. This is **zero-order** (saturation) elimination, and the drug no longer has a constant half-life.
 :::
+
+Ethanol is the standard example: alcohol dehydrogenase is saturated by quite small amounts of alcohol, so the blood alcohol concentration falls by roughly the same amount each hour. Phenytoin is the clinically critical one: its $K_m$ lies within the therapeutic range, so the relationship between dose and steady-state level curves upwards. Salicylates in overdose and theophylline at high concentrations also show saturation.
+
+::: widget plot
+f: V*x/(K+x); V*x/K; V+0*x
+x: 0, 30
+y: 0, 25
+sliders: V=10:2:20:1; K=4:1:20:1
+labels: \text{Michaelis–Menten (saturable)}; \text{first-order extrapolation}; V_{\max}
+caption: Illustrative elimination rate (mg/h) against plasma concentration (mg/L). At low concentrations the saturable curve follows the straight first-order line, so clearance $V_{\max}/K_m$ is constant. As concentration approaches and exceeds $K_m$, the rate levels off towards $V_{\max}$ (the horizontal line). Lower $K_m$ to see saturation begin within a typical therapeutic range, as it does for phenytoin.
+:::
+
+At steady state the dose rate $R$ equals the elimination rate, so $R = V_{\max} C_{ss}/(K_m + C_{ss})$, which rearranges to
+
+$$
+C_{ss} = \frac{K_m\,R}{V_{\max} - R}.
+$$ {#eq-css-mm}
+
+As $R$ approaches $V_{\max}$, $C_{ss}$ rises steeply, and if $R$ exceeds $V_{\max}$ there is no steady state: the drug simply accumulates.
+
+::: example Why phenytoin doses change in small steps {#ex-phenytoin}
+An adult has illustrative phenytoin parameters $V_{\max} = 500$ mg/day and $K_m = 4$ mg/L. Using [[#eq-mm]], what daily dose is needed to keep the steady-state level at 10 mg/L, and at 20 mg/L?
+::: solution
+At steady state the daily dose equals the elimination rate.
+
+- At 10 mg/L: $R = 500 \times 10/(4 + 10) \approx 357$ mg/day.
+- At 20 mg/L: $R = 500 \times 20/(4 + 20) \approx 417$ mg/day.
+
+A dose increase of only about 17% doubles the plasma level. With a drug that behaved by first-order kinetics, doubling the level would need double the dose. This is why phenytoin doses are adjusted in small increments, why levels are checked after each change (allowing longer than usual for steady state, because the effective half-life lengthens as concentration rises), and why a small interaction or a dose rounding error can cause toxicity. Individual $V_{\max}$ and $K_m$ vary widely, so actual dosing follows levels and specialist advice.
+:::
+:::
+
+::: warning Half-life is not a fixed property of the drug
+Students often learn a single half-life for each drug. In reality the half-life changes whenever clearance or volume changes: in renal or hepatic impairment, in heart failure, with enzyme induction or inhibition, with age, and, for saturable drugs, with the dose itself. A textbook half-life is a typical value in a healthy adult. Planning the timing of levels, the duration of monitoring after an overdose or the time needed to wash out a drug before switching to another should use the patient's likely half-life, not the textbook one.
 :::
 
 ::: quiz
-Rifampicin reducing the effect of a co-prescribed drug is best explained by:
-- [x] Induction of CYP3A4 and P-glycoprotein via nuclear receptor activation, taking days to develop and weeks to wear off
-- [ ] Competitive inhibition of the enzyme's active site
-- [ ] Increased plasma protein binding
-- [ ] Reduced renal blood flow
+A 74-year-old woman is stable on warfarin. She is started on a two-week course of rifampicin for a bone infection. Which pattern of INR change is most likely?
+- [ ] The INR rises within 24 hours and returns to baseline as soon as rifampicin stops
+- [x] The INR falls progressively over one to two weeks; after rifampicin stops, it rises again over the following weeks, so the warfarin dose needs reducing as the induction wears off
+- [ ] There is no change, because rifampicin does not affect CYP enzymes
+- [ ] The INR falls immediately because rifampicin displaces warfarin from albumin
 ::: solution
-**Rifampicin is the prototype inducer: it activates PXR/CAR nuclear receptors, increases transcription of CYP3A4, CYP2C-family and P-glycoprotein, so new enzyme must be synthesised - onset over days, offset over weeks as protein turns over. Inhibition is fast; induction is slow both ways ([[#def-induce-inhibit]]).**
+Rifampicin is a potent inducer of CYP2C9, CYP3A4 and other enzymes that metabolise warfarin. Induction needs new enzyme synthesis, so warfarin clearance rises over days to two weeks and the INR falls, usually needing large dose increases. After rifampicin is stopped, the extra enzyme is lost over a similar period, warfarin clearance falls, and the INR rises: if the increased dose is continued, bleeding is a risk. Both phases need frequent INR monitoring.
 :::
 :::
 
-::: widget plot
-f: 100*exp(-x); 100*(1-exp(-x/0.4)); 100*exp(-x/3); 30+70*(1-exp(-x/2)); 100*exp(-x/30)
-x: 0.01, 10
-y: 0, 105
-labels: \text{days after change},\ \text{percent effect on drug level}\text{inhibitor started (fast onset)};\ \text{level rising as inhibition completes};\ \text{induction started (slow)};\ \text{level falling over 1-2 weeks};\ \text{offset after stopping inducer (weeks)}
-caption: Speed of interactions ([[#def-induce-inhibit]]): inhibition acts within days, limited by enzyme turnover; induction is slow to start and slower to end because it requires gene transcription and protein synthesis - which is why rifampicin problems outlive the prescription and why stopping amiodarone takes weeks to unmask - [[pharmacology/adverse-reactions]], [[cardiovascular/arrhythmias]].
+::: history
+The modern study of drug metabolism began with Richard Tecwyn Williams, a Welsh biochemist whose book *Detoxication Mechanisms* (1947) classified the reactions into what became known as phase I and phase II. The enzymes responsible for most oxidations were identified in the late 1950s and early 1960s: Martin Klingenberg and David Garfinkel independently found an unusual carbon monoxide-binding pigment in liver microsomes in 1958, and Tsuneo Omura and Ryo Sato showed in 1962 that it was a haemoprotein, naming it cytochrome P450 after its absorption peak at 450 nm. Allan Conney's work in the 1950s and 1960s established that drugs and environmental chemicals could induce these enzymes. The importance of gut-wall metabolism was brought home by a chance finding: in 1989 David Bailey and colleagues in Canada, using grapefruit juice to mask the taste of alcohol in a study of the calcium channel blocker felodipine, found much higher drug levels than expected, and their report in 1991 opened the study of food–drug interactions through intestinal CYP3A4.
+:::
+
+::: summary
+- Metabolism converts lipid-soluble drugs into water-soluble products that can be excreted. Metabolites may be inactive, active, toxic, or (for prodrugs) the active drug itself.
+- Phase I reactions (oxidation, reduction, hydrolysis) are dominated by cytochrome P450 enzymes, especially CYP3A4, 2D6, 2C9, 2C19 and 1A2. Phase II reactions conjugate drugs with glucuronide, sulfate, acetyl, glutathione or methyl groups.
+- Enzyme induction (rifampicin, carbamazepine, phenytoin, St John's wort, tobacco smoke) develops and resolves over one to two weeks and lowers drug levels. Enzyme inhibition (clarithromycin, azoles, ritonavir, grapefruit, amiodarone) is rapid and raises them. Interactions matter most for narrow-index drugs.
+- The kidney excretes drugs by filtration of unbound drug, active secretion and passive reabsorption; bile excretes large conjugates, some of which undergo enterohepatic circulation.
+- Clearance relates elimination rate to concentration. With first-order elimination, $t_{1/2} = 0.693\,V_d/CL$, and about five half-lives remove a drug.
+- High-extraction drugs are flow-limited; low-extraction drugs are capacity-limited and sensitive to induction, inhibition and binding.
+- Saturable (Michaelis–Menten) elimination makes level rise disproportionately with dose, as with phenytoin and ethanol.
 :::
 
 ## Where this leads
 
-Genetic variation in these enzymes is developed in [[pharmacology/patient-variation]]; dosing consequences in [[pharmacology/dosing-principles]]; toxicity mechanisms in [[pharmacology/adverse-reactions]]; hepatic disease effects in [[gastrointestinal/liver-disease]].
-
-::: history
-**The study of drug metabolism grew from poison handling: the hippuric-acid and glucuronide conjugation work of the late nineteenth and early twentieth centuries, descending from the physiological chemistry school that first described benzoate plus glycine as the prototype conjugation - [[physiology/homeostasis-body-fluids]]; the-carcinogen-activation-paradox - the Millers' 1960s electrophilic-nucleophile hypothesis of carcinogenesis and Alexander Boyland's 1930s identification of 2-naphthylamine metabolites in urine, which married aniline-dye epidemiology to metabolite chemistry, with NAT2 acetylator status later shown to modify risk - [[pathology/environmental-pathology]], [[epidemiology-ebm/observational-studies]]; the P450 naming story - Klingenberg's 1958 carbon-monoxide complex absorption band that named a superfamily, the 1960s-70s solubilisation and purification by Omura and Sato, the Williams and Guengerich mechanistic era, and the genome-era catalogue of 57 human enzymes - [[cell-biochemistry/proteins-enzymes]]; the acetylator discovery as founding pharmacogenetics - the observation that some people eating histamine-rich fish had attacks while others did not, the isoniazid neuropathy split into slow and fast acetylators, and the birth of the word pharmacogenetics with Friedrich Vogel in 1959 - [[genetics/common-disease-genetics]], [[infectious-diseases/tuberculosis]]; and the modern-clinical-implementation-era - the-CPIC-and-DPWG-guideline-bodies-clopidogrel-CYP2C19-codeine-CYP2D6-abacavir-HLA-B-star-5701-warfarin-CYP2C9-VKORC1-with-preemptive-panel-testing-debates-testing-whom-and-acting-on-what-and-the-premarket-drug-interaction-study-industry-era (the cocktail-approach-probes-and-the-index-substrate-tables and the 2020s FDA guidance reform towards physiologically based modelling) - [[genetics/genomic-medicine]], [[pharmacology/drug-development-prescribing]].**
-:::
-
-::: summary
-- Phase one (CYP oxidations, esterases, flavin and amine oxidases, xanthine oxidase) functionalises molecules; phase two (glucuronidation, acetylation, sulfation, methylation, glutathione) conjugates them for excretion.
-- Toxic intermediates are a designed feature gone wrong: NAPQI, acyl halides and reactive quinones are detoxified by glutathione and protein adducts that can trigger idiosyncratic reactions.
-- Inhibition is fast and enzyme-turnover-limited; induction is slow both ways because it needs transcription via PXR, CAR and AhR - rifampicin and St John's wort outlive their prescriptions.
-- Genetic variation (CYP2D6, CYP2C19, CYP2C9, UGT1A1, NAT2, TPMT, DPYD) creates predictable dosing subgroups, from clopidogrel non-response to fluorouracil and thiopurine catastrophe.
-- Prodrugs need metabolism to work; active drugs can depend on metabolites (codeine-M6G via CYP2D6), so genetics can cause both failure and fatal excess.
-- Interaction triage depends on index width, monitoring availability and direction of effect - not on the scary word 'interaction' alone.
-:::
-
-::: exercise The interaction sorting office {level=2}
-Sort into inhibit, induce, or minimal/no effect, and give the clinical action: erythromycin, carbamazepine, ritonavir, fluconazole, smoking, omeprazole (at CYP1A2), grapefruit juice, cholestyramine, valproate.
-::: solution
-**Sorting-office-answers ([[#def-induce-inhibit]]): inhibitors - erythromycin at 3A4 with its QT and motilin side of the business, the clarithromycin-versus-azithromycin split, and the colchicine fatalities when combined with 3A4 and P-gp inhibition in renal impairment, a never-miss; ritonavir and cobicistat as intentional boosters with whole-cohort dose adjustments; fluconazole across 2C9, 2C19 and 3A4 with the warfarin, phenytoin and tacrolimus calls; and valproate inhibiting UGTs and epoxide hydrolase, hence halving lamotrigine clearance, with the opposite-direction carbapenem-valproate level collapse remembered. Inducers - carbamazepine at PXR and CAR with auto-induction and victim-and-master status; smoking at CYP1A2 for theophylline, clozapine, olanzapine and ramelteon with admission and discharge double adjustments; omeprazole as a 1A2 substrate with modest induction and minor clinical roles. And cholestyramine is not enzymatic but binding - separate mycophenolate, thyroid hormone, warfarin and levothyroxine by four hours. Clinical actions per item depend on index width: the citalopram QT dose caps with 3A4 inhibitors and the direct-oral-anticoagulant avoid-versus-caution-versus-fine stratification - [[cardiovascular/arrhythmias]], [[pharmacology/patient-variation]].**
-:::
-:::
-
-::: exercise Explain the theophylline story three ways {level=2}
-Explain why the same theophylline dose is now too much: (a) she stopped smoking in hospital; (b) ciprofloxacin was added; (c) she developed heart failure with liver congestion.
-::: solution
-**Three-way-theophylline-explanation ([[#def-induce-inhibit]], [[#def-phase1]], [[respiratory/asthma-copd]]): smoking cessation - CYP1A2 de-induction over days to weeks raising levels by up to 40 percent, with admission smoking-status algorithms and pre-emptive dose reduction, and levels as arbiters of vaping uncertainty - [[public-health/prevention-promotion]]; ciprofloxacin - CYP1A2 inhibition within days raising levels, with nausea, tremor, palpitations and seizures at the severe end; check levels at 48-72 hours, hold and reduce, and consider substituting the antibiotic against susceptibility - [[microbiology/antimicrobials]]; heart failure with congestion - reduced hepatic blood flow lowering clearance of a flow-sensitive drug, with fever and acute illness adding more; the decompensation dose yo-yo, intravenous aminophylline danger from the same story, and formulation switching in a narrow-index drug - [[cardiovascular/heart-failure]], [[pharmacology/dosing-principles]].**
-:::
-:::
-
-::: exercise Genotype the patient, dose the drug {level=2}
-A patient carries CYP2C19 loss-of-function homozygosity, CYP2D6 gene duplication, and UGT1A1*28 heterozygosity. Predict consequences for: clopidogrel, escitalopram, codeine, irinotecan, diazepam.
-::: solution
-**Genotype-to-prediction-drill ([[#def-phase2]], [[#def-phase1]]): clopidogrel - poor metaboliser, reduced active metabolite, higher stent thrombosis risk, so prasugrel or ticagrelor preferred, with the intermediate-phenotype discussion, PPI co-prescribing fine print and surgical timing - [[cardiovascular/coronary-artery-disease]]; escitalopram - CYP2C19 contributes to its clearance, so exposure rises in poor metabolisers with QT and hyponatraemia considerations and dose-cap advice versus side-effect-driven titration in practice, while multi-enzyme phenotypes like poor 2C19 plus ultrarapid 2D6 confound simple predictions - [[psychiatry/mood-disorders]]; codeine - CYP2D6 duplication means ultrarapid conversion to morphine and toxicity risk, contraindicated, while poor metabolisers get little from codeine and tramadol, with oxycodone less dependent and hydrocodone a partial version - [[surgery/anaesthesia-pain]]; irinotecan - UGT1A1*28 heterozygosity slows SN-38 glucuronidation, with neutropenia-avoidance protocols and ancestry differences in homozygote frequency; and diazepam - CYP2C19 contributes to its oxidation, exposure rises modestly with regular dosing, active metabolites accumulate and older adults are fragile - [[psychiatry/anxiety-disorders]], [[geriatrics-palliative/polypharmacy]].**
-:::
-:::
-
-::: exercise Audit a drug-interaction alert policy {level=3}
-Your e-prescribing system fires hundreds of interaction alerts daily with near-total override. Design an audit and redesign using clinical pharmacology reasoning.
-::: solution
-**Alert-overhaul ([[#def-induce-inhibit]], [[clinical-skills/patient-safety]]): the measurement - classify alerts by severity and evidence, collect override reason codes, and look for the dangerous misses, not just the noisy hits; the alert-burden burnout literature and override fatigue - [[emergency-critical-care/acute-assessment]]. Redesign principles - fire at prescribing, not buried in order sets, with the right role seeing the right alert (pharmacist before dispense, physician at order, nurse at administration), bundling dose and level checks instead of separate popups, alerting on interaction direction - inhibitor added to victim versus victim added alone - and suggesting alternatives rather than only prohibiting, with renal dosing calculators built in, azole-sparing antibiotic choices and anticoagulant stratification - [[microbiology/antimicrobials]]. Governance - a pharmacy-led committee keeping a graded local list (avoid, caution with monitoring, minimal), reviewed quarterly with serious-incident lessons fed back, including the tacrolimus and chemotherapy near-misses; outcome tracking of avoided reactions versus delayed-therapy harms; refusing to hide behind the popup; a culture where alerts open pharmacist conversations rather than blame; and counselling patients toward curated checkers given app quality variance - [[clinical-skills/laboratory-tests]], [[medical-ethics-law/professionalism-regulation]].**
-:::
-:::
+Clearance and volume are turned into dosing regimens, loading doses and drug monitoring in [[pharmacology/dosing-principles]]. Inherited differences in drug-metabolising enzymes, and the effect of age, pregnancy and organ failure, are covered in [[pharmacology/patient-variation]]. Interactions as a cause of harm are revisited in [[pharmacology/adverse-reactions]]. Liver and kidney physiology are in [[gastrointestinal/liver-function]] and [[renal/tubular-function]].
 
 ## Exercises
 
-::: exercise Assign the enzymes {level=1}
-For each drug name the dominant metabolising enzyme or pathway and one clinically relevant modulator: warfarin, clopidogrel, codeine, theophylline, diazepam, morphine, allopurinol's target (not metabolism), azathioprine.
+::: exercise Half-life from a rate constant {level=1 check="3"}
+A drug is eliminated by first-order kinetics with an elimination rate constant of 0.231 per hour. What is its half-life in hours, to the nearest whole number?
 ::: solution
-**Enzyme-assignment-drill ([[#def-phase1]], [[#def-phase2]]): warfarin - S-isomer-CYP2C9-with-the-star2-star3-variants-lowering-dose-requirements-and-VKORC1-promoter-variation-affecting-sensitivity the CYP2C9 and VKORC1 guideline dosing with modest trial benefit, and the amiodarone, metronidazole and azole dose cuts of 30-50 percent - [[blood/thrombosis-anticoagulation]]; clopidogrel - CYP2C19-loss-of-function-alleles-and-reduced-active-metabolite-with-asian-population-higher-LoF-frequency-and-the-prasugrel-ticagrelor-workarounds-and-the-2C19-also-drives-PPI-omeprazole-competition-question-resolved-modestly (the pantoprazole-as-lower-inhibition-option) - [[cardiovascular/coronary-artery-disease]]; codeine - CYP2D6 to morphine, with ultrarapid and poor metaboliser extremes, the post-tonsillectomy and breastfeeding deaths behind current contraindications, tramadol's similar trap, and buprenorphine's low CYP2D6 dependence as the safer opioid - [[psychiatry/substance-use]], [[surgery/anaesthesia-pain]]; theophylline - CYP1A2 with smoking induction and ciprofloxacin and fluvoxamine inhibition, and narrow-index level monitoring; diazepam - CYP2C19 and CYP3A4 oxidation then glucuronidation, with active metabolites accumulating in ageing and liver disease, hence the lorazepam-oxazepam-temepam glucuronide-only doctrine and the neonatal caution - [[psychiatry/anxiety-disorders]], [[geriatrics-palliative/polypharmacy]]; morphine - direct phase-two UGT2B7 glucuronidation with no oxidative burden, and the M6G renal-excretion warning; azathioprine - inactivated by TPMT and NUDT15 and oxidised by xanthine oxidase, hence the allopurinol rule of reducing the dose by about two-thirds or substituting, the TPMT and NUDT15 pre-treatment genotyping standards, and the myelosuppression lessons from compounding errors - [[immunology/transplant-tumour-immunology]], [[gastrointestinal/bowel-disease]]; and allopurinol itself - oxypurinol renal clearance, HLA-B*5801 and severe cutaneous reactions in Southern Chinese and Thai populations, with screening policies and cutaneous-reaction registry lessons - [[musculoskeletal/inflammatory-arthritis]].**
+$t_{1/2} = 0.693/0.231 \approx 3.0$ hours, so **3** hours.
 :::
 :::
 
-::: exercise Explain paracetamol in three levels {level=1}
-Explain to (a) a teenager, (b) a pharmacy student, (c) a liver-unit consultant, why a 'safe' tablet kills and how NAC works.
+::: exercise What is left after four half-lives? {level=1 check="6.25"}
+What percentage of a single intravenous dose remains in the body after four half-lives, assuming first-order elimination? Give the exact value.
 ::: solution
-**Paracetamol-at-three-depths ([[#def-phase1]], [[#def-phase2]]): teenager-version - your-liver-has-a-normal-route-and-an-emergency-route and the emergency-route-needs-an-antidote-ingredient-your-body-keeps-in-storage-that-two-days-of-not-eating-well-can-empty alcohol occupies the same enzymes and makes more of the bad intermediate - [[emergency-critical-care/poisoning]]; student-version - over ninety percent glucuronidation and sulfation, with CYP2E1 (plus 1A2 and 3A11 in rodents) generating NAPQI detoxified by glutathione until a critical threshold, then centrilobular necrosis - the zone-3 vulnerability explained by P450 density and oxygen tension the Rumack-Matthew treatment line as screening rather than oracle, the four-hour level with time-of-ingestion integrity, the interpretation difficulty in staggered overdoses, and the risk counselling for atypical presentations and NAC as cysteine donor, direct sulfur adduct and anti-inflammatory improving microcirculation in established injury, with the intravenous-versus-oral regimens, anaphylactoid flushing and protocols, the 21-hour course versus continuing in fulminant cases, and the King's College criteria for transplant referral; and consultant-version - the Vmax-Km saturation mathematics with safety-factor reassessments for low body weight, chronic alcohol use and fasting, the therapeutic-dose hepatotoxicity case series read critically, and CYP2E1 induction quantified from the halothane and isoniazid era, with 4-methylpyrazole and fomepizole competing with ethanol for the enzyme - [[gastrointestinal/liver-disease]], [[renal/acute-kidney-injury]].**
+$100 \times (1/2)^4 = 100/16 = 6.25\%$.
 :::
 :::
 
-::: exercise Sort the prodrugs {level=2}
-For each prodrug, state what activates it, what the active form does, and what patient factor could break activation: enalapril, clopidogrel, capecitabine, oseltamivir, levodopa, sulfasalazine, codeine.
+::: exercise Name the reaction {level=1}
+Classify each reaction as phase I or phase II and name the type: (a) codeine converted to morphine by CYP2D6; (b) morphine converted to morphine-3-glucuronide; (c) isoniazid converted to acetylisoniazid; (d) enalapril converted to enalaprilat; (e) azathioprine's metabolite mercaptopurine methylated by TPMT.
 ::: solution
-**Prodrug-clinic ([[#def-phase2]], [[#def-phase1]]): enalapril - esterase hydrolysis to enalaprilat reduced conversion in severe liver failure, and the ACE-inhibitor list taught correctly - lisinopril is not a prodrug, so it is spared the conversion problem - [[cardiovascular/heart-failure]]; clopidogrel - two-step-CYP2C19-oxidation-to-thiol-with-irreversible-P2Y12-binding and LoF-alleles-raising-stent-thrombosis-and-CABG-timing-withdrawal-rules (the genotype-versus-platelet-function-testing-versus-clinical-judgment-debate) - [[cardiovascular/coronary-artery-disease]], [[blood/thrombosis-anticoagulation]]; capecitabine three-step-enzymatic-conversion-to-5-FU-with-carboxylesterase-and-CDA-and-TKPh-and-DPYD-catabolism the DPYD genotypes behind severe fluorouracil toxicity, the pre-treatment testing and dose-reduction protocols, uracil phenotype testing, and leucovorin rescue for overdose - capecitabine's point being tumour-preferring activation, and the hand-foot versus continuous-infusion 5-FU profiles) - [[pathology/cancer-biology]], [[pharmacology/drug-development-prescribing]]; oseltamivir - robust hepatic esterase activation with renal excretion, so renal rather than hepatic function drives dosing - [[respiratory/respiratory-infections]], [[renal/chronic-kidney-disease]]; levodopa - peripheral-AADC-to-dopamine-cannot-cross-blood-brain-barrier-hence-carbidopa-and-entacapone-COMT-blockade-and-the-protein-transport-competition-with-large-meals and the gastroparesis-delayed-absorption-rescue-options (the duodopa-gel-and-intestinal-permeability-physiology) - [[nervous-system/movement-disorders]]; sulfasalazine - colonic bacterial azoreductase splitting it into salicylate plus sulfapyridine, with topical 5-ASA action in the bowel and sulfapyridine-vehicle side effects (oligospermia, haemolysis in G6PD deficiency, dose-related intolerance) explained by acetylator status, and the mesalazine, olsalazine and balsalazide design history - [[gastrointestinal/bowel-disease]], [[genetics/common-disease-genetics]] - [[gastrointestinal/bowel-disease]], [[genetics/common-disease-genetics]]; and codeine - CYP2D6 conversion to morphine, with the genotype bipolarity of analgesic failure versus toxicity, and the nortriptyline and desipramine CYP2D6 therapeutic windows - [[psychiatry/mood-disorders]].**
+(a) Phase I, oxidation (O-demethylation) by a cytochrome P450 enzyme. (b) Phase II, glucuronidation. (c) Phase II, acetylation by NAT2. (d) Phase I, hydrolysis by esterases (a prodrug activated). (e) Phase II, methylation.
 :::
 :::
 
-::: exercise Design a pharmacogenetic testing policy {level=3}
-Your hospital can pre-emptively genotype an inpatient panel. Choose genes, drugs, implementation and evidence appraisal for the policy.
+::: exercise Clearance from volume and half-life {level=2 check="4.9"}
+A drug has a volume of distribution of 70 L and a half-life of 10 hours. Calculate its clearance in L/h, to one decimal place.
+::: hint
+Rearrange [[#eq-thalf]]: $CL = 0.693\,V_d/t_{1/2}$.
+:::
 ::: solution
-**Panel-design ([[#def-phase1]], [[#def-phase2]], [[genetics/genomic-medicine]]): gene-drug-set-selection-by-evidence-and-harm (the CPIC-level-A-set-TPMT and NUDT15-thiopurines-DPYD-fluoropyrimidines-CYP2C19-clopidogrel-CYP2C9-warfarin-NSAIDs-CYP2D6-codeine-tamoxifen-via-CYP2D6-endoxifen-and-HLA-B-star-5701-abacavir-and-star-5801-allopurinol-and-HLA-A-star-3101-carbamazepine-in-southeast-asian-populations-with-serious-cutaneous-reactions and the UGT1A1-irinotecan-atazanavir-hyperbilirubinaemia-graded-role) - [[blood/lymphoma-myeloma]], [[infectious-diseases/hiv]], replace: keep: [[pharmacology/adverse-reactions]]; the-clinical-integration - the-result-in-the-record-as-actionable-alert-not-a-laboratory-tourist-attraction a same-day interpretation service with pharmacist and genetics counsellor, avoiding the variant-of-uncertain-significance flood, family implications for HLA and TPMT but not for pharmacogenetic results, and the consent and data-retention questions pre-emptive panels raise unexpectedly - [[genetics/genetic-testing]], [[medical-ethics-law/research-ethics]] - [[genetics/genetic-testing]], [[medical-ethics-law/research-ethics]]; and the-evidence-and-equity-critique - the randomised trials of pre-emptive and reactive testing - reading the clopidogrel, thiopurine and antidepressant trials for number-needed-to-screen versus harm prevented, checking that allele frequencies and recommendation strengths differ by ancestry, modelling implementation cost against avoided admissions, and the variant-annotation problem where European-biased panels miss non-European loss-of-function alleles - [[epidemiology-ebm/randomised-trials]], [[medical-ethics-law/justice-resources]], [[public-health/global-health]].**
+$CL = 0.693 \times 70/10 \approx 4.85$ L/h, which is **4.9** L/h to one decimal place (using $\ln 2 = 0.6931$, $CL = 4.852$ L/h).
+:::
+:::
+
+::: exercise What is the tubule doing? {level=2 check="50"}
+A drug that is not bound to plasma proteins has a plasma concentration of 2 mg/L. Urine collected over one hour has a volume of 0.1 L and a drug concentration of 60 mg/L. The patient's GFR is 100 mL/min. Calculate the renal clearance in mL/min, and state whether the drug undergoes net tubular secretion or net reabsorption.
+::: hint
+$CL_R = U\dot V/P$; convert L/h to mL/min.
+:::
+::: solution
+Excretion rate $= 60 \times 0.1 = 6$ mg/h. $CL_R = 6/2 = 3$ L/h $= 3000/60 =$ **50** mL/min. The filtration clearance of an unbound drug equals the GFR, 100 mL/min. Renal clearance is lower, so there is net tubular reabsorption, as expected for a fairly lipid-soluble drug. A clearance above 100 mL/min would have shown net secretion.
+:::
+:::
+
+::: exercise Starting and stopping an inducer {level=2}
+A 29-year-old woman with tuberculosis is to start a regimen containing rifampicin. She uses a combined oral contraceptive pill and takes no other medicines. Explain the interaction, its time course, and the contraceptive principle that follows. What happens when rifampicin is stopped?
+::: solution
+Rifampicin is a potent inducer of CYP3A4 and other enzymes that metabolise ethinylestradiol and progestogens. Over the first one to two weeks, clearance of both hormones rises and their concentrations fall, so the pill may fail to prevent ovulation. Because the effect is an increase in metabolism, it is not overcome reliably by doubling the pill.
+
+The principle, following Faculty of Sexual and Reproductive Healthcare guidance, is to use a contraceptive method that is not affected by enzyme inducers, such as a copper intrauterine device, a levonorgestrel intrauterine system or progestogen-only injection, during treatment. When rifampicin is stopped, induction persists until the extra enzyme is lost, so additional precautions are continued for 28 days after the last dose. Teratogenicity of other drugs, and the interaction of rifampicin with any future medicines, should also be considered.
+:::
+:::
+
+::: exercise A phenytoin dose increase {level=3 check="20"}
+A woman's phenytoin is metabolised with illustrative parameters $V_{\max} = 420$ mg/day and $K_m = 4$ mg/L. (a) What is her steady-state level on 300 mg/day? (b) What would it be on 350 mg/day? Give the answer to (b) in mg/L. (c) Comment on the result.
+::: hint
+Use [[#eq-css-mm]]: $C_{ss} = K_m R/(V_{\max} - R)$.
+:::
+::: solution
+(a) $C_{ss} = 4 \times 300/(420 - 300) = 1200/120 = 10$ mg/L.
+
+(b) $C_{ss} = 4 \times 350/(420 - 350) = 1400/70 =$ **20** mg/L.
+
+(c) A 17% dose increase has doubled the steady-state level, because the dose rate is approaching $V_{\max}$ and elimination is near saturation. A further increase to 420 mg/day would have no steady state at all. In practice, increases at this level are made in small steps, with levels checked once a new steady state is likely to have been reached, which takes longer at higher concentrations.
+:::
+:::
+
+::: exercise Gout treatment in a transplant patient {level=3}
+A 61-year-old man with a liver transplant takes azathioprine as part of his immunosuppression. He develops recurrent gout, and allopurinol is started at a standard dose. Three weeks later he presents with fever, mouth ulcers and a neutrophil count of 0.3 × 10⁹/L. Explain the mechanism of this interaction, using the metabolic pathways of azathioprine, and describe the principles of prevention.
+::: hint
+Think about what happens to mercaptopurine when one of its inactivating pathways is blocked.
+:::
+::: solution
+Azathioprine is a prodrug converted to mercaptopurine. Mercaptopurine has three competing fates: activation to cytotoxic thioguanine nucleotides (which cause both the therapeutic immunosuppression and bone marrow toxicity), inactivation by methylation via TPMT, and inactivation by oxidation via xanthine oxidase to thiouric acid.
+
+Allopurinol inhibits xanthine oxidase. With that inactivating route blocked, much more mercaptopurine is shunted into the active thioguanine nucleotide pathway. The effect is equivalent to a several-fold increase in the azathioprine dose, and severe myelosuppression results. His fever with neutropenia is a medical emergency (neutropenic sepsis).
+
+Prevention: the combination should be avoided or, where specialist teams decide it is necessary, the azathioprine dose is reduced substantially (often to about a quarter) with close blood count monitoring. Alternatives for gout prevention, such as a urate-lowering drug without this interaction, are considered with the transplant team. The case also illustrates a general rule: interactions are not only through cytochrome P450 enzymes, and any drug added to a narrow-index regimen should be checked.
 :::
 :::

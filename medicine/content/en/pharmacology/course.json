@@ -6,24 +6,25 @@
   "level": 1,
   "order": 80,
   "tagline": "How drugs act, how the body handles drugs, adverse effects and safe prescribing",
-  "summary": "Every treatment depends on understanding how drugs act and how the body handles them. This course covers receptors and pharmacodynamics, absorption, distribution, metabolism and excretion, the principles of dosing, drugs acting on the autonomic nervous system, adverse reactions and interactions, differences between patients, and how medicines are developed, regulated and prescribed safely.",
+  "summary": "Every treatment depends on understanding how drugs act and how the body handles them. This course covers drug targets and dose–response relationships, absorption, distribution, metabolism and excretion, the arithmetic of dosing and drug monitoring, drugs acting on the autonomic nervous system, adverse reactions and interactions, differences between patients, and how medicines are developed, regulated and prescribed safely.",
   "overview": [
-    "Pharmacology is the reason a prescription is an arithmetic as well as a decision. Every drug is a molecule with a target, a dose–response curve, a journey through absorption, distribution, metabolism and excretion, and a profile of effects — desired and otherwise — modified by the patient's genes, age, organs and other medicines. This course teaches that system so that prescribing, and the reading of a formulary, become predictable rather than memorised.",
-    "It starts with receptors: agonists, antagonists, potency and efficacy, the graded curves and spare-receptor logic behind clinical choices, and the signalling pathways drugs hijack. Pharmacokinetics follows in equations and in graphs — bioavailability, volume of distribution, clearance, half-life and the reasons steady state takes four or five half-lives, loading doses, first-order versus capacity-limited elimination, and the arithmetic of the dosing interval. Metabolism and excretion explain the interactions that fill emergency admissions: cytochrome P450 induction and inhibition, phase I and II reactions, renal clearance and dose adjustment. Dosing principles then apply it all: loading and maintenance, therapeutic drug monitoring, clearance-based adjustment and the interpretation of a drug level.",
-    "An autonomic-drugs chapter uses the divisions of the motor nervous system as a map of the major drug classes — cholinergic and adrenergic agonists and antagonists — because that system concentrates pharmacology's logic in one page. Adverse reactions, their classification and pharmacovigilance; patient variation through genetics (pharmacogenetics: TPMT, CYP2C19, CYP2D6, HLA types), age, pregnancy, disease and adherence; and a final chapter on drug development and prescribing — trials, licensing, post-marketing surveillance, antimicrobial and opioid stewardship, rational prescribing and the WHO-style list. Throughout, doses appear only as illustrative values; actual prescribing follows current formularies."
+    "Pharmacology explains why a medicine works, why it sometimes harms, and why the same dose can suit one person and endanger another. Two questions run through the course: what the drug does to the body (pharmacodynamics) and what the body does to the drug (pharmacokinetics). Answering them turns prescribing from memorising doses into reasoning from a small number of principles.",
+    "The course begins with drug targets, the law of mass action, agonists and antagonists, potency and efficacy, and the dose–response curves that underlie the therapeutic index. It then follows a dose through the body: crossing membranes, routes of administration and bioavailability, volume of distribution and protein binding, metabolism by cytochrome P450 and conjugating enzymes, renal and biliary excretion, clearance and half-life. These quantities are combined into loading and maintenance doses, the four-to-five half-life rule for steady state, therapeutic drug monitoring and dose adjustment in kidney disease, with worked calculations throughout.",
+    "The autonomic nervous system serves as a map for a large group of everyday drugs, from β-blockers and salbutamol to atropine, adrenaline and neuromuscular blockers. Later chapters cover adverse drug reactions, drug allergy and interactions; variation between patients through age, body size, organ function, pregnancy and genetics; and the path from drug discovery through clinical trials, licensing and cost-effectiveness appraisal to rational, safe prescribing and stewardship. Doses appear only as illustrative values; real prescribing follows a current formulary and local guidance."
   ],
   "prerequisites": [
     "physiology"
   ],
   "outcomes": [
-    "Define receptor concepts — agonist, partial agonist, antagonist, inverse agonist, efficacy and potency — and read graded and quantal dose–response curves, including the meaning of therapeutic index.",
-    "Explain the absorption, distribution, metabolism and excretion of drugs, and calculate and interpret bioavailability, volume of distribution, clearance, half-life and time to steady state.",
-    "Use the one- and two-compartment logic of concentration–time curves to design and adjust dosing regimens, including loading doses, maintenance intervals and therapeutic drug monitoring.",
-    "Describe cytochrome P450 and conjugation metabolism and predict the clinical consequences of enzyme induction and inhibition, and adjust for renal and hepatic impairment.",
-    "Explain the autonomic nervous system's transmitter and receptor physiology as the organising map of cholinergic and adrenergic drugs, and predict the effects and uses of each class.",
-    "Classify adverse drug reactions (A–F type), describe mechanisms of hypersensitivity and idiosyncrasy, and explain how spontaneous reporting, phase IV studies and signal detection work.",
-    "Account for individual variation in drug response — pharmacogenetics with named examples, age, pregnancy, disease states, adherence and interactions — and apply it to a prescribing decision.",
-    "Outline drug development from target to phase IV, the ethics and design of each phase, and the principles of rational, safe prescribing and stewardship."
+    "Explain how drugs act on receptors, ion channels, enzymes and transporters, and use occupancy, efficacy, potency and the dose ratio to interpret dose–response curves and antagonism.",
+    "Describe how drugs cross membranes and are absorbed by different routes, and calculate and interpret bioavailability, volume of distribution and the effects of ionisation and protein binding.",
+    "Explain phase I and phase II metabolism and renal and biliary excretion, and predict the consequences of enzyme induction and inhibition.",
+    "Calculate clearance, half-life, loading and maintenance doses and time to steady state, and recognise saturable (zero-order) elimination.",
+    "Interpret drug levels in therapeutic drug monitoring, including sample timing, steady state and protein binding, and adjust doses for kidney function.",
+    "Use the transmitters and receptors of the autonomic nervous system to predict the effects, uses and adverse effects of cholinergic, antimuscarinic, neuromuscular blocking and adrenergic drugs.",
+    "Classify adverse drug reactions, recognise severe hypersensitivity syndromes and important interactions, assess causality and explain pharmacovigilance and Yellow Card reporting.",
+    "Account for differences between patients due to age, body size, organ function, pregnancy, breastfeeding, genetic variation and adherence when choosing a medicine and dose.",
+    "Outline drug development from target to post-marketing surveillance, interpret trial results and cost-effectiveness, and apply the principles of rational prescribing, prescription safety and stewardship."
   ],
   "chapters": [
     {
@@ -95,106 +96,137 @@
   "history": [
     {
       "year": 1804,
-      "title": "A pure active principle",
-      "detail": "Friedrich Sertürner isolates morphine from opium, the first alkaloid obtained crystalline from a plant drug; pharmacology begins when the active molecule, rather than the herbal preparation, becomes the object of study — and with it a century of purifying digitalis, atropine and quinine.",
+      "title": "An active principle isolated",
+      "detail": "Friedrich Sertürner, a German pharmacist's assistant, begins isolating morphine from opium, the first alkaloid obtained from a plant drug. Studying a pure substance instead of a crude preparation made it possible to relate dose to effect.",
       "people": [
         "Friedrich Sertürner"
       ]
     },
     {
-      "year": 1878,
-      "title": "Curare teaches the synapse",
-      "detail": "Ray Langley's experiments with curare and nicotine on salivary glands lead him to a 'receptive substance' beside the muscle cell, distinct from the nerve itself — the receptor as a pharmacological entity, twenty-seven years before Dale's chemical transmission.",
+      "year": 1905,
+      "title": "A receptive substance",
+      "detail": "John Newport Langley, studying nicotine and curare on skeletal muscle, proposes a 'receptive substance' on muscle cells with which drugs combine. With Paul Ehrlich's side-chain theory, this becomes the receptor concept.",
       "people": [
-        "John Newport Langley"
-      ]
-    },
-    {
-      "year": 1908,
-      "title": "Side-chains and receptors",
-      "detail": "Paul Ehrlich receives the Nobel Prize for immunity work that embodies his side-chain theory: cells carry surface receptors that drugs and toxins bind like a lock and key, and disease can be treated by molecules chosen for their binding — the conceptual origin of receptor pharmacology and of the therapeutic-index idea that selectivity is everything.",
-      "people": [
+        "John Newport Langley",
         "Paul Ehrlich"
       ]
     },
     {
-      "year": 1937,
-      "title": "The magic bullet becomes a class",
-      "detail": "Domagk reports Prontosil's cure of streptococcal infection, and the Pasteur Laboratory's work shows the dye releases sulphanilamide in the body — the first systemic chemotherapeutic class. The same year, a sulphanilamide elixir dissolved in diethylene glycol kills over a hundred Americans, and the resulting public outrage passes the 1938 Food, Drug and Cosmetic Act: safety evidence becomes a legal requirement.",
+      "year": 1921,
+      "title": "Chemical transmission",
+      "detail": "Otto Loewi shows that stimulating the vagus nerve of a frog heart releases a substance that slows a second heart; it is later identified as acetylcholine. Loewi and Henry Dale share the 1936 Nobel Prize.",
       "people": [
-        "Gerhard Domagk",
-        "Daniel Bovet"
+        "Otto Loewi",
+        "Henry Dale"
       ]
     },
     {
-      "year": 1942,
-      "title": "Penicillin in patients",
-      "detail": "Florey, Chain and colleagues' MRC-supported trials prove penicillin cures human infection, and the US fermentation programme scales production; the antibiotic era also supplies pharmacology's first large-scale lesson in adverse reactions — allergic anaphylaxis — and in resistance.",
+      "year": 1937,
+      "title": "The sulfanilamide elixir",
+      "detail": "More than a hundred people in the United States die after taking sulfanilamide dissolved in diethylene glycol. The 1938 Federal Food, Drug, and Cosmetic Act requires evidence of safety before a medicine is marketed.",
+      "people": []
+    },
+    {
+      "year": 1948,
+      "title": "Alpha and beta receptors",
+      "detail": "Raymond Ahlquist proposes two types of adrenoceptor, α and β, from the order of potency of catecholamines on different tissues. The same year, the Medical Research Council's randomised trial of streptomycin, designed with Austin Bradford Hill, sets the standard for testing treatments.",
       "people": [
-        "Howard Florey",
-        "Ernst Boris Chain"
+        "Raymond Ahlquist",
+        "Austin Bradford Hill"
       ]
     },
     {
       "year": 1957,
-      "title": "Two drugs that changed regulation and psychiatry",
-      "detail": "Iproniazid's tuberculosis patients grow cheerful — antidepressant action is discovered by accident, and the monoamine hypothesis of mood disorders follows; meanwhile thalidomide is withdrawn as evidence of phocomelia mounts, and the 1962 Kefauver–Harris amendments require proof of efficacy and safety, founding modern clinical-trial regulation and reproductive-safety testing.",
+      "title": "Pharmacogenetics proposed",
+      "detail": "Arno Motulsky argues that inherited differences in enzymes explain some unexpected drug reactions, after the discovery of G6PD deficiency and plasma cholinesterase variants. Friedrich Vogel names the field pharmacogenetics in 1959.",
       "people": [
-        "Nathan Kline"
+        "Arno Motulsky",
+        "Friedrich Vogel"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "Thalidomide",
+      "detail": "William McBride and Widukind Lenz link thalidomide to severe limb malformations, and the drug is withdrawn. The disaster leads to the US Kefauver–Harris amendments of 1962 and, in the UK, to the Committee on Safety of Drugs and its Yellow Card scheme in 1964.",
+      "people": [
+        "William McBride",
+        "Widukind Lenz",
+        "Frances Kelsey"
       ]
     },
     {
       "year": 1964,
-      "title": "Rational drug design",
-      "detail": "James Black, working from histamine physiology, develops propranolol — the first beta-blocker and a template for receptor-directed drug design — and later cimetidine, the first anti-ulcer drug designed from a receptor; both earn him the 1988 Nobel Prize.",
+      "title": "Designing a β-blocker",
+      "detail": "James Black's propranolol, designed from Ahlquist's receptor theory, enters clinical use in the mid-1960s; Black later designs the H₂ antagonist cimetidine and shares the 1988 Nobel Prize in Physiology or Medicine.",
       "people": [
         "James Black"
       ]
     },
     {
-      "year": 1978,
-      "title": "Pharmacokinetics at the bedside",
-      "detail": "Routine serum-level measurement of aminoglycosides, phenytoin, lithium and theobromine-derived agents turns clearance, half-life and steady state from physiology texts into daily ward arithmetic, and therapeutic drug monitoring becomes a named discipline.",
+      "year": 1976,
+      "title": "Dosing by kidney function",
+      "detail": "Donald Cockcroft and Henry Gault publish an equation for estimating creatinine clearance from serum creatinine, age and weight; it remains part of drug licensing and dose adjustment.",
+      "people": [
+        "Donald Cockcroft",
+        "Henry Gault"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "TGN1412",
+      "detail": "Six healthy volunteers in London develop life-threatening cytokine release after the first human doses of an immunostimulatory antibody. The review that follows changes how first-in-human doses of high-risk medicines are chosen, using the minimal anticipated biological effect level.",
       "people": []
-    },
-    {
-      "year": 1957,
-      "title": "The idea of pharmacogenetics",
-      "detail": "Abram Motulsky, in a Lancet essay, argues that inherited variation in enzyme activity explains why patients respond unpredictably to the same drug dose — before most of the examples were known; the thiopurine-methyltransferase work of the 1980s, and today's CYP2C19, CYP2D6, HLA and warfarin dosing guidance, vindicate the idea.",
-      "people": [
-        "Abram Motulsky"
-      ]
-    },
-    {
-      "year": 2012,
-      "title": "Checkpoint and targeted eras",
-      "detail": "Imatinib, trastuzumab and then checkpoint inhibitors prove that drugs designed against a molecular target can outperform empirical cytotoxics, converting pharmacology's receptor–target logic into cancer practice and making tumour molecular profiling part of prescribing.",
-      "people": [
-        "Brian Druker"
-      ]
     }
   ],
   "references": [
     {
-      "title": "The Pharmacology Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the drug and the molecule.",
+      "title": "Rang and Dale's Pharmacology (9th edition)",
+      "authors": "Ritter JM, Flower RJ, Henderson G, Loke YK, MacEwan D, Rang HP",
+      "year": 2019,
+      "note": "Standard UK textbook of pharmacology, covering receptor theory, pharmacokinetics and drugs by system.",
       "slug": "ref1"
     },
     {
-      "title": "The Pharmacology Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the drug and the system.",
+      "title": "Clinical Pharmacology (11th edition)",
+      "authors": "Bennett PN, Brown MJ, Sharma P",
+      "year": 2012,
+      "note": "Clinically oriented text on prescribing, pharmacokinetics, adverse reactions and therapeutics.",
       "slug": "ref2"
     },
     {
-      "title": "Clinical Pharmacology",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the molecule and the practice.",
+      "title": "Goodman & Gilman's The Pharmacological Basis of Therapeutics (14th edition)",
+      "authors": "Brunton LL, Knollmann BC (eds)",
+      "year": 2023,
+      "note": "Comprehensive reference on drug mechanisms, pharmacokinetics and therapeutic use.",
       "slug": "ref3"
+    },
+    {
+      "title": "Clinical Pharmacokinetics and Pharmacodynamics: Concepts and Applications (4th edition)",
+      "authors": "Rowland M, Tozer TN",
+      "year": 2011,
+      "note": "The standard account of clearance, volume, half-life, dosing regimens and drug monitoring.",
+      "slug": "ref4"
+    },
+    {
+      "title": "British National Formulary (BNF)",
+      "authors": "Joint Formulary Committee",
+      "year": 2026,
+      "note": "UK reference for indications, doses, cautions, interactions and monitoring; continuously updated online.",
+      "slug": "ref5"
+    },
+    {
+      "title": "Guide to Good Prescribing: A Practical Manual",
+      "authors": "de Vries TPGM, Henning RH, Hogerzeil HV, Fresle DA (World Health Organization)",
+      "year": 1994,
+      "note": "The WHO six-step approach to rational prescribing used in this course.",
+      "slug": "ref6"
+    },
+    {
+      "title": "Meyler's Side Effects of Drugs (16th edition)",
+      "authors": "Aronson JK (ed)",
+      "year": 2016,
+      "note": "Encyclopaedic reference on adverse drug reactions and interactions.",
+      "slug": "ref7"
     }
   ],
   "next": [

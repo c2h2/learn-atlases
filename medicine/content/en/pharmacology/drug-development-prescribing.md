@@ -1,141 +1,280 @@
-Before a drug reaches a prescription it survives a decade-long argument with evidence. **Development runs from target discovery through phase I safety, phase II dose-finding, phase III confirmatory trials, regulatory review and post-marketing surveillance; prescribing is the public end of that process, where formulary systems, guidelines, cost-effectiveness and human behaviour decide whether good evidence becomes good treatment.** Understanding the pipeline explains why drugs carry the labels they do, why some safe-seeming medicines vanish, and why 'the evidence' is a staged argument rather than a verdict.
+A new medicine reaches a patient at the end of a long process. Typically more than ten years separate the first identification of a target from a licensed product, and most candidate drugs that enter human trials never reach the market. Along the way, the medicine's benefit and harm are measured in laboratory systems, in animals, in healthy volunteers and in patients; regulators decide whether it can be sold; health technology bodies decide whether it is worth paying for; and, finally, a prescriber decides whether it is right for one particular person.
 
-## From molecule to licence
+This chapter follows that path. It describes drug discovery and preclinical testing, the phases of clinical trials, licensing and post-marketing surveillance, and the appraisal of cost-effectiveness. It then turns to the prescriber's part: choosing a medicine rationally, writing a safe prescription, recognising common errors, and the stewardship of antimicrobials and opioids. Earlier chapters described how drugs act and how they cause harm; this one describes how the evidence about them is gathered and used.
 
-::: definition Discovery and early development {#def-discovery}
-**Target-to-lead: disease-mechanism research proposes a target, screening campaigns (now largely high-throughput and in-silico) find starting chemistry, and medicinal chemistry optimises potency, selectivity, solubility, and metabolic stability while toxicology flags organ liabilities early (the hERG potassium-channel assay for QT risk, the genotox battery, the safety-pharmacology core, and the hepatotoxicity signals that kill more candidates than efficacy failures - the attrition statistics roughly ten thousand compounds to one approved drug, with the anti-fungal-and-chemotherapy-selectivity exceptions proving the rule that some targets are druggable and some are not) - [[pathology/cancer-biology]], [[pharmacology/drug-receptor]]; first-in-human: phase I studies in a small number of healthy volunteers (oncology studies use patients, because of toxicity) establish safety, tolerability, pharmacokinetics and the first, timid pharmacodynamic signals - the maximum-tolerated-dose culture of cytotoxics versus the dose-exposure-response of modern agents, the sentinel-dosing and cohort-escalation designs with their ethical safeguards, and the biomarker end-points (receptor occupancy on PET, target inhibition in blood) that let small studies say something; then phase IIa proof-of-concept in patients and phase IIb dose-ranging (the model-informed dose selection now expected, the placebo-response inflation problem that will humble every later read-out, and the futility designs that abandon promising drugs early - [[pharmacology/dosing-principles]], [[epidemiology-ebm/randomised-trials]]); the special pathways that bend the timeline for unmet need - accelerated and conditional approval on surrogate endpoints (the HIV protease-inhibitor revolution that invented accelerated approval, the oncology response-rate and immunotherapy era and the confirmatory-trial failures that produced the withdrawal mechanism, the rare-disease orphan framework with its small-population licence-to-learn trade), the repurposing route where old safety data shortcut development (the thalidomide and sildenafil careers, the aspirin-long-tail and the colchicine's modern cardiology reappearance) - [[infectious-diseases/hiv]], [[pathology/cancer-diagnosis]], [[cardiovascular/coronary-artery-disease]]; and the pre-approval economics that shape everything after - patent cliffs and evergreening, the trial-size-and-duration choices made against the projected loss of exclusivity, the placebo-comparator choices where an active comparator would be harder science and the population selection (exclusion criteria) that makes trials cleaner and practice messier - [[public-health/health-systems-economics]].**
+## From target to candidate {#sec-discovery}
+
+::: definition Drug discovery and preclinical development {#def-discovery}
+**Drug discovery** is the identification of a molecule likely to change a disease process safely. It usually proceeds through:
+
+1. **target identification and validation**: choosing a receptor, enzyme, transporter or other molecule whose modification should help, with evidence from biology, genetics or existing drugs;
+2. **hit finding**: screening large libraries of compounds, designing molecules from the target's structure, or, for **biological medicines** such as monoclonal antibodies, generating proteins that bind the target;
+3. **lead optimisation**: modifying chemical structure to improve potency, selectivity and pharmacokinetic properties, and to remove toxicity.
+
+**Preclinical development** tests the candidate before it is given to humans: pharmacology in cells and animals, pharmacokinetics, safety pharmacology (effects on heart rhythm, breathing and the nervous system), general toxicology after repeated doses in at least two species, genotoxicity, and, at the appropriate stage, reproductive toxicity and carcinogenicity. These studies identify target organs of toxicity and doses without adverse effects, which are used to choose a safe starting dose in humans.
 :::
 
-## Approval and after
+Animal studies predict many human toxicities but not all, because species differ in receptors, metabolism and immune function. This limitation was shown starkly in 2006, when six healthy volunteers in London received the first human doses of TGN1412, a monoclonal antibody designed to stimulate a subset of T cells. Within hours all six developed a severe cytokine release syndrome with multi-organ failure. The starting dose had been calculated from animal toxicology in the usual way, but the antibody acted much more powerfully on human cells. The review that followed recommended that, for high-risk agents, first-in-human doses should be based on the **minimal anticipated biological effect level** (MABEL), that volunteers should be dosed one at a time with an interval between them, and that such trials should take place where intensive care is available.
 
-::: definition Trials, regulators and surveillance {#def-licensing}
-**Phase III is the licence-making trial: randomised, controlled, often international, powered for outcomes that matter to regulators (death, infarct, progression) rather than surrogates that matter to physiologists, with the pre-registered analysis plans and the duplicate-trial requirement traditions and their modern exceptions; the reading skills are the critical-appraisal chapter's - absolute effects, time-to-event curves and their proportional-hazards assumptions, the composite endpoints where one component drives everything, non-inferiority margins set politely wide, and the between-trial comparisons forbidden for good reasons - [[epidemiology-ebm/randomised-trials]], [[epidemiology-ebm/statistics-for-clinicians]], [[epidemiology-ebm/critical-appraisal]]; regulation: the agencies (FDA, EMA and national bodies like the UK's MHRA post-Brexit) review the dossier, inspect sites and manufacturing, label the product, and attach risk-minimisation measures where needed (the pregnancy-prevention programmes, the monitoring registries, the educational duties - thalidomide and isotretinoin and valproate as the architecture's hard-won ancestors), with conditional approvals and rolling reviews (the pandemic-era mechanism and its evidence-speed-versus-evidence-depth argument) and the international harmonisation attempts (ICH guidelines) making data shared but markets still political - [[obstetrics-gynaecology/pregnancy-complications]], [[pharmacology/adverse-reactions]]; post-marketing: phase IV commitments, the spontaneous-reporting signal machinery, the large pragmatic safety trials and the registry and linkage studies that measure the things trials excluded (the rofecoxib withdrawal, the hormone-therapy re-reading, the drug-drug-interaction discoveries in populations too comorbid for phase III) - the honesty that licensing is the start of the evidence curve, not the end - [[epidemiology-ebm/observational-studies]], [[clinical-skills/patient-safety]]; and the black boxes and warnings as a communication genre - read them as incidence-and-severity statements with provenance (the case-series, the trial signal, the class effect), knowing some are withdrawn after better data (the antipsychotic-dementia mortality nuancing and the SSRI-under-25 suicidality debate that changed consent practice forever) - [[psychiatry/psychotic-disorders]], [[psychiatry/mood-disorders]].**
+## Clinical trials {#sec-trials}
+
+::: definition Phases of clinical development {#def-phases}
+- **Phase I**: first use in humans, usually in small numbers (tens) of healthy volunteers, or in patients for toxic drugs such as anticancer agents. Aims: safety, tolerability, pharmacokinetics and an appropriate dose range, with single then multiple ascending doses.
+- **Phase II**: tens to a few hundred patients with the target condition. Aims: evidence of activity, dose–response, and further safety data, to decide whether a large trial is justified.
+- **Phase III**: hundreds to thousands of patients in randomised controlled trials, comparing the drug with placebo or standard treatment on clinically important outcomes. Phase III results usually form the main evidence for a licence.
+- **Phase IV**: studies after marketing, including surveillance for rare and long-term adverse effects, studies in groups excluded from trials, and comparisons with other treatments.
+
+Some programmes also include an exploratory **phase 0** (microdosing) study, giving tiny, non-therapeutic doses to study pharmacokinetics early.
 :::
 
-## Prescribing as a system
+The design features that make trials trustworthy are covered in [[epidemiology-ebm/randomised-trials]]. In brief: **randomisation** distributes known and unknown prognostic factors evenly between groups; **allocation concealment** and **blinding** prevent the expectations of participants and investigators from influencing results; a pre-specified **primary outcome** limits selective reporting; and analysis by **intention to treat** preserves the benefits of randomisation. Trials may test whether a drug is better than a comparator (**superiority**) or whether it is not worse by more than a pre-specified margin (**non-inferiority**), which is used when a new drug offers other advantages such as fewer side effects or simpler dosing.
 
-::: definition Formulary, guideline and cost-effectiveness {#def-formulary}
-**Access is pharmacology with economics: national and hospital formularies decide which effective drugs are available at what stage (the WHO model list and the essential-medicines concept as global policy, the hospital trust's contract and the antimicrobial stewardship tiers - restrict, reserve, pre-emptive-review) while appraisal bodies price the increment - NICE's technology appraisals with the quality-adjusted-life-year thresholds (the QALY arithmetic of benefit times utility over time, the end-of-life and highly-special-targeted modifications and their consistency arguments, the ICER-plus-equity debate), the WHO and comparators elsewhere (CADTH, G-BA, PBAC) all asking how much extra benefit per extra pound and who decides the acceptable rate - [[public-health/health-systems-economics]], [[infectious-diseases/stewardship-outbreaks]]; guidelines translate trials into practice with graded evidence (the GRADE language of certainty and strength, the discordance between societies and agencies that prescribers navigate, and the living-review systems that update during evidence waves), while the implementation gap is behavioural science - the audit-and-feedback, the order-set defaults, the pharmacist and nurse protocols, the formulary nudges and the opinion-leader effect that still moves prescribing more than most evidence - [[epidemiology-ebm/systematic-reviews]], [[clinical-skills/records-handover]]; the antimicrobial and oncology case studies in access: new antibiotics face broken economics (few sales, resistance-driven restraint - the push-pull and subscription pilots like the CARB-X and AMR UK models) so the pipeline is thin despite the need, while oncology's conditional approvals and confidential discounts make appraisal unusually contested (the survival-gain-versus-cost transparency argument) - [[microbiology/antimicrobials]], [[pathology/cancer-biology]]; and prescribing itself as a clinical skill with failure modes - the indication-and-goal agreement first, the drug-and-dose individualisation from the previous chapter, the review-date-and-stop-rule written in, the deprescribing duty alongside the prescribing duty, and the generic-substitution-and-biosimilar-switching governance (the interchangeability rules, the traceability of biologics by brand and batch and the nocebo management that decides whether a saving is realised or a trust is lost) - [[clinical-skills/communication]], [[immunology/vaccines-immunotherapy]].**
+The ethics of research involving people, including consent, independent ethical review and the Declaration of Helsinki, are covered in [[medical-ethics-law/research-ethics]]. Trials must be registered before they start and their results reported whether positive or negative; unpublished negative trials bias the evidence that prescribers rely on.
+
+Trial size governs what a trial can detect. A trial too small to detect a clinically important difference is unlikely to be informative, and a trial cannot rule out rare adverse effects at all. The figure illustrates power.
+
+::: widget hypothesis
+test: z
+tail: two
+alpha: 0.05
+effect: 0.3
+n: 50
+caption: Sampling distributions under the null hypothesis (no difference) and the alternative (a true standardised effect of 0.3). Increase $n$ and watch the power, the probability of detecting the effect, rise. Halve the effect size and see how many more participants are needed for the same power. Trials of drugs with small effects on hard outcomes, such as cardiovascular events, therefore need thousands of participants.
 :::
 
-::: example Reading a trial for the formulary meeting {#ex-formulary-read}
-A new oral anticoagulant presents a phase III showing 25 percent relative reduction in stroke versus warfarin with well-controlled INRs, more gastrointestinal bleeds, and an 'all-cause mortality neutral' line; your hospital buys dabigatran already and costs differ.
+### Reading a trial result
+
+Trial results are often reported as relative effects, which sound larger than absolute effects. Both matter, and the absolute difference is what a prescriber and patient need to make a decision.
+
+::: example Relative and absolute benefit {#ex-formulary-read}
+A three-year trial in people with a high cardiovascular risk compares a new lipid-lowering drug with placebo, both added to a statin. The primary outcome (cardiovascular death, myocardial infarction or stroke) occurs in 10% of the placebo group and 8% of the new-drug group. Calculate the relative risk reduction, absolute risk reduction and number needed to treat, and explain what else would be needed before adding the drug to a local formulary.
 ::: solution
-**Appraisal-literacy-in-practice ([[#def-formulary]], [[epidemiology-ebm/critical-appraisal]], [[blood/thrombosis-anticoagulation]]): the effect decomposition - 25 percent relative on what baseline (the absolute risk difference over the trial years, the number-needed-to-treat against the harm's number-needed-to-harm, and whether the composite hides which component moved - haemorrhagic-stroke reduction driving benefit while ischaemic stays flat is a different medicine than the headline) and whether the warfarin arm's time-in-therapeutic-range (if mediocre, the comparator is a straw man; if excellent, as labelled, the incremental claim narrows to convenience and some safety margins); the bleed arithmetic - GI-bleed excess read against your population's age and Helicobacter-and-PPI practice, the reversibility-with-agents question updated since early labels, and the adherence-and-monitoring trade (no INRs versus renal-function surveillance and the interaction-table differences among agents, with the antiphospholipid-syndrome exception that keeps warfarin mandatory) - [[renal/chronic-kidney-disease]], [[gastrointestinal/oesophagus-stomach]]; the comparative-effectiveness honesty - cross-trial comparison with your existing agent is hypothesis only, so the decision leans on price, contracting, monitoring infrastructure and the patient-preference evidence (shared-decision studies showing people weigh needle-and-bloods avoidance heavily), plus the switching-and-crossover safety of mass substitution (the nocebo and comprehension risks under-managed); and the governance answer - appraise on absolute benefit in your population, contract for the best price across the class rather than ban within it, publish the monitoring pathway, and schedule the review when the next trial wave lands - [[public-health/health-systems-economics]], [[clinical-skills/patient-safety]].**
+- Relative risk $= 0.08/0.10 = 0.8$, so the **relative risk reduction** is 20%.
+- **Absolute risk reduction** $= 10\% - 8\% = 2\%$ over three years.
+- **Number needed to treat** $= 1/0.02 = 50$: fifty people must take the drug for three years to prevent one event.
+
+A formulary committee would also ask: Was the trial well conducted (randomisation, blinding, follow-up, intention-to-treat analysis)? Was the outcome clinically important, and were the patients similar to local patients? What adverse effects occurred, and what is the number needed to harm? What are the alternatives and how does the drug compare with them? What does it cost, and has NICE appraised it? The answer to "does it work?" is only the first of these questions ([[epidemiology-ebm/critical-appraisal]]).
 :::
 :::
 
-::: example The withdrawn drug's patients {#ex-withdrawal}
-Rofecoxib-era lesson in 2025: your hospital's rapid-access clinic used a now-restricted drug heavily; patients ask whether they were 'used as guinea pigs' while a new agent's trial is criticised for recruiting from your trust.
+## Licensing, regulation and surveillance {#sec-licensing}
+
+::: definition Marketing authorisation, appraisal and pharmacovigilance {#def-licensing}
+A **marketing authorisation** (licence) permits a company to sell a medicine for specified indications, doses, routes and populations, set out in the **summary of product characteristics** (SmPC). It is granted by a regulator after assessing quality, safety and efficacy: in the UK the **Medicines and Healthcare products Regulatory Agency** (MHRA); in the EU the European Medicines Agency with the European Commission; in the US the Food and Drug Administration. Regulators can grant **conditional** authorisations on less complete evidence for serious conditions with unmet need, with obligations to provide further data.
+
+A licence says a medicine may be sold, not that the NHS should pay for it. In England, **NICE technology appraisals** assess clinical and cost-effectiveness. NHS bodies must fund medicines recommended in a technology appraisal, usually within three months.
+
+**Post-marketing surveillance** continues throughout a medicine's life: spontaneous reporting (the Yellow Card scheme), the black triangle (▼) for intensive monitoring of new medicines, periodic safety reports from manufacturers, and pharmacoepidemiological studies. Regulators can change the SmPC, add warnings, restrict use or withdraw a licence ([[pharmacology/adverse-reactions]]).
+:::
+
+Cost-effectiveness is measured in **quality-adjusted life years** (QALYs), which combine length of life with its quality (one QALY is a year in full health). The **incremental cost-effectiveness ratio** (ICER) is the extra cost of a new treatment divided by the extra QALYs it produces compared with the current one:
+
+$$
+\text{ICER} = \frac{\text{Cost}_{\text{new}} - \text{Cost}_{\text{current}}}{\text{QALYs}_{\text{new}} - \text{QALYs}_{\text{current}}}.
+$$ {#eq-icer}
+
+NICE compares the ICER with a threshold range. For many years this was £20,000 to £30,000 per QALY. Following a government decision announced in December 2025, the standard range for technology appraisals became £25,000 to £35,000 per QALY from April 2026; different arrangements apply to highly specialised technologies, and a severity modifier can give greater weight to QALYs for the most severe conditions. These figures are policy choices and may change again, so current NICE methods should be checked. The underlying logic is that money spent on one treatment is not available for others: the threshold represents an estimate of the health that would otherwise be produced ([[public-health/health-systems-economics]]).
+
+::: example Is it cost-effective? {#ex-icer}
+A new treatment for a chronic lung disease costs £30,000 more per patient over a lifetime than current care, and produces an average gain of 1.2 QALYs. Calculate the ICER and comment on it against the NICE threshold range in use from April 2026.
 ::: solution
-**Post-market harm and research trust ([[#def-licensing]], [[medical-ethics-law/research-ethics]]): the evidence-lifecycle explanation - pre-approval trials (a few thousand patients, months, selected) cannot find a cardiovascular-event signal that emerges over years in tens of thousands, which is why the post-marketing system exists and why the 'safety evidence' on a licence is a floor not a ceiling (the thalidomide, diethylstilbestrol, rofecoxib and medroxyprogesterone lessons read as vigilance history and the observational-to-trial confirmation paths for some signals and not others) - [[pharmacology/adverse-reactions]], [[epidemiology-ebm/observational-studies]]; answering the patients - honest temporal statement (the risk was recognised when it became measurable, prescribing then followed the evidence and the regulators of the time), the what-we-know-now-and-what-we-are-changing plan (the review of affected patients' current therapy, the cardiovascular-risk-factor management offered, the record correction and the reaction documentation), the candour process with its own legal architecture and the compensation routes named where they exist - [[clinical-skills/communication]], [[medical-ethics-law/professionalism-regulation]]; and the research-integrity counterpart - why recruiting from your hospital is legitimate (the equipoise requirement, the ethics-committee and participant-information standards, the understanding that patients may conflate trial and treatment, countered by consent processes and the option-to-decline-prescribed-care framing) plus the conflict management when your clinicians are investigators, when the sponsor funds the clinic, and when recruitment pressure can corrupt eligibility (the audit and monitoring systems, and the publication policy that your trust signs up to before the first enrolment) - [[epidemiology-ebm/randomised-trials]], [[medical-ethics-law/research-ethics]].**
+From [[#eq-icer]]: $\text{ICER} = 30{,}000/1.2 = £25{,}000$ per QALY.
+
+This lies at the lower end of the £25,000 to £35,000 range, so it would be likely to be considered a cost-effective use of NHS resources, provided the committee accepts the evidence and the assumptions of the economic model (for example how long the benefit lasts beyond the trial). Under the previous £20,000 to £30,000 range it would also have fallen within the range but nearer the point where committees need stronger justification. Uncertainty in the model, the severity of the disease and any innovation not captured in the QALY are also weighed.
 :::
 :::
 
-::: example The phase-one volunteer question {#ex-phase1-vol}
-A 22-year-old healthy volunteer is offered £2,000 for a first-in-human study; your medical student wants to know what protects him and why the 'high-risk medicine model' countries get criticised.
+### Licensed, off-label and unlicensed use
+
+Medicines may be prescribed in three ways:
+
+- **licensed use**: within the terms of the marketing authorisation;
+- **off-label use**: a licensed medicine used outside those terms, such as for another indication, age group, dose or route. This is common, especially in children, in palliative care and in psychiatry: amitriptyline for neuropathic pain, for example, or many medicines in children under the licensed age;
+- **unlicensed medicines**: products with no UK marketing authorisation, such as imported products or specially manufactured preparations.
+
+Prescribing outside the licence is lawful and often good practice, but it shifts more responsibility to the prescriber. UK professional guidance (from the General Medical Council and others) asks prescribers to be satisfied that there is sufficient evidence of safety and efficacy, to take responsibility for prescribing and monitoring, to record the reason, and to explain to the patient (or parent or carer) that the use is outside the licence where this is relevant to their decision.
+
+::: example A first-in-human dose {#ex-phase1-vol}
+A company plans the first human study of a monoclonal antibody that activates an immune receptor. In monkeys, no adverse effects were seen at 50 mg/kg. Laboratory studies with human cells show that receptor occupancy of about 10% produces measurable cytokine release. Explain why a starting dose based mainly on the animal no-adverse-effect level could be unsafe, and outline the principles for designing the first-in-human study.
 ::: solution
-**Early-trial-ethics-and-design ([[#def-discovery]], [[medical-ethics-law/research-ethics]]): the protections in architecture - informed consent with the honest unknowns stated (first-in-human means the human dose-response is literally undefined), the ethics-committee gate on the preclinical package and the starting-dose calculation (the no-observed-effect-level divided by safety factors, and allometric and pharmacokinetic cross-checks, sentinel dosing and slow cohort escalation with stopping rules, and the independent data-safety-monitoring with 24-hour medical cover) - [[epidemiology-ebm/randomised-trials]]; the payment question - fair compensation versus undue inducement (the payment-caps debate, the professional-volunteer populations in some countries concentrated in low-income and debt-driven participants, and the UK and European preference for modest reimbursements with the honest acknowledgement that any payment recruits by income), plus the coercion screens in consent interviews and the cooling-off periods; the 2006 TGN-1412 trial in north London showed what happens when first-in-human dose selection and preclinical signalling are wrong (the cytokine-storm pathology, the transparency of the subsequent analysis, and the resulting European rules on minimum phase-one intervals, pharmacological start-dose guidance and improved preclinical human-relevance expectations) - [[immunology/hypersensitivity]]; and the student-level answer - the trial is legitimate science doing real good (most of modern medicine's dosing safety rests on these studies), the safeguards are the answer to the vulnerability, and the ethics exam version is 'undue inducement, equipoise, and the honesty of the consent conversation' - [[clinical-skills/communication]].**
+The animal no-adverse-effect level reflects the drug's action on the animal's receptors and immune system. If the antibody binds the human receptor with higher affinity, or human cells respond more strongly, a dose that is safe in monkeys could produce a large, rapid effect in humans. For agonists of immune receptors, the main risk comes from the intended pharmacology itself, amplified, rather than from off-target toxicity.
+
+Principles drawn from the TGN1412 review:
+
+- base the starting dose on the **minimal anticipated biological effect level** (MABEL), using human in-vitro data on binding, occupancy and response, and take the lower of the MABEL-based and toxicology-based estimates;
+- give the first dose to one participant, with an observation interval before the next, and escalate doses cautiously;
+- use slow intravenous infusion so that it can be stopped;
+- conduct the study in a unit with immediate access to intensive care, with a plan for managing cytokine release.
+
+The participants' informed consent must describe the uncertainty honestly, and independent ethical and regulatory review assesses the design ([[medical-ethics-law/research-ethics]]).
 :::
 :::
 
-::: example The guideline-versus-label problem {#ex-label-vs-guideline}
-Your asthma guideline now recommends as-needed ICS-formoterol over daily salbutamol; a patient's licensed leaflet says the opposite; the commissioner asks why the hospital funds an 'off-licence' regimen.
+## Rational and safe prescribing {#sec-prescribing}
+
+Prescribing is one of the commonest and most consequential things doctors do. The WHO *Guide to Good Prescribing* (1994) set out a process that remains useful:
+
+1. define the patient's problem;
+2. specify the therapeutic objective;
+3. choose a treatment, considering non-drug options and, among drugs, efficacy, safety, suitability for this patient and cost (the guide calls a well-understood first-choice drug the prescriber's "P-drug");
+4. write the prescription;
+5. give information, instructions and warnings;
+6. monitor and, when needed, stop the treatment.
+
+::: definition Formularies, guidelines and shared decisions {#def-formulary}
+A **formulary** is a list of medicines approved for use in an organisation or area, with guidance on preferred choices. It is based on evidence, safety and cost and makes prescribing more consistent. The **British National Formulary** (BNF) and **BNF for Children** are national references for indications, doses, cautions, interactions and monitoring, while **clinical guidelines** (NICE, specialist societies, local antimicrobial guidance) recommend treatments for particular conditions.
+
+Guidelines describe what usually works best for groups. **Shared decision-making** applies that evidence to the individual: discussing the options, including no treatment, their benefits and harms in absolute terms, and what matters most to the person. A decision not to follow a guideline can be correct if the reasons are considered and recorded.
+:::
+
+### Writing a safe prescription
+
+A prescription, whether written or electronic, must make the intended treatment unambiguous. Its essential elements are: the patient's identity (name, date of birth, hospital or NHS number) and, in hospital, weight and allergy status, with the nature of any reaction; the **approved (generic) drug name**, except where the brand matters (as for some modified-release preparations, ciclosporin, lithium and some antiepileptics); the dose, using units without unnecessary decimal points; the route; the frequency and timing; the duration or review date where relevant; the indication; and the prescriber's signature and contact details.
+
+Common causes of serious error include:
+
+- **"units" abbreviated** to "U" or "IU", which can be misread as zero; insulin and heparin doses should always be written with "units" in full;
+- **micrograms and milligrams** confused; "micrograms" should be written in full, and trailing zeros avoided (5 mg, not 5.0 mg) while leading zeros are used (0.5 mg, not .5 mg);
+- **look-alike or sound-alike drug names**;
+- **weekly drugs given daily**, such as methotrexate ([[pharmacology/dosing-principles]]);
+- **opioid errors**: confusing immediate- and modified-release morphine or oxycodone, miscalculating conversions between opioids, or giving high-dose preparations to people not used to opioids;
+- **omitted critical medicines**, such as Parkinson's medication, insulin and anticoagulants, on admission;
+- **lack of allergy checks**, and interactions not recognised.
+
+**Medicines reconciliation** compares the list of medicines a person was taking before admission with those prescribed in hospital, resolving differences; NICE recommends it within 24 hours of admission and at transfers of care. **Controlled drugs** are subject to additional legal requirements for prescribing, storage and recording under the Misuse of Drugs Regulations; for those in Schedules 2 and 3, the prescription must state the total quantity in both words and figures.
+
+::: warning Starting is easy; stopping is part of prescribing
+Many harmful prescriptions are not wrong when first written but become wrong over time: an antibiotic continued after cultures are negative, a proton pump inhibitor continued for years after a short course was intended, a benzodiazepine renewed repeatedly, an opioid continued after the pain has resolved. Every prescription needs a review date or stop date, an indication that can be checked, and a plan for monitoring. **Deprescribing**, the planned and supervised reduction or stopping of medicines whose harms now outweigh their benefits, is a skill in its own right ([[geriatrics-palliative/polypharmacy]]).
+:::
+
+::: example Spot the errors {#ex-prescription-review}
+A foundation doctor writes the following hospital prescriptions for a 76-year-old woman (weight 52 kg, eGFR 28 mL/min/1.73 m²) admitted with a fall:
+
+- "Insulin glargine 10U at night"
+- "Morphine MR 30mg bd" (she has not previously taken opioids)
+- "Methotrexate 7.5mg daily" (she takes it for rheumatoid arthritis)
+- "Enoxaparin 40mg sc od" (for thromboprophylaxis)
+- "Gentamicin" (no dose or indication).
+
+Identify the problems and how each should be corrected.
 ::: solution
-**Licence, guideline and practice ([[#def-formulary]], [[respiratory/asthma-copd]]): the three documents disagree legitimately - the licence describes the trials the manufacturer funded for the registered indication, the guideline grades the evidence including trials the manufacturer never ran (the comparators and regimens unpatented nobody was obliged to study), and practice sits where patient benefit and law meet (the prescriber's responsibility for off-licence use with consent and rationale, defended routinely and reasonably when the evidence is better than the label - the vast majority of paediatric, dermatology and palliative prescribing lives here) - [[paediatrics/acute-childhood-illness]], [[clinical-skills/communication]]; the specific case - the evidence base for maintenance-and-reliever therapy (the SMART and SYGMA-era trials and their exacerbation and mortality-signalling literature, the salbutamol-overuse signal as marker and mechanism of risk), why the leaflet lags (label changes need applications and economics), and the commissioning answer (the regimen is guideline-supported, the trust formulary documents the rationale, consent records the off-licence discussion, and the audit follows prescribing and outcomes not paper) - [[epidemiology-ebm/systematic-reviews]], [[clinical-skills/patient-safety]]; and the reverse error - assuming 'unlicensed' equals 'bad' or 'licensed' equals 'best' (the thalidomide-era irony that old licensed drugs can be the danger and the re-appraisal duty runs forever), with the practical rule: follow the guideline, record the reasoning, review the outcome, and keep the licence in its place as a floor of evidence, not a ceiling - [[pharmacology/adverse-reactions]].**
+- **Insulin**: "U" can be misread as 0, turning 10 units into 100. Write "10 units" in full.
+- **Morphine MR 30 mg twice daily** in an older, frail, opioid-naive woman with reduced kidney function is a dangerously high starting dose; morphine's active metabolite accumulates in kidney impairment. If an opioid is needed, a low dose of an immediate-release preparation would be titrated to effect, with the choice of opioid adjusted for kidney function and reviewed promptly.
+- **Methotrexate daily** is a classic, potentially fatal error. It should be "once weekly", with the day of the week stated, and checked against her usual regimen during medicines reconciliation.
+- **Enoxaparin**: with markedly reduced kidney function and low body weight, the dose for thromboprophylaxis may need adjustment according to the BNF and local guidance, using creatinine clearance; her risk of bleeding should also be assessed.
+- **Gentamicin**: no dose, route, indication or plan. An aminoglycoside in a person with reduced kidney function needs a clear indication, a dose calculated according to the local protocol, and level monitoring, or an alternative agent.
+
+Allergy status, the indication for each drug and review dates should also be recorded. Electronic prescribing systems prevent some of these errors but not all, and a pharmacist's review is a valuable second check ([[clinical-skills/patient-safety]]).
 :::
 :::
+
+### Stewardship of antimicrobials and opioids
+
+Some classes of medicine need stewardship because overuse harms not only the individual but also others.
+
+**Antimicrobial stewardship** aims to preserve the effectiveness of antimicrobials by using them only when needed, choosing the narrowest effective agent, and stopping promptly. The UK's *Start Smart then Focus* approach asks prescribers in hospital to take cultures before starting antibiotics where possible, to start promptly in sepsis, to document the indication, drug, dose, route and a review date, and then, at 48 to 72 hours, to make a clear decision: stop, switch from intravenous to oral, change to a narrower agent based on results, continue, or refer to outpatient parenteral therapy ([[infectious-diseases/stewardship-outbreaks]], [[microbiology/antimicrobials]]).
+
+**Opioid stewardship** responds to evidence that long-term opioids are of limited benefit for most chronic non-cancer pain and carry risks of dependence, overdose and other harms. Its principles are to set realistic goals with the person, use the lowest effective dose for the shortest time for acute pain, review regularly, avoid combinations with other sedatives, take care with high doses (the risk of harm rises substantially above an equivalent of 120 mg oral morphine per day, according to UK professional guidance), and support gradual tapering where harms outweigh benefits. People with cancer pain or at the end of life are not subject to the same restrictions; adequate pain relief remains essential ([[geriatrics-palliative/symptom-control]]).
 
 ::: quiz
-The main reason pre-approval trials rarely establish rare or late adverse effects is:
-- [x] Sample sizes of a few hundred to a few thousand over months cannot detect events with incidence below about one in a thousand or latency of years
-- [ ] Investigators are prohibited from recording unexpected events
-- [ ] Animal toxicology predicts human reactions accurately
-- [ ] Regulators ignore safety data
+A new drug for a rare condition receives a conditional marketing authorisation from the MHRA. Which statement is correct?
+- [ ] The NHS in England must now fund it immediately
+- [ ] It no longer needs post-marketing surveillance because it has been licensed
+- [x] It may be sold for the authorised indication, carries obligations to provide further evidence, and is subject to intensive monitoring with the black triangle
+- [ ] It can only be prescribed off-label
 ::: solution
-**The rule of three: a trial of about 3,000 patients has good power only for events commoner than roughly one in a thousand; latency and comorbid populations compound this - hence post-marketing surveillance, registries and phase IV commitments ([[#def-licensing]], [[pharmacology/adverse-reactions]]).**
+A conditional authorisation allows marketing on less complete evidence where there is unmet need, with obligations to complete studies. Being new, it carries the black triangle for additional monitoring, so all suspected reactions should be reported. Licensing and funding are separate: NHS funding in England follows NICE appraisal or other commissioning decisions.
 :::
 :::
 
-::: widget plot
-f: 100*(1-exp(-x/0.5)); 92*exp(-((x-1.2)^2)/0.05); 60*exp(-((x-3)^2)/0.8); 80*exp(-((x-6.5)^2)/4); 45*exp(-((x-12)^2)/10)
-x: 0.01, 15
-y: 0, 100
-labels: \text{years from target discovery},\ \%\text{ of candidates}\to\text{next stage}\text{survival to approval (cumulative)};\ \text{discovery-attrition cliff};\ \text{phase I};\ \text{phase II (largest attrition)};\ \text{phase III and review}
-caption: Attrition is the pipeline's defining feature ([[#def-discovery]]): most candidates die in phase II on efficacy or toxicity, approval odds per starting compound are tiny, and timelines push the cardiovascular and late-toxicity questions past the licence into the surveillance era - [[pharmacology/adverse-reactions]].
+::: history
+The modern framework of drug development was shaped by tragedies and by scientific advances. After the sulfanilamide elixir deaths in 1937 the US required evidence of safety before marketing, and after thalidomide the Kefauver–Harris amendments (1962) added a requirement for evidence of efficacy from adequate and well-controlled studies. In the UK the Committee on Safety of Drugs began work in 1964 and the Medicines Act 1968 created a licensing system; the MHRA was formed in 2003. The randomised controlled trial became the standard of evidence after the Medical Research Council's 1948 trial of streptomycin for tuberculosis, designed with the statistician Austin Bradford Hill. In 1964 the World Medical Association adopted the Declaration of Helsinki on research ethics. NICE was established in 1999 to appraise the clinical and cost-effectiveness of treatments for the NHS. The TGN1412 trial in 2006 transformed the design of first-in-human studies, and international requirements for trial registration grew from the mid-2000s, after evidence that negative results were often left unpublished.
+:::
+
+::: summary
+- Drug discovery moves from target to lead to candidate; preclinical studies characterise pharmacology and toxicity to set a safe starting dose. For high-risk agents, first-in-human doses are based on MABEL.
+- Phase I establishes safety and kinetics, phase II activity and dose, phase III efficacy against placebo or standard treatment, and phase IV long-term and rare effects.
+- Absolute risk reduction and number needed to treat express benefit in terms relevant to decisions; relative reductions overstate it when baseline risk is low.
+- Regulators license medicines; NICE appraises cost-effectiveness using the ICER, with a standard threshold range of £25,000 to £35,000 per QALY from April 2026.
+- Off-label prescribing is lawful and common but requires evidence, responsibility and explanation.
+- Safe prescribing needs unambiguous prescriptions, medicines reconciliation, attention to high-risk drugs and situations, and planned review and stopping. Antimicrobial and opioid stewardship protect both individuals and the wider population.
 :::
 
 ## Where this leads
 
-Trial design is developed in [[epidemiology-ebm/randomised-trials]], appraisal in [[epidemiology-ebm/critical-appraisal]] and [[epidemiology-ebm/statistics-for-clinicians]], safety surveillance in [[pharmacology/adverse-reactions]], individualised dosing in [[pharmacology/patient-variation]], and global access in [[public-health/global-health]].
-
-::: history
-**Modern drug regulation is a sequence of disasters plus one good idea: the 1937 sulfanilamide elixir and the 1961 thalidomide embryopathy produced the safety-testing and reporting duties of 1938 and 1962 (the Kefauver-Harris amendments requiring proof of efficacy as well as safety, the informed-consent and adverse-event-reporting architecture, and Europe's parallel licensing laws), converting pharmacy into evidence law - [[obstetrics-gynaecology/pregnancy-complications]], [[pharmacology/adverse-reactions]]; the good idea was the randomised controlled trial itself, whose modern form arrived with the 1948 MRC streptomycin trial for tuberculosis - often cited as the first modern randomised clinical trial - with its random-number allocation, its controls chosen by lot and its shared-scepticism authorship, and Bradford Hill's methodological leadership before and after (the question 'how do you know?' moving from ward rounds to statistics) - [[infectious-diseases/tuberculosis]], [[epidemiology-ebm/randomised-trials]]; the trial then industrialised - the 1960s-70s cooperative-group and Veterans-Administration trials, the FDA's 1966 efficacy re-evaluation (the Efficacy Rule Review Program that withdrew hundreds of marketed products and made 'proven effective' mean something), the CONSORT and the ethics side covered in research-ethics chapters, and the 1990s rise of the internet-era trial registries and publication-bias corrections (the ClinicalTrials.gov era and the all-results-reporting norms) - [[epidemiology-ebm/systematic-reviews]], [[medical-ethics-law/research-ethics]]; health-technology appraisal arrived with scarcity named out loud - the Oregon Medicaid experiment's lottery design, the Canadian and Australian and New Zealand pharmacare listings, and NICE from 1999 with the QALY threshold controversies, the cancer-drug funds and the managed-entry agreements where price and evidence arrive together (the confidential-discount era) - [[public-health/health-systems-economics]], [[public-health/health-systems-economics]]; and the newest chapter is speed-versus-depth - the 2020-21 pandemic compressed every stage (platform vaccines approved with the full safety apparatus intact and real-world effectiveness studies doing confirmatory work in months, with rolling reviews), the antimicrobial-subscription pilots trying to fix a broken market, the repurposing and orphan-drug accelerators, and the AI-assisted discovery race whose first clinically validated winners are still being watched - [[immunology/vaccines-immunotherapy]], [[public-health/global-health]], [[genetics/genomic-medicine]].**
-:::
-
-::: summary
-- Development is an attrition funnel: potency and selectivity get a molecule started; solubility, metabolism, toxicity and clinical benefit kill most candidates, usually in phase II.
-- Pre-approval evidence answers 'does it work and is it safe in thousands over months'; rare, late and population-specific effects are post-marketing knowledge by design.
-- Regulators license with conditions and risk-minimisation; agencies appraise value; formularies decide access - three different questions that public debate constantly conflates.
-- Reading a pivotal trial means absolute effects, component composites, comparator quality and pre-registered endpoints, not the press-release relative risk.
-- Prescribing is the implementation end: indication agreed, drug individualised, review dated, stop rule written, deprescribing available, and substitution managed for meaning as well as cost.
-- Every access system trades innovation, cost and equity explicitly or implicitly; making the trade visible is the honest version.
-:::
-
-::: exercise Match the stage to the question {level=1}
-Which development stage best answers each: 'does it engage the target?', 'what dose?', 'does it prevent the outcome?', 'is it worth the money?', 'does it harm rare patients?', 'may we substitute the cheap version?'
-::: solution
-**Stage-question-matching ([[#def-discovery]], [[#def-licensing]], [[#def-formulary]]): target-engagement - phase I biomarker and occupancy work (with the receptor-occupancy-to-effect assumption tested later) and the proof-of-concept phase IIa; dose - phase IIb exposure-response with model-informed selection (and the post-licence therapeutic-drug-monitoring refinements for narrow-index drugs); outcomes - the phase III event trial (the surrogate-versus-clinical-endpoint distinction, accelerated-approval caveats) - [[epidemiology-ebm/randomised-trials]]; value - health-technology appraisal (the cost-per-QALY and budget-impact questions, which trials cannot answer); rare harm - post-marketing surveillance, registries and pragmatic safety trials (the rule-of-three arithmetic) - [[pharmacology/adverse-reactions]]; substitution - the bioequivalence-and-interchangeability framework for generics and the comparability-exercise regime for biosimilars, with the narrow-index drugs (levothyroxine, warfarin, tacrolimus, antiepileptics) where switches need monitoring plans and the products where immunogenicity needs pharmacovigilance - [[immunology/vaccines-immunotherapy]], [[endocrine/thyroid]].**
-:::
-:::
-
-::: exercise Read two abstracts against each other {level=2}
-Drug A: trial versus placebo, stroke reduced 30 percent relative, NNT 90 over five years, more serious bleeding 0.4 versus 0.2 percent. Drug B: trial versus active comparator, non-inferior for the primary composite, fewer transfusions, no mortality data reported. Which do you prescribe to whom, and what else do you need?
-::: solution
-**Cross-abstract-reasoning ([[#def-licensing]], [[#def-formulary]], [[epidemiology-ebm/critical-appraisal]]): drug A - the placebo-comparator problem (the effect is real but the question 'better than nothing' is not the clinic question if drug B is standard), the absolute numbers (NNT 90 against NNH 500 for serious bleeding, and the population-baseline shift that changes both - risk calculators, age, prior bleed history) and the composite-and-follow-up details to fetch; drug B - the non-inferiority margin (how wide, how chosen, whether the active comparator's own effect is intact in this era of better background therapy - the assay-sensitivity debate), the missing mortality (why not reported - event counts, time horizon, or convenience of the bleeding endpoint) and the transfusion endpoint's clinical weight - [[blood/transfusion]], [[cardiovascular/arrhythmias]]; and the prescription logic - head-to-head evidence absent means choice by patient factors (bleeding risk, renal function, adherence capacity, reversibility, interactions, cost, and the patient's own weighting of stroke-versus-bleed in a decision aid), with the commissioning layer applying the appraisal rules your system published, and the honest review date built in for the trial that will eventually compare them - [[clinical-skills/communication]], [[public-health/health-systems-economics]].**
-:::
-:::
-
-::: exercise Design the antimicrobial pipeline incentive {level=2}
-Explain to a policy seminar why nobody develops new antibiotics and sketch two incentive mechanisms with their failure modes.
-::: solution
-**Antibiotic-economics ([[#def-formulary]], [[microbiology/antimicrobials]], [[infectious-diseases/stewardship-outbreaks]]): the market failure - effective stewardship deliberately minimises volume (success kills revenue), new agents are held in reserve (paying nothing while they are the policy's insurance), resistance erodes the molecule's value faster than any other therapeutic area, and the pipeline's small-trial-endpoint pathway (the 2018 US QUALITY-pathway and the European flexible designs built for resistant-population trials) lowered approval cost but not revenue uncertainty - the big-pharma exits of the 2010s as the natural equilibrium; mechanism one - push: public and philanthropic funding of preclinical-to-phase-II work (the CARB-X and IMI-era models and academic-conduit advantages) with failure modes of pipeline-relevance (me-too molecules) and translational gaps; mechanism two - pull: subscription or market-entry-reward payments decoupling return from sales (the UK and US beta-lactamase-inhibitor subscription pilots and the 'drug as utility, purchased for readiness' concept) with failure modes of price-setting politics, eligibility criteria gaming, and access latency (paying for drugs hospitals then fail to stock, and the global-equity hole where the resistance burden is largest in the poorest purchasing systems) - [[public-health/global-health]]; and the complementary levers nobody should forget - rapid diagnostics shrinking empirical broad-spectrum use, vaccination and WASH reducing resistance selection pressure, and infection control as the cheapest 'new antibiotic' ever - [[public-health/communicable-disease-control]].**
-:::
-:::
-
-::: exercise Defend or redesign post-Brexit parallel-import substitution {level=3}
-Your pharmacy imports a licensed-but-different-packaging version of a medicine to save money; clinicians notice name and look changes and confusion incidents start; patients on warfarin and levothyroxine are involved.
-::: solution
-**Parallel-substitution-governance ([[#def-formulary]], [[clinical-skills/patient-safety]]): the legality-versus-safety split - parallel importation of licensed products can be legal and still unsafe when packaging, strength labelling and device ergonomics change without the substitution governance a national authority expects (the LASA and look-alike incident data, the patient-confusion harm pathway for narrow-index drugs where the same milligram is a different risk at a different brand) - [[medical-ethics-law/professionalism-regulation]]; the case-specific risk - warfarin (tablet strength colouring, the dose-tracking-booklet disruption, and the INR-drift reports following brand change read honestly with their confounding but acted on anyway) and levothyroxine (the 2017-France reform crisis as the definitive study in unmanaged substitution: mass anxiety, nocebo-attributed relapse of symptoms, Prescrire's warnings, the resignation-of-the-health-minister-era politics, and the reformulated product with lactose-to-mannitol excipient change as the real pharmacokinetic question separated from the rumour) - [[endocrine/thyroid]], [[blood/thrombosis-anticoagulation]]; the redesign - narrow-index products exempted from unannounced substitution with consent-and-monitoring protocols, national colour-and-device standardisation for strengths, the dispensed-brand record (the community-pharmacy data trail used in safety investigations), and pre-change communication packages weeks ahead with patient materials and clinician alerts, including the excipient-change information (the rare glucose-intolerance and allergy niches) handled as product-licensing variation comms; and the audit - incident-report rates and INR and TSH drift before-after switches as the decision data, with the saving net of avoided harm costed honestly - [[public-health/health-systems-economics]], [[clinical-skills/records-handover]].**
-:::
-:::
+The evidence base behind drug decisions is developed in [[epidemiology-ebm/randomised-trials]], [[epidemiology-ebm/systematic-reviews]] and [[epidemiology-ebm/critical-appraisal]]. Research ethics is covered in [[medical-ethics-law/research-ethics]], and patient safety systems in [[clinical-skills/patient-safety]]. The pharmacological foundations of this chapter are in [[pharmacology/drug-receptor]], [[pharmacology/dosing-principles]] and [[pharmacology/adverse-reactions]].
 
 ## Exercises
 
-::: exercise Order the pipeline {level=1}
-Put in sequence and add one success criterion each: dose-ranging in patients, receptor occupancy biomarker, hERG and genotox screening, confirmatory outcomes trial, spontaneous-reporting signal detection, formulary listing decision.
+::: exercise The phases of development {level=1}
+Match each study to its phase: (a) 24 healthy volunteers receive single ascending doses of a new compound; (b) a cohort study of 200,000 users of a drug in electronic records looks for a link with pancreatitis; (c) 3,500 people with heart failure are randomised to a new drug or placebo, with cardiovascular death or hospital admission as the primary outcome; (d) 180 people with psoriasis are randomised to one of three doses or placebo to see whether the skin improves.
 ::: solution
-**Pipeline-sequence ([[#def-discovery]], [[#def-licensing]], [[#def-formulary]]): target-and-screen then hERG-and-genotox (the safety-pharmacology screens clearing specific organ liabilities before patients) then first-in-human phase I with the occupancy or target-inhibition biomarker (proof the drug engages what it was designed for) then dose-ranging phase IIb (the exposure-response modelled, the chosen dose justified to regulators) then confirmatory phase III (the outcomes, the comparators, the pre-registered analysis) then licence with surveillance (the signal detection that starts the label-change cycle) then appraisal and formulary (the cost-per-QALY and budget-impact decision your hospital lives inside) - each stage's failure mode the next stage's filter, and the special-pathway shortcuts mapped to their compensating obligations (the confirmatory-trial-and-registry duties on conditional approvals) - [[epidemiology-ebm/randomised-trials]], [[public-health/health-systems-economics]].**
+(a) Phase I. (b) Phase IV (post-marketing surveillance). (c) Phase III. (d) Phase II (dose-finding and evidence of activity).
 :::
 :::
 
-::: exercise Appraise a headline {level=2}
-'A new Alzheimer's drug slows decline by 35 percent on a cognitive scale' - list the questions that decide whether you would support commissioning it, and which evidence answers each.
+::: exercise Number needed to treat {level=1 check="100"}
+Over five years, 4% of people on placebo and 3% on an active drug have a stroke. How many people need to be treated for five years to prevent one stroke?
 ::: solution
-**Headline-appraisal ([[#def-formulary]], [[epidemiology-ebm/critical-appraisal]]): the effect - 35 percent of what baseline on which scale, the scale's minimal-clinically-important-difference published or not, the surrogate (amyloid reduction) versus the clinical endpoint, and the trial's own composite and sensitivity analyses (the cognitive-scale debate literature and the functional-and-carer-burden secondary endpoints) - [[nervous-system/dementia-neurodegeneration]]; the harm - the amyloid-related-imaging-abnormalities (ARIA) rates, the APOE genotype risk stratification and its monitoring-need (the MRI-scan infrastructure and the anticoagulant-bleed caution), the withdrawal rates and the drop-out handling - [[genetics/genetic-testing]], [[clinical-skills/medical-imaging]]; the population - the trial's early-disease selection versus the memory-clinic reality (the exclusion criteria making dementia-trial cohorts unusually healthy, the comorbidity-and-life-expectancy context), the equity of access (who gets diagnosed early enough to qualify, the biomarker-confirmation pathway's availability across centres) - [[geriatrics-palliative/ageing-frailty]], [[public-health/determinants-inequalities]]; and the system - the confirmatory-trial status after accelerated approval, the cost-per-QALY modelling under different utility assumptions, the commissioning decision's opportunity cost named against other dementia services (the staff-and-support that most families actually use) and the honest communication to families that modest disease-slowing is not reversal - [[public-health/health-systems-economics]], [[clinical-skills/communication]].**
+ARR $= 0.04 - 0.03 = 0.01$, so NNT $= 1/0.01 = 100$.
 :::
 :::
 
-::: exercise Fix the substitution protocol {level=2}
-Your trust switches several biologics and complex generics to biosimilar or authorised generic versions to release budget. Patients on adalimumab and levothyroxine and warfarin and tacrolimus are involved. Design the switch plan.
+::: exercise What is wrong with this prescription? {level=1}
+Identify the problem in each: (a) "Levothyroxine 100 mcg od"; (b) "Heparin 5000 IU sc bd"; (c) "Digoxin .125 mg od"; (d) "Lorazepam 1.0 mg prn".
 ::: solution
-**Substitution-design ([[#def-formulary]], [[pharmacology/absorption-distribution]], [[clinical-skills/patient-safety]]): categorise by risk - narrow-index-or-narrow-margin products need the most care (the warfarin-INR and levothyroxine-TSH re-check protocols after any product change, the tacrolimus-with-closed-system-transplant-clinic-switch-with-levels at agreed intervals, and the biologic switches handled by the responsible specialty with disease-activity scoring rather than blanket pharmacy policy) - [[blood/thrombosis-anticoagulation]], [[endocrine/thyroid]], [[immunology/transplant-tumour-immunology]]; the communication package - the same message from prescriber, pharmacist, nurse and leaflet before the switch (the nocebo evidence is strong enough to design for, not against), consistent naming (brand plus biosimilar explained), opt-out without stigma, and the follow-up at disease-appropriate intervals with the scoring instruments (the dermatology-and-rheumatology-and-gastroenterology switch-study lessons that flares follow bad communication more than bad molecules) - [[clinical-skills/communication]], [[musculoskeletal/inflammatory-arthritis]]; the traceability and governance - prescribing by brand for biologics with batch recorded, the pharmacovigilance route for reported losses of response and injection reactions, the immunogenicity monitoring where relevant (the epoetin-antibody-pure-red-cell-aplasia history as the cautionary tale of formulation change without vigilance) - [[blood/anaemia]], [[immunology/adaptive-responses]]; and the evaluation - the savings realised (audit the budget release to front-line use), the outcome dashboards switched-versus-unchanged, the patient-experience measures, and the review that makes the next switch cheaper than this one - [[public-health/health-systems-economics]].**
+(a) "mcg" may be misread as "mg"; write "micrograms" in full. (b) "IU" may be misread (for example as "10"); write "units" in full. (c) A missing leading zero, ".125", can be misread as 125; write "125 micrograms" (or 0.125 mg). (d) The trailing zero in "1.0" can be misread as 10; write "1 mg", and an "as required" prescription also needs an indication, a minimum interval and a maximum daily dose.
 :::
 :::
 
-::: exercise Argue the access equation {level=3}
-A health technology appraised at £30,000/QALY is rejected; a sport-stadium subsidy proceeds. Argue both sides of the allocation question and propose the decision procedure you would defend publicly.
+::: exercise An ICER {level=2 check="30000"}
+A new drug costs £18,000 more per patient than standard care and produces an extra 0.6 QALYs. Calculate the ICER in pounds per QALY.
 ::: solution
-**Allocation-argument ([[#def-formulary]], [[medical-ethics-law/justice-resources]], [[public-health/health-systems-economics]]): the consistency case - if the health system says £30,000 per QALY is the rate at which public money converts to health, rejecting this drug while funding activities with worse health-per-pound (or none) is either unfair or reveals that the threshold is a negotiating posture, and the transparency demand (publish the rate, apply it across health-related spending including prevention, infrastructure and the wider economic effects) has real force - [[epidemiology-ebm/measuring-disease]]; the pluralist case - health value is not one-dimensional (the severity-and-unmet-need discount some systems apply, the equal-opportunity objection to discounting disability-adjusted quality of life for disabled patients, the innovation-dynamics argument that today's expensive drug is tomorrow's generic and refusing to fund the pipeline has intergenerational costs, and the distributional question of who bears the rare-disease premium - the small-population risk-pool economics), plus the observation that real decisions always involve urgency, visibility and advocacy asymmetries that the QALY does not capture and pretending otherwise corrupts the process quietly; and the decision procedure - explicit and published (the cost-effectiveness plane with severity modifiers applied by rule not by press campaign), deliberative components for the hard cases (the citizens'-panel and patient-voice input on what a QALY weight means, the appraiser conflict rules), the appeal route on evidence not volume, the research condition on uncertain appraisals (the coverage-with-appointment-to-review mechanisms), and the honest public narrative: scarcity is real, the trade-off is made either in a boardroom or in the open, and only one version keeps trust - which is itself a health outcome - [[clinical-skills/communication]], [[public-health/determinants-inequalities]].**
+ICER $= 18{,}000/0.6 = £30{,}000$ per QALY. This is within the £25,000 to £35,000 range applied by NICE from April 2026; the decision would also depend on uncertainty and other factors considered by the committee.
+:::
+:::
+
+::: exercise How large must a safety study be? {level=2 check="2995"}
+An adverse reaction occurs in 1 in 1,000 people taking a drug. What is the smallest whole number of patients that must be followed for there to be at least a 95% probability of observing at least one case? Then comment on the result in relation to the size of typical phase III programmes.
+::: hint
+The probability of no cases among $n$ people is $0.999^n$. Set it at most 0.05.
+:::
+::: solution
+We need $1 - 0.999^n \ge 0.95$, so $0.999^n \le 0.05$ and $n \ge \ln 0.05/\ln 0.999 \approx 2994.2$. The smallest whole number is **2995**, consistent with the rule of three ($3/n$).
+
+Seeing one case would not establish a link with the drug; to show a significant difference from the background rate needs many more participants. Phase III programmes of a few thousand people can therefore detect reactions occurring in about 1 in 1,000, but not those occurring in 1 in 10,000 or rarer, which is why post-marketing surveillance is essential.
+:::
+:::
+
+::: exercise Off-label or unlicensed? {level=2}
+Classify each as licensed, off-label or unlicensed use, and state one responsibility of the prescriber in each off-label or unlicensed case: (a) amitriptyline at low dose for neuropathic pain; (b) a medicine specially manufactured as an oral liquid for a child because no licensed liquid exists; (c) a drug used for its licensed indication in a 2-year-old when it is licensed only from age 6; (d) atorvastatin for primary prevention of cardiovascular disease in an adult.
+::: solution
+(a) Off-label (amitriptyline is licensed for depression in the UK, not neuropathic pain, although widely recommended for it). (b) Unlicensed (a "special" without a marketing authorisation). (c) Off-label (outside the licensed age range). (d) Licensed.
+
+For (a) to (c), the prescriber should be satisfied that evidence supports the use, take responsibility for prescribing and monitoring, record the reason, and explain the off-label or unlicensed status to the patient or parent where it is relevant to their decision, in line with professional guidance and the BNF or BNFC.
+:::
+:::
+
+::: exercise The 72-hour antibiotic review {level=3}
+A 68-year-old man was admitted with suspected community-acquired pneumonia and started on intravenous co-amoxiclav and clarithromycin. At 72 hours he is afebrile, eating and drinking, with a CRP falling from 210 to 60 mg/L. Blood cultures are negative; a sputum culture grew *Streptococcus pneumoniae* sensitive to amoxicillin. His urinary *Legionella* antigen was negative. Using the *Start Smart then Focus* framework, outline the decision and the reasoning.
+::: solution
+At the 48 to 72-hour review, the five options are stop, switch from IV to oral, change, continue, or outpatient parenteral therapy.
+
+- He is clinically improving and able to take oral medicines, so **switching from intravenous to oral** is appropriate.
+- The pathogen is identified and sensitive to amoxicillin, so the regimen should be **narrowed** to oral amoxicillin, stopping co-amoxiclav (broader spectrum, more associated with *C. difficile*) and stopping clarithromycin (atypical cover no longer needed, with negative *Legionella* antigen; also reduces interaction and QT risks).
+- The total **duration** should follow the local guideline, which for most cases of community-acquired pneumonia is short (often five days in total if improving).
+
+The decision, reasoning and stop date are documented. This approach reduces adverse effects and costs, and slows the selection of resistant organisms, without compromising his care.
+:::
+:::
+
+::: exercise A non-inferiority trial {level=3}
+A trial compares a new oral antibiotic with standard intravenous treatment for bone infection. The pre-specified non-inferiority margin is 10 percentage points. Cure rates are 88% with the new drug and 90% with standard treatment; the difference is −2 percentage points (95% confidence interval −6 to +2). (a) Is the new drug non-inferior? (b) Would the conclusion change with a margin of 5 percentage points? (c) Give two reasons why a clinician might still prefer the new drug, and one methodological point to check.
+::: solution
+(a) Yes. Non-inferiority is shown if the whole confidence interval lies above −10 percentage points; the lower limit is −6, which is above −10.
+
+(b) With a margin of −5, the lower limit (−6) crosses the margin, so non-inferiority would not be shown: the result would be inconclusive, compatible with the new drug being up to 6 points worse.
+
+(c) Oral treatment avoids intravenous lines and their infections, allows earlier discharge and is often cheaper and more acceptable to patients. Methodological points: whether the margin was clinically justified and set in advance; whether both per-protocol and intention-to-treat analyses agree (in non-inferiority trials, intention-to-treat analysis can bias towards finding no difference); and whether the standard treatment was given well, since a poorly delivered comparator makes non-inferiority easier to show ([[epidemiology-ebm/critical-appraisal]]).
 :::
 :::

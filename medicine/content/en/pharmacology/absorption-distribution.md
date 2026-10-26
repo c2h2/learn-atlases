@@ -1,141 +1,302 @@
-Pharmacokinetics is the journey of a molecule through a body: **absorption sets how much reaches the circulation and how fast, distribution decides which tissues are bathed and which are barred, and both are governed by physicochemistry - lipid solubility, ionisation, protein binding, molecular size - plus the body's own geography of blood flow, membranes and transporters.** Get volume of distribution and clearance in your head and half-lives, loading doses, route choices and the behaviour of drugs in obesity, oedema, pregnancy, renal and liver disease stop being rules to memorise.
+A tablet swallowed at breakfast is useless until some of its drug reaches the receptors described in [[pharmacology/drug-receptor]]. On the way it has to dissolve, cross the wall of the gut, survive a first pass through the liver, enter the circulation, and leave the blood again to reach the tissue where it acts. Each step can lose drug or delay it, and each step differs between drugs, between preparations of the same drug, and between patients.
 
-This chapter covers absorption and bioavailability, distribution and body compartments, protein binding and tissue pooling, special barriers and excretion interfaces, and the patient factors that change them.
+This chapter follows a drug from the site of administration to its site of action. It covers how drugs cross membranes, the routes by which they are given, the meaning and measurement of bioavailability, and how drugs distribute through the body, including the apparent volume of distribution and plasma protein binding. Metabolism and excretion, which remove the drug again, are the subject of [[pharmacology/metabolism-excretion]]. Together these processes are often abbreviated **ADME**: absorption, distribution, metabolism and excretion.
 
-## Getting in
+## Crossing membranes {#sec-membranes}
 
-::: definition Absorption and bioavailability {#def-absorption}
-**The-routes-and-their-physics (oral-dissolution-gastric-pH-solubility-permeability-and-first-pass - the biopharmaceutics classification logic - rapidly dissolving and permeable drugs versus solubility-limited ones with food and fat effects, and the worst-of-both class and the pH-partition story kept in proportion - ion trapping exists, but surface area, lipophilicity and transporters dominate and the gastric-emptying-and-motility-disease-dependence (modified-release failure in diarrhoea, short bowel and obstruction; GLP-1 agonists delaying transit and upsetting everyone's absorption; and the enteral-tube crushing-ER-formula disaster list) - [[gastrointestinal/digestion-absorption]], [[gastrointestinal/clinical-nutrition]]); presystemic-loss-at-two-sites (gut-wall metabolism and efflux - CYP3A4 and P-glycoprotein on the apical enterocyte, with the grapefruit furanocoumarin lesson that inactivation outlasts the juice and the ciclosporin-talinolol and ciclosporin-digoxin interaction heritage and the rifampicin-induction-days-lag - [[pharmacology/metabolism-excretion]]) and the hepatic-first-pass (the extraction-ratio arithmetic - flow-limited high-extraction drugs like nitrates, propranolol, lidocaine and morphine versus capacity-and-binding-limited low-extraction drugs - with the F equals one-minus-extraction-ratio teaching and the cirrhotic shunting bioavailability explosion (the oral-to-IV potency ratios that become dangerous when liver flow falls) - [[gastrointestinal/liver-disease]], [[cardiovascular/vascular-disease]])); the-non-oral-routes-engineered-around-the-problem (sublingual and buccal routes bypassing first-pass for nitrates and steroids; rectal partial bypass with variable reliability; transdermal flux set by permeability, area and concentration, with heating and removal-depot caveats; intramuscular and subcutaneous depots governed by flow and solubility, with injection-site rotation discipline and antibody reformulations improving subcutaneous bioavailability; inhalational delivery with large surface and no first-pass, whose systemic steroid effects prove absorption; and intravenous at one hundred percent with bolus-versus-infusion mathematics) - [[respiratory/asthma-copd]], [[surgery/anaesthesia-pain]], [[endocrine/diabetes]].**
+Almost every step in a drug's journey involves crossing a cell membrane: the gut epithelium, the capillary wall (in some tissues), the blood–brain barrier, the placenta, the renal tubule. Drugs cross in three main ways.
+
+- **Passive diffusion through the lipid bilayer.** This is the route for most small drugs. The rate follows Fick's law: it is proportional to the concentration gradient, the area available and the drug's lipid solubility. Small, uncharged, lipid-soluble molecules cross easily; large or charged molecules hardly at all.
+- **Carrier-mediated transport.** Solute carrier (SLC) transporters move drugs into cells, and ATP-binding cassette (ABC) transporters pump them out. The most important efflux pump in pharmacology is **P-glycoprotein** (P-gp), found in the gut wall, the blood–brain barrier, the liver and the kidney. P-gp pumps drugs such as digoxin and loperamide back out of cells, reducing their absorption and keeping them out of the brain.
+- **Through gaps between cells.** Most capillaries have gaps that let small molecules pass freely whatever their lipid solubility. The brain capillaries do not, which is why the blood–brain barrier excludes polar drugs.
+
+Most drugs are **weak acids or weak bases**. In solution they exist partly in an un-ionised form, which is lipid-soluble and crosses membranes, and partly in an ionised form, which is water-soluble and largely cannot. The balance between the two forms depends on the drug's pKa and the pH of the fluid it is in.
+
+::: theorem Ionisation and the Henderson–Hasselbalch equation {#thm-ionisation}
+For a weak acid HA ⇌ H⁺ + A⁻ and a weak base B + H⁺ ⇌ BH⁺,
+
+$$
+\text{acid: } \frac{[\text{ionised}]}{[\text{un-ionised}]} = 10^{\,\mathrm{pH} - \mathrm{p}K_a}, \qquad \text{base: } \frac{[\text{ionised}]}{[\text{un-ionised}]} = 10^{\,\mathrm{p}K_a - \mathrm{pH}}.
+$$ {#eq-hh}
+
+When pH equals pKa the drug is half ionised. Each unit of pH away from the pKa changes the ratio tenfold. Acids are mostly un-ionised in acid fluid; bases are mostly un-ionised in alkaline fluid.
 :::
 
-## Where drugs go
-
-::: definition Distribution and compartments {#def-distribution}
-**The-volume-of-distribution-concept-as-accounting-not-anatomy (Vd equals amount in body over plasma concentration, so a large Vd means tissue sequestration - lipid storage, lysosomal trapping of amphiphilic cations (amiodarone, SSRIs, chloroquine), or transporter uptake (digoxin's massive apparent Vd reflecting muscle Na-K-ATPase binding), while warfarin's tiny Vd keeps it in plasma) and the-two-compartment-shape (the distribution limb then the elimination limb, thiopental awakening by redistribution not metabolism, and context-sensitive half-time accumulation with prolonged infusions of fentanyl and midazolam versus remifentanil's organ-independent ester hydrolysis) - [[surgery/anaesthesia-pain]]; protein-binding-doctrine-corrected (the free-drug-is-active principle with its restrictive-clearance exceptions, displacement-interaction hysteria read honestly (the NSAID-warfarin bleed is more metabolic and antiplatelet than displacement), versus genuinely binding-sensitive situations (phenytoin free levels when albumin falls in septicaemia, pregnancy or cirrhosis), and protein binding as storage rather than advantage) - [[pharmacology/dosing-principles]], [[renal/chronic-kidney-disease]]; the barriers and pumps (the blood-brain barrier - tight junctions, P-gp and BCRP efflux, carrier uptake, and increased penetrance in inflamed meninges - with the old lipid-solubility-unionised rule plus modern transporter overrides (the CNS effects of lipophilic beta-blockers, and loperamide's therapeutic-dose brain exclusion overcome only at abusive quantities that defeat P-glycoprotein) - [[nervous-system/neuroinflammation]], [[psychiatry/substance-use]]); the placenta-not-a-barrier (placental exchange by parity of concentration with its transporters, fetal metabolism and trimester-specific teratogenic windows, and milk transfer governed by lipid, pH and ionisation - milk's slight acidity trapping bases like amphetamines - with infant dose estimated as a fraction of maternal plasma levels) - [[obstetrics-gynaecology/pregnancy-complications]], [[obstetrics-gynaecology/labour-birth]]; and body-composition-reshaping (adipose as reservoir for lipophilic drugs (prolonged suxamethonium apnoea in obesity) and the dosing-weight debate - actual, ideal or adjusted body weight per drug class, with antibiotic, anaesthetic and anticoagulant weight tables and bariatric surgery rewiring absorption) and third-spacing - capillary leak, burns, sepsis - raising the Vd of hydrophilic drugs and their loading doses - [[geriatrics-palliative/ageing-frailty]], [[emergency-critical-care/shock-fluids]], [[gastrointestinal/liver-disease]].**
+::: proof
+For an acid, the dissociation constant is $K_a = [\text{H}^+][\text{A}^-]/[\text{HA}]$. Taking negative logarithms, $\mathrm{p}K_a = \mathrm{pH} - \log_{10}([\text{A}^-]/[\text{HA}])$, so $[\text{A}^-]/[\text{HA}] = 10^{\mathrm{pH}-\mathrm{p}K_a}$; $\text{A}^-$ is the ionised form. For a base, $K_a$ refers to the protonated (ionised) form: $K_a = [\text{H}^+][\text{B}]/[\text{BH}^+]$, which rearranges to $[\text{BH}^+]/[\text{B}] = 10^{\mathrm{p}K_a - \mathrm{pH}}$.
 :::
 
-::: definition Excretion interfaces and patient reshaping {#def-excretion}
-**Renal-elimination-anatomy-for-prescribers (glomerular-filter-size-and-shape-and-charge-free-fraction-driving-filtration-plus-active-secretion-OAT-and-OCT-and-P-gp-in-the-tubule-and-reabsorption-of-lipophilic-unionised-drugs-urine-flow-dependent (the forced-diuresis-heritage-and-salicylate-alkalinisation-trick) and the tubular-secretion-saturation-within-therapeutic-ranges (the probenecid-penicillin-history-and-cobicistat-dolutegravir-OCT2-inhibition-creatinine-bump-without-GFR-injury-interpretation) - [[renal/filtration]], [[renal/tubular-function]]); clearance-declines-in-stages (the eGFR-based-dose-bands-versus-measured-creatinine-clearance-versus-cystatin-C-combinations and the muscle-mass-creatinine-generation-confounders-in-sarcopenia-amputation-paralysis-vegetarian-diet-plus-the-obesity-creatinine-paradox and the dialysis-removability-rules-of-thumb-molecular-weight-protein-binding-Vd-water-solubility-and-post-dialysis-supplementation-dosing (the doxycycline-not-removed-and-the-levofloxacin-and-cefepime-neurotoxicity-if-not-reduced and the dialysis-day-versus-non-dialysis-day-antibiotic-timing) - [[renal/chronic-kidney-disease]], [[emergency-critical-care/critical-care]]); hepatic-elimination-as-flow-and-capacity (the well-stirred-model-reading-for-prescribers - intrinsic-clearance-extraction-and-protein-binding-setting-hepatic-clearance with the cirrhosis-cholestasis-and-inflammation-attacking-different-parts-of-the-equation and the enzyme-induction-versus-inhibition-versus-shunting-telling-clinical-signatures (the rifampicin-reducing-hormonal-contraception-and-DOAC-and-immunosuppressant-levels-with-irreversible-cholestatic-jaundice-per-agent and the cholestatic-versus-hepatocellular-predictors-of-which-drugs-to-avoid and the biliary-excretion-drugs-and-enterohepatic-recycling-with-the-lactation-and-contraception-ethinylestradiol-recycling-lesson) - [[gastrointestinal/liver-disease]], [[pharmacology/metabolism-excretion]]); and the special-physiology-reshapers (pregnancy-incrementally-increasing-renal-clearance-and-volume-of-distribution-and-hepatic-activity-while-decreasing-albumin (the dose-requirements-actually-rise-in-pregnancy-for-lamotrigine-with-estrogen-induced-glucuronidation-then-crash-back-postpartum - a therapeutic-drag-and-crash-story worth telling once perfectly) and the ageing-kidney-liver-brain-with-preserved-serum-creatinine-masked-renal-loss-and-increased-sensitivity-at-effector-receptors (the benzodiazepines-opioids-anticholinergics-start-low-go-slow-doctrine-and-falling-renal-clearance-hidden-by-sarcopenia) and the paediatric-maturation-curves-allometric-scaling-and-glucuronidation-immaturity-chloramphenicol-grey-baby-lesson (the neonate-versus-older-child-versus-adolescent-dose-logic and therapeutic drug monitoring as growth medicine) - [[obstetrics-gynaecology/pregnancy-complications]], [[geriatrics-palliative/polypharmacy]], [[paediatrics/newborn]], [[paediatrics/growth-development]]).**
-:::
+### Ion trapping
 
-::: example The intensive care loading dose question {#ex-icu-vd}
-A septic 80kg man with capillary leak, on vasopressors, needs an antibiotic with a large loading-dose requirement and renal elimination; the ward protocol dose is being 'reduced because of the kidneys'.
+When two fluid compartments of different pH are separated by a membrane that only the un-ionised form can cross, the un-ionised concentration becomes equal on both sides at equilibrium. The *total* concentration is then higher on the side where the drug is more ionised. This is **ion trapping**. Weak acids accumulate on the alkaline side and weak bases on the acidic side.
+
+Ion trapping has some clinical uses. In severe salicylate poisoning, making the urine alkaline (with intravenous sodium bicarbonate) increases the ionised fraction of salicylate in the tubular fluid, so less is reabsorbed and more is excreted. Breast milk is slightly more acidic than plasma, so weak bases tend to reach higher concentrations in milk than weak acids do. The stomach is very acidic, so weak bases from the blood are trapped in gastric juice.
+
+::: example Where is aspirin un-ionised? {#ex-aspirin-ph}
+Aspirin (acetylsalicylic acid) is a weak acid with pKa about 3.5. Calculate the ratio of ionised to un-ionised drug in gastric juice at pH 2 and in plasma at pH 7.4, and comment on where it is absorbed.
 ::: solution
-**Volume-of-distribution-in-shock ([[#def-distribution]], [[emergency-critical-care/shock-fluids]], [[pharmacology/dosing-principles]]): the-correct-physics - loading-dose-depends-on-volume-of-distribution-not-clearance (loading dose equals target concentration times Vd, while maintenance follows clearance - and sepsis raises hydrophilic Vd (beta-lactams, glycopeptides, aminoglycosides, levetiracetam) at the same time as hypoperfusion lowers clearance, so cancelling one adjustment against the other is the classic error) - [[renal/acute-kidney-injury]]; the-protocol-audit - the-first-dose-given-full-because-underdosing-kills-and-only-maintenance-adjusted-for-renal-function-with-the-extended-interval-versus-continuous-infusion-beta-lactam-pharmacodynamics (time-above-MIC versus AUC-over-MIC versus Cmax-over-MIC pharmacodynamic classes matching adjustment to drug, with therapeutic drug monitoring culture for glycopeptides and aminoglycosides and the move to AUC-guided vancomycin) - [[microbiology/antimicrobials]], [[clinical-skills/laboratory-tests]]; the-continuous-infusion-context - propofol, fentanyl and midazolam accumulating overnight (the daily-interruption awakening-trial heritage, and why remifentanil and cisatracurium are the organ-independence heroes with their own histamine and cost issues), plus morphine's M6G accumulation in renal failure and buprenorphine's unsuitability as a drip - [[surgery/anaesthesia-pain]], [[renal/chronic-kidney-disease]]; and the systems answer - therapeutic drug monitoring and pharmacokinetic consult services where available, pharmacists at rounds, weight and fluid balance charted as dose variables, and de-escalation as patients recover (when the capillary leak closes the oedema shifts back, Vd falls while tubular injury lingers - which is why day-4 doses must be recalculated, not remembered) - [[clinical-skills/patient-safety]], [[pharmacology/patient-variation]].**
+From [[#eq-hh]] for an acid:
+
+- Stomach, pH 2: ratio $= 10^{2 - 3.5} = 10^{-1.5} \approx 0.03$. About 97% is un-ionised.
+- Plasma, pH 7.4: ratio $= 10^{7.4 - 3.5} = 10^{3.9} \approx 7900$. Almost all is ionised.
+
+In the stomach, aspirin is mostly in the lipid-soluble form, so some is absorbed there and enters gastric mucosal cells, where the near-neutral pH ionises and traps it. That local trapping contributes to aspirin's gastric irritation. Even so, most aspirin is absorbed in the small intestine. Although the pH there is higher and less drug is un-ionised at any moment, the surface area is hundreds of times larger and blood flow is greater, and absorption of the small un-ionised fraction continually shifts the equilibrium. pH partition alone does not predict the main site of absorption; surface area does.
 :::
 :::
 
-::: example The warfarin-bracelet interaction {#ex-fluconazole}
-A 74-year-old on stable warfarin (INR 2.4) is given fluconazole for vaginal candidiasis; nine days later INR is 8 with a nosebleed; she also took paracetamol 3g daily for a week.
+## Routes of administration {#sec-routes}
+
+The route determines how fast a drug acts, how much of it reaches the circulation, and which tissues see the highest concentration.
+
+| Route | Main advantages | Main limitations | Examples |
+|---|---|---|---|
+| Oral | Convenient, cheap, acceptable | Variable absorption; first-pass metabolism; needs a working gut and a person able to swallow | Most tablets and liquids |
+| Sublingual or buccal | Rapid; bypasses first-pass metabolism | Only small, potent, lipid-soluble drugs | Glyceryl trinitrate, buprenorphine |
+| Rectal | Useful when vomiting or unable to swallow; partly avoids first pass | Erratic absorption; acceptability | Diazepam, paracetamol suppositories |
+| Intravenous | Complete and immediate; dose can be titrated | Needs access; no way of recalling a dose; infection and infusion errors | Antibiotics in sepsis, anaesthetic induction |
+| Intramuscular | Fairly rapid; depot preparations possible | Painful; absorption depends on muscle blood flow | Adrenaline in anaphylaxis, vaccines, depot antipsychotics |
+| Subcutaneous | Self-administration; slow steady absorption | Small volumes; poor absorption if peripheral perfusion is poor | Insulin, low molecular weight heparin, many biologics |
+| Inhaled | High local concentration in the lung with low systemic dose | Depends on device technique | Bronchodilators, inhaled corticosteroids, anaesthetic gases |
+| Transdermal | Steady release over days | Slow onset and offset; skin irritation | Fentanyl, nicotine, oestradiol, hyoscine patches |
+| Topical | Local effect, little systemic exposure | Systemic absorption still possible | Skin, eye and nasal preparations |
+| Intrathecal or epidural | Direct access to the spinal cord and nerve roots | Specialist technique; serious harm from wrong drug | Spinal anaesthesia, some chemotherapy |
+
+Two entries deserve a comment. Topical does not mean free of systemic effects: β-blocker eye drops can cause bronchospasm and bradycardia because drug drains through the nasolacrimal duct and is absorbed from the nasal mucosa without first-pass metabolism ([[pharmacology/autonomic-drugs]]). And intrathecal administration is the route where a single error can be catastrophic; some drugs, such as vincristine, are fatal if given intrathecally, which is why national rules require their administration to be strictly separated.
+
+### Bioavailability
+
+::: definition Bioavailability and first-pass metabolism {#def-absorption}
+**Bioavailability** ($F$) is the fraction of an administered dose that reaches the systemic circulation unchanged. By definition $F = 1$ for an intravenous dose. For other routes it is estimated by comparing the area under the plasma concentration–time curve (AUC) after the test route with that after an intravenous dose:
+
+$$
+F = \frac{AUC_{\text{oral}} \times \text{Dose}_{\text{IV}}}{AUC_{\text{IV}} \times \text{Dose}_{\text{oral}}}.
+$$ {#eq-f}
+
+**First-pass (presystemic) metabolism** is the loss of drug in the gut wall and liver before it reaches the systemic circulation. Everything absorbed from the stomach and intestine passes through the portal vein and the liver first. A drug with a high hepatic extraction may therefore have a low oral bioavailability even though it is completely absorbed.
+:::
+
+AUC is used because, for drugs with linear kinetics, it is proportional to the amount of drug that has entered the circulation, whatever the shape of the curve. Drugs with substantial first-pass metabolism include glyceryl trinitrate, which is why it is given sublingually or transdermally, and morphine and propranolol, whose oral doses are larger than their intravenous ones. Lidocaine is not given orally for systemic effects for the same reason.
+
+First-pass metabolism varies between people and with liver disease. In cirrhosis, portal blood bypasses the liver through portosystemic shunts and hepatocyte function falls, so the bioavailability of high-extraction drugs can rise several-fold. Oral doses of such drugs therefore need particular care in severe liver disease ([[pharmacology/patient-variation]]).
+
+::: example Calculating bioavailability {#ex-bioavailability}
+In a pharmacokinetic study, healthy volunteers receive a drug as 10 mg intravenously on one occasion and 40 mg orally on another. The AUC after the IV dose is 400 µg·h/L and after the oral dose 480 µg·h/L. What is the oral bioavailability? What would an equivalent oral dose be for a patient currently stable on 5 mg IV?
 ::: solution
-**Three-mechanisms-one-INR ([[#def-absorption]], [[pharmacology/metabolism-excretion]], [[pharmacology/adverse-reactions]]): the-azole-warfarin-interface - CYP2C9-inhibition-reducing-S-warfarin-clearance (the stereochemistry lesson - S-warfarin is the potent CYP2C9 substrate - and fluconazole's long half-life meaning effects outlast the course, plus its CYP3A4 inhibition raising phenytoin and carbamazepine levels in the same visit) - [[pharmacology/patient-variation]]; the paracetamol contribution - paracetamol at high doses recruiting CYP pathways and generating a vitamin-K-antagonist metabolite, with the evidence for INR drift at 3-4 g daily read honestly - it is not the reassurance it is marketed as in anticoagulated patients and the alcohol-fasting-nutrition-vitamin-K-intake-ileitis-antibiotic-sterilised-gut-flora-vitamin-K-therapy-partner-effects-on-the-same-INR (the kale-and-greens dietary education and the bowel-constipation-versus-diarrhoea questions asked in clinic) - [[gastrointestinal/bowel-disease]], [[gastrointestinal/clinical-nutrition]]; the management-rehearsal - vitamin K dose and route by situation with prothrombin complex concentrate for serious bleeding and a documented restart strategy - plus the never-stop-warfarin-for-an-infection-alone rule, the discharge interaction check, and DOAC substitution when appropriate with valve, renal and antiphospholipid exclusions - [[blood/thrombosis-anticoagulation]], [[renal/chronic-kidney-disease]]); and the prevention-system - the-antimicrobial-communication-with-anticoagulation-clinic (a same-day call to the anticoagulation clinic, not a leaflet; 48-72 hour INR checks when interacting drugs start; alert cards and apps; and medicines reconciliation at every transition) - [[clinical-skills/records-handover]], [[clinical-skills/patient-safety]].**
+From [[#eq-f]]:
+
+$$
+F = \frac{480 \times 10}{400 \times 40} = \frac{4800}{16000} = 0.30.
+$$
+
+Only 30% of an oral dose reaches the systemic circulation. To deliver the same amount of drug as 5 mg IV, the oral dose would be $5/0.30 \approx 17$ mg (illustrative). In practice the conversion would use the product's licensed oral and intravenous doses from the formulary, because bioavailability varies between individuals and preparations.
 :::
 :::
 
-::: example The cefepime confusion {#ex-cefepime}
-A 78-year-old on cefepime for pneumonia, creatinine 180, develops myoclonus and reduced consciousness on day 4; the family asks whether the antibiotic is safe; EEG shows generalised periodic discharges.
+### What affects oral absorption
+
+Several factors change how much drug is absorbed and how quickly.
+
+- **Formulation.** The tablet must disintegrate and the drug dissolve before it can be absorbed. **Modified-release** preparations are designed to release drug slowly, smoothing the concentration profile and allowing less frequent dosing. They should not be crushed, and different brands of some modified-release products are not interchangeable, so prescribers specify the brand for drugs such as modified-release nifedipine and some antiepileptic drugs.
+- **Gastric emptying and gut motility.** Most absorption happens in the small intestine, so slowed gastric emptying (after opioids, in diabetic gastroparesis, during a migraine attack) delays onset. Rapid transit or diarrhoea can reduce absorption of slowly absorbed drugs.
+- **Food.** Food may delay, reduce or increase absorption. Some drugs are taken on an empty stomach for this reason, and others with food.
+- **Chelation and binding.** Tetracyclines and quinolones form insoluble complexes with calcium, iron, magnesium and aluminium. Levothyroxine absorption is reduced by calcium and iron preparations. Separating the doses by several hours avoids the interaction.
+- **Efflux and gut-wall metabolism.** P-gp and the enzyme CYP3A4 in the enterocytes reduce the bioavailability of many drugs. Inhibitors such as grapefruit juice (for CYP3A4) can raise it.
+
+**Bioequivalence** compares two products of the same drug, such as a generic and the original brand. Regulators in the UK, EU and USA generally accept two products as bioequivalent when the 90% confidence interval for the ratio of their AUCs, and of their peak concentrations, lies within 80% to 125%. For most drugs this makes generics interchangeable. For drugs with a narrow therapeutic index, tighter limits or consistent supply of one product may be needed.
+
+The rate of absorption matters as well as the extent. With slower absorption the peak concentration is lower and later, even when the total amount absorbed (the AUC) is the same. The figure shows this.
+
+::: widget plot
+f: F*2*ka/(ka-0.173)*(exp(-0.173*x)-exp(-ka*x)); 2*exp(-0.173*x)
+x: 0, 24
+y: 0, 2.2
+sliders: ka=1:0.2:4:0.1; F=0.6:0.1:1:0.05
+labels: \text{oral dose}; \text{same dose IV}
+caption: Illustrative plasma concentration (mg/L) against time (hours) after a single 100 mg dose with a volume of distribution of 50 L and an elimination half-life of 4 hours. The IV curve starts at its peak and falls exponentially. For the oral dose, $k_a$ is the absorption rate constant (per hour) and $F$ the bioavailability. Lower $k_a$ to see a flatter, later peak, as with a modified-release product; lower $F$ to see the whole curve and its area shrink. This is a simplified one-compartment model.
+:::
+
+## Distribution {#sec-distribution}
+
+Once in the blood, a drug distributes to the tissues. How fast depends on the blood flow to each tissue and on how easily the drug crosses capillaries and cell membranes. How far depends on how strongly the drug binds to plasma proteins compared with tissue components, and on its lipid solubility.
+
+Well-perfused organs such as the brain, heart, liver and kidneys equilibrate within minutes. Muscle takes longer, and fat, with its poor blood supply, longest of all. This sequence explains **redistribution**. After a single intravenous dose of a lipid-soluble anaesthetic such as propofol or thiopental, the drug reaches the brain within one circulation time and the person loses consciousness. Over the next few minutes the drug moves on into muscle and then fat, the brain concentration falls, and the person wakes, even though most of the drug has not yet been eliminated.
+
+::: definition Apparent volume of distribution {#def-distribution}
+The **apparent volume of distribution** ($V_d$) is the volume of fluid that would be needed to contain the total amount of drug in the body at the same concentration as in plasma:
+
+$$
+V_d = \frac{\text{amount of drug in the body}}{\text{plasma concentration}}.
+$$ {#eq-vd}
+
+After an intravenous bolus, $V_d$ is estimated as dose divided by the initial plasma concentration $C_0$ (extrapolated back to time zero). $V_d$ is not a real anatomical space. A drug that stays in plasma has a $V_d$ close to plasma volume; a drug concentrated in tissues can have a $V_d$ far larger than total body water.
+:::
+
+For an adult of 70 kg, plasma volume is about 3 L, extracellular fluid about 14 L and total body water about 42 L. These anchor points help interpret a drug's $V_d$:
+
+| Approximate $V_d$ | Interpretation | Examples |
+|---|---|---|
+| About 3–10 L | Largely confined to plasma; large, polar or highly protein-bound | Heparin, warfarin |
+| About 15–20 L | Extracellular fluid; polar drugs that cross capillaries but not cell membranes | Gentamicin and other aminoglycosides |
+| About 40 L | Total body water; small water-soluble molecules | Ethanol, lithium (roughly) |
+| Hundreds to thousands of litres | Extensive tissue binding or lipid storage | Digoxin, amiodarone, tricyclic antidepressants |
+
+The volume of distribution has three practical uses. First, it sets the **loading dose** needed to reach a target concentration quickly, a calculation developed in [[pharmacology/dosing-principles]]. Second, together with clearance it determines the half-life ([[pharmacology/metabolism-excretion]]): a drug spread through a large volume is removed from plasma slowly, because most of it is out of reach of the liver and kidneys at any moment. Third, it predicts whether extracorporeal removal can help in poisoning. Haemodialysis removes drug only from blood. It works well for lithium, which has a modest $V_d$ and is not protein-bound, but it is of little use for digoxin or tricyclic antidepressants, because almost all of the drug in the body is in the tissues.
+
+::: example A larger volume in sepsis {#ex-icu-vd}
+A 67-year-old woman weighing 70 kg is admitted to intensive care with abdominal sepsis. She has received 6 L of intravenous fluid and has widespread oedema. An aminoglycoside is started at an illustrative dose of 7 mg/kg. In a typical adult, the drug's $V_d$ is about 0.25 L/kg; in critically ill patients with capillary leak it may be about 0.4 L/kg. Estimate the peak concentration in each case and explain the significance.
 ::: solution
-**Neurotoxicity-as-exposure-pharmacokinetics ([[#def-excretion]], [[#def-distribution]], [[renal/chronic-kidney-disease]]): the mechanism - beta-lactam-GABA-A-antagonism-at-high-CSF-concentrations the cefepime predilection and penicillin seizure heritage, with inflamed meninges raising penetration and tubular handling adding nuance and renal-accumulation-with-eGFR-band-dosing-failure a creatinine of 180 at 78 may mean eGFR near 25 with acute-on-chronic sepsis, and the dose was never recalculated when creatinine rose; the diagnosis-and-action - stop-or-drastically-reduce-with-level-monitoring-where-available the differential of negative imaging against metabolic causes and non-convulsive status, the characteristic EEG pattern, cefepime levels where available, renal replacement therapy for refractory cases, and resolution within 48-96 hours as diagnostic confirmation - [[nervous-system/epilepsy]], [[clinical-skills/clinical-reasoning]]; the dosing-discipline-fix - the-renal-dosing-alert-with-current-weight-and-calculated-eGFR-in-the-e-prescribing-with-daily-recalculation-in-unstable-creatinine pharmacy protocols reviewing dosing on day 3, not just day 1, and stewardship rounds catching neurotoxicity signatures and the antibiotic-PK/PD-classes-remembered-time-above-MIC-drugs-needing-dose-frequency-thinking-not-just-total-dose how extended infusion and renal adjustment interact when total daily dose is what matters - [[microbiology/antimicrobials]], [[clinical-skills/patient-safety]]; and the communication - the-family-explanation-that-this-is-accumulation-not-allergy label management so future cephalosporin decisions are safe but not blanket-banned, and apology if the dose-recalculation delay was avoidable - [[clinical-skills/communication]], [[pharmacology/adverse-reactions]].**
+The dose is $7 \times 70 = 490$ mg.
+
+- Typical $V_d$: $0.25 \times 70 = 17.5$ L, so $C_{\text{peak}} \approx 490/17.5 = 28$ mg/L.
+- Expanded $V_d$: $0.4 \times 70 = 28$ L, so $C_{\text{peak}} \approx 490/28 = 17.5$ mg/L.
+
+Aminoglycosides kill bacteria in a concentration-dependent way, so the peak relative to the organism's minimum inhibitory concentration matters. Because the drug is polar and distributes in extracellular water, extra fluid in the interstitial space dilutes it, and the same mg/kg dose gives a peak nearly 40% lower. This is why loading doses of hydrophilic antibiotics are often not reduced in critical illness even when kidney function is poor: the loading dose depends on volume, and kidney function governs the later maintenance doses. Actual doses and monitoring follow local antimicrobial guidance and drug levels.
 :::
 :::
 
-::: example The lamotrigine pregnancy plan {#ex-lamotrigine}
-A 29-year-old with epilepsy controlled on lamotrigine 225mg plans pregnancy; she has read that anticonvulsants harm babies and that her dose will 'have to come down'.
+### Plasma protein binding
+
+Many drugs bind reversibly to plasma proteins. **Albumin** binds mainly acidic and neutral drugs, such as warfarin, phenytoin and many NSAIDs. **α₁-acid glycoprotein**, an acute-phase protein, binds many basic drugs, such as lidocaine and some antidepressants. Bound drug cannot cross capillary walls, act on receptors, be filtered by the glomerulus or (for most drugs) be metabolised. Only the **unbound (free) fraction** is active.
+
+::: warning Displacement interactions are usually overrated
+It is often said that a drug that displaces warfarin from albumin will cause bleeding. For most drugs this is not true in practice. When a displacing drug is added, the free fraction rises, but the extra free drug is also distributed to the tissues and cleared by the liver or kidney. Within a few half-lives the *free* concentration, which determines the effect, returns to about where it was; only the *total* concentration ends up lower. Interactions blamed on displacement nearly always turn out to involve inhibition of metabolism as well (as with warfarin and some antifungals, which inhibit CYP2C9). Displacement matters mainly in the brief period after a displacer is started, when it is given intravenously at high dose, or when the drug has a very high extraction ratio and a narrow therapeutic index.
+:::
+
+The more important consequence of protein binding is for **interpreting drug levels**. Most laboratory assays measure the total (bound plus free) concentration. If albumin is low, as in malnutrition, nephrotic syndrome, liver disease, late pregnancy or critical illness, the free fraction of a highly bound drug rises. A total phenytoin level that looks low or "in range" may correspond to a free concentration that is adequate or even toxic. Adjusting the dose to bring the total level up would then cause toxicity. Where possible a free level is measured; otherwise a correction is used and interpreted with clinical signs ([[pharmacology/dosing-principles]]).
+
+### Barriers: brain, placenta and milk
+
+The **blood–brain barrier** is formed by brain capillary endothelial cells joined by tight junctions, with P-gp and other efflux pumps in their membranes. Lipid-soluble drugs such as general anaesthetics, benzodiazepines and many opioids enter the brain readily. Polar drugs and P-gp substrates are kept out. Loperamide is an opioid that acts on the gut but has little central effect at usual doses, because P-gp pumps it out of the brain. Some drugs are designed to stay out: second-generation antihistamines such as cetirizine cause less sedation than older ones partly because they penetrate the brain poorly. Inflammation loosens the barrier, so penicillins, which normally penetrate poorly, reach effective concentrations in the cerebrospinal fluid in bacterial meningitis when given at high dose.
+
+The **placenta** lets most lipid-soluble drugs pass, so the safest assumption is that a drug in the mother's circulation reaches the fetus unless it is large or highly polar. Warfarin crosses the placenta and can cause fetal harm; heparins, large polar molecules, do not cross. Drugs given just before delivery, such as opioids, can affect the newborn. Prescribing in pregnancy is covered in [[pharmacology/patient-variation]].
+
+Most drugs pass into **breast milk** in small amounts. The dose received by the infant depends on the concentration in milk, the volume of milk and the infant's own ability to clear the drug, which is limited in premature and newborn infants. Specialist resources such as the UK Drugs in Lactation Advisory Service give drug-specific advice.
+
+::: example The weak base in breast milk {#ex-milk}
+A weak base with pKa 8.4 is not protein-bound. Plasma pH is 7.4 and milk pH is 7.0. Assuming only the un-ionised form crosses and equilibrium is reached, what is the ratio of total drug concentration in milk to that in plasma?
 ::: solution
-**Pregnancy-pharmacokinetics-done-right ([[#def-excretion]], [[obstetrics-gynaecology/pregnancy-antenatal]]): the-physiology-arc - oestrogen-induced-UGT1A4-glucuronidation-plus-increased-renal-clearance-plus-increased-volume-of-distribution-dropping-lamotrigine-levels-up-to-half-by-third-trimester the dose usually rising through pregnancy with monthly levels - seizure risk from underdosing outweighs the teratogenicity anxiety for lamotrigine - then returning to pre-pregnancy dose within two to three weeks postpartum, with infant sedation and rash monitoring in breastfeeding and the folate-and-neural-tube-timing-and-the-valproate-honesty-comparison-first the dose-dependent risk hierarchy, prevention-programme rules and registry information - [[nervous-system/epilepsy]]; the-contraception-interaction-loop - ethinylestradiol-contraceptives-lowering-lamotrigine-levels-by-inducing-glucuronidation the 30-50 percent lamotrigine drop with oestrogens, the enzyme-inducing antiepileptics lowering contraceptive efficacy, and the graded copper-IUD and levonorgestrel options - [[obstetrics-gynaecology/contraception-fertility]]); the monitoring-and-boundaries - the-therapeutic-drug-monitoring-in-pregnancy-as-standard-with-the-free-versus-total-interpretation-in-pregnancy-albumin-changes and the sleep-deprivation-and-adherence-support-as-kinetics-adjacent (the pre-pregnancy-mdt-with-neurology-and-obstetrics-and-the-planned-delivery-and-feeding-conversations) - [[clinical-skills/records-handover]]; and the risk-communication - the absolute-risk-numbers-for-seizure-control-versus-medication-exposure the UK and Australian registry numbers quoted as ranges, not points and the not-withdrawing-medication-in-fear-explained-and-the-documentation-of-shared-decision (the preconception-window-capture-rate-problem-across-unplanned-pregnancies) - [[clinical-skills/communication]], [[paediatrics/congenital-genetic]].**
+At equilibrium the un-ionised concentration $U$ is the same on both sides. The total concentration on each side is $U(1 + \text{ionised}/\text{un-ionised})$, with the ratio from [[#eq-hh]] for a base.
+
+- Plasma: $10^{8.4 - 7.4} = 10$, so total $= 11U$.
+- Milk: $10^{8.4 - 7.0} = 10^{1.4} \approx 25.1$, so total $\approx 26.1U$.
+
+Milk-to-plasma ratio $\approx 26.1/11 \approx 2.4$. The base is concentrated in the more acidic milk by ion trapping. A weak acid would show the opposite, with a ratio below 1. Real milk-to-plasma ratios also depend on protein binding, lipid solubility and active transport, so measured values are used where they exist.
 :::
 :::
 
 ::: quiz
-A drug with a very large volume of distribution (for example 10 L/kg) implies:
-- [x] Extensive tissue uptake; plasma contains only a small fraction of total body drug
-- [ ] Rapid renal elimination
-- [ ] High plasma protein binding
-- [ ] Slow gastrointestinal absorption
+A 30-year-old man has taken an overdose of a drug that has a volume of distribution of about 500 L in a 70 kg adult and is 95% protein-bound. A colleague suggests haemodialysis to remove it. Which statement is correct?
+- [ ] Dialysis will be effective because the drug is small enough to cross the membrane
+- [x] Dialysis will remove little of the total body load, because almost all the drug is in the tissues and most of the plasma drug is protein-bound
+- [ ] Dialysis will be effective because a large volume of distribution means the drug is mainly in plasma
+- [ ] Protein binding does not affect dialysis because only free drug is toxic
 ::: solution
-**Vd is an accounting ratio, not an anatomical space; a huge Vd means the drug has left plasma into tissues (fat, muscle, lysosomes, transporters), which is why such drugs need large loading doses and are hardly removed by dialysis ([[#def-distribution]]).**
+Dialysis can only remove unbound drug from blood passing through the dialyser. A volume of distribution of 500 L, far larger than total body water, means that the plasma contains a tiny fraction of the total amount; and with 95% protein binding, only a twentieth of that is free to be dialysed. Drugs that are well removed by dialysis, such as lithium, have a small volume of distribution and low protein binding.
 :::
 :::
 
-::: widget plot
-f: 100*exp(-x/0.4); 60*(1-exp(-x/0.15))*exp(-x/3); 45*(1-exp(-x/0.15))*exp(-x/6); 120*exp(-x/0.3)
-x: 0.01, 12
-y: 0, 130
-labels: \text{hours after IV dose},\ arbitrary\ %\text{plasma concentration (log-scaled view)};\ \text{distribution phase};\ \text{effect-site (brain) concentration};\ \text{muscle reservoir slow release};\ \text{lipid sequestration fast off}
-caption: Distribution then elimination ([[#def-distribution]]): after an IV bolus the falling plasma curve has a steep distribution limb and a flatter elimination limb; effect-site concentrations lag plasma, and lipophilic drugs both leave plasma and return from tissue stores - the kinetics of awakening by redistribution and of prolonged infusion accumulation ([[surgery/anaesthesia-pain]], [[pharmacology/dosing-principles]]).
+::: example A thyroid dose that stopped working {#ex-levothyroxine}
+A 72-year-old woman of South Asian heritage has taken levothyroxine for hypothyroidism for many years with stable thyroid function. After a fragility fracture she starts calcium carbonate with vitamin D and ferrous sulfate for iron deficiency, all taken with breakfast together with her levothyroxine. Three months later her TSH is 14 mU/L (previously 2). What is the likely explanation, and what principles guide the response?
+::: solution
+The likely cause is reduced absorption of levothyroxine. Calcium and iron salts bind levothyroxine in the gut, forming complexes that are not absorbed, so bioavailability falls and she becomes biochemically hypothyroid.
+
+The first step is to separate the doses rather than increase the levothyroxine. Levothyroxine is best taken on an empty stomach, and separating it from calcium and iron by at least four hours is usual advice. Thyroid function is rechecked after enough time for a new steady state (levothyroxine has a half-life of about a week, so about six weeks). If the dose were increased instead, she would become over-treated whenever the timing of the other tablets changed. Other causes of a rising TSH, such as adherence, a change of brand or coeliac disease, are also considered ([[endocrine/thyroid]]).
+:::
+:::
+
+::: history
+The measurement of drug absorption and distribution grew from the analytical chemistry of the twentieth century. In 1937 the Swedish physiologist Torsten Teorell published mathematical models of drug distribution between compartments, now regarded as the beginning of pharmacokinetics, although the field took its name only later. Friedrich Hartmut Dost in Germany introduced the term *Pharmakokinetik* in 1953. The pH-partition hypothesis, that un-ionised drug crosses membranes and that pH therefore governs absorption and trapping, was developed in the 1950s by Bernard Brodie, Lewis Schanker and colleagues at the National Institutes of Health, who measured the gastric and intestinal absorption of acids and bases in animals. The importance of bioavailability became obvious in the late 1960s and early 1970s, when changes in the inactive ingredients of phenytoin and digoxin tablets altered absorption enough to cause toxicity or loss of effect, and regulators began to require proof of bioequivalence for generic products.
+:::
+
+::: summary
+- Most drugs cross membranes by passive diffusion of their un-ionised, lipid-soluble form; carriers such as P-glycoprotein add uptake and efflux.
+- Ionisation follows the Henderson–Hasselbalch relation; pH differences across membranes cause ion trapping, which is used in salicylate poisoning and explains drug accumulation in milk and gastric juice.
+- The route of administration sets speed of onset, bioavailability and which tissues see most drug. Topical drugs can still have systemic effects.
+- Bioavailability $F$ is the fraction reaching the systemic circulation, measured by dose-corrected AUCs. First-pass metabolism in gut wall and liver reduces oral $F$.
+- The apparent volume of distribution relates the amount in the body to the plasma concentration. It determines loading doses, contributes to half-life and predicts whether dialysis can remove a drug.
+- Only unbound drug is active. Displacement interactions are rarely important, but low albumin changes the meaning of total drug levels.
+- The blood–brain barrier excludes polar drugs and P-gp substrates; most lipid-soluble drugs cross the placenta and enter breast milk.
 :::
 
 ## Where this leads
 
-Metabolism and clearance in [[pharmacology/metabolism-excretion]]; dose design in [[pharmacology/dosing-principles]]; variation across patients and populations in [[pharmacology/patient-variation]]; transport disease and enzyme defects in [[cell-biochemistry/membranes-transport]] and [[cell-biochemistry/lipid-amino-acid-metabolism]].
-
-::: history
-**Pharmacokinetics is the science of where medicines actually go: Piorry's 1854 absorption studies from the stomach and nineteenth-century emic and cathartic dose empiricism and the E.H.-Starling-1894-absorption-and-secretion-contrast between the gut and the kidney (the single investigator powering two of medicine's great integrative sciences - [[physiology/homeostasis-body-fluids]]); the-modern-era-begins-with-competition-for-measurement - the arrival of sensitive plasma assays in the 1960s enabling the modern one- and two-compartment era, with clinical pharmacology units of 1968-1971 measuring half-lives in patients - [[clinical-skills/laboratory-tests]]; the-the thiopental redistribution finding of the 1950s that taught anaesthesia awakening was pharmacokinetics not metabolism (Price's 1937 general-anaesthesia-as-physical-chemistry thesis, ahead of its time, and the later receptor-era correction) - [[surgery/anaesthesia-pain]]; the-turnover-numbers - the Rowland and Tozer textbook generation who made clearance and volume of distribution into teachable arithmetic (the clinical-pharmacokinetics-ward-rounds-culture of the 1970s-80s and the therapeutic drug monitoring boom for phenytoin-gentamicin-lithium) - [[pharmacology/dosing-principles]]; and the-transporter-and-barrier-era - the multidrug-resistance transporter discovery in cancer-that explained normal-tissue-barriers (the blood-brain-barrier-and-placenta-efflux-paradigm) and the-1990s-Caco-2-and-permeability-solubility-classification-era (the BCS as regulatory science) and the biologic-era-pharmacokinetics-fcRn-recycling-explaining-antibody-half-lives-and-anti-drug-antibodies and the GLP-1-era-gastric-emptying-rearranging-everyday-drug-absorption - [[immunology/adaptive-responses]], [[endocrine/diabetes]].**
-:::
-
-::: summary
-- Bioavailability is dissolution, permeability, gut-wall metabolism and efflux, then hepatic first-pass; high-extraction drugs depend on liver blood flow, low-extraction drugs on intrinsic capacity and binding.
-- Modified-release design buys convenience and side-effect smoothing but can fail completely with altered transit, tube feeding and bariatric anatomy - check per drug, not per class.
-- Volume of distribution is accounting, not anatomy: sepsis, oedema, obesity, pregnancy and burns change it, and loading dose follows Vd while maintenance follows clearance.
-- Only unbound drug acts, but displacement interactions are rarely clinically important except for restrictive-clearance, high-extraction or narrow-index drugs like phenytoin and warfarin in context.
-- The blood-brain barrier, placenta and lactation are transporter-managed interfaces, not walls; fetal and infant exposure follow molecular size, lipophilicity, ionisation and the pumps.
-- Route choice is applied physiology - the gut, the lung, the skin, the muscle, the pump - and every switch between routes is a dose change requiring rethinking, not a lookup.
-:::
-
-::: exercise Why this drug is not dialysable {level=1}
-Predict and justify dialytic removal for: digoxin, warfarin, levetiracetam, lithium, phenytoin, cefepime.
-::: solution
-**Dialysability-rules-applied ([[#def-excretion]]): the-checklist - Vd (greater-than-1-L-per-kg-generally-not-appreciably-dialysed), protein-binding (high-bound-not-removed), molecular-weight, water-solubility and volume of distribution-comparable surface-flux and clearance: digoxin-huge-Vd-and-binding-not-removed-and-re-dose-timing-irrelevant (the digoxin-specific-fragment-antibody-for-toxicity-and-the-post-dialysis-level-rebound-measurement-window) - [[cardiovascular/arrhythmias]]; warfarin-highly-bound-not-removed-and-vitamin-K-and-factors-decide-bleeding; levetiracetam-small-water-soluble-low-binding-significantly-removed-with-post-dialysis-supplementation and lithium-small-water-soluble-removal-with-IRRT-while-intermittent-dialysis-can-produce-rebound-neurotoxicity the dialysis disequilibrium caution for lithium and serial levels with clearance continued until the trajectory is safe - [[psychiatry/mood-disorders]], [[emergency-critical-care/poisoning]]; phenytoin-protein-bound-and-hepatic-not-dialysed-with-free-fraction-interpretation-in-uraemia-already-covered; cefepime-renally-cleared-and-removable-hence-neurotoxicity-rescue-with-RRT-and-dose-timing-around-dialysis-days - [[renal/acute-kidney-injury]], [[emergency-critical-care/critical-care]].**
-:::
-:::
-
-::: exercise Sort the first-pass questions {level=2}
-Explain the mechanism and the clinical rule for: propranolol dose varying fourfold between patients; sublingual glyceryl trinitrate; morphine oral-to-IV ratio one-third; levodopa with carbidopa; tacrolimus levels collapsing after a rifampicin course stopped two weeks ago.
-::: solution
-**First-pass-and-bioavailability-quiz ([[#def-absorption]]): propranolol-high-extraction-with-portal-flow-and-CYP2D6-genetics-and-protein-binding-giving-fourfold-oral-level-variation (the start-low-titrate-to-effect-with-high-extraction-drugs and why-IV-doses-are-tiny-and-flows-matter-in-shock-and-liver-disease); sublingual-GTN-bypassing-the-portal-circulation-with-swallow-reducing-bioavailability-to-negligible (the dry-mouth-and-absorption-technique-education and the patch-with-nitrate-free-interval-design) - [[cardiovascular/coronary-artery-disease]]; oral-morphine-glucuronidated-in-gut-and-liver-with-M6G-active-metabolite-renal-fate (the one-third-ratio-shifting-in-liver-and-kidney-disease-and-when-to-switch-route) - [[renal/chronic-kidney-disease]]; levodopa-with-peripheral-decarboxylase-inhibitor-reducing-peripheral-degradation-and-allowing-brain-delivery-plus-the-protein-competed-absorption-meal-timing-and-domperidone-for-gastroparesis-and-the-high-protein-disease-fluctuation-argument the intestinal gel pump and subcutaneous agonist rescue devices - [[nervous-system/movement-disorders]]; and rifampicin-persistent-CYP3A4-and-P-gp-induction-falling-tacrolimus-and-contraceptive-and-DOAC-levels-for-two-plus-weeks-after-stopping-with-enzyme-turnover-half-life-explaining-the-lag (the transplant-and-HIV-and-TB-co-treatment-dose-reconstruction-and-level-monitoring-protocol and the rifabutin-substitution-logic) - [[infectious-diseases/tuberculosis]], [[immunology/transplant-tumour-immunology]].**
-:::
-:::
-
-::: exercise Review medicines for two livers {level=2}
-Compare prescribing logic for morphine, doxycycline, furosemide, warfarin, diclofenac and ceftriaxone in (a) cirrhosis with ascites and (b) cholestatic jaundice.
-::: solution
-**Liver-state-prescribing ([[#def-excretion]], [[gastrointestinal/liver-disease]]): cirrhosis-with-ascites - portosystemic-shunting-raising-oral-bioavailability-of-high-extraction-morphine-with-sedation-encephalopathy-risk (opioid alternatives chosen with encephalopathy risk in mind, lowest dose, shortest course) plus hypoalbuminaemia affecting restrictive-clearance drugs and fragile renal perfusion - furosemide still works but watch sodium and hepatorenal risk, with spironolactone first for ascites physiology, NSAIDs rejected outright, and SBP-prophylaxis ciprofloxacin chosen with tendon, QTc and resistance caveats - [[geriatrics-palliative/polypharmacy]], [[renal/acute-kidney-injury]]; and-cholestatic-jaundice - biliary-excretion-drugs-accumulating-and-obstructive-pattern-warnings ceftriaxone biliary sludge and calcium precipitation, doxycycline hepatotoxicity rather than biliary accumulation, and the cholestatic-risk drug list read per product and the-warfarin-paradox-both-states-prolong-INR-vitamin-K-malabsorption-in-cholestasis-versus-factor-synthesis-failure-in-cirrhosis-with different corrections - vitamin K versus clotting factors - and hepatically metabolised drugs dosed by extraction and intrinsic clearance, not bilirubin, with Child-Pugh and MELD-based insert advice rarely validated - [[blood/haemostasis-bleeding]]; and the meta-rule - ask-which-part-of-liver-handling-this-drug-uses-then-ask-what-the-disease-breaks then-dose-and-monitor-with-levels-if-narrow-index - [[pharmacology/patient-variation]].**
-:::
-:::
-
-::: exercise Design the outpatient IV antibiotic service {level=3}
-Design OPAT for bone and complex infections: drug selection on PK grounds, line and access, monitoring, safety governance, equity and environmental considerations.
-::: solution
-**OPAT-design ([[#def-excretion]], [[public-health/health-systems-economics]], [[microbiology/antimicrobials]]): drug-selection-on-pharmacokinetic-grounds - once-daily-or-continuous-eligibility ceftriaxone with biliary and platelet cautions, daptomycin with CPK monitoring, oritavancin and teicoplanin loading protocols with their failure caveats, ertapenem sequenced by susceptibility, and pump type matched to home-nurse availability plus the oral-step-down-eligibility-with-high-bioavailability-drugs-fluoroquinolones-linezolid-trimethoprim-doxycycline-metronidazole-clindamycin-versus-beta-lactams-low-oral-exposure (the OVMA and POET and IDURUS trial-era rules-read-guidelines) - [[cardiovascular/valve-congenital-disease]]-no: endocarditis keep with [[cardiovascular/valve-congenital-disease]] for endocarditis is wrong; use endocarditis home is cardiovascular? keep with replace: [[infectious-diseases/healthcare-infections]] for [[surgery/orthopaedics]]-yes; lines-and-safety - PICC versus midline versus tunnelled line versus port by duration thrombosis, occlusion and line-infection bundles (the logic of [[microbiology/infection-control]]), patient and carer competency training with visual aids and a 24-hour phone line, and compatibility, flush and home-pharmacy standards; monitoring-and-governance - the-protocol-driven-bloods-renal-hepatic-CBC-and-drug-specific-plus-levels-for-glycopeptides-with-community-bloods-access-and-the-result-actioning-safety-net and the shared-care-tri-party-communication-GP-hospital-community-nurse-and-the-adverse-event-reporting-route and the daily-review-and-stop-date-not-open-ended; and the equity-and-green-layer - who can safely do OPAT - social and digital exclusion checks, cold storage and sterile preparation access and interpreting and literacy-adapted education, antibiogram-driven policies against broad-spectrum convenience, environmental footprint of drug, line and travel versus admission read with proportion, and cost-effectiveness against bed days with patient-reported outcomes - [[public-health/determinants-inequalities]], [[clinical-skills/records-handover]].**
-:::
-:::
+How the drug is removed again is the subject of [[pharmacology/metabolism-excretion]], and how absorption, volume and clearance combine into a dosing regimen is developed in [[pharmacology/dosing-principles]]. The effects of age, pregnancy, liver disease and body size on these processes are in [[pharmacology/patient-variation]]. Membrane transport itself is covered in [[cell-biochemistry/membranes-transport]], and the body fluid compartments in [[physiology/homeostasis-body-fluids]].
 
 ## Exercises
 
-::: exercise Explain bioavailability to a student {level=1}
-Why is oral morphine roughly one-third as potent as parenteral, why does grapefruit juice affect some drugs within hours and others over days, and why does food help some tablets and ruin others?
+::: exercise Volume of distribution from a bolus {level=1 check="25"}
+A 500 mg intravenous bolus of a drug gives an extrapolated initial plasma concentration of 20 mg/L. What is the apparent volume of distribution in litres?
 ::: solution
-**Bioavailability-in-plain-words ([[#def-absorption]]): morphine's-first-pass - gut-wall-glucuronidation-plus-hepatic-extraction (the M6G renal-accumulation warning and the way liver and kidney disease shift the oral-to-parenteral potency ratio) - [[renal/chronic-kidney-disease]], [[gastrointestinal/liver-disease]]; grapefruit-time - reversible-inhibition-in-the-gut-hours-versus-time-dependent-inactivation-requiring-new-enzyme-days (mechanism-based inactivation by furanocoumarins, the priority CYP3A4-substrate list (felodipine, simvastatin, ciclosporin, tacrolimus), and the dose-dependence of juice versus fruit versus marmalade) - [[pharmacology/metabolism-excretion]]; food-effects-two-directions - high-fat meals rescuing lipophilic, poorly soluble drugs while other interactions lower absorption - dairy, iron and tetracyclines chelating; bisphosphonates, levothyroxine and coffee-and-calcium tablet rules; and modified-release dose dumping with alcohol as the classic failure, plus post-bariatric choices of immediate over extended release - [[gastrointestinal/digestion-absorption]], [[endocrine/thyroid]].**
+From [[#eq-vd]], $V_d = 500/20 = 25$ L. This is larger than extracellular fluid but smaller than total body water for an adult.
 :::
 :::
 
-::: exercise Choose the route and defend it {level=1}
-For each scenario pick the route and justify with absorption physiology: status-epilepticus in a patient without IV access; a drug with 95 percent first-pass in a cirrhotic; an antibiotic in severe diarrhoea with ileus; an infusion needing reliable offset in liver failure; adrenaline in anaphylaxis.
+::: exercise Un-ionised fraction of a base {level=1 check="1"}
+A weak base has a pKa of 9.4. What percentage of the drug is un-ionised in plasma at pH 7.4? Give your answer to the nearest whole number.
+::: hint
+For a base, ionised/un-ionised $= 10^{\mathrm{p}K_a - \mathrm{pH}}$. The un-ionised percentage is $100/(1 + \text{ratio})$.
+:::
 ::: solution
-**Route-selection-clinics ([[#def-absorption]], [[#def-distribution]]): status-non-IV - buccal-midazolam-or-intranasal-versus-rectal-diazepam (nasal mucosal surface and lipophilicity kinetics, paramedic practice evidence, and the IV-if-you-get-it rule) - [[nervous-system/epilepsy]], [[emergency-critical-care/resuscitation]]; first-pass-cirrhotic - parenteral-or-sublingual-bypass-with-the caution that portosystemic-shunting-raises-oral-bioavailability-of-high-extraction-drugs-toward-IV-territory (the oral-to-IV ratio being unsafe in liver disease, with prodrugs needing hepatic activation (oseltamivir, clopidogrel) as the exception - [[gastrointestinal/liver-disease]]; ileus-orally-unreliable - IV-therapy-plus-the-modified-release-abandonment-list (the ghost-tablet-in-the-stool explanation versus never-crush rules, and rectal administration still working in ileus because colonic absorption does not need transit) - [[gastrointestinal/bowel-disease]]; offset-in-liver-failure - organ-independent-elimination-drugs-remifentanil-ester-hydrolysis-cis-atracurium-Hofmann-elimination (the context-sensitive half-time table and organ-independent relaxant options like cisatracurium, with each agent's histamine profile) - [[surgery/anaesthesia-pain]]; anaphylaxis - IM-into-mid-outer-thigh-fastest-most-reliable-absorption-versus-subcutaneous-unreliable-in-shock (the deltoid-versus-thigh absorption comparison, autoinjector technique teaching, the five-minute repeat rule, and intravenous adrenaline only diluted, titrated and by the experienced) - [[emergency-critical-care/anaphylaxis]], [[immunology/hypersensitivity]].**
+Ratio $= 10^{9.4 - 7.4} = 100$. Un-ionised percentage $= 100/101 \approx 0.99\%$, which is **1%** to the nearest whole number. Many basic drugs, such as tricyclic antidepressants and local anaesthetics, are mostly ionised in plasma; the small un-ionised fraction is enough for them to cross membranes because it is constantly replenished.
 :::
 :::
 
-::: exercise Prescribe in extreme body size {level=2}
-Dose-plan for: 150kg patient needing prophylactic anticoagulation and a beta-lactam; 38kg adult with normal renal function needing lipophilic psychiatric maintenance therapy; a burn patient day 3 with creatinine clearance now high; anasarca with heart failure needing a hydrophilic drug such as digoxin.
+::: exercise Choosing a route {level=1}
+For each situation, suggest a suitable route and give one reason: (a) a person with severe vomiting who needs an antiemetic; (b) a child having a prolonged seizure at home, with no intravenous access; (c) long-term treatment of asthma to minimise systemic exposure to corticosteroid; (d) a person in septic shock who needs an antibiotic now.
 ::: solution
-**Body-size-prescribing ([[#def-distribution]], [[pharmacology/patient-variation]]): obesity - weight-band-or-adjusted-body-weight-tables-by-drug (enoxaparin weight-banding with anti-Xa monitoring at extremes, augmented beta-lactam dosing evidence in obesity, induction doses of lipophilic drugs by lean rather than total weight, and the direct-oral-anticoagulant debate above 120 kg or BMI 40) - [[blood/thrombosis-anticoagulation]], [[respiratory/respiratory-infections]]; low-weight-adult - mg-per-kg continuity from paediatrics with absorption and albumin checks, altered lipophilic-drug distribution in cachexia, toxicity lessons from fat and protein depletion, and therapeutic drug monitoring services where available - [[psychiatry/mood-disorders]], [[pharmacology/dosing-principles]]; burns-hypermetabolic-early - increased renal and hepatic clearance, expanded Vd and raised alpha-1-glycoprotein driving higher infusion rates, with the burn pharmacokinetic guidelines read and the suxamethonium hyperkalaemia contraindication from about day two remembered - [[surgery/trauma]], [[pharmacology/metabolism-excretion]]; and anasarca-hydrophilic-drug - larger-Vd-needs-a-larger-or-split-loading-dose-then-normal-maintenance-with-levels (digoxin dosed on lean body mass with renal function driving maintenance, the fat-does-not-store-digoxin myth busted, and levels interpreted with sampling timing) - [[cardiovascular/heart-failure]].**
+(a) A non-oral route such as intramuscular, intravenous, subcutaneous or (for some drugs) buccal or rectal, because oral drug will be vomited before it is absorbed. (b) Buccal (or intranasal) midazolam, or rectal diazepam, because they can be given by a carer without intravenous access and act within minutes; the choice follows the child's care plan. (c) Inhaled, because the drug is delivered to the airways and the systemic dose is much lower than for oral treatment. (d) Intravenous, because absorption is complete and immediate and does not depend on gut or muscle perfusion, which may be poor in shock.
 :::
 :::
 
-::: exercise Design the biosimilar switching protocol {level=3}
-Your trust plans to switch stable patients on originator adalimumab and infliximab to approved biosimilars. Design the pharmacokinetic, immunogenicity, communication and governance plan.
+::: exercise Bioavailability from two studies {level=2 check="0.4"}
+After 100 mg orally, a drug's AUC is 30 mg·h/L. After 20 mg intravenously, its AUC is 15 mg·h/L. Calculate the oral bioavailability as a decimal fraction.
+::: hint
+Compare AUC per mg for each route.
+:::
 ::: solution
-**Biosimilar-switching-design ([[#def-distribution]], [[clinical-skills/patient-safety]], [[public-health/health-systems-economics]]): the-science-brief - biologics-PK-rules-of-the-house (FcRn recycling extending half-lives, reticuloendothelial catabolism rather than hepatic metabolism or renal excretion, subcutaneous absorption variability, and why biosimilars are not generics - living-cell manufacture answered by comparability exercises and extrapolated indications, explained to patients) - [[immunology/adaptive-responses]], [[cell-biochemistry/proteins-enzymes]]; the-immunogenicity-surveillance - anti-drug and neutralising antibodies reducing efficacy and increasing infusion reactions, with the concomitant-methotrexate immunogenicity evidence and measuring drug levels plus antibodies at loss of response - [[musculoskeletal/inflammatory-arthritis]], [[gastrointestinal/bowel-disease]]; the-switching-process - the-nocebo-planned-for-not-hoped-away (consistent information from prescriber, pharmacist, nurse and leaflet; shared decision with opt-out without stigma; symptom-scored follow-up at 6-12 weeks, not open-loop discharge; clinician confidence training before patient questions; switching at the next prescribed pen rather than halting a course; and device-change and site-rotation training) - [[clinical-skills/communication]]; and the-governance - the-pharmacovigilance-and-registry-participation-and-the-prescription-record-carrying-brand-and-lot (the traceability-law-satisfied-by-design-not-hope) and the-comparator-monitoring-dashboards-switched-versus-unchanged-cohorts (flare attribution against disease-burden baselines) and cost savings ring-fenced for medicines rather than absorbed and the patient-and-carer-voice-in-the-design - [[public-health/health-systems-economics]], [[medical-ethics-law/justice-resources]].**
+Using [[#eq-f]], $F = (30 \times 20)/(15 \times 100) = 600/1500 = 0.4$. Only 40% of the oral dose reaches the systemic circulation unchanged, through incomplete absorption, first-pass metabolism or both.
+:::
+:::
+
+::: exercise Milk and plasma {level=2 check="2.4"}
+Using the method of [[#ex-milk]], calculate the milk-to-plasma ratio of total concentration for a weak base with pKa 8.4, assuming plasma pH 7.4 and milk pH 7.0, no protein binding and that only un-ionised drug crosses. Give your answer to one decimal place. Then state, without calculation, whether the ratio for a weak acid with pKa 4.4 would be above or below 1.
+::: solution
+Plasma total $= U(1 + 10^{1.0}) = 11U$; milk total $= U(1 + 10^{1.4}) \approx 26.12U$. Ratio $\approx 2.37$, which is **2.4** to one decimal place.
+
+For the weak acid, ionisation is greater in the more alkaline plasma, so it is trapped in plasma and the milk-to-plasma ratio is below 1.
+:::
+:::
+
+::: exercise Dialysis or not? {level=2}
+Explain why haemodialysis is used in severe lithium toxicity but not in digoxin toxicity, referring to volume of distribution and protein binding. What other treatment exists for serious digoxin toxicity, and why does it work?
+::: solution
+Lithium is a small ion that is not protein-bound and distributes roughly in total body water (a volume of distribution of under 1 L/kg). A large share of the body load is in the blood and extracellular fluid at any moment, so dialysis removes a substantial amount, and lithium is not metabolised, so the kidney is otherwise its only route out.
+
+Digoxin has a very large volume of distribution, several litres per kilogram, because it binds extensively to Na⁺/K⁺-ATPase in muscle and other tissues. The plasma holds only a small fraction of the total, so dialysing it removes very little.
+
+For serious digoxin toxicity, digoxin-specific antibody fragments (Fab) are used. They bind free digoxin in plasma with very high affinity, lowering the free concentration; digoxin then moves from tissue binding sites into plasma down its concentration gradient and is bound in turn. The complex is excreted by the kidney. Indications and dosing follow toxicology advice ([[emergency-critical-care/poisoning]]).
+:::
+:::
+
+::: exercise Oedema and the first dose {level=3 check="17.5"}
+Following [[#ex-icu-vd]], a 70 kg patient receives 490 mg of an aminoglycoside. If her volume of distribution has risen to 0.4 L/kg, what peak concentration (mg/L) would you expect, assuming instantaneous distribution? Give the exact value. Then explain why the loading dose of a hydrophilic antibiotic is usually based on body weight and volume rather than on kidney function, and what monitoring follows.
+::: solution
+$V_d = 0.4 \times 70 = 28$ L, so $C_{\text{peak}} = 490/28 = 17.5$ mg/L.
+
+The concentration reached by the first dose depends only on the dose and the volume into which it distributes (see [[#eq-vd]]). Kidney function determines how fast the drug is then removed, which governs the dosing interval and later doses. Reducing the first dose because the creatinine is raised would give a low peak just when effective killing of bacteria matters most. After the first dose, drug levels (often a timed level used with a nomogram or a trough level, according to local protocol) and kidney function guide the interval and decide whether treatment continues.
+:::
+:::
+
+::: exercise A misleading phenytoin level {level=3}
+A 79-year-old man of Black African heritage with epilepsy, chronic liver disease and an albumin of 22 g/L (reference about 35–50 g/L) is admitted with unsteadiness and nystagmus. His total plasma phenytoin is reported at 9 mg/L, which is slightly below the commonly quoted total range of 10–20 mg/L. A junior doctor suggests increasing the dose. Explain why this would be unwise, using the concept of free fraction, and outline how the level should be interpreted.
+::: hint
+Phenytoin is normally about 90% bound to albumin.
+:::
+::: solution
+Phenytoin is normally about 90% bound to albumin, so a total level of 10–20 mg/L corresponds to a free (active) level of roughly 1–2 mg/L. With an albumin of 22 g/L, and possibly reduced binding in liver disease, the free fraction may be twice normal or more. A total of 9 mg/L could then correspond to a free level of about 2 mg/L or higher, at or above the top of the usual free range.
+
+His unsteadiness and nystagmus are typical signs of phenytoin toxicity, consistent with a high free level despite a low-looking total. Increasing the dose would make him worse, and phenytoin's saturable metabolism means the rise could be disproportionate ([[pharmacology/metabolism-excretion]]).
+
+The level should be interpreted with the clinical picture. A measured free phenytoin concentration is the best guide where available; otherwise an albumin-adjusted estimate is used, with caution, as described in [[pharmacology/dosing-principles]]. Other causes of his symptoms, such as alcohol, other sedative drugs, posterior circulation stroke or hepatic encephalopathy, also need to be considered.
 :::
 :::

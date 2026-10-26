@@ -1,143 +1,328 @@
-Drug-receptor interactions are the physics underneath every prescription: **a molecule meets a protein, binds reversibly according to affinity, occupies some fraction of receptors, and the clinical effect depends on occupancy, efficacy, receptor reserve and the downstream amplification between binding and response - until tolerance, desensitisation and genetic variation rewrite the rules in a given patient.** Pharmacodynamics - what the drug does - is where potency, selectivity, antagonism, agonism and the steepness of dose-response become practical tools for choosing drugs and doses.
+Almost every drug works by binding to a protein in the body and changing what that protein does. Salbutamol binds to a receptor on airway smooth muscle and relaxes it. Omeprazole binds to the proton pump of the stomach and stops it secreting acid. Naloxone binds to opioid receptors and does nothing at all, which is exactly why it reverses an opioid overdose: it occupies the receptor and keeps the opioid out.
 
-This chapter covers receptor families and signalling, ligands from agonists to biased agonists, dose-response mathematics, the determinants of selectivity and off-target effects, and the regulation of response including tolerance.
+This part of pharmacology is called **pharmacodynamics**: what the drug does to the body. Its central questions are simple. What does the drug bind to? How tightly? Once bound, does it switch the target on, switch it off, or simply sit there? And how does the response grow as the dose rises? The answers explain why some drugs have a ceiling to their effect, why one antagonist can be overcome by more agonist and another cannot, why tolerance develops, and why a drug that is safe at one dose can be dangerous at three times that dose. The next chapters, starting with [[pharmacology/absorption-distribution]], deal with the other half of the subject, **pharmacokinetics**: what the body does to the drug.
 
-## Receptor families
+## Drug targets {#sec-targets}
 
-::: definition Targets and their machinery {#def-families}
-**The four-plus families with their clinical avatars (ligand-gated-ion-channels-in-milliseconds - the nAChR-and-GABAA-and-NMDA-and-glycine-and-5HT3-and-nicotinic-neuromuscular-junction with the the ion-channel-drug-locations-map (subunit composition determining sensitivity, with the alpha-1 versus alpha-2/3 sedation-versus-anxiolysis design programmes) - [[physiology/membrane-potentials]], [[physiology/synapses]], [[surgery/anaesthesia-pain]]); G-protein-coupled-receptors-in-seconds - the seven-transmembrane-receptor-superfamily with Gs-and-Gi-and-Gq-and-G12/13-modules and the-receptor-crystallography-era-structure-basis-of-activity-and-nanobody-complexes (the beta-adrenoceptor-and-opioid-and-muscarinic-and-dopamine-and-prostaglandin-receptors-with-their-drug-empires) - [[pharmacology/autonomic-drugs]], [[nervous-system/movement-disorders]] for dopamine receptors; kinase-and-nuclear-receptors-in-minutes-to-hours - the receptor-tyrosine-kinases (insulin-and-IGF-and-EGFR-and-HER2-and-Trk-and-JAK-STAT-cytokine-associated-kinases-with-the-small-molecule-inhibitor-empire) and the nuclear-receptor-superfamily (steroid-and-thyroid-and-steroid-like-vitamin-D-and-RA-and-PPAR-and-LXR-and-FXR-with-ligand-induced-transcription-complexes-and-coactivator-repressor-exchange) - [[cell-biochemistry/signalling-cell-cycle]], [[endocrine/reproductive-endocrinology]]); and the-transporters-and-iozymes-and-enzymes-as-targets - SLC-and-ABC-transporters (the-SERT-and-NET-and-DAT-and-SSRIs-and-tricyclics-and-cocaine-and-amphetamines and the-SGLT2-inhibitors and the-OCT-and-P-gp-and-blood-brain-barrier-carriers) - [[cell-biochemistry/membranes-transport]]; and enzymes - ACE, COX, kinases, cholinesterase, carbonic anhydrase, xanthine oxidase, DHFR, thymidylate synthase and the bacterial transpeptidase, with the enzyme inhibitor as irreversible or tight binder and target turnover defining duration (the aspirin-platelet-lifespan-and-MAOI-recovery-weeks-heritage) - [[pharmacology/drug-development-prescribing]]; plus the-non-receptor-niches - anticoagulants-acting-through-antithrombin (heparin's-pentasaccharide-induced-conformational-change-as-allosteric-virtuosity) and the-lithium-and-inositol-and-GSK3-oddities and the-osmotic-and-physical-agents-reminder-that-not-every-drug-needs-a-protein-target - [[blood/haemostasis-bleeding]].**
+Most drugs act on one of four kinds of protein: receptors, ion channels, enzymes and transporters. A few act by simple physical or chemical means instead. Osmotic laxatives hold water in the gut lumen, and antacids neutralise acid. These are the exceptions.
+
+::: definition Receptor and the four receptor superfamilies {#def-families}
+A **receptor** is a protein that recognises a specific chemical signal, such as a hormone or neurotransmitter, and converts binding into a change in cell function. Receptors fall into four superfamilies, which differ in structure and in speed.
+
+1. **Ligand-gated ion channels** (ionotropic receptors). The receptor is itself a channel. Binding opens it within milliseconds. Examples are the nicotinic acetylcholine receptor at the neuromuscular junction and the GABA-A receptor in the brain.
+2. **G protein-coupled receptors** (GPCRs). A single protein crosses the membrane seven times. Binding activates a G protein inside the cell over seconds. $G_s$ stimulates adenylyl cyclase and raises cyclic AMP; $G_i$ inhibits it; $G_q$ activates phospholipase C, which raises intracellular calcium. Adrenoceptors, muscarinic receptors, opioid receptors and dopamine receptors are all GPCRs, and roughly a third of licensed drugs act on this family.
+3. **Kinase-linked receptors**. Binding activates an enzyme, usually a tyrosine kinase, on the inside of the membrane. The effect develops over minutes to hours and often changes gene expression. The insulin receptor and many growth factor receptors belong here.
+4. **Nuclear receptors**. These sit inside the cell. Lipid-soluble ligands such as steroid hormones, thyroid hormone and vitamin D cross the membrane, bind, and the receptor–ligand complex alters transcription of target genes. Effects take hours to days.
 :::
 
-## Ligands and responses
+The other three target classes are just as important clinically. **Ion channels** that are not receptors, such as voltage-gated sodium channels, are blocked by local anaesthetics and by some antiepileptic and antiarrhythmic drugs. **Enzymes** are inhibited by drugs such as ACE inhibitors, statins, aspirin and the cholinesterase inhibitors. **Transporters** carry ions or molecules across membranes; selective serotonin reuptake inhibitors block the serotonin transporter, loop diuretics block the Na⁺/K⁺/2Cl⁻ cotransporter in the loop of Henle, and digoxin inhibits the Na⁺/K⁺-ATPase. The physiology of these signalling pathways is in [[cell-biochemistry/signalling-cell-cycle]] and [[physiology/hormones]].
 
-::: definition Affinity, efficacy and antagonism {#def-ligands}
-**The-vocabulary-made-visual (occupancy-versus-effect - the-affinity-Kd-and-potency-EC50-distinction-with-pA2-for-antagonists-and-why-EC50-shifts-with-both-affinity-and-system-factors-and-therapeutic-index-therapeutic-window-and-margin definitions) - [[pharmacology/dosing-principles]]; efficacy-continuum (full-agonist-maximal-effect-at-100-percent-occupancy-often-not-required - the-receptor-reserve-spare-receptor-concept-explaining-why-partial-agonists-can-cap-a-response and-the-intrinsic-activity-quantified - the-pindolol-and-buprenorphine-and-aripiprazole-partial-agonist-clinical-corollaries-with-ceiling-effects-and-flip-to-antagonist-behaviour-in-high-tone-states the buprenorphine precipitated-withdrawal mechanics and aripiprazole dopamine-stabiliser framing - [[psychiatry/substance-use]]); antagonist-types-clinically (competitive-surmountable-with-parallel-rightward-shift-overcome-by-more-agonist (the propranolol-adrenaline-shift and the flumazenil-and-naloxone-competitive-rescues-with-their-own-toxicity-risks in chronic users) versus-noncompetitive-insurmountable-with-depressed-maxima (phenoxybenzamine's irreversible alpha blockade and aspirin's covalent COX-1 as prototypes, with receptor or platelet turnover setting recovery) versus-pharmacological-antagonism-at-different-receptors-acting-on-same-physiology (the histamine-versus-adrenaline-in-anaphylaxis and-the-AngII-versus-volume) versus-functional-antagonism-downstream (the counter-regulatory hormone opposition to insulin by cortisol, glucagon and adrenaline) - [[immunology/hypersensitivity]], [[endocrine/diabetes-complications]]; the-allosteric-revolution (the PAMs and NAMs with probe dependence and saturable cooperativity (the z-drug selectivity for the alpha-1 benzodiazepine site, the AMPA modulator programmes and the mGluR2/3 adjunctive-psychiatry trials record) and ligand-directed biased agonism (beta-arrestin-recruited signalling versus G-protein pathways, and the G-protein-biased mu-opioid agonist hopes with their mixed phase-3 findings as a lesson in not over-reading signalling bias) and-allosteric approaches avoiding orthosteric competition with endogenous ligand spikes (the CCR5 HIV entry inhibitor maraviroc and the calcimimetic cinacalcet as a calcium-sensing-receptor PAM) - [[cardiovascular/circulation-blood-pressure]], [[endocrine/bone-calcium]); and inverse-agonists-and-constitutive-activity (receptors-signal-without-ligand-and-inverse-agonists-suppress-basal-tone - distinction-between-antagonist-blocking-agonist-binding-and-inverse-agonist-shifting-equilibrium the beta-carboline partial inverse agonists and flumazenil's weak inverse behaviour, with reverse agonism detected only in constitutively active assay systems and the constitutively active mutations testotoxicosis from LH-receptor activation, McCune-Albright from Gs-alpha, and TSH-receptor causes of agonist-independent hyperthyroidism - [[genetics/non-mendelian-inheritance]], [[endocrine/thyroid]], [[endocrine/reproductive-endocrinology]).**
+Signalling through a GPCR or kinase is **amplified**. One activated receptor can activate many G proteins, each of which drives an enzyme that makes many second-messenger molecules. That amplification is why a tissue can give a maximal response when only a small fraction of its receptors are occupied, an idea that returns below as the receptor reserve.
+
+## Binding: affinity and occupancy {#sec-binding}
+
+Drug binding is usually reversible. Drug molecules attach to and leave receptors continually, and at equilibrium the rate of association equals the rate of dissociation. Applying the law of mass action to this equilibrium gives one of the most useful equations in pharmacology.
+
+::: theorem Occupancy and the law of mass action {#thm-occupancy}
+For a drug A binding reversibly to a single class of receptor, the fraction of receptors occupied at equilibrium is
+
+$$
+p = \frac{[A]}{[A] + K_D}
+$$ {#eq-occupancy}
+
+where $[A]$ is the concentration of free drug and $K_D$ is the **equilibrium dissociation constant**. At $[A] = K_D$, half the receptors are occupied. A smaller $K_D$ means higher **affinity**: less drug is needed to occupy the same fraction of receptors.
 :::
 
-## Curves and their clinical reading
-
-::: definition Dose-response mathematics {#def-curves}
-**The two curves every dose decision lives between (the graded concentration-response-hyperbolic-with-Emax-and-EC50-and-Hill-slope-cooperativity steepness - the log-scale-sigmoid-and-why-thresholds-are-graphic-conventions (the pA2-schild-analysis-for-competitive-antagonists and the-receptor-cloning-era-affinity-spectra) and the-quantal-population-curves-giving-ED50-and-TD50-and-the-therapeutic-index-ratio-versus-the-therapeutic-window-and-the-safety-margins-of-steep-toxicity-slopes (the digoxin-and-lithium-and-warfarin-narrow-index-practice-corollaries) - [[pharmacology/dosing-principles]], [[pharmacology/patient-variation]]); potency-versus-efficacy-clinically (why-morphine-10mg-versus-pethidine-100mg-equianalgesia-tables-exist and why-partial-agonists-ceiling-the-effect-no-matter-the-dose-with-the-analgesic-and-psychotomimetic-ceiling-lessons and why-intrinsic-sympathomimetic-beta-blockers-are-avoided-post-infarction and the-equipotency-map-as-posology-not-superiority) - [[surgery/anaesthesia-pain]]; the-signalling-amplification-explains-receptor-reserve (the-Gprotein-cascade-seconds-and-second-messenger-diffusion-and-kinase-cascades-with-1000-fold-amplification-and-spare-receptors-giving-maximal-response-at-10-percent-occupancy (the-isoprenaline-curve-left-shifted-for-cyclic-AMP-accumulation and the desensitisation-receptors-in-reserve logic of tolerance) - [[cell-biochemistry/signalling-cell-cycle]] keep with [[physiology/membrane-potentials]] this cell-biochem slug exists? yes - keep); agonist-sparing-and-sensitisation-opposites (the-upregulation-after-chronic-blockade-with-the-beta-blocker-rebound-withdrawal-hypertension-angina-mechanisms-read-honestly-versus-adenosine-receptor-upregulation-and-caffeine-headache-heritage (the-rebound-headache-with-analgesic-overuse as systems-pharmacology) - [[nervous-system/headache-pain]], [[cardiovascular/hypertension]]) and the-supersensitivity-states the pupil-testing-legacy and the-levodopa-primed-dyskinesia-pulsatile-stimulation-concept and keep: antipsychotic withdrawal supersensitivity psychosis and the dopamine-receptor adaptations behind tardive dyskinesia) - [[nervous-system/movement-disorders]], [[psychiatry/treatments-mental-health-law]]; and tolerance-mechanisms-classified-by-site (pharmacokinetic-tolerance-metabolism-induction carbamazepine self-induction and the metabolic-adaptation component of alcohol tolerance versus-pharmacodynamic-tolerance-receptor-loss (agonist-induced internalisation - the beta2-agonist downregulation with regular use, benzodiazepine receptor uncoupling, and opioid desensitisation and recycling, distinct from naloxone's acute reversal) versus-learning-and-behavioural-compensation-versus-reversed-tolerance-sensitisation (kindling and stimulant sensitisation, and alcohol-benzodiazepine cross-tolerance with withdrawal danger in both directions) versus-tachyphylaxis-quick-depletion-models (tyramine and ephedrine tachyphylaxis from noradrenaline store depletion) - [[psychiatry/substance-use]], [[pharmacology/metabolism-excretion]], [[respiratory/asthma-copd]].**
+::: proof
+Let the total receptor concentration be $R_T$, the free receptors $R$ and the occupied receptors $AR$. The forward reaction $A + R \to AR$ runs at rate $k_{+1}[A][R]$ and the reverse reaction at $k_{-1}[AR]$. At equilibrium these are equal, so $[A][R]/[AR] = k_{-1}/k_{+1}$, which is defined as $K_D$. Substituting $[R] = R_T - [AR]$ gives $[A](R_T - [AR]) = K_D [AR]$. Rearranging, $[AR](K_D + [A]) = [A] R_T$, and so the occupied fraction is $[AR]/R_T = [A]/([A] + K_D)$. The curve is a rectangular hyperbola in $[A]$; plotted against $\log[A]$ it becomes the familiar S shape, rising from 10% to 90% occupancy over a 81-fold range of concentration (two log units, roughly).
 :::
 
-::: example The unequal equivalences {#ex-opioid-equivalence}
-A patient on morphine 60mg daily oral is switched to an equipotent fentanyl patch because of nausea; two days later, confused and sedated with saturations 89 percent on air; the conversion table used a 1:2.5 ratio with no safety reduction.
+Two consequences matter at the bedside. First, occupancy depends on the *free* concentration at the receptor, not on the total amount in plasma, which is why protein binding matters (see [[pharmacology/absorption-distribution]]). Second, the relationship flattens at the top. Raising the concentration from $K_D$ to $3K_D$ takes occupancy from 50% to 75%, but going from $9K_D$ to $27K_D$ only moves it from 90% to about 96%. Beyond a certain point, extra drug buys almost no extra occupancy, only extra off-target effects.
+
+::: example How much more occupancy does a doubled dose buy? {#ex-occupancy}
+An illustrative antagonist has $K_D = 2$ nmol/L at its receptor. At the usual dose the free concentration at the receptor is 6 nmol/L. A prescriber considers doubling the dose, which (assuming linear kinetics) doubles the free concentration to 12 nmol/L. What fraction of receptors is occupied before and after?
 ::: solution
-**Equipoise-of-equivalence-tables ([[#def-curves]], [[pharmacology/dosing-principles]], [[surgery/anaesthesia-pain]]): why-tables-mislead - incomplete-cross-tolerance-means-rotating-opioids-requires-a-dose-reduction-of-25-50-percent-by-design and potency-ratios-are-derived-in-mild-pain-short-acting-opioid-naive-populations-extrapolated-to-heavy-chronic-pain (the oral-morphine-to-transdermal-fentanyl-ratio-varies-with-body-mass-and-sweating-and-adiposity-and-patch-surface-and-the-heating-pad-and-fever-release-risks-with-their-own-black-square-history) - [[pharmacology/patient-variation]], [[emergency-critical-care/poisoning]]; the-fentanyl-patch-physics - depot-in-skin-and-slow-offset (the 12-24-hour-half-life-after-removal-explaining-why-rescue-naloxone-needs-infusion-or-repeat-dosing-not-one-ampoule and why patches-are-wrong-for-unstable-pain-and-opioid-naive-patients-and-fevers) and the mucosal-vs-transdermal-vs-intranasal-misuse-epidemiology-named-clinically (the breakthrough-pain-lozenge-versus-parenteral-misuse-and-the-prescription-monitoring-programmes-evidence-honesty) and the metabolite-direction-of-travel - morphine-6-glucuronide-accumulation-in-renal-impairment-versus-fentanyl-no-active-metabolites-versus-methadone-QTc-and-accumulation-half-life-15-60h-versus-buprenorphine-partial-agonist-ceiling-with-precipitation-risk-and-its-own-unique-rotation-rules - [[renal/chronic-kidney-disease]], [[pharmacology/metabolism-excretion]]; the acute management - naloxone titrated to ventilation not consciousness in an opioid-dependent patient, with the precipitated-withdrawal hazards of pain crisis, agitation and pulmonary oedema, and low-dose dilution protocols read against standard ampoules and monitoring-window-past-fentanyl-offset and opioid-nausea stratagems - switch-the-opioid first, then dopamine antagonists or 5HT3 agents with their boundaries - [[emergency-critical-care/resuscitation]]; and the system fix - the equivalence table with a mandatory dose-reduction step in the order set and the patch prescription checklist documenting the opioid-tolerant definition and the-never-patch-for-nausea-alone (the nausea-is-often-the-pain-or-another-drug audit) and the-pharmacist-led-rotation-protocol-with-48-hour-review - [[clinical-skills/patient-safety]], [[pharmacology/adverse-reactions]], [[geriatrics-palliative/symptom-control]].**
+Use [[#eq-occupancy]].
+
+Before: $p = 6/(6 + 2) = 0.75$, so 75% of receptors are occupied.
+
+After: $p = 12/(12 + 2) = 0.857$, about 86%.
+
+Doubling the dose increases occupancy by only 11 percentage points. If side effects come from a different, lower-affinity target, doubling the concentration may increase occupancy of *that* target much more in proportion. This is the arithmetic behind the common clinical observation that dose increases at the top of the range add more adverse effects than benefit.
 :::
 :::
 
-::: example The beta-blocker puzzle {#ex-beta-block}
-An asthmatic on high-dose salbutamol and inhaled steroid is started on carvedilol for heart failure with reduced ejection fraction; wheeze worsens; meanwhile her resting HR is 52 and her tremor has vanished; the cardiology letter says 'carvedilol evidence-based; cannot see relevance of asthma.'
-::: solution
-**Receptor-selectivity-in-one-patient ([[#def-ligands]], [[pharmacology/autonomic-drugs]], [[cardiovascular/heart-failure]]): the-receptor-geography - beta1-cardiac-versus-beta2-bronchial-vascular-uterine-metabolic with the-selectivity-ratio-decreasing-with-dose (the-cardioselectivity-is-a-spectrum-not-a-property-teaching and the carvedilol's-non-selective-plus-alpha1-blockade-pharmacology-versus-bisoprolol-atenolol-beta1-preferring-versus-propranolol-lipophilic-CNS-terrain) and the partial-agonist-ISA-drugs-avoided-post-infarction and the inverse question - does having asthma forbid beta-blockade - the-observational-trials-with-asthma-COPD-and-HF-showing-selective-beta-blockers-often-not-the-problem the COPD beta-blocker observational survival-benefit era, the cautious cardioselective asthma trials with protocol and mentoring, and the honest absolute-contraindication list - severe bronchospasm on high-dose therapy versus mild asthma with normal spirometry; the-therapeutic-pleiotropy - tremor blockade, with the propranolol essential-tremor and performance-anxiety ethics adjacency and-migraine-prophylaxis and-thyroid-storm-T4-to-T3-peripheral-effect-of-propranolol and-portal-hypertension-variceal-prophylaxis (the non-selective beta-blocker and carvedilol nuance of titrating to heart rate while avoiding hypotension in ascites) and-rate-control (the AF-cascade) - [[nervous-system/headache-pain]], [[endocrine/thyroid]], [[gastrointestinal/liver-disease]], [[cardiovascular/arrhythmias]]; the-practical-resolution - the-structure-of-the-decision (is-the-asthma-active? the blood-eosinophils say? and can the asthma phenotype be managed with upgraded ICS-formoterol while keeping the life-saving carvedilol and is there a cardioselective substitution - bisoprolol or nebivolol - with what evidence per drug and a joint plan with a wheeze diary, PEF monitor and two-week review, not two specialists guessing separately) - [[respiratory/asthma-copd]], [[clinical-skills/communication]]; and the-dose-response-lesson-underneath - beta-blockade-of-cardiac-beta1-at-therapeutic-dose-with-bronchial-beta2-encroachment-as-concentration-rises and a heart rate of 52 without symptoms signifying adequate cardiac blockade with room to titrate, not to stop and the abrupt-stop rebound danger taught to the patient - [[pharmacology/adverse-reactions]].**
-:::
+## Agonists, antagonists and efficacy {#sec-ligands}
+
+Binding is only half the story. A drug that binds may or may not activate the receptor once it is there. Pharmacology separates these two properties.
+
+::: definition Affinity, efficacy and the types of ligand {#def-ligands}
+**Affinity** is how strongly a drug binds to its receptor (measured by $K_D$). **Efficacy** (intrinsic activity) is the ability of the bound drug to activate the receptor and produce a response. The two are independent: a drug can have high affinity and no efficacy at all.
+
+- A **full agonist** binds and activates the receptor enough to produce the maximal response the tissue can give. Examples: morphine at the μ-opioid receptor, salbutamol at β₂-adrenoceptors in airway muscle.
+- A **partial agonist** binds and activates, but even at full occupancy produces less than the maximal response. Examples: buprenorphine at μ-opioid receptors, varenicline at nicotinic receptors.
+- An **antagonist** binds without activating. It produces no response itself but blocks the response to an agonist. Examples: naloxone, atenolol, losartan.
+- An **inverse agonist** binds and reduces the activity of a receptor that is active even without any agonist (**constitutive activity**). Many drugs once described as antagonists, including several H₁ antihistamines, behave as inverse agonists in experimental systems.
 :::
 
-::: example The anaesthetist's receptor tour {#ex-theatre}
-A caesarean under general anaesthesia: propofol induction, suxamethonium fasciculations then paralysis, sevoflurane maintenance, remifentanil infusion, then neostigmine plus glycopyrrolide at closure and a spinal headache question afterwards.
-::: solution
-**One-theatre-receptor-tour ([[#def-families]], [[#def-ligands]], [[surgery/anaesthesia-pain]]): the-induction - GABA-A-PAM-propofol-at-its-own-site-with-beta-subunit-sensitivity-and-thermoreceptor-oddities (etomidate's adrenal 11-beta-hydroxylase lesson as the contrast) - [[endocrine/adrenal]]; the-neuromuscular-junction - depolarising-block-suxamethonium-with-fasciculations-then-desensitisation and succinylcholine apnoea from butyrylcholinesterase genetic variation, and phase-II block modified by temperature and acidosis (the malignant-hyperthermia-ryanodine-receptor-CACNA1C-genetics and dantrolene as the RyR1-blocker) and non-depolarising-rocuronium-with-sugammadex-encapsulation as a direct-agent-antidote-replacing-the-neostigmine-arithmetic - [[nervous-system/neuromuscular]]; the-volatile-agent - potassium-TREK-and-two-pore channels-and-glycine-and-glutamate-modulation-multiple-targets-explaining-the-missing-single-receptor (the MAC-concept as potency comparison and the blood-gas-solubility-kinetics with context-sensitive half-time and the second-gas-effect and the fetal-neonatal-exposure questions) - [[respiratory/gas-exchange]], [[obstetrics-gynaecology/labour-birth]]; the-remifentanil - ester-hydrolysis-pharmacokinetics-context-sensitive-half-time-invariance-with-remifentanil's-unique-design and opioid-induced hyperalgesia and mu-receptor adaptation, including why prophylactic naloxone infusions backfired and the chest-wall-rigidity-versus-anaphylaxis-versus-seizure differentiation on induction; and the-reversal-mathematics - neostigmine-amplifies-endogenous-acetylcholine-at-all-cholinergic-receptors-hence-muscarinic-co-medication with glycopyrrolide's quaternary structure sparing fetus and brain and the depth-of-block-based dosing and quantitative acceleration monitoring to prevent residual paralysis - [[pharmacology/absorption-distribution]].**
-:::
+The partial agonist has a useful double nature. On its own, it stimulates the receptor modestly. In the presence of a full agonist, it competes for the same receptors and *lowers* the response towards its own smaller maximum. Buprenorphine illustrates both sides. Its ceiling on respiratory depression makes it safer than full opioid agonists in opioid substitution treatment. But given to someone with a high level of a full agonist on board, its high affinity displaces that agonist, the response falls abruptly, and the person can go into **precipitated withdrawal**. For this reason buprenorphine is started only once withdrawal signs have begun ([[psychiatry/substance-use]]).
+
+A receptor can also be blocked indirectly. In **physiological (functional) antagonism**, two drugs act on different receptors with opposite effects on the same tissue. Adrenaline in anaphylaxis is the classic example: it does not block histamine receptors, but by stimulating α₁ and β₂ receptors it constricts vessels and dilates bronchi, opposing what histamine and other mediators are doing ([[emergency-critical-care/anaphylaxis]]). **Chemical antagonism** is simpler still: the antagonist binds the drug itself, as protamine binds heparin.
+
+::: warning Potency is not the same as efficacy
+A drug is more **potent** when a smaller dose gives a given effect; it is more **efficacious** when its maximal effect is larger. Fentanyl is far more potent than morphine, but both are full agonists with the same maximal effect, so "more potent" does not mean "stronger" in any clinically useful sense. The equianalgesic tables used in palliative care convert between doses precisely because potency differs while efficacy is the same. A clinically better drug is usually one with greater efficacy, better selectivity or better kinetics, not simply higher potency.
 :::
 
-::: example The clinic pharmacology question bag {#ex-clinic-bag}
-Five questions in one morning clinic: why does the nitrate patch come off at night; why does abstinence from caffeine cause headache but not from noradrenaline cells; why do nitrates cause tolerance but not the hydralazine; why does the SSRI dose stay fixed while the beta-blocker is titrated; why does the levodopa dose get complicated rather than simply increased over years?
-::: solution
-**Five-mechanism-answers ([[#def-curves]], [[#def-ligands]]): nitrate-window - soluble guanylyl cyclase desensitisation, thiol depletion and counteractivation, solved by asymmetric dosing, with hydralazine's NO-independent profile and nitrate headache from meningeal vasodilation - [[cardiovascular/coronary-artery-disease]]; caffeine-headache - adenosine receptor upregulation with withdrawal vasodilation, contrasted with sympathetic adaptation in orthostatic intolerance - [[nervous-system/headache-pain]], [[cardiovascular/circulation-blood-pressure]]; SSRI-fixed-versus-beta-blocker-titrated - receptor-occupancy-versus-clinical-effect-curves (the SERT occupancy plateau with flat efficacy curves but steep side-effect slopes) versus the beta-blocker's graded occupancy with heart rate as pharmacodynamic biomarker - [[psychiatry/mood-disorders]], [[cardiovascular/hypertension]]; levodopa-complexity - the narrowing window from progressing denervation, pulsatile stimulation plasticity and peripheral decarboxylase adaptation, with dyskinesia from supersensitivity and peak levels - the rationale for continuous delivery and for COMT versus MAO-B adjunct choices - [[nervous-system/movement-disorders]]; and the-meta-lesson for patients - drugs-tune-systems-that-fight-back and the difference between tolerance, disease progression, and sensitisation is diagnosis not philosophy - [[clinical-skills/communication]].**
-:::
+## Dose–response curves {#sec-curves}
+
+If response is measured at a range of agonist concentrations in a single tissue or person, the result is a **graded** dose–response curve. If instead a fixed all-or-none effect (such as "seizure stopped" or "death") is recorded in a population, the result is a **quantal** curve. Each has its own uses.
+
+::: definition Graded and quantal dose–response relationships {#def-curves}
+A **graded** curve relates concentration to the size of a response in one system. It is usually described by the **Hill equation**
+
+$$
+E = \frac{E_{\max}\,[A]^{n}}{EC_{50}^{\,n} + [A]^{n}}
+$$ {#eq-hill}
+
+where $E_{\max}$ is the maximal response (a measure of efficacy), $EC_{50}$ is the concentration giving half the maximal response (a measure of potency) and $n$ is the **Hill coefficient**, which sets the steepness. With $n = 1$ the curve has the same shape as [[#eq-occupancy]].
+
+A **quantal** curve plots the percentage of a population showing a defined effect against dose. Its midpoint is the **ED₅₀** (the dose effective in 50% of subjects); for a toxic effect it is the **TD₅₀**, and in animal studies the **LD₅₀**. The **therapeutic index** is
+
+$$
+TI = \frac{TD_{50}}{ED_{50}}.
+$$ {#eq-ti}
+
+A drug with a low therapeutic index, such as digoxin, lithium, warfarin, gentamicin or phenytoin, has little separation between doses that help and doses that harm, and usually needs monitoring.
 :::
 
-::: quiz
-A partial agonist at a receptor is best described as a ligand that:
-- [x] Binds with intrinsic activity below a full agonist and can cap or oppose maximal response
-- [ ] Binds but has zero intrinsic activity
-- [ ] Binds a different receptor to produce the opposite effect
-- [ ] Always acts as an antagonist in vivo
-::: solution
-**Partial agonists occupy receptors with submaximal intrinsic activity; they produce a ceiling effect and behave as antagonists where endogenous tone is high - the buprenorphine and aripiprazole principle ([[#def-ligands]]).**
-:::
-:::
+Dose–response curves are almost always plotted against the logarithm of dose or concentration. On a log axis the hyperbola becomes a symmetrical S-shaped curve, the middle part is nearly straight, and a change in potency appears as a sideways shift without any change in shape. The figure below shows the main patterns.
 
 ::: widget plot
-f: 100/(1+exp(-2.2*(x-2))); 100/(1+exp(-2.2*(x-2.7)))*0.55; 100/(1+exp(-2.2*(x-3))); 100/(1+exp(-2.2*(x-2)))*0.45
-x: 0, 6
-y: 0, 110
-labels: \text{log dose},\ \%E_{max}\text{of maximal response};\ \text{full agonist};\ \text{partial agonist (ceiling)};\ \text{full agonist + competitive antagonist (shifted right, same maximum)};\ \text{full agonist + non-competitive antagonist (maximum depressed)}
-caption: Curves explain clinical behaviour ([[#def-ligands]], [[#def-curves]]): a partial agonist's ceiling caps both benefit and harm; a competitive antagonist shifts curves right without depressing maxima, so more agonist can override it - while a non-competitive or insurmountable blocker depresses the maximum, and the system's recovery then depends on receptor turnover ([[pharmacology/dosing-principles]]).
+f: 100/(1+10^(-x)); 40/(1+10^(-x)); 100/(1+(1+B)*10^(-x)); 100*p/(1+10^(-x))
+x: -3, 4
+y: 0, 105
+sliders: B=10:0:100:1; p=0.5:0:1:0.05
+labels: \text{full agonist}; \text{partial agonist}; \text{agonist + competitive antagonist}; \text{agonist + irreversible antagonist}
+hlines: 50
+caption: Simplified log concentration–response curves, with concentration in multiples of the agonist's $EC_{50}$ (so $x = 0$ is the $EC_{50}$). Move $B$, the competitive antagonist concentration expressed as a multiple of its $K_B$: the curve shifts right by $\log_{10}(1+B)$ but reaches the same maximum. Move $p$, the fraction of receptors left after an irreversible antagonist: the maximum falls. This illustrative model ignores receptor reserve, which in real tissues delays the fall of the maximum.
+:::
+
+The Hill coefficient matters more than its abstract look suggests. A steep curve ($n > 1$) means a small change in concentration crosses from little effect to near-maximal effect. Neuromuscular blocking drugs and many anaesthetic agents have steep curves, which is one reason they are titrated and monitored so carefully.
+
+::: example Reading a therapeutic index {#ex-ti}
+In an illustrative animal study of a new anticonvulsant, the ED₅₀ for abolishing seizures is 8 mg/kg and the TD₅₀ for severe sedation is 120 mg/kg. A second drug has ED₅₀ 5 mg/kg and TD₅₀ 20 mg/kg. Calculate both therapeutic indices and comment.
+::: solution
+From [[#eq-ti]]: drug 1 has $TI = 120/8 = 15$; drug 2 has $TI = 20/5 = 4$.
+
+Drug 2 is more potent (lower ED₅₀) but has the smaller margin of safety. The therapeutic index compares only the midpoints of two curves, however. If the toxicity curve is shallow, some individuals will be harmed at doses well below TD₅₀. A more cautious comparison uses a ratio such as TD₁/ED₉₉, the dose harmful to 1% of subjects divided by the dose effective in 99%. In humans, the practical equivalent is the **therapeutic window**: the range of plasma concentrations associated with benefit without unacceptable toxicity, which is the basis of drug monitoring in [[pharmacology/dosing-principles]].
+:::
+:::
+
+### Receptor reserve
+
+In many tissues an agonist produces its maximal response when only a fraction of receptors are occupied. The unoccupied receptors are called **spare receptors**, and the phenomenon **receptor reserve**. It follows from amplification: once enough receptors are active to saturate a downstream step, further activation adds nothing.
+
+Receptor reserve has three practical consequences. First, the EC₅₀ of a full agonist is lower than its $K_D$; the drug looks more potent in the tissue than its binding alone would suggest. Second, an irreversible antagonist first shifts the agonist curve to the right and only later, once the reserve is used up, depresses the maximum. Third, whether a drug behaves as a full or a partial agonist depends partly on the tissue. A drug with modest efficacy can give a full response in a tissue with a large reserve and only a partial one in a tissue with few receptors. This is one reason why the same β-agonist can have different effects on airway and on cardiac muscle.
+
+## Antagonism {#sec-antagonism}
+
+Antagonists are among the most widely used drugs: β-blockers, angiotensin receptor blockers, antihistamines, antipsychotics (largely dopamine D₂ antagonists) and opioid antagonists. How they block matters, because it decides whether the block can be overcome.
+
+::: theorem Competitive antagonism and the dose ratio {#thm-schild}
+A **competitive (surmountable) antagonist** binds reversibly to the same site as the agonist. In its presence the agonist concentration–response curve shifts to the right in parallel, with the same maximum. The size of the shift is the **dose ratio** (DR): the factor by which the agonist concentration must be increased to give the same response. For a simple competitive antagonist at concentration $[B]$ with dissociation constant $K_B$, the Gaddum–Schild equation gives
+
+$$
+DR = 1 + \frac{[B]}{K_B}.
+$$ {#eq-schild}
+
+On a log axis the curve moves right by $\log_{10}(DR)$. The **pA₂** of an antagonist is the negative log of the concentration that gives a dose ratio of 2; for a simple competitive antagonist it equals $-\log_{10} K_B$.
+:::
+
+::: proof
+With agonist A and antagonist B competing for the same receptor, mass action applied to both gives the occupancy by A as
+
+$$
+p_A = \frac{[A]}{[A] + K_D\left(1 + [B]/K_B\right)}.
+$$
+
+This is [[#eq-occupancy]] with $K_D$ multiplied by $1 + [B]/K_B$. If the response depends only on $p_A$, any response obtained at agonist concentration $[A]$ without antagonist is obtained at $[A]\,(1 + [B]/K_B)$ with it. That multiplying factor is the dose ratio. Because the maximum of $p_A$ is still 1 as $[A]$ becomes large, the maximal response is unchanged.
+:::
+
+**Irreversible antagonists** bind covalently or dissociate so slowly that they are effectively permanent. Adding more agonist cannot displace them, so once receptor reserve is exhausted the maximal response falls. Recovery needs new receptor or enzyme protein. Phenoxybenzamine, used before surgery for phaeochromocytoma, irreversibly blocks α-adrenoceptors. Aspirin acetylates cyclooxygenase-1 in platelets; because platelets have no nucleus and cannot make new enzyme, the effect lasts for the life of the platelet, about 7 to 10 days. Omeprazole and the other proton pump inhibitors bind the proton pump covalently, which is why a drug with a plasma half-life of about an hour suppresses acid for much longer.
+
+**Non-competitive antagonists** act at a different site from the agonist, or block a step after the receptor, so they also depress the maximum. Many act at **allosteric** sites (below).
+
+::: example Overcoming a β-blocker {#ex-beta-block}
+A 64-year-old woman of Caribbean heritage who takes bisoprolol for angina is admitted with a fast, poorly tolerated tachyarrhythmia and is later found to have taken a much larger quantity of a β-blocker than prescribed. Her blood pressure is low and her heart rate 38/min. Explain, using [[#thm-schild]], why high doses of a β-agonist may be needed, and why other treatments are used alongside.
+::: solution
+Bisoprolol is a competitive β₁ antagonist. At high concentration, $[B]/K_B$ is large, so the dose ratio is large: the curve for any β-agonist (endogenous noradrenaline and adrenaline, or a drug given intravenously) is shifted far to the right. In principle the block is surmountable, so a sufficiently high agonist concentration restores the response; in practice the doses needed may be very high and cause other effects.
+
+Clinical management therefore also uses drugs that bypass the β-receptor entirely, illustrating physiological antagonism. Glucagon acts through its own $G_s$-coupled receptor to raise cyclic AMP in cardiac muscle; high-dose insulin with glucose improves myocardial energy use. Management of a suspected overdose follows current toxicology advice (in the UK, TOXBASE and the National Poisons Information Service), and the details belong to [[emergency-critical-care/poisoning]].
+:::
+:::
+
+::: example Calculating a dose ratio {#ex-dose-ratio}
+In an isolated tissue experiment, a competitive antagonist with $K_B = 5$ nmol/L is added at 45 nmol/L. (a) By what factor must the agonist concentration be increased to restore the original response? (b) By how many log units does the curve shift? (c) What antagonist concentration would give a dose ratio of 2?
+::: solution
+(a) From [[#eq-schild]], $DR = 1 + 45/5 = 10$. The agonist concentration must be increased tenfold.
+
+(b) The shift is $\log_{10} 10 = 1$ log unit to the right.
+
+(c) $DR = 2$ requires $[B]/K_B = 1$, so $[B] = K_B = 5$ nmol/L. The pA₂ is $-\log_{10}(5\times10^{-9}) \approx 8.3$.
+:::
+:::
+
+### Allosteric modulators
+
+An **allosteric modulator** binds to a site on the receptor distinct from the agonist (orthosteric) site and changes how the receptor responds to its natural ligand. A **positive allosteric modulator** increases the effect of the agonist; a negative one reduces it. Benzodiazepines are the best known clinical example. They bind at the interface between α and γ subunits of the GABA-A receptor and increase the effect of GABA, raising the frequency of channel opening. They do little in the absence of GABA, which is one reason why benzodiazepines alone are less likely than barbiturates to cause fatal respiratory depression, although the risk rises sharply with alcohol, opioids or other depressants. Flumazenil is a competitive antagonist at the benzodiazepine site. Cinacalcet, used in hyperparathyroidism, is a positive allosteric modulator of the calcium-sensing receptor, making parathyroid cells respond as if calcium were higher ([[endocrine/bone-calcium]]).
+
+::: quiz
+A new agonist is tested on an isolated tissue alone and then in the presence of a fixed concentration of an unknown antagonist. The curve with antagonist is shifted to the right, parallel to the first, and reaches the same maximum. The shift is the same whether the antagonist is washed out after 5 or 60 minutes of exposure. Which antagonist best explains this?
+- [x] A reversible competitive antagonist at the agonist binding site
+- [ ] An irreversible antagonist in a tissue with no receptor reserve
+- [ ] A negative allosteric modulator that lowers efficacy
+- [ ] A physiological antagonist acting on a different receptor
+::: solution
+A parallel shift with an unchanged maximum is the signature of competitive, surmountable antagonism ([[#thm-schild]]). An irreversible antagonist in a tissue with no reserve would depress the maximum. A negative allosteric modulator that lowers efficacy also depresses the maximum. A physiological antagonist opposes the response through a different pathway and generally changes the shape and maximum of the curve rather than producing a clean parallel shift.
+:::
+:::
+
+## Changes in response over time {#sec-regulation}
+
+Responses to drugs are not fixed. Receptors are made, moved and destroyed continually, and cells adjust to sustained stimulation or blockade.
+
+::: definition Desensitisation, tolerance and receptor regulation {#def-tolerance}
+**Desensitisation** (or **tachyphylaxis**) is a loss of response that develops within minutes of continuous or repeated exposure to an agonist. **Tolerance** is a more gradual reduction in response over days to weeks, so that a higher dose is needed for the same effect. Their mechanisms include:
+
+- **receptor uncoupling and internalisation**: phosphorylation of an activated GPCR by G protein-coupled receptor kinases allows β-arrestin to bind, which blocks G protein coupling and leads to removal of the receptor from the membrane;
+- **down-regulation**: fewer receptors are made or more are destroyed under sustained stimulation; **up-regulation** is the opposite response to sustained blockade;
+- **depletion of mediators**, for example loss of the stored noradrenaline that indirectly acting sympathomimetics release;
+- **pharmacokinetic tolerance**, in which the drug induces its own metabolism (carbamazepine is an example);
+- **physiological adaptation**, in which homeostatic mechanisms oppose the drug's effect.
+:::
+
+These mechanisms explain several practical rules. Patients who take organic nitrates continuously lose their anti-anginal effect within days, so long-acting nitrates are prescribed with a daily nitrate-low interval. Regular high use of short-acting β₂ agonists down-regulates airway β₂ receptors and is a marker of poorly controlled asthma ([[respiratory/asthma-copd]]). After long-term β-blockade, the number of β-receptors rises; stopping the drug abruptly leaves an increased number of receptors exposed to normal catecholamine levels, and rebound tachycardia, hypertension or angina can follow. Long-term treatment should therefore usually be withdrawn gradually. Opioid tolerance develops to analgesia and respiratory depression but much less to constipation and miosis, which is why constipation persists in people taking long-term opioids.
+
+**Dependence** is a related but distinct idea: the adaptations to a drug become necessary for normal function, so stopping produces a withdrawal syndrome that is usually the opposite of the drug's acute effect.
+
+::: example The naloxone that wore off {#ex-naloxone}
+A 31-year-old man is found drowsy with a respiratory rate of 6/min and pinpoint pupils. He responds within two minutes to intravenous naloxone and becomes alert. Forty-five minutes later he is drowsy again with slow breathing. Packaging found with him suggests he had taken a long-acting opioid. Explain what happened using receptor and time-course principles.
+::: solution
+Naloxone is a competitive antagonist at μ-opioid receptors with high affinity and no efficacy. Given intravenously it rapidly displaces the opioid, occupancy by the agonist falls, and breathing and consciousness return. Because the antagonism is competitive, the outcome depends on the relative concentrations of the two drugs at the receptor ([[#thm-schild]]).
+
+Naloxone has a short duration of action (after an intravenous dose its effect typically lasts somewhere between 20 and 90 minutes), whereas a long-acting opioid such as methadone or a modified-release preparation remains in the body for many hours. As the naloxone concentration falls, $[B]/K_B$ falls, the dose ratio shrinks, and the persisting opioid again occupies enough receptors to depress breathing. This **re-narcotisation** is why people treated with naloxone are observed, why repeated doses or an infusion may be needed, and why the opioid involved matters. Management follows current local and national guidance ([[emergency-critical-care/poisoning]]).
+
+The rapid reversal also carries a risk: in a person dependent on opioids, a large dose of naloxone can precipitate acute withdrawal. Titrating small doses to adequate breathing, rather than to full wakefulness, is the usual principle.
+:::
+:::
+
+## Selectivity and the shape of clinical effects {#sec-selectivity}
+
+No drug is perfectly specific. **Selectivity** describes a preference, usually expressed as the ratio of a drug's affinity for its intended target to its affinity for others. It is always relative and dose-dependent: a "β₁-selective" blocker such as bisoprolol blocks β₂ receptors as well at higher concentrations, which is why β-blockers are used with caution in people with asthma.
+
+Many adverse effects are predictable once the full list of a drug's targets is known. Tricyclic antidepressants block muscarinic, histamine H₁ and α₁-adrenoceptors as well as monoamine transporters, which explains their dry mouth, sedation and postural hypotension; at high concentration they block cardiac sodium channels, which is why they are dangerous in overdose. Many antipsychotics block D₂ receptors in the striatum as well as in the mesolimbic pathway, producing movement disorders. Recognising these patterns is the basis of the classification of adverse reactions in [[pharmacology/adverse-reactions]].
+
+::: history
+The idea of a receptor came from two directions at the start of the twentieth century. John Newport Langley, working in Cambridge on the effects of nicotine and curare on skeletal muscle, proposed in 1905 a "receptive substance" on muscle cells that combined with these drugs. Paul Ehrlich, working on dyes and antimicrobial chemicals, developed his side-chain theory and summarised it in the phrase *corpora non agunt nisi fixata*: substances do not act unless they are bound. Alfred Joseph Clark applied the law of mass action to drug–receptor binding in the 1920s and 1930s, giving the occupancy equation used in this chapter. In 1948 Raymond Ahlquist divided adrenoceptors into α and β types from the order of potency of a series of agonists, and in the 1950s Everhardus Ariëns and Robert Stephenson separated affinity from efficacy and introduced the ideas of intrinsic activity and spare receptors. Heinz Otto Schild developed the quantitative analysis of competitive antagonism in the late 1940s. Receptors remained largely theoretical until they were isolated and cloned; Robert Lefkowitz and Brian Kobilka shared the 2012 Nobel Prize in Chemistry for their work on G protein-coupled receptors, including the crystal structure of the β₂-adrenoceptor bound to its G protein.
+:::
+
+::: summary
+- Most drugs act on receptors, ion channels, enzymes or transporters. Receptors form four superfamilies: ligand-gated ion channels, G protein-coupled receptors, kinase-linked receptors and nuclear receptors.
+- Occupancy follows the law of mass action: $p = [A]/([A]+K_D)$. Affinity ($K_D$) and efficacy are separate properties.
+- Full agonists produce the maximal response, partial agonists a lower ceiling, antagonists none, and inverse agonists reduce constitutive activity. Partial agonists can act as antagonists in the presence of a full agonist.
+- Potency (EC₅₀) is not efficacy (Eₘₐₓ). The therapeutic index, TD₅₀/ED₅₀, measures the margin between benefit and harm; low-index drugs need care and often monitoring.
+- Competitive antagonists shift the curve right in parallel, by a dose ratio $1 + [B]/K_B$; irreversible and non-competitive antagonists depress the maximum. Receptor reserve modifies both.
+- Desensitisation, tolerance, down-regulation and up-regulation explain nitrate tolerance, rebound after stopping β-blockers and the need to withdraw many drugs gradually.
 :::
 
 ## Where this leads
 
-The autonomic receptors in clinical detail in [[pharmacology/autonomic-drugs]]; absorption to excretion in [[pharmacology/absorption-distribution]] and [[pharmacology/metabolism-excretion]]; dose design in [[pharmacology/dosing-principles]]; variation and pharmacogenetics in [[pharmacology/patient-variation]]; toxicity patterns in [[pharmacology/adverse-reactions]].
-
-::: history
-**Receptor ideas grew from poisons and measurements: the curare and caffeine physiology precursors of the nineteenth century and Langley's 1878 receptive-substance experiments with nicotine and pilocarpine on nerve-free tissue, inventing the receptor without seeing one - experimental pharmacology born before molecules - [[physiology/autonomic-nervous-system]]; the-competition-quantified - Clark's occupancy theory and Gaddum's competition work, Schild's pA2 analysis of 1947 giving pharmacology rigorous arithmetic, and Ahlquist's 1948 alpha-beta classification from observations alone, years before purification - [[pharmacology/autonomic-drugs]]; the-receptor-purification-era - the radioligand-binding era and beta-receptor affinity chromatography, through Lefkowitz's 1980s cloning of the beta-adrenoceptor - purification by gene - culminating in the 2012 Chemistry Nobel shared with Kobilka, whose stability-engineered crystal structures opened structure-based design - [[cell-biochemistry/proteins-enzymes]]; the-signal-transduction-cascade-golden-age - Sutherland's cyclic-AMP second-messenger era from 1957 and the Gilman-Rodbell G-protein work with its 1971-1980 Nobel pair, using cholera and pertussis toxins as molecular scalpels - [[microbiology/bacterial-pathogenesis]] - [[cell-biochemistry/signalling-cell-cycle]]; the-biased-agonism-era - the quantitative agonism debates - Black and Leff's operational model of 1983, two-state models, and the arrestin-recruitment biased-ligand programmes of the 1990s and 2000s and the oliceridine lesson that signalling bias does not predict clinical safety by itself, with its FDA review as a translational caution - [[pharmacology/drug-development-prescribing]]; and the tolerance-desensitisation-machinery - the Lefkowitz GRK-and-arrestin programme and the demonstration that agonist-induced internalisation, recycling versus degradation give receptors a life cycle and the beta2-agonist asthma debates, from the 2006 LABA safety signal to the SYGMA-era ICS-formoterol trials that changed practice - [[respiratory/asthma-copd]].**
-:::
-
-::: summary
-- Drug action begins with binding: affinity sets how much receptor is occupied at a given concentration, efficacy sets what occupancy produces, and the two are independent properties.
-- Receptor families set the clock: ion channels in milliseconds, GPCRs in seconds, kinases in minutes, nuclear receptors in hours - timing that shapes onset, duration and tolerance.
-- Spare receptors and amplification mean maximal effects occur below full occupancy, which is why partial agonists can cap responses and why occupancy-effect tables mislead.
-- Competitive antagonism is surmountable by more agonist; insurmountable and irreversible blockade depends on receptor turnover - the logic of reversal agents and of rebound phenomena.
-- Allosteric and biased ligands expand the design space but clinical advantage must be proven prospectively; signalling bias alone predicts little.
-- Tolerance is a family of mechanisms - metabolic induction, receptor desensitisation and loss, and behavioural compensation - each with characteristic clinical signatures and each informing rotation and withdrawal strategy.
-:::
-
-::: exercise Draw the curve shifts {level=1}
-Describe and sketch the concentration-response curve changes for: adding a competitive antagonist; adding a non-competitive antagonist; a partial agonist alone; partial agonist plus full agonist; receptor downregulation; spare receptors present.
-::: solution
-**Curve-shift-geometry ([[#def-curves]], [[#def-ligands]]): competitive-antagonist - parallel-rightward-shift-same-maximum-schild-linear-for-true-competitive (the-overcome-by-more-agonist-corollary with the-clinical-naloxone-flumazenil-dosing-logic); non-competitive-or-insurmountable - depressed-maximum-with-possible-right-shift and recovery-rate-set-by-receptor-or-platelet-turnover (the-aspirin-lifespan-and-phenoxybenzamine-replacement-heritage); partial-agonist-alone - curve-rising-to-submaximal-plateau (the ceiling-with-more-drug-does-not-help teaching with buprenorphine respiration and aripiprazole dopamine); partial-plus-full-agonist - partial-acts-as-antagonist-at-high-tone (the pindolol-exercise-heart-rate-paradox and the buprenorphine-into-full-agonist-precipitated-withdrawal mechanics); downregulation - right-shift-and-lower-maximum-with-reduced-receptor-number (the chronic agonist-beta2 and opioid and benzodiazepine patterns); spare-receptors - steep-approach-to-maximum-with-maximal-response-at-fractional-occupancy (the why-low-dose-occupancy-clinicals-plateau and the toxicity-vs-efficacy-curve-divergence - [[pharmacology/dosing-principles]]).**
-:::
-:::
-
-::: exercise Explain the ceiling {level=1}
-Why do buprenorphine and aripiprazole have clinical ceilings and why does the ceiling help with one risk and complicate another analgesic and antipsychotic situation.
-::: solution
-**Ceiling-effects-explained ([[#def-ligands]], [[#def-curves]]): the mechanism - partial-intrinsic-activity-capping-response-at-its-own-E-max-no-matter-the-dose with high affinity and slow kinetics adding occupancy-stability (for buprenorphine) - and receptor-saturation-pharmacokinetics-versus-pharmacodynamics-readings; for analgesia - the respiratory-depression-ceiling-that-made-buprenorphine-safer-in-overdose-epidemiology (the diverted-injection-versus-sublingual studies and the higher-affinity-displacement-precipitated-withdrawal with the microdose and low-dose-initiation-now-standard) versus the ceiling-on-severe-pain-efficacy-and-full-agonist-combination-strategies-read-by-guideline and the patch-versus-film-versus-implable formulations; for psychosis - aripiprazole's D2-stabilisation-agonism-in-hypo-dopaminergic-states-and-antagonism-in-hyper (the positive-versus-negative-symptom-phenomenology and the akathisia-and-insomnia-costs and impulse-control-disorders-as-dopaminergic-side-effects and long-acting-injectables and partial agonism adherence paradoxes) - [[psychiatry/psychotic-disorders]], [[psychiatry/substance-use]], [[surgery/anaesthesia-pain]].**
-:::
-:::
-
-::: exercise Work out the interaction consequences {level=2}
-A heart-failure patient: bisoprolol uptitration stopped by a pharmacist for 'bronchospasm history from 1988'; spironolactone plus ACE plus trimethoprim prescribed by two doctors; warfarin plus co-trimoxazole; digoxin plus clarithromycin. Rate each risk and act.
-::: solution
-**Interaction-triage-in-receptor-language ([[#def-ligands]], [[#def-curves]], [[pharmacology/patient-variation]]): the-beta-blocker-asthma-history - weigh the mortality-grade heart-failure evidence against a 35-year-old-bronchospasm-with-normal-spirometry (the cardioselective-rechallenge-with-mentoring-and-PEF-diary and documenting the phenotype to protect future prescribing) - [[cardiovascular/heart-failure]], [[respiratory/asthma-copd]]; the-triple-potassium-load - ACE-blocked-aldosterone-plus-receptor-antagonist-plus-trimethoprim-ENaC-amiloride-like-block (receptor-level additivity, with a stop-or-reduce decision, diet and illness-day counselling, and a 48-hour check) - [[renal/potassium-calcium-phosphate]]; warfarin-plus-co-trimoxazole - CYP2C9-inhibition plus microbiome-vitamin-K-loss (the steep-INR-rise-and-bleed-audits and the pre-emptive-dose-reduction-and-48-to-72-hour-INR-plan-versus-switch-antibiotic-choice) - [[blood/thrombosis-anticoagulation]], [[pharmacology/metabolism-excretion]]; digoxin-plus-clarithromycin - P-glycoprotein-inhibition-raising-a-narrow-index-enzyme-target-drug (digoxin's long half-life meaning levels rise over days, so monitor and educate about bradycardia, nausea and visual symptoms, remembering P-gp in gut, kidney and blood-brain barrier) - [[cardiovascular/arrhythmias]], [[cell-biochemistry/membranes-transport]].**
-:::
-:::
-
-::: exercise Evaluate a new allosteric drug class {level=3}
-A muscarinic M4-positive allosteric modulator enters trials for schizophrenia cognition. Appraise the mechanism's promise, the probe-dependence problem, the species translation, the biomarker strategy and the read-out design.
-::: solution
-**Allosteric-drug-evaluation ([[#def-ligands]], [[epidemiology-ebm/critical-appraisal]], [[psychiatry/psychotic-disorders]]): the-mechanism-promise - M4 positive modulators damp mesolimbic dopamine overflow with the benefit hypothesis of antipsychotic action without D2 blockade the xanomeline-trospium era with peripheral muscarinic side effects managed by adding a peripheral antagonist, as the proof-of-concept story and the receptor-subtype-selectivity-as-the-whole-game the M1-M2-M3 overlap toxicity geography - bradycardia, salivation, gut and bidirectional cognition effects - [[cardiovascular/arrhythmias]], [[gastrointestinal/digestion-absorption]]; the-allosteric-specific-problems - probe-dependence-making-two-labs-disagree-about-the-same-compound the saturable cooperativity ceiling, species receptor divergence mapped with mutation panels, and the missing endogenous-tone question for cognition endpoints and the PK-PD-occupancy-tools-weaker-than-orthosteric-PET-ligands target engagement is harder to track than for orthosteric PET ligands - [[pharmacology/dosing-principles]]; the-read-outs - cognition-trials'-history (the graveyard of cognitive-enhancement trials, with practice effects, rater burden, the separation of cognition from negative and positive symptoms, functional endpoints like discharge timing and proxy-rated functioning, and observer blindness compromised when side effects mark the active arm) - [[epidemiology-ebm/randomised-trials]], [[epidemiology-ebm/measuring-disease]]; and the-clinician's-position - the-antipsychotic-switching-versus-add-on-context the metabolic-burden comparison with current options, targeting refractory populations, and judging cognition claims against function and the honest-trial-reading small effect sizes, replication and publication-bias checks, with the early-phase optimism discount - [[public-health/health-systems-economics]], [[clinical-skills/clinical-reasoning]].**
-:::
-:::
+The autonomic receptors and the drugs that act on them are developed in [[pharmacology/autonomic-drugs]]. How a dose reaches its receptor, and for how long, is the subject of [[pharmacology/absorption-distribution]], [[pharmacology/metabolism-excretion]] and [[pharmacology/dosing-principles]]. Variation in receptors and in response between people is covered in [[pharmacology/patient-variation]], and the synaptic physiology behind many targets in [[physiology/synapses]].
 
 ## Exercises
 
+::: exercise Occupancy at a given concentration {level=1 check="80"}
+A drug binds reversibly to its receptor with $K_D = 10$ nmol/L. What percentage of receptors are occupied when the free drug concentration is 40 nmol/L? Give a whole number.
+::: hint
+Use $p = [A]/([A] + K_D)$ and convert to a percentage.
+:::
+::: solution
+$p = 40/(40 + 10) = 0.8$, so 80% of receptors are occupied.
+:::
+:::
+
 ::: exercise Classify the ligand {level=1}
-Pindolol, buprenorphine, naloxone, flumazenil, aripiprazole, salmeterol, digoxin. For each: agonist, partial agonist, antagonist or enzyme inhibitor, and at what target.
+For each description, name the type of ligand: (a) binds to β₂-adrenoceptors and produces the maximal bronchodilation the tissue can give; (b) binds to μ-opioid receptors, produces some analgesia alone, and reduces the effect of morphine when both are present; (c) binds to H₁ receptors and reduces their activity below the level seen with no ligand at all; (d) binds to angiotensin AT₁ receptors and produces no response, but blocks the effect of angiotensin II.
 ::: solution
-**Ligand-classification-drill ([[#def-ligands]]): pindolol - partial-agonist-beta-blocker (the intrinsic-sympathomimetic-avoided-post-MI-rationale and its-hypotension-bradycardia-sparing-quirks) - [[cardiovascular/hypertension]]; buprenorphine - partial-mu-agonist with tight binding plus delta/kappa-actions giving ceiling-respiration-and-precipitated-withdrawal-potential (the rotation-into-and-out-of-buprenorphine rules) - [[surgery/anaesthesia-pain]], [[psychiatry/substance-use]]; naloxone - competitive-mu-antagonist with rapid-offset-shorter-than-methadone-and-fentanyl (the re-narcotisation-observation-window) - [[emergency-critical-care/poisoning]]; flumazenil - competitive benzodiazepine-site antagonist on GABA-A with seizure-risk-in-dependence-and-tricyclic-co-ingestion (the-not-routine-in-mixed-overdose rule) - [[emergency-critical-care/poisoning]]; aripiprazole - D2-partial-agonist-with-5HT1A-partial-agonism-and-5HT2A-antagonism (the dopamine-stabiliser-framing and akathisia-cost and long-acting-injectable-formulations) - [[psychiatry/psychotic-disorders]]; salmeterol - long-acting-beta2-agonist with exosite-long-anchored-rebinding (the-learned-lecture the pharmacokinetic-receptor-binding-memorandum explaining slow-washout and the LABA-without-ICS-asthma-mortality-lesson) - [[respiratory/asthma-copd]]; digoxin - enzyme-inhibitor not receptor-agonist (Na-K-ATPase inhibition raising intracellular calcium with the vagal-rate effects and the narrow therapeutic index) - [[cardiovascular/heart-failure]], [[cardiovascular/arrhythmias]].**
+(a) Full agonist. (b) Partial agonist: it has efficacy of its own but less than morphine, so it lowers the response when it competes with a full agonist. (c) Inverse agonist: it reduces constitutive (agonist-independent) receptor activity. (d) Antagonist (in practice a competitive antagonist; losartan is an example).
 :::
 :::
 
-::: exercise Explain tolerance to a patient {level=1}
-Give the three-minute explanation with mechanism for: benzodiazepine sleep dose creep; nitrate patch-off windows; losing the albuterol effect with over-use; needing more coffee over a semester; SSRI emotional blunting differences from tolerance.
+::: exercise Potency or efficacy? {level=1}
+Drug X gives a maximal fall in blood pressure of 20 mmHg with an ED₅₀ of 2 mg. Drug Y gives a maximal fall of 35 mmHg with an ED₅₀ of 50 mg. Which is more potent, and which more efficacious? Which property matters more when choosing between them for a person whose blood pressure is 40 mmHg above target?
 ::: solution
-**Tolerance-counselling ([[#def-curves]], [[psychiatry/substance-use]], [[pharmacology/adverse-reactions]]): benzo-creep - GABA-A receptor uncoupling and subunit shifts plus learned compensation, with the dose-equivalence drift, the taper-not-boost doctrine, and rebound insomnia misread as returning disease, addressed by CBT-I first - [[psychiatry/anxiety-disorders]] and [[geriatrics-palliative/polypharmacy]]; nitrate-window - thiol depletion and neurohormonal counteractivation, solved by the 10-14 hour nitrate-free interval - tolerance-prevention dosing as applied receptor pharmacology - [[cardiovascular/coronary-artery-disease]]; beta2-overuse - beta2 receptor desensitisation and downregulation with inflammation contributions, the shift to ICS-formoterol reliever strategy, and the masking-of-inflammation danger (the LABA safety lesson restated simply) - [[respiratory/asthma-copd]]; caffeine-semester - adenosine receptor upregulation requiring more blockade for the same effect, plus withdrawal headache from vasodilation - the confounder in caffeine laboratory studies - [[nervous-system/headache-pain]]; and SSRI-blunting-versus-tolerance - a different animal - emotional blunting reported by a large minority, tied to dose and 5HT1A mechanisms rather than classic tolerance, with discontinuation symptoms but no craving (dependence without addiction) - [[psychiatry/mood-disorders]], [[psychiatry/treatments-mental-health-law]].**
+X is more potent (lower ED₅₀). Y is more efficacious (larger maximal effect). For a person who needs a large reduction, efficacy matters more: no dose of X can produce more than a 20 mmHg fall, whereas Y can. A higher milligram dose is not a disadvantage in itself.
 :::
 :::
 
-::: exercise Diagnose the drug-interaction mechanism {level=2}
-Explain receptor-level versus pharmacokinetic mechanisms for: hypertensive crisis from nasal decongestants with MAOI; NSAID blunting furosemide effect; theophylline plus ciprofloxacin causing a seizure; the tramadol-plus-SSRI serotonin toxicity case; and the spironolactone plus ACE inhibitor potassium case.
+::: exercise Shifting the curve {level=2 check="2"}
+A competitive antagonist has $K_B = 1$ nmol/L. A patient's free concentration at the receptor is 99 nmol/L. By how many log units is the agonist concentration–response curve shifted to the right? Give an exact whole number.
+::: hint
+Find the dose ratio first, then take its base-10 logarithm.
+:::
 ::: solution
-**Interaction-mechanism-triage ([[#def-ligands]], [[#def-curves]], [[pharmacology/metabolism-excretion]]): MAOI-plus-tyramine-or-sympathomimetic - free catecholamines meeting upregulated adrenoceptors (the hypertensive crisis mimicking phaeochromocytoma, with phentolamine-based management, linezolid's weak MAOI teaching and the washout windows set by monoamine-oxidase turnover) - [[emergency-critical-care/poisoning]], [[cardiovascular/vascular-disease]]; NSAID-versus-diuretic - prostaglandin-dependent-renal-blood-flow-and-sodium-handling-opposition (the functional-antagonism at the nephron with the triple whammy of ACE inhibitor plus diuretic plus NSAID and afferent arteriole physiology) - [[renal/water-sodium]], [[renal/acute-kidney-injury]]; theophylline-plus-cipro - pure pharmacokinetic CYP1A2-inhibition raising a narrow-index-bronchodilator-which-is-itself-a-receptor-drug (theophylline's adenosine antagonism and non-selective phosphodiesterase inhibition giving seizures and arrhythmias, with level monitoring and smoking and fluvoxamine pulling in opposite directions) - [[respiratory/asthma-copd]], [[pharmacology/patient-variation]]; SSRI-plus-tramadol-etc - serotonin toxicity as target-level overstimulation from combined transporter block and synthesis boost, diagnosed by Hunter criteria versus neuroleptic malignant syndrome, managed by stopping serotonergics with cyproheptadine, cooling and benzodiazepines - [[emergency-critical-care/poisoning]], [[pharmacology/adverse-reactions]]; and spironolactone-plus-ACE - additive-mineralocorticoid-and-AngII-withdrawal-on-potassium-handling with-the-renal-function-and-diet-and-salt-substitute-and-illness-day-rules and the eplerenone selectivity rationale as receptor-specificity translation, and the potassium-binder adjunct era - [[renal/potassium-calcium-phosphate]], [[cardiovascular/hypertension]].**
+$DR = 1 + 99/1 = 100$. The shift is $\log_{10} 100 = 2$ log units: the agonist concentration must be increased 100-fold for the same response.
 :::
 :::
 
-::: exercise Design the first-in-human study of a biased agonist {level=3}
-A company offers your trial unit a G-protein-biased mu-opioid agonist with preclinical evidence of analgesia without respiratory depression. Design the phase-1 programme and its stopping logic; appraise the bias hypothesis honestly.
+::: exercise A partial agonist in practice {level=2}
+A 45-year-old woman who has been using illicit heroin daily is due to start opioid substitution treatment with buprenorphine. Explain, using receptor theory, why the first dose is usually delayed until she shows objective signs of withdrawal, and why buprenorphine carries a lower risk of fatal respiratory depression than methadone when taken alone.
 ::: solution
-**Biased-agonist-phase-1-design ([[#def-ligands]], [[epidemiology-ebm/randomised-trials]], [[pharmacology/drug-development-prescribing]]): the-pre-clinical-appraisal - the bias quantifications read with suspicion - tau and delta-log-tau and which assay reads what, the arrestin versus GIRK-current versus ventilatory-response disagreements, and the oliceridine odyssey of modest efficacy differences with real safety signals: biased does not equal safe and the-therapeutic-window-question-framed-quantitatively (the separation index between analgesic and respiratory ED50s in which species with which endpoints) - [[epidemiology-ebm/critical-appraisal]]; the-phase-1-architecture - sentinel dosing with continuous capnography and oximetry and respiratory challenge endpoints - hypercapnic and hypoxic ventilatory response testing with mu-agonist positive controls, pupillometry as pharmacodynamic biomarker, and colonic transit measures because constipation is the real-world limit with PK-PD occupancy assumptions scrutinised and stopping rules pre-specified (apnoea and saturation thresholds, safety monitoring board with veto) - [[clinical-skills/patient-safety]], [[respiratory/control-breathing-tests]]; volunteer ethics and reality - naive versus experienced cohorts for safety characterisation, participant payment and coercion safeguards, and honest dependence liability endpoints and rescue-antagonist availability protocols matching offset pharmacology - the infusion-not-ampoule rule for long-acting agonists and study-specific overdose plans - [[emergency-critical-care/poisoning]], [[medical-ethics-law/research-ethics]]; and the-evidence-honest-conclusion - signalling-bias-as-a-useful-design-heuristic-not-a-guarantee (the multi-pathway drugs-with-surprises lesson) and the-decision-framework-for-your-unit (the pre-registered-analysis-plans-and-open-data-commitments and the willingness-to-declare-failure-with-negative-when-bias-fails-to-separate) - [[epidemiology-ebm/systematic-reviews]], [[pharmacology/adverse-reactions]].**
+Buprenorphine is a high-affinity partial agonist at μ-opioid receptors. If it is given while heroin (and its active metabolites, mainly morphine) still occupies many receptors, it displaces the full agonist because of its high affinity, but produces less receptor activation. The net effect falls abruptly, causing precipitated withdrawal. Waiting until withdrawal has started means that few receptors are occupied by full agonist, so buprenorphine increases rather than decreases the net effect.
+
+Because its efficacy is limited, the respiratory depression it produces plateaus as the dose rises (a ceiling effect). Methadone is a full agonist with no ceiling. The protection is relative: combined with other depressants such as benzodiazepines, gabapentinoids or alcohol, buprenorphine can still contribute to fatal respiratory depression.
+:::
+:::
+
+::: exercise Why aspirin outlasts its half-life {level=2}
+Aspirin has a plasma half-life of about 15 to 20 minutes, yet a single dose reduces platelet aggregation for several days, and surgeons often ask for antiplatelet drugs to be reviewed a week before some operations. Explain this using the type of antagonism involved, and predict how the time to recovery would change for a reversible COX inhibitor such as ibuprofen.
+::: solution
+Aspirin acetylates a serine residue in the active site of platelet cyclooxygenase-1, an irreversible covalent change. Platelets have no nucleus and cannot synthesise new enzyme, so each affected platelet is inhibited for the rest of its life. Function returns only as new platelets are released from the bone marrow; with a platelet lifespan of about 7 to 10 days, roughly a tenth of the platelet pool is replaced each day. The duration of effect is set by target turnover, not by the drug's half-life.
+
+Ibuprofen inhibits COX reversibly and competitively, so its antiplatelet effect falls as plasma concentrations fall and largely disappears within a day. (Ibuprofen taken shortly before aspirin can also block aspirin's access to the enzyme, an interaction worth knowing.) Decisions about stopping antiplatelet drugs before surgery follow local perioperative guidance and the reason the drug was started.
+:::
+:::
+
+::: exercise Steepness and safety {level=3 check="round(100*0.5^4/(0.5^4+1))"}
+Two drugs have the same EC₅₀ for a toxic effect but different Hill coefficients, $n = 1$ and $n = 4$. Using [[#eq-hill]], with the toxic response expressed as a percentage of maximum, calculate the toxic response at half the EC₅₀ for the drug with $n = 4$, to the nearest whole percent, and compare it with the drug with $n = 1$. What does this imply for dosing near the toxic range?
+::: hint
+Put $[A] = 0.5\,EC_{50}$ into the Hill equation: $E/E_{\max} = 0.5^n/(0.5^n + 1)$.
+:::
+::: solution
+For $n = 4$: $E/E_{\max} = 0.0625/(0.0625 + 1) = 0.0588$, about **6%**.
+
+For $n = 1$: $E/E_{\max} = 0.5/1.5 = 0.333$, about 33%.
+
+At half the toxic EC₅₀, the steep curve shows very little toxicity, while the shallow curve already shows a third of the maximal toxic effect. But the steep curve rises quickly: at $2\,EC_{50}$ the $n = 4$ drug gives $16/17 \approx 94\%$ of the maximal toxic response, against 67% for $n = 1$. A steep toxicity curve therefore means a narrow transition from apparently safe to seriously toxic. Small rises in concentration, for example from an interaction or declining kidney function, can produce sudden toxicity with little warning, which is why such drugs are titrated in small steps and monitored.
+:::
+:::
+
+::: exercise Explaining tolerance and rebound {level=3}
+A 58-year-old man has taken propranolol for ten years for essential tremor and hypertension. He runs out while abroad and, two days later, develops palpitations and chest tightness on exertion. A month before, he had started using isosorbide mononitrate twice daily at 8 am and 8 pm, and he reports that his angina relief seemed to fade after the first week. Explain both observations in terms of receptor regulation, and outline the principles that would prevent each problem.
+::: solution
+**Rebound after stopping the β-blocker.** Long-term blockade of β-adrenoceptors leads to up-regulation: cells increase the number of receptors in response to reduced stimulation. When propranolol is stopped abruptly, its concentration falls over a day or so, and normal circulating catecholamines now act on more receptors than before treatment. Heart rate, contractility and myocardial oxygen demand rise, which can provoke angina or arrhythmia in someone with coronary disease. The principle is gradual withdrawal of long-term β-blockers where possible, and continuity of supply (for example advice before travel).
+
+**Nitrate tolerance.** Continuous exposure to organic nitrates leads to tolerance within days. Mechanisms proposed include impaired bioactivation of the nitrate to nitric oxide, oxidative stress, and counter-regulatory neurohormonal changes. Twice-daily dosing twelve hours apart gives continuous exposure. The principle is an asymmetric schedule (for example doses in the morning and early afternoon for a standard-release preparation, or once-daily modified-release) so that there is a nitrate-low period each day, usually overnight. Prescribing details follow the BNF and local guidance. His new symptoms need clinical assessment rather than simply a dose increase.
+:::
+:::
+
+::: exercise Designing a receptor experiment {level=3}
+A research group has a new compound that they think is a competitive antagonist at the histamine H₂ receptor. They can measure gastric acid secretion from isolated gastric glands in response to histamine. Describe an experiment, and the results you would expect, that would (a) show whether the antagonism is competitive, and (b) estimate $K_B$. What result would suggest an irreversible antagonist instead?
+::: solution
+(a) Construct full concentration–response curves to histamine alone and then in the presence of several fixed concentrations of the compound (for example three concentrations spanning a tenfold range or more), allowing time for equilibrium at each. Competitive antagonism predicts parallel rightward shifts with no fall in the maximum, and larger shifts at higher antagonist concentrations. The effect should reverse on washout.
+
+(b) For each antagonist concentration, measure the dose ratio at the same response level (for example at 50% of maximum). Plot $\log(DR - 1)$ against $\log[B]$, a Schild plot. For simple competitive antagonism this gives a straight line with slope 1, and the intercept on the $\log[B]$ axis is $\log K_B$ (equivalently, from [[#eq-schild]], $K_B = [B]/(DR - 1)$ at any single concentration). A slope clearly different from 1 suggests that the antagonism is not simple competition at one site.
+
+An irreversible antagonist would give rightward shifts at low concentrations (while the receptor reserve lasts) and then a falling maximum at higher concentrations, with no recovery on washout. Recovery would need new receptor synthesis.
 :::
 :::

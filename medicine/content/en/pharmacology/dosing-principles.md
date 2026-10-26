@@ -1,141 +1,314 @@
-A dose is a decision about concentration. **Every dose, route and interval is an implicit bet that the drug concentration at its site of action will land in a window high enough to work and low enough to be safe, for long enough, in this patient, today.** Clinical pharmacokinetics turns that bet into arithmetic: target concentration, volume of distribution, clearance, half-life, steady state, loading dose, maintenance rate. Therapeutic drug monitoring checks the bet; individualisation revises it. This chapter builds the numbers and, just as importantly, the humility that surrounds them.
+A dosing regimen answers three questions: how much drug to give, how often, and how quickly to reach the intended effect. For most drugs the answers come from the licensed dose in the formulary, adjusted for the individual. But behind every licensed dose are the quantities met in the last two chapters, the volume of distribution, the clearance and the half-life. Understanding how they combine explains why some drugs need a loading dose, why it takes days for a new dose to show its full effect, why a drug level taken at the wrong time is worse than none, and how to adjust a dose when the kidneys fail.
 
-## The core arithmetic
+This chapter builds a dosing regimen from first principles. It covers the target concentration approach, loading and maintenance doses, accumulation and steady state, the choice of dosing interval, therapeutic drug monitoring, and dose adjustment in kidney disease. Numbers in this chapter are illustrative. Real doses come from a current formulary, such as the BNF, and local guidance for the individual patient.
 
-::: definition Target concentration, Vd and loading {#def-target-load}
-**Concentration-is-the-common-currency: for most drugs the effect tracks plasma (or effect-site) concentration better than dose does, which is why we aim at a target range rather than a table of milligrams, and why the same tablet can be therapeutic in one patient and toxic in the next. The loading dose follows from the accounting identity dose equals target concentration times volume of distribution - if you want 20 mg/L now and the Vd is 40 L, you need 800 mg in the body, adjusted for bioavailability if the route is not intravenous (LD equals target times Vd divided by F). Volume of distribution is an accounting ratio, not an anatomical space, so oedema, obesity, ascites and third spacing change it, and the loading dose must change with it. Loading is for when waiting is unacceptable: arrhythmia, seizures, severe infection, anticoagulation of a fresh clot - and for when the drug's half-life is long or its accumulation slow. It is also where iatrogenic harm is most efficiently produced: a forgotten dose, a double bolus, a mg-per-kg miscalculation lands fully because loading bypasses the body's gradual buffer. The mitigations are boring and effective: concentration-based or weight-band loading tables, independent double checks for heparin and insulin and cytotoxics, prefilled syringes and smart-pump limits, and knowing which drugs never get loaded - where the therapeutic index or receptor behaviour punishes peaks (the slow warfarin-onset logic with vitamin-K-dependent factor half-lives, and the beta-blocker up-titration rather than loading doctrines) - [[cardiovascular/arrhythmias]], [[blood/thrombosis-anticoagulation]], [[nervous-system/epilepsy]], [[clinical-skills/patient-safety]].**
+## The target concentration approach {#sec-target}
+
+For most drugs, effect is related more closely to the concentration at the site of action than to the dose. Because that site cannot usually be sampled, the plasma concentration is used as a stand-in. The aim of dosing is then to reach and keep a **target concentration** within the drug's therapeutic range.
+
+::: definition Therapeutic range, loading dose and maintenance dose {#def-target-load}
+The **therapeutic range** (or window) is the range of plasma concentrations associated with a high probability of benefit and a low probability of unacceptable toxicity in most patients. Its lower bound is sometimes called the minimum effective concentration and its upper bound the minimum toxic concentration. It is a population guide, not a guarantee for an individual.
+
+A **loading dose** is a larger initial dose used to reach the target concentration quickly. It depends on the volume of distribution:
+
+$$
+\text{Loading dose} = \frac{V_d \times C_{\text{target}}}{F}.
+$$ {#eq-load}
+
+A **maintenance dose** keeps the concentration at the target by replacing the drug eliminated. At steady state the rate of input equals the rate of elimination, so it depends on clearance:
+
+$$
+\text{Maintenance dose rate} = \frac{CL \times C_{ss}}{F}.
+$$ {#eq-maint}
+
+Here $F$ is the bioavailability (1 for intravenous administration) and $C_{ss}$ the target average steady-state concentration.
 :::
 
-## Steady state and its discontents
+The two equations are worth keeping apart. Volume controls the loading dose; clearance controls the maintenance dose. A patient with oedema has a larger volume for a water-soluble drug and may need a larger loading dose, but the same maintenance dose if clearance is unchanged. A patient with kidney failure has a lower clearance for a renally excreted drug and needs a smaller maintenance dose, but usually the same loading dose.
 
-::: definition Clearance, half-life, steady state {#def-ss}
-**Clearance is the volume of plasma cleared of drug per unit time, and it - not half-life - is what determines the average steady-state concentration: maintenance rate equals target concentration times clearance divided by bioavailability. Half-life is derived (t-half equals 0.693 times Vd divided by clearance) and it answers a different question: how long to steady state (about four to five half-lives, regardless of dose or frequency) and how long to wash out. The clinical corollaries are simple to state and constantly violated: changing the maintenance dose does not change the time to the new steady state, so up-titrating lithium, or amiodarone, or an antidepressant on a three-day check is impatience dressed as care; giving a loading dose is the only way to arrive early; and in unstable kidney function the clearance you calculated yesterday may be fiction today, which is why day-3 reviews recalculate rather than remember. First-order kinetics (fraction eliminated per unit time) fails at therapeutic doses for ethanol, phenytoin and to a clinical degree salicylate: constant-amount elimination means dose increases produce disproportionate level rises and long flat ones - the phenytoin maintenance cliff where 300 mg becomes 400 mg becomes toxicity, and why saturable kinetics also stretch apparent half-life with dose. Zero-order thinking also powers alcohol 'units' honesty, the phenytoin switch between brands and formulations, and the salicylate trap in chronic overdose where levels, not the nomogram, guide therapy - [[nervous-system/epilepsy]], [[emergency-critical-care/poisoning]], [[psychiatry/mood-disorders]].**
+::: example A digoxin loading dose {#ex-digoxin-load}
+A 76-year-old man weighing 70 kg has atrial fibrillation with a fast ventricular rate and heart failure. Rapid rate control with digoxin is planned. Using illustrative values of $V_d = 7$ L/kg, a target plasma concentration of 1 µg/L and an oral bioavailability of 0.7, estimate the intravenous and oral loading doses. Why is a loading dose used at all?
+::: solution
+$V_d = 7 \times 70 = 490$ L.
+
+Intravenous loading dose from [[#eq-load]]: $490 \times 1/1 = 490$ µg, about 0.5 mg.
+
+Oral loading dose: $490/0.7 = 700$ µg.
+
+These figures are of the same order as the licensed loading doses in the BNF, which are usually given in divided doses to reduce the risk of toxicity while the drug distributes. A loading dose is used because digoxin has a half-life of about 36 hours in people with normal kidney function, and longer in older people and in kidney impairment. Without a loading dose it would take four to five half-lives, a week or more, to reach steady state. Because digoxin's very large volume reflects binding in muscle, an older person with low muscle mass has a smaller volume, and loading doses are reduced accordingly. Actual dosing follows the BNF and local guidance.
+:::
 :::
 
-## Measuring the bet
+## Accumulation and steady state {#sec-ss}
+
+When a drug is given repeatedly, each dose is added to what remains of the previous ones. The amount in the body rises until the amount eliminated in each dosing interval equals the amount given. This balance is **steady state**.
+
+::: theorem Steady state and the half-life rule {#def-ss}
+For a drug with first-order elimination (rate constant $k$, half-life $t_{1/2}$) given by constant intravenous infusion, the concentration rises as
+
+$$
+C(t) = C_{ss}\left(1 - e^{-kt}\right), \qquad C_{ss} = \frac{\text{infusion rate}}{CL}.
+$$ {#eq-infusion}
+
+After $n$ half-lives the concentration has reached a fraction $1 - (1/2)^n$ of steady state: 50% after one, 75% after two, 87.5% after three, about 94% after four and about 97% after five. **Steady state is reached in about four to five half-lives, whatever the dose.**
+
+With intermittent doses $D$ every $\tau$ hours, the concentration oscillates around an average steady-state value
+
+$$
+C_{ss,\text{avg}} = \frac{F \times D}{CL \times \tau},
+$$ {#eq-cssavg}
+
+and for intravenous bolus doses the steady-state peak is greater than the first-dose peak by the **accumulation factor** $1/(1 - e^{-k\tau})$.
+:::
+
+::: proof
+During an infusion at rate $R_0$, the amount in the body changes as $V_d\,dC/dt = R_0 - CL \cdot C$. Writing $k = CL/V_d$ and solving with $C(0) = 0$ gives $C(t) = (R_0/CL)(1 - e^{-kt})$. As $t$ grows, $C$ approaches $R_0/CL = C_{ss}$. Substituting $t = n\,t_{1/2}$ and $e^{-k t_{1/2}} = 1/2$ gives the fraction $1 - (1/2)^n$.
+
+For bolus doses, the concentration just after the $(n+1)$th dose is the sum of the contributions of all doses so far: $C_0(1 + e^{-k\tau} + e^{-2k\tau} + \dots + e^{-nk\tau})$, where $C_0 = D/V_d$. This geometric series tends to $C_0/(1 - e^{-k\tau})$. Averaging over an interval, the area under the curve in one interval at steady state equals the area after a single dose, $F D/CL$, and dividing by $\tau$ gives [[#eq-cssavg]].
+:::
+
+The half-life rule has some important consequences.
+
+- **The time to steady state does not depend on the dose.** Doubling the dose doubles the steady-state level but does not reach it any faster. Only a loading dose shortens the wait.
+- **After any change of dose, a new steady state takes another four to five half-lives.** A level measured too soon after a change underestimates the eventual level when the dose has been increased.
+- **When the half-life is prolonged**, for example by kidney failure, steady state takes longer to reach and is higher at the same dose. Toxicity may appear only days after a dose was started.
+- **The same rule describes washout.** After a drug is stopped, about 97% has gone after five half-lives.
+
+The figure shows repeated intravenous doses building up to steady state.
+
+::: widget plot
+f: 10*exp(-(log(2)/h)*(x-T*floor(x/T)))*(1-exp(-(log(2)/h)*T*(floor(x/T)+1)))/(1-exp(-(log(2)/h)*T)); 10/(1-exp(-(log(2)/h)*T))*exp(-(log(2)/h)*(x-T*floor(x/T)))
+x: 0, 120
+y: 0, 45
+sliders: h=12:2:48:1; T=12:4:24:2
+hlines: 8; 25
+labels: \text{repeated doses, no loading dose}; \text{same regimen after a loading dose}
+caption: Illustrative concentration (mg/L) against time (hours) for identical intravenous doses, each giving 10 mg/L, every $T$ hours, for a drug with half-life $h$ hours. The horizontal lines mark an illustrative therapeutic range of 8 to 25 mg/L. Without a loading dose the troughs climb for about five half-lives. With a loading dose sized to the steady-state peak, the range is reached at once. Lengthen $h$ to see accumulation take longer and overshoot the range at the same dose; shorten $T$ to see the peaks and troughs move closer together.
+:::
+
+### Peaks, troughs and the dosing interval
+
+The average steady-state concentration depends only on the dose rate ($D/\tau$) and clearance. The **fluctuation** between peak and trough depends on how the dosing interval compares with the half-life. If the interval is much shorter than the half-life, the concentration barely changes between doses; if it is longer, the swing is large.
+
+The choice of interval balances convenience against fluctuation. Drugs with long half-lives, such as amlodipine or levothyroxine, can be given once daily with little fluctuation. Drugs with short half-lives either need frequent doses, a modified-release formulation, or an infusion, unless their effect outlasts their presence in plasma (as with irreversible inhibitors such as aspirin and omeprazole, [[pharmacology/drug-receptor]]).
+
+For antimicrobials, the pattern of exposure matters as well as the average. Aminoglycosides kill in a concentration-dependent way and have a post-antibiotic effect, so a high peak once daily with a low trough maximises killing and reduces kidney and ear toxicity. β-lactams kill in a time-dependent way: what matters is the fraction of the interval during which the concentration stays above the organism's minimum inhibitory concentration, which favours frequent doses or prolonged infusions ([[microbiology/antimicrobials]]).
+
+::: example Designing a maintenance regimen {#ex-maintenance}
+An illustrative antibiotic has a clearance of 5 L/h and a volume of distribution of 60 L in a particular patient. The target average steady-state concentration is 10 mg/L. (a) What dose rate is needed? (b) What would the dose be every 12 hours, and what are the approximate steady-state peak and trough after intravenous bolus doses? (c) How would giving half the dose every 6 hours change these?
+::: solution
+(a) From [[#eq-maint]], dose rate $= 5 \times 10 = 50$ mg/h.
+
+(b) Every 12 hours: $50 \times 12 = 600$ mg. Here $k = 5/60 = 0.083$ per hour ($t_{1/2} \approx 8.3$ h). Each dose raises the concentration by $600/60 = 10$ mg/L. The steady-state peak is $10/(1 - e^{-0.083 \times 12}) = 10/(1 - e^{-1}) \approx 15.8$ mg/L and the trough is $15.8 \times e^{-1} \approx 5.8$ mg/L.
+
+(c) 300 mg every 6 hours gives the same average (10 mg/L) but each dose adds 5 mg/L: peak $5/(1 - e^{-0.5}) \approx 12.7$ mg/L and trough $\approx 7.7$ mg/L. Shorter intervals reduce fluctuation without changing the average. Whether that is better depends on the drug: for a time-dependent antibiotic, the higher trough may be useful; for a concentration-dependent one, the lower peak may be worse.
+:::
+:::
+
+## Therapeutic drug monitoring {#sec-tdm}
+
+For most drugs, the effect itself can be measured: blood pressure, heart rate, blood glucose, INR, pain score, symptoms. Doses are titrated against the effect, and plasma levels add nothing. For a small group of drugs, measuring the plasma concentration is useful.
 
 ::: definition Therapeutic drug monitoring {#def-tdm}
-**Therapeutic drug monitoring is justified when four conditions hold: concentrations correlate with effect better than dose does, the therapeutic window is narrow or the effect hard to observe directly, the assay exists and is fast enough to change a decision, and the team knows what to do with the number. The classical list - aminoglycosides, glycopeptides (now AUC-guided vancomycin rather than trough-tripping), lithium, phenytoin, valproate, carbamazepine, immunosuppressants, some antifungals and cancer agents - each carries its own sampling etiquette that is really pharmacology in disguise: troughs for ciclosporin and tacrolimus timing honesty (twelve-hour truth), random-but-late levels for gentamicin with two-point half-life estimation when the kidney is unstable, the phenytoin free-level request in hypoalbuminaemia and uraemia because protein binding lies, the lithium twelve-hour standardised level that must not be drawn at four hours post-dose and interpreted against the sample-time history, and the carbamazepine morning level versus its active metabolite conversation (steady-state assumption violated in non-adherence - a level can be evidence of behaviour, not biology, the ethical double-edge handled with agreed pre-testing conversations) - [[renal/potassium-calcium-phosphate]], [[psychiatry/mood-disorders]], [[immunology/transplant-tumour-immunology]], [[medical-ethics-law/confidentiality]]. The modern expansion is pharmacokinetically informed dosing: Bayesian one- and two-sample gentamicin and vancomycin software, population models for methotrexate and tacrolimus, AUC-targeted antiretrovirals and antifungals (voriconazole's own CYP2C19-genotype chaos), and the assay-limited frontier where dose is still guessed (most oncology, most psychiatry) - the whole practice graded by whether the number changes the next dose, since monitoring without an action protocol is phlebotomy theatre - [[clinical-skills/laboratory-tests]], [[pharmacology/metabolism-excretion]].**
+**Therapeutic drug monitoring** (TDM) is the measurement of drug concentrations in plasma (or blood) to guide dosing. It is useful when all of these apply:
+
+1. there is a clear relationship between concentration and effect or toxicity;
+2. the therapeutic range is narrow;
+3. there is wide variation between individuals in the concentration produced by a given dose;
+4. the effect is hard to measure directly, or toxicity is serious and may appear without warning;
+5. a reliable assay is available quickly enough to influence decisions.
+
+A level is interpretable only if the time of the last dose and of the sample are known, the drug is at steady state (unless toxicity or a loading dose is being assessed), and the result is read alongside the clinical picture.
 :::
 
-::: example The gentamicin fortnight {#ex-gent}
-A 70kg woman with Pseudomonas bacteraemia is prescribed gentamicin 5mg/kg once daily; on day 5 her creatinine has crept from 80 to 120 and the ward asks whether to stop or extend the interval.
+| Drug | When to sample (typical) | Why monitor |
+|---|---|---|
+| Lithium | 12 hours after the last dose; one week after starting and after each dose change, then regularly | Narrow range; toxicity with dehydration, kidney decline and interacting drugs |
+| Digoxin | At least 6 hours after a dose (after distribution) | Toxicity, especially with hypokalaemia or kidney impairment; adherence |
+| Phenytoin | Usually just before a dose; at steady state | Saturable kinetics; protein binding |
+| Gentamicin, amikacin | According to the local protocol (for example a timed level after a once-daily dose, or a pre-dose trough) | Nephrotoxicity and ototoxicity; changing kidney function |
+| Vancomycin | Pre-dose trough, or AUC-guided dosing where used | Efficacy and nephrotoxicity |
+| Ciclosporin, tacrolimus | Pre-dose trough | Narrow range; many interactions; rejection versus toxicity |
+| Some antiepileptics, theophylline | Pre-dose trough, at steady state | Toxicity; adherence; changing kinetics in pregnancy |
+
+The ranges themselves differ between laboratories and indications; NICE guidance for lithium, for example, generally aims for 0.6–0.8 mmol/L when it is first prescribed, with higher levels considered for some people. Results outside the expected range are checked against the sample time, adherence, interacting drugs and organ function before the dose is changed.
+
+::: warning A level taken at the wrong time can mislead badly
+The most common error in TDM is the timing of the sample. A lithium level taken 2 hours after the morning dose, instead of 12 hours after the evening dose, catches the absorption peak and can look toxic. A digoxin level taken within 6 hours of a dose measures drug that has not yet distributed into tissue and overestimates the effect. A level checked three days after a dose increase of a drug with a 36-hour half-life is not yet at steady state and underestimates the final level. Every request should record when the last dose was given and when the sample was taken.
+:::
+
+::: example The lithium level that seemed too high {#ex-lithium-ss}
+A 47-year-old woman with bipolar disorder has taken lithium carbonate at night for several years with levels of 0.6–0.7 mmol/L. Her dose was increased on Monday because of relapsing symptoms. On Wednesday, she has a blood test at 11 am, after taking her evening dose at 10 pm as usual; the result is 0.9 mmol/L. A colleague proposes reducing the dose immediately. What would you consider before changing it?
 ::: solution
-**Once-daily-dosing arithmetic in motion ([[#def-ss]], [[#def-tdm]], [[renal/acute-kidney-injury]]): why-once-daily - concentration-dependent killing plus the post-antibiotic effect plus adaptive resistance, so the goal is a high peak and a long sub-toxic trough, with the extended-interval nomogram or two-level half-life estimating the patient's own elimination (the gentamicin's narrow index driven by hair-cell and tubular exposure over time - the area-under-curve matters, and high peaks with deep troughs are less toxic than moderate peaks with elevated troughs, counterintuitively) - [[microbiology/antimicrobials]], [[nervous-system/sensory-systems]]; the day-5 problem - rising creatinine means clearance is falling so the same dose gives higher exposure, and the options ranked by pharmacokinetic literacy: reduce dose, extend interval, or (with Pseudomonas cover needs) switch agent, with the decision made by measured levels and a fresh half-life rather than the creatinine number alone (the oliguria-and-fluid-status check, the other nephrotoxins on board - vancomycin, NSAIDs, contrast - removed or justified, and the audibility of the plan documented - [[clinical-skills/records-handover]]); the monitoring cadence - daily or alternate-day levels with renal function until stable plus once-weekly audiochemistry if courses stretch (the baseline hearing and balance documentation with the vestibular-predominance counselling - oscillopsia in a dark room - and the total-cumulative-exposure conversation when surgery might need weeks - replace: [[nervous-system/sensory-systems]]); and the meta-lesson - the drug with the shortest half-life taught us the most about measuring: two samples, one slope, one dose, personalised, versus memorised nomograms that average the un-averageable ([[#def-target-load]]).**
+Three timing questions come first.
+
+- **Sample time.** The sample was taken 13 hours after the dose, close to the 12-hour standard, so it is interpretable as a standardised level.
+- **Steady state.** Lithium's half-life in adults is typically around a day (longer in older people and in kidney impairment), so a new steady state takes about five days. Two days after a dose increase, the level is still rising. The final steady-state level is likely to be higher than 0.9 mmol/L, which strengthens rather than weakens the concern.
+- **Other causes.** Dehydration, intercurrent illness, reduced kidney function, or new interacting drugs (thiazide diuretics, ACE inhibitors, angiotensin receptor blockers and NSAIDs all reduce lithium clearance) would also raise the level.
+
+The next steps are clinical assessment for signs of toxicity (tremor, gastrointestinal symptoms, confusion, ataxia), checking kidney function, sodium and interacting drugs, and planning a repeat standardised 12-hour level one week after the dose change, in line with NICE guidance and the prescriber's plan. Decisions about the target level, which may be higher than usual for a person who has relapsed, rest with the specialist team ([[psychiatry/mood-disorders]]).
 :::
 :::
 
-::: example The lithium steady-state dispute {#ex-lithium-ss}
-A man with bipolar disorder on lithium 1200mg nightly has a 12-hour level of 1.1 with dry mouth and fine tremor; the registrar wants to increase to 1600 because 'he is still depressed'; a covering doctor repeats the level at 4 hours and reports 1.6 as 'toxic'.
-::: solution
-**Steady-state and sampling-time literacy ([[#def-ss]], [[#def-tdm]], [[psychiatry/mood-disorders]]): the sampling error - a four-hour level on immediate-release lithium is a distribution/absorption-phase number, not comparable to the 12-hour standardised nomogram, and reporting it against 12-hour bands manufactures a fake emergency (the standardised-time discipline with the sample-verified time and the laboratory rejecting unlabelled samples, the same lesson as the cyclosporin twelve-hour-truth and the tacrolimus trough timing) - [[clinical-skills/laboratory-tests]]; the clinical question - depression-in-bipolar management is not solved by pushing lithium towards 1.2-plus chronically (the maintenance-level evidence around 0.6-0.8 with relapse-severity trade-offs, the add-on strategies - antidepressant-with-mood-stabiliser-cover controversy, lurasidone-and-quetiapine-evidence, optimisation of sleep and psychology, and the thyroid and calcium and renal surveillance that chronic lithium demands - [[endocrine/thyroid]], [[renal/chronic-kidney-disease]], [[endocrine/bone-calcium]]); the fine tremor and dry mouth - common side effects managed with dose timing, sustained-release trials and reassurance versus coarse tremor, ataxia, vomiting and confusion as toxicity needing stopping and level-and-renal-and-neuro review (the toxicity precipitants - dehydration, NSAIDs, thiazides, ACE-inhibitors raising levels by reducing renal clearance, the sick-day rules taught with written cards and the interaction list every prescriber recites before adding anything) - [[cardiovascular/hypertension]], [[renal/water-sodium]]; and the governance - the same-drug-different-time-episode as a learning-not-blame review with the shared-protocol for repeat sampling, and the lithium's narrow-index documentation including ECG and renal and thyroid baseline and pregnancy counselling for a teratogen with the Ebstein question quantified honestly - [[medical-ethics-law/consent-capacity]], [[obstetrics-gynaecology/early-pregnancy]].**
-:::
-:::
+### Interpreting a level when binding changes
 
-::: example The once-weekly misunderstanding {#ex-methotrexate-weekly}
-A 61-year-old with rheumatoid arthritis has been taking her weekly methotrexate 15 mg tablet bottle daily for eleven days; she arrives with mouth ulcers, vomiting and diarrhoea, platelets falling; the dispensing label says 'take once weekly' and she has a separate daily folic acid.
-::: solution
-**Wrong-interval-harm and its repair ([[#def-ss]], [[#def-target-load]], [[pharmacology/adverse-reactions]]): the pharmacology of the error - daily dosing removes the recovery window that weekly dosing builds into the regimen, so rapidly dividing mucosa and marrow take the hit (the anti-folate mechanism, reduced clearance and third-space accumulation in effusions, and the drug-interaction amplifiers - trimethoprim, NSAIDs, PPIs in some patients - all landing harder when the dose was already wrong) - [[musculoskeletal/inflammatory-arthritis]], [[renal/chronic-kidney-disease]]; the rescue - calcium-folinite (folinic acid) rescue dosed urgently by protocol, not folic acid, with counts, renal function and lactate tracked, G-CSF and transfusion support considered, and the methotrexate level where available and the glucarpidase question in renal failure with high levels - [[emergency-critical-care/poisoning]], [[blood/anaemia]]; the system repair - weekly-only pack sizes and dosing calendars, the dose-aid and patient-held record, the pharmacist counseling with teach-back and the family involved in the weekly ritual, the e-prescribing hard-stop for daily methotrexate, and the national reports that made this a never-event with plain-language labels and 'WEEKLY' highlighted in the drug line - [[clinical-skills/patient-safety]], [[clinical-skills/communication]]; and the disclosure duty - honest explanation, apology, documentation and incident reporting, with the shared decision about whether and how to restart at all, and the check of every other weekly or intermittent medicine in the same household (weekly alendronate or risedronate and weekly high-dose colecalciferol, plus the colchicine dosing-error family of incidents) - [[medical-ethics-law/professionalism-regulation]], [[musculoskeletal/osteoarthritis]].**
-:::
-:::
+Most assays measure total drug concentration. For highly protein-bound drugs, a low albumin raises the free fraction, so a total level within the range may correspond to a high free level ([[pharmacology/absorption-distribution]]). For phenytoin, the free level can be measured directly in some laboratories. Where it cannot, the **Sheiner–Tozer equation** gives a rough adjusted total level:
 
-::: example The dialysis-day antibiotic {#ex-dialysis-timing}
-Haemodialysis patients keep getting their antibiotics dosed 'on the ward schedule' - ceftriaxone at 09:00 daily including dialysis days, levofloxacin daily without renal reduction, and gentamicin given post-dialysis only at the unit while ward doses run on other days without level checks.
+$$
+C_{\text{adjusted}} = \frac{C_{\text{measured}}}{0.2 \times \text{albumin (g/dL)} + 0.1}.
+$$ {#eq-sheiner}
+
+It is an approximation. It performs less well in kidney failure and critical illness, and clinical signs remain the final guide.
+
+::: example The once-weekly drug taken daily {#ex-methotrexate-weekly}
+A 69-year-old woman with rheumatoid arthritis takes methotrexate 10 mg once weekly with folic acid. After a hospital admission, her discharge prescription lists "methotrexate 10 mg daily". Two weeks later she has severe mouth ulcers, diarrhoea and bruising; her neutrophil count is 0.4 × 10⁹/L and platelets 20 × 10⁹/L. Explain the pharmacology of this harm and the safety principles involved.
 ::: solution
-**Extracorporeal-pharmacokinetics-triage ([[#def-ss]], [[#def-tdm]], [[renal/chronic-kidney-disease]]): what-dialysis-removes - low volume of distribution, low protein binding, small size, water solubility: so gentamicin and levofloxacin are substantially removed while ceftriaxone (highly bound, large Vd by renal standards) barely is, hence post-dialysis supplementation only for removable drugs (the high-flux-membrane and flow-rate effects that make textbook tables approximations, and the continuous renal replacement therapy arithmetic where dialytic clearance can exceed residual renal clearance) - [[emergency-critical-care/critical-care]]; the timing rules - give removable drugs after dialysis or supplement after the session with the level doing the arguing, because dosing before a session that clears the drug is half-dosing (the thrice-weekly inter-dialytic accumulation for renally handled drugs, the intra-dialytic hypotension altering delivery, and the line-lock and biofilm questions if the catheter is infected) - [[infectious-diseases/healthcare-infections]]; the audit findings fixed - levofloxacin reduced and timed, gentamicin only with levels and a written post-dialysis plan shared between unit and ward, ceftriaxone left alone on non-dialysis logic with biliary cautions, vancomycin dosed by protocol with pre-session levels and AUC thinking, and the antimicrobial stewardship rounds including dialysis days as pharmacokinetic events; and the governance - the renal-pharmacy-PK input to the dialysis protocol, the e-prescribing dialysis-aware alerts, and the patient education that hospital days change their medicine timetable (the contrast between this and the home-dialysis autonomy designs where patients self-manage heparin and erythropoietin dosing with monitored targets) - [[renal/filtration]], [[clinical-skills/records-handover]].**
+Low-dose methotrexate for inflammatory disease is given once a week. Taken daily, she has received seven times the intended dose. Methotrexate inhibits dihydrofolate reductase; rapidly dividing cells such as those of bone marrow and gut mucosa are the first to suffer, giving mucositis and pancytopenia. Methotrexate is excreted by the kidney, so any decline in kidney function during her admission would have reduced clearance further. Her presentation is a medical emergency, managed with urgent specialist advice, which may include folinic acid rescue.
+
+This is a recognised, recurrent error, and national bodies in the UK have repeatedly issued safety advice about it. Principles that reduce it include writing the day of the week on the prescription, using a single tablet strength, prescribing systems that default to weekly dosing, checking the dose at medicines reconciliation on admission and discharge, and explaining the weekly regimen to the patient, often with a patient-held record ([[pharmacology/drug-development-prescribing]]).
 :::
 :::
 
 ::: quiz
-A drug's elimination half-life determines:
-- [x] How long it takes to reach steady state on a fixed dosing rate
-- [ ] The average steady-state concentration achieved
-- [ ] The loading dose required
-- [ ] Whether the drug has active metabolites
+Which of the following is the best reason why a drug level is *not* usually measured for an ACE inhibitor in hypertension?
+- [ ] ACE inhibitors have a very narrow therapeutic range
+- [ ] Their kinetics are saturable
+- [x] The effect (blood pressure) can be measured directly and doses are titrated against it
+- [ ] They are not absorbed orally
 ::: solution
-**Time to steady state is four to five half-lives and is unaffected by dose or dosing frequency; average steady-state concentration is set by dose rate over clearance, and loading dose by target times volume of distribution. Active metabolites are chemistry, not kinetics ([[#def-ss]]).**
+TDM is worth doing when the effect is hard to measure or toxicity is unpredictable and serious. Blood pressure is easy to measure and is the outcome of interest, so the dose is titrated against it, with kidney function and potassium checked for safety. ACE inhibitors have a wide margin between effective and toxic concentrations, and their kinetics are linear at usual doses.
 :::
 :::
 
-::: widget plot
-f: 100*(1-exp(-x*0.693/2)); 50*(1-exp(-x*0.693/2)); 100*(1-exp(-x*0.693/0.5)); 100*exp(-x*0.693/2)
-x: 0.01, 14
-y: 0, 108
-labels: \text{days on fixed dosing},\ \%\text{steady-state level};\ \text{half-life 2 days, standard dose};\ \text{double dose: same time, higher plateau};\ \text{half-life 0.5 days: there in a day};\ \text{wash-off, half-life 2 days}
-caption: Half-life answers 'how long to arrive, how long to leave' ([[#def-ss]]): doubling the dose raises the plateau but not the speed - four to five half-lives either way; which is why loading doses (target times Vd) exist and why stopping amiodarone takes weeks ([[pharmacology/dosing-principles]], [[cardiovascular/arrhythmias]]).
+## Adjusting for kidney function {#sec-renal}
+
+Many drugs, or their active metabolites, are cleared by the kidney. When kidney function falls, clearance falls with it, and if the dose is not adjusted the drug accumulates. Adjustment matters most for drugs that are mainly renally excreted and have a narrow therapeutic index: aminoglycosides, vancomycin, lithium, digoxin, direct oral anticoagulants, low molecular weight heparins, metformin, gabapentin and pregabalin, and some antivirals.
+
+Kidney function is estimated in two main ways.
+
+- **eGFR**, calculated by laboratories from creatinine, age and sex (in the UK usually with the CKD-EPI equation), is expressed per 1.73 m² of body surface area. It is designed for staging chronic kidney disease ([[renal/chronic-kidney-disease]]).
+- **Creatinine clearance** estimated by the **Cockcroft–Gault equation**, expressed in mL/min for the actual patient. Many drug licences and dosing tables were derived using it.
+
+$$
+CrCl\ (\text{mL/min}) = \frac{(140 - \text{age}) \times \text{weight (kg)} \times K}{\text{serum creatinine } (\mu\text{mol/L})},
+$$ {#eq-cg}
+
+where $K = 1.23$ for men and $1.04$ for women. The BNF advises using estimated creatinine clearance rather than eGFR for direct oral anticoagulants, for drugs with a narrow therapeutic index that are mainly renally excreted, and for people at the extremes of body weight and older people, in whom the two estimates can differ substantially. Which weight to use in obesity follows local guidance.
+
+Two strategies reduce exposure when clearance is lower. **Reducing the dose** at the same interval lowers peaks and troughs proportionately. **Extending the interval** at the same dose keeps the peak but lowers the average, which suits concentration-dependent drugs such as aminoglycosides. Loading doses are usually not reduced, because they depend on volume. Both estimates are unreliable when kidney function is changing quickly, as in acute kidney injury, when creatinine lags behind the true GFR ([[renal/acute-kidney-injury]]).
+
+::: example Estimating creatinine clearance {#ex-cockcroft}
+An 82-year-old woman of Irish heritage weighs 50 kg and has a serum creatinine of 110 µmol/L. Her laboratory eGFR is reported as 41 mL/min/1.73 m². A direct oral anticoagulant is being considered for atrial fibrillation. Estimate her creatinine clearance and comment.
+::: solution
+From [[#eq-cg]]:
+
+$$
+CrCl = \frac{(140 - 82) \times 50 \times 1.04}{110} = \frac{3016}{110} \approx 27 \text{ mL/min}.
+$$
+
+Her creatinine clearance (about 27 mL/min) is considerably lower than her eGFR (41 mL/min/1.73 m²), because she is small and old: the eGFR is standardised to an average body size, and her low muscle mass makes a "normal-looking" creatinine misleading. For direct oral anticoagulants, dose reductions and contraindications in the product licences are defined by creatinine clearance, so using eGFR could lead to overdosing and bleeding. The choice of drug and dose follows the product information, the BNF and local anticoagulation guidance.
+:::
+:::
+
+::: example The rising gentamicin level {#ex-gent}
+A 71-year-old man with pyelonephritis and bacteraemia is started on once-daily intravenous gentamicin according to the local protocol, alongside other antibiotics. His creatinine rises from 95 to 160 µmol/L over three days, and his pre-dose level before the fourth dose is above the protocol's threshold. Explain what has happened and the principles of the next step.
+::: solution
+Gentamicin is excreted almost entirely by glomerular filtration. As his kidney function has declined, its clearance has fallen and its half-life lengthened, so less of each dose is eliminated before the next one. The trough level rises; persistently high troughs are associated with nephrotoxicity and ototoxicity, which in turn reduce clearance further. Sepsis, hypotension and other nephrotoxic drugs may have contributed to the kidney injury.
+
+Principles for the next step: withhold the dose until the level has fallen below the threshold, then extend the dosing interval (rather than simply reduce the dose, preserving a high peak for concentration-dependent killing), or switch to a less nephrotoxic agent when culture results allow. Review whether gentamicin is still needed at all, since many protocols limit courses to a few days. Repeat levels and kidney function closely, and look for and stop other nephrotoxic drugs. Specific thresholds and nomograms are those of the local protocol ([[infectious-diseases/stewardship-outbreaks]]).
+:::
+:::
+
+::: history
+The idea that a drug should be dosed to a concentration rather than simply by weight grew in the 1960s and 1970s, when sensitive assays became available. Gas chromatography and then immunoassays made it possible to measure drugs such as phenytoin, digoxin and the aminoglycosides in routine laboratories, and clinical pharmacologists began to relate levels to effect and toxicity. Lewis Sheiner and colleagues developed population pharmacokinetic methods in the 1970s, using sparse samples from many patients to estimate typical clearance and volume and their variation; their approach underlies the dosing software and nomograms used today. Donald Cockcroft and Henry Gault published their creatinine clearance equation in 1976, from data on 249 men, with the correction for women added as an assumption; it remains part of drug licensing and dosing nearly half a century later. Extended-interval (once-daily) dosing of aminoglycosides was adopted widely in the 1990s, after clinical studies showed similar efficacy with less toxicity than divided doses.
+:::
+
+::: summary
+- Dosing aims for a target concentration within the therapeutic range. Loading dose $= V_d \times C_{\text{target}}/F$; maintenance dose rate $= CL \times C_{ss}/F$.
+- Steady state is reached after four to five half-lives regardless of dose; only a loading dose shortens the wait. Any dose change starts the clock again.
+- Average steady-state concentration $= F D/(CL\,\tau)$. The dosing interval relative to the half-life determines the fluctuation between peak and trough.
+- Therapeutic drug monitoring is useful for narrow-range drugs with variable kinetics and effects that are hard to measure: lithium, digoxin, phenytoin, aminoglycosides, vancomycin, ciclosporin and tacrolimus among others.
+- Interpret levels with the sample time, steady state, protein binding and the clinical picture.
+- In kidney impairment, reduce maintenance doses or extend intervals for renally cleared drugs; estimate creatinine clearance (Cockcroft–Gault) where licences and the BNF require it.
 :::
 
 ## Where this leads
 
-Renal and hepatic adjustment mechanics in [[pharmacology/metabolism-excretion]] and [[renal/chronic-kidney-disease]]; population variation and pharmacogenetics in [[pharmacology/patient-variation]]; prescribing safety culture in [[clinical-skills/patient-safety]].
-
-::: history
-**Dose as a science began when chemistry made drugs measurable: the 19th-century digitalis units of Trousseau and the standardized opium preparations of the era, the chaos of unstandardised plant extracts that made doses folklore (the pure-solutum and galenical debates and the later standardisation laws) - [[pharmacology/drug-development-prescribing]]; the narrow-index modern era was set by two lines on a graph - the 1960s-70s work of Levy, who modelled phenytoin's saturable kinetics and explained its strangeness, and the keep fair: the Richens and Dunlop phenytoin dose-toxicity studies of 1973 and the simultaneous birth of serum-level-guided dosing (the Steer of the field being the phenytoin-ataxia families whose epilepsy 'worsened' with rising levels and normal doses) - [[nervous-system/epilepsy]], [[clinical-skills/laboratory-tests]]; the half-life-elimination-rate framework was formalised by keep general: the 1950s-60s school - the Eckenhoff-Ekman-era anaesthetic redistribution kinetics and then keep general: the Rowland-Tozer and Gibaldi-Peer-manual-era compartment modelling of the 1960s-70s that turned clinical pharmacology into arithmetic taught with straight lines on semilog paper (the one-compartment textbook and the two-compartment clinic) - [[pharmacology/absorption-distribution]]; the therapeutic drug monitoring boom - the Szasz and the keep general: the 1969-1973 arrival of routine phenytoin assays, the aminoglycoside peak-trough protocols of the 1970s, and the lithium level as psychiatry's first laboratory leash on a treatment (the keep general: the Maudsley and NIMH-era maintenance lithium trials and the UK lithium monitoring clinics with their nurse-led blood rotas) - [[psychiatry/mood-disorders]]; and the modern personalisation era - the population pharmacokinetics and Bayesian forecasting from Sheiner's keep general: the Sheiner-Beal non-linear mixed-effects methods of the 1970s-80s, the model-informed precision dosing of the 2010s-20s with software at the bedside, the AUC-guided vancomycin consensus rewriting a 40-year-old trough habit, and the smart-pump and e-prescribing guardrail era - the loading-dose errors that never left and the never-events they became - [[clinical-skills/patient-safety]], [[microbiology/antimicrobials]].**
-:::
-
-::: summary
-- Dosing is concentration management: loading targets volume of distribution, maintenance targets clearance, and half-life only tells you the timing.
-- Steady state takes four to five half-lives no matter what you do to the dose; loading is the only way to get there early, and it is also the fastest way to overdose.
-- Saturable kinetics (phenytoin, ethanol, salicylate) break proportional dosing; small dose changes produce large level changes near saturation.
-- Therapeutic drug monitoring only helps with correct timing, correct interpretation (free versus total, adherence versus biology) and a pre-agreed action.
-- Renal and hepatic adjustment changes maintenance, not usually the first dose; the sick patient needs recalculating today, not remembering last week.
-- Narrow-index drugs deserve protocols: weight bands, double checks, level schedules and documented stop rules.
-:::
-
-::: exercise Why the first dose is full {level=1}
-Explain why 'reduce for the kidneys' is wrong for a first dose of hydrophilic antibiotics in acute kidney injury, and when you would still modify the first dose.
-::: solution
-**First-dose-logic ([[#def-target-load]], [[#def-ss]]): first dose depends on volume of distribution, not clearance, and sepsis and capillary leak enlarge the hydrophilic Vd, so the full (often higher) loading dose gets the concentration into range while reduced maintenance only keeps it there - the delayed-adequate-therapy mortality signal in septic shock and the underdosing-by-caution audit finding - [[emergency-critical-care/shock-fluids]]; when the first dose does change - drugs whose Vd is deranged (the obesity and oedema tables), toxicity-dominated loading (the digoxin and theophylline load-now-seldom doctrine with weight and lean-mass arithmetic), and renal-failure accumulation of active metabolites where even the first exposure matters (the M6G and morphine contrast, and the cefepime neurotoxicity lesson that levels can rise within a day when clearance is near zero) - [[renal/acute-kidney-injury]], [[microbiology/antimicrobials]].**
-:::
-:::
-
-::: exercise Sequence the loading {level=2}
-For rapid anticoagulation with warfarin for a new DVT you use heparin cover; for rate control in AF you load digoxin slowly; for epilepsy loading you choose levetiracetam or phenytoin with different mathematics. Explain each design against the kinetic or receptor reason.
-::: solution
-**Loading-designs-compared ([[#def-target-load]], [[#def-ss]]): warfarin-heparin bridge - warfarin's effect requires vitamin-K-dependent factor depletion (factor VII and protein C fall first, thrombin over days), so the INR is a lagging report and anticoagulation needs immediate parenteral cover, plus the early hypercoagulable-protein-C-dip caution and the heparin's own monitoring (the LMWH anti-Xa question at extremes of weight and renal function) - [[blood/thrombosis-anticoagulation]], [[blood/haemostasis-bleeding]]; digoxin - a huge Vd bound to muscle Na-K-ATPase means oral loading over a day is possible but unnecessary when rate control is the goal, and its steep concentration-toxicity curve (the AV-nodal and automaticity balance, hypokalaemia and hypomagnesaemia raising toxicity at any level, the renal maintenance dependence) prefers slow acceptance or another agent - [[cardiovascular/heart-failure]], [[renal/potassium-calcium-phosphate]]; antiepileptic loading - levetiracetam's linear kinetics, low binding and forgiving index allow fast weight-based infusion, while phenytoin's saturable metabolism, non-linear infusion kinetics, propylene-glycol cardio-toxicity and purple-bag syndrome force slower rates with cardiac monitoring and level-guided top-ups, and valproate and lacosamide and brivaracetam each bring their own loading trade-space - [[nervous-system/epilepsy]].**
-:::
-:::
-
-::: exercise Write the sick-day plan {level=2}
-Draft written sick-day rules (hold, reduce, or continue plus check) for: lithium, metformin, SGLT2 inhibitors, ACE inhibitors and diuretics, prednisone, apixaban, inhaled insulin, and levothyroxine (its absorption hostage to food, coffee, calcium, iron and PPIs, so level checks follow stomach changes, not just dose changes - [[endocrine/thyroid]]).
-::: solution
-**Sick-day-rules-draft ([[#def-ss]], [[#def-tdm]], [[emergency-critical-care/shock-fluids]]): lithium - hold with vomiting, diarrhoea or fever with poor intake, rehydrate, restart when eating normally, check level if the illness lasted days, and the same caution with NSAIDs, thiazides and ACE inhibitors added to the list - [[psychiatry/mood-disorders]]; metformin - the sick-day rules for volume depletion and contrast to prevent lactic acidosis, held in acute illness with hypoxia or sepsis, and the SGLT2 inhibitors held perioperatively and in starvation states because euglycaemic ketoacidosis does not need much hyperglycaemia to happen (the ketone-strip counselling and the insulin-dose-not-zero teaching) - [[endocrine/diabetes]], [[renal/acute-kidney-injury]]; ACE inhibitors and diuretics - held in hypovolaemic illness to protect perfusion and potassium, restarted when drinking, with the diuretic dose question in heart failure differentiated from the hypertension patient (the 'drip and suck' conflict where the same drugs run with different logic) - [[cardiovascular/heart-failure]], [[renal/water-sodium]]; prednisone - never simply held after adrenal suppression: stress dosing per guideline with steroid card and emergency injection, and the infection-masking trade - [[endocrine/adrenal]]; and apixaban - no routine sick-day hold but a review when bleeding, dehydration with kidney injury, or interacting drugs arrive, since the renal fraction and P-gp make vomiting-and-diarrhoea days unpredictable, with the DOAC reversal routes named - [[blood/thrombosis-anticoagulation]]. The card itself: one side per drug in plain words, when to hold, when to check, when to ring, written with the patient at the consultation, reviewed annually and after every admission - [[clinical-skills/communication]].**
-:::
-:::
-
-::: exercise Critique the loading-dose protocol sheet {level=3}
-Your trust copies a critical-care loading-dose sheet (weight-based, organ-function-independent first doses) into general wards. Appraise benefits, failure modes and the safeguards that make it safe or dangerous outside the ICU.
-::: solution
-**Protocol-transfer-critique ([[#def-target-load]], [[clinical-skills/patient-safety]]): the case for - underdosing is common and harmful in sepsis, pain and anticoagulation, and weight-based loading with double checks mirrors what ICUs, anaesthesia and oncology already do safely, converting pharmacokinetic literacy into default behaviour instead of heroics; the failure modes - wards lack the monitoring density of ICU, so loading drugs whose toxicity is immediate and silent (the digoxin and phenytoin infusion cautions) needs different guardrails than antibiotics, the mg-per-kg arithmetic without smart-pump limits and independent double check is where harm lives, and the copying of ICU doses without ICU assumptions (fluid status, albumin, renal trajectory, infusion equipment) is pharmacokinetic tourism (the heparin and insulin protocol adherence literature and the wrong-concentration stock vials that keep producing harm - the ISMP never-events and the tall-man-lettering heritage) - [[emergency-critical-care/critical-care]], [[endocrine/diabetes]]; the safeguards - concentration standardisation and removal of duplicate strengths, forced-function double checks with hard stops above weight-derived ceilings, pharmacist review for the narrow-index list, dose-range display limits on pumps with local libraries, and a learning system that reports near-misses as protocol feedback not misdemeanours; and the evaluation - pre-post audit of time-to-adequate-therapy and adverse events, equity of weight estimation when documentation is poor the recorded-weight literature, and the protocol sunset review because copied sheets outlive their evidence - [[pharmacology/adverse-reactions]], [[clinical-skills/records-handover]].**
-:::
-:::
+How patients differ in clearance, volume and sensitivity, from children to older people and from pregnancy to genetic variation, is covered in [[pharmacology/patient-variation]]. The consequences when dosing goes wrong are discussed in [[pharmacology/adverse-reactions]], and the systems that keep prescribing safe in [[pharmacology/drug-development-prescribing]]. Kidney function and its estimation are covered in [[renal/filtration]], and prescribing for older people with many medicines in [[geriatrics-palliative/polypharmacy]].
 
 ## Exercises
 
-::: exercise Do the arithmetic {level=1}
-Target concentration 20 mg/L, Vd 35 L, oral bioavailability 0.7: what is the loading dose? If clearance is 0.5 L/h, what maintenance rate maintains the target? What is the half-life?
+::: exercise How close to steady state? {level=1 check="87.5"}
+A drug is given by constant intravenous infusion. What percentage of the eventual steady-state concentration is reached after three half-lives? Give the exact value.
 ::: solution
-**Numbers-out-loud ([[#def-target-load]], [[#def-ss]]): loading dose = target times Vd divided by F = 20 times 35 divided by 0.7 = 1000 mg; maintenance rate = target times clearance divided by F = 20 times 0.5 divided by 0.7 = 14.3 mg/h; half-life = 0.693 times Vd over clearance = 0.693 times 35 over 0.5 = 48.5 hours, so steady state in roughly ten days without loading, which is exactly when a loading dose earns its place; and the sanity checks - units first, weight-band second, protocol third, and if the answer feels wrong check F and the volume assumptions before blaming the pharmacy ([[#def-tdm]]).**
+$100 \times (1 - 0.5^3) = 100 \times 0.875 = 87.5\%$.
 :::
 :::
 
-::: exercise Load or wait? {level=1}
-For each, say load-and-maintain or titrate-slowly, with reasons: new atrial fibrillation needing rate control today (beta-blocker), suspected meningitis (vancomycin plus ceftriaxone), new uncomplicated hypertension (amlodipine), severe overanticoagulation reversal (vitamin K), myasthenia maintenance (azathioprine).
+::: exercise A loading dose {level=1 check="200"}
+A drug has a volume of distribution of 50 L and is given intravenously. What loading dose (in mg) is needed to reach a plasma concentration of 4 mg/L?
 ::: solution
-**Load-versus-titrate-triage ([[#def-target-load]], [[#def-ss]]): rate control - titrate with a short-acting agent if urgent rather than loading a long-acting one blindly, because beta-blockade is titratable against rate and blood pressure and the receptor logic prefers graded occupancy (the IV-versus-oral and the decompensated-heart-failure caution) - [[cardiovascular/arrhythmias]], [[cardiovascular/heart-failure]]; meningitis - load by giving full first doses immediately, and here the whole dose IS the loading, with PK/PD-matched beta-lactam dosing and CNS penetration realities driving agent choice (the dexamethasone-timing adjacency and the intrathecal question in ventriculitis) - [[nervous-system/neuroinflammation]], [[microbiology/antimicrobials]]; hypertension - titrate slowly over weeks because the benefit is chronic, the adverse-effect profile is concentration-smoothed by patience, and the receptor and volume systems adapt (the white-coat-versus-measured control and the adherence-support-over-dose-escalation sequencing) - [[cardiovascular/hypertension]]; vitamin K reversal - a considered dose by bleeding severity (the 1-versus-5-versus-10 mg arithmetic with PCC for serious bleeding and the warfarin-restart plan and the month-long resistance problem after large vitamin K doses) - [[blood/thrombosis-anticoagulation]]; azathioprine in myasthenia - months to effect, no loading, bridge with IVIg or plasma exchange while the antibody distribution and production respond (the TPMT and NUDT15 check first and the slow-outcome measurement discipline) - [[nervous-system/neuromuscular]], [[pharmacology/patient-variation]].**
+From [[#eq-load]], loading dose $= 50 \times 4/1 = 200$ mg.
 :::
 :::
 
-::: exercise Fix the regimen {level=2}
-Redesign with reasons: (a) gentamicin given thrice daily at standard dose for a Pseudomonas bacteraemia; (b) amiodarone loading over one day then stopped at day 10 because 'levels are therapeutic'; (c) phenytoin increased from 300 to 400 mg and then to 500 mg in two weeks with rising ataxia; (d) IV vancomycin as intermittent boluses for a patient whose levels keep 'missing target'.
+::: exercise A maintenance dose {level=1 check="360"}
+A drug has a clearance of 3 L/h and is given intravenously. The target average steady-state concentration is 15 mg/L. What dose (in mg) should be given every 8 hours?
+::: hint
+Find the hourly dose rate first.
+:::
 ::: solution
-**Regimen-redesign ([[#def-ss]], [[#def-tdm]]): gentamicin - move to once-daily (extended-interval) dosing with measured half-life adjustment, because concentration-dependent killing wants peaks and renal-ear toxicity wants troughs - the paradox that standard thrice-daily dosing is both less effective and not safer (the obesity-dose-to-adjusted-weight question and the dialysis-day timing) - [[microbiology/antimicrobials]], [[renal/acute-kidney-injury]]; amiodarone - its half-life of weeks means 'therapeutic levels' at day 10 reflect loading distribution not equilibrium; the question is rhythm and tolerance over months, and stopping depends on indication-toxicity balance, not a level - the tissue-accumulation kinetics behind corneal deposits, photosensitivity, thyroid and lung toxicity with the CT-density tell and the surveillance protocol - [[cardiovascular/arrhythmias]], [[respiratory/interstitial-vascular-disease]]; phenytoin - saturable metabolism means 300 to 400 to 500 mg is an exponential level climb; the fix is small steps with levels and free-level interpretation in hypoalbuminaemia, plus checking for the interaction (the protein-binding and enzyme-induction audit and the dose-formulation switch equivalence and the long-term cosmetic, cerebellar, bone and neuropathy bills asking whether a different drug is wiser) - [[nervous-system/epilepsy]], [[pharmacology/metabolism-excretion]]; and vancomycin - convert to AUC-guided dosing with two levels or Bayesian software, or continuous infusion per protocol, because trough-chasing above 15-20 mg/L buys nephrotoxicity, not efficacy; check the MIC creep, the source control, and whether the drug itself is the wrong tool (the D-test and inducible-resistance and the line-exchange and the oral vancomycin-is-a-different-drug entirely rule for colitis) - [[renal/acute-kidney-injury]], [[infectious-diseases/stewardship-outbreaks]].**
+Dose rate $= CL \times C_{ss} = 3 \times 15 = 45$ mg/h. Every 8 hours: $45 \times 8 = 360$ mg.
 :::
 :::
 
-::: exercise Design the home-TDM service {level=3}
-Design therapeutic drug monitoring for a community lithium and tacrolimus service: sampling logistics, interpretation, action protocols, equity, and governance.
+::: exercise Accumulation with frequent dosing {level=2 check="3.4"}
+A drug with a half-life of 12 hours is given as an intravenous bolus every 6 hours. By what factor is the steady-state peak greater than the peak after the first dose? Give your answer to one decimal place.
+::: hint
+The accumulation factor is $1/(1 - e^{-k\tau})$, and $e^{-k\tau} = (1/2)^{\tau/t_{1/2}}$.
+:::
 ::: solution
-**Community-TDM-design ([[#def-tdm]], [[public-health/health-systems-economics]]): sampling-logistics - standardised times made feasible outside hospitals the lithium 12-hour and trough tacrolimus times supported by dose-time photographs and app reminders, community sampling networks and postal volumetric cards where validated, home-collection accuracy versus laboratory standards, and transport and stability rules for immunoassay samples) and the interpretation-layer - levels-in-context decision support sending renal, thyroid, calcium and albumin with the drug level, plus zero levels read as adherence evidence only under agreed pre-test consent, never ambush testing, with therapeutic-alliance and refill-data triangulation - [[medical-ethics-law/confidentiality]], [[psychiatry/treatments-mental-health-law]]; the action protocols - pre-agreed dose-adjustment nomograms with pharmacist authority limits and prescriber callbacks, the same-day urgent pathways for lithium above bands or tacrolimus spikes with creatinine, and the sickness-day rules for both drugs (the gastroenteritis-with-lithium sick-day card and the transplant clinic's vomiting-day IV-bridge plan - [[renal/chronic-kidney-disease]]); the equity layer - appointment times and transport and literacy and interpreter access modelled into uptake data, since missed bloods become toxicity admissions in the same households, and the digital-portal design that does not assume a smartphone; and the governance - assay standardisation and external quality assurance, audit of time-to-action from result to dose, patient-reported outcome and experience measures beside level bands, admission and toxicity endpoints (the equity-of-outcome dashboard for lithium clinic attenders and the tacrolimus level variability index as a graft-survival risk factor managed proactively, with the pharmacist-led clinics evidence) - [[immunology/transplant-tumour-immunology]], [[public-health/determinants-inequalities]], [[clinical-skills/records-handover]].**
+$e^{-k\tau} = 0.5^{6/12} = 0.5^{0.5} \approx 0.707$. Accumulation factor $= 1/(1 - 0.707) \approx 3.41$, which is **3.4** to one decimal place. When the interval is shorter than the half-life, drug accumulates considerably before steady state is reached.
+:::
+:::
+
+::: exercise Cockcroft–Gault {level=2 check="43"}
+Estimate the creatinine clearance of a 75-year-old man weighing 80 kg with a serum creatinine of 150 µmol/L, using the Cockcroft–Gault equation. Give your answer to the nearest whole number in mL/min.
+::: solution
+$CrCl = (140 - 75) \times 80 \times 1.23/150 = 6396/150 \approx 42.6$, which is **43** mL/min.
+:::
+:::
+
+::: exercise When to check the level {level=2}
+A 58-year-old man with epilepsy takes an antiepileptic drug with a half-life of about 60 hours. His dose is increased on 1 March because of breakthrough seizures. (a) Roughly when will the new steady state be reached? (b) When would a level be most informative, and at what time of day? (c) If he developed ataxia on 3 March, would you wait for steady state before checking a level?
+::: solution
+(a) Four to five half-lives: about 240–300 hours, or 10–12 days. Steady state would be reached around 11–13 March.
+
+(b) A pre-dose (trough) sample after about two weeks gives the most reproducible measure of the new steady state, recorded with the time of the last dose.
+
+(c) No. Steady state matters for judging whether a dose is right in the long term. Suspected toxicity is a reason to measure the level at once, along with clinical assessment; the result is then interpreted knowing that concentrations may still be rising.
+:::
+:::
+
+::: exercise Time to near steady state on an infusion {level=3 check="13.3"}
+A drug with a half-life of 4 hours is started as a constant intravenous infusion with no loading dose. How many hours will it take to reach 90% of the steady-state concentration? Give your answer to one decimal place. Then explain how a loading dose would change this, and why the infusion rate cannot be used to speed it up.
+::: hint
+Solve $1 - e^{-kt} = 0.9$, with $k = \ln 2/4$.
+:::
+::: solution
+$e^{-kt} = 0.1$, so $t = \ln 10/k = \ln 10 \times 4/\ln 2 \approx 13.29$ hours, which is **13.3** hours (about 3.3 half-lives).
+
+A loading dose of $V_d \times C_{ss}$ at the start fills the volume of distribution immediately, so the target is reached at once and the infusion then maintains it. Increasing the infusion rate instead raises the eventual steady-state concentration proportionately but leaves the time course unchanged (it still takes 3.3 half-lives to reach 90% of the new, higher plateau), so the patient would overshoot the target. A temporary high rate followed by a lower one is in effect a loading dose given over a period.
+:::
+:::
+
+::: exercise Adjusting a phenytoin level for low albumin {level=3 check="10"}
+A 66-year-old woman with epilepsy and nephrotic syndrome has a measured total phenytoin concentration of 6 mg/L and a serum albumin of 25 g/L (2.5 g/dL). Using the Sheiner–Tozer equation [[#eq-sheiner]], calculate the adjusted total concentration in mg/L. Give the exact value. Explain what the result means for her dosing, and state two limitations of the calculation.
+::: solution
+$C_{\text{adjusted}} = 6/(0.2 \times 2.5 + 0.1) = 6/0.6 = 10$ mg/L.
+
+The measured level of 6 mg/L looks low, but because her albumin is low a larger fraction of the drug is free. The adjusted value of 10 mg/L estimates what the total level would be at normal albumin, and suggests that her free (active) concentration is at the lower end of the usual range rather than subtherapeutic. Increasing the dose on the basis of the raw total level could produce toxicity, especially because phenytoin's elimination is saturable.
+
+Limitations: the equation was derived in specific populations and is less accurate in kidney failure (where uraemic toxins also displace phenytoin) and critical illness; it assumes binding depends only on albumin concentration. A measured free phenytoin level, where available, is more reliable, and decisions rest on seizure control and clinical signs of toxicity.
 :::
 :::
