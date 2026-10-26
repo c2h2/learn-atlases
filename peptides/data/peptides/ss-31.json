@@ -123,6 +123,41 @@
     "Barth syndrome affects about 150 people in the United States.",
     "'SS' stands for Szeto–Schiller, after the two scientists who designed the peptide family."
   ],
+  "community": {
+    "summary": "A relatively expensive 'mitochondrial' peptide self-injected by a small number of longevity enthusiasts, endurance athletes and people with chronic fatigue, bought from research-peptide vendors. Community doses are a small fraction of those used in the elamipretide trials.",
+    "protocols": [
+      {
+        "label": "Standard",
+        "dose": "1-5 mg",
+        "frequency": "once daily, subcutaneous",
+        "duration": "4-8 weeks, then a break"
+      },
+      {
+        "label": "Low dose",
+        "dose": "0.5-1 mg",
+        "frequency": "3-5 times a week, subcutaneous",
+        "duration": "8-12 weeks with breaks"
+      },
+      {
+        "label": "'Mitochondrial' stack",
+        "dose": "SS-31 1-5 mg plus MOTS-c (and sometimes NAD+)",
+        "frequency": "SS-31 daily; MOTS-c a few times a week",
+        "duration": "4-8 weeks"
+      }
+    ],
+    "reported_effects": [
+      "More energy and endurance and better recovery from exercise, described by those who notice anything as gradual and subtle",
+      "Some people with chronic fatigue report modest gains; others none",
+      "Many report no perceptible effect, and the cost makes threads sceptical"
+    ],
+    "reported_side_effects": [
+      "Injection-site reactions (itching, redness, raised welts) are the main complaint, matching the most common adverse event in the clinical trials",
+      "Headaches",
+      "Concerns about purity and dosing accuracy of vendor products"
+    ],
+    "sources": "r/Peptides, r/Biohackers, r/longevity, r/cfs and Longecity threads, 2021-2026, plus community protocol aggregators; self-reports, unverified, product purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["mots-c", "humanin", "epitalon"],
   "references": [
     {"title": "Cell-permeable peptide antioxidants targeted to inner mitochondrial membrane inhibit mitochondrial swelling, oxidative cell death, and reperfusion injury", "authors": "Zhao K, Zhao GM, Wu D, et al.", "journal": "J Biol Chem", "year": 2004, "url": "https://pubmed.ncbi.nlm.nih.gov/15178689/"},

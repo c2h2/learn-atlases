@@ -413,6 +413,44 @@
     "TB-500 was sold to racehorse and greyhound trainers around 2011, before it became popular with people.",
     "The Essendon bans rested on a 'strands in a cable' combination of circumstantial evidence rather than a failed drug test."
   ],
+  "community": {
+    "summary": "Bought as lyophilised 'TB-500' vials from research-peptide vendors and self-injected for tendon, ligament, muscle and joint injuries, almost always alongside BPC-157. Vials sold as TB-500 may contain either the short Ac-LKKTETQ fragment or full-length thymosin β4, and threads often cannot tell which they had.",
+    "protocols": [
+      {
+        "label": "Loading then maintenance (most common)",
+        "dose": "about 4-5 mg per week while loading (some go to 6-8 mg), then about 2 mg per week or every other week",
+        "frequency": "split into 2 subcutaneous injections a week (some do 3)",
+        "duration": "4-6 weeks of loading, then a few weeks of maintenance"
+      },
+      {
+        "label": "Lower-dose minor injury",
+        "dose": "2 mg per injection",
+        "frequency": "twice weekly, subcutaneous",
+        "duration": "4-6 weeks"
+      },
+      {
+        "label": "'Wolverine' stack with BPC-157",
+        "dose": "TB-500 2-5 mg per week plus BPC-157 250-500 mcg per day",
+        "frequency": "TB-500 split into 2 injections a week; BPC daily",
+        "duration": "4-8 weeks"
+      }
+    ],
+    "reported_effects": [
+      "Less pain and stiffness in tendons, ligaments and old joint injuries, usually said to show up after two to three weeks; nearly all reports are of the BPC-157 stack, so the two cannot be separated",
+      "Better range of motion and faster return to training after strains or surgery",
+      "Occasional side reports of thicker hair or better skin, mainly in 'GLOW' stacks with GHK-Cu",
+      "Many users notice nothing definite, and threads regularly blame underdosed or mislabelled vials"
+    ],
+    "reported_side_effects": [
+      "Tiredness or lethargy for a few hours after injecting, sometimes described as needing a nap",
+      "Brief head rush, light-headedness or flushing right after the shot",
+      "Headaches",
+      "Redness or soreness at the injection site",
+      "Recurring concern that its pro-repair, blood-vessel-growth effects could feed an existing tumour"
+    ],
+    "sources": "r/Peptides, r/moreplatesmoredates, r/Biohackers and peptide-forum threads, 2021-2026, plus community protocol aggregators; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": [
     "bpc-157",
     "thymosin-alpha-1",

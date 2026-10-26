@@ -364,6 +364,36 @@
     "Sermorelin has two ATC codes: H01AC04 as a somatropin agonist and V04CD03 as a test of pituitary function.",
     "Unmodified GHRH(1–29) survives only about 4 minutes in the blood, which is why longer-acting analogues such as CJC-1295 and tesamorelin were developed."
   ],
+  "community": {
+    "summary": "Since the branded product (Geref) was withdrawn, sermorelin has mostly been used at home as a compounded prescription from anti-ageing, men's-health and telehealth clinics, and to a lesser extent from research-chemical vendors. Users take it for sleep, recovery and 'healthy ageing', often alongside TRT; it is widely seen as milder than the CJC-1295/ipamorelin stack.",
+    "protocols": [
+      {
+        "label": "Nightly clinic-style protocol",
+        "dose": "200-300 mcg (some titrate to 500 mcg-1 mg)",
+        "frequency": "once at bedtime, subcutaneous, on an empty stomach; often 5 nights a week",
+        "duration": "3-6 months, sometimes longer, with breaks"
+      },
+      {
+        "label": "Stack with a GHRP",
+        "dose": "sermorelin 100-300 mcg plus ipamorelin 100-300 mcg (often a compounded pre-mix)",
+        "frequency": "once at bedtime",
+        "duration": "3-6 months"
+      }
+    ],
+    "reported_effects": [
+      "Better or deeper sleep is the most common report, usually within two to four weeks",
+      "Recovery, skin and body-composition changes are described as slow (two to three months) and modest",
+      "Many say they felt nothing in the first month or at all, and complain about the cost relative to the effect"
+    ],
+    "reported_side_effects": [
+      "Injection-site redness, itching or small lumps",
+      "Flushing, warmth or light-headedness shortly after injecting",
+      "Headache and mild water retention",
+      "Occasional numbness or tingling in the hands at higher doses"
+    ],
+    "sources": "r/Peptides, r/Testosterone, r/trt and r/Biohackers threads, 2019-2026; clinic patients and grey-market users; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": [
     "tesamorelin",
     "cjc-1295",

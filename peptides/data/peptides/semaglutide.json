@@ -597,6 +597,41 @@
     "The Aib residue at position 8 is a non-natural amino acid chosen specifically to block the DPP-4 enzyme that inactivates GLP-1.",
     "Semaglutide is on the WHO Model List of Essential Medicines."
   ],
+  "community": {
+    "summary": "Besides prescribed Ozempic and Wegovy pens, a large community self-injects compounded semaglutide (widely sold through US telehealth services during the 2022-2025 shortage) or lyophilised 'research' semaglutide from overseas vendors, drawn from multi-dose vials with insulin syringes. A growing subset 'microdoses' well below label doses for appetite control, weight maintenance or claimed anti-inflammatory and longevity effects.",
+    "protocols": [
+      {
+        "label": "Label-style titration",
+        "dose": "0.25 mg → 0.5 mg → 1 mg → 1.7 mg → 2.4 mg per week",
+        "frequency": "once weekly, subcutaneous",
+        "duration": "usually 4 weeks per step; many hold at 0.5-1 mg as long as weight keeps falling, and slow climbers stay 6-8 weeks per step"
+      },
+      {
+        "label": "Microdosing",
+        "dose": "about 0.1-0.25 mg per week, some lower",
+        "frequency": "once weekly, or the weekly amount split into 2-3 smaller injections or daily doses",
+        "duration": "open-ended; often used for maintenance after reaching a goal weight or to taper off"
+      }
+    ],
+    "reported_effects": [
+      "'Food noise' going quiet and early fullness, often from the first 0.25 mg dose; this is the near-universal report",
+      "Steady weight loss over the first months, then plateaus that prompt dose increases or a switch to tirzepatide or retatrutide",
+      "Less interest in alcohol and fewer cravings or compulsive snacking, reported widely",
+      "Microdosers describe milder appetite control with fewer side effects; others say such low doses do nothing noticeable"
+    ],
+    "reported_side_effects": [
+      "Nausea, mostly in the 1-3 days after each injection and after dose increases; vomiting less often",
+      "Constipation, the most common persistent complaint, sometimes alternating with diarrhoea",
+      "'Sulfur burps' (rotten-egg-smelling belching) and reflux, often after large or fatty meals",
+      "Fatigue and low energy, often blamed on eating too little",
+      "Hair shedding around months 3-6, usually attributed to rapid weight loss and low protein intake",
+      "Loose skin, a gaunt 'Ozempic face' and worry about muscle loss with fast weight loss",
+      "Dosing mistakes with compounded vials when converting milligrams to syringe 'units', especially when concentration changes between batches",
+      "Less common but recurring threads on gallbladder pain, severe vomiting with dehydration, and fear of pancreatitis"
+    ],
+    "sources": "r/Semaglutide, r/Ozempic, r/Wegovy, r/CompoundedSemaglutide and r/Peptides threads, 2022-2026; self-reports, unverified; strength and purity of compounded and research-vendor products vary",
+    "updated": "2026-10"
+  },
   "related": [
     "liraglutide",
     "tirzepatide",

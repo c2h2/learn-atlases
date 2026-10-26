@@ -116,6 +116,43 @@
     "FDA's advisory committee rejected it for compounding 0–12 in 2024, with one abstention, for both the acetate salt and the free base.",
     "WADA lists it as an example of a growth hormone secretagogue under section S2 of the Prohibited List."
   ],
+  "community": {
+    "summary": "The most popular growth-hormone secretagogue in the peptide community, chosen because it is said to raise GH without the hunger, cortisol and prolactin of older GHRPs. Bought as research-chemical vials or, in the US until the FDA's 2023 compounding restrictions, prescribed by anti-ageing and telehealth clinics; almost always stacked with CJC-1295 (no DAC).",
+    "protocols": [
+      {
+        "label": "Single bedtime dose (most common)",
+        "dose": "100-300 mcg",
+        "frequency": "once daily before bed, subcutaneous, fasted (at least 2 hours after the last meal)",
+        "duration": "8-12 weeks, often '5 days on, 2 off'; then a break of 4 weeks or more"
+      },
+      {
+        "label": "Split dosing",
+        "dose": "100-200 mcg per injection (about 1 mcg/kg)",
+        "frequency": "2-3 times daily on an empty stomach (on waking, pre- or post-workout, before bed), waiting 20-30 minutes before eating",
+        "duration": "8-12 weeks"
+      },
+      {
+        "label": "Stack with CJC-1295 (no DAC / mod GRF 1-29)",
+        "dose": "ipamorelin 100-300 mcg plus mod GRF 1-29 100 mcg, mixed in one syringe; pre-blended 'CJC/Ipa' vials are common",
+        "frequency": "once before bed, or 2-3 times daily, fasted",
+        "duration": "8-12 weeks, then a break"
+      }
+    ],
+    "reported_effects": [
+      "Deeper sleep and more vivid dreams are the most consistent reports, usually within the first one to two weeks",
+      "Better recovery, fuller-looking muscles, better skin and gradual fat loss are claimed over two to three months, but are subtle and hard to separate from training and diet",
+      "Some users post a raised IGF-1 on bloodwork as proof the product works; many others report no noticeable effect and suspect underdosed vials"
+    ],
+    "reported_side_effects": [
+      "A head rush, warmth or facial flushing for a few minutes after injecting (mostly when stacked with CJC-1295)",
+      "Water retention and puffiness, and numbness or tingling in the hands (carpal-tunnel-like), at higher doses",
+      "Lethargy or grogginess, especially with morning doses",
+      "Mild hunger, headaches and injection-site redness",
+      "Higher fasting blood glucose with long use; recurring worry about GH/IGF-1 and cancer risk"
+    ],
+    "sources": "r/Peptides, r/moreplatesmoredates, r/Testosterone and r/Biohackers threads, 2019-2026; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["ghrp-6", "ghrp-2", "cjc-1295", "sermorelin", "tesamorelin"],
   "references": [
     {"title": "Ipamorelin, the first selective growth hormone secretagogue", "authors": "Raun K, Hansen BS, Johansen NL, et al.", "journal": "Eur J Endocrinol", "year": 1998, "url": "https://pubmed.ncbi.nlm.nih.gov/9849822/"},

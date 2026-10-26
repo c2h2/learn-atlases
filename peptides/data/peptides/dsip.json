@@ -271,6 +271,42 @@
     "It has an official international non-proprietary name, emideltide, even though no product was ever marketed.",
     "The best-designed human trial of DSIP — a double-blind study in chronic insomnia published in 1992 — found no meaningful effect."
   ],
+  "community": {
+    "summary": "Bought from research-peptide vendors and injected before bed by people with poor sleep, often stacked with growth-hormone secretagogues such as CJC-1295 and ipamorelin. It has a mixed reputation: it is one of the peptides users most often say did nothing.",
+    "protocols": [
+      {
+        "label": "Standard",
+        "dose": "100-300 mcg",
+        "frequency": "once, 30-60 minutes before bed, subcutaneous",
+        "duration": "2-4 weeks"
+      },
+      {
+        "label": "Higher dose",
+        "dose": "300-500 mcg (a few go higher)",
+        "frequency": "before bed, subcutaneous",
+        "duration": "2-4 weeks"
+      },
+      {
+        "label": "Intermittent",
+        "dose": "100-250 mcg",
+        "frequency": "2-3 nights a week, to avoid tolerance",
+        "duration": "4-6 weeks"
+      }
+    ],
+    "reported_effects": [
+      "Deeper, more refreshing sleep and fewer night wakings in those who respond",
+      "More vivid dreams",
+      "Many users report no effect on sleep at all, and it is not described as a sedative even by fans"
+    ],
+    "reported_side_effects": [
+      "Morning grogginess or a 'hangover', mostly at higher doses",
+      "Effects fading with nightly use, and worse sleep after stopping in some reports",
+      "Headaches",
+      "Redness or irritation at the injection site"
+    ],
+    "sources": "r/Peptides, r/insomnia, r/Biohackers and peptide-forum threads, 2019-2026, plus community protocol aggregators; self-reports, unverified, product purity unknown",
+    "updated": "2026-10"
+  },
   "related": [
     "semax",
     "selank",

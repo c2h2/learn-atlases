@@ -280,6 +280,41 @@
     "Inflamed bowel upregulates PepT1, the transporter that normally absorbs dietary di- and tripeptides — so the sicker the tissue, the more KPV it takes up.",
     "Despite nearly four decades of animal work, ClinicalTrials.gov lists no trial with KPV as an intervention."
   ],
+  "community": {
+    "summary": "A niche 'gut and inflammation' peptide bought from research-peptide vendors, mainly by people with IBD, IBS, SIBO or leaky-gut concerns. Most take it by mouth as capsules, which users justify by its uptake in the gut; some inject it or use it on inflamed skin, and it is often paired with BPC-157.",
+    "protocols": [
+      {
+        "label": "Oral, gut",
+        "dose": "250-500 mcg per dose (some take up to 1,000 mcg)",
+        "frequency": "once or twice daily on an empty stomach, capsules or the solution swallowed",
+        "duration": "4-8 weeks"
+      },
+      {
+        "label": "Subcutaneous",
+        "dose": "200-500 mcg",
+        "frequency": "once daily",
+        "duration": "4-8 weeks"
+      },
+      {
+        "label": "Gut stack with BPC-157",
+        "dose": "KPV 250-500 mcg plus BPC-157 250-500 mcg",
+        "frequency": "once or twice daily, oral or subcutaneous",
+        "duration": "4-8 weeks"
+      }
+    ],
+    "reported_effects": [
+      "Less bloating, cramping and loose stools are the most common claims, sometimes within the first week or two; posters with diagnosed colitis report mixed results",
+      "Some report calmer skin (eczema, rosacea) with injected or topical use",
+      "Many report no effect, and others note they changed diet or other treatments at the same time"
+    ],
+    "reported_side_effects": [
+      "Few side effects are reported; occasional nausea or stomach upset when taken orally",
+      "Redness or itching at the injection site",
+      "Mild headache or fatigue in a minority"
+    ],
+    "sources": "r/Peptides, r/UlcerativeColitis, r/SIBO and r/Biohackers threads, 2022-2026, plus community protocol aggregators; self-reports, unverified, product purity unknown",
+    "updated": "2026-10"
+  },
   "related": [
     "afamelanotide",
     "melanotan-ii",

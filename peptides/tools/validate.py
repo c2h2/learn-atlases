@@ -17,7 +17,8 @@ SLUGS = {
  "mots-c","ss-31","humanin","epitalon","ghk-cu","bpc-157","tb-500",
  "kpv","ll-37","thymosin-alpha-1","semax","selank","dsip","cyclosporine",
  "ipamorelin","cjc-1295","sermorelin","tesamorelin","ghrp-6","ghrp-2","aod-9604",
- "melanotan-ii","bremelanotide","afamelanotide","setmelanotide","oxytocin","vasopressin","kisspeptin"}
+ "melanotan-ii","bremelanotide","afamelanotide","setmelanotide","oxytocin","vasopressin","kisspeptin",
+ "amycretin","hexarelin","igf-1-lr3","dihexa","foxo4-dri"}
 CATS = {"metabolic","longevity","repair","gh","melanocortin","neuro","hormone"}
 STATUS = {"approved","regional","clinical","research"}
 KINDS = {"discovery","science","trial","approval","regulatory","market","culture","safety"}
@@ -123,6 +124,17 @@ def check(path):
     for k in ("common", "serious", "warnings"):
         if k in saf and not isinstance(saf[k], list): E(f"safety.{k} must be a list")
     if d.get("status") in ("research", "clinical") and d.get("dosing"): W("dosing given for a non-approved peptide")
+    cm = d.get("community")
+    if cm is not None:
+        if not isinstance(cm, dict): E("community must be an object")
+        else:
+            for k in ("summary", "sources"):
+                if not isinstance(cm.get(k), str) or not cm[k].strip(): E(f"community.{k} must be a non-empty string")
+            for k in ("protocols", "reported_effects", "reported_side_effects"):
+                if not isinstance(cm.get(k, []), list): E(f"community.{k} must be a list")
+            for r in cm.get("protocols", []) or []:
+                if not isinstance(r, dict) or not r.get("label") or not r.get("dose"): E("community.protocols entries need label and dose")
+            if cm.get("updated") and not DATE.match(str(cm["updated"])): E("community.updated must be YYYY[-MM]")
     return errs, warns
 
 if __name__ == "__main__":

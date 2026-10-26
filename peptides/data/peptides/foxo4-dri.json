@@ -1,0 +1,487 @@
+{
+  "slug": "foxo4-dri",
+  "name": "FOXO4-DRI",
+  "aliases": [
+    "FOXO4 D-Retro-Inverso",
+    "FOXO4-D-Retro-Inverso peptide",
+    "FOXO4 peptide"
+  ],
+  "category": "longevity",
+  "drug_class": "Senolytic peptide",
+  "subclass": "46-residue all-D retro-inverso peptide that blocks the FOXO4-p53 interaction, fused to the HIV-1 TAT cell-penetrating sequence",
+  "status": "research",
+  "status_note": "Not approved anywhere and never given to a human in a registered trial; all published data are from cells and mice, while the peptide is sold online as a 'research' chemical and self-injected.",
+  "evidence": 1,
+  "evidence_note": "Evidence is entirely preclinical: one influential 2017 mouse and cell-culture paper plus a dozen later animal and in vitro studies. No pharmacokinetic, safety or efficacy data exist in humans, and no clinical trial of FOXO4-DRI is registered.",
+  "tagline": "Mirror-image peptide that kills senescent 'zombie' cells by freeing p53 from FOXO4",
+  "summary": "FOXO4-DRI is a synthetic 46-residue peptide designed to break the grip of the transcription factor FOXO4 on p53 inside senescent cells, so that p53 leaves the nucleus and the cell kills itself. Every residue is a D-amino acid and the chain order is reversed (a D-retro-inverso design), which makes it resistant to proteases, and an HIV-1 TAT tail carries it into cells. In 2017 three injections restored fur density, kidney function and activity in old and prematurely aged mice; it has never been tested in people.",
+  "overview": [
+    "FOXO4-DRI came out of a 2017 Cell paper from Peter de Keizer's group, then at Erasmus University Medical Center in Rotterdam. Looking for what keeps senescent cells alive, the authors found that in senescent human fibroblasts the transcription factor FOXO4 accumulates in nuclear foci together with p53 at sites of persistent DNA damage, holding p53 in the nucleus where it maintains the senescent state instead of triggering cell death. Removing FOXO4 killed senescent cells but spared normal ones, which suggested the FOXO4-p53 contact itself as a drug target.",
+    "Because permanently silencing FOXO4 is not a usable therapy, the group copied a 33-residue stretch of FOXO4 that is conserved between human and mouse but differs from the related proteins FOXO1 and FOXO3, attached a three-proline spacer and the HIV-1 TAT cell-penetrating sequence, and then rebuilt the whole 46-residue chain as a D-retro-inverso peptide: the residue order reversed and every amino acid in the D configuration. That trick, borrowed from earlier clinical-stage peptides, preserves the arrangement of side chains while making the molecule almost invisible to proteases. The peptide was synthesised by Pepscan in the Netherlands and shared with other laboratories only under a material-transfer agreement; Erasmus MC holds the patent (US 11,723,947, priority 2015, granted 2023).",
+    "In the mouse experiments FOXO4-DRI was given at 5 mg/kg by intravenous or intraperitoneal injection on three alternating days. It reduced p16-driven senescence signals, neutralised the liver and kidney damage caused by doxorubicin, and in both fast-ageing Xpd mutant mice and naturally aged mice it improved fur density, responsiveness, running-wheel activity and renal filtering capacity. Platelet counts and other blood values were unchanged over 30 days, in contrast to the thrombocytopenia seen with BCL-2-family senolytics. The authors were explicit that only limited tolerability testing had been done.",
+    "The paper was widely covered as evidence that ageing damage can be reversed, and de Keizer co-founded Cleara Biotech in Utrecht in 2018 to develop it. Cleara's optimised FOXO4-based peptides (CL04177 and CL04183) are aimed first at late-stage cancers rather than ageing, and as of late 2026 no FOXO4 peptide has entered a registered clinical trial. Meanwhile the original sequence is published, so grey-market suppliers sell it as lyophilised 'research' vials, and longevity biohackers self-inject it in short, costly pulses."
+  ],
+  "mechanism": [
+    "In cells that have become senescent after DNA damage, FOXO4 is drawn to persistent damage sites known as DNA-SCARS, where it binds p53 and keeps it in the nucleus. Nuclear p53 sustains the cell-cycle inhibitor p21 and therefore the senescent, apoptosis-resistant state. FOXO4-DRI mimics the FOXO4 surface that contacts p53 and competes with the real protein: the senescent cell's DNA-SCARS break up, active p53 is excluded from the nucleus, p21 falls and the cell dies by its own mitochondrial apoptosis programme, which requires p53 and the effectors BAX and BAK. Healthy, proliferating cells have little FOXO4 in foci and are largely unaffected, and unlike loss of FOXO4 itself the peptide did not sensitise normal cells to fresh DNA damage.",
+    "Nuclear magnetic resonance work in 2025 identified what the peptide actually grips: the intrinsically disordered transactivation domain of p53, the same region FOXO4 engages, with binding driven by a few hydrophobic and electrostatic contacts rather than a folded interface. The HIV-1 TAT segment (reversed in the D-retro-inverso chain) provides cell entry, and the all-D backbone resists peptidases, so the peptide persists inside cells long enough to act over days rather than minutes."
+  ],
+  "origin": "Synthetic; the sequence is copied from human FOXO4 (residues 92-124 of UniProt P98177, in the region preceding and entering its Forkhead domain) and fused to the HIV-1 TAT 48-57 cell-penetrating sequence",
+  "discovery": {
+    "year": 2017,
+    "by": "Marjolein P. Baar, Peter L. J. de Keizer and colleagues",
+    "where": "Erasmus University Medical Center, Rotterdam, the Netherlands",
+    "note": "Designed after FOXO4 was identified as the factor holding p53 in the nuclei of senescent cells; first described in Cell on 23 March 2017 and covered by a patent application filed in 2016 (priority 2015)."
+  },
+  "first_human_year": null,
+  "first_approval": null,
+  "developer": "Erasmus University Medical Center (Rotterdam); peptide synthesised by Pepscan. Optimised successors are developed by Cleara Biotech (Utrecht), co-founded by de Keizer in 2018",
+  "brands": [],
+  "analogs": [
+    {
+      "name": "FOXO4-L (all-L control peptide)",
+      "note": "The same sequence in the natural L configuration and normal order, used as a comparator; it is far less stable and was less effective than the DRI form."
+    },
+    {
+      "name": "CL04177 and CL04183",
+      "note": "Cleara Biotech's optimised FOXO4-based D-amino-acid peptides, reported in preclinical models of metastatic colon cancer and triple-negative breast cancer; not publicly characterised in detail."
+    },
+    {
+      "name": "ES2 and related FOXO4-binding peptides",
+      "note": "Later academic peptides designed to bind FOXO4 rather than to mimic it, with reported senolytic activity in cells and mice."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Forkhead box protein O4",
+      "gene": "FOXO4",
+      "uniprot": "P98177",
+      "action": "Mimics its p53-binding region and competes with the full-length protein (the peptide does not inhibit FOXO4's own transcriptional activity directly)"
+    },
+    {
+      "name": "Cellular tumour antigen p53",
+      "gene": "TP53",
+      "uniprot": "P04637",
+      "action": "Binds the disordered transactivation domain, displacing FOXO4 and causing nuclear exclusion of active p53 in senescent cells"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "l",
+          "t",
+          "l",
+          "r",
+          "k",
+          "e",
+          "p",
+          "a",
+          "s",
+          "e",
+          "i",
+          "a",
+          "q",
+          "s",
+          "i",
+          "l",
+          "e",
+          "a",
+          "y",
+          "s",
+          "q",
+          "n",
+          "g",
+          "w",
+          "a",
+          "n",
+          "r",
+          "r",
+          "s",
+          "g",
+          "g",
+          "k",
+          "r",
+          "p",
+          "p",
+          "p",
+          "r",
+          "r",
+          "r",
+          "q",
+          "r",
+          "r",
+          "k",
+          "k",
+          "r",
+          "g"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A1",
+        "type": "d-amino",
+        "label": "Every one of the 46 residues is a D-amino acid and the chain order is reversed relative to the natural sequence (D-retro-inverso design); lower-case letters denote the D-enantiomers",
+        "short": "all-D"
+      },
+      {
+        "at": "A34",
+        "type": "other",
+        "label": "Residues 34-36 are a three-proline spacer separating the FOXO4-derived part from the cell-penetrating tail",
+        "short": "PPP spacer"
+      },
+      {
+        "at": "A37",
+        "type": "other",
+        "label": "Residues 37-46 are the basic HIV-1 TAT 48-57 cell-penetrating sequence (GRKKRRQRRR), which appears reversed in the retro-inverso chain",
+        "short": "TAT"
+      }
+    ],
+    "notation": "H-ltlrkepaseiaqsileaysqngwanrrsggkrppprrrqrrkkrg-OH",
+    "note": "Written as in the original paper: lower case means the D-enantiomer, so the whole 46-residue chain is all-D. Reversing it gives the parent L-peptide GRKKRRQRRR-PPP-RKGGSRRNAWGNQSYAELISQAIESAPEKRLTL, i.e. the HIV-1 TAT shuttle, a proline spacer, and FOXO4 residues 92-124. In the retro-inverso form the FOXO4 part therefore comes first and the TAT part last."
+  },
+  "formula": "C228H388N86O64",
+  "mw": 5358.2,
+  "half_life": "Unknown (no pharmacokinetic study published in any species)",
+  "half_life_hours": null,
+  "routes": [
+    "Intravenous injection (mouse studies)",
+    "Intraperitoneal injection (mouse studies)",
+    "Subcutaneous self-injection in unregulated use"
+  ],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 167312269,
+    "notes": "No experimental structure of the peptide exists. The design used the crystal structure of the FOXO4 Forkhead domain bound to DNA (PDB 3L2C) to pick a surface-exposed region, and NMR of recombinant FOXO4 86-206 with p53 to show the peptide displaces p53; a 2025 NMR study mapped its binding site on the disordered p53 transactivation domain. As a 46-residue all-D chain it is expected to be largely unstructured in solution."
+  },
+  "ids": {
+    "pubchem_cid": 167312269,
+    "cas": "2460055-10-9"
+  },
+  "wiki": "FOXO4-DRI",
+  "queries": {
+    "pubmed": "(\"FOXO4-DRI\"[tiab] OR \"FOXO4 DRI\"[tiab] OR \"FOXO4-D-Retro-Inverso\"[tiab] OR \"FOXO4 D-Retro-Inverso\"[tiab])",
+    "ctgov": ""
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "Senescence-driven ageing and frailty",
+        "stage": "Preclinical",
+        "detail": "In fast-ageing Xpd mutant mice and in naturally aged mice, three injections of 5 mg/kg reduced p16-driven senescence signals and improved fur density, responsiveness, running-wheel activity and renal filtering capacity."
+      },
+      {
+        "use": "Chemotherapy toxicity",
+        "stage": "Preclinical",
+        "detail": "Given after doxorubicin in mice, it prevented weight loss and reduced senescent cells, IL-6 expression and markers of liver and kidney damage, without blunting the chemotherapy's intended effect on tumour cells in the tested models."
+      },
+      {
+        "use": "Age-related testosterone decline and spermatogenesis",
+        "stage": "Preclinical",
+        "detail": "In aged mice, clearing senescent Leydig cells restored testosterone synthesis (2020) and improved spermatogenesis by lowering senescence-associated secretions (2024)."
+      },
+      {
+        "use": "Fibrosis and keloid scarring",
+        "stage": "Preclinical",
+        "detail": "Reduced extracellular-matrix production by fibroblasts and bleomycin-induced lung fibrosis in mice, and induced apoptosis of senescent fibroblasts from human keloid tissue."
+      },
+      {
+        "use": "Cancer radiosensitisation",
+        "stage": "Preclinical",
+        "detail": "Clearing senescence-like fibroblasts made non-small-cell lung cancer xenografts more radiosensitive and reduced radiation-induced lung fibrosis in mice."
+      },
+      {
+        "use": "Cell-therapy manufacturing",
+        "stage": "In vitro",
+        "detail": "Used to strip senescent cells from human chondrocytes expanded in culture, with the aim of improving cartilage repair grafts."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Longevity self-experimentation",
+        "detail": "Sold as lyophilised 'research use only' vials of 5-20 mg and self-injected subcutaneously in short 'senolytic pulses' once or twice a year, usually by people in longevity and chronic-fatigue communities, sometimes after seeing the mouse results in social media videos.",
+        "evidence": "No human study of any kind. Doses circulating online are scaled from the mouse experiments by rules of thumb, and the identity, fill weight and purity of grey-market vials are frequently questioned by buyers themselves."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 2015,
+      "date": "2015-01-23",
+      "title": "Patent priority filed",
+      "detail": "Erasmus MC filed the priority application for 'Anti-senescence compounds and uses thereof', naming Peter de Keizer as inventor and covering the FOXO4 D-retro-inverso peptide.",
+      "kind": "science"
+    },
+    {
+      "year": 2017,
+      "date": "2017-03-23",
+      "title": "FOXO4-DRI published in Cell",
+      "detail": "Baar, de Keizer and colleagues reported that FOXO4 holds p53 in the nuclei of senescent cells and that the 46-residue D-retro-inverso peptide selectively kills them, restoring fitness, fur density and kidney function in old and prematurely aged mice.",
+      "kind": "discovery"
+    },
+    {
+      "year": 2017,
+      "date": "2017-03-23",
+      "title": "Accompanying commentary",
+      "detail": "A Cell preview by Krimpenfort and Berns framed the work as 'rejuvenation by therapeutic elimination of senescent cells' while cautioning that the long-term consequences of removing them were unknown.",
+      "kind": "science"
+    },
+    {
+      "year": 2018,
+      "date": "2018-07",
+      "title": "Cleara Biotech launched",
+      "detail": "De Keizer founded Cleara Biotech with support from Apollo Ventures to optimise the peptide, planning one candidate for a chronic age-related disease and one for an acute indication such as cancer.",
+      "kind": "market"
+    },
+    {
+      "year": 2020,
+      "date": "2020-01-20",
+      "title": "Senescent Leydig cells cleared in aged mice",
+      "detail": "A Chinese group reported that FOXO4-DRI removed senescent Leydig cells and alleviated age-related testosterone deficiency in aged mice, the first widely cited independent application of the peptide.",
+      "kind": "science"
+    },
+    {
+      "year": 2021,
+      "date": "2021-05",
+      "title": "Used to clean up cell-therapy material",
+      "detail": "The peptide was shown to selectively remove senescent cells from human chondrocytes expanded in vitro, suggesting a manufacturing use for cartilage repair.",
+      "kind": "science"
+    },
+    {
+      "year": 2021,
+      "date": "2021-12-08",
+      "title": "Radiosensitisation in lung cancer",
+      "detail": "Targeting senescence-like fibroblasts with FOXO4-DRI made non-small-cell lung cancer more radiosensitive in mice and reduced radiation-induced pulmonary fibrosis.",
+      "kind": "science"
+    },
+    {
+      "year": 2022,
+      "date": "2022-09-27",
+      "title": "Cleara raises seed financing",
+      "detail": "Cleara Biotech, based in Utrecht, announced a $2.5 million seed round led by Apollo Health Ventures to advance the FOXO4-based peptides CL04177 and CL04183, with late-stage cancer as the first indication and a stated aim of entering the clinic by 2024.",
+      "kind": "market"
+    },
+    {
+      "year": 2023,
+      "date": "2023-02-21",
+      "title": "Caution: clearing senescent cells can harm",
+      "detail": "A Circulation study found that eliminating senescent cells, including with FOXO4-DRI, worsened pulmonary hypertension in animal models, showing that senolysis is not uniformly beneficial.",
+      "kind": "safety"
+    },
+    {
+      "year": 2023,
+      "date": "2023-08-15",
+      "title": "US patent granted",
+      "detail": "US 11,723,947 was granted to Erasmus MC, with the FOXO4-DRI peptide (molecular weight 5,358.2) as a named sequence.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2023,
+      "date": "2023-10",
+      "title": "Lung fibrosis model",
+      "detail": "FOXO4-DRI reduced extracellular-matrix production by fibroblasts and ameliorated bleomycin-induced pulmonary fibrosis in mice.",
+      "kind": "science"
+    },
+    {
+      "year": 2024,
+      "date": "2024-10",
+      "title": "Spermatogenesis in aged mice",
+      "detail": "Clearing senescent Leydig cells with the peptide reduced senescence-associated secretions and improved spermatogenesis in aged mice.",
+      "kind": "science"
+    },
+    {
+      "year": 2025,
+      "date": "2025-02-24",
+      "title": "Keloid fibroblasts",
+      "detail": "In human keloid tissue the peptide triggered apoptosis of senescent fibroblasts by promoting nuclear exclusion of Ser15-phosphorylated p53.",
+      "kind": "science"
+    },
+    {
+      "year": 2025,
+      "date": "2025-07-01",
+      "title": "Molecular target pinned down",
+      "detail": "An NMR study in Nature Communications showed that FOXO4 and FOXO4-DRI both bind the intrinsically disordered transactivation domain of p53, explaining how the peptide competes with the protein.",
+      "kind": "science"
+    },
+    {
+      "year": 2026,
+      "date": "2026-10",
+      "title": "Still no human trial",
+      "detail": "Nine years after the Cell paper, no clinical trial of FOXO4-DRI or a FOXO4 peptide is registered, while the peptide circulates widely as a grey-market 'research' chemical among longevity self-experimenters.",
+      "kind": "culture"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "Not an approved drug and not in registered clinical trials; vials sold online are unapproved research chemicals, not medicines."
+    },
+    {
+      "region": "EU",
+      "status": "not-approved",
+      "detail": "No EMA-authorised product. The originating institute (Erasmus MC) and the spin-out Cleara Biotech are in the Netherlands, but their FOXO4 peptides remain preclinical."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "As a substance with no approval by any health authority for human therapeutic use, it falls under category S0 (non-approved substances), prohibited at all times in sport."
+    }
+  ],
+  "pk": {
+    "half_life": "Not established; no pharmacokinetic study has been published in any species",
+    "metabolism": "The all-D retro-inverso backbone is designed to resist proteases, which was the stated rationale for the format; intracellular effects in the original study persisted over days of alternate-day dosing"
+  },
+  "dosing": null,
+  "dosing_note": "No human dose has ever been studied. In the mouse experiments that made the peptide famous it was given at 5 mg/kg intravenously or intraperitoneally on three alternating days (days 1, 3 and 5), a regimen that cannot be translated to people by body weight.",
+  "safety": {
+    "common": [],
+    "serious": [],
+    "warnings": [
+      "No human safety, tolerability or pharmacokinetic data exist",
+      "The mechanism is deliberate induction of apoptosis; senescent cells also have useful roles in wound healing and tumour suppression, and a 2023 study found that clearing them worsened pulmonary hypertension in animals",
+      "Interference with p53 signalling in a cancer-relevant pathway has not been evaluated for long-term risk in any species",
+      "Grey-market vials are not made to pharmaceutical standards: identity, fill weight, purity and sterility are not assured, and buyers often report failed or missing third-party tests"
+    ],
+    "notes": "In the 2017 mouse work the peptide did not change platelet counts or other whole-blood values over 30 days, unlike BCL-2-family senolytics that cause thrombocytopenia, and no damage was seen in the tissues examined. The authors stressed that this was limited testing under specific conditions, not a toxicology programme."
+  },
+  "market": null,
+  "facts": [
+    "The peptide is a mirror image of its template: the residue order is reversed and all 46 amino acids are D-enantiomers, so proteases barely recognise it while the side chains still line up the way FOXO4's do.",
+    "Only 33 of the 46 residues come from FOXO4; the rest are a three-proline spacer and the HIV-1 TAT sequence that smuggles the peptide into cells.",
+    "In old mice three injections were enough to visibly thicken fur and lower blood urea, results that put senolytics on magazine covers in 2017.",
+    "Unlike the BCL-2-inhibitor senolytics, it left platelet counts untouched in mice, which the authors treated as a key hurdle passed.",
+    "Nine years and a granted patent later, the molecule has still never been given to a person in a clinical trial, yet it is one of the most expensive peptides on the grey market."
+  ],
+  "community": {
+    "summary": "FOXO4-DRI is a niche and unusually expensive grey-market peptide: forum users quote roughly US$150 for a 10 mg vial, and a 'full' cycle takes several. Interest comes from longevity biohackers and from people with chronic fatigue, long COVID or lipedema, who buy research vials and run one short 'senolytic pulse' of a few injections, rarely more than once or twice a year, often as a 'clean-out' before starting mitochondrial peptides. Threads are few, protocols are scaled from the mouse study by rules of thumb, and the most common verdict is that nothing noticeable happens.",
+    "protocols": [
+      {
+        "label": "Low-dose pulse (most common)",
+        "dose": "1-3 mg per injection",
+        "frequency": "every other day, subcutaneous",
+        "duration": "a 5-10 day course of 10-20 mg in total, once or twice a year"
+      },
+      {
+        "label": "Vial-sized pulse",
+        "dose": "10 mg per injection (a whole vial), often split between two or three injection sites",
+        "frequency": "every second or third day for 3 doses, subcutaneous",
+        "duration": "one course of about 30 mg, repeated after several months at most"
+      },
+      {
+        "label": "'Full dose' mouse-scaled pulse (minority)",
+        "dose": "25-33 mg per injection",
+        "frequency": "every other day for 3 doses (75-100 mg total), subcutaneous",
+        "duration": "a single 5-day course; discussed in a long LongeCity thread and the subject of most of the caution replies"
+      },
+      {
+        "label": "'Clean out, then rebuild' stack",
+        "dose": "a FOXO4-DRI course as above, with other peptides paused",
+        "frequency": "FOXO4-DRI first, then SS-31, MOTS-c, epitalon, humanin or NAD+ in the following weeks",
+        "duration": "the FOXO4-DRI pulse plus a washout of about a week before restarting other peptides"
+      }
+    ],
+    "reported_effects": [
+      "Most users report no noticeable effect at all, during or after the cycle; several detailed write-ups of large doses end with 'nothing to report'",
+      "A flu-like or 'detox' day after an injection - mild malaise, as if coming down with a cold, settling within a day or two - is the most repeated observation, and is usually interpreted by posters as proof that senescent cells are dying",
+      "Tiredness in the days after a pulse, with a few reporting the opposite: a wired feeling followed by deep sleep",
+      "Weight loss of a few pounds and much more frequent urination over a 10-day course, reported by one group of users who dosed together and not by others",
+      "Occasional reports of better energy and stamina in long COVID or chronic fatigue, and of other peptides 'working better' afterwards; other users with the same conditions report no change, and nobody measures senescence markers before and after"
+    ],
+    "reported_side_effects": [
+      "Injection-site soreness that posters describe as worse than with other peptides, lasting up to a day or two, which is why larger doses are usually split between several sites",
+      "Headache and a sluggish, heavy feeling in the first few days of a course",
+      "Older injection sites from other peptides turning red and itchy again during a cycle",
+      "Isolated reports of mouth or tongue ulcers, strong thirst, and more soreness than usual after training",
+      "One report of tingling in the fingers in an older user with pre-existing diabetic neuropathy who injected daily; it resolved after stopping and did not return on every-other-day dosing",
+      "Doubts about the product itself are a constant theme: batches said to have 'tested as trash', vials labelled only 'FOXO4', under-filled vials, and repeated advice to demand a batch-specific certificate of analysis",
+      "Caution replies warn that some senescent cells are needed, that this is 'not something to stay on', and that the cost and the apoptosis mechanism argue for at most one course a year"
+    ],
+    "sources": "r/Peptides, r/Biohackers, r/Biohacking and LongeCity threads, 2025-2026; self-reports, unverified, product identity, fill weight and purity frequently questioned by users themselves",
+    "updated": "2026-10"
+  },
+  "related": [
+    "epitalon",
+    "mots-c",
+    "humanin",
+    "ss-31"
+  ],
+  "references": [
+    {
+      "title": "Targeted apoptosis of senescent cells restores tissue homeostasis in response to chemotoxicity and aging",
+      "authors": "Baar MP, Brandt RMC, Putavet DA, et al.",
+      "journal": "Cell",
+      "year": 2017,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28340339/"
+    },
+    {
+      "title": "Rejuvenation by therapeutic elimination of senescent cells",
+      "authors": "Krimpenfort P, Berns A",
+      "journal": "Cell",
+      "year": 2017,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28340347/"
+    },
+    {
+      "title": "The disordered p53 transactivation domain is the target of FOXO4 and the senolytic compound FOXO4-DRI",
+      "authors": "Bourgeois B, Spreitzer E, Platero-Rochart D, et al.",
+      "journal": "Nature Communications",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40593617/"
+    },
+    {
+      "title": "FOXO4-DRI alleviates age-related testosterone secretion insufficiency by targeting senescent Leydig cells in aged mice",
+      "authors": "Zhang C, Xie Y, Chen H, et al.",
+      "journal": "Aging (Albany NY)",
+      "year": 2020,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31959736/"
+    },
+    {
+      "title": "Senolytic peptide FOXO4-DRI selectively removes senescent cells from in vitro expanded human chondrocytes",
+      "authors": "Huang Y, He Y, Makarcyzk MJ, et al.",
+      "journal": "Frontiers in Bioengineering and Biotechnology",
+      "year": 2021,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33996787/"
+    },
+    {
+      "title": "Targeting senescence-like fibroblasts radiosensitizes non-small cell lung cancer and reduces radiation-induced pulmonary fibrosis",
+      "authors": "Meng J, Li Y, Wan C, et al.",
+      "journal": "JCI Insight",
+      "year": 2021,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34877934/"
+    },
+    {
+      "title": "Eliminating senescent cells can promote pulmonary hypertension development and progression",
+      "authors": "Born E, Lipskaia L, Breau M, et al.",
+      "journal": "Circulation",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36515093/"
+    },
+    {
+      "title": "FOXO4-D-Retro-Inverso targets extracellular matrix production in fibroblasts and ameliorates bleomycin-induced pulmonary fibrosis in mice",
+      "authors": "Liu Y, Hou Q, Wang R, et al.",
+      "journal": "Naunyn-Schmiedeberg's Archives of Pharmacology",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37074394/"
+    },
+    {
+      "title": "FOXO4-DRI improves spermatogenesis in aged mice through reducing senescence-associated secretory phenotype secretion from Leydig cells",
+      "authors": "Li Y, Zhang C, Cheng H, et al.",
+      "journal": "Experimental Gerontology",
+      "year": 2024,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39025385/"
+    },
+    {
+      "title": "FOXO4-DRI induces keloid senescent fibroblast apoptosis by promoting nuclear exclusion of upregulated p53-serine 15 phosphorylation",
+      "authors": "Kong YX, Li ZS, Liu YB, et al.",
+      "journal": "Communications Biology",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39994346/"
+    }
+  ]
+}

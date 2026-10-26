@@ -117,6 +117,36 @@
     "The molecule was first disclosed in a 2011 Novo Nordisk patent application, more than three years before the first human dose.",
     "According to Novo Nordisk, the 11.8% weight loss with cagrilintide alone in REDEFINE 1 was the first phase 3 result for a long-acting amylin analogue given on its own."
   ],
+  "community": {
+    "summary": "Not approved; bought as research powder, mainly by people already on retatrutide, tirzepatide or semaglutide who add it to strengthen fullness or break a plateau, or who combine it with semaglutide as a 'DIY CagriSema'. Standalone use is uncommon and reports are far fewer than for the GLP-1 drugs.",
+    "protocols": [
+      {
+        "label": "Add-on to a GLP-1 drug",
+        "dose": "0.25-2.4 mg per week, usually started at 0.25-0.5 mg and raised every few weeks",
+        "frequency": "once weekly, subcutaneous, alongside the GLP-1 injection or in a vendor pre-blend",
+        "duration": "months; open-ended"
+      },
+      {
+        "label": "'DIY CagriSema'",
+        "dose": "cagrilintide and semaglutide in similar milligram amounts, working up towards 2.4 mg of each",
+        "frequency": "once weekly",
+        "duration": "escalation copied from the CagriSema trials, about 4 weeks per step"
+      }
+    ],
+    "reported_effects": [
+      "Feeling full sooner and stopping meals earlier, described as 'fullness' rather than the 'no appetite' of GLP-1 drugs",
+      "Some report breaking a weight-loss plateau after adding it",
+      "Many report little noticeable difference on top of an already strong GLP-1 dose"
+    ],
+    "reported_side_effects": [
+      "More nausea and occasional vomiting when it is added or increased",
+      "Fatigue and constipation",
+      "Injection-site redness or itching",
+      "Hard to tell which drug causes what when it is stacked, and product identity is uncertain"
+    ],
+    "sources": "r/Peptides, r/Retatrutide and r/RetatrutideGBP threads, 2024-2026; relatively few self-reports, unverified; product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["semaglutide", "pramlintide", "eloralintide", "tirzepatide", "retatrutide", "liraglutide"],
   "references": [
     {"title": "Development of cagrilintide, a long-acting amylin analogue", "authors": "Kruse T, Hansen JL, Dahl K, et al.", "journal": "J Med Chem", "year": 2021, "url": "https://pubmed.ncbi.nlm.nih.gov/34288673/"},

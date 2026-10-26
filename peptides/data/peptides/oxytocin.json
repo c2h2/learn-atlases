@@ -360,6 +360,35 @@
     "The name comes from Greek words meaning 'quick birth'.",
     "The CHAMPION trial of an oxytocin alternative enrolled 29,645 women in 10 countries."
   ],
+  "community": {
+    "summary": "Used as a nasal spray by nootropics and biohacking communities for social anxiety, bonding and mood, either compounded on prescription or made up from research-chemical oxytocin. Some also use it around sex or to feel closer to a partner. Effects are widely described as subtle.",
+    "protocols": [
+      {
+        "label": "Before social situations",
+        "dose": "10-40 IU intranasal (24 IU, the dose used in most studies, is a common reference)",
+        "frequency": "as needed, about 30-45 minutes beforehand",
+        "duration": "occasional use"
+      },
+      {
+        "label": "Daily low dose",
+        "dose": "10-20 IU intranasal or sublingual",
+        "frequency": "once daily",
+        "duration": "2-4 weeks, some longer"
+      }
+    ],
+    "reported_effects": [
+      "Feeling warmer, more relaxed and more connected in company, and less social anxiety; usually described as subtle and context-dependent",
+      "More emotional sensitivity, which some find helpful and others overwhelming",
+      "Many report no noticeable effect, and some suspect the nasal route or the product"
+    ],
+    "reported_side_effects": [
+      "Few side effects reported; thirst, nasal irritation and mild headache are the usual complaints",
+      "Occasional reports of feeling emotional, tearful or more jealous or anxious",
+      "Doubts about stability of home-made or compounded sprays"
+    ],
+    "sources": "r/Nootropics, r/Peptides, r/Biohackers and Longecity threads, 2012-2026; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": [
     "vasopressin",
     "kisspeptin"

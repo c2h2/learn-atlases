@@ -319,6 +319,48 @@
     "Semax is given as nose drops rather than by injection, which is unusual for a peptide drug and reflects the nose-to-brain route.",
     "Despite three decades of use in Russia, ClinicalTrials.gov lists no trial of Semax at all."
   ],
+  "community": {
+    "summary": "A long-standing nootropic on r/Nootropics. Users buy either the Russian pharmacy drops (0.1% or 1%) or research-vendor nasal sprays, and many buy the modified 'N-Acetyl Semax Amidate' (NA-Semax-A), a vendor variant with no clinical data that is claimed to be stronger and longer-lasting. It is often stacked with Selank.",
+    "protocols": [
+      {
+        "label": "Standard nasal",
+        "dose": "200-600 mcg a day (Russian 0.1% drops: 2-3 drops per nostril)",
+        "frequency": "1-2 times a day, in the morning or early afternoon",
+        "duration": "10-14 days on, then 1-2 weeks off"
+      },
+      {
+        "label": "N-Acetyl Semax Amidate spray",
+        "dose": "100-400 mcg a day (lower, because it is thought to be stronger)",
+        "frequency": "1-2 times a day, nasal",
+        "duration": "10-14 days on, about 2 weeks off; some use it only as needed"
+      },
+      {
+        "label": "Semax + Selank",
+        "dose": "Semax 200-600 mcg plus Selank 250-750 mcg a day",
+        "frequency": "Semax in the morning, Selank later or as needed, nasal",
+        "duration": "2-4 weeks"
+      },
+      {
+        "label": "Subcutaneous (niche)",
+        "dose": "300-600 mcg",
+        "frequency": "once daily",
+        "duration": "2-4 weeks"
+      }
+    ],
+    "reported_effects": [
+      "Sharper focus, mental clarity and motivation within 15-30 minutes of a dose are the most common claims",
+      "Easier speech and word-finding; some report a mild mood lift",
+      "A noticeable share report no effect, or effects that fade after the first few days"
+    ],
+    "reported_side_effects": [
+      "Anxiety, irritability, restlessness or feeling 'wired', more often with higher doses or NA-Semax-A",
+      "Headaches",
+      "Trouble sleeping if taken late in the day",
+      "Stinging, dryness or a runny nose after spraying"
+    ],
+    "sources": "r/Nootropics, r/Peptides, r/Biohackers and r/ADHD threads, 2015-2026, plus community protocol aggregators; self-reports, unverified, vendor product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": [
     "selank",
     "dsip",

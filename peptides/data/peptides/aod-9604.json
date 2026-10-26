@@ -115,6 +115,42 @@
     "Its most stable breakdown product in serum (tested in vitro) is the nine-residue ring CRSVEGSCG, held together by the peptide's disulfide bond.",
     "WADA declared it banned in April 2013 under the catch-all S0 class because no government had approved it for human use."
   ],
+  "community": {
+    "summary": "A long-standing research-peptide fat-loss option, self-injected (occasionally taken by mouth) by people hoping to shift stubborn body fat without the appetite effects of GLP-1 drugs. It is usually bought from research-chemical vendors and was also offered by some anti-ageing clinics.",
+    "protocols": [
+      {
+        "label": "Standard fat-loss protocol",
+        "dose": "300 mcg per day",
+        "frequency": "once daily, subcutaneous, in the morning on an empty stomach",
+        "duration": "8-16 weeks"
+      },
+      {
+        "label": "Higher or split dose",
+        "dose": "500 mcg per day, sometimes as 250 mcg twice a day",
+        "frequency": "morning fasted and before bed",
+        "duration": "8-12 weeks"
+      },
+      {
+        "label": "Oral",
+        "dose": "300-600 mcg",
+        "frequency": "once daily by mouth",
+        "duration": "12 weeks or more; a niche approach"
+      }
+    ],
+    "reported_effects": [
+      "Many users, often the majority in threads, report no measurable change after one to three months",
+      "Others describe a modest drop in waist size over 8-12 weeks that they cannot separate from diet and exercise",
+      "No change in appetite or blood sugar, which users note as a contrast with GLP-1 drugs",
+      "Commonly stacked with CJC-1295/ipamorelin; some compare it with HGH fragment 176-191"
+    ],
+    "reported_side_effects": [
+      "Injection-site redness or itching",
+      "Occasional headache or mild tiredness",
+      "Few other complaints; the main frustration is money spent on vials with no visible result"
+    ],
+    "sources": "r/Peptides, r/moreplatesmoredates and r/Biohackers threads and forum aggregations, 2018-2026; self-reports, unverified; product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["tesamorelin", "cjc-1295", "ipamorelin", "tb-500", "bpc-157", "semaglutide"],
   "references": [
     {"title": "Antilipogenic action of synthetic C-terminal sequence 177-191 of human growth hormone", "authors": "Wu Z, Ng FM", "journal": "Biochem Mol Biol Int", "year": 1993, "url": "https://pubmed.ncbi.nlm.nih.gov/8358331/"},

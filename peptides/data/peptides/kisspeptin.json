@@ -113,6 +113,34 @@
     "Kisspeptin-54 levels in the blood rise dramatically during human pregnancy because the placenta makes it.",
     "Kisspeptin-10 binds its receptor about ten times more tightly than full-length kisspeptin-54, yet is rapidly inactivated in plasma."
   ],
+  "community": {
+    "summary": "A niche peptide in the TRT and bodybuilding communities, where kisspeptin-10 from research-chemical vendors is self-injected to stimulate the body's own LH and testosterone: during or after a steroid cycle (post-cycle therapy), alongside TRT to preserve testicular function, or as an alternative to hCG or gonadorelin. Reports are few and mostly speculative compared with hCG.",
+    "protocols": [
+      {
+        "label": "Alongside TRT / instead of hCG",
+        "dose": "100-200 mcg kisspeptin-10",
+        "frequency": "subcutaneous, 1-3 times a week or daily",
+        "duration": "4-8 weeks or ongoing, judged by LH and testosterone bloodwork"
+      },
+      {
+        "label": "Post-cycle therapy",
+        "dose": "about 100 mcg",
+        "frequency": "once or twice daily, often added to a SERM such as enclomiphene",
+        "duration": "2-6 weeks"
+      }
+    ],
+    "reported_effects": [
+      "Users who test bloodwork shortly after a dose report a spike in LH, but say testosterone gains are small or short-lived because the effect is brief",
+      "Occasional reports of better libido or testicular fullness",
+      "Many conclude it is inferior or no better than hCG or enclomiphene for the money"
+    ],
+    "reported_side_effects": [
+      "Few side effects reported; mainly injection-site redness, flushing and mild headache",
+      "Concern that continuous daily use desensitises the axis and stops working, as seen in some clinical studies"
+    ],
+    "sources": "r/Testosterone, r/trt, r/Peptides and r/moreplatesmoredates threads, 2020-2026; small number of reports; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["leuprolide", "oxytocin", "bremelanotide"],
   "references": [
     {"title": "KiSS-1, a novel human malignant melanoma metastasis-suppressor gene", "authors": "Lee JH, Miele ME, Hicks DJ, et al.", "journal": "J Natl Cancer Inst", "year": 1996, "url": "https://pubmed.ncbi.nlm.nih.gov/8944003/"},

@@ -1,0 +1,540 @@
+{
+  "slug": "igf-1-lr3",
+  "name": "IGF-1 LR3 (Long R3 IGF-I)",
+  "aliases": [
+    "Long R3 IGF-I",
+    "LR3-IGF-I",
+    "LR3IGF-I",
+    "Long [Arg3]-IGF-I",
+    "LONG R3 IGF-I",
+    "IGF-1 LR3",
+    "Long arginine 3-IGF-1"
+  ],
+  "category": "gh",
+  "drug_class": "Insulin-like growth factor 1 (IGF-1) receptor agonist",
+  "subclass": "Recombinant 83-residue IGF-1 analogue with a 13-residue N-terminal extension and Glu3→Arg, binding poorly to IGF-binding proteins",
+  "status": "research",
+  "status_note": "Developed and sold as a cell-culture reagent; it has never been tested in a registered human trial or approved as a medicine anywhere, though it circulates as a grey-market 'research peptide' among bodybuilders.",
+  "evidence": 1,
+  "evidence_note": "All data come from cell culture and animal studies (rats, pigs, mice). No human pharmacokinetic, efficacy or safety study has been published; the approved relative, mecasermin (native recombinant IGF-1), cannot stand in for it because LR3 behaves differently in blood.",
+  "tagline": "Long-chain IGF-1 analogue that evades binding proteins; cell-culture reagent and doping agent",
+  "summary": "IGF-1 LR3 is a lab-made version of insulin-like growth factor 1, the hormone that carries out much of growth hormone's effect on tissues. Two changes — an extra 13 amino acids at the front and arginine in place of glutamic acid at position 3 — stop it being captured by the binding proteins that normally hold IGF-1 in check, so it is several times more potent in cells and rats. It was made in Adelaide in 1992 as a research tool and is used mainly to grow cells in biomanufacturing, but it is also sold as an unapproved injectable to bodybuilders.",
+  "overview": [
+    "Insulin-like growth factor 1 (IGF-1) is a 70-amino-acid hormone made mainly in the liver in response to growth hormone (GH); it drives childhood growth and has anabolic effects on muscle and bone. Almost all IGF-1 in blood and tissue fluid is bound to one of six IGF-binding proteins (IGFBPs), which prolong its life in the circulation but restrain its access to receptors. In the 1980s and early 1990s, researchers at the CSIRO Division of Human Nutrition and the University of Adelaide found that IGF-1 variants with an altered N-terminus, such as des(1-3)IGF-I, bound IGFBPs poorly and were therefore more potent in cells that secrete them.",
+    "Building on this, the Adelaide group expressed IGF-1 in Escherichia coli as fusion proteins and in 1992 described three 'Long' analogues carrying the first 11 amino acids of methionyl porcine GH (methionine plus pig GH residues 1–10) and a Val-Asn linker in front of the IGF-1 sequence. The extension made the proteins fold far more efficiently, and the version with arginine substituted for glutamic acid 3 — Long [Arg3]-IGF-I, or LR3-IGF-I — was the most potent in cell assays. In rats it bound IGFBP-3 and other binding proteins about 1,000 times less strongly than IGF-1, was cleared from the blood much faster, and was roughly six times more potent at promoting growth.",
+    "The analogue became a commercial reagent: GroPep of Adelaide sold it as LONG R3 IGF-I, a serum-free substitute for insulin in media used to grow Chinese hamster ovary (CHO) and other cells that produce biologic drugs. GroPep was bought by Novozymes in 2006, and Repligen acquired the business in 2011; the product is distributed by MilliporeSigma. It has never been developed as a medicine. The only approved IGF-1 product is mecasermin (Increlex), native recombinant human IGF-1, approved by the FDA in 2005 and in the EU in 2007 for children with severe primary IGF-1 deficiency.",
+    "From the 2000s IGF-1 LR3 spread through bodybuilding forums and grey-market 'research peptide' vendors as an injectable for muscle growth and fat loss. IGF-1 and its analogues are banned in sport, and anti-doping laboratories in Cologne developed mass-spectrometry tests for LR3 in plasma (2008) and urine (2011); in 2010 they identified a black-market vial that contained a His-tagged laboratory form of the protein. No human data on its effects or safety exist."
+  ],
+  "mechanism": [
+    "IGF-1 LR3 activates the type 1 IGF receptor (IGF1R), a receptor tyrosine kinase that signals through the PI3K–Akt–mTOR and MAPK pathways to stimulate protein and DNA synthesis, cell growth and survival, and to inhibit protein breakdown. Like IGF-1 it can also act more weakly through the insulin receptor, which is why lowering blood glucose is a predictable effect. Its affinity for IGF1R is slightly lower than that of IGF-1.",
+    "Its higher potency comes from what it avoids rather than from stronger receptor binding. Glu3 of IGF-1 is part of the surface recognised by IGFBPs; replacing it with arginine, together with the N-terminal extension, cuts binding to IGFBPs by about three orders of magnitude, so far more of the peptide is free to reach receptors. In cells that secrete no IGFBPs, LR3 is actually less potent than IGF-1. The same property shortens its life in the blood: in rats it was cleared much faster than IGF-1, because it is not held in the long-lived IGFBP-3 complex.",
+    "In vivo, extra IGF signalling feeds back to suppress GH. In finishing pigs, a four-day infusion of LR3 lowered GH secretion, endogenous IGF-1, IGFBP-3 and insulin and reduced weight gain and food intake, whereas in growing rats it increased weight gain and nitrogen retention."
+  ],
+  "origin": "Synthetic recombinant analogue of human IGF-1 (mature chain, residues 49–118 of the UniProt P05019 precursor) with Glu3→Arg, preceded by Met, residues 1–10 of porcine growth hormone and a Val-Asn linker",
+  "discovery": {
+    "year": 1992,
+    "by": "Geoffrey L. Francis, F. John Ballard, John C. Wallace and colleagues",
+    "where": "CSIRO Division of Human Nutrition and University of Adelaide (Cooperative Research Centre for Tissue Growth and Repair), Adelaide, Australia",
+    "note": "The Arg3 and Gly3 substitutions were reported in February 1992 and the 'Long' fusion analogues, including Long [Arg3]-IGF-I, in June 1992."
+  },
+  "first_human_year": null,
+  "first_approval": null,
+  "developer": "CSIRO and University of Adelaide; commercialised as a cell-culture reagent by GroPep (later Novozymes Biopharma, then Repligen)",
+  "brands": [],
+  "analogs": [
+    {
+      "name": "Mecasermin (Increlex)",
+      "note": "Native recombinant human IGF-1 (70 residues); approved by the FDA on 30 August 2005 and in the EU in August 2007 for growth failure from severe primary IGF-1 deficiency. Unlike LR3 it binds IGFBPs normally."
+    },
+    {
+      "name": "Mecasermin rinfabate (Iplex)",
+      "note": "Recombinant IGF-1 pre-complexed with IGFBP-3, approved in the US in 2005 and later withdrawn from use in short stature."
+    },
+    {
+      "name": "des(1-3)IGF-I",
+      "note": "Naturally occurring truncated IGF-1 lacking its first three residues (Gly-Pro-Glu); also binds IGFBPs poorly and was the starting point for the Adelaide analogues."
+    },
+    {
+      "name": "R3-IGF-I and Long IGF-I",
+      "note": "Sister analogues from the same 1992 work: [Arg3]-IGF-I without the extension, and the extended protein with the native Glu3, which was less potent than LR3."
+    },
+    {
+      "name": "Mechano growth factor (MGF, PEG-MGF)",
+      "note": "Peptides based on the E-domain of a splice variant of IGF-1; sold on the same grey market and often discussed alongside LR3."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Insulin-like growth factor 1 receptor",
+      "gene": "IGF1R",
+      "uniprot": "P08069",
+      "action": "Agonist (slightly lower affinity than IGF-1)"
+    },
+    {
+      "name": "Insulin receptor",
+      "gene": "INSR",
+      "uniprot": "P06213",
+      "action": "Weak agonist"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "M",
+          "F",
+          "P",
+          "A",
+          "M",
+          "P",
+          "L",
+          "S",
+          "S",
+          "L",
+          "F",
+          "V",
+          "N",
+          "G",
+          "P",
+          "R",
+          "T",
+          "L",
+          "C",
+          "G",
+          "A",
+          "E",
+          "L",
+          "V",
+          "D",
+          "A",
+          "L",
+          "Q",
+          "F",
+          "V",
+          "C",
+          "G",
+          "D",
+          "R",
+          "G",
+          "F",
+          "Y",
+          "F",
+          "N",
+          "K",
+          "P",
+          "T",
+          "G",
+          "Y",
+          "G",
+          "S",
+          "S",
+          "S",
+          "R",
+          "R",
+          "A",
+          "P",
+          "Q",
+          "T",
+          "G",
+          "I",
+          "V",
+          "D",
+          "E",
+          "C",
+          "C",
+          "F",
+          "R",
+          "S",
+          "C",
+          "D",
+          "L",
+          "R",
+          "R",
+          "L",
+          "E",
+          "M",
+          "Y",
+          "C",
+          "A",
+          "P",
+          "L",
+          "K",
+          "P",
+          "A",
+          "K",
+          "S",
+          "A"
+        ],
+        "n_term": "H",
+        "c_term": "OH"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [
+      {
+        "from": "A19",
+        "to": "A61",
+        "type": "disulfide"
+      },
+      {
+        "from": "A31",
+        "to": "A74",
+        "type": "disulfide"
+      },
+      {
+        "from": "A60",
+        "to": "A65",
+        "type": "disulfide"
+      }
+    ],
+    "modifications": [
+      {
+        "at": "A1",
+        "type": "other",
+        "label": "Residues 1–13 (MFPAMPLSSLFVN) are the N-terminal extension: Met, porcine growth hormone residues 1–10 and a Val-Asn linker",
+        "short": "+13 aa"
+      },
+      {
+        "at": "A16",
+        "type": "other",
+        "label": "Arg replaces Glu3 of native IGF-1, which sharply reduces binding to IGF-binding proteins",
+        "short": "E3R"
+      }
+    ],
+    "notation": "H-Met-Phe-Pro-Ala-Met-Pro-Leu-Ser-Ser-Leu-Phe-Val-Asn-Gly-Pro-Arg-Thr-Leu-Cys-Gly-Ala-Glu-Leu-Val-Asp-Ala-Leu-Gln-Phe-Val-Cys-Gly-Asp-Arg-Gly-Phe-Tyr-Phe-Asn-Lys-Pro-Thr-Gly-Tyr-Gly-Ser-Ser-Ser-Arg-Arg-Ala-Pro-Gln-Thr-Gly-Ile-Val-Asp-Glu-Cys-Cys-Phe-Arg-Ser-Cys-Asp-Leu-Arg-Arg-Leu-Glu-Met-Tyr-Cys-Ala-Pro-Leu-Lys-Pro-Ala-Lys-Ser-Ala-OH",
+    "note": "Residues 14–83 are human IGF-1 (UniProt P05019, chain 49–118) with Glu3→Arg, so IGF-1 position n is residue n + 13 here. The three disulfides correspond to Cys6–Cys48, Cys18–Cys61 and Cys47–Cys52 of IGF-1. Some sources print the extension as MFPAMPLLSLFVN; the 1992 description (methionyl porcine GH residues 1–11) and the porcine GH sequence (UniProt P01248, FPAMPLSSLF…) give Ser at position 8. Made in E. coli; not glycosylated."
+  },
+  "formula": "C400H619N111O115S9",
+  "mw": 9111.5,
+  "half_life": "Not studied in humans; in rats it is cleared from plasma faster than IGF-1",
+  "half_life_hours": null,
+  "routes": [
+    "Added to cell-culture media (main legitimate use)",
+    "Subcutaneous or intramuscular injection (grey-market use; not studied in humans)"
+  ],
+  "structure": {
+    "pdb": [
+      {
+        "id": "1IMX",
+        "title": "Crystal structure of human IGF-1",
+        "method": "X-ray",
+        "resolution": 1.82,
+        "year": 2001,
+        "peptide_chain": "A",
+        "note": "Native IGF-1, the 70-residue core of LR3 (with Glu at position 3)"
+      },
+      {
+        "id": "6PYH",
+        "title": "Full-length IGF-1 receptor bound to IGF-1",
+        "method": "Cryo-EM",
+        "resolution": 4.3,
+        "year": 2019,
+        "peptide_chain": "B",
+        "note": "Native IGF-1 in its receptor-bound pose; only the extracellular region is resolved"
+      },
+      {
+        "id": "5U8Q",
+        "title": "IGF-1 receptor ectodomain in complex with IGF-1",
+        "method": "X-ray",
+        "resolution": 3.27,
+        "year": 2018,
+        "peptide_chain": "B",
+        "note": "Native IGF-1 bound to the receptor ectodomain"
+      }
+    ],
+    "pubchem_cid": null,
+    "notes": "No structure of LR3 itself has been deposited. The entries show native human IGF-1, whose fold LR3 shares; the 13-residue extension is not represented."
+  },
+  "ids": {
+    "cas": "946870-92-4"
+  },
+  "wiki": "IGF-1 LR3",
+  "queries": {
+    "pubmed": "(\"LR3-IGF-I\"[tiab] OR \"LR3IGF-I\"[tiab] OR \"LR3 IGF-1\"[tiab] OR \"IGF-1 LR3\"[tiab] OR \"long R3\"[tiab] OR \"Long-R3-IGF-I\"[tiab] OR \"LR3-IGF-1\"[tiab] OR \"Long R(3)\"[tiab])",
+    "ctgov": ""
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "Growth and wasting in animal models",
+        "stage": "Preclinical (1990s)",
+        "detail": "In rats LR3 and related IGF-1 variants increased weight gain, nitrogen retention and gut growth more potently than IGF-1, including in diabetic and dexamethasone-treated rats; in pigs it reduced growth by suppressing GH."
+      },
+      {
+        "use": "Neurological disease models",
+        "stage": "Preclinical",
+        "detail": "Examined in mouse models, for example as an intranasal treatment in Alzheimer's-model 5XFAD mice (2025), where it altered amyloid plaques but did not preserve cognition."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Cell culture and biomanufacturing",
+        "detail": "Its main use: a serum-free growth supplement that replaces insulin in media for CHO and other production cell lines, sold as LONG R3 IGF-I.",
+        "evidence": "Well established in industry; supplied as a reagent not for human use."
+      },
+      {
+        "use": "Muscle growth and fat loss (bodybuilding)",
+        "detail": "Sold by grey-market peptide vendors as freeze-dried vials for self-injection, often alongside GH, insulin or GH secretagogues.",
+        "evidence": "No human studies of any kind; claims extrapolate from rat data and from native IGF-1. Products may be mislabelled or contain laboratory variants, as a 2010 black-market seizure showed."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1957,
+      "title": "'Sulfation factor' described",
+      "detail": "William Salmon and William Daughaday reported a serum factor, dependent on growth hormone, that stimulated cartilage; it was later identified as IGF-1.",
+      "kind": "science"
+    },
+    {
+      "year": 1978,
+      "title": "IGF-1 sequenced",
+      "detail": "Rinderknecht and Humbel determined the 70-residue sequence of human IGF-1 and its resemblance to proinsulin.",
+      "kind": "science"
+    },
+    {
+      "year": 1992,
+      "date": "1992-02",
+      "title": "Arg3 and Gly3 variants",
+      "detail": "Adelaide researchers produced IGF-1 with Glu3 replaced by Gly or Arg; both bound IGF-binding protein-2 very poorly and were more potent than IGF-1 in muscle cells.",
+      "kind": "science"
+    },
+    {
+      "year": 1992,
+      "date": "1992-06",
+      "title": "Long R3 IGF-I described",
+      "detail": "Francis and colleagues reported 'Long' IGF-1 fusion analogues carrying a porcine GH-derived extension; Long [Arg3]-IGF-I was the most potent in cells that secrete binding proteins.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1993,
+      "date": "1993-06",
+      "title": "Potent growth effects in rats",
+      "detail": "Fourteen-day infusions showed LR3 producing the same gains in weight and nitrogen retention as IGF-1 at about one-sixth of the dose.",
+      "kind": "science"
+    },
+    {
+      "year": 1997,
+      "date": "1997-12",
+      "title": "Growth falls in pigs",
+      "detail": "A four-day infusion in finishing pigs suppressed GH, IGF-1 and IGFBP-3 and reduced weight gain, showing that the rat results did not carry over to every species.",
+      "kind": "science"
+    },
+    {
+      "year": 2005,
+      "date": "2005-08-30",
+      "title": "Mecasermin approved in the US",
+      "detail": "The FDA approved Increlex, native recombinant IGF-1, for children with severe primary IGF-1 deficiency; it is the approved relative of LR3.",
+      "kind": "approval"
+    },
+    {
+      "year": 2006,
+      "date": "2006-11",
+      "title": "Novozymes buys GroPep",
+      "detail": "Shareholders of Adelaide-based GroPep, whose largest product was LONG R3 IGF-I for cell culture, accepted a takeover offer from Novozymes worth DKK 375 million.",
+      "kind": "market"
+    },
+    {
+      "year": 2007,
+      "date": "2007-08",
+      "title": "Mecasermin approved in the EU",
+      "detail": "The European Commission authorised Increlex for growth failure from severe primary IGF-1 deficiency.",
+      "kind": "approval"
+    },
+    {
+      "year": 2008,
+      "title": "Doping test in plasma",
+      "detail": "The Cologne anti-doping laboratory published a mass-spectrometry method that quantifies IGF-1 and detects analogues such as LR3 and des(1-3)IGF-I in plasma.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2010,
+      "date": "2010-10",
+      "title": "His-tagged LR3 on the black market",
+      "detail": "Analysis of a confiscated injection vial found LR3 carrying a C-terminal His6 tag, a laboratory form never intended for injection.",
+      "kind": "safety"
+    },
+    {
+      "year": 2011,
+      "date": "2011-03",
+      "title": "Urine test for LR3",
+      "detail": "A urine method detected LR3 and identified a truncated breakdown product, des(1-10)-LR3, as the more stable marker for doping controls.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2011,
+      "title": "Repligen acquires the product line",
+      "detail": "Repligen bought Novozymes Biopharma Sweden, including LONG R3 IGF-I and other cell-culture growth factors.",
+      "kind": "market"
+    },
+    {
+      "year": 2026,
+      "date": "2026-06",
+      "title": "Clinicians' review of GH-axis peptides",
+      "detail": "A review in Frontiers in Endocrinology grouped IGF-1 LR3 with peptides that have no human studies and set out how clinicians should assess people self-administering them.",
+      "kind": "culture"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "Not an approved drug and no registered human trial; sold legally only as a laboratory and cell-culture reagent. The related mecasermin (Increlex) is approved."
+    },
+    {
+      "region": "EU",
+      "status": "not-approved",
+      "detail": "No marketing authorisation; only native mecasermin (Increlex, authorised August 2007) is approved."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "Covered by 'insulin-like growth factor-1 (IGF-1) and its analogues' under S2.3 (growth factors and growth factor modulators) of the 2026 Prohibited List; prohibited at all times."
+    }
+  ],
+  "pk": {
+    "half_life": "Not determined in humans. In rats LR3 was removed from plasma much faster than IGF-1 because it does not enter the long-lived IGFBP-3 complex; figures of 20–30 hours quoted online have no published source",
+    "bioavailability": "Unknown in humans",
+    "metabolism": "Proteolysis; in urine an N-terminally truncated product, des(1-10)-LR3, is more stable than the intact protein",
+    "excretion": "Small amounts of intact and truncated peptide appear in urine (basis of doping tests)"
+  },
+  "dosing": null,
+  "dosing_note": "No approved human dose and no human study. Cell-culture use is in the range of micrograms per litre of medium. Doses circulating among bodybuilders are not based on any clinical data; the approved product mecasermin (Increlex) has a separate, weight-based paediatric label.",
+  "safety": {
+    "common": [
+      "Expected from IGF-1 pharmacology (mecasermin label) rather than LR3 studies: low blood sugar, headache, injection-site reactions, enlarged tonsils",
+      "Self-reported in bodybuilding forums: low-blood-sugar symptoms, hunger, water retention, joint aches"
+    ],
+    "serious": [
+      "Severe hypoglycaemia, especially if injected without food or combined with insulin",
+      "Intracranial hypertension, slipped capital femoral epiphysis and progression of scoliosis are warned of for mecasermin in children",
+      "Possible growth of existing tumours (theoretical; IGF1R signalling promotes cell proliferation)"
+    ],
+    "warnings": [
+      "Not approved for human use; sold as a reagent, so identity, purity, sterility and dose of grey-market vials are not assured",
+      "LR3 escapes IGF-binding proteins, so its effects on glucose and tissues cannot be predicted from native IGF-1",
+      "Mecasermin carries a warning about benign and malignant neoplasia and is contraindicated with active cancer",
+      "Prohibited in sport at all times (WADA S2.3)"
+    ],
+    "notes": "No human safety data exist for IGF-1 LR3. Warnings listed here are drawn from the approved relative mecasermin and from IGF-1 biology; they indicate the kind of risks expected, not measured rates."
+  },
+  "market": null,
+  "facts": [
+    "Ten of the 13 extra residues at LR3's N-terminus come from pig growth hormone — a leftover of the bacterial fusion system used to make it, which also helps the protein fold correctly.",
+    "LR3 binds IGF-binding protein-3 about 1,000 times less strongly than IGF-1, which made it about six times more potent in rats but also cleared from blood much faster.",
+    "Despite its fame in bodybuilding, LR3's main market is biomanufacturing, where it replaces insulin in media for growing antibody-producing cells.",
+    "In 2010 doping chemists found a black-market vial containing a His-tagged laboratory version of LR3 — a purification tag normally removed before use."
+  ],
+  "community": {
+    "summary": "Discussed mainly in bodybuilding and peptide forums (r/Peptides, r/moreplatesmoredates, older steroid boards) as a muscle-building and recomposition agent. Users buy freeze-dried 'research' vials, often 1 mg, from peptide vendors and inject it themselves, commonly alongside GH, insulin, MGF/PEG-MGF or GH secretagogues.",
+    "protocols": [
+      {
+        "label": "Typical cycle",
+        "dose": "20-50 mcg per day; beginners often start at 20 mcg",
+        "frequency": "once daily or on training days, usually after training, subcutaneous",
+        "duration": "4-6 weeks, then a break of similar length"
+      },
+      {
+        "label": "Higher-dose / 'site' injections",
+        "dose": "50-100 mcg per day, sometimes split",
+        "frequency": "once daily after training, intramuscular into the trained muscle (bilateral)",
+        "duration": "4-6 weeks; longer cycles are discouraged in threads because of feared desensitisation"
+      }
+    ],
+    "reported_effects": [
+      "Stronger 'pumps' and muscle fullness during training are the most consistent reports",
+      "Better recovery and modest strength or size gains, usually reported while also using GH, steroids or insulin, so the contribution is hard to separate",
+      "Increased hunger after injecting",
+      "Many users report little or no noticeable effect, which threads often attribute to fake, degraded or underdosed vials"
+    ],
+    "reported_side_effects": [
+      "Low blood sugar symptoms (shakiness, sweating, light-headedness), especially when injecting fasted or above about 50 mcg; users typically advise eating soon after",
+      "Water retention and joint aches",
+      "Headaches and injection-site soreness",
+      "Recurring worry about 'gut' or organ growth and cancer risk with long or high-dose use"
+    ],
+    "sources": "r/Peptides, r/moreplatesmoredates and bodybuilding-forum threads, 2015-2026, plus community protocol aggregators; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
+  "related": [
+    "tesamorelin",
+    "cjc-1295",
+    "sermorelin",
+    "insulin",
+    "ipamorelin"
+  ],
+  "references": [
+    {
+      "title": "Novel recombinant fusion protein analogues of insulin-like growth factor (IGF)-I indicate the relative importance of IGF-binding protein and receptor binding for enhanced biological potency",
+      "authors": "Francis GL, Ross M, Ballard FJ, et al.",
+      "journal": "J Mol Endocrinol",
+      "year": 1992,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1378742/"
+    },
+    {
+      "title": "Production and characterization of recombinant insulin-like growth factor-I (IGF-I) and potent analogues of IGF-I, with Gly or Arg substituted for Glu3, following their expression in Escherichia coli as fusion proteins",
+      "authors": "King R, Wells JR, Krieg P, et al.",
+      "journal": "J Mol Endocrinol",
+      "year": 1992,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1311930/"
+    },
+    {
+      "title": "Effects of interactions between IGFBPs and IGFs on the plasma clearance and in vivo biological activities of IGFs and IGF analogs",
+      "authors": "Ballard FJ, Walton PE, Bastian S, et al.",
+      "journal": "Growth Regul",
+      "year": 1993,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7683526/"
+    },
+    {
+      "title": "Anabolic effects of insulin-like growth factor-I (IGF-I) and an IGF-I variant in normal female rats",
+      "authors": "Tomas FM, Knowles SE, Chandler CS, et al.",
+      "journal": "J Endocrinol",
+      "year": 1993,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8371075/"
+    },
+    {
+      "title": "Long [R3] insulin-like growth factor-I reduces growth, plasma growth hormone, IGF binding protein-3 and endogenous IGF-I concentrations in pigs",
+      "authors": "Dunaiski V, Dunshea FR, Walton PE, Goddard C",
+      "journal": "J Endocrinol",
+      "year": 1997,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9488001/"
+    },
+    {
+      "title": "Detection of His-tagged Long-R³-IGF-I in a black market product",
+      "authors": "Kohler M, Thomas A, Walpurgis K, et al.",
+      "journal": "Growth Horm IGF Res",
+      "year": 2010,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20675162/"
+    },
+    {
+      "title": "Determination of IGF-1 and IGF-2, their degradation products and synthetic analogues in urine by LC-MS/MS",
+      "authors": "Thomas A, Kohler M, Schänzer W, et al.",
+      "journal": "Analyst",
+      "year": 2011,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21157622/"
+    },
+    {
+      "title": "Profile of mecasermin for the long-term treatment of growth failure in children and adolescents with severe primary IGF-1 deficiency",
+      "authors": "Fintini D, Brufani C, Cappa M",
+      "journal": "Ther Clin Risk Manag",
+      "year": 2009,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19707272/"
+    },
+    {
+      "title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration",
+      "authors": "Dominikowski A, Rękoś Z, Olejarz M, et al.",
+      "journal": "Front Endocrinol (Lausanne)",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42395176/"
+    },
+    {
+      "title": "Increlex: EPAR",
+      "authors": "European Medicines Agency",
+      "journal": "EMA",
+      "year": 2007,
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/increlex"
+    }
+  ]
+}

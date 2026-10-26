@@ -1,0 +1,445 @@
+{
+  "slug": "hexarelin",
+  "name": "Hexarelin (examorelin)",
+  "aliases": [
+    "Examorelin",
+    "EP-23905",
+    "EP23905",
+    "MF-6003",
+    "HEX"
+  ],
+  "category": "gh",
+  "drug_class": "Ghrelin receptor (GHS-R1a) agonist; CD36 ligand",
+  "subclass": "Synthetic hexapeptide growth hormone secretagogue (GHRP family)",
+  "status": "research",
+  "status_note": "Studied in small clinical trials in the 1990s and early 2000s but never approved anywhere; today it is a laboratory tool for heart and muscle research, a grey-market 'research peptide' and a substance banned in sport.",
+  "evidence": 3,
+  "evidence_note": "Dozens of small human studies (dose-finding, routes of administration, a 16-week twice-daily study, acute heart-function studies in fewer than 30 people each), but no large or long-term trials. The cardioprotective effects that make it scientifically interesting come mostly from animal and isolated-heart experiments.",
+  "tagline": "Potent GHRP-6 analogue that also binds CD36 in the heart; never marketed",
+  "summary": "Hexarelin, or examorelin, is a synthetic six-amino-acid peptide that mimics the hormone ghrelin and causes a strong, short release of growth hormone (GH) from the pituitary gland. Developed in Italy in the early 1990s as a more stable version of GHRP-6, it was never approved, partly because its effect weakens with repeated use. It is also unusual among GH secretagogues in acting directly on the heart through the scavenger receptor CD36.",
+  "overview": [
+    "Hexarelin was designed by Romano Deghenghi and pharmacologists at the University of Milan, and developed by Mediolanum Farmaceutici, as an analogue of Cyril Bowers' GHRP-6 in which the D-tryptophan at position 2 carries a methyl group, making it chemically more stable. First described in 1994, it released GH in rats at least as well as GHRP-6, and in healthy men a 1 µg/kg intravenous dose released about twice as much GH as the same dose of growth hormone-releasing hormone (GHRH). It worked by injection under the skin, by nasal spray and even by mouth, although only about 0.3% of an oral dose was effective.",
+    "Through the 1990s the Turin endocrinology group of Ezio Ghigo used hexarelin as a probe of the GH axis: its effect was blunted in old age and restored by GHRH or arginine, amplified at puberty and by sex steroids, and absent in people lacking a working GHRH receptor. It also raised prolactin, ACTH and cortisol a little. Repeated use proved a problem for therapy: in a 1998 study twice-daily injections for 16 weeks reduced the GH response by roughly half, with no change in IGF-1, body fat, lean mass or bone density, and the response recovered four weeks after stopping. It reached phase 2 trials for GH deficiency and heart failure but was not developed further.",
+    "Its longer scientific life has been in cardiology. Hexarelin acutely raised left ventricular ejection fraction in healthy men, GH-deficient adults and patients undergoing coronary bypass surgery, while GH itself had no such effect, and it protected rat hearts from ischaemia even after removal of the pituitary. In 1999-2002 Huy Ong's group in Montreal traced this to a separate cardiac binding site, which turned out to be CD36, a scavenger receptor for oxidised lipids, inspiring GHRP-derived CD36 ligands without GH-releasing activity, such as EP 80317. Laboratory studies continue in heart failure, cancer cachexia, kidney injury and neurodegeneration, while hexarelin is sold online, usually as a GH booster, and is prohibited by WADA."
+  ],
+  "mechanism": [
+    "Like ghrelin, hexarelin is an agonist of the growth hormone secretagogue receptor type 1a (GHS-R1a) on pituitary somatotrophs and in the hypothalamus. It triggers a rapid GH peak about 30 minutes after an intravenous dose, works synergistically with GHRH and depends on an intact GHRH system. At higher doses it also stimulates prolactin and the ACTH-cortisol axis; continued exposure partially and reversibly desensitises the GH response.",
+    "Hexarelin also binds CD36, a scavenger receptor on cardiomyocytes, endothelial cells and macrophages. In perfused hearts this binding causes dose-dependent coronary vasoconstriction, an effect missing in CD36-deficient hearts and not shared by secretagogues such as MK-0677 that do not bind CD36. Through CD36 and cardiac GHS-R1a it is thought to exert GH-independent effects: increased contractility in humans and protection against ischaemia-reperfusion injury, fibrosis and adverse remodelling in animals."
+  ],
+  "origin": "Synthetic peptide derived from GHRP-6 (His-D-Trp-Ala-Trp-D-Phe-Lys-NH2) by methylating the indole ring of D-Trp2; not found in nature",
+  "discovery": {
+    "year": 1994,
+    "by": "Romano Deghenghi, Vittorio Locatelli and colleagues",
+    "where": "University of Milan and Mediolanum Farmaceutici, Milan, Italy",
+    "note": "Designed as a chemically more stable GHRP-6 analogue (2-methyl-D-Trp in place of D-Trp); the first indexed papers, on rats and on healthy volunteers, appeared in 1994."
+  },
+  "first_human_year": 1994,
+  "first_approval": null,
+  "developer": "Mediolanum Farmaceutici (Milan), with Romano Deghenghi; academic development at the Universities of Milan and Turin and the Université de Montréal",
+  "brands": [],
+  "analogs": [
+    {
+      "name": "GHRP-6",
+      "note": "His-D-Trp-Ala-Trp-D-Phe-Lys-NH2; the parent peptide, differing only by the methyl group on D-Trp2."
+    },
+    {
+      "name": "GHRP-2 (pralmorelin)",
+      "note": "D-Ala-D-2Nal-Ala-Trp-D-Phe-Lys-NH2; approved in Japan in 2004 as a diagnostic for GH deficiency."
+    },
+    {
+      "name": "Ipamorelin",
+      "note": "Aib-His-D-2Nal-D-Phe-Lys-NH2; a selective secretagogue that does not raise ACTH or cortisol."
+    },
+    {
+      "name": "EP 80317",
+      "note": "A GHRP-derived CD36 ligand with no GH-releasing activity; reduced atherosclerosis in apoE-deficient mice (2005)."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Growth hormone secretagogue receptor type 1 (ghrelin receptor)",
+      "gene": "GHSR",
+      "uniprot": "Q92847",
+      "action": "Agonist"
+    },
+    {
+      "name": "Platelet glycoprotein 4 (CD36 scavenger receptor)",
+      "gene": "CD36",
+      "uniprot": "P16671",
+      "action": "Ligand; mediates coronary and other cardiovascular effects"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "H",
+          "dMeW",
+          "A",
+          "W",
+          "f",
+          "K"
+        ],
+        "n_term": "H",
+        "c_term": "NH2"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A2",
+        "type": "d-amino",
+        "label": "2-Methyl-D-tryptophan, a D-Trp with a methyl group on the indole ring for chemical stability; the only change from GHRP-6",
+        "short": "D-2MeTrp"
+      },
+      {
+        "at": "A5",
+        "type": "d-amino",
+        "label": "D-Phe5, shared with the other GHRPs",
+        "short": "D-Phe"
+      },
+      {
+        "at": "A6",
+        "type": "amidation",
+        "label": "C-terminal lysine amide (Lys-NH2)",
+        "short": "NH2"
+      }
+    ],
+    "notation": "H-His-D-2-Me-Trp-Ala-Trp-D-Phe-Lys-NH2",
+    "note": "Hexapeptide identical to GHRP-6 except for the 2-methyl group on the indole of D-Trp2."
+  },
+  "formula": "C47H58N12O6",
+  "mw": 887.06,
+  "half_life": "GH response falls with a half-life of ≈ 55 minutes after an intravenous dose; the peptide's own plasma half-life is not well characterised",
+  "half_life_hours": null,
+  "routes": [
+    "Intravenous injection (clinical research)",
+    "Subcutaneous injection (clinical research and grey-market use)",
+    "Intranasal and oral (early clinical studies)"
+  ],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 6918297,
+    "notes": "No experimental structure of hexarelin has been deposited in the PDB, so the model shown is predicted. Its parent, GHRP-6, has been solved bound to the ghrelin receptor (PDB 7F9Z)."
+  },
+  "ids": {
+    "pubchem_cid": 6918297,
+    "cas": "140703-51-1",
+    "chembl": "CHEMBL108335",
+    "unii": "09QF37C617",
+    "inn": "examorelin"
+  },
+  "wiki": "Examorelin",
+  "queries": {
+    "pubmed": "(hexarelin[tiab] OR examorelin[tiab] OR \"EP-23905\"[tiab] OR EP23905[tiab])",
+    "ctgov": ""
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "GH deficiency and short stature",
+        "stage": "Small clinical studies (1994-1999) - not developed further",
+        "detail": "Tested as a GH stimulation test and as a long-term GH booster in children and adults; a 16-week twice-daily study found a partial, reversible loss of response and no change in IGF-1 or body composition."
+      },
+      {
+        "use": "Heart failure and cardioprotection",
+        "stage": "Acute human studies; preclinical",
+        "detail": "A single intravenous dose raised ejection fraction in healthy men, GH-deficient adults, patients with ischaemic cardiomyopathy and patients undergoing bypass surgery; animal studies show reduced damage after ischaemia and myocardial infarction, independent of GH."
+      },
+      {
+        "use": "Cachexia, kidney injury and neurodegeneration",
+        "stage": "Preclinical",
+        "detail": "Rodent and cell studies in cisplatin-induced muscle wasting (2017), ischaemic kidney injury (2023), an ALS cell model (2023) and MPTP toxicity in mice (2026)."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Bodybuilding and 'anti-ageing'",
+        "detail": "Sold online as a 'research peptide' to raise GH, usually injected under the skin and often combined with a GHRH analogue such as CJC-1295.",
+        "evidence": "No trials of these uses; in the only long-term study, 16 weeks of treatment changed neither IGF-1 nor body composition, and the GH response faded."
+      },
+      {
+        "use": "Doping in sport",
+        "detail": "Prohibited at all times by WADA as a growth hormone-releasing peptide; urinary metabolites are used in doping control.",
+        "evidence": "No evidence of a performance benefit."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1984,
+      "date": "1984-05",
+      "title": "GHRP-6 described",
+      "detail": "Cyril Bowers and colleagues reported GHRP-6, the synthetic hexapeptide from which hexarelin was later derived.",
+      "kind": "science"
+    },
+    {
+      "year": 1994,
+      "title": "Hexarelin introduced",
+      "detail": "Deghenghi and Milan pharmacologists reported that the 2-methyl-Trp analogue of GHRP-6 released GH in infant and adult rats, slightly more effectively than GHRP-6 when injected under the skin.",
+      "kind": "discovery"
+    },
+    {
+      "year": 1994,
+      "date": "1994-03",
+      "title": "Four routes in humans",
+      "detail": "In 12 healthy volunteers hexarelin released GH after intravenous, subcutaneous, nasal and oral dosing, twice as strongly as GHRH by injection.",
+      "kind": "trial"
+    },
+    {
+      "year": 1994,
+      "date": "1994-11",
+      "title": "Blunted in older men",
+      "detail": "The GH response was lower in elderly men but was restored by adding GHRH or arginine.",
+      "kind": "trial"
+    },
+    {
+      "year": 1996,
+      "date": "1996-08-16",
+      "title": "Receptor cloned",
+      "detail": "Merck researchers cloned the growth hormone secretagogue receptor through which GHRPs release GH.",
+      "kind": "science"
+    },
+    {
+      "year": 1998,
+      "date": "1998-05",
+      "title": "Response fades with long-term use",
+      "detail": "Sixteen weeks of twice-daily injections reduced the GH response by about half without changing IGF-1 or body composition; it recovered after a four-week break.",
+      "kind": "trial"
+    },
+    {
+      "year": 1999,
+      "date": "1999-04",
+      "title": "Heart effect in humans",
+      "detail": "An intravenous dose increased left ventricular ejection fraction in healthy men, whereas an equivalent GH rise from recombinant GH did not.",
+      "kind": "trial"
+    },
+    {
+      "year": 1999,
+      "date": "1999-09",
+      "title": "GH-independent cardioprotection",
+      "detail": "Hexarelin protected hearts of hypophysectomised rats from ischaemia-reperfusion injury, pointing to direct cardiac receptors.",
+      "kind": "science"
+    },
+    {
+      "year": 1999,
+      "date": "1999-10-29",
+      "title": "Cardiac binding site found",
+      "detail": "Montreal researchers identified an 84 kDa hexarelin receptor in rat heart that ignored other secretagogues such as MK-0677.",
+      "kind": "science"
+    },
+    {
+      "year": 1999,
+      "date": "1999-12-09",
+      "title": "Ghrelin discovered",
+      "detail": "Japanese researchers identified ghrelin, the natural hormone that hexarelin and the other GHRPs mimic.",
+      "kind": "science"
+    },
+    {
+      "year": 2002,
+      "date": "2002-05-03",
+      "title": "Receptor identified as CD36",
+      "detail": "The cardiac hexarelin receptor was shown to be the scavenger receptor CD36; hearts lacking CD36 did not respond.",
+      "kind": "science"
+    },
+    {
+      "year": 2002,
+      "date": "2002-07-19",
+      "title": "Bypass-surgery study",
+      "detail": "In 24 men undergoing coronary bypass surgery, hexarelin but not GH or GHRH quickly raised ejection fraction and cardiac output.",
+      "kind": "trial"
+    },
+    {
+      "year": 2005,
+      "date": "2005-11",
+      "title": "CD36 analogue against atherosclerosis",
+      "detail": "EP 80317, a GHRP-derived CD36 ligand with no GH-releasing activity, reduced atherosclerotic lesions in apoE-deficient mice.",
+      "kind": "science"
+    },
+    {
+      "year": 2014,
+      "date": "2014-06",
+      "title": "Oral dose after infarction in mice",
+      "detail": "A Japanese study found that a single oral dose of hexarelin after myocardial infarction preserved long-term heart function in mice.",
+      "kind": "science"
+    },
+    {
+      "year": 2017,
+      "date": "2017-10-12",
+      "title": "Muscle protection in cachexia model",
+      "detail": "Hexarelin protected skeletal-muscle mitochondria in rats with cisplatin-induced cachexia.",
+      "kind": "science"
+    },
+    {
+      "year": 2026,
+      "date": "2026-06-18",
+      "title": "Clinicians review self-use",
+      "detail": "A Polish endocrinology review listed hexarelin among GH-axis peptides commonly self-administered from unregulated sources and set out their hormonal risks.",
+      "kind": "culture"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "Never approved by FDA; sold only as an unapproved 'research chemical'."
+    },
+    {
+      "region": "EU",
+      "status": "not-approved",
+      "detail": "Never authorised; development by Mediolanum Farmaceutici did not proceed to marketing."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "Named as examorelin (hexarelin) among growth hormone-releasing peptides under S2.2.4 of the 2026 Prohibited List; prohibited at all times."
+    }
+  ],
+  "pk": {
+    "half_life": "GH levels return to baseline within about 4 hours of an intravenous dose, falling with a half-life of about 55 minutes",
+    "tmax": "GH peaks about 30 minutes after an intravenous dose",
+    "bioavailability": "Biological (GH-response) bioavailability about 77% subcutaneous, 4.8% intranasal and 0.3% oral"
+  },
+  "dosing": null,
+  "dosing_note": "No approved dose. Clinical studies used 0.5-2 µg/kg intravenously (near-maximal GH release at 2 µg/kg), 1.5 µg/kg subcutaneously once to three times a day, or 20-40 mg by mouth. Regimens circulating online are not based on clinical trials.",
+  "safety": {
+    "common": [
+      "Small, transient rises in prolactin, ACTH and cortisol",
+      "Partial, reversible loss of GH response with repeated use"
+    ],
+    "serious": [],
+    "warnings": [
+      "Not approved anywhere: grey-market products may be mislabelled, impure or non-sterile",
+      "Constricts coronary arteries in isolated hearts via CD36; effects in people with heart disease beyond single doses are unknown",
+      "Prohibited in sport at all times (WADA S2)"
+    ],
+    "notes": "Single doses and courses of up to 16 weeks were well tolerated in small studies; there are no long-term safety data."
+  },
+  "market": null,
+  "facts": [
+    "Hexarelin differs from its parent GHRP-6 by a single methyl group, on the indole ring of the second amino acid.",
+    "Swallowed, it still releases GH, but a 20-40 mg oral dose is needed to match about 1-2 µg/kg injected, an oral bioavailability of roughly 0.3%.",
+    "Hearts from CD36-knockout mice and from spontaneously hypertensive rats, which lack CD36, show no coronary response to hexarelin.",
+    "During bypass surgery hexarelin raised cardiac output within 10 minutes, though its GH rise was no bigger than that from GHRH, which had no cardiac effect."
+  ],
+  "community": {
+    "summary": "A niche GH-releasing peptide, discussed far less than ipamorelin or GHRP-2 and usually by users who already have experience with GHRPs. It is bought as lyophilised powder from research-chemical vendors and injected under the skin, mostly for GH-related goals (recovery, sleep, body composition) and occasionally for its reputed heart effects.",
+    "protocols": [
+      {
+        "label": "GH release (typical)",
+        "dose": "100-200 mcg per injection (many start at 100 mcg)",
+        "frequency": "1-3 times daily, subcutaneous, on an empty stomach, often including before bed",
+        "duration": "4-8 weeks (some run 12), then a break of 4 weeks or more because the effect fades"
+      },
+      {
+        "label": "Stack with a GHRH analogue",
+        "dose": "Hexarelin 100 mcg plus CJC-1295 without DAC (mod GRF 1-29) 100 mcg",
+        "frequency": "Same syringe, 1-3 times daily",
+        "duration": "4-12 weeks, then a break"
+      },
+      {
+        "label": "Rotation to limit desensitisation",
+        "dose": "100 mcg",
+        "frequency": "Some use hexarelin only on training days or alternate it with ipamorelin or GHRP-2",
+        "duration": "Variable"
+      }
+    ],
+    "reported_effects": [
+      "A stronger acute 'GH pulse' than ipamorelin or GHRP-2 is the usual claim, judged by warmth, pumps and deeper sleep rather than measured hormones",
+      "Better sleep quality and recovery, most often reported with a bedtime dose",
+      "Noticeable effects commonly fade after several weeks of continuous use, in line with the desensitisation seen in trials",
+      "Many report no visible change in body composition, which threads often blame on the weak long-term effect or on vial quality"
+    ],
+    "reported_side_effects": [
+      "Water retention, puffiness and tingling or numbness in the hands",
+      "Worries about raised prolactin and cortisol (mood changes, nipple sensitivity), cited as the main reason to prefer ipamorelin",
+      "Increased hunger after injection, though usually described as milder than with GHRP-6",
+      "Tiredness or lethargy, and injection-site redness"
+    ],
+    "sources": "r/Peptides, r/PeptideResearch and r/moreplatesmoredates discussions and community peptide wikis summarising them, 2020-2026; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
+  "related": [
+    "ghrp-6",
+    "ghrp-2",
+    "ipamorelin",
+    "sermorelin",
+    "cjc-1295",
+    "tesamorelin"
+  ],
+  "references": [
+    {
+      "title": "GH-releasing activity of Hexarelin, a new growth hormone releasing peptide, in infant and adult rats",
+      "authors": "Deghenghi R, Cananzi MM, Torsello A, et al.",
+      "journal": "Life Sci",
+      "year": 1994,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7910650/"
+    },
+    {
+      "title": "Growth hormone-releasing activity of hexarelin, a new synthetic hexapeptide, after intravenous, subcutaneous, intranasal, and oral administration in man",
+      "authors": "Ghigo E, Arvat E, Gianotti L, et al.",
+      "journal": "J Clin Endocrinol Metab",
+      "year": 1994,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8126144/"
+    },
+    {
+      "title": "Growth hormone-releasing activity of hexarelin in humans. A dose-response study",
+      "authors": "Imbimbo BP, Mant T, Edwards M, et al.",
+      "journal": "Eur J Clin Pharmacol",
+      "year": 1994,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7957536/"
+    },
+    {
+      "title": "Growth hormone status during long-term hexarelin therapy",
+      "authors": "Rahim A, O'Neill PA, Shalet SM",
+      "journal": "J Clin Endocrinol Metab",
+      "year": 1998,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9589671/"
+    },
+    {
+      "title": "Acute cardiovascular and hormonal effects of GH and hexarelin, a synthetic GH-releasing peptide, in humans",
+      "authors": "Bisi G, Podio V, Valetto MR, et al.",
+      "journal": "J Endocrinol Invest",
+      "year": 1999,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10342360/"
+    },
+    {
+      "title": "Growth hormone-independent cardioprotective effects of hexarelin in the rat",
+      "authors": "Locatelli V, Rossoni G, Schweiger F, et al.",
+      "journal": "Endocrinology",
+      "year": 1999,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10465272/"
+    },
+    {
+      "title": "CD36 mediates the cardiovascular action of growth hormone-releasing peptides in the heart",
+      "authors": "Bodart V, Febbraio M, Demers A, et al.",
+      "journal": "Circ Res",
+      "year": 2002,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11988484/"
+    },
+    {
+      "title": "Effects of acute hexarelin administration on cardiac performance in patients with coronary artery disease during by-pass surgery",
+      "authors": "Broglio F, Guarracino F, Benso A, et al.",
+      "journal": "Eur J Pharmacol",
+      "year": 2002,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12144941/"
+    },
+    {
+      "title": "The cardiovascular action of hexarelin",
+      "authors": "Mao Y, Tokudome T, Kishimoto I",
+      "journal": "J Geriatr Cardiol",
+      "year": 2014,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25278975/"
+    },
+    {
+      "title": "The emerging landscape of performance-enhancing peptides modulating GH-IGF1 axis: bridging the gap between clinical evidence and patient self-administration",
+      "authors": "Dominikowski A, Rękoś Z, Olejarz M, et al.",
+      "journal": "Front Endocrinol (Lausanne)",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42395176/"
+    }
+  ]
+}

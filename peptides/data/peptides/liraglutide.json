@@ -548,6 +548,31 @@
     "Victoza's 2019 paediatric approval gave children with type 2 diabetes their first new non-insulin treatment option in 19 years.",
     "Lotte Bjerre Knudsen, who led liraglutide's development, shared the 2024 Lasker~DeBakey Clinical Medical Research Award."
   ],
+  "community": {
+    "summary": "Mostly prescribed (Saxenda, Victoza) and self-injected daily at home; since generic liraglutide reached the US market in 2024-2025, and with some 'research' vials on sale, a smaller group uses it as a cheaper alternative to the weekly GLP-1 drugs, partly outside medical care. Community attention has largely moved to semaglutide and tirzepatide.",
+    "protocols": [
+      {
+        "label": "Label-style titration",
+        "dose": "0.6 mg → 1.2 mg → 1.8 mg → 2.4 mg → 3.0 mg per day",
+        "frequency": "once daily, subcutaneous",
+        "duration": "the label steps up weekly; many slow to 2 weeks or more per step, and some stop at 1.2-1.8 mg if appetite is controlled"
+      }
+    ],
+    "reported_effects": [
+      "Reduced appetite and less snacking, felt within hours because of daily dosing",
+      "Weight loss generally described as slower and smaller than on semaglutide or tirzepatide; many switch after a plateau",
+      "Some prefer daily dosing for finer control and a quick wash-out if side effects appear"
+    ],
+    "reported_side_effects": [
+      "Nausea, often strongest in the first weeks and after each increase",
+      "Constipation or diarrhoea, and 'sulfur burps'",
+      "Headache and fatigue",
+      "Bruising at injection sites and the burden of injecting every day",
+      "Hair shedding during rapid weight loss"
+    ],
+    "sources": "r/Saxenda, r/loseit and r/Peptides threads, 2016-2026; self-reports, unverified",
+    "updated": "2026-10"
+  },
   "related": [
     "semaglutide",
     "exenatide",

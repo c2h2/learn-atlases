@@ -1,0 +1,505 @@
+{
+  "slug": "amycretin",
+  "name": "Amycretin (zenagamtide)",
+  "aliases": [
+    "Zenagamtide",
+    "NNC0487-0111",
+    "NN9487",
+    "NN 9487"
+  ],
+  "category": "metabolic",
+  "drug_class": "GLP-1 and amylin receptor co-agonist",
+  "subclass": "Unimolecular fusion of an acylated GLP-1 analogue and a disulfide-free, calcitonin-based amylin receptor agonist",
+  "status": "clinical",
+  "status_note": "Not approved anywhere. Novo Nordisk started its phase 3 obesity programme (AMAZE) in February 2026 with weekly injections and a daily tablet, and phase 3 trials in type 2 diabetes (AMBITION), heart failure and cardiovascular outcomes followed later in 2026.",
+  "evidence": 3,
+  "evidence_note": "Published phase 1 and phase 1b/2a trials in people with obesity (2025) and two 36-week phase 2 trials in 448 adults with type 2 diabetes (2026). More than a dozen phase 3 trials began in 2026 but none has reported.",
+  "tagline": "Novo Nordisk's single-molecule GLP-1 and amylin agonist, as a weekly shot or daily pill",
+  "summary": "Amycretin, now named zenagamtide, is a 68-residue peptide from Novo Nordisk that joins a semaglutide-like GLP-1 analogue to an amylin receptor agonist in one chain, so a single molecule does the work of the two-drug combination CagriSema. It is being developed as a once-weekly injection and a once-daily tablet; in early trials the injection lowered body weight by up to 24% over 36 weeks, and phase 3 trials began in 2026.",
+  "overview": [
+    "Amycretin (development code NNC0487-0111; international nonproprietary name zenagamtide) is Novo Nordisk's attempt to put the two appetite-suppressing pathways of CagriSema, the combination of semaglutide and the amylin analogue cagrilintide, into one molecule. GLP-1 receptor agonists act on the brain and gut to reduce hunger and slow stomach emptying, while amylin receptor agonists add a separate fullness signal from the brainstem. The company's goal was a single peptide that, in cell assays, was about as potent as CagriSema at both receptor types.",
+    "The 68-residue chain starts with a GLP-1(7–37) analogue that carries Aib at position 2 to resist the enzyme DPP-4 and a semaglutide-type C18 fatty diacid side chain on the lysine at its C-terminus, which binds albumin and supports once-weekly dosing. A four-glycine and glutamate linker leads to a 32-residue amylin receptor agonist that is based on calcitonin rather than amylin and has no disulfide bridge. Novo's chemists reported that simply appending cagrilintide or pramlintide to semaglutide lost 20–50-fold potency at amylin receptors, and that potency only returned with disulfide-free calcitonin-based sequences.",
+    "In a first-in-human trial of tablets taken once daily, 2 × 50 mg gave 13.1% mean weight loss after 12 weeks, against 1.2% with placebo. In a 125-person phase 1b/2a trial of weekly injections, estimated weight loss reached 22.0% at 36 weeks with 20 mg and 24.3% with 60 mg, against changes of −1.1% to +2.3% with placebo, though a third of participants withdrew. Both trials were published in The Lancet in June 2025, and Novo Nordisk decided that month to take both forms into phase 3.",
+    "In type 2 diabetes, two 36-week phase 2 trials (448 adults on metformin) lowered HbA1c by up to 1.7 percentage points with weekly injections and 1.4 with daily tablets, with weight loss of up to 14.6% and 10.1%. The AMAZE phase 3 obesity programme started in February 2026 and includes trials in type 2 diabetes, sleep apnoea, knee osteoarthritis, weight maintenance, head-to-head comparisons with semaglutide and an oral tablet trial; Novo added a heart-failure outcomes trial, an AMBITION diabetes trial against insulin glargine and a cardiovascular outcomes trial in 2026. By October 2026 products labelled zenagamtide were being sold online as unapproved 'research' peptides."
+  ],
+  "mechanism": [
+    "The N-terminal part of amycretin is a GLP-1 receptor agonist: in cells expressing the human GLP-1 receptor its potency (EC50 about 1 pM) was the same as semaglutide's. The C-terminal part activates the calcitonin receptor alone and when it is paired with the RAMP proteins that create the three amylin receptors; in human cell assays without albumin it was most potent at the calcitonin receptor and amylin 1 receptor (EC50 about 1–2 pM) and about tenfold less potent at the amylin 2 and amylin 3 receptors, with negligible activity at the related CGRP and adrenomedullin receptors.",
+    "Both receptor families act on brain areas that control eating. A fluorescently labelled version injected into mice reached four circumventricular organs, brain areas without a tight blood–brain barrier, including the area postrema of the brainstem. In diet-induced obese rats, 21 days of treatment cut food intake by 47% and body weight by about 18% without the fall in energy expenditure seen with matched food restriction; about 70% of the weight lost was fat. Like other GLP-1 agonists it increases insulin release when glucose is high, which explains the HbA1c reductions in type 2 diabetes."
+  ],
+  "origin": "Synthetic: a GLP-1(7–37) analogue related to semaglutide (Aib8, Glu22, Arg26, Arg34 and an acylated Lys37) fused through a GGGGE linker to a 32-residue, disulfide-free amylin receptor agonist derived from calcitonin",
+  "discovery": {
+    "year": 2020,
+    "by": "Thomas Kruse, Wouter F. J. Hogendorf, Søren Østergaard, Christian W. Tornøe and colleagues, Novo Nordisk",
+    "where": "Måløv, Denmark",
+    "note": "Described as compound 0111 in Novo Nordisk's patent application 'Co-agonists of the GLP-1 and amylin receptors' (WO2022129526), with a December 2020 priority date. The WHO proposed the name zenagamtide in 2025 (INN List 133), and Novo Nordisk began using it in place of amycretin in 2026."
+  },
+  "first_human_year": 2022,
+  "first_approval": null,
+  "developer": "Novo Nordisk",
+  "brands": [],
+  "targets": [
+    {
+      "name": "GLP-1 receptor",
+      "gene": "GLP1R",
+      "uniprot": "P43220",
+      "action": "Agonist (EC50 about 1.1 pM in human cells, equal to semaglutide)"
+    },
+    {
+      "name": "Amylin 1 receptor (calcitonin receptor with RAMP1)",
+      "gene": "CALCR + RAMP1",
+      "uniprot": "P30988",
+      "action": "Agonist (EC50 about 1.3 pM)"
+    },
+    {
+      "name": "Amylin 2 and 3 receptors (calcitonin receptor with RAMP2 or RAMP3)",
+      "gene": "CALCR + RAMP2/RAMP3",
+      "uniprot": "P30988",
+      "action": "Agonist (EC50 about 13–17 pM)"
+    },
+    {
+      "name": "Calcitonin receptor",
+      "gene": "CALCR",
+      "uniprot": "P30988",
+      "action": "Agonist (EC50 about 1.9 pM)"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "H",
+          "Aib",
+          "E",
+          "G",
+          "T",
+          "F",
+          "T",
+          "S",
+          "D",
+          "V",
+          "S",
+          "S",
+          "Y",
+          "L",
+          "E",
+          "E",
+          "Q",
+          "A",
+          "A",
+          "R",
+          "E",
+          "F",
+          "I",
+          "A",
+          "W",
+          "L",
+          "V",
+          "R",
+          "G",
+          "R",
+          "K",
+          "G",
+          "G",
+          "G",
+          "G",
+          "E",
+          "A",
+          "S",
+          "E",
+          "L",
+          "S",
+          "T",
+          "A",
+          "A",
+          "L",
+          "G",
+          "R",
+          "L",
+          "S",
+          "A",
+          "E",
+          "L",
+          "H",
+          "E",
+          "L",
+          "A",
+          "T",
+          "L",
+          "P",
+          "R",
+          "T",
+          "E",
+          "T",
+          "G",
+          "S",
+          "G",
+          "S",
+          "P"
+        ],
+        "n_term": "H",
+        "c_term": "NH2"
+      }
+    ],
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A2",
+        "type": "nonnatural",
+        "label": "Aib (α-aminoisobutyric acid) replaces Ala8 of GLP-1 and blocks cleavage by DPP-4, as in semaglutide",
+        "short": "Aib"
+      },
+      {
+        "at": "A16",
+        "type": "other",
+        "label": "Glu replaces Gly22 of GLP-1",
+        "short": "G22E"
+      },
+      {
+        "at": "A20",
+        "type": "other",
+        "label": "Arg replaces Lys26 of GLP-1, so the only lysine left for acylation is residue 31",
+        "short": "K26R"
+      },
+      {
+        "at": "A28",
+        "type": "other",
+        "label": "Arg replaces Lys34 of GLP-1, as in semaglutide",
+        "short": "K34R"
+      },
+      {
+        "at": "A31",
+        "type": "lipidation",
+        "label": "Lys (replacing Gly37 of GLP-1) carries the same side chain as semaglutide: a C18 fatty diacid (octadecanedioic acid) attached through γ-glutamate and two OEG spacers; it binds serum albumin and gives a long half-life",
+        "short": "C18 diacid"
+      },
+      {
+        "at": "A32",
+        "type": "other",
+        "label": "Residues 32–36 (Gly-Gly-Gly-Gly-Glu) link the GLP-1 part to the amylin receptor agonist part",
+        "short": "G4E linker"
+      },
+      {
+        "at": "A37",
+        "type": "other",
+        "label": "Residues 37–68 are a disulfide-free, calcitonin-based amylin receptor agonist: 21 of its 32 positions match salmon calcitonin, whose Cys1–Cys7 ring is replaced here by alanines (positions 37 and 43)",
+        "short": "CT-based"
+      },
+      {
+        "at": "A68",
+        "type": "amidation",
+        "label": "C-terminal proline amide, as in calcitonin",
+        "short": "Pro-NH2"
+      }
+    ],
+    "notation": "H-His-Aib-Glu-Gly-Thr-Phe-Thr-Ser-Asp-Val-Ser-Ser-Tyr-Leu-Glu-Glu-Gln-Ala-Ala-Arg-Glu-Phe-Ile-Ala-Trp-Leu-Val-Arg-Gly-Arg-Lys[HOOC-(CH2)16-CO-γGlu-2×OEG]-Gly-Gly-Gly-Gly-Glu-Ala-Ser-Glu-Leu-Ser-Thr-Ala-Ala-Leu-Gly-Arg-Leu-Ser-Ala-Glu-Leu-His-Glu-Leu-Ala-Thr-Leu-Pro-Arg-Thr-Glu-Thr-Gly-Ser-Gly-Ser-Pro-NH2",
+    "note": "Numbered 1–68 along the single chain. Residues 1–31 correspond to GLP-1(7–37), so Novo Nordisk's papers call the acylated lysine 'K37'. Sequence from the FDA Global Substance Registration System (UNII T2EA5S9XJ5) and the INN entry."
+  },
+  "formula": "C343H550N94O116",
+  "mw": 7846.7,
+  "half_life": "Long-acting (once-weekly injections); human half-life not yet published in detail. About 29 hours in monkeys.",
+  "half_life_hours": null,
+  "routes": [
+    "Subcutaneous injection, once weekly (investigational)",
+    "Oral tablet, once daily (investigational)"
+  ],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": null,
+    "notes": "No experimental structure of amycretin has been deposited in the PDB (RCSB full-text searches for 'amycretin', 'zenagamtide' and 'NNC0487-0111' return no entries), and PubChem lists it only as a substance record without a compound ID, so the model shown is predicted. Its GLP-1 part is closely related to semaglutide, whose receptor-bound structure is 7KI0."
+  },
+  "ids": {
+    "cas": "3005889-81-3",
+    "unii": "T2EA5S9XJ5",
+    "inn": "zenagamtide"
+  },
+  "wiki": "Zenagamtide",
+  "queries": {
+    "pubmed": "(amycretin[tiab] OR zenagamtide[tiab] OR \"NNC0487-0111\"[tiab] OR NN9487[tiab])",
+    "ctgov": "amycretin OR zenagamtide OR NNC0487-0111"
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "Obesity and overweight (weekly injection)",
+        "stage": "Phase 3 (AMAZE 1, started February 2026)",
+        "detail": "In the phase 1b/2a trial, estimated weight loss was 9.7% at 20 weeks with 1.25 mg, 16.2% at 28 weeks with 5 mg, 22.0% at 36 weeks with 20 mg and 24.3% at 36 weeks with 60 mg, without a plateau. AMAZE 1 (about 1,150 adults) compares four doses with placebo over 84 weeks; other AMAZE trials test weight maintenance (AMAZE 12), Japanese and other Asian participants (AMAZE 10 and 13) and a head-to-head comparison with semaglutide (AMAZE 7)."
+      },
+      {
+        "use": "Obesity and overweight (daily tablet)",
+        "stage": "Phase 3 (AMAZE 9, started August 2026)",
+        "detail": "In the first-in-human trial, once-daily tablets escalated to 2 × 50 mg gave 13.1% weight loss after 12 weeks, against 1.2% with placebo. AMAZE 9 (about 950 adults) compares five daily doses with placebo over 76 weeks."
+      },
+      {
+        "use": "Type 2 diabetes",
+        "stage": "Phase 2 - positive (2025); phase 3 (AMBITION, from August 2026)",
+        "detail": "Over 36 weeks, weekly injections of 0.4–40 mg lowered HbA1c by 0.9–1.7 percentage points (0.1 with placebo) and weight by up to 14.6%; daily tablets of 6–50 mg lowered HbA1c by 0.9–1.4 points and weight by up to 10.1%. AMBITION 7 compares weekly zenagamtide with daily insulin glargine over 52 weeks."
+      },
+      {
+        "use": "Obesity with type 2 diabetes",
+        "stage": "Phase 3 (AMAZE 2 from April 2026; AMAZE 8 planned)",
+        "detail": "AMAZE 2 compares zenagamtide with placebo and AMAZE 8 with semaglutide, each measuring weight change at 84 weeks."
+      },
+      {
+        "use": "Obstructive sleep apnoea and knee osteoarthritis with obesity",
+        "stage": "Phase 3 (AMAZE 3–6, started April–May 2026)",
+        "detail": "Two sleep apnoea trials measure weight and the apnoea–hypopnoea index, and two knee osteoarthritis trials weight and WOMAC pain, at 80 weeks."
+      },
+      {
+        "use": "Heart failure and cardiovascular disease with obesity",
+        "stage": "Phase 3 outcomes trials (2026)",
+        "detail": "HF-POLARIS (about 5,610 people with heart failure with preserved or mildly reduced ejection fraction, from May 2026) and AMBIENCE (about 8,500 people with atherosclerotic cardiovascular disease, planned from October 2026) measure heart-failure events and major adverse cardiovascular events against placebo."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Unsupervised weight loss (grey market)",
+        "detail": "A JAMA news report in October 2026 found dozens of websites selling products labelled zenagamtide as research chemicals, usually for less than approved GLP-1 drugs; the FDA had not issued warning letters about them by late September 2026.",
+        "evidence": "None for these products: their identity, dose and purity are unknown, and the only efficacy and safety data come from Novo Nordisk's trials of its own drug."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 2020,
+      "date": "2020-12-18",
+      "title": "Novo Nordisk patent filing",
+      "detail": "A priority application, later published as WO2022129526 ('Co-agonists of the GLP-1 and amylin receptors'), described single-chain GLP-1–amylin fusion peptides, including compound 0111.",
+      "kind": "discovery"
+    },
+    {
+      "year": 2022,
+      "date": "2022-05-11",
+      "title": "First human dosing, as a tablet",
+      "detail": "A first-in-human trial (NCT05369390) of oral amycretin began in San Antonio, Texas, eventually enrolling 144 people with overweight or obesity.",
+      "kind": "trial"
+    },
+    {
+      "year": 2023,
+      "date": "2023-09-15",
+      "title": "Injectable form enters trials",
+      "detail": "A phase 1b/2a trial (NCT06064006) of once-weekly subcutaneous amycretin began in 125 people with overweight or obesity.",
+      "kind": "trial"
+    },
+    {
+      "year": 2024,
+      "date": "2024-03-07",
+      "title": "Oral data lift Novo's valuation",
+      "detail": "At its capital markets day Novo Nordisk reported 13.1% weight loss after 12 weeks with oral amycretin; its market value briefly rose above Tesla's on the news.",
+      "kind": "trial"
+    },
+    {
+      "year": 2024,
+      "date": "2024-08-07",
+      "title": "Phase 2 in type 2 diabetes begins",
+      "detail": "A 36-week trial (NCT06542874) at 83 sites in 11 countries randomised 448 adults with type 2 diabetes to weekly injections, daily tablets or placebo.",
+      "kind": "trial"
+    },
+    {
+      "year": 2025,
+      "date": "2025-01-24",
+      "title": "22% weight loss with weekly injections",
+      "detail": "Novo Nordisk reported that 20 mg of subcutaneous amycretin gave 22.0% estimated weight loss after 36 weeks in the phase 1b/2a trial.",
+      "kind": "trial"
+    },
+    {
+      "year": 2025,
+      "date": "2025-06-12",
+      "title": "Decision to start phase 3",
+      "detail": "After end-of-phase 2 meetings with regulators, Novo Nordisk said it would take both the injection and the tablet into phase 3 for weight management, starting in early 2026.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2025,
+      "date": "2025-06-20",
+      "title": "Early trials published in The Lancet",
+      "detail": "The oral phase 1 and subcutaneous phase 1b/2a trials were published and presented at the ADA meeting; the 60 mg weekly dose gave 24.3% weight loss at 36 weeks.",
+      "kind": "science"
+    },
+    {
+      "year": 2025,
+      "title": "INN zenagamtide proposed",
+      "detail": "The WHO's Proposed INN List 133 gave the molecule the name zenagamtide, describing it as a GLP-1(7–37) variant fused through a G4 linker to a 33-residue amylin receptor agonist.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2025,
+      "date": "2025-11-25",
+      "title": "Phase 2 results in type 2 diabetes",
+      "detail": "Weekly injections lowered HbA1c by up to 1.8 percentage points and weight by up to 14.5%, and daily tablets by up to 1.5 points and 10.1%; Novo Nordisk said it would start phase 3 in type 2 diabetes in 2026.",
+      "kind": "trial"
+    },
+    {
+      "year": 2026,
+      "date": "2026-02-24",
+      "title": "Phase 3 programme begins",
+      "detail": "AMAZE 1, an 84-week placebo-controlled obesity trial in about 1,150 adults, became the first phase 3 trial; trials in type 2 diabetes, knee osteoarthritis, sleep apnoea and weight maintenance followed in April and May.",
+      "kind": "trial"
+    },
+    {
+      "year": 2026,
+      "date": "2026-05-11",
+      "title": "Heart failure outcomes trial",
+      "detail": "HF-POLARIS began enrolling about 5,610 people with obesity and heart failure with preserved or mildly reduced ejection fraction.",
+      "kind": "trial"
+    },
+    {
+      "year": 2026,
+      "date": "2026-07-30",
+      "title": "Diabetes trials published as zenagamtide",
+      "detail": "The two phase 2 diabetes trials, presented at the ADA meeting in June under the new name, were published in The Lancet.",
+      "kind": "science"
+    },
+    {
+      "year": 2026,
+      "date": "2026-08-31",
+      "title": "Oral phase 3 starts",
+      "detail": "AMAZE 9 began testing once-daily zenagamtide tablets against placebo in about 950 adults with obesity; a week earlier AMBITION 7 had started comparing weekly injections with insulin glargine in type 2 diabetes.",
+      "kind": "trial"
+    },
+    {
+      "year": 2026,
+      "date": "2026-10-09",
+      "title": "Grey-market sales reported",
+      "detail": "A JAMA news article described a growing online trade in unapproved retatrutide and zenagamtide sold as research peptides.",
+      "kind": "culture"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "investigational",
+      "detail": "In phase 3 since February 2026 (AMAZE and AMBITION programmes, plus heart-failure and cardiovascular outcomes trials). No marketing application has been filed, and products sold online under the name are unapproved."
+    },
+    {
+      "region": "Japan",
+      "status": "investigational",
+      "detail": "A phase 1 tablet study in Japanese men with obesity has been completed, and the phase 3 trial AMAZE 10 in Japanese adults started in September 2026."
+    },
+    {
+      "region": "China",
+      "status": "investigational",
+      "detail": "Phase 1 studies of the tablet and the injection in Chinese participants (started in 2025) have been completed; AMAZE 13 is planned in Asian participants."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "Not approved for human use by any regulator, so it falls under the S0 'non-approved substances' section of the World Anti-Doping Agency list, which is prohibited at all times."
+    }
+  ],
+  "pk": {
+    "half_life": "Supports once-weekly subcutaneous dosing; the human half-life has not been reported in the abstracts. In monkeys it was about 29 hours after intravenous or subcutaneous dosing",
+    "bioavailability": "Close to 100% after subcutaneous injection in monkeys; no oral bioavailability figure has been published, but tablet doses (6–100 mg a day) are far larger than weekly injected doses",
+    "metabolism": "Proteolytic breakdown; Aib at position 2 protects against DPP-4 and albumin binding by the C18 diacid side chain slows clearance",
+    "excretion": "Renal impairment, including end-stage kidney disease, did not change exposure after a single 0.3 mg dose"
+  },
+  "dosing": null,
+  "dosing_note": "No approved dose. Trials have escalated weekly injections every 4 weeks from 0.2–0.3 mg up to maintenance doses of 0.4–60 mg, and daily tablets from 1.5–6 mg up to 50 mg or 2 × 50 mg.",
+  "safety": {
+    "common": [
+      "Nausea",
+      "Vomiting",
+      "Decreased appetite",
+      "Diarrhoea",
+      "Constipation",
+      "Other gastrointestinal effects"
+    ],
+    "serious": [],
+    "warnings": [
+      "Investigational: no approved label; the phase 3 trials are assessing longer-term safety",
+      "Gastrointestinal side effects are frequent and dose-related, as with other GLP-1 and amylin drugs",
+      "Not available outside clinical trials; anything sold online under the name is an unregulated product of unknown identity and purity"
+    ],
+    "notes": "In the oral phase 1 trial, 62% of participants had adverse events, all mild or moderate, and half of the events were gastrointestinal. In the subcutaneous phase 1b/2a trial 96% of participants on amycretin had an adverse event, most often gastrointestinal and mostly mild to moderate; a third of participants withdrew, mostly for reasons not related to side effects. In the phase 2 diabetes trials, gastrointestinal events affected 26–47% of people on tablets (23% on placebo), and serious adverse events were reported by 8% of those in the injection trial and 4% on tablets, with no deaths."
+  },
+  "market": null,
+  "facts": [
+    "Its amylin-receptor half is based on calcitonin rather than amylin: Novo found that attaching cagrilintide or pramlintide to semaglutide cut amylin-receptor potency 20–50-fold.",
+    "At 68 residues and about 7.8 kDa it is nearly twice the size of semaglutide (about 4.1 kDa).",
+    "The GLP-1 half carries exactly the same C18 diacid side chain as semaglutide, but on a lysine at the end of the GLP-1 sequence instead of at position 26.",
+    "It is being developed both as a weekly injection and as a daily tablet; the tablets tested contain up to 100 mg a day, against weekly injections of up to 60 mg.",
+    "In the phase 1b/2a trial, weight was still falling at 36 weeks with the 20 mg and 60 mg doses."
+  ],
+  "related": [
+    "cagrilintide",
+    "semaglutide",
+    "pramlintide",
+    "eloralintide",
+    "tirzepatide",
+    "retatrutide"
+  ],
+  "references": [
+    {
+      "title": "Safety, tolerability, pharmacokinetics, and pharmacodynamics of the first-in-class GLP-1 and amylin receptor agonist, amycretin: a first-in-human, phase 1, double-blind, randomised, placebo-controlled trial",
+      "authors": "Gasiorek A, Heydorn A, Gabery S, et al.",
+      "journal": "Lancet",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40550229/"
+    },
+    {
+      "title": "Amycretin, a novel, unimolecular GLP-1 and amylin receptor agonist administered subcutaneously: results from a phase 1b/2a randomised controlled study",
+      "authors": "Dahl K, Toubro S, Dey S, et al.",
+      "journal": "Lancet",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40550231/"
+    },
+    {
+      "title": "The effect of amycretin, a unimolecular glucagon-like peptide-1 and amylin receptor agonist, on body weight and metabolic dysfunction in mice and rats",
+      "authors": "Kuhre RE, Ballarín-González B, Brand CL, et al.",
+      "journal": "EBioMedicine",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40706446/"
+    },
+    {
+      "title": "Efficacy and safety of once-weekly subcutaneous zenagamtide, a novel unimolecular GLP-1 and amylin receptor agonist, in type 2 diabetes: a multicentre, randomised, parallel, double-blind, placebo-controlled, dose-finding, phase 2 trial",
+      "authors": "Mora P, Aroda VR, Asong M, et al.",
+      "journal": "Lancet",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42532080/"
+    },
+    {
+      "title": "Efficacy and safety of once-daily oral zenagamtide, a novel unimolecular GLP-1 and amylin receptor agonist, in adults with type 2 diabetes: a multicentre, randomised, parallel, double-blind, placebo-controlled, dose-finding, phase 2 trial",
+      "authors": "Mora P, Aroda VR, Asong M, et al.",
+      "journal": "Lancet",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42532079/"
+    },
+    {
+      "title": "Renal impairment does not affect pharmacokinetics, safety or tolerability of zenagamtide",
+      "authors": "Oldenburg LIK, Haugaard SP, Karlsson T, et al.",
+      "journal": "Diabetes Obes Metab",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42443140/"
+    },
+    {
+      "title": "Amycretin in obesity: mechanisms, clinical efficacy, and future perspectives",
+      "authors": "Fu L, Ding R, Xu G",
+      "journal": "Metabolism",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41850421/"
+    },
+    {
+      "title": "Unapproved GLP-1 drugs retatrutide and zenagamtide sold online are no bargain",
+      "authors": "Rubin R",
+      "journal": "JAMA",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42853576/"
+    },
+    {
+      "title": "International Nonproprietary Names for pharmaceutical substances: Proposed INN List 133 (zenagamtide)",
+      "authors": "World Health Organization",
+      "journal": "WHO Drug Information 39(2)",
+      "year": 2025,
+      "url": "https://cdn.who.int/media/docs/default-source/international-nonproprietary-names-(inn)/pl133.pdf"
+    },
+    {
+      "title": "Novo Nordisk to advance subcutaneous and oral amycretin for weight management into phase 3 clinical development",
+      "authors": "Novo Nordisk",
+      "journal": "Company announcement No 17/2025",
+      "year": 2025,
+      "url": "https://www.novonordisk.com/content/nncorp/global/en/news-and-media/news-and-ir-materials/news-details.html?id=916348"
+    }
+  ]
+}

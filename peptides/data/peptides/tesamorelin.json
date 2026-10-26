@@ -129,6 +129,39 @@
     "About half of treated patients develop antibodies against the drug, which also cross-react with natural GHRH in most of them, without an apparent loss of efficacy.",
     "The EMA's committee questioned whether shrinking visceral fat was clinically meaningful for patients, and the European application was withdrawn in 2012."
   ],
+  "community": {
+    "summary": "Approved only for HIV-associated abdominal fat, but used off-label by bodybuilders, biohackers and anti-ageing clinic patients for belly (visceral) fat loss and higher GH/IGF-1; much of it is bought as research powder rather than Egrifta. It is often stacked with ipamorelin.",
+    "protocols": [
+      {
+        "label": "Fat loss",
+        "dose": "1-2 mg per day",
+        "frequency": "once daily before bed, subcutaneous; some use 5 days on and 2 off",
+        "duration": "12-16 weeks, sometimes longer"
+      },
+      {
+        "label": "With ipamorelin",
+        "dose": "tesamorelin 1-2 mg plus ipamorelin 100-300 mcg",
+        "frequency": "once daily before bed",
+        "duration": "12-16 weeks"
+      }
+    ],
+    "reported_effects": [
+      "Gradual loss of belly fat over two to four months is the main claim; a few confirm it with DEXA scans",
+      "Deeper sleep and more vivid dreams within the first weeks",
+      "Higher IGF-1 on bloodwork; benefits are said to fade after stopping",
+      "Some report little change, often blaming underdosed research vials"
+    ],
+    "reported_side_effects": [
+      "Water retention and puffiness",
+      "Joint aches, and numbness or tingling in the hands",
+      "Injection-site redness or itching, and flushing after injecting",
+      "Headache",
+      "Higher fasting blood sugar on bloodwork",
+      "Cost, which is high for both pharmacy and research products"
+    ],
+    "sources": "r/Peptides, r/moreplatesmoredates and r/Biohackers threads and forum aggregations, 2019-2026; self-reports, unverified; research product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["sermorelin", "cjc-1295", "ipamorelin", "aod-9604", "semaglutide"],
   "references": [
     {"title": "Metabolic effects of a growth hormone-releasing factor in patients with HIV", "authors": "Falutz J, Allas S, Blot K, et al.", "journal": "N Engl J Med", "year": 2007, "url": "https://pubmed.ncbi.nlm.nih.gov/18057338/"},

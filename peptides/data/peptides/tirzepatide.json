@@ -150,6 +150,46 @@
     "Zepbound was the first medicine approved to treat obstructive sleep apnoea in adults with obesity (December 2024).",
     "In September 2025 the WHO added tirzepatide to its Model List of Essential Medicines, and in December 2025 included it in its first guideline on GLP-1 medicines for obesity."
   ],
+  "community": {
+    "summary": "Widely self-injected outside the brand pens: compounded tirzepatide from telehealth services and compounding pharmacies (curtailed after the FDA declared the shortage over in late 2024) and lyophilised 'research' tirzepatide from overseas vendors, which r/tirzepatidecompound and related subreddits discuss openly, including group-funded third-party purity tests. Microdosing and split dosing are common topics.",
+    "protocols": [
+      {
+        "label": "Label-style titration",
+        "dose": "2.5 mg → 5 mg → 7.5 mg → 10 mg → 12.5 mg → 15 mg per week",
+        "frequency": "once weekly, subcutaneous",
+        "duration": "4 weeks per step; many stay at 5-7.5 mg for months while still losing weight and only increase at a stall"
+      },
+      {
+        "label": "Split dosing",
+        "dose": "the weekly dose divided in two (e.g. 2.5 mg twice a week instead of 5 mg once)",
+        "frequency": "every 3-4 days",
+        "duration": "ongoing; used to smooth out next-day nausea and appetite returning before the next shot"
+      },
+      {
+        "label": "Microdosing",
+        "dose": "about 0.5-2.5 mg per week",
+        "frequency": "once weekly or split into several smaller injections",
+        "duration": "open-ended; for maintenance, gentle appetite control or claimed anti-inflammatory benefits"
+      }
+    ],
+    "reported_effects": [
+      "Strong appetite suppression and quiet 'food noise'; many who switched from semaglutide describe it as stronger with less nausea",
+      "Weight loss that many report as larger than on semaglutide; stalls lead to dose increases or a move to retatrutide",
+      "Less interest in alcohol; some report less joint pain and better blood-sugar readings",
+      "Appetite coming back on days 5-7 before the next injection is a frequent complaint and the main reason for split dosing"
+    ],
+    "reported_side_effects": [
+      "Nausea, worst in the first days after injecting and after each dose increase",
+      "Constipation, sometimes diarrhoea",
+      "'Sulfur burps' and reflux, especially after large, fatty or late meals",
+      "Fatigue, often on the day or two after the injection",
+      "Hair shedding around months 3-6, attributed to rapid weight loss and low protein intake",
+      "Injection-site itching, redness or welts, reported more with compounded and research products",
+      "Doubt about vendor product strength: under- or over-filled vials and occasional contamination worries"
+    ],
+    "sources": "r/tirzepatidecompound, r/Zepbound, r/Mounjaro and r/Peptides threads, 2022-2026; self-reports, unverified; strength and purity of compounded and research-vendor products vary",
+    "updated": "2026-10"
+  },
   "related": ["semaglutide", "retatrutide", "liraglutide", "exenatide", "mazdutide", "survodutide", "cagrilintide", "eloralintide", "glucagon"],
   "references": [
     {"title": "LY3298176, a novel dual GIP and GLP-1 receptor agonist for the treatment of type 2 diabetes mellitus: from discovery to clinical proof of concept", "authors": "Coskun T, Sloop KW, Loghin C, et al.", "journal": "Mol Metab", "year": 2018, "url": "https://pubmed.ncbi.nlm.nih.gov/30473097/"},

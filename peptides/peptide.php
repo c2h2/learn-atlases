@@ -232,7 +232,7 @@ if (!empty($seq['cyclic'])) $chainBits[] = t('cyclic');
   <nav class="localnav" aria-label="<?= h(t('On this page')) ?>">
     <ul>
       <?php foreach (['overview' => 'Overview', 'history' => 'History', 'uses' => 'Uses', 'popularity' => 'Popularity', 'research' => 'Research & trials',
-          'chemistry' => 'Chemistry', 'safety' => 'Safety', 'regulation' => 'Regulation', 'sources' => 'Sources'] as $id => $label): ?>
+          'chemistry' => 'Chemistry', 'safety' => 'Safety', 'community' => 'Community reports', 'regulation' => 'Regulation', 'sources' => 'Sources'] as $id => $label): if ($id === 'community' && empty($p['community'])) continue; ?>
         <li><a href="#<?= $id ?>"><?= h(t($label)) ?></a></li>
       <?php endforeach; ?>
     </ul>
@@ -515,6 +515,31 @@ if (!empty($seq['cyclic'])) $chainBits[] = t('cyclic');
     <?php endif; ?>
     <?php if (!empty($p['dosing_note'])): ?><p class="small muted" style="margin-top:10px;max-width:80ch"><?= h($p['dosing_note']) ?></p><?php endif; ?>
   </section>
+
+  <?php if (!empty($p['community'])): $cm = $p['community']; ?>
+  <section class="block" id="community">
+    <div class="block-head"><h2 class="section"><?= h(t('Community reports')) ?></h2><?php if (!empty($cm['summary'])): ?><p><?= h($cm['summary']) ?></p><?php endif; ?></div>
+    <div class="callout" style="margin-top:0;max-width:90ch"><?= h(t('Anecdotal reports collected from online forums such as Reddit. They describe what self-experimenting users say they do and feel, not what has been tested. Doses are unverified, products are often mislabelled or impure, and nothing here is medical advice or a recommendation.')) ?></div>
+    <?php if (!empty($cm['protocols'])): ?>
+      <h3 class="sub" style="margin:24px 0 8px"><?= h(t('Commonly reported doses and intervals')) ?></h3>
+      <div class="table-scroll"><table class="data-table" style="max-width:1000px">
+        <thead><tr><th style="width:200px"><?= h(t('Context')) ?></th><th><?= h(t('Reported dose')) ?></th><th><?= h(t('Interval')) ?></th><th><?= h(t('Cycle length')) ?></th></tr></thead>
+        <tbody><?php foreach ($cm['protocols'] as $r): ?><tr><td><b><?= h($r['label'] ?? '') ?></b></td><td><?= h($r['dose'] ?? '') ?></td><td><?= h($r['frequency'] ?? '') ?></td><td><?= h($r['duration'] ?? '') ?></td></tr><?php endforeach; ?></tbody>
+      </table></div>
+    <?php endif; ?>
+    <div class="grid-2" style="margin-top:24px">
+      <div>
+        <h3 class="sub" style="margin:0 0 6px"><?= h(t('Effects users describe')) ?></h3>
+        <?php if (!empty($cm['reported_effects'])): ?><ul style="padding-left:1.1em;margin:0"><?php foreach ($cm['reported_effects'] as $s): ?><li style="margin:4px 0"><?= h($s) ?></li><?php endforeach; ?></ul><?php else: ?><p class="empty-note"><?= h(t('None reported.')) ?></p><?php endif; ?>
+      </div>
+      <div>
+        <h3 class="sub" style="margin:0 0 6px"><?= h(t('Side effects and complaints')) ?></h3>
+        <?php if (!empty($cm['reported_side_effects'])): ?><ul style="padding-left:1.1em;margin:0"><?php foreach ($cm['reported_side_effects'] as $s): ?><li style="margin:4px 0"><?= h($s) ?></li><?php endforeach; ?></ul><?php else: ?><p class="empty-note"><?= h(t('None reported.')) ?></p><?php endif; ?>
+      </div>
+    </div>
+    <?php if (!empty($cm['sources'])): ?><p class="small muted" style="margin-top:14px;max-width:90ch"><?= h(t('Where these reports come from:')) ?> <?= h($cm['sources']) ?><?php if (!empty($cm['updated'])): ?> (<?= h($cm['updated']) ?>)<?php endif; ?></p><?php endif; ?>
+  </section>
+  <?php endif; ?>
 
   <section class="block" id="regulation">
     <div class="block-head"><h2 class="section"><?= h(t('Regulatory status')) ?></h2><p><?= h($p['status_note'] ?? '') ?></p></div>

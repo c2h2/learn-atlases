@@ -123,6 +123,50 @@
     "Its C-terminal tail (GPSSGAPPPS-NH2) is identical to that of exendin-4, the Gila monster peptide behind exenatide.",
     "The 2024 cryo-EM structures of retatrutide bound to the GLP-1, GIP and glucagon receptors are highly similar overall (Cα RMSD 0.88–0.93 Å), with receptor-specific differences mainly around extracellular loop 1."
   ],
+  "community": {
+    "summary": "Not approved anywhere, yet heavily self-injected since 2024 as lyophilised 'research' powder from mostly overseas vendors; dedicated subreddits track vendor lab tests. Users are often people who stalled on tirzepatide or semaglutide, and many deliberately stay below the top trial doses.",
+    "protocols": [
+      {
+        "label": "Low start, slow climb",
+        "dose": "0.5-2 mg per week to start, rising in 1-2 mg steps; most settle around 4-8 mg",
+        "frequency": "once weekly, subcutaneous",
+        "duration": "4-8 weeks per step; 'the lowest dose that still works' is the prevailing advice in threads"
+      },
+      {
+        "label": "Trial-style ladder",
+        "dose": "2 mg → 4 mg → 8 mg → 12 mg per week",
+        "frequency": "once weekly",
+        "duration": "4 weeks per step, copied from the phase 2/3 protocols; fewer users go up to 12 mg"
+      },
+      {
+        "label": "Microdose or add-on",
+        "dose": "about 0.5-2 mg per week",
+        "frequency": "once weekly, sometimes alongside a low dose of tirzepatide or semaglutide",
+        "duration": "open-ended; for maintenance or to break a plateau"
+      },
+      {
+        "label": "Stack with cagrilintide",
+        "dose": "usual retatrutide dose plus cagrilintide about 0.5-2.4 mg per week",
+        "frequency": "once weekly, as separate vials or vendor pre-blends",
+        "duration": "months; no trial has tested the combination"
+      }
+    ],
+    "reported_effects": [
+      "Fast, strong appetite suppression, often within the first week even at 0.5-2 mg",
+      "Faster weight loss than on tirzepatide by many switchers' accounts, including people who had stalled",
+      "Some post better liver enzymes, triglycerides and blood sugar on bloodwork; energy is reported as both better and worse than on tirzepatide"
+    ],
+    "reported_side_effects": [
+      "Nausea, constipation, 'sulfur burps' and reflux as with other GLP-1 drugs, more with fast titration",
+      "Higher resting heart rate (often 5-15 beats per minute), noticed on smartwatches",
+      "Dysesthesia: tingling, burning or sunburn-like skin sensitivity, a distinctive complaint that also appeared in trials",
+      "Fatigue, poor sleep and flattened motivation at higher doses; lower alcohol tolerance",
+      "Hair thinning around months 3-4",
+      "Persistent doubt about product identity and dose; the FDA has warned about retatrutide sold 'for research purposes'"
+    ],
+    "sources": "r/Retatrutide, r/RetatrutideGBP, r/Peptides and r/Biohackers threads, 2024-2026; self-reports, unverified; product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["tirzepatide", "semaglutide", "survodutide", "mazdutide", "glucagon", "liraglutide", "exenatide", "cagrilintide"],
   "references": [
     {"title": "LY3437943, a novel triple glucagon, GIP, and GLP-1 receptor agonist for glycemic control and weight loss: from discovery to clinical proof of concept", "authors": "Coskun T, Urva S, Roell WC, et al.", "journal": "Cell Metab", "year": 2022, "url": "https://pubmed.ncbi.nlm.nih.gov/35985340/"},

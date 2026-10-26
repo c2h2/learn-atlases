@@ -390,6 +390,41 @@
     "The vitamin D response element in the CAMP gene promoter arrived in primates via a transposable element, which is why the vitamin D–cathelicidin link exists in humans but not in mice.",
     "Sunlight-driven vitamin D synthesis raising cathelicidin is the molecular echo of the pre-antibiotic 'heliotherapy' once used for tuberculosis."
   ],
+  "community": {
+    "summary": "Self-injected by a small group, mostly people treating themselves for chronic Lyme disease, mould illness (CIRS), recurrent infections, SIBO or 'biofilms', often on the advice of integrative practitioners. It is usually bought from research-peptide vendors and frequently combined with thymosin α1.",
+    "protocols": [
+      {
+        "label": "Standard",
+        "dose": "100-200 mcg (100-125 mcg is the most common starting dose; some start at 50 mcg)",
+        "frequency": "once daily, subcutaneous, often 5 days on and 2 off",
+        "duration": "4-12 weeks"
+      },
+      {
+        "label": "Acute infection",
+        "dose": "200-400 mcg",
+        "frequency": "once daily, subcutaneous",
+        "duration": "2-4 weeks"
+      },
+      {
+        "label": "Immune stack",
+        "dose": "LL-37 100-200 mcg plus thymosin α1 1.5 mg twice a week",
+        "frequency": "subcutaneous",
+        "duration": "4-12 weeks"
+      }
+    ],
+    "reported_effects": [
+      "Fewer colds and respiratory infections, or a sense that a lingering infection cleared, reported by some long-term users",
+      "Less bloating in people using it for SIBO, usually alongside BPC-157 or antimicrobials",
+      "Results are mixed and hard to judge, since most users are on many treatments at once"
+    ],
+    "reported_side_effects": [
+      "Painful, red, itchy or swollen injection sites are the most common complaint",
+      "Flu-like symptoms, low-grade fever, aches and fatigue in the first days or at higher doses, which users often interpret as a 'die-off' (Herxheimer) reaction",
+      "Flare of autoimmune or skin conditions; users with psoriasis, lupus or rosacea are warned off in threads because LL-37 is linked to those diseases"
+    ],
+    "sources": "r/Peptides, r/Lyme, r/CIRS and peptide-forum threads, 2021-2026, plus community protocol aggregators; self-reports, unverified, product purity unknown",
+    "updated": "2026-10"
+  },
   "related": [
     "kpv",
     "thymosin-alpha-1",

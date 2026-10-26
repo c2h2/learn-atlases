@@ -19,9 +19,11 @@ Reference implementation: `data/peptides/semaglutide.json`. Match its depth.
 - References: only PubMed (`https://pubmed.ncbi.nlm.nih.gov/<PMID>/`) or DOI
   links you have checked with `lookup.py pmid` / `lookup.py doi`, plus
   official regulator/company pages you actually opened.
-- No dosing protocols for unapproved peptides. For approved products, the
-  labelled regimen is fine (`dosing`). For grey-market/research peptides,
-  describe how and why people use them neutrally, and state the evidence gap.
+- `dosing` is for labelled regimens of approved products only. For grey-market/research
+  peptides, describe how and why people use them neutrally, and state the evidence gap.
+- What self-experimenters report (doses, intervals, cycles, felt effects) goes only in the
+  optional `community` object, written as a neutral summary of what users *say* — never as a
+  recommendation — and kept separate from the verified fields.
 - Plain, neutral, encyclopedic English. Sentence case. No marketing language.
 
 ## Fields
@@ -69,6 +71,7 @@ Reference implementation: `data/peptides/semaglutide.json`. Match its depth.
 | `safety` | object | `{common:[string], serious:[string], warnings:[string], notes:string}` |
 | `market` | object\|null | `{note:string, figures:[{year, label, value, source}]}` - only verified numbers |
 | `facts` | string[] | 2-5 short interesting, verifiable facts |
+| `community` | object | optional: anecdotal self-experimenter reports (Reddit etc.) - see below |
 | `related` | string[] | slugs of related peptides in this atlas |
 | `references` | object[] | 4-10 `{title, authors, journal, year, url}` - verified |
 
@@ -164,3 +167,24 @@ Regions: `US`, `EU`, `UK`, `China`, `Japan`, `Russia`, `India`, `Canada`,
 `status`: `approved`, `conditional`, `generic`, `not-approved`,
 `investigational`, `restricted`, `withdrawn`, `prohibited` (WADA),
 `permitted` (WADA). Include only regions you can support.
+
+### `community` (optional)
+
+Anecdotal reports from forums such as r/Peptides, r/Semaglutide, r/moreplatesmoredates,
+r/Nootropics, r/tirzepatidecompound. Rendered after Safety under a fixed "not medical advice"
+banner. Summarise the *consensus or typical range* users report, not one person's protocol;
+when reports disagree, give the range. Include it only for peptides that people actually
+self-administer outside medical care (or use off-label at home).
+
+```json
+"community": {
+  "summary": "1-3 sentences: who uses it, for what, how it is usually obtained",
+  "protocols": [
+    {"label": "Injury recovery", "dose": "250-500 mcg", "frequency": "once or twice daily, subcutaneous", "duration": "4-8 weeks, then a break"}
+  ],
+  "reported_effects": ["what users say they notice, with how consistent the reports are"],
+  "reported_side_effects": ["complaints users report"],
+  "sources": "r/Peptides, r/... threads 2023-2026; self-reports, unverified, product purity unknown",
+  "updated": "2026-10"
+}
+```

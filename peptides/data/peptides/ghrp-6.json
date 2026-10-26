@@ -114,6 +114,36 @@
     "The peptide contains two D-amino acids (D-Trp and D-Phe), a legacy of the enkephalin analogues it was designed from.",
     "FDA's substance registry (GSRS) lists it under the name 'Hexapeptide-2'."
   ],
+  "community": {
+    "summary": "One of the original grey-market GH peptides, self-injected by bodybuilders with mod GRF 1-29. Its defining feature in user reports is intense hunger within about 20 minutes, so it is now mostly chosen by 'hardgainers' bulking or people wanting more appetite; others have moved to ipamorelin or GHRP-2.",
+    "protocols": [
+      {
+        "label": "Saturation dosing with mod GRF 1-29",
+        "dose": "about 1 mcg/kg, typically 100 mcg GHRP-6 plus 100 mcg mod GRF 1-29",
+        "frequency": "2-3 times daily, subcutaneous, on an empty stomach, eating 20-30 minutes later",
+        "duration": "8-12 weeks, then a break"
+      },
+      {
+        "label": "Appetite / bulking",
+        "dose": "100-150 mcg",
+        "frequency": "before 2-3 main meals, fasted",
+        "duration": "a few weeks to 3 months"
+      }
+    ],
+    "reported_effects": [
+      "Strong, sometimes overwhelming hunger is reported almost universally and is either the point or the reason people stop",
+      "Better sleep and recovery and some weight gain, much of which users attribute to eating more and water",
+      "Hunger is said to lessen after a few weeks of use"
+    ],
+    "reported_side_effects": [
+      "Ravenous hunger, sometimes with stomach discomfort or light-headedness",
+      "Water retention, bloating and numb or tingling hands",
+      "Head rush, flushing and lethargy after injecting",
+      "Concerns about raised cortisol and prolactin and about blood-sugar swings"
+    ],
+    "sources": "r/Peptides, r/moreplatesmoredates, r/gainit and older bodybuilding forums, 2008-2026; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["ghrp-2", "ipamorelin", "sermorelin", "cjc-1295", "tesamorelin"],
   "references": [
     {"title": "Design, synthesis, and biological activity of peptides which release growth hormone in vitro", "authors": "Momany FA, Bowers CY, Reynolds GA, et al.", "journal": "Endocrinology", "year": 1981, "url": "https://pubmed.ncbi.nlm.nih.gov/6109621/"},

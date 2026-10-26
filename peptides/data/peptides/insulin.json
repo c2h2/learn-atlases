@@ -647,6 +647,30 @@
     "Dorothy Hodgkin first photographed insulin crystals in 1935 and solved the structure 34 years later, in 1969.",
     "Pig insulin differs from human insulin at a single position (B30) and beef insulin at three, which is why animal insulins worked in people for six decades."
   ],
+  "community": {
+    "summary": "A minority of advanced bodybuilders inject non-prescribed insulin, usually a rapid-acting analogue or regular human insulin, to drive glucose and amino acids into muscle after training, typically alongside anabolic steroids and growth hormone. Surveys and clinic reports of steroid users describe a minority who also use insulin. It is the most dangerous drug in this community: users die of hypoglycaemia, sometimes alone, after training or while asleep.",
+    "protocols": [
+      {
+        "label": "Pattern described in case reports and forums (not a recommendation)",
+        "dose": "commonly a few to 10-15 IU of a rapid-acting or regular insulin, taken with a large amount of fast carbohydrate",
+        "frequency": "around training (most often immediately after), on training days",
+        "duration": "during bulking phases, often alongside GH and steroids"
+      }
+    ],
+    "reported_effects": [
+      "Fuller-looking muscles ('pumps'), faster weight gain and better recovery are the effects users describe, typically alongside large gains in body fat",
+      "Weight gain is hard to attribute to insulin alone because it is almost always combined with steroids, GH and very high calorie intake"
+    ],
+    "reported_side_effects": [
+      "Severe hypoglycaemia is the headline risk: coroners' and case reports describe bodybuilders found unconscious or dead after injecting insulin, including a 31-year-old found in a Sydney gym bathroom in 2017 who died of hypoglycaemic brain injury",
+      "Hypoglycaemia episodes ('going hypo'), with shaking, sweating, confusion, seizures and loss of consciousness, are commonly described even by experienced users, especially when a meal is delayed, after training or during sleep",
+      "Counterfeit or mislabelled insulin bought online, and use without blood-glucose monitoring, are recurring factors in reported deaths",
+      "Substantial fat gain and lumps (lipohypertrophy) at injection sites",
+      "Doctors and other users often do not know someone is using, which delays emergency treatment"
+    ],
+    "sources": "case reports (e.g. Evans & Lynch, Br J Sports Med 2003), coroners' reports, and bodybuilding forums such as r/moreplatesmoredates, 2003-2026; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": [
     "c-peptide",
     "glucagon",

@@ -131,6 +131,43 @@
     "In a study in which bremelanotide was given daily for 8 days, 38% of participants developed patches of darker skin.",
     "After blood-pressure concerns stalled the nasal spray, the drug was reformulated as a fixed-dose subcutaneous autoinjector."
   ],
+  "community": {
+    "summary": "Outside its approved use (Vyleesi, for premenopausal women with low sexual desire), 'PT-141' is bought from research-chemical vendors and self-injected or used as a nasal spray by both men and women as an on-demand libido and erection aid, often as an alternative or add-on to PDE5 inhibitors such as tadalafil.",
+    "protocols": [
+      {
+        "label": "On demand (injection)",
+        "dose": "start at 0.5-1 mg to test for nausea; typical 1-2 mg (the approved product is 1.75 mg)",
+        "frequency": "subcutaneous, about 45 minutes to a few hours before sexual activity; no more than once in 24 hours",
+        "duration": "as needed; most limit use to a few times a month"
+      },
+      {
+        "label": "Nasal spray",
+        "dose": "commonly quoted as roughly 1-2 mg per dose, though actual dose per spray is uncertain",
+        "frequency": "before sexual activity",
+        "duration": "as needed"
+      },
+      {
+        "label": "Stack with a PDE5 inhibitor",
+        "dose": "PT-141 0.5-1 mg plus a low dose of tadalafil or sildenafil",
+        "frequency": "on demand",
+        "duration": "as needed"
+      }
+    ],
+    "reported_effects": [
+      "Increased desire and arousal, and stronger or easier erections in men, typically starting within one to a few hours and lasting into the next day",
+      "Reports are mixed: some describe it as dramatic, while many feel only nausea or nothing at all",
+      "Users note it works on desire rather than blood flow, which is why it is stacked with PDE5 inhibitors"
+    ],
+    "reported_side_effects": [
+      "Nausea, very commonly reported and sometimes with vomiting, mainly in the first hour; users dose low first, lie down or take an antiemetic",
+      "Facial flushing, headache and yawning",
+      "Darkening of the face, gums or freckles with frequent use (as on the approved label)",
+      "A transient rise in blood pressure, which deters people with hypertension",
+      "Spontaneous or prolonged erections at higher doses"
+    ],
+    "sources": "r/Peptides, r/moreplatesmoredates, r/erectiledysfunction and r/Testosterone threads, 2018-2026; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["melanotan-ii", "afamelanotide", "setmelanotide", "tirzepatide"],
   "references": [
     {"title": "PT-141: a melanocortin agonist for the treatment of sexual dysfunction", "authors": "Molinoff PB, Shadiack AM, Earle D, Diamond LE, Quon CY", "journal": "Ann N Y Acad Sci", "year": 2003, "url": "https://pubmed.ncbi.nlm.nih.gov/12851303/"},

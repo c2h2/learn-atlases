@@ -113,6 +113,43 @@
     "'CJC-1295 without DAC' is not a form of CJC-1295 but a separate peptide, Mod GRF 1–29, with no published human studies.",
     "FDA's advisory committee voted separately on five salt and DAC forms in December 2024 and rejected all of them."
   ],
+  "community": {
+    "summary": "Self-injected by bodybuilders and biohackers to raise growth hormone, almost always alongside a GHRP such as ipamorelin. Vendors sell two different molecules under the name: CJC-1295 with DAC (long-acting, dosed weekly) and CJC-1295 without DAC, which is really modified GRF 1-29 (half-life about 30 minutes, dosed with each GHRP injection). Most community users favour the no-DAC form, saying it keeps GH release pulsatile.",
+    "protocols": [
+      {
+        "label": "No DAC (mod GRF 1-29) + ipamorelin, bedtime",
+        "dose": "100 mcg mod GRF 1-29 (about 1 mcg/kg) plus 100-300 mcg ipamorelin in the same syringe",
+        "frequency": "once daily before bed, subcutaneous, fasted (2-3 hours after eating; no food for 20-30 minutes after)",
+        "duration": "8-12 weeks, often 5 days on / 2 off; then a 4-week or longer break"
+      },
+      {
+        "label": "No DAC, split dosing",
+        "dose": "100 mcg per injection, each paired with a GHRP (ipamorelin, GHRP-2 or GHRP-6)",
+        "frequency": "2-3 times daily on an empty stomach (waking, post-workout, before bed)",
+        "duration": "8-12 weeks"
+      },
+      {
+        "label": "With DAC",
+        "dose": "1-2 mg per week",
+        "frequency": "one or two injections a week, subcutaneous",
+        "duration": "8-12 weeks; some run it alone, others add a daily GHRP"
+      }
+    ],
+    "reported_effects": [
+      "Deeper sleep and vivid dreams within the first couple of weeks are the most common reports with the bedtime stack",
+      "Better recovery, skin and gradual fat loss over months; effects are described as subtle, and many report nothing noticeable",
+      "Users who check bloodwork report a rise in IGF-1, which DAC users say is larger and more sustained"
+    ],
+    "reported_side_effects": [
+      "A head rush, warmth and red face for 5-15 minutes after injecting no-DAC with a GHRP ('the CJC flush'), very commonly reported",
+      "Water retention, swollen hands and numbness or tingling in the fingers, more often with DAC",
+      "Lethargy or tiredness the day after DAC injections, and complaints that DAC causes a constant 'GH bleed' rather than pulses",
+      "Injection-site redness, itching or welts",
+      "Confusion over vial labels: buyers often cannot tell which form they received"
+    ],
+    "sources": "r/Peptides, r/moreplatesmoredates, r/Testosterone and older bodybuilding forums, 2012-2026; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["sermorelin", "tesamorelin", "ipamorelin", "ghrp-2", "ghrp-6", "semaglutide"],
   "references": [
     {"title": "Human growth hormone-releasing factor (hGRF)1-29-albumin bioconjugates activate the GRF receptor on the anterior pituitary in rats: identification of CJC-1295 as a long-lasting GRF analog", "authors": "Jetté L, Léger R, Thibaudeau K, et al.", "journal": "Endocrinology", "year": 2005, "url": "https://pubmed.ncbi.nlm.nih.gov/15817669/"},

@@ -61,6 +61,7 @@
       "reference": {"name": "GHRP-6", "note": "First-generation secretagogue", "slug": "ghrp-6"},
       "members": [
         {"slug": "ghrp-2"},
+        {"slug": "hexarelin"},
         {"slug": "ipamorelin", "tokens": ["Aib","H","dNal","-","f","K"]}
       ]
     },

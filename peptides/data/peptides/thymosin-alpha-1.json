@@ -391,6 +391,47 @@
     "Thymosin α1 and thymosin β4 share a name only for historical reasons: both were numbered by their migration in the original calf-thymus fraction 5, and they are structurally and functionally unrelated.",
     "The 2025 TESTS trial is the only large, double-blind, placebo-controlled phase 3 ever run on the peptide — and it found no effect on mortality."
   ],
+  "community": {
+    "summary": "Used at home as an 'immune support' peptide by people with recurrent infections, long COVID, chronic Lyme disease or mould illness, and by healthy biohackers in cold season. Some get it from research-peptide vendors; others got it from compounding clinics before the FDA restricted its compounding in 2023, or buy Zadaxin abroad. Users mostly copy the Zadaxin regimen.",
+    "protocols": [
+      {
+        "label": "Zadaxin-style",
+        "dose": "1.5-1.6 mg",
+        "frequency": "twice weekly, subcutaneous",
+        "duration": "8-12 weeks, sometimes longer"
+      },
+      {
+        "label": "Acute illness",
+        "dose": "1.5-1.6 mg",
+        "frequency": "daily for 3-5 days, then twice weekly",
+        "duration": "2-4 weeks"
+      },
+      {
+        "label": "Daily low dose",
+        "dose": "300-500 mcg",
+        "frequency": "once daily, subcutaneous",
+        "duration": "4-8 weeks"
+      },
+      {
+        "label": "Immune stack",
+        "dose": "thymosin α1 1.5 mg twice a week plus LL-37 100-200 mcg daily",
+        "frequency": "subcutaneous",
+        "duration": "4-12 weeks"
+      }
+    ],
+    "reported_effects": [
+      "Fewer or shorter colds and respiratory infections is the most common claim",
+      "Less fatigue and post-viral symptoms in some long-COVID and Lyme users, usually alongside other treatment",
+      "Many say they felt nothing day to day, which is expected for an immune-modulating drug and makes benefit hard to judge"
+    ],
+    "reported_side_effects": [
+      "Generally described as well tolerated",
+      "Mild redness or discomfort at the injection site",
+      "Short-lived fatigue, aches or a flu-like feeling in the first days, which users attribute to immune activation"
+    ],
+    "sources": "r/Peptides, r/covidlonghaulers, r/Lyme, r/CIRS and r/Biohackers threads, 2020-2026, plus community protocol aggregators; self-reports, unverified, product purity unknown",
+    "updated": "2026-10"
+  },
   "related": [
     "tb-500",
     "ll-37",

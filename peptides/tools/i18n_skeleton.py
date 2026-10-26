@@ -37,9 +37,12 @@ SPEC = {
     "dosing": [{"regimen": str}],
     "safety": {"common": [str], "serious": [str], "warnings": [str], "notes": str},
     "market": {"note": str, "figures": [{"label": str, "value": str, "source": str}]},
+    "community": {"summary": str, "sources": str,
+                  "protocols": [{"label": str, "dose": str, "frequency": str, "duration": str}],
+                  "reported_effects": [str], "reported_side_effects": [str]},
 }
 # fields that may legitimately stay in Latin script (names, codes, short technical labels)
-MAY_STAY = {"name", "short", "value", "source"}
+MAY_STAY = {"name", "short", "value", "source", "dose"}
 CJK = re.compile(r"[㐀-鿿]")
 
 

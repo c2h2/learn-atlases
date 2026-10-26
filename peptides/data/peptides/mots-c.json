@@ -119,6 +119,36 @@
     "A single-letter change common in Northeast Asia (K14Q) weakens the peptide's activity in mice and has been linked to type 2 diabetes risk in men.",
     "MOTS-c was named on WADA's Prohibited List before any controlled trial of the peptide itself had reported results."
   ],
+  "community": {
+    "summary": "Used by biohackers, endurance athletes and longevity enthusiasts as a hoped-for 'exercise mimetic' for energy, endurance and metabolic health. It is bought as research powder and self-injected, despite being banned in sport by WADA.",
+    "protocols": [
+      {
+        "label": "Weekly split dosing",
+        "dose": "5-10 mg per week",
+        "frequency": "split into 2-3 subcutaneous injections, often before training",
+        "duration": "4-10 weeks, then a break"
+      },
+      {
+        "label": "Daily low dose",
+        "dose": "about 1 mg per day (some start at 200-500 mcg and work up)",
+        "frequency": "daily, or 5 days on and 2 off",
+        "duration": "4-8 weeks"
+      }
+    ],
+    "reported_effects": [
+      "More energy and endurance and better recovery from training are the most common claims",
+      "Some report fat loss or better fasting glucose and insulin on bloodwork, usually alongside diet and exercise changes",
+      "Many report no noticeable effect, and the high price of vials is a frequent complaint"
+    ],
+    "reported_side_effects": [
+      "Injection-site pain, burning, redness or welts, reported often enough to be a recurring thread topic",
+      "Flushing, a racing heart or feeling jittery shortly after injecting",
+      "Insomnia when taken late in the day",
+      "Fatigue or feeling flat in some users"
+    ],
+    "sources": "r/Peptides, r/Biohackers and r/moreplatesmoredates threads and forum aggregations, 2021-2026; self-reports, unverified; product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["humanin", "ss-31", "epitalon", "bpc-157", "tb-500", "kpv", "aod-9604"],
   "references": [
     {"title": "The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance", "authors": "Lee C, Zeng J, Drew BG, et al.", "journal": "Cell Metab", "year": 2015, "url": "https://pubmed.ncbi.nlm.nih.gov/25738459/"},

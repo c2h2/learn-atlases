@@ -293,6 +293,43 @@
     "On WADA's 2026 list BPC-157 is one of only a few substances named as examples in the catch-all S0 'non-approved substances' class, alongside 2,4-dinitrophenol (DNP).",
     "In 2017 the Sports Medicine Research and Testing Laboratory in Salt Lake City identified BPC 157 in confiscated vials and validated a urine test for it."
   ],
+  "community": {
+    "summary": "The most discussed 'healing' peptide on Reddit. Users buy lyophilised vials from research-chemical vendors and self-inject it for tendon, ligament and joint injuries, or take it by mouth for gut complaints, often stacked with TB-500.",
+    "protocols": [
+      {
+        "label": "Injury / joint pain",
+        "dose": "250-500 mcg per day (some go to 750-1,000 mcg)",
+        "frequency": "once or split twice daily, subcutaneous, often near the injured area",
+        "duration": "4-6 weeks, sometimes 8-12; then a break of similar length"
+      },
+      {
+        "label": "Gut (reflux, IBS, gastritis)",
+        "dose": "250-500 mcg",
+        "frequency": "once or twice daily, by mouth (capsules or the injectable solution swallowed) on an empty stomach",
+        "duration": "2-8 weeks"
+      },
+      {
+        "label": "'Wolverine' stack with TB-500",
+        "dose": "BPC-157 250-500 mcg/day plus TB-500 2-5 mg per week",
+        "frequency": "BPC daily; TB-500 split into 2 injections a week",
+        "duration": "4-8 weeks"
+      }
+    ],
+    "reported_effects": [
+      "Less tendon and joint pain within one to three weeks is the most common claim (tennis elbow, Achilles, rotator cuff, knee); many posters cannot separate it from rest and physiotherapy",
+      "Calmer gut, less reflux or bloating when taken orally",
+      "A sizeable minority report no noticeable effect at all, which threads often attribute to underdosed or fake vials"
+    ],
+    "reported_side_effects": [
+      "Redness, itching or a lump at the injection site",
+      "Nausea, dizziness, light-headedness or flushing shortly after injecting",
+      "Fatigue, low mood or flattened motivation ('BPC anhedonia'), reported often enough to have its own threads; usually said to resolve after stopping",
+      "Headaches and disturbed sleep",
+      "Recurring worry about growth-promoting effects (angiogenesis) in anyone with a history of cancer"
+    ],
+    "sources": "r/Peptides, r/moreplatesmoredates, r/Biohackers and r/tendonitis threads, 2021-2026; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": [
     "tb-500",
     "kpv",

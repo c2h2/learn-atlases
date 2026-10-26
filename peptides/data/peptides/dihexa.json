@@ -1,0 +1,446 @@
+{
+  "slug": "dihexa",
+  "name": "Dihexa",
+  "aliases": [
+    "PNB-0408",
+    "ATH-1001",
+    "N-hexanoic-Tyr-Ile-(6) aminohexanoic amide",
+    "Hexanoyl-Tyr-Ile-Ahx-NH2"
+  ],
+  "category": "neuro",
+  "drug_class": "Angiotensin IV analogue; hepatocyte growth factor (HGF)/MET positive modulator",
+  "subclass": "Capped, metabolically stabilised dipeptide derived from the N-terminus of Nle1-angiotensin IV",
+  "status": "research",
+  "status_note": "Never approved or formally tested in humans as dihexa itself; its phosphate prodrug fosgonimeton failed phase 2 and phase 2/3 Alzheimer's trials, and dihexa circulates only as a grey-market nootropic.",
+  "evidence": 2,
+  "evidence_note": "Dihexa itself has only rodent and cell data, and two of the four founding Washington State University papers were retracted in 2025 for image manipulation. The only human data come from its prodrug fosgonimeton (ATH-1017), whose randomised trials in Alzheimer's disease (ACT-AD, LIFT-AD) and Parkinson's/Lewy body dementia (SHAPE) all missed their primary endpoints.",
+  "tagline": "A capped angiotensin IV fragment sold as a nootropic; its prodrug failed in Alzheimer's",
+  "summary": "Dihexa is a small, chemically capped peptide derived from angiotensin IV, made at Washington State University and reported in 2012 to restore learning in rats and to drive new synapse formation by boosting hepatocyte growth factor (HGF) signalling through its receptor MET. Its phosphate prodrug, fosgonimeton, was developed by Athira Pharma for Alzheimer's disease but failed its phase 2/3 trial in 2024, after the company's founder was found to have altered images in the original dihexa papers. Dihexa itself has never been tested in a human trial, yet it is sold online as a cognitive enhancer.",
+  "overview": [
+    "Angiotensin IV — the six-residue fragment Val-Tyr-Ile-His-Pro-Phe, made when angiotensin II is trimmed at both ends — was long thought to be an inactive breakdown product. In 1992 Joseph Harding, John (Jay) Wright and colleagues at Washington State University (WSU) described a distinct binding site for it in the brain, and over the following two decades their group and others reported that angiotensin IV and its analogues improve learning and memory in rodents. The peptides themselves were impractical drugs: they were destroyed within minutes and did not cross the gut or the blood–brain barrier.",
+    "The WSU group concluded that the procognitive activity of norleucine1-angiotensin IV resided in its first three residues, Nle-Tyr-Ile, and set out to make that fragment drug-like. Replacing norleucine with a hexanoyl cap and adding a 6-aminohexanoic amide tail produced N-hexanoic-Tyr-Ile-(6) aminohexanoic amide — dihexa. In a paper published online in October 2012 they reported that it was stable, orally active and brain-penetrant in rats, reversed scopolamine-induced and age-related deficits in the Morris water maze, and stimulated formation of dendritic spines and synapses in cultured neurons. WSU's press release claimed that it was seven orders of magnitude more potent than brain-derived neurotrophic factor in that assay.",
+    "WSU licensed the technology in 2011 to M3 Biotechnology, a Seattle start-up co-founded by Harding and run by his former doctoral student Leen Kawas; the company became Athira Pharma. Athira developed fosgonimeton (ATH-1017, originally NDX-1017), the tyrosine-phosphate prodrug of dihexa, as a daily subcutaneous injection, and took it through a phase 1 study from 2017 and then three randomised trials. In 2021 an internal investigation found that Kawas had altered images in her doctoral dissertation and in four JPET papers on which the dihexa story rested; she resigned, two of the papers were retracted in 2025, and Athira paid about $4 million to settle False Claims Act allegations over NIH grant applications. All of the fosgonimeton trials missed their primary endpoints, the last in September 2024, and the company has since moved on to other programmes and renamed itself LeonaBio.",
+    "Long before the clinical failures, dihexa had acquired a following in nootropic and biohacking communities, who buy it as powder, capsules or transdermal solutions from research-chemical vendors and take it for memory, focus and recovery from brain injury. None of that use is supported by human data, and because the proposed mechanism is potentiation of HGF/MET — a pathway that drives the growth and spread of many cancers — the unknown long-term safety is a recurring concern."
+  ],
+  "mechanism": [
+    "The WSU group's account is that dihexa binds HGF with high affinity and acts as a mimic of the 'hinge' region of HGF that allows it to dimerise, so that it promotes HGF dimerisation and thus activation of MET, the HGF receptor tyrosine kinase. MET activation in hippocampal neurons drives dendritic spine growth and synaptogenesis, which was proposed to explain the cognitive effects. A selective MET antagonist was reported to block both the synaptogenic and the procognitive effects. However, the key papers for this mechanism (Kawas 2012, Benoist 2014) were retracted in 2025 after WSU's misconduct findings, so the binding data should be regarded as unconfirmed.",
+    "Independent support is limited but not absent. Athira's later work on fosgonimeton and its active metabolite reported positive modulation of HGF/MET signalling, neurotrophic and anti-inflammatory effects in cell culture and rescue of cognition in rodent dementia models; groups in China and the US have reported benefits of dihexa in APP/PS1 Alzheimer's mice (via PI3K/AKT signalling), rat sciatic nerve injury, a Huntington's-like toxin model and repeated mild traumatic brain injury. Dihexa is also used at the bench as a small-molecule substitute for HGF in protocols that turn human pluripotent stem cells into hepatocytes.",
+    "Angiotensin IV was originally thought to act through a dedicated 'AT4 receptor', which in 2001 was identified as the enzyme insulin-regulated aminopeptidase (IRAP). The WSU group later argued that the cognitive effects of angiotensin IV analogues are better explained by the HGF/MET system than by IRAP inhibition."
+  ],
+  "origin": "Synthetic: derived from the N-terminal tripeptide (Nle-Tyr-Ile) of the angiotensin IV analogue norleucine1-angiotensin IV, with the norleucine replaced by a hexanoyl cap and a 6-aminohexanoic amide added at the C-terminus",
+  "discovery": {
+    "year": 2012,
+    "by": "Joseph W. Harding, John W. Wright, Aaron T. McCoy and colleagues",
+    "where": "Washington State University, Pullman, Washington, USA",
+    "note": "Reported in the Journal of Pharmacology and Experimental Therapeutics (published online 10 October 2012); the underlying patent application claims priority from 2011."
+  },
+  "first_human_year": null,
+  "first_approval": null,
+  "developer": "Washington State University; licensed to M3 Biotechnology (later Athira Pharma, renamed LeonaBio in 2026), which developed the prodrug fosgonimeton",
+  "brands": [],
+  "analogs": [
+    {
+      "name": "Fosgonimeton (ATH-1017, NDX-1017)",
+      "note": "Dihexa with a phosphate on the tyrosine hydroxyl: a water-soluble prodrug for daily subcutaneous injection. Tested by Athira in phase 1, phase 2 (ACT-AD, SHAPE) and phase 2/3 (LIFT-AD) trials; none met its primary endpoint."
+    },
+    {
+      "name": "Angiotensin IV",
+      "note": "Val-Tyr-Ile-His-Pro-Phe, the angiotensin II(3–8) fragment whose procognitive effects in rodents started the programme."
+    },
+    {
+      "name": "Norleucine1-angiotensin IV (Nle1-AngIV)",
+      "note": "The more potent analogue whose first three residues, Nle-Tyr-Ile, were found to carry the procognitive activity and became the template for dihexa."
+    },
+    {
+      "name": "ATH-1105",
+      "note": "Athira's later small-molecule HGF/MET positive modulator, developed for amyotrophic lateral sclerosis after a phase 1 study in healthy volunteers."
+    }
+  ],
+  "targets": [
+    {
+      "name": "Hepatocyte growth factor",
+      "gene": "HGF",
+      "uniprot": "P14210",
+      "action": "Reported to bind HGF and promote its dimerisation (binding data from papers retracted in 2025)"
+    },
+    {
+      "name": "Hepatocyte growth factor receptor (MET, c-Met)",
+      "gene": "MET",
+      "uniprot": "P08581",
+      "action": "Indirect potentiation of HGF-driven MET activation; synaptogenic and procognitive effects reported to be blocked by a MET antagonist"
+    },
+    {
+      "name": "Insulin-regulated aminopeptidase (the 'AT4 receptor')",
+      "gene": "LNPEP",
+      "uniprot": "Q9UIQ6",
+      "action": "The proposed angiotensin IV binding site; not thought by the developers to mediate dihexa's effects"
+    }
+  ],
+  "sequence": {
+    "chains": [
+      {
+        "name": "Peptide",
+        "residues": [
+          "Y",
+          "I",
+          "bAla"
+        ],
+        "n_term": "hexanoyl",
+        "c_term": "NH2"
+      }
+    ],
+    "numbering_offset": 1,
+    "cyclic": false,
+    "bridges": [],
+    "modifications": [
+      {
+        "at": "A1",
+        "type": "other",
+        "label": "N-terminal hexanoyl cap (C6 acyl) replacing the norleucine of Nle1-angiotensin IV; it removes the free amine and raises lipophilicity",
+        "short": "hexanoyl"
+      },
+      {
+        "at": "A3",
+        "type": "nonnatural",
+        "label": "6-Aminohexanoic acid (Ahx, ε-aminocaproic acid) spacer; drawn with the β-alanine token, the closest available ω-amino acid, which has two fewer methylene groups",
+        "short": "Ahx"
+      },
+      {
+        "at": "A3",
+        "type": "amidation",
+        "label": "C-terminal primary amide on the aminohexanoic acid",
+        "short": "NH2"
+      }
+    ],
+    "notation": "Hexanoyl-Tyr-Ile-Ahx-NH2",
+    "note": "Only Tyr and Ile are α-amino acids; they correspond to Tyr2 and Ile3 of angiotensin IV (Val-Tyr-Ile-His-Pro-Phe), hence the numbering offset of 1. The third unit is 6-aminohexanoic acid, an ω-amino acid shown here with the β-alanine token because the atlas has no Ahx token. In fosgonimeton the tyrosine hydroxyl carries a phosphate."
+  },
+  "formula": "C27H44N4O5",
+  "mw": 504.7,
+  "half_life": "Not established in humans; dihexa has never had a human pharmacokinetic study",
+  "half_life_hours": null,
+  "routes": [
+    "Oral, intraperitoneal and intracerebroventricular in rat studies",
+    "Grey-market use: oral or sublingual powder and capsules, transdermal solutions, occasionally injection",
+    "Prodrug fosgonimeton: daily subcutaneous injection in clinical trials"
+  ],
+  "structure": {
+    "pdb": [],
+    "pubchem_cid": 129010512,
+    "notes": "No experimental structure of dihexa, or of dihexa bound to HGF or MET, has been deposited in the PDB, so the model shown here is predicted. At two α-amino acids plus two flexible six-carbon units, it behaves more like a small-molecule drug than a folded peptide."
+  },
+  "ids": {
+    "pubchem_cid": 129010512,
+    "cas": "1401708-83-5",
+    "unii": "9WYX65A5C2"
+  },
+  "wiki": "Dihexa",
+  "queries": {
+    "pubmed": "((dihexa[tiab] OR fosgonimeton[tiab] OR \"ATH-1017\"[tiab] OR \"NDX-1017\"[tiab] OR \"PNB-0408\"[tiab]) AND 2010:3000[dp]) NOT (monolayer*[tiab] OR \"lipid membrane\"[tiab] OR \"lipid-membrane\"[tiab])",
+    "ctgov": "dihexa OR fosgonimeton OR ATH-1017 OR NDX-1017"
+  },
+  "uses": {
+    "approved": [],
+    "investigational": [
+      {
+        "use": "Alzheimer's disease (as the prodrug fosgonimeton)",
+        "stage": "Phase 2/3 - failed (2024)",
+        "detail": "LIFT-AD randomised people with mild-to-moderate Alzheimer's disease to daily subcutaneous fosgonimeton 40 mg or placebo for 26 weeks; it missed its primary endpoint (a global statistical test combining ADAS-Cog11 and ADCS-ADL23) and its secondary endpoints. The earlier phase 2 ACT-AD trial had also failed in 2022."
+      },
+      {
+        "use": "Parkinson's disease dementia and dementia with Lewy bodies (fosgonimeton)",
+        "stage": "Phase 2 - primary endpoint missed (2023)",
+        "detail": "SHAPE stopped enrolling at 28 of a planned 75 participants; the composite primary endpoint was not met, and the company highlighted exploratory cognitive signals in the 40 mg arm."
+      },
+      {
+        "use": "Neurological injury and neurodegeneration",
+        "stage": "Preclinical",
+        "detail": "Rodent studies report benefits of dihexa in an APP/PS1 Alzheimer's mouse model, sciatic nerve injury, a Huntington's-like toxin model and repeated mild traumatic brain injury, and protection of zebrafish hair cells from aminoglycoside damage."
+      }
+    ],
+    "off_label": [
+      {
+        "use": "Nootropic and 'neuroregeneration' use",
+        "detail": "Bought from research-chemical vendors as powder, capsules or transdermal solutions and taken for memory, verbal fluency and focus, and by some people after concussion or for a relative with dementia.",
+        "evidence": "There is no human study of dihexa itself. The rat data come from a laboratory whose foundational papers carry expressions of concern or have been retracted, and the closest human evidence — the fosgonimeton trials in Alzheimer's and Lewy body dementia — showed no significant cognitive benefit. Product identity and purity are unverified."
+      }
+    ]
+  },
+  "history": [
+    {
+      "year": 1992,
+      "title": "A brain binding site for angiotensin IV",
+      "detail": "Harding, Wright and colleagues at Washington State University described a distinct binding site for angiotensin II(3–8) — angiotensin IV — in guinea pig hippocampus and other tissues, starting the programme that led to dihexa.",
+      "kind": "science"
+    },
+    {
+      "year": 2001,
+      "date": "2001-12",
+      "title": "'AT4 receptor' identified as IRAP",
+      "detail": "Albiston and colleagues in Melbourne reported that the angiotensin IV binding site is the enzyme insulin-regulated aminopeptidase.",
+      "kind": "science"
+    },
+    {
+      "year": 2011,
+      "date": "2011-12",
+      "title": "WSU licenses the technology to M3 Biotechnology",
+      "detail": "WSU granted an exclusive licence to M3 Biotechnology, a Seattle start-up co-founded by Harding and led by his doctoral student Leen Kawas; the company later became Athira Pharma.",
+      "kind": "market"
+    },
+    {
+      "year": 2012,
+      "date": "2012-03",
+      "title": "Angiotensin IV analogues linked to HGF/MET",
+      "detail": "Kawas and colleagues proposed in JPET that angiotensin IV analogues act through hepatocyte growth factor and its receptor MET. The paper was retracted in April 2025.",
+      "kind": "science"
+    },
+    {
+      "year": 2012,
+      "date": "2012-10",
+      "title": "Dihexa described",
+      "detail": "McCoy and colleagues reported dihexa as an oral, brain-penetrant analogue that reversed memory deficits in scopolamine-treated and aged rats; WSU publicised it as a prospective Alzheimer's drug.",
+      "kind": "discovery"
+    },
+    {
+      "year": 2014,
+      "date": "2014-11",
+      "title": "Synaptogenic effects tied to MET",
+      "detail": "Benoist and colleagues reported that dihexa binds HGF with high affinity and that its effects depend on MET activation. The paper was retracted in April 2025.",
+      "kind": "science"
+    },
+    {
+      "year": 2015,
+      "date": "2015-06-09",
+      "title": "US patent granted to WSU",
+      "detail": "US patent 9,051,351, 'Hepatocyte growth factor mimics as therapeutic agents', naming Harding, Wright, Benoist, Kawas and Wayman as inventors, was granted to Washington State University.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2017,
+      "date": "2017-10",
+      "title": "Prodrug enters human testing",
+      "detail": "A phase 1 study of NDX-1017 (later fosgonimeton), the phosphate prodrug of dihexa, began in healthy volunteers and people with Alzheimer's disease; it reported good tolerability over 9 days.",
+      "kind": "trial"
+    },
+    {
+      "year": 2020,
+      "date": "2020-09",
+      "title": "Phase 2/3 LIFT-AD trial starts",
+      "detail": "Athira began LIFT-AD of daily subcutaneous fosgonimeton in mild-to-moderate Alzheimer's disease, alongside the smaller phase 2 ACT-AD trial.",
+      "kind": "trial"
+    },
+    {
+      "year": 2021,
+      "date": "2021-10",
+      "title": "Founder found to have altered images",
+      "detail": "An Athira special committee found that CEO Leen Kawas had altered images in her 2011 dissertation and four JPET papers from 2011–2014; she resigned, and the journal had placed expressions of concern on the papers in September 2021.",
+      "kind": "safety"
+    },
+    {
+      "year": 2022,
+      "date": "2022-06-22",
+      "title": "ACT-AD phase 2 fails",
+      "detail": "Fosgonimeton missed its primary endpoint (ERP P300 latency) and its cognitive secondary endpoints at 26 weeks; Athira pointed to a subgroup not taking acetylcholinesterase inhibitors.",
+      "kind": "trial"
+    },
+    {
+      "year": 2023,
+      "date": "2023-09-29",
+      "title": "FDA flags dihexa for compounding",
+      "detail": "The FDA placed dihexa acetate in 503A Category 2, substances raising significant safety risks, noting that it had identified no human exposure data.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2023,
+      "date": "2023-12",
+      "title": "SHAPE trial in Lewy body dementias",
+      "detail": "The phase 2 trial of fosgonimeton in Parkinson's disease dementia and dementia with Lewy bodies, cut short at 28 participants, did not meet its primary endpoint.",
+      "kind": "trial"
+    },
+    {
+      "year": 2024,
+      "date": "2024-09-03",
+      "title": "LIFT-AD phase 2/3 fails",
+      "detail": "Fosgonimeton did not improve the combined cognition-and-function endpoint, or either component, versus placebo; Athira's shares fell by about 70% and it paused development.",
+      "kind": "trial"
+    },
+    {
+      "year": 2025,
+      "date": "2025-01-06",
+      "title": "Athira settles False Claims Act case",
+      "detail": "The US Justice Department announced that Athira would pay about $4.07 million to resolve allegations that it failed to disclose the altered research to NIH in grant applications.",
+      "kind": "regulatory"
+    },
+    {
+      "year": 2025,
+      "date": "2025-04",
+      "title": "Founding papers retracted",
+      "detail": "JPET retracted the 2012 Kawas paper and the 2014 Benoist paper on which the HGF/MET mechanism of dihexa rested; the 2013 dihexa paper retains its expression of concern.",
+      "kind": "safety"
+    },
+    {
+      "year": 2026,
+      "date": "2026-01-09",
+      "title": "Athira becomes LeonaBio",
+      "detail": "After acquiring rights to the breast-cancer drug lasofoxifene, Athira Pharma renamed itself LeonaBio.",
+      "kind": "market"
+    },
+    {
+      "year": 2026,
+      "date": "2026-04",
+      "title": "Dihexa leaves FDA Category 2",
+      "detail": "In its April 2026 update the FDA moved dihexa acetate to the list of nominations withdrawn by their nominators, removing it from Category 2 without placing it on the 503A bulks list.",
+      "kind": "regulatory"
+    }
+  ],
+  "regulatory": [
+    {
+      "region": "US",
+      "status": "not-approved",
+      "detail": "Not an approved drug, and fosgonimeton was never submitted for approval. Dihexa acetate was placed in FDA's 503A Category 2 (significant safety risks) on 29 September 2023 and moved to the withdrawn-nominations list in April 2026; it is not on the list of bulk substances pharmacies may compound. Sold online labelled for research use."
+    },
+    {
+      "region": "EU",
+      "status": "not-approved",
+      "detail": "No marketing authorisation for dihexa; available only through unregulated online supply."
+    },
+    {
+      "region": "WADA",
+      "status": "prohibited",
+      "detail": "Not named on the Prohibited List, but as a pharmacological substance without approval for human therapeutic use anywhere it falls under section S0 (non-approved substances), prohibited at all times."
+    }
+  ],
+  "pk": {
+    "half_life": "No human data for dihexa. Rat studies reported high metabolic stability compared with angiotensin IV analogues.",
+    "bioavailability": "Reported orally active and blood–brain barrier permeant in rats (McCoy 2013, a paper under an expression of concern)",
+    "metabolism": "The prodrug fosgonimeton is dephosphorylated in the body to the active metabolite; human data on dihexa's own metabolism have not been published"
+  },
+  "dosing": null,
+  "dosing_note": "No approved human dose exists. Fosgonimeton was given in trials at 40 or 70 mg once daily by subcutaneous injection, but that is a different, water-soluble prodrug and no dose of it proved effective; the doses circulating for dihexa itself have no clinical basis.",
+  "safety": {
+    "common": [],
+    "serious": [],
+    "warnings": [
+      "No human safety data exist for dihexa itself; the FDA stated in 2023 that it had identified no human exposure data",
+      "Its proposed mechanism is potentiation of HGF/MET signalling, a pathway that drives growth, invasion and metastasis in many cancers; the long-term cancer risk of chronic use is unknown",
+      "Grey-market products are unregulated: identity, purity, dose and the solvents used in transdermal preparations are unverified"
+    ],
+    "notes": "In the fosgonimeton trials, which deliver dihexa as a prodrug, the drug was generally tolerated over 26 weeks: in LIFT-AD serious adverse events were similar to placebo (4.2% vs 6.9%), but more participants stopped treatment because of adverse events (14.2% vs 4.6%), mostly injection-site reactions. Those data cover older people with dementia over six months, not healthy people taking it indefinitely."
+  },
+  "market": null,
+  "facts": [
+    "WSU's 2012 announcement claimed dihexa was seven orders of magnitude more potent than brain-derived neurotrophic factor at building new synapses in cultured neurons.",
+    "Fosgonimeton is simply dihexa with a phosphate on its tyrosine, a prodrug trick that makes it soluble enough to inject.",
+    "Two of the four papers on which the dihexa programme was built were retracted in 2025, after the company's founder was found to have altered images in them.",
+    "Stem-cell biologists use dihexa as a cheap small-molecule substitute for HGF when turning human pluripotent stem cells into liver cells."
+  ],
+  "community": {
+    "summary": "A niche but persistent nootropic on Reddit and older forums such as LongeCity. Users buy powder, capsules or ready-made transdermal solutions from research-chemical vendors and take it for memory, word-finding and focus, or after concussion; it is one of the few 'peptides' in these circles usually taken by mouth or through the skin rather than injected.",
+    "protocols": [
+      {
+        "label": "Oral or sublingual",
+        "dose": "5-20 mg per day; many start around 5-10 mg, a few go to 20-30 mg",
+        "frequency": "once daily, swallowed or held under the tongue",
+        "duration": "a few weeks, often 4-8, then a break of similar length; some take it only for a short course"
+      },
+      {
+        "label": "Transdermal",
+        "dose": "similar mg amounts, usually dissolved in DMSO or bought as a premixed solution",
+        "frequency": "once daily, rubbed on thin skin such as the inner forearm",
+        "duration": "4-8 weeks, then a break"
+      }
+    ],
+    "reported_effects": [
+      "Better verbal fluency, word recall and 'mental clarity' are the most common claims, often described as building gradually over one to several weeks rather than an acute effect",
+      "Some describe effects persisting for weeks after stopping, which posters attribute to new synapses; this is untested",
+      "Many report no noticeable effect at all, which threads attribute variously to fake or underdosed powder, poor oral absorption or the compound simply not working"
+    ],
+    "reported_side_effects": [
+      "Headaches, the most frequent complaint",
+      "Anxiety, irritability or overstimulation, and disturbed sleep",
+      "Brain fog, fatigue or flat mood in a minority",
+      "Skin irritation where DMSO-based solutions are applied",
+      "Worry about cancer risk from stimulating HGF/MET dominates many threads, and some posters avoid it for that reason"
+    ],
+    "sources": "r/Nootropics, r/Peptides, r/Biohackers and LongeCity threads, 2014-2026, largely seen through search snippets and secondary forum summaries; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
+  "related": [
+    "semax",
+    "selank",
+    "dsip",
+    "humanin"
+  ],
+  "references": [
+    {
+      "title": "Evaluation of metabolically stabilized angiotensin IV analogs as procognitive/antidementia agents",
+      "authors": "McCoy AT, Benoist CC, Wright JW, Kawas LH, et al.",
+      "journal": "J Pharmacol Exp Ther",
+      "year": 2013,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23055539/"
+    },
+    {
+      "title": "Development of angiotensin IV analogs as hepatocyte growth factor/Met modifiers (retracted 2025)",
+      "authors": "Kawas LH, McCoy AT, Yamamoto BJ, et al.",
+      "journal": "J Pharmacol Exp Ther",
+      "year": 2012,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22129598/"
+    },
+    {
+      "title": "The procognitive and synaptogenic effects of angiotensin IV-derived peptides are dependent on activation of the hepatocyte growth factor/c-met system (retracted 2025)",
+      "authors": "Benoist CC, Kawas LH, Zhu M, et al.",
+      "journal": "J Pharmacol Exp Ther",
+      "year": 2014,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25187433/"
+    },
+    {
+      "title": "Retraction notice to \"The procognitive and synaptogenic effects of angiotensin IV-derived peptides are dependent on activation of the hepatocyte growth factor/c-Met system\"",
+      "authors": "Benoist CC, Kawas LH, Zhu M, et al.",
+      "journal": "J Pharmacol Exp Ther",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40312093/"
+    },
+    {
+      "title": "The development of small molecule angiotensin IV analogs to treat Alzheimer's and Parkinson's diseases",
+      "authors": "Wright JW, Kawas LH, Harding JW",
+      "journal": "Prog Neurobiol",
+      "year": 2015,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25455861/"
+    },
+    {
+      "title": "Evidence that the angiotensin IV (AT(4)) receptor is the enzyme insulin-regulated aminopeptidase",
+      "authors": "Albiston AL, McDowall SG, Matsacos D, et al.",
+      "journal": "J Biol Chem",
+      "year": 2001,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11707427/"
+    },
+    {
+      "title": "Safety, tolerability, pharmacokinetics, and pharmacodynamics of the positive modulator of HGF/MET, fosgonimeton, in healthy volunteers and subjects with Alzheimer's disease: randomized, placebo-controlled, double-blind, phase I clinical trial",
+      "authors": "Hua X, Church K, Walker W, et al.",
+      "journal": "J Alzheimers Dis",
+      "year": 2022,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35180125/"
+    },
+    {
+      "title": "Fosgonimeton in mild-to-moderate Alzheimer's disease",
+      "authors": "Porsteinsson AP, Sabbagh M, Tariot PN, et al.",
+      "journal": "J Alzheimers Dis Rep",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41393340/"
+    },
+    {
+      "title": "AngIV-analog dihexa rescues cognitive impairment and recovers memory in the APP/PS1 mouse via the PI3K/AKT signaling pathway",
+      "authors": "Sun X, Deng Y, Fu X, et al.",
+      "journal": "Brain Sci",
+      "year": 2021,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34827486/"
+    },
+    {
+      "title": "Small-molecule-directed hepatocyte-like cell differentiation of human pluripotent stem cells",
+      "authors": "Mathapati S, Siller R, Impellizzeri AA, et al.",
+      "journal": "Curr Protoc Stem Cell Biol",
+      "year": 2016,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27532814/"
+    }
+  ]
+}

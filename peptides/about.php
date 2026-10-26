@@ -27,6 +27,7 @@ page_head(t('About'), 'about', ['description' => t('Sources, methods and caveats
     <h2 class="section" style="margin-bottom:12px">人工整理的档案</h2>
     <p>全部<?= count($all) ?>种肽都有一份结构化档案：标注了每个非天然残基和修饰的序列、作用靶点、发现经过、共<?= number_format($nEvents) ?>条带日期的历史事件、已获批和在研用途、安全性、各地区监管状态，以及共<?= number_format($nRefs) ?>篇关键参考文献。各类标识符已与PubChem、RCSB PDB、UniProt、ChEMBL和KEGG核对，每篇参考文献都已通过PubMed或Crossref核实。监管事件更新至2026年9月。中文内容由英文档案翻译而来，专有名词以英文原文为准。</p>
     <p><b>状态</b>：获美国FDA或欧洲药品管理局批准的记为“已获批”；仅获其他监管机构（如俄罗斯或日本）批准的记为“区域获批”；处于正式研发阶段、但尚未在任何地方获批的记为“临床试验中”；其余记为“仅限研究”。</p>
+    <p><b>社区报告</b>：对于有人在医疗体系之外自行使用的肽，档案另设“社区报告”一节，概括Reddit等论坛上用户自述的常见剂量、间隔、周期以及感受到的效果和副作用。这部分是对网络讨论的中立归纳，未经核实，与上面经过核对的内容分开呈现，不构成用药建议。</p>
     <p><b>人体证据</b>按1至5分评级：<?php foreach (EVIDENCE as $n => $desc): ?><?= $n ?>分 = <?= h(t($desc)) ?><?= $n < 5 ? '；' : '。' ?><?php endforeach; ?></p>
   </section>
 
@@ -66,6 +67,7 @@ page_head(t('About'), 'about', ['description' => t('Sources, methods and caveats
     <h2 class="section" style="margin-bottom:12px">The curated records</h2>
     <p>Each of the <?= count($all) ?> peptides has a structured record: sequence with every non-natural residue and modification, targets, discovery, <?= number_format($nEvents) ?> dated history events, approved and investigational uses, safety, regulatory status by region and <?= number_format($nRefs) ?> key references. Identifiers were checked against PubChem, RCSB PDB, UniProt, ChEMBL and KEGG, and every reference was checked against PubMed or Crossref. Regulatory events are current to September 2026. A Chinese version of every record is available; where the two differ, the English original prevails.</p>
     <p><b>Status</b> is <i>approved</i> when the FDA or the European Medicines Agency has authorised the peptide, <i>approved regionally</i> when only other regulators have (for example Russia or Japan), <i>in clinical trials</i> when it is under formal development but not approved anywhere, and <i>research only</i> otherwise.</p>
+    <p><b>Community reports</b>: for peptides that people take outside medical care, the record has a separate section summarising what users on forums such as Reddit say they take — typical doses, intervals and cycle lengths — and what effects and side effects they describe. It is a neutral digest of online discussion, unverified and kept apart from the checked fields above, and it is not a dosing recommendation.</p>
     <p><b>Human evidence</b> is scored from 1 to 5: <?php foreach (EVIDENCE as $n => $desc): ?><?= $n ?> = <?= h(lcfirst($desc)) ?><?= $n < 5 ? '; ' : '.' ?><?php endforeach; ?></p>
   </section>
 

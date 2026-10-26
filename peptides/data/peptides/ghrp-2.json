@@ -118,6 +118,37 @@
     "Doping laboratories look for its breakdown product D-Ala-D-2Nal-Ala-OH (AA-3), a tripeptide specific to GHRP-2.",
     "An infusion made healthy men eat about a third more at a buffet meal, a response comparable to ghrelin's."
   ],
+  "community": {
+    "summary": "A staple of the late-2000s and 2010s bodybuilding 'GH peptide' era, self-injected with a GHRH analogue (mod GRF 1-29) to amplify GH pulses. It is now less popular than ipamorelin because users report more cortisol, prolactin and hunger, but it is still sold by research-chemical vendors as the stronger, cheaper option.",
+    "protocols": [
+      {
+        "label": "Saturation dosing with mod GRF 1-29",
+        "dose": "about 1 mcg/kg, typically 100 mcg GHRP-2 plus 100 mcg mod GRF 1-29 in the same syringe",
+        "frequency": "2-3 times daily, subcutaneous, on an empty stomach (waking, post-workout, before bed); no food for 20-30 minutes after",
+        "duration": "8-12 weeks, then a break"
+      },
+      {
+        "label": "Bedtime only",
+        "dose": "100 mcg (some 150-200 mcg)",
+        "frequency": "once before bed, fasted, usually with mod GRF 1-29",
+        "duration": "8-12 weeks"
+      }
+    ],
+    "reported_effects": [
+      "Deeper sleep, vivid dreams and better recovery are the most common claims",
+      "Noticeable but milder hunger than GHRP-6",
+      "Users often say going above about 1 mcg/kg adds side effects rather than more GH, echoing the 'saturation dose' idea from old forum guides"
+    ],
+    "reported_side_effects": [
+      "Hunger shortly after injecting",
+      "Head rush and flushing, especially with mod GRF 1-29",
+      "Water retention, numb or tingling hands and lethargy",
+      "Worry about raised prolactin and cortisol at higher doses, with some reporting low mood or reduced libido",
+      "Reports of the effect fading with continuous daily use"
+    ],
+    "sources": "r/Peptides, r/moreplatesmoredates, older bodybuilding forums (e.g. AnabolicMinds, Professional Muscle), 2008-2026; self-reports, unverified, product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": ["ghrp-6", "ipamorelin", "sermorelin", "tesamorelin", "cjc-1295"],
   "references": [
     {"title": "GH releasing peptides--structure and kinetics", "authors": "Bowers CY", "journal": "J Pediatr Endocrinol", "year": 1993, "url": "https://pubmed.ncbi.nlm.nih.gov/8374685/"},

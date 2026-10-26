@@ -319,6 +319,48 @@
     "Semax and Selank were built in the same laboratory using the same trick — bolting Pro-Gly-Pro onto a short natural peptide — and are both given as nose drops.",
     "Since 2017 Selank has been sold over the counter in Russian pharmacies, an unusual status for a prescription-grade anxiolytic."
   ],
+  "community": {
+    "summary": "Used as a nasal spray for anxiety and stress by nootropic users, often as a gentler alternative to benzodiazepines or alongside Semax. Users buy the Russian pharmacy drops (0.15%) or research-vendor sprays, including an 'N-Acetyl Selank Amidate' variant that has no clinical data.",
+    "protocols": [
+      {
+        "label": "Standard nasal",
+        "dose": "250-300 mcg per dose (Russian 0.15% drops: 2-3 drops per nostril)",
+        "frequency": "2-3 times a day, nasal",
+        "duration": "2-4 weeks; some use it only as needed"
+      },
+      {
+        "label": "Low-dose maintenance",
+        "dose": "100-200 mcg",
+        "frequency": "once daily, nasal",
+        "duration": "about 4 weeks on, 4 weeks off"
+      },
+      {
+        "label": "N-Acetyl Selank Amidate spray",
+        "dose": "100-300 mcg per dose",
+        "frequency": "1-2 times a day, nasal",
+        "duration": "2-4 weeks or as needed"
+      },
+      {
+        "label": "Subcutaneous (niche)",
+        "dose": "250-500 mcg",
+        "frequency": "once daily, often 5 days on and 2 off",
+        "duration": "4-6 weeks"
+      }
+    ],
+    "reported_effects": [
+      "Calmer mood and less social or general anxiety without feeling sedated are the most common claims; some notice it within an hour, others only after a week or two",
+      "Steadier focus under stress, especially when combined with Semax",
+      "Many describe it as subtle, and a sizeable share report no effect at all"
+    ],
+    "reported_side_effects": [
+      "Tiredness, drowsiness or feeling 'flat', mainly at higher doses",
+      "Headaches",
+      "Nasal irritation or a bitter taste after spraying",
+      "Occasional emotional blunting or low motivation that users relate to longer daily use"
+    ],
+    "sources": "r/Nootropics, r/Peptides, r/Anxiety and r/Biohackers threads, 2015-2026, plus community protocol aggregators; self-reports, unverified, vendor product identity and purity unknown",
+    "updated": "2026-10"
+  },
   "related": [
     "semax",
     "dsip",
