@@ -8,10 +8,9 @@
   "tagline": "Aerodynamic forces, potential flow, airfoil theory and panel methods, finite wings, viscous drag, shocks and expansions, and transonic and supersonic flow",
   "summary": "Aerodynamics explains how wings produce lift and what it costs in drag. The course builds from aerodynamic forces and potential flow to thin-airfoil theory, panel methods, finite wings and induced drag, and viscous effects and stall, and then turns to compressible aerodynamics: oblique shocks and expansion waves, subsonic and transonic airfoils, supersonic flow and the main features of hypersonic flight.",
   "overview": [
-    "Aerodynamics is the study of how air flows around objects and the forces that result. For the mechanical engineer, aerodynamics is the foundation of aircraft design, wind turbine design, automotive design, and the design of any structure that moves through or interacts with a flowing fluid. The course begins with the fundamental forces and coefficients that describe aerodynamic behaviour, and builds through potential flow theory, thin-airfoil theory, and panel methods to the practical design tools used in industry today.",
-    "The first half of the course deals with incompressible flow: the aerodynamic forces and coefficients that define lift, drag, and pitching moment; the potential flow theory that describes the flow around bodies using superposition of elementary flows; thin-airfoil theory, which relates airfoil shape to lift and moment; and panel methods, the numerical technique that underlies modern airfoil design codes. The finite wing theory extends these two-dimensional results to three dimensions, introducing the wing-tip vortices, downwash, and induced drag that determine the performance of real wings. Viscous effects complete the picture with boundary layers, skin friction, form drag, stall, and high-lift devices.",
-    "The second half of the course deals with compressible flow: oblique shocks and expansion waves that govern supersonic flow; the Prandtl-Glauert rule, critical Mach number, and drag divergence that define the transonic regime; supercritical airfoils and sweep that delay the drag rise; and the Ackeret theory and hypersonic flow that describe flight at speeds greater than sound. The course provides the complete theoretical and practical foundation for understanding how wings work at all speeds, from the subsonic transport to the hypersonic re-entry vehicle.",
-    "The course is quantitative throughout. Every concept is expressed as a formula, every formula is illustrated with a worked example, and every example is verified by numerical calculation. The exercises progress from direct substitution to derivation, and the widget plots allow the student to explore the relationships between parameters interactively. The goal is not just to know the formulas but to develop the engineering judgement to know when and how to apply them."
+    "Aerodynamics is the study of the forces that air exerts on bodies moving through it, and of the flows that produce them. It decides how large a wing must be to carry an aircraft, how much fuel the aircraft burns, how fast it can fly before shock waves form, and how hot a re-entering capsule becomes; the same methods are used for wind-turbine and propeller blades, racing cars, bridges and tall buildings. For a wing the central questions are always the same: how much lift, at what cost in drag, and with what pitching moment.",
+    "The course is organised by flight regime. The first half treats low-speed flow. It sets up the force and moment coefficients and the similarity parameters $\\mathrm{Re}$ and $M$, then builds inviscid theory step by step: potential flow and the Kutta–Joukowski theorem; thin-airfoil theory, which gives the lift slope $2\\pi$ and the zero-lift angle and moment of any thin section; panel methods for arbitrary shapes; and Prandtl's lifting-line theory for wings of finite span and their induced drag. A chapter on boundary layers then supplies what inviscid theory cannot: skin friction, profile drag, stall and high-lift devices. The second half treats compressible flow: oblique shocks and Prandtl–Meyer expansions, compressibility corrections and the transonic drag rise with the supercritical airfoil and sweep that delay it, and finally linearised supersonic theory and the main features of hypersonic flow.",
+    "What makes the subject hard is that each theory is exact only within its assumptions — thin bodies, small angles, attached flow, a given range of Mach number — and real design work consists largely of knowing which theory to trust and where it fails. Every chapter therefore derives its results, works numerical examples with real units, compares the simple theories with more exact ones or with test data, and points out the limits. Work the examples by hand, use the interactive figures to see how the answers change with the parameters, and check every result against a limiting case."
   ],
   "prerequisites": [
     "fluid-mechanics"
@@ -38,7 +37,7 @@
     {
       "slug": "potential-flow",
       "title": "Incompressible potential flow",
-      "summary": "Stream function and velocity potential, elementary flows and their superposition, flow over a cylinder and the Kutta\u2013Joukowski theorem.",
+      "summary": "Stream function and velocity potential, elementary flows and their superposition, flow over a cylinder and the Kutta–Joukowski theorem.",
       "requires": [
         "fluid-mechanics/navier-stokes"
       ]
@@ -80,7 +79,7 @@
     {
       "slug": "oblique-shocks",
       "title": "Oblique shocks and expansion waves",
-      "summary": "Oblique shock relations, the \u03b8\u2013\u03b2\u2013M relation, Prandtl\u2013Meyer expansions and shock-expansion theory.",
+      "summary": "Oblique shock relations, the θ–β–M relation, Prandtl–Meyer expansions and shock-expansion theory.",
       "requires": [
         "fluid-mechanics/compressible-flow"
       ]
@@ -105,107 +104,141 @@
   ],
   "history": [
     {
-      "year": 1738,
-      "title": "Bernoulli's principle",
-      "detail": "Daniel Bernoulli publishes Hydrodynamica, establishing the relationship between pressure and velocity that underlies all of aerodynamics."
-    },
-    {
-      "year": 1757,
-      "title": "Euler's equations",
-      "detail": "Leonhard Euler derives the equations of motion for inviscid flow, providing the mathematical foundation for potential flow theory and the Kutta-Joukowski theorem."
-    },
-    {
-      "year": 1884,
-      "title": "Reynolds number",
-      "detail": "Osborne Reynolds demonstrates the transition from laminar to turbulent flow, introducing the dimensionless number that governs boundary layer behaviour and skin friction drag."
-    },
-    {
-      "year": 1903,
-      "title": "Wright brothers' first flight",
-      "detail": "Orville and Wilbur Wright achieve the first powered, controlled, sustained flight at Kitty Hawk, demonstrating that lift can be predicted and engineered."
+      "year": 1906,
+      "title": "Circulation and lift",
+      "detail": "Nikolai Joukowski publishes the theorem that the lift per unit span of a body in a stream is the density times the speed times the circulation; Wilhelm Kutta had computed the lift of circular-arc surfaces with a smooth flow off the trailing edge in his 1902 Habilitation work, and Frederick Lanchester had argued for the role of circulation in lift.",
+      "people": [
+        "Nikolai Joukowski",
+        "Wilhelm Kutta",
+        "Frederick Lanchester"
+      ]
     },
     {
       "year": 1918,
-      "title": "Thin-airfoil theory",
-      "detail": "Max Munk and others develop the vortex sheet formulation that Ludwig Prandtl and Albert Betz refine into thin-airfoil theory, relating airfoil camber to lift and moment."
+      "title": "Lifting-line theory",
+      "detail": "Ludwig Prandtl and his Göttingen colleagues publish the lifting-line theory of the finite wing (1918–1919), explaining induced drag and the effect of aspect ratio and showing that elliptic span loading gives the least induced drag.",
+      "people": [
+        "Ludwig Prandtl",
+        "Albert Betz",
+        "Max Munk"
+      ]
+    },
+    {
+      "year": 1922,
+      "title": "Thin-airfoil theory and the Variable Density Tunnel",
+      "detail": "Max Munk's NACA Report 142, General Theory of Thin Wing Sections, gives the zero-lift angle and pitching moment of any thin section as integrals over its camber line; the same year the NACA's Variable Density Tunnel at Langley, which Munk had advocated, first runs, allowing model tests at flight Reynolds numbers.",
+      "people": [
+        "Max Munk"
+      ]
+    },
+    {
+      "year": 1925,
+      "title": "Linearised supersonic airfoil theory",
+      "detail": "Jakob Ackeret publishes the linear theory of thin airfoils in supersonic flow, with its lift coefficient 4α/√(M²−1) and the wave drag due to lift and thickness.",
+      "people": [
+        "Jakob Ackeret"
+      ]
     },
     {
       "year": 1935,
-      "title": "Panel methods",
-      "detail": "The source and vortex panel methods are developed for computing the flow around arbitrary airfoil shapes, the numerical technique that underlies modern airfoil design codes such as XFOIL."
-    },
-    {
-      "year": 1939,
-      "title": "Compressibility and the sound barrier",
-      "detail": "Adolf Busemann and others recognise that the drag rise near Mach 1 is caused by local supersonic flow and shock waves, not an insurmountable 'sound barrier'."
-    },
-    {
-      "year": 1952,
-      "title": "Supercritical airfoil",
-      "detail": "Richard Whitcomb at NASA Langley begins the research that leads to the supercritical airfoil, with its flat upper surface and aft camber to delay drag divergence."
+      "title": "The swept wing",
+      "detail": "At the Volta Conference in Rome, Adolf Busemann proposes sweeping the wings of supersonic aircraft so that the flow normal to the leading edge is slower; the subsonic benefit of sweep was later identified independently by Robert T. Jones of the NACA (1945).",
+      "people": [
+        "Adolf Busemann",
+        "Robert T. Jones"
+      ]
     },
     {
       "year": 1947,
-      "title": "Breaking the sound barrier",
-      "detail": "Chuck Yeager flies the Bell X-1 past Mach 1 at Edwards Air Force Base, demonstrating that supersonic flight is achievable and opening the door to supersonic transport and military aircraft."
+      "title": "Faster than sound",
+      "detail": "On 14 October 1947 Charles Yeager flies the rocket-powered Bell X-1 research aircraft beyond Mach 1 over Muroc Army Air Field (now Edwards Air Force Base), showing that controlled flight through the transonic regime is possible.",
+      "people": [
+        "Charles Yeager"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "The blunt-body principle",
+      "detail": "H. Julian Allen and Alfred Eggers of NACA Ames show that blunt shapes greatly reduce the heating of bodies entering the atmosphere at very high speed, because most of the energy is dissipated in the gas behind a strong detached bow shock; every crewed re-entry capsule follows the principle.",
+      "people": [
+        "H. Julian Allen",
+        "Alfred J. Eggers"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "Panel methods",
+      "detail": "John Hess and A. M. O. Smith at the Douglas Aircraft Company describe the surface-source method for the potential flow about arbitrary three-dimensional bodies, the start of panel methods; their survey of the approach, including lifting flows, appears in 1967.",
+      "people": [
+        "John L. Hess",
+        "A. M. O. Smith"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "The supercritical wing in flight",
+      "detail": "An F-8 research aircraft fitted with a supercritical wing designed by Richard Whitcomb of NASA Langley first flies on 9 March 1971, confirming that a flat-topped, aft-cambered section delays the transonic drag rise; supercritical sections are now standard on transport aircraft.",
+      "people": [
+        "Richard T. Whitcomb"
+      ]
     }
   ],
   "references": [
     {
-      "authors": "J.D. Anderson",
-      "title": "Fundamentals of Aerodynamics",
+      "authors": "J. D. Anderson",
+      "title": "Fundamentals of Aerodynamics (6th edition)",
       "publisher": "McGraw-Hill",
       "year": 2017,
-      "note": "The standard undergraduate text, covering incompressible and compressible aerodynamics with clarity and depth."
+      "note": "The standard undergraduate text: forces and coefficients, potential flow, thin-airfoil and lifting-line theory, panel methods, and compressible flow up to hypersonic, with many worked examples."
     },
     {
-      "authors": "I.C. Abbott and A.E. von Doenhoff",
+      "authors": "I. H. Abbott and A. E. von Doenhoff",
       "title": "Theory of Wing Sections",
       "publisher": "Dover",
       "year": 1959,
-      "note": "The classic reference for airfoil geometry, aerodynamic characteristics, and section data."
+      "note": "The classic reference for NACA airfoil geometry, thin-airfoil theory and measured section data (lift, moment and drag at several Reynolds numbers)."
+    },
+    {
+      "authors": "J. Katz and A. Plotkin",
+      "title": "Low-Speed Aerodynamics (2nd edition)",
+      "publisher": "Cambridge University Press",
+      "year": 2001,
+      "note": "A rigorous treatment of potential flow, singularity distributions, lumped-vortex, vortex-lattice and panel methods."
     },
     {
       "authors": "M. Drela",
-      "title": "Low-Reynolds-Number Airfoils",
-      "publisher": "MIT (XFOIL documentation)",
+      "title": "Flight Vehicle Aerodynamics",
+      "publisher": "MIT Press",
+      "year": 2014,
+      "note": "A modern, compact account of aerodynamic theory as it is used in design, including viscous–inviscid interaction and the boundary-layer methods behind XFOIL."
+    },
+    {
+      "authors": "H. Schlichting and K. Gersten",
+      "title": "Boundary-Layer Theory (9th edition)",
+      "publisher": "Springer",
       "year": 2017,
-      "note": "The theory and implementation of the XFOIL panel method for airfoil design and analysis."
+      "note": "The comprehensive reference on laminar and turbulent boundary layers, transition and integral methods."
     },
     {
-      "authors": "A. Katz and A. Plotkin",
-      "title": "Low-Speed Aerodynamics",
-      "publisher": "Cambridge University Press",
-      "year": 2001,
-      "note": "A rigorous treatment of potential flow, panel methods, and lifting-line theory."
+      "authors": "H. W. Liepmann and A. Roshko",
+      "title": "Elements of Gasdynamics",
+      "publisher": "Wiley (Dover reprint)",
+      "year": 1957,
+      "note": "A concise and clear treatment of shocks, expansions, linearised compressible flow and the physics of high-speed gases."
     },
     {
-      "authors": "J.D. Anderson",
-      "title": "Modern Compressible Flow",
+      "authors": "J. D. Anderson",
+      "title": "Modern Compressible Flow: With Historical Perspective (3rd edition)",
       "publisher": "McGraw-Hill",
       "year": 2003,
-      "note": "The standard text for compressible flow, covering shocks, expansions, and supersonic/hypersonic aerodynamics."
+      "note": "Oblique shocks, Prandtl–Meyer flow, linearised subsonic and supersonic theory and an introduction to hypersonic flow."
     },
     {
-      "authors": "R.T. Whitcomb",
-      "title": "A Design Overview and Status of the NASA Supercritical Airfoil",
-      "publisher": "SAE Paper 730061",
-      "year": 1973,
-      "note": "The seminal paper on supercritical airfoil design and transonic aerodynamics."
-    },
-    {
-      "authors": "H. Liepmann and A.E. Blevins",
-      "title": "Elements of Aerodynamics",
-      "publisher": "Wiley",
-      "year": 1957,
-      "note": "A concise and elegant treatment of classical aerodynamic theory."
-    },
-    {
-      "authors": "E. Torenbeek",
-      "title": "Synthesis of Subsonic Airplane Design",
-      "publisher": "Delft University Press",
-      "year": 1982,
-      "note": "The application of aerodynamic theory to practical aircraft design and configuration."
+      "authors": "D. P. Raymer",
+      "title": "Aircraft Design: A Conceptual Approach (6th edition)",
+      "publisher": "AIAA",
+      "year": 2018,
+      "note": "How aerodynamic theory and empirical data (drag build-up, high-lift increments, form factors) are used in conceptual aircraft design."
     }
   ],
   "next": [

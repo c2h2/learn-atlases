@@ -1,478 +1,347 @@
-The aerodynamic force is the most fundamental quantity in aerodynamics: the aerodynamic force is the force that the fluid exerts on the body, and the aerodynamic force is the force that determines the performance of the aircraft. **The engineer who calculates the aerodynamic force without checking the coefficient is not calculating the aerodynamic force; they are guessing.** The aerodynamic force calculation is the reason the engineer can design the aircraft to be safe, and the safety is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.
+A wing, a car body, a wind-turbine blade and a cooling-tower shell all feel the same two things from the air flowing past them: a **pressure** pushing normal to every element of the surface, and a **shear stress** dragging tangentially along it. Nothing else. Every aerodynamic force and moment — the lift that holds up a $500\,\mathrm{t}$ airliner, the drag that sets its fuel burn, the pitching moment its tailplane must balance — is the integral of those two distributions over the body. This chapter sets up the bookkeeping that the rest of the course depends on: how the integrated force is split into lift and drag, how forces and moments are made dimensionless as coefficients, where the resultant acts (the centre of pressure, and the more useful aerodynamic centre), and which dimensionless groups a coefficient can depend on — which is also the theory of the wind tunnel.
 
-The quantitative tools of aerodynamic force analysis are the **aerodynamic coefficients** (lift coefficient, drag coefficient, moment coefficient), the **dynamic pressure** (the pressure due to the fluid velocity), the **angle of attack** (the angle between the chord line and the relative wind), and the **Reynolds number** (the ratio of the inertial force to the viscous force). The tools are the language in which the aerodynamic force analysis is expressed, and the language is the reason the analysis is a calculation, not a guess.
+The prerequisites are the control-volume and Bernoulli material of [[fluid-mechanics/bernoulli]], dimensional analysis from [[fluid-mechanics/dimensional-analysis]] and the boundary-layer and drag ideas of [[fluid-mechanics/boundary-layers-drag]].
 
-::: warning Nine ways aerodynamic force calculation goes wrong
-**Not checking the dynamic pressure.** The engineer who calculates the aerodynamic force without checking the dynamic pressure is not calculating the aerodynamic force; they are guessing. **The dynamic pressure is the reason the aerodynamic force is designed for the velocity, not the pressure, and the velocity is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.** **Not checking the reference area.** The engineer who calculates the aerodynamic force without checking the reference area is not calculating the aerodynamic force; they are guessing. **The reference area is the reason the aerodynamic force is designed for the area, not the shape, and the area is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.** **Not checking the angle of attack.** The engineer who calculates the aerodynamic force without checking the angle of attack is not calculating the aerodynamic force; they are guessing. **The angle of attack is the reason the aerodynamic force is designed for the lift, not the drag, and the lift is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.** **Not checking the Reynolds number.** The engineer who calculates the aerodynamic force without checking the Reynolds number is not calculating the aerodynamic force; they are guessing. **The Reynolds number is the reason the aerodynamic force is designed for the viscosity, not the velocity, and the viscosity is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.** **Not checking the Mach number.** The engineer who calculates the aerodynamic force without checking the Mach number is not calculating the aerodynamic force; they are guessing. **The Mach number is the reason the aerodynamic force is designed for the compressibility, not the velocity, and the compressibility is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.** **Not checking the lift curve slope.** The engineer who calculates the aerodynamic force without checking the lift curve slope is not calculating the aerodynamic force; they are guessing. **The lift curve slope is the reason the aerodynamic force is designed for the lift, not the drag, and the lift is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.** **Not checking the drag polar.** The engineer who calculates the aerodynamic force without checking the drag polar is not calculating the aerodynamic force; they are guessing. **The drag polar is the reason the aerodynamic force is designed for the drag, not the lift, and the drag is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.** **Not checking the moment coefficient.** The engineer who calculates the aerodynamic force without checking the moment coefficient is not calculating the aerodynamic force; they are guessing. **The moment coefficient is the reason the aerodynamic force is designed for the stability, not the lift, and the stability is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.** **Not checking the center of pressure.** The engineer who calculates the aerodynamic force without checking the center of pressure is not calculating the aerodynamic force; they are guessing. **The center of pressure is the reason the aerodynamic force is designed for the stability, not the lift, and the stability is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.**
+## Pressure and shear: the only two sources
+
+Picture a two-dimensional airfoil section, of chord $c$, in a uniform stream of speed $V_\infty$, density $\rho_\infty$ and pressure $p_\infty$ far upstream. The **angle of attack** $\alpha$ is the angle between the chord line (leading edge to trailing edge) and the direction of $V_\infty$. On the upper surface the air accelerates and the pressure falls below $p_\infty$; on most of the lower surface it is near or above $p_\infty$. That pressure difference, summed over the chord, is overwhelmingly where the lift comes from. The shear stress $\tau_w$ of the thin boundary layer is small in comparison — typically a few pascals where the pressure differences are a few kilopascals — but it acts along the surface, nearly parallel to the stream, and so it is a major part of the drag.
+
+Two reference frames are used to resolve the resultant force $\mathbf{R}$:
+
+::: definition Lift, drag, normal and axial force {#def-lift-drag}
+For a body in a stream of velocity $V_\infty$, the resultant aerodynamic force $\mathbf{R}$ is resolved either
+
+- **relative to the free stream**: the **drag** $D$ is the component parallel to $V_\infty$ (positive downstream) and the **lift** $L$ the component perpendicular to $V_\infty$ (positive "up", in the plane of symmetry); or
+- **relative to the body**: the **axial force** $A$ is the component along the chord (positive towards the trailing edge) and the **normal force** $N$ the component perpendicular to the chord.
+
+For a two-dimensional section the forces are per unit span and are written with a prime: $L'$, $D'$, $N'$, $A'$ in $\mathrm{N/m}$. With the angle of attack $\alpha$ between chord and free stream, the two resolutions are related by a rotation through $\alpha$:
+$$
+L = N\cos\alpha - A\sin\alpha, \qquad D = N\sin\alpha + A\cos\alpha.
+$$ {#eq-rotate}
 :::
 
-## 1. Aerodynamic forces and coefficients
+The rotation is worth drawing once. Put the chord along the $x$-axis and the free stream at angle $\alpha$ below it, approaching from the left. $N$ points along $+y$ (perpendicular to the chord), $A$ along $+x$. The lift direction is $N$'s direction rotated back by $\alpha$, the drag direction is $A$'s direction rotated by $\alpha$; projecting each of $N$ and $A$ onto the new axes gives [[#eq-rotate]]. Note the *minus* sign in the lift: a positive axial force (pointing aft along a chord inclined nose-up) has a component *against* the lift direction.
 
-::: definition The aerodynamic force {#def-aerodynamic-force}
-The **aerodynamic force** is the force that the fluid exerts on the body, and the aerodynamic force is the reason the engineer can design the aircraft to be safe.
-
-The **aerodynamic force** is resolved into two components:
-- **Lift** ($L$): the component perpendicular to the relative wind
-- **Drag** ($D$): the component parallel to the relative wind
-
-The **aerodynamic force** is:
-
+::: proposition Forces from the surface distributions {#prop-surface-integrals}
+Let a two-dimensional section have upper and lower surfaces $y_u(x)$, $y_l(x)$ for $0 \le x \le c$, with surface pressures $p_u$, $p_l$ and wall shear stresses $\tau_u$, $\tau_l$ (each positive when it drags the surface downstream, towards the trailing edge). Then per unit span
 $$
-\vec { F } \; = \; - \oint _ { S } \, p \, \hat { n } \, d A \; + \; \oint _ { S } \, \vec { \tau } \, d A
+\begin{aligned}
+N' &= \int_0^c \left(p_l - p_u\right)dx + \int_0^c\left(\tau_u\,\frac{dy_u}{dx} + \tau_l\,\frac{dy_l}{dx}\right)dx, \\
+A' &= \int_0^c \left(p_u\,\frac{dy_u}{dx} - p_l\,\frac{dy_l}{dx}\right)dx + \int_0^c \left(\tau_u + \tau_l\right)dx,
+\end{aligned}
+$$ {#eq-NA}
+and the pitching moment about the leading edge, positive **nose-up**, is
 $$
-
-The **dynamic pressure** is:
-
-$$
-q \; = \; { \frac { 1 } { 2 } } \, \rho \, V ^ { 2 }
-$$
-
-The **lift coefficient** is:
-
-$$
-C _ { L } \; = \; { \frac { L } { q \, S } } \; = \; { \frac { L } { { \frac { 1 } { 2 } } \, \rho \, V ^ { 2 } \, S } }
-$$
-
-The **drag coefficient** is:
-
-$$
-C _ { D } \; = \; { \frac { D } { q \, S } } \; = \; { \frac { D } { { \frac { 1 } { 2 } } \, \rho \, V ^ { 2 } \, S } }
-$$
-
-The **moment coefficient** is:
-
-$$
-C _ { M } \; = \; { \frac { M } { q \, S \, c } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Coefficient} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Lift coefficient} & C _ { L } & L / ( q \, S ) & 0 \text{--} 2 \\
-\text{Drag coefficient} & C _ { D } & D / ( q \, S ) & 0 . 0 1 \text{--} 0 . 1 \\
-\text{Moment coefficient} & C _ { M } & M / ( q \, S \, c ) & - 0 . 5 \text{--} 0 . 5 \\
-\text{Lift-to-drag ratio} & L / D & C _ { L } / C _ { D } & 1 0 \text{--} 2 0 \\
-\text{Dynamic pressure} & q & { \frac { 1 } { 2 } } \, \rho \, V ^ { 2 } & 1 0 \text{--} 1 0 \ 0 0 0 \ \text{Pa} \\
-\end{array}
-$$
-
-**The dynamic pressure is the reason the aerodynamic force is designed for the velocity, not the pressure, and the velocity is the reason the aerodynamic force is the most fundamental quantity in aerodynamics. The engineer who calculates the aerodynamic force without checking the dynamic pressure is not calculating the aerodynamic force; they are guessing.**
+M'_{LE} = \int_0^c \left(p_u - p_l\right)x\,dx + (\text{small terms in } \tau \text{ and in } y\,dp),
+$$ {#eq-mle}
+where the small terms vanish for a thin section with negligible shear.
 :::
 
-::: definition The angle of attack {#def-angle-of-attack}
-The **angle of attack** is the angle between the chord line and the relative wind, and the angle of attack is the reason the engineer can design the aircraft to be safe.
+::: proof
+Take an element of the upper surface of length $ds$, inclined at angle $\theta$ to the chord, so that $dx = ds\cos\theta$ and $dy_u = ds\sin\theta$. The pressure acts *into* the surface, along the inward normal, which on the upper surface points down and slightly forward: its components are $(+\sin\theta, -\cos\theta)\,p_u\,ds$ in $(x, y)$, i.e. a normal-force contribution $-p_u\,dx$ and an axial contribution $+p_u\,dy_u$. The shear acts along the surface towards the trailing edge, $(\cos\theta, \sin\theta)\,\tau_u\,ds$: normal contribution $\tau_u\,dy_u$, axial contribution $\tau_u\,dx$. On the lower surface the inward normal points up, so the pressure gives $+p_l\,dx$ to $N'$ and $-p_l\,dy_l$ to $A'$, while the shear again gives $\tau_l\,dy_l$ and $\tau_l\,dx$. Adding the four contributions and integrating from leading to trailing edge gives [[#eq-NA]].
 
-The **lift curve** is:
+For the moment, a normal-force element $dN' = (p_l - p_u)\,dx$ acting at distance $x$ aft of the leading edge produces a moment $-x\,dN'$ about the leading edge with the nose-up-positive convention (an upward force aft of the nose pitches it *down*). Integrating gives $M'_{LE} = -\int_0^c (p_l - p_u)\,x\,dx$, which is [[#eq-mle]]; the axial-force elements act with moment arms $y$, and for a thin section these arms are small.
 
-$$
-C _ { L } \; = \; C _ { L , \alpha } \, ( \alpha - \alpha _ { 0 } )
-$$
-
-where $C _ { L , \alpha }$ is the **lift curve slope** and $\alpha _ { 0 }$ is the **zero-lift angle of attack**.
-
-For a **thin airfoil** in incompressible flow:
-
-$$
-C _ { L , \alpha } \; = \; 2 \, \pi \quad \text{per radian} \; = \; 0 . 1 1 \quad \text{per degree}
-$$
-
-The **stall angle** is the angle of attack at which the lift coefficient reaches its maximum:
-
-$$
-\alpha _ { \text{stall } } \; \approx \; 1 2 ^ { \circ } \text{--} 1 8 ^ { \circ } \quad \text{(typical airfoil)}
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Typical value } & \textbf{ Use case } \\ \hline
-\text{Lift curve slope} & C _ { L , \alpha } & 0 . 1 1 \text{ per degree} & \text{Thin airfoil} \\
-\text{Zero-lift angle} & \alpha _ { 0 } & - 2 ^ { \circ } \text{--} 2 ^ { \circ } & \text{Cambered airfoil} \\
-\text{Stall angle} & \alpha _ { \text{stall } } & 1 2 ^ { \circ } \text{--} 1 8 ^ { \circ } & \text{Typical airfoil} \\
-\text{Max lift coefficient} & C _ { L , \max } & 1 . 2 \text{--} 2 . 5 & \text{Typical airfoil} \\
-\text{Cruise } C _ { L } & C _ { L , \text{cruise } } & 0 . 3 \text{--} 0 . 8 & \text{Transport aircraft} \\
-\end{array}
-$$
-
-**The angle of attack is the reason the aerodynamic force is designed for the lift, not the drag, and the lift is the reason the aerodynamic force is the most fundamental quantity in aerodynamics. The engineer who calculates the aerodynamic force without checking the angle of attack is not calculating the aerodynamic force; they are guessing.**
+A constant pressure added everywhere contributes $\oint p_\infty\,\mathbf{n}\,ds = \mathbf{0}$ round a closed contour, so $p$ may be replaced by the gauge value $p - p_\infty$ throughout without changing any result. Assumptions: steady flow, a closed two-dimensional contour, and the sign conventions above.
 :::
 
-::: widget plot
-title: The lift coefficient vs angle of attack
-f: 0.11*x; 0.11*(x+2); 0.11*(x+4)
-x: -5,20
-y: -1,3
-labels: Symmetric; Cambered (alpha_0=-2); Cambered (alpha_0=-4)
-caption: The lift coefficient against the angle of attack for different airfoils. **The lift curve slope is the same for all airfoils, and the lift curve slope is the reason the aerodynamic force is designed for the lift, not the drag.** **The lift is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.**
+The proposition says something about the *physics* as well as the arithmetic. Lift is (almost entirely) the chordwise integral of the pressure *difference* between the surfaces. Drag has a pressure part — the axial component of pressure on surfaces inclined to the chord, plus the $N\sin\alpha$ tilt — and a friction part. Neither part can be wished away: a perfectly streamlined body in a real fluid still has skin-friction drag, and a flat plate normal to the flow has almost nothing *but* pressure drag.
+
+## Dimensionless coefficients
+
+Forces on similar bodies grow with the size of the body and with the **dynamic pressure** of the stream,
+$$
+q_\infty = \tfrac{1}{2}\rho_\infty V_\infty^2,
+$$
+which is the pressure rise that would be obtained by bringing the free stream to rest isentropically in incompressible flow — the natural pressure scale of the problem. Dividing by $q_\infty$ times a reference area (or length) removes both.
+
+::: definition Force, moment and pressure coefficients {#def-coefficients}
+For a three-dimensional body with reference area $S$ (for a wing, its planform area) and reference length $\ell$ (for a wing, the mean aerodynamic chord $\bar c$):
+$$
+C_L = \frac{L}{q_\infty S}, \qquad C_D = \frac{D}{q_\infty S}, \qquad C_M = \frac{M}{q_\infty S \ell}.
+$$
+For a two-dimensional section, per unit span, with the chord $c$ as both reference length and (times unit span) reference area, the **section coefficients** are written in lower case:
+$$
+c_l = \frac{L'}{q_\infty c}, \qquad c_d = \frac{D'}{q_\infty c}, \qquad c_m = \frac{M'}{q_\infty c^2},
+$$
+and likewise $c_n$, $c_a$ for the normal and axial forces. The **pressure coefficient** and **skin-friction coefficient** at a surface point are
+$$
+C_p = \frac{p - p_\infty}{q_\infty}, \qquad c_f = \frac{\tau_w}{q_\infty}.
+$$
 :::
 
-::: example Lift calculation for an aircraft {#ex-lift-calc level=3 check="2"}
-An aircraft with a wing area of $S = 30$ m² flies at $V = 80$ m/s at sea level ($\rho = 1 . 2 2 5$ kg/m³). The lift coefficient is $C _ { L } = 0 . 8$ . Calculate the dynamic pressure and the lift.
+The reference area is a *convention*, not a physical area that the force acts on. Wings use the planform area including the part buried in the fuselage; airships use (volume)$^{2/3}$; cars and cyclists use the frontal area. A drag coefficient is meaningless without its reference area, and two coefficients can be compared only if they share one.
 
-**Dynamic pressure:**
-
+::: proposition Pressure coefficient in incompressible flow {#prop-cp-bernoulli}
+In steady, incompressible flow that is irrotational (or along a streamline from the free stream), the pressure coefficient at a point where the local speed is $V$ is
 $$
-q \; = \; { \frac { 1 } { 2 } } \, \rho \, V ^ { 2 } \; = \; { \frac { 1 } { 2 } } \times 1 . 2 2 5 \times 8 0 ^ { 2 } \; = \; { \bf 3 9 2 0 } \ \text{Pa}
-$$
-
-**Lift:**
-
-$$
-L \; = \; C _ { L } \, q \, S \; = \; 0 . 8 \times 3 9 2 0 \times 3 0 \; = \; { \bf 9 4 \ 0 8 0 } \ \text{N} \; = \; { \bf 9 4 . 1 } \ \text{kN}
-$$
-
-**Equivalent mass:**
-
-$$
-m \; = \; { \frac { L } { g } } \; = \; { \frac { 9 4 \ 0 8 0 } { 9 . 8 1 } } \; = \; { \bf 9 5 9 0 } \ \text{kg}
-$$
-
-**The dynamic pressure is 3920 Pa, and the lift is 94.1 kN (equivalent to 9590 kg). The engineer would design the aircraft for the lift, because the lift is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.**
+C_p = 1 - \left(\frac{V}{V_\infty}\right)^2.
+$$ {#eq-cp-incomp}
+Hence $C_p = 1$ at a stagnation point, $C_p = 0$ wherever $V = V_\infty$, and $C_p < 0$ wherever the flow is faster than the free stream; there is no lower bound in principle.
 :::
 
-## 2. Drag and the drag polar
-
-::: definition The drag polar {#def-drag-polar}
-The **drag polar** is the relationship between the lift coefficient and the drag coefficient, and the drag polar is the reason the engineer can design the aircraft to be safe.
-
-The **drag polar** (parabolic approximation) is:
-
-$$
-C _ { D } \; = \; C _ { D , 0 } + { \frac { C _ { L } ^ { 2 } } { \pi \, e \, A R } }
-$$
-
-where $C _ { D , 0 }$ is the **zero-lift drag coefficient**, $e$ is the **Oswald efficiency factor**, and $A R$ is the **aspect ratio**.
-
-The **lift-to-drag ratio** is:
-
-$$
-{ \frac { L } { D } } \; = \; { \frac { C _ { L } } { C _ { D } } } \; = \; { \frac { C _ { L } } { C _ { D , 0 } + C _ { L } ^ { 2 } / ( \pi \, e \, A R ) } }
-$$
-
-The **maximum lift-to-drag ratio** is:
-
-$$
-\left( { \frac { L } { D } } \right) _ { \max } \; = \; { \frac { 1 } { 2 } } \, { \sqrt { \frac { \pi \, e \, A R } { C _ { D , 0 } } } } \qquad \text{at} \quad C _ { L } \; = \; { \sqrt { C _ { D , 0 } \, \pi \, e \, A R } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Drag component} & \textbf{ Symbol } & \textbf{ Depends on} & \textbf{ Typical value } \\ \hline
-\text{Parasite (zero-lift)} & C _ { D , 0 } & \text{Shape, surface} & 0 . 0 1 \text{--} 0 . 0 3 \\
-\text{Induced} & C _ { L } ^ { 2 } / ( \pi \, e \, A R ) & C _ { L } , A R & 0 . 0 1 \text{--} 0 . 1 \\
-\text{Wave (transonic)} & C _ { D , \text{wave } } & M & 0 . 0 0 1 \text{--} 0 . 1 \\
-\text{Total (subsonic)} & C _ { D } & C _ { L } , M & 0 . 0 2 \text{--} 0 . 1 \\
-\end{array}
-$$
-
-**The drag polar is the reason the aerodynamic force is designed for the drag, not the lift, and the drag is the reason the aerodynamic force is the most fundamental quantity in aerodynamics. The engineer who calculates the aerodynamic force without checking the drag polar is not calculating the aerodynamic force; they are guessing.**
+::: proof
+Bernoulli's equation between the free stream and the point, with constant density and negligible gravity differences, gives $p + \tfrac{1}{2}\rho_\infty V^2 = p_\infty + \tfrac{1}{2}\rho_\infty V_\infty^2$. Hence $p - p_\infty = \tfrac{1}{2}\rho_\infty\left(V_\infty^2 - V^2\right)$ and dividing by $q_\infty$ gives [[#eq-cp-incomp]]. At a stagnation point $V = 0$, so $C_p = 1$. Assumptions: steady, inviscid, incompressible flow along a streamline from the free stream (or irrotational flow everywhere, so that the Bernoulli constant is the same on all streamlines).
 :::
 
-::: definition The Reynolds number {#def-reynolds}
-The **Reynolds number** is the ratio of the inertial force to the viscous force, and the Reynolds number is the reason the engineer can design the aircraft to be safe.
-
+With $p - p_\infty = q_\infty C_p$ and $x$ measured in chords ($\xi = x/c$), [[#eq-NA]] and [[#eq-mle]] become, for a thin section with friction neglected in the normal force,
 $$
-R e \; = \; { \frac { \rho \, V \, L } { \mu } } \; = \; { \frac { V \, L } { \nu } }
-$$
+c_n = \int_0^1 \left(C_{p,l} - C_{p,u}\right)d\xi, \qquad
+c_{m,LE} = -\int_0^1 \left(C_{p,l} - C_{p,u}\right)\xi\,d\xi.
+$$ {#eq-cn-cm}
+A measured pressure distribution — from a row of pressure taps in a wind-tunnel model, or from a panel code — is turned into forces exactly this way. The plot of $-C_p$ against $\xi$ for both surfaces is the standard picture: the area enclosed between the two curves is $c_n$.
 
-The **boundary layer regime** is:
-
-$$
-R e _ { \text{critical } } \; \approx \; 5 \times 1 0 ^ { 5 } \quad \text{(flat plate)}
-$$
-
-The **skin friction coefficient** (turbulent boundary layer):
-
-$$
-C _ { f } \; = \; { \frac { 0 . 0 7 4 } { R e ^ { 1 / 5 } } } \quad \text{(turbulent)} \qquad C _ { f } \; = \; { \frac { 1 . 3 2 8 } { { \sqrt { R e } } } } \quad \text{(laminar)}
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Application} & \textbf{ Re } & \textbf{ Regime } & \textbf{Skin friction} \\ \hline
-\text{Model aircraft} & 1 0 ^ { 5 } \text{--} 1 0 ^ { 6 } & \text{Laminar/turbulent} & 0 . 0 0 4 \text{--} 0 . 0 0 8 \\
-\text{Full-scale aircraft} & 1 0 ^ { 7 } \text{--} 1 0 ^ { 8 } & \text{Turbulent} & 0 . 0 0 2 \text{--} 0 . 0 0 3 \\
-\text{Wind tunnel} & 1 0 ^ { 6 } \text{--} 1 0 ^ { 7 } & \text{Turbulent} & 0 . 0 0 3 \text{--} 0 . 0 0 4 \\
-\text{Submarine} & 1 0 ^ { 8 } \text{--} 1 0 ^ { 9 } & \text{Turbulent} & 0 . 0 0 1 5 \text{--} 0 . 0 0 2 \\
-\end{array}
-$$
-
-**The Reynolds number is the reason the aerodynamic force is designed for the viscosity, not the velocity, and the viscosity is the reason the aerodynamic force is the most fundamental quantity in aerodynamics. The engineer who calculates the aerodynamic force without checking the Reynolds number is not calculating the aerodynamic force; they are guessing.**
-:::
-
-::: widget plot
-title: The drag polar
-f: 0.02+x^2/(3.14159*0.8*8); 0.03+x^2/(3.14159*0.8*8)
-x: 0,1.5
-y: 0,0.15
-labels: Clean; Dirty (flaps down)
-caption: The drag coefficient against the lift coefficient for clean and dirty configurations. **The drag polar is the reason the aerodynamic force is designed for the drag, not the lift, and the drag is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.** **The lift-to-drag ratio is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.**
-:::
-
-::: example Maximum L/D calculation {#ex-max-ld level=3 check="2"}
-An aircraft has $C _ { D , 0 } = 0 . 0 2$ , $e = 0 . 8$ , and $A R = 8$ . Calculate the maximum lift-to-drag ratio and the corresponding lift coefficient.
-
-**Lift coefficient for maximum L/D:**
-
-$$
-C _ { L , ( L / D ) _ { \max } } \; = \; { \sqrt { C _ { D , 0 } \, \pi \, e \, A R } } \; = \; { \sqrt { 0 . 0 2 \times \pi \times 0 . 8 \times 8 } } \; = \; { \sqrt { 0 . 4 0 2 } } \; = \; { \bf 0 . 6 3 4 }
-$$
-
-**Maximum L/D:**
-
-$$
-\left( { \frac { L } { D } } \right) _ { \max } \; = \; { \frac { 1 } { 2 } } \, { \sqrt { \frac { \pi \, e \, A R } { C _ { D , 0 } } } } \; = \; { \frac { 1 } { 2 } } \, { \sqrt { \frac { \pi \times 0 . 8 \times 8 } { 0 . 0 2 } } } \; = \; { \frac { 1 } { 2 } } \, { \sqrt { 1 0 0 5 } } \; = \; { \bf 1 5 . 9 }
-$$
-
-**Drag coefficient at maximum L/D:**
-
-$$
-C _ { D } \; = \; C _ { D , 0 } + { \frac { C _ { L } ^ { 2 } } { \pi \, e \, A R } } \; = \; 0 . 0 2 + { \frac { 0 . 4 0 2 } { 2 0 . 1 } } \; = \; 0 . 0 2 + 0 . 0 2 \; = \; { \bf 0 . 0 4 }
-$$
-
-**The maximum L/D is 15.9 at $C _ { L } = 0 . 6 3 4$ . The engineer would design the aircraft for the L/D, because the L/D is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.**
-:::
-
-::: example Moment coefficient calculation {#ex-moment-coefficient level=3 check="2"}
-An airfoil has a pitching moment of $M = - 1 5 0$ N·m about the quarter-chord point. The dynamic pressure is $q = 5 0 0 0$ Pa, the wing area is $S = 2 0$ m², and the chord is $c = 2$ m. Calculate the moment coefficient.
-
-**Moment coefficient:**
-
-$$
-C _ { M } \; = \; { \frac { M } { q \, S \, c } } \; = \; { \frac { - 1 5 0 } { 5 0 0 0 \times 2 0 \times 2 } } \; = \; { \frac { - 1 5 0 } { 2 0 0 \ 0 0 0 } } \; = \; { \bf - 0 . 0 0 0 7 5 }
-$$
-
-**The moment coefficient is -0.00075. The negative sign indicates a nose-down moment, which is the reason the aerodynamic force is designed for the stability, not the lift.**
-:::
-
-::: example Stall speed calculation {#ex-stall-speed level=3 check="2"}
-An aircraft has $W = 5 0$ kN, $S = 1 5$ m², $C _ { L , \max } = 2 . 0$ , and flies at sea level ($\rho = 1 . 2 2 5$ kg/m³). Calculate the stall speed.
-
-**Stall speed:**
-
-$$
-V _ { \text{stall } } \; = \; { \sqrt { \frac { 2 \, W } { \rho \, S \, C _ { L , \max } } } } \; = \; { \sqrt { \frac { 2 \times 5 0 \ 0 0 0 } { 1 . 2 2 5 \times 1 5 \times 2 . 0 } } } \; = \; { \sqrt { \frac { 1 0 0 \ 0 0 0 } { 3 6 . 7 5 } } } \; = \; { \sqrt { 2 7 2 1 } } \; = \; { \bf 5 2 . 2 } \ \text{m/s}
-$$
-
-**The stall speed is 52.2 m/s (188 km/h). The engineer would design the aircraft for the stall speed, because the stall speed is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.**
-:::
-
-::: exercise Mach number {#ex-mach-number level=3 check="2"}
-An aircraft flies at $V = 3 0 0$ m/s at an altitude of 10 km where the speed of sound is $a = 2 9 9 . 5$ m/s. Calculate the Mach number and determine whether the flow is incompressible.
-
+::: example A light aircraft in cruise {#ex-cessna}
+A light aircraft of mass $1100\,\mathrm{kg}$ and wing area $S = 16.2\,\mathrm{m^2}$ cruises level at $V_\infty = 55\,\mathrm{m/s}$ at sea level ($\rho_\infty = 1.225\,\mathrm{kg/m^3}$, ISA). Find the lift coefficient. If $C_{L,\max} = 1.6$, what is the stall speed at this weight?
 ::: solution
+In steady level flight the lift equals the weight (the tailplane load and thrust inclination are neglected): $L = mg = 1100 \times 9.81 = 10\,791\,\mathrm{N}$. The dynamic pressure is
 $$
-M \; = \; { \frac { V } { a } } \; = \; { \frac { 3 0 0 } { 2 9 9 . 5 } } \; = \; { \bf 1 . 0 0 2 }
+q_\infty = \tfrac{1}{2}\rho_\infty V_\infty^2 = \tfrac{1}{2}(1.225)(55)^2 = 1853\,\mathrm{Pa},
 $$
-
-**The Mach number is 1.002, which is transonic flow. The flow is not incompressible because $M > 0 . 3$ . The engineer would design the aircraft for the compressibility, because the compressibility is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.**
+so
+$$
+C_L = \frac{L}{q_\infty S} = \frac{10\,791}{1853 \times 16.2} = 0.360.
+$$
+At stall $L = W$ with $C_L = C_{L,\max}$, so
+$$
+V_s = \sqrt{\frac{2W}{\rho_\infty S\,C_{L,\max}}} = \sqrt{\frac{2 \times 10\,791}{1.225 \times 16.2 \times 1.6}} = 26.1\,\mathrm{m/s}\ (50.7\ \text{knots}).
+$$
+*Sanity check:* cruise lift coefficients of $0.2$–$0.6$ and stall speeds of $45$–$55$ knots are typical of four-seat light aircraft, and the ratio of the speeds is $\sqrt{1.6/0.360} = 2.11 = 55/26.1$, as it must be at constant weight.
 :::
+:::
+
+::: example From normal and axial force to lift and drag {#ex-rotate}
+A wind-tunnel balance aligned with the chord of a two-dimensional model measures $N' = 1200\,\mathrm{N/m}$ and $A' = 40\,\mathrm{N/m}$ at $\alpha = 6^\circ$. Find $L'$, $D'$ and the lift-to-drag ratio.
+::: solution
+With $\cos 6^\circ = 0.99452$ and $\sin 6^\circ = 0.10453$, [[#eq-rotate]] gives
+$$
+\begin{aligned}
+L' &= 1200(0.99452) - 40(0.10453) = 1193.4 - 4.2 = 1189\,\mathrm{N/m}, \\
+D' &= 1200(0.10453) + 40(0.99452) = 125.4 + 39.8 = 165\,\mathrm{N/m},
+\end{aligned}
+$$
+so $L'/D' = 7.2$. *Sanity check:* almost all of the drag here, $125\,\mathrm{N/m}$, is the tilt of the large normal force, not the axial force. That is why drag is so sensitive to small errors in the measured angle: an error of only $0.1^\circ$ in $\alpha$ shifts $D'$ by $1200 \times 0.00175 = 2.1\,\mathrm{N/m}$, more than one per cent. Balances are therefore calibrated for flow angularity before drag is quoted.
+:::
+:::
+
+::: warning Lift is not "the force upwards", and drag is not "the axial force"
+Lift and drag are defined relative to the **free-stream direction**, not to the chord and not to the ground. In a climb, lift is tilted back from the vertical; in a banked turn it is tilted sideways; and for a wind-turbine blade it points largely *along* the rotor plane, which is why it drives the rotor. Equally, an airfoil at high angle of attack can have a *negative* axial force (the leading-edge suction pulling the section forwards) while its drag is still positive — the tilt term $N\sin\alpha$ dominates. Always draw the free-stream direction first, and use [[#eq-rotate]] with $\alpha$ in the correct sense.
+:::
+
+## Where the force acts: centre of pressure and aerodynamic centre
+
+A distributed load is equivalent to a single resultant force acting at some point, or to the same force at any *other* point together with a couple. Both descriptions are used in aerodynamics, and the second turns out to be the more useful.
+
+::: definition Centre of pressure {#def-cp}
+The **centre of pressure** of a section is the point on the chord about which the aerodynamic moment is zero, i.e. the line of action of the resultant force crosses the chord there. Its distance from the leading edge is
+$$
+x_{cp} = -\frac{M'_{LE}}{N'} \approx -\frac{M'_{LE}}{L'},
+$$
+the approximation holding at small angles of attack, where $N' \approx L'$.
+:::
+
+For a cambered section the centre of pressure moves with angle of attack, and as the lift goes to zero it runs off to infinity: a cambered section at zero lift still has a nose-down couple, and a pure couple has no line of action. The early aeronautical writers, who thought in terms of the centre of pressure, found this awkward. The cure is to choose a reference point about which the *moment* does not change.
+
+::: proposition Moment transfer and the aerodynamic centre {#prop-ac}
+Let $c_{m,x}$ be the section moment coefficient about a point a fraction $x/c$ of the chord behind the leading edge, nose-up positive, and suppose that over the linear part of the lift curve the quarter-chord moment coefficient varies linearly with lift:
+$$
+c_{m,c/4} = c_{m,0} + m_0\,c_l .
+$$
+Then at small angles of attack
+$$
+c_{m,x} = c_{m,c/4} + \left(\frac{x}{c} - \frac{1}{4}\right)c_l ,
+$$ {#eq-transfer}
+and there is a unique point, the **aerodynamic centre**, about which the moment coefficient is independent of $c_l$. It lies at
+$$
+\frac{x_{ac}}{c} = \frac{1}{4} - m_0 ,
+$$ {#eq-xac}
+and the moment coefficient about it equals the zero-lift moment coefficient, $c_{m,ac} = c_{m,0}$. The centre of pressure is related to it by
+$$
+\frac{x_{cp}}{c} = \frac{x_{ac}}{c} - \frac{c_{m,ac}}{c_l}.
+$$ {#eq-xcp-xac}
+:::
+
+::: proof
+At small angles the resultant is, to first order, the lift $L'$ acting perpendicular to the chord. The moment of a force about a point $P$ depends on $P$: moving the reference point aft by $\Delta x$ adds the moment of the lift acting a distance $\Delta x$ *ahead* of the new point, which is nose-up, $+L'\,\Delta x$. Hence $M'_x = M'_{c/4} + \left(x - c/4\right)L'$, and dividing by $q_\infty c^2$ gives [[#eq-transfer]]. Substituting the linear model, $c_{m,x} = c_{m,0} + \left(m_0 + x/c - 1/4\right)c_l$, which is independent of $c_l$ exactly when $x/c = 1/4 - m_0$, giving [[#eq-xac]]; the remaining constant is $c_{m,0}$, the value at zero lift. Finally the centre of pressure is the point where $c_{m,x} = 0$: $0 = c_{m,ac} + \left(x_{cp}/c - x_{ac}/c\right)c_l$, which rearranges to [[#eq-xcp-xac]]. Assumptions: small angles ($N' \approx L'$, axial-force moment arms negligible) and a linear $c_m$–$c_l$ relation.
+:::
+
+The aerodynamic centre is a property of the section shape — for thin airfoils in incompressible flow it lies at the quarter-chord ($m_0 = 0$, as [[aerodynamics/thin-airfoil-theory]] will prove), and for real sections at low speed it is within one or two per cent of chord of it. In supersonic flow it moves back to about mid-chord. Representing the aerodynamics as *lift at the aerodynamic centre plus a constant couple* $c_{m,ac}$ is what makes the longitudinal stability analysis of [[flight-mechanics/longitudinal-static-stability]] tractable.
+
+::: widget plot
+f: 0.25 - m/x
+x: 0.05, 1.6
+y: -0.5, 2
+sliders: m=-0.05:-0.15:0.05:0.005
+labels: x_{cp}/c\ \text{for}\ x_{ac}/c = 0.25
+hlines: 0.25; 0; 1
+caption: Centre of pressure against lift coefficient, $x_{cp}/c = 1/4 - c_{m,ac}/c_l$ from [[#eq-xcp-xac]] with the aerodynamic centre at the quarter-chord. Move the slider $m = c_{m,ac}$. For a typical positively cambered section ($c_{m,ac} \approx -0.05$) the centre of pressure lies **behind** the quarter-chord and runs aft — off the trailing edge (the line at 1) when $c_l < 0.067$ — as the lift falls. Set $m = 0$ (a symmetric section) and the centre of pressure stays fixed at the aerodynamic centre; make $m$ positive (reflexed camber) and it lies ahead. The moving centre of pressure is why designers quote $c_{m,ac}$ instead.
+:::
+
+::: example Pressure distribution to forces {#ex-cp-integrate}
+On a thin section at $\alpha = 4^\circ$ the measured pressure difference is well fitted by $C_{p,l} - C_{p,u} = 1.6\,(1 - \xi)$, $\xi = x/c$, and the balance gives $c_a = 0.012$. Find $c_n$, $c_{m,LE}$, $c_{m,c/4}$, the centre of pressure, and $c_l$, $c_d$.
+::: solution
+From [[#eq-cn-cm]],
+$$
+c_n = \int_0^1 1.6\,(1 - \xi)\,d\xi = 0.800, \qquad
+c_{m,LE} = -\int_0^1 1.6\,(1 - \xi)\,\xi\,d\xi = -1.6\left(\tfrac12 - \tfrac13\right) = -0.267 .
+$$
+The centre of pressure is at $x_{cp}/c = -c_{m,LE}/c_n = 0.267/0.800 = 0.333$, the centroid of the triangular load, as it must be. Transferring the moment to the quarter-chord, $c_{m,c/4} = c_{m,LE} + \tfrac14 c_n = -0.267 + 0.200 = -0.067$. Rotating through $\alpha = 4^\circ$,
+$$
+c_l = 0.800\cos 4^\circ - 0.012\sin 4^\circ = 0.797, \qquad
+c_d = 0.800\sin 4^\circ + 0.012\cos 4^\circ = 0.068 .
+$$
+*Sanity check:* that drag coefficient is far too large for a real section at $c_l \approx 0.8$ (about $0.008$ is typical). The pressure distribution as given has no **leading-edge suction peak** — a real airfoil's upper-surface $C_p$ falls sharply to large negative values at the nose, and the forward-facing nose area turns that suction into a large *negative* axial force that cancels most of $N\sin\alpha$. The example shows why the leading-edge region must be resolved finely in any pressure-tap or panel calculation of drag: miss the suction peak and you get the drag of a flat plate in separated flow.
+:::
+:::
+
+::: example Locating the aerodynamic centre from test data {#ex-ac}
+Wind-tunnel tests of a section give, in the linear range, $c_{m,c/4} = -0.040$ at $c_l = 0.2$ and $c_{m,c/4} = -0.032$ at $c_l = 1.0$. Find the aerodynamic centre and $c_{m,ac}$.
+::: solution
+The slope is $m_0 = dc_{m,c/4}/dc_l = (-0.032 + 0.040)/(1.0 - 0.2) = 0.010$. By [[#eq-xac]],
+$$
+\frac{x_{ac}}{c} = 0.25 - 0.010 = 0.240 ,
+$$
+and by [[#eq-transfer]] at either data point, $c_{m,ac} = -0.040 + (0.240 - 0.250)(0.2) = -0.042$ (the other point gives $-0.032 - 0.010 = -0.042$ too). *Sanity check:* a moment that becomes *less* nose-down as lift rises means the lift is acting ahead of the quarter-chord, so the aerodynamic centre must lie ahead of $c/4$ — as found. A shift of one per cent of chord is typical of real sections at low speed.
+:::
+:::
+
+::: quiz
+A symmetric airfoil at a small positive angle of attack has its aerodynamic centre at the quarter-chord. Where is its centre of pressure?
+- [ ] Ahead of the quarter-chord, moving forward as $\alpha$ increases
+- [x] At the quarter-chord, for every small $\alpha$
+- [ ] Behind the quarter-chord, moving aft as $\alpha$ decreases
+- [ ] At mid-chord
+::: solution
+By symmetry a symmetric section has zero moment at zero lift, so $c_{m,ac} = 0$, and [[#eq-xcp-xac]] gives $x_{cp} = x_{ac}$ for every $c_l \neq 0$. The centre of pressure moves only for cambered sections ($c_{m,ac} \neq 0$).
+:::
+:::
+
+## What a coefficient can depend on: similarity
+
+Why are coefficients worth tabulating at all? Because, for geometrically similar bodies, the coefficients depend on only a handful of dimensionless numbers — and that is what makes it legitimate to test a model in a wind tunnel and fly the full-size aircraft.
+
+::: theorem Dimensionless form of the aerodynamic force {#thm-similarity}
+Suppose the lift $L$ on a body of given shape depends only on its size $\ell$, its attitude $\alpha$, and the free-stream speed $V_\infty$, density $\rho_\infty$, viscosity $\mu_\infty$ and speed of sound $a_\infty$. Then
+$$
+C_L = \frac{L}{q_\infty \ell^2} = f\!\left(\alpha,\ \mathrm{Re},\ M_\infty\right), \qquad
+\mathrm{Re} = \frac{\rho_\infty V_\infty \ell}{\mu_\infty}, \qquad M_\infty = \frac{V_\infty}{a_\infty},
+$$
+and the same holds for $C_D$ and $C_M$. Two geometrically similar bodies at the same $\alpha$, $\mathrm{Re}$ and $M_\infty$ have the same coefficients (**dynamic similarity**).
+:::
+
+::: proof
+This is the Buckingham $\Pi$ theorem of [[fluid-mechanics/dimensional-analysis]]. The relation $L = \phi(\ell, \alpha, V_\infty, \rho_\infty, \mu_\infty, a_\infty)$ involves seven quantities, one of them ($\alpha$) already dimensionless. The six dimensional ones involve the three base dimensions $\mathsf{M}$, $\mathsf{L}$, $\mathsf{T}$, and $\rho_\infty$, $V_\infty$, $\ell$ are dimensionally independent (no product of powers of them is dimensionless), so they serve as repeating variables. The remaining three dimensional quantities give one group each: $L/(\rho_\infty V_\infty^2 \ell^2)$, $\mu_\infty/(\rho_\infty V_\infty \ell) = 1/\mathrm{Re}$ and $a_\infty/V_\infty = 1/M_\infty$. The theorem then says that the dimensionless groups are related by a function of the others, $L/(\rho_\infty V_\infty^2\ell^2) = g(\alpha, \mathrm{Re}, M_\infty)$; absorbing the factor $\tfrac{1}{2}$ and using $\ell^2$ or $S$ as reference area gives the statement. Assumptions: the listed variables are the only ones that matter — no free surface (else the Froude number enters), no heat transfer from the body, a smooth surface (else the relative roughness $k/\ell$ enters), low free-stream turbulence, and a perfect gas with fixed $\gamma$ (for air, the ratio of specific heats $\gamma = 1.4$; at high temperature $\gamma$ itself becomes a parameter).
+:::
+
+The Reynolds number measures inertial against viscous forces and controls the boundary layer: where it becomes turbulent, whether and where it separates, and hence the drag and the maximum lift. The Mach number measures the importance of compressibility; below about $M_\infty = 0.3$ density changes are under about 5 per cent and the flow is treated as incompressible, which is the assumption of the first half of this course.
+
+::: example Why model testing is hard {#ex-tunnel}
+A wing of chord $c = 1.5\,\mathrm{m}$ flies at $V_\infty = 70\,\mathrm{m/s}$ at sea level ($\rho_\infty = 1.225\,\mathrm{kg/m^3}$, $\mu_\infty = 1.789\times10^{-5}\,\mathrm{Pa\,s}$, $a_\infty = 340.3\,\mathrm{m/s}$). A one-tenth-scale model is to be tested. (a) Find the full-scale $\mathrm{Re}$ and $M_\infty$. (b) What speed would an atmospheric tunnel need to match $\mathrm{Re}$, and is that acceptable? (c) What is the remedy?
+::: solution
+(a) $\mathrm{Re} = \rho_\infty V_\infty c/\mu_\infty = 1.225 \times 70 \times 1.5/1.789\times10^{-5} = 7.19\times10^6$ and $M_\infty = 70/340.3 = 0.206$.
+
+(b) With the same air, $\mathrm{Re} \propto V_\infty c$, so a model with $c$ ten times smaller needs $V_\infty = 700\,\mathrm{m/s}$ — Mach $2.06$. The flow would contain shock waves that the real aircraft never meets: matching $\mathrm{Re}$ has destroyed $M_\infty$ similarity. The coefficients would be useless.
+
+(c) Change the *gas state*, not the speed. Run at $V_\infty = 70\,\mathrm{m/s}$ and the same temperature (so $a_\infty$ and $M_\infty$ are unchanged) but at ten times the pressure: by the perfect-gas law $\rho_\infty$ is ten times larger, while viscosity of a gas is essentially independent of pressure, so
+$$
+\mathrm{Re}_\text{model} = \frac{(12.25)(70)(0.15)}{1.789\times10^{-5}} = 7.19\times10^6 .
+$$
+Both groups now match. Pressurised tunnels do exactly this; the alternative, used in cryogenic tunnels, is to cool the gas, which raises $\rho$ and lowers $\mu$ at once. *Sanity check:* the dynamic pressure on the model is ten times the full-scale value, so the model loads per unit area are ten times larger — one reason pressurised-tunnel models are machined from high-strength steel.
+:::
+:::
+
+::: application Reading an airfoil data sheet
+A catalogue of section data such as Abbott and von Doenhoff's *Theory of Wing Sections* gives, for each airfoil and several Reynolds numbers, the lift curve $c_l(\alpha)$, the moment curve $c_{m,ac}(c_l)$, and the drag polar $c_d(c_l)$, measured on two-dimensional models in a low-turbulence tunnel at low Mach number. The useful numbers are read off in a fixed order: the zero-lift angle $\alpha_{L=0}$ (negative for positive camber), the lift-curve slope $a_0 = dc_l/d\alpha$ (close to $2\pi$ per radian, $0.11$ per degree), the maximum lift coefficient and the stall behaviour (strongly $\mathrm{Re}$-dependent), $c_{m,ac}$ (nearly constant), and the minimum drag with the extent of any low-drag "bucket" (strongly $\mathrm{Re}$- and roughness-dependent). The first two come from inviscid theory ([[aerodynamics/thin-airfoil-theory]]); the last two need the boundary layer ([[aerodynamics/viscous-aerodynamics]]).
+:::
+
+::: history
+Systematic measurement of aerodynamic forces is older than powered flight. Otto **Lilienthal** measured the forces on cambered surfaces with whirling arms and in the natural wind, and in 1889 published *Der Vogelflug als Grundlage der Fliegekunst* (*Bird flight as the basis of aviation*), whose tables and polar diagrams showed that cambered surfaces lift far better than flat plates. Wilbur and Orville **Wright** found in 1900–01 that their gliders produced much less lift than Lilienthal's tables and the customary "Smeaton coefficient" (about $0.005$ in their units) predicted; from their glider and kite tests they concluded that the coefficient should be nearer $0.0033$ (the modern value is about $0.00326$). That did not explain all the shortfall, so in the autumn of 1901 they built a small wind tunnel in Dayton with balances that measured lift and drag *ratios*, and tested some two hundred model surfaces. The data designed the successful 1902 glider and the 1903 Flyer. Reynolds's pipe-flow experiments of 1883 supplied the similarity parameter that later explained why small-model tests misjudged maximum lift and drag, and pressurised tunnels — the NACA's Variable Density Tunnel at Langley, advocated by Max Munk and first operated in 1922 — were the first to attack that problem as in example [[#ex-tunnel]].
+:::
+
+## Summary
+
+::: summary
+- Every aerodynamic force and moment is the integral of surface **pressure** (normal) and **shear stress** (tangential). Lift and drag are defined relative to the free stream, normal and axial force relative to the chord; they are related by a rotation through $\alpha$, [[#eq-rotate]].
+- Coefficients divide by $q_\infty = \tfrac12\rho_\infty V_\infty^2$ and a stated reference area (and length for moments). Section coefficients are lower case per unit span. $C_p = (p - p_\infty)/q_\infty = 1 - (V/V_\infty)^2$ in incompressible flow.
+- $c_n$ is the area between the lower- and upper-surface $C_p$ curves; $c_{m,LE}$ is its first moment, [[#eq-cn-cm]]. The leading-edge suction peak must be resolved to obtain the drag.
+- The **centre of pressure** moves with lift and is undefined at zero lift for a cambered section. The **aerodynamic centre** is the point about which $c_m$ is independent of $c_l$; it is near the quarter-chord at low speed, and $x_{cp}/c = x_{ac}/c - c_{m,ac}/c_l$.
+- For a given shape, coefficients depend only on $\alpha$, $\mathrm{Re}$ and $M_\infty$ (Buckingham $\Pi$). Matching both $\mathrm{Re}$ and $M_\infty$ in a small model needs a denser (pressurised or cryogenic) gas.
 :::
 
 ## Exercises
 
-::: exercise Dynamic pressure {#ex-dynamic-pressure level=3 check="2"}
-Calculate the dynamic pressure at $V = 2 5 0$ m/s at an altitude of 10 km ($\rho = 0 . 4 1 3 5$ kg/m³).
-
+::: exercise Dynamic pressure {level=1 check="3.00"}
+Find the dynamic pressure of a sea-level stream ($\rho_\infty = 1.225\,\mathrm{kg/m^3}$) at $V_\infty = 70\,\mathrm{m/s}$. (Enter $q_\infty$ in kPa.)
 ::: solution
-$$
-q \; = \; { \frac { 1 } { 2 } } \, \rho \, V ^ { 2 } \; = \; { \frac { 1 } { 2 } } \times 0 . 4 1 3 5 \times 2 5 0 ^ { 2 } \; = \; { \bf 1 2 \ 9 2 2 } \ \text{Pa}
-$$
-
-**The dynamic pressure is 12 922 Pa.**
+$q_\infty = \tfrac12(1.225)(70)^2 = 3001\,\mathrm{Pa} = 3.00\,\mathrm{kPa}$. A useful reference: $70\,\mathrm{m/s}$ is about $136$ knots, a typical light-twin approach speed, and $3\,\mathrm{kPa}$ is only 3 per cent of atmospheric pressure — aerodynamic pressures are small differences on top of a large ambient value.
 :::
 :::
 
-::: exercise Lift coefficient {#ex-lift-coefficient level=3 check="2"}
-An aircraft with $S = 5 0$ m² and $W = 2 0 0$ kN flies at $V = 1 0 0$ m/s at sea level ($\rho = 1 . 2 2 5$ kg/m³). Calculate the lift coefficient.
-
+::: exercise Lift coefficient of a glider {level=1 check="0.741"}
+A glider of mass $500\,\mathrm{kg}$ and wing area $12\,\mathrm{m^2}$ flies level at $30\,\mathrm{m/s}$ at sea level. Find its lift coefficient (take $g = 9.81\,\mathrm{m/s^2}$). (Enter $C_L$.)
 ::: solution
-$$
-C _ { L } \; = \; { \frac { L } { q \, S } } \; = \; { \frac { W } { { \frac { 1 } { 2 } } \, \rho \, V ^ { 2 } \, S } } \; = \; { \frac { 2 0 0 \ 0 0 0 } { { \frac { 1 } { 2 } } \times 1 . 2 2 5 \times 1 0 \ 0 0 0 \times 5 0 } } \; = \; { \frac { 2 0 0 \ 0 0 0 } { 3 0 \ 6 2 5 } } \; = \; { \bf 0 . 6 5 3 }
-$$
-
-**The lift coefficient is 0.653.**
+$C_L = mg/(q_\infty S) = 500 \times 9.81 / \left(\tfrac12 \times 1.225 \times 30^2 \times 12\right) = 4905/6615 = 0.741$. This is a typical thermalling lift coefficient: gliders circle slowly at fairly high $C_L$.
 :::
 :::
 
-::: exercise Angle of attack {#ex-angle-of-attack level=3 check="2"}
-An airfoil has $C _ { L , \alpha } = 0 . 1 1$ per degree and $\alpha _ { 0 } = - 2 ^ { \circ }$ . Calculate the angle of attack for $C _ { L } = 1 . 0$ .
-
+::: exercise Pressure coefficient from local speed {level=1 check="-0.96"}
+At a point on the upper surface of a wing in low-speed flow the local speed is $1.4$ times the free-stream speed. Find the pressure coefficient there. (Enter $C_p$.)
 ::: solution
-$$
-\alpha \; = \; { \frac { C _ { L } } { C _ { L , \alpha } } } + \alpha _ { 0 } \; = \; { \frac { 1 . 0 } { 0 . 1 1 } } + ( - 2 ) \; = \; 9 . 0 9 - 2 \; = \; { \bf 7 . 1 } \ ^ { \circ }
-$$
-
-**The angle of attack is 7.1°.**
+By [[#eq-cp-incomp]], $C_p = 1 - 1.4^2 = 1 - 1.96 = -0.96$. The local pressure is $0.96\,q_\infty$ below ambient.
 :::
 :::
 
-::: exercise Reynolds number {#ex-reynolds-ex level=3 check="2"}
-Calculate the Reynolds number for an aircraft with $c = 2$ m flying at $V = 1 0 0$ m/s at sea level ($\nu = 1 . 4 6 \times 1 0 ^ { - 5 }$ m²/s).
-
+::: exercise Lift and drag from a body-axis balance {level=2 check="136"}
+A two-dimensional model at $\alpha = 10^\circ$ has $N' = 850\,\mathrm{N/m}$ and $A' = -12\,\mathrm{N/m}$ (the axial force points towards the leading edge). Find $L'$ and $D'$. (Enter $D'$ in N/m.)
 ::: solution
-$$
-R e \; = \; { \frac { V \, c } { \nu } } \; = \; { \frac { 1 0 0 \times 2 } { 1 . 4 6 \times 1 0 ^ { - 5 } } } \; = \; { \bf 1 . 3 7 } \times 1 0 ^ { 7 }
-$$
-
-**The Reynolds number is 1.37 × 10⁷.**
+$L' = 850\cos 10^\circ - (-12)\sin 10^\circ = 837.1 + 2.1 = 839\,\mathrm{N/m}$; $D' = 850\sin 10^\circ + (-12)\cos 10^\circ = 147.6 - 11.8 = 136\,\mathrm{N/m}$. The negative axial force is the leading-edge suction; it *reduces* the drag, but the drag is still positive, as it must be for a body in steady two-dimensional flow.
 :::
 :::
 
-::: exercise Drag calculation {#ex-drag-calc level=3 check="2"}
-An aircraft has $C _ { D } = 0 . 0 3$ , $S = 4 0$ m², and flies at $V = 2 0 0$ m/s at sea level ($\rho = 1 . 2 2 5$ kg/m³). Calculate the drag.
-
+::: exercise Centre of pressure of a cambered section {level=2 check="0.35"}
+A section has its aerodynamic centre at the quarter-chord and $c_{m,ac} = -0.05$. Where is the centre of pressure when $c_l = 0.5$? (Enter $x_{cp}/c$.)
 ::: solution
-$$
-D \; = \; C _ { D } \, q \, S \; = \; 0 . 0 3 \times { \frac { 1 } { 2 } } \times 1 . 2 2 5 \times 2 0 0 ^ { 2 } \times 4 0 \; = \; 0 . 0 3 \times 2 4 \ 5 0 0 \times 4 0 \; = \; { \bf 2 9 \ 4 0 0 } \ \text{N}
-$$
-
-**The drag is 29.4 kN.**
+By [[#eq-xcp-xac]], $x_{cp}/c = 0.25 - (-0.05)/0.5 = 0.25 + 0.10 = 0.35$. At $c_l = 0.25$ it would be at $0.45$, and at $c_l = 0.05$ at the trailing edge: the nose-down couple of positive camber pushes the centre of pressure aft as lift falls.
 :::
 :::
 
-::: exercise Derivation: the drag polar {#ex-derive-drag-polar level=4 check="2"}
-Show that the maximum L/D occurs at $C _ { L } = { \sqrt { C _ { D , 0 } \, \pi \, e \, A R } }$ . Write the expression for the maximum L/D.
-
+::: exercise Aerodynamic centre from two points {level=2 check="0.27"}
+Tests of a section give $c_{m,c/4} = -0.050$ at $c_l = 0$ and $c_{m,c/4} = -0.066$ at $c_l = 0.8$. Locate the aerodynamic centre. (Enter $x_{ac}/c$.)
 ::: solution
-The **L/D ratio** is:
-
-$$
-{ \frac { L } { D } } \; = \; { \frac { C _ { L } } { C _ { D } } } \; = \; { \frac { C _ { L } } { C _ { D , 0 } + C _ { L } ^ { 2 } / ( \pi \, e \, A R ) } }
-$$
-
-To maximize $L / D$ , differentiate with respect to $C _ { L }$ and set to zero:
-
-$$
-{ \frac { d } { d C _ { L } } } \left( { \frac { C _ { L } } { C _ { D , 0 } + C _ { L } ^ { 2 } / ( \pi \, e \, A R ) } } \right) \; = \; 0
-$$
-
-$$
-{ \frac { C _ { D , 0 } + C _ { L } ^ { 2 } / ( \pi \, e \, A R ) - C _ { L } \cdot 2 \, C _ { L } / ( \pi \, e \, A R ) } { ( C _ { D , 0 } + C _ { L } ^ { 2 } / ( \pi \, e \, A R ) ) ^ { 2 } } } \; = \; 0
-$$
-
-$$
-C _ { D , 0 } - { \frac { C _ { L } ^ { 2 } } { \pi \, e \, A R } } \; = \; 0 \qquad \Rightarrow \qquad C _ { L } \; = \; { \sqrt { C _ { D , 0 } \, \pi \, e \, A R } }
-$$
-
-The **maximum L/D** is:
-
-$$
-\left( { \frac { L } { D } } \right) _ { \max } \; = \; { \frac { \sqrt { C _ { D , 0 } \, \pi \, e \, A R } } { 2 \, C _ { D , 0 } } } \; = \; { \frac { 1 } { 2 } } \, { \sqrt { \frac { \pi \, e \, A R } { C _ { D , 0 } } } }
-$$
-
-**The maximum L/D is the reason the aerodynamic force is designed for the drag, not the lift, and the drag is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.** $\blacksquare$
+$m_0 = (-0.066 + 0.050)/0.8 = -0.020$, so $x_{ac}/c = 0.25 - (-0.020) = 0.27$ by [[#eq-xac]], and $c_{m,ac} = c_{m,0} = -0.050$. The moment becomes more nose-down with lift, so the lift acts behind the quarter-chord and so does the aerodynamic centre.
 :::
 :::
 
-::: exercise Derivation: the lift curve slope {#ex-derive-lift-slope level=4 check="2"}
-Show that the lift curve slope for a thin airfoil in incompressible flow is $C _ { L , \alpha } = 2 \pi$ per radian. Write the expression for the lift coefficient.
-
+::: exercise Stall speed and Reynolds number {level=2 check="2.91e6"}
+An aircraft of mass $1200\,\mathrm{kg}$ has $S = 16\,\mathrm{m^2}$, mean chord $1.5\,\mathrm{m}$ and $C_{L,\max} = 1.5$. Find the sea-level stall speed and the chord Reynolds number at that speed ($\mu_\infty = 1.789\times10^{-5}\,\mathrm{Pa\,s}$). (Enter $\mathrm{Re}$.)
 ::: solution
-The **Kutta-Joukowski theorem** states that the lift per unit span is:
-
-$$
-L ^ { \prime } \; = \; \rho \, V _ { \infty } \, \Gamma
-$$
-
-For a **thin flat plate** at angle of attack $\alpha$ , the circulation is:
-
-$$
-\Gamma \; = \; \pi \, c \, V _ { \infty } \, \sin \alpha \; \approx \; \pi \, c \, V _ { \infty } \, \alpha
-$$
-
-The **lift coefficient** is:
-
-$$
-C _ { L } \; = \; { \frac { L ^ { \prime } } { { \frac { 1 } { 2 } } \, \rho \, V _ { \infty } ^ { 2 } \, c } } \; = \; { \frac { \rho \, V _ { \infty } \, \pi \, c \, V _ { \infty } \, \alpha } { { \frac { 1 } { 2 } } \, \rho \, V _ { \infty } ^ { 2 } \, c } } \; = \; 2 \, \pi \, \alpha
-$$
-
-The **lift curve slope** is:
-
-$$
-C _ { L , \alpha } \; = \; { \frac { d C _ { L } } { d \alpha } } \; = \; 2 \, \pi \quad \text{per radian}
-$$
-
-**The lift curve slope is the reason the aerodynamic force is designed for the lift, not the drag, and the lift is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.** $\blacksquare$
+$V_s = \sqrt{2 \times 1200 \times 9.81/(1.225 \times 16 \times 1.5)} = \sqrt{800.8} = 28.3\,\mathrm{m/s}$, and $\mathrm{Re} = 1.225 \times 28.3 \times 1.5/1.789\times10^{-5} = 2.91\times10^6$. Maximum lift depends strongly on $\mathrm{Re}$ in this range, so $C_{L,\max}$ data should be taken from tests near $3\times10^6$, not from small-tunnel tests at $5\times10^5$.
 :::
 :::
 
-::: quiz Aerodynamic forces {#quiz-aerodynamic-forces}
-The most fundamental quantity in aerodynamics is:
-
-- [ ] The pressure
-- [x] The aerodynamic force
-- [ ] The velocity
-- [ ] The temperature
-
+::: exercise Moment from a pressure distribution {level=3 check="-0.25"}
+A thin section has $C_{p,l} - C_{p,u} = 3\,(1 - \xi)^2$, $\xi = x/c$. Find $c_n$ and $c_{m,LE}$, and locate the centre of pressure. (Enter $c_{m,LE}$.)
 ::: solution
-**The aerodynamic force.** The aerodynamic force is the most fundamental quantity in aerodynamics, because the aerodynamic force is the force that the fluid exerts on the body, and the aerodynamic force is the force that determines the performance of the aircraft. The engineer who calculates the aerodynamic force without checking the coefficient is not calculating the aerodynamic force; they are guessing.
+$c_n = \int_0^1 3(1-\xi)^2\,d\xi = 1$. $c_{m,LE} = -\int_0^1 3\xi(1-\xi)^2\,d\xi = -3\left(\tfrac12 - \tfrac23 + \tfrac14\right) = -3 \times \tfrac{1}{12} = -0.25$. Then $x_{cp}/c = 0.25/1 = 0.25$: the load is concentrated near the nose, as on a real airfoil at incidence, and its centroid sits at the quarter-chord. This distribution has the same first two moments as the flat-plate loading of thin-airfoil theory, which is concentrated even more strongly at the leading edge.
 :::
 :::
 
-::: quiz Drag polar {#quiz-drag-polar}
-The maximum L/D occurs when:
-
-- [ ] $C _ { D , 0 } = 2 C _ { D , i }$
-- [x] $C _ { D , 0 } = C _ { D , i }$
-- [ ] $C _ { D , 0 } = 0 . 5 C _ { D , i }$
-- [ ] $C _ { D , 0 } = 3 C _ { D , i }$
-
+::: exercise The aerodynamic centre in terms of angle-of-attack slopes {level=3}
+Wind-tunnel data are often given as functions of $\alpha$ rather than $c_l$. Suppose that in the linear range $c_l = a_0(\alpha - \alpha_{L=0})$ and $c_{m,c/4} = c_{m,0} + b_0(\alpha - \alpha_{L=0})$ with constant slopes $a_0$ and $b_0$. Derive the location of the aerodynamic centre in terms of $a_0$ and $b_0$, and show that it lies at the quarter-chord for any section whose quarter-chord moment does not change with incidence.
 ::: solution
-**$C _ { D , 0 } = C _ { D , i }$ .** The maximum L/D occurs when the zero-lift drag equals the induced drag, and the maximum L/D is the reason the aerodynamic force is designed for the drag, not the lift. The engineer who calculates the aerodynamic force without checking the drag polar is not calculating the aerodynamic force; they are guessing.
+By [[#eq-transfer]], $c_{m,x} = c_{m,0} + b_0(\alpha - \alpha_{L=0}) + (x/c - 1/4)a_0(\alpha - \alpha_{L=0})$. This is independent of $\alpha$ when $b_0 + (x/c - 1/4)a_0 = 0$, i.e.
+$$
+\frac{x_{ac}}{c} = \frac14 - \frac{b_0}{a_0},
+$$
+which is [[#eq-xac]] with $m_0 = b_0/a_0$ (by the chain rule, $dc_m/dc_l = (dc_m/d\alpha)/(dc_l/d\alpha)$). If $b_0 = 0$ the aerodynamic centre is at $c/4$. Both slopes must be in the same angle unit; the ratio is then unit-free.
 :::
 :::
 
-## Where this lesson leads
+::: exercise Planning a pressurised-tunnel test {level=3 check="8"}
+A one-eighth-scale model of a wing is to be tested in a closed-circuit tunnel at the same Mach number and Reynolds number as the full-size wing at sea level. The tunnel air is at the same temperature as the sea-level atmosphere. (a) What static pressure (as a multiple of $101.3\,\mathrm{kPa}$) is required? (b) Discuss two practical problems this creates and one alternative. (Enter the pressure ratio for part (a).)
+::: solution
+(a) Same temperature means the same $a_\infty$ and $\mu_\infty$; same $M_\infty$ then means the same $V_\infty$. With $\mathrm{Re} = \rho_\infty V_\infty \ell/\mu_\infty$ and $\ell$ divided by $8$, $\rho_\infty$ must be multiplied by $8$, and at fixed temperature $p \propto \rho$: the tunnel must run at $8$ atmospheres.
 
-- **[[aerodynamics/potential-flow]]** — The potential flow is the foundation of the aerodynamic force calculation.
-- **[[aerodynamics/thin-airfoil-theory]]** — The thin airfoil theory is the foundation of the aerodynamic force calculation.
-- **[[aerodynamics/panel-methods]]** — The panel methods are the foundation of the aerodynamic force calculation.
-- **[[aerodynamics/finite-wings]]** — The finite wing theory is the foundation of the aerodynamic force calculation.
-- **[[aerodynamics/viscous-aerodynamics]]** — The viscous effects are the foundation of the aerodynamic force calculation.
-- **[[aerodynamics/oblique-shocks]]** — The oblique shocks are the foundation of the aerodynamic force calculation.
-- **[[aerodynamics/compressible-airfoils]]** — The compressible airfoils are the foundation of the aerodynamic force calculation.
-- **[[aerodynamics/supersonic-hypersonic]]** — The supersonic and hypersonic flow are the foundation of the aerodynamic force calculation.
-- **[[flight-mechanics/steady-flight-performance]]** — The aerodynamic force is the foundation of the flight mechanics.
-- **[[fluid-mechanics/bernoulli]]** — The Bernoulli equation is the foundation of the aerodynamic force calculation.
-
-::: history Aerodynamic forces: from the wind tunnel to the CFD {#history-aerodynamic-forces}
-**1753** — **Daniel Bernoulli** publishes the **Bernoulli equation**, which is the foundation of the aerodynamic force calculation. **The Bernoulli equation is the reason the aerodynamic force is the oldest concept in aerodynamics, and the age is the reason the aerodynamic force is the most refined concept in aerodynamics.**
-
-**1804** — **Sir George Cayley** identifies the **four forces of flight** (lift, weight, thrust, drag), and the four forces of flight are the reason the aerodynamic force is the most fundamental quantity in aerodynamics. **The four forces of flight are the reason the aerodynamic force is the most refined quantity in aerodynamics, and the aerodynamic force is the reason the four forces of flight are the most fundamental quantity in aerodynamics.**
-
-**1871** — **Francis Wenham** builds the **first wind tunnel**, and the wind tunnel is the reason the aerodynamic force is the most measured quantity in aerodynamics. **The wind tunnel is the reason the aerodynamic force is the most refined quantity in aerodynamics, and the aerodynamic force is the reason the wind tunnel is the most measured quantity in aerodynamics.**
-
-**1903** — **The Wright brothers** fly the **first powered aircraft**, and the first powered aircraft is the reason the aerodynamic force is the most important quantity in engineering. **The first powered aircraft is the reason the aerodynamic force is the most refined quantity in engineering, and the aerodynamic force is the reason the first powered aircraft is the most important quantity in engineering.**
-
-**1919** — **Ludwig Prandtl** publishes the **lifting line theory**, and the lifting line theory is the reason the aerodynamic force is the most calculated quantity in aerodynamics. **The lifting line theory is the reason the aerodynamic force is the most refined quantity in aerodynamics, and the aerodynamic force is the reason the lifting line theory is the most calculated quantity in aerodynamics.**
-
-**1935** — **The NACA airfoil series** is developed, and the NACA airfoil series is the reason the aerodynamic force is the most optimized quantity in aerodynamics. **The NACA airfoil series is the reason the aerodynamic force is the most refined quantity in aerodynamics, and the aerodynamic force is the reason the NACA airfoil series is the most optimized quantity in aerodynamics.**
-
-**1960s** — **The panel method** is developed, and the panel method is the reason the aerodynamic force is the most computed quantity in aerodynamics. **The panel method is the reason the aerodynamic force is the most refined quantity in aerodynamics, and the aerodynamic force is the reason the panel method is the most computed quantity in aerodynamics.**
-
-**1990s** — **The CFD (computational fluid dynamics)** becomes standard in aerodynamic design, and the CFD is the reason the aerodynamic force is the most simulated quantity in aerodynamics. **The CFD is the reason the aerodynamic force is the most refined quantity in aerodynamics, and the aerodynamic force is the reason the CFD is the most simulated quantity in aerodynamics.**
+(b) The dynamic pressure on the model is eight times the full-scale value, so the model and its supports carry eight times the loads per unit area and deflect — the model must be stiff steel, and its aeroelastic shape may still differ from flight. The tunnel shell is a large pressure vessel, designed and inspected to the applicable pressure-vessel code, and every model change means depressurising it, so productivity is low. The drive power for the same Mach number also rises in proportion to the density. The main alternative is a **cryogenic** tunnel using nitrogen near $100\,\mathrm{K}$: cooling raises the density and lowers the viscosity and the speed of sound, so the Reynolds number rises sharply at a moderate pressure and modest power — at the cost of thermal-insulation, frost and model-material problems. The trade between them is a genuine engineering choice with no single right answer.
 :::
-
-::: summary Aerodynamic forces and coefficients {#summary-aerodynamic-forces}
-- **The aerodynamic force is the force that the fluid exerts on the body: $\vec { F } = - \oint p \, \hat { n } \, d A + \oint \vec { \tau } \, d A$ .** The dynamic pressure is the reason the aerodynamic force is designed for the velocity, not the pressure, and the velocity is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.
-- **The dynamic pressure is $q = { \frac { 1 } { 2 } } \, \rho \, V ^ { 2 }$ .** The dynamic pressure is the reason the aerodynamic force is designed for the velocity, not the pressure.
-- **The lift coefficient is $C _ { L } = L / ( q \, S )$ , and the drag coefficient is $C _ { D } = D / ( q \, S )$ .** The lift coefficient and the drag coefficient are the reason the aerodynamic force is designed for the lift and the drag, not the pressure.
-- **The lift curve is $C _ { L } = C _ { L , \alpha } \, ( \alpha - \alpha _ { 0 } )$ , and the lift curve slope for a thin airfoil is $C _ { L , \alpha } = 2 \pi$ per radian.** The angle of attack is the reason the aerodynamic force is designed for the lift, not the drag, and the lift is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.
-- **The drag polar is $C _ { D } = C _ { D , 0 } + C _ { L } ^ { 2 } / ( \pi \, e \, A R )$ .** The drag polar is the reason the aerodynamic force is designed for the drag, not the lift, and the drag is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.
-- **The maximum L/D is $( L / D ) _ { \max } = { \frac { 1 } { 2 } } \, { \sqrt { \pi \, e \, A R / C _ { D , 0 } } }$ , and it occurs at $C _ { L } = { \sqrt { C _ { D , 0 } \, \pi \, e \, A R } }$ .** The maximum L/D is the reason the aerodynamic force is designed for the drag, not the lift.
-- **The Reynolds number is $R e = \rho \, V \, L / \mu = V \, L / \nu$ .** The Reynolds number is the reason the aerodynamic force is designed for the viscosity, not the velocity, and the viscosity is the reason the aerodynamic force is the most fundamental quantity in aerodynamics.
-- **The skin friction coefficient is $C _ { f } = 0 . 0 7 4 / R e ^ { 1 / 5 }$ (turbulent) and $C _ { f } = 1 . 3 2 8 / { \sqrt { R e } }$ (laminar).** The skin friction coefficient is the reason the aerodynamic force is designed for the viscosity, not the velocity.
-- **The aerodynamic force calculation is the most important calculation in aerodynamics, because the aerodynamic force calculation determines the performance of the aircraft.** The performance is the reason the engineer can design the aircraft to be safe.
-- **The aerodynamic force is the most fundamental quantity in aerodynamics, because the aerodynamic force is the force that the fluid exerts on the body.** The force is the reason the engineer can design the aircraft to be safe.
 :::
-
-## Further reading
-
-- **J.D. Anderson (2017)** — *Fundamentals of Aerodynamics*, 6th ed. McGraw-Hill. The aerodynamic force, the lift coefficient, and the drag coefficient.
-- **A.C. Kermode (2006)** — *Mechanics of Flight*, 9th ed. Pearson. The aerodynamic force and the flight mechanics.
-- **I.H. Abbott and A.E. von Doenhoff (1959)** — *Theory of Wing Sections*. Dover. The airfoil theory and the aerodynamic force.
-- **L.J. Clancy (1975)** — *Aerodynamics*, 2nd ed. Pitman. The aerodynamic force and the drag polar.
-- **E.L. Houghton and P.W. Carpenter (1993)** — *Aerodynamics for Engineering Students*, 4th ed. Arnold. The aerodynamic force and the lift curve.
-- **K. Katz and A. Plotkin (2001)** — *Low-Speed Aerodynamics*, 2nd ed. Cambridge University Press. The potential flow and the aerodynamic force.
-- **J.D. Anderson (2007)** — *Fundamentals of Aerodynamics*, 5th ed. McGraw-Hill. The aerodynamic force and the compressibility.
-- **A. Peery and C. Azar (1982)** — *Aircraft Performance and Design*. McGraw-Hill. The aerodynamic force and the aircraft performance.
