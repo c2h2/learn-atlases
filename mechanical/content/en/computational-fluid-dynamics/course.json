@@ -5,28 +5,28 @@
   "area": "thermofluids",
   "level": 4,
   "order": 210,
-  "tagline": "Governing equations, finite differences and finite volumes, stability and accuracy, convection schemes, pressure\u2013velocity coupling, turbulence modelling and verification",
-  "summary": "Computational fluid dynamics solves the equations of fluid flow and heat transfer numerically and is now part of almost every thermofluids design. The course covers the conservation equations and their mathematical character, finite-difference and finite-volume discretisation, consistency, stability and convergence, schemes for diffusion and convection, iterative solvers, pressure\u2013velocity coupling for incompressible flow, turbulence modelling, meshing and boundary conditions, and the verification and validation of results.",
+  "tagline": "Governing equations, finite differences and finite volumes, stability, convection schemes, linear solvers, pressure–velocity coupling, turbulence modelling, and verification and validation",
+  "summary": "Computational fluid dynamics solves the equations of fluid flow and heat transfer numerically and is now part of almost every thermofluids design. The course covers the conservation equations and their mathematical character, finite-difference and finite-volume discretisation, consistency, stability and convergence, schemes for diffusion and convection, the solution of the discrete equations, pressure–velocity coupling for incompressible flow, turbulence modelling, meshing and boundary conditions, and the verification and validation of results.",
   "overview": [
-    "Computational fluid dynamics (CFD) is the branch of mechanical engineering that solves the equations of fluid flow, heat transfer and species transport numerically on a computer. Where analytical fluid mechanics is limited to simple geometries and idealised flows, CFD handles the complex geometries, turbulence, chemical reactions and multiphase interactions that dominate real engineering devices. A modern aircraft, gas turbine, car, chemical reactor or biomedical device is designed with CFD as a central tool, and the practicing engineer must understand both the power and the limitations of the method.",
-    "This course builds CFD from the ground up. It begins with the governing equations of fluid dynamics \u2014 the continuity, momentum and energy equations \u2014 and classifies them as elliptic, parabolic or hyperbolic, a classification that dictates the appropriate numerical treatment. Finite-difference and finite-volume discretisation methods are then developed, with careful attention to truncation error, consistency, stability and convergence. The Lax equivalence theorem, the CFL condition and von Neumann stability analysis provide the theoretical backbone.",
-    "The course then addresses the practical challenges that make CFD a demanding discipline: the convection-diffusion schemes that balance accuracy against boundedness, the pressure-velocity coupling algorithms (SIMPLE, PISO, coupled solvers) that enforce mass conservation in incompressible flow, and the turbulence models (mixing length, k-epsilon, k-omega SST, LES) that close the Reynolds-averaged equations. Each topic is illustrated with worked examples and interactive widgets that let the reader explore the trade-offs.",
-    "The final lessons cover meshing strategy, boundary condition selection, and the verification and validation process that separates a trustworthy simulation from a colourful guess. The grid convergence index, the y+ requirement for near-wall resolution, and the ASME V&V 20 standard are presented as the quality assurance tools that every CFD practitioner must master. The course assumes a working knowledge of fluid mechanics, heat transfer, and numerical methods, and prepares the reader for research or industrial CFD work."
+    "Computational fluid dynamics (CFD) solves the conservation equations of mass, momentum and energy numerically, on a mesh of small cells covering the flow domain. Where analytical fluid mechanics is confined to simple geometries and idealised flows, CFD handles the complex shapes, turbulence and heat transfer of real devices — pumps, heat exchangers, wings, combustors, ventilation systems — and is now used routinely throughout thermofluids design. It is also easy to misuse: a CFD code always produces an answer, and the answer always looks plausible.",
+    "This course builds the method from the ground up, in the order in which a general-purpose code is constructed. It starts from the governing equations in integral and differential form and their classification as elliptic, parabolic or hyperbolic, which decides how a problem can be solved and what boundary conditions it needs. Finite differences introduce truncation error and order of accuracy; von Neumann analysis, the CFL condition and the Lax equivalence theorem explain stability and convergence; and the finite volume method, which conserves exactly on any mesh, is developed first for diffusion and then for convection, where the competition between accuracy and boundedness leads to upwind, QUICK and TVD schemes.",
+    "The second half addresses what makes practical CFD demanding: solving systems with millions of unknowns efficiently (iterative methods, multigrid and Krylov solvers), coupling pressure and velocity in incompressible flow (staggered grids, Rhie–Chow interpolation, SIMPLE, PISO and projection methods), and representing turbulence through Reynolds averaging, eddy-viscosity models such as $k$–$\\varepsilon$ and $k$–$\\omega$ SST, wall treatment and large-eddy simulation. The final lesson covers meshes, boundary conditions and the verification and validation procedures — manufactured solutions, Richardson extrapolation, the grid convergence index and the ASME V&V 20 comparison — that turn a simulation into an engineering result with a stated uncertainty.",
+    "The course assumes fluid mechanics, heat transfer and the numerical analysis of a first course (Taylor series, linear systems, ODE integrators). Every lesson works through small problems by hand — five-cell conduction and convection problems, a single pressure correction, a three-grid convergence study — because the behaviour of a large code is best understood on a problem small enough to check with a calculator."
   ],
   "prerequisites": [
     "fluid-mechanics",
     "heat-transfer"
   ],
   "outcomes": [
-    "Classify the governing equations of fluid dynamics as elliptic, parabolic or hyperbolic and explain the implications for numerical solution",
-    "Derive finite-difference and finite-volume approximations of the conservation equations and compute their truncation error",
-    "Perform von Neumann stability analysis, apply the CFL condition, and use the Lax equivalence theorem to assess convergence",
-    "Select and implement appropriate convection-diffusion schemes (upwind, central, QUICK, TVD) based on the local Peclet number",
-    "Explain the SIMPLE pressure-velocity coupling algorithm and the role of the Rhie-Chow interpolation on collocated grids",
-    "Compare turbulence models (mixing length, k-epsilon, k-omega SST, LES) and select the appropriate model for a given flow regime",
-    "Design a mesh with adequate near-wall resolution (y+ target), acceptable skewness and aspect ratio, and perform a grid convergence study using the GCI method",
-    "Distinguish verification from validation and quantify numerical and modeling uncertainty in a CFD prediction",
-    "Implement iterative solvers (Jacobi, Gauss-Seidel, conjugate gradient, multigrid) and assess their convergence rate from the spectral radius and condition number"
+    "Derive the integral and differential conservation equations of fluid flow and classify model equations as elliptic, parabolic or hyperbolic, stating the boundary data each type requires.",
+    "Construct finite-difference approximations by Taylor series and determine their truncation error, order of accuracy and modified wavenumber.",
+    "Analyse the stability of explicit and implicit schemes by von Neumann analysis and the CFL condition, and explain convergence through the Lax equivalence theorem.",
+    "Discretise steady and unsteady diffusion problems by the finite volume method, including boundary conditions, interface conductivities and source linearisation.",
+    "Select a convection scheme (central, upwind, hybrid, QUICK or a TVD limiter) from the cell Péclet number and the need for boundedness, and estimate the numerical diffusion it introduces.",
+    "Solve the discrete equations with direct and iterative methods, estimate their convergence rate from the spectral radius, and explain why multigrid and preconditioned Krylov methods are used for large problems.",
+    "Explain pressure–velocity decoupling and derive the SIMPLE pressure-correction equation, Rhie–Chow interpolation and the projection method.",
+    "Choose a turbulence model and near-wall mesh for a given flow, and estimate first-cell heights and inlet turbulence quantities.",
+    "Carry out a grid-convergence study with Richardson extrapolation and the grid convergence index, and compare simulation with experiment using a validation uncertainty."
   ],
   "chapters": [
     {
@@ -72,8 +72,8 @@
     },
     {
       "slug": "convection-diffusion",
-      "title": "Convection\u2013diffusion schemes",
-      "summary": "Central, upwind and higher-order schemes, the P\u00e9clet number, boundedness and flux limiters.",
+      "title": "Convection–diffusion schemes",
+      "summary": "Central, upwind and higher-order schemes, the Péclet number, boundedness and flux limiters.",
       "requires": [
         "computational-fluid-dynamics/finite-volume-diffusion",
         "computational-fluid-dynamics/stability-accuracy"
@@ -81,7 +81,7 @@
     },
     {
       "slug": "pressure-velocity",
-      "title": "Pressure\u2013velocity coupling",
+      "title": "Pressure–velocity coupling",
       "summary": "Staggered and collocated grids, the SIMPLE family of algorithms and fractional-step methods for incompressible flow.",
       "requires": [
         "computational-fluid-dynamics/convection-diffusion",
@@ -91,7 +91,7 @@
     {
       "slug": "turbulence-modelling",
       "title": "Turbulence modelling",
-      "summary": "Reynolds averaging, eddy-viscosity models such as k\u2013\u03b5 and k\u2013\u03c9 SST, wall treatment, and large-eddy simulation.",
+      "summary": "Reynolds averaging, eddy-viscosity models such as k–ε and k–ω SST, wall treatment, and large-eddy simulation.",
       "requires": [
         "computational-fluid-dynamics/pressure-velocity",
         "fluid-mechanics/boundary-layers-drag"
@@ -108,97 +108,140 @@
   ],
   "history": [
     {
-      "year": 1943,
-      "title": "Los Alamos finite-difference work",
-      "detail": "Stanislaw Ulam, John von Neumann and colleagues at Los Alamos develop finite-difference methods for shock-wave calculations, establishing the foundations of computational fluid dynamics."
+      "year": 1911,
+      "title": "Finite differences for a masonry dam",
+      "detail": "Lewis Fry Richardson computes the stresses in a masonry dam by finite differences in the *Philosophical Transactions of the Royal Society A*, the first systematic numerical solution of a PDE problem, and proposes extrapolating results from two grids.",
+      "people": [
+        "Lewis Fry Richardson"
+      ]
     },
     {
-      "year": 1952,
-      "title": "First CFD code",
-      "detail": "The first practical CFD code is written at Los Alamos to solve the compressible Navier-Stokes equations on a two-dimensional grid, marking the birth of CFD as a discipline."
+      "year": 1928,
+      "title": "The CFL condition",
+      "detail": "Courant, Friedrichs and Lewy publish their analysis of difference equations in *Mathematische Annalen*, showing that the numerical domain of dependence must contain the physical one.",
+      "people": [
+        "Richard Courant",
+        "Kurt Friedrichs",
+        "Hans Lewy"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Flow past a cylinder computed by hand",
+      "detail": "Alexander Thom publishes a numerical solution of the steady viscous flow past a circular cylinder at low Reynolds number in the *Proceedings of the Royal Society A*, usually regarded as the first numerical solution of the Navier–Stokes equations for flow past a body.",
+      "people": [
+        "Alexander Thom"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "The Lax equivalence theorem",
+      "detail": "Peter Lax and Robert Richtmyer prove that a consistent linear scheme for a well-posed problem converges if and only if it is stable.",
+      "people": [
+        "Peter Lax",
+        "Robert Richtmyer"
+      ]
     },
     {
       "year": 1965,
-      "title": "MAC method",
-      "detail": "Harlow and Welch publish the Marker-and-Cell (MAC) method, the first practical algorithm for pressure-velocity coupling in incompressible flow."
+      "title": "The staggered-grid MAC method",
+      "detail": "Harlow and Welch of Los Alamos publish the Marker-and-Cell method in *Physics of Fluids*, introducing the staggered grid for incompressible flow with a free surface.",
+      "people": [
+        "Francis H. Harlow",
+        "J. Eddie Welch"
+      ]
     },
     {
       "year": 1972,
-      "title": "SIMPLE algorithm",
-      "detail": "Patankar and Spalding publish the SIMPLE (Semi-Implicit Method for Pressure-Linked Equations) algorithm, which becomes the workhorse of industrial CFD for three decades."
+      "title": "The SIMPLE algorithm",
+      "detail": "Patankar and Spalding publish the SIMPLE pressure-correction procedure in the *International Journal of Heat and Mass Transfer*; it becomes the basis of most industrial finite-volume codes.",
+      "people": [
+        "Suhas V. Patankar",
+        "D. Brian Spalding"
+      ]
     },
     {
-      "year": 1974,
-      "title": "k-epsilon model",
-      "detail": "Jones and Launder publish the standard k-epsilon turbulence model, the first practical two-equation closure that makes RANS CFD viable for engineering applications."
+      "year": 1972,
+      "title": "The k–ε turbulence model",
+      "detail": "Jones and Launder publish the two-equation k–ε model in the *International Journal of Heat and Mass Transfer*; with the constants of Launder and Sharma (1974) it becomes the standard engineering turbulence model.",
+      "people": [
+        "W. P. Jones",
+        "Brian Launder"
+      ]
     },
     {
       "year": 1983,
-      "title": "Rhie-Chow interpolation",
-      "detail": "Rhie and Chow publish their interpolation scheme for collocated grids, eliminating the checkerboard pressure oscillation that had forced the industry onto staggered grids."
+      "title": "Rhie–Chow interpolation",
+      "detail": "Rhie and Chow's momentum interpolation, published in the *AIAA Journal*, suppresses pressure checkerboarding on collocated grids and opens the way to unstructured finite-volume codes.",
+      "people": [
+        "C. M. Rhie",
+        "W. L. Chow"
+      ]
     },
     {
       "year": 1994,
-      "title": "k-omega SST model",
-      "detail": "Felix Menter publishes the k-omega SST (Shear Stress Transport) turbulence model, which becomes the default choice for aerodynamic and turbomachinery CFD."
+      "title": "SST model and grid convergence index",
+      "detail": "Florian Menter publishes the k–ω SST turbulence model in the *AIAA Journal*, and Patrick Roache proposes the grid convergence index for reporting mesh-refinement studies in the *Journal of Fluids Engineering*.",
+      "people": [
+        "Florian Menter",
+        "Patrick J. Roache"
+      ]
     },
     {
       "year": 2009,
       "title": "ASME V&V 20",
-      "detail": "The ASME publishes the V&V 20 standard for verification and validation in CFD, formalizing the grid convergence index and uncertainty quantification procedures."
+      "detail": "ASME publishes V&V 20, the *Standard for Verification and Validation in Computational Fluid Dynamics and Heat Transfer*, defining the comparison error and validation uncertainty.",
+      "people": []
     }
   ],
   "references": [
     {
-      "author": "J. H. Ferziger, M. Peric and R. L. Street",
-      "title": "Computational Methods for Fluid Dynamics",
-      "publisher": "Springer",
-      "year": 2020,
-      "edition": "4th"
-    },
-    {
-      "author": "H. K. Versteeg and W. Malalasekera",
       "title": "An Introduction to Computational Fluid Dynamics: The Finite Volume Method",
-      "publisher": "Pearson",
+      "authors": "H. K. Versteeg and W. Malalasekera",
       "year": 2007,
-      "edition": "2nd"
+      "note": "2nd edition (Pearson). The most accessible introduction to the finite volume method, with worked 1D examples of diffusion, convection schemes and SIMPLE that parallel this course."
     },
     {
-      "author": "S. V. Patankar",
+      "title": "Computational Methods for Fluid Dynamics",
+      "authors": "J. H. Ferziger, M. Perić and R. L. Street",
+      "year": 2020,
+      "note": "4th edition (Springer). Rigorous coverage of discretisation, solvers, pressure–velocity coupling, complex geometries and error estimation; the standard graduate text."
+    },
+    {
       "title": "Numerical Heat Transfer and Fluid Flow",
-      "publisher": "McGraw-Hill",
-      "year": 1980
+      "authors": "S. V. Patankar",
+      "year": 1980,
+      "note": "Hemisphere/McGraw-Hill. The original exposition of the control-volume method, the four basic rules and SIMPLE; short and still very readable."
     },
     {
-      "author": "T. J. Chung",
-      "title": "Computational Fluid Dynamics",
-      "publisher": "Cambridge University Press",
-      "year": 2002
+      "title": "Finite Volume Methods for Hyperbolic Problems",
+      "authors": "R. J. LeVeque",
+      "year": 2002,
+      "note": "Cambridge University Press. Conservation laws, upwinding, Godunov's theorem, TVD schemes and limiters treated carefully."
     },
     {
-      "author": "R. Richtmyer and D. Morton",
-      "title": "Difference Methods for Initial-Value Problems",
-      "publisher": "Springer",
-      "year": 1994,
-      "edition": "4th"
+      "title": "Iterative Methods for Sparse Linear Systems",
+      "authors": "Y. Saad",
+      "year": 2003,
+      "note": "2nd edition (SIAM). Splitting methods, Krylov solvers and preconditioning for the large sparse systems of CFD."
     },
     {
-      "author": "C. Hirsch",
-      "title": "Numerical Computation of Internal and External Flows",
-      "publisher": "Butterworth-Heinemann",
-      "year": 2007
-    },
-    {
-      "author": "P. J. Roache",
-      "title": "Verification and Validation in Computational Science and Engineering",
-      "publisher": "Hermosa Publishers",
-      "year": 1998
-    },
-    {
-      "author": "S. B. Pope",
       "title": "Turbulent Flows",
-      "publisher": "Cambridge University Press",
-      "year": 2000
+      "authors": "S. B. Pope",
+      "year": 2000,
+      "note": "Cambridge University Press. Reynolds averaging, the law of the wall, turbulence models and large-eddy simulation from first principles."
+    },
+    {
+      "title": "Turbulence Modeling for CFD",
+      "authors": "D. C. Wilcox",
+      "year": 2006,
+      "note": "3rd edition (DCW Industries). The practitioner's guide to RANS models, their derivation, calibration and limitations."
+    },
+    {
+      "title": "Verification and Validation in Computational Science and Engineering",
+      "authors": "P. J. Roache",
+      "year": 1998,
+      "note": "Hermosa Publishers. The source of the grid convergence index and of systematic code and solution verification, including manufactured solutions."
     }
   ],
   "next": []

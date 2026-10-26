@@ -1,548 +1,298 @@
-Consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics: the Lax equivalence theorem states that for a well-posed linear initial value problem, consistency plus stability is equivalent to convergence, the von Neumann stability analysis determines the amplification factor of Fourier modes, and the CFL condition limits the time step for explicit schemes. **The engineer who runs a simulation without checking the CFL condition is not running a simulation; they are guessing.** The consistency, stability and convergence calculation is the reason the engineer can trust the numerical solution, and the Lax equivalence theorem is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.
+The previous lesson built difference schemes whose truncation errors vanish as the grid is refined. That is not enough. In [[computational-fluid-dynamics/finite-differences#ex-ftcs]] the explicit heat-equation scheme behaved well with diffusion number $d = 0.2$; run it with $d = 0.6$ and within a few dozen steps the temperatures are oscillating between millions of degrees above and below zero, though the formula is exactly as "accurate" as before. The forward-time, centred-space scheme for advection has second-order spatial accuracy and blows up for *every* time step. What goes wrong is **stability**: the scheme amplifies the errors it inevitably commits, rather than keeping them bounded.
 
-The quantitative tools of consistency, stability and convergence are the **truncation error** (the difference between the exact PDE and the discrete equation), the **amplification factor** (the ratio of the Fourier mode amplitude at successive time steps), the **CFL condition** (the Courant-Friedrichs-Lewy stability limit), and the **Lax equivalence theorem** (the equivalence of consistency plus stability and convergence). The tools are the language in which the consistency, stability and convergence analysis is expressed, and the language is the reason the analysis is a calculation, not a guess.
+This lesson makes the three ideas precise — **consistency** (the scheme approximates the right equation), **stability** (errors do not grow without bound) and **convergence** (the numerical solution tends to the exact one as the grid is refined) — and connects them through the Lax equivalence theorem. It then gives the two practical tools every CFD engineer uses daily: **von Neumann analysis**, which yields stability limits by studying how a scheme treats a single Fourier mode, and the **Courant–Friedrichs–Lewy (CFL) condition**, which states in one line why explicit schemes for convection need small time steps. Finally, the **modified equation** shows what an accurate-looking but imperfect scheme actually computes: the right equation plus artificial diffusion or dispersion. The model problems and notation are those of [[computational-fluid-dynamics/finite-differences]].
 
-::: warning Nine ways consistency, stability and convergence calculation goes wrong
-**Not checking the CFL condition.** The engineer who runs a simulation without checking the CFL condition is not running a simulation; they are guessing. **The CFL condition is the reason consistency, stability and convergence are designed for the stability, not the accuracy, and the stability is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.** **Not checking the amplification factor.** The engineer who runs a simulation without checking the amplification factor is not running a simulation; they are guessing. **The amplification factor is the reason consistency, stability and convergence are designed for the factor, not the mode, and the factor is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.** **Not checking the truncation error.** The engineer who runs a simulation without checking the truncation error is not running a simulation; they are guessing. **The truncation error is the reason consistency, stability and convergence are designed for the error, not the solution, and the error is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.** **Not checking the Lax equivalence theorem.** The engineer who runs a simulation without checking the Lax equivalence theorem is not running a simulation; they are guessing. **The Lax equivalence theorem is the reason consistency, stability and convergence are designed for the theorem, not the conjecture, and the theorem is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.** **Not checking the von Neumann analysis.** The engineer who runs a simulation without checking the von Neumann analysis is not running a simulation; they are guessing. **The von Neumann analysis is the reason consistency, stability and convergence are designed for the analysis, not the synthesis, and the analysis is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.** **Not checking the consistency.** The engineer who runs a simulation without checking the consistency is not running a simulation; they are guessing. **The consistency is the reason consistency, stability and convergence are designed for the consistency, not the inconsistency, and the consistency is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.** **Not checking the convergence.** The engineer who runs a simulation without checking the convergence is not running a simulation; they are guessing. **The convergence is the reason consistency, stability and convergence are designed for the convergence, not the divergence, and the convergence is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.** **Not checking the numerical diffusion.** The engineer who runs a simulation without checking the numerical diffusion is not running a simulation; they are guessing. **The numerical diffusion is the reason consistency, stability and convergence are designed for the diffusion, not the dispersion, and the diffusion is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.** **Not checking the numerical dispersion.** The engineer who runs a simulation without checking the numerical dispersion is not running a simulation; they are guessing. **The numerical dispersion is the reason consistency, stability and convergence are designed for the dispersion, not the diffusion, and the dispersion is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.**
+## Consistency, stability, convergence
+
+Write a linear two-level scheme for a linear problem, with all grid values at time level $n$ collected into a vector $\mathbf{u}^n$, as
+$$
+\mathbf{u}^{n+1} = \mathbf{Q}\,\mathbf{u}^n + \Delta t\,\mathbf{f}^n ,
+$$ {#eq-two-level}
+where $\mathbf{Q}$ (the **iteration** or **amplification matrix**) depends on $\Delta x$ and $\Delta t$, and $\mathbf{f}^n$ collects sources and boundary data. For FTCS on the heat equation, $\mathbf{Q}$ is tridiagonal with $d$, $1 - 2d$, $d$ on its three diagonals.
+
+::: definition Consistency, stability and convergence {#def-csc}
+Let the grid be refined with $\Delta t$ and $\Delta x$ tied together by a fixed rule (constant $d$ or constant Courant number, for example).
+- The scheme is **consistent** if, when the exact solution $\mathbf{u}_{\text{ex}}^n$ is inserted, $\mathbf{u}_{\text{ex}}^{n+1} = \mathbf{Q}\mathbf{u}_{\text{ex}}^n + \Delta t\,\mathbf{f}^n + \Delta t\,\boldsymbol{\tau}^n$ with a **local truncation error** $\boldsymbol{\tau}^n \to \mathbf{0}$ as $\Delta t, \Delta x \to 0$.
+- The scheme is **stable** if there is a constant $K$, independent of $\Delta t$ and $\Delta x$, such that $\lVert\mathbf{Q}^m\rVert \le K$ for all $m$ with $m\,\Delta t \le T$, the final time.
+- The scheme is **convergent** if the error $\mathbf{e}^n = \mathbf{u}^n - \mathbf{u}_{\text{ex}}^n$ satisfies $\lVert\mathbf{e}^n\rVert \to 0$ as the grid is refined, for every fixed time $t^n \le T$ and every admissible initial condition.
 :::
 
-## 1. Consistency and the truncation error
+Consistency is a local property and easy to check by Taylor series. Convergence is what we want but cannot check directly — we do not know the exact solution. Stability is the bridge.
 
-::: definition The truncation error {#def-truncation-error}
-The **truncation error** is the difference between the exact PDE and the discrete equation, and the truncation error is the reason the engineer can trust the numerical solution.
-
-The **truncation error** is:
-
-$$
-\tau \; = \; L _ { h } \, u \; - \, L \, u
-$$
-
-where $L$ is the exact differential operator and $L _ { h }$ is the discrete operator.
-
-The **consistency condition** is:
-
-$$
-\lim _ { h \to 0 } \; \| \tau \| \; = \; 0
-$$
-
-The **order of consistency** is:
-
-$$
-\| \tau \| \; = \; O ( h ^ { p } )
-$$
-
-The **modified equation** is:
-
-$$
-L \, u \; + \; { \frac { h } { 2 } } \, u _ { t t } \; - \; { \frac { h ^ { 2 } } { 6 } } \, u _ { x x x } \; + \; \cdots \; = \; 0
-$$
-
-The **numerical diffusion coefficient** is:
-
-$$
-\nu _ { \text{num } } \; = \; { \frac { u \, \Delta x } { 2 } } \, ( 1 - C )
-$$
-
-where $C$ is the Courant number.
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Truncation error} & \tau & \text{PDE minus discrete equation} & O ( h ^ { p } ) \\
-\text{Order of consistency} & p & \text{Power of } h \text{ in the error} & 1 , 2 , 3 , 4 \\
-\text{Modified equation} & L _ { \text{mod } } & \text{PDE satisfied by the numerical solution} & L + O ( h ) \\
-\text{Numerical diffusion} & \nu _ { \text{num } } & \text{Artificial viscosity} & 1 0 ^ { - 6 } \text{--} 1 0 ^ { - 2 } \\
-\end{array}
-$$
-
-**The CFL condition is the reason consistency, stability and convergence are designed for the stability, not the accuracy, and the stability is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics. The engineer who runs a simulation without checking the CFL condition is not running a simulation; they are guessing.**
+::: theorem Lax equivalence theorem {#thm-lax}
+For a well-posed linear initial-value problem and a consistent linear finite-difference scheme, stability is necessary and sufficient for convergence. Moreover, if the truncation error is $O(\Delta t^q + \Delta x^p)$, the global error of a stable scheme is of the same order.
 :::
 
-::: definition The Lax equivalence theorem {#def-lax-equivalence}
-The **Lax equivalence theorem** states that for a well-posed linear initial value problem, consistency plus stability is equivalent to convergence, and the Lax equivalence theorem is the reason the engineer can trust the numerical solution.
-
-The **Lax equivalence theorem** is:
-
+::: proof
+We prove sufficiency, the part used in practice. Subtract the consistency relation from [[#eq-two-level]]: the error obeys $\mathbf{e}^{n+1} = \mathbf{Q}\mathbf{e}^n - \Delta t\,\boldsymbol{\tau}^n$. Unrolling the recursion from $\mathbf{e}^0$,
 $$
-\text{Consistency} \; + \; \text{Stability} \; \iff \; \text{Convergence}
+\mathbf{e}^n = \mathbf{Q}^n\mathbf{e}^0 - \Delta t\sum_{m=0}^{n-1}\mathbf{Q}^{\,n-1-m}\boldsymbol{\tau}^m .
 $$
-
-The **convergence** is:
-
+Take norms and use stability, $\lVert\mathbf{Q}^j\rVert \le K$ for $j\Delta t \le T$:
 $$
-\lim _ { \Delta t , \, \Delta x \to 0 } \; \| u _ { h } - u \| \; = \; 0
+\lVert\mathbf{e}^n\rVert \le K\lVert\mathbf{e}^0\rVert + K\,n\Delta t\,\max_m\lVert\boldsymbol{\tau}^m\rVert \le K\lVert\mathbf{e}^0\rVert + K\,T\,\max_m\lVert\boldsymbol{\tau}^m\rVert .
 $$
+The initial error $\mathbf{e}^0$ is zero (or as small as the representation of the initial data), and consistency makes $\max\lVert\boldsymbol{\tau}^m\rVert \to 0$; hence $\lVert\mathbf{e}^n\rVert \to 0$, and at the same rate as $\boldsymbol{\tau}$. The essential point is that the $n \sim T/\Delta t$ local errors, each of size $\Delta t\,\tau$, *add* but are not *amplified*: that is exactly what stability guarantees. The necessity of stability (a convergent scheme must be stable) uses the uniform boundedness principle of functional analysis and is proved in Richtmyer and Morton's *Difference Methods for Initial-Value Problems*; it is not needed here.
+:::
 
-The **stability** is:
+The theorem is the reason CFD practitioners talk about stability so much: consistency is easy to arrange, so stability is what separates a working scheme from a useless one. Strictly it applies to linear problems; for the nonlinear Navier–Stokes equations it is applied to the linearised, "frozen-coefficient" equations, which is a heuristic — but one that works remarkably well in practice.
 
+## Von Neumann stability analysis
+
+How can one bound $\lVert\mathbf{Q}^m\rVert$ without computing matrix powers? For constant-coefficient linear schemes on a periodic (or very large) domain, Fourier analysis diagonalises the problem. Every grid function is a sum of Fourier modes $e^{\mathrm{i}k x_j}$, and because the scheme has the same coefficients at every node, each mode evolves independently: in one step it is multiplied by a complex number $G$, the **amplification factor**. Errors are grid functions too, so a scheme is stable if no mode can grow.
+
+::: algorithm Von Neumann analysis {#alg-von-neumann}
+1. Write the scheme for the error (equivalently, the homogeneous scheme with sources and boundary data removed).
+2. Substitute a single Fourier mode $u_j^n = G^n e^{\mathrm{i}j\theta}$, where $\theta = k\Delta x \in [-\pi, \pi]$ is the phase angle per grid interval and $G^n$ means $G$ to the power $n$.
+3. Divide by the common factor $G^n e^{\mathrm{i}j\theta}$ and solve for $G(\theta)$, using $e^{\mathrm{i}\theta} + e^{-\mathrm{i}\theta} = 2\cos\theta$ and $1 - \cos\theta = 2\sin^2(\theta/2)$.
+4. The scheme is stable if $\lvert G(\theta)\rvert \le 1$ for every $\theta$ (allowing $\lvert G\rvert \le 1 + O(\Delta t)$ when the exact solution itself may grow). Find the parameter values for which this holds.
+:::
+
+For a single equation with two time levels the condition is necessary and sufficient on a periodic domain. With boundaries, it remains a necessary condition and in practice almost always the decisive one; boundary schemes can cause additional instabilities, which are studied by other methods (GKS theory) beyond this course.
+
+::: proposition Stability of the heat-equation schemes {#prop-heat-stability}
+For $T_t = \alpha T_{xx}$ with $d = \alpha\Delta t/\Delta x^2$ and $s = \sin^2(\theta/2)$:
 $$
-\| u _ { h } ^ { n } \| \; \leq \; K \, e ^ { \alpha \, t } \, \| u _ { h } ^ { 0 } \|
+G_{\text{FTCS}} = 1 - 4ds,\qquad
+G_{\text{BTCS}} = \frac{1}{1 + 4ds},\qquad
+G_{\text{CN}} = \frac{1 - 2ds}{1 + 2ds}.
 $$
+FTCS is stable if and only if $d \le \tfrac12$; BTCS and Crank–Nicolson are stable for all $d > 0$ (**unconditionally stable**).
+:::
 
-The **well-posedness** requires:
+::: proof
+FTCS: substituting $T_j^n = G^n e^{\mathrm{i}j\theta}$ into $T_j^{n+1} = T_j^n + d(T_{j+1}^n - 2T_j^n + T_{j-1}^n)$ and dividing gives $G = 1 + d(e^{\mathrm{i}\theta} - 2 + e^{-\mathrm{i}\theta}) = 1 + 2d(\cos\theta - 1) = 1 - 4ds$. $G$ is real and $\le 1$; the condition $G \ge -1$ at the worst mode, $\theta = \pi$ ($s = 1$), gives $1 - 4d \ge -1$, i.e. $d \le \tfrac12$. BTCS: the same substitution into $-dT_{j-1}^{n+1} + (1 + 2d)T_j^{n+1} - dT_{j+1}^{n+1} = T_j^n$ gives $G(1 + 2d - 2d\cos\theta) = 1$, so $G = 1/(1 + 4ds) \in (0, 1]$ for all $d$. Crank–Nicolson: $G(1 + 2ds) = 1 - 2ds$; since $2ds \ge 0$, $\lvert 1 - 2ds\rvert \le 1 + 2ds$, so $\lvert G\rvert \le 1$ for all $d$.
+:::
 
-$$
-\text{Existence} \; + \; \text{Uniqueness} \; + \; \text{Continuous dependence on data}
-$$
+The physical meaning of $d \le \tfrac12$ is the positivity seen in [[computational-fluid-dynamics/finite-differences#ex-ftcs]]: FTCS writes $T_j^{n+1} = dT_{j-1}^n + (1 - 2d)T_j^n + dT_{j+1}^n$, and when $1 - 2d < 0$ a hot node becomes *colder* than its cold neighbours in one step. The exact factor for a mode over one step is $e^{-\alpha k^2\Delta t} = e^{-d\theta^2}$, always between $0$ and $1$. Crank–Nicolson is stable at large $d$, but its $G \to -1$ for the shortest waves: they are not damped, they flip sign every step. That is the source of the slowly decaying oscillations seen when Crank–Nicolson is started from a discontinuous initial condition with a large time step.
 
-The **Lax-Wendroff theorem** extends this to conservation laws.
+::: example Crank–Nicolson with a large time step {#ex-cn-large}
+A transient conduction problem is advanced by Crank–Nicolson with $d = 5$. Compute the amplification factor of the sawtooth mode ($\theta = \pi$) and of a smooth mode with $\theta = 0.1$, compare each with the exact one-step decay factor $e^{-d\theta^2}$, and describe what is seen if the initial temperature field contains a sharp step.
+::: solution
+For $\theta = \pi$, $s = \sin^2(\pi/2) = 1$ and $G = (1 - 10)/(1 + 10) = -0.818$, while the exact factor is $e^{-5\pi^2} \approx 4\times10^{-22}$. For $\theta = 0.1$, $s = \sin^2 0.05 = 2.498\times10^{-3}$, $2ds = 0.02498$ and $G = 0.97502/1.02498 = 0.95126$, against the exact $e^{-0.05} = 0.95123$.
 
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Stability constant} & K & \text{Bound on the solution growth} & 1 \text{--} 1 0 \\
-\text{Growth rate} & \alpha & \text{Exponential growth rate} & 0 \text{--} 1 \\
-\text{Convergence rate} & p & \text{Order of the method} & 1 , 2 , 3 , 4 \\
-\text{Norm} & \| \cdot \| & \text{Error measure} & L ^ { 2 } , L ^ { \infty } \\
-\end{array}
-$$
-
-**The amplification factor is the reason consistency, stability and convergence are designed for the factor, not the mode, and the factor is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics. The engineer who runs a simulation without checking the amplification factor is not running a simulation; they are guessing.**
+The smooth mode is reproduced to five significant figures; the sawtooth, which physically disappears at once, is only reduced by $18\,\%$ per step and changes sign each step. A sharp step contains a strong grid-scale component, so the solution shows a node-to-node oscillation near the step that takes $\ln(0.01)/\ln(0.818) \approx 23$ steps to decay to $1\,\%$. Stable — but visibly wrong for those steps. Sanity check: as $d \to \infty$, $G(\pi) \to -1$, so the larger the time step, the more persistent the oscillation.
+:::
 :::
 
 ::: widget plot
-title: The amplification factor vs Courant number
-f: abs(1 - 2*x + 2*x*cos(x))
-x: 0,1
-y: 0,2
-labels: G
-caption: The amplification factor $| G |$ against the Courant number $C$ for the FTCS scheme. **The scheme is stable when $| G | \leq 1$ , and the scheme is the reason consistency, stability and convergence are designed for the error, not the solution.** **The error is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.**
+f: abs(1 - 4*d*sin(x/2)^2); 1/(1 + 4*d*sin(x/2)^2); abs((1 - 2*d*sin(x/2)^2)/(1 + 2*d*sin(x/2)^2)); exp(-d*x^2)
+x: 0, pi
+y: 0, 2
+sliders: d=0.4:0.05:3:0.05
+labels: |G|\ \text{FTCS}; |G|\ \text{BTCS}; |G|\ \text{Crank–Nicolson}; \text{exact } e^{-d\theta^2}
+hlines: 1
+caption: Amplification factor magnitudes for the heat equation against phase angle $\theta = k\Delta x$, with the diffusion number $d$ on the slider. Push $d$ past $0.5$ and the FTCS curve rises above $1$ at the right-hand end: the sawtooth mode $\theta = \pi$ is amplified and the scheme blows up. BTCS always damps, more strongly than the exact solution at small $d$ for long waves. At large $d$ notice that Crank–Nicolson's $|G|$ returns towards $1$ at high $\theta$ while the exact factor is essentially zero: the shortest waves survive almost undamped.
 :::
 
-::: example FTCS stability {#ex-ftcs-stability level=3 check="2"}
-The FTCS (Forward Time Central Space) scheme for the diffusion equation $u _ { t } = \alpha \, u _ { x x }$ is:
-
+::: proposition Stability of upwind and centred schemes for advection {#prop-advection-stability}
+For $u_t + a u_x = 0$, $a > 0$, with Courant number $C = a\Delta t/\Delta x$:
 $$
-u _ { i } ^ { n + 1 } \; = \; u _ { i } ^ { n } \; + \; { \frac { \alpha \, \Delta t } { ( \Delta x ) ^ { 2 } } } \, ( u _ { i + 1 } ^ { n } - 2 \, u _ { i } ^ { n } + u _ { i - 1 } ^ { n } )
+\begin{aligned}
+\text{FTCS:}\quad & G = 1 - \mathrm{i}C\sin\theta, & \lvert G\rvert^2 &= 1 + C^2\sin^2\theta ,\\
+\text{upwind (FTBS):}\quad & G = 1 - C\left(1 - e^{-\mathrm{i}\theta}\right), & \lvert G\rvert^2 &= 1 - 2C(1 - C)(1 - \cos\theta).
+\end{aligned}
 $$
-
-Let $r = \alpha \, \Delta t / ( \Delta x ) ^ { 2 }$ . Find the stability limit.
-
-**The amplification factor is:**
-
-$$
-G \; = \; 1 - 2 \, r + 2 \, r \, \cos ( k \, \Delta x ) \; = \; 1 - 4 \, r \, \sin ^ { 2 } \! \\left( { \\frac { k \, \Delta x } { 2 } } \\right)
-$$
-
-**The stability condition $| G | \leq 1$ requires:**
-
-$$
-- 1 \; \leq \; 1 - 4 \, r \, \sin ^ { 2 } \! \\left( { \\frac { k \, \Delta x } { 2 } } \\right) \; \leq \; 1
-$$
-
-**The worst case is $\sin ^ { 2 } = 1$ :**
-
-$$
-1 - 4 \, r \; \geq \; - 1 \quad \Rightarrow \quad r \; \leq \; { \\frac { 1 } { 2 } }
-$$
-
-**The stability limit is $r = \alpha \, \Delta t / ( \Delta x ) ^ { 2 } \leq 1 / 2$ , or $\Delta t \leq ( \Delta x ) ^ { 2 } / ( 2 \, \alpha )$ . The engineer would design the structure for the theorem, because the theorem is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.**
+FTCS is unstable for every $C > 0$; upwind is stable if and only if $0 \le C \le 1$.
 :::
 
-## 2. The CFL condition
-
-::: definition The CFL condition {#def-cfl-condition}
-The **CFL condition** is the Courant-Friedrichs-Lewy stability limit for explicit schemes, and the CFL condition is the reason the engineer can trust the numerical solution.
-
-The **Courant number** is:
-
+::: proof
+For FTCS, $u_j^{n+1} = u_j^n - \tfrac{C}{2}(u_{j+1}^n - u_{j-1}^n)$ gives $G = 1 - \tfrac{C}{2}(e^{\mathrm{i}\theta} - e^{-\mathrm{i}\theta}) = 1 - \mathrm{i}C\sin\theta$, whose modulus squared exceeds $1$ for every $\theta$ that is not a multiple of $\pi$. For upwind, $G = 1 - C + Ce^{-\mathrm{i}\theta}$ and
 $$
-C \; = \; { \frac { u \, \Delta t } { \Delta x } }
+\lvert G\rvert^2 = (1 - C + C\cos\theta)^2 + C^2\sin^2\theta = (1-C)^2 + 2C(1-C)\cos\theta + C^2 = 1 - 2C(1-C)(1 - \cos\theta),
 $$
-
-The **CFL condition** for the advection equation is:
-
-$$
-C \; = \; { \frac { u \, \Delta t } { \Delta x } } \; \leq \; 1
-$$
-
-The **physical domain of dependence** is:
-
-$$
-[ x - u \, t , \; x + u \, t ]
-$$
-
-The **numerical domain of dependence** is:
-
-$$
-[ x - N \, \Delta x , \; x + N \, \Delta x ]
-$$
-
-The **CFL condition in 2D** is:
-
-$$
-\Delta t \; \leq \; { \frac { 1 } { { \frac { | u | } { \Delta x } } + { \frac { | v | } { \Delta y } } } }
-$$
-
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Courant number} & C & \text{Physical/numerical speed ratio} & 0 \text{--} 1 \\
-\text{Time step} & \Delta t & \text{Integration time step} & 1 0 ^ { - 6 } \text{--} 1 0 ^ { - 1 } \ \text{ s } \\
-\text{Wave speed} & u & \text{Advection velocity} & 0 . 0 0 1 \text{--} 1 0 0 0 \ \text{ m/s } \\
-\text{Grid spacing} & \Delta x & \text{Cell size} & 1 0 ^ { - 4 } \text{--} 1 0 ^ { - 1 } \ \text{ m } \\
-\end{array}
-$$
-
-**The truncation error is the reason consistency, stability and convergence are designed for the error, not the solution, and the error is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics. The engineer who runs a simulation without checking the truncation error is not running a simulation; they are guessing.**
+using $(1-C)^2 + C^2 = 1 - 2C(1-C)$. Since $1 - \cos\theta \in [0, 2]$, $\lvert G\rvert \le 1$ for all $\theta$ if and only if $C(1-C) \ge 0$, i.e. $0 \le C \le 1$.
 :::
 
-::: definition The von Neumann stability analysis {#def-von-neumann}
-The **von Neumann stability analysis** is the Fourier analysis of the amplification factor, and the von Neumann stability analysis is the reason the engineer can trust the numerical solution.
+The FTCS instability for advection is worth a moment of thought: the factor $1 + C^2\sin^2\theta$ exceeds $1$ only by $O(\Delta t^2)$ per step, so the growth over a fixed time $T$ is like $(1 + C^2)^{T/(2\Delta t)}$ — unbounded as $\Delta t \to 0$ with $C$ fixed. A scheme that is "nearly stable" is unstable.
 
-The **Fourier mode** is:
+::: example Explicit conduction time steps {#ex-conduction-dt}
+An aluminium component ($\alpha = 9.7\times10^{-5}\ \mathrm{m^2/s}$) is modelled with FTCS on a uniform grid with $\Delta x = 1.0\ \mathrm{mm}$. Find the largest stable time step in one and in two dimensions (with $\Delta y = \Delta x$).
+::: solution
+One dimension: $\Delta t \le \Delta x^2/(2\alpha) = (1.0\times10^{-3})^2/(2 \times 9.7\times10^{-5}) = 5.15\times10^{-3}\ \mathrm{s}$.
 
-$$
-u _ { j } ^ { n } \; = \; G ^ { n } \, e ^ { i \, k \, j \, \Delta x }
-$$
+Two dimensions: substituting $T_{j,l}^n = G^n e^{\mathrm{i}(j\theta_x + l\theta_y)}$ gives $G = 1 - 4d_x\sin^2(\theta_x/2) - 4d_y\sin^2(\theta_y/2)$; the worst mode is the checkerboard $\theta_x = \theta_y = \pi$, so $1 - 4d_x - 4d_y \ge -1$, i.e. $d_x + d_y \le \tfrac12$. With $\Delta x = \Delta y$, $\Delta t \le \Delta x^2/(4\alpha) = 2.58\times10^{-3}\ \mathrm{s}$; in three dimensions $\Delta x^2/(6\alpha)$.
 
-The **amplification factor** is:
+Sanity check: aluminium has a high diffusivity, so millisecond steps for millimetre cells are reasonable — heat crosses a millimetre in about $\Delta x^2/\alpha \approx 10\ \mathrm{ms}$. Each extra dimension tightens the limit because the checkerboard mode has more neighbours to exchange heat with.
+:::
+:::
 
-$$
-G ( k , \Delta t ) \; = \; { \frac { u _ { j } ^ { n + 1 } } { u _ { j } ^ { n } } }
-$$
+## The CFL condition
 
-The **stability condition** is:
+Von Neumann analysis gives exact limits for model problems. The CFL condition gives a necessary limit for *any* explicit scheme for a hyperbolic equation, from a geometric argument requiring no algebra.
 
-$$
-| G ( k , \Delta t ) | \; \leq \; 1 \quad \text{for all } k
-$$
+::: definition Domains of dependence {#def-domain-dependence}
+The **physical domain of dependence** of a point $(x_j, t^n)$ is the set of initial points whose data affect the exact solution there; for $u_t + au_x = 0$ it is the single point $x_j - at^n$, and for the wave equation with speed $c$ it is the interval $[x_j - ct^n, x_j + ct^n]$. The **numerical domain of dependence** is the set of initial grid points whose values enter the computation of $u_j^n$. For an explicit scheme whose stencil reaches $r$ points left and right, it is $[x_j - r\,n\Delta x,\ x_j + r\,n\Delta x]$.
+:::
 
-The **upwind scheme** amplification factor is:
+::: theorem The Courant–Friedrichs–Lewy condition {#thm-cfl}
+A necessary condition for the convergence of a difference scheme for a hyperbolic equation is that its numerical domain of dependence contain the physical domain of dependence in the limit of grid refinement. For an explicit three-point scheme for $u_t + au_x = 0$ this requires
+$$
+C = \frac{\lvert a\rvert\,\Delta t}{\Delta x} \le 1 .
+$$ {#eq-cfl}
+:::
 
-$$
-G \; = \; 1 - C + C \, e ^ { - i \, k \, \Delta x }
-$$
+::: proof
+Suppose that, as the grid is refined, the physical domain of dependence of a point $(x, t)$ contains a point $x_0$ lying outside the numerical domain of dependence. Change the initial data in a small neighbourhood of $x_0$ that stays outside the numerical domain. The exact solution at $(x, t)$ changes, because $x_0$ is in its domain of dependence; the numerical solution at $(x, t)$ does not, because none of the grid values it uses has changed. Both the original and the modified initial data cannot then give convergence to their respective exact solutions, so the scheme does not converge for all data. For a three-point explicit stencil the numerical domain after $n$ steps reaches $n\Delta x$ to either side, while the physical one lies at distance $\lvert a\rvert n\Delta t$; containment requires $\lvert a\rvert\Delta t \le \Delta x$.
+:::
 
-The **Lax-Friedrichs scheme** amplification factor is:
+The CFL condition says, in words: *in one time step, information must not travel further than the stencil can see.* It is necessary but not sufficient — FTCS for advection satisfies it for $C \le 1$ and is still unstable — but it explains why every explicit compressible-flow code limits its time step by $\Delta t \le C_{\max}\,\Delta x/(\lvert u\rvert + c)$, where $c$ is the speed of sound: the fastest characteristic of [[computational-fluid-dynamics/governing-equations#prop-euler-speeds]] sets the limit. Implicit schemes couple all nodes at the new time level, their numerical domain of dependence is the whole grid, and the CFL condition places no restriction on them (accuracy still does).
 
-$$
-G \; = \; \cos ( k \, \Delta x ) - i \, C \, \sin ( k \, \Delta x )
-$$
+::: example Time step for an explicit compressible solver {#ex-cfl-dt}
+An explicit solver computes the flow of air at $u = 20\ \mathrm{m/s}$ and $T = 300\ \mathrm{K}$ (speed of sound $c = 347\ \mathrm{m/s}$) on a mesh whose smallest cell is $\Delta x = 2.0\ \mathrm{mm}$. Find the time-step limit for a scheme with $C_{\max} = 1$ if (a) only convection at the flow speed mattered and (b) acoustic waves are resolved, and comment.
+::: solution
+(a) $\Delta t \le \Delta x/\lvert u\rvert = 2.0\times10^{-3}/20 = 1.0\times10^{-4}\ \mathrm{s}$.
+(b) $\Delta t \le \Delta x/(\lvert u\rvert + c) = 2.0\times10^{-3}/367 = 5.4\times10^{-6}\ \mathrm{s}$.
+The acoustic limit is $18$ times smaller. At this low Mach number ($0.058$) the sound waves are physically unimportant, yet an explicit compressible scheme must resolve them: this "low-Mach stiffness" is why low-speed flows are usually computed with incompressible (pressure-based) solvers, [[computational-fluid-dynamics/pressure-velocity]], or with implicit and preconditioned compressible solvers. Sanity check: $\Delta x/c$ is the time sound takes to cross one cell, about $6\ \mu\mathrm{s}$ for $2\ \mathrm{mm}$.
+:::
+:::
 
-$$
-\begin{array} { l c c c }
-\textbf{Parameter} & \textbf{ Symbol } & \textbf{ Definition } & \textbf{ Typical value } \\ \hline
-\text{Amplification factor} & G & \text{Mode growth per time step} & | G | \leq 1 \\
-\text{Wave number} & k & \text{Spatial frequency} & 0 \text{--} \pi / \Delta x \\
-\text{Phase error} & \phi _ { \text{err } } & \text{Numerical vs exact phase} & O ( ( k \, \Delta x ) ^ { 2 } ) \\
-\text{Group error} & \psi _ { \text{err } } & \text{Numerical vs exact group velocity} & O ( ( k \, \Delta x ) ^ { 2 } ) \\
-\end{array}
-$$
+## What a scheme really solves: the modified equation
 
-**The Lax equivalence theorem is the reason consistency, stability and convergence are designed for the theorem, not the conjecture, and the theorem is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics. The engineer who runs a simulation without checking the Lax equivalence theorem is not running a simulation; they are guessing.**
+A stable, consistent scheme converges — but on a finite grid, how does it err? The **modified equation** answers by finding the PDE that the numerical solution satisfies *more* accurately than the original one. Its extra terms are the scheme's personality.
+
+::: proposition Modified equations for upwind and Lax–Wendroff {#prop-modified}
+For $u_t + au_x = 0$ with $a > 0$ and $C = a\Delta t/\Delta x$, the first-order upwind scheme satisfies, to leading order,
+$$
+u_t + a u_x = \nu_{\text{num}}\,u_{xx},\qquad \nu_{\text{num}} = \frac{a\Delta x}{2}(1 - C),
+$$ {#eq-modified-upwind}
+and the second-order Lax–Wendroff scheme $u_j^{n+1} = u_j^n - \tfrac{C}{2}(u_{j+1}^n - u_{j-1}^n) + \tfrac{C^2}{2}(u_{j+1}^n - 2u_j^n + u_{j-1}^n)$ satisfies
+$$
+u_t + a u_x = -\frac{a\Delta x^2}{6}(1 - C^2)\,u_{xxx}.
+$$ {#eq-modified-lw}
+:::
+
+::: proof
+For upwind, insert a smooth function into $(u_j^{n+1} - u_j^n)/\Delta t + a(u_j^n - u_{j-1}^n)/\Delta x = 0$ and expand about $(x_j, t^n)$:
+$$
+u_t + \frac{\Delta t}{2}u_{tt} + a u_x - \frac{a\Delta x}{2}u_{xx} + O(\Delta t^2, \Delta x^2) = 0 .
+$$
+To eliminate $u_{tt}$, differentiate this relation: to leading order $u_t = -au_x$, so $u_{tt} = -a u_{xt} = a^2 u_{xx}$ (with errors that are one order smaller). Substituting,
+$$
+u_t + a u_x = \left(\frac{a\Delta x}{2} - \frac{a^2\Delta t}{2}\right)u_{xx} + \cdots = \frac{a\Delta x}{2}(1 - C)\,u_{xx} + \cdots .
+$$
+For Lax–Wendroff the same procedure, carried one order further (the scheme was built so that the $u_{tt}$ term is cancelled exactly by the $\tfrac{C^2}{2}$ second difference), leaves the third-order terms $\tfrac{\Delta t^2}{6}u_{ttt} + \tfrac{a\Delta x^2}{6}u_{xxx}$; using $u_{ttt} = -a^3u_{xxx}$ they combine to $\tfrac{a\Delta x^2}{6}(1 - C^2)u_{xxx}$, which moved to the right-hand side gives [[#eq-modified-lw]].
+:::
+
+The two results describe two characteristic failure modes:
+
+- **Numerical diffusion** (even-order error terms, $u_{xx}$, $u_{xxxx}$): fronts are smeared, peaks are flattened, but no new extrema appear. Upwind adds a viscosity $\nu_{\text{num}}$ proportional to $\Delta x$ — on a coarse grid often far larger than the physical viscosity.
+- **Numerical dispersion** (odd-order terms, $u_{xxx}$): waves of different wavelength travel at different speeds, so a sharp front breaks up into a train of wiggles, usually trailing behind it for Lax–Wendroff because its short waves are too slow.
+
+::: example Numerical viscosity versus real viscosity {#ex-num-visc}
+A scalar is convected at $a = 1.0\ \mathrm{m/s}$ on a grid with $\Delta x = 10\ \mathrm{mm}$ by the upwind scheme with $C = 0.5$. Compute the numerical viscosity and compare it with the kinematic viscosity of air, $1.5\times10^{-5}\ \mathrm{m^2/s}$.
+::: solution
+$\nu_{\text{num}} = \tfrac12 a\Delta x(1 - C) = 0.5 \times 1.0 \times 0.010 \times 0.5 = 2.5\times10^{-3}\ \mathrm{m^2/s}$, about $170$ times the molecular viscosity of air. The computed flow behaves as if its Reynolds number were $170$ times smaller. Halving $\Delta x$ halves $\nu_{\text{num}}$ but no practical grid makes it negligible for a high-Reynolds-number flow — which is why first-order upwinding is used only for start-up iterations and robustness, and higher-order bounded schemes ([[computational-fluid-dynamics/convection-diffusion]]) for results. Sanity check: at $C = 1$, $\nu_{\text{num}} = 0$, consistent with upwind being exact there.
+:::
+:::
+
+::: example Amplitude and phase after many steps {#ex-amplitude-phase}
+A sine wave resolved by $10$ points per wavelength is advected with $C = 0.5$. Compute the amplitude remaining after it has travelled one and five wavelengths, for the upwind and Lax–Wendroff schemes, and the phase error of Lax–Wendroff.
+::: solution
+$\theta = 2\pi/10 = 0.6283$ and $1 - \cos\theta = 0.1910$. One wavelength is $10\Delta x$; at $C\Delta x = 0.5\Delta x$ per step that takes $20$ steps, and five wavelengths take $100$.
+
+Upwind: $\lvert G\rvert^2 = 1 - 2(0.5)(0.5)(0.1910) = 0.9045$, $\lvert G\rvert = 0.9511$. Amplitude after $20$ steps: $0.9511^{20} = 0.367$; after $100$ steps: $0.0066$. The wave has essentially vanished after five wavelengths.
+
+Lax–Wendroff: $G = 1 - \mathrm{i}C\sin\theta - C^2(1 - \cos\theta)$, so $\lvert G\rvert^2 = 1 - C^2(1 - C^2)(1 - \cos\theta)^2 = 1 - 0.1875 \times 0.03647$, $\lvert G\rvert = 0.99657$. Amplitude after $20$ steps: $0.934$; after $100$: $0.710$. The phase change per step is $\arg G = -0.2994$ rad, against the exact $-C\theta = -0.3142$ rad: the numerical wave travels at $95.3\,\%$ of the true speed and after five wavelengths lags by $0.047 \times 5 = 0.24$ wavelengths.
+
+(For upwind at $C = 0.5$ the phase happens to be exact; its error is all in amplitude.) Sanity check: the second-order scheme keeps the amplitude far better but trades amplitude error for phase error — exactly the even-versus-odd error structure of the modified equations.
+:::
 :::
 
 ::: widget plot
-title: The Courant number vs time step
-f: 0.5*x
-x: 0,2
-y: 0,1
-labels: C
-caption: The Courant number $C = u \, \Delta t / \Delta x$ against the time step $\Delta t$ for $u = 1$ m/s and $\Delta x = 1$ m. **The CFL limit is $C = 1$ , and the CFL limit is the reason consistency, stability and convergence are designed for the analysis, not the synthesis.** **The analysis is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.**
+f: sqrt(abs(1 - 2*C*(1 - C)*(1 - cos(x)))); sqrt(abs(1 - C^2*(1 - C^2)*(1 - cos(x))^2))
+x: 0, pi
+y: 0, 2
+sliders: C=0.5:0:1.5:0.05
+labels: |G|\ \text{upwind}; |G|\ \text{Lax–Wendroff}
+hlines: 1
+caption: Amplification factor magnitudes for linear advection against $\theta$, with the Courant number on the slider. For $C < 1$ both schemes damp; upwind damps even moderately long waves strongly (numerical diffusion), Lax–Wendroff keeps $|G|$ near $1$ until $\theta$ is large. At exactly $C = 1$ both lines are flat at $1$: both schemes reduce to the exact shift. Push $C$ beyond $1$ and both curves rise above the line $|G| = 1$ — the CFL condition seen in Fourier space.
 :::
 
-::: example Upwind scheme stability {#ex-upwind-stability level=3 check="2"}
-The upwind scheme for the advection equation $u _ { t } + a \, u _ { x } = 0$ with $a > 0$ is:
-
-$$
-u _ { i } ^ { n + 1 } \; = \; u _ { i } ^ { n } \; - \; C \, ( u _ { i } ^ { n } - u _ { i - 1 } ^ { n } )
-$$
-
-where $C = a \, \Delta t / \Delta x$ . Show that the scheme is stable for $0 \leq C \leq 1$ .
-
-**The amplification factor is:**
-
-$$
-G \; = \; 1 - C + C \, e ^ { - i \, \theta } \quad \text{where } \theta = k \, \Delta x
-$$
-
-**The magnitude squared is:**
-
-$$
-| G | ^ { 2 } \; = \; ( 1 - C + C \, \cos \theta ) ^ { 2 } + C ^ { 2 } \, \sin ^ { 2 } \theta
-$$
-
-$$
-| G | ^ { 2 } \; = \; ( 1 - C ) ^ { 2 } + 2 \, C \, ( 1 - C ) \, \cos \theta + C ^ { 2 }
-$$
-
-**The maximum of $| G | ^ { 2 }$ occurs at $\cos \theta = 1$ (i.e., $\theta = 0$ ) where $| G | = 1$ , and at $\cos \theta = - 1$ (i.e., $\theta = \pi$ ) where:**
-
-$$
-| G | ^ { 2 } \; = \; ( 1 - C ) ^ { 2 } - 2 \, C \, ( 1 - C ) + C ^ { 2 } \; = \; ( 1 - 2 \, C ) ^ { 2 }
-$$
-
-**The stability condition $| G | \leq 1$ requires:**
-
-$$
-( 1 - 2 \, C ) ^ { 2 } \; \leq \; 1 \quad \Rightarrow \quad 0 \; \leq \; C \; \leq \; 1
-$$
-
-**The upwind scheme is stable for $0 \leq C \leq 1$ . The engineer would design the structure for the consistency, because the consistency is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.**
+::: warning Stability is not accuracy, and accuracy is not boundedness
+Three distinct requirements are often confused. A stable scheme can be inaccurate (upwind at $C = 0.1$ on a coarse grid smears everything); an accurate, stable scheme can be unbounded (Lax–Wendroff and Crank–Nicolson produce overshoots near discontinuities without any instability, and a temperature or turbulence quantity that dips below zero can then wreck a simulation); and an unconditionally stable implicit scheme run with a huge time step is stable and bounded but wrong in time. Choose $\Delta t$ for the accuracy of the transient you care about; stability is the floor, not the target.
 :::
 
-::: example Lax-Wendroff scheme {#ex-lax-wendroff level=3 check="2"}
-The Lax-Wendroff scheme for the advection equation $u _ { t } + a \\, u _ { x } = 0$ is:
-
-$$
-u _ { i } ^ { n + 1 } \\; = \\; u _ { i } ^ { n } \\; - \\; { \frac { C } { 2 } } \\, ( u _ { i + 1 } ^ { n } - u _ { i - 1 } ^ { n } ) \\; + \\; { \frac { C ^ { 2 } } { 2 } } \\, ( u _ { i + 1 } ^ { n } - 2 \\, u _ { i } ^ { n } + u _ { i - 1 } ^ { n } )
-$$
-
-where $C = a \\, \\Delta t / \\Delta x$ . Show that the scheme is stable for $| C | \\leq 1$ .
-
-**The amplification factor is:**
-
-$$
-G \\; = \\; 1 - i \\, C \\, \\sin \\theta \\; + \\; C ^ { 2 } \\, ( \\cos \\theta - 1 )
-$$
-
-**The magnitude squared is:**
-
-$$
-| G | ^ { 2 } \\; = \\; [ 1 - 2 \\, C ^ { 2 } \\, \\sin ^ { 2 } ( \\theta / 2 ) ] ^ { 2 } + C ^ { 2 } \\, \\sin ^ { 2 } \\theta
-$$
-
-**Simplifying with $s = \\sin ^ { 2 } ( \\theta / 2 )$ :**
-
-$$
-| G | ^ { 2 } \\; = \\; 1 - 4 \\, C ^ { 2 } \\, ( 1 - C ^ { 2 } ) \\, s ^ { 2 }
-$$
-
-**For $| C | \\leq 1$ , the coefficient $C ^ { 2 } ( 1 - C ^ { 2 } ) \\geq 0$ , so $| G | ^ { 2 } \\leq 1$ . The scheme is stable for $| C | \\leq 1$ . The engineer would design the structure for the numerical diffusion, because the numerical diffusion is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.**
+::: quiz
+A colleague's explicit code for $u_t + au_x = 0$ uses central differences in space and is "stable as long as I keep the Courant number below $0.1$". What do you say?
+- [ ] That is right: small Courant numbers always guarantee stability.
+- [x] FTCS for advection is unconditionally unstable; at small $C$ the growth per step is only $1 + O(C^2)$, so the blow-up is merely slow. Refining the grid at fixed $C$ will make it worse, not better.
+- [ ] The scheme is stable because it satisfies the CFL condition.
+- [ ] It is stable if the domain is periodic.
+::: solution
+$\lvert G\rvert^2 = 1 + C^2\sin^2\theta > 1$ for every $C > 0$. Over a fixed physical time the number of steps grows as the grid is refined, so the total amplification $(1 + C^2)^{n/2}$ grows without bound. The CFL condition is necessary, not sufficient.
+:::
 :::
 
-::: example Time step calculation {#ex-time-step-calc level=3 check="2"}
-A CFD simulation uses $\\Delta x = 0 . 0 0 1 \\; \\text{m }$ , $u = 5 0 \\; \\text{m/s }$ , and the speed of sound is $a = 3 4 0 \\; \\text{m/s }$ . Calculate the maximum time step for an explicit scheme using the CFL condition with the wave speed $| u | + a$ .
+::: history
+The CFL condition comes from a 1928 paper by Richard Courant, Kurt Friedrichs and Hans Lewy, "Über die partiellen Differenzengleichungen der mathematischen Physik" (*Mathematische Annalen*, vol. 100), written as an existence proof for PDEs by finite differences, years before computers. The Fourier method of stability analysis was developed by John von Neumann at Los Alamos during the Second World War; its first full published account was by G. G. O'Brien, M. A. Hyman and S. Kaplan in 1951 (*Journal of Mathematics and Physics*). Peter Lax and Robert Richtmyer proved the equivalence theorem in their 1956 "Survey of the stability of linear finite difference equations" (*Communications on Pure and Applied Mathematics*), and Lax and Burton Wendroff published their second-order scheme in 1960 in the same journal. The modified-equation approach was systematised by R. F. Warming and B. J. Hyett in 1974 (*Journal of Computational Physics*).
+:::
 
-**The maximum wave speed is:**
-
-$$
-c _ { \\max } \\; = \\; | u | + a \\; = \\; 5 0 + 3 4 0 \\; = \\; 3 9 0 \\; \\text{m/s }
-$$
-
-**The CFL condition with $C = 1$ gives:**
-
-$$
-\\Delta t _ { \\max } \\; = \\; { \frac { \\Delta x } { c _ { \\max } } } \\; = \\; { \frac { 0 . 0 0 1 } { 3 9 0 } } \\; = \\; { \bf 2 . 5 6 \\times 1 0 ^ { - 6 } } \\; \\text{s }
-$$
-
-**For a safety factor of 0.8:**
-
-$$
-\\Delta t \\; = \\; 0 . 8 \\times 2 . 5 6 \\times 1 0 ^ { - 6 } \\; = \\; { \bf 2 . 0 5 \\times 1 0 ^ { - 6 } } \\; \\text{s }
-$$
-
-**The maximum time step is approximately 2 microseconds. The engineer would design the structure for the numerical dispersion, because the numerical dispersion is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.**
+::: summary
+- Consistency: the scheme reduces to the PDE as the grid is refined. Stability: $\lVert\mathbf{Q}^m\rVert$ stays bounded. Convergence: the numerical solution tends to the exact one.
+- Lax equivalence: for a consistent linear scheme, stability $\Leftrightarrow$ convergence, and a stable scheme's global error has the order of its truncation error.
+- Von Neumann analysis inserts $G^ne^{\mathrm{i}j\theta}$ and requires $\lvert G\rvert \le 1$; FTCS heat: $d \le \tfrac12$ (in 2D $d_x + d_y \le \tfrac12$); BTCS and Crank–Nicolson: unconditionally stable, CN undamped for short waves.
+- Advection: FTCS is always unstable; upwind needs $0 \le C \le 1$.
+- CFL: the numerical domain of dependence must contain the physical one; explicit schemes need $\lvert a\rvert\Delta t/\Delta x \le 1$, with the fastest wave speed (often $\lvert u\rvert + c$).
+- The modified equation reveals numerical diffusion $\nu_{\text{num}} = \tfrac12 a\Delta x(1 - C)$ for upwind and dispersion $\propto(1 - C^2)u_{xxx}$ for Lax–Wendroff.
 :::
 
 ## Exercises
 
-::: exercise Courant number {#ex-courant-number-ex level=3 check="2"}
-A flow has $u = 1 0 \; \text{m/s }$ , $\Delta x = 0 . 0 1 \; \text{m }$ , and $\Delta t = 0 . 0 0 0 5 \; \text{s }$ . Calculate the Courant number.
-
+::: exercise Two-dimensional explicit conduction {level=1 check="0.025"}
+FTCS is used on a square grid with $\Delta x = \Delta y = 1.0\ \mathrm{mm}$ for a solid with $\alpha = 1.0\times10^{-5}\ \mathrm{m^2/s}$. Find the largest stable time step. (Enter $\Delta t$ in seconds.)
 ::: solution
-$$
-C \; = \; { \\frac { u \, \Delta t } { \Delta x } } \; = \; { \\frac { 1 0 \times 0 . 0 0 0 5 } { 0 . 0 1 } } \; = \; { \\bf 0 . 5 }
-$$
-
-**The Courant number is 0.5 (stable for explicit schemes).**
+$d_x + d_y \le \tfrac12$ with $d_x = d_y = \alpha\Delta t/\Delta x^2$ gives $\Delta t \le \Delta x^2/(4\alpha) = 10^{-6}/(4\times10^{-5}) = 0.025\ \mathrm{s}$.
 :::
 :::
 
-::: exercise Diffusion stability {#ex-diffusion-stability-ex level=3 check="2"}
-For the FTCS scheme with $\alpha = 1 0 ^ { - 5 } \; \text{m}^2 \text{/s }$ and $\Delta x = 0 . 0 0 1 \; \text{m }$ , calculate the maximum stable time step.
-
+::: exercise A Courant number {level=1 check="1.5"}
+An explicit upwind scheme convects a scalar at $a = 15\ \mathrm{m/s}$ with $\Delta t = 1.0\times10^{-4}\ \mathrm{s}$ on a grid with $\Delta x = 1.0\ \mathrm{mm}$. Compute the Courant number and state whether the scheme is stable. (Enter $C$.)
 ::: solution
-$$
-\Delta t _ { \max } \; = \; { \\frac { ( \Delta x ) ^ { 2 } } { 2 \, \alpha } } \; = \; { \\frac { 1 0 ^ { - 6 } } { 2 \times 1 0 ^ { - 5 } } } \; = \; { \\bf 0 . 0 5 } \; \text{s }
-$$
-
-**The maximum stable time step is 0.05 s.**
+$C = a\Delta t/\Delta x = 15 \times 10^{-4}/10^{-3} = 1.5 > 1$: unstable. The time step must be reduced to at most $6.7\times10^{-5}\ \mathrm{s}$.
 :::
 :::
 
-::: exercise Consistency {#ex-consistency-ex level=3 check="2"}
-A scheme is consistent if the truncation error:
-
+::: exercise Growth of the sawtooth {level=1 check="1.4"}
+FTCS for the heat equation is run with $d = 0.6$. Find $\lvert G\rvert$ for the sawtooth mode $\theta = \pi$, and the factor by which that mode grows in $20$ steps. (Enter $\lvert G\rvert$.)
 ::: solution
-**Goes to zero as $h \to 0$ .** A scheme is consistent if $\lim _ { h \to 0 } \| \tau \| = 0$ , meaning the discrete equation approaches the exact PDE as the grid is refined.
+$G = 1 - 4d = 1 - 2.4 = -1.4$, so $\lvert G\rvert = 1.4$; after $20$ steps the mode is multiplied by $1.4^{20} \approx 837$, alternating in sign each step — the characteristic signature of an explicit diffusion instability.
 :::
 :::
 
-::: exercise Lax theorem {#ex-lax-theorem-ex level=3 check="2"}
-The Lax equivalence theorem states that for a well-posed linear problem:
-
+::: exercise Numerical viscosity {level=2 check="0.001"}
+Find the numerical viscosity of the upwind scheme for $a = 2.0\ \mathrm{m/s}$, $\Delta x = 5.0\ \mathrm{mm}$ and $C = 0.8$. (Enter $\nu_{\text{num}}$ in $\mathrm{m^2/s}$.)
 ::: solution
-**Consistency + Stability = Convergence.** The Lax equivalence theorem states that for a well-posed linear initial value problem, consistency plus stability is equivalent to convergence.
+$\nu_{\text{num}} = \tfrac12 a\Delta x(1 - C) = 0.5 \times 2.0 \times 0.005 \times 0.2 = 1.0\times10^{-3}\ \mathrm{m^2/s}$.
 :::
 :::
 
-::: exercise CFL in 2D {#ex-cfl-2d-ex level=3 check="2"}
-A 2D flow has $u = 5 \; \text{m/s }$ , $v = 3 \; \text{m/s }$ , $\Delta x = 0 . 0 1 \; \text{m }$ , and $\Delta y = 0 . 0 2 \; \text{m }$ . Calculate the maximum stable time step.
-
+::: exercise Damping of a resolved wave {level=2 check="0.157"}
+A wave with $20$ points per wavelength is advected by the upwind scheme with $C = 0.25$ for $200$ time steps. What fraction of its amplitude remains? (Enter the fraction to three significant figures.)
 ::: solution
-$$
-\Delta t _ { \max } \; = \; { \\frac { 1 } { { \\frac { | u | } { \Delta x } } + { \\frac { | v | } { \Delta y } } } } \; = \; { \\frac { 1 } { { \\frac { 5 } { 0 . 0 1 } } + { \\frac { 3 } { 0 . 0 2 } } } } \; = \; { \\frac { 1 } { 5 0 0 + 1 5 0 } } \; = \; { \\frac { 1 } { 6 5 0 } } \; = \; { \\bf 0 . 0 0 1 5 4 } \; \text{s }
-$$
-
-**The maximum stable time step is 0.00154 s.**
+$\theta = 2\pi/20 = 0.3142$, $1 - \cos\theta = 0.04894$, $\lvert G\rvert^2 = 1 - 2(0.25)(0.75)(0.04894) = 0.98165$, $\lvert G\rvert = 0.99078$. After $200$ steps: $0.99078^{200} = 0.157$. In those $200$ steps the wave travelled $200 \times 0.25 = 50\Delta x = 2.5$ wavelengths, and lost $84\,\%$ of its amplitude despite being well resolved.
 :::
 :::
 
-::: exercise Derivation: the CFL condition {#ex-derive-cfl level=4 check="2"}
-Derive the CFL condition $C = u \, \Delta t / \Delta x \leq 1$ from the domain of dependence argument. Write the expression for the physical domain of dependence.
-
+::: exercise Explicit convection–diffusion {level=2 check="3.333e-4"}
+The FTCS-type scheme $\phi_j^{n+1} = \phi_j^n - C(\phi_j^n - \phi_{j-1}^n) + d(\phi_{j+1}^n - 2\phi_j^n + \phi_{j-1}^n)$ (upwind convection, central diffusion) is used with $u = 1.0\ \mathrm{m/s}$, $\Gamma/\rho = 1.0\times10^{-3}\ \mathrm{m^2/s}$ and $\Delta x = 1.0\ \mathrm{mm}$. Show that it is a weighted average of old values when $C + 2d \le 1$ and find the largest time step that satisfies this. (Enter $\Delta t$ in seconds to four significant figures.)
 ::: solution
-The **physical domain of dependence** for the advection equation $u _ { t } + a \, u _ { x } = 0$ at point $( x _ { i } , t ^ { n + 1 } )$ is:
-
-$$
-x _ { \text{dep } } \; = \; x _ { i } - a \, \Delta t
-$$
-
-**The numerical domain of dependence for a two-point stencil is:**
-
-$$
-x _ { \text{num } } \; = \; x _ { i - 1 } \; = \; x _ { i } - \Delta x
-$$
-
-**The CFL condition requires the physical domain of dependence to be contained within the numerical domain of dependence:**
-
-$$
-| a \, \Delta t | \; \leq \; \Delta x
-$$
-
-**Therefore:**
-
-$$
-C \; = \; { \\frac { | a | \, \Delta t } { \Delta x } } \; \leq \; 1
-$$
-
-**The von Neumann analysis is the reason consistency, stability and convergence are designed for the analysis, not the synthesis, and the analysis is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.** $\blacksquare$
+Rearranged, $\phi_j^{n+1} = (C + d)\phi_{j-1}^n + (1 - C - 2d)\phi_j^n + d\,\phi_{j+1}^n$: the weights sum to $1$ and are all non-negative if $C + 2d \le 1$, which guarantees boundedness (and stability in the maximum norm). $C + 2d = \Delta t\left(u/\Delta x + 2\nu/\Delta x^2\right) = \Delta t(1000 + 2000)\ \mathrm{s^{-1}}$, so $\Delta t \le 1/3000 = 3.33\times10^{-4}\ \mathrm{s}$. Here diffusion, not convection, is the tighter limit: the cell Péclet number $u\Delta x/\nu = 1$ is small.
 :::
 :::
 
-::: exercise Derivation: the amplification factor {#ex-derive-amplification level=4 check="2"}
-Derive the amplification factor for the FTCS scheme applied to the advection equation. Write the expression for the FTCS scheme.
-
+::: exercise The Lax–Friedrichs scheme {level=3}
+The Lax–Friedrichs scheme replaces $u_j^n$ in FTCS by the average of its neighbours: $u_j^{n+1} = \tfrac12(u_{j+1}^n + u_{j-1}^n) - \tfrac{C}{2}(u_{j+1}^n - u_{j-1}^n)$. (a) Find $G$ and the stability condition. (b) Derive its modified equation and show that its numerical viscosity is $\tfrac{\Delta x^2}{2\Delta t}(1 - C^2)$. (c) Compare it with upwind at $C = 0.5$.
 ::: solution
-The **FTCS scheme** for $u _ { t } + a \, u _ { x } = 0$ is:
-
-$$
-{ \\frac { u _ { i } ^ { n + 1 } - u _ { i } ^ { n } } { \Delta t } } \; + \; a \, { \\frac { u _ { i + 1 } ^ { n } - u _ { i - 1 } ^ { n } } { 2 \, \Delta x } } \; = \; 0
-$$
-
-**Substitute the Fourier mode $u _ { j } ^ { n } = G ^ { n } \, e ^ { i \, k \, j \, \Delta x }$ :**
-
-$$
-{ \\frac { G - 1 } { \Delta t } } \; + \; { \\frac { a } { 2 \, \Delta x } } \, ( e ^ { i \, k \, \Delta x } - e ^ { - i \, k \, \Delta x } ) \; = \; 0
-$$
-
-**Using $e ^ { i \theta } - e ^ { - i \theta } = 2 \, i \, \sin \theta$ :**
-
-$$
-G \; = \; 1 - { \\frac { i \, a \, \Delta t } { \Delta x } } \, \sin ( k \, \Delta x )
-$$
-
-**The magnitude squared is:**
-
-$$
-| G | ^ { 2 } \; = \; 1 + \\left( { \\frac { a \, \Delta t } { \Delta x } } \\right) ^ { 2 } \, \sin ^ { 2 } ( k \, \Delta x ) \; > \; 1
-$$
-
-**Since $| G | > 1$ for all $k \neq 0$ , the FTCS scheme is unconditionally unstable for the advection equation.** $\blacksquare$
+(a) $G = \cos\theta - \mathrm{i}C\sin\theta$, $\lvert G\rvert^2 = \cos^2\theta + C^2\sin^2\theta = 1 - (1 - C^2)\sin^2\theta \le 1$ iff $\lvert C\rvert \le 1$ — the CFL limit, now achieved.
+(b) Expanding: $\tfrac12(u_{j+1} + u_{j-1}) = u + \tfrac{\Delta x^2}{2}u_{xx} + \cdots$, so $u_t + \tfrac{\Delta t}{2}u_{tt} + au_x - \tfrac{\Delta x^2}{2\Delta t}u_{xx} = O(\Delta x^2)$. With $u_{tt} = a^2u_{xx}$: $u_t + au_x = \left(\tfrac{\Delta x^2}{2\Delta t} - \tfrac{a^2\Delta t}{2}\right)u_{xx} = \tfrac{\Delta x^2}{2\Delta t}(1 - C^2)u_{xx}$.
+(c) Writing $\Delta x^2/\Delta t = a\Delta x/C$, the Lax–Friedrichs viscosity is $\tfrac{a\Delta x}{2C}(1 - C^2)$; at $C = 0.5$ this is $0.75\,a\Delta x$, three times the upwind value $0.25\,a\Delta x$. Averaging the neighbours stabilises FTCS by adding a large amount of diffusion.
 :::
 :::
 
-::: exercise Numerical diffusion {#ex-numerical-diffusion-ex level=3 check="2"}
-The upwind scheme for $a = 2 \; \text{m/s }$ , $\Delta x = 0 . 1 \; \text{m }$ , and $C = 0 . 5$ has a numerical diffusion coefficient of:
-
+::: exercise Choosing a time step for an industrial transient {level=3}
+A transient simulation of a valve closing in a water pipe (speed of sound in water about $1480\ \mathrm{m/s}$, flow speed $3\ \mathrm{m/s}$) is planned on a mesh with smallest cells of $0.5\ \mathrm{mm}$ near the valve seat. The valve closes in $20\ \mathrm{ms}$. Discuss the choice between an explicit compressible solver and an implicit pressure-based solver, estimating time steps and step counts, and state what quantities you would monitor to confirm that the time step is adequate.
 ::: solution
-$$
-\nu _ { \text{num } } \; = \; { \\frac { a \, \Delta x } { 2 } } \, ( 1 - C ) \; = \; { \\frac { 2 \times 0 . 1 } { 2 } } \times ( 1 - 0 . 5 ) \; = \; 0 . 1 \times 0 . 5 \; = \; { \\bf 0 . 0 5 } \; \text{m}^2 \text{/s }
-$$
-
-**The numerical diffusion coefficient is 0.05 m²/s.**
+Explicit compressible: $\Delta t \le \Delta x/(u + c) = 5\times10^{-4}/1483 = 3.4\times10^{-7}\ \mathrm{s}$; $20\ \mathrm{ms}$ needs about $6\times10^{4}$ steps, and many more to follow the subsequent pressure surge (water hammer), which is genuinely acoustic. If the pressure surge matters — the usual reason for such a study — those acoustic time scales must be resolved anyway, and an explicit or implicit compressible formulation with $C_{\text{acoustic}} \sim 1$ is appropriate. If only the incompressible flow through the closing valve matters, an implicit pressure-based solver with convective Courant number $\sim 1$ in the smallest cells allows $\Delta t \sim \Delta x/u_{\text{max}}$; jet velocities through the narrowing gap may reach $30\ \mathrm{m/s}$, giving $\Delta t \sim 1.7\times10^{-5}\ \mathrm{s}$ and about $1200$ steps. Adequacy is confirmed by a time-step study (halve $\Delta t$ and compare the force on the valve, the peak pressure and the flow rate history), by checking that the maximum Courant number stays near the intended value, and by checking that the iterative residuals within each step converge.
 :::
 :::
-
-::: quiz Consistency, stability and convergence {#quiz-consistency-stability}
-The most fundamental theoretical foundations of computational fluid dynamics are:
-
-- [ ] Springs, bars and the direct stiffness method
-- [ ] Trusses and frames
-- [x] Consistency, stability and convergence
-- [ ] Structural dynamics
-
-::: solution
-**Consistency, stability and convergence.** Consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics, because the Lax equivalence theorem states that for a well-posed linear initial value problem, consistency plus stability is equivalent to convergence, the von Neumann stability analysis determines the amplification factor of Fourier modes, and the CFL condition limits the time step for explicit schemes. The engineer who runs a simulation without checking the CFL condition is not running a simulation; they are guessing.
-:::
-:::
-
-::: quiz FTCS for advection {#quiz-ftcs-advection}
-The FTCS scheme for the advection equation is:
-
-- [x] Unconditionally unstable
-- [ ] Unconditionally stable
-- [ ] Conditionally stable
-- [ ] Always exact
-
-::: solution
-**Unconditionally unstable.** The FTCS scheme for the advection equation is unconditionally unstable, and the numerical dispersion is the reason consistency, stability and convergence are designed for the dispersion, not the diffusion. The engineer who runs a simulation without checking the numerical dispersion is not running a simulation; they are guessing.
-:::
-:::
-
-## Where this lesson leads
-
-- **[[computational-fluid-dynamics/finite-volume-diffusion]]** — The finite volume method for diffusion is the foundation of consistency, stability and convergence.
-- **[[computational-fluid-dynamics/linear-solvers]]** — Solving the discrete equations is the foundation of consistency, stability and convergence.
-- **[[computational-fluid-dynamics/convection-diffusion]]** — Convection-diffusion schemes are the foundation of consistency, stability and convergence.
-- **[[computational-fluid-dynamics/pressure-velocity]]** — Pressure-velocity coupling is the foundation of consistency, stability and convergence.
-- **[[computational-fluid-dynamics/turbulence-modelling]]** — Turbulence modelling is the foundation of consistency, stability and convergence.
-- **[[computational-fluid-dynamics/meshing-verification]]** — Meshing, boundary conditions and verification are the foundation of consistency, stability and convergence.
-- **[[computational-fluid-dynamics/governing-equations]]** — Governing equations and their classification are the foundation of consistency, stability and convergence.
-- **[[computational-fluid-dynamics/finite-differences]]** — Finite differences are the foundation of consistency, stability and convergence.
-- **[[fluid-mechanics/dimensional-analysis]]** — The dimensional analysis is the foundation of consistency, stability and convergence.
-- **[[control-systems/time-response]]** — The time response is the foundation of consistency, stability and convergence.
-
-::: history Consistency, stability and convergence: from von Neumann to the Lax theorem {#history-consistency-stability}
-**1928** — **Courant, Friedrichs and Lewy** publish the **CFL condition**, which is the foundation of consistency, stability and convergence. **The CFL condition is the reason consistency, stability and convergence are the oldest concept in computational fluid dynamics, and the age is the reason consistency, stability and convergence are the most refined concept in computational fluid dynamics.**
-
-**1940s** — **von Neumann** develops the **Fourier stability analysis**, and the Fourier stability analysis is the reason consistency, stability and convergence are the most historic concept in computational fluid dynamics. **The Fourier stability analysis is the reason consistency, stability and convergence are the most refined concept in computational fluid dynamics, and consistency, stability and convergence are the reason the Fourier stability analysis is the most historic concept in computational fluid dynamics.**
-
-**1951** — **Lax and Richtmyer** publish the **Lax equivalence theorem**, and the Lax equivalence theorem is the reason consistency, stability and convergence are the most practical concept in computational fluid dynamics. **The Lax equivalence theorem is the reason consistency, stability and convergence are the most refined concept in computational fluid dynamics, and consistency, stability and convergence are the reason the Lax equivalence theorem is the most practical concept in computational fluid dynamics.**
-
-**1954** — **Lax and Wendroff** develop the **Lax-Wendroff scheme**, and the Lax-Wendroff scheme is the reason consistency, stability and convergence are the most powerful concept in computational fluid dynamics. **The Lax-Wendroff scheme is the reason consistency, stability and convergence are the most refined concept in computational fluid dynamics, and consistency, stability and convergence are the reason the Lax-Wendroff scheme is the most powerful concept in computational fluid dynamics.**
-
-**1960s** — **The first modified equation analysis** is developed, and the first modified equation analysis is the reason consistency, stability and convergence are the most efficient concept in computational fluid dynamics. **The first modified equation analysis is the reason consistency, stability and convergence are the most refined concept in computational fluid dynamics, and consistency, stability and convergence are the reason the first modified equation analysis is the most efficient concept in computational fluid dynamics.**
-
-**1970s** — **The first TVD schemes** are developed, and the first TVD schemes are the reason consistency, stability and convergence are the most advanced concept in computational fluid dynamics. **The first TVD schemes are the reason consistency, stability and convergence are the most refined concept in computational fluid dynamics, and consistency, stability and convergence are the reason the first TVD schemes are the most advanced concept in computational fluid dynamics.**
-
-**1980s** — **The first ENO schemes** are developed, and the first ENO schemes are the reason consistency, stability and convergence are the most modern concept in computational fluid dynamics. **The first ENO schemes are the reason consistency, stability and convergence are the most refined concept in computational fluid dynamics, and consistency, stability and convergence are the reason the first ENO schemes are the most modern concept in computational fluid dynamics.**
-
-**1990s** — **The first WENO schemes** are developed, and the first WENO schemes are the reason consistency, stability and convergence are the most futuristic concept in computational fluid dynamics. **The first WENO schemes are the reason consistency, stability and convergence are the most refined concept in computational fluid dynamics, and consistency, stability and convergence are the reason the first WENO schemes are the most futuristic concept in computational fluid dynamics.**
-:::
-
-::: summary Consistency, stability and convergence {#summary-consistency-stability}
-- **The truncation error is $\tau = L _ { h } \, u - L \, u$ where $L$ is the exact differential operator and $L _ { h }$ is the discrete operator, the consistency condition is $\lim _ { h \to 0 } \| \tau \| = 0$ , and the order of consistency is $\| \tau \| = O ( h ^ { p } )$ .** The CFL condition is the reason consistency, stability and convergence are designed for the stability, not the accuracy, and the stability is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.
-- **The modified equation is $L \, u + ( h / 2 ) \, u _ { t t } - ( h ^ { 2 } / 6 ) \, u _ { x x x } + \cdots = 0$ , the numerical diffusion coefficient is $\nu _ { \text{num } } = ( u \, \Delta x / 2 ) \, ( 1 - C )$ where $C$ is the Courant number, and the truncation error is $O ( h ^ { p } )$ .** The amplification factor is the reason consistency, stability and convergence are designed for the factor, not the mode, and the factor is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.
-- **The Lax equivalence theorem states that Consistency + Stability $\iff$ Convergence, the convergence is $\lim _ { \Delta t , \Delta x \to 0 } \| u _ { h } - u \| = 0$ , and the stability is $\| u _ { h } ^ { n } \| \leq K \, e ^ { \alpha \, t } \, \| u _ { h } ^ { 0 } \|$ .** The truncation error is the reason consistency, stability and convergence are designed for the error, not the solution, and the error is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.
-- **The well-posedness requires Existence + Uniqueness + Continuous dependence on data, the Lax-Wendroff theorem extends this to conservation laws, and the stability constant is $K = 1 \text{--} 1 0$ .** The Lax equivalence theorem is the reason consistency, stability and convergence are designed for the theorem, not the conjecture, and the theorem is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.
-- **The Courant number is $C = u \, \Delta t / \Delta x$ , the CFL condition for the advection equation is $C = u \, \Delta t / \Delta x \leq 1$ , and the physical domain of dependence is $[ x - u \, t , x + u \, t ]$ .** The von Neumann analysis is the reason consistency, stability and convergence are designed for the analysis, not the synthesis, and the analysis is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.
-- **The numerical domain of dependence is $[ x - N \, \Delta x , x + N \, \Delta x ]$ , the CFL condition in 2D is $\Delta t \leq 1 / ( | u | / \Delta x + | v | / \Delta y )$ , and the Courant number is $C = 0 \text{--} 1$ .** The consistency is the reason consistency, stability and convergence are designed for the consistency, not the inconsistency, and the consistency is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.
-- **The Fourier mode is $u _ { j } ^ { n } = G ^ { n } \, e ^ { i \, k \, j \, \Delta x }$ , the amplification factor is $G ( k , \Delta t ) = u _ { j } ^ { n + 1 } / u _ { j } ^ { n }$ , and the stability condition is $| G ( k , \Delta t ) | \leq 1$ for all $k$ .** The convergence is the reason consistency, stability and convergence are designed for the convergence, not the divergence, and the convergence is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.
-- **The upwind scheme amplification factor is $G = 1 - C + C \, e ^ { - i \, k \, \Delta x }$ , the Lax-Friedrichs scheme amplification factor is $G = \cos ( k \, \Delta x ) - i \, C \, \sin ( k \, \Delta x )$ , and the wave number is $k = 0 \text{--} \pi / \Delta x$ .** The numerical diffusion is the reason consistency, stability and convergence are designed for the diffusion, not the dispersion, and the diffusion is the reason consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics.
-- **The consistency, stability and convergence calculation is the most important theoretical foundation calculation in computational fluid dynamics, because the consistency, stability and convergence calculation determines the reliability and accuracy of the numerical solution.** The reliability and accuracy are the reason the engineer can trust the numerical solution.
-- **Consistency, stability and convergence are the most fundamental theoretical foundations of computational fluid dynamics, because the Lax equivalence theorem states that for a well-posed linear initial value problem, consistency plus stability is equivalent to convergence, the von Neumann stability analysis determines the amplification factor of Fourier modes, and the CFL condition limits the time step for explicit schemes.** The computational fluid dynamics is the reason the engineer can trust the numerical solution.
-:::
-
-## Further reading
-
-- **R. Richtmyer and D. Morton (1994)** — *Difference Methods for Initial-Value Problems*, 4th ed. Springer. The truncation error, the amplification factor, and the CFL condition.
-- **J. C. Strikwerda (2004)** — *Finite Difference Schemes and Partial Differential Equations*, 2nd ed. SIAM. The truncation error and the Lax equivalence theorem.
-- **G. D. Smith (1985)** — *Numerical Solution of Partial Differential Equations: Finite Difference Methods*, 3rd ed. Oxford. The truncation error and the von Neumann analysis.
-- **R. Courant, K. O. Friedrichs and H. Lewy (1928)** — *Über die partiellen Differenzengleichungen der mathematischen Physik*. Mathematische Annalen. The truncation error and the consistency.
-- **P. D. Lax and R. D. Richtmyer (1956)** — *Survey of the Stability of Linear Difference Equations*. Communications on Pure and Applied Mathematics. The truncation error and the convergence.
-- **J. C. Strikwerda and B. Gustafsson (1998)** — *Numerical Solution of PDEs*. Thomson. The truncation error and the numerical diffusion.
-- **B. van Leer (1977)** — *Towards the Ultimate Difference Scheme*. Lecture Notes in Physics. The truncation error and the numerical dispersion.
-- **J. H. Ferziger, M. Peric and R. L. Street (2020)** — *Computational Methods for Fluid Dynamics*, 4th ed. Springer. The truncation error and the CFL condition.
