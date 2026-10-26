@@ -1,108 +1,373 @@
-## Protons
-::: definition {#atomsandmoles-d1}
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Protons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
+上一章可以把铜称为“一种原子”，然后称量一块铜。只有当你知道一个原子包含什么、一个原子有多重时，称量才能用来数原子。氯使这一困难变得明显：元素周期表上印着的氯的数值约为$35.45$，而没有哪个氯原子核的质量数是$35.45$。本章把标记某一同位素的整数与标记元素的平均值区分开来，然后建立摩尔——把天平上的质量变成原子、分子或化学式单元数目的单位。
+
+## 原子包含什么
+
+::: definition 原子序数、质量数与同位素 {#def-nuclear}
+原子序数为$Z$的中性原子，原子核中有$Z$个**质子**，核外有$Z$个**电子**。**质量数**$A$是质子数与**中子**数之和，因此中子数为$A - Z$。记号$^{\,A}_{\,Z}\mathrm{X}$同时记录了这两个数；原子序数常常省略，因为元素符号已经确定了$Z$。
+
+一种元素的**同位素**具有相同的$Z$和不同的$A$。它们是同一种元素——在极好的近似下化学性质相同——因为化学性质由电子决定，而电子的排布由核电荷$Z$决定。**离子**是电子数不等于$Z$的原子或原子团：阳离子的电子比质子少，阴离子的电子比质子多。以元电荷为单位，电荷等于$Z$减去电子数。
 :::
-## neutrons and electrons
-::: definition {#atomsandmoles-d2}
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Neutrons And Electrons is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
+
+质子和中子几乎承载了全部质量。电子的质量约为质子质量的$1/1836$，所以质量数$A$是标记某个特定原子核有多重的一个合理的整数标签，但它不能代替测得的质量。电荷则相反：原子核带正电，电子带负电，中性原子之所以是中性的，是因为两种粒子的数目相等，而不是因为它们彼此相似。
+
+有两点提醒能使术语保持清晰。第一，$Z$是元素的性质，$A$是某一同位素的性质。天然氯不是“氯-$35.45$”，而是氯-$35$和氯-$37$的混合物。第二，失去一个电子形成阳离子并不改变$Z$或$A$。$\mathrm{Na^+}$仍然是钠，如果原来是质量数为$23$的同位素，现在仍是$23$，它有十个电子而不是十一个。
+
+::: example 数粒子 {#ex-count-particles}
+对每种粒子给出$Z$、$A$、中子数和电子数。(a) $^{23}\mathrm{Na}$。(b) $^{23}\mathrm{Na^+}$。(c) $^{35}\mathrm{Cl}$。(d) $^{37}\mathrm{Cl^-}$。(e) $^{16}\mathrm{O^{2-}}$。
+::: solution
+(a) 钠的$Z = 11$。这里$A = 23$，所以中子数为$23 - 11 = 12$。原子是中性的，所以有$11$个电子。
+(b) 该离子的原子核相同：$Z = 11$，$A = 23$，$12$个中子。失去了一个电子，所以有$10$个电子。电荷为$11 - 10 = +1$。
+(c) 氯的$Z = 17$。对于这一同位素，$A = 35$，中子数$35 - 17 = 18$，中性原子有$17$个电子。
+(d) 仍是$Z = 17$，但$A = 37$，所以中子数为$20$。多出的一个电子使电子数为$18$，电荷为$17 - 18 = -1$。
+(e) 氧的$Z = 8$，$A = 16$，中子数为$8$。氧离子得到了两个电子，所以有$10$个电子。
+
+(a) 与 (b) 原子核相同，电子数不同。(c) 与 (d) 原子序数相同，中子数不同，而且就这一对而言电荷也不同。同位素和离子是彼此独立的两种描述。
 :::
-## isotopes and relative atomic mass
-::: definition {#atomsandmoles-d3}
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
-Isotopes And Relative Atomic Mass is one of the three core topics of the chapter Atoms And Moles. Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
 :::
-## Review
-::: widget graph
-nodes: Protons, neutrons and electrons, isotopes and relative atomic mass, review
-edges: Protons, neutrons and electrons, isotopes and relative atomic mass, review
-caption: Atoms, isotopes and the mole concept map
+
+## 同位素与相对原子质量
+
+质量数是整数，因为它数的是粒子。元素周期表上的数值对大多数元素而言不是整数，也不应当是整数：它是对普通地球物质中所存在的各同位素取的平均值，按每种同位素的丰度加权。
+
+同位素的质量也并非恰好是整数。它们在这样一个标度上测量：一个$^{12}\mathrm{C}$原子*恰好*为$12$。一**道尔顿**（符号$\mathrm{u}$，也称原子质量单位）是该质量的十二分之一。一个氯-$35$原子的质量略小于$35\,\mathrm{u}$，这不是因为它有零点几个中子，而是因为原子核的质量不等于其自由质子和中子质量之和：结合能有质量当量，也就是上一章中使化学反应的质量亏损无法检测的那个$E = mc^2$；在核能量的尺度上，它大到足以使质量改变千分之几。
+
+::: definition 相对原子质量 {#def-ar}
+元素的**相对原子质量**$A_\mathrm{r}(\mathrm{E})$是指定来源中该元素各原子的相对同位素质量按丰度加权的平均值。它是量纲一的量：以道尔顿计的质量除以一道尔顿。若同位素$i$的相对同位素质量为$m_i$，摩尔分数为$x_i$，则
+$$
+A_\mathrm{r} = \sum_i x_i m_i, \qquad \sum_i x_i = 1.
+$$
+摩尔分数是*原子数*的分数，而不是质量的分数。对于充分混合的样品，摩尔分数与原子数分数是同一个数。
 :::
-::: widget stats
+
+::: proposition 平均值等于总质量除以原子数 {#prop-weighted-mean}
+在含$N$个原子的样品中，若其中$N_i$个是同位素$i$，则由该样品算得的相对原子质量为
+$$
+A_\mathrm{r} = \sum_i x_i m_i, \qquad x_i = \frac{N_i}{N}.
+$$
+样品中不必有任何一个原子的质量是$A_\mathrm{r}\,\mathrm{u}$。表中的值是一个平均值。
 :::
-::: widget quiz
+
+::: proof 从一堆原子到加权平均值 {#proof-weighted-mean}
+样品以道尔顿计的总相对质量为$\sum_i N_i m_i$：每个原子贡献自己的同位素质量，此外别无其他。每个原子的平均质量（仍以道尔顿计）是总质量除以原子数，
+$$
+\frac{1}{N}\sum_i N_i m_i = \sum_i \frac{N_i}{N}\, m_i = \sum_i x_i m_i.
+$$
+以道尔顿计的质量除以$1\,\mathrm{u}$，就得到量纲一的相对原子质量。这段代数就是加权平均的定义，而权重是摩尔分数，因为每个原子无论轻重都是一个原子。如果改用质量分数加权，回答的将是另一个问题——每种同位素占*质量*的多少——而得不到$A_\mathrm{r}$。
 :::
+
+氯是每个人都会遇到的例子，值得把质量和丰度都写出来算一遍。有代表性的地球丰度约为$75.76\%$的$^{35}\mathrm{Cl}$和$24.24\%$的$^{37}\mathrm{Cl}$。天然氯确实有变化：同位素丰度与原子量委员会把标准原子量给成一个*区间*$[35.446,\, 35.457]$，正是因为海洋中的氯离子、矿物和实验室中的有机氯化合物并不相同。普通化学和贸易中使用的约定值是$A_\mathrm{r}(\mathrm{Cl}) = 35.45$。下面用一组有代表性的丰度进行计算，结果落在该区间内，并修约为这一约定值。
+
+::: example 氯的相对原子质量 {#ex-chlorine-ar}
+取相对同位素质量$m(^{35}\mathrm{Cl}) = 34.96885$和$m(^{37}\mathrm{Cl}) = 36.96590$，摩尔分数分别为$0.7576$和$0.2424$。计算$A_\mathrm{r}(\mathrm{Cl})$，并与$35.45$比较。
+::: solution
+两个分数之和为$1$，理应如此。于是
+$$
+\begin{align*}
+A_\mathrm{r}(\mathrm{Cl})
+&= 0.7576\times 34.96885 + 0.2424\times 36.96590 \\
+&= 26.4924 + 8.9605 \\
+&= 35.4529.
+\end{align*}
+$$
+保留三位小数为$35.453$。修约到四位有效数字（即约定值的精度）为$35.45$。两个乘积在相加前保留到四位小数；如果提前把每个乘积修约到两位小数，就会毫无理由地改变最后一位。
+
+样品中没有任何东西的相对质量是$35.45$。约四分之三的原子相对质量为$34.969$，其余的为$36.966$。表中的数值是[[#proof-weighted-mean]]中推导的平均值；当样品是同位素未经分离的普通氯时，它就是应当使用的数。富集了$^{37}\mathrm{Cl}$的样品具有不同的相对原子质量和不同的摩尔质量，尽管它仍然是氯。
+:::
+:::
+
+::: widget plot
+f: a*(1-x)+b*x
+x: 0, 1
+y: 34, 38
+sliders: a=34.969:34:36:0.001; b=36.966:36:38:0.001
+labels: \text{相对原子质量}
+caption: 含两种同位素的元素的相对原子质量对较重同位素的摩尔分数$x$作图。直线$a(1-x)+bx$从$x = 0$处的较轻同位素质量延伸到$x = 1$处的较重同位素质量；滑块设定这两个质量，默认值为$^{35}\mathrm{Cl}$和$^{37}\mathrm{Cl}$。有代表性的氯位于$x = 0.24$附近，此处直线的读数约为$35.45$。
+:::
+
+这张图让加权变得一目了然。平均值更靠近丰度较大的同位素。氯只有约四分之一的原子是重的，所以它位于从$34.97$到$36.97$的约四分之一处，这就是$35.45$更接近$35$而不是$37$的原因。两种同位素丰度相等的元素会正好位于两者中间。溴是这方面著名的近似例子，它的相对原子质量接近$80$正是这个缘故；这里不需要它的确切丰度。
+
+::: quiz {#quiz-chlorine-mean}
+为什么氯的相对原子质量约为$35.45$，而不是$35$或$37$？
+- [ ] 每个氯原子都含有零点几个中子，使其质量数为$35.45$。
+- [x] 普通氯是$^{35}\mathrm{Cl}$和$^{37}\mathrm{Cl}$的混合物，$35.45$是它们同位素质量按丰度加权的平均值。
+- [ ] $35.45$是最稳定同位素的质量数，另一种同位素是表中忽略的杂质。
+- [ ] 相对原子质量除了质子和中子外还计入了电子，小数部分来自电子。
+::: solution
+质量数是属于单个同位素的整数：$35$和$37$。相对原子质量是对所含同位素求的平均值$\sum x_i m_i$，所以落在两者之间，更靠近丰度较大的$^{35}\mathrm{Cl}$。电子的质量不足以使质量改变$0.45\,\mathrm{u}$，也没有哪个原子核含有一部分中子。分离出的单一同位素在表中会按其自身质量列出，接近$35$或接近$37$，而不是$35.45$。
+:::
+:::
+
+## 摩尔
+
+只有当$35.45\,\mathrm{g}$氯这一质量意味着确定数目的原子时，称量它才有用。**摩尔**就是使这句话变得精确的单位。
+
+::: definition 摩尔与阿伏加德罗常数 {#def-mole}
+自 2019 年 5 月 20 日起，一**摩尔**指定的基本单元恰好包含
+$$
+N_\mathrm{A} = 6.02214076\times 10^{23}
+$$
+个该单元。这个数就是**阿伏加德罗常数**。它的单位是$\mathrm{mol^{-1}}$：它是每单位物质的量所含的个数，而不是纯整数，并且按摩尔的定义是准确值。**物质的量**$n$是以摩尔为单位的量。单元数与物质的量成正比，
+$$
+N = n\, N_\mathrm{A}.
+$$
+必须指明基本单元。一摩尔氢原子、一摩尔氢分子和一摩尔电子是三种不同事物的三个不同的量，第二种所含的原子是第一种的两倍。
+:::
+
+这个名称是为纪念阿伏加德罗（Amedeo Avogadro），他既没有测出$6.022\times 10^{23}$，也没有定义摩尔。1811 年，他提出在相同温度和压力下，相同体积的气体含有相同数目的分子。这个常数以及把它确定为准确值的决定，都是二十世纪和二十一世纪的事。2019 年以前，摩尔被定义为所含基本单元数与恰好$12\,\mathrm{g}$的$^{12}\mathrm{C}$中原子数相等的物质的量。改为固定$N_\mathrm{A}$，使摩尔不再依赖于质量测量。实际的变化远小于你今年会称量的任何质量。
+
+物质的量不是质量，也不是整数$N$。它是*按*$N_\mathrm{A}$缩放后的计数，正如以米计的长度是按方便的单位缩放后的米尺根数。“两摩尔水”指物质的量$n = 2\,\mathrm{mol}$，即$2N_\mathrm{A}$个分子，其质量我们马上就要计算。说“一摩尔”而不说是什么的一摩尔，就像说“一打”而不说是什么的一打。
+
+## 摩尔质量与三种换算
+
+::: definition 摩尔质量 {#def-molar-mass}
+物质的**摩尔质量**$M$是样品的质量除以其物质的量，
+$$
+M = \frac{m}{n}.
+$$
+化学中常用的单位是$\mathrm{g\,mol^{-1}}$。对于元素，就本课程的一切用途而言，以$\mathrm{g\,mol^{-1}}$计的$M$在数值上等于$A_\mathrm{r}$。严格地说，$M = A_\mathrm{r}\, M_\mathrm{u}$，其中摩尔质量常数$M_\mathrm{u}$自 2019 年起不再被定义为恰好$1\,\mathrm{g\,mol^{-1}}$。其差别小于$10^{9}$分之一，与学生天平的精度以及我们所引用原子量的精度相比都看不出来。我们取
+$$
+\begin{align*}
+M(\mathrm{H}) &= 1.008\,\mathrm{g\,mol^{-1}}, &
+M(\mathrm{C}) &= 12.011\,\mathrm{g\,mol^{-1}}, \\
+M(\mathrm{N}) &= 14.007\,\mathrm{g\,mol^{-1}}, &
+M(\mathrm{O}) &= 15.999\,\mathrm{g\,mol^{-1}}, \\
+M(\mathrm{Na}) &= 22.990\,\mathrm{g\,mol^{-1}}, &
+M(\mathrm{S}) &= 32.06\,\mathrm{g\,mol^{-1}}, \\
+M(\mathrm{Cl}) &= 35.45\,\mathrm{g\,mol^{-1}}.
+\end{align*}
+$$
+对于分子，把各原子的摩尔质量相加。对于离子化合物，同样的加法给出*每个化学式单元*的摩尔质量：$\mathrm{NaCl}$并不由分子组成，而$M(\mathrm{NaCl})$仍是一摩尔$\mathrm{NaCl}$化学式单元的质量。
+:::
+
+水是此后每个计算都要依赖的核对。两个氢加一个氧给出
+$$
+M(\mathrm{H_2O}) = 2(1.008) + 15.999 = 18.015\,\mathrm{g\,mol^{-1}}.
+$$
+氯气不是$35.45\,\mathrm{g\,mol^{-1}}$。充满标有“氯”的烧瓶的基本单元是分子$\mathrm{Cl_2}$，所以
+$$
+M(\mathrm{Cl_2}) = 2\times 35.45 = 70.90\,\mathrm{g\,mol^{-1}}.
+$$
+在这里用$35.45$，就是数的是原子却称之为分子，此后每个物质的量都会错两倍。氯化钠为
+$$
+M(\mathrm{NaCl}) = 22.990 + 35.45 = 58.44\,\mathrm{g\,mol^{-1}},
+$$
+其中和受$35.45$的百分位限制，所以$22.990$中的千分位不会使摩尔质量写到$58.44$之后。
+
+::: proposition 质量、物质的量与基本单元数 {#prop-conversions}
+对于摩尔质量为$M$的纯物质，质量为$m$、物质的量为$n$、含$N$个指定基本单元的样品满足
+$$
+n = \frac{m}{M}, \qquad N = n\, N_\mathrm{A}, \qquad N = \frac{m\, N_\mathrm{A}}{M}.
+$$
+这三种形式是同一个关系，按已知量和所求量的不同而写成不同形式。它们在$M$、$n$和$N$所指的是同一种基本单元时成立。
+:::
+
+::: proof 一个基本单元的质量为$M/N_\mathrm{A}$ {#proof-conversions}
+由摩尔质量的定义，$m = nM$，两边除以$M$就是第一个方程——只要$M$不为零，而它确实不为零。由阿伏加德罗常数的定义，每摩尔恰好贡献$N_\mathrm{A}$个基本单元，所以$N = n N_\mathrm{A}$。把$n = m/M$代入该式，即得第三个方程。整理后，*一个*基本单元的质量为
+$$
+\frac{m}{N} = \frac{M}{N_\mathrm{A}}.
+$$
+一摩尔之所以重，是因为$N_\mathrm{A}$很大，而不是因为分子重：一个水分子的质量为$18.015/N_\mathrm{A}$克，约$3\times 10^{-23}\,\mathrm{g}$。这些公式对化学一无所知，除了你代入的摩尔质量。如果样品是$\mathrm{Cl_2}$而你代入$M(\mathrm{Cl})$，代数会顺从地去数原子。
+:::
+
+有效数字的规则与密度计算时相同。$N_\mathrm{A}$是准确值，永远不会限制结果。限制结果的是你称得的质量以及由表中原子量构成的摩尔质量。在质量只有三位有效数字的答案中照抄$N_\mathrm{A}$的全部九位数字，是表演而不是精确。下面的例题使用完整的常数，报告的$N$修约到$n$的有效数字位数。
+
+::: example 水：质量、物质的量与分子数 {#ex-water-moles}
+一份水样的质量为$36.030\,\mathrm{g}$。取$M(\mathrm{H_2O}) = 18.015\,\mathrm{g\,mol^{-1}}$，$N_\mathrm{A} = 6.02214076\times 10^{23}\,\mathrm{mol^{-1}}$。求 (a) 水的物质的量，(b) 分子数，(c) 氢原子数。
+::: solution
+(a) 
+$$
+n(\mathrm{H_2O}) = \frac{36.030\,\mathrm{g}}{18.015\,\mathrm{g\,mol^{-1}}} = 2.0000\,\mathrm{mol}.
+$$
+除法恰好整除。质量和摩尔质量都有五位有效数字，物质的量也是五位。
+(b) 
+$$
+N(\mathrm{H_2O}) = (2.0000\,\mathrm{mol})(6.02214076\times 10^{23}\,\mathrm{mol^{-1}}) = 1.2044\times 10^{24}.
+$$
+五位有效数字跟随物质的量；$N_\mathrm{A}$的位数并不短缺。如果质量更粗略而只允许四位，结果就是$1.204\times 10^{24}$。
+(c) 每个分子贡献两个氢原子，这是一个准确的化学计量因子：
+$$
+N(\mathrm{H}) = 2 \times 1.2044\times 10^{24} = 2.4088\times 10^{24}.
+$$
+氢*原子*的物质的量是$4.0000\,\mathrm{mol}$，而不是$2.0000\,\mathrm{mol}$。忘记这个 2，正是[[#prop-conversions]]所警告的错误：基本单元变了，因子必须写出来。
+:::
+:::
+
+::: example 是化学式单元，不是分子 {#ex-nacl}
+$5.844\,\mathrm{g}$氯化钠中有多少个$\mathrm{NaCl}$化学式单元？共有多少个离子？用$M(\mathrm{NaCl}) = 58.44\,\mathrm{g\,mol^{-1}}$。
+::: solution
+$$
+n(\mathrm{NaCl}) = \frac{5.844\,\mathrm{g}}{58.44\,\mathrm{g\,mol^{-1}}} = 0.1000\,\mathrm{mol}.
+$$
+商在四位上是准确的。化学式单元数为
+$$
+N = (0.1000)(6.02214076\times 10^{23}) = 6.022\times 10^{22},
+$$
+四位有效数字，与$0.1000$一致。每个化学式单元贡献一个$\mathrm{Na^+}$和一个$\mathrm{Cl^-}$，共两个离子，所以离子数为$1.204\times 10^{23}$，离子的物质的量为$0.2000\,\mathrm{mol}$。把$6.022\times 10^{22}$称为“$\mathrm{NaCl}$分子数”会给出错误的晶体图像，尽管化学式单元的数目是对的。
+:::
+:::
+
+::: example 从碳的质量到原子数 {#ex-carbon-count}
+$2.50\,\mathrm{g}$碳中有多少个原子？用$M(\mathrm{C}) = 12.011\,\mathrm{g\,mol^{-1}}$。
+::: solution
+$$
+n(\mathrm{C}) = \frac{2.50\,\mathrm{g}}{12.011\,\mathrm{g\,mol^{-1}}} = 0.20814\,\mathrm{mol},
+$$
+保留三位有效数字为$0.208\,\mathrm{mol}$——质量有三位，摩尔质量位数更多。于是
+$$
+N = (0.20814)(6.02214076\times 10^{23}) = 1.2535\times 10^{23},
+$$
+报告为$1.25\times 10^{23}$。在相乘*之前*把$n$修约为$0.208$，在三位精度下无害（$0.208\times 6.022\times 10^{23}$仍为$1.25\times 10^{23}$），但当末位接近修约边界时就成了坏习惯。像上一章的密度计算一样，保留保护数字。
+:::
+:::
+
+::: example 从分子数回到质量 {#ex-from-count}
+某样品含$3.01107038\times 10^{23}$个$\mathrm{O_2}$分子。这是多少物质的量的氧？质量是多少？用$M(\mathrm{O_2}) = 31.998\,\mathrm{g\,mol^{-1}}$。
+::: solution
+除以阿伏加德罗常数。这个数特意取为$N_\mathrm{A}$的一半，除法证实了这一点：
+$$
+n = \frac{3.01107038\times 10^{23}}{6.02214076\times 10^{23}\,\mathrm{mol^{-1}}} = 0.50000\,\mathrm{mol}.
+$$
+$$
+m = nM = (0.50000\,\mathrm{mol})(31.998\,\mathrm{g\,mol^{-1}}) = 15.999\,\mathrm{g}.
+$$
+半摩尔$\mathrm{O_2}$分子与一摩尔$\mathrm{O}$原子质量相同，因为每个分子是两个原子。样品中$\mathrm{O}$*原子*的物质的量是$1.0000\,\mathrm{mol}$，而不是$0.50000\,\mathrm{mol}$。质量与你如何描述无关；物质的量则有关。
+:::
+:::
+
+::: warning 摩尔不是分子，$35.45$也不是质量数 {#warn-mole}
+四种混淆造成了大部分危害。摩尔是物质的量的单位，不是粒子：一个水分子的质量约为$3\times 10^{-23}\,\mathrm{g}$，一摩尔水的质量为$18.015\,\mathrm{g}$。相对原子质量不是质量数：$^{35}\mathrm{Cl}$的$A = 35$，而$A_\mathrm{r}(\mathrm{Cl}) = 35.45$描述的是一种混合物。摩尔质量随你所指明的基本单元而定：$M(\mathrm{Cl_2}) = 70.90\,\mathrm{g\,mol^{-1}}$，用$35.45$会使此后算出的每个物质的量加倍。最后，$N_\mathrm{A}$是准确的，而你的质量不是。一个从常数照抄了九位有效数字、却建立在只知道三位的质量之上的答案，并不是严谨的答案，而是没弄清究竟是哪个数限制了运算。
+:::
+
+::: history {#hist-avogadro}
+道尔顿（John Dalton）的《化学哲学新体系》（*A New System of Chemical Philosophy*，1808）使原子成为一个定量的概念：每种元素的原子有特征重量，化合物以简单整数比结合这些原子。用我们的语言说，这个特征重量就是相对原子质量——只是道尔顿没有可靠的办法在$\mathrm{HO}$与$\mathrm{H_2O}$之间为水作出选择，而一个错误的化学式会使依赖于它的每个原子量都按比例出错。他的图像还认为一种元素的原子完全相同。一个世纪后，同位素对这一论断作了限定，而丝毫不影响化学：一种元素的原子共有的是$Z$，而不是$A$。
+
+1811 年，阿伏加德罗（Amedeo Avogadro）提出，在相同温度和压力下，相同体积的气体含有相同数目的分子，并且他区分了原子与气态单质的分子。这一思想本可以确定道尔顿无法确定的化学式。它在很大程度上被忽视，直到 1860 年的卡尔斯鲁厄会议上，坎尼扎罗（Stanislao Cannizzaro）用它得出了一套自洽的原子量和分子量。我们现在称为$N_\mathrm{A}$的那个数，大约在二十世纪初成为实验研究的对象，佩兰（Jean Perrin）关于布朗运动的工作尤为重要。从 1971 年摩尔成为国际单位制基本单位起，到 2019 年为止，摩尔与$12\,\mathrm{g}$的$^{12}\mathrm{C}$相联系。2019 年 5 月 20 日的 SI 修订把$N_\mathrm{A}$固定为恰好$6.02214076\times 10^{23}\,\mathrm{mol^{-1}}$，废除了实物基准。阿伏加德罗本人的假说——等体积、等数目——至今仍是[[general-chemistry-1/gases]]中气体定律的概念根源。
+:::
+
+## 后续内容
+
+摩尔质量的用处取决于计算它所用的化学式。[[general-chemistry-1/formulas-nomenclature]]把百分组成变成最简式和分子式，并给出告诉你瓶中是哪种化学式的无机物名称。在[[general-chemistry-1/stoichiometry]]中，物质的量成为配平方程式中的比例。阿伏加德罗的等体积假说在这里仍是定性的，在[[general-chemistry-1/gases]]中将成为理想气体状态方程的一部分。而“决定元素的是$Z$而不是$A$”这一论断，是关于电子和核电荷的论断；[[general-chemistry-1/quantum-atom]]将引入来自光谱的证据。
+
 ::: summary
-- Protons
-- neutrons and electrons
-- isotopes and relative atomic mass
-- Protons, neutrons and electrons, isotopes and relative atomic mass, and counting atoms with the mole
+- 中性原子有$Z$个质子和$Z$个电子；中子数为$A - Z$。同位素$Z$相同、$A$不同。离子的区别在于电子数，而不在于$Z$。
+- 相对同位素质量不是严格的整数。它们在$^{12}\mathrm{C}$恰好为$12$的标度上测量，核结合能使它们略微偏离整数。
+- $A_\mathrm{r} = \sum x_i m_i$是同位素质量按丰度加权的平均值，而不是某个“典型”原子的质量数。对于有代表性的氯，$0.7576$和$0.2424$给出$A_\mathrm{r} = 35.453$，修约为约定值$35.45$。
+- 一摩尔恰好含$N_\mathrm{A} = 6.02214076\times 10^{23}$个指定的基本单元。必须指明基本单元。物质的量、质量和个数是不同的量。
+- 就本课程的每个计算而言，以$\mathrm{g\,mol^{-1}}$计的摩尔质量在数值上等于$A_\mathrm{r}$。分子或化学式单元的摩尔质量是各原子摩尔质量之和。$M(\mathrm{Cl_2}) = 70.90\,\mathrm{g\,mol^{-1}}$，不是$35.45$。
+- 基本公式为$n = m/M$和$N = n N_\mathrm{A}$。一个基本单元的质量为$M/N_\mathrm{A}$。$N_\mathrm{A}$是准确的；限制有效数字的是你称得的质量。
+- 改变基本单元——原子与分子、化学式单元与离子——会使物质的量乘以化学式中的一个整数。漏掉这个整数就是两倍甚至更大的错误。
 :::
-::: history
-- 1662 (Boyle's law)
-- 1787 (Charles's law of volumes)
-- 1789 (Lavoisier's Traité and conservation of mass)
-- 1808 (Dalton's atomic theory)
-:::
-## Exercises
-::: exercise {level=1}
-Exercise 1: apply the methods of Atoms, isotopes and the mole.
+
+## 习题
+
+::: exercise 氯-37 中的中子 {#exr-neutrons level=1 check="20"}
+一个$^{37}\mathrm{Cl}$原子中有多少个中子？氯的原子序数为$17$。（输入中子数。）
 ::: solution
-Solution 1.
+中子数为$A - Z = 37 - 17 = 20$。原子序数由元素确定；质量数由上标所指明的同位素确定。两者都不是$35.45$。
 :::
-::: exercise {level=1}
-Exercise 2: apply the methods of Atoms, isotopes and the mole.
-::: solution
-Solution 2.
 :::
-::: exercise {level=1}
-Exercise 3: apply the methods of Atoms, isotopes and the mole.
+
+::: exercise 一份氯气样品的质量 {#exr-mass-cl2 level=1 check="17.7"}
+$0.250\,\mathrm{mol}$ $\mathrm{Cl_2}$的质量是多少？用$M(\mathrm{Cl}) = 35.45\,\mathrm{g\,mol^{-1}}$。（以克为单位输入质量，保留三位有效数字。）
 ::: solution
-Solution 3.
+基本单元是分子，所以$M(\mathrm{Cl_2}) = 2\times 35.45 = 70.90\,\mathrm{g\,mol^{-1}}$。于是
+$$
+m = nM = (0.250\,\mathrm{mol})(70.90\,\mathrm{g\,mol^{-1}}) = 17.725\,\mathrm{g},
+$$
+保留三位有效数字为$17.7\,\mathrm{g}$。如果改用$35.45\,\mathrm{g\,mol^{-1}}$，会得到$8.86\,\mathrm{g}$，那是$0.250\,\mathrm{mol}$氯*原子*的质量，而不是一瓶$\mathrm{Cl_2}$中所含的东西。
 :::
-::: exercise {level=2}
-Exercise 4: apply the methods of Atoms, isotopes and the mole.
-::: solution
-Solution 4.
 :::
-::: exercise {level=2}
-Exercise 5: apply the methods of Atoms, isotopes and the mole.
+
+::: exercise 两种同位素的平均值 {#exr-two-isotope level=1 check="10.811"}
+某元素有两种同位素，相对质量分别为$10.013$（摩尔分数$0.1990$）和$11.009$（摩尔分数$0.8010$）。计算其相对原子质量。（输入$A_\mathrm{r}$，保留三位小数。）
 ::: solution
-Solution 5.
+$$
+A_\mathrm{r} = 0.1990\times 10.013 + 0.8010\times 11.009 = 1.9926 + 8.8182 = 10.8108,
+$$
+保留三位小数为$10.811$。较重的同位素占优势，所以平均值靠近$11.009$，只向$10.013$回退约五分之一。与氯的小部件中相同的直线，换上不同的端点和不同的$x$，就是全部计算。
 :::
-::: exercise {level=2}
-Exercise 6: apply the methods of Atoms, isotopes and the mole.
-::: solution
-Solution 6.
 :::
-::: exercise {level=3}
-Exercise 7: apply the methods of Atoms, isotopes and the mole.
+
+::: exercise 氯化钠的物质的量 {#exr-nacl-n level=2 check="0.1711"}
+$10.00\,\mathrm{g}$ $\mathrm{NaCl}$的物质的量是多少？用$M(\mathrm{Na}) = 22.990\,\mathrm{g\,mol^{-1}}$和$M(\mathrm{Cl}) = 35.45\,\mathrm{g\,mol^{-1}}$。（以摩尔为单位输入物质的量，保留四位有效数字。）
 ::: solution
-Solution 7.
+$$
+M(\mathrm{NaCl}) = 22.990 + 35.45 = 58.44\,\mathrm{g\,mol^{-1}}.
+$$
+$35.45$的百分位限制了和。于是
+$$
+n = \frac{10.00\,\mathrm{g}}{58.44\,\mathrm{g\,mol^{-1}}} = 0.171115\ldots\,\mathrm{mol} = 0.1711\,\mathrm{mol}.
+$$
+四位有效数字与质量$10.00$和摩尔质量$58.44$相符。这是化学式单元的物质的量，而不是中性$\mathrm{NaCl}$分子的物质的量。
 :::
-::: exercise {level=3}
-Exercise 8: apply the methods of Atoms, isotopes and the mole.
+:::
+
+::: exercise 五克碳中的原子 {#exr-carbon-atoms level=2 check="2.51e23"}
+$5.00\,\mathrm{g}$碳中有多少个原子？用$M(\mathrm{C}) = 12.011\,\mathrm{g\,mol^{-1}}$和$N_\mathrm{A} = 6.02214076\times 10^{23}\,\mathrm{mol^{-1}}$。（输入原子数，保留三位有效数字，例如$1.25\mathrm{e}23$。）
 ::: solution
-Solution 8.
+$$
+n = \frac{5.00}{12.011} = 0.41629\,\mathrm{mol},
+$$
+质量有三位有效数字，所以这里多出的数字是保护数字。
+$$
+N = 0.41629\times 6.02214076\times 10^{23} = 2.5069\times 10^{23},
+$$
+修约为$2.51\times 10^{23}$。[[#ex-carbon-count]]中$2.50\,\mathrm{g}$的两倍给出两倍的原子，理应如此：在$M$固定时，$N$与$m$成正比。
+:::
+:::
+
+::: exercise 由盐的质量求离子 {#exr-nacl-ions level=2 check="0.2"}
+某样品含$11.688\,\mathrm{g}$ $\mathrm{NaCl}$，$M(\mathrm{NaCl}) = 58.44\,\mathrm{g\,mol^{-1}}$。样品中氯离子的物质的量是多少？（以摩尔为单位输入物质的量。）
+::: solution
+$$
+n(\mathrm{NaCl}) = \frac{11.688\,\mathrm{g}}{58.44\,\mathrm{g\,mol^{-1}}} = 0.2000\,\mathrm{mol}.
+$$
+每个化学式单元提供一个$\mathrm{Cl^-}$，所以$n(\mathrm{Cl^-}) = 0.2000\,\mathrm{mol}$。如果要求的是个数而不是物质的量，离子数为$0.2000\, N_\mathrm{A} = 1.204\times 10^{23}$。所求的物质的量为$0.2000\,\mathrm{mol}$，其数值为$0.2$。
+:::
+:::
+
+::: exercise 由约定原子量求丰度 {#exr-abundance level=3 check="24.09"}
+用$m(^{35}\mathrm{Cl}) = 34.96885$、$m(^{37}\mathrm{Cl}) = 36.96590$和约定值$A_\mathrm{r}(\mathrm{Cl}) = 35.45$，解出$^{37}\mathrm{Cl}$的摩尔分数，并表示为百分数。（输入百分数，保留两位小数。）为什么它不是$24.24\%$？
+::: hint
+令$35.45 = 34.96885\,(1 - x) + 36.96590\, x$，解出$x$。由于两个分数之和为一，一个线性方程就是两种同位素反演的全部。
+:::
+::: solution
+$$
+35.45 = 34.96885 + x(36.96590 - 34.96885) = 34.96885 + 1.99705\, x,
+$$
+$$
+x = \frac{35.45 - 34.96885}{1.99705} = \frac{0.48115}{1.99705} = 0.24093.
+$$
+表示为百分数并保留两位小数，为$24.09\%$。[[#ex-chlorine-ar]]中的正向计算从$24.24\%$出发，得到$35.4529$，它*修约*为约定值$35.45$。用修约后的值反推，无法还原未修约的丰度：$A_\mathrm{r}$改变$0.003$，对应分数改变$0.003/1.997 \approx 0.0015$，约$0.15$个百分点。这就是约定原子量与测得的同位素丰度要分别给出的原因。普通的摩尔质量用$35.45$；当同位素组成本身是关注点时，用测得的分数。
+:::
+:::
+
+::: exercise 氯气中某一同位素的原子数 {#exr-cl37-count level=3 check="2.920e22"}
+$7.090\,\mathrm{g}$ $\mathrm{Cl_2}$样品具有[[#ex-chlorine-ar]]中的代表性同位素组成，因此$^{37}\mathrm{Cl}$在氯原子中的摩尔分数为$0.2424$。样品中有多少个$^{37}\mathrm{Cl}$原子？用$M(\mathrm{Cl}) = 35.45\,\mathrm{g\,mol^{-1}}$和准确的$N_\mathrm{A}$。（输入原子数，保留四位有效数字。）
+::: hint
+先把质量换算为$\mathrm{Cl_2}$的物质的量，加倍得到氯原子的物质的量，再取其中的分数$0.2424$，最后乘以$N_\mathrm{A}$。
+:::
+::: solution
+$$
+M(\mathrm{Cl_2}) = 70.90\,\mathrm{g\,mol^{-1}}, \qquad n(\mathrm{Cl_2}) = \frac{7.090}{70.90} = 0.1000\,\mathrm{mol}.
+$$
+每个分子贡献两个原子，所以$n(\mathrm{Cl}) = 0.2000\,\mathrm{mol}$。其中$^{37}\mathrm{Cl}$的物质的量为
+$$
+n(^{37}\mathrm{Cl}) = 0.2000\times 0.2424 = 0.04848\,\mathrm{mol}.
+$$
+$$
+N = 0.04848\times 6.02214076\times 10^{23} = 2.9195\times 10^{22},
+$$
+保留四位有效数字为$2.920\times 10^{22}$。质量、摩尔质量和分数$0.2424$都有四位，$N_\mathrm{A}$位数更多。漏掉因子 2，或把$0.2424$用于$\mathrm{Cl_2}$的物质的量而不是原子，都是上面警示所说的那种干净利落的两倍错误。
+:::
+:::
+
+::: exercise 一个水分子的质量 {#exr-one-molecule level=3 check="2.991e-23"}
+由[[#prop-conversions]]，一个基本单元的质量为$M/N_\mathrm{A}$。计算一个$\mathrm{H_2O}$分子的质量。用$M = 18.015\,\mathrm{g\,mol^{-1}}$和$N_\mathrm{A} = 6.02214076\times 10^{23}\,\mathrm{mol^{-1}}$。（以克为单位输入质量，保留四位有效数字。）
+::: solution
+$$
+\frac{M}{N_\mathrm{A}} = \frac{18.015\,\mathrm{g\,mol^{-1}}}{6.02214076\times 10^{23}\,\mathrm{mol^{-1}}} = 2.99146\times 10^{-23}\,\mathrm{g},
+$$
+所以保留四位有效数字为$2.991\times 10^{-23}\,\mathrm{g}$。$18.015$有五位，$N_\mathrm{A}$是准确的，所以给出第五位（$2.9915\times 10^{-23}\,\mathrm{g}$）也站得住；题目要求的是四位。这个结果是摩尔质量在粒子层面的面貌：$18.015\,\mathrm{g}$不是一个分子的质量，而是$N_\mathrm{A}$个分子的质量。除以$N_\mathrm{A}$就是全部推导。
+:::
 :::

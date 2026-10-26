@@ -1,108 +1,341 @@
-## The aufbau principle
-::: definition {#periodicity-d1}
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Aufbau Principle is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
+钠是一种柔软的金属，在空气中几秒钟就失去光泽，并能与水反应。氯是一种令人窒息的黄绿色气体。在元素周期表第三行中，二者之间依次是镁、铝、硅、磷和硫，元素的性质沿这一行一步步变化：先是金属，然后是一种半金属，再是非金属，最后是不活泼的氩。往下一行，钾以更剧烈的方式重复钠的化学性质；往上一行，锂以更温和的方式重复它。门捷列夫（Mendeleev）于 1869 年正是依据这样的重复建立了他的周期表：按原子量排列元素，并把化学性质相似的元素放在同一列。他不知道这种规律为什么存在。本章给出其原因。
+
+原因在于原子中电子的排布。[[general-chemistry-1/quantum-atom]]以氢原子的轨道（用$n$、$l$和$m_l$标记）作结，并提醒：在任何含一个以上电子的原子中，$n$相同的轨道不再具有相同的能量。在这里，我们逐个原子地把电子填入这些轨道，遵循三条规则：一个能量次序（构造原理）、一个容量限制（泡利不相容原理）以及一条关于半充满轨道组的规则（洪特规则）。结果就是每种元素的**电子排布**。其最外层部分，即**价层**电子排布，在每一族中自上而下重复出现，这种重复就是周期律。然后我们沿周期表的横向和纵向追踪四种性质——原子半径、电离能、电子亲和能和电负性——并用一个思想解释每种趋势：在中间电子存在的情况下，原子核对最外层电子束缚得有多紧。
+
+原子中电子的能量以$\mathrm{kJ\,mol^{-1}}$（每摩尔原子）给出；每个原子$1\ \mathrm{eV}$相当于$96.485\ \mathrm{kJ\,mol^{-1}}$。下文的电离能和电子亲和能由 NIST 原子光谱数据库换算而来，共价半径采用 Cordero 等人（2008）的数据，离子半径采用 Shannon（1976）给出的六配位离子数据，电负性采用鲍林（Pauling）标度。
+
+## 多电子原子：屏蔽与钻穿
+
+氢原子有一个电子和一个质子。在锂中，最外层电子受到电荷为$+3e$的原子核吸引，但同时也受到两个内层电子的排斥，而这两个内层电子大部分时间离原子核更近。内层电子部分抵消、即**屏蔽**了核电荷，外层电子的行为大致相当于受到一个较小电荷的吸引。
+
+::: definition 有效核电荷 {#def-zeff}
+电子所感受到的**有效核电荷**$Z_\mathrm{eff}$，是核电荷数$Z$减去其他电子的平均屏蔽$S$：
+
+$$
+Z_\mathrm{eff} = Z - S.
+$$
+
+$Z_\mathrm{eff}$是一个模型量，不能直接测量。它概括了电子所感受到的净吸引；电子在靠近原子核、处于其他电子所占区域之内的时间越多，$Z_\mathrm{eff}$就越大。
 :::
-## the Pauli principle and Hund's rule
-::: definition {#periodicity-d2}
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Pauli Principle And Hund'S Rule is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
+
+电子在原子核附近停留多少时间，既取决于$n$，也取决于$l$。下面绘出的类氢轨道径向分布函数显示了这一点。$2s$电子在靠近原子核处、即$1s$所占区域之内有一个小的内侧极大；$2p$电子没有。我们说$2s$轨道比$2p$轨道更多地**钻穿**$1s$原子实。钻穿的电子受到的屏蔽较小，感受到较大的$Z_\mathrm{eff}$，束缚得更紧。这就是为什么在每个多电子原子中$2s$都低于$2p$，也是为什么一般而言，对于相同的$n$，能量次序为
+
+$$
+ns < np < nd < nf.
+$$
+
+::: widget plot
+f: 4*x^2*exp(-2*x); x^2*(2-x)^2*exp(-x)/8; x^4*exp(-x)/24
+x: 0, 15
+y: 0, 0.6
+labels: 1s; 2s; 2p
+caption: 氢原子$1s$、$2s$和$2p$轨道的径向分布函数$P(r) = r^{2}R(r)^{2}$，到原子核的距离$r$以玻尔半径$a_0 = 52.9\ \mathrm{pm}$为单位。每条曲线给出在半径$r$处薄球壳中找到电子的概率。$2s$曲线在$r = 0.76\,a_0$附近有一个小的内侧峰，远在$1s$分布之内，并在$r = 2a_0$处有一个节点；$2p$曲线没有内侧峰。在多电子原子中，这个内侧峰使$2s$电子比$2p$电子感受到更多的核电荷，从而使$2s$能量更低，尽管平均而言$2s$电子离核稍远（$6a_0$对$5a_0$）。
 :::
-## the structure of the periodic table
-::: definition {#periodicity-d3}
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
-The Structure Of The Periodic Table is one of the three core topics of the chapter Periodicity. The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
+
+屏蔽可以用斯莱特（John Slater）于 1930 年发表的一套经验规则来估算。它们是一种能重现趋势的记账方法，而不是从第一性原理出发的计算；真正的计算是[[quantum-chemistry/many-electron-atoms]]中的自洽场方法。
+
+::: algorithm 屏蔽常数的斯莱特规则 {#alg-slater}
+为估算某个选定电子的$S$：
+
+1. 按以下分组依次写出电子排布：$(1s)(2s,2p)(3s,3p)(3d)(4s,4p)(4d)(4f)(5s,5p)\ldots$。
+2. 位于选定电子所在组右侧的各组电子没有贡献。
+3. 对于$s$或$p$电子：同组的每个其他电子贡献$0.35$（但$1s$组内为$0.30$）；$n - 1$层的每个电子贡献$0.85$；$n - 2$层及更内层的每个电子贡献$1.00$。
+4. 对于$d$或$f$电子：同组的每个其他电子贡献$0.35$；其左侧各组的每个电子贡献$1.00$。
+5. 把各项贡献相加得到$S$，且$Z_\mathrm{eff} = Z - S$。
 :::
-## Review
-::: widget graph
-nodes: The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, review
-edges: The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, review
-caption: Electron configurations and periodic trends concept map
+
+::: example 为什么钾把最后一个电子放进 4s {#ex-slater}
+(a) 估算氧中一个$2p$电子的$Z_\mathrm{eff}$，以及钠中$3s$电子的$Z_\mathrm{eff}$。(b) 钾的$Z = 19$，第十九个电子原则上可以进入$4s$或$3d$。分别估算两种情况的$Z_\mathrm{eff}$，并说明哪一种束缚更强。
+::: solution
+(a) 氧为$1s^{2}2s^{2}2p^{4}$。对于一个$2p$电子，$(2s,2p)$组的其他五个电子贡献$5 \times 0.35 = 1.75$，两个$1s$电子位于$n - 1$层，贡献$2 \times 0.85 = 1.70$。所以$S = 3.45$，$Z_\mathrm{eff} = 8 - 3.45 = 4.55$。
+
+钠为$1s^{2}2s^{2}2p^{6}3s^{1}$。$3s$电子在其组内没有同伴。八个$n = 2$电子贡献$8 \times 0.85 = 6.80$，两个$1s$电子位于内两层，贡献$2 \times 1.00 = 2.00$。所以$S = 8.80$，$Z_\mathrm{eff} = 11 - 8.80 = 2.20$。在钠的十一个质子中，外层电子只“感受到”大约两个。
+
+(b) 钾的原子实为$1s^{2}2s^{2}2p^{6}3s^{2}3p^{6}$，共十八个电子。若最后一个电子是$4s$：八个$(3s,3p)$电子位于$n - 1$层，贡献$8 \times 0.85 = 6.80$；$n \le 2$的十个电子贡献$10 \times 1.00 = 10.00$。所以$S = 16.80$，$Z_\mathrm{eff} = 2.20$。若最后一个电子是$3d$：原子实的全部十八个电子都位于其左侧各组，各贡献$1.00$，所以$S = 18.00$，$Z_\mathrm{eff} = 1.00$。
+
+在钾中，$4s$电子感受到的有效电荷约为$3d$电子的两倍，因此束缚更强，钾为$[\mathrm{Ar}]\,4s^{1}$。这一差别完全来自钻穿：规则不因$3d$进入$n = 3$原子实而给予任何抵扣，因为没有径向节点的$3d$轨道并不进入原子实内部。斯莱特规则给出的数值是粗略的——钠的实测电离能对应的$Z_\mathrm{eff}$接近$1.8$（见习题）——但它们预测的次序是正确的。
 :::
-::: widget stats
 :::
-::: widget quiz
+
+## 泡利不相容原理与洪特规则
+
+仅凭能量次序，所有电子都会进入$1s$。有某种东西阻止了这一点，而它不是静电排斥。
+
+::: definition 泡利不相容原理 {#def-pauli}
+原子中任何两个电子不能具有完全相同的一组四个量子数$(n, l, m_l, m_s)$。因此，由$(n, l, m_l)$确定的一个轨道最多容纳两个电子，若容纳两个，则它们自旋相反，$m_s = +\tfrac12$和$-\tfrac12$（它们是**成对**的）。量子数为$l$的亚层含$2l + 1$个轨道，因而最多容纳$2(2l + 1)$个电子：$s$为$2$，$p$为$6$，$d$为$10$，$f$为$14$。主量子数为$n$的电子层最多容纳$2n^{2}$个电子。
 :::
-::: summary
-- The aufbau principle
-- the Pauli principle and Hund's rule
-- the structure of the periodic table
-- The aufbau principle, the Pauli principle and Hund's rule, the structure of the periodic table, and trends in atomic radius, ionisation energy, electron affinity and electronegativity
+
+泡利不相容原理是适用于电子及其他所有半整数自旋粒子的量子力学基本定律，而不是本课程中任何内容的推论。它是物质具有体积的原因：如果电子都能挤进最低的轨道，原子就会坍缩到$1s$的大小，也就不会有我们所知的那种化学。
+
+::: definition 洪特规则 {#def-hund}
+当电子占据一组能量相等的轨道（一组**简并**轨道，如三个$2p$轨道）时，能量最低的排布是在任何轨道接纳第二个电子之前，尽可能让电子以平行自旋分占不同轨道。基态具有最多的未成对电子。洪特规则是一条从原子光谱得出的、关于自由原子基态的经验规则。
 :::
+
+其物理原因部分是静电的：处于不同轨道的两个电子平均而言比处于同一轨道的两个电子相距更远，而自旋平行的电子倾向于彼此回避（一种称为交换的量子力学效应），这降低了它们之间的相互排斥。电子排布常画成轨道方框图。对于氮，$1s^{2}2s^{2}2p^{3}$，三个$2p$电子在三个独立的方框中为$\uparrow\ \uparrow\ \uparrow$，而不是$\uparrow\downarrow\ \uparrow\ \ \,$。氮有三个未成对电子，氧（$2p^{4}$）有两个：$\uparrow\downarrow\ \uparrow\ \uparrow$。
+
+未成对电子是可以测量的。原子或离子含未成对电子的物质是**顺磁性**的——被磁场吸引；所有电子都成对的物质是**抗磁性**的，受到微弱的排斥。因此，由电子排布数出未成对电子数，是一个可以用磁铁检验的预测。
+
+## 构造元素周期表
+
+有了能量次序和容量，每次加一个电子，电子排布就随之得出。
+
+::: algorithm 构造原理 {#alg-aufbau}
+写出原子序数为$Z$的中性原子的基态电子排布：
+
+1. 按能量递增的次序把$Z$个电子填入各亚层。对于中性原子，这一次序在很好的近似下由**$(n + l)$规则**给出：按$n + l$递增的次序填充亚层，$n + l$相同时按$n$递增的次序。由此得到
+$$
+1s,\ 2s,\ 2p,\ 3s,\ 3p,\ 4s,\ 3d,\ 4p,\ 5s,\ 4d,\ 5p,\ 6s,\ 4f,\ 5d,\ 6p,\ 7s,\ 5f,\ 6d,\ 7p.
+$$
+2. $s$、$p$、$d$或$f$亚层最多分别填入$2$、$6$、$10$或$14$个电子（泡利）。
+3. 在部分填充的亚层内，先以平行自旋单独占据各轨道，然后再成对（洪特）。
+4. 按$n$的次序写出电子排布（例如$[\mathrm{Ar}]\,3d^{6}4s^{2}$），用方括号中的前一个稀有气体符号表示**原子实**。
+
+$(n + l)$规则是经验性的。它描述的是随$Z$在周期表中增大时各亚层*填充*的次序；它并不是任何单个原子中轨道能量的固定次序，而且有例外。
+:::
+
+第一过渡系中的例外是铬和铜。规则预测铬为$[\mathrm{Ar}]\,3d^{4}4s^{2}$，铜为$[\mathrm{Ar}]\,3d^{9}4s^{2}$；而基态分别为$[\mathrm{Ar}]\,3d^{5}4s^{1}$和$[\mathrm{Ar}]\,3d^{10}4s^{1}$。在这里，$4s$和$3d$亚层能量非常接近，由电子间排斥的平衡决定结果，而半充满或全充满的$d$亚层恰好胜出。较重的过渡金属、镧系元素和锕系元素中还有更多例外。它们是要从数据中学习的事实，而不是这一简单方案的预测。
+
+第二个微妙之处涉及离子。一旦$3d$亚层被占据，它的能量就*低于*$4s$，所以过渡金属原子形成阳离子时先失去$4s$电子。铁为$[\mathrm{Ar}]\,3d^{6}4s^{2}$，但$\mathrm{Fe^{2+}}$为$[\mathrm{Ar}]\,3d^{6}$，而不是$[\mathrm{Ar}]\,3d^{4}4s^{2}$；$\mathrm{Fe^{3+}}$为$[\mathrm{Ar}]\,3d^{5}$。
+
+::: example 电子排布与未成对电子 {#ex-config}
+写出硫、铁、$\mathrm{Fe^{3+}}$和$\mathrm{Cl^{-}}$的基态电子排布，并给出各自的未成对电子数。
+::: solution
+**硫**，$Z = 16$：$1s^{2}2s^{2}2p^{6}3s^{2}3p^{4}$，即$[\mathrm{Ne}]\,3s^{2}3p^{4}$。四个电子分布在三个$3p$轨道中：按洪特规则，三个单独进入，第四个成对，$\uparrow\downarrow\ \uparrow\ \uparrow$。两个未成对电子。
+
+**铁**，$Z = 26$：在$[\mathrm{Ar}]$（十八个电子）之后，次序是先$4s$后$3d$，所以其余八个电子给出$4s^{2}3d^{6}$，写作$[\mathrm{Ar}]\,3d^{6}4s^{2}$。六个电子分布在五个$3d$轨道中：五个单占，一个成对，$\uparrow\downarrow\ \uparrow\ \uparrow\ \uparrow\ \uparrow$。四个未成对电子。
+
+**$\mathrm{Fe^{3+}}$**：移去三个电子，先移去两个$4s$电子，再移去一个$3d$电子：$[\mathrm{Ar}]\,3d^{5}$。五个电子分布在五个$d$轨道中，全部以平行自旋单占。五个未成对电子，这是$d$亚层可能的最大值；铁(III)化合物具有很强的顺磁性。如果移去三个$3d$电子而保留$4s^{2}$，将得到$[\mathrm{Ar}]\,3d^{3}4s^{2}$，有三个未成对电子，这一预测与磁性测量相矛盾。
+
+**$\mathrm{Cl^{-}}$**：氯（$Z = 17$）为$[\mathrm{Ne}]\,3s^{2}3p^{5}$；多出的电子填满$3p$亚层，得到$[\mathrm{Ne}]\,3s^{2}3p^{6}$，即氩的电子排布。没有未成对电子。[[general-chemistry-1/formulas-nomenclature]]中作为规律陈述的常见主族离子的稀有气体电子排布，就是这样来的：$\mathrm{Na^{+}}$、$\mathrm{Mg^{2+}}$、$\mathrm{F^{-}}$和$\mathrm{O^{2-}}$都是$1s^{2}2s^{2}2p^{6}$，与氖等电子。
+:::
+:::
+
+### 周期表的形状
+
+元素周期表就是按行排列的构造顺序。每当电子进入一个新的主电子层（以一个$ns$电子开始），就开始一个新的**周期**（行）；当$np$亚层填满、到达稀有气体时，该周期结束。各周期的长度由填充次序和亚层容量决定：
+
+| 周期 | 填充的亚层 | 元素数 |
+|---|---|---|
+| 1 | $1s$ | $2$ |
+| 2 | $2s,\ 2p$ | $2 + 6 = 8$ |
+| 3 | $3s,\ 3p$ | $8$ |
+| 4 | $4s,\ 3d,\ 4p$ | $2 + 10 + 6 = 18$ |
+| 5 | $5s,\ 4d,\ 5p$ | $18$ |
+| 6 | $6s,\ 4f,\ 5d,\ 6p$ | $2 + 14 + 10 + 6 = 32$ |
+| 7 | $7s,\ 5f,\ 6d,\ 7p$ | $32$ |
+
+第 3 周期有八种元素而不是十八种，尽管第三电子层可容纳$2 \times 3^{2} = 18$个电子：$3d$亚层要到$4s$之后、在第 4 周期才填充。周期表按正在填充的亚层划分为若干**区**：$s$区（第 1、2 族以及氦）、$p$区（第 13 至 18 族）、$d$区（第 3 至 12 族，即过渡金属）和$f$区（镧系和锕系元素，通常印在主表下方，使表保持窄小）。
+
+同一族的元素具有相同的价层电子排布，只是$n$不同：每个第 1 族元素都是$ns^{1}$，每个第 17 族元素都是$ns^{2}np^{5}$。这就是门捷列夫各列在电子层面上的内涵。对于主族元素，第 1、2 族的价电子数等于族序数，第 13 至 18 族的价电子数等于族序数减十。
+
+## 周期性趋势
+
+下列每种性质都由两件事决定：最外层电子的主量子数$n$，它决定了这些电子离原子核的典型距离；以及它们所感受到的有效核电荷。沿一个周期，$n$固定而$Z_\mathrm{eff}$升高，因为每增加一个质子，同一电子层中新增的电子只能部分屏蔽它（斯莱特规则给出$0.35$的屏蔽对应$1$个单位的额外电荷，所以每个元素$Z_\mathrm{eff}$约升高$0.65$）。沿一族向下，$n$增大，而价电子的$Z_\mathrm{eff}$变化很慢。
+
+### 原子半径与离子半径
+
+原子没有清晰的边界，因此其半径要以操作方式定义。**共价半径**是两个以单键相连的相同原子之间距离的一半；**金属半径**是金属中相邻原子之间距离的一半；**离子半径**是晶体中相邻离子之间距离的一部分。第 2 周期元素的共价半径从锂到氟稳定下降——$\mathrm{Li}$、$\mathrm{Be}$、$\mathrm{B}$、$\mathrm{C}$、$\mathrm{N}$、$\mathrm{O}$、$\mathrm{F}$分别为$128$、$96$、$84$、$76$、$71$、$66$和$57\ \mathrm{pm}$——因为同一个$n = 2$电子层被不断升高的$Z_\mathrm{eff}$拉向内侧。沿第 1 族向下则增大——$\mathrm{Li}$、$\mathrm{Na}$、$\mathrm{K}$、$\mathrm{Rb}$、$\mathrm{Cs}$分别为$128$、$166$、$203$、$220$和$244\ \mathrm{pm}$——因为每下一步都增加一个电子层。
+
+离子遵循同样的逻辑。阳离子比其母体原子小，因为它失去了最外电子层，或至少减小了剩余电子之间的排斥；阴离子则更大。在**等电子系列**——电子数相同的离子——中，半径随核电荷升高而减小：$\mathrm{O^{2-}}$ $140\ \mathrm{pm}$，$\mathrm{F^{-}}$ $133\ \mathrm{pm}$，$\mathrm{Na^{+}}$ $102\ \mathrm{pm}$，$\mathrm{Mg^{2+}}$ $72\ \mathrm{pm}$，$\mathrm{Al^{3+}}$ $54\ \mathrm{pm}$，它们都是十电子离子，$Z$从$8$到$13$。
+
+### 电离能
+
+::: definition 电离能 {#def-ie}
+元素的**第一电离能**$I_1$是从基态气态原子中移去一个电子所需的最小能量，
+
+$$
+\mathrm{X(g)} \rightarrow \mathrm{X^{+}(g)} + \mathrm{e^{-}(g)},
+$$
+
+通常以每摩尔原子计。**第二电离能**$I_2$是$\mathrm{X^{+}(g)} \rightarrow \mathrm{X^{2+}(g)} + \mathrm{e^{-}(g)}$所需的能量，依此类推。电离能总是正的：从中性原子中移去一个电子总要消耗能量。逐级电离能总是递增，$I_1 < I_2 < I_3 < \cdots$，因为每个电子都是从正电荷越来越高的离子中移去的。
+:::
+
+氢的$I_1 = 1312\ \mathrm{kJ\,mol^{-1}}$，即[[general-chemistry-1/quantum-atom]]中由玻尔能量算出的值。前二十种元素的实测值绘于下图。
+
+::: widget plot
+f: 1312
+x: 0, 21
+y: 0, 2600
+points: 1,1312; 2,2372; 3,520; 4,900; 5,801; 6,1086; 7,1402; 8,1314; 9,1681; 10,2081; 11,496; 12,738; 13,578; 14,787; 15,1012; 16,1000; 17,1251; 18,1521; 19,419; 20,590
+labels: I_1(\mathrm{H})
+caption: 元素$Z = 1$（氢）至$Z = 20$（钙）的第一电离能（单位$\mathrm{kJ\,mol^{-1}}$），数据来自 NIST 原子光谱数据库。水平线标出氢的$1312\ \mathrm{kJ\,mol^{-1}}$。每个周期都在碱金属处（$Z = 3, 11, 19$）急剧下降开始，然后攀升至稀有气体（$Z = 2, 10, 18$）；第 2、3 周期各有两个小凹陷：在硼和铝处（$Z = 5, 13$），以及在氧和硫处（$Z = 8, 16$）。
+:::
+
+总体规律由$Z_\mathrm{eff}$和$n$决定。沿一个周期，$I_1$升高，从锂的$520\ \mathrm{kJ\,mol^{-1}}$升到氖的$2081\ \mathrm{kJ\,mol^{-1}}$，因为$n = 2$电子所受的有效电荷升高。到下一周期开始时它骤降，钠为$496\ \mathrm{kJ\,mol^{-1}}$，因为最外层电子此时位于$n = 3$，离核更远且屏蔽良好。沿一族向下，$I_1$下降：锂、钠和钾分别为$520$、$496$和$419\ \mathrm{kJ\,mol^{-1}}$。电离能低，正是碱金属成为如此强的还原剂的原因，也是它们与水的反应活性沿族向下增强的原因。
+
+两个小凹陷是电子排布的显现。硼（$800.6\ \mathrm{kJ\,mol^{-1}}$）低于铍（$899.5$），因为硼的最外层电子是$2p$，钻穿能力比$2s$弱，束缚得不那么牢。氧（$1313.9$）低于氮（$1402.3$），因为氧的第四个$2p$电子必须与一个已占轨道中的电子成对，来自其同伴的额外排斥使它更容易被移去；氮的半充满$2p^{3}$没有成对的$p$电子。同样的两个凹陷在下一周期的铝和硫处再次出现。这些不规则性是亚层结构真实存在的最直接证据。
+
+::: example 镁的逐级电离能 {#ex-successive}
+镁的前三级电离能为$737.7$、$1450.7$和$7732.7\ \mathrm{kJ\,mol^{-1}}$。解释这一规律，并计算把一摩尔气态镁原子转化为$\mathrm{Mg^{2+}(g)}$所需的能量。
+::: solution
+镁为$[\mathrm{Ne}]\,3s^{2}$。前两个电子来自$3s$。第二个所需能量约为第一个的两倍（$1450.7/737.7 = 1.97$），因为它是从正离子$\mathrm{Mg^{+}}$中移去的，且不再受另一个$3s$电子屏蔽。第三个必须来自氖原子实的$2p$亚层，离核近得多，感受到的有效电荷也大得多：$I_3$是$I_2$的$5.3$倍。这一跃升标志着价电子与内层电子之间的界限。镁在其化合物中形成$\mathrm{Mg^{2+}}$，从不形成$\mathrm{Mg^{3+}}$，因为没有任何化学键能够偿还$7.7\ \mathrm{MJ\,mol^{-1}}$。
+
+由$\mathrm{Mg(g)}$形成$\mathrm{Mg^{2+}(g)}$需要前两步：
+
+$$
+I_1 + I_2 = 737.7 + 1450.7 = 2188.4\ \mathrm{kJ\,mol^{-1}}.
+$$
+
+这是一个很大的能量，然而镁的化合物中含有$\mathrm{Mg^{2+}}$。这部分能量由晶格中二价阳离子与阴离子之间的强烈吸引来偿还，这笔账要用[[bonding-structure/ionic-bonding]]中的玻恩-哈伯循环来算。
+:::
+:::
+
+### 电子亲和能
+
+::: definition 电子亲和能 {#def-ea}
+元素的**电子亲和能**$E_\mathrm{ea}$是基态气态原子获得一个电子时所释放的能量，
+
+$$
+\mathrm{X(g)} + \mathrm{e^{-}(g)} \rightarrow \mathrm{X^{-}(g)}.
+$$
+
+当阴离子的能量低于原子加电子、因而释放能量时，它为正。该过程的焓变，即**电子得失焓**，符号（近似）相反，$\Delta_\mathrm{eg}H \approx -E_\mathrm{ea}$。不同教材列出的是两者中的不同一个，因而符号不同；比较数值之前务必核对定义。
+:::
+
+电子亲和能比电离能小，也不那么规则。卤素的电子亲和能最大，因为加入的电子使其$np$亚层填满，并感受到较大的$Z_\mathrm{eff}$：氟、氯、溴和碘的$E_\mathrm{ea}$分别为$328$、$349$、$325$和$295\ \mathrm{kJ\,mol^{-1}}$。氧（$141$）和碳（$122$）居中。加入的电子必须进入一个新的、屏蔽不良的亚层的原子，根本不形成稳定的气态阴离子：稀有气体、铍（$2s^{2}$，电子将进入$2p$）和氮（电子将在半充满的$2p^{3}$中成对）的电子亲和能都为负值或接近零。
+
+氟的值低于氯，与族的趋势相反。氟原子非常小，加入的电子挤在紧凑的$n = 2$电子层中已有的七个电子之间，额外的排斥超过了更大的核吸引。较小的第一行原子常常因同样的原因打破其所在族的趋势；氟、氧和氮化学中的反常现象在[[main-group/periodic-trends]]中展开讨论。
+
+### 电负性
+
+电离能和电子亲和能是孤立原子的性质。化学家需要的是原子*在键中*的性质：它把共用电子拉向自己的能力有多强。
+
+::: definition 电负性 {#def-en}
+元素的**电负性**$\chi$是衡量其原子在分子中吸引共用电子能力的量度。它不能直接测量，而是由一种标度定义的。在由键能导出的**鲍林标度**上，氟是电负性最大的元素，$\chi = 3.98$，铯是最小的之一，$\chi = 0.79$。代表性数值：$\mathrm{H}$ $2.20$；$\mathrm{Li}$ $0.98$，$\mathrm{C}$ $2.55$，$\mathrm{N}$ $3.04$，$\mathrm{O}$ $3.44$，$\mathrm{F}$ $3.98$；$\mathrm{Na}$ $0.93$，$\mathrm{Cl}$ $3.16$；$\mathrm{K}$ $0.82$。
+:::
+
+电负性沿周期升高、沿族向下降低，原因与电离能相同：在短距离上起作用的大$Z_\mathrm{eff}$会强烈地拉住电子，无论这些电子是原子自己的，还是与相邻原子共用的。马利肯（Robert Mulliken）提出了另一种定义，即电离能与电子亲和能的平均值，它使这一联系变得明确，并与鲍林的数值有良好的相关性。两个成键原子之间的电负性差决定了成键电子共用的不均匀程度：$\mathrm{NaCl}$很大（$3.16 - 0.93 = 2.23$，离子化合物），$\mathrm{H{-}Cl}$中等（$0.96$，极性共价键），$\mathrm{Cl{-}Cl}$为零。[[general-chemistry-1/formulas-nomenclature]]中提到的这种从离子到共价的连续过渡，是[[bonding-structure/covalent-lewis]]的主题。
+
+::: example 按大小和电负性给四种元素排序 {#ex-trends}
+不查数据，把钾、钠、镁和氯 (a) 按原子半径、(b) 按电负性排序。然后用共价半径（$\mathrm{K}$ $203$，$\mathrm{Na}$ $166$，$\mathrm{Mg}$ $141$，$\mathrm{Cl}$ $102\ \mathrm{pm}$）和鲍林电负性（$\mathrm{K}$ $0.82$，$\mathrm{Na}$ $0.93$，$\mathrm{Mg}$ $1.31$，$\mathrm{Cl}$ $3.16$）检验预测，并说明这些元素中哪一对形成离子性最强的化合物。
+::: solution
+先确定元素的位置。钠、镁和氯在第 3 周期，分别位于第 1、2 和 17 族；钾在钠的下方，位于第 4 周期。
+
+(a) 沿第 3 周期，价电子保持在$n = 3$而$Z_\mathrm{eff}$升高，所以半径减小：$\mathrm{Na} > \mathrm{Mg} > \mathrm{Cl}$。钾的价电子在$n = 4$，即更外面的一个电子层，所以它比钠大。预测为$\mathrm{K} > \mathrm{Na} > \mathrm{Mg} > \mathrm{Cl}$，半径$203 > 166 > 141 > 102\ \mathrm{pm}$与之相符。
+
+(b) 电负性的方向相反：沿周期升高，沿族向下降低，所以$\mathrm{K} < \mathrm{Na} < \mathrm{Mg} < \mathrm{Cl}$。鲍林值$0.82 < 0.93 < 1.31 < 3.16$与之相符。
+
+离子性最强的化合物由电负性差最大的一对形成，即钾和氯：$3.16 - 0.82 = 2.34$，而$\mathrm{NaCl}$为$2.23$，$\mathrm{MgCl_2}$为$1.85$。两种排序互为镜像，因为它们有相同的原因：外层电子在短距离上感受到大有效电荷的原子，既把这些电子束缚得紧（半径小），又强烈地吸引共用电子（电负性高）。这些趋势不是一串需要分别记忆的事实；它们是同一个事实的四种表现。
+:::
+:::
+
+::: warning 对周期性趋势的四种误读 {#warn-trends}
+**“原子得到质子后会变大。”** 沿一个周期它们变小：更多的质子把同一个电子层拉向内侧。只有沿族向下、增加新电子层时，尺寸才增大。**“4s 总是低于 3d。”** $(n + l)$规则描述的是在周期表中填充的次序。在过渡金属原子或离子中，一旦$3d$被占据，最先离开的是$4s$电子，所以$\mathrm{Fe^{2+}}$为$[\mathrm{Ar}]\,3d^{6}$。**“卤素的电子亲和能是负的。”** 按这里所用的定义（释放的能量）它为正，按焓的约定它为负；物理内容相同，所以先读定义再看数值。**“稀有气体电子排布是稳定的，所以原子想要得到它。”** 孤立的钠原子并不“想要”失去电子；电离总要消耗能量。离子化合物之所以形成，是因为晶格能偿还了这部分代价，而不是因为离子本身能量低。
+:::
+
+::: quiz
+下列哪种原子或离子的半径最大？
+- [ ] $\mathrm{Na^{+}}$
+- [ ] $\mathrm{F^{-}}$
+- [x] $\mathrm{O^{2-}}$
+- [ ] $\mathrm{Mg^{2+}}$
+::: solution
+四者都有十个电子，电子排布为$1s^{2}2s^{2}2p^{6}$，因此构成一个等电子系列，半径仅由核电荷决定。氧的质子最少，八个质子吸引十个电子，所以$\mathrm{O^{2-}}$最大（$140\ \mathrm{pm}$）；镁有十二个质子，$\mathrm{Mg^{2+}}$最小（$72\ \mathrm{pm}$）。
+:::
+:::
+
 ::: history
-- 1662 (Boyle's law)
-- 1787 (Charles's law of volumes)
-- 1789 (Lavoisier's Traité and conservation of mass)
-- 1808 (Dalton's atomic theory)
+门捷列夫（Dmitri Mendeleev）于 1869 年发表了他的周期系，按原子量排列元素，为尚未发现的元素留出空位并预测了它们的性质；镓（1875）、钪（1879）和锗（1886）的发现与他的预测非常吻合。1913—1914 年，莫塞莱（Henry Moseley）由元素的 X 射线光谱证明，特征 X 射线频率的平方根随一个整数——核电荷——线性增大，决定元素位置的是这一原子序数而不是原子量；门捷列夫违背原子量次序排放的少数几对元素，如碲和碘，由此得到了证实。1920 年代初，玻尔（Niels Bohr）用电子层的依次填充解释了各周期的长度。泡利（Wolfgang Pauli）于 1925 年提出不相容原理，洪特（Friedrich Hund）在同一时期由原子光谱总结出关于原子基态的规则。斯莱特（John Slater）于 1930 年发表了屏蔽常数规则，鲍林（Linus Pauling）于 1932 年提出了由键能导出的电负性标度。
 :::
-## Exercises
-::: exercise {level=1}
-Exercise 1: apply the methods of Electron configurations and periodic trends.
-::: solution
-Solution 1.
+
+## 后续内容
+
+电子排布和有效核电荷几乎是课程下一阶段一切内容背后的解释。常见离子的电荷及其形成能量，进入[[bonding-structure/ionic-bonding]]中的晶格能和玻恩-哈伯循环；电负性差决定[[bonding-structure/covalent-lewis]]中键的极性；价电子数决定[[bonding-structure/vsepr]]中分子的形状。这里引入的主族趋势——以及第一行元素和重元素的反常——在[[main-group/periodic-trends]]中逐个元素地展开。过渡金属离子的$d$电子数和未成对电子是[[coordination-chemistry/crystal-field-theory]]和[[coordination-chemistry/magnetism]]的出发点。而这里作为经验方法使用的规则——屏蔽、钻穿、$(n + l)$次序、洪特规则——将在[[quantum-chemistry/many-electron-atoms]]中连同其局限一起推导。
+
+::: summary
+- 在多电子原子中，电子感受到有效核电荷$Z_\mathrm{eff} = Z - S$；内层电子起屏蔽作用，钻穿能力强的轨道（$s$强于$p$，$p$强于$d$）受屏蔽较小，所以在同一电子层内$ns < np < nd$。
+- 泡利不相容原理限制每个轨道最多容纳两个自旋相反的电子，因此各亚层容纳$2$、$6$、$10$和$14$个电子，一个电子层容纳$2n^{2}$个电子。
+- 电子排布按$(n + l)$次序$1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, \ldots$填充亚层而构造（这是一条有例外的经验规则，例外如$\mathrm{Cr}$和$\mathrm{Cu}$），洪特规则使简并轨道组中的未成对自旋最多。
+- 过渡金属原子形成阳离子时，先失去$ns$电子，再失去$(n-1)d$电子。
+- 元素周期表就是按行排列的构造顺序：各周期分别有$2, 8, 8, 18, 18, 32, 32$种元素，并分为$s$、$p$、$d$和$f$区。同族元素具有相同的价层电子排布。
+- 沿一个周期$Z_\mathrm{eff}$升高：半径减小；电离能、电子亲和能和电负性大体升高。沿族向下增加一个电子层：半径增大；电离能和电负性降低。
+- $I_1$在第 13 族和第 16 族处的凹陷，以及逐级电离能中价电子与内层电子之间的大幅跃升，是亚层和电子层存在的直接证据。
 :::
-::: exercise {level=1}
-Exercise 2: apply the methods of Electron configurations and periodic trends.
+
+## 习题
+
+::: exercise 磷的未成对电子 {#exr-p level=1 check="3"}
+写出磷（$Z = 15$）的基态电子排布，并说明它有多少个未成对电子。（输入未成对电子数。）
 ::: solution
-Solution 2.
+$1s^{2}2s^{2}2p^{6}3s^{2}3p^{3}$，即$[\mathrm{Ne}]\,3s^{2}3p^{3}$。按洪特规则，三个$3p$电子以平行自旋单独占据三个$3p$轨道，所以有$3$个未成对电子。磷是氮的较重同族类似物，具有相同的半充满$np^{3}$价层电子排布。
 :::
-::: exercise {level=1}
-Exercise 3: apply the methods of Electron configurations and periodic trends.
-::: solution
-Solution 3.
 :::
-::: exercise {level=2}
-Exercise 4: apply the methods of Electron configurations and periodic trends.
+
+::: exercise 数一个周期 {#exr-period4 level=1 check="18"}
+元素周期表第 4 周期有多少种元素？根据所填充的亚层加以解释。（输入元素数。）
 ::: solution
-Solution 4.
+第 4 周期以$4s$开始（钾），在$4p$填满时结束（氪）。其间$3d$亚层被填充。容量为$2 + 10 + 6 = 18$个电子，所以有$18$种元素，从$Z = 19$到$Z = 36$。
 :::
-::: exercise {level=2}
-Exercise 5: apply the methods of Electron configurations and periodic trends.
-::: solution
-Solution 5.
 :::
-::: exercise {level=2}
-Exercise 6: apply the methods of Electron configurations and periodic trends.
+
+::: exercise 电离一克钠所需的能量 {#exr-na-g level=1 check="21.6"}
+钠的第一电离能为$495.8\ \mathrm{kJ\,mol^{-1}}$。把$1.000\ \mathrm{g}$气态钠原子全部电离为$\mathrm{Na^{+}(g)}$需要多少能量？用$M(\mathrm{Na}) = 22.990\ \mathrm{g\,mol^{-1}}$。（以 kJ 为单位输入能量，保留三位有效数字。）
 ::: solution
-Solution 6.
+$n = 1.000/22.990 = 0.04350\ \mathrm{mol}$，所以能量为$0.04350 \times 495.8 = 21.6\ \mathrm{kJ}$。电离能按每摩尔原子列表，因此换算就是[[general-chemistry-1/atoms-and-moles]]中那种由质量到物质的量的步骤。
 :::
-::: exercise {level=3}
-Exercise 7: apply the methods of Electron configurations and periodic trends.
-::: solution
-Solution 7.
 :::
-::: exercise {level=3}
-Exercise 8: apply the methods of Electron configurations and periodic trends.
+
+::: exercise 氯的斯莱特规则 {#exr-cl-zeff level=2 check="6.10"}
+用斯莱特规则估算氯原子中一个$3p$电子所感受到的有效核电荷。（输入$Z_\mathrm{eff}$，保留两位小数。）
 ::: solution
-Solution 8.
+氯（$Z = 17$）为$1s^{2}2s^{2}2p^{6}3s^{2}3p^{5}$。对于一个$3p$电子：$(3s,3p)$组的其他六个电子贡献$6 \times 0.35 = 2.10$；八个$n = 2$电子贡献$8 \times 0.85 = 6.80$；两个$1s$电子贡献$2 \times 1.00 = 2.00$。所以$S = 10.90$，$Z_\mathrm{eff} = 17 - 10.90 = 6.10$。与[[#ex-slater]]中钠的$3s$电子$Z_\mathrm{eff} = 2.20$相比：沿第 3 周期，价电子所受的有效电荷几乎增至三倍，这就是氯的电离能（$1251\ \mathrm{kJ\,mol^{-1}}$）是钠的两倍半的原因。
+:::
+:::
+
+::: exercise 一个钴离子 {#exr-co2 level=2 check="3"}
+写出钴（$Z = 27$）及离子$\mathrm{Co^{2+}}$的基态电子排布。$\mathrm{Co^{2+}}$有多少个未成对电子？（输入未成对电子数。）
+::: solution
+钴：$[\mathrm{Ar}]\,3d^{7}4s^{2}$。阳离子先失去$4s$电子，所以$\mathrm{Co^{2+}}$为$[\mathrm{Ar}]\,3d^{7}$。七个电子分布在五个$d$轨道中：五个单占，然后两个成对，$\uparrow\downarrow\ \uparrow\downarrow\ \uparrow\ \uparrow\ \uparrow$。有$3$个未成对电子，$\mathrm{Co^{2+}}$盐是顺磁性的。（在化合物中，五个$d$轨道的能量不再全部相等，某些$\mathrm{Co^{2+}}$配合物只有一个未成对电子；这一细化属于[[coordination-chemistry/crystal-field-theory]]。自由离子遵循上面所写的洪特规则。）
+:::
+:::
+
+::: exercise 判断族 {#exr-group level=2 check="3"}
+某第 3 周期元素的前四级电离能为$577.5$、$1816.7$、$2744.8$和$11\,577\ \mathrm{kJ\,mol^{-1}}$。它有多少个价电子？是哪种元素？（输入价电子数。）
+::: solution
+寻找大的跃升。逐级数值之比为$1816.7/577.5 = 3.15$、$2744.8/1816.7 = 1.51$和$11\,577/2744.8 = 4.22$。最大的跃升在$I_3$与$I_4$之间，所以在触及原子实之前移去了三个电子：该元素有$3$个价电子，属于第 13 族。在第 3 周期中，这就是铝，$[\mathrm{Ne}]\,3s^{2}3p^{1}$，它形成$\mathrm{Al^{3+}}$。第一个比值也相当大，因为第一个电子来自$3p$，而后两个来自钻穿能力更强的$3s$。
+:::
+:::
+
+::: exercise 由电离能求有效电荷 {#exr-zeff-ie level=3 check="1.84"}
+对于核电荷为$Z$的单电子原子，玻尔模型给出从能级$n$电离的能量为$I = (1312\ \mathrm{kJ\,mol^{-1}})\,Z^{2}/n^{2}$。把钠的$3s$电子看作在有效电荷$Z_\mathrm{eff}$的场中运动的单个电子，用实测的$I_1 = 495.8\ \mathrm{kJ\,mol^{-1}}$求出$Z_\mathrm{eff}$。将结果与斯莱特估算值比较并加以评论。（输入$Z_\mathrm{eff}$，保留三位有效数字。）
+::: hint
+用$Z_\mathrm{eff}$代替$Z$，令$n = 3$，解出$Z_\mathrm{eff}$。
+:::
+::: solution
+令$495.8 = 1312\,Z_\mathrm{eff}^{2}/3^{2}$，得
+
+$$
+Z_\mathrm{eff} = 3\sqrt{\frac{495.8}{1312}} = 3\sqrt{0.37790} = 3 \times 0.61473 = 1.84.
+$$
+
+斯莱特规则给出$2.20$（[[#ex-slater]]）。两者都表明钠的外层电子在十一个核电荷中只感受到约两个，但它们在第二位数字上不一致，而这种不一致很有启发性。两个数都不是“那个”有效电荷：类氢公式假定电子在纯库仑场中以固定的主量子数运动，而真实的$3s$电子会钻穿原子实，在那里感受到远大于$Z_\mathrm{eff}$的电荷，而它大部分时间在原子实之外，在那里感受到的较小。斯莱特规则是为在众多原子中给出合理的轨道大小和能量而拟合的，并不是为重现某一个电离能。$Z_\mathrm{eff}$是一个模型参数，其值取决于定义它的模型。
+:::
+:::
+
+::: exercise 第 6 周期的长度 {#exr-period6 level=3 check="32"}
+利用泡利不相容原理、[[general-chemistry-1/quantum-atom]]中量子数的允许取值以及$(n + l)$填充规则，推导第 6 周期的元素数。解释为什么它不是$2 \times 6^{2} = 72$。（输入第 6 周期的元素数。）
+::: hint
+按填充次序列出$n + l$介于$6s$与$6p$之间（含两端）的亚层。
+:::
+::: solution
+轨道量子数为$l$的亚层有$2l + 1$个$m_l$值，按泡利不相容原理可容纳$2(2l + 1)$个电子：$s$、$p$、$d$、$f$分别为$2$、$6$、$10$和$14$。第 6 周期在$6s$开始填充时开始（$n + l = 6$），在$6p$填满时结束（$n + l = 7$）。按$(n + l)$规则，其间填充的亚层为：
+
+- $n + l = 6$：$4d$（$n = 4$）、$5p$（$n = 5$）、$6s$（$n = 6$）；其中$4d$和$5p$已在第 5 周期填充，所以第 6 周期从$6s$开始。
+- $n + l = 7$：$4f$（$n = 4$）、$5d$（$n = 5$）、$6p$（$n = 6$）、$7s$（$n = 7$）；第 6 周期包括$4f$、$5d$和$6p$，而$7s$开始第 7 周期。
+
+所以第 6 周期填充$6s$、$4f$、$5d$、$6p$，容纳$2 + 14 + 10 + 6 = 32$个电子：$32$种元素，从铯（$Z = 55$）到氡（$Z = 86$）。$2n^{2} = 72$是整个$n = 6$电子层的容量，包括在第 6 周期中从未到达的$6d$、$6f$、$6g$和$6h$亚层（对于$6f$及以上，在任何已知元素中都未到达）。周期不是电子层：它汇集的是能量相近的*不同*电子层的亚层，这就是周期表的行长为$2, 8, 8, 18, 18, 32, 32$而不是$2, 8, 18, 32$的原因。
+:::
+:::
+
+::: exercise 电离能排序 {#exr-rank level=3 check="7"}
+不查数据，把$\mathrm{Be}$、$\mathrm{B}$、$\mathrm{C}$、$\mathrm{N}$和$\mathrm{O}$的第一电离能由低到高排序，并用电子排布解释每个位置。然后指出数值最高的元素，并给出其原子序数。（输入$I_1$最高的元素的原子序数。）
+::: solution
+沿第 2 周期的总体趋势是上升的，因为$n = 2$电子所受的$Z_\mathrm{eff}$升高。有两种电子排布效应打断了这一趋势。硼（$2s^{2}2p^{1}$）失去的是一个$2p$电子，其钻穿能力弱于铍的$2s$，所以$I_1(\mathrm{B}) < I_1(\mathrm{Be})$。氧（$2p^{4}$）失去的是一个成对的$2p$电子，所以$I_1(\mathrm{O}) < I_1(\mathrm{N})$，而氮的$2p^{3}$三个电子全都未成对。碳（$2p^{2}$）居中：因为其$Z_\mathrm{eff}$较大而高于铍，但低于氮和氧。排序为
+
+$$
+\mathrm{B} < \mathrm{Be} < \mathrm{C} < \mathrm{O} < \mathrm{N},
+$$
+
+数据证实了这一点：$800.6 < 899.5 < 1086.5 < 1313.9 < 1402.3\ \mathrm{kJ\,mol^{-1}}$。最高的是氮，原子序数为$7$。注意氧的凹陷很小——只比氮低$88\ \mathrm{kJ\,mol^{-1}}$，仍远高于碳——因为成对的代价只是对有效核电荷稳定上升的一个适度修正。
+:::
 :::

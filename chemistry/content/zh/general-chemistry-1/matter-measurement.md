@@ -1,108 +1,399 @@
-## Elements
-::: definition {#mattermeasurement-d1}
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Elements is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+一根铜丝、一烧杯海水、一粒糖晶体以及实验台上方的空气都是物质，而“物质”这个词本身并不能完成任何化学工作。你能对一个样品做什么——分解它、溶解它，或由体积预测其质量——取决于它是哪一类物质，也取决于你写下的数字是否真正表达了你以为的意思。本章先在粒子层面回答第一个问题，然后确立本课程后续不会放松的测量习惯：SI 单位、密度、摄氏温标与开尔文温标、有效数字，以及不改变原有量的单位换算。
+
+## 单质、化合物与混合物
+
+::: definition 单质、化合物与混合物 {#def-matter-kinds}
+**单质**（元素）是一种纯物质，其所有原子的原子序数都相同。这些原子可以单独存在，如氦；也可以结合成由同一种元素构成的分子，如$\mathrm{O_2}$、$\mathrm{N_2}$或$\mathrm{S_8}$；或者堆积成金属晶格，如铜或铝。尽管你呼吸的粒子是分子，氧仍是一种元素：两个原子核都是氧，而任何化学反应都不能把氧变成更简单的东西。
+
+**化合物**是两种或两种以上元素以固定比例化学结合而成的纯物质。每个水分子都是$\mathrm{H_2O}$；在氯化钠中，离子$\mathrm{Na^+}$与$\mathrm{Cl^-}$在整个晶体中以一比一出现。这一比例属于物质本身，而不属于某个特定样品。化合物有自己的性质：氢气能燃烧，氧气能助燃，而水能把火焰熄灭。
+
+**混合物**是两种或两种以上纯物质在物理上共存，其比例可因样品而异。海水可以更咸一些而仍是海水；潮湿的空气可以含更多水蒸气而仍是空气。这里没有生成新物质，各组分的粒子只是共处于同一个容器中。
+
+**纯物质**是单质或化合物：组成固定，并且在给定温度和压力下具有固定的性质，如密度和熔点。由不同物质组成的混合物不会在某一温度下明确地熔化。
 :::
-## compounds and mixtures
-::: definition {#mattermeasurement-d2}
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Compounds And Mixtures is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+
+面对一个没有标签的样品，应当从粒子的角度提问。原子序数是一种，还是不止一种？如果不止一种，这些原子是以固定比例锁定在单一物质之中，还是仅仅共处于同一个瓶子里？铜只有一种原子。水有两种原子，锁定为$\mathrm{H_2O}$。海水则是水分子和若干种离子，其比例由海洋决定，而不由化学式决定。
+
+::: example 给八个样品分类 {#ex-classify}
+将下列每个样品归为单质、化合物或混合物，并说明其粒子是什么。(a) 气球中的氦。(b) 蒸馏水。(c) 经过滤的干燥空气。(d) 氯化钠晶体。(e) 青铜，铜和锡的合金。(f) 花岗岩。(g) 葡萄糖，$\mathrm{C_6H_{12}O_6}$。(h) 氧气。
+::: solution
+(a) 单质：氦原子，只有一种原子序数，没有化学结合的伙伴。
+(b) 化合物：$\mathrm{H_2O}$分子，氢与氧的固定比例为$2:1$。
+(c) 混合物。主要是$\mathrm{N_2}$和$\mathrm{O_2}$，还有氩和少量$\mathrm{CO_2}$，其比例不由任何化学式确定。过滤后的干燥空气是均匀的，因此这种混合物是均相的，但均匀不等于纯净。
+(d) 化合物。$\mathrm{Na^+}$与$\mathrm{Cl^-}$以$1:1$的比例占据晶格。不存在$\mathrm{NaCl}$分子；固定的比例已足以使该物质成为纯物质。
+(e) 混合物。铜原子和锡原子共处于一个金属晶格中，而青铜的含锡量可以变化。看上去均匀并不使合金成为化合物。
+(f) 混合物，而且肉眼可见是非均相的：由石英、长石和云母颗粒组成，每个颗粒本身是一种化合物。
+(g) 化合物：每个分子都是$\mathrm{C_6H_{12}O_6}$。
+(h) 单质。其粒子是$\mathrm{O_2}$分子。两个原子如果属于同一种元素，就不构成化合物。
+
+(d) 和 (h) 是一对陷阱。化合物不一定由分子组成，分子也不一定是化合物。
 :::
-## SI units
-::: definition {#mattermeasurement-d3}
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
-Si Units is one of the three core topics of the chapter Matter Measurement. Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
 :::
-## Review
-::: widget graph
-nodes: Elements, compounds and mixtures, SI units, review
-edges: Elements, compounds and mixtures, SI units, review
-caption: Matter and measurement concept map
+
+## 一相还是多相
+
+::: definition 均相物质与非均相物质 {#def-homo-hetero}
+**相**是样品中组成和物理性质处处均一的部分。当样品为单一相时，物质是**均相**的；当存在两个或更多相时，物质是**非均相**的。溶于水的食盐、与水混合的乙醇、干燥空气以及许多合金都是均相的。花岗岩、浮在水面上的油以及搅入水中的沙子都是非均相的：可以指出相界面，或者用过滤器截留一相而让另一相通过。
+
+均相不等于纯净。空气是均相的，却是混合物；蒸馏水是均相的，且是化合物。这两种划分彼此独立。纯物质熔化时，冰和液态水——*同一种*物质的两个相——共存；这是物态变化，而不是不同物质的混合物。相图将在后面处理这种情况。对于实验台上的一个瓶子，真正要问的是“一种物质还是多种？”以及“一相还是多相？”。
 :::
-::: widget stats
+
+胶体处于日常观察的边界上。牛奶看起来均匀，几分钟内也不会沉降，然而它是分散在水中的脂肪液滴。在本课程中，一个看上去均匀、并且在实验的时间尺度内不沉降的样品被当作均相处理。光散射以及胶体的严格描述可以留待以后。
+
+::: example 三只烧杯 {#ex-beakers}
+实验台上有三只没有标签的烧杯。烧杯 A 澄清，取一部分蒸干后留下白色固体。烧杯 B 浑浊；滤纸截留下沙子，滤液蒸发后什么也不留下。烧杯 C 浑浊，浑浊物能透过滤纸，放置一夜后有固体沉到杯底。每只烧杯中是哪一类物质？
+::: solution
+A 中是均相混合物：固体溶于水，只有一相；它可以分离，因为水能被赶走而固体不能。蒸发盐溶液是普通的教学操作。其危险在于热的玻璃器皿，以及加热过猛时的剧烈沸腾；这项工作应在指导下、经过风险评估后进行，而不是照着教科书在实验台上自行设计步骤。
+
+B 是沙子和水的非均相混合物。过滤分开了两相，而水基本上是纯的——蒸发后没有留下任何溶解物。
+
+C 也是非均相的，即使它看上去只是浑浊。颗粒小到能透过滤纸，又大到能在一夜之间沉降。快速过滤失败并不证明只有一相；它证明的是各相分散得很细。让烧杯静置，才是确定分类的那次观察。
 :::
-::: widget quiz
 :::
+
+::: quiz {#quiz-pure}
+下列哪一项描述的是纯净的化合物？
+- [ ] 干燥空气，在整个房间中处处均匀，约五分之四是氮，五分之一是氧。
+- [x] 蒸馏水：每个分子都是$\mathrm{H_2O}$，因此元素的比例固定，并且只有一种物质。
+- [ ] 看上去完全均匀的黄铜，由铜和锌按铸造厂选定的比例制成。
+- [ ] 花岗岩，因为它的每种矿物都有确定的化学式。
+::: solution
+蒸馏水是组成固定的单一物质，这正是“纯净化合物”的要求。干燥空气和黄铜是均相*混合物*：均匀，但比例不由化学式确定。花岗岩含有化合物，但岩石本身是这些矿物的非均相混合物。含有化合物与本身是一种化合物不是一回事。
+:::
+:::
+
+## 化学测量所用的单位
+
+SI 有七个基本量，其中五个贯穿整个化学：
+
+- 长度，单位**米**，符号$\mathrm{m}$；
+- 质量，单位**千克**，符号$\mathrm{kg}$；
+- 时间，单位**秒**，符号$\mathrm{s}$；
+- 热力学温度，单位**开尔文**，符号$\mathrm{K}$；
+- 物质的量，单位**摩尔**，符号$\mathrm{mol}$。
+
+安培和坎德拉补全了这份清单，本课程用不到它们。摩尔是化学家的计数单位；下一章将给出它的定义和用法。这份清单有两个特点常常导致不必要的错误。质量的基本单位是千克而不是克，所以$1\,\mathrm{g} = 10^{-3}\,\mathrm{kg}$。开尔文的符号是$\mathrm{K}$，不带度的符号：写作$298.15\,\mathrm{K}$，绝不写作$298.15\,^\circ\mathrm{K}$。
+
+词头把基本单位变成方便的大小。经常出现的词头有：
+
+| 词头 | 符号 | 因数 |
+|---|---|---|
+| 皮 | $\mathrm{p}$ | $10^{-12}$ |
+| 纳 | $\mathrm{n}$ | $10^{-9}$ |
+| 微 | $\mu$ | $10^{-6}$ |
+| 毫 | $\mathrm{m}$ | $10^{-3}$ |
+| 厘 | $\mathrm{c}$ | $10^{-2}$ |
+| 分 | $\mathrm{d}$ | $10^{-1}$ |
+| 千 | $\mathrm{k}$ | $10^{3}$ |
+| 兆 | $\mathrm{M}$ | $10^{6}$ |
+
+对于实验台上的反应，一立方米是巨大的体积。实验室实际使用的单位是立方分米，它有一个专门名称**升**：按定义，$1\,\mathrm{L} = 1\,\mathrm{dm^3}$严格成立。立方厘米和毫升是同一体积，$1\,\mathrm{mL} = 1\,\mathrm{cm^3}$严格成立；又因为一分米是十厘米，
+
+$$
+1\,\mathrm{dm^3} = (10\,\mathrm{cm})^3 = 1000\,\mathrm{cm^3} = 1000\,\mathrm{mL},
+$$
+
+同样严格成立。定义性的等式没有不确定度，它们永远不会限制结果的有效数字。
+
+天平经过校准后，读出的是**质量**。**重量**是作用在该质量上的重力，把同一物体带上山顶时它会改变。在本课程的所有计算中，“称量”指“测量质量”，以克为单位的结果就是质量。除非有人要求的是力，否则不要乘以$g = 9.8\,\mathrm{m\,s^{-2}}$。
+
+## 有效数字与修约
+
+::: definition 有效数字 {#def-sigfigs}
+测量数值的**有效数字**是携带其精密度信息的那些数字，从第一个非零数字算起。识读有效数字是一种约定，而不是自然规律，约定如下：
+
+- 每个非零数字都算；
+- 非零数字之间的零算（$4.05$有三位有效数字）；
+- 只起定位小数点作用的前导零不算（$0.00450$有三位）；
+- 写出小数点时，末尾的零算（$2.500$有四位）；科学记数法中末尾的零也算（$4.50\times 10^{3}$有三位）；
+- 像$4500$这样的裸数是含糊的，必须根据实际已知的情况写成$4.5\times 10^{3}$、$4.50\times 10^{3}$或$4.500\times 10^{3}$。
+
+乘除运算中，结果的有效数字位数与位数最少的因子相同。加减运算中，结果受精度最低的*小数位*限制，而不是受数字个数限制：$14.2 + 0.085$只能准确到十分位。计数得到的数（12 名学生、$\mathrm{O_2}$中的 2 个原子）和定义性换算（$100\,\mathrm{cm} = 1\,\mathrm{m}$严格成立）是准确数，不限制结果。
+
+本课程的**修约**采用四舍五入（逢五进一）。如果舍去的第一位数字是$0$–$4$，保留的末位数字不变；如果是$5$–$9$，保留的末位数字加一。计量学中常用“四舍六入五成双”，以避免大量的五被修约时产生系统漂移；我们不采用它，以便每道习题都只有一个数值答案。中间步骤多保留一位保护数字，只对最终报告的值进行修约。
+:::
+
+精密度和准确度不是同一种优点。精密度是重复测量值聚集的紧密程度；准确度是这一聚集中心与真值的接近程度。有效数字描述的是精密度。一台总是偏高$0.05\,\mathrm{g}$的天平可以非常精密却仍不准确，任何巧妙的修约都无法弥补。处理准确度靠的是校准，而不是算术。
+
+::: example 识读并组合测量数值 {#ex-sigfigs}
+(a) $0.00450$、$4.050\times 10^{-3}$和$4500$各有几位有效数字？(b) 按加法规则允许的精度计算$14.2 + 0.085 + 3.11$。(c) 一个长方体块的尺寸为$2.50\,\mathrm{cm}$×$3.20\,\mathrm{cm}$×$4.10\,\mathrm{cm}$。按正确的有效数字位数，它的体积是多少？
+::: solution
+(a) $0.00450$有三位有效数字：前导零不算，末尾的零算，因为它写在小数点之后。$4.050\times 10^{-3}$是如实写出的同一量级，它有四位有效数字——$5$之后直到末尾的零是测量得到的，而不是装饰。$4500$无法确定位数，它可能准确到百位，也可能准确到个位。写成$4.5\times 10^{3}$或$4.500\times 10^{3}$，含糊之处就消失了。
+
+(b) 和为$14.2 + 0.085 + 3.11 = 17.395$。精度最低的一项$14.2$止于十分位，因此和也止于十分位：$17.4$。$3.11$中的百分位和$0.085$中的千分位，一旦与一个从未准确到$0.1$以下的数相加，就不再保留。
+
+(c) $2.50\times 3.20 = 8.00$，$8.00\times 4.10 = 32.8$。每条棱都有三位有效数字，所以体积为$32.8\,\mathrm{cm^3}$。不要把中间值$8.00$修约回一位有效数字，也不要写成$32.80$：最后一条棱$4.10$只有三位，乘积不可能长出第四位。
+:::
+:::
+
+## 密度
+
+::: definition 密度 {#def-density}
+均相样品的**密度**是其质量除以体积，
+$$
+\rho = \frac{m}{V}.
+$$
+密度是**强度性质**：取两倍的样品，$m$和$V$都加倍，而$\rho$不变。SI 单位是$\mathrm{kg\,m^{-3}}$。在实验室中，固体和液体通常用$\mathrm{g\,cm^{-3}}$，并且$1\,\mathrm{g\,cm^{-3}} = 10^{3}\,\mathrm{kg\,m^{-3}}$严格成立，下文将给出证明。由于物质受热会膨胀，严谨的密度值应注明温度。除非给出温度，本章的数值都对应普通的实验室温度；我们不作热膨胀校正。
+:::
+
+密度是一个用天平加直尺、或天平加容量瓶就能测量的强度性质，往往足以区分两种金属。它无法区分恰好密度相同的两种物质，也完全不说明存在的是*哪些*粒子。物质的身份和密度回答的是不同的问题。
+
+::: example 容量瓶中的乙醇 {#ex-ethanol-density}
+在测量温度下，$50.00\,\mathrm{cm^3}$乙醇的质量为$39.45\,\mathrm{g}$。其密度是多少？
+::: solution
+$$
+\rho = \frac{39.45\,\mathrm{g}}{50.00\,\mathrm{cm^3}} = 0.7890\,\mathrm{g\,cm^{-3}}.
+$$
+两个数据都有四位有效数字，商恰好为$0.7890$，无需修约。结果是强度性质：同样的乙醇$100.00\,\mathrm{cm^3}$质量为$78.90\,\mathrm{g}$，密度相同。在严谨的工作中，不注明温度给出这个值略显不严密——乙醇在$15$到$25\,^\circ\mathrm{C}$之间有明显的膨胀——但定义的算术不变。
+:::
+:::
+
+::: example 一块铝块 {#ex-al-block}
+一个长方体块的尺寸为$2.50\,\mathrm{cm}$×$3.20\,\mathrm{cm}$×$4.10\,\mathrm{cm}$，质量为$88.6\,\mathrm{g}$。求其密度，并判断该值是否与铝（密度$2.70\,\mathrm{g\,cm^{-3}}$）一致。
+::: solution
+体积已在[[#ex-sigfigs]]中求得：$V = 32.8\,\mathrm{cm^3}$，三位有效数字。于是
+$$
+\rho = \frac{88.6\,\mathrm{g}}{32.8\,\mathrm{cm^3}} = 2.701\,\mathrm{g\,cm^{-3}},
+$$
+修约为$2.70\,\mathrm{g\,cm^{-3}}$。在质量（只有三位有效数字）的精度内，它与铝的公认密度相符。同样大小而密度大得多的金属，质量会明显超过$88.6\,\mathrm{g}$；这次测量可以排除它们，但不能证明这块是铝，而不是其他某种密度为$2.70\,\mathrm{g\,cm^{-3}}$的物质。强度性质能缩小范围，但它本身并不能确定物质是什么。
+:::
+:::
+
+::: proposition 密度在$\mathrm{g\,cm^{-3}}$与$\mathrm{kg\,m^{-3}}$之间的换算 {#prop-density-units}
+单位换算是把一个量乘以一个等于$1$的比值，并使不需要的单位约去。用于密度，
+$$
+1\,\mathrm{g\,cm^{-3}} = 10^{3}\,\mathrm{kg\,m^{-3}}
+$$
+严格成立。因此，以$\mathrm{g\,cm^{-3}}$表示的密度数值乘以$1000$，就得到以$\mathrm{kg\,m^{-3}}$表示的同一密度；有效数字不变，因为这里的$1000$是定义性换算，而不是测量值。
+:::
+
+::: proof 用因子标签法推导因子$1000$ {#proof-density-units}
+从$1\,\mathrm{g\,cm^{-3}}$出发，插入两个各自严格等于$1$的比值：一克中有$10^{-3}\,\mathrm{kg}$，一米中有$10^{2}\,\mathrm{cm}$。体积是长度的立方，所以长度比值要取立方：
+$$
+1\,\mathrm{g\,cm^{-3}}
+= 1\,\frac{\mathrm{g}}{\mathrm{cm^3}}
+\times \frac{10^{-3}\,\mathrm{kg}}{1\,\mathrm{g}}
+\times \left(\frac{10^{2}\,\mathrm{cm}}{1\,\mathrm{m}}\right)^{3}.
+$$
+克约去，厘米也约去。十的幂为
+$$
+10^{-3}\times (10^{2})^{3} = 10^{-3}\times 10^{6} = 10^{3},
+$$
+所以
+$$
+1\,\mathrm{g\,cm^{-3}} = 10^{3}\,\mathrm{kg\,m^{-3}}.
+$$
+算术中没有任何近似。这个因子是准确的，使用它不会消耗任何有效数字。同样的单位约去就是因子标签法的全部：把所需的恒等式写成分数，相乘，直到只剩下所要求的单位才停下来。
+:::
+
+::: widget plot
+f: a*x
+x: 0, 10
+y: 0, 40
+sliders: a=2.7:0.5:4:0.1
+labels: \text{质量 } m=\rho V
+caption: 均相物质的质量$m$（单位$\mathrm{g}$）对体积$V$（单位$\mathrm{cm^3}$）作图，密度$\rho$等于滑块$a$，单位$\mathrm{g\,cm^{-3}}$。图线是一条过原点的直线，斜率就是密度，因此直线越陡，物质越致密。铝位于$a = 2.7$附近；水位于$a = 1$附近。
+:::
+
+这个小部件就是把定义画成了图。同一种纯物质的若干块——质量不同、体积不同——落在同一条直线上，该直线的斜率就是$\rho$。各块组成不同的混合物则不会如此。点在直线周围的分散是实验不确定度，而不是新的规律；直线不过原点则意味着存在系统误差，常见原因是体积中包含了忘记扣除的空容器。
+
+## 温度：摄氏温标与开尔文温标
+
+::: proposition 摄氏温度与开尔文温度的关系 {#prop-temperature}
+在 SI 中，摄氏温度$\theta$与热力学温度$T$按定义相关联：
+$$
+\frac{\theta}{^\circ\mathrm{C}} = \frac{T}{\mathrm{K}} - 273.15,
+$$
+或等价地，$T/\mathrm{K} = \theta/^\circ\mathrm{C} + 273.15$。偏移量$273.15$是准确的。因此，温度*间隔*在两种温标上的数值相同。
+:::
+
+::: proof 为什么温度间隔不加$273.15$ {#proof-temperature}
+在两个温度$T_2$和$T_1$下写出定义式：
+$$
+\theta_2 = T_2 - 273.15, \qquad \theta_1 = T_1 - 273.15,
+$$
+其中$\theta$以摄氏度计，$T$以开尔文计。两式相减：
+$$
+\theta_2 - \theta_1 = T_2 - T_1.
+$$
+偏移量约去了。升高$7.4\,^\circ\mathrm{C}$就是升高$7.4\,\mathrm{K}$，而不是$7.4 + 273.15$。一摄氏度与一开尔文大小相同，只有温标的零点不同。摄氏零点被定义为比热力学温度的零点（即绝对零度）高$273.15\,\mathrm{K}$。2019 年 5 月 20 日之前，开尔文的定义是把水的三相点固定为$273.16\,\mathrm{K}$，而摄氏温标把该三相点定为$0.01\,^\circ\mathrm{C}$，因此冰点与$273.15\,\mathrm{K}$按构造重合。自 2019 年重新定义以来，开尔文通过赋予玻尔兹曼常数一个准确值来确定，而关系式$\theta/^\circ\mathrm{C} = T/\mathrm{K} - 273.15$被保留为摄氏温标的*定义*。真实的冰浴含有溶解的空气、处于普通大气压下，它不是定义，也不必恰好处于$273.15\,\mathrm{K}$。无论如何，计算中所用的换算是准确的。
+:::
+
+气体定律，以及此后每一个温度与能量相乘或相除的公式，都要求使用开尔文。在温度为$25\,^\circ\mathrm{C}$时代入$25$，绝不是小小的失误：$298\,\mathrm{K}$与$25\,\mathrm{K}$相差十二倍。
+
+::: example 换算温度，而不换算温差 {#ex-temperature}
+(a) 把$25.00\,^\circ\mathrm{C}$和$100.00\,^\circ\mathrm{C}$用开尔文表示。(b) 冰箱冷冻室温度为$-18.0\,^\circ\mathrm{C}$。按四舍五入，报告准确到十分之一开尔文的热力学温度。(c) 某溶液从$19.4\,^\circ\mathrm{C}$升温到$26.8\,^\circ\mathrm{C}$。以开尔文计的温度变化是多少？
+::: solution
+(a) 偏移量是准确的，两个摄氏读数都给到百分之一度，与$273.15$的小数位相同。所以
+$$
+25.00 + 273.15 = 298.15\,\mathrm{K}, \qquad 100.00 + 273.15 = 373.15\,\mathrm{K}.
+$$
+这些才是要代入气体定律的数值。符号$25\,^\circ\mathrm{C}$与$298.15\,\mathrm{K}$指的是同一个温度。
+
+(b) $-18.0 + 273.15 = 255.15$。读数$-18.0$准确到十分位，所以和也准确到十分位。舍去的第一位数字是$5$；按四舍五入，十分位从$1$进为$2$。温度为$255.2\,\mathrm{K}$。
+
+(c) 变化量为$26.8 - 19.4 = 7.4$。由[[#prop-temperature]]，同一个数就是以开尔文计的变化：$\Delta T = 7.4\,\mathrm{K}$。如果在这里加上$273.15$，描述的将是约$281\,\mathrm{K}$的升温，而这不是溶液实际发生的事。
+:::
+:::
+
+::: warning 三种名不副实的测量 {#warn-measurement}
+第一：温差和温度是不同种类的数。升温$7.4\,^\circ\mathrm{C}$就是$7.4\,\mathrm{K}$，前面已经证明；而*作为温度*的$7.4\,^\circ\mathrm{C}$是$280.6\,\mathrm{K}$。对一种正确的算术对另一种是严重的错误，公式不会替你发现这个错误——它们只会悄无声息地返回一个荒谬的压力或能量。
+
+第二：质量不是重量，定义性换算也不是测量。因子$100\,\mathrm{cm}/1\,\mathrm{m}$是准确的。把它当作具有一位或三位有效数字的数，要么丢掉了你本有权保留的数字，要么凭空制造了无人测量过的数字。
+
+第三：裸写的$4500$并不因为有四个数字就有四位有效数字，$0.00450$也没有六位。前导零不是测量得到的。含糊的末尾零应改用科学记数法。把中间结果修约到最终精度后再继续计算，是丢失真实数字的另一种途径；保护数字要一直保留到最后一行。
+:::
+
+## 量纲分析
+
+[[#prop-density-units]]的证明是一种普遍习惯的一个实例。已知一个量的某种单位表示，要求用另一种单位表示。你乘以若干个等于$1$的分数，每个分数是一个定义的或测得的等价关系，写法要使不需要的单位约去。这种方法有好几个名字——量纲分析、因子标签法、单位约去法。纪律是相同的：单位是量的一部分，它必须在代数运算中清清楚楚地保留下来。
+
+::: example 三个换算 {#ex-convert}
+(a) 把$0.0450\,\mathrm{m^3}$用立方厘米表示。(b) 把密度$2.70\,\mathrm{g\,cm^{-3}}$用$\mathrm{kg\,m^{-3}}$表示。(c) 某样品质量为$2.45\,\mathrm{g}$，以毫克计是多少？
+::: solution
+(a) 一米严格等于$100\,\mathrm{cm}$，所以
+$$
+0.0450\,\mathrm{m^3}\times\left(\frac{100\,\mathrm{cm}}{1\,\mathrm{m}}\right)^3 = 0.0450\times 10^{6}\,\mathrm{cm^3} = 4.50\times 10^{4}\,\mathrm{cm^3}.
+$$
+因子$10^{6}$是准确的。$0.0450$的三位有效数字就是答案的三位有效数字。写成$45000\,\mathrm{cm^3}$数值相等，但写法更差，因为末尾的零看起来不确定；$4.50\times 10^{4}\,\mathrm{cm^3}$如实表达了你所知道的。
+
+(b) 由[[#prop-density-units]]，乘以$10^{3}$：
+$$
+2.70\,\mathrm{g\,cm^{-3}} = 2.70\times 10^{3}\,\mathrm{kg\,m^{-3}}.
+$$
+输入三位有效数字，输出也是三位。这一换算不能为$2700.0$提供依据，也不会迫使你降到$3\times 10^{3}$。
+
+(c) $1\,\mathrm{g} = 10^{3}\,\mathrm{mg}$严格成立，所以
+$$
+2.45\,\mathrm{g}\times\frac{10^{3}\,\mathrm{mg}}{1\,\mathrm{g}} = 2.45\times 10^{3}\,\mathrm{mg}.
+$$
+克约去了。如果分数写反了，单位会变成$\mathrm{g^2\,mg^{-1}}$，这就是信号：在相信这个数之前先把因子倒过来。
+:::
+:::
+
+一个无法用单位核对的换算结果是没有完成的。这一习惯比本章任何一个因子都更有价值：此后的每个公式，从摩尔到气体定律，都将以同样的约去方式应用。
+
+::: history {#hist-lavoisier}
+拉瓦锡（Antoine-Laurent Lavoisier）让天平成为化学解释的裁判。燃烧曾被描述为燃烧物失去一种叫“燃素”的物质。令人尴尬的事实是：金属燃烧后质量*增加*。拉瓦锡在 1770 年代把锡和磷放在密封容器中加热，并在加热前后连同容器和内容物一起称量。总质量没有改变。事后打开容器，空气被吸入，而固体增加的质量与被消耗的空气质量相符。看似质量的创生，其实是从空气中转移而来。1787 年，他与吉东·德莫尔沃（Guyton de Morveau）、贝托莱（Berthollet）和富尔克鲁瓦（Fourcroy）一起提出了新的命名法，用由元素构成的名称取代传统名称；在 1789 年的《化学基础论》（*Traité élémentaire de chimie*）中，他把质量守恒作为定量化学的公理提出：在封闭体系的化学操作中，总质量不变，改变的只是元素的组合。
+
+有两条界限使这一公理保持严谨。体系必须是封闭的。一烧杯沸水失去质量，是因为蒸气离开了实验台，而不是质量不守恒。此外，质量与能量由$E = mc^2$联系在一起。一百万焦耳的能量变化——对于一摩尔化学反应而言已是很大的能量——对应约$1.1\times 10^{-8}\,\mathrm{g}$的质量，本课程使用的任何天平都无法检测。对于此后的每一次称量和每一道化学计量问题，质量守恒的精确度远远超过有效数字所能承载的位数。拉瓦锡于 1794 年被处决，而这条公理没有。
+:::
+
+## 后续内容
+
+本章所说的粒子不是用手数的，而是通过称量来计数的。[[general-chemistry-1/atoms-and-moles]]定义摩尔和摩尔质量，把天平读数变成原子的数目。质量守恒在这里是关于封闭容器的陈述，在[[general-chemistry-1/stoichiometry]]中将变成配平的方程式和数值预测。对于液体或固体，一旦知道质量和密度，体积就确定了；对于气体则完全不是这样：[[general-chemistry-1/gases]]将使体积依赖于压力以及上面引入的开尔文温度。
+
 ::: summary
-- Elements
-- compounds and mixtures
-- SI units
-- Elements, compounds and mixtures, SI units, significant figures and dimensional analysis
+- 单质只含一种原子序数；化合物含两种或更多元素，比例固定；混合物组成可变。纯净指单质或化合物，而不是“均相”。
+- 均相物质是单一相；非均相物质有两个或更多相。溶液和合金是均相混合物。过滤或沉降试验胜过随意的一瞥。
+- 化学使用米、千克、秒、开尔文和摩尔。$1\,\mathrm{L} = 1\,\mathrm{dm^3}$与$1\,\mathrm{mL} = 1\,\mathrm{cm^3}$严格成立。开尔文写作$\mathrm{K}$，不带度的符号。
+- 密度为$\rho = m/V$，是强度性质，且$1\,\mathrm{g\,cm^{-3}} = 10^{3}\,\mathrm{kg\,m^{-3}}$严格成立。纯物质的质量–体积图是一条过原点的直线，斜率为$\rho$。
+- $T/\mathrm{K} = \theta/^\circ\mathrm{C} + 273.15$严格成立，因此两种温标上的温度间隔相同。涉及绝对温度的公式需要开尔文；温差不加$273.15$。
+- 有效数字：前导零不算；小数点显示出来时末尾零算；乘法按位数最少者，加法按精度最低的小数位。本课程采用四舍五入，并把保护数字保留到最后。
+- 量纲分析就是乘以等于$1$的分数，直到不需要的单位约去为止。单位没有约去的结果不算结果。
+- 在封闭化学体系中，质量守恒的精度是任何教学用天平都无法挑战的。敞口烧杯不是反例。
 :::
-::: history
-- 1662 (Boyle's law)
-- 1787 (Charles's law of volumes)
-- 1789 (Lavoisier's Traité and conservation of mass)
-- 1808 (Dalton's atomic theory)
-:::
-## Exercises
-::: exercise {level=1}
-Exercise 1: apply the methods of Matter and measurement.
+
+## 习题
+
+::: exercise 一份液体的密度 {#exr-density-liquid level=1 check="0.9976"}
+$25.00\,\mathrm{cm^3}$某液体的质量为$24.94\,\mathrm{g}$。其密度是多少？（以$\mathrm{g\,cm^{-3}}$为单位输入密度。）
 ::: solution
-Solution 1.
+$$
+\rho = \frac{24.94\,\mathrm{g}}{25.00\,\mathrm{cm^3}} = 0.9976\,\mathrm{g\,cm^{-3}}.
+$$
+两个测量值都有四位有效数字，商无需修约。该值略低于室温附近水的熟悉值$1\,\mathrm{g\,cm^{-3}}$，这是一个有用的合理性检验，但并不能证明该液体是水。
 :::
-::: exercise {level=1}
-Exercise 2: apply the methods of Matter and measurement.
-::: solution
-Solution 2.
 :::
-::: exercise {level=1}
-Exercise 3: apply the methods of Matter and measurement.
+
+::: exercise 开尔文温标上的沸水 {#exr-boil-kelvin level=1 check="373.15"}
+把$100.00\,^\circ\mathrm{C}$表示为热力学温度。（以开尔文为单位输入温度，保留两位小数。）
 ::: solution
-Solution 3.
+偏移量是准确的，摄氏读数给到与$273.15$相同的小数位：
+$$
+T = 100.00 + 273.15 = 373.15\,\mathrm{K}.
+$$
+除非摄氏温度只准确到整度，否则不要修约为$373\,\mathrm{K}$。这里给出的是$100.00$。
 :::
-::: exercise {level=2}
-Exercise 4: apply the methods of Matter and measurement.
-::: solution
-Solution 4.
 :::
-::: exercise {level=2}
-Exercise 5: apply the methods of Matter and measurement.
+
+::: exercise 数有效数字 {#exr-count-sig level=1 check="3"}
+测量数值$0.00450$有几位有效数字？（输入位数。）
 ::: solution
-Solution 5.
+前导零只用于确定小数点的位置。算数的数字是$4$、$5$和末尾的$0$，共三位。写成$4.50\times 10^{-3}$，同一测量值就能显示出它的三位有效数字，而没有那些干扰视线的零。
 :::
-::: exercise {level=2}
-Exercise 6: apply the methods of Matter and measurement.
-::: solution
-Solution 6.
 :::
-::: exercise {level=3}
-Exercise 7: apply the methods of Matter and measurement.
+
+::: exercise 由密度和体积求质量 {#exr-mass-vol level=2 check="29.6"}
+某液体密度为$1.184\,\mathrm{g\,cm^{-3}}$。$25.0\,\mathrm{cm^3}$中含有多少质量？（以克为单位输入质量，保留三位有效数字。）
 ::: solution
-Solution 7.
+$$
+m = \rho V = (1.184\,\mathrm{g\,cm^{-3}})(25.0\,\mathrm{cm^3}) = 29.6\,\mathrm{g}.
+$$
+乘积$1.184\times 25.0 = 29.6$在三位上恰好准确。密度有四位有效数字，体积有三位，所以质量有三位。保留$29.60$就是假装体积测量比实际更好。
 :::
-::: exercise {level=3}
-Exercise 8: apply the methods of Matter and measurement.
+:::
+
+::: exercise 正确修约的加法 {#exr-add-round level=2 check="17.4"}
+计算$14.2 + 0.085 + 3.11$，并按加法规则修约。（输入结果。）
 ::: solution
-Solution 8.
+原始和为$14.2 + 0.085 + 3.11 = 17.395$。$14.2$这一项只准确到十分位，而加法无法超越精度最低的小数位。舍去的第一位数字是$9$，所以十分位进一：$17.4$。报告$17.40$或$17.395$会保留$14.2$从未包含的数字。
+:::
+:::
+
+::: exercise 立方米换算为立方厘米 {#exr-m3-cm3 level=2 check="45000"}
+把$0.0450\,\mathrm{m^3}$换算为立方厘米。长度换算是准确的。（以$\mathrm{cm^3}$为单位输入体积，等于$4.50\times 10^{4}$。）
+::: solution
+$$
+0.0450\,\mathrm{m^3}\times\left(\frac{100\,\mathrm{cm}}{1\,\mathrm{m}}\right)^3 = 0.0450\times 10^{6}\,\mathrm{cm^3} = 4.50\times 10^{4}\,\mathrm{cm^3}.
+$$
+数值上就是$45000$。三位有效数字在系数$4.50$中；十的幂所带的零不是不确定的数字。因子$(100)^3 = 10^{6}$是定义的，不带来任何不确定度。
+:::
+:::
+
+::: exercise 圆柱体的密度 {#exr-cylinder level=3 check="0.878"}
+一个实心圆柱体半径为$1.25\,\mathrm{cm}$，高为$8.40\,\mathrm{cm}$，质量为$36.2\,\mathrm{g}$。求其密度。使用计算器上的$\pi$值。（以$\mathrm{g\,cm^{-3}}$为单位输入密度，保留三位有效数字。）
+::: hint
+圆柱体的体积为$V = \pi r^{2} h$。在考虑有效数字之前先把半径平方，$\pi$和中间体积多保留几位，只对$\rho$修约。
+:::
+::: solution
+$$
+V = \pi r^{2} h = \pi (1.25\,\mathrm{cm})^{2} (8.40\,\mathrm{cm}) = \pi \times 1.5625 \times 8.40 = 41.233\ldots\,\mathrm{cm^3}.
+$$
+$$
+\rho = \frac{36.2\,\mathrm{g}}{41.233\,\mathrm{cm^3}} = 0.8779\,\mathrm{g\,cm^{-3}},
+$$
+保留三位有效数字为$0.878\,\mathrm{g\,cm^{-3}}$。质量有三位，$1.25$和$8.40$也是三位；就此目的而言$\pi$是准确的，不限制结果。用$\pi \approx 3.14$会使体积在第四位上改变，修约后仍为$0.878$。忘记把半径平方则不然。
+:::
+:::
+
+::: exercise 一块不规则的金属 {#exr-displacement level=3 check="2.62"}
+一块不规则金属质量为$48.75\,\mathrm{g}$。把它放入量筒中，排开$18.6\,\mathrm{cm^3}$水。它的密度是多少？（以$\mathrm{g\,cm^{-3}}$为单位输入密度，保留三位有效数字。）该值是否与铝（密度$2.70\,\mathrm{g\,cm^{-3}}$）一致？
+::: hint
+只有当这块金属完全浸没且无孔隙时，排开的体积才等于金属的体积。精度则受两次测量中较差的那一次限制。
+:::
+::: solution
+$$
+\rho = \frac{48.75\,\mathrm{g}}{18.6\,\mathrm{cm^3}} = 2.62097\ldots\,\mathrm{g\,cm^{-3}} = 2.62\,\mathrm{g\,cm^{-3}}.
+$$
+体积有三位有效数字，质量有四位，所以密度有三位。铝的$2.70\,\mathrm{g\,cm^{-3}}$在第二位有效数字上就已不同：$2.62$与$2.70$相差约百分之三，大于$18.6$末位数字所暗示的不确定度（约二百分之一）。除非体积读错，这块金属不是铝。排水法测量的是完全浸没在液体中的无孔物体的体积；夹带的空气或多孔的块体会使$V$偏大、$\rho$偏小，在宣布发现一种新金属之前，应首先怀疑这种系统误差。
+:::
+:::
+
+::: exercise 一千倍因子的应用 {#exr-derive-1000 level=3 check="13600"}
+写出单位的约去过程，推导关系式$1\,\mathrm{g\,cm^{-3}} = 1000\,\mathrm{kg\,m^{-3}}$。并由此把室温附近汞的密度$13.6\,\mathrm{g\,cm^{-3}}$用$\mathrm{kg\,m^{-3}}$表示。（以$\mathrm{kg\,m^{-3}}$为单位输入该密度。）
+::: solution
+$$
+1\,\frac{\mathrm{g}}{\mathrm{cm^3}}
+\times \frac{10^{-3}\,\mathrm{kg}}{1\,\mathrm{g}}
+\times \left(\frac{10^{2}\,\mathrm{cm}}{1\,\mathrm{m}}\right)^{3}
+= 10^{-3}\times 10^{6}\,\mathrm{kg\,m^{-3}}
+= 10^{3}\,\mathrm{kg\,m^{-3}}.
+$$
+克和厘米约去，与[[#proof-density-units]]相同。把汞的值乘以准确因子$1000$，
+$$
+13.6\,\mathrm{g\,cm^{-3}} = 1.36\times 10^{4}\,\mathrm{kg\,m^{-3}},
+$$
+写成整数就是$13600$。输入的是三位有效数字，所以如实的科学记数法是$1.36\times 10^{4}\,\mathrm{kg\,m^{-3}}$；换算本身没有增加任何位数。
+:::
 :::

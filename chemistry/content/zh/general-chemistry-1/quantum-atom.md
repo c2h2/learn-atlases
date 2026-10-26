@@ -1,108 +1,359 @@
-## Electromagnetic radiation
-::: definition {#quantumatom-d1}
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Electromagnetic Radiation is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+一根充有低压氢气的玻璃管，两端加上电压，发出的光并不是白色。它发出一种特定的粉红色，棱镜把这粉红色拆成几条锐利的谱线：一条红线、一条蓝绿线、两条紫线，然后是一片黑暗。炽热的固体给出一道彩虹，单个原子给出的却是一组条形码。条形码是原子在宣告：它的电子的能量不是连续变量。本章来解读这组条形码——先把光看作波和光子，再看玻尔那个暂时性的氢原子模型，最后看取代该模型的量子数和轨道形状。真正给出这些形状的微分方程不在这里求解，那是[[quantum-chemistry/hydrogen-atom]]中的氢原子；本课只讲到入门课程所用的结果为止。
+
+全章固定使用四个常数，在计算过程中不作舍入：$h = 6.62607015\times 10^{-34}\ \mathrm{J\,s}$，$c = 2.99792458\times 10^{8}\ \mathrm{m\,s^{-1}}$，$R_\mathrm{H} = 1.096776\times 10^{7}\ \mathrm{m^{-1}}$，$N_\mathrm{A} = 6.02214076\times 10^{23}\ \mathrm{mol^{-1}}$。这里的里德伯常量是氢的里德伯常量，而不是核质量无穷大的极限值，其单位是米的倒数。
+
+## 波，以及一个光子的能量
+
+光是电磁波。相邻波峰之间的距离是波长$\lambda$，每秒经过某一点的波峰数是频率$\nu$，在真空中二者由光速锁定在一起。
+
+::: definition 波长、频率与波数 {#def-wave}
+对于真空中的电磁波，
+$$
+c = \lambda\nu, \qquad \tilde{\nu} = \frac{1}{\lambda} = \frac{\nu}{c}.
+$$
+**波数**$\tilde{\nu}$表示每米中的波的个数。可见光只是光谱中很窄的一段，大约为$400$至$700\ \mathrm{nm}$：短波端是紫光，往后依次是蓝、绿、黄、橙、红。紫外线比紫光波长更短，红外线比红光波长更长。钠路灯看起来是黄色的，是因为它在$589\ \mathrm{nm}$附近发光，而不是因为黄色是与光不同的另一种东西。
 :::
-## photons
-::: definition {#quantumatom-d2}
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Photons is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+
+氢放电管迫使我们接受的是：这种波的能量是一份一份传递的。普朗克（Planck）在1900年已经发现，炽热空腔壁上的振子只以$h\nu$的整数份交换能量。爱因斯坦（Einstein）在1905年更进一步：光本身就是由这些份额构成的。
+
+::: definition 光子 {#def-photon}
+**光子**是频率为$\nu$的电磁辐射的量子，其能量为
+$$
+E = h\nu = \frac{hc}{\lambda}
+$$
+动量为$p = h/\lambda$。光束的强度是每秒到达的光子数，而不是每个光子的能量。提高强度和提高频率是两种不同的操作。
 :::
-## atomic spectra
-::: definition {#quantumatom-d3}
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
-Atomic Spectra is one of the three core topics of the chapter Quantum Atom. Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+
+热化学能认出来的是摩尔量。一摩尔光子携带$N_\mathrm{A} h\nu$的能量，一个可见光光子折合每摩尔几百千焦——与化学键同一数量级。正是这个巧合使光能够打断分子，而无线电波的光子则不能。
+
+::: example 一个蓝光光子，与一摩尔蓝光光子 {#ex-photon}
+求波长为$450.0\ \mathrm{nm}$的光子的频率、能量以及每摩尔光子的能量。
+::: solution
+$$
+\nu = \frac{c}{\lambda} = \frac{2.99792458\times 10^{8}}{450.0\times 10^{-9}} = 6.662\times 10^{14}\ \mathrm{Hz}.
+$$
+$$
+E = h\nu = (6.62607015\times 10^{-34})(6.662\times 10^{14}) = 4.414\times 10^{-19}\ \mathrm{J}.
+$$
+每摩尔，
+$$
+E_\mathrm{m} = N_\mathrm{A} E = (6.02214076\times 10^{23})(4.414\times 10^{-19}) = 2.658\times 10^{5}\ \mathrm{J\,mol^{-1}} = 265.8\ \mathrm{kJ\,mol^{-1}}.
+$$
+波长给出了四位有效数字，答案也保留四位。$266\ \mathrm{kJ\,mol^{-1}}$是与化学键相当的能量：这种颜色的光在化学上具有危险性，而由更弱的光子组成、总量多上一千倍的红色热辐射却未必如此。同样的计算在$700\ \mathrm{nm}$处只给出$170.9\ \mathrm{kJ\,mol^{-1}}$。
 :::
-## Review
-::: widget graph
-nodes: Electromagnetic radiation, photons, atomic spectra, review
-edges: Electromagnetic radiation, photons, atomic spectra, review
-caption: Light and the quantum atom concept map
 :::
-::: widget stats
+
+要说明起作用的是单个份额而不是整束光，最干净的证据是光电效应。光照射到金属表面上会打出电子，但只有频率足够高时才会如此。低于阈频率$\nu_0$时，无论灯多亮，都没有电子逸出。高于阈频率时，电子立即逸出，而更亮的灯每秒释放更多电子，却不会让每个电子更快。爱因斯坦方程是对一个光子和一个电子的守恒表述：
+
+$$
+h\nu = \phi + \tfrac{1}{2}m_\mathrm{e} v^{2},
+$$
+
+其中**逸出功**$\phi$是把一个电子从该金属中拉出所需的能量，剩余部分是被释放电子的动能。铯是第1族金属，逸出功较小；教科书中的典型值为$\phi = 1.95\ \mathrm{eV}$，而$1\ \mathrm{eV} = 1.602176634\times 10^{-19}\ \mathrm{J}$（精确值）。于是阈波长为$hc/\phi = 636\ \mathrm{nm}$。比这更红的光，无论多强，对铯表面都毫无作用；更蓝的光则能打出电子。这句话的数值版本留作习题。
+
+::: warning 强度不是能量 {#warn-intensity}
+更亮的灯并不产生能量更高的光子，它只产生更多的光子。受经典波动观念训练的学生会预期光驱动过程的能量随亮度平滑上升，而光电效应正是打破这一预期的实验：低于$\nu_0$时，在任何强度下速率都恰好为零；高于$\nu_0$时，每个电子的动能为$h\nu - \phi$，与强度无关。同样的区别也出现在光化学中。一个需要紫外光子的反应，并不会因为大量绿光光子而得到帮助。
 :::
-::: widget quiz
+
+## 氢的条形码
+
+让粉红色的辉光通过狭缝和光栅，彩虹就消失了。取而代之的是黑暗背景上一些位于确定波长处的谱线。吸收则做着互补的事：白光通过冷的氢气后，恰好缺失放电时本会发射的那些波长。原子具有一组能量差，只有当$h\nu$与其中之一相符时，它才会接受或交出一个光子。
+
+巴耳末（Johann Balmer）在1885年发现，氢的四条可见谱线服从同一个算术规律。里德伯（Johannes Rydberg）把它推广到该原子的每一条谱线。
+
+::: proposition 里德伯公式 {#prop-rydberg}
+原子氢的每一条谱线的真空波长$\lambda$由下式给出：
+$$
+\frac{1}{\lambda} = R_\mathrm{H}\left(\frac{1}{n_1^{2}} - \frac{1}{n_2^{2}}\right), \qquad n_2 > n_1 \ge 1,
+$$
+其中$R_\mathrm{H} = 1.096776\times 10^{7}\ \mathrm{m^{-1}}$。整数$n_1$标记线系，$n_2$标记线系中的谱线。**莱曼**系为$n_1 = 1$，位于紫外区。**巴耳末**系为$n_1 = 2$；其可见谱线恰好是$n_2 = 3, 4, 5, 6$这四条。**帕邢**系为$n_1 = 3$，位于红外区。当$n_2 \to \infty$时，谱线向**线系极限**$1/\lambda = R_\mathrm{H}/n_1^{2}$密集靠拢。
 :::
+
+在这一阶段，该公式是经验性的。还没有任何东西说明为什么会出现整数，也没有说明为什么在一个线系上测得的常数能预言所有其他线系。下一节玻尔模型的意义在于它推导出了这个公式。而此后整个世纪的意义在于：这一推导所依据的图像是错的，公式却保留了下来。
+
+::: example 巴耳末系的可见谱线 {#ex-balmer}
+计算巴耳末谱线$n_2 = 3$和$n_2 = 4$的真空波长，以及巴耳末线系极限。
+::: solution
+对$n_2 = 3$，
+$$
+\frac{1}{\lambda} = (1.096776\times 10^{7}\ \mathrm{m^{-1}})\left(\frac{1}{4} - \frac{1}{9}\right) = (1.096776\times 10^{7})(0.138889) = 1.52330\times 10^{6}\ \mathrm{m^{-1}},
+$$
+$$
+\lambda = 656.47\ \mathrm{nm}.
+$$
+对$n_2 = 4$，括号中的因子为$1/4 - 1/16 = 0.1875$，所以$1/\lambda = 2.05646\times 10^{6}\ \mathrm{m^{-1}}$，$\lambda = 486.27\ \mathrm{nm}$。同样代入，$n_2 = 5$给出$434.17\ \mathrm{nm}$，$n_2 = 6$给出$410.29\ \mathrm{nm}$。这些都是真空波长。在空气中测得的波长约短四千分之一，因此数据表可能把$\mathrm{H}\alpha$列为$656.3\ \mathrm{nm}$，说的仍是这条线。它们的颜色依次为红、蓝绿、紫、紫。下一条谱线$n_2 = 7$落在$397.12\ \mathrm{nm}$，恰在可见窗口之外：可见线系有四条谱线这一说法是计算的结果，而不是传统。线系极限为
+$$
+\lambda_\infty = \frac{4}{R_\mathrm{H}} = 364.71\ \mathrm{nm},
+$$
+位于近紫外区。越过这一极限，处于$n = 2$能级的冷氢原子可以被一段连续的波长电离，而不是被某条谱线电离。
+:::
+:::
+
+::: widget plot
+f: 1/4 - 1/x^2
+x: 3, 8
+y: 0, 0.2
+labels: \text{里德伯项}
+caption: 巴耳末因子$1/2^{2} - 1/n^{2}$，以上能级量子数为横坐标$x$。乘以$R_\mathrm{H} = 1.096776\times 10^{7}\ \mathrm{m^{-1}}$即得波数。该因子向零逼近，因此相继的谱线挤在一起，最终汇入线系极限，而不是在整个光谱上铺开。
+:::
+
+## 玻尔做对了什么，模型止步于何处
+
+1913年，玻尔（Bohr）建立了一个由三条假设推出[[#prop-rydberg]]的模型。这里把它们作为历史来陈述，因为其中两条是错的，第三条只作为$E = h\nu$的特例保留下来。
+
+这些假设是：氢原子中的电子绕质子作圆周运动而不辐射；该圆周运动的角动量是量子化的，$m_\mathrm{e}vr = n h/2\pi$，$n = 1, 2, 3, \ldots$；只有当电子从一个允许的圆轨道跃迁到另一个时才发生辐射，光子携带能量差。令库仑引力与向心力要求相平衡，再代入量子化的角动量，就得到一组分立的能量。玻尔还证明了这些能量前面的常数就是由$e$、$m_\mathrm{e}$、$\varepsilon_0$和$h$构成的里德伯常量。正是这一数值上的成功使人们相信了这个模型。本课不重复受力平衡的代数推导：它假定了后来的理论所取消的圆轨道，而[[quantum-chemistry/hydrogen-atom]]不借助圆轨道就推出了相同的能量。
+
+::: proposition 氢原子的玻尔能量 {#prop-bohr}
+在玻尔模型中，氢的能级$n$的能量（以分离的电子和质子为零点）为
+$$
+E_n = -\frac{hc R_\mathrm{H}}{n^{2}} = -\frac{2.179\times 10^{-18}\ \mathrm{J}}{n^{2}} = -\frac{13.60\ \mathrm{eV}}{n^{2}}.
+$$
+能量零点是电离后的原子。每个束缚能级都是负的。对于核电荷为$Z$的单电子离子，同一模型（仍使用这个$R_\mathrm{H}$）把分子换成$Z^{2} hc R_\mathrm{H}$。这一替换是很好的一级近似，但并不精确：真正的里德伯常量取决于电子-核体系的约化质量，所以$\mathrm{He^{+}}$与$\mathrm{H}$的$R_\mathrm{H}$在最后几位上并不相同。
+:::
+
+::: proof
+从$n_2$向下跃迁到$n_1$时发射的光子携带能量$E_{n_2} - E_{n_1}$，它是正的，因为$E_{n_2}$负得较少：
+$$
+h\nu = hc R_\mathrm{H}\left(\frac{1}{n_1^{2}} - \frac{1}{n_2^{2}}\right).
+$$
+两边除以$hc$。左边是$1/\lambda$，里德伯公式随即得出。因此该模型不仅仅是拟合了一个线系。任何线系都是同一组能级，只是以不同的下能级为起点来读，这就是为什么里德伯的一个常数能统摄整个光谱。线系极限$n_2 \to \infty$是从某能级跃迁到$E = 0$，即从该能级开始电离的起点。
+:::
+
+::: example 氢的电离能 {#ex-ie}
+计算把电子从氢的基态移去所需的能量（以$\mathrm{kJ\,mol^{-1}}$和$\mathrm{eV}$表示），以及从$n = 2$移去电子所需的能量。
+::: solution
+从$n = 1$电离就是莱曼线系极限：$1/\lambda = R_\mathrm{H}$，所以
+$$
+E = hc R_\mathrm{H} = (6.62607015\times 10^{-34})(2.99792458\times 10^{8})(1.096776\times 10^{7}) = 2.179\times 10^{-18}\ \mathrm{J}.
+$$
+每摩尔，
+$$
+E_\mathrm{m} = (2.179\times 10^{-18})(6.02214076\times 10^{23}) = 1.312\times 10^{6}\ \mathrm{J\,mol^{-1}} = 1312\ \mathrm{kJ\,mol^{-1}}.
+$$
+除以电子伏特$1\ \mathrm{eV} = 1.602176634\times 10^{-19}\ \mathrm{J}$，得$13.60\ \mathrm{eV}$。$n = 2$能级位于$E_1/4$，所以剩余的电离能为$1312/4 = 328.0\ \mathrm{kJ\,mol^{-1}}$，即$3.400\ \mathrm{eV}$。这个$1312\ \mathrm{kJ\,mol^{-1}}$是光谱学上基态与连续区的间隔。$298.15\ \mathrm{K}$下热化学的电离焓与它相差每摩尔几千焦，那是热的账目差额；下一章的周期趋势用的是取整后的光谱值，这一区别不会改变那些趋势。
+:::
+:::
+
+这个模型凭刚才的推导赢得了一席之地，然后就必须退役。记清四点失败就够了，因为每一点都是后续某一章的起点。
+
+第一，氢的能量，以及在附加$Z^{2}$因子和约化质量说明的前提下其他单电子离子的能量，是该模型做对的部分。里德伯公式是该模型的定理，而不是输入。
+
+第二，多电子原子超出了它的能力。第二个电子排斥第一个电子，作用力不再是指向固定中心的纯库仑引力，不存在一个整数$n$，其圆轨道能重现氦的光谱，更不用说铁的光谱了。元素周期表是一个多电子事实，玻尔的假设并不包含它。
+
+第三，这些假设给不出轨道形状。它们假定了半径确定的圆。球形的$s$轨道、双瓣的$p$轨道和四瓣的$d$轨道都是波函数的性质。$mvr = nh/2\pi$中没有任何东西能画出节面。
+
+第四，电子并不像经典粒子那样绕核运动。经典电荷在弯曲轨迹上会持续辐射，并在不到一秒的时间内螺旋落入原子核。而原子是稳定的。玻尔的第一条假设只是人为禁止了辐射，并没有解释稳定性。根本就不存在可供禁止的轨迹。角动量假设甚至对它本来要挽救的能级在数值上都不对：氢的基态轨道角动量为零而不是$\hbar$，这是波动理论的结果，而不是本章那些假设的结果。承认了这四点之后，玻尔留下的是里德伯公式、量子数$n$，以及一个警示：一幅图像可能出于错误的理由给出正确的能量。
+
+## 物质的波长
+
+1924年，德布罗意（de Broglie）提出，已经对光子成立的关系$p = h/\lambda$对每一种粒子都成立。动量为$p$的电子具有波长。
+
+::: definition 德布罗意波长 {#def-debroglie}
+动量为$p$的粒子具有波长
+$$
+\lambda = \frac{h}{p}.
+$$
+对于质量为$m$、速率为$v$的非相对论粒子，$p = mv$，$\lambda = h/(mv)$。对于动能$K$已知且远低于静能$511\ \mathrm{keV}$的电子，正确的代换是$p = \sqrt{2m_\mathrm{e} K}$。这里所用的电子质量为$m_\mathrm{e} = 9.1093837\times 10^{-31}\ \mathrm{kg}$。
+:::
+
+把这一思想用于玻尔的圆轨道，颇有启发，但仍不是事实。要求圆周上恰好容纳整数个波长，即$2\pi r = n\lambda$，再结合$\lambda = h/(m_\mathrm{e} v)$，恰好就是$m_\mathrm{e} vr = nh/2\pi$。德布罗意把角动量假设重新得出为一个驻波条件。这就是该假设之所以奏效的原因。但它并没有恢复圆轨道。环上的驻波不是三维的轨道，而角动量为零的基态根本没有可供驻立的环。
+
+::: example 一个电子与一粒沙子 {#ex-wave}
+比较以$2.190\times 10^{6}\ \mathrm{m\,s^{-1}}$运动的电子与以$1.00\ \mathrm{m\,s^{-1}}$运动的$1.00\times 10^{-3}\ \mathrm{kg}$颗粒的德布罗意波长。
+::: solution
+对电子，
+$$
+\lambda = \frac{6.62607015\times 10^{-34}}{(9.1093837\times 10^{-31})(2.190\times 10^{6})} = 3.321\times 10^{-10}\ \mathrm{m} = 332.1\ \mathrm{pm}.
+$$
+$332\ \mathrm{pm}$是化学尺度的长度：原子就是这么大，以这种速度运动的电子不可能被放在原子内的一条轨迹上而不显示出其波动性。所选的速度与玻尔基态圆轨道上的速度同一数量级；这一比较并不要求圆轨道是真实的。对宏观颗粒，
+$$
+\lambda = \frac{6.62607015\times 10^{-34}}{(1.00\times 10^{-3})(1.00)} = 6.626\times 10^{-31}\ \mathrm{m}.
+$$
+没有任何实验能分辨这样的长度。物质波解释了为什么电子能被晶体衍射，而板球不会在门口发生衍射。两者用的是同一个公式。
+:::
+:::
+
+## 量子数及其标记的形状
+
+取代轨道的理论是关于函数$\psi$的波动方程，$\psi$称为**波函数**。它的值不是可观测量。玻恩规则（本课使用而不推导）指出，$|\psi|^{2}$是找到电子的概率密度。保持有限且总概率为一的解，只对某些整数标记存在。这些标记就是量子数。学生们画的形状——球、哑铃、四叶草——是氢原子各个解的$|\psi|^{2}$的界面图。画出它们是允许的；推导它们则属于[[quantum-chemistry/hydrogen-atom]]。
+
+::: definition 四个量子数 {#def-qn}
+一个氢原子轨道由三个整数确定，轨道中的一个电子则还需第四个量子数。
+
+| 符号 | 名称 | 允许值 | 所确定的内容 |
+|---|---|---|---|
+| $n$ | 主量子数 | $1, 2, 3, \ldots$ | 氢中的能量$E_n$及整体大小 |
+| $l$ | 角量子数（轨道角动量量子数） | $0, 1, \ldots, n-1$ | 形状；$l = 0, 1, 2, 3$分别记为$s, p, d, f$ |
+| $m_l$ | 磁量子数 | $-l, -l+1, \ldots, +l$ | 形状的取向 |
+| $m_s$ | 自旋量子数 | $+\tfrac{1}{2}$或$-\tfrac{1}{2}$ | 电子的两种自旋状态 |
+
+主量子数为$n$的电子层中有$n^{2}$个轨道，因为$\sum_{l=0}^{n-1}(2l+1) = n^{2}$；计入自旋后有$2n^{2}$个电子状态。在氢中，并且只有在氢及其他单电子离子中，同一$n$的所有轨道能量相同。能量与$l$无关。
+:::
+
+最后这句话是通向元素周期表的枢纽。在任何含两个或更多电子的原子中，$n$相同而$l$不同的能级会分裂开来：$2s$低于$2p$，$3s$低于$3p$，$4s$降到$3d$能级之间。这种分裂是电子-电子效应。正因为如此，元素周期表才有$s$区、$p$区和$d$区，而不是长度为$2, 8, 18, 32$、首尾相接、没有内部结构的若干行；这是[[general-chemistry-1/periodicity]]的主题，之后还将在[[quantum-chemistry/many-electron-atoms]]中讨论。这一段中没有任何东西是玻尔轨道。玻尔只有$n$。
+
+::: definition 轨道形状与节点 {#def-orbital}
+**轨道**是单电子波函数，或者在图示中指包围了$|\psi|^{2}$大部分的一个曲面。它不是路径。$s$轨道（$l = 0$）呈球形，没有角节点。$p$轨道（$l = 1$）有两个符号相反的瓣，由一个通过原子核的节面隔开；$m_l$的三个取值对应三种取向，画作$p_x$、$p_y$和$p_z$。$d$轨道（$l = 2$）有四个瓣，或者是$d_{z^{2}}$那种两瓣加一个环的图样，有两个角节点。**角节点**数为$l$。**径向节点**（波函数在其上为零的球面）数为$n - l - 1$。节点总数为$n - 1$。
+:::
+
+节面两侧$\psi$的符号既不是电荷，也不是概率。概率是$|\psi|^{2}$，与符号无关。当两个轨道重叠成键时符号才有意义，那属于后续课程；在这里只需不要把某一瓣涂成"负电荷"。
+
+::: example 合法的量子数与节点计数 {#ex-qn}
+$(n, l, m_l, m_s) = (3, 2, -1, +\tfrac12)$、$(2, 2, 1, -\tfrac12)$、$(3, 1, -1, +\tfrac12)$和$(1, 0, 0, 1)$中，哪些可以标记氢中的一个电子？对其中每个允许的轨道，给出径向节点数和角节点数。
+::: solution
+$(3, 2, -1, +\tfrac12)$是允许的：$l = 2 \le 3-1$，$m_l = -1$位于$-2, \ldots, +2$之内，自旋是两个合法值之一。它是一个$3d$电子。径向节点：$3 - 2 - 1 = 0$。角节点：$2$。
+
+$(2, 2, 1, -\tfrac12)$是禁止的。对$n = 2$，$l$最大为$1$。不存在$2d$轨道。
+
+$(3, 1, -1, +\tfrac12)$是允许的：一个$3p$电子。径向节点：$3 - 1 - 1 = 1$。角节点：$1$，即隔开两个瓣的那个平面。
+
+$(1, 0, 0, 1)$是禁止的。自旋为$+\tfrac12$或$-\tfrac12$，绝不会是$1$。其轨道部分$(1, 0, 0)$本应是$1s$轨道，两种节点都没有。
+
+一组量子数是已经通过了波动方程边界条件检验的标记。编造一个$2d$电子不是记号上的小失误；它是在要求一个该方程并不存在的解。
+:::
+:::
+
+::: quiz
+关于玻尔模型和轨道图像，下列哪种说法是正确的？
+- [x] 玻尔的能量重现了氢的里德伯公式，但电子没有经典轨道，而且这些假设给不出$s$、$p$和$d$的形状。
+- [ ] 该模型对氢失效，对多电子原子却适用，因为额外的电子使轨道稳定。
+- [ ] 基态电子以角动量$\hbar$绕质子作圆周运动，这个圆就是$1s$轨道。
+- [ ] 把光谱灯的强度加倍，会使氢的每条谱线移向更高的频率。
+::: solution
+里德伯公式是成功之处；轨道、形状和多电子原子是失败之处。基态的轨道角动量为零，所以它不是满足$mvr = \hbar$的圆，而$1s$轨道是概率分布，不是把那个圆重新画一遍。强度改变的是谱线的亮度，而不是能级差所要求的频率。
+:::
+:::
+
+::: history 四个数与一条虚假的轨道 {#hist-quantum}
+巴耳末1885年的公式用一个整数步长、完全不借助理论拟合了氢的四条可见谱线。到1888年，里德伯已写出了一般的平方倒数之差。普朗克1900年的论文为空腔壁上振子的能量引入了$h$；它还没有说光以粒子形式传播。爱因斯坦1905年对光电效应的解释说了这一点。玻尔1913年的模型由电子的电荷、质量和普朗克常量$h$推出了里德伯常量，此后几年里圆轨道看起来就是原子本身。德布罗意1924年的博士论文为轨道的角动量规则给出了波动解释$\lambda = h/p$。薛定谔（Schrödinger）1926年的方程在同一年对氢求解，重现了玻尔的能量，把基态角动量定为零，并用$\psi$取代了圆。本章中的形状以及量子数$l$和$m_l$就是这个解，只是没有给出方程。该方程见[[quantum-chemistry/hydrogen-atom]]。
+:::
+
+## 后续内容
+
+量子数在被电子填充之前只是一套标记方案。填充的顺序、把每个轨道限制为两个电子的不相容原理，以及原子大小和电离能的周期趋势，见[[general-chemistry-1/periodicity]]。本课有意没有做的推导——氢原子在球坐标中的分离变量、径向方程、$n$、$l$和$m_l$的真正来源——见[[quantum-chemistry/hydrogen-atom]]。多电子原子为什么不是氢能级的简单叠加，以及$4s$和$3d$为什么靠得如此之近以致铬和铜出现反常，见[[quantum-chemistry/many-electron-atoms]]。由$hcR_\mathrm{H}$算出的电离能是[[general-chemistry-1/thermochemistry]]中焓账目的微观一端：$1312\ \mathrm{kJ\,mol^{-1}}$是$\mathrm{H(g)} \rightarrow \mathrm{H^{+}(g)} + \mathrm{e^{-}}$的反应焓，是从光谱上读出来的。
+
 ::: summary
-- Electromagnetic radiation
-- photons
-- atomic spectra
-- Electromagnetic radiation, photons, atomic spectra, the Bohr model, wave–particle duality, quantum numbers and orbitals
+- $c = \lambda\nu$，一个光子携带$E = h\nu = hc/\lambda$。强度计量光子数；频率决定每个光子的能量。
+- 氢的每条谱线都服从$1/\lambda = R_\mathrm{H}(1/n_1^{2} - 1/n_2^{2})$，$R_\mathrm{H} = 1.096776\times 10^{7}\ \mathrm{m^{-1}}$。巴耳末系的可见谱线是$n = 3, 4, 5, 6 \to 2$，真空波长分别为$656.47$、$486.27$、$434.17$和$410.29\ \mathrm{nm}$。
+- 玻尔能级$E_n = -hcR_\mathrm{H}/n^{2}$重现了该公式，乘以因子$Z^{2}$后可近似描述单电子离子。基态电离能为$1312\ \mathrm{kJ\,mol^{-1}}$，即$13.60\ \mathrm{eV}$。
+- 该模型对多电子原子失效，给不出轨道形状，并把电子当作在轨道上运动的经典粒子。电子没有这样的轨道；经典轨道会辐射并坍缩。
+- $\lambda = h/p$赋予物质以波长。对原子中的电子，这一波长在化学尺度上是大的；对宏观质量则可以忽略。让圆周容纳整数个波长可以重新得到玻尔的角动量规则，但并不使圆轨道成为真实。
+- 轨道由$n$、$l$、$m_l$标记，电子还有$m_s = \pm\tfrac12$。角节点数：$l$。径向节点数：$n - l - 1$。在氢中能量只取决于$n$；在其他原子中还取决于$l$，元素周期表正是由此而来。
+- 轨道是单个电子的概率分布，既不是容器，也不是轨迹。确定它的方程不在本章范围内。
 :::
-::: history
-- 1662 (Boyle's law)
-- 1787 (Charles's law of volumes)
-- 1789 (Lavoisier's Traité and conservation of mass)
-- 1808 (Dalton's atomic theory)
-:::
-## Exercises
-::: exercise {level=1}
-Exercise 1: apply the methods of Light and the quantum atom.
+
+## 习题
+
+::: exercise 绿光，每摩尔 {level=1 check="239.3"}
+计算一摩尔波长为$500.0\ \mathrm{nm}$的光子的能量（以$\mathrm{kJ\,mol^{-1}}$计）。使用$h = 6.62607015\times 10^{-34}\ \mathrm{J\,s}$，$c = 2.99792458\times 10^{8}\ \mathrm{m\,s^{-1}}$和$N_\mathrm{A} = 6.02214076\times 10^{23}\ \mathrm{mol^{-1}}$。以$\mathrm{kJ\,mol^{-1}}$为单位填写能量。
 ::: solution
-Solution 1.
+$$
+E = \frac{hc}{\lambda} = \frac{(6.62607015\times 10^{-34})(2.99792458\times 10^{8})}{500.0\times 10^{-9}} = 3.973\times 10^{-19}\ \mathrm{J}.
+$$
+$$
+E_\mathrm{m} = N_\mathrm{A} E / 1000 = 239.3\ \mathrm{kJ\,mol^{-1}}.
+$$
+保留四位有效数字，与$500.0\ \mathrm{nm}$相一致。这比[[#ex-photon]]中$450.0\ \mathrm{nm}$光子的$265.8\ \mathrm{kJ\,mol^{-1}}$小：波长越长，量子越小。
 :::
-::: exercise {level=1}
-Exercise 2: apply the methods of Light and the quantum atom.
-::: solution
-Solution 2.
 :::
-::: exercise {level=1}
-Exercise 3: apply the methods of Light and the quantum atom.
+
+::: exercise 氢的红色谱线 {level=1 check="656.47"}
+用$R_\mathrm{H} = 1.096776\times 10^{7}\ \mathrm{m^{-1}}$计算从$n = 3$到$n = 2$的巴耳末谱线的真空波长。以$\mathrm{nm}$为单位填写波长。
 ::: solution
-Solution 3.
+$$
+\frac{1}{\lambda} = R_\mathrm{H}\left(\frac{1}{2^{2}} - \frac{1}{3^{2}}\right) = R_\mathrm{H}\left(\frac{1}{4} - \frac{1}{9}\right) = R_\mathrm{H}\times \frac{5}{36} = 1.52330\times 10^{6}\ \mathrm{m^{-1}},
+$$
+$$
+\lambda = 656.47\ \mathrm{nm}.
+$$
+红色，是该线系中波长最长的可见谱线。$656.3\ \mathrm{nm}$附近的空气波长是同一条谱线经光谱仪中空气折射后的值；里德伯公式本身给出的是真空值。
 :::
-::: exercise {level=2}
-Exercise 4: apply the methods of Light and the quantum atom.
-::: solution
-Solution 4.
 :::
-::: exercise {level=2}
-Exercise 5: apply the methods of Light and the quantum atom.
+
+::: exercise $n = 2$中有多少个状态 {level=1 check="8"}
+列出$n = 2$电子层的轨道，以及计入自旋后的电子状态数。填写电子状态数。
 ::: solution
-Solution 5.
+对$n = 2$，$l$为$0$或$1$。$l = 0$亚层是一个$2s$轨道。$l = 1$亚层是三个$2p$轨道，$m_l = -1, 0, +1$。共有$1 + 3 = 4 = n^{2}$个轨道。每个轨道容纳两种自旋，所以有$8$个电子状态。同样的计数是$2n^{2} = 8$。没有$2d$的贡献：$l$止于$n - 1$。
 :::
-::: exercise {level=2}
-Exercise 6: apply the methods of Light and the quantum atom.
-::: solution
-Solution 6.
 :::
-::: exercise {level=3}
-Exercise 7: apply the methods of Light and the quantum atom.
+
+::: exercise 铯与紫光灯 {level=2 check="1.15"}
+铯的逸出功为$\phi = 1.95\ \mathrm{eV}$（教科书典型值），$1\ \mathrm{eV} = 1.602176634\times 10^{-19}\ \mathrm{J}$。用波长为$400.0\ \mathrm{nm}$的灯照射该金属。填写被打出电子的最大动能（以$\mathrm{eV}$计）。
 ::: solution
-Solution 7.
+光子能量为
+$$
+E = \frac{hc}{400.0\times 10^{-9}} = 4.966\times 10^{-19}\ \mathrm{J} = \frac{4.966\times 10^{-19}}{1.602176634\times 10^{-19}} = 3.100\ \mathrm{eV}.
+$$
+爱因斯坦方程给出$K_\mathrm{max} = 3.100 - 1.95 = 1.15\ \mathrm{eV}$。逸出功把精度限制在百分之一电子伏特。该表面的阈波长为$hc/\phi = 636\ \mathrm{nm}$，所以$700\ \mathrm{nm}$的灯（$1.77\ \mathrm{eV}$）无论调得多亮都打不出电子。亮度改变的是$400\ \mathrm{nm}$下电子的数目，而不是$1.15\ \mathrm{eV}$。
 :::
-::: exercise {level=3}
-Exercise 8: apply the methods of Light and the quantum atom.
+:::
+
+::: exercise 一百电子伏特的电子 {level=2 check="122.6"}
+用$m_\mathrm{e} = 9.1093837\times 10^{-31}\ \mathrm{kg}$和非相对论动量，求动能为$100.0\ \mathrm{eV}$的电子的德布罗意波长。以$\mathrm{pm}$为单位填写波长。
 ::: solution
-Solution 8.
+$$
+K = (100.0)(1.602176634\times 10^{-19}) = 1.602\times 10^{-17}\ \mathrm{J},
+$$
+$$
+p = \sqrt{2m_\mathrm{e} K} = 5.403\times 10^{-24}\ \mathrm{kg\,m\,s^{-1}},
+$$
+$$
+\lambda = \frac{h}{p} = 1.226\times 10^{-10}\ \mathrm{m} = 122.6\ \mathrm{pm}.
+$$
+一百电子伏特只是电子静能的万分之几，所以在这样的有效数字下舍去动量的相对论表达式无伤大雅。这一波长仍是原子尺度的：这种能量的电子会被晶面衍射。把同样的动能给质量约为其两千倍的质子，$\lambda$约缩小为原来的$1/\sqrt{1836}$。
+:::
+:::
+
+::: exercise 蓝绿谱线的能量 {level=2 check="246.0"}
+计算氢原子从$n = 4$落到$n = 2$时所发射光子的能量（以$\mathrm{kJ\,mol^{-1}}$计）。填写该摩尔能量。
+::: solution
+$$
+\frac{1}{\lambda} = R_\mathrm{H}\left(\frac{1}{4} - \frac{1}{16}\right) = R_\mathrm{H}\times \frac{3}{16} = 2.05646\times 10^{6}\ \mathrm{m^{-1}}.
+$$
+一摩尔这种光子的能量为$N_\mathrm{A} hc/\lambda$：
+$$
+E_\mathrm{m} = (6.02214076\times 10^{23})(6.62607015\times 10^{-34})(2.99792458\times 10^{8})(2.05646\times 10^{6})/10^{3} = 246.0\ \mathrm{kJ\,mol^{-1}}.
+$$
+等价地，能级差为$1312\,(1/4 - 1/16) = 1312\times 0.1875 = 246.0\ \mathrm{kJ\,mol^{-1}}$。这两条途径就是把[[#prop-bohr]]的证明当作算术来读。波长为$486.27\ \mathrm{nm}$，蓝绿色。
+:::
+:::
+
+::: exercise 从能级到线系极限 {level=3 check="364.71"}
+从$E_n = -hc R_\mathrm{H}/n^{2}$和光子的$E = hc/\lambda$出发，推导里德伯公式，然后计算巴耳末线系极限。以$\mathrm{nm}$为单位填写极限波长。
+::: solution
+从$n_2$到$n_1$的发射释放
+$$
+E_{n_2} - E_{n_1} = hc R_\mathrm{H}\left(\frac{1}{n_1^{2}} - \frac{1}{n_2^{2}}\right),
+$$
+令其等于$hc/\lambda$，消去$hc$，得到$1/\lambda = R_\mathrm{H}(1/n_1^{2} - 1/n_2^{2})$。这一步论证中没有用到圆轨道的任何性质：只用到了能级公式和光子。巴耳末极限对应$n_1 = 2$、$n_2 \to \infty$，
+$$
+\lambda = \frac{n_1^{2}}{R_\mathrm{H}} = \frac{4}{1.096776\times 10^{7}} = 3.6471\times 10^{-7}\ \mathrm{m} = 364.71\ \mathrm{nm}.
+$$
+在比这更短的波长下，激发到$n = 2$的氢原子会被电离，而不是被提升到更高的束缚能级。这一推导也就是玻尔做对之处的清单。它对形状、多电子原子以及是否有东西在绕核运动都只字未提。
+:::
+:::
+
+::: exercise 单电子氦与模型的边界 {level=3 check="30.39"}
+用$E_n = -Z^{2} hc R_\mathrm{H}/n^{2}$（取氢的$R_\mathrm{H}$），预测$\mathrm{He^{+}}$的$n = 2 \to 1$谱线的真空波长。以$\mathrm{nm}$为单位填写。然后各用一句话说明：为什么这个数值与光谱实测谱线并不完全相同，以及为什么同一公式不能用于中性氦。
+::: solution
+$Z = 2$，该跃迁是按$Z^{2} = 4$放大的莱曼-$\alpha$模式：
+$$
+\frac{1}{\lambda} = 4 R_\mathrm{H}\left(1 - \frac{1}{4}\right) = 3 R_\mathrm{H}, \qquad \lambda = \frac{1}{3\times 1.096776\times 10^{7}} = 30.39\ \mathrm{nm}.
+$$
+预测的谱线位于远紫外区，是氢的莱曼-$\alpha$波长$121.57\ \mathrm{nm}$的四分之一，因为$Z^{2}$和因子$(1 - 1/4)$都已用上：$4 \times \tfrac34 = 3$，所以波长是$1/R_\mathrm{H}$的$1/3$，而不是$1/4$。这个数值与真实谱线不完全相同，是因为$R_\mathrm{H}$中包含电子-质子体系的约化质量。$\mathrm{He^{+}}$的核重将近四倍，约化质量更接近$m_\mathrm{e}$，真实的常数比$R_\mathrm{H}$略大，所以真实波长略短。中性氦是双电子原子。电子之间相互排斥，能级不是$-Z^{2} hc R_\mathrm{H}/n^{2}$，而玻尔的假设对这种排斥无话可说。这就是多电子失败的最小例子。
+:::
+:::
+
+::: exercise 哪些谱线可见？ {level=3 check="2"}
+处于$n = 4$能级的氢原子，通过能级允许的每一种向下跃迁（包括中途停留）回到基态。可能出现多少条不同的谱线？其中有多少条的真空波长在$400$至$700\ \mathrm{nm}$之间？填写可见谱线的条数。
+::: hint
+谱线条数就是满足$n_\mathrm{upper} > n_\mathrm{lower}$且二者都在$1$至$4$之间的数对个数。只对那些无法直接判定属于紫外区或红外区线系的数对计算波长。
+:::
+::: solution
+数对为$4\to 3$、$4\to 2$、$4\to 1$、$3\to 2$、$3\to 1$和$2\to 1$：共六条谱线。莱曼跃迁（$n_1 = 1$）都在紫外区：$2\to 1$为$121.57\ \mathrm{nm}$，$3\to 1$为$102.57\ \mathrm{nm}$，$4\to 1$为$97.25\ \mathrm{nm}$。跃迁$4\to 3$是一条帕邢谱线，
+$$
+\frac{1}{\lambda} = R_\mathrm{H}\left(\frac{1}{9} - \frac{1}{16}\right), \qquad \lambda = 1875.6\ \mathrm{nm},
+$$
+位于红外区。两个巴耳末跃迁是$656.47\ \mathrm{nm}$的$3\to 2$和$486.27\ \mathrm{nm}$的$4\to 2$，都在可见窗口内。所以六条谱线中有两条可见。放电管看起来呈粉红色，是因为这两条谱线，加上来自更高能级的较弱的紫色巴耳末谱线，主导了人眼所能看到的部分；原子光谱的大部分是看不见的。
+:::
 :::

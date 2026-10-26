@@ -1,108 +1,407 @@
-## The gas laws
-::: definition {#gases-d1}
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Gas Laws is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+在寒冷的早晨给自行车轮胎打气，下午在阳光下骑行：轮胎变硬了，尽管并没有往里加任何东西。挤压一支密封的装有空气的注射器，推得越深，它的反推力越大。把同一支注射器放进冰箱冷冻室，活塞会慢慢缩进去。每一个这样的观察都涉及同样四个量——压力、体积、温度和气体的物质的量——而令人惊讶的是，它们之间的关系几乎与轮胎里是*哪种*气体无关。空气、氢气、氦气和二氧化碳在普通条件下的行为完全相同，误差不超过百分之几。固体和液体的密度是物质的性质；气体的密度则主要是条件的性质。
+
+本章把这一共同行为表述为理想气体状态方程$pV = nRT$，然后追问它为何成立。答案是气体分子动理论，它把气体描绘为一群作快速无规则运动的微小粒子，把压力归结为分子碰撞，把温度归结为分子动能。最后我们将看到这幅图像在哪里失效——在高压和低温下，真实分子占据空间并相互吸引——以及范德华如何修补了它。在此过程中，气体方程与[[general-chemistry-1/stoichiometry]]中的化学计量结合起来：气体的物质的量变成了你可以在注射器上读出的体积。
+
+全章使用的常数为$R = 8.314\ \mathrm{J\,K^{-1}\,mol^{-1}}$，它也等于$8.314\ \mathrm{kPa\,dm^3\,K^{-1}\,mol^{-1}}$和$0.08314\ \mathrm{bar\,dm^3\,K^{-1}\,mol^{-1}}$。每个气体公式中的温度都是以开尔文计的热力学温度，$T/\mathrm{K} = \theta/^\circ\mathrm{C} + 273.15$，与[[general-chemistry-1/matter-measurement]]中相同。
+
+## 压力
+
+气体充满其容器，并推压每一面器壁。单位面积上的推力就是压力。
+
+::: definition 压力及其单位 {#def-pressure}
+气体对某一表面施加的**压力**$p$是垂直于该表面的力除以其面积，
+
+$$
+p = \frac{F}{A}.
+$$
+
+SI 单位是帕斯卡，$1\ \mathrm{Pa} = 1\ \mathrm{N\,m^{-2}}$。其他常用单位有
+
+| 单位 | 以帕斯卡计的值 | 地位 |
+|---|---|---|
+| 巴，bar | 恰好$10^{5}\ \mathrm{Pa}$ | 标准压力$p^\circ = 1\ \mathrm{bar}$ |
+| 标准大气压，atm | 恰好$101\,325\ \mathrm{Pa}$ | 旧的标准 |
+| 托，Torr | $101\,325/760\ \mathrm{Pa} \approx 133.322\ \mathrm{Pa}$ | $1\ \mathrm{atm} = 760\ \mathrm{Torr}$ |
+| 毫米汞柱，mmHg | $133.322\ \mathrm{Pa}$ | 与托相差在$10^{-6}$以内 |
+
+就化学用途而言，千帕是一个方便的大小：海平面的大气压约为$101\ \mathrm{kPa}$。
 :::
-## the ideal gas equation
-::: definition {#gases-d2}
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-The Ideal Gas Equation is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+
+旧单位来自最早测量大气压的仪器。把一根顶端封闭、装满汞的玻璃管倒立在一盘汞中。汞柱下降，直到其单位面积上的重量等于大气对敞口汞盘的压力，在汞柱上方留下近乎真空的空间。高度为$h$、密度为$\rho$的液柱在其底部产生$p = \rho g h$的压力，因为液柱的重量$\rho A h g$分布在面积$A$上。取$\rho = 13.5951\ \mathrm{g\,cm^{-3}} = 13\,595.1\ \mathrm{kg\,m^{-3}}$（$0\ ^\circ\mathrm{C}$的汞）和$g = 9.80665\ \mathrm{m\,s^{-2}}$，$0.760\ \mathrm{m}$的汞柱给出
+
+$$
+p = 13\,595.1 \times 9.80665 \times 0.760\ \mathrm{Pa} = 101\,325\ \mathrm{Pa},
+$$
+
+大气压与$760\ \mathrm{mmHg}$就是这样联系起来的。使用汞是因为它密度大；水气压计需要十多米高的水柱。汞也有毒，危险来自其蒸气，因此汞制仪器已大多被电子传感器取代。
+
+## 经验气体定律
+
+人们分别发现了三个实验关系，每个关系都保持四个变量中的两个固定。
+
+::: proposition 玻意耳定律、查理定律与阿伏加德罗定律 {#prop-gas-laws}
+对于低压下的气体：
+
+- **玻意耳定律。** 在温度和物质的量固定时，体积与压力成反比：$pV = \text{常数}$，所以$p_1V_1 = p_2V_2$。
+- **查理定律。** 在压力和物质的量固定时，体积与热力学温度成正比：$V/T = \text{常数}$，所以$V_1/T_1 = V_2/T_2$。体积固定时相应的定律$p/T = \text{常数}$常归功于盖-吕萨克（Gay-Lussac）（或阿蒙东，Amontons）。
+- **阿伏加德罗定律。** 在温度和压力固定时，体积与气体的物质的量成正比：$V/n = \text{常数}$，且对每种气体都是同一个常数。在相同温度和压力下，相同体积的气体含有相同数目的分子。
+
+这些是**极限定律**：压力越低，它们越精确；每种真实气体在高压下或接近其凝聚温度时都会偏离它们。
 :::
-## partial pressures
-::: definition {#gases-d3}
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
-Partial Pressures is one of the three core topics of the chapter Gases. The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+
+查理定律有一个引人注目的推论。在恒压下把气体体积对摄氏温度作图，将直线向下外推，无论从哪种气体出发，都在约$-273\ ^\circ\mathrm{C}$处达到零体积。没有任何气体真正达到零体积——每种气体都会先凝聚——但这个共同的截距定义了一个自然的温度零点。开尔文温标把零点放在那里，这就是只有当$T$以开尔文计时气体定律才是正比关系的原因。用摄氏温度，把“$20\ ^\circ\mathrm{C}$”加倍到“$40\ ^\circ\mathrm{C}$”只使体积增大$20/293.15$，约$7\%$。
+
+## 理想气体状态方程
+
+三个定律合并为一个状态方程。
+
+::: proposition 理想气体状态方程 {#prop-ideal-gas}
+对于压力为$p$、体积为$V$、热力学温度为$T$、物质的量为$n$的气体，
+
+$$
+pV = nRT,
+$$ {#eq-ideal}
+
+其中$R = 8.314\ \mathrm{J\,K^{-1}\,mol^{-1}}$是摩尔气体常数。在所有条件下都严格服从这一方程的气体是**完美气体**或**理想气体**。真实气体在$p \to 0$的极限下服从它；常见气体在室温附近和$1\ \mathrm{bar}$下服从它的误差约在百分之一以内。对于一定量的气体，它给出**组合气体定律**$p_1V_1/T_1 = p_2V_2/T_2$。
 :::
-## Review
-::: widget graph
-nodes: The gas laws, the ideal gas equation, partial pressures, review
-edges: The gas laws, the ideal gas equation, partial pressures, review
-caption: Gases concept map
+
+::: proof 合并三个定律
+玻意耳定律说，在$T$和$n$固定时$V \propto 1/p$；查理定律说，在$p$和$n$固定时$V \propto T$；阿伏加德罗定律说，在$p$和$T$固定时$V \propto n$。一个分别与$1/p$、$T$和$n$成正比的三元函数必然具有如下形式
+
+$$
+V = (\text{常数}) \times \frac{nT}{p}.
+$$
+
+要看清这一点，从参考状态$(p_0, T_0, n_0, V_0)$出发，一次改变一个变量：改变$p$使$V$乘以$p_0/p$，再改变$T$使它乘以$T/T_0$，再改变$n$使它乘以$n/n_0$，所以$V = V_0\,(p_0/p)(T/T_0)(n/n_0) = (p_0V_0/n_0T_0)\,nT/p$。阿伏加德罗定律说，在给定的$p_0$、$T_0$和$n_0$下，$V_0$对每种气体都相同，所以常数$p_0V_0/(n_0T_0)$是普适的。把它记为$R$，就得到$pV = nRT$。其值由测量确定：在低压极限下，一摩尔气体在$273.15\ \mathrm{K}$和$100\ \mathrm{kPa}$下占据$22.71\ \mathrm{dm^3}$，于是$R = (10^{5}\ \mathrm{Pa})(22.71\times 10^{-3}\ \mathrm{m^3})/(1\ \mathrm{mol} \times 273.15\ \mathrm{K}) = 8.314\ \mathrm{J\,K^{-1}\,mol^{-1}}$。对于一定量的气体，$pV/T = nR$为常数，这就是组合气体定律。
 :::
-::: widget stats
+
+**摩尔体积**$V_\mathrm{m} = V/n = RT/p$在给定温度和压力下对每种理想气体都相同。常用的参考条件有两种，绝不能混淆。按 IUPAC 现行定义，*标准温度和压力*（STP）为$273.15\ \mathrm{K}$和$10^{5}\ \mathrm{Pa}$，此时$V_\mathrm{m} = 22.71\ \mathrm{dm^3\,mol^{-1}}$。*标准环境温度和压力*（SATP）为$298.15\ \mathrm{K}$和$1\ \mathrm{bar}$，此时$V_\mathrm{m} = 24.79\ \mathrm{dm^3\,mol^{-1}}$。许多较早的书把 STP 定义为$1\ \mathrm{atm}$，得到$22.41\ \mathrm{dm^3\,mol^{-1}}$。当一道题给出摩尔体积时，要核对它对应的是哪种条件。
+
+::: example 压缩并加热一个样品 {#ex-combined}
+一支注射器在$25.0\ ^\circ\mathrm{C}$和$1.000\ \mathrm{bar}$下装有$500.0\ \mathrm{cm^3}$空气。将其密封，压缩到$200.0\ \mathrm{cm^3}$，并加热到$100.0\ ^\circ\mathrm{C}$。假定为理想行为，求最终压力。
+::: solution
+气体的物质的量固定，所以适用组合气体定律：$p_2 = p_1 (V_1/V_2)(T_2/T_1)$。先把两个温度都换算为开尔文：$T_1 = 298.15\ \mathrm{K}$，$T_2 = 373.15\ \mathrm{K}$。于是
+
+$$
+p_2 = 1.000\ \mathrm{bar} \times \frac{500.0}{200.0} \times \frac{373.15}{298.15} = 1.000 \times 2.500 \times 1.2516\ \mathrm{bar} = 3.129\ \mathrm{bar}.
+$$
+
+体积只以比值出现，所以立方厘米不需要换算。温度却不能以摄氏温度之比代入：用$100.0/25.0 = 4$会预测出$10.0\ \mathrm{bar}$，比实际大三倍多。仅压缩就使压力乘以$2.5$，加热又使其再乘以$1.25$。注射器和玻璃器皿不是压力容器；这是一个计算，而不是一个可以去尝试的实验。
 :::
-::: widget quiz
 :::
-::: summary
-- The gas laws
-- the ideal gas equation
-- partial pressures
-- The gas laws, the ideal gas equation, partial pressures, the kinetic theory of gases and the behaviour of real gases
+
+::: widget plot
+f: 8.314*t/x; 8.314*t/(x - 0.04267) - 364.0/x^2
+x: 0.05, 1
+y: 0, 20000
+sliders: t=300:200:600:5
+labels: \text{理想气体}; \text{范德华方程，}\mathrm{CO_2}
+caption: 一摩尔气体的等温线：在温度$t$（开尔文，滑块）下，压力$p$（千帕）对体积$V$（立方分米）作图。第一条曲线是理想气体$p = RT/V$，一条等轴双曲线（玻意耳定律）。第二条是用二氧化碳常数的范德华方程（见[[#prop-vdw]]）。体积大时两者一致；体积小时，由于吸引作用，真实气体低于理想气体。把温度降到约$304\ \mathrm{K}$以下，范德华曲线会出现一段起伏：那正是真实二氧化碳凝聚为液体的区域，而理想气体永远不会凝聚。
 :::
+
+理想气体状态方程也是求摩尔质量的一种方法。把$n = m/M$和密度$\rho = m/V$代入$pV = nRT$，得到
+
+$$
+M = \frac{\rho RT}{p},
+$$
+
+所以在已知温度和压力下测量气体的密度，就能在不知道化学式的情况下得到其摩尔质量。历史上，这是得出分子式的主要途径之一。
+
+::: example 由气体密度求摩尔质量 {#ex-density}
+某气体在$0\ ^\circ\mathrm{C}$和$101.325\ \mathrm{kPa}$下的密度为$1.250\ \mathrm{g\,dm^{-3}}$。求其摩尔质量，并推测它可能是什么。
+::: solution
+取$T = 273.15\ \mathrm{K}$，$R = 8.314\ \mathrm{kPa\,dm^3\,K^{-1}\,mol^{-1}}$，
+
+$$
+M = \frac{\rho RT}{p} = \frac{1.250\ \mathrm{g\,dm^{-3}} \times 8.314\ \mathrm{kPa\,dm^3\,K^{-1}\,mol^{-1}} \times 273.15\ \mathrm{K}}{101.325\ \mathrm{kPa}} = 28.02\ \mathrm{g\,mol^{-1}}.
+$$
+
+单位约简为$\mathrm{g\,mol^{-1}}$，这说明所用的$R$是正确的。氮气（$28.014$）、一氧化碳（$28.010$）和乙烯（$28.054\ \mathrm{g\,mol^{-1}}$）都符合；仅凭四位有效数字的密度无法区分氮气和一氧化碳。最终的鉴定须靠化学检验或光谱。
+:::
+:::
+
+### 化学计量中的气体
+
+除了$n = m/M$和$n = cV$之外，理想气体状态方程增加了第三种求物质的量的方法：对于气体，$n = pV/(RT)$。涉及气体的化学计量计算只需在通常那条链的开头或结尾使用它。
+
+::: example 锌产生的氢气的体积 {#ex-hydrogen}
+在[[general-chemistry-1/stoichiometry]]的一道习题中，盐酸是$\mathrm{Zn(s) + 2\,HCl(aq) \rightarrow ZnCl_2(aq) + H_2(g)}$中的限量反应物，生成了$0.0250\ \mathrm{mol}$氢气。这些氢气在$25.0\ ^\circ\mathrm{C}$和$1.000\ \mathrm{bar}$下占据多大体积？如果改为在$25.0\ ^\circ\mathrm{C}$下用排水法收集，管内总压为$101.3\ \mathrm{kPa}$，收集到$250.0\ \mathrm{cm^3}$，那么收集到的氢气的物质的量是多少？$25.0\ ^\circ\mathrm{C}$下水的蒸气压为$3.17\ \mathrm{kPa}$。
+::: solution
+对于干燥气体，$V = nRT/p = 0.0250 \times 8.314 \times 298.15/100.0\ \mathrm{dm^3} = 0.620\ \mathrm{dm^3}$，这里用$p = 1.000\ \mathrm{bar} = 100.0\ \mathrm{kPa}$和千帕形式的$R$。即$620\ \mathrm{cm^3}$；由摩尔体积也得到同样的答案：$0.0250 \times 24.79\ \mathrm{dm^3}$。
+
+排水法收集的气体不是纯氢气。它被水蒸气饱和，测得的总压是两个分压之和（道尔顿定律，下文定义）。氢气所占的部分为$p(\mathrm{H_2}) = 101.3 - 3.17 = 98.13\ \mathrm{kPa}$。于是
+
+$$
+n(\mathrm{H_2}) = \frac{p(\mathrm{H_2})V}{RT} = \frac{98.13\ \mathrm{kPa} \times 0.2500\ \mathrm{dm^3}}{8.314\ \mathrm{kPa\,dm^3\,K^{-1}\,mol^{-1}} \times 298.15\ \mathrm{K}} = 9.90\times 10^{-3}\ \mathrm{mol}.
+$$
+
+忽略水蒸气会得到$1.02\times 10^{-2}\ \mathrm{mol}$，误差约$3\%$——超过了测量的精度。氢气极易燃，并能与空气形成爆炸性混合物；产生和收集氢气是需要有人指导并进行风险评估的实验，这里的数字不是操作步骤。
+:::
+:::
+
+## 气体混合物：分压
+
+在理想气体混合物中，每个组分的行为都如同它单独处于容器中。空气是日常的例子：在干燥大气中，按物质的量计约$78.08\%$氮、$20.95\%$氧和$0.93\%$氩，还有微量的二氧化碳和其他气体。
+
+::: definition 分压与道尔顿定律 {#def-partial}
+混合物中组分$\mathrm{J}$的**摩尔分数**为$x_\mathrm{J} = n_\mathrm{J}/n$，其中$n$是总物质的量；各摩尔分数之和为$1$。$\mathrm{J}$的**分压**为
+
+$$
+p_\mathrm{J} = x_\mathrm{J}\,p,
+$$
+
+其中$p$是总压。**道尔顿定律**指出：对于理想气体混合物，每个组分的分压等于它单独占据整个体积时所产生的压力，$p_\mathrm{J} = n_\mathrm{J}RT/V$，且总压等于各分压之和，$p = p_\mathrm{A} + p_\mathrm{B} + \cdots$。定义$p_\mathrm{J} = x_\mathrm{J}p$适用于任何混合物；而$p_\mathrm{J}$等于$\mathrm{J}$单独存在时的压力这一陈述只对理想气体严格成立。
+:::
+
+这两个陈述都可由理想气体状态方程推出，而该方程并不在乎分子是什么：总压为$nRT/V = (n_\mathrm{A} + n_\mathrm{B} + \cdots)RT/V$，其中每一项就是一个组分单独产生的压力。对于$101.325\ \mathrm{kPa}$的干燥空气，氧的分压为$0.2095 \times 101.325 = 21.2\ \mathrm{kPa}$。决定氧溶于血液或水中快慢的是这个数，而不是百分数。在高山顶上，氧的百分数相同，但总压低得多，分压也随之低得多。
+
+## 气体分子动理论
+
+为什么每种气体都服从同一个定律？分子动理论模型用一幅有意粗略的气体图像来回答。
+
+::: definition 气体的分子动理论模型 {#def-kinetic}
+**分子动理论模型**假定：
+
+1. 气体由质量为$m$、作不停息的无规则运动的分子组成；
+2. 与分子间的平均距离相比，分子本身的大小可以忽略；
+3. 分子之间除了彼此之间以及与器壁之间的短暂碰撞外没有相互作用，并且这些碰撞是弹性的（总平动动能守恒）。
+
+**方均根速率**为$u_\mathrm{rms} = \sqrt{\langle u^2\rangle}$，即速率平方的平均值的平方根。
+:::
+
+::: proposition 由分子运动求压力 {#prop-kinetic}
+对于体积$V$中质量为$m$的$N$个分子，分子动理论模型给出
+
+$$
+pV = \tfrac{1}{3} N m \langle u^2\rangle.
+$$ {#eq-kinetic}
+
+与$pV = nRT$比较，并写出$N = nN_\mathrm{A}$和$M = mN_\mathrm{A}$，每摩尔的平均平动动能为$\tfrac{1}{2}M\langle u^2\rangle = \tfrac{3}{2}RT$，且
+
+$$
+u_\mathrm{rms} = \sqrt{\frac{3RT}{M}},
+$$
+
+其中$M$以$\mathrm{kg\,mol^{-1}}$计。温度是分子平均平动动能的量度，而这一能量只取决于温度，与气体的种类无关。
+:::
+
+::: proof
+把气体放在边长为$L$的立方体盒中，于是$V = L^{3}$。追踪一个速度分量为$(u_x, u_y, u_z)$的分子。当它撞击垂直于$x$轴的器壁时，弹性碰撞使$u_x$反向，所以其动量改变$2mu_x$，器壁受到冲量$2mu_x$。该分子穿过盒子再返回，走过距离$2L$后才再次撞击同一器壁，所需时间为$2L/u_x$。它对该器壁施加的平均力等于冲量除以两次撞击间的时间：
+
+$$
+F_1 = \frac{2mu_x}{2L/u_x} = \frac{mu_x^{2}}{L}.
+$$
+
+与其他分子的碰撞只是在它们之间交换动量，并不改变平均值。对全部$N$个分子求和，总力为$F = (m/L)\sum u_x^{2} = (Nm/L)\langle u_x^{2}\rangle$，压力为$p = F/L^{2} = Nm\langle u_x^{2}\rangle/V$。运动是无规则的，没有哪个方向是特殊的：$\langle u_x^{2}\rangle = \langle u_y^{2}\rangle = \langle u_z^{2}\rangle$，又因为$u^{2} = u_x^{2} + u_y^{2} + u_z^{2}$，每一个都等于$\tfrac13\langle u^{2}\rangle$。因此$pV = \tfrac13 Nm\langle u^{2}\rangle$。
+
+代入$N = nN_\mathrm{A}$和$mN_\mathrm{A} = M$，上式成为$pV = \tfrac13 nM\langle u^{2}\rangle$。令其等于$nRT$，得$M\langle u^{2}\rangle = 3RT$，所以$\tfrac12 M\langle u^{2}\rangle = \tfrac32 RT$，$u_\mathrm{rms} = (3RT/M)^{1/2}$。立方体盒只是为了方便：结果只取决于体积。
+:::
+
+这一证明解释了玻意耳定律（在固定的$T$下，分子以固定的平均速率运动，把它们挤进更小的盒子使它们更频繁地撞击器壁）和查理定律（在固定的$p$下，更快的分子需要更大的空间，才能使撞击器壁的频率不增加）。它还解释了[[general-chemistry-1/thermochemistry]]中用到的一个事实：在由原子构成的完美气体中，唯一的能量是分子的动能，每摩尔$\tfrac32 RT$，所以完美气体的热力学能只取决于温度。分子还能转动和振动，这会增加能量，但仍只依赖于$T$；在固定温度下改变体积不会改变任何东西，因为在该模型中分子之间没有相互作用。在$298.15\ \mathrm{K}$下，平动动能为$\tfrac32 \times 8.314 \times 298.15 = 3718\ \mathrm{J\,mol^{-1}}$，约$3.7\ \mathrm{kJ\,mol^{-1}}$——与每摩尔数百千焦的键能相比很小，这就是室温下分子相互碰撞而不断裂的原因。
+
+::: example 空气分子有多快？ {#ex-urms}
+求$25.0\ ^\circ\mathrm{C}$下氮分子（$M = 28.014\ \mathrm{g\,mol^{-1}}$）和氢分子（$M = 2.016\ \mathrm{g\,mol^{-1}}$）的方均根速率。
+::: solution
+把摩尔质量换算为 SI 单位，$M(\mathrm{N_2}) = 0.028014\ \mathrm{kg\,mol^{-1}}$，这样$R$中的焦耳（$\mathrm{kg\,m^2\,s^{-2}}$）才能给出米每秒：
+
+$$
+u_\mathrm{rms}(\mathrm{N_2}) = \sqrt{\frac{3 \times 8.314\ \mathrm{J\,K^{-1}\,mol^{-1}} \times 298.15\ \mathrm{K}}{0.028014\ \mathrm{kg\,mol^{-1}}}} = \sqrt{2.6545\times 10^{5}\ \mathrm{m^2\,s^{-2}}} = 515\ \mathrm{m\,s^{-1}}.
+$$
+
+对于氢，$M = 0.002016\ \mathrm{kg\,mol^{-1}}$，同样的计算给出$u_\mathrm{rms} = 1921\ \mathrm{m\,s^{-1}}$。两者之比为$\sqrt{28.014/2.016} = 3.73$：在相同温度下两者的平均动能相同，所以较轻的分子必须运动得更快，与$1/\sqrt{M}$成正比。如果$M$仍以克每摩尔计，得到的速率会小$\sqrt{1000} = 31.6$倍，这是这一计算中最常见的错误。
+
+室温下氮分子的运动速率大致与空气中的声速（$25\ ^\circ\mathrm{C}$时为$346\ \mathrm{m\,s^{-1}}$）相当——这并非巧合，因为声音是由分子运动传递的——然而一种气味需要好几秒才能穿过房间。每个分子每秒与其他分子碰撞数十亿次，是在漫游，而不是沿直线前进。
+:::
+:::
+
+并非每个分子都具有方均根速率。速率按麦克斯韦推导的一种分布展开，其形状取决于$M$和$T$：
+
+$$
+f(u) = 4\pi \left(\frac{M}{2\pi RT}\right)^{3/2} u^{2}\, \exp\!\left(-\frac{Mu^{2}}{2RT}\right),
+$$
+
+其中$f(u)\,\mathrm{d}u$是速率介于$u$与$u + \mathrm{d}u$之间的分子所占的分数。其推导属于[[statistical-thermodynamics/boltzmann-distribution]]；这里我们只读这条曲线。
+
+::: widget plot
+f: 1000*4*pi*(m/1000/(2*pi*8.314*t))^1.5*x^2*exp(-(m/1000)*x^2/(2*8.314*t))
+x: 0, 2500
+y: 0, 4
+sliders: t=300:100:1000:10; m=28.014:2:100:0.1
+labels: f(u)/(10^{-3}\,\mathrm{s\,m^{-1}})
+caption: 摩尔质量为$m$（单位$\mathrm{g\,mol^{-1}}$；默认为氮）的气体在温度$t$（开尔文）下分子速率$u$（单位$\mathrm{m\,s^{-1}}$）的麦克斯韦分布。每条曲线下的面积为$1$。升高温度使峰移向更高的速率并使分布展宽，于是有更大比例的分子非常快；较重的气体分布较窄，速率较低。对于$300\ \mathrm{K}$的氮，最概然速率为$422\ \mathrm{m\,s^{-1}}$；方均根速率$\sqrt{3RT/M}$约高$22\%$。
+:::
+
+对化学而言要紧的是高速尾部。需要剧烈碰撞的反应取决于位于该尾部远端的分子所占的分数，而这一分数随温度急剧增大——这是[[general-chemistry-2/rates-intro]]和[[kinetics/collision-theory]]的主题。
+
+$u \propto 1/\sqrt{M}$还有一个推论，早在分子动理论出现之前就已被测量到。**泻流**是气体通过针孔逸入真空的过程。分子到达小孔的速率与其平均速率成正比，所以在相同温度和压力下
+
+$$
+\frac{\text{A 的泻流速率}}{\text{B 的泻流速率}} = \sqrt{\frac{M_\mathrm{B}}{M_\mathrm{A}}},
+$$
+
+这就是**格雷姆定律**。氢的泻流速率是氧的$\sqrt{31.998/2.016} = 3.98$倍。当两种气体的摩尔质量相差不到百分之一时，例如同一化合物的不同同位素形式，这一比值非常接近$1$，单次泻流几乎无法将它们分开，这就是用这种方法分离同位素成为一项庞大工业工程的原因。
+
+::: warning 破坏气体计算的四种习惯 {#warn-gas}
+*在正比关系中使用摄氏温度。* $V \propto T$和$p \propto T$只对开尔文成立。把摄氏温度加倍并不会使体积加倍，而$0\ ^\circ\mathrm{C}$的温度会使$pV = nRT$预测出零压力。*$R$的单位不匹配。* 用$R = 8.314\ \mathrm{J\,K^{-1}\,mol^{-1}}$时，压力必须以帕斯卡计、体积以立方米计；用$8.314\ \mathrm{kPa\,dm^3\,K^{-1}\,mol^{-1}}$时，则用千帕和立方分米。把千帕与立方米混用会差$1000$倍。*在速率公式中用克。* 在$u_\mathrm{rms} = \sqrt{3RT/M}$中，$M$以$\mathrm{kg\,mol^{-1}}$计。*处处使用$22.4\ \mathrm{dm^3\,mol^{-1}}$。* 这个摩尔体积对应$0\ ^\circ\mathrm{C}$和$1\ \mathrm{atm}$；在室温下一摩尔气体约占$24.8\ \mathrm{dm^3}$，用实际的$T$和$p$代入理想气体状态方程，总比记住的某个数更可靠。
+:::
+
+## 真实气体
+
+分子动理论模型的假设在边界处失效。分子有大小，所以在高压下它们可用的体积小于容器的体积。分子相互吸引，所以在低温下，当它们运动缓慢时，会更多时间彼此靠近，撞击器壁也不那么有力。这种偏离用一个数来度量。
+
+::: definition 压缩因子 {#def-z}
+气体的**压缩因子**为
+
+$$
+Z = \frac{pV_\mathrm{m}}{RT},
+$$
+
+其中$V_\mathrm{m}$是摩尔体积。对于理想气体，$Z = 1$严格成立。$Z < 1$表示该气体比理想气体更易压缩（吸引作用占主导）；$Z > 1$表示更难压缩（排斥作用，即分子的有限大小占主导）。
+:::
+
+对于室温附近的大多数气体，当压力从零升高时，$Z$先降到$1$以下，因为吸引作用把分子拉到一起；然后在数百巴下远远超过$1$，此时分子拥挤，其大小占主导。氢和氦的吸引作用很弱，在室温下所有压力时都有$Z > 1$。
+
+::: proposition 范德华方程 {#prop-vdw}
+真实气体的一个近似状态方程为
+
+$$
+\left(p + a\frac{n^{2}}{V^{2}}\right)(V - nb) = nRT, \qquad\text{或}\qquad p = \frac{nRT}{V - nb} - a\frac{n^{2}}{V^{2}},
+$$
+
+其中$a$和$b$是各气体的特征常数，通过拟合实验数据得到。常数$b$大致是一摩尔分子所排除的体积；$a$度量分子间相互吸引的强弱。对于二氧化碳，$a = 3.640\ \mathrm{bar\,dm^6\,mol^{-2}}$，$b = 0.04267\ \mathrm{dm^3\,mol^{-1}}$（数值取自《CRC 化学与物理手册》（*CRC Handbook of Chemistry and Physics*））。当$V$很大时（因而$nb \ll V$且$an^{2}/V^{2} \ll p$），方程化为$pV = nRT$。它是一个模型，而不是定律：在各处定性正确，只在中等密度下定量正确。
+:::
+
+两项校正作用方向相反。排除体积意味着分子在$V - nb$而不是$V$的空间中运动，这使压力*高于*$nRT/V$。吸引作用意味着一个即将撞击器壁的分子会被它的邻居拉回。靠近器壁的分子数和拉回每个分子的分子数都与浓度$n/V$成正比，所以压力的降低与$(n/V)^{2}$成正比，这就是$a$项的形式。
+
+::: example 四十巴下的二氧化碳 {#ex-vdw}
+一摩尔二氧化碳在$300.0\ \mathrm{K}$下保存在$0.500\ \mathrm{dm^3}$中。分别用理想气体状态方程和范德华方程计算压力，并求范德华压力所对应的压缩因子。
+::: solution
+取$R = 0.08314\ \mathrm{bar\,dm^3\,K^{-1}\,mol^{-1}}$，理想气体压力为
+
+$$
+p_\mathrm{ideal} = \frac{nRT}{V} = \frac{1.000 \times 0.08314 \times 300.0}{0.500}\ \mathrm{bar} = 49.9\ \mathrm{bar}.
+$$
+
+范德华压力为
+
+$$
+p = \frac{1.000 \times 0.08314 \times 300.0}{0.500 - 0.04267} - \frac{3.640 \times 1.000^{2}}{0.500^{2}} = 54.54 - 14.56 = 40.0\ \mathrm{bar}.
+$$
+
+排除体积使压力升高约$4.7\ \mathrm{bar}$，吸引作用使其降低$14.6\ \mathrm{bar}$；在这一密度下吸引作用占上风，真实压力比理想预测低约$20\%$。压缩因子为$Z = pV/(nRT) = 40.0 \times 0.500/(0.08314 \times 300.0) = 0.80$。就其大小而言，二氧化碳是分子间吸引作用很强的气体，而且在$300\ \mathrm{K}$下它接近其临界温度（$304\ \mathrm{K}$），高于该温度时任何压力都不能使它液化。在这样的条件附近，理想气体状态方程是一个糟糕的指引。气瓶中的压力就在这个量级，由于其储存的能量很大，气瓶的搬运、固定和运输都要遵守专门的规定。
+:::
+:::
+
+::: quiz
+两个体积相等的烧瓶处于相同温度。一个装有$1.0\ \mathrm{g}$氢气，另一个装有$1.0\ \mathrm{g}$氧气。把两种气体都视为理想气体，下列哪种说法正确？
+- [x] 氢气瓶的压力约为氧气瓶的十六倍，而其分子的平均动能与氧分子相同。
+- [ ] 两瓶压力相同，因为它们所含气体的质量相等。
+- [ ] 氧分子的平均动能是氢分子的十六倍，因为它们重十六倍。
+- [ ] 两种气体的方均根速率相同，因为它们处于相同温度。
+::: solution
+压力取决于物质的量而不是质量：$1.0\ \mathrm{g}$ $\mathrm{H_2}$是$0.50\ \mathrm{mol}$，$1.0\ \mathrm{g}$ $\mathrm{O_2}$是$0.031\ \mathrm{mol}$，比值为$31.998/2.016 \approx 15.9$。在相同温度下，两者每个分子的平均平动动能相同，都是$\tfrac32 k_\mathrm{B}T$，所以较轻的分子必定更快，快$\sqrt{15.9} \approx 4$倍，而不是一样快。
+:::
+:::
+
 ::: history
-- 1662 (Boyle's law)
-- 1787 (Charles's law of volumes)
-- 1789 (Lavoisier's Traité and conservation of mass)
-- 1808 (Dalton's atomic theory)
+1662 年，玻意耳（Robert Boyle）在其《关于空气弹性的物理力学新实验》（*New Experiments Physico-Mechanical, Touching the Spring of the Air*）第二版中报告了一段封闭空气的压力与体积之间的反比关系；马略特（Edme Mariotte）在法国独立发现了这一关系并于 1676 年发表，因此法国教材称之为马略特定律。查理（Jacques Charles）约在 1787 年观察到各种气体受热时膨胀程度相同，但没有发表；盖-吕萨克（Joseph Louis Gay-Lussac）于 1802 年发表了热膨胀定律，并把功劳归于查理。道尔顿（John Dalton）于 1801 年根据他对空气中水蒸气的研究宣布了分压定律。阿伏加德罗（Amedeo Avogadro）1811 年的假说提供了等体积、等数目的原理。克拉珀龙（Émile Clapeyron）于 1834 年把这些单独的定律合并为一个状态方程。分子运动的解释有一个先驱，即丹尼尔·伯努利（Daniel Bernoulli）的《流体动力学》（*Hydrodynamica*，1738），它从运动粒子推导出了玻意耳定律；但直到克劳修斯（Rudolf Clausius）1857 年的工作和麦克斯韦（James Clerk Maxwell）1860 年推导出分子速率分布，它才成为一种理论。范德华（Johannes Diderik van der Waals）在其 1873 年的博士论文中提出了他的方程，并因此获得 1910 年诺贝尔物理学奖。
 :::
-## Exercises
-::: exercise {level=1}
-Exercise 1: apply the methods of Gases.
-::: solution
-Solution 1.
+
+## 后续内容
+
+理想气体状态方程是你遇到的第一个状态方程，凡有气体出现之处都会用到它。在[[general-chemistry-1/thermochemistry]]中，它把气体物质的量的变化转化为$pV$功，并把$\Delta H$与$\Delta U$联系起来。在[[general-chemistry-2/chemical-equilibrium]]中，气体反应的平衡常数用分压$p_\mathrm{J} = x_\mathrm{J}p$写出，与这里的定义完全相同。麦克斯韦分布及其高能尾部是[[general-chemistry-2/rates-intro]]和[[kinetics/collision-theory]]中反应速率温度依赖性的基础，并在[[statistical-thermodynamics/boltzmann-distribution]]中由玻尔兹曼分布推导出来。使$Z$降到一以下的吸引作用就是[[bonding-structure/intermolecular-forces]]中的分子间力，而隐藏在范德华曲线起伏中的凝聚，就是[[general-chemistry-2/liquids-solutions]]中的液–气平衡，定量的处理见[[thermodynamics/phase-equilibria]]。真实气体的完整处理，包括维里系数和对应状态原理，见[[statistical-thermodynamics/real-gases-liquids]]。
+
+::: summary
+- 压力是单位面积上的力；$1\ \mathrm{bar} = 10^{5}\ \mathrm{Pa}$，$1\ \mathrm{atm} = 101\,325\ \mathrm{Pa} = 760\ \mathrm{Torr}$。
+- 玻意耳定律（$pV$恒定）、查理定律（$V/T$恒定）和阿伏加德罗定律（$V/n$恒定）合并为$pV = nRT$，其中$R = 8.314\ \mathrm{J\,K^{-1}\,mol^{-1}}$；这是一个在$p \to 0$时严格成立的极限定律，$T$永远以开尔文计。
+- 理想气体的摩尔体积在$273.15\ \mathrm{K}$和$1\ \mathrm{bar}$下为$22.71\ \mathrm{dm^3\,mol^{-1}}$，在$298.15\ \mathrm{K}$和$1\ \mathrm{bar}$下为$24.79\ \mathrm{dm^3\,mol^{-1}}$。由气体密度可通过$M = \rho RT/p$得到摩尔质量。
+- 在混合物中$p_\mathrm{J} = x_\mathrm{J}p$，对于理想气体各分压之和等于总压（道尔顿定律）。排水法收集的气体必须扣除水的蒸气压。
+- 分子动理论模型给出$pV = \tfrac13 Nm\langle u^{2}\rangle$，所以平均平动动能为每摩尔$\tfrac32 RT$，与气体种类无关，且$u_\mathrm{rms} = \sqrt{3RT/M}$，其中$M$以$\mathrm{kg\,mol^{-1}}$计。
+- 速率服从麦克斯韦分布，$T$升高时分布展宽并移向更高速率；泻流速率与$1/\sqrt{M}$成正比（格雷姆定律）。
+- 当分子彼此靠近时，真实气体发生偏离：$Z = pV_\mathrm{m}/RT$度量这种偏离，范德华方程用吸引常数$a$和排除体积$b$对其建模。
 :::
-::: exercise {level=1}
-Exercise 2: apply the methods of Gases.
+
+## 习题
+
+::: exercise 气压计读数 {#exr-mmhg level=1 check="99.3"}
+气压计读数为$745\ \mathrm{mmHg}$。把这一压力用千帕表示。（以 kPa 为单位输入压力，保留三位有效数字。）
 ::: solution
-Solution 2.
+$1\ \mathrm{mmHg} = 101\,325/760\ \mathrm{Pa} = 133.322\ \mathrm{Pa}$，所以$745\ \mathrm{mmHg} = 745 \times 133.322\ \mathrm{Pa} = 99\,325\ \mathrm{Pa} = 99.3\ \mathrm{kPa}$。这是略低于一个标准大气压的压力，常见于天气不稳定时，或海拔几百米处的实验室。
 :::
-::: exercise {level=1}
-Exercise 3: apply the methods of Gases.
-::: solution
-Solution 3.
 :::
-::: exercise {level=2}
-Exercise 4: apply the methods of Gases.
+
+::: exercise 气缸中的玻意耳定律 {#exr-boyle level=1 check="1.60"}
+某气体样品在$100\ \mathrm{kPa}$下占据$4.00\ \mathrm{dm^3}$。在恒温下将其压缩，直到压力为$250\ \mathrm{kPa}$。其新体积是多少？（以$\mathrm{dm^3}$为单位输入体积。）
 ::: solution
-Solution 4.
+在温度和物质的量恒定时，$p_1V_1 = p_2V_2$，所以$V_2 = 4.00 \times 100/250\ \mathrm{dm^3} = 1.60\ \mathrm{dm^3}$。压力增大到$2.5$倍，体积缩小到同样的倍数分之一。
 :::
-::: exercise {level=2}
-Exercise 5: apply the methods of Gases.
-::: solution
-Solution 5.
 :::
-::: exercise {level=2}
-Exercise 6: apply the methods of Gases.
+
+::: exercise STP 下的摩尔体积 {#exr-vm level=1 check="22.71"}
+计算$1.000\ \mathrm{mol}$理想气体在$273.15\ \mathrm{K}$和$1.000\ \mathrm{bar}$下所占的体积。（以$\mathrm{dm^3}$为单位输入体积，保留四位有效数字。）
 ::: solution
-Solution 6.
+$V = nRT/p = 1.000 \times 8.314 \times 273.15/100.0\ \mathrm{dm^3} = 22.71\ \mathrm{dm^3}$，这里$R$以$\mathrm{kPa\,dm^3\,K^{-1}\,mol^{-1}}$计，$p = 100.0\ \mathrm{kPa}$。在$1\ \mathrm{atm}$（$101.325\ \mathrm{kPa}$）下，同样的计算给出$22.41\ \mathrm{dm^3}$，即较早的书中引用的值。
 :::
-::: exercise {level=3}
-Exercise 7: apply the methods of Gases.
-::: solution
-Solution 7.
 :::
-::: exercise {level=3}
-Exercise 8: apply the methods of Gases.
+
+::: exercise 液氮中的气球 {#exr-charles level=2 check="0.526"}
+一个气球在$20.0\ ^\circ\mathrm{C}$下装有$2.00\ \mathrm{dm^3}$空气。在恒压下把它冷却到$-196.0\ ^\circ\mathrm{C}$，即液氮的沸点。假定空气保持为理想气体，其新体积是多少？（以$\mathrm{dm^3}$为单位输入体积，保留三位有效数字。）
 ::: solution
-Solution 8.
+换算为开尔文：$T_1 = 293.15\ \mathrm{K}$，$T_2 = 77.15\ \mathrm{K}$。查理定律给出$V_2 = V_1T_2/T_1 = 2.00 \times 77.15/293.15 = 0.526\ \mathrm{dm^3}$。实际上，$77\ \mathrm{K}$已接近空气各组分凝聚的温度——在$1\ \mathrm{atm}$下氧的沸点为$90\ \mathrm{K}$——因此部分氧可能液化，理想气体的答案只是对收缩程度的估计。液氮会造成严重的冻伤，并可能在密闭房间中置换出氧气；操作时须佩戴面部和手部防护，在通风场所并在指导下进行。
+:::
+:::
+
+::: exercise 氦与氧的混合物 {#exr-heo2 level=2 check="100"}
+一个气瓶中含$2.00\ \mathrm{g}$氦（$M = 4.003\ \mathrm{g\,mol^{-1}}$）和$8.00\ \mathrm{g}$氧（$M = 31.998\ \mathrm{g\,mol^{-1}}$），总压为$150\ \mathrm{kPa}$。氦的分压是多少？（以 kPa 为单位输入分压，保留三位有效数字。）
+::: solution
+$n(\mathrm{He}) = 2.00/4.003 = 0.4996\ \mathrm{mol}$，$n(\mathrm{O_2}) = 8.00/31.998 = 0.2500\ \mathrm{mol}$。氦的摩尔分数为$0.4996/(0.4996 + 0.2500) = 0.6665$，所以$p(\mathrm{He}) = 0.6665 \times 150\ \mathrm{kPa} = 100.0\ \mathrm{kPa}$，保留三位有效数字为$100\ \mathrm{kPa}$。氦只占质量的$20\%$，却占压力的三分之二，因为分压数的是分子。
+:::
+:::
+
+::: exercise 氦原子的速率 {#exr-he-rms level=2 check="1367"}
+用$M = 4.003\ \mathrm{g\,mol^{-1}}$计算$300\ \mathrm{K}$下氦原子的方均根速率。（以$\mathrm{m\,s^{-1}}$为单位输入速率，保留四位有效数字。）
+::: solution
+取$M = 4.003\times 10^{-3}\ \mathrm{kg\,mol^{-1}}$，
+
+$$
+u_\mathrm{rms} = \sqrt{\frac{3 \times 8.314 \times 300}{4.003\times 10^{-3}}}\ \mathrm{m\,s^{-1}} = \sqrt{1.8693\times 10^{6}}\ \mathrm{m\,s^{-1}} = 1367\ \mathrm{m\,s^{-1}}.
+$$
+
+约为同温度下氮的方均根速率的$2.6$倍，比值为$\sqrt{28.014/4.003}$。氦的高速率是它会从高层大气缓慢逃逸到太空的原因之一。
+:::
+:::
+
+::: exercise 甲烷火焰所需的氧 {#exr-o2-vol level=2 check="24.7"}
+按$\mathrm{CH_4 + 2\,O_2 \rightarrow CO_2 + 2\,H_2O}$使$8.00\ \mathrm{g}$甲烷完全燃烧，需要多少体积的氧（在$25.0\ ^\circ\mathrm{C}$和$1.000\ \mathrm{bar}$下测量）？用$M(\mathrm{CH_4}) = 16.043\ \mathrm{g\,mol^{-1}}$。（以$\mathrm{dm^3}$为单位输入体积，保留三位有效数字。）
+::: solution
+$n(\mathrm{CH_4}) = 8.00/16.043 = 0.4987\ \mathrm{mol}$，所以$n(\mathrm{O_2}) = 2 \times 0.4987 = 0.9973\ \mathrm{mol}$。于是$V = nRT/p = 0.9973 \times 8.314 \times 298.15/100.0\ \mathrm{dm^3} = 24.7\ \mathrm{dm^3}$。由于空气中约含$21\%$氧，$8\ \mathrm{g}$燃料大约需要$118\ \mathrm{dm^3}$空气——这就是燃烧器需要充足空气供应的原因。
+:::
+:::
+
+::: exercise 由分子动理论模型推出格雷姆定律 {#exr-graham level=3 check="3.984"}
+从$u_\mathrm{rms} = \sqrt{3RT/M}$出发，并假定泻流速率与分子的平均速率成正比，证明在相同温度和压力下两种气体的泻流速率之比为$\sqrt{M_\mathrm{B}/M_\mathrm{A}}$。然后计算氢（$2.016\ \mathrm{g\,mol^{-1}}$）与氧（$31.998\ \mathrm{g\,mol^{-1}}$）的泻流速率之比。（输入比值 rate(H₂)/rate(O₂)，保留四位有效数字。）
+::: hint
+平均速率与方均根速率相差一个对每种气体都相同的常数因子。在相同的$T$和$p$下，两种气体单位体积中的分子数相同。
+:::
+::: solution
+分子通过小孔的速率与单位体积中的分子数$N/V$乘以其平均速率成正比。在相同温度和压力下，$N/V = p/(k_\mathrm{B}T)$对两种气体相同，所以速率之比就是平均速率之比。麦克斯韦分布的每一个特征速率——平均速率、最概然速率、方均根速率——都是一个固定的数乘以$\sqrt{RT/M}$，所以在相同温度下两种气体的这一比值为
+
+$$
+\frac{\text{rate}_\mathrm{A}}{\text{rate}_\mathrm{B}} = \frac{\sqrt{RT/M_\mathrm{A}}}{\sqrt{RT/M_\mathrm{B}}} = \sqrt{\frac{M_\mathrm{B}}{M_\mathrm{A}}}.
+$$
+
+对于氢与氧，$\sqrt{31.998/2.016} = \sqrt{15.872} = 3.984$。只要两种气体处于同一温度，这一比值就与温度无关。因此，测量相对于已知气体的泻流速率就能得到摩尔质量——这是一条与[[#ex-density]]中的密度法一样不需要化学式的求$M$途径。
+:::
+:::
+
+::: exercise 理想气体状态方程失效之时 {#exr-vdw level=3 check="62.1"}
+一摩尔二氧化碳在$300.0\ \mathrm{K}$下被压缩到$0.2500\ \mathrm{dm^3}$。用范德华方程（$a = 3.640\ \mathrm{bar\,dm^6\,mol^{-2}}$，$b = 0.04267\ \mathrm{dm^3\,mol^{-1}}$）估算其压力，并与理想气体值比较。压缩因子是多少？（以 bar 为单位输入范德华压力，保留三位有效数字。）
+::: hint
+用$R = 0.08314\ \mathrm{bar\,dm^3\,K^{-1}\,mol^{-1}}$分别计算$p = nRT/(V - nb) - an^{2}/V^{2}$的两项。
+:::
+::: solution
+第一项：$nRT/(V - nb) = 0.08314 \times 300.0/(0.2500 - 0.04267) = 24.942/0.20733 = 120.30\ \mathrm{bar}$。第二项：$an^{2}/V^{2} = 3.640/0.0625 = 58.24\ \mathrm{bar}$。所以$p = 120.30 - 58.24 = 62.06\ \mathrm{bar}$，即$62.1\ \mathrm{bar}$。
+
+理想气体状态方程给出$p = 24.942/0.2500 = 99.77\ \mathrm{bar}$，所以范德华估算值低$38\%$。范德华压力对应的压缩因子为$Z = pV/(nRT) = 62.06 \times 0.2500/24.942 = 0.622$。与[[#ex-vdw]]相比，体积减半使两项校正都变大了：排除体积现在占容器的$17\%$，而与$1/V^{2}$成正比的吸引项变为四倍。在这样的密度和温度下，真实的二氧化碳已接近开始凝聚的点，此时范德华方程本身也只是粗略的指引；而理想气体状态方程则完全不足为凭。
+:::
 :::

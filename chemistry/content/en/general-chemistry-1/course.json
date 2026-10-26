@@ -101,13 +101,13 @@
     {
       "year": 1662,
       "title": "Boyle's law",
-      "detail": "Robert Boyle and his assistants, using a J-shaped tube and mercury, showed that the volume of a fixed amount of air varies inversely with the pressure — the first quantitative law of matter discovered in Britain since antiquity.",
+      "detail": "Robert Boyle and his assistants, using a J-shaped tube and mercury, showed that the volume of a fixed amount of air varies inversely with the pressure; it was one of the first laws of nature stated as a mathematical relation between measured quantities.",
       "people": ["Robert Boyle"]
     },
     {
       "year": 1787,
       "title": "Charles's law of volumes",
-      "detail": "Jacques Charles found in secret that the volumes of gases expand proportionally to temperature, in unpublished work later reported by his collaborator; Gay-Lussac published the law in 1802 and credited him.",
+      "detail": "Jacques Charles found in secret that the volumes of gases expand proportionally to temperature, but did not publish; Gay-Lussac published the law in 1802 and credited him.",
       "people": ["Jacques Charles", "Joseph Louis Gay-Lussac"]
     },
     {

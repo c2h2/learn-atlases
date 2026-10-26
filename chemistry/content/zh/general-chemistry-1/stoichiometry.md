@@ -1,108 +1,306 @@
-## Balancing equations
-::: definition {#stoichiometry-d1}
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Balancing Equations is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+实验室煤气灯被调节到火焰呈蓝色且平稳。这一调节背后是一个方程式，
+
+$$
+\mathrm{CH_4(g) + 2\,O_2(g) \rightarrow CO_2(g) + 2\,H_2O(g)},
+$$
+
+而本章的全部内容就是认真对待这类方程式。氧前面的$2$不是建议，也不是质量。它表示每消耗一摩尔甲烷分子，就要消耗两摩尔氧分子。缺少空气的火焰会积炭；空气过多的火焰会被吹冷。决定结果的是每种试剂的比例，而不仅仅是它是否存在。**化学计量**就是关于这些比例的算术。它把配平的方程式变成预测：给定的投料能生成多少产物，哪种试剂先耗尽，以及真实的实验与纸面上的预测相差多少。
+
+甲烷在空气中是易燃的，封闭在容器中的燃料–空气混合物可能爆炸。下面的计算是案头工作。任何实际的燃烧，以及本章后面由金属和酸产生氢气的操作，都需要有人指导、佩戴护目镜并有书面的风险评估。这里的内容都不是操作规程。
+
+这套算术建立在你已掌握的两个事实之上。化学变化中原子既不产生也不消灭，所以一个合法的方程式两边每种原子的数目相同。而[[general-chemistry-1/atoms-and-moles]]中的摩尔，把你能称量的质量变成可以与化学计量数比较的物质的量。下面的摩尔质量采用本课程的原子量：$\mathrm{C}\ 12.011$、$\mathrm{H}\ 1.008$、$\mathrm{O}\ 15.999$，其他元素的值在出现时给出。计算中多保留几位数字，只对最终答案修约，修约到精度最低的测量量的有效数字位数。化学计量数以及把$\mathrm{cm^3}$换算为$\mathrm{dm^3}$的因子都是准确的。
+
+## 配平化学方程式
+
+化学式是关于一种物质的断言。$\mathrm{H_2O}$中的下标表示一个水分子含两个氢原子和一个氧原子；把它改成$\mathrm{H_2O_2}$并没有“修好”方程式，而是把对象换成了过氧化氢。写在化学式前面的系数是唯一允许调整的数，它乘的是整个化学式：$2\,\mathrm{H_2O}$表示两个水分子，因而有四个氢原子和两个氧原子。
+
+::: algorithm 观察法配平 {#alg-balance}
+配平一个并非一目了然的方程式：
+
+1. 写出每种反应物和产物的正确化学式，必要时注明状态符号。此后不再改动任何下标。
+2. 从在每一边只出现在一个化学式中的元素开始，用系数将其配平。
+3. 对于燃烧反应，把氧和氢留到后面；它们通常出现在不止一处。
+4. 如果某个系数是分数，把所有系数乘以分母，使它们都成为最小的整数。
+5. 再次清点每种元素。对于离子方程式，总电荷也必须守恒。
+6. 如果反应是氧化还原过程，标出氧化数作为检验：氧化数升高的总数必须等于降低的总数。不相等说明系数错了，或者产物错了。这是对观察法所得配平结果的检验，而不是用于复杂情形的半反应法。
 :::
-## mole ratios
-::: definition {#stoichiometry-d2}
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Mole Ratios is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
+
+氧化数是一种记账手段，而不是原子在每个键中真正带有的电荷。本课程采用的是普通规则：单质中元素的氧化数为$0$；单原子离子的氧化数等于其电荷；氧为$-2$，但在过氧化物中为$-1$；氢与非金属结合时为$+1$，与金属结合时为$-1$；一个物种中各氧化数之和等于其净电荷。氧化数升高为氧化，降低为还原。被还原的物种是氧化剂；被氧化的物种是还原剂。
+
+::: example 配平燃烧反应和一个氧化还原方程式 {#ex-balance}
+配平 (a) 乙烷的燃烧，$\mathrm{C_2H_6 + O_2 \rightarrow CO_2 + H_2O}$；(b) 一氧化碳还原氧化铁（III），$\mathrm{Fe_2O_3 + CO \rightarrow Fe + CO_2}$。在 (b) 中标出氧化数，并确认电子数相符。
+::: solution
+(a) 碳和氢在每边各出现一次。两个碳需要$2\,\mathrm{CO_2}$；六个氢需要$3\,\mathrm{H_2O}$。于是右边有$2\times 2 + 3 = 7$个氧原子，所以左边氧的系数为$7/2$：
+
+$$
+\mathrm{C_2H_6 + \tfrac{7}{2}\,O_2 \rightarrow 2\,CO_2 + 3\,H_2O}.
+$$
+
+全部乘以$2$以消去分数：
+
+$$
+\mathrm{2\,C_2H_6 + 7\,O_2 \rightarrow 4\,CO_2 + 6\,H_2O}.
+$$
+
+检验：$\mathrm{C}$ $4=4$，$\mathrm{H}$ $12=12$，$\mathrm{O}$ $14=8+6$。乙烷被氧化（碳从$\mathrm{C_2H_6}$中的$-3$变为$\mathrm{CO_2}$中的$+4$），氧被还原，所以尽管我们是靠数原子配平的，燃烧仍是氧化还原反应。
+
+(b) 铁在$\mathrm{Fe_2O_3}$中有两个原子，所以金属铁的系数为$2$。如果三个$\mathrm{CO}$分子各自再获得一个氧，变成三个$\mathrm{CO_2}$，左边的氧就能配平：
+
+$$
+\mathrm{Fe_2O_3(s) + 3\,CO(g) \rightarrow 2\,Fe(s) + 3\,CO_2(g)}.
+$$
+
+原子：$\mathrm{Fe}$ $2=2$，$\mathrm{C}$ $3=3$，$\mathrm{O}$ $3+3=6$。氧化数：在这些化合物中氧都是$-2$，所以$\mathrm{Fe_2O_3}$中的铁为$+3$，$\mathrm{CO}$中的碳为$+2$。金属铁为$0$，$\mathrm{CO_2}$中的碳为$+4$。每个铁原子降低$3$，两个共降低$6$。每个碳原子升高$2$，三个共升高$6$。升高等于降低，这正是算法要求的氧化还原检验。一氧化碳是还原剂；氧化铁（III）是氧化剂。
+
+第二个方程式是高炉中最基本的还原反应，这样写出来是为了练习算术。一氧化碳因能与血红蛋白结合而具有急性毒性；该方程式不是制备方法，这里也不给出产生该气体的条件。
 :::
-## limiting reagents and percentage yield
-::: definition {#stoichiometry-d3}
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
-Limiting Reagents And Percentage Yield is one of the three core topics of the chapter Stoichiometry. Balancing equations, mole ratios, limiting reagents and percentage yield
 :::
-## Review
-::: widget graph
-nodes: Balancing equations, mole ratios, limiting reagents and percentage yield, review
-edges: Balancing equations, mole ratios, limiting reagents and percentage yield, review
-caption: Chemical equations and stoichiometry concept map
+
+同样的纪律——化学式固定、系数可变、清点原子、氧化数仅用作检验——足以处理本章的每一个方程式。当介质为酸性或碱性、且有几种元素同时变价时，半反应式才值得这套额外的工具；你现在还用不到它们。
+
+## 物质的量之比、质量与物质的量
+
+::: proposition 化学计量数 {#prop-stoich-ratio}
+配平化学方程式中的系数是物质的量的相对值，而不是质量的相对值。对于一般反应
+
+$$
+a\,\mathrm{A} + b\,\mathrm{B} \rightarrow c\,\mathrm{C} + d\,\mathrm{D}
+$$
+
+**反应进度**$\xi$（以摩尔计）的定义是：消耗的$\mathrm{A}$为$a\xi$，消耗的$\mathrm{B}$为$b\xi$，生成的$\mathrm{C}$为$c\xi$，生成的$\mathrm{D}$为$d\xi$。因此参加反应或生成的物质的量之比等于系数之比。只要$\mathrm{A}$被完全消耗且无副反应，
+
+$$
+\frac{n(\mathrm{C})}{n(\mathrm{A})} = \frac{c}{a}
+\qquad\text{且}\qquad
+m(\mathrm{C}) = m(\mathrm{A})\cdot\frac{c}{a}\cdot\frac{M(\mathrm{C})}{M(\mathrm{A})}.
+$$
+
+同样的形式适用于任意一对物种。如果某种试剂没有完全消耗，$\xi$由[[#def-limiting]]中定义的限量反应物确定，而该公式仍由这个较小的进度给出产物的量。
 :::
-::: widget stats
+
+::: proof 从物质的量到质量–质量因子 {#proof-mass-factor}
+纯物质的物质的量与质量通过摩尔质量相联系，$n = m/M$，这就是摩尔质量定义的变形。设质量为$m(\mathrm{A})$的$\mathrm{A}$完全反应，并且$\mathrm{A}$是限量反应物，或者是唯一可能耗尽的反应物。消耗的物质的量为
+
+$$
+n(\mathrm{A}) = \frac{m(\mathrm{A})}{M(\mathrm{A})}.
+$$
+
+由反应进度的定义，$n(\mathrm{A}) = a\xi$，所以$\xi = n(\mathrm{A})/a$。生成的$\mathrm{C}$为$c\xi$：
+
+$$
+n(\mathrm{C}) = c\cdot\frac{n(\mathrm{A})}{a} = n(\mathrm{A})\cdot\frac{c}{a}.
+$$
+
+再把该物质的量换算回质量，$m(\mathrm{C}) = n(\mathrm{C})\,M(\mathrm{C})$：
+
+$$
+m(\mathrm{C}) = \frac{m(\mathrm{A})}{M(\mathrm{A})}\cdot\frac{c}{a}\cdot M(\mathrm{C}) = m(\mathrm{A})\cdot\frac{c}{a}\cdot\frac{M(\mathrm{C})}{M(\mathrm{A})}.
+$$
+
+因子$(c/a)$是取自方程式的纯数。因子$M(\mathrm{C})/M(\mathrm{A})$把这个数变成质量比，它不可省略：省略它与把系数当作质量是同一个错误。对于甲烷，$a = c = 1$，$M(\mathrm{CO_2})/M(\mathrm{CH_4}) = 44.009/16.043 = 2.743$，所以每克甲烷完全燃烧生成$2.743\ \mathrm{g}$二氧化碳，而不是一克。
 :::
-::: widget quiz
+
+每当卡住时，就从左到右读这条链。已知物质的质量除以其摩尔质量，得到物质的量。乘以系数之比，得到未知物质的物质的量。如果要求的是质量，再乘以未知物质的摩尔质量。从物质的量到物质的量是中间一步，也是唯一用到方程式本身的一步。
+
+::: example 甲烷燃烧中的质量与物质的量 {#ex-ch4-mass}
+甲烷在过量氧气中按$\mathrm{CH_4 + 2\,O_2 \rightarrow CO_2 + 2\,H_2O}$燃烧。对于$8.00\ \mathrm{g}$甲烷，求 (a) 甲烷的物质的量，(b) 所需氧的物质的量和质量，(c) 生成二氧化碳的质量，(d) 生成水的质量。摩尔质量：$\mathrm{CH_4}\ 16.043$，$\mathrm{O_2}\ 31.998$，$\mathrm{CO_2}\ 44.009$，$\mathrm{H_2O}\ 18.015\ \mathrm{g\,mol^{-1}}$。
+::: solution
+(a) $n(\mathrm{CH_4}) = 8.00/16.043 = 0.4987\ \mathrm{mol}$，保留三位有效数字为$0.499\ \mathrm{mol}$。
+
+(b) 系数之比为$2/1$，所以$n(\mathrm{O_2}) = 2 \times 0.49866 = 0.9973\ \mathrm{mol}$，且
+
+$$
+m(\mathrm{O_2}) = 0.9973 \times 31.998 = 31.91\ \mathrm{g},
+$$
+
+修约为$31.9\ \mathrm{g}$。质量比不是$2:1$。每克甲烷的需氧量为$2 \times 31.998/16.043 = 3.99\ \mathrm{g}$，接近四克，因为$M(\mathrm{O_2})$约为$M(\mathrm{CH_4})$的两倍，而系数又使它再加倍。
+
+(c) $n(\mathrm{CO_2}) = n(\mathrm{CH_4}) = 0.49866\ \mathrm{mol}$，所以$m(\mathrm{CO_2}) = 0.49866 \times 44.009 = 21.95\ \mathrm{g}$，保留三位有效数字为$21.9\ \mathrm{g}$。质量–质量因子$44.009/16.043 = 2.743$给出相同结果：$8.00 \times 2.743 = 21.9\ \mathrm{g}$。
+
+(d) $n(\mathrm{H_2O}) = 2 \times 0.49866 = 0.9973\ \mathrm{mol}$，$m(\mathrm{H_2O}) = 0.9973 \times 18.015 = 17.97\ \mathrm{g}$，即$18.0\ \mathrm{g}$。
+
+质量守恒是一个有用的检验。输入为$8.00 + 31.91 = 39.91\ \mathrm{g}$；输出为$21.95 + 17.97 = 39.92\ \mathrm{g}$。$0.01\ \mathrm{g}$的差异来自修约，而不是新物质。如果产物与反应物的差别超过你所保留的末位，说明在系数那一步丢失了物质的量。
 :::
-::: summary
-- Balancing equations
-- mole ratios
-- limiting reagents and percentage yield
-- Balancing equations, mole ratios, limiting reagents and percentage yield
 :::
+
+::: widget plot
+f: min(x, a/2)
+x: 0, 2
+y: 0, 1.2
+sliders: a=1:0.2:2:0.1
+labels: n(\mathrm{CO_2})/\mathrm{mol}
+caption: 由$\mathrm{CH_4 + 2\,O_2 \rightarrow CO_2 + 2\,H_2O}$生成的$\mathrm{CO_2}$的物质的量，甲烷的物质的量为$x$（mol），氧的物质的量为滑块$a$（mol）。产物随甲烷一比一增加，直到氧耗尽，此后直线变平。拐折处就是化学计量点$a = 2x$。
+:::
+
+这张图就是把物质的量之比的陈述画成了图。在上升段，甲烷是限量反应物，$\xi = n(\mathrm{CH_4})$。在平坦段，氧是限量反应物，$\xi = n(\mathrm{O_2})/2$，所以无论加入多少甲烷，二氧化碳的物质的量都不能超过氧的一半。移动$a$，拐折点就随之移动。这个拐折点就是限量反应物问题的全部内容。
+
+## 限量反应物
+
+::: definition 限量反应物 {#def-limiting}
+对于$a\,\mathrm{A} + b\,\mathrm{B} \rightarrow$产物，可用的物质的量为$n(\mathrm{A})$和$n(\mathrm{B})$时，反应进度既不能超过$n(\mathrm{A})/a$，也不能超过$n(\mathrm{B})/b$。**限量反应物**是$n_i/\nu_i$值较小的那个反应物，其中$\nu_i$是它的化学计量数。系数为$c$的产物的**理论产量**是由这个较小值算出的$c\,\xi$，需要质量时再换算为质量。它是在反应严格按所写方程式进行、无副反应、无损失的前提下，配平的方程式由实际混合的量所能给出的最大产物量。其他反应物**过量**；其剩余量等于起始量减去$\nu\xi$。
+:::
+
+比较质量，或比较两种固体的体积，都不能回答这个问题。摩尔质量小的物质，较小的质量可能对应较大的物质的量。检验永远是$n/\nu$，而$n$由质量得到时必须先除以$M$，由溶液得到时则是浓度乘以体积，这是[[general-chemistry-1/solutions-reactions]]的内容。
+
+::: example 氧供应有限时的甲烷 {#ex-limit-o2}
+$10.0\ \mathrm{g}$甲烷与$32.0\ \mathrm{g}$氧混合后点燃，方程式为$\mathrm{CH_4 + 2\,O_2 \rightarrow CO_2 + 2\,H_2O}$。哪种试剂是限量反应物？能生成多少质量的二氧化碳？剩余多少质量的甲烷？
+::: solution
+$n(\mathrm{CH_4}) = 10.0/16.043 = 0.6233\ \mathrm{mol}$。$n(\mathrm{O_2}) = 32.0/31.998 = 1.000\ \mathrm{mol}$（商为$1.00006$，保留三位有效数字为$1.00\ \mathrm{mol}$；$32.0\ \mathrm{g}$是特意选取的，基本上就是一摩尔$\mathrm{O_2}$）。
+
+把每个物质的量除以其系数。甲烷为$0.6233/1 = 0.6233\ \mathrm{mol}$。氧为$1.000/2 = 0.500\ \mathrm{mol}$。较小的是氧的值，所以氧是限量反应物，反应进度为$\xi = 0.500\ \mathrm{mol}$。尽管$10.0\ \mathrm{g}$少于$32.0\ \mathrm{g}$，甲烷却是过量的：比较质量指向了错误的方向。
+
+二氧化碳的系数为$1$，所以$n(\mathrm{CO_2}) = 0.500\ \mathrm{mol}$，$m(\mathrm{CO_2}) = 0.500 \times 44.009 = 22.0\ \mathrm{g}$。消耗的甲烷为$0.500 \times 16.043 = 8.02\ \mathrm{g}$，剩余的甲烷为$10.0 - 8.02 = 1.98\ \mathrm{g}$。在数据的精度内，氧被完全消耗。
+
+如果你假定甲烷是限量反应物，就会预测生成$0.6233 \times 44.009 = 27.4\ \mathrm{g}$二氧化碳，并且需要$1.25\ \mathrm{mol}$氧，多于现有的$1.00\ \mathrm{mol}$。这种不可能满足的需求就是假设错误的信号。上图正是这段算术：当$a = 1.00$时，$x = 0.623$位于拐折点的右侧，处在曲线的平坦段。
+:::
+:::
+
+## 产率，以及关于原子经济性的一点说明
+
+理论产量是由限量反应物算出的上限。实际分离得到的往往更少：反应未进行完全、副反应消耗了试剂，或者产物残留在滤纸或烧瓶中。这两个质量的比较就是百分产率。
+
+::: definition 百分产率 {#def-yield}
+**百分产率**为
+
+$$
+\text{百分产率} = \frac{\text{实际产量}}{\text{理论产量}} \times 100\%,
+$$
+
+其中两个产量都是同一产物的质量，或都是物质的量。实际产量是分离得到的量；理论产量是[[#def-limiting]]中的上限。百分数是量纲一的。超过$100\%$的值并不意味着创造了物质，而是意味着理论产量算小了（限量反应物判断错误，或摩尔质量有误），或者分离出的物质是湿的或不纯的，实际上并不是纯产物。
+:::
+
+::: example 二氧化碳的百分产率 {#ex-yield}
+$4.00\ \mathrm{g}$甲烷在过量氧气中燃烧。理论产物按[[#ex-ch4-mass]]计算。如果收集到$9.15\ \mathrm{g}$二氧化碳，百分产率是多少？
+::: solution
+氧过量意味着甲烷是限量反应物。$n(\mathrm{CH_4}) = 4.00/16.043 = 0.2493\ \mathrm{mol}$，所以$\mathrm{CO_2}$的理论质量为$0.2493 \times 44.009 = 10.97\ \mathrm{g}$（更精确为$10.973\ \mathrm{g}$）。于是
+
+$$
+\text{百分产率} = \frac{9.15}{10.973}\times 100\% = 83.4\%.
+$$
+
+如果在相除之前把理论质量修约为$11.0\ \mathrm{g}$，会得到$83.2\%$，相差十分之二个百分点。保留多余的数字，最后再对百分数修约。$4.00$和$9.15$的三位有效数字支持$83.4\%$，而不是一长串数字。缺少的$1.8\ \mathrm{g}$是未回收的二氧化碳，而不是方程式的失败：方程式给出了上限，而实验没有达到它。
+:::
+:::
+
+百分原子经济性是另一种百分数，很容易与产率混淆。特罗斯特（Barry Trost）于 1991 年把它作为一个设计问题提出：在配平的方程式本身作为反应物所吸收的质量中，有多大比例注定进入你真正想要的产物？对于$\mathrm{CaCO_3 \rightarrow CaO + CO_2}$，以石灰为目标产物，$M(\mathrm{CaCO_3}) = 40.078 + 12.011 + 3\times 15.999 = 100.086\ \mathrm{g\,mol^{-1}}$，$M(\mathrm{CaO}) = 56.077\ \mathrm{g\,mol^{-1}}$，所以百分原子经济性为$(56.077/100.086)\times 100\% = 56.03\%$。其余$43.97\%$是二氧化碳，无论操作多么仔细、产率多么接近$100\%$，方程式都会生成它。石灰的产率达到$90\%$并不能改善这个$56.03\%$；它只意味着你分离出了本已不完整的质量份额中的十分之九。产率衡量的是实验室，原子经济性衡量的是方程式。两者都不衡量溶剂、能耗或毒性，所以单凭任何一个都不能作出环境方面的结论。这个数值值得如实地算一次，而不要把它冒充为产率。
+
+::: warning 质量不是物质的量，下标不可调整 {#warn-mass-mole}
+本章大多数错误答案出自三个错误。把系数读作克：甲烷与氧反应的质量比不是$1:2$，而接近$1:4$。为了凑配平而改动下标——因为$\mathrm{H_2 + O_2}$配不平就写成$\mathrm{H_2O_2}$，就用过氧化氢取代了水，方程式可以配平却仍是错误的反应。把按质量计较少的那种物质当作限量反应物。应比较$n/\nu$，而不是瓶子上标的质量。超过$100\%$的百分产率属于同一类错误：上限被低估了，或者天平上的固体不是纯净干燥的产物。质量守恒并没有失效。
+:::
+
+::: quiz
+在$\mathrm{CH_4 + 2\,O_2 \rightarrow CO_2 + 2\,H_2O}$中，$\mathrm{O_2}$前面的系数$2$表示什么？
+- [x] 每有一摩尔$\mathrm{CH_4}$反应，就消耗两摩尔$\mathrm{O_2}$。
+- [ ] 每克$\mathrm{CH_4}$消耗两克$\mathrm{O_2}$。
+- [ ] 一个$\mathrm{O_2}$分子的质量是一个$\mathrm{CH_4}$分子的两倍。
+- [ ] 氧必然是限量反应物。
+::: solution
+系数乘的是物质的量。相应的质量比为$(2 \times 31.998)/16.043 \approx 3.99$，即每克甲烷约需四克氧，而不是两克。第三个选项把系数与摩尔质量之比混为一谈：$M(\mathrm{O_2})$恰好约为$M(\mathrm{CH_4})$的两倍，这是关于原子的事实，而不是关于方程式的事实。哪种试剂是限量反应物取决于你混合的量。系数只告诉你一种试剂对另一种试剂的需求。
+:::
+:::
+
 ::: history
-- 1662 (Boyle's law)
-- 1787 (Charles's law of volumes)
-- 1789 (Lavoisier's Traité and conservation of mass)
-- 1808 (Dalton's atomic theory)
+这套算术的奠基人屈指可数，不需要任何神话。拉瓦锡（Antoine Laurent Lavoisier）在《化学基础论》（*Traité élémentaire de chimie*，1789）中把质量守恒确立为这门学科的工作规则：称量进入的和离开的，因为没有任何东西被创造或消灭。普鲁斯特（Joseph Proust）从 1794 年起发表论文，捍卫定比定律——一种化合物所含各元素的质量比固定——反对认为比例可以连续变化的贝托莱（Claude Louis Berthollet）。里希特（Jeremias Benjamin Richter）在《化学计量学原理》（*Anfangsgründe der Stöchyometrie*，1792）中创造了 *Stöchiometrie* 一词，用来指他在酸碱反应中测得的质量关系。道尔顿（John Dalton）的《化学哲学新体系》（*A New System of Chemical Philosophy*，1808）把这些固定比例解释为具有特征重量的原子以小整数比结合，这就是配平方程式用整数系数而不用任意质量来书写的原因。摩尔把系数变成天平可以服务的数字，它是同一纲领后来的部分，在[[general-chemistry-1/atoms-and-moles]]中讨论。
 :::
-## Exercises
-::: exercise {level=1}
-Exercise 1: apply the methods of Chemical equations and stoichiometry.
-::: solution
-Solution 1.
+
+## 后续内容
+
+此后每个以“由方程式”开头的计算，都是本章换了一种单位而已。在[[general-chemistry-1/solutions-reactions]]中，物质的量$n = m/M$之外又加上了$n = cV$，同样的限量反应物检验决定沉淀出多少氯化银，或者一次滴定能中和多少酸。在[[general-chemistry-1/gases]]中，气体的物质的量通过理想气体状态方程变成体积，因此一旦知道温度和压力，[[#ex-ch4-mass]]中甲烷的质量就可以变成二氧化碳的体积。在[[general-chemistry-1/thermochemistry]]中，反应焓按所写反应每摩尔给出，即按每摩尔反应进度$\xi$给出：你在这里配平的系数就是$\Delta_\mathrm{r} H$中的系数。[[general-chemistry-2/chemical-equilibrium]]中的平衡常数以这些系数为指数构建。系数所乘的化学式已在[[general-chemistry-1/formulas-nomenclature]]中确定，而像$\mathrm{NaCl}$这样的离子化学式为何是一比一，将在[[bonding-structure/ionic-bonding]]中结合晶格能再次讨论。
+
+::: summary
+- 配平的方程式使原子守恒。系数可以改变；下标不可改变，因为下标属于物质的化学式。
+- 系数是物质的量之比。只有把每个系数乘以相应的摩尔质量之后，质量比才等于系数比。
+- 工作链是质量$\rightarrow$物质的量$\rightarrow$另一物质的物质的量$\rightarrow$质量，方程式只在中间一步使用。
+- 限量反应物是$n_i/\nu_i$最小的反应物，而不是质量最小的。理论产量是由这一进度算出的产物量。
+- 百分产率把分离得到的量与理论上限相比较。超过$100\%$的值表明上限有误或产物不纯。
+- 百分原子经济性评价的是方程式而不是实验：它是配平的方程式分配给目标产物的反应物质量份额，它不是产率。
+- 氧化数用于检验观察法得到的氧化还原配平；升高的总数必须等于降低的总数。氧化数本身不是配平方法。
 :::
-::: exercise {level=1}
-Exercise 2: apply the methods of Chemical equations and stoichiometry.
+
+## 习题
+
+::: exercise 氧的系数 {#exr-propane-o2 level=1 check="5"}
+丙烷在氧气中燃烧生成二氧化碳和水。写出方程式，并以最小整数系数配平。（输入$\mathrm{O_2}$的系数。）
 ::: solution
-Solution 2.
+未配平的骨架为$\mathrm{C_3H_8 + O_2 \rightarrow CO_2 + H_2O}$。三个碳需要$3\,\mathrm{CO_2}$；八个氢需要$4\,\mathrm{H_2O}$。右边的氧原子为$3\times 2 + 4 = 10$个，所以由五个$\mathrm{O_2}$分子提供：
+
+$$
+\mathrm{C_3H_8 + 5\,O_2 \rightarrow 3\,CO_2 + 4\,H_2O}.
+$$
+
+$\mathrm{O_2}$的系数为$5$。丙烷中碳的平均氧化数为$-8/3$，在$\mathrm{CO_2}$中为$+4$，所以燃烧是氧化还原反应，这里仅用观察法配平。
 :::
-::: exercise {level=1}
-Exercise 3: apply the methods of Chemical equations and stoichiometry.
-::: solution
-Solution 3.
 :::
-::: exercise {level=2}
-Exercise 4: apply the methods of Chemical equations and stoichiometry.
+
+::: exercise 少量甲烷生成的二氧化碳 {#exr-co2-mass level=1 check="8.78"}
+$3.20\ \mathrm{g}$甲烷在过量氧气中按$\mathrm{CH_4 + 2\,O_2 \rightarrow CO_2 + 2\,H_2O}$完全燃烧，生成多少质量的二氧化碳？用$M(\mathrm{CH_4}) = 16.043\ \mathrm{g\,mol^{-1}}$和$M(\mathrm{CO_2}) = 44.009\ \mathrm{g\,mol^{-1}}$。（以克为单位输入质量，保留三位有效数字。）
 ::: solution
-Solution 4.
+$n(\mathrm{CH_4}) = 3.20/16.043 = 0.1995\ \mathrm{mol}$。$\mathrm{CO_2}$与$\mathrm{CH_4}$的系数比为$1$，所以$m(\mathrm{CO_2}) = 0.19946 \times 44.009 = 8.778\ \mathrm{g}$，保留三位有效数字为$8.78\ \mathrm{g}$。等价地，$3.20 \times (44.009/16.043) = 3.20 \times 2.7432 = 8.78\ \mathrm{g}$。
 :::
-::: exercise {level=2}
-Exercise 5: apply the methods of Chemical equations and stoichiometry.
-::: solution
-Solution 5.
 :::
-::: exercise {level=2}
-Exercise 6: apply the methods of Chemical equations and stoichiometry.
+
+::: exercise 水的物质的量 {#exr-water-mol level=1 check="0.500"}
+$0.250\ \mathrm{mol}$甲烷按同一方程式完全燃烧，生成多少物质的量的水？（以摩尔为单位输入物质的量。）
 ::: solution
-Solution 6.
+水的系数为$2$，甲烷的系数为$1$，所以$n(\mathrm{H_2O}) = 2 \times 0.250 = 0.500\ \mathrm{mol}$。不需要摩尔质量：题目问的是物质的量，而方程式联系的正是物质的量。
 :::
-::: exercise {level=3}
-Exercise 7: apply the methods of Chemical equations and stoichiometry.
-::: solution
-Solution 7.
 :::
-::: exercise {level=3}
-Exercise 8: apply the methods of Chemical equations and stoichiometry.
+
+::: exercise 锌的限量问题 {#exr-limit-zn level=2 check="1.63"}
+锌与盐酸按下式反应：
+
+$$
+\mathrm{Zn(s) + 2\,HCl(aq) \rightarrow ZnCl_2(aq) + H_2(g)}.
+$$
+
+把一块质量为$2.40\ \mathrm{g}$的锌放入$100.0\ \mathrm{cm^3}$浓度为$0.500\ \mathrm{mol\,dm^{-3}}$的盐酸中。有多少质量的锌参加反应？用$M(\mathrm{Zn}) = 65.38\ \mathrm{g\,mol^{-1}}$。（以克为单位输入质量，保留三位有效数字。）稀盐酸有腐蚀性，放出的氢气易燃；这些数字是计算而不是操作步骤，任何实际试验都需要有人指导并进行风险评估。
 ::: solution
-Solution 8.
+酸的物质的量为$n(\mathrm{HCl}) = 0.1000\ \mathrm{dm^3} \times 0.500\ \mathrm{mol\,dm^{-3}} = 0.0500\ \mathrm{mol}$。方程式中每摩尔锌消耗两摩尔$\mathrm{HCl}$，且这个$2$是准确的，所以酸最多能溶解$0.0500/2 = 0.0250\ \mathrm{mol}$锌。参加反应的质量为
+
+$$
+m(\mathrm{Zn}) = 0.0250 \times 65.38 = 1.6345\ \mathrm{g},
+$$
+
+保留三位有效数字为$1.63\ \mathrm{g}$。可用的锌为$2.40/65.38 = 0.0367\ \mathrm{mol}$，大于$0.0250\ \mathrm{mol}$，所以锌过量，盐酸是限量反应物。把$2.40\ \mathrm{g}$与溶液中$\mathrm{HCl}$的质量$0.0500 \times 36.458 = 1.82\ \mathrm{g}$相比，可能会指向错误的试剂：酸的质量较小，而它之所以是限量反应物，只是因为正确地检验了化学计量关系，而不是因为质量比较。如果需要，生成的氢气为$0.0250 \times 2.016 = 0.0504\ \mathrm{g}$；其体积属于[[general-chemistry-1/gases]]的内容。
+:::
+:::
+
+::: exercise 未达到上限的产率 {#exr-pct-yield level=2 check="85.2"}
+质量为$6.50\ \mathrm{g}$的甲烷在过量氧气中燃烧。收集到的二氧化碳质量为$15.2\ \mathrm{g}$。百分产率是多少？用$M(\mathrm{CH_4}) = 16.043$和$M(\mathrm{CO_2}) = 44.009\ \mathrm{g\,mol^{-1}}$，并多保留几位数字。（输入百分产率，保留三位有效数字。）
+::: solution
+氧过量使甲烷成为限量反应物。$n = 6.50/16.043 = 0.4052\ \mathrm{mol}$，$\mathrm{CO_2}$的理论质量为$0.40516 \times 44.009 = 17.831\ \mathrm{g}$。百分产率为$15.2/17.831 \times 100\% = 85.2\%$。如果使用过早修约的理论质量$17.8\ \mathrm{g}$，会得到$85.4\%$，最后一位出错。实际产量小于上限，这正是回收不完全时应有的情况。
+:::
+:::
+
+::: exercise 由氧化物得到铁 {#exr-fe-mass level=2 check="14.0"}
+氧化铁（III）被过量一氧化碳按$\mathrm{Fe_2O_3 + 3\,CO \rightarrow 2\,Fe + 3\,CO_2}$还原。$20.0\ \mathrm{g}$ $\mathrm{Fe_2O_3}$能生成多少质量的铁？用$\mathrm{Fe}\ 55.845$和$\mathrm{O}\ 15.999$，故$M(\mathrm{Fe_2O_3}) = 159.687\ \mathrm{g\,mol^{-1}}$。（以克为单位输入铁的质量，保留三位有效数字。）
+::: solution
+$n(\mathrm{Fe_2O_3}) = 20.0/159.687 = 0.1252\ \mathrm{mol}$。$\mathrm{Fe}$与$\mathrm{Fe_2O_3}$的系数比为$2/1$，所以$n(\mathrm{Fe}) = 0.2505\ \mathrm{mol}$，$m(\mathrm{Fe}) = 0.25049 \times 55.845 = 13.99\ \mathrm{g}$，保留三位有效数字为$14.0\ \mathrm{g}$。正是$\mathrm{CO}$过量使氧化物成为限量反应物；没有这一信息，你还需要知道$\mathrm{CO}$的质量。
+:::
+:::
+
+::: exercise 烧瓶中剩余的甲烷 {#exr-ch4-left level=3 check="1.98"}
+$10.0\ \mathrm{g}$甲烷与$32.0\ \mathrm{g}$氧按$\mathrm{CH_4 + 2\,O_2 \rightarrow CO_2 + 2\,H_2O}$反应。未反应的甲烷质量是多少？用$M(\mathrm{CH_4}) = 16.043$和$M(\mathrm{O_2}) = 31.998\ \mathrm{g\,mol^{-1}}$。（以克为单位输入质量，保留三位有效数字。）
+::: hint
+算出两个物质的量，各自除以其系数，较小的商就是反应进度。剩余的甲烷等于起始的甲烷减去$\xi$乘以其摩尔质量。
+:::
+::: solution
+$n(\mathrm{CH_4}) = 10.0/16.043 = 0.6233\ \mathrm{mol}$，$n(\mathrm{O_2}) = 32.0/31.998 = 1.0001\ \mathrm{mol}$。于是甲烷的$n/\nu$为$0.6233\ \mathrm{mol}$，氧的为$0.5000\ \mathrm{mol}$，所以氧是限量反应物，$\xi = 0.5000\ \mathrm{mol}$。消耗的甲烷为$0.5000 \times 16.043 = 8.022\ \mathrm{g}$。剩余的甲烷为$10.0 - 8.022 = 1.978\ \mathrm{g}$，保留三位有效数字为$1.98\ \mathrm{g}$。放入烧瓶的甲烷质量小于氧的质量，然而甲烷仍有剩余：这正是在比较之前先除以系数和摩尔质量的意义所在。
+:::
+:::
+
+::: exercise 铁还原反应的原子经济性 {#exr-ae-fe level=3 check="45.83"}
+对于$\mathrm{Fe_2O_3 + 3\,CO \rightarrow 2\,Fe + 3\,CO_2}$，以铁为目标产物。由摩尔质量$M(\mathrm{Fe_2O_3}) = 159.687$、$M(\mathrm{Fe}) = 55.845$和$M(\mathrm{CO}) = 28.010\ \mathrm{g\,mol^{-1}}$计算百分原子经济性。（输入百分原子经济性，保留两位小数。）在同一计算中说明：按照这一指标本身的标准，为什么即使产率为$100\%$，该过程仍不是无废物的。
+::: hint
+原子经济性使用的是配平方程式所蕴含的质量，而不是你碰巧称取的质量。目标产物质量除以反应物总质量，再乘以$100\%$。
+:::
+::: solution
+目标产物是两摩尔铁，质量为$2 \times 55.845 = 111.690\ \mathrm{g}$。方程式中的反应物是一摩尔氧化物和三摩尔$\mathrm{CO}$，质量为$159.687 + 3 \times 28.010 = 243.717\ \mathrm{g}$。百分原子经济性为
+
+$$
+\frac{111.690}{243.717}\times 100\% = 45.83\%.
+$$
+
+反应物质量的其余$54.17\%$变成了二氧化碳，即使每一个铁原子都被回收，方程式也会生成它。$100\%$的百分产率意味着每摩尔氧化物你分离出了全部$111.690\ \mathrm{g}$铁；它并不能把二氧化碳放回铁中。产率和原子经济性回答的是不同的问题，其中一个数值好看，并不自动说明另一个的任何情况。该指标也忽略了高炉的能耗和一氧化碳的毒性，所以$45.83\%$本身并不是对这一工业过程的评判。
+:::
 :::

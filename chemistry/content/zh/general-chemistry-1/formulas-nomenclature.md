@@ -1,108 +1,402 @@
-## Ionic and molecular compounds
-::: definition {#formulasnomenclature-d1}
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Ionic And Molecular Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
+教学实验台上的一个试剂瓶贴着标签*五水合硫酸铜（II）*，下面写着化学式$\mathrm{CuSO_4\cdot 5H_2O}$。瓶里的蓝色晶体是一种物质，只要你会读，这个标签就告诉了你关于它的大量信息。名称说明铜以离子$\mathrm{Cu^{2+}}$而不是$\mathrm{Cu^{+}}$的形式存在。它说明阴离子是硫酸根$\mathrm{SO_4^{2-}}$，一个在大多数反应中保持完整的五原子基团。它还说明每个铜离子对应有五个水分子结合在晶体中，因此你称量的东西有三分之一以上是水。这些事实中的每一个都会改变摩尔质量，而每个摩尔质量错误都会直接传入下一章的化学计量。
+
+本章讨论这种阅读的两个方向。按照国际纯粹与应用化学联合会（IUPAC）关于入门课程所遇到的无机化合物的规则——在中文中则按中国化学会的相应命名原则——由名称写出化学式，由化学式写出名称。然后我们双向进行算术：由化学式计算每种元素的质量分数，由测得的百分数——元素分析的结果——反推出与之相符的最简式，再得到分子式。所用工具是[[general-chemistry-1/atoms-and-moles]]中的工具：摩尔质量和换算$n = m/M$。全章使用的原子量为$\mathrm{H}\ 1.008$、$\mathrm{C}\ 12.011$、$\mathrm{N}\ 14.007$、$\mathrm{O}\ 15.999$、$\mathrm{Na}\ 22.990$、$\mathrm{Mg}\ 24.305$、$\mathrm{S}\ 32.06$、$\mathrm{Cl}\ 35.45$、$\mathrm{K}\ 39.098$、$\mathrm{Fe}\ 55.845$和$\mathrm{Cu}\ 63.546$，即由 IUPAC 标准原子量导出的约定值。
+
+## 离子化合物与分子化合物
+
+“化学式”一词背后隐藏着两类不同的东西。水由分子组成：每个$\mathrm{H_2O}$单元是一个独立的粒子，两个氢原子与一个氧原子成键，在水蒸气中这些粒子各自飞行。氯化钠则根本不由分子组成。一粒食盐晶体是钠离子和氯离子的三维阵列，其中每个$\mathrm{Na^{+}}$被六个$\mathrm{Cl^{-}}$包围，每个$\mathrm{Cl^{-}}$被六个$\mathrm{Na^{+}}$包围。没有哪个氯离子属于哪个特定的钠离子。化学式$\mathrm{NaCl}$只报告比例。
+
+::: definition 离子化合物与分子化合物 {#def-ionic-molecular}
+**离子化合物**由正离子（**阳离子**）和负离子（**阴离子**）通过静电吸引结合成扩展的晶格。其化学式是**化学式单元**：电中性的最小整数离子比，如$\mathrm{NaCl}$、$\mathrm{MgCl_2}$或$\mathrm{Al_2O_3}$。
+
+**分子化合物**由独立的分子组成，分子中的原子通过共用电子对（共价键）相连。其**分子式**给出一个分子中每种元素的实际原子数，如$\mathrm{H_2O}$、$\mathrm{NH_3}$或$\mathrm{C_6H_{12}O_6}$。
+
+**多原子离子**是带有净电荷的共价键合原子团，如$\mathrm{NH_4^{+}}$或$\mathrm{SO_4^{2-}}$。含有多原子离子的化合物是离子化合物，尽管每个离子内部的键是共价键。
 :::
-## empirical and molecular formulas
-::: definition {#formulasnomenclature-d2}
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Empirical And Molecular Formulas is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
+
+区分两者的**经验规则**是：金属与非金属形成的化合物通常是离子化合物，非金属之间形成的化合物通常是分子化合物。铵盐打破了规则的前半句，因为$\mathrm{NH_4^{+}}$是完全由非金属构成的阳离子。氯化铝从另一个方向打破了后半句：它是金属–非金属化合物，但在蒸气中以$\mathrm{Al_2Cl_6}$分子形式存在。化学键是一个连续谱，一种化合物处于其中何处，是[[bonding-structure/ionic-bonding]]和[[bonding-structure/covalent-lewis]]的内容。对于命名和书写化学式，经验规则就足够了。
+
+### 常见离子的电荷
+
+主族金属形成的阳离子所带电荷，使它们具有前一个稀有气体的电子数：第 1 族给出$+1$（$\mathrm{Na^{+}}$、$\mathrm{K^{+}}$），第 2 族给出$+2$（$\mathrm{Mg^{2+}}$、$\mathrm{Ca^{2+}}$），铝给出$\mathrm{Al^{3+}}$。非金属通过得到电子达到后一个稀有气体的电子数而形成阴离子：第 17 族给出$-1$（$\mathrm{F^{-}}$、$\mathrm{Cl^{-}}$），第 16 族给出$-2$（$\mathrm{O^{2-}}$、$\mathrm{S^{2-}}$），氮给出氮离子$\mathrm{N^{3-}}$。为什么稀有气体的电子数更有利，是一个关于电子排布的问题，在[[general-chemistry-1/periodicity]]中回答。过渡金属则没有那么整齐：铁既形成$\mathrm{Fe^{2+}}$也形成$\mathrm{Fe^{3+}}$，铜既形成$\mathrm{Cu^{+}}$也形成$\mathrm{Cu^{2+}}$，名称必须说明是哪一种。
+
+多原子离子必须记住，因为它们的化学式无法由单一规则推出。本课程中经常出现的有以下这些。
+
+| 离子 | 名称 | 离子 | 名称 |
+|---|---|---|---|
+| $\mathrm{NH_4^{+}}$ | 铵根 | $\mathrm{OH^{-}}$ | 氢氧根 |
+| $\mathrm{NO_3^{-}}$ | 硝酸根 | $\mathrm{NO_2^{-}}$ | 亚硝酸根 |
+| $\mathrm{SO_4^{2-}}$ | 硫酸根 | $\mathrm{SO_3^{2-}}$ | 亚硫酸根 |
+| $\mathrm{HSO_4^{-}}$ | 硫酸氢根 | $\mathrm{CO_3^{2-}}$ | 碳酸根 |
+| $\mathrm{HCO_3^{-}}$ | 碳酸氢根 | $\mathrm{PO_4^{3-}}$ | 磷酸根 |
+| $\mathrm{HPO_4^{2-}}$ | 磷酸氢根 | $\mathrm{H_2PO_4^{-}}$ | 磷酸二氢根 |
+| $\mathrm{ClO_4^{-}}$ | 高氯酸根 | $\mathrm{ClO_3^{-}}$ | 氯酸根 |
+| $\mathrm{ClO^{-}}$ | 次氯酸根 | $\mathrm{MnO_4^{-}}$ | 高锰酸根 |
+| $\mathrm{CrO_4^{2-}}$ | 铬酸根 | $\mathrm{Cr_2O_7^{2-}}$ | 重铬酸根 |
+| $\mathrm{CH_3COO^{-}}$ | 乙酸根（醋酸根） | $\mathrm{CN^{-}}$ | 氰根 |
+
+有一些规律可以帮助记忆。对于同一元素的含氧酸根，英文用 *-ate* 表示含氧较多的离子、*-ite* 表示含氧较少的离子，中文则分别称为“某酸根”和“亚某酸根”：硝酸根$\mathrm{NO_3^{-}}$与亚硝酸根$\mathrm{NO_2^{-}}$，硫酸根与亚硫酸根。英文词头 *per-*（中文“高”）比“某酸根”多一个氧，*hypo-*（中文“次”）比“亚某酸根”少一个氧，由此得到氯的系列：高氯酸根$\mathrm{ClO_4^{-}}$、氯酸根$\mathrm{ClO_3^{-}}$、亚氯酸根$\mathrm{ClO_2^{-}}$、次氯酸根$\mathrm{ClO^{-}}$。给多电荷阴离子加上一个$\mathrm{H^{+}}$，其电荷减一，名称中加“氢”（英文词头 *hydrogen*）：$\mathrm{CO_3^{2-}}$变为$\mathrm{HCO_3^{-}}$。$\mathrm{HCO_3^{-}}$的俗名“重碳酸根”（英文 *bicarbonate*）仍印在超市的包装袋上，但它不是系统名称。
+
+### 书写离子化合物的化学式
+
+离子化合物是电中性的，所以其阳离子的正电荷必须恰好抵消阴离子的负电荷。这一个要求就确定了化学式。
+
+::: algorithm 由离子写出离子化合物的化学式 {#alg-ionic-formula}
+1. 写出带电荷的阳离子和阴离子，例如$\mathrm{Al^{3+}}$和$\mathrm{SO_4^{2-}}$。
+2. 找出使总电荷相互抵消的各离子的最小数目。两个电荷绝对值的最小公倍数就是每一边必须达到的总电荷：这里$\mathrm{lcm}(3, 2) = 6$，所以两个$\mathrm{Al^{3+}}$（$+6$）和三个$\mathrm{SO_4^{2-}}$（$-6$）。
+3. 阳离子在前、阴离子在后，把个数写成下标，不写电荷：$\mathrm{Al_2(SO_4)_3}$。
+4. 多原子离子的个数大于一时，把它放在括号中，使下标乘以整个离子。下标为$1$时省略。
+5. 检验：所有离子的（个数 × 电荷）之和为零。
 :::
-## percentage composition and the naming of inorganic compounds
-::: definition {#formulasnomenclature-d3}
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
-Percentage Composition And The Naming Of Inorganic Compounds is one of the three core topics of the chapter Formulas Nomenclature. Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
+
+第 4 步中的括号很重要。$\mathrm{Al_2(SO_4)_3}$含三个硫原子和十二个氧原子；如果不加括号写成$\mathrm{Al_2SO_{43}}$，就毫无意义。约简为最小比例只适用于离子，而不适用于多原子离子内部的原子：$\mathrm{Na_2SO_4}$不能通过改动$4$来“化简”，因为这个$4$属于硫酸根离子。
+
+## 无机化合物的命名
+
+本章的名称遵循 IUPAC 无机化学命名建议（以“红皮书”形式出版）在一年级课程中使用的简化形式，中文名称则依照中国化学会的无机化合物命名原则。名称不是为了优雅而选择的描述；它是一种编码，另一位化学家必须能由它写出唯一的化学式。
+
+::: definition 二元离子化合物与盐的命名 {#def-ionic-names}
+离子化合物的名称由阳离子名称和阴离子名称组成；英文是阳离子在前、阴离子在后，中文则读作“某化某”或“某酸某”，阴离子在前。
+
+- 单原子阳离子取元素名称：钠、镁、铝。
+- 如果金属形成不止一种阳离子，就在元素名称后紧接着用括号中的罗马数字标明其电荷，不留空格（**斯托克命名法**）：$\mathrm{Fe^{2+}}$为铁（II），$\mathrm{Fe^{3+}}$为铁（III），还有铜（I）和铜（II）。
+- 单原子阴离子在英文中取元素名称的词干加词尾 *-ide*，在中文中作“某化”：氯化、氧化、硫化、氮化、氢化。
+- 多原子离子保留自己的名称：铵、硫酸根、硝酸根、氢氧根。
+
+简单盐的名称中*不*写出各离子的个数，因为一旦电荷已知，电中性就确定了它们。$\mathrm{CaCl_2}$叫氯化钙，而不必叫二氯化钙。
 :::
-## Review
-::: widget graph
-nodes: Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds, review
-edges: Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds, review
-caption: Formulas and names of compounds concept map
+
+较老的做法——至今仍印在一些瓶子上——在英文中用拉丁词干加词尾 *-ous* 表示较低的电荷、*-ic* 表示较高的电荷：ferrous（$\mathrm{Fe^{2+}}$）与 ferric（$\mathrm{Fe^{3+}}$），cuprous（$\mathrm{Cu^{+}}$）与 cupric（$\mathrm{Cu^{2+}}$）；中文的对应做法是用“亚”字表示较低价态，如氯化亚铁与氯化铁、氧化亚铜与氧化铜。问题在于这种词尾只告诉你哪个更大，而不告诉你电荷是多少，所以对每种金属都必须另外记住。罗马数字本身就携带了这一信息。
+
+::: definition 二元分子化合物的命名 {#def-molecular-names}
+两种非金属形成的化合物，英文把电负性较小的元素以其元素名称放在前面，把电负性较大的元素加词尾 *-ide* 放在后面；中文则读作“某化某”，电负性较大的元素先读。用数字词头表示每种元素的原子数（英文用希腊词头）：
+
+| 数目 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 词头 | 一（mono） | 二（di） | 三（tri） | 四（tetra） | 五（penta） | 六（hexa） | 七（hepta） | 八（octa） | 九（nona） | 十（deca） |
+
+第一个元素的“一”省略：$\mathrm{CO_2}$是二氧化碳，而不是二氧化一碳。例子：$\mathrm{N_2O_4}$四氧化二氮，$\mathrm{PCl_5}$五氯化磷，$\mathrm{SF_6}$六氟化硫，$\mathrm{P_4O_{10}}$十氧化四磷。英文的现行建议不省略词头的元音（写 tetraoxide 而不写 tetroxide），一氧化碳的 monoxide 是公认的例外；中文名称没有这一问题。少数氢化物保留传统名称：水$\mathrm{H_2O}$、氨$\mathrm{NH_3}$、甲烷$\mathrm{CH_4}$。
 :::
-::: widget stats
+
+为什么这里用词头而盐不用？因为两种非金属往往形成几种化合物，其化学式无法由离子电荷预测。仅氮和氧就形成$\mathrm{N_2O}$、$\mathrm{NO}$、$\mathrm{NO_2}$、$\mathrm{N_2O_3}$、$\mathrm{N_2O_4}$和$\mathrm{N_2O_5}$，名称必须把这六种都区分开。相比之下，在氯化镁这样的盐中，只有一种可能的中性比例。
+
+还有两个家族补全了一年级的词汇。
+
+**酸。** 在水中释放$\mathrm{H^{+}}$的化合物，在水溶液中时按酸命名。二元酸在英文中作 *hydro-…-ic acid*，中文作“氢某酸”：$\mathrm{HCl(aq)}$是氢氯酸（通称盐酸），$\mathrm{HBr(aq)}$是氢溴酸。含氧酸按其阴离子命名，“某酸根”对应“某酸”（英文 *-ate* 变为 *-ic acid*），“亚某酸根”对应“亚某酸”（*-ite* 变为 *-ous acid*）：$\mathrm{HNO_3}$硝酸（硝酸根），$\mathrm{HNO_2}$亚硝酸（亚硝酸根），$\mathrm{H_2SO_4}$硫酸，$\mathrm{H_2SO_3}$亚硫酸，$\mathrm{H_3PO_4}$磷酸，$\mathrm{HClO_4}$高氯酸，$\mathrm{HClO}$次氯酸。纯的气态$\mathrm{HCl}$是氯化氢；“酸”这个词描述的是它在水中的行为。
+
+**水合物。** 许多盐结晶时带有以固定比例保持在晶格中的水分子，即**结晶水**。化学式用一个居中的点把盐和水连起来，名称前加“几水合”（英文在后面加带词头的 *hydrate*）：$\mathrm{CuSO_4\cdot 5H_2O}$五水合硫酸铜（II），$\mathrm{MgSO_4\cdot 7H_2O}$七水合硫酸镁（泻盐），$\mathrm{CaSO_4\cdot 2H_2O}$二水合硫酸钙（石膏）。这个点不是乘号。它的意思是“连同”，摩尔质量是两部分之和。
+
+::: example 由名称写化学式，由化学式写名称 {#ex-names}
+(a) 写出硫酸铝、磷酸钙、氧化铁（III）和碳酸铵的化学式。(b) 命名$\mathrm{FeCl_2}$、$\mathrm{N_2O_4}$、$\mathrm{KMnO_4}$和$\mathrm{Cu(NO_3)_2}$。
+::: solution
+(a) *硫酸铝*：$\mathrm{Al^{3+}}$和$\mathrm{SO_4^{2-}}$；用两个和三个离子使电荷达到$\pm 6$，所以是$\mathrm{Al_2(SO_4)_3}$。*磷酸钙*：$\mathrm{Ca^{2+}}$和$\mathrm{PO_4^{3-}}$；同样是$\pm 6$，三个钙和两个磷酸根，所以是$\mathrm{Ca_3(PO_4)_2}$。*氧化铁（III）*：数字表明是$\mathrm{Fe^{3+}}$，与$\mathrm{O^{2-}}$结合；$\mathrm{lcm}(3,2) = 6$给出$\mathrm{Fe_2O_3}$。*碳酸铵*：$\mathrm{NH_4^{+}}$和$\mathrm{CO_3^{2-}}$；每个碳酸根两个铵根，所以是$\mathrm{(NH_4)_2CO_3}$。每个检验之和都为零：$2(+3) + 3(-2) = 0$，$3(+2) + 2(-3) = 0$，$2(+3) + 3(-2) = 0$，$2(+1) + (-2) = 0$。
+
+(b) $\mathrm{FeCl_2}$：氯离子为$-1$，两个共$-2$，所以铁是$\mathrm{Fe^{2+}}$，名称为*氯化铁（II）*（习惯名氯化亚铁）。必须写出数字，因为铁还形成$\mathrm{FeCl_3}$。$\mathrm{N_2O_4}$是两种非金属的化合物，所以用词头：*四氧化二氮*。$\mathrm{KMnO_4}$含$\mathrm{K^{+}}$和高锰酸根离子$\mathrm{MnO_4^{-}}$：*高锰酸钾*。钾只有一种离子电荷，所以不用数字。$\mathrm{Cu(NO_3)_2}$：两个硝酸根离子共带$-2$，所以铜是$\mathrm{Cu^{2+}}$，名称为*硝酸铜（II）*。
+
+(b) 中的推理总是经由阴离子。阴离子的电荷由表确定，所以阳离子的电荷就是电中性所要求的值，罗马数字只是把它报告出来。
 :::
-::: widget quiz
 :::
-::: summary
-- Ionic and molecular compounds
-- empirical and molecular formulas
-- percentage composition and the naming of inorganic compounds
-- Ionic and molecular compounds, empirical and molecular formulas, percentage composition and the naming of inorganic compounds
+
+罗马数字就是金属的氧化数，其意义与[[general-chemistry-1/stoichiometry]]中相同。对于单原子阳离子，它等于离子电荷。氧化数也解释了氯的含氧酸根系列：氯在高氯酸根中为$+7$，在氯酸根中为$+5$，在亚氯酸根中为$+3$，在次氯酸根中为$+1$。这些词头和词尾提示的是一架氧化态的阶梯，而不是随意的装饰。
+
+::: warning 读化学式时的三种错误 {#warn-formula}
+*离子电荷不是下标。* 氯化镁是$\mathrm{MgCl_2}$，不是$\mathrm{Mg_2Cl}$，也不是$\mathrm{MgCl}$：$\mathrm{Mg^{2+}}$中的$2$变成氯离子的个数，而不是镁离子的个数。*简单盐的名称中不用数字词头。* $\mathrm{CaCl_2}$是氯化钙，而$\mathrm{FeCl_3}$是氯化铁（III）；“三氯化铁”这个常见叫法不是该盐的系统名称，而对于可变价金属，不带价态标记的名称是含糊的。*大写字母携带意义。* $\mathrm{Co}$是钴，$\mathrm{CO}$是一氧化碳；$\mathrm{NO}$是一氧化氮，$\mathrm{No}$是锘。抄错大小写的化学式代表的是另一种物质，摩尔质量不同，危险性也不同。
 :::
+
+## 百分组成
+
+化学式与原子量一起，确定了化合物的质量如何在各元素之间分配。这种分配就是元素分析报告的组成，也就是化肥袋上印的“含氮量”。
+
+::: definition 元素的质量分数 {#def-mass-percent}
+化合物中元素$\mathrm{E}$的**质量分数**（以百分数表示，即质量分数 × 100 %）为
+
+$$
+w(\mathrm{E}) = \frac{\text{样品中 } \mathrm{E} \text{ 的质量}}{\text{样品的质量}} \times 100\%.
+$$
+
+纯化合物中所有元素的百分数之和为$100\%$（修约误差除外）。对于纯物质，$w(\mathrm{E})$与样品大小无关：这就是普鲁斯特的定比定律。
+:::
+
+::: proposition 由化学式求质量分数 {#prop-percent}
+若化合物的一个化学式单元（或分子）含$k$个元素$\mathrm{E}$的原子，则
+
+$$
+w(\mathrm{E}) = \frac{k\,M(\mathrm{E})}{M(\text{化合物})} \times 100\%,
+$$
+
+其中$M(\mathrm{E})$是该元素的摩尔质量，$M(\text{化合物})$是化合物的摩尔质量。这一结果对该化合物的任何纯样品都成立；对于水合物，只有当结晶水计入$M(\text{化合物})$时才成立。
+:::
+
+::: proof
+取恰好一摩尔化合物。其质量为$M(\text{化合物})$乘以$1\ \mathrm{mol}$。每个化学式单元含$k$个$\mathrm{E}$原子，所以一摩尔化学式单元含$k$摩尔$\mathrm{E}$原子，其质量为$k\,M(\mathrm{E})$乘以$1\ \mathrm{mol}$。质量分数是这两个质量之比，因子$1\ \mathrm{mol}$约去：
+
+$$
+\frac{k\,M(\mathrm{E})\times 1\ \mathrm{mol}}{M(\text{化合物})\times 1\ \mathrm{mol}} = \frac{k\,M(\mathrm{E})}{M(\text{化合物})}.
+$$
+
+任何其他质量$m$的样品含$m/M(\text{化合物})$摩尔化合物，元素的质量和样品的质量按同一因子缩放，所以分数不变。这就是百分组成属于物质而不属于样品的原因。
+:::
+
+::: example 化肥中的氮 {#ex-nh4no3}
+硝酸铵$\mathrm{NH_4NO_3}$是一种氮肥。计算各元素的质量分数，以及$1.000\ \mathrm{kg}$纯盐所提供的氮的质量。
+::: solution
+一个化学式单元含两个氮原子（$\mathrm{NH_4^{+}}$中一个，$\mathrm{NO_3^{-}}$中一个）、四个氢原子和三个氧原子。摩尔质量为
+
+$$
+M(\mathrm{NH_4NO_3}) = 2(14.007) + 4(1.008) + 3(15.999) = 28.014 + 4.032 + 47.997 = 80.043\ \mathrm{g\,mol^{-1}}.
+$$
+
+由[[#prop-percent]]，
+
+$$
+w(\mathrm{N}) = \frac{28.014}{80.043}\times 100\% = 35.00\%,\quad
+w(\mathrm{H}) = \frac{4.032}{80.043}\times 100\% = 5.04\%,\quad
+w(\mathrm{O}) = \frac{47.997}{80.043}\times 100\% = 59.96\%.
+$$
+
+三者之和为$100.00\%$。因此一千克纯盐提供$0.3500 \times 1.000\ \mathrm{kg} = 0.3500\ \mathrm{kg}$，即$350.0\ \mathrm{g}$氮。因为“化学式开头有一个$\mathrm{N}$”而只数一次氮，会得到正确答案的一半：务必数出整个化学式单元中该元素的每一个原子。
+
+硝酸铵被归类为氧化剂，大量库存须按专门规定储存，因为受污染或受热的物料可能剧烈分解。这是对它实行管制的理由，而不是本章算术的话题。
+:::
+:::
+
+同一命题解释了一个值得一看的规律。在烷烃$\mathrm{C}_n\mathrm{H}_{2n+2}$中，每多一个碳就增加一个$\mathrm{CH_2}$单元。链端的两个氢随着链的增长变得越来越不重要，所以碳的百分数逐渐趋向$\mathrm{CH_2}$本身的值$12.011/14.027 = 85.63\%$，却永远达不到。
+
+::: widget plot
+f: 100*12.011*x/(14.027*x + 2.016)
+x: 1, 30
+y: 70, 90
+hlines: 85.63
+labels: w(\mathrm{C})/\%
+caption: 烷烃$\mathrm{C}_n\mathrm{H}_{2n+2}$中碳的质量分数对$n$作图（只读取整数值）。甲烷含碳$74.87\%$；辛烷（$n = 8$）为$84.12\%$。虚线为$85.63\%$，即重复单元$\mathrm{CH_2}$的值，该系列趋近它却永远达不到。仅凭百分组成几乎无法区分长链烷烃，这就是确定分子式需要摩尔质量的原因。
+:::
+
+这条曲线的变平是关于精度的警告。辛烷与癸烷的含碳量相差不到一个百分点。精度为$\pm 0.3$个百分点的分析（这是典型水平）在没有单独测量摩尔质量的情况下，无法区分相邻的长链烷烃。下一节把这一点表述得更正式。
+
+## 最简式与分子式
+
+元素分析报告的是百分数。百分数给出原子数之比。原子数之比并不给出一个分子中的原子数，因为苯$\mathrm{C_6H_6}$和乙炔$\mathrm{C_2H_2}$的组成相同，按质量含碳都是$92.26\%$。这一区别由两种化学式来表达。
+
+::: definition 最简式与分子式 {#def-empirical}
+化合物的**最简式**（实验式）给出其中各元素原子数的最小整数比。**分子式**给出一个分子中每种元素的实际原子数。分子式是最简式的整数$n$倍，
+
+$$
+\text{分子式} = (\text{最简式})_n, \qquad n = \frac{M(\text{化合物})}{M(\text{最简式单元})}.
+$$
+
+对于离子化合物，化学式单元本身就是最小比例，所以最简式就是其化学式。葡萄糖的分子式为$\mathrm{C_6H_{12}O_6}$，最简式为$\mathrm{CH_2O}$；过氧化氢为$\mathrm{H_2O_2}$，最简式为$\mathrm{HO}$；水的两者都是$\mathrm{H_2O}$。
+:::
+
+不同的化合物可以有相同的最简式——甲醛（$\mathrm{CH_2O}$）、乙酸（$\mathrm{C_2H_4O_2}$）和葡萄糖（$\mathrm{C_6H_{12}O_6}$）都约化为$\mathrm{CH_2O}$——而即使分子式也不能唯一确定一种物质：乙醇和甲氧基甲烷（二甲醚）都是$\mathrm{C_2H_6O}$。原子如何连接是一个结构问题，属于[[organic-1/organic-structures]]。本章只讲到化学式为止。
+
+::: algorithm 由质量分数求最简式 {#alg-empirical}
+1. 假设样品为$100\ \mathrm{g}$，于是每个百分数就成为以克计的质量。（任何质量都可以；$100\ \mathrm{g}$省去一步。）如果某种元素的百分数没有给出，而已知只含其他这些元素，则用$100\%$减去其余的求出它。
+2. 把每个质量除以该元素的摩尔质量，得到以摩尔计的物质的量。
+3. 把每个物质的量都除以其中最小的那个。
+4. 如果各商都接近整数（相差约$0.05$以内），就修约。如果某个商接近简单分数——$x.50$、$x.33$、$x.67$、$x.25$、$x.75$——就把*所有*的商分别乘以$2$、$3$、$3$、$4$或$4$，然后再修约。
+5. 用这些整数作下标写出最简式。
+6. 如果摩尔质量已知，计算$n = M(\text{化合物})/M(\text{最简式})$，把$n$修约为整数，并把每个下标乘以它。
+:::
+
+大多数错误出在第 4 步。商$1.33$不是“约等于$1$”，把它舍掉得到的化学式会与数据相差四分之一的氧。数据对每个商的准确度是百分之二三，而不是百分之三十。
+
+::: example 需要乘以三的最简式 {#ex-fe3o4}
+某黑色铁氧化物按质量含铁$72.36\%$，其余为氧。求其最简式。
+::: solution
+氧由差值求得：$100.00 - 72.36 = 27.64\%$。在$100\ \mathrm{g}$中：
+
+$$
+n(\mathrm{Fe}) = \frac{72.36\ \mathrm{g}}{55.845\ \mathrm{g\,mol^{-1}}} = 1.2957\ \mathrm{mol}, \qquad
+n(\mathrm{O}) = \frac{27.64\ \mathrm{g}}{15.999\ \mathrm{g\,mol^{-1}}} = 1.7276\ \mathrm{mol}.
+$$
+
+除以较小的物质的量，得$\mathrm{Fe}$ $1.000$，$\mathrm{O}$ $1.7276/1.2957 = 1.333$。氧的商多出三分之一，这不是修约误差。两者都乘以$3$，得$\mathrm{Fe}$ $3.000$，$\mathrm{O}$ $4.000$，所以最简式为$\mathrm{Fe_3O_4}$。
+
+用[[#prop-percent]]检验：$M(\mathrm{Fe_3O_4}) = 3(55.845) + 4(15.999) = 231.531\ \mathrm{g\,mol^{-1}}$，$w(\mathrm{Fe}) = 167.535/231.531 \times 100\% = 72.36\%$，与所给一致。把$1.333$修约为$1$会得到$\mathrm{FeO}$，其含铁$77.73\%$，与测量值相差五个百分点。这种氧化物是磁铁矿，其中铁同时以$\mathrm{Fe^{2+}}$和$\mathrm{Fe^{3+}}$形式存在；平均氧化数$+8/3$表明化学式单元中含有两种铁离子，而不是某个离子带有分数电荷。
+:::
+:::
+
+有机化合物的元素分析通常用**燃烧分析**进行。把称过的样品在氧气流中完全燃烧；全部碳以二氧化碳形式离开，全部氢以水的形式离开，测量两者的质量。样品中的氧无法用这种方法求得，因为产物中的氧有一部分来自气流，所以氧由差值求得。
+
+::: example 燃烧分析 {#ex-combustion}
+$0.2500\ \mathrm{g}$只含碳、氢、氧的化合物样品完全燃烧，生成$0.4994\ \mathrm{g}$ $\mathrm{CO_2}$和$0.2045\ \mathrm{g}$ $\mathrm{H_2O}$。另一项测量给出的摩尔质量接近$88\ \mathrm{g\,mol^{-1}}$。求最简式和分子式。
+::: solution
+$\mathrm{CO_2}$中的碳全部来自样品。$M(\mathrm{CO_2}) = 44.009\ \mathrm{g\,mol^{-1}}$，其中$12.011$是碳，所以
+
+$$
+m(\mathrm{C}) = 0.4994\ \mathrm{g} \times \frac{12.011}{44.009} = 0.13630\ \mathrm{g}.
+$$
+
+水中的氢全部来自样品。$M(\mathrm{H_2O}) = 18.015\ \mathrm{g\,mol^{-1}}$，其中$2 \times 1.008 = 2.016$是氢，所以
+
+$$
+m(\mathrm{H}) = 0.2045\ \mathrm{g} \times \frac{2.016}{18.015} = 0.022885\ \mathrm{g}.
+$$
+
+氧由差值求得：$m(\mathrm{O}) = 0.2500 - 0.13630 - 0.02289 = 0.09082\ \mathrm{g}$。
+
+物质的量：$n(\mathrm{C}) = 0.13630/12.011 = 0.011348\ \mathrm{mol}$，$n(\mathrm{H}) = 0.022885/1.008 = 0.022703\ \mathrm{mol}$，$n(\mathrm{O}) = 0.09082/15.999 = 0.005676\ \mathrm{mol}$。除以最小者$0.005676$，得$\mathrm{C}$ $1.999$，$\mathrm{H}$ $4.000$，$\mathrm{O}$ $1.000$。最简式为$\mathrm{C_2H_4O}$，$M = 2(12.011) + 4(1.008) + 15.999 = 44.053\ \mathrm{g\,mol^{-1}}$。
+
+摩尔质量约为$88\ \mathrm{g\,mol^{-1}}$，$88/44.053 = 2.0$，所以$n = 2$，分子式为$\mathrm{C_4H_8O_2}$，摩尔质量$88.106\ \mathrm{g\,mol^{-1}}$。摩尔质量的测量只需足以区分$n = 2$与$n = 1$或$3$；准确的摩尔质量来自化学式。乙酸乙酯具有这一分子式，丁酸和其他几种化合物也是；仅凭分子式无法判断是哪一种。
+:::
+:::
+
+### 水合物
+
+结晶水与盐一起被称量，所以必须计入摩尔质量。通常可以通过温和加热把它赶走，质量的损失就度量了它。若质量为$m_1$的水合物$\mathrm{AB}\cdot x\mathrm{H_2O}$留下质量为$m_2$的无水$\mathrm{AB}$，则物质的量为$n(\mathrm{H_2O}) = (m_1 - m_2)/M(\mathrm{H_2O})$和$n(\mathrm{AB}) = m_2/M(\mathrm{AB})$，$x$就是两者之比。
+
+::: example 硫酸铜（II）中的结晶水 {#ex-hydrate}
+把质量为$2.500\ \mathrm{g}$的水合硫酸铜（II）$\mathrm{CuSO_4\cdot}x\mathrm{H_2O}$加热至恒重。白色无水残余物重$1.598\ \mathrm{g}$。求$x$以及水合物中水的质量分数。
+::: solution
+$M(\mathrm{CuSO_4}) = 63.546 + 32.06 + 4(15.999) = 159.602\ \mathrm{g\,mol^{-1}}$，$M(\mathrm{H_2O}) = 18.015\ \mathrm{g\,mol^{-1}}$。失去的水的质量为$2.500 - 1.598 = 0.902\ \mathrm{g}$。于是
+
+$$
+n(\mathrm{H_2O}) = \frac{0.902}{18.015} = 0.05007\ \mathrm{mol}, \qquad
+n(\mathrm{CuSO_4}) = \frac{1.598}{159.602} = 0.010012\ \mathrm{mol},
+$$
+
+$x = 0.05007/0.010012 = 5.00$。该盐是五水合物$\mathrm{CuSO_4\cdot 5H_2O}$，摩尔质量为$159.602 + 5(18.015) = 249.677\ \mathrm{g\,mol^{-1}}$。水的分数为$90.075/249.677 \times 100\% = 36.08\%$，与测得的损失$0.902/2.500 \times 100\% = 36.1\%$相符。
+
+减法$2.500 - 1.598$只留下三位有效数字，所以$x$的准确度约为$\pm 0.01$，足以选定整数。整数答案本身就是化学：水合物是确定的化合物，$x$为$4.6$意味着加热不完全或样品潮湿，而不是一种新的水合物。硫酸铜（II）吞食有害，刺激眼睛，对水生生物毒性很大，所以残余物应放入有标签的废物容器，而不是倒进水槽；加热任何固体都需要护目镜、有人指导并进行风险评估。
+:::
+:::
+
+::: widget plot
+f: 100*18.015*x/(a + 18.015*x)
+x: 0, 10
+y: 0, 60
+sliders: a=159.6:100:300:0.1
+points: 5, 36.08
+labels: w(\mathrm{H_2O})/\%
+caption: 水合物$\mathrm{AB}\cdot x\mathrm{H_2O}$中水的质量分数对水分子数$x$作图，无水盐的摩尔质量为$a$（单位$\mathrm{g\,mol^{-1}}$；默认$159.6$，即硫酸铜（II））。标出的点是五水合物，$36.08\%$。把$a$设为$120.4$（硫酸镁），读取七水合物$x = 7$处，约为$51.2\%$。曲线先陡升后变平，所以测得的含水百分数能清楚地区分低水合物，而对高水合物区分得较差。
+:::
+
+::: quiz
+关于化学式$\mathrm{C_6H_{12}O_6}$（葡萄糖），下列哪种说法正确？
+- [x] 它是分子式；最简式为$\mathrm{CH_2O}$，其质量分数与$\mathrm{CH_2O}$的相同。
+- [ ] 它是最简式，因为下标都是整数。
+- [ ] 最简式是$\mathrm{C_6H_{12}O_6}$除以$6$，即$\mathrm{CH_2O}$，所以葡萄糖的含碳百分数是$\mathrm{CH_2O}$的六分之一。
+- [ ] 葡萄糖的燃烧分析无需其他测量即可确定其分子式。
+::: solution
+每个下标都能被$6$整除，所以$\mathrm{C_6H_{12}O_6}$不是最小比例；它是分子式，而$\mathrm{CH_2O}$是最简式。把所有下标除以同一个数不改变任何质量分数，这正是仅凭组成数据无法确定$n$的原因。燃烧分析给出最简式；需要摩尔质量才能选定$n = 6$。
+:::
+:::
+
 ::: history
-- 1662 (Boyle's law)
-- 1787 (Charles's law of volumes)
-- 1789 (Lavoisier's Traité and conservation of mass)
-- 1808 (Dalton's atomic theory)
+系统的化学名称只比拉瓦锡的天平晚了几年。1787 年，吉东·德莫尔沃（Louis-Bernard Guyton de Morveau）、拉瓦锡（Antoine Lavoisier）、贝托莱（Claude Louis Berthollet）和富尔克鲁瓦（Antoine François de Fourcroy）出版了《化学命名法》（*Méthode de nomenclature chimique*），用由物质组成构成的名称取代了“矾油”“锌华”之类的名称：硫酸、氧化锌，以及用词尾 *-ate* 和 *-ite* 表示词尾为 *-ic* 和 *-ous* 的酸所成的盐，本章至今仍在使用这些词尾。贝采利乌斯（Jöns Jacob Berzelius）在 1813–1814 年的论文中引入了元素的字母符号，取其拉丁名称的首字母书写，并随之引入了用数字计数原子的化学式；他的上标数字后来移到下方，成为下标。普鲁斯特（Joseph Proust）的定比定律在 1790 年代和 1800 年代得到捍卫，它是百分组成属于物质这一点的经验基础。表示金属电荷的罗马数字记法以德国化学家斯托克（Alfred Stock）命名，他于 1919 年提出了这一记法。现行规则是 IUPAC 的《无机化学命名法：IUPAC 2005 年建议》（*Nomenclature of Inorganic Chemistry: IUPAC Recommendations 2005*），即“红皮书”。
 :::
-## Exercises
-::: exercise {level=1}
-Exercise 1: apply the methods of Formulas and names of compounds.
-::: solution
-Solution 1.
+
+## 后续内容
+
+这里确定的化学式，就是[[general-chemistry-1/stoichiometry]]中的系数所乘的那些化学式；这里算出的摩尔质量，就是那里质量–物质的量换算中所除的那些摩尔质量。表中的多原子离子将在[[general-chemistry-1/solutions-reactions]]中作为旁观离子和反应物再次出现，在那里溶解性取决于哪种阳离子与哪种阴离子配对。单原子离子的电荷在这里是作为需要记住的规律给出的；[[general-chemistry-1/periodicity]]通过电子排布解释它们，而[[bonding-structure/ionic-bonding]]通过晶格能解释由这些离子构成的晶格为何能够稳定存在。有机化合物用另一套基于结构的体系命名，在[[organic-1/organic-structures]]中介绍，因为像$\mathrm{C_4H_8O_2}$这样的分子式代表许多不同的分子。罗马数字所携带的氧化数，将在[[main-group/inorganic-redox]]中成为氧化还原化学的语言。
+
+::: summary
+- 离子化合物是阳离子和阴离子的晶格；其化学式是离子的最小中性比。分子化合物由独立分子组成；其化学式计数一个分子中的原子。
+- 离子化合物的化学式由电荷平衡得出：正负电荷总量相互抵消，多原子离子不止一个时加括号。
+- 盐的名称由阳离子和阴离子组成，可变价金属用罗马数字标明价态，不用数字词头。二元分子化合物用数字词头（一、二、三……），因为其组成无法由电荷预测。
+- 含氧酸根用“某酸根”和“亚某酸根”（英文 *-ate* 和 *-ite*），系列两端用“高”和“次”（*per-* 和 *hypo-*）；相应的酸为“某酸”和“亚某酸”（*-ic* 和 *-ous*）。水合物写作$\mathrm{AB}\cdot x\mathrm{H_2O}$，水计入摩尔质量。
+- 元素的质量分数为$k\,M(\mathrm{E})/M(\text{化合物}) \times 100\%$，是物质的性质，与样品大小无关。
+- 由百分数出发：取$100\ \mathrm{g}$，换算为摩尔，除以最小者，对$0.33$或$0.5$这样的分数通过相乘而绝不通过修约来消除。结果就是最简式。
+- 分子式是最简式的$n$倍，$n = M(\text{化合物})/M(\text{最简式})$；仅凭组成数据无法确定$n$。
 :::
-::: exercise {level=1}
-Exercise 2: apply the methods of Formulas and names of compounds.
+
+## 习题
+
+::: exercise 硝酸钙中的氧原子 {#exr-cano3 level=1 check="6"}
+由离子$\mathrm{Ca^{2+}}$和$\mathrm{NO_3^{-}}$写出硝酸钙的化学式。一个化学式单元含多少个氧原子？（输入氧原子数。）
 ::: solution
-Solution 2.
+两个各带$-1$的硝酸根离子平衡一个$\mathrm{Ca^{2+}}$，所以化学式为$\mathrm{Ca(NO_3)_2}$。括号外的下标$2$乘以括号内的一切，所以一个化学式单元含$2 \times 3 = 6$个氧原子（和两个氮原子）。如果不加括号，$\mathrm{CaNO_{32}}$会声称一个氮上连着三十二个氧原子。
 :::
-::: exercise {level=1}
-Exercise 3: apply the methods of Formulas and names of compounds.
-::: solution
-Solution 3.
 :::
-::: exercise {level=2}
-Exercise 4: apply the methods of Formulas and names of compounds.
+
+::: exercise 高锰酸盐中的氧化态 {#exr-mn level=1 check="7"}
+高锰酸钾是$\mathrm{KMnO_4}$。取钾为$+1$、氧为$-2$，求锰的氧化数。（以数字输入氧化数。）
 ::: solution
-Solution 4.
+化学式单元是中性的：$(+1) + x + 4(-2) = 0$，所以$x = +7$。等价地，高锰酸根离子$\mathrm{MnO_4^{-}}$的总电荷为$-1 = x + 4(-2)$，得$x = +7$。如果按斯托克方式命名，该化合物是四氧合锰（VII）酸钾（potassium tetraoxidomanganate(VII)），但传统名称“高锰酸盐”为 IUPAC 所接受，并在全书中使用。
 :::
-::: exercise {level=2}
-Exercise 5: apply the methods of Formulas and names of compounds.
-::: solution
-Solution 5.
 :::
-::: exercise {level=2}
-Exercise 6: apply the methods of Formulas and names of compounds.
+
+::: exercise 尿素中的氮 {#exr-urea level=1 check="46.65"}
+尿素$\mathrm{CO(NH_2)_2}$用作氮肥。计算尿素中氮的质量分数。（输入百分数，保留两位小数。）
 ::: solution
-Solution 6.
+一个分子含一个碳、一个氧、两个氮和四个氢原子。$M = 12.011 + 15.999 + 2(14.007) + 4(1.008) = 60.056\ \mathrm{g\,mol^{-1}}$。于是
+
+$$
+w(\mathrm{N}) = \frac{2 \times 14.007}{60.056}\times 100\% = \frac{28.014}{60.056}\times 100\% = 46.65\%.
+$$
+
+按每千克计，尿素提供的氮比硝酸铵（$35.00\%$，[[#ex-nh4no3]]）多，这是它成为使用最广的固体氮肥的原因之一。
 :::
-::: exercise {level=3}
-Exercise 7: apply the methods of Formulas and names of compounds.
-::: solution
-Solution 7.
 :::
-::: exercise {level=3}
-Exercise 8: apply the methods of Formulas and names of compounds.
+
+::: exercise 由三个百分数求最简式 {#exr-ethanol level=2 check="6"}
+某液体按质量含碳$52.14\%$、氢$13.13\%$、氧$34.73\%$。求其最简式。（输入最简式中的氢原子数。）
 ::: solution
-Solution 8.
+在$100\ \mathrm{g}$中：$n(\mathrm{C}) = 52.14/12.011 = 4.341\ \mathrm{mol}$，$n(\mathrm{H}) = 13.13/1.008 = 13.026\ \mathrm{mol}$，$n(\mathrm{O}) = 34.73/15.999 = 2.171\ \mathrm{mol}$。除以$2.171$，得$\mathrm{C}$ $2.000$，$\mathrm{H}$ $6.001$，$\mathrm{O}$ $1.000$。最简式为$\mathrm{C_2H_6O}$，有六个氢原子。这是乙醇的组成，也是甲氧基甲烷的组成；要在两者之间作出选择需要结构方法。
+:::
+:::
+
+::: exercise 泻盐 {#exr-mgso4 level=2 check="7"}
+把$5.061\ \mathrm{g}$水合硫酸镁$\mathrm{MgSO_4\cdot}x\mathrm{H_2O}$加热至恒重，留下$2.472\ \mathrm{g}$无水$\mathrm{MgSO_4}$。求$x$。（以整数输入$x$。）
+::: solution
+$M(\mathrm{MgSO_4}) = 24.305 + 32.06 + 4(15.999) = 120.361\ \mathrm{g\,mol^{-1}}$。失去的水：$5.061 - 2.472 = 2.589\ \mathrm{g}$，所以$n(\mathrm{H_2O}) = 2.589/18.015 = 0.14371\ \mathrm{mol}$。$n(\mathrm{MgSO_4}) = 2.472/120.361 = 0.020538\ \mathrm{mol}$。比值为$0.14371/0.020538 = 7.00$，所以$x = 7$，该水合物是$\mathrm{MgSO_4\cdot 7H_2O}$，即七水合硫酸镁。
+:::
+:::
+
+::: exercise 从最简式到分子 {#exr-benzene level=2 check="6"}
+某烃的最简式为$\mathrm{CH}$，摩尔质量为$78.11\ \mathrm{g\,mol^{-1}}$。求联系分子式与最简式的因子$n$，并写出分子式。（输入$n$。）
+::: solution
+$M(\mathrm{CH}) = 12.011 + 1.008 = 13.019\ \mathrm{g\,mol^{-1}}$。于是$n = 78.11/13.019 = 6.000$，所以分子式为$\mathrm{C_6H_6}$，摩尔质量$6 \times 13.019 = 78.114\ \mathrm{g\,mol^{-1}}$，与测量值相符。乙炔$\mathrm{C_2H_2}$的最简式相同，$n = 2$；只有摩尔质量能把它们区分开。
+:::
+:::
+
+::: exercise 混合物不是化合物 {#exr-mixture level=3 check="56.8"}
+一种白色粉末是只含氯化钠和氯化钾的混合物。分析表明它按质量含氯$55.00\%$。混合物中$\mathrm{NaCl}$的质量分数是多少？用$M(\mathrm{NaCl}) = 58.44$和$M(\mathrm{KCl}) = 74.548\ \mathrm{g\,mol^{-1}}$。（输入$\mathrm{NaCl}$的百分数，保留三位有效数字。）
+::: hint
+由[[#prop-percent]]求出每种纯盐中氯的分数。若$\mathrm{NaCl}$的质量分数为$y$，则混合物中氯的分数是两者的加权平均。
+:::
+::: solution
+纯盐中氯的分数：$\mathrm{NaCl}$为$35.45/58.44 = 0.60661$，$\mathrm{KCl}$为$35.45/74.548 = 0.47553$。取$100\ \mathrm{g}$混合物，含$100y\ \mathrm{g}$ $\mathrm{NaCl}$和$100(1-y)\ \mathrm{g}$ $\mathrm{KCl}$。其中所含的氯为
+
+$$
+0.60661\,(100y) + 0.47553\,(100)(1 - y) = 55.00\ \mathrm{g}.
+$$
+
+解得$0.13108\,y = 0.55000 - 0.47553 = 0.07447$，所以$y = 0.5681$。混合物按质量含$\mathrm{NaCl}$ $56.8\%$（$\mathrm{KCl}$ $43.2\%$）。
+
+混合物没有固定的百分组成：含氯$55.00\%$是关于这个样品的事实，而不是关于某种物质的事实。对它应用[[#alg-empirical]]，会得到一个钠和钾比例任意、毫无意义的“化学式”，这就是在相信一个最简式之前必须先确认纯度的原因。答案对数据也很敏感：两种纯盐的含氯量只相差$13$个百分点，所以分析中$0.1$个百分点的误差会使$y$移动将近一个百分点。
+:::
+:::
+
+::: exercise 含氮化合物的燃烧分析 {#exr-nitrogen level=3 check="8"}
+$0.1500\ \mathrm{g}$由碳、氢、氮、氧组成的化合物样品完全燃烧，生成$0.2248\ \mathrm{g}$ $\mathrm{CO_2}$和$0.1227\ \mathrm{g}$ $\mathrm{H_2O}$。另一项分析表明它按质量含氮$31.79\%$。其摩尔质量接近$88\ \mathrm{g\,mol^{-1}}$。求最简式和分子式。（输入一个分子中的氢原子数。）
+::: hint
+由燃烧产物求碳和氢的质量，由百分数求氮的质量，氧由差值求得。然后按[[#alg-empirical]]进行。
+:::
+::: solution
+碳：$m(\mathrm{C}) = 0.2248 \times 12.011/44.009 = 0.061353\ \mathrm{g}$，所以$n(\mathrm{C}) = 0.061353/12.011 = 0.0051080\ \mathrm{mol}$。
+
+氢：$m(\mathrm{H}) = 0.1227 \times 2.016/18.015 = 0.013731\ \mathrm{g}$，所以$n(\mathrm{H}) = 0.013731/1.008 = 0.013622\ \mathrm{mol}$。
+
+氮：$m(\mathrm{N}) = 0.3179 \times 0.1500 = 0.047685\ \mathrm{g}$，所以$n(\mathrm{N}) = 0.047685/14.007 = 0.0034044\ \mathrm{mol}$。
+
+氧由差值求得：$m(\mathrm{O}) = 0.1500 - 0.061353 - 0.013731 - 0.047685 = 0.027231\ \mathrm{g}$，所以$n(\mathrm{O}) = 0.027231/15.999 = 0.0017021\ \mathrm{mol}$。
+
+除以最小的物质的量$0.0017021\ \mathrm{mol}$，得$\mathrm{C}$ $3.001$，$\mathrm{H}$ $8.003$，$\mathrm{N}$ $2.000$，$\mathrm{O}$ $1.000$。最简式为$\mathrm{C_3H_8N_2O}$，$M = 3(12.011) + 8(1.008) + 2(14.007) + 15.999 = 88.110\ \mathrm{g\,mol^{-1}}$。由于摩尔质量接近$88\ \mathrm{g\,mol^{-1}}$，$n = 88/88.110 = 1.0$，分子式就是最简式$\mathrm{C_3H_8N_2O}$，有八个氢原子。
+
+注意，如果先除以氮的物质的量，会得到$\mathrm{C}$ $1.50$、$\mathrm{H}$ $4.00$、$\mathrm{N}$ $1$、$\mathrm{O}$ $0.50$——同样的比例，乘以$2$即可消去分数。无论除以哪种元素，比例都相同；除以最小的物质的量只是避免出现小于一的商。由差值求得的氧带有其他三项测定的累积误差，所以它是最不可信的商。
+:::
+:::
+
+::: exercise 矿石中的铁 {#exr-ore level=3 check="0.979"}
+赤铁矿是氧化铁（III）。一份$2.000\ \mathrm{kg}$的矿石样品按质量含$70.00\%$ $\mathrm{Fe_2O_3}$，矿石的其余部分不含铁。求样品中铁的质量，并解释为什么它不是$0.7000 \times 2.000\ \mathrm{kg}$。（以千克为单位输入铁的质量，保留三位有效数字。）
+::: solution
+$M(\mathrm{Fe_2O_3}) = 2(55.845) + 3(15.999) = 159.687\ \mathrm{g\,mol^{-1}}$，由[[#prop-percent]]，纯氧化物中铁的分数为$111.690/159.687 = 0.69943$。矿石含$0.7000 \times 2.000 = 1.400\ \mathrm{kg}$氧化物，其中含有
+
+$$
+m(\mathrm{Fe}) = 1.400\ \mathrm{kg} \times 0.69943 = 0.9792\ \mathrm{kg},
+$$
+
+保留三位有效数字为$0.979\ \mathrm{kg}$。$70.00\%$是矿石中*氧化物*的百分数，而不是铁的百分数。两个分数串联在一起——矿石中氧化物的含量和氧化物中铁的含量——它们相乘：矿石含铁$0.7000 \times 0.69943 \times 100\% = 48.96\%$。氧化物本身恰好含铁近$70\%$这一巧合，使得在需要两个分数的地方只用一个分数的错误特别容易被忽视。
+:::
 :::

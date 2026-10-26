@@ -1,108 +1,336 @@
-## Concentration and dilution
-::: definition {#solutionsreactions-d1}
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Concentration And Dilution is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+当一种试剂必须与另一种试剂按确定的比例相遇时，用天平上的质量来投加它是很不方便的。把这份质量溶解，在容量瓶中定容到刻度线，此后你取用的量就是一个可以读出的体积。这种交换——把质量和体积变成物质的量——正是一年级化学实验中有那么多操作在水中进行的原因，也是本章的数字都是浓度的原因。反应本身是入门实验室中的普通反应：酸被碱中和、氯离子以氯化银的形式沉淀、金属被氢离子氧化。平衡常数，包括$K_\mathrm{a}$和溶度积，这里不作计算；它们属于[[general-chemistry-2/acids-bases]]和[[general-chemistry-2/chemical-equilibrium]]。你现在需要知道的是：什么时候浓度就是化学计量的全部，什么时候它只是你所混合的量。
+
+在任何算术之前，先说两点实际问题。盐酸和氢氧化钠有腐蚀性，氢氧化钠对眼睛尤甚；硝酸银有腐蚀性，会因析出银而使皮肤染色，其废液如果随意倒掉会危害水生生物。用氢氧化钠滴定盐酸以及沉淀氯化银是标准的教学实验，危险性不比这更大——但它们仍然是实验。它们需要有人指导、佩戴护目镜、按评估要求戴手套，并有书面的风险评估。下面各页是对这些实验的计算。它们不是实验台上的操作说明，也不是放大规模的许可。
+
+[[general-chemistry-1/stoichiometry]]中的记账方法原样使用。新增的一步是把溶液的体积变成物质的量。
+
+## 物质的量浓度
+
+::: definition 物质的量浓度 {#def-molarity}
+溶质的**物质的量浓度**（也称**摩尔浓度**）是溶质的物质的量除以溶液的体积：
+
+$$
+c = \frac{n}{V},
+$$
+
+其中$n$以摩尔计，$V$以立方分米计，所以$c$的单位是$\mathrm{mol\,dm^{-3}}$。一立方分米就是一升，$\mathrm{mol\,dm^{-3}}$与$\mathrm{mol\,L^{-1}}$是同一单位。瓶子上的符号$\mathrm{M}$指的就是这个单位：$0.100\ \mathrm{M}$即$0.100\ \mathrm{mol\,dm^{-3}}$。定义中的体积是*溶液*的体积，而不是加入溶质之前倒入的溶剂体积。因此，浓度为$c$、体积为$V$的溶液所含的物质的量为$n = cV$，这才是此后每个计算真正需要的量。
+
 :::
-## precipitation
-::: definition {#solutionsreactions-d2}
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Precipitation is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
+
+两种不同的“浓度”很容易混淆。质量浓度以$\mathrm{g\,dm^{-3}}$计，告诉你瓶中溶质有多重；物质的量浓度告诉你将投加多少摩尔。两者相差一个摩尔质量，$c = \rho_\text{mass}/M$。质量摩尔浓度是每千克溶剂中溶质的物质的量，它又是另一个量，本章不使用；它将在[[general-chemistry-2/liquids-solutions]]中随依数性一起回来。
+
+::: example 一份氢氧化钠溶液 {#ex-molarity}
+把$4.00\ \mathrm{g}$氢氧化钠溶于水，在容量瓶中定容到$250.0\ \mathrm{cm^3}$。物质的量浓度是多少？$M(\mathrm{NaOH}) = 22.990 + 15.999 + 1.008 = 39.997\ \mathrm{g\,mol^{-1}}$。
+::: solution
+$\mathrm{NaOH}$的物质的量为$n = 4.00/39.997 = 0.1000\ \mathrm{mol}$。体积必须以立方分米计：$250.0\ \mathrm{cm^3} = 0.2500\ \mathrm{dm^3}$。因此
+
+$$
+c = \frac{0.1000\ \mathrm{mol}}{0.2500\ \mathrm{dm^3}} = 0.400\ \mathrm{mol\,dm^{-3}}.
+$$
+
+三位有效数字跟随$4.00\ \mathrm{g}$。$250.0\ \mathrm{cm^3}$比质量更精确，所以不限制答案。注意这里*没有*假定的东西：没有假定固体不占体积，也没有假定加入了$250.0\ \mathrm{cm^3}$水。容量瓶被加满到刻度线，所以$250.0\ \mathrm{cm^3}$是测量得到的溶液体积。氢氧化钠颗粒会从空气中吸收水和二氧化碳；由名义质量算出的浓度只能与固体的纯度一样可靠，这也是为什么需要准确知道浓度的氢氧化物溶液要用滴定来标定，而不是相信试剂瓶上的标签。
 :::
-## acid–base and redox reactions
-::: definition {#solutionsreactions-d3}
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
-Acid–Base And Redox Reactions is one of the three core topics of the chapter Solutions Reactions. Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
 :::
-## Review
-::: widget graph
-nodes: Concentration and dilution, precipitation, acid–base and redox reactions, review
-edges: Concentration and dilution, precipitation, acid–base and redox reactions, review
-caption: Reactions in aqueous solution concept map
+
+## 稀释
+
+由较浓的溶液配制稀溶液不改变溶质的物质的量，前提是只加入溶剂，且溶质不发生反应、不沉淀、不逸出。这一条守恒陈述就是稀释公式。
+
+::: proposition 稀释公式 {#prop-dilution}
+若体积为$V_1$、物质的量浓度为$M_1$的溶液被稀释为体积$V_2$、浓度$M_2$，且溶质既不产生也不消失，则
+
+$$
+M_1 V_1 = M_2 V_2.
+$$
+
+这里$M$指物质的量浓度，即[[#def-molarity]]中的$c$。两个体积必须用同一单位。这一关系不限于立方分米：把$\mathrm{cm^3}$换算为$\mathrm{dm^3}$的因子在两边约去，所以只要两个体积都用$\mathrm{cm^3}$，就都可以保留为$\mathrm{cm^3}$。它只适用于稀释。它不是化学反应的通用方程，一旦溶质被消耗、沉淀或以气体形式逸出，它就不成立。
 :::
-::: widget stats
+
+::: proof 溶质的物质的量守恒 {#proof-dilution}
+由[[#def-molarity]]，从储备液中取出的那一份所含溶质的物质的量为$n = M_1 V_1$。把这一份转移到容量瓶中，加入溶剂，直到溶液占据测得的体积$V_2$。在命题的条件下——只加溶剂、无反应、无沉淀、无溶质损失——瓶中溶质的物质的量仍为$n$。把定义用于新溶液，得$M_2 = n/V_2$，因此
+
+$$
+n = M_1 V_1 = M_2 V_2.
+$$
+
+求未知体积或未知浓度只是代数，而不是新的化学。最终体积$V_2$是你测量的体积，通常就是容量瓶上的刻度线。你不需要溶质和溶剂的体积具有加和性，因为你从不通过把这些体积相加来计算$V_2$：你是读出来的。如果你改为把一定体积的水与一定体积的储备液相加来*猜测*$V_2$，混合时体积的非加和性会使这一猜测略有偏差，而公式的准确程度也就只能与这一猜测相当。
 :::
-::: widget quiz
+
+::: example 稀释盐酸 {#ex-dilute}
+配制$250.0\ \mathrm{cm^3}$ $0.100\ \mathrm{mol\,dm^{-3}}$的酸，需要多少体积的$0.500\ \mathrm{mol\,dm^{-3}}$盐酸？
+::: solution
+整理[[#prop-dilution]]，两个体积都保留为$\mathrm{cm^3}$：
+
+$$
+V_1 = \frac{M_2 V_2}{M_1} = \frac{0.100 \times 250.0}{0.500} = 50.0\ \mathrm{cm^3}.
+$$
+
+这一份中$\mathrm{HCl}$的物质的量为$0.0500\ \mathrm{dm^3} \times 0.500\ \mathrm{mol\,dm^{-3}} = 0.0250\ \mathrm{mol}$，同样的物质的量在$0.2500\ \mathrm{dm^3}$中就是$0.100\ \mathrm{mol\,dm^{-3}}$。这个检验值得做一次，因为在$\mathrm{cm^3}$与$\mathrm{dm^3}$之间出错，是错一千倍的常见方式。浓酸有腐蚀性。向大量浓酸中加水，与量取$50.0\ \mathrm{cm^3}$已经较稀的$0.500\ \mathrm{mol\,dm^{-3}}$溶液，是两种不同的操作，前者更危险；计算假定的是后者，至于前者如果要做该如何做，由风险评估决定。
 :::
-::: summary
-- Concentration and dilution
-- precipitation
-- acid–base and redox reactions
-- Concentration and dilution, precipitation, acid–base and redox reactions, and titration calculations
 :::
+
+::: widget plot
+f: c*v/x
+x: 25, 500
+y: 0, 8
+sliders: c=0.50:0.10:2.00:0.10; v=25:5:100:5
+labels: c_2/\mathrm{mol\,dm^{-3}}
+caption: 稀释后的浓度对最终体积$x$（单位$\mathrm{cm^3}$）作图。储备液浓度$c$和所取体积$v$（也以$\mathrm{cm^3}$计）由滑块设定。曲线为$cv/x$：溶质的物质的量固定，所以浓度按等轴双曲线下降。如果有反应消耗溶质，这一关系就不再成立。
+:::
+
+这条双曲线就是把守恒画成了图。最终体积加倍，浓度减半；物质的量并不减半。$v$的滑块改变的是你一开始投入了多少溶质，整条曲线随之按比例抬高。
+
+## 电解质、沉淀与离子方程式
+
+能溶于水的物质并不都以同样的方式溶解。有些解离成离子，溶液能导电。有些仍以分子形式存在，溶液几乎不导电。
+
+::: definition 电解质 {#def-electrolyte}
+**电解质**是其水溶液因该物质产生了离子而能导电的物质。**强电解质**在稀溶液中完全电离：可溶性盐、强酸$\mathrm{HCl}$、$\mathrm{HNO_3}$以及第一步电离的$\mathrm{H_2SO_4}$，还有强碱$\mathrm{NaOH}$和$\mathrm{KOH}$。**弱电解质**只部分电离：本课程所用的例子是乙酸和氨。**非电解质**以分子形式溶解；蔗糖和乙醇是典型例子，它们的溶液基本不导电。“强”和“弱”描述的是电离程度，而不是浓度。稀盐酸仍是强酸；浓乙酸仍是弱酸。
+:::
+
+这种划分出自阿伦尼乌斯（Arrhenius），对于本章的化学计量而言是正确的划分。它还不是平衡计算。对于弱酸，我们刻意拒绝把氢离子浓度设为标签上的浓度。那一步需要$K_\mathrm{a}$，而$K_\mathrm{a}$是[[general-chemistry-2/acids-bases]]的主题。在那之前，“弱”的意思是：分析物质的量与游离$\mathrm{H^+(aq)}$的物质的量是两个不同的数，进入滴定比例的只有分析物质的量。
+
+当两种强电解质溶液混合时，所有离子都处于同一容器中，新的组合可能不溶。不溶性是关于每种盐的实验事实，而不是定理。下面的规律是室温附近水溶液的**经验规则**。这里的“可溶”大致指溶解度高于约$0.1\ \mathrm{mol\,dm^{-3}}$；“不溶”指溶解度远低于此。许多不溶盐仍会少量溶解。氯化银就是如此，这正是溶度积存在的原因，而那种算术是平衡问题，而不是化学计量问题。规则如下：
+
+- 硝酸盐，以及$\mathrm{Na^+}$、$\mathrm{K^+}$和$\mathrm{NH_4^+}$的盐，都可溶。
+- 氯化物、溴化物和碘化物可溶，但$\mathrm{Ag^+}$、$\mathrm{Pb^{2+}}$和$\mathrm{Hg_2^{2+}}$的除外。
+- 硫酸盐可溶，但$\mathrm{Ba^{2+}}$、$\mathrm{Pb^{2+}}$和$\mathrm{Sr^{2+}}$的除外；硫酸钙微溶。
+- 碳酸盐、磷酸盐和硫化物不溶，但$\mathrm{Na^+}$、$\mathrm{K^+}$和$\mathrm{NH_4^+}$的除外。
+- 氢氧化物不溶，但碱金属的除外；氢氧化钡可溶，氢氧化钙微溶。
+
+用这些规则预测是否生成沉淀，然后写出方程式。不要把处于边界的盐当作原则问题。如果规则说“微溶”，那么沉淀完全这一化学计量假设就已经不可靠了，本章不会把这种情况当作准确的来用。
+
+::: definition 离子方程式与旁观离子 {#def-net-ionic}
+**分子方程式**用完整的化学式表示每种物质。**完全离子方程式**把每种可溶性强电解质替换为它实际提供的离子，而固体、液体、气体和弱电解质保持原样书写。在两边不变地出现的离子是**旁观离子**。约去旁观离子后剩下的就是**离子方程式**（净离子方程式）。约去它们只是记账：它们仍在烧杯中，仍对质量和电导率有贡献，只是没有参与所描述的变化。离子方程式中原子和电荷都必须守恒，否则就是误删了某个旁观离子。
+:::
+
+步骤是：写出带状态符号的配平分子方程式；拆分可溶性强电解质；约去旁观离子；检查原子和电荷。弱酸保持分子形式，因为它的绝大部分确实以分子存在。
+
+::: example 氯化银的沉淀 {#ex-agcl}
+把$40.0\ \mathrm{cm^3}$ $0.200\ \mathrm{mol\,dm^{-3}}$硝酸银与$50.0\ \mathrm{cm^3}$ $0.120\ \mathrm{mol\,dm^{-3}}$氯化钠混合。写出分子方程式、完全离子方程式和离子方程式，指出旁观离子，并在忽略氯化银溶解度的情况下求沉淀出的氯化银质量。$M(\mathrm{AgCl}) = 107.87 + 35.45 = 143.32\ \mathrm{g\,mol^{-1}}$。
+::: solution
+经验规则说氯化物可溶，但银、铅和汞（I）的除外，所以$\mathrm{AgCl}$沉淀，硝酸钠留在溶液中：
+
+$$
+\mathrm{AgNO_3(aq) + NaCl(aq) \rightarrow AgCl(s) + NaNO_3(aq)}.
+$$
+
+两种反应物和硝酸钠都是可溶性强电解质。将它们拆开，
+
+$$
+\mathrm{Ag^+(aq) + NO_3^-(aq) + Na^+(aq) + Cl^-(aq) \rightarrow AgCl(s) + Na^+(aq) + NO_3^-(aq)}.
+$$
+
+$\mathrm{Na^+}$和$\mathrm{NO_3^-}$是旁观离子。离子方程式为
+
+$$
+\mathrm{Ag^+(aq) + Cl^-(aq) \rightarrow AgCl(s)}.
+$$
+
+电荷守恒：左边为$+1$和$-1$，右边为零。硝酸根离子和钠离子并没有离开混合物。它们离开的只是对沉淀的描述。
+
+混合的物质的量为$n(\mathrm{Ag^+}) = 0.0400 \times 0.200 = 0.00800\ \mathrm{mol}$和$n(\mathrm{Cl^-}) = 0.0500 \times 0.120 = 0.00600\ \mathrm{mol}$。氯离子的物质的量较小，两者的系数都是$1$，所以氯离子是限量反应物。$\mathrm{AgCl}$的物质的量为$0.00600\ \mathrm{mol}$，质量为$0.00600 \times 143.32 = 0.860\ \mathrm{g}$。溶液中剩余的银离子为$0.00200\ \mathrm{mol}$，仍有旁观离子相伴。忽略$\mathrm{AgCl}$的溶解度是化学计量近似；对于这样大小的质量，这是一个好的近似，但如果问题问的是仍溶解着的那一点点浓度，它就是一个坏的近似。
+
+硝酸银会使皮肤染色，并对水生生物有害。刚算出的质量正是教学实验室收集含银残渣而不是把它冲走的原因。混合操作本身如果要做，需要有人指导并进行风险评估。
+:::
+:::
+
+## 酸、碱与一次滴定
+
+在本课程的层次上，**阿伦尼乌斯酸**是在水中产生$\mathrm{H^+(aq)}$的物质，**阿伦尼乌斯碱**是产生$\mathrm{OH^-(aq)}$的物质。于是强酸被强碱中和为
+
+$$
+\mathrm{HCl(aq) + NaOH(aq) \rightarrow NaCl(aq) + H_2O(l)},
+$$
+
+去掉旁观离子$\mathrm{Na^+}$和$\mathrm{Cl^-}$后，离子方程式为
+
+$$
+\mathrm{H^+(aq) + OH^-(aq) \rightarrow H_2O(l)}.
+$$
+
+写$\mathrm{H^+(aq)}$是水合质子的简写。同一变化也常写作$\mathrm{H_3O^+(aq) + OH^-(aq) \rightarrow 2\,H_2O(l)}$。在这一层次上两者说的是同一件事；定义$K_\mathrm{a}$时水合氢离子的形式会更自然，你将在那里遇到它。
+
+盐酸、硝酸和硫酸的第一个质子是强的：在稀溶液中电离完全，$\mathrm{H^+(aq)}$的物质的量等于溶解的酸的物质的量。氢氧化钠和氢氧化钾在同样意义上是强碱。乙酸是要记住的弱酸。在标为$0.10\ \mathrm{mol\,dm^{-3}}$的溶液中，几乎全部仍是$\mathrm{CH_3COOH}$分子，所以$[\mathrm{H^+}]$远小于$0.10\ \mathrm{mol\,dm^{-3}}$。我们不计算它小多少。但我们要记下一个让初次接触这一区别的人感到意外的事实：*滴定*的化学计量并不需要那个数。一摩尔乙酸仍然消耗一摩尔氢氧根，
+
+$$
+\mathrm{CH_3COOH(aq) + OH^-(aq) \rightarrow CH_3COO^-(aq) + H_2O(l)},
+$$
+
+因为强碱使质子转移进行完全。起始溶液的 pH 与化学计量点时碱的体积是两个不同的问题。本章只回答第二个。
+
+::: proposition 强酸滴定中的化学计量点 {#prop-titration}
+在滴定的**化学计量点**，反应物恰好按其系数之比加入。对于一元强酸和一元强碱，比例为$1:1$，所以物质的量相等：
+
+$$
+M_\mathrm{a} V_\mathrm{a} = M_\mathrm{b} V_\mathrm{b}.
+$$
+
+这段代数看起来与[[#prop-dilution]]相同，但不是同一个事实。在稀释中，守恒的是同一种溶质的物质的量。在滴定中，比较的是两种不同的物质，它们相等只是因为化学计量这样规定。如果系数不都是$1$，就必须把它们写出来。对于稀溶液中两个质子都被滴定的$\mathrm{H_2SO_4 + 2\,NaOH \rightarrow Na_2SO_4 + 2\,H_2O}$，
+
+$$
+\frac{M_\mathrm{a} V_\mathrm{a}}{1} = \frac{M_\mathrm{b} V_\mathrm{b}}{2}.
+$$
+
+**滴定终点**是指示剂变色时的体积。在强酸–强碱滴定中，对于选择得当的指示剂，终点与化学计量点几乎重合，本章把测得的体积当作化学计量点体积。两者有多接近、指示剂为什么呈现那样的颜色，属于[[general-chemistry-2/acids-bases]]中酸碱平衡的内容。
+:::
+
+::: example 两次滴定，其中一次不是一比一 {#ex-titration}
+(a) 一份$25.00\ \mathrm{cm^3}$的盐酸需要$32.40\ \mathrm{cm^3}$ $0.1000\ \mathrm{mol\,dm^{-3}}$氢氧化钠才到达终点。求酸的浓度。(b) 假定两个质子都参加反应，滴定$25.00\ \mathrm{cm^3}$ $0.1000\ \mathrm{mol\,dm^{-3}}$硫酸需要多少体积的同一氢氧化钠溶液？
+::: solution
+(a) 氢氧根的物质的量为$n(\mathrm{NaOH}) = 0.03240\ \mathrm{dm^3} \times 0.1000\ \mathrm{mol\,dm^{-3}} = 0.003240\ \mathrm{mol}$。该酸是一元酸，所以$0.02500\ \mathrm{dm^3}$中$n(\mathrm{HCl}) = 0.003240\ \mathrm{mol}$，且
+
+$$
+M(\mathrm{HCl}) = \frac{0.003240}{0.02500} = 0.1296\ \mathrm{mol\,dm^{-3}}.
+$$
+
+数据给到四位有效数字，答案也是。教学实验室中的指示剂常为酚酞，它在酸中无色，在刚过化学计量点的碱性一侧呈粉红色。把这一颜色变化读作化学计量点体积，就是[[#prop-titration]]所陈述的近似。进行滴定需要有人指导并进行风险评估：两种溶液都有腐蚀性，指示剂按评估要求处理。
+
+(b) 硫酸提供两个须被氢氧根中和的质子，所以$n(\mathrm{NaOH}) = 2 \times (0.02500 \times 0.1000) = 0.005000\ \mathrm{mol}$。体积为$0.005000/0.1000 = 0.05000\ \mathrm{dm^3} = 50.00\ \mathrm{cm^3}$。不加因子$2$而套用$M_1 V_1 = M_2 V_2$会得到$25.00\ \mathrm{cm^3}$，那是把稀释的习惯用在了错误的问题上。硫酸的第一个质子是强的；第二个只是中等强度，在这一浓度下假定指示剂变色时两个质子都已被完全滴定，是通常的教学近似，而不是关于$K_{\mathrm{a}2}$的断言。
+:::
+:::
+
+## 氧化数与电子转移
+
+沉淀是重新排列已经存在的离子。氧化还原反应则转移电子，而氧化数是我们在不假装每个键都是离子键的情况下计数电子的方法。
+
+::: definition 氧化数 {#def-ox}
+物种中某原子的**氧化数**是：假如每个共用电子对都完全归于电负性较大的原子，该原子所带的电荷。实用规则为：单质为$0$；单原子离子等于其电荷；氟为$-1$；氧为$-2$，但在过氧化物中为$-1$；氢与非金属结合时为$+1$，与金属结合时为$-1$；物种中各氧化数之和等于其净电荷。**氧化**是氧化数升高，对单原子离子而言就是失去电子。**还原**是氧化数降低，即得到电子。氧化剂是被还原的物种；还原剂是被氧化的物种。在配平的方程式中，升高的总数等于降低的总数，因为电子不会有剩余。
+:::
+
+这些规则是一种约定：当离子图像合理时，它与离子图像一致；当离子图像不合理时，它仍然有用。硫酸根中的硫并不是裸露的$\mathrm{S^{6+}}$离子。但$+6$这个数仍然告诉你，从硫化物到硫酸盐是一个八电子的氧化过程，这正是以后半反应式要用到的事实。
+
+::: example 锌与氢离子 {#ex-ox-zn}
+标出$\mathrm{H_2SO_4}$和硫酸根离子中的氧化数，并把
+
+$$
+\mathrm{Zn(s) + 2\,H^+(aq) \rightarrow Zn^{2+}(aq) + H_2(g)}
+$$
+
+解释为一次电子转移。该反应是锌溶于稀盐酸时的净变化，与[[general-chemistry-1/stoichiometry]]中的限量反应物问题相同。
+::: solution
+在$\mathrm{H_2SO_4}$中，氢为$+1$，氧为$-2$。总和为零，所以$2(+1) + x + 4(-2) = 0$，硫的$x = +6$。在$\mathrm{SO_4^{2-}}$中总和为$-2$：$x + 4(-2) = -2$，同样$x = +6$。离子与酸一致，理应如此：失去两个质子并不改变硫的氧化数。
+
+在锌的方程式中，锌从金属中的$0$变为$\mathrm{Zn^{2+}}$中的$+2$，升高$2$，所以锌被氧化，是还原剂。它失去了两个电子。每个氢离子从$+1$变为$\mathrm{H_2}$中的$0$，降低$1$，两个氢离子共降低$2$。它们得到了这两个电子，所以$\mathrm{H^+(aq)}$是氧化剂，被还原。电子数相符，这就是$\mathrm{H^+}$的系数是$2$而不是$1$的原因。如果酸是盐酸，氯离子就是这一变化的旁观离子：它在完全离子方程式的两边都以$\mathrm{Cl^-}$出现，氧化数不变。
+
+换一种氧化剂，同样的模式就是置换反应$\mathrm{Zn(s) + Cu^{2+}(aq) \rightarrow Zn^{2+}(aq) + Cu(s)}$：锌失去两个电子，铜（II）得到两个，如果铜盐是可溶性强电解质，离子方程式就已是全部内容。这两个方程式都不是制备方法。氢气易燃，稀酸有腐蚀性，实际试验需要有人指导并进行风险评估。
+:::
+:::
+
+::: warning 三个不可互换的方程 {#warn-three}
+$M_1 V_1 = M_2 V_2$在稀释过程中使一种溶质守恒。外形相似的$M_\mathrm{a} V_\mathrm{a} = M_\mathrm{b} V_\mathrm{b}$在$1:1$滴定中使两种试剂相等。不加系数就把第一个公式用于硫酸或沉淀，是本章最常见的数值错误。第二种错误是物理上的：从离子方程式中约去的旁观离子仍在烧瓶里。第三种错误是化学上的：对于稀盐酸，$[\mathrm{H^+}]$等于标签浓度；对于乙酸则不等。两种情况下的滴定比例可以相同，而氢离子浓度并不相同。强和弱描述的是电离，而不是你往瓶里摇进了多少固体。
+:::
+
+::: quiz
+用水稀释较浓的储备液，配成$0.20\ \mathrm{mol\,dm^{-3}}$的溶液。没有发生反应。下列哪种说法正确？
+- [x] 从储备液中取出的溶质的物质的量等于稀溶液中的物质的量；降低的只是浓度。
+- [ ] 物质的量和浓度都按同一倍数降低。
+- [ ] 稀释公式$M_1 V_1 = M_2 V_2$只在溶质发生反应时适用。
+- [ ] 加入的水去除了旁观离子。
+::: solution
+稀释使溶质的物质的量守恒，并把它分布到更大的体积中，这就是$M_1 V_1 = M_2 V_2$成立以及浓度降低的原因。该公式适用于溶质*不*发生反应的情况；反应恰恰会破坏它。旁观离子是离子方程式的特征，而不是稀释的特征，加水不会把它们滤掉。
+:::
+:::
+
 ::: history
-- 1662 (Boyle's law)
-- 1787 (Charles's law of volumes)
-- 1789 (Lavoisier's Traité and conservation of mass)
-- 1808 (Dalton's atomic theory)
+在人们知道离子是什么之前，容量分析在十九世纪就已成为一种精密方法。1832 年，盖-吕萨克（Joseph Louis Gay-Lussac）发表了一种银的湿法测定：加入氯化物溶液，直到氯化银恰好沉淀完全——这是把化学计量用作分析仪器。莫尔（Karl Friedrich Mohr）的《化学分析滴定法教程》（*Lehrbuch der chemisch-analytischen Titrirmethode*，1855）把滴定管、移液管和一系列滴定方法整理成教学实验室可以使用的形式，这就是为什么强酸滴定至今看起来仍像莫尔的实验。离子的解释来得更晚。阿伦尼乌斯（Svante Arrhenius）在其 1884 年的博士论文以及 1887 年发展成熟的理论中提出：电解质在溶液中以离子形式存在，强电解质大部分已解离，酸和碱是提供氢离子和氢氧根离子的物质。本章使用的定义就是他的。它的不足——氨是不含氢氧根的碱、在水以外的溶剂中的反应——正是后来的布朗斯特和路易斯定义所弥补的，这些将在[[general-chemistry-2/acids-bases]]中弥补，而不是把阿伦尼乌斯的理论延伸到他所掌握的证据之外。
 :::
-## Exercises
-::: exercise {level=1}
-Exercise 1: apply the methods of Reactions in aqueous solution.
-::: solution
-Solution 1.
+
+## 后续内容
+
+浓度$c = n/V$是[[general-chemistry-2/rates-intro]]中书写速率方程的单位，也是[[general-chemistry-2/chemical-equilibrium]]中书写溶液反应平衡常数的单位。上文拒绝把$[\mathrm{H^+}]$设为弱酸的标签浓度，这正是通向[[general-chemistry-2/acids-bases]]的大门，在那里这一浓度将被正确地计算，滴定终点也不再被想当然地接受。本章搁置的质量摩尔浓度和其他溶液度量见[[general-chemistry-2/liquids-solutions]]。溶液中反应放出的气体——锌的方程式中的氢气——只有借助[[general-chemistry-1/gases]]中的气体定律才能变成体积。我们约去其离子的那些盐的化学式，已在[[general-chemistry-1/formulas-nomenclature]]中由电荷平衡确定，而这些离子在固体中结合在一起的原因是[[bonding-structure/ionic-bonding]]中的晶格能。
+
+::: summary
+- 物质的量浓度为$c = n/V$，单位$\mathrm{mol\,dm^{-3}}$，其中$V$是溶液的体积。投加的物质的量为$n = cV$。
+- 稀释使溶质的物质的量守恒，所以$M_1 V_1 = M_2 V_2$。两个体积必须用同一单位。这一关系不是反应的化学计量。
+- 强电解质在稀溶液中完全电离；弱电解质不完全电离；非电解质以分子形式溶解。强和弱不是浓和稀的同义词。
+- 溶解性规则是室温附近水溶液的经验规律。它们预测沉淀；它们不是精确的定律，“不溶”也从不意味着溶解度为零。
+- 离子方程式在纸面上约去旁观离子。离子仍留在溶液中。原子和电荷仍须守恒。
+- 阿伦尼乌斯酸提供$\mathrm{H^+(aq)}$，阿伦尼乌斯碱提供$\mathrm{OH^-(aq)}$。对于弱酸，标签浓度不等于$[\mathrm{H^+}]$；滴定比例却仍可以是一比一。
+- 在化学计量点，物质的量之比等于系数之比。对于一元酸和一元碱，$M_\mathrm{a} V_\mathrm{a} = M_\mathrm{b} V_\mathrm{b}$；对于硫酸，必须加上因子$2$。
+- 氧化是失去电子，表现为氧化数升高；还原是得到电子。在配平的方程式中，两种变化的大小相等。
 :::
-::: exercise {level=1}
-Exercise 2: apply the methods of Reactions in aqueous solution.
+
+## 习题
+
+::: exercise 从试剂瓶中取氢氧化钠 {#exr-naoh-mass level=1 check="1.50"}
+配制$250.0\ \mathrm{cm^3}$ $0.150\ \mathrm{mol\,dm^{-3}}$溶液需要多少质量的氢氧化钠？$M(\mathrm{NaOH}) = 39.997\ \mathrm{g\,mol^{-1}}$。（以克为单位输入质量，保留三位有效数字。）
 ::: solution
-Solution 2.
+所需物质的量为$n = 0.2500\ \mathrm{dm^3} \times 0.150\ \mathrm{mol\,dm^{-3}} = 0.0375\ \mathrm{mol}$。质量为$0.0375 \times 39.997 = 1.4999\ \mathrm{g}$，保留三位有效数字为$1.50\ \mathrm{g}$。浓度有三位有效数字，限制了答案；摩尔质量和$250.0\ \mathrm{cm^3}$更精确。
 :::
-::: exercise {level=1}
-Exercise 3: apply the methods of Reactions in aqueous solution.
-::: solution
-Solution 3.
 :::
-::: exercise {level=2}
-Exercise 4: apply the methods of Reactions in aqueous solution.
+
+::: exercise 四倍稀释 {#exr-dilute level=1 check="0.200"}
+把$25.0\ \mathrm{cm^3}$ $0.800\ \mathrm{mol\,dm^{-3}}$溶液用水稀释到$100.0\ \mathrm{cm^3}$。新浓度是多少？（以$\mathrm{mol\,dm^{-3}}$为单位输入，保留三位有效数字。）
 ::: solution
-Solution 4.
+$M_2 = M_1 V_1/V_2 = 0.800 \times 25.0/100.0 = 0.200\ \mathrm{mol\,dm^{-3}}$。溶质的物质的量在稀释前后都是$0.0250 \times 0.800 = 0.0200\ \mathrm{mol}$。改变的只是体积。作为所给体积之比，因子$100.0/25.0 = 4$是准确的，浓度按这一倍数降低。
 :::
-::: exercise {level=2}
-Exercise 5: apply the methods of Reactions in aqueous solution.
-::: solution
-Solution 5.
 :::
-::: exercise {level=2}
-Exercise 6: apply the methods of Reactions in aqueous solution.
+
+::: exercise 硫酸根中的硫 {#exr-ox-s level=1 check="6"}
+$\mathrm{SO_4^{2-}}$中硫的氧化数是多少？取氧为$-2$。（输入氧化数。）
 ::: solution
-Solution 6.
+该离子电荷为$-2$，所以$x + 4(-2) = -2$，因此$x - 8 = -2$，$x = +6$。$\mathrm{H_2SO_4}$中的硫也得到同样的数。这是一个氧化数，而不是断言硫酸根离子中含有一个$\mathrm{S^{6+}}$阳离子，旁边坐着四个氧离子。
 :::
-::: exercise {level=3}
-Exercise 7: apply the methods of Reactions in aqueous solution.
-::: solution
-Solution 7.
 :::
-::: exercise {level=3}
-Exercise 8: apply the methods of Reactions in aqueous solution.
+
+::: exercise 一比一的滴定 {#exr-titre level=2 check="27.78"}
+中和$20.00\ \mathrm{cm^3}$ $0.2500\ \mathrm{mol\,dm^{-3}}$盐酸需要多少体积的$0.1800\ \mathrm{mol\,dm^{-3}}$氢氧化钠？（以$\mathrm{cm^3}$为单位输入体积，保留两位小数。）两种溶液都有腐蚀性；该计算不是实验台上的操作步骤，真实的滴定需要有人指导并进行风险评估。
 ::: solution
-Solution 8.
+$n(\mathrm{HCl}) = 0.02000 \times 0.2500 = 0.005000\ \mathrm{mol}$。化学计量比为$1:1$，所以$n(\mathrm{NaOH}) = 0.005000\ \mathrm{mol}$，且
+
+$$
+V = \frac{0.005000}{0.1800} = 0.027778\ \mathrm{dm^3} = 27.78\ \mathrm{cm^3}.
+$$
+
+数据的四位有效数字支持以立方厘米计的体积保留两位小数。这里把终点当作化学计量点，这是[[#prop-titration]]中的强酸–强碱近似。
+:::
+:::
+
+::: exercise 氯化银的质量 {#exr-agcl-mass level=2 check="0.516"}
+把$30.0\ \mathrm{cm^3}$ $0.150\ \mathrm{mol\,dm^{-3}}$硝酸银与$45.0\ \mathrm{cm^3}$ $0.0800\ \mathrm{mol\,dm^{-3}}$氯化钠混合。忽略该盐的溶解度，沉淀出多少质量的$\mathrm{AgCl}$？$M(\mathrm{AgCl}) = 143.32\ \mathrm{g\,mol^{-1}}$。（以克为单位输入质量，保留三位有效数字。）
+::: solution
+$n(\mathrm{Ag^+}) = 0.0300 \times 0.150 = 0.00450\ \mathrm{mol}$，$n(\mathrm{Cl^-}) = 0.0450 \times 0.0800 = 0.00360\ \mathrm{mol}$。净反应为$\mathrm{Ag^+ + Cl^- \rightarrow AgCl(s)}$，系数相等，所以氯离子是限量反应物。质量为$0.00360 \times 143.32 = 0.516\ \mathrm{g}$。银离子过量$0.00090\ \mathrm{mol}$。旁观离子$\mathrm{Na^+}$和$\mathrm{NO_3^-}$不在这一质量中：天平称出的是干燥的沉淀，而不是留在滤液中的离子。
+:::
+:::
+
+::: exercise 碳酸盐沉淀的三种写法 {#exr-caco3 level=2}
+把氯化钙水溶液与碳酸钠水溶液混合。利用经验溶解性规则，写出生成碳酸钙沉淀的分子方程式、完全离子方程式和离子方程式。指出旁观离子，并确认离子方程式中电荷守恒。
+::: solution
+碳酸盐不溶，但钠、钾和铵的除外；氯化钙和碳酸钠可溶，所以
+
+$$
+\mathrm{CaCl_2(aq) + Na_2CO_3(aq) \rightarrow CaCO_3(s) + 2\,NaCl(aq)}.
+$$
+
+拆分可溶性强电解质，
+
+$$
+\mathrm{Ca^{2+}(aq) + 2\,Cl^-(aq) + 2\,Na^+(aq) + CO_3^{2-}(aq) \rightarrow CaCO_3(s) + 2\,Na^+(aq) + 2\,Cl^-(aq)}.
+$$
+
+旁观离子是$\mathrm{Na^+}$和$\mathrm{Cl^-}$。离子方程式为$\mathrm{Ca^{2+}(aq) + CO_3^{2-}(aq) \rightarrow CaCO_3(s)}$。电荷：$+2 + (-2) = 0$，与固体相符。所用规则是经验性的；它们为把碳酸盐写成固体提供了依据，而不是计算还剩多少毫克溶解着。
+:::
+:::
+
+::: exercise 由稀释后的等份求储备液浓度 {#exr-stock level=3 check="0.750"}
+把$10.00\ \mathrm{cm^3}$储备盐酸稀释到$100.0\ \mathrm{cm^3}$。取$25.00\ \mathrm{cm^3}$稀释后的酸，到达终点需要$18.75\ \mathrm{cm^3}$ $0.1000\ \mathrm{mol\,dm^{-3}}$氢氧化钠。储备液的浓度是多少？（以$\mathrm{mol\,dm^{-3}}$为单位输入，保留三位小数。）
+::: hint
+求出氢氧根的物质的量，令其等于等份中酸的物质的量，把这一物质的量换算为*稀释后*酸的浓度，最后才还原稀释。
+:::
+::: solution
+$n(\mathrm{NaOH}) = 0.01875 \times 0.1000 = 0.001875\ \mathrm{mol}$。滴定为$1:1$，所以等份中含$0.001875\ \mathrm{mol}$ $\mathrm{HCl}$。其浓度为$0.001875/0.02500 = 0.07500\ \mathrm{mol\,dm^{-3}}$。稀释把$10.00\ \mathrm{cm^3}$储备液加到$100.0\ \mathrm{cm^3}$，按这些体积恰好是$10$倍，所以储备液为$0.750\ \mathrm{mol\,dm^{-3}}$。报告$0.0750$给出的是被滴定的那份溶液的浓度，即最后一步之前的答案。稀释公式和滴定公式都用到了，而且用在了不同的两对溶液上。
+:::
+:::
+
+::: exercise 相同的滴定体积，不同的氢离子浓度 {#exr-weak level=3}
+分别用$0.100\ \mathrm{mol\,dm^{-3}}$氢氧化钠滴定$25.00\ \mathrm{cm^3}$ $0.100\ \mathrm{mol\,dm^{-3}}$盐酸和$25.00\ \mathrm{cm^3}$ $0.100\ \mathrm{mol\,dm^{-3}}$乙酸。解释为什么两份样品在化学计量点消耗相同体积的碱，以及为什么说加碱之前两份样品都有$[\mathrm{H^+}] = 0.100\ \mathrm{mol\,dm^{-3}}$仍然是错误的。不要编造$K_\mathrm{a}$的值。
+::: hint
+把酸的分析物质的量（化学计量点条件所看到的）与游离氢离子的物质的量（“强”和“弱”所描述的）区分开来。
+:::
+::: solution
+每份样品含有$0.02500 \times 0.100 = 0.00250\ \mathrm{mol}$酸（分子或离子形式）作为分析物质的量。盐酸与氢氧根按$1:1$反应。乙酸也按$1:1$反应，$\mathrm{CH_3COOH + OH^- \rightarrow CH_3COO^- + H_2O}$，尽管乙酸事先并未完全电离，强碱仍使质子转移进行完全。因此两个化学计量点都需要$0.00250\ \mathrm{mol}$ $\mathrm{NaOH}$，即$25.0\ \mathrm{cm^3}$ $0.100\ \mathrm{mol\,dm^{-3}}$的碱。体积相同是因为*酸的物质的量*相同，而不是因为氢离子浓度相同。
+
+滴定之前，稀盐酸完全电离，所以$[\mathrm{H^+}] = 0.100\ \mathrm{mol\,dm^{-3}}$是正确的说法。乙酸是弱电解质：$0.100\ \mathrm{mol\,dm^{-3}}$中的大部分以$\mathrm{CH_3COOH}$分子形式存在，$[\mathrm{H^+}]$比$0.100\ \mathrm{mol\,dm^{-3}}$小，小多少则需要一个本章没有的常数。把两个浓度设为相等，就是把记录溶解了什么的标签与记录溶液对它做了什么的电离混为一谈。这一电离的数值是[[general-chemistry-2/acids-bases]]的任务。
+:::
 :::
