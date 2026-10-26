@@ -1,585 +1,383 @@
-Fatigue is the failure of a material under cyclic loading, and the failure occurs at a stress level that is well below the material's yield strength. **The shaft that breaks at 40 % of its yield strength after 10 million cycles is not a material failure; it is a fatigue failure, and the fatigue failure is the reason 80–90 % of all mechanical failures are fatigue failures.** The fatigue failure is insidious: the crack initiates at a stress concentration (the fillet, the hole, the thread, the inclusion), grows slowly with each cycle, and then propagates catastrophically when the remaining cross-section is too small to carry the load. **The engineer who designs to the static yield strength without considering the fatigue is designing a component that will fail at a stress level that the static analysis says is safe.**
+Most machine parts that break in service do not break because a single load exceeded their strength. They break because a modest load, far below the yield strength, was applied millions of times. Axles, crankshafts, connecting rods, bolts, springs, gear teeth, turbine blades and welded brackets all fail this way, with little or no visible deformation and often with no warning. The phenomenon is **fatigue**, and designing against it is the central task of machine design: the static failure theories of [[machine-design/static-failure]] decide whether a part survives its first load, fatigue decides whether it survives its life.
 
-The quantitative tools of fatigue design are the **S-N curve** (the stress-life approach), the **endurance limit** (the stress below which the material does not fail), the **mean stress correction** (the Goodman, Soderberg, and ASME criteria), the **Miner's rule** (the cumulative damage rule), and the **fatigue crack growth** (the da/dN approach). The tools are the language in which the fatigue decision is expressed, and the language is the reason the fatigue design is a calculation, not a guess.
+A fatigue failure has three stages. A crack **initiates** at a point of high local stress — the root of a fillet, a keyway, a machining mark, an inclusion, a corrosion pit — by cyclic slip in a few grains. It then **grows** a little with each cycle, perpendicular to the largest tensile stress, leaving on the fracture surface the "beach marks" that record stops and changes in the loading. Finally the remaining section is too small to carry the peak load and **fractures** suddenly. The metallurgy of these stages is described in [[materials-science/failure]], and the mechanics of crack growth in [[solid-mechanics/fracture-mechanics]]. This chapter teaches the engineering method used to size most machine parts: the **stress-life** method, which predicts the number of cycles to failure from the stress amplitude, corrected for the real part and for mean stress.
 
-::: warning Nine ways fatigue design goes wrong
-**Not checking the fatigue.** The engineer who designs the shaft to the static yield strength without checking the fatigue is not designing the shaft; they are designing a fatigue test specimen. **The shaft that is sized by the static yield strength will fail by fatigue at 40–60 % of the yield strength, and the failure is the reason the fatigue check is mandatory for every cyclically loaded component.** **Ignoring the mean stress.** The engineer who uses the fully reversed S-N curve ($R = - 1$) for a component with a nonzero mean stress is not being conservative; they are being wrong. **The tensile mean stress reduces the fatigue life, and the reduction is the reason the Goodman, Soderberg, and ASME criteria are applied to the mean stress correction.** **Not accounting for the stress concentration.** The engineer who uses the nominal stress amplitude without the fatigue stress concentration factor $K _ { f }$ is not designing the component; they are designing the nominal section. **The fatigue stress concentration factor $K _ { f }$ reduces the fatigue strength by 30–70 %, and the reduction is the reason the fatigue crack initiates at the fillet, the hole, and the thread.** **Not accounting for the surface finish.** The engineer who uses the polished-specimen S-N curve for a machined component is not being conservative; they are being wrong. **The machined surface has a fatigue strength that is 10–30 % lower than the polished surface, and the reduction is the reason the surface finish factor $k _ { a }$ is applied to the endurance limit.** **Not accounting for the size effect.** The engineer who uses the small-specimen S-N curve for a large component is not being conservative; they are being wrong. **The large component has a fatigue strength that is 10–20 % lower than the small specimen, and the reduction is the reason the size factor $k _ { b }$ is applied to the endurance limit.** **Not accounting for the load type.** The engineer who uses the bending S-N curve for an axially loaded component is not being conservative; they are being wrong. **The axial loading has a fatigue strength that is 15 % lower than the bending, and the reduction is the reason the loading factor $k _ { c }$ is applied to the endurance limit.** **Not accounting for the temperature.** The engineer who uses the room-temperature S-N curve for a component operating at 500 °C is not designing for the temperature; they are designing for the room. **The fatigue strength at 500 °C is 50–70 % of the room-temperature fatigue strength, and the reduction is the reason the temperature factor $k _ { d }$ is applied to the endurance limit.** **Not using Miner's rule for variable amplitude loading.** The engineer who designs for a single stress amplitude when the component experiences a spectrum of amplitudes is not designing for the spectrum; they are designing for the worst case. **Miner's rule sums the damage fractions $n _ { i } / N _ { i }$ , and the sum is the reason the variable amplitude loading is handled by the cumulative damage approach.** **Not checking the fatigue safety factor.** The engineer who calculates the fatigue life without the safety factor is not designing the component; they are predicting the life. **The fatigue safety factor (typically 1.5–3) accounts for the scatter in the S-N data, the uncertainty in the loading, and the consequence of failure, and the safety factor is the reason the fatigue design is conservative.**
+Notation follows Budynas and Nisbett, *Shigley's Mechanical Engineering Design* (11th edition): $S$ for strengths, $\sigma$ and $\tau$ for stresses, $n$ for the factor of safety, $N$ for cycles to failure.
+
+## Describing a stress cycle
+
+::: definition Fluctuating stress {#def-cycle}
+A stress that varies periodically between $\sigma_{\max}$ and $\sigma_{\min}$ is described by its
+$$
+\text{alternating stress (amplitude)}\ \ \sigma_a = \frac{\sigma_{\max} - \sigma_{\min}}{2}, \qquad \text{mean stress}\ \ \sigma_m = \frac{\sigma_{\max} + \sigma_{\min}}{2},
+$$ {#eq-cycle}
+its **range** $\Delta\sigma = 2\sigma_a$ and its **stress ratio** $R = \sigma_{\min}/\sigma_{\max}$. A **fully reversed** cycle has $\sigma_m = 0$, $R = -1$; a **repeated** (zero-to-maximum) cycle has $\sigma_{\min} = 0$, $R = 0$, $\sigma_a = \sigma_m$.
 :::
 
-## 1. The S-N curve and the endurance limit
+To first order, fatigue life depends on the amplitude and the mean of the cycle, not on the shape of the waveform or (for metals at room temperature and ordinary frequencies) on the frequency. The amplitude drives crack growth; a tensile mean stress holds the crack open and shortens the life, a compressive mean stress lengthens it.
 
-::: definition The S-N curve and the fatigue life {#def-sn-curve}
-The **S-N curve** (stress-life curve, Wöhler curve) is the relationship between the stress amplitude $S _ { a }$ and the number of cycles to failure $N$ :
+A shaft turning under a steady bending moment is the classic fully reversed case: each surface point passes alternately through the tension and compression sides once per revolution. This is exactly the loading of the **rotating-beam test** of R. R. Moore, in which a polished specimen of about $7.6\ \mathrm{mm}$ diameter is turned under a constant bending moment until it breaks or reaches $10^7$ or more cycles. Most published fatigue data come from such tests.
 
-$$
-S _ { a } \; = \; S _ { f } ^ { \prime } \, ( 2 N _ { f } ) ^ { b } \quad \Longleftrightarrow \quad \log S _ { a } \; = \; \log S _ { f } ^ { \prime } + b \, \log ( 2 N _ { f } )
-$$
+## The stress-life (S–N) curve
 
-where $S _ { f } ^ { \prime }$ is the fatigue strength coefficient and $b$ is the fatigue exponent.
+Plotting the stress amplitude at which specimens fail against the number of cycles $N$, on logarithmic axes, gives the **S–N curve** (Wöhler curve). For steels three regions are seen. Below about $10^3$ cycles the strength falls slowly from the ultimate strength (low-cycle fatigue, where plastic strain dominates and the strain-life method is better). Between $10^3$ and about $10^6$ cycles the data lie close to a straight line on log–log axes (high-cycle fatigue). Beyond about $10^6$–$10^7$ cycles the curve of most steels and titanium alloys flattens to a **knee**: below a certain amplitude, the **endurance limit**, specimens appear to last indefinitely. Aluminium, copper and magnesium alloys show no such knee, and their strength is quoted at a stated life, often $5\times10^8$ cycles.
 
-$$
-\begin{array} { l c c c }
-\textbf{Material} & \textbf{ } S _ { u t } \textbf{ (MPa)} & \textbf{Endurance limit } S _ { e } \textbf{ (MPa)} & \textbf{Ratio } S _ { e } / S _ { u t } \\ \hline
-\text{Mild steel (AISI 1020)} & 380 & 170 & 0 . 4 5 \\
-\text{Medium carbon steel (1045)} & 570 & 260 & 0 . 4 6 \\
-\text{Alloy steel (4140)} & 655 & 300 & 0 . 4 6 \\
-\text{Aluminium (7075-T6)} & 503 & 160 & 0 . 3 2 \\
-\text{Aluminium (6061-T6)} & 310 & 97 & 0 . 3 1 \\
-\text{Titanium (Ti-6Al-4V)} & 950 & 500 & 0 . 5 3 \\
-\text{Cast iron (gray)} & 250 & 100 & 0 . 4 0 \\
-\text{Copper} & 220 & 65 & 0 . 3 0 \\
-\end{array}
-$$
-
-**The endurance limit is the stress amplitude below which the material does not fail, regardless of the number of cycles. The endurance limit exists for ferrous metals (steel, titanium) and does not exist for non-ferrous metals (aluminium, copper, magnesium). The engineer who designs an aluminium component for "infinite life" is designing for a life that does not exist.**
+::: definition Endurance limit and fatigue strength {#def-endurance}
+The **endurance limit** $S_e'$ is the fully reversed stress amplitude below which a polished laboratory specimen does not fail however many cycles are applied. The **fatigue strength** $S_f'$ at $N$ cycles is the fully reversed amplitude that causes failure at $N$ cycles. A prime denotes the properties of the standard specimen; unprimed $S_e$ and $S_f$ are the values for the real part after the corrections below.
 :::
 
-::: definition The endurance limit and the Marin factors {#def-marin-factors}
-The **endurance limit** of the component is the endurance limit of the laboratory specimen multiplied by the Marin factors:
-
+For steels, rotating-beam data plotted against tensile strength scatter widely but follow a trend that Budynas and Nisbett (eq. 6-8) summarise as
 $$
-S _ { e } \; = \; k _ { a } \, k _ { b } \, k _ { c } \, k _ { d } \, k _ { e } \, k _ { f } \; \times \; S _ { e } ^ { \prime }
-$$
+S_e' = \begin{cases} 0.5\,S_{ut}, & S_{ut} \le 1400\ \mathrm{MPa}, \\ 700\ \mathrm{MPa}, & S_{ut} > 1400\ \mathrm{MPa}. \end{cases}
+$$ {#eq-se-prime}
+The ratio varies between about $0.4$ and $0.6$ in the data; the estimate is for use when no test data are available. Very strong steels do not gain endurance in proportion, because their failures start at inclusions and they are more sensitive to surface defects.
 
-where $S _ { e } ^ { \prime }$ is the endurance limit of the laboratory specimen (typically $S _ { e } ^ { \prime } = 0 . 5 \, S _ { u t }$ for steel).
-
+::: proposition The high-cycle S–N line {#prop-basquin}
+If the S–N curve is a straight line on log–log axes between the points $(10^3,\ fS_{ut})$ and $(10^6,\ S_e)$, then for $10^3 \le N \le 10^6$
 $$
-\begin{array} { l l l l }
-\textbf{Factor} & \textbf{Name} & \textbf{Typical value} & \textbf{Reason} \\ \hline
-k _ { a } & \text{Surface finish} & 0 . 7 \text{--} 1 . 0 & \text{Machined surface has lower fatigue strength} \\
-k _ { b } & \text{Size} & 0 . 7 \text{--} 1 . 0 & \text{Larger component has lower fatigue strength} \\
-k _ { c } & \text{Load type} & 0 . 7 \text{--} 1 . 0 & \text{Axial loading has lower fatigue strength than bending} \\
-k _ { d } & \text{Temperature} & 0 . 6 \text{--} 1 . 0 & \text{High temperature reduces fatigue strength} \\
-k _ { e } & \text{Reliability} & 0 . 7 5 \text{--} 1 . 0 & \text{Higher reliability requires lower stress} \\
-k _ { f } & \text{Miscellaneous} & 0 . 5 \text{--} 1 . 0 & \text{Corrosion, residual stress, etc.} \\
-\end{array}
-$$
-
-**The Marin factors reduce the endurance limit by 30–60 %, and the reduction is the reason the component's fatigue strength is much lower than the laboratory specimen's fatigue strength. The engineer who uses the laboratory specimen's endurance limit without the Marin factors is not being conservative; they are being wrong.**
+S_f = a\,N^b, \qquad a = \frac{(fS_{ut})^2}{S_e}, \qquad b = -\frac13\log_{10}\frac{fS_{ut}}{S_e},
+$$ {#eq-basquin}
+and the life at a fully reversed stress amplitude $\sigma_\text{rev}$ in that range is $N = (\sigma_\text{rev}/a)^{1/b}$.
 :::
 
-::: definition The fatigue stress concentration factor {#def-fatigue-kt}
-The **fatigue stress concentration factor** ($K _ { f }$) is the ratio of the fatigue strength of the smooth specimen to the fatigue strength of the notched specimen:
+::: proof
+**Assumptions.** The power law $S_f = aN^b$ (Basquin's relation) holds between $10^3$ and $10^6$ cycles; the strength at $10^3$ cycles is a fraction $f$ of $S_{ut}$; the knee is at $10^6$ cycles.
 
-$$
-K _ { f } \; = \; 1 + q \, ( K _ { t } - 1 )
-$$
+Taking logarithms, $\log S_f = \log a + b\log N$, a straight line. Through the two points: $\log(fS_{ut}) = \log a + 3b$ and $\log S_e = \log a + 6b$. Subtracting, $3b = \log S_e - \log(fS_{ut})$, so $b = -\tfrac13\log(fS_{ut}/S_e)$. Then $\log a = \log(fS_{ut}) - 3b = \log(fS_{ut}) + \log(fS_{ut}/S_e) = \log[(fS_{ut})^2/S_e]$. Inverting $\sigma_\text{rev} = aN^b$ gives the life.
+:::
 
-where $K _ { t }$ is the theoretical stress concentration factor and $q$ is the **notch sensitivity**:
+The **fatigue strength fraction** $f$ is the ratio of the strength at $10^3$ cycles to $S_{ut}$. Budynas and Nisbett give it as a chart (their Fig. 6-18): $f = 0.9$ for $S_{ut}$ up to about $490\ \mathrm{MPa}$, falling to about $0.75$ near $1400\ \mathrm{MPa}$. In this chapter $f = 0.9$ is used unless stated. Notice that $S_e$ in [[#eq-basquin]] is the endurance limit **of the part**, so the whole line moves down when the corrections below are applied.
 
-$$
-q \; = \; { \frac { 1 } { 1 + { \sqrt { a / r } } } } \quad \text{with } a = \left( { \frac { S _ { u t } } { 2 0 } } \right) ^ { 2 } \quad \text{(Neuber)}
-$$
+::: widget plot
+f: if(x < 3, u*10^(x*log10(fr)/3), if(x < 6, ((fr*u)^2/(0.5*u*k))*10^(-x*log10(fr*u/(0.5*u*k))/3), 0.5*u*k))
+x: 0, 8
+y: 0, 1500
+sliders: u=700:300:1400:10, fr=0.9:0.75:0.95:0.01, k=1:0.3:1:0.01
+vlines: 3; 6
+labels: S_f\ \text{(MPa) against}\ \log_{10}N
+caption: An estimated S–N curve for a steel, stress amplitude in MPa against $\log_{10}N$. The slider $u$ is $S_{ut}$, $fr$ the fatigue strength fraction $f$, and $k$ the product of the Marin factors $k_ak_bk_c\dots$, so that the knee is at $S_e = 0.5\,k\,S_{ut}$. With the defaults ($S_{ut} = 700\ \mathrm{MPa}$, $f = 0.9$, $k = 1$) the curve passes through $630\ \mathrm{MPa}$ at $10^3$ cycles and $350\ \mathrm{MPa}$ at $10^6$. Now set $k = 0.54$, the value for the machined shaft of [[#ex-marin]]: the knee drops to $189\ \mathrm{MPa}$ and the line steepens, so at a given stress the life falls by far more than the 46 % reduction in strength suggests.
+:::
 
-$$
-\begin{array} { l c c c }
-\textbf{Material} & \textbf{ } S _ { u t } \textbf{ (MPa)} & \textbf{Notch sensitivity } q & \textbf{ } K _ { f } / K _ { t } \\ \hline
-\text{Mild steel} & 3 8 0 & 0 . 6 & 0 . 7 5 \\
-\text{Medium carbon steel} & 5 7 0 & 0 . 8 & 0 . 8 7 \\
-\text{Alloy steel (4140)} & 6 5 5 & 0 . 9 & 0 . 9 4 \\
-\text{High strength steel} & 1 5 0 0 & 1 . 0 & 1 . 0 0 \\
-\text{Aluminium (7075-T6)} & 5 0 3 & 0 . 9 & 0 . 9 4 \\
-\text{Cast iron} & 2 5 0 & 0 . 4 & 0 . 6 0 \\
-\end{array}
-$$
+::: example Life of a polished specimen {#ex-sn}
+A steel has $S_{ut} = 700\ \mathrm{MPa}$. Estimate the S–N line of polished rotating-beam specimens, the fatigue strength at $10^5$ cycles, and the life at a fully reversed amplitude of $450\ \mathrm{MPa}$.
+::: solution
+**Endurance limit.** $S_e' = 0.5\times700 = 350\ \mathrm{MPa}$. With $f = 0.9$, $fS_{ut} = 630\ \mathrm{MPa}$.
 
-**The notch sensitivity $q$ ranges from 0 (no notch effect, $K _ { f } = 1$ ) to 1 (full notch effect, $K _ { f } = K _ { t }$ ). The high-strength steel has $q \approx 1$ , which means the high-strength steel is fully notch-sensitive, and the notch sensitivity is the reason the high-strength steel is not always better than the low-strength steel in fatigue.**
+**Constants.** $a = 630^2/350 = 1134\ \mathrm{MPa}$, $b = -\tfrac13\log_{10}(630/350) = -\tfrac13\times0.2553 = -0.0851$.
+
+**Strength at $10^5$ cycles.** $S_f = 1134\times(10^5)^{-0.0851} = 1134\times0.3755 = 426\ \mathrm{MPa}$.
+
+**Life at $450\ \mathrm{MPa}$.** $N = (450/1134)^{1/(-0.0851)} = (0.3968)^{-11.75} = 5.2\times10^4$ cycles.
+
+**Sanity check.** $426\ \mathrm{MPa}$ lies between $630$ and $350$, about two-thirds of the way down the log scale as $10^5$ is two-thirds of the way from $10^3$ to $10^6$. A stress only 6 % above $426\ \mathrm{MPa}$ halves the life: lives are very sensitive to stress, which is why fatigue lives are quoted to one significant figure.
+:::
+:::
+
+## From specimen to part: the Marin factors
+
+A real part differs from the polished $7.6\ \mathrm{mm}$ specimen in surface, size, type of loading, temperature and the reliability required. Following J. Marin (1962), these differences are applied as multiplying factors on the specimen endurance limit:
+$$
+S_e = k_a\,k_b\,k_c\,k_d\,k_e\,k_f\,S_e'.
+$$ {#eq-marin}
+The factors below are the empirical fits given by Budynas and Nisbett (§6-9); each is a statistical average of scattered data and is used only in the absence of tests on the actual part.
+
+**Surface factor** $k_a = a\,S_{ut}^{\,b}$ ($S_{ut}$ in MPa). A rough surface is full of small notches, and the effect grows with strength because strong steels are more notch-sensitive:
+
+| surface finish | $a$ (MPa) | $b$ |
+|---|---|---|
+| ground | $1.58$ | $-0.085$ |
+| machined or cold-drawn | $4.51$ | $-0.265$ |
+| hot-rolled | $57.7$ | $-0.718$ |
+| as-forged | $272$ | $-0.995$ |
+
+**Size factor** $k_b$. In bending and torsion a larger section has a larger volume of highly stressed material, so a weak spot is more likely. For round bars in rotating bending or torsion,
+$$
+k_b = 1.24\,d^{-0.107}\ \ (2.79 \le d \le 51\ \mathrm{mm}), \qquad k_b = 1.51\,d^{-0.157}\ \ (51 < d \le 254\ \mathrm{mm}),
+$$ {#eq-kb}
+with $d$ in mm; non-rotating and non-round sections use an equivalent diameter. For axial loading there is no stress gradient and $k_b = 1$.
+
+**Load factor** $k_c = 1$ for bending, $0.85$ for axial loading and $0.59$ for torsion. When torsion is combined with other stresses through the von Mises stress, as later in this chapter, $k_c = 1$ is used, because the von Mises conversion already accounts for the difference between shear and normal strength.
+
+**Temperature factor** $k_d$: $1$ near room temperature; at elevated temperature the endurance limit follows the tensile strength down, and above about half the absolute melting temperature creep must be considered.
+
+**Reliability factor** $k_e$. Endurance limits scatter with a standard deviation of roughly 8 % of the mean. [[#eq-se-prime]] gives a mean; for higher reliability:
+
+| reliability | 50 % | 90 % | 95 % | 99 % | 99.9 % |
+|---|---|---|---|---|---|
+| $k_e$ | $1.000$ | $0.897$ | $0.868$ | $0.814$ | $0.753$ |
+
+**Miscellaneous factor** $k_f$: corrosion, plating, fretting, residual stresses — usually $1$ in calculation but a reminder that these effects can dominate. Shot peening and rolling, which leave compressive residual stresses at the surface, can raise fatigue strength substantially; corrosion and chromium plating can lower it drastically.
+
+::: example Endurance limit of a machined shaft {#ex-marin}
+A machined steel shaft of $40\ \mathrm{mm}$ diameter ($S_{ut} = 700\ \mathrm{MPa}$) rotates under a steady bending moment at room temperature. Estimate its endurance limit at 99 % reliability, and the life at a fully reversed amplitude of $300\ \mathrm{MPa}$ (away from any notch).
+::: solution
+**Factors.** $k_a = 4.51\times700^{-0.265} = 0.795$; $k_b = 1.24\times40^{-0.107} = 0.836$; $k_c = 1$ (bending); $k_d = 1$; $k_e = 0.814$; $k_f = 1$.
+
+**Endurance limit.** $S_e = 0.795\times0.836\times0.814\times350 = 189\ \mathrm{MPa}$ — 54 % of the specimen value.
+
+**S–N line.** $a = 630^2/189.2 = 2098\ \mathrm{MPa}$, $b = -\tfrac13\log_{10}(630/189.2) = -0.1741$. At $300\ \mathrm{MPa}$: $N = (300/2098)^{-1/0.1741} = 7.1\times10^4$ cycles.
+
+**Comment.** The polished specimen would last indefinitely at $300\ \mathrm{MPa}$, since that is below $S_e' = 350\ \mathrm{MPa}$. The machined, larger shaft at 99 % reliability lasts some $70\,000$ revolutions — about 40 minutes at $1800\ \mathrm{rpm}$. The surface and size corrections are not refinements; they decide the design.
+:::
+:::
+
+## Stress concentration and notch sensitivity
+
+Fatigue cracks start at notches. Under static load a ductile material yields locally and the elastic stress concentration factor $K_t$ of [[machine-design/static-failure]] hardly matters; under cyclic load it matters a great deal. But the full $K_t$ is not observed either: small, sharp notches weaken a part less than $K_t$ predicts, because the stress falls off steeply from the notch root and a crack needs a finite volume of highly stressed material to start. The **fatigue stress concentration factor** $K_f$, the ratio of the unnotched to the notched endurance strength, is related to $K_t$ by the **notch sensitivity** $q$:
+$$
+K_f = 1 + q\,(K_t - 1), \qquad 0 \le q \le 1,
+$$ {#eq-kf}
+and similarly $K_{fs} = 1 + q_s(K_{ts} - 1)$ in shear. $q = 0$ means the notch has no effect; $q = 1$ means full sensitivity, $K_f = K_t$. Neuber's form of the dependence on the notch radius $r$ is
+$$
+q = \frac{1}{1 + \sqrt{a_N}/\sqrt{r}},
+$$ {#eq-neuber}
+where $\sqrt{a_N}$ (the Neuber constant, with units of $\sqrt{\mathrm{mm}}$) is a material property that decreases with tensile strength: stronger steels are more notch-sensitive. Budynas and Nisbett give $q$ as charts against $r$ for steels of different strength and for aluminium alloys; for steels with notch radii of a few millimetres $q$ is typically $0.7$–$0.95$. When in doubt, take $q = 1$.
+
+$K_f$ multiplies the nominal stress, not the strength. Budynas and Nisbett apply it to both the alternating and the mean components, $\sigma_a = K_f\sigma_{a,\text{nom}}$, $\sigma_m = K_f\sigma_{m,\text{nom}}$, which is conservative when the notch root yields on the first cycle.
+
+::: warning Mistakes that make fatigue predictions worthless
+- **Using the specimen endurance limit for the part.** Forgetting $k_a$ and $k_b$ alone can overestimate $S_e$ by a factor of 2 and the life by orders of magnitude.
+- **Applying $K_f$ twice**, once to the stress and again to the strength, or applying it to a strength already measured on notched parts (such as the endurance strengths quoted for threaded fasteners or springs).
+- **Using $k_c = 0.59$ for torsion and then also using the von Mises stress**, which counts the shear-strength reduction twice.
+- **Ignoring the mean stress**, or treating a compressive mean stress as beneficial in a design calculation without test evidence.
+- **Expecting precision.** Lives estimated by the stress-life method are good to a factor of 2–3 at best; design with an adequate factor of safety on stress and test the real part when failure matters.
+:::
+
+## Fluctuating stresses: the effect of mean stress
+
+Tests at different mean stresses give, for each life, a set of combinations $(\sigma_m, \sigma_a)$ that cause failure. On a plot of $\sigma_a$ against $\sigma_m$ — the **fatigue diagram** — the infinite-life points run from $(0, S_e)$ on the alternating axis down towards the tensile strength on the mean axis. Several curves are used to represent them (Budynas and Nisbett, §6-12):
+$$
+\begin{aligned}
+&\text{modified Goodman:} && \frac{\sigma_a}{S_e} + \frac{\sigma_m}{S_{ut}} = \frac1n, \\
+&\text{Gerber:} && \frac{n\sigma_a}{S_e} + \left(\frac{n\sigma_m}{S_{ut}}\right)^2 = 1, \\
+&\text{ASME-elliptic:} && \left(\frac{n\sigma_a}{S_e}\right)^2 + \left(\frac{n\sigma_m}{S_y}\right)^2 = 1, \\
+&\text{Soderberg:} && \frac{\sigma_a}{S_e} + \frac{\sigma_m}{S_y} = \frac1n, \\
+&\text{Langer (first-cycle yield):} && \sigma_a + \sigma_m = \frac{S_y}{n}.
+\end{aligned}
+$$ {#eq-mean}
+These are empirical failure loci, not laws. The Gerber parabola passes through the middle of the data for ductile steels; the Goodman line lies below most of the data and is simple and conservative; the ASME-elliptic curve fits well and is used in the ASME shaft standard; the Soderberg line, through $S_y$, is very conservative. Each criterion is written for a **load line through the origin**: $\sigma_a$ and $\sigma_m$ both grow by the factor $n$, as they do when a load of fixed shape is increased. The Langer line checks yielding on the first cycle; it is needed because the Goodman and Gerber curves extend beyond $S_y$ near the mean-stress axis.
+
+::: proposition Goodman factor of safety on a radial load line {#prop-goodman-n}
+If the stresses at a point increase proportionally, $(\sigma_m, \sigma_a) \to (n\sigma_m, n\sigma_a)$, the factor of safety against infinite-life fatigue failure by the modified Goodman criterion is
+$$
+n_f = \left(\frac{\sigma_a}{S_e} + \frac{\sigma_m}{S_{ut}}\right)^{-1},
+$$ {#eq-goodman-n}
+and the Gerber factor of safety is
+$$
+n_f = \frac12\left(\frac{S_{ut}}{\sigma_m}\right)^2\frac{\sigma_a}{S_e}\left[-1 + \sqrt{1 + \left(\frac{2\sigma_mS_e}{S_{ut}\sigma_a}\right)^2}\right] \quad (\sigma_m > 0).
+$$ {#eq-gerber-n}
+:::
+
+::: proof
+**Assumptions.** Tensile mean stress ($\sigma_m > 0$); the failure locus is the Goodman line or Gerber parabola through $(0, S_e)$ and $(S_{ut}, 0)$; the load line passes through the origin.
+
+**Goodman.** The point $(n\sigma_m, n\sigma_a)$ lies on the line $S_a/S_e + S_m/S_{ut} = 1$ when $n(\sigma_a/S_e + \sigma_m/S_{ut}) = 1$, which is [[#eq-goodman-n]].
+
+**Gerber.** The point lies on $S_a/S_e + (S_m/S_{ut})^2 = 1$ when $n\sigma_a/S_e + n^2\sigma_m^2/S_{ut}^2 = 1$, a quadratic $An^2 + Bn - 1 = 0$ with $A = \sigma_m^2/S_{ut}^2$, $B = \sigma_a/S_e$. Its positive root is $n = \dfrac{-B + \sqrt{B^2 + 4A}}{2A} = \dfrac{B}{2A}\left[-1 + \sqrt{1 + 4A/B^2}\right]$. Substituting, $B/(2A) = \tfrac12(S_{ut}/\sigma_m)^2\sigma_a/S_e$ and $4A/B^2 = (2\sigma_mS_e/(S_{ut}\sigma_a))^2$, which is [[#eq-gerber-n]].
 :::
 
 ::: widget plot
-title: The S-N curve for steel and aluminium
-f: 500*x^-0.085; 250*x^-0.077
-x: 1000,10000000
-y: 50,600
-labels: Steel (endurance limit); Aluminium (no endurance limit)
-caption: The S-N curve (stress amplitude vs number of cycles) for steel (with an endurance limit) and aluminium (without an endurance limit). **The steel curve flattens at $1 0 ^ { 6 }$ cycles, and the flattening is the endurance limit. The aluminium curve continues to decrease, and the decrease is the reason aluminium has no endurance limit.** **The fatigue strength at $1 0 ^ { 7 }$ cycles is the design basis for aluminium components, and the design basis is the reason the aluminium component is designed for a finite life, not an infinite life.**
+f: e*(1 - x/u); e*(1 - (x/u)^2); sy - x; r*x
+x: 0, 800
+y: 0, 400
+sliders: u=700:400:1200:10, sy=550:250:1000:10, e=236:100:400:1, r=0.6:0.1:3:0.01
+points: 150,90
+labels: \text{Goodman}; \text{Gerber}; \text{Langer (yield)}; \text{load line}
+caption: Fatigue diagram: alternating against mean stress in MPa, for $S_{ut} = u$, $S_y = sy$ and $S_e = e$. The defaults are those of [[#ex-mean]], whose working point $(150, 90)$ is marked; the load line through it has slope $r = 0.6$. (The ASME-elliptic and Soderberg curves are left out for clarity: the ellipse runs from $S_e$ to $S_y$ close to the Gerber curve, the Soderberg line from $S_e$ to $S_y$ below Goodman.) Read the factor of safety for each criterion as the distance along the load line to the curve divided by the distance to the working point. Move $r$ up (more alternating stress) and the criteria converge; move it towards zero (nearly static load) and they spread, with Langer's yield line taking over from Goodman and Gerber.
 :::
 
-::: example S-N curve calculation {#ex-sn-curve level=3 check="2"}
-A steel component has $S _ { u t } = 7 0 0$ MPa, a machined surface, a diameter of 40 mm, and is loaded in bending. The Marin factors are $k _ { a } = 0 . 8 3$ , $k _ { b } = 0 . 8 4$ , $k _ { c } = 1 . 0$ , $k _ { d } = 1 . 0$ , $k _ { e } = 0 . 8 7$ . Calculate the endurance limit and the fatigue strength at $1 0 ^ { 5 }$ cycles.
+::: example A notched bar under fluctuating tension {#ex-mean}
+A machined steel bar ($S_{ut} = 700\ \mathrm{MPa}$, $S_y = 550\ \mathrm{MPa}$) has a net section of $300\ \mathrm{mm^2}$ at a groove with $K_t = 2.0$ and notch sensitivity $q = 0.8$. It carries an axial load cycling between $10\ \mathrm{kN}$ and $40\ \mathrm{kN}$. Find the factors of safety for infinite life by Goodman, Gerber, ASME-elliptic and Soderberg, and against first-cycle yield. Take 50 % reliability.
+::: solution
+**Endurance limit.** $k_a = 0.795$ (as in [[#ex-marin]]), $k_b = 1$ and $k_c = 0.85$ for axial load: $S_e = 0.795\times0.85\times350 = 236\ \mathrm{MPa}$.
 
-**Endurance limit of the specimen:**
+**Stresses.** $K_f = 1 + 0.8(2.0 - 1) = 1.8$. $F_a = 15\ \mathrm{kN}$, $F_m = 25\ \mathrm{kN}$, so $\sigma_a = 1.8\times15\,000/300 = 90\ \mathrm{MPa}$ and $\sigma_m = 1.8\times25\,000/300 = 150\ \mathrm{MPa}$.
 
-$$
-S _ { e } ^ { \prime } \; = \; 0 . 5 \times S _ { u t } \; = \; 0 . 5 \times 7 0 0 \; = \; 3 5 0 \ \text{MPa}
-$$
+**Factors of safety.**
+- Goodman: $1/n = 90/236 + 150/700 = 0.381 + 0.214 = 0.595$, $n = 1.68$.
+- Gerber, [[#eq-gerber-n]]: $2\sigma_mS_e/(S_{ut}\sigma_a) = 1.126$, $n = 2.10$.
+- ASME-elliptic: $n = [(90/236)^2 + (150/550)^2]^{-1/2} = 2.14$.
+- Soderberg: $1/n = 90/236 + 150/550 = 0.654$, $n = 1.53$.
+- Langer: $n_y = 550/(90 + 150) = 2.29$.
 
-**Endurance limit of the component:**
-
-$$
-S _ { e } \; = \; 0 . 8 3 \times 0 . 8 4 \times 1 . 0 \times 1 . 0 \times 0 . 8 7 \times 3 5 0 \; = \; { \bf 2 1 3 } \ \text{MPa}
-$$
-
-**Fatigue strength at $1 0 ^ { 5 }$ cycles:**
-
-$$
-S _ { f } \; = \; S _ { e } \times ( 2 N ) ^ { b } / ( 2 \times 1 0 ^ { 6 } ) ^ { b } \quad \text{where } b = - { \frac { 1 } { 3 } } \log ( f \, S _ { u t } / S _ { e } )
-$$
-
-For $f = 0 . 8$ :
-
-$$
-b \; = \; - { \frac { 1 } { 3 } } \log \left( { \frac { 0 . 8 \times 7 0 0 } { 2 1 3 } } \right) \; = \; - { \frac { 1 } { 3 } } \log ( 2 . 6 3 ) \; = \; - 0 . 1 4 0
-$$
-
-$$
-S _ { f } ( 1 0 ^ { 5 } ) \; = \; 2 1 3 \times \left( { \frac { 2 \times 1 0 ^ { 5 } } { 2 \times 1 0 ^ { 6 } } } \right) ^ { - 0 . 1 4 0 } \; = \; 2 1 3 \times ( 0 . 1 ) ^ { - 0 . 1 4 0 } \; = \; 2 1 3 \times 1 . 3 8 \; = \; { \bf 2 9 4 } \ \text{MPa}
-$$
-
-**The fatigue strength at $1 0 ^ { 5 }$ cycles (294 MPa) is 38 % higher than the endurance limit (213 MPa), and the difference is the reason the component can withstand a higher stress for a shorter life.**
+**Interpretation.** Fatigue governs in every case. The spread, $1.5$ to $2.1$, is the uncertainty in the criterion itself; a designer using Goodman with $n \ge 1.5$ is protected against it. The yield check uses the full $K_f$ and is conservative: a ductile notch root yielding locally on the first cycle would actually relieve the mean stress.
+:::
 :::
 
-## 2. Mean stress correction
+## Combined loading
 
-::: definition The Goodman, Soderberg, and ASME criteria {#def-mean-stress}
-The **mean stress correction** accounts for the effect of the mean stress on the fatigue strength. The three criteria are:
+Shafts, cranks and brackets carry bending, axial and torsional stresses together, each with its own alternating and mean part. The usual engineering approach (Budynas and Nisbett, §6-14) combines them through the von Mises stress, separately for the alternating and the mean parts, and then uses a uniaxial fatigue criterion.
 
-**Goodman criterion:**
-
-$$
-{ \frac { S _ { a } } { S _ { e } } } + { \frac { S _ { m } } { S _ { u t } } } \; = \; { \frac { 1 } { n } }
-$$
-
-**Soderberg criterion:**
-
-$$
-{ \frac { S _ { a } } { S _ { e } } } + { \frac { S _ { m } } { S _ { y } } } \; = \; { \frac { 1 } { n } }
-$$
-
-**ASME criterion (with stress concentration):**
-
-$$
-{ \frac { S _ { a } } { S _ { e } / K _ { f } } } + { \frac { S _ { m } } { S _ { y } } } \; = \; { \frac { 1 } { n } }
-$$
-
-where $S _ { a }$ is the stress amplitude, $S _ { m }$ is the mean stress, $S _ { e }$ is the endurance limit, $S _ { u t }$ is the ultimate strength, $S _ { y }$ is the yield strength, and $K _ { f }$ is the fatigue stress concentration factor.
-
-$$
-\begin{array} { l c c c }
-\textbf{Criterion} & \textbf{Yield check} & \textbf{Conservatism} & \textbf{Use case} \\ \hline
-\text{Goodman} & \text{No} & \text{Moderate} & \text{Ductile materials, } S _ { u t } / S _ { y } < 1 . 4 \\
-\text{Soderberg} & \text{Yes} & \text{Most conservative} & \text{When yielding must be prevented} \\
-\text{ASME} & \text{Yes} & \text{Moderate} & \text{With stress concentration} \\
-\text{Gerber} & \text{No} & \text{Least conservative} & \text{Ductile materials, } S _ { u t } / S _ { y } > 1 . 4 \\
-\end{array}
-$$
-
-**The Goodman criterion is the most widely used mean stress correction in machine design, because the Goodman criterion is simple, conservative, and accurate for ductile materials. The Soderberg criterion is more conservative than the Goodman criterion, because the Soderberg criterion uses the yield strength instead of the ultimate strength.**
+::: algorithm Fatigue under combined in-phase loading {#alg-combined}
+1. At the critical point, find the nominal alternating and mean components of each stress: $\sigma_{a}$, $\sigma_{m}$ (bending plus axial) and $\tau_a$, $\tau_m$ (torsion).
+2. Multiply each by its fatigue stress concentration factor: $K_f$ for bending (and $K_{f,\text{axial}}$ for axial; divide an axial alternating stress by $0.85$ if the endurance limit is taken for bending), $K_{fs}$ for torsion.
+3. Combine: $\sigma_a' = \sqrt{\sigma_a^2 + 3\tau_a^2}$ and $\sigma_m' = \sqrt{\sigma_m^2 + 3\tau_m^2}$ (with the concentrated values).
+4. Compute $S_e$ with $k_c = 1$ (bending).
+5. Apply a mean-stress criterion of [[#eq-mean]] with $\sigma_a'$, $\sigma_m'$; check first-cycle yield with $\sigma'_{\max} = \sqrt{(\sigma_a + \sigma_m)^2 + 3(\tau_a + \tau_m)^2}$.
 :::
 
-::: widget plot
-title: The mean stress correction criteria
-f: 350*(1-x/700); 350*(1-x/500); 350*(1-(x/500)^2)
-x: 0,700
-y: 0,400
-labels: Goodman; Soderberg; Gerber
-caption: The mean stress correction criteria in the $S _ { m } { - } S _ { a }$ plane for a steel with $S _ { e } = 3 5 0$ MPa, $S _ { y } = 5 0 0$ MPa, and $S _ { u t } = 7 0 0$ MPa. **The Goodman line connects $( 0 , S _ { e } )$ to $( S _ { u t } , 0 )$ , and the Soderberg line connects $( 0 , S _ { e } )$ to $( S _ { y } , 0 )$ . The Gerber curve is a parabola that connects $( 0 , S _ { e } )$ to $( S _ { u t } , 0 )$ . The Soderberg line is the most conservative, and the Gerber curve is the least conservative.** **The design point $( S _ { m } , S _ { a } )$ must lie below the criterion line, and the criterion is the reason the mean stress correction is applied to every fatigue design.**
+The method is approximate. It assumes the components are in phase (all reach their peaks together); for out-of-phase multiaxial loading, as in some crankshafts and rotor shafts, critical-plane methods are used instead.
+
+::: example A lever under fluctuating bending and steady torsion {#ex-combined}
+At the fillet of a lever arm the nominal bending stress cycles from $0$ to $120\ \mathrm{MPa}$ while a steady torsional stress of $40\ \mathrm{MPa}$ acts. $K_f = 1.6$, $K_{fs} = 1.3$. The fully corrected endurance limit (with $k_c = 1$) is $S_e = 200\ \mathrm{MPa}$; $S_{ut} = 700\ \mathrm{MPa}$, $S_y = 550\ \mathrm{MPa}$. Find the Goodman factor of safety and the yield factor of safety.
+::: solution
+**Components.** $\sigma_a = \sigma_m = 60\ \mathrm{MPa}$; $\tau_a = 0$, $\tau_m = 40\ \mathrm{MPa}$.
+
+**Von Mises.** $\sigma_a' = 1.6\times60 = 96.0\ \mathrm{MPa}$; $\sigma_m' = \sqrt{(1.6\times60)^2 + 3(1.3\times40)^2} = \sqrt{9216 + 8112} = 131.6\ \mathrm{MPa}$.
+
+**Goodman.** $1/n_f = 96.0/200 + 131.6/700 = 0.480 + 0.188 = 0.668$, $n_f = 1.50$.
+
+**Yield.** $\sigma'_{\max} = \sqrt{(1.6\times120)^2 + 3(1.3\times40)^2} = \sqrt{36\,864 + 8112} = 212.1\ \mathrm{MPa}$, $n_y = 550/212.1 = 2.59$.
+
+**Comment.** The steady torque adds nothing to the alternating stress but raises the mean, lowering the factor of safety from $1/(0.48 + 96/700) = 1.62$ (bending only) to $1.50$.
+:::
 :::
 
-::: example Goodman criterion for a shaft {#ex-goodman-shaft level=3 check="2"}
-A shaft has a stress amplitude $S _ { a } = 1 2 0$ MPa and a mean stress $S _ { m } = 8 0$ MPa. The material has $S _ { e } = 2 5 0$ MPa, $S _ { y } = 4 5 0$ MPa, and $S _ { u t } = 7 0 0$ MPa. Calculate the factor of safety using the Goodman and Soderberg criteria.
+## Variable-amplitude loading and cumulative damage
 
-**Goodman:**
+Real parts rarely see constant-amplitude cycles. A crane hook, a vehicle suspension arm or a wind-turbine shaft sees a spectrum of amplitudes. Counting the cycles in a measured stress history is done by **rainflow counting** (standardised in ASTM E1049), which pairs the peaks and valleys into closed hysteresis loops, each with an amplitude and mean. The damage from the counted cycles is then added up.
 
+::: proposition Palmgren–Miner linear damage rule {#prop-miner}
+Suppose a part is subjected to $n_i$ cycles at amplitude $\sigma_i$ ($i = 1, \dots, k$), where the constant-amplitude life at $\sigma_i$ is $N_i$. If each cycle at $\sigma_i$ consumes the fraction $1/N_i$ of the life regardless of when it is applied, failure occurs when
 $$
-{ \frac { 1 2 0 } { 2 5 0 } } + { \frac { 8 0 } { 7 0 0 } } \; = \; 0 . 4 8 + 0 . 1 1 4 \; = \; 0 . 5 9 4 \; = \; { \frac { 1 } { n } }
-$$
-
-$$
-n _ { \text{Goodman } } \; = \; { \frac { 1 } { 0 . 5 9 4 } } \; = \; { \bf 1 . 6 8 }
-$$
-
-**Soderberg:**
-
-$$
-{ \frac { 1 2 0 } { 2 5 0 } } + { \frac { 8 0 } { 4 5 0 } } \; = \; 0 . 4 8 + 0 . 1 7 8 \; = \; 0 . 6 5 8 \; = \; { \frac { 1 } { n } }
-$$
-
-$$
-n _ { \text{Soderberg } } \; = \; { \frac { 1 } { 0 . 6 5 8 } } \; = \; { \bf 1 . 5 2 }
-$$
-
-**The Soderberg factor of safety (1.52) is 10 % lower than the Goodman factor of safety (1.68), because the Soderberg criterion uses the yield strength (450 MPa) instead of the ultimate strength (700 MPa). The 10 % is the reason the Soderberg criterion is more conservative than the Goodman criterion.**
+D = \sum_{i=1}^{k}\frac{n_i}{N_i} = 1.
+$$ {#eq-miner}
 :::
 
-## 3. Cumulative damage and variable amplitude loading
-
-::: definition Miner's rule and the cumulative damage {#def-miners-rule}
-**Miner's rule** (Palmgren-Miner linear damage hypothesis, 1945) states that the cumulative damage is the sum of the damage fractions:
-
-$$
-D \; = \; \sum _ { i = 1 } ^ { k } { \frac { n _ { i } } { N _ { i } } }
-$$
-
-where $n _ { i }$ is the number of cycles at stress amplitude $S _ { i }$ and $N _ { i }$ is the number of cycles to failure at stress amplitude $S _ { i }$ .
-
-The component fails when $D \ge 1$ :
-
-$$
-D \; = \; { \frac { n _ { 1 } } { N _ { 1 } } } + { \frac { n _ { 2 } } { N _ { 2 } } } + \cdots + { \frac { n _ { k } } { N _ { k } } } \; \ge \; 1
-$$
-
-**Miner's rule is linear: the damage per cycle is $1 / N _ { i }$ , and the damage is independent of the load sequence. The linearity is the reason Miner's rule is simple to apply and inaccurate for variable amplitude loading: the overload that creates a compressive residual stress at the crack tip actually slows the crack growth, and the slowing is the reason Miner's rule is non-conservative for spectrum loading.**
+::: proof
+**Assumption (the hypothesis of the rule).** Damage is a single scalar quantity $D$ that accumulates linearly with cycles at each amplitude, from $D = 0$ (new) to $D = 1$ (failure), at a rate that depends only on the current amplitude: $dD/dn = 1/N(\sigma)$. Under constant amplitude this reproduces the S–N curve, since $D = n/N$ reaches 1 at $n = N$. Under a sequence of amplitudes the increments add, $D = \sum n_i/N_i$, and the order of application is irrelevant because the rate does not depend on $D$. Failure at $D = 1$ gives [[#eq-miner]]. The derivation shows exactly what the rule leaves out: the dependence of damage rate on the damage already done, and hence all sequence effects.
 :::
 
-::: definition The rainflow counting method {#def-rainflow}
-The **rainflow counting method** (Matsuishi and Endo, 1968) is the standard method for converting a variable amplitude load history into a set of stress cycles $( S _ { a , i } , S _ { m , i } , n _ { i } )$ . The method is called "rainflow" because the counting algorithm simulates the flow of rainwater down a pagoda roof:
+The rule was proposed by A. Palmgren (1924) for ball bearings and by M. A. Miner (1945) for aircraft structures. Experiments give $D$ at failure anywhere from about $0.3$ to $3$: high-then-low sequences tend to fail early ($D < 1$), because cracks started by the high loads grow under loads that would not have started them; low-then-high sequences tend to last longer. Cycles below the endurance limit are counted as harmless in the simple rule, which is unconservative once a crack exists; codes for welded structures (EN 1993-1-9, for example) extend the S–N line below the knee at a reduced slope for this reason. Some design codes require $D \le 0.5$ or less.
 
-1. Identify the peaks and valleys of the load history.
-2. Count the half-cycles from the outside in, following the "rainflow" path.
-3. Pair the half-cycles to form full cycles.
-4. Calculate the stress amplitude and mean stress for each cycle.
+::: example Life under a load spectrum {#ex-miner}
+The machined shaft of [[#ex-marin]] ($S_e = 189\ \mathrm{MPa}$, $a = 2098\ \mathrm{MPa}$, $b = -0.1741$) sees, in each block of operation, $2000$ cycles at $350\ \mathrm{MPa}$, $10\,000$ at $280\ \mathrm{MPa}$, $50\,000$ at $220\ \mathrm{MPa}$ and $10^6$ at $150\ \mathrm{MPa}$, all fully reversed. Estimate the number of blocks to failure.
+::: solution
+**Lives.** $N = (\sigma/a)^{1/b}$: at $350\ \mathrm{MPa}$, $N_1 = 2.92\times10^4$; at $280$, $N_2 = 1.05\times10^5$; at $220$, $N_3 = 4.21\times10^5$; at $150\ \mathrm{MPa}$, below $S_e$, $N_4 = \infty$.
 
-**The rainflow counting method is the reason the variable amplitude loading is handled by Miner's rule: the rainflow counting converts the complex load history into a set of simple cycles, and the simple cycles are the input to Miner's rule.**
+**Damage per block.** $D = 2000/29\,230 + 10\,000/105\,300 + 50\,000/420\,600 + 0 = 0.068 + 0.095 + 0.119 = 0.282$.
+
+**Blocks.** $1/0.282 = 3.5$ blocks.
+
+**Comment.** Each damaging level contributes a similar share; the million low cycles contribute nothing by this rule. Had the knee been ignored and the S–N line extended, the life at $150\ \mathrm{MPa}$ would be $N_4 = (150/2098)^{1/b} = 3.8\times10^6$ cycles, adding $10^6/3.8\times10^6 = 0.26$ per block and nearly halving the life, to $1.8$ blocks. Which assumption is right depends on whether cracks are already growing — exactly what the linear rule cannot tell.
+:::
 :::
 
-::: example Miner's rule for a spectrum {#ex-miner-spectrum level=3 check="2"}
-A component experiences the following load spectrum:
+## Beyond stress-life
 
-| Stress amplitude (MPa) | Cycles applied $n_i$ | Cycles to failure $N_i$ |
-|------------------------|---------------------|------------------------|
-| 400 | 1 000 | 10 000 |
-| 300 | 10 000 | 100 000 |
-| 200 | 100 000 | 1 000 000 |
+The stress-life method suits long lives and parts designed to stay elastic. Two other methods are used in industry. The **strain-life** method (Coffin–Manson and Basquin, with Neuber's rule to find notch-root strains) treats the cyclic plastic strain at a notch explicitly; it is the method for low-cycle fatigue, such as thermal cycling of turbine parts and overload-dominated spectra. **Linear-elastic fracture mechanics** treats the crack itself: with the Paris law, $da/dN = C(\Delta K)^m$, it predicts how long a crack of known size takes to grow to critical, which is the basis of the damage-tolerant design and inspection intervals of aircraft structures. See [[solid-mechanics/fracture-mechanics]].
 
-Calculate the cumulative damage and the remaining life.
-
-$$
-D \; = \; { \frac { 1 \ 0 0 0 } { 1 0 \ 0 0 0 } } + { \frac { 1 0 \ 0 0 0 } { 1 0 0 \ 0 0 0 } } + { \frac { 1 0 0 \ 0 0 0 } { 1 \ 0 0 0 \ 0 0 0 } } \; = \; 0 . 1 + 0 . 1 + 0 . 1 \; = \; { \bf 0 . 3 }
-$$
-
-**The cumulative damage is 0.3, which means the component has consumed 30 % of its fatigue life. The remaining life is 70 % of the spectrum life, and the remaining life is the reason the component can be inspected and replaced before the damage reaches 1.0.**
+::: application Railway axles and aircraft structures
+Railway axles were the first engineering parts designed against fatigue, and they remain a demanding case: a wheelset axle turns about 500 million times in a million kilometres, each revolution a cycle of rotating bending, with stress raisers at the wheel seats where press-fitting causes fretting. Modern axles are designed to standards (EN 13103 and EN 13104 in Europe) that specify permissible stresses at each section, and they are inspected ultrasonically in service. In aircraft, the loss of two de Havilland Comet airliners in 1954 was traced to fatigue cracks at the corners of cut-outs in the pressurised fuselage; the investigation, which included a full-scale pressure test of a fuselage in a water tank, changed how pressurised structures were designed, tested and inspected.
 :::
 
-::: widget plot
-title: Miner's rule: cumulative damage vs cycles
-f: x/10000; x/100000; x/1000000
-x: 0,10000
-y: 0,1
-labels: 400 MPa; 300 MPa; 200 MPa
-caption: The cumulative damage (Miner's rule) against the number of cycles for three stress amplitudes. **The damage accumulates linearly with the number of cycles, and the slope is $1 / N _ { i }$ . The component fails when the sum of the damage fractions reaches 1.0.** **The high-stress amplitude (400 MPa) accumulates damage 100× faster than the low-stress amplitude (200 MPa), and the 100× is the reason the high-stress cycles dominate the fatigue life.**
+::: history
+The first recorded fatigue tests were made by Wilhelm Albert, a mining official at Clausthal, who in 1837 published tests of iron conveyor chains loaded repeatedly. Railway axles broke frequently in the 1840s, notably in the Versailles (Meudon) accident of 1842, and W. J. M. Rankine wrote in 1843 on the fracture of axles at sharp shoulders. August Wöhler, as a railway engineer in Germany, built machines to test axles under rotating bending and published his results between 1858 and 1870, showing the existence of an endurance limit for iron and steel and the importance of the range of stress; the S–N curve is often called the Wöhler curve. Heinrich Gerber proposed his parabolic mean-stress relation in 1874, and John Goodman's *Mechanics Applied to Engineering* (1899) introduced the straight-line diagram later modified into the "modified Goodman" line. O. H. Basquin described the log–log straight line of the S–N curve in 1910. Arvid Palmgren used linear damage summation for ball bearings in 1924, and M. A. Miner published the rule for aircraft structures in 1945.
 :::
 
-## 4. Fatigue crack growth
-
-::: definition The Paris law and the fatigue crack growth rate {#def-paris-law}
-The **Paris law** (Paris and Erdogan, 1963) relates the fatigue crack growth rate to the stress intensity factor range:
-
-$$
-{ \frac { d a } { d N } } \; = \; C \, ( \Delta K ) ^ { m }
-$$
-
-where $\Delta K = K _ { \max } - K _ { \min }$ is the stress intensity factor range, and $C$ and $m$ are material constants.
-
-$$
-\begin{array} { l c c l }
-\textbf{Material} & \textbf{ } C & \textbf{ } m & \textbf{Regime} \\ \hline
-\text{Steel (ferritic-pearlitic)} & 1 0 ^ { - 1 1 } & 3 . 0 & \text{Paris regime} \\
-\text{Aluminium (2024-T3)} & 2 . 3 \times 1 0 ^ { - 1 3 } & 3 . 2 & \text{Paris regime} \\
-\text{Titanium (Ti-6Al-4V)} & 2 . 5 \times 1 0 ^ { - 1 3 } & 3 . 5 & \text{Paris regime} \\
-\end{array}
-$$
-
-The **stress intensity factor range** for a through-crack of length $2 a$ in a plate of width $W$ :
-
-$$
-\Delta K \; = \; \Delta \sigma \, { \sqrt { \pi a } } \; Y \! \left( { \frac { a } { W } } \right)
-$$
-
-where $Y$ is the geometry correction factor.
-
-**The Paris law is the reason the fatigue life is the sum of the crack initiation life and the crack propagation life: $N _ { \text{total } } = N _ { \text{initiation } } + N _ { \text{propagation } }$ . For high-strength steels, the initiation life is 90 % of the total life; for low-strength steels, the propagation life is 90 % of the total life.**
+::: quiz
+Which change to a machined steel part raises its fatigue endurance limit the most?
+- [ ] Making it from a steel of 20 % higher tensile strength, still machined.
+- [x] Grinding and shot-peening the critical surface.
+- [ ] Increasing the diameter by 20 % while keeping the stress the same.
+- [ ] Testing at a higher cycling frequency.
+::: solution
+A stronger machined steel gains less than 20 % because $k_a$ falls with $S_{ut}$; a larger diameter lowers $k_b$; frequency has little effect. Grinding raises $k_a$ (from about $0.79$ to $0.91$ at $S_{ut} = 700\ \mathrm{MPa}$) and shot peening adds compressive residual stress at the surface where cracks start, often increasing fatigue strength by tens of per cent.
+:::
 :::
 
-::: definition The three regimes of fatigue crack growth {#def-crack-growth-regimes}
-The fatigue crack growth curve has three regimes:
-
-$$
-\begin{array} { l l l l }
-\textbf{Regime} & \textbf{ } \Delta K \textbf{ range} & \textbf{Behaviour} & \textbf{Mechanism} \\ \hline
-\text{I (threshold)} & \Delta K < \Delta K _ { \text{th } } & \text{No growth (or very slow)} & \text{Crack closure, plasticity} \\
-\text{II (Paris)} & \Delta K _ { \text{th } } < \Delta K < \Delta K _ { I c } & \text{Stable growth } ( d a / d N = C \Delta K ^ { m } ) & \text{Cyclic blunting and resharpening} \\
-\text{III (fast fracture)} & \Delta K > \Delta K _ { I c } & \text{Unstable fracture} & \text{Brittle or ductile fracture} \\
-\end{array}
-$$
-
-**The threshold $\Delta K _ { \text{th } }$ is the stress intensity factor range below which the crack does not grow, and the threshold is the reason the small crack is safe. The fracture toughness $K _ { I c }$ is the stress intensity factor above which the crack propagates catastrophically, and the fracture toughness is the reason the large crack fails.**
+::: quiz
+A bracket carries a steady tensile mean stress and an alternating stress. The alternating stress doubles while the mean stays the same. By the Goodman criterion, the factor of safety on a proportional load line
+- [ ] halves exactly.
+- [x] falls, but by less than half.
+- [ ] is unchanged, because the mean stress is unchanged.
+::: solution
+$1/n = \sigma_a/S_e + \sigma_m/S_{ut}$; doubling $\sigma_a$ doubles only the first term, so $1/n$ less than doubles and $n$ falls by less than half (unless $\sigma_m = 0$).
+:::
 :::
 
-::: example Fatigue crack growth life {#ex-crack-growth-life level=3 check="3"}
-A steel component has an initial crack length $a _ { 0 } = 2$ mm, a final crack length $a _ { f } = 2 0$ mm, and a stress range $\Delta \sigma = 2 0 0$ MPa. The material has $C = 1 0 ^ { - 1 1 }$ , $m = 3$ , and $Y = 1$ . Calculate the fatigue crack growth life.
-
-**Integrate the Paris law:**
-
-$$
-N \; = \; \int _ { a _ { 0 } } ^ { a _ { f } } { \frac { d a } { C \, ( \Delta \sigma \, { \sqrt { \pi a } } \, Y ) ^ { m } } } \; = \; \int _ { a _ { 0 } } ^ { a _ { f } } { \frac { d a } { C \, ( \Delta \sigma \, { \sqrt { \pi a } } ) ^ { 3 } } }
-$$
-
-$$
-N \; = \; { \frac { 1 } { C \, ( \Delta \sigma ) ^ { 3 } \, \pi ^ { 3 / 2 } } } \int _ { a _ { 0 } } ^ { a _ { f } } { \frac { d a } { a ^ { 3 / 2 } } } \; = \; { \frac { 1 } { C \, ( \Delta \sigma ) ^ { 3 } \, \pi ^ { 3 / 2 } } } \left[ { \frac { - 2 } { \sqrt { a } } } \right] _ { a _ { 0 } } ^ { a _ { f } }
-$$
-
-$$
-N \; = \; { \frac { 2 } { C \, ( \Delta \sigma ) ^ { 3 } \, \pi ^ { 3 / 2 } } } \left( { \frac { 1 } { \sqrt { a _ { 0 } } } } - { \frac { 1 } { \sqrt { a _ { f } } } } \right)
-$$
-
-$$
-N \; = \; { \frac { 2 } { 1 0 ^ { - 1 1 } \times 2 0 0 ^ { 3 } \times \pi ^ { 1 . 5 } } } \left( { \frac { 1 } { \sqrt { 0 . 0 0 2 } } } - { \frac { 1 } { \sqrt { 0 . 0 2 } } } \right)
-$$
-
-$$
-N \; = \; { \frac { 2 } { 1 0 ^ { - 1 1 } \times 8 \times 1 0 ^ { 6 } \times 1 7 . 4 9 } } \times ( 2 2 . 3 6 - 7 . 0 7 ) \; = \; { \frac { 2 } { 1 . 4 \times 1 0 ^ { 6 } } } \times 1 5 . 2 9 \; = \; { \bf 2 2 \ 0 0 0 } \ \text{cycles}
-$$
-
-**The fatigue crack growth life is 22 000 cycles. The crack grows from 2 mm to 20 mm in 22 000 cycles, and the 22 000 cycles is the reason the inspection interval must be less than 22 000 cycles.**
+::: summary
+- Describe a cycle by $\sigma_a = (\sigma_{\max} - \sigma_{\min})/2$ and $\sigma_m = (\sigma_{\max} + \sigma_{\min})/2$.
+- Steels: $S_e' \approx 0.5S_{ut}$ (to $700\ \mathrm{MPa}$); between $10^3$ and $10^6$ cycles, $S_f = aN^b$ through $fS_{ut}$ and $S_e$.
+- Real parts: $S_e = k_ak_bk_ck_dk_ek_fS_e'$ — surface, size, load type, temperature, reliability and miscellaneous effects; surface and size are usually the largest.
+- Notches: $K_f = 1 + q(K_t - 1)$, applied to the stresses.
+- Mean stress: Goodman $\sigma_a/S_e + \sigma_m/S_{ut} = 1/n$ (conservative), Gerber (mean of data), ASME-elliptic, Soderberg; check first-cycle yield with Langer.
+- Combined in-phase stresses: von Mises of the alternating and mean parts separately, $k_c = 1$.
+- Variable amplitude: rainflow counting and Miner's rule $\sum n_i/N_i = 1$ — a useful but rough rule that ignores sequence effects.
+- Stress-life predictions are uncertain by a factor of 2–3 in life; safety-critical parts are designed to codes and verified by test.
 :::
 
 ## Exercises
 
-::: exercise Endurance limit with Marin factors {#ex-marin level=3 check="2"}
-A steel component has $S _ { u t } = 8 0 0$ MPa, a ground surface, a diameter of 25 mm, and is loaded in torsion. The Marin factors are $k _ { a } = 0 . 9 0$ , $k _ { b } = 0 . 9 1$ , $k _ { c } = 0 . 5 9$ , $k _ { d } = 1 . 0$ , $k _ { e } = 1 . 0$ . Calculate the endurance limit.
-
+::: exercise Endurance limit of a strong steel {level=1 check="700"}
+Estimate the rotating-beam endurance limit of a steel with $S_{ut} = 1600\ \mathrm{MPa}$. (Enter $S_e'$ in MPa.)
 ::: solution
-$$
-S _ { e } ^ { \prime } \; = \; 0 . 5 \times 8 0 0 \; = \; 4 0 0 \ \text{MPa}
-$$
-
-$$
-S _ { e } \; = \; 0 . 9 0 \times 0 . 9 1 \times 0 . 5 9 \times 1 . 0 \times 1 . 0 \times 4 0 0 \; = \; { \bf 1 9 3 } \ \text{MPa}
-$$
-
-**The endurance limit is 193 MPa, which is 48 % of the specimen endurance limit (400 MPa). The torsion loading factor $k _ { c } = 0 . 5 9$ is the dominant factor, and the dominance is the reason the torsion-loaded component has a much lower fatigue strength than the bending-loaded component.**
+$S_{ut} > 1400\ \mathrm{MPa}$, so by [[#eq-se-prime]] $S_e' = 700\ \mathrm{MPa}$, not $800\ \mathrm{MPa}$. Such a steel is strongly notch- and surface-sensitive: machined, $k_a = 4.51\times1600^{-0.265} = 0.63$.
 :::
 :::
 
-::: exercise Fatigue stress concentration factor {#ex-ktf level=3 check="2"}
-A steel component has $S _ { u t } = 9 0 0$ MPa, $K _ { t } = 2 . 5$ , and a fillet radius $r = 2$ mm. Calculate the fatigue stress concentration factor $K _ { f }$ using the Neuber equation.
-
+::: exercise Fatigue stress concentration {level=1 check="2.2"}
+A shoulder fillet has $K_t = 2.5$ and the material's notch sensitivity there is $q = 0.8$. Find $K_f$.
 ::: solution
-$$
-a \; = \; \left( { \frac { S _ { u t } } { 2 0 } } \right) ^ { 2 } \; = \; \left( { \frac { 9 0 0 } { 2 0 } } \right) ^ { 2 } \; = \; 4 5 ^ { 2 } \; = \; 2 0 2 5 \ \mu \text{m} \; = \; 2 . 0 2 5 \ \text{mm}
-$$
-
-$$
-q \; = \; { \frac { 1 } { 1 + { \sqrt { a / r } } } } \; = \; { \frac { 1 } { 1 + { \sqrt { 2 . 0 2 5 / 2 } } } } \; = \; { \frac { 1 } { 1 + 1 . 0 0 6 } } \; = \; 0 . 4 9 8
-$$
-
-$$
-K _ { f } \; = \; 1 + q \, ( K _ { t } - 1 ) \; = \; 1 + 0 . 4 9 8 \times ( 2 . 5 - 1 ) \; = \; 1 + 0 . 7 4 7 \; = \; { \bf 1 . 7 5 }
-$$
-
-**The fatigue stress concentration factor (1.75) is 70 % of the theoretical stress concentration factor (2.5), because the notch sensitivity is 0.5. The 70 % is the reason the fatigue strength is reduced by 75 %, not 150 %.**
+$K_f = 1 + 0.8\times(2.5 - 1) = 1 + 1.2 = 2.2$.
 :::
 :::
 
-::: exercise Goodman criterion with stress concentration {#ex-goodman-kt level=3 check="2"}
-A notched steel component has $S _ { a } = 1 5 0$ MPa, $S _ { m } = 1 0 0$ MPa, $S _ { e } = 3 0 0$ MPa, $S _ { y } = 5 0 0$ MPa, $S _ { u t } = 8 0 0$ MPa, and $K _ { f } = 2 . 0$ . Calculate the factor of safety using the ASME criterion.
-
+::: exercise Stress cycle {level=1 check="125"}
+A stress varies between $+200\ \mathrm{MPa}$ and $-50\ \mathrm{MPa}$. Find the alternating stress, the mean stress and the stress ratio. (Enter $\sigma_a$ in MPa.)
 ::: solution
-$$
-{ \frac { S _ { a } } { S _ { e } / K _ { f } } } + { \frac { S _ { m } } { S _ { y } } } \; = \; { \frac { 1 5 0 } { 3 0 0 / 2 . 0 } } + { \frac { 1 0 0 } { 5 0 0 } } \; = \; { \frac { 1 5 0 } { 1 5 0 } } + 0 . 2 \; = \; 1 . 0 + 0 . 2 \; = \; 1 . 2 \; = \; { \frac { 1 } { n } }
-$$
-
-$$
-n \; = \; { \frac { 1 } { 1 . 2 } } \; = \; { \bf 0 . 8 3 }
-$$
-
-**The factor of safety (0.83) is below 1.0, which means the component will fail by fatigue. The engineer must reduce the stress amplitude, increase the endurance limit (better surface finish, shot peening), or reduce the stress concentration (larger fillet radius).**
+$\sigma_a = (200 - (-50))/2 = 125\ \mathrm{MPa}$, $\sigma_m = (200 - 50)/2 = 75\ \mathrm{MPa}$, $R = -50/200 = -0.25$.
 :::
 :::
 
-::: exercise Miner's rule for a spectrum {#ex-miner-spectrum-ex level=3 check="1"}
-A component experiences the following load spectrum:
-
-| Stress amplitude (MPa) | Cycles applied $n_i$ | Cycles to failure $N_i$ |
-|------------------------|---------------------|------------------------|
-| 500 | 500 | 5 000 |
-| 400 | 5 000 | 50 000 |
-| 300 | 50 000 | 500 000 |
-| 200 | 500 000 | 5 000 000 |
-
-Calculate the cumulative damage.
-
+::: exercise Marin factors {level=2 check="202.3"}
+A part has a specimen endurance limit $S_e' = 350\ \mathrm{MPa}$, surface factor $k_a = 0.80$ and size factor $k_b = 0.85$, and is loaded axially at room temperature; 50 % reliability. Find its endurance limit. (Enter $S_e$ in MPa.)
 ::: solution
-$$
-D \; = \; { \frac { 5 0 0 } { 5 \ 0 0 0 } } + { \frac { 5 \ 0 0 0 } { 5 0 \ 0 0 0 } } + { \frac { 5 0 \ 0 0 0 } { 5 0 0 \ 0 0 0 } } + { \frac { 5 0 0 \ 0 0 0 } { 5 \ 0 0 0 \ 0 0 0 } } \; = \; 0 . 1 + 0 . 1 + 0 . 1 + 0 . 1 \; = \; { \bf 0 . 4 }
-$$
-
-**The cumulative damage is 0.4, which means the component has consumed 40 % of its fatigue life. The remaining life is 60 % of the spectrum life.**
+Axial loading: $k_c = 0.85$; $k_d = k_e = k_f = 1$. $S_e = 0.80\times0.85\times0.85\times350 = 202.3\ \mathrm{MPa}$. (Strictly, axial loading has no stress gradient and $k_b$ should be $1$, giving $238\ \mathrm{MPa}$; a size effect for axially loaded parts is sometimes retained on statistical grounds — the larger volume contains more defects.)
 :::
 :::
 
-::: exercise Fatigue crack growth {#ex-crack-growth level=3 check="2"}
-A steel component has $C = 1 0 ^ { - 1 2 }$ , $m = 3 . 5$ , $Y = 1$ , and $\Delta \sigma = 1 5 0$ MPa. Calculate the crack growth rate $d a / d N$ when $a = 5$ mm.
-
+::: exercise Life from the Basquin line {level=2 check="1024"}
+A material's S–N line is $S_f = 1000\,N^{-0.1}$ (MPa). Find the life at a fully reversed amplitude of $500\ \mathrm{MPa}$. (Enter the number of cycles.)
 ::: solution
-$$
-\Delta K \; = \; \Delta \sigma \, { \sqrt { \pi a } } \; = \; 1 5 0 \times { \sqrt { \pi \times 0 . 0 0 5 } } \; = \; 1 5 0 \times 0 . 1 2 5 3 \; = \; 1 8 . 8 \ \text{MPa} { \cdot } { \sqrt { \text{m} } }
-$$
-
-$$
-{ \frac { d a } { d N } } \; = \; C \, ( \Delta K ) ^ { m } \; = \; 1 0 ^ { - 1 2 } \times 1 8 . 8 ^ { 3 . 5 } \; = \; 1 0 ^ { - 1 2 } \times 2 9 \ 0 0 0 \; = \; { \bf 2 . 9 \times 1 0 ^ { - 8 } } \ \text{m/cycle}
-$$
-
-**The crack growth rate is $2 . 9 \times 1 0 ^ { - 8 }$ m/cycle, which is 0.029 μm/cycle. At $1 0 ^ { 6 }$ cycles, the crack grows 29 mm, and the 29 mm is the reason the inspection interval must be less than $1 0 ^ { 6 }$ cycles.**
+$N = (500/1000)^{-1/0.1} = 0.5^{-10} = 2^{10} = 1024$ cycles. The answer lies close to the $10^3$-cycle end of the line, where the stress-life method is least reliable.
 :::
 :::
 
-::: exercise Surface finish effect {#ex-surface-finish level=2 check="3"}
-A steel component has $S _ { u t } = 7 0 0$ MPa. Compare the surface finish factor $k _ { a }$ for a polished surface ($k _ { a } = 1 . 0$ ), a machined surface ($k _ { a } = 0 . 8 3$ ), and a as-forged surface ($k _ { a } = 0 . 5 4$ ). Calculate the endurance limit for each surface finish if $S _ { e } ^ { \prime } = 3 5 0$ MPa.
-
+::: exercise Goodman and Gerber {level=2 check="1.25"}
+At a critical point $\sigma_a = 100\ \mathrm{MPa}$ and $\sigma_m = 400\ \mathrm{MPa}$ (both including $K_f$); $S_e = 250\ \mathrm{MPa}$, $S_{ut} = 1000\ \mathrm{MPa}$, $S_y = 850\ \mathrm{MPa}$. Find the Goodman factor of safety, then the Gerber and Langer factors. (Enter the Goodman value.)
 ::: solution
-$$
-S _ { e , \text{polished } } \; = \; 1 . 0 \times 3 5 0 \; = \; { \bf 3 5 0 } \ \text{MPa}
-$$
-
-$$
-S _ { e , \text{machined } } \; = \; 0 . 8 3 \times 3 5 0 \; = \; { \bf 2 9 1 } \ \text{MPa}
-$$
-
-$$
-S _ { e , \text{forged } } \; = \; 0 . 5 4 \times 3 5 0 \; = \; { \bf 1 8 9 } \ \text{MPa}
-$$
-
-**The as-forged surface has an endurance limit that is 54 % of the polished surface, and the reduction is the reason the surface finish is the most important factor in fatigue design. The engineer who specifies a machined surface instead of an as-forged surface increases the endurance limit by 54 %, and the increase is the reason the surface finish is the first parameter optimised in the fatigue design.**
+Goodman: $1/n = 100/250 + 400/1000 = 0.4 + 0.4 = 0.8$, $n = 1.25$. Gerber: $2\sigma_mS_e/(S_{ut}\sigma_a) = 2$, $n = \tfrac12(2.5)^2(0.4)(-1 + \sqrt5) = 1.545$. Langer: $850/500 = 1.70$. Fatigue governs.
 :::
 :::
 
-::: exercise Derivation: the Goodman criterion {#ex-derive-goodman level=4 check="2"}
-Show that the Goodman criterion $S _ { a } / S _ { e } + S _ { m } / S _ { u t } = 1 / n$ is derived from the linear relationship between the stress amplitude and the mean stress, connecting $( 0 , S _ { e } )$ to $( S _ { u t } , 0 )$ in the $S _ { m } { - } S _ { a }$ plane. Evaluate the factor of safety for $S _ { a } = 1 0 0$ MPa, $S _ { m } = 1 5 0$ MPa, $S _ { e } = 3 0 0$ MPa, and $S _ { u t } = 7 0 0$ MPa.
-
+::: exercise Remaining life {level=2 check="140000"}
+A part has already accumulated $30\,000$ cycles at an amplitude whose life is $100\,000$ cycles. By Miner's rule, how many cycles can it then sustain at a lower amplitude whose life is $2\times10^5$ cycles? (Enter the number of cycles.)
 ::: solution
-The Goodman line connects $( 0 , S _ { e } )$ to $( S _ { u t } , 0 )$ :
-
-$$
-S _ { a } \; = \; S _ { e } \left( 1 - { \frac { S _ { m } } { S _ { u t } } } \right)
-$$
-
-Rearranging:
-
-$$
-{ \frac { S _ { a } } { S _ { e } } } + { \frac { S _ { m } } { S _ { u t } } } \; = \; 1
-$$
-
-For the design point $( S _ { m } , S _ { a } )$ with a factor of safety $n$ :
-
-$$
-{ \frac { S _ { a } } { S _ { e } } } + { \frac { S _ { m } } { S _ { u t } } } \; = \; { \frac { 1 } { n } }
-$$
-
-$$
-{ \frac { 1 0 0 } { 3 0 0 } } + { \frac { 1 5 0 } { 7 0 0 } } \; = \; 0 . 3 3 3 + 0 . 2 1 4 \; = \; 0 . 5 4 8 \; = \; { \frac { 1 } { n } }
-$$
-
-$$
-n \; = \; { \frac { 1 } { 0 . 5 4 8 } } \; = \; { \bf 1 . 8 3 }
-$$
-
-**The Goodman criterion is the linear mean stress correction, and the linearity is the reason the Goodman criterion is simple to apply and accurate for ductile materials.** $\blacksquare$
+Damage so far $D_1 = 0.3$; remaining $0.7$, so $n_2 = 0.7\times200\,000 = 140\,000$ cycles. Because this is a high-then-low sequence, tests would often show fewer cycles than Miner's rule predicts.
 :::
 :::
 
-::: exercise Derivation: Miner's rule {#ex-derive-miner level=4 check="1"}
-Show that Miner's rule $D = \sum n _ { i } / N _ { i }$ is derived from the linear damage hypothesis: the damage per cycle at stress amplitude $S _ { i }$ is $1 / N _ { i }$ , and the total damage is the sum of the damage fractions. Evaluate the cumulative damage for a component that experiences 1 000 cycles at 400 MPa ($N _ { 1 } = 1 0 \ 0 0 0$ ) and 5 000 cycles at 300 MPa ($N _ { 2 } = 5 0 \ 0 0 0$ ).
-
+::: exercise Constant mean stress {level=3}
+A spring clip is assembled with a fixed preload, so that in service its mean stress stays at $\sigma_m$ while the alternating stress $\sigma_a$ may grow with an overload. (a) Show that with the Goodman line the factor of safety on the alternating stress is $n = \dfrac{S_e}{\sigma_a}\left(1 - \dfrac{\sigma_m}{S_{ut}}\right)$. (b) Compare it with [[#eq-goodman-n]] for $\sigma_a = 100$, $\sigma_m = 300$, $S_e = 250$, $S_{ut} = 1000\ \mathrm{MPa}$. (c) Explain why the choice of load line is a statement about the physics of the loading, not a mathematical convenience.
 ::: solution
-The linear damage hypothesis states that the damage per cycle at stress amplitude $S _ { i }$ is:
-
-$$
-d _ { i } \; = \; { \frac { 1 } { N _ { i } } }
-$$
-
-The total damage after $n _ { i }$ cycles at each stress amplitude is:
-
-$$
-D \; = \; \sum _ { i } n _ { i } \, d _ { i } \; = \; \sum _ { i } { \frac { n _ { i } } { N _ { i } } }
-$$
-
-The component fails when $D = 1$ .
-
-$$
-D \; = \; { \frac { 1 \ 0 0 0 } { 1 0 \ 0 0 0 } } + { \frac { 5 \ 0 0 0 } { 5 0 \ 0 0 0 } } \; = \; 0 . 1 + 0 . 1 \; = \; { \bf 0 . 2 }
-$$
-
-**The cumulative damage is 0.2, which means the component has consumed 20 % of its fatigue life. The linearity of Miner's rule is the reason the damage is independent of the load sequence, and the independence is the reason Miner's rule is simple to apply and inaccurate for spectrum loading.** $\blacksquare$
+(a) With $\sigma_m$ fixed, failure occurs when the alternating stress reaches $S_a$ on the Goodman line at that mean: $S_a = S_e(1 - \sigma_m/S_{ut})$. The factor of safety is $S_a/\sigma_a$.
+(b) Constant mean: $n = 2.5\times0.7 = 1.75$. Radial line: $1/n = 0.4 + 0.3 = 0.7$, $n = 1.43$.
+(c) The factor of safety answers "how much can the load grow before failure?". If the whole load scales (a shaft with a bigger torque) both components scale and the radial line applies; if the mean is fixed by assembly (preload, dead weight) and only the fluctuating part may grow, the vertical line applies. Using the wrong one misstates the margin — here by 20 %.
 :::
 :::
 
-::: quiz Fatigue failure {#quiz-fatigue}
-The material that has an endurance limit is:
-
-- [ ] Aluminium alloy
-- [ ] Copper
-- [x] Steel
-- [ ] Magnesium alloy
-
+::: exercise Size a tie rod {level=3}
+A round steel tie rod in a press frame carries an axial load cycling between $20\ \mathrm{kN}$ and $100\ \mathrm{kN}$. It is machined from steel with $S_{ut} = 700\ \mathrm{MPa}$, $S_y = 550\ \mathrm{MPa}$, and has a thread-relief groove with $K_t = 2.2$, $q = 0.85$. Choose a diameter for infinite life with a Goodman factor of safety of $2$ at 99 % reliability, check yield, and say what you would do differently to save weight.
 ::: solution
-**Steel.** The endurance limit exists for ferrous metals (steel, titanium) and does not exist for non-ferrous metals (aluminium, copper, magnesium). The engineer who designs an aluminium component for "infinite life" is designing for a life that does not exist.
+**Strength.** $k_a = 0.795$, $k_b = 1$ (axial), $k_c = 0.85$, $k_e = 0.814$: $S_e = 0.795\times0.85\times0.814\times350 = 192.5\ \mathrm{MPa}$. $K_f = 1 + 0.85\times1.2 = 2.02$.
+
+**Stresses on the net area $A$.** $F_a = 40\ \mathrm{kN}$, $F_m = 60\ \mathrm{kN}$; $\sigma_a = 2.02\times40\,000/A$, $\sigma_m = 2.02\times60\,000/A$.
+
+**Goodman with $n = 2$.** $1/2 = (80\,800/A)/192.5 + (121\,200/A)/700$, so $A = 2(419.7 + 173.1) = 1186\ \mathrm{mm^2}$, $d = \sqrt{4A/\pi} = 38.9\ \mathrm{mm}$ at the groove root; take $40\ \mathrm{mm}$ ($A = 1257\ \mathrm{mm^2}$, $n = 2.12$).
+
+**Yield.** $\sigma_{\max} = 2.02\times100\,000/1257 = 161\ \mathrm{MPa}$, $n_y = 3.4$.
+
+**Saving weight.** The groove and the machined surface cost more than half the strength. A larger groove radius (lower $K_t$), a rolled thread and rolled groove (compressive residual stress, better $k_a$), or a waisted shank so that the threads are not the critical section, would allow a substantially smaller rod; so would preloading the rod against the frame, which lowers the alternating stress it sees (the bolted-joint principle of [[machine-design/fasteners-joints]]). Any change should be verified by fatigue tests of the actual detail.
 :::
 :::
-
-::: quiz Mean stress correction {#quiz-mean-stress}
-The mean stress correction criterion that is most conservative is:
-
-- [ ] Goodman
-- [x] Soderberg
-- [ ] Gerber
-- [ ] ASME
-
-::: solution
-**Soderberg.** The Soderberg criterion uses the yield strength instead of the ultimate strength, and the yield strength is lower than the ultimate strength, so the Soderberg criterion is more conservative than the Goodman criterion. The Gerber criterion is the least conservative.
-:::
-:::
-
-## Where this lesson leads
-
-- **[[machine-design/static-failure]]** — The stress concentration factor $K _ { t }$ is the input to the fatigue stress concentration factor $K _ { f }$ .
-- **[[machine-design/shafts]]** — The shaft is sized by the fatigue criterion (Goodman or ASME) with the stress concentration at the keyway and the shoulder fillet.
-- **[[machine-design/gear-design]]** — The gear tooth is sized by the fatigue criterion (the Lewis bending fatigue equation and the Hertzian contact fatigue equation).
-- **[[machine-design/bearings]]** — The bearing is sized by the contact fatigue life (the L10 life), not the static strength.
-- **[[machine-design/fasteners-joints]]** — The bolt is sized by the fatigue criterion (the Goodman diagram with the preload effect).
-- **[[machine-design/springs]]** — The spring is sized by the fatigue criterion (the Goodman diagram with the curvature correction).
-- **[[solid-mechanics/fracture-mechanics]]** — The Paris law is the foundation of the fatigue crack growth analysis.
-- **[[materials-science/failure]]** — The fatigue failure mechanisms (the slip bands, the crack initiation, the crack propagation) are the physical basis of the S-N curve.
-
-::: history Fatigue: from the Wöhler curve to the Paris law {#history-fatigue}
-**1850s** — **August Wöhler** conducts systematic fatigue tests on railway axles at the Berlin Railway Research Institute. Wöhler discovers that the fatigue life decreases with increasing stress amplitude, and plots the S-N curve. **The Wöhler curve is the foundation of fatigue design, and the foundation is the reason the S-N curve is the most important diagram in machine design.**
-
-**1870** — **Wöhler** discovers the **endurance limit**: the stress amplitude below which the steel specimen does not fail, regardless of the number of cycles. **The endurance limit is the reason the steel component can be designed for "infinite life," and the infinite life is the reason the steel is the most widely used engineering material.**
-
-**1910** — **O.H. Basquin** proposes the power-law relationship between the stress amplitude and the number of cycles: $S _ { a } = S _ { f } ^ { \prime } ( 2 N _ { f } ) ^ { b }$ . **The Basquin equation is the mathematical form of the S-N curve, and the mathematical form is the reason the S-N curve can be extrapolated to high cycle numbers.**
-
-**1945** — **M.A. Miner** proposes the linear cumulative damage rule: $D = \sum n _ { i } / N _ { i }$ . **Miner's rule is the reason the variable amplitude loading is handled by the cumulative damage approach, and the approach is the reason the aircraft spectrum loading is designed for a finite life.**
-
-**1954** — **The de Havilland Comet disasters**: three Comet jetliners break up in flight due to fatigue cracks at the window corners. The inquiry finds that the window corners were stress concentrations, and the stress concentrations initiated the fatigue cracks. **The Comet disasters are the reason the fail-safe design philosophy is adopted in aviation, and the philosophy is the reason the aircraft structure is designed so that a single crack does not cause catastrophic failure.**
-
-**1963** — **Paul Paris and F. Erdogan** propose the **Paris law**: $d a / d N = C ( \Delta K ) ^ { m }$ . **The Paris law is the reason the fatigue crack growth life can be calculated, and the calculation is the reason the inspection interval is determined by the crack growth rate, not the fatigue life.**
-
-**1968** — **Matsuishi and Endo** propose the **rainflow counting method**, which converts the variable amplitude load history into a set of stress cycles. **The rainflow counting method is the reason the variable amplitude loading is handled by Miner's rule, and the rule is the reason the spectrum loading is designed for a finite life.**
-
-**1970** — **The Marin factors** are codified in the NASA Structural Analysis Guide and the ASME design codes, providing the standard method for adjusting the endurance limit for the surface finish, size, load type, temperature, and reliability. **The Marin factors are the reason the component's fatigue strength is much lower than the laboratory specimen's fatigue strength, and the reduction is the reason the fatigue design is conservative.**
-:::
-
-::: summary Fatigue {#summary-fatigue}
-- **Fatigue is the failure of a material under cyclic loading at a stress level well below the yield strength, and 80–90 % of all mechanical failures are fatigue failures.** The fatigue failure is insidious: the crack initiates at a stress concentration, grows slowly, and then propagates catastrophically.
-- **The S-N curve relates the stress amplitude to the number of cycles to failure, and the endurance limit is the stress amplitude below which the material does not fail.** The endurance limit exists for ferrous metals (steel, titanium) and does not exist for non-ferrous metals (aluminium, copper).
-- **The endurance limit of the component is the endurance limit of the specimen multiplied by the Marin factors: $S _ { e } = k _ { a } k _ { b } k _ { c } k _ { d } k _ { e } k _ { f } \times S _ { e } ^ { \prime }$ .** The Marin factors reduce the endurance limit by 30–60 %.
-- **The fatigue stress concentration factor $K _ { f } = 1 + q ( K _ { t } - 1 )$ reduces the fatigue strength by 30–70 %.** The notch sensitivity $q$ ranges from 0 (no notch effect) to 1 (full notch effect).
-- **The Goodman criterion $S _ { a } / S _ { e } + S _ { m } / S _ { u t } = 1 / n$ is the most widely used mean stress correction.** The Soderberg criterion is more conservative; the Gerber criterion is less conservative.
-- **Miner's rule $D = \sum n _ { i } / N _ { i }$ sums the damage fractions, and the component fails when $D \ge 1$ .** The rainflow counting method converts the variable amplitude load history into a set of stress cycles.
-- **The Paris law $d a / d N = C ( \Delta K ) ^ { m }$ relates the crack growth rate to the stress intensity factor range.** The fatigue life is the sum of the crack initiation life and the crack propagation life.
-- **The three regimes of fatigue crack growth are: the threshold regime (no growth), the Paris regime (stable growth), and the fast fracture regime (unstable fracture).** The threshold $\Delta K _ { \text{th } }$ is the reason the small crack is safe; the fracture toughness $K _ { I c }$ is the reason the large crack fails.
-- **The surface finish factor $k _ { a }$ is the most important Marin factor: the as-forged surface has an endurance limit that is 54 % of the polished surface.** The surface finish is the first parameter optimised in the fatigue design.
-- **The high-strength steel is fully notch-sensitive ($q \approx 1$ ), which means the high-strength steel is not always better than the low-strength steel in fatigue.** The notch sensitivity is the reason the high-strength steel is not always the best choice.
-:::
-
-## Further reading
-
-- **Joseph E. Shigley, Charles R. Mischke and Richard G. Budynas (2015)** — *Mechanical Engineering Design*, 11th ed. McGraw-Hill. The S-N curve, the Marin factors, the Goodman criterion, and the shaft fatigue design.
-- **Norman E. Dowling (2019)** — *Mechanical Behavior of Materials*, 5th ed. Pearson. The fatigue mechanisms, the S-N curve, the strain-life approach, and the crack growth.
-- **Robert C. Juvinall and Kurt M. Marshek (2020)** — *Fundamentals of Machine Component Design*, 7th ed. Wiley. The fatigue design examples, the mean stress correction, and the Miner's rule.
-- **Paul C. Paris and Fazil Erdogan (1963)** — "Critical analysis of crack propagation laws." *Journal of Basic Engineering*, 85(4), 528–534. The Paris law.
-- **Henry M. Matsuishi and T. Endo (1968)** — "Reliability of fatigue of metals under random loading." *Proceedings of the 9th International Conference on Strength of Materials and Structures*, Munich. The rainflow counting method.
-- **M.A. Miner (1945)** — "Cumulative damage in fatigue." *Journal of Applied Mechanics*, 12(3), A159–A164. Miner's rule.
-- **S. Suresh (1998)** — *Fatigue of Materials*, 2nd ed. Cambridge University Press. The fatigue mechanisms, the crack growth, and the fatigue of materials.
-- **ASME (2023)** — *Fatigue Design Standard, ASME PCC-7*. ASME. The fatigue design methodology for pressure equipment and piping.

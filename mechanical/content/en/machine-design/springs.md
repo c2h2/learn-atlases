@@ -1,572 +1,447 @@
-The spring is the most versatile machine element: the spring stores the energy, the spring absorbs the shock, the spring maintains the contact, and the spring measures the force. **The spring that fails does not just lose its function; it releases the stored energy, and the release is the reason the spring failure is the most dangerous failure mode in the suspension, the valve train, and the clutch.** The spring design is a multi-criteria calculation: the spring must have the correct rate, the correct stress, the correct fatigue life, and the correct buckling safety. **The engineer who designs the spring by the rate alone is not designing the spring; they are designing a spring that will fail by fatigue, not by the rate.**
+Press a ballpoint pen, close a car door, open an engine valve or lift the lid of a piano and a helical spring does the work: it deflects in proportion to the load, stores the work done on it as strain energy, and gives it back. Springs hold valves against their seats, keep clutch plates clamped, return pedals and levers, preload bearings, absorb shock in buffers and weigh loads in spring balances. They are among the most highly stressed parts in any machine — a good valve spring works at shear stresses above $500\ \mathrm{MPa}$ for hundreds of millions of cycles — and they are designed with a small, well-tested set of formulas that this chapter derives.
 
-The quantitative tools of spring design are the **spring rate** (the force-deflection relationship), the **Wahl correction factor** (the stress concentration), the **spring fatigue** (the Goodman diagram with the preload effect), the **spring buckling** (the slenderness ratio), and the **spring surge** (the wave propagation). The tools are the language in which the spring design decision is expressed, and the language is the reason the spring design is a calculation, not a guess.
+The key observation is simple. Pull or push on a helical spring along its axis and the wire is hardly stretched at all: every cross-section of the wire carries a **torque** $FD/2$, the axial force times the coil radius. A helical spring is a torsion bar wound into a helix. Its stiffness follows from the angle of twist of that bar ([[mechanics-of-materials/torsion]]), and its stress from the torsion formula, corrected for the direct shear and for the curvature of the wire. Fatigue ([[machine-design/fatigue]]) then decides the life of springs under repeated load, and two phenomena peculiar to long, slender, light coils — buckling and surge — set further limits.
 
-::: warning Nine ways spring design goes wrong
-**Not checking the fatigue.** The engineer who designs the spring by the static load without checking the fatigue is not designing the spring; they are designing a spring that will fail by fatigue. **The spring fatigue is the most common spring failure mode (80–90 % of spring failures), and the fatigue is the reason the spring is designed by the Goodman diagram, not the static load.** **Not accounting for the Wahl correction factor.** The engineer who uses the simple torsion formula without the Wahl correction factor is not designing the spring; they are designing a spring that will fail by fatigue. **The Wahl correction factor increases the stress by 10–30 %, and the increase is the reason the spring must be designed for the corrected stress, not the uncorrected stress.** **Not accounting for the buckling.** The engineer who designs the compression spring without checking the buckling is not designing the spring; they are designing a spring that will buckle. **The buckling is the reason the compression spring must have a slenderness ratio less than 4–5, and the slenderness ratio is the reason the spring must be guided or have a larger diameter.** **Not accounting for the solid height.** The engineer who designs the spring without checking the solid height is not designing the spring; they are designing a spring that will be stressed beyond the yield point. **The solid height is the reason the spring must have a clearance of 10–25 % between the working load and the solid load, and the clearance is the reason the spring must be designed for the solid stress, not the working stress.** **Not accounting for the surge.** The engineer who designs the spring for dynamic loading without checking the surge is not designing the spring; they are designing a spring that will fail by dynamic overload. **The surge is the reason the spring's natural frequency must be 10–20 times higher than the loading frequency, and the frequency ratio is the reason the spring must be designed for the dynamic load, not the static load.** **Not specifying the spring material.** The engineer who designs the spring without specifying the material is not designing the spring; they are selecting a spring that will fail by fatigue or creep. **The spring material is the reason the spring fatigue life is 5× longer with the correct material than with the incorrect material, and the 5× is the reason the material is the most important factor in spring design.** **Not accounting for the temperature.** The engineer who uses the room-temperature properties for a spring operating at 150 °C is not designing for the temperature; they are designing for the room. **The shear modulus at 150 °C is 90–95 % of the room-temperature value, and the reduction is the reason the spring rate changes by 5–10 % with the temperature.** **Not accounting for the corrosion.** The engineer who designs the spring without specifying the corrosion protection is not designing the spring; they are selecting a spring that will fail by corrosion fatigue. **The corrosion fatigue is the reason the spring life is 5× shorter in a corrosive environment than in a dry environment, and the 5× is the reason the corrosion protection is the most important factor in spring design for marine and chemical applications.** **Not accounting for the set removal.** The engineer who designs the spring without specifying the set removal (preload to the solid height) is not designing the spring; they are selecting a spring that will lose its free length. **The set removal is the reason the spring's free length is stable after the first compression, and the stability is the reason the spring is reliable.**
+Notation: $d$ wire diameter, $D$ mean coil diameter (to the wire centreline), $C = D/d$ the spring index, $N_a$ the number of active coils, $G$ the shear modulus, $F$ the axial force and $y$ (or $\delta$) the axial deflection. Forces in compression springs are taken positive in compression.
+
+## Geometry of a helical compression spring
+
+::: definition Spring index, active coils and lengths {#def-geometry}
+For a helical spring wound from round wire of diameter $d$ on a mean diameter $D$:
+- the **spring index** is $C = D/d$; the outside diameter is $D + d$ and the inside diameter $D - d$;
+- the **pitch** $p$ is the axial distance between adjacent coils, and the **helix angle** $\lambda$ satisfies $\tan\lambda = p/(\pi D)$;
+- the **total coils** $N_t$ include the end coils; the **active coils** $N_a$ are those free to deflect, $N_t = N_a + N_e$ where $N_e$ is the number of inactive end coils;
+- the **free length** $L_0$ is the unloaded length, and the **solid length** $L_s$ the length with all coils touching;
+- the **spring rate** (stiffness) is $k = dF/dy$, constant for an ideal helical spring.
 :::
 
-## 1. Helical compression springs
+The ends decide how many coils are inactive and how the length is measured. The four standard end forms are listed below, as tabulated in Budynas and Nisbett, *Shigley's Mechanical Engineering Design*, Table 10-1. "Squared" (closed) ends have the last coil wound with zero pitch so that it sits flat; "ground" ends are also ground flat, which removes part of the end coil so that the spring stands square on a plate.
 
-::: definition The spring rate and the force-deflection relationship {#def-spring-rate}
-The **spring rate** (or spring constant) is the force required to produce a unit deflection, and the spring rate is the most important spring design parameter.
+| end form | end coils $N_e$ | total coils $N_t$ | free length $L_0$ | solid length $L_s$ |
+|---|---|---|---|---|
+| plain | $0$ | $N_a$ | $pN_a + d$ | $d(N_t + 1)$ |
+| plain and ground | $1$ | $N_a + 1$ | $p(N_a + 1)$ | $dN_t$ |
+| squared (closed) | $2$ | $N_a + 2$ | $pN_a + 3d$ | $d(N_t + 1)$ |
+| squared and ground | $2$ | $N_a + 2$ | $pN_a + 2d$ | $dN_t$ |
 
+Squared-and-ground ends are the usual choice for compression springs that must apply a well-centred force; plain ends are cheaper but the force acts off-centre and the spring tends to bow. These counts are idealisations: the real number of active coils depends on how the end coil seats and is often found by measuring the rate of a prototype.
+
+## Deflection and spring rate
+
+::: proposition Deflection of a close-coiled helical spring {#prop-deflection}
+A helical spring with small helix angle, wire diameter $d$, mean coil diameter $D$ and $N_a$ active coils, made of a linear-elastic material with shear modulus $G$, deflects under an axial force $F$ by
 $$
-k \; = \; { \frac { F } { \delta } } \; = \; { \frac { G \, d ^ { 4 } } { 8 \, D ^ { 3 } \, N _ { a } } }
+y = \frac{8FD^3N_a}{Gd^4},
+$$ {#eq-deflection}
+so its rate is
 $$
-
-where $G$ is the shear modulus, $d$ is the wire diameter, $D$ is the mean coil diameter, and $N _ { a }$ is the number of active coils.
-
-$$
-\begin{array} { l c c }
-\textbf{Spring type} & \textbf{Rate formula} & \textbf{Load type} \\ \hline
-\text{Helical compression} & k = G d ^ { 4 } / ( 8 D ^ { 3 } N _ { a } ) & \text{Axial compression} \\
-\text{Helical extension} & k = G d ^ { 4 } / ( 8 D ^ { 3 } N _ { a } ) & \text{Axial tension} \\
-\text{Torsion spring} & k _ { t } = E d ^ { 4 } / ( 1 0 8 D N _ { a } ) & \text{Torque} \\
-\text{Leaf spring} & k = 8 \, E \, b \, t ^ { 3 } / ( L ^ { 3 } ) & \text{Transverse load} \\
-\text{Belleville washer} & k = E \, t ^ { 4 } / ( K _ { 1 } \, D ^ { 2 } ) & \text{Axial compression} \\
-\end{array}
-$$
-
-**The spring rate is the reason the spring is designed by the rate, not the force. The engineer who specifies the force without specifying the rate is not designing the spring; they are selecting a spring that will have the wrong deflection.**
+k = \frac{F}{y} = \frac{d^4G}{8D^3N_a}.
+$$ {#eq-rate}
+Including the small contribution of the direct shear force in the wire, the deflection is $y = \dfrac{8FD^3N_a}{Gd^4}\left(1 + \dfrac{1}{2C^2}\right)$.
 :::
 
-::: definition The spring stress and the Wahl correction factor {#def-spring-stress}
-The **spring stress** is the torsional shear stress in the wire, and the spring stress is the cause of the fatigue failure.
+::: proof
+**Assumptions.** The helix angle is small (below about $10°$), so each coil lies almost in a plane perpendicular to the spring axis and the wire may be treated as a straight bar of length $L = \pi DN_a$ in pure torsion; the load acts along the spring axis; the material is linear-elastic; plane sections of the wire remain plane; the curvature of the wire, which redistributes stress (next section), has a negligible effect on the overall twist.
 
+**Internal loads.** Cut the spring at any point of the wire and keep one end. The free-body diagram of the end part shows the applied force $F$ along the spring axis and, on the cut face, the internal actions that balance it: a shear force $F$ (parallel to the axis, at the wire centre, a distance $D/2$ from the axis) and a couple. Moments about the wire centre give the couple: a torque about the wire's own axis,
 $$
-\tau \; = \; K _ { w } \, { \frac { 8 \, F \, D } { \pi \, d ^ { 3 } } }
+T = F\frac{D}{2}.
 $$
+The torque is the same at every section, so the wire is in uniform torsion.
 
-where $K _ { w }$ is the **Wahl correction factor**, which accounts for the direct shear and the curvature effect:
-
+**Twist.** By the torsion formula, an element $ds$ of wire twists by $d\varphi = T\,ds/(GJ)$, with $J = \pi d^4/32$. The total angle of twist along the active wire is
 $$
-K _ { w } \; = \; { \frac { 4 \, C - 1 } { 4 \, C - 4 } } + { \frac { 0 . 6 1 5 } { C } }
-$$
-
-where $C = D / d$ is the **spring index**.
-
-$$
-\begin{array} { l c c c }
-\textbf{Spring index } C & \textbf{ } K _ { w } & \textbf{Stress increase} & \textbf{Use case} \\ \hline
-4 & 1 . 4 7 & 4 7 \ \% & \text{Very tight coil} \\
-6 & 1 . 2 5 & 2 5 \ \% & \text{Tight coil} \\
-8 & 1 . 1 8 & 1 8 \ \% & \text{Standard} \\
-1 0 & 1 . 1 4 & 1 4 \ \% & \text{Standard} \\
-1 2 & 1 . 1 1 & 1 1 \ \% & \text{Open coil} \\
-\end{array}
+\theta = \frac{TL}{GJ} = \frac{(FD/2)(\pi DN_a)}{G\,\pi d^4/32} = \frac{16FD^2N_a}{Gd^4}.
 $$
 
-**The Wahl correction factor increases the stress by 10–30 %, and the increase is the reason the spring must be designed for the corrected stress, not the uncorrected stress. The engineer who uses the simple torsion formula without the Wahl correction factor is not designing the spring; they are designing a spring that will fail by fatigue.**
+**From twist to axial deflection.** When an element $ds$ twists by $d\varphi$, the whole of the spring beyond it turns rigidly through $d\varphi$ about the tangent to the wire at the element. With a small helix angle that tangent is perpendicular to the spring axis, and the load line is at distance $D/2$ from it, so the load point moves along the axis by $dy = (D/2)\,d\varphi$. Adding the contributions of all elements,
+$$
+y = \frac{D}{2}\,\theta = \frac{D}{2}\cdot\frac{16FD^2N_a}{Gd^4} = \frac{8FD^3N_a}{Gd^4},
+$$
+which is [[#eq-deflection]]; [[#eq-rate]] follows by dividing $F$ by $y$.
+
+**Direct shear (Castigliano).** The same result follows from the strain energy. Torsion stores $U_T = T^2L/(2GJ)$, and the transverse shear force $F$ stores approximately $U_V = F^2L/(2AG)$ with $A = \pi d^2/4$. By Castigliano's theorem ([[solid-mechanics/energy-methods]]),
+$$
+y = \frac{\partial (U_T + U_V)}{\partial F} = \frac{FD^2L}{4GJ} + \frac{FL}{AG} = \frac{8FD^3N_a}{Gd^4} + \frac{4FDN_a}{Gd^2} = \frac{8FD^3N_a}{Gd^4}\left(1 + \frac{1}{2C^2}\right).
+$$
+For $C = 6$ the bracket is $1.014$, so the direct-shear term is usually dropped.
 :::
 
-::: definition The spring fatigue and the Goodman diagram {#def-spring-fatigue}
-The **spring fatigue** is the most common spring failure mode (80–90 % of spring failures), and the spring fatigue is the reason the spring is designed by the Goodman diagram, not the static load.
+Three features of [[#eq-rate]] guide every design. The rate rises as $d^4$, so a small change in wire size changes the rate a lot; it falls as $D^3$; and it is inversely proportional to the number of active coils, so cutting a spring in half doubles its rate. The modulus is the shear modulus: about $79$–$82\ \mathrm{GPa}$ for spring steels (Budynas and Nisbett, Table 10-5), $69\ \mathrm{GPa}$ for 302 stainless and roughly $40$–$45\ \mathrm{GPa}$ for phosphor bronze and beryllium copper.
 
-The **Goodman diagram for the spring** is:
+Springs combine like other elastic elements. Springs **in parallel** (side by side, or nested one inside another, as in many engine valve springs) share the deflection, so their rates add: $k = k_1 + k_2$. Springs **in series** (end to end) share the force, so their compliances add: $1/k = 1/k_1 + 1/k_2$.
 
+::: example Rate, deflection and stress of a small spring {#ex-rate}
+A compression spring is wound from $d = 2.5\ \mathrm{mm}$ steel wire on a mean diameter $D = 20\ \mathrm{mm}$ and has $N_a = 10$ active coils; take $G = 80\ \mathrm{GPa}$. Find the rate and the deflection under $F = 60\ \mathrm{N}$.
+::: solution
+**Rate.** Working in N and mm ($G = 80\,000\ \mathrm{N/mm^2}$):
 $$
-{ \frac { \tau _ { a } } { S _ { e s } } } + { \frac { \tau _ { m } } { S _ { u s } } } \; = \; { \frac { 1 } { n } }
+k = \frac{d^4G}{8D^3N_a} = \frac{2.5^4\times80\,000}{8\times20^3\times10} = \frac{39.0625\times80\,000}{640\,000} = 4.883\ \mathrm{N/mm}.
 $$
+**Deflection.** $y = F/k = 60/4.883 = 12.29\ \mathrm{mm}$.
 
-where $\tau _ { a }$ is the stress amplitude, $\tau _ { m }$ is the mean stress, $S _ { e s }$ is the shear endurance limit, and $S _ { u s }$ is the shear ultimate strength.
+**Direct-shear correction.** $C = 20/2.5 = 8$, so the bracket is $1 + 1/128 = 1.008$ and $y = 12.38\ \mathrm{mm}$ — less than 1 % more, well inside the scatter in $G$ and in the effective number of coils.
 
-For the preloaded spring:
-
-$$
-\tau _ { a } \; = \; { \frac { \tau _ { \max } - \tau _ { \min } } { 2 } } \qquad \tau _ { m } \; = \; { \frac { \tau _ { \max } + \tau _ { \min } } { 2 } }
-$$
-
-$$
-\begin{array} { l c c }
-\textbf{Spring material} & \textbf{ } S _ { u t } \textbf{ (MPa)} & \textbf{ } S _ { e s } \textbf{ (MPa)} \\ \hline
-\text{Music wire (ASTM A228)} & 1 \ 8 0 0 \text{--} 2 \ 4 0 0 & 7 0 0 \text{--} 9 0 0 \\
-\text{Hard-drawn wire (ASTM A227)} & 1 \ 2 0 0 \text{--} 1 \ 7 0 0 & 4 5 0 \text{--} 6 0 0 \\
-\text{Oil-tempered wire (ASTM A229)} & 1 \ 4 0 0 \text{--} 2 \ 0 0 0 & 5 5 0 \text{--} 7 5 0 \\
-\text{Stainless 302 (ASTM A313)} & 1 \ 4 0 0 \text{--} 2 \ 0 0 0 & 5 0 0 \text{--} 7 0 0 \\
-\text{Inconel X-750} & 1 \ 2 0 0 \text{--} 1 \ 6 0 0 & 4 5 0 \text{--} 6 0 0 \\
-\end{array}
-$$
-
-**The preload reduces the stress amplitude by 50–80 %, and the reduction is the reason the spring fatigue life is 5× longer with the preload than without the preload. The engineer who designs the spring without the preload is not designing the spring; they are designing a spring that will fail by fatigue.**
+**Sanity check.** Doubling $d$ to $5\ \mathrm{mm}$ would multiply the rate by $16$; the units $\mathrm{mm^4\cdot (N/mm^2)/mm^3} = \mathrm{N/mm}$ are those of a rate. The stress in this spring is worked out in [[#ex-stress]].
 :::
+:::
+
+## Stresses in the wire
+
+The torque $T = FD/2$ produces the familiar torsional shear stress $16T/(\pi d^3) = 8FD/(\pi d^3)$ at the wire surface. Two effects modify it. The direct shear force $F$ adds a shear stress that is largest at the inside of the coil, where it acts in the same direction as the torsional stress. And the wire is curved: the fibres on the inside of the coil are shorter than those on the outside, so for the same angle of twist they are strained more. Both effects raise the stress at the **inner** surface of the coil, which is where helical springs crack.
+
+::: proposition Shear stress with the direct-shear factor {#prop-ks}
+Ignoring curvature, the maximum shear stress in the wire of a helical spring under axial force $F$ is
+$$
+\tau = K_s\frac{8FD}{\pi d^3}, \qquad K_s = 1 + \frac{0.5}{C}.
+$$ {#eq-ks}
+:::
+
+::: proof
+**Assumptions.** Straight-bar torsion theory for the torque, and the direct shear taken as uniformly distributed over the cross-section (an approximation; the exact shear distribution of a round section peaks at $4/3$ of the mean, which is part of what the curvature factors below account for).
+
+At the inner surface of the coil the torsional shear stress $Tr/J$ and the direct shear $F/A$ act in the same direction, so they add:
+$$
+\tau = \frac{T(d/2)}{\pi d^4/32} + \frac{F}{\pi d^2/4} = \frac{8FD}{\pi d^3} + \frac{4F}{\pi d^2} = \frac{8FD}{\pi d^3}\left(1 + \frac{d}{2D}\right) = \frac{8FD}{\pi d^3}\left(1 + \frac{0.5}{C}\right).
+$$
+:::
+
+The curvature correction cannot be found from straight-bar theory. A. M. Wahl, analysing the curved wire as a portion of a ring in torsion, obtained a factor that includes both the direct shear and the curvature; M. Bergsträsser proposed a simpler expression that agrees with it within about 1 % over the practical range. Both are approximations to the exact elasticity solution:
+$$
+K_W = \frac{4C - 1}{4C - 4} + \frac{0.615}{C} \quad \text{(Wahl)}, \qquad K_B = \frac{4C + 2}{4C - 3} \quad \text{(Bergsträsser)},
+$$ {#eq-wahl}
+and the maximum shear stress at the inner surface is
+$$
+\tau = K_B\frac{8FD}{\pi d^3} \quad (\text{or } K_W \text{ in place of } K_B).
+$$ {#eq-tau}
+Budynas and Nisbett use $K_B$; many spring handbooks and EN 13906-1 (helical compression springs, European standard) use a factor of the Wahl or Bergsträsser type. The ratio $K_B/K_s$ is the pure curvature effect, sometimes written $K_c$.
 
 ::: widget plot
-title: The Wahl correction factor vs spring index
-f: (4*x-1)/(4*x-4)+0.615/x
-x: 3,15
-y: 1,2
-caption: The Wahl correction factor $K _ { w }$ against the spring index $C = D / d$ . **The Wahl correction factor decreases with the spring index, and the decrease is the reason the large spring index (open coil) has a lower stress concentration than the small spring index (tight coil). The spring index of 6–12 is the standard range, and the range is the reason the spring is designed for the Wahl-corrected stress, not the uncorrected stress.**
+f: 1 + 0.5/x; (4*x - 1)/(4*x - 4) + 0.615/x; (4*x + 2)/(4*x - 3)
+x: 3, 16
+y: 1, 1.6
+labels: K_s = 1 + 0.5/C; K_W\ \text{(Wahl)}; K_B\ \text{(Bergsträsser)}
+vlines: 4; 12
+caption: Stress-correction factors against the spring index $C = D/d$. The vertical lines mark the usual design range $4 \le C \le 12$. At $C = 4$ curvature adds about 23 % to the direct-shear factor ($K_B = 1.385$ against $K_s = 1.125$); at $C = 12$ only about 7 %. The Wahl and Bergsträsser curves are almost indistinguishable — follow them down to $C = 3$ to see them separate. Tightly wound springs (small $C$) are hard to make and are highly stressed on the inside of the coil; very open ones (large $C$) tangle and buckle.
 :::
 
-::: example Helical compression spring design {#ex-spring-design level=3 check="2"}
-A helical compression spring must support a load of 200 N with a deflection of 25 mm. The spring index is $C = 8$ , the number of active coils is $N _ { a } = 1 0$ , and the material is music wire ($G = 7 9$ GPa, $S _ { u t } = 2 \ 0 0 0$ MPa). Calculate the wire diameter, the mean coil diameter, and the maximum shear stress.
-
-**Spring rate:**
-
+::: example Stress in the spring of the first example {#ex-stress}
+For the spring of [[#ex-rate]] ($d = 2.5\ \mathrm{mm}$, $D = 20\ \mathrm{mm}$, $C = 8$) under $F = 60\ \mathrm{N}$, compare the stress predicted with no correction, with $K_s$, with $K_W$ and with $K_B$.
+::: solution
+The uncorrected torsional stress is
 $$
-k \; = \; { \frac { F } { \delta } } \; = \; { \frac { 2 0 0 } { 2 5 } } \; = \; 8 \ \text{N/mm}
+\frac{8FD}{\pi d^3} = \frac{8\times60\times20}{\pi\times2.5^3} = \frac{9600}{49.09} = 195.6\ \mathrm{MPa}.
 $$
+With $C = 8$: $K_s = 1.0625$, $K_W = \tfrac{31}{28} + \tfrac{0.615}{8} = 1.1840$, $K_B = \tfrac{34}{29} = 1.1724$. The corrected stresses are $207.8$, $231.6$ and $229.3\ \mathrm{MPa}$.
 
-**Wire diameter (from the rate formula):**
-
-$$
-k \; = \; { \frac { G \, d ^ { 4 } } { 8 \, D ^ { 3 } \, N _ { a } } } \; = \; { \frac { G \, d ^ { 4 } } { 8 \, ( C \, d ) ^ { 3 } \, N _ { a } } } \; = \; { \frac { G \, d } { 8 \, C ^ { 3 } \, N _ { a } } }
-$$
-
-$$
-d \; = \; { \frac { 8 \, C ^ { 3 } \, N _ { a } \, k } { G } } \; = \; { \frac { 8 \times 8 ^ { 3 } \times 1 0 \times 8 } { 7 9 \ 0 0 0 } } \; = \; { \frac { 3 2 7 \ 6 8 0 } { 7 9 \ 0 0 0 } } \; = \; { \bf 4 . 1 5 } \ \text{mm}
-$$
-
-**Mean coil diameter:**
-
-$$
-D \; = \; C \, d \; = \; 8 \times 4 . 1 5 \; = \; { \bf 3 3 . 2 } \ \text{mm}
-$$
-
-**Wahl correction factor:**
-
-$$
-K _ { w } \; = \; { \frac { 4 \times 8 - 1 } { 4 \times 8 - 4 } } + { \frac { 0 . 6 1 5 } { 8 } } \; = \; { \frac { 3 1 } { 2 8 } } + 0 . 0 7 7 \; = \; 1 . 1 8
-$$
-
-**Maximum shear stress:**
-
-$$
-\tau _ { \max } \; = \; K _ { w } \, { \frac { 8 \, F \, D } { \pi \, d ^ { 3 } } } \; = \; 1 . 1 8 \times { \frac { 8 \times 2 0 0 \times 3 3 . 2 } { \pi \times 4 . 1 5 ^ { 3 } } } \; = \; 1 . 1 8 \times { \frac { 5 3 \ 1 2 0 } { 2 2 4 . 6 } } \; = \; { \bf 2 7 9 } \ \text{MPa}
-$$
-
-**The maximum shear stress (279 MPa) is well below the shear ultimate strength of music wire (approximately $0 . 6 \times S _ { u t } = 1 2 0 0$ MPa). The spring is safe against static overload. The engineer must also check the fatigue, and the fatigue is the reason the spring is designed by the Goodman diagram, not the static load.**
+**Comment.** Neglecting curvature would understate the stress at the inner fibre by about 10 %; the two curvature factors differ by 1 %. For static loading with set removal some designers use only $K_s$, on the argument that local yielding at the inner fibre redistributes stress; for fatigue the full factor is always used.
+:::
 :::
 
-## 2. Spring buckling and surge
-
-::: definition The spring buckling {#def-spring-buckling}
-The **spring buckling** is the lateral instability of the compression spring, and the spring buckling is the reason the compression spring must have a slenderness ratio less than 4–5.
-
-$$
-\text{Slenderness ratio} \; = \; { \frac { L _ { f } } { D } }
-$$
-
-where $L _ { f }$ is the free length and $D$ is the mean coil diameter.
-
-The **critical deflection** for buckling is:
-
-$$
-\delta _ { c r } \; = \; L _ { f } \, { \frac { 2 \, \alpha ^ { 2 } \, ( 1 - \nu ) } { 1 + 2 \, \alpha ^ { 2 } \, ( 1 - \nu ) } }
-$$
-
-where $\alpha = D / ( 2 \, L _ { f } )$ and $\nu$ is Poisson's ratio.
-
-$$
-\begin{array} { l c c }
-\textbf{End condition} & \textbf{Buckling coefficient} & \textbf{Critical slenderness} \\ \hline
-\text{Both ends fixed} & \beta = 0 . 5 & ( L _ { f } / D ) _ { c r } = 5 . 0 \\
-\text{One end fixed, one end pinned} & \beta = 0 . 7 & ( L _ { f } / D ) _ { c r } = 4 . 0 \\
-\text{Both ends pinned} & \beta = 1 . 0 & ( L _ { f } / D ) _ { c r } = 3 . 6 \\
-\end{array}
-$$
-
-**The buckling is the reason the compression spring must have a slenderness ratio less than 4–5, and the slenderness ratio is the reason the spring must be guided or have a larger diameter. The engineer who designs the compression spring without checking the buckling is not designing the spring; they are designing a spring that will buckle.**
+::: warning Common slips in spring calculations
+- Using the **outside** diameter for $D$. The formulas use the mean diameter, $D = OD - d$; with $C = 6$, using the outside diameter overstates the deflection by $(7/6)^3 = 1.59$.
+- Using the **total** coils in the rate formula. Only active coils deflect; the end coils of a squared spring are dead.
+- Applying $K_B$ twice: once in the stress and again as a fatigue stress-concentration factor. The curvature factor *is* the stress concentration of the spring.
+- Forgetting that $d$ enters to the fourth power in the rate and third in the stress: a tolerance of $\pm1\%$ on the wire diameter gives about $\pm4\%$ on the rate.
+- Mixing units: with $F$ in N and lengths in mm, stresses come out in $\mathrm{N/mm^2} = \mathrm{MPa}$ and $G$ must be in MPa.
 :::
 
-::: definition The spring surge {#def-spring-surge}
-The **spring surge** is the wave propagation effect in the spring, and the spring surge is the reason the spring's natural frequency must be 10–20 times higher than the loading frequency.
+## Spring materials
 
-The **natural frequency** of the spring is:
-
+Most springs are cold-drawn steel wire. Drawing a wire through successively smaller dies cold-works it and orients its microstructure; the result is a tensile strength that rises steeply as the wire gets thinner. Budynas and Nisbett (Table 10-4, from spring-industry data) fit the minimum tensile strength by
 $$
-f _ { n } \; = \; { \frac { 1 } { 2 } } \, { \sqrt { \frac { g } { \delta _ { \text{st } } } } } \; = \; { \frac { 1 } { 2 } } \, { \sqrt { \frac { g \, k } { W } } }
+S_{ut} = \frac{A}{d^m},
+$$ {#eq-sut}
+with $d$ in mm and $S_{ut}$ in MPa. Some of their constants:
+
+| material | typical use | $m$ | $A$ ($\mathrm{MPa\cdot mm^m}$) |
+|---|---|---|---|
+| music wire (ASTM A228) | best high-carbon wire for small springs | $0.145$ | $2211$ |
+| oil-tempered wire (A229) | general-purpose, larger sizes | $0.187$ | $1855$ |
+| hard-drawn wire (A227) | cheapest, low duty | $0.190$ | $1783$ |
+| chrome–vanadium (A232) | shock and fatigue loads | $0.168$ | $2005$ |
+| chrome–silicon (A401) | high stress, valve springs | $0.108$ | $1974$ |
+
+Each fit is valid only over a stated range of diameters (for music wire, roughly $0.1$–$6.5\ \mathrm{mm}$); outside it, use the supplier's data. Spring wire specified to European standards (EN 10270) has similar strength classes.
+
+Springs fail in shear, so the design needs the torsional strengths. Budynas and Nisbett (Table 10-6) give the torsional yield strength of compression springs as a fraction of $S_{ut}$:
 $$
+S_{sy} \ge 0.45\,S_{ut} \quad \text{(music wire and cold-drawn carbon steel, set not removed)},
+$$ {#eq-ssy}
+$0.50\,S_{ut}$ for hardened and tempered carbon and low-alloy steels, and $0.60$–$0.75\,S_{ut}$ when the spring has been **set** (preset): compressed beyond yield after manufacture, which leaves favourable residual stresses and a slightly shorter spring. The torsional ultimate strength used in fatigue is estimated as $S_{su} = 0.67\,S_{ut}$.
 
-where $\delta _ { \text{st } }$ is the static deflection and $W$ is the weight.
+## Designing for static load
 
-The **surge frequency** (the first harmonic) is:
+A compression spring must do three things under static or slowly varying load: give the required force at the working length, not yield even when closed solid (because sooner or later someone will compress it solid), and not buckle.
 
+**Clash allowance.** The working deflection should stop short of solid. Budynas and Nisbett recommend a **fractional overrun to closure** $\xi \ge 0.15$: the deflection from free to solid is at least $1.15$ times the maximum working deflection, so that the coils do not clash in service.
+
+**Solid safety factor.** The stress at solid length, $\tau_s = K_B\,8F_sD/(\pi d^3)$ with $F_s = k(L_0 - L_s)$, should satisfy $n_s = S_{sy}/\tau_s \ge 1.2$.
+
+**Proportions.** The same source recommends $4 \le C \le 12$ and $3 \le N_a \le 15$. Below $C = 4$ the wire is hard to coil and the curvature stress is high; above $12$ springs tangle in bulk handling. Too few coils make the end effects dominant; too many make the spring prone to buckling and surge.
+
+**Buckling.** A long compression spring loaded between plates can bow sideways like a column. A spring of free length $L_0$ is absolutely stable (it cannot buckle at any deflection) if
 $$
-f _ { s } \; = \; { \frac { 1 } { 2 \, N _ { a } } } \, { \sqrt { \frac { G \, g } { 1 2 8 \, \rho \, D ^ { 2 } } } }
-$$
+L_0 < \frac{\pi D}{\alpha}\left[\frac{2(E - G)}{2G + E}\right]^{1/2},
+$$ {#eq-buckle}
+which for steel ($E = 207\ \mathrm{GPa}$, $G = 79.3\ \mathrm{GPa}$) is $L_0 < 2.63\,D/\alpha$. The end-condition constant is $\alpha = 0.5$ for a spring between flat, parallel plates (fixed ends), $0.707$ for one fixed and one pivoted end, $1$ for both ends pivoted and $2$ for one end clamped and the other free (Budynas and Nisbett, §10-7). This criterion is quoted rather than derived: it is the stability limit of a coil spring treated as a column with bending, shear and axial compliance (the theory of Haringx and Wahl), and the constant $2.63$ comes from evaluating the bracket for steel: $2(207 - 79.3)/(2\times79.3 + 207) = 0.699$, whose square root is $0.836$, and $\pi\times0.836 = 2.63$. The form of the result is a column result: longer and more slender springs and freer ends (larger $\alpha$, as for the effective-length factor of an Euler column in [[mechanics-of-materials/buckling]]) are less stable. Springs that exceed the limit can still be used if guided by a rod inside or a tube outside, at the cost of friction and wear.
 
-where $\rho$ is the wire density.
+The usual design procedure fixes as many quantities as possible from the function (forces, deflections, space) and searches over the remaining free choice — usually the wire diameter.
 
-**The surge is the reason the spring's natural frequency must be 10–20 times higher than the loading frequency, and the frequency ratio is the reason the spring must be designed for the dynamic load, not the static load. The engineer who designs the spring for dynamic loading without checking the surge is not designing the spring; they are designing a spring that will fail by dynamic overload.**
+::: algorithm Static design of a helical compression spring {#alg-static}
+1. From the function, fix the maximum working force $F_{\max}$, the required rate $k$ (or two force–length pairs) and the space: maximum outside diameter, minimum inside diameter (over a rod), available length.
+2. Choose a material and end form. Choose a trial mean diameter $D$ that fits the space.
+3. For a trial standard wire size $d$: compute $C = D/d$, $K_B$, $S_{ut}$ from [[#eq-sut]] and $S_{sy}$ from [[#eq-ssy]].
+4. Set the solid force from the overrun, $F_s = (1 + \xi)F_{\max}$, compute $\tau_s$ from [[#eq-tau]] and $n_s = S_{sy}/\tau_s$.
+5. Compute $N_a = d^4G/(8D^3k)$ from [[#eq-rate]]; round to a practical value (often to a half coil) and recompute $k$.
+6. Compute $N_t$, the solid length $L_s$, the free length $L_0 = L_s + (1 + \xi)F_{\max}/k$ and check buckling with [[#eq-buckle]].
+7. Accept the design if $4 \le C \le 12$, $3 \le N_a \le 15$, $n_s \ge 1.2$, the spring fits and it is stable; otherwise change $d$ (or $D$) and repeat. Among acceptable designs choose by cost, mass or size.
 :::
+
+::: example Designing a return spring {#ex-design}
+A spring of squared-and-ground music wire must exert $F_{\max} = 250\ \mathrm{N}$ at its working deflection and have a rate close to $5\ \mathrm{N/mm}$. It works between flat, parallel plates in a bore of $32\ \mathrm{mm}$ diameter. Use $D = 25\ \mathrm{mm}$, $G = 80\ \mathrm{GPa}$, $\xi = 0.15$ and the criteria of [[#alg-static]].
+::: solution
+**Trial wire sizes.** With $F_s = 1.15\times250 = 287.5\ \mathrm{N}$, for each wire size:
+
+| $d$ (mm) | $C$ | $S_{ut}$ (MPa) | $S_{sy}$ (MPa) | $\tau_s$ (MPa) | $n_s$ | $N_a$ for $k = 5$ |
+|---|---|---|---|---|---|---|
+| $3.0$ | $8.33$ | $1885$ | $848$ | $790$ | $1.07$ | $10.4$ |
+| $3.2$ | $7.81$ | $1868$ | $840$ | $657$ | $1.28$ | $13.4$ |
+| $3.5$ | $7.14$ | $1844$ | $830$ | $510$ | $1.63$ | $19.2$ |
+
+$3.0\ \mathrm{mm}$ fails the solid check; $3.5\ \mathrm{mm}$ needs too many coils. Take $d = 3.2\ \mathrm{mm}$. In detail: $S_{ut} = 2211/3.2^{0.145} = 1868\ \mathrm{MPa}$, $S_{sy} = 0.45\times1868 = 840.5\ \mathrm{MPa}$; $K_B = (4\times7.8125 + 2)/(4\times7.8125 - 3) = 1.177$;
+$$
+\tau_s = 1.177\times\frac{8\times287.5\times25}{\pi\times3.2^3} = 657\ \mathrm{MPa}, \qquad n_s = \frac{840.5}{657} = 1.28.
+$$
+**Coils.** $N_a = 3.2^4\times80\,000/(8\times25^3\times5) = 13.4$; take $N_a = 13.5$, giving $k = 4.97\ \mathrm{N/mm}$.
+
+**Lengths.** $N_t = 15.5$, $L_s = dN_t = 3.2\times15.5 = 49.6\ \mathrm{mm}$. Working deflection $y_{\max} = 250/4.97 = 50.3\ \mathrm{mm}$, deflection to solid $1.15\times50.3 = 57.8\ \mathrm{mm}$, so $L_0 = 49.6 + 57.8 = 107.4\ \mathrm{mm}$.
+
+**Buckling.** Between parallel plates $\alpha = 0.5$: limit $2.63\times25/0.5 = 131.5\ \mathrm{mm} > 107.4\ \mathrm{mm}$, stable.
+
+**Fit.** Outside diameter $25 + 3.2 = 28.2\ \mathrm{mm}$; a compression spring's diameter grows slightly as it is compressed, and the $3.8\ \mathrm{mm}$ diametral clearance in the $32\ \mathrm{mm}$ bore is ample.
+
+**Check.** All criteria pass: $C = 7.8$, $N_a = 13.5$, $n_s = 1.28$. The spring mass is about $67\ \mathrm{g}$ ([[#ex-fatigue]]). A cheaper hard-drawn wire would need a larger diameter, since its $A$ is 19 % lower.
+:::
+:::
+
+## Fatigue of springs
+
+Springs in engines, pumps, switches and suspensions are loaded repeatedly, almost always between two compressive forces $F_{\min}$ and $F_{\max}$ — a spring is never reversed. The alternating and mean forces are
+$$
+F_a = \frac{F_{\max} - F_{\min}}{2}, \qquad F_m = \frac{F_{\max} + F_{\min}}{2},
+$$
+and since stress is proportional to force, $\tau_a = K_B\,8F_aD/(\pi d^3)$ and $\tau_m = K_B\,8F_mD/(\pi d^3)$, with the same factor $K_B$ in both (the convention of Budynas and Nisbett).
+
+Spring wire is tested in its finished state, so the general Marin-factor approach of [[machine-design/fatigue]] is replaced by direct test data. F. P. Zimmerli of the Associated Spring Corporation reported (1957) that for steel spring wires under about $10\ \mathrm{mm}$ diameter the infinite-life torsional strength is essentially independent of the material and of the tensile strength,. As quoted by Budynas and Nisbett, the endurance-strength components are
+$$
+\text{unpeened: } S_{sa} = 241\ \mathrm{MPa},\ S_{sm} = 379\ \mathrm{MPa}; \qquad \text{shot-peened: } S_{sa} = 398\ \mathrm{MPa},\ S_{sm} = 534\ \mathrm{MPa}.
+$$ {#eq-zimmerli}
+Each pair is a single point on the $\tau_m$–$\tau_a$ fatigue diagram: for unpeened wire, a stress cycle between $379 - 241 = 138\ \mathrm{MPa}$ and $379 + 241 = 620\ \mathrm{MPa}$ that the springs survived indefinitely. The corrected curvature factor is already in the measured stresses, so no further stress concentration factor is applied.
+
+To use the point for other stress ratios, draw a failure line through it and through the torsional ultimate strength $S_{su} = 0.67S_{ut}$ on the mean-stress axis. Extending that line back to $\tau_m = 0$ gives the fully reversed torsional endurance strength
+$$
+S_{se} = \frac{S_{sa}}{1 - S_{sm}/S_{su}} \quad\text{(Goodman)}, \qquad S_{se} = \frac{S_{sa}}{1 - (S_{sm}/S_{su})^2} \quad\text{(Gerber)},
+$$ {#eq-sse}
+and the fatigue factor of safety on the load line through the origin (both forces scaled by $n_f$) is
+$$
+\frac{1}{n_f} = \frac{\tau_a}{S_{se}} + \frac{\tau_m}{S_{su}} \quad\text{(Goodman)}, \qquad n_f = \frac12\left(\frac{S_{su}}{\tau_m}\right)^2\frac{\tau_a}{S_{se}}\left[-1 + \sqrt{1 + \left(\frac{2\tau_mS_{se}}{S_{su}\tau_a}\right)^2}\right] \quad\text{(Gerber)}.
+$$ {#eq-nf}
+The Gerber parabola fits spring-fatigue data better; the Goodman line is more conservative. A separate check against yield at the peak stress, $n_y = S_{sy}/(\tau_a + \tau_m)$, completes the analysis.
 
 ::: widget plot
-title: The spring buckling: critical slenderness ratio
-f: 5-0.5*x; 4-0.3*x
-x: 0,5
-y: 0,6
-labels: Both ends fixed; Both ends pinned
-caption: The critical slenderness ratio against the end condition parameter. **The critical slenderness ratio is 3.6–5.0, and the range is the reason the compression spring must have a slenderness ratio less than 4–5. The engineer who designs the compression spring without checking the buckling is not designing the spring; they are designing a spring that will buckle.**
+f: (241/(1 - 379/s))*(1 - x/s); (241/(1 - (379/s)^2))*(1 - (x/s)^2); r*x
+x: 0, 1700
+y: 0, 700
+sliders: s=1250:900:1500:10, r=0.43:0.1:1.5:0.01
+points: 379,241
+labels: \text{Goodman line}; \text{Gerber parabola}; \text{load line } \tau_a = r\,\tau_m
+caption: Spring fatigue diagram, alternating against mean shear stress in MPa, for unpeened steel wire. The marked point is Zimmerli's endurance data $(S_{sm}, S_{sa}) = (379, 241)\ \mathrm{MPa}$; both failure curves pass through it and reach the mean-stress axis at $S_{su}$ (slider $s$). The straight line from the origin is the load line of a spring with $\tau_a/\tau_m = r$; the spring of [[#ex-fatigue]] has $r = 0.43$ and $S_{su} \approx 1250\ \mathrm{MPa}$. Where the load line meets a failure curve gives the stresses at infinite life; the factor of safety is the ratio of that distance from the origin to the working point's. Notice how little the endurance intercept $S_{se}$ changes with $S_{su}$ — stronger wire buys static strength, not much fatigue strength.
 :::
 
-::: example Spring buckling check {#ex-spring-buckling level=3 check="2"}
-A compression spring has a free length of 80 mm, a mean coil diameter of 20 mm, and both ends are fixed. The solid length is 40 mm. Check whether the spring will buckle.
-
-**Slenderness ratio:**
-
+::: example Fatigue check and surge of the return spring {#ex-fatigue}
+The spring designed in [[#ex-design]] ($d = 3.2\ \mathrm{mm}$, $D = 25\ \mathrm{mm}$, $N_a = 13.5$, $k = 4.97\ \mathrm{N/mm}$, music wire, unpeened) works between $F_{\min} = 100\ \mathrm{N}$ and $F_{\max} = 250\ \mathrm{N}$. Find the fatigue factor of safety by Goodman and by Gerber, check yield at $F_{\max}$, and find the first surge frequency ($\rho = 7850\ \mathrm{kg/m^3}$).
+::: solution
+**Stresses.** $F_a = 75\ \mathrm{N}$, $F_m = 175\ \mathrm{N}$; $K_B = 1.177$ and $8D/(\pi d^3) = 8\times25/(\pi\times32.77) = 1.943\ \mathrm{mm^{-2}}$:
 $$
-{ \frac { L _ { f } } { D } } \; = \; { \frac { 8 0 } { 2 0 } } \; = \; 4 . 0
+\tau_a = 1.177\times1.943\times75 = 171.5\ \mathrm{MPa}, \qquad \tau_m = 1.177\times1.943\times175 = 400.2\ \mathrm{MPa}.
 $$
+**Strengths.** $S_{ut} = 1868\ \mathrm{MPa}$, $S_{su} = 0.67\times1868 = 1251\ \mathrm{MPa}$. From [[#eq-sse]]: Goodman $S_{se} = 241/(1 - 379/1251) = 345.7\ \mathrm{MPa}$; Gerber $S_{se} = 241/(1 - 0.3029^2) = 265.3\ \mathrm{MPa}$.
 
-**Critical slenderness ratio (both ends fixed):** $( L _ { f } / D ) _ { c r } = 5 . 0$ .
+**Factors of safety.** Goodman: $1/n_f = 171.5/345.7 + 400.2/1251 = 0.496 + 0.320 = 0.816$, $n_f = 1.23$. Gerber, from [[#eq-nf]] with $2\tau_mS_{se}/(S_{su}\tau_a) = 0.990$: $n_f = 1.29$.
 
-**Buckling check:**
+**Yield.** $\tau_{\max} = 171.5 + 400.2 = 571.7\ \mathrm{MPa}$, $n_y = 840.5/571.7 = 1.47$.
 
-$$
-{ \frac { L _ { f } } { D } } \; = \; 4 . 0 \; < \; 5 . 0 \; = \; ( L _ { f } / D ) _ { c r }
-$$
+**Surge.** Active wire mass $m = \rho\,(\pi d^2/4)(\pi DN_a) = 7850\times\tfrac{\pi^2}{4}\times(3.2\times10^{-3})^2\times0.025\times13.5 = 0.0669\ \mathrm{kg}$. With both ends against plates, [[#prop-surge]] gives $f_1 = \tfrac12\sqrt{k/m} = \tfrac12\sqrt{4970/0.0669} = 136\ \mathrm{Hz}$.
 
-**The spring will not buckle (the slenderness ratio is below the critical value). The engineer would specify a guide rod if the slenderness ratio exceeded 5.0, and the guide rod is the reason the spring is guided in the application.**
+**Judgement.** The spring will survive indefinitely with a modest margin ($1.23$ by Goodman). Shot peening would raise $n_f$ to about $1.9$. With the rule that the first surge frequency should be at least 15–20 times the operating frequency, the spring may cycle at up to about $7\ \mathrm{Hz}$ ($400$ cycles per minute) without surge.
+:::
 :::
 
-## 3. Other spring types
+## Surge
 
-::: definition The leaf spring {#def-leaf-spring}
-The **leaf spring** is the spring in which the load is carried by the bending of the leaf, and the leaf spring is the reason the suspension is simple and robust.
+A spring is not a massless rate: its coils have mass, and a sudden motion at one end travels along the spring as a compression wave. If the motion of the end is periodic and one of its harmonics coincides with a natural frequency of the spring, the coils vibrate violently between the ends — **surge** — the forces at the ends fluctuate, the coils may clash and the stress far exceeds the static value. Engine valve springs, driven by the cam at many harmonics of the camshaft frequency, are the classical case.
 
+::: proposition Natural frequencies of a helical spring {#prop-surge}
+A helical spring of rate $k$ and active mass $m$, uniformly distributed along its length, has natural frequencies
 $$
-k \; = \; { \frac { 8 \, E \, b \, t ^ { 3 } \, n } { L ^ { 3 } } } \qquad \sigma _ { \max } \; = \; { \frac { 3 \, F \, L } { 2 \, n \, b \, t ^ { 2 } } }
-$$
-
-where $b$ is the leaf width, $t$ is the leaf thickness, $n$ is the number of leaves, and $L$ is the leaf length.
-
-**The leaf spring is the reason the suspension is simple and robust, and the simplicity is the reason the leaf spring is used in trucks, buses, and railway cars. The engineer who designs the leaf spring by the rate without checking the stress is not designing the spring; they are designing a spring that will fail by fatigue.**
+f_n = \frac{n}{2}\sqrt{\frac{k}{m}} \quad (n = 1, 2, \dots) \quad\text{with both ends fixed (between plates)},
+$$ {#eq-surge}
+and $f_n = \dfrac{2n - 1}{4}\sqrt{\dfrac{k}{m}}$ with one end fixed and the other free. The frequencies are in hertz when $k$ is in N/m and $m$ in kg.
 :::
 
-::: definition The torsion spring {#def-torsion-spring}
-The **torsion spring** is the spring in which the load is carried by the torsion of the wire, and the torsion spring is the reason the spring is compact and efficient.
+::: proof
+**Assumptions.** The spring is modelled as a uniform elastic rod in axial motion: its length $l$, mass per unit length $m/l$ and axial stiffness $EA_\text{eq}$ chosen so that a length $l$ has rate $k$, i.e. $EA_\text{eq} = kl$. Coil clash, damping and the variation of active coils with deflection are ignored.
 
+Let $u(x, t)$ be the axial displacement of the coil at position $x$. A short segment $dx$ has mass $(m/l)\,dx$ and the force in the spring at $x$ is $kl\,\partial u/\partial x$. Newton's second law for the segment gives the wave equation
 $$
-k _ { t } \; = \; { \frac { E \, d ^ { 4 } } { 1 0 8 \, D \, N _ { a } } } \qquad \theta \; = \; { \frac { T } { k _ { t } } } \qquad \tau \; = \; { \frac { 1 6 \, T } { \pi \, d ^ { 3 } } }
+\frac{m}{l}\frac{\partial^2u}{\partial t^2} = kl\frac{\partial^2u}{\partial x^2} \quad\Longrightarrow\quad \frac{\partial^2u}{\partial t^2} = c^2\frac{\partial^2u}{\partial x^2}, \qquad c = l\sqrt{\frac{k}{m}}.
 $$
-
-where $k _ { t }$ is the torsional rate (N·m/rad), $\theta$ is the angular deflection, and $T$ is the applied torque.
-
-**The torsion spring is the reason the spring is compact and efficient, and the compactness is the reason the torsion spring is used in the clothespin, the mouse trap, and the clutch pedal return. The engineer who designs the torsion spring by the rate without checking the stress is not designing the spring; they are designing a spring that will fail by fatigue.**
+With both ends fixed, $u(0, t) = u(l, t) = 0$, the separated solutions are $u = \sin(n\pi x/l)\cos\omega_nt$ with $\omega_n = n\pi c/l = n\pi\sqrt{k/m}$, so $f_n = \omega_n/2\pi = (n/2)\sqrt{k/m}$. With one end free ($\partial u/\partial x = 0$ at $x = l$), the modes are $\sin[(2n - 1)\pi x/2l]$ and $f_n = \tfrac{2n - 1}{4}\sqrt{k/m}$. (The same wave equation and modes appear for a bar in [[vibrations/continuous-systems]].)
 :::
 
-::: example Leaf spring design {#ex-leaf-spring level=3 check="2"}
-A semi-elliptic leaf spring has 6 leaves, each 70 mm wide and 10 mm thick, with a length of 1 000 mm. The material has $E = 2 0 0$ GPa. Calculate the spring rate and the maximum stress under a 5 kN load.
+The active mass of a round-wire spring is $m = \rho\,\dfrac{\pi^2d^2DN_a}{4}$. Budynas and Nisbett advise that the fundamental frequency be at least 15–20 times the frequency of the applied force, so that the significant harmonics of the forcing cannot excite it. When that is impossible, as in high-speed engines, designers use nested springs of different frequencies, variable-pitch (progressive) springs whose coils close progressively and change the frequency during the stroke, or friction dampers.
 
-**Spring rate:**
+## Extension and torsion springs
 
+**Extension springs** are close-wound so that adjacent coils press on each other: the spring carries an **initial tension** $F_i$ before it begins to extend, and the force–deflection line is $F = F_i + ky$. The body is analysed exactly like a compression spring; the hooks or loops at the ends are the weak points, where the wire is bent as well as twisted. With the hook bend radius $r_1$ and $C_1 = 2r_1/d$, the bending stress at the inside of the hook is $\sigma_A = F\left[(K)_A\dfrac{16D}{\pi d^3} + \dfrac{4}{\pi d^2}\right]$ with $(K)_A = \dfrac{4C_1^2 - C_1 - 1}{4C_1(C_1 - 1)}$, and the torsional stress at the side bend (radius $r_2$, $C_2 = 2r_2/d$) is $\tau_B = (K)_B\,8FD/(\pi d^3)$ with $(K)_B = (4C_2 - 1)/(4C_2 - 4)$ (Budynas and Nisbett, §10-11). The initial tension that can be wound in depends on the index; the preferred range of the initial torsional stress quoted there is
 $$
-k \; = \; { \frac { 8 \times 2 0 0 \ 0 0 0 \times 7 0 \times 1 0 ^ { 3 } \times 6 } { 1 \ 0 0 0 ^ { 3 } } } \; = \; { \frac { 6 . 7 2 \times 1 0 ^ { 1 0 } } { 1 0 ^ { 9 } } } \; = \; { \bf 6 7 . 2 } \ \text{N/mm}
+\tau_i = \frac{231}{e^{0.105C}} \pm 6.9\left(4 - \frac{C - 3}{6.5}\right)\ \mathrm{MPa},
 $$
+about $77$–$122\ \mathrm{MPa}$ at $C = 8$. Extension springs have no solid length to stop overload, so a broken extension spring in a safety function (a door, a brake) must have a back-up.
 
-**Maximum stress:**
-
+**Helical torsion springs**, as in clothes pegs, hinges and starter recoils, are loaded by a moment $M$ about the coil axis. Now the wire is in **bending**, not torsion: the moment is the same at every section of the wire, so the wire is a beam in pure bending of length $L = \pi DN_a$. Its angle of rotation is $\theta = ML/(EI)$ with $I = \pi d^4/64$:
 $$
-\sigma _ { \max } \; = \; { \frac { 3 \times 5 \ 0 0 0 \times 1 \ 0 0 0 } { 2 \times 6 \times 7 0 \times 1 0 ^ { 2 } } } \; = \; { \frac { 1 5 \times 1 0 ^ { 6 } } { 8 4 \ 0 0 0 } } \; = \; { \bf 1 7 9 } \ \text{MPa}
-$$
+\theta = \frac{64MDN_a}{Ed^4}\ \text{rad}, \qquad k' = \frac{M}{\theta} = \frac{d^4E}{64DN_a}.
+$$ {#eq-torsion-spring}
+Budynas and Nisbett replace $64$ by $10.8\times2\pi = 67.8$ (rate per radian) to allow for friction between the coils and the arbor, which measurements show. The bending stress at the inside of the coil is $\sigma = K_i\,32M/(\pi d^3)$ with $K_i = (4C^2 - C - 1)/[4C(C - 1)]$. A torsion spring should always be loaded in the direction that winds it up (reduces the coil diameter), because then the residual stresses from coiling oppose the working stress at the inner fibre.
 
-**The spring rate is 67.2 N/mm, and the maximum stress is 179 MPa. The stress is well below the typical allowable stress for leaf spring steel (600–800 MPa). The engineer must also check the fatigue, and the fatigue is the reason the leaf spring is designed by the Goodman diagram, not the static load.**
+::: application Valve springs and suspension springs
+An automotive engine valve spring is a short, highly stressed chrome–silicon spring, shot-peened and often of oval or "beehive" (tapered) form to reduce the moving mass and raise the surge frequency; it has to keep the valve following the cam at the highest engine speed. A car's coil suspension spring is the opposite case: large ($d$ of $10$–$15\ \mathrm{mm}$), hot-wound from silicon–chromium or similar steels, peened and preset, and often variable-pitch or barrel-shaped to fit the space and to give a progressive rate. Both are designed with the formulas of this chapter, then verified by fatigue tests of real springs, because the residual stresses from coiling, setting and peening control their lives.
 :::
 
-::: example Spring fatigue check {#ex-spring-fatigue-check level=3 check="2"}
-A helical compression spring has a wire diameter of 4 mm, a mean coil diameter of 32 mm, and a preload of 50 N. The working load varies from 50 N to 200 N. The material is music wire ($S _ { u t } = 2 0 0 0$ MPa, $S _ { e s } = 8 0 0$ MPa, $S _ { u s } = 1 2 0 0$ MPa). The spring index is $C = 8$ and $K _ { w } = 1 . 1 8$ . Check the fatigue safety factor.
+::: history
+Robert Hooke published his law of springs, *ut tensio, sic vis* ("as the extension, so the force"), in *Lectures de Potentia Restitutiva, or of Spring* (1678), using coiled wire springs among his examples. The modern design method for helical springs is largely the work of A. M. Wahl of Westinghouse, whose curvature correction factor and book *Mechanical Springs* (1944; second edition 1963) gave designers the stress formulas used in this chapter. F. P. Zimmerli's fatigue tests on spring wire, reported in 1957, showed that the endurance strength of small steel spring wire hardly depends on its tensile strength and supplied the data still quoted in textbooks. Today helical springs are designed to standards such as EN 13906 (in Europe) and the design handbooks of the spring industry; this chapter teaches the principles behind them, not a substitute for them.
+:::
 
-**Spring index:** $C = D / d = 3 2 / 4 = 8$ .
+::: quiz
+A spring is replaced by one with the same wire, the same number of active coils and a mean diameter 20 % larger. By what factor does its rate change?
+- [ ] $1/1.2 = 0.83$
+- [ ] $1/1.2^2 = 0.69$
+- [x] $1/1.2^3 = 0.58$
+- [ ] $1/1.2^4 = 0.48$
+::: solution
+$k = d^4G/(8D^3N_a)$, so $k \propto D^{-3}$ and $1/1.728 = 0.58$. The stress at a given force rises by $1.2$ times the change in $K_B$, which is slightly smaller at the larger index.
+:::
+:::
 
-**Wahl correction factor:** $K _ { w } = 1 . 1 8$ .
+::: quiz
+Where does a helical compression spring under fatigue loading usually crack, and why?
+- [ ] At the outside of the coil, where the wire is longest.
+- [x] At the inside of the coil, where the torsional and direct shear stresses add and the curvature raises the strain.
+- [ ] At mid-coil height, where bending is largest.
+- [ ] At the end coils, because they are inactive.
+::: solution
+At the inner fibre the direct shear adds to the torsional shear, and because the inner fibres of a curved bar are shorter they are strained more for the same twist. The factor $K_B$ accounts for both; the crack runs at about $45°$ to the wire axis, along a plane of maximum tensile stress.
+:::
+:::
 
-**Maximum shear stress (at 200 N):**
-
-$$
-\\tau _ { \\max } \\; = \\; K _ { w } \\, { \\frac { 8 \\, F _ { \\max } \\, D } { \\pi \\, d ^ { 3 } } } \\; = \\; 1 . 1 8 \\times { \\frac { 8 \\times 2 0 0 \\times 3 2 } { \\pi \\times 4 ^ { 3 } } } \\; = \\; 1 . 1 8 \\times { \\frac { 5 1 \\ 2 0 0 } { 2 0 1 . 1 } } \\; = \\; 1 . 1 8 \\times 2 5 4 . 6 \\; = \\; 3 0 0 . 4 \\ \\text{MPa}
-$$
-
-**Minimum shear stress (at 50 N):**
-
-$$
-\\tau _ { \\min } \\; = \\; 1 . 1 8 \\times { \\frac { 8 \\times 5 0 \\times 3 2 } { \\pi \\times 4 ^ { 3 } } } \\; = \\; 1 . 1 8 \\times 6 3 . 7 \\; = \\; 7 5 . 1 \\ \\text{MPa}
-$$
-
-**Stress amplitude and mean stress:**
-
-$$
-\\tau _ { a } \\; = \\; { \\frac { 3 0 0 . 4 - 7 5 . 1 } { 2 } } \\; = \\; 1 1 2 . 7 \\ \\text{MPa}
-$$
-
-$$
-\\tau _ { m } \\; = \\; { \\frac { 3 0 0 . 4 + 7 5 . 1 } { 2 } } \\; = \\; 1 8 7 . 8 \\ \\text{MPa}
-$$
-
-**Goodman criterion:**
-
-$$
-{ \\frac { 1 1 2 . 7 } { 8 0 0 } } + { \\frac { 1 8 7 . 8 } { 1 \\ 2 0 0 } } \\; = \\; 0 . 1 4 1 + 0 . 1 5 7 \\; = \\; 0 . 2 9 8 \\; = \\; { \\frac { 1 } { n } }
-$$
-
-$$
-n \\; = \\; { \\frac { 1 } { 0 . 2 9 8 } } \\; = \\; { \\bf 3 . 3 6 }
-$$
-
-**The fatigue safety factor (3.36) exceeds the typical requirement of 1.5–2.0. The spring is safe against fatigue. The preload is the reason the stress amplitude is low, and the low stress amplitude is the reason the spring fatigue life is long.**
+::: summary
+- A helical spring is a torsion bar: the wire carries torque $FD/2$ along a length $\pi DN_a$; from the twist, $y = 8FD^3N_a/(Gd^4)$ and $k = d^4G/(8D^3N_a)$ ([[#prop-deflection]]).
+- The maximum shear stress is at the inner surface of the coil: $\tau = K_B\,8FD/(\pi d^3)$, with $K_B = (4C + 2)/(4C - 3)$ or Wahl's factor including direct shear and curvature; $K_s = 1 + 0.5/C$ includes only direct shear.
+- Wire strength depends on size, $S_{ut} = A/d^m$; torsional yield about $0.45S_{ut}$ (set not removed), torsional ultimate $0.67S_{ut}$.
+- Static design: overrun to solid $\xi \ge 0.15$, $n_s \ge 1.2$ at solid, $4 \le C \le 12$, $3 \le N_a \le 15$, and absolute stability $L_0 < 2.63D/\alpha$ for steel.
+- Fatigue: Zimmerli's endurance data ($241/379\ \mathrm{MPa}$ unpeened, $398/534\ \mathrm{MPa}$ peened) with a Goodman or Gerber line to $S_{su}$.
+- Surge: $f_1 = \tfrac12\sqrt{k/m}$ between plates; keep it 15–20 times above the forcing frequency.
+- Extension springs: initial tension and hook stresses; torsion springs: the wire is in bending, $k' = d^4E/(64DN_a)$ ideal.
 :::
 
 ## Exercises
 
-::: exercise Spring rate calculation {#ex-spring-rate level=3 check="2"}
-A helical compression spring has a wire diameter of 3 mm, a mean coil diameter of 24 mm, and 8 active coils. The material is oil-tempered wire ($G = 7 5$ GPa). Calculate the spring rate.
-
+::: exercise Spring rate {level=1 check="7.8125"}
+A compression spring has $d = 4\ \mathrm{mm}$, $D = 32\ \mathrm{mm}$, $N_a = 10$ and $G = 80\ \mathrm{GPa}$. Find its rate. (Enter the rate in N/mm.)
 ::: solution
-$$
-k \; = \; { \frac { G \, d ^ { 4 } } { 8 \, D ^ { 3 } \, N _ { a } } } \; = \; { \frac { 7 5 \ 0 0 0 \times 3 ^ { 4 } } { 8 \times 2 4 ^ { 3 } \times 8 } } \; = \; { \frac { 7 5 \ 0 0 0 \times 8 1 } { 8 \times 1 3 \ 8 2 4 \times 8 } } \; = \; { \frac { 6 \ 0 7 5 \ 0 0 0 } { 8 8 4 \ 7 3 6 } } \; = \; { \bf 6 . 8 7 } \ \text{N/mm}
-$$
-
-**The spring rate is 6.87 N/mm.**
+$k = d^4G/(8D^3N_a) = 256\times80\,000/(8\times32\,768\times10) = 20\,480\,000/2\,621\,440 = 7.8125\ \mathrm{N/mm}$. Note $C = 8$, as in [[#ex-rate]]: scaling $d$ and $D$ together by a factor $s$ scales the rate by $s$ (here $1.6\times4.883 = 7.81$).
 :::
 :::
 
-::: exercise Wahl correction factor {#ex-wahl-ex level=3 check="2"}
-A spring has a spring index of $C = 6$ . Calculate the Wahl correction factor and the percentage increase in stress compared to the simple torsion formula.
-
+::: exercise Curvature factor {level=1 check="1.2"}
+A spring is wound from $3\ \mathrm{mm}$ wire on a mean diameter of $21\ \mathrm{mm}$. Find the Bergsträsser factor $K_B$, and then the maximum shear stress under $F = 100\ \mathrm{N}$. (Enter $K_B$.)
 ::: solution
-$$
-K _ { w } \; = \; { \frac { 4 \times 6 - 1 } { 4 \times 6 - 4 } } + { \frac { 0 . 6 1 5 } { 6 } } \; = \; { \frac { 2 3 } { 2 0 } } + 0 . 1 0 2 5 \; = \; 1 . 1 5 + 0 . 1 0 2 5 \; = \; { \bf 1 . 2 5 }
-$$
-
-**The Wahl correction factor is 1.25, which means the stress is 25 % higher than the simple torsion formula. The engineer who uses the simple torsion formula without the Wahl correction factor is not designing the spring; they are designing a spring that will fail by fatigue.**
+$C = 7$ and $K_B = (4\times7 + 2)/(4\times7 - 3) = 30/25 = 1.2$. Then $\tau = 1.2\times8\times100\times21/(\pi\times27) = 1.2\times198.1 = 237.7\ \mathrm{MPa}$. Wahl's factor gives $K_W = 27/24 + 0.615/7 = 1.2129$, about 1 % higher.
 :::
 :::
 
-::: exercise Spring fatigue {#ex-spring-fatigue level=3 check="2"}
-A spring has a maximum stress of 400 MPa and a minimum stress of 100 MPa. The shear endurance limit is $S _ { e s } = 6 0 0$ MPa, and the shear ultimate strength is $S _ { u s } = 1 \ 0 0 0$ MPa. Calculate the factor of safety using the Goodman criterion.
-
+::: exercise Springs in series {level=1 check="2"}
+Two compression springs of rates $6\ \mathrm{N/mm}$ and $3\ \mathrm{N/mm}$ are stacked end to end with a guide between them. Find the rate of the combination. (Enter the rate in N/mm.)
 ::: solution
-$$
-\tau _ { a } \; = \; { \frac { 4 0 0 - 1 0 0 } { 2 } } \; = \; 1 5 0 \ \text{MPa}
-$$
-
-$$
-\tau _ { m } \; = \; { \frac { 4 0 0 + 1 0 0 } { 2 } } \; = \; 2 5 0 \ \text{MPa}
-$$
-
-$$
-{ \frac { 1 5 0 } { 6 0 0 } } + { \frac { 2 5 0 } { 1 \ 0 0 0 } } \; = \; 0 . 2 5 + 0 . 2 5 \; = \; 0 . 5 0 \; = \; { \frac { 1 } { n } }
-$$
-
-$$
-n \; = \; { \frac { 1 } { 0 . 5 0 } } \; = \; { \bf 2 . 0 }
-$$
-
-**The factor of safety is 2.0, which meets the typical requirement of 1.5–2.0.**
+In series the force is common and the deflections add: $1/k = 1/6 + 1/3 = 1/2$, so $k = 2\ \mathrm{N/mm}$. If instead they were nested and loaded side by side the rates would add, $9\ \mathrm{N/mm}$.
 :::
 :::
 
-::: exercise Spring buckling {#ex-spring-buckling-ex level=3 check="2"}
-A compression spring has a free length of 100 mm and a mean coil diameter of 25 mm. The ends are both fixed. Check whether the spring will buckle.
-
+::: exercise Free and solid lengths {level=2 check="86"}
+A squared-and-ground compression spring has $d = 3\ \mathrm{mm}$, $N_a = 10$ and a pitch of $8\ \mathrm{mm}$. Find the free length and the solid length. (Enter the free length in mm.)
 ::: solution
-$$
-{ \frac { L _ { f } } { D } } \; = \; { \frac { 1 0 0 } { 2 5 } } \; = \; 4 . 0
-$$
-
-**Critical slenderness ratio (both ends fixed):** $( L _ { f } / D ) _ { c r } = 5 . 0$ .
-
-$$
-4 . 0 \; < \; 5 . 0
-$$
-
-**The spring will not buckle. The engineer would specify a guide rod if the slenderness ratio exceeded 5.0.**
+From the end-form table: $L_0 = pN_a + 2d = 80 + 6 = 86\ \mathrm{mm}$; $N_t = N_a + 2 = 12$, $L_s = dN_t = 36\ \mathrm{mm}$. The deflection from free to solid is $50\ \mathrm{mm}$; with $\xi = 0.15$ the maximum working deflection is $50/1.15 = 43.5\ \mathrm{mm}$.
 :::
 :::
 
-::: exercise Torsion spring {#ex-torsion-spring level=3 check="2"}
-A torsion spring has a wire diameter of 2 mm, a mean coil diameter of 16 mm, and 12 active coils. The material has $E = 2 0 0$ GPa. Calculate the torsional rate (N·m/rad) and the angular deflection under a torque of 0.5 N·m.
-
+::: exercise Buckling limit {level=2 check="131.5"}
+A steel compression spring of mean diameter $25\ \mathrm{mm}$ works between flat, parallel plates. Find the largest free length for absolute stability. (Enter the length in mm.)
 ::: solution
-$$
-k _ { t } \; = \; { \frac { E \, d ^ { 4 } } { 1 0 8 \, D \, N _ { a } } } \; = \; { \frac { 2 0 0 \ 0 0 0 \times 2 ^ { 4 } } { 1 0 8 \times 1 6 \times 1 2 } } \; = \; { \frac { 3 \ 2 0 0 \ 0 0 0 } { 2 0 \ 7 3 6 } } \; = \; 1 5 4 \ 3 \ \text{N} { \cdot } \text{mm/rad}
-$$
-
-$$
-k _ { t } \; = \; { \bf 0 . 1 5 4 } \ \text{N} { \cdot } \text{m/rad}
-$$
-
-**Angular deflection:**
-
-$$
-\theta \; = \; { \frac { T } { k _ { t } } } \; = \; { \frac { 0 . 5 } { 0 . 1 5 4 } } \; = \; { \bf 3 . 2 5 } \ \text{rad} \; = \; { \bf 1 8 6 } ^ { \circ }
-$$
-
-**The angular deflection is 186°, which is within the typical range for torsion springs (up to 360°).**
+With $\alpha = 0.5$, [[#eq-buckle]] gives $L_0 < 2.63\times25/0.5 = 131.5\ \mathrm{mm}$. If one end could pivot ($\alpha = 0.707$), the limit would drop to $93\ \mathrm{mm}$.
 :::
 :::
 
-::: exercise Solid height and clearance {#ex-solid-height level=3 check="2"}
-A compression spring has 10 active coils, 2 inactive coils, a wire diameter of 4 mm, and a free length of 60 mm. Calculate the solid height and the maximum deflection if the solid stress must not exceed 800 MPa.
-
+::: exercise Surge frequency {level=2 check="250"}
+A valve spring has a rate of $10\ \mathrm{N/mm}$ and an active mass of $40\ \mathrm{g}$, and works between the cylinder head and the valve retainer. Find its fundamental surge frequency. (Enter the frequency in Hz.)
 ::: solution
-**Solid height:**
-
-$$
-L _ { s } \; = \; ( N _ { a } + N _ { i } ) \, d \; = \; ( 1 0 + 2 ) \times 4 \; = \; { \bf 4 8 } \ \text{mm}
-$$
-
-**Maximum deflection:**
-
-$$
-\delta _ { \max } \; = \; L _ { f } - L _ { s } \; = \; 6 0 - 4 8 \; = \; { \bf 1 2 } \ \text{mm}
-$$
-
-**The maximum deflection is 12 mm, which is 20 % of the free length. The engineer would specify a clearance of 10–25 % between the working load and the solid load, and the clearance is the reason the spring is designed for the solid stress, not the working stress.**
+$k = 10\,000\ \mathrm{N/m}$, $m = 0.040\ \mathrm{kg}$: $f_1 = \tfrac12\sqrt{10\,000/0.04} = \tfrac12\times500 = 250\ \mathrm{Hz}$. With the 15–20 times rule the fundamental of the forcing (once per camshaft revolution) should not exceed about $12.5$–$17\ \mathrm{Hz}$, i.e. a camshaft speed of $750$–$1000\ \mathrm{rpm}$ — far below a modern engine's, which is why valve springs are designed for high frequency and damped and why the harmonics of the cam profile are controlled.
 :::
 :::
 
-::: exercise Derivation: the spring rate {#ex-derive-spring-rate level=4 check="2"}
-Show that the spring rate $k = G d ^ { 4 } / ( 8 D ^ { 3 } N _ { a } )$ is derived from the torsion formula $\delta = T \, L / ( G \, J )$ , where the torque is $T = F \, D / 2$ , the wire length is $L = \pi \, D \, N _ { a }$ , and the polar moment of inertia is $J = \pi \, d ^ { 4 } / 3 2$ . Evaluate $k$ for $G = 7 9$ GPa, $d = 3$ mm, $D = 2 4$ mm, and $N _ { a } = 8$ .
-
+::: exercise Fatigue of a small spring {level=2}
+A music-wire spring with $d = 2.0\ \mathrm{mm}$ and $D = 16\ \mathrm{mm}$ (unpeened, squared and ground) cycles between $20\ \mathrm{N}$ and $60\ \mathrm{N}$. Find the fatigue factor of safety by the Goodman and Gerber criteria and the factor of safety against yield at the peak force.
 ::: solution
-The deflection is:
+$C = 8$, $K_B = 1.1724$. $F_a = 20\ \mathrm{N}$, $F_m = 40\ \mathrm{N}$; $8D/(\pi d^3) = 128/(8\pi) = 5.093\ \mathrm{mm^{-2}}$, so $\tau_a = 1.1724\times5.093\times20 = 119.4\ \mathrm{MPa}$ and $\tau_m = 238.8\ \mathrm{MPa}$. $S_{ut} = 2211/2^{0.145} = 2000\ \mathrm{MPa}$, $S_{su} = 1340\ \mathrm{MPa}$, $S_{sy} = 900\ \mathrm{MPa}$.
 
-$$
-\delta \; = \; { \frac { T \, L } { G \, J } } \; = \; { \frac { ( F \, D / 2 ) \times ( \pi \, D \, N _ { a } ) } { G \times ( \pi \, d ^ { 4 } / 3 2 ) } } \; = \; { \frac { 1 6 \, F \, D ^ { 2 } \, N _ { a } } { G \, d ^ { 4 } } } \times { \frac { 1 } { 2 } } \times { \frac { 3 2 } { 1 } } \times { \frac { 1 } { 1 6 } }
-$$
+Goodman: $S_{se} = 241/(1 - 379/1340) = 336.1\ \mathrm{MPa}$; $1/n_f = 119.4/336.1 + 238.8/1340 = 0.355 + 0.178 = 0.534$, $n_f = 1.87$.
 
-Wait, let me redo this more carefully:
+Gerber: $S_{se} = 241/(1 - 0.2829^2) = 262.0\ \mathrm{MPa}$; $2\tau_mS_{se}/(S_{su}\tau_a) = 0.782$; $n_f = \tfrac12(1340/238.8)^2(119.4/262.0)[-1 + \sqrt{1 + 0.782^2}] = 1.93$.
 
-$$
-\delta \; = \; { \frac { ( F \, D / 2 ) \times ( \pi \, D \, N _ { a } ) } { G \times ( \pi \, d ^ { 4 } / 3 2 ) } } \; = \; { \frac { F \, D \, \pi \, D \, N _ { a } \times 3 2 } { 2 \times G \times \pi \, d ^ { 4 } } } \; = \; { \frac { 1 6 \, F \, D ^ { 2 } \, N _ { a } } { G \, d ^ { 4 } } }
-$$
-
-The spring rate is:
-
-$$
-k \; = \; { \frac { F } { \delta } } \; = \; { \frac { G \, d ^ { 4 } } { 1 6 \, D ^ { 2 } \, N _ { a } } }
-$$
-
-Wait, this doesn't match. The correct derivation uses the strain energy method, which gives:
-
-$$
-k \; = \; { \frac { G \, d ^ { 4 } } { 8 \, D ^ { 3 } \, N _ { a } } }
-$$
-
-For $G = 7 9$ GPa, $d = 3$ mm, $D = 2 4$ mm, $N _ { a } = 8$ :
-
-$$
-k \; = \; { \frac { 7 9 \ 0 0 0 \times 8 1 } { 8 \times 1 3 \ 8 2 4 \times 8 } } \; = \; { \frac { 6 \ 3 9 9 \ 0 0 0 } { 8 8 4 \ 7 3 6 } } \; = \; { \bf 7 . 2 3 } \ \text{N/mm}
-$$
-
-**The spring rate is 7.23 N/mm.** $\blacksquare$
+Yield: $\tau_{\max} = 358.3\ \mathrm{MPa}$, $n_y = 900/358.3 = 2.51$. Fatigue governs.
 :::
 :::
 
-::: exercise Derivation: the Wahl correction factor {#ex-derive-wahl level=4 check="2"}
-Show that the Wahl correction factor $K _ { w } = ( 4 C - 1 ) / ( 4 C - 4 ) + 0 . 6 1 5 / C$ is derived from the superposition of the direct shear stress and the curvature effect. Evaluate $K _ { w }$ for $C = 4$ , $C = 8$ , and $C = 1 2$ .
-
+::: exercise Torsion-spring rotation {level=2 check="1.5"}
+A helical torsion spring has $d = 2\ \mathrm{mm}$, $D = 20\ \mathrm{mm}$ and $N_a = 5$ active turns, $E = 200\ \mathrm{GPa}$. Using the ideal formula [[#eq-torsion-spring]] (no friction allowance), find the angle through which a moment of $750\ \mathrm{N\,mm}$ winds it. (Enter the angle in radians.)
 ::: solution
-The Wahl correction factor is derived from the superposition of:
-1. The direct shear stress: $\tau _ { \text{direct } } = 4 \, F / ( \pi \, d ^ { 2 } )$
-2. The torsional shear stress: $\tau _ { \text{torsion } } = 8 \, F \, D / ( \pi \, d ^ { 3 } )$
-3. The curvature effect: the inner fibre is shorter than the outer fibre, so the stress is higher on the inner side.
-
-The Wahl correction factor is:
-
-$$
-K _ { w } \; = \; { \frac { 4 \, C - 1 } { 4 \, C - 4 } } + { \frac { 0 . 6 1 5 } { C } }
-$$
-
-For $C = 4$ :
-
-$$
-K _ { w } \; = \; { \frac { 1 5 } { 1 2 } } + { \frac { 0 . 6 1 5 } { 4 } } \; = \; 1 . 2 5 + 0 . 1 5 4 \; = \; { \bf 1 . 4 0 }
-$$
-
-For $C = 8$ :
-
-$$
-K _ { w } \; = \; { \frac { 3 1 } { 2 8 } } + { \frac { 0 . 6 1 5 } { 8 } } \; = \; 1 . 1 0 7 + 0 . 0 7 7 \; = \; { \bf 1 . 1 8 }
-$$
-
-For $C = 1 2$ :
-
-$$
-K _ { w } \; = \; { \frac { 4 7 } { 4 4 } } + { \frac { 0 . 6 1 5 } { 1 2 } } \; = \; 1 . 0 6 8 + 0 . 0 5 1 \; = \; { \bf 1 . 1 2 }
-$$
-
-**The Wahl correction factor decreases with the spring index, and the decrease is the reason the large spring index (open coil) has a lower stress concentration than the small spring index (tight coil).** $\blacksquare$
+$\theta = 64MDN_a/(Ed^4) = 64\times750\times20\times5/(200\,000\times16) = 4\,800\,000/3\,200\,000 = 1.5\ \mathrm{rad}$ ($86°$). With the friction-corrected constant $67.8$ in place of $64$ the angle is $1.59\ \mathrm{rad}$. The bending stress, with $C = 10$ and $K_i = 389/360 = 1.081$, is $1.081\times32\times750/(8\pi) = 1032\ \mathrm{MPa}$, about 52 % of $S_{ut} = 2000\ \mathrm{MPa}$. Bending allowables for static torsion springs are a larger fraction of $S_{ut}$ than the torsional allowables of compression springs, because the wire yields in bending at a higher stress than in shear.
 :::
 :::
 
-::: quiz Springs {#quiz-spring}
-The most common spring failure mode is:
-
-- [ ] Static overload
-- [x] Fatigue
-- [ ] Buckling
-- [ ] Corrosion
-
+::: exercise Deflection including direct shear {level=3}
+(a) Repeat the Castigliano derivation of [[#prop-deflection]], but now use the strain energy of transverse shear in a round section with the shape factor $10/9$, $U_V = \tfrac{10}{9}\,F^2L/(2AG)$. (b) For which index does the direct-shear term add 1 % to the deflection, and 5 %? (c) Explain why this correction is almost never made in practice, while the corresponding correction to the *stress* (from $K_s$) is.
 ::: solution
-**Fatigue.** The spring fatigue is the most common spring failure mode (80–90 % of spring failures), and the fatigue is the reason the spring is designed by the Goodman diagram, not the static load. The preload reduces the stress amplitude by 50–80 %, and the reduction is the reason the spring fatigue life is 5× longer with the preload than without the preload.
+(a) $y = \partial U/\partial F = 8FD^3N_a/(Gd^4) + \tfrac{10}{9}\cdot 4FDN_a/(Gd^2) = \tfrac{8FD^3N_a}{Gd^4}\left(1 + \tfrac{5}{9C^2}\right)$.
+(b) $5/(9C^2) = 0.01$ gives $C = 7.45$; $= 0.05$ gives $C = 3.33$ — below the practical range.
+(c) Deflection is an average over the whole wire, and the shear contribution averages to a term of order $1/C^2$; stress is a local peak, and the direct shear adds a term of order $1/C$ exactly where the torsional stress is greatest. Uncertainty in the effective number of active coils (perhaps $\pm\tfrac14$ coil, 2 % in a 12-coil spring) and in $G$ already exceeds the deflection correction.
 :::
 :::
 
-::: quiz Spring design {#quiz-spring-design}
-The Wahl correction factor accounts for:
-
-- [ ] The temperature effect
-- [x] The direct shear and the curvature effect
-- [ ] The corrosion effect
-- [ ] The dynamic load
-
+::: exercise Design a spring for a safety valve {level=3}
+A small relief valve needs a spring that holds a poppet closed with $120\ \mathrm{N}$ at an installed length of $40\ \mathrm{mm}$ and gives $150\ \mathrm{N}$ when the valve is fully open, $6\ \mathrm{mm}$ further compressed. The spring sits over a $14\ \mathrm{mm}$ guide and inside a $26\ \mathrm{mm}$ bore; it sees occasional cycling only. Choose material, $d$, $D$, $N_a$, end form and free length, and check solid stress and buckling. Discuss what else must be considered for a pressure-relief device.
 ::: solution
-**The direct shear and the curvature effect.** The Wahl correction factor increases the stress by 10–30 %, and the increase is the reason the spring must be designed for the corrected stress, not the uncorrected stress. The engineer who uses the simple torsion formula without the Wahl correction factor is not designing the spring; they are designing a spring that will fail by fatigue.
+**Rate.** $k = (150 - 120)/6 = 5\ \mathrm{N/mm}$; maximum working force $150\ \mathrm{N}$; with $\xi = 0.15$, $F_s = 172.5\ \mathrm{N}$.
+
+**Space.** $D - d > 14$ and $D + d < 26$, with clearance: take $D = 20\ \mathrm{mm}$.
+
+**Wire.** Music wire, squared and ground. Trying $d = 2.5\ \mathrm{mm}$: $C = 8$, $K_B = 1.172$, $\tau_s = 1.172\times8\times172.5\times20/(\pi\times15.625) = 659\ \mathrm{MPa}$; $S_{ut} = 1936$, $S_{sy} = 871\ \mathrm{MPa}$, $n_s = 1.32$ — acceptable. $N_a = 2.5^4\times80\,000/(8\times8000\times5) = 9.77$; take $9.75$, $k = 5.01\ \mathrm{N/mm}$.
+
+**Lengths.** Installed deflection $120/5.01 = 24.0\ \mathrm{mm}$, so $L_0 = 40 + 24.0 = 64.0\ \mathrm{mm}$. $N_t = 11.75$, $L_s = 29.4\ \mathrm{mm}$; fully open length $34\ \mathrm{mm}$, leaving $4.6\ \mathrm{mm}$ to solid — the overrun is $\xi = 4.6/30.0 = 0.15$, just meeting the guideline (good).
+
+**Buckling.** $2.63\times20/0.5 = 105\ \mathrm{mm} > 64\ \mathrm{mm}$, and the guide rod adds security.
+
+**Further considerations.** A relief valve is a safety device made and certified to a pressure-equipment code (for example ISO 4126 or ASME Section VIII requirements) and its set pressure is verified by test; the spring's tolerances (wire diameter, coils, set) shift the opening pressure, so a means of adjustment is needed; corrosion or temperature may call for stainless steel (lower $G$ and $S_{ut}$, redo the design); and relaxation (loss of force over time at stress) must be limited, which favours a preset spring with a lower working stress.
 :::
 :::
-
-## Where this lesson leads
-
-- **[[machine-design/fatigue]]** — The spring is sized by the fatigue criterion (the Goodman diagram with the shear endurance limit).
-- **[[machine-design/static-failure]]** — The spring stress is a pure shear stress state, and the pure shear stress state requires the Tresca criterion.
-- **[[machine-design/shafts]]** — The spring is mounted on the shaft or in the bore, and the fit is the reason the spring is guided.
-- **[[machine-design/bearings]]** — The spring is used in the bearing preload, and the preload is the reason the bearing life is 5× longer.
-- **[[machine-design/clutches-brakes-belts]]** — The spring is used in the clutch and brake, and the spring force is the reason the clutch engages.
-- **[[machine-design/fasteners-joints]]** — The spring washer is the reason the bolt does not loosen under the vibration.
-- **[[vibrations/vibration-fundamentals]]** — The spring is the elastic element in the vibration system, and the spring rate is the reason the natural frequency is what it is.
-- **[[materials-science/mechanical-properties]]** — The spring material's fatigue strength and creep resistance determine the spring life.
-
-::: history Springs: from the bowstring to the valve spring {#history-springs}
-**3000 BC** — **The earliest spring** is the **bowstring**, which stores the energy by the bending of the bow. **The Egyptian bow is the reason the spring is the oldest machine element, and the age is the reason the spring is the most refined machine element.**
-
-**1493** — **Leonardo da Vinci** designs the **coil spring**, which stores the energy by the torsion of the wire. **Leonardo's coil spring is the reason the spring is the most versatile machine element, and the versatility is the reason the spring is the most widely used machine element.**
-
-**1676** — **Robert Hooke** publishes the **law of elasticity** ("ut tensio, sic vis"), which states that the force is proportional to the deflection. **Hooke's law is the reason the spring is designed by the rate, not the force, and the rate is the reason the spring is the most predictable machine element.**
-
-**1850s** — **The steel coil spring** is introduced in the railway carriage suspension, replacing the leather strap. **The steel coil spring is the reason the railway suspension is comfortable, and the comfort is the reason the spring is the most widely used suspension element.**
-
-**1880s** — **The valve spring** is introduced in the internal combustion engine, and the valve spring is the reason the engine speed is limited by the spring's natural frequency. **The valve spring is the reason the engine speed is limited by the spring surge, and the surge is the reason the spring is the most critical component in the valve train.**
-
-**1930s** — **The leaf spring** is introduced in the automobile suspension, and the leaf spring is the reason the automobile suspension is simple and robust. **The leaf spring is the reason the truck suspension is robust, and the robustness is the reason the leaf spring is the most widely used suspension element in trucks.**
-
-**1950s** — **The torsion bar spring** is introduced in the automobile suspension, and the torsion bar is the reason the automobile suspension is compact. **The torsion bar is the reason the automobile suspension is compact, and the compactness is the reason the torsion bar is the most widely used suspension element in sports cars.**
-
-**1980s** — **The air spring** (air suspension) is introduced in the bus and truck suspension, and the air spring is the reason the suspension rate is adjustable. **The air spring is the reason the suspension rate is adjustable, and the adjustability is the reason the air spring is the most versatile suspension element.**
-:::
-
-::: summary Springs {#summary-springs}
-- **The spring is the most versatile machine element, and the spring stores the energy, absorbs the shock, maintains the contact, and measures the force.** The spring failure is the most dangerous failure mode in the suspension, the valve train, and the clutch.
-- **The spring rate is the force required to produce a unit deflection: $k = G d ^ { 4 } / ( 8 D ^ { 3 } N _ { a } )$ .** The spring rate is the most important spring design parameter, and the rate is the reason the spring is designed by the rate, not the force.
-- **The Wahl correction factor accounts for the direct shear and the curvature effect: $K _ { w } = ( 4 C - 1 ) / ( 4 C - 4 ) + 0 . 6 1 5 / C$ .** The Wahl correction factor increases the stress by 10–30 %, and the increase is the reason the spring must be designed for the corrected stress, not the uncorrected stress.
-- **The spring fatigue is the most common spring failure mode (80–90 % of spring failures), and the spring fatigue is designed by the Goodman diagram.** The preload reduces the stress amplitude by 50–80 %, and the reduction is the reason the spring fatigue life is 5× longer with the preload than without the preload.
-- **The spring buckling is the lateral instability of the compression spring, and the spring buckling is the reason the compression spring must have a slenderness ratio less than 4–5.** The engineer who designs the compression spring without checking the buckling is not designing the spring; they are designing a spring that will buckle.
-- **The spring surge is the wave propagation effect in the spring, and the spring surge is the reason the spring's natural frequency must be 10–20 times higher than the loading frequency.** The engineer who designs the spring for dynamic loading without checking the surge is not designing the spring; they are designing a spring that will fail by dynamic overload.
-- **The leaf spring is the reason the suspension is simple and robust, and the simplicity is the reason the leaf spring is used in trucks, buses, and railway cars.** The leaf spring rate is $k = 8 E b t ^ { 3 } n / L ^ { 3 }$ .
-- **The torsion spring is the reason the spring is compact and efficient, and the compactness is the reason the torsion spring is used in the clothespin, the mouse trap, and the clutch pedal return.** The torsion spring rate is $k _ { t } = E d ^ { 4 } / ( 1 0 8 D N _ { a } )$ .
-- **The spring material is the reason the spring fatigue life is 5× longer with the correct material than with the incorrect material.** The music wire has the highest fatigue strength (700–900 MPa shear endurance limit).
-- **The set removal is the reason the spring's free length is stable after the first compression, and the stability is the reason the spring is reliable.** The engineer who designs the spring without specifying the set removal is not designing the spring; they are selecting a spring that will lose its free length.
-:::
-
-## Further reading
-
-- **Robert C. Juvinall and Kurt M. Marshek (2020)** — *Fundamentals of Machine Component Design*, 7th ed. Wiley. The spring rate, the Wahl correction factor, and the spring fatigue.
-- **Joseph E. Shigley, Charles R. Mischke and Richard G. Budynas (2015)** — *Mechanical Engineering Design*, 11th ed. McGraw-Hill. The spring design, the spring fatigue, and the spring materials.
-- **Claes M. (1997)** — *Compressive Stress in Helical Springs*. Springer. The Wahl correction factor, the spring fatigue, and the spring design.
-- **Donald V. (2000)** — *Spring Design Manual*. SAE International. The spring design handbook, the spring materials, and the spring testing.
-- **Donald Ross (2003)** — *Spring Design and Application*. Springer. The spring design, the spring materials, and the spring applications.
-- **Donald M. (1990)** — *The Design of Springs*. Butterworth-Heinemann. The spring design, the spring fatigue, and the spring materials.
-- **Donald V. (2000)** — *Spring Design Manual*. SAE International. The spring design handbook, the spring materials, and the spring testing.
-- **Donald M. (1990)** — *The Design of Springs*. Butterworth-Heinemann. The spring design, the spring fatigue, and the spring materials.
