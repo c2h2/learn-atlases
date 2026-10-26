@@ -6,11 +6,12 @@
   "level": 3,
   "order": 240,
   "tagline": "Growth and development, the newborn, immunisation, childhood illness and safeguarding",
-  "summary": "Children are not small adults: their physiology, illnesses and needs change as they grow. This course covers growth and development, the newborn, immunisation, common acute illness in childhood, congenital and genetic conditions, neurodevelopmental conditions, adolescent health and safeguarding children.",
+  "summary": "Children are not small adults: their physiology, illnesses and needs change as they grow. This course covers growth and development, the newborn, immunisation, acute illness in childhood, congenital and genetic conditions, neurodevelopmental conditions, adolescent health and safeguarding.",
   "overview": [
-    "Paediatrics is not adult medicine at smaller doses: children are continuously developing, so their normal ranges, drug handling, immune responses, illnesses and the way they decompensate all shift with age — a neonate with a fever is an emergency, a schoolboy's is usually not. This course teaches the moving target: growth and its measurement, development and its milestones, and the illness patterns of each age band from the first hours to adolescence.",
-    "The chapters run through the neonate — transition at birth, assessment, jaundice, prematurity and its care, sepsis and asphyxia — and immunisation, from mechanism and schedule to the communication of risk that keeps parents returning. Acute childhood illness is taught by the paediatric early-warning approach: the child who is 'just not right', the fever without source, dehydration and fluids, croup, bronchiolitis, seizure and the unresponsive child. Congenital and genetic disease covers the recognisable syndromes, the metabolic emergencies and newborn screening; neurodevelopment covers cerebral palsy, autism, attention deficit and learning disability with their assessments; adolescent health covers confidentiality, eating disorders, mood disorders, substance use and sexual health; and safeguarding teaches the recognition, documentation and legal duties around physical, sexual and emotional abuse and neglect, including non-accidental injury, fracture patterns and disclosure.",
-    "The culture of the subject is present throughout: weight before drug dose, growth chart before diagnosis, play and family-centred care, and the fact that most childhood mortality now traces to a handful of causes — prematurity, intrapartum events, congenital anomaly and, in adolescence, suicide and injury."
+    "Paediatrics is not adult medicine at smaller doses. Children are still developing, so normal ranges, drug handling, immune responses and the pattern of illness all change with age. A fever in a 4-week-old baby is an emergency; the same temperature in a 9-year-old usually is not. This course teaches how to think about a patient who is a moving target.",
+    "The course starts with growth and development: how to measure a child, how to read a growth chart and how to recognise delay. It then follows the newborn through the transition at birth, the newborn examination, prematurity and jaundice, and explains the UK immunisation programme and how to talk with parents about vaccines. The chapter on acute illness teaches the structured assessment of the sick child, fever, dehydration and fluids, and the common respiratory emergencies.",
+    "Later chapters cover congenital heart disease, cystic fibrosis and chromosomal syndromes; autism, ADHD, cerebral palsy and learning disability; the adolescent consultation, confidentiality, mental health and transition to adult care; and safeguarding, from recognising abuse and neglect to the law and the multi-agency system that protects children.",
+    "Three habits run through every chapter: weigh the child before calculating a dose, plot the measurements before making a diagnosis, and treat the family as part of the clinical team. The course follows UK practice (NICE, UKHSA and RCPCH) and dates guidance that is likely to change."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -18,15 +19,15 @@
     "immunology"
   ],
   "outcomes": [
-    "Interpret growth charts and pubertal staging, distinguish familial short stature and constitutional delay from pathology, and investigate growth failure and precocity systematically.",
-    "Describe developmental milestones by domain and age, recognise the child with global delay or regression, and initiate assessment and early intervention pathways.",
-    "Manage the newborn: immediate assessment including Apgar, recognising the unwell neonate, interpreting jaundice and its thresholds, and the problems of prematurity — respiratory distress, feeding, thermoregulation and retinopathy.",
-    "Explain vaccine types and immune mechanisms in children, describe routine immunisation schedules and their rationale, manage minor adverse events, and respond to parental vaccine concerns with evidence and empathy.",
-    "Assess the acutely unwell child using paediatric early-warning scores: A-to-E examination, weight-based fluid and drug calculation, the febrile child pathway, and recognition of the septic, dehydrated or fitting child.",
-    "Recognise the common congenital and genetic syndromes, the principles of newborn screening and the presentations of inborn errors of metabolism including the acute encephalopathic presentations.",
-    "Describe cerebral palsy, autism spectrum conditions, attention-deficit/hyperactivity disorder, specific learning and language disorders and tic disorders, with their assessment, school-based support and family impact.",
-    "Conduct a young-person consultation with confidentiality: eating disorders, low mood and self-harm risk, substance use, sexual health and contraception — with the safeguarding duties that attach to each.",
-    "Recognise the physical and behavioural indicators of abuse and neglect, document findings appropriately, and describe the local and legal framework — capacity, competence, mandatory reporting where applicable, and child protection proceedings."
+    "Measure and plot growth on UK-WHO and UK90 charts, calculate a mid-parental target height, and distinguish familial short stature and constitutional delay from pathological growth failure.",
+    "Describe developmental milestones by domain and age, recognise red flags such as regression, and outline developmental assessment and referral.",
+    "Explain the transition at birth and the newborn examination, and outline the recognition and management of neonatal jaundice, early-onset infection and the problems of preterm birth.",
+    "Explain how vaccines protect infants, set out the current UK routine immunisation schedule and its rationale, distinguish true from false contraindications, and respond to parental concerns with evidence.",
+    "Assess the acutely unwell child with a structured ABCDE approach and early-warning scores, use NICE traffic-light features in fever, and calculate weight-based maintenance fluids.",
+    "Recognise the presentations of congenital heart disease, cystic fibrosis and common chromosomal syndromes, and explain the principles of newborn screening.",
+    "Describe autism, ADHD, cerebral palsy and learning disability, their assessment and the educational, social and medical support around them.",
+    "Conduct a confidential consultation with a young person, assess competence to consent, and recognise eating disorders, depression, self-harm and substance use.",
+    "Recognise the physical and behavioural indicators of abuse and neglect, document findings, and describe the UK statutory framework for child protection."
   ],
   "chapters": [
     {
@@ -56,7 +57,7 @@
     {
       "slug": "acute-childhood-illness",
       "title": "Acute illness in children",
-      "summary": "The febrile child, respiratory and gastrointestinal illness, and dehydration.",
+      "summary": "Assessing the sick child, fever, respiratory and gastrointestinal illness, dehydration and fluids.",
       "requires": [
         "paediatrics/growth-development"
       ]
@@ -97,25 +98,26 @@
   "history": [
     {
       "year": 1852,
-      "title": "Children in hospital",
-      "detail": "Charles West founds the Hospital for the Sick Poor Children (Great Ormond Street) in London, and its example spreads: childhood disease becomes something treated in dedicated institutions by physicians who have decided to specialise in the young.",
+      "title": "A hospital for children",
+      "detail": "Charles West opens the Hospital for Sick Children in Great Ormond Street, London, with ten beds. It becomes a model for children's hospitals and for paediatrics as a specialty.",
       "people": [
         "Charles West"
       ]
     },
     {
       "year": 1866,
-      "title": "A recognised syndrome",
-      "detail": "John Langdon Down describes the 'Mongolian' idiocy — the distinct phenotype of trisomy 21, later correctly karyotyped by Jérôme Lejeune in 1959 — the first moment a developmental disability was seen as a specific, definable medical condition.",
+      "title": "Down syndrome described",
+      "detail": "John Langdon Down describes the clinical features of the syndrome that now bears his name. In 1959 Jérôme Lejeune, Marthe Gautier and Raymond Turpin show that it is caused by an extra chromosome 21.",
       "people": [
         "John Langdon Down",
-        "Jérôme Lejeune"
+        "Jérôme Lejeune",
+        "Marthe Gautier"
       ]
     },
     {
       "year": 1880,
-      "title": "Keeping premature babies alive",
-      "detail": "Stéphane Tarnier, inspired by a henhouse incubator at the Paris zoo, and his colleague Pierre Budin install the first neonatal incubators at the Maternité de Paris; temperature control, feeding technique and hygiene — not drugs — make preterm survival a medical possibility.",
+      "title": "Incubators for premature babies",
+      "detail": "The obstetrician Stéphane Tarnier introduces an incubator at the Paris Maternité, adapted from a poultry incubator. His colleague Pierre Budin later shows that warmth, feeding and hygiene improve the survival of premature babies.",
       "people": [
         "Stéphane Tarnier",
         "Pierre Budin"
@@ -123,78 +125,110 @@
     },
     {
       "year": 1907,
-      "title": "The school medical service",
-      "detail": "Britain's Education Act permits local authorities to provide school meals and medical inspection; child health becomes a population service — growth measurement, screening and the detection of neglect at scale, the origin of the school nurse and the health visitor.",
-      "people": [
-        "Board of Education"
-      ]
+      "title": "School medical inspection",
+      "detail": "The Education (Administrative Provisions) Act 1907 requires medical inspection of children in English elementary schools, a year after the Education (Provision of Meals) Act. Child health becomes a public service delivered at scale.",
+      "people": []
     },
     {
       "year": 1951,
-      "title": "The child's point of view",
-      "detail": "John Bowlby's World Health Organization monograph on maternal care and mental health, and Donald Winnicott's BBC broadcasts, put attachment, separation and the ordinary devoted mother at the centre of child development — the foundation of today's attachment-aware ward practice.",
+      "title": "Attachment and maternal care",
+      "detail": "John Bowlby's report for the World Health Organization, Maternal Care and Mental Health, argues that separation from the main carer harms young children. It changes hospital practice, including open visiting for parents.",
       "people": [
-        "John Bowlby",
-        "Donald Winnicott"
+        "John Bowlby"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "The Apgar score",
+      "detail": "Virginia Apgar proposes a simple score for assessing the newborn one minute after birth (published 1953). It is still used worldwide.",
+      "people": [
+        "Virginia Apgar"
       ]
     },
     {
       "year": 1962,
-      "title": "The battered child",
-      "detail": "C. Henry Kempe and colleagues' JAMA paper gives a name, a pattern and a syndrome to physically abused children — subdural haematoma, retinal haemorrhage and fractures in various stages of healing in the child who 'fell off the sofa' — and, with the ombudsman-like pressure it creates, mandatory reporting regimes.",
+      "title": "The battered-child syndrome",
+      "detail": "C. Henry Kempe and colleagues describe the battered-child syndrome in JAMA. The paper leads to mandatory reporting laws in the United States and to the modern recognition of child abuse.",
       "people": [
         "C. Henry Kempe"
       ]
     },
     {
       "year": 1966,
-      "title": "Charts for the well child",
-      "detail": "Tanner, Whitehouse and Takaki publish child growth standards from the Berkeley longitudinal study, and the British 1958 and 1965 national birth surveys feed national centile charts: growth becomes a measurement repeated at every contact, its failure a sign that leads to diagnosis.",
+      "title": "British growth standards",
+      "detail": "James Tanner, R. H. Whitehouse and Michio Takaishi publish British growth standards for height, weight and velocity. Measuring and plotting growth becomes routine at every child health contact.",
       "people": [
         "James Tanner",
-        "Rosemary Whitehouse"
+        "R. H. Whitehouse",
+        "Michio Takaishi"
       ]
     },
     {
       "year": 1980,
       "title": "Surfactant for respiratory distress",
-      "detail": "Following Clements's 1957 discovery of lung surfactant and Avery and Mead's 1959 link to neonatal respiratory distress syndrome, Fujiwara's Japanese trial of bovine surfactant instillation shows dramatic benefit; surfactant replacement, with antenatal steroids and CPAP, transforms neonatal survival.",
+      "detail": "Building on John Clements's work on lung surfactant and Mary Ellen Avery and Jere Mead's 1959 finding that it is deficient in respiratory distress syndrome, Tetsuro Fujiwara reports successful treatment of preterm babies with artificial surfactant.",
       "people": [
-        "Yoko Fujiwara",
+        "Tetsuro Fujiwara",
         "Mary Ellen Avery",
-        "Jere Mead"
+        "John Clements"
       ]
     },
     {
       "year": 2006,
-      "title": "A standard for growth",
-      "detail": "The WHO Child Growth Standards, built on the multicentre growth-reference study of breastfed infants in six countries, replace national references that encoded the malnourished as average; stunting worldwide is redefined and re-measured against a biological norm.",
-      "people": [
-        "World Health Organization"
-      ]
+      "title": "WHO Child Growth Standards",
+      "detail": "The World Health Organization publishes growth standards based on healthy breastfed children in six countries. In 2009 the UK adopts them for children under 4 as the UK-WHO growth charts.",
+      "people": []
     }
   ],
   "references": [
     {
-      "title": "The Paediatrics Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the child and the development.",
+      "authors": "Robert M. Kliegman, Joseph W. St Geme III et al. (eds)",
+      "year": 2024,
+      "title": "Nelson Textbook of Pediatrics, 22nd edition",
+      "note": "The comprehensive reference textbook of paediatrics.",
       "slug": "ref1"
     },
     {
-      "title": "The Paediatrics Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the child and the system.",
+      "authors": "Tom Lissauer, Will Carroll (eds)",
+      "year": 2021,
+      "title": "Illustrated Textbook of Paediatrics, 6th edition",
+      "note": "The standard UK undergraduate textbook, clearly illustrated and close to this course in scope.",
       "slug": "ref2"
     },
     {
-      "title": "Clinical Paediatrics",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the development and the practice.",
+      "authors": "Robert C. Tasker, Carlo L. Acerini, Edward Holloway, Asha Shah, Tom Lissauer",
+      "year": 2021,
+      "title": "Oxford Handbook of Paediatrics, 3rd edition",
+      "note": "A pocket guide to assessment and management on the ward.",
       "slug": "ref3"
+    },
+    {
+      "authors": "UK Health Security Agency",
+      "year": 2026,
+      "title": "Immunisation against infectious disease (the Green Book)",
+      "note": "The UK reference for vaccines and the routine schedule; chapters are updated individually, so always use the online version.",
+      "slug": "ref4"
+    },
+    {
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2021,
+      "title": "Fever in under 5s: assessment and initial management (NG143)",
+      "note": "The traffic-light system for assessing febrile young children used in this course.",
+      "slug": "ref5"
+    },
+    {
+      "authors": "HM Government",
+      "year": 2023,
+      "title": "Working Together to Safeguard Children 2023",
+      "note": "Statutory guidance on inter-agency working to safeguard children in England.",
+      "slug": "ref6"
+    },
+    {
+      "authors": "Royal College of Paediatrics and Child Health",
+      "year": 2009,
+      "title": "UK-WHO growth charts, 0–4 years",
+      "note": "The charts and their instructions for plotting and interpreting growth in young children.",
+      "slug": "ref7"
     }
   ],
   "next": []

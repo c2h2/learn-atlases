@@ -1,141 +1,275 @@
-Child protection is the part of paediatrics in which the differential diagnosis includes the adults in the room. **Safeguarding practice means recognising physical, sexual, and emotional abuse and neglect, understanding their developmental consequences as thoroughly as any disease, knowing the statutory framework and referral thresholds cold, and conducting the conversations - with children, with parents, with colleagues whose judgement you doubt - that are among the hardest in medicine. Its core discipline is that the child's experience is the unit of assessment: not the parent's story, not the attendance record, not the family's cooperativeness, but the child's growth, injuries, development and voice. And its modern scope has widened from injury to contextual harm: exploitation, criminal and county-lines grooming, radicalisation, honour-based abuse, FGM, online abuse, and the non-accidental harm that crosses the threshold into serious injury or death in a small number of families every year somewhere in every clinician's caseload.**
+Safeguarding means protecting children from harm and promoting their welfare. Every clinician who sees children, or who sees adults who are parents, has a part in it. Most abuse and neglect happens at home, by people the child knows, and most is never seen by a professional. When it is seen, the signs are often small: a bruise on a baby, an injury that does not fit the story, a child who keeps missing appointments, a teenager who has new older friends.
+
+This chapter explains the forms of abuse and neglect, how to recognise them, how to examine and document, and what the law in England requires. It follows NICE guideline CG89 (child maltreatment: when to suspect) and the statutory guidance *Working Together to Safeguard Children 2023*. The detail differs in Scotland, Wales and Northern Ireland, but the principles are the same. The clinician's role is to recognise, record and refer. Investigation and decisions about what happened belong to the multi-agency system.
 
 ## Recognition
 
-::: definition The patterns of abuse and neglect {#def-recognise}
-**Physical abuse is recognised by mismatch - injury inconsistent with the mechanism offered, injuries absent from the history that brought the child in, developmental impossibility (a 3-month-old does not roll into a fire), distribution (bruising to a non-mobile infant is a sentinel injury requiring same-day senior assessment and investigation; bruising to trunk, ear, neck and genital regions in a mobile child is suspicious by location alone), and pattern (grab marks, loop marks, the imprint of a specific object). Skeletal surveys, head imaging and ophthalmology for retinal haemorrhages belong to the referral pathway, not the differential-diagnosis debate - these investigations are done to protect and to date injuries, and the mimic panel (osteogenesis imperfecta - including the non-accidental-looking types, glutaric aciduria type 2, bleeding disorders, cultural practices like coining and cupping, which leave characteristic symmetric marks that should prompt a conversation, not automatically a referral) is the job of the paediatric safeguarding team, not of a worried junior. Neglect is the commonest substantiated category and the hardest to define at the bedside: it is a pattern, not a snapshot - repeated failure to thrive with the growth chart as its document, chronic untreated medical conditions, inadequate supervision producing recurrent injury, toxic-home indicators (drug misuse, domestic abuse witnessed by children, parental mental illness and learning disability), and the school and health services holding a family together for years while nobody totals the evidence. Sexual abuse leaves a medical examination normal in the large majority of cases - a normal exam is not evidence that nothing happened - and its recognition is behavioural and narrative: age-inappropriate sexualised behaviour and language, new STIs in a child (an STI in a prepubertal child is abuse until proven otherwise), the disclosure that unfolds in fragments over months with the test of time, and the exploitation pattern in adolescents in which apparent consent at 14 with a 27-year-old is exploitation as a matter of law and developmental reality. Emotional abuse is the constant co-occurrence - every other category contains it - and is diagnosed by the gap between the child's needs and the caregivers' capacity, documented through developmental surveillance and school observation rather than any single finding. Fatal and non-fatal suffocation and fabricated or induced illness (FII: the carer producing or inventing symptoms - the parent who is never wrong, the child who only gets ill when observed, the investigations that keep going - managed by avoiding both the error of endless medical escalation and the error of accusation-by-implication, with a paediatrician leading a careful evidence-gathering process) complete the catalogue. The unifying clinical habits: always examine the whole child with a chaperone, always take a separate history per carer when accounts diverge, always look at the growth chart and the attendance timeline as documents, and always ask 'why now, why this, what else is in this family' before a shift ends - [[paediatrics/acute-childhood-illness]], [[paediatrics/newborn]], [[psychiatry/psychiatric-assessment]].**
+::: definition Categories of abuse and neglect {#def-recognise}
+**Physical abuse** is hitting, shaking, throwing, poisoning, burning, scalding, drowning, suffocating or otherwise causing physical harm to a child, including fabricating or inducing illness.
+
+**Emotional abuse** is persistent emotional maltreatment that harms a child's emotional development, for example making a child feel worthless or unloved, frightening the child, or exposing the child to the ill-treatment of others, including domestic abuse.
+
+**Sexual abuse** is forcing or enticing a child to take part in sexual activities, whether or not the child is aware of what is happening, including contact and non-contact activities such as involving children in producing sexual images.
+
+**Neglect** is the persistent failure to meet a child's basic physical or psychological needs, likely to impair the child's health or development: for example failing to provide adequate food, clothing or shelter, to protect from danger, to ensure adequate supervision, or to ensure access to medical care.
 :::
 
-## The statutory spine
+These four categories come from *Working Together*. Several important forms of harm cut across them:
 
-::: definition Law, thresholds and multi-agency practice {#def-law}
-**In England the framework is Working Together to Safeguard Children: three levels of need (healthy, escalating, risking severe harm), four statutory assessments (early help, children-in-need section 17, child-protection section 47, care proceedings), the inter-agency child-protection arrangements run through the multi-agency safeguarding hubs (MASH) where the referral decision is triaged, and the child-protection conferences whose categories and plans the paediatrician frequently chairs or authors. The clinician's duties are specific: any professional with concerns refers - the duty is not individual-satisfaction-proof-of-harm; section 47 assessments require medical contribution within defined timescales; children on protection plans have review intervals; and serious case reviews (now child death reviews and learning-death-case practice) have repeated the same findings for thirty years - inter-agency communication failures, the 'rule of optimism', the adult-focused history that never included the child. The practical mechanics: a referral is a written account of what was observed, said (in quotation marks), and why it concerns you, with the family's perspective recorded; you inform parents of a referral unless doing so risks harm to the child (and document why when you do not); police and children's social care joint interviews use the Achieving Best Evidence framework rather than repeated medicalised interrogations; and the Gillick and consent questions about treating a child against parents' religious objection, transfusing a Jehovah's Witness adolescent, or the under-16 requesting an FGM-related examination are decided by courts and best-interest analysis, not by whoever shouts last. Confidentiality versus sharing is the daily negotiation: information is shared when a child is at risk - the Data Protection Act and GDPR contain explicit routes and the common-law exception, and the ICO's child-code era has settled the question that 'data protection is not a reason for not safeguarding', so the referral does not wait for consent and consent is not requested for what is a duty. Across-nation and cross-border complications - children whose families travel to countries where FGM, child marriage or different ages of consent are normalised - require the same British law applied with cultural literacy: zero tolerance for the practice, maximum care for the child's and family's trust, and the specific statutory tools (FGM mandatory reporting for confirmed genital mutilation or disclosure in a girl under 18, forced-marriage protection orders, the exploitation indicators for county-lines and modern slavery under the Modern Slavery Act) used with, rather than instead of, professional judgement. The threshold discipline in one sentence: if you are asking a colleague 'is this a referral?', it is - the uncertainty itself is the finding, and MASH triage exists precisely to absorb that uncertainty rather than to punish it - [[medical-ethics-law/confidentiality]], [[public-health/determinants-inequalities]], [[paediatrics/growth-development]].**
+- **Child sexual exploitation** and **child criminal exploitation**, in which a child is coerced or manipulated into sexual or criminal activity in exchange for something the child wants or needs, or for the benefit of the abuser. "County lines" drug supply is a form of criminal exploitation.
+- **Female genital mutilation (FGM)**, which is illegal in the UK.
+- **Fabricated or induced illness**, in which a carer reports, exaggerates or causes symptoms in a child, leading to unnecessary medical care.
+- **Domestic abuse**, which harms children who see, hear or experience it. Under the Domestic Abuse Act 2021, children are recognised as victims in their own right.
+
+Neglect is the commonest reason for a child to be on a child protection plan in England. At any one time, about 50,000 children in England are on such a plan.
+
+### Injuries that should raise concern
+
+The key question about any injury is whether it fits the explanation and the child's developmental stage.
+
+::: theorem Injuries must be explained by the child's development {#thm-mobility}
+Accidental injuries happen in the course of a child's own activities, so their pattern follows what the child can do. An injury in a child who could not have caused it themselves, or in a pattern that the child's activities do not explain, needs an alternative explanation.
 :::
 
-## Consequences and reparation
-
-::: definition Developmental impact, trauma-informed practice and the long tail {#def-impact}
-**Adverse childhood experiences (ACEs) are measured like risk factors because they behave like them: dose-response associations with ischaemic heart disease, COPD, depression, substance dependence, and early death, mediated through toxic-stress physiology, allostatic load, and the social pathways of disrupted schooling and family instability. But effect sizes at population level do not describe the individual child: resilience is real, protective relationships are the strongest predictor of recovery, and the clinical task is to make this child's next experiences predictable, physically safe and narratively coherent. Trauma-informed practice is therefore not a counselling technique but a service design: asking consent before every examination in the abusive domain, giving the prepubertal child's exam by a paediatrician with a dedicated trainee and no repeat exams for each agency, using play and drawing for younger children's disclosure rather than interrogation, avoiding the re-traumatising medical treadmill, and explaining to a 15-year-old what a forensic examination involves in exact words because ambiguity is worse than detail. The developmental sequelae that clinics actually manage: attachment disorders and the disinhibited type in previously institutionalised children; the learning and attention consequences of chaos that are frequently mislabelled ADHD (the diagnosis is both-not-either and treating it as one loses); dissociation, self-harm and the eating disorders over-represented in abused cohorts (see [[psychiatry/eating-personality-disorders]]); the adolescent sexualised behaviour that is a symptom, not a conduct problem; and the secondary-growth-chart-fall that is the physical sign of neglect until disproved. Long-term health systems pay for childhood adversity in three currencies: adult mental-health utilization, the chronic-disease burden, and the intergenerational transmission that early-intervention parenting programmes and domestic-abuse work with fathers and mothers target before the third generation. The reparation side is slower but documented: reunification when safe, kinship care's mixed record of love and resource-starvation, the looked-after children's health plans that in most areas are shells - the audit that a looked-after child received a full assessment in the last six months is usually an embarrassing number, and paediatricians should publish it because the children in those statistics are the ones whose abuse was found too late the first time - [[paediatrics/neurodevelopment]], [[public-health/determinants-inequalities]], [[psychiatry/lifespan-psychiatry]].**
+::: proof
+Babies who are not yet mobile cannot fall over, climb or run into furniture, so accidental bruises in this group are rare. A study of infants seen for routine care found bruises in only about 2 in 100 babies who were not yet cruising, and fewer still in younger infants, which gives the teaching phrase "those who don't cruise rarely bruise". As children start to crawl, cruise and walk, bruises become common, but they occur over bony prominences at the front of the body: shins, knees, forehead, elbows. They are uncommon on soft, protected areas such as the cheeks, ears, neck, abdomen, buttocks and the back, which are typical sites of inflicted injury. The same reasoning applies to fractures: a long-bone fracture in a baby who cannot walk needs a force that the baby could not have generated. This is why NICE CG89 advises that bruising in any child who is not independently mobile, and any fracture in such a child without a medical explanation, should make the clinician suspect maltreatment.
 :::
 
-::: example The 10-week-old with a femoral fracture {#ex-fracture}
-A 10-week-old, first child, 'fell from the changing table onto the floor'; undisplaced femoral shaft fracture on x-ray; the parents are calm, consistent, and 'grandparents are arriving tomorrow to help'.
+Features that should raise concern include:
+
+- **Bruises** in a baby who is not independently mobile; bruises on the ears, neck, cheeks, torso, buttocks or genitals; bruises in clusters, with a pattern (fingertips, a hand, a belt or loop) or of a recognisable shape; and petechiae around the eyes or neck.
+- **Bites**, which may be human and adult-sized.
+- **Burns and scalds** with a sharp edge, in a glove or stocking distribution (immersion), on the back, buttocks or soles, or in the shape of an object such as a cigarette or an iron.
+- **Fractures** in children who are not walking; fractures of the ribs (especially posterior), the metaphyses of long bones ("corner" fractures), the scapula, sternum or spine; and multiple fractures of different ages.
+- **Abusive head trauma**: subdural haemorrhage, often with retinal haemorrhages and encephalopathy, in an infant. It may present with vomiting, irritability, seizures, apnoea or collapse, sometimes with no external injury.
+- **Sentinel injuries**: a minor injury, such as a small bruise or mouth injury, in a young baby that precedes more serious abuse. Recognising them gives a chance to prevent further harm.
+
+Behaviour and circumstances also matter: a delay in seeking help, an explanation that changes or does not match the injury, a carer's unexpected reaction, repeated attendances, a child who is withdrawn or frightened, sexualised behaviour inappropriate for age, and missed health appointments.
+
+### Things that look like abuse
+
+Many conditions can be mistaken for abuse, and the clinician must consider them. **Congenital dermal melanocytosis** (previously called Mongolian blue spots) is common in babies with darker skin and is present from birth or soon after; it does not change over days, which a bruise would. Bleeding disorders cause easy bruising. **Osteogenesis imperfecta**, rickets and other bone disorders cause fractures with little force. Some infections, such as impetigo, can look like cigarette burns. Cultural practices such as cupping or coining leave marks. Considering these does not mean dismissing concern; it means doing the right tests.
+
+::: example A 10-week-old with a swollen thigh {#ex-fracture}
+Jayden, 10 weeks old, is brought to the emergency department because his right thigh is swollen and he cries when his nappy is changed. His mother says he may have caught his leg in the bars of his cot two days ago. An X-ray shows a spiral fracture of the femur. He has a small bruise on his left ear.
 ::: solution
-**A sentinel injury with a bookable pathway ([[#def-recognise]], [[#def-law]]): a femoral fracture in a 10-week-old is a safeguarding emergency whatever the story's consistency - the mechanism offered does not generate this injury at this age, and the plan proceeds as a process rather than a verdict: immediate admission under the correct protection (the child stays in hospital while the assessment happens - this is care, not accusation, and is said that way to the parents), the full skeletal survey with follow-up imaging at two weeks to date other injuries, head imaging and ophthalmology within their specialist windows, bloods excluding the bleeding and bone-metabolic mimics, and same-day referral and strategy discussion with social care and police. The evidence the process needs: separate interviews of each carer on day one about the fall - 'who was looking at the child, what position was the table, what surface' - because the details rehearsed by the first account rarely match, and the history that changed twice is data; documentation in verbatim quotations with body maps and a body diagram of every mark; the growth chart and antenatal and birth records read properly; and the family's supports and stressors assessed with the grandparents' arrival interrogated as carefully as the injury ('who are they to this child, and has this child been alone with any adult for long stretches'). The parents are treated with respect and without naivety: they may be the abusers, they may both be protecting the real perpetrator, and they may be innocent people whose child was hurt by the visiting helper last Tuesday - which is precisely why the assessment is a process with dates and tasks rather than a feeling in the room. Discharge is only ever to a safety plan the team has written, and the paediatrician's report will decide whether this baby goes home or into kinship or foster care - which is why the report is written like evidence, because it is - [[paediatrics/acute-childhood-illness]], [[musculoskeletal/fractures]].**
+**Why this raises concern.** Jayden is not mobile, so he cannot generate the force for a femoral fracture by his own movement. The explanation does not fit: a leg caught in cot bars is not a credible cause of a spiral femoral fracture at this age. There has been a delay in presentation. He also has a bruise on his ear, a protected site, in a non-mobile baby.
+
+**Immediate care.** Pain relief and orthopaedic care for the fracture. Admit him to a place of safety.
+
+**Referral.** Discuss with the senior paediatrician on call and make a referral to children's social care the same day, following local procedures. The police may be involved through the strategy discussion that follows.
+
+**Investigations,** as recommended by the Royal College of Paediatrics and Child Health and the Royal College of Radiologists: a **skeletal survey** (repeated in part after 11–14 days, when healing makes subtle fractures visible), a **CT head** (because occult head injury is common in abused infants under 1 year), an **ophthalmology** examination for retinal haemorrhages, and blood tests to look for other explanations: full blood count, clotting studies, bone profile, vitamin D and parathyroid hormone. Siblings and other children in the household also need to be considered.
+
+**Documentation.** Record the history in the mother's words, who gave it and when, with a body map and measured description of the bruise.
+
+**Communication.** Explain honestly to the mother what is happening and why, in a non-accusatory way. The aim is to make sure Jayden is safe and to find out what happened, not to make an accusation.
 :::
 :::
 
-::: example The 15-year-old with 'recurrent UTIs' {#ex-exploit}
-A 15-year-old with four admissions in a year for 'UTIs' and dehydration, a 'boyfriend' who attends every admission and answers for her, three school exclusions, and a growth chart showing 4 kg lost over eight months.
+::: warning Do not dismiss a bruise on a baby
+A small bruise on a baby who cannot move independently is easy to explain away, especially when the family is pleasant and the clinic is busy. Bruising in a non-mobile infant is uncommon and may be a sentinel injury that precedes serious abuse. NICE CG89 advises that such bruising should prompt suspicion, and most areas have a specific protocol for bruising in non-mobile babies that requires paediatric assessment and a discussion with children's social care. The consequence of missing it can be a baby's death.
+:::
+
+## The statutory framework
+
+::: definition Law and multi-agency practice in England {#def-law}
+The **Children Act 1989** is the main law. **Section 17** places a duty on local authorities to provide services for a **child in need**, a child whose health or development is likely to be impaired without such services, or who is disabled. **Section 47** requires the local authority to make enquiries when there is reasonable cause to suspect that a child is suffering, or is likely to suffer, **significant harm**.
+
+The **Children Act 2004** created a duty on agencies to cooperate. **Safeguarding partners** (the local authority, the integrated care board and the police) lead local arrangements, as set out in *Working Together to Safeguard Children 2023*.
+
+A **child protection plan** is agreed at a child protection conference when a child is judged to be at continuing risk of significant harm.
+:::
+
+When a clinician is concerned, the usual sequence is:
+
+1. **Discuss** with a senior colleague or the named or designated safeguarding professional. Do not wait for certainty.
+2. **Refer** to children's social care. If a child is in immediate danger, call the police. A phone referral is followed by a written referral, usually within 48 hours.
+3. Social care decides on the response. This may be an assessment of need, a **strategy discussion** with the police and health, and a **section 47 enquiry**.
+4. If the risk continues, an **initial child protection conference** decides whether the child needs a child protection plan.
+5. In an emergency, a court can make an **emergency protection order**, and the police can take a child into **police protection** for up to 72 hours.
+
+**Information sharing.** Clinicians are often worried about confidentiality. Data protection law does not prevent sharing information to protect a child. Where possible, explain to the family that you are sharing information and why, unless doing so would put the child at greater risk or interfere with an investigation. Record what was shared, with whom and why.
+
+**FGM.** Since 2015, regulated health and social care professionals and teachers in England and Wales have a **mandatory duty** to report to the police any case of FGM in a girl under 18 that they discover in the course of their work, either because the girl tells them or because they see physical signs. This duty is personal and cannot be delegated.
+
+### Documentation
+
+Good records protect children and clinicians. Write contemporaneously, date and sign, and record:
+
+- who gave the history, in their own words, and who else was present;
+- the child's own account, in their own words, if given, without leading questions;
+- examination findings with measurements, body maps and, where appropriate, medical photography with consent;
+- what you think and why, and what you did, including who you spoke to.
+
+Do not interview children in detail about suspected abuse. If a child discloses, listen, reassure, do not promise secrecy, record what was said, and refer. Formal interviews are carried out by trained police and social workers.
+
+::: example A 15-year-old with recurrent urinary infections {#ex-exploit}
+Shanice, aged 15, has attended her GP three times in two months with urinary symptoms. Today she has a new expensive phone, has missed school, and receives messages during the consultation that she checks anxiously. When asked, she says she has a 24-year-old boyfriend who "looks after her" and that she sometimes stays at his friends' flat.
 ::: solution
-**Exploitation wearing a medical costume ([[#def-recognise]], [[#def-law]]): the pattern is the diagnosis - recurrent medically unexplained or recurrently recurrent presentations in an adolescent, a controlling older partner who is always present, weight loss, school collapse and exclusions nobody connected, is the classic criminal-exploitation or coercive-relationship picture (county-lines drug networks and sexual-exploitation rings both recruit by attention and produce exactly this 'difficult attendee' phenotype), and the admission is the intervention: see her alone within the first hour ('routine for all adolescents, part of our assessment' - not 'the doctor would like to speak to you privately'), ask the exploitation screening questions factually - does he know how much you spend, where you go, who pays the phone; has he taken your phone; do you owe someone; have you been to another town this month for him; has anyone photographed or filmed you; what happens when you say no. Document the disclosures verbatim, screen for the physical and sexual-health needs (pregnancy, STIs, injuries, substance use), and refer to the exploitation pathway - in England the county-lines programme and children's social care, the National Referral Mechanism if trafficking indicators are met. The two commonest errors to refuse: treating the 'UTIs' forever (each admission without a psychosocial frame is a missed assessment) and treating the partner's behaviour as a relationship problem (age and control asymmetries at 15 versus 24 are safeguarding facts). Finally, coordinate: one named clinician, the school told the minimum necessary, the police informed under the exploitation framework with her understanding, and the offer of a life - outreach workers, the exit-services framing 'you are not in trouble, you are being used' - because this is the modern face of the chapter's oldest duty: seeing the child the system keeps almost-seeing - [[paediatrics/adolescent-health]], [[paediatrics/safeguarding]].**
+**Recognition.** Recurrent genitourinary symptoms, an older boyfriend, gifts, missing school, staying away from home and being controlled through her phone are indicators of **child sexual exploitation**. Sexual activity between a 24-year-old and a 15-year-old is a criminal offence.
+
+**Clinical care.** Test for sexually transmitted infections and pregnancy, treat infection, and discuss contraception. Shanice may be competent to consent to this care.
+
+**Talking with Shanice.** Speak with her alone. Young people who are being exploited often see the abuser as a boyfriend and do not see themselves as victims, so avoid blame. Explain that you are worried about her safety and that you need to share your concerns.
+
+**Referral.** Refer to children's social care the same day, and discuss with the practice safeguarding lead. The police may need to be informed through the local procedure. Record the indicators clearly.
+
+**Afterwards.** Keep the door open. A trusted relationship with a clinician can be protective, and she is more likely to return if she was treated with respect.
 :::
 :::
 
-::: example The 3-year-old with recurrent chest infections {#ex-ftrace}
-A 3-year-old, four admissions in eighteen months for 'aspiration pneumonia', never investigated; mother is a hospital volunteer, knows the consultants by first name, and 'stays overnight every admission'; the child grows along the 25th centile after a 50th-centile first year; oxygen saturations 'drop' only when observed.
+## Neglect, fabricated illness and consequences
+
+::: example A 3-year-old with recurrent chest infections {#ex-neglect}
+Kai, aged 3, has had six emergency attendances in a year with chest infections and wheeze. His preventer inhaler is rarely collected. His weight has fallen from the 25th to the 2nd centile. He has untreated dental decay, and his speech is delayed. His mother is struggling with depression and the family's flat is damp. Two appointments with the paediatric clinic and the dentist were missed.
 ::: solution
-**Fabricated or induced illness presenting as the perfect attendee ([[#def-recognise]]): the pattern - 'the triad of (1) symptoms that occur only when the carer is present, (2) a carer who is unusually medicalised and unusually cooperative, and (3) a child whose chart quietly drifts downward - is the FII signature, and the absence of a diagnosis after four admissions is itself a finding worth totting up'; the method - 'no confrontation and no new cascade of invasive tests; one coordinating consultant, a complete longitudinal record review (the 'reports' from other hospitals that no one has requested), and - where the suspicion remains and harm is plausible - a structured inpatient observation or video study under joint paediatric and police safeguarding governance, because separation-recovery and symptom-only-when-alone are data no argument can beat; the ethical line: FII is abuse by a person who is usually also the child's principal carer and often herself distressed - the management is protection of the child plus psychiatric and psychological help for the parent, in that order, never the diagnostic joke that ends careers and families'; the immediate rules - 'no more procedures that carry risk for a diagnosis that has none, the school and nursery health records pulled because the 'asthma attacks' happen nowhere else, siblings' records looked at in any jurisdiction that allows it (the question asked at the strategy meeting), and a record of the pattern that travels with the family because FII recurs across moves'. The sentence for the worried registrar: 'you are not a bad doctor for having treated this pneumonia; you become one if you admit her a fifth time without asking why only you see it' - [[respiratory/respiratory-infections]], [[clinical-skills/clinical-reasoning]].**
+**Recognition.** The pattern is **neglect**: medical needs not being met (prescriptions not collected, appointments missed, untreated dental decay), faltering growth, developmental delay, and poor living conditions. Neglect is persistent and cumulative, and it is recognised by the pattern over time rather than by one event.
+
+**Context.** His mother's depression and the housing problem are likely contributors. Neglect is not always deliberate, but the effect on the child is what matters. Understanding the cause helps in finding the right support.
+
+**Actions.** Treat his asthma and arrange dental care. Plot his growth and assess development. Talk honestly with his mother about the concerns and about her own health. Refer to children's social care, either for an assessment of need under section 17 or, if the harm is significant and continuing, for a section 47 enquiry. Share information with the GP and health visitor. Do not simply discharge a child who misses appointments: in children, "was not brought" is the right description, and it is a safeguarding signal.
 :::
 :::
 
-::: example The school nurse's 'just a bad skin' referral {#ex-burns}
-A 5-year-old is referred for 'persistent eczema' that is bilateral, symmetric, well-demarcated, and spares the bath-wash areas on the buttocks; the school says she 'never plays outside'; the mother says 'the skin is from our soap'.
+**Fabricated or induced illness (FII)** occurs when a carer causes a child to be seen as more ill than they are, by false reporting of symptoms, exaggeration, falsifying tests or, rarely, inducing illness, for example by poisoning or suffocation. Guidance from the Royal College of Paediatrics and Child Health (2021) emphasises the concept of **perplexing presentations**: symptoms that do not fit any recognised condition, with apparently harmful consequences for the child. The response is to coordinate care, establish what the child's health actually is, and stop unnecessary investigations and treatment, with safeguarding referral when harm is occurring.
+
+::: definition Impact of maltreatment and trauma-informed care {#def-impact}
+**Adverse childhood experiences (ACEs)** are stressful or traumatic events in childhood, such as abuse, neglect, domestic abuse, parental mental illness or substance misuse. They are associated with poorer physical and mental health in adult life.
+
+**Trauma-informed practice** is an approach that recognises the effect of trauma on people's behaviour and their responses to services, and aims to avoid re-traumatising them, for example by offering choice, explaining what will happen and building trust.
+
+A **looked-after child** is a child in the care of the local authority. Looked-after children have higher rates of physical, developmental and mental health needs, and statutory health assessments are carried out when they enter care and at regular intervals.
+:::
+
+Abuse and neglect affect children long after the harm stops. Chronic stress alters the developing brain and stress response systems. Children may show anxiety, aggression, difficulty with attention and relationships, developmental delay or school failure. Supportive relationships with a caring adult are the most powerful protective factor, and well-coordinated services can make a large difference.
+
+::: example Burns on a toddler's feet {#ex-burns}
+A school nurse refers Amira, aged 2, whose childminder noticed red, peeling skin on both feet. Her father says she stepped into a hot bath. On examination both feet have burns with a sharp upper edge at the same level on both ankles, sparing the soles where they touched the bath.
 ::: solution
-**The burn that hides as dermatitis ([[#def-recognise]], [[#def-law]]): the morphology - 'a well-demarcated symmetric buttock burn with a clear line of sparing where the child was lifted from hot water or held against a heated surface is the classic immersion-or-contact burn pattern, and "eczema" that never responds to treatment in a defined shape is a burn until dermatology and paediatrics agree otherwise; the demarcation itself is the history'; the response - 'same-day senior paediatric review and photographs to local policy, the bathing and heating questions asked factually and repeatedly across days (bath temperature, water heater, where she sleeps), full skin survey and injury survey, and the referral that the shape alone justifies - the pattern is not compatible with soap'; the context - 'the never-playing-outside and the school's quiet accumulation of small concerns is the totting-up the review reports always mention, and the referral is the place where the school's observations, the GP's absence data and this skin become one document'; and the tone - 'parents of abused children present calmly, coherently and with plausible explanations roughly as often as innocent ones, and consistency of the story is not evidence of innocence; the burn is evidence; examine the child, not the interview' - [[paediatrics/acute-childhood-illness]], [[musculoskeletal/skin]].**
+**Pattern.** Symmetrical burns of both feet with a sharp "stocking" edge at the same level, and sparing of the skin pressed against the bath, are typical of **forced immersion**. A child who accidentally steps into hot water withdraws quickly, producing irregular burns with splash marks, usually on one foot.
+
+**Differential.** Infection (for example staphylococcal scalded skin) or a dermatological condition should be considered, but the shape and symmetry strongly suggest an inflicted injury.
+
+**Action.** Assess and treat the burns, with referral to a burns service. Discuss with a senior paediatrician and refer to children's social care the same day. Document the description, measurements and photographs. Consider a skeletal survey in a child under 2 with a suspicious burn, and consider other children in the household.
 :::
 :::
 
-::: exercise Answer the GP call about the mobile toddler's bruise {level=1}
-Your GP rings about an 11-month-old with two bruises: one shin (fallen, coffee table 'probably') and one on the side of the face including the ear, no clear story. Give the phone advice you would stand by at the review.
-::: solution
-**The-shin-and-the-ear ([[#def-recognise]]): the shin bruise on a cruising 11-month-old is the most normal injury in childhood; the ear and face bruise is not: bruising to ear, neck and cheek in a child under 2 is a concerning-site finding requiring same-day senior paediatric assessment, and the correct phone advice is 'you see them today - if you cannot examine fully or the story stays absent, I will', because the combination of one plausible bruise plus one implausible one is the classic mixed picture, and the plausible bruise is frequently the one volunteered. What to document: exact descriptions, body map, dates offered for each bruise by each carer, and the developmental history; what not to do: accept the 'probably' as your own conclusion by phone or reassure without examining, because the next attendance may be the one that needs this note to make sense of - [[paediatrics/acute-childhood-illness]], [[clinical-skills/communication]].**
-:::
-:::
+In practice the decision to refer depends on combining several findings. The figure shows why a single feature that is common in both abused and non-abused children carries little information, whereas a feature that is rare without abuse carries much more. The numbers are illustrative only.
 
-::: exercise Screen for FGM {level=1}
-A 9-year-old girl born in the UK to a family from a high-prevalence country attends the pre-school immunisation clinic; the older sibling had FGM documented at a hospital five years ago; the parents mention the family 'holiday' in six weeks. What are the three mandatory or best-practice steps and the reporting duty?
-::: solution
-**The-prevention-window ([[#def-recognise]], [[#def-law]]): the duty is immediate and named - in England the FGM mandatory reporting duty (Health and Care Act 2015 section 5B) requires a registered professional who learns that FGM has been committed on a girl under 18 (documented procedure or disclosure) to report personally to the police within one month by the official route; here the older sibling's documented FGM and this family's plan make the risk explicit, and the duty applies to confirmed cases while the risk case is handled through safeguarding referral - the two routes run in parallel: (1) record the family's FGM history and the holiday plan in the child-health record with flags to both GP practices, (2) make a safeguarding referral now describing exactly what was said and by whom - school-holiday windows are the abuse window, and a referral made six weeks before travel is prevention, while reports made after return are autopsies; (3) the conversation: non-judgemental, with an interpreter, naming the law and the health harms, offering the community-health and safeguarding alternatives, and making the risk of the travel explicit to the parents in front of the record ('I would be failing this girl if I did not say it, and I will say it kindly and clearly'). Never: document 'family from high-prevalence country' as a completed risk assessment, and never let the holiday question go unasked because it is awkward - the 2014-2020 FGM-enforcement history is mostly the sound of professionals being polite in exactly this moment - [[paediatrics/immunisation]], [[public-health/global-health]].**
-:::
-:::
-
-::: exercise Coach the junior who did not refer {level=2}
-A foundation doctor on your ward tells you at handover: 'I had a worry about that bruise case last month and I did not refer because the parents were so reasonable and I thought I was overreacting - I keep thinking about it.' Respond as the educator, the safeguarding lead and the human.
-::: solution
-**The-teachable-non-referral ([[#def-law]]): first the duty - the case is identified, so it is reviewed today: the child's file re-read, the missing referral made retrospectively with the delay documented, and a safety check on the child's current situation through the safeguarding team; concealment of a colleague's hesitation is itself a risk. Then the coaching that prevents the next one: name the mechanism - the 'rule of optimism' and the 'reasonable-parent heuristic' are exactly the biases every serious-case review lists; teach the threshold rule ('if you are asking whether to refer, refer - MASH exists to triage your uncertainty, and it would rather hear it than the review board'), the documentation habit ('write the worry down the same shift, even when you do not know what to do with it, because a written almost-concern is a data point and a spoken one evaporates'), and the permission ('you were not wrong to find them likeable - likeable people harm children at the same base rate as unpleasant ones; the injury is the finding, the interview is the context'). Then the human: the foundation doctor is frightened, and the culture you choose now decides whether the next junior tells you at handover or at the serious-case review: 'thank you for telling me; we will fix this case together; nobody is being punished for hesitation - only for silence, and you just chose the opposite.' Finally the system: the department's audit should ask how many 'I wondered' moments go unrecorded, and the answer is found only by asking repeatedly - this is what a just-culture safeguarding system is for - [[clinical-skills/patient-safety]].**
-:::
-:::
-
-::: exercise Build the hospital's 'absent-child' protocol {level=3}
-Your trust has no consistent response to the 'did-not-attend' problem: 22 percent of looked-after children's health assessments are missed, DNA rates for the under-5s review clinics are rising, and one reviewable death has an unexplained three-year surveillance gap in it. Design the protocol: data, roles, escalation, and the equity guardrails.
-::: solution
-**The-DNA-safety-protocol ([[#def-law]], [[public-health/health-systems-economics]]): the reframing - 'a missed appointment for a child already known to services is not an admin problem; it is either a small safeguarding signal or the start of a large one, and every serious-case review uses the phrase "the family did not attend" as a sentence, not a finding'. The data spine: a register linking attendance to the child-protection-plan and looked-after status automatically (the flag must be in the booking system, not in someone's head), DNA thresholds by risk tier - for a child on a plan, a single missed core appointment triggers a same-week telephone check and a two-strike home visit by the health visitor or key worker, and the check is documented as contact, not as attendance. Roles: one named clinical lead per hospital for safeguarding-attendance equity; a clerk or outreach worker whose entire job is the list; the school-nursing interface for school-time clinics. Escalation ladder with dates: missed, phoned, visited, strategy discussion - the last step is where the clinician's judgement replaces the algorithm's, and it should happen at week three, not at the annual review. The equity guardrails, because DNA management can weaponise poverty: a working parent's missed appointment is not neglect; the protocol's first response is logistical (evening clinics, transport vouchers, childcare, telehealth for reviews that tolerate it), its second is curiosity, and only its third - repeated, patterned, unexplained non-contact for a flagged child - is a referral; the audit reports DNA rates by deprivation and ethnicity to detect the system blaming families for its own inconvenience, and reports whether the flagged-child outreach is actually contacting (not just attempting). The success metric: the gap-to-zero indicator - every flagged child has had a confirmed human contact with the service in the last N months - because the reviewable death in the prompt was not caused by the missed clinic; it was caused by three years in which no professional could say 'I last saw this child on this date' - [[paediatrics/growth-development]], [[clinical-skills/records-handover]].**
-:::
+::: widget bayes
+mode: test
+prevalence: 0.05
+sensitivity: 0.5
+specificity: 0.98
+caption: Illustrative values only. Suppose 5% of a group of injured infants have been abused, and a particular finding is present in half of abused infants but in only 2% of others. The finding is then a strong reason for concern, though not proof. Lower the specificity to see how a finding that is common in accidental injury adds much less. This is why clinicians weigh the whole picture and refer on suspicion, not certainty.
 :::
 
 ::: quiz
-A 6-week-old, exclusively breastfed, is brought in because he 'won't settle'. Weight is 2.6 kg (birth 3.4 kg, day-5 nadir 3.2 kg not re-recorded since), parents are anxious but warm, the GP has 'reassured twice this fortnight'. The paediatrician should:
-- [ ] Reassure a third time with feeding advice
-- [ ] Admit solely for maternal mental-health assessment
-- [x] Treat this as failure to thrive with a full safeguarding and organic assessment - the trajectory, not the parents' warmth, is the finding
-- [ ] Prescribe top-up formula and review in one month
+A 4-month-old is brought to the GP for a cough. The GP notices a 1 cm bruise on the baby's cheek. The mother says the baby's older sibling may have done it. What is the most appropriate response?
+- [ ] Accept the explanation, because siblings commonly injure babies, and document it.
+- [ ] Ask the mother to return if more bruises appear.
+- [x] Follow the local protocol for bruising in non-mobile infants: arrange same-day paediatric assessment and discuss with children's social care.
+- [ ] Order a clotting screen and decide on referral when the result is available.
 ::: solution
-**A 6-week-old at 76 percent of birth weight with two missed reassurances is serious neglect-risk and possible organic disease until the assessment says otherwise; warm, anxious parents do not preclude harm - the chart is the witness and the trajectory is the referral trigger ([[#def-recognise]], [[#def-law]]).**
+A bruise in a baby who is not independently mobile, on a protected site such as the cheek, should prompt suspicion under NICE CG89. The explanation may be true, but it should be assessed by a paediatrician, with consideration of investigations and a discussion with social care, following the local protocol. Waiting for more bruises risks serious harm.
 :::
 :::
 
-::: widget plot
-f: 55; 22; 9; 8; 6
-x: 1, 10
-y: 0, 60
-labels: \text{percent of substantiated categories (approximate shape)}\text{neglect};\ \text{physical abuse};\ \text{sexual abuse};\ \text{emotional abuse alone};\ \text{multiple or other}
-caption: Neglect is the majority category and the least visible one ([[#def-recognise]], [[#def-impact]]) - the growth chart and the totting-up of small concerns do more protection work than any single dramatic presentation.
+::: history
+In 1946 the American radiologist John Caffey described infants with subdural haematomas and unexplained long-bone fractures. In 1962 C. Henry Kempe and colleagues published "The battered-child syndrome" in JAMA, which led to laws requiring the reporting of suspected abuse across the United States. In Britain, the death of Maria Colwell in 1973 led to a public inquiry and to the creation of area child protection committees. The Children Act 1989 established the framework still used in England, including the concept of significant harm. The death of Victoria Climbié in 2000, despite contact with many agencies, led to Lord Laming's inquiry report in 2003, the Every Child Matters programme and the Children Act 2004. The death of Peter Connelly in 2007 led to further reforms, and the guidance *Working Together to Safeguard Children* has been revised many times, most recently in 2023.
 :::
 
 ## Where this leads
 
-Acute recognition links to [[paediatrics/acute-childhood-illness]] and [[paediatrics/newborn]], the developmental consequences to [[paediatrics/neurodevelopment]] and [[paediatrics/adolescent-health]], the ethics of information-sharing to [[medical-ethics-law/confidentiality]], and the population layer to [[public-health/determinants-inequalities]].
-
-::: history
-**Modern safeguarding is written in children's deaths: Dennis O'Neill and the 1945 Ministry of Health circular that first told doctors to watch for abuse; the 1962 Kempe and Silverman paper coining the 'battered child' and converting a cluster of radiological findings into a named syndrome and a mandatory conversation; Maria Colwell's death in 1973, whose review produced the first guidance requiring professionals to talk to each other; the Jasmine Beckwith, Doreen Aston and Kyorma cases of the 1980s whose reviews repeated the same finding - that social workers and doctors had failed to see children as individuals; Victoria Climbié in 2000, whose Laming report built the modern architecture of named children, every-agency-accountability and the Every Child Matters legislation; 'Baby P' (Peter Connelly) in 2007 and the serious-protection-review era with its catalogue of 60 professional contacts that never totalled up; and Daniel Pelka in 2012, whose review's damning detail - a child secretly feeding at bins, a 12-lesson-per-week school timetable nobody queried, seven professionals recording concerns in seven systems that shared nothing - made 'think the family's story twice' into training. The legal milestones run alongside: the Children Acts 1989 and 2004, Working Together's successive editions, the inter-agency hubs and MASH model of the 2010s, and the statutory inquiry-era recognition - Rotherham and its line of successors, from the 2014 inquiry report onwards - that child sexual exploitation had been ignored in some towns for fifteen years because professionals did not believe that girls in care homes and takeaways were victims, and because fear of racism accusations and institutional protectiveness combined with class contempt to silence reporting; the inquiry's lesson is now training canon: the child's story travels, race does not explain away abuse, and political cowardice about communities is a safeguarding failure like any other. FGM policy history is its own chapter - from the 1985 Prohibition of Female Circumcision Act, prosecuted zero times for two decades, through the 2003 and 2014 Acts and the 2015 mandatory-reporting duty, with its first prosecutions only in the 2020s - which is the permanent lesson that laws without clinical attention are paper: the detection and prevention work happens in the school-nurse conversation, the maternal-history question asked of the grandmother, and the letter to the midwife. The specialty's own practice history is still short: the establishment of paediatric forensic modules, the registered-forensic-paediatrician role for sensitive examinations, the training that turned 'did the bones lie?' radiology arguments into structured injury-pattern medicine, and the current argument about whether health professionals' growing referral caution (defensive under-referral of neglect, anxiety-driven over-referral of bruising) is balanced by real-time feedback - because professionals who never learn what happened after their referral stop referring - [[public-health/determinants-inequalities]], [[clinical-skills/patient-safety]], [[paediatrics/acute-childhood-illness]].**
-:::
+Growth charts and developmental assessment, which help to recognise neglect, are covered in [[paediatrics/growth-development]]. Confidentiality and consent for young people, and exploitation in adolescence, are covered in [[paediatrics/adolescent-health]]. The legal and ethical basis of information sharing is discussed in [[medical-ethics-law/confidentiality]], and fractures in children in [[musculoskeletal/fractures]].
 
 ::: summary
-- Injury mismatch - mechanism, distribution, developmental plausibility - and any injury in a pre-mobile infant are the sentinel findings; the growth chart is neglect's witness.
-- A normal examination never excludes sexual abuse; exploitation often presents as 'frequent attender' or 'difficult adolescent' and is read from patterns, not findings.
-- Referral is a written document of observations and quotations, made without family consent when necessary, and is a duty - uncertainty belongs to MASH triage, not to individual conscience.
-- ACEs are dose-dependent risk factors for everything the next four chapters cover; resilience tracks one stable relationship, so services protect relationships.
-- Trauma-informed design is protection from iatrogenic harm: one examination when possible, exact words, the child asked before every sensitive procedure.
-- Thirty years of serious-case reviews repeat three failures: not seeing the child, not totting up, and not speaking between agencies - every local system should be able to show how it defeats each one.
+- Safeguarding is every clinician's responsibility: recognise, record, refer.
+- The four categories are physical, emotional and sexual abuse and neglect; exploitation, FGM, fabricated or induced illness and domestic abuse cut across them.
+- Injuries must fit the explanation and the child's development: "those who don't cruise rarely bruise". Bruising or fractures in non-mobile infants need assessment.
+- Concerning patterns include bruises on protected sites, patterned bruises, immersion burns, posterior rib and metaphyseal fractures, and subdural haemorrhage with retinal haemorrhages.
+- Investigate suspected physical abuse in young children with a skeletal survey, CT head (under 1 year), ophthalmology and blood tests for alternative causes.
+- In England, section 47 of the Children Act 1989 requires enquiries when significant harm is suspected; *Working Together 2023* sets out multi-agency arrangements.
+- FGM in under-18s must be reported to the police by the professional who discovers it.
+- Document precisely, do not interview children in detail, and share information to protect a child.
+- Neglect is recognised by the pattern over time; "was not brought" is a safeguarding signal.
 :::
 
 ## Exercises
 
-::: exercise Read the injury {level=1}
-Classify as low/suspicious/high concern and act: (a) 4-month-old, linear bruise on thigh, mother says 'my toddler brother bounces on the cot'; (b) 2-year-old, 3 cm forehead bruise after 'falling off the sofa'; (c) 18-month-old, symmetric oval bruises on the buttocks, grandmother applies 'medicated oil weekly'.
+::: exercise The four categories {level=1}
+Name the four categories of abuse and neglect in *Working Together* and give one example of each.
 ::: solution
-**Three-lesions-three-answers ([[#def-recognise]]): (a) suspicious-to-high - a bruise in a 4-month-old is a sentinel injury at any site, the brother's mechanism is implausible for a linear bruise and should be recorded as offered, and the same-day pathway applies - senior paediatric review, skeletal survey and safeguarding discussion regardless of how the family behaves. (b) low-concern-with-context - forehead bruising on a mobile toddler is the commonest accidental childhood injury; document the examination, the developmental stage and the story's consistency, and tot it up in the record so future attendances add to something. (c) high concern with cultural literacy - the symmetric oval marks fit the cupping or coining pattern; ask the specific question and examine for pattern marks elsewhere and for other injuries; if the practice is confirmed and there are no other concerns, the response is education, documentation and monitoring, not automatic separation - but if the distribution, the story or the growth chart say otherwise, the referral proceeds and the oil is not the explanation. The unifying lesson: location, distribution and plausibility are the physics; culture is context that changes the conversation's words, never the child's safety - [[paediatrics/acute-childhood-illness]], [[clinical-skills/physical-examination]].**
+Physical abuse (for example shaking a baby); emotional abuse (for example persistent belittling, or exposure to domestic abuse); sexual abuse (for example involving a child in producing sexual images); neglect (for example failing to obtain medical care or provide adequate food).
 :::
 :::
 
-::: exercise Write the referral {level=2}
-In the femoral-fracture case above, write the paragraph you send to MASH and the paragraph you send to the police officer at 11pm, and state the one thing neither should ever contain.
+::: exercise Bruises that worry {level=1}
+List four features of bruising in a child that should raise concern about abuse.
 ::: solution
-**Two-referrals-one-case ([[#def-law]]): the MASH referral states facts and concerns in separable sentences - '10-week-old male, admitted (date) with undisplaced shaft-of-femur fracture after reportedly falling from a changing mat onto carpet - a mechanism incompatible with this injury at this age in my professional opinion; no prior attendances; growth on 50-91st centiles; separate accounts from both parents differ on (specific detail); grandmother visiting from (area); concerns: possible inflicted injury; this baby's safety plan requires a full assessment'; what was observed, what was said verbatim, what is inconsistent, what is asked for - dated, signed, no adjectives doing the arguing. The police strategy document adds the clinical detail their investigation requires - injury dating windows, which imaging was done and when, interview sequencing under Achieving Best Evidence, what not to say to the family before the search or interview strategy is agreed, and the chain-of-evidence note that the parents' original words were recorded on (system) at (time). Neither document should ever contain the writer's certainty about guilt - 'the parents did this' or 'the parents are clearly innocent' - because both statements are unprovable from a fracture, both bias every subsequent professional, and both are quoted back at you in court or at the review when the answer turns out to be the live-in uncle. Write the child's vulnerability, not your verdict - [[paediatrics/acute-childhood-illness]], [[clinical-skills/records-handover]].**
+Any bruising in a child who is not independently mobile; bruises on protected areas (ears, neck, cheeks, torso, buttocks, genitals); bruises in clusters or with a pattern (fingertips, hand, implement); and bruises inconsistent with the explanation or the child's development. Petechiae around the eyes or neck are also concerning.
 :::
 :::
 
-::: exercise Manage disclosure-adjacent pressure {level=2}
-A 16-year-old on your child-protection plan discloses to the student nurse that her father 'goes through her phone and won't let her go to college' and begs her 'not to tell anyone because he'll stop me seeing you'. She is not describing physical harm. Advise the student nurse and the record.
+::: exercise The duty to report FGM {level=1}
+A 16-year-old tells her nurse that she had FGM performed at age 8. What must the nurse do?
 ::: solution
-**The-confidentiality-request-inside-a-protection-plan ([[#def-law]], [[#def-impact]]): the student nurse's position is honest and limited - she tells her supervisor and the named clinician that same day (a protection plan is a standing information-sharing agreement; 'a concern you cannot keep is not yours to keep'), and the young person is told that clearly before anything is done, with what happens next explained: this is controlling behaviour, emotionally abusive by definition, and relevant to a plan built to notice exactly this gradual-control pattern - not a 'family argument'. The response is graduated, not automatic escalation: the social worker and young-person discussion, a review of what the plan covers now, a school and college safety route, and the conversation with the 16-year-old about what she wants (young people frequently want the control to stop without wanting the family destroyed - the plan has to hold both). The record: verbatim disclosure, date, who was present, the exact confidentiality discussion, and the actions agreed with her - written so she could read it next year and recognise her own words respected. The teaching point for the student: a promise you cannot keep is the one harm you can be certain of, and telling her the limit with respect in minute one is both the ethical act and the one that keeps her speaking - [[medical-ethics-law/confidentiality]], [[psychiatry/psychiatric-assessment]].**
+Under the mandatory reporting duty in England and Wales, the nurse must report the case to the police personally, normally by calling 101, ideally before the end of the next working day, because the girl is under 18 and has disclosed FGM. The nurse should also follow local safeguarding procedures, consider any younger sisters, offer health care and support, and explain to the girl what will happen.
 :::
 :::
 
-::: exercise Audit your unit's safeguarding system {level=3}
-Design the quarterly safeguarding audit for a district general paediatric department: five indicators with numerators and denominators, the two you expect to fail, and the governance actions each failure should trigger.
+::: exercise A missed appointment {level=2}
+A 5-year-old with type 1 diabetes has missed three clinic appointments. The clinic's usual policy is to discharge after two missed appointments. What should happen instead?
 ::: solution
-**Safeguarding-audit ([[#def-law]], [[clinical-skills/patient-safety]]): the five indicators - (1) proportion of under-1s and under-5s admitted with bruising or sentinel injuries who had a documented safeguarding assessment within 24 hours (denominator: all such admissions); (2) percentage of children on child-protection plans admitted to your wards whose key worker was contacted within 24 hours (the 'did anyone tell' indicator, historically the most embarrassing); (3) looked-after children: percentage with a personal education-and-health plan and a health assessment in date (the statutory-requirement number); (4) timeliness: median days from referral to strategy discussion for section-47 cases started by your department; (5) the feedback loop: percentage of your referrals whose outcomes were fed back to the referrer within 30 days. Expected failures: number 2 and number 5 - wards routinely admit a child on a plan and nobody calls the social worker by name, and clinicians who refer into a black hole stop referring, which the literature calls 'referral fatigue' and which is a system failure masquerading as cynicism. The actions: indicator 2 drives a 'hospital-to-plan' protocol - the admission clerking asks the question and phones the worker as a midwifery-style checkable step; indicator 5 requires a named MASH liaison and a quarterly 'outcomes received' report to the department with anonymised case lessons attached, because the point of the audit is not compliance theatre but the single behaviour that thirty years of reviews keep naming: professionals totting up and talking to each other before the next review writes it. Add the equity lens the audit can hide - who gets referred and who gets labelled 'challenging family' at your front desk, and the rates by ethnicity and deprivation compared - because the same under-referral pattern that exploited children in Rotherham lived in services that had stopped believing certain children were being harmed - [[public-health/health-systems-economics]], [[public-health/determinants-inequalities]].**
+Children do not bring themselves to appointments, so the right description is "was not brought". For a child with a serious condition, missed appointments may mean that medical needs are not being met, which can be a sign of neglect. The team should contact the family to find out why, check with the GP and school, review recent HbA1c and admissions, and offer flexible appointments. If concerns persist, discuss with the safeguarding lead and consider a referral to children's social care. The child should not simply be discharged.
+:::
+:::
+
+::: exercise Bruise or birthmark? {level=2}
+A 6-month-old girl of Bangladeshi heritage has a blue-grey area over her lower back and buttocks. The health visitor is worried about bruising. How would you distinguish congenital dermal melanocytosis from a bruise?
+::: solution
+Congenital dermal melanocytosis is present from birth or the first weeks, is common in babies with darker skin, is usually blue-grey with ill-defined edges over the lower back and buttocks, is not tender, and does not change colour over days. A bruise is often tender, may be swollen, and changes colour as it heals over days. Checking the newborn and health visitor records, and reviewing the area again after a few days, helps. Documentation of birthmarks at the newborn examination prevents confusion later.
+:::
+:::
+
+::: exercise Timing a skeletal survey {level=2 check="11"}
+A follow-up skeletal survey is recommended 11–14 days after the first. What is the minimum number of days after the first survey at which it should be done?
+::: solution
+**11 days.** By then healing (periosteal reaction and callus) makes fractures that were invisible on the first survey, such as rib and metaphyseal fractures, more likely to be seen.
+:::
+:::
+
+::: exercise A disclosure in clinic {level=3}
+During an asthma review, an 11-year-old boy says that his mother's partner hits him with a belt and that he must not tell anyone. He asks you to promise not to tell. Explain how you would respond, step by step.
+::: solution
+**Listen.** Stay calm, let him speak, and do not ask leading questions or press for details.
+
+**Reassure.** Tell him that he was right to tell you and that it is not his fault.
+
+**Be honest.** Do not promise to keep it secret. Explain that you need to tell people whose job is to keep him safe, and what will happen next as far as you can.
+
+**Check immediate safety.** Ask whether he is safe to go home today. If he is in immediate danger, contact the police.
+
+**Examine** for injuries, with his consent and a chaperone, and document on a body map.
+
+**Record** what he said in his own words, with the date and time.
+
+**Refer** to children's social care the same day and discuss with the safeguarding lead. Do not discuss the allegation with the mother's partner, and take advice before discussing it with the mother, to avoid putting him at risk or interfering with an investigation.
+:::
+:::
+
+::: exercise A perplexing presentation {level=3}
+A 7-year-old has been seen by six specialists in two years for reported seizures, food intolerances and fatigue. No investigation has found a cause. Her mother requests a wheelchair and a gastrostomy. The child attends school rarely. Discuss how the team should approach this.
+::: solution
+**Recognise the pattern.** Symptoms that do not fit recognised conditions, extensive investigation without findings, escalating requests for interventions and harm to the child (lost schooling, restricted activity, risk from invasive procedures) fit the RCPCH description of a **perplexing presentation**, which may include fabricated or induced illness.
+
+**Coordinate care.** Appoint a single lead consultant. Gather all records from every specialist into one chronology. Hold a professionals' meeting with the GP and school.
+
+**Establish the child's actual health.** Use objective evidence: for example video EEG for the reported seizures, observed eating in hospital or school, and reports from school about her activity. Avoid further investigations and procedures that are not clinically indicated.
+
+**Communicate.** Talk openly with the parents about what has been found and what has not, with a plan to rehabilitate the child (school return, normal activity).
+
+**Safeguarding.** If the child is being harmed, or if there are signs of fabrication or induction of illness, discuss with the named doctor and refer to children's social care. The focus throughout is the child's health and wellbeing, not proving the carer's motive.
 :::
 :::
