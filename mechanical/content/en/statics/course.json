@@ -102,8 +102,8 @@
   "history": [
     {
       "year": 1586,
-      "title": "Stevin, the parallelogram of forces, and a chain over a prism",
-      "detail": "Simon Stevin, an engineer of the Dutch water-works, published *De Beghinselen des Waterwichts* at Leiden in 1586 and the *Staticorum Elementorum* two years later among his *Elements of Architecture*, and in them gave the first correct statement of the composition of forces — the parallelogram law, proved by a thought experiment with a bead on a wire — together with the laws of the inclined plane and the lever. His proof of the inclined plane is the most elegant thing in Renaissance mechanics: a smooth chain draped over a triangular prism, which cannot move without violating the impossibility of perpetual motion, from which the sine law of the plane follows in four lines. **Two thousand years earlier Archimedes of Syracuse had stated the principle of the lever, discovered the centre of gravity and computed the areas and centroids of parabolic segments by a method that anticipated the integral calculus; Stevin's achievement is not that he went further than Syracuse but that the intervening two millennia went so little further.**",
+      "title": "Stevin, the triangle of forces, and a chain over a prism",
+      "detail": "Simon Stevin, a Flemish mathematician and engineer working in the Dutch Republic, published *De Beghinselen der Weeghconst* (statics) and *De Beghinselen des Waterwichts* (hydrostatics) at Leiden in 1586. In them he stated the law of the inclined plane, used the triangle of forces to compose and resolve forces, and computed the force of water on a submerged wall. His proof of the inclined plane is the most elegant thing in Renaissance mechanics: a closed chain draped over a triangular prism cannot set itself moving, since that would be perpetual motion, and the law of the plane follows in a few lines. **Two thousand years earlier Archimedes of Syracuse had proved the law of the lever and found the centres of gravity of plane figures; Stevin was the first to go substantially beyond him in statics.**",
       "people": [
         "Simon Stevin",
         "Archimedes of Syracuse"
@@ -112,7 +112,7 @@
     {
       "year": 1687,
       "title": "The Principia, and Varignon's project",
-      "detail": "Newton's *Principia* appeared in 1687 and with it the three laws whose first gives statics its whole content. In the same year Pierre Varignon published the *Projet d'une Mecanique*, in which he replaced the geometric reasoning of Stevin and Roberval with the composition of rectangular components, stated the theorem that the moment of a force about a point equals the sum of the moments of its components, and announced an intention to write the whole of mechanics as algebra. He died before finishing it, and the *Projet* was edited into the *Elements de mecanique* by his brother in 1725. **Every free-body diagram drawn since is Varignon's idea, and so is every equation in this course: the theorem of moments is not a theorem about forces but a theorem about the distributive law of the cross product, and recognising that is most of what a first course in statics has to teach.**",
+      "detail": "Newton's *Principia* appeared in 1687, and its corollaries on the composition of motions and forces gave the parallelogram law a dynamical foundation. In the same year Pierre Varignon published his *Projet d'une nouvelle mécanique*, which built statics on the composition of forces and stated the theorem that the moment of a resultant about a point equals the sum of the moments of its components. His fuller treatise, the *Nouvelle mécanique ou statique*, was published posthumously in 1725. **The theorem of moments is, in vector language, the distributive law of the cross product, and it is used in almost every moment calculation in this course.**",
       "people": [
         "Isaac Newton",
         "Pierre Varignon"
@@ -120,8 +120,8 @@
     },
     {
       "year": 1744,
-      "title": "Euler, and the analytic theory of frames",
-      "detail": "Leonhard Euler, in the *Methodus inveniendi lineas curvas maximi minimive proprietate gaudentes*, published at Lausanne in 1744 and the *De curvis elasticis* that accompanied it, solved the problem of the column and founded the elastic curve; in the same decade he wrote down the equilibrium equations for a flexible cord, a cable and an arch, and was the first to state the problem of the redundant structure - a problem his contemporaries could not solve and which occupied the next hundred years. His 1773 paper on the strength of columns introduced the secant formula that still governs the design of struts. **Euler's column is the first example in engineering of a structure that fails at a load far below the material's crushing strength and for a reason that has nothing to do with the material, and the two centuries of struts, webs, flanges, thin shells and aircraft panels that followed are the working out of the fact that a structure's weakness is usually geometric.**",
+      "title": "Euler, the elastic column and the indeterminate table",
+      "detail": "Leonhard Euler's *Methodus inveniendi lineas curvas maximi minimive proprietate gaudentes* (Lausanne and Geneva, 1744) included an appendix, *De curvis elasticis*, written at Daniel Bernoulli's suggestion, which classified the shapes of the elastic curve and gave the critical load of a column; he returned to columns in his memoir *Sur la force des colonnes* of 1757. In the 1770s he took up the problem of a four-legged table resting on a rigid floor and showed that statics alone cannot divide the weight among the legs — an early explicit recognition of statical indeterminacy. **Euler's column is the first example in engineering of a structure that fails at a load far below the material's crushing strength for a reason that has nothing to do with the material: a structure's weakness is often geometric.**",
       "people": [
         "Leonhard Euler",
         "Daniel Bernoulli"
@@ -130,7 +130,7 @@
     {
       "year": 1785,
       "title": "Coulomb's friction",
-      "detail": "Charles-Augustin de Coulomb read three memoirs to the Academie des Sciences between 1781 and 1785 in which he established the empirical laws of dry friction — that the limiting friction is proportional to the normal load, independent of the apparent area of contact, and dependent on the sliding speed in a way he measured but did not explain. The friction angle, the coefficient, the distinction between static and kinetic friction, and the theory of the wedge, the screw and the retaining wall are all his, and engineers use them unchanged. **That friction is independent of apparent area is a statement about asperities, and it took until the 1950s for Bowden and Tabor to explain it by the real area of contact being proportional to load; that Coulomb measured it with a beam balance and a block of wood on a board and got numbers engineers still quote is a monument to the man's care.**",
+      "detail": "Guillaume Amontons had reported to the Académie des Sciences in 1699 that friction is proportional to the normal load and independent of the apparent area of contact. Charles-Augustin de Coulomb's *Théorie des machines simples*, which won the Académie's prize of 1781 and was published in 1785, tested these laws over a wide range of materials, loads, contact times and speeds, distinguished static from kinetic friction, and applied the results to the friction of ropes and machines; his earlier memoir of 1773 had already applied friction to the theory of retaining walls. **That friction is independent of apparent area is a statement about asperities, and it was not until the work of Bowden and Tabor around 1950 that it was explained by the real area of contact being proportional to the load.**",
       "people": [
         "Charles-Augustin de Coulomb",
         "Frank Philip Bowden",
@@ -138,18 +138,18 @@
       ]
     },
     {
-      "year": 1805,
+      "year": 1808,
       "title": "The capstan formula",
-      "detail": "Johann August Eytelwein, a Prussian hydraulic engineer, published in 1805 in his *Handbuch der Mechanik* the exponential relation between the tensions at the two ends of a rope wrapped on a capstan, which Leonhard Euler had obtained in the 1760s and which is still called the Euler-Eytelwein formula in German engineering. **It is the most counter-intuitive result in statics — that the holding force on a mooring line wrapped twice round a bollard is smaller than the load by two orders of magnitude for a couple of turns of hemp on iron — and it is why one sailor can hold a ship, why a belt drive can be light, and why a capstan must never be eased under load, because the ratio collapses the moment the rope begins to slip and the whole load comes back.**",
+      "detail": "Leonhard Euler derived the exponential relation between the tensions at the two ends of a rope wrapped round a post in a memoir written in 1762 and printed in Berlin in 1769, and Johann Albert Eytelwein, a Prussian hydraulic and building engineer, presented it for engineers in his *Handbuch der Statik fester Körper* (1808); it is still called the Euler–Eytelwein formula in German engineering. **It is the most counter-intuitive result in statics — with a friction coefficient of 0.3, two turns round a bollard multiply the holding force more than fortyfold — and it is why one sailor can hold a ship, why a belt drive can be light, and why a rope must not be allowed to slip round a capstan under load, because the holding power falls as soon as it slides.**",
       "people": [
-        "Johann August Eytelwein",
+        "Johann Albert Eytelwein",
         "Leonhard Euler"
       ]
     },
     {
-      "year": 1863,
+      "year": 1862,
       "title": "Ritter's method of sections",
-      "detail": "August Ritter, a Saxon professor of engineering, published in 1863 the method of sections, in which a truss is cut by a straight line and the forces in the cut members follow from the equilibrium of the whole portion on one side. It reduces the analysis of a determinate truss from one joint at a time to three equations and a straightedge, and it made the design of a pin-jointed railway bridge a matter of an afternoon rather than a week. **The null-point construction for the worst position of a moving load on a truss - still the fastest way to see where a girder is most heavily stressed, and standard equipment in every bridge office in Europe for eighty years - is the work of a different and younger Ritter: Wilhelm Ritter, Culmann's assistant at Zurich and afterwards the first professor of structural engineering at the ETH. Confusing August Ritter of Dresden with Wilhelm Ritter of Zurich is a rite of passage in every history of structures course, and this atlas commits it in its own sources often enough to be worth naming.**",
+      "detail": "August Ritter, then teaching at the polytechnic in Hanover and later professor at Aachen, published the method of sections in his *Elementare Theorie und Berechnung eiserner Dach- und Brücken-Constructionen* (1862): a truss is cut through three members and the force in each follows from a single moment equation about the intersection of the other two. It reduces the analysis of a determinate truss from a march through the joints to a few independent equations, and lets the force in any member be found directly. **The \"Ritter point\" — the moment centre at the intersection of two cut members — still carries his name.**",
       "people": [
         "August Ritter"
       ]
@@ -157,10 +157,11 @@
     {
       "year": 1866,
       "title": "Culmann and graphical statics",
-      "detail": "Karl Culmann published *Die Graphische Statik* at Zurich in 1866, and for the next eighty years it was how bridges, roofs and cranes were designed. The funicular polygon, the force polygon, Maxwell's reciprocal diagram and Cremona's construction are all children of that book, and Culmann's Zurich school trained the generation that built the Swiss railways and, at one remove through his assistant Wilhelm Ritter, the generation of Robert Maillart. **Graphical statics was not a primitive numerical method but a genuine geometric theory: the funicular polygon is a bending-moment diagram, the reciprocal figure is a statement of static duality, and Maxwell's use of the reciprocal diagram in 1864 to find the forces in a pin-jointed space frame is the first matrix formulation of a structure's behaviour - and the reciprocal theorem it rests on is nothing other than the symmetry of the flexibility matrix, the same symmetry every modern stiffness program inherits. It was displaced not by being wrong but by the electronic calculator, and its disappearance from the curriculum is one of the more complete losses in the history of engineering education.**",
+      "detail": "Karl Culmann published *Die Graphische Statik* at Zurich in 1866, and for decades afterwards graphical methods were the standard way of analysing bridges, roofs and cranes. The funicular and force polygons are developed there; James Clerk Maxwell's reciprocal figures of 1864, which give the forces in a plane pin-jointed truss as a single diagram, were systematised by Luigi Cremona, and Otto Mohr and Culmann's successor Wilhelm Ritter extended the graphical school. **Graphical statics was not a primitive numerical method but a genuine geometric theory: the funicular polygon is a bending-moment diagram and the reciprocal figure expresses a duality between frame and force diagram. It was displaced not by being wrong but by the calculating machine and then the computer.**",
       "people": [
         "Karl Culmann",
         "James Clerk Maxwell",
+        "Luigi Cremona",
         "Otto Mohr",
         "Wilhelm Ritter"
       ]
@@ -194,7 +195,7 @@
     {
       "author": "Karl Culmann",
       "title": "Die Graphische Statik",
-      "publisher": "Meyer and Zorn, Zurich",
+      "publisher": "Meyer & Zeller, Zurich",
       "year": 1866
     },
     {

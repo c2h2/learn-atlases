@@ -1,9 +1,9 @@
-Internal flow is the one branch of fluid mechanics in which the answer is **a chart and not a formula**, and the reason is turbulence: the friction factor of a rough pipe at high Reynolds number depends on a surface whose asperities are random in height and spacing, and no theory has been produced that computes it from the profile. What exists instead is a **correlation** — the Colebrook equation of **1939**, fitted to data by **Nikuradse** in **1933** on artificially roughened pipes and extended to commercial steel by **Moody** in **1944** — and the whole of practical pipe-flow design is the disciplined use of that correlation together with an honest allowance for the fittings, the age and the roughness of the actual pipe.
+Internal flow is the one branch of fluid mechanics in which the answer is **a chart and not a formula**, and the reason is turbulence: the friction factor of a rough pipe at high Reynolds number depends on a surface whose asperities are random in height and spacing, and no theory has been produced that computes it from the profile. What exists instead is a **correlation** — the Colebrook equation of **1939**, which blends **Nikuradse**'s **1933** measurements on sand-roughened pipes with Colebrook and White's tests on commercial pipes, and which **Moody** put into chart form in **1944** — and the whole of practical pipe-flow design is the disciplined use of that correlation together with an honest allowance for the fittings, the age and the roughness of the actual pipe.
 
-The subject is worth its space because **more fluid power is lost in pipes than in any other single way**: the pump energy consumed by friction in the world's water, oil and district-heating networks is of the order of one per cent of global electricity, and the difference between a good and a mediocre hydraulic design is a factor of two in that number.
+The subject is worth its space because **pumping is one of the largest single uses of electricity in industry and building services, and much of that energy ends up as friction in pipes and fittings** — so the difference between a good and a mediocre hydraulic design shows up directly in the running cost.
 
 ::: warning Seven pipe-flow errors that double a pump's energy bill
-**Confusing the Darcy and Fanning friction factors.** $f_{\mathrm{Darcy}} = 4 f_{\mathrm{Fanning}}$, and both are in current use — Fanning in chemical engineering and in most CFD post-processors, Darcy in civil and mechanical. **A factor of four in the head loss and a factor of four in the pump's power**, and the only defence is to write the definition every time: $h_f = f L V^2 / \left( 2 g D \right)$ is Darcy, $\tau_w = f \rho V^2 / 2$ is Fanning. **The check is laminar flow: $f_{\mathrm{Darcy}} = 64 / \mathrm{Re}$, $f_{\mathrm{Fanning}} = 16 / \mathrm{Re}$**, and any correlation you are handed can be identified in one line. **Using the hydraulic diameter outside the turbulent regime.** $D_h = 4 A / P$ collapses turbulent non-circular data to within a few per cent, and is **wrong in laminar flow** — a circular duct gives $f \mathrm{Re} = 64$, a parallel slot gives $96$, an equilateral triangle $60$, a square $57$, and a rectangular duct varies from $53$ at an aspect ratio of $20$ to $60$ at $1$. **The reason a rectangular duct's laminar pressure drop computed with $D_h$ is out by up to $20\ \%$ is that the secondary-flow structure the hydraulic diameter is meant to represent does not exist without turbulence.** **Adding minor-loss coefficients computed at different velocities.** A tee's branch $K$ refers to the **branch** velocity head and its run $K$ to the **run** velocity head; a reducing bend's $K$ refers to the **lower** velocity; and a valve's $K$ refers to its own bore, which for a reduced-trim globe valve is not the pipe bore. **The sum $\sum K$ is meaningless unless every term is referred to one stated velocity**, and the reason a manifold's header is sized on the run velocity and every branch's $K$ is then multiplied by $\left( V_{\mathrm{branch}} / V_{\mathrm{run}} \right)^2$ is that the alternative is a $50\ \%$ error in the branch loss. **Using the fully-rough friction factor at a transitional Reynolds number.** The fully-rough limit $f = \left[ 2 \log_{10} \left( 3.7 D / k_s \right) \right]^{- 2}$ is the asymptote of the Colebrook equation as $\mathrm{Re} \to \infty$, and at $\mathrm{Re} = 10^5$ it understates $f$ by $20$ to $40\ \%$ for a typical commercial-steel roughness. **The reason a pipeline designed on the fully-rough asymptote runs hot for its first twenty years and only reaches its design condition when it is old** is that the asymptote is a statement about **age**, not about the pipe as built. **Forgetting the entrance length.** The hydrodynamic entrance length for turbulent flow is $L_e \approx 10 D$ to $60 D$ depending on the inlet condition and on how close to fully developed one requires the profile to be, and the average friction factor over the entrance region is **up to $50\ \%$ above** the fully developed value. **A $10D$ entrance in a $100D$ run is a $5\ \%$ error in the total loss**, and the reason a flow-meter's straight-run requirement of $10D$ upstream is a metrology requirement and not a hydraulics one is that the **profile**, not the loss, is what the meter needs. **Applying the Colebrook equation to a non-Newtonian or a multiphase fluid.** The correlation is for a single-phase Newtonian fluid in a pipe whose roughness is small compared with the viscous sublayer or large compared with it, and for neither of the two cases that occur most often in practice — **a drag-reducing polymer solution, for which the friction can be $70\ \%$ below the water value even in a rough pipe**, and **a slurry above the deposit velocity, for which it can be $50\ \%$ above the water value because of the additional solid-phase collision stress**. **The reason a tailings line's designer uses the Durand–Condolios or the Wasp method and never the Moody chart is that the chart's mechanism is absent and a different one is present.** **Sizing a pump for the design flow at the design head and no other point.** A pump on a system curve operates where the two curves cross, and if the system has a large static head the crossing is robust; if it has little, the operating point moves a long way for a small change in roughness or demand. **The reason a pumping station is specified with a verified operating range and not a single duty point is that the duty point is a prediction and the range is a fact**, and the reason the motor must be sized for the **end** of the curve and not the duty point is that a pump whose impeller is trimmed to the duty point will run off the end when the pipe is new and smooth.
+**Confusing the Darcy and Fanning friction factors.** $f_{\mathrm{Darcy}} = 4 f_{\mathrm{Fanning}}$, and both are in current use — Fanning in chemical engineering and in most CFD post-processors, Darcy in civil and mechanical. **A factor of four in the head loss and a factor of four in the pump's power**, and the only defence is to write the definition every time: $h_f = f L V^2 / \left( 2 g D \right)$ is Darcy, $\tau_w = f \rho V^2 / 2$ is Fanning. **The check is laminar flow: $f_{\mathrm{Darcy}} = 64 / \mathrm{Re}$, $f_{\mathrm{Fanning}} = 16 / \mathrm{Re}$**, and any correlation you are handed can be identified in one line. **Using the hydraulic diameter outside the turbulent regime.** $D_h = 4 A / P$ collapses turbulent non-circular data to within a few per cent, and is **wrong in laminar flow** — based on $D_h$, a circular duct gives $f \mathrm{Re} = 64$, a wide parallel slot $96$, an equilateral triangle $53$, a square $57$, and a rectangular duct rises from $57$ at an aspect ratio of $1$ toward $96$ as the aspect ratio grows (about $82$ at $8 : 1$). **Using $D_h$ with $f = 64 / \mathrm{Re}$ for a laminar slot therefore underestimates the pressure drop by a third.** **Adding minor-loss coefficients computed at different velocities.** A tee's branch $K$ refers to the **branch** velocity head and its run $K$ to the **run** velocity head; a reducing bend's $K$ refers to the **lower** velocity; and a valve's $K$ refers to its own bore, which for a reduced-trim globe valve is not the pipe bore. **The sum $\sum K$ is meaningless unless every term is referred to one stated velocity**, and converting a branch $K$ to the run velocity head means multiplying it by $\left( V_{\mathrm{branch}} / V_{\mathrm{run}} \right)^2$. **Using the fully-rough friction factor at a transitional Reynolds number.** The fully-rough limit $f = \left[ 2 \log_{10} \left( 3.7 D / k_s \right) \right]^{- 2}$ is the asymptote of the Colebrook equation as $\mathrm{Re} \to \infty$, and at $\mathrm{Re} = 10^5$ it understates $f$ by $20$ to $40\ \%$ for a typical commercial-steel roughness. Designing on the asymptote is a deliberate conservatism in some codes, but it should be a stated choice, not an accident. **Forgetting the entrance length.** The hydrodynamic entrance length for turbulent flow is $L_e \approx 10 D$ to $60 D$ depending on the inlet condition and on how close to fully developed one requires the profile to be, and the average friction factor over the entrance region is **up to $50\ \%$ above** the fully developed value. **A $10D$ entrance in a $100D$ run is a $5\ \%$ error in the total loss**, and the reason a flow-meter's straight-run requirement of $10D$ upstream is a metrology requirement and not a hydraulics one is that the **profile**, not the loss, is what the meter needs. **Applying the Colebrook equation to a non-Newtonian or a multiphase fluid.** The correlation is for a single-phase Newtonian fluid in a pipe whose roughness is small compared with the viscous sublayer or large compared with it, and for neither of the two cases that occur most often in practice — **a drag-reducing polymer solution, for which the friction can be $70\ \%$ below the water value even in a rough pipe**, and **a slurry above the deposit velocity, for which it can be $50\ \%$ above the water value because of the additional solid-phase collision stress**. **A tailings line's designer therefore uses slurry methods such as Durand–Condolios or Wasp, not the Moody chart.** **Sizing a pump for the design flow at the design head and no other point.** A pump on a system curve operates where the two curves cross, and if the system has a large static head the crossing is robust; if it has little, the operating point moves a long way for a small change in roughness or demand. **A pumping station should therefore be specified with an operating range, not a single duty point**, and the motor sized for the highest flow it can reach — typically when the pipe is new and smooth and the system resistance lowest — not for the duty point.
 :::
 
 ## The friction factor
@@ -18,12 +18,12 @@ $$
 **The three properties that make laminar flow unlike turbulent flow.**
 $$
 \begin{array}{l l}
-h_f \propto V^1 & \text{not } V^2 \text{ — a laminar system curve is a straight line on log-log} \\
+h_f \propto V^1 & \text{not } V^2 \text{ — a laminar system curve is a straight line through the origin} \\
 h_f \propto \mu^1 & \text{viscosity controls, so heating a heavy oil line is an energy trade} \\
-h_f \propto \nu^0 \text{ at fixed } Q & \text{density drops out; the pressure drop is independent of density}
+\Delta p \propto \rho^0 \text{ at fixed } Q & \text{density drops out; the pressure drop depends only on } \mu
 \end{array}
 $$
-**The number that makes the laminar limit a diagnostic.** For a fixed flow rate, $\Delta p = 128 \mu L Q / \left( \pi D^4 \right)$ contains **no density and no velocity** — so a laminar flow's pressure drop is the same whether the fluid is water or glycerin at the same viscosity, and the reason a **capillary viscometer** works is that reading $\Delta p$ at a known $Q$ gives $\mu$ directly with no calibration against a reference fluid.
+**The number that makes the laminar limit a diagnostic.** For a fixed flow rate, $\Delta p = 128 \mu L Q / \left( \pi D^4 \right)$ contains **no density and no velocity** — so two fluids of the same viscosity but different density give the same pressure drop, and a **capillary viscometer** works because reading $\Delta p$ at a known $Q$ gives $\mu$ directly from the geometry.
 **The entrance region.** The entrance length is $L_e \approx 0.05\, \mathrm{Re}\, D$; at $\mathrm{Re} = 2{,}000$ and $D = 25\ \mathrm{mm}$ this is $2.5\ \mathrm{m}$, a hundred diameters. **The additional "entrance" pressure drop over that length is roughly the extra kinetic-energy flux of the developing profile and is of order one velocity head**, and the reason a laminar-flow device's pressure budget carries an extra $\tfrac{1}{2} \rho V^2$ per inlet is this and not a fudge.
 :::
 
@@ -66,7 +66,7 @@ f = \frac{0.25}{\left[ \log_{10} \left( \frac{k_s / D}{3.7} + \frac{5.74}{\mathr
 \frac{1}{\sqrt{f}} = - 1.8 \log_{10} \left[ \left( \frac{k_s / D}{3.7} \right)^{1.11} + \frac{6.9}{\mathrm{Re}} \right]
 \quad \text{(Haaland, } \pm 1.5\ \% \text{)}
 $$
-**The number that makes the roughness the design variable and not the Reynolds number.** For commercial steel $k_s = 0.046\ \mathrm{mm}$; in a $100\ \mathrm{mm}$ pipe $k_s / D = 4.6 \times 10^{- 4}$ and the fully-rough limit is $f = 0.0164$. **At $\mathrm{Re} = 10^5$ the Colebrook value is $0.0202$ — $23\ \%$ above the asymptote; at $\mathrm{Re} = 10^7$ it is $0.0164$, on the asymptote.** In a $1{,}000\ \mathrm{mm}$ pipe the same material gives $k_s / D = 4.6 \times 10^{- 5}$, an asymptote of $f = 0.0104$ and a Colebrook value at $\mathrm{Re} = 10^7$ of $0.0107$. **The reason a large-bore pipeline's friction factor is nearly independent of flow rate is that it is hydraulically near-rough, and the reason a small-bore building services pipe's is not is that it is transitional — which is why the same "assume $f = 0.02$" rule of thumb is right in one and wrong by a factor of two in the other.**
+**The number that makes the roughness the design variable and not the Reynolds number.** For commercial steel $k_s = 0.046\ \mathrm{mm}$; in a $100\ \mathrm{mm}$ pipe $k_s / D = 4.6 \times 10^{- 4}$ and the fully-rough limit is $f = 0.0164$. **At $\mathrm{Re} = 10^5$ the Colebrook value is $0.0202$ — $23\ \%$ above the asymptote; at $\mathrm{Re} = 10^7$ it is $0.0164$, on the asymptote.** In a $1{,}000\ \mathrm{mm}$ pipe the same material gives $k_s / D = 4.6 \times 10^{- 5}$, an asymptote of $f = 0.0104$ and a Colebrook value at $\mathrm{Re} = 10^7$ of $0.0107$. **A rule of thumb such as "assume $f = 0.02$" is therefore close for a $100\ \mathrm{mm}$ steel pipe at moderate Reynolds number and nearly double the true value ($0.0107$) for a $1{,}000\ \mathrm{mm}$ main at $\mathrm{Re} = 10^7$.**
 :::
 
 ::: widget plot
@@ -74,7 +74,7 @@ f: 0.25/pow(log10(5.74/pow(x,0.9)),2); 0.25/pow(log10(0.0001+5.74/pow(x,0.9)),2)
 x: 4000, 100000000
 y: 0.005, 0.075
 labels: smooth pipe; ks/D = 0.00037; ks/D = 0.0037
-caption: The turbulent part of the **Moody chart** — Darcy friction factor against Reynolds number on log-log axes, from the Swamee–Jain explicit form of the Colebrook equation. **The smooth-pipe curve falls without limit** (Blasius' $\mathrm{Re}^{-0.25}$ is the approximation to it); **each roughness curve falls and then flattens to a horizontal asymptote** $f = \left[ 2 \log_{10} \left( 3.7 D / k_s \right) \right]^{-2}$, above which the friction factor is independent of flow rate. **The number that makes the flattening the whole point of pipeline design:** for $k_s / D = 0.0037$ the asymptote is $f = 0.0278$ and it is reached by $\mathrm{Re} \approx 10^7$; for the smooth pipe $f$ at $\mathrm{Re} = 10^8$ is still $0.0060$ and still falling. **A rough pipe at high Reynolds number cannot be improved by running slower — the head loss is exactly proportional to $V^2$ and no flow reduction changes the friction factor — whereas a smooth pipe's friction factor falls as it is slowed, so a variable-speed retrofit saves more than the cube law predicts.**
+caption: The turbulent part of the **Moody chart** — Darcy friction factor against Reynolds number on log-log axes, from the Swamee–Jain explicit form of the Colebrook equation. **The smooth-pipe curve falls without limit** (Blasius' $\mathrm{Re}^{-0.25}$ is the approximation to it); **each roughness curve falls and then flattens to a horizontal asymptote** $f = \left[ 2 \log_{10} \left( 3.7 D / k_s \right) \right]^{-2}$, above which the friction factor is independent of flow rate. **The number that makes the flattening the whole point of pipeline design:** for $k_s / D = 0.0037$ the asymptote is $f = 0.0278$ and it is reached by $\mathrm{Re} \approx 10^7$; for the smooth pipe $f$ at $\mathrm{Re} = 10^8$ is still $0.0060$ and still falling. **In the fully rough regime the head loss is exactly proportional to $V^2$, because the friction factor no longer changes with flow; a smooth pipe's friction factor rises as it is slowed ($h_f \propto V^{1.75}$ in the Blasius range), so a variable-speed retrofit on a friction-dominated smooth-pipe system saves slightly less than the cube law predicts.**
 :::
 
 ## Losses, systems and networks
@@ -94,7 +94,7 @@ $$
 \text{Sharp-edged exit} & K = 1.00 & \text{the whole exit kinetic head} \\
 \text{90}^{\circ} \text{ plain bend, } R / D = 1 & K = 0.20 & \\
 \text{90}^{\circ} \text{ flanged elbow, long radius} & K = 0.20 & \\
-\text{45}^{\circ} \text{ w} \check{\text{e}} \text{e, standard} & K = 0.30 & \\
+\text{45}^{\circ} \text{ elbow, standard} & K = 0.30 & \\
 \text{Tee, run} & K = 0.40 & \\
 \text{Tee, branch} & K = 1.80 & \text{referred to the branch velocity} \\
 \text{Globe valve, full open} & K = 10 & \text{but } 100 \text{ near the seat} \\
@@ -104,15 +104,15 @@ $$
 \text{90}^{\circ} \text{ mitre bend} & K = 1.1 &
 \end{array}
 $$
-**The number that makes the table a design tool and not a list.** For a $50\ \mathrm{m}$ run of $100\ \mathrm{mm}$ pipe with two $90^\circ$ elbows, a tee branch, a globe valve and a sharp exit:
+**The number that makes the table a design tool and not a list.** For a $50\ \mathrm{m}$ run of $100\ \mathrm{mm}$ pipe with two $90^\circ$ elbows, a tee branch, a globe valve, a sharp exit and a square entrance:
 $$
 \sum K = 2 \times 0.20 + 1.80 + 10 + 1.0 + 0.5 = 13.7
 \qquad
 f L / D = 0.0182 \times 500 = 9.1
 $$
-**the fittings are $60\ \%$ of the total loss**, and the reason a plant's "pipework losses" line in an energy balance is not a rounding item is that in short, fitting-rich runs — which is most of a building, a ship's engine room and a process skid — **the fittings dominate and the pipe is the minor loss**.
-**The equivalent length.** $L_e / D = K / f$, so a globe valve at $f = 0.018$ is $556$ diameters of pipe — **$56\ \mathrm{m}$ of $100\ \mathrm{mm}$ line**. **The reason a valve's catalogue quotes an $L_e / D$ is that it is roughly independent of Reynolds number while $K$ is not**, and the reason the two conventions differ by a factor of two between catalogues is that some quote the value at the valve's own bore and some at the pipe's.
-**The velocity-head trap.** A $K$ referred to a **reduced** bore must be multiplied by $\left( D_{\mathrm{valve}} / D_{\mathrm{pipe}} \right)^4$ to be used at the pipe velocity — **a factor of $16$ for a valve one size down**, and the reason a reduced-trim control valve's published $K$ is a trap for the reader who does not check the reference diameter.
+**the fittings are $60\ \%$ of the total loss** ($13.7 / 22.8$): in short, fitting-rich runs — most of a building, a ship's engine room or a process skid — **the "minor" losses dominate and the pipe friction is the minor one**.
+**The equivalent length.** $L_e / D = K / f$, so a globe valve at $f = 0.018$ is $556$ diameters of pipe — **$56\ \mathrm{m}$ of $100\ \mathrm{mm}$ line**. Catalogues that quote $L_e / D$ (such as Crane's) pair it with the fully turbulent friction factor of clean pipe of that size, so that $K = f_T \left( L_e / D \right)$; check which friction factor and which bore a catalogue assumes before using its numbers.
+**The velocity-head trap.** A $K$ referred to a **reduced** bore must be multiplied by $\left( D_{\mathrm{pipe}} / D_{\mathrm{valve}} \right)^4$ to be used with the pipe velocity — **a factor of $2.4$ for an $80\ \mathrm{mm}$ bore in a $100\ \mathrm{mm}$ line, and $16$ for half the bore** — which is why a reduced-trim control valve's published $K$ is a trap for the reader who does not check the reference diameter.
 :::
 
 ::: definition System curves, pumps and operating points {#def-system}
@@ -127,7 +127,7 @@ $$
 \frac{d H_p}{d Q} < \frac{d H_{\mathrm{sys}}}{d Q} = 2 C Q
 \qquad \text{(a stable intersection)}
 $$
-**A pump whose curve is flatter than the system's at the crossing is unstable and surges**, and the reason a set of pumps in parallel must have **drooping** curves is precisely this inequality.
+**A pump whose head rises with flow at the crossing (the hump of an unstable curve) can hunt between operating points**, which is why pumps intended to run in parallel should have continuously **drooping** curves.
 **The three system types, which behave completely differently.**
 $$
 \begin{array}{l l l}
@@ -136,7 +136,7 @@ $$
 \text{Mixed} & 0.3 < \Delta z / H < 0.7 & \text{most real systems; the affinity laws are only approximate}
 \end{array}
 $$
-**The number that makes a variable-speed retrofit's savings computable.** For a friction-dominated loop the affinity law gives $P \propto N^3$, so a $20\ \%$ speed reduction saves $49\ \%$ of the power. **For a static-dominated system the same speed reduction saves almost nothing and can stall the pump** — at a static head of $40\ \mathrm{m}$ and a design head of $45\ \mathrm{m}$, a $20\ \%$ speed reduction gives a shut-off head of $28.8\ \mathrm{m}$ and **zero flow**. **The number to compute before specifying a variable-speed drive is $\Delta z / H_{\mathrm{design}}$, and the reason a VSD retrofit that saves $45\ \%$ on one plant saves nothing on the next is that ratio and not the pump.**
+**The number that makes a variable-speed retrofit's savings computable.** For a friction-dominated loop the affinity law gives $P \propto N^3$, so a $20\ \%$ speed reduction saves $49\ \%$ of the power. **For a static-dominated system the same speed reduction saves almost nothing and can stall the pump** — with a static head of $40\ \mathrm{m}$ and a pump whose shut-off head at full speed is $45\ \mathrm{m}$, a $20\ \%$ speed reduction lowers the shut-off head to $0.8^2 \times 45 = 28.8\ \mathrm{m}$ — below the static head, so **the flow is zero**. **The number to compute before specifying a variable-speed drive is $\Delta z / H_{\mathrm{design}}$: the same drive that halves the energy on a friction-dominated loop may save almost nothing on a static-dominated lift.**
 :::
 
 ## Worked cases
@@ -186,13 +186,13 @@ $$
 $$
 k_s^+ = \frac{k_s u^{*}}{\nu} = \frac{4.6 \times 10^{- 5} \times 0.1216}{1.004 \times 10^{- 6}} = 5.6
 $$
-**Transitionally rough, just above the hydraulically-smooth limit of $5$** — and the reason a $20\ \%$ error in $k_s$ produces only a $4\ \%$ error in $f$ here is that the flow is near the smooth regime, whereas in a $1{,}000\ \mathrm{mm}$ pipe at the same velocity $k_s^+ = 17$ and the same $20\ \%$ roughness uncertainty gives a $12\ \%$ error in $f$.
+**Transitionally rough, just above the hydraulically-smooth limit of $5$** — which is why a $20\ \%$ error in $k_s$ produces only a $3\ \%$ error in $f$ here; the sensitivity to roughness grows as $k_s^+$ rises into the fully rough regime.
 **The pumping power.**
 $$
 P = \frac{\rho g Q h_f}{\eta} = \frac{998 \times 9.81 \times 0.020 \times 12.0}{0.70} = 3{,}355\ \mathrm{W}
 $$
-**The number that makes the number worth memorising.** $12\ \mathrm{m}$ of head over $200\ \mathrm{m}$ is a gradient of **$60\ \mathrm{mm}$ per metre of pipe**, and the reason a district-heating designer quotes a **maximum allowable pressure gradient** of $50$ to $100\ \mathrm{mm\, H_2O}$ per metre is that the pump head available is set by the pressure rating of the network and the number of boost stations, and the gradient is the only way to compare routes.
-*Sanity.* The reason the answer is insensitive to the choice of explicit approximation is that all three agree to $1.5\ \%$ here: Colebrook $0.01822$, Swamee–Jain $0.01834$, Haaland $0.01807$. **The reason the answer is highly sensitive to $k_s$ is different — it is the regime, not the arithmetic** — and the reason a hydraulic calculation should always report $k_s^+$ is that it says which of the two sensitivities dominates.
+**The number that makes the number worth memorising.** $12\ \mathrm{m}$ of head over $200\ \mathrm{m}$ is a gradient of **$60\ \mathrm{mm}$ of water per metre of pipe** ($590\ \mathrm{Pa / m}$) — a high value for a water main, which designers usually size for a few hundred pascals per metre or less, because the gradient sets both the pump energy and the spacing of booster stations.
+*Sanity.* The answer is insensitive to the choice of explicit approximation — all three agree to $1\ \%$ here: Colebrook $0.01822$, Swamee–Jain $0.01833$, Haaland $0.01806$. **Its sensitivity to $k_s$ depends on the regime, not the arithmetic**, which is why a hydraulic calculation should report $k_s^+$.
 :::
 :::
 
@@ -218,26 +218,26 @@ $$
 $$
 H = 60 - 5{,}000 \times 0.0383^2 = 60 - 7.3 = 52.7\ \mathrm{m}
 $$
-**The check that $f$ is right at this flow.** $V = 4.88\ \mathrm{m / s}$, $\mathrm{Re} = 4.86 \times 10^5$, $f = 0.0172$ — **$6\ \%$ below the assumed value**, giving $H_{\mathrm{sys}} = 25 + 17{,}600\, Q^2$ and $Q = 0.0393\ \mathrm{m^3 / s}$. **One iteration is enough and the answer is $Q = 0.039\ \mathrm{m^3 / s}$, $H = 52.3\ \mathrm{m}$.**
+**The check that $f$ is right at this flow.** $V = 4.88\ \mathrm{m / s}$, $\mathrm{Re} = 4.86 \times 10^5$, $f = 0.0174$ — **$4\ \%$ below the assumed value**, giving $f L / D = 8.7$, $H_{\mathrm{sys}} = 25 + \left( 8.7 + 13.7 \right) \times 826\, Q^2 = 25 + 18{,}520\, Q^2$ and $Q = \sqrt{35 / 23{,}520} = 0.0386\ \mathrm{m^3 / s}$. **One iteration is enough: $Q = 0.0386\ \mathrm{m^3 / s}$ ($139\ \mathrm{m^3 / h}$), $H = 52.6\ \mathrm{m}$.**
 **Two pumps in parallel.** Each delivers $Q / 2$ at the common head $H$:
 $$
 H = 60 - 5{,}000 \left( \frac{Q}{2} \right)^2 = 60 - 1{,}250\, Q^2
-\qquad \Rightarrow \qquad 60 - 1{,}250\, Q^2 = 25 + 17{,}600\, Q^2
+\qquad \Rightarrow \qquad 60 - 1{,}250\, Q^2 = 25 + 18{,}500\, Q^2
 $$
 $$
-35 = 18{,}850\, Q^2 \quad \Rightarrow \quad Q = 0.0431\ \mathrm{m^3 / s} = 155\ \mathrm{m^3 / h}
+35 = 19{,}750\, Q^2 \quad \Rightarrow \quad Q = 0.0421\ \mathrm{m^3 / s} = 152\ \mathrm{m^3 / h}, \qquad H = 57.8\ \mathrm{m}
 $$
-**The number that makes the parallel-pump result a surprise every time.** **Doubling the pumps increases the flow by $10\ \%$ and not by $100\ \%$.** The reason is the static head: at $25\ \mathrm{m}$ of the $52.3\ \mathrm{m}$ total, **$48\ \%$ of the head does not vary with flow**, and a pump added in parallel must supply that head at zero additional flow. **The rule is that parallel pumps add flow in a friction-dominated system and add nothing in a static-dominated one**, and the reason a water-treatment works' high-lift station is designed with **series** pumps and a variable-speed first stage is that its static head is $85\ \%$ of the duty.
+**The number that makes the parallel-pump result a surprise every time.** **Doubling the pumps increases the flow by $9\ \%$, not by $100\ \%$.** The reason is that this system curve is **steep** compared with the pump curve: at the operating point the friction head ($27.6\ \mathrm{m}$) is already larger than the static head, and every extra cubic metre per second must be pushed against a resistance that grows as $Q^2$. **Parallel pumps add a lot of flow when the system curve is flat (static-dominated, with little friction) and little when it is steep (friction-dominated)**; series pumps add head, which is what a steep system curve needs.
 **Two pumps in series.** Each supplies $H / 2$ at the full flow:
 $$
 \frac{H}{2} = 60 - 5{,}000\, Q^2 \quad \Rightarrow \quad H = 120 - 10{,}000\, Q^2
-\qquad \Rightarrow \qquad 120 - 10{,}000\, Q^2 = 25 + 17{,}600\, Q^2
+\qquad \Rightarrow \qquad 120 - 10{,}000\, Q^2 = 25 + 18{,}400\, Q^2
 $$
 $$
-Q = 0.0649\ \mathrm{m^3 / s} = 234\ \mathrm{m^3 / h}, \qquad H = 78.0\ \mathrm{m}
+Q = \sqrt{\frac{95}{28{,}400}} = 0.0578\ \mathrm{m^3 / s} = 208\ \mathrm{m^3 / h}, \qquad H = 86.5\ \mathrm{m}
 $$
-**Series gives $69\ \%$ more flow than parallel for this system** — and the reason a mine dewatering installation and a high-rise's booster train are series arrangements is that their head requirement is large and their flow requirement is set by the demand, not by the pipe.
-*Sanity.* The reason the parallel case gives so little is verifiable without the arithmetic: the system curve at zero flow starts at $25\ \mathrm{m}$, and the pump curve at $Q = 0.038$ has fallen only $7.3\ \mathrm{m}$ from its shut-off value — **the pump is running near the flat part of its curve where extra head buys almost no flow**. **The diagnostic is the ratio of the static head to the shut-off head**: at $25 / 60 = 0.42$ the system is static-dominated and parallel pumps are the wrong answer, and the reason a pump-selection software's first output should be that ratio is that it decides the configuration before any curve is drawn.
+(the system constant is re-evaluated with the slightly lower $f$ at each new flow). **Series gives $50\ \%$ more flow than one pump and $37\ \%$ more than two in parallel for this system.**
+*Sanity.* The comparison can be made before any arithmetic by looking at the slopes at the single-pump operating point: the pump curve falls by $2 \times 5{,}000\, Q = 386\ \mathrm{m}$ per $\mathrm{m^3 / s}$ while the system curve rises by $2 \times 18{,}520\, Q = 1{,}430\ \mathrm{m}$ per $\mathrm{m^3 / s}$. **When the system curve is much steeper than the pump curve, extra flow needs extra head, and parallel pumps — which add flow at the same head — are the wrong answer.**
 :::
 :::
 
@@ -256,12 +256,12 @@ $$
 $$
 a = \sqrt{\frac{2.204 \times 10^6}{1.275}} = \sqrt{1.729 \times 10^6} = 1{,}315\ \mathrm{m / s}
 $$
-**against $1{,}481\ \mathrm{m / s}$ for water in a rigid pipe** — **the pipe's elasticity cuts the wave speed by $11\ \%$**, and the reason a **plastic** pressure pipe's surge pressures are so much lower is that the same factor is $K_w / E \times D / e = 2.2 / 1.4 \times 0.3 / 0.02 = 23.6$, giving $a = 298\ \mathrm{m / s}$, a factor of five reduction.
+**against $1{,}485\ \mathrm{m / s}$ for water in a rigid pipe** — **the pipe's elasticity cuts the wave speed by $11\ \%$**, and the reason a **plastic** pressure pipe's surge pressures are so much lower is that the same factor is $K_w / E \times D / e = 2.2 / 1.4 \times 0.3 / 0.02 = 23.6$, giving $a = 298\ \mathrm{m / s}$, a factor of five reduction.
 **The Joukowsky pressure rise.**
 $$
 V = \frac{0.25}{\pi \times 0.15^2} = 3.54\ \mathrm{m / s}
 \qquad
-\Delta p = \rho a V = 998 \times 1{,}315 \times 3.54 = 4.65\ \mathrm{MPa} = 46.5\ \mathrm{bar}
+\Delta p = \rho a V = 998 \times 1{,}315 \times 3.54 = 4.64\ \mathrm{MPa} = 46.4\ \mathrm{bar}
 $$
 **The equivalent head** $\Delta H = a V / g = 1{,}315 \times 3.54 / 9.81 = 474\ \mathrm{m}$ of water.
 **The critical time.**
@@ -269,7 +269,7 @@ $$
 t_c = \frac{2 L}{a} = \frac{2 \times 500}{1{,}315} = 0.76\ \mathrm{s}
 $$
 **A closure faster than $0.76\ \mathrm{s}$ is "instantaneous" and produces the full Joukowsky rise; a slower closure produces proportionally less**, to the first approximation $\Delta p \left( t \right) = \rho a V \times t_c / t$ for $t > t_c$.
-**The number that makes the check valve the failure and not the pump.** A check valve closes on **reverse** flow, and the reverse flow at the moment of closure is set by the downstand's hydraulics — typically $0.5$ to $1.0\ \mathrm{m / s}$, giving $\Delta p = 0.66$ to $1.3\ \mathrm{MPa}$. **The slam of a $300\ \mathrm{mm}$ swing check has been measured at $30\ \mathrm{MPa}$ locally**, because the disc's last few degrees of travel accelerate the closing water column and the impact is a **local** pressure spike an order of magnitude above the column-water-hammer value. **The reason a non-slam check with a dashpot or a spring costs $200\ \%$ more than a swing check and is specified on every pumping main over $200\ \mathrm{mm}$ is that the pipe's pressure rating is a hoop-stress limit and a $30\ \mathrm{MPa}$ spike exceeds it by a factor of three.**
+**The number that makes the check valve the failure and not the pump.** A check valve closes on **reverse** flow, and the reverse flow at the moment of closure is set by the downstand's hydraulics — typically $0.5$ to $1.0\ \mathrm{m / s}$, giving $\Delta p = 0.66$ to $1.3\ \mathrm{MPa}$. **A check valve that closes late, after the column has already reversed, "slams"**: the surge is set by the reverse velocity at the instant of closure, so the faster the column decelerates after a pump trip, the faster the valve must close. This is why spring-assisted, short-stroke (nozzle or dual-plate) check valves are preferred to heavy swing checks on pumping mains with a rapid flow reversal.
 **The protection.**
 $$
 \begin{array}{l l}
@@ -282,8 +282,8 @@ $$
 \text{Break-pressure tank} & \text{the only defence against the downsurge column separation}
 \end{array}
 $$
-**The number that makes the downsurge the dangerous half.** The minimum pressure along the line after a pump trip falls to the vapour pressure at some point, **the column separates**, and when the two columns rejoin the pressure spike is **larger than the Joukowsky value for the original flow**. For a line with a profile high point $40\ \mathrm{m}$ above the pump, the static head at the high point is $-40\ \mathrm{m}$ and the downsurge of a few metres brings it to cavitation. **The reason a break-pressure tank at the high point costs almost nothing and eliminates the worst failure mode is that it makes the pressure there atmospheric by construction.**
-*Sanity.* The reason $\Delta H = a V / g$ is independent of the pipe length and the material is that the Joukowsky rise is a **local** momentum statement — the mass $\rho A\, a\, dt$ brought to rest in $dt$ — and not a wave-propagation result. **The length and the material enter only through the critical time and the wave speed**, and the reason a surge analysis of a $20\ \mathrm{km}$ line is a distributed, friction-inclusive, cavitation-capable simulation while a $200\ \mathrm{m}$ line can be checked on a napkin is that in the long line the wave returns many times before it has decayed.
+**The number that makes the downsurge the dangerous half.** After a pump trip the pressure first falls along the line; where the pipeline profile rises close to the hydraulic grade line — typically at a high point — the downsurge can take the pressure to the vapour pressure, **the column separates**, and when the separated columns rejoin the pressure spike can exceed the Joukowsky value for the original flow. **A feed tank or air-inlet valves at the high point limit how far the pressure there can fall.**
+*Sanity.* $\Delta H = a V / g$ does not depend on the pipe length because the Joukowsky rise is a **local** momentum statement — the mass $\rho A\, a\, dt$ brought to rest in $dt$ by the passing wave. **The length enters only through the critical time, and the pipe material only through the wave speed.** A long line with friction, profile changes and possible column separation needs a full transient (method-of-characteristics) simulation; a short, simple line can be checked by hand as here.
 :::
 :::
 
@@ -304,53 +304,53 @@ $$
 $$
 $$
 f = 0.0183 \quad \text{(Colebrook)}, \qquad
-h_f = 0.0183 \times \frac{40}{0.48} \times \frac{5.0^2}{2 \times 9.81} = 0.0183 \times 83.3 \times 1.274 = 1.94\ \mathrm{m\, H_2O} = 19.0\ \mathrm{Pa}
+h_f = 0.0183 \times \frac{40}{0.48} \times \frac{5.0^2}{2 \times 9.81} = 0.0183 \times 83.3 \times 1.274 = 1.94\ \mathrm{m\ of\ air}, \qquad \Delta p = \rho g h_f = 1.204 \times 9.81 \times 1.94 = 22.9\ \mathrm{Pa}
 $$
 **The circular duct on area** ($D = 0.553\ \mathrm{m}$, $V = 5.0\ \mathrm{m / s}$):
 $$
-\mathrm{Re} = 1.83 \times 10^5, \quad f = 0.0181, \qquad
-h_f = 0.0181 \times 72.3 \times 1.274 = 1.67\ \mathrm{m\, H_2O} = 16.4\ \mathrm{Pa}
+\mathrm{Re} = 1.83 \times 10^5, \quad f = 0.0177, \qquad
+h_f = 0.0177 \times 72.3 \times 1.274 = 1.63\ \mathrm{m\ of\ air}, \qquad \Delta p = 19.3\ \mathrm{Pa}
 $$
 **The circular duct on perimeter** ($D = 0.637\ \mathrm{m}$, $A = 0.319\ \mathrm{m^2}$, $V = 3.76\ \mathrm{m / s}$):
 $$
-\mathrm{Re} = 1.59 \times 10^5, \quad f = 0.0186, \qquad
-h_f = 0.0186 \times 62.8 \times 0.720 = 0.84\ \mathrm{m\, H_2O} = 8.2\ \mathrm{Pa}
+\mathrm{Re} = 1.59 \times 10^5, \quad f = 0.0179, \qquad
+h_f = 0.0179 \times 62.8 \times 0.723 = 0.81\ \mathrm{m\ of\ air}, \qquad \Delta p = 9.6\ \mathrm{Pa}
 $$
-**The reading.** The rectangular duct loses **$16\ \%$ more** than the same-area circle and **$130\ \%$ more** than the same-perimeter circle. **The same-area comparison is the one that matters for a shaft or a ceiling void, and the same-perimeter comparison is the one that matters for sheet-metal cost** — and the reason a ventilation designer's duct is nearly always as close to square as the space allows is that the perimeter sets the material and the aspect ratio sets the friction, with a minimum in friction per unit area at an aspect ratio of about $1.6$.
-**The number that makes the aspect ratio a cost curve.** For a fixed area $A$ and aspect ratio $r$, $P = 2 \sqrt{A} \left( \sqrt{r} + 1 / \sqrt{r} \right)$, so relative to a square:
+**The reading.** The rectangular duct loses **$19\ \%$ more** than the same-area circle and **$140\ \%$ more** than the same-perimeter circle. **The same-area comparison is the one that matters for a shaft or a ceiling void, and the same-perimeter comparison is the one that matters for sheet-metal cost** — and a rectangular duct is kept as close to square as the space allows because, for a given area, the square has the least perimeter and hence the least material and the least friction.
+**The number that makes the aspect ratio a cost curve.** For a fixed area $A$ and aspect ratio $r$, $P = 2 \sqrt{A} \left( \sqrt{r} + 1 / \sqrt{r} \right)$, so relative to a square (friction computed for this duct's area and velocity):
 $$
 \begin{array}{c c c c c}
 r & 1 & 2 & 4 & 10 \\
-P / P_{\text{square}} & 1.00 & 1.06 & 1.25 & 1.94 \\
-\text{friction per unit length} & 1.00 & 1.05 & 1.21 & 1.82
+P / P_{\text{square}} & 1.00 & 1.06 & 1.25 & 1.74 \\
+\text{friction per unit length} & 1.00 & 1.07 & 1.31 & 1.97
 \end{array}
 $$
-**a $10{:}1$ flat duct costs twice the sheet metal and nearly twice the fan power of a square one of the same area** — and the reason a "flat" duct is nevertheless used above a ceiling is that the friction can be recovered by shortening the run, and the ceiling void's depth is not negotiable.
-**The laminar warning.** If this duct ran at $\mathrm{Re} < 2{,}300$ on $D_h$ — for example in a clean-room's terminal at $0.02\ \mathrm{m^3 / s}$ — the hydraulic diameter would give $f\mathrm{Re} = 64$ while the true rectangular value at an aspect ratio of $1.5$ is $f\mathrm{Re} = 62$, and at an aspect ratio of $20$ it is $53$. **The error is up to $20\ \%$ and always in the direction of understating the loss for a flat duct.**
-*Sanity.* The reason the hydraulic diameter works at all in turbulent flow is that the turbulent boundary layer grows from each wall independently and the **wall shear** is set by the local layer and not by the duct's shape, so the total drag is $\tau_w P L$ and only $P / A$ enters. **In laminar flow the whole section participates and the shape enters through the velocity profile's form**, which is why the exact result depends on $r$ and not on $D_h$.
+**a $10{:}1$ flat duct uses $74\ \%$ more sheet metal and needs about twice the fan pressure of a square one of the same area** — it is used above a ceiling only because the void's depth is not negotiable.
+**The laminar warning.** If this duct ran at $\mathrm{Re} < 2{,}300$ on $D_h$ — for example in a clean-room's terminal at $0.02\ \mathrm{m^3 / s}$ — the hydraulic diameter with the circular-pipe law would give $f\mathrm{Re} = 64$, while the true rectangular value (based on $D_h$) is $59$ at an aspect ratio of $1.5$ and $90$ at $20$. **For flat ducts the circular law understates the laminar loss by up to a third.**
+*Sanity.* The hydraulic diameter works in turbulent flow because the wall shear is set mainly by the thin near-wall layer, which is much the same along most of the perimeter, so the total drag is about $\tau_w P L$ and only $P / A$ enters. **In laminar flow the whole section participates and the shape enters through the form of the velocity profile**, which is why the exact result depends on $r$ and not only on $D_h$.
 :::
 :::
 
 ::: history
-**Darcy** measured pipe friction between **1854 and 1857** in the aqueduct mains of **Dijon**, and the friction factor is his and not Moody's; **Poiseuille**'s laminar law is of **1840** and was measured on tubes of drawn **capillary glass** with mercury manometers and a graduated tube, at flow rates he set by the height of a constant-head tank. **Nikuradse**'s 1933 dissertation, supervised by **Prandtl** at Göttingen, glued **uniform sand grains** to the inside of pipes in eight graded sizes and produced the diagram that made the roughness concept quantitative; **the third volume of *Forschungsheft* 356 ran to fewer than two hundred copies and was unknown in English until the NACA translation of 1950**, by which time its content had been reinvented several times. **Colebrook** was a **British** engineer working on the **London** water works, and his 1939 paper — thirty-one pages, of which the equation is one line and the rest is a discussion of what to do about **ageing** — is the most-used equation in fluid mechanics and was written without a computer, by hand-fitting to **2,000** data points. **Moody**'s 1944 *Transactions of the ASME* chart was a **practitioner's** document and is the most-reproduced figure in engineering; **Rouse** and **Ranga Raju** produced the open-channel analogue in the 1960s. **The Hazen–Williams formula of 1905 and the Manning formula of 1890 remain in use in water-supply and open-channel practice respectively, and both are dimensionally inhomogeneous** — a fact that **Frederick** and **Eagson** demonstrated in a 1968 paper recommending their abolition, which was not adopted. **The equivalent sand-grain roughness is a fiction that works: no commercial pipe has sand grains, and no two authors agree on the value for the same material, which is why a hydraulic calculation should report its assumed $k_s$ and its $k_s^+$ and not only its answer.**
+**Julius Weisbach** gave the head-loss equation its modern form, with a dimensionless friction coefficient multiplying $\left( L / D \right) V^2 / 2 g$, in **1845**, and **Henry Darcy** published extensive measurements of friction in pipes of different materials and ages in **1857**, showing that the coefficient depends on the roughness of the wall — hence the name Darcy–Weisbach. **Poiseuille**'s laminar law (**1840–41**) came from experiments on fine glass capillaries, and **Hagen** had found the same dependence independently in **1839**. **Osborne Reynolds**'s **1883** dye experiments identified the parameter that separates laminar from turbulent flow. **Johann Nikuradse**, working at Prandtl's institute in Göttingen, measured flow in smooth pipes (**1932**) and in pipes roughened with graded sand grains (**1933**); the sand-roughness report was translated into English by NACA in **1950**. **Cyril Colebrook**, working with **C. M. White** at Imperial College, published in **1939** the equation that joins the smooth and rough laws through the transition region, fitted to tests on commercial pipes, and **Lewis Moody**'s **1944** chart in the *Transactions of the ASME* put it into the form every engineer now uses. **The Hazen–Williams formula (1905) and Manning's formula (1889) remain in use in water-supply and open-channel practice; both are empirical and dimensionally inhomogeneous, so their coefficients carry hidden units.** **The equivalent sand-grain roughness is a fiction that works: no commercial pipe has sand grains, and published values for the same material differ, which is why a hydraulic calculation should report its assumed $k_s$ and its $k_s^+$ and not only its answer.**
 :::
 
 ::: quiz
 Doubling the diameter of a long turbulent water pipe, holding the flow rate and length fixed, reduces the frictional head loss by approximately:
 
 - [ ] A factor of two, because the velocity halves
-- [x] A factor of about twenty-eight: $h_f \propto f / D^{ 5 }$, and the larger diameter also lowers the Reynolds number and therefore $f$ slightly
+- [x] A factor of about twenty-seven: $h_f \propto f / D^{ 5 }$, and the larger diameter lowers the Reynolds number and therefore raises $f$ slightly
 - [ ] A factor of thirty-two exactly
 - [ ] A factor of sixteen
 
 ::: solution
-**About twenty-eight.** From Darcy–Weisbach with $V = 4 Q / \pi D^{ 2 }$,
+**About twenty-seven.** From Darcy–Weisbach with $V = 4 Q / \pi D^{ 2 }$,
 
 $$
-h_f = f \frac{ L }{ D } \frac{ V^{ 2 } }{ 2 g } = \frac{ 8 f L Q^{ 2 } }{ \pi^{ 2 } g D^{ 5 } } \ \Rightarrow \ \frac{ h_{f, 2 } }{ h_{f, 1 } } = \frac{ f_2 }{ f_1 } \left( \frac{ D_1 }{ D_2 } \right)^{ 5 } = \frac{ 1 }{ 2^{ 5 } } \times \frac{ 1 }{ 2^{ 0.2 } } \approx \frac{ 1 }{ 28 }
+h_f = f \frac{ L }{ D } \frac{ V^{ 2 } }{ 2 g } = \frac{ 8 f L Q^{ 2 } }{ \pi^{ 2 } g D^{ 5 } } \ \Rightarrow \ \frac{ h_{f, 2 } }{ h_{f, 1 } } = \frac{ f_2 }{ f_1 } \left( \frac{ D_1 }{ D_2 } \right)^{ 5 } = \frac{ 2^{ 0.25 } }{ 2^{ 5 } } \approx \frac{ 1 }{ 27 }
 $$
 
-using Blasius, $f \propto \mathrm{Re}^{- 0.2 } \propto D^{ 0.2 }$ for a smooth pipe. **The exact exponent depends on whether the pipe is hydraulically smooth or fully rough — in the fully rough regime $f$ is independent of Reynolds number and the factor is exactly $32$ — and that difference is itself the reason the Moody chart is a chart and not a formula.** The design consequence is the most valuable number in piping: **head loss goes as the inverse fifth power of diameter, so diameter is worth far more than anything else you can change.** Halving a flow rate costs $75\ \%$ of the loss; going one standard pipe size up costs $40$–$60\ \%$. This is why the economic optimum pipe size, computed over the life of the plant against the pump's energy bill, is almost always one size larger than the one a fitter would install by habit.
+using Blasius, $f \propto \mathrm{Re}^{- 0.25 } \propto D^{ 0.25 }$ at fixed flow rate for a smooth pipe. **The exact exponent depends on whether the pipe is hydraulically smooth or fully rough — in the fully rough regime $f$ is independent of Reynolds number and the factor is exactly $32$ — and that difference is itself the reason the Moody chart is a chart and not a formula.** The design consequence is the most valuable number in piping: **head loss goes as the inverse fifth power of diameter, so diameter is worth far more than anything else you can change.** Halving the flow rate removes about $75\ \%$ of the loss; going one standard size up (say $100$ to $125\ \mathrm{mm}$) removes roughly $65\ \%$. This is why the economic pipe size, computed over the life of the plant against the pump's energy bill, is often larger than the smallest size that will carry the flow.
 :::
 :::
 
@@ -359,12 +359,12 @@ using Blasius, $f \propto \mathrm{Re}^{- 0.2 } \propto D^{ 0.2 }$ for a smooth p
 The same loss budget with a compressibility correction is [[fluid-mechanics/compressible-flow]]; the unsteady version of the last worked case is the whole of [[fluid-mechanics]]' surge analysis and [[energy-systems]]' hydro penstock design; the network solution is [[energy-systems]]' district-heating and [[manufacturing]]'s compressed-air design; the two-phase version is [[propulsion]]'s fuel and [[energy-systems]]' steam lines; and the open-channel limit — the same equations with a free surface and the Froude number in place of the Reynolds number as the governing group — is the river and canal hydraulics of the Earth atlas.
 
 ::: summary
-- Laminar: $f = 64 / \mathrm{Re}$, $h_f \propto V \mu$, no density. Turbulent smooth: $f \sim \mathrm{Re}^{-0.2}$. Fully rough: $f$ constant.
+- Laminar: $f = 64 / \mathrm{Re}$, $\Delta p \propto \mu V$, no density. Turbulent smooth: $f \approx 0.316\,\mathrm{Re}^{-0.25}$ (Blasius). Fully rough: $f$ constant.
 - The Colebrook equation is a correlation, not a law; its explicit forms are good to $1.5\ \%$ and its roughness input is good to a factor of two.
 - Always report $k_s^+ = k_s u^* / \nu$: it says whether the answer is roughness-sensitive or not.
 - $h_f = f \left( L / D \right) V^2 / 2g$ is Darcy; $\tau_w = f \rho V^2 / 2$ is Fanning; they differ by four.
-- Minor losses are referred to a stated velocity head; a reduced bore multiplies the published $K$ by $\left( D_v / D \right)^4$.
-- The system curve's static-head fraction decides whether parallel pumps, series pumps or a variable speed are the right answer.
+- Minor losses are referred to a stated velocity head; a $K$ quoted at a reduced bore $D_v$ is multiplied by $\left( D / D_v \right)^4$ for use with the pipe velocity.
+- The shape of the system curve — its static-head fraction and its steepness against the pump curve — decides whether parallel pumps, series pumps or a variable speed are the right answer.
 - Joukowsky: $\Delta p = \rho a V$, $a$ from Korteweg, critical time $2 L / a$. The downsurge and the check-valve slam are the dangerous half.
 - The hydraulic diameter is valid in turbulent flow and wrong in laminar.
 :::
@@ -399,10 +399,10 @@ $h_f = 0.0182 \times 2000 \times 2.546^2 / 19.62 = 12.0\ \mathrm{m}$.
 :::
 :::
 
-::: exercise Shear velocity {level=1 check="0.122"}
+::: exercise Shear velocity {level=1 check="0.121"}
 Give the shear (friction) velocity in metres per second for $V = 2.546\ \mathrm{m/s}$ and $f = 0.0182$.
 ::: solution
-$u^* = V \sqrt{f/8} = 2.546 \times 0.0477 = 0.122\ \mathrm{m/s}$.
+$u^* = V \sqrt{f/8} = 2.546 \times 0.0477 = 0.121\ \mathrm{m/s}$.
 :::
 :::
 
@@ -426,11 +426,11 @@ Estimate the hydrodynamic entrance length for turbulent flow in a $150\ \mathrm{
 $$
 L_e \approx 10 D \text{ to } 60 D \quad \Rightarrow \quad 1.5\ \mathrm{m} \text{ to } 9\ \mathrm{m}
 $$
-Taking $L_e \approx 30 D = 4.5\ \mathrm{m}$ and an average entrance friction factor $1.4 f$, the entrance region contributes $1.4 \times 4.5 / 12 = 53\ \%$ of the "fully developed" loss for the same length, so the total is
+Taking $L_e \approx 30 D = 4.5\ \mathrm{m}$ and an average entrance friction factor of $1.4 f$, the entrance region's loss is that of $1.4 \times 4.5 = 6.3\ \mathrm{m}$ of fully developed pipe, so the total is
 $$
 \frac{1.4 \times 4.5 + \left( 12 - 4.5 \right)}{12} = \frac{6.3 + 7.5}{12} = 1.15
 $$
-**a $15\ \%$ understatement**, and the reason a short-run hydraulic calculation on a fitting-rich skid carries a $20\ \%$ margin is that the entrance, the fittings' interaction and the swirl from the last bend all act in the same direction.
+times the fully developed estimate — **a $15\ \%$ understatement** if the entrance is ignored. On short, fitting-rich runs the entrance effects, fitting interactions and swirl from the last bend all tend to add loss, which is why such calculations carry a margin.
 :::
 :::
 
@@ -439,13 +439,13 @@ A $600\ \mathrm{mm}$ concrete pipe ($k_s = 0.5\ \mathrm{mm}$) carries water at $
 ::: solution
 $$
 \mathrm{Re} = \frac{1.5 \times 0.6}{1.004 \times 10^{- 6}} = 8.96 \times 10^5, \qquad
-\frac{k_s}{D} = 8.33 \times 10^{- 4}, \qquad f \approx 0.0185
+\frac{k_s}{D} = 8.33 \times 10^{- 4}, \qquad f \approx 0.0192
 $$
 $$
-u^{*} = 1.5 \sqrt{0.0185 / 8} = 0.0722\ \mathrm{m / s}, \qquad
-k_s^+ = \frac{5 \times 10^{- 4} \times 0.0722}{1.004 \times 10^{- 6}} = 36
+u^{*} = 1.5 \sqrt{0.0192 / 8} = 0.0735\ \mathrm{m / s}, \qquad
+k_s^+ = \frac{5 \times 10^{- 4} \times 0.0735}{1.004 \times 10^{- 6}} = 37
 $$
-**Transitional** ($5 < k_s^+ < 70$), and roughly midway between the regimes. **A $\pm 50\ \%$ uncertainty in $k_s$ moves $f$ by about $\pm 8\ \%$** — the reason concrete-pipe design uses the **Manning** $n$ with a range and not the Colebrook equation with a point value is that the roughness of real concrete depends on the finish, the jointing and the age, and spans a factor of three.
+**Transitional** ($5 < k_s^+ < 70$), and roughly midway between the regimes. **A $\pm 50\ \%$ uncertainty in $k_s$ moves $f$ by about $+10\ \%$ / $-13\ \%$** — and since the roughness of real concrete depends on the finish, the jointing and the age, and published values span a factor of several, concrete-pipe design should be done with a range of $k_s$, not a single value.
 :::
 :::
 
@@ -463,7 +463,7 @@ $$
 $$
 **Substitute** $\left( p_1 - p_2 \right) / \rho = V_2 \left( V_2 - V_1 \right)$ from the momentum equation:
 $$
-\frac{V_2 \left( V_1 - V_2 \right)}{g} = \frac{V_2^2 - V_1^2}{2 g} + h_L
+\frac{V_2 \left( V_2 - V_1 \right)}{g} = \frac{V_2^2 - V_1^2}{2 g} + h_L
 \quad \Rightarrow \quad
 h_L = \frac{2 V_2^2 - 2 V_1 V_2 - V_2^2 + V_1^2}{2 g}
 $$
@@ -474,15 +474,15 @@ $$
 $$
 K = \left( 1 - \frac{A_1}{A_2} \right)^2
 $$
-**Referred to the downstream velocity head**, $K = \left( A_2 / A_1 - 1 \right)^2$ — **a factor of $\left( A_2 / A_1 \right)^2$ difference**, and the reason a diffuser's performance is quoted against the upstream head and an enlargement fitting's $K$ against the downstream one is that the two communities use different conventions.
+**Referred to the downstream velocity head**, $K = \left( A_2 / A_1 - 1 \right)^2$ — **a factor of $\left( A_2 / A_1 \right)^2$ difference**, so the reference velocity must always be stated.
 **The limiting case.** $A_2 / A_1 \to \infty$ gives $K = 1$: **the whole upstream kinetic head is lost**, which is the sharp-edged exit loss. **The reading is that an exit is a sudden enlargement into a reservoir and the loss is the kinetic energy that leaves and never returns** — and the reason a well-rounded exit recovers most of it is that it turns the flow smoothly so that the kinetic energy is converted to pressure before the section closes.
-**Where the assumption breaks.** The pressure on the step face is **not** $p_1$; it is closer to $p_2$ for a large area ratio and to $p_1$ for a small one, and the measured loss for $A_2 / A_1 = 2$ is $12\ \%$ below the formula. **The formula is exact in the limit $A_2 / A_1 \to \infty$ and in the limit $A_2 / A_1 \to 1$** (where the loss vanishes), and the reason it is used at all area ratios is that the error is everywhere in the **conservative** direction.
-*Sanity.* The reason $h_L$ depends on $\left( V_1 - V_2 \right)^2$ and not on either velocity alone is that the loss is produced by the **shear layer** between the separated jet and the nearly stagnant fluid in the corners, and the shear layer's velocity difference is $V_1 - V_2$. **The same argument gives the mixing loss of two streams joining in a manifold**, where $h_L = \left( V_1 - V_2 \right)^2 \phi / 2g$ with $\phi$ a function of the flow split — and the reason a manifold's mixing loss can exceed its friction loss is that the streams arrive at very different velocities.
+**Where the assumption breaks.** The pressure on the annular step face is not exactly $p_1$, the velocity profiles at sections 1 and 2 are not uniform, and section 2 must be far enough downstream (several diameters) for the jet to have re-attached and mixed out. **Measured losses for turbulent flow nevertheless agree with the formula to within about ten per cent**, which is why it is used at all area ratios.
+*Sanity.* The reason $h_L$ depends on $\left( V_1 - V_2 \right)^2$ and not on either velocity alone is that the loss is produced by the **shear layer** between the separated jet and the nearly stagnant fluid in the corners, and the shear layer's velocity difference is $V_1 - V_2$. **The same momentum argument gives the mixing loss when two streams of different velocity join**, which is why a manifold's junction losses can exceed its friction losses.
 :::
 :::
 
 ::: exercise Design {level=3}
-Design the complete hydraulic system of a **$500\ \mathrm{kW}$ data-centre liquid-cooling loop** with a $38\ \mathrm{m}$ lift to a dry cooler, and state the pipe sizing, the pump selection, the control method and the acceptance tests.
+Design the complete hydraulic system of a **$500\ \mathrm{kW}$ data-centre liquid-cooling loop** — a closed, water-filled circuit — whose dry cooler stands on the roof $38\ \mathrm{m}$ above the plant room, and state the pipe sizing, the pump selection, the control method and the acceptance tests.
 ::: solution
 **The duty.**
 $$
@@ -492,43 +492,38 @@ $$
 $$
 \begin{array}{l c c c c c}
 D\ \left[ \mathrm{mm} \right] & V\ \left[ \mathrm{m / s} \right] & \mathrm{Re} & f & h_f\ \left[ \mathrm{m\, H_2O / 100\, m} \right] & \text{comment} \\
-80 & 2.98 & 2.37 \times 10^5 & 0.0180 & 10.2 & \text{high gradient, erosion risk} \\
-100 & 1.91 & 1.90 \times 10^5 & 0.0180 & 3.35 & \text{the economic choice} \\
-125 & 1.22 & 1.52 \times 10^5 & 0.0186 & 1.13 & \text{over-sized, capital cost}
+80 & 2.98 & 2.38 \times 10^5 & 0.0189 & 10.7 & \text{high gradient, erosion risk} \\
+100 & 1.91 & 1.90 \times 10^5 & 0.0187 & 3.47 & \text{the economic choice} \\
+125 & 1.22 & 1.52 \times 10^5 & 0.0186 & 1.14 & \text{over-sized, capital cost}
 \end{array}
 $$
-**The number that sets the gradient.** The design target for a chilled- or condenser-water main is a friction gradient of **$2$ to $4\ \mathrm{m\, H_2O}$ per $100\ \mathrm{m}$**, that is $200$ to $400\ \mathrm{Pa}$ per metre, which is the economic optimum from a an installed pipe cost of $450\ \mathrm{currency / m}$ against an electricity price of $0.15\ \mathrm{currency / kWh}$ at $6{,}000\ \mathrm{h}$ of operation. **The $100\ \mathrm{mm}$ bore at $3.35\ \mathrm{m}$ per $100\ \mathrm{m}$ sits in the band; the $80\ \mathrm{mm}$ at $10.2\ \mathrm{m}$ per $100\ \mathrm{m}$ is a false economy and its friction loss is nine times the $125\ \mathrm{mm}$ option's.**
-**The total head.**
+**The number that sets the gradient.** A common design target for chilled- and condenser-water mains is a friction gradient of a few metres of water per $100\ \mathrm{m}$ — a few hundred pascals per metre — a compromise between pipe cost and pumping energy that the designer should confirm with a life-cycle cost for the actual prices. **The $100\ \mathrm{mm}$ bore at $3.5\ \mathrm{m}$ per $100\ \mathrm{m}$ sits in that band; the $80\ \mathrm{mm}$ at $10.7\ \mathrm{m}$ per $100\ \mathrm{m}$ has more than nine times the friction loss of the $125\ \mathrm{mm}$ option.**
+**The static head does not count.** In a closed, filled loop the water rising $38\ \mathrm{m}$ to the roof is balanced by the water falling $38\ \mathrm{m}$ back down the return riser, so **the pump supplies only the friction and component losses**. The $38\ \mathrm{m}$ matters elsewhere: it sets the static fill pressure (about $3.7\ \mathrm{bar}$ at the plant-room level plus a margin at the top to keep air out) and hence the pressure rating of the pipework and pump casing.
+**The total pump head.**
 $$
 \begin{array}{l r}
-\text{Static lift to the dry cooler} & 38.0\ \mathrm{m} \\
-\text{Condenser pressure drop} \left( 60\ \mathrm{kPa} \right) & 6.1\ \mathrm{m} \\
-\text{Pipe friction, } 120\ \mathrm{m} \text{ run at } 3.35\ \mathrm{m} / 100\ \mathrm{m} & 4.0\ \mathrm{m} \\
+\text{Condenser (cooling-plate manifold) pressure drop} \left( 60\ \mathrm{kPa} \right) & 6.1\ \mathrm{m} \\
+\text{Pipe friction, } 120\ \mathrm{m} \text{ run at } 3.47\ \mathrm{m} / 100\ \mathrm{m} & 4.2\ \mathrm{m} \\
 \text{Fittings, } \sum K = 18 \text{ at } V^2 / 2 g = 0.186\ \mathrm{m} & 3.4\ \mathrm{m} \\
-\text{Strainer, balance valves, hose} & 5.0\ \mathrm{m} \\
+\text{Dry-cooler coil, strainer, balance valves, hoses} & 5.0\ \mathrm{m} \\
 \hline
-\textbf{Design head} & \textbf{56.5}\ \mathrm{m} \quad \rightarrow \quad 58\ \mathrm{m}
+\textbf{Design head} & \textbf{18.7}\ \mathrm{m} \quad \rightarrow \quad 20\ \mathrm{m}
 \end{array}
 $$
-**The static-head fraction**: $38 / 58 = 0.66$ — **static-dominated**, which decides the control method.
-**The pump.** Two identical pumps, each $100\ \%$ duty, one running and one standby:
+**The pump.** Two identical pumps, each sized for $100\ \%$ of the duty, one running and one standby ($N + 1$):
 $$
-P_{\mathrm{hyd}} = \frac{998 \times 9.81 \times 0.0150 \times 58}{1{,}000} = 8.51\ \mathrm{kW}, \qquad
-P_{\mathrm{shaft}} = \frac{8.51}{0.74} = 11.5\ \mathrm{kW}, \qquad
-P_{\mathrm{motor}} = 15\ \mathrm{kW}
+P_{\mathrm{hyd}} = \frac{998 \times 9.81 \times 0.0150 \times 20}{1{,}000} = 2.94\ \mathrm{kW}, \qquad
+P_{\mathrm{shaft}} = \frac{2.94}{0.74} = 3.97\ \mathrm{kW}, \qquad
+P_{\mathrm{motor}} = 5.5\ \mathrm{kW}
 $$
-**The number that makes the standby pump a sizing decision.** The standby must run the full duty alone, so the installed motor capacity is $30\ \mathrm{kW}$ and the running pump's load factor is $11.5 / 30 = 38\ \%$ — and the reason a data centre's pump room has a **$N + 1$** arrangement with a duty pump that is **not** the largest motor on the site is that the $N + 1$ is a reliability requirement and the load factor is an efficiency penalty the designer must accept and report.
-**The control method.** With a static fraction of $0.66$, a variable-speed drive gives limited savings:
-$$
-\text{at } 80\ \% \text{ speed: } H_{\mathrm{shutoff}} = 0.64 \times 62 = 39.7\ \mathrm{m} \quad \text{against a static head of } 38\ \mathrm{m}
-$$
-**the pump can barely deliver at all below $80\ \%$ speed**, and the reason the correct answer is a **two-pip** low-$\Delta T$ distribution with **pressure-independent** control valves at each rack and a **bypass** maintaining a minimum pump flow, rather than a simple VSD on the pump. **The number that makes the two-pip system the right answer is the $8\ \mathrm{K}$ design $\Delta T$: at a $4\ \mathrm{K}$ part load the flow would have to double, and a two-pip system with $\Delta T$-reset keeps the flow near the design value and the pump near its best-efficiency point.**
+**The number that makes the static-head mistake expensive.** Had the $38\ \mathrm{m}$ been added to the pump head, the duty would have been $58\ \mathrm{m}$ and nearly three times the power — and a pump selected for $58\ \mathrm{m}$ in a $20\ \mathrm{m}$ system runs far out on its curve at excessive flow, overloading its motor and risking cavitation.
+**The control method.** With no static head, the system curve is a parabola through the origin, $H \propto Q^2$, and the affinity laws apply almost exactly: **a variable-speed drive on the duty pump, controlled to the differential pressure across the racks, gives power $\propto N^3$** — at $70\ \%$ of design flow the pump needs about $0.7^3 = 34\ \%$ of design power. Pressure-independent control valves at the racks hold each rack's flow against the varying pump speed, and a small bypass keeps a minimum flow through the pump.
 **The transient check.** $L = 120\ \mathrm{m}$, $D = 100\ \mathrm{mm}$, steel $e = 4\ \mathrm{mm}$:
 $$
 \frac{K_w}{E} \frac{D}{e} = \frac{2.2}{200} \times 25 = 0.275, \qquad a = 1{,}315\ \mathrm{m / s}, \qquad
 t_c = \frac{2 \times 120}{1{,}315} = 0.18\ \mathrm{s}
 $$
-**A rack's solenoid valve closing in $50\ \mathrm{ms}$ is instantaneous**, and $\Delta p = 998 \times 1{,}315 \times 1.91 = 2.5\ \mathrm{MPa} = 25\ \mathrm{bar}$ — **above the $16\ \mathrm{bar}$ rating of the pipework**. **The mitigation is a $500\ \mathrm{ms}$ closing time on every rack valve and a $12\ \mathrm{L}$ bladder vessel within $3\ \mathrm{m}$ of the manifold**, and the reason the surge check is done at the **rack** and not at the pump is that the fast-acting devices are at the racks.
+**A valve stopping the whole main flow in $50\ \mathrm{ms}$ would be instantaneous**, with $\Delta p = 998 \times 1{,}315 \times 1.91 = 2.5\ \mathrm{MPa} = 25\ \mathrm{bar}$ — **above a $16\ \mathrm{bar}$ pipework rating even before the static pressure is added**. With a closing time of $t \gg t_c$ the surge falls roughly as $\rho a V\, t_c / t$; a $2\ \mathrm{s}$ closure gives about $2.3\ \mathrm{bar}$. **The mitigation is to forbid fast-acting isolating valves on the main, to give the rack valves closing times of several seconds, and to fit a small bladder surge vessel near the manifold.**
 **The acceptance tests.**
 $$
 \begin{array}{l l}
@@ -541,7 +536,7 @@ $$
 \text{Surge} & \text{measured peak pressure on a rack-valve closure } < 1.25 \times \text{design}
 \end{array}
 $$
-**The four clauses that protect the buyer.** **"THE PUMP SELECTION SHALL BE VERIFIED AGAINST A SYSTEM CURVE INCLUDING ALL TERMINAL DEVICES AT THEIR DESIGN FLOW AND AGAINST THE WORST-CASE PART-LOAD RESISTANCE."** **"THE INSTALLED MOTOR SHALL BE SIZED FOR THE END OF THE PUMP CURVE AND NOT FOR THE DUTY POINT."** **"EVERY FAST-ACTING VALVE SHALL HAVE A CLOSING TIME OF NOT LESS THAN TWO CRITICAL TIMES OR A LOCAL SURGE ARRESTER."** **"THE SYSTEM SHALL BE FLUSHED, CHEMICALLY CLEANED AND PASSIVATED BEFORE THE CHILLED-WATER CHARGE, AND THE WATER CHEMISTRY MAINTAINED TO THE STATED SPECIFICATION FOR THE LIFE OF THE INSTALLATION."**
+**The four clauses that protect the buyer.** **"THE PUMP SELECTION SHALL BE VERIFIED AGAINST A SYSTEM CURVE INCLUDING ALL TERMINAL DEVICES AT THEIR DESIGN FLOW AND AGAINST THE WORST-CASE PART-LOAD RESISTANCE."** **"THE INSTALLED MOTOR SHALL BE SIZED FOR THE END OF THE PUMP CURVE AND NOT FOR THE DUTY POINT."** **"EVERY AUTOMATIC VALVE ON THE MAIN SHALL HAVE A CLOSING TIME OF AT LEAST TEN CRITICAL TIMES, OR A LOCAL SURGE ARRESTER SHALL BE FITTED."** **"THE SYSTEM SHALL BE FLUSHED, CHEMICALLY CLEANED AND PASSIVATED BEFORE THE CHILLED-WATER CHARGE, AND THE WATER CHEMISTRY MAINTAINED TO THE STATED SPECIFICATION FOR THE LIFE OF THE INSTALLATION."**
 *Design comment.* The general rule is that **a pump's energy is set by the system curve and the system curve is set by the pipe bore, so the pipe bore is the pump-efficiency decision and it is made on day one by a piping designer who is not paying the electricity bill** — which is why the specification must state the gradient target and the buyer must audit it before the supports are drawn.
 :::
 :::

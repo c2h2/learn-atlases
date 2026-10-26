@@ -1,4 +1,4 @@
-A bridge truss has thirty or forty straight bars joined at pins, and every one of them carries force along its own length and nothing else. That single design decision — put the loads at the joints — turns a structure into a system of simultaneous linear equations that can be solved with nothing but the equilibrium conditions of the last chapter. It is why railway bridges were being designed to exact specification in 1840, a hundred years before anyone could solve an indeterminate frame on paper.
+A bridge truss has thirty or forty straight bars joined at pins, and every one of them carries force along its own length and nothing else. That single design decision — put the loads at the joints — turns a structure into a system of simultaneous linear equations that can be solved with nothing but the equilibrium conditions of the last chapter. It is why iron railway bridges could be analysed with pencil and paper from the 1840s onwards, long before indeterminate frames could be solved as a matter of routine.
 
 Two methods do all the work. The **method of joints** isolates each pin in turn and solves two equations; it is systematic, tedious, and the only way to find the force in every member. The **method of sections** cuts the truss clean through and treats each side as a rigid body, three equations for three cut members; it is fast and it is how you find the force in one particular member without solving the whole truss. Between them they answer every question a statically determinate truss poses, and knowing which to reach for is most of the skill.
 
@@ -21,7 +21,7 @@ A plane truss has two independent equilibrium equations at each of its $j$ pins,
 :::
 
 ::: proof
-Each pin is a particle, so it gives $\sum F_x = 0$ and $\sum F_y = 0$ and no moment equation — a pin cannot transmit a moment by definition. The unknowns are the $m$ axial forces (one per member, because a two-force member's force is fully specified by its magnitude once its line is known) plus the $r$ reaction components. Counting gives the stated condition. Sufficiency fails when the arrangement is defective: a four-bar rectangle with one diagonal has $m = 5$, $r = 3$, $j = 4$, so $m + r = 8 = 2 j$, yet if the diagonal is placed so that two joints are connected by collinear members only, the equilibrium matrix is singular and the truss has a finite mechanism. Conversely a truss with $m + r > 2 j$ may still be solvable if the redundant members are arranged so that their forces are self-equilibrating and zero. The counting rule is a fast screen, and the definitive test is whether the $2 j \times (m + r)$ equilibrium matrix has full rank — which is exactly what a computer checks, and why a hand check of determinacy is worth replacing with a rank test on any truss with more than a dozen members.
+Each pin is a particle, so it gives $\sum F_x = 0$ and $\sum F_y = 0$ and no moment equation — a pin cannot transmit a moment by definition. The unknowns are the $m$ axial forces (one per member, because a two-force member's force is fully specified by its magnitude once its line is known) plus the $r$ reaction components. Counting gives the stated condition. Sufficiency fails when the arrangement is defective: a truss of two square panels side by side ($j = 6$, with a pin and a roller, $r = 3$) that has both diagonals in the first panel and none in the second has $m = 9$, so $m + r = 12 = 2 j$, yet the second panel can shear freely as a mechanism while the first is internally redundant; the equilibrium matrix is singular. The counting rule is a fast screen, and the definitive test is whether the $2 j \times (m + r)$ equilibrium matrix has full rank — which is exactly what a computer checks, and why a hand check of determinacy is worth replacing with a rank test on any truss with more than a dozen members.
 :::
 
 ::: algorithm Zero-force members by inspection {#alg-zero}
@@ -50,7 +50,7 @@ The Pratt truss analysed below has a top chord $7\text{–}8\text{–}9\text{–
 :::
 
 ::: example Method of joints, end panel {#ex-joints}
-The Pratt truss of Figure 1 spans $18\ \mathrm{m}$ in six $3\ \mathrm{m}$ panels, is $4\ \mathrm{m}$ deep, and carries $50\ \mathrm{kN}$ downward at each of the five interior lower joints. Its supports are a pin at joint 0 and a vertical roller at joint 6. Find the forces in members $0\text{–}7$, $0\text{–}1$, $1\text{–}7$ and $7\text{–}2$.
+The Pratt truss used throughout this chapter spans $18\ \mathrm{m}$ in six $3\ \mathrm{m}$ panels and is $4\ \mathrm{m}$ deep. Its lower joints 0 to 6 lie at $x = 0, 3, \dots, 18\ \mathrm{m}$ on the bottom chord and its upper joints 7 to 11 at $x = 3, 6, \dots, 15\ \mathrm{m}$, $4\ \mathrm{m}$ above; the end posts $0\text{–}7$ and $6\text{–}11$ are inclined, a vertical joins each upper joint to the lower joint beneath it, and the diagonals $7\text{–}2$, $8\text{–}3$, $10\text{–}3$ and $11\text{–}4$ slope down towards mid-span. It carries $50\ \mathrm{kN}$ downward at each of the five interior lower joints. Its supports are a pin at joint 0 and a vertical roller at joint 6. Find the forces in members $0\text{–}7$, $0\text{–}1$, $1\text{–}7$ and $7\text{–}2$.
 ::: solution
 **Reactions.** By symmetry, or by moments about 0,
 $$
@@ -103,18 +103,9 @@ $$
 ::: example Method of sections, central panel {#ex-sections}
 For the same truss, find the forces in the top chord $8\text{–}9$, the diagonal $8\text{–}3$ and the bottom chord $2\text{–}3$.
 ::: solution
-Cut vertically through the third panel, through members $8\text{–}9$, $8\text{–}3$ and $2\text{–}3$, and keep the left-hand part, which contains joints 0, 1, 2 and 7 and carries $R_0 = 125\ \mathrm{kN}$ up at $x = 0$ and $50\ \mathrm{kN}$ down at $x = 3\ \mathrm{m}$ and $x = 6\ \mathrm{m}$.
+Cut vertically through the third panel, through members $8\text{–}9$, $8\text{–}3$ and $2\text{–}3$, and keep the left-hand part, which contains joints 0, 1, 2, 7 and 8 and carries $R_0 = 125\ \mathrm{kN}$ up at $x = 0$ and $50\ \mathrm{kN}$ down at $x = 3\ \mathrm{m}$ and $x = 6\ \mathrm{m}$.
 
-**Bottom chord $2\text{–}3$.** The top chord and the diagonal both pass through joint $8(6, 4)$, so take moments about 8. The diagonal's line passes through 8, so it drops out with the top chord:
-$$
-\textstyle \sum M_8 = 4 F_{2\text{–}3} - 125 \times 6 + 50 \times 3 + 50 \times 6 = 0
-$$
-$$
-4 F_{2\text{–}3} = 750 - 150 - 300 = 300
-\quad\Longrightarrow\quad
-F_{2\text{–}3} = +75.0\ \mathrm{kN}\ \text{?}
-$$
-Careful with the sign of the $50\ \mathrm{kN}$ at joint 2: its line of action passes vertically through $x = 6$, the same abscissa as joint 8, so its moment about 8 is **zero**, not $50 \times 6$. Correcting,
+**Bottom chord $2\text{–}3$.** The top chord and the diagonal both pass through joint $8(6, 4)$, so take moments about 8 and both drop out. The $50\ \mathrm{kN}$ load at joint 2 acts vertically through $x = 6$, the same abscissa as joint 8, so its moment about 8 is zero:
 $$
 \textstyle \sum M_8 = 4 F_{2\text{–}3} - 125 \times 6 + 50 \times 3 = 4 F_{2\text{–}3} - 750 + 150 = 0
 \quad\Longrightarrow\quad
@@ -140,11 +131,11 @@ $$
 :::
 
 ::: widget plot
-f: 125*x - 50*floor(x/3)*((x-1.5) - 3*(floor(x/3)-1)/2)
+f: 125*x - 50*(min(floor(x/3),5)*x - 1.5*min(floor(x/3),5)*(min(floor(x/3),5)+1))
 x: 0, 18
-y: 0, 1000
+y: 0, 750
 labels: \text{truss bending moment } M(x) \text{ in kN m}
-caption: Bending moment of the six-panel Pratt truss treated as a simply supported beam, in $\mathrm{kN\,m}$, together with the chord force $F_c = M(x) / 4$ obtained by the method of sections at each panel point. The moment is a series of straight lines between load points, and its peak of $900\ \mathrm{kN\,m}$ at mid-span gives a central chord force of $225\ \mathrm{kN}$. Drag along the curve: the chord force is largest where the bending moment is largest, and the diagonals are largest where the shear is largest — near the supports.
+caption: Bending moment of the six-panel Pratt truss treated as a simply supported beam, in $\mathrm{kN\,m}$, together with the chord force $F_c = M(x) / 4$ obtained by the method of sections at each panel point. The moment is a series of straight lines between load points, and its peak of $675\ \mathrm{kN\,m}$ at mid-span gives a central top-chord force of $675 / 4 = 168.75\ \mathrm{kN}$. Drag along the curve: the chord force is largest where the bending moment is largest, and the diagonals are largest where the shear is largest — near the supports.
 :::
 
 ## Design consequences: Pratt, Howe, Warren and K
@@ -158,7 +149,7 @@ where $h$ is the truss depth and $\theta$ the diagonal's angle to the horizontal
 :::
 
 ::: proof
-Cut a panel and resolve vertically: the shear $V(x)$ carried by the section must be carried by the vertical components of whatever cut members are inclined, since the chords are horizontal. With one inclined member cut, $V = F \sin\theta$, giving the second relation; with the chords horizontal, $\sum F_x = 0$ on the section makes the two chord forces equal and opposite, and taking moments about a chord's pin gives $M = F_{\text{chord}} h$, the first relation. Both are exact for any parallel-chord truss with pin joints and joint loading, and both explain the observed force pattern: $M$ is a parabola-like curve peaking at mid-span while $V$ steps down from its maximum at the supports, so diagonals near the ends carry the most. A slender bar in compression buckles at a load proportional to $EI / L^{2}$, so making the highly loaded diagonals tension-only members — as the Pratt does — allows them to be thin rods, while the compression members are kept short by providing lateral restraint at the panel points. That single consideration, not aesthetics, chose the truss form for every railway bridge built between 1850 and 1950.
+Cut a panel and resolve vertically: the shear $V(x)$ carried by the section must be carried by the vertical components of whatever cut members are inclined, since the chords are horizontal. With one inclined member cut, $V = F \sin\theta$, giving the second relation; with the chords horizontal, $\sum F_x = 0$ on the section makes the two chord forces equal and opposite, and taking moments about a chord's pin gives $M = F_{\text{chord}} h$, the first relation. Both are exact for any parallel-chord truss with pin joints and joint loading, and both explain the observed force pattern: $M$ is a parabola-like curve peaking at mid-span while $V$ steps down from its maximum at the supports, so diagonals near the ends carry the most. A slender bar in compression buckles at a load proportional to $EI / L^{2}$, so making the highly loaded diagonals tension-only members — as the Pratt does — allows them to be thin rods, while the compression members are kept short by providing lateral restraint at the panel points. That consideration, not aesthetics, chose the form of most iron and steel railway trusses of the century after 1850.
 :::
 
 ::: example Design check on a Pratt diagonal {#ex-diag-design}
@@ -181,7 +172,7 @@ The method of sections fails silently when the three cut members are concurrent 
 :::
 
 ::: history
-The counting rule and the analytic theory of pin-jointed frames were settled in the middle nineteenth century, driven entirely by railway bridges. Whipple's patent truss of 1841 — a double-triangle arrangement still used on American railroads — was designed by rule of thumb, and the first correct analytic treatment is generally credited to the German engineer Johann August Röckle in 1827 and, independently and more clearly, to N. A. Bellaviacich in Vienna in 1847. James Clerk Maxwell's *On the calculation of frames* (1864) gave the reciprocal diagram, the reciprocal theorem of structural analysis, and the first explicit statement that a frame with more bars than $2 j - 3$ cannot be solved by statics. A. F. M. Wagner and, above all, Heinrich Manderla in *Methodode om de spanningen te bepalen, welke in de leden van een traliewerk optreden* (1847) anticipated the method of sections; Manderla's name is attached to the graphical method used by every bridge office until the 1930s. The Pratt truss was patented by Thomas and Caleb Pratt of Baltimore in 1844, precisely in order to put diagonals in tension and allow them to be made of iron rod, and the Howe truss of William Howe of 1840 did the opposite with timber compression members — a direct illustration of structural form following material.
+The analytic theory of pin-jointed trusses was settled in the middle of the nineteenth century, driven by the railways. William Howe patented his truss in 1840, with timber diagonals in compression and wrought-iron verticals in tension, and Thomas and Caleb Pratt patented theirs in 1844, reversing the arrangement so that the long diagonals are in tension and can be iron rods — a direct illustration of structural form following material. Squire Whipple, who had patented an iron bowstring truss in 1841, published *A Work on Bridge Building* (Utica, 1847), the first correct general analysis of the member forces in a statically determinate truss; Dmitrii Zhuravskii (Jourawski), designing Howe trusses for the St Petersburg–Moscow railway, reached similar results independently at about the same time. The method of sections was set out by August Ritter, then teaching at the Hanover polytechnic, in his *Elementare Theorie und Berechnung eiserner Dach- und Brücken-Constructionen* (1862), and James Clerk Maxwell's papers of 1864 gave the reciprocal force diagram and the counting rule that a plane frame of $j$ joints needs $2 j - 3$ bars to be stiff.
 :::
 
 ::: quiz
@@ -217,7 +208,7 @@ $m + r = 2 j$ with $r = 3$ and $j = 11$ gives $m = 22 - 3 = 19$ members.
 :::
 :::
 
-::: exercise Zero-force members {level=1 check="2"}
+::: exercise Zero-force members {level=1 check="1"}
 In the Pratt truss of the worked examples, how many members carry exactly zero force under the given symmetric gravity loading? (Count only the members that are zero by inspection.)
 ::: solution
 One: the mid-span vertical $3\text{–}9$, because joint 9 carries no load and the top chord is straight there. The full solution gives $F_{3\text{–}9} = 0$ and $F_{8\text{–}9} = F_{9\text{–}10}$. Under a moving load that puts a wheel at joint 9 the member is no longer zero, which is why it is built anyway.
@@ -241,12 +232,12 @@ $$
 $$
 F_{8\text{–}9} = \frac{-675}{4} = -168.75\ \mathrm{kN}, \qquad 168.8\ \mathrm{kN}\ \text{in compression}.
 $$
-*Check by the beam analogy.* The simply supported beam moment at $x = 9\ \mathrm{m}$ is $M = 125 \times 9 - 50 \times 6 - 50 \times 3 = 675\ \mathrm{kN\,m}$, and $M / h = 675 / 4 = 168.75\ \mathrm{kN}$. The two agree, which is the fastest way to check any chord force. Forgetting either of the two panel loads in the moment sum gives $1125 / 4 = 281\ \mathrm{kN}$ or $975 / 4 = 244\ \mathrm{kN}$, both badly wrong — the loads between the section and the moment centre must all be included.
+*Check by the beam analogy.* The simply supported beam moment at $x = 9\ \mathrm{m}$ is $M = 125 \times 9 - 50 \times 6 - 50 \times 3 = 675\ \mathrm{kN\,m}$, and $M / h = 675 / 4 = 168.75\ \mathrm{kN}$. The two agree, which is the fastest way to check any chord force. Forgetting one of the two panel loads in the moment sum gives $975 / 4 = 244\ \mathrm{kN}$ or $825 / 4 = 206\ \mathrm{kN}$, both badly wrong — the loads between the section and the moment centre must all be included.
 :::
 :::
 
 ::: exercise Design a truss depth {level=2}
-A road bridge truss must span $30\ \mathrm{m}$ and carry a uniformly distributed factored load of $60\ \mathrm{kN/m}$. If the working stress in the chords is $150\ \mathrm{MPa}$ and the chords are to be $1.5$ per cent of their force in cross-sectional area per $\mathrm{N/mm^{2}}$, find the required truss depth if the maximum chord force is to stay below $2000\ \mathrm{kN}$.
+A road bridge truss must span $30\ \mathrm{m}$ and carry a uniformly distributed factored load of $60\ \mathrm{kN/m}$. If the working stress in the chords is $150\ \mathrm{MPa}$, find the required truss depth if the maximum chord force is to stay below $2000\ \mathrm{kN}$, and the corresponding chord area.
 ::: solution
 The maximum beam bending moment is
 $$
@@ -256,12 +247,12 @@ With $F_{\text{chord}} = M / h$ and $F_{\text{chord}} \le 2000\ \mathrm{kN}$,
 $$
 h \ge \frac{6750}{2000} = 3.375\ \mathrm{m}.
 $$
-Take $h = 3.5\ \mathrm{m}$, giving a chord force of $1929\ \mathrm{kN}$ and a required chord area of $1929 \times 10^{3} / 150 = 12\,860\ \mathrm{mm^{2}}$, roughly a $130 \times 100\ \mathrm{mm}$ box section. The span-to-depth ratio is $30 / 3.5 = 8.6$, typical of a road truss; railway trusses go deeper, $L / 8$ to $L / 12$, because the loads are heavier and the deflection limits tighter.
+Take $h = 3.5\ \mathrm{m}$, giving a chord force of $1929\ \mathrm{kN}$ and a required chord area of $1929 \times 10^{3} / 150 = 12\,860\ \mathrm{mm^{2}}$, comparable to a $300\ \mathrm{mm}$ square hollow section with $12\ \mathrm{mm}$ walls (about $13\,800\ \mathrm{mm^{2}}$). The span-to-depth ratio is $30 / 3.5 = 8.6$, within the range of roughly $8$ to $12$ common for parallel-chord bridge trusses; heavily loaded railway trusses sit at the deep end of that range because their loads are heavier and their deflection limits tighter.
 :::
 :::
 
 ::: exercise Warren truss {level=2}
-A Warren truss of span $12\ \mathrm{m}$ and depth $3\ \mathrm{m}$ has four equilateral-ish panels and carries $80\ \mathrm{kN}$ at each of its three interior panel points. Find the force in a diagonal near the support and in a central diagonal, and explain why the central one may reverse sign under a moving load.
+A Warren truss of span $12\ \mathrm{m}$ and depth $3\ \mathrm{m}$ has four $3\ \mathrm{m}$ panels, each crossed by a single diagonal at $45^{\circ}$, the diagonals alternating in direction, and carries $80\ \mathrm{kN}$ at each of its three interior panel points. Find the force in a diagonal near the support and in a central diagonal, and explain why the central one may reverse sign under a moving load.
 ::: solution
 Reactions are $120\ \mathrm{kN}$ each. The first panel's shear is $120\ \mathrm{kN}$ and is carried by one diagonal whose angle to the horizontal is $\theta = \arctan(3 / 3) = 45^{\circ}$, so
 $$
@@ -269,14 +260,14 @@ F_{\text{diag}} = \frac{V}{\sin\theta} = \frac{120}{0.7071} = 169.7\ \mathrm{kN}
 $$
 At mid-span the shear is zero by symmetry, so the central diagonal carries nothing under this symmetric loading — but a single wheel placed just left of mid-span gives a small positive shear there and a load just right of mid-span gives a small negative one. The central diagonal therefore **reverses**, and must be designed as a strut as well as a tie.
 
-That is the difference between the Warren and the Pratt truss under moving loads: the Warren's diagonals alternate and reverse, so all of them must resist buckling, while the Pratt's are arranged so that the gravity-load diagonals are always in tension and only the counter-diagonals, which are often omitted, reverse. Under a moving load the Pratt needs counters in the end panels, and this is exactly what the "counter" member in a nineteenth-century railway truss is for.
+That is the difference between the Warren and the Pratt truss under moving loads: the Warren's diagonals alternate and reverse, so all of them must resist buckling, while the Pratt's are arranged so that the gravity-load diagonals are always in tension and only the counter-diagonals, which are often omitted, reverse. Under a moving load the Pratt needs counters in the central panels, where the shear can reverse, and this is exactly what the "counter" member in a nineteenth-century railway truss is for.
 :::
 :::
 
 ::: exercise Compound truss {level=3}
-A compound truss consists of two simple trusses joined by one pin and one link. State the conditions under which it is determinate, and explain why a "Fink" or "lattice" web with crossing diagonals is indeterminate to the first degree.
+A compound truss consists of two simple trusses joined by one pin and one link. State the conditions under which it is determinate, and explain why a lattice web with two crossing diagonals in a panel is indeterminate to the first degree.
 ::: solution
-Two simple trusses have $3 j_i - 6$ members between them in total (each simple truss with its own three reactions would be $m_i = 2 j_i - 3$); joining them with a pin (two reaction components) and a link (one) supplies three constraints, so the total is $m + r = 2 j$ and the compound truss is determinate provided the link's line and the pin are not arranged so as to leave a relative rotation or a relative translation unrestrained — the link must not pass through the pin, or the two halves can rotate relatively about it.
+Each simple truss has $m_i = 2 j_i - 3$ members. Joining the two at a common pin (so $j = j_1 + j_2 - 1$) and by one extra link gives $m = m_1 + m_2 + 1 = 2 j - 3$, so with a pin and a roller at the supports ($r = 3$) the count is $m + r = 2 j$. The compound truss is determinate provided the link does not leave a relative motion unrestrained — its line must not pass through the common pin, or the two halves can rotate relatively about it.
 
 A web with two crossing diagonals in one panel has one member too many for $m + r = 2 j$: the panel shear is shared between the two diagonals in a ratio that depends on their relative stiffness, and equilibrium alone gives only $F_1 \sin \theta_1 + F_2 \sin \theta_2 = V$, one equation for two unknowns. The standard engineering escape is to declare one diagonal **slack** — a slender rod that buckles under a tiny compression — and let the other carry the whole shear. That is not an approximation to the indeterminate answer, it is a different structure, and it is legitimate only if the slack member really cannot take compression. Where both diagonals are stout, as in a braced frame, both must be solved for, and the tool is [[solid-mechanics/energy-methods]] or [[finite-element-method/direct-stiffness]].
 :::
@@ -297,6 +288,6 @@ $$
 U_{\text{beam}} = \int_0^L \frac{M(x)^{2}}{2 E I}\, \mathrm{d}x
 = \int_0^L \frac{M(x)^{2}}{E A h^{2}}\, \mathrm{d}x ,
 $$
-which is identical. The truss is therefore a beam whose flanges carry all the bending and whose web carries all the shear, and the identity is exact in the limit of a deep, open-web section. The correction is the shear strain energy in the diagonals, of relative order $(h / L)^{2}$... more precisely of order $(\text{panel depth} / \text{span})^{2}$, which is why a deep truss is well approximated by beam theory and a shallow, heavily panelled one is not. This is the **Vierendeel** and **deep-beam** connection, and it is why the deflection of a truss is usually estimated from the beam bending moment divided by an equivalent $EI$.
+which is identical. The truss is therefore a beam whose flanges carry all the bending and whose web carries all the shear, and the identity is exact for the chord contribution. The correction is the strain energy of the web members, the truss's shear deformation, of relative order $(h / L)^{2}$, which is why a slender truss (small $h / L$) is well approximated by beam theory while a deep one needs the deformation of its web as well, and why the deflection of a slender truss is usually estimated from the beam bending moment divided by an equivalent $EI$.
 :::
 :::

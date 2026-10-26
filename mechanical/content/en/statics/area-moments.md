@@ -3,7 +3,7 @@ The centroid tells you where a section is. This chapter tells you how strongly i
 Second moments are the place where statics most obviously becomes arithmetic, and they are worth doing carefully once, because they recur in bending stress, in column buckling, in the deflection of every beam you will ever size, in the torsion of thin walls and in the section properties that a finite-element program computes for every element. The formulas are few; the errors are many, and almost all of them are arithmetic or bookkeeping. The discipline is a table, a datum, and a check against a published section property.
 
 ::: warning Every parallel-axis step needs the centroidal moment
-The single most common error in this subject is applying the parallel-axis theorem to a moment of area that was never taken about a centroidal axis. $I = \bar{I} + A d^{2}$ holds only when $\bar{I}$ is the moment about the part's *own centroid*, parallel to the target axis. Taking $b d^{3} / 12$ for a rectangle and adding $A d^{2}$ where $d$ is measured from the wrong reference — from the base rather than from the rectangle's own centre, or from the whole section's centroid rather than the part's — gives an answer that is wrong by $A d$ rather than $A d^{2}$ and that no check will catch, because it is positive and plausible. Write $\bar{I}$ and $d$ in the same line, and define $d$ as "from the part's centroid to the target axis".
+The single most common error in this subject is applying the parallel-axis theorem to a moment of area that was never taken about a centroidal axis. $I = \bar{I} + A d^{2}$ holds only when $\bar{I}$ is the moment about the part's *own centroid*, parallel to the target axis. Taking $b d^{3} / 12$ for a rectangle and adding $A d^{2}$ where $d$ is measured from the wrong reference — from the base rather than from the rectangle's own centre, or from the whole section's centroid rather than the part's — gives a wrong transfer term, and an answer that no check will catch, because it is positive and plausible. Write $\bar{I}$ and $d$ in the same line, and define $d$ as "from the part's centroid to the target axis".
 :::
 
 ## Second moments of area
@@ -55,7 +55,7 @@ I_x + I_y = \int_0^{2 \pi} \int_0^{r} \rho^{2} \cdot \rho\, \mathrm{d} \rho\, \m
 $$
 and by symmetry $I_x = I_y = \pi r^{4} / 4$.
 
-Thin-walled circle: put $\mathrm{d} A = 2 \pi t\, \mathrm{d} t$ between $t - \tau / 2$ and $t + \tau / 2$, or note that $I = \pi (t_o^{4} - t_i^{4}) / 64$ for the annulus and expand; the result $I = \pi \tau t^{3}$ shows that for a given area of material $A = 2 \pi \tau t$ the stiffness is proportional to $t^{2}$, so a larger-diameter thin tube is stiffer than a small thick one of the same weight — the reason bicycle frames, aircraft stringers and scaffolding tubes are all thin and large.
+Thin-walled circle: put $\mathrm{d} A = 2 \pi t\, \mathrm{d} t$ between $t - \tau / 2$ and $t + \tau / 2$, or note that $I = \pi (t_o^{4} - t_i^{4}) / 4$ for the annulus of outer and inner radii $t_o$ and $t_i$ and expand; the result $I = \pi \tau t^{3}$ shows that for a given area of material $A = 2 \pi \tau t$ the stiffness is proportional to $t^{2}$, so a larger-diameter thin tube is stiffer than a small thick one of the same weight — the reason bicycle frames, aircraft stringers and scaffolding tubes are all thin and large.
 :::
 
 ::: theorem Parallel-axis theorem {#thm-parallel}
@@ -63,7 +63,7 @@ Let $\bar{I}_x$ be the second moment of an area about its own centroidal axis pa
 $$
 I_x = \bar{I}_x + A d_y^{2}, \qquad I_{xy} = \bar{I}_{xy} + A d_x d_y .
 $$
-The moment about any axis is therefore at least as large as the moment about the parallel centroidal axis, and the centroidal axis is the unique axis of minimum second moment.
+The moment about any axis is therefore at least as large as the moment about the parallel centroidal axis, and the centroidal axis is the unique axis of minimum second moment among all axes parallel to it.
 :::
 
 ::: proof
@@ -81,7 +81,7 @@ The corollary is important and often missed: **never** add second moments about 
 2. For each part, record $A_i$, the distance $d_i$ from the part's own centroid to the *whole section's* centroidal axis, and the part's own $\bar{I}_i$.
 3. Form $I = \sum (\bar{I}_i + A_i d_i^{2})$, treating holes as negative.
 4. Compute $r = \sqrt{I / A}$ and $Z = I / y_{\max}$, and check $Z$ against a published table if the section is a standard rolled shape.
-5. **Check the magnitude.** A useful bound: for any section, $I / (A y_{\max}^{2})$ lies between $1 / 12$ (a rectangle bent about its weak axis) and $1$ (all the material at the extreme fibre). A value outside that range is an arithmetic error, and a value near $1$ means an efficient section.
+5. **Check the magnitude.** A useful bound: for any section, $I / (A y_{\max}^{2}) \le 1$, with equality only if all the material is at the extreme fibre; a solid rectangle gives $1 / 3$, a solid circle $1 / 4$ and a good I-section $0.6$ to $0.8$. A value above $1$ is an arithmetic error, and a value near $1$ means an efficient section.
 :::
 
 ::: example Built-up I-section {#ex-isect}
@@ -92,44 +92,44 @@ The section is symmetric, so the centroidal axis is at mid-depth, $150\ \mathrm{
 | Part | $A\ (\mathrm{mm^{2}})$ | $d\ (\mathrm{mm})$ | $\bar{I}\ (\mathrm{mm^{4}})$ | $A d^{2}\ (\mathrm{mm^{4}})$ |
 |---|---|---|---|---|
 | Flange (each) | 4000 | 140 | 133 333 | 78 400 000 |
-| Web | 3120 | 0 | 14 638 000 | 0 |
+| Web | 3120 | 0 | 17 576 000 | 0 |
 
 Summing $\bar{I} + A d^{2}$ over all three parts,
 $$
 I_x = 2 \left[ \frac{200 \times 20^{3}}{12} + 4000 \times 140^{2} \right] + \frac{12 \times 260^{3}}{12}
-= 2 \times 78\,533\,333 + 14\,638\,000 = 171.7 \times 10^{6}\ \mathrm{mm^{4}} .
+= 2 \times 78\,533\,333 + 17\,576\,000 = 174.6 \times 10^{6}\ \mathrm{mm^{4}} .
 $$
 Then
 $$
-r_x = \sqrt{\frac{171.7 \times 10^{6}}{11\,120}} = 124.3\ \mathrm{mm}, \qquad
-Z_x = \frac{171.7 \times 10^{6}}{150} = 1.145 \times 10^{6}\ \mathrm{mm^{3}} = 1145\ \mathrm{cm^{3}} .
+r_x = \sqrt{\frac{174.6 \times 10^{6}}{11\,120}} = 125.3\ \mathrm{mm}, \qquad
+Z_x = \frac{174.6 \times 10^{6}}{150} = 1.164 \times 10^{6}\ \mathrm{mm^{3}} = 1164\ \mathrm{cm^{3}} .
 $$
 **Comparison.** The solid $200 \times 300$ rectangle has $I = 200 \times 300^{3} / 12 = 450 \times 10^{6}\ \mathrm{mm^{4}}$ and $A = 60\,000\ \mathrm{mm^{2}}$, so
 $$
 \frac{I}{A} = 7500\ \mathrm{mm^{3} / mm^{2}} \quad \text{versus} \quad
-\frac{171.7 \times 10^{6}}{11\,120} = 15\,440\ \mathrm{mm^{3} / mm^{2}} .
+\frac{174.6 \times 10^{6}}{11\,120} = 15\,710\ \mathrm{mm^{3} / mm^{2}} .
 $$
 The I-beam gives **twice the stiffness per unit area** — and per unit weight, since both are steel — while using $19$ per cent of the material.
 
-*Sanity.* The flanges contribute $91$ per cent of the second moment from $72$ per cent of the area, because their $A d^{2}$ term dominates: $78.4 \times 10^{6}$ each against a web $\bar{I}$ of $14.6 \times 10^{6}$. The efficiency check gives $I / (A y_{\max}^{2}) = 171.7 \times 10^{6} / (11\,120 \times 150^{2}) = 0.686$, comfortably inside $[1 / 12, 1]$ and close to the I-beam's theoretical ceiling.
+*Sanity.* The flanges contribute $90$ per cent of the second moment from $72$ per cent of the area, because their $A d^{2}$ term dominates: $78.4 \times 10^{6}$ each against a web $\bar{I}$ of $17.6 \times 10^{6}$. The efficiency check gives $I / (A y_{\max}^{2}) = 174.6 \times 10^{6} / (11\,120 \times 150^{2}) = 0.698$, more than twice the solid rectangle's $1 / 3$ and below the ceiling of $1$.
 :::
 :::
 
 ::: example Weak axis of the same I-section {#ex-weakaxis}
 For the built-up I-section of Example 1, find $I_y$ and $I_x / I_y$.
 ::: solution
-About the vertical centroidal axis the flanges are rectangles $10$ deep by $200$ wide with their centroids *on* the axis, so they contribute no transfer term, and the web is $260$ deep by $12$ wide, also centred on the axis:
+About the vertical centroidal axis the flanges are rectangles $20$ thick by $200$ wide with their centroids *on* the axis, so they contribute no transfer term, and the web is $260$ deep by $12$ wide, also centred on the axis:
 $$
 I_y = 2 \times \frac{20 \times 200^{3}}{12} + \frac{260 \times 12^{3}}{12}
 = 2 \times 13.33 \times 10^{6} + 0.037 \times 10^{6} = 26.71 \times 10^{6}\ \mathrm{mm^{4}} .
 $$
 Then
 $$
-\frac{I_x}{I_y} = \frac{171.7}{26.71} = 6.43 .
+\frac{I_x}{I_y} = \frac{174.6}{26.71} = 6.54 .
 $$
 *Check.* The web contributes $0.14$ per cent of $I_y$ — it lies almost exactly on the axis, so its $12\ \mathrm{mm}$ width makes it worthless about that axis. Every bit of the weak-axis stiffness is in the flanges.
 
-*Sanity.* A factor of $6.4$ between the two axes is typical of an I-section, and it is the number that governs lateral-torsional buckling, strut design and the choice of which way round to install a joist. The same section used as a column will buckle about $y$ at $1 / 6.4$ of the load at which it yields in strong-axis bending, which is why compression members are boxes, tubes or tees rather than I-sections, and why a table's legs are tubes.
+*Sanity.* A factor of $6.5$ between the two axes is typical of an I-section, and it is the number that governs lateral-torsional buckling, strut design and the choice of which way round to install a joist. The same section used as a pin-ended column would buckle about $y$ at $1 / 6.5$ of the Euler load about $x$, which is why compression members are usually tubes, boxes or wide-flange H-sections with more nearly equal $I_x$ and $I_y$, and why a table's legs are tubes.
 :::
 :::
 
@@ -168,7 +168,7 @@ $$
 $$
 *Check.* $I_1 + I_2 = 26.81 + 2.47 = 29.28 = 25.73 + 3.54 = I_x + I_y$. $\checkmark$
 
-*Sanity.* The principal axes are tilted $12^\circ$ from the flanges, so a Z-purlin loaded vertically (in the plane of the roof) bends about an axis that is neither its geometric $x$ nor its geometric $y$, and it twists unless the load passes through the shear centre — which for a Z-section lies outside the material. This is the well-known reason Z-purlins must be installed with their top and bottom flanges correctly identified, and why lapping them at the wrong end reverses the eccentricity instead of cancelling it.
+*Sanity.* The principal axes are tilted $12^\circ$ from the flanges, so a Z-purlin under vertical roof load bends about an axis that is neither its geometric $x$ nor its geometric $y$, and deflects sideways as well as downwards. This is why Z-purlins need sag rods or restraint from the roof sheeting to hold them in line.
 :::
 :::
 
@@ -180,7 +180,7 @@ $$
 and about the centroid, $J_C = \bar{I}_x + \bar{I}_y$; the transfer law is $J_O = J_C + A \rho^{2}$ where $\rho$ is the distance $O C$. The **section modulus** is $Z = I / y_{\max}$, so that the extreme-fibre bending stress is $\sigma_{\max} = M / Z$, and $Z$ is the quantity tabulated for rolled shapes because it is one step closer to the stress than $I$ is.
 :::
 
-$J$ is the same invariant that appears in the torsion of circular shafts, which is why a solid circle has $J = 2 I$ and why the polar quantity is what a shaft needs while the rectangular quantity is what a beam needs. Note that $J$ is *not* the torsion constant for non-circular sections: for a rectangle the torsion constant is $K = \beta b d^{3}$ with $\beta$ between $0.141$ and $0.333$, never $J / 2$, and using $J$ there over-predicts the stiffness of a rectangular torsion bar by up to $40$ per cent.
+$J$ is the same invariant that appears in the torsion of circular shafts, which is why a solid circle has $J = 2 I$ and why the polar quantity is what a shaft needs while the rectangular quantity is what a beam needs. Note that $J$ is *not* the torsion constant for non-circular sections: for a rectangle with long side $d$ and short side $b$ the torsion constant is $K = \beta d b^{3}$ with $\beta$ between $0.141$ (square) and $0.333$ (very thin), and using $J$ there over-predicts the torsional stiffness by $18$ per cent for a square bar and by orders of magnitude for a thin flat bar.
 
 ## Rotation of axes and principal moments
 
@@ -202,7 +202,7 @@ The sum $I_u + I_v = I_x + I_y$ is invariant under rotation.
 An element at $(x, y)$ has coordinates $u = x \cos \theta + y \sin \theta$ and $v = - x \sin \theta + y \cos \theta$ in the rotated frame. Then
 $$
 I_u = \int v^{2}\, \mathrm{d} A = \sin^{2} \theta \int x^{2}\, \mathrm{d} A + \cos^{2} \theta \int y^{2}\, \mathrm{d} A - 2 \sin \theta \cos \theta \int x y\, \mathrm{d} A
-= I_x \sin^{2} \theta + I_y \cos^{2} \theta - 2 I_{xy} \sin \theta \cos \theta .
+= I_y \sin^{2} \theta + I_x \cos^{2} \theta - 2 I_{xy} \sin \theta \cos \theta .
 $$
 Substituting $\sin^{2} \theta = (1 - \cos 2 \theta) / 2$, $\cos^{2} \theta = (1 + \cos 2 \theta) / 2$ and $2 \sin \theta \cos \theta = \sin 2 \theta$ gives the first result; $I_v$ follows by replacing $\theta$ with $\theta + 90^{\circ}$. Adding the two, the $\cos 2 \theta$ and $\sin 2 \theta$ terms cancel and $I_u + I_v = I_x + I_y$, which is also immediate from $I_u + I_v = \int (u^{2} + v^{2})\, \mathrm{d} A = \int (x^{2} + y^{2})\, \mathrm{d} A = J$, the polar second moment.
 :::
@@ -226,7 +226,7 @@ $$
 \quad \Longrightarrow \quad
 \tan 2 \theta_p = - \frac{I_{xy}}{(I_x - I_y) / 2} .
 $$
-Substituting back gives the two stationary values, one a maximum and one a minimum, and $I_{uv} = 0$ at the same angle because $\mathrm{d} I_u / \mathrm{d} \theta = - 2 I_{uv}$ — so the axes of stationary moment are exactly the axes of zero product. The circle follows by plotting the parametric equations for $I_u$ and $I_{uv}$ against the parameter $2 \theta$: both are sinusoidal in $2 \theta$ with the same amplitude and in quadrature, which is a circle of the stated centre and radius. An axis of symmetry makes $I_{xy} = 0$ because for every element at $(x, y)$ there is a matching element at $(x, -y)$ whose product cancels, so **a symmetry axis is always a principal axis**, and if there are two of them the section is isotropic in bending.
+Substituting back gives the two stationary values, one a maximum and one a minimum, and $I_{uv} = 0$ at the same angle because $\mathrm{d} I_u / \mathrm{d} \theta = - 2 I_{uv}$ — so the axes of stationary moment are exactly the axes of zero product. The circle follows by plotting the parametric equations for $I_u$ and $I_{uv}$ against the parameter $2 \theta$: both are sinusoidal in $2 \theta$ with the same amplitude and in quadrature, which is a circle of the stated centre and radius. An axis of symmetry makes $I_{xy} = 0$ because for every element at $(x, y)$ there is a matching element at $(x, -y)$ whose product cancels, so **a symmetry axis is always a principal axis**; and if a section has more than two axes of symmetry (an equilateral triangle, a square, any regular polygon), every centroidal axis is principal and the section is isotropic in bending.
 :::
 
 ::: example Principal moments of an angle {#ex-principal}
@@ -249,49 +249,49 @@ $$
 $$
 *Check.* $I_1 + I_2 = 224.9 + 55.1 = 280 = 200 + 80 = I_x + I_y$. $\checkmark$ The invariant holds, so the arithmetic is consistent.
 
-*Sanity.* The principal moments differ by a factor of $4.1$, so this angle is more than four times as stiff about one principal axis as about the other — and neither of those axes is the $x$ or $y$ axis of the table. A load applied along a geometric axis of an unsymmetric section therefore produces bending about *both* principal axes, and the beam twists as well as bends unless the load passes through the shear centre. This is the reason angles are rarely used as beams and the reason a channel used as a beam must be loaded through its web.
+*Sanity.* The principal moments differ by a factor of $4.1$, so this angle is more than four times as stiff about one principal axis as about the other — and neither of those axes is the $x$ or $y$ axis of the table. A load applied along a geometric axis of an unsymmetric section therefore produces bending about *both* principal axes, and the beam twists as well as bends unless the load passes through the shear centre. This is the reason angles are rarely used as beams and the reason a channel used as a beam must be loaded through its shear centre, which lies outside the web.
 :::
 :::
 
 ::: widget plot
-f: 140+sqrt(3600+3600*sin(x*2*pi/180)^2)
-x: 0, 90
-y: 130, 235
-labels: \text{principal maximum } I_1(\theta)
-caption: Second moment $I_u$ about an axis rotated through $\theta$ for the angle section of Example 4, drawn on Mohr's circle: $I_{\text{avg}} = 140 \times 10^{6}\ \mathrm{mm^{4}}$, radius $84.9 \times 10^{6}$. The maximum $224.9 \times 10^{6}$ occurs at $\theta = 22.5^{\circ}$ and the minimum $55.1 \times 10^{6}$ at $67.5^{\circ}$; the curve is periodic in $180^{\circ}$ and symmetric about $45^{\circ}$, which is the signature of the $2 \theta$ dependence that makes Mohr's circle for inertia use doubled angles.
+f: 140+60*cos(2*x*pi/180)+60*sin(2*x*pi/180)
+x: 0, 180
+y: 40, 240
+labels: \text{second moment } I_u(\theta)
+caption: Second moment $I_u$ about an axis rotated through $\theta$ for the angle section of Example 4, drawn on Mohr's circle: $I_{\text{avg}} = 140 \times 10^{6}\ \mathrm{mm^{4}}$, radius $84.9 \times 10^{6}$. The maximum $224.9 \times 10^{6}$ occurs at $\theta = 22.5^{\circ}$ and the minimum $55.1 \times 10^{6}$ at $112.5^{\circ}$, $90^{\circ}$ later; the curve is periodic in $180^{\circ}$, which is the signature of the $2 \theta$ dependence that makes Mohr's circle for inertia use doubled angles.
 :::
 
 ::: example Rectangular hollow section {#ex-rhs}
 A rectangular hollow section $200 \times 100 \times 8\ \mathrm{mm}$ (outside depth $200$, outside width $100$, wall $8$) is bent about its strong axis. Find $I_x$, $Z_x$ and the percentage of the solid rectangle's stiffness it retains.
 ::: solution
 Subtract the inner rectangle from the outer. The inner box is $(200 - 16) \times (100 - 16) = 184 \times 84\ \mathrm{mm}$:
-Computing the outer and inner terms separately, $100 \times 200^{3} / 12 = 66.67 \times 10^{6}$ and $84 \times 184^{3} / 12 = 43.54 \times 10^{6}$, so
+Computing the outer and inner terms separately, $100 \times 200^{3} / 12 = 66.67 \times 10^{6}$ and $84 \times 184^{3} / 12 = 43.61 \times 10^{6}$, so
 $$
-I_x = 66.67 - 43.54 = 23.13 \times 10^{6}\ \mathrm{mm^{4}}, \qquad
-Z_x = \frac{23.13 \times 10^{6}}{100} = 231.3 \times 10^{3}\ \mathrm{mm^{3}} .
+I_x = 66.67 - 43.61 = 23.06 \times 10^{6}\ \mathrm{mm^{4}}, \qquad
+Z_x = \frac{23.06 \times 10^{6}}{100} = 230.6 \times 10^{3}\ \mathrm{mm^{3}} .
 $$
-The area is $100 \times 200 - 84 \times 84 = 20\,000 - 7056 = 12\,944\ \mathrm{mm^{2}}$, against the solid rectangle's $20\,000\ \mathrm{mm^{2}}$, so
+The area is $100 \times 200 - 84 \times 184 = 20\,000 - 15\,456 = 4544\ \mathrm{mm^{2}}$, against the solid rectangle's $20\,000\ \mathrm{mm^{2}}$, so
 $$
-\frac{I_{\text{RHS}}}{I_{\text{solid}}} = \frac{23.13}{66.67} = 34.7\ \text{per cent}
+\frac{I_{\text{RHS}}}{I_{\text{solid}}} = \frac{23.06}{66.67} = 34.6\ \text{per cent}
 \quad \text{from} \quad
-\frac{A_{\text{RHS}}}{A_{\text{solid}}} = 64.7\ \text{per cent of the material}.
+\frac{A_{\text{RHS}}}{A_{\text{solid}}} = 22.7\ \text{per cent of the material}.
 $$
-*Check.* The efficiency ratio is $0.347 / 0.647 = 0.54$, so the hollow section is $1.9$ times as efficient per unit weight as the solid bar.
+*Check.* The efficiency ratio is $0.346 / 0.227 = 1.52$, so the hollow section is $1.5$ times as efficient per unit weight as the solid bar.
 
-*Sanity.* Removing the middle $65$ per cent of the depth in each direction costs $65$ per cent of the stiffness but only $35$ per cent of the weight — the trade is favourable, which is why every frame, roll cage, spaceframe and bicycle is tubular. Push it further and the wall becomes so thin that local buckling of the flat faces intervenes: real RHS walls are limited to about $t \ge b / 40$, and the optimum is set by buckling, not by bending.
+*Sanity.* Removing the core — $77$ per cent of the material — costs only $65$ per cent of the stiffness — the trade is favourable, which is why every frame, roll cage, spaceframe and bicycle is tubular. Push it further and the wall becomes so thin that local buckling of the flat faces intervenes: real RHS walls are limited to about $t \ge b / 40$, and the optimum is set by buckling, not by bending.
 :::
 :::
 
 ::: warning Weak-axis, strong-axis and the trap of the table
-Section-property tables give $I$ about two axes, conventionally labelled the major (strong, $x$–$x$) and minor (weak, $y$–$y$) axes, and the numbers can differ by an order of magnitude. Reading the wrong column is a classic cause of structural failure, and the labelling convention is not universal: European and British tables take $y$–$y$ as the strong axis while American tables take $x$–$x$. Two further traps. First, $Z$ is not proportional to $I$: for an I-section the ratio $Z / (I / y_{\max})$ is exactly $1$ for elastic bending, but the *plastic* modulus $Z_p$ is $1.1$ to $1.15$ times larger for an I-section and $1.5$ times for a rectangle, and mixing the two gives a $50$ per cent error. Second, the tabulated $I$ is about the centroid, and a bolted or welded connection rarely loads a section through its centroid — an eccentricity of even $20\ \mathrm{mm}$ on a $200\ \mathrm{kN}$ force adds $4\ \mathrm{kN\,m}$ of moment that the section property alone never predicted.
+Section-property tables give $I$ about two axes, conventionally labelled the major (strong, $x$–$x$) and minor (weak, $y$–$y$) axes, and the numbers can differ by an order of magnitude. Reading the wrong column is a classic cause of structural failure, and the labelling convention is not universal: Eurocode practice takes $y$–$y$ as the strong axis while older British (BS 5950) and American tables take $x$–$x$. Two further traps. First, the elastic and plastic moduli differ: the elastic modulus is $Z = I / y_{\max}$ by definition, but the *plastic* modulus $Z_p$ is $1.1$ to $1.15$ times larger for an I-section and $1.5$ times for a rectangle, and mixing the two gives a $50$ per cent error. Second, the tabulated $I$ is about the centroid, and a bolted or welded connection rarely loads a section through its centroid — an eccentricity of even $20\ \mathrm{mm}$ on a $200\ \mathrm{kN}$ force adds $4\ \mathrm{kN\,m}$ of moment that the section property alone never predicted.
 :::
 
 ::: history
-The second moment of area enters engineering through the bending theory, and its history is that of the beam. Leonardo da Vinci and Galileo both measured the strength of beams and both got the neutral axis wrong, Galileo placing it at the bottom fibre of a cantilever and predicting a strength proportional to the square of the depth rather than to the depth itself. Edme Mariotte corrected the neutral-axis position in 1682 and found the linear strain distribution; Jacob Bernoulli introduced the "elastic curve" in 1694 and, in the work published posthumously in 1713, used what is essentially the second moment of the cross-section. Leonhard Euler gave the buckling load in 1744 and 1757 with $E I$ appearing explicitly, and Coulomb's 1773 memoir on the strength of materials stated the linear stress distribution across a section. Thomas Young named and quantified the modulus of elasticity in 1807, and Navier's *Résumé des leçons* of 1826 assembled the modern bending formula $\sigma = M y / I$ together with the deflection theory, at the École des Ponts et Chaussées where the practical need to size iron girders made section properties a first-class engineering quantity. The parallel-axis theorem itself is a special case of the transfer theorem for second moments that Lagrange had already used in the mechanics of rigid bodies, where the corresponding quantity is the moment of inertia of a mass and the transfer term is $M d^{2}$ rather than $A d^{2}$.
+The second moment of area enters engineering through the bending theory, and its history is that of the beam. Galileo's *Two New Sciences* (1638) analysed the strength of a cantilever by assuming every fibre fails in tension together about the bottom edge, which gives the correct proportionality to $b d^{2}$ but a coefficient three times too large. Edme Mariotte in the 1680s introduced fibres stretched in proportion to their distance from an axis, and Jacob Bernoulli's study of the elastic curve (1694) related its curvature to the bending moment. Leonhard Euler gave the buckling load in 1744 and 1757 with $E I$ appearing explicitly, and Coulomb's 1773 memoir on the strength of materials stated the linear stress distribution across a section. Thomas Young named and quantified the modulus of elasticity in 1807, and Navier's *Résumé des leçons* of 1826 assembled the modern bending formula $\sigma = M y / I$ together with the deflection theory, at the École des Ponts et Chaussées where the practical need to size iron girders made section properties a first-class engineering quantity. The parallel-axis theorem itself is the area form of the transfer theorem that Huygens had used for the moment of inertia of a mass in his theory of the compound pendulum (1673), where the transfer term is $M d^{2}$ rather than $A d^{2}$; it is also known as Steiner's theorem.
 :::
 
 ::: quiz
-Two sections have the same area. Section A is a solid rectangle $60 \times 240\ \mathrm{mm}$; section B is the same rectangle cut into four equal strips of $60 \times 60$ and re-arranged side by side at the same overall depth. Which is stiffer in bending about the strong axis?
+Two sections have the same area. Section A is a solid rectangle $60 \times 240\ \mathrm{mm}$; section B is the same rectangle cut into four equal strips of $60 \times 60$ and laid side by side, so that it becomes $240\ \mathrm{mm}$ wide by $60\ \mathrm{mm}$ deep. Which is stiffer in bending about the strong axis?
 - [ ] They are equal, because the area is unchanged
 - [x] Section A, because its material lies further from the neutral axis on average
 - [ ] Section B, because it has more surfaces
@@ -349,13 +349,13 @@ The transfer term is $48$ times the section's own moment: at $20\ \mathrm{mm}$ f
 ::: exercise Radius of gyration {level=2}
 For the built-up I-section of Example 1, find $r_x$ and the ratio $r_x / (d / 2)$, where $d = 300\ \mathrm{mm}$.
 ::: solution
-$r_x = \sqrt{171.7 \times 10^{6} / 11\,120} = 124.3\ \mathrm{mm}$, so $r_x / (d / 2) = 124.3 / 150 = 0.829$.
-*Interpretation.* The radius of gyration is $83$ per cent of the half-depth, meaning the section behaves as if its whole area were concentrated at $0.83$ of the extreme-fibre distance. A solid rectangle has $r / (d / 2) = 1 / \sqrt{3} = 0.577$, and a thin-walled circle has essentially $1.0$. The ratio is a good single-number measure of section efficiency, and it is also what governs buckling: the slenderness ratio is $L / r$, so an efficient bending section is automatically an efficient column about the same axis.
+$r_x = \sqrt{174.6 \times 10^{6} / 11\,120} = 125.3\ \mathrm{mm}$, so $r_x / (d / 2) = 125.3 / 150 = 0.835$.
+*Interpretation.* The radius of gyration is $84$ per cent of the half-depth, meaning the section behaves as if its whole area were concentrated at $0.84$ of the extreme-fibre distance. A solid rectangle has $r / (d / 2) = 1 / \sqrt{3} = 0.577$, and a thin-walled circle has essentially $1.0$. The ratio is a good single-number measure of section efficiency, and it is also what governs buckling: the slenderness ratio is $L / r$, so an efficient bending section is automatically an efficient column about the same axis.
 :::
 :::
 
 ::: exercise Weak and strong axis {level=2}
-A $150 \times 75 \times 18$ equal angle has $I_x = I_y = 5.48 \times 10^{6}\ \mathrm{mm^{4}}$ and $I_{xy} = -3.24 \times 10^{6}\ \mathrm{mm^{4}}$ about its centroidal axes parallel to the legs. Find the principal moments.
+An equal-leg angle has $I_x = I_y = 5.48 \times 10^{6}\ \mathrm{mm^{4}}$ and $I_{xy} = -3.24 \times 10^{6}\ \mathrm{mm^{4}}$ about its centroidal axes parallel to the legs. Find the principal moments.
 ::: solution
 $$
 I_{\text{avg}} = 5.48 \times 10^{6}, \qquad \frac{I_x - I_y}{2} = 0, \qquad
@@ -377,7 +377,7 @@ $$
 I = \frac{\pi (100^{4} - 88^{4})}{64} = \frac{\pi (10^{8} - 5.997 \times 10^{7})}{64}
 = \frac{\pi \times 4.003 \times 10^{7}}{64} = 1.965 \times 10^{6}\ \mathrm{mm^{4}} = 196.5\ \mathrm{cm^{4}} .
 $$
-*Check with the thin-wall formula.* $I \approx \pi \tau t^{3} = \pi \times 6 \times 47^{3} = 1.966 \times 10^{6}\ \mathrm{mm^{4}}$, within $0.1$ per cent, since $t / \tau = 7.8$ is comfortably thin. A solid $100\ \mathrm{mm}$ bar has $I = 4.91 \times 10^{6}\ \mathrm{mm^{4}}$ from five times the area, so the tube is $1.3$ times as efficient per unit weight — less dramatic than for an I-section, because a circular tube cannot put its material as far from one particular axis.
+*Check with the thin-wall formula.* $I \approx \pi \tau t^{3} = \pi \times 6 \times 47^{3} = 1.957 \times 10^{6}\ \mathrm{mm^{4}}$, within $0.4$ per cent, since $t / \tau = 7.8$ is comfortably thin. A solid $100\ \mathrm{mm}$ bar has $I = 4.91 \times 10^{6}\ \mathrm{mm^{4}}$ from $4.4$ times the area, so the tube is $1.8$ times as efficient per unit weight — less dramatic than for an I-section, because a circular tube cannot put its material as far from one particular axis.
 :::
 :::
 
@@ -419,6 +419,6 @@ $$
 $$
 as required.
 
-*Why it matters.* The triangle is the load diagram of a triangularly distributed load and the cross-section of a wedge, a fillet weld and a concrete gravity dam's profile, so $b h^{3} / 36$ and $b h^{3} / 12$ are both in constant use — and the ratio of $3$ between them is a good reminder that the parallel-axis term for a triangle is two thirds of the total, so a dam analysed about its base rather than its centroid understates its own stiffness by a factor of three.
+*Why it matters.* The triangle is the load diagram of a triangularly distributed load and the cross-section of a wedge, a fillet weld and a concrete gravity dam's profile, so $b h^{3} / 36$ and $b h^{3} / 12$ are both in constant use — and the ratio of $3$ between them is a good reminder that the parallel-axis term for a triangle is two thirds of the total, so a second moment taken about the base by mistake overstates the centroidal value threefold.
 :::
 :::

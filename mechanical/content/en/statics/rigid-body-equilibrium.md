@@ -41,7 +41,7 @@ $$
 = \mathbf{M}_{R,O} - \mathbf{a} \times \sum_i \mathbf{F}_i
 = \mathbf{M}_{R,O} - \mathbf{a} \times \mathbf{F}_R .
 $$
-If $\mathbf{F}_R = \mathbf{0}$ the second term vanishes and the two moments are equal, so one being zero makes the other zero. This is why a couple has the same moment everywhere, and why the choice of moment centre in a hand calculation is entirely free — take it where the most unknowns cross, so that they drop out. For the alternative sets: $\sum F_x = 0$ together with $\sum M_A = 0$ forces $\sum F_y = 0$ unless the line $AB$ is perpendicular to $y$ (because a residual $\sum F_y$ acting through $A$ has moment $\sum F_y$ times the horizontal distance to $B$, which vanishes only if $A$ and $B$ share an $x$-coordinate); and three non-collinear moment equations force both force sums to zero, since a residual force would have to pass through all three points and no line contains three non-collinear points. These alternatives are genuinely useful: three moment equations about three points solve a plane problem with no simultaneous equations at all.
+If $\mathbf{F}_R = \mathbf{0}$ the second term vanishes and the two moments are equal, so one being zero makes the other zero. This is why a couple has the same moment everywhere, and why the choice of moment centre in a hand calculation is entirely free — take it where the most unknowns cross, so that they drop out. For the alternative sets: $\sum F_x = 0$ and $\sum M_A = 0$ leave at most a residual vertical force acting through $A$, and $\sum M_B = 0$ then forces it to vanish unless the line $AB$ is vertical (the residual has moment about $B$ equal to its magnitude times the horizontal distance between $A$ and $B$, which is zero only if they share an $x$-coordinate); and three non-collinear moment equations force both force sums to zero, since a residual force would have to pass through all three points and no line contains three non-collinear points. These alternatives are genuinely useful: three moment equations about three points solve a plane problem with no simultaneous equations at all.
 :::
 
 ::: definition Constraints, reactions and determinacy {#def-constraints}
@@ -141,11 +141,11 @@ so $A$ pulls *down* with $15\ \mathrm{kN}$. The two reactions form a counter-cou
 :::
 
 ::: widget plot
-f: 40*x/6 + 10*x - x*x/2
+f: 90 - 40*heaviside(x-1.5) - 20*x
 x: 0, 6
-y: 0, 75
+y: -80, 100
 labels: \text{shear force } V(x) \text{ in the beam of Example 1}
-caption: Shear force along the $6\ \mathrm{m}$ beam of Example 1, $V(x) = 90 - 40\langle x - 1.5 \rangle^{0} - 20 x$ in $\mathrm{kN}$, drawn without the jump so that the two linear branches meet at $x = 1.5\ \mathrm{m}$. The reactions $90\ \mathrm{kN}$ and $70\ \mathrm{kN}$ are the values at the ends, and the point where $V$ crosses zero, at $x = 3.5\ \mathrm{m}$, is where the bending moment is greatest. Reading reactions off a shear diagram's endpoints is a useful check in the other direction.
+caption: Shear force along the $6\ \mathrm{m}$ beam of Example 1, $V(x) = 90 - 40\langle x - 1.5 \rangle^{0} - 20 x$ in $\mathrm{kN}$, with its $40\ \mathrm{kN}$ jump under the point load at $x = 1.5\ \mathrm{m}$. The value at the left end is the reaction $A_y = 90\ \mathrm{kN}$ and the value at the right end is $-70\ \mathrm{kN}$, minus the reaction $N_B$; the point where $V$ crosses zero, at $x = 2.5\ \mathrm{m}$, is where the bending moment is greatest ($122.5\ \mathrm{kN\,m}$). Reading reactions off a shear diagram's endpoints is a useful check in the other direction.
 :::
 
 ## Two-force and three-force members
@@ -202,17 +202,17 @@ A rigid body in space has six equilibrium equations, $\sum F_x = \sum F_y = \sum
 |---|---|---|
 | Roller / smooth surface | translation normal to the surface | 1 |
 | Ball-and-socket | translation in any direction | 3 |
-| Pin (hinge) about a known axis | translation and rotation about other axes | 4 (3 forces + 1 moment about the pin axis) |
+| Single hinge about a known axis | translation, and rotation about the two axes perpendicular to the hinge axis | 5 (3 forces + 2 moments perpendicular to the hinge axis) |
 | Fixed (built-in) | all motion | 6 |
-| Ball (link) | translation along its own axis | 1 |
+| Short link (two-force member) | translation along its own axis | 1 |
 
 A body needs six independent constraints, and as in a plane they must be arranged so that no motion is left free and none is restrained twice.
 :::
 
-::: example Trapped crate: three-dimensional reactions {#ex-crate}
+::: example Crate under a side push: tipping {#ex-crate}
 A crate of weight $W = 8\ \mathrm{kN}$, uniform, sits on a horizontal floor and is pushed at its top edge by a horizontal force $P = 3\ \mathrm{kN}$. The crate is $1.2\ \mathrm{m}$ wide and $1.5\ \mathrm{m}$ high. Find the normal reaction and its line of action, and determine whether the crate tips.
 ::: solution
-Model the crate as a rigid body in a plane (the problem is uniform in the third direction). Four unknowns appear if the floor is modelled as a distributed contact, so the contact must be reduced: a rigid crate on a rigid floor has either one contact patch at each bottom edge (two vertical reactions, no horizontal because the floor is smooth) or one patch at one edge if it is just tipping. Take the smooth-floor model with reactions $N_1$ and $N_2$ at the two bottom corners, $A$ (downwind, left) and $B$ (upwind, right), $1.2\ \mathrm{m}$ apart, and a frictionless floor so no horizontal reaction.
+Model the crate as a rigid body in a plane (the problem is uniform in the third direction). Four unknowns appear if the floor is modelled as a distributed contact, so the contact must be reduced: a rigid crate on a rigid floor has either one contact patch at each bottom edge (two vertical reactions, no horizontal because the floor is smooth) or one patch at one edge if it is just tipping. Take the smooth-floor model with reactions $N_1$ and $N_2$ at the two bottom corners, $A$ (left, on the side from which $P$ pushes) and $B$ (right, the edge about which the crate would tip), $1.2\ \mathrm{m}$ apart, and a frictionless floor so no horizontal reaction.
 
 Horizontal equilibrium then requires $P$ to be balanced by nothing — so the floor cannot be smooth, and the horizontal reaction is friction. Take the crate on the point of tipping about $B$ to find the critical $P$:
 $$
@@ -223,16 +223,16 @@ $$
 The applied $P = 3\ \mathrm{kN}$ is $94$ per cent of the tipping value, so the crate does not tip but comes close. With $P = 3\ \mathrm{kN}$ the normal reaction's line of action has moved from the centreline towards $B$; taking moments about the centreline $G$ at the base,
 $$
 N_{\text{total}} = 8\ \mathrm{kN}, \qquad
-\bar{x} = \frac{P \times 1.5}{W} = \frac{4.5}{8} = 0.5625\ \mathrm{m} \ \text{from } A,
+e = \frac{P \times 1.5}{W} = \frac{4.5}{8} = 0.5625\ \mathrm{m} \ \text{from the centreline towards } B,
 $$
-which is $0.0375\ \mathrm{m}$ inside the edge $B$. The whole $8\ \mathrm{kN}$ is carried within $38\ \mathrm{mm}$ of the downwind edge.
+which is $0.6 - 0.5625 = 0.0375\ \mathrm{m}$ inside the edge $B$. The whole $8\ \mathrm{kN}$ is carried within $38\ \mathrm{mm}$ of the edge $B$.
 
 *Sanity.* The tipping ratio is $P / W = b / (2 h) = 1.2 / 3.0 = 0.40$: a crate this shape tips at $40$ per cent of its weight in side thrust. Widen the base to $1.8\ \mathrm{m}$ and the ratio becomes $0.60$, a $50$ per cent improvement for a $50$ per cent increase in width — the reason shipping containers are stacked wide and low, and the reason a forklift has a wheelbase rather than a wheeltrack doing the work.
 :::
 :::
 
 ::: history
-The general conditions of equilibrium of a rigid body, in the modern form of six scalar equations, were first stated by Varignon in 1687 and put into analytic form by Euler in *Du mouvement des corps en général* (Berlin, 1758), where the three force equations and three moment equations appear separately for the first time and the motion of a rigid body is split into translation of the centre of mass and rotation about it. The classification of constraints and the counting rule for determinacy belong to the nineteenth century: Rankine's *Applied Mechanics* of 1858 gives the graphical treatment of framed structures and the criterion $m = 2n - 3$ for a plane truss, and Clerk Maxwell's *On the calculation of frames* of 1864 — the paper that introduced the reciprocal diagram and, incidentally, the reciprocal theorem of structural analysis — is the first clear statement that a frame with more members than $2n - 3$ cannot be solved by statics alone. Maxwell's counting argument, now called the Maxwell–Rankine rule, is the ancestor of every determinacy check in structural analysis and of the matrix methods of the twentieth century.
+The conditions of equilibrium of a rigid body — zero resultant force and zero resultant moment — were assembled from Stevin's composition of forces and Varignon's theorem of moments, and put into analytic form by Euler, whose *Découverte d'un nouveau principe de mécanique* (written 1750) wrote Newton's second law as component equations and whose *Theoria motus corporum solidorum seu rigidorum* (1765) split the motion of a rigid body into translation of the centre of mass and rotation about it. Euler also met the first statically indeterminate problem: in a memoir of 1773 on a table standing on four legs he observed that statics alone cannot share the load between the legs, and he resolved it by allowing the floor to deform. The counting rule for determinacy belongs to the nineteenth century: Möbius showed in his *Lehrbuch der Statik* (1837) that a plane framework of $n$ joints needs $2n - 3$ bars to be rigid, Rankine's *Manual of Applied Mechanics* (1858) gave a graphical treatment of framed structures, and Clerk Maxwell's 1864 paper *On the calculation of the equilibrium and stiffness of frames* stated the counting rule for plane and space frames and introduced the reciprocal theorem of structural analysis. Maxwell's rule is the ancestor of every determinacy check in structural analysis and of the matrix methods of the twentieth century.
 :::
 
 ::: quiz
@@ -269,7 +269,7 @@ $M = 30 \times 2 = 60\ \mathrm{kN\,m}$, counteracting the load's moment. The fix
 :::
 
 ::: exercise Overhanging beam {level=1 check="-15"}
-A beam is supported at $A$ (x = 0) and $B$ (x = 4\ \mathrm{m}$), with a $1\ \mathrm{m}$ overhang beyond $B$. A downward load of $60\ \mathrm{kN}$ acts at the tip of the overhang. What is the vertical reaction at $A$? (Enter the answer in kN, up positive.)
+A beam is supported at $A$ ($x = 0$) and $B$ ($x = 4\ \mathrm{m}$), with a $1\ \mathrm{m}$ overhang beyond $B$. A downward load of $60\ \mathrm{kN}$ acts at the tip of the overhang. What is the vertical reaction at $A$? (Enter the answer in kN, up positive.)
 ::: solution
 Moments about $B$ eliminate $B_y$. The load is $1\ \mathrm{m}$ beyond $B$ and $A$ is $4\ \mathrm{m}$ behind it, so
 $$
@@ -335,7 +335,7 @@ $$
 :::
 
 ::: exercise Two-force member identification {level=2}
-In the frame of Example 6, replace the load position so that the $20\ \mathrm{kN}$ load acts at the midpoint of $EB$ instead. Find the reactions and state whether $EB$ is still a two-force member.
+In the frame of Example 4, replace the load position so that the $20\ \mathrm{kN}$ load acts at the midpoint of $EB$ instead. Find the reactions and state whether $EB$ is still a two-force member.
 ::: solution
 $EB$ is **no longer** a two-force member, because it now carries three forces: at $E$, at $B$ and at the load point. Its force is not along $EB$, and the four reaction components must be found from four equations — three for the whole structure and one from the hinge at $E$ (the moment about $E$ of the forces on $AE$ is zero, and $AE$ now carries only the forces at $A$ and $E$).
 
@@ -358,42 +358,42 @@ A uniform rectangular plate of weight $600\ \mathrm{N}$ lies in a horizontal pla
 ::: solution
 The ball at $O$ gives three components and the three links give three more: six unknowns and six equations. The links are vertical, so each force is $(0, 0, F_i)$. Vertical equilibrium and the two moment equations about horizontal axes through $O$ are the only ones that involve the link forces (the other three give $O_x = O_y = 0$ and are trivially satisfied):
 $$
-\textstyle \sum F_z = F_A + F_B + F_C - 600 = 0 ,
+\textstyle \sum F_z = O_z + F_A + F_B + F_C - 600 = 0 ,
 $$
 $$
-\textstyle \sum M_x = 1.2 F_A + 1.2 F_B + 0 \times F_C - 600 \times 0.6 = 0
+\textstyle \sum M_x = 0.9 F_B + 0.9 F_C - 600 \times 0.45 = 0
 \quad\Longrightarrow\quad
-F_A + F_B = 300 ,
+F_B + F_C = 300 ,
 $$
 $$
-\textstyle \sum M_y = -1.2 F_A - 0 \times F_B - 1.2 F_C + 600 \times 0.6 = 0
+\textstyle \sum M_y = -1.2 F_A - 1.2 F_B + 600 \times 0.6 = 0
 \quad\Longrightarrow\quad
-F_A + F_C = 300 .
+F_A + F_B = 300 .
 $$
-Then $F_B = F_C = 300 - F_A$ and vertical equilibrium gives $F_A + 2(300 - F_A) = 600$, so $F_A$ cancels out: the system is **statically indeterminate**, with $F_A$ undetermined.
+That is three equations for the four vertical unknowns $O_z$, $F_A$, $F_B$, $F_C$: any value of $F_B$ gives $F_A = F_C = 300 - F_B$ and $O_z = F_B$, so the system is **statically indeterminate** to the first degree. The sixth equation, $\sum M_z = 0$, contains no unknown at all.
 
-The reason is geometric. The four vertical supports are all parallel, so no horizontal force and no moment about a vertical axis can be resisted, and the vertical load distribution is under-determined. Physically, the load shared by $A$ and $B$ equals that shared by $C$ and $B$, so $F_C = F_A$ and by symmetry of the loading $F_A = F_C$ and $F_B$ is free within limits. Adding one non-vertical link, or removing the link at $B$ and letting the ball at $O$ carry the load, restores determinacy.
+The reason is geometric. The ball at $O$ and the three vertical links between them supply four vertical reactions but nothing that can resist rotation about the vertical axis through $O$, so the plate is at once indeterminate (in the vertical load sharing) and partially constrained (it can spin about $O$). Physically, the load at the centre can be carried entirely by the diagonal pair $A$ and $C$ ($F_A = F_C = 300\ \mathrm{N}$, $F_B = O_z = 0$), entirely by the other diagonal pair $O$ and $B$, or by any mix. Removing the link at $B$ makes the vertical problem determinate ($F_A = F_C = 300\ \mathrm{N}$, $O_z = 0$), and adding a horizontal link, for example at $A$ in the $y$-direction, removes the free rotation.
 
 *Design lesson.* Six reaction components do not guarantee determinacy: the constraints must be *independent*. Parallel supports are the classic trap, and the check is to ask whether the constraint set can resist each of the six motions.
 :::
 :::
 
 ::: exercise Design: hold-down {level=3}
-A sign $2.4\ \mathrm{m}$ wide by $1.2\ \mathrm{m}$ deep is carried on two vertical posts $2.0\ \mathrm{m}$ apart, its centre $3.5\ \mathrm{m}$ above the ground. Wind pressure is $0.8\ \mathrm{kN/m^{2}}$ normal to the face. The structure weighs $6\ \mathrm{kN}$, acting on the centreline. Find the maximum uplift and the maximum compression in the post bases, and state the implication for the foundations.
+A sign $2.4\ \mathrm{m}$ wide by $1.2\ \mathrm{m}$ deep is carried by two identical side frames, one at each end of the sign; each frame has a front post and a back post $2.0\ \mathrm{m}$ apart in the direction of the wind, and the sign's centre is $3.5\ \mathrm{m}$ above the ground. Wind pressure is $0.8\ \mathrm{kN/m^{2}}$ normal to the face. The structure weighs $6\ \mathrm{kN}$, acting on the centreline. Find the maximum uplift and the maximum compression in the post bases, and state the implication for the foundations.
 ::: solution
-The wind force is $P = 0.8 \times 2.4 \times 1.2 = 2.30\ \mathrm{kN}$, acting at a height of $3.5\ \mathrm{m}$ and shared equally by the two posts, so each post frame takes $1.15\ \mathrm{kN}$ at $3.5\ \mathrm{m}$.
+The wind force is $P = 0.8 \times 2.4 \times 1.2 = 2.30\ \mathrm{kN}$, acting at a height of $3.5\ \mathrm{m}$ and shared equally by the two posts, so each side frame takes $1.15\ \mathrm{kN}$ at $3.5\ \mathrm{m}$.
 
-Consider one portal frame: horizontal force $1.15\ \mathrm{kN}$ at $3.5\ \mathrm{m}$, weight $3\ \mathrm{kN}$ on the centreline, posts $2.0\ \mathrm{m}$ apart. Overturning moment about the leeward base:
+Consider one side frame: horizontal force $1.15\ \mathrm{kN}$ at $3.5\ \mathrm{m}$, weight $3\ \mathrm{kN}$ on the centreline midway between the posts, posts $2.0\ \mathrm{m}$ apart. Overturning moment about the leeward base:
 $$
 M_O = 1.15 \times 3.5 = 4.03\ \mathrm{kN\,m}, \qquad \text{restoring moment} = 3 \times 1.0 = 3.00\ \mathrm{kN\,m}.
 $$
-The overturning moment exceeds the restoring moment, so the leeward base **lifts**:
+The overturning moment exceeds the restoring moment, so the windward base must be held **down**. Taking moments about the leeward base, with $R_{\text{windward}}$ the upward reaction at the windward base $2.0\ \mathrm{m}$ upwind,
 $$
-\textstyle \sum M_{\text{windward}} = R_{\text{leeward}} \times 2.0 + 3 \times 1.0 - 1.15 \times 3.5 = 0
+\textstyle \sum M_{\text{leeward}} = R_{\text{windward}} \times 2.0 - 3 \times 1.0 + 1.15 \times 3.5 = 0
 \quad\Longrightarrow\quad
-R_{\text{leeward}} = \frac{4.03 - 3.00}{2.0} = -0.51\ \mathrm{kN},
+R_{\text{windward}} = -\frac{4.03 - 3.00}{2.0} = -0.51\ \mathrm{kN},
 $$
-an uplift of $0.51\ \mathrm{kN}$, and $R_{\text{windward}} = 3 + 0.51 = 3.51\ \mathrm{kN}$ downward.
+an uplift of $0.51\ \mathrm{kN}$ that the windward foundation must resist, and $R_{\text{leeward}} = 3 + 0.51 = 3.51\ \mathrm{kN}$ of compression at the leeward base.
 
 *Implication.* A base plate resting under its own weight cannot resist $0.51\ \mathrm{kN}$ of uplift, so the frame would rock and the holding-down bolts would fatigue. Each post needs at least two bolts rated for the uplift with the usual factor of safety, grouted so that the compression is taken by the concrete and the tension by the bolts, and the design must check the *reversal*, not the maximum compression. This is the everyday reason sign posts, gantries and light masts are bolted rather than bedded, and why the bolt group is checked in the load combination where the wind is on the *back* of the sign.
 :::

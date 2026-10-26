@@ -106,7 +106,7 @@ f: 1/sqrt((1-x^2)^2+(2*0.05*x)^2)
 x: 0, 3
 y: 0, 10
 labels: \text{magnification factor } M
-caption: Magnification factor against frequency ratio for a damping ratio of $0.05$, showing the peak of $1 / \left( 2 \zeta \right) = 10$ just below $r = 1$ and the $1 / r^{2}$ tail beyond it. Two features are worth memorising from this curve. The first is how **narrow** the danger is: at twice the natural frequency the response is a quarter of the static deflection, so a machine running at three times its natural frequency is essentially isolated, and the whole design problem is the passage through the peak. The second is that the curve for $r > 1$ is nearly the same for every damping value — the damping barely changes the isolation, which is why an isolation design is a frequency-ratio design and not a damping design.
+caption: Magnification factor against frequency ratio for a damping ratio of $0.05$, showing the peak of $1 / \left( 2 \zeta \right) = 10$ just below $r = 1$ and the $1 / r^{2}$ tail beyond it. Two features are worth memorising from this curve. The first is how **narrow** the danger is: at twice the natural frequency the response is a third of the static deflection, so a machine running at three times its natural frequency is essentially isolated, and the whole design problem is the passage through the peak. The second is that the curve for $r > 1$ is nearly the same for every damping value — the damping barely changes the isolation, which is why an isolation design is a frequency-ratio design and not a damping design.
 :::
 
 ## Rotating unbalance
@@ -139,11 +139,11 @@ $$
 \qquad X = 0.111\ \mathrm{mm}.
 $$
 **At resonance.** $X = 0.10 / \left( 2 \times 0.1 \right) = 0.50\ \mathrm{mm}$.
-**At $3000\ \mathrm{rpm}$** $\left( r = 6.28 \right)$: $X / \left( m_e e / m \right) = 1.017$, so $X = 0.103\ \mathrm{mm}$.
+**At $3000\ \mathrm{rpm}$** $\left( r = 6.28 \right)$: $X / \left( m_e e / m \right) = 1.025$, so $X = 0.103\ \mathrm{mm}$.
 
 *Check.* The two high-speed answers, $0.111$ and $0.103\ \mathrm{mm}$, are both within ten per cent of the asymptote $m_e e / m = 0.10\ \mathrm{mm}$ $\checkmark$
 
-*Sanity.* Doubling the speed from $1500$ to $3000\ \mathrm{rpm}$ barely changes the vibration, which is the signature of a machine running well above its critical speed and the reason a vibration spectrum of such a machine is a **balance certificate**: the amplitude, divided by the speed, gives the eccentricity directly. It is also why a machine whose running speed is above its first critical must be taken through that critical **quickly** at start-up, and why the amplitude at resonance — half a millimetre here, five times the running value — is the number that decides whether the machine can be started at all. The $477\ \mathrm{rpm}$ critical of a $200\ \mathrm{kg}$ rotor on $500\ \mathrm{kN / m}$ is low; real pump supports are much stiffer, and the design aim is to put the first critical at least twenty-five per cent above the maximum continuous speed.
+*Sanity.* Doubling the speed from $1500$ to $3000\ \mathrm{rpm}$ barely changes the vibration, which is the signature of a machine running well above its critical speed and the reason a vibration spectrum of such a machine is a **balance certificate**: the amplitude itself is the mass-centre eccentricity $m_e e / m$, and multiplied by the mass it gives the residual unbalance directly. It is also why a machine whose running speed is above its first critical must be taken through that critical **quickly** at start-up, and why the amplitude at resonance — half a millimetre here, five times the running value — is the number that decides whether the machine can be started at all. The $477\ \mathrm{rpm}$ critical of a $200\ \mathrm{kg}$ rotor on $500\ \mathrm{kN / m}$ is low; real pump supports are much stiffer, and the design aim is to put the first critical at least twenty-five per cent above the maximum continuous speed.
 :::
 :::
 
@@ -159,10 +159,10 @@ $$
 \frac{X}{Y} = \frac{\sqrt{1 + 0.0977}}{\sqrt{76.83 + 0.0977}} = \frac{1.048}{8.77} = 0.119,
 \qquad X = 0.024\ \mathrm{mm}.
 $$
-**At $2\ \mathrm{Hz}$.** $r = 12.5$, $X / Y = 0.0064$, so $X = 0.0013\ \mathrm{mm}$ — an improvement of eighteen times for a mount one quarter the frequency.
+**At $2\ \mathrm{Hz}$.** $r = 12.5$, $X / Y = 0.0103$, so $X = 0.0021\ \mathrm{mm}$ — an improvement of about twelve times for a mount one quarter the frequency.
 **But check the resonance.** If the floor also vibrates at $8\ \mathrm{Hz}$, then at $r = 1$,
 $$
-\frac{X}{Y} = \frac{\sqrt{1 + 0.04}}{0.1} = 10.2,
+\frac{X}{Y} = \frac{\sqrt{1 + 0.01}}{0.1} = 10.0,
 $$
 and the same mount **amplifies** a $0.02\ \mathrm{mm}$ component at $8\ \mathrm{Hz}$ into $0.2\ \mathrm{mm}$ at the instrument.
 
@@ -182,15 +182,15 @@ $$
 $$
 with $\omega_n = \sqrt{200 / 0.5} = 20\ \mathrm{rad / s} = 3.18\ \mathrm{Hz}$. At $40\ \mathrm{Hz}$, $r = 12.57$ and
 $$
-\frac{Z}{Y} = \frac{158.0}{\sqrt{157.0^{2} + 17.6^{2}}} = 1.0006 ,
+\frac{Z}{Y} = \frac{158.0}{\sqrt{157.0^{2} + 17.6^{2}}} = 1.0001 ,
 $$
-so the instrument reads base displacement to $0.06$ per cent. The practical lower limit, at one per cent error, is about $10\ \mathrm{Hz}$ — three times the natural frequency.
-**As an accelerometer.** With $f_n = 100\ \mathrm{Hz}$ and $\zeta = 0.7$, at $20\ \mathrm{Hz}$ the ratio $Z / \left( A / \omega_n^{2} \right)$ is
+so the instrument reads base displacement to $0.01$ per cent. The practical lower limit, at one per cent error, is about $8\ \mathrm{Hz}$ — two and a half times the natural frequency.
+**As an accelerometer.** With $f_n = 100\ \mathrm{Hz}$ and $\zeta = 0.7$, at $20\ \mathrm{Hz}$ ($r = 0.2$) the ratio $Z / Y$ is
 $$
 \frac{r^{2}}{\sqrt{\left( 1 - r^{2} \right)^{2} + \left( 2 \zeta r \right)^{2}}}
 = \frac{0.0400}{\sqrt{0.9216 + 0.0784}} = 0.0400 ,
 $$
-against the ideal $r^{2} = 0.0400$: an error of $0.0$ per cent in the flat region, and $+ 12$ per cent overshoot at $r = 1$ rather than the $500$ per cent of an undamped instrument.
+against the ideal $r^{2} = 0.0400$ (relative motion proportional to base acceleration): an error below $0.1$ per cent in the flat region. At $r = 1$ the reading is $1 / \left( 2 \zeta \right) = 0.71$ of the ideal, with no resonant peak at all, whereas an undamped instrument's response there would be unbounded.
 
 *Sanity.* The same physical device reads **displacement** when its natural frequency is far **below** the measured frequency and **acceleration** when it is far **above**. That is not a trick of design but of the transfer function, and it is why a modern accelerometer is described by its natural frequency and its damping rather than by its mass and stiffness: the piezoelectric element replaces the spring's force with a charge, but the $m / k / c$ model still sets the usable band. The damping of $0.7$ is chosen to flatten the response and to kill the ringing that would otherwise smear a shock into a decaying oscillation.
 :::
@@ -228,23 +228,23 @@ X = \frac{v_{\text{rms}} \sqrt{2}}{\omega} = \frac{4.5 \times 1.414}{303.7}
 $$
 and since the running speed is $3.2$ times the critical, $X \approx m_e e / m$, so
 $$
-m_e e = 25 \times 21.0 \times 10^{- 6} = 5.26 \times 10^{- 4}\ \mathrm{kg\,m}
-= 526\ \mathrm{g\,mm}.
+m_e e = 25 \times 21.0 \times 10^{- 6} = 5.24 \times 10^{- 4}\ \mathrm{kg\,m}
+= 524\ \mathrm{g\,mm}.
 $$
 **Balance grade.** The permissible eccentricity is
 $$
-e_{\text{per}} = \frac{U}{m} = \frac{526}{25} = 21\ \mu \mathrm{m},
+e_{\text{per}} = \frac{U}{m} = \frac{524}{25} = 21\ \mu \mathrm{m},
 \qquad
 G = e_{\text{per}} \omega = 21 \times 10^{- 6} \times 303.7 = 6.4\ \mathrm{mm / s},
 $$
 which is grade **G6.3** of ISO 1940 — the grade specified for short rigid rotors such as armature rotors and small pumps.
 
-*Design comment.* The chain of reasoning is worth spelling out because it is how the balance specification is actually generated: a vibration **severity** limit on the machine becomes a displacement limit at the running speed, which becomes a **residual unbalance** limit through the mass, which becomes a **balance grade** that the workshop can work to. Note that the whole argument depends on running well above the critical, where $X = m_e e / m$; a machine running **at** the critical would need its unbalance divided by $1 / \left( 2 \zeta \right)$ to meet the same limit, which for $\zeta = 0.05$ is twenty times tighter and would demand a grade no shop can achieve. This is why the balance grade of a rotor is meaningless without its operating speed and its critical speed, and why ISO 1940 specifies the grade as a **velocity** $G$ rather than as a mass: the grade is the vibration it would produce, and it is the only sensible way to specify a thing whose whole purpose is to limit vibration.
+*Design comment.* The chain of reasoning is worth spelling out because it is how the balance specification is actually generated: a vibration **severity** limit on the machine becomes a displacement limit at the running speed, which becomes a **residual unbalance** limit through the mass, which becomes a **balance grade** that the workshop can work to. Note that the whole argument depends on running well above the critical, where $X = m_e e / m$; a machine running **at** the critical would need its unbalance divided by $1 / \left( 2 \zeta \right)$ to meet the same limit, which for $\zeta = 0.05$ is ten times tighter. This is why the balance grade of a rotor is meaningless without its operating speed and its critical speed, and why ISO 1940 specifies the grade as a **velocity** $G$ rather than as a mass: the grade is the vibration it would produce, and it is the only sensible way to specify a thing whose whole purpose is to limit vibration.
 :::
 :::
 
 ::: history
-The **magnification factor** and its phase companion were worked out for the forced oscillator by the vibration theorists of the late nineteenth century, with Rayleigh giving the steady-state solution and the resonance definition in the *Theory of Sound*; the **half-power bandwidth** method is a twentieth-century laboratory convention, formalised in the electrical-engineering literature of the 1930s where the $Q$ of a resonant circuit was already standard. The **whirling speed** of a shaft was identified by Rankine in 1869, who wrongly concluded that a shaft could not be run above its critical speed, and the correct picture — that a flexible rotor passes through the critical and settles into a nearly deflection-free state above it — was established experimentally by Föppl and Stodola around 1900 and theoretically by **Jeffcott** in 1919, whose simple disc-on-a-shaft model is still the one used in this lesson. The **seismic instrument** principle, that the relative motion of a damped mass reads displacement above the natural frequency and acceleration below it, was worked out by the seismological schools of the 1920s and 1930s, and the **balance grade** system of ISO 1940 dates from 1973. The **vibration severity** zones of ISO 10816, which convert a subjective judgement of how badly a machine is shaking into a measured velocity, were developed through the 1970s and remain the most-used vibration specification in industry.
+The **magnification factor** and its phase companion were worked out for the forced oscillator by the vibration theorists of the late nineteenth century, with Rayleigh giving the steady-state solution and the resonance definition in the *Theory of Sound*; the **half-power bandwidth** method is a twentieth-century laboratory convention, formalised in the electrical-engineering literature of the 1930s where the $Q$ of a resonant circuit was already standard. The **whirling speed** of a shaft was analysed by Rankine in 1869, whose model suggested that a shaft could not run stably above it. De Laval's steam turbines of the 1880s nevertheless ran above their critical speed; Föppl explained why in 1895, and **Jeffcott**'s 1919 paper gave the simple disc-on-a-shaft model, with the self-centring of the rotor above the critical, that is still used in this lesson. The **seismic instrument** principle, that the relative motion of a damped mass reads displacement above the natural frequency and acceleration below it, grew out of seismograph design from the late nineteenth century. The **balance grade** system of ISO 1940 dates from 1973, and the **vibration severity** zones, which turn a judgement of how badly a machine is shaking into a measured RMS velocity, appeared in ISO 2372 (1974) and continued in ISO 10816 and its successor ISO 20816.
 :::
 
 ## Where this leads
@@ -305,7 +305,7 @@ $$
 r = 3 : \quad M = \frac{1}{\sqrt{8^{2} + 0.3^{2}}} = 0.125, \quad X = 0.31\ \mathrm{mm},
 \quad F_T = 65\ \mathrm{N}.
 $$
-*Sanity.* At three times resonance the transmitted force is one eighth of the applied force, so the machine is self-isolating at its running speed if the speed was chosen that way. The dangerous band is narrow — from $r = 0.95$ to $r = 1.1$ the amplitude exceeds seventeen millimetres — which is why the run-up is specified as a **rate**: passing the resonance in two or three cycles rather than fifty reduces the actual amplitude well below the steady value, and the transient analysis for this is in [[vibrations/general-excitation]].
+*Sanity.* At three times resonance the transmitted force is one eighth of the applied force, so the machine is self-isolating at its running speed if the speed was chosen that way. The dangerous band is narrow — from $r = 0.95$ to $r = 1.05$ the amplitude exceeds seventeen millimetres — which is why the run-up is specified as a **rate**: passing the resonance in two or three cycles rather than fifty reduces the actual amplitude well below the steady value, and the transient analysis for this is in [[vibrations/general-excitation]].
 :::
 :::
 
@@ -319,7 +319,7 @@ $$
 $$
 \frac{X}{m_e e / m} = \frac{11.84}{\sqrt{117.5 + 0.118}} = 1.092,
 \qquad
-X = 1.087 \times \frac{2 \times 10^{- 5}}{60} = 0.36\ \mu \mathrm{m}.
+X = 1.092 \times \frac{2 \times 10^{- 5}}{60} = 0.36\ \mu \mathrm{m}.
 $$
 *Sanity.* A third of a micrometre — a well-balanced rotor. Note that the amplitude at $6000\ \mathrm{rpm}$ is only nine per cent above the asymptote $m_e e / m$, so the machine is effectively in the mass-controlled region and its vibration is a balance measurement rather than a dynamics problem.
 :::
@@ -372,11 +372,11 @@ k = m \omega_n^{2} = 25\,000 \times 117.3 = 2.93 \times 10^{6}\ \mathrm{N / m}
 $$
 for the $84\ \mathrm{mm}$ static deflection. The resulting amplitude is
 $$
-X = \frac{M F_0}{k} = \frac{0.25 \times 40\,000}{2.93 \times 10^{6}} = 3.4\ \mathrm{mm},
+X = \frac{M F_0}{k} = \frac{0.227 \times 40\,000}{2.93 \times 10^{6}} = 3.1\ \mathrm{mm},
 $$
-marginally over, so take $30\ \mathrm{t}$: $X = 2.9\ \mathrm{mm}$, $k = 3.52\ \mathrm{MN / m}$, and the transmitted force is $10\ \mathrm{kN}$ as required.
+with $M = 0.227$ at $r = 2.32$, $\zeta = 0.1$ (the magnification, not the transmissibility $0.25$). This is marginally over, so take $30\ \mathrm{t}$: $X = 2.6\ \mathrm{mm}$, $k = 3.52\ \mathrm{MN / m}$, and the transmitted force is $10\ \mathrm{kN}$ as required.
 
-*Design comment.* Three things in this solution are worth carrying away. First, the **amplitude** requirement is a mass requirement and the **force** requirement is a frequency-ratio requirement; no choice of stiffness satisfies both, because in the isolation region the amplitude is $F_0 / m \omega^{2}$ and does not care about $k$. Second, the static deflection is fixed by the frequency ratio alone — $\delta_{\text{st}} = g r^{2} / \omega^{2}$ — so demanding twenty-five per cent transmission at four hertz **means** accepting eighty-four millimetres of settle, and that number, not the stiffness, is what decides the mount type. Third, eighty-four millimetres under a thirty-tonne block is $2.5\ \mathrm{MN}$ of load on $84\ \mathrm{mm}$ of travel, which is a steel-spring or air-mount problem rather than a rubber one, and the block must be heavy enough that its own rocking and pitching modes stay well above four hertz. This is why large presses, hammers and shears sit on blocks of concrete weighing ten to fifty times the machine, and why the foundation is designed as a rigid body whose own natural frequencies are checked against the excitation before the mounts are chosen.
+*Design comment.* Three things in this solution are worth carrying away. First, the **amplitude** requirement is a mass requirement and the **force** requirement is a frequency-ratio requirement; no choice of stiffness satisfies both, because in the isolation region the amplitude is $F_0 / m \omega^{2}$ and does not care about $k$. Second, the static deflection is fixed by the frequency ratio alone — $\delta_{\text{st}} = g r^{2} / \omega^{2}$ — so demanding twenty-five per cent transmission at four hertz **means** accepting eighty-four millimetres of settle, and that number, not the stiffness, is what decides the mount type. Third, eighty-four millimetres under a thirty-tonne block is about $0.29\ \mathrm{MN}$ of load on $84\ \mathrm{mm}$ of travel, which is a steel-spring or air-mount problem rather than a rubber one, and the block must be heavy enough that its own rocking and pitching modes stay well above four hertz. This is why large presses, hammers and shears sit on blocks of concrete weighing ten to fifty times the machine, and why the foundation is designed as a rigid body whose own natural frequencies are checked against the excitation before the mounts are chosen.
 :::
 :::
 

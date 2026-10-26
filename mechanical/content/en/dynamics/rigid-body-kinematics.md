@@ -9,7 +9,7 @@ The angular velocity $\boldsymbol{\omega}$ is a property of the **rigid body**: 
 ## Translation and rotation
 
 ::: definition Plane motion of a rigid body {#def-plane-motion}
-A body has **plane motion** when all its points move in parallel planes and it does not rotate about an axis perpendicular to them. Its motion is then either:
+A body has **plane motion** when all its points move in parallel planes, so that any rotation is about an axis perpendicular to them. Its motion is then either:
 
 - **Translation**, in which every line in the body stays parallel to itself, so $\boldsymbol{\omega} = 0$ and all points have the same velocity and acceleration; or
 - **Rotation about a fixed axis**, in which for a point at position $\mathbf{r}$ from the axis
@@ -74,7 +74,7 @@ $$
 IP = \sqrt{0.4^{2} + 0.4^{2}} = 0.5657\ \mathrm{m}, \qquad
 v_P = 20 \times 0.5657 = 11.31\ \mathrm{m / s},
 $$
-directed perpendicular to $IP$, that is at $45^{\circ}$ up and forward.
+directed perpendicular to $IP$, that is at $45^{\circ}$ forwards and downwards for the point ahead of the centre.
 **Top of the wheel**, at $T$:
 $$
 v_T = \omega \times 2 R = 20 \times 0.8 = 16.0\ \mathrm{m / s} = 2 v_{\text{centre}} .
@@ -87,7 +87,7 @@ $$
 $$
 directed forwards and downwards at $45^{\circ}$, perpendicular to $IP$ as the instantaneous-centre method requires. $\checkmark$
 
-*Sanity.* The top of a rolling wheel moves at twice the vehicle's speed and the contact point at zero — two facts that can be verified by filming the spokes of a moving bicycle and that surprise almost everyone the first time. They explain why a rolling wheel throws mud forwards and up from its top rather than backwards, why the outer flange of a railway wheel is the fastest-moving part of a train and is worn accordingly, and why the tread of a tyre at the contact patch is momentarily stationary relative to the road — which is exactly the condition that makes static friction, and therefore tractive force, available. A skid is the failure of that condition, and the friction available then drops from the static to the kinetic value.
+*Sanity.* The top of a rolling wheel moves at twice the vehicle's speed and the contact point at zero — two facts that can be verified by filming the spokes of a moving bicycle and that surprise almost everyone the first time. They explain why mud leaving the rear half of a rolling wheel is thrown forwards and upwards relative to the ground, and why the tread of a tyre at the contact patch is momentarily stationary relative to the road — which is exactly the condition that makes static friction, and therefore tractive force, available. A skid is the failure of that condition, and the friction available then drops from the static to the kinetic value.
 :::
 :::
 
@@ -96,7 +96,7 @@ f: 2*sin(x*pi/360)
 x: 0, 360
 y: 0, 2.1
 labels: \text{point speed } / \ v_{\text{centre}}
-caption: Speed of a point on the rim of a rolling wheel, relative to the ground, against its angular position $x$ measured from the contact point. The speed is $2 v \sin(x / 2)$ — it vanishes at the contact point, reaches $v \sqrt{2}$ at a quarter turn and $2 v$ at the top. The **cycloidal** velocity profile is why a point on a wheel experiences a stress cycle at the rotation frequency and why the contact point, which is stationary, is nevertheless the point of maximum **deformation**: zero velocity and zero strain are not the same thing, and the distinction is the whole of rolling resistance in a tyre.
+caption: Speed of a point on the rim of a rolling wheel, relative to the ground, against its angular position $x$ measured from the contact point. The speed is $2 v \sin(x / 2)$ — it vanishes at the contact point, reaches $v \sqrt{2}$ at a quarter turn and $2 v$ at the top. The **cycloidal** velocity profile is why a point on a wheel experiences a stress cycle at the rotation frequency and why the contact point, which is stationary, is nevertheless the point of maximum **deformation**: zero velocity and zero strain are not the same thing, and the cyclic deformation of the rubber as it passes through the contact patch is the main source of a tyre's rolling resistance.
 :::
 
 ## Velocity analysis
@@ -144,7 +144,7 @@ $$
 $$
 *Check.* The familiar approximate formula $v_B = r \omega \left[ \sin \theta + r \sin 2 \theta / \left( 2 l \right) \right]$ gives $12.70\ \mathrm{m / s}$, within $0.6$ per cent of the exact $12.78$; the approximation replaces $\tan \beta$ by $\sin \beta$ and is good to first order in $r / l$. $\checkmark$
 
-*Sanity.* The piston moves **faster** than the crank pin, by $1.7$ per cent here, because the rod's obliquity adds a second contribution. The ratio $l / r = 3$ is short by modern standards — car engines use $3.2$ to $3.6$ and marine diesels up to $4.5$ — and the reason for the long rod is precisely this: the second-order term goes as $r / l$, so a longer rod makes the piston motion closer to pure simple harmonic, which reduces the unbalanced second-order shaking force that no counterweight can remove. That single geometric ratio is the reason a long-stroke slow-speed marine diesel vibrates less than a short-stroke car engine at the same speed, and why racing engines accept short rods in exchange for a compact, stiff block.
+*Sanity.* The piston moves **faster** than the crank pin, by $1.7$ per cent here, because the rod's obliquity adds a second contribution. The ratio $l / r = 3$ is short by modern standards — car engines use $3.2$ to $3.6$ and marine diesels up to $4.5$ — and the reason for the long rod is precisely this: the second-order term goes as $r / l$, so a longer rod makes the piston motion closer to pure simple harmonic, which reduces the unbalanced second-order shaking force that no counterweight can remove. That single geometric ratio sets the size of the second-order shaking force, and it is traded against engine height and weight in every design.
 :::
 :::
 
@@ -158,16 +158,11 @@ $$
 $$
 v_{\text{centre}} = \omega R = 11.11 \times 0.12 = 1.333\ \mathrm{m / s} \quad \text{forwards} .
 $$
-*Sanity.* The spool moves in the **same** direction as the pull, more slowly than it. The general rule is that the spool rolls towards the side of the contact point on which the cord's line of action falls: pull horizontally at the top and it comes to you, and pull at an angle $\alpha$ to the horizontal with
+*Sanity.* The spool moves in the **same** direction as the pull, more slowly than it. The general rule is that the spool rolls towards the side of the contact point on which the cord's line of action falls. If the cord instead leaves the **underside** of the core, as on a yo-yo lying on a table, and is pulled at an angle $\alpha$ above the horizontal, its line of action passes at a distance $R \cos \alpha - r$ from the contact point, which vanishes at
 $$
-\sin \alpha = \frac{r}{R} = 0.5 \quad\Longrightarrow\quad \alpha = 30^{\circ}
+\cos \alpha = \frac{r}{R} = 0.5 \quad\Longrightarrow\quad \alpha = 60^{\circ} .
 $$
-and the line of action passes exactly through the contact point, so the pull has no moment about the instantaneous centre and the spool does not roll at all.
-*Sanity.* The spool moves in the **same** direction as the pull, more slowly than it. The general rule is that the spool rolls towards the side of the contact point on which the cord's line of action falls: pull horizontally at the top and it comes to you, pull at just the right angle and it does not move at all. That critical angle is where the cord's line of action passes through the contact point, at
-$$
-\cos \alpha = - \frac{r}{R} = - 0.5 \quad\Longrightarrow\quad \alpha = 120^{\circ}
-$$
-from the direction of the pull measured at the centre — that is, pulling at $60^{\circ}$ above the horizontal backwards. This is the classic demonstration that a body can be pulled and not move, and it is the reason a yo-yo on a table goes one way for a low pull and the other for a high one.
+Pulled at a lower angle the spool rolls towards you, at a higher angle it rolls away, and at exactly $60^{\circ}$ the pull has no moment about the contact point and the spool does not roll at all. This is the classic demonstration that a body can be pulled and not move, and it is why a yo-yo on a table goes one way for a low pull and the other for a high one.
 :::
 :::
 
@@ -192,36 +187,38 @@ $$
 \omega_s = \omega_a \left( 1 + \frac{N_r}{N_s} \right) = 6.283 \times 3 = 18.85\ \mathrm{rad / s}. \checkmark
 $$
 
-*Sanity.* A speed ratio of exactly $3 : 1$ in one stage, with the input and output on the same shaft and turning the same way — that is the whole attraction of the epicyclic gear, and it is why an automatic gearbox, a wind-turbine gearbox and a planetary final drive are all built from these. The instantaneous-centre method gets there without a single equation of the tabular kind, and it generalises to a differential where the tabular method becomes awkward: the four-bar linkage of velocities is drawn, and the answer is measured.
+*Sanity.* A speed ratio of exactly $3 : 1$ in one stage, with the input and output on the same shaft and turning the same way — that is the whole attraction of the epicyclic gear, and it is why an automatic gearbox, a wind-turbine gearbox and a planetary final drive are all built from these. The instantaneous-centre method gets there without a single equation of the tabular kind, and the tabular method then provides an independent check.
 :::
 :::
 
 ::: example Rack-and-pinion steering {#ex-rack}
-A rack-and-pinion steering has a pinion of $60\ \mathrm{mm}$ pitch radius and an overall ratio of $16 : 1$. The track rod attachment gives $120\ \mathrm{mm}$ of effective steering arm and the road wheels steer through $30^{\circ}$ either way. Find the lock-to-lock steering-wheel rotation.
+A rack-and-pinion steering gear has a pinion of $8\ \mathrm{mm}$ pitch radius on the steering column. The track rods act on steering arms of $120\ \mathrm{mm}$ effective length, and the road wheels steer through $30^{\circ}$ either way. Find the lock-to-lock rotation of the steering wheel and the overall steering ratio on centre.
 ::: solution
-At full lock the two rack ends have moved symmetrically, so the rack travel from centre is
+Treating each steering arm as a crank of radius $a = 0.12\ \mathrm{m}$ driven by the rack, a road-wheel angle $\delta$ needs a rack travel $x = a \sin \delta$ from centre, so at full lock
 $$
-x = 2 \times 0.12 \times \sin 30^{\circ} = 0.120\ \mathrm{m}.
+x = 0.12 \times \sin 30^{\circ} = 0.060\ \mathrm{m}.
 $$
-The pinion must therefore turn through
+The pinion, and with it the steering wheel, turns through
 $$
-\theta_p = \frac{x}{r} = \frac{0.120}{0.060} = 2.00\ \mathrm{rad} = 114.6^{\circ},
-$$
-and the steering wheel through
-$$
-\theta_w = 16 \times 114.6 = 1834^{\circ} = 5.1 \ \text{turns from centre},
+\theta_p = \frac{x}{r} = \frac{0.060}{0.008} = 7.50\ \mathrm{rad} = 430^{\circ} = 1.19 \ \text{turns from centre},
 $$
 $$
-\text{lock to lock} = 10.2 \ \text{turns}.
+\text{lock to lock} = 2.39 \ \text{turns}.
 $$
-*Sanity.* Ten turns lock-to-lock is a realistic figure for a commercial vehicle and high for a car, where $2.5$ to $3$ turns is normal — obtained either by a higher pinion radius or, much more often, by a **variable** ratio, in which the pinion tooth profile is ground so that the ratio falls from $15 : 1$ on centre to $12 : 1$ at full lock. That gives quick response in a parking manoeuvre without the nervousness on a motorway that a fixed quick ratio brings, and it is the same trick the steering geometry itself plays with Ackermann: the inside wheel steers more than the outside so that both roll about a common instantaneous centre on the extended rear-axle line. Ignoring that difference costs a few centimetres of scrub per metre of travel at full lock, which is why a vehicle with worn front-end geometry pushes tyres sideways and howls round a roundabout.
+**Ratio on centre.** Differentiating $r \theta_p = a \sin \delta$,
+$$
+\frac{\mathrm{d} \theta_p}{\mathrm{d} \delta} = \frac{a \cos \delta}{r} = \frac{0.12}{0.008} = 15.0 \quad \text{at } \delta = 0 ,
+$$
+falling to $15 \cos 30^{\circ} = 13.0$ at full lock.
+
+*Sanity.* About two and a half turns lock to lock and $15 : 1$ on centre are typical of a car; a heavy commercial vehicle has a slower ratio and more turns. Even a constant-radius pinion makes the ratio quicker towards lock, because the steering arm acts as a crank whose effective lever $a \cos \delta$ shortens; **variable-ratio** racks, whose teeth change their spacing along the rack, exaggerate this deliberately, giving quick response when parking without the nervousness on a motorway that a quick ratio on centre would bring. The steering geometry plays a related trick, Ackermann: the inside wheel steers more than the outside so that both roll about a common instantaneous centre on the extended rear-axle line, and a car whose geometry departs from it scrubs its tyres sideways at full lock — which is why tyres squeal on the tight turns of a car park.
 :::
 :::
 
 ## Acceleration analysis
 
 ::: example Connecting-rod acceleration {#ex-accel}
-For the slider-crank of Example 6, find the piston acceleration and the rod's angular acceleration at the same position, if the crank turns at a constant $1200\ \mathrm{rpm}$.
+For the slider-crank of [[#ex-slider-crank]], find the piston acceleration and the rod's angular acceleration at the same position, if the crank turns at a constant $1200\ \mathrm{rpm}$.
 ::: solution
 **Piston.** With $\alpha_{\text{crank}} = 0$,
 $$
@@ -233,11 +230,12 @@ a_B &= r \omega^{2} \left[ \cos \theta + \frac{r \cos 2 \theta}{l} \right]
 $$
 against $527\ \mathrm{m / s^{2}}$ from the exact second derivative of the loop equation.
 
-**Rod.** The rod's angular acceleration follows from the transverse component of the relative acceleration:
+**Rod.** Differentiating the loop-closure relation $l \sin \beta = r \sin \theta$ twice, with $\dot{\theta} = \omega$ constant and $\dot{\beta} = \omega_{\text{rod}} = 21.9\ \mathrm{rad / s}$,
 $$
-\alpha_{\text{rod}} = \frac{r \omega^{2} \sin \theta}{l \cos \beta}
-= \frac{1579 \times 0.8660}{0.3 \times 0.9576} = 4756\ \mathrm{rad / s^{2}} .
+\alpha_{\text{rod}} = \frac{- r \omega^{2} \sin \theta + l \sin \beta \, \omega_{\text{rod}}^{2}}{l \cos \beta}
+= \frac{- 1367.5 + 41.5}{0.3 \times 0.9574} = - 4620\ \mathrm{rad / s^{2}} ,
 $$
+of magnitude $4620\ \mathrm{rad / s^{2}}$; the $\omega_{\text{rod}}^{2}$ term changes it by only $3$ per cent.
 *Check.* At inner dead centre $\theta = 0$ the formula gives $a_B = r \omega^{2} \left( 1 + r / l \right) = 1579 \times 1.333 = 2105\ \mathrm{m / s^{2}}$, and at outer dead centre $r \omega^{2} \left( 1 - r / l \right) = 1053$ — the classic asymmetry that makes an engine's inner-dead-centre bearing load twice its outer-dead-centre one. $\checkmark$
 
 *Sanity.* Fifty-four gravities from a crank turning at a modest $1200\ \mathrm{rpm}$, and the reason is $\omega^{2}$: $125.7^{2}$ is $15\,800$, and multiplying by $0.1\ \mathrm{m}$ gives $1580\ \mathrm{m / s^{2}}$ before any geometry. That is why reciprocating machinery is balanced with counterweights and why a compressor's foundation is designed against a **shaking force** of $m r \omega^{2}$ at the running speed, and why the second-order term $r \cos 2 \theta / l$ — which no amount of counterweighting can cancel, since it occurs at twice the running speed — is the reason a V-twin and a four-cylinder inline feel different at the same speed.
@@ -249,7 +247,7 @@ The instantaneous centre is a point of **zero velocity**, not of zero accelerati
 :::
 
 ::: history
-The kinematics of rigid bodies begins with Euler's *Theoria motus corporum rigidorum* of 1765, which introduced the rotation matrix, the principal axes and the theorem that any displacement of a rigid body with one point fixed is a rotation about some axis. The **instantaneous centre of rotation** is due to Robert, Lord Macaulay — the historian's uncle, and a competent engineer who wrote on the strength of gotic arches — in a paper of 1819 read to the Royal Society of Edinburgh, and it was developed into a systematic method by Poinsot in 1834 and, for mechanisms, by Kennedy in his three-centres theorem of 1886. The **centrode** construction, in which the plane motion of a body is represented as the rolling of one centrode on another, is Savary's and Euler's, and it is the geometric basis of the involute gear. The **acceleration image** and the graphical acceleration polygon appear in the machine-design texts of Föppl and of Kennedy's *The Mechanics of Machinery* of 1877, and remained the standard practice until the analytical vector methods of Hartenberg and Denavit's *Kinematic Synthesis of Linkages* of 1964 displaced them; the matrix and complex-number formulations of the same problems, due to Freudenstein in 1954, are what a modern mechanism program uses.
+The kinematics of rigid bodies begins with Euler's *Theoria motus corporum solidorum seu rigidorum* of 1765, which introduced the principal axes and the description of a rigid body's orientation by angles, and with his theorem of 1775 that any displacement of a rigid body with one point fixed is a rotation about some axis. The **instantaneous centre of rotation** was known to Johann Bernoulli in the 1740s and was treated generally by Chasles in 1830 and by Cauchy, and for mechanisms it was made a systematic method by the three-centres theorem of Aronhold (1872) and Kennedy (1886). The **centrode** picture, in which the plane motion of a body is the rolling of one centrode on another, and the curvature theorem that bears the names of Euler, who studied gear-tooth profiles in the 1760s, and Félix Savary, who taught it at the École Polytechnique in the 1830s, are the geometric basis of gear-tooth design. The **acceleration image** and the graphical acceleration polygon appear in the machine-design texts of the late nineteenth century, including Kennedy's *The Mechanics of Machinery* of 1886, and remained the standard practice until the analytical vector methods of Hartenberg and Denavit's *Kinematic Synthesis of Linkages* of 1964 displaced them; the algebraic and complex-number formulations of the same problems, due to Freudenstein in 1954 and Raven in 1958, are what a modern mechanism program uses.
 :::
 
 ## Where this leads
@@ -272,7 +270,7 @@ A wheel rolls without slipping on a horizontal road. Comparing the acceleration 
 - [x] The contact point has an acceleration towards the centre while its velocity is zero; the top point has the same magnitude
 - [ ] The contact point has zero acceleration because its velocity is zero
 ::: solution
-The contact point has zero **velocity** and a centripetal acceleration $\omega^{2} R$ directed towards the centre, and so does every other point on the rim, all with the same magnitude. Zero velocity does not imply zero acceleration — a ball at the top of its flight has the same property. This is the clearest possible demonstration that the instantaneous centre is a velocity device and nothing more: if the wheel really were pivoting about a fixed pin at the contact point, that point would have zero acceleration, and the rim points would have accelerations proportional to their distance from it instead of equal magnitudes. The corollary matters in practice: the rubber at the contact patch is stationary and simultaneously accelerating at several gravities, which is why a tyre's greatest stresses and its greatest heat generation occur at the shoulder rather than where it touches the road.
+The contact point has zero **velocity** and a centripetal acceleration $\omega^{2} R$ directed towards the centre, and so does every other point on the rim, all with the same magnitude. Zero velocity does not imply zero acceleration — a ball at the top of its flight has the same property. This is the clearest possible demonstration that the instantaneous centre is a velocity device and nothing more: if the wheel really were pivoting about a fixed pin at the contact point, that point would have zero acceleration, and the rim points would have accelerations proportional to their distance from it instead of equal magnitudes. The corollary matters in practice: the rubber at the contact patch is stationary and simultaneously accelerating at many gravities.
 :::
 :::
 
@@ -282,39 +280,36 @@ The contact point has zero **velocity** and a centripetal acceleration $\omega^{
 A $300\ \mathrm{mm}$ diameter flywheel accelerates uniformly from rest to $1200\ \mathrm{rpm}$ in $5\ \mathrm{s}$. Find the tangential acceleration of a point on the rim in $\mathrm{m / s^{2}}$.
 ::: solution
 $\alpha = 125.7 / 5 = 25.13\ \mathrm{rad / s^{2}}$, $a_t = \alpha r = 25.13 \times 0.15 = 3.77\ \mathrm{m / s^{2}}$.
-*Note.* The answer to enter is $3.77\ \mathrm{m / s^{2}}$.
 :::
 :::
 
 ::: exercise Rolling {level=1 check="40"}
 A car travels at $20\ \mathrm{m / s}$ on wheels of $0.35\ \mathrm{m}$ radius. What is the speed of the topmost point of a tyre relative to the road?
 ::: solution
-$2 v = 40\ \mathrm{m / s}$.
-*Note.* The answer to enter is $40\ \mathrm{m / s}$.
+The contact point is the instantaneous centre, so the top, at $2 R$ from it, moves at $2 v = 40\ \mathrm{m / s}$, whatever the wheel radius.
 :::
 :::
 
-::: exercise Instantaneous centre {level=1 check="0.667"}
-A ladder $4\ \mathrm{m}$ long leans against a wall and its foot slides away at $0.5\ \mathrm{m / s}$. When the foot is $2.4\ \mathrm{m}$ from the wall, how fast is the top descending?
+::: exercise Instantaneous centre {level=1 check="0.375"}
+A ladder $4\ \mathrm{m}$ long leans against a wall and its foot slides away at $0.5\ \mathrm{m / s}$. When the foot is $2.4\ \mathrm{m}$ from the wall, how fast is the top descending, in m/s?
 ::: solution
-The instantaneous centre is at the corner of wall and floor; with $\theta$ the angle of the ladder,
+The foot moves horizontally and the top vertically, so the instantaneous centre lies on the vertical through the foot and the horizontal through the top: it is the corner of the rectangle **opposite** the wall–floor corner, $3.2\ \mathrm{m}$ above the foot and $2.4\ \mathrm{m}$ out from the top. Hence
 $$
-\omega = \frac{0.5}{4 \cos \theta} = \frac{0.5}{2.4} = 0.2083\ \mathrm{rad / s}, \qquad
-v_{\text{top}} = \omega \times 4 \sin \theta = 0.2083 \times 3.2 = 0.667\ \mathrm{m / s}.
+\omega = \frac{v_{\text{foot}}}{3.2} = \frac{0.5}{3.2} = 0.1563\ \mathrm{rad / s}, \qquad
+v_{\text{top}} = \omega \times 2.4 = 0.375\ \mathrm{m / s}.
 $$
-*Note.* The answer to enter is $0.667\ \mathrm{m / s}$.
+*Check.* From $x^{2} + y^{2} = 16$, $x \dot{x} + y \dot{y} = 0$ gives $\dot{y} = - 2.4 \times 0.5 / 3.2 = - 0.375\ \mathrm{m / s}$. $\checkmark$
 :::
 :::
 
-::: exercise Rolling contact {level=1 check="0.05"}
-A bicycle wheel of $350\ \mathrm{mm}$ radius travels at $5\ \mathrm{m / s}$. What is the velocity of the valve relative to the ground when the valve is at the same height as the hub and moving backwards?
+::: exercise Rolling contact {level=1 check="7.07"}
+A bicycle wheel of $350\ \mathrm{mm}$ radius travels at $5\ \mathrm{m / s}$. What is the speed of the valve relative to the ground, in m/s, when the valve is at the same height as the hub and behind it?
 ::: solution
 The instantaneous centre is at the contact point, $\omega = 5 / 0.35 = 14.29\ \mathrm{rad / s}$. With the valve level with the hub and behind it, its distance from the contact point is $\sqrt{0.35^{2} + 0.35^{2}} = 0.495\ \mathrm{m}$ and
 $$
 v = 14.29 \times 0.495 = 7.07\ \mathrm{m / s},
 $$
-directed perpendicular to the line from the contact point, that is backwards and downwards at $45^{\circ}$.
-*Note.* The answer to enter is $7.07\ \mathrm{m / s}$.
+directed perpendicular to the line from the contact point, that is forwards and upwards at $45^{\circ}$: relative to the hub the valve is moving up, and the hub's own $5\ \mathrm{m / s}$ is added to it.
 :::
 :::
 
@@ -326,7 +321,7 @@ $$
 \omega^{2} r = 576 \times 0.25 = 144\ \mathrm{m / s^{2}} .
 $$
 Every point on the rim has the **same** acceleration magnitude, directed to the centre.
-*Sanity.* The contact point has zero velocity and $144\ \mathrm{m / s^{2}}$ of acceleration — fifteen gravities — which is the clearest demonstration that the instantaneous centre is not a pivot. It is also why a stone caught in a tyre tread is thrown out rather than merely dropped at the contact patch, and why the highest stresses in a rolling tyre occur at the shoulder rather than at the contact point.
+*Sanity.* The contact point has zero velocity and $144\ \mathrm{m / s^{2}}$ of acceleration — fifteen gravities — which is the clearest demonstration that the instantaneous centre is not a pivot. It is also why a stone caught in a tyre tread is flung off as the tread leaves the road rather than simply dropped.
 :::
 :::
 
@@ -361,7 +356,7 @@ $$
 :::
 
 ::: exercise Design {level=3}
-A quick-return shaping machine of the crank-and-slotted-lever type has a crank of radius $200\ \mathrm{mm}$ and a slotted lever of length $900\ \mathrm{mm}$ pivoted $900\ \mathrm{mm}$ below the crank axis. Find the ratio of the return-stroke time to the cutting-stroke time, the ram stroke, and the mean cutting speed if the crank turns at $60\ \mathrm{rpm}$.
+A quick-return shaping machine of the crank-and-slotted-lever type has a crank of radius $200\ \mathrm{mm}$ and a slotted lever of length $1200\ \mathrm{mm}$ pivoted $900\ \mathrm{mm}$ below the crank axis, the ram being driven from the lever tip. Find the ratio of the return-stroke time to the cutting-stroke time, the ram stroke, and the mean cutting speed if the crank turns at $60\ \mathrm{rpm}$.
 ::: solution
 **Lever oscillation.** The extreme positions occur when the crank is perpendicular to the lever, so the half-angle of oscillation is
 $$
@@ -372,17 +367,17 @@ and the total oscillation of the lever is $2 \beta = 25.68^\circ$.
 $$
 \frac{t_{\text{return}}}{t_{\text{cut}}} = \frac{154.3}{205.7} = 0.750 .
 $$
-**Ram stroke.** The lever tip describes an arc of radius $900\ \mathrm{mm}$,
+**Ram stroke.** The lever tip describes an arc of radius $1200\ \mathrm{mm}$,
 $$
-s = 2 \times 900 \sin \beta = 2 \times 900 \times 0.2222 = 400\ \mathrm{mm}.
+s = 2 \times 1200 \sin \beta = 2 \times 1200 \times 0.2222 = 533\ \mathrm{mm}.
 $$
 **Mean cutting speed.** At $60\ \mathrm{rpm}$ the cycle is $1.00\ \mathrm{s}$ and the cutting stroke occupies $205.7 / 360 = 0.571\ \mathrm{s}$, so
 $$
-\bar{v} = \frac{0.400}{0.571} = 0.70\ \mathrm{m / s},
+\bar{v} = \frac{0.533}{0.571} = 0.93\ \mathrm{m / s},
 $$
-with a peak of about $1.6$ times the mean, $1.1\ \mathrm{m / s}$.
+with a peak of $1.37\ \mathrm{m / s}$, about $1.5$ times the mean, when the crank pin is farthest from the lever pivot ($1.1\ \mathrm{m}$ away, so that the lever turns at $0.2 \times 2 \pi / 1.1 = 1.14\ \mathrm{rad / s}$); the return stroke peaks at $2.15\ \mathrm{m / s}$, with the pin only $0.7\ \mathrm{m}$ from the pivot.
 
-*Design comment.* The whole point of a quick-return mechanism is that the tool cuts slowly, where the force is high and the finish matters, and returns fast, where it does nothing: a ratio of $0.75$ saves a quarter of the cycle time, which on a shaper running at forty strokes a minute is worth twenty-five per cent of its output. The consequence for the drive is that the **motor** sees a wildly varying load — full torque during the cut and almost none during the return — so a shaper carries a heavy flywheel between the motor and the crank, sized so that the speed drop over the cutting stroke stays under $5$ per cent. That flywheel, not the motor's rating, is what makes the table move smoothly, and it is why variable-speed drives with torque limiting have replaced the belt-and-flywheel arrangement only on small machines, where the flywheel's inertia is not needed to keep the motor out of stall.
+*Design comment.* The whole point of a quick-return mechanism is that the tool cuts slowly, where the force is high and the finish matters, and returns fast, where it does nothing: with a ratio of $0.75$ the cycle is $1 - \left( 1 + 0.75 \right) / 2 = 12.5$ per cent shorter than it would be with a return as slow as the cut. The consequence for the drive is that the **motor** sees a wildly varying load — full torque during the cut and almost none during the return — so a shaper carries a heavy flywheel between the motor and the crank, sized so that the speed drop over the cutting stroke stays under $5$ per cent. That flywheel, not the motor's rating, is what keeps the cutting speed steady through the stroke.
 :::
 :::
 
@@ -391,25 +386,22 @@ Show that the plane motion of a rigid body can be represented as the rolling wit
 ::: solution
 **Centrodes.** As the body moves, the instantaneous centre $I$ traces a locus in the **fixed** frame, the *fixed centrode*, and a locus in the **moving** body, the *moving centrode*. At every instant the two pass through the same point, and since the body's velocity at $I$ is zero, the two curves roll on each other without slipping: the arc lengths swept out on each are equal, because the point of contact has no relative velocity along either tangent.
 
-**Euler–Savary.** Take the pole $I$ as origin with the common tangent as $x$-axis, and let the fixed centrode have curvature radius $\rho$ and the moving one $\rho'$, both measured from the same side. If the body turns through $\mathrm{d}\theta$, the pole advances a distance
+**Pole speed.** Take the pole $I$ as origin with the common tangent of the centrodes as one axis and the common normal $\mathbf{n}$, pointing towards the centres of curvature, as the other. Let the moving and fixed centrodes have radii of curvature $\rho_m$ and $\rho_f$, both measured from $I$ along $\mathbf{n}$. As the pole advances $\mathrm{d} s$, the common tangent turns through $\mathrm{d} s / \rho_f$ in the fixed frame and through $\mathrm{d} s / \rho_m$ relative to the body, so the body turns through $\mathrm{d} \theta = \mathrm{d} s \left( 1 / \rho_m - 1 / \rho_f \right)$, and the pole moves at $u = \omega D$ with
 $$
-\mathrm{d} s = \rho \, \mathrm{d}\phi = - \rho' \left( \mathrm{d}\phi + \mathrm{d}\theta \right)
+\frac{1}{D} = \frac{1}{\rho_m} - \frac{1}{\rho_f} .
 $$
-along the fixed centrode, where $\mathrm{d}\phi$ is the rotation of the common normal. Eliminating $\mathrm{d}\phi$,
-$$
-\left( \frac{1}{\rho} + \frac{1}{\rho'} \right) \mathrm{d} s = - \mathrm{d}\theta .
-$$
-Applying this to a point $P$ of the body at distance $r$ from the pole along the normal, and requiring its path to have curvature radius $r_P$ so that its centre of curvature lies on the inflection circle, gives the **Euler–Savary equation**
-$$
-\left( \frac{1}{r} - \frac{1}{\rho} \right) \left( \frac{1}{r} - \frac{1}{\rho'} \right)
-= \frac{1}{r^{2}} \left( \frac{\omega_{\text{body}}}{\omega_{\text{pole}}} \right)^{2} \sin^{2} \psi ,
-$$
-whose most useful form for the design of a cam or a gear flank is
-$$
-\frac{1}{r_A} + \frac{1}{r_B} = \frac{1}{a} \left( \frac{\sin^{2} \phi_1 + \sin^{2} \phi_2}{\sin^{2} \phi} \right)
-$$
-relating the radii of curvature of the two pitch centrodes to the centre distance $a$ and the pressure angles $\phi_1, \phi_2$.
+For a wheel rolling on a straight line, $\rho_f = \infty$, $\rho_m = R$ and $D = R$, as it must be.
 
-*Comment.* The centrode picture is the reason a pair of **non-circular** gears can transmit a prescribed varying ratio: the two pitch centrodes are chosen to roll on each other, and the teeth are then cut to be conjugate to whatever profile is convenient. It is also why an involute gear works at all — its pitch centrodes are circles, so the centre distance can vary without changing the ratio, which is the single property that makes gear trains tolerant of manufacturing error. The inflection circle and the Euler–Savary equation are what tell you where the **undercut** begins on a cam profile, and hence the minimum radius of a cam that can be cut without flattening the follower motion.
+**Euler–Savary.** The material point at the pole has zero velocity and an acceleration $\omega u = \omega^{2} D$ along $\mathbf{n}$ (for the rolling wheel, $\omega^{2} R$ towards the centre). Take a body point $A$ at distance $r$ from $I$ on a ray making angle $\psi$ with the tangent. Its velocity $\omega r$ is perpendicular to $I A$, and its acceleration is $\mathbf{a}_A = \omega^{2} D \mathbf{n} + \boldsymbol{\alpha} \times \mathbf{r}_{A / I} - \omega^{2} \mathbf{r}_{A / I}$. Only the first and last terms have components along $A I$, so the normal acceleration of $A$, towards $I$, is
+$$
+a_n = \omega^{2} \left( r - D \sin \psi \right) ,
+$$
+and the radius of curvature of $A$'s path is $\rho_A = v^{2} / a_n = r^{2} / \left( r - D \sin \psi \right)$. Its centre of curvature $A_0$ lies on the same ray at $r_0 = r - \rho_A$ from $I$, and eliminating $\rho_A$ gives the **Euler–Savary equation**
+$$
+\left( \frac{1}{r} - \frac{1}{r_0} \right) \sin \psi = \frac{1}{D} .
+$$
+Points with $r = D \sin \psi$, for which $a_n = 0$ and $r_0 \rightarrow \infty$, pass through a point of inflection of their paths; they lie on a circle of diameter $D$ tangent to the centrodes at $I$, the **inflection circle**. *Check:* for the top of a rolling wheel, $r = 2 R$, $\psi = 90^{\circ}$ and $D = R$ give $r_0 = - 2 R$, a centre of curvature $4 R$ below the top point — the known radius of curvature of a cycloid at its crest. $\checkmark$
+
+*Comment.* The centrode picture is the reason a pair of **non-circular** gears can transmit a prescribed varying ratio: the two pitch centrodes are chosen to roll on each other, and the teeth are then cut to be conjugate to whatever profile is convenient. The pitch circles of an ordinary gear pair are likewise its centrodes, rolling on each other at the pitch point; the involute profile adds the further property that the centre distance can vary without changing the ratio, which makes gear trains tolerant of manufacturing error. And because the Euler–Savary equation gives the curvature of the path of any body point, it is the tool for locating the nearly straight portions of coupler curves and for checking the curvature of cam and gear-tooth profiles.
 :::
 :::

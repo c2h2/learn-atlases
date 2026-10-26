@@ -19,7 +19,7 @@ where $y$ is measured from the **centroidal** axis, $c$ is the distance to the o
 $$
 \frac{1}{\rho} = \frac{M}{E I},
 $$
-so the beam's resistance to bending stiffness is set by $E I$ and its resistance to bending **strength** by $E Z$ — a distinction that matters because $I$ and $Z$ are maximised by different shapes.
+so the beam's bending **stiffness** is set by $E I$ and its bending **strength** by $\sigma_{\text{allow}} Z$ — a distinction that matters because the material that maximises one is not always the material that maximises the other.
 :::
 
 ::: proof
@@ -45,10 +45,10 @@ Eliminating $\rho$ between the stress and moment expressions gives $\sigma_x = M
 ::: proposition Material efficiency in bending {#prop-efficiency}
 For a given cross-sectional area, the section modulus $Z$ is maximised by placing all the material as far from the neutral axis as possible. The shape factors for a fixed area $A$ are
 $$
-\frac{Z_{\text{rectangle, depth } 2 \times \text{ width}}}{Z_{\text{square}}} = 1.26, \qquad
+\frac{Z_{\text{rectangle, depth } 2 \times \text{ width}}}{Z_{\text{square}}} = 1.41, \qquad
 \frac{Z_{\text{I-section}}}{Z_{\text{round of same area}}} \approx 3 \text{ to } 5,
 $$
-and the **shape efficiency** $\phi_B^f = 1 / \left( 6 \sqrt{\beta (1 - \beta)} \right)$ for an I-section with flange area fraction $\beta$ reaches $6$ to $8$ for a well-proportioned rolled section. The cost of efficiency is instability: the further the material is pushed from the axis, the more likely the compression flange is to buckle sideways or the web to buckle in shear, and real sections are the compromise between the two.
+since $Z = A d / 6$ for any rectangle of area $A$, and a rectangle twice as deep as it is wide is $\sqrt{2}$ times as deep as the square of the same area. The cost of efficiency is instability: the further the material is pushed from the axis, the more likely the compression flange is to buckle sideways or the web to buckle in shear, and real sections are the compromise between the two.
 :::
 
 ::: example Rectangular timber beam {#ex-timber}
@@ -66,35 +66,35 @@ Turned on its side, $b = 200$, $d = 100$, $Z = 333.3 \times 10^{3}\ \mathrm{mm^{
 $$
 \sigma = 45.0\ \mathrm{MPa}.
 $$
-*Sanity.* Turning the beam on its side **doubles** the stress, because $Z \propto d^{2}$ and the depth halved. This is the reason a floor joist is installed with its long dimension vertical, the reason a ruler snaps easily when loaded flatwise, and the reason a $100 \times 50$ shelf bracket is forty times as stiff edge-on as flat. The area is identical in both orientations; only the distribution of that area about the axis has changed, and $I$ weights by $y^{2}$.
+*Sanity.* Turning the beam on its side **doubles** the stress, because $Z \propto d^{2}$ and the depth halved. This is the reason a floor joist is installed with its long dimension vertical, the reason a ruler snaps easily when loaded flatwise, and the reason a $100 \times 50$ shelf bracket is four times as stiff edge-on as flat ($I \propto b d^{3}$, so the ratio is $(100 / 50)^{2}$). The area is identical in both orientations; only the distribution of that area about the axis has changed, and $I$ weights by $y^{2}$.
 :::
 :::
 
 ::: example Rolled I-section {#ex-isection}
-A $254 \times 102\ \mathrm{UB}\ 22$ has $I_x = 28.2 \times 10^{6}\ \mathrm{mm^{4}}$, depth $254.9\ \mathrm{mm}$, flange thickness $8.4\ \mathrm{mm}$ and web thickness $6.0\ \mathrm{mm}$. Find the extreme-fibre stress and the stress at the flange–web junction for $M = 40\ \mathrm{kN\,m}$, and the fraction of the moment carried by the flanges.
+An I-section with flanges $101.7\ \mathrm{mm}$ wide has $I_x = 32.7 \times 10^{6}\ \mathrm{mm^{4}}$, depth $254.9\ \mathrm{mm}$, flange thickness $8.4\ \mathrm{mm}$ and web thickness $6.0\ \mathrm{mm}$. Find the extreme-fibre stress and the stress at the flange–web junction for $M = 40\ \mathrm{kN\,m}$, and the fraction of the moment carried by the flanges.
 ::: solution
 $$
-\sigma_{\max} = \frac{M c}{I} = \frac{40 \times 10^{6} \times 127.45}{28.2 \times 10^{6}} = 180.7\ \mathrm{MPa},
+\sigma_{\max} = \frac{M c}{I} = \frac{40 \times 10^{6} \times 127.45}{32.7 \times 10^{6}} = 155.8\ \mathrm{MPa},
 $$
 $$
-\sigma_{\text{junction}} = 180.7 \times \frac{119.05}{127.45} = 168.7\ \mathrm{MPa}.
+\sigma_{\text{junction}} = 155.8 \times \frac{119.05}{127.45} = 145.6\ \mathrm{MPa}.
 $$
 **Flange contribution.** Each flange has area $101.7 \times 8.4 = 854\ \mathrm{mm^{2}}$ at a lever arm of $(254.9 - 8.4) / 2 = 123.25\ \mathrm{mm}$, so treating the flange stress as uniform at its centroidal value,
 $$
-M_{\text{flanges}} \approx 2 \times 854 \times 168.7 \times 0.12325 = 35.5\ \mathrm{kN\,m},
+M_{\text{flanges}} \approx 2 \times 854 \times 150.7 \times 0.12325 = 31.7\ \mathrm{kN\,m},
 $$
-which is $89$ per cent of the total from $55$ per cent of the area.
+taking the flange stress at mid-thickness, $155.8 \times 123.25 / 127.45 = 150.7\ \mathrm{MPa}$. That is $79$ per cent of the total from $54$ per cent of the area.
 
-*Sanity.* The web carries almost no bending moment — under $12$ per cent — yet it is essential, because it holds the flanges apart, transfers the shear, and prevents the compression flange from buckling out. A section made of two flanges and no web is unstable; a section made of a web and no flanges is weak. This is why the proportioning rules in every steel handbook look arbitrary until you see that the flanges are sized for moment and the web for shear and buckling, and why a plate girder's web is thin and stiffened while its flanges are thick and narrow.
+*Sanity.* The web carries only about a fifth of the bending moment, yet it is essential, because it holds the flanges apart, transfers the shear, and prevents the compression flange from buckling out. A section made of two flanges and no web is unstable; a section made of a web and no flanges is weak. This is why the proportioning rules in every steel handbook look arbitrary until you see that the flanges are sized for moment and the web for shear and buckling, and why a plate girder's web is thin and stiffened while its flanges are thick and narrow.
 :::
 :::
 
 ::: widget plot
-f: 180*x
-x: -0.5, 0.5
-y: -95, 95
-labels: \text{bending stress (MPa per 10 mm of depth)}
-caption: Linear bending stress distribution across the depth of the I-section of Example 2 for $M = 40\ \mathrm{kN\,m}$: zero at the centroid, $\pm 180.7\ \mathrm{MPa}$ at the outer fibres, $\pm 168.7\ \mathrm{MPa}$ at the flange–web junction. The area of this diagram times the flange area gives the flange force. Note that the diagram is drawn as if the section were solid; in the web the actual stress follows the same straight line but acts on very little area, which is exactly why the web contributes so little to $I$.
+f: 40e6*x/32.7e6
+x: -127.45, 127.45
+y: -170, 170
+labels: \text{bending stress (MPa) against distance from the neutral axis (mm)}
+caption: Linear bending stress distribution across the depth of the I-section of Example 2 for $M = 40\ \mathrm{kN\,m}$: zero at the centroid, $\pm 155.8\ \mathrm{MPa}$ at the outer fibres, $\pm 145.6\ \mathrm{MPa}$ at the flange–web junction. The stress at a flange's mid-thickness times the flange area gives the flange force. Note that the diagram is drawn as if the section were solid; in the web the actual stress follows the same straight line but acts on very little area, which is exactly why the web contributes so little to $I$.
 :::
 
 ::: proposition Depth is bought, not free {#prop-economical-depth}
@@ -102,7 +102,7 @@ For a rectangular section of fixed area $A = b d$, the section modulus is $Z = A
 $$
 \delta \propto \frac{1}{I} \propto \frac{1}{d^{2}},
 $$
-while the **buckling** capacity of the compression flange goes roughly as $1 / d$ for a given lateral restraint spacing. Doubling a beam's depth at constant weight therefore doubles its strength, quadruples its stiffness, and roughly halves its resistance to lateral-torsional buckling.
+while the compression flange, carrying a larger share of a larger moment with no more lateral stiffness, becomes more prone to buckling sideways. Doubling a beam's depth at constant weight therefore doubles its strength and quadruples its stiffness, but makes it more dependent on lateral restraint.
 :::
 
 ::: proof
@@ -110,7 +110,7 @@ With $A$ fixed, $Z = b d^{2} / 6 = A d / 6$ and $I = b d^{3} / 12 = A d^{2} / 12
 $$
 M_{cr} \approx \frac{\pi}{L_c} \sqrt{E I_y G J} ,
 $$
-and $I_y$ of the compression flange is essentially independent of the depth while the lever arm between the flanges grows as $d$, so the elastic buckling resistance of the whole section falls off as the flanges are pushed further apart and unrestrained. The three effects pull in opposite directions, and the practical consequence is that the optimum depth of a real beam is set not by $\sigma = M c / I$ but by the ratio of span to depth: about $L / 16$ to $L / 20$ for a rolled steel beam, $L / 20$ to $L / 25$ for a concrete one, and $L / 30$ or more for a plate girder whose web is stiffened against the buckling that would otherwise govern.
+and $I_y$ of the compression flange is essentially independent of the depth while the lever arm between the flanges grows as $d$, so the elastic buckling resistance of the whole section falls off as the flanges are pushed further apart and unrestrained. The three effects pull in opposite directions, and the practical consequence is that the optimum depth of a real beam is set not by $\sigma = M c / I$ but by the ratio of span to depth: about $L / 15$ to $L / 20$ for a rolled steel floor beam, and deeper, about $L / 10$ to $L / 15$, for a plate girder whose thin web is stiffened against the buckling that would otherwise govern.
 :::
 
 ::: example Uniform-strength cantilever {#ex-uniform-strength}
@@ -146,21 +146,21 @@ where $I_{\max} = b_0 d^{3} / 12$ is the second moment at the root — $1.5$ tim
 ::: example Flitched beam {#ex-flitch}
 A flitched beam consists of two timber joists $100 \times 200\ \mathrm{mm}$ with a steel plate $180\ \mathrm{mm}$ deep and $10\ \mathrm{mm}$ thick bolted between them. Take $E_s = 200\ \mathrm{GPa}$, $E_w = 10\ \mathrm{GPa}$. Find the maximum stresses in each material for a moment of $30\ \mathrm{kN\,m}$.
 ::: solution
-**Transform to timber.** With $n = E_s / E_w = 20$, the steel plate becomes a timber plate $20 \times 10 = 200\ \mathrm{mm}$ wide and $180\ \mathrm{mm}$ deep. The transformed section is therefore a **solid** timber rectangle $200\ \mathrm{mm}$ wide (the two joists side by side) by $200\ \mathrm{mm}$ deep, since the transformed plate exactly fills the interior, and
+**Transform to timber.** With $n = E_s / E_w = 20$, the steel plate becomes a timber plate $20 \times 10 = 200\ \mathrm{mm}$ wide and $180\ \mathrm{mm}$ deep, centred on the same mid-depth as the two $100 \times 200\ \mathrm{mm}$ joists, and
 $$
-I_{\text{tr}} = \frac{200 \times 200^{3}}{12} = 133.3 \times 10^{6}\ \mathrm{mm^{4}} .
+I_{\text{tr}} = \frac{2 \times 100 \times 200^{3}}{12} + \frac{200 \times 180^{3}}{12} = 133.3 \times 10^{6} + 97.2 \times 10^{6} = 230.5 \times 10^{6}\ \mathrm{mm^{4}} .
 $$
 The section is symmetric, so the neutral axis is at mid-depth and
 $$
-\sigma_{w, \max} = \frac{30 \times 10^{6} \times 100}{133.3 \times 10^{6}} = 22.5\ \mathrm{MPa} \text{ in timber},
+\sigma_{w, \max} = \frac{30 \times 10^{6} \times 100}{230.5 \times 10^{6}} = 13.0\ \mathrm{MPa} \text{ in timber},
 $$
 $$
-\sigma_{s, \max} = n \times \frac{30 \times 10^{6} \times 90}{133.3 \times 10^{6}}
-= 20 \times 20.25 = 405\ \mathrm{MPa} \text{ in steel}.
+\sigma_{s, \max} = n \times \frac{30 \times 10^{6} \times 90}{230.5 \times 10^{6}}
+= 20 \times 11.71 = 234\ \mathrm{MPa} \text{ in steel}.
 $$
 *Check.* The steel's stress at its own outer fibre is $20$ times the timber stress at the same strain, and the strain is continuous across the plate — that is the whole method. $\checkmark$
 
-*Sanity.* The steel is at $405\ \mathrm{MPa}$ while the timber is only $22.5\ \mathrm{MPa}$, which is the point: the steel is placed where the strain is large, and being $20$ times as stiff it takes $20$ times the stress at the same strain. But note the trap — the steel plate is only $180\ \mathrm{mm}$ deep, so it never sees the extreme-fibre strain, and its stress of $405\ \mathrm{MPa}$ is close to yield while the timber is at a fifth of its capacity. A flitch plate should be nearly as deep as the joists, and if it is not, the steel is being asked to work harder than the wood. The same arithmetic governs reinforced concrete, where the transformed area of steel is $n \approx 7$ times its real area and the concrete above the neutral axis is ignored entirely because it is cracked.
+*Sanity.* The steel is at $234\ \mathrm{MPa}$ while the timber is only $13.0\ \mathrm{MPa}$, which is the point: the steel is placed where the strain is large, and being $20$ times as stiff it takes $20$ times the stress at the same strain. But note the trap — the steel plate is only $180\ \mathrm{mm}$ deep, so it never sees the extreme-fibre strain, and the plate carries only $42$ per cent of the moment ($97.2 / 230.5$) even though its transformed width equals that of both joists together. A flitch plate should be nearly as deep as the joists, or the steel's stiffness is wasted near the neutral axis. The same arithmetic governs reinforced concrete, where the transformed area of steel is $n \approx 7$ times its real area and the concrete above the neutral axis is ignored entirely because it is cracked.
 :::
 :::
 
@@ -187,7 +187,7 @@ M \le \frac{30 \times 8.29 \times 10^{6}}{91.8} = 2.71\ \mathrm{kN\,m} \text{ (t
 $$
 **Tension governs: $M_{\text{allow}} = 2.71\ \mathrm{kN\,m}$.**
 
-*Sanity.* The allowable moment is set by the **tension** fibre at the bottom, five times further out than the compression fibre, and the compression capacity is only $20$ per cent used. Cast iron is weak in tension and strong in compression, so the ideal section puts most of its material near the top — which is exactly what a T does, but this one is proportioned the wrong way round for a sagging moment. Flip it upside down and the numbers become $M \le 80 \times 8.29 \times 10^{6} / 91.8 = 7.22\ \mathrm{kN\,m}$ in compression and $30 \times 8.29 \times 10^{6} / 48.2 = 5.16\ \mathrm{kN\,m}$ in tension, so the inverted T carries $90$ per cent more. Cast-iron frames, machine beds and old bridge girders were proportioned with the flange at the bottom for precisely this reason, and a contractor who installs one upside down has halved its capacity.
+*Sanity.* The allowable moment is set by the **tension** fibre at the bottom, almost twice as far out as the compression fibre, and the compression capacity is only $20$ per cent used. Cast iron is weak in tension and strong in compression, so the ideal section puts most of its material near the top — which is exactly what a T does, but this one is proportioned the wrong way round for a sagging moment. Flip it upside down and the numbers become $M \le 80 \times 8.29 \times 10^{6} / 91.8 = 7.22\ \mathrm{kN\,m}$ in compression and $30 \times 8.29 \times 10^{6} / 48.2 = 5.16\ \mathrm{kN\,m}$ in tension, so the inverted T carries $90$ per cent more. Cast-iron frames, machine beds and old bridge girders were proportioned with the flange at the bottom for precisely this reason, and a contractor who installs one upside down has halved its capacity.
 :::
 :::
 
@@ -221,11 +221,11 @@ $$
 :::
 
 ::: warning Why beams fail sideways
-$\sigma = M c / I$ assumes the compression flange stays put. In a real beam the top flange is a strut loaded in compression and free to bow out of the plane of bending unless something restrains it. If it is unrestrained over a length $L_c$, the beam may **laterally-torsionally buckle** at a moment $M_{cr}$ well below its yield moment, and it does so suddenly, with warning only in the form of a visible twist. The controlling parameters are the unbraced length, the section's torsional stiffness $G J$ and its warping stiffness $E I_w$, and the practical consequence is that a steel beam's capacity is a **function of how often it is braced**: a fully braced $457 \times 152\ \mathrm{UB}\ 60$ develops $229\ \mathrm{kN\,m}$ of plastic moment, the same section unbraced over $8\ \mathrm{m}$ develops barely $120\ \mathrm{kN\,m}$. A design that computes $\sigma = M c / I$ and stops has not designed the beam; it has designed a beam that will not fall over.
+$\sigma = M c / I$ assumes the compression flange stays put. In a real beam the top flange is a strut loaded in compression and free to bow out of the plane of bending unless something restrains it. If it is unrestrained over a length $L_c$, the beam may **laterally-torsionally buckle** at a moment $M_{cr}$ well below its yield moment, and it does so suddenly, with warning only in the form of a visible twist. The controlling parameters are the unbraced length, the section's torsional stiffness $G J$ and its warping stiffness $E I_w$, and the practical consequence is that a steel beam's capacity is a **function of how often it is braced**: a fully braced rolled I-beam can develop its full plastic moment, while the same section unbraced over a long span may buckle at half of it or less. A design that computes $\sigma = M c / I$ and stops has not designed the beam; it has designed a beam that will not fall over.
 :::
 
 ::: history
-The question of how a beam resists bending was posed by Galileo in the *Discorsi e dimostrazioni matematiche* (*Due nuove scienze*) of 1638, where he treated a cantilever as a bundle of fibres all pivoting about the corner at the wall and derived a resistance proportional to the section's modulus in the sense of $b d^{2} / 2$. That is the right answer for the strength of a rectangular beam and the wrong mechanism, because Galileo assumed uniform strain across the depth. Edme Mariotte corrected the mechanism around 1680 by observing that the fibres near the neutral axis must be nearly unstressed, and Jacob Bernoulli, Johann Bernoulli and Leonhard Euler then supplied the deflection theory. The modern form of the flexure formula is due to Charles-Augustin de Coulomb, who in 1773 stated the linear strain distribution and the linear stress distribution explicitly and applied them to the strength of beams, and to Giordano Riccati, who had already recognised in 1782 that the resistance depends on the second moment of area. Navier put the whole on a rigorous footing in 1826, and it is his name that is attached to the stress $\sigma = M y / I$ in French and German practice. The empirical discovery that made iron ships and railway bridges possible — that a rolled web-and-flange section is enormously better than a plate of the same weight — belongs to the ironmasters of the 1840s, and the first patent for a rolled flanged rail is of 1820; the I-section is an invention of the shop floor that theory explained afterwards.
+The question of how a beam resists bending was posed by Galileo in the *Discorsi e dimostrazioni matematiche* of 1638, where he treated a cantilever as a bundle of fibres all pivoting about the bottom corner at the wall and, assuming every fibre resisted equally, derived a resistance proportional to $b d^{2} / 2$. The dependence on $b d^{2}$ is right, but the coefficient is three times the elastic value $b d^{2} / 6$, because Galileo knew nothing of elasticity. Edme Mariotte, in work published in 1686, assumed that the fibres stretch in proportion to their distance from the pivot, which reduced Galileo's figure; Antoine Parent (1713) and Charles-Augustin de Coulomb, in his memoir of 1773, placed the neutral axis correctly and wrote the equilibrium of the section in essentially its modern form, while Jacob Bernoulli and Leonhard Euler supplied the theory of the elastic curve. Their results were little used in practice until Navier's lectures of 1826 made $\sigma = M y / I$ part of engineering teaching. The empirical discovery that made iron ships and railway bridges possible — that a web-and-flange section is enormously better than a plate of the same weight — belongs to the ironmasters and engineers of the first half of the nineteenth century: John Birkinshaw patented rolled wrought-iron rails in 1820, and the first rolled wrought-iron I-beams appeared in France in the late 1840s. The I-section is an invention of the shop floor that theory explained afterwards.
 :::
 
 ::: quiz
@@ -235,7 +235,7 @@ A beam of a given cross-sectional area is made in four shapes, all with the same
 - [x] The I-section
 - [ ] They are all equal
 ::: solution
-The I-section. For a fixed area the section modulus rises as material is moved away from the neutral axis, and the ranking follows how far each shape pushes its area out: square $1.00$, rectangle $1.26$, circular tube about $2.5$, I-section $3$ to $5$. The limit would be two point areas infinitely far apart, which is why a plate girder with two flange plates and a thin web approaches the theoretical maximum — and why the design stops there: beyond a certain slenderness the compression flange buckles laterally and the web buckles in shear, so the achievable shape factor of a real rolled section is a compromise between bending efficiency and stability.
+The I-section. For a fixed area the section modulus rises as material is moved away from the neutral axis, and the ranking follows how far each shape pushes its area out: square $1.00$, rectangle $1.41$, circular tube about $2.5$, I-section $3$ to $5$. The limit would be two point areas infinitely far apart, which is why a plate girder with two flange plates and a thin web approaches the theoretical maximum — and why the design stops there: beyond a certain slenderness the compression flange buckles laterally and the web buckles in shear, so the achievable shape factor of a real rolled section is a compromise between bending efficiency and stability.
 :::
 :::
 
@@ -276,7 +276,7 @@ $Z = \pi D^{3} / 32 = \pi \times 60^{3} / 32 = 21.2 \times 10^{3}\ \mathrm{mm^{3
 A simply supported $150 \times 75\ \mathrm{mm}$ rectangular timber beam of $2.5\ \mathrm{m}$ span has an allowable bending stress of $12\ \mathrm{MPa}$. Find the maximum central load in kN, neglecting self-weight.
 ::: solution
 $Z = 75 \times 150^{2} / 6 = 281.3 \times 10^{3}\ \mathrm{mm^{3}}$, $M_{\text{allow}} = 12 \times 281.3 \times 10^{3} = 3.375\ \mathrm{kN\,m}$, and $P = 4 M / L = 4 \times 3.375 / 2.5 = 5.4\ \mathrm{kN}$.
-*Note.* The self-weight is $0.15 \times 0.075 \times 2.5 \times 5\ \mathrm{kN / m^{3}} \approx 0.14\ \mathrm{kN}$, contributing $w L / 4 = 0.09\ \mathrm{kN\,m}$, about $3$ per cent — negligible here, but not on a long span.
+*Note.* The self-weight is $0.15 \times 0.075 \times 2.5 \times 5\ \mathrm{kN / m^{3}} \approx 0.14\ \mathrm{kN}$, contributing $w L^{2} / 8 = 0.056 \times 2.5^{2} / 8 = 0.044\ \mathrm{kN\,m}$, about $1.3$ per cent — negligible here, but not on a long span.
 :::
 :::
 
@@ -291,10 +291,10 @@ $$
 **(b) Tube, strong way.**
 $$
 I = \frac{40 \times 60^{3} - 30 \times 50^{3}}{12}
-= \frac{720.0 \times 10^{6} - 312.5 \times 10^{6}}{12} \times 10^{-1} = 407.5 \times 10^{3}\ \mathrm{mm^{4}},
+= \frac{8.640 \times 10^{6} - 3.750 \times 10^{6}}{12} = 407.5 \times 10^{3}\ \mathrm{mm^{4}},
 $$
 $$
-Z = \frac{407.5 \times 10^{3}}{30} = 13.6 \times 10^{3}\ \mathrm{mm^{3}}, \qquad A = 350\ \mathrm{mm^{2}} .
+Z = \frac{407.5 \times 10^{3}}{30} = 13.6 \times 10^{3}\ \mathrm{mm^{3}}, \qquad A = 2400 - 1500 = 900\ \mathrm{mm^{2}} .
 $$
 **(c) Tube, weak way.**
 $$
@@ -303,9 +303,9 @@ I' = \frac{60 \times 40^{3} - 50 \times 30^{3}}{12} = 207.5 \times 10^{3}\ \math
 $$
 **Strength per unit mass**, taking $Z / A$ in $\mathrm{mm^{2}}$:
 $$
-\text{(a) } 10.0, \qquad \text{(b) } 38.9, \qquad \text{(c) } 29.6 .
+\text{(a) } 10.0, \qquad \text{(b) } 15.1, \qquad \text{(c) } 11.5 .
 $$
-*Sanity.* The tube is $57$ per cent as strong as the solid bar it replaces from $15$ per cent of the material, so it is nearly four times as efficient per kilogram — and it is still $44$ per cent more efficient than the solid bar even when bent about its **weak** axis. This is the whole case for hollow sections in frames, spaceframes and vehicle structures, and the whole reason a bicycle frame is tubes and not bars. The corollary is that hollow sections fail in ways solid ones do not: local buckling of the compression wall, and ovalisation at a welded joint.
+*Sanity.* The tube is $57$ per cent as strong as the solid bar it replaces from $37.5$ per cent of the material, so it is $1.5$ times as efficient per kilogram — and it is still $15$ per cent more efficient than the solid bar even when bent about its **weak** axis. This is the whole case for hollow sections in frames, spaceframes and vehicle structures, and the whole reason a bicycle frame is tubes and not bars. The corollary is that hollow sections fail in ways solid ones do not: local buckling of the compression wall, and ovalisation at a welded joint.
 :::
 :::
 
@@ -324,14 +324,14 @@ $$
 :::
 
 ::: exercise Unsymmetric {level=2}
-For the T-section of Example 6, find the maximum **hogging** moment (top in tension) that may be applied.
+For the T-section of Example 5, find the maximum **hogging** moment (top in tension) that may be applied.
 ::: solution
 For hogging, the bottom fibre is in compression at $c_c = 91.8\ \mathrm{mm}$ and the top in tension at $c_t = 48.2\ \mathrm{mm}$:
 $$
-M \le \frac{80 \times 6.06 \times 10^{6}}{91.8} = 5.28\ \mathrm{kN\,m}, \qquad
-M \le \frac{30 \times 6.06 \times 10^{6}}{48.2} = 3.77\ \mathrm{kN\,m}.
+M \le \frac{80 \times 8.29 \times 10^{6}}{91.8} = 7.22\ \mathrm{kN\,m}, \qquad
+M \le \frac{30 \times 8.29 \times 10^{6}}{48.2} = 5.16\ \mathrm{kN\,m}.
 $$
-**Tension governs: $3.77\ \mathrm{kN\,m}$**, nearly twice the sagging capacity of $1.98\ \mathrm{kN\,m}$.
+**Tension governs: $5.16\ \mathrm{kN\,m}$**, nearly twice the sagging capacity of $2.71\ \mathrm{kN\,m}$.
 *Sanity.* The same section carries $90$ per cent more in one sense of bending than the other. Any beam whose moment changes sign — a continuous beam over a support, a crane runway, a connecting rod — must be checked in both senses, and if the section is unsymmetric the two capacities are different numbers, not one number with a $\pm$.
 :::
 :::
@@ -344,20 +344,20 @@ w = 30\ \mathrm{kN / m}, \qquad
 M_{\max} = \frac{30 \times 7.5^{2}}{8} = 211\ \mathrm{kN\,m}, \qquad
 Z_{\text{req}} = \frac{211 \times 10^{6}}{165} = 1279 \times 10^{3}\ \mathrm{mm^{3}} .
 $$
-A $457 \times 191\ \mathrm{UB}\ 67$ has $Z_x = 1185 \times 10^{3}\ \mathrm{mm^{3}}$ and $I_x = 270 \times 10^{6}\ \mathrm{mm^{4}}$: it fails the stress check at $178\ \mathrm{MPa}$ **and** the deflection check at $22.3\ \mathrm{mm}$ against the $20.8\ \mathrm{mm}$ limit.
+The deflection limit $L / 360 = 20.8\ \mathrm{mm}$ requires $I \ge 5 w L^{4} / (384 E \times 20.8) = 289 \times 10^{6}\ \mathrm{mm^{4}}$. From the UK section tables (BS 4-1), a $457 \times 152\ \mathrm{UB}\ 67$ has $Z_x \approx 1263 \times 10^{3}\ \mathrm{mm^{3}}$ and $I_x \approx 289 \times 10^{6}\ \mathrm{mm^{4}}$: it just fails the stress check at $167\ \mathrm{MPa}$.
 
-Try a $457 \times 191\ \mathrm{UB}\ 74$: $Z_x = 1444 \times 10^{3}\ \mathrm{mm^{3}}$, $I_x = 330 \times 10^{6}\ \mathrm{mm^{4}}$.
+Try a $457 \times 191\ \mathrm{UB}\ 67$ of the same mass: $Z_x \approx 1296 \times 10^{3}\ \mathrm{mm^{3}}$, $I_x \approx 294 \times 10^{6}\ \mathrm{mm^{4}}$.
 $$
-\sigma = \frac{211 \times 10^{6}}{1444 \times 10^{3}} = 146\ \mathrm{MPa} < 165 \quad \checkmark
+\sigma = \frac{211 \times 10^{6}}{1296 \times 10^{3}} = 163\ \mathrm{MPa} < 165 \quad \checkmark
 $$
 $$
 \delta = \frac{5 w L^{4}}{384 E I}
-= \frac{5 \times 30 \times 7500^{4}}{384 \times 205\,000 \times 330 \times 10^{6}}
-= 18.3\ \mathrm{mm} < \frac{L}{360} = 20.8\ \mathrm{mm} \quad \checkmark
+= \frac{5 \times 30 \times 7500^{4}}{384 \times 205\,000 \times 294 \times 10^{6}}
+= 20.5\ \mathrm{mm} < \frac{L}{360} = 20.8\ \mathrm{mm} \quad \checkmark
 $$
-**Select $457 \times 191\ \mathrm{UB}\ 74$.**
+**Select $457 \times 191\ \mathrm{UB}\ 67$.**
 
-*Design comment.* The lighter section failed **both** checks, and the deflection limit is what drove the choice: the required second moment for $L / 360$ is $290 \times 10^{6}\ \mathrm{mm^{4}}$, which no section light enough to satisfy the stress limit happens to have. Serviceability, not strength, sizes most long-span floor beams — which is why a building's steelweight is set by deflection and vibration, and why a designer who checks only the stress produces a safe but uneconomic frame or, more often, an unsafe one that bounces. Note also that the deflection limit is a **serviceability** requirement driven by the finishes: a plastered ceiling cracks at about $L / 240$ to $L / 360$, a glass partition at $L / 180$, and a bare steel frame supporting nothing but itself has no limit at all short of vibration.
+*Design comment.* Both checks are close to critical here: the selected beam meets the stress limit with $1$ per cent and the deflection limit with $2$ per cent to spare. On longer spans the deflection limit takes over, because the required $I$ grows as $L^{4}$ while the required $Z$ grows only as $L^{2}$. Serviceability, not strength, sizes most long-span floor beams — which is why a building's steelweight is set by deflection and vibration, and why a designer who checks only the stress produces a safe but uneconomic frame or, more often, an unsafe one that bounces. Note also that the deflection limit is a **serviceability** requirement driven by the finishes: a plastered ceiling cracks at about $L / 240$ to $L / 360$, a glass partition at $L / 180$, and a bare steel frame supporting nothing but itself has no limit at all short of vibration.
 :::
 :::
 

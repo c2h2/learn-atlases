@@ -30,7 +30,7 @@ A **punching** or **tearing** shear failure occurs on a cylindrical or prismatic
 :::
 
 ::: proof
-These are equilibrium statements, not material laws. For a pin in double shear, isolate the central member: the pin crosses two interfaces, and at each the shear force must be $P / 2$ for the isolated piece to be in equilibrium, so the average shear stress on each plane is $P / (2 A_{\text{pin}})$. For bearing, the pin presses on the plate over a semic cylindrical surface whose **projected** area on the diametral plane is $d t$; taking the horizontal equilibrium of the half of the contact, the resultant of whatever pressure distribution actually exists equals the average bearing stress times $d t$. The projected-area convention is a notional stress, not a real one — the true contact pressure peaks at the middle of the hole and depends on the clearance and on the stiffness of both parts — but it is the convention used in every design code, and mixing the two gives nonsense. For punching, the sheared surface is the cylindrical side of the plug, of area $\pi d t$, and the average shear stress is $P / (\pi d t)$; note that this is four times the pin's own shear area for the same diameter, which is why a bolt shears at its shank rather than punching the plate it passes through.
+These are equilibrium statements, not material laws. For a pin in double shear, isolate the central member: the pin crosses two interfaces, and at each the shear force must be $P / 2$ for the isolated piece to be in equilibrium, so the average shear stress on each plane is $P / (2 A_{\text{pin}})$. For bearing, the pin presses on the plate over a semicylindrical surface whose **projected** area on the diametral plane is $d t$; taking the horizontal equilibrium of the half of the contact, the resultant of whatever pressure distribution actually exists equals the average bearing stress times $d t$. The projected-area convention is a notional stress, not a real one — the true contact pressure peaks at the middle of the hole and depends on the clearance and on the stiffness of both parts — but it is the convention used in every design code, and mixing the two gives nonsense. For punching, the sheared surface is the cylindrical side of the plug, of area $\pi d t$, and the average shear stress is $P / (\pi d t)$; note that this is $4 t / d$ times the pin's own shear area $\pi d^{2} / 4$ for the same diameter, so whenever the plate is thicker than a quarter of the diameter the punching area is the larger, which is why a bolt usually shears at its shank rather than punching the plate it passes through.
 :::
 
 ::: example Stepped bar in tension {#ex-stepped}
@@ -153,11 +153,11 @@ $$
 with $E / (1 - \nu^{2}) = 70\,000 / (1 - 0.1089) = 78\,554\ \mathrm{MPa}$. Then
 $$
 \sigma_x = 78\,554 \left( 2330 + 0.33 \times (-1660) \right) \times 10^{-6}
-= 78\,554 \times 1781.2 \times 10^{-6} = 140\ \mathrm{MPa},
+= 78\,554 \times 1782.2 \times 10^{-6} = 140\ \mathrm{MPa},
 $$
 $$
 \sigma_y = 78\,554 \left( -1660 + 0.33 \times 2330 \right) \times 10^{-6}
-= 78\,554 \times (-890.1) \times 10^{-6} = -70\ \mathrm{MPa}.
+= 78\,554 \times (-891.1) \times 10^{-6} = -70\ \mathrm{MPa}.
 $$
 *Check.* Substituting back, $\varepsilon_x = (140 + 0.33 \times 70) / 70\,000 = 163.1 / 70\,000 = 2330\ \mu \varepsilon$. $\checkmark$
 
@@ -215,7 +215,7 @@ f: 120000/(x*x*3.14159/4)/1000000
 x: 20, 45
 y: 70, 390
 labels: \text{stress in a tie rod carrying } 120\ \mathrm{kN}
-caption: Nominal tensile stress against rod diameter for the $120\ \mathrm{kN}$ tie of Example 6. The stress falls as $1 / d^{2}$: $382\ \mathrm{MPa}$ at $20\ \mathrm{mm}$, $170\ \mathrm{MPa}$ at $30\ \mathrm{mm}$, $118\ \mathrm{MPa}$ at $36\ \mathrm{mm}$. The allowable of $177.5\ \mathrm{MPa}$ is crossed at $29.3\ \mathrm{mm}$, but the deflection limit pushes the answer to $36\ \mathrm{mm}$ — the flat part of this curve is where real tie rods live, and it is a reminder that on the steep left-hand end a small reduction in diameter is a large increase in stress.
+caption: Nominal tensile stress against rod diameter for the $120\ \mathrm{kN}$ tie of Example 5. The stress falls as $1 / d^{2}$: $382\ \mathrm{MPa}$ at $20\ \mathrm{mm}$, $170\ \mathrm{MPa}$ at $30\ \mathrm{mm}$, $118\ \mathrm{MPa}$ at $36\ \mathrm{mm}$. The allowable of $177.5\ \mathrm{MPa}$ is crossed at $29.3\ \mathrm{mm}$, but the deflection limit pushes the answer to $36\ \mathrm{mm}$ — the flat part of this curve is where real tie rods live, and it is a reminder that on the steep left-hand end a small reduction in diameter is a large increase in stress.
 :::
 
 ::: example Factor of safety from a proof test {#ex-proof}
@@ -232,7 +232,7 @@ so at the proof load the factor of safety is $331 / 80 = 4.1$.
 :::
 
 ::: history
-The measurement of what materials will bear begins with Galileo's *Two New Sciences* (1638), whose dialogues on the breaking strength of wires and rods establish the free-body idea of cutting a body and balancing the internal forces across the cut — the origin of stress, even though Galileo got the stress distribution in a bending beam wrong. Robert Hooke's 1676 anagram *ceiiinosssttuv*, expanded in 1678 to *ut tensio, sic vis*, "as the extension, so the force", is the first statement of the linear elastic law, and the law is still called Hooke's law although Hooke stated it for springs and coils rather than for stress and strain. The distinction between stress and strain, and the modulus as a material constant, belongs to the eighteenth century: Leonhard Euler introduced what is now called Young's modulus in his 1744 memoir on columns, and Thomas Young named and measured it in lectures from 1802 and in the 1807 supplement to the *Encyclopædia Britannica*, which is why the continent calls it Euler's modulus and the English-speaking world calls it Young's. Siméon Denis Poisson gave the lateral-contraction ratio in his *Théorie mathématique de l'élasticité* (1829), and Gabriel Lamé and Augustin-Louis Cauchy put the three-dimensional law into its modern tensor form in the 1830s and 1840s. The factor of safety entered practice with the iron railways: the British Board of Trade required a bridge to carry twice the heaviest locomotive load, and the practice of specifying a global factor — three, then five, then more for anything that might kill — was codified in the railway and boiler rules of the 1850s and only replaced by partial-factor limit-state design in the 1970s.
+The measurement of what materials will bear begins with Galileo's *Two New Sciences* (1638), whose dialogues on the breaking strength of ropes, rods and beams treat resistance to fracture as something that can be reasoned about from geometry — although Galileo got the stress distribution in a bending beam wrong. Robert Hooke published the anagram *ceiiinosssttuv* in 1676 and its solution, *ut tensio, sic vis*, "as the extension, so the force", in his 1678 lecture *De Potentia Restitutiva*; it is the first statement of the linear elastic law, and it is still called Hooke's law although Hooke stated it for springs, wires and other bodies rather than for stress and strain. A modulus that belongs to the material rather than to the specimen appears in Thomas Young's *Course of Lectures on Natural Philosophy and the Mechanical Arts* (1807), based on lectures he gave at the Royal Institution in 1802–03; Young expressed it as the height of a column of the material rather than as the ratio of stress to strain used today. Augustin-Louis Cauchy defined stress and strain at a point in the 1820s, Siméon Denis Poisson introduced the lateral-contraction ratio in his 1829 memoir on elastic equilibrium (his molecular theory predicted the value $1/4$ for every material), and Gabriel Lamé's *Leçons sur la théorie mathématique de l'élasticité des corps solides* (1852) was the first textbook of the subject. The factor of safety entered practice with the iron railways: after the Dee Bridge collapse of 1847 a Royal Commission investigated the use of iron in railway structures, and from 1859 the Board of Trade limited the working stress in wrought-iron railway bridges to 5 tons per square inch. Single global factors of this kind were replaced by partial-factor limit-state design in the British codes of the 1970s and later in the Eurocodes.
 :::
 
 ::: quiz
@@ -242,7 +242,7 @@ Two bars of the same material have the same length and the same weight. Bar 1 is
 - [ ] Bar 1, because it has no stress concentration
 - [ ] The question cannot be answered without knowing the absolute size
 ::: solution
-Bar 2, by about $17$ per cent. Compliance adds as $\int \mathrm{d} x / (E A)$, which averages the **reciprocal** of the area, whereas equal weight fixes the **arithmetic** average of the area. For the frustum $\delta = 4 P L / (\pi E d_1 d_2)$, and with $d_2 = 2 d_1$ and matched volumes the uniform bar works out $17$ per cent less extensible. The general principle — that a constriction dominates the extension, so material placed away from it is used efficiently — is why bolt shanks are turned down, why leaf springs taper and why bone redistributes itself along the load path.
+Bar 2, by about $17$ per cent ($7/6$ times as much). Compliance adds as $\int \mathrm{d} x / (E A)$, which averages the **reciprocal** of the area, whereas equal weight fixes the **arithmetic** average of the area. For the frustum $\delta = 4 P L / (\pi E d_1 d_2)$, and with $d_2 = 2 d_1$ and matched volumes the frustum stretches $7/6$ times as much as the uniform bar, about $17$ per cent more. The general principle — that a constriction dominates the extension, so material placed away from it is used efficiently — is why bolt shanks are turned down, why leaf springs taper and why bone redistributes itself along the load path.
 :::
 :::
 
@@ -254,7 +254,7 @@ Axial members are developed in [[mechanics-of-materials/axial-loading]], torsion
 - Stress is force over area and strain is change in length over length; $\sigma = P / A$ is an average and is valid only away from discontinuities.
 - Use the resisting area: double shear doubles the pin's area, bearing uses the projected area $d t$, and punching uses the cylindrical surface $\pi d t$.
 - Hooke's law $\sigma = E \varepsilon$ and $\tau = G \gamma$ with $G = E / 2 (1 + \nu)$; only two elastic constants are independent for an isotropic solid.
-- In plane stress the strain-to-stress inversion carries a factor $1 / (1 - \nu^{2})$; ignoring Poisson coupling over-estimates stress by $10$ to $15$ per cent.
+- In plane stress the strain-to-stress inversion carries a factor $1 / (1 - \nu^{2})$; ignoring Poisson coupling can over-estimate the stress substantially ($17$ per cent in Example 4).
 - Design on the allowable stress $P / A \le \sigma_{\text{allow}}$, but check deflection: long members are often governed by stiffness, not strength.
 - A factor of safety is defined against a stated limit and is not multiplicative; modern codes apply separate partial factors to loads and to strengths.
 :::
@@ -265,7 +265,7 @@ Axial members are developed in [[mechanics-of-materials/axial-loading]], torsion
 A $25\ \mathrm{mm}$ diameter bar carries $50\ \mathrm{kN}$ in tension. Find the average normal stress in MPa.
 ::: solution
 $A = \pi \times 25^{2} / 4 = 490.9\ \mathrm{mm^{2}}$, so $\sigma = 50\,000 / 490.9 = 102\ \mathrm{MPa}$.
-*Note.* Had the diameter been $20\ \mathrm{mm}$ the stress would have been $159\ \mathrm{MPa}$: the area goes as the square of the diameter, so a $25$ per cent error in diameter is a $33$ per cent error in stress, and a halving of the diameter is a quadrupling of it.
+*Note.* Had the diameter been $20\ \mathrm{mm}$ the stress would have been $159\ \mathrm{MPa}$: the area goes as the square of the diameter, so a diameter $20$ per cent smaller gives a stress $56$ per cent higher, and a halving of the diameter is a quadrupling of it.
 :::
 :::
 
@@ -277,7 +277,7 @@ $\gamma = 8 / 40 = 0.20\ \text{radians} = 11.5^{\circ}$. Elastomeric bearings wo
 :::
 
 ::: exercise Pin diameter {level=1 check="26"}
-For the lug joint of Example 3, what pin diameter is required if the allowable shear stress is $60\ \mathrm{MPa}$ instead of $80\ \mathrm{MPa}$?
+For the lug joint of Example 2, what pin diameter is required if the allowable shear stress is $60\ \mathrm{MPa}$ instead of $80\ \mathrm{MPa}$?
 ::: solution
 $A_{\text{req}} = 30\,000 / 60 = 500\ \mathrm{mm^{2}}$ per shear plane, so $d = \sqrt{4 \times 500 / \pi} = 25.2\ \mathrm{mm}$, and take $26\ \mathrm{mm}$. A $25$ per cent reduction in allowable stress requires a $15$ per cent increase in diameter, because $d \propto 1 / \sqrt{\tau}$ — the square root is why going to a higher-grade pin steel buys so much.
 :::
@@ -308,28 +308,28 @@ $$
 \sigma_{\text{nom}} = \frac{80\,000}{400} = 200\ \mathrm{MPa}, \qquad
 \sigma_{\text{peak}} = 2.5 \times 200 = 500\ \mathrm{MPa}.
 $$
-*Sanity.* The hole removes a third of the section and triples the stress: $2.0$ from the loss of area and $1.25$ more from the concentration. Under static loading of a ductile material the peak is relieved by local yielding and the member survives; under fatigue the same $500\ \mathrm{MPa}$ peak drives a crack and the fatigue strength is reduced by a factor $K_f$ of about $1.8$ to $2.2$. This is the single most important reason a fatigue-critical part has no holes, no sharp corners and no weld toes, and why aircraft skin lap joints are countersunk, cold-worked and shot-peened.
+*Sanity.* The hole removes a third of the section, which raises the nominal stress by a factor of $1.5$ (from $133\ \mathrm{MPa}$ on the gross section to $200\ \mathrm{MPa}$ on the net section), and the concentration multiplies that by a further $2.5$, so the peak is $3.75$ times the gross-section stress. Under static loading of a ductile material the peak is relieved by local yielding and the member survives; under fatigue the same $500\ \mathrm{MPa}$ peak drives a crack and the fatigue strength is reduced by a factor $K_f$ of about $1.8$ to $2.2$. This is the single most important reason a fatigue-critical part has no holes, no sharp corners and no weld toes, and why aircraft skin lap joints are countersunk, cold-worked and shot-peened.
 :::
 :::
 
 ::: exercise Design {level=3}
-A bracket is bolted to a column by four identical bolts in a rectangle, two above and two below, and carries a vertical load of $40\ \mathrm{kN}$ at $250\ \mathrm{mm}$ from the column face. Determine the load in the most heavily loaded bolt if the bolts are (a) bearing-type with the shear plane at the faying surface, and (b) high-strength friction-grip pre-tensioned to $150\ \mathrm{MPa}$ in an M20 bolt.
+A bracket is bolted to a column by four identical bolts in a rectangle, two above and two below, $200\ \mathrm{mm}$ apart vertically and $100\ \mathrm{mm}$ apart horizontally, and carries a vertical load of $40\ \mathrm{kN}$ whose line of action is $250\ \mathrm{mm}$ from the centroid of the bolt group. Determine the load in the most heavily loaded bolt if the bolts are (a) bearing-type with the shear plane at the faying surface, and (b) M20 property class 8.8 friction-grip bolts (tensile stress area $245\ \mathrm{mm^{2}}$, proof strength $640\ \mathrm{MPa}$) pre-tensioned to $70$ per cent of proof, with a slip factor of $0.4$ on one slip plane.
 ::: solution
 **Direct shear.** Each bolt carries $40 / 4 = 10\ \mathrm{kN}$ vertically.
 
-**Moment.** The moment is $40 \times 0.250 = 10\ \mathrm{kN\,m}$. Taking the bolts at $\pm 100\ \mathrm{mm}$ from the group centroid vertically and assuming the group rotates about its centre, the horizontal bolt spacing cancels from the second moment of area, and the resisting force per bolt is proportional to its vertical distance. With four bolts at $d = 100\ \mathrm{mm}$,
+**Moment.** The moment about the group centroid is $40 \times 0.250 = 10\ \mathrm{kN\,m}$. Assuming the group rotates about its centroid, each bolt resists with a force perpendicular to its radius $r$ and proportional to it. Every bolt is at $x = \pm 50\ \mathrm{mm}$, $y = \pm 100\ \mathrm{mm}$, so $r = \sqrt{50^{2} + 100^{2}} = 111.8\ \mathrm{mm}$ and
 $$
-\sum r^{2} = 4 \times 100^{2} = 40\,000\ \mathrm{mm^{2}}, \qquad
-F_{\text{moment}} = \frac{M d}{\sum r^{2}} = \frac{10 \times 10^{6} \times 100}{40\,000} = 25\ \mathrm{kN}
+\sum r^{2} = 4 \left( 50^{2} + 100^{2} \right) = 50\,000\ \mathrm{mm^{2}}, \qquad
+F_{\text{moment}} = \frac{M r}{\sum r^{2}} = \frac{10 \times 10^{6} \times 111.8}{50\,000} = 22.4\ \mathrm{kN},
 $$
-acting horizontally on the outermost bolts.
+with a horizontal component $M y / \sum r^{2} = 20\ \mathrm{kN}$ and a vertical component $M x / \sum r^{2} = 10\ \mathrm{kN}$. On the two bolts nearer the load the vertical component adds to the direct shear.
 
 **(a) Bearing type.** The resultant on the critical bolt is
 $$
-F = \sqrt{10^{2} + 25^{2}} = 26.9\ \mathrm{kN}.
+F = \sqrt{20^{2} + (10 + 10)^{2}} = 28.3\ \mathrm{kN}.
 $$
 
-**(b) Friction-grip.** An M20 bolt of property class 8.8 has a tensile stress area of $245\ \mathrm{mm^{2}}$ and is pre-tensioned to $0.7 \times 640 \times 245 = 110\ \mathrm{kN}$. The slip resistance per bolt with $\mu = 0.4$ is $0.4 \times 110 = 44\ \mathrm{kN}$, against a maximum bolt shear of $26.9\ \mathrm{kN}$, so the joint does not slip and the bolts never bear.
+**(b) Friction-grip.** An M20 bolt of property class 8.8 has a tensile stress area of $245\ \mathrm{mm^{2}}$ and is pre-tensioned to $0.7 \times 640 \times 245 = 110\ \mathrm{kN}$. The slip resistance per bolt with $\mu = 0.4$ is $0.4 \times 110 = 44\ \mathrm{kN}$, against a maximum bolt shear of $28.3\ \mathrm{kN}$, so the joint does not slip and the bolts never bear.
 
 *Design comment.* The friction-grip joint is stronger, stiffer and — decisively — immune to fatigue, because the pre-tension clamps the plates and the bolt sees almost no alternating load. A bearing-type bolt in a repeatedly loaded joint is a fatigue time bomb: the bolt rattles in its hole and fails at a load far below the static value computed above.
 :::
@@ -342,7 +342,7 @@ The work done by a load growing from zero to $P$ is $\tfrac{1}{2} P \delta$, and
 $$
 U = \frac{1}{2} \frac{P^{2} L}{A E} = \frac{1}{2} \frac{\sigma^{2}}{E} (A L),
 $$
-so the strain energy per unit volume is $\sigma^{2} / 2 E$, the area under the stress-strain line. Cast-iron and concrete design used this quantity as a failure criterion — the maximum-principal-stress theory — before distortion energy was understood.
+so the strain energy per unit volume is $\sigma^{2} / 2 E$, the area under the stress-strain line. Beltrami proposed this quantity as a failure criterion in 1885 — the total-strain-energy theory — before the distortion-energy criterion displaced it.
 
 For the tapered bar, at distance $x$ from the small end the diameter is $d (x) = d_1 + (d_2 - d_1) x / L$ and the area is $A (x) = \pi d (x)^{2} / 4$. Since the force is $P$ everywhere,
 $$
@@ -353,6 +353,6 @@ $$
 $$
 *Check.* If $d_1 = d_2 = d$ this becomes $4 P L / (\pi E d^{2}) = P L / (E \pi d^{2} / 4) = P L / A E$. $\checkmark$
 
-*Sanity.* The result is the same as that of a uniform bar whose diameter is the **geometric mean** $\sqrt{d_1 d_2}$, not the arithmetic mean. For $d_1 = 20$ and $d_2 = 40\ \mathrm{mm}$ the geometric mean is $28.3\ \mathrm{mm}$ against an arithmetic mean of $30\ \mathrm{mm}$, so using the average diameter under-estimates the extension by $12$ per cent. The general rule — that compliance averages the **reciprocal** of the area — is the reason a chain of springs in series is dominated by its weakest link, and the reason a bolt's elongation is governed by its shank and thread root rather than by its mean diameter.
+*Sanity.* The result is the same as that of a uniform bar whose diameter is the **geometric mean** $\sqrt{d_1 d_2}$, not the arithmetic mean. For $d_1 = 20$ and $d_2 = 40\ \mathrm{mm}$ the geometric mean is $28.3\ \mathrm{mm}$ against an arithmetic mean of $30\ \mathrm{mm}$, so using the average diameter under-estimates the extension by $11$ per cent ($800 / 900 = 0.889$). The general rule — that compliance averages the **reciprocal** of the area — is the reason a chain of springs in series is dominated by its softest spring, and the reason a bolt's elongation is governed by its shank and thread root rather than by its mean diameter.
 :::
 :::

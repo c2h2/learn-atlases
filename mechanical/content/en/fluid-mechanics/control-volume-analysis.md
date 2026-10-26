@@ -45,7 +45,7 @@ $$
 \begin{array}{l c c}
 \text{Profile} & \beta & \alpha \\
 \text{Uniform} & 1.000 & 1.000 \\
-\text{Turbulent pipe, } u / U_c = \left( 1 - r / R \right)^{1 / 7} & 1.020 & 1.063 \\
+\text{Turbulent pipe, } u / U_c = \left( 1 - r / R \right)^{1 / 7} & 1.020 & 1.058 \\
 \text{Fully rough, } u / u_* = 2.5 \ln \left( y / y_0 \right) & 1.03 \text{ to } 1.05 & 1.08 \text{ to } 1.12 \\
 \text{Laminar pipe, } u = U_{\max} \left( 1 - r^{2} / R^{2} \right) & 4 / 3 = 1.333 & 2.000
 \end{array}
@@ -102,21 +102,21 @@ $$
 F_x = 517 - 9{,}425 + 1{,}292 = - 7{,}616\ \mathrm{N}
 $$
 $$
-F_y = \rho \dot{Q} v_2 - p_2 A_2 \sin 45^{\circ} = 800 - 1{,}292 = - 492\ \mathrm{N}
+F_y = \rho \dot{Q} v_2 + p_2 A_2 \sin 45^{\circ} = 800 + 1{,}291 = 2{,}091\ \mathrm{N}
 $$
 $$
-F = \sqrt{7{,}616^{2} + 492^{2}} = 7{,}632\ \mathrm{N}, \qquad
-\theta = 180^{\circ} + 3.7^{\circ}
+F = \sqrt{7{,}616^{2} + 2{,}091^{2}} = 7{,}898\ \mathrm{N}, \qquad
+\theta = 180^{\circ} - 15.4^{\circ} = 164.6^{\circ}
 $$
-**The pressure terms contribute $- 8{,}133\ \mathrm{N}$ and the momentum flux $+ 517\ \mathrm{N}$** — the anchor is a **pressure** problem with a momentum correction, and the fact that $F_y$ is dominated by the outlet pressure's component is why a bend's thrust block is placed at the **mitre**.
+These are the components of the force of the bend on the fluid; the force of the fluid on the bend — what the anchor resists — is equal and opposite. **In $x$ the pressure terms contribute $- 8{,}134\ \mathrm{N}$ and the momentum flux $+ 517\ \mathrm{N}$** — the anchor is a **pressure** problem with a momentum correction, and even $F_y$ is $62\ \%$ outlet pressure.
 :::
 
 ::: widget plot
-f: 4*x*(1-x)^2; 2*(1-x)/3
+f: 4*x*(1-x)^2; 4*x*(1-x)
 x: 0, 1
-y: 0, 0.85
-labels: Cp = 4a(1-a)^2; CT/3 = 2(1-a)/3
-caption: The actuator-disk power coefficient $C_P = 4 a \left( 1 - a \right)^2$ against the axial induction factor $a$, where the disk slows the flow from $V$ to $V(1-a)$ and the wake ultimately reaches $V(1-2a)$. The maximum is at $a = 1 / 3$ with $C_P = 16 / 27 = 0.593$ — the **Betz limit** of **1920**, derived from one-dimensional momentum and continuity alone and independent of the number, shape or material of the blades. The straight line is one third of the **thrust** coefficient, $C_T / 3 = 2 \left( 1 - a \right) / 3$, plotted so that the two curves share an axis; at the Betz optimum $C_T = 4 / 3$, and the fact that a turbine running at that point carries **one and a third times the gross dynamic-pressure load on its entire swept area** — $222\ \mathrm{kN}$ on a $60\ \mathrm{m}$ rotor at $12\ \mathrm{m / s}$ — is the reason a three-blade rotor's root bending moment is set by thrust and not by power. **Above $a > 0.5$ the momentum theory breaks down** because the wake becomes turbulent and the simple pressure recovery no longer holds; the measured curve falls away and the empirical correction of **Glauert** is needed.
+y: 0, 1.05
+labels: Cp = 4a(1-a)^2; CT = 4a(1-a)
+caption: The actuator-disk power coefficient $C_P = 4 a \left( 1 - a \right)^2$ against the axial induction factor $a$, where the disk slows the flow from $V$ to $V(1-a)$ and the wake ultimately reaches $V(1-2a)$. The maximum is at $a = 1 / 3$ with $C_P = 16 / 27 = 0.593$ — the **Betz limit** of **1920**, derived from one-dimensional momentum and continuity alone and independent of the number, shape or material of the blades. The second curve is the **thrust** coefficient $C_T = 4 a \left( 1 - a \right)$; at the Betz optimum $C_T = 8 / 9$, so a turbine running at that point carries **$89\ \%$ of the dynamic-pressure load on its entire swept area** — $222\ \mathrm{kN}$ on a $60\ \mathrm{m}$ rotor at $12\ \mathrm{m / s}$ — which is why a rotor's root bending moment and its tower are sized by thrust and not by power. **Above $a > 0.5$ the momentum theory breaks down** because the wake becomes turbulent and the simple pressure recovery no longer holds; the measured curve falls away and the empirical correction of **Glauert** is needed.
 :::
 
 ## Moving control volumes
@@ -151,7 +151,7 @@ $$
 $$
 \eta_{\mathrm{intercepted}, \max} = \tfrac{1}{2} \left( 1 - \cos \beta_2 \right) = 0.983 \quad \text{for} \quad \beta_2 = 165^{\circ}
 $$
-**Both conventions are in the literature, they differ by $44\%$ at the design point, and neither is wrong; state which one you are using.** The practical consequence is that a runner quoted at "$92\%$ efficiency" on the intercepted basis is at $0.92 \times \left( 1 - 0.46 \right) = 0.50$ on the jet basis, and a hydraulic-efficiency guarantee written without the definition is unenforceable.
+**Both conventions are in the literature, they differ by the factor $1 / \left( 1 - u / V \right)$ — almost two at the design point — and neither is wrong; state which one you are using.** The practical consequence is that a runner quoted at "$92\%$ efficiency" on the intercepted basis is at $0.92 \times \left( 1 - 0.46 \right) = 0.50$ on the jet basis, and a hydraulic-efficiency guarantee written without the definition is unenforceable.
 **The worked Pelton case.** A jet of $d = 100\ \mathrm{mm}$ at $V = 100\ \mathrm{m / s}$ on buckets with $\beta_2 = 165^{\circ}$ running at $u = 45\ \mathrm{m / s}$:
 $$
 \dot{m} = \rho A \left( V - u \right) = 1{,}000 \times 7.854 \times 10^{- 3} \times 55 = 432\ \mathrm{kg / s}
@@ -163,8 +163,7 @@ $$
 P = F u = 46{,}700 \times 45 = 2.10\ \mathrm{MW}, \qquad
 \eta = \frac{2.10 \times 10^{6}}{\tfrac{1}{2} \times 1{,}000 \times 7.854 \times 10^{- 3} \times 100^{3}} = \frac{2.10 \times 10^{6}}{3.927 \times 10^{6}} = 0.535
 $$
-**against the $\eta_{\max} = \left( 1 + \cos 165^{\circ} \right) / 2 = 0.983$** — the shortfall is entirely because $u / V = 0.45$ and not $0.50$, and the reason real Pelton wheels run at $u / V = 0.46$ and reach $\eta = 0.90$ is that the jet must be **cut** by the following bucket's splitter, which costs a little of the ideal.
-**The number that makes a Pelton wheel's bearing design hard.** The force $46.7\ \mathrm{kN}$ is applied at the **pitch-circle radius** and the shaft carries it as a **radial** load that reverses as each bucket passes the jet — a $2\ \mathrm{Hz}$ alternating load on a $300\ \mathrm{rpm}$ shaft, and the reason Pelton bearings are sized on fatigue and not on the mean.
+**on the jet basis.** On the intercepted basis the same runner is at $2 \times 0.45 \times 0.55 \times 1.966 = 0.973$, against $\eta_{\max} = \left( 1 - \cos 165^{\circ} \right) / 2 = 0.983$ — the gap between $0.535$ and $0.973$ is entirely the choice of basis, and only the last $1\ \%$ is due to running at $u / V = 0.45$ rather than $0.50$. Real Pelton wheels run near $u / V \approx 0.46$ and reach overall efficiencies of about $0.90$, the rest being lost to friction in the buckets, windage and the cutting of the jet by each bucket's splitter.
 :::
 
 ::: definition Rockets and variable mass {#def-rocket}
@@ -172,13 +171,13 @@ $$
 $$
 \boxed{ T = \dot{m} V_e + \left( p_e - p_a \right) A_e }
 $$
-**The two terms** are the **momentum thrust** and the **pressure thrust**. At the **optimum altitude** $p_e = p_a$ and the second vanishes; below it the nozzle is **underexpanded** and the second term is positive; above it **overexpanded** and negative, until separation makes it unpredictable.
+**The two terms** are the **momentum thrust** and the **pressure thrust**. At the **optimum altitude** $p_e = p_a$ and the second vanishes; below it (higher $p_a$) the nozzle is **overexpanded** and the second term is negative, until separation in the nozzle makes it unpredictable; above it the nozzle is **underexpanded** and the term is positive.
 **The worked case.** $\dot{m} = 2{,}500\ \mathrm{kg / s}$, $V_e = 2{,}500\ \mathrm{m / s}$, $p_e = 0.70\ \mathrm{MPa}$, $p_a = 0.025\ \mathrm{MPa}$, $A_e = 1.5\ \mathrm{m^{2}}$:
 $$
 T = 2{,}500 \times 2{,}500 + \left( 0.70 - 0.025 \right) \times 10^{6} \times 1.5
 = 6.25 \times 10^{6} + 1.013 \times 10^{6} = 7.26\ \mathrm{MN}
 $$
-**The pressure term is $14\ \%$ of the thrust**, and the fact that it grows with altitude until $p_e = p_a$ is the whole of the reason a nozzle's exit area is chosen for the **middle** of the trajectory and not the end.
+**The pressure term is $14\ \%$ of the thrust**, and the fact that it changes with altitude — negative low down, positive high up — is why a nozzle's exit area is a compromise across the trajectory.
 **The effective exhaust velocity and the specific impulse.**
 $$
 c \equiv \frac{T}{\dot{m}} = V_e + \frac{\left( p_e - p_a \right) A_e}{\dot{m}}
@@ -192,10 +191,10 @@ $$
 $$
 **The mass ratio that a single stage can carry.** For $\Delta V = 9{,}400\ \mathrm{m / s}$ to orbit and $c = 3{,}000\ \mathrm{m / s}$:
 $$
-\frac{m_0}{m_1} = e^{9{,}400 / 3{,}000} = 23.1
+\frac{m_0}{m_1} = e^{9{,}400 / 3{,}000} = 23.0
 $$
-**which requires a structural fraction below $4\ \%$ and is impossible**, which is the whole of the reason rockets are staged. With two stages each at a mass ratio of $\sqrt{23.1} = 4.8$ and a $6\ \%$ structure, the payload fraction is $4\ \%$ — the number that makes a launch vehicle's economics.
-**The number that makes the pressure term a design driver.** At sea level a vacuum-optimised nozzle is **overexpanded** and its pressure term is **negative**; the Space Shuttle's solid boosters lost $12\ \%$ of their vacuum thrust at sea level to it, and the reason a nozzle's expansion ratio is $25$ and not $80$ is the $12\ \%$, not the mass of the extension.
+**so that structure and payload together could be only $4.3\ \%$ of the lift-off mass — impractical**, which is why rockets are staged. With two equal stages each at a mass ratio of $\sqrt{23.0} = 4.79$ and a structural coefficient $\varepsilon = m_s / \left( m_s + m_p \right) = 0.06$, the payload ratio per stage is $\lambda = \left( 1 - 4.79 \times 0.06 \right) / 3.79 = 0.188$ and the overall payload fraction is $\left( \lambda / \left( 1 + \lambda \right) \right)^{2} = 2.5\ \%$ — the number that makes a launch vehicle's economics.
+**The number that makes the pressure term a design driver.** At sea level a nozzle with a large expansion ratio is **overexpanded**, its pressure term is **negative**, and its flow may separate inside the bell; that, more than the mass of the extension, is why first-stage engines use much smaller expansion ratios than upper-stage engines.
 :::
 
 ::: definition Angular momentum and the turbomachine equation {#def-angular}
@@ -231,12 +230,12 @@ $$
 \qquad
 P = \rho g \dot{Q} H = 1{,}000 \times 9.81 \times 0.05 \times 39.7 = 19.5\ \mathrm{kW}
 $$
-**The number that makes the Euler equation only half the story.** The **slip factor** $\sigma$ accounts for the fact that the fluid does not quite follow the blade's exit angle — a finite number of blades leaves the flow **slipped back** — and the **Stodala** estimate
+**The number that makes the Euler equation only half the story.** The **slip factor** $\sigma$ accounts for the fact that the fluid does not quite follow the blade's exit angle — a finite number of blades leaves the flow **slipped back** — and the **Stodola** estimate of the slip velocity is $V_s = \pi U_2 \sin \beta_2 / Z$, i.e. a slip factor
 $$
-\sigma = 1 - \frac{\pi \sin \beta_2}{Z}
+\sigma = 1 - \frac{V_s}{U_2} = 1 - \frac{\pi \sin \beta_2}{Z}
 $$
-with $Z = 7$ blades gives $\sigma = 1 - \pi \times 0.4226 / 7 = 0.810$, so the **actual** head is $0.810 \times 39.7 = 32.2\ \mathrm{m}$. **A nineteen per cent loss from a purely kinematic cause**, and the reason a pump's blade count is seven or five and never twelve: more blades raise $\sigma$ but increase the blockage and the friction, and the optimum is a genuine compromise.
-**The reaction.** The fraction of the head developed by **diffusion** in the rotor rather than by centrifugal action:
+With $Z = 7$ blades, $\sigma = 1 - \pi \times 0.4226 / 7 = 0.810$ and $V_s = 0.190 \times 22.78 = 4.32\ \mathrm{m / s}$, so $V_{\theta 2}$ falls to $17.09 - 4.32 = 12.77\ \mathrm{m / s}$ and the head to $22.78 \times 12.77 / 9.81 = 29.7\ \mathrm{m}$. **A quarter of the Euler head lost to a purely kinematic cause**, and the reason a pump's blade count (typically five to nine) is a compromise: more blades reduce the slip but increase the blockage and the friction.
+**The degree of reaction.** The fraction of the (Euler) head that appears as static-pressure rise in the impeller rather than as kinetic energy at its exit:
 $$
 R = 1 - \frac{V_{\theta 2}}{2 U_2} = 1 - \frac{17.09}{45.56} = 0.625
 $$
@@ -270,10 +269,10 @@ $$
 $$
 \boxed{ F_{\mathrm{threads}} = 5{,}728\ \mathrm{N}\ \text{tending to pull the nozzle off the hose} }
 $$
-**The reading.** The momentum flux contributes $+ 764\ \mathrm{N}$ and the flange pressure $- 6{,}492\ \mathrm{N}$, so **the nozzle is pushed backwards by the pressure inside it** and the threads carry $5.7\ \mathrm{kN}$ — the reason a fireman braces against the nozzle and not with it, and the reason a $2\ \mathrm{bar}$ hose with a $25\ \mathrm{mm}$ branch is a two-handed tool.
-**The number that makes a fire monitor need a swivel restraint.** A $5{,}728\ \mathrm{N}$ reaction at the end of a $0.6\ \mathrm{m}$ monitor gives a $3.4\ \mathrm{kN\, m}$ overturning moment, and the reason a monitor's pedestal is designed for the **worst-case** angle rather than the horizontal one is that the reaction is **always along the jet**, so the moment is maximum when the jet is horizontal and the pedestal is only checked in that position.
-**The check against the jet's own momentum.** The jet carries $\rho \dot{Q} V_2 = 1{,}000 \times 0.020 \times 40.74 = 815\ \mathrm{N}$, and the reaction is **seven times** that. **The difference is the pressure force on the converging wall**, and the fact that a nozzle's reaction exceeds its jet momentum flux by a factor of several is the single most counter-intuitive result in hydraulics — and the reason a **free** jet hitting a wall exerts $\rho Q V$ while the **nozzle that produced it** is pushed the other way by $\rho Q (V_2 - V_1) + p_1 A_1$.
-*Sanity.* The reason $p_2 = 0$ is legitimate is that the jet discharges to atmosphere and its streamlines are straight at the exit; if the exit were **submerged** the pressure there would be the hydrostatic value and the whole calculation would shift by $p_2 A_2 = 4.9 \times 10^{- 4} p_2$, which at $10\ \mathrm{m}$ depth is $4.9\ \mathrm{kN}$ — comparable to the answer. **Submerged nozzles must be computed with the ambient pressure included, and the difference is not a correction.**
+**The reading.** The momentum flux contributes $+ 764\ \mathrm{N}$ and the flange pressure $- 6{,}492\ \mathrm{N}$, so **the nozzle is pushed backwards by the pressure inside it** and the threads carry $5.7\ \mathrm{kN}$ — the reason an $8\ \mathrm{bar}$ hose with a $25\ \mathrm{mm}$ branch is a two-handed tool.
+**The number that makes a fire monitor need a swivel restraint.** A $5{,}728\ \mathrm{N}$ reaction at the end of a $0.6\ \mathrm{m}$ monitor gives a $3.4\ \mathrm{kN\, m}$ overturning moment, and because the reaction always acts **along the jet axis**, the pedestal must be checked at every elevation and slew angle the monitor can reach.
+**The check against the jet's own momentum.** The jet carries $\rho \dot{Q} V_2 = 1{,}000 \times 0.020 \times 40.74 = 815\ \mathrm{N}$, and the reaction is **seven times** that. **The difference is the pressure force on the converging wall**, and the fact that a nozzle's reaction exceeds its jet momentum flux by a factor of several is the single most counter-intuitive result in hydraulics — and the reason a **free** jet hitting a wall exerts $\rho Q V$ while the **nozzle that produced it** is pulled off its hose by $p_1 A_1 - \rho Q (V_2 - V_1)$.
+*Sanity.* The reason $p_2 = 0$ is legitimate is that the jet discharges to atmosphere and its streamlines are straight at the exit; if the exit were **submerged** at $10\ \mathrm{m}$ depth, the exit pressure would be $98.1\ \mathrm{kPa}$, the flange pressure would rise by the same amount, and the thread force would change by $p_2 \left( A_1 - A_2 \right) = 98{,}100 \times 7.36 \times 10^{- 3} = 722\ \mathrm{N}$ — $13\ \%$ of the answer. **Submerged nozzles must be computed with the ambient pressure included.**
 :::
 :::
 
@@ -302,7 +301,7 @@ $$
 $$
 C_T = \frac{T}{\tfrac{1}{2} \rho A V^{2}} = \frac{221{,}600}{0.5 \times 1.225 \times 2{,}827 \times 144} = 0.889 \approx \frac{8}{9} \quad \checkmark
 $$
-**The number that makes the Betz limit unreachable in practice.** The momentum theory assumes the pressure just downstream of the disk recovers to the **ambient** value in the wake, which requires the wake to remain **axisymmetric and steady**. For $a > 0.4$ the wake becomes turbulent and the flow separates from the rotor, and the measured $C_P$ falls below $4 a \left( 1 - a \right)^{2}$ — the **turbulent-wake state** of **Glauert**'s **1935** correction. A practical large rotor achieves $C_P = 0.45$ to $0.50$, so
+**The number that makes the Betz limit unreachable in practice.** The momentum theory assumes the pressure just downstream of the disk recovers to the **ambient** value in the wake, which requires the wake to remain **axisymmetric and steady**. For $a > 0.4$ the wake becomes turbulent and the flow separates from the rotor, and the measured $C_P$ falls below $4 a \left( 1 - a \right)^{2}$ — the **turbulent-wake state** covered by **Glauert**'s empirical correction of **1926**. A practical large rotor achieves $C_P = 0.45$ to $0.50$, so
 $$
 P_{\mathrm{actual}} \approx 0.47 \times 2.99 = 1.41\ \mathrm{MW}
 $$
@@ -311,8 +310,8 @@ $$
 $$
 \sigma = \frac{Z c}{\pi R} \approx 0.05 \text{ to } 0.10 \quad \text{for a modern three-blade machine}
 $$
-For $Z = 3$, $R = 30\ \mathrm{m}$: $c_{\mathrm{mean}} = 0.08 \times \pi \times 30 / 3 = 2.5\ \mathrm{m}$. **A two-and-a-half-metre chord at the mean radius**, and the reason a modern blade's root must carry a $2.5\ \mathrm{m}$ chord **and** a $70\ \mathrm{m}$ spar — the structural and the aerodynamic requirement are in direct conflict at the root, and the resolution is the elliptical tapered planform every modern blade has.
-*Sanity.* The reason the Betz limit is $16 / 27$ and not $1$ is that a turbine that **stopped** the flow would pass no flow, and one that extracted **nothing** would extract nothing; the product has an interior maximum. The general rule $P \propto V^{3}$ is the most important number in wind energy: **a site whose mean wind speed is $10\ \%$ higher yields $33\ \%$ more energy**, and the reason a $100\ \mathrm{m}$ taller tower is worth $800{,}000$ of steel is that it buys $8\ \%$ more wind speed and $26\ \%$ more energy.
+For $Z = 3$, $R = 30\ \mathrm{m}$: $c_{\mathrm{mean}} = 0.08 \times \pi \times 30 / 3 = 2.5\ \mathrm{m}$. **A two-and-a-half-metre chord at the mean radius.** Near the root the aerodynamics asks for a still wider chord while the structure asks for a thick spar to carry the bending moment, and the usual resolution is a strongly tapered planform with a thick, nearly cylindrical root.
+*Sanity.* The reason the Betz limit is $16 / 27$ and not $1$ is that a turbine that **stopped** the flow would pass no flow, and one that extracted **nothing** would extract nothing; the product has an interior maximum. The general rule $P \propto V^{3}$ is the most important number in wind energy: **a site whose mean wind speed is $10\ \%$ higher yields about $33\ \%$ more energy**, and a taller tower that buys $8\ \%$ more wind speed buys about $26\ \%$ more energy.
 :::
 :::
 
@@ -342,10 +341,10 @@ $$
 $$
 **The comparison with the boundary-layer estimate.** For a **turbulent** boundary layer over a $2.0\ \mathrm{m}$ plate at $\mathrm{Re}_L = 2 \times 2 \times 10^{6} / 10^{- 6} = 4 \times 10^{6}$:
 $$
-C_f = \frac{0.074}{\mathrm{Re}_L^{1 / 5}} = \frac{0.074}{24.3} = 0.00305, \qquad
-D = C_f \times \tfrac{1}{2} \rho U^{2} \times 2 A_w = 0.00305 \times 2{,}000 \times 4 = 24.4\ \mathrm{N}
+C_f = \frac{0.074}{\mathrm{Re}_L^{1 / 5}} = \frac{0.074}{20.9} = 0.00354, \qquad
+D = C_f \times \tfrac{1}{2} \rho U^{2} \times 2 A_w = 0.00354 \times 2{,}000 \times 4 = 28.3\ \mathrm{N}
 $$
-**The wake survey gives $30\ \%$ more**, and the difference is the **pressure drag** associated with the finite pressure gradient in the near wake plus the fact that the survey plane is only $200\ \mathrm{mm}$ downstream where the defect has not yet diffused. **A wake survey must be taken far enough downstream that the profile is self-preserving and the pressure is atmospheric**, and the reason the technique is used on wind-tunnel models despite this is that it needs no force balance and no support interference.
+**The wake survey gives $12\ \%$ more**, and the difference is the **pressure drag** associated with the finite pressure gradient in the near wake plus the fact that the survey plane is only $200\ \mathrm{mm}$ downstream where the defect has not yet diffused. **A wake survey must be taken far enough downstream that the profile is self-preserving and the pressure is atmospheric**, and the reason the technique is used on wind-tunnel models despite this is that it needs no force balance and no support interference.
 **The number that makes the momentum thickness the right variable.** $\theta$ is **independent of the stream-tube's height $h$** provided $h > \delta$, so the drag is obtained from a **local** measurement and does not require the whole field — which is the reason a single hot-wire traverse across a wake gives a drag to $\pm 5\ \%$ while a pressure-integration on the model needs a hundred taps and a support correction.
 *Sanity.* The reason the drag is $\rho U_{\infty}^{2} \theta$ and not $\tfrac{1}{2} \rho U_{\infty}^{2} \theta$ is that the momentum flux $\int \rho u (U - u) dy$ contains the **full** $U^2$ and not the dynamic pressure; the $\tfrac{1}{2}$ reappears when the result is written as $C_D = 2 \theta / L$ for a flat plate, and the factor of two is the most common slip in wake-survey work.
 :::
@@ -358,43 +357,43 @@ A sluice gate in a horizontal rectangular channel $5\ \mathrm{m}$ wide discharge
 $$
 q = \frac{12}{5} = 2.4\ \mathrm{m^{2} / s}, \qquad
 V_1 = \frac{2.4}{2.0} = 1.2\ \mathrm{m / s}, \qquad
-\mathrm{Fr}_1 = \frac{1.2}{\sqrt{9.81 \times 2.0}} = 0.086
+\mathrm{Fr}_1 = \frac{1.2}{\sqrt{9.81 \times 2.0}} = 0.271
 $$
 **The depth under the gate**, taking the specific energy as conserved ($E_1 = 2.0 + 1.2^{2} / 19.62 = 2.073\ \mathrm{m}$) and solving the cubic for the **shallow** root:
 $$
 E = y_2 + \frac{q^{2}}{2 g y_2^{2}}
-\quad \Rightarrow \quad y_2 = 0.246\ \mathrm{m}, \qquad
-V_2 = 9.76\ \mathrm{m / s}, \qquad
-\mathrm{Fr}_2 = 6.32
+\quad \Rightarrow \quad y_2 = 0.422\ \mathrm{m}, \qquad
+V_2 = 5.69\ \mathrm{m / s}, \qquad
+\mathrm{Fr}_2 = 2.80
 $$
 **The thrust on the gate**, from the momentum equation between 1 and 2 with the bed friction neglected:
 $$
 F_{\mathrm{gate}} = \left( \tfrac{1}{2} \rho g y_1^{2} + \rho q V_1 \right) - \left( \tfrac{1}{2} \rho g y_2^{2} + \rho q V_2 \right)
 $$
 $$
-= \left( 19{,}620 + 1{,}440 \right) - \left( 296 + 23{,}420 \right) = 21{,}060 - 23{,}716
+= \left( 19{,}620 + 2{,}880 \right) - \left( 872 + 13{,}663 \right) = 22{,}500 - 14{,}535
 $$
 $$
-\boxed{ F_{\mathrm{gate}} = - 2{,}656\ \mathrm{N\ per\ metre\ width} \times 5\ \mathrm{m} = 13.3\ \mathrm{kN}\ \text{downstream} }
+\boxed{ F_{\mathrm{gate}} = 7{,}965\ \mathrm{N\ per\ metre\ width} \times 5\ \mathrm{m} = 39.8\ \mathrm{kN}\ \text{downstream} }
 $$
-**The number that makes the gate's haul gear oversized.** The **hydrostatic** force on the upstream face alone is $19{,}620 \times 5 / 2 \times 2 = 98\ \mathrm{kN}$ at the gate's full height, and the net $13.3\ \mathrm{kN}$ is the **difference** between two large numbers. **A gate's structure is designed for the static head with the tailwater dry, and its hoist for the dynamic case with the tailwater at the vena contracta** — and the reason a gate that has been lowered into a fast flow cannot be lifted is that the differential is $98\ \mathrm{kN}$ and not $13$.
-**The conjugate depth of the jump.** With $\mathrm{Fr}_2 = 6.32$:
+**The number that makes the gate's design case the closed gate.** The **hydrostatic** force on the upstream face of the closed gate is $19{,}620 \times 5 = 98.1\ \mathrm{kN}$, and the $39.8\ \mathrm{kN}$ with the gate open is much less, because the flow under the gate carries momentum away instead of pressing on the gate. **A gate's structure is designed for the static head with the tailwater dry**, and the flowing case is a different, smaller load.
+**The conjugate depth of the jump.** With $\mathrm{Fr}_2 = 2.80$:
 $$
 \frac{y_3}{y_2} = \frac{1}{2} \left( \sqrt{1 + 8 \mathrm{Fr}_2^{2}} - 1 \right)
-= \frac{1}{2} \left( \sqrt{320} - 1 \right) = 8.37
-\quad \Rightarrow \quad y_3 = 2.06\ \mathrm{m}
+= \frac{1}{2} \left( \sqrt{63.7} - 1 \right) = 3.49
+\quad \Rightarrow \quad y_3 = 1.47\ \mathrm{m}
 $$
 **The head loss across the jump.**
 $$
-h_L = \frac{\left( y_3 - y_2 \right)^{3}}{4 y_2 y_3} = \frac{1.814^{3}}{4 \times 0.246 \times 2.06} = 2.95\ \mathrm{m}
+h_L = \frac{\left( y_3 - y_2 \right)^{3}}{4 y_2 y_3} = \frac{1.050^{3}}{4 \times 0.422 \times 1.47} = 0.47\ \mathrm{m}
 $$
-**against a total head of $2.07\ \mathrm{m}$** — the jump dissipates **more energy than the flow possesses relative to the critical depth**, and the reason this is not a contradiction is that $h_L$ is measured against the **specific energy**, of which only $E - E_c = 2.073 - 0.83 = 1.24\ \mathrm{m}$ is available. **The correct statement is that the jump destroys $1.24\ \mathrm{m}$ of specific energy and leaves the flow with $0.83\ \mathrm{m}$**, and the reason a stilling basin must be $30\ \mathrm{m}$ long is that $1.24\ \mathrm{m} \times 12\ \mathrm{m^{3} / s} \times 9.81 = 146\ \mathrm{kW}$ of turbulence has to go somewhere.
+**against a specific energy of $2.07\ \mathrm{m}$** — the jump destroys about a fifth of it, $\rho g Q h_L = 9{,}810 \times 12 \times 0.466 = 55\ \mathrm{kW}$ of turbulence, and checks against the direct difference $E_2 - E_3 = 2.073 - \left( 1.471 + 1.632^{2} / 19.62 \right) = 0.47\ \mathrm{m}$. At $\mathrm{Fr}_2 = 2.8$ the jump is in the weak-to-oscillating range, which is why a basin for it needs care to keep the jump stationary.
 *Sanity.* The reason the momentum function $M = y^{2} / 2 + q^{2} / \left( g y \right)$ is the right tool is that in a horizontal rectangular channel the pressure force per unit weight is exactly $y^{2} / 2$, so $M$ is conserved across anything that has no external force — a jump, a sluice gate's contraction, or a bridge opening. **The conjugate-depth formula is the momentum equation and nothing else**, and the reason it works to a per cent despite the jump being a violently turbulent three-dimensional roller is that the momentum theorem does not care what happens inside the control volume.
 :::
 :::
 
 ::: history
-**The transport theorem** is **Reynolds**'s of **1903**, in the *Memoirs of the Manchester Literary and Philosophical Society* — the same paper in which he wrote the decomposition $u = \bar{u} + u'$ that bears his name, and the same journal in which **Dalton** had communicated the atomic theory a century earlier. **Osborne Reynolds** was **32** when he read the paper, and the theorem was a footnote to a discussion of the flow in straight and curved pipes; it took **von Kármán** and **Burgess** in **1916** to notice that the footnote was the foundation of the whole subject. **The rocket equation** is **Tsiolkovsky**'s of **1903**, published in Moscow in a paper titled *The Exploration of Cosmic Space by Means of Reaction Devices*, in which he derived $\Delta V = c \ln \left( m_0 / m_1 \right)$, designed a multistage vehicle, and proposed a space station with a rotating rim — all in **Kaluga**, a provincial town where he was a schoolteacher of mathematics and **blind in one eye from a childhood accident**. **Robert Goddard** independently derived it in **1919** and flew the first liquid rocket at **Auburn, Massachusetts, on 16 March 1926**. **The Betz limit** was derived by **Albert Betz** in **1920** in a three-page note to the *Zeitschrift für das gesamte Maschinenwesen*; the same result had been obtained independently by **Zabrowsky** in **1919** in Russia and by **Schelhaneiko** in **1916**, and the reason Betz's name is attached is that he was the only one who published in a journal an engineer would read. **The actuator disk** itself is **Rankine**'s **1865** application of momentum to a screw propeller, and **Froude**'s **1889** momentum theory of the propeller disc is the same calculation with the slipstream's rotation included. **The Euler turbomachine equation** is **Euler**'s of **1754**, written for a water wheel, and it remains the only equation in turbomachinery that is exactly true.
+**The transport theorem** is usually credited to **Osborne Reynolds**, who stated it in general form in *The Sub-Mechanics of the Universe* (**1903**); his decomposition $u = \bar{u} + u'$ of a turbulent velocity is from his paper of **1895**. **The rocket equation** is **Tsiolkovsky**'s, published in **1903** in the St Petersburg journal *Nauchnoye Obozreniye* under the title *The Exploration of Cosmic Space by Means of Reaction Devices*; he later worked out multistage "rocket trains" (**1929**). He was a mathematics schoolteacher in **Kaluga**, largely deaf since a childhood attack of scarlet fever. **Robert Goddard** independently derived the equation in *A Method of Reaching Extreme Altitudes* (**1919**) and flew the first liquid-propellant rocket at **Auburn, Massachusetts, on 16 March 1926**. **The Betz limit** was published by **Albert Betz** in **1920**; the same limit had been found by **Frederick Lanchester** in **1915** and was derived independently by **Nikolai Joukowsky** in **1920**, and it is sometimes called the Lanchester–Betz–Joukowsky limit. **The actuator disk** goes back to **W. J. M. Rankine**'s **1865** momentum theory of the screw propeller, and **R. E. Froude** showed in **1889** that half of the velocity change occurs ahead of the disk. **The Euler turbomachine equation** is **Euler**'s of **1754**, written for Segner's reaction wheel, and it remains exact for the flow it describes.
 :::
 
 ::: quiz
@@ -406,7 +405,7 @@ A rocket in vacuum expels gas at speed $c$ relative to the nozzle at mass flow $
 - [ ] The pressure terms cancelling at the exit plane
 
 ::: solution
-**The control volume moves with the rocket.** In the theorem $\sum \mathbf{F} = \frac{ \partial }{ \partial t } \int_{\mathrm{CV} } \rho \mathbf{V } \, d \mathcal{V } + \int_{\mathrm{CS} } \mathbf{V } \, \rho ( \mathbf{V }_{\mathrm{rel} } \cdot \hat{ \mathbf{n} } ) \, d A$ for an inertial CV, and for an accelerating CV a fictitious-force term appears; either way the flux is carried by the velocity *relative to the surface*, and the uniform translation of the whole assembly contributes nothing to a net flux. **The folk explanation — that a rocket pushes against its exhaust, or against the ground, or against the air — is wrong in every version, and the standard demonstration that a rocket works better in vacuum is not quite true either: the thrust is actually $\dot m c + ( p_e - p_a ) A_e$, so a rocket at sea level produces slightly *more* thrust than in vacuum and is less efficient only because $c$ is lower when the nozzle is not expanded.** The lesson is that the control volume is not a description of what is happening; it is a bookkeeping choice, and getting the choice right is the whole of the analysis.
+**The control volume moves with the rocket.** In the theorem $\sum \mathbf{F} = \frac{ \partial }{ \partial t } \int_{\mathrm{CV} } \rho \mathbf{V } \, d \mathcal{V } + \int_{\mathrm{CS} } \mathbf{V } \, \rho ( \mathbf{V }_{\mathrm{rel} } \cdot \hat{ \mathbf{n} } ) \, d A$ for an inertial CV, and for an accelerating CV a fictitious-force term appears; either way the flux is carried by the velocity *relative to the surface*, and the uniform translation of the whole assembly contributes nothing to a net flux. **The folk explanation — that a rocket pushes against the ground or against the air — is wrong: the full thrust is $\dot m V_e + ( p_e - p_a ) A_e$, so a rocket produces *more* thrust in vacuum than at sea level, because the ambient pressure no longer acts against the exit plane.** The lesson is that the control volume is not a description of what is happening; it is a bookkeeping choice, and getting the choice right is the whole of the analysis.
 :::
 :::
 
@@ -477,13 +476,16 @@ $H = U_2 V_{\theta 2} / g = 22.78 \times 17.09 / 9.81 = 39.7\ \mathrm{m}$.
 :::
 
 ::: exercise Slip factor {level=2}
-A radial pump has seven blades and an exit blade angle of $25^{\circ}$. Give the Stodala slip factor and the resulting head if the Euler head is $39.7\ \mathrm{m}$.
+A radial pump has seven blades, an exit blade angle of $25^{\circ}$, $U_2 = 22.78\ \mathrm{m / s}$ and an ideal exit whirl $V_{\theta 2} = 17.09\ \mathrm{m / s}$ (Euler head $39.7\ \mathrm{m}$, no inlet whirl). Give the Stodola slip factor and the resulting head.
 ::: solution
 $$
 \sigma = 1 - \frac{\pi \sin \beta_2}{Z} = 1 - \frac{\pi \times 0.4226}{7} = 0.810, \qquad
-H = 0.810 \times 39.7 = 32.2\ \mathrm{m}
+V_s = \left( 1 - \sigma \right) U_2 = 4.32\ \mathrm{m / s}
 $$
-**The reading.** A nineteen per cent loss from a purely kinematic cause, and the reason a pump's blade count is a compromise between slip and blockage. With $Z = 12$, $\sigma = 0.889$ and $H = 35.3\ \mathrm{m}$ — better — but the twelve blades leave less room for the boundary layers on their suction sides and the pump's efficiency falls.
+$$
+H = \frac{U_2 \left( V_{\theta 2} - V_s \right)}{g} = \frac{22.78 \times 12.77}{9.81} = 29.7\ \mathrm{m}
+$$
+**The reading.** A quarter of the Euler head lost to a purely kinematic cause, and the reason a pump's blade count is a compromise between slip and blockage. With $Z = 12$, $\sigma = 0.889$, $V_s = 2.52\ \mathrm{m / s}$ and $H = 33.8\ \mathrm{m}$ — better — but the twelve blades leave less room for the boundary layers on their suction sides and the pump's efficiency falls.
 :::
 :::
 
@@ -525,7 +527,7 @@ and for a **closed** surface $\oint \mathbf{n}\, dA = 0$, so if $p_a$ is **unifo
 $$
 \oint_{CS} p_a\, \mathbf{n}\, dA = p_a \oint_{CS} \mathbf{n}\, dA = 0
 $$
-**which is the whole of the reason gauge pressures may be used.** The corollary is the trap: if the control volume is **not closed** — if part of its boundary is a solid wall whose outer face is exposed to the atmosphere and is not included in the surface integral — the cancellation fails, and the atmospheric force on the outside of the wall must be added by hand. **A balloon, a flexible duct and a thin-walled pipe bend are the three cases where the shortcut gives the wrong answer**, and in all three the error is $p_a$ times the projected area, which for a $100\ \mathrm{mm}$ pipe is $785\ \mathrm{N}$.
+**which is the whole of the reason gauge pressures may be used.** The corollary is the trap: if the control volume is **not closed** — if part of its boundary is a solid wall whose outer face is exposed to the atmosphere and is not included in the surface integral — the cancellation fails, and the atmospheric force on the outside of the wall must be added by hand. **A balloon, a flexible duct and a thin-walled pipe bend are the three cases where the shortcut gives the wrong answer**, and in all three the error is $p_a$ times the projected area, which for a $100\ \mathrm{mm}$ pipe is $101{,}325 \times 7.854 \times 10^{- 3} = 796\ \mathrm{N}$.
 **The steady, one-dimensional reduction.** With uniform profiles and $\beta$ absorbed:
 $$
 \sum F_x = \sum_{\mathrm{out}} \beta \rho \dot Q u - \sum_{\mathrm{in}} \beta \rho \dot Q u
@@ -535,61 +537,60 @@ $$
 :::
 
 ::: exercise Design {level=3}
-Specify the hydraulic and structural design of a stilling basin below a sluice gate discharging $40\ \mathrm{m^{3} / s}$ under a $4\ \mathrm{m}$ head in a $10\ \mathrm{m}$ wide channel, and state the acceptance criteria.
+Specify the hydraulic and structural design of a stilling basin below a sluice gate discharging $40\ \mathrm{m^{3} / s}$ under a $4\ \mathrm{m}$ head in a $10\ \mathrm{m}$ wide channel, with a tailwater depth of $1.8\ \mathrm{m}$ over the natural bed at the design flow, and state the acceptance criteria.
 ::: solution
 **The design flow states.**
 $$
-q = 4.0\ \mathrm{m^{2} / s}, \qquad y_1 = 4.0\ \mathrm{m}, \quad V_1 = 1.0\ \mathrm{m / s}, \quad \mathrm{Fr}_1 = 0.050
+q = 4.0\ \mathrm{m^{2} / s}, \qquad y_1 = 4.0\ \mathrm{m}, \quad V_1 = 1.0\ \mathrm{m / s}, \quad \mathrm{Fr}_1 = 0.16
 $$
-Taking a discharge coefficient of $0.61$ and a vena-contracta coefficient of $0.61$, the depth under the gate is
+Taking the specific energy as conserved from the reservoir to the vena contracta, $E_0 = 4.0 + 1.0^{2} / 19.62 = 4.05\ \mathrm{m}$, and the shallow root of $E_0 = y_2 + q^{2} / \left( 2 g y_2^{2} \right)$ is
 $$
-y_2 = \frac{C_c q^{2 / 3}}{\left( g E_0 \right)^{1 / 3}} \approx 0.55\ \mathrm{m}, \qquad
-V_2 = 7.27\ \mathrm{m / s}, \qquad \mathrm{Fr}_2 = 9.92
+y_2 = 0.478\ \mathrm{m}, \qquad
+V_2 = 8.37\ \mathrm{m / s}, \qquad \mathrm{Fr}_2 = 3.87
 $$
 **The conjugate depth.**
 $$
-\frac{y_3}{y_2} = \tfrac{1}{2} \left( \sqrt{1 + 8 \times 98.4} - 1 \right) = 13.5
-\quad \Rightarrow \quad y_3 = 7.45\ \mathrm{m}
+\frac{y_3}{y_2} = \tfrac{1}{2} \left( \sqrt{1 + 8 \times 14.96} - 1 \right) = 4.99
+\quad \Rightarrow \quad y_3 = 2.39\ \mathrm{m}
 $$
-**against a tailwater of $3.2\ \mathrm{m}$ over the natural bed.** The conjugate depth is $2.3$ times the tailwater, so **a hydraulic jump cannot be held in a basin at this head** — the USBR classification puts the design in the "silled basin or deflector" range, and the correct answer is a **ski-jump**: turn the jet up and let it fly, and dissipate its energy in a **roller bucket** where it impacts itself.
-**The ski-jump.** With a $30^{\circ}$ lip at the invert, the jet's centreline leaves at $7.27\ \mathrm{m / s}$ at $30^{\circ}$ and lands, neglecting air and aeration, at a distance
+**against a tailwater of $1.8\ \mathrm{m}$ over the natural bed.** The conjugate depth is $1.33$ times the tailwater, so **a jump on the natural bed would be swept downstream** onto the unprotected channel. The usual remedy is to **lower the basin floor** so that the tailwater over the floor exceeds the conjugate depth.
+**The lowered floor.** Dropping the floor $1.0\ \mathrm{m}$ raises the specific energy at the vena contracta, measured from the new floor, to $5.05\ \mathrm{m}$, and
 $$
-x \approx \frac{2 V^{2} \sin \theta \cos \theta}{g} = \frac{2 \times 52.9 \times 0.5 \times 0.866}{9.81} = 4.7\ \mathrm{m}
+y_2 = 0.420\ \mathrm{m}, \quad V_2 = 9.53\ \mathrm{m / s}, \quad \mathrm{Fr}_2 = 4.70, \qquad
+y_3 = \tfrac{1}{2} \left( \sqrt{1 + 8 \times 22.1} - 1 \right) \times 0.420 = 2.59\ \mathrm{m}
 $$
-**from the lip** — a short jump, because the velocity is low for the head. **The reason a ski-jump is used at high-head dams and not here is that its value is in throwing a fast jet away from the toe**, and at $7\ \mathrm{m / s}$ the jet has no reach; the correct device at this Froude number and this tailwater deficiency is a **safety (deflector) basin** with a central block that splits the jet and a raised end sill that holds a roller.
-**The deflector basin.** A central block $2.4\ \mathrm{m}$ high and $1.2\ \mathrm{m}$ wide, with a $45^{\circ}$ upper face, splits the nappe into two lateral jets; a raised end sill $1.5\ \mathrm{m}$ high at the basin's downstream end creates a standing roller. The basin's dimensions follow from the **USBR** proportions for a deflector basin:
+against a tailwater over the floor of $1.8 + 1.0 = 2.8\ \mathrm{m}$ — $8\ \%$ above the conjugate depth, the margin usually sought, so the jump is held in the basin. At $\mathrm{Fr}_2 = 4.7$ (above $4.5$) with an entry velocity below about $18\ \mathrm{m / s}$, the **USBR Type III** basin, with chute blocks, baffle blocks and an end sill, is the standard choice:
 $$
 \begin{array}{l c l}
-\text{Basin length} & 2.7\, y_3 = 20\ \mathrm{m} & \text{to the end sill} \\
+\text{Basin length} & \approx 2.7\, y_3 = 7\ \mathrm{m} & \text{Type III proportion} \\
 \text{Basin width} & 10\ \mathrm{m} & \text{channel width} \\
-\text{Block height above floor} & 2.4\ \mathrm{m} & 0.32\, y_3 \\
-\text{End-sill height} & 1.5\ \mathrm{m} & 0.20\, y_3 \\
-\text{Floor thickness} & 1.2\ \mathrm{m} & \text{reinforced, keyed into cut-off walls} \\
-\text{Floor drop below natural bed} & 2.0\ \mathrm{m} & \text{reduces the required sill height}
+\text{Floor drop below natural bed} & 1.0\ \mathrm{m} & \text{supplies the tailwater margin} \\
+\text{Chute blocks, baffle blocks, end sill} & \text{USBR proportions} & \text{fix the jump's position} \\
+\text{Floor} & \text{reinforced, keyed into cut-off walls} & \text{against uplift and scour}
 \end{array}
 $$
-**The energy dissipation.** With the floor lowered $2.0\ \mathrm{m}$ the tailwater over the floor is $5.2\ \mathrm{m}$ and the conjugate depth of $7.45\ \mathrm{m}$ is only $1.43$ times it, which a raised sill can supply. The head destroyed across the jump is
+**The energy dissipation.**
 $$
-h_L = \frac{\left( 7.45 - 0.55 \right)^{3}}{4 \times 0.55 \times 7.45} = 20.0\ \mathrm{m}, \qquad
-P_{\mathrm{diss}} = \rho g Q h_L = 1{,}000 \times 9.81 \times 40 \times 20.0 = 7.9\ \mathrm{MW}
+h_L = \frac{\left( 2.59 - 0.42 \right)^{3}}{4 \times 0.42 \times 2.59} = 2.34\ \mathrm{m}, \qquad
+P_{\mathrm{diss}} = \rho g Q h_L = 1{,}000 \times 9.81 \times 40 \times 2.34 = 0.92\ \mathrm{MW}
 $$
-**The number that makes the basin a civil-engineering problem.** $7.9\ \mathrm{MW}$ destroyed in a $20 \times 10 \times 4\ \mathrm{m}$ volume is $10\ \mathrm{kW / m^{3}}$ of turbulence, and the **scour** that would follow if any of it reached the natural bed is the reason the floor is $1.2\ \mathrm{m}$ of reinforced concrete keyed into cut-off walls $6\ \mathrm{m}$ deep. **A stilling basin is designed against uplift, not against impact**: the uplift under the floor with the jump standing is $85\ \%$ of the $4\ \mathrm{m}$ head, and the drainage gallery and relief wells must reduce it below $20\ \%$ or the slab floats in a single event.
-**The impact loads.** The stagnation pressure on the deflector block's face at the design flow is
+**The number that makes the basin a civil-engineering problem.** $0.92\ \mathrm{MW}$ destroyed in a $7 \times 10 \times 2.8\ \mathrm{m}$ volume is about $5\ \mathrm{kW / m^{3}}$ of turbulence, and the **scour** that would follow if the jump escaped onto the natural bed is why the floor is reinforced and keyed into deep cut-off walls. **A stilling basin is designed against uplift as much as against impact**: when the basin is dewatered, or when the jump sweeps out and the depth over the floor is small, the seepage pressure under the slab can exceed its weight, and the drainage and relief wells must keep it below that.
+**The impact loads.** The stagnation pressure on the baffle blocks at the design flow is
 $$
-\tfrac{1}{2} \rho V_2^{2} = 0.5 \times 1{,}000 \times 7.27^{2} = 26.4\ \mathrm{kPa}
+\tfrac{1}{2} \rho V_2^{2} = 0.5 \times 1{,}000 \times 9.53^{2} = 45.4\ \mathrm{kPa}
 $$
-**with a fluctuating component whose rms is $0.4$ of the mean and whose peak is $2.5$ times it**, and the reason the block is designed for $66\ \mathrm{kPa}$ and not $26\ \mathrm{kPa}$ is that the peak is what spalls the concrete. **Impact pressures in a stilling basin are measured with flush-mounted transducers in the model and never taken as the mean velocity head.**
+**with a fluctuating component whose peaks can be two to three times the mean**, and the blocks are designed for the measured peak and not the mean because the peak is what spalls the concrete. **Impact pressures in a stilling basin are measured with flush-mounted transducers in the model and never taken as the mean velocity head.**
 **The acceptance criteria.**
 $$
 \begin{array}{l l}
 \text{Roller position} & \text{stationary within } \pm 3\ \mathrm{m}\ \text{for } 10 \text{ to } 100\ \%\ \text{ of design flow} \\
 \text{Exit velocity} & \le 2.5\ \mathrm{m / s}\ \text{uniformly, no jets} \\
 \text{Bed protection} & \text{no movement for a } 100\text{-year flood} \\
-\text{Uplift under floor} & \le 20\ \%\ \text{of the design head} \\
+\text{Uplift under floor} & \text{less than the weight of the slab and the water over it, with margin} \\
 \text{Aeration} & \text{air admitted at the jump's toe; no cavitation on the gate lip}
 \end{array}
 $$
-**The four clauses that protect the buyer.** **"THE HYDRAULIC MODEL SHALL BE TESTED AT SCALE WITH THE ACTUAL TAILWATER CURVE AND NOT AT A SINGLE ASSUMED TAILWATER."** **"THE IMPACT PRESSURES ON THE DEFLECTOR BLOCK AND END SILL SHALL BE MEASURED WITH FLUCTUATING PRESSURE TRANSDUCERS IN THE MODEL AND THE CONCRETE DESIGNED FOR THE PEAK AND NOT THE MEAN."** **"THE UPLIFT PRESSURES UNDER THE FLOOR SHALL BE MEASURED IN THE MODEL AND THE DRAINAGE SYSTEM SIZED FROM THE MEASUREMENT."** **"THE AIR-ADMISSION FACILITY UNDER THE NAPPE SHALL BE SIZED FOR THE FULL GATE OPENING AND NOT FOR THE DESIGN FLOW."**
+**The four clauses that protect the buyer.** **"THE HYDRAULIC MODEL SHALL BE TESTED AT SCALE WITH THE ACTUAL TAILWATER CURVE AND NOT AT A SINGLE ASSUMED TAILWATER."** **"THE IMPACT PRESSURES ON THE BAFFLE BLOCKS AND END SILL SHALL BE MEASURED WITH FLUCTUATING PRESSURE TRANSDUCERS IN THE MODEL AND THE CONCRETE DESIGNED FOR THE PEAK AND NOT THE MEAN."** **"THE UPLIFT PRESSURES UNDER THE FLOOR SHALL BE MEASURED IN THE MODEL AND THE DRAINAGE SYSTEM SIZED FROM THE MEASUREMENT."** **"THE AIR-ADMISSION FACILITY UNDER THE NAPPE SHALL BE SIZED FOR THE FULL GATE OPENING AND NOT FOR THE DESIGN FLOW."**
 *Design comment.* The general rule is that **a stilling basin is a machine for destroying energy that will destroy anything else that cannot destroy it**, and that its design is a hydraulic, structural and geotechnical problem solved simultaneously — which is why the model test is not a verification but the primary design document.
 :::
 :::

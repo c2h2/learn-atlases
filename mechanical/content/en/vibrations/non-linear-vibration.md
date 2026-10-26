@@ -13,7 +13,7 @@ The canonical non-linear oscillator is $m \ddot{x} + c \dot{x} + k x + \alpha x^
 $$
 \omega^{2} (A) = \omega_0^{2} + \tfrac{3}{4} \beta A^{2},
 \qquad
-T (A) = T_0 \left( 1 + \tfrac{3}{8} \frac{\beta A^{2}}{\omega_0^{2}} \right)^{- 1} .
+T (A) \approx T_0 \left( 1 + \tfrac{3}{8} \frac{\beta A^{2}}{\omega_0^{2}} \right)^{- 1} .
 $$
 The cubic term also generates a small **third harmonic**, worked in the exercises.
 :::
@@ -25,7 +25,7 @@ T = 2 \sqrt{2 m} \int_0^{A} \frac{\mathrm{d} x}{\sqrt{V (A ) - V (x )}} .
 $$
 For $V = k x^{2} / 2 + \alpha x^{4} / 4$, substituting $x = A \sin \theta$ and integrating,
 $$
-T = \frac{2 T_0}{\pi} \int_0^{\pi / 2} \frac{\mathrm{d} \theta}{\sqrt{1 + \frac{\alpha A^{2}}{2 k} \sin^{2} \theta}} ,
+T = \frac{2 T_0}{\pi} \int_0^{\pi / 2} \frac{\mathrm{d} \theta}{\sqrt{1 + \frac{\alpha A^{2}}{2 k} \left( 1 + \sin^{2} \theta \right)}} ,
 $$
 an elliptic integral. Expanding for small $\alpha A^{2} / k$,
 $$
@@ -37,11 +37,11 @@ so a hardening spring has a **shorter** period at larger amplitude, and the frac
 :::
 
 ::: widget plot
-f: 1/(1+0.375*x*x)
+f: 1/sqrt(1+0.75*x*x)
 x: 0, 2
-y: 0.5, 1.1
+y: 0.4, 1.1
 labels: T / T_0
-caption: Free-oscillation period of a hardening Duffing oscillator against amplitude, for $\beta / \omega_0^{2} = 1$, from the expansion $T / T_0 = 1 - 3 \beta A^{2} / \left( 8 \omega_0^{2} \right)$. A hardening system's resonance bends to the right, and the bending is visible in a swept test long before the jump itself.
+caption: Free-oscillation period of a hardening Duffing oscillator against amplitude, for $\beta / \omega_0^{2} = 1$, from the harmonic-balance backbone $T / T_0 = \left( 1 + 3 \beta A^{2} / 4 \omega_0^{2} \right)^{- 1 / 2}$, which for small amplitude is $1 - 3 \beta A^{2} / \left( 8 \omega_0^{2} \right)$. A hardening system's resonance bends to the right, and the bending is visible in a swept test long before the jump itself.
 :::
 
 ::: example Clock pendulum {#ex-pendulum-period}
@@ -51,11 +51,11 @@ With $\theta_0 = 6^{\circ} = 0.1047\ \mathrm{rad}$,
 $$
 \frac{\Delta T}{T} = \frac{\theta_0^{2}}{16} = \frac{0.01097}{16} = 6.9 \times 10^{- 4},
 $$
-a gain of $59\ \mathrm{s}$ per day. Doubling the amplitude to $12^{\circ}$ quadruples the error to $2.8 \times 10^{- 3}$, or $240\ \mathrm{s}$ per day.
+so the clock loses $59\ \mathrm{s}$ per day against one swinging at vanishing amplitude. Doubling the amplitude to $12^{\circ}$ quadruples the error to $2.8 \times 10^{- 3}$, or $240\ \mathrm{s}$ per day.
 
-*Check.* The exact elliptic-integral value at $6^{\circ}$ is $T / T_0 = 1.000685$ against the expansion's $1.000686$. $\checkmark$
+*Check.* The exact elliptic-integral value at $6^{\circ}$ is $T / T_0 = 1.000686$, agreeing with the expansion to six figures. $\checkmark$
 
-*Sanity.* A quarter of a day per day from a doubling of swing — which is why the **escapement**'s job is not merely to replace the lost energy but to make the amplitude nearly independent of the driving torque. The dead-beat escapement and the gravity escapement of Big Ben exist for this reason alone, decoupling the impulse from the amplitude and holding the rate to a few hundredths of a second per day over a range of drive.
+*Sanity.* Four minutes a day from a doubling of swing — which is why the **escapement**'s job is not merely to replace the lost energy but to keep the amplitude nearly constant whatever the driving torque. The dead-beat escapement, and the gravity escapement of the Great Clock at Westminster, were designed to decouple the impulse given to the pendulum from variations in the drive.
 :::
 :::
 
@@ -66,7 +66,7 @@ For a hardening Duffing oscillator driven at $\Omega$, the steady-state amplitud
 $$
 \left[ \left( \omega_0^{2} - \Omega^{2} \right) A + \tfrac{3}{4} \beta A^{3} \right]^{2} + \left( 2 \zeta \omega_0 \Omega A \right)^{2} = \left( F / m \right)^{2} .
 $$
-This is cubic in $A^{2}$, so over a band of driving frequencies **three** amplitudes are possible and the middle one is unstable. Sweeping **up** the response follows the low branch and jumps **up** at the upper fold; sweeping **down** it follows the high branch and jumps **down** at a lower frequency. The band between the folds is a **hysteresis** region, wider for larger force and lighter damping.
+This is cubic in $A^{2}$, so over a band of driving frequencies **three** amplitudes are possible and the middle one is unstable. Sweeping **up**, the response climbs the high branch as it bends to the right and jumps **down** at the upper fold; sweeping **down**, it follows the low branch and jumps **up** at the lower fold. The band between the folds is a **hysteresis** region, wider for larger force and lighter damping.
 :::
 
 ::: example Jump and hysteresis {#ex-jump}
@@ -74,14 +74,14 @@ For $\ddot{x} + 0.1 \dot{x} + x + 0.3 x^{3} = 0.3 \cos \Omega t$, find the jump-
 ::: solution
 Solving the cubic in $A^{2}$ across the sweep gives three real roots for $1.222 < \Omega < 1.418$:
 
-- **Sweep up.** The low branch reaches $A = 0.30$ at $\Omega = 1.418$ and jumps to $A = 2.11$.
-- **Sweep down.** The high branch reaches $A = 1.67$ at $\Omega = 1.222$ and jumps to $A = 0.88$.
+- **Sweep up.** The high branch rises to $A = 2.11$ at $\Omega = 1.418$ and jumps down to $A = 0.30$.
+- **Sweep down.** The low branch reaches $A = 0.88$ at $\Omega = 1.222$ and jumps up to $A = 1.67$.
 
-The linear-system resonance amplitude would be $F / \left( 2 \zeta \right) = 3.0$, so the hardening term has pushed the peak off resonance and cut it by thirty per cent.
+The linear-system resonance amplitude would be $F / \left( 2 \zeta \right) = 3.0$, so the hardening term has pushed the peak (now $2.12$) off resonance and cut it by thirty per cent.
 
 *Check.* The backbone curve gives $\Omega = \sqrt{1 + 0.225 A^{2}} = 1.275$ at $A = 1.67$, which lies inside the hysteresis band as it must. $\checkmark$
 
-*Sanity.* A jump from $A = 1.67$ to $A = 0.88$ is a factor of four in stress, occurring in a fraction of a cycle as the frequency is swept down by less than twenty per cent. Running **up** through a non-linear resonance and coasting **down** through it are therefore different experiences: a machine run above a resonance and then slowed stays on the high branch far below its linear natural frequency and then suddenly goes quiet — the classic signature of a softening mount or a loosening bolt, and one usually misdiagnosed.
+*Sanity.* The jump at the top of the up-sweep, from $A = 2.11$ to $0.30$, is a factor of seven in amplitude and stress, and it happens within a few cycles. Running **up** through a non-linear resonance and coasting **down** through it are therefore different experiences: a hardening structure swept up rides the high branch well above its linear natural frequency and then suddenly goes quiet, while on the way down it stays quiet until the lower fold and then jumps up. A softening structure does the mirror image, riding the high branch to the left on a down-sweep — the signature of a loosening mount or bolt, and one often misdiagnosed.
 :::
 :::
 
@@ -134,7 +134,7 @@ $$
 $$
 \text{doubling time} = \frac{\ln 2}{0.317} = 2.2\ \mathrm{s} = 26\ \text{cycles}.
 $$
-*Sanity.* A classical flutter test cannot wait for the amplitude to "blow up", because at one per cent over the speed the doubling time is $260$ seconds, during which the model is at risk and the tunnel is hot; the standard procedure is instead to excite a **free decay** at each speed, measure the logarithmic decrement, and extrapolate the damping to zero — the same straight-line extrapolation that gives a fatigue limit, and one that yields the flutter speed from data taken entirely **below** it. The amplitude limit that stops a real wing destroying itself comes from aerodynamic stall or structural yielding and produces a **limit-cycle oscillation** whose amplitude grows as the square root of the excess speed above the flutter point, which is the signature a flutter engineer looks for in the tunnel.
+*Sanity.* A classical flutter test cannot wait for the amplitude to "blow up", because at one per cent over the speed the doubling time is about $23$ seconds ($275$ cycles), during which the model is at risk and the tunnel is hot; the standard procedure is instead to excite a **free decay** at each speed, measure the logarithmic decrement, and extrapolate the damping to zero — an extrapolation that yields the flutter speed from data taken entirely **below** it. The amplitude limit that stops a real wing destroying itself comes from aerodynamic stall or structural yielding and produces a **limit-cycle oscillation** whose amplitude grows as the square root of the excess speed above the flutter point, which is the signature a flutter engineer looks for in the tunnel.
 :::
 :::
 
@@ -159,7 +159,7 @@ $$
 $$
 a band of $\pm 5$ per cent around $0.63\ \mathrm{Hz}$.
 
-*Sanity.* A swing is a parametric oscillator with a $\pm 5$ per cent capture band, which is why a child learns to pump **at** the swing's own frequency and cannot pump effectively at any other. The same mechanism makes a walking person a parametric exciter of a footbridge's vertical mode at **twice** its frequency, which is why "break step" is a frequency instruction and not a force one.
+*Sanity.* A swing is a parametric oscillator with a $\pm 5$ per cent capture band, which is why a child learns to pump in step with the swing — twice per swing cycle — and cannot pump effectively at any other rate.
 :::
 :::
 
@@ -170,50 +170,53 @@ The high-frequency criterion is
 $$
 \frac{A \Omega^{2}}{g} > \sqrt{2} \, \frac{\Omega}{\omega_0} = \sqrt{2} \times 10 = 14.1 ,
 $$
-and an exact Floquet analysis of the monodromy matrix gives $14.3$. The pivot acceleration amplitude must therefore be $14.3\ g$, and the stroke is
+and an exact Floquet analysis of the monodromy matrix gives $14.2$. The pivot acceleration amplitude must therefore be $14.2\ g$, and the stroke is
 $$
-A = \frac{14.3 g}{\Omega^{2}} = \frac{14.3 g}{100 \omega_0^{2}} = 0.143 \frac{g}{\omega_0^{2}} = 0.143 l_{\text{eq}} .
+A = \frac{14.2 g}{\Omega^{2}} = \frac{14.2 g}{100 \omega_0^{2}} = 0.142 \frac{g}{\omega_0^{2}} = 0.142 l_{\text{eq}} .
 $$
-For a $0.3\ \mathrm{m}$ pendulum, $\omega_0 = 5.72\ \mathrm{rad / s}$, $\Omega = 57.2\ \mathrm{rad / s} = 9.1\ \mathrm{Hz}$, and $A = 14.3 \times 9.81 / 57.2^{2} = 43\ \mathrm{mm}$.
+For a $0.3\ \mathrm{m}$ pendulum, $\omega_0 = 5.72\ \mathrm{rad / s}$, $\Omega = 57.2\ \mathrm{rad / s} = 9.1\ \mathrm{Hz}$, and $A = 14.2 \times 9.81 / 57.2^{2} = 43\ \mathrm{mm}$.
 
 *Check.* The effective gravity is $g_{\text{eff}} = g \left[ 1 - \tfrac{1}{2} \left( A \Omega^{2} / g \right)^{2} \left( \omega_0 / \Omega \right)^{2} \right]$, which vanishes at $A \Omega^{2} / g = \sqrt{2} \Omega / \omega_0$ exactly, confirming the criterion. $\checkmark$
 
-*Sanity.* A $43\ \mathrm{mm}$ stroke at $9.1\ \mathrm{Hz}$ is a violent shaking for a $300\ \mathrm{mm}$ pendulum, and that is why the Kapitza pendulum is a laboratory curiosity rather than a control strategy: the required acceleration grows **linearly** with the drive frequency while the stroke only falls as its square, so the two effects nearly cancel and the machine needed is large at every frequency. Real inverted-pendulum stabilisation — rockets, Segways, the Saturn V — uses **feedback**, which costs nothing in amplitude.
+*Sanity.* A $43\ \mathrm{mm}$ stroke at $9.1\ \mathrm{Hz}$ is a violent shaking for a $300\ \mathrm{mm}$ pendulum, and that is why the Kapitza pendulum is a laboratory curiosity rather than a control strategy: the required acceleration grows **linearly** with the drive frequency while the stroke falls only as its inverse, $A = \sqrt{2} g / \left( \omega_0 \Omega \right)$, so the machine needed is large at every frequency. Real inverted-pendulum stabilisation — launch vehicles, self-balancing scooters — uses **feedback**, which costs nothing in amplitude.
 :::
 :::
 
 ::: example Chaos {#ex-chaos}
-The driven pendulum $\ddot{x} + 0.5 \dot{x} + \sin x = 0.667 \cos \left( 2 t / 3 \right)$ is the standard chaotic case. Starting from $x = 0$, $\dot{x} = 0$ and from $x = 10^{- 6}$, $\dot{x} = 0$, find how long the two solutions remain close.
+The driven pendulum $\ddot{x} + 0.5 \dot{x} + \sin x = 1.5 \cos \left( 2 t / 3 \right)$ is a standard chaotic case. Starting from $x = 0$, $\dot{x} = 0$ and from $x = 10^{- 6}$, $\dot{x} = 0$, find how long the two solutions remain close.
 ::: solution
 Integrating both, the solutions separate as $\left| \Delta x \right| \sim 10^{- 6} e^{\lambda t}$ with a largest **Lyapunov exponent** of
 $$
-\lambda \approx 0.06 \ \text{per unit time},
+\lambda \approx 0.11 \ \text{per unit time},
 $$
 so the separation reaches order unity when
 $$
-t = \frac{\ln \left( 10^{6} \right)}{0.06} = 230 \ \text{time units} = 55 \ \text{drive periods}.
+t = \frac{\ln \left( 10^{6} \right)}{0.11} = 126 \ \text{time units} \approx 13 \ \text{drive periods}
 $$
-*Sanity.* Fifty-five periods of predictability and then none — not a numerical artefact but a property of the equations, since the same Lyapunov exponent is measured on a real magnet-and-pendulum apparatus. The consequences are that a chaotic system cannot be **forecast** beyond a horizon set by the initial-condition accuracy and $1 / \lambda$, that control must be closed-loop, and that a simulation of a gear train with clearance can give a **different** answer on every run, which is not a bug. The practical rule is to stop asking "what is the response?" and ask "what is the **attractor**?" — the range of amplitudes the system visits, which is reproducible even when the time history is not.
+(the drive period is $2 \pi / \left( 2 / 3 \right) = 9.42$ time units). With the forcing reduced to $0.667$ the same pendulum settles to a periodic motion and the exponent is negative.
+
+*Sanity.* About thirteen periods of predictability and then none — not a numerical artefact but a property of the equations: improving the initial accuracy a thousandfold buys only $\ln 1000 / 0.11 \approx 63$ more time units. The consequences are that a chaotic system cannot be **forecast** beyond a horizon set by the initial-condition accuracy and $1 / \lambda$, that control must be closed-loop, and that a simulation of a gear train with clearance can give a **different** answer on every run, which is not a bug. The practical rule is to stop asking "what is the response?" and ask "what is the **attractor**?" — the range of amplitudes the system visits, which is reproducible even when the time history is not.
 :::
 :::
 
 ::: example Design {#ex-design-absorber}
-A machine frame shows a hardening non-linearity with $\beta / \omega_0^{2} = 0.8\ \mathrm{m^{- 2}}$ at $40\ \mathrm{Hz}$, and the operating speed is fixed at $46\ \mathrm{Hz}$. The vibration must be kept below $0.2\ \mathrm{mm}$. Decide whether a linear tuned absorber is safe.
+A machine frame has a first resonance at $40\ \mathrm{Hz}$ with a hardening non-linearity $\beta / \omega_0^{2} = 0.8\ \mathrm{mm^{- 2}}$ and damping ratio $0.02$; the exciting force alone would deflect it $0.05\ \mathrm{mm}$ statically. The operating speed is fixed at $46\ \mathrm{Hz}$ and the vibration must be kept below $0.2\ \mathrm{mm}$. Find the response at the operating speed and decide whether a linear tuned absorber is safe.
 ::: solution
-**Backbone.** The resonance frequency at amplitude $A$ is $f (A ) = 40 \sqrt{1 + 0.6 A^{2}}$, which is $40.0\ \mathrm{Hz}$ at $A = 0.2\ \mathrm{mm}$ and $40.96\ \mathrm{Hz}$ at $2\ \mathrm{mm}$. The operating speed of $46\ \mathrm{Hz}$ is $1.15$ times the small-amplitude resonance and $1.12$ times the resonance at $2\ \mathrm{mm}$.
-**Where the jump is.** The jump-down fold for $\zeta = 0.02$ and a resonant amplitude of $5\ \mathrm{mm}$ lies near $\Omega / \omega_0 = 0.85$, well below the operating point, so the machine sits on the **low** branch and the response is
+**Backbone.** With $A$ in millimetres the resonance frequency at amplitude $A$ is $f (A ) = 40 \sqrt{1 + 0.6 A^{2}}\ \mathrm{Hz}$: $40.5\ \mathrm{Hz}$ at $0.2\ \mathrm{mm}$, and it reaches the operating speed of $46\ \mathrm{Hz}$ ($r = 1.15$) at $A = 0.73\ \mathrm{mm}$.
+**Forced response.** With $X_{\text{st}} = 0.05\ \mathrm{mm}$ the amplitude satisfies
 $$
-x \approx \frac{X_{\text{st}}}{\Omega^{2} / \omega_0^{2} - 1 - 0.6 A^{2}} \approx \frac{0.05}{1.32 - 1} = 0.16\ \mathrm{mm}.
+\left[ \left( 1 - r^{2} \right) A + 0.6 A^{3} \right]^{2} + \left( 2 \zeta r A \right)^{2} = X_{\text{st}}^{2} ,
 $$
-where $X_{\text{st}} = 0.05\ \mathrm{mm}$ is the static deflection under the exciting force.
+which has three roots for $1.10 < r < 1.26$. At $r = 1.15$ they are $A = 0.16\ \mathrm{mm}$ (low branch), $0.66\ \mathrm{mm}$ (unstable) and $0.78\ \mathrm{mm}$ (high branch).
+**Which branch.** Running up to speed is an up-sweep, and a hardening system follows the **high** branch until its fold at $r = 1.26$ ($50\ \mathrm{Hz}$). The machine therefore arrives at $46\ \mathrm{Hz}$ vibrating at about $0.78\ \mathrm{mm}$, four times the limit; only if it reached $46\ \mathrm{Hz}$ from above, or were knocked onto the low branch, would it settle at $0.16\ \mathrm{mm}$.
 **Absorber.** A linear absorber tuned to $46\ \mathrm{Hz}$ adds a second mode; if the primary amplitude ever grew enough for its own resonance to reach $46\ \mathrm{Hz}$, the absorber would be tuned to the **wrong** frequency and could make the response worse.
 
-*Design comment.* The margin is $0.16$ against $0.2\ \mathrm{mm}$, and it exists only because the operating point is above the resonance and the non-linearity is mild. A linear absorber is **not** safe here, because an absorber works by creating two modes and the non-linearity moves the primary mode through them; the remedies are a **non-linear** absorber, a **vibration neutralizer**, or simply more damping, which bounds the response over a range of frequency rather than tuning a notch. Absorber design assumes linearity, and a machine whose resonance shifts by more than the absorber's bandwidth — typically two or three per cent — cannot be treated with one.
+*Design comment.* A linear analysis would predict $0.16\ \mathrm{mm}$ and pass the design; the non-linear analysis shows that the run-up delivers the machine to the high branch at $0.78\ \mathrm{mm}$. A linear absorber is **not** safe either, because an absorber works by creating two modes around a fixed frequency and the non-linearity moves the primary mode with amplitude; the remedies are to move the resonance well away from the operating speed, to add damping (which shrinks or removes the multi-valued band), or to use an absorber designed for the non-linear system. Absorber design assumes linearity, and a machine whose resonance shifts with amplitude by more than the absorber's bandwidth cannot be treated with one.
 :::
 :::
 
 ::: history
-The **amplitude-dependent period** was known to Huygens in 1673, who designed the cycloidal cheeks to correct it; the exact elliptic-integral expression is due to Legendre and to Gauss, whose arithmetic-geometric mean evaluates it to machine precision in a handful of iterations. The **jump phenomenon** was observed by Rieder in 1789 and by Helmholtz, explained by **Duffing** in 1918 from tuning-fork experiments, and made rigorous only in the 1950s. **Van der Pol's** equation of 1926 came from the triode oscillator, and the **method of averaging** used to solve it goes back to Poincaré's *Méthodes nouvelles* of 1892, put on a rigorous footing by **Krylov** and **Bogoliubov** in 1937. **Mathieu's** equation of 1868 and **Floquet's** theory of 1883 give the stability chart drawn by **Strutt** in 1931, and the **Kapitza pendulum** appeared in a 1951 *Nature* letter of twenty lines. **Chaos** begins with Poincaré's 1890 memoir on the three-body problem, was forgotten, and was rediscovered by **Lorenz** in 1963 and by **Feigenbaum** in 1978 with his constant $4.015$; **Gollub** and **Swinney**'s pendulum experiments of 1975 are the direct ancestor of Example 8.
+The **amplitude-dependent period** was known to Huygens, whose *Horologium Oscillatorium* of 1673 showed that a cycloidal path makes the period independent of amplitude; the exact elliptic-integral expression for the pendulum rests on the work of Legendre and Gauss, whose arithmetic–geometric mean evaluates it to machine precision in a handful of iterations. **Duffing**'s 1918 monograph on forced oscillations with variable natural frequency analysed the cubic-spring oscillator that now bears his name, including its multi-valued response. **Van der Pol**'s equation of 1926 came from the triode oscillator, and the **method of averaging** used to solve it goes back to Poincaré's *Méthodes nouvelles de la mécanique céleste* (1892–1899), put on a systematic footing by **Krylov** and **Bogoliubov** in the 1930s. **Mathieu**'s equation of 1868 and **Floquet**'s theory of 1883 give the Ince–Strutt stability chart, and **Kapitza** analysed the pendulum with a vibrating pivot in 1951. **Chaos** begins with Poincaré's 1890 memoir on the three-body problem and was rediscovered by **Lorenz** in 1963; **Feigenbaum** found the universal period-doubling constant $4.669$ in 1978. The driven damped pendulum of Example 6 is the standard teaching example of Baker and Gollub's *Chaotic Dynamics* (1990).
 :::
 
 ::: quiz
@@ -281,7 +284,7 @@ $$
 $$
 A = \sqrt{0.44 / 33\,600} = 3.6\ \mathrm{mm}.
 $$
-*Sanity.* The drive at $30\ \mathrm{Hz}$ is on resonance at exactly the amplitude at which the beam's own frequency reaches $30\ \mathrm{Hz}$, and the response there is **stable** only if the sweep reached it from above. Sweeping up from $25\ \mathrm{Hz}$ the response follows the low branch and jumps up before it; sweeping down from $35\ \mathrm{Hz}$ it rides the high branch through $30\ \mathrm{Hz}$ and can reach a very large amplitude. This is the reason a **sweep-down** test is the standard for finding the maximum response of a non-linear structure, and why a specification that says "sweep up at $1\ \mathrm{oct / min}$" can miss a resonance that a sweep-down finds at twice the amplitude.
+*Sanity.* The drive at $30\ \mathrm{Hz}$ is on resonance at exactly the amplitude at which the beam's own frequency reaches $30\ \mathrm{Hz}$, and that point lies on the **high** branch of the hardening response, which is stable and is reached by sweeping **up**: the response climbs the high branch from $25\ \mathrm{Hz}$ and can arrive at $30\ \mathrm{Hz}$ with a large amplitude if the force is large enough. Sweeping down from $35\ \mathrm{Hz}$ it stays on the low branch and jumps up only at the lower fold. For a hardening structure the **up-sweep** therefore finds the maximum response, for a softening one the down-sweep does, which is why a non-linear structure is tested in both directions.
 :::
 :::
 
@@ -291,11 +294,11 @@ For a self-excited oscillator with $\dot{a} = \mu a \left( 1 - a^{2} / 4 \right)
 Separating variables,
 $$
 t = \frac{1}{\mu} \int_{0.1}^{1.9} \frac{\mathrm{d} a}{a \left( 1 - a^{2} / 4 \right)}
-= \frac{2}{\mu} \left[ \ln \frac{a}{\sqrt{4 - a^{2}}} \right]_{0.1}^{1.9}
-= \frac{2}{0.05} \left( 1.113 + 2.995 \right) = 164\ \mathrm{s}.
+= \frac{1}{\mu} \left[ \ln \frac{a}{\sqrt{4 - a^{2}}} \right]_{0.1}^{1.9}
+= \frac{1}{0.05} \left( 1.113 + 2.995 \right) = 82\ \mathrm{s}.
 $$
 Near $a = 2$, writing $a = 2 + \epsilon$ gives $\dot{\epsilon} = - 2 \mu \epsilon$, so the approach to the limit cycle has a time constant $1 / \left( 2 \mu \right) = 10\ \mathrm{s}$, half the exponential growth time of the early stage.
-*Sanity.* Two minutes from a small amplitude to nearly the full limit cycle at $\mu = 0.05$: for flutter this is a growth rate of one part in ten per second, which is fast enough to be noticed on a wind-tunnel trace and slow enough that the decay-rate extrapolation method works. The fact that both rates are set by the single parameter $\mu$ is a general property of a supercritical Hopf bifurcation, and is the reason the **damping extrapolation** used in flutter testing is reliable.
+*Sanity.* About eighty seconds from a small amplitude to nearly the full limit cycle at $\mu = 0.05$: for flutter this is an initial growth rate of five per cent per second, which is fast enough to be noticed on a wind-tunnel trace and slow enough that the decay-rate extrapolation method works. The fact that both rates are set by the single parameter $\mu$ is a general property of a supercritical Hopf bifurcation, and is the reason the **damping extrapolation** used in flutter testing is reliable.
 :::
 :::
 
@@ -310,15 +313,15 @@ so
 $$
 \Omega = 40 \sqrt{1 \pm 0.05} = 40 \left( 1 \pm 0.025 \right) = 39.0 \text{ to } 41.0\ \mathrm{rad / s}.
 $$
-*Sanity.* A two-and-a-half per cent band on either side, against the two per cent half-width a direct resonance of the same modulation depth would give — parametric excitation is not intrinsically stronger, but it is **selective**, because it does not excite the neighbouring modes at all. This is why a parametrically driven MEMS gyroscope is so much more sensitive than a force-driven one, and why the same mechanism makes a chain of hanging beads, whose tension is modulated at the drive frequency, transmit only a narrow band.
+*Sanity.* A two-and-a-half per cent band on either side, against the two per cent half-width a direct resonance of the same modulation depth would give — parametric excitation is not intrinsically stronger, but it is **selective**, because it acts only near $\Omega = 2 \omega_0 / n$ and leaves other modes alone; and unlike a forced resonance, inside the tongue the response grows without bound until damping or non-linearity limits it.
 :::
 :::
 
 ::: exercise Jump {level=3}
-For the oscillator of Example 3, halve the forcing amplitude and recompute the hysteresis band. What does the result say about the sensitivity of the jump to the excitation level?
+For the oscillator of Example 2, halve the forcing amplitude and recompute the hysteresis band. What does the result say about the sensitivity of the jump to the excitation level?
 ::: solution
-With $F = 0.15$ instead of $0.3$, the three-root region shrinks to $1.136 < \Omega < 1.174$. Sweeping **up**, the low branch reaches $A = 0.42$ at $\Omega = 1.174$ and jumps; sweeping **down**, the high branch reaches $A = 1.22$ at $\Omega = 1.136$ and falls to $A = 0.72$.
-*Sanity.* Halving the force cuts the hysteresis band from $0.20$ wide to $0.038$ wide — a factor of five — and moves the whole phenomenon from $1.22$-$1.42$ to $1.14$-$1.17$, much closer to the linear resonance. The jump itself does not disappear: it is present at every excitation level and only its position and width move, so a low-level shaker test on a structure with a freeplay or a slack joint will still show the hysteresis and can be used to **locate** the non-linearity. The practical consequence is that the jump is **not** an artefact of over-testing: it is present at every excitation level and only its position moves, so a low-level shaker test on a structure with a freeplay or a slack joint will show the hysteresis and can be used to locate the non-linearity. Conversely, a structure tested only at low level will show a **narrower** band than the flight or service condition — here five times narrower for half the force — and a design justified on the low-level test may be wrong at the high one. This is why non-linear structures are characterised over the full amplitude range rather than at one level, and why the sweep rate matters: a fast sweep does not give the system time to reach the fold, and the jump appears at a higher frequency than it should.
+With $F = 0.15$ instead of $0.3$, the three-root region shrinks to $1.136 < \Omega < 1.174$. Sweeping **up**, the high branch reaches $A = 1.26$ at $\Omega = 1.174$ and jumps down to $A = 0.42$; sweeping **down**, the low branch reaches $A = 0.72$ at $\Omega = 1.136$ and jumps up to $A = 1.22$.
+*Sanity.* Halving the force cuts the hysteresis band from $0.20$ wide to $0.038$ wide — a factor of five — and moves the whole phenomenon from $1.22$-$1.42$ to $1.14$-$1.17$, much closer to the linear resonance. The practical consequence is that the jump is **not** an artefact of over-testing: it is present at every excitation level and only its position moves, so a low-level shaker test on a structure with a freeplay or a slack joint will show the hysteresis and can be used to locate the non-linearity. Conversely, a structure tested only at low level will show a **narrower** band than the flight or service condition — here five times narrower for half the force — and a design justified on the low-level test may be wrong at the high one. This is why non-linear structures are characterised over the full amplitude range rather than at one level, and why the sweep rate matters: a fast sweep does not give the system time to settle on the steady-state branch, and the jump appears at a different frequency from the steady-state fold.
 :::
 :::
 

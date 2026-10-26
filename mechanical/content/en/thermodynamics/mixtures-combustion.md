@@ -3,7 +3,7 @@ Two lessons in one, joined by the fact that both are about **counting atoms**. T
 The reason both belong in a thermodynamics course and not a chemistry one is that engineers meet mixtures in every pipe and combustion in every furnace, and in both cases the hard part is not the physics but the **bookkeeping discipline** of stating a basis, keeping the water on the right side of the equation, and never mixing the mass and mole bases in the same line.
 
 ::: warning Seven mixture-and-combustion errors that survive a plant's commissioning
-**Mixing the mass and mole bases in one equation.** Mole fractions give the gas constant, the reaction stoichiometry and the equilibrium; mass fractions give the specific heat on a kilogram basis and the fuel's heating value. A calculation that multiplies a **mole** fraction by a **mass**-based specific heat is wrong by the ratio of the component's molar mass to the mixture's, which for the water vapour in humid air is $18 / 28.97 = 0.62$ — a **$62\ \%$** error, and the origin of the factor $0.622$ that appears in every psychrometric formula. **Using the apparent pressure instead of the partial pressure for the water.** The relative humidity is $\phi = p_v / p_{\mathrm{sat}} \left( T_{\mathrm{db}} \right)$, and $p_{\mathrm{sat}}$ is evaluated at the **dry-bulb** temperature; the **dew point** is the saturation temperature at the **vapour's partial pressure**. A calculation that reads the dew point from the dry-bulb saturation pressure reports $30\ {}^{\circ}\mathrm{C}$ instead of $18\ {}^{\circ}\mathrm{C}$ for air at $30\ {}^{\circ}\mathrm{C}$ and $50\ \%$ humidity. **Forgetting the water in the flue gas.** Burning methane makes **two moles of water per mole of fuel**, and the water is $18\ \%$ of the dry-plus-wet flue gas by volume. A flue-gas dew-point calculation that uses the **dry** analysis reports a dew point of $20\ {}^{\circ}\mathrm{C}$ instead of $55\ {}^{\circ}\mathrm{C}$ and a boiler that corrodes in a year. **Reporting an Orsat analysis as though it included the water.** The Orsat absorbs the $\mathrm{CO_2}$ and the $\mathrm{O_2}$ **before** the sample reaches the water vapour, so the analysis is **on a dry basis** and the sum of $\mathrm{CO_2} + \mathrm{O_2} + \mathrm{CO} + \mathrm{N_2}$ is $100\ \%$ by construction. A carbon balance done against a wet analysis over-states the excess air by **$15\ \%$**. **Assuming the adiabatic flame temperature is a property of the fuel.** It depends on the oxidant, the equivalence ratio, the pressure, the inlet temperature and the extent of dissociation. Methane in air at the stoichiometric ratio gives $2{,}150\ {}^{\circ}\mathrm{C}$; in **oxygen** it gives $3{,}000\ {}^{\circ}\mathrm{C}$; at $\phi = 1.2$ it gives $2{,}200\ {}^{\circ}\mathrm{C}$; in air preheated to $600\ {}^{\circ}\mathrm{C}$ it gives $2{,}500\ {}^{\circ}\mathrm{C}$; and at $20\ \mathrm{bar}$ it is **lower** because dissociation of $\mathrm{CO_2}$ and $\mathrm{H_2O}$ increases with pressure at constant temperature. **Balancing a reaction with the air's argon in the nitrogen.** Standard combustion analysis treats air as $21\ \%\ \mathrm{O_2}$ and $79\ \%\ \mathrm{N_2}$, i.e. $3.76\ \mathrm{mol\ N_2}$ per mole of oxygen, and uses $M_{\mathrm{air}} = 28.97$ and $R_{\mathrm{air}} = 0.287$. A calculation that uses $3.76$ in the stoichiometry and $28.85$ for the gas constant has been inconsistent by **$0.4\ \%$**, which is small — but a calculation that uses the **real** $79\ \%\ \mathrm{N_2}$, $0.93\ \%\ \mathrm{Ar}$ composition in one place and the $3.76$ convention in another has made an error that no amount of checking will find. **Treating the higher heating value as the available energy.** The HHV credits the latent heat of the water in the products, which is recoverable only if the flue gas is condensed **below** the dew point — and the water's latent heat is **$10.9\ \%$** of methane's HHV. A condensing boiler "efficiency" of $106\ \%$ on an HHV basis is $95\ \%$ on an LHV basis and is a **correct** figure, and a specification that does not name its basis is not a specification.
+**Mixing the mass and mole bases in one equation.** Mole fractions give the gas constant, the reaction stoichiometry and the equilibrium; mass fractions give the specific heat on a kilogram basis and the fuel's heating value. A calculation that multiplies a **mole** fraction by a **mass**-based specific heat is wrong by the ratio of the component's molar mass to the mixture's, which for the water vapour in humid air is $18.015 / 28.97 = 0.622$ — a **$38\ \%$** error, and the same ratio is the factor $0.622$ that appears in every psychrometric formula. **Using the apparent pressure instead of the partial pressure for the water.** The relative humidity is $\phi = p_v / p_{\mathrm{sat}} \left( T_{\mathrm{db}} \right)$, and $p_{\mathrm{sat}}$ is evaluated at the **dry-bulb** temperature; the **dew point** is the saturation temperature at the **vapour's partial pressure**. A calculation that reads the dew point from the dry-bulb saturation pressure reports $30\ {}^{\circ}\mathrm{C}$ instead of $18\ {}^{\circ}\mathrm{C}$ for air at $30\ {}^{\circ}\mathrm{C}$ and $50\ \%$ humidity. **Forgetting the water in the flue gas.** Burning methane makes **two moles of water per mole of fuel**, and the water is $19\ \%$ of the wet flue gas by volume at the stoichiometric ratio and $17\ \%$ at $15\ \%$ excess air. A flue-gas dew-point calculation that forgets it — or uses a dry analysis — misses a dew point of about $56\ {}^{\circ}\mathrm{C}$, and with it the condensation that corrodes an unprotected flue. **Reporting an Orsat analysis as though it included the water.** The Orsat sample is collected and measured at room temperature over water, so the water vapour has condensed out and the analysis is **on a dry basis**: the sum of $\mathrm{CO_2} + \mathrm{O_2} + \mathrm{CO} + \mathrm{N_2}$ is $100\ \%$ by construction. A balance that treats a dry analysis as wet, or the reverse, gets the excess air wrong. **Assuming the adiabatic flame temperature is a property of the fuel.** It depends on the oxidant, the equivalence ratio, the pressure, the inlet temperature and the extent of dissociation. Methane in air at the stoichiometric ratio gives about $2{,}225\ \mathrm{K}$ ($1{,}950\ {}^{\circ}\mathrm{C}$); in **oxygen** about $3{,}050\ \mathrm{K}$; at $\phi = 1.2$ about $2{,}135\ \mathrm{K}$; with the reactants preheated to $600\ {}^{\circ}\mathrm{C}$ about $2{,}490\ \mathrm{K}$; and at $20\ \mathrm{bar}$ it is about $50\ \mathrm{K}$ **higher**, because pressure suppresses the dissociation of $\mathrm{CO_2}$ and $\mathrm{H_2O}$. **Balancing a reaction with the air's argon in the nitrogen.** Standard combustion analysis treats air as $21\ \%\ \mathrm{O_2}$ and $79\ \%\ \mathrm{N_2}$, i.e. $3.76\ \mathrm{mol\ N_2}$ per mole of oxygen, and uses $M_{\mathrm{air}} = 28.97$ and $R_{\mathrm{air}} = 0.287$. A calculation that uses $3.76$ in the stoichiometry and $28.97$ for the gas constant has been inconsistent by **$0.4\ \%$**, which is small — but a calculation that uses the **real** $79\ \%\ \mathrm{N_2}$, $0.93\ \%\ \mathrm{Ar}$ composition in one place and the $3.76$ convention in another has made an error that no amount of checking will find. **Treating the higher heating value as the available energy.** The HHV credits the latent heat of the water in the products, which is recoverable only if the flue gas is condensed **below** the dew point — and the water's latent heat is **$9.9\ \%$** of methane's HHV ($11\ \%$ of its LHV). A condensing boiler "efficiency" of $106\ \%$ on an LHV basis is $95.5\ \%$ on an HHV basis and is a **correct** figure, and a specification that does not name its basis is not a specification.
 :::
 
 ## Gas mixtures
@@ -42,7 +42,7 @@ $$
 $$
 \Delta \bar{s} = - 8.314 \ln 0.79 = + 1.96\ \mathrm{kJ / kmol \cdot K}
 $$
-**The number that makes mixtures a thermodynamic problem and not a bookkeeping one**: every mixing process in a power plant — the air into the fuel, the fuel into the air, the exhaust into the atmosphere — carries an entropy generation of this order, and **combustion's irreversibility is half mixing and half reaction**.
+**The number that makes mixtures a thermodynamic problem and not a bookkeeping one**: every mixing process in a power plant — the air into the fuel, the fuel into the air, the exhaust into the atmosphere — carries an entropy generation of this order, although in a flame the mixing term is small beside the entropy generated by the reaction and the heat transfer within the gas.
 :::
 
 ::: definition Psychrometrics: air and water vapour {#def-psych}
@@ -64,29 +64,29 @@ $$
 \omega_{\mathrm{sat}} \left( T_{\mathrm{wb}} \right) - \omega
 = \frac{ \left( 1.005 + 1.86\, \omega \right) \left( T_{\mathrm{db}} - T_{\mathrm{wb}} \right) }{ 2{,}501 + 1.86\, T_{\mathrm{wb}} - 4.19\, T_{\mathrm{wb}} }
 $$
-which is solved by iteration or read from the chart, and for **moist air at ordinary temperatures the wet-bulb depression is about $0.25$ to $0.30$ times the dry-bulb depression below saturation** — a rule accurate to $0.5\ \mathrm{K}$ between $- 10$ and $40\ {}^{\circ}\mathrm{C}$.
+which is solved by iteration or read from the chart; a rough rule for ordinary room conditions is that **the wet bulb lies about one third of the way from the dew point to the dry bulb**.
 **The worked state: $30\ {}^{\circ}\mathrm{C}$ dry bulb, $50\ \%$ relative humidity, $101.325\ \mathrm{kPa}$.**
 $$
 p_{\mathrm{sat}} \left( 30 \right) = 4.247\ \mathrm{kPa}, \qquad p_v = 0.50 \times 4.247 = 2.124\ \mathrm{kPa}
 $$
 $$
-\omega = 0.622 \times \frac{2.124}{101.325 - 2.124} = 0.01336\ \mathrm{kg / kg\ da}
+\omega = 0.622 \times \frac{2.124}{101.325 - 2.124} = 0.01331\ \mathrm{kg / kg\ da}
 $$
 $$
-T_{\mathrm{dp}} = T_{\mathrm{sat}} \left( 2.124 \right) = 18.3\ {}^{\circ}\mathrm{C}, \qquad
-h = 1.005 \times 30 + 0.01336 \left( 2{,}501 + 55.8 \right) = 30.15 + 34.14 = 64.3\ \mathrm{kJ / kg\ da}
+T_{\mathrm{dp}} = T_{\mathrm{sat}} \left( 2.124 \right) = 18.4\ {}^{\circ}\mathrm{C}, \qquad
+h = 1.005 \times 30 + 0.01331 \left( 2{,}501 + 55.8 \right) = 30.15 + 34.03 = 64.2\ \mathrm{kJ / kg\ da}
 $$
-**The wet-bulb temperature is $22.0\ {}^{\circ}\mathrm{C}$**, and the three temperatures — $30.0$, $22.0$, $18.3$ — are the three numbers that describe the state, and **only two of them are independent**.
+**The wet-bulb temperature is $22.0\ {}^{\circ}\mathrm{C}$**, and the three temperatures — $30.0$, $22.0$, $18.4$ — are the three numbers that describe the state, and **only two of them are independent**.
 **The number that sizes a cooling coil.** Cooling $1\ \mathrm{kg / s}$ of this air to $12\ {}^{\circ}\mathrm{C}$ at $101.325\ \mathrm{kPa}$, where $\omega_{\mathrm{sat}} \left( 12 \right) = 0.00873$:
 $$
-\dot{Q} = 1 \times \left[ \left( 64.3 - h_2 \right) \right], \qquad
+\dot{Q} = 1 \times \left( 64.2 - h_2 \right), \qquad
 h_2 = 1.005 \times 12 + 0.00873 \left( 2{,}501 + 22.3 \right) = 12.06 + 22.01 = 34.1
 $$
 $$
-\dot{Q} = 30.2\ \mathrm{kW}, \qquad
-\dot{m}_{\mathrm{cond}} = 1 \times \left( 0.01336 - 0.00873 \right) = 4.63\ \mathrm{g / s} = 16.7\ \mathrm{kg / h}
+\dot{Q} = 30.1\ \mathrm{kW}, \qquad
+\dot{m}_{\mathrm{cond}} = 1 \times \left( 0.01331 - 0.00873 \right) = 4.58\ \mathrm{g / s} = 16.5\ \mathrm{kg / h}
 $$
-**The sensible/latent split.** The sensible part is $1.005 \times \left( 1 + 1.86 \times 0.01336 \right) \times 18 = 18.6\ \mathrm{kW}$ and the latent is $11.6\ \mathrm{kW}$ — **$38\ \%$ latent**, which is the number that makes a cooling coil's **surface temperature** and not its area the design constraint, and the reason a data centre cooled to $24\ {}^{\circ}\mathrm{C}$ dry bulb needs a smaller coil than one cooled to $24\ {}^{\circ}\mathrm{C}$ **and** dehumidified.
+**The sensible/latent split.** The sensible part is $\left( 1.005 + 1.86 \times 0.01331 \right) \times 18 = 18.5\ \mathrm{kW}$ and the latent is $11.6\ \mathrm{kW}$ — **$38\ \%$ latent**, which is the number that makes a cooling coil's **surface temperature** and not only its area a design constraint, and the reason a data centre cooled to $24\ {}^{\circ}\mathrm{C}$ dry bulb needs a smaller coil than one cooled to $24\ {}^{\circ}\mathrm{C}$ **and** dehumidified.
 :::
 
 ::: definition Air-conditioning processes and evaporative cooling {#def-ac}
@@ -108,21 +108,21 @@ $$
 \dot{m}_{a,3} \omega_3 = \dot{m}_{a,1} \omega_1 + \dot{m}_{a,2} \omega_2, \quad
 \dot{m}_{a,3} h_3 = \dot{m}_{a,1} h_1 + \dot{m}_{a,2} h_2
 $$
-**The number that makes evaporative cooling a design decision and not a trick.** Direct evaporative cooling follows a **constant-wet-bulb** line, so air at $35\ {}^{\circ}\mathrm{C}$ and $20\ \%$ humidity ($\omega = 0.00775$, $T_{\mathrm{wb}} = 20.3\ {}^{\circ}\mathrm{C}$) can be cooled to
+**The number that makes evaporative cooling a design decision and not a trick.** Direct evaporative cooling follows a **constant-wet-bulb** line, so air at $35\ {}^{\circ}\mathrm{C}$ and $20\ \%$ humidity ($\omega = 0.00699$, $T_{\mathrm{wb}} = 18.9\ {}^{\circ}\mathrm{C}$) can be cooled to
 $$
-T_{\mathrm{out}} = 20.3 + \left( 1 - \eta_{\mathrm{evap}} \right) \left( 35 - 20.3 \right)
+T_{\mathrm{out}} = 18.9 + \left( 1 - \eta_{\mathrm{evap}} \right) \left( 35 - 18.9 \right)
 $$
-At an evaporative efficiency of $85\ \%$ this is $22.5\ {}^{\circ}\mathrm{C}$ — **a $12.5\ \mathrm{K}$ drop for the power of a fan**, which is $1 / 25$ of the compressor power a vapour-cycle plant would need. **The catch is the water**: $1\ \mathrm{kg / s}$ of air evaporating $0.0055\ \mathrm{kg / s}$ of water uses **$20\ \mathrm{m^{3}}$ of water per day per $\mathrm{MW}$** of cooling, which is why evaporative cooling is standard in Arizona and Saudi Arabia and unknown in Singapore.
-**The two-stage arrangement that reaches the dew point.** A **direct** stage followed by an **indirect** stage (a heat exchanger between the incoming air and the cooled, saturated air) brings the supply below the incoming air's dew point without adding water, and reaches a **wet-depression-limited** temperature of
+At an evaporative efficiency of $85\ \%$ this is $21.3\ {}^{\circ}\mathrm{C}$ — **a $13.7\ \mathrm{K}$ drop for the power of a fan and a water pump**, a small fraction of the compressor power a vapour-compression plant would need. **The catch is the water**: $1\ \mathrm{kg / s}$ of air evaporates about $0.0057\ \mathrm{kg / s}$ of water, which is about **$36\ \mathrm{m^{3}}$ of water per day per $\mathrm{MW}$** of cooling, and the method works only where the air is dry — which is why evaporative cooling is common in Arizona and the Gulf and useless in Singapore.
+**The indirect stage, which cools without adding water.** An **indirect** evaporative cooler passes the supply air through a heat exchanger whose other side is cooled by evaporation into a secondary airstream, so the supply is cooled at **constant $\omega$**, to
 $$
 T_{\mathrm{supply}} = T_{\mathrm{wb}} + \left( 1 - \eta_{\mathrm{IE}} \right) \left( T_{\mathrm{db}} - T_{\mathrm{wb}} \right)
 $$
-At $\eta_{\mathrm{IE}} = 0.75$ and a $14.7\ \mathrm{K}$ wet-bulb depression this is $23.9\ {}^{\circ}\mathrm{C}$ at $\omega = 0.00775$ — **dry** cool air, which is the whole of the reason a two-stage evaporative cooler is worth twice the first stage's cost in a dry climate.
+At $\eta_{\mathrm{IE}} = 0.75$ and a $16.1\ \mathrm{K}$ wet-bulb depression this is $22.9\ {}^{\circ}\mathrm{C}$ at $\omega = 0.00699$ — **dry** cool air; a direct stage after it can then cool the air further, below the original wet bulb.
 **The number that indicts a cooling tower.** A cooling tower is an evaporative cooler whose **purpose is the water and not the air**: rejecting $1\ \mathrm{MW}$ of heat at a $7\ \mathrm{K}$ range and a $4\ \mathrm{K}$ approach evaporates
 $$
 \dot{m}_{\mathrm{evap}} = \frac{1{,}000}{2{,}400} = 0.417\ \mathrm{kg / s} = 36\ \mathrm{m^{3} / day\ per\ MW}
 $$
-plus $2$ to $5\ \%$ for drift and blowdown. **A $1{,}000\ \mathrm{MW}$ power station consumes $2{,}500\ \mathrm{m^{3}}$ of water per hour** — more than a town of $50{,}000$ people — and the reason dry cooling is being installed in the American southwest, Spain and China is **water**, not carbon.
+plus blowdown and drift. **A $1{,}000\ \mathrm{MW_e}$ steam power station rejecting about $1{,}700\ \mathrm{MW}$ of heat evaporates about $2{,}500\ \mathrm{m^{3}}$ of water per hour** — the domestic consumption of a city of several hundred thousand people — and the reason dry cooling is installed in water-scarce regions is **water**, not carbon.
 :::
 
 ::: widget plot
@@ -130,7 +130,7 @@ f: 0.622*(0.5*0.61094*exp(17.27*x/(237.3+x)))/(101.325-0.5*0.61094*exp(17.27*x/(
 x: -10, 45
 y: 0, 0.07
 labels: humidity ratio at 50 per cent RH; humidity ratio at saturation
-caption: The humidity ratio of moist air at $101.325\ \mathrm{kPa}$ against dry-bulb temperature, at $50\ \%$ relative humidity and at saturation, from the Magnus-form saturation-pressure correlation $p_{\mathrm{sat}} = 0.61094 \exp \left[ 17.27\, T / \left( 237.3 + T \right) \right]$ kilopascals with $T$ in degrees Celsius. The two curves **diverge exponentially**, and the divergence is the whole of the reason a cooling coil's latent load rises so steeply with the outside air's humidity: between $20$ and $35\ {}^{\circ}\mathrm{C}$ the saturation humidity ratio rises from $0.0148$ to $0.0368$, a factor of **$2.5$**, while the dry-bulb difference rises by only $1.75$ times. **Every air-conditioning energy figure in a hot-humid climate is a statement about this curve.**
+caption: The humidity ratio of moist air at $101.325\ \mathrm{kPa}$ against dry-bulb temperature, at $50\ \%$ relative humidity and at saturation, from the Magnus-form saturation-pressure correlation $p_{\mathrm{sat}} = 0.61094 \exp \left[ 17.27\, T / \left( 237.3 + T \right) \right]$ kilopascals with $T$ in degrees Celsius. The two curves **diverge exponentially**, and the divergence is the whole of the reason a cooling coil's latent load rises so steeply with the outside air's humidity: between $20$ and $35\ {}^{\circ}\mathrm{C}$ the saturation humidity ratio rises from $0.0147$ to $0.0366$, a factor of **$2.5$** for a $15\ \mathrm{K}$ rise in temperature. **Every air-conditioning energy figure in a hot-humid climate is a statement about this curve.**
 :::
 
 ## Combustion
@@ -155,24 +155,24 @@ $$
 $$
 \begin{array}{l c c c c}
 \text{Fuel} & M & a_{\mathrm{th}} & \left( A / F \right)_{\mathrm{mass}} & \text{Notes} \\
-\text{Hydrogen} & 2.016 & 0.50 & 34.3 & \text{no carbon, no } \mathrm{CO_2} \\
-\text{Methane} & 16.04 & 2.00 & 17.19 & 19\ \%\ \text{by volume in air is stoichiometric} \\
-\text{Propane} & 44.09 & 5.00 & 15.67 & \\
-\text{Octane} & 114.23 & 12.50 & 15.08 & \text{the spark-ignition reference} \\
-\text{Diesel, } \mathrm{C_{12}H_{23}} & 167.3 & 17.75 & 14.58 & \\
-\text{Ethanol} & 46.07 & 3.00 & 9.00 & \text{needs } 2.7\times\ \text{the volume of gasoline} \\
-\text{Methanol} & 32.04 & 1.50 & 6.45 & \text{the reason a flex-fuel injector is oversized} \\
-\text{Anthracite, } \mathrm{C} & 12.01 & 1.00 & 11.5 & \text{plus the moisture and ash} \\
-\text{Carbon monoxide} & 28.01 & 0.50 & 1.16 & \text{a fuel gas, not a pollutant, when it is the fuel}
+\text{Hydrogen} & 2.016 & 0.50 & 34.2 & \text{no carbon, no } \mathrm{CO_2} \\
+\text{Methane} & 16.04 & 2.00 & 17.19 & 9.5\ \%\ \text{by volume in air is stoichiometric} \\
+\text{Propane} & 44.09 & 5.00 & 15.64 & \\
+\text{Octane} & 114.23 & 12.50 & 15.09 & \text{the spark-ignition reference} \\
+\text{Diesel, } \mathrm{C_{12}H_{23}} & 167.3 & 17.75 & 14.63 & \\
+\text{Ethanol} & 46.07 & 3.00 & 8.98 & \text{about } 1.6\times\ \text{the fuel volume of gasoline per kg of air} \\
+\text{Methanol} & 32.04 & 1.50 & 6.46 & \text{the reason a flex-fuel injector is oversized} \\
+\text{Carbon, } \mathrm{C} & 12.01 & 1.00 & 11.5 & \text{a coal adds moisture, ash and hydrogen} \\
+\text{Carbon monoxide} & 28.01 & 0.50 & 2.46 & \text{a fuel gas, not a pollutant, when it is the fuel}
 \end{array}
 $$
-**The number that makes hydrogen's $34.3$ misleading.** On a **volumetric** basis hydrogen needs only $2.39\ \mathrm{m^{3}}$ of air per $\mathrm{m^{3}}$ of fuel against methane's $9.52$, so a **port-fuel-injected** hydrogen engine is limited by the **displacement** of the injector and not by the chemistry — and the reason hydrogen direct injection exists.
+**The number that makes hydrogen's $34.2$ misleading.** On a **volumetric** basis hydrogen needs only $2.38\ \mathrm{m^{3}}$ of air per $\mathrm{m^{3}}$ of fuel against methane's $9.52$, so in a stoichiometric mixture hydrogen occupies $1 / 3.38 = 30\ \%$ of the volume: a **port-injected** hydrogen engine displaces almost a third of its intake air with fuel, which costs power density — one reason hydrogen direct injection exists.
 **The excess-air and equivalence conventions.**
 $$
 \%\ \text{excess air} = \left( \lambda - 1 \right) \times 100, \qquad
 \phi = 1.0\ \text{stoichiometric}, \quad \phi > 1\ \text{rich}, \quad \phi < 1\ \text{lean}
 $$
-**The number that sets a spark-ignition engine's window.** The three-way catalyst works within $\phi = 0.995$ to $1.005$, a **$1\ \%$** window, and the oxygen sensor's step is the only thing that holds it there. A diesel runs at $\phi = 0.2$ to $0.4$ at part load, an industrial gas turbine at $\phi = 0.3$ to $0.5$ to keep the flame temperature below the $\mathrm{NO_x}$ threshold, and a furnace at $\lambda = 1.15$ to $1.30$ because any less gives incomplete combustion and any more gives stack loss.
+**The number that sets a spark-ignition engine's window.** The three-way catalyst works only in a window of roughly $\pm 0.5\ \%$ around $\phi = 1$, and the oxygen sensor's step is the only thing that holds it there. A diesel runs at $\phi = 0.2$ to $0.4$ at part load, an industrial gas turbine at $\phi = 0.3$ to $0.5$ to keep the flame temperature below the $\mathrm{NO_x}$ threshold, and a furnace at $\lambda = 1.15$ to $1.30$ because any less gives incomplete combustion and any more gives stack loss.
 :::
 
 ::: definition Flue-gas analysis and the excess-air calculation {#def-flue}
@@ -187,29 +187,29 @@ $$
 $$
 **The evaluation for methane, $\lambda = 1.20$.**
 $$
-\%\, \mathrm{CO_2} = \frac{100}{1 + 0.2 \times 2 + 3.76 \times 1.2 \times 2} = \frac{100}{10.816} = 9.25\ \%, \qquad
-\%\, \mathrm{O_2} = \frac{0.4}{10.816} = 3.70\ \%
+\%\, \mathrm{CO_2} = \frac{100}{1 + 0.2 \times 2 + 3.76 \times 1.2 \times 2} = \frac{100}{10.424} = 9.59\ \%, \qquad
+\%\, \mathrm{O_2} = \frac{40}{10.424} = 3.84\ \%
 $$
-**The maximum $\mathrm{CO_2}$**, at $\lambda = 1$, is $100 / \left( 1 + 7.52 \right) = 11.7\ \%$ — and **that number is the whole of the flue-gas monitor's calibration**: a $\mathrm{CO_2}$ reading of $9.25\ \%$ on a gas-fired boiler means $\lambda = 1.20$, and a reading of $11.0\ \%$ means $\lambda = 1.06$.
-**The number that makes the $\mathrm{O_2}$ reading the useful one.** Because the maximum $\mathrm{CO_2}$ differs by fuel ($11.7\ \%$ for methane, $15.4\ \%$ for carbon, $14.7\ \%$ for octane), a $\mathrm{CO_2}$-based excess-air figure must know the fuel; the **$\mathrm{O_2}$** figure does not, to first order, and this is why every modern burner controls on $\mathrm{O_2}$ and computes the $\mathrm{CO_2}$.
+**The maximum $\mathrm{CO_2}$**, at $\lambda = 1$, is $100 / \left( 1 + 7.52 \right) = 11.7\ \%$ — and **that number is the whole of the flue-gas monitor's calibration**: a $\mathrm{CO_2}$ reading of $9.59\ \%$ on a methane-fired boiler means $\lambda = 1.20$, and a reading of $11.0\ \%$ means $\lambda = 1.06$.
+**The number that makes the $\mathrm{O_2}$ reading the useful one.** Because the maximum $\mathrm{CO_2}$ differs by fuel ($11.7\ \%$ for methane, $14.5\ \%$ for octane, $21.0\ \%$ for carbon), a $\mathrm{CO_2}$-based excess-air figure must know the fuel; the **$\mathrm{O_2}$** figure does not, to first order, and this is why every modern burner controls on $\mathrm{O_2}$ and computes the $\mathrm{CO_2}$.
 **The correction that is always forgotten.** A zirconia or paramagnetic $\mathrm{O_2}$ analyser reads on a **wet** or **dry** basis depending on whether it is heated above the dew point, and the difference for a gas-fired boiler at $\lambda = 1.2$ is
 $$
-\%\, \mathrm{O_{2,\mathrm{wet}}} = \%\, \mathrm{O_{2,\mathrm{dry}}} \times \frac{10.816}{10.816 + 2} = 3.70 \times 0.844 = 3.12\ \%
+\%\, \mathrm{O_{2,\mathrm{wet}}} = \%\, \mathrm{O_{2,\mathrm{dry}}} \times \frac{10.424}{10.424 + 2} = 3.84 \times 0.839 = 3.22\ \%
 $$
-**A $0.58$-point error on a $3.7\ \%$ reading is $16\ \%$**, and it is the most common single error in a boiler's combustion-control loop.
+**A $0.62$-point error on a $3.8\ \%$ reading is $16\ \%$**, and confusing the two bases is a common error in a boiler's combustion-control loop.
 **The excess air that a boiler should run at, and what it costs.**
 $$
 \begin{array}{l c c c c}
-\lambda & \%\, \mathrm{O_2} & \text{Stack loss}\ \left( 150\ {}^{\circ}\mathrm{C}\ \text{net} \right) & \text{Unburnt loss} & \text{Total} \\
-1.05 & 2.1 & 6.4\ \% & 1.2\ \% & 7.6\ \% \\
-1.10 & 3.4 & 6.7\ \% & 0.6\ \% & 7.3\ \% \\
-1.15 & 4.6 & 7.0\ \% & 0.3\ \% & 7.3\ \% \\
-1.20 & 3.7\ \text{(wet } 3.1\text{)} & 7.3\ \% & 0.2\ \% & 7.5\ \% \\
-1.30 & 6.0 & 8.0\ \% & 0.15\ \% & 8.2\ \% \\
-1.50 & 8.6 & 9.6\ \% & 0.1\ \% & 9.7\ \%
+\lambda & \%\, \mathrm{O_{2,dry}} & \text{Stack loss}\ \left( 150\ \mathrm{K}\ \text{above air} \right) & \text{Unburnt loss (illustrative)} & \text{Total} \\
+1.05 & 1.1 & 6.4\ \% & 1.2\ \% & 7.6\ \% \\
+1.10 & 2.1 & 6.7\ \% & 0.6\ \% & 7.3\ \% \\
+1.15 & 3.0 & 6.9\ \% & 0.3\ \% & 7.2\ \% \\
+1.20 & 3.8\ \text{(wet } 3.2\text{)} & 7.2\ \% & 0.2\ \% & 7.4\ \% \\
+1.30 & 5.3 & 7.7\ \% & 0.15\ \% & 7.9\ \% \\
+1.50 & 7.6 & 8.8\ \% & 0.1\ \% & 8.9\ \%
 \end{array}
 $$
-**The optimum is $\lambda = 1.12$ to $1.18$**, and the curve is **flat** between $1.10$ and $1.25$ — which is why a burner tuned from $1.30$ to $1.15$ saves **$0.9\ \%$** of the fuel and a burner tuned from $1.15$ to $1.05$ **loses** $0.3\ \%$ and gains a corroding chimney.
+**The optimum is $\lambda = 1.10$ to $1.15$**, and the curve is **flat** between about $1.05$ and $1.25$ — which is why a burner tuned from $1.30$ to $1.15$ saves about **$0.7\ \%$** of the fuel, while one tuned from $1.15$ to $1.05$ **loses** about $0.4\ \%$ to unburnt fuel.
 :::
 
 ::: definition Enthalpy of formation, heating values and the adiabatic flame temperature {#def-heat}
@@ -225,27 +225,27 @@ $$
 \mathrm{CO} & - 110{,}530 & \mathrm{H_2O\ (g)} & - 241{,}820 \\
 \mathrm{CH_4} & - 74{,}850 & \mathrm{NO} & + 90{,}290 \\
 \mathrm{C_8 H_{18}\ (l)} & - 249{,}950 & \mathrm{SO_2} & - 296{,}830 \\
-\mathrm{CO_2}\ \text{etc.},\ \mathrm{O_2},\ \mathrm{N_2},\ \mathrm{H_2} & 0 & \mathrm{OH} & + 38{,}990
+\mathrm{O_2},\ \mathrm{N_2},\ \mathrm{H_2},\ \mathrm{C\ (s)} & 0 & \mathrm{OH} & + 38{,}990
 \end{array}
 $$
-**The heating values, and the $10.9\ \%$ that separates them.** For methane, $M = 16.04$:
+**The heating values, and the $11\ \%$ that separates them.** For methane, $M = 16.04$:
 $$
-\mathrm{HHV} = \frac{285{,}830 \times 2 + 393{,}520 - 74{,}850}{16.04} = 55{,}530\ \mathrm{kJ / kg}
+\mathrm{HHV} = \frac{285{,}830 \times 2 + 393{,}520 - 74{,}850}{16.04} = \frac{890{,}330}{16.04} = 55{,}510\ \mathrm{kJ / kg}
 $$
 $$
 \mathrm{LHV} = \mathrm{HHV} - \frac{y}{2} \times \frac{44{,}010}{M}
-= 55{,}530 - \frac{2 \times 44{,}010}{16.04} = 55{,}530 - 5{,}490 = 50{,}040\ \mathrm{kJ / kg}
+= 55{,}510 - \frac{2 \times 44{,}010}{16.04} = 55{,}510 - 5{,}490 = 50{,}020\ \mathrm{kJ / kg}
 $$
 **The ratio $\mathrm{HHV} / \mathrm{LHV}$, which is the number a boiler specification turns on.**
 $$
 \begin{array}{l c c c}
 \text{Methane} & 1.110 & \text{Octane} & 1.075 \\
-\text{Hydrogen} & 1.186 & \text{Bituminous coal} & 1.045 \\
-\text{Propane} & 1.085 & \text{Wood, dry} & 1.065 \\
-\text{Ethanol} & 1.091 & \text{Heavy fuel oil} & 1.062
+\text{Hydrogen} & 1.183 & \text{Bituminous coal} & \approx 1.04 \\
+\text{Propane} & 1.086 & \text{Wood, dry} & \approx 1.08 \\
+\text{Ethanol} & 1.107 & \text{Heavy fuel oil} & \approx 1.06
 \end{array}
 $$
-**The rule.** The ratio rises with the fuel's **hydrogen content**, and hydrogen's $1.186$ is why a hydrogen-fired boiler's "efficiency" on an HHV basis looks $19\ \%$ better than the same boiler on an LHV basis.
+**The rule.** The ratio rises with the fuel's **hydrogen content**, and hydrogen's $1.183$ is why a hydrogen-fired boiler's "efficiency" on an LHV basis looks $18\ \%$ better than the same boiler on an HHV basis.
 **The adiabatic flame temperature, from the balance with $Q = 0$.**
 $$
 \sum_{\mathrm{react}} N_i \bar{h}_{f,i}^{\circ} = \sum_{\mathrm{prod}} N_i \left( \bar{h}_{f,i}^{\circ} + \bar{\Delta h}_i \right)
@@ -260,24 +260,24 @@ $$
 $$
 and solving by trial on the ideal-gas tables gives
 $$
-T_{\mathrm{ad}} \approx 2{,}400\ \mathrm{K}\ \text{without dissociation}, \qquad
-T_{\mathrm{ad}} \approx 2{,}150\ \mathrm{K}\ \text{with equilibrium}
+T_{\mathrm{ad}} \approx 2{,}330\ \mathrm{K}\ \text{without dissociation}, \qquad
+T_{\mathrm{ad}} \approx 2{,}225\ \mathrm{K}\ \text{with equilibrium}
 $$
-**The $250\ \mathrm{K}$ is dissociation**, and it is not a refinement: at $2{,}150\ \mathrm{K}$ the equilibrium $\mathrm{CO_2} \rightleftharpoons \mathrm{CO} + \tfrac{1}{2} \mathrm{O_2}$ leaves about **$0.6\ \%$** of the carbon as CO and the $\mathrm{H_2O}$ about **$1.5\ \%$** dissociated, and the enthalpy tied up in those species is exactly the $250\ \mathrm{K}$.
+**The $100\ \mathrm{K}$ is dissociation**, and it is not a refinement: at $2{,}225\ \mathrm{K}$ equilibrium leaves about **$9\ \%$** of the carbon as CO, about **$2\ \%$** of the hydrogen as $\mathrm{H_2}$, and some OH, O, H and NO, and the enthalpy tied up in those species is the $100\ \mathrm{K}$.
 **The number that makes the flame temperature a design constraint and not a curiosity.**
 $$
 \begin{array}{l c}
-\text{Methane in air, stoichiometric} & 2{,}150\ \mathrm{K} \\
-\text{Methane in oxygen} & 3{,}030\ \mathrm{K} \\
-\text{Methane at } \phi = 1.2\ \text{in air} & 2{,}230\ \mathrm{K} \\
-\text{Methane at } \phi = 0.8\ \text{in air} & 2{,}020\ \mathrm{K} \\
-\text{Methane in air, inlet preheated to } 600\ \mathrm{K} & 2{,}480\ \mathrm{K} \\
-\text{Methane at } 20\ \mathrm{bar}\text{, stoichiometric air} & 2{,}090\ \mathrm{K} \\
+\text{Methane in air, stoichiometric} & 2{,}225\ \mathrm{K} \\
+\text{Methane in oxygen} & 3{,}050\ \mathrm{K} \\
+\text{Methane at } \phi = 1.2\ \text{in air} & 2{,}135\ \mathrm{K} \\
+\text{Methane at } \phi = 0.8\ \text{in air} & 2{,}000\ \mathrm{K} \\
+\text{Methane in air, inlet preheated to } 600\ \mathrm{K} & 2{,}370\ \mathrm{K} \\
+\text{Methane at } 20\ \mathrm{bar}\text{, stoichiometric air} & 2{,}280\ \mathrm{K} \\
 \text{Hydrogen in air, stoichiometric} & 2{,}380\ \mathrm{K} \\
-\text{Diesel in air, } \phi = 0.35 & 1{,}500\ \mathrm{K}
+\text{Methane in air, } \phi = 0.35 & 1{,}170\ \mathrm{K}
 \end{array}
 $$
-**The reading.** **The peak is at $\phi \approx 1.1$, not at $\phi = 1$**, because a slightly rich mixture still burns fully while the excess nitrogen is smaller; **preheating raises the flame temperature by about $0.55\ \mathrm{K}$ per kelvin of preheat**, which is why a regenerative burner reaches $1{,}100\ {}^{\circ}\mathrm{C}$ preheat and a $2{,}500\ \mathrm{K}$ flame; and **pressure lowers it**, which is why a high-compression engine's peak-cycle temperature is lower than the air-standard analysis predicts.
+(Equilibrium values from $298\ \mathrm{K}$ reactants at $1\ \mathrm{atm}$ unless stated.) **The reading.** **The peak is at $\phi \approx 1.05$, not at $\phi = 1$**, because in a slightly rich mixture the products have a lower heat capacity and less dissociation; **preheating raises the flame temperature by about $0.5\ \mathrm{K}$ per kelvin of preheat**, which is why a regenerative burner with $1{,}100\ {}^{\circ}\mathrm{C}$ air preheat reaches a flame near $2{,}700\ \mathrm{K}$; and **pressure raises it slightly** by suppressing dissociation.
 :::
 
 ::: definition Equilibrium, dissociation and the pollutants {#def-eq}
@@ -291,49 +291,51 @@ $$
 $$
 \begin{array}{l c c}
 \text{Reaction} & \ln K_p\ \text{at}\ 2{,}000\ \mathrm{K} & \text{Meaning} \\
-\mathrm{CO} + \tfrac{1}{2} \mathrm{O_2} \rightleftharpoons \mathrm{CO_2} & + 14.0 & \text{essentially complete} \\
-\mathrm{H_2} + \tfrac{1}{2} \mathrm{O_2} \rightleftharpoons \mathrm{H_2O} & + 13.7 & \text{essentially complete} \\
-\tfrac{1}{2} \mathrm{N_2} + \tfrac{1}{2} \mathrm{O_2} \rightleftharpoons \mathrm{NO} & - 4.3 & 1.2\ \%\ \text{of the available NO at equilibrium} \\
-\mathrm{CO_2} \rightleftharpoons \mathrm{CO} + \tfrac{1}{2} \mathrm{O_2} & - 14.0 & 0.6\ \%\ \text{dissociated} \\
-\mathrm{H_2O} \rightleftharpoons \mathrm{H_2} + \tfrac{1}{2} \mathrm{O_2} & - 13.7 & 1.5\ \%\ \text{dissociated}
+\mathrm{CO} + \tfrac{1}{2} \mathrm{O_2} \rightleftharpoons \mathrm{CO_2} & + 6.63 & \text{mostly complete} \\
+\mathrm{H_2} + \tfrac{1}{2} \mathrm{O_2} \rightleftharpoons \mathrm{H_2O} & + 8.15 & \text{mostly complete} \\
+\tfrac{1}{2} \mathrm{N_2} + \tfrac{1}{2} \mathrm{O_2} \rightleftharpoons \mathrm{NO} & - 3.97 & \text{about } 650\ \mathrm{ppm\ NO} \\
+\mathrm{CO_2} \rightleftharpoons \mathrm{CO} + \tfrac{1}{2} \mathrm{O_2} & - 6.63 & 3\ \%\ \text{dissociated} \\
+\mathrm{H_2O} \rightleftharpoons \mathrm{H_2} + \tfrac{1}{2} \mathrm{O_2} & - 8.15 & 0.7\ \%\ \text{dissociated}
 \end{array}
 $$
-**The number that makes $\mathrm{NO_x}$ a kinetics problem and not an equilibrium one.** The equilibrium $\mathrm{NO}$ fraction at $2{,}150\ \mathrm{K}$ is about **$1.5$ mole per million**, and a gas-turbine combustor leaves with **$15$ to $30$ ppm** — the same order — while a diesel leaves with **$500\ \mathrm{ppm}$** at a flame temperature of $1{,}500\ \mathrm{K}$, where the equilibrium figure is **below $0.01\ \mathrm{ppm}$**. **The Zeldovich mechanism is rate-limited, not equilibrium-limited**, and the reason is that the $\mathrm{N \equiv N}$ bond's $945\ \mathrm{kJ / mol}$ makes the **rate**, not the equilibrium, the constraint:
+(Values of $\ln K_p$ at $2{,}000\ \mathrm{K}$; the meanings refer to stoichiometric methane–air products held at $2{,}000\ \mathrm{K}$ and $1\ \mathrm{atm}$.)
+**The number that makes $\mathrm{NO_x}$ a kinetics problem and not an equilibrium one.** The equilibrium $\mathrm{NO}$ fraction in stoichiometric methane–air products at the $2{,}225\ \mathrm{K}$ flame temperature is about **$1{,}900\ \mathrm{ppm}$**, and about $3{,}000\ \mathrm{ppm}$ at $\phi = 0.8$ — yet a lean-premixed gas-turbine combustor leaves with **$10$ to $25\ \mathrm{ppm}$** and a diesel with a few hundred. **The Zeldovich mechanism is rate-limited, not equilibrium-limited**: the $\mathrm{N \equiv N}$ bond's $945\ \mathrm{kJ / mol}$ makes the first step, $\mathrm{O} + \mathrm{N_2} \to \mathrm{NO} + \mathrm{N}$, so slow that NO never approaches equilibrium in the few milliseconds the gas spends at flame temperature, and once the gas cools what has formed is frozen. The initial rate is approximately
 $$
-\frac{d \left[ \mathrm{NO} \right]}{d t} = 2 \times 10^{16} \frac{1}{T^{\circ}\!} \exp \left( - \frac{69{,}300}{R_u T} \right) \left[ \mathrm{O} \right] \left[ \mathrm{N_2} \right] \ \mathrm{ppm / s}
+\frac{d \left[ \mathrm{NO} \right]}{d t} = \frac{6 \times 10^{16}}{T^{1/2}} \exp \left( - \frac{69{,}090}{T} \right) \left[ \mathrm{O_2} \right]_e^{1/2} \left[ \mathrm{N_2} \right]_e \quad \mathrm{mol / cm^{3} \cdot s}
 $$
-**The exponential's bite.** A $100\ \mathrm{K}$ reduction in flame temperature from $2{,}150$ to $2{,}050\ \mathrm{K}$ cuts the thermal-$\mathrm{NO_x}$ formation rate by a factor of
+with $T$ in kelvin and the concentrations in $\mathrm{mol / cm^{3}}$.
+**The exponential's bite.** A $100\ \mathrm{K}$ reduction in flame temperature from $2{,}150$ to $2{,}050\ \mathrm{K}$ cuts this rate, at fixed concentrations, by a factor of
 $$
-\exp \left[ \frac{69{,}300}{8.314} \left( \frac{1}{2{,}050} - \frac{1}{2{,}150} \right) \right]
-= \exp \left[ 8{,}335 \times 2.279 \times 10^{- 5} \right] = 1.21
+\sqrt{\frac{2{,}150}{2{,}050}}\, \exp \left[ 69{,}090 \left( \frac{1}{2{,}050} - \frac{1}{2{,}150} \right) \right]
+= 1.024 \times \exp \left( 1.568 \right) = 4.9
 $$
-— **only $21\ \%$**, which is why **lean premixed combustion** attacks the **residence time and the peak temperature** and not the average, and why a $10\ \mathrm{K}$ reduction in the **peak** is worth more than $100\ \mathrm{K}$ in the mean.
+— **about fivefold**, which is why **lean premixed combustion** attacks the **peak temperature** and the time spent near it, and why a few tens of kelvin off the **peak** are worth more than a larger reduction in the mean.
 **The flue-gas dew points, which are the numbers that decide a boiler's materials.**
 $$
 \begin{array}{l c c}
 \text{Fuel and excess air} & \text{Water partial pressure} & \text{Dew point} \\
-\text{Methane, } \lambda = 1.0 & 9.2\ \mathrm{kPa} & 44.2\ {}^{\circ}\mathrm{C} \\
-\text{Methane, } \lambda = 1.2 & 7.4\ \mathrm{kPa} & 39.9\ {}^{\circ}\mathrm{C} \\
-\text{Methane, } \lambda = 2.0 & 5.1\ \mathrm{kPa} & 33.4\ {}^{\circ}\mathrm{C} \\
-\text{Natural gas, } \lambda = 1.15 & 7.9\ \mathrm{kPa} & 41.4\ {}^{\circ}\mathrm{C} \\
-\text{Heavy fuel oil, } \lambda = 1.15 & 9.6\ \mathrm{kPa} & 45.0\ {}^{\circ}\mathrm{C} \\
-\text{Coal, } \lambda = 1.2 & 11.4\ \mathrm{kPa} & 48.4\ {}^{\circ}\mathrm{C}
+\text{Methane, } \lambda = 1.0 & 19.3\ \mathrm{kPa} & 59.2\ {}^{\circ}\mathrm{C} \\
+\text{Methane, } \lambda = 1.2 & 16.3\ \mathrm{kPa} & 55.7\ {}^{\circ}\mathrm{C} \\
+\text{Methane, } \lambda = 2.0 & 10.1\ \mathrm{kPa} & 46.0\ {}^{\circ}\mathrm{C} \\
+\text{Natural gas, } \lambda = 1.15 & 16.7\ \mathrm{kPa} & 56.2\ {}^{\circ}\mathrm{C} \\
+\text{Heavy fuel oil, } \lambda = 1.15 & 10.0\ \mathrm{kPa} & 45.8\ {}^{\circ}\mathrm{C} \\
+\text{Bituminous coal (8\ \% moisture), } \lambda = 1.2 & 6.7\ \mathrm{kPa} & 38.2\ {}^{\circ}\mathrm{C}
 \end{array}
 $$
 **The acid dew point, which is a different and much higher number.** With $1\ \%$ sulfur in the fuel the $\mathrm{SO_3}$ formed gives a sulphuric-acid mist whose dew point is
 $$
 T_{\mathrm{acid}} \approx 120\text{–}155\ {}^{\circ}\mathrm{C}\ \text{for coal and heavy oil}
 $$
-**and it is the reason a coal boiler's air preheater metal is never run below $150\ {}^{\circ}\mathrm{C}$** and the reason a heavy-oil marine engine's cylinder-lube base number is $70$ and not $40$.
-**The number that makes condensing boilers a $25\ \%$ of the market and not $100\ \%$.** A condensing boiler recovers the latent heat **and** cools the flue to $45\ {}^{\circ}\mathrm{C}$, but it can only do so if the **return water is below $55\ {}^{\circ}\mathrm{C}$** — and a radiator-designed existing building returns at $70\ {}^{\circ}\mathrm{C}$, so the boiler condenses for **$20\ \%$** of the heating season and its $106\ \%$ becomes $96\ \%$. **The retrofit that matters is the radiator area, not the boiler.**
+**and it is the reason a coal or oil boiler's flue gas is not cooled below roughly $130$ to $150\ {}^{\circ}\mathrm{C}$**, and the reason a high-sulfur heavy-oil marine engine needs a cylinder lubricant of high base number to neutralise the acid.
+**The number that limits a condensing boiler.** A condensing boiler recovers the latent heat **and** cools the flue to $45\ {}^{\circ}\mathrm{C}$, but it can only do so if the **return water is below the dew point of about $55\ {}^{\circ}\mathrm{C}$** — and an existing building designed for $80 / 70\ {}^{\circ}\mathrm{C}$ radiators returns above that for much of the season, so the boiler condenses only part of the time and its seasonal efficiency falls several points below the $106\ \%$ (LHV) of its datasheet. **The retrofit that matters is the radiator area, not the boiler.**
 :::
 
 ::: widget plot
-f: 2230-900*pow(x-1.1,2)+100*(x-1.1); 1980-900*pow(x-1.1,2)+100*(x-1.1)
-x: 0.8, 2.0
-y: 1400, 2500
-labels: adiabatic flame temperature K, no dissociation; with equilibrium dissociation
-caption: The constant-pressure adiabatic flame temperature of methane burned in air, in kilokelvin-scale units reduced to a peak near $\phi = 1.1$, against the equivalence ratio $\phi$. The curve is **asymmetric**: it falls steeply on the lean side, where the excess nitrogen absorbs the heat, and less steeply on the rich side, where the unburnt fuel carries the heat away instead. **The peak is at $\phi \approx 1.1$ and not at $\phi = 1$**, and the $80\ \mathrm{K}$ difference between the two is the reason a lean-premixed gas-turbine combustor runs at $\phi \approx 0.6$ — accepting a **$600\ \mathrm{K}$** lower flame temperature to buy a **tenfold** reduction in thermal $\mathrm{NO_x}$.
+f: 4833.7*pow(x,6) - 40361.2*pow(x,5) + 135994.6*pow(x,4) - 234504.2*pow(x,3) + 215024.2*pow(x,2) - 97439.2*x + 18664.9
+x: 0.6, 2.0
+y: 1400, 2400
+labels: adiabatic flame temperature K, with equilibrium dissociation
+caption: The constant-pressure adiabatic flame temperature of methane burned in air from $298\ \mathrm{K}$ and $1\ \mathrm{atm}$, with equilibrium dissociation, against the equivalence ratio $\phi$ (a polynomial fit, within about $15\ \mathrm{K}$, to equilibrium calculations). The curve rises steeply on the lean side, where the excess air absorbs the heat, peaks near $2{,}230\ \mathrm{K}$ at $\phi \approx 1.05$, and falls on the rich side, where part of the fuel's energy leaves unreleased as CO and $\mathrm{H_2}$. **A lean-premixed gas-turbine combustor runs near $\phi \approx 0.6$** — accepting a flame about **$550\ \mathrm{K}$** cooler than the peak to cut thermal $\mathrm{NO_x}$ by orders of magnitude.
 :::
 
 ## Worked cases
@@ -345,61 +347,60 @@ An office needs $120\ \mathrm{kW}$ of sensible cooling and $40\ \mathrm{kW}$ of 
 $$
 \begin{array}{l c c c c}
 & T_{\mathrm{db}} & \phi & \omega & h \\
-\text{O (outside)} & 35 & 0.60 & 0.02135 & 91.1 \\
-\text{R (room)} & 24 & 0.50 & 0.00930 & 47.5 \\
-\text{C (coil leaving, sat.)} & 13 & 1.00 & 0.00940^{*} & 36.4 \\
-\text{M (mixed)} & 26.75 & - & 0.01231 & 58.4
+\text{O (outside)} & 35 & 0.60 & 0.02145 & 90.2 \\
+\text{R (room)} & 24 & 0.50 & 0.00930 & 47.8 \\
+\text{C (coil leaving, sat.)} & 13 & 1.00 & 0.00933 & 36.6 \\
+\text{M (mixed)} & 26.75 & - & 0.01234 & 58.4
 \end{array}
 $$
 **The supply airflow, from the sensible load.**
 $$
 \dot{m}_a = \frac{\dot{Q}_s}{c_{p,m} \left( T_R - T_C \right)}
-= \frac{120}{1.005 \times \left( 1 + 1.86 \times 0.0093 \right) \times \left( 24 - 13 \right)}
-= \frac{120}{11.23} = 10.69\ \mathrm{kg\ da / s}
+= \frac{120}{\left( 1.005 + 1.86 \times 0.0093 \right) \times \left( 24 - 13 \right)}
+= \frac{120}{11.25} = 10.67\ \mathrm{kg\ da / s}
 $$
 **The check against the latent load.**
 $$
-\dot{Q}_l = 10.69 \times \left( 0.00930 - 0.00940 \right) \times 2{,}501 = - 2.7\ \mathrm{kW}
+\dot{Q}_l = 10.67 \times \left( 0.00930 - 0.00933 \right) \times 2{,}501 = - 0.9\ \mathrm{kW}
 $$
-**The coil leaving humidity ratio of $0.00940$ is above the room's**, so the coil cannot deliver the latent load — and the correct coil leaving condition is found from the latent requirement:
+**The coil leaving humidity ratio of $0.00933$ is above the room's**, so a coil leaving saturated at $13\ {}^{\circ}\mathrm{C}$ cannot absorb the latent load at any airflow — and the required supply humidity is found from the latent requirement:
 $$
 \omega_C = \omega_R - \frac{\dot{Q}_l}{\dot{m}_a \times 2{,}501}
-= 0.00930 - \frac{40}{10.69 \times 2{,}501} = 0.00930 - 0.00149 = 0.00781
+= 0.00930 - \frac{40}{10.67 \times 2{,}501} = 0.00930 - 0.00150 = 0.00780
 $$
-**The coil leaving temperature** is the saturation temperature at $\omega = 0.00781$, which is $T_{\mathrm{sat}} \left( 1.257\ \mathrm{kPa} \right) = 10.2\ {}^{\circ}\mathrm{C}$.
-**The reconciliation.** A $13\ {}^{\circ}\mathrm{C}$ coil leaves saturated at $\omega = 0.00940$, which is **above** the room's $0.00930$, so no airflow whatever absorbs a latent load of $40\ \mathrm{kW}$ at that coil temperature; the **supply temperature must be $10.2\ {}^{\circ}\mathrm{C}$**.
-**The design decision this forces.** Either the coil leaves at $10.2\ {}^{\circ}\mathrm{C}$, which needs a **$5\ {}^{\circ}\mathrm{C}$** chilled-water supply and costs **$25\ \%$** more chiller energy, or the airflow rises by **$35\ \%$**, which costs **$50\ \%$** more fan power and a bigger duct. **The sensible heat ratio of $0.75$ is the constraint, and it is set by the building and not by the plant.**
-**The coil duty, at the corrected state.**
+**The coil leaving temperature** is the saturation temperature at $\omega = 0.00780$, which is $T_{\mathrm{sat}} \left( 1.255\ \mathrm{kPa} \right) = 10.3\ {}^{\circ}\mathrm{C}$.
+**The design decision this forces.** The coil must cool the air to $10.3\ {}^{\circ}\mathrm{C}$ to dehumidify it, which needs a chilled-water supply of about $5\ {}^{\circ}\mathrm{C}$; the air is then either supplied at $10.3\ {}^{\circ}\mathrm{C}$ with a correspondingly smaller airflow, or reheated to $13\ {}^{\circ}\mathrm{C}$ — about $29\ \mathrm{kW}$, which should come from recovered condenser heat and not from new energy. **The sensible heat ratio of $0.75$ is the constraint, and it is set by the building and not by the plant.** The rest of this example keeps the $10.67\ \mathrm{kg / s}$ supply with reheat.
+**The coil duty, at the corrected state** ($h_C = 30.0$ at $10.3\ {}^{\circ}\mathrm{C}$ saturated).
 $$
-\dot{Q}_{\mathrm{coil}} = 10.69 \times \left( h_M - h_C \right)
-= 10.69 \times \left( 58.4 - 29.6 \right) = 307.7\ \mathrm{kW}
+\dot{Q}_{\mathrm{coil}} = 10.67 \times \left( h_M - h_C \right)
+= 10.67 \times \left( 58.4 - 30.0 \right) = 302.6\ \mathrm{kW}
 $$
 **The water condensed.**
 $$
-\dot{m}_w = 10.69 \times \left( 0.01231 - 0.00781 \right) = 0.0481\ \mathrm{kg / s} = 173\ \mathrm{kg / h}
+\dot{m}_w = 10.67 \times \left( 0.01234 - 0.00780 \right) = 0.0484\ \mathrm{kg / s} = 174\ \mathrm{kg / h}
 $$
 **The chiller's electrical demand.** At a water-cooled chiller's $\mathrm{COP}$ of $5.4$, with the pumps and fans added separately:
 $$
-\dot{W}_{\mathrm{chiller}} = \frac{307.7}{5.4} = 57.0\ \mathrm{kW}
+\dot{W}_{\mathrm{chiller}} = \frac{302.6}{5.4} = 56.0\ \mathrm{kW}
 $$
-**The pumps.** The chilled-water flow at a $6\ \mathrm{K}$ rise is $307.7 / \left( 4.19 \times 6 \right) = 12.25\ \mathrm{kg / s} = 0.0123\ \mathrm{m^{3} / s}$, and at the industry's $0.05\ \mathrm{kW}$ per litre per second for a primary-loop with a control valve:
+**The pumps.** The chilled-water flow at a $6\ \mathrm{K}$ rise is $302.6 / \left( 4.19 \times 6 \right) = 12.04\ \mathrm{kg / s} = 0.0120\ \mathrm{m^{3} / s}$, and at a $250\ \mathrm{kPa}$ pump head with a $0.70$ pump-and-motor efficiency:
 $$
-\dot{W}_{\mathrm{pumps}} = 12.25 \times 0.05 = 0.61\ \mathrm{kW}
+\dot{W}_{\mathrm{pumps}} = \frac{0.0120 \times 250}{0.70} = 4.3\ \mathrm{kW}
 $$
-**The fans.** The supply volume is $10.69 / 1.18 = 9.06\ \mathrm{m^{3} / s}$, and at a $550\ \mathrm{Pa}$ total pressure across the coil, filter, ductwork and the outside-air inlet, with a $0.65$ fan and motor efficiency:
+**The fans.** The supply volume is $10.67 / 1.18 = 9.04\ \mathrm{m^{3} / s}$, and at a $550\ \mathrm{Pa}$ total pressure across the coil, filter, ductwork and the outside-air inlet, with a $0.65$ fan and motor efficiency:
 $$
-\dot{W}_{\mathrm{fans}} = \frac{9.06 \times 550}{0.65 \times 1000} = 7.7\ \mathrm{kW}
+\dot{W}_{\mathrm{fans}} = \frac{9.04 \times 550}{0.65 \times 1000} = 7.7\ \mathrm{kW}
 $$
 $$
-\dot{W}_{\mathrm{total}} = 57.0 + 0.6 + 7.7 = 65.3\ \mathrm{kW}, \qquad
-\mathrm{COP}_{\mathrm{plant}} = \frac{120 + 40}{65.3} = 2.45
+\dot{W}_{\mathrm{total}} = 56.0 + 4.3 + 7.7 = 68.0\ \mathrm{kW}, \qquad
+\mathrm{COP}_{\mathrm{plant}} = \frac{120 + 40}{68.0} = 2.35
 $$
-**The reading.** **The plant delivers $160\ \mathrm{kW}$ of cooling for $65.3\ \mathrm{kW}$ of electricity — a plant COP of $2.45$ against the chiller's $5.4$** — and the $2.2$-fold difference is the pumps, the fans and the coil's approach. **The number that appears on the chiller's nameplate is $5.4$ and the number the building pays is $2.45$**, and the gap is the whole of an HVAC engineer's professional value.
-*Sanity.* The reason the outside air's load is so large is that $2.67\ \mathrm{kg / s}$ of outside air at $h = 91.1$ against the room's $47.5$ carries
+**The reading.** **The plant delivers $160\ \mathrm{kW}$ of room cooling for $68.0\ \mathrm{kW}$ of electricity — a plant COP of $2.35$ against the chiller's $5.4$** — and most of the $2.3$-fold difference is that the coil must remove $303\ \mathrm{kW}$ to deliver $160\ \mathrm{kW}$ to the room, the rest being the pumps and fans. **The number that appears on the chiller's nameplate is $5.4$ and the number the building pays is $2.35$.**
+*Sanity.* The outside air's load is large because $2.67\ \mathrm{kg / s}$ of outside air at $h = 90.2$ against the room's $47.8$ carries
 $$
-2.67 \times \left( 91.1 - 47.5 \right) = 116.4\ \mathrm{kW}
+2.67 \times \left( 90.2 - 47.8 \right) = 113.2\ \mathrm{kW}
 $$
-**$73\ \%$ of the total cooling for $25\ \%$ of the air** — which is why every serious office HVAC specification includes **energy recovery** on the outside air, and why a $75\ \%$-effective enthalpy wheel is worth **$87\ \mathrm{kW}$** of coil duty and about **$16\ \mathrm{kW}$** of fan power.
+**$37\ \%$ of the coil duty for $25\ \%$ of the air** — which is why office HVAC specifications commonly include **energy recovery** on the outside air: a $75\ \%$-effective enthalpy wheel is worth about **$85\ \mathrm{kW}$** of coil duty, at the cost of some extra fan pressure.
 :::
 :::
 
@@ -411,60 +412,57 @@ $$
 \mathrm{CH_4} + 1.15 \times 2 \left( \mathrm{O_2} + 3.76\, \mathrm{N_2} \right)
 \to \mathrm{CO_2} + 2\, \mathrm{H_2O} + 0.3\, \mathrm{O_2} + 8.648\, \mathrm{N_2}
 $$
-**The flue gas.** $12.148\ \mathrm{kmol}$ wet per kmol of fuel, $10.148\ \mathrm{kmol}$ dry.
+**The flue gas.** $11.948\ \mathrm{kmol}$ wet per kmol of fuel, $9.948\ \mathrm{kmol}$ dry.
 $$
-\%\, \mathrm{CO_{2,\mathrm{dry}}} = \frac{100}{10.148} = 9.85\ \%, \qquad
-\%\, \mathrm{O_{2,\mathrm{dry}}} = \frac{0.3}{10.148} = 2.96\ \%
+\%\, \mathrm{CO_{2,\mathrm{dry}}} = \frac{100}{9.948} = 10.05\ \%, \qquad
+\%\, \mathrm{O_{2,\mathrm{dry}}} = \frac{30}{9.948} = 3.02\ \%
 $$
 **The stack loss, on an LHV basis.** With the mean specific heats over $20$ to $160\ {}^{\circ}\mathrm{C}$:
 $$
 \begin{array}{l c c c}
-\mathrm{CO_2} & 1\ \mathrm{kmol} & 41.6\ \mathrm{kJ / kmol \cdot K} & 5{,}824\ \mathrm{kJ} \\
-\mathrm{H_2O} & 2\ \mathrm{kmol} & 34.4 & 9{,}632 \\
-\mathrm{O_2} & 0.3\ \mathrm{kmol} & 29.6 & 1{,}243 \\
-\mathrm{N_2} & 8.648\ \mathrm{kmol} & 29.3 & 3{,}599 \\
+\mathrm{CO_2} & 1\ \mathrm{kmol} & 39.8\ \mathrm{kJ / kmol \cdot K} & 5{,}573\ \mathrm{kJ} \\
+\mathrm{H_2O} & 2\ \mathrm{kmol} & 34.0 & 9{,}522 \\
+\mathrm{O_2} & 0.3\ \mathrm{kmol} & 29.8 & 1{,}253 \\
+\mathrm{N_2} & 8.648\ \mathrm{kmol} & 29.2 & 35{,}388 \\
 \hline
-& & & 20{,}298\ \mathrm{kJ\ per\ kmol\ fuel}
+& & & 51{,}737\ \mathrm{kJ\ per\ kmol\ fuel}
 \end{array}
 $$
 $$
-\eta_{\mathrm{stack}} = \frac{20{,}298}{802{,}310} = 2.53\ \%
+\eta_{\mathrm{stack}} = \frac{51{,}737}{802{,}310} = 6.45\ \%
 $$
 **The efficiency, gross.**
 $$
-\eta_{\mathrm{LHV}} = 100 - 2.53 - 0.4\ \left( \text{unburnt and radiation} \right) = 97.1\ \%
+\eta_{\mathrm{LHV}} = 100 - 6.45 - 0.4\ \left( \text{unburnt and radiation} \right) = 93.2\ \%
 $$
 **against an HHV-basis figure of**
 $$
-\eta_{\mathrm{HHV}} = 97.1 \times \frac{50{,}040}{55{,}530} = 87.5\ \%
+\eta_{\mathrm{HHV}} = 93.2 \times \frac{50{,}020}{55{,}510} = 83.9\ \%
 $$
-**The $9.6$-point difference is the water's latent heat**, and both figures describe the same boiler.
-**The condensed case.** Cooling the flue gas to $40\ {}^{\circ}\mathrm{C}$ and condensing $1.6\ \mathrm{kmol}$ of the $2\ \mathrm{kmol}$ of water (the rest leaves as vapour at the $40\ {}^{\circ}\mathrm{C}$ dew point):
+**The $9.3$-point difference is the water's latent heat**, and both figures describe the same boiler.
+**The condensed case.** At $40\ {}^{\circ}\mathrm{C}$ the flue gas can hold only $p_{\mathrm{sat}} = 7.38\ \mathrm{kPa}$ of water vapour, so with $9.948\ \mathrm{kmol}$ of dry gas the vapour left is
 $$
-\text{sensible: } 20{,}298 \times \frac{160 - 40}{140} = 17{,}398 \to \text{recompute at } 20 \to 40\ {}^{\circ}\mathrm{C}: 2{,}900\ \mathrm{kJ}
+n_v = 9.948 \times \frac{7.38}{101.325 - 7.38} = 0.78\ \mathrm{kmol}, \qquad
+\text{condensed} = 2 - 0.78 = 1.22\ \mathrm{kmol}
 $$
+**The losses at a $40\ {}^{\circ}\mathrm{C}$ flue**, on the LHV basis (water vapour as the reference), against the $20\ {}^{\circ}\mathrm{C}$ air:
 $$
-\text{latent: } 1.6 \times 44{,}010 = 70{,}416\ \mathrm{kJ}
-$$
-$$
-\text{total recovered} = 2{,}900 + 70{,}416 = 73{,}316\ \mathrm{kJ}
-$$
-**The remaining loss**, taken as the dry gas, the residual vapour and the radiation, all at a $40\ {}^{\circ}\mathrm{C}$ flue:
-$$
-\text{dry gas: } 10.148 \times 29.4 \times 20 = 5{,}967\ \mathrm{kJ}, \qquad
-\text{vapour: } 0.4 \times \left( 44{,}010 + 34 \times 20 \right) = 18{,}284\ \mathrm{kJ}
+\text{sensible, dry gas and all the water as vapour, } 20 \to 40\ {}^{\circ}\mathrm{C}: 7{,}298\ \mathrm{kJ}, \qquad
+\text{radiation and unburnt: } 0.004 \times 802{,}310 = 3{,}209\ \mathrm{kJ}
 $$
 $$
-\text{radiation and unburnt: } 0.004 \times 802{,}310 = 3{,}209\ \mathrm{kJ}, \qquad
-\text{total loss} = 27{,}460\ \mathrm{kJ}
+\text{latent heat recovered: } 1.22 \times 44{,}010 = 53{,}602\ \mathrm{kJ}
 $$
-**The efficiency must be quoted against a fixed denominator**, and on the **HHV** basis, where the water's latent heat sits inside the fuel figure:
 $$
-\eta_{\mathrm{HHV}} = 1 - \frac{27{,}460}{802{,}310 \times 55{,}530 / 50{,}040} = 1 - \frac{27{,}460}{890{,}300} = 96.9\ \%
+\eta_{\mathrm{LHV}} = 1 - \frac{7{,}298 + 3{,}209 - 53{,}602}{802{,}310} = 1 + \frac{43{,}095}{802{,}310} = 105.4\ \%
 $$
-**The condensing boiler is $96.9\ \%$ on HHV and $107.5\ \%$ on LHV**, and the $107.5\ \%$ is legitimate because the LHV does not count the $70.4\ \mathrm{MJ}$ of latent heat the boiler has recovered.
-**The number that decides the retrofit.** The extra recovery is $70.4\ \mathrm{MJ}$ per kmol of fuel, or **$4{,}390\ \mathrm{kJ / kg}$** of gas — worth **$8.8\ \%$** of the fuel's LHV. At $8{,}000$ hours a year on a $10\ \mathrm{MW}$ boiler that is **$700{,}000$ currency units**, against a condensing heat exchanger costing **$250{,}000$**. **The payback is five months and the constraint is the return temperature**, which must be below $55\ {}^{\circ}\mathrm{C}$ for the heat exchanger to see $45\ {}^{\circ}\mathrm{C}$ flue gas.
-*Sanity.* The reason the non-condensing efficiency is $97.1\ \%$ on LHV and $87.5\ \%$ on HHV is the $11\ \%$ latent heat, and the reason the condensing boiler's LHV figure exceeds $100\ \%$ is that the LHV is a **smaller denominator** and not a smaller quantity of energy. **Every efficiency figure in this example is correct and three of the four would be reported wrongly by a manufacturer choosing the flattering basis** — which is why the European ErP directive mandates the **GCV/HHV** basis and the American ASHRAE convention uses the **NCV/LHV**.
+**and on the HHV basis**, where the water's latent heat sits inside the fuel figure:
+$$
+\eta_{\mathrm{HHV}} = 105.4 \times \frac{50{,}020}{55{,}510} = 95.0\ \%
+$$
+**The condensing boiler is $95.0\ \%$ on HHV and $105.4\ \%$ on LHV**, and the $105.4\ \%$ is legitimate because the LHV does not count the $53.6\ \mathrm{MJ}$ of latent heat the boiler has recovered.
+**The number that decides the retrofit.** The extra recovery is $105.4 - 93.2 = 12.2$ points of LHV, or about **$6{,}100\ \mathrm{kJ / kg}$** of gas, and it cuts the fuel for the same heat by $1 - 93.2 / 105.4 = 11.6\ \%$. On a $10\ \mathrm{MW}$ boiler running $8{,}000$ hours a year that is about **$10{,}000\ \mathrm{MWh}$** of gas a year. **The constraint is the return temperature**, which must be well below the $56\ {}^{\circ}\mathrm{C}$ dew point for the heat exchanger to condense much of the water.
+*Sanity.* The non-condensing efficiency is $93.2\ \%$ on LHV and $83.9\ \%$ on HHV because of the $11\ \%$ latent heat, and the condensing boiler's LHV figure exceeds $100\ \%$ because the LHV is a **smaller denominator**, not because energy is created. **Every efficiency figure in this example is correct, and a figure without its basis is meaningless** — European ecodesign rules and US AFUE ratings use the gross (HHV) basis, while many European catalogues quote net (LHV).
 :::
 :::
 
@@ -475,73 +473,74 @@ A gas turbine combustor receives air at $728\ \mathrm{K}$ and $1.35\ \mathrm{MPa
 $$
 \dot{m}_f \times \mathrm{LHV} = \left( 1 + \dot{m}_f \right) c_{p,g} \left( T_3 - T_2 \right)
 $$
-With $c_{p,g} = 1.10\ \mathrm{kJ / kg \cdot K}$ and $\mathrm{LHV} = 50{,}040\ \mathrm{kJ / kg}$:
+With a mean $c_{p,g} = 1.26\ \mathrm{kJ / kg \cdot K}$ for the combustion gas over $728$ to $1{,}690\ \mathrm{K}$ and $\mathrm{LHV} = 50{,}020\ \mathrm{kJ / kg}$:
 $$
-\dot{m}_f \times 50{,}040 = \left( 1 + \dot{m}_f \right) \times 1.10 \times 962
+\dot{m}_f \times 50{,}020 = \left( 1 + \dot{m}_f \right) \times 1.26 \times 962
 \quad \Rightarrow \quad
-\dot{m}_f = \frac{1{,}058}{48{,}982} = 0.0216\ \mathrm{kg\ fuel / kg\ air}
+\dot{m}_f = \frac{1{,}212}{48{,}808} = 0.0248\ \mathrm{kg\ fuel / kg\ air}
 $$
+(an equilibrium calculation with fuel entering at $298\ \mathrm{K}$ gives $0.0250$).
 **The equivalence ratio.** The stoichiometric air-fuel ratio for methane is $17.19$, so
 $$
-\phi = \frac{\left( F / A \right)}{\left( F / A \right)_{\mathrm{th}}} = \frac{0.0216}{1 / 17.19} = 0.0216 \times 17.19 = 0.371
+\phi = \frac{\left( F / A \right)}{\left( F / A \right)_{\mathrm{th}}} = \frac{0.0248}{1 / 17.19} = 0.0248 \times 17.19 = 0.43
 $$
-**The combustor runs at $\phi = 0.37$, which is $169\ \%$ excess air** — and the reason is that the turbine blades cannot tolerate more than $1{,}690\ \mathrm{K}$, so the combustor is deliberately run far too lean and the flame is held in a **rich primary zone** with **dilution holes** downstream.
-**The number that makes the dilution holes a design problem.** The primary zone at $\phi \approx 1.1$ reaches $2{,}300\ \mathrm{K}$ and forms $\mathrm{NO}$ at the Zeldovich rate; the dilution air, which is **$60\ \%$** of the total, must mix with the primary gases within **$30\ \mathrm{ms}$** to quench the $\mathrm{NO}$ formation before the gases reach the nozzle. **A poor dilution hole pattern costs a factor of three in $\mathrm{NO_x}$ and costs nothing in efficiency** — which is why combustor development is an optical and acoustic exercise and not a thermodynamic one.
-**The exit composition.** At $\phi = 0.37$ and $1{,}690\ \mathrm{K}$:
+**The combustor runs overall at $\phi = 0.43$, which is $133\ \%$ excess air** — because the turbine cannot tolerate a hotter gas, so the combustor is run lean overall: in a conventional combustor the flame burns near stoichiometric in a **primary zone** and **dilution air** is added downstream; in a dry-low-$\mathrm{NO_x}$ combustor most of the air is premixed with the fuel and burned lean.
+**The number that makes the dilution zone a design problem.** A near-stoichiometric primary zone reaches about $2{,}500\ \mathrm{K}$ with this preheat and forms $\mathrm{NO}$ at the Zeldovich rate, so the dilution air must mix in quickly — within milliseconds — to stop the formation. **The mixing pattern can change the $\mathrm{NO_x}$ several-fold at almost no cost in efficiency**, which is why combustor development is largely a matter of aerodynamics, mixing and acoustics rather than thermodynamics.
+**The exit composition.** At $\phi = 0.43$, per kmol of methane the products are $1\ \mathrm{CO_2} + 2\ \mathrm{H_2O} + 2.67\ \mathrm{O_2} + 17.5\ \mathrm{N_2}$, i.e.
 $$
-\%\, \mathrm{CO_2} = 3.1, \quad \%\, \mathrm{O_2} = 11.9, \quad \%\, \mathrm{H_2O} = 3.6, \quad \%\, \mathrm{N_2} = 81.4
+\%\, \mathrm{CO_2} = 4.3, \quad \%\, \mathrm{O_2} = 11.4, \quad \%\, \mathrm{H_2O} = 8.6, \quad \%\, \mathrm{N_2} = 75.6
 $$
-**The equilibrium $\mathrm{NO}$** at $1{,}690\ \mathrm{K}$ is $0.05\ \mathrm{ppm}$ and a real can combustor leaves with **$9\ \mathrm{ppm}$** corrected to $15\ \%\ \mathrm{O_2}$, and a lean-premixed one with **$3\ \mathrm{ppm}$** — the difference being the **primary-zone peak temperature** and not the average.
+**The equilibrium $\mathrm{NO}$** at $1{,}690\ \mathrm{K}$ in this oxygen-rich gas is about $2{,}000\ \mathrm{ppm}$, yet a modern dry-low-$\mathrm{NO_x}$ combustor leaves with about **$9$ to $25\ \mathrm{ppm}$** corrected to $15\ \%\ \mathrm{O_2}$ — kinetics, not equilibrium, sets the figure, and the **peak flame temperature** and residence time decide it.
 **The exergy destruction.** The combustor's irreversibility is dominated by the reaction and the mixing:
 $$
 \dot{S}_{\mathrm{gen}} = \sum_{\mathrm{prod}} N \bar{s} - \sum_{\mathrm{react}} N \bar{s} - \frac{\dot{Q}}{T_b} \quad \left( \dot{Q} = 0,\ \text{adiabatic} \right)
 $$
-For methane burning with stoichiometric air at $298\ \mathrm{K}$ the standard entropy generation is $388\ \mathrm{kJ / kmol \cdot K}$, and at $728\ \mathrm{K}$ inlet and $\phi = 0.37$ it is about **$520\ \mathrm{kJ / kmol \cdot K}$**:
+For methane burning adiabatically with stoichiometric air from $298\ \mathrm{K}$ the entropy generation is about $790\ \mathrm{kJ / K}$ per kmol of fuel, and with air at $728\ \mathrm{K}$, $1.35\ \mathrm{MPa}$ and $\phi = 0.43$ it is about **$780\ \mathrm{kJ / K}$** per kmol (equilibrium calculation):
 $$
-\dot{X}_{\mathrm{dest}} = 298.15 \times 520 = 155{,}000\ \mathrm{kJ\ per\ kmol\ fuel}
+\dot{X}_{\mathrm{dest}} = 298.15 \times 782 = 233{,}000\ \mathrm{kJ\ per\ kmol\ fuel}
 $$
-against a fuel exergy of $831{,}650\ \mathrm{kJ / kmol}$ — **$18.6\ \%$ of the fuel's exergy destroyed in the combustor alone**, before any turbine has seen it.
-**The reading.** **The combustor is the largest single exergy destroyer in a gas turbine**, and the way to reduce it is not a better liner but a **lower combustion temperature with a higher pressure-ratio compressor** — which is exactly the direction the $\mathrm{H}$- and $\mathrm{J}$-class machines have taken, and the reason their second-law efficiency rose from $65\ \%$ to $71\ \%$ while their first-law efficiency rose from $58\ \%$ to $63\ \%$.
-*Sanity.* The reason the combustor destroys $18.6\ \%$ of the fuel's exergy is that it converts a **room-temperature, low-entropy** reactant stream into a **$1{,}690\ \mathrm{K}$** product stream by an **unrestrained chemical reaction**, and any unrestrained reaction is as irreversible as a free expansion. **The fuel cell is the alternative**, and it is at $55\ \%$ electrical and $15\ \%$ destroyed-in-the-stack rather than $18.6\ \%$ destroyed before the machine starts.
+against a fuel exergy of $831{,}650\ \mathrm{kJ / kmol}$ — **$28\ \%$ of the fuel's exergy destroyed in the combustor alone**, before any turbine has seen it.
+**The reading.** **The combustor is the largest single exergy destroyer in a gas turbine**, and the way to reduce it is not a better liner but **hotter reactants and a hotter product gas** — higher compressor delivery temperature and higher firing temperature, which is the direction successive gas-turbine generations have taken — or not to burn the fuel at all.
+*Sanity.* The combustor destroys over a quarter of the fuel's exergy because it releases chemical energy by an **unrestrained chemical reaction** and degrades it into heat at under $1{,}700\ \mathrm{K}$, and any unrestrained process is as irreversible as a free expansion. **The fuel cell is the alternative**: it converts part of the chemical energy to electricity directly, and high-temperature fuel cells reach about $60\ \%$ electrical efficiency.
 :::
 :::
 
 ::: example Flue-gas dew point and a condensing retrofit {#ex-dewpoint}
 A $5\ \mathrm{MW}$ gas boiler currently exhausting at $180\ {}^{\circ}\mathrm{C}$ is to be retrofitted with a condensing economiser. The network return is $58\ {}^{\circ}\mathrm{C}$. Evaluate the recovery, the materials and the risk.
 ::: solution
-**The flue gas.** Methane at $\lambda = 1.15$: $11.65\ \mathrm{kmol}$ wet per kmol of fuel, with $2\ \mathrm{kmol}$ of water.
+**The flue gas.** Methane at $\lambda = 1.15$: $11.948\ \mathrm{kmol}$ wet per kmol of fuel, with $2\ \mathrm{kmol}$ of water.
 $$
-p_{\mathrm{H_2O}} = \frac{2}{11.65} \times 101.325 = 17.39\ \mathrm{kPa} \quad \Rightarrow \quad
-T_{\mathrm{dp}} = 56.8\ {}^{\circ}\mathrm{C}
+p_{\mathrm{H_2O}} = \frac{2}{11.948} \times 101.325 = 16.96\ \mathrm{kPa} \quad \Rightarrow \quad
+T_{\mathrm{dp}} = 56.5\ {}^{\circ}\mathrm{C}
 $$
-**The reading.** **The return water at $58\ {}^{\circ}\mathrm{C}$ is above the dew point of $56.8\ {}^{\circ}\mathrm{C}$** — the economiser will barely condense at all, and the recovery will be sensible only.
-**The recovery at $58\ {}^{\circ}\mathrm{C}$ return.** Cooling the flue gas to $65\ {}^{\circ}\mathrm{C}$:
+**The reading.** **The return water at $58\ {}^{\circ}\mathrm{C}$ is above the dew point of $56.5\ {}^{\circ}\mathrm{C}$** — the economiser will barely condense at all, and the recovery will be sensible only.
+**The recovery at $58\ {}^{\circ}\mathrm{C}$ return.** The boiler, at $93.2\ \%$ (LHV), burns $5{,}000 / 0.932 = 5{,}370\ \mathrm{kW}$ of fuel, i.e. $5{,}370 / 802{,}310 = 0.00669\ \mathrm{kmol / s}$ of methane. Cooling the flue gas (the products of the boiler example, with about $370\ \mathrm{kJ / K}$ per kmol of fuel) from $180$ to $65\ {}^{\circ}\mathrm{C}$:
 $$
-\dot{Q} = \frac{5{,}000}{0.971} \times \frac{180 - 65}{1{,}400} \times 0.90 = 401\ \mathrm{kW}
+\dot{Q} = 0.00669 \times 42{,}790 = 286\ \mathrm{kW}
 $$
-**The recovery if the return is lowered to $40\ {}^{\circ}\mathrm{C}$.** Cooling the flue gas to $45\ {}^{\circ}\mathrm{C}$ and condensing $1.45\ \mathrm{kmol}$ of the $2\ \mathrm{kmol}$ of water:
+**The recovery if the return is lowered to $40\ {}^{\circ}\mathrm{C}$.** Cooling the flue gas further to $45\ {}^{\circ}\mathrm{C}$, where it can hold only $1.04\ \mathrm{kmol}$ of vapour, condenses $0.96\ \mathrm{kmol}$ of the $2\ \mathrm{kmol}$ of water:
 $$
-\dot{Q} = 401 + 5{,}150 \times \frac{1.45}{2} \times \frac{44{,}010 / 16.04}{1{,}400} \approx 401 + 715 = 1{,}116\ \mathrm{kW}
+\dot{Q} = 286 + 0.00669 \times \left( 7{,}340 + 0.96 \times 44{,}010 \right) = 286 + 332 = 618\ \mathrm{kW}
 $$
-**The $715\ \mathrm{kW}$ of extra recovery is worth $250{,}000$ currency units a year** and requires the return temperature to fall by **$18\ \mathrm{K}$**, which requires **more emitter area in every building on the network**.
+**The $332\ \mathrm{kW}$ of extra recovery more than doubles the economiser's value** and requires the return temperature to fall by **$18\ \mathrm{K}$**, which requires **more emitter area in the buildings on the network**.
 **The materials.** Condensate from a gas flue has a pH of **$3.5$ to $4.5$** (carbonic acid, plus nitric acid from the $\mathrm{NO_x}$) and is **aggressive to carbon steel and to brick**. The options:
 $$
 \begin{array}{l l c}
 \text{Stainless 316L} & \text{standard, but pitting if the chloride exceeds } 200\ \mathrm{mg / l} & 1.0 \\
-\text{Aluminium (cast or welded)} & \text{standard in European boilers, good to pH } 5 & 0.8 \\
-\text{PPSU / fluoropolymer} & \text{for the small units, limited to } 110\ {}^{\circ}\mathrm{C} & 1.4 \\
-\text{Glass} & \text{the Siemens/Schmöckwitz design, immune and fragile} & 2.2
+\text{Aluminium-silicon (cast)} & \text{common in domestic condensing boilers; needs condensate pH above about } 4 & 0.8 \\
+\text{Polymer (PP, PPSU, fluoropolymer)} & \text{for flue parts and small units, temperature-limited} & 1.4 \\
+\text{Glass or enamelled tubes} & \text{immune to the acid and fragile} & 2.2
 \end{array}
 $$
-**The condensate must be neutralised** — a $5\ \mathrm{MW}$ boiler produces **$1.4\ \mathrm{m^{3}}$ per day** of condensate at $\mathrm{pH}\ 4$, and discharging it to a copper drain will destroy it in three years. **A neutralisation cartridge costs $600$ a year and is omitted from $80\ \%$ of installations.**
-**The risk that is never in the brochure.** A condensing economiser **cools the flue gas below the acid dew point of any sulfur in the fuel**. Natural gas has less than $5\ \mathrm{mg / m^{3}}$ of sulfur and is safe; **a boiler converted from gas to biogas, landfill gas or a hydrogen blend with a variable sulfur content can deposit sulphuric acid at $60\ {}^{\circ}\mathrm{C}$** and corrode a stainless heat exchanger in eighteen months. **The specification must state the fuel's sulfur limit and the fuel supplier must be contractually bound to it.**
-**The number that decides the project.** The economiser's recovery is worth **$0.9\ \%$** of the boiler's fuel at the current return temperature and **$14\ \%$** at a $40\ {}^{\circ}\mathrm{C}$ return. **The project is a network-temperature project wearing a heat-exchanger purchase order**, and the party who approves it without the emitter survey has bought a $400\ \mathrm{kW}$ heat exchanger instead of a $1{,}100\ \mathrm{kW}$ one.
-*Sanity.* Excess air **dilutes** the water and **lowers** the dew point, so $56.8\ {}^{\circ}\mathrm{C}$ at $\lambda = 1.15$ sits between the $44.2\ {}^{\circ}\mathrm{C}$ of the stoichiometric case and the $39.9\ {}^{\circ}\mathrm{C}$ of the $\lambda = 1.2$ row of the definition table — and the reason that row is lower is that it referred the water to the **dry** analysis. **The dew point must be computed from the wet analysis**, and the $17\ \mathrm{K}$ spread between the two conventions is exactly the error the warning at the head of this lesson describes.
+**The condensate must be neutralised** — at a $40\ {}^{\circ}\mathrm{C}$ return this $5\ \mathrm{MW}$ boiler condenses $0.00669 \times 0.96 \times 18.0 = 0.116\ \mathrm{kg / s}$, about **$10\ \mathrm{m^{3}}$ per day** of acidic condensate, which must not be discharged untreated to a copper or cast-iron drain.
+**The risk that is never in the brochure.** A condensing economiser **cools the flue gas below the acid dew point of any sulfur in the fuel**. Pipeline natural gas carries only a few milligrams of sulfur per cubic metre, mostly the odorant; **a boiler converted to biogas or landfill gas with a variable sulfur content can deposit sulphuric acid** and corrode even a stainless heat exchanger quickly. **The specification must state the fuel's sulfur limit and the fuel supplier must be contractually bound to it.**
+**The number that decides the project.** The economiser's recovery is worth about **$5\ \%$** of the boiler's fuel at the current return temperature ($286 / 5{,}370$) and about **$11.5\ \%$** at a $40\ {}^{\circ}\mathrm{C}$ return ($618 / 5{,}370$). **The project is a network-temperature project wearing a heat-exchanger purchase order**, and the party who approves it without the emitter survey has bought a $290\ \mathrm{kW}$ heat exchanger instead of a $620\ \mathrm{kW}$ one.
+*Sanity.* Excess air **dilutes** the water and **lowers** the dew point, so $56.5\ {}^{\circ}\mathrm{C}$ at $\lambda = 1.15$ sits between the $59.2\ {}^{\circ}\mathrm{C}$ of the stoichiometric case and the $55.7\ {}^{\circ}\mathrm{C}$ of the $\lambda = 1.2$ row of the definition table. **The dew point must be computed from the wet analysis**: a dry analysis contains no water at all.
 :::
 :::
 
 ::: history
-**The first quantitative study of a mixture** is **Dalton**'s of **1801–1803**, written while he was measuring the pressure of water vapour over snow and discovering that the atmosphere always contains some, and his law of partial pressures was published in the same memoir in which he discovered that **the dew point is a property of the air and not of the surface it wets**. **Gay-Lussac**'s combining volumes of **1808** and **Avogadro**'s hypothesis of **1811** supplied the mole, and **Cannizzaro**'s **1858** pamphlet finally persuaded the chemistry that Avogadro had been right for forty-seven years. **The psychrometric chart** is **Carrier**'s of **1911** — the paper that founded the air-conditioning industry and that Carrier, who was an engineer at Buffalo Forge and not an academic, presented to the American Society of Mechanical Engineers as a chart and not a theory; **the wet-bulb depression tables he printed were computed by hand and are correct to $0.1\ {}^{\circ}\mathrm{F}$**. **Lavoisier and Laplace** measured the first enthalpy of combustion in **1780**, and **the convention of the standard enthalpy of formation** was fixed by **G. N. Lewis and Merle Randall** in their **1923** *Thermodynamics*, the book that also introduced the word *activity* and the fugacity. **The adiabatic flame temperature** was computed by **Büringaer** in **1889** and by **Mahle** in **1915**, and **the equilibrium constants that make dissociation computable** came from **Nernst**'s third law of **1906** — the chain that runs from a low-temperature calorimetry experiment in Berlin to the $\mathrm{NO_x}$ in a car exhaust. **The Zeldovich mechanism** for thermal nitric oxide is due to **Yakov Zeldovich and co-workers in 1946–1947**, worked out in the context of **the Soviet nuclear programme's detonation physics** and published in a journal no Western combustion engineer read until it was translated in **1970**; **the fact that the mechanism had been known for twenty-four years before the clean-air regulations needed it** is one of the more awkward facts in the history of applied thermodynamics.
+**The law of partial pressures** is **John Dalton**'s, stated in **1801** in the course of his studies of water vapour and the atmosphere, and his essays of the same years on evaporation and the force of steam also treated the dew point. **Gay-Lussac**'s combining volumes of **1808** and **Avogadro**'s hypothesis of **1811** supplied the mole, and **Cannizzaro**'s **1858** pamphlet finally persuaded chemists that Avogadro had been right for forty-seven years. **Psychrometrics** as engineers use it begins with **Willis Carrier**'s paper *Rational Psychrometric Formulae*, presented to the American Society of Mechanical Engineers in **1911** while he worked for the Buffalo Forge Company; the psychrometric chart grew out of it. **Lavoisier and Laplace** measured heats of combustion and of respiration with their ice calorimeter in **1782–1783**, and the systematic use of **standard enthalpies and free energies of formation** owes much to **G. N. Lewis and Merle Randall**'s **1923** *Thermodynamics and the Free Energy of Chemical Substances*, which also popularised Lewis's **fugacity** (1901) and **activity** (1907). **High flame temperatures and dissociation** were studied experimentally by **Mallard and Le Chatelier** in the **1880s**, and **Nernst**'s heat theorem of **1906** made equilibrium constants computable from thermal data alone. **The Zeldovich mechanism** for thermal nitric oxide is due to **Yakov Zeldovich**, published in **1946** from his work on the oxidation of nitrogen in combustion and explosions; the "extended" mechanism with the $\mathrm{N} + \mathrm{OH}$ step was set out by **Lavoie, Heywood and Keck** in **1970**, just as engine-emission regulation began.
 :::
 
 ## Where this leads
@@ -551,11 +550,11 @@ Mixtures and combustion are the chemistry layer under [[thermodynamics/power-cyc
 ::: summary
 - A mixture's properties are mole-fraction averages, its gas constant is $R_u / \sum y_i M_i$, and the entropy of each component carries a $-R_u \ln y_i$ term that no other property does.
 - $\omega = 0.622\, p_v / (P - p_v)$, the relative humidity uses $p_{\mathrm{sat}}$ at the dry-bulb, and the dew point is $T_{\mathrm{sat}}$ at the vapour's partial pressure — three different temperatures and only two independent properties.
-- A cooling coil's latent load sets its leaving temperature, and a $3:1$ sensible-to-latent ratio at $13\ {}^{\circ}\mathrm{C}$ coil leaving is not achievable.
+- A cooling coil's latent load sets its leaving temperature: a $3:1$ sensible-to-latent room load at $24\ {}^{\circ}\mathrm{C}$, $50\ \%$ needs a coil leaving at about $10\ {}^{\circ}\mathrm{C}$, not $13\ {}^{\circ}\mathrm{C}$.
 - Orsat analyses are dry, the maximum $\mathrm{CO_2}$ is $11.7\ \%$ for methane, and a wet/dry oxygen analyser difference is $16\ \%$ of the reading.
-- HHV and LHV differ by $11\ \%$ for methane and $19\ \%$ for hydrogen, and every efficiency figure must name its basis.
-- The adiabatic flame temperature peaks at $\phi \approx 1.1$, is $250\ \mathrm{K}$ lower than the no-dissociation value, and is a constraint on $\mathrm{NO_x}$ and not on efficiency.
-- A gas turbine combustor at $\phi = 0.37$ destroys $18.6\ \%$ of the fuel's exergy before the turbine starts, and it is the largest destroyer in the plant.
+- The HHV exceeds the LHV by $11\ \%$ for methane and $18\ \%$ for hydrogen, and every efficiency figure must name its basis.
+- Methane's adiabatic flame temperature in air peaks near $2{,}230\ \mathrm{K}$ at $\phi \approx 1.05$, about $100\ \mathrm{K}$ below the no-dissociation value, and it is a constraint on $\mathrm{NO_x}$ through kinetics.
+- A gas turbine combustor at $\phi \approx 0.43$ destroys roughly $28\ \%$ of the fuel's exergy before the turbine starts, and it is the largest destroyer in the plant.
 - A condensing economiser's value is set by the network's return temperature and not by the heat exchanger.
 :::
 
@@ -566,7 +565,7 @@ A gas boiler's dry flue-gas analysis reads a carbon-dioxide fraction very close 
 - [ ] The boiler is at its optimum efficiency
 - [ ] The combustion air is preheated
 ::: solution
-The $11.7\ \%$ figure is the **stoichiometric** maximum, so a reading near it means $\lambda \approx 1.0$. Real boilers are run at $\lambda = 1.12$ to $1.18$, where the dry $\mathrm{CO_2}$ is $9.3$ to $10.1\ \%$, because at the stoichiometric ratio the mixing is never perfect and **$1$ to $2\ \%$ of the fuel leaves as carbon monoxide and unburnt hydrocarbon** — a loss larger than the stack saving — while the flue-gas dew point rises to $44\ {}^{\circ}\mathrm{C}$ for a gas-fired unit and the acid dew point rises with it. **The optimum is a compromise between a stack loss that rises with excess air and an unburnt loss that falls with it**, and the two curves cross in a flat minimum between $\lambda = 1.12$ and $1.18$.
+The $11.7\ \%$ figure is the **stoichiometric** maximum, so a reading near it means $\lambda \approx 1.0$. Real gas boilers are run at about $\lambda = 1.10$ to $1.20$, where the dry $\mathrm{CO_2}$ is $9.6$ to $10.6\ \%$, because at the stoichiometric ratio the mixing is never perfect and **part of the fuel leaves as carbon monoxide and unburnt hydrocarbon** — a loss larger than the stack saving — while the flue-gas dew point rises to about $59\ {}^{\circ}\mathrm{C}$. **The optimum is a compromise between a stack loss that rises with excess air and an unburnt loss that falls with it**, and the two curves meet in a flat minimum.
 :::
 :::
 
@@ -579,10 +578,10 @@ $R = 8.31446 / 28.97 = 0.287\ \mathrm{kJ / kg \cdot K}$.
 :::
 :::
 
-::: exercise Humidity {level=1 check="0.01336"}
+::: exercise Humidity {level=1 check="0.01331"}
 Give the humidity ratio of air at $30\ {}^{\circ}\mathrm{C}$ and $50\ \%$ relative humidity at $101.325\ \mathrm{kPa}$, with $p_{\mathrm{sat}} = 4.247\ \mathrm{kPa}$.
 ::: solution
-$\omega = 0.622 \times 2.1235 / 99.20 = 0.01336\ \mathrm{kg / kg\ da}$.
+$\omega = 0.622 \times 2.1235 / 99.20 = 0.01331\ \mathrm{kg / kg\ da}$.
 :::
 :::
 
@@ -596,7 +595,7 @@ $2 \times 4.76 \times 28.97 / 16.04 = 17.19$.
 ::: exercise Heating value {level=1 check="1.110"}
 Give the ratio of methane's higher to lower heating value.
 ::: solution
-$55{,}530 / 50{,}040 = 1.110$.
+$55{,}510 / 50{,}020 = 1.110$.
 :::
 :::
 
@@ -608,10 +607,10 @@ $100 / (1 + 7.52) = 11.7\ \%$, at the stoichiometric ratio.
 :::
 
 ::: exercise Mixed air {level=2}
-$3\ \mathrm{kg / s}$ of outside air at $\omega = 0.02135$ is mixed with $9\ \mathrm{kg / s}$ of recirculated air at $\omega = 0.00930$. Give the mixture's humidity ratio.
+$3\ \mathrm{kg / s}$ of outside air at $\omega = 0.02145$ is mixed with $9\ \mathrm{kg / s}$ of recirculated air at $\omega = 0.00930$. Give the mixture's humidity ratio.
 ::: solution
 $$
-\omega_M = \frac{3 \times 0.02135 + 9 \times 0.00930}{12} = \frac{0.06405 + 0.08370}{12} = 0.01231\ \mathrm{kg / kg\ da}
+\omega_M = \frac{3 \times 0.02145 + 9 \times 0.00930}{12} = \frac{0.06435 + 0.08370}{12} = 0.01234\ \mathrm{kg / kg\ da}
 $$
 *Sanity.* The mixture lies on the straight line joining the two states on the psychrometric chart, **one quarter of the way from the recirculated air to the outside air**, and that geometric statement is the whole of the mixing rule — which is why the chart is drawn with straight constant-$\omega$ lines and why an engineer can size a mixing box with a ruler.
 :::
@@ -629,15 +628,16 @@ $$
 $$
 **The check.** At $\lambda = 1.103$ the dry analysis should be
 $$
-\%\, \mathrm{CO_2} = \frac{100}{1 + 0.103 \times 2 + 3.76 \times 1.103 \times 2} = \frac{100}{10.32} = 9.69\ \%
+\%\, \mathrm{CO_2} = \frac{100}{1 + 0.103 \times 2 + 3.76 \times 1.103 \times 2} = \frac{100}{9.50} = 10.5\ \%, \qquad
+\%\, \mathrm{O_2} = \frac{20.6}{9.50} = 2.2\ \%
 $$
-against the $10.2\ \%$ read. **The analysis is not self-consistent** — the $\mathrm{CO_2}$ is too high for the $\mathrm{O_2}$ — and the usual causes are an air leak in the flue (which adds $\mathrm{O_2}$ and dilutes the $\mathrm{CO_2}$, moving the reading the **other** way), a mis-calibrated $\mathrm{CO_2}$ cell, or a fuel that is **not** pure methane.
-*Sanity.* A natural gas is $85$ to $97\ \%$ methane with ethane and propane, whose maximum $\mathrm{CO_2}$ is higher ($15.4\ \%$ for carbon), so a real gas gives a $\mathrm{CO_2}$ slightly **above** the pure-methane figure at the same $\mathrm{O_2}$ — which is the direction of this discrepancy and the reason a boiler's combustion controller should be fed the gas's **Wobbe index and composition** and not an assumed methane.
+against the $10.2\ \%$ and $2.1\ \%$ read. **The analysis is only roughly self-consistent** — the $\mathrm{CO_2}$ is about $0.3$ points low for the $\mathrm{O_2}$. An air leak cannot explain it (diluting with air moves both readings along the same pure-methane line); the usual causes are a mis-calibrated $\mathrm{CO_2}$ cell, incomplete combustion (unmeasured CO), or a fuel that is **not** pure methane.
+*Sanity.* A natural gas is typically $85$ to $97\ \%$ methane with ethane, propane and some inerts; the heavier hydrocarbons raise the maximum $\mathrm{CO_2}$ (about $12\ \%$ for a typical gas against $11.7\ \%$ for methane) while nitrogen in the gas lowers it — which is why a boiler's combustion controller should be fed the gas's **Wobbe index and composition** and not an assumed methane.
 :::
 :::
 
 ::: exercise Derivation {level=3}
-Derive the wet-bulb relation from the adiabatic saturation energy balance, show that the wet-bulb and thermodynamic wet-bulb temperatures coincide for air-water to within $0.5\ \mathrm{K}$, and obtain the Lewis relation.
+Derive the wet-bulb relation from the adiabatic saturation energy balance, show why the wet-bulb and thermodynamic wet-bulb temperatures nearly coincide for air-water, and obtain the Lewis relation.
 ::: solution
 **The adiabatic saturator.** Air with $\omega_1$ and $T_1$ flows over a make-up-water sump at $T_2$; the stream leaves saturated at $\omega_2$ and $T_2$, and make-up water at $T_2$ is added at rate $\dot{m}_w = \dot{m}_a \left( \omega_2 - \omega_1 \right)$. With no heat transfer and no work, per kilogram of dry air:
 $$
@@ -657,21 +657,20 @@ h_c \left( T_1 - T_w \right) = h_D \left( \omega_w - \omega_1 \right) h_{fg} \le
 $$
 **The Lewis relation.** For air-water vapour the ratio of the heat and mass transfer coefficients is
 $$
-\mathrm{Le} = \frac{h_c}{h_D \rho c_p} = \left( \frac{\mathrm{Sc}}{\mathrm{Pr}} \right)^{2 / 3} = \left( \frac{0.61}{0.71} \right)^{2 / 3} = 0.90^{2 / 3} = 0.934
+\frac{h_c}{h_D \rho c_p} = \left( \frac{\mathrm{Sc}}{\mathrm{Pr}} \right)^{2 / 3} = \left( \frac{0.61}{0.71} \right)^{2 / 3} = 0.859^{2 / 3} = 0.90
 $$
+(with $h_D$ here a mass-transfer coefficient in $\mathrm{m / s}$; the left side is the psychrometric ratio, and $\mathrm{Sc} / \mathrm{Pr}$ is the Lewis number),
 so $h_c / \left( h_D c_{p,m} \right) \approx 1$ and the wet-bulb line is a line of constant **enthalpy-like** quantity,
 $$
 \omega_1 = \omega_w - \frac{c_{p,m}}{h_{fg} \left( T_w \right)} \left( T_1 - T_w \right)
 $$
-**which is identical in form to the adiabatic-saturation result.** The comparison of the two gives the coincidence: **the psychrometric ratio $h_c / \left( h_D c_{p,m} \right)$ differs from unity by $6\ \%$ for air-water**, and the resulting difference between the wet-bulb and adiabatic-saturation temperatures is **less than $0.3\ \mathrm{K}$ between $0$ and $50\ {}^{\circ}\mathrm{C}$**.
-**The evaluation.** For the $30\ {}^{\circ}\mathrm{C}$, $50\ \%$ state, solving
+**which is identical in form to the adiabatic-saturation result.** The comparison of the two gives the coincidence: **the psychrometric ratio is close to unity for air-water** (about $0.9$ from the analogy above, and close to $1$ in measurements on well-ventilated thermometers), so the wet-bulb and adiabatic-saturation temperatures differ by only a few tenths of a kelvin at ordinary conditions.
+**The evaluation.** For the $30\ {}^{\circ}\mathrm{C}$, $50\ \%$ state, with $c_{p,m} = 1.005 + 1.86 \times 0.01331 = 1.030$ and $h_{fg} \approx 2{,}449\ \mathrm{kJ / kg}$ near $22\ {}^{\circ}\mathrm{C}$, solve
 $$
-\omega_1 = 0.01336, \qquad
-\omega_{\mathrm{sat}} \left( T_w \right) = 0.01336 + \frac{1.030}{2{,}440} \left( T_w - 30 \right)
+\omega_{\mathrm{sat}} \left( T_w \right) = 0.01331 + \frac{1.030}{2{,}449} \left( 30 - T_w \right)
 $$
-by trial: $T_w = 22\ {}^{\circ}\mathrm{C}$ gives $\omega_{\mathrm{sat}} = 0.01661$ against a required $0.01336 + 1.030 \times \left( - 8 \right) / 2{,}440 = 0.01399$ — **too high**, so $T_w$ is lower; $T_w = 21.5$ gives $0.01587$ against $0.01378$; $T_w = 20.5$ gives $0.01430$ against $0.01336$. **The solution is $T_w \approx 20.2\ {}^{\circ}\mathrm{C}$**, and the ASHRAE chart gives $22.0\ {}^{\circ}\mathrm{C}$ for the same state.
-**The $1.8\ \mathrm{K}$ discrepancy is the $c_{p,m} / h_{fg}$ linearisation**, and the reason the exact relation must be used is that the wet-bulb depression is only $8\ \mathrm{K}$ and a $1.8\ \mathrm{K}$ error is **$22\ \%$** of it. **The chart is right and the hand formula is a first approximation**, which is the sentence that should be on every psychrometric chart.
-*Sanity.* The reason the Lewis number is near unity for air-water and not for other vapours is that the thermal and mass diffusivities of water vapour in air happen to be within $10\ \%$ of each other, and the reason this is a **luck** is that the wet-bulb thermometer is the most-used humidity instrument in the world and its calibration depends on it. **For acetone, ethanol or benzene the psychrometric ratio is $0.5$ to $0.6$ and the wet-bulb does not equal the adiabatic-saturation temperature** — which is why a spray dryer for a solvent-based coating cannot be controlled with a wet-bulb thermometer.
+by trial: $T_w = 22\ {}^{\circ}\mathrm{C}$ gives $\omega_{\mathrm{sat}} = 0.01667$ against a required $0.01331 + 1.030 \times 8 / 2{,}449 = 0.01668$; $T_w = 21.5$ gives $0.01616$ against $0.01689$, and $T_w = 22.5$ gives $0.01720$ against $0.01647$. **The solution is $T_w = 22.0\ {}^{\circ}\mathrm{C}$**, the value the psychrometric chart gives for the same state.
+*Sanity.* The psychrometric ratio is near unity for air-water because the thermal diffusivity of air and the mass diffusivity of water vapour in air are within about $15\ \%$ of each other, and this is a piece of **luck**: the wet-bulb thermometer, the most-used humidity instrument in the world, depends on it. **For the vapours of organic solvents in air the psychrometric ratio is well above unity** (roughly $1.5$ to $2$), and the wet-bulb temperature is then noticeably different from the adiabatic-saturation temperature.
 :::
 :::
 
@@ -682,13 +681,13 @@ Specify the combustion, emissions, heat-recovery and instrumentation basis for a
 $$
 \begin{array}{l c c c c}
 \text{Fuel} & \mathrm{LHV}\ (\mathrm{MJ / Nm^{3}}) & \left( A / F \right)_{\mathrm{vol}} & \text{Max } \mathrm{CO_2}\ \% & T_{\mathrm{flame}} \\
-\text{Natural gas} & 35.9 & 9.52 & 11.7 & 2{,}150\ \mathrm{K} \\
-\text{Biogas, } 65\ \%\ \mathrm{CH_4} & 23.3 & 6.20 & 10.4 & 2{,}100\ \mathrm{K} \\
-\text{Hydrogen} & 10.8 & 2.39 & - & 2{,}380\ \mathrm{K} \\
-\text{Blend, } 70\ \%\ \text{NG} + 20\ \%\ \text{biogas} + 10\ \%\ \mathrm{H_2} & 30.6 & 8.16 & 11.0 & 2{,}180\ \mathrm{K}
+\text{Natural gas (as methane)} & 35.9 & 9.52 & 11.7 & 2{,}225\ \mathrm{K} \\
+\text{Biogas, } 65\ \%\ \mathrm{CH_4},\ 35\ \%\ \mathrm{CO_2} & 23.3 & 6.19 & 17.0 & 2{,}125\ \mathrm{K} \\
+\text{Hydrogen} & 10.8 & 2.38 & - & 2{,}380\ \mathrm{K} \\
+\text{Blend, } 70\ \%\ \text{NG} + 20\ \%\ \text{biogas} + 10\ \%\ \mathrm{H_2} & 30.9 & 8.14 & 12.3 & 2{,}215\ \mathrm{K}
 \end{array}
 $$
-**The reading.** **The air requirement varies by $30\ \%$ across the fuel range**, so the burner's air register must be able to hold $\lambda = 1.15$ over a **$4 : 1$** change in volumetric gas flow — which no fixed-orifice gas train can do and which a **mass-flow-controlled, density-compensated** gas train can.
+(Stoichiometric adiabatic flame temperatures in air from $298\ \mathrm{K}$.) **The reading.** **The gas volume needed for the same heat varies more than $3 : 1$ across the fuel range** ($35.9 / 10.8$), while the air needed per unit of heat varies by about $17\ \%$, so the burner's air register must hold $\lambda = 1.15$ over a large change in volumetric gas flow — which no fixed-orifice gas train can do and which a **mass-flow-controlled, density-compensated** gas train can.
 **The four consequences of hydrogen.**
 $$
 \begin{array}{l l}
@@ -698,7 +697,7 @@ $$
 \text{Thermal } \mathrm{NO_x} & \text{rises with the flame temperature, and the permit limit is the binding constraint}
 \end{array}
 $$
-**The $\mathrm{NO_x}$ basis.** $30\ \mathrm{mg / Nm^{3}}$ at $3\ \%\ \mathrm{O_2}$ is $14.8\ \mathrm{ppm}$, and a conventional lean-premixed gas burner achieves **$20$ to $30\ \mathrm{ppm}$** — so the limit requires
+**The $\mathrm{NO_x}$ basis.** $30\ \mathrm{mg / Nm^{3}}$ at $3\ \%\ \mathrm{O_2}$, expressed as $\mathrm{NO_2}$ ($2.05\ \mathrm{mg / Nm^{3}}$ per ppm), is $14.6\ \mathrm{ppm}$, and a conventional lean-premixed gas burner achieves **$20$ to $30\ \mathrm{ppm}$** — so the limit requires
 $$
 \begin{array}{l c}
 \text{Ultra-lean premixing with staged air} & 12\text{–}18\ \mathrm{ppm} \\
@@ -706,7 +705,7 @@ $$
 \text{Selective catalytic reduction, secondary} & 3\text{–}5\ \mathrm{ppm}
 \end{array}
 $$
-**The recommendation is premixing plus $15\ \%$ FGR**, which reaches $10\ \mathrm{ppm}$ and costs $8\ \%$ of the boiler's output in recycled-flue-gas fan power and a $60\ \mathrm{K}$ rise in the stack temperature.
+**The recommendation is premixing plus $15\ \%$ FGR**, which reaches about $10\ \mathrm{ppm}$ at the cost of a recirculation fan's power and a small loss of efficiency.
 **The heat recovery.**
 $$
 \begin{array}{l c c}
@@ -726,7 +725,7 @@ $$
 \text{Flue temperature} & \text{redundant, at the economiser outlet} & \text{the low-limit alarm protects the acid dew point}
 \end{array}
 $$
-**The four clauses that protect the buyer.** **"THE BURNER SHALL BE FUEL-FLEXIBLE AND GUARANTEED OVER THE FULL WOBBE RANGE OF $35$ TO $55\ \mathrm{MJ / Nm^{3}}$ WITH UP TO $20\ \%$ HYDROGEN BY VOLUME."** **"THE $\mathrm{NO_x}$ GUARANTEE SHALL BE STATED AT $3\ \%\ \mathrm{O_2}$ AND SHALL BE VERIFIED AT THE MINIMUM AND MAXIMUM WOBBE."** **"THE CONDENSING ECONOMISER MATERIAL SHALL BE SPECIFIED FOR A FLUE-GAS SULFUR CONTENT OF UP TO $30\ \mathrm{mg / Nm^{3}}$ AND A CONDENSATE pH OF $3.5$, AND A NEUTRALISATION UNIT SHALL BE INCLUDED."** **"THE CONTROL SYSTEM SHALL COMPUTE THE AIR SETPOINT FROM THE MEASURED GAS DENSITY AND COMPOSITION AND NOT FROM A FIXED RATIO."**
+**The four clauses that protect the buyer.** **"THE BURNER SHALL BE FUEL-FLEXIBLE AND GUARANTEED OVER THE FULL WOBBE RANGE OF THE SPECIFIED FUELS, FROM BIOGAS TO NATURAL GAS, WITH UP TO $20\ \%$ HYDROGEN BY VOLUME."** **"THE $\mathrm{NO_x}$ GUARANTEE SHALL BE STATED AT $3\ \%\ \mathrm{O_2}$ AND SHALL BE VERIFIED AT THE MINIMUM AND MAXIMUM WOBBE."** **"THE CONDENSING ECONOMISER MATERIAL SHALL BE SPECIFIED FOR A FLUE-GAS SULFUR CONTENT OF UP TO $30\ \mathrm{mg / Nm^{3}}$ AND A CONDENSATE pH OF $3.5$, AND A NEUTRALISATION UNIT SHALL BE INCLUDED."** **"THE CONTROL SYSTEM SHALL COMPUTE THE AIR SETPOINT FROM THE MEASURED GAS DENSITY AND COMPOSITION AND NOT FROM A FIXED RATIO."**
 *Design comment.* The general rule is that **a multi-fuel boiler is a measurement and control project with a pressure vessel attached**, and that a boiler bought on its heat output and tested on pure methane will fail its permit in its second year on a variable biogas supply.
 :::
 :::

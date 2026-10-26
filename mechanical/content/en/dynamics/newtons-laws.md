@@ -55,7 +55,7 @@ $$
 
 *Check.* The mass cancels, as it must: a crate and a piano slide down the same chute at the same rate. $\checkmark$
 
-*Sanity.* The three numbers are the whole of chute, hopper and conveyor design. A chute must be steeper than $\tan^{-1} \mu_s$ to start and steeper than $\tan^{-1} \mu_k$ to keep going, and because $\mu_s > \mu_k$ there is a band of angles in which material starts and stops repeatedly — the stick-slip that makes a hopper surge and a brake squeal. That band is $20^{\circ}$ to $21.8^{\circ}$ here, which is why a hopper designed on the running angle alone ratchets, and why the standard remedy is a liner whose friction is both low and stable rather than merely low.
+*Sanity.* The three numbers are the whole of chute, hopper and conveyor design. A chute must be steeper than $\tan^{-1} \mu_s$ to start and steeper than $\tan^{-1} \mu_k$ to keep going, and because $\mu_s > \mu_k$ there is a band of angles in which material starts and stops repeatedly — the stick-slip that makes a hopper surge and a brake squeal. That band is $\tan^{-1} 0.30 = 16.7^{\circ}$ to $21.8^{\circ}$ here, which is why a hopper designed on the running angle alone ratchets, and why the standard remedy is a liner whose friction is both low and stable rather than merely low.
 :::
 :::
 
@@ -79,7 +79,7 @@ R = 2 T = 147.2\ \mathrm{N}.
 $$
 *Check.* $T = 2 g m_1 m_2 / \left( m_1 + m_2 \right) = 2 \times 9.81 \times 60 / 16 = 73.6\ \mathrm{N}$. $\checkmark$ And $R = 147.2\ \mathrm{N}$ is **less** than the total weight of $157.0\ \mathrm{N}$, because the heavier mass is accelerating down: the support of an accelerating system carries less than the static weight.
 
-*Sanity.* That last point is not a curiosity, it is the operating principle of a **differential** or **free-fall** torsion balance, in which the apparent weight of an accelerating mass is measured to determine $G$, and it is why a person in a broken lift is not "weightless until they hit the bottom" in any useful sense but does genuinely register zero on a scale. It is also why a crane's load indicator reads low during hoist-up deceleration and high during hoist-up acceleration, and why a well-designed hoist sizes its load cell on the dynamic load, which can be $1.5$ times the static weight at the moment the cable takes up.
+*Sanity.* That last point is general: anything that weighs an accelerating system reads its weight corrected by the accelerations, and a person in a lift in free fall would genuinely register zero on a scale. It is also why a crane's load indicator reads low during hoist-up deceleration and high during hoist-up acceleration, and why a well-designed hoist sizes its load cell on the dynamic load, which can be $1.5$ times the static weight at the moment the cable takes up.
 :::
 :::
 
@@ -88,7 +88,7 @@ f: 9.81*(10-6)/(10+6)*x
 x: 0, 1
 y: 0, 3
 labels: \text{acceleration } \left( \mathrm{m/s^2} \right)
-caption: Acceleration of the Atwood machine against the mass imbalance fraction $x = \left( m_1 - m_2 \right) / \left( m_1 + m_2 \right)$. The relation is exactly linear, $a = g x$, so a $10$–$6\ \mathrm{kg}$ pair at $x = 0.25$ accelerates at a quarter of gravity. The linearity is the reason an Atwood machine was used for two centuries as the classroom demonstration of uniformly accelerated motion: by making the two masses nearly equal the acceleration can be made arbitrarily small and the timing made accurate with a water clock, which is exactly what Atwood did in 1784.
+caption: Acceleration of the Atwood machine against the mass imbalance fraction $x = \left( m_1 - m_2 \right) / \left( m_1 + m_2 \right)$. The relation is exactly linear, $a = g x$, so a $10$–$6\ \mathrm{kg}$ pair at $x = 0.25$ accelerates at a quarter of gravity. The linearity is the reason an Atwood machine was used for two centuries as the classroom demonstration of uniformly accelerated motion: by making the two masses nearly equal the acceleration can be made arbitrarily small and the timing made accurate with a seconds pendulum, which is exactly what George Atwood described in 1784.
 :::
 
 ## Systems of particles
@@ -115,7 +115,7 @@ By Newton's third law the internal forces occur in equal and opposite pairs, $\m
 ## Central forces and constrained paths
 
 ::: example Leaving the surface {#ex-leave-sphere}
-A small block slides from rest at the top of a fixed smooth sphere of radius $R$. At what angle does it leave the surface, and how far below the centre does it land?
+A small block slides from rest at the top of a fixed smooth sphere of radius $R$. At what angle does it leave the surface, and at what speed?
 ::: solution
 **Tangential equation** along the sphere, with $\theta$ from the top and $v \, \mathrm{d} v / \mathrm{d} s = g \sin \theta$, $\mathrm{d} s = R \mathrm{d} \theta$:
 $$
@@ -135,9 +135,9 @@ $$
 \theta = 48.2^{\circ}, \qquad
 v = \sqrt{\frac{2 g R}{3}} .
 $$
-The block leaves at a height $R \cos \theta = 0.667 R$ above the centre, having fallen $0.333 R$ of the sphere's radius.
+The block leaves at a height $R \cos \theta = 0.667 R$ above the centre, having descended $R / 3$ from the top.
 
-*Sanity.* The answer $\cos \theta = 2 / 3$ is independent of $R$, of $g$ and of $m$, which is a strong hint that it is right and a strong hint that it is fragile: it depends on the sphere being **smooth** and the block starting from **rest at the very top**. With friction the block leaves later, at about $53^{\circ}$ for $\mu = 0.1$; if it is given an initial push it leaves earlier; and if it is a **ball** rather than a block, rolling changes the answer to $\cos \theta = 10 / 17$, because some of the potential energy goes into rotation and less into speed. Snow leaves a ski jump at roughly this angle, which is why the take-off is rounded and why a ski jumper's trajectory is designed to meet the slope at a shallow relative angle rather than to follow it.
+*Sanity.* The answer $\cos \theta = 2 / 3$ is independent of $R$, of $g$ and of $m$, which is a strong hint that it is right and a strong hint that it is fragile: it depends on the sphere being **smooth** and the block starting from **rest at the very top**. With friction the block leaves later, at about $51^{\circ}$ for $\mu = 0.1$; if it is given an initial push it leaves earlier; and if it is a **ball** rather than a block, rolling changes the answer to $\cos \theta = 10 / 17$, because some of the potential energy goes into rotation and less into speed.
 :::
 :::
 
@@ -159,7 +159,7 @@ T = \frac{m g}{\cos 30^{\circ}} = \frac{19.62}{0.8660} = 22.7\ \mathrm{N}.
 $$
 *Check.* The general result for a conical pendulum of arm length $L$ is $\omega = \sqrt{g / \left( L \cos \theta \right)}$, which here gives $\sqrt{9.81 / \left( 0.3 \times 0.866 \right)} = 6.14\ \mathrm{rad / s}$. $\checkmark$
 
-*Sanity.* Note that $\omega$ depends on the **vertical height** $h = L \cos \theta$ above the ball and not on the mass: a Watt governor runs at the same speed whether its balls are lead or brass, and its speed is $\sqrt{g / h}$, which for a $250\ \mathrm{mm}$ height is $6.26\ \mathrm{rad / s}$ or $60\ \mathrm{rpm}$. That is why a governor's arms are long — a taller governor runs slower and is therefore more stable — and why the height, not the angle, is the design variable. It is also why a Watt governor cannot hold a speed well: the sensitivity $\mathrm{d} \omega / \mathrm{d} h = - \omega / \left( 2 h \right)$ is fixed by geometry and cannot be tuned, which is the reason it was replaced by the centrifugal flyball governor with a spring, whose characteristic can be made as flat as the engine's load variation requires.
+*Sanity.* Note that $\omega$ depends on the **vertical height** $h = L \cos \theta$ above the ball and not on the mass: a Watt governor runs at the same speed whether its balls are lead or brass, and its speed is $\sqrt{g / h}$, which for a $250\ \mathrm{mm}$ height is $6.26\ \mathrm{rad / s}$ or $60\ \mathrm{rpm}$. That is why the height, not the angle or the ball mass, is the design variable. It is also why a simple Watt governor cannot hold a speed well: the sensitivity $\mathrm{d} \omega / \mathrm{d} h = - \omega / \left( 2 h \right)$ is fixed by geometry and cannot be tuned, which is the reason it gave way to loaded governors — the Porter governor with a central dead weight and the spring-loaded Hartnell governor — whose characteristic can be shaped to suit the engine.
 :::
 :::
 
@@ -187,7 +187,7 @@ $$
 **Braking while cornering.** With $a_t = 0.6 \times 9.81 = 5.886\ \mathrm{m / s^{2}}$,
 $$
 a_n \le \sqrt{ \left( 0.8 g \right)^{2} - 5.886^{2} }
-= \sqrt{61.54 - 34.65} = 5.19\ \mathrm{m / s^{2}},
+= \sqrt{61.59 - 34.65} = 5.19\ \mathrm{m / s^{2}},
 $$
 $$
 v = \sqrt{a_n r} = \sqrt{5.19 \times 60} = 17.6\ \mathrm{m / s} = 63\ \mathrm{km / h}.
@@ -210,8 +210,8 @@ a \le g \left( \mu_s \cos 15^{\circ} - \sin 15^{\circ} \right)
 $$
 At $a = 1.5\ \mathrm{m / s^{2}}$ the required friction is $50 \times \left( 1.5 + 2.539 \right) = 202\ \mathrm{N}$ against $166\ \mathrm{N}$ available, so the boxes **slip**.
 
-**Remedies.** Reduce $a$ to $0.78\ \mathrm{m / s^{2}}$, giving a $1.0\ \mathrm{s}$ run-up; or reduce the incline to $10^{\circ}$, which raises the limit to $1.60\ \mathrm{m / s^{2}}$; or profile the belt.
-*Sanity.* Note how sensitive the answer is to the incline: going from $15^{\circ}$ to $10^{\circ}$ more than doubles the allowable acceleration, from $0.78$ to $1.60\ \mathrm{m / s^{2}}$, because $\mu \cos \theta - \sin \theta$ falls steeply as $\theta$ approaches $\tan^{-1} \mu = 19.3^{\circ}$, beyond which no acceleration at all is possible and the box slides even at rest. That is why a belt conveyor's practical limit is about $18^{\circ}$ for ordinary goods and why steeper lifts use cleats, pockets or a bucket elevator.
+**Remedies.** Reduce $a$ to $0.78\ \mathrm{m / s^{2}}$, giving a $1.0\ \mathrm{s}$ run-up; or reduce the incline to $10^{\circ}$, which raises the limit to $1.68\ \mathrm{m / s^{2}}$; or profile the belt.
+*Sanity.* Note how sensitive the answer is to the incline: going from $15^{\circ}$ to $10^{\circ}$ more than doubles the allowable acceleration, from $0.78$ to $1.68\ \mathrm{m / s^{2}}$, because $\mu \cos \theta - \sin \theta$ falls steeply as $\theta$ approaches $\tan^{-1} \mu = 19.3^{\circ}$, beyond which no acceleration at all is possible and the box slides even at rest. That is why a belt conveyor's practical limit is about $18^{\circ}$ for ordinary goods and why steeper lifts use cleats, pockets or a bucket elevator.
 :::
 :::
 
@@ -220,7 +220,7 @@ Three rules, violated constantly. **One body at a time:** if two bodies are in c
 :::
 
 ::: history
-Newton stated the three laws in the *Principia* of 1687 in Latin and in the language of "quantity of motion" rather than of force, and the modern form $\sum \mathbf{F} = m \mathbf{a}$ is due to Euler, who wrote it as a vector equation in 1750 and, more importantly for engineering, extended it to a system of particles as $\sum \mathbf{F}^{\text{ext}} = M \mathbf{a}_G$ in the same year and to a rigid body in 1755. The **unit** problem dominated the nineteenth century: with $F$, $m$, $a$ related by a constant whose value depends on the units, British engineers used the pound-force and the pound-mass interchangeably and produced the $g_c$ factor that still appears in American textbooks, while the metric system's resolution — the newton defined as the unit of force rather than the kilogram-force — was agreed at the Electrical Standards Congress of 1881 and did not reach British schoolbooks until the 1960s. The **free-body diagram** as a formal method is a nineteenth-century pedagogical invention, appearing in the works of Rankine and of the American text-writers Kane and Byerly in the 1870s and 1880s; before that, problems were solved by direct geometric argument. The **friction circle** is a construction of the tyre and road engineering of the 1920s, formalised from Coulomb friction by the French road-engineering school and made a household idea by the racing line literature of the 1960s.
+Newton stated the three laws in the *Principia* of 1687 in Latin and in the language of "quantity of motion" rather than of force, and the modern form $\sum \mathbf{F} = m \mathbf{a}$ is due to Euler, who in 1750 stated it in components for every element of mass of any body and, more importantly for engineering, went on to apply it to rigid bodies, adding the separate law of angular momentum in 1775. The **unit** problem dominated the nineteenth century: with $F$, $m$, $a$ related by a constant whose value depends on the units, British engineers used the pound-force and the pound-mass interchangeably and produced the $g_c$ factor that still appears in American textbooks, while the metric resolution — a unit of force derived from the units of mass and acceleration, the dyne of the CGS system of the 1870s and the newton named by the General Conference on Weights and Measures in 1948 — reached British schoolbooks only with metrication in the 1960s and 1970s. The **free-body diagram** as an explicit, drawn first step is a product of engineering-mechanics teaching rather than of Newton; earlier problems were often solved by direct geometric argument. The **friction circle**, often called Kamm's circle after the German automotive engineer Wunibald Kamm, came out of the vehicle-dynamics research of the 1930s and later became a staple of racing-driver instruction.
 :::
 
 ## Where this leads
@@ -243,7 +243,7 @@ A helium balloon is tied to the floor of a lorry at rest with the windows shut. 
 - [ ] Straight up, unchanged
 - [ ] Sideways, depending on the acceleration
 ::: solution
-Forwards. When the lorry accelerates at $a$, the air inside is pressed to the back with a horizontal pressure gradient $\partial p / \partial x = - \rho a$, so the buoyant force on the balloon has a forward horizontal component $\rho V a$. The balloon's own horizontal equation is $\rho V a = m v \dot{}$, giving it a forward acceleration $a \rho V / m$ — and since the balloon plus helium is lighter than the air it displaces, $\rho V > m$, it accelerates forwards **faster** than the lorry and swings forward. A suspended weight, for which $m \gg \rho V$, swings back. This is the same physics as the pendulum bob in an accelerating frame, and it is why a bubble in a spirit level moves **uphill**: the liquid, being heavier, goes down.
+Forwards. When the lorry accelerates at $a$, the air inside is pressed to the back with a horizontal pressure gradient $\partial p / \partial x = - \rho a$, so the buoyant force on the balloon has a forward horizontal component $\rho V a$. The balloon's own horizontal equation is $\rho V a = m a_b$, giving it a forward acceleration $a_b = a \rho V / m$ — and since the balloon plus helium is lighter than the air it displaces, $\rho V > m$, it accelerates forwards **faster** than the lorry and swings forward. A suspended weight, for which $m \gg \rho V$, swings back. This is the same physics as the pendulum bob in an accelerating frame, and it is why a bubble in a spirit level moves **uphill**: the liquid, being heavier, goes down.
 :::
 :::
 
@@ -253,24 +253,23 @@ Forwards. When the lorry accelerates at $a$, the air inside is pressed to the ba
 A $60\ \mathrm{kg}$ person stands on a scale in a lift accelerating downwards at $3\ \mathrm{m / s^{2}}$. What does the scale read, in newtons?
 ::: solution
 $N = m \left( g - a \right) = 60 \times 6.81 = 409\ \mathrm{N}$, equivalent to a mass of $41.7\ \mathrm{kg}$.
-*Note.* The answer to enter is $409\ \mathrm{N}$. A scale reads the normal force, not the weight, and in a lift accelerating down at $g$ it reads zero.
+*Note.* A scale reads the normal force, not the weight, and in a lift accelerating down at $g$ it reads zero.
 :::
 :::
 
 ::: exercise Normal–tangential {level=1 check="14.0"}
-A motorcyclist goes over the top of a hill of radius $20\ \mathrm{m}$ at $15\ \mathrm{m / s}$. What is the normal force on a $80\ \mathrm{kg}$ rider plus $20\ \mathrm{kg}$ machine?
+A motorcyclist goes over the top of a hill of radius $20\ \mathrm{m}$ at $15\ \mathrm{m / s}$. What is the normal force on the $80\ \mathrm{kg}$ rider plus $20\ \mathrm{kg}$ machine, and at what speed would it just become zero? (Enter that speed in m/s.)
 ::: solution
 $$
 N = m \left( g - \frac{v^{2}}{\rho} \right) = 100 \left( 9.81 - \frac{225}{20} \right)
 = 100 \left( 9.81 - 11.25 \right) = - 144\ \mathrm{N}.
 $$
-The negative sign means the machine has **left the ground**: the speed exceeds $\sqrt{g \rho} = 14.0\ \mathrm{m / s}$.
-*Note.* The answer to enter is the speed at which the normal force vanishes, $14.0\ \mathrm{m / s}$.
+The negative sign means the machine has **left the ground**: the normal force vanishes at $v = \sqrt{g \rho} = 14.0\ \mathrm{m / s}$, and $15\ \mathrm{m / s}$ exceeds it.
 :::
 :::
 
 ::: exercise Atwood limit {level=1 check="9.81"}
-In the Atwood machine of Example 4, what does the acceleration approach as $m_2 \rightarrow 0$?
+In the Atwood machine of [[#ex-atwood]], what does the acceleration approach as $m_2 \rightarrow 0$?
 ::: solution
 $a \rightarrow g m_1 / m_1 = g = 9.81\ \mathrm{m / s^{2}}$, and the tension approaches zero: the heavy mass is in free fall.
 :::
@@ -291,7 +290,7 @@ $$
 :::
 
 ::: exercise Friction circle {level=2}
-A truck corners on a flat $40\ \mathrm{m}$ radius with $\mu = 0.7$. It must also climb a $5$ per cent grade at constant speed. Find the maximum speed.
+A truck takes a $40\ \mathrm{m}$ radius bend with $\mu = 0.7$ while climbing a $5$ per cent grade at constant speed. Find the maximum speed.
 ::: solution
 The grade costs part of the friction budget in the tangential direction. At constant speed the required tractive force is $m g \sin \theta \approx 0.05 \, m g$, so
 $$
@@ -301,7 +300,7 @@ $$
 $$
 v = \sqrt{6.85 \times 40} = 16.6\ \mathrm{m / s} = 59.6\ \mathrm{km / h}.
 $$
-*Sanity.* The grade costs only $0.4$ per cent of the cornering speed, because $\sqrt{0.49 - 0.0025}$ is barely less than $0.7$. The general rule is that a small tangential demand costs almost nothing in the lateral direction — the loss goes as $\alpha^{2}$, not $\alpha$ — so it is the **large** braking or driving force that destroys the cornering, and a steady climb is nearly free.
+*Sanity.* The grade costs only about $0.1$ per cent of the cornering speed ($16.55$ against $16.57\ \mathrm{m / s}$ on the level), because $\sqrt{0.49 - 0.0025}$ is barely less than $0.7$. The general rule is that a small tangential demand costs almost nothing in the lateral direction — the loss goes as $\alpha^{2}$, not $\alpha$ — so it is the **large** braking or driving force that destroys the cornering, and a steady climb is nearly free.
 :::
 :::
 
@@ -330,7 +329,7 @@ $$
 $$
 a = \frac{900 / 9}{8} - 9.81 = 12.50 - 9.81 = 2.69\ \mathrm{m / s^{2}} > 2.40 . \checkmark
 $$
-*Design comment.* The governing case is **starting from rest at the bottom of the shaft**, when the tension is greatest and the cage is least likely to be guided. Two effects the simple calculation misses make it worse: the cable's own weight, which for a $400\ \mathrm{m}$ shaft at $1.2\ \mathrm{kg / m}$ adds $4.7\ \mathrm{kN}$ at the top and none at the bottom, and the **dynamic overshoot** when the cable takes up the slack, which can double the tension momentarily and is the reason a modern hoist has a torque-limiting drive and a load-limiter rather than relying on the motor's rating. The factor of safety of $9$ on a rope rather than the $3$ used for a steel structure exists because a rope's strength is a statistical property of a few hundred wires, degrades with wear and corrosion in ways that are hard to inspect, and fails without warning.
+*Design comment.* The governing case is **starting from rest at the bottom of the shaft**, when the tension is greatest and the cage is least likely to be guided. Two effects the simple calculation misses make it worse: the rope's own weight, which for a $400\ \mathrm{m}$ shaft and a rope of this strength at about $6\ \mathrm{kg / m}$ adds $23.5\ \mathrm{kN}$ at the drum when the cage is at the bottom — enough on its own to take the $900\ \mathrm{kN}$ rope back below the required factor — and the **dynamic overshoot** when the cable takes up the slack, which can double the tension momentarily and is the reason a modern hoist has a torque-limiting drive and a load-limiter rather than relying on the motor's rating. The factor of safety of $9$ on a rope rather than the $1.5$ or so used for a steel structure exists because a rope's strength is a statistical property of a few hundred wires, degrades with wear and corrosion in ways that are hard to inspect, and fails without warning.
 :::
 :::
 
@@ -364,6 +363,6 @@ N_{\text{bottom}} = m g + 2 m g \left( 1 - \cos \theta_0 \right)
 $$
 Released from the horizontal this is $3 m g$ — three times the weight, at the point where the speed is greatest and the surface is flat.
 
-**With friction** the tangential equation becomes $m R \ddot{\theta} = - m g \sin \theta - \mu N \, \text{sgn} \left( \dot{\theta} \right)$, and because $N$ contains $v^{2} / R$ the damping term is **not** proportional to velocity. The motion is no longer simple harmonic, the period becomes amplitude-dependent even beyond the usual $\theta_0^{2} / 16$ correction, and the amplitude decays by a fixed amount per cycle rather than exponentially — Coulomb damping, whose decay is linear in time. The particle also comes to rest not at the bottom but within a dead band $\left| \tan \theta \right| < \mu$ about it, which is why a rough bowl is a poor oscillator and why a precision pendulum is suspended from a knife edge rather than rolled in a trough.
+**With friction** the tangential equation becomes $m R \ddot{\theta} = - m g \sin \theta - \mu N \, \text{sgn} \left( \dot{\theta} \right)$, and because $N$ contains $v^{2} / R$ the damping term is **not** proportional to velocity. The motion is no longer simple harmonic, the period becomes amplitude-dependent even beyond the usual $\theta_0^{2} / 16$ correction, and the amplitude decays roughly by a fixed amount per cycle rather than exponentially, as in Coulomb damping, whose decay is linear in time. The particle also comes to rest not at the bottom but within a dead band $\left| \tan \theta \right| < \mu$ about it, which is why a rough bowl is a poor oscillator and why a precision pendulum is suspended from a knife edge rather than rolled in a trough.
 :::
 :::

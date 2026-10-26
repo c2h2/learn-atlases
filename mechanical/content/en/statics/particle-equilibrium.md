@@ -96,7 +96,7 @@ T_1 = 1.732 \times 2500 = 4330\ \mathrm{N} = 4.33\ \mathrm{kN}.
 $$
 The **steeper** sling carries $73$ per cent more than the shallower one, and $87$ per cent of the whole weight on its own.
 
-*Sanity check.* The two tensions are the sides of a right-angled force triangle with the weight as hypotenuse, because the slings are $60^\circ + 30^\circ = 90^\circ$ apart: $\sqrt{4330^{2} + 2500^{2}} = 5000\ \mathrm{N}$. That is a useful design fact — when two slings are at right angles, the load in each is $W \sin$ or $W \cos$ of its angle with the horizontal, and the total never exceeds $W$ in the pair but can approach $W$ in one of them.
+*Sanity check.* The two tensions are the sides of a right-angled force triangle with the weight as hypotenuse, because the slings are $60^\circ + 30^\circ = 90^\circ$ apart: $\sqrt{4330^{2} + 2500^{2}} = 5000\ \mathrm{N}$. That is a useful design fact — when two slings are at right angles, the load in each is $W \sin$ or $W \cos$ of its angle with the horizontal, so neither exceeds $W$, although their sum ($6.83\ \mathrm{kN}$ here) does.
 :::
 :::
 
@@ -105,7 +105,7 @@ f: 5000/(2*sin(x*pi/180))
 x: 5, 90
 y: 2500, 29000
 labels: \text{tension in each of two symmetric slings}
-caption: Tension in each of two identical slings symmetrically placed at angle $x$ to the horizontal, lifting a $5\ \mathrm{kN}$ panel: $T = W / (2 \sin\theta)$. Drag along the curve. At $\theta = 90^\circ$ (slings vertical and together) each carries $2.5\ \mathrm{kN}$, half the load; at $\theta = 30^\circ$ each carries $5\ \mathrm{kN}$, the whole load; at $\theta = 5^\circ$ each carries $28.7\ \mathrm{kN}$, nearly six times the load. This curve is the reason sling-angle tables in every rigging manual limit the angle between sling and load, and why "shorter slings are safer slings" is a true saying about a two-leg lift.
+caption: Tension in each of two identical slings symmetrically placed at angle $x$ to the horizontal, lifting a $5\ \mathrm{kN}$ panel: $T = W / (2 \sin\theta)$. Drag along the curve. At $\theta = 90^\circ$ (slings vertical and together) each carries $2.5\ \mathrm{kN}$, half the load; at $\theta = 30^\circ$ each carries $5\ \mathrm{kN}$, the whole load; at $\theta = 5^\circ$ each carries $28.7\ \mathrm{kN}$, nearly six times the load. This curve is the reason sling-angle tables in every rigging manual limit the angle between sling and load, and why, for a given spacing of the lifting points, longer slings are safer slings.
 :::
 
 ::: quiz
@@ -115,7 +115,7 @@ A picture of mass $4\ \mathrm{kg}$ hangs from a nail by a cord whose two halves 
 - [ ] $68\ \mathrm{N}$
 - [ ] $78\ \mathrm{N}$
 ::: solution
-The weight is $W = 4 \times 9.81 = 39.2\ \mathrm{N}$, and the two cord halves supply vertical components that add to it: $2 T \sin 30^\circ = 39.2$, so $T = 39.2\ \mathrm{N}$, numerically equal to the weight because $\sin 30^\circ = 0.5$. Pull the cord flatter and the tension grows as $1 / \sin\theta$ without limit: at $10^\circ$ it is $113\ \mathrm{N}$, at $2^\circ$ it is $562\ \mathrm{N}$. A cord hung nearly straight between two points cannot be made slack at any tension, which is why a washing line sags and why a cable roof needs pretension or a shallow curve.
+The weight is $W = 4 \times 9.81 = 39.2\ \mathrm{N}$, and the two cord halves supply vertical components that add to it: $2 T \sin 30^\circ = 39.2$, so $T = 39.2\ \mathrm{N}$, numerically equal to the weight because $\sin 30^\circ = 0.5$. Pull the cord flatter and the tension grows as $1 / \sin\theta$ without limit: at $10^\circ$ it is $113\ \mathrm{N}$, at $2^\circ$ it is $562\ \mathrm{N}$. A loaded cord can never be pulled perfectly straight, whatever the tension, which is why a washing line sags and why a cable roof needs pretension or a shallow curve.
 :::
 :::
 
@@ -130,7 +130,7 @@ Three force types recur in particle problems and each has a rule.
 **Smooth surfaces and contacts.** A frictionless surface or pin can only push, and pushes along the common normal at the contact. A peg or corner in contact with a smooth curved surface pushes along the radius through the point of contact. If friction is present it acts along the tangent, opposing impending slip, and its magnitude is not known in advance — it takes whatever value equilibrium requires up to a limit $\mu N$. Problems in this chapter are frictionless; [[statics/friction]] deals with the rest.
 
 ::: example Spring-held roller against a wall {#ex-spring-roller}
-A roller of weight $500\ \mathrm{N}$ rests against a smooth vertical wall and is held by a horizontal spring of stiffness $2.5\ \mathrm{kN/m}$ attached to its centre. Find the spring's extension and the reaction at the wall.
+A roller of weight $500\ \mathrm{N}$ rests against a smooth vertical wall and is held by a horizontal spring of stiffness $2.5\ \mathrm{kN/m}$, stretched by $40\ \mathrm{mm}$, attached to its centre. Find the reaction at the wall.
 ::: solution
 The roller has three forces: weight $500\ \mathrm{N}$ down, the wall reaction $N$ horizontally away from the wall, and the spring force $F_s$ horizontally towards the wall. Vertical equilibrium can only be satisfied by something, and neither $N$ nor a horizontal spring has a vertical component — so the arrangement as described is impossible, and the real one has the spring inclined or the roller on a floor as well. Take the standard version: the roller rests on a smooth floor and touches a smooth vertical wall, with the horizontal spring between the roller and a fixed point.
 
@@ -138,7 +138,7 @@ Then the floor supplies a vertical reaction $R_f = 500\ \mathrm{N}$, and horizon
 $$
 \textstyle \sum F_x = N - F_s = 0 .
 $$
-If the spring is stretched by $s = 40\ \mathrm{mm} = 0.040\ \mathrm{m}$, then
+With the spring stretched by $s = 40\ \mathrm{mm} = 0.040\ \mathrm{m}$,
 $$
 F_s = k s = 2500 \times 0.040 = 100\ \mathrm{N}, \qquad N = 100\ \mathrm{N}.
 $$
@@ -192,7 +192,7 @@ A particle in space gives exactly three independent equations. A ring held by fo
 :::
 
 ::: history
-The condition of equilibrium of concurrent forces was first stated correctly for the inclined plane by Stevin in 1586, whose *De Beghinselen des Waterwichts* solved the problem of a weight on a plane by imagining the plane as a closed loop of chain — the *clootcrans*, or wreath of spheres — and arguing that it could not turn, which is an equilibrium argument of great elegance. Galileo's *Le mecaniche* of 1600 gave the equilibrium of the lever by a virtual-work argument, and Varignon's *Projet d'une nouvelle méchanique* of 1687 put the composition of forces into the form used here. The systematic separation of "statics" as a body of doctrine, with free-body diagrams drawn for isolated bodies, belongs to the great French engineering schools of the 1800s: Poisson's *Traité de mécanique* of 1811 and Poinsot's *Éléments de statique* of 1808, the latter written for the Artillerie schools and reprinted twenty times. The reason this chapter insists on drawing the isolated body is that Poinsot's contemporaries, working from the whole-structure equations alone, repeatedly got the internal forces of frames wrong; the isolation step is what makes the subject mechanical rather than clever.
+The condition of equilibrium of concurrent forces was first stated correctly for the inclined plane by Stevin in 1586, whose *De Beghinselen der Weeghconst* solved the problem of a weight on a plane by imagining the plane as a closed loop of chain — the *clootcrans*, or wreath of spheres — and arguing that it could not turn, which is an equilibrium argument of great elegance. Galileo's *Le mecaniche*, written around 1600, treated the simple machines by an argument close to virtual work, and Varignon's *Projet d'une nouvelle méchanique* of 1687 put the composition of forces into the form used here. Statics as a self-contained body of doctrine took its textbook form in early nineteenth-century France, in Poinsot's *Éléments de statique* of 1803, which went through many editions, and Poisson's *Traité de mécanique* of 1811. The free-body diagram as a named, drawn step is younger still, a product of twentieth-century engineering teaching; this chapter insists on it because the isolation step is what makes the subject mechanical rather than clever.
 :::
 
 ## Where this leads
@@ -258,7 +258,7 @@ N \cos 20^\circ = W, \qquad N \sin 20^\circ = P
 \quad\Longrightarrow\quad
 P = W \tan 20^\circ = 4905 \times 0.3640 = 1785\ \mathrm{N}.
 $$
-By Lami's theorem the same answer comes from $P / \sin(160^\circ) = W / \sin(110^\circ)$, since the angles between the three forces are $110^\circ$, $130^\circ$ and $120^\circ$ — a useful cross-check. Note that a *horizontal* hold force needs more than the $W \sin 20^\circ = 1676\ \mathrm{N}$ a force parallel to the plane would need.
+By Lami's theorem the same answer comes from $P / \sin(160^\circ) = W / \sin(110^\circ)$, since the angles between the three forces are $90^\circ$ (between $P$ and $W$), $160^\circ$ (between $W$ and $N$) and $110^\circ$ (between $N$ and $P$) — a useful cross-check. Note that a *horizontal* hold force needs more than the $W \sin 20^\circ = 1678\ \mathrm{N}$ a force parallel to the plane would need.
 :::
 :::
 
@@ -299,7 +299,7 @@ T = \frac{20\,000}{2 \times 0.745} = 13\,400\ \mathrm{N} = 13.4\ \mathrm{kN},
 $$
 $27$ per cent higher, for a shackle load that is unchanged at $20\ \mathrm{kN}$.
 
-The design lesson is that shortening a sling raises the load in it sharply while doing nothing for the lifting point, and that the *horizontal* components, $T \cos\theta = 10\,000\ \mathrm{N}$ and $8\,940\ \mathrm{N}$ in the two cases, squeeze the generator's lifting lugs inwards — a load the lugs must be designed for and which is easy to forget because it does not appear in the total lifted weight. Rigging practice keeps the sling angle above about $60^\circ$ to the horizontal, or uses a spreader beam that puts the legs vertical.
+The design lesson is that shortening a sling raises the load in it sharply while doing nothing for the lifting point, and that the *horizontal* components, $T \cos\theta = 3\,540\ \mathrm{N}$ and $8\,940\ \mathrm{N}$ in the two cases, squeeze the generator's lifting lugs inwards — a load the lugs must be designed for and which is easy to forget because it does not appear in the total lifted weight. Rigging practice keeps the sling angle above about $60^\circ$ to the horizontal, or uses a spreader beam that puts the legs vertical.
 :::
 :::
 

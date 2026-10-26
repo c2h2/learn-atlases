@@ -44,12 +44,12 @@ against a displacement of only $12 - 3 = 9\ \mathrm{m}$.
 
 *Check.* At $t = 1$, $a = - 6\ \mathrm{m / s^{2}} < 0$ and $v$ changes from positive to negative — a maximum of $s$, consistent. At $t = 2$, $a = + 6$ and $v$ changes from negative to positive — a minimum. $\checkmark$
 
-*Sanity.* Distance and displacement differ by $22$ per cent here, and in a reciprocating machine they differ by a factor of two or more: a piston travels $4$ times the stroke per revolution while its displacement over a revolution is zero. Whenever a problem asks for distance rather than displacement, the first thing to do is solve $v = 0$ and check whether the answer lies inside the time interval.
+*Sanity.* Distance and displacement differ by $22$ per cent here, and in a reciprocating machine they differ by a factor of two or more: a piston travels twice the stroke (four crank radii) per revolution while its displacement over a revolution is zero. Whenever a problem asks for distance rather than displacement, the first thing to do is solve $v = 0$ and check whether the answer lies inside the time interval.
 :::
 :::
 
 ::: example Acceleration as a function of position {#ex-a-of-s}
-A slider enters a oil damper at $300\ \mathrm{m / s}$ and decelerates at $a = - k v^{2}$ with $k = 0.005\ \mathrm{m^{-1}}$. Find the speed after $200\ \mathrm{m}$ and the time taken to reach it.
+A slider enters an oil damper at $300\ \mathrm{m / s}$ and decelerates at $a = - k v^{2}$ with $k = 0.005\ \mathrm{m^{-1}}$. Find the speed after $200\ \mathrm{m}$ and the time taken to reach it.
 ::: solution
 Use $a = v \, \mathrm{d} v / \mathrm{d} s$:
 $$
@@ -86,7 +86,7 @@ f: 2*x^3-9*x^2+12*x+3
 x: 0, 3
 y: 0, 13
 labels: \text{position } s \text{ (m)}
-caption: Position of the particle of Example 1 against time. The curve rises to a local maximum of $8\ \mathrm{m}$ at $t = 1\ \mathrm{s}$, falls to $7\ \mathrm{m}$ at $t = 2\ \mathrm{s}$, and climbs to $12\ \mathrm{m}$ at $t = 3\ \mathrm{s}$; the two turning points are where the velocity changes sign, and the total path length of $11\ \mathrm{m}$ exceeds the $9\ \mathrm{m}$ displacement by the $2\ \mathrm{m}$ of the downward excursion. Reading $v = 0$ off a position-time graph as a maximum or minimum, rather than solving the velocity equation, is exactly how a machine's dead centres get found.
+caption: Position of the particle of the first example against time. The curve rises to a local maximum of $8\ \mathrm{m}$ at $t = 1\ \mathrm{s}$, falls to $7\ \mathrm{m}$ at $t = 2\ \mathrm{s}$, and climbs to $12\ \mathrm{m}$ at $t = 3\ \mathrm{s}$; the two turning points are where the velocity changes sign, and the total path length of $11\ \mathrm{m}$ exceeds the $9\ \mathrm{m}$ displacement by the $2\ \mathrm{m}$ of the downward excursion. Reading $v = 0$ off a position-time graph as a maximum or minimum, rather than solving the velocity equation, is exactly how a machine's dead centres get found.
 :::
 
 ## Curvilinear motion: three coordinate systems
@@ -145,7 +145,7 @@ which collects to the stated result. The Coriolis term $2 \dot{r} \dot{\theta}$ 
 A collar slides along a rod whose angle is $\theta = 0.5 t^{2}\ \mathrm{rad}$ and whose radial position is $r = 0.4 - 0.1 t^{2}\ \mathrm{m}$. Find the acceleration at $t = 1\ \mathrm{s}$.
 ::: solution
 $$
-r = 0.3, \quad \dot{r} = - 0.2 t = - 0.2, \quad \ddot{r} = - 0.2\ \mathrm{m},
+r = 0.3\ \mathrm{m}, \quad \dot{r} = - 0.2 t = - 0.2\ \mathrm{m / s}, \quad \ddot{r} = - 0.2\ \mathrm{m / s^{2}},
 $$
 $$
 \theta = 0.5, \quad \dot{\theta} = t = 1.0, \quad \ddot{\theta} = 1.0\ \mathrm{rad / s^{2}} .
@@ -204,15 +204,15 @@ $$
 a = - 0.06 \times 314.2^{2} \times 1.25 = - 7400\ \mathrm{m / s^{2}} = - 755 \ g .
 $$
 **At $90^{\circ}$**, $a = - 0.06 \times 98\,696 \times \left( 0 - 0.25 \right) = + 1480\ \mathrm{m / s^{2}}$.
-**Velocity**, $v \approx - r \omega \left( \sin \theta + \tfrac{1}{2} \lambda \sin 2 \theta \right)$, peaks near $\theta = 75^{\circ}$:
+**Velocity**, $v \approx - r \omega \left( \sin \theta + \tfrac{1}{2} \lambda \sin 2 \theta \right)$, peaks near $\theta = 77^{\circ}$:
 $$
-v_{\max} = 0.06 \times 314.2 \times \left( 0.966 + 0.125 \times 0.5 \right) = 19.4\ \mathrm{m / s}.
+v_{\max} = 0.06 \times 314.2 \times \left( 0.974 + 0.125 \times 0.438 \right) = 19.4\ \mathrm{m / s}.
 $$
 **Mean piston speed**, over a stroke of $2 r = 120\ \mathrm{mm}$ at $50$ revolutions per second:
 $$
 \bar{v} = 2 \times 0.12 \times 50 = 12.0\ \mathrm{m / s}.
 $$
-*Sanity.* Three numbers every engine designer carries. The peak acceleration of $755 \ g$ occurs at top dead centre, where the piston velocity is **zero** — the connecting-rod big-end load is greatest exactly where the piston is momentarily still, which is why the wrist pin is loaded in both directions and why the second-order term $\lambda \cos 2 \theta$ is what makes a high-revving engine's rod load lopsided between the firing and the exhaust strokes. The mean piston speed of $12\ \mathrm{m / s}$ is the traditional engine-speed limit index, with $20$ to $25\ \mathrm{m / s}$ the practical ceiling for a production petrol engine, set not by the piston's strength but by the inertia forces, which scale as $r \omega^{2}$ and hence as the **square** of engine speed.
+*Sanity.* Three numbers every engine designer carries. The peak acceleration of $755 \ g$ occurs at top dead centre, where the piston velocity is **zero** — the connecting-rod big-end load is greatest exactly where the piston is momentarily still, which is why the wrist pin is loaded in both directions and why the second-order term $\lambda \cos 2 \theta$ is what makes a high-revving engine's rod load lopsided between top and bottom dead centre, $r \omega^{2} \left( 1 + \lambda \right)$ against $r \omega^{2} \left( 1 - \lambda \right)$. The mean piston speed of $12\ \mathrm{m / s}$ is the traditional engine-speed limit index, with $20$ to $25\ \mathrm{m / s}$ the practical ceiling for a production petrol engine, set not by the piston's strength but by the inertia forces, which scale as $r \omega^{2}$ and hence as the **square** of engine speed.
 :::
 :::
 
@@ -242,9 +242,9 @@ $$
 $$
 v = 40 \sqrt{1 - e^{- 2 \times 9.81 \times 500 / 1600}} = 40 \sqrt{1 - 0.0022} = 39.96\ \mathrm{m / s}.
 $$
-*Check.* In $7.47\ \mathrm{s}$ a freely falling body would have fallen $\tfrac{1}{2} g t^{2} = 273\ \mathrm{m}$ and reached $73\ \mathrm{m / s}$; the drag has cost it $30$ per cent of the distance and $45$ per cent of the speed. $\checkmark$
+*Check.* In $7.47\ \mathrm{s}$ a freely falling body would have fallen $\tfrac{1}{2} g t^{2} = 273\ \mathrm{m}$ and reached $73\ \mathrm{m / s}$; the drag has cost it $30$ per cent of the distance and $48$ per cent of the speed. $\checkmark$
 
-*Sanity.* The hailstone is essentially at terminal speed by $200\ \mathrm{m}$, which is why large hail damages roofs but not aircraft cruising below cloud base, and why a cat dropped from a tall building survives: its terminal speed is about $60\ \mathrm{km / h}$, reached after $4$ or $5$ storeys, so anything higher is no worse. The general rule for quadratic drag is that a body loses most of its speed deficit within a distance of about $v_T^{2} / g$ and a time of about $v_T / g$ — the two scales that make this class of problem dimensionless.
+*Sanity.* The hailstone is essentially at terminal speed by $200\ \mathrm{m}$, and the same reasoning is why a cat falling from a tall building often survives: its terminal speed is about $100\ \mathrm{km / h}$, approached after six or seven storeys, so a higher fall is little worse. The general rule for quadratic drag is that a body loses most of its speed deficit within a distance of about $v_T^{2} / g$ and a time of about $v_T / g$ — the two scales that make this class of problem dimensionless.
 :::
 :::
 
@@ -261,7 +261,7 @@ a_n = \frac{v_\theta^{2}}{r} = \frac{9.872}{0.05} = 197\ \mathrm{m / s^{2}} = 20
 $$
 *Check.* The helix's curvature is $\kappa = r / \left( r^{2} + c^{2} \right)$ where $c = 0.02 / 2 \pi = 3.183 \times 10^{-3}\ \mathrm{m}$, giving $\rho = \left( 0.0025 + 1.013 \times 10^{-5} \right) / 0.05 = 0.0502\ \mathrm{m}$ and $a_n = v^{2} / \rho = 9.912 / 0.0502 = 197\ \mathrm{m / s^{2}}$. $\checkmark$
 
-*Sanity.* The normal acceleration of $20 \ g$ is what a recirculating ball-screw nut actually experiences, and it is why the return channel is generous, why the balls are steel or ceramic and not polymer, and why a ball screw's speed limit is set by the ball's centrifugal loading in the nut rather than by the screw's whizzing speed. Note also that the axial motion contributes almost nothing to the acceleration — $v_z$ is $6$ per cent of $v_\theta$ and $\dot{v}_z$ is zero — which is the general result for a helix of small lead: the motion is essentially a rotation with a slow translation superposed.
+*Sanity.* The normal acceleration of $20 \ g$ is what a recirculating ball-screw nut actually experiences, and it is why the return channel is generous, why the balls are steel or ceramic and not polymer, and why ball-screw catalogues limit the product of diameter and speed (the $DN$ value), which bounds this ball loading, as well as the screw's whirling speed. Note also that the axial motion contributes almost nothing to the acceleration — $v_z$ is $6$ per cent of $v_\theta$ and $\dot{v}_z$ is zero — which is the general result for a helix of small lead: the motion is essentially a rotation with a slow translation superposed.
 :::
 :::
 
@@ -287,7 +287,7 @@ v = \sqrt{g r \frac{\tan \theta + \mu}{1 - \mu \tan \theta}}
 $$
 *Check.* At $\theta = 0$ the banked formula reduces to $\sqrt{\mu g r}$, the unbanked answer. $\checkmark$
 
-*Sanity.* A $10^{\circ}$ bank raises the limit from $78$ to $93\ \mathrm{km / h}$, a $19$ per cent gain, and it does so without using any extra friction — the "design speed" of a highway curve is the speed at which **no** lateral friction is needed, which is why motorway curves are banked at the speed lorries travel at and not at the speed sports cars arrive at. Note also the denominator $1 - \mu \tan \theta$: as the bank steepens towards $\tan \theta = 1 / \mu = 1.25$ ($51^{\circ}$) the allowable speed goes to infinity, which is the physics of a wall of death and the reason a velodrome's $45^{\circ}$ banking lets a cyclist corner at $70\ \mathrm{km / h}$ on a $60\ \mathrm{m}$ radius with almost no side friction.
+*Sanity.* A $10^{\circ}$ bank raises the limit from $78$ to $93\ \mathrm{km / h}$, a $19$ per cent gain, and it does so without using any extra friction — the "design speed" of a highway curve is the speed at which **no** lateral friction is needed, which is why motorway curves are banked at the speed lorries travel at and not at the speed sports cars arrive at. Note also the denominator $1 - \mu \tan \theta$: as the bank steepens towards $\tan \theta = 1 / \mu = 1.25$ ($51^{\circ}$) the allowable speed goes to infinity, which is the physics of a wall of death; a velodrome bend banked at $45^{\circ}$ needs no side friction at all at $v = \sqrt{g r}$, about $56\ \mathrm{km / h}$ on a $25\ \mathrm{m}$ radius.
 :::
 :::
 
@@ -296,7 +296,7 @@ There is no "right" coordinate system, only ones that make the algebra small. Us
 :::
 
 ::: history
-The kinematics of motion was invented twice. Galileo's *Discorsi* of 1638 established the uniformly accelerated fall, the parabolic trajectory as the composition of a uniform horizontal motion and an accelerated vertical one, and — most importantly for this lesson — the idea that motion is described by quantities that can be measured independently of what causes it. Descartes supplied the coordinates in 1637 and the composition of velocities in 1644. Newton's *Principia* of 1687 gave the dynamics, and Euler in the 1750s separated the description of a rigid body's motion into a translation and a rotation, and introduced the space and body axes that make three-dimensional kinematics tractable. The **intrinsic** or normal–tangential formulation, in which the acceleration is written in terms of the path's curvature rather than of any coordinate system, is due to the French school — Servois and Binet around 1810, and then Cauchy and Bertrand, whose formula for the derivative of a moving trihedron of $1847$ is still the standard statement. The **Coriolis** term comes from Gaspard-Gustave Coriolis's 1835 paper on the work of moving machines, and its geophysical consequence — the deflection of winds, currents, long-range shells and river beds — was worked out by Laplace, Poisson and Foucault in the 1850s. The practical kinematics of machines, the velocity and acceleration diagrams of linkages, is a nineteenth-century engineering subject, formalised by Willis, Kennedy and Reuleaux between 1841 and 1875.
+The kinematics of motion was invented twice. Galileo's *Discorsi* of 1638 established the uniformly accelerated fall, the parabolic trajectory as the composition of a uniform horizontal motion and an accelerated vertical one, and — most importantly for this lesson — the idea that motion is described by quantities that can be measured independently of what causes it. Descartes supplied the coordinates in 1637. Newton's *Principia* of 1687 gave the dynamics, and Euler in the 1750s separated the description of a rigid body's motion into a translation and a rotation, and introduced the space and body axes that make three-dimensional kinematics tractable. The **intrinsic** or normal–tangential formulation, in which the acceleration is written in terms of the path's curvature rather than of any coordinate system, grew out of Huygens's and Newton's centripetal acceleration and Euler's treatment of curves, and took its modern form in the moving-trihedron formulas of Frenet ($1847$) and Serret ($1851$), which are still the standard statement. The **Coriolis** term comes from Gaspard-Gustave Coriolis's 1835 paper on the equations of relative motion, and its geophysical consequences — the deflection of winds, currents, long-range shells and river beds — were worked out over the following decades, by Poisson for projectiles in 1838, by Foucault with his pendulum in 1851 and by William Ferrel for the winds in 1856. The practical kinematics of machines, the velocity and acceleration diagrams of linkages, is a nineteenth-century engineering subject, formalised by Willis, Reuleaux and Kennedy between 1841 and the 1880s.
 :::
 
 ## Where this leads
@@ -395,7 +395,7 @@ h = \frac{v_0^{2} \sin^{2} \theta}{2 g} = \frac{400 \times 0.3290}{19.62} = 6.71
 T = \frac{2 v_0 \sin \theta}{g} = 2.34\ \mathrm{s}.
 $$
 The range is maximised at $\theta = 45^{\circ}$, the height at $\theta = 90^{\circ}$.
-*Sanity.* The $45^{\circ}$ answer holds only for a launch and landing at the same height and for no drag. With drag the optimum falls to $35$ to $40^{\circ}$ for a golf ball and to about $30^{\circ}$ for a bullet, and for a launch above the landing level it falls below $45^{\circ}$ even without drag, at $\theta = \tfrac{1}{2} \cos^{-1} \left( 1 / \left[ 1 + h / R_0 \right] \right)$. Any problem whose answer is exactly $45^{\circ}$ is a problem whose assumptions you should be checking.
+*Sanity.* The $45^{\circ}$ answer holds only for a launch and landing at the same height and for no drag. With drag the optimum generally falls below $45^{\circ}$, and for a launch a height $h$ above the landing level it falls below $45^{\circ}$ even without drag, to $\theta = \tfrac{1}{2} \cos^{-1} \left[ g h / \left( v_0^{2} + g h \right) \right]$. Any problem whose answer is exactly $45^{\circ}$ is a problem whose assumptions you should be checking.
 :::
 :::
 
@@ -419,7 +419,7 @@ $$
 $$
 P = F v = 214 \times 0.8 = 171\ \mathrm{W},
 $$
-although this peak occurs at the end of the acceleration ramp, at which point the velocity is $0.8\ \mathrm{m / s}$ and the acceleration is still $8.0\ \mathrm{m / s^{2}}$, so the two maxima do coincide for a trapezoidal profile.
+which occurs at the end of the acceleration ramp, where the velocity has reached $0.8\ \mathrm{m / s}$ while the acceleration is still $8.0\ \mathrm{m / s^{2}}$: for a trapezoidal profile the peak force and the peak velocity coincide.
 
 *Design comment.* Note that the acceleration force is $82$ per cent of the weight force, so the drive is sized by the duty cycle and not by the static load: a motor chosen for $118\ \mathrm{N}$ would stall on the ramp. Note also that the **deceleration** phase needs only $m \left( g - a \right) = 21.7\ \mathrm{N}$, so the guide sees a load reversal, and that if $a$ exceeded $g$ the assembly would be in free fall and the guide would have to react it in tension — which is why a vertical axis with a heavy head always has a counterbalance, a brake or a holding valve, and why a hoist's "overhauling load" is a standard safety item.
 :::

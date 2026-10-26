@@ -3,7 +3,7 @@ Fluid mechanics is what happens when you stop asking a body to be **rigid**. Sol
 The lesson before any equation is therefore a lesson about **numbers and their ranges**. A fluid's density, viscosity, surface tension and compressibility span orders of magnitude across the substances engineers actually pump, and the dimensionless groups built from them decide which terms in the equations of motion may be thrown away. Half of fluid mechanics is knowing which terms are small; this lesson supplies the quantities that make "small" a number.
 
 ::: warning Seven property errors that survive a commissioning test
-**Using the dynamic viscosity where the kinematic belongs.** The Reynolds number is $\rho V L / \mu = V L / \nu$, and a calculation that divides a velocity by a **dynamic** viscosity has produced units of $\mathrm{s / m^{2}}$ and an answer that changes when the fluid is changed. **Air and water have viscosities within a factor of fifty and kinematic viscosities within a factor of fifteen**, so the two errors give different answers in opposite directions. **Assuming viscosity falls with temperature because it does for liquids.** For a gas the opposite is true and the $T^{0.7}$ dependence is strong: air at $200\ {}^{\circ}\mathrm{C}$ is **$1.4$ times** as viscous as at $20\ {}^{\circ}\mathrm{C}$. A bearing or a turbine bladed-row calculation that uses the cold viscosity is wrong by $50\ \%$ in Reynolds number, and the friction coefficient follows it to the $- 1 / 4$ power. **Treating water as incompressible in a transient.** Water's bulk modulus is $2.2\ \mathrm{GPa}$, which is enormous for a liquid and **finite**: the speed of a pressure wave in restrained water is $1{,}400$ to $1{,}480\ \mathrm{m / s}$, and a valve closing in $0.1\ \mathrm{s}$ on a $300\ \mathrm{m}$ pipeline is **fast** by the Joukowsky criterion. Steady-flow water is incompressible; water in a pipe that has just had its valve shut is a $1{,}480\ \mathrm{m / s}$ acoustic column. **Confusing the no-slip condition with a boundary condition you may relax.** No slip is an **experimentally observed property of the fluid-wall interface** and holds for every ordinary liquid and gas at ordinary pressure. It fails only when the Knudsen number exceeds $10^{- 3}$ — a $1\ \mu\mathrm{m}$ gap in air at atmospheric pressure, or anything at all in a vacuum chamber — and a slip boundary applied "for convenience" in a $10\ \mathrm{mm}$ pipe is wrong by $0.001\ \%$ and in a $1\ \mu\mathrm{m}$ channel by a factor of two. **Reading a vapour pressure at the wrong temperature.** Water's vapour pressure at $20\ {}^{\circ}\mathrm{C}$ is $2.34\ \mathrm{kPa}$ and at $90\ {}^{\circ}\mathrm{C}$ it is $70.1\ \mathrm{kPa}$ — a factor of **thirty**. A pump's net positive suction head computed with the cold number on hot condensate over-states the margin by **$6.8\ \mathrm{m}$** and the pump cavitates in its first week. **Assuming a fluid's viscosity is a single number.** A paint, a drilling mud, a blood sample, a polymer melt and a chocolate compound are **shear-thinning** over two decades of viscosity; a cornflour suspension is **shear-thickening**; a wet clay and a toothpaste have a **yield stress**. A viscometer reading taken at one speed is a data point and not a property, and a pump sized from it can be wrong by a factor of ten. **Forgetting surface tension until it is the whole problem.** Surface tension is negligible for a $1\ \mathrm{m}$ barge and dominant for a $1\ \mathrm{mm}$ nozzle, a fuel injector's spray, a microfluidic chip and a wetted-wall column. The Bond number $\rho g L^{2} / \sigma$ crosses unity at a length of **$2.7\ \mathrm{mm}$ for water**, and every design whose smallest feature is below that is a surface-tension design wearing a pressure-driven one.
+**Using the dynamic viscosity where the kinematic belongs.** The Reynolds number is $\rho V L / \mu = V L / \nu$, and a calculation that divides a velocity by a **dynamic** viscosity has produced units of $\mathrm{s / m^{2}}$ and an answer that changes when the fluid is changed. **Air and water have viscosities within a factor of fifty and kinematic viscosities within a factor of fifteen**, so the two errors give different answers in opposite directions. **Assuming viscosity falls with temperature because it does for liquids.** For a gas the opposite is true and the $T^{0.7}$ dependence is strong: air at $200\ {}^{\circ}\mathrm{C}$ is **$1.4$ times** as viscous as at $20\ {}^{\circ}\mathrm{C}$. A bearing or a turbine bladed-row calculation that uses the cold viscosity is wrong by about $40\ \%$ in Reynolds number, and the friction coefficient follows it to the $- 1 / 4$ power. **Treating water as incompressible in a transient.** Water's bulk modulus is $2.2\ \mathrm{GPa}$, which is enormous for a liquid and **finite**: the speed of a pressure wave in restrained water is $1{,}400$ to $1{,}480\ \mathrm{m / s}$, and a valve closing in $0.1\ \mathrm{s}$ on a $300\ \mathrm{m}$ pipeline is **fast** by the Joukowsky criterion. Steady-flow water is incompressible; water in a pipe that has just had its valve shut is a $1{,}480\ \mathrm{m / s}$ acoustic column. **Confusing the no-slip condition with a boundary condition you may relax.** No slip is an **experimentally observed property of the fluid-wall interface** and holds for every ordinary liquid and gas at ordinary pressure. It fails only when the Knudsen number exceeds $10^{- 3}$ — a $1\ \mu\mathrm{m}$ gap in air at atmospheric pressure, or anything at all in a vacuum chamber — and a no-slip calculation that is accurate to about $0.001\ \%$ in a $10\ \mathrm{mm}$ pipe under-predicts the flow through a $1\ \mu\mathrm{m}$ channel by roughly $40\ \%$. **Reading a vapour pressure at the wrong temperature.** Water's vapour pressure at $20\ {}^{\circ}\mathrm{C}$ is $2.34\ \mathrm{kPa}$ and at $90\ {}^{\circ}\mathrm{C}$ it is $70.1\ \mathrm{kPa}$ — a factor of **thirty**. A pump's net positive suction head computed with the cold number on hot condensate over-states the margin by **$7.2\ \mathrm{m}$** and the pump cavitates in its first week. **Assuming a fluid's viscosity is a single number.** A paint, a drilling mud, a blood sample, a polymer melt and a chocolate compound are **shear-thinning** over two decades of viscosity; a cornflour suspension is **shear-thickening**; a wet clay and a toothpaste have a **yield stress**. A viscometer reading taken at one speed is a data point and not a property, and a pump sized from it can be wrong by a factor of ten. **Forgetting surface tension until it is the whole problem.** Surface tension is negligible for a $1\ \mathrm{m}$ barge and dominant for a $1\ \mathrm{mm}$ nozzle, a fuel injector's spray, a microfluidic chip and a wetted-wall column. The Bond number $\rho g L^{2} / \sigma$ crosses unity at a length of **$2.7\ \mathrm{mm}$ for water**, and every design whose smallest feature is below that is a surface-tension design wearing a pressure-driven one.
 :::
 
 ## Density, pressure and the continuum
@@ -23,12 +23,12 @@ $$
 \text{Helium} & 0.166 & 0.00017 & & \text{SAE 30 oil} & 891 & 0.891 \\
 \text{Carbon dioxide} & 1.831 & 0.0018 & & \text{Mercury} & 13{,}546 & 13.55 \\
 \text{Water, } 4\ {}^{\circ}\mathrm{C} & 1{,}000.0 & 1.0000 & & \text{Glycerin} & 1{,}261 & 1.261 \\
-\text{Water, } 20\ {}^{\circ}\mathrm{C} & 998.2 & 0.9982 & & \text{Seawater, } 35\ \% \text{saline} & 1{,}025 & 1.025 \\
+\text{Water, } 20\ {}^{\circ}\mathrm{C} & 998.2 & 0.9982 & & \text{Seawater, } 35\ \mathrm{g / kg} & 1{,}025 & 1.025 \\
 \text{Water, } 100\ {}^{\circ}\mathrm{C} & 958.4 & 0.9584 & & \text{Liquid nitrogen, } - 196\ {}^{\circ}\mathrm{C} & 807 & 0.807 \\
 \text{Ice, } 0\ {}^{\circ}\mathrm{C} & 916.7 & 0.917 & & \text{Gallium (liquid)} & 6{,}095 & 6.10
 \end{array}
 $$
-**The number that floats ships and bursts pipes.** Water is **densest at $3.98\ {}^{\circ}\mathrm{C}$** and expands on cooling below that, so ice floats at $8.3\ \%$ freeboard and a lake freezes from the top down. **The same anomaly, in a full and sealed pipe left out in a frost, generates the $200\ \mathrm{MPa}$ that splits a copper joint** — the expansion on freezing is $9\ \%$ and water's bulk modulus is $2.2\ \mathrm{GPa}$, so $9\ \%$ of restraint is $200\ \mathrm{MPa}$, which is eight times the yield of annealed copper.
+**The number that floats ships and bursts pipes.** Water is **densest at $3.98\ {}^{\circ}\mathrm{C}$** and expands on cooling below that, so ice floats with about $8\ \%$ of its volume above fresh water and a lake freezes from the top down. **The same anomaly, in a full and sealed pipe left out in a frost, generates the $200\ \mathrm{MPa}$ that splits a copper joint** — the expansion on freezing is $9\ \%$ and water's bulk modulus is $2.2\ \mathrm{GPa}$, so $9\ \%$ of restraint is $200\ \mathrm{MPa}$, which is eight times the yield of annealed copper.
 **Pressure is a scalar and stress is not.** At a point in a fluid **at rest** the normal stress is the same on every plane — this is the whole of Pascal's law and it is a consequence of there being no shear:
 $$
 \sum M_{\text{about a point}} \text{ on a fluid element} \ \Rightarrow \ p_x = p_y = p_z = p
@@ -38,7 +38,7 @@ $$
 p_{\mathrm{abs}} = p_{\mathrm{atm}} + p_{\mathrm{gauge}}, \qquad
 p_{\mathrm{vac}} = p_{\mathrm{atm}} - p_{\mathrm{abs}}
 $$
-**The number that ruins more manometers than any other error.** A Bourdon gauge reads **gauge**; a barometer reads **absolute**; a McLeod or Pirani vacuum gauge reads **absolute**; and a $- 0.09\ \mathrm{MPa}$ gauge reading on a condenser is $0.011\ \mathrm{MPa}$ absolute, at which the water's saturation temperature is $49\ {}^{\circ}\mathrm{C}$ and not $100\ {}^{\circ}\mathrm{C}$.
+**The number that ruins more manometers than any other error.** A Bourdon gauge reads **gauge**; a barometer reads **absolute**; a McLeod or Pirani vacuum gauge reads **absolute**; and a $- 0.09\ \mathrm{MPa}$ gauge reading on a condenser is $0.011\ \mathrm{MPa}$ absolute, at which the water's saturation temperature is $48\ {}^{\circ}\mathrm{C}$ and not $100\ {}^{\circ}\mathrm{C}$.
 :::
 
 ::: definition The continuum and the Knudsen number {#def-continuum}
@@ -58,21 +58,22 @@ $$
 **The evaluation for air.** At $20\ {}^{\circ}\mathrm{C}$ and $101.325\ \mathrm{kPa}$ the mean free path is
 $$
 \lambda = \frac{1.815 \times 10^{- 5}}{101{,}325} \sqrt{\frac{\pi \times 287.05 \times 293.15}{2}}
-= 1.792 \times 10^{- 7} \times 204.6 = 6.67 \times 10^{- 6}\ \mathrm{m} = 66.7\ \mathrm{nm}
+= 1.791 \times 10^{- 10} \times 363.6 = 6.51 \times 10^{- 8}\ \mathrm{m} = 65\ \mathrm{nm}
 $$
 **The length scales this implies.**
 $$
 \begin{array}{l c c}
 L & \mathrm{Kn} & \text{Regime} \\
-1\ \mathrm{m} & 6.7 \times 10^{- 6} & \text{continuum} \\
-1\ \mathrm{mm} & 6.7 \times 10^{- 3} & \text{continuum, marginal} \\
-100\ \mu\mathrm{m} & 0.067 & \text{slip} \\
-10\ \mu\mathrm{m} & 0.67 & \text{transition} \\
-1\ \mu\mathrm{m} & 6.7 & \text{free molecular} \\
-1\ \mathrm{mm}\ \text{at}\ 10^{- 3}\ \mathrm{kPa}\ \left( \text{vacuum chamber} \right) & 6.7 & \text{free molecular}
+1\ \mathrm{m} & 6.5 \times 10^{- 8} & \text{continuum} \\
+1\ \mathrm{mm} & 6.5 \times 10^{- 5} & \text{continuum} \\
+100\ \mu\mathrm{m} & 6.5 \times 10^{- 4} & \text{continuum, marginal} \\
+10\ \mu\mathrm{m} & 0.0065 & \text{slip} \\
+1\ \mu\mathrm{m} & 0.065 & \text{slip} \\
+100\ \mathrm{nm} & 0.65 & \text{transition} \\
+1\ \mathrm{mm}\ \text{at}\ 10^{- 3}\ \mathrm{kPa}\ \left( \text{vacuum chamber} \right) & 6.6 & \text{transition}
 \end{array}
 $$
-**The number that decides whether a hard-disk read head's $12\ \mathrm{nm}$ flying height is a fluid-mechanics problem.** It is not — $\mathrm{Kn} = 0.56$ there, and the Reynolds equation must be corrected by a **second-order slip** law whose coefficient is itself an open research question. **The same arithmetic says a $50\ \mathrm{nm}$ MEMS switch in air is not a fluid at all.**
+**The number that decides whether a hard-disk read head's $12\ \mathrm{nm}$ flying height is an ordinary fluid-mechanics problem.** It is not — $\mathrm{Kn} = 65 / 12 = 5.4$ there, in the transition regime, and the Reynolds lubrication equation must be replaced by a rarefied-gas form derived from the Boltzmann equation. **The same arithmetic ($\mathrm{Kn} = 1.3$) says the air in a $50\ \mathrm{nm}$ MEMS gap is not a continuum.**
 **The density check.** The continuum also requires that the averaging volume contain enough molecules: at $101\ \mathrm{kPa}$ and $293\ \mathrm{K}$, $1\ \mu\mathrm{m}^{3}$ of air holds
 $$
 n = \frac{p V}{k_B T} = \frac{101{,}325 \times 10^{- 18}}{1.381 \times 10^{- 23} \times 293.15} = 2.5 \times 10^{7}\ \text{molecules}
@@ -89,14 +90,14 @@ $$
 **The bulk moduli, and the speed of sound they imply.**
 $$
 \begin{array}{l c c c}
-\text{Fluid} & E_v\ (\mathrm{GPa}) & \beta\ (10^{- 9}\ \mathrm{Pa^{- 1}}) & c\ (\mathrm{m / s}) \\
+\text{Fluid} & E_v\ (\mathrm{GPa}) & \beta\ (10^{- 12}\ \mathrm{Pa^{- 1}}) & c\ (\mathrm{m / s}) \\
 \text{Water, } 20\ {}^{\circ}\mathrm{C} & 2.18 & 458 & 1{,}481 \\
 \text{Water, } 80\ {}^{\circ}\mathrm{C} & 2.35 & 426 & 1{,}555 \\
 \text{Seawater, } 20\ {}^{\circ}\mathrm{C} & 2.34 & 427 & 1{,}512 \\
 \text{Mercury} & 28.5 & 35 & 1{,}451 \\
 \text{SAE 30 oil, } 20\ {}^{\circ}\mathrm{C} & 1.40 & 714 & 1{,}254 \\
-\text{Glycerin} & 4.47 & 224 & 1{,}935 \\
-\text{Ethanol} & 0.90 & 1{,}111 & 1{,}163
+\text{Glycerin} & 4.47 & 224 & 1{,}883 \\
+\text{Ethanol} & 1.06 & 943 & 1{,}159
 \end{array}
 $$
 **The number that makes water "incompressible" and simultaneously the number that bursts a pipe.** A $1\ \mathrm{m^{3}}$ body of water under $10\ \mathrm{MPa}$ ($100\ \mathrm{bar}$) has contracted by
@@ -105,15 +106,15 @@ $$
 $$
 **half a per cent at a hundred bar**, which is why a hydraulic system's response is soft at low pressure and why a $200\ \mathrm{bar}$ system's fluid **compressibility stores enough energy to matter** — a $10\ \mathrm{litre}$ accumulator volume at $200\ \mathrm{bar}$ holds
 $$
-U = \frac{\left( \Delta p \right)^{2}}{2 E_v} V = \frac{4 \times 10^{10}}{4.36 \times 10^{9}} \times 0.01 = 92\ \mathrm{J}
+U = \frac{\left( \Delta p \right)^{2}}{2 E_v} V = \frac{4 \times 10^{14}}{4.36 \times 10^{9}} \times 0.01 = 917\ \mathrm{J}
 $$
-which is a $9\ \mathrm{kg}$ mass falling one metre, and it is the energy that breaks a hose fitting.
+which is a $94\ \mathrm{kg}$ mass falling one metre, and it is the energy that breaks a hose fitting.
 **The entrained-air effect, which is the largest single correction in hydraulic practice.** Air at $1\ \mathrm{bar}$ has a bulk modulus of $0.1\ \mathrm{MPa}$ isothermally, and $1\ \%$ by volume of air bubbles in oil reduces the mixture's modulus to
 $$
 \frac{1}{E_m} = \frac{0.99}{1.40 \times 10^{9}} + \frac{0.01}{0.101 \times 10^{6}}
-\quad \Rightarrow \quad E_m = 0.100\ \mathrm{GPa}
+\quad \Rightarrow \quad E_m = 0.010\ \mathrm{GPa}
 $$
-**a factor of fourteen reduction**, which is why a hydraulic press that has swallowed air is spongy, why its servo valves oscillate, and why every hydraulic manual has a bleeding procedure. **$0.5\ \%$ entrained air halves the stiffness.**
+**a factor of a hundred and forty reduction**, which is why a hydraulic press that has swallowed air is spongy, why its servo valves oscillate, and why every hydraulic manual has a bleeding procedure. **At this pressure as little as $0.007\ \%$ of free air halves the stiffness.**
 **The water hammer that follows.** A valve closing faster than $2 L / c$ produces the **Joukowsky** pressure rise
 $$
 \Delta p = \rho c \, \Delta V
@@ -122,7 +123,7 @@ For water at $2\ \mathrm{m / s}$ in a steel pipe, $\Delta p = 998 \times 1{,}481
 $$
 c^{\prime} = \frac{c}{\sqrt{1 + \dfrac{K D}{E t}}}
 $$
-For a $200\ \mathrm{mm}$ diameter, $6\ \mathrm{mm}$ wall ductile-iron main ($E = 110\ \mathrm{GPa}$) this is $c^{\prime} = 1{,}481 / \sqrt{1 + 2.18 \times 200 / \left( 110 \times 6 \right)} = 1{,}481 / 1.26 = 1{,}175\ \mathrm{m / s}$, and for a $200\ \mathrm{mm}$ PVC main it is **$420\ \mathrm{m / s}$**. **The plastic pipe is safer by a factor of three and the calculation that uses the free-water value is wrong by that factor.**
+For a $200\ \mathrm{mm}$ diameter, $6\ \mathrm{mm}$ wall ductile-iron main ($E = 110\ \mathrm{GPa}$) this is $c^{\prime} = 1{,}481 / \sqrt{1 + 2.18 \times 200 / \left( 110 \times 6 \right)} = 1{,}481 / 1.29 = 1{,}149\ \mathrm{m / s}$, and for a $200\ \mathrm{mm}$ PVC main it is **$420\ \mathrm{m / s}$**. **The plastic pipe is safer by a factor of three and the calculation that uses the free-water value is wrong by that factor.**
 :::
 
 ::: widget plot
@@ -130,7 +131,7 @@ f: 1.481/sqrt(1+2.18*50/(x*6)); 1.481/sqrt(1+2.18*200/(x*6)); 1.481/sqrt(1+2.18*
 x: 1, 300
 y: 0.15, 1.6
 labels: D/t = 8; D/t = 33; D/t = 83
-caption: The pressure-wave speed in metres per second divided by $1{,}000$, for water in a thin-walled pipe of diameter-to-thickness ratio $D / t$ as marked, against the pipe material's elastic modulus $E$ in gigapascals. On the middle curve the wave speed falls from $173\ \mathrm{m / s}$ at $E = 1\ \mathrm{GPa}$ (polyethylene) through $515\ \mathrm{m / s}$ at $10\ \mathrm{GPa}$ and $1{,}127\ \mathrm{m / s}$ at $100\ \mathrm{GPa}$ to $1{,}268\ \mathrm{m / s}$ at $200\ \mathrm{GPa}$ (steel), so **three quarters of the total drop happens in the first decade of modulus**. **The practical consequence is that a plastic distribution main is protected from water hammer by its own flexibility and a steel one is not**, and that the Joukowsky pressure rise $\rho c^{\prime} \Delta V$ must be computed with the **pipe's** wave speed and never with the $1{,}481\ \mathrm{m / s}$ of free water.
+caption: The pressure-wave speed in metres per second divided by $1{,}000$, for water in a thin-walled pipe of diameter-to-thickness ratio $D / t$ as marked, against the pipe material's elastic modulus $E$ in gigapascals. On the middle curve the wave speed rises from $173\ \mathrm{m / s}$ at $E = 1\ \mathrm{GPa}$ (polyethylene) through $515\ \mathrm{m / s}$ at $10\ \mathrm{GPa}$ and $1{,}127\ \mathrm{m / s}$ at $100\ \mathrm{GPa}$ to $1{,}268\ \mathrm{m / s}$ at $200\ \mathrm{GPa}$ (steel), so a low-modulus pipe carries a far slower pressure wave. **The practical consequence is that a plastic distribution main is protected from water hammer by its own flexibility and a steel one is not**, and that the Joukowsky pressure rise $\rho c^{\prime} \Delta V$ must be computed with the **pipe's** wave speed and never with the $1{,}481\ \mathrm{m / s}$ of free water.
 :::
 
 ## Viscosity
@@ -145,14 +146,14 @@ $$
 $$
 \begin{array}{l c c l c c}
 \text{Fluid} & \mu\ (\mathrm{Pa \cdot s}) & \nu\ (\mathrm{m^{2} / s}) & & \text{Fluid} & \mu & \nu \\
-\text{Hydrogen} & 8.8 \times 10^{- 6} & 5.3 \times 10^{- 5} & & \text{Water, } 20\ {}^{\circ}\mathrm{C} & 1.002 \times 10^{- 3} & 1.004 \times 10^{- 6} \\
-\text{Air} & 1.815 \times 10^{- 5} & 1.509 \times 10^{- 5} & & \text{Water, } 80\ {}^{\circ}\mathrm{C} & 3.55 \times 10^{- 4} & 3.72 \times 10^{- 7} \\
+\text{Hydrogen} & 8.8 \times 10^{- 6} & 1.05 \times 10^{- 4} & & \text{Water, } 20\ {}^{\circ}\mathrm{C} & 1.002 \times 10^{- 3} & 1.004 \times 10^{- 6} \\
+\text{Air} & 1.815 \times 10^{- 5} & 1.509 \times 10^{- 5} & & \text{Water, } 80\ {}^{\circ}\mathrm{C} & 3.55 \times 10^{- 4} & 3.65 \times 10^{- 7} \\
 \text{Carbon dioxide} & 1.48 \times 10^{- 5} & 8.1 \times 10^{- 6} & & \text{Mercury} & 1.55 \times 10^{- 3} & 1.15 \times 10^{- 7} \\
 \text{Glycerin} & 1.41 & 1.12 \times 10^{- 3} & & \text{SAE 10W oil} & 0.085 & 9.6 \times 10^{- 5} \\
 \text{Honey} & 10 & 7 \times 10^{- 3} & & \text{SAE 50 oil} & 0.54 & 6.1 \times 10^{- 4}
 \end{array}
 $$
-**The two order-of-magnitude statements worth memorising.** Air's **dynamic** viscosity is **fifty-five times smaller** than water's, but its **kinematic** viscosity is **fifteen times larger**, because its density is a thousand times smaller. **A soap film and a ship's wake are governed by the same dimensionless number and opposite intuitions.**
+**The two order-of-magnitude statements worth memorising.** Air's **dynamic** viscosity is **fifty-five times smaller** than water's, but its **kinematic** viscosity is **fifteen times larger**, because its density is a thousand times smaller.
 **The temperature dependence, and the reason the two signs differ.** For a **gas**, viscosity is momentum transport across a molecular mean free path and rises with the molecular speed:
 $$
 \frac{\mu}{\mu_0} = \left( \frac{T}{T_0} \right)^{3 / 2} \frac{T_0 + S}{T + S}
@@ -161,7 +162,7 @@ $$
 **The evaluation for air at $200\ {}^{\circ}\mathrm{C}$.**
 $$
 \mu = 1.716 \times 10^{- 5} \times \left( \frac{473.15}{273.15} \right)^{1.5} \times \frac{383.55}{583.55}
-= 1.716 \times 10^{- 5} \times 1.861 \times 0.6573 = 2.10 \times 10^{- 5}\ \mathrm{Pa \cdot s}
+= 1.716 \times 10^{- 5} \times 2.280 \times 0.6573 = 2.57 \times 10^{- 5}\ \mathrm{Pa \cdot s}
 $$
 **a $42\ \%$ increase over the $20\ {}^{\circ}\mathrm{C}$ value of $1.815 \times 10^{- 5}$**, and the power-law approximation $\mu / \mu_0 = \left( T / T_0 \right)^{0.7}$ gives $\left( 473 / 293 \right)^{0.7} = 1.40$ against Sutherland's $1.42$ — **within $1.5\ \%$ over a $180\ \mathrm{K}$ range**, which is why the power law appears in every preliminary design and Sutherland in every property code.
 For a **liquid**, viscosity is the rate at which molecules jump out of a potential well and falls as the Arrhenius factor:
@@ -171,10 +172,10 @@ B = \frac{E_a}{R}
 $$
 **The evaluation for water.** With $\mu \left( 20 \right) = 1.002 \times 10^{- 3}$ and $\mu \left( 80 \right) = 3.55 \times 10^{- 4}$:
 $$
-B = \frac{\ln \left( 1.002 / 0.355 \right)}{1 / 293.15 - 1 / 353.15} = \frac{1.040}{5.79 \times 10^{- 4}} = 1{,}796\ \mathrm{K}, \qquad E_a = 14.9\ \mathrm{kJ / mol}
+B = \frac{\ln \left( 1.002 / 0.355 \right)}{1 / 293.15 - 1 / 353.15} = \frac{1.038}{5.80 \times 10^{- 4}} = 1{,}790\ \mathrm{K}, \qquad E_a = 14.9\ \mathrm{kJ / mol}
 $$
-**The number that sizes a lubrication system.** Water's viscosity **halves every $50\ \mathrm{K}$** between $20$ and $80\ {}^{\circ}\mathrm{C}$; SAE 40 engine oil's falls by a factor of **eight** between $20$ and $100\ {}^{\circ}\mathrm{C}$, which is why a cold morning start wears more than an hour at cruising speed and why the **viscosity index** of an oil — the number that says how flat its curve is — is on every drum.
-**The pressure correction.** For a liquid, $\mu$ roughly **doubles every $10$ to $20\ \mathrm{MPa}$**, and a $350\ \mathrm{bar}$ hydraulic system's oil is **$25\ \%$ more viscous** at the pump than at the tank. For a gas the pressure dependence is negligible below $10\ \mathrm{bar}$, because $\mu = \tfrac{1}{3} \rho \bar{c} \lambda$ has $\rho \lambda$ independent of pressure.
+**The number that sizes a lubrication system.** Water's viscosity **halves roughly every $40\ \mathrm{K}$** between $20$ and $80\ {}^{\circ}\mathrm{C}$; SAE 40 engine oil's falls by a factor of about **thirty-five** between $20$ and $100\ {}^{\circ}\mathrm{C}$, which is why a cold morning start wears more than an hour at cruising speed and why the **viscosity index** of an oil — the number that says how flat its curve is — is on every drum.
+**The pressure correction.** For a mineral oil, $\mu$ roughly **doubles every $30$ to $40\ \mathrm{MPa}$** (a Barus pressure-viscosity coefficient of about $2 \times 10^{- 8}\ \mathrm{Pa^{- 1}}$), so a $350\ \mathrm{bar}$ hydraulic system's oil is **about twice as viscous** at the pump outlet as in the tank. For a gas the pressure dependence is negligible below $10\ \mathrm{bar}$, because $\mu = \tfrac{1}{3} \rho \bar{c} \lambda$ has $\rho \lambda$ independent of pressure.
 :::
 
 ::: definition The no-slip condition and a viscometer {#def-viscometer}
@@ -190,15 +191,15 @@ $$
 **The evaluation for a Couette viscometer.** $R_i = 20\ \mathrm{mm}$, $R_o = 21\ \mathrm{mm}$, $L = 60\ \mathrm{mm}$, $\Omega = 10\ \mathrm{rad / s}$, oil $\mu = 0.1\ \mathrm{Pa \cdot s}$:
 $$
 T = \frac{4 \pi \times 0.1 \times 10 \times 4 \times 10^{- 4} \times 4.41 \times 10^{- 4} \times 0.06}{4.41 \times 10^{- 4} - 4 \times 10^{- 4}}
-= \frac{1.332 \times 10^{- 6}}{4.1 \times 10^{- 5}} = 0.0325\ \mathrm{N \cdot m}
+= \frac{1.330 \times 10^{- 7}}{4.1 \times 10^{- 5}} = 3.24 \times 10^{- 3}\ \mathrm{N \cdot m}
 $$
-**a $33\ \mathrm{mN \cdot m}$ torque**, which is measurable to $1\ \%$ with a modest transducer — and the reason the geometry's gap must be **small**: at a $1\ \mathrm{mm}$ gap the curvature correction is $0.5\ \%$, and at a $10\ \mathrm{mm}$ gap on a $20\ \mathrm{mm}$ bob it is $25\ \%$ and the simple formula is wrong.
-**The end correction that ruins careless work.** The bottom of the bob drags on the fluid below it, contributing a torque of order $\mu \Omega R_i^{4} / h_b$ which for the geometry above with a $1\ \mathrm{mm}$ bottom gap is $0.026\ \mathrm{N \cdot m}$ — **$80\ \%$ of the signal**. Every real Couette instrument either **guards** the end with a co-rotating plate or applies a **bottom-end** correction determined from a calibration fluid of known viscosity, and a home-built one that does neither measures the bottom gap and not the fluid.
+**a $3.2\ \mathrm{mN \cdot m}$ torque**, which is measurable to $1\ \%$ with a modest transducer — and the geometry's gap must be **small** so that the shear rate is nearly uniform: across a $1\ \mathrm{mm}$ gap on a $20\ \mathrm{mm}$ bob it varies by $10\ \%$ (the ratio $R_o^{2} / R_i^{2}$), and across a $10\ \mathrm{mm}$ gap by a factor of $2.25$, which makes a non-Newtonian reading ambiguous.
+**The end correction that ruins careless work.** The bottom of the bob drags on the fluid below it, contributing a torque of order $\mu \Omega R_i^{4} / h_b$ which for the geometry above with a $1\ \mathrm{mm}$ bottom gap is $1.6 \times 10^{- 4}\ \mathrm{N \cdot m}$ ($\pi / 2$ times that, $2.5 \times 10^{- 4}$, for a flat disc) — **$5$ to $8\ \%$ of the signal**. Every real Couette instrument either **guards** the end with a co-rotating plate or applies a **bottom-end** correction determined from a calibration fluid of known viscosity, and a home-built one that does neither is in error by that much.
 **The Reynolds number of the measurement itself.** A rotational viscometer is only valid while the flow in the gap is laminar, which for the geometry above at $\Omega = 10\ \mathrm{rad / s}$ gives
 $$
 \mathrm{Re} = \frac{\rho \Omega R_i \left( R_o - R_i \right)}{\mu} = \frac{891 \times 10 \times 0.02 \times 0.001}{0.1} = 1.78
 $$
-comfortably laminar; at $\Omega = 1{,}000\ \mathrm{rad / s}$ it is $178$ and the Taylor vortices appear at $\mathrm{Re} \approx 41 \sqrt{\left( R_o + R_i \right) / \left( R_o - R_i \right)} \approx 550$, at which the torque rises by $50\ \%$ and the instrument reads a viscosity the fluid does not have.
+comfortably laminar; at $\Omega = 1{,}000\ \mathrm{rad / s}$ it is $178$, just below the onset of Taylor vortices at $\mathrm{Re} \approx 41.3 \sqrt{R_i / \left( R_o - R_i \right)} \approx 185$, beyond which the torque rises and the instrument reads a viscosity the fluid does not have.
 :::
 
 ::: definition Non-Newtonian behaviour {#def-nonnewton}
@@ -218,25 +219,25 @@ $$
 $$
 \mu_{\mathrm{app}} = K \dot{\gamma}^{\,n - 1} = 5\, \dot{\gamma}^{- 0.6}
 = \begin{cases}
-25.1\ \mathrm{Pa \cdot s} & \dot{\gamma} = 0.01\ \mathrm{s^{- 1}} \ \text{(sagging on the wall)} \\
-1.99\ \mathrm{Pa \cdot s} & \dot{\gamma} = 100\ \mathrm{s^{- 1}} \ \text{(brushing)} \\
-0.079\ \mathrm{Pa \cdot s} & \dot{\gamma} = 10^{4}\ \mathrm{s^{- 1}} \ \text{(spraying)}
+79.2\ \mathrm{Pa \cdot s} & \dot{\gamma} = 0.01\ \mathrm{s^{- 1}} \ \text{(sagging on the wall)} \\
+0.315\ \mathrm{Pa \cdot s} & \dot{\gamma} = 100\ \mathrm{s^{- 1}} \ \text{(brushing)} \\
+0.0199\ \mathrm{Pa \cdot s} & \dot{\gamma} = 10^{4}\ \mathrm{s^{- 1}} \ \text{(spraying)}
 \end{cases}
 $$
-**a factor of $320$ between the pot and the wall**, and that factor **is the product specification**: a paint must be thin enough to atomise at $10^{4}\ \mathrm{s^{- 1}}$ and thick enough not to sag at $10^{- 2}\ \mathrm{s^{- 1}}$, and the entire art of paint formulation is a large $n$-$1$ with the right $K$.
+**a factor of about $4{,}000$ between the spray gun and the wall**, and that factor **is the product specification**: a paint must be thin enough to atomise at $10^{4}\ \mathrm{s^{- 1}}$ and thick enough not to sag at $10^{- 2}\ \mathrm{s^{- 1}}$, and paint formulation is largely the choice of a strongly shear-thinning $n$ with the right $K$.
 **The yield stress, and the number that decides whether a tank will drain.** A Bingham fluid in a pipe will **not flow at all** unless the wall shear exceeds the yield stress, which requires a pressure gradient
 $$
 \frac{\Delta p}{L} > \frac{2 \tau_y}{R}
 $$
-For toothpaste ($\tau_y \approx 50\ \mathrm{Pa}$) in a $5\ \mathrm{mm}$ tube the threshold is $20\ \mathrm{kPa / m}$; for a **kaolin sludge** ($\tau_y \approx 30\ \mathrm{Pa}$) in a $100\ \mathrm{mm}$ drain it is $600\ \mathrm{Pa / m}$, and a drain laid at a gradient flatter than that **holds its content solid forever** and must be jetted. **The most common non-Newtonian design failure is a drain that works when new and silts up in a year because the yield stress was ignored.**
+For toothpaste ($\tau_y \approx 50\ \mathrm{Pa}$) in a $5\ \mathrm{mm}$ diameter tube the threshold is $40\ \mathrm{kPa / m}$; for a **kaolin sludge** ($\tau_y \approx 30\ \mathrm{Pa}$) in a $100\ \mathrm{mm}$ diameter drain it is $1{,}200\ \mathrm{Pa / m}$, and a drain laid at a gradient flatter than that **holds its content solid forever** and must be jetted. **The most common non-Newtonian design failure is a drain that works when new and silts up in a year because the yield stress was ignored.**
 **The dimensionless numbers that classify the departure from Newtonian.**
 $$
-\mathrm{De} = \lambda_f \dot{\gamma} = \frac{\lambda_f}{t_{\mathrm{obs}}} \quad \text{(Deborah number)}, \qquad
+\mathrm{De} = \frac{\lambda_f}{t_{\mathrm{obs}}} \quad \text{(Deborah number)}, \qquad
 \mathrm{Wi} = \lambda_f \dot{\gamma} \quad \text{(Weissenberg number)}
 $$
 $$
 \begin{array}{l c c l}
-\text{Fluid} & \lambda_f & \text{De at } \dot{\gamma} = 100\ \mathrm{s^{- 1}} & \text{Behaviour} \\
+\text{Fluid} & \lambda_f & \lambda_f \dot{\gamma} \text{ at } \dot{\gamma} = 100\ \mathrm{s^{- 1}} & \text{Behaviour} \\
 \text{Water} & 10^{- 12}\ \mathrm{s} & 10^{- 10} & \text{Newtonian} \\
 \text{Air} & 10^{- 10}\ \mathrm{s} & 10^{- 8} & \text{Newtonian} \\
 \text{Engine oil} & 10^{- 8}\ \mathrm{s} & 10^{- 6} & \text{Newtonian} \\
@@ -245,7 +246,7 @@ $$
 \text{Polymer melt} & 1\ \text{to}\ 10\ \mathrm{s} & 10^{2} \text{ to } 10^{3} & \text{die swell, melt fracture}
 \end{array}
 $$
-**The Deborah number is the reason "everything is fluid" is a joke with a serious core.** Pitch flows — the Pitch Drop experiment at the University of Queensland has run since **1927** and produced its ninth drop in **2000**, giving a viscosity of $2 \times 10^{9}\ \mathrm{Pa \cdot s}$ — and pitch is **elastic** enough to shatter when struck with a hammer. **Whether a material is a fluid depends on the observation time, and the Deborah number is the ratio.**
+**The Deborah number is the reason "everything is fluid" is a joke with a serious core.** Pitch flows — the Pitch Drop experiment at the University of Queensland has run since **1927** and produced its ninth drop in **2014**, and its drops give a viscosity of about $2 \times 10^{8}\ \mathrm{Pa \cdot s}$ — and pitch is **elastic** enough to shatter when struck with a hammer. **Whether a material is a fluid depends on the observation time, and the Deborah number is the ratio.**
 :::
 
 ## Surface tension and vapour pressure
@@ -263,12 +264,12 @@ $$
 **The surface tensions against a vapour, at $20\ {}^{\circ}\mathrm{C}$ unless noted.**
 $$
 \begin{array}{l c l c}
-\text{Mercury} & 484 & \text{Water, } 20\ {}^{\circ}\mathrm{C} & 72.8 \ \mathrm{mN / m} \\
+\text{Benzene} & 28.9 & \text{Water, } 20\ {}^{\circ}\mathrm{C} & 72.8 \ \mathrm{mN / m} \\
 \text{Water, } 100\ {}^{\circ}\mathrm{C} & 58.9 & \text{Water, } 0\ {}^{\circ}\mathrm{C} & 75.6 \\
 \text{Ethanol} & 22.3 & \text{Methanol} & 22.6 \\
 \text{Glycerin} & 63.4 & \text{Mercury, } 20\ {}^{\circ}\mathrm{C} & 484 \\
 \text{SAE 30 oil} & 32 & \text{Liquid nitrogen, } - 196\ {}^{\circ}\mathrm{C} & 8.9 \\
-\text{Soap solution} & 25 \text{ to } 35 & \text{Liquid hydrogen, } - 253\ {}^{\circ}\mathrm{C} & 2.3
+\text{Soap solution} & 25 \text{ to } 35 & \text{Liquid hydrogen, } - 253\ {}^{\circ}\mathrm{C} & 2.0
 \end{array}
 $$
 **The number that makes soldering, painting and printing the same problem.** Water on clean glass has a contact angle of $0$ to $20^{\circ}$ and wets; on a waxed or oily surface it is $100$ to $110^{\circ}$ and beads. **The whole of a "cleanliness specification" before bonding, coating or vacuum sealing is a statement about the contact angle**, and the standard test is a drop whose measured angle must exceed or fall below a number.
@@ -282,7 +283,7 @@ h = \frac{4 \times 0.0728}{998 \times 9.807 \times 0.001} = 29.8\ \mathrm{mm}
 $$
 **and for mercury in the same tube**, $\theta = 140^{\circ}$:
 $$
-h = \frac{4 \times 0.484 \times \left( - 0.766 \right)}{13{,}546 \times 9.807 \times 0.001} = - 11.6\ \mathrm{mm}
+h = \frac{4 \times 0.484 \times \left( - 0.766 \right)}{13{,}546 \times 9.807 \times 0.001} = - 11.2\ \mathrm{mm}
 $$
 **The number that appears in every civil-engineering textbook and is wrong in every building.** The rise of water in **concrete** or **brick** is capillary and reaches **metres**, because the pore diameters are $0.1$ to $1\ \mu\mathrm{m}$ and $h \propto 1 / D$: at $D = 1\ \mu\mathrm{m}$ the rise is $29.8\ \mathrm{m}$. **Damp-proof courses exist because of this formula, and a building with a bridged DPC is a $10$-metre capillary column in a wall.**
 **The Bond number, which says when to stop worrying.**
@@ -292,14 +293,14 @@ $$
 $$
 \begin{array}{l c c}
 \text{Fluid} & \ell_c\ (\mathrm{mm}) & \text{Meaning} \\
-\text{Water, } 20\ {}^{\circ}\mathrm{C} & 2.71 & \text{drops larger than } 5.4\ \mathrm{mm} \text{ fall flat} \\
-\text{Mercury} & 4.83 & \text{mercury beads are large} \\
-\text{Ethanol} & 1.56 & \text{ethanol makes small drops} \\
-\text{Liquid hydrogen} & 0.54 & \text{cryogenic sprays are fine} \\
+\text{Water, } 20\ {}^{\circ}\mathrm{C} & 2.73 & \text{drops larger than about } 5\ \mathrm{mm} \text{ are flattened} \\
+\text{Mercury} & 1.91 & \text{beads wider than about } 4\ \mathrm{mm} \text{ spread into puddles} \\
+\text{Ethanol} & 1.70 & \text{ethanol makes small drops} \\
+\text{Liquid hydrogen} & 1.7 & \text{low } \sigma \text{ offset by low density} \\
 \text{Soap solution} & 1.6 \text{ to } 1.9 & \text{foams are stable below this scale}
 \end{array}
 $$
-**The number that decides a raindrop's shape.** A raindrop of diameter $1\ \mathrm{mm}$ has $\mathrm{Bo} = 0.14$ and is a **sphere**; at $4\ \mathrm{mm}$, $\mathrm{Bo} = 2.2$ and it is a **parachute**; the largest raindrops observed are $8\ \mathrm{mm}$ and they are **hollow toroids about to burst**. **The "teardrop" shape is a drawing convention and no raindrop has ever had one.**
+**The number that decides a raindrop's shape.** A raindrop of diameter $1\ \mathrm{mm}$ has $\mathrm{Bo} = 0.13$ and is a **sphere**; at $4\ \mathrm{mm}$, $\mathrm{Bo} = 2.2$ and it is flattened underneath into a **hamburger-bun** shape; drops much above $5\ \mathrm{mm}$ break up by blowing into a **bag** (parachute) that bursts, and the largest observed are about $8$ to $10\ \mathrm{mm}$. **The "teardrop" shape is a drawing convention and no raindrop has ever had one.**
 :::
 
 ::: definition Vapour pressure and cavitation {#def-vapour}
@@ -319,31 +320,27 @@ T\ ({}^{\circ}\mathrm{C}) & p_v\ (\mathrm{kPa}) & & T\ ({}^{\circ}\mathrm{C}) & 
 50 & 12.35 & & 120 & 198.7
 \end{array}
 $$
-**The number that doubles every $20\ \mathrm{K}$ and ruins pumps.** The **net positive suction head available** is
+**The number that doubles about every $15\ \mathrm{K}$ and ruins pumps.** The **net positive suction head available** is
 $$
 \mathrm{NPSH_A} = \frac{p_{\mathrm{surface}} - p_v}{\rho g} \pm z - h_f
 $$
 with $z$ positive for a flooded suction and negative for a lift, and a pump's **required** $\mathrm{NPSH_R}$ must be exceeded by it with a margin of **$0.5$ to $1\ \mathrm{m}$**.
 **The evaluation.** A pump taking water from an **open tank at $80\ {}^{\circ}\mathrm{C}$**, with the surface $2\ \mathrm{m}$ above the impeller and $0.6\ \mathrm{m}$ of suction friction:
 $$
-\mathrm{NPSH_A} = \frac{101{,}325 - 47{,}410}{972 \times 9.807} + 2.0 - 0.6 = 5.69 + 1.4 = 7.09\ \mathrm{m}
+\mathrm{NPSH_A} = \frac{101{,}325 - 47{,}410}{972 \times 9.807} + 2.0 - 0.6 = 5.66 + 1.4 = 7.06\ \mathrm{m}
 $$
-**against $10.53 + 1.4 = 11.9\ \mathrm{m}$ if the same pump and tank were at $20\ {}^{\circ}\mathrm{C}$** — the hot water has eaten **$4.8\ \mathrm{m}$** of the suction head, and a pump selected on cold-water data cavitates.
+**against $10.11 + 1.4 = 11.5\ \mathrm{m}$ if the same pump and tank were at $20\ {}^{\circ}\mathrm{C}$** — the hot water has eaten **$4.5\ \mathrm{m}$** of the suction head, and a pump selected on cold-water data cavitates.
 **The cavitation number.**
 $$
 \mathrm{Ca} = \frac{p_{\mathrm{ref}} - p_v}{\tfrac{1}{2} \rho V^{2}}, \qquad
-\sigma = \frac{p - p_v}{\tfrac{1}{2} \rho V^{2} \left( C_{p,\mathrm{peak}} \right)}
+\text{cavitation where } \mathrm{Ca} < - C_{p,\min}
 $$
 A propeller tip at $V = 25\ \mathrm{m / s}$ in water at $20\ {}^{\circ}\mathrm{C}$, with a local peak coefficient of $C_p = - 6$ and a static head of $20\ \mathrm{m}$:
 $$
 p_{\mathrm{local}} = 297{,}000 - 6 \times 0.5 \times 998 \times 625 = 297{,}000 - 1{,}871{,}000 = - 1.57\ \mathrm{MPa}
 $$
-**which is impossible**, so the flow cavitates — and the tip must be slowed, the submergence deepened, or the blade section re-profiled. **Marine propellers are designed against cavitation first and efficiency second**, and the $60\ \mathrm{dB}$ of broadband noise a naval vessel trades away for a $3\ \%$ efficiency gain is the whole of the argument.
-**The collapse that does the damage.** A vapour bubble in a liquid at $p > p_v$ collapses with an internal pressure rise of order
-$$
-\Delta p \sim p \left( \frac{p}{p_v} \right)^{1 / 2} \quad \text{(a Rayleigh--Plesset collapse estimate)}
-$$
-and measured impact pressures on a nearby wall reach **$1$ to $1.5\ \mathrm{GPa}$**, enough to pit hardened stainless steel. **A cavitation-eroded impeller looks like a casting full of pinholes**, and the diagnosis is confirmed by the fact that the pitting is on the **suction** side and stops when the flow rate is reduced.
+**which is impossible**: equivalently $\mathrm{Ca} = 294{,}700 / 311{,}900 = 0.94$, far below $- C_{p,\min} = 6$, so the flow cavitates — and the tip must be slowed, the submergence deepened, or the blade section re-profiled. **Marine propellers are designed against cavitation first and efficiency second.**
+**The collapse that does the damage.** A vapour bubble swept into liquid at $p > p_v$ collapses violently (Rayleigh's analysis of 1917), and the micro-jets and shock waves of the collapse produce impact pressures on a nearby wall of hundreds of megapascals, up to about **$1\ \mathrm{GPa}$** — enough to pit hardened stainless steel. **A cavitation-eroded impeller looks like a casting full of pinholes**, and the diagnosis is confirmed by the fact that the pitting is on the **suction** side and stops when the flow rate is reduced.
 :::
 
 ## Worked cases
@@ -370,18 +367,17 @@ $$
 $$
 \dot{W} = T \Omega = 3.66 \times 151.8 = 556\ \mathrm{W}
 $$
-**The reading.** **More than half a kilowatt of friction in a bearing the size of a fist**, all of it appearing as heat in $4\ \mathrm{cm^{3}}$ of oil. The volumetric flow that the shaft drags around is
+**The reading.** **More than half a kilowatt of friction in a bearing the size of a fist**, all of it appearing as heat in the $1.2\ \mathrm{cm^{3}}$ of oil in the film. The volumetric flow that the shaft drags around the film is
 $$
-\dot{Q} \approx \frac{1}{2} U \left( 2 \pi R \right) c \times \frac{L}{2 \pi R} \quad \Rightarrow \quad
-\dot{Q} = \tfrac{1}{2} \times 6.07 \times 2 \pi \times 0.040 \times 4 \times 10^{- 5} \times \frac{0.120}{2 \pi \times 0.040}
-= 7.3 \times 10^{- 7}\ \mathrm{m^{3} / s} = 0.73\ \mathrm{cm^{3} / s}
+\dot{Q} \approx \tfrac{1}{2} U c L = \tfrac{1}{2} \times 6.07 \times 4 \times 10^{- 5} \times 0.120
+= 1.46 \times 10^{- 5}\ \mathrm{m^{3} / s} = 14.6\ \mathrm{cm^{3} / s}
 $$
-and the temperature rise of that oil if it were not replaced would be
+and if that circulating oil carried all the heat away in a single pass it would warm by
 $$
-\Delta T = \frac{556}{\dot{m} c_p} = \frac{556}{0.73 \times 10^{- 6} \times 891 \times 1{,}900} = 226\ \mathrm{K}
+\Delta T = \frac{556}{\dot{m} c_p} = \frac{556}{1.46 \times 10^{- 5} \times 891 \times 1{,}900} = 22.5\ \mathrm{K}
 $$
-**which would vaporise the oil**, and the reason a hydrodynamic bearing must be **flooded** — the $226\ \mathrm{K}$ is what makes the oil-supply rate a design parameter and not a detail.
-*Sanity.* The shear rate of $1.5 \times 10^{5}\ \mathrm{s^{- 1}}$ is high enough that a **non-Newtonian** oil (a multigrade with a polymer thickener) is **shear-thinning** here, and the effective viscosity in the film is $15$ to $25\ \%$ below the viscometer value at $10^{3}\ \mathrm{s^{- 1}}$. **A multigrade 10W-40 loses part of its "40" in a high-shear bearing**, which is why engine-oil specifications quote a **high-temperature high-shear** viscosity at $150\ {}^{\circ}\mathrm{C}$ and $10^{4}\ \mathrm{s^{- 1}}$ and not the $100\ {}^{\circ}\mathrm{C}$ kinematic figure.
+per pass — and because the same oil keeps recirculating, its temperature would climb pass after pass. That is why a hydrodynamic bearing must be **fed** a continuous through-flow of cool oil, and why the oil-supply rate is a design parameter and not a detail.
+*Sanity.* The shear rate of $1.5 \times 10^{5}\ \mathrm{s^{- 1}}$ is high enough that a **non-Newtonian** oil (a multigrade with a polymer thickener) is **shear-thinning** here, and the effective viscosity in the film is $15$ to $25\ \%$ below the viscometer value at $10^{3}\ \mathrm{s^{- 1}}$. **A multigrade 10W-40 loses part of its "40" in a high-shear bearing**, which is why engine-oil specifications quote a **high-temperature high-shear** viscosity at $150\ {}^{\circ}\mathrm{C}$ and $10^{6}\ \mathrm{s^{- 1}}$ and not the $100\ {}^{\circ}\mathrm{C}$ kinematic figure.
 :::
 :::
 
@@ -399,7 +395,7 @@ $$
 For a drop of $50\ \mu\mathrm{m}$ diameter ejected in $10\ \mu\mathrm{s}$, $\dot{Q} = 6.5 \times 10^{- 14} / 10^{- 5} = 6.5 \times 10^{- 9}\ \mathrm{m^{3} / s}$ and
 $$
 U = \frac{6.5 \times 10^{- 9}}{7.07 \times 10^{- 10}} = 9.2\ \mathrm{m / s}, \qquad
-\Delta p_{\mu} = \frac{32 \times 2.5 \times 10^{- 3} \times 9.2 \times 1.2 \times 10^{- 4}}{9 \times 10^{- 10}} = 980\ \mathrm{Pa}
+\Delta p_{\mu} = \frac{32 \times 2.5 \times 10^{- 3} \times 9.2 \times 1.2 \times 10^{- 4}}{9 \times 10^{- 10}} = 98{,}100\ \mathrm{Pa}
 $$
 **The inertia term.**
 $$
@@ -407,12 +403,12 @@ $$
 $$
 **The total, with an entry correction of about half a velocity head folded into the inertia term:**
 $$
-\Delta p \approx 44{,}400 + 980 + 4{,}267 = 49{,}600\ \mathrm{Pa} \approx 0.50\ \mathrm{bar}
+\Delta p \approx 44{,}400 + 98{,}100 + 4{,}267 = 146{,}800\ \mathrm{Pa} \approx 1.5\ \mathrm{bar}
 $$
-**The number that makes piezo inkjets a $1\ \mathrm{bar}$ technology.** A piezoelectric stack in oil can deliver several bar, so the actuation is easy; **the difficulty is the waveform**, because the same pressure pulse that ejects one drop will, if $20\ \mu\mathrm{s}$ too long, eject two.
+**The number that makes piezo inkjets a $1\ \mathrm{bar}$ technology.** A piezoelectric stack in oil can deliver several bar, so the actuation is easy; **the difficulty is the waveform**, because the same pressure pulse that ejects one clean drop will, if mistimed, eject a drop with a trailing ligament.
 **The Reynolds number in the nozzle.**
 $$
-\mathrm{Re} = \frac{\rho U D}{\mu} = \frac{1{,}050 \times 9.2 \times 30 \times 10^{- 6}}{2.5 \times 10^{- 3}} = 11.6
+\mathrm{Re} = \frac{\rho U D}{\mu} = \frac{1{,}050 \times 9.2 \times 30 \times 10^{- 6}}{2.5 \times 10^{- 3}} = 116
 $$
 **The Ohnesorge number, which decides whether the drop is clean.**
 $$
@@ -428,7 +424,7 @@ $$
 \end{array}
 $$
 **The ink at $\mathrm{Oh} = 0.061$ will satellite**, and the fix is either to raise the viscosity to $4.5 \times 10^{- 3}\ \mathrm{Pa \cdot s}$ (which brings $\mathrm{Oh}$ to $0.11$) or to use a **dwell-time-and-suction** waveform that pulls the meniscus back before the ligament thins. **Every ink formulation is a fight to reach $\mathrm{Oh} \approx 0.15$ while staying thin enough to refill the chamber between $20\ \mathrm{kHz}$ pulses.**
-*Sanity.* The reason the inertia term dominates at $44\ \mathrm{kPa}$ against the surface tension's $4.3\ \mathrm{kPa}$ is that the Weber number
+*Sanity.* The ratio of the viscous to the inertial term should be $64 \left( L / D \right) / \mathrm{Re} = 64 \times 4 / 116 = 2.2$, and indeed $98.1 / 44.4 = 2.2$. The surface tension's $4.3\ \mathrm{kPa}$ is small against both because the Weber number
 $$
 \mathrm{We} = \frac{\rho U^{2} D}{\sigma} = \frac{1{,}050 \times 84.6 \times 30 \times 10^{- 6}}{0.032} = 83
 $$
@@ -454,28 +450,28 @@ V = \frac{0.55}{\pi \times 0.300^{2}} = 1.95\ \mathrm{m / s}
 $$
 **The Joukowsky downsurge at the pump.** A pump trip is a **deceleration over several seconds**, and the pump's own inertia gives a stop time of $5$ to $15\ \mathrm{s}$ for a large machine — **longer than $T_p$**, so the closure is **slow** and the surge is a fraction of Joukowsky:
 $$
-\Delta p_{\mathrm{full}} = \rho c^{\prime} V = 998 \times 858 \times 1.95 = 1.67\ \mathrm{MPa} \quad \left( 167\ \mathrm{m} \right)
+\Delta p_{\mathrm{full}} = \rho c^{\prime} V = 998 \times 858 \times 1.95 = 1.67\ \mathrm{MPa} \quad \left( 170\ \mathrm{m} \right)
 $$
-With a linear deceleration over $8\ \mathrm{s}$ and $T_p = 4.2\ \mathrm{s}$, the **Michaud** (interpolated) coefficient is $\Delta h / h_{\mathrm{Jouk}} \approx T_p / \left( 2 t_{\mathrm{stop}} \right) = 4.2 / 16 = 0.26$:
+With a linear deceleration over $t_{\mathrm{stop}} = 15\ \mathrm{s}$ and $T_p = 4.2\ \mathrm{s}$, **Michaud**'s formula $\Delta h = 2 L V / \left( g\, t_{\mathrm{stop}} \right)$ gives $\Delta h / h_{\mathrm{Jouk}} = T_p / t_{\mathrm{stop}} = 4.2 / 15 = 0.28$:
 $$
-\Delta p = 0.26 \times 1.67 = 0.43\ \mathrm{MPa} \quad \left( 44\ \mathrm{m} \right)
+\Delta p = 0.28 \times 1.67 = 0.47\ \mathrm{MPa} \quad \left( 48\ \mathrm{m} \right)
 $$
-**The column-separation check.** The static pressure at the pump discharge is $0.7\ \mathrm{MPa}$ ($71\ \mathrm{m}$) and the vapour pressure head is $- 10.2\ \mathrm{m}$ gauge, so the downsurge of $44\ \mathrm{m}$ leaves $27\ \mathrm{m}$ — **no separation at the pump**. But at a **high point** $40\ \mathrm{m}$ above the hydraulic grade line the static gauge pressure is only $18\ \mathrm{m}$, and a $44\ \mathrm{m}$ downsurge **drives it below vapour pressure**: the column separates, the two halves rejoin at $40\ \mathrm{m / s}$, and the resulting upsurge is
+**The column-separation check.** The static pressure at the pump discharge is $0.7\ \mathrm{MPa}$ ($71\ \mathrm{m}$) and the vapour pressure head is $- 10.2\ \mathrm{m}$ gauge, so the downsurge of $48\ \mathrm{m}$ leaves $23\ \mathrm{m}$ — **no separation at the pump**. But at a **high point** where the static gauge pressure is only $18\ \mathrm{m}$, a $48\ \mathrm{m}$ downsurge **drives it below vapour pressure**: the column separates, the two columns rejoin with a relative velocity of the order of the original flow velocity, and the resulting upsurge is
 $$
-\Delta p = \rho c^{\prime} \Delta V = 998 \times 858 \times 40 = 34.3\ \mathrm{MPa} \quad \left( 3{,}430\ \mathrm{bar} \right)
+\Delta p = \rho c^{\prime} \Delta V = 998 \times 858 \times 1.95 = 1.67\ \mathrm{MPa} \quad \left( 170\ \mathrm{m} \right)
 $$
-**which is not a pressure a ductile-iron main survives.** Column separation is the mechanism behind most "impossible" main bursts, and it is invisible to a software model that does not solve the vapour cavity.
+**— the full Joukowsky rise that the slow stop was supposed to avoid, added to the line pressure.** Column separation is the mechanism behind most "impossible" main bursts, and it is invisible to a software model that does not solve the vapour cavity.
 **The protection.**
 $$
 \begin{array}{l l l}
 \text{Air vessel} & \text{a } 10\ \mathrm{m^{3}} \text{ bladder vessel at the pump} & \text{handles the first } 20\ \mathrm{s} \text{ and the reflection} \\
 \text{Surge tower} & \text{an open tower at the high point} & \text{admits air before separation, the cheapest fix} \\
-\text{Solvent-release valve} & \text{set } 10\ \% \text{ above working} & \text{protects against the upsurge, not the downsurge} \\
+\text{Surge-relief valve} & \text{set } 10\ \% \text{ above working} & \text{protects against the upsurge, not the downsurge} \\
 \text{Non-slam check valve} & \text{a spring-assisted disc} & \text{prevents the reverse-flow slam at } t \approx 12\ \mathrm{s} \\
 \text{Two-speed valve closure} & \text{fast for } 10\ \% \text{, slow thereafter} & \text{only helps if the valve is the cause}
 \end{array}
 $$
-**The number that decides the design.** The **reverse flow** begins at $t \approx 2 T_p = 8.4\ \mathrm{s}$ and the check valve slams at $t \approx 12$ to $20\ \mathrm{s}$; a **non-slam** valve costs $12\%$ of an air vessel and prevents the second transient, and **the combination is standard for a reason**.
+**The number that decides the design.** The **reverse flow** begins at $t \approx 2 T_p = 8.4\ \mathrm{s}$ and the check valve slams at $t \approx 12$ to $20\ \mathrm{s}$; a **non-slam** valve costs a small fraction of an air vessel and prevents the second transient, and the combination is standard practice.
 *Sanity.* The reason the wave speed is $858\ \mathrm{m / s}$ and not $1{,}481$ is the pipe's elasticity, and the reason the entrained-air correction is **not** applied is that a well-vented main holds less than $0.1\ \%$ free gas. **At $1\ \%$ free gas the wave speed falls to $300\ \mathrm{m / s}$ and the Joukowsky surge falls by a factor of three** — which is why an old main that has been drained and refilled surges violently on its first pump start, and why the commissioning procedure vents at every high point.
 :::
 :::
@@ -531,12 +527,12 @@ $$
 \quad \Rightarrow \quad \Delta p > 2.67\ \mathrm{bar\ over\ } 400\ \mathrm{m}
 $$
 **The consequence is the operating rule that a plant learns by experience.** Throttling the pump from $6.4$ to $2.0\ \mathrm{bar}$ does not slow the sludge down — **it stops it**, and the line then needs a flush or a pig before it will move again, because the static pressure required to re-yield a stationary column is higher than the running pressure. **A sludge line is either running or blocked, and the control system must be built around that discontinuity.**
-*Sanity.* The reason the operating point of $59.9\ \mathrm{Pa}$ sits only $2.4$ times above the $25\ \mathrm{Pa}$ yield stress is that the pipe is **wide**: the wall shear scales as $\tau_y D / \left( 4 \Delta p / L \right)$, so halving the diameter to $75\ \mathrm{mm}$ at the same gradient would bring $\kappa$ to $0.83$ and the plug to $83\ \%$ of the radius, at which the Buckingham bracket is $0.05$ and the line is **effectively a solid rod in a tube**. **Wide-bore, high-gradient is the design rule for yield-stress fluids**, and it is why sludge lines are one size larger than the flow rate suggests.
+*Sanity.* The reason the operating point of $59.9\ \mathrm{Pa}$ sits only $2.4$ times above the $25\ \mathrm{Pa}$ yield stress is that the pipe is **wide**: the wall shear is $\tau_w = D \left( \Delta p / L \right) / 4$, so halving the diameter to $75\ \mathrm{mm}$ at the same gradient would bring $\kappa$ to $0.83$ and the plug to $83\ \%$ of the radius, at which the Buckingham bracket is $0.05$ and the line is **effectively a solid rod in a tube**. **Wide-bore, high-gradient is the design rule for yield-stress fluids.**
 :::
 :::
 
 ::: history
-**The continuum** was **Euler**'s and **d'Alembert**'s assumption of **1755**, and the first quantitative statement of the no-slip condition is **Saint-Venant**'s of **1843**, though **Navier** had already written a sliding-velocity boundary condition in his **1822** memoir and **Stokes** fixed the present form in **1851**. **The measurement of viscosity** begins with **Poiseuille**'s capillary work of **1840–1846**, undertaken not for physics but to understand **the flow of blood**, which he studied as a medical student; his law $Q \propto R^{4}$ was rediscovered so often that the eponym is contested with **Hagen** of **1839**. **Coulomb** measured the viscosity of olive oil between a rotating cylinder and a vessel in **1800** and reported the first **non-Newtonian** observation — that the viscosity of a soap solution varied with the rotation rate — and the observation was ignored for **one hundred and thirty years** until **Binham**'s **1918** paper on "plastic fluids" and **Reiner and Rabinowitsch**'s **1920** rheometry. **The word *rheology* was coined by Eugene Bingham and M. C. Riblett in 1920**, and the **Society of Rheology** founded in **1929** with **Bingham, Reiner, Hatschek and Freundlich** as its first members. **Sutherland**'s viscosity law for gases is of **1893** and remains within $2\ \%$ for air between $100$ and $1{,}000\ \mathrm{K}$; **the kinetic theory that predicts it** — $\mu = \tfrac{1}{3} \rho \bar{c} \lambda$, independent of pressure — is **Maxwell**'s of **1860**, and its prediction that a gas's viscosity does not depend on its density was verified by **Grove and Groves** in **1869** and is one of the more startling successes of nineteenth-century molecular theory. **The Pitch Drop experiment** was begun by **Thomas Parnell** at the University of Queensland in **1927**, was intended to run for a decade, and had produced nine drops by **2013** — the longest-running laboratory experiment in the world, and the only one to have won an Ig Nobel Prize twice after a student closed the funnel with a lid during a heatwave in **2024**.
+**The continuum** description of a fluid is that of **Euler**'s equations of **1755** (published 1757), following **d'Alembert**'s work of **1752**. **Navier** wrote a sliding-velocity (slip) boundary condition in his memoir of **1822**, and **Stokes**, after discussing the alternatives in **1845**, adopted the no-slip condition in his **1851** paper on pendulums. **The measurement of viscosity** begins with **Poiseuille**'s capillary experiments of **1838–1846**, undertaken by a physician to understand **the flow of blood** in small vessels; his law $Q \propto R^{4}$ had been found independently by **Hagen** in **1839**, and the result is now called the Hagen–Poiseuille law. **Coulomb** measured the resistance of liquids with oscillating discs in **1800**. **Eugene Bingham**'s **1916** paper on plastic flow introduced the yield-stress fluid that bears his name, and the word ***rheology*** is credited to Bingham in the late **1920s**; the **Society of Rheology** was founded in **1929**. **Sutherland**'s viscosity law for gases is of **1893**; **the kinetic theory behind it** — $\mu = \tfrac{1}{3} \rho \bar{c} \lambda$, independent of pressure — is **Maxwell**'s of **1860**, and Maxwell confirmed the surprising pressure-independence himself with oscillating-disc experiments reported in **1866**. **The Pitch Drop experiment** was begun by **Thomas Parnell** at the University of Queensland in **1927**; its ninth drop fell in **2014**, and Parnell (posthumously) and his successor **John Mainstone** received the **2005** Ig Nobel Prize in physics for it.
 :::
 
 ## Where this leads
@@ -545,12 +541,12 @@ The properties in this lesson become dimensionless groups in [[fluid-mechanics/d
 
 ::: summary
 - A fluid is a material that cannot support a shear at rest; the whole subject follows from that and the conservation laws.
-- The continuum holds while $\mathrm{Kn} < 10^{- 3}$, which for air at one atmosphere means every length above about $7\ \mathrm{mm}$ and nothing in a vacuum chamber.
+- The continuum holds while $\mathrm{Kn} < 10^{- 3}$, which for air at one atmosphere means every length above about $0.07\ \mathrm{mm}$, and far less in a vacuum chamber.
 - Dynamic viscosity is fifty-five times larger for water than for air; kinematic viscosity is fifteen times larger for **air**. Never divide a velocity by a dynamic viscosity.
-- Gases get more viscous with temperature and liquids less so, by factors of two to eight over ordinary ranges, and a lubrication or heat-exchanger calculation that uses the cold number is wrong.
-- Water's bulk modulus is $2.18\ \mathrm{GPa}$, which is enough to call it incompressible in steady flow and not enough to call it so in a transient; $1\ \%$ of entrained air divides the stiffness by fourteen.
+- Gases get more viscous with temperature and liquids less so, by large factors over ordinary ranges, and a lubrication or heat-exchanger calculation that uses the cold number is wrong.
+- Water's bulk modulus is $2.18\ \mathrm{GPa}$, which is enough to call it incompressible in steady flow and not enough to call it so in a transient; $1\ \%$ of entrained air at atmospheric pressure divides the stiffness by about a hundred and forty.
 - Surface tension dominates below the capillary length of $2.7\ \mathrm{mm}$ for water, and capillary rise in a $1\ \mu\mathrm{m}$ pore is thirty metres.
-- Vapour pressure doubles every $20\ \mathrm{K}$; a pump's NPSH margin computed on cold data on hot water is a fiction of several metres.
+- Vapour pressure doubles about every $15\ \mathrm{K}$; a pump's NPSH margin computed on cold data on hot water is a fiction of several metres.
 - A yield stress means a pipeline that stops and never starts again, and a Deborah number means that whether a material is a fluid depends on how long you watch it.
 :::
 
@@ -561,7 +557,7 @@ A hydraulic machine's servo loop has developed a low-frequency oscillation, and 
 - [ ] The oil's density has fallen with temperature
 - [ ] The oil's surface tension has fallen
 ::: solution
-The loop's natural frequency goes as the square root of the hydraulic stiffness, which is the oil's **bulk modulus** divided by the trapped volume. Degassed mineral oil has $E_v \approx 1.4$ to $1.7\ \mathrm{GPa}$; $1\ \%$ by volume of entrained air at atmospheric pressure reduces it to about $0.10\ \mathrm{GPa}$, because air's isothermal modulus is only $0.101\ \mathrm{MPa}$ and the bubbles are in series with the liquid. **The stiffness falls by a factor of fourteen and the natural frequency by a factor of nearly four**, which is exactly the symptom. The remedies are a reservoir with a three-minute residence time, a return line entering well below the lowest liquid level, and a bleed procedure — not a different oil.
+The loop's natural frequency goes as the square root of the hydraulic stiffness, which is the oil's **bulk modulus** divided by the trapped volume. Degassed mineral oil has $E_v \approx 1.4$ to $1.7\ \mathrm{GPa}$; $1\ \%$ by volume of entrained air at atmospheric pressure reduces it to about $0.010\ \mathrm{GPa}$, because air's isothermal modulus is only $0.101\ \mathrm{MPa}$ and the bubbles are in series with the liquid. **The stiffness falls by a factor of about a hundred and forty and the natural frequency by a factor of about twelve**, which is exactly the symptom. The remedies are a reservoir with a three-minute residence time, a return line entering well below the lowest liquid level, and a bleed procedure — not a different oil.
 :::
 :::
 
@@ -574,10 +570,10 @@ $\mathrm{SG} = 1{,}025 / 1{,}000 = 1.025$.
 :::
 :::
 
-::: exercise Knudsen {level=1 check="0.067"}
-Air at $20\ {}^{\circ}\mathrm{C}$ and $101.325\ \mathrm{kPa}$ has a mean free path of $66.7\ \mathrm{nm}$. Give the Knudsen number for a $1\ \mathrm{mm}$ gap.
+::: exercise Knudsen {level=1 check="0.065"}
+Air at $20\ {}^{\circ}\mathrm{C}$ and $101.325\ \mathrm{kPa}$ has a mean free path of $65\ \mathrm{nm}$. Give the Knudsen number for a $1\ \mu\mathrm{m}$ gap.
 ::: solution
-$\mathrm{Kn} = 66.7 \times 10^{- 9} / 10^{- 3} = 0.0667$, at the upper edge of the slip regime.
+$\mathrm{Kn} = 65 \times 10^{- 9} / 10^{- 6} = 0.065$, in the slip regime and approaching the transition regime.
 :::
 :::
 
@@ -602,33 +598,33 @@ $h = 4 \times 0.0728 / \left( 998 \times 9.807 \times 0.001 \right) = 29.8\ \mat
 :::
 :::
 
-::: exercise Vapour pressure {level=1 check="5.69"}
+::: exercise Vapour pressure {level=1 check="5.66"}
 Give the pressure head in metres of the difference between atmospheric pressure and water's vapour pressure at $80\ {}^{\circ}\mathrm{C}$, with $\rho = 972\ \mathrm{kg / m^{3}}$ and $p_v = 47.41\ \mathrm{kPa}$.
 ::: solution
-$(101{,}325 - 47{,}410) / (972 \times 9.807) = 53{,}915 / 9{,}532 = 5.69\ \mathrm{m}$.
+$(101{,}325 - 47{,}410) / (972 \times 9.807) = 53{,}915 / 9{,}532 = 5.66\ \mathrm{m}$.
 :::
 :::
 
 ::: exercise Wave speed {level=1 check="858"}
 Give the pressure-wave speed in metres per second in water inside a $600\ \mathrm{mm}$ ductile-iron pipe with a $6\ \mathrm{mm}$ wall and $E = 110\ \mathrm{GPa}$, taking $c = 1{,}481\ \mathrm{m / s}$.
 ::: solution
-$c^{\prime} = 1{,}481 / \sqrt{1 + 2.18 \times 600 / \left( 110{,}000 \times 0.006 \times 10^{3} / 10^{3} \right)}$. Evaluating the bracket: $2.18 \times 10^{9} \times 0.600 / \left( 110 \times 10^{9} \times 0.006 \right) = 1.982$, so $c^{\prime} = 1{,}481 / 1.727 = 858\ \mathrm{m / s}$.
+$c^{\prime} = 1{,}481 / \sqrt{1 + K D / \left( E t \right)}$, with $K D / \left( E t \right) = 2.18 \times 10^{9} \times 0.600 / \left( 110 \times 10^{9} \times 0.006 \right) = 1.982$, so $c^{\prime} = 1{,}481 / 1.727 = 858\ \mathrm{m / s}$.
 :::
 :::
 
-::: exercise Power law {level=2}
+::: exercise Power law {level=2 check="0.0666"}
 A drilling mud follows $\tau = 0.8\, \dot{\gamma}^{0.6}$ in SI units. Give its apparent viscosity in pascal-seconds at a shear rate of $500\ \mathrm{s^{- 1}}$.
 ::: solution
 $$
 \mu_{\mathrm{app}} = K \dot{\gamma}^{\,n - 1} = 0.8 \times 500^{- 0.4}
-= 0.8 \times 0.0818 = 0.0654\ \mathrm{Pa \cdot s}
+= 0.8 \times 0.0833 = 0.0666\ \mathrm{Pa \cdot s}
 $$
 **The reading.** At the mud's low-shear field condition of $\dot{\gamma} = 1\ \mathrm{s^{- 1}}$ the apparent viscosity is $0.8\ \mathrm{Pa \cdot s}$, **twelve times** the drilling value — and that ratio is the whole of the design: the mud must carry cuttings to the surface at the low annular shear rate **and** erode the bit face at the high nozzle shear rate, and a Newtonian mud that did one would be a syrup that did neither.
-*Sanity.* The $n = 0.6$ is typical of a bentonite mud; a **polymer** mud reaches $n = 0.4$ and a **lime** mud $n = 0.75$, and the **Marsh funnel viscosity** that the rig crew actually measures is a single-point reading at $\dot{\gamma} \approx 1{,}000\ \mathrm{s^{- 1}}$ and correlates with the drilling condition and not with the carrying condition. **A rig that controls only the funnel viscosity is flying blind on hole cleaning.**
+*Sanity.* The $n = 0.6$ is typical of a bentonite mud; a **polymer** mud reaches $n = 0.4$ and a **lime** mud $n = 0.75$, and the **Marsh funnel viscosity** that the rig crew measures is an efflux time in seconds that corresponds to no single shear rate, which is why rheology is also checked with a rotational (Fann) viscometer at several speeds.
 :::
 :::
 
-::: exercise Deborah {level=2}
+::: exercise Deborah {level=2 check="100"}
 A polymer solution has a relaxation time of $0.2\ \mathrm{s}$. Give the Deborah number for a process observed over $2\ \mathrm{ms}$.
 ::: solution
 $\mathrm{De} = \lambda_f / t_{\mathrm{obs}} = 0.2 / 0.002 = 100$. **The material behaves as an elastic solid** on that timescale, and the process — an inkjet ejection, a spray atomisation, a valve closure — must be modelled as a viscoelastic one.
@@ -659,17 +655,17 @@ $$
 \quad \Rightarrow \quad h = \frac{4 \sigma \cos \theta}{\rho g D}
 $$
 **The two agree**, and the reason they must is that the force balance is the derivative of the energy balance — but the energy derivation **shows what the force derivation hides**: that the meniscus's own weight and curvature energy have been neglected, which is legitimate when $h \gg D$ and not otherwise.
-**The correction for the meniscus.** The spherical cap above the "nominal" level contains a volume $\pi D^{3} / 32$ for a hemispherical meniscus, so the corrected height is
+**The correction for the meniscus.** For a hemispherical meniscus the liquid above the bottom of the meniscus has a volume $\pi D^{3} / 8 - \pi D^{3} / 12 = \pi D^{3} / 24$, equivalent to a column of height $D / 6$, so the height to the bottom of the meniscus is
 $$
-h = \frac{4 \sigma \cos \theta}{\rho g D} - \frac{D}{8}
+h = \frac{4 \sigma \cos \theta}{\rho g D} - \frac{D}{6}
 $$
-**The evaluation for the $1\ \mathrm{mm}$ water tube**: $29.8 - 0.125 = 29.7\ \mathrm{mm}$, a **$0.4\ \%$** correction that matters only in a precision manometer.
-**The non-wetting case.** For $\theta > 90^{\circ}$ the cosine is negative and $h$ is a **depression**, which is not a mathematical curiosity but the operating principle of a **mercury barometer's capillary error** and of a **groundwater capillary fringe**. For mercury in a $1\ \mathrm{mm}$ tube the depression is $11.6\ \mathrm{mm}$, and a barometer reading corrected for it must be **raised** by that amount — an error of $1.5\ \%$ on an atmospheric reading, which is **larger than the resolution of a weather report**.
-*Sanity.* The reason the energy derivation is the safer of the two is that it generalises to a **between-plates** geometry, where the wetted width is $2 w$ and the cross-section is $w h$, giving the same formula with $D$ replaced by the plate spacing $2 a$:
+**The evaluation for the $1\ \mathrm{mm}$ water tube**: $29.8 - 0.17 = 29.6\ \mathrm{mm}$, a **$0.6\ \%$** correction that matters only in a precision manometer.
+**The non-wetting case.** For $\theta > 90^{\circ}$ the cosine is negative and $h$ is a **depression**, which is not a mathematical curiosity but the origin of a **mercury barometer's capillary error**. For mercury in a $1\ \mathrm{mm}$ tube the depression is $11.2\ \mathrm{mm}$, and a barometer reading corrected for it must be **raised** by that amount — an error of $1.5\ \%$ on an atmospheric reading, which is **larger than the resolution of a weather report**.
+*Sanity.* The reason the energy derivation is the safer of the two is that it generalises to a **between-plates** geometry, where for plates of width $w$ and spacing $s$ the wetted length is $2 w$ and the raised cross-section is $w s$, giving the tube formula with $D$ replaced by $2 s$:
 $$
-h = \frac{2 \sigma \cos \theta}{\rho g a}
+h = \frac{2 \sigma \cos \theta}{\rho g s}
 $$
-**and to a square capillary of side $a$, where $h = 4 \sigma \cos \theta / \left( \rho g a \right)$** — the same as a circular tube of diameter $a$, which is why a **soil's** pore-size distribution can be measured by pushing air through it and reading the entry pressure, a technique called **mercury intrusion porosimetry** and the standard method for a rock's throat-size distribution.
+**and to a square capillary of side $a$, where $h = 4 \sigma \cos \theta / \left( \rho g a \right)$** — the same as a circular tube of diameter $a$, which is why a **porous solid's** pore-size distribution can be measured by forcing a non-wetting liquid into it and reading the entry pressure at each pore size — **mercury intrusion porosimetry**, the standard method for a rock's pore-throat distribution.
 :::
 :::
 
@@ -681,7 +677,7 @@ $$
 \begin{array}{l c l}
 \text{Pressure} & 280\ \mathrm{bar} & \text{compressibility and leakage dominate} \\
 \text{Cycle} & 0.4\ \mathrm{s} & \text{stiffness and wave speed dominate} \\
-\text{Force} & 2\ \mathrm{MN} & 95\ \mathrm{mm}\ \text{bore at } 280\ \text{bar} \\
+\text{Force} & 2\ \mathrm{MN} & 300\ \mathrm{mm}\ \text{bore at } 280\ \text{bar} \\
 \text{Duty} & \text{continuous} & \text{thermal balance at } 45\ {}^{\circ}\mathrm{C} \text{ to } 55\ {}^{\circ}\mathrm{C}
 \end{array}
 $$
@@ -690,8 +686,8 @@ $$
 \begin{array}{l l l}
 \rho\ \text{at}\ 20\ {}^{\circ}\mathrm{C} & 875\ \mathrm{kg / m^{3}} & \text{affects the accumulator's gas volume} \\
 \nu\ \text{at}\ 40\ {}^{\circ}\mathrm{C} & 46\ \mathrm{mm^{2} / s} & \text{the specification's nominal number} \\
-\nu\ \text{at}\ 100\ {}^{\circ}\mathrm{C} & 6.1\ \mathrm{mm^{2} / s} & \text{viscosity index } \ge 100 \\
-\nu\ \text{at}\ - 10\ {}^{\circ}\mathrm{C} & \le 600\ \mathrm{mm^{2} / s} & \text{the cold-start limit for a vane pump} \\
+\nu\ \text{at}\ 100\ {}^{\circ}\mathrm{C} & 6.8\ \mathrm{mm^{2} / s} & \text{viscosity index } \ge 100 \\
+\nu\ \text{at}\ - 10\ {}^{\circ}\mathrm{C} & \approx 1{,}500\ \mathrm{mm^{2} / s} & \text{above a vane pump's cold-start limit: heat the tank} \\
 E_v\ \text{at}\ 280\ \text{bar, degassed} & 1.65\ \mathrm{GPa} & \text{the stiffness figure} \\
 \text{Air release, } 40\ {}^{\circ}\mathrm{C} & \le 8\ \text{minutes} & \text{DIN 51381} \\
 \text{FZG scuffing} & \ge 12 & \text{the pump's wear protection}
@@ -699,7 +695,7 @@ E_v\ \text{at}\ 280\ \text{bar, degassed} & 1.65\ \mathrm{GPa} & \text{the stiff
 $$
 **The stiffness calculation that sets the machine's cycle time.** The oil in a $2\ \mathrm{litre}$ cylinder volume at $280\ \mathrm{bar}$ stores
 $$
-U = \frac{\left( 28 \times 10^{6} \right)^{2}}{2 \times 1.65 \times 10^{9}} \times 0.002 = 47.5\ \mathrm{J}
+U = \frac{\left( 28 \times 10^{6} \right)^{2}}{2 \times 1.65 \times 10^{9}} \times 0.002 = 475\ \mathrm{J}
 $$
 and the compliance is
 $$
@@ -707,15 +703,15 @@ C = \frac{V}{E_v} = \frac{0.002}{1.65 \times 10^{9}} = 1.21 \times 10^{- 12}\ \m
 $$
 so the cylinder's **hydraulic** stiffness is
 $$
-k_h = \frac{A^{2} E_v}{V} = \frac{7.09 \times 10^{- 3} \times 1.65 \times 10^{9}}{0.002} = 5.85 \times 10^{9}\ \mathrm{N / m}
+k_h = \frac{A^{2} E_v}{V} = \frac{\left( 0.0714 \right)^{2} \times 1.65 \times 10^{9}}{0.002} = 4.21 \times 10^{9}\ \mathrm{N / m}
 $$
-**against a mechanical frame stiffness of typically $2 \times 10^{9}\ \mathrm{N / m}$** — the oil is **softer than the frame**, and the positioner's servo bandwidth is limited by the **oil**, not the valve. **$1\ \%$ of entrained air drops $E_v$ to $0.15\ \mathrm{GPa}$ and the servo's natural frequency by a factor of six**, which is the whole of a hydraulic press's control problem.
+**against a mechanical frame stiffness of typically $2 \times 10^{9}\ \mathrm{N / m}$** — the two act as springs in series and the oil supplies about a third of the total compliance, so it limits the positioner's servo bandwidth as much as the frame does. **$1\ \%$ by volume of free air at the working pressure (isothermal modulus $28\ \mathrm{MPa}$) drops $E_v$ to $1.05\ \mathrm{GPa}$**, and at lower pressures, where the same mass of air occupies more volume, the loss is far greater.
 **The wave speed and the valve.**
 $$
-c^{\prime} = \frac{1}{\sqrt{\rho \left( \dfrac{1}{E_v \rho} + \dfrac{D}{4 t E_{\mathrm{tube}}} \right)}}
-= \frac{1}{\sqrt{875 \left( \dfrac{1}{1.65 \times 10^{9} \times 875} + \dfrac{0.016}{4 \times 0.002 \times 110 \times 10^{9}} \right)}} = 1{,}010\ \mathrm{m / s}
+c^{\prime} = \frac{1}{\sqrt{\rho \left( \dfrac{1}{E_v} + \dfrac{D}{t E_{\mathrm{tube}}} \right)}}
+= \frac{1}{\sqrt{875 \left( \dfrac{1}{1.65 \times 10^{9}} + \dfrac{0.016}{0.002 \times 110 \times 10^{9}} \right)}} = 1{,}297\ \mathrm{m / s}
 $$
-For a $1.5\ \mathrm{m}$ hose the quarter-wave time is $1.5 / \left( 4 \times 1{,}010 \right) = 0.37\ \mathrm{ms}$, so the **hose must not be longer than about $0.5\ \mathrm{m}$** between the valve and the cylinder or the $200\ \mathrm{Hz}$ servo loop will see a resonance at $675\ \mathrm{Hz}$ and oscillate.
+For a $1.5\ \mathrm{m}$ steel line the quarter-wave resonance is $c^{\prime} / \left( 4 L \right) = 1{,}297 / 6 = 216\ \mathrm{Hz}$ — on top of a $200\ \mathrm{Hz}$ servo loop — so the **line must be kept to about $0.5\ \mathrm{m}$** between the valve and the cylinder, which moves the resonance to $650\ \mathrm{Hz}$, well above the loop.
 **The tests that verify the specification.**
 $$
 \begin{array}{l l l}
@@ -727,7 +723,7 @@ $$
 \text{Bulk modulus, in situ} & \text{the pressure–volume curve of the press} & \text{the only test that catches entrained air}
 \end{array}
 $$
-**The four clauses that protect the buyer.** **"THE FLUID PROPERTIES SHALL BE GUARANTEED AT $40\ {}^{\circ}\mathrm{C}$ AND AT THE MINIMUM AND MAXIMUM AMBIENT, AND THE MACHINE SHALL START AT $- 10\ {}^{\circ}\mathrm{C}$ WITHOUT A HEATER."** **"THE SERVO-VALVE CLEARANCE AND THE FILTRATION CLASS SHALL BE STATED TOGETHER, AND THE FILTER SHALL BE $\beta_{3} \ge 1000$."** **"THE AIR-RELEASE AND DE-AERATION TIME OF THE RESERVOIR SHALL BE GUARANTEED FOR THE FULL FLOW, AND THE RETURN LINE SHALL ENTER BELOW THE LOWEST LIQUID LEVEL."** **"THE HYDRAULIC STIFFNESS AND THE SERVO LOOP'S NATURAL FREQUENCY SHALL BE MEASURED ON THE MACHINE AND REPORTED."**
+**The four clauses that protect the buyer.** **"THE FLUID PROPERTIES SHALL BE GUARANTEED AT $40\ {}^{\circ}\mathrm{C}$ AND AT THE MINIMUM AND MAXIMUM AMBIENT, AND THE MACHINE SHALL START AT $- 10\ {}^{\circ}\mathrm{C}$, WITH A TANK HEATER IF THE OIL'S COLD VISCOSITY EXCEEDS THE PUMP'S START LIMIT."** **"THE SERVO-VALVE CLEARANCE AND THE FILTRATION CLASS SHALL BE STATED TOGETHER, AND THE FILTER SHALL BE $\beta_{3} \ge 1000$."** **"THE AIR-RELEASE AND DE-AERATION TIME OF THE RESERVOIR SHALL BE GUARANTEED FOR THE FULL FLOW, AND THE RETURN LINE SHALL ENTER BELOW THE LOWEST LIQUID LEVEL."** **"THE HYDRAULIC STIFFNESS AND THE SERVO LOOP'S NATURAL FREQUENCY SHALL BE MEASURED ON THE MACHINE AND REPORTED."**
 *Design comment.* The general rule is that **a hydraulic machine is bought as a stiffness specification and delivered as a viscosity one**, and that the two are tested by different people at different stages — which is why a press can meet every fluid certificate and still be uncontrollable.
 :::
 :::

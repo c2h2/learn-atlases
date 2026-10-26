@@ -9,7 +9,7 @@ $$
 and their integral counterparts: a load jumps the shear, a couple jumps the moment, the change in shear equals minus the area under the load, and the change in moment equals the area under the shear. Everything else is bookkeeping.
 
 ::: warning Sign convention — settle it before you start
-This book uses the **beam convention**: for a beam with $x$ increasing to the right, $V$ and $M$ are positive when, on the **left face of a cut**, $V$ acts downward and $M$ is sagging (compression on top). Positive $V$ therefore rotates the element clockwise and positive $M$ makes it smile. The alternative convention used by some structural texts and by most finite-element codes flips the sign of $V$, and software output is not always labelled. Before reading a stress from a diagram produced by anyone else — a colleague, a package, a handbook — confirm which convention produced it. The magnitudes never change; the sign of $V$ does, and $V$ is what decides where the shear stress and the principal stress act.
+This book uses the **beam convention**: for a beam with $x$ increasing to the right, $V$ and $M$ are positive when, on the **left face of a cut** (the face of the segment to the right of the cut), $V$ acts upward and $M$ is sagging (compression on top). Positive $V$ therefore rotates the element clockwise and positive $M$ makes it smile. The alternative convention used by some structural texts and by most finite-element codes flips the sign of $V$, and software output is not always labelled. Before reading a stress from a diagram produced by anyone else — a colleague, a package, a handbook — confirm which convention produced it. The magnitudes never change; the sign of $V$ does, and $V$ is what decides where the shear stress and the principal stress act.
 :::
 
 ## The differential relationships
@@ -103,7 +103,7 @@ $$
 :::
 
 ::: widget plot
-f: 8*x - 24*max(0,x-4)
+f: 8 - 24*min(1, max(0, 1000*(x-4)))
 x: 0, 6
 y: -18, 10
 labels: \text{shear force (kN)}
@@ -116,7 +116,7 @@ For a prismatic beam of span $L$, the maxima of the bending moment are:
 - **Uniformly distributed load $w$:** $V_{\max} = w L / 2$, $M_{\max} = w L^{2} / 8$ at mid-span.
 - **Central point load $P$:** $V_{\max} = P / 2$, $M_{\max} = P L / 4$ under the load.
 - **Point load at $a$ from one end, $b$ from the other:** $V_{\max} = P b / L$, $M_{\max} = P a b / L$ under the load.
-- **Applied central couple $C$:** $V = C / L$ constant, $M_{\max} = C$ immediately beside the couple.
+- **Applied central couple $C$:** $V = C / L$ constant, $M_{\max} = C / 2$ immediately either side of the couple.
 - **Cantilever with tip load $P$:** $V = P$ constant, $M_{\max} = P L$ at the wall.
 - **Cantilever with uniform load $w$:** $V_{\max} = w L$, $M_{\max} = w L^{2} / 2$ at the wall.
 - **Cantilever with end couple $C$:** $V = 0$, $M = C$ constant over the whole length.
@@ -133,7 +133,7 @@ For the **point load at $a$ from the left and $b$ from the right**, the reaction
 $$
 M_{\max} = \frac{P b}{L} \times a = \frac{P a b}{L} ,
 $$
-which for $a = b = L / 2$ reduces to $P L / 4$. The remaining rows follow the same way; note in particular that a central couple produces a **constant** shear of $C / L$ and a moment diagram with a step, so the maximum moment is the couple itself and is reached immediately beside the applied couple, not at mid-span.
+which for $a = b = L / 2$ reduces to $P L / 4$. The remaining rows follow the same way; note in particular that a central couple produces a **constant** shear of $C / L$ and a moment diagram with a step, and the moment jumps from $- C / 2$ to $+ C / 2$ there, so the maximum moment is half the couple and is reached immediately beside it. For a couple at $a$ from the left and $b$ from the right the extreme moment is $C \max (a, b) / L$, beside the couple, not at mid-span.
 :::
 
 ## Where the maxima are
@@ -189,7 +189,7 @@ with $R_A$ downward and $R_B$ upward for a clockwise applied couple.
 $$
 M(1.5^{-}) = - 11.25\ \mathrm{kN\,m},
 $$
-**jumps up by $30$** to $+ 18.75\ \mathrm{kN\,m}$, then rises with slope $- 7.5$... no: with $V = - 7.5$ it continues to fall, and
+**jumps up by $30$** to $+ 18.75\ \mathrm{kN\,m}$, then, since $V = - 7.5$, falls again with slope $- 7.5$ to
 $$
 M(4) = 18.75 - 7.5 \times 2.5 = 0 . \checkmark
 $$
@@ -235,7 +235,7 @@ to the cantilever tip and takes $7.5\ \mathrm{kN}$ at $D$.
 $$
 R_A \times 4 + 7.5 \times 2 = 0 \quad\Longrightarrow\quad R_A = - 3.75\ \mathrm{kN}, \qquad R_B = 11.25\ \mathrm{kN}.
 $$
-**Moments.** $M$ rises from zero at $A$ with slope $- 3.75$ to
+**Moments.** $M$ falls from zero at $A$ with slope $- 3.75$ to
 $$
 M_B = - 3.75 \times 4 = - 15\ \mathrm{kN\,m},
 $$
@@ -254,7 +254,7 @@ Three failure modes recur when engineers read someone else's diagrams. First, **
 :::
 
 ::: history
-The graphical method of drawing shear and moment diagrams is a product of railway bridge design in the 1850s and 1860s, when the arrival of moving locomotive loads made the maximum bending moment in a span a moving-load problem rather than a static one. Sir William John Macquorn Rankine set out the method in his *Manual of Civil Engineering* of 1858, where the bending moment is defined as the algebraic sum of the moments of the forces on one side and the "bending moment diagram" is drawn to scale for a variety of load cases; his treatment is essentially what is taught today, and his notation for it survives in British practice. The differential relationship $\mathrm{d} M / \mathrm{d} x = V$ had appeared earlier, in the work of Claude-Louis Navier and in the girder theories of William Fairbairn, whose experiments on wrought-iron plates of the 1840s established empirically that the failure of a plate girder was governed by the maximum moment at mid-span. The moving-load envelope — the diagram of maximum moment at every section as a train crosses — is due to Émile Weyrauch and, in the form still used for bridge design, to the German school of the 1870s, and it remains the reason every bridge code publishes a load model rather than a load.
+Shear-force and bending-moment diagrams grew out of the iron bridges and girders of the mid-nineteenth century. The bending moment as the sum of the moments of the forces on one side of a section, and the relation $\mathrm{d} M / \mathrm{d} x = V$, were already used by Navier in his *Résumé des leçons* of 1826, and the tests by William Fairbairn and Eaton Hodgkinson on wrought-iron tubes for the Britannia and Conwy bridges in 1845–46 made the moment at the critical section the central design quantity. Rankine's *Manual of Applied Mechanics* (1858) tabulated shear and moment for the standard beams and loads, and Karl Culmann's *Die graphische Statik* (1866) made drawing to scale — force polygons, funicular polygons and moment diagrams — a complete design method. Moving loads led to the influence line, introduced independently by Emil Winkler and by Otto Mohr in 1867–68, from which the envelope of maximum moment at every section as a train crosses is constructed; it remains the reason every bridge code publishes a load model rather than a single load.
 :::
 
 ::: quiz
@@ -345,15 +345,15 @@ $$
 M_{\max} = \frac{w L^{2}}{8} = \frac{18 \times 25}{8} = 56.25\ \mathrm{kN\,m}, \qquad
 Z_{\text{req}} = \frac{56.25 \times 10^{6}}{165} = 341 \times 10^{3}\ \mathrm{mm^{3}} .
 $$
-A $254 \times 102\ \mathrm{UB}\ 22$ has $Z_x = 271 \times 10^{3}\ \mathrm{mm^{3}}$ — too small. A $305 \times 102\ \mathrm{UB}\ 25$ has $Z_x = 373 \times 10^{3}\ \mathrm{mm^{3}}$, which is adequate with $M = 373 \times 10^{3} \times 165 = 61.5\ \mathrm{kN\,m}$ of capacity.
+From the UK section tables (BS 4-1), a $254 \times 102\ \mathrm{UB}\ 22$ has an elastic modulus $Z_x \approx 225 \times 10^{3}\ \mathrm{mm^{3}}$ and a $305 \times 102\ \mathrm{UB}\ 25$ about $290 \times 10^{3}\ \mathrm{mm^{3}}$ — both too small. A $254 \times 146\ \mathrm{UB}\ 31$ (depth $251\ \mathrm{mm}$, web $6.0\ \mathrm{mm}$) has $Z_x \approx 351 \times 10^{3}\ \mathrm{mm^{3}}$, which is adequate with $M = 351 \times 10^{3} \times 165 = 57.9\ \mathrm{kN\,m}$ of capacity.
 
-**Shear check.** $V_{\max} = 18 \times 5 / 2 = 45\ \mathrm{kN}$, and taking the web depth as $290\ \mathrm{mm}$,
+**Shear check.** $V_{\max} = 18 \times 5 / 2 = 45\ \mathrm{kN}$, and taking the web area as the web thickness times the overall depth, $6 \times 251\ \mathrm{mm^{2}}$,
 $$
-\tau = \frac{45 \times 10^{3}}{6 \times 290} = 25.9\ \mathrm{MPa},
+\tau = \frac{45 \times 10^{3}}{6 \times 251} = 29.9\ \mathrm{MPa},
 $$
 comfortably below the typical $0.4 \sigma_y$ web allowance.
 
-*Design comment.* The beam is bending-governed by a wide margin, which is normal for spans above about fifteen times the depth. The selected section is $25\ \mathrm{kg / m}$, so its own weight contributes $0.25\ \mathrm{kN / m}$ of the $18$ — the "including its own weight" phrase is doing almost nothing here, but on a long span with a heavy load it can be worth several per cent, and a design that ignores it and then adds a margin has made two errors instead of one.
+*Design comment.* The beam is bending-governed by a wide margin, which is normal for spans above about fifteen times the depth. The selected section is $31\ \mathrm{kg / m}$, so its own weight contributes $0.30\ \mathrm{kN / m}$ of the $18$ — the "including its own weight" phrase is doing almost nothing here, but on a long span with a heavy load it can be worth several per cent, and a design that ignores it and then adds a margin has made two errors instead of one.
 :::
 :::
 

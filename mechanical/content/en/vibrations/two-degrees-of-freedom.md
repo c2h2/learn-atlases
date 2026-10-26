@@ -17,17 +17,6 @@ There are $n - 1 = 2$ antiresonances in a three-degree-of-freedom driving-point 
 :::
 :::
 
-::: quiz
-The driving-point receptance of a three-degree-of-freedom proportionally damped system has resonances at 40, 90 and 150 Hz. Between 40 and 90 Hz there is:
-- [ ] Another resonance, because modes come in pairs
-- [x] Exactly one antiresonance, at which the driven point does not move
-- [ ] A frequency band over which the response is in phase with the static deflection and nothing else changes
-- [ ] Nothing special, because only the resonances matter
-::: solution
-There are $n - 1 = 2$ antiresonances in a three-degree-of-freedom driving-point receptance, one between each pair of resonances. At an antiresonance the driven coordinate is **stationary** while the rest of the structure moves, because the reaction forces from the other masses exactly balance the applied force there. This is why a modal survey driven from a single point can miss a mode entirely — drive at that mode's antiresonance and its residue is zero — and why the standard practice is to drive from at least two widely separated points, or to use a shaker with a stinger into a point chosen by a preliminary global positioning of the accelerometers.
-:::
-:::
-
 ## Two degrees of freedom
 
 ::: definition Equations of motion and the eigenproblem {#def-eigenproblem}
@@ -79,7 +68,7 @@ $$
 $$
 defining the **modal mass** $m_r$ and **modal stiffness** $k_r$ of each mode. $\checkmark$
 
-*Note.* The modal masses are not equal and their sum is the total mass only when the mode shapes are normalised to the **mass** convention; the more useful normalisation for dynamics is to set $m_r = 1$, and the more useful for interpreting a model is to set the largest component of each mode to unity. Which convention a package uses is worth knowing before comparing two models.
+*Note.* The modal masses $m_r$ depend on how the mode shapes are scaled, so on their own they are not physical quantities; the effective modal masses $M_r^{*}$ defined above are, and they sum to the total mass. The most useful normalisation for computation is $m_r = 1$ (mass normalisation), and the most useful for interpreting a model is to set the largest component of each mode to unity. Which convention a package uses is worth knowing before comparing two models.
 :::
 
 ::: theorem Modal expansion and the receptance {#thm-modal-expansion}
@@ -98,7 +87,7 @@ With $\mathbf{x} = \boldsymbol{\Phi} \mathbf{q}$, premultiplying $\mathbf{M} \dd
 $$
 \alpha_{ij} (\omega ) = \sum_r \frac{\phi_r (i ) \phi_r (j )}{k_r - \omega^{2} m_r} .
 $$
-This is a sum of $n$ terms each with a pole at a natural frequency, so the response has $n$ resonances. Between consecutive poles each term changes sign once, and since the sum tends to $\sum_r \phi_r (i ) \phi_r (j ) / k_r = \alpha_{ij} (0 )$ at zero frequency and to zero as $\omega$ tends to infinity, the numerator — a polynomial of degree $n - 1$ in $\omega^{2}$ — has $n - 1$ real roots. **There is therefore an antiresonance between every pair of resonances** in a proportionally damped system. $\checkmark$
+This is a sum of $n$ terms each with a pole at a natural frequency, so the response has $n$ resonances. For a **driving-point** receptance ($i = j$) every residue $\phi_r (i )^{2} / m_r$ is positive, so just above each pole the sum is large and negative and just below the next pole it is large and positive; being continuous in between, it must cross zero. **There is therefore an antiresonance between every pair of resonances** of a driving-point receptance, $n - 1$ in all. For a transfer receptance ($i \ne j$) the residues can have either sign, and an antiresonance between two resonances may be absent. $\checkmark$
 
 *Note.* The antiresonance is the reason a vibration absorber works, the reason a shaker sometimes cannot excite a structure at a frequency where the structure is plainly moving, and the reason a modal survey must be driven from several points: drive at an antiresonance and the mode is invisible, no matter how sensitive the instrument.
 :::
@@ -127,7 +116,7 @@ $$
 $$
 *Check.* $\omega_1^{2} = k / m$ and $\omega_2^{2} = 3 k / m$ for this symmetric system, and $3 \times 800 / 2 = 1200$ $\checkmark$
 
-*Sanity.* The two modes are the **in-phase** and **out-of-phase** motions, and the out-of-phase one is $\sqrt{3}$ times as stiff because the middle spring is stretched as well as the two outer ones. This is the whole of the "two identical systems coupled" story: coupling splits a single frequency into a **doublet** whose separation measures the coupling strength, and a measured doublet is how a modal engineer finds a loose bolt, a cracked flange or an unintended contact — the two halves of a structure that were designed to move together are found to move at slightly different frequencies, and the split tells you how weak the connection has become.
+*Sanity.* The two modes are the **in-phase** and **out-of-phase** motions, and the out-of-phase one is three times as stiff ($\sqrt{3}$ times the frequency) because the middle spring is stretched as well as the two outer ones. This is the whole of the "two identical systems coupled" story: coupling splits a single frequency into a **doublet** whose separation measures the coupling strength, and a measured doublet is how a modal engineer finds a loose bolt, a cracked flange or an unintended contact — the two halves of a structure that were designed to move together are found to move at slightly different frequencies, and the split tells you how weak the connection has become.
 :::
 :::
 
@@ -148,7 +137,7 @@ t = \frac{\pi}{\Delta \omega} = \frac{\pi}{14.64} = 0.215\ \mathrm{s}.
 $$
 At that instant mass 2 carries the whole motion and mass 1 is exactly still.
 
-*Check.* At $t = 0.215\ \mathrm{s}$, $\cos \left( 7.32 t \right) = 0$ and $\sin \left( 7.32 t \right) = 1$, so $\left| x_2 \right| = d$ and $x_1 = 0$ exactly. $\checkmark$
+*Check.* At $t = 0.215\ \mathrm{s}$, $\cos \left( 7.32 t \right) = 0$ and $\sin \left( 7.32 t \right) = 1$, so the envelope of $x_2$ is $d$ and $x_1 = 0$ exactly. $\checkmark$
 
 *Sanity.* Energy migrates from one mass to the other and back with a period of $0.43\ \mathrm{s}$, and this is the mechanism behind every **beating** signature in a vibration spectrum: two closely spaced peaks that a technician reports as "the bearing is failing" are often two modes of a lightly coupled structure exchanging energy. It is also the operating principle of the **vibrational energy sink** — a light attachment tuned near the host's frequency, which does not isolate the host but **drains** energy out of it over a fraction of a second, and which works whether or not the host is being forced at that frequency, unlike a classical absorber.
 :::
@@ -166,10 +155,9 @@ $$
 **Antiresonance.** The machine alone has $\sqrt{k_1 / m_1} / 2 \pi = 50.3\ \mathrm{Hz}$, and the bracket alone $\sqrt{k_2 / m_2} / 2 \pi = 50.3\ \mathrm{Hz}$; the antiresonance of the driven point is at exactly that frequency.
 **Response to $1\ \mathrm{kN}$:**
 
-- at $43.0\ \mathrm{Hz}$: $0.376\ \mathrm{mm}$ on the machine, $1.02\ \mathrm{mm}$ on the bracket
-- at $50.3\ \mathrm{Hz}$: $0.000\ \mathrm{mm}$ on the machine, $1.00\ \mathrm{mm}$ on the bracket
-- at $58.9\ \mathrm{Hz}$: $0.376\ \mathrm{mm}$ on the machine, $- 1.02\ \mathrm{mm}$ on the bracket
-- static: $0.100\ \mathrm{mm}$
+- at $43.0$ and $58.9\ \mathrm{Hz}$: unbounded without damping, in mode shapes with bracket-to-machine amplitude ratios of $+ 3.70$ and $- 2.70$
+- at $50.3\ \mathrm{Hz}$: $0.000\ \mathrm{mm}$ on the machine, $1.00\ \mathrm{mm}$ on the bracket, in antiphase with the force
+- static: $0.100\ \mathrm{mm}$ on both
 
 *Sanity.* The machine is held still at $50.3\ \mathrm{Hz}$ by the bracket, which is at that frequency oscillating with an amplitude that makes the force it delivers through the joint exactly cancel the applied force. This is a **tuned vibration absorber**, arrived at by accident: any light appendage whose natural frequency coincides with a machine's running speed will protect it, and the same fact is a trap for the test engineer, because a structure driven at one of its own antiresonances appears to be rigidly stiff and the mode that is plainly there in the accelerometer record never appears in the hammer input.
 :::
@@ -180,7 +168,7 @@ A three-storey building model has identical floor masses $m$ and identical store
 ::: solution
 $$
 \frac{\omega_p}{\omega_0} = 2 \sin \frac{\left( 2 p - 1 \right) \pi}{14}, \qquad
-\phi_p (j ) = \sin \frac{p j \pi}{7}, \qquad \omega_0 = \sqrt{k / m},
+\phi_p (j ) = \sin \frac{\left( 2 p - 1 \right) j \pi}{7}, \qquad \omega_0 = \sqrt{k / m},
 $$
 giving, normalised to a unit top-floor displacement,
 
@@ -190,16 +178,16 @@ giving, normalised to a unit top-floor displacement,
 
 **Effective modal mass** $\left( \boldsymbol{\phi}^{\mathrm{T}} \mathbf{M} \boldsymbol{\iota} \right)^{2} / \left( \boldsymbol{\phi}^{\mathrm{T}} \mathbf{M} \boldsymbol{\phi} \right)$, which is independent of the normalisation: $2.742\ m$, $0.225\ m$ and $0.033\ m$, that is $91.4$, $7.5$ and $1.1$ per cent of the total mass.
 
-*Check.* The modal masses sum to $3.0\ m$, the total mass of the system, as they must. $\checkmark$
+*Check.* The effective modal masses sum to $3.0\ m$, the total mass of the system, as they must. $\checkmark$
 
 *Sanity.* The first mode carries ninety-one per cent of the mass and the other two together carry less than nine, which is the quantitative statement of the engineer's habit of treating a building as a single-degree-of-freedom oscillator. It is also the reason a **base-shear** calculation works, and the reason it fails for a slender chimney, a long bridge or a tall flexible tower, where the second mode's seven and a half per cent can dominate the response because the ground motion contains far more energy at the second mode's frequency than at the first.
 :::
 :::
 
 ::: example Modal damping {#ex-modal-damping}
-A shaker test on a bracket gives damping ratios of $1.2$ per cent at the first mode and $3.8$ per cent at the third. A service excitation at $200\ \mathrm{Hz}$ falls between the modes. Estimate the response and say what the modal-damping assumption is doing.
+A shaker test on a bracket gives damping ratios of $1.2$ per cent at the first mode ($60\ \mathrm{Hz}$) and $3.8$ per cent at the third ($240\ \mathrm{Hz}$). A service excitation at $200\ \mathrm{Hz}$ falls between the modes. Estimate the response and say what the modal-damping assumption is doing.
 ::: solution
-The damping matrix is not proportional, so the modes are not exactly orthogonal to it and the equations do not decouple. Writing $\mathbf{C} = \alpha \mathbf{M} + \beta \mathbf{K}$ and fitting the two measured values,
+The real damping matrix is unknown and in general not proportional, so the modes would not decouple it exactly. The usual engineering step is to assume proportional damping, writing $\mathbf{C} = \alpha \mathbf{M} + \beta \mathbf{K}$ and fitting the two measured values,
 $$
 \zeta_r = \frac{\alpha}{2 \omega_r} + \frac{\beta \omega_r}{2}, \qquad
 \begin{cases} 0.012 = \alpha / \left( 2 \omega_1 \right) + \beta \omega_1 / 2 \\ 0.038 = \alpha / \left( 2 \omega_3 \right) + \beta \omega_3 / 2 \end{cases}
@@ -234,12 +222,12 @@ f = 1.836 f_s \text{ and } 0.908 f_s = 330\ \mathrm{Hz} \text{ and } 163\ \mathr
 $$
 The skin's resonance falls from $180$ to $163\ \mathrm{Hz}$ and a second peak appears at $330\ \mathrm{Hz}$.
 
-*Design comment.* A stiff, light, well-supported panel is nearly transparent to the skin's dynamics, and the shift of seven per cent is within the scatter of a built-up structure. What is **not** acceptable is the usual shortcut of bolting a heavy panel to a light skin and analysing them separately: if the panel were $40\ \mathrm{kg}$ rather than $6\ \mathrm{kg}$ the mass ratio would be unity and the two coupled frequencies would be $0.675$ and $2.47$ times the original, so the skin's resonance would fall from $180$ to $122\ \mathrm{Hz}$ and land squarely on an excitation that had been avoided. The rule of thumb is that a secondary structure may not exceed about a tenth of the **modal** mass of the primary structure at the point of attachment, and this is why avionics boxes are mounted to frames rather than to panels.
+*Design comment.* A stiff, light, well-supported panel is nearly transparent to the skin's dynamics, and the shift of nine per cent is within the scatter of a built-up structure. What is **not** acceptable is the usual shortcut of bolting a heavy panel to a light skin and analysing them separately: if the panel were $40\ \mathrm{kg}$ rather than $6\ \mathrm{kg}$ the mass ratio would be unity and the two coupled frequencies would be $0.675$ and $2.47$ times the original, so the skin's resonance would fall from $180$ to $122\ \mathrm{Hz}$ and land squarely on an excitation that had been avoided. The rule of thumb is that a secondary structure may not exceed about a tenth of the **modal** mass of the primary structure at the point of attachment, and this is why avionics boxes are mounted to frames rather than to panels.
 :::
 :::
 
 ::: widget plot
-f: 1/(1+abs((0.1 - x*x)/((1.1 - x*x)*(0.1 - x*x) - 0.01)))
+f: 1/(1+abs((0.1 - 0.1*x*x)/((1.1 - x*x)*(0.1 - 0.1*x*x) - 0.01)))
 x: 0.05, 2.5
 y: 0, 1
 labels: 1/(1+|X1|/static)
@@ -247,7 +235,7 @@ caption: "Driving-point response of a two-degree-of-freedom system: a primary os
 :::
 
 ::: history
-The **normal modes** of a coupled system were found by Daniel Bernoulli in 1753 for strings, put on a general algebraic footing by **Lagrange** in the *Mécanique analytique* of 1788, and stated in the form used here — the eigenproblem of two symmetric matrices — by **Euler**, **Cauchy** and, for continuous systems, **Rayleigh**, whose *Theory of Sound* of 1877 contains the energy methods, the orthogonality argument and the perturbation formulae that every vibration course still reproduces. **Courant and Hilbert** made the spectral theorem rigorous in 1924. The **dynamical vibration absorber** was patented by **Frahm** in 1909 and analysed by **Ormsby**, **Rittenhouse** and **Den Hartog**, whose 1931 paper with Hudson gave the optimum absorber design still used unchanged. **Orthogonality** was exploited for structures by **Baker** and by **Glauert** in the 1930s flutter work; the systematic **modal analysis** of large structures begins with the matrix-iteration and relaxation methods of **Southwell**, **Runge** and **Ritz**, and the experimental discipline dates from the transfer-impedance measuring sets of the 1950s and **Kennedy and Panofsky**'s beam instrumentation. The word **antiresonance** entered the literature with the electrical filter literature of the 1920s and passed into mechanical engineering with the absorber literature of the same decade.
+The **normal modes** of a coupled system go back to Daniel Bernoulli's superposition of harmonics for the vibrating string (1753) and were put on a general footing by **Lagrange** in the *Mécanique analytique* of 1788, whose equations of motion for small oscillations lead directly to the eigenproblem of two symmetric matrices used here. **Rayleigh**'s *Theory of Sound* (1877–1878) gave the energy methods, the orthogonality argument and the perturbation formulae that every vibration course still reproduces, and **Ritz**'s method of 1909 turned assumed shapes into a systematic approximation. The **dynamic vibration absorber** was patented by **Frahm** (applied for in 1909), its damped theory was published by **Ormondroyd** and **Den Hartog** in 1928, and Den Hartog's *Mechanical Vibrations* (1934) gave the optimum-tuning rules still in use. Experimental modal analysis grew from the vector plots of measured frequency response introduced by **Kennedy** and **Pancu** in 1947 to the FFT-based methods of the 1970s.
 :::
 
 ## Where this leads
@@ -307,7 +295,7 @@ $$
 \qquad
 \boldsymbol{\phi}_1 = \left( 1 , 1 \right), \ \boldsymbol{\phi}_2 = \left( 1 , - 1 \right) .
 $$
-*Sanity.* The answer is identical to Example 1 because only the ratio $k / m$ matters; the system is the same system scaled. This scale invariance is the reason a one-tenth-scale model of a machine reproduces the prototype's frequencies only if the model material is $\sqrt{10}$ times stiffer per unit density, which is why scale models of large structures are made of special polymers or are tested in a different fluid rather than built to scale in steel.
+*Sanity.* The answer is identical to Example 1 because only the ratio $k / m$ matters; the system is the same system scaled. More generally, the frequencies of geometrically similar structures scale as $\left( 1 / L \right) \sqrt{E / \rho}$, so a one-tenth-scale steel model has ten times the prototype's frequencies; scale-model results are therefore read through similitude laws rather than directly.
 :::
 :::
 
@@ -346,15 +334,15 @@ $$
 :::
 
 ::: exercise Shear frame {level=2}
-For the frame of Example 5, find the storey shears in each mode if the frame is subjected to a base acceleration $a$, and hence the modal participation factors.
+For the frame of Example 4, find the storey shears in each mode if the frame is subjected to a base acceleration $a$, and hence the modal participation factors.
 ::: solution
-The load vector for a base acceleration $a$ is $\mathbf{F} = a m \left( 1 , 1 , 1 \right)$, so the modal force is $Q_r = \boldsymbol{\phi}_r^{\mathrm{T}} \mathbf{F}$ and with the normalisation of Example 5,
+The load vector for a base acceleration $a$ is $\mathbf{F} = a m \left( 1 , 1 , 1 \right)$, so the modal force is $Q_r = \boldsymbol{\phi}_r^{\mathrm{T}} \mathbf{F}$ and with the normalisation of Example 4,
 $$
 Q_1 = 2.247 \, a m, \qquad Q_2 = - 0.802 \, a m, \qquad Q_3 = 0.555 \, a m,
 $$
-with generalised masses $m_r = \boldsymbol{\phi}_r^{\mathrm{T}} \mathbf{M} \boldsymbol{\phi}_r$ of $1.841\ m$, $2.863\ m$ and $9.296\ m$. The participation factors $\Gamma_r = Q_r / m_r$ are therefore
+with generalised masses $m_r = \boldsymbol{\phi}_r^{\mathrm{T}} \mathbf{M} \boldsymbol{\phi}_r$ of $1.841\ m$, $2.863\ m$ and $9.296\ m$. The participation factors $\Gamma_r = Q_r / \left( a m_r \right)$ are therefore
 $$
-\Gamma_1 = 1.221\, a, \qquad \Gamma_2 = - 0.280\, a, \qquad \Gamma_3 = 0.060\, a,
+\Gamma_1 = 1.221, \qquad \Gamma_2 = - 0.280, \qquad \Gamma_3 = 0.060,
 $$
 and the effective modal masses $Q_r^{2} / \left( a m_r \right)$ recover $2.742\ m$, $0.225\ m$ and $0.033\ m$, summing to the total mass of $3\ m$.
 *Sanity.* For **displacement** the modes contribute in the ratio of their effective masses, $91 : 7.5 : 1.1$, and a one-mode answer is excellent. For **acceleration** they contribute in the ratio $M_r^{*} \omega_r^{2}$, which is $0.543 : 0.350 : 0.107$, so the third mode — which carries one per cent of the mass — supplies eleven per cent of the floor acceleration. This is the arithmetic behind the code requirement to combine modal contributions by the square root of the sum of squares rather than by keeping the first, and it is why a response-spectrum analysis for **acceleration-sensitive** contents needs many more modes than one for base shear.
@@ -364,7 +352,7 @@ and the effective modal masses $Q_r^{2} / \left( a m_r \right)$ recover $2.742\ 
 ::: exercise Absorber {level=3}
 For the system of Example 3, halve the bracket stiffness and recompute the two resonances and the antiresonance. What does the change do to the machine's response at $50.3\ \mathrm{Hz}$?
 ::: solution
-With $k_2 = 0.5\ \mathrm{MN / m}$ the bracket's own frequency falls to $35.6\ \mathrm{Hz}$, the resonances move to $34.1$ and $52.6\ \mathrm{Hz}$, and the antiresonance moves with the bracket to $35.6\ \mathrm{Hz}$. At $50.3\ \mathrm{Hz}$ the machine's response is no longer zero but $0.99\ \mathrm{mm}$ — ten times the static deflection and nearly three times the unshielded resonance.
+With $k_2 = 0.5\ \mathrm{MN / m}$ the bracket's own frequency falls to $35.6\ \mathrm{Hz}$, the resonances move to $34.1$ and $52.6\ \mathrm{Hz}$, and the antiresonance moves with the bracket to $35.6\ \mathrm{Hz}$. At $50.3\ \mathrm{Hz}$ the machine's response is no longer zero but $1.00\ \mathrm{mm}$ — ten times the static deflection — and the machine is now close to the new upper resonance at $52.6\ \mathrm{Hz}$.
 *Sanity.* The antiresonance is **not** a property of the combined system but of the attachment, and it sits exactly at the attachment's own natural frequency. Halving the bracket stiffness therefore destroys the protection at the running speed while creating a new, unasked-for cancellation at $35.6\ \mathrm{Hz}$. This is the whole of absorber **detuning** — a bolted joint that loosens, a bracket that cracks, or a rubber mount that softens with age moves the antiresonance away from the speed it was protecting, and the machine's vibration returns in full. It is also why an absorber must be inspected for its frequency, not its appearance, and why a rubber-mounted absorber is a poor design where the rubber ages.
 :::
 :::

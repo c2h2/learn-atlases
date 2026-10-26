@@ -7,7 +7,7 @@ The reason the subject repays the effort is that **almost every hard problem in 
 $$
 \frac{D \mathbf{V}}{D t} = \frac{\partial \mathbf{V}}{\partial t} + \left( \mathbf{V} \cdot \nabla \right) \mathbf{V}
 $$
-and the second term — the **convective** acceleration — is present in **steady** flow and is usually the larger. Fluid in a steady nozzle accelerates at $10\ g$ while nothing at any point changes with time, and a reader trained on rigid-body dynamics looks for the unsteady term, finds zero, and concludes nothing is happening. **Assuming a velocity field is incompressible because it looks smooth.** Continuity is a statement about **divergence**, and $\mathbf{V} = \left( x^{2}, y^{2}, 0 \right)$ is smooth, steady and two-dimensional and violates continuity by $2 x + 2 y$. Every velocity field must be tested, and the test takes ten seconds. **Setting $\nabla \times \mathbf{V} = 0$ and then using a velocity profile with shear.** A uniform stream has zero vorticity; a boundary layer, a pipe's Poiseuille profile and a free vortex's core all have vorticity, and the free vortex is the trap — its vorticity is zero **everywhere except at the origin**, where it is infinite, and the circulation is nonzero. An irrotational analysis of a vortex is correct everywhere and misses the whole of its structure. **Applying Bernoulli across a streamline in a rotational flow.** The constant in $p / \rho + V^{2} / 2 + g z$ is **the same on every streamline only if the flow is irrotational**, and in a pipe's fully developed profile, a turbine's wake and a atmospheric boundary layer it is not. Using a free-stream Bernoulli constant at a wall gives a pressure that is wrong by an amount of order $\tfrac{1}{2} \rho U^{2}$, which is the whole of the pressure difference you were trying to measure. **Adding two potential flows and forgetting the singularity you created.** A source plus a uniform stream has a stagnation point at which the velocity is **zero** and the pressure is the stagnation pressure; a source plus a sink plus a uniform stream has two. A doublet at a corner produces an infinite velocity, and a panel method that puts a collocation point on a panel edge rather than at its centre reads that infinity as an answer. **Treating the stream function as though it were a potential.** $\phi$ and $\psi$ are conjugate: the velocity is $\nabla \phi$ and is **perpendicular** to $\nabla \psi$. A student who differentiates $\psi$ with the wrong sign gets a flow rotated by ninety degrees, and because the streamlines of many textbook examples are symmetric the error is invisible until the drag comes out sideways.
+and the second term — the **convective** acceleration — is present in **steady** flow and is usually the larger. Fluid in a steady nozzle accelerates at $10\ g$ while nothing at any point changes with time, and a reader trained on rigid-body dynamics looks for the unsteady term, finds zero, and concludes nothing is happening. **Assuming a velocity field is incompressible because it looks smooth.** Continuity is a statement about **divergence**, and $\mathbf{V} = \left( x^{2}, y^{2}, 0 \right)$ is smooth, steady and two-dimensional and violates continuity by $2 x + 2 y$. Every velocity field must be tested, and the test takes ten seconds. **Setting $\nabla \times \mathbf{V} = 0$ and then using a velocity profile with shear.** A uniform stream has zero vorticity; a boundary layer, a pipe's Poiseuille profile and a free vortex's core all have vorticity, and the free vortex is the trap — its vorticity is zero **everywhere except at the origin**, where it is infinite, and the circulation is nonzero. An irrotational analysis of a vortex is correct everywhere and misses the whole of its structure. **Applying Bernoulli across a streamline in a rotational flow.** The constant in $p / \rho + V^{2} / 2 + g z$ is **the same on every streamline only if the flow is irrotational**, and in a pipe's fully developed profile, a turbine's wake and an atmospheric boundary layer it is not. Using a free-stream Bernoulli constant at a wall gives a pressure that is wrong by an amount of order $\tfrac{1}{2} \rho U^{2}$, which is the whole of the pressure difference you were trying to measure. **Adding two potential flows and forgetting the singularity you created.** A source plus a uniform stream has a stagnation point at which the velocity is **zero** and the pressure is the stagnation pressure; a source plus a sink plus a uniform stream has two. A doublet at a corner produces an infinite velocity, and a panel method that puts a collocation point on a panel edge rather than at its centre reads that infinity as an answer. **Treating the stream function as though it were a potential.** $\phi$ and $\psi$ are conjugate: the velocity is $\nabla \phi$ and is **perpendicular** to $\nabla \psi$. A student who differentiates $\psi$ with the wrong sign gets a flow rotated by ninety degrees, and because the streamlines of many textbook examples are symmetric the error is invisible until the drag comes out sideways.
 :::
 
 ## Describing a flow
@@ -40,7 +40,7 @@ $$
 a_x = u \frac{\partial u}{\partial x} = \frac{U_0^{2}}{L} \left( 1 + \frac{x}{L} \right)
 $$
 For $U_0 = 2\ \mathrm{m / s}$ and $L = 0.5\ \mathrm{m}$: $a_x$ rises from $8\ \mathrm{m / s^{2}}$ at the inlet to $16\ \mathrm{m / s^{2}}$ at the exit — **$1.6\ g$ in a steady flow**, produced entirely by the fluid moving to a place where the velocity is different.
-**The number that makes a Venturi's throat a cavitation problem.** Scaling: $a \sim U^{2} / L$, so halving the throat length **doubles** the acceleration and the pressure gradient that drives it. For $U = 20\ \mathrm{m / s}$ and $L = 20\ \mathrm{mm}$ the acceleration is $20{,}000\ \mathrm{m / s^{2}} = 2{,}000\ g$, and the pressure gradient needed is $\rho a = 20\ \mathrm{MPa / m}$ — over a metre of which the drop exceeds the vapour pressure of water. **Every cavitating Venturi is designed on this scaling and not on the pressure alone.**
+**The number that makes a Venturi's throat a cavitation problem.** Scaling: $a \sim U^{2} / L$, so halving the throat length **doubles** the acceleration and the pressure gradient that drives it. For $U = 20\ \mathrm{m / s}$ and $L = 20\ \mathrm{mm}$ the acceleration is $20{,}000\ \mathrm{m / s^{2}} = 2{,}000\ g$, and the pressure gradient needed is $\rho a = 20\ \mathrm{MPa / m}$ — a drop of $0.4\ \mathrm{MPa}$, four atmospheres, across the $20\ \mathrm{mm}$ throat entry, which is why a short, fast throat reaches the vapour pressure of water so easily.
 **The four line types.**
 $$
 \begin{array}{l l l}
@@ -51,7 +51,7 @@ $$
 \end{array}
 $$
 **All four coincide in steady flow**, and the fact that a streamline cannot be crossed by fluid is what makes the streamline a natural boundary for a control volume.
-**The worked case: an unsteady field where they differ.** $\mathbf{V} = \left( a t - b y,\ b x,\ 0 \right)$ with $a, b$ constants: at any instant the streamlines are circles displaced by $a t / b$, while the pathlines are **spirals**, and a dye released at a point traces a **cycloid-like streakline**. **This is the flow in a stirred tank near the wall, and it is why a stirrer's blend time cannot be predicted from a single steady-state CFD solution.**
+**The worked case: an unsteady field where they differ.** $\mathbf{V} = \left( a t - b y,\ b x,\ 0 \right)$ with $a, b$ constants: at any instant the streamlines are circles centred at $\left( 0, a t / b \right)$, while the pathlines are **trochoids** (cycloid-like curves) drifting in the $y$ direction at the mean speed $a / b$, and a dye released at a point traces yet another curve, its streakline. **A single snapshot of an unsteady velocity field therefore says nothing reliable about where fluid goes.**
 :::
 
 ::: definition Continuity {#def-continuity}
@@ -86,7 +86,7 @@ $$
 $$
 \frac{1}{V} \frac{d V}{d x} = - \frac{1}{A} \frac{d A}{d x}
 $$
-**The number that decides a wind tunnel's contraction ratio.** A $10\ \mathrm{m}$ settling chamber feeding a $1\ \mathrm{m}$ test section gives $V \propto 100$, and the acceleration length needed to keep the flow attached to the contraction walls — the classic **Bell and Mehta** shape, $\left( 1 + 25 e^{- 8 x / L} \right)$ — is set by the requirement that $d \left( \tfrac{1}{2} \rho V^{2} \right) / d x$ not exceed the boundary layer's ability to negotiate it. **A wind tunnel's contraction is a kinematics problem and its turbulence level is the answer.**
+**The number that decides a wind tunnel's contraction ratio.** A $10\ \mathrm{m}$ diameter settling chamber feeding a $1\ \mathrm{m}$ test section raises the velocity a hundredfold, and the contraction length needed to keep the flow attached to the contraction walls — with a smooth profile such as the fifth-order polynomial of **Bell and Mehta** — is set by the requirement that $d \left( \tfrac{1}{2} \rho V^{2} \right) / d x$ not exceed the boundary layer's ability to negotiate it. **A wind tunnel's contraction is a kinematics problem and its turbulence level is the answer.**
 :::
 
 ## The two scalar functions
@@ -96,7 +96,7 @@ $$
 $$
 u = \frac{\partial \psi}{\partial y}, \qquad v = - \frac{\partial \psi}{\partial x}
 \qquad \Longleftrightarrow \qquad
-\mathbf{V} = \frac{1}{\rho} \nabla \times \left( \psi \hat{\mathbf{k}} \right)
+\mathbf{V} = \nabla \times \left( \psi \hat{\mathbf{k}} \right)
 $$
 and the lines $\psi = $ constant are the **streamlines**, with the **volume flow rate between two of them equal to the difference in $\psi$**:
 $$
@@ -114,8 +114,8 @@ $$
 \text{Uniform } U \text{ along } x & U x = U r \cos \theta & U r \sin \theta = U y & \left( U, 0 \right) \\
 \text{Source } m \text{ at origin} & \dfrac{m}{2 \pi} \ln r & \dfrac{m}{2 \pi} \theta & v_r = \dfrac{m}{2 \pi r} \\
 \text{Sink } - m & - \dfrac{m}{2 \pi} \ln r & - \dfrac{m}{2 \pi} \theta & \text{inward} \\
-\text{Vortex } \Gamma & - \dfrac{\Gamma}{2 \pi} \theta & \dfrac{\Gamma}{2 \pi} \ln r & v_{\theta} = \dfrac{\Gamma}{2 \pi r} \\
-\text{Doublet } \mu \text{ facing } - x & - \dfrac{\mu \cos \theta}{2 \pi r} & - \dfrac{\mu \sin \theta}{2 \pi r} & \text{decays as } 1 / r^{2}
+\text{Vortex } \Gamma & \dfrac{\Gamma}{2 \pi} \theta & - \dfrac{\Gamma}{2 \pi} \ln r & v_{\theta} = \dfrac{\Gamma}{2 \pi r} \\
+\text{Doublet } \mu \text{ facing } - x & \dfrac{\mu \cos \theta}{2 \pi r} & - \dfrac{\mu \sin \theta}{2 \pi r} & \text{decays as } 1 / r^{2}
 \end{array}
 $$
 **The worked case: stagnation (corner) flow.** $\psi = x y$ gives
@@ -123,7 +123,7 @@ $$
 u = \frac{\partial \psi}{\partial y} = x, \qquad v = - \frac{\partial \psi}{\partial x} = - y
 $$
 Continuity: $\partial u / \partial x + \partial v / \partial y = 1 - 1 = 0$ ✓. Vorticity: $\partial v / \partial x - \partial u / \partial y = 0$ ✓ **irrotational**. Streamlines $x y = $ constant are rectangular hyperbolae, and the origin is a **stagnation point**. The velocity on the wall $y = 0$ is $u = x$, so the flow **accelerates linearly away from the wall's nose** — this is the idealisation of the flow at a wing's leading edge and at the nose of a pitot tube, and the associated pressure gradient $d p / d x = - \rho u\, du / d x = - \rho x$ is a **favourable** gradient that keeps the boundary layer attached.
-**The number that makes a stagnation-point heat transfer solvable.** Because $u_e \left( x \right) = C x$ is the **only** external-velocity variation for which the boundary-layer equations admit a **similar** solution (the Hiemenz flow of **1956**), the stagnation point is the one non-flat-plate case with an exact viscous solution — and the reason every heat-sink impingement-cooling correlation is built on it.
+**The number that makes a stagnation-point heat transfer solvable.** Because $u_e \left( x \right) = C x$ is a member of the Falkner–Skan family $u_e \propto x^{m}$ for which the boundary-layer equations admit **similar** solutions (here the Hiemenz flow of **1911**, an exact solution of the Navier–Stokes equations), the stagnation point has an exact viscous solution — the starting point of stagnation-point and impingement heat-transfer correlations.
 :::
 
 ::: definition The velocity potential and circulation {#def-phi}
@@ -157,15 +157,15 @@ $$
 $$
 \boxed{ L' = \rho U_{\infty} \Gamma } \qquad \text{(Kutta--Joukowski, 1902--1906)}
 $$
-For $\rho = 1.225$, $U = 60\ \mathrm{m / s}$ and $\Gamma = 12\ \mathrm{m^{2} / s}$: $L' = 882\ \mathrm{N / m}$ of span. **A twenty-four metre wing at $882\ \mathrm{N / m}$ carries $21{,}100\ \mathrm{N}$ — a light aircraft — and all the aerodynamics of the last century is the question of what sets $\Gamma$.**
+For $\rho = 1.225$, $U = 60\ \mathrm{m / s}$ and $\Gamma = 12\ \mathrm{m^{2} / s}$: $L' = 882\ \mathrm{N / m}$ of span. **A twenty-four metre wing at $882\ \mathrm{N / m}$ carries $21{,}200\ \mathrm{N}$ — a light aircraft — and all the aerodynamics of the last century is the question of what sets $\Gamma$.**
 :::
 
 ::: widget plot
-f: 1-4*pow(sin(x*pi/180),2); -1
+f: 1-4*pow(sin(x*pi/180),2); -1.2
 x: 0, 180
 y: -3.2, 1.2
 labels: Cp on a cylinder, potential flow; Cp on a real cylinder at Re = 1e5
-caption: The surface pressure coefficient $C_p = \left( p - p_{\infty} \right) / \left( \tfrac{1}{2} \rho U_{\infty}^{2} \right) = 1 - \left( v_{\theta} / U_{\infty} \right)^{2}$ against the angular position on a circular cylinder in a uniform stream. The potential-flow curve follows from $v_{\theta} = - 2 U_{\infty} \sin \theta$, is **symmetric fore and aft**, and gives zero drag by integration — d'Alembert's paradox in one line. The flat line at $C_p = - 1$ is the measured mean on the **rear** half of a real cylinder at a Reynolds number of $10^{5}$, where the boundary layer separates at $\theta \approx 82^{\circ}$ and the base pressure sits near $- 1.2$. **The $1.2$-unit deficit over the whole rear half is the pressure drag**, and the fact that a $12\ \%$ change in the base pressure coefficient — from tripping the boundary layer to turbulent, which moves separation to $120^{\circ}$ — cuts the drag by **a third** is the reason a golf ball has dimples and a cricket ball has a seam.
+caption: The surface pressure coefficient $C_p = \left( p - p_{\infty} \right) / \left( \tfrac{1}{2} \rho U_{\infty}^{2} \right) = 1 - \left( v_{\theta} / U_{\infty} \right)^{2}$ against the angular position on a circular cylinder in a uniform stream. The potential-flow curve follows from $v_{\theta} = - 2 U_{\infty} \sin \theta$, is **symmetric fore and aft**, and gives zero drag by integration — d'Alembert's paradox in one line. The flat line at $C_p = - 1.2$ is roughly the measured base pressure on the **rear** of a real cylinder at a Reynolds number of $10^{5}$, where the laminar boundary layer separates at $\theta \approx 80^{\circ}$. **The gap between the two curves over the rear half is the pressure drag.** Making the boundary layer turbulent — by roughness, or by reaching the drag crisis near $\mathrm{Re} \approx 3 \times 10^{5}$ — delays separation to beyond $100^{\circ}$, raises the base pressure and cuts the drag coefficient from about $1.2$ to about $0.3$, which is why a golf ball has dimples.
 :::
 
 ## Superposition and its uses
@@ -186,17 +186,17 @@ $$
 $$
 \sin \theta = - \frac{\Gamma}{4 \pi U a}
 $$
-and when $\Gamma > 4 \pi U a$ **they leave the surface**, which is the mathematical signature of a flow that no longer satisfies the Kutta condition. The lift is $L' = \rho U \Gamma$ and the drag remains **zero** — the paradox survives lift.
+and when $\Gamma > 4 \pi U a$ **they leave the surface** and merge into a single stagnation point in the flow off the cylinder. The lift is $L' = \rho U \Gamma$ and the drag remains **zero** — the paradox survives lift.
 **The Rankine half-body.** A source of strength $m$ in a uniform stream:
 $$
-\psi = U r \sin \theta - \frac{m}{2 \pi} \theta, \qquad
+\psi = U r \sin \theta + \frac{m}{2 \pi} \theta, \qquad
 r_{\mathrm{stag}} = \frac{m}{2 \pi U} \ \text{at}\ \theta = \pi
 $$
 and the body's half-thickness far downstream is
 $$
-h = \frac{m}{2 U}, \qquad \text{total volume per unit depth} = \frac{m}{U} = 2 h
+h = \frac{m}{2 U}, \qquad \text{total width} = \frac{m}{U} = 2 h
 $$
-**The number that sizes a pitot-probe support and an antenna mast.** The half-body is the shape of a **blunt-nosed strut** in an inviscid fluid, and the distance from the source to the nose is $h / \pi$ — so the body is **$\pi \approx 3.14$ times as wide as it is deep from source to nose**, and its nose radius is $0.69\ h$. That is the reason a **streamlined** body is long and thin and a **blunt** one is not.
+**The number that sizes a pitot-probe support and an antenna mast.** The half-body is the shape of a **blunt-nosed strut** in an inviscid fluid, and the distance from the source to the nose is $h / \pi$ — so the body's asymptotic **half-thickness is $\pi \approx 3.14$ times the source-to-nose distance**, and its nose radius is $0.48\ h$.
 **The Rankine oval.** A source–sink pair of strength $\pm m$ separated by $2 a$ in a stream $U$. Writing $l = m / \left( \pi U a \right)$, the half-length and half-thickness are
 $$
 \frac{L}{2 a} = \sqrt{1 + l}, \qquad
@@ -206,16 +206,16 @@ and the length-to-thickness ratio follows:
 $$
 \begin{array}{l c c c c}
 l = m / \left( \pi U a \right) & 0.5 & 1.0 & 2.0 & 5.0 \\
-B / \left( 2 a \right) & 0.53 & 0.86 & 1.30 & 2.16 \\
-L / B & 2.31 & 1.64 & 1.33 & 1.13
+B / \left( 2 a \right) & 0.54 & 0.86 & 1.31 & 2.16 \\
+L / B & 2.28 & 1.64 & 1.33 & 1.13
 \end{array}
 $$
-**The number that makes a body's slenderness a design variable.** The peak surface velocity of a Rankine oval rises as the body thickens — about $1.15\ U$ at $L / B = 2.3$ and $1.9\ U$ at $L / B = 1.33$ — so a **blunter** body has a **higher** peak suction and cavitates or separates first, which is why a hydrofoil's thickness is limited by the cavitation number and not by its strength.
+**The number that makes a body's slenderness a design variable.** The peak surface velocity of a Rankine oval rises as the body thickens — $1 + l / \left( 1 + \beta^{2} \right)$, about $1.39\ U$ at $L / B = 2.3$ and $1.74\ U$ at $L / B = 1.33$ — so a **blunter** body has a **higher** peak suction and cavitates or separates first, which is why a hydrofoil's thickness is limited by the cavitation number and not by its strength.
 **The source in a wall.** A source of strength $m$ a distance $a$ from a plane wall is the same as a source plus its image, and the resulting flow has a stagnation point at the wall and a **displacement** of the streamlines that is the model for a **bluff-body's** influence on a nearby wall — the **wall correction** that makes a wind-tunnel model's blockage correction
 $$
 \frac{\Delta U}{U} \approx \frac{\pi^{2}}{8} \left( \frac{d}{H} \right)^{2}
 $$
-**The number that must be applied to every wind-tunnel result.** A model of diameter $d = 0.1\ \mathrm{m}$ in a tunnel of height $H = 0.3\ \mathrm{m}$ gives $\Delta U / U = 1.23 \%$, and the associated **dynamic-pressure** error is $2.5\ \%$ — larger than the aerodynamic effect a typical experiment is trying to measure. **Blockage correction is not a refinement; it is the first thing done to a wind-tunnel number.**
+**The number that must be applied to every wind-tunnel result.** A model of diameter $d = 0.03\ \mathrm{m}$ in a tunnel of height $H = 0.3\ \mathrm{m}$ gives $\Delta U / U = \left( \pi^{2} / 8 \right) \times 0.01 = 1.23\ \%$, and the associated **dynamic-pressure** error is $2.5\ \%$ — larger than the aerodynamic effect a typical experiment is trying to measure. **Blockage correction is not a refinement; it is the first thing done to a wind-tunnel number.**
 :::
 
 ::: definition Deformation and rotation {#def-deform}
@@ -254,7 +254,7 @@ $$
 \zeta_z = \frac{1}{r} \frac{\partial \left( \Omega r^{2} \right)}{\partial r} = 2 \Omega
 $$
 **every element rotates at $\Omega$, and the vorticity is twice the rotation rate** — the factor of two that trips every examination and every interview.
-**The number that makes vorticity a design quantity.** In a turbine cascade the **loss coefficient** is computed from the **circulation deficit** and the **secondary-vorticity flux** in the exit plane, and a $1\ \%$ change in the throughflow's endwall vorticity flux is worth $0.15\ \%$ of the stage's efficiency. **Vorticity transport is how a turbomachinery designer counts losses**, and the measurement is a five-hole probe traverse of all three velocity components at 200 points in the annulus.
+**The number that makes vorticity a design quantity.** In a turbine cascade a large share of the loss is associated with the **secondary (streamwise) vorticity** generated where the endwall boundary layers are turned by the blades, and designers measure it with five-hole-probe traverses of all three velocity components across the exit plane.
 :::
 
 ## Worked cases
@@ -269,7 +269,7 @@ $$
 = 2 y + \left( - 2 y \right) + 0 = 0 \quad \checkmark \ \text{continuous}
 $$
 $$
-\zeta_z = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y} = 0 - 2 x = - 2 x \ne 0
+\zeta_z = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y} = - 2 z - 2 x \ne 0
 \quad \Rightarrow \quad \text{rotational}
 $$
 **A stream function exists** (the flow is two-dimensional and continuous):
@@ -282,9 +282,9 @@ $$
 $$
 \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = 2 x - 2 x = 0 \quad \checkmark
 \qquad
-\zeta_z = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y} = - 2 y - 2 y = - 4 y \ne 0
+\zeta_z = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y} = - 2 y - \left( - 2 y \right) = 0
 $$
-**continuous and rotational.** The stream function:
+**continuous and irrotational**, so both scalar functions exist. The stream function:
 $$
 \psi = \int u\, d y = \int \left( x^{2} - y^{2} \right) d y = x^{2} y - \frac{y^{3}}{3} + f \left( x \right)
 $$
@@ -293,16 +293,17 @@ v = - \frac{\partial \psi}{\partial x} = - 2 x y - f' \left( x \right) = - 2 x y
 \quad \Rightarrow \quad f' = 0
 $$
 $$
-\boxed{ \psi = x^{2} y - \frac{y^{3}}{3} }
+\boxed{ \psi = x^{2} y - \frac{y^{3}}{3}, \qquad \phi = \frac{x^{3}}{3} - x y^{2} }
 $$
+where $\phi$ follows from $\partial \phi / \partial x = x^{2} - y^{2}$ and checks with $\partial \phi / \partial y = - 2 x y = v$.
 **Field 3.** $\mathbf{V} = \left( - y, x, 0 \right)$:
 $$
 \nabla \cdot \mathbf{V} = 0 \quad \checkmark, \qquad
 \zeta_z = 1 - \left( - 1 \right) = 2
 $$
-**continuous, rotational, a rigid-body rotation at unit rate.** $\psi = x^{2} / 2 + y^{2} / 2 = r^{2} / 2$, so the streamlines are **circles**, and no potential exists.
-**The reading.** **The three fields cover the four logical cases**: continuous-and-irrotational (none here), continuous-and-rotational (1, 2, 3), and the fourth — discontinuous — is not a flow at all. **The single most useful habit in kinematics is to compute $\nabla \cdot \mathbf{V}$ and $\nabla \times \mathbf{V}$ before doing anything else**, because they tell you which of the two scalar functions you are allowed to use and therefore which solution method is available.
-*Sanity.* The reason field 2 is rotational despite being built from harmonic functions is that $x^{2} - y^{2}$ and $- 2 x y$ are **not** a Cauchy–Riemann pair — the pair would be $x^{2} - y^{2}$ and $2 x y$, giving $\mathbf{V} = \left( x^{2} - y^{2}, 2 x y \right)$ which is the **doublet-plus-uniform** family and is irrotational. **Changing one sign turns a potential flow into a rotational one and destroys the whole solution method**, which is the arithmetic version of the reason a sign error in a panel code's normal direction gives a lift of the right magnitude and the wrong direction.
+**continuous, rotational, a rigid-body rotation at unit rate.** $\psi = - \left( x^{2} + y^{2} \right) / 2 = - r^{2} / 2$, so the streamlines are **circles**, and no potential exists.
+**The reading.** The three fields cover the useful cases: continuous-and-irrotational (2), continuous-and-rotational (1 and 3); a field that fails the continuity test is not an incompressible flow at all. **The single most useful habit in kinematics is to compute $\nabla \cdot \mathbf{V}$ and $\nabla \times \mathbf{V}$ before doing anything else**, because they tell you which of the two scalar functions you are allowed to use and therefore which solution method is available.
+*Sanity.* Field 2 is the complex potential $W = z^{3} / 3$, whose derivative $z^{2} = \left( x^{2} - y^{2} \right) + 2 i x y = u - i v$ gives $u = x^{2} - y^{2}$, $v = - 2 x y$ — the flow in a $60^{\circ}$ corner. Changing the sign of $v$ to $\mathbf{V} = \left( x^{2} - y^{2}, 2 x y \right)$ gives $\nabla \cdot \mathbf{V} = 4 x$ and $\zeta_z = 4 y$: **one sign turns a potential flow into a field that is neither continuous nor irrotational**, which is the arithmetic version of the reason a sign error in a panel code is so destructive.
 :::
 :::
 
@@ -317,7 +318,7 @@ With $k = 2 \times 10^{- 4}\ \mathrm{m / s}$ (a medium sand), $h = 6\ \mathrm{m}
 $$
 q = 2 \times 10^{- 4} \times 6 \times \frac{4}{12} = 4.0 \times 10^{- 4}\ \mathrm{m^{3} / s\ per\ m}
 $$
-**$14\ \mathrm{m^{3}}$ per hour per metre of dam**, which is the number that sizes the drainage gallery's pump.
+**$1.44\ \mathrm{m^{3}}$ per hour per metre of dam**, which is the number that sizes the drainage gallery's pump.
 **The uplift.** The head drops by $6 / 12 = 0.5\ \mathrm{m}$ at each equipotential line. Under the dam's floor the flow net gives, say, $7$ drops between the upstream and downstream ends:
 $$
 h_{\mathrm{toe}} = 6 - 7 \times 0.5 = 2.5\ \mathrm{m} \text{ of head above the downstream level}
@@ -332,13 +333,13 @@ $$
 $$
 U = 9.81 \times 3.25 \times 8 = 255\ \mathrm{kN / m}
 $$
-**a $78\ \mathrm{kN / m}$ gain in stability for $200{,}000$ of grouting**, and the reason every gravity dam built since **1950** has a drainage gallery.
+**a $78\ \mathrm{kN / m}$ reduction in uplift**, and the reason most modern gravity dams have a drainage gallery.
 **The exit gradient, which is the failure mode.** The hydraulic gradient at the downstream toe is $\Delta h / \Delta s$ where $\Delta s$ is the last flow-net square's length. If the last square is $0.6\ \mathrm{m}$ long,
 $$
 i_e = \frac{0.5}{0.6} = 0.83
 $$
-**against a critical gradient for a quartz sand of $i_c = \left( G_s - 1 \right) / \left( 1 + e \right) = 2.65 / 1.6 = 1.66$** — a factor of two of margin. **A factor below one and the toe boils**, and the Kozeny–Carman relation says a boil that removes the filter is irreversible.
-*Sanity.* The reason the flow net works at all is that seepage in a saturated soil is governed by $\nabla^{2} h = 0$, which is **Laplace's equation in the same form as potential flow** — so the entire apparatus of $\phi$ and $\psi$ transfers, with the head $h$ in place of $\phi / k$ and the stream function in place of $\psi k$. **Groundwater engineers and aerodynamicists solved the same equation for fifty years with different symbols and different conferences**, and the transfer of the relaxation method from one community to the other in the **1950s** is one of the quieter cross-fertilisations of twentieth-century engineering.
+**against a critical gradient for a quartz sand ($G_s = 2.65$, void ratio $e = 0.6$) of $i_c = \left( G_s - 1 \right) / \left( 1 + e \right) = 1.65 / 1.6 = 1.03$** — a factor of safety of only $1.24$, well below the factor of $3$ or more usually required. **At a factor below one the toe boils**, and the remedy is a weighted filter at the toe or a longer seepage path.
+*Sanity.* The reason the flow net works at all is that seepage in a saturated soil is governed by $\nabla^{2} h = 0$, which is **Laplace's equation in the same form as potential flow** — so the entire apparatus of $\phi$ and $\psi$ transfers, with the head $h$ in place of $\phi / k$ and the stream function in place of $\psi k$.
 :::
 :::
 
@@ -357,7 +358,7 @@ $$
 $$
 C_L = \frac{10{,}600}{2{,}205 \times 24} = 0.200
 $$
-**The circulation's wake.** Helmholtz's theorems require that a vortex line cannot end in the fluid, so the bound vortex of strength $\Gamma$ at each station must be **continued** — the classical model is a **horseshoe vortex** with two trailing legs of strength $\Gamma / 2$ each, and the lifting-line model replaces them with a **sheet** of trailing vortices of strength $d \Gamma / d y$ per unit span.
+**The circulation's wake.** Helmholtz's theorems require that a vortex line cannot end in the fluid, so the bound vortex of strength $\Gamma$ at each station must be **continued** — the classical model is a **horseshoe vortex** whose two trailing legs each have the full strength $\Gamma$, and the lifting-line model replaces them with a **sheet** of trailing vortices of strength $d \Gamma / d y$ per unit span.
 **The downwash at the wing.** For an elliptic loading of total circulation $\Gamma_0$ and span $b$:
 $$
 w = - \frac{\Gamma_0}{2 b} = - \frac{12}{2 \times 12} = - 0.50\ \mathrm{m / s}
@@ -374,13 +375,13 @@ C_{D,i} = \frac{C_L^{2}}{\pi e A_R} = \frac{0.2^{2}}{\pi \times 1.0 \times 6} = 
 D_i = 0.00212 \times 2{,}205 \times 24 = 112\ \mathrm{N}
 $$
 **The $27\ \%$ discrepancy between the two estimates is the assumption of uniform circulation** in the first, and the fact that the elliptic value is the **minimum** induced drag for a given lift.
-**The number that makes a winglet worth buying.** The induced drag is $88$ to $112\ \mathrm{N}$ against a total cruise drag of perhaps $900\ \mathrm{N}$ — **$10$ to $12\ \%$** — and a winglet recovers a third of it. **The winglet is a kinematic device: it does not reduce the lift or change the airfoil, it reduces the strength of the trailing-vortex sheet by rolling up the tip's circulation into a single concentrated vortex.**
+**The number that makes a winglet worth buying.** The induced drag is $88$ to $112\ \mathrm{N}$ against a total cruise drag of perhaps $900\ \mathrm{N}$ — **$10$ to $12\ \%$** — and a winglet recovers part of it. **The winglet is a kinematic device: it does not change the airfoil; it changes the spanwise distribution of the shed vorticity and so the downwash at the wing.**
 **The tip vortex's strength and its hazard.** The full circulation is shed at the tip, and the vortex's tangential velocity at a distance $r$ from the core, in the **Scully** model with a core radius $r_c = 0.05\ b = 0.6\ \mathrm{m}$:
 $$
 v_{\theta} = \frac{\Gamma}{2 \pi} \frac{r}{r^{2} + r_c^{2}}
 \quad \Rightarrow \quad v_{\theta,\max} = \frac{\Gamma}{4 \pi r_c} = \frac{12}{4 \pi \times 0.6} = 1.59\ \mathrm{m / s}
 $$
-**at the core edge**, and $0.53\ \mathrm{m / s}$ at $r = 1\ \mathrm{m}$. **A light aircraft crossing a heavy transport's wake at the same altitude meets a $20\ \mathrm{m / s}$ vertical gust**, and the wake-turbulence separation minima in every air-traffic-control system are computed from this formula and not from the transport's weight.
+**at the core edge**, and $1.40\ \mathrm{m / s}$ at $r = 1\ \mathrm{m}$. **A heavy transport's circulation is tens of times larger**, its tip vortices induce tangential velocities of tens of metres per second, and that is why air-traffic control imposes wake-turbulence separation minima between aircraft, graded by weight category.
 *Sanity.* The reason the lift is $\rho U \Gamma$ and not $\rho U^{2} \Gamma$ is dimensional: $\left[ \rho U \Gamma \right] = \mathrm{kg \cdot m^{- 3} \cdot m \cdot s^{- 1} \cdot m^{2} \cdot s^{- 1}} = \mathrm{kg \cdot m \cdot s^{- 2}}$ per unit span, which is a force per metre. **The Kutta–Joukowski result is a statement about momentum flux through a contour and contains no information about the body's shape** — which is why the same formula gives the lift of a cylinder, an oval and an airfoil, and why the shape's whole contribution is hidden in the value of $\Gamma$.
 :::
 :::
@@ -394,24 +395,24 @@ $$
 V_{\mathrm{ts}} = 25\, V_{\mathrm{sc}}
 $$
 For a test-section speed of $40\ \mathrm{m / s}$ the settling chamber runs at $1.6\ \mathrm{m / s}$, which is slow enough that the screens in it are efficient and the honeycomb's turning loss is negligible.
-**The centreline velocity from the area law.** With the diameter distribution
+**The centreline velocity from the area law.** With the fifth-order diameter distribution
 $$
-\frac{D \left( x \right)}{D_{\mathrm{ts}}} = 1 + \left( \frac{D_{\mathrm{sc}}}{D_{\mathrm{ts}}} - 1 \right) \left( A + B \xi^{2} + C \xi^{3} + E \xi^{4} + F \xi^{5} \right), \qquad \xi = 1 - \frac{x}{L}
+D \left( x \right) = D_{\mathrm{ts}} + \left( D_{\mathrm{sc}} - D_{\mathrm{ts}} \right) \left( 1 - 10 \xi^{3} + 15 \xi^{4} - 6 \xi^{5} \right), \qquad \xi = \frac{x}{L}
 $$
-the **Bell–Mehta** coefficients $A = 0.2041$, $B = - 0.3699$, $C = 1.6173$, $E = - 2.8262$, $F = 2.3747$ give a profile whose **second derivative is zero at both ends** — the condition that keeps the boundary layer from seeing a sudden change in curvature.
+the profile has **zero slope and zero curvature at both ends** — the condition that keeps the boundary layer from seeing a sudden change in curvature, and the polynomial form recommended by Bell and Mehta.
 **The acceleration.** From $V \left( x \right) = V_{\mathrm{ts}} \left( D_{\mathrm{ts}} / D \left( x \right) \right)^{2}$:
 $$
-a_x = V \frac{d V}{d x} = - \frac{2 V_{\mathrm{ts}}^{2}}{D} \frac{d D}{d x} \left( \frac{D_{\mathrm{ts}}}{D} \right)^{3}
+a_x = V \frac{d V}{d x} = - \frac{2 V_{\mathrm{ts}}^{2}}{D} \frac{d D}{d x} \left( \frac{D_{\mathrm{ts}}}{D} \right)^{4}
 $$
-At the **throat** $x = L$, where $d D / d x$ is small by construction, the acceleration is modest; at the **contraction's start** $x = 0$ the Bell–Mehta profile has $d D / d x$ large and
+At both ends $d D / d x = 0$ by construction, so the acceleration is zero at the inlet and at the throat; in between it peaks where the velocity is already high but the wall is still converging. Evaluating the formula along the profile, the maximum is at $x \approx 3.35\ \mathrm{m}$, where $V \approx 31\ \mathrm{m / s}$ and
 $$
-a_x \big|_{x = 0} \approx \frac{2 V_{\mathrm{ts}}^{2}}{L} \times 0.35 = \frac{2 \times 1{,}600}{4.0} \times 0.35 = 280\ \mathrm{m / s^{2}} = 28.5\ g
+a_{x,\max} \approx 950\ \mathrm{m / s^{2}} \approx 97\ g
 $$
-**The pressure gradient.**
+**The pressure gradient** there:
 $$
-\frac{d p}{d x} = - \rho a_x = - 1.225 \times 280 = - 343\ \mathrm{Pa / m}
+\frac{d p}{d x} = - \rho a_x = - 1.225 \times 950 = - 1{,}170\ \mathrm{Pa / m}
 $$
-**against the $101\ \mathrm{kPa}$ of absolute pressure** — a favourable gradient of $0.34\ \%$ of an atmosphere per metre, which a boundary layer negotiates without difficulty. **The failure mode is the opposite: an adverse gradient of the same magnitude separates the layer**, which is why a diffuser's angle is limited to $7^{\circ}$ and a nozzle's contraction can be at $20^{\circ}$.
+**against the $101\ \mathrm{kPa}$ of absolute pressure** — a favourable gradient of about $1.2\ \%$ of an atmosphere per metre, which a boundary layer negotiates without difficulty. **The failure mode is the opposite: an adverse gradient of the same magnitude separates the layer**, which is why a diffuser's angle is limited to $7^{\circ}$ and a nozzle's contraction can be at $20^{\circ}$.
 **The number that sets the tunnel's turbulence level.** The contraction **decays** the turbulence entering it: the axial velocity fluctuation falls as $1 / \left( A_{\mathrm{sc}} / A_{\mathrm{ts}} \right) = 1 / 25$ and the transverse components as $1 / \sqrt{25} = 1 / 5$, so a settling chamber with $2\ \%$ turbulence delivers
 $$
 u'_{\mathrm{sc}} = 0.02 \times 1.6 = 0.032\ \mathrm{m / s}
@@ -419,13 +420,13 @@ u'_{\mathrm{sc}} = 0.02 \times 1.6 = 0.032\ \mathrm{m / s}
 u'_{\mathrm{ts}} = 1.28 \times 10^{- 3}\ \mathrm{m / s}
 \quad \Rightarrow \quad \frac{u'}{U} = \frac{1.28 \times 10^{- 3}}{40} = 0.003\ \%
 $$
-**a factor of twenty-five reduction in the absolute fluctuation**, and even allowing $0.05\ \%$ for the boundary layers and the fan, a factor of forty in the ratio. This is the whole of the reason a low-speed tunnel's contraction ratio is chosen between $9$ and $36$ and the whole of the reason a **contraction-length-to-throat-diameter ratio** of $1.5$ is standard.
-*Sanity.* The reason the acceleration is $28\ g$ and the pressure gradient only $343\ \mathrm{Pa / m}$ is that the density is $1.225\ \mathrm{kg / m^{3}}$ — **the same acceleration in water would need $28\ \mathrm{kPa / m}$**, and the reason a water tunnel's contraction is short and a wind tunnel's is long is that water can carry the pressure gradient and air cannot carry the separation.
+**a factor of twenty-five reduction in the absolute fluctuation** and of $625$ in the relative intensity; even allowing $0.05\ \%$ for the boundary layers and the fan, the intensity falls by a factor of forty. This is why the contraction ratio is the first number chosen for a low-speed tunnel.
+*Sanity.* The acceleration is about $97\ g$ while the pressure gradient is only $1.2\ \mathrm{kPa / m}$ because the density is $1.225\ \mathrm{kg / m^{3}}$ — **the same acceleration in water would need about $950\ \mathrm{kPa / m}$**.
 :::
 :::
 
 ::: history
-**The material derivative** is **Euler**'s distinction of **1755** between following a particle and watching a point, and its modern notation $D / D t$ is **Lagrange**'s of **1788** applied to fluids by **Stokes** in **1845**. **The stream function** is **Stokes**'s again, of **1842** (though **Rankine** used it earlier in a private note), and **the velocity potential** is **Rankine**'s of **1858** — the same man who, with **Green**'s **1838** theorem in hand, built the whole apparatus of sources, sinks and images that still fills the middle chapter of every aerodynamics text. **The Cauchy–Riemann route into fluid mechanics** was opened by **Lamott** in **1845** and exploited by **Kirchhoff, Helmholtz and Rayleigh** through the **1870s**; **Milne-Thomson**'s *Circulation Airfoils and Other Fluid Jets by the Method of Conformal Transformation* of **1933** is the most complete statement of the technique and is still readable. **Helmholtz's three vortex theorems** are of **1858**, and the third — that a vortex filament cannot end in the fluid — is the topological statement that makes a wing's trailing vortices, a tornado's funnel and a smoke ring's closed loop the same phenomenon. **The Kutta–Joukowski theorem** was published by **Kutta** in **1902** (as his Stuttgart doctoral thesis, supervised by **Lilienthal**'s contemporary) and independently by **Joukowsky** in **1906**, and the **laminar boundary layer** that reconciles it with d'Alembert's paradox is **Prandtl**'s **1904** Heidelberg congress paper — three pages, and the birth of modern fluid mechanics. **Bell and Mehta**'s contraction profile is of **1935**, from the Guggenheim wind tunnel at Caltech, and is still the shape every tunnel is built to.
+**The Eulerian description** is **Euler**'s of **1755**, and the notation $D / D t$ for the derivative following a particle was introduced by **Stokes** in **1845**. **The stream function** goes back to **Lagrange** (**1781**) for plane flow and to **Stokes** (**1842**) for axisymmetric flow; the velocity potential also appears in Lagrange's work and was named by **Helmholtz** in **1858**. **Rankine** (**1864–1871**) built the method of sources and sinks that produces the Rankine oval and still fills the middle chapter of every aerodynamics text. **Complex-variable methods** entered fluid mechanics with the free-streamline theory of **Helmholtz** (**1868**) and **Kirchhoff** (**1869**) and were extended by **Rayleigh** in the **1870s**; **Milne-Thomson**'s *Theoretical Hydrodynamics* (**1938**) is a classic statement of the technique and is still readable. **Helmholtz's three vortex theorems** are of **1858**, and the third — that a vortex filament cannot end in the fluid — is the topological statement that makes a wing's trailing vortices, a tornado's funnel and a smoke ring's closed loop the same phenomenon. **The Kutta–Joukowski theorem** was published by **Kutta** in **1902** and independently by **Joukowsky** in **1906**, and the **boundary layer** that reconciles it with d'Alembert's paradox is **Prandtl**'s paper to the **1904** mathematical congress at Heidelberg — eight pages, and the birth of modern fluid mechanics. **Bell and Mehta**'s design study of fifth-order contraction profiles for small low-speed tunnels is a NASA report of **1988**.
 :::
 
 ::: quiz
@@ -437,7 +438,7 @@ A plane flow has velocity potential $\phi = K ( x^{ 2 } - y^{ 2 } )$ and streamf
 - [ ] Do nothing, because the flow is steady
 
 ::: solution
-**Pure strain.** $u = \partial \phi / \partial x = 2 K x$, $v = - 2 K y$, so $\partial u / \partial x = 2 K$, $\partial v / \partial y = - 2 K$ — the volume dilation is zero — and the vorticity is $\omega_z = \partial v / \partial x - \partial u / \partial y = 0 - 0 = 0$. **The point being tested is the first option: curved streamlines do not imply rotation.** This is one of the most durable misconceptions in the subject. A potential vortex $\psi = K \ln r$ has circular streamlines and zero vorticity everywhere except at the origin, and a fluid element going round it deforms continuously without rotating, in exactly the way a long boat on a circular current turns end over end while its keel stays non-rotating in the kinematic sense. **Vorticity is the average angular velocity of two perpendicular material lines, not the curvature of the path**, and the distinction is the reason a wing's trailing vortex sheet carries all the flow's rotation while the flow around the wing itself is treated as potential.
+**Pure strain.** $u = \partial \phi / \partial x = 2 K x$, $v = - 2 K y$, so $\partial u / \partial x = 2 K$, $\partial v / \partial y = - 2 K$ — the volume dilation is zero — and the vorticity is $\omega_z = \partial v / \partial x - \partial u / \partial y = 0 - 0 = 0$. **The point being tested is the first option: curved streamlines do not imply rotation.** This is one of the most durable misconceptions in the subject. A potential vortex $\psi = K \ln r$ has circular streamlines and zero vorticity everywhere except at the origin, and a fluid element going round it deforms continuously without rotating, stretching tangentially and shrinking radially. **Rotation is the average angular velocity of two perpendicular material lines (the vorticity is twice it), not the curvature of the path**, and the distinction is the reason a wing's trailing vortex sheet carries all the flow's rotation while the flow around the wing itself is treated as potential.
 :::
 :::
 
@@ -531,7 +532,7 @@ $$
 r_{\mathrm{stag}} = \frac{m}{2 \pi U} = \frac{8}{2 \pi \times 4} = 0.318\ \mathrm{m}, \qquad
 h = \frac{m}{2 U} = \frac{8}{8} = 1.0\ \mathrm{m}
 $$
-**The body is $\pi = 3.14$ times as wide as it is deep from source to nose**, and the total volume flux it displaces is $m / U = 2\ \mathrm{m^{2}}$ per unit depth, which equals $2h$ — the check that the arithmetic is right.
+**The asymptotic half-thickness is $\pi = 3.14$ times the source-to-nose distance**, and the full asymptotic width $m / U = 2\ \mathrm{m}$ equals $2 h$ — the check that the arithmetic is right.
 :::
 :::
 
@@ -581,11 +582,11 @@ $$
 \text{Fan} & 5.5\ \mathrm{m}\ \text{diameter} & & 12.5\ \mathrm{m / s}\ \text{axial}
 \end{array}
 $$
-**The contraction.** A ratio of $9$ gives a turbulence reduction of $9$ axially and $3$ transversely; the Bell–Mehta profile over a $6.0\ \mathrm{m}$ length gives a maximum wall acceleration of
+**The contraction.** A ratio of $9$ divides the axial fluctuation by $9$ and the axial turbulence intensity by $81$; the fifth-order profile over a $6.0\ \mathrm{m}$ length (linear ratio $3$) gives, by the same evaluation as in the worked example, a maximum centreline acceleration of
 $$
-a \approx \frac{2 V_{\mathrm{ts}}^{2}}{L} \times 0.35 = \frac{2 \times 6{,}400}{6.0} \times 0.35 = 747\ \mathrm{m / s^{2}} = 76\ g
+a_{\max} \approx 1{,}900\ \mathrm{m / s^{2}} \approx 194\ g
 $$
-and a wall pressure gradient of $0.92\ \mathrm{kPa / m}$, **favourable**, which the boundary layer accepts. **The contraction's job is to make the flow fast, straight and quiet, and its length is set by the second one.**
+and a pressure gradient of $1.225 \times 1{,}900 = 2.3\ \mathrm{kPa / m}$, **favourable**, which the boundary layer accepts. **The contraction's job is to make the flow fast, straight and quiet, and its length is set by the second one.**
 **The turbulence budget.**
 $$
 \begin{array}{l c}
@@ -593,18 +594,17 @@ $$
 \text{Contraction decay } \left( A_r = 9 \right) & \times 1 / 9 \\
 \text{Test-section boundary-layer contribution} & 0.04\ \% \\
 \text{Fan blade-passing, filtered by the second throat} & 0.03\ \% \\
-\text{Settling-screen pressure-drop ratio required} & \ge 0.85 \\
 \hline
-\text{Predicted test-section } u' / U & 0.08\ \%
+\text{Predicted test-section } u' / U \text{ (in quadrature)} & 0.06\ \%
 \end{array}
 $$
-**The number that decides the settling screens.** A $90\ \%$ pressure-drop ratio across the final screen is what makes the $3\ \%$ into $0.33\ \%$ before the contraction, and the screen's $d / t$ and open area are the tunnel's most important dimensions after the contraction ratio.
+**The number that decides the settling screens.** The contraction turns the $3\ \%$ entering it into $3 / 81 = 0.037\ \%$, and the honeycomb and screens upstream are what bring the flow down to that $3\ \%$ in the first place — their open area and wire diameter are the tunnel's most important dimensions after the contraction ratio.
 **The boundary layers in the test section.** The displacement thickness at the end of a $3\ \mathrm{m}$ long test section at $80\ \mathrm{m / s}$, with a trip at the contraction exit giving a turbulent layer from $x = 0$:
 $$
-\delta^{*} = 0.016 \left( \frac{\nu}{U x} \right)^{1 / 7} x
-= 0.016 \times \left( \frac{1.5 \times 10^{- 5}}{80 \times 3} \right)^{1 / 7} \times 3 = 0.016 \times 0.216 \times 3 = 10.4\ \mathrm{mm}
+\delta^{*} \approx 0.020 \left( \frac{\nu}{U x} \right)^{1 / 7} x
+= 0.020 \times \left( \frac{1.5 \times 10^{- 5}}{80 \times 3} \right)^{1 / 7} \times 3 = 0.020 \times 0.0935 \times 3 = 5.6\ \mathrm{mm}
 $$
-**The effective blockage of the empty test section is $2 \times 10.4 / 1{,}500 = 1.4\ \%$** on the height, and the **solid** blockage limit for a model is set by keeping the total below $5\ \%$:
+**The effective blockage of the empty test section is $2 \times 5.6 / 1{,}500 = 0.75\ \%$** on the height, and the **solid** blockage limit for a model is set by keeping its velocity correction below $2\ \%$:
 $$
 \frac{\Delta U}{U} \approx \frac{\pi^{2}}{8} \left( \frac{d}{H} \right)^{2} \le 0.02
 \quad \Rightarrow \quad \frac{d}{H} \le 0.127 \quad \Rightarrow \quad d \le 190\ \mathrm{mm}
@@ -613,7 +613,7 @@ $$
 **The measurement plan.**
 $$
 \begin{array}{l l l}
-\text{Hot wire} & \text{single, then X-array} & \text{the } 0.08\ \% \text{ turbulence needs a } 0.01\ \% \text{ noise floor} \\
+\text{Hot wire} & \text{single, then X-array} & \text{the } 0.06\ \% \text{ turbulence needs a } 0.01\ \% \text{ noise floor} \\
 \text{Five-hole probe} & \text{traverse of the full section} & \text{the } \pm 0.2^{\circ} \text{ flow-angle uniformity} \\
 \text{Pitot-static rake} & \text{nine positions} & \text{the } \pm 0.3\ \% \text{ dynamic-pressure uniformity} \\
 \text{Pressure-sensitive paint} & \text{on the model} & \text{a whole-field check on the panel code} \\

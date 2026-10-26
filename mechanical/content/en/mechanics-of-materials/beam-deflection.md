@@ -13,11 +13,11 @@ The curvature of a curve is $1 / \rho = v^{\prime \prime} / \left[ 1 + v^{\prime
 ## The differential equation
 
 ::: definition The elastic curve {#def-elastic-curve}
-For a prismatic beam of constant $E I$ with $v$ positive downward and $x$ to the right,
+For a prismatic beam of constant $E I$ with $v$ positive upward, $x$ to the right and the distributed load $w$ positive downward,
 $$
 E I \frac{\mathrm{d}^{2} v}{\mathrm{d} x^{2}} = M(x), \qquad
-E I \frac{\mathrm{d}^{3} v}{\mathrm{d} x^{3}} = - V(x), \qquad
-E I \frac{\mathrm{d}^{4} v}{\mathrm{d} x^{4}} = w(x),
+E I \frac{\mathrm{d}^{3} v}{\mathrm{d} x^{3}} = V(x), \qquad
+E I \frac{\mathrm{d}^{4} v}{\mathrm{d} x^{4}} = - w(x),
 $$
 with the sign of $M$ taken positive for sagging. Integrating from $x = 0$ gives
 $$
@@ -32,7 +32,7 @@ From the flexure theory, a fibre at distance $y$ from the neutral axis has strai
 $$
 M = \int_A \sigma y \, \mathrm{d} A = \frac{E I}{\rho} .
 $$
-For small slopes the curvature of the deflected curve is $1 / \rho = v^{\prime \prime}$, giving $E I v^{\prime \prime} = M$. Differentiating once and using $\mathrm{d} M / \mathrm{d} x = - V$ under the sign convention adopted gives the third-order form; differentiating again and using $\mathrm{d} V / \mathrm{d} x = w$ gives the fourth. The fourth-order form is the one used in practice by matrix methods, because it needs no prior calculation of the moment diagram.
+For small slopes the curvature of the deflected curve is $1 / \rho = v^{\prime \prime}$, giving $E I v^{\prime \prime} = M$. Differentiating once and using $\mathrm{d} M / \mathrm{d} x = V$ from [[mechanics-of-materials/shear-moment-diagrams]] gives the third-order form; differentiating again and using $\mathrm{d} V / \mathrm{d} x = - w$ gives the fourth. The fourth-order form is the one used in practice by matrix methods, because it needs no prior calculation of the moment diagram.
 :::
 
 ::: proposition Standard deflections {#prop-standard-deflections}
@@ -40,13 +40,13 @@ For a prismatic beam of span $L$ and constant $E I$:
 
 - **Simply supported, central load $P$:** $\delta_{\max} = P L^{3} / (48 E I)$ at mid-span; $\theta_{\text{end}} = P L^{2} / (16 E I)$.
 - **Simply supported, uniform load $w$:** $\delta_{\max} = 5 w L^{4} / (384 E I)$; $\theta_{\text{end}} = w L^{3} / (24 E I)$.
-- **Simply supported, central couple $C$:** $\delta_{\max} = C L^{2} / (9 \sqrt{3} E I)$ at $x = L \left( 1 - 1 / \sqrt{3} \right)$.
+- **Simply supported, couple $C$ at one end:** $\delta_{\max} = C L^{2} / (9 \sqrt{3} E I)$ at $x = L \left( 1 - 1 / \sqrt{3} \right)$ from the loaded end; end slopes $C L / (3 E I)$ and $C L / (6 E I)$.
 - **Cantilever, tip load $P$:** $\delta_{\max} = P L^{3} / (3 E I)$; $\theta_{\max} = P L^{2} / (2 E I)$.
 - **Cantilever, uniform load $w$:** $\delta_{\max} = w L^{4} / (8 E I)$; $\theta_{\max} = w L^{3} / (6 E I)$.
 - **Fixed-ended, uniform load $w$:** $\delta_{\max} = w L^{4} / (384 E I)$ at mid-span; $M_{\text{end}} = w L^{2} / 12$.
 - **Propped cantilever, uniform load $w$:** prop reaction $3 w L / 8$; $M_{\text{wall}} = w L^{2} / 8$; $\delta_{\max} = w L^{4} / (185 E I)$.
 
-The ratios between these are worth more than the formulas: a fixed end is worth eight times the stiffness of a pinned one under uniform load, and a propped cantilever is $384 / 185 = 2.1$ times stiffer than a simply supported beam.
+The ratios between these are worth more than the formulas: fixing both ends makes a uniformly loaded beam five times stiffer than pinning them, and a propped cantilever is $185 / 76.8 = 2.4$ times stiffer than a simply supported beam.
 :::
 
 ::: example Double integration {#ex-double-integration}
@@ -63,12 +63,12 @@ $$
 v (x) = \frac{P x}{12 E I} \left( x^{2} - \frac{3 L^{2}}{4} \right),
 $$
 $$
-\delta_{\max} = v \left( \frac{L}{2} \right) = \frac{P L}{12 E I} \left( \frac{L^{2}}{4} - \frac{3 L^{2}}{4} \right) \times ( - 1 ) = \frac{P L^{3}}{48 E I},
+\delta_{\max} = - v \left( \frac{L}{2} \right) = - \frac{P L}{24 E I} \left( \frac{L^{2}}{4} - \frac{3 L^{2}}{4} \right) = \frac{P L^{3}}{48 E I},
 $$
 $$
-\theta_{\text{end}} = v^{\prime} (0) = \frac{P L^{2}}{16 E I} .
+\theta_{\text{end}} = \left| v^{\prime} (0) \right| = \frac{P L^{2}}{16 E I} .
 $$
-*Check.* $v (L) = \dfrac{P L}{12 E I} \left( L^{2} - \dfrac{3 L^{2}}{4} \right) \times (-1) \ne 0$ — the expression is valid only over the left half, and $v (L / 2)$ is the maximum. $\checkmark$ A cleaner check is the moment-area theorem: the tangential deviation of the far end from the tangent at mid-span equals $\tfrac{1}{2} L \theta_{\text{end}}$, and the area of the $M / E I$ diagram over the half-span is $\tfrac{1}{2} \times \tfrac{L}{2} \times \tfrac{P L}{4 E I} = \tfrac{P L^{2}}{16 E I}$ acting at $L / 3$ from the support, giving $\delta = \tfrac{P L^{2}}{16 E I} \times \tfrac{L}{3} \times \tfrac{3}{2} = \tfrac{P L^{3}}{48 E I}$. $\checkmark$
+($v$ is negative because the beam deflects downward.) *Check.* The expression is valid only over the left half. A clean check is the moment-area theorem: the tangent at mid-span is horizontal, so the deviation of the support from that tangent is the mid-span deflection; the area of the $M / E I$ diagram over the half-span is $\tfrac{1}{2} \times \tfrac{L}{2} \times \tfrac{P L}{4 E I} = \tfrac{P L^{2}}{16 E I}$ with its centroid $L / 3$ from the support, giving $\delta = \tfrac{P L^{2}}{16 E I} \times \tfrac{L}{3} = \tfrac{P L^{3}}{48 E I}$. $\checkmark$
 
 *Sanity.* Note the two boundary conditions used — one displacement and one slope — and that the symmetry condition $v^{\prime} (L / 2) = 0$ replaced a second displacement condition. This is the standard trick and it halves the algebra every time. It works only for symmetric loading; for an unsymmetric load you must integrate over the whole span or use Macaulay's brackets.
 :::
@@ -89,7 +89,7 @@ For $\delta = L / 200 = 10\ \mathrm{mm}$,
 $$
 P = \frac{3 E I \delta}{L^{3}} = \frac{3 \times 200\,000 \times 80 \times 10^{6} \times 10}{2000^{3}} = 60\ \mathrm{kN}.
 $$
-*Sanity.* $60\ \mathrm{kN}$ is a large load for a $2\ \mathrm{m}$ cantilever, and the check that matters is not the deflection but the stress: at $60\ \mathrm{kN}$ the moment is $120\ \mathrm{kN\,m}$, and unless the section modulus exceeds $120 \times 10^{6} / 165 = 727 \times 10^{3}\ \mathrm{mm^{3}}$ the beam yields long before it reaches $L / 200$. A $356 \times 127\ \mathrm{UB}\ 33$ has $Z = 506 \times 10^{3}\ \mathrm{mm^{3}}$ and $I = 87.3 \times 10^{6}\ \mathrm{mm^{4}}$, so it is a **strength** problem, not a stiffness problem — the opposite of the simply supported span, where deflection almost always governs. Cantilevers are strong in stiffness for their strength because the moment is concentrated where the section is fixed; that is the whole reason a cantilever is used.
+*Sanity.* $60\ \mathrm{kN}$ is a large load for a $2\ \mathrm{m}$ cantilever, and the check that matters is not the deflection but the stress: at $60\ \mathrm{kN}$ the moment is $120\ \mathrm{kN\,m}$, and unless the section modulus exceeds $120 \times 10^{6} / 165 = 727 \times 10^{3}\ \mathrm{mm^{3}}$ the beam yields long before it reaches $L / 200$. A rolled I-section with $I = 80 \times 10^{6}\ \mathrm{mm^{4}}$ and a depth of about $350\ \mathrm{mm}$ has $Z = 2 I / d \approx 457 \times 10^{3}\ \mathrm{mm^{3}}$, so this is a **strength** problem, not a stiffness problem: it would yield at about $75\ \mathrm{kN\,m}$, or a tip load near $38\ \mathrm{kN}$. Short, heavily loaded cantilevers are usually governed by strength; long, lightly loaded spans by deflection.
 :::
 :::
 
@@ -98,7 +98,7 @@ f: x*(x^2-27)/10
 x: 0, 3
 y: -6, 0
 labels: \text{deflected shape, } v / \left( P / 12 EI \right)
-caption: Deflected curve of the left half of the simply supported beam of Example 1, plotted as $v \left( x \right) \times 12 E I / P = x \left( x^{2} - 3 L^{2} / 4 \right)$ for $L = 6\ \mathrm{m}$. The curve is a cubic, zero slope at mid-span and steepest at the support, and the ratio of end slope to mid-span deflection is exactly $2 / L$ — a relation that holds for any symmetric loading and is the basis of the simple field test in which a beam's stiffness is inferred from a single mid-span measurement.
+caption: Deflected curve of the left half of the simply supported beam of Example 1, plotted as $v \left( x \right) \times 12 E I / P = x \left( x^{2} - 3 L^{2} / 4 \right)$ for $L = 6\ \mathrm{m}$, divided by $10$ to fit the axes. The curve is a cubic, zero slope at mid-span and steepest at the support, and the ratio of end slope to mid-span deflection is $3 / L$ for a central load and $3.2 / L$ for a uniform load — nearly independent of the loading, which is why a single slope reading at a support gives a fair estimate of the mid-span deflection.
 :::
 
 ## Superposition, moment-area and conjugate beam
@@ -127,7 +127,7 @@ The $M$ diagram is a parabola of value $- w L^{2} / 2$ at the wall and zero at t
 $$
 \int_0^L M \, \mathrm{d} x = - \frac{w L^{3}}{6}
 $$
-(the area of a parabola of order $n = 2$ is $\tfrac{2}{3} \times$ base $\times$ height, and $\tfrac{2}{3} \times L \times \tfrac{w L^{2}}{2} = \tfrac{w L^{3}}{3}$... taking the correct form $\int_0^L \tfrac{1}{2} w x^{2} \mathrm{d} x = \tfrac{w L^{3}}{6}$).
+(the area of a parabolic spandrel is one third of base times height, $\tfrac{1}{3} \times L \times \tfrac{w L^{2}}{2} = \tfrac{w L^{3}}{6}$, which is $\int_0^L \tfrac{1}{2} w x^{2} \mathrm{d} x$).
 
 **First theorem.** With $\theta_{\text{wall}} = 0$,
 $$
@@ -165,7 +165,7 @@ $$
 $$
 *Check.* $\theta_A / \theta_B = 2.48 / 1.90 = 1.31$, and the exact ratio is $b \left( L^{2} - b^{2} \right) / a \left( L^{2} - a^{2} \right) = 1115 / 853 = 1.31$. $\checkmark$ The larger slope is at the end **nearer** the load, which is the end whose moment diagram has the larger area near it.
 
-*Sanity.* The maximum deflection, $3.40\ \mathrm{mm}$, is $11$ per cent greater than the deflection under the load and occurs $0.56\ \mathrm{m}$ away from it, on the long-span side. For a symmetrically loaded beam those two numbers coincide and the distinction is forgotten; for an eccentric load it is not, and a deflection limit checked at the load point is unconservative by up to $13$ per cent (the worst case, at $a \approx 0.42 L$, where the ratio peaks). The rule of thumb is that for a load anywhere between $0.3 L$ and $0.5 L$ from a support, check the deflection at $\sqrt{\left( L^{2} - b^{2} \right) / 3}$, not under the load.
+*Sanity.* The maximum deflection, $3.40\ \mathrm{mm}$, is $11$ per cent greater than the deflection under the load and occurs $0.56\ \mathrm{m}$ away from it, on the long-span side. For a symmetrically loaded beam those two numbers coincide and the distinction is forgotten; for an eccentric load it is not, and a deflection limit checked at the load point is unconservative — by $11$ per cent here, and by more as the load moves towards a support ($30$ per cent at $a = 0.2 L$), although the deflections themselves are then smaller. The rule is that for any off-centre load, check the deflection at $\sqrt{\left( L^{2} - b^{2} \right) / 3}$ from the support nearer the load, not under the load.
 :::
 :::
 
@@ -207,7 +207,7 @@ $$
 $$
 \delta_C = 7.22\ \mathrm{mm}.
 $$
-*Sanity.* The **leg** contributes $69$ per cent of the deflection even though the load is carried on the arm, because the arm's moment tapers to zero at the tip while the leg's is constant at $P b$ over its whole length. This is the single most useful result in bracket design: to stiffen a bracket, shorten the leg or thicken it, not the arm. It is also why a wall-mounted jib crane is designed with a diagonal strut — the strut turns the leg's bending into axial thrust, which is $A L / E$ against $P b^{2} a / E I$ and typically twenty times stiffer.
+*Sanity.* The **leg** contributes $69$ per cent of the deflection even though the load is carried on the arm, because the arm's moment tapers to zero at the tip while the leg's is constant at $P b$ over its whole length. This is the single most useful result in bracket design: to stiffen a bracket, shorten the leg or thicken it, not the arm. It is also why a wall-mounted jib crane is designed with a diagonal strut — the strut turns the leg's bending into axial force, and an axial member's compliance $L / (A E)$ is far smaller than a bent member's.
 :::
 :::
 
@@ -229,7 +229,7 @@ R = \frac{3 w L}{8}.
 $$
 The wall then carries $5 w L / 8$ and a moment $w L^{2} / 8$, and the maximum deflection is $w L^{4} / (185 E I)$ at $x = 0.42 L$ from the prop.
 
-*Sanity.* Compare the three cases for the same $w L$: simply supported carries $w L / 2$ at each end with $M = w L^{2} / 8$; propped cantilever carries $3 w L / 8$ and $5 w L / 8$ with $M = w L^{2} / 8$ at the wall; fixed-ended carries $w L / 2$ with $M = w L^{2} / 12$ at each end. The propped cantilever has the same maximum moment as the simply supported beam but $2.1$ times the stiffness, and the fixed-ended beam has $75$ per cent of the moment and $32$ times the stiffness. That last factor is why a continuous or fixed beam is used wherever it can be detailed properly — and why it is often not used, because the fixity that buys the stiffness also buys sensitivity to settlement, to temperature and to construction tolerances, and a "fixed" end that rotates by a few milliradians gives back most of the benefit.
+*Sanity.* Compare the three cases for the same $w L$: simply supported carries $w L / 2$ at each end with $M = w L^{2} / 8$; propped cantilever carries $3 w L / 8$ and $5 w L / 8$ with $M = w L^{2} / 8$ at the wall; fixed-ended carries $w L / 2$ with $M = w L^{2} / 12$ at each end. The propped cantilever has the same maximum moment as the simply supported beam but $2.4$ times the stiffness, and the fixed-ended beam has $67$ per cent of the moment and five times the stiffness. That last factor is why a continuous or fixed beam is used wherever it can be detailed properly — and why it is often not used, because the fixity that buys the stiffness also buys sensitivity to settlement, to temperature and to construction tolerances, and a "fixed" end that rotates by a few milliradians gives back most of the benefit.
 :::
 :::
 
@@ -242,7 +242,7 @@ so the moment is amplified by $1 / \left( 1 - P / P_E \right)$ and the member fa
 :::
 
 ::: history
-The problem of the deflected beam is older than the theory of elasticity. James Bernoulli posed the elastic curve problem in 1694 and his brother Johann, Leibniz and l'Hôpital argued over its solution in the *Acta Eruditorum* between 1694 and 1704, arriving at the curvature relation $1 / \rho \propto M$ by a variational argument before the calculus of variations existed. Daniel Bernoulli and Euler completed the theory in the 1740s and 1750s, Euler publishing the buckling load in 1744 and the four boundary-condition cases of the elastica in 1753. The **conjugate beam** method and the **moment-area** theorems are the great practical inventions of the next century: the moment-area theorems are usually attributed to Otto Mohr, who published them in 1874, and the conjugate beam to Heinrich Müller-Breslau, who stated it in 1865 in a paper on the graphical statics of arches and made it the standard tool of bridge design for fifty years. **Castigliano's** two theorems, published in 1873 and 1879 by a twenty-two-year-old Italian railway engineer working on the strength of railway carriages, are the pivot: they turned the whole of statically indeterminate structural analysis into a matter of differentiating an energy expression, and their direct descendants are the principle of minimum potential energy and the stiffness method that every finite-element program implements.
+The problem of the deflected beam is older than the theory of elasticity. Jacob (James) Bernoulli published his solution of the elastic curve of a bent strip in the *Acta Eruditorum* in 1694, taking the curvature proportional to the bending moment. Leonhard Euler, prompted by Daniel Bernoulli's suggestion that the elastica minimises the integral of the squared curvature, classified the elastic curves in an appendix to his *Methodus inveniendi* of 1744 and derived there the buckling load of a column. The **moment-area** and **conjugate-beam** ideas came a century later with graphical statics: Otto Mohr showed in 1868 that the deflected shape of a beam is the bending-moment diagram of a fictitious beam loaded by its $M / E I$ diagram, and Charles E. Greene of the University of Michigan published the moment-area theorems in 1873. **Castigliano's** theorems, set out by Alberto Castigliano in his 1873 thesis at Turin and in his book of 1879, *Théorie de l'équilibre des systèmes élastiques et ses applications*, are the pivot: they turned statically indeterminate structural analysis into a matter of differentiating an energy expression, and their direct descendants are the principle of minimum potential energy and the stiffness method that every finite-element program implements.
 :::
 
 ## Where this leads
@@ -260,22 +260,22 @@ Deflection limits are the design basis of [[machine-design/shafts]], where the s
 
 ::: quiz
 Two geometrically similar cantilevers, one twice as long as the other, carry the same tip load and are made of the same material. Which is stiffer in the sense of having the smaller **ratio** of tip deflection to length?
-- [ ] The longer one, because it carries relatively less load
+- [x] The longer one, because it carries relatively less load
 - [ ] They are the same, because both scale with $L^{3}$
-- [x] The shorter one, because $\delta / L \propto L^{2}$ at constant stress
+- [ ] The shorter one, because deflection grows with length
 - [ ] Neither, because deflection is not a stiffness measure
 ::: solution
-The shorter one. For geometrically similar cantilevers of scale factor $\lambda$, $I \propto b d^{3} \propto \lambda^{4}$ and $P$ held fixed gives $\delta \propto L^{3} / I \propto \lambda^{3} / \lambda^{4} = 1 / \lambda$, so the **absolute** deflection actually falls as the member gets bigger — but $\delta / L \propto 1 / \lambda^{2}$, so the relative deflection falls too. If instead the stress is held constant, $P \propto b d^{2} \propto \lambda^{3}$ and $\delta / L \propto \lambda^{2}$: the bigger member is relatively **less** stiff. That is the real scaling law, and it is why large structures are stiffened by depth rather than by mass, and why a model tested at the same stress is not a valid stiffness model of the prototype.
+The longer one. For geometrically similar cantilevers of scale factor $\lambda$, $I \propto b d^{3} \propto \lambda^{4}$, and with $P$ held fixed $\delta \propto L^{3} / I \propto \lambda^{3} / \lambda^{4} = 1 / \lambda$, so even the **absolute** deflection falls as the member gets bigger, and $\delta / L \propto 1 / \lambda^{2}$: the cantilever twice as long has a quarter of the relative deflection. The comparison changes if the loads are scaled to give the same bending stress: then $P \propto Z / L \propto \lambda^{2}$ and $\delta / L = \sigma L / (3 E c)$, the same for both. Under self-weight, which grows as $\lambda^{3}$, the bigger member is relatively **less** stiff ($\delta / L \propto \lambda$) — which is why large structures are stiffened by depth, and why a scale model is not automatically a valid stiffness model of the prototype.
 :::
 :::
 
 ## Exercises
 
 ::: exercise Standard case {level=1 check="4.0"}
-A simply supported steel beam of $4\ \mathrm{m}$ span with $E I = 1.0 \times 10^{8}\ \mathrm{kN\,mm^{2}}$ carries $30\ \mathrm{kN}$ at mid-span. Find the mid-span deflection in mm.
+A simply supported steel beam of $4\ \mathrm{m}$ span with $E I = 1.0 \times 10^{4}\ \mathrm{kN\,m^{2}}$ carries $30\ \mathrm{kN}$ at mid-span. Find the mid-span deflection in mm.
 ::: solution
-$\delta = P L^{3} / (48 E I) = 30 \times 4000^{3} / (48 \times 1.0 \times 10^{8} \times 10^{3}) = 4.0\ \mathrm{mm}$.
-*Note.* $E I = 10^{8}\ \mathrm{kN\,mm^{2}} = 10^{5}\ \mathrm{kN\,m^{2}}$, so $\delta = 30 \times 64 / (48 \times 10^{5})\ \mathrm{m} = 4.0\ \mathrm{mm}$. The answer is $4.0\ \mathrm{mm}$, against a $L / 360$ limit of $11.1\ \mathrm{mm}$ — comfortably stiff.
+$\delta = P L^{3} / (48 E I) = 30 \times 4^{3} / (48 \times 1.0 \times 10^{4}) = 4.0 \times 10^{-3}\ \mathrm{m} = 4.0\ \mathrm{mm}$.
+*Note.* In N and mm, $E I = 10^{4}\ \mathrm{kN\,m^{2}} = 10^{13}\ \mathrm{N\,mm^{2}}$ and $\delta = 30\,000 \times 4000^{3} / (48 \times 10^{13}) = 4.0\ \mathrm{mm}$. The answer is $4.0\ \mathrm{mm}$, against a $L / 360$ limit of $11.1\ \mathrm{mm}$ — comfortably stiff.
 :::
 :::
 
@@ -286,10 +286,10 @@ By $2^{3} = 8$, because $\delta \propto L^{3}$. If instead the load were a unifo
 :::
 :::
 
-::: exercise Fixity {level=1 check="48"}
-What is the ratio of the mid-span deflection of a fixed-ended beam to that of the same beam simply supported, under uniform load?
+::: exercise Fixity {level=1 check="0.2"}
+What is the ratio of the mid-span deflection of a fixed-ended beam to that of the same beam simply supported, under uniform load? (Enter the ratio as a decimal.)
 ::: solution
-$\left( w L^{4} / 384 \right) / \left( 5 w L^{4} / 384 \right) = 1 / 5$, so the fixed-ended beam deflects **five times less**; expressed the other way the ratio of the simply supported to the fixed-ended is $5$, and the ratio of the fixed-ended to the cantilever is $48$.
+$\left( w L^{4} / 384 \right) / \left( 5 w L^{4} / 384 \right) = 1 / 5 = 0.2$, so the fixed-ended beam deflects **five times less**. For comparison, a cantilever of the same span deflects $(w L^{4} / 8) / (w L^{4} / 384) = 48$ times as much as the fixed-ended beam.
 :::
 :::
 
@@ -297,15 +297,15 @@ $\left( w L^{4} / 384 \right) / \left( 5 w L^{4} / 384 \right) = 1 / 5$, so the 
 A simply supported beam of $6\ \mathrm{m}$ span with $E I = 2.0 \times 10^{4}\ \mathrm{kN\,m^{2}}$ carries $20\ \mathrm{kN / m}$ uniformly and $30\ \mathrm{kN}$ at mid-span. Find the mid-span deflection.
 ::: solution
 $$
-\delta_w = \frac{5 w L^{4}}{384 E I} = \frac{5 \times 20 \times 6^{4}}{384 \times 2.0 \times 10^{4}} = 0.032\ \mathrm{m} = 32\ \mathrm{mm},
+\delta_w = \frac{5 w L^{4}}{384 E I} = \frac{5 \times 20 \times 6^{4}}{384 \times 2.0 \times 10^{4}} = 0.0169\ \mathrm{m} = 16.9\ \mathrm{mm},
 $$
 $$
 \delta_P = \frac{P L^{3}}{48 E I} = \frac{30 \times 216}{48 \times 2.0 \times 10^{4}} = 0.00675\ \mathrm{m} = 6.8\ \mathrm{mm},
 $$
 $$
-\delta = 38.8\ \mathrm{mm}.
+\delta = 23.6\ \mathrm{mm}.
 $$
-*Sanity.* The uniform load contributes $83$ per cent of the deflection from $80$ per cent of the total load, and the point load only $17$ per cent. When a deflection is too large, look first at what is distributed, not at what is concentrated.
+*Sanity.* The uniform load contributes $71$ per cent of the deflection from $80$ per cent of the total load: kilonewton for kilonewton, a central point load deflects the beam $(1 / 48) / (5 / 384) = 1.6$ times as much as the same load spread uniformly.
 :::
 :::
 
@@ -319,11 +319,11 @@ $$
 \theta_A = - \frac{C_0 L}{3 E I}, \qquad
 \theta_B = \frac{C_0 L}{2 E I} - \frac{C_0 L}{3 E I} = + \frac{C_0 L}{6 E I}.
 $$
-The slope vanishes where the $M / E I$ area from $A$ equals $- \theta_A$, that is at $x = L / \sqrt{3} = 0.577 L$, where
+The slope vanishes where the $M / E I$ area from $A$ equals $- \theta_A$: $C_0 \left( x - x^{2} / 2 L \right) = C_0 L / 3$, that is at $x = L \left( 1 - 1 / \sqrt{3} \right) = 0.423 L$ from $A$, where
 $$
 \delta_{\max} = \frac{C_0 L^{2}}{9 \sqrt{3} E I} = 0.0642 \frac{C_0 L^{2}}{E I}.
 $$
-*Check.* $\theta_A + \theta_B = - C_0 L / 3 + C_0 L / 6 = - C_0 L / (6 E I)$... the signs are opposite as they must be for a single-curvature bend, and $|\theta_A| = 2 |\theta_B|$, consistent with the centroid being at $L / 3$ from $A$. $\checkmark$
+*Check.* The end slopes have opposite signs, as they must for a beam bent in single curvature, and $|\theta_A| = 2 |\theta_B|$, consistent with the centroid being at $L / 3$ from $A$. $\checkmark$
 :::
 :::
 
@@ -353,42 +353,38 @@ A machine bed cross-beam of $1.2\ \mathrm{m}$ span is simply supported and carri
 $$
 I_{\text{req}} = \frac{P L^{3}}{48 E \delta}
 = \frac{40\,000 \times 1200^{3}}{48 \times 200\,000 \times 0.1}
-= 7.20 \times 10^{6}\ \mathrm{mm^{4}} .
+= 72.0 \times 10^{6}\ \mathrm{mm^{4}} .
 $$
 For a square hollow section of outside width $b = 150$ and inside $b_i = 126$,
 $$
-I = \frac{150 d^{3} - 126 \left( d - 24 \right)^{3}}{12} = 7.20 \times 10^{6} .
+I = \frac{150 d^{3} - 126 \left( d - 24 \right)^{3}}{12} = 72.0 \times 10^{6} .
 $$
-Trying $d = 100\ \mathrm{mm}$: $I = \left( 150 \times 10^{6} - 126 \times 404.2 \times 10^{3} \right) / 12 = \left( 150.0 - 50.9 \right) \times 10^{6} / 12 = 8.26 \times 10^{6}\ \mathrm{mm^{4}}$ — adequate. Trying $d = 95$: $I = \left( 128.6 - 38.6 \right) \times 10^{6} / 12 = 7.50 \times 10^{6}$, still adequate. Trying $d = 92$: $I = 6.94 \times 10^{6}$, just short. **Select $d = 95\ \mathrm{mm}$.**
+Trying $d = 240\ \mathrm{mm}$: $I = \left( 2073.6 - 1269.8 \right) \times 10^{6} / 12 = 67.0 \times 10^{6}\ \mathrm{mm^{4}}$ — just short. Trying $d = 250$: $I = \left( 2343.8 - 1454.4 \right) \times 10^{6} / 12 = 74.1 \times 10^{6}\ \mathrm{mm^{4}}$, adequate, giving $\delta = 0.097\ \mathrm{mm}$. **Select $d = 250\ \mathrm{mm}$.**
 
 **Stress check.**
 $$
 M = \frac{40 \times 1.2}{4} = 12\ \mathrm{kN\,m}, \qquad
-\sigma = \frac{12 \times 10^{6} \times 47.5}{7.50 \times 10^{6}} = 76\ \mathrm{MPa}.
+\sigma = \frac{12 \times 10^{6} \times 125}{74.1 \times 10^{6}} = 20.2\ \mathrm{MPa}.
 $$
-*Design comment.* The stiffness requirement gives a stress of only $76\ \mathrm{MPa}$, less than a quarter of the allowable, so the beam is entirely deflection-governed — as machine structures almost always are. Note also what the $0.1\ \mathrm{mm}$ limit is really for: a machine tool's positional accuracy is set by the deflection of its structure under cutting force, and a $0.1\ \mathrm{mm}$ deflection at the tool point is a $0.1\ \mathrm{mm}$ error on the machined part. That is why machine beds are made of heavily ribbed cast iron or polymer concrete with $E I$ far in excess of what strength requires, and why a designer who sizes a machine frame on stress produces a frame that is light, cheap and inaccurate.
+*Design comment.* The stiffness requirement gives a stress of only $20\ \mathrm{MPa}$, about an eighth of a typical allowable of $165\ \mathrm{MPa}$, so the beam is entirely deflection-governed — as machine structures almost always are. Note also what the $0.1\ \mathrm{mm}$ limit is really for: a machine tool's positional accuracy is set by the deflection of its structure under cutting force, and a $0.1\ \mathrm{mm}$ deflection at the tool point is a $0.1\ \mathrm{mm}$ error on the machined part. That is why machine beds are made of heavily ribbed cast iron or polymer concrete with $E I$ far in excess of what strength requires, and why a designer who sizes a machine frame on stress produces a frame that is light, cheap and inaccurate.
 :::
 :::
 
 ::: exercise Derivation {level=3}
-Use Castigliano's theorem to find the horizontal reactions of a symmetric two-pinned portal frame of height $h$ and span $L$, rigid-jointed and loaded by a horizontal force $W$ applied at one eave, and state the assumptions on which the result depends.
+Use Castigliano's theorem to find the horizontal reactions of a symmetric two-pinned portal frame of height $h$ and span $L$, rigid-jointed and loaded by a vertical force $W$ at the middle of the beam, and state the assumptions on which the result depends.
 ::: solution
-Take the redundant horizontal thrust $H$ at the hinges. With $\phi$ measured from the crown, the vertical reaction is $V = w R$ per unit width and the bending moment at $\phi$ is
-$$
-M (\phi) = V R \sin \phi - \frac{w R^{2} \sin^{2} \phi}{2} - H R \left( 1 - \cos \phi \right) \times \ldots
-$$
-Take the horizontal reaction $H$ as the redundant:
+By symmetry each vertical reaction is $W / 2$. Take the horizontal reaction $H$ at the hinges as the redundant:
 $$
 \frac{\partial U}{\partial H} = \frac{1}{E I} \int M \frac{\partial M}{\partial H} \mathrm{d} s = 0 .
 $$
-On each column $M = H y$ with $\partial M / \partial H = y$, and on the beam $M = H h - W x / 2$ with $\partial M / \partial H = h$. Hence
+On each column $M = H y$ with $\partial M / \partial H = y$ ($y$ up from the hinge), and on each half of the beam $M = H h - W x / 2$ with $\partial M / \partial H = h$ ($x$ from the eave), taking moments that put the inside of the frame in tension as positive. Hence
 $$
 2 \int_0^h H y^{2} \mathrm{d} y + 2 \int_0^{L / 2} \left( H h - \frac{W x}{2} \right) h \, \mathrm{d} x = 0 ,
 $$
 $$
 \frac{2 H h^{3}}{3} + H h^{2} L - \frac{W h L^{2}}{8} = 0
 \quad\Longrightarrow\quad
-H = \frac{3 W h L^{2}}{8 \left( 2 h^{3} + 3 h^{2} L \right)} \times \frac{3}{3}
+H = \frac{3 W h L^{2}}{8 \left( 2 h^{3} + 3 h^{2} L \right)}
 = \frac{3 W L^{2}}{8 h \left( 2 h + 3 L \right)} .
 $$
 **Assumptions:** linear elastic material; small deflections so that equilibrium is written on the undeflected geometry; uniform $E I$ in all members; rigid beam-to-column joints transmitting moment without rotation; axially rigid members, so no sway from axial shortening; and no support settlement.

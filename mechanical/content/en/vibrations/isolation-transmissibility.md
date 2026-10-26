@@ -26,32 +26,27 @@ Neither the mass nor the stiffness appears: **doubling the mass of an isolated m
 :::
 
 ::: proof Support motion gives the same transmissibility {#proof-support-motion}
-For a support moving as $y = Y \sin \omega t$ the spring and damper act on the relative displacement $z = x - y$:
+For a support moving as $y = Y \sin \omega t$ the spring and damper act on the relative displacement $x - y$, so the equation of motion of the mass in absolute coordinates is
 $$
 m \ddot{x} + c \left( \dot{x} - \dot{y} \right) + k \left( x - y \right) = 0
 \quad\Longrightarrow\quad
-m \ddot{z} + c \dot{z} + k z = - m \ddot{y} = m \omega Y \cos \omega t .
+m \ddot{x} + c \dot{x} + k x = k y + c \dot{y} .
 $$
-The relative amplitude is therefore
+With complex amplitudes, $y = Y e^{i \omega t}$ and $x = X e^{i \omega t}$,
 $$
-\frac{Z}{Y} = \frac{r^{2}}{\sqrt{\left( 1 - r^{2} \right)^{2} + \left( 2 \zeta r \right)^{2}}} ,
+\frac{X}{Y} = \frac{k + i c \omega}{k - m \omega^{2} + i c \omega}
+= \frac{1 + 2 \zeta r \, i}{\left( 1 - r^{2} \right) + 2 \zeta r \, i} ,
 $$
-and the transmitted force is $F_T = Z \sqrt{k^{2} + \left( c \omega \right)^{2}}$, so with $c \omega / k = 2 \zeta r$,
+using $c \omega / k = 2 \zeta r$. For a machine excited by a force $F_0$ on a rigid base, the force transmitted through the spring and damper is $F_T = \left( k + i c \omega \right) X$ with $X = F_0 / \left( k - m \omega^{2} + i c \omega \right)$, so
 $$
-\frac{F_T}{k Y}
-= \frac{r^{2} \sqrt{1 + \left( 2 \zeta r \right)^{2}}}{\sqrt{\left( 1 - r^{2} \right)^{2} + \left( 2 \zeta r \right)^{2}}} .
+\frac{F_T}{F_0} = \frac{k + i c \omega}{k - m \omega^{2} + i c \omega} ,
 $$
-Dividing numerator and denominator by $r^{2}$ converts $\left( 1 - r^{2} \right)^{2} / r^{4}$ into $\left( 1 / r^{2} - 1 \right)^{2}$ and $4 \zeta^{2} r^{2} / r^{4}$ into $4 \zeta^{2} / r^{2}$, so
+the same complex ratio. Both therefore have the modulus
 $$
-\frac{F_T}{k Y}
-= \frac{\sqrt{1 + \left( 2 \zeta r \right)^{2}}}{\sqrt{\left( 1 - 1 / r^{2} \right)^{2} + \left( 2 \zeta / r \right)^{2}}} ,
+\left| \frac{F_T}{F_0} \right| = \left| \frac{X}{Y} \right|
+= \sqrt{\frac{1 + \left( 2 \zeta r \right)^{2}}{\left( 1 - r^{2} \right)^{2} + \left( 2 \zeta r \right)^{2}}} = T ,
 $$
-which is the transmissibility evaluated at the frequency ratio $1 / r$ in the denominator's first term — and since $\left( 1 - 1 / r^{2} \right)^{2} r^{4} = \left( r^{2} - 1 \right)^{2}$, multiplying top and bottom by $r^{2}$ recovers
-$$
-\frac{F_T}{k Y} = \frac{X}{Y}
-= \sqrt{\frac{1 + \left( 2 \zeta r \right)^{2}}{\left( 1 - r^{2} \right)^{2} + \left( 2 \zeta r \right)^{2}}} = T .
-$$
-The absolute displacement ratio $X / Y = \left( 1 + 2 \zeta r \, i \right) / \left[ \left( 1 - r^{2} \right) + 2 \zeta r \, i \right]$ has the same modulus, so force transmissibility and motion transmissibility are one and the same function. $\checkmark$
+and force transmissibility and motion transmissibility are one and the same function. The **relative** motion $z = x - y$ obeys $m \ddot{z} + c \dot{z} + k z = - m \ddot{y} = m \omega^{2} Y \sin \omega t$, giving $Z / Y = r^{2} / \sqrt{\left( 1 - r^{2} \right)^{2} + \left( 2 \zeta r \right)^{2}}$ — the isolator stroke, used in the instrument and stroke calculations below. $\checkmark$
 
 *Note.* The equality of force transmissibility and motion transmissibility is not a coincidence: both are the same transfer function read at the same port of a two-port mechanical network. It fails as soon as the source and the receiver are not the simple single-degree-of-freedom pair — for example when the machine has a flexible mode inside its own mass, or when the foundation is not rigid.
 :::
@@ -97,7 +92,7 @@ f: sqrt(1+(2*0.05*x)^2)/sqrt((1-x^2)^2+(2*0.05*x)^2)
 x: 0, 6
 y: 0, 6
 labels: \text{transmissibility } T
-caption: Transmissibility against frequency ratio for a damping ratio of $0.05$, crossing unity at $r = \sqrt{2}$ and falling as $1 / \left( r^{2} - 1 \right)$ beyond. The crossing at $\sqrt{2}$ is independent of damping, and so is the general shape of the curve to its right — which is why an isolation specification is written as a frequency ratio, or equivalently as a static deflection, and never as a stiffness. Read the curve the other way: at $r = 2$ the transmissibility is $0.33$, at $r = 3$ it is $0.125$ and at $r = 5$ it is $0.04$, so the gain from $r = 2$ to $r = 3$ is a factor of $2.7$ while the gain from $r = 3$ to $r = 5$ is only $3.1$ for a $1.7$-fold increase in deflection. Beyond $r$ of about five, further softening buys little and the practical gains lie in reducing the force at source.
+caption: Transmissibility against frequency ratio for a damping ratio of $0.05$, crossing unity at $r = \sqrt{2}$ and falling as $1 / \left( r^{2} - 1 \right)$ beyond. The crossing at $\sqrt{2}$ is independent of damping, and so is the general shape of the curve to its right — which is why an isolation specification is written as a frequency ratio, or equivalently as a static deflection, and never as a stiffness. Read the curve the other way: at $r = 2$ the transmissibility is $0.34$, at $r = 3$ it is $0.13$ and at $r = 5$ it is $0.047$, so going from $r = 2$ to $r = 3$ gains a factor of $2.6$ for $2.25$ times the static deflection, and going from $r = 3$ to $r = 5$ a factor of $2.8$ for $2.8$ times the deflection: each further halving of $T$ costs roughly a doubling of deflection. Beyond $r$ of about five, where $T$ is already a few per cent, further softening buys little and the practical gains lie in reducing the force at source.
 :::
 
 ::: example Isolation onto a flexible foundation {#ex-flexible-foundation}
@@ -121,21 +116,21 @@ are $3.00\ \mathrm{Hz}$ and $6.67\ \mathrm{Hz}$. The transmitted force per newto
 - at $10\ \mathrm{Hz}$: $0.079$
 - at $20\ \mathrm{Hz}$: $0.003$
 
-*Check.* At $5\ \mathrm{Hz}$ the machine's own amplitude is $0.0028\ \mathrm{mm}$ against a static $0.010\ \mathrm{mm}$, the **antiresonance** at which the mount acts as a tuned absorber — the machine is still, and the foundation is moving. $\checkmark$
+*Check.* The machine's amplitude is proportional to $k_1 + k_2 - m_2 \omega^{2}$ and vanishes at $\omega^{2} = \left( k_1 + k_2 \right) / m_2$, that is at $5.34\ \mathrm{Hz}$: an **antiresonance** at which the block on its mountings acts as a tuned absorber — the machine is still, and the block moves $0.010\ \mathrm{mm}$ per newton. At $5\ \mathrm{Hz}$ the machine already moves only $0.0028\ \mathrm{mm}$ per newton, against a static $0.018\ \mathrm{mm}$. $\checkmark$
 
-*Sanity.* Three things follow, and all three are seen in practice. First, the isolation does not begin at $\sqrt{2} \times 5 = 7.1\ \mathrm{Hz}$ but at the **upper coupled** frequency, and below it there is a region where the mount transmits **more** than a rigid fixing. Second, the lower coupled mode at $3\ \mathrm{Hz}$ is a monster: an eight-hundred-fold amplification of the transmitted force, which in a real system with five per cent damping is nearer forty but is still a design disaster waiting for a machine to idle through it. Third, at $5\ \mathrm{Hz}$ the machine is perfectly still and the foundation is nevertheless moving — the classic condition of a machine that "does not vibrate" and whose building does, and the reason vibration surveys are done at the **foundation** as well as at the machine.
+*Sanity.* Three things follow, and all three are seen in practice. First, the isolation does not begin at $\sqrt{2} \times 5 = 7.1\ \mathrm{Hz}$ but at the **upper coupled** frequency, and below it there is a region where the mount transmits **more** than a rigid fixing. Second, the lower coupled mode at $3\ \mathrm{Hz}$ is a monster: an eight-hundred-fold amplification of the transmitted force, which in a real system with five per cent damping is nearer forty but is still a design disaster waiting for a machine to idle through it. Third, near $5.3\ \mathrm{Hz}$ the machine is perfectly still and the foundation is nevertheless moving — the classic condition of a machine that "does not vibrate" and whose building does, and the reason vibration surveys are done at the **foundation** as well as at the machine.
 :::
 :::
 
 ## Mounts and their limitations
 
 ::: proposition Mount types {#prop-mount-types}
-- **Solid rubber or rubber-to-metal:** cheap, no maintenance, loss factor $0.1$ to $0.2$, useful down to about $8\ \mathrm{mm}$ static deflection ($5\ \mathrm{Hz}$); creeps under sustained load and stiffens with age and cold.
+- **Solid rubber or rubber-to-metal:** cheap, no maintenance, loss factor $0.1$ to $0.2$, useful up to about $8\ \mathrm{mm}$ static deflection ($5.6\ \mathrm{Hz}$); creeps under sustained load and stiffens with age and cold.
 - **Bonded shear mounts:** the rubber works in shear, giving a lower vertical rate for the same footprint and deflections to $20\ \mathrm{mm}$; the horizontal rate falls to a third of the vertical, which is often the weak direction.
-- **Wire rope:** loss factor $0.02$ to $0.05$, deflections to $50\ \mathrm{mm}$, tolerant of oil, temperature and weather, and non-linear enough that the "rated" deflection must be checked on the actual load.
-- **Steel spring:** deflections to $200\ \mathrm{mm}$ and beyond, loss factor under $0.01$, essentially no damping, and **no** horizontal stiffness to speak of — a spring-mounted machine must be restrained laterally or it walks.
-- **Air spring:** deflection set by the air pressure rather than by the geometry, so a $50\,\mathrm{kPa}$ bag gives $100\ \mathrm{mm}$ and a $700\ \mathrm{kPa}$ one gives $7\ \mathrm{mm}$; the damping is nil and must be added externally through orifice dampers, and the whole system needs a compressor, a height valve and a leak rate.
-- **Negative-stability and pendulum isolators:** mechanical arrangements that subtract stiffness, reaching $1\ \mathrm{Hz}$ and below for optical tables and metrology laboratories, at the cost of a lateral stiffness that goes **negative** with the vertical and must be restored by flexures.
+- **Wire rope:** high damping from friction between the strands (equivalent $\zeta$ of roughly $0.1$ to $0.2$), deflections to $50\ \mathrm{mm}$, tolerant of oil, temperature and weather, and non-linear enough that the "rated" deflection must be checked on the actual load.
+- **Steel spring:** deflections to $200\ \mathrm{mm}$ and beyond, loss factor under $0.01$, essentially no damping, and a lateral stiffness that depends on the spring's height-to-diameter ratio — a tall spring is laterally soft and can buckle, so spring-mounted machines are usually fitted with lateral restraints or snubbers.
+- **Air spring:** stiffness $k = \gamma p_{\text{abs}} A^{2} / V$, so the equivalent static deflection, $p_g V / \left( \gamma p_{\text{abs}} A \right)$, is set by the air volume per unit area rather than by the load, and the natural frequency (typically $1$ to $3\ \mathrm{Hz}$) stays nearly constant as the load changes; the damping is small and is usually added through an orifice between bag and reservoir or by external dampers, and the whole system needs a compressor, a height valve and a leak rate.
+- **Negative-stiffness and pendulum isolators:** mechanical arrangements that subtract stiffness, reaching $1\ \mathrm{Hz}$ and below for optical tables and metrology laboratories, at the cost of a lateral stiffness that goes **negative** with the vertical and must be restored by flexures.
 :::
 
 ::: example Choosing a mount from a catalogue {#ex-mount-catalogue}
@@ -158,21 +153,21 @@ $$
 :::
 
 ::: example The stinger {#ex-stinger}
-A shaker is coupled to a structure whose dynamic stiffness at $100\ \mathrm{Hz}$ is $50\ \mathrm{kN / m}$, through an aluminium rod of $2\ \mathrm{mm}$ diameter. Find the rod length that introduces one per cent error, and the axial load at which it buckles.
+A shaker drives a structure through a **stinger**, an aluminium rod of $2\ \mathrm{mm}$ diameter ($E = 70\ \mathrm{GPa}$). The structure's dynamic stiffness at the drive point at $100\ \mathrm{Hz}$ is $50\ \mathrm{kN / m}$. Find the longest stinger whose axial stiffness is at least one hundred times that of the structure, so that it transmits the shaker's motion with about one per cent loss, and its Euler buckling load.
 ::: solution
-**Length.** The coupling rod must be much softer than the structure, so
+**Length.** The rod must be axially **stiff** compared with the structure, so
 $$
-k_{\text{rod}} = 0.01 \times 50\,000 = 500\ \mathrm{N / m},
+k_{\text{rod}} = 100 \times 50\,000 = 5.0 \times 10^{6}\ \mathrm{N / m},
 \qquad
-L = \frac{E A}{k} = \frac{70 \times 10^{9} \times \pi \times 0.001^{2}}{500} = 440\ \mathrm{mm}.
+L = \frac{E A}{k_{\text{rod}}} = \frac{70 \times 10^{9} \times \pi \times 0.001^{2}}{5.0 \times 10^{6}} = 44\ \mathrm{mm}.
 $$
-**Buckling.** With $I = \pi d^{4} / 64 = 7.85 \times 10^{- 13}\ \mathrm{m^{4}}$,
+**Buckling.** With $I = \pi d^{4} / 64 = 7.85 \times 10^{- 13}\ \mathrm{m^{4}}$ and pinned ends,
 $$
 P_{\text{cr}} = \frac{\pi^{2} E I}{L^{2}}
-= \frac{\pi^{2} \times 70 \times 10^{9} \times 7.85 \times 10^{- 13}}{0.44^{2}}
-= 2.8\ \mathrm{mN}.
+= \frac{\pi^{2} \times 70 \times 10^{9} \times 7.85 \times 10^{- 13}}{0.044^{2}}
+= 280\ \mathrm{N}.
 $$
-*Sanity.* Two millinewtons — the weight of a grain of rice. A stinger can therefore transmit essentially **no compression**, which is why every modal test uses a preloaded stinger with a soft spring pushing the rod into contact, or a "buckle strap" that takes the compression, and why the measured force is always a fraction of what the shaker's own force transducer reports. The whole art of force measurement on a structure is that the measuring element must be **infinitely soft** in the direction it measures, and any real element that is soft enough to measure the force is soft enough to buckle under it. This is why impedance heads, which measure the **acceleration** of a known seismic mass rather than the force directly, have largely replaced the stinger for field work, and why a hammer impact — where the contact force is measured by a load cell in the tip and the structure is never touched at all — is the most robust of the three.
+*Sanity.* The stinger is a deliberate compromise: stiff along its axis, so that it delivers the shaker's force, but slender, so that it is flexible in bending and transmits almost no moment or lateral force — the excitation is then a single, known force component. Doubling the length to $88\ \mathrm{mm}$ halves the axial stiffness and quarters the buckling load to $70\ \mathrm{N}$, which is why stingers are kept short and thin and the static preload of the shaker is kept well below the buckling load. The force is measured by a force transducer at the **structure** end of the stinger, so that the stinger's own dynamics do not enter the measured force; for quick field work an instrumented impact hammer, with a load cell in its tip, avoids the stinger altogether.
 :::
 :::
 
@@ -195,7 +190,7 @@ $$
 $$
 with the analogous expressions for the other axes. If the centre of mass is **not** at the centre of the pattern, the off-diagonal terms survive and the "vertical" mode is a mixture of bounce and pitch — which is why a machine whose centre of mass is unknown cannot be analysed by the arithmetic of Example 1 and must be measured. $\checkmark$
 
-*Note.* The same algebra gives the **load sharing** of Example 5 as the static solution, and it is the reason a six-point mount system on a rigid baseframe is statically indeterminate: the mount loads depend on the relative stiffness of the frame and the mounts, and a frame that is not rigid will distribute the load quite differently from the rigid-body arithmetic.
+*Note.* The same algebra gives the **load sharing** of Example 3 as the static solution, and it is the reason a six-point mount system on a rigid baseframe is statically indeterminate: the mount loads depend on the relative stiffness of the frame and the mounts, and a frame that is not rigid will distribute the load quite differently from the rigid-body arithmetic.
 :::
 
 ## Vibration measurement
@@ -207,11 +202,11 @@ A vibrometer with $f_n = 2\ \mathrm{Hz}$ and $\zeta = 0.6$ and an accelerometer 
 $$
 \frac{Z}{Y} = \frac{225}{\sqrt{224^{2} + 18^{2}}} = 1.0012 ,
 $$
-a $0.1$ per cent error. The lower limit, at one per cent error, is about $7\ \mathrm{Hz}$.
-**Accelerometer.** Reads acceleration for $r \ll 1$; at $30\ \mathrm{Hz}$, $r = 0.003$ and the error is $\mathcal{O} \left( r^{2} \right)$, negligible. Its upper limit, at five per cent error with $\zeta = 0.7$, is about $0.4 f_n = 4\ \mathrm{kHz}$.
-**Cross-over.** The vibrometer is useless below $6\ \mathrm{Hz}$ and the accelerometer useless below a few hertz if the signal is small; a $30\ \mathrm{Hz}$ machine is comfortably in both bands, which is why plant vibration is quoted in **velocity** — the quantity that both instruments can be made to measure well in the middle of their ranges.
+a $0.1$ per cent error. The lower limit, at one per cent error, is about $10\ \mathrm{Hz}$.
+**Accelerometer.** Reads acceleration for $r \ll 1$; at $30\ \mathrm{Hz}$, $r = 0.003$ and the error is $\mathcal{O} \left( r^{2} \right)$, negligible. Its upper limit, at one per cent error with $\zeta = 0.7$, is about $0.4 f_n = 4\ \mathrm{kHz}$.
+**Cross-over.** The vibrometer is inaccurate below about $10\ \mathrm{Hz}$ and the accelerometer useless below a few hertz if the signal is small; a $30\ \mathrm{Hz}$ machine is comfortably in both bands, which is why plant vibration is quoted in **velocity** — the quantity that both instruments can be made to measure well in the middle of their ranges.
 
-*Sanity.* The choice of velocity as the plant-vibration currency is not a convention but a consequence: displacement is proportional to $1 / \omega$ and acceleration to $\omega$, so a spectrum containing equal **forces** over a band of frequencies shows a rising line in one and a falling line in the other, and only velocity is roughly flat. It is also why ISO 10816 quotes velocity: for a given force, the velocity — and hence the power carried — is what stays comparable across the speed range.
+*Sanity.* For a given velocity amplitude, displacement falls as $1 / \omega$ and acceleration rises as $\omega$, so a displacement spectrum emphasises the low frequencies and an acceleration spectrum the high ones. Machinery spectra over roughly $10$ to $1000\ \mathrm{Hz}$ are flattest in velocity, and velocity is tied to the kinetic energy of the vibration, which is why ISO 10816 and its successors quote severity as an RMS velocity.
 :::
 :::
 
@@ -243,14 +238,14 @@ $$
 $$
 f_{\text{lat}} = 6.84 \sqrt{0.5} = 4.84\ \mathrm{Hz}.
 $$
-**Comment.** The rocking and lateral frequencies, $11.2$ and $4.8\ \mathrm{Hz}$, are both below the vertical $6.8\ \mathrm{Hz}$ in the sense that the lateral is, and both give good isolation at the running speed — the lateral at $r = 5.2$ transmits $3.9$ per cent. They **are** a problem for the engine's firing frequency at low speed during starting, for the building's own seismic motion, and for the $50\ \mathrm{Hz}$ and $100\ \mathrm{Hz}$ electrical components of the alternator's magnetic pull, which see $r$ of $10$ and $21$ and are transmitted at $1.3$ and $0.3$ per cent but which the building floor is often itself resonant in. The design therefore needs: lateral restraint or snubbers; a **flexible** exhaust with an expansion bellow and a flexible connection to the fuel and coolant circuits, since a rigid steel exhaust pipe is a spring of several hundred kilonewtons per metre and will short-circuit the mount completely; a flexible disc coupling between engine and alternator, rated for the $5\ \mathrm{mm}$ of angular and axial movement the mounts allow; and a baseframe stiff enough that its own bending mode is above $60\ \mathrm{Hz}$.
+**Comment.** The lateral mode, at $4.8\ \mathrm{Hz}$, lies below the vertical $6.8\ \mathrm{Hz}$ and the rocking mode, at $11.2\ \mathrm{Hz}$, above it; both still give good isolation at the running speed — the lateral at $r = 5.2$ transmits $5.6$ per cent. They **are** a problem for the engine's firing frequency at low speed during starting, for the building's own seismic motion, and for the $50\ \mathrm{Hz}$ and $100\ \mathrm{Hz}$ electrical components of the alternator's magnetic pull, which see $r$ of $10$ and $21$ and are transmitted at $2.2$ and $1.0$ per cent but which the building floor is often itself resonant in. The design therefore needs: lateral restraint or snubbers; a **flexible** exhaust with an expansion bellow and a flexible connection to the fuel and coolant circuits, since a rigid steel exhaust pipe is a spring of several hundred kilonewtons per metre and will short-circuit the mount completely; a flexible disc coupling between engine and alternator, rated for the $5\ \mathrm{mm}$ of angular and axial movement the mounts allow; and a baseframe stiff enough that its own bending mode is above $60\ \mathrm{Hz}$.
 
 *Sanity.* The exhaust pipe is the item that defeats most real generator installations, and it is the general lesson: an isolation system is only as soft as its **softest** connection, and a generator set has fuel, coolant, air, exhaust, oil and electrical connections, every one of which leaves the baseframe and is bolted, clamped or bonded to the building somewhere. A single rigid conduit can carry more vibration than the mounts stop, and commissioning an isolated machine without measuring the connections is measuring the wrong thing.
 :::
 :::
 
 ::: history
-The theory of isolation is simply the forced-oscillator transmissibility and appears in the same late-nineteenth-century literature; its **engineering** use begins with the resilient mounting of ship machinery in the First World War, where the motive was not comfort but the detection of submarines, and where the discovery that a resiliently mounted turbine still transmitted its vibration through the **raft** and the foundations led directly to the raft-mounting and floating-raft practice of the inter-war navy. The **air spring** was developed for rail vehicles in the 1930s and for precision applications after 1945; the **negative-stability** isolator, which uses a beam under end load to subtract stiffness, is due to the beam-column effect known since Euler and was applied to vibration isolation by Rossing and others in the 1960s, and the pendulum-and-negative-stability tables now used under electron microscopes and gravitational-wave instruments reach sub-hertz performance that would have seemed absurd to the wartime generation. The **loss factor** language of mount data sheets is borrowed from electrical engineering in the 1940s, and the **ISO 10816** severity zones that specify when a mounted machine is doing its job date from the 1970s.
+The theory of isolation is simply the forced-oscillator transmissibility of the late nineteenth century. Resilient machinery mounts spread with bonded rubber-to-metal parts in the early 1930s — Chrysler's "Floating Power" rubber engine mounts of 1931 are a well-known example — and after the Second World War navies adopted resilient and raft mounting of machinery to reduce the noise radiated by ships and submarines. **Air springs** became standard on buses, lorries and railway bogies in the second half of the twentieth century, and on pneumatic optical tables. **Negative-stiffness** mechanisms, which cancel part of a spring's stiffness to reach very low natural frequencies, were commercialised for precision isolation in the 1990s, and gravitational-wave detectors combine multi-stage pendulums with active isolation to reach sub-hertz performance. The vibration-severity zones used to judge whether a mounted machine is doing its job appeared in ISO 2372 (1974) and continue in ISO 10816 and ISO 20816.
 :::
 
 ## Where this leads
@@ -262,7 +257,7 @@ The transmissibility derivation and the $\sqrt{2}$ boundary are in [[vibrations/
 - Isolation is specified as a **static deflection**, $\delta_{\text{st}} = g r^{2} / \omega^{2}$; adding mass does not improve it.
 - Damping is essential through resonance and harmful in the isolation region, where $T \to 2 \zeta / r$ at high damping.
 - The vertical mode is the easy one; the **rocking** and **lateral** modes are softer and must be checked against every disturbing frequency including the low ones.
-- Mount types span $5\ \mathrm{mm}$ of deflection for solid rubber to $200\ \mathrm{mm}$ for a steel spring, with air springs set by pressure rather than geometry.
+- Mount types span about $8\ \mathrm{mm}$ of deflection for solid rubber to $200\ \mathrm{mm}$ for a steel spring; an air spring's natural frequency is set by its air volume and stays nearly constant with load.
 - An isolation system is only as soft as its stiffest connection — exhaust, piping, conduit, coupling and electrical containment all count.
 :::
 
@@ -273,7 +268,7 @@ A machine is isolated with a mount that gives a frequency ratio of exactly $1.3$
 - [ ] Unchanged, because transmissibility is unity below resonance
 - [ ] Reduced only if the damping is high enough
 ::: solution
-The transmissibility crosses unity at $r = \sqrt{2} = 1.414$ **whatever the damping**, so at $r = 1.3$ the mount transmits **more** force than a rigid connection would. At $r = 1.3$ with $\zeta = 0.05$ the transmissibility is $1.74$ — the isolation has made the problem $74$ per cent worse. This is the single most common error in the field, because a mount that is "soft" always feels like an improvement and is measured to be one only above $\sqrt{2}$ times its own natural frequency. The corollary is that a machine started and stopped often, or one run at variable speed, spends part of every cycle in the amplification region, and that the correct remedy there is not a softer mount but a **switched** one: an air spring that is inflated to full stiffness during the run-up and then lowered onto the soft part of its curve, or a resilient mount with a deliberate mechanical stop that bypasses it at low speed.
+The transmissibility crosses unity at $r = \sqrt{2} = 1.414$ **whatever the damping**, so at $r = 1.3$ the mount transmits **more** force than a rigid connection would. At $r = 1.3$ with $\zeta = 0.05$ the transmissibility is $1.44$ — the isolation has made the problem $44$ per cent worse. This is the single most common error in the field, because a mount that is "soft" always feels like an improvement and is measured to be one only above $\sqrt{2}$ times its own natural frequency. The corollary is that a machine started and stopped often, or one run at variable speed, spends part of every cycle in the amplification region, and that the correct remedy there is not a softer mount but a **switched** one: an air spring that is inflated to full stiffness during the run-up and then lowered onto the soft part of its curve, or a resilient mount with a deliberate mechanical stop that bypasses it at low speed.
 :::
 :::
 
@@ -311,9 +306,9 @@ $$
 $$
 At twice the speed, $r = 5.87$:
 $$
-T = \frac{\sqrt{1 + 5.51}}{\sqrt{28.86^{2} + 5.51}} = \frac{2.552}{28.96} = 0.088 ,
+T = \frac{\sqrt{1 + 5.51}}{\sqrt{33.46^{2} + 5.51}} = \frac{2.552}{33.54} = 0.076 ,
 $$
-against $0.042$ for the lightly damped mount at the same frequency ratio.
+against $0.035$ for the lightly damped mount at the same frequency ratio.
 *Sanity.* The extra damping costs forty per cent more deflection to achieve the same isolation and more than doubles the transmitted force at twice the speed. It buys one thing: the resonance peak falls from $1 / \left( 2 \times 0.05 \right) = 10$ to $1 / \left( 2 \times 0.2 \right) = 2.5$, so the machine's travel through the resonance on starting falls from ten static deflections to two and a half. That is usually the deciding consideration, and it is why mount damping is chosen for the **start-up** and the isolation is then accepted at whatever deflection results.
 :::
 :::
@@ -331,7 +326,7 @@ $$
 \delta_{\text{front}} = \frac{564}{188\,000} = 3.0\ \mathrm{mm}, \qquad
 \delta_{\text{rear}} = \frac{417}{188\,000} = 2.2\ \mathrm{mm}.
 $$
-*Sanity.* A $60\ \mathrm{mm}$ eccentricity — three per cent of the pattern length — tilts the machine by $0.8\ \mathrm{mm}$ across $800\ \mathrm{mm}$, or one milliradian, and puts the front mounts at $35$ per cent more deflection than the rear. The machine then stands out of level, the rocking natural frequency is shifted, and if the eccentricity is **rotating** — an unbalanced rotor mounted off-centre — the four mounts work at different points on their non-linear load-deflection curves and generate harmonics that were never in the rotor. This is why mount patterns are centred on the centre of mass, and why a machine whose centre of mass moves with load, such as a press with a travelling ram or a crane hoist, is a harder isolation problem than the arithmetic suggests.
+*Sanity.* A $60\ \mathrm{mm}$ eccentricity — $7.5$ per cent of the pattern length — tilts the machine by $0.8\ \mathrm{mm}$ across $800\ \mathrm{mm}$, or one milliradian, and puts the front mounts at $35$ per cent more deflection than the rear. The machine then stands out of level, the rocking natural frequency is shifted, and if the eccentricity is **rotating** — an unbalanced rotor mounted off-centre — the four mounts work at different points on their non-linear load-deflection curves and generate harmonics that were never in the rotor. This is why mount patterns are centred on the centre of mass, and why a machine whose centre of mass moves with load, such as a press with a travelling ram or a crane hoist, is a harder isolation problem than the arithmetic suggests.
 :::
 :::
 
@@ -348,7 +343,7 @@ $$
 \frac{Z}{Y} = \frac{2.25}{\sqrt{1.5625 + 4.41}} = \frac{2.25}{2.444} = 0.921 ,
 $$
 a $- 7.9$ per cent error.
-*Sanity.* A heavily damped vibrometer is remarkably accurate even at $r = 1.5$, which surprises everyone who has been taught the "three times natural frequency" rule — that rule is written for **lightly** damped instruments, whose $Z / Y$ curve has a resonance peak near $r = 1$ and only settles to unity well above it. A damped instrument trades a flat response for a **low** one: at $r = 1.5$ it reads $92$ per cent instead of $112$ per cent, and the calibration factor must be taken from the curve rather than assumed. This is why a displacement pickup's data sheet gives a tabulated correction against frequency, and why using one outside its specified band is not a matter of reduced accuracy but of an unknown one.
+*Sanity.* A heavily damped vibrometer is remarkably accurate even at $r = 1.5$, which surprises everyone who has been taught the "three times natural frequency" rule — that rule is written for **lightly** damped instruments, whose $Z / Y$ curve has a resonance peak near $r = 1$ and only settles to unity well above it. A damped instrument trades a flat response for a **low** one: at $r = 1.5$ it reads $92$ per cent, where a lightly damped instrument ($\zeta = 0.05$) would read $179$ per cent, and the calibration factor must be taken from the curve rather than assumed. This is why a displacement pickup's data sheet gives a tabulated correction against frequency, and why using one outside its specified band is not a matter of reduced accuracy but of an unknown one.
 :::
 :::
 
@@ -367,15 +362,15 @@ T \approx \frac{1}{r^{2} - 1} = 4.0 \times 10^{- 4},
 \qquad X = 0.5 \times 4.0 \times 10^{- 4} = 0.0002\ \mu \mathrm{m},
 $$
 comfortably below the $0.01\ \mu \mathrm{m}$ requirement.
-**Mount type.** A plain air bellows has a vertical stiffness $k = \gamma P A^{2} / V$, so six isolators of $1970\ \mathrm{N / m}$ each at a supply pressure of $400\ \mathrm{kPa}$ need
+**Mount type.** An air spring has vertical stiffness $k = \gamma p_{\text{abs}} A^{2} / V$. Six isolators at $400\ \mathrm{kPa}$ gauge each carry $300 \times 9.81 / 6 = 490\ \mathrm{N}$, so the piston area is $A = 490 / 400\,000 = 1.23 \times 10^{- 3}\ \mathrm{m^{2}}$ (about $40\ \mathrm{mm}$ diameter), and $k = 1970\ \mathrm{N / m}$ each needs
 $$
-V = \frac{\gamma P A^{2}}{k}
-= \frac{1.33 \times 400\,000 \times 0.025^{2}}{1970} = 0.17\ \mathrm{m^{3}}
+V = \frac{\gamma p_{\text{abs}} A^{2}}{k}
+= \frac{1.33 \times 501\,000 \times \left( 1.23 \times 10^{- 3} \right)^{2}}{1970} = 5.1 \times 10^{- 4}\ \mathrm{m^{3}}
 $$
-per isolator — a gas reservoir the size of a domestic hot-water cylinder under each corner of the table. That is why commercial optical-table isolators do not use a plain bellows but a **rolling-lobe** or **negative-stability** air spring, in which the bellows acts on a pivoted lever whose geometry subtracts stiffness, reaching $1\ \mathrm{Hz}$ from a compact package. The lateral direction is separately stiffened by flexural guides, because a pure $1\ \mathrm{Hz}$ vertical isolator has a lateral frequency of the same order and would be hopelessly soft.
-**Lateral check.** A pure pendulum at $1\ \mathrm{Hz}$ vertical has a lateral frequency of the same order and would be hopelessly soft; the real table adds flexural guides that stiffen the lateral direction to $5$ to $10\ \mathrm{Hz}$ while leaving the vertical near $1\ \mathrm{Hz}$.
+per isolator — about half a litre, an effective air-column height $V / A$ of $0.41\ \mathrm{m}$. That is why commercial pneumatic optical-table isolators combine a small piston or diaphragm with a reservoir chamber, reaching about $1\ \mathrm{Hz}$ in a compact package, usually with an orifice between the two volumes to provide damping.
+**Lateral check.** The floor also moves horizontally, and the air spring alone gives little lateral isolation. Commercial isolators hang the load on a short internal pendulum: $f = \left( 2 \pi \right)^{- 1} \sqrt{g / L}$, so a lateral frequency of $1.5\ \mathrm{Hz}$ needs $L = 9.81 / \left( 2 \pi \times 1.5 \right)^{2} = 110\ \mathrm{mm}$.
 
-*Design comment.* The attenuation requirement is trivially met — $50\ \mathrm{Hz}$ against a $1\ \mathrm{Hz}$ isolator is $r = 50$ and $T = 4 \times 10^{- 4}$ — and the whole difficulty is elsewhere: the **resonance** at $1\ \mathrm{Hz}$, where an unattenuated floor motion of $0.5\ \mu \mathrm{m}$ becomes $0.5 / \left( 2 \zeta \right)$, which at $\zeta = 0.05$ is $5\ \mu \mathrm{m}$, five hundred times the specification. Optical tables therefore carry **active** damping at the resonance, or use a loss factor near $0.3$ at the resonant frequency only. The second real difficulty is the horizontal, and the third is that a person walking on the table applies a force of several hundred newtons at $2\ \mathrm{Hz}$, which is at the resonance: hence the rule that you do not lean on an optical table, and hence the floating floor and the separate pier that a serious metrology laboratory builds.
+*Design comment.* The attenuation requirement is trivially met — $50\ \mathrm{Hz}$ against a $1\ \mathrm{Hz}$ isolator is $r = 50$ and $T = 4 \times 10^{- 4}$ — and the whole difficulty is elsewhere: the **resonance** at $1\ \mathrm{Hz}$, where an unattenuated floor motion of $0.5\ \mu \mathrm{m}$ becomes $0.5 / \left( 2 \zeta \right)$, which at $\zeta = 0.05$ is $5\ \mu \mathrm{m}$, five hundred times the specification. Optical tables therefore carry **active** damping at the resonance, or use a loss factor near $0.3$ at the resonant frequency only. The second real difficulty is the horizontal direction, and the third is that a person walking on the table applies a force of several hundred newtons at $2\ \mathrm{Hz}$, which is at the resonance: hence the rule that you do not lean on an optical table, and hence the floating floor and the separate pier that a serious metrology laboratory builds.
 :::
 :::
 

@@ -29,7 +29,7 @@ so the **angle of repose** equals the friction angle. More generally, a body on 
 :::
 
 ::: proof
-Resolve the weight along and normal to the plane. Equilibrium gives $F = W \sin \theta$ and $N = W \cos \theta$, so the no-slip condition $F \le \mu_s N$ becomes $W \sin \theta \le \mu_s W \cos \theta$, that is $\tan \theta \le \mu_s$, with equality at the point of sliding. The weight cancels, which is why the angle of repose does not depend on the mass of the object — a fact first recorded by de la Hire and confirmed by Newton, and the reason a heap of sand has the same slope whether it is a cup or a lorry load. For the general statement, the contact can supply any resultant whose tangential and normal components satisfy $F \le \mu_s N$, which is exactly the set of directions within angle $\phi = \arctan \mu_s$ of the normal: a cone. Equilibrium is possible if and only if the other forces can be balanced by a contact force in that cone.
+Resolve the weight along and normal to the plane. Equilibrium gives $F = W \sin \theta$ and $N = W \cos \theta$, so the no-slip condition $F \le \mu_s N$ becomes $W \sin \theta \le \mu_s W \cos \theta$, that is $\tan \theta \le \mu_s$, with equality at the point of sliding. The weight cancels, which is why the angle of repose does not depend on the mass of the object — and the reason a heap of sand has the same slope whether it is a cup or a lorry load. For the general statement, the contact can supply any resultant whose tangential and normal components satisfy $F \le \mu_s N$, which is exactly the set of directions within angle $\phi = \arctan \mu_s$ of the normal: a cone. Equilibrium is possible if and only if the other forces can be balanced by a contact force in that cone.
 :::
 
 ::: algorithm Problems of impending motion {#alg-friction}
@@ -43,7 +43,7 @@ Resolve the weight along and normal to the plane. Equilibrium gives $F = W \sin 
 ::: example Block on an incline, pushed horizontally {#ex-incline-push}
 A block of mass $50\ \mathrm{kg}$ rests on a plane inclined at $15^{\circ}$. The coefficient of static friction is $\mu_s = 0.35$. Find the least horizontal force $P$ that will start the block moving up the plane, and state whether the block slides on its own.
 ::: solution
-**Does it slide alone?** The angle of repose is $\phi = \arctan 0.35 = 19.29^{\circ}$, and $15^{\circ} < 19.29^{\circ}$, so the block stands. Equivalently, the required friction is $W \sin 15^{\circ} = 490.5 \times 0.2588 = 127.0\ \mathrm{N}$ while the available friction is $\mu_s W \cos 15^{\circ} = 0.35 \times 490.5 \times 0.9659 = 165.8\ \mathrm{N}$. It stands with $77$ per cent of its friction capacity unused.
+**Does it slide alone?** The angle of repose is $\phi = \arctan 0.35 = 19.29^{\circ}$, and $15^{\circ} < 19.29^{\circ}$, so the block stands. Equivalently, the required friction is $W \sin 15^{\circ} = 490.5 \times 0.2588 = 127.0\ \mathrm{N}$ while the available friction is $\mu_s W \cos 15^{\circ} = 0.35 \times 490.5 \times 0.9659 = 165.8\ \mathrm{N}$. It stands using $77$ per cent of its friction capacity, with $23$ per cent in reserve.
 
 **Least horizontal push up the plane.** At impending motion up the plane, friction acts down the plane at its limit. Resolve along and normal to the plane, with $P$ horizontal:
 $$
@@ -93,14 +93,14 @@ x = \frac{1570.6}{350} = 4.49\ \mathrm{m}\ \text{up the ladder, that is}\ 75\ \t
 $$
 *Check.* The person stands $4.49\ \mathrm{m}$ up a $6\ \mathrm{m}$ ladder, so their horizontal distance from $B$ is $4.49 \cos 60^{\circ} = 2.24\ \mathrm{m}$ and their moment about $B$ is $700 \times 2.24 = 1570\ \mathrm{N\,m}$, matching the term above.
 
-*Sanity.* If the wall were rough the ladder would be safer; if $\mu$ fell to $0.3$, $N_w$ would be $270\ \mathrm{N}$ and $x = 1150 / 350 = 3.29\ \mathrm{m}$, only $55$ per cent of the length. The "one-in-four" ladder rule — foot one quarter of the working height out — gives $\tan \theta = 4$, $\theta = 76^{\circ}$, and at that angle the required $\mu$ for a person at the top is only $0.25$, comfortably below $0.4$.
+*Sanity.* If the wall were rough the ladder would be safer; if $\mu$ fell to $0.3$, $N_w$ would be $270\ \mathrm{N}$ and $x = (1402.9 - 300) / 350 = 3.15\ \mathrm{m}$, only $53$ per cent of the length. The "one-in-four" ladder rule — foot one quarter of the working height out — gives $\tan \theta = 4$, $\theta = 76^{\circ}$, and at that angle the required $\mu$ for a person at the top is only $0.22$, comfortably below $0.4$.
 :::
 :::
 
 ## Wedges
 
 ::: definition Wedge and its force balance {#def-wedge}
-A wedge of half-angle $\alpha$ converts an axial force into a much larger transverse force. With friction of coefficient $\mu$ on both faces and a load $Q$ on the back, the axial force needed to drive it in is
+A symmetric wedge of half-angle $\alpha$ converts an axial force into a much larger transverse force. With friction of coefficient $\mu$ on both faces and a total transverse (splitting) load $Q$ — the sum of the transverse forces on the two faces, $Q / 2$ on each — the axial force needed to drive it in is
 $$
 P = Q \, \frac{\tan \alpha + \mu}{1 - \mu \tan \alpha} = Q \tan(\alpha + \phi), \qquad \tan \phi = \mu ,
 $$
@@ -113,11 +113,11 @@ $$
 \frac{P}{Q} = \frac{\sin \alpha + \mu \cos \alpha}{\cos \alpha - \mu \sin \alpha}
 = \frac{\tan \alpha + \mu}{1 - \mu \tan \alpha} = \tan(\alpha + \phi),
 $$
-using the tangent addition formula with $\mu = \tan \phi$. Reversing the friction for outward motion gives $\tan(\phi - \alpha)$, which is negative when $\phi > \alpha$: the load then has to be *held back*, and the wedge holds itself. Setting $\mu = 0$ gives $P = Q \tan \alpha$, the ideal wedge, whose mechanical advantage $1 / \tan \alpha$ can be made arbitrarily large by making the wedge thin — but only up to the point where the self-holding condition and the yielding of the surfaces take over.
+using the tangent addition formula with $\mu = \tan \phi$. Reversing the friction for outward motion gives $\tan(\phi - \alpha)$, which is positive when $\phi > \alpha$: a pull is then needed to withdraw the wedge, and the wedge holds itself; when $\phi < \alpha$ it is negative, and the wedge must be held in against the load. Setting $\mu = 0$ gives $P = Q \tan \alpha$, the ideal wedge, whose mechanical advantage $1 / \tan \alpha$ can be made arbitrarily large by making the wedge thin — but only up to the point where the self-holding condition and the yielding of the surfaces take over.
 :::
 
 ::: example Driving and holding a wedge {#ex-wedge}
-A wedge with a $1:8$ taper and $\mu = 0.25$ on both faces is driven under a machine foot carrying $Q = 10\ \mathrm{kN}$. Find the force to drive it in, the force needed to withdraw it, and the mechanical advantage.
+A symmetric wedge whose half-angle has $\tan \alpha = 1/8$, with $\mu = 0.25$ on both faces, is driven into a slot to force apart two blocks that resist with a total transverse force $Q = 10\ \mathrm{kN}$ ($5\ \mathrm{kN}$ on each face). Find the force to drive it in, the force needed to withdraw it, and the mechanical advantage.
 ::: solution
 The half-angle satisfies $\tan \alpha = 1 / 8 = 0.125$, so $\alpha = 7.125^\circ$, and the friction angle is $\phi = \arctan 0.25 = 14.04^\circ$.
 
@@ -195,9 +195,9 @@ $$
 ::: widget plot
 f: exp(0.3*x*pi/180)
 x: 0, 360
-y: 1, 62
+y: 1, 7
 labels: \text{capstan tension ratio } e^{\mu \beta}
-caption: Holding ratio $T_1 / T_2 = e^{\mu \beta}$ against wrap angle $\beta$ for $\mu = 0.3$. One turn of rope on a bollard ($\beta = 360^{\circ}$) gives a ratio of $6.6$; two turns give $43$; four turns give $1834$. This is why a mooring line is taken three or four turns around a capstan and then merely held by hand, why a rock climber's belay device works, and why a rope wrapped round a tree can hold a vehicle. The exponent is the whole story: the ratio grows with the *angle*, not with the contact area or the radius.
+caption: Holding ratio $T_1 / T_2 = e^{\mu \beta}$ against wrap angle $\beta$ for $\mu = 0.3$. One turn of rope on a bollard ($\beta = 360^{\circ}$) gives a ratio of $6.6$; two turns give $43$; four turns give $1881$. This is why a mooring line is taken three or four turns around a capstan and then merely held by hand, why a rock climber's belay device works, and why a rope wrapped round a tree can hold a vehicle. The exponent is the whole story: the ratio grows with the *angle*, not with the contact area or the radius.
 :::
 
 ## Screw friction
@@ -215,7 +215,7 @@ $$
 :::
 
 ::: proof
-Unwrap one turn of the thread: the helix becomes a straight ramp of horizontal length $2 \pi r$ and rise $L$, so its inclination is $\alpha = \arctan(L / 2 \pi r)$. The load $Q$ sits on this ramp, and the thread must supply a horizontal force $H$ to push it up. This is exactly the inclined-plane problem of Example 1 with $P$ replaced by $H$ and $W$ by $Q$, so $H = Q \tan(\alpha + \phi)$, and the torque is $H r$. Lowering reverses the friction, giving $Q \tan(\phi - \alpha)$; the screw is self-locking when this is negative, that is $\phi > \alpha$, which on taking tangents is $\mu > L / (2 \pi r)$. The efficiency is the ideal torque divided by the actual: $\eta = Q r \tan \alpha / (Q r \tan(\alpha + \phi))$. For a V-thread or Acme thread of flank angle $\beta$ the same formulas hold with $\mu$ replaced by $\mu / \cos \beta$, which is why an Acme thread ($\beta = 14.5^{\circ}$) has about $3$ per cent more friction than a square thread and a metric ISO thread ($\beta = 30^{\circ}$) has $15$ per cent more.
+Unwrap one turn of the thread: the helix becomes a straight ramp of horizontal length $2 \pi r$ and rise $L$, so its inclination is $\alpha = \arctan(L / 2 \pi r)$. The load $Q$ sits on this ramp, and the thread must supply a horizontal force $H$ to push it up. This is exactly the inclined-plane problem of Example 1 with $P$ replaced by $H$ and $W$ by $Q$, so $H = Q \tan(\alpha + \phi)$, and the torque is $H r$. Lowering reverses the friction, giving $Q \tan(\phi - \alpha)$; the screw is self-locking when this is positive (a torque must be applied to lower the load), that is $\phi > \alpha$, which on taking tangents is $\mu > L / (2 \pi r)$. The efficiency is the ideal torque divided by the actual: $\eta = Q r \tan \alpha / (Q r \tan(\alpha + \phi))$. For a V-thread or Acme thread of flank angle $\beta$ the same formulas hold with $\mu$ replaced by $\mu / \cos \beta$, which is why an Acme thread ($\beta = 14.5^{\circ}$) has about $3$ per cent more friction than a square thread and a metric ISO thread ($\beta = 30^{\circ}$) has $15$ per cent more.
 :::
 
 ::: example Screw jack {#ex-jack}
@@ -241,11 +241,11 @@ $$
 :::
 
 ::: warning Which coefficient, and which normal force
-Three errors recur. First, using the kinetic coefficient where the static one is required, or vice versa: $\mu_k$ is for a body already sliding and is typically $10$ to $40$ per cent below $\mu_s$, so a design for "holding" must use $\mu_s$ and one for "stopping distance" must use something between them. Second, taking the normal force as the weight: on an incline, in a V-groove, under a bolt's pretension or in a band brake, $N$ has nothing to do with $m g$. Third, using a catalogue value of $\mu$ measured in a clean laboratory on the same materials, when the real surfaces are oily, rusty, painted or greased — a $30$ per cent reduction in $\mu$ reduces a wedge's holding capacity, a belt's transmitted power and a bolt's preload retention by the same $30$ per cent. Always design friction on the *lower* bound of what the surface condition can give, and never on a value you have not measured or specified.
+Three errors recur. First, using the kinetic coefficient where the static one is required, or vice versa: $\mu_k$ is for a body already sliding and is typically $10$ to $40$ per cent below $\mu_s$, so a design for "holding" must use $\mu_s$ and one for "stopping distance" must use something between them. Second, taking the normal force as the weight: on an incline, in a V-groove, under a bolt's pretension or in a band brake, $N$ has nothing to do with $m g$. Third, using a catalogue value of $\mu$ measured in a clean laboratory on the same materials, when the real surfaces are oily, rusty, painted or greased — a $30$ per cent reduction in $\mu$ reduces a wedge's holding capacity, a belt's transmitted power and a bolt's preload retention, each by a large fraction. Always design friction on the *lower* bound of what the surface condition can give, and never on a value you have not measured or specified.
 :::
 
 ::: history
-Leonardo da Vinci wrote around 1493 that "the friction produced by the movement of a body is, ceteris paribus, of known proportion to the weight and figure of the body", and recorded that friction is independent of the apparent area of contact and proportional to load — two of the three laws usually credited to Amontons, who rediscovered them in 1699 and announced them to the Académie des Sciences. Coulomb's *Théorie des machines simples* (1785) added the distinction between static and kinetic friction and the independence of sliding speed, from experiments on ropes and on sledges, and is the origin of the name. The capstan equation was derived by Leonhard Euler in *Scientia navalis* (1749) and independently by the Italian engineer Eytelwein in 1808; Tredgold published it in English in 1820 and applied it to belt drives, which is why it is sometimes called Tredgold's formula. The angle-of-friction method for wedges and screws, in which $\mu$ is replaced geometrically by an angle, is due to Robert Willis in his *Principles of Mechanism* of 1841, and remained the standard design tool until the analytic formulas displaced it in the 1890s.
+Leonardo da Vinci's notebooks of around 1493 record that friction is independent of the apparent area of contact and proportional to load — two of the three laws usually credited to Amontons, who rediscovered them in 1699 and announced them to the Académie des Sciences. Coulomb's *Théorie des machines simples* (1785) added the distinction between static and kinetic friction and the independence of sliding speed, from experiments on ropes and on sledges, and is the origin of the name. The capstan equation was derived by Leonhard Euler in a memoir on the effect of friction on equilibrium, written in 1762 and printed by the Berlin Academy in 1769, and was given wide currency among engineers by the Prussian engineer Johann Albert Eytelwein in his *Handbuch der Statik fester Körper* of 1808, which is why German texts call it the Euler–Eytelwein formula.
 :::
 
 ::: quiz
@@ -289,20 +289,20 @@ $P = W (\sin 15^{\circ} + \mu \cos 15^{\circ}) = 490.5 (0.2588 + 0.35 \times 0.9
 :::
 
 ::: exercise Belt {level=1 check="2.31"}
-For the flat belt of Example 6, what is the ratio $T_1 / T_2$? (Enter the ratio to two decimal places.)
+For the flat belt of Example 4, what is the ratio $T_1 / T_2$? (Enter the ratio to two decimal places.)
 ::: solution
 $e^{\mu \beta} = e^{0.3 \times 2.7925} = 2.31$. Increasing the wrap from $160^{\circ}$ to $200^{\circ}$ raises the ratio to $e^{1.047} = 2.85$, a $23$ per cent gain for a $25$ per cent increase in angle — which is why an idler pulley is fitted to increase wrap before the belt is ever made wider.
 :::
 :::
 
-::: exercise Wedge {level=2}
-A $10^{\circ}$ included-angle wedge with $\mu = 0.3$ on both faces is used to lift a $5\ \mathrm{kN}$ load. Find the driving force and state whether the wedge is self-holding.
+::: exercise Wedge {level=2 check="1.99"}
+A $10^{\circ}$ included-angle wedge with $\mu = 0.3$ on both faces is used to lift a $5\ \mathrm{kN}$ load. Find the driving force and state whether the wedge is self-holding. (Enter the driving force in kN.)
 ::: solution
 Half-angle $\alpha = 5^{\circ}$, friction angle $\phi = \arctan 0.3 = 16.70^{\circ}$. Then
 $$
 P = 5 \tan(21.70^{\circ}) = 5 \times 0.3980 = 1.99\ \mathrm{kN}.
 $$
-Since $\phi = 16.70^{\circ} > \alpha = 5^{\circ}$, the wedge is self-holding: the load cannot push it out, and the mechanical advantage is $5 / 1.99 = 2.51$. Only about $40$ per cent of the effort is recovered if the wedge is driven back out, so a wedge is a poor machine and a good clamp — which is exactly what it is for.
+Since $\phi = 16.70^{\circ} > \alpha = 5^{\circ}$, the wedge is self-holding: the load cannot push it out, and the mechanical advantage is $5 / 1.99 = 2.51$. Withdrawing it needs a pull of $5 \tan(11.70^{\circ}) = 1.04\ \mathrm{kN}$, about half the driving force, so a wedge is a poor machine and a good clamp — which is exactly what it is for.
 :::
 :::
 
@@ -318,10 +318,10 @@ $$
 $$
 On a $40^{\circ}$ V-groove the effective coefficient is $\mu / \sin 20^{\circ} = 0.3 / 0.342 = 0.877$, giving
 $$
-T_1 = 200 \, e^{0.877 \times 4.712} = 200 \times 60.6 = 12\,120\ \mathrm{N}, \qquad
-\mathcal{T} = 11\,920 \times 0.250 = 2980\ \mathrm{N\,m},
+T_1 = 200 \, e^{0.877 \times 4.712} = 200 \times 62.4 = 12\,480\ \mathrm{N}, \qquad
+\mathcal{T} = 12\,280 \times 0.250 = 3070\ \mathrm{N\,m},
 $$
-nineteen times as much. The exponential makes small changes in $\mu$ enormous in effect: this is why a band brake is self-energising and can grab violently, and why a V-grooved brake is rarely used where the load must be released smoothly.
+about twenty times as much. The exponential makes small changes in $\mu$ enormous in effect: this is why a band brake is self-energising and can grab violently, and why a V-grooved brake is rarely used where the load must be released smoothly.
 :::
 :::
 
@@ -340,14 +340,14 @@ Head (collar) friction, taking an effective radius of $0.7 d = 16.8\ \mathrm{mm}
 $$
 \mathcal{T}_{\text{head}} = 0.15 \times 20\,000 \times 0.0168 = 50.4\ \mathrm{N\,m}.
 $$
-Total $\mathcal{T} = 98\ \mathrm{N\,m}$, of which only $49$ per cent goes into stretching the bolt; the rest is wasted under the head.
+Total $\mathcal{T} = 98\ \mathrm{N\,m}$, of which $49$ per cent is reacted in the thread and the rest under the head. Only the lead term, $218 \times 0.0438 = 9.6\ \mathrm{N\,m}$, about $10$ per cent of the total, actually stretches the bolt; the other $90$ per cent is spent on friction.
 
-*Design comment.* This is the central fact of bolting. A $10$ per cent change in the head friction changes the total torque by $5$ per cent but the preload by nothing, while a $10$ per cent change in *thread* friction changes the preload by about $10$ per cent. Since $\mu$ varies by a factor of two between dry, lubricated and waxed threads, a torque-wrench tightening gives a preload scatter of $\pm 30$ per cent, and critical joints are therefore tightened by angle (turn-of-nut) or by measuring stretch.
+*Design comment.* This is the central fact of bolting. Because about $90$ per cent of the wrench torque goes into friction, a $10$ per cent rise in both friction coefficients lowers the preload reached at a given torque by about $8$ per cent. Since $\mu$ varies by a factor of two between dry, lubricated and waxed threads, a torque-wrench tightening gives a preload scatter of $\pm 30$ per cent, and critical joints are therefore tightened by angle (turn-of-nut) or by measuring stretch.
 :::
 :::
 
-::: exercise Which slips first {level=3}
-A block of weight $W_1 = 200\ \mathrm{N}$ rests on a rough horizontal table ($\mu_1 = 0.25$) and carries a second block of weight $W_2 = 100\ \mathrm{N}$ on a rough upper surface ($\mu_2 = 0.4$). A horizontal force $P$ is applied to the lower block. Find the value of $P$ at which motion impends, and describe the motion.
+::: exercise Which slips first {level=3 check="75"}
+A block of weight $W_1 = 200\ \mathrm{N}$ rests on a rough horizontal table ($\mu_1 = 0.25$) and carries a second block of weight $W_2 = 100\ \mathrm{N}$ on a rough upper surface ($\mu_2 = 0.4$). A horizontal force $P$ is applied to the lower block. Find the value of $P$ at which motion impends, and describe the motion. (Enter $P$ in N.)
 ::: solution
 Two mechanisms are possible: the two blocks slide together over the table, or the upper block slides on the lower one.
 
@@ -376,6 +376,6 @@ $$
 $$
 Uniform wear is the realistic assumption for a run-in bearing, and it defines the **friction radius** $r_f = (r_o + r_i) / 2$.
 
-For $r_i / r_o = 0.6$, uniform pressure gives $\mathcal{T} / \mu W r_o = \tfrac{2}{3} (1 - 0.216) / (1 - 0.36) = 0.925$ and uniform wear gives $(1 + 0.6) / 2 = 0.800$: a difference of $16$ per cent. For $r_i / r_o = 0.8$ the two are $0.903$ and $0.900$, within $0.4$ per cent. The two assumptions therefore agree only for a narrow annulus, and a wide thrust pad must be analysed for wear rather than for pressure — which is why clutches and thrust washers are always made narrow relative to their radius, so that the design torque is predictable.
+For $r_i / r_o = 0.6$, uniform pressure gives $\mathcal{T} / \mu W r_o = \tfrac{2}{3} (1 - 0.216) / (1 - 0.36) = 0.817$ and uniform wear gives $(1 + 0.6) / 2 = 0.800$: a difference of $2$ per cent. For $r_i / r_o = 0.8$ the two are $0.904$ and $0.900$, within $0.4$ per cent. The assumptions differ appreciably only for a wide annulus — for a solid disc, $r_i = 0$, they give $0.667$ and $0.500$, $33$ per cent apart — so a narrow friction face makes the torque insensitive to the unknown pressure distribution. That is one reason clutch facings and thrust washers are made narrow relative to their radius, so that the design torque is predictable.
 :::
 :::

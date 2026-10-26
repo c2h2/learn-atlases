@@ -27,13 +27,13 @@ G_{f_m f_m} = G_{ff} + G_{n_f n_f},
 H_1 = \frac{\alpha G_{ff}}{G_{ff} + G_{n_f n_f}}
 = \frac{\alpha}{1 + G_{n_f n_f} / G_{ff}} .
 $$
-The estimator is therefore biased **low** by the reciprocal of the force signal-to-noise ratio, and the error is worst where the force spectrum is smallest — which for an impact test means at the ends of the band, and for a shaker means at the anti-resonances. Meanwhile
+The estimator is therefore biased **low** by the reciprocal of the force signal-to-noise ratio, and the error is worst where the force spectrum is smallest — which for an impact test means at the ends of the band, and for a shaker means at the structure's resonances, where its low impedance makes the force drop out. Meanwhile
 $$
 H_2 = \frac{G_{xx}}{G_{x f_m}} = \frac{\alpha^{2} G_{ff}}{\alpha G_{ff}} = \alpha ,
 $$
 which is unbiased. $\checkmark$
 
-*Note.* The same algebra with a noisy accelerometer gives $H_2$ biased low and $H_1$ unbiased, so the pair $\left( H_1 , H_2 \right)$ brackets the truth and the **coherence** $\gamma^{2} = G_{xf}^{2} / \left( G_{xx} G_{ff} \right)$ reports how far apart they should be: $1 - \gamma^{2}$ is, to first order, the fractional noise power. A coherence of $0.9$ sounds excellent and corresponds to a $30$ per cent amplitude error at that frequency, which is why a modal report must show coherence against frequency and not merely assert that it was above a threshold.
+*Note.* The same algebra with a noisy accelerometer gives $H_2$ biased low and $H_1$ unbiased, so the pair $\left( H_1 , H_2 \right)$ brackets the truth and the **coherence** $\gamma^{2} = G_{xf}^{2} / \left( G_{xx} G_{ff} \right)$ reports how far apart they should be: $1 - \gamma^{2}$ is, to first order, the fractional noise power. Since $\gamma^{2} = H_1 / H_2$, a coherence of $0.9$, which sounds excellent, means the two estimators differ by ten per cent at that frequency, which is why a modal report must show coherence against frequency and not merely assert that it was above a threshold.
 :::
 
 ::: definition Modal assurance criterion {#def-mac}
@@ -48,11 +48,13 @@ the squared cosine of the angle between them in the complex vector space. $\oper
 ::: definition Modal models and component synthesis {#def-cms}
 A **modal model** replaces the physical matrices by the modal ones,
 $$
-\mathbf{M} \approx \boldsymbol{\Phi}_n \boldsymbol{\Phi}_n^{\mathrm{T}} \mathbf{M} \boldsymbol{\Phi}_n \boldsymbol{\Phi}_n^{\mathrm{T}},
+\mathbf{x} \approx \boldsymbol{\Phi}_n \mathbf{q},
 \qquad
-\mathbf{K} \approx \boldsymbol{\Phi}_n \operatorname{diag} \left( \omega_r^{2} m_r \right) \boldsymbol{\Phi}_n^{\mathrm{T}} ,
+\boldsymbol{\Phi}_n^{\mathrm{T}} \mathbf{M} \boldsymbol{\Phi}_n = \operatorname{diag} \left( m_r \right),
+\qquad
+\boldsymbol{\Phi}_n^{\mathrm{T}} \mathbf{K} \boldsymbol{\Phi}_n = \operatorname{diag} \left( \omega_r^{2} m_r \right) ,
 $$
-truncated to the $n$ modes that matter, which is legitimate only above the frequency range of interest because a truncated modal model is **stiff** at low frequency: it contains no static flexibility in the discarded modes. The cure is to add **residual flexibility** terms, and the same argument underlies **component mode synthesis**, in which a substructure is represented by its low modes plus a set of static constraint modes — **Guyan** reduction using the interface degrees of freedom alone, or **Craig–Bampton** using the fixed-interface normal modes together with the static constraint modes. A test gives the same object from the other direction: a measured modal model reproduces the frequency response function inside the measured band and nothing at all outside it.
+truncated to the $n$ modes that matter. Truncation discards the static flexibility of the higher modes, so a truncated modal model is too **stiff** even well below its highest retained frequency. The cure is to add **residual flexibility** terms, and the same argument underlies **component mode synthesis**, in which a substructure is represented by its low modes plus a set of static constraint modes — **Guyan** reduction using the interface degrees of freedom alone, or **Craig–Bampton** using the fixed-interface normal modes together with the static constraint modes. A test gives the same object from the other direction: a measured modal model reproduces the frequency response function inside the measured band and nothing at all outside it.
 :::
 
 ::: proof The MAC is a squared cosine and nothing more {#proof-mac}
@@ -70,7 +72,7 @@ f: 1/sqrt((1-x*x)*(1-x*x)+0.0016*x*x) + 0.4/sqrt((4-x*x)*(4-x*x)+0.0036*x*x)
 x: 0.05, 2.4
 y: 0, 26
 labels: |X/F| (arbitrary)
-caption: A synthesized driving-point frequency response function built from two modes with residues of 1 and 0.4 and damping of one and three per cent. The second peak is at twice the first mode's frequency and is much smaller because the second mode has a node close to the drive point — reducing its residue without changing its frequency. A modal survey driven at the wrong point finds a mode that is plainly there in the roving-accelerometer record and entirely absent from the input.
+caption: A synthesized driving-point frequency response function built from two modes with residues of 1 and 0.4 and damping of two and one and a half per cent. The second peak is at twice the first mode's frequency and is much smaller because the second mode has a node close to the drive point — reducing its residue without changing its frequency. Driven exactly at a node, the mode would vanish from the record altogether.
 :::
 
 ::: example A calibration specimen {#ex-cantilever}
@@ -100,7 +102,7 @@ f = \frac{1}{2 \pi} \sqrt{\frac{8000}{0.01665}} = 110.3\ \mathrm{Hz},
 $$
 one and a half per cent above the exact value, as Rayleigh's upper-bound theorem requires. $\checkmark$
 
-*Sanity.* A machined, homogeneous, well-clamped specimen of this size is the closest thing a modal laboratory has to a ruler, and a good test reproduces $f_1$ to within a couple of per cent — provided the clamp is genuinely rigid. A $150\ \mathrm{mm}$ cantilever in a vice is in truth a cantilever on a rotational spring, and if the vice rotates one microradian per newton-metre the first frequency falls by about ten per cent. This is the reason calibration specimens are tested **free-free** on soft supports, and the reason "the model and the test disagree by eight per cent" is more often a statement about a bolted joint than about a finite-element mesh.
+*Sanity.* A machined, homogeneous, well-clamped specimen of this size is the closest thing a modal laboratory has to a ruler, and a good test reproduces $f_1$ to within a couple of per cent — provided the clamp is genuinely rigid. A $150\ \mathrm{mm}$ cantilever in a vice is in truth a cantilever on a rotational spring, and if the vice lets the root rotate about $1.3$ milliradians per newton-metre the first frequency falls by about ten per cent. This is the reason calibration specimens are tested **free-free** on soft supports, and the reason "the model and the test disagree by eight per cent" is more often a statement about a bolted joint than about a finite-element mesh.
 :::
 :::
 
@@ -112,11 +114,11 @@ $$
 f = \frac{1}{2 \pi} \sqrt{\frac{8000}{0.01665 + 0.020}} = 74.4\ \mathrm{Hz},
 $$
 a drop of thirty-two per cent, in agreement with the measurement.
-**At a point of zero slope** the added mass does not move, so it contributes nothing and the frequency is unchanged. The first mode's slope vanishes only at the root, so the practical version of the test is to walk the mass along the specimen and plot the frequency: the curve is a scaled picture of $\varphi^{2}$, and its minima locate the nodes of the mode.
+**At the point of zero slope.** For the first cantilever mode the slope vanishes only at the root, where the displacement is also zero, so the added mass does not move, adds no kinetic energy, and the frequency is unchanged. The practical version of the test is to walk the mass along the specimen and plot the drop in frequency: the drop is a scaled picture of $\varphi^{2}$, largest at an antinode and zero at a node, so the points of no drop locate the nodes of the mode.
 
 *Check.* The measured ratio $74.4 / 108.7 = 0.684$ against the predicted $\sqrt{0.01665 / 0.03665} = 0.674$ — a one and a half per cent difference, attributable to the mass's own rotational inertia and to the Rayleigh shape being approximate. $\checkmark$
 
-*Sanity.* This crude "chunk of Blu-Tack" survey is the oldest modal technique and still the most robust, because it needs no phase, no reference and no second sensor. It is also the reason **mass loading must be accounted for in every test**: an accelerometer of eight grams on a $3\ \mathrm{mm}$ steel beam is a $1.7$ per cent mass addition at a point where the mode is largest, and it lowers the measured frequency by about one per cent — more than the uncertainty the analyst is trying to resolve. The correction is $f_{\text{true}} = f_{\text{meas}} \sqrt{1 + m_a \varphi^2 / m_{\text{eq}}}$, and applying it is the difference between a modal survey and a frequency survey.
+*Sanity.* This crude "chunk of Blu-Tack" survey is the oldest modal technique and still the most robust, because it needs no phase, no reference and no second sensor. It is also the reason **mass loading must be accounted for in every test**: an accelerometer of eight grams at the tip of this beam adds eleven per cent of the beam's mass, and half its tip modal mass, at the point where the mode is largest, and it lowers the measured frequency by about eighteen per cent — far more than the uncertainty the analyst is trying to resolve. The correction is $f_{\text{true}} = f_{\text{meas}} \sqrt{1 + m_a \varphi^2 / m_{\text{eq}}}$, and applying it is the difference between a modal survey and a frequency survey.
 :::
 :::
 
@@ -138,17 +140,17 @@ $$
 $$
 \operatorname{MAC} = \frac{1.477^{2}}{1.480 \times 1.505} = 0.979 .
 $$
-*Sanity.* A MAC of $0.98$ is a good pairing and the two are certainly the same mode, but the shape difference is not trivial: the second component differs by twenty-one per cent and the third by a third, which in a correlation plot is a visible twist. A MAC computed from **three** points is also close to meaningless as a quality statement — with three components and three unknowns, almost any pair of vectors scores high. The rule of thumb that a MAC above $0.9$ means "the same mode" and below $0.7$ means "different modes" was established on twenty-point surveys of aerospace panels, and applying it to a three-point survey of a bracket is how a bad model gets signed off.
+*Sanity.* A MAC of $0.98$ is a good pairing and the two are certainly the same mode, but the shape difference is not trivial: the second component differs by twenty-one per cent and the third by a third, which in a correlation plot is a visible twist. A MAC computed from **three** points is also close to meaningless as a quality statement — with three components and three unknowns, almost any pair of vectors scores high. The common rule of thumb that a MAC above $0.9$ means "the same mode" assumes enough measurement points to distinguish the modes, and applying it to a three-point survey is how a bad model gets signed off.
 :::
 :::
 
 ::: example Diagnosing H1 and H2 {#ex-h1h2}
 A shaker test through an isolator gives $H_1$ and $H_2$ that agree to two per cent below $200\ \mathrm{Hz}$, diverge progressively up to $600\ \mathrm{Hz}$, and at $600\ \mathrm{Hz}$ differ by a factor of three with $H_1$ the smaller. What is happening?
 ::: solution
-$H_1$ biased low and $H_2$ unbiased means **force-measurement noise**, and a divergence that grows with frequency means the noise is not white but of a form whose spectrum rises with frequency. The classic cause is a **stinger or a soft stinger rod** whose own resonance is nearby, or, more commonly, an inertial error: the force transducer's own mass accelerates, so the measured force is $F - m_t a$ and the error grows as $\omega^{2}$.
-**Diagnosis.** Compare $1 - \gamma^{2}$ with the divergence. If the coherence is high and the divergence is large, the two errors are **correlated** — a genuine structural non-linearity or a slipping fixture, not noise. If the coherence falls with the divergence, it is noise, and the culprit is the transducer system.
+$H_1$ biased low and $H_2$ unbiased means **force-measurement noise**, and a divergence that grows with frequency means the force signal-to-noise ratio falls with frequency. Through an isolator or a soft stinger the force actually delivered to the structure falls off at high frequency while the transducer noise floor stays put, and a stinger resonance nearby makes it worse.
+**Diagnosis.** Because $\gamma^{2} = H_1 / H_2$, a factor of three means a coherence of only about $0.33$ at $600\ \mathrm{Hz}$. Low coherence can come from uncorrelated noise, from non-linearity such as a rattling or slipping fixture, or from leakage; repeating the test at a higher force level separates them, because noise-induced divergence shrinks with more force while non-linear divergence grows.
 
-*Sanity.* The inertial-error mechanism is the reason modal force transducers are made as light as possible and are mounted on the **driven** side, and the reason a test above a few hundred hertz through a soft stinger is treated as qualitative. The reported "resonance" at $600\ \mathrm{Hz}$ in such a record may be the stinger's own bending mode, and the way to prove it is to change the stinger and see which peak moves: a structural mode stays and a fixture mode follows the fixture.
+*Sanity.* This is why a test above a few hundred hertz through a soft stinger or an isolator is treated with suspicion. The reported "resonance" at $600\ \mathrm{Hz}$ in such a record may be the stinger's own bending mode, and the way to prove it is to change the stinger and see which peak moves: a structural mode stays and a fixture mode follows the fixture.
 :::
 :::
 
@@ -170,9 +172,9 @@ and for white, band-limited, uncorrelated excitation $\left[ G_{ff} \right]$ is 
 ::: example Design {#ex-design-test}
 Plan the modal survey of a $12\ \mathrm{kg}$ instrument bracket bolted to a shaker head, whose first five computed modes lie between $180$ and $900\ \mathrm{Hz}$.
 ::: solution
-**Band.** Measure to at least $1.2$ times the highest mode of interest, so $1.1\ \mathrm{kHz}$, and use a frequency resolution of at most half the half-power bandwidth: with $\zeta = 0.01$ at $900\ \mathrm{Hz}$ the half-power bandwidth is $18\ \mathrm{Hz}$, so $\Delta f \le 9\ \mathrm{Hz}$, and $1.6\ \mathrm{Hz}$ is comfortable.
+**Band.** Measure to at least $1.2$ times the highest mode of interest, so $1.1\ \mathrm{kHz}$, and use a frequency resolution of at most half the narrowest half-power bandwidth, which is at the lowest mode: with $\zeta = 0.01$ at $180\ \mathrm{Hz}$ the half-power bandwidth $2 \zeta f_n$ is $3.6\ \mathrm{Hz}$, so $\Delta f \le 1.8\ \mathrm{Hz}$, and $1.25\ \mathrm{Hz}$ is comfortable.
 **Excitation.** A modal hammer for a $12\ \mathrm{kg}$ bracket gives too little input at $180\ \mathrm{Hz}$; use a small exciter through a **soft** stinger, with the bracket on its own isolators so the shaker's grounded armature does not become part of the structure.
-**Points.** Twenty-four points in three orthogonal directions on the faces where the modes have strain, avoiding the nodal lines of the computed modes — a point on a node measures the mode's **negative** and can invert a shape.
+**Points.** Twenty-four points in three orthogonal directions on the faces where the modes have strain, avoiding the nodal lines of the computed modes — a point on a node sees nothing of that mode, and a reference or drive point on a node loses the mode altogether.
 **Reference.** A triaxial accelerometer left on the bracket throughout, moved to a second location for a repeat run to check the MAC.
 **Mass loading.** A $2\ \mathrm{g}$ accelerometer on a $12\ \mathrm{kg}$ bracket is negligible; a $20\ \mathrm{g}$ cable clamp on a thin face is not.
 
@@ -181,17 +183,17 @@ Plan the modal survey of a $12\ \mathrm{kg}$ instrument bracket bolted to a shak
 :::
 
 ::: history
-Quantitative modal testing begins with the **transfer-impedance** measuring sets of the 1950s, in which an electrodynamic shaker, a phase meter and a chart recorder produced one point of one curve per afternoon; **Kennedy and Panofsky**'s 1956 text and the Sandia and NACA reports of the same decade set the method. The **impact** or **hit** test was invented around 1968 at General Dynamics by **Cunningham** and independently reported by **Williams, Newton and Kaiser** and by **Newland and Wallace**, and it made modal testing a field technique instead of a laboratory one. The **Oregon Co-ordinated Experimental Program** of 1969–1974, in which twenty-four laboratories measured the same ten-bay welded spaceframe and compared results, remains the most instructive experiment ever run in the discipline: the scatter in the reported frequencies was larger than most analysis-to-test differences reported elsewhere, and it is the reason a serious modal report quotes uncertainties. The **fast Fourier analyser** arrived commercially at the end of the 1960s and made the $H_1$, $H_2$ estimator pair practical; **Heywood**, **Soize** and above all **Ewins**, whose *Modal Testing* of 1984 educated two generations, put the estimators on their modern footing. The **modal assurance criterion** appeared in the late 1970s in work of **Sturm** and of **Abernethy and Brennan**. **Guyan**'s static reduction of 1965 and **Craig and Chang-Bampton**'s of 1968 made component mode synthesis possible, model updating followed the sensitivity work of the 1980s, and output-only identification — the **natural excitation technique** of the 1990s and **Brincker's** frequency-domain decomposition of 2000 — turned the whole method inside out by dispensing with the force measurement altogether.
+Measured frequency-response data were first analysed systematically by **Kennedy and Pancu**, whose 1947 paper plotted the response as a vector in the complex plane and located resonances from the circle it traces — the ancestor of today's circle fit. Through the 1950s and 1960s tests used swept or stepped sine excitation with analogue instruments. The **fast Fourier transform** of Cooley and Tukey (1965) led to commercial digital Fourier analysers around 1970, which made broadband impact and random testing and the $H_1$, $H_2$ estimators routine. **Guyan**'s static reduction (1965) and **Craig and Bampton**'s fixed-interface method (1968) made component mode synthesis practical, and the **modal assurance criterion** was introduced by **Allemang and Brown** in 1982. **Ewins**'s *Modal Testing: Theory and Practice* (1984) became the standard text. Output-only identification followed with the **natural excitation technique** of James, Carne and Lauffer at Sandia in the early 1990s and the **frequency-domain decomposition** of Brincker, Zhang and Andersen (2000).
 :::
 
 ::: quiz
 A measured mode and the corresponding computed mode have a modal assurance criterion of $0.62$. The most likely explanation is:
 - [ ] A scaling error, because the two mode shapes are in different units
-- [x] A genuinely different shape, since the MAC is scale-invariant and $0.62$ corresponds to an angle of about $51^{\circ}$
+- [x] A genuinely different shape, since the MAC is scale-invariant and $0.62$ corresponds to an angle of about $38^{\circ}$
 - [ ] A frequency error, because the MAC depends on the frequency
 - [ ] A damping error, because the MAC is measured at resonance
 ::: solution
-The MAC is invariant to scaling, to units and to the order of the measurement points, so a value of $0.62$ cannot be a scaling artefact; it is $\cos^2\theta$, so the vectors differ by $\theta = \arccos\sqrt{0.62} = 51^{\circ}$ in shape space. Either the pairing is wrong — the mode has been matched to the wrong computed mode, which is common when two computed modes are close together — or the model is missing something structural. The first thing to check is the **pairing** by looking at the full MAC matrix rather than the diagonal, because a mode-pair swap gives exactly this number and is far more common than a fifty-degree shape error.
+The MAC is invariant to scaling, to units and to the order of the measurement points, so a value of $0.62$ cannot be a scaling artefact; it is $\cos^2\theta$, so the vectors differ by $\theta = \arccos\sqrt{0.62} = 38^{\circ}$ in shape space. Either the pairing is wrong — the mode has been matched to the wrong computed mode, which is common when two computed modes are close together — or the model is missing something structural. The first thing to check is the **pairing** by looking at the full MAC matrix rather than the diagonal, because a mode-pair swap gives exactly this number and is far more common than a forty-degree shape error.
 :::
 :::
 
@@ -210,7 +212,7 @@ The receptances that a modal test measures are those of [[vibrations/two-degrees
 
 ## Exercises
 
-::: exercise Coherence {level=1 check="0.9"}
+::: exercise Coherence {level=1 check="0.1"}
 A frequency response function is measured with a coherence of $0.90$. What is $1 - \gamma^{2}$?
 ::: solution
 $0.10$.
@@ -245,7 +247,7 @@ $$
 \beta_1 L = \pi, \qquad
 f_1 = \frac{\pi^{2}}{2 \pi} \times 194.3 = \frac{\pi}{2} \times 194.3 = 305\ \mathrm{Hz}.
 $$
-*Sanity.* The simply supported frequency is $2.8$ times the cantilever frequency, because the cantilever's mode reaches full amplitude at a free end while the supported mode is held at zero slope and displacement at both ends. The ratio $\left( \pi / 1.875 \right)^{2} = 2.80$ is a useful check on a free-free or simply supported test, and the large difference is why a structure's **boundary conditions** — not its mesh density — are the dominant source of model-to-test disagreement.
+*Sanity.* The simply supported frequency is $2.8$ times the cantilever frequency, because the cantilever's mode reaches full amplitude at a free end while the supported mode is held at zero displacement at both ends. The ratio $\left( \pi / 1.875 \right)^{2} = 2.80$ is a useful check on a free-free or simply supported test, and the large difference is why a structure's **boundary conditions** — not its mesh density — are the dominant source of model-to-test disagreement.
 :::
 :::
 
@@ -274,12 +276,12 @@ $$
 A mode at $500\ \mathrm{Hz}$ has three per cent damping. What frequency resolution and what record length does a Fourier analysis need, and what goes wrong if the resolution is too coarse?
 ::: solution
 $$
-\Delta f_{1 / 2} = \zeta f_n = 15\ \mathrm{Hz}, \qquad
-\Delta f \le \frac{1}{2} \Delta f_{1 / 2} = 7.5\ \mathrm{Hz},
+\Delta f_{1 / 2} = 2 \zeta f_n = 30\ \mathrm{Hz}, \qquad
+\Delta f \le \frac{1}{2} \Delta f_{1 / 2} = 15\ \mathrm{Hz},
 \qquad
-T = \frac{1}{\Delta f} \ge 0.13\ \mathrm{s}.
+T = \frac{1}{\Delta f} \ge 0.067\ \mathrm{s}.
 $$
-*Sanity.* The requirement is not merely that a peak be visible but that **several** spectral lines sit on each side of it, because a peak-picking algorithm fits a curve to the points around the maximum and a mode sampled with two points across its peak gives a frequency uncertain by a whole line spacing. For lightly damped structures the record length becomes the limiting factor — one per cent damping at $100\ \mathrm{Hz}$ needs a record of half a second and a **rectangular** window that does not smear the peak — and this is the reason a hammer test on a lightly damped structure must use an exponential window and a long record, and why the reported damping from a hammer test is nearly always too high.
+*Sanity.* The requirement is not merely that a peak be visible but that **several** spectral lines sit on each side of it, because a peak-picking algorithm fits a curve to the points around the maximum and a mode sampled with two points across its peak gives a frequency uncertain by a whole line spacing. For lightly damped structures the record length becomes the limiting factor — one per cent damping at $100\ \mathrm{Hz}$ needs a record of at least one second. A hammer test whose response has not died away within the record must use an exponential window, which adds known damping that has to be subtracted afterwards; if it is not, the reported damping is too high.
 :::
 :::
 
@@ -290,13 +292,13 @@ Treat the beam as a single degree of freedom with a rotational spring $K_{\theta
 $$
 \left( \frac{108.7}{118} \right)^{2} = 0.848
 $$
-as the ratio of the effective stiffnesses. Writing the cantilever's own tip rotational compliance as $\theta / M = L / EI$ and adding the clamp's $1 / K_{\theta}$,
+as the ratio of the effective stiffnesses. Under a tip load $P$ the beam's own tip deflection is $P L^{3} / \left( 3 EI \right)$ and a root rotation $P L / K_{\theta}$ adds $P L^{2} / K_{\theta}$, so
 $$
-\frac{k_{\text{clamped}}}{k_{\text{rigid}}} = \frac{1}{1 + EI / \left( K_{\theta} L \right)} = 0.848
+\frac{k_{\text{clamped}}}{k_{\text{rigid}}} = \frac{1}{1 + 3 EI / \left( K_{\theta} L \right)} = 0.848
 \quad\Longrightarrow\quad
-K_{\theta} = \frac{EI}{L} \times \frac{0.848}{1 - 0.848} = 60 \times 5.6 = 340\ \mathrm{N\, m / rad} .
+K_{\theta} = \frac{3 EI}{L} \times \frac{0.848}{1 - 0.848} = 180 \times 5.58 = 1.0 \times 10^{3}\ \mathrm{N\, m / rad} .
 $$
-*Sanity.* A clamp rotational stiffness of $340\ \mathrm{N\, m / rad}$ is a moderately tight bolted joint, not a rigid built-in condition, and it is entirely typical of a specimen in a vice. The lesson generalises into the standard advice on **model updating**: update the parameters you can point at. A single frequency tells you nothing about which stiffness is wrong; a frequency **and** a shape tell you which deformation the error is in, and updating the joint that resists that deformation is a defensible model change, whereas scaling every element's modulus by a single factor to match the frequencies is curve-fitting that will not survive a change of design.
+*Sanity.* A clamp rotational stiffness of about $1\ \mathrm{kN\, m / rad}$ is a moderately tight bolted joint, not a rigid built-in condition, and it is entirely typical of a specimen in a vice. The lesson generalises into the standard advice on **model updating**: update the parameters you can point at. A single frequency tells you nothing about which stiffness is wrong; a frequency **and** a shape tell you which deformation the error is in, and updating the joint that resists that deformation is a defensible model change, whereas scaling every element's modulus by a single factor to match the frequencies is curve-fitting that will not survive a change of design.
 :::
 :::
 
@@ -308,7 +310,7 @@ $$
 \alpha_{ij} (\omega ) = \sum_{r = 1}^{n} \frac{\phi_r (i ) \phi_r (j )}{k_r - \omega^{2} m_r + \mathrm{i} \omega c_r}
 = \sum_r \frac{\phi_r (i ) \phi_r (j ) / m_r}{\omega_r^{2} - \omega^{2} + 2 \mathrm{i} \zeta_r \omega_r \omega} .
 $$
-A test measures the **residues** $\phi_r (i ) \phi_r (j ) / m_r$, the **poles** $\omega_r$, $\zeta_r$, and nothing else. The mode scale $\phi_r$ is therefore recoverable only as a **product** of two points' components, and the absolute scale requires one known quantity — a known mass, a known static stiffness, or a measured **effective modal mass**.
+A test measures the **residues** $\phi_r (i ) \phi_r (j ) / m_r$, the **poles** $\omega_r$, $\zeta_r$, and nothing else. The mode scale is therefore recoverable only through **products** of two points' components; a **driving-point** measurement ($i = j$) gives $\phi_r (i )^{2} / m_r$ directly and so fixes the mass-normalised scale, which is why a test with a measured force includes at least one driving-point response.
 *Sanity.* This is exactly why an operational modal analysis, which has no force measurement and hence no residue at all, returns shapes of arbitrary scale, and why a modal test that must feed a **load** analysis needs at least one absolute measurement: a shaker with a force gauge, a known eccentric mass, or a static pushover. It is also why the phrase "the mode shape was normalised to unit maximum" appears in every modal report — the normalisation is a convention imposed on data that contains no scale, and a model updated against such a shape must be re-normalised the same way before the comparison means anything.
 :::
 :::

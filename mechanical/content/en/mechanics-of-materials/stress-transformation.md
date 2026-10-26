@@ -5,7 +5,7 @@ $$
 \sigma_{x'} = \frac{\sigma_x + \sigma_y}{2} + \frac{\sigma_x - \sigma_y}{2} \cos 2 \theta + \tau_{xy} \sin 2 \theta, \qquad
 \tau_{x'y'} = - \frac{\sigma_x - \sigma_y}{2} \sin 2 \theta + \tau_{xy} \cos 2 \theta ,
 $$
-and Mohr's circle is nothing but a picture of those two equations as $\theta$ runs from $0$ to $180^{\circ}. Learn the circle and you can answer, in five seconds and without algebra, what the maximum normal stress is, on what plane, what the maximum shear is, and what the stresses are on a weld at $37^{\circ}$ to the axis.
+and Mohr's circle is nothing but a picture of those two equations as $\theta$ runs from $0$ to $180^{\circ}$. Learn the circle and you can answer, in five seconds and without algebra, what the maximum normal stress is, on what plane, what the maximum shear is, and what the stresses are on a weld at $37^{\circ}$ to the axis.
 
 ::: warning Sign conventions differ, and Mohr's circle is where they bite
 The transformation equations above use the **continuum mechanics** convention: tensile normal stress positive, and $\tau_{xy}$ positive when it acts in the $+ y$ direction on the $+ x$ face. Mohr's circle construction requires you to decide whether a clockwise shear is plotted up or down, and textbooks split roughly evenly. Pick one convention, use it always, and if you are reading a result from someone else's circle, verify it against the algebraic formula for one angle before trusting the rest. The **magnitudes** of the principal stresses and of the maximum shear never depend on the convention; only the sign of the plotted shear and the sense of the angle do.
@@ -91,11 +91,11 @@ $$
 $$
 *Check.* $\sigma_{x'} + \sigma_{y'} = 40 = \sigma_x + \sigma_y$ requires $\sigma_{y'} = - 41.6\ \mathrm{MPa}$, and
 $$
-(81.6 - 20)^{2} + 26.7^{2} = 3794 + 713 = 4507 = 67.1^{2} . \checkmark
+(81.6 - 20)^{2} + 26.7^{2} = 3794 + 713 = 4507 \approx 67.1^{2} . \checkmark
 $$
 The point lies on the circle, as it must.
 
-*Sanity.* Note that the maximum normal stress, $87.1\ \mathrm{MPa}$, is $9$ per cent above the largest applied component and $9$ per cent below the arithmetic sum — a state of stress that looks like $80$ and $- 40$ is really a state of $87$ and $- 47$ acting on planes nobody drew. This is why a pressure vessel's longitudinal weld, which carries no load in the axial direction, still has to be checked: the stress on it is the hoop stress, which is the larger of the two principal stresses.
+*Sanity.* Note that the maximum normal stress, $87.1\ \mathrm{MPa}$, is $9$ per cent above the largest applied component — a state of stress that looks like $80$ and $- 40$ is really a state of $87$ and $- 47$ acting on planes nobody drew. This is why a pressure vessel's longitudinal weld, which carries no load in the axial direction, still has to be checked: the stress on it is the hoop stress, which is the larger of the two principal stresses.
 :::
 :::
 
@@ -156,41 +156,42 @@ $$
 \quad\Longrightarrow\quad
 \theta_p = 45^{\circ}.
 $$
-**(a) Mild steel** yields by shear-flow sliding on planes of maximum shear, which for pure shear are the planes of zero shear — the transverse and longitudinal planes. A mild-steel shaft in torsion fails on a **flat transverse** face, and the fracture surface is bright and fibrous with the metal visibly twisted.
+**(a) Mild steel** yields by slip on the planes of maximum shear, which for pure shear are the transverse and longitudinal planes themselves — the planes on which the normal stress is zero. A mild-steel shaft in torsion fails on a **flat transverse** face, and the fracture surface is bright and fibrous with the metal visibly twisted.
 
 **(b) Cast iron** is weak in tension and fails on the plane of maximum **tension**, at $45^{\circ}$ to the axis. A cast-iron shaft in torsion fails on a clean **helical** surface at $45^{\circ}$, and the helix is right-handed or left-handed according to the sense of twist.
 
-*Sanity.* This single demonstration — a chalk bar breaks helically in torsion and transversely in compression — is the whole of the maximum-normal-stress and maximum-shear-stress theories in one classroom experiment, and it is why the failure theory must be chosen with the material. It is also why a brittle torsion bar is dangerous, why a cast-iron brake drum cracks along a $45^{\circ}$ line from a bolt hole, and why the classic torsion test is the standard way to measure a brittle material's tensile strength without the alignment problems of a tensile specimen.
+*Sanity.* This single demonstration — a chalk bar breaks helically in torsion and transversely in bending — is the whole of the maximum-normal-stress and maximum-shear-stress theories in one classroom experiment, and it is why the failure theory must be chosen with the material. It is also why a brittle torsion bar is dangerous, and why a cast-iron shaft or brake drum cracks along a $45^{\circ}$ line rather than straight across.
 :::
 :::
 
 ::: example Stresses inside a beam {#ex-beam-point}
-A beam has at a certain section a bending stress of $120\ \mathrm{MPa}$ and a shear stress of $20\ \mathrm{MPa}$ at a point $40\ \mathrm{mm}$ above the neutral axis, and $80\ \mathrm{MPa}$ and $14\ \mathrm{MPa}$ at a point $20\ \mathrm{mm}$ above it. Find the principal stresses at each point and comment on where the beam is critical.
+A beam $100\ \mathrm{mm}$ deep has at a certain section a bending stress of $120\ \mathrm{MPa}$ and a shear stress of $20\ \mathrm{MPa}$ at a point $40\ \mathrm{mm}$ above the neutral axis, $60\ \mathrm{MPa}$ and $24\ \mathrm{MPa}$ at a point $20\ \mathrm{mm}$ above it, and a shear stress of $26\ \mathrm{MPa}$ on the neutral axis. Find the principal stresses at each point and comment on where the beam is critical.
 ::: solution
 **Point A** ($\sigma = 120$, $\tau = 20$):
 $$
 \sigma_{\text{avg}} = 60, \qquad R = \sqrt{60^{2} + 20^{2}} = 63.2\ \mathrm{MPa},
 \qquad \sigma_1 = 123.2, \quad \sigma_2 = - 3.2\ \mathrm{MPa}.
 $$
-**Point B** ($\sigma = 80$, $\tau = 14$):
+**Point B** ($\sigma = 60$, $\tau = 24$):
 $$
-\sigma_{\text{avg}} = 40, \qquad R = \sqrt{40^{2} + 14^{2}} = 42.4\ \mathrm{MPa},
-\qquad \sigma_1 = 82.4, \quad \sigma_2 = - 2.4\ \mathrm{MPa}.
+\sigma_{\text{avg}} = 30, \qquad R = \sqrt{30^{2} + 24^{2}} = 38.4\ \mathrm{MPa},
+\qquad \sigma_1 = 68.4, \quad \sigma_2 = - 8.4\ \mathrm{MPa}.
 $$
-**At the neutral axis** ($\sigma = 0$, $\tau = 24$ say): $\sigma_1 = + 24$, $\sigma_2 = - 24$.
+**At the neutral axis** ($\sigma = 0$, $\tau = 26$): $\sigma_1 = + 26$, $\sigma_2 = - 26\ \mathrm{MPa}$.
 
-*Sanity.* The maximum principal stress is at the outer fibre, where the shear is zero, and it exceeds the bending stress by only $2.7$ per cent — the shear there is nil, so the transformation barely moves anything. The maximum **shear** is at the neutral axis, where the bending stress is nil. Between them, at $40\ \mathrm{mm}$ out, the principal stress is $123.2\ \mathrm{MPa}$, only $2.7$ per cent above the pure bending value at that fibre. The lesson is that for a **slender** beam the outer-fibre bending stress is a safe and nearly exact design check, and the interior points never govern; but for a **short** beam, a beam with a large shear near a support, or a beam of a material whose shear strength is low relative to its tensile strength — timber, concrete, a composite, a glass-ceramic — the neutral-axis point where $\sigma_1 = \tau$ and $\sigma_2 = - \tau$ is a genuine $45^\circ$-crack risk, and the diagonal crack in a reinforced concrete beam near its support is exactly that point failing.
+*Sanity.* The maximum principal stress is at the outer fibre, $50\ \mathrm{mm}$ out, where the bending stress is $150\ \mathrm{MPa}$ and the shear is zero, so the transformation changes nothing. At $40\ \mathrm{mm}$ out the principal stress is $123.2\ \mathrm{MPa}$, only $2.7$ per cent above the bending stress at that fibre; at $20\ \mathrm{mm}$ it is $68.4\ \mathrm{MPa}$, $14$ per cent above; and the maximum **shear** is at the neutral axis, where the bending stress is nil. The lesson is that for a **slender** beam the outer-fibre bending stress is a safe and nearly exact design check, and the interior points never govern; but for a **short** beam, a beam with a large shear near a support, or a beam of a material whose shear strength is low relative to its tensile strength — timber, concrete, a composite, a glass-ceramic — the neutral-axis point where $\sigma_1 = \tau$ and $\sigma_2 = - \tau$ is a genuine $45^\circ$-crack risk, and the diagonal crack in a reinforced concrete beam near its support is exactly that point failing.
 :::
 :::
 
 ## Strain and its measurement
 
 ::: definition Strain transformation and the rosette {#def-rosette}
-Strain transforms by the same equations with one substitution:
+Strain transforms by the same equations with $\sigma$ replaced by $\varepsilon$ and $\tau$ by $\gamma / 2$:
 $$
-\frac{\gamma_{x'y'}}{2} = \frac{\varepsilon_x + \varepsilon_y}{2} - \frac{\varepsilon_x - \varepsilon_y}{2} \cos 2\theta - \frac{\gamma_{xy}}{2} \sin 2\theta .
+\varepsilon_{x'} = \frac{\varepsilon_x + \varepsilon_y}{2} + \frac{\varepsilon_x - \varepsilon_y}{2} \cos 2\theta + \frac{\gamma_{xy}}{2} \sin 2\theta , \qquad
+\frac{\gamma_{x'y'}}{2} = - \frac{\varepsilon_x - \varepsilon_y}{2} \sin 2\theta + \frac{\gamma_{xy}}{2} \cos 2\theta .
 $$
-Note the **minus** sign and the factor of one half — engineering shear strain $\gamma$ is twice the tensor component, which is why Mohr's strain circle is plotted with $\gamma / 2$. A rectangular $45^{\circ}$ rosette measuring $\varepsilon_0$, $\varepsilon_{45}$, $\varepsilon_{90}$ gives
+Note the factor of one half — engineering shear strain $\gamma$ is twice the tensor component, which is why Mohr's strain circle is plotted with $\gamma / 2$. A rectangular $45^{\circ}$ rosette measuring $\varepsilon_0$, $\varepsilon_{45}$, $\varepsilon_{90}$ gives
 $$
 \varepsilon_x = \varepsilon_0, \qquad
 \varepsilon_y = \varepsilon_{90}, \qquad
@@ -216,18 +217,18 @@ R_\varepsilon = \sqrt{50^{2} + 150^{2}} = 158.1 \ \mu ,
 $$
 $$
 \varepsilon_1 = 308 \ \mu, \qquad \varepsilon_2 = - 8.1 \ \mu, \qquad
-\tan 2 \theta_p = \frac{300}{200 - 100} = 3.0 \Rightarrow \theta_p = 35.3^{\circ}.
+\tan 2 \theta_p = \frac{300}{200 - 100} = 3.0 \Rightarrow \theta_p = 35.8^{\circ}.
 $$
 **Stresses.**
 $$
-\sigma_1 = \frac{200\,000 \left( 308 - 0.3 \times 8.1 \right) \times 10^{-6}}{1 - 0.09}
-= \frac{200\,000 \times 305.6 \times 10^{-6}}{0.91} = 67.1\ \mathrm{MPa},
+\sigma_1 = \frac{200\,000 \left( 308.1 - 0.3 \times 8.1 \right) \times 10^{-6}}{1 - 0.09}
+= \frac{200\,000 \times 305.7 \times 10^{-6}}{0.91} = 67.2\ \mathrm{MPa},
 $$
 $$
 \sigma_2 = \frac{200\,000 \left( - 8.1 + 0.3 \times 308 \right) \times 10^{-6}}{0.91}
 = \frac{200\,000 \times 84.3 \times 10^{-6}}{0.91} = 18.5\ \mathrm{MPa}.
 $$
-*Check.* The sum $\sigma_1 + \sigma_2 = 85.6\ \mathrm{MPa}$, and $E (\varepsilon_x + \varepsilon_y) / (1 - \nu) = 200\,000 \times 300 \times 10^{-6} / 0.7 = 85.7\ \mathrm{MPa}$. $\checkmark$
+*Check.* The sum $\sigma_1 + \sigma_2 = 85.7\ \mathrm{MPa}$, and $E (\varepsilon_x + \varepsilon_y) / (1 - \nu) = 200\,000 \times 300 \times 10^{-6} / 0.7 = 85.7\ \mathrm{MPa}$. $\checkmark$
 
 *Sanity.* Three strain gauges, two minutes of arithmetic, and you know the complete two-dimensional stress state at a point on a machine that is running, loaded and inaccessible. This is why experimental stress analysis is done with rosettes rather than with theory: the theory is exact and the geometry is not. The one thing the rosette cannot tell you is the **out-of-plane** strain, so if the point is near a free edge, a hole or a weld, the "plane stress" assumption behind the last two lines may be false and the stresses may be $30$ per cent out.
 :::
@@ -276,21 +277,16 @@ $$
 $$
 and the absolute maximum acts on a plane at $45^{\circ}$ **through the thickness**, at the inner and outer surfaces.
 
-**Helical weld.** Take $x$ as the axial direction, so $\sigma_x = 104.2$, $\sigma_y = 208.3$ and the weld line at $30^{\circ}$ to the circumferential direction is at $\theta = 60^{\circ}$ to the axis. With $\tau_{xy} = 0$,
-$$
-\sigma_{x'} = \frac{104.2 + 208.3}{2} + \frac{104.2 - 208.3}{2} \cos 120^{\circ}
-= 156.3 + 52.1 = 208.3 \times \ldots
-$$
-More directly, the stress **normal** to the weld is the stress along the circumferential direction resolved onto the weld plane. With the weld normal at $30^{\circ}$ to the hoop direction,
+**Helical weld.** Take $x$ as the axial direction, so $\sigma_x = 104.2$, $\sigma_y = 208.3$, $\tau_{xy} = 0$. The weld line is at $30^{\circ}$ to the circumferential direction, so its **normal** is at $\theta = 30^{\circ}$ to the axis. Resolving the two membrane stresses onto that normal,
 $$
 \sigma_n = \sigma_{\text{long}} \cos^{2} 30^{\circ} + \sigma_{\text{hoop}} \sin^{2} 30^{\circ}
-= 104.2 \times 0.75 + 208.3 \times 0.25 = 78.2 + 52.1 = 130.3\ \mathrm{MPa},
+= 104.2 \times 0.75 + 208.3 \times 0.25 = 78.1 + 52.1 = 130.2\ \mathrm{MPa},
 $$
 $$
 \tau_{\text{weld}} = \left( \sigma_{\text{hoop}} - \sigma_{\text{long}} \right) \sin 30^{\circ} \cos 30^{\circ}
 = 104.2 \times 0.433 = 45.1\ \mathrm{MPa}.
 $$
-*Sanity.* Three results worth carrying away. The hoop stress is twice the longitudinal, so the **longitudinal** weld — the one running along the vessel — carries twice the load of the circumferential one and must be the better weld; a vessel with an X-rayed seam and an unchecked girth weld is a vessel that will split along its length. The absolute maximum shear is twice the in-plane value and acts through the thickness, which is why a vessel's failure is a through-thickness shear problem at the inner surface when the material is ductile. And the helical weld at $30^{\circ}$ carries $130\ \mathrm{MPa}$ normal and $45\ \mathrm{MPa}$ shear, which is why spiral-seam pipes are wound at about $54^{\circ}$, where the hoop and axial loadings are shared in proportion to the strength of the two fibre directions.
+*Sanity.* Three results worth carrying away. The hoop stress is twice the longitudinal, so the **longitudinal** weld — the one running along the vessel — carries twice the load of the circumferential one and must be the better weld; a vessel with an X-rayed seam and an unchecked girth weld is a vessel that will split along its length. The absolute maximum shear is twice the in-plane value and acts through the thickness, which is why a vessel's failure is a through-thickness shear problem at the inner surface when the material is ductile. And the helical weld at $30^{\circ}$ carries $130\ \mathrm{MPa}$ normal and $45\ \mathrm{MPa}$ shear, and the same resolution explains why filament-wound composite pipes are wound at about $54.7^{\circ}$ to the axis: there $\tan^{2} \theta = 2$, the ratio of hoop to axial stress, and fibres in that direction alone can carry both.
 :::
 :::
 
@@ -299,7 +295,7 @@ Mohr's circle solves plane stress. It does not solve: **contact stresses**, wher
 :::
 
 ::: history
-The geometry of transforming a stress state is older than the concept of stress. Augustin-Louis Cauchy showed in 1822 that the traction on any plane through a point is determined by nine components and proved what is now called Cauchy's relation, and in 1828 he showed that three mutually perpendicular directions exist on which the traction is purely normal — the principal directions — and that the sum of the three normal stresses is invariant. The circle itself is due to **Christian Otto Mohr** (1835 to 1918), who published it in 1882 in a paper on the internal friction of soils and then in the second edition of his *Abhandlungen aus dem Gebiete der technischen Mechanik*; Mohr was a practical engineer who distrusted the continental elasticity school, and his graphical method was adopted with enthusiasm by a generation of engineers who preferred a ruler to a tensor. The parallel construction for strain, and the experimental culture that made it necessary, come from the engineering school of **Christian Culmann** and his Zurich students, and the strain-rosette algebra to the photoelastic and experimental school of the 1930s, whose need to interpret bonded electrical resistance gauges — invented by Edward Simmons and Arthur Ruge independently in 1938 — made the $45^{\circ}$ rosette formula a standard item of engineering arithmetic. The pressure-vessel formula is a special case of Lamé's 1852 solution and predates it: the hoop stress of a boiler was known empirically to the engineers of the 1820s, and the rule that a boiler's longitudinal seam is twice as highly loaded as its circumferential one was in the Board of Trade's boiler inspection practice before it appeared in a textbook.
+The geometry of transforming a stress state is older than the circle. Augustin-Louis Cauchy introduced the stress at a point in 1822 and, in papers published between 1823 and 1827, showed that the traction on any plane is fixed by the components on three perpendicular planes, that there are three mutually perpendicular principal directions on which the traction is purely normal, and that the sum of the three normal stresses is invariant. Karl Culmann's *Die graphische Statik* (1866) treated the stresses on all planes through a point of a beam graphically, and **Christian Otto Mohr** (1835–1918) turned this into the circle in a paper of 1882 in *Der Civilingenieur* on the representation of the state of stress and strain at a point; his failure theory of 1900 used the same circles. The strain-rosette algebra became everyday engineering arithmetic after the bonded electrical-resistance strain gauge was invented independently by Edward Simmons and Arthur Ruge in 1938. The thin-wall pressure-vessel result is far older than any of this: Edme Mariotte, in his *Traité du mouvement des eaux* (1686), reasoned that the wall of a pipe must resist a force proportional to the pressure times the diameter, and the thick-wall solution is due to Lamé and Clapeyron (1833).
 :::
 
 ::: quiz
@@ -336,7 +332,7 @@ $\sigma_1 = 60 + 40 = 100\ \mathrm{MPa}$, and $\sigma_2 = 20\ \mathrm{MPa}$. The
 :::
 
 ::: exercise Principal angle {level=1 check="45"}
-For what state of stress are the principal planes at $45^{\circ}$ to the $x$ and $y$ axes?
+For what state of stress are the principal planes at $45^{\circ}$ to the $x$ and $y$ axes? (Enter the angle $\theta_p$ in degrees.)
 ::: solution
 When $\sigma_x = \sigma_y$, because $\tan 2 \theta_p = 2 \tau_{xy} / (\sigma_x - \sigma_y) \rightarrow \infty$ requires $\sigma_x = \sigma_y$. Pure shear is the special case, and it is why a torsioned shaft and a chalk bar break at $45^{\circ}$.
 :::
@@ -379,7 +375,7 @@ $$
 $$
 \varepsilon_1 = 427 \ \mu, \qquad \varepsilon_2 = - 177 \ \mu .
 $$
-*Sanity.* The principal strains have opposite signs, so the point is in a state of nearly pure shear, and the principal directions are close to $45^{\circ}$ from gauge 1 — which the large $\varepsilon_{45}$ reading already hinted at. A rosette whose $45^{\circ}$ gauge reads highest is telling you the principal axes are near $45^{\circ}$ before you do any algebra.
+*Sanity.* The orientation follows from $\tan 2 \theta_p = 250 / (- 150 - 400) = - 0.455$ with $2 \theta_p = 155.6^{\circ}$, so the major principal direction is at $77.8^{\circ}$ from gauge 1 — close to the $90^{\circ}$ gauge, which read highest. A rosette tells you roughly where the principal axes lie before you do any algebra: near whichever gauge reads the extreme value.
 :::
 :::
 
@@ -401,7 +397,7 @@ acting on planes at $45^{\circ}$ through the thickness.
 ::: exercise Design {level=3}
 A welded steel plate of $20\ \mathrm{mm}$ thickness contains a straight fillet weld running at $55^{\circ}$ to the plate's longitudinal axis. The plate carries a uniform tensile stress of $120\ \mathrm{MPa}$ along its axis. Find the normal and shear stresses on the weld, and check them against an allowable of $160\ \mathrm{MPa}$ normal and $90\ \mathrm{MPa}$ shear.
 ::: solution
-Take $x$ along the plate axis, so $\sigma_x = 120$, $\sigma_y = 0$, $\tau_{xy} = 0$. The weld **plane** is at $55^{\circ}$ to the axis, so its **normal** is at $\theta = 55 + 90 = 145^{\circ}$, or equivalently $\theta = 35^{\circ}$ measured from the transverse direction. Using the normal at $35^{\circ}$ to the load axis:
+Take $x$ along the plate axis, so $\sigma_x = 120$, $\sigma_y = 0$, $\tau_{xy} = 0$. The weld **plane** is at $55^{\circ}$ to the axis, so its **normal** is at $\theta = 55 + 90 = 145^{\circ}$, which makes the same $35^{\circ}$ angle with the load axis. Using the normal at $35^{\circ}$ to the load axis:
 $$
 \sigma_n = 120 \cos^{2} 35^{\circ} = 120 \times 0.671 = 80.5\ \mathrm{MPa},
 $$
@@ -414,7 +410,7 @@ Both are below the allowables of $160$ and $90$. $\checkmark$
 $$
 \tau_{\max} = 120 / 2 = 60\ \mathrm{MPa}, \qquad \sigma_n = 60\ \mathrm{MPa},
 $$
-and the normal stress is maximised at $0^{\circ}$. A weld at $55^{\circ}$ to the axis is therefore at $81$ per cent of its shear capacity and $50$ per cent of its normal capacity.
+and the normal stress is maximised at $0^{\circ}$. A weld at $55^{\circ}$ to the axis is therefore at $63$ per cent of its shear allowable and $50$ per cent of its normal allowable.
 
 *Design comment.* This is why a lifting-eye plate is welded with two fillets at about $45^{\circ}$ rather than one transverse weld: at $45^{\circ}$ the weld carries equal normal and shear, and a fillet weld's throat is designed on a combined vector sum. It is also why a code checks a fillet weld on the **resultant** stress through the throat rather than resolving it into components, and why a longitudinal weld in a plate loaded transversely is the worst detail in the shop drawing — the weld carries the full $120\ \mathrm{MPa}$ normal to its own axis, and a defect in it is a through-thickness crack in the plate.
 :::

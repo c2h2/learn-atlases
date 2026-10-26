@@ -1,13 +1,13 @@
-At a Reynolds number of ten million the Navier–Stokes equations have a viscosity multiplying their highest derivative and a coefficient of $10^{-7}$ in front of it, and the resolution of that contradiction is that **viscosity keeps its importance in a layer one ten-thousandth of the body length thick against the wall, and loses it everywhere else**. **Prandtl** wrote this down in **1904** in a three-page note at the Heidelberg Mathematics Congress, and it is the single most consequential idea in fluid mechanics: it made drag computable, made the wind tunnel useful, made the airfoil possible, and made flow separation — and therefore stall, diffuser failure, compressor surge and every bluff-body wake — a thing one could name and predict.
+At a Reynolds number of ten million the Navier–Stokes equations have a viscosity multiplying their highest derivative and a coefficient of $10^{-7}$ in front of it, and the resolution of that contradiction is that **viscosity keeps its importance in a layer a fraction of a per cent of the body length thick against the wall, and loses it everywhere else**. **Prandtl** wrote this down in **1904** in a short paper presented at the International Congress of Mathematicians in Heidelberg, and it is the single most consequential idea in fluid mechanics: it made drag computable, made the wind tunnel useful, made the airfoil possible, and made flow separation — and therefore stall, diffuser failure, compressor surge and every bluff-body wake — a thing one could name and predict.
 
-Drag is where fluid mechanics meets the fuel-consumption figure, and the split is worth knowing before the mathematics: **at highway speed a car spends sixty per cent of its power on the pressure drag of its own wake and thirty-five per cent on the skin friction of its surfaces; an airliner in cruise spends about half on skin friction**, and the two have completely different remedies.
+Drag is where fluid mechanics meets the fuel-consumption figure, and the split is worth knowing before the mathematics: **most of a car's aerodynamic drag is pressure drag from its separated wake, with skin friction a minor share; an airliner in cruise, by contrast, spends roughly half of its drag on skin friction**, and the two have completely different remedies.
 
-::: warning Seven boundary-layer errors that cost ten per cent of the fuel
-**Applying the turbulent flat-plate formula over the whole surface.** The laminar part of a surface contributes **less** friction than the turbulent part at the same $\mathrm{Re}_x$ — the local $C_f$ ratio is $\left( 0.029 / \mathrm{Re}_x^{0.2} \right) / \left( 0.332 / \mathrm{Re}_x^{0.5} \right) = 0.087\, \mathrm{Re}_x^{0.3}$, which is $0.55$ at $\mathrm{Re}_x = 10^5$ and $1.4$ at $10^7$ — but a calculation that assumes fully turbulent flow from the leading edge **overstates** the drag by $10$ to $20\ \%$ at $\mathrm{Re} = 10^7$. **The reason a laminar-flow airfoil's whole benefit is lost by a $0.3\ \mathrm{mm}$ burr on the leading edge is that the transition moves from $67\ \%$ chord to $2\ \%$ chord**, and the reason a glider's wing is polished and a crop-duster's is not is a $17\ \%$ difference in the drag count. **Forgetting that the boundary layer has a displacement thickness and that it blocks the flow.** A turbulent boundary layer of $30\ \mathrm{mm}$ thickness has $\delta^{*} \approx 3\ \mathrm{mm}$, and in a wind tunnel test section of $1\ \mathrm{m}$ that is a $0.6\ \%$ area blockage and a $0.6\ \%$ error in the test-section velocity — **which is of the same size as the aerodynamic effect being measured**. **The reason a diffuser's area ratio must be computed with $A - \pi D \delta^{*}$ and not $\pi D^2 / 4$ is that the diffuser's own boundary layer eats the divergence angle that was designed to recover the pressure, and the reason a compressor's stage pressure ratio falls short of its design value is usually this and not the blade profile.** **Using the $\delta_{99}$ thickness as if it were a physical length.** $\delta_{99}$ is a convention — the height at which $u = 0.99\, U_e$ — and it has no dynamical meaning. **The lengths that mean something are $\delta^{*} = \int \left( 1 - u / U_e \right) dy$, which is the mass deficit, and $\theta = \int \left( u / U_e \right) \left( 1 - u / U_e \right) dy$, which is the momentum deficit**, and the shape factor $H = \delta^* / \theta$ is the single best indicator of whether a layer is about to separate. **Confusing the local and the average skin-friction coefficient.** $C_f \propto \mathrm{Re}_x^{- 1 / 2}$ for laminar and $\mathrm{Re}_x^{- 1 / 5}$ for turbulent, so the **average** over a plate is $\bar{C}_f = 2 C_f \left( L \right)$ laminar and $\bar{C}_f = \tfrac{5}{4} C_f \left( L \right)$ turbulent. **A factor of two or of $1.25$ on the drag**, and the reason the two conventions are both written $C_f$ in the literature is that there is no agreed bar over the average. **Assuming the transition location.** $\mathrm{Re}_{\theta, t}$ — the **momentum-thickness** Reynolds number at transition — is not a property of the fluid or the surface; it is a function of the **tunnel's turbulence level**, and the range is enormous: $\mathrm{Re}_{\theta, t} = 1{,}400$ in a quiet pressurised tank at $0.05\ \%$ turbulence and $\mathrm{Re}_{\theta, t} = 300$ in a free jet at $3\ \%$. **The reason a laminar-airfoil wind-tunnel result does not fly is that the tunnel's free-stream turbulence is not the atmosphere's**, and the reason a modern airfoil design is validated with an $e^N$ stability method and not with a fixed transition trip is that the trip fixes the answer to the wrong value. **Dropping the pressure-gradient term from the momentum integral and then predicting no separation.** The von Kármán integral equation is
+::: warning Seven boundary-layer errors
+**Applying the turbulent flat-plate formula over the whole surface.** The laminar part of a surface contributes **less** friction than the turbulent part at the same $\mathrm{Re}_x$ — the local turbulent-to-laminar $C_f$ ratio is $\left( 0.0592 / \mathrm{Re}_x^{0.2} \right) / \left( 0.664 / \mathrm{Re}_x^{0.5} \right) = 0.089\, \mathrm{Re}_x^{0.3}$, which is $2.8$ at $\mathrm{Re}_x = 10^5$ and $11$ at $10^7$ — so a calculation that assumes fully turbulent flow from the leading edge **overstates** the drag: by about $6\ \%$ at $\mathrm{Re}_L = 10^7$ with natural transition at $5 \times 10^5$, and by over $30\ \%$ at $\mathrm{Re}_L = 10^6$. **A laminar-flow airfoil's benefit can be lost to a small leading-edge excrescence or an insect strike, which trips the layer and moves transition from far aft to the leading edge**, which is why gliders, whose performance depends on long laminar runs, are kept clean and polished. **Forgetting that the boundary layer has a displacement thickness and that it blocks the flow.** A turbulent boundary layer of $30\ \mathrm{mm}$ thickness has $\delta^{*} \approx \delta / 8 \approx 3.75\ \mathrm{mm}$, and on the four walls of a $1\ \mathrm{m}$ square test section that is a $1.5\ \%$ area blockage and about a $1.5\ \%$ error in the test-section velocity — **comparable to many of the effects being measured**. **A diffuser's effective area is $\pi D^2 / 4 - \pi D \delta^{*}$, not $\pi D^2 / 4$: the diffuser's own boundary layer eats into the area increase that was designed to recover the pressure, and this blockage is a major reason real diffusers and compressor stages recover less pressure than ideal-flow design predicts.** **Using the $\delta_{99}$ thickness as if it were a physical length.** $\delta_{99}$ is a convention — the height at which $u = 0.99\, U_e$ — and it has no dynamical meaning. **The lengths that mean something are $\delta^{*} = \int \left( 1 - u / U_e \right) dy$, which is the mass deficit, and $\theta = \int \left( u / U_e \right) \left( 1 - u / U_e \right) dy$, which is the momentum deficit**, and the shape factor $H = \delta^* / \theta$ is the single best indicator of whether a layer is about to separate. **Confusing the local and the average skin-friction coefficient.** $C_f \propto \mathrm{Re}_x^{- 1 / 2}$ for laminar and $\mathrm{Re}_x^{- 1 / 5}$ for turbulent, so the **average** over a plate is $\bar{C}_f = 2 C_f \left( L \right)$ laminar and $\bar{C}_f = \tfrac{5}{4} C_f \left( L \right)$ turbulent. **A factor of two or of $1.25$ on the drag**, and because notation varies between texts, always check whether a quoted $C_f$ is local or averaged. **Assuming the transition location.** $\mathrm{Re}_{\theta, t}$ — the **momentum-thickness** Reynolds number at transition — is not a property of the fluid or the surface; it is a function of the **tunnel's turbulence level**, and the range is large: the Abu-Ghannam–Shaw correlation gives $\mathrm{Re}_{\theta, t} \approx 1{,}100$ at $0.05\ \%$ free-stream turbulence and about $210$ at $3\ \%$. **A laminar-airfoil wind-tunnel result transfers to flight only if the tunnel's disturbance environment resembles the atmosphere's**, and modern laminar-flow designs are assessed with $e^N$ stability methods rather than a fixed transition trip, because the trip fixes the transition location instead of predicting it. **Dropping the pressure-gradient term from the momentum integral and then predicting no separation.** The von Kármán integral equation is
 $$
 \frac{d \theta}{d x} + \left( 2 + H \right) \frac{\theta}{U_e} \frac{d U_e}{d x} = \frac{C_f}{2}
 $$
-**and the second term is the whole of separation physics.** Setting $d U_e / dx = 0$ gives a boundary layer that never separates, which is the reason a flat-plate calculation cannot be used to justify a diffuser's divergence angle. **Treating a three-dimensional flow as two-dimensional.** A swept wing's boundary layer runs **spanwise** in the pressure gradient, forming a thick low-energy layer at the tip that separates at a much lower incidence than the two-dimensional section; a body of revolution's layer thins at the shoulder and thickens at the tail; and a turbine cascade's layer accumulates low-momentum fluid in the corner, forming the passage vortex. **The reason a two-dimensional airfoil's maximum lift coefficient of $1.6$ becomes $1.1$ on a swept wing is crossflow, and no two-dimensional method can see it.**
+**and the second term is the whole of separation physics.** Setting $d U_e / dx = 0$ gives a boundary layer that never separates, which is the reason a flat-plate calculation cannot be used to justify a diffuser's divergence angle. **Treating a three-dimensional flow as two-dimensional.** A swept wing's boundary layer runs **spanwise** in the pressure gradient, forming a thick low-energy layer at the tip that separates at a much lower incidence than the two-dimensional section; a body of revolution's layer thins at the shoulder and thickens at the tail; and a turbine cascade's layer accumulates low-momentum fluid in the corner, forming the passage vortex. **A swept wing's maximum lift coefficient falls well below its section value, partly through simple sweep effects and partly through this spanwise drift and crossflow, which no two-dimensional method can see.**
 :::
 
 ## The equations and their solutions
@@ -19,7 +19,7 @@ $$
 \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = 0
 $$
 **with** $u = v = 0$ **at** $y = 0$ **and** $u \to U_e \left( x \right)$ **as** $y \to \infty$, **and** $U_e$ **given by the inviscid outer solution through Bernoulli.**
-**The three simplifications, stated so they can be checked.** The streamwise viscous term $\nu \partial^2 u / \partial x^2$ is dropped because it is smaller by $ \left( \delta / L \right)^2$; the normal pressure gradient is dropped because $\partial p / \partial y = O \left( \delta / L \right)$; and the normal momentum equation reduces to $\partial p / \partial y \approx 0$, **so the pressure is imposed by the outer flow and the boundary layer cannot influence it** — which is the reason a separation bubble can change the outer flow only through the displacement thickness.
+**The simplifications, stated so they can be checked.** The streamwise viscous term $\nu \partial^2 u / \partial x^2$ is dropped because it is smaller than $\nu \partial^2 u / \partial y^2$ by $\left( \delta / L \right)^2$; and the normal momentum equation reduces to $\partial p / \partial y \approx 0$, because the pressure change across the layer is only $O \left( \left( \delta / L \right)^2 \right)$ of the dynamic pressure, **so the pressure is imposed by the outer flow** — and, in this first approximation, the layer can feed back on the outer flow only through its displacement thickness.
 **The boundary layer is not "Navier–Stokes without the small terms" but a different problem with a well-posed initial-value structure:** $U_e \left( x \right)$ is prescribed, the layer grows downstream, and **information does not travel upstream** — until separation, at which point the assumption fails and the whole coupled problem must be solved.
 **The displacement thickness, the momentum thickness and the shape factor:**
 $$
@@ -35,36 +35,36 @@ $$
 \text{Separating} & & & \to 3.5 + & \to 0
 \end{array}
 $$
-**The number that makes $H$ the diagnostic.** A laminar layer at $H = 2.59$ is healthy; **$H > 3.5$ means separation is imminent**; a turbulent layer at $H = 1.35$ is healthy and at $H = 2.0$ is separating. **The reason a wind-tunnel operator's first look at a new model is the shape-factor profile from a hot-wire traverse is that $H$ says whether the model is working before any force is measured.**
+**The number that makes $H$ the diagnostic.** A laminar layer at $H = 2.59$ is healthy; **$H > 3.5$ means separation is imminent**; a turbulent layer at $H = 1.35$ is healthy and at $H = 2.0$ is separating. **A measured distribution of $H$ along a surface therefore shows where the layer is approaching separation before any force is measured.**
 :::
 
 ::: definition The momentum integral equation {#def-momentum-integral}
 **Integrating the boundary-layer equation across the layer** gives the **von Kármán** **1921** integral relation:
 $$
 \boxed{ \frac{d \theta}{d x} + \left( 2 + H \right) \frac{\theta}{U_e} \frac{d U_e}{d x} = \frac{C_f}{2} }
-\qquad \left[ \text{with } \beta = \frac{\theta^2}{\nu} \frac{d U_e}{d x} \text{ the pressure-gradient parameter} \right]
+\qquad \left[ \text{with } \lambda = \frac{\theta^2}{\nu} \frac{d U_e}{d x} \text{ the pressure-gradient parameter} \right]
 $$
 **The reading, term by term.** $d \theta / dx$ is the growth of the momentum deficit; the middle term is **production or destruction by the pressure gradient** — negative for an adverse gradient, so the layer grows faster than skin friction alone would make it; and $C_f / 2$ is the rate at which the wall **removes** momentum. **Separation is the condition at which the wall's extraction and the adverse gradient together exhaust the layer's momentum: $C_f \to 0$ and $\partial u / \partial y \big|_0 = 0$.**
-**Thwaites' method**, an integrable closure good for laminar layers with $-0.09 < \lambda < 12$:
+**Thwaites' method**, an integrable closure for laminar layers, valid for roughly $-0.09 < \lambda < 0.25$:
 $$
 \theta^2 \left( x \right) = \frac{0.45 \nu}{U_e^{6}} \int_0^x U_e^{5}\, dx^{\prime}, \qquad
 \lambda = \frac{\theta^2}{\nu} \frac{d U_e}{d x}, \qquad
-C_f = 0.45\, \mathrm{Re}_{\theta}^{- 2} \left( 1 - 12 \lambda^{- 0.62} \right) + 6 \lambda \left( 1 + 0.08 \lambda \right)^{- 1} e^{- \lambda^2}
+C_f \approx \frac{2 \left( \lambda + 0.09 \right)^{0.62}}{\mathrm{Re}_{\theta}} \quad \text{(White's fit)}
 $$
-**with separation at** $\lambda = - 0.09$. **The method is a first-year engineering tool and is still used, because it is a quadrature and it is right to within $10\ \%$ on $C_f$.**
+**with separation at** $\lambda \approx - 0.09$. (At $\lambda = 0$ the fit gives $C_f \mathrm{Re}_\theta / 2 = 0.225$, against Blasius's $0.220$.) **The method is a standard textbook tool and is still used, because it is a single quadrature and is typically accurate to within about ten per cent away from separation.**
 **The Falkner–Skan family**, the similarity solutions for a wedge flow $U_e = K x^m$:
 $$
 f^{{'''}} + f f^{{''}} + \beta \left( 1 - f^{{'2}} \right) = 0, \qquad \beta = \frac{2 m}{m + 1}
 $$
 $$
 \begin{array}{l c c l}
-m = 0 & \beta = 0 & f^{{''}} \left( 0 \right) = 0.3321 & \text{Blasius, flat plate} \\
+m = 0 & \beta = 0 & f^{{''}} \left( 0 \right) = 0.4696 & \text{Blasius, flat plate} \\
 m = 1 & \beta = 1 & f^{{''}} \left( 0 \right) = 1.2326 & \text{stagnation point} \\
 m = - 0.0904 & \beta = - 0.1988 & f^{{''}} \left( 0 \right) = 0 & \text{separation} \\
 m < - 0.0904 & & \text{no solution} & \text{separated}
 \end{array}
 $$
-**The number that makes the stagnation point the reason a pitot tube survives.** $f^{{''}} \left( 0 \right) = 1.2326$ against Blasius' $0.3321$ — **the wall shear at a two-dimensional stagnation point is $3.7$ times that of a flat plate at the same $\mathrm{Re}_x$**, and the reason a pitot tube's tip erodes and a flat plate's leading edge does not is that $3.7$ factor multiplied by the stagnation-point heat transfer, which is larger still.
+**The number that makes the stagnation region special.** In this scaling Blasius's value is $0.4696$ (it is $0.3321$ in Blasius's own variables, $f''' + \tfrac{1}{2} f f'' = 0$). Expressed as $\tau_w \sqrt{\nu x / U_e} / \left( \mu U_e \right)$, the stagnation-point value $1.2326$ against the flat plate's $0.332$ means **the wall shear at a two-dimensional stagnation point is $3.7$ times that of a flat plate at the same local $\mathrm{Re}_x$** — which is why leading edges and nose regions see the highest wall shear and heat transfer.
 :::
 
 ::: widget plot
@@ -72,7 +72,7 @@ f: 1.328/sqrt(x); 0.074/pow(x,0.2); 0.059/pow(x,0.2)
 x: 10000, 100000000
 y: 0.0008, 0.05
 labels: laminar average C_f = 1.328/sqrt(Re_L); turbulent average C_f = 0.074/Re_L^0.2; turbulent local c_f = 0.059/Re_x^0.2
-caption: Skin-friction coefficients against Reynolds number on log-log axes. **The laminar line has a slope of $-0.5$ and the turbulent line a slope of $-0.2$** — the turbulent layer's friction is far less sensitive to speed and size, which is why a ship's model-ship correlation line is a logarithm and not a power law. **The two lines cross at $\mathrm{Re} \approx 1.3 \times 10^5$**, and above that a turbulent layer has more friction than a laminar one at the same Reynolds number — at $\mathrm{Re} = 10^7$ by a factor of $14$. **The number that makes the whole of laminar-flow control worth $1.5$ million dollars a year in airline fuel is that factor of $14$**, and the number that makes it hard is that the laminar layer must be held for metres against a free-stream turbulence of $0.1\ \%$, a leading-edge roughness below $2\ \mu\mathrm{m}$, and crossflow at any sweep angle above zero.
+caption: Skin-friction coefficients against Reynolds number on log-log axes. **The laminar line has a slope of $-0.5$ and the turbulent line a slope of $-0.2$** — the turbulent layer's friction is far less sensitive to speed and size, which is why a ship's model-ship correlation line is a logarithm and not a power law. **The two average-coefficient lines cross at $\mathrm{Re} \approx 1.5 \times 10^4$** (below the range where the turbulent formula is valid), and above that a turbulent layer has more friction than a laminar one at the same Reynolds number — at $\mathrm{Re} = 10^7$ by a factor of $7$. **That factor is the prize of laminar-flow control**, and what makes it hard to win is that the laminar layer must be held for metres against atmospheric disturbances, surface roughness and waviness, insect contamination, and crossflow instability on swept wings.
 :::
 
 ## Separation, transition and drag
@@ -91,12 +91,11 @@ $$
 \text{Sphere, subcritical} & C_D = 0.47 & \\
 \text{Sphere, supercritical} & C_D = 0.1 & \\
 \text{Streamlined body, } L / D = 6 & C_D = 0.04 & \\
-\text{Flat plate normal to flow} & C_D = 1.18 & \\
-\text{Long cylinder in a tube, fully developed} & \text{no form drag} &
+\text{Flat plate normal to flow} & C_D = 1.18 &
 \end{array}
 $$
-**The drag crisis.** At $\mathrm{Re} \approx 3 \times 10^5$ a sphere's or cylinder's drag coefficient **falls by a factor of four**, because the boundary layer transitions to turbulence before it separates, the turbulent layer's larger momentum near the wall carries it further round the body, and the wake narrows. **The number that makes a golf ball work:** a smooth sphere's $C_D$ drops from $0.47$ to $0.10$ at $\mathrm{Re} \approx 3 \times 10^5$, which for a $42.7\ \mathrm{mm}$ ball in air is $10.5\ \mathrm{m / s}$; **the dimples trip the layer at a drive speed of $70\ \mathrm{m / s}$ where a smooth ball would still be subcritical**, and a dimpled ball carries $50\ \%$ further than a smooth one hit at the same speed. **The number that makes the same physics a design trap:** a chimney's or a tower's vortex-shedding frequency jumps at the critical Reynolds number, and the reason the **Tacoma** literature and the **Kármán** vortex-shedding design charts both carry a warning about the supercritical regime is that the Strouhal number and the drag both change discontinuously.
-**The laminar separation bubble.** At moderate $\mathrm{Re}$ $\left( 10^5 \text{–} 10^6 \right)$ a laminar layer separates, the shear layer transitions in the free shear layer, and the turbulent layer reattaches a few per cent of chord downstream, forming a **short bubble** that behaves as a modified, slightly thicker shape. **The bubble is benign if short and catastrophic if long**, and the reason small UAV wings and micro-air-vehicle airfoils are designed with a **laminar separation bubble** as an intended feature is that the bubble's effective camber can add lift; the reason a model aircraft's wing stalls at half the section's two-dimensional value is that the bubble has become long.
+**The drag crisis.** At $\mathrm{Re} \approx 3 \times 10^5$ a sphere's or cylinder's drag coefficient **falls by a factor of four**, because the boundary layer transitions to turbulence before it separates, the turbulent layer's larger momentum near the wall carries it further round the body, and the wake narrows. **The number that makes a golf ball work:** a smooth sphere's $C_D$ drops from $0.47$ to $0.10$ at $\mathrm{Re} \approx 3 \times 10^5$, which for a $42.7\ \mathrm{mm}$ ball in air is about $106\ \mathrm{m / s}$; **the dimples trip the layer at a drive speed of $70\ \mathrm{m / s}$ where a smooth ball would still be subcritical**, and a dimpled ball carries much further than a smooth one hit the same way. **The number that makes the same physics a design trap:** a chimney's or a tower's vortex shedding changes character through the critical Reynolds number, and design guidance for wind-induced vibration of slender structures treats the subcritical, critical and supercritical ranges separately because the Strouhal number and the drag both change abruptly.
+**The laminar separation bubble.** At moderate $\mathrm{Re}$ $\left( 10^5 \text{–} 10^6 \right)$ a laminar layer separates, the shear layer transitions in the free shear layer, and the turbulent layer reattaches a few per cent of chord downstream, forming a **short bubble** that behaves as a modified, slightly thicker shape. **The bubble is benign if short and damaging if long**: low-Reynolds-number airfoils for small UAVs and gliders are designed to manage the bubble — often with a trip or turbulator to keep it short — and when a short bubble **bursts** into a long one, the airfoil can lose lift abruptly at an incidence well below what higher-Reynolds-number data would predict.
 :::
 
 ::: definition Transition {#def-transition}
@@ -110,23 +109,23 @@ $$
 \text{Leading-edge} & \text{a laminar separation bubble or a detached leading-edge vortex}
 \end{array}
 $$
-**The $e^N$ method.** Amplification factors are integrated along the neutral-stability envelope:
+**The $e^N$ method.** Linear-stability growth rates are integrated downstream from the neutral point, and the envelope over all frequencies is taken:
 $$
-N \left( s \right) = \int_{x_{\mathrm{neutral}}}^{s} \left( - \frac{\mathrm{Im} \alpha}{1} \right) ds, \qquad
+N \left( s \right) = \int_{s_{\mathrm{neutral}}}^{s} \left( - \alpha_i \right) ds, \qquad
 \text{transition at } N = N_{\mathrm{crit}}
 $$
-**with $N_{\mathrm{crit}} \approx 9$ for a quiet tunnel and $N_{\mathrm{crit}} \approx 4$ to $6$ for flight conditions** — and the reason the number is not universal is that it is a **model of the environment** as much as of the flow.
-**The Reynolds number at transition.**
+**with $N_{\mathrm{crit}} \approx 9$ commonly used for flight and quiet tunnels, and lower values in noisier tunnels** (Mack's correlation $N_{\mathrm{crit}} = - 8.43 - 2.4 \ln \mathrm{Tu}$ gives $8.1$ at $\mathrm{Tu} = 0.1\ \%$ and $5.5$ at $0.3\ \%$) — the number is not universal because it is a **model of the environment** as much as of the flow.
+**The Reynolds number at transition** (zero pressure gradient, Abu-Ghannam–Shaw correlation $\mathrm{Re}_{\theta, t} \approx 163 + e^{6.91 - \mathrm{Tu}}$, $\mathrm{Tu}$ in per cent):
 $$
 \mathrm{Re}_{\theta, t} = \frac{U_e \theta}{\nu} \bigg|_t \approx
 \begin{cases}
-1{,}400 & \text{quiet pressurised tank, } \mathrm{Tu} = 0.05\ \% \\
-500 & \text{good subsonic wind tunnel, } \mathrm{Tu} = 0.3\ \% \\
-300 & \text{atmospheric boundary layer, } \mathrm{Tu} = 2\ \%
+1{,}100 & \text{very quiet tunnel, } \mathrm{Tu} = 0.05\ \% \\
+900 & \text{ordinary subsonic wind tunnel, } \mathrm{Tu} = 0.3\ \% \\
+300 & \text{high free-stream turbulence, } \mathrm{Tu} = 2\ \%
 \end{cases}
 $$
-**The number that makes a wind-tunnel result a wind-tunnel result.** **The transition location on the same airfoil at the same Reynolds number differs by a factor of four between a quiet tank and a production tunnel**, and the reason a laminar-flow airfoil's section-drag polar must be measured in a tunnel whose turbulence level is quoted to two significant figures is that the drag bucket's position moves by $20\ \%$ chord for a $0.1\ \%$ change in turbulence.
-**The transition trip.** A $0.5\ \mathrm{mm}$-diameter wire or a $1\ \mathrm{mm}$-wide adhesive strip at $x / c = 0.02$ forces transition, and the reason a wind-tunnel model carries one is to make the **lift** and **pitching-moment** data repeatable — at the cost of making the **drag** data wrong. **The reason a section-drag polar taken with a trip is used only for the turbulent reference and never for the design point is that the trip's own drag is $5$ to $10\ \%$ of the total.**
+**The number that makes a wind-tunnel result a wind-tunnel result.** **On a flat plate $\theta \propto \sqrt{x}$, so $x_t \propto \mathrm{Re}_{\theta, t}^2$, and the fall from about $1{,}100$ to $300$ moves transition upstream by a factor of about thirteen**; this is why a laminar-flow airfoil's section-drag polar is meaningful only with the tunnel's turbulence level reported alongside it.
+**The transition trip.** A $0.5\ \mathrm{mm}$-diameter wire or a $1\ \mathrm{mm}$-wide adhesive strip at $x / c = 0.02$ forces transition, and the reason a wind-tunnel model carries one is to make the **lift** and **pitching-moment** data repeatable — at the cost of making the **drag** data wrong. **A section-drag polar taken with a trip is therefore a turbulent reference rather than a prediction of the clean design point, and the trip adds some drag of its own.**
 :::
 
 ::: definition Total drag on a flat plate {#def-flatplate}
@@ -145,12 +144,12 @@ $$
 \boxed{ \bar{C}_f = \frac{0.074}{\mathrm{Re}_L^{0.2}} - \frac{A}{\mathrm{Re}_L} }, \qquad
 A = \mathrm{Re}_t \left( \frac{0.074}{\mathrm{Re}_t^{0.2}} - \frac{1.328}{\mathrm{Re}_t^{0.5}} \right) = 1742\ \text{at } \mathrm{Re}_t = 5 \times 10^5
 $$
-**The number that makes the correction term the whole of the laminar benefit.** At $\mathrm{Re}_L = 10^7$ the two terms are $2.946 \times 10^{- 3}$ and $1.742 \times 10^{- 4}$ — **the correction is $5.9\ \%$ of the total**, which is the drag saved by keeping the first $5\ \%$ of the plate laminar. **Keeping half the plate laminar** at the same $\mathrm{Re}_L$ means $\mathrm{Re}_t = 4.97 \times 10^6$, for which $A = 13{,}870$, the correction is $1.40 \times 10^{- 3}$ and $\bar{C}_f = 1.55 \times 10^{- 3}$ — **a $47\ \%$ reduction** — and the reason the airline industry's laminar-flow programmes target a $10\ \%$ fuel burn and not $35\ \%$ is that the wing's **swept** panels are crossflow-unstable and the practical laminar extent is $20$ to $30\ \%$ of chord.
-**The rough plate.** Once $k_s^+ > 70$ the flow is fully rough and $C_f$ is **independent of Reynolds number**:
+**The number that makes the correction term the whole of the laminar benefit.** At $\mathrm{Re}_L = 10^7$ the two terms are $2.946 \times 10^{- 3}$ and $1.742 \times 10^{- 4}$ — **the correction is $5.9\ \%$ of the fully turbulent value**, which is the drag saved by keeping the first $5\ \%$ of the plate laminar. **Keeping half the plate laminar** at the same $\mathrm{Re}_L$ means $\mathrm{Re}_t = 5 \times 10^6$, for which $A = 13{,}950$, the correction is $1.40 \times 10^{- 3}$ and $\bar{C}_f = 1.55 \times 10^{- 3}$ — **a $47\ \%$ reduction in skin friction** — and the whole-aircraft fuel saving from laminar flow is much smaller than this, because only parts of the wetted area can be kept laminar and swept surfaces are crossflow-unstable.
+**The rough plate.** Once $k_s^+ > 70$ the flow is fully rough and $\bar{C}_f$ is **independent of Reynolds number** (Schlichting's average over a plate of length $L$):
 $$
-C_f = \left( 1.89 + 1.62\, \log_{10} \frac{x}{k_s} \right)^{- 2.5}
+\bar{C}_f = \left( 1.89 + 1.62\, \log_{10} \frac{L}{k_s} \right)^{- 2.5}
 $$
-**The number that makes a ship's hull a maintenance cost.** For a barnacle fouling of $k_s = 3\ \mathrm{mm}$ on a $250\ \mathrm{m}$ tanker, $x / k_s \approx 10^5$ and $C_f = 0.0092$ against a smooth-hull value of $0.0015$ — **a factor of six**, and the reason a shipping line's dry-docking interval is an economic optimisation with a $1.5\ \%$-per-month hull-roughness penalty is that factor and not a rule of thumb.
+**The number that makes a ship's hull a maintenance cost.** For a heavy fouling of $k_s = 3\ \mathrm{mm}$ on a $250\ \mathrm{m}$ tanker, $L / k_s \approx 8 \times 10^4$ and $\bar{C}_f = 0.0033$ against a smooth-hull value of about $0.0015$ (at $\mathrm{Re}_L \approx 1.6 \times 10^9$) — **more than double the friction**, which is why hull cleaning, antifouling coatings and the dry-docking interval are economic decisions.
 :::
 
 ## Worked cases
@@ -180,20 +179,20 @@ $$
 \bar{C}_f = \frac{0.074}{25.09} = 2.95 \times 10^{- 3}
 \qquad \Rightarrow \qquad D = 8.00\ \mathrm{N}
 $$
-**(c) Natural transition.** $x_t = 5 \times 10^5 \times \nu / U = 0.02515\ \mathrm{m}$ — **the first $25\ \mathrm{mm}$**:
+**(c) Natural transition.** $x_t = 5 \times 10^5 \times \nu / U = 0.2515\ \mathrm{m}$ — **the first $252\ \mathrm{mm}$**:
 $$
 \bar{C}_f = \frac{0.074}{\mathrm{Re}_L^{0.2}} - \frac{1{,}742}{\mathrm{Re}_L}
 = 2.95 \times 10^{- 3} - 1.75 \times 10^{- 4} = 2.77 \times 10^{- 3}
 \qquad \Rightarrow \qquad D = 7.52\ \mathrm{N}
 $$
-**The reading.** **The natural transition saves $5.9\ \%$ of the drag.** The laminar run is $0.5\ \%$ of the plate and the saving is $5.9\ \%$ of the drag — the ratio is about twelve to one, and the reason is that the local $C_f$ at the transition point is high because $\mathrm{Re}_x$ is low. **The number that makes laminar flow worth pursuing is the same ratio at a higher transition Reynolds number:** with $\mathrm{Re}_t = 5 \times 10^6$ the correction term becomes $A / \mathrm{Re}_L = 1.40 \times 10^{- 3}$ and the saving is $48\ \%$, and the reason the achievable saving rises so steeply with $\mathrm{Re}_t$ is that $A$ grows as $\mathrm{Re}_t^{0.8}$.
-**The shape factor at the trailing edge.** For the turbulent case, $H = \delta^* / \theta = 1.3$ gives $\delta^* = 10.7\ \mathrm{mm}$ and $\delta_{99} / \delta^* = 11$; for the laminar case $H = 2.59$ gives $\delta^* = 2.72\ \mathrm{mm}$ and $\delta_{99} / \delta^* = 2.9$. **The turbulent layer is nine times thicker and its displacement thickness only three and a half times larger** — and the reason a wind tunnel's blockage correction is computed from $\delta^*$ and not from $\delta_{99}$ is that $\delta^*$ is the mass deficit and $\delta_{99}$ is a convention.
-*Sanity.* The reason the turbulent layer is so much thicker is that the $1 / 7$-power profile carries less momentum near the wall and the layer must be thicker to transport the same shear. **The ratio $\delta_{99} / \theta$ is $7.5$ for Blasius and $10.3$ for the $1 / 7$-power layer**, and the reason the momentum thickness is the better measure of a layer's "size" is that it is the quantity the momentum integral equation evolves and the quantity that appears in $\mathrm{Re}_{\theta, t}$.
+**The reading.** **The natural transition saves $5.9\ \%$ of the drag.** The laminar run is $5\ \%$ of the plate and the saving is $5.9\ \%$ of the drag — slightly more than its share, because the fully turbulent formula charges the leading-edge region with its highest local friction, which is exactly where the laminar layer replaces it. **The number that makes laminar flow worth pursuing is the saving at a higher transition Reynolds number:** with $\mathrm{Re}_t = 5 \times 10^6$ the correction term becomes $A / \mathrm{Re}_L = 1.40 \times 10^{- 3}$ and the saving is $48\ \%$; the achievable saving rises steeply with $\mathrm{Re}_t$ because $A$ grows roughly as $\mathrm{Re}_t^{0.8}$.
+**The shape factor at the trailing edge.** For the turbulent case, $H = \delta^* / \theta = 1.3$ gives $\delta^* = 9.3\ \mathrm{mm}$ and $\delta_{99} / \delta^* = 7.9$; for the laminar case $H = 2.59$ gives $\delta^* = 2.72\ \mathrm{mm}$ and $\delta_{99} / \delta^* = 2.9$. **The turbulent layer is about nine times thicker and its displacement thickness only about three and a half times larger** — and a wind tunnel's blockage correction is computed from $\delta^*$ and not from $\delta_{99}$ because $\delta^*$ is the mass deficit and $\delta_{99}$ is a convention.
+*Sanity.* The turbulent layer is so much thicker because turbulent mixing transports momentum across the layer far faster than molecular viscosity does; its $1 / 7$-power profile is **fuller** near the wall, which is why its $H$ is smaller. **The ratio $\delta_{99} / \theta$ is $7.5$ for Blasius and $10.3$ for the $1 / 7$-power layer**, and the reason the momentum thickness is the better measure of a layer's "size" is that it is the quantity the momentum integral equation evolves and the quantity that appears in $\mathrm{Re}_{\theta, t}$.
 :::
 :::
 
 ::: example Wind-tunnel blockage {#ex-blockage}
-A closed-return wind tunnel has a test section of $1.0 \times 0.8\ \mathrm{m}$ and a settling-ratio of $6:1$. The boundary layer on the four walls at the test section has $\theta = 8\ \mathrm{mm}$ and $H = 1.4$. Find the displacement-area blockage, the correction to the test-section velocity, and the wall divergence angle needed to hold the core velocity constant.
+A closed-return wind tunnel has a test section of $1.0 \times 0.8\ \mathrm{m}$ and a contraction ratio of $6:1$. The boundary layer on the four walls at the test section has $\theta = 8\ \mathrm{mm}$ and $H = 1.4$. Find the displacement-area blockage, the correction to the test-section velocity, and the wall divergence angle needed to hold the core velocity constant.
 ::: solution
 **The displacement thickness.** $\delta^* = H \theta = 1.4 \times 8 = 11.2\ \mathrm{mm}$.
 **The blocked area.** The boundary layer occupies a perimeter strip of thickness $\delta^*$ on all four walls:
@@ -209,18 +208,18 @@ $$
 $$
 \frac{\Delta U}{U} = \frac{\Delta A}{A_0 - \Delta A} = \frac{0.0403}{0.7597} = 5.3\ \%
 $$
-**The number that makes this a first-order error and not a correction.** **$5.3\ \%$ in velocity is $10.6\ \%$ in dynamic pressure and $10.6\ \%$ in every force coefficient that is not corrected.** A drag count is $10^{-4}$ in $C_D$ and a modern airliner's total is $250$ counts, so a $10\ \%$ error in $q$ is $25$ counts — **ten times the effect a laminar-flow trip study is trying to measure**. **The reason a closed-return tunnel's test section is diverged by $0.3$ to $0.5$ degrees per wall is exactly this blockage**, and the reason an open-jet test section needs a different correction entirely is that its boundary is a free surface and not a wall.
+**The number that makes this a first-order error and not a correction.** **$5.3\ \%$ in velocity is $1.053^2 - 1 = 10.9\ \%$ in dynamic pressure, and so in every force coefficient that is not corrected.** A drag count is $10^{-4}$ in $C_D$ and a modern airliner's total is of order $250$ to $300$ counts, so a $10\ \%$ error in $q$ is some $25$ counts — **far larger than many of the increments a test is run to measure**. **Closed test sections are commonly built with slightly diverging walls (a fraction of a degree) to offset this growth**, and an open-jet test section needs a different correction entirely because its boundary is a free shear layer and not a wall.
 **The divergence angle.** To hold the core velocity constant the **available** area must grow at the rate the blockage grows:
 $$
-\frac{d}{dx} \left( P \delta^{*} \right) = P \frac{d \delta^*}{dx} = 2 W \tan \alpha \quad \text{(per unit width on two walls)}
+\frac{d}{dx} \left( P \delta^{*} \right) = P \frac{d \delta^*}{dx} = 2 W \tan \alpha \quad \text{(top and bottom walls, each of width } W = 1.0\ \mathrm{m} \text{, diverging at } \alpha \text{)}
 $$
 With $d \delta^* / dx \approx \delta^* / x \approx 0.0112 / 1.0 = 0.0112$ (a rough estimate for a zero-gradient layer) and $P = 3.6$:
 $$
-\frac{d \left( \Delta A \right)}{dx} = 3.6 \times 0.0112 = 0.0403\ \mathrm{m} \text{ per metre of length}
+\frac{d \left( \Delta A \right)}{dx} = 3.6 \times 0.0112 = 0.0403\ \mathrm{m^2} \text{ per metre of length}
 $$
-**Spread over the $1.0\ \mathrm{m}$ test section this is $40\ \mathrm{mm}$ of added height, or $20\ \mathrm{mm}$ per wall — a divergence of $\tan \alpha = 0.020$, $\alpha = 1.15^{\circ}$.** **The reason real tunnels use $0.3$ to $0.5^{\circ}$ and not $1.15^{\circ}$ is that the blockage is mostly established in the settling chamber's contraction and grows only slowly through the test section**, so the required divergence is the **increment** and not the total.
-**The number that makes the settling ratio matter.** A $6:1$ contraction gives a boundary-layer thickness at the test section of about $1 / 6$ of that in the settling chamber and a free-stream turbulence of $0.05$ to $0.1\ \%$; a $3:1$ contraction gives twice the thickness and four times the turbulence. **The reason a quiet tunnel is built with a large contraction and a long settling chamber is that the boundary layer and the turbulence are both set there and cannot be fixed downstream.**
-*Sanity.* The reason $\Delta A \approx P \delta^*$ is right to first order is that the blocked area is the mass deficit divided by the core density, and the mass deficit of a perimeter strip is $\rho U_e \delta^* P$. **The second-order term $\delta^{*2}$ is $1.6\ \%$ of the first and is negligible; the term one omits in a corner — where two layers merge and the blockage is larger than $P \delta^*$ — is $5$ to $10\ \%$ of the total**, and the reason a rectangular tunnel's blockage correction is calibrated with a dummy model is that the corners are not analytically tractable.
+**Spread over the $1.0\ \mathrm{m}$ width this is $40\ \mathrm{mm}$ of added height per metre of length, or $20\ \mathrm{mm}$ per wall — a divergence of $\tan \alpha = 0.020$, $\alpha = 1.15^{\circ}$.** **This is an overestimate**: the layer did not start at the test-section entrance but far upstream, so over the test section $\delta^*$ grows only slowly ($d \delta^* / dx = 0.8\, \delta^* / x$ for a turbulent layer, with $x$ measured from its true origin), and the divergence actually needed is a fraction of this — it must match the **growth** of the blockage, not the blockage itself.
+**The number that makes the contraction ratio matter.** A contraction accelerates the flow by its area ratio — six times here — which thins the wall boundary layers and reduces the **relative** streamwise turbulence intensity, because the mean velocity rises far more than the fluctuations do. **Low-turbulence tunnels therefore combine a large contraction with screens and honeycombs in the settling chamber: the free-stream quality is set upstream and cannot be repaired in the test section.**
+*Sanity.* The reason $\Delta A \approx P \delta^*$ is right to first order is that the blocked area is the mass deficit divided by the core density, and the mass deficit of a perimeter strip is $\rho U_e \delta^* P$. **The second-order corner term $4 \delta^{*2}$ is $1.2\ \%$ of the first and is negligible here; the real corner flow — where two layers merge and secondary flows thicken the layer — is a larger effect**, which is why a rectangular tunnel's empty-section velocity is calibrated rather than computed.
 :::
 :::
 
@@ -231,7 +230,7 @@ A $42.7\ \mathrm{mm}$ golf ball is struck at $70\ \mathrm{m / s}$. Find the Reyn
 $$
 \mathrm{Re} = \frac{70 \times 0.0427}{1.509 \times 10^{- 5}} = 1.98 \times 10^5
 $$
-**The dimpled ball.** The dimples trip the boundary layer at $\mathrm{Re} \approx 4 \times 10^4$, so at $2 \times 10^5$ the layer is turbulent and separates late:
+**The dimpled ball.** The dimples bring the drag crisis down to roughly $\mathrm{Re} \approx 5 \times 10^4$, so at $2 \times 10^5$ the layer is turbulent and separates late:
 $$
 C_D \approx 0.23
 $$
@@ -240,54 +239,55 @@ $$
 C_D \approx 0.47
 $$
 **The drag ratio.** $0.47 / 0.23 = 2.04$ — **the smooth ball experiences more than twice the drag**.
-**The range.** With drag $\propto C_D V^2$ and no lift, a simple ballistic estimate gives a range proportional to $1 / \sqrt{C_D}$ at a fixed launch speed and angle:
+**The range.** Range does not scale simply with $C_D$ — it depends on the launch angle, the speed decay along the flight and, for a golf ball, strongly on the **lift** produced by backspin. Halving the drag lengthens the flight, and the dimples also help the spinning ball sustain its Magnus lift, because the turbulent layer's asymmetric, delayed separation deflects the wake downward:
 $$
-\frac{R_{\mathrm{dimpled}}}{R_{\mathrm{smooth}}} = \sqrt{\frac{0.47}{0.23}} = 1.43
+\frac{C_{D, \mathrm{smooth}}}{C_{D, \mathrm{dimpled}}} = \frac{0.47}{0.23} = 2.04
 $$
-**a $43\ \%$ increase, and the observed value for a driven ball is about $50\ \%$** — the extra coming from the dimples' lift, which is also higher because the turbulent layer separates later on the pressure surface.
+**Together these explain why a dimpled ball is commonly said to fly roughly twice as far as an otherwise identical smooth one.**
 **The number that makes the dimples a Reynolds-number device and not a turbulence device.** The dimple depth is $0.25\ \mathrm{mm}$, and the roughness Reynolds number is
 $$
 k_s^+ = \frac{0.00025 \times 70 \sqrt{0.02 / 2}}{1.509 \times 10^{- 5}} \approx 116 \gg 70
 $$
-**fully rough**, which is exactly what is wanted — the trip works at every speed a human can swing. **The number that makes a smooth ball's drive shorter than a dimpled one's by fifty metres is the same $k_s^+$**, and the reason a **table-tennis** ball is smooth is that at $\mathrm{Re} \approx 5 \times 10^4$ the dimples would be in the **hydraulically smooth** regime and would only add skin friction: $k_s^+ \approx 3$ at $20\ \mathrm{m / s}$ for a $40\ \mathrm{mm}$ ball, and the trip would not work.
-*Sanity.* The reason the crisis is a factor of four on a sphere and only a factor of four on a cylinder is that both are set by the separation point moving from $82^\circ$ to $120^\circ$, and the base pressure coefficient rises from $- 1.2$ to $- 0.6$. **The reason a smooth sphere's $C_D$ at $\mathrm{Re} = 10^6$ is $0.1$ and a rough sphere's at the same $\mathrm{Re}$ is $0.2$ is that over-tripping moves the separation point forward again** — and the reason a golf ball's dimple pattern is an optimisation and not a simple trip is that the optimum is a balance between tripping early enough and not creating so much skin friction that the benefit is lost.
+**large compared with the viscous sublayer**, so the dimples disturb the layer strongly at driving speeds — the trip is effective over the whole range of speeds a golfer produces (this is an order-of-magnitude estimate; a dimple is not a sand-grain roughness). A **table-tennis** ball, by contrast, is smooth by the rules of the game, and at its $\mathrm{Re} \approx 5 \times 10^4$ it flies below the smooth-sphere crisis.
+*Sanity.* On both a sphere and a cylinder the crisis is a factor of about four in $C_D$, because in both the separation point moves from roughly $80^\circ$ to $120^\circ$ and the base pressure rises sharply as the wake narrows. **The reason a smooth sphere's $C_D$ at $\mathrm{Re} = 10^6$ is $0.1$ and a rough sphere's at the same $\mathrm{Re}$ is $0.2$ is that over-tripping moves the separation point forward again** — and the reason a golf ball's dimple pattern is an optimisation and not a simple trip is that the optimum is a balance between tripping early enough and not creating so much skin friction that the benefit is lost.
 :::
 :::
 
 ::: example Streamlining {#ex-streamline}
 Find the optimum fineness ratio of a body of revolution of length $L$ and maximum diameter $D$ moving through water at $\mathrm{Re}_L = 10^8$, and compare its drag with that of a sphere of the same displacement.
 ::: solution
-**The two drags.** For a slender body of revolution with a turbulent boundary layer, the total drag is the sum of a friction drag that grows with wetted area and a pressure drag that grows with bluntness:
+**The two drags.** For a streamlined body of revolution with a turbulent boundary layer, the total drag is the sum of a friction drag that grows with wetted area and a pressure drag that grows with bluntness. **Hoerner**'s empirical fit, referred to the maximum cross-section $S_0 = \pi D^2 / 4$, is
 $$
-C_{D, \mathrm{fric}} = \bar{C}_f \frac{S}{S_0}, \qquad
-C_{D, \mathrm{press}} \approx \frac{2.17}{\left( L / D \right)^{2.4}} \quad \text{(empirical, } 2 < L / D < 10 \text{)}
+C_D = \bar{C}_f \left[ 3 \frac{L}{D} + 4.5 \left( \frac{D}{L} \right)^{1 / 2} + 21 \left( \frac{D}{L} \right)^2 \right]
 $$
-referred to the maximum cross-section $S_0 = \pi D^2 / 4$.
-**The numbers.** With $\bar{C}_f = 0.455 / \left( \log_{10} 10^8 \right)^{2.58} = 0.455 / 4{,}152 = 1.10 \times 10^{- 3}$ and $S / S_0 \approx 1.2 \left( L / D \right)$ for a prolate shape:
+where the first term is skin friction on the wetted area, the second the extra friction caused by the supervelocity over the body, and the third the pressure (form) drag.
+**The numbers.** With $\bar{C}_f = 0.455 / \left( \log_{10} 10^8 \right)^{2.58} = 0.455 / 213.8 = 2.13 \times 10^{- 3}$ (held fixed for simplicity). Because the comparison is at **fixed displacement**, the fair coefficient is the one based on $\mathrm{Vol}^{2/3}$; for a volume of about $\left( \pi / 6 \right) D^2 L$, $C_{D, V} = C_D \left( \pi / 4 \right) / \left[ \left( \pi / 6 \right) \left( L / D \right) \right]^{2/3} = 1.209\, C_D \left( L / D \right)^{- 2/3}$:
 $$
-\begin{array}{c c c c}
-L / D & C_{D, \mathrm{fric}} & C_{D, \mathrm{press}} & C_{D, \mathrm{total}} \\
-2 & 2.64 \times 10^{- 3} & 0.411 & 0.414 \quad \text{— blunt} \\
-4 & 5.28 \times 10^{- 3} & 0.078 & 0.083 \\
-6 & 7.92 \times 10^{- 3} & 0.029 & 0.037 \\
-8 & 1.06 \times 10^{- 2} & 0.016 & 0.027 \\
-11 & 1.45 \times 10^{- 2} & 0.007 & 0.021 \quad \text{— the minimum} \\
-14 & 1.85 \times 10^{- 2} & 0.004 & 0.022 \\
-20 & 2.64 \times 10^{- 2} & 0.002 & 0.028 \quad \text{— friction-dominated}
+\begin{array}{c c c c c}
+L / D & \text{friction terms} & \text{pressure term} & C_D \left( S_0 \right) & C_{D, V} \\
+2 & 0.0195 & 0.0112 & 0.0307 & 0.0234 \quad \text{— blunt} \\
+3 & 0.0247 & 0.0050 & 0.0297 & 0.0172 \\
+4 & 0.0303 & 0.0028 & 0.0331 & 0.0159 \\
+5 & 0.0362 & 0.0018 & 0.0380 & 0.0157 \quad \text{— the minimum} \\
+6 & 0.0422 & 0.0012 & 0.0435 & 0.0159 \\
+8 & 0.0545 & 0.0007 & 0.0552 & 0.0167 \\
+14 & 0.0919 & 0.0002 & 0.0922 & 0.0192 \\
+20 & 0.1298 & 0.0001 & 0.1300 & 0.0213 \quad \text{— friction-dominated}
 \end{array}
 $$
-**The optimum is at $L / D \approx 11$** for a body whose volume is held fixed and whose wetted area grows linearly with $L / D$.
-**The number that makes a submarine's hull a compromise and not an optimum.** At $L / D = 11$ the drag coefficient is $0.021$ against a sphere's $0.47$ — **a factor of twenty-two** — but the pressure drag is only $32\ \%$ of the total at that fineness ratio, so **a further improvement is a skin-friction problem and not a shape problem**. **The reason a submarine's hull is $L / D \approx 8$ and not $11$ is that the pressure hull must carry the sea pressure, the machinery must fit inside, and the drag penalty of the shorter form is $0.027 / 0.021 = 1.26$ — a $26\ \%$ increase that buys a boat that can be built.**
-**The number that makes a torpedo's nose shape a $10\ \%$ item.** The empirical pressure-drag law above is for an **ogival** nose; a **von Kármán** ogive, whose profile is the body of revolution of minimum pressure drag for a given length and diameter, reduces the pressure drag by a further $15$ to $20\ \%$ at $L / D = 6$. **The reason the difference is worth computing at all is that at $L / D = 6$ the pressure drag is $79\ \%$ of the total**, so a $20\ \%$ improvement in it is a $16\ \%$ improvement in the whole.
-*Sanity.* The reason the optimum exists is that friction grows as $L$ while pressure drag falls as $L^{- 2.4}$, so the sum has a minimum; **the exponent $- 2.4$ is what makes the minimum shallow and broad** — between $L / D = 8$ and $L / D = 20$ the total drag changes by only $30\ \%$. **The reason a real design is therefore free to choose a shorter form is that the drag curve is flat near its minimum, and the reason the same argument does not apply to an airfoil's thickness is that the airfoil's pressure drag is a separation and not a wake phenomenon, and its curve is not flat at all.**
+**The optimum is at $L / D \approx 5$ for a fixed volume** (on a frontal-area basis the minimum is near $L / D \approx 2.6$, which is the right question only when the cross-section, not the volume, is what is fixed).
+**The number that makes a submarine's hull a compromise and not an optimum.** A sphere of the same volume has a diameter $\left( L / D \right)^{1/3} = 1.71$ times the body's, so at this scale it is far above its drag crisis, with $C_D \approx 0.2$ and $C_{D, V} = 0.24$ — **about fifteen times the streamlined body's $0.0157$**. At the optimum the pressure term is under $5\ \%$ of the total, so **a further improvement is a skin-friction problem and not a shape problem**. **Submarine hulls are often somewhat longer than the optimum because a long parallel midbody is easier to build and fit out, and the penalty is small: at $L / D = 8$ the drag is only $0.0167 / 0.0157 = 1.06$ times the minimum.**
+**The number that makes the tail more important than the nose.** In subsonic flow a smoothly rounded nose costs almost nothing; the pressure drag comes mainly from the **afterbody**, where the adverse pressure gradient thickens the layer and can separate it, so it is the tail-cone angle that a designer watches. (The von Kármán ogive, often quoted as a "minimum-drag" nose, minimises **supersonic wave drag** and is irrelevant here.) **Even at $L / D = 3$ the pressure term is only $17\ \%$ of the total**, so beyond avoiding separation, streamlining is about wetted area.
+*Sanity.* The optimum exists because friction grows as $L / D$ while pressure drag falls as $\left( D / L \right)^2$, so the sum has a minimum; **the minimum is shallow and broad** — between $L / D = 4$ and $L / D = 8$ the drag at fixed volume changes by under $7\ \%$. **A real design is therefore free to choose its proportions for structural, internal-arrangement or handling reasons, at little cost in drag, provided the afterbody stays attached.**
 :::
 :::
 
 ::: history
-**Prandtl**'s 1904 Heidelberg note *Über Flüssigkeitsbewegung bei sehr kleiner Reibung* is three pages and contains no solution — only the equations and the argument; **Blasius** published the similarity solution in **1908** as a *Festschrift* contribution to **Münchow**, and the paper's title translates as "top and friction resistance in fluids of small viscosity", and it was written by a **PhD student** who never held an academic post. **von Kármán**'s integral method is of **1921**, from the same Göttingen institute, and was suggested to him by **Prandtl** as a way of getting an engineering answer without solving the equations; **Pohlhausen**'s quartic-profile version is of **1921** too. **Falkner** and **Skan** published their table in **1931** in a report on the drag of aerofoils at the **National Physical Laboratory**, and the separation eigenvalue $m = - 0.0904$ is the number every stability lecture quotes. **Tollmien** (**1929**) and **Schlichting** (**1933**) found the instability of the laminar layer; **Heisenberg** published a mixing-length theory of the turbulent layer in **1936**; **Theodorsen** and **Meksyn** produced the early turbulent friction laws; and **the experimental confirmation of T–S waves had to wait until Schubauer and Skramstad's 1947 NACA report, which used a $50$-foot low-turbulence tunnel built specifically for the purpose and confirmed the theory to within the measurement error — eighteen years of theory validated in one summer of experiment.** **The drag crisis on spheres was measured by Lord Rayleigh in 1911 and explained as a transition effect by Goldstein in 1929**; **the golf ball's dimples were patented by Gilmour in 1932 and the physics was not published until the 1960s.** **The $e^N$ method is due to van Ingen in 1956 and to Morkovin in 1969, and it remains the standard production tool for transition prediction sixty years later, with a critical $N$ that nobody has been able to derive from first principles.**
+**Prandtl**'s 1904 Heidelberg paper *Über Flüssigkeitsbewegung bei sehr kleiner Reibung* is only a few pages long and contains no complete solution — the equations, the argument and some sketches and photographs of separation; his student **Blasius** published the flat-plate similarity solution in his **1908** dissertation, "Grenzschichten in Flüssigkeiten mit kleiner Reibung". **von Kármán**'s momentum integral and **Pohlhausen**'s approximate profile method both appeared in **1921**, and **Falkner** and **Skan**'s wedge-flow similarity solutions in **1930–1931**; the separation value $\beta = -0.1988$ came from **Hartree**'s more accurate computations of **1937**. **Tollmien** (**1929**) and **Schlichting** (**1933**) worked out the linear instability of the laminar layer, but the waves were not convincingly observed until **Schubauer** and **Skramstad**'s experiments in a specially quietened low-turbulence tunnel at the US National Bureau of Standards, published by NACA after the war. **The drag crisis on spheres was measured by Eiffel in 1912, and Prandtl showed in 1914 that a thin trip wire produced the same drop at lower speed — proving it a boundary-layer transition effect**; the English engineer **William Taylor** applied for a patent on a dimpled golf-ball pattern in **1905**. **The $e^N$ method was proposed independently by Smith and Gamberoni and by van Ingen in 1956, and it remains a standard engineering tool for transition prediction, with a critical $N$ that is calibrated against experiment rather than derived from first principles.**
 :::
 
 ::: quiz
+A golf ball is dimpled to reduce its drag, yet aircraft wings are kept as smooth as possible. Why does roughening the surface reduce the drag of a sphere but not of a wing?
 
 - [ ] Dimples generate turbulence, which increases skin friction, so they cannot reduce drag
 - [x] On a bluff body the drag is pressure drag from a separated wake; a turbulent boundary layer separates later, and the wake it leaves is narrower by far more than the extra skin friction costs. On a wing the boundary layer is attached over nearly the whole chord, so there is no wake to shrink and the skin-friction penalty is not repaid
@@ -295,23 +295,23 @@ $$
 - [ ] Dimples reduce the wetted area of the ball
 
 ::: solution
-**The mechanism is separation, not friction.** A smooth sphere's drag coefficient falls from about $0.47$ to roughly $0.1$ at a Reynolds number near $3 \times 10^{ 5 }$ — the **drag crisis** — because the boundary layer transitions to turbulence, carries more momentum to the wall, and stays attached to about $140^{ \circ }$ instead of $82^{ \circ }$. A golf ball is deliberately operated above that transition, and the dimples also *trip* the layer at a lower Reynolds number than natural transition so the effect is reliable at the ball's actual speed. **A wing is the opposite problem: at $10^{ 7 }$ the boundary layer is turbulent whether you like it or not, so there is nothing to trip, and the entire technology of laminar-flow airfoils is the art of keeping the layer *laminar* for as long as possible because laminar skin friction is roughly a third of turbulent.** The same logic explains why a bicycle helmet is smooth, a golf ball is dimpled, a cricket ball has one polished side and one rough side, and why the "turbulators" sold for car fuel tanks do something real but small: they are tripping a layer that would have separated anyway.
+**The mechanism is separation, not friction.** A smooth sphere's drag coefficient falls from about $0.47$ to roughly $0.1$ at a Reynolds number near $3 \times 10^{ 5 }$ — the **drag crisis** — because the boundary layer transitions to turbulence, carries more momentum to the wall, and stays attached to about $120^{ \circ }$ instead of about $80^{ \circ }$. A golf ball is deliberately operated above that transition, and the dimples also *trip* the layer at a lower Reynolds number than natural transition so the effect is reliable at the ball's actual speed. **A wing is the opposite problem: at $10^{ 7 }$ the boundary layer is turbulent whether you like it or not, so there is nothing to trip, and the entire technology of laminar-flow airfoils is the art of keeping the layer *laminar* for as long as possible because laminar skin friction at $\mathrm{Re} = 10^7$ is only about a seventh of turbulent.** The same logic explains why a golf ball is dimpled and why a cricket ball with one polished side and one rough side swings: the two sides' layers separate at different points, and the asymmetric wake pushes the ball sideways.
 :::
 :::
 
 ## Where this leads
 
-The pressure drag computed here is the input to [[fluid-mechanics/compressible-flow]]'s wave drag and to [[aerodynamics]]' drag polar; the separation criterion is the same one that limits a compressor diffuser and a [[fluid-mechanics/dimensional-analysis]]-nondimensionalised wind-tunnel wall; the transition physics is the reason [[aerodynamics]]' laminar-flow airfoils and [[aerodynamics]]' high-lift systems are designed with stability codes; and the skin-friction law is the whole of a ship's resistance prediction and half of [[flight-mechanics]]' range equation.
+The pressure drag computed here is the input to [[fluid-mechanics/compressible-flow]]'s wave drag and to [[aerodynamics]]' drag polar; the separation criterion is the same one that limits a compressor diffuser and a [[fluid-mechanics/dimensional-analysis]]-nondimensionalised wind-tunnel wall; the transition physics is the reason [[aerodynamics]]' laminar-flow airfoils and [[aerodynamics]]' high-lift systems are designed with stability codes; and the skin-friction law is the backbone of a ship's resistance prediction and a large part of the drag that enters [[flight-mechanics]]' range equation.
 
 ::: summary
 - At high Reynolds number viscosity survives only in a layer of thickness $\delta / L \sim \mathrm{Re}^{-1/2}$; the boundary-layer equations are the balance of inertia, pressure gradient and wall-normal diffusion.
-- $\delta^*$ is the mass deficit, $\theta$ the momentum deficit, and $H = \delta^*/\theta$ is the separation indicator: $2.59$ laminar, $1.35$ turbulent, $3.5$ separating.
+- $\delta^*$ is the mass deficit, $\theta$ the momentum deficit, and $H = \delta^*/\theta$ is the separation indicator: $2.59$ for Blasius, about $1.3$ for a healthy turbulent layer, rising past about $3.5$ (laminar) or $2$ (turbulent) near separation.
 - The von Kármán integral equation contains the whole of separation physics in its pressure-gradient term; drop it and you predict no separation ever.
 - Separation is $\tau_w = 0$; it sets the base pressure and therefore the form drag of every bluff body.
 - The drag crisis is a transition effect: a factor of four on a sphere, and the reason a golf ball has dimples.
-- Transition is not a property of the flow alone: $\mathrm{Re}_{\theta,t}$ ranges from 300 to 1,400 with the free-stream turbulence.
+- Transition is not a property of the flow alone: $\mathrm{Re}_{\theta,t}$ ranges from a few hundred to over 1,000 with the free-stream turbulence.
 - Flat-plate drag: $\bar C_f = 1.328/\sqrt{\mathrm{Re}}$ laminar, $0.074/\mathrm{Re}^{0.2}$ turbulent, minus $A/\mathrm{Re}$ for natural transition.
-- The boundary layer blocks the flow: $\Delta A = P\delta^*$, and in a wind tunnel that is a $10\%$ error in every force coefficient.
+- The boundary layer blocks the flow: $\Delta A = P\delta^*$, and in a small wind tunnel that can mean a $10\%$ error in every uncorrected force coefficient.
 :::
 
 ## Exercises
@@ -373,19 +373,19 @@ $$
 \quad \Rightarrow \quad \left( \frac{x}{c} \right)^{0.8} = \frac{500}{6 \times 10^6 \times 0.0012} = 0.0694
 $$
 $$
-\frac{x}{c} = 0.0694^{1 / 0.8} = 0.0365
+\frac{x}{c} = 0.0694^{1 / 0.8} = 0.036
 $$
-**Transition at $3.7\ \%$ chord** — and the reason a $\mathrm{Re}_\theta$ criterion is used rather than a $\mathrm{Re}_x$ criterion is that $\theta$ carries the pressure-gradient history of the layer, so the same critical value applies on a suction peak and on a aft-loaded section. **At $3.7\ \%$ chord the laminar benefit is worth only about $3\ \%$ of the drag**, and the reason the section is nevertheless a good one is that its pressure distribution is favourable over the first $40\ \%$ and the transition criterion is optimistic in a quiet tunnel and pessimistic in flight.
+**Transition at about $3.6\ \%$ chord**, i.e. $x_t = 0.036 \times 1.5 = 0.053\ \mathrm{m}$ — a $\mathrm{Re}_\theta$ criterion is used rather than a $\mathrm{Re}_x$ criterion because $\theta$ carries some of the history of the layer, although in a strong pressure gradient the critical value itself shifts and a stability method is needed. **With transition this close to the leading edge the laminar run, and so the laminar drag benefit, is small**; a laminar-flow section is designed to hold a favourable pressure gradient far aft precisely to push this point back.
 :::
 :::
 
-::: exercise Fineness ratio {level=2}
-For the body-of-revolution drag of the worked example, give the ratio of the total drag at $L/D = 6$ to that at $L/D = 14$, and state which term dominates at each.
+::: exercise Fineness ratio {level=2 check="0.83"}
+For the body-of-revolution drag of the worked example, give the ratio of the drag at $L/D = 6$ to that at $L/D = 14$ for the same displaced volume, and state which term dominates at each.
 ::: solution
 $$
-\frac{C_{D, \mathrm{total}} \left( 6 \right)}{C_{D, \mathrm{total}} \left( 11 \right)} = \frac{0.037}{0.021} = 1.76
+\frac{C_{D, V} \left( 6 \right)}{C_{D, V} \left( 14 \right)} = \frac{0.0159}{0.0192} = 0.83
 $$
-**At $L / D = 6$ the pressure drag is $79\ \%$ of the total; at $L / D = 11$ it is $32\ \%$.** The reason the ratio is not larger is that the friction drag has grown by a factor of $1.8$ between the two, and the reason a designer trades the $2.84$ for structural volume is that the pressure-drag term is a function of the **nose** shape and can be improved by $20\ \%$ with a von Kármán ogive, whereas the friction term can only be improved by $6$ to $8\ \%$ with riblets or by laminar-flow control, which is not available in water at this Reynolds number.
+**Friction dominates at both: the pressure term is $0.0012 / 0.0435 = 2.9\ \%$ of the total at $L / D = 6$ and $0.0002 / 0.0922 = 0.25\ \%$ at $L / D = 14$.** The slender body has about $20\ \%$ more drag at the same volume because its wetted area is larger, and since the pressure drag is already almost gone, the only remaining lever is the skin friction — wetted area, surface finish, or (rarely practical in water at this Reynolds number) laminar flow.
 :::
 :::
 
@@ -434,37 +434,37 @@ $$
 ::: exercise Design {level=3}
 Design the boundary-layer-control system for the **high-lift wing of a regional airliner** whose maximum lift coefficient must rise from $2.4$ to $3.0$ without increasing the span, and state the method, the sizing, the failure modes and the acceptance tests.
 ::: solution
-**The diagnosis.** At $C_L = 2.4$ a triple-slotted flap wing's outboard section is at a **trailing-edge** separation; the section maximum is limited by the flap's pressure side, and the wing's spanwise loading limits the lift at the tip by **crossflow** separation. **The three limits need three different devices.**
-**The device selection.**
+**The diagnosis.** At $C_L = 2.4$ a single-slotted flap wing's outboard section is at a **trailing-edge** separation; the section maximum is limited by the flap's pressure side, and the wing's spanwise loading limits the lift at the tip by **crossflow** separation. **The three limits need three different devices.**
+**The device selection** (the increments are illustrative orders of magnitude, not additive design values):
 $$
 \begin{array}{l l c l}
-\text{Leading-edge slat} & \text{re-energises the suction peak, delays T–S separation} & 0.35 & \text{lift increment} \\
-\text{Trailing-edge flap, double-slotted} & \text{increases camber and } C_{\mu} & 0.55 & \\
+\text{Leading-edge slat} & \text{relieves the main element's suction peak, delays leading-edge stall} & 0.35 & \text{lift increment} \\
+\text{Trailing-edge flap, double-slotted} & \text{increases camber and effective chord} & 0.55 & \\
 \text{Vortex generators} & \text{mix high-energy fluid into the crossflow layer} & 0.08 & \\
 \text{Boundary-layer suction on the flap cove} & \text{removes the low-energy fluid directly} & 0.12 & \\
-\text{Gurney flap} & \text{trips the wake, increases base suction} & 0.06 & \text{drag penalty}
+\text{Gurney flap} & \text{small trailing-edge tab; adds effective camber} & 0.06 & \text{drag penalty}
 \end{array}
 $$
-**The chosen scheme:** a **fixed** leading-edge slat (no new mechanism, no new certification item), a **double-slotted** trailing-edge flap with $60\%$ chord and $35^\circ$ deflection, **vortex generators** on the outboard upper surface, and **no suction** — the suction system's $12\ \%$ increment does not pay for its bleed-air cost, its ice sensitivity and its maintenance.
+**The chosen scheme:** a **fixed** leading-edge slat (no new mechanism, no new certification item), a **double-slotted** trailing-edge flap of about $30\%$ chord at $35^\circ$ deflection, **vortex generators** on the outboard upper surface, and **no suction** — the suction system's $0.12$ increment does not pay for its bleed-air cost, its ice sensitivity and its maintenance.
 **The vortex-generator sizing.** A $\mathrm{VG}$ of height $h$ should be about **half the incoming boundary-layer thickness**:
 $$
-\delta \left( x = 0.6 c \right) \approx 0.37 c \mathrm{Re}_c^{- 0.2} = 0.37 \times 3.2 \times \left( 8 \times 10^6 \right)^{- 0.2} = 0.0191\ \mathrm{m}
-\qquad \Rightarrow \qquad h = 9.5\ \mathrm{mm}
+\delta \left( x = 0.6 c \right) \approx 0.37\, x\, \mathrm{Re}_x^{- 0.2} = 0.37 \times 1.92 \times \left( 4.8 \times 10^6 \right)^{- 0.2} = 0.033\ \mathrm{m}
+\qquad \Rightarrow \qquad h \approx 16\ \mathrm{mm}
 $$
-**A rectangular $\mathrm{VG}$ of $9.5\ \mathrm{mm}$ height, $19\ \mathrm{mm}$ chord, at $18^\circ$ incidence, spaced $60\ \mathrm{mm}$ apart** — a $\mathrm{VG}$-to-height spacing ratio of $6.3$, in the recommended $5$ to $10$ band.
-**The number that makes the VG's cost real.** Each $\mathrm{VG}$ produces a parasite drag of about $0.5$ counts and the array of $48$ per wing costs **$24$ counts in cruise** against a lift increment of $0.08$ at take-off. **The reason they are nevertheless fitted is that the $0.08$ buys $600\ \mathrm{kg}$ of take-off weight in a shorter field, and the $24$ counts cost $0.4\ \%$ in cruise fuel** — and the reason the trade is done per mission and not per airframe is that a regional aircraft's sector length distribution is bimodal.
+(for a $3.2\ \mathrm{m}$ chord at $\mathrm{Re}_c = 8 \times 10^6$; this is the zero-pressure-gradient estimate, and the real layer in the adverse gradient ahead of the stall is thicker). **A rectangular $\mathrm{VG}$ of $16\ \mathrm{mm}$ height, $32\ \mathrm{mm}$ chord, at $18^\circ$ incidence, spaced $100\ \mathrm{mm}$ apart** — a spacing-to-height ratio of about $6$, within the commonly used range.
+**The number that makes the VG's cost real.** Each $\mathrm{VG}$ adds a little parasite drag, and an array of a few dozen per wing can cost several drag counts in cruise against a lift increment of $0.08$ at take-off and landing. **Whether they are fitted is a trade between field performance and cruise fuel**, and it must be made with the airline's actual mission mix, not a single design point.
 **The slat cove.** A fixed slat with a gap of $1.5\ \mathrm{mm}$ and an overlap of $3\ \mathrm{mm}$ accelerates the flow through the cove, blowing high-energy air onto the main element's suction peak:
 $$
 \frac{U_{\mathrm{slat\, exit}}}{U_{\infty}} \approx 1.6 \quad \text{at } C_L = 2.4
 $$
-**The number that makes the slat cove a noise source.** The shear layer at the slat exit is the dominant airframe noise source on approach at $\mathrm{Re} > 10^7$, and the reason a modern slat has a **porous** or **serrated** exit lip is that the noise scales as $U^5$ in this regime and a $20\ \%$ velocity reduction is a $2\ \mathrm{dB}$ gain.
+**The number that makes the slat cove a noise source.** The shear layer at the slat exit is one of the main airframe noise sources on approach, and slat-noise treatments (cove fillers, serrated or porous edges) are researched because the noise scales roughly as $U^5$: a $20\ \%$ reduction in the local velocity is worth $50 \log_{10} 0.8 \approx 5\ \mathrm{dB}$.
 **The failure modes.**
 $$
 \begin{array}{l l}
 \text{Insect contamination of the } \mathrm{VGs} & \text{loss of the } 0.08 \text{ increment; inspected at every } A \text{ check} \\
-\text{Ice in the slat cove} & \text{the } 1.5\ \mathrm{mm} \text{ gap freezes; anti-ice required, and this drove the fixed-slat choice} \\
-\text{Flap-track fairing wear} & \text{a } 1\ \mathrm{mm} \text{ step costs } 4 \text{ counts} \\
-\text{Seal degradation at the flap nose} & \text{the through-gap leakage is } 30\ \% \text{ of the high-lift drag} \\
+\text{Ice in the slat cove} & \text{the } 1.5\ \mathrm{mm} \text{ gap can ice up; anti-ice protection required} \\
+\text{Flap-track fairing wear} & \text{steps and gaps add drag counts; inspect against limits} \\
+\text{Seal degradation at the flap nose} & \text{through-gap leakage degrades the flap's lift and drag} \\
 \text{VG detachment} & \text{a foreign-damage item; a } \mathrm{VG} \text{ must not be able to enter an engine}
 \end{array}
 $$
@@ -479,7 +479,7 @@ $$
 \text{Contamination} & C_{L,\max} \text{ re-measured with artificial insect and with ice, and the degradation reported}
 \end{array}
 $$
-**The four clauses that protect the buyer.** **"THE HIGH-LIFT SYSTEM'S MAXIMUM LIFT COEFFICIENT SHALL BE DEMONSTRATED AT FLIGHT REYNOLDS NUMBER AND FLIGHT TURBULENCE LEVEL, AND THE TEST REYNOLDS NUMBER AND ITS CORRECTION SHALL BE REPORTED."** **"THE DRAG PENALTY OF EVERY VORTEX GENERATOR ARRAY SHALL BE REPORTED IN DRAG COUNTS AT THE CRUISE CONDITION AND NOT ONLY AS A LIFT INCREMENT."** **"THE SYSTEM'S SENSITIVITY TO INSECT CONTAMINATION, ICE AND SEAL WEAR SHALL BE QUANTIFIED AND THE MAINTENANCE INTERVAL SET FROM THE MEASURED DEGRADATION RATE."** **"THE STALL MUST BE A WING-ROOT STALL WITH AT LEAST TEN DEGREES OF BUFFER BEFORE ANY CONTROL-SURFACE EFFECTIVENESS IS LOST."**
+**The four clauses that protect the buyer.** **"THE HIGH-LIFT SYSTEM'S MAXIMUM LIFT COEFFICIENT SHALL BE DEMONSTRATED AT FLIGHT REYNOLDS NUMBER AND FLIGHT TURBULENCE LEVEL, AND THE TEST REYNOLDS NUMBER AND ITS CORRECTION SHALL BE REPORTED."** **"THE DRAG PENALTY OF EVERY VORTEX GENERATOR ARRAY SHALL BE REPORTED IN DRAG COUNTS AT THE CRUISE CONDITION AND NOT ONLY AS A LIFT INCREMENT."** **"THE SYSTEM'S SENSITIVITY TO INSECT CONTAMINATION, ICE AND SEAL WEAR SHALL BE QUANTIFIED AND THE MAINTENANCE INTERVAL SET FROM THE MEASURED DEGRADATION RATE."** **"THE STALL SHALL BEGIN AT THE WING ROOT, WITH ADEQUATE STALL WARNING AND AILERON EFFECTIVENESS RETAINED THROUGH THE STALL."**
 *Design comment.* The general rule is that **every high-lift device is a boundary-layer-control device, and its benefit is a delay of separation while its cost is a drag and a maintenance item** — which is why the modern trend is toward **fewer, simpler** devices with better understood physics rather than more devices with better performance, and why the certification requirement that matters is the contaminated-airframe clause and not the clean-airframe $C_{L,\max}$.
 :::
 :::

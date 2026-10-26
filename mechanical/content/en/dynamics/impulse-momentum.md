@@ -51,7 +51,7 @@ Two consequences follow immediately. The loss depends only on the **relative** s
 :::
 
 ::: example Ballistic pendulum {#ex-ballistic}
-A $10\ \mathrm{g}$ bullet is fired into a $4\ \mathrm{kg}$ block resting on a $30^{\circ}$ chute and becomes embedded. The block slides $600\ \mathrm{mm}$ up the chute before stopping, with $\mu_k = 0.25$. Find the bullet's speed.
+A $10\ \mathrm{g}$ bullet travelling horizontally strikes a $4\ \mathrm{kg}$ block resting on a $30^{\circ}$ chute and becomes embedded. The block slides $600\ \mathrm{mm}$ up the chute before stopping, with $\mu_k = 0.25$. Find the bullet's speed.
 ::: solution
 **Phase 1 — impact, momentum along the chute.** The normal impulse and the component of weight along the chute are both negligible over the few milliseconds of impact:
 $$
@@ -67,11 +67,11 @@ V = \sqrt{2 a s} = \sqrt{2 \times 7.03 \times 0.6} = 2.90\ \mathrm{m / s}.
 $$
 **Back to phase 1:**
 $$
-u = \frac{\left( 4.01 \right) \times 2.898}{0.01 \times \cos 30^{\circ}} = 1340\ \mathrm{m / s}.
+u = \frac{\left( 4.01 \right) \times 2.904}{0.01 \times \cos 30^{\circ}} = 1345\ \mathrm{m / s}.
 $$
-*Check.* The bullet's initial kinetic energy is $\tfrac{1}{2} \times 0.01 \times 1340^{2} = 8980\ \mathrm{J}$, the block-bullet system after impact has $\tfrac{1}{2} \times 4.01 \times 2.898^{2} = 16.9\ \mathrm{J}$ — an efficiency of $0.19$ per cent. That is not an error: a perfectly plastic impact between a light fast body and a heavy slow one destroys almost all the energy, since the loss is $\tfrac{1}{2} \mu \left( u_1 - u_2 \right)^{2}$ with $\mu \approx m_b$. $\checkmark$
+*Check.* The bullet's initial kinetic energy is $\tfrac{1}{2} \times 0.01 \times 1345^{2} = 9040\ \mathrm{J}$, the block-bullet system after impact has $\tfrac{1}{2} \times 4.01 \times 2.904^{2} = 16.9\ \mathrm{J}$ — an efficiency of $0.19$ per cent. That is not an error: a perfectly plastic impact between a light fast body and a heavy slow one destroys almost all the energy, since the loss is $\tfrac{1}{2} \mu \left( u_1 - u_2 \right)^{2}$ with $\mu \approx m_b$. $\checkmark$
 
-*Sanity.* The $99.8$ per cent energy loss is exactly why a **ballistic pendulum** works as a measuring instrument and why it was the standard method of measuring muzzle velocity from Robins's *New Principles of Gunnery* in 1742 until electronic chronographs arrived in the 1930s: the velocity follows from momentum, which is conserved, and is quite independent of how much energy is destroyed. Any attempt to do the same measurement by energy would require knowing the deformation work of the bullet in the block, which is precisely what cannot be measured. That separation — momentum survives where energy does not — is the practical reason the two principles are taught separately.
+*Sanity.* The $99.8$ per cent energy loss is exactly why a **ballistic pendulum** works as a measuring instrument and why it was the standard method of measuring projectile velocity from Robins's *New Principles of Gunnery* of 1742 until electric chronographs displaced it in the nineteenth century: the velocity follows from momentum, which is conserved, and is quite independent of how much energy is destroyed. Any attempt to do the same measurement by energy would require knowing the deformation work of the bullet in the block, which is precisely what cannot be measured. That separation — momentum survives where energy does not — is the practical reason the two principles are taught separately.
 :::
 :::
 
@@ -138,7 +138,7 @@ $$
 U = \Delta T = \tfrac{1}{2} m \left( v_2^{2} - v_1^{2} \right)
 = \tfrac{1}{2} \times 0.5 \times \left( 2.40^{2} - 1.20^{2} \right) = 1.08\ \mathrm{J}.
 $$
-*Check.* Halving the radius quadruples $\omega$, quarters the period, doubles the speed and quadruples the kinetic energy — and the hand supplies exactly the fourfold increase, $1.08\ \mathrm{J}$ against the initial $0.36\ \mathrm{J}$. $\checkmark$
+*Check.* Halving the radius quadruples $\omega$, quarters the period, doubles the speed and quadruples the kinetic energy — and the hand supplies exactly the difference, $1.08\ \mathrm{J}$, three times the initial $0.36\ \mathrm{J}$. $\checkmark$
 
 *Sanity.* Angular momentum is conserved while **energy is not**, and the difference is the work of the pulling force, which acts along the very displacement it causes. This is the mechanism of the contracting figure-skater, of the tornado that spins up as its radius collapses, of a collapsing gas cloud forming a disc, and of a diver tightening on a somersault — in every case $\omega \propto 1 / r^{2}$, so a modest reduction in radius produces a large increase in spin rate, and the energy to do it comes from the muscles that pull the mass inward. It is also why a collapsing cloud **must** flatten: angular momentum cannot be shed, so the collapse proceeds perpendicular to the axis and not along it, which is the origin of every disc in astronomy.
 :::
@@ -170,7 +170,7 @@ $$
 \Delta T = \tfrac{1}{2} \times 8571 \times 2^{2} = 17\,143\ \mathrm{J}. \checkmark
 $$
 
-*Sanity.* The relative speed is only $2\ \mathrm{m / s}$, a brisk walk, and the destroyed energy is enough to lift the heavier wagon $87\ \mathrm{mm}$ vertically. That is why shunting is dangerous and why a coupler is a fatigue-critical component: $143\ \mathrm{kN}$ is a **mean**, and a rigid coupler with no cushioning produces a peak several times higher and a stress wave that reflects from the draft sill and cracks the casting. The whole of railway draft-gear design is the reduction of that peak by stretching the $17\ \mathrm{kJ}$ over the longest stroke the clearance allows — which is also why modern freight wagons have $450\ \mathrm{mm}$ of buffer stroke where nineteenth-century ones had $60$.
+*Sanity.* The relative speed is only $2\ \mathrm{m / s}$, a brisk walk, and the destroyed energy is enough to lift the heavier wagon $87\ \mathrm{mm}$ vertically. That is why shunting is dangerous and why a coupler is a fatigue-critical component: $143\ \mathrm{kN}$ is a **mean**, and a rigid coupler with no cushioning produces a peak several times higher and a stress wave that reflects from the draft sill and cracks the casting. The whole of railway draft-gear design is the reduction of that peak by stretching the $17\ \mathrm{kJ}$ over the longest stroke the coupling clearances allow.
 :::
 :::
 
@@ -214,7 +214,7 @@ $$
 $$
 \frac{\Delta T}{T} = 1 - \left( \frac{15.72}{20} \right)^{2} = 38.3\ \text{per cent}.
 $$
-*Sanity.* The angle **increases** from $30^{\circ}$ to $39.5^{\circ}$: the wall eats the normal component and leaves the tangential, so the ball leaves more glancing than it arrived. The extreme case is a soft ball thrown nearly normally at a wall, which rebounds nearly along the wall — the reason a tennis ball hit into a wall at a shallow angle comes back at a much steeper one than the mirror angle, and the reason squash players must allow for it. Note also that the energy loss is $38$ per cent while $e^{2} = 0.49$; the loss is **not** $1 - e^{2}$ of the total energy but $1 - e^{2}$ of the **normal** component, and here the normal component is $75$ per cent of the total.
+*Sanity.* The angle **increases** from $30^{\circ}$ to $39.5^{\circ}$: the wall eats the normal component and leaves the tangential, so the ball leaves more glancing than it arrived. The extreme case is a very soft ball, $e \rightarrow 0$, which leaves sliding along the wall whatever its angle of arrival — the reason a ball comes off a squash-court wall flatter than the mirror angle, and the reason squash players must allow for it. Note also that the energy loss is $38$ per cent while $1 - e^{2} = 0.51$; the loss is **not** $1 - e^{2}$ of the total energy but $1 - e^{2}$ of the **normal** component, and here the normal component is $75$ per cent of the total.
 :::
 :::
 
@@ -238,7 +238,7 @@ $$
 $$
 *Check.* The efficiency formula gives $500 / 700 = 0.714$ independently of the drop height, which is right: a heavier ram always delivers a greater fraction of its energy, which is the whole content of the engineering maxim "a heavy slow blow beats a light fast one". $\checkmark$
 
-*Sanity.* The $71.4$ per cent is the **upper bound** from rigid-body impact; a real pile driver delivers $60$ to $70$ per cent of the ram's energy at best, because the pile head and the dolly compress elastically and part of that elastic wave is reflected as tension that does no useful work. The wave-equation theory of pile driving, developed from Smith's 1960 discrete-element model, replaces this rigid-body argument entirely for bearing piles, and it predicts something the present analysis cannot: that the **energy** delivered, not the force, governs penetration, and that a pile which "refuses" at $2\ \mathrm{mm}$ per blow may be driven by a shorter, faster stroke rather than a bigger one. That is why modern specification language talks about blows per millimetre and ram stroke together, and why driving a pile with too heavy a ram can shatter the head without advancing it.
+*Sanity.* The $71.4$ per cent is the **upper bound** from rigid-body impact; a real pile driver delivers $60$ to $70$ per cent of the ram's energy at best, because the pile head and the dolly compress elastically and part of that elastic wave is reflected as tension that does no useful work. The wave-equation theory of pile driving, developed from Smith's 1960 discrete-element model, replaces this rigid-body argument for bearing piles, and it predicts what the present analysis cannot: how the stress waves in the pile, and hence the driving stresses and the set per blow, depend on the ram, the cushion and the pile together. That is why driving criteria specify the ram stroke and the set per blow together, and why hard driving on a pile that has met refusal can shatter the head without advancing it.
 :::
 :::
 
@@ -247,7 +247,7 @@ The instinct to write "energy before equals energy after" at a collision is the 
 :::
 
 ::: history
-The **principle of conservation of momentum** in collision is Descartes's, 1644, in imperfect form, corrected and demonstrated experimentally by Wren, Wallis and Huygens before it was announced to the Royal Society in 1668 and put on a firm experimental footing by Robins. **Impact** as an engineering problem begins with Robins's ballistic pendulum of 1742, described in *New Principles of Gunnery*, which measured muzzle velocity by the swing of a block of wood and settled at the same time the resistance of air to projectiles; the coefficient of restitution is due to the experiments of Hutton and of Ampère on falling balls around 1800, and its modern treatment as a material property is due to Rittinger's 1886 impact tests on minerals, which founded the whole of comminution engineering. **Angular momentum** and its conservation appear in Euler's 1749 treatment of rigid bodies; the identification of the equal-areas law with central forces generally, rather than with gravity specifically, is a consequence of the calculus of variations as applied by Maupertuis and Euler in the 1740s. The **wave-equation theory of pile driving** is Smith's discrete-element model of 1960, made routine by the Pile Driving Analyzer of Pile Dynamics in 1973, and it is one of the few places in geotechnical engineering where a dynamic rather than a static analysis is standard practice.
+The **principle of conservation of momentum** in collision is Descartes's, 1644, in imperfect form, corrected by Wren, Wallis and Huygens in the papers they sent to the Royal Society in 1668 and 1669, and tested experimentally by Mariotte and by Newton, whose pendulum collisions are reported in the *Principia*. **Impact** as an engineering problem begins with Robins's ballistic pendulum of 1742, described in *New Principles of Gunnery*, which measured muzzle velocity by the swing of a block of wood and showed at the same time how large the resistance of air to projectiles is; the coefficient of restitution goes back to Newton's pendulum experiments, in which he found that the relative speed after impact bore a fixed ratio to that before it for a given pair of materials. **Angular momentum** and its conservation were developed by Euler, Daniel Bernoulli and d'Arcy in the 1740s; the identification of the equal-areas law with central forces generally, rather than with gravity specifically, is Newton's own, the first proposition of Book I of the *Principia*. The **wave-equation theory of pile driving** is Smith's discrete-element model of 1960, made routine by the dynamic pile testing developed by Goble and co-workers at the Case Institute of Technology from the 1960s, and it is one of the few places in geotechnical engineering where a dynamic rather than a static analysis is standard practice.
 :::
 
 ## Where this leads
@@ -270,7 +270,7 @@ Two identical carts roll on a level frictionless track. Cart $A$ carries a large
 - [x] Both alike, at $u / 2$
 - [ ] Neither moves off; the momentum is destroyed
 ::: solution
-Both alike, at $u / 2$. The velocity after a perfectly inelastic coupling follows from momentum alone, $V = m u / 2 m = u / 2$, and is completely independent of how much kinetic energy is destroyed or where it goes. What the clay changes is the **force** and the **duration** of the contact, not the final velocity: the same impulse is delivered over a longer time and a lower peak. This is the single most useful separation in impact mechanics, and it is why a crash structure is designed against force and time while a trajectory calculation only ever needs momentum. It is also why a $100\ \mathrm{km / h}$ collision with a rigid wall and one with an identical oncoming car at $100\ \mathrm{km / h}$ are not the same as a $200\ \mathrm{km / h}$ collision into a wall — the momentum change and the energy dissipation are both doubled, not quadrupled, per car.
+Both alike, at $u / 2$. The velocity after a perfectly inelastic coupling follows from momentum alone, $V = m u / 2 m = u / 2$, and is completely independent of how much kinetic energy is destroyed or where it goes. What the clay changes is the **force** and the **duration** of the contact, not the final velocity: the same impulse is delivered over a longer time and a lower peak. This is the single most useful separation in impact mechanics, and it is why a crash structure is designed against force and time while a trajectory calculation only ever needs momentum. It is also why a head-on collision between two identical cars each at $100\ \mathrm{km / h}$ is, for each car, the same as hitting a rigid wall at $100\ \mathrm{km / h}$ and not at $200$: by symmetry each car is brought to rest, so its momentum change and the energy it must absorb are those of the $100\ \mathrm{km / h}$ wall crash — a quarter of the energy of a $200\ \mathrm{km / h}$ one.
 :::
 :::
 
@@ -280,15 +280,13 @@ Both alike, at $u / 2$. The velocity after a perfectly inelastic coupling follow
 A $2\ \mathrm{kg}$ ball moving at $6\ \mathrm{m / s}$ is brought to rest in $0.25\ \mathrm{s}$. Find the average force.
 ::: solution
 $F = m v / t = 2 \times 6 / 0.25 = 48\ \mathrm{N}$.
-*Note.* The answer to enter is $48\ \mathrm{N}$.
 :::
 :::
 
 ::: exercise Direct impact {level=1 check="0.25"}
-Two equal smooth spheres, one at rest, collide directly with $e = 1$. What fraction of the incoming kinetic energy does the struck sphere receive?
+Two equal smooth spheres, one at rest, collide directly with $e = 0$. What fraction of the incoming kinetic energy does the struck sphere receive? Compare the case $e = 1$.
 ::: solution
-All of it: with $e = 1$ and equal masses the first stops dead and the second leaves with the full speed, so the fraction is $1$. For $e = 0$ they move together at half the speed and the struck sphere receives $\tfrac{1}{4}$ of the energy.
-*Note.* The answer to enter is the $e = 0$ fraction, $0.25$.
+With $e = 0$ they move together at half the speed, so the struck sphere receives $\tfrac{1}{2} m \left( u / 2 \right)^{2} / \left( \tfrac{1}{2} m u^{2} \right) = \tfrac{1}{4}$ of the energy, and another quarter stays with the striking sphere; the remaining half is destroyed. With $e = 1$ the first stops dead and the second leaves with the full speed, receiving all of it.
 :::
 :::
 
@@ -306,7 +304,7 @@ $$
 e = \sqrt{\frac{0.9}{1.5}} = 0.775, \qquad
 \frac{\Delta T}{T} = 1 - e^{2} = 1 - 0.60 = 40\ \text{per cent}.
 $$
-*Sanity.* Note that $e$ is the square root of the height ratio, so a $40$ per cent energy loss shows up as only a $30$ per cent loss of height. This is why a rebound test looks more encouraging than it is, and why a specification for a sports surface quotes force reduction rather than rebound height.
+*Sanity.* Note that $e$ is the square root of the height ratio, so a $40$ per cent loss of energy (and of rebound height) shows up as only a $1 - e = 22.5$ per cent loss of speed. This is why a quoted $e$ looks more encouraging than the energy loss behind it, and why a specification for a sports surface quotes force reduction rather than rebound height.
 :::
 :::
 
@@ -342,7 +340,7 @@ v = v_e \ln \frac{m_0}{m_0 - \dot{m} t} - g t
 = 2500 \ln \frac{400}{400 - 180} - 9.81 \times 60
 = 2500 \times 0.5978 - 589 = 906\ \mathrm{m / s}.
 $$
-*Sanity.* The gravity loss is $589\ \mathrm{m / s}$ of the $1495\ \mathrm{m / s}$ ideal, a $28$ per cent penalty for burning vertically for a minute. That is why a launch vehicle turns down-range within the first minute rather than climbing straight up: the gravity loss is $g t$ whatever the trajectory's shape, but the **time** to orbit is minimised by accelerating horizontally as soon as the atmosphere allows.
+*Sanity.* The gravity loss is $589\ \mathrm{m / s}$ of the $1495\ \mathrm{m / s}$ ideal, a $39$ per cent penalty for burning vertically for a minute. That is why a launch vehicle turns down-range within the first minute rather than climbing straight up: the gravity loss is the integral of $g \sin \gamma$ over the burn, $\gamma$ being the flight-path angle, so it is largest for vertical flight and is reduced by turning towards the horizontal as soon as the vehicle is clear of the dense atmosphere.
 :::
 :::
 
@@ -351,7 +349,7 @@ A drop hammer of mass $1200\ \mathrm{kg}$ falls $1.8\ \mathrm{m}$ onto a forging
 ::: solution
 **Speed at impact:** $u = \sqrt{2 \times 9.81 \times 1.8} = 5.943\ \mathrm{m / s}$.
 **Energy available:** $T_1 = \tfrac{1}{2} \times 1200 \times 5.943^{2} = 21\,190\ \mathrm{J}$.
-**Energy delivered to the work** (anvil taken as effectively fixed by its guides during the blow):
+**Energy delivered to the work.** With $e = 0$ and the anvil taken as effectively fixed during the blow, all $21\,190\ \mathrm{J}$ is absorbed in the forging, so
 $$
 F_{\text{mean}} = \frac{21\,190}{0.012} = 1.77\ \mathrm{MN}.
 $$
@@ -361,7 +359,7 @@ V = \frac{1200 \times 5.943}{1200 + M} \le 0.05
 \quad\Longrightarrow\quad
 M \ge \frac{1200 \times 5.943}{0.05} - 1200 = 141\,400\ \mathrm{kg}.
 $$
-*Sanity.* The requirement of $141\ \mathrm{t}$ of anvil for a $1.2\ \mathrm{t}$ hammer is the reason a forging hammer sits on a separate massive block from its foundation — an anvil block of $50$ to $150$ times the ram mass, isolated on timber or spring pads so that the blow's impulse does not reach the building. It is also why counter-blow hammers, in which two rams of equal and opposite momentum strike the work between them, need no anvil at all: the total momentum is zero, so nothing has to be absorbed, and a counter-blow machine of half the ram mass delivers the same energy with a fraction of the foundation.
+*Sanity.* The requirement of $141\ \mathrm{t}$ of anvil for a $1.2\ \mathrm{t}$ hammer shows how demanding a small rebound velocity is; practical anvils are lighter, commonly around twenty times the ram mass, and the anvil block is isolated from the foundation on timber or spring pads so that the blow's impulse does not reach the building. It is also why counter-blow hammers, in which two rams of equal and opposite momentum strike the work between them, need no anvil at all: the total momentum is zero, so nothing has to be absorbed by the foundation.
 :::
 :::
 
@@ -389,10 +387,10 @@ T_1 - T_2 = \tfrac{1}{2} m_1 \left( u_1^{2} - v_1^{2} \right) + \tfrac{1}{2} m_2
 $$
 **The wall.** A fixed wall is the limit $m_2 \rightarrow \infty$, in which $\mu \rightarrow m_1$ and $u \rightarrow u_1$, giving $T_1 - T_2 = \tfrac{1}{2} m_1 u_1^{2} \left( 1 - e^{2} \right)$ — the whole of it when $e = 0$.
 
-**Why momentum is not contradicted.** Momentum is conserved for the **system**, but the wall is attached to the Earth, so the correct $m_2$ is the mass of the Earth, $5.97 \times 10^{24}\ \mathrm{kg}$. The Earth's recoil velocity is then
+**Why momentum is not contradicted.** Momentum is conserved for the **system**, but the wall is attached to the Earth, so the correct $m_2$ is the mass of the Earth, $5.97 \times 10^{24}\ \mathrm{kg}$. For a $1\ \mathrm{kg}$ body arriving at $10\ \mathrm{m / s}$ the Earth's recoil velocity is
 $$
 V = \frac{m_1 u_1}{M_E} = \frac{1 \times 10}{5.97 \times 10^{24}} = 1.7 \times 10^{- 24}\ \mathrm{m / s},
 $$
-and its kinetic energy $\tfrac{1}{2} M_E V^{2} = 8.5 \times 10^{- 24}\ \mathrm{J}$ — negligible, because the energy carried by a body of momentum $p$ is $p^{2} / 2 M$, which vanishes as $M$ grows while $p$ stays fixed. Momentum can be transferred to an arbitrarily massive body with an arbitrarily small energy transfer, which is exactly what a support, a wall or a foundation does, and it is why "the wall takes the momentum but not the energy" is not a paradox but the ordinary behaviour of a constraint.
+and its kinetic energy $\tfrac{1}{2} M_E V^{2} = 8.4 \times 10^{- 24}\ \mathrm{J}$ — negligible, because the energy carried by a body of momentum $p$ is $p^{2} / 2 M$, which vanishes as $M$ grows while $p$ stays fixed. Momentum can be transferred to an arbitrarily massive body with an arbitrarily small energy transfer, which is exactly what a support, a wall or a foundation does, and it is why "the wall takes the momentum but not the energy" is not a paradox but the ordinary behaviour of a constraint.
 :::
 :::

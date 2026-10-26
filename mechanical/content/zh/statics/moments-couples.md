@@ -3,7 +3,7 @@
 力矩是扳手要做长的原因，是离合器做成远离轴线的一组小力而不是靠近轴线的一个大力、跳板做成悬臂而不是简支、船的复原作用取决于浮力的水平移动而不是其大小的原因。力矩也是把前两章的质点静力学变成真实结构静力学的那一步，因为真实物体有大小，其上的力不汇交。
 
 ::: warning 力矩不是焦耳
-牛顿米和焦耳量纲相同，都是 $\mathrm{kg\,m^{2}\,s^{-2}}$，却永远不是一回事。功是**标量**——力与位移的点积——而力矩是**矢量**（在平面内是有正负的标量）——位置与力的叉积。把 $100\ \mathrm{N\,m}$ 的螺栓扭矩写成 $100\ \mathrm{J}$ 是范畴错误，这就是扭矩按惯例以牛顿米计、绝不以焦耳计的原因。这个区分不是迂腐：拧紧到 $100\ \mathrm{N\,m}$ 的螺栓大约储存 $25\ \mathrm{J}$ 弹性应变能，在设计计算中把这两个数字混为一谈，答案会错出四倍。
+牛顿米和焦耳量纲相同，都是 $\mathrm{kg\,m^{2}\,s^{-2}}$，却永远不是一回事。功是**标量**——力与位移的点积——而力矩是**矢量**（在平面内是有正负的标量）——位置与力的叉积。把 $100\ \mathrm{N\,m}$ 的螺栓扭矩写成 $100\ \mathrm{J}$ 是范畴错误，这就是扭矩按惯例以牛顿米计、绝不以焦耳计的原因。这个区分不是迂腐：拧紧到 $100\ \mathrm{N\,m}$ 的螺栓，其螺杆中储存的弹性应变能只有一焦耳左右的量级，这两个数字彼此毫无关系。
 :::
 
 ## 力对点的矩
@@ -43,7 +43,7 @@ $$
 
 当 $\sin\theta = 1$，即 $\theta = 90^\circ$ 时矩最大，得 $M_{\max} = 62.5\ \mathrm{N\,m}$。以 $60^\circ$ 而不是垂直推损失可用扭矩的 $13\%$，以 $30^\circ$ 推损失一半。
 
-**合理性检验。**$54\ \mathrm{N\,m}$ 是普通轿车轮毂轴承的典型扭矩；技工单手在 $0.25\ \mathrm{m}$ 长的杆上加 $250\ \mathrm{N}$ 恰好是达到它的正确量级。答案在 $0$ 到 $62.5\ \mathrm{N\,m}$ 之间，正如应当，其单位是力乘长度，不是力。
+**合理性检验。**$54\ \mathrm{N\,m}$ 大约是 M10、8.8 级螺栓的拧紧力矩；技工单手在 $0.25\ \mathrm{m}$ 长的杆上加 $250\ \mathrm{N}$ 恰好是达到它的正确量级。答案在 $0$ 到 $62.5\ \mathrm{N\,m}$ 之间，正如应当，其单位是力乘长度，不是力。
 :::
 :::
 
@@ -145,7 +145,7 @@ M_{AB} = \mathbf{u}_{AB} \cdot \mathbf{M}_A
 $$
 负号表示该力有绕 $A \to B$ 指向顺时针转动物体的趋势。对 $x$ 轴，$\mathbf{u} = \mathbf{i}$，立即得 $M_x = 170\ \mathrm{N\,m}$。
 
-**合理性检验。**$|M_{AB}| = 76.7\ \mathrm{N\,m}$ 不能大于 $|\mathbf{M}_A| = \sqrt{170^{2} + 70^{2} + 130^{2}} = 224.5\ \mathrm{N\,m}$，因为分量不能超过矢量本身；它是后者的 $34\%$，对一个不与 $\mathbf{M}_A$ 一致的轴来说是合理的。改用从 $B$ 出发的 $\mathbf{r}$ 重算得到同样的 $-76.7\ \mathrm{N\,m}$，正如命题保证的那样。
+**合理性检验。**$|M_{AB}| = 76.7\ \mathrm{N\,m}$ 不能大于 $|\mathbf{M}_A| = \sqrt{170^{2} + 70^{2} + 130^{2}} = 225.2\ \mathrm{N\,m}$，因为分量不能超过矢量本身；它是后者的 $34\%$，对一个不与 $\mathbf{M}_A$ 一致的轴来说是合理的。改用从 $B$ 出发的 $\mathbf{r}$ 重算得到同样的 $-76.7\ \mathrm{N\,m}$，正如命题保证的那样。
 :::
 :::
 
@@ -179,7 +179,7 @@ $$
 $$
 $$
 \mathbf{M} = 646.4\, \mathbf{i} + 200.0\, \mathbf{j}\ \mathrm{N\,m}, \qquad
-M = \sqrt{646.4^{2} + 200.0^{2}} = 676\ \mathrm{N\,m}
+M = \sqrt{646.4^{2} + 200.0^{2}} = 677\ \mathrm{N\,m}
 $$
 方向在 $xy$ 平面内与 $x$ 轴成 $\arctan(200 / 646.4) = 17.2^{\circ}$。
 
@@ -188,11 +188,11 @@ $$
 :::
 
 ::: widget plot
-f: 400*sin(x*pi/180)
+f: 60*sin(x*pi/180)
 x: 0, 180
-y: 0, 420
-labels: \text{力偶的矩，} M = Fd\sin\theta
-caption: 两个相距 $0.15\ \mathrm{m}$ 的 $400\ \mathrm{N}$ 力组成的力偶之矩，对连接两作用线的偶臂与力本身之间夹角 $\theta$ 的曲线。最大值 $60\ \mathrm{N\,m}$ 在 $\theta = 90^\circ$；$30^\circ$ 时矩为 $30\ \mathrm{N\,m}$；$0^\circ$ 时两力共线，力偶消失。这就是螺栓分布圆、离合器摩擦片和法兰螺栓按其承载的**垂直**间距来定尺寸的原因。
+y: 0, 65
+labels: \text{力偶的矩，} M = Fa\sin\theta
+caption: 作用于相距 $a = 0.15\ \mathrm{m}$ 的两点的两个 $400\ \mathrm{N}$ 力组成的力偶之矩，对连接两作用线的偶臂与力本身之间夹角 $\theta$ 的曲线。最大值 $60\ \mathrm{N\,m}$ 在 $\theta = 90^\circ$；$30^\circ$ 时矩为 $30\ \mathrm{N\,m}$；$0^\circ$ 时两力共线，力偶消失。这就是螺栓分布圆、离合器摩擦片和法兰螺栓按其承载的**垂直**间距来定尺寸的原因。
 :::
 
 ## 把力系向一点简化为一个力和一个力偶
@@ -207,7 +207,7 @@ $$
 $$
 即一个作用于 $O$ 的力加一个力偶。把简化中心从 $O$ 改为 $O'$，力偶变为
 $$
-\mathbf{M}_{R,O'} = \mathbf{M}_{R,O} + \mathbf{r}_{O \to O'} \times \mathbf{F}_R ,
+\mathbf{M}_{R,O'} = \mathbf{M}_{R,O} + \mathbf{r}_{O' \to O} \times \mathbf{F}_R ,
 $$
 而 $\mathbf{F}_R$ 保持不变。两个推论：$\mathbf{M}_{R}$ 沿 $\mathbf{F}_R$ 的分量，称为**扭转**或**螺距**分量，与 $O$ 无关；并且总存在某个点（三维中是整整一条点线），在该点力偶垂直于 $\mathbf{F}_R$ 的分量消失，于是力系简化为**力螺旋**——一个力和一个与之平行的力偶。
 :::
@@ -216,9 +216,9 @@ $$
 用可传性加上在 $O$ 处插入 $+\mathbf{F}_i$ 与 $-\mathbf{F}_i$ 的标准技巧，把每个力 $\mathbf{F}_i$ 移到 $O$：这就得到作用于 $O$ 的力 $\mathbf{F}_i$ 加上力偶 $\mathbf{r}_i \times \mathbf{F}_i$。对 $i$ 求和即得所述的力-力偶对，对刚体而言这种等效是精确的。对换点，写 $\mathbf{r}_i' = \mathbf{r}_i - \mathbf{a}$，其中 $\mathbf{a} = \mathbf{r}_{O \to O'}$；则
 $$
 \mathbf{M}_{R,O'} = \sum_i (\mathbf{r}_i - \mathbf{a}) \times \mathbf{F}_i
-= \mathbf{M}_{R,O} - \mathbf{a} \times \mathbf{F}_R = \mathbf{M}_{R,O} + \mathbf{a} \times \mathbf{F}_R \cdot(-1) \cdot(-1) = \mathbf{M}_{R,O} + \mathbf{r}_{O' \to O} \times \mathbf{F}_R .
+= \mathbf{M}_{R,O} - \mathbf{a} \times \mathbf{F}_R = \mathbf{M}_{R,O} + \mathbf{r}_{O' \to O} \times \mathbf{F}_R .
 $$
-与单位矢量 $\hat{\mathbf{F}}_R$ 作点积得 $\mathbf{M}_{R,O'} \cdot \hat{\mathbf{F}}_R = \mathbf{M}_{R,O} \cdot \hat{\mathbf{F}}_R + (\mathbf{r}_{O' \to O} \times \mathbf{F}_R) \cdot \hat{\mathbf{F}}_R$，最后一项为零，因为 $\mathbf{r} \times \mathbf{F}_R$ 垂直于 $\mathbf{F}_R$；所以扭转分量不变。最后，取一个沿垂直于 $\mathbf{F}_R$ 方向偏移 $\mathbf{a}$ 的点，使 $\mathbf{a} \times \mathbf{F}_R = -\mathbf{M}_{\perp}$；这样的 $\mathbf{a}$ 存在且在沿 $\mathbf{F}_R$ 移动的意义下唯一，即 $\mathbf{a} = \mathbf{M}_{\perp} \times \hat{\mathbf{F}}_R / F_R$，这就证明了力螺旋形式和那条点线。
+与单位矢量 $\hat{\mathbf{F}}_R$ 作点积得 $\mathbf{M}_{R,O'} \cdot \hat{\mathbf{F}}_R = \mathbf{M}_{R,O} \cdot \hat{\mathbf{F}}_R + (\mathbf{r}_{O' \to O} \times \mathbf{F}_R) \cdot \hat{\mathbf{F}}_R$，最后一项为零，因为 $\mathbf{r} \times \mathbf{F}_R$ 垂直于 $\mathbf{F}_R$；所以扭转分量不变。最后，取一个沿垂直于 $\mathbf{F}_R$ 方向偏移 $\mathbf{a}$ 的点，使 $\mathbf{a} \times \mathbf{F}_R = \mathbf{M}_{\perp}$（$\mathbf{M}_{\perp}$ 为 $\mathbf{M}_{R,O}$ 垂直于 $\mathbf{F}_R$ 的分量），于是在该点力偶的垂直部分为零；这样的 $\mathbf{a}$ 存在且在沿 $\mathbf{F}_R$ 移动的意义下唯一，即 $\mathbf{a} = \hat{\mathbf{F}}_R \times \mathbf{M}_{\perp} / F_R$，这就证明了力螺旋形式和那条点线。
 :::
 
 ::: example 把平面力系简化为一个力和一个力偶，再简化为一个力 {#ex-reduce}
@@ -249,21 +249,21 @@ $$
 :::
 
 ::: warning 力偶不能被一个力平衡
-学生常常把 $\sum M = 0$ 和 $\sum F = 0$ 写得好像一个蕴含另一个，并试图用一个力来“抵消”一个力偶。它们是独立的条件：力偶合力为零而矩不为零，所以没有任何力在 $\sum \mathbf{F}$ 中对其平衡有贡献，$\sum \mathbf{F}$ 中也不出现无合力的力偶。当问题中出现力偶矩——电机的扭矩反作用、螺栓的预紧、焊接接头承受的力矩——只把它写进力矩方程，并且带符号写，而不是只写大小。还要记住，写 $\sum M = 0$ 时力偶可以**对任意**一点计入，这是单个力没有的自由度。
+学生常常把 $\sum M = 0$ 和 $\sum F = 0$ 写得好像一个蕴含另一个，并试图用一个力来“抵消”一个力偶。它们是独立的条件：力偶合力为零而矩不为零，所以没有任何力在 $\sum \mathbf{F}$ 中对其平衡有贡献，$\sum \mathbf{F}$ 中也不出现无合力的力偶。当问题中出现力偶矩——电机的扭矩反作用、轴上施加的扭矩、焊接接头承受的力矩——只把它写进力矩方程，并且带符号写，而不是只写大小。还要记住，写 $\sum M = 0$ 时力偶可以**对任意**一点计入，这是单个力没有的自由度。
 :::
 
 ::: history
-伐里农（Varignon）定理出现在他1687年的《新力学纲要》（*Projet d'une nouvelle méchanique*）中，与牛顿（Newton）的《原理》同年出版却远少有人读；伐里农1722年去世，完整的《关于重力的新猜想》（*Nouvelles conjectures sur la pesanteur*）在其身后出版。这一定理在实质上斯台文（Stevin）和伽利略（Galileo）已经知道，但伐里农用分量给出的表述沿用至今，欧拉（Euler）与丹尼尔·伯努利（Daniel Bernoulli）在1750年代把它纳入解析力学。力偶的概念及其矩与取矩点无关的证明，属于潘索（Poinsot）1808年的《静力学教程》（*Éléments de statique*）与1834年的《物体旋转新理论》（*Théorie nouvelle de la rotation des corps*），后者给出了把任意力系简化为力螺旋，以及潘索椭与中心轴的几何图像。该简化中的“中心轴”正是力螺旋形式成立的那条点线，至今仍是表述一般载荷系对刚体作用的最简洁方式。
+伐里农（Varignon）定理出现在他1687年的《新力学纲要》（*Projet d'une nouvelle méchanique*）中，与牛顿（Newton）的《原理》同年出版却远少有人读；伐里农1722年去世，《纲要》所预告的完整著作《新力学或静力学》（*Nouvelle mécanique ou statique*）于1725年在其身后出版。这一定理在实质上斯台文（Stevin）和伽利略（Galileo）已经知道，但伐里农用分量给出的表述沿用至今。力偶理论及其矩与取矩点无关的证明，属于潘索（Poinsot）1803年的《静力学教程》（*Éléments de statique*），该书还把任意力系简化为绕一条**中心轴**的单力加力偶——中心轴正是力螺旋形式成立的那条点线，至今仍是表述一般载荷系对刚体作用的最简洁方式。潘索1834年的《物体旋转新理论》（*Théorie nouvelle de la rotation des corps*）把力偶引入刚体动力学，并提出了以他命名的椭球。
 :::
 
 ::: quiz
 一个大小为 $F$ 的力作用在距 $O$ 为 $r$ 处。哪种改变使对 $O$ 的矩最大？
-- [ ] 把 $F$ 加倍
+- [ ] 把 $F$ 增大 $50\%$
 - [x] 把力臂 $d$ 加倍
 - [ ] 把 $F$ 减半并把 $r$ 加倍
 - [ ] 把力转到沿径向
 ::: solution
-矩是 $M = F d$，所以把力臂加倍就把矩加倍，与把力加倍完全一样——两者等价，任一个都使 $M$ 加倍。若力保持垂直，把 $F$ 减半、$r$ 加倍则 $M$ 不变；把力转到径向则 $d = 0$，矩为零。教训是力和力臂在 $M = Fd$ 中对称地进入：就刚体平衡而言，长杠杆上的小力与短杠杆上的大力无法区分。这就是阿基米德（Archimedes）杠杆的全部内容，也是 $0.5\ \mathrm{m}$ 杆上 $400\ \mathrm{N}$ 的拉力超过 $0.15\ \mathrm{m}$ 杆上 $1000\ \mathrm{N}$ 拉力的原因。
+矩是 $M = F d$，所以把力臂加倍就把矩加倍，而把力增大 $50\%$ 只使矩增大 $50\%$。若力保持垂直，把 $F$ 减半、$r$ 加倍则 $M$ 不变；把力转到径向则 $d = 0$，矩为零。教训是力和力臂在 $M = Fd$ 中对称地进入：就刚体平衡而言，长杠杆上的小力与短杠杆上的大力无法区分。这就是阿基米德（Archimedes）杠杆的全部内容，也是 $0.5\ \mathrm{m}$ 杆上 $400\ \mathrm{N}$ 的拉力超过 $0.15\ \mathrm{m}$ 杆上 $1000\ \mathrm{N}$ 拉力的原因。
 :::
 :::
 
@@ -338,7 +338,7 @@ $\mathbf{u}_{AB} = (1, 2, 2) / 3$，$\mathbf{r} = \vec{AP} = (2, 3, 1)\ \mathrm{
 $$
 M_{AB} = \mathbf{u}_{AB} \cdot \mathbf{M}_A = \frac{170 - 140 - 260}{3} = -76.7\ \mathrm{N\,m}.
 $$
-改用 $\mathbf{r} = \vec{BP} = (1, 1, -1)$ 重算得到同样的值，证实了不变性。对 $A$ 的总矩大小为 $224.5\ \mathrm{N\,m}$，其中只有 $34\%$ 可用于对角轴；其余由轴的轴承承受。
+改用 $\mathbf{r} = \vec{BP} = (1, 1, -1)$ 重算得到同样的值，证实了不变性。对 $A$ 的总矩大小为 $225.2\ \mathrm{N\,m}$，其中只有 $34\%$ 可用于对角轴；其余由轴的轴承承受。
 :::
 :::
 
@@ -350,24 +350,24 @@ $$
 M_\parallel = \hat{\mathbf{F}} \cdot \mathbf{M}_{R,O}
 = 0.6 \times 30 + 0 \times 40 + 0.8 \times (-22.5) = 18.0 - 18.0 = 0\ \mathrm{N\,m}.
 $$
-力偶完全垂直于力，所以该力系根本不是力螺旋，而是一个单力。因为 $\mathbf{M} \cdot \mathbf{F} = 0$，从 $O$ 到作用线的位移 $\mathbf{a}$ 满足 $\mathbf{a} \times \mathbf{F}_R = -\mathbf{M}_{R,O}$，由矢量三重积，
+力偶完全垂直于力，所以该力系根本不是力螺旋，而是一个单力。因为 $\mathbf{M} \cdot \mathbf{F} = 0$，作用线上一点的位置 $\mathbf{a}$ 必须使置于该点的力 $\mathbf{F}_R$ 对 $O$ 之矩等于力偶，即 $\mathbf{a} \times \mathbf{F}_R = \mathbf{M}_{R,O}$，由矢量三重积，
 $$
-\mathbf{a} = \frac{\mathbf{M}_{R,O} \times \mathbf{F}_R}{F_R^{2}} : \qquad
-\left( \frac{\mathbf{M} \times \mathbf{F}}{F^{2}} \right) \times \mathbf{F}
-= \frac{\mathbf{F}(\mathbf{M} \cdot \mathbf{F}) - \mathbf{M}(\mathbf{F} \cdot \mathbf{F})}{F^{2}} = -\mathbf{M}.
+\mathbf{a} = \frac{\mathbf{F}_R \times \mathbf{M}_{R,O}}{F_R^{2}} : \qquad
+\left( \frac{\mathbf{F} \times \mathbf{M}}{F^{2}} \right) \times \mathbf{F}
+= \frac{\mathbf{M}(\mathbf{F} \cdot \mathbf{F}) - \mathbf{F}(\mathbf{M} \cdot \mathbf{F})}{F^{2}} = \mathbf{M}.
 $$
 数值上，
 $$
-\mathbf{M}_{R,O} \times \mathbf{F}_R
-= \big( 40 \times 80 - (-22.5) \times 0,\; (-22.5) \times 60 - 30 \times 80,\; 30 \times 0 - 40 \times 60 \big)
-= (3200,\; -3750,\; -2400)\ \mathrm{N^{2}m},
+\mathbf{F}_R \times \mathbf{M}_{R,O}
+= \big( 0 \times (-22.5) - 80 \times 40,\; 80 \times 30 - 60 \times (-22.5),\; 60 \times 40 - 0 \times 30 \big)
+= (-3200,\; 3750,\; 2400)\ \mathrm{N^{2}m},
 $$
 $$
-\mathbf{a} = (0.320,\; -0.375,\; -0.240)\ \mathrm{m}, \qquad |\mathbf{a}| = 0.541\ \mathrm{m}.
+\mathbf{a} = (-0.320,\; 0.375,\; 0.240)\ \mathrm{m}, \qquad |\mathbf{a}| = 0.541\ \mathrm{m}.
 $$
-**校核。**$\mathbf{a} \times \mathbf{F}_R = \big( (-0.375)(80) - (-0.240)(0),\; (-0.240)(60) - (0.320)(80),\; (0.320)(0) - (-0.375)(60) \big)$
+**校核。**$\mathbf{a} \times \mathbf{F}_R = \big( (0.375)(80) - (0.240)(0),\; (0.240)(60) - (-0.320)(80),\; (-0.320)(0) - (0.375)(60) \big)$
 $$
-= (-30.0,\; -14.4 - 25.6,\; 22.5) = (-30.0,\; -40.0,\; 22.5) = -\mathbf{M}_{R,O}.
+= (30.0,\; 14.4 + 25.6,\; -22.5) = (30.0,\; 40.0,\; -22.5) = \mathbf{M}_{R,O}.
 $$
 三个分量都正确。注意 $|\mathbf{a}| = 0.541\ \mathrm{m} = M_\perp / F_R = 54.1 / 100$，正如应当，并且直线 $\mathbf{a} + \lambda \hat{\mathbf{F}}$ 上的每一点同样有效——力的作用线是一条线，不是一个点。
 :::
@@ -384,17 +384,17 @@ $$
 $$
 \bar{x} = \frac{r}{5} \sum \cos\theta_i = \frac{0.075}{5} (0.5 - 0.5 - 1 - 0.5 + 0.5) = -0.015\ \mathrm{m}, \qquad \bar{y} = 0 .
 $$
-到这个中心的距离为：缺口旁 $60^\circ$ 与 $300^\circ$ 的两个螺栓 $0.0835\ \mathrm{m}$，$120^\circ$ 与 $240^\circ$ 的 $0.0687\ \mathrm{m}$，$180^\circ$ 的 $0.0600\ \mathrm{m}$，于是
+到这个中心的距离为：缺口旁 $60^\circ$ 与 $300^\circ$ 的两个螺栓 $0.0835\ \mathrm{m}$，$120^\circ$ 与 $240^\circ$ 的 $0.0687\ \mathrm{m}$，$180^\circ$ 的单个螺栓 $0.0600\ \mathrm{m}$，于是
 $$
-\textstyle \sum d_i^{2} = 2 (0.0835^{2} + 0.0687^{2} + 0.0600^{2}) = 0.03059\ \mathrm{m^{2}} .
+\textstyle \sum d_i^{2} = 2 (0.0835^{2} + 0.0687^{2}) + 0.0600^{2} = 0.02700\ \mathrm{m^{2}} .
 $$
 刚性板绕形心的扭转给出 $F_i = T d_i / \sum d_j^{2}$，所以最危险的螺栓承受
 $$
-F_{\max} = \frac{500 \times 0.0835}{0.03059} = 1365\ \mathrm{N},
+F_{\max} = \frac{500 \times 0.0835}{0.02700} = 1547\ \mathrm{N},
 $$
-比六螺栓值高 $23\%$，比朴素的平均值 $500 / (5 \times 0.075) = 1333\ \mathrm{N}$ 高 $2.7\%$。
+比六螺栓值高 $39\%$，比朴素的平均值 $500 / (5 \times 0.075) = 1333\ \mathrm{N}$ 高 $16\%$。
 
-**设计结论。**六个螺栓中掉一个只使最危险螺栓增大约四分之一，若接头按此额定则可容忍；但载荷现在还是**偏心**的，因为螺栓组中心不再与轴心重合，原本自平衡的法兰现在会弯曲。打算在缺一个螺栓时仍能工作的联轴器，必须按偏心的螺栓组而不是对称的螺栓组来额定。
+**设计结论。**六个螺栓中掉一个使最危险螺栓的力增大约 $40\%$，只有接头按此额定时才可容忍；但载荷现在还是**偏心**的，因为螺栓组中心不再与轴心重合，原本自平衡的法兰现在会弯曲。打算在缺一个螺栓时仍能工作的联轴器，必须按偏心的螺栓组而不是对称的螺栓组来额定。
 :::
 :::
 

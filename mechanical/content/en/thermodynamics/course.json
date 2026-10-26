@@ -99,38 +99,38 @@
     {
       "year": 1824,
       "title": "Réflexions sur la puissance motrice du feu",
-      "detail": "Sadi Carnot analysed a fixed quantity of air confined in a cylinder with a movable piston and asked only how much work it could give — an idealised closed system and a reversible cycle, invented before the concept of heat as energy existed. The book was unread for fifteen years.",
+      "detail": "Sadi Carnot analysed a fixed quantity of air confined in a cylinder with a movable piston and asked only how much work it could give — an idealised closed system and a reversible cycle, worked out while heat was still thought of as a conserved fluid. The book was little read until Clapeyron restated it in 1834.",
       "people": "Sadi Carnot"
     },
     {
       "year": 1843,
       "title": "The mechanical equivalent of heat",
-      "detail": "Joule's paddle-wheel measurement gave 818.6 J/cal against today's 4186, and thirty-five years of repetition established that work and heat are equivalent in amount and not in kind. Kelvin read the result and at once saw that it destroyed the caloric theory.",
+      "detail": "Joule's first value of the mechanical equivalent of heat, 838 ft·lbf per Btu (about 4.5 J/cal), came from electromagnetic experiments in 1843; his paddle-wheel experiments from 1845 gave 772 ft·lbf per Btu (about 4.16 J/cal, against today's 4.186) by 1850, and established that work and heat are interconvertible in a fixed ratio.",
       "people": "James Prescott Joule"
     },
     {
       "year": 1850,
       "title": "Two statements of the second law",
-      "detail": "Clausius stated that heat does not of itself pass from a colder to a hotter body; Kelvin, reading Joule's paper, stated the impossibility of extracting work from a cycle whose only effect is the cooling of a reservoir. The two were shown equivalent within a decade and are the whole content of the second law.",
+      "detail": "Clausius (1850, stated in its familiar form in 1854) held that heat does not of itself pass from a colder to a hotter body; Kelvin (1851) stated the impossibility of obtaining work from a cycle whose only effect is the cooling of a single reservoir. Each statement can be derived from the other.",
       "people": "Rudolf Clausius, William Thomson (Lord Kelvin)"
     },
     {
       "year": 1873,
       "title": "The surface and the equation of state",
-      "detail": "Gibbs gave a substance's properties a geometric representation and with it the phase rule and the criterion of phase equilibrium; van der Waals's equation of state reproduced a critical point and a two-phase region from a molecular model for the first time, and the dome became a drawn object.",
+      "detail": "Gibbs's papers of 1873 gave a substance's properties a geometric representation (his memoir of 1875–78 added the phase rule and the general criteria of equilibrium); van der Waals's thesis of the same year gave an equation of state that reproduced a critical point and a two-phase region from a molecular model, and the dome became a drawn object.",
       "people": "Josiah Willard Gibbs, Johannes Diderik van der Waals"
     },
     {
-      "year": 1897,
-      "title": "The property table becomes an instrument",
-      "detail": "Carrier's psychrometric chart and the first engineering steam tables turned Regnault's scattered measurements into a usable tool, and established that the working method of thermodynamics is to look a property up and to know which region you are in.",
-      "people": "Willis Carrier"
+      "year": 1904,
+      "title": "The property chart becomes an instrument",
+      "detail": "Richard Mollier's enthalpy–entropy chart for steam, with the tables and diagrams that followed in 1906, turned the measured properties of steam into a tool that a turbine designer could read directly, and established the working method of looking a property up and knowing which region you are in.",
+      "people": "Richard Mollier"
     },
     {
       "year": 1997,
       "title": "IAPWS-95 and IF97",
-      "detail": "The International Association for the Properties of Water and Steam issued a fundamental equation of state accurate to 0.025 % in specific volume and an industrial formulation for computation, which are the basis of every power-plant design and performance test in the world.",
-      "people": "IAPWS Task Group"
+      "detail": "The International Association for the Properties of Water and Steam adopted IAPWS-95 (1995), the reference equation of state for water for scientific use, and IAPWS-IF97 (1997), a faster industrial formulation that is the property basis of power-plant design and performance testing.",
+      "people": "Wolfgang Wagner and the IAPWS working groups"
     }
   ],
   "references": [

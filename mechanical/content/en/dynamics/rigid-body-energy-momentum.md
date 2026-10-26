@@ -22,7 +22,7 @@ The **work–energy equation** is $T_2 - T_1 = U_{1 \to 2}$, and the power form 
 $$
 \frac{\mathrm{d} T}{\mathrm{d} t} = \sum \mathbf{F} \cdot \mathbf{v}_G + \sum M_G \, \omega .
 $$
-A force does no work if its point of application does not move, if it is perpendicular to the motion, or if it is the friction at a rolling or non-slipping contact. A **couple** does work $M \Delta\theta$ regardless of where it is applied, and the work of a couple is path-independent in a way a force's is not.
+A force does no work if its point of application does not move, if it is perpendicular to the motion, or if it is the friction at a rolling or non-slipping contact. A constant **couple** does work $M \Delta\theta$ regardless of where on the body it is applied.
 :::
 
 ::: proof König's theorem: the kinetic energy splits {#proof-koenig}
@@ -76,7 +76,7 @@ f: sqrt(24.525*sin(x*pi/180))
 x: 0, 90
 y: 0, 5.2
 labels: \text{angular speed } \omega \ \left( \mathrm{rad/s} \right)
-caption: Angular speed of a uniform rod of length $1.2\ \mathrm{m}$ hinged at one end and released from the horizontal, against its angle $x$ below the horizontal, from $\omega = \sqrt{3 g \sin \theta / L}$. The curve is a square root of a sine: steep at the start, where a small angle releases a proportional amount of energy but the inertia is being asked to carry it at low speed, and flattening towards the bottom. The **slope** $\mathrm{d}\omega / \mathrm{d}\theta$ is infinite at $\theta = 0$ — which is the same fact as the finite initial angular acceleration divided by a zero angular speed — and it is why a hinged arm released from horizontal has its maximum **bearing** load not at the start but somewhere in the middle of the swing, where the centripetal term $m \bar{r} \omega^{2}$ has grown.
+caption: Angular speed of a uniform rod of length $1.2\ \mathrm{m}$ hinged at one end and released from the horizontal, against its angle $x$ below the horizontal, from $\omega = \sqrt{3 g \sin \theta / L}$. The curve is a square root of a sine: steep at the start, where a small angle releases a proportional amount of energy but the inertia is being asked to carry it at low speed, and flattening towards the bottom. The **slope** $\mathrm{d}\omega / \mathrm{d}\theta$ is infinite at $\theta = 0$ — which is the same fact as the finite initial angular acceleration divided by a zero angular speed — and the growth of $\omega$ is why the **bearing** load of an arm released from the horizontal rises steadily through the swing to its maximum at the bottom, where the centripetal term $m \bar{r} \omega^{2}$ is largest.
 :::
 
 ::: definition Impulse and momentum for a rigid body {#def-rbe-impulse}
@@ -122,7 +122,7 @@ $$
 $$
 *Check.* A simple pendulum of length $0.4\ \mathrm{m}$ has $\tau = 1.27\ \mathrm{s}$; the rolling cylinder is slower by exactly $\sqrt{1.5}$, the factor by which its inertia exceeds a point mass's. $\checkmark$
 
-*Sanity.* The radius of the rolling cylinder drops out of the period as long as it stays a cylinder, because both the path radius and the spin enter through the same $\left( R - r \right) \dot{\theta}$ — but its **shape** does not, since the $\tfrac{1}{2}$ becomes $\tfrac{2}{5}$ for a sphere and $1$ for a hoop. That is the same $k^{2} / R^{2}$ that sets the acceleration on an incline, appearing here as a factor on the inertia, and it is why the period of a rolling body is a clean way to measure a component's radius of gyration without ever weighing it precisely: the mass cancels, and only the distribution survives.
+*Sanity.* Apart from the path radius $R - r$, the size of the rolling cylinder drops out of the period, because both the path speed and the spin enter through the same $\left( R - r \right) \dot{\theta}$ — but its **shape** does not, since the $\tfrac{1}{2}$ becomes $\tfrac{2}{5}$ for a sphere and $1$ for a hoop. That is the same $k^{2} / R^{2}$ that sets the acceleration on an incline, appearing here as a factor on the inertia, and it is why the period of a rolling body is a clean way to measure a component's radius of gyration without ever weighing it precisely: the mass cancels, and only the distribution survives.
 :::
 :::
 
@@ -188,12 +188,12 @@ $$
 $$
 *Check.* The bullet's initial kinetic energy was $\tfrac{1}{2} \times 0.01 \times 400^{2} = 800\ \mathrm{J}$, and only $1.5\ \mathrm{J}$ — $0.19$ per cent — survived the impact. $\checkmark$
 
-*Sanity.* That $99.8$ per cent loss is not an accident and cannot be recovered: a perfectly inelastic collision destroys as much kinetic energy as the constraints allow, and the amount is fixed by momentum conservation, not by the details of the deformation. It is why a **ballistic pendulum** measures momentum-like quantities and must be corrected by the mass ratio before it can be called an energy measurement, and it is the same arithmetic that makes a **car crash** at twice the speed four times as destructive in energy but only twice as severe in momentum — which is precisely the difference between what an airbag is designed for and what a crumple zone is designed for.
+*Sanity.* That $99.8$ per cent loss is not an accident and cannot be recovered: a perfectly inelastic collision destroys as much kinetic energy as the constraints allow, and the amount is fixed by momentum conservation, not by the details of the deformation. It is why a **ballistic pendulum** measures momentum and not energy, and it is the same arithmetic that makes a **car crash** at twice the speed demand four times the energy absorption while involving only twice the momentum change.
 :::
 :::
 
 ::: example Falling rod {#ex-falling-rod}
-The rod of Example 3, released from the horizontal with no bullet, has angular speed $\omega = \sqrt{3 g \sin \theta / L}$ at angle $\theta$ below the horizontal. Find the bearing reaction at the bottom of the swing.
+The uniform hinged rod of [[dynamics/rigid-body-kinetics]], of mass $8\ \mathrm{kg}$ and length $1.2\ \mathrm{m}$, released from the horizontal, has angular speed $\omega = \sqrt{3 g \sin \theta / L}$ at angle $\theta$ below the horizontal. Find the bearing reaction at the bottom of the swing.
 ::: solution
 Differentiating $\tfrac{1}{2} I_O \omega^{2} = m g \tfrac{L}{2} \sin \theta$ gives $\alpha = 3 g \cos \theta / \left( 2 L \right)$, and at the bottom $\theta = 90^{\circ}$ this is **zero** while
 $$
@@ -205,15 +205,15 @@ R - m g = m \bar{a}
 \quad\Longrightarrow\quad
 R = m \left( g + \omega^{2} L / 2 \right) = 8 \times 24.53 = 196\ \mathrm{N} = 2.5\, m g .
 $$
-*Check.* At release the vertical reaction is $m g / 4 = 19.6\ \mathrm{N}$, but the mass centre also accelerates **horizontally** at $\alpha L / 2 = 7.36\ \mathrm{m / s^{2}}$, so the hinge must supply $58.9\ \mathrm{N}$ sideways and the total is $62\ \mathrm{N}$, directed almost horizontally. At the bottom the reaction is $196\ \mathrm{N}$ and directed straight up. $\checkmark$
+*Check.* In general the reaction has a component $2.5\, m g \sin \theta$ along the rod and $0.25\, m g \cos \theta$ across it. At release $\omega = 0$, so the mass centre's acceleration $\alpha L / 2 = 7.36\ \mathrm{m / s^{2}}$ is purely vertical and the reaction is only $m g / 4 = 19.6\ \mathrm{N}$, across the rod; at the bottom it is $2.5\, m g = 196\ \mathrm{N}$, along the rod and straight up. $\checkmark$
 
-*Sanity.* The bearing force therefore **rotates through ninety degrees** during the swing while growing by a factor of three, and a bearing that sees a rotating load of varying magnitude is one whose fatigue life must be computed on the load vector's orbit rather than on its peak. That is exactly the situation in a connecting-rod big-end bearing, where the load swings once per revolution and its magnitude is the sum of a gas pressure and a reciprocating inertia force, and it is why plain bearings are rated on the minimum film thickness over the whole cycle rather than on the peak pressure.
+*Sanity.* The bearing force therefore **turns through ninety degrees relative to the rod** during the swing while growing tenfold, and a bearing that sees a rotating load of varying magnitude is one whose fatigue life must be computed on the load vector's orbit rather than on its peak. That is exactly the situation in a connecting-rod big-end bearing, where the load swings once per revolution and its magnitude is the sum of a gas pressure and a reciprocating inertia force, and it is why plain bearings are rated on the minimum film thickness over the whole cycle rather than on the peak pressure.
 
 The general result is worth having: a body pivoted at distance $\bar{r}$ from its mass centre and released from the horizontal reaches the bottom with
 $$
 R = m g \left[ 1 + \frac{2}{1 + k^{2} / \bar{r}^{2}} \right] ,
 $$
-which is $3\, m g$ for a point mass on a massless arm, $2.5\, m g$ for a uniform rod and $2\, m g$ for a body whose mass is concentrated at the pivot. The peak reaction depends on the **mass distribution** and not at all on the size — which is the reason a scale model of a swinging arm does not reproduce the bearing loads of the prototype unless it is made of the same material and is geometrically similar, and why dynamic similarity for swinging structures is a stiffness-and-mass problem rather than a geometry problem.
+which is $3\, m g$ for a point mass on a massless arm, $2.5\, m g$ for a uniform rod, and tends to $m g$ as the mass centre approaches the pivot. The peak reaction, as a multiple of the weight, depends only on the **shape** of the mass distribution through $k / \bar{r}$ and not at all on the size, so a geometrically similar model reproduces it exactly.
 :::
 :::
 
@@ -234,7 +234,7 @@ M \times 2 \pi N = \tfrac{1}{2} I_{\text{eff}} \omega_g^{2}
 $$
 *Check.* Doing it as a force problem, $\alpha_g = M / I_{\text{eff}} = 23.81\ \mathrm{rad / s^{2}}$ and $\omega^{2} = 2 \alpha \times 10 \pi$ gives the same $38.7\ \mathrm{rad / s}$. $\checkmark$
 
-*Sanity.* The pinion, a third of the gear's mass and a fifth of its $I$ about its own shaft, contributes $0.90$ of the $2.10\ \mathrm{kg\,m^{2}}$ — $43$ per cent of the total — purely because the ratio enters **squared**. That single fact governs the layout of every geared drive: put the high-speed stage where the inertia is small, and if you must accelerate a drive hard, reduce the ratio rather than lighten the fast shaft, because halving the ratio quarters the reflected inertia. It is also why a machine tool's headstock is geared down in several steps rather than in one: the workpiece's own inertia is reflected through the square of whatever ratio stands between it and the motor, and a two-stage reduction with the larger ratio in the middle of the range is a cheaper way to make a heavy table feel light than any amount of motor.
+*Sanity.* The pinion, a third of the gear's mass and a twelfth of its $I$ about its own shaft, contributes $0.90$ of the $2.10\ \mathrm{kg\,m^{2}}$ — $43$ per cent of the total — purely because the ratio enters **squared**. That single fact governs the layout of every geared drive: put the high-speed stage where the inertia is small, and if you must accelerate a drive hard, reduce the ratio rather than lighten the fast shaft, because halving the ratio quarters the reflected inertia.
 :::
 :::
 
@@ -259,12 +259,12 @@ M_b = T R + I \alpha = 6030 \times 0.4 + 18 \times 5.625
 $$
 *Check.* Energy: the cage loses $\tfrac{1}{2} \times 500 \times 9 = 2250\ \mathrm{J}$ of kinetic energy and $500 \times 9.81 \times 2 = 9810\ \mathrm{J}$ of potential energy, a total of $12\,060\ \mathrm{J}$ to be dissipated; the brake turns through $2 / 0.4 = 5\ \mathrm{rad}$, so $M_b = 12\,060 / 5 = 2412\ \mathrm{N\,m}$ — which is the rope's moment alone, and the extra $101\ \mathrm{N\,m}$ is the drum's own kinetic energy, $\tfrac{1}{2} \times 18 \times 7.5^{2} = 506\ \mathrm{J}$, which the energy balance must also absorb. Adding $506 / 5 = 101$ gives $2513\ \mathrm{N\,m}$ $\checkmark$
 
-*Sanity.* The $23$ per cent dynamic overshoot in the rope tension is the whole of hoist-rope design: a rope sized on the static weight with a nominal safety factor of $9$ has, on an emergency stop, a real safety factor of $7$, and mine regulations specify the stop deceleration precisely for that reason. The other number to notice is that the drum's own inertia is only $4$ per cent of the braking torque — but on a **light** cage or a big multi-rope drum it is $20$ per cent, and a brake set on the high-speed side of the reducer sees that inertia multiplied by the **square** of the gear ratio, which is why hoist brakes are always applied to the low-speed shaft or directly to the drum.
+*Sanity.* The $23$ per cent dynamic overshoot in the rope tension is the whole of hoist-rope design: a rope sized on the static weight with a nominal safety factor of $9$ has, on an emergency stop, a real safety factor of $7$, and mine regulations specify the stop deceleration precisely for that reason. The other number to notice is that the drum's own inertia is only $4$ per cent of the braking torque — but on a **light** cage or a big multi-rope drum it is $20$ per cent, and the motor rotor, reflected to the drum through the **square** of the gear ratio, can carry as much kinetic energy as the drum itself — one reason the emergency brakes of mine hoists act directly on the drum.
 :::
 :::
 
 ::: history
-The **work–energy** principle for rigid bodies is d'Alembert's and, in its cleanest form, Daniel Bernoulli's of 1726; the term "kinetic energy" for $\tfrac{1}{2} m v^{2}$ is Thomas Young's of 1807, and the distinction between kinetic and potential energy, with the conservation statement in the modern form, is Rankine's of 1853. **König's theorem**, that the energy splits into translation of the mass centre and rotation about it, is from 1834 and is sometimes called the theorem of the living force of the centre of gravity. The **ballistic pendulum** is Robins's invention of 1742, in *New Principles of Gunnery*, and it was the standard method of measuring muzzle velocity for a hundred and fifty years — precisely because it converts an unmeasurable impulsive force into a measurable height, at the cost of the enormous energy loss computed in Example 3. The **coefficient of restitution** as a measured material property is Rankine's and Newton's experimental legacy, and the modern treatment of rigid-body impact as a differential inclusion rather than a conservation law, resolving the indeterminacy of simultaneous contacts, begins with Poisson in 1833 and runs through Stronge, Kane and the nonsmooth dynamics of Moreau and Batlle in the 1980s.
+The **work–energy** principle for systems of bodies grew out of the conservation of *vis viva*, which Huygens used for the compound pendulum and Johann and Daniel Bernoulli developed in the 1720s and 1730s; the word *energy* for it is Thomas Young's of 1807, the name *kinetic energy* is William Thomson's, and *potential energy* is Rankine's of 1853. **König's theorem**, that the energy splits into translation of the mass centre and rotation about it, is due to Samuel König in 1751. The **ballistic pendulum** is Robins's invention of 1742, in *New Principles of Gunnery*, and it remained the standard way of measuring projectile velocity for about a century — precisely because it converts an unmeasurable impulsive force into a measurable swing, at the cost of the enormous energy loss computed in [[#ex-ballistic]]. The **coefficient of restitution** goes back to Newton's collision experiments, and the modern theory of rigid-body impact, which must resolve the indeterminacy of simultaneous and frictional contacts, runs from Poisson's restitution hypothesis of 1833 to the nonsmooth dynamics of Moreau and others from the 1980s and Stronge's energetic coefficient of restitution of 1990.
 :::
 
 ## Where this leads
@@ -296,8 +296,7 @@ The friction is generally **not** zero — it is what enforces the no-slip condi
 ::: exercise Kinetic energy {level=1 check="0.333"}
 A solid cylinder of mass $m$ and radius $R$ rolls at speed $v$. What fraction of its kinetic energy is rotational?
 ::: solution
-$T_{\text{rot}} / T = \tfrac{1}{2} I_G \omega^{2} / \tfrac{1}{2} m v^{2} \left( 1 + k^{2} / R^{2} \right) = \tfrac{1}{2} / \tfrac{3}{2} = 1 / 3$, so the rotational fraction is $1 / 3$ and the translational is $2 / 3$.
-*Note.* The answer to enter is the fraction $1 / 3 = 0.333$.
+$T_{\text{rot}} / T = \tfrac{1}{2} I_G \omega^{2} / \tfrac{1}{2} m v^{2} \left( 1 + k^{2} / R^{2} \right) = \tfrac{1}{2} / \tfrac{3}{2} = 1 / 3$, so the rotational fraction is $1 / 3 = 0.333$ and the translational is $2 / 3$.
 :::
 :::
 
@@ -308,12 +307,11 @@ $m g s \sin \theta = \tfrac{1}{2} m v^{2} \times 1.5$, so
 $$
 v = \sqrt{\frac{2 \times 9.81 \times 5 \times 0.5}{1.5}} = \sqrt{32.7} = 5.72\ \mathrm{m / s}.
 $$
-*Note.* The answer to enter is $5.72\ \mathrm{m / s}$.
 :::
 :::
 
 ::: exercise Reflected inertia {level=1 check="2.1"}
-For the drive of Example 5, what is the effective moment of inertia at the gear shaft?
+For the drive of [[#ex-geared-drive]], what is the effective moment of inertia at the gear shaft?
 ::: solution
 $I_{\text{eff}} = 1.20 + 0.90 = 2.10\ \mathrm{kg\,m^{2}}$.
 :::
@@ -331,7 +329,7 @@ $$
 $$
 \omega = \frac{v}{r} = \frac{1.316}{0.005} = 263\ \mathrm{rad / s} = 2510\ \mathrm{rpm} .
 $$
-*Sanity.* Two and a half thousand revolutions a minute from a fall of a metre and a half, and only $8$ per cent of the potential energy ends up as translation — the other $92$ per cent is spin. That is the whole trick of a yo-yo, and the same arithmetic governs a **falling-weight** clock's escapement, which exists precisely to dump that $92$ per cent slowly and regularly rather than in a burst.
+*Sanity.* Two and a half thousand revolutions a minute from a fall of a metre and a half, and only $1 / 17$, or $6$ per cent, of the potential energy ends up as translation — the other $94$ per cent is spin. That is the whole trick of a yo-yo.
 :::
 :::
 
@@ -348,7 +346,7 @@ $$
 = \frac{\left( M L^{2} / 24 \right) \times 9 J^{2} / M^{2} L^{2}}{J^{2} / 2 M}
 = \frac{9}{12} = 0.75 .
 $$
-*Sanity.* The split depends only on where the blow lands: in general $T_{\text{rot}} / T_{\text{trans}} = M d^{2} / I_G = 12 d^{2} / L^{2}$, which is $0$ at the centre, $0.75$ at $L / 4$, and $3$ at the end. A cue ball struck off centre gets spin in exactly this ratio — for a sphere $I_G = 2 m R^{2} / 5$ the ratio is $5 d^{2} / \left( 2 R^{2} \right)$ — which is why the "english" a player puts on a ball is quoted as a fraction of the radius rather than as a force: the ratio of spin to speed is set by the offset alone, and the strength of the stroke only scales both together. The natural value $d = 0.4 R$ gives pure rolling on a cue ball, which is why that offset is the one that produces no side slip at the cloth and why anything struck harder at that same point still travels straight but leaves more energy in the cloth as heat.
+*Sanity.* The split depends only on where the blow lands: in general $T_{\text{rot}} / T_{\text{trans}} = M d^{2} / I_G = 12 d^{2} / L^{2}$, which is $0$ at the centre, $0.75$ at $L / 4$, and $3$ at the end. A cue ball struck off centre gets spin in exactly this ratio — for a sphere $I_G = 2 m R^{2} / 5$ the ratio is $5 d^{2} / \left( 2 R^{2} \right)$ — which is why the "english" a player puts on a ball is quoted as a fraction of the radius rather than as a force: the ratio of spin to speed is set by the offset alone, and the strength of the stroke only scales both together. A horizontal stroke at $d = 0.4 R$ above the centre gives exactly the spin of pure rolling, $\omega = v / R$, so the ball rolls without slipping on the cloth from the start.
 :::
 :::
 
@@ -369,7 +367,7 @@ $$
 :::
 
 ::: exercise Design {level=3}
-A drop forge hammers a $200\ \mathrm{kg}$ ram from a height of $1.2\ \mathrm{m}$ onto a $1500\ \mathrm{kg}$ anvil assembly. Estimate the energy delivered to the work, the rebound, and the force on the foundation if the work is $8\ \mathrm{mm}$ thick at the moment of impact. Say what you would change to deliver more energy to the work.
+A drop forge hammers a $200\ \mathrm{kg}$ ram from a height of $1.2\ \mathrm{m}$ onto a $1500\ \mathrm{kg}$ anvil assembly. Estimate the energy delivered to the work, the rebound, and the mean forging force if the blow is absorbed over $8\ \mathrm{mm}$ of deformation. Say what you would change to deliver more energy to the work.
 ::: solution
 **Impact velocity.** $v = \sqrt{2 g h} = \sqrt{2 \times 9.81 \times 1.2} = 4.85\ \mathrm{m / s}$.
 **Energy available.**
@@ -385,19 +383,19 @@ $$
 $$
 \Delta T = 2354 - 277 = 2077\ \mathrm{J} \quad \left( 88\ \text{per cent} \right) .
 $$
-**Rebound.** If the work is not perfectly plastic but has $e = 0.2$, the separation condition $v_1 - v_2 = e v_1^{\prime}$ together with momentum conservation gives
+**Rebound.** If the work is not perfectly plastic but has $e = 0.2$, the restitution condition $v_2 - v_1 = e v$ (velocities downwards positive, ram $1$, anvil $2$) together with momentum conservation gives
 $$
-v_2 = \frac{m_1 v \left( 1 - e \right)}{m_1 + m_2} = \frac{200 \times 4.85 \times 0.8}{1700} = 0.456\ \mathrm{m / s},
+v_2 = \frac{m_1 v \left( 1 + e \right)}{m_1 + m_2} = \frac{200 \times 4.85 \times 1.2}{1700} = 0.685\ \mathrm{m / s},
 \qquad
-v_1 = v_2 + e v = 1.43\ \mathrm{m / s} ,
+v_1 = v_2 - e v = - 0.285\ \mathrm{m / s} ,
 $$
-a rebound height of $v_1^{2} / 2 g = 104\ \mathrm{mm}$ and a kinetic energy left in the two bodies of $360\ \mathrm{J}$ rather than $277\ \mathrm{J}$. The delivered energy falls to $1994\ \mathrm{J}$, $85$ per cent.
+so the ram rebounds upwards at $0.285\ \mathrm{m / s}$, to a height of $v_1^{2} / 2 g = 4.2\ \mathrm{mm}$, and the kinetic energy left in the two bodies is $8 + 352 = 360\ \mathrm{J}$ rather than $277\ \mathrm{J}$. The delivered energy falls to $1994\ \mathrm{J}$, $85$ per cent.
 
 **Mean forging force.**
 $$
 \bar{F} = \frac{2077}{0.008} = 260\ \mathrm{kN}.
 $$
-*Design comment.* The efficiency of a drop hammer is $\eta = m_{\text{anvil}} / \left( m_{\text{anvil}} + m_{\text{ram}} \right)$, here $0.88$, and it is the reason an anvil is heavy and a forging press's bed is heavier still: every kilogram you add to the anvil goes directly into delivered energy, and every kilogram you add to the ram does too, which is why the ram is made light and the frame massive. Two changes deliver more energy. First, **increase the anvil mass** — going from $1500$ to $3000\ \mathrm{kg}$ raises the efficiency to $0.94$, a $7$ per cent gain, but the foundation then has to carry the extra static weight. Second, **increase the drop height**, which gains linearly in energy but as the square root in cycle time, so it costs throughput. What does **not** help is making the ram heavier: that raises $T_1$ but lowers $\eta$ by exactly the same factor, and to first order the delivered energy is $m_1 g h \, m_2 / \left( m_1 + m_2 \right)$, which is maximised in $m_1$ only by making the anvil heavier. The mean force of $260\ \mathrm{kN}$ is also a warning: the peak is several times that, the frame is designed for it, and the $8\ \mathrm{mm}$ work thickness is what sets everything — a thinner flash would give a proportionally higher force and would crack the die.
+*Design comment.* The efficiency of a drop hammer is $\eta = m_{\text{anvil}} / \left( m_{\text{anvil}} + m_{\text{ram}} \right)$, here $0.88$, and it is the reason an anvil is heavy: every kilogram added to the anvil raises the fraction of the blow's energy that goes into the work. Two changes deliver more energy. First, **increase the anvil mass** — going from $1500$ to $3000\ \mathrm{kg}$ raises the efficiency to $0.94$, a $7$ per cent gain, but the foundation then has to carry the extra static weight. Second, **increase the drop height**, which gains linearly in energy but as the square root in cycle time, so it costs throughput. A heavier ram also raises the delivered energy, $m_1 g h \, m_2 / \left( m_1 + m_2 \right)$, but with diminishing returns as $\eta$ falls, so the anvil-to-ram mass ratio is always kept large. The mean force of $260\ \mathrm{kN}$ is also a warning: the peak is several times that, the frame is designed for it, and the smaller the deformation over which the blow is absorbed, the higher the force — which is why a blow on thin or cold work can damage the dies.
 :::
 :::
 

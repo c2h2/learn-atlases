@@ -9,7 +9,7 @@
   "summary": "Fluid mechanics explains how liquids and gases move and the forces they exert, from water in pipes to air over a wing. The course covers fluid properties and hydrostatics, the kinematics of flow, the integral laws for control volumes, Bernoulli's equation, the differential equations of motion, dimensional analysis and similitude, viscous flow in pipes, boundary layers, lift and drag, and an introduction to compressible flow.",
   "overview": [
     "Fluid mechanics is the study of what liquids and gases do to the things they touch, and the course is organised around one idea: that the equations of motion are simple and their consequences are not. Continuity says mass is conserved, Newton's second law says momentum is conserved, and between those two statements sit the whole of pipe-network design, the whole of lift and drag, and the whole of the difference between a siphon that runs and one that does not. The difficulty is not the algebra but the choices — what to call the control volume, where to cut the streamline, when viscosity may be neglected and when it may not — and every lesson in the course is built around making those choices on a real geometry with real numbers.",
-    "The course moves from the static to the moving, from the integral to the differential, and from the ideal to the viscous. It opens with what a fluid is and what a fluid at rest does — a subject that turns out to include the stability of a barge, the divergence angle of a wind-tunnel wall and the maximum height of a chimney — and then develops the kinematics and the three integral conservation laws, which are the tools an engineer actually uses on a pipe bend, a vane, a nozzle or a turbine stage. Bernoulli's equation follows as the first integral of the momentum equation along a streamline, with its seven assumptions stated so that each can be checked and dropped in turn.",
+    "The course moves from the static to the moving, from the integral to the differential, and from the ideal to the viscous. It opens with what a fluid is and what a fluid at rest does — a subject that turns out to include the force on a dam, the reading of a manometer and the stability of a barge — and then develops the kinematics and the three integral conservation laws, which are the tools an engineer actually uses on a pipe bend, a vane, a nozzle or a turbine stage. Bernoulli's equation follows as the first integral of the momentum equation along a streamline, with its seven assumptions stated so that each can be checked and dropped in turn.",
     "The differential equations then arrive not as a destination but as a way of seeing why the integral results have the form they do, and the four exact solutions — Couette, Poiseuille, Stokes and the stagnation point — are worked in full because they are the only places where the nonlinear term vanishes and because they set the scale for everything that follows. Dimensional analysis and similitude come next, and with them the honest admission that much of the subject is correlation and model testing; the Buckingham Pi theorem is derived, the dimensionless groups are catalogued, and the model-ship correlation line is used to show what a scale model can and cannot tell you.",
     "The last third is the viscous and compressible world that the earlier lessons were quietly preparing: turbulent pipe flow with the Colebrook equation, minor losses, system curves and pump matching, water hammer; then the boundary layer, without which there is no drag, no separation, no stall and no diffuser; and finally compressible flow, where density becomes a variable and a Mach number turns out to be a statement about how much kinetic energy has been converted into pressure. Everything is computed at real conditions — water at twenty degrees, air at sea level, steam at a turbine inlet — and every formula is checked against a hand calculation, because the commonest failure in this subject is a plausible number from a misapplied equation."
   ],
@@ -120,7 +120,7 @@
     {
       "year": 1643,
       "title": "Vacuum, pressure and the birth of hydrostatics",
-      "detail": "Twenty-two centuries earlier Archimedes of Syracuse had stated the principle of buoyancy and Hero of Alexandria had built siphons, force pumps and a steam reaction wheel; the missing idea was that the atmosphere pushes. Evangelista Torricelli balances a column of mercury against the air in 1643, Otto von Guericke's Magdeburg hemispheres of 1654 demonstrate the same pressure publicly, and Blaise Pascal's Puy-de-Dome experiment shows the balance failing with height. Pressure becomes a measurable quantity rather than a horror vacui, and hydrostatics acquires its fundamental variable.",
+      "detail": "Nineteen centuries earlier Archimedes of Syracuse had stated the principle of buoyancy, and Hero of Alexandria had described siphons, force pumps and a steam reaction wheel; the missing idea was that the atmosphere pushes. Evangelista Torricelli balances a column of mercury against the air in 1643, Blaise Pascal's Puy-de-Dôme experiment of 1648 shows the column shortening with altitude, and Otto von Guericke's Magdeburg hemispheres of 1654 demonstrate the force of air pressure publicly. Pressure becomes a measurable quantity rather than a horror vacui, and hydrostatics acquires its fundamental variable.",
       "people": [
         "Archimedes of Syracuse",
         "Evangelista Torricelli",
@@ -131,7 +131,7 @@
     {
       "year": 1738,
       "title": "Hydrodynamica",
-      "detail": "Daniel Bernoulli publishes Hydrodynamica in Strasbourg, deriving the relation between pressure and speed along a streamtube from a crude conservation-of-vis-viva argument, and his father Johann independently obtains the same result in 1743. The equation is named after the son; the modern form, with the head-loss term, is d'Alembert's and Euler's.",
+      "detail": "Daniel Bernoulli publishes Hydrodynamica at Strasbourg, relating pressure and speed in a flowing liquid through an argument based on the conservation of vis viva (kinetic energy); his father Johann's Hydraulica, published in 1742–43 but dated 1732, treats the same problem and set off a priority dispute. The equation is named after the son; the modern form, as an integral of the equations of motion along a streamline, is Euler's.",
       "people": [
         "Daniel Bernoulli",
         "Johann Bernoulli",
@@ -141,7 +141,7 @@
     {
       "year": 1755,
       "title": "The equations of motion of an ideal fluid",
-      "detail": "Leonhard Euler reads Daniel Bernoulli's vis-viva relation, rejects the idea that pressure and speed trade through a conserved living force, and instead writes Newton's second law for a fluid element in his papers of 1755 and 1757. The result is a set of partial differential equations, the first appearance of the acceleration of a fluid particle as we still write it, and of the theorem on circulation that bears his name. They are exact for an inviscid fluid and they predict zero drag on a body moving through it, which is d'Alembert's paradox of 1752 and it took a century and a half to resolve.",
+      "detail": "Leonhard Euler writes Newton's second law for a fluid element in his memoir \"Principes généraux du mouvement des fluides\" (written 1755, published 1757), together with the continuity equation. The result is a set of partial differential equations containing the acceleration of a fluid particle as we still write it. They are exact for an inviscid fluid and predict zero drag on a body moving steadily through it — the paradox d'Alembert had published in 1752, which was resolved only when Prandtl explained the role of the thin viscous layer at the wall in 1904.",
       "people": [
         "Leonhard Euler",
         "Jean le Rond d'Alembert"
@@ -150,7 +150,7 @@
     {
       "year": 1822,
       "title": "The equations of motion with viscosity",
-      "detail": "C.-L.-M.-H. Navier writes down momentum equations with an molecular-cohesion term; G. G. Stokes rederives them rigorously in 1845 with the constitutive relation between stress and rate of strain that still bears both names. The equations are nonlinear, and no general solution has been found in two centuries.",
+      "detail": "Claude-Louis Navier presents momentum equations with an additional term derived from a model of intermolecular forces (read 1822, published 1827); George Gabriel Stokes rederives them in 1845 from a continuum constitutive relation between stress and rate of strain, and the equations bear both names. They are nonlinear, and whether smooth solutions always exist in three dimensions is still an open problem.",
       "people": [
         "Claude-Louis Navier",
         "George Gabriel Stokes"
@@ -159,7 +159,7 @@
     {
       "year": 1883,
       "title": "Transition, and a dyed jet",
-      "detail": "Osborne Reynolds performs the dye-injection experiment in a Manchester laboratory and identifies the dimensionless number that decides whether a pipe flow is laminar or turbulent. His 1895 paper on the averaging of turbulent motion — the Reynolds stresses and the transport theorem — is the foundation of every turbulence model still in use.",
+      "detail": "Osborne Reynolds performs the dye-injection experiment in his Manchester laboratory and identifies the dimensionless number that decides whether a pipe flow is laminar or turbulent. His 1895 paper on the averaging of turbulent motion introduced the Reynolds stresses, the starting point of the turbulence models still in use.",
       "people": [
         "Osborne Reynolds"
       ]
@@ -167,7 +167,7 @@
     {
       "year": 1904,
       "title": "The boundary layer",
-      "detail": "Ludwig Prandtl reads a three-page paper to the Third International Mathematical Congress in Heidelberg, arguing that a fluid's viscosity, however small, is confined near a wall to a layer whose thickness goes as the inverse square root of the Reynolds number, and that outside it the flow may be treated as inviscid. The paradox of d'Alembert disappears, drag acquires a mechanism, and separation, stall and the design of the airfoil all follow. G. I. Taylor called it the most important idea in twentieth-century fluid mechanics; it took thirty years for the mathematics of the layer to be made rigorous.",
+      "detail": "Ludwig Prandtl presents a short paper to the Third International Congress of Mathematicians in Heidelberg, arguing that the effect of a small viscosity is confined to a thin layer near a wall, whose thickness scales as the inverse square root of the Reynolds number, and that outside it the flow may be treated as inviscid. D'Alembert's paradox is resolved, drag acquires a mechanism, and separation and stall become explicable. Blasius solved the flat-plate layer in 1908 and von Kármán gave the momentum-integral method in 1921.",
       "people": [
         "Ludwig Prandtl",
         "Theodore von Karman",
@@ -175,19 +175,19 @@
       ]
     },
     {
-      "year": 1932,
+      "year": 1933,
       "title": "Turbulent friction and the rough wall",
-      "detail": "Johann Nikuradse publishes the sand-grain roughness measurements made at the Kaiser Wilhelm Institute for Flow Research in Gottingen, which reveal the logarithmic law of the wall, the hydraulically smooth and fully rough regimes, and the failure of the smooth-wall law on a fouled surface. Chester Colebrook's 1939 implicit equation and Lewis Ferry Moody's 1944 chart turn it into the design tool every piping engineer uses; the universal law of the wall is only convincingly explained forty years later.",
+      "detail": "Johann Nikuradse publishes his measurements of flow in pipes roughened with uniform sand grains, made at the Kaiser Wilhelm Institute for Flow Research in Göttingen (smooth pipes 1932, rough pipes 1933). They establish the hydraulically smooth, transitional and fully rough regimes and support the logarithmic velocity law of Prandtl and von Kármán. Cyril Colebrook's 1939 equation for commercial pipes and Lewis Ferry Moody's 1944 chart turn the results into the design tool every piping engineer uses.",
       "people": [
         "Johann Nikuradse",
-        "Chester R. Colebrook",
+        "Cyril F. Colebrook",
         "Lewis Ferry Moody"
       ]
     },
     {
       "year": 1952,
       "title": "The area rule",
-      "detail": "Richard Whitcomb at NACA Langley publishes the discovery that the transonic wave drag of an aircraft is set by its longitudinal cross-sectional area distribution and not by its wing thickness alone, and the F-102 is redesigned around it in fourteen months. The same 1/sqrt(M^2-1) factor that governs a two-dimensional section governs the whole airframe.",
+      "detail": "Richard Whitcomb at NACA Langley shows that the transonic wave drag of an aircraft depends on how its total cross-sectional area varies along its length, not only on the wing. The \"area rule\" was applied to the Convair F-102, whose redesigned, waisted fuselage let the YF-102A exceed the speed of sound in level flight in 1954.",
       "people": [
         "Richard Whitcomb"
       ]
@@ -221,14 +221,14 @@
     {
       "author": "L. Prandtl and O. G. Tietjens",
       "title": "Fundamentals of Hydro- and Aeromechanics",
-      "publisher": "Dover",
+      "publisher": "McGraw-Hill (Dover reprint)",
       "year": 1934
     },
     {
       "author": "I. G. Currie",
       "title": "Fundamental Mechanics of Fluids",
       "publisher": "CRC Press",
-      "year": 1993
+      "year": 2012
     },
     {
       "author": "J. D. Anderson",
@@ -238,8 +238,8 @@
     },
     {
       "author": "A. J. Smits and T. T. Lim",
-      "title": "Flow Measurement for Experimental Fluid Dynamics",
-      "publisher": "Springer",
+      "title": "Flow Visualization: Techniques and Examples",
+      "publisher": "Imperial College Press",
       "year": 2000
     }
   ],

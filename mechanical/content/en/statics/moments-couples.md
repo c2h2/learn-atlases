@@ -3,7 +3,7 @@ Two people push a door. One pushes at the handle, perpendicular to the panel, an
 Moments are the reason a spanner is long, a clutch is a set of small forces far from the axis rather than one large force near it, a diving board is cantilevered rather than simply supported, and a ship's righting action depends on the horizontal shift of the buoyancy force rather than on its size. They are also the step that turns the particle statics of the last two chapters into the statics of real structures, because real bodies have size and the forces on them are not concurrent.
 
 ::: warning A moment is not a joule
-A newton-metre and a joule have the same dimensions, $\mathrm{kg\,m^{2}\,s^{-2}}$, and are never the same thing. Work is a *scalar* — a force dot a displacement — and a moment is a *vector* (or, in a plane, a signed scalar) — a position cross a force. Writing $100\ \mathrm{J}$ for a bolt torque of $100\ \mathrm{N\,m}$ is a category error, and the reason torque is conventionally quoted in newton-metres and never in joules. The distinction is not pedantry: a bolt tightened to $100\ \mathrm{N\,m}$ stores perhaps $25\ \mathrm{J}$ of elastic energy, and confusing the two numbers in a design calculation gives an answer wrong by a factor of four.
+A newton-metre and a joule have the same dimensions, $\mathrm{kg\,m^{2}\,s^{-2}}$, and are never the same thing. Work is a *scalar* — a force dot a displacement — and a moment is a *vector* (or, in a plane, a signed scalar) — a position cross a force. Writing $100\ \mathrm{J}$ for a bolt torque of $100\ \mathrm{N\,m}$ is a category error, and the reason torque is conventionally quoted in newton-metres and never in joules. The distinction is not pedantry: a bolt tightened to $100\ \mathrm{N\,m}$ stores only of the order of a joule of elastic energy in its shank, and the two numbers have nothing to do with each other.
 :::
 
 ## The moment of a force about a point
@@ -43,7 +43,7 @@ Equivalently, resolve the force: the component perpendicular to the handle is $2
 
 The moment is greatest when $\sin\theta = 1$, that is at $\theta = 90^\circ$, giving $M_{\max} = 62.5\ \mathrm{N\,m}$. Pushing at $60^\circ$ rather than squarely loses $13$ per cent of the available torque, and pushing at $30^\circ$ loses half of it.
 
-*Sanity check.* $54\ \mathrm{N\,m}$ is a typical road-car wheel-bearing torque; a mechanic's one-handed push of $250\ \mathrm{N}$ on a $0.25\ \mathrm{m}$ bar is exactly the right order to reach it. The answer is between $0$ and $62.5\ \mathrm{N\,m}$ as it must be, and it has units of force times length, not force.
+*Sanity check.* $54\ \mathrm{N\,m}$ is about the tightening torque of an M10 grade 8.8 bolt; a mechanic's one-handed push of $250\ \mathrm{N}$ on a $0.25\ \mathrm{m}$ bar is exactly the right order to reach it. The answer is between $0$ and $62.5\ \mathrm{N\,m}$ as it must be, and it has units of force times length, not force.
 :::
 :::
 
@@ -145,7 +145,7 @@ M_{AB} = \mathbf{u}_{AB} \cdot \mathbf{M}_A
 $$
 The negative sign means the force tends to turn the body clockwise about the sense $A \to B$. About the $x$-axis, $\mathbf{u} = \mathbf{i}$ and $M_x = 170\ \mathrm{N\,m}$ immediately.
 
-*Sanity check.* $|M_{AB}| = 76.7\ \mathrm{N\,m}$ must be no greater than $|\mathbf{M}_A| = \sqrt{170^{2} + 70^{2} + 130^{2}} = 224.5\ \mathrm{N\,m}$, since a component cannot exceed the vector; it is $34$ per cent of it, which is plausible for an axis that is not aligned with $\mathbf{M}_A$. Recomputing with $\mathbf{r}$ taken from $B$ instead gives the same $-76.7\ \mathrm{N\,m}$, as the proposition guarantees.
+*Sanity check.* $|M_{AB}| = 76.7\ \mathrm{N\,m}$ must be no greater than $|\mathbf{M}_A| = \sqrt{170^{2} + 70^{2} + 130^{2}} = 225.2\ \mathrm{N\,m}$, since a component cannot exceed the vector; it is $34$ per cent of it, which is plausible for an axis that is not aligned with $\mathbf{M}_A$. Recomputing with $\mathbf{r}$ taken from $B$ instead gives the same $-76.7\ \mathrm{N\,m}$, as the proposition guarantees.
 :::
 :::
 
@@ -179,7 +179,7 @@ $$
 $$
 $$
 \mathbf{M} = 646.4\, \mathbf{i} + 200.0\, \mathbf{j}\ \mathrm{N\,m}, \qquad
-M = \sqrt{646.4^{2} + 200.0^{2}} = 676\ \mathrm{N\,m}
+M = \sqrt{646.4^{2} + 200.0^{2}} = 677\ \mathrm{N\,m}
 $$
 at $\arctan(200 / 646.4) = 17.2^{\circ}$ to the $x$-axis in the $xy$-plane.
 
@@ -188,11 +188,11 @@ at $\arctan(200 / 646.4) = 17.2^{\circ}$ to the $x$-axis in the $xy$-plane.
 :::
 
 ::: widget plot
-f: 400*sin(x*pi/180)
+f: 60*sin(x*pi/180)
 x: 0, 180
-y: 0, 420
-labels: \text{moment of a couple, } M = Fd\sin\theta
-caption: Moment of a couple of two $400\ \mathrm{N}$ forces $0.15\ \mathrm{m}$ apart, plotted against the angle $\theta$ between the arm joining the two lines of action and the forces themselves. The maximum is $60\ \mathrm{N\,m}$ at $\theta = 90^\circ$; at $30^\circ$ the moment is $30\ \mathrm{N\,m}$; at $0^\circ$ the two forces are collinear and the couple vanishes. This is why bolt circles, clutch plates and flange bolts are sized by the *perpendicular* spacing of the forces they carry.
+y: 0, 65
+labels: \text{moment of a couple, } M = Fa\sin\theta
+caption: Moment of a couple of two $400\ \mathrm{N}$ forces applied at two points $a = 0.15\ \mathrm{m}$ apart, plotted against the angle $\theta$ between the arm joining the two lines of action and the forces themselves. The maximum is $60\ \mathrm{N\,m}$ at $\theta = 90^\circ$; at $30^\circ$ the moment is $30\ \mathrm{N\,m}$; at $0^\circ$ the two forces are collinear and the couple vanishes. This is why bolt circles, clutch plates and flange bolts are sized by the *perpendicular* spacing of the forces they carry.
 :::
 
 ## Reducing a force system to a force and a couple at a point
@@ -207,7 +207,7 @@ $$
 $$
 a force applied at $O$ together with a couple. Changing the reduction point from $O$ to $O'$ changes the couple to
 $$
-\mathbf{M}_{R,O'} = \mathbf{M}_{R,O} + \mathbf{r}_{O \to O'} \times \mathbf{F}_R ,
+\mathbf{M}_{R,O'} = \mathbf{M}_{R,O} + \mathbf{r}_{O' \to O} \times \mathbf{F}_R ,
 $$
 while leaving $\mathbf{F}_R$ unchanged. Two consequences: the component of $\mathbf{M}_{R}$ along $\mathbf{F}_R$, called the **twist** or **pitch** component, is independent of $O$; and there is always some point (in three dimensions, a whole line of points) at which the couple's component perpendicular to $\mathbf{F}_R$ vanishes, so that the system reduces to a **wrench** — a force and a parallel couple.
 :::
@@ -216,9 +216,9 @@ while leaving $\mathbf{F}_R$ unchanged. Two consequences: the component of $\mat
 Move each force $\mathbf{F}_i$ to $O$ by transmissibility plus the standard device of inserting $+\mathbf{F}_i$ and $-\mathbf{F}_i$ at $O$: this gives the force $\mathbf{F}_i$ at $O$ together with the couple $\mathbf{r}_i \times \mathbf{F}_i$. Summing over $i$ gives the stated pair, and the equivalence is exact for a rigid body. For the change of point, write $\mathbf{r}_i' = \mathbf{r}_i - \mathbf{a}$ where $\mathbf{a} = \mathbf{r}_{O \to O'}$; then
 $$
 \mathbf{M}_{R,O'} = \sum_i (\mathbf{r}_i - \mathbf{a}) \times \mathbf{F}_i
-= \mathbf{M}_{R,O} - \mathbf{a} \times \mathbf{F}_R = \mathbf{M}_{R,O} + \mathbf{a} \times \mathbf{F}_R \cdot(-1) \cdot(-1) = \mathbf{M}_{R,O} + \mathbf{r}_{O' \to O} \times \mathbf{F}_R .
+= \mathbf{M}_{R,O} - \mathbf{a} \times \mathbf{F}_R = \mathbf{M}_{R,O} + \mathbf{r}_{O' \to O} \times \mathbf{F}_R .
 $$
-Dotting with the unit vector $\hat{\mathbf{F}}_R$ gives $\mathbf{M}_{R,O'} \cdot \hat{\mathbf{F}}_R = \mathbf{M}_{R,O} \cdot \hat{\mathbf{F}}_R + (\mathbf{r}_{O' \to O} \times \mathbf{F}_R) \cdot \hat{\mathbf{F}}_R$, and the last term is zero because $\mathbf{r} \times \mathbf{F}_R$ is perpendicular to $\mathbf{F}_R$; the twist is therefore invariant. Finally, choose a point displaced by $\mathbf{a}$ perpendicular to $\mathbf{F}_R$ with $\mathbf{a} \times \mathbf{F}_R = -\mathbf{M}_{\perp}$; such an $\mathbf{a}$ exists and is unique up to a shift along $\mathbf{F}_R$, namely $\mathbf{a} = \mathbf{M}_{\perp} \times \hat{\mathbf{F}}_R / F_R$, which proves the wrench form and the line of points.
+Dotting with the unit vector $\hat{\mathbf{F}}_R$ gives $\mathbf{M}_{R,O'} \cdot \hat{\mathbf{F}}_R = \mathbf{M}_{R,O} \cdot \hat{\mathbf{F}}_R + (\mathbf{r}_{O' \to O} \times \mathbf{F}_R) \cdot \hat{\mathbf{F}}_R$, and the last term is zero because $\mathbf{r} \times \mathbf{F}_R$ is perpendicular to $\mathbf{F}_R$; the twist is therefore invariant. Finally, choose a point displaced by $\mathbf{a}$ perpendicular to $\mathbf{F}_R$ with $\mathbf{a} \times \mathbf{F}_R = \mathbf{M}_{\perp}$, the component of $\mathbf{M}_{R,O}$ perpendicular to $\mathbf{F}_R$, so that the perpendicular part of the couple vanishes there; such an $\mathbf{a}$ exists and is unique up to a shift along $\mathbf{F}_R$, namely $\mathbf{a} = \hat{\mathbf{F}}_R \times \mathbf{M}_{\perp} / F_R$, which proves the wrench form and the line of points.
 :::
 
 ::: example Reduce a plane system to a force and a couple, then to one force {#ex-reduce}
@@ -249,21 +249,21 @@ The whole system is therefore equivalent to a single horizontal force of $30\ \m
 :::
 
 ::: warning A couple cannot be balanced by a force
-Students routinely write $\sum M = 0$ and $\sum F = 0$ as though one implied the other, and try to "cancel" a couple with a force. They are independent conditions: a couple has zero resultant force and non-zero moment, so no force contributes to its balance in $\sum \mathbf{F}$, and no force-free couple appears in $\sum \mathbf{F}$ either. When a couple moment appears in a problem — a motor's torque reaction, a bolt's pretension, a welded joint's applied moment — include it in the moment equation only, and include it with its sign, not its magnitude. Also remember that a couple may be taken about *any* point when writing $\sum M = 0$, which is a licence a single force does not have.
+Students routinely write $\sum M = 0$ and $\sum F = 0$ as though one implied the other, and try to "cancel" a couple with a force. They are independent conditions: a couple has zero resultant force and non-zero moment, so no force contributes to its balance in $\sum \mathbf{F}$, and no force-free couple appears in $\sum \mathbf{F}$ either. When a couple moment appears in a problem — a motor's torque reaction, a shaft's applied torque, a welded joint's applied moment — include it in the moment equation only, and include it with its sign, not its magnitude. Also remember that a couple may be taken about *any* point when writing $\sum M = 0$, which is a licence a single force does not have.
 :::
 
 ::: history
-Varignon's theorem appears in his *Projet d'une nouvelle méchanique* of 1687, published the same year as Newton's *Principia* and much less read; Varignon died in 1722 and the full *Nouvelles conjectures sur la pesanteur* appeared posthumously. The theorem was known in substance to Stevin and to Galileo, but Varignon's statement in terms of components is the one still used, and Euler and Daniel Bernoulli put it into analytic mechanics in the 1750s. The concept of the couple, and the demonstration that its moment is independent of the point, belong to Poinsot's *Éléments de statique* of 1808 and his *Théorie nouvelle de la rotation des corps* of 1834, in which the reduction of an arbitrary force system to a wrench and the geometric picture of Poinsot's ellipsoid and central axis are set out. The "central axis" of that reduction is exactly the line of points along which the wrench form holds, and it is still the cleanest way to state what a general load system does to a rigid body.
+Varignon's theorem appears in his *Projet d'une nouvelle méchanique* of 1687, published the same year as Newton's *Principia* and much less read; Varignon died in 1722, and the full treatise the *Projet* had announced, the *Nouvelle mécanique ou statique*, appeared posthumously in 1725. The theorem was known in substance to Stevin and to Galileo, but Varignon's statement in terms of components is the one still used. The theory of the couple, and the demonstration that its moment is independent of the point, belong to Poinsot's *Éléments de statique* of 1803, which also reduces an arbitrary force system to a single force and a couple about a **central axis** — exactly the line of points along which the wrench form holds, and still the cleanest way to state what a general load system does to a rigid body. Poinsot's *Théorie nouvelle de la rotation des corps* of 1834 carried couples into rigid-body dynamics and introduced the ellipsoid that bears his name.
 :::
 
 ::: quiz
 A force of magnitude $F$ acts at distance $r$ from $O$. Which change produces the largest moment about $O$?
-- [ ] Doubling $F$
+- [ ] Increasing $F$ by $50$ per cent
 - [x] Doubling the moment arm $d$
 - [ ] Halving $F$ and doubling $r$
 - [ ] Rotating the force to be radial
 ::: solution
-The moment is $M = F d$, so doubling the arm doubles the moment, exactly as doubling the force does — the two are equivalent, and either doubles $M$. Halving $F$ and doubling $r$ leaves $M$ unchanged if the force stays perpendicular, and rotating the force to be radial makes $d = 0$ and the moment zero. The lesson is that force and arm enter $M = Fd$ symmetrically: a small force on a long lever is indistinguishable, as far as rigid-body equilibrium is concerned, from a large force on a short one. That is the whole content of Archimedes' lever, and the reason a $400\ \mathrm{N}$ pull on a $0.5\ \mathrm{m}$ bar exceeds a $1000\ \mathrm{N}$ pull on a $0.15\ \mathrm{m}$ bar.
+The moment is $M = F d$, so doubling the arm doubles the moment, while increasing the force by $50$ per cent raises it by only $50$ per cent. Halving $F$ and doubling $r$ leaves $M$ unchanged if the force stays perpendicular, and rotating the force to be radial makes $d = 0$ and the moment zero. The lesson is that force and arm enter $M = Fd$ symmetrically: a small force on a long lever is indistinguishable, as far as rigid-body equilibrium is concerned, from a large force on a short one. That is the whole content of Archimedes' lever, and the reason a $400\ \mathrm{N}$ pull on a $0.5\ \mathrm{m}$ bar exceeds a $1000\ \mathrm{N}$ pull on a $0.15\ \mathrm{m}$ bar.
 :::
 :::
 
@@ -338,7 +338,7 @@ $\mathbf{u}_{AB} = (1, 2, 2) / 3$, $\mathbf{r} = \vec{AP} = (2, 3, 1)\ \mathrm{m
 $$
 M_{AB} = \mathbf{u}_{AB} \cdot \mathbf{M}_A = \frac{170 - 140 - 260}{3} = -76.7\ \mathrm{N\,m}.
 $$
-Recomputing with $\mathbf{r} = \vec{BP} = (1, 1, -1)$ gives the same value, confirming the invariance. The magnitude of the total moment about $A$ is $224.5\ \mathrm{N\,m}$, of which only $34$ per cent is usable about the diagonal axis; the rest is reacted by the axis's bearings.
+Recomputing with $\mathbf{r} = \vec{BP} = (1, 1, -1)$ gives the same value, confirming the invariance. The magnitude of the total moment about $A$ is $225.2\ \mathrm{N\,m}$, of which only $34$ per cent is usable about the diagonal axis; the rest is reacted by the axis's bearings.
 :::
 :::
 
@@ -350,24 +350,24 @@ $$
 M_\parallel = \hat{\mathbf{F}} \cdot \mathbf{M}_{R,O}
 = 0.6 \times 30 + 0 \times 40 + 0.8 \times (-22.5) = 18.0 - 18.0 = 0\ \mathrm{N\,m}.
 $$
-The couple is entirely perpendicular to the force, so the system is not a wrench at all but a single force. Since $\mathbf{M} \cdot \mathbf{F} = 0$, the shift $\mathbf{a}$ from $O$ to the line of action solves $\mathbf{a} \times \mathbf{F}_R = -\mathbf{M}_{R,O}$ and is, by the vector triple product,
+The couple is entirely perpendicular to the force, so the system is not a wrench at all but a single force. Since $\mathbf{M} \cdot \mathbf{F} = 0$, the position $\mathbf{a}$ of a point on the line of action must give the force $\mathbf{F}_R$ placed there a moment about $O$ equal to the couple, $\mathbf{a} \times \mathbf{F}_R = \mathbf{M}_{R,O}$, and by the vector triple product
 $$
-\mathbf{a} = \frac{\mathbf{M}_{R,O} \times \mathbf{F}_R}{F_R^{2}} : \qquad
-\left( \frac{\mathbf{M} \times \mathbf{F}}{F^{2}} \right) \times \mathbf{F}
-= \frac{\mathbf{F}(\mathbf{M} \cdot \mathbf{F}) - \mathbf{M}(\mathbf{F} \cdot \mathbf{F})}{F^{2}} = -\mathbf{M}.
+\mathbf{a} = \frac{\mathbf{F}_R \times \mathbf{M}_{R,O}}{F_R^{2}} : \qquad
+\left( \frac{\mathbf{F} \times \mathbf{M}}{F^{2}} \right) \times \mathbf{F}
+= \frac{\mathbf{M}(\mathbf{F} \cdot \mathbf{F}) - \mathbf{F}(\mathbf{M} \cdot \mathbf{F})}{F^{2}} = \mathbf{M}.
 $$
 Numerically,
 $$
-\mathbf{M}_{R,O} \times \mathbf{F}_R
-= \big( 40 \times 80 - (-22.5) \times 0,\; (-22.5) \times 60 - 30 \times 80,\; 30 \times 0 - 40 \times 60 \big)
-= (3200,\; -3750,\; -2400)\ \mathrm{N^{2}m},
+\mathbf{F}_R \times \mathbf{M}_{R,O}
+= \big( 0 \times (-22.5) - 80 \times 40,\; 80 \times 30 - 60 \times (-22.5),\; 60 \times 40 - 0 \times 30 \big)
+= (-3200,\; 3750,\; 2400)\ \mathrm{N^{2}m},
 $$
 $$
-\mathbf{a} = (0.320,\; -0.375,\; -0.240)\ \mathrm{m}, \qquad |\mathbf{a}| = 0.541\ \mathrm{m}.
+\mathbf{a} = (-0.320,\; 0.375,\; 0.240)\ \mathrm{m}, \qquad |\mathbf{a}| = 0.541\ \mathrm{m}.
 $$
-*Check.* $\mathbf{a} \times \mathbf{F}_R = \big( (-0.375)(80) - (-0.240)(0),\; (-0.240)(60) - (0.320)(80),\; (0.320)(0) - (-0.375)(60) \big)$
+*Check.* $\mathbf{a} \times \mathbf{F}_R = \big( (0.375)(80) - (0.240)(0),\; (0.240)(60) - (-0.320)(80),\; (-0.320)(0) - (0.375)(60) \big)$
 $$
-= (-30.0,\; -14.4 - 25.6,\; 22.5) = (-30.0,\; -40.0,\; 22.5) = -\mathbf{M}_{R,O}.
+= (30.0,\; 14.4 + 25.6,\; -22.5) = (30.0,\; 40.0,\; -22.5) = \mathbf{M}_{R,O}.
 $$
 Correct in all three components. Note that $|\mathbf{a}| = 0.541\ \mathrm{m} = M_\perp / F_R = 54.1 / 100$, as it must be, and that every point of the line $\mathbf{a} + \lambda \hat{\mathbf{F}}$ is equally valid — the line of action of a force is a line, not a point.
 :::
@@ -384,17 +384,17 @@ $$
 $$
 \bar{x} = \frac{r}{5} \sum \cos\theta_i = \frac{0.075}{5} (0.5 - 0.5 - 1 - 0.5 + 0.5) = -0.015\ \mathrm{m}, \qquad \bar{y} = 0 .
 $$
-The distances from this centre are $0.0835\ \mathrm{m}$ for the two bolts nearest the gap at $60^\circ$ and $300^\circ$, $0.0687\ \mathrm{m}$ for those at $120^\circ$ and $240^\circ$, and $0.0600\ \mathrm{m}$ for the bolt at $180^\circ$, giving
+The distances from this centre are $0.0835\ \mathrm{m}$ for the two bolts nearest the gap at $60^\circ$ and $300^\circ$, $0.0687\ \mathrm{m}$ for those at $120^\circ$ and $240^\circ$, and $0.0600\ \mathrm{m}$ for the single bolt at $180^\circ$, giving
 $$
-\textstyle \sum d_i^{2} = 2 (0.0835^{2} + 0.0687^{2} + 0.0600^{2}) = 0.03059\ \mathrm{m^{2}} .
+\textstyle \sum d_i^{2} = 2 (0.0835^{2} + 0.0687^{2}) + 0.0600^{2} = 0.02700\ \mathrm{m^{2}} .
 $$
 The torsion of a rigid plate about its centroid gives $F_i = T d_i / \sum d_j^{2}$, so the worst bolt carries
 $$
-F_{\max} = \frac{500 \times 0.0835}{0.03059} = 1365\ \mathrm{N},
+F_{\max} = \frac{500 \times 0.0835}{0.02700} = 1547\ \mathrm{N},
 $$
-$23$ per cent above the six-bolt value and $2.7$ per cent above the naive mean $500 / (5 \times 0.075) = 1333\ \mathrm{N}$.
+$39$ per cent above the six-bolt value and $16$ per cent above the naive mean $500 / (5 \times 0.075) = 1333\ \mathrm{N}$.
 
-*Design conclusion.* Losing one bolt of six raises the worst bolt by only about a quarter, which is tolerable if the joint is rated for it; but the load is also now *eccentric*, since the bolt-group centre no longer coincides with the shaft axis, and a flange that was self-equilibrating now bends. A coupling intended to survive a missing bolt must be rated on the eccentric group, not on the symmetric one.
+*Design conclusion.* Losing one bolt of six raises the worst bolt by about $40$ per cent, which is tolerable only if the joint is rated for it; but the load is also now *eccentric*, since the bolt-group centre no longer coincides with the shaft axis, and a flange that was self-equilibrating now bends. A coupling intended to survive a missing bolt must be rated on the eccentric group, not on the symmetric one.
 :::
 :::
 

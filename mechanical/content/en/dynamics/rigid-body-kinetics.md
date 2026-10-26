@@ -79,16 +79,16 @@ $$
 $$
 \alpha = \frac{18}{0.75} = 24.0\ \mathrm{rad / s^{2}} \quad \checkmark
 $$
-*Sanity.* The friction is tiny and points **backwards**, against the pull — which surprises most people twice over. Its direction is set by the height at which the cord leaves: pull above the **critical height** $h = R \left( 1 + k^{2} / R^{2} \right) = 0.2 \times 1.5625 = 312.5\ \mathrm{mm}$ and the spool rolls **towards** you with friction forwards; pull below it and friction reverses. At exactly $312.5\ \mathrm{mm}$ the friction is zero and the spool rolls with no tendency to slip at all. That height is the same one at which the line of the cord passes through the contact point, and it is the reason a yo-yo on a table reverses direction as you lift the string.
+*Sanity.* The friction is tiny and points **backwards**, against the pull — which surprises most people twice over. Its direction is set by the height at which the cord leaves: pull above the **critical height** $h = R \left( 1 + k^{2} / R^{2} \right) = 0.2 \times 1.5625 = 312.5\ \mathrm{mm}$ and the spool rolls **towards** you with friction forwards; pull below it and friction reverses. At exactly $312.5\ \mathrm{mm}$ the friction is zero and the spool rolls with no tendency to slip at all. This is a different criterion from the yo-yo reversal of [[dynamics/rigid-body-kinematics]], where the angle of the cord decides which way the spool rolls: here the spool always rolls towards a horizontal pull, and only the friction changes sign.
 :::
 :::
 
 ::: widget plot
 f: 60*0.2*(0.2+x)/(12*(0.0225+0.04))
-x: 0, 0.3
-y: 0, 5.5
+x: 0, 0.2
+y: 0, 7
 labels: \text{acceleration of the centre } \left( \mathrm{m/s^2} \right)
-caption: Acceleration of the spool of Example 1 against the radius $x$ of the core on which the $60\ \mathrm{N}$ cord is wound, for a cord pulling horizontally at height $R + x$. The relation is linear in $x$ because the moment arm of the pull about the contact point is exactly $R + x$, while the inertia $I_C$ is unchanged. Winding the cord on the **bottom** of the core instead of the top reverses the sign of $r$ and gives $a = 1.60\ \mathrm{m / s^{2}}$ in the same direction — the spool still rolls towards the pull, but far more slowly, and the friction reverses.
+caption: Acceleration of the spool of the example above against the radius $x$ of the core on which the $60\ \mathrm{N}$ cord is wound, for a cord pulling horizontally at height $R + x$. The relation is linear in $x$ because the moment arm of the pull about the contact point is exactly $R + x$, while the inertia $I_C$ is unchanged. Winding the cord on the **bottom** of the core instead of the top reverses the sign of $r$ and gives $a = 1.60\ \mathrm{m / s^{2}}$ in the same direction — the spool still rolls towards the pull, but far more slowly, and the backward friction grows from $2.4$ to $40.8\ \mathrm{N}$.
 :::
 
 ::: definition Kinetic diagrams and D'Alembert's principle {#def-dalembert}
@@ -127,7 +127,7 @@ J_O = \frac{J m \bar{r} q}{I_O} - J
 $$
 which vanishes when $q = I_O / m \bar{r}$. Writing $I_O = m \left( k^{2} + \bar{r}^{2} \right)$ gives the stated form. $\checkmark$
 
-*Note the reciprocity.* Since $q = \bar{r} + k^{2} / \bar{r}$, if the body is pivoted instead at its centre of percussion, its new centre of percussion is at $\bar{r}' = k^{2} / q$ measured the other way, which recovers the original pivot. The two points are interchangeable, and this is the property Kater exploited to measure $g$ without knowing where the centre of mass was.
+*Note the reciprocity.* Since $q = \bar{r} + k^{2} / \bar{r}$, if the body is pivoted instead at its centre of percussion, its mass centre is $\bar{r}' = q - \bar{r} = k^{2} / \bar{r}$ from the new pivot, and its new centre of percussion is at $\bar{r}' + k^{2} / \bar{r}' = k^{2} / \bar{r} + \bar{r} = q$ from it — the original pivot. The two points are interchangeable, and this is the property Kater exploited to measure $g$ without knowing where the centre of mass was.
 :::
 
 ::: example Compound pendulum {#ex-compound-pendulum}
@@ -147,7 +147,7 @@ k_G = 0.279\ \mathrm{m} .
 $$
 *Check.* The equivalent simple-pendulum length is $I_O / m \bar{r} = 0.671 / 1.2 = 0.559\ \mathrm{m}$, and $T = 2 \pi \sqrt{0.559 / 9.81} = 1.50\ \mathrm{s}$ $\checkmark$
 
-*Sanity.* This is a **measurement**, not a toy: swinging a component about two knife-edges and solving the two resulting periods for $k_G$ and for the position of the mass centre is the standard industrial way of finding the inertia of a connecting rod, a crankshaft or a satellite model, and it is accurate to better than one per cent with a stopwatch and a good knife-edge. The reversible form — Kater's pendulum — goes further and measures $g$ itself to a few parts in $10^{5}$, which was the definition of the standard of gravity for a century.
+*Sanity.* This is a **measurement**, not a toy: swinging a component about two knife-edges and solving the two resulting periods for $k_G$ and for the position of the mass centre is the standard industrial way of finding the inertia of a connecting rod, a crankshaft or a satellite model, and it is accurate to better than one per cent with a stopwatch and a good knife-edge. The reversible form — Kater's pendulum — goes further and measures $g$ itself, and reversible pendulums provided the absolute gravity measurements of the nineteenth and early twentieth centuries, including the Potsdam reference value adopted in 1909.
 :::
 :::
 
@@ -166,15 +166,15 @@ a = \alpha R = \frac{g \sin \theta}{1.5} = \frac{9.81 \times 0.5}{1.5} = 3.27\ \
 $$
 **Friction.** From $m g \sin \theta - F = m a$,
 $$
-F = m \left( g \sin \theta - a \right) = m \times 6.54, \qquad
+F = m \left( g \sin \theta - a \right) = m \times 1.635, \qquad
 N = m g \cos \theta = m \times 8.50 ,
 $$
 $$
-\mu_{\min} = \frac{6.54}{8.50} = 0.192 = \frac{\tan \theta}{3} .
+\mu_{\min} = \frac{1.635}{8.50} = 0.192 = \frac{\tan \theta}{3} .
 $$
 **Thin-walled pipe.** With $I_G = m R^{2}$, $a = g \sin \theta / 2 = 2.45\ \mathrm{m / s^{2}}$ and $\mu_{\min} = \tan \theta / 2 = 0.289$.
 
-*Sanity.* The acceleration is independent of both mass and radius, so a cotton reel and a railway wheel roll down the same slope together — but a solid cylinder beats a hollow one, and the ordering $1 > \tfrac{5}{7} > \tfrac{2}{3} > \tfrac{1}{2}$ for a hoop, a solid sphere, a solid cylinder and a thin pipe is exactly the ordering of $k^{2} / R^{2}$ from $0$ to $1$. That is the whole explanation of why a **filled** pipe rolls faster than an empty one, why a water-filled bamboo culm beats a dry one down a wet bank, and why the moment of inertia about the roll axis — not the mass — is what a vehicle's acceleration depends on. It is also why a racing cyclist cares about **rotational** mass at the rim far more than the same mass on the frame: at $k = R$ every kilogram of tyre and rim costs twice the accelerating effort of a kilogram of frame.
+*Sanity.* The acceleration is independent of both mass and radius, so a cotton reel and a railway wheel roll down the same slope together — but a solid cylinder beats a hollow one, and the ordering $1 > \tfrac{5}{7} > \tfrac{2}{3} > \tfrac{1}{2}$ of $a / \left( g \sin \theta \right)$ for a frictionless sliding block, a solid sphere, a solid cylinder and a hoop or thin pipe is exactly the ordering of $k^{2} / R^{2}$ from $0$ to $1$. That is why a pipe **filled** with liquid, which adds mass without much rotational inertia, rolls faster than an empty one, and why the ratio $k^{2} / R^{2}$ — not the mass — is what the acceleration of a rolling body depends on. It is also why a racing cyclist cares about **rotational** mass at the rim far more than the same mass on the frame: at $k = R$ every kilogram of tyre and rim costs twice the accelerating effort of a kilogram of frame.
 :::
 :::
 
@@ -196,9 +196,9 @@ $$
 T_1 = 12 \left( 9.81 - 1.73 \right) = 97.0\ \mathrm{N}, \qquad
 T_2 = 8 \left( 9.81 + 1.73 \right) = 92.3\ \mathrm{N}.
 $$
-*Check.* $\left( T_1 - T_2 \right) R = 4.7 \times 0.15 = 0.705\ \mathrm{N\,m}$ and $I a / R = 0.06 \times 1.73 / 0.15 = 0.693\ \mathrm{N\,m}$ — equal within rounding. $\checkmark$
+*Check.* $\left( T_1 - T_2 \right) R = \left( 96.95 - 92.33 \right) \times 0.15 = 0.693\ \mathrm{N\,m}$ and $I a / R = 0.06 \times 1.731 / 0.15 = 0.692\ \mathrm{N\,m}$ — equal within rounding. $\checkmark$
 
-*Sanity.* The pulley's inertia enters the acceleration exactly like an extra mass $I / R^{2} = 2.67\ \mathrm{kg}$ added to the system, and the difference in the two tensions is not a paradox but the torque that spins the pulley up. That $I / R^{2}$ is the **effective mass** of a rotating element referred to a linear motion, and it is why a bicycle's wheels matter so much more than its frame: a rim of mass $m$ at radius $R$ has $I = m R^{2}$, so it contributes $2 m$ to the accelerating mass, once as translation and once as rotation. Two kilograms of wheel cost the same effort as four kilograms of frame, which is the single most useful fact in bicycle and car-wheel design and the reason unsprung mass is counted separately from sprung.
+*Sanity.* The pulley's inertia enters the acceleration exactly like an extra mass $I / R^{2} = 2.67\ \mathrm{kg}$ added to the system, and the difference in the two tensions is not a paradox but the torque that spins the pulley up. That $I / R^{2}$ is the **effective mass** of a rotating element referred to a linear motion, and it is why a bicycle's wheels matter so much more than its frame: a rim of mass $m$ at radius $R$ has $I = m R^{2}$, so it contributes $2 m$ to the accelerating mass, once as translation and once as rotation. Two kilograms of wheel cost the same effort as four kilograms of frame, which is the single most useful fact in bicycle-wheel design.
 :::
 :::
 
@@ -229,7 +229,7 @@ I_{\text{eff}} = I + m R^{2} = 18 + 500 \times 0.16 = 98\ \mathrm{kg\,m^{2}} ,
 $$
 five and a half times the drum's own, and $82$ per cent of it is the load "reflected" through the rope. $\checkmark$
 
-*Sanity.* That reflected-inertia idea is the single most useful calculation in drive engineering. Every rotating element in a drive train contributes $m r^{2}$ or $I$ referred to one shaft through the **square** of the gear ratio, so a motor driving a hoist through a $10 : 1$ reducer sees the drum-and-load inertia divided by $100$ — which is why a small, fast, high-inertia-speed motor can drive a huge load, and why the ratio that **maximises** the load acceleration is the one that makes the motor's own inertia equal to the reflected load inertia. Get the ratio wrong by a factor of three and you lose a quarter of the achievable acceleration; get it backwards and the motor is doing nothing but spinning itself up.
+*Sanity.* That reflected-inertia idea is the single most useful calculation in drive engineering. Every rotating element in a drive train contributes $m r^{2}$ or $I$ referred to one shaft through the **square** of the gear ratio, so a motor driving a hoist through a $10 : 1$ reducer sees the drum-and-load inertia divided by $100$ — which is why a small, fast motor can drive a huge load, and why the ratio that **maximises** the load acceleration is the one that makes the motor's own inertia equal to the reflected load inertia. Get the ratio wrong by a factor of three and you lose $40$ per cent of the achievable acceleration, since the acceleration varies as $2 / \left( n / n_0 + n_0 / n \right)$ about the optimum ratio $n_0$; get it backwards and the motor is doing nothing but spinning itself up.
 :::
 :::
 
@@ -254,7 +254,7 @@ $$
 $$
 *Check.* The free end then moves at $\omega L = 5.94\ \mathrm{m / s}$, faster than a particle falling freely through the same $1.2\ \mathrm{m}$ would move at $\sqrt{2 g L} = 4.85\ \mathrm{m / s}$ — because the rod's own mass distribution lets the upper parts fall and give up energy to the lower tip. $\checkmark$
 
-*Sanity.* The reaction of $m g / 4$ is a quarter of the rod's weight, so the hinge is **relieved** at the moment of release, and the free end falls at $\tfrac{3}{2} g$, faster than gravity. That is the classic demonstration that a part of a falling body accelerates faster than $g$: hold a rod horizontally over a table and release it, and the far end comes down on your hand harder than a dropped weight would. The same arithmetic gives the **centre of percussion**, at $2 L / 3$ from the hinge, where the impulse produces no reaction at the pivot — the "sweet spot" of a bat, a racket, a hammer and a sword, and the reason a hammer head is placed where it is.
+*Sanity.* The reaction of $m g / 4$ is a quarter of the rod's weight, so the hinge is **relieved** at the moment of release, and the free end falls at $\tfrac{3}{2} g$, faster than gravity. That is the classic demonstration that a part of a falling body accelerates faster than $g$: put a coin on the free end of a hinged rod held horizontal and release it, and the rod drops away from the coin, which is left to follow at only $g$. The same arithmetic gives the **centre of percussion**, at $2 L / 3$ from the hinge, where the impulse produces no reaction at the pivot — one definition of the "sweet spot" of a bat, a racket or a hammer.
 :::
 :::
 
@@ -263,12 +263,12 @@ For a wheel being **driven**, the friction at the ground points **forwards**, in
 :::
 
 ::: history
-The dynamics of a rigid body is Euler's, in the memoirs of 1750 to 1765 that created the subject: $\sum \mathbf{F} = M \mathbf{a}_G$ in 1750, the moment equation for a rigid body in 1755, and the principal-axis equations of rotation for three dimensions in 1758, all in the Berlin and St Petersburg memoirs. The **centre of percussion** and the associated "sweet spot" problem go back to Pascal and to the seventeenth-century debates on the striking part of a balance, with contributions from Huygens and, in the form still used in ballistics, from Robins in 1742; the term is Routh's, and the general theory of the **instantaneous axis** and the centrodes is Poinsot's of 1834. The **compound pendulum** as a precision instrument — Kater's reversible pendulum of 1818, which measured $g$ without needing to know where the centre of mass was — is one of the elegant applications of the $I = m k^{2} + m d^{2}$ result, and it remained the standard absolute determination of gravity until the drop-timer methods of the 1950s. The **reflected inertia** idea, formalised as the "equivalent moment of inertia" of a geared drive, belongs to the electrical drive engineering of the 1930s, though the same calculation appears in the flywheel design chapters of the steam-engine texts of the 1870s.
+The dynamics of a rigid body is Euler's, in the Berlin and St Petersburg memoirs from 1750 onwards that created the subject, culminating in the *Theoria motus corporum solidorum seu rigidorum* of 1765 with its equations of rotation about the principal axes. The **centre of oscillation** is Huygens's, in the *Horologium oscillatorium* of 1673, and the closely related **centre of percussion** was discussed by Wallis and others in the same decades; the **instantaneous axis** of a body in general motion is treated in Poinsot's *Théorie nouvelle de la rotation des corps* of 1834. The **compound pendulum** as a precision instrument — Kater's reversible pendulum of 1818, which measured $g$ without needing to know where the centre of mass was — is one of the elegant applications of the $I = m k^{2} + m d^{2}$ result, and it remained the standard absolute determination of gravity until the drop-timer methods of the 1950s. The **reflected inertia** idea, the "equivalent moment of inertia" of a geared drive, is standard in electric-drive engineering, and the same calculation underlies the flywheel chapters of the nineteenth-century steam-engine texts.
 :::
 
 ## Where this leads
 
-Energy and momentum methods applied to rigid bodies are in [[dynamics/rigid-body-energy-momentum]], the three-dimensional equations with the products of inertia are in [[dynamics/three-dimensional-dynamics]], and the vibration of the systems analysed here is developed in [[vibrations/free-vibration]]. Gearing and the reflected-inertia calculation are worked through in [[mechanisms/gear-trains]], and the flywheel sizing of Example 6 is applied in [[machine-design/clutches-brakes-belts]].
+Energy and momentum methods applied to rigid bodies are in [[dynamics/rigid-body-energy-momentum]], the three-dimensional equations with the products of inertia are in [[dynamics/three-dimensional-dynamics]], and the vibration of the systems analysed here is developed in [[vibrations/free-vibration]]. Gearing and the reflected-inertia calculation are worked through in [[mechanisms/gear-trains]], and the flywheel sizing of the design exercise below is applied in [[machine-design/clutches-brakes-belts]].
 
 ::: summary
 - A plane-moving rigid body needs three equations: $\sum F_x = m a_x$, $\sum F_y = m a_y$, $\sum M_G = I_G \alpha$.
@@ -293,12 +293,12 @@ The acceleration of a rolling body is $a = g \sin \theta / \left( 1 + k^{2} / R^
 ## Exercises
 
 ::: exercise Moment of inertia {level=1 check="240"}
-A solid cylinder of mass $20\ \mathrm{kg}$ and radius $0.3\ \mathrm{m}$ rolls without slipping. Find its kinetic energy at $4\ \mathrm{m / s}$, and hence its radius of gyration about the contact point.
+A solid cylinder of mass $20\ \mathrm{kg}$ and radius $0.3\ \mathrm{m}$ rolls without slipping. Find its kinetic energy at $4\ \mathrm{m / s}$ (enter it in J), and its radius of gyration about the contact point.
 ::: solution
 $$
 T = \tfrac{1}{2} m v^{2} \left( 1 + \tfrac{1}{2} \right) = 0.75 \times 20 \times 16 = 240\ \mathrm{J}.
 $$
-*Note.* The answer to enter is $240\ \mathrm{J}$.
+Since $T = \tfrac{1}{2} I_C \omega^{2}$ with $\omega = v / R$, $I_C = 2 T R^{2} / v^{2} = 2 \times 240 \times 0.09 / 16 = 2.70\ \mathrm{kg\,m^{2}}$, and $k_C = \sqrt{I_C / m} = \sqrt{0.135} = 0.367\ \mathrm{m}$, which is $\sqrt{k^{2} + R^{2}} = R \sqrt{3 / 2}$.
 :::
 :::
 
@@ -310,7 +310,7 @@ $\mu_{\min} = \tan \theta / 2 = 0.289$.
 :::
 
 ::: exercise Reflected inertia {level=1 check="98"}
-For the hoist of Example 4, what is the effective moment of inertia referred to the drum shaft?
+For the hoist of [[#ex-hoist-drum]], what is the effective moment of inertia referred to the drum shaft?
 ::: solution
 $I_{\text{eff}} = I + m R^{2} = 18 + 500 \times 0.4^{2} = 98\ \mathrm{kg\,m^{2}}$.
 :::
@@ -325,7 +325,7 @@ $$
 $$
 T = m \left( g - a \right) = 0.2 \times 9.00 = 1.80\ \mathrm{N}.
 $$
-*Sanity.* The acceleration is only $8$ per cent of $g$, because the axle radius is small compared with the radius of gyration: the smaller the axle, the slower the unwind, and the tension is correspondingly only $18$ per cent of the weight. That is why a yo-yo's "sleep" time is set by the axle diameter and the bearing friction and not by the mass, and why a modern yo-yo has a ball-bearing **clutch** that decouples the string from the axle entirely, giving an effective $r$ near zero and an acceleration near zero — a spin, not a fall.
+*Sanity.* The acceleration is only $8$ per cent of $g$, because the axle radius is small compared with the radius of gyration: the smaller the axle, the slower the unwind, and the tension is correspondingly $92$ per cent of the weight. That is why a yo-yo descends gently, and why a modern yo-yo with a ball-bearing axle can "sleep" — spin at the bottom of the string while the string slips round the bearing — for a time set by the bearing friction.
 :::
 :::
 
@@ -341,7 +341,7 @@ so $q = \left( k^{2} + \bar{r}^{2} \right) / \bar{r}$. For a uniform rod, $k^{2}
 $$
 q = \frac{L^{2} / 12 + L^{2} / 4}{L / 2} = \frac{2 L}{3} .
 $$
-*Sanity.* Note that $q = \bar{r} + k^{2} / \bar{r}$ is the **centre of oscillation**, and that the two are reciprocal: pivoting the body at the centre of percussion makes the old pivot the new centre of percussion. That reciprocity is what makes Kater's reversible pendulum work, and it is why a baseball bat's sweet spot as felt by the hand and as felt by the ball are at slightly different places — the hand feels the **node of the fundamental bending mode**, which is nearer the end than $2 L / 3$, and a bat can be tuned so that the two coincide, which is what "corked" and end-loaded bats attempt by different means.
+*Sanity.* Note that $q = \bar{r} + k^{2} / \bar{r}$ is the **centre of oscillation**, and that the two are reciprocal: pivoting the body at the centre of percussion makes the old pivot the new centre of percussion. That reciprocity is what makes Kater's reversible pendulum work. The centre of percussion is one definition of a bat's "sweet spot"; another, the node of the bat's fundamental bending mode, where the hands feel least vibration, lies at a somewhat different place.
 :::
 :::
 
@@ -356,12 +356,12 @@ $$
 $$
 t = \frac{\omega}{\alpha} = 4.0\ \mathrm{s}.
 $$
-*Sanity.* The energy to be dissipated is $\tfrac{1}{2} \times 5.4 \times 62.83^{2} = 10\,650\ \mathrm{J}$, and $M \phi = 84.8 \times 125.7 = 10\,660\ \mathrm{J}$ — a useful cross-check that always works. The **power** at the start is $M \omega = 5330\ \mathrm{W}$, which is why a brake on a flywheel is a heat problem and not a torque problem: $10.7\ \mathrm{kJ}$ dumped into a brake drum in four seconds raises the drum's temperature by several tens of degrees, and brake fade on a long descent is the same calculation done repeatedly.
+*Sanity.* The energy to be dissipated is $\tfrac{1}{2} \times 5.4 \times 62.83^{2} = 10\,650\ \mathrm{J}$, and $M \phi = 84.8 \times 125.7 = 10\,660\ \mathrm{J}$ — a useful cross-check that always works. The **power** at the start is $M \omega = 5330\ \mathrm{W}$, which is why a brake on a flywheel is a heat problem and not a torque problem: $10.7\ \mathrm{kJ}$ dumped into a $5\ \mathrm{kg}$ cast-iron drum in four seconds raises its temperature by about $5\ \mathrm{K}$, and brake fade on a long descent is the same calculation done repeatedly.
 :::
 :::
 
 ::: exercise Design {level=3}
-A punching press makes a $25\ \mathrm{mm}$ hole through $8\ \mathrm{mm}$ mild plate requiring $8\ \mathrm{kJ}$ per hole, at $25$ punches a minute. The flywheel runs at a mean $250\ \mathrm{rpm}$ and the speed drop must not exceed $8$ per cent. Size the flywheel and find the motor rating.
+A punching press makes a $50\ \mathrm{mm}$ hole through $20\ \mathrm{mm}$ mild-steel plate, requiring about $8\ \mathrm{kJ}$ per hole, at $25$ punches a minute. The flywheel runs at a mean $250\ \mathrm{rpm}$ and the speed drop must not exceed $8$ per cent. Size the flywheel and find the motor rating.
 ::: solution
 **Speed fluctuation.** $\omega = 2 \pi \times 250 / 60 = 26.18\ \mathrm{rad / s}$ and $\omega_1 - \omega_2 = 0.08 \times 26.18 = 2.094\ \mathrm{rad / s}$.
 **Moment of inertia.**
@@ -378,7 +378,7 @@ so a $4\ \mathrm{kW}$ motor is selected, against a **peak** demand of $8\ \mathr
 $$
 m = \frac{I}{0.9 \times 0.5^{2}} = \frac{146}{0.225} = 649\ \mathrm{kg}.
 $$
-*Design comment.* The flywheel does not reduce the **energy** required, only the **power** the motor must deliver: it takes $3.33\ \mathrm{kW}$ continuously and gives it back in $0.15\ \mathrm{s}$. That is the whole reason for one, and it is why a press is rated by both its tonnage and its flywheel energy. Two cautions follow. First, a $649\ \mathrm{kg}$ cast-iron rim at $500\ \mathrm{mm}$ radius running at $250\ \mathrm{rpm}$ stores only $0.5 \times 0.5^{2} \times 26.18^{2} = 87\ \mathrm{J}$ per kilogram of rim, which is modest. A forged-steel rim can run safely at $150\ \mathrm{m / s}$ rather than the $13\ \mathrm{m / s}$ of this one, and stores $11\ \mathrm{kJ / kg}$; that is why modern presses and energy-storage flywheels use high-speed steel or composite rims with a small $I$ at a high $\omega$, since the stored energy goes as $\omega^{2}$ while the rim stress goes only as $\omega^{2}$ too but the **specific** energy is linear in the allowable stress. Second, the speed drop of $8$ per cent is a **machine-tool** allowance; a press that punches a clean hole needs the ram speed to stay above a minimum, so the real constraint is often the **crank-shaft** energy at bottom dead centre rather than the mean speed, and the flywheel is then sized on the punch-load diagram rather than on the coefficient of fluctuation.
+*Design comment.* The flywheel does not reduce the **energy** required, only the **power** the motor must deliver: it takes $3.33\ \mathrm{kW}$ continuously and gives it back in $0.15\ \mathrm{s}$. That is the whole reason for one, and it is why a press is rated by both its tonnage and its flywheel energy. Two cautions follow. First, a $649\ \mathrm{kg}$ cast-iron rim at $500\ \mathrm{mm}$ radius running at $250\ \mathrm{rpm}$ stores only $0.5 \times 0.5^{2} \times 26.18^{2} = 86\ \mathrm{J}$ per kilogram of rim, which is modest. A thin rim stores $v^{2} / 2$ per kilogram and carries a hoop stress $\rho v^{2}$, so its specific energy is $\sigma / \left( 2 \rho \right)$, fixed by the material's strength-to-density ratio; a high-strength steel rim can run at $150\ \mathrm{m / s}$ rather than the $13\ \mathrm{m / s}$ of this one and store $11\ \mathrm{kJ / kg}$, which is why energy-storage flywheels use strong steel or composite rims running fast. Second, the $8$ per cent speed drop is an assumed allowance; the punch also needs a minimum ram speed through the cut, so in practice the flywheel is checked against the press's load–stroke diagram as well as against the coefficient of fluctuation.
 :::
 :::
 
@@ -410,8 +410,8 @@ The friction therefore **vanishes** when
 $$
 y = \frac{k^{2}}{R}, \qquad \text{that is at height } \ h = R + \frac{k^{2}}{R} \text{ above the ground},
 $$
-is **forwards** above that height and **backwards** below it. For the spool of Example 1, $k^{2} / R = 0.0225 / 0.2 = 112.5\ \mathrm{mm}$, so the cord at $y = 100\ \mathrm{mm}$ gives a backward friction of $2.4\ \mathrm{N}$, exactly as found.
+is **forwards** above that height and **backwards** below it. For the spool of [[#ex-spool-kinetics]], $k^{2} / R = 0.0225 / 0.2 = 112.5\ \mathrm{mm}$, so the cord at $y = 100\ \mathrm{mm}$ gives a backward friction of $2.4\ \mathrm{N}$, exactly as found.
 
-*Comment.* The unifying statement is that the friction at a rolling contact is whatever the no-slip condition requires, and its sign is set by which side of the **critical height** $R + k^{2} / R$ the line of action of the applied force falls. Two limits are worth noticing. As $k \to 0$ (all the mass at the axle) the critical height tends to $R$ and any force above the axle drives the friction forwards, which is intuitive; as $k \to R$ (a hoop) it tends to $2 R$, the top of the wheel, so a hoop pulled at its top always has **backward** friction. The other check is the pure couple, which is the limit $P \to \infty$, $y \to \infty$ at fixed $P y = M$, and gives $F$ forwards as derived separately. Every case in this lesson — the pulled spool, the driven wheel, the braked wheel, the cylinder on the incline — is one instance of the single rule, and deriving it once is worth more than memorising the four answers.
+*Comment.* The unifying statement is that the friction at a rolling contact is whatever the no-slip condition requires, and its sign is set by which side of the **critical height** $R + k^{2} / R$ the line of action of the applied force falls. Two limits are worth noticing. As $k \to 0$ (all the mass at the axle) the critical height tends to $R$ and any force above the axle drives the friction forwards, which is intuitive; as $k \to R$ (a hoop) it tends to $2 R$, the top of the wheel, so a hoop needs no friction when pulled at its top and has **backward** friction when pulled anywhere below it. The other check is the pure couple, which is the limit $P \to \infty$, $y \to \infty$ at fixed $P y = M$, and gives $F$ forwards as derived separately. Every case in this lesson — the pulled spool, the driven wheel, the braked wheel, the cylinder on the incline — is one instance of the single rule, and deriving it once is worth more than memorising the four answers.
 :::
 :::

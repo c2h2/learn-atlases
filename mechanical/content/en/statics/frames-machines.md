@@ -18,7 +18,7 @@ $$
 :::
 
 ::: proposition Counting for frames {#prop-frame-counting}
-A pin connecting $k$ members transmits two force components, not $2 k$; an internal hinge in a single member is a moment release and adds one condition; a rigid joint transmits two forces and a moment, four components in a plane. A roller or slider between two members contributes one; a fixed connection between two members contributes three. Sum the constraint components $c$ over all supports and all connections and compare with $3 n$.
+A pin connecting $k$ members introduces $2 (k - 1)$ force components, not $2 k$; an internal hinge in a single member is a moment release and adds one condition; a rigid joint transmits two forces and a moment, three components in a plane. A roller or slider between two members contributes one; a fixed connection between two members contributes three. Sum the constraint components $c$ over all supports and all connections and compare with $3 n$.
 :::
 
 ::: proof
@@ -75,7 +75,7 @@ Members $AB$ and $BC$ are pin-connected at $B$. $A(0, 0)$ is a pin, $C(7, 4)\ \m
 
 **Member $BC$.** Force $b$ along $BC$ at each end.
 
-**Member $AB$.** Forces: $\mathbf{A} = (A_x, A_y)$ at $(0, 0)$, the load $(0, -15)$ at $(1.5, 2)$, and the force from $BC$, which is $(-b, 0)$ at $B(3, 4)$ if $b$ is tension in $BC$. Moments about $A$:
+**Member $AB$.** Forces: $\mathbf{A} = (A_x, A_y)$ at $(0, 0)$, the load $(0, -15)$ at $(1.5, 2)$, and the force from $BC$, which is $(-b, 0)$ at $B(3, 4)$ if $b$ is the compressive force in $BC$ (a strut pushes $B$ away from $C$). Moments about $A$:
 The moment of $(-b, 0)$ applied at $(3, 4)$ is $x F_y - y F_x = 3 \times 0 - 4 \times (-b) = 4 b$, and the load's moment is $1.5 \times (-15) = -22.5$. Hence
 $$
 \textstyle \sum M_A = -22.5 + 4 b = 0 \quad\Longrightarrow\quad b = 5.625\ \mathrm{kN}.
@@ -87,14 +87,14 @@ $$
 $$
 The reaction at $A$ is $\sqrt{5.625^{2} + 15.0^{2}} = 16.0\ \mathrm{kN}$, the reaction at $C$ is $5.625\ \mathrm{kN}$ horizontal, and the pin at $B$ transmits $5.625\ \mathrm{kN}$.
 
-*Check.* Member $BC$ carries equal and opposite $5.625\ \mathrm{kN}$ axial forces at its ends and nothing else, so it is in compression of $5.625\ \mathrm{kN}$ and satisfies all three of its equations. Member $AB$ carries $16.0\ \mathrm{kN}$ at $A$, $5.625\ \mathrm{kN}$ at $B$ and $15\ \mathrm{kN}$ at mid-length: it is a **beam**, and it bends. Its maximum bending moment is at the load point, $M = 5.625 \times 2 = 11.25\ \mathrm{kN\,m}$ from the horizontal component, plus the bending of the vertical component — a member that a truss analysis would have missed entirely.
+*Check.* Member $BC$ carries equal and opposite $5.625\ \mathrm{kN}$ axial forces at its ends and nothing else, so it is in compression of $5.625\ \mathrm{kN}$ and satisfies all three of its equations. Member $AB$ carries $16.0\ \mathrm{kN}$ at $A$, $5.625\ \mathrm{kN}$ at $B$ and $15\ \mathrm{kN}$ at mid-length: it is a **beam**, and it bends. Its bending moment at the load point is the moment about that point of the forces on one side of it: from $A$, $(-1.5)(15.0) - (-2)(5.625) = -11.25\ \mathrm{kN\,m}$, a bending moment of $11.25\ \mathrm{kN\,m}$ that a truss analysis would have missed entirely.
 :::
 :::
 
 ::: example Portal frame with a crown hinge {#ex-portal}
 A portal frame has pins at $A(0, 0)$ and $C(6, 0)$, rigid joints at $B(0, 4)$ and $D(6, 4)$, and an internal hinge at the mid-point $E(3, 4)$ of the beam. A horizontal load of $10\ \mathrm{kN}$ acts at $B$ and a vertical load of $40\ \mathrm{kN}$ acts on the beam at $x = 4\ \mathrm{m}$. Find the reactions.
 ::: solution
-**Count.** Three members (two columns, one beam), $3 n = 9$ equations; supports give 4 components, the two rigid joints 4 each and the hinge 2, totalling $c = 4 + 4 + 4 + 2 = 14$. Indeterminate to the fifth degree by that count — but the count is wrong, because the two columns carry no load between their end connections and are therefore two-force members. Treating each column as a single unknown reduces $c$ by 3 each, giving $c = 8$ against $3 n = 9$... The clean way is to treat the frame as two rigid L-shaped halves joined by one hinge, which gives $3 \times 2 = 6$ equations and $c = 2 + 2 + 2 = 6$: determinate.
+**Count.** Treat the frame as two rigid L-shaped halves, $ABE$ and $EDC$, joined by the hinge at $E$: $3 \times 2 = 6$ equations, and the pins at $A$ and $C$ and the hinge at $E$ supply $c = 2 + 2 + 2 = 6$ components: determinate. (Counting the two columns and two half-beams as four members joined rigidly at $B$ and $D$ gives the same result: $3 n = 12$, and $c = 4 + 3 + 3 + 2 = 12$.)
 
 **Whole frame.**
 $$
@@ -133,7 +133,7 @@ $$
 :::
 
 ::: proposition Ideal mechanical advantage from geometry {#prop-virtual}
-The ideal mechanical advantage of any linkage equals the ratio of the velocity of the effort point to the velocity of the load point, which can be found either by a virtual-work equation or by differentiating the constraint equations. For a lever of arms $a$ and $b$, $\mathrm{MA} = a / b$; for a simple pulley system with $n$ rope parts supporting the load, $\mathrm{MA} = n$; for a toggle of half-angle $\theta$ as in Example 6, $\mathrm{MA} = 1 / (2 \tan \theta)$.
+The ideal mechanical advantage of any linkage equals the ratio of the velocity of the effort point to the velocity of the load point, which can be found either by a virtual-work equation or by differentiating the constraint equations. For a lever of arms $a$ and $b$, $\mathrm{MA} = a / b$; for a simple pulley system with $n$ rope parts supporting the load, $\mathrm{MA} = n$; for a toggle of half-angle $\theta$ as in Example 5, $\mathrm{MA} = 1 / (2 \tan \theta)$.
 :::
 
 ::: proof
@@ -143,7 +143,7 @@ P\, \delta_{\text{in}} - Q\, \delta_{\text{out}} = 0
 \quad\Longrightarrow\quad
 \frac{Q}{P} = \frac{\delta_{\text{in}}}{\delta_{\text{out}}} = \mathrm{VR}.
 $$
-For a lever pivoted at a point, the two arms sweep angles $\delta \phi$ and their ends move $a\, \delta \phi$ and $b\, \delta \phi$, giving $\mathrm{MA} = a / b$. For a pulley block, if the load rises $\delta$ then $n$ rope parts each shorten by $\delta$, so $n \delta$ of rope is paid out at the effort: $\mathrm{MA} = n$. For the toggle, the load point moves horizontally by $x = 2 a \cos \theta$ while the effort point moves vertically by $y = a \sin \theta$, so $\mathrm{d}y / \mathrm{d}x = - \tan \theta$ and $\mathrm{MA} = \delta_{\text{in}} / \delta_{\text{out}} = 1 / (2 \tan \theta)$ — which grows without bound as $\theta \to 0$. That is the reason a toggle clamps with a force no hand could produce, and also the reason it becomes self-locking: past a certain angle the friction angle exceeds the mechanism angle and no load can drive it back.
+For a lever pivoted at a point, the two arms sweep angles $\delta \phi$ and their ends move $a\, \delta \phi$ and $b\, \delta \phi$, giving $\mathrm{MA} = a / b$. For a pulley block, if the load rises $\delta$ then $n$ rope parts each shorten by $\delta$, so $n \delta$ of rope is paid out at the effort: $\mathrm{MA} = n$. For the toggle, the load point moves horizontally by $x = 2 a \cos \theta$ while the effort point moves vertically by $y = a \sin \theta$, so $\lvert \mathrm{d}y / \mathrm{d}x \rvert = a \cos \theta / (2 a \sin \theta)$ and $\mathrm{MA} = \delta_{\text{in}} / \delta_{\text{out}} = 1 / (2 \tan \theta)$ — which grows without bound as $\theta \to 0$. That is the reason a toggle clamps with a force no hand could produce, and also the reason it becomes self-locking: past a certain angle the friction angle exceeds the mechanism angle and no load can drive it back.
 :::
 
 ::: example Bolt cutters {#ex-cutters}
@@ -157,9 +157,9 @@ J = \frac{100\,000}{50} = 2000\ \mathrm{N}.
 $$
 The bolt is gripped between two jaws, each pushing with $2000\ \mathrm{N}$, so the bolt is in compression of $2000\ \mathrm{N}$ and the two arms of the cutter each carry $2000\ \mathrm{N}$ through the pin. The mechanical advantage is $2000 / 250 = 8.0$, equal to the ratio of arms $400 / 50 = 8.0$ as the virtual-work argument requires.
 
-*Pin check.* Each handle applies $2000\ \mathrm{N}$ at the jaw and receives $250\ \mathrm{N}$ at the grip, so the pin must supply the difference as a shear force of about $2000 - 250 = 1750\ \mathrm{N}$; the pin is in **double shear**, each shear plane carrying $1750 / 2 = 875\ \mathrm{N}$. A $6\ \mathrm{mm}$ diameter pin has an area of $28.3\ \mathrm{mm^{2}}$ per plane and a shear stress of $30.9\ \mathrm{MPa}$, comfortable for a hardened steel.
+*Pin check.* On each handle the grip force and the jaw reaction act on opposite sides of the pin and in the same sense, so the pin must balance their sum, $2000 + 250 = 2250\ \mathrm{N}$; with the pin in **double shear**, each shear plane carries $2250 / 2 = 1125\ \mathrm{N}$. A $6\ \mathrm{mm}$ diameter pin has an area of $28.3\ \mathrm{mm^{2}}$ per plane and a shear stress of $39.8\ \mathrm{MPa}$, comfortable for a hardened steel.
 
-*Sanity.* A $6\ \mathrm{mm}$ hard-steel bolt shears at roughly $\pi \times 6^{2} / 4 \times 400 / 2 = 22.6\ \mathrm{kN}$ in double shear, so $2\ \mathrm{kN}$ at the jaws is far short of cutting it — which is why bolt cutters have handles of $600$ to $1200\ \mathrm{mm}$, and why a $900\ \mathrm{mm}$ tool with the same $50\ \mathrm{mm}$ jaw gives $\mathrm{MA} = 18$ and $4.5\ \mathrm{kN}$.
+*Sanity.* Shearing a $6\ \mathrm{mm}$ hardened-steel rod across its $28.3\ \mathrm{mm^{2}}$ section at a shear strength of about $400\ \mathrm{MPa}$ needs about $11\ \mathrm{kN}$, so $2\ \mathrm{kN}$ at the jaws is far short of cutting it — which is why bolt cutters have handles of $600$ to $1200\ \mathrm{mm}$ and, in addition, a compound linkage behind the jaws: a single $900\ \mathrm{mm}$ lever with the same $50\ \mathrm{mm}$ jaw gives only $\mathrm{MA} = 18$ and $4.5\ \mathrm{kN}$.
 :::
 :::
 
@@ -185,16 +185,16 @@ at $\theta = 2^{\circ}$,
 $$
 Q = \frac{500}{2 \times 0.034921} = 7159\ \mathrm{N}, \qquad \mathrm{MA} = 14.3 .
 $$
-*Sanity.* $Q$ grows as $1 / \tan \theta$ and diverges as the links straighten, which is the signature of a toggle. The same formula shows why a toggle becomes **self-locking**: the mechanism jams when the friction angle at the pins exceeds $\theta$, because the load's own thrust then drives the joint rather than releasing it. Real toggle clamps are designed to over-centre slightly, so that the released position has $\theta$ just past $90^{\circ}$ and the clamp cannot open under vibration.
+*Sanity.* $Q$ grows as $1 / \tan \theta$ and diverges as the links straighten, which is the signature of a toggle. The same formula shows why a toggle becomes **self-locking**: the mechanism jams when the friction angle at the pins exceeds $\theta$, because the load's own thrust then drives the joint rather than releasing it. Real toggle clamps are designed to over-centre slightly, so that in the clamped position the links have passed just beyond the straight line ($\theta$ slightly below zero) and the clamp cannot open under vibration.
 :::
 :::
 
 ::: widget plot
 f: 500/(2*tan(x*pi/180))
 x: 1, 45
-y: 300, 14500
+y: 200, 14500
 labels: \text{toggle output force } Q(\theta)
-caption: Output force of the toggle press of Example 6 against the half-angle $\theta$, for an effort of $500\ \mathrm{N}$. $Q = P / (2 \tan \theta)$ diverges as $\theta \to 0$: $14.2\ \mathrm{kN}$ at $1^{\circ}$, $7.2\ \mathrm{kN}$ at $2^{\circ}$, $1.42\ \mathrm{kN}$ at $10^{\circ}$ and only $500\ \mathrm{N}$ at $45^{\circ}$. The whole utility of a toggle clamp, a knee joint and a folding brace lies in this curve's left-hand end — and so does its danger, because the same geometry makes the mechanism impossible to release by hand once the workpiece springs back.
+caption: Output force of the toggle press of Example 5 against the half-angle $\theta$, for an effort of $500\ \mathrm{N}$. $Q = P / (2 \tan \theta)$ diverges as $\theta \to 0$: $14.3\ \mathrm{kN}$ at $1^{\circ}$, $7.2\ \mathrm{kN}$ at $2^{\circ}$, $1.42\ \mathrm{kN}$ at $10^{\circ}$ and only $250\ \mathrm{N}$ at $45^{\circ}$. The whole utility of a toggle clamp, a knee joint and a folding brace lies in this curve's left-hand end — and so does its danger, because the same geometry makes the mechanism impossible to release by hand once the workpiece springs back.
 :::
 
 ::: example Pulley block {#ex-pulley}
@@ -210,16 +210,16 @@ P_{\text{actual}} = \frac{Q}{n \, \eta} = \frac{2400}{4 \times 0.88} = 682\ \mat
 $$
 $14$ per cent above the ideal. The mechanical advantage delivered is $Q / P = 3.52$ against a velocity ratio of $4$.
 
-*Sanity.* Pulley blocks are efficient machines, and the loss is dominated by the stiffness of the rope bending over the sheaves rather than by pin friction — which is why a wire rope costs more efficiency than a fibre rope of the same strength, and why a tackle used once a year seizes and gives far worse than 88 per cent. In the real machine the four rope parts do **not** carry equal tensions: they step down from the load end towards the effort end, and the part nearest the load carries most.
+*Sanity.* Pulley blocks are efficient machines, and the loss is dominated by the stiffness of the rope bending over the sheaves rather than by pin friction — which is why a wire rope costs more efficiency than a fibre rope of the same strength, and why a tackle used once a year seizes and gives far worse than 88 per cent. In the real machine the four rope parts do **not** carry equal tensions: when lifting, they step up from the dead end towards the hauling part, which carries the most.
 :::
 :::
 
 ::: warning Ideal mechanical advantage is not what the machine delivers
-$\mathrm{MA} = \mathrm{VR}$ holds only for an ideal machine. A worm gear with 95 to 1 reduction may have an efficiency below 40 per cent, so its actual mechanical advantage is *less* than its velocity ratio and it may even be less than one — a "force multiplier" that takes more effort than it delivers. Conversely a machine with $\eta < 1$ and $\mathrm{VR} > 1 / (1 - \eta)$ is **self-locking**: it cannot be back-driven. That is a virtue in a worm-geared hoist and a disaster in a linkage that is supposed to release. Never assume a mechanism will release under load; check the inequality, or design the geometry to over-centre.
+$\mathrm{MA} = \mathrm{VR}$ holds only for an ideal machine. A worm gear with a 95 to 1 reduction may have an efficiency below 40 per cent, so its actual mechanical advantage is well under half its velocity ratio. Conversely a simple machine whose forward efficiency is below about 50 per cent is usually **self-locking**: the friction work exceeds what the load can supply when it tries to drive the machine backwards, so it cannot be back-driven. That is a virtue in a worm-geared hoist and a disaster in a linkage that is supposed to release. Never assume a mechanism will release under load; check its reverse efficiency, or design the geometry to over-centre.
 :::
 
 ::: history
-The statics of machines begins with the five simple machines of the Greek mechanicians — lever, wheel-and-axle, pulley, wedge and screw — catalogued in the *Mechanica* of around 300 BC, long attributed to Aristotle and now known to be a Peripatetic compilation. Hero of Alexandria, Apollonius and above all Archimedes gave the lever its proof; Archimedes' *On the Equilibrium of Planes* (around 260 BC) derives centre-of-gravity results by a balance argument that is a virtual-work argument in all but name. The explicit principle of virtual velocities appears in the *Mechanicorum liber* of Guidobaldo del Monte (1577) and in Galileo's *Le mecaniche* (1600), which states that "the moment gained is exactly what is lost in speed" — the identity $\mathrm{MA} = \mathrm{VR}$ in words. John Theophilus Desaguliers gave the first clear published statement of the relation between force and velocity ratios in his *Course of Experimental Philosophy* (1725), and the efficiency concept, with the phrase "mechanical powers" and their measured efficiencies, was formalised by Thomas Tredgold in *Elementary Principles of Carpentry and the Language of Architecture* (1820) and by Moseley in his *Practical Mechanics* of 1829, both driven by the practical need to size the gears and ropes of mills and mines.
+The statics of machines begins with the Greek mechanicians. The *Mechanica* (*Mechanical Problems*), long attributed to Aristotle but probably the work of his school in the third century BC, reduced the lever and related devices to the geometry of the circle; Archimedes' *On the Equilibrium of Planes* (third century BC) proved the law of the lever; and Hero of Alexandria in the first century AD catalogued the five simple machines — lever, wheel-and-axle, pulley, wedge and screw. The principle that what a machine gains in force it loses in speed appears in Guidobaldo del Monte's *Mechanicorum liber* (1577) and is the organising idea of Galileo's *Le mecaniche* (written around 1600) — the identity $\mathrm{MA} = \mathrm{VR}$ in words. John Theophilus Desaguliers' *Course of Experimental Philosophy* (1734–44) measured how far real machines fall short of the ideal, and in the nineteenth century the ratio of useful work to work supplied became the measure of a machine as engineers such as Henry Moseley, in *The Mechanical Principles of Engineering and Architecture* (1843), analysed the work lost to friction in the gears and ropes of mills and mines.
 :::
 
 ::: quiz
@@ -239,7 +239,7 @@ The internal forces found by taking frames apart become the section loadings of 
 
 ::: summary
 - A frame contains at least one multi-force member and therefore carries shear and bending; a machine has a degree of freedom and transmits force.
-- Count $3 n$ equations against $c$ constraint components; identify two-force members first, because each one removes two unknowns.
+- Count $3 n$ equations against $c$ constraint components; identify two-force members first, because each one reduces the unknowns at its two pins to a single magnitude.
 - When a frame is taken apart, pin forces appear equal and opposite on the two members — draw both, and label them.
 - Ideal mechanical advantage equals velocity ratio, obtainable from virtual work: levers give $a / b$, pulley blocks give $n$, toggles give $1 / (2 \tan \theta)$.
 - Efficiency reduces mechanical advantage below velocity ratio; a machine with low efficiency may be self-locking, which is sometimes wanted and sometimes a hazard.
@@ -255,7 +255,7 @@ Moments about the pin: $J = 200 \times 320 / 40 = 1600\ \mathrm{N}$. Mechanical 
 :::
 
 ::: exercise Toggle {level=1 check="2858"}
-For the toggle press of Example 6, what is the output force with $P = 500\ \mathrm{N}$ and $\theta = 5^{\circ}$? (Enter the answer in N.)
+For the toggle press of Example 5, what is the output force with $P = 500\ \mathrm{N}$ and $\theta = 5^{\circ}$? (Enter the answer in N.)
 ::: solution
 $Q = P / (2 \tan \theta) = 500 / (2 \times 0.08749) = 2858\ \mathrm{N}$. Halving the angle roughly doubles the force, which is the whole point of a toggle.
 :::
@@ -280,7 +280,7 @@ Moments about the shaft: $F \times 70 = 350 \times 200$, so $F = 1000\ \mathrm{N
 :::
 
 ::: exercise Frame with a pulley {level=2}
-A frame carries a frictionless pulley of radius $0.2\ \mathrm{m}$ at its corner $B(0, 3)\ \mathrm{m}$. A rope goes over the pulley, one part hanging vertically with a $5\ \mathrm{kN}$ load and the other running horizontally to a winch at $W(4, 3)$. The frame is $A(0, 0)$ pinned and $C(4, 0)$ on a vertical roller. Find the reactions and the force on the pulley pin.
+A frame carries a frictionless pulley of radius $0.2\ \mathrm{m}$ at its corner $B(0, 3)\ \mathrm{m}$. A rope goes over the pulley, one part hanging vertically with a $5\ \mathrm{kN}$ load and the other running horizontally to a winch anchored to the ground, independently of the frame. The frame is $A(0, 0)$ pinned and $C(4, 0)$ on a vertical roller. Find the reactions and the force on the pulley pin.
 ::: solution
 The rope tension is $5\ \mathrm{kN}$ throughout (frictionless pulley). The pulley pin feels the two rope pulls: $(0, -5)$ from the hanging part and $(5, 0)$ from the horizontal part, so the pin load is
 $$
@@ -298,30 +298,30 @@ $$
 $$
 A_y = 5 - 3.75 = 1.25\ \mathrm{kN}, \qquad A_x = -5.0\ \mathrm{kN}.
 $$
-*Sanity.* The offset of the rope from the pulley centre changes the moment by $1.0\ \mathrm{kN\,m}$, about $6$ per cent — small here, but it is the difference between a correct answer and a wrong one, and it is the reason a pulley's line of action must be drawn where the rope actually is, not where the sheave centre is.
+*Sanity.* The two offsets contribute $+1.0\ \mathrm{kN\,m}$ (the vertical part, $0.2\ \mathrm{m}$ left of the centre) and $-1.0\ \mathrm{kN\,m}$ (the extra $0.2\ \mathrm{m}$ of height of the horizontal part) and cancel exactly, so taking both rope pulls at the pulley centre $B$ gives the same $4 C_y = 15\ \mathrm{kN\,m}$. That is the content of the first paragraph: the rope forces on a frictionless pulley may be moved to its centre — both of them together, never one alone.
 :::
 :::
 
 ::: exercise Design: pin at a machine joint {level=3}
-In the bolt cutters of Example 5 the pin transmits $1750\ \mathrm{N}$ in double shear. Select a pin diameter for an allowable shear stress of $100\ \mathrm{MPa}$, and check the bearing stress in a $10\ \mathrm{mm}$ thick cutter arm.
+In the bolt cutters of Example 4 the pin transmits $2250\ \mathrm{N}$ in double shear. Select a pin diameter for an allowable shear stress of $100\ \mathrm{MPa}$, and check the bearing stress in a $10\ \mathrm{mm}$ thick cutter arm.
 ::: solution
-Each shear plane carries $875\ \mathrm{N}$, so
+Each shear plane carries $1125\ \mathrm{N}$, so
 $$
-A_{\text{req}} = \frac{875}{100} = 8.75\ \mathrm{mm^{2}}
+A_{\text{req}} = \frac{1125}{100} = 11.25\ \mathrm{mm^{2}}
 \quad\Longrightarrow\quad
-d = \sqrt{\frac{4 \times 8.75}{\pi}} = 3.34\ \mathrm{mm}.
+d = \sqrt{\frac{4 \times 11.25}{\pi}} = 3.78\ \mathrm{mm}.
 $$
-Take $d = 6\ \mathrm{mm}$, which is set by handling and by the standard size rather than by stress, and the actual shear stress is $875 / 28.27 = 30.9\ \mathrm{MPa}$.
+Take $d = 6\ \mathrm{mm}$, which is set by handling and by the standard size rather than by stress, and the actual shear stress is $1125 / 28.27 = 39.8\ \mathrm{MPa}$.
 
-Bearing on the $10\ \mathrm{mm}$ arm is over the projected area $d t = 6 \times 10 = 60\ \mathrm{mm^{2}}$, with a load of $2000\ \mathrm{N}$ at the jaw side:
+Bearing on the $10\ \mathrm{mm}$ arm is over the projected area $d t = 6 \times 10 = 60\ \mathrm{mm^{2}}$, with the full pin force of $2250\ \mathrm{N}$:
 $$
-\sigma_b = \frac{2000}{60} = 33.3\ \mathrm{MPa}.
+\sigma_b = \frac{2250}{60} = 37.5\ \mathrm{MPa}.
 $$
 *Design comment.* The pin is grossly under-stressed and the joint is governed by **bearing and by the arm's bending**, not by the pin. Cutter arms fail by yielding where the jaw meets the shank, which is why they are forged with a fillet there and heat-treated only at the jaws. Increasing the pin diameter does nothing; thickening the arm at the fillet is what works.
 :::
 :::
 
-::: exercise Machine: scissors jack {level=3}
+::: exercise Machine: screw jack {level=3}
 A screw jack has a square thread of mean radius $r = 15\ \mathrm{mm}$ and lead $L = 6\ \mathrm{mm}$, and a load of $20\ \mathrm{kN}$. Taking $\mu = 0.12$ for the thread, find the torque to raise the load and the torque to lower it, and state whether the jack is self-locking.
 ::: solution
 A square thread is an inclined plane wrapped on a cylinder: unwinding one turn gives a ramp of horizontal length $2 \pi r$ and rise $L$, so the helix angle is
@@ -332,7 +332,7 @@ and the friction angle is $\phi = \arctan 0.12 = 6.84^\circ$. The torque to rais
 $$
 T_{\text{raise}} = Q r \tan(\alpha + \phi)
 = 20\,000 \times 0.015 \times \tan(10.48^\circ)
-= 300 \times 0.1849 = 55.5\ \mathrm{N\,m},
+= 300 \times 0.1851 = 55.5\ \mathrm{N\,m},
 $$
 and to lower it,
 $$
@@ -343,16 +343,16 @@ Both are positive, so the load cannot drive the screw down by itself: the jack i
 
 *Sanity.* The efficiency of raising is
 $$
-\eta = \frac{\tan \alpha}{\tan(\alpha + \phi)} = \frac{0.0637}{0.1849} = 34\ \text{per cent},
+\eta = \frac{\tan \alpha}{\tan(\alpha + \phi)} = \frac{0.0637}{0.1851} = 34\ \text{per cent},
 $$
 which is typical of a power screw and explains why a jack needs a long tommy bar: a $300\ \mathrm{mm}$ bar gives $55.5 / 0.300 = 185\ \mathrm{N}$ of hand force, quite comfortable, while a $100\ \mathrm{mm}$ bar would need $555\ \mathrm{N}$, which no one can sustain. Ball-screw jacks recover most of that 66 per cent loss, at the price of losing self-locking and needing a brake.
 :::
 :::
 
 ::: exercise Derivation {level=3}
-For a wedge of half-angle $\alpha$ and coefficient of friction $\mu$ on both faces, derive the force required to drive the wedge under a load $Q$, and show that the wedge is self-holding when $\tan \alpha < \mu$. Apply the result to a $1:8$ taper wedge with $\mu = 0.25$ and $Q = 10\ \mathrm{kN}$.
+For a wedge of half-angle $\alpha$ and coefficient of friction $\mu$ on both faces, derive the force required to drive the wedge against a total transverse load $Q$ (the sum of the transverse forces on the two faces), and show that the wedge is self-holding when $\tan \alpha < \mu$. Apply the result to a $1:8$ taper wedge with $\mu = 0.25$ and $Q = 10\ \mathrm{kN}$.
 ::: solution
-Each face carries a normal reaction $N$ and a friction force $\mu N$ opposing the wedge's motion. Resolving perpendicular to and along the wedge axis for one face, and taking the wedge as a free body with the load $Q$ on its back and a driving force $P$ along its axis,
+Each face carries a normal reaction $N$ and a friction force $\mu N$ opposing the wedge's motion. Resolving perpendicular to and along the wedge axis for one face, and taking the wedge as a free body with a total transverse load $Q$ shared by its two faces and a driving force $P$ along its axis,
 $$
 Q = 2 \left( N \cos \alpha - \mu N \sin \alpha \right), \qquad
 P = 2 \left( N \sin \alpha + \mu N \cos \alpha \right),
@@ -362,12 +362,12 @@ $$
 P = Q \, \frac{\sin \alpha + \mu \cos \alpha}{\cos \alpha - \mu \sin \alpha}
 = Q \, \frac{\tan \alpha + \mu}{1 - \mu \tan \alpha} = Q \tan(\alpha + \phi), \qquad \tan \phi = \mu .
 $$
-To *release* the wedge the friction reverses, giving $P_{\text{release}} = Q \tan(\phi - \alpha)$, which is negative — that is, the wedge holds itself and must be pulled out — whenever $\phi > \alpha$, that is $\mu > \tan \alpha$. That is the **self-holding** condition.
+To *release* the wedge the friction reverses, giving $P_{\text{release}} = Q \tan(\phi - \alpha)$, which is positive — that is, the wedge holds itself and must be pulled out — whenever $\phi > \alpha$, that is $\mu > \tan \alpha$. That is the **self-holding** condition.
 
 For a $1:8$ taper, $\tan \alpha = 1 / 8 = 0.125$, $\alpha = 7.125^{\circ}$, and with $\mu = 0.25$, $\phi = 14.04^{\circ}$:
 $$
 P = 10 \times \tan(21.16^{\circ}) = 10 \times 0.387 = 3.87\ \mathrm{kN}.
 $$
-Since $\phi = 14.04^{\circ} > \alpha = 7.13^{\circ}$, the wedge is self-holding, and the mechanical advantage is $Q / P = 2.58$. Halving the taper to $1:16$ gives $\alpha = 3.58^{\circ}$, $P = 10 \tan(17.62^{\circ}) = 3.17\ \mathrm{kN}$ and $\mathrm{MA} = 3.15$ — a better machine, but only just, and the self-holding margin grows, which is why a split pin is not used where the joint must be struck free.
+Since $\phi = 14.04^{\circ} > \alpha = 7.13^{\circ}$, the wedge is self-holding, and the mechanical advantage is $Q / P = 2.58$. Halving the taper to $1:16$ gives $\alpha = 3.58^{\circ}$, $P = 10 \tan(17.62^{\circ}) = 3.17\ \mathrm{kN}$ and $\mathrm{MA} = 3.15$ — a better machine, but only just, and the self-holding margin grows, which is why fine tapers are used where a wedge must stay put and coarser ones where it must be knocked out easily.
 :::
 :::

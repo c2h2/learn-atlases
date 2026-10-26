@@ -62,7 +62,7 @@ $$
 F_R = \sqrt{400^{2} + 600^{2} + 2 \times 400 \times 600 \times \cos 60^\circ}
      = \sqrt{160\,000 + 360\,000 + 240\,000} = \sqrt{760\,000} = 872\ \mathrm{N}.
 $$
-For the direction, use the force triangle: the angle opposite the $600\ \mathrm{N}$ side is $180^\circ - 60^\circ = 120^\circ$, so if $\phi$ is the angle between the resultant and the $600\ \mathrm{N}$ force,
+For the direction, use the force triangle: the angle opposite the resultant is $180^\circ - 60^\circ = 120^\circ$, so if $\phi$ is the angle between the resultant and the $600\ \mathrm{N}$ force,
 $$
 \sin\phi = \frac{400 \sin 120^\circ}{871.8} = 0.3971, \qquad \phi = 23.4^\circ .
 $$
@@ -78,7 +78,7 @@ x: 0, 180
 y: 200, 1000
 points: 60,871.8
 labels: \text{resultant of 400 N and 600 N}
-caption: The magnitude of the resultant of a $400\ \mathrm{N}$ and a $600\ \mathrm{N}$ force, plotted against the angle $\theta$ between them. Drag or read along the curve: at $\theta = 0$ the resultant is the sum, $1000\ \mathrm{N}$; at $\theta = 90^\circ$ it is $\sqrt{400^2+600^2} = 721\ \mathrm{N}$; at $\theta = 180^\circ$ it is the difference, $200\ \mathrm{N}$. Notice how flat the curve is near $\theta = 180^\circ$ — two nearly opposing large forces give a resultant that is very sensitive to the angle between them, which is why the geometry of a braced panel matters so much more when the members are nearly collinear.
+caption: The magnitude of the resultant of a $400\ \mathrm{N}$ and a $600\ \mathrm{N}$ force, plotted against the angle $\theta$ between them. Drag or read along the curve: at $\theta = 0$ the resultant is the sum, $1000\ \mathrm{N}$; at $\theta = 90^\circ$ it is $\sqrt{400^2+600^2} = 721\ \mathrm{N}$; at $\theta = 180^\circ$ it is the difference, $200\ \mathrm{N}$. Notice that the curve is flat at both ends and steepest in between: near $\theta = 0$ or $\theta = 180^\circ$ a small error in the angle hardly changes the resultant, while in the middle of the range it changes it most.
 :::
 
 ::: quiz
@@ -107,7 +107,7 @@ and conversely $F = \sqrt{F_x^{2} + F_y^{2}}$ with $\theta = \arctan(F_y / F_x)$
 The angle must be measured from the axis to whose direction the cosine component is referred, and it must be the angle *between the force and that axis*, not an angle given in the figure for another purpose. When a slope is quoted as "1 in 4" or as a gradient, the components follow from the triangle, not from the arctangent of the reciprocal: a force of $F$ along a line of slope $1:4$ has a horizontal component $4F/\sqrt{17}$ and a vertical component $F/\sqrt{17}$.
 
 ::: example Resolving along inclined axes {#ex-inclined-axes}
-A force of $500\ \mathrm{N}$ acts at $60^\circ$ from the $x$-axis. Resolve it along two non-perpendicular directions, the $u$-axis at $20^\circ$ and the $v$-axis at $110^\circ$ from the $x$-axis, and check the answer.
+A force of $500\ \mathrm{N}$ acts at $60^\circ$ from the $x$-axis. Resolve it along two directions, the $u$-axis at $20^\circ$ and the $v$-axis at $110^\circ$ from the $x$-axis, and check the answer.
 ::: solution
 The two axes happen to be perpendicular here ($110^\circ - 20^\circ = 90^\circ$), so the components are
 $$
@@ -117,7 +117,7 @@ $$
 Check by recombining in $x$–$y$:
 $$
 F_x = 383 \cos 20^\circ + 321 \cos 110^\circ = 359.9 - 109.9 = 250\ \mathrm{N}, \qquad
-F_y = 383 \sin 20^\circ + 321 \sin 110^\circ = 131.0 + 301.5 = 433\ \mathrm{N},
+F_y = 383 \sin 20^\circ + 321 \sin 110^\circ = 131.0 + 301.6 = 433\ \mathrm{N},
 $$
 and $250^{2} + 433^{2} = 250\,000 \approx 500^{2}$, with $\arctan(433/250) = 60^\circ$. The original force is recovered.
 
@@ -285,14 +285,14 @@ $$
 F_{z,BC} = 840 \times 0.8571 = 720\ \mathrm{N}, \qquad
 F_{z,BD} = 840 \times 0.7682 = 645\ \mathrm{N},
 $$
-giving a total downward pull of $1365\ \mathrm{N}$ on the mast top, before any load applied at the top. The horizontal components, $240\ \mathrm{N}$ in the $+x$ direction and $360\ \mathrm{N}$ in the $+y$ direction from $BC$ and $BD$ respectively, do not cancel: the mast top is side-loaded by $\sqrt{240^2 + 360^2} = 433\ \mathrm{N}$, and a fourth stay or a check-stay is needed to balance it.
+giving a total downward pull of $1365\ \mathrm{N}$ on the mast top, before any load applied at the top. The horizontal components do not cancel: $BC$ pulls $240\ \mathrm{N}$ in $+x$ and $360\ \mathrm{N}$ in $-y$, while $BD$ pulls $840 \times 0.6402 = 538\ \mathrm{N}$ in $+y$, leaving a net side load of $(240, 178)\ \mathrm{N}$, of magnitude $\sqrt{240^2 + 178^2} = 299\ \mathrm{N}$, which a third stay or a check-stay is needed to balance.
 
-*Sanity check.* Both stays are steeper than $45^\circ$ — their vertical drops of $6\ \mathrm{m}$ exceed their horizontal runs of $\sqrt{13} = 3.6\ \mathrm{m}$ and $5\ \mathrm{m}$ — so each should contribute more vertical than horizontal pull, and $720 > 240$, $645 > 360$ confirm it. The angle between them, $67.4^\circ$, is less than the $90^\circ$ one might guess from the plan view, because both lean downward towards the same deck level.
+*Sanity check.* Both stays are steeper than $45^\circ$ — their vertical drops of $6\ \mathrm{m}$ exceed their horizontal runs of $\sqrt{13} = 3.6\ \mathrm{m}$ and $5\ \mathrm{m}$ — so each should contribute more vertical than horizontal pull, and $720 > 433$ (the horizontal pull of $BC$, $\sqrt{240^2 + 360^2}$), $645 > 538$ confirm it. The angle between them, $67.4^\circ$, is much less than the $146^\circ$ between their plan projections, because both lean steeply downward towards the same deck level.
 :::
 :::
 
 ::: history
-The composition of forces was stated as a rule long before it was proved. The parallelogram of forces appears in a manuscript of Leonardo da Vinci around 1500 and in print in Stevin's *De Beghinselen des Waterwichts* and *Staticorum* of 1586, where the equilibrium of a body on an inclined plane is solved by resolving weight into components along and perpendicular to the plane — the first systematic use of resolution in statics. Varignon published the *Projet d'une nouvelle méchanique* in 1687, the year of Newton's *Principia*, and proved the theorem of moments that still carries his name; Newton's own corollary I to the *Principia* is the parallelogram law, stated as the composition of two velocities. Varignon's 1687 memoir was, in his own account, communicated to the Académie des Sciences within weeks of Newton's book appearing, and the two together put statics on a vector footing a century and a half before the word "vector" was coined by Hamilton in 1843 and the notation of $\mathbf{i}$, $\mathbf{j}$, $\mathbf{k}$ fixed by Gibbs and Heaviside in the 1880s. The practical consequence for engineers was that the graphical statics of the nineteenth century — force polygons drawn to scale on paper, used by Rankine, Culmann and the great bridge engineers of the 1860s — could be replaced by arithmetic, and then, in the twentieth, by the matrix and computer methods that every frame in this atlas is analysed with.
+The composition of forces was stated as a rule long before it was proved. Stevin's *De Beghinselen der Weeghconst* (Leiden, 1586) solved the equilibrium of a body on an inclined plane and in effect used the triangle of forces, resolving a weight into components along and perpendicular to the plane — the first systematic use of resolution in statics. Varignon published the *Projet d'une nouvelle méchanique* in 1687, the year of Newton's *Principia*, and proved the theorem of moments that still carries his name; Newton's own Corollary I to the laws of motion in the *Principia* is the parallelogram law, stated for two forces acting together on a body. The two books together put statics on what is in effect a vector footing a century and a half before Hamilton coined the word "vector" in the 1840s, and two centuries before Gibbs and Heaviside, borrowing $\mathbf{i}$, $\mathbf{j}$, $\mathbf{k}$ from Hamilton's quaternions, built the vector algebra used here in the 1880s. The practical consequence for engineers was that the graphical statics of the nineteenth century — force polygons drawn to scale on paper, used by Rankine, Culmann and the great bridge engineers of the 1860s — could be replaced by arithmetic, and then, in the twentieth, by the matrix and computer methods that every frame in this atlas is analysed with.
 :::
 
 ## Where this leads
@@ -310,12 +310,12 @@ The vector arithmetic of this chapter is used unchanged in [[statics/particle-eq
 
 ## Exercises
 
-::: exercise Resultant of two forces {level=1 check="1044"}
+::: exercise Resultant of two forces {level=1 check="721"}
 Two forces of $600\ \mathrm{N}$ and $800\ \mathrm{N}$ act at a point with an angle of $120^\circ$ between them. Find the magnitude of the resultant. (Enter the force in N.)
 ::: solution
 $F_R = \sqrt{600^{2} + 800^{2} + 2 \times 600 \times 800 \times \cos 120^\circ}
-     = \sqrt{360\,000 + 640\,000 - 480\,000} = \sqrt{520\,000} = 1044\ \mathrm{N}$.
-The angle between the two forces is obtuse, so the resultant is only a little larger than the bigger force — the two partly cancel.
+     = \sqrt{360\,000 + 640\,000 - 480\,000} = \sqrt{520\,000} = 721\ \mathrm{N}$.
+The angle between the two forces is obtuse, so the two partly cancel and the resultant is smaller than the bigger force.
 :::
 :::
 
@@ -324,7 +324,7 @@ A machine of mass $500\ \mathrm{kg}$ is lifted by a single vertical cable. What 
 ::: solution
 At rest the acceleration is zero, so the cable tension equals the weight:
 $T = mg = 500 \times 9.81 = 4905\ \mathrm{N} = 4.90\ \mathrm{kN}$.
-If the machine is accelerated upward at $1.5\ \mathrm{m/s^{2}}$ the tension becomes $m(g + a) = 500 \times 11.31 = 5.66\ \mathrm{kN}$, seventeen per cent more — which is why a lifting machine's rated capacity is reduced for hoisting with acceleration.
+If the machine is accelerated upward at $1.5\ \mathrm{m/s^{2}}$ the tension becomes $m(g + a) = 500 \times 11.31 = 5.66\ \mathrm{kN}$, fifteen per cent more — which is why a lifting machine's rated capacity is reduced for hoisting with acceleration.
 :::
 :::
 
@@ -358,11 +358,11 @@ $\mathbf{F}_R = (3 - 1 + 2)\mathbf{i} + (-2 + 5 + 1)\mathbf{j} + (4 - 2 - 3)\mat
 $$
 F_R = \sqrt{4^{2} + 4^{2} + 1^{2}} = \sqrt{33} = 5.74\ \mathrm{N}.
 $$
-The tempting wrong answer is the sum of the three magnitudes, $\sqrt{29} + \sqrt{30} + \sqrt{14} = 5.39 + 5.48 + 3.74 = 14.6\ \mathrm{N}$; magnitudes do not add. Note also that the resultant is far smaller than any individual force here, because the three partly cancel.
+The tempting wrong answer is the sum of the three magnitudes, $\sqrt{29} + \sqrt{30} + \sqrt{14} = 5.39 + 5.48 + 3.74 = 14.6\ \mathrm{N}$; magnitudes do not add. Note also that the resultant is only slightly larger than the largest single force, because the three partly cancel.
 :::
 :::
 
-::: exercise Angle between two cables {level=2 check="51.3"}
+::: exercise Angle between two cables {level=2 check="51.2"}
 Two cables leave a common point along the directions $(4, -3, -6)$ and $(0, 5, -12)$, in metres. Find the angle between them. (Enter the angle in degrees.)
 ::: solution
 Both directions are already given with convenient lengths, $r_1 = \sqrt{16 + 9 + 36} = 7\ \mathrm{m}$ and $r_2 = \sqrt{25 + 144} = 13\ \mathrm{m}$. Then
@@ -409,6 +409,6 @@ $$
 $$
 which is the required result.
 
-For $\theta = 90^\circ$ this becomes $F_u = F \sin(90^\circ - \alpha) = F \cos\alpha$, the rectangular formula, as it must. As $\theta \to 0$ the two axes become parallel, $\sin\theta \to 0$, and $F_u \to \infty$ unless $\alpha \to 0$ too. The divergence is not a curiosity but a warning: two nearly parallel members meeting at a joint cannot together resist a force with a component perpendicular to them, and the forces they carry become enormous. This is why a braced panel is never detailed with two nearly collinear members in place of a third direction, and why the flat curve of [[#ex-two-forces]] near $\theta = 180^\circ$ and the divergence here are the same phenomenon seen from two sides.
+For $\theta = 90^\circ$ this becomes $F_u = F \sin(90^\circ - \alpha) = F \cos\alpha$, the rectangular formula, as it must. As $\theta \to 0$ the two axes become parallel, $\sin\theta \to 0$, and $F_u \to \infty$ unless $\alpha \to 0$ too. The divergence is not a curiosity but a warning: two nearly parallel members meeting at a joint cannot together resist a force with a component perpendicular to them, and the forces they carry become enormous. This is why a braced panel is never detailed with two nearly collinear members in place of a third direction.
 :::
 :::

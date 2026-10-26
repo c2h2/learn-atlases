@@ -3,7 +3,7 @@ The first law says you cannot lose. The second law says you cannot even break ev
 Everything in this lesson follows from one fact about **direction**: heat goes from hot to cold of its own accord and never the reverse, and a quantity of heat at a temperature $T$ in an environment at $T_0$ can be converted to work only to the extent that a **temperature difference** exists to spend. The engineering content of the second law is that this is not a limitation of materials or of machining but a limitation of **arithmetic**, and that the number which expresses it, $1 - T_0 / T$, is the most quoted and most misused fraction in the subject.
 
 ::: warning Seven second-law errors that survive peer review
-**Claiming an efficiency above the Carnot limit and not noticing.** A heat engine between $800\ \mathrm{K}$ and $300\ \mathrm{K}$ has a Carnot limit of $1 - 300 / 800 = 62.5\ \%$; a paper claiming $68\ \%$ has not made a discovery, it has broken the second law, and the error is always in the **heat input**, which has been taken as a fuel's heating value when part of it left at a temperature the engine could not have used. **Using a temperature ratio with the wrong scale.** $1 - T_L / T_H$ requires **absolute** temperature, and a calculation with $1 - 25 / 300 = 0.917$ in Celsius has found a $92\ \%$ heat engine where the truth is $48\ \%$. **Confusing a heat engine's efficiency with a heat pump's coefficient of performance.** A heat pump with $\mathrm{COP} = 3.5$ is **not** $350\ \%$ efficient and is not comparable to a furnace at $92\ \%$; the two numbers have different numerators, and the correct comparison is **exergy**, where the heat pump wins by a factor of about $1.8$. **Applying the Carnot efficiency to a device that is not a heat engine between two reservoirs.** A fuel cell, a thermoelectric module, a concentration cell and a muscle are **not** heat engines and are not limited by $1 - T_0 / T$; a fuel cell's limit is $\Delta G / \Delta H$, which for hydrogen is $83\ \%$ at $25\ {}^{\circ}\mathrm{C}$ and rises as the current falls. **Treating the surroundings as a work reservoir.** The atmosphere at $288\ \mathrm{K}$ contains about $6 \times 10^{18}\ \mathrm{MJ}$ of thermal energy and can supply **none** of it as work, because there is nothing colder to reject to. A statement that "the ocean holds more energy than all the oil" is thermodynamically true and engineeringly worthless, and the second law is the reason. **Assuming a reversible device is a slow device.** Reversibility requires **no** dissipative effect — no friction, no unrestrained expansion, no heat transfer across a finite difference, no mixing, no hysteresis, no electrical resistance — and **not** slowness. A superconducting circuit is reversible at full current; a turbine running at its design point is within $8\ \%$ of reversible while the gas moves at $400\ \mathrm{m / s}$. **Adding efficiencies.** $\eta_{\mathrm{total}} \ne \eta_1 + \eta_2 - 1$ and $\eta_{\mathrm{cycle}} \ne \eta_{\mathrm{turbine}} \eta_{\mathrm{generator}}$ if the second already includes the first. The rule is that **efficiencies multiply along a chain of energy transfers and never add**, and that a chain's overall efficiency is always less than its worst link's.
+**Claiming an efficiency above the Carnot limit and not noticing.** A heat engine between $800\ \mathrm{K}$ and $300\ \mathrm{K}$ has a Carnot limit of $1 - 300 / 800 = 62.5\ \%$; a paper claiming $68\ \%$ has not made a discovery, it has broken the second law, and the error is always in the **heat input**, which has been taken as a fuel's heating value when part of it left at a temperature the engine could not have used. **Using a temperature ratio with the wrong scale.** $1 - T_L / T_H$ requires **absolute** temperature, and a calculation with $1 - 25 / 300 = 0.917$ in Celsius has found a $92\ \%$ heat engine where the truth is $48\ \%$. **Confusing a heat engine's efficiency with a heat pump's coefficient of performance.** A heat pump with $\mathrm{COP} = 3.5$ is **not** $350\ \%$ efficient and is not comparable to a furnace at $92\ \%$; the two numbers have different numerators, and the correct comparison is on **exergy** (or primary energy), where, with the electricity generated at $42\ \%$, the heat pump wins by a factor of about $1.6$. **Applying the Carnot efficiency to a device that is not a heat engine between two reservoirs.** A fuel cell, a thermoelectric module, a concentration cell and a muscle are **not** heat engines and are not limited by $1 - T_0 / T$; a fuel cell's limit is $\Delta G / \Delta H$, which for hydrogen is $83\ \%$ at $25\ {}^{\circ}\mathrm{C}$ (higher heating value), and a real cell approaches it as the current falls. **Treating the surroundings as a work reservoir.** The atmosphere at $288\ \mathrm{K}$ contains about $1 \times 10^{18}\ \mathrm{MJ}$ of internal energy and can supply **none** of it as work, because there is nothing colder to reject to. A statement that "the ocean holds more energy than all the oil" is thermodynamically true and engineeringly worthless, and the second law is the reason. **Assuming a reversible device is a slow device.** Reversibility requires **no** dissipative effect — no friction, no unrestrained expansion, no heat transfer across a finite difference, no mixing, no hysteresis, no electrical resistance — and **not** slowness. A superconducting circuit is reversible at full current; a turbine running at its design point is within $8\ \%$ of reversible while the gas moves at $400\ \mathrm{m / s}$. **Adding efficiencies.** $\eta_{\mathrm{total}} \ne \eta_1 + \eta_2 - 1$ and $\eta_{\mathrm{cycle}} \ne \eta_{\mathrm{turbine}} \eta_{\mathrm{generator}}$ if the second already includes the first. The rule is that **efficiencies multiply along a chain of energy transfers and never add**, and that a chain's overall efficiency is always less than its worst link's.
 :::
 
 ## Heat engines and their limits
@@ -22,7 +22,7 @@ $$
 **The two statements, and why there are two.**
 $$
 \begin{array}{l l}
-\textbf{KelndashPlanck} & \text{No cyclic device can exchange heat with a single reservoir and produce a net amount of work.} \\
+\textbf{Kelvin–Planck} & \text{No cyclic device can exchange heat with a single reservoir and produce a net amount of work.} \\
 \textbf{Clausius} & \text{No cyclic device can operate whose sole effect is to transfer heat from a colder to a hotter body.}
 \end{array}
 $$
@@ -96,18 +96,19 @@ $$
 \text{Diesel engine} & 2{,}600\ \text{peak} & 300 & 88.5\ \% & 46\ \% \\
 \text{Steam locomotive} & 465 & 300 & 35.5\ \% & 6\ \% \\
 \text{OTEC, ocean thermal} & 298 & 278 & 6.7\ \% & 2\ \% \\
-\text{Domestic refrigerator} & 303\ \left( 30\ {}^{\circ}\mathrm{C} \right) & 258\ \left( - 15\ {}^{\circ}\mathrm{C} \right) & \mathrm{COP}\ 6.0 & 2.2 \\
-\text{Air-source heat pump, } 0\ {}^{\circ}\mathrm{C} & 318 & 273 & \mathrm{COP}\ 7.5 & 3.1 \\
-\text{Air-source heat pump, } - 20\ {}^{\circ}\mathrm{C} & 318 & 253 & \mathrm{COP}\ 5.1 & 2.0 \\
-\text{Ground-source heat pump} & 318 & 281 & \mathrm{COP}\ 9.9 & 4.4
+\text{Domestic refrigerator} & 303\ \left( 30\ {}^{\circ}\mathrm{C} \right) & 258\ \left( - 15\ {}^{\circ}\mathrm{C} \right) & \mathrm{COP}\ 5.7 & 2.2 \\
+\text{Air-source heat pump, } 0\ {}^{\circ}\mathrm{C} & 318 & 273 & \mathrm{COP}\ 7.1 & 3.1 \\
+\text{Air-source heat pump, } - 20\ {}^{\circ}\mathrm{C} & 318 & 253 & \mathrm{COP}\ 4.9 & 2.0 \\
+\text{Ground-source heat pump} & 318 & 281 & \mathrm{COP}\ 8.6 & 4.4
 \end{array}
 $$
-**The three readings of this table.** **The gap between Carnot and real is largest where the cycle is simplest** — a gas turbine reaches $46\ \%$ of a Carnot limit of $82.5\ \%$, because its exhaust leaves at $550\ {}^{\circ}\mathrm{C}$ and that heat is not rejected reversibly at $T_L$ but dumped at a high temperature. **The heat pump's COP falls as the outside temperature falls, and it falls faster than the Carnot figure** because the evaporator needs a temperature difference to work, so the real machine loses $1.1$ of COP where Carnot loses $2.4$. **The steam locomotive's $6\ \%$ against a Carnot limit of $35\ \%$ is not incompetence** but the price of a single-expansion engine with no condenser, and the reason a **compound** engine and a **condensing** engine each recovered a third of the difference.
-**The number that ends the ocean-energy argument.** An OTEC plant between $25\ {}^{\circ}\mathrm{C}$ surface water and $5\ {}^{\circ}\mathrm{C}$ deep water has a Carnot limit of $6.7\ \%$, a real efficiency of about $2\ \%$, and therefore needs a working-fluid flow of
+**The three readings of this table.** **The gap between Carnot and real is largest where the cycle is simplest** — a gas turbine reaches $46\ \%$ of a Carnot limit of $82.5\ \%$, because its exhaust leaves at $550\ {}^{\circ}\mathrm{C}$ and that heat is not rejected reversibly at $T_L$ but dumped at a high temperature. **The heat pump's COP falls as the outside temperature falls, and it falls faster than the Carnot figure** because the evaporator needs a temperature difference to work, so the real machine loses $35\ \%$ of its COP (from $3.1$ to $2.0$) where Carnot loses $31\ \%$ (from $7.1$ to $4.9$). **The steam locomotive's $6\ \%$ against a Carnot limit of $35\ \%$ is not incompetence** but the price of a single-expansion engine with no condenser, and the reason a **compound** engine and a **condensing** engine each recovered a third of the difference.
+**The number that ends the ocean-energy argument.** An OTEC plant between $25\ {}^{\circ}\mathrm{C}$ surface water and $5\ {}^{\circ}\mathrm{C}$ deep water has a Carnot limit of $6.7\ \%$ and a real efficiency of about $2\ \%$, so a $10\ \mathrm{MW}$ plant must collect
 $$
-\dot{m} = \frac{\dot{W}}{\eta \, c_p \, \Delta T_{\text{available}}} \quad \Rightarrow \quad 10\ \mathrm{MW} / 0.02 = 500\ \mathrm{MW}\ \text{of heat collected}
+\dot{Q}_H = \frac{\dot{W}}{\eta} = \frac{10\ \mathrm{MW}}{0.02} = 500\ \mathrm{MW}, \qquad
+\dot{m}_{\text{warm water}} = \frac{\dot{Q}_H}{c_p \, \Delta T} = \frac{500 \times 10^{6}}{4{,}000 \times 3} \approx 42{,}000\ \mathrm{kg / s}
 $$
-which at $1{,}000\ \mathrm{W / m^{2}}$ of solar-heated surface water means a **heat exchanger the size of a small town** — and the second law, not the engineering, is why no OTEC plant has ever exceeded $100\ \mathrm{kW}$.
+if the warm seawater is cooled by $3\ \mathrm{K}$ — about $40\ \mathrm{m^{3} / s}$ of surface water and a similar flow pumped up from $1{,}000\ \mathrm{m}$ depth, with **heat exchangers of the order of a hectare** — and the second law, not the engineering, is why OTEC demonstration plants have stayed at a few hundred kilowatts or less.
 :::
 
 ::: definition Maximising and minimising the difference {#def-maxmin}
@@ -121,15 +122,16 @@ $$
 \text{Era} & T_H\ ({}^{\circ}\mathrm{C}) & \eta_{\mathrm{plant}} & \text{The constraint that moved} \\
 1920 & 230 & 8\ \% & \text{boiler steel} \\
 1950 & 510 & 22\ \% & \text{creep-resistant ferritic steel} \\
-1970 & 565 & 36\ \% & 9 \% \mathrm{Cr}\ \text{martensitic steel} \\
-1990 & 600 & 42\ \% & \text{austenitic and nickel alloys} \\
-2010 & 700\ \left( \text{ultra-supercritical} \right) & 48\ \% & \text{nickel 617 and 740H, at } 35\ \mathrm{MPa} \\
+1970 & 565 & 36\ \% & \text{low-alloy Cr–Mo steels} \\
+1990 & 580 & 42\ \% & 9 \% \mathrm{Cr}\ \text{martensitic steel (P91)} \\
+2010 & 600\text{–}620\ \left( \text{ultra-supercritical} \right) & 45\ \% & \text{P92 and austenitic superheater tubes} \\
+\text{Research (A-USC)} & 700 & 48\ \% & \text{nickel 617 and 740H, at } 35\ \mathrm{MPa} \\
 \text{Gas turbine} & 1{,}500\ \text{turbine entry} & 40\ \% & \text{single-crystal blades and film cooling} \\
 \text{Combined cycle} & \text{same} & 63\ \% & \text{the steam cycle recovers the exhaust}
 \end{array}
 $$
-**The number that shows the return on the last $100\ \mathrm{K}$.** Going from $600$ to $700\ {}^{\circ}\mathrm{C}$ main steam at $30\ \mathrm{MPa}$ raises a supercritical plant's efficiency from $45.4\ \%$ to $48.1\ \%$ — **$2.7$ percentage points**, worth about **$22\ \%$** of the fuel bill — and costs a **doubling** of the boiler's material cost and a nickel alloy whose supply is a strategic question.
-**The lower bound is not free either.** A condenser at $5\ {}^{\circ}\mathrm{C}$ instead of $30\ {}^{\circ}\mathrm{C}$ raises a steam cycle's efficiency by **$3.5$ percentage points**, and the plant cannot do it because the cooling water is at $15\ {}^{\circ}\mathrm{C}$ and the river's consent limits its rise to $10\ \mathrm{K}$. **The cold-end temperature is set by geography and by environmental law, and it is the single largest reason a real plant sits $20$ points below its Carnot limit.**
+**The number that shows the return on the last $100\ \mathrm{K}$.** Going from $600$ to $700\ {}^{\circ}\mathrm{C}$ main steam at $30\ \mathrm{MPa}$ raises a supercritical plant's efficiency from $45.4\ \%$ to $48.1\ \%$ — **$2.7$ percentage points**, worth about **$5.6\ \%$** of the fuel bill — and costs a **doubling** of the boiler's material cost and a nickel alloy whose supply is a strategic question.
+**The lower bound is not free either.** A condenser at $5\ {}^{\circ}\mathrm{C}$ instead of $30\ {}^{\circ}\mathrm{C}$ raises a steam cycle's efficiency by **about $3$ percentage points**, and the plant cannot do it because the cooling water is at $15\ {}^{\circ}\mathrm{C}$ and the river's consent limits its rise to $10\ \mathrm{K}$. **The cold-end temperature is set by geography and by environmental law, and it is the single largest reason a real plant sits $20$ points below its Carnot limit.**
 **The number that sizes a cooling tower.** A $1{,}000\ \mathrm{MW}$ plant at $38\ \%$ efficiency rejects
 $$
 \dot{Q}_L = 1{,}000 \times \left( \frac{1}{0.38} - 1 \right) = 1{,}632\ \mathrm{MW}
@@ -145,8 +147,8 @@ which is acceptable, while a $100\ \mathrm{m^{3} / s}$ abstraction would give $3
 f: 1 - 288/(288+100*x); 0.42*1
 x: 0, 12
 y: 0, 0.75
-labels: Carnot limit for TH = 288+100x K; a real combined cycle held at 42 per cent
-caption: The Carnot efficiency of a heat engine whose hot reservoir rises from $288\ \mathrm{K}$ in $100\ \mathrm{K}$ steps, against a real combined-cycle plant's efficiency held flat at $42\ \%$ for comparison. The Carnot curve rises **steeply at first and then flattens**: the first $300\ \mathrm{K}$ of temperature lift buys $51$ points of limit and the next $300\ \mathrm{K}$ only $14$. This is why the historical record of power generation is a story of the **first** few hundred kelvin of $T_H$ and why the last hundred kelvin costs a nickel-alloy supply chain.
+labels: Carnot limit for TH = 288+100x K; a real steam plant held at 42 per cent
+caption: The Carnot efficiency of a heat engine whose hot reservoir rises from $288\ \mathrm{K}$ in $100\ \mathrm{K}$ steps, against a real steam plant's efficiency held flat at $42\ \%$ for comparison. The Carnot curve rises **steeply at first and then flattens**: the first $300\ \mathrm{K}$ of temperature lift buys $51$ points of limit and the next $300\ \mathrm{K}$ only $17$. This is why the historical record of power generation is a story of the **first** few hundred kelvin of $T_H$ and why the last hundred kelvin costs a nickel-alloy supply chain.
 :::
 
 ## Worked cases
@@ -199,7 +201,7 @@ A house needs $12\ \mathrm{kW}$ of heat on a $- 5\ {}^{\circ}\mathrm{C}$ day. Co
 ::: solution
 **The energy.**
 $$
-\text{Furnace: } \dot{Q}_{\mathrm{fuel}} = \frac{12}{0.92} = 13.04\ \mathrm{kW_{th}} \quad \Rightarrow \quad 13.04 / 49.8 = 0.262\ \mathrm{m^{3} / h\ of\ gas}
+\text{Furnace: } \dot{Q}_{\mathrm{fuel}} = \frac{12}{0.92} = 13.04\ \mathrm{kW_{th}} \quad \Rightarrow \quad \frac{13.04 \times 3.6}{39} = 1.20\ \mathrm{m^{3} / h\ of\ gas}
 $$
 $$
 \text{Heat pump: } \dot{W} = \frac{12}{2.8} = 4.29\ \mathrm{kW_{el}}
@@ -209,7 +211,7 @@ $$
 \text{Furnace: } 13.04\ \mathrm{kW} \text{ primary}, \qquad
 \text{Heat pump: } \frac{4.29}{0.42} = 10.21\ \mathrm{kW} \text{ primary}
 $$
-**The heat pump wins by $22\ \%$ on primary energy** — and the win is smaller than the $3.0$-fold difference at the meter, because the electricity was made at $42\ \%$.
+**The heat pump uses $22\ \%$ less primary energy** — and the win is smaller than the $3.0$-fold difference at the meter, because the electricity was made at $42\ \%$.
 **The cost, at European 2024 prices.**
 $$
 \text{Furnace: } 13.04 \times 0.075 = 0.98\ \text{currency units / h}, \qquad
@@ -226,7 +228,7 @@ $$
 \eta_{\mathrm{II, HP}} = \frac{1.02}{4.29} = 23.8\ \%
 $$
 **The heat pump is $3.2$ times as exergetically efficient as the furnace** and both are terrible, because **heating a house with work-capable energy is thermodynamically obscene** and the only reason it is done is that work-capable energy is cheap and heat is not.
-**The number that shows the real opportunity.** A **district** heat pump lifting a sewage-treatment outfall from $14\ {}^{\circ}\mathrm{C}$ to $60\ {}^{\circ}\mathrm{C}$ has a Carnot COP of $293 / 46 = 6.4$ and a real COP of $3.8$, and it delivers heat whose exergy is $1 - 268 / 333 = 0.195$ of its energy — so its second-law efficiency is $3.8 \times 0.195 = 74\ \%$. **The same machine, at a higher delivery temperature and a warmer source, is nine times as exergetically efficient as the house heat pump** — and this is why every serious decarbonisation plan puts large heat pumps on **waste** heat and not on outside air.
+**The number that shows the real opportunity.** A **district** heat pump lifting a sewage-treatment outfall from $14\ {}^{\circ}\mathrm{C}$ to $60\ {}^{\circ}\mathrm{C}$ has a Carnot COP of $333 / 46 = 7.2$ and a real COP of $3.8$, and it delivers heat whose exergy is $1 - 268 / 333 = 0.195$ of its energy — so its second-law efficiency is $3.8 \times 0.195 = 74\ \%$. **The same machine, at a higher delivery temperature and a warmer source, is three times as exergetically efficient as the house heat pump** — and this is why every serious decarbonisation plan puts large heat pumps on **waste** heat and not on outside air.
 *Sanity.* The reason the furnace's $92\ \%$ is not comparable to a heat pump's $280\ \%$ is that the two numerators are different quantities: the furnace's is the fuel's heating value and the heat pump's is the electricity meter. Put both on exergy and the comparison is $7.5\ \%$ against $23.8\ \%$, which is unambiguous and which no marketing department has ever printed.
 :::
 :::
@@ -317,18 +319,18 @@ $$
 **The number that generalises.** The destroyed work is **$11.6\ \%$** of the heat input and **$16.6\ \%$** of the reversible work, and it splits
 $$
 \begin{array}{l c}
-\text{Engine 1's internal irreversibility} & 0.20 \times 600 = 120\ \mathrm{kJ} \text{ of potential work} \\
-\text{Engine 2's internal irreversibility} & 0.20 \times 100 = 20\ \mathrm{kJ} \\
+\text{Engine 1: } T_0 \left( - 1000 / 1000 + 520 / 400 \right) = 300 \times 0.300 & 90\ \mathrm{kJ} \\
+\text{Engine 2: } T_0 \left( - 520 / 400 + 416 / 300 \right) = 300 \times 0.0867 & 26\ \mathrm{kJ} \\
 \text{The transfer across a finite difference between them} & \text{none, because engine 1 rejects at } 400\ \mathrm{K} \text{ and engine 2 receives at } 400\ \mathrm{K}
 \end{array}
 $$
-and $120 + 20 = 140\ \mathrm{kJ}$ against the $116\ \mathrm{kJ}$ computed — the $24\ \mathrm{kJ}$ difference is the fact that the two engines' lost works are measured against **different** reference temperatures, and the correct sum is $T_0 S_{\mathrm{gen}}$ taken once at the environment.
-*Sanity.* The reason the second engine contributes so little is that its Carnot limit is only $25\ \%$: **the value of heat is set by the temperature at which it is available, and $520\ \mathrm{kJ}$ at $400\ \mathrm{K}$ is worth less than $480\ \mathrm{kJ}$ at $1000\ \mathrm{K}$**. This is the whole of the case against "waste heat recovery" as a phrase — the heat is not waste, it is **low-grade**, and the recovery is worth doing only when the grade is high enough to buy something.
+and $90 + 26 = 116\ \mathrm{kJ}$. $\checkmark$ Engine 1 falls $0.20 \times 600 = 120\ \mathrm{kJ}$ short of its own Carnot work, but that shortfall leaves as extra heat at $400\ \mathrm{K}$, a quarter of which is still convertible to work below it; measured against the environment it destroys $120 \times 0.75 = 90\ \mathrm{kJ}$. **Destroyed work must be summed as $T_0 S_{\mathrm{gen}}$ at one reference temperature**, never as shortfalls against each engine's own limit.
+*Sanity.* The reason the second engine contributes so little is that its Carnot limit is only $25\ \%$: **the value of heat is set by the temperature at which it is available, and $520\ \mathrm{kJ}$ of heat at $400\ \mathrm{K}$ is worth at most $130\ \mathrm{kJ}$ of work**. This is the whole of the case against "waste heat recovery" as a phrase — the heat is not waste, it is **low-grade**, and the recovery is worth doing only when the grade is high enough to buy something.
 :::
 :::
 
 ::: history
-The second law was invented to explain a **number**: Watt's engines used about **one-seventh** of the coal Newcomen's had, and nobody could say what set the ceiling. **Sadi Carnot**, twenty-eight years old and an artillery officer, wrote the **1824** *Réflexions* on the caloric theory — heat as an imperishable fluid falling from a hot to a cold body as water falls over a wheel — and derived from it the proposition that the efficiency depends **only on the two temperatures** and on nothing else, including the working substance. **The theory was wrong and the theorem was right**, and Carnot's own footnote that caloric might not be conserved is the most prescient paragraph in the literature. **Benoît Paul Émile Clapeyron** restated it graphically in **1834**, and it was **reading Clapeyron's diagram** that told **Kelvin** in **1848** that the efficiency implied an absolute temperature scale "derived from the principle of Carnot's engine, independent of the properties of any substance" — the scale this lesson uses. **Clausius** in **1850** reconciled Carnot with Joule by allowing caloric to be destroyed, and in **1854** wrote the inequality that bears his name; **the word entropy** followed in **1865**, chosen from the Greek *τροπή*, transformation, and deliberately made to resemble *energy* so that the two concepts would be hard to keep apart. **The equivalence of the two statements** was demonstrated by **Kelvin** and **Planck** in the **1890s**, and **the impossibility of a perpetual-motion machine of the second kind** was stated in its modern form by **Planck** in **1897**. **The proof that no engine beats a reversible one** — the argument by coupling two engines that this lesson reproduces — is due to **Lord Kelvin** in **1851** and had been anticipated in a different form by **Carnot** himself, who proved it against caloric and did not know he had proved it against energy.
+The second law was invented to explain a **number**: Watt's engines used about **a quarter** of the coal Newcomen's had for the same work, and nobody could say what set the ceiling. **Sadi Carnot**, twenty-eight years old and an army engineer officer, wrote the **1824** *Réflexions* on the caloric theory — heat as an imperishable fluid falling from a hot to a cold body as water falls over a wheel — and derived from it the proposition that the efficiency depends **only on the two temperatures** and on nothing else, including the working substance. **The theory was wrong and the theorem was right**, and Carnot's own notes, published only in 1878, show that he later abandoned caloric and estimated the mechanical equivalent of heat. **Benoît Paul Émile Clapeyron** restated it graphically in **1834**, and it was **reading Clapeyron's diagram** that told **Kelvin** in **1848** that the efficiency implied an absolute temperature scale "derived from the principle of Carnot's engine, independent of the properties of any substance" — the scale this lesson uses. **Clausius** in **1850** reconciled Carnot with Joule by allowing caloric to be destroyed, and in **1854** wrote the inequality that bears his name; **the word entropy** followed in **1865**, chosen from the Greek *τροπή*, transformation, and deliberately made to resemble *energy* so that the two concepts would be hard to keep apart. **Kelvin**'s **1851** paper *On the Dynamical Theory of Heat* gave his single-reservoir axiom and showed it equivalent to Clausius's statement, and **Planck** gave the perpetual-motion form in his **1897** *Vorlesungen über Thermodynamik* — hence the joint name **Kelvin–Planck**. **The proof that no engine beats a reversible one** — the argument by coupling two engines that this lesson reproduces — is **Carnot**'s own, made on the caloric theory and re-made on the energy basis by **Clausius** in **1850** and **Kelvin** in **1851**.
 :::
 
 ## Where this leads
@@ -386,8 +388,8 @@ $\mathrm{COP}_{HP} = T_H / (T_H - T_L) = 318 / 45 = 7.1$.
 :::
 :::
 
-::: exercise Perpetual motion {level=1 check="0"}
-A machine produces no energy and no mass flow and converts $100\ \mathrm{kJ}$ of heat from a single $400\ \mathrm{K}$ reservoir entirely into work. Which law does it violate?
+::: exercise Perpetual motion {level=1 check="2"}
+A machine produces no energy and no mass flow and converts $100\ \mathrm{kJ}$ of heat from a single $400\ \mathrm{K}$ reservoir entirely into work. Which law does it violate? (Enter the number of the law.)
 ::: solution
 The **second** law only — the first is perfectly satisfied. This is a perpetual-motion machine of the second kind.
 :::
@@ -457,7 +459,7 @@ $$
 \frac{Q_H}{Q_L} = \frac{T_H}{T_L} \quad \text{(ideal gas)}
 $$
 Comparing with $Q_H / Q_L = g \left( T_H \right) / g \left( T_L \right)$ gives $g \left( T \right) \propto T$, so **the thermodynamic scale and the ideal-gas scale differ at most by a constant factor**, which is fixed by assigning $273.16\ \mathrm{K}$ to the water triple point. $\blacksquare$
-**The evaluation that makes it non-vacuous.** A reversible engine between the ideal-gas-defined $\mathrm{Pt}$ resistance thermometer points of the zinc ($692.68\ \mathrm{K}$) and silver ($1{,}234.93\ \mathrm{K}$) freezing points must give $Q_H / Q_L = 1.7827$. The best real measurements agree to **$2$ parts in $10^{4}$**, which is the experimental content of the second law: it has never been observed to fail, and the agreement is not a tautology because the two scales are built from entirely different phenomena.
+**The evaluation that makes it non-vacuous.** A reversible engine between the zinc ($692.677\ \mathrm{K}$) and silver ($1{,}234.93\ \mathrm{K}$) freezing points must give $Q_H / Q_L = 1.7828$. Primary thermometers built on unrelated physics — gas thermometry, acoustic thermometry and radiometry — agree with these values to **better than $1$ part in $10^{4}$**, which is the experimental content of the second law: it has never been observed to fail, and the agreement is not a tautology because the two scales are built from entirely different phenomena.
 *Sanity.* The reason the multiplicative form is forced and not assumed is the **cancellation of the intermediate reservoir**, and the reason that step is worth checking is that it fails for an **irreversible** engine — for which $Q_3 / Q_1 \ne \left( Q_2 / Q_1 \right) \left( Q_3 / Q_2 \right)$ because the intermediate heat quantities are not defined by the reservoirs alone. The whole construction of the temperature scale rests on reversibility, and if the second law were ever found to fail the scale would go with it.
 :::
 :::
@@ -468,39 +470,39 @@ Specify the second-law performance basis, the exergy accounting and the reportin
 **The three streams and their exergy.**
 $$
 \begin{array}{l c c c c}
-\text{Stream} & \dot{Q}\ (\mathrm{MW}) & T\ ({}^{\circ}\mathrm{C}) & \zeta = 1 - T_0 / \bar{T} & \dot{X}\ (\mathrm{MW}) \\
-\text{A: kiln flue gas} & 60 & 620 & 0.573 & 34.4 \\
-\text{B: dryer exhaust} & 90 & 140 & 0.290 & 26.1 \\
-\text{C: cooling-water return} & 50 & 38 & 0.099 & 5.0 \\
+\text{Stream} & \dot{Q}\ (\mathrm{MW}) & \bar{T}\ ({}^{\circ}\mathrm{C}) & \zeta = 1 - T_0 / \bar{T} & \dot{X}\ (\mathrm{MW}) \\
+\text{A: kiln flue gas} & 60 & 620 & 0.666 & 40.0 \\
+\text{B: dryer exhaust} & 90 & 140 & 0.278 & 25.0 \\
+\text{C: cooling-water return} & 50 & 38 & 0.042 & 2.1 \\
 \hline
-\text{Total heat} & 200 & & & \text{Total exergy } 65.5
+\text{Total heat} & 200 & & & \text{Total exergy } 67.1
 \end{array}
 $$
-**The reading.** **$200\ \mathrm{MW_{th}}$ contains $65.5\ \mathrm{MW}$ of work-capable energy — $33\ \%$ — and stream C, which is a quarter of the heat, carries $8\ \%$ of the exergy.** A project that recovers all three streams "because the heat is there" has mis-stated the resource by a factor of three.
+**The reading.** With $T_0 = 298.15\ \mathrm{K}$ and $\bar{T}$ taken as each stream's temperature of heat release (a simplification: a stream that cools as it gives up heat has a lower mean temperature and less exergy), **$200\ \mathrm{MW_{th}}$ contains $67.1\ \mathrm{MW}$ of work-capable energy — $34\ \%$ — and stream C, which is a quarter of the heat, carries $3\ \%$ of the exergy.** A project that recovers all three streams "because the heat is there" has mis-stated the resource by a factor of three.
 **The candidate conversions.**
 $$
 \begin{array}{l l c c}
 \text{Stream} & \text{Conversion} & \text{Output} & \eta_{\mathrm{II}} \\
-\text{A} & \text{unfired ORC, } 8\ \mathrm{MW_e} & 8\ \mathrm{MW_e} & 8 / 34.4 = 23\ \% \\
-\text{A} & \text{boiler + steam turbine, } 11\ \mathrm{MW_e} & 11\ \mathrm{MW_e} & 32\ \% \\
-\text{B} & \text{hot water for district heat} & 85\ \mathrm{MW_{th}} & 85 \times 0.19 / 26.1 = 62\ \% \\
-\text{B} & \text{absorption chiller, COP } 0.7 & 60\ \mathrm{MW_c} & 60 \times 0.11 / 26.1 = 25\ \% \\
-\text{C} & \text{heat pump lift to } 65\ {}^{\circ}\mathrm{C},\ \mathrm{COP}\ 3.4 & 50\ \mathrm{MW_{th}} & 50 \times 0.21 / \left( 50 / 3.4 \right) = 71\ \% \\
+\text{A} & \text{unfired ORC, } 8\ \mathrm{MW_e} & 8\ \mathrm{MW_e} & 8 / 40.0 = 20\ \% \\
+\text{A} & \text{boiler + steam turbine, } 11\ \mathrm{MW_e} & 11\ \mathrm{MW_e} & 11 / 40.0 = 28\ \% \\
+\text{B} & \text{hot water for district heat at } 90\ {}^{\circ}\mathrm{C} & 85\ \mathrm{MW_{th}} & 85 \times 0.179 / 25.0 = 61\ \% \\
+\text{B} & \text{absorption chiller, COP } 0.7,\ 7\ {}^{\circ}\mathrm{C} & 60\ \mathrm{MW_c} & 60 \times 0.064 / 25.0 = 15\ \% \\
+\text{C} & \text{heat pump lift to } 65\ {}^{\circ}\mathrm{C},\ \mathrm{COP}\ 3.4 & 50\ \mathrm{MW_{th}} & 50 \times 0.118 / \left( 14.7 + 35.3 \times 0.042 \right) = 37\ \% \\
 \text{C} & \text{dry cooling tower} & - & 0
 \end{array}
 $$
-**The ranking, which the energy figures do not give.** On **energy**, stream B is the prize at $90\ \mathrm{MW}$. On **exergy**, stream A is the prize at $34\ \mathrm{MW}$ and stream C is worth recovering **only** as a heat-pump source, where it achieves the highest second-law efficiency on the list.
+**The ranking, which the energy figures do not give.** On **energy**, stream B is the prize at $90\ \mathrm{MW}$. On **exergy**, stream A is the prize at $40\ \mathrm{MW}$, stream B is best used as district heat (the highest second-law efficiency on the list), and stream C, at $2\ \mathrm{MW}$ of exergy, is worth recovering **only** as a heat-pump source — and then mainly for the $14.7\ \mathrm{MW}$ of electricity the heat pump turns into heat.
 **The four reporting requirements.**
 $$
 \begin{array}{l l}
 1 & \text{Every stream's exergy at a stated dead state } \left( T_0, P_0 \right),\ \text{with the reference named} \\
 2 & \text{The second-law efficiency of every conversion, not only the first-law one} \\
 3 & \text{The destroyed exergy located by component, in a table that sums to the total} \\
-4 & \text{The sensitivity of every figure to } T_0,\ \text{because a } 10\ \mathrm{K}\ \text{change moves } \zeta \text{ by } 3\ \%
+4 & \text{The sensitivity of every figure to } T_0,\ \text{because a } 10\ \mathrm{K}\ \text{change moves } \zeta \text{ by } 10 / \bar{T}\text{: three points for stream C, whose } \zeta \text{ is only four}
 \end{array}
 $$
-**The three clauses that decide the project.** **"THE DEAD STATE SHALL BE $25\ {}^{\circ}\mathrm{C}$, $101.325\ \mathrm{kPa}$, DRY AIR, AND ALL EXERGY FIGURES SHALL BE STATED ON THAT BASIS."** **"A STREAM SHALL BE RECOVERED ONLY IF ITS EXERGY EXCEEDS THE EXERGY OF THE UTILITIES THE RECOVERY CONSUMES."** **"THE HEAT-PUMP AND ORC MAINTENANCE ROADS SHALL BE OPTIMISED ON DESTROYED EXERGY AND NOT ON ENERGY."**
-**The number that kills the marginal case.** Stream C's dry-cooling-tower option destroys $5.0\ \mathrm{MW}$ of exergy for nothing; its heat-pump option destroys $14.6\ \mathrm{MW}$ of exergy while producing $10.5\ \mathrm{MW}$ of useful lift. **Both figures must be reported**, because a project appraised on energy sees a $50\ \mathrm{MW}$ "loss" from cooling water and a $50\ \mathrm{MW}$ "gain" from the heat pump, and the second law sees a $5\ \mathrm{MW}$ resource and a $10\ \mathrm{MW}$ product bought with $14.6\ \mathrm{MW}$ of destroyed exergy and a $4.4\ \mathrm{MW}$ net gain.
+**The three clauses that decide the project.** **"THE DEAD STATE SHALL BE $25\ {}^{\circ}\mathrm{C}$, $101.325\ \mathrm{kPa}$, DRY AIR, AND ALL EXERGY FIGURES SHALL BE STATED ON THAT BASIS."** **"A STREAM SHALL BE RECOVERED ONLY IF ITS EXERGY EXCEEDS THE EXERGY OF THE UTILITIES THE RECOVERY CONSUMES."** **"THE HEAT-PUMP, ORC AND STEAM-TURBINE OPTIONS SHALL BE COMPARED ON DESTROYED EXERGY AND NOT ON ENERGY."**
+**The number that kills the marginal case.** Stream C's dry-cooling-tower option destroys $2.1\ \mathrm{MW}$ of exergy for nothing; its heat-pump option takes in $14.7 + 1.5 = 16.2\ \mathrm{MW}$ of exergy (electricity plus the part of stream C it uses), delivers $50 \times 0.118 = 5.9\ \mathrm{MW}$ and destroys $10.3\ \mathrm{MW}$. **Both figures must be reported**, because a project appraised on energy sees a $50\ \mathrm{MW}$ "loss" from cooling water and a $50\ \mathrm{MW}$ "gain" from the heat pump, and the second law sees a $2\ \mathrm{MW}$ resource turned into a $6\ \mathrm{MW}$ product with $14.7\ \mathrm{MW}$ of electricity.
 *Design comment.* The general rule is that **a waste-heat project is an exergy resource assessment wearing an energy balance**, and that the party who reports only the energy has, without intending to, recommended the wrong three of the four options.
 :::
 :::

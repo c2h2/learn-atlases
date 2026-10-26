@@ -66,7 +66,7 @@ $$
 
 *Check.* At maximum deflection the spring force is $4000 \times 0.1596 = 638\ \mathrm{N}$ against a weight of $196\ \mathrm{N}$, a ratio of $3.25$. The collar is then accelerating upwards at $\left( 638 - 196 \right) / 20 = 22.1\ \mathrm{m / s^{2}}$, more than twice $g$ — which is exactly what it must be, since it has to be brought up from rest again. $\checkmark$
 
-*Sanity.* The factor of two between "lowered gently" and "released from touching" is the reason a bolted joint tightened to a torque carries a very different preload from one loaded by a falling weight, and the reason a spring supporting a load must be designed for **twice** the static deflection if the load can ever be dropped onto it. The $160\ \mathrm{mm}$ of the dropped case is $3.25$ times the static deflection, and had the drop height been $1\ \mathrm{m}$ instead of $0.1\ \mathrm{m}$ it would be $10.4$ times. Impact design is therefore not a matter of adding a safety margin to a static calculation but of recognising that the multiplier grows as $\sqrt{h}$ without limit — which is why a lifting beam is never allowed to be loaded by a slack strop taken up suddenly, and why the standard says the load must be picked up smoothly.
+*Sanity.* The factor of two between "lowered gently" and "released from touching" is the reason a bolted joint tightened to a torque carries a very different preload from one loaded by a falling weight, and the reason a spring supporting a load must be designed for **twice** the static deflection if the load can ever be dropped onto it. The $160\ \mathrm{mm}$ of the dropped case is $3.25$ times the static deflection, and had the drop height been $1\ \mathrm{m}$ instead of $0.1\ \mathrm{m}$ it would be $7.5$ times. Impact design is therefore not a matter of adding a safety margin to a static calculation but of recognising that the multiplier grows as $\sqrt{h}$ without limit — which is why a lifting beam is never allowed to be loaded by a slack strop taken up suddenly, and why the standard says the load must be picked up smoothly.
 :::
 :::
 
@@ -168,7 +168,7 @@ $$
 $$
 **Speed on leaving the spring.** Apply the energy equation between maximum compression and the natural length, over a distance $\delta$:
 $$
-\tfrac{1}{2} m v^{2} = \tfrac{1}{2} k \delta^{2} - 20.06 \delta
+\tfrac{1}{2} m v^{2} = \tfrac{1}{2} k \delta^{2} - 18.31 \delta
 = 0.5 \times 1200 \times 0.02293 - 18.31 \times 0.1514 = 13.76 - 2.77 = 10.99\ \mathrm{J},
 $$
 $$
@@ -176,12 +176,12 @@ v = \sqrt{2 \times 10.99 / 3} = 2.71\ \mathrm{m / s}.
 $$
 *Check.* The remaining $18.31 \times 0.6 = 10.99\ \mathrm{J}$ is exactly dissipated over the $600\ \mathrm{mm}$ run, bringing the component to rest as required. $\checkmark$
 
-*Sanity.* Note that the spring must supply $13.8\ \mathrm{J}$ of which only $11.0\ \mathrm{J}$, $80$ per cent, reaches the travel — the rest is spent pushing the component up the incline while the spring is still acting. That is why a pneumatic or spring stop is nearly always **over-travelled** in the design sense and why the practical way to set the stroke is to specify the terminal condition and solve for the compression, as here, rather than to guess a compression and check. It is also why a real feeder has an adjustable mechanical stop rather than an adjustable spring preload: the answer is far more sensitive to $\delta$ than to $k$, since $\partial \delta / \partial s \approx 0.11$ while a $10$ per cent error in $k$ moves the required compression by only $5$ per cent.
+*Sanity.* Note that the spring must supply $13.8\ \mathrm{J}$ of which only $11.0\ \mathrm{J}$, $80$ per cent, reaches the travel — the rest is spent pushing the component up the incline while the spring is still acting. The practical way to set such a launcher is therefore to specify the terminal condition and solve for the compression, as here, rather than to guess a compression and check. The travel is also more sensitive to the compression than to the stiffness: from $s = k \delta^{2} / \left( 2 F \right) - \delta$, a $1$ per cent change in $\delta$ changes the travel by about $2.3$ per cent, and a $1$ per cent change in $k$ by about $1.3$ per cent — which is why a real feeder sets the compression with an adjustable mechanical stop.
 :::
 :::
 
 ::: example Belt conveyor starting load {#ex-belt-energy}
-A belt conveyor $120\ \mathrm{m}$ long carries $40\ \mathrm{kg / m}$ of material and has an empty-line resistance of $180\ \mathrm{N}$ per metre of belt at any speed. It runs at $2.5\ \mathrm{m / s}$ up a $12\ \mathrm{m}$ lift. Find the driving power at steady speed, and the extra power needed to bring the $1500\ \mathrm{kg}$ belt-and-load system up to speed in $8\ \mathrm{s}$.
+A belt conveyor $120\ \mathrm{m}$ long carries $40\ \mathrm{kg / m}$ of material and has an empty-line resistance of $180\ \mathrm{N}$ per metre of belt at any speed. It runs at $2.5\ \mathrm{m / s}$ up a $12\ \mathrm{m}$ lift. Find the driving power at steady speed, and the extra power needed to bring the $6000\ \mathrm{kg}$ belt-and-load system ($4800\ \mathrm{kg}$ of material and $1200\ \mathrm{kg}$ of belt) up to speed in $8\ \mathrm{s}$ at uniform acceleration.
 ::: solution
 **Steady power.** The resistive force is
 $$
@@ -194,15 +194,15 @@ P = F v = 26\,309 \times 2.5 = 65.8\ \mathrm{kW}.
 $$
 **Acceleration.** The kinetic energy to be supplied is
 $$
-\Delta T = \tfrac{1}{2} \times 1500 \times 2.5^{2} = 4688\ \mathrm{J},
+\Delta T = \tfrac{1}{2} \times 6000 \times 2.5^{2} = 18\,750\ \mathrm{J},
 $$
-delivered over $8\ \mathrm{s}$ at an average rate of $586\ \mathrm{W}$, but the **peak** at the end of the run is
+delivered over $8\ \mathrm{s}$ at an average rate of $2.34\ \mathrm{kW}$, but with a constant accelerating force the **peak**, at the end of the run-up, is
 $$
-P_{\text{acc}} = \frac{2 \Delta T}{t} = 1172\ \mathrm{W} = 1.2\ \mathrm{kW}.
+P_{\text{acc}} = \frac{2 \Delta T}{t} = 4688\ \mathrm{W} = 4.7\ \mathrm{kW}.
 $$
-**Total** $65.8 + 1.2 = 67.0\ \mathrm{kW}$ at the belt, or $67.0 / 0.9 = 74.4\ \mathrm{kW}$ at the motor shaft with $90$ per cent drive efficiency.
+**Total** $65.8 + 4.7 = 70.5\ \mathrm{kW}$ at the belt, or $70.5 / 0.9 = 78.3\ \mathrm{kW}$ at the motor shaft with $90$ per cent drive efficiency.
 
-*Sanity.* The acceleration term is $1.8$ per cent of the steady load and can be ignored — which is the general rule for long conveyors, where the running resistance over hundreds of metres dwarfs the kinetic energy of the line. The opposite is true of a **short** high-speed line: a $2\ \mathrm{m}$ packaging conveyor with $20\ \mathrm{kg}$ of product at $3\ \mathrm{m / s}$ carries $90\ \mathrm{J}$ of kinetic energy against a friction load of a few newtons, so its acceleration term dominates and its motor is sized on the start, not the run. Getting that ratio backwards is a common and expensive error, and it is why conveyor motors are rated on the steady load with a service factor while packaging-machine motors are rated on the worst-case acceleration.
+*Sanity.* The acceleration term is only $7$ per cent of the steady load, and a slower start would make it smaller still — which is the general rule for long conveyors, where the running resistance over hundreds of metres dwarfs the kinetic energy of the line. The opposite is true of a **short** high-speed line: a $2\ \mathrm{m}$ packaging conveyor with $20\ \mathrm{kg}$ of product at $3\ \mathrm{m / s}$ carries $90\ \mathrm{J}$ of kinetic energy against a friction load of a few newtons, so its acceleration term dominates and its motor is sized on the start, not the run. Getting that ratio backwards is a common and expensive error, and it is why conveyor motors are rated on the steady load with a service factor while packaging-machine motors are rated on the worst-case acceleration.
 :::
 :::
 
@@ -229,7 +229,7 @@ $$
 $$
 P = 1377 \times 36.1 = 49.7\ \mathrm{kW}.
 $$
-*Sanity.* The speed ratio is $2.6$ and the power ratio $3.85$. Rolling and grade together cost $9.5\ \mathrm{kW}$ at both speeds, so the extra $40\ \mathrm{kW}$ at $130\ \mathrm{km / h}$ is almost entirely aerodynamic, and aerodynamic drag grows as $v^{3}$ in power. That is the arithmetic behind every fuel-economy figure: a car that does $6\ \mathrm{l / 100\ km}$ at $90\ \mathrm{km / h}$ does about $8.5$ at $130$, and the reason is not the engine but the $v^{3}$. It is also why an electric car's range collapses on a motorway and barely changes in traffic, and why a ship's powering goes as $v^{3}$ too — with the additional cruelty that the wave-making component grows faster still.
+*Sanity.* The speed ratio is $2.6$ and the power ratio $3.85$. Rolling resistance and grade together take $11.8\ \mathrm{kW}$ at $50\ \mathrm{km / h}$ and $30.7\ \mathrm{kW}$ at $130$, growing only as $v$, while the aerodynamic power grows from $1.1$ to $19.0\ \mathrm{kW}$, as $v^{3}$; on level road the drag would be the larger part at motorway speed. That is the arithmetic behind every fuel-economy figure: a car that does $6\ \mathrm{l / 100\ km}$ at $90\ \mathrm{km / h}$ does about $8.5$ at $130$, and the reason is not the engine but the drag force, which grows as $v^{2}$ per kilometre travelled and so as $v^{3}$ per hour. It is also why an electric car's range collapses on a motorway and barely changes in traffic, and why a ship's powering goes as $v^{3}$ too — with the additional cruelty that the wave-making component grows faster still.
 :::
 :::
 
@@ -249,7 +249,7 @@ P_{\text{electrical input}} = \frac{35.3}{0.90} = 39.2\ \mathrm{kW}.
 $$
 **Cruising condition:** $F = 24.5\ \mathrm{kN}$, $P_{\text{rope}} = 29.4\ \mathrm{kW}$, motor output $32.0\ \mathrm{kW}$.
 
-*Sanity.* A $37\ \mathrm{kW}$ motor would be selected on the **starting** load, but a hoist motor is not sized on the continuous rating alone: the acceleration lasts a few seconds and a motor may be overloaded by $50$ to $100$ per cent for that long, so a $30\ \mathrm{kW}$ continuous motor with a $1.75$ service factor is often correct. The duty class — S3 with a $40$ per cent duty cycle in this case — is what determines the choice, and a motor selected on the steady running load will trip on the first start of every cycle. That mismatch between a thermal rating and a peak mechanical load is one of the most common sizing errors in drive engineering, and it is why hoist, crane and press motors carry duty-class markings that a pump motor does not need.
+*Sanity.* A $37\ \mathrm{kW}$ motor is the natural choice: its continuous rating covers the $32.0\ \mathrm{kW}$ running output, and the $35.3\ \mathrm{kW}$ starting peak lasts only $1.2\ \mathrm{s}$, well within the short-time overload a motor tolerates. Here the start is only $10$ per cent above the running load because the acceleration is modest; for a fast hoist with short, frequent trips the starting peak and how often it recurs can dominate the motor's heating, which is why hoist, crane and press motors are selected for a stated duty class (intermittent duty at a given duty cycle) that a continuously running pump motor does not need.
 :::
 :::
 
@@ -258,7 +258,7 @@ Kinetic energy is not Galilean-invariant: $\tfrac{1}{2} m v^{2}$ depends on the 
 :::
 
 ::: history
-The idea that something is conserved through mechanical motion runs from Leibniz's *vis viva* $m v^{2}$ of 1686, fought over against the Cartesians who held $m v$ to be the true quantity of motion, through d'Alembert's principle of 1743 and the principle of least action of Maupertuis and Euler, to Coriolis's 1829 demonstration that $\tfrac{1}{2} m v^{2}$ — not $m v^{2}$ — is the right measure for engineering purposes, and Poncelet's coining of the term *travail de la force* for work in 1826. The word **energy** in its modern sense is Thomas Young's, 1807, and the explicit statement of conservation came in the 1840s with Mayer, Joule and Helmholtz, whose 1847 paper *Über die Erhaltung der Kraft* unified the mechanical, thermal, chemical and electrical forms. **Potential energy** as a term is Rankine's, 1853, and the stability criterion $\mathrm{d}^{2} V / \mathrm{d} q^{2} > 0$ goes back to Lagrange's *Mécanique analytique* of 1788, with the rigorous treatment of the marginal cases due to Dirichlet and, for continuous systems, to the energy methods of Rayleigh's *Theory of Sound* of 1877. The **power** of a machine was quantified by Watt's horses around 1770 and standardised as the horsepower of $33\,000\ \mathrm{ft\,lb / min}$ in 1782; the SI watt, one joule per second, dates from 1882.
+The idea that something is conserved through mechanical motion runs from Leibniz's *vis viva* $m v^{2}$ of 1686, fought over against the Cartesians who held $m v$ to be the true quantity of motion, through d'Alembert's principle of 1743 and the principle of least action of Maupertuis and Euler, to Coriolis's *Du calcul de l'effet des machines* of 1829, which showed that $\tfrac{1}{2} m v^{2}$ — not $m v^{2}$ — is the right measure for engineering purposes and fixed the term *travail* for work, a usage Poncelet adopted and spread through his teaching of applied mechanics. The word **energy** in its modern sense is Thomas Young's, 1807, and the explicit statement of conservation came in the 1840s with Mayer, Joule and Helmholtz, whose 1847 paper *Über die Erhaltung der Kraft* unified the mechanical, thermal, chemical and electrical forms. **Potential energy** as a term is Rankine's, 1853, and the stability criterion $\mathrm{d}^{2} V / \mathrm{d} q^{2} > 0$ goes back to Lagrange's *Mécanique analytique* of 1788, with the rigorous treatment of the marginal cases due to Dirichlet and, for continuous systems, to the energy methods of Rayleigh's *Theory of Sound* of 1877. The **power** of a machine was quantified by Watt, who fixed the horsepower at $33\,000\ \mathrm{ft\,lbf / min}$ in the early 1780s; the watt, one joule per second, was proposed by William Siemens and adopted by the British Association in 1882.
 :::
 
 ## Where this leads
@@ -281,7 +281,7 @@ A block slides from rest down two frictionless ramps of the same vertical height
 - [ ] Both give the same speed and the same time
 - [ ] The longer ramp gives the greater speed, because the force acts longer
 ::: solution
-Both give the same speed, $v = \sqrt{2 g h}$, but the steeper ramp takes less time. Energy fixes the **speed** and nothing else: the work of gravity is $m g h$ whatever the path, so the final kinetic energy and hence the speed are the same. The **time** is not fixed by energy and depends on the whole history of the acceleration — which is why the classical demonstration that the speed at the bottom of a frictionless chute is independent of its shape cannot be proved by energy alone and needs $\sum F_t = m \dot{v}$ integrated along the arc. The brachistochrone is the extreme case: of all frictionless paths between two points the cycloid gives the shortest time, while every one of them gives the same speed.
+Both give the same speed, $v = \sqrt{2 g h}$, but the steeper ramp takes less time. Energy fixes the **speed** and nothing else: the work of gravity is $m g h$ whatever the path, so the final kinetic energy and hence the speed are the same. The **time** is not fixed by energy and depends on the whole history of the acceleration — which is why the time to descend a frictionless chute cannot be found by energy alone and needs $\sum F_t = m \dot{v}$ integrated along the arc. The brachistochrone is the extreme case: of all frictionless paths between two points the cycloid gives the shortest time, while every one of them gives the same speed.
 :::
 :::
 
@@ -296,7 +296,7 @@ U = \int_0^2 \left[ 3 x + 2 \left( 1.5 x \right)^{2} \times 1.5 \right] \mathrm{
 = \int_0^2 \left( 3 x + 6.75 x^{2} \right) \mathrm{d} x
 = \left[ 1.5 x^{2} + 2.25 x^{3} \right]_0^2 = 6 + 18 = 24\ \mathrm{J}.
 $$
-*Note.* The answer to enter is $24\ \mathrm{J}$. The force **is** conservative, since $F_x = 3x$ depends only on $x$ and $F_y = 2y^{2}$ only on $y$, so a potential $V = -1.5 x^{2} - \tfrac{2}{3} y^{3}$ exists and the work is path-independent. Verify this on the two-segment path $\left(0,0\right) \rightarrow \left(2,0\right) \rightarrow \left(2,3\right)$: the first segment contributes $\int_0^2 3x \, \mathrm{d}x = 6\ \mathrm{J}$ and the second $\int_0^3 2y^{2} \, \mathrm{d}y = 18\ \mathrm{J}$, totalling $24\ \mathrm{J}$ as required.
+*Note.* The force **is** conservative, since $F_x = 3x$ depends only on $x$ and $F_y = 2y^{2}$ only on $y$, so a potential $V = -1.5 x^{2} - \tfrac{2}{3} y^{3}$ exists and the work is path-independent. Verify this on the two-segment path $\left(0,0\right) \rightarrow \left(2,0\right) \rightarrow \left(2,3\right)$: the first segment contributes $\int_0^2 3x \, \mathrm{d}x = 6\ \mathrm{J}$ and the second $\int_0^3 2y^{2} \, \mathrm{d}y = 18\ \mathrm{J}$, totalling $24\ \mathrm{J}$ as required.
 :::
 :::
 
@@ -328,7 +328,7 @@ $$
 $$
 P_{\text{electrical}} = \frac{8437}{0.72 \times 0.93} = 12\,600\ \mathrm{W} = 12.6\ \mathrm{kW}.
 $$
-*Sanity.* Note that the friction loss is $8 / 43 = 19$ per cent of the total head, so halving it by doubling the pipe diameter would save $2.4\ \mathrm{kW}$ continuously — about $21\ \mathrm{MWh}$ a year, which is why pump-pipe sizing is an optimisation and not a matter of following the cheapest first cost.
+*Sanity.* Note that the friction loss is $8 / 43 = 19$ per cent of the total head, so halving it — a modest increase in pipe diameter does that, since the friction head falls roughly as $D^{-5}$ — would save $1.2\ \mathrm{kW}$ continuously, about $10\ \mathrm{MWh}$ a year, which is why pump-pipe sizing is an optimisation and not a matter of following the cheapest first cost.
 :::
 :::
 
@@ -355,7 +355,7 @@ so the bottom becomes **unstable** at the critical speed
 $$
 \omega_{\text{cr}} = \sqrt{\frac{g}{R}} .
 $$
-*Sanity.* This is the **bead-on-a-rotating-hoop** bifurcation, and it is the textbook example of a supercritical pitchfork: below $\sqrt{g / R}$ the bead sits at the bottom, above it the bead climbs to an angle $\cos \theta = g / \omega^{2} R$ and the two new equilibria are stable. For $R = 0.2\ \mathrm{m}$ the critical speed is $7.0\ \mathrm{rad / s}$, or $67\ \mathrm{rpm}$. The same equation governs the whirling of a shaft, the buckling of a column under a follower load and the onset of the "tea-leaf" motion in a rotating cup, and the qualitative behaviour — a stable state losing stability and two new stable states appearing smoothly — is what makes it a **supercritical** bifurcation rather than a snap-through.
+*Sanity.* This is the **bead-on-a-rotating-hoop** bifurcation, and it is the textbook example of a supercritical pitchfork: below $\sqrt{g / R}$ the bead sits at the bottom, above it the bead climbs to an angle $\cos \theta = g / \omega^{2} R$ and the two new equilibria are stable. For $R = 0.2\ \mathrm{m}$ the critical speed is $7.0\ \mathrm{rad / s}$, or $67\ \mathrm{rpm}$. The same structure governs the flyball governor and the buckling of an ideal column, and the qualitative behaviour — a stable state losing stability and two new stable states appearing smoothly — is what makes it a **supercritical** bifurcation rather than a snap-through.
 :::
 :::
 
@@ -370,7 +370,7 @@ For a **pendulum on a string** the tension must not vanish at the top, requiring
 $$
 v_{\text{bottom}} = \sqrt{v_{\text{top}}^{2} + 4 g R} = \sqrt{5 g R} = 5.42\ \mathrm{m / s}.
 $$
-*Sanity.* The factor $\sqrt{5}$ versus $\sqrt{4}$ is the difference between a rigid rod and a flexible string, and it is the reason a roller-coaster loop is not a circle: on a circular loop the entry at the bottom is at $\sqrt{5 g R}$ and the normal force there is $6 m g$, which is unbearable, whereas a clothoid loop spreads the curvature and holds the load near $3 m g$ throughout. The $6 m g$ figure is also why a bucket of water swung overhead requires $\sqrt{g R}$ at the top and not merely a nonzero speed — the water cannot push back on the bucket.
+*Sanity.* The factor $\sqrt{5}$ versus $\sqrt{4}$ is the difference between a rigid rod and a flexible string, and it is the reason a roller-coaster loop is not a circle: on a circular loop the entry at the bottom is at $\sqrt{5 g R}$ and the normal force there is $6 m g$, which is unbearable, whereas a clothoid loop spreads the curvature and holds the load near $3 m g$ throughout. The string condition is also why a bucket of water swung overhead requires at least $\sqrt{g R}$ at the top and not merely a nonzero speed — the bucket can push on the water but cannot pull it.
 :::
 :::
 
@@ -396,16 +396,16 @@ a_{\max} = \omega_n v = 7.85\ \mathrm{m / s^{2}} = 0.80\ g .
 $$
 *Note.* With a **linear** spring both the compression and the force are proportional to $v$, so doubling the impact speed doubles the load on the wagon frame while the **energy** to be absorbed quadruples — which means the stroke must double as well. That is the wrong scaling for a buffer, because the design case is a heavy wagon at low speed and the accidental case is a light wagon at high speed, and a linear spring either over-travels or over-loads depending on which you design for.
 
-**Remedy.** A real buffer is **not** linear. A conical Bellevuss spring, a friction ring or a hydro-pneumatic unit gives a nearly **constant** force over the stroke, for which
+**Remedy.** A real buffer is **not** linear. A stack of Belleville springs, a friction ring or a hydro-pneumatic unit gives a nearly **constant** force over the stroke, for which
 $$
 \delta = \frac{m v^{2}}{2 F_{\max}},
 $$
-so the stroke grows as $v^{2}$ while the force stays exactly at the plateau value and can be capped by a relief valve. Railway buffing gear is designed to a **buffing diagram** — force against compression, with a plateau — and the wagon's frame is designed for the plateau force, not for a spring rate. That is also why modern freight cars use hydraulic cushioning gear rather than a simple spring, and why the buffer stroke on a modern wagon is $450$ to $650\ \mathrm{mm}$ rather than the $150\ \mathrm{mm}$ of a linear spring of the same capacity.
+so the stroke grows as $v^{2}$ while the force stays exactly at the plateau value and can be capped by a relief valve. Railway buffing gear is designed to a **buffing diagram** — force against compression, with a plateau — and the wagon's frame is designed for the plateau force, not for a spring rate. That is also why many freight cars carry hydraulic cushioning units rather than simple springs: a long-stroke, nearly constant-force unit absorbs a given energy at a far lower peak force than a linear spring with the same stroke, which reaches twice the average force.
 :::
 :::
 
 ::: exercise Derivation {level=3}
-Derive the escape velocity from a planet of mass $M$ and radius $R$ by the energy method, then find the maximum height reached by a projectile fired vertically from the surface at $8\ \mathrm{km / s}$, taking $g m = 3.986 \times 10^{14}\ \mathrm{m^{3} / s^{2}}$ and $R = 6371\ \mathrm{km}$. Why does the constant-$g$ answer fail?
+Derive the escape velocity from a planet of mass $M$ and radius $R$ by the energy method, then find the maximum height reached by a projectile fired vertically from the surface at $8\ \mathrm{km / s}$, taking $G M = 3.986 \times 10^{14}\ \mathrm{m^{3} / s^{2}}$ and $R = 6371\ \mathrm{km}$. Why does the constant-$g$ answer fail?
 ::: solution
 **Escape velocity.** With $V \left( r \right) = - G M m / r$,
 $$
@@ -429,7 +429,7 @@ $$
 r_{\max} = 1.3041 \times 10^{7}\ \mathrm{m}, \qquad
 h = r_{\max} - R = 6670\ \mathrm{km}.
 $$
-**Why constant $g$ fails.** The constant-$g$ estimate gives $h = v_0^{2} / \left( 2 g \right) = 3240\ \mathrm{km}$, less than half the correct value, because it assumes the weight stays at its surface value while the projectile climbs a distance comparable to the planet's radius. At $r = 2 R$ the gravity is a quarter of $g$, and the work done against it over that distance is correspondingly less than $m g R$. The error is $51$ per cent at $8\ \mathrm{km / s}$ and grows without limit as $v_0$ approaches $v_e$, at which the correct answer becomes infinite and the constant-$g$ answer is a finite $6370\ \mathrm{km}$.
+**Why constant $g$ fails.** The constant-$g$ estimate gives $h = v_0^{2} / \left( 2 g \right) = 3260\ \mathrm{km}$, less than half the correct value, because it assumes the weight stays at its surface value while the projectile climbs a distance comparable to the planet's radius. At $r = 2 R$ the gravity is a quarter of $g$, and the work done against it over that distance is correspondingly less than $m g R$. The error is $51$ per cent at $8\ \mathrm{km / s}$ and grows without limit as $v_0$ approaches $v_e$, at which the correct answer becomes infinite and the constant-$g$ answer is a finite $6370\ \mathrm{km}$.
 
 *Comment.* The rule of thumb is that constant $g$ is acceptable while $h \lesssim 0.02 R$, that is for $v_0 \lesssim 1.6\ \mathrm{km / s}$. Above that the $1 / r$ form must be used, and the energy equation is the shortest way to it — which is one of the clearest illustrations of why the energy method exists at all: the same answer costs one line here and a numerical integration in $\mathbf{F} = m \mathbf{a}$.
 :::

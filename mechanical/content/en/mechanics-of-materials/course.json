@@ -111,7 +111,7 @@
     {
       "year": 1638,
       "title": "Galileo breaks a cantilever, and gets it wrong in a useful way",
-      "detail": "Galileo's *Discorsi e dimostrazioni matematiche* was smuggled to the Leiden press of the Elzevirs while its author was under house arrest, and its second day is the founding document of the strength of materials. He poses the right question — how long a bar of its own material can hang from a wall before breaking under its own weight, and how much load a cantilever will carry — and answers both by assuming that the fibres resist in proportion to their distance from the fulcrum, which is exactly right, and then taking the whole of that resistance to act at the outermost fibre, which is exactly wrong and puts his answer out by a simple numerical factor. **The error is instructive rather than embarrassing: Galileo had the strain distribution and not the stress distribution, and the missing idea was that a material can only resist what it is strained enough to mobilise. It took another century and a half and a theory of elasticity to supply it, and even then the correct formula for a cantilever's strength was published by someone who did not know Galileo had been there.**",
+      "detail": "Galileo's *Discorsi e dimostrazioni matematiche*, printed by the Elzevirs at Leiden while its author was under house arrest, is the founding document of the strength of materials. Its second day poses the right questions — how long a bar can hang from a wall before breaking under its own weight, and how much load a cantilever will carry — and answers them by treating the beam as a lever pivoting about its bottom edge, with every fibre of the section resisting equally in tension. That gives a strength proportional to $b d^{2} / 2$, three times the elastic value $b d^{2} / 6$, though his conclusions about how strength scales with breadth, depth and length were right. **Edme Mariotte, in his treatise on the motion of water published in $1686$, argued from tests that the fibre resistance should grow with distance from the pivot; the correct position of the neutral axis and the elastic stress distribution were settled only in the eighteenth and early nineteenth centuries, by Parent, Coulomb and Navier.**",
       "people": [
         "Galileo Galilei",
         "Edme Mariotte"
@@ -120,59 +120,57 @@
     {
       "year": 1678,
       "title": "Ut tensio sic vis",
-      "detail": "Robert Hooke announced his law of elasticity in a two-line Latin anagram in 1676 - ceiiinosssttuv - and published the solution and the law in *De Potentia Restitutiva* in 1678, twenty-two years after discovering it and after Edme Mariotte had independently stated and experimentally verified it about 1680. **The law is not a statement about springs, which is how it is usually taught, but a statement about the existence of a linear range at all: that for small deformations the resistance of a solid is proportional to its deformation and independent of the size and shape of the specimen. Everything in this course - every formula for a beam, a shaft or a column - is that one sentence multiplied by geometry, and every formula in this course fails the moment the sentence stops being true.**",
+      "detail": "Robert Hooke announced his law of elasticity as a Latin anagram in $1676$ — ceiiinosssttuv — and published the solution, *ut tensio sic vis*, in *De Potentia Restitutiva* in $1678$; Edme Mariotte stated the same proportionality independently about $1680$. **The law is not really a statement about springs, which is how it is usually taught, but a statement that a linear range exists at all: that for small deformations the resistance of a solid is proportional to its deformation. Every formula in this course — for a beam, a shaft or a column — is that one sentence multiplied by geometry, and every one fails the moment the sentence stops being true.**",
       "people": [
         "Robert Hooke",
         "Edme Mariotte"
       ]
     },
     {
-      "year": 1750,
+      "year": 1744,
       "title": "The Bernoulli-Euler beam",
-      "detail": "Jacob Bernoulli had already set up the cantilever in 1694 on the hypothesis that the longitudinal fibres strain in proportion to their distance from a neutral surface and that the axis therefore takes a curve whose curvature is proportional to the moment; his son Daniel brought the hypothesis to maturity in papers of 1742-1751, and Euler, in the Berlin Memoirs of 1750, put the whole theory into the form $EI \\, d^{4}v / dx^{4} = q$ that is still the first differential equation every engineering student solves. **The hypothesis that plane sections remain plane is the most consequential assumption in applied mechanics, because it is only approximately true and yet gives results accurate enough to build bridges; the corrections - shear deformation, warping, restrained torsion, shear lag - occupy the rest of a graduate education and are, for most practical beams, a few per cent.**",
+      "detail": "Jacob Bernoulli published his analysis of the bent elastic strip in $1694$, taking its curvature proportional to the bending moment. His nephew Daniel Bernoulli suggested to Euler in $1742$ that the elastic curve minimises the integral of the squared curvature, and Euler used that idea in $1744$, in an appendix to his *Methodus inveniendi*, to classify the elastic curves and to find the buckling load of a column. The beam equation in the form engineers now use, with the flexural rigidity $E I$ worked out from the section, came with Navier's lectures of $1826$. **The hypothesis that plane sections remain plane is one of the most consequential assumptions in applied mechanics: it is only approximately true, yet it gives results accurate enough to build bridges, and the corrections — shear deformation, warping, restrained torsion, shear lag — are for most practical beams a few per cent.**",
       "people": [
+        "Jacob Bernoulli",
         "Daniel Bernoulli",
         "Leonhard Euler",
-        "Jacob Bernoulli"
+        "Claude-Louis Navier"
       ]
     },
     {
       "year": 1807,
       "title": "Thomas Young and the modulus",
-      "detail": "Thomas Young, in the first of the lectures that became his *Course of Lectures on Natural Philosophy and the Mechanical Arts*, pointed out that Hooke's law needs a constant, that the constant belongs to the material and not to the specimen, and that it can be measured from the extension of a wire. He named it the modulus of elasticity, and in the same lecture series - delivered to a paying London audience at the Royal Institution - he introduced the surface-energy theory of capillarity, the interference explanation of colour, and the term 'energy' in its modern sense. **The reason Young's modulus rather than Hooke's law is the number on a material data sheet is that a law is a relationship and a modulus is a property, and only properties can be tabulated, specified and bought.**",
+      "detail": "Thomas Young, in the *Course of Lectures on Natural Philosophy and the Mechanical Arts* published in $1807$ from his Royal Institution lectures of $1802$–$03$, defined the modulus of elasticity of a material — as the height of a column of the same substance whose weight would compress its base by an amount equal to its length — and in the same work used the word 'energy' in something close to its modern sense. **The reason Young's modulus rather than Hooke's law is the number on a material data sheet is that a law is a relationship and a modulus is a property, and only properties can be tabulated, specified and bought.**",
       "people": [
         "Thomas Young"
       ]
     },
     {
-      "year": 1852,
+      "year": 1855,
+      "title": "Saint-Venant, torsion, and the principle that bears his name",
+      "detail": "Adhémar Jean-Claude Barré de Saint-Venant, an engineer of the Ponts et Chaussées, presented his memoir on the torsion of prisms to the Académie des Sciences in $1853$, and it was published in $1855$. It solved the torsion of bars of non-circular section by the semi-inverse method, showed that plane sections warp, and stated the principle now named after him: that statically equivalent loadings produce stress distributions that become practically indistinguishable at distances from the load of the order of the cross-section's dimensions. **The principle is not a theorem and has never been proved in general; it is a statement about the decay of self-equilibrating stress systems, and it is the reason an engineer may replace a complicated actual load by a simple resultant and expect the answer to be right everywhere except near the load. Almost every formula in this course depends on it.**",
+      "people": [
+        "Adhémar Jean-Claude Barré de Saint-Venant"
+      ]
+    },
+    {
+      "year": 1882,
       "title": "Mohr's circle",
-      "detail": "Otto Mohr, then a young teacher at a trade school on the lower Rhine, devised a graphical method for determining the principal stresses and the maximum shear stress at a point, taught it to his classes for eighteen years, and - after Carlo Alberto Pilotti had demonstrated the construction in Italy and Karl Culmann had written urging him to publish - finally printed it in 1870 in his *Abhandlungen aus den Gebieten der technischen Mechanik und Ingenieur-Baukunde*. **The circle is the most durable piece of graphical reasoning in engineering, and it survives every algebraic alternative because it is not a calculation but a picture of the whole solution: one circle shows every plane, both principal stresses, the maximum shear, the sign conventions and the fact that shear stress on two perpendicular planes is equal, and it does so in a diagram a student can draw in twenty seconds and think about for the rest of their career.**",
+      "detail": "Karl Culmann, in his *Die graphische Statik* of $1866$, had already drawn a circle to represent the stresses on the planes through a point of a beam. Otto Mohr, professor at Stuttgart, published in $1882$ in *Der Civilingenieur* the general construction that bears his name, for both two- and three-dimensional states of stress, and in $1900$ based a theory of failure on it. **The circle has survived every algebraic alternative because it is not a calculation but a picture of the whole solution: one circle shows every plane, both principal stresses, the maximum shear and the fact that the shear stresses on perpendicular planes are equal, in a diagram a student can draw in a minute.**",
       "people": [
         "Otto Mohr",
-        "Carlo Alberto Pilotti",
         "Karl Culmann"
       ]
     },
     {
-      "year": 1856,
-      "title": "Saint-Venant, torsion, and the principle that bears his name",
-      "detail": "Adhemar Jean-Claude Barre de Saint-Venant, a career military engineer who had spent thirty years on roads and canals before he was permitted to publish, read in 1853 - sixty years old and newly elected to the Institut - the memoir on the torsion and flexure of prismatic bars that he had written in the 1840s, that had won the Academie's Grand Prize in 1846 and that had sat in a drawer since, and with it introduced the stress function, the multiply-connected section, and - most consequentially - the observation that the stress distribution produced by any statically equivalent loading becomes indistinguishable from the true one within a distance of the order of the cross-section's dimensions. **The principle is not a theorem and has never been proved in general; it is a statement about the decay of self-equilibrating stress systems, and it is the reason an engineer may replace a complicated actual load by a simple resultant and expect the answer to be right everywhere except near the load. Every formula in this course depends on it, and almost no textbook says so.**",
+      "year": 1947,
+      "title": "Shanley settles the column controversy",
+      "detail": "Friedrich Engesser proposed in $1889$ that an inelastic column buckles at the load given by the tangent modulus. After Armand Considère pointed out in $1891$ that the convex side of a bending column unloads elastically, Engesser derived the larger reduced-modulus load in $1895$, and Theodore von Kármán's careful tests of $1908$–$1910$ appeared to support it, although later tests usually failed nearer the tangent-modulus value. Francis R. Shanley resolved the paradox in his $1947$ paper 'Inelastic column theory' in the *Journal of the Aeronautical Sciences*: a straight column begins to bend at the tangent-modulus load, while the load is still rising, and the reduced-modulus load is an upper limit that is never quite reached. **The lesson is that a long argument in applied mechanics is often an argument about which idealisation the experiment represents.**",
       "people": [
-        "Adhemar Jean-Claude Barre de Saint-Venant",
-        "George Green",
-        "Barlow"
-      ]
-    },
-    {
-      "year": 1950,
-      "title": "Shanley settles the column controversy, forty years late",
-      "detail": "Between 1910 and 1950 the theory of the inelastic column was the subject of one of the longest and most acrimonious arguments in engineering science. Engesser's tangent-modulus load of 1889 and the reduced-modulus load of the 1920s could not both be right, the experiments supported the tangent-modulus value, and the theoretical defence of the reduced modulus, championed by Considine in 1920 and by Wallenberg in 1937 and written into the early steel specifications, filled pages. In 1950 A. M. Shanley published 'A correct interpretation of the classical tests in column strength' and showed that both loads are correct for different idealisations - the reduced modulus for a perfectly straight, perfectly centric column, the tangent modulus for any column with the smallest possible imperfection - and that real columns follow the tangent modulus because no real column is perfect. **The lesson is not about columns. It is that a fifty-year argument in applied mechanics is usually an argument about which idealisation the experiment was, and that the resolution of such an argument is very often a sentence rather than an equation.**",
-      "people": [
-        "Arne M. Shanley",
+        "Francis R. Shanley",
         "Friedrich Engesser",
-        "Considine",
-        "Wallenberg"
+        "Armand Considère",
+        "Theodore von Kármán"
       ]
     }
   ],
@@ -210,20 +208,20 @@
     {
       "author": "S. Timoshenko and D. H. Young",
       "title": "Elements of Strength of Materials",
-      "publisher": "Van Nostrand Reinhold, 5th edition",
-      "year": 1983
+      "publisher": "Van Nostrand, 5th edition",
+      "year": 1968
     },
     {
-      "author": "H. Ford",
+      "author": "H. Ford and J. M. Alexander",
       "title": "Advanced Mechanics of Materials",
-      "publisher": "Longman, 2nd edition",
-      "year": 1999
+      "publisher": "Ellis Horwood, 2nd edition",
+      "year": 1977
     },
     {
       "author": "M. F. Ashby",
       "title": "Materials Selection in Mechanical Design",
-      "publisher": "Butterworth-Heinemann, 6th edition",
-      "year": 2016
+      "publisher": "Butterworth-Heinemann, 5th edition",
+      "year": 2017
     }
   ],
   "next": [

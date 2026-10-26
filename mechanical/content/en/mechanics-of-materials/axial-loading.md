@@ -98,7 +98,7 @@ $$
 $$
 P_s = 61.4 \times 4825 = 296\ \mathrm{kN}, \qquad P_c = 7.67 \times 26\,590 = 204\ \mathrm{kN}. \checkmark
 $$
-*Sanity.* The steel carries $59$ per cent of the load from $15$ per cent of the area, in the ratio $E_s / E_c = 8$. This is the whole principle of reinforced concrete and of the concrete-filled hollow section: the stiff material takes load in proportion to its modulus, and the cheap material fills out the shape. Note that the concrete's stress of $7.7\ \mathrm{MPa}$ is a third of its cylinder strength while the steel's $61\ \mathrm{MPa}$ is a tenth of yield — both are comfortable, and the section is far more efficient than either material alone, because the steel confines the concrete and stops it buckling outwards.
+*Sanity.* The steel carries $59$ per cent of the load from $15$ per cent of the area, in the ratio $E_s / E_c = 8$. This is the whole principle of reinforced concrete and of the concrete-filled hollow section: the stiff material takes load in proportion to its modulus, and the cheap material fills out the shape. Note that the concrete's stress of $7.7\ \mathrm{MPa}$ is a third of its cylinder strength while the steel's $61\ \mathrm{MPa}$ is about a sixth of the yield of S355 — both are comfortable, and the section is far more efficient than either material alone, because the steel confines the concrete and stops it buckling outwards.
 :::
 :::
 
@@ -138,7 +138,7 @@ but full plastic collapse of the net section needs
 $$
 P_p = 355 \times 400 \times 10^{-3} = 142\ \mathrm{kN}.
 $$
-*Sanity.* Between $67.6$ and $142\ \mathrm{kN}$ the bar carries load with a small yielded zone at the fillet and nothing catastrophic happens — the $2.1$ factor has cost nothing in static strength. Under repeated loading, however, the bar's fatigue strength is roughly $0.45 \sigma_u / K_f$ with $K_f \approx 1.9$, which for a $460\ \mathrm{MPa}$ steel gives a fully reversed allowable amplitude near $55\ \mathrm{MPa}$: a working stress of $150\ \mathrm{MPa}$ would exhaust the fatigue life in a few hundred thousand cycles. The same part is either perfectly safe or dangerously under-strength depending only on whether the load is steady or repeated.
+*Sanity.* Between $67.6$ and $142\ \mathrm{kN}$ the bar carries load with a small yielded zone at the fillet and nothing catastrophic happens — the $2.1$ factor has cost nothing in static strength. Under repeated loading, however, the bar's fatigue strength is roughly $0.45 \sigma_u / K_f$ with $K_f \approx 1.9$, which for a $460\ \mathrm{MPa}$ steel gives a fully reversed allowable amplitude near $110\ \mathrm{MPa}$ ($0.45 \times 460 / 1.9 = 109\ \mathrm{MPa}$): a working stress amplitude of $150\ \mathrm{MPa}$ would exhaust the fatigue life in a few hundred thousand cycles. The same part is either perfectly safe or dangerously under-strength depending only on whether the load is steady or repeated.
 :::
 :::
 
@@ -209,16 +209,16 @@ $$
 $$
 **(c) Gap for zero stress** is $4.32\ \mathrm{mm}$.
 
-*Sanity.* $72\ \mathrm{MPa}$ of compressive stress from a $30\ \mathrm{K}$ rise is enough to buckle a track laterally — this is sun kinks and buckled rail, and it is why continuously welded rail is *stressed in* at a neutral temperature of about $27^{\circ} \mathrm{C}$ so that the winter stress is tensile and the summer stress compressive, both modest. The same arithmetic decides expansion joints in bridges (one $40\ \mathrm{mm}$ joint per $30\ \mathrm{m}$ of deck for a $60\ \mathrm{K}$ range, giving $14\ \mathrm{mm}$ of movement plus tolerance), the gap left in a pipeline before it is welded up, and the pre-tension of a bolt that must seal at $300^{\circ} \mathrm{C}$.
+*Sanity.* $72\ \mathrm{MPa}$ of compressive stress from a $30\ \mathrm{K}$ rise is enough to buckle a track laterally — this is sun kinks and buckled rail, and it is why continuously welded rail is *stressed in* at a neutral temperature of about $27^{\circ} \mathrm{C}$ so that the winter stress is tensile and the summer stress compressive, both modest. The same arithmetic decides expansion joints in bridges (one $40\ \mathrm{mm}$ joint per $30\ \mathrm{m}$ of deck for a $60\ \mathrm{K}$ range, giving $12 \times 10^{-6} \times 60 \times 30\,000 = 22\ \mathrm{mm}$ of movement plus tolerance), the gap left in a pipeline before it is welded up, and the pre-tension of a bolt that must seal at $300^{\circ} \mathrm{C}$.
 :::
 :::
 
 ::: widget plot
-f: 200000*12e-6*(x-15)/1000000
-x: 15, 60
-y: 0, 0.12
+f: 200000*12e-6*(x-15)
+x: 15, 75
+y: 0, 150
 labels: \text{thermal stress in restrained steel (MPa)}
-caption: Compressive stress $E \alpha \Delta T$ in a fully restrained steel member against temperature, laid stress-free at $15^{\circ} \mathrm{C}$, in MPa per unit strain scale — $2.4\ \mathrm{MPa}$ per kelvin. A $30\ \mathrm{K}$ rise gives $72\ \mathrm{MPa}$ and a $60\ \mathrm{K}$ rise $144\ \mathrm{MPa}$, which is a substantial fraction of yield. The linearity is the point: thermal stress is not a small effect to be waved away, and in a long pipeline, a rail or a bridge deck it routinely exceeds the stress from live load.
+caption: Compressive stress $E \alpha \Delta T$ in MPa in a fully restrained steel member ($E = 200\ \mathrm{GPa}$, $\alpha = 12 \times 10^{-6} / \mathrm{K}$) against temperature in °C, laid stress-free at $15^{\circ} \mathrm{C}$ — $2.4\ \mathrm{MPa}$ per kelvin. A $30\ \mathrm{K}$ rise gives $72\ \mathrm{MPa}$ and a $60\ \mathrm{K}$ rise $144\ \mathrm{MPa}$, which is a substantial fraction of yield. The linearity is the point: thermal stress is not a small effect to be waved away, and in a long pipeline, a rail or a bridge deck it routinely exceeds the stress from live load.
 :::
 
 ::: example Bolted flange at temperature {#ex-flange}
@@ -226,8 +226,9 @@ A steel bolt of area $300\ \mathrm{mm^{2}}$ and clamp length $40\ \mathrm{mm}$ c
 ::: solution
 The differential free expansion of the bolt relative to the flanges is
 $$
-\delta_{\text{diff}} = (1.2 - 1.0) \times 12 \times 10^{-6} \times 120 \times 40 = 0.0461\ \mathrm{mm}.
+\delta_{\text{diff}} = (1.2 - 1.0) \times 12 \times 10^{-6} \times 120 \times 40 = 0.0115\ \mathrm{mm},
 $$
+taking $\alpha = 12 \times 10^{-6} / \mathrm{K}$ for the flanges.
 This extra growth *relieves* clamp. The bolt and the flange stack form two springs in series carrying the same force, and the force change produced by a relative expansion $\delta_{\text{diff}}$ is
 $$
 \Delta F = - \frac{k_b k_f}{k_b + k_f} \, \delta_{\text{diff}} .
@@ -237,11 +238,11 @@ $$
 \frac{k_b k_f}{k_b + k_f} = \frac{1.50 \times 6.0}{7.5} \times 10^{6} = 1.20 \times 10^{6}\ \mathrm{N / mm},
 $$
 $$
-\Delta F = - 1.20 \times 10^{6} \times 0.0461 = - 55\,300\ \mathrm{N} = - 55.3\ \mathrm{kN}.
+\Delta F = - 1.20 \times 10^{6} \times 0.0115 = - 13\,800\ \mathrm{N} = - 13.8\ \mathrm{kN}.
 $$
-That is more than twice the $25\ \mathrm{kN}$ preload, so the joint **separates**: the flanges open, the bolt goes slack, and the gasket leaks.
+That is $55$ per cent of the $25\ \mathrm{kN}$ preload: the clamping force falls to $11.2\ \mathrm{kN}$, and a modestly larger temperature rise or mismatch would make the joint **separate** — the flanges open, the bolt goes slack, and the gasket leaks.
 
-*Sanity.* A differential expansion of $0.046\ \mathrm{mm}$ sounds trivial, but a bolt joint is extremely stiff, and $0.046\ \mathrm{mm}$ against a series stiffness of $1.2\ \mathrm{MN / mm}$ is $55\ \mathrm{kN}$. Real hot bolted joints lose preload by exactly this mechanism, which is why they are re-torqued at operating temperature, why flanges use long studs of a *lower*-expansion alloy than the vessel, and why a gasket must be resilient enough to keep the bolt stretched when the flanges grow. The calculation is also the reason a bolted joint is deliberately made with a **long, thin** bolt: reducing $k_b$ relative to $k_f$ drives the series stiffness towards $k_b$ and cuts both the thermal loss and, more importantly, the alternating stress under external load fluctuation.
+*Sanity.* A differential expansion of $0.012\ \mathrm{mm}$ sounds trivial, but a bolt joint is extremely stiff, and $0.012\ \mathrm{mm}$ against a series stiffness of $1.2\ \mathrm{MN / mm}$ is $14\ \mathrm{kN}$. Real hot bolted joints lose preload by exactly this mechanism, which is why they are re-torqued at operating temperature, why flanges use long studs of a *lower*-expansion alloy than the vessel, and why a gasket must be resilient enough to keep the bolt stretched when the flanges grow. The calculation is also the reason a bolted joint is deliberately made with a **long, thin** bolt: reducing $k_b$ relative to $k_f$ drives the series stiffness towards $k_b$ and cuts both the thermal loss and, more importantly, the alternating stress under external load fluctuation.
 :::
 :::
 
@@ -250,9 +251,9 @@ The stress distribution near a load application point is complicated: a concentr
 :::
 
 ::: history
-The first quantitative tensile tests are usually placed with 's Gravesande around 1720, but the first systematic programme belongs to Georges-Louis Leclerc, comte de Buffon, who in the *Histoire naturelle des métaux* of 1761 pulled iron wires of different lengths and diameters and established that the breaking load is proportional to the cross-section and independent of the length. That is the correct statement of the strength of a bar, and it was reached a full century before the concept of stress existed to express it. The extension law follows from the linear elastic law and appears in Siméon Denis Poisson's *Théorie mathématique de l'élasticité* (1829) and in Gabriel Lamé's courses of the same period, both treating the axial bar as the simplest case of three-dimensional elasticity; the modern statement, with the modulus as a pure material constant, descends from Navier's and Cauchy's formulation of elasticity in the 1820s and 1840s.
+Tensile strength was first treated quantitatively by Galileo, who stated in *Two New Sciences* (1638) that the force needed to break a rod in tension is proportional to its cross-section and independent of its length, and the first purpose-built tensile-testing machine is usually credited to Pieter van Musschenbroek, who described his tests on wires and wooden specimens in 1729. Strength could be expressed per unit area long before stiffness could: the extension law $\delta = P L / A E$ needs a modulus that belongs to the material, which arrived with Thomas Young's *Course of Lectures* (1807) and with the general theory of elasticity of Navier (1821) and Cauchy (1822), and the axial bar appears as the simplest case of that theory in Poisson's memoir of 1829.
 
-Restrained thermal expansion became an engineering problem with the railways. Buckled jointed track was reported from the 1840s, and the expansion links of locomotive boilers — the sliding joints of the firebox crown — were among the most common sources of catastrophic failure on early engines, which is why the locomotive boiler was the single most studied thermally stressed structure of the nineteenth century. William Fairbairn's tests of the 1850s on wrought-iron girders included the effect of temperature on riveted joints, and the first quantitative design rules for expansion joints in bridge decks date from the same decade. The stress-concentration factor, without which nothing near a hole is safe, was measured systematically by the German school around August Föppl at the Munich Technical University from the 1890s, and consolidated in the handbooks of Deventer and Hetényi of the 1930s and 1940s, whose charts are still reprinted in every machine-design text.
+Restrained thermal expansion became an everyday engineering problem with the railways and the long iron bridges they required, which needed rail gaps, expansion joints and sliding bearings, and with steam boilers, whose fireboxes and tubes were heated unevenly. The stress concentration at a hole was first calculated by Ernst Gustav Kirsch, who showed in 1898 that a small circular hole in a plate under uniaxial tension raises the local stress to three times the remote value, and Charles Inglis extended the result to elliptical holes in 1913, showing that the peak grows without limit as the hole sharpens into a crack. Photoelastic measurement, developed by E. G. Coker and L. N. G. Filon (*A Treatise on Photo-Elasticity*, 1931), and the systematic charts of R. E. Peterson (*Stress Concentration Design Factors*, 1953) supplied the design values still reproduced in machine-design texts.
 :::
 
 ::: quiz
@@ -353,17 +354,19 @@ $$
 :::
 
 ::: exercise Design {level=3}
-A rigid horizontal beam is pinned at one end and supported by two vertical steel wires of equal area at $1.5\ \mathrm{m}$ and $3.0\ \mathrm{m}$ from the pin. A $20\ \mathrm{kN}$ load hangs at $2.0\ \mathrm{m}$. Find the force in each wire.
+A rigid horizontal beam is pinned at one end and supported by two vertical steel wires of equal length and equal area at $1.5\ \mathrm{m}$ and $3.0\ \mathrm{m}$ from the pin. A $20\ \mathrm{kN}$ load hangs at $2.0\ \mathrm{m}$. Find the force in each wire and the pin reaction.
 ::: solution
-**Equilibrium.** $R_1 + R_2 = 20$ and, taking moments about the pin, $1.5 R_1 + 3.0 R_2 = 20 \times 2.0 = 40$.
-Two equations, two unknowns — the beam is determinate:
-$$
-R_1 = \frac{3 \times 20 - 40}{3 - 1.5} = \frac{20}{1.5} = 13.33\ \mathrm{kN}, \qquad
-R_2 = 6.67\ \mathrm{kN}.
-$$
-*Check.* $1.5 \times 13.33 + 3.0 \times 6.67 = 20.0 + 20.0 = 40.0$. $\checkmark$
+**Equilibrium.** The unknowns are the wire forces $R_1$, $R_2$ and the vertical pin reaction $R_O$: $R_O + R_1 + R_2 = 20$ and, taking moments about the pin, $1.5 R_1 + 3.0 R_2 = 20 \times 2.0 = 40$. Two equations, three unknowns — the beam is indeterminate to the first degree.
 
-*Design comment.* Had the beam been supported at both ends as well as by the wires — or had a third wire been added — the problem would have become indeterminate and the answer would depend on the wire lengths and areas. Then a wire that is $0.5\ \mathrm{mm}$ too long sheds its share onto the others, and a three-wire hanger can easily end up with two wires carrying $90$ per cent of the load. Where load-sharing matters, either make the structure determinate or shim the members to force the intended distribution.
+**Compatibility.** The rigid beam rotates about the pin, so the wire at $3.0\ \mathrm{m}$ stretches twice as much as the one at $1.5\ \mathrm{m}$: $\delta_2 = 2 \delta_1$. With equal lengths, areas and moduli, $R_2 = 2 R_1$. Then
+$$
+1.5 R_1 + 6.0 R_1 = 40
+\quad\Longrightarrow\quad
+R_1 = 5.33\ \mathrm{kN}, \qquad R_2 = 10.67\ \mathrm{kN}, \qquad R_O = 20 - 16.0 = 4.0\ \mathrm{kN}.
+$$
+*Check.* $1.5 \times 5.33 + 3.0 \times 10.67 = 8.0 + 32.0 = 40.0$. $\checkmark$
+
+*Design comment.* The answer depends on the wire lengths and areas, not on statics alone: a longer or thinner outer wire would shed load to the inner one and to the pin. Likewise a wire that is $0.5\ \mathrm{mm}$ too long sheds its share onto the others, and a three-wire hanger can easily end up with two wires carrying $90$ per cent of the load. Where load-sharing matters, either make the structure determinate or shim the members to force the intended distribution.
 :::
 :::
 
@@ -381,6 +384,6 @@ $$
 F = E_1 A_1 \left( \varepsilon - \alpha_1 \Delta T \right) = - E_2 A_2 \left( \varepsilon - \alpha_2 \Delta T \right)
 = \frac{E_1 A_1 E_2 A_2}{E_1 A_1 + E_2 A_2} \left( \alpha_2 - \alpha_1 \right) \Delta T .
 $$
-*Why it bends.* The two layers want different lengths, and because they are bonded each must take the same *average* strain — but the mismatch produces a bending moment as well as an axial force, since the two equal-and-opposite forces act along different centrelines. The strip relieves almost all of that moment by curving, and the curvature is $\kappa = 6 (\alpha_2 - \alpha_1) \Delta T / (t (3 + (E_1 I_1 / E_2 I_2) + \ldots))$, which for equal thicknesses and moduli reduces to the familiar $\kappa = 6 (\Delta \alpha) \Delta T / (2 t)$. A bolted flange cannot relieve its differential expansion by bending, because the bolt is in pure tension and the flanges in pure compression along the same line; there is no curvature available, so the mismatch goes entirely into losing clamp. That is why a bimorph is a sensor and a hot bolted joint is a leak.
+*Why it bends.* The two layers want different lengths, and because they are bonded each must take the same *average* strain — but the mismatch produces a bending moment as well as an axial force, since the two equal-and-opposite forces act along different centrelines. The strip relieves that moment by curving; Timoshenko's 1925 analysis of the bimetal thermostat gives, for two layers of equal thickness $t$ and equal modulus, $\kappa = 3 (\alpha_2 - \alpha_1) \Delta T / (4 t)$, that is $3 \Delta \alpha \, \Delta T / (2 h)$ with $h = 2 t$ the total thickness; unequal thicknesses and moduli change only the numerical factor. A bolted flange cannot relieve its differential expansion by bending, because the bolt is in pure tension and the flanges in pure compression along the same line; there is no curvature available, so the mismatch goes entirely into losing clamp. That is why a bimorph is a sensor and a hot bolted joint is a leak.
 :::
 :::

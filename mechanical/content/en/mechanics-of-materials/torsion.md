@@ -3,7 +3,7 @@ A shaft is the one structural member that most engineers design without much tho
 Torsion is also the cleanest theory in the course. For a circular shaft the elastic solution is *exact*, not approximate: plane sections stay plane, radii stay straight, and the shear stress varies linearly from zero at the axis to a maximum at the surface. That exactness is why circular shafts are universal and why a square or a keywayed shaft behaves differently in kind, not merely in degree. The moment you leave a circle — a slot, a flat, a thin wall, a crack — you either warp or you do not, and the whole design changes.
 
 ::: warning Circular shafts only
-$\tau = T \rho / J$ and $\phi = T L / J G$ are exact for a **circular** shaft, solid or hollow, prismatic and linear elastic. For a non-circular *solid* section the shaft warps out of its plane, the stress is zero at the boundary of a convex section's corners, and the torsion constant $J$ is not the polar second moment: for a rectangle $J = \beta_1 b t^{3}$ with $\beta_1$ between $0.141$ and $0.333$. For a thin-walled **open** section — a slit tube, a channel, an angle — $J = \tfrac{1}{3} \sum s t^{3}$, which for a slit tube is a factor of $2 t^{2} / r^{2}$ smaller than the closed tube of the same gauge. A slit tube of $80\ \mathrm{mm}$ diameter and $3\ \mathrm{mm}$ wall is $530$ times less stiff in torsion than the same tube with the slit welded shut. Never apply the circular formula to a shape that is not round.
+$\tau = T \rho / J$ and $\phi = T L / J G$ are exact for a **circular** shaft, solid or hollow, prismatic and linear elastic. For a non-circular *solid* section the shaft warps out of its plane, the stress is zero at the boundary of a convex section's corners, and the torsion constant $J$ is not the polar second moment: for a rectangle $J = \beta_1 b t^{3}$ with $\beta_1$ between $0.141$ and $0.333$. For a thin-walled **open** section — a slit tube, a channel, an angle — $J = \tfrac{1}{3} \sum s t^{3}$, which for a slit tube of mean radius $r$ is smaller than that of the closed tube of the same gauge by a factor of $3 r^{2} / t^{2}$. A slit tube of $80\ \mathrm{mm}$ diameter and $3\ \mathrm{mm}$ wall is $530$ times less stiff in torsion than the same tube with the slit welded shut. Never apply the circular formula to a shape that is not round.
 :::
 
 ## Circular shafts
@@ -70,7 +70,7 @@ $$
 = \frac{2500 \times 0.8 + 1000 \times 0.6}{1.2723 \times 10^{-6} \times 80 \times 10^{9}}
 = \frac{2600}{101.8} = 0.02554\ \mathrm{rad} = 1.46^{\circ} .
 $$
-*Sanity.* Machine shafts are commonly limited to about $1^{\circ}$ per metre of twist or about $56\ \mathrm{MPa}$ of shear. This shaft twists at $2500 / (J G) = 0.0246\ \mathrm{rad / m} = 1.41^{\circ} / \mathrm{m}$ in its worst section and reaches $58.9\ \mathrm{MPa}$, so it fails both criteria marginally. It is a **stress** problem more than a stiffness problem, and the fix is a larger diameter or a better fillet at the gear shoulder — where the stress concentration, not the nominal $58.9\ \mathrm{MPa}$, decides the life. Note also that the peak torque sits in the **longest** section, which is the worst arrangement: putting the input gear at the middle of the span rather than at one end would halve both the peak torque and the twist.
+*Sanity.* Machine shafts are commonly limited to about $1^{\circ}$ per metre of twist or about $56\ \mathrm{MPa}$ of shear. This shaft twists at $2500 / (J G) = 0.0246\ \mathrm{rad / m} = 1.41^{\circ} / \mathrm{m}$ in its worst section and reaches $58.9\ \mathrm{MPa}$, so it fails both criteria marginally. It is a **stress** problem more than a stiffness problem, and the fix is a larger diameter or a better fillet at the gear shoulder — where the stress concentration, not the nominal $58.9\ \mathrm{MPa}$, decides the life. Note also that the peak torque sits in the **longest** section, which is the worst arrangement: putting the input gear between the two output gears would cut the peak torque from $2500$ to $1500\ \mathrm{N\,m}$, $40$ per cent less.
 :::
 :::
 
@@ -88,22 +88,22 @@ J_{\text{req}} = \frac{T \left( D_o / 2 \right)}{\tau}
 $$
 $$
 D_i^{4} = D_o^{4} - \frac{32 J_{\text{req}}}{\pi}
-= 1.296 \times 10^{-5} - 7.507 \times 10^{-6} = 5.453 \times 10^{-6}
+= 1.296 \times 10^{-5} - 7.500 \times 10^{-6} = 5.460 \times 10^{-6}
 \quad\Longrightarrow\quad
 D_i = 48.3\ \mathrm{mm}, \quad \frac{D_i}{D_o} = 0.806 .
 $$
 The area ratio is
 $$
-\frac{A_{\text{hollow}}}{A_{\text{solid}}} = \frac{60^{2} - 48.3^{2}}{50^{2}} = \frac{3600 - 2333}{2500} = 0.507 ,
+\frac{A_{\text{hollow}}}{A_{\text{solid}}} = \frac{60^{2} - 48.3^{2}}{50^{2}} = \frac{3600 - 2337}{2500} = 0.505 ,
 $$
-a **49 per cent weight saving** at identical stress and identical torque.
+a **weight saving of about 50 per cent** at identical stress and identical torque.
 
-*Sanity.* The hollow shaft is also stiffer: $J$ rises from $6.14 \times 10^{-7}$ to $7.36 \times 10^{-7}\ \mathrm{m^{4}}$, $20$ per cent more for half the weight, because the material removed from the middle was doing almost nothing — the shear stress at radius $\rho$ is proportional to $\rho$, so the inner half of the radius carries less than a quarter of the surface stress and contributes even less to $J$, which weights by $\rho^{3}$. This is why every rotating shaft worth its weight is hollow: propeller shafts, drill rods, bicycle bottom-bracket spindles and turbine rotors all bore out the middle. The limit is set by the need to fit a mandrel, to key a gear, or to pass fluid or a cable down the bore.
+*Sanity.* The hollow shaft is also stiffer: $J$ rises from $6.14 \times 10^{-7}$ to $7.36 \times 10^{-7}\ \mathrm{m^{4}}$, $20$ per cent more for half the weight, because the material removed from the middle was doing almost nothing — the shear stress at radius $\rho$ is proportional to $\rho$, so the inner half of the radius carries at most half the surface stress and contributes only one sixteenth of $J$, which weights by $\rho^{3}$. This is why every rotating shaft worth its weight is hollow: propeller shafts, drill rods, bicycle bottom-bracket spindles and turbine rotors all bore out the middle. The limit is set by the need to fit a mandrel, to key a gear, or to pass fluid or a cable down the bore.
 :::
 :::
 
 ::: proposition Strain energy in torsion {#prop-torsion-energy}
-A shaft of length $L$ carrying a torque $T$ stores
+A solid circular shaft of length $L$ carrying a torque $T$ stores
 $$
 U = \frac{T^{2} L}{2 G J} = \frac{\tau_{\max}^{2}}{4 G} \times (\text{volume}),
 $$
@@ -119,7 +119,7 @@ Substituting $T = \tau_{\max} J / c$ and $L = $ volume over area gives
 $$
 U = \frac{\tau_{\max}^{2} J L}{2 G c^{2} A} = \frac{\tau_{\max}^{2}}{4 G} (A L)
 $$
-after using $J / (A c^{2}) = \tfrac{1}{2}$ for a solid or hollow circular section — the factor that makes the shear resilience half the axial one. The result is the design basis of the **torsion bar spring**, which stores shear energy in a straight bar twisted about its axis and is the reason military vehicles, racing cars and tank suspensions use a bar in torsion instead of a coil: the spring is the structure, it needs no guide, and it can be buried in the hull.
+after using $J / (A c^{2}) = \tfrac{1}{2}$ for a solid circular section — the factor that makes the shear resilience half the axial one. For a tube the factor is $\left[ 1 + (D_i / D_o)^{2} \right] / 2$, approaching $1$ for a thin wall, which is why a hollow torsion bar stores more energy per kilogram. The result is the design basis of the **torsion bar spring**, which stores shear energy in a straight bar twisted about its axis and is the reason military vehicles, racing cars and tank suspensions use a bar in torsion instead of a coil: the spring is the structure, it needs no guide, and it can be buried in the hull.
 :::
 
 ::: example Torsion bar spring {#ex-torsion-bar}
@@ -137,7 +137,7 @@ $$
 $$
 U = 781 \times 10^{3} \times 5.89 \times 10^{-4} = 460\ \mathrm{J}.
 $$
-*Sanity.* A $34^{\circ}$ elastic twist is enormous, and it is available only because the bar is long and slender: the strain is $\tau / G = 0.00625$, and at that strain a $1.2\ \mathrm{m}$ bar of $25\ \mathrm{mm}$ diameter can rotate through more than half a radian. The energy density of $781\ \mathrm{kJ / m^{3}}$ is respectable — a coil spring of the same steel reaches about $1.5$ times as much per unit weight, because a helical spring uses torsion **and** shear and works the whole wire at nearly the maximum stress, whereas a torsion bar wastes its core.
+*Sanity.* A $34^{\circ}$ elastic twist is enormous, and it is available only because the bar is long and slender: the strain is $\tau / G = 0.00625$, and at that strain a $1.2\ \mathrm{m}$ bar of $25\ \mathrm{mm}$ diameter can rotate through more than half a radian. The energy density of $781\ \mathrm{kJ / m^{3}}$ is respectable, and a helical coil spring of the same steel does no better — its wire is also loaded in torsion, and the curvature and direct-shear stresses in the coil raise the peak stress slightly — whereas a hollow torsion bar does better because it does not waste its lightly stressed core.
 :::
 :::
 
@@ -170,7 +170,7 @@ The maximum stress is in the left segment,
 $$
 \tau_{\max} = \frac{16 \times 533.3}{\pi \times 0.050^{3}} = 21.7\ \mathrm{MPa}.
 $$
-*Check.* $\phi_{\text{collar}} = 533.3 \times 0.4 / (5.896 \times 10^{-7} \times 80 \times 10^{9}) = 4.51 \times 10^{-3}\ \mathrm{rad} = 0.258^{\circ}$, and the right segment twists by $266.7 \times 0.8 / (J G) = 4.51 \times 10^{-3}\ \mathrm{rad}$ in the opposite sense, so the right wall does not move. $\checkmark$
+*Check.* $\phi_{\text{collar}} = 533.3 \times 0.4 / (6.136 \times 10^{-7} \times 80 \times 10^{9}) = 4.35 \times 10^{-3}\ \mathrm{rad} = 0.249^{\circ}$, and the right segment twists by $266.7 \times 0.8 / (J G) = 4.35 \times 10^{-3}\ \mathrm{rad}$ in the opposite sense, so the right wall does not move. $\checkmark$
 
 *Sanity.* As with the axial bar of the last chapter, the shorter, stiffer section takes more of the load — here twice as much, in the ratio of the lengths' reciprocals. This is why a shaft with an intermediate bearing or a coupling at a wall must be machined to length: a section $1\ \mathrm{mm}$ short of its intended length carries a proportionally larger share of the torque, and a residual pre-twist appears in the whole assembly even with no external load applied.
 :::
@@ -181,7 +181,7 @@ Compare a solid circular shaft and a square bar of the **same cross-sectional ar
 ::: solution
 For a square of side $a$ the exact elasticity solution gives
 $$
-J_{\square} = 0.1406\, a^{4}, \qquad \tau_{\square} = \frac{2.40\, T}{a^{3}} .
+J_{\square} = 0.1406\, a^{4}, \qquad \tau_{\square} = \frac{T}{0.208\, a^{3}} = \frac{4.81\, T}{a^{3}} .
 $$
 Matching areas, $a^{2} = \pi d^{2} / 4$ gives $d = 1.128\, a$, so for the circle
 $$
@@ -189,9 +189,9 @@ J_{\bigcirc} = \frac{\pi d^{4}}{32} = 0.1589\, a^{4}, \qquad
 \tau_{\bigcirc} = \frac{16 T}{\pi d^{3}} = \frac{3.55\, T}{a^{3}} .
 $$
 **Stiffness:** $J_{\bigcirc} / J_{\square} = 0.1589 / 0.1406 = 1.13$, so the round shaft is $13$ per cent stiffer.
-**Strength:** $\tau_{\square} / \tau_{\bigcirc} = 2.40 / 3.55 = 0.68$, so the square shaft carries $48$ per cent **more** torque at the same peak stress.
+**Strength:** $\tau_{\square} / \tau_{\bigcirc} = 4.81 / 3.55 = 1.36$, so the round shaft carries $36$ per cent **more** torque at the same peak stress.
 
-*Sanity.* The result is counter-intuitive and worth dwelling on. A square's corners are unstressed — the shear stress at a re-entrant-free convex corner of a prismatic bar in torsion is exactly zero, a theorem of elasticity — so the corners are wasted material, but the square's material is on average further from the centroid than a circle's of the same area, and that wins. The lesson is narrow but important: the circle is optimal for **stiffness** per unit weight in torsion, not for strength, and a square or hexagonal section is a legitimate choice when a shaft must also transmit torque through a flat or a keyway. It is emphatically **not** optimal in bending, where the circle's material is on average closer to the neutral axis than a square's and the I-section wins outright.
+*Sanity.* The circle wins on both counts. A square's corners are unstressed — the shear stress at a convex corner of a prismatic bar in torsion is exactly zero, a result of elasticity theory — so the corner material is wasted, while the peak stress occurs at the middle of each side, which is closer to the centre ($a / 2 = 0.443 d$) than the circle's surface. Among solid sections of a given area the circle is the best in torsion for both stiffness and strength, and a square or hexagonal section is chosen only when torque must be transmitted through flats, accepting the penalty. It is emphatically **not** optimal in bending, where the circle's material is on average closer to the neutral axis than a square's and the I-section wins outright.
 :::
 :::
 
@@ -206,11 +206,11 @@ where $A$ is the area **enclosed** by the wall centre-line. The angle of twist p
 $$
 \theta = \frac{T}{4 A^{2} G} \oint \frac{\mathrm{d} s}{t} .
 $$
-For a circular tube of mean radius $r$ and uniform wall $t$ these give $\tau = T / (2 \pi r^{2} t)$ and $J = 4 \pi r^{3} t$, which is the thin-wall limit of $\pi (D_o^{4} - D_i^{4}) / 32$.
+For a circular tube of mean radius $r$ and uniform wall $t$ these give $\tau = T / (2 \pi r^{2} t)$ and $J = 2 \pi r^{3} t$, which is the thin-wall limit of $\pi (D_o^{4} - D_i^{4}) / 32$.
 :::
 
 ::: proof
-Because the wall is thin, the shear stress may be taken uniform across it and directed along the centre-line. Consider a slice of tube of length $\mathrm{d} z$ cut between two transverse planes and two longitudinal cuts at $s_1$ and $s_2$. Equilibrium of the slice in the $z$ direction requires the net longitudinal force to vanish; since a closed section carries no warping (a simply-connected closed tube cannot warp without tearing the wall), the longitudinal stress is zero and the shear flows entering and leaving any element must balance:
+Because the wall is thin, the shear stress may be taken uniform across it and directed along the centre-line. Consider a slice of tube of length $\mathrm{d} z$ cut between two transverse planes and two longitudinal cuts at $s_1$ and $s_2$. Equilibrium of the slice in the $z$ direction requires the net longitudinal force to vanish; in uniform torsion with warping unrestrained there is no longitudinal normal stress, so the shear flows on the two longitudinal cuts must balance:
 $$
 q(s_1) = q(s_2) \quad\Longrightarrow\quad q = \tau t = \text{constant}.
 $$
@@ -220,11 +220,13 @@ T = \oint q r\, \mathrm{d} s = 2 q \oint \mathrm{d} A = 2 q A
 \quad\Longrightarrow\quad
 q = \frac{T}{2 A},
 $$
-which is Bredt's second result. For the twist, equate the complementary energy per unit length, $\oint q^{2} \mathrm{d} s / (2 G t)$, to $T \theta / 2$, or integrate the shear strain $\gamma = q / (G t)$ round the centre-line and require the total rotation to be single-valued:
+which is Bredt's second result. For the twist, equate the work done per unit length by the torque, $T \theta / 2$, to the strain energy stored per unit length, $\oint q^{2} \mathrm{d} s / (2 G t)$:
 $$
-\theta \oint \frac{\mathrm{d} s}{t} = \oint \frac{q}{G t}\, \mathrm{d} s \times \ldots
+\frac{T \theta}{2} = \oint \frac{q^{2}}{2 G t}\, \mathrm{d} s
+\quad\Longrightarrow\quad
+\theta = \frac{q^{2}}{G T} \oint \frac{\mathrm{d} s}{t} = \frac{q}{2 A G} \oint \frac{\mathrm{d} s}{t},
 $$
-giving $\theta = q / (2 A G) \oint \mathrm{d} s / t = T / (4 A^{2} G) \oint \mathrm{d} s / t$.
+and with $q = T / (2 A)$, $\theta = T / (4 A^{2} G) \oint \mathrm{d} s / t$.
 :::
 
 ::: example Closed versus slit {#ex-slit}
@@ -250,14 +252,14 @@ $$
 $$
 The closed tube is **$533$ times stiffer** and carries **$40$ times less stress**.
 
-*Sanity.* The ratio of stiffnesses is $3 (2 r / t)^{2} / \pi^{2} \approx 533$ for this geometry, and it grows as the square of the diameter-to-thickness ratio — which is why aircraft fuselage frames, driveshafts, torsion bars and roll-cage hoops are all **closed** sections, why a drilled or slotted tube is a catastrophe, and why a stringer-to-skin joint that cannot carry shear flow turns a closed fuselage into an open one and multiplies the twist by hundreds. The single most consequential geometric decision in a thin-walled torsion member is whether the section is closed.
+*Sanity.* The ratio of stiffnesses is $3 r^{2} / t^{2} = 3 \times (40 / 3)^{2} \approx 533$ for this geometry, and it grows as the square of the diameter-to-thickness ratio — which is why aircraft fuselage frames, driveshafts, torsion bars and roll-cage hoops are all **closed** sections, why a drilled or slotted tube is a catastrophe, and why a stringer-to-skin joint that cannot carry shear flow turns a closed fuselage into an open one and multiplies the twist by hundreds. The single most consequential geometric decision in a thin-walled torsion member is whether the section is closed.
 :::
 :::
 
 ::: widget plot
-f: 1500/(2*0.003*5.027e-3)/1000000
-x: 0, 1
-y: 40, 60
+f: 1500/(2*(x/1000)*5.027e-3)/1000000
+x: 2, 6
+y: 0, 80
 labels: \text{shear stress in the closed tube}
 caption: Shear stress $\tau = T / (2 t A)$ in the closed tube of Example 6 against wall thickness from $2$ to $6\ \mathrm{mm}$: $74.6\ \mathrm{MPa}$ at $2\ \mathrm{mm}$, $49.7\ \mathrm{MPa}$ at $3\ \mathrm{mm}$, $24.9\ \mathrm{MPa}$ at $6\ \mathrm{mm}$. The stress is inversely proportional to the wall, whereas for a solid shaft it is inversely proportional to the cube of the diameter — so thin-wall design is linear and forgiving in gauge but brutal in the ratio $r / t$, at which point the wall buckles in diagonal compression long before it yields in shear.
 :::
@@ -267,7 +269,7 @@ A keyway removes material from the surface where the shear stress is highest and
 :::
 
 ::: history
-The torsion of a circular shaft is one of the oldest solved problems in mechanics, and its solution came before the theory that justifies it. Charles-Augustin de Coulomb read a memoir on the torsion of wires to the Académie des Sciences in 1784, having already used torsion balances to measure the electrostatic and magnetic forces for which he is famous, and stated the linear variation of stress across the section and the resistance proportional to the fourth power of the diameter — the experimental facts behind $J \propto D^{4}$ — from wire-twisting tests. The first rigorous elastic solution is due to Augustin-Louis Cauchy and, more explicitly, to Siméon Denis Poisson, who in 1812 treated torsion as a boundary-value problem in elasticity, and to Navier, who solved it by the stress-function method they were inventing together. That method yields the exact solution for the circle and shows at once why non-circular sections warp; the torsion constants for ellipses and equilateral triangles are due to St Venant, who in 1855 also stated the principle that explains why the exact solution near a keyway does not matter a diameter away. Bredt's formulas for closed thin-walled sections are due to Rudolf Bredt (1885), and their adoption in aircraft design after the First World War — when the stressed-skin monocoque made closed shear webs the primary structure — is the reason they appear in every aeronautical text and in almost no civil one. The torsion balance that Coulomb used was refined by John Michell and Henry Cavendish to weigh the earth in 1798 and by Charles Vernon Boys a century later to measure $G$ itself, which remains the most delicate torsion problem ever solved.
+The torsion of a circular shaft is one of the oldest solved problems in mechanics. Charles-Augustin de Coulomb read a memoir on the torsion of metal wires to the Académie des Sciences in 1784 (published 1787), in which he found by experiment that the resisting torque is proportional to the angle of twist and to the fourth power of the diameter — the experimental facts behind $J \propto D^{4}$ — and in the following years he used the torsion balance to measure the electrostatic and magnetic forces for which he is famous. Navier, in the 1820s, extended the circular-shaft result to other sections on the assumption that plane sections remain plane, which is wrong for any section that is not round. The correct theory is Saint-Venant's: in his memoir on torsion, read in 1853 and published in 1855, he showed by the semi-inverse method that non-circular sections warp, obtained the torsion constants of the ellipse, the equilateral triangle and the rectangle, and stated the principle that explains why the exact distribution near a keyway does not matter a diameter away. Ludwig Prandtl's stress function and membrane analogy of 1903 turned the problem into a picture an engineer can reason with. The formulas for closed thin-walled sections are due to Rudolf Bredt (1896), and their adoption in aircraft design between the wars — when the stressed-skin monocoque made closed shear webs the primary structure — is the reason they appear in every aeronautical text. The torsion balance itself was used by Henry Cavendish, with apparatus designed by John Michell, to weigh the earth in 1798, and by Charles Vernon Boys in 1895 to measure the gravitational constant $G$ with fine quartz fibres.
 :::
 
 ::: quiz
@@ -318,7 +320,7 @@ $J = \pi \times 0.030^{4} / 32 = 7.952 \times 10^{-8}\ \mathrm{m^{4}}$,
 $$
 \phi = \frac{180 \times 0.8}{7.952 \times 10^{-8} \times 80 \times 10^{9}} = 2.263 \times 10^{-2}\ \mathrm{rad} = 1.30^{\circ}.
 $$
-*Note.* That is $1.63^{\circ}$ per metre, above the usual $1^{\circ} / \mathrm{m}$ service limit, so this shaft is too small for a machine tool even though its stress of $34.0\ \mathrm{MPa}$ is trivially low. Long slender shafts are stiffness problems.
+*Note.* That is $1.62^{\circ}$ per metre, above the usual $1^{\circ} / \mathrm{m}$ service limit, so this shaft is too small for a machine tool even though its stress of $34.0\ \mathrm{MPa}$ is trivially low. Long slender shafts are stiffness problems.
 :::
 :::
 
@@ -332,22 +334,22 @@ $$
 D_o^{3} (1 - k^{4}) = d^{3}, \qquad k = 0.6,
 $$
 $$
-D_o = d \left( 1 - 0.1296 \right)^{-1/3} = d \times 1.0466 .
+D_o = d \left( 1 - 0.1296 \right)^{-1/3} = d \times 1.0474 .
 $$
 Weight ratio:
 $$
-\frac{A_h}{A_s} = \frac{D_o^{2} (1 - k^{2})}{d^{2}} = 1.0466^{2} \times 0.64 = 0.701 .
+\frac{A_h}{A_s} = \frac{D_o^{2} (1 - k^{2})}{d^{2}} = 1.0474^{2} \times 0.64 = 0.702 .
 $$
-Stiffness ratio, using $D_o^{4} / d^{4} = 1.0466^{4} = 1.200$:
+Stiffness ratio, using $D_o^{4} / d^{4} = 1.0474^{4} = 1.203$:
 $$
-\frac{J_h}{J_s} = \frac{D_o^{4} (1 - k^{4})}{d^{4}} = 1.200 \times 0.8704 = 1.044 .
+\frac{J_h}{J_s} = \frac{D_o^{4} (1 - k^{4})}{d^{4}} = 1.203 \times 0.8704 = 1.047 .
 $$
-So the hollow shaft is **$30$ per cent lighter** and, at the same maximum stress, **$4$ per cent stiffer**.
+So the hollow shaft is **$30$ per cent lighter** and, at the same maximum stress, **$5$ per cent stiffer**.
 :::
 :::
 
 ::: exercise Indeterminate shaft {level=2}
-For the shaft of Example 5, the applied torque is moved to $0.8\ \mathrm{m}$ from the left wall. Find the wall torques.
+For the shaft of Example 4, the applied torque is moved to $0.8\ \mathrm{m}$ from the left wall. Find the wall torques.
 ::: solution
 Compatibility gives $T_A \times 0.8 = T_B \times 0.4$, so $T_B = 2 T_A$, and with $T_A + T_B = 800$,
 $$
@@ -366,7 +368,7 @@ $$
 $$
 $$
 \oint \frac{\mathrm{d} s}{t} = \frac{2 (0.100 + 0.060)}{0.004} = 80\ \mathrm{m^{-1}}, \qquad
-\theta = \frac{2000}{4 \times 3.6 \times 10^{-5} \times 70 \times 10^{9}} \times 80 = 1.587 \times 10^{-4}\ \mathrm{rad / m} = 0.0091^{\circ} / \mathrm{m}.
+\theta = \frac{2000}{4 \times 3.6 \times 10^{-5} \times 70 \times 10^{9}} \times 80 = 1.587 \times 10^{-2}\ \mathrm{rad / m} = 0.909^{\circ} / \mathrm{m}.
 $$
 *Sanity.* The stress is uniform all round the wall because the wall is uniform; where the wall thickens the stress drops in proportion and the shear flow stays the same. That constancy of $q$ is what makes closed sections so efficient, and what makes a thickened corner useless for torsional strength — it is worth thickening only where buckling or a fitting demands it.
 :::
@@ -382,17 +384,17 @@ $$
 $$
 D = \left( \frac{16 T}{\pi \tau_{\text{allow}}} \right)^{1/3}
 = \left( \frac{16 \times 298.4}{\pi \times 55 \times 10^{6}} \right)^{1/3}
-= 28.0\ \mathrm{mm}.
+= 30.2\ \mathrm{mm}.
 $$
 **Stiffness criterion.** With $\theta_{\text{allow}} = 0.01745\ \mathrm{rad / m}$,
 $$
-J_{\text{req}} = \frac{T}{G \theta} = \frac{298.4}{80 \times 10^{9} \times 0.01745} = 2.139 \times 10^{-7}\ \mathrm{m^{4}}
+J_{\text{req}} = \frac{T}{G \theta} = \frac{298.4}{80 \times 10^{9} \times 0.01745} = 2.137 \times 10^{-7}\ \mathrm{m^{4}}
 \quad\Longrightarrow\quad
-D = \left( \frac{32 J}{\pi} \right)^{1/4} = 34.5\ \mathrm{mm}.
+D = \left( \frac{32 J}{\pi} \right)^{1/4} = 38.4\ \mathrm{mm}.
 $$
-Stiffness governs. Adding $8\ \mathrm{mm}$ for the keyway gives $42.5\ \mathrm{mm}$; select the standard $45\ \mathrm{mm}$ shaft.
+Stiffness governs. Adding $8\ \mathrm{mm}$ for the keyway gives $46.4\ \mathrm{mm}$; select the standard $48\ \mathrm{mm}$ shaft.
 
-*Design comment.* The stiffness limit set the size, and it is worth noting how close the two criteria are: at $34.5\ \mathrm{mm}$ the stress is only $36.5\ \mathrm{MPa}$, a third below the allowable. Machine shafts are almost always stiffness- or deflection-governed rather than strength-governed, because gears and bearings tolerate only a few thousandths of a radian of skew before the load runs off the end of the tooth. A designer who sizes on stress alone produces a shaft that works and a gearbox that howls.
+*Design comment.* The stiffness limit set the size, and it is worth noting how far apart the two criteria are: at $38.4\ \mathrm{mm}$ the stress is only $26.8\ \mathrm{MPa}$, less than half the allowable. Machine shafts are almost always stiffness- or deflection-governed rather than strength-governed, because gears and bearings tolerate only a few thousandths of a radian of skew before the load runs off the end of the tooth. A designer who sizes on stress alone produces a shaft that works and a gearbox that howls.
 :::
 :::
 
