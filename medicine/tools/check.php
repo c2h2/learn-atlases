@@ -197,6 +197,10 @@ foreach ($langs as $lang) {
                 if (preg_match('/\\b(Exercises?|Theorems?|Definitions?|Examples?|Lemmas?|Corollary|Corollaries|Propositions?|Algorithms?|Axioms?)\\s+\\[\\[#|(定理|定义|例题?|习题|引理|推论|命题|算法|公理)\\s*\\[\\[#/u', $l)) {
                     $E("$file:" . ($no + 1), 'duplicated label: write [[#id]] alone (it renders as "Theorem 3.2"), or [[#id|custom text]]');
                 }
+                // an attribute value in curly quotes (check=“42”) is read as unquoted, quotes included
+                if (preg_match('/\{[^}]*[A-Za-z][\w-]*=[“”‘’「」『』＂]/u', $l)) {
+                    $E("$file:" . ($no + 1), 'attribute value in curly/fullwidth quotes — use ASCII quotes: key="value"');
+                }
             }
             $kinds = array_count_values(array_map(fn($i) => $i['kind'], $doc->items));
             $core = count($doc->items);

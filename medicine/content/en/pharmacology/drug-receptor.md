@@ -60,10 +60,10 @@ A partial agonist at a receptor is best described as a ligand that:
 :::
 
 ::: widget plot
-f: 100/(1+exp(-2.2*(x-2))); 100/(1+exp(-2.2*(x-2.7)))*0.55; 100/(1+exp(-2.2*(x-3.5)))*0.3; 100/(1+exp(-2.2*(x-2)))*(x>2?1:1)
+f: 100/(1+exp(-2.2*(x-2))); 100/(1+exp(-2.2*(x-2.7)))*0.55; 100/(1+exp(-2.2*(x-3))); 100/(1+exp(-2.2*(x-2)))*0.45
 x: 0, 6
 y: 0, 110
-labels: \text{log dose},\ \%E_{max}\text{of maximal response};\ \text{full agonist};\ \text{partial agonist (ceiling)};\ \text{competitive antagonist shifts full curve right};\ \text{full agonist + 10x antagonist = surmountable}
+labels: \text{log dose},\ \%E_{max}\text{of maximal response};\ \text{full agonist};\ \text{partial agonist (ceiling)};\ \text{full agonist + competitive antagonist (shifted right, same maximum)};\ \text{full agonist + non-competitive antagonist (maximum depressed)}
 caption: Curves explain clinical behaviour ([[#def-ligands]], [[#def-curves]]): a partial agonist's ceiling caps both benefit and harm; a competitive antagonist shifts curves right without depressing maxima, so more agonist can override it - while a non-competitive or insurmountable blocker depresses the maximum, and the system's recovery then depends on receptor turnover ([[pharmacology/dosing-principles]]).
 :::
 

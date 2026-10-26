@@ -151,10 +151,10 @@ Of 40,000, 5 affected; 4.98 detected. The 39,995 unaffected give $39{,}995 \time
 :::
 :::
 
-::: exercise Residual risk after a negative {level=1 check="0.0016"}
-A woman's population carrier risk for a rare recessive condition is 1 in 40. A targeted test detects 96% of carrier alleles in her population. If her test is negative, what is her approximate residual carrier risk?
+::: exercise Residual risk after a negative {level=1 check="0.0010"}
+A woman's population carrier risk for a rare recessive condition is 1 in 40. A targeted test detects 96% of carrier alleles in her population. If her test is negative, what is her approximate residual carrier risk? Give it as a decimal to 2 significant figures.
 ::: solution
-Residual risk $= \dfrac{0.025 \times 0.04}{0.025 \times 0.04 + 0.975} \approx 0.001$, i.e. roughly one in a thousand — formally: prior odds $1/39$, multiplied by the probability of a negative test in a carrier ($1 - 0.96 = 0.04$), giving posterior odds $\approx 1/1560$; stated simply, the risk falls from 1 in 40 to about one in a thousand and a few hundred. The calculation generalises: a negative test divides the risk by the test's detection rate, subtracting almost nothing from a small prior and a great deal from a large one — and it is the number to quote when a couple asks whether a negative panel makes carrier screening pointless.
+Residual risk $= \dfrac{0.025 \times 0.04}{0.025 \times 0.04 + 0.975} = \dfrac{0.001}{0.976} \approx 0.0010$, i.e. about one in a thousand — formally: prior odds $1/39$, multiplied by the likelihood ratio of a negative result ($P(\text{neg}\mid\text{carrier}) / P(\text{neg}\mid\text{non-carrier}) = 0.04/1$), giving posterior odds $0.04/39 = 1/975$, which is a probability of $1/976 \approx 0.0010$; stated simply, the risk falls from 1 in 40 to about 1 in 1,000. The calculation generalises: a negative test multiplies the odds by (1 − detection rate), subtracting almost nothing from a small prior and a great deal from a large one — and it is the number to quote when a couple asks whether a negative panel makes carrier screening pointless.
 :::
 :::
 

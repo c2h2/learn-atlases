@@ -40,7 +40,7 @@
 ::: example 每周一次的误会 {#ex-methotrexate-weekly}
 一位61岁类风湿关节炎患者把她“每周一次”的甲氨蝶呤15 mg按每日吃了11天；因口腔溃疡、呕吐、腹泻与血小板下降来诊；发药标签写着“每周一次服用”，另有一瓶每日的叶酸。
 ::: solution
-**错误间隔的伤害及其修复（[[#def-ss]]、[[#def-target-load]]、[[pharmacology/adverse-reactions]]）：错误的药理——每日给药取消了每周方案内建的恢复窗口，于是快速分裂的黏膜与骨髓承受打击（抗叶酸的机制；效应腔积液时清除下降与蓄积；以及相互作用的放大器——甲氧苄啶、非甾体抗炎药、部分患者的质子泵抑制药——在本就错了的剂量之上更狠）——[[musculoskeletal/inflammatory-arthritis]]、[[renal/chronic-kidney-disease]]。救援——用亚叶酸钙按规程紧急给（不是叶酸），追踪血象、肾功能与乳酸，考虑粒细胞集落刺激因子与输血支持；有条件时测甲氨蝶呤浓度，肾衰且浓度高时考虑葡萄糖酸酶——[[emergency-critical-care/poisoning]]、[[blood/anaemia]]。系统修复——只允许每周包装与给药日历、剂量辅助工具与患者随身记录、药师以回述确认并让家人参与“每周仪式”、电子处方对“每日甲氨蝶呤”的硬性拦截；以及各国把它列为“永不发生事件”的报告：通俗语言标签、在药名行突出“每周”——[[clinical-skills/patient-safety]]、[[clinical-skills/communication]]。告知义务——诚实解释、道歉、记录与事件报告；就是否以及重新开始做共同决定；并核查同一家庭中其他每周或间歇用药（阿仑膦酸、异维A酸与秋水仙碱的“误为每日”事件族）——[[medical-ethics-law/professionalism-regulation]]、[[musculoskeletal/osteoarthritis]]。**
+**错误间隔的伤害及其修复（[[#def-ss]]、[[#def-target-load]]、[[pharmacology/adverse-reactions]]）：错误的药理——每日给药取消了每周方案内建的恢复窗口，于是快速分裂的黏膜与骨髓承受打击（抗叶酸的机制；效应腔积液时清除下降与蓄积；以及相互作用的放大器——甲氧苄啶、非甾体抗炎药、部分患者的质子泵抑制药——在本就错了的剂量之上更狠）——[[musculoskeletal/inflammatory-arthritis]]、[[renal/chronic-kidney-disease]]。救援——用亚叶酸钙按规程紧急给（不是叶酸），追踪血象、肾功能与乳酸，考虑粒细胞集落刺激因子与输血支持；有条件时测甲氨蝶呤浓度，肾衰且浓度高时考虑葡萄糖酸酶——[[emergency-critical-care/poisoning]]、[[blood/anaemia]]。系统修复——只允许每周包装与给药日历、剂量辅助工具与患者随身记录、药师以回述确认并让家人参与“每周仪式”、电子处方对“每日甲氨蝶呤”的硬性拦截；以及各国把它列为“永不发生事件”的报告：通俗语言标签、在药名行突出“每周”——[[clinical-skills/patient-safety]]、[[clinical-skills/communication]]。告知义务——诚实解释、道歉、记录与事件报告；就是否以及重新开始做共同决定；并核查同一家庭中其他每周或间歇用药（每周一次的阿仑膦酸或利塞膦酸与每周一次的大剂量胆钙化醇，以及秋水仙碱剂量差错事件族）——[[medical-ethics-law/professionalism-regulation]]、[[musculoskeletal/osteoarthritis]]。**
 :::
 :::
 

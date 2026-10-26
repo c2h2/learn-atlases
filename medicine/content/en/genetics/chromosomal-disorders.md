@@ -155,10 +155,10 @@ Maternal age alone gives about 30% detection for a 5% screen-positive rate: the 
 :::
 :::
 
-::: exercise Positive predictive value {level=1 check="0.5"}
-A screening test has 99% sensitivity and 98% specificity. In a population in which the condition has a prevalence of 1 in 100, what proportion of positive results are true positives?
+::: exercise Positive predictive value {level=1 check="0.333"}
+A screening test has 99% sensitivity and 98% specificity. In a population in which the condition has a prevalence of 1 in 100, what proportion of positive results are true positives? Give the answer as a decimal to 3 decimal places.
 ::: solution
-Take 10,000 people: 100 affected, 99 detected; 9,900 unaffected, of whom 2% (198) test positive. Positive predictive value $= 99/(99 + 198) = 0.5$ — half of positives are false. The point of the exercise is that specificity, not sensitivity, dominates positive predictive value when prevalence is low, which is why a screening test used in a low-prevalence population needs much higher specificity than 98%, and why a patient's own prior risk must be included in the number quoted back to her.
+Take 10,000 people: 100 affected, 99 detected; 9,900 unaffected, of whom 2% (198) test positive. Positive predictive value $= 99/(99 + 198) = 99/297 = 1/3 \approx 0.333$ — two out of every three positives are false. The point of the exercise is that specificity, not sensitivity, dominates positive predictive value when prevalence is low, which is why a screening test used in a low-prevalence population needs much higher specificity than 98%, and why a patient's own prior risk must be included in the number quoted back to her.
 :::
 :::
 

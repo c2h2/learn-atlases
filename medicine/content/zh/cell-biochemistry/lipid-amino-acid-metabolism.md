@@ -142,7 +142,7 @@ Archibald Garrod在1908年《遗传性代谢缺陷》中提出，单个化学步
 :::
 :::
 
-::: exercise Friedewald公式 {level=1 check=“6”}
+::: exercise Friedewald公式 {level=1 check="6"}
 总胆固醇8.0 mmol/L，HDL 1.0 mmol/L，甘油三酯2.2 mmol/L。计算LDL胆固醇。
 ::: solution
 $\text{LDL} = 8.0 - 1.0 - 2.2/2.2 = 6.0$ mmol/L。当甘油三酯超过约4.5 mmol/L时该公式失效（乳糜微粒与很大的VLDL使估计失真），此时需直接测定LDL或采用制备法。
@@ -156,7 +156,7 @@ $\text{LDL} = 8.0 - 1.0 - 2.2/2.2 = 6.0$ mmol/L。当甘油三酯超过约4.5 mm
 :::
 :::
 
-::: exercise 尿素循环的算术 {level=2 check=“4”}
+::: exercise 尿素循环的算术 {level=2 check="4"}
 合成一分子尿素消耗多少个高能磷酸键？
 ::: solution
 四个：氨甲酰磷酸合成酶Ⅰ用2个ATP（变为ADP＋Pi），精氨酸代琥珀酸合成酶把ATP转为AMP＋PPi，相当于2个。该能量代价解释了为何高蛋白摄入与分解代谢会上调循环，也解释了为何氨升高需要严重肝衰竭，而非仅仅摄入减少。

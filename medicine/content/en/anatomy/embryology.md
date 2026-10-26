@@ -165,10 +165,10 @@ Identify the embryological origin of: (a) thyroglossal cyst; (b) urachus patent 
 :::
 :::
 
-::: exercise Recurrence-risk arithmetic {level=1 check="0.05"}
-Neural tube defects recur in 5% of subsequent pregnancies after one affected pregnancy in the population this clinic serves (pretreat). If periconceptional high-dose folate reduces recurrence by two thirds, what is the treated recurrence risk?
+::: exercise Recurrence-risk arithmetic {level=1 check="0.017"}
+Neural tube defects recur in 5% of subsequent pregnancies after one affected pregnancy in the population this clinic serves (pretreat). If periconceptional high-dose folate reduces recurrence by two thirds, what is the treated recurrence risk? Give it as a decimal to 3 decimal places.
 ::: solution
-$0.05 \times (1 - 2/3) \approx 0.017$, about 1.7% — roughly one in sixty against the untreated one in twenty. The arithmetic belongs in counselling for two reasons: it is small enough to reassure a frightened couple and large enough to justify the surveillance (anomaly scan and AFP) and the daily tablet; and it illustrates the field's honest grammar — risks fall multiplicatively, and a preventive effect is a fraction, not a zero. (Cite the clinic's own numbers where audit data exist; population figures vary by region and fortification policy.)
+$0.05 \times (1 - 2/3) = 0.0167 \approx 0.017$, about 1.7% — roughly one in sixty against the untreated one in twenty. The arithmetic belongs in counselling for two reasons: it is small enough to reassure a frightened couple and large enough to justify the surveillance (anomaly scan and AFP) and the daily tablet; and it illustrates the field's honest grammar — risks fall multiplicatively, and a preventive effect is a fraction, not a zero. (Cite the clinic's own numbers where audit data exist; population figures vary by region and fortification policy.)
 :::
 :::
 
