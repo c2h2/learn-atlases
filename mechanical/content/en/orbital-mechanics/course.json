@@ -8,24 +8,23 @@
   "tagline": "The two-body problem, Kepler's equation, orbital elements, orbit determination, manoeuvres and transfers, rendezvous, interplanetary trajectories, perturbations and attitude dynamics",
   "summary": "Orbital mechanics describes how satellites and spacecraft move under gravity and how to change their orbits with as little propellant as possible. The course develops the two-body problem and conic orbits, position as a function of time, orbital elements and orbit determination, impulsive manoeuvres and transfers, relative motion and rendezvous, interplanetary trajectories, orbital perturbations, and the attitude dynamics and control of spacecraft.",
   "overview": [
-    "Orbital mechanics is the branch of celestial mechanics that describes the motion of artificial satellites and spacecraft under the influence of gravity and other forces. The course begins with the two-body problem, where Newton's law of gravitation and the conservation of energy and angular momentum lead to conic-section orbits, and develops the full mathematical machinery needed to predict where a satellite will be at any time, how to change its orbit with the least propellant, and how to design missions that visit other planets.",
-    "The course covers the classical orbital elements and their use in describing orbits in three dimensions, orbit determination from observations, impulsive manoeuvres including Hohmann and bi-elliptic transfers, relative motion and rendezvous using the Clohessy-Wiltshire equations, and interplanetary trajectories using the patched conic approximation and gravity assists. The final lessons cover orbital perturbations (J2 oblateness, atmospheric drag, solar radiation pressure) and spacecraft attitude dynamics and control.",
-    "The mathematical tools include Kepler's equation and its numerical solution, the state transition matrix for relative motion, Gauss's planetary equations for perturbation analysis, and Euler's equations for rigid body rotation. Students will learn to calculate delta-v budgets for orbital transfers, design sun-synchronous and frozen orbits, estimate orbital lifetimes under atmospheric drag, and size reaction wheels for attitude control.",
-    "Orbital mechanics is the foundation of satellite mission design, space traffic management and deep space exploration. The course prepares students for graduate study in astrodynamics, careers in spacecraft guidance and control, and work in the space industry where orbital mechanics calculations are performed daily for constellation design, collision avoidance and mission planning."
+    "Orbital mechanics applies Newton's laws of motion and gravitation to artificial satellites and spacecraft. The course starts from the two-body problem: conservation of angular momentum and energy and the eccentricity vector lead to conic-section orbits and the vis-viva equation, and Kepler's equation gives the position on an orbit as a function of time. Orbital elements describe orbits in three dimensions, and the Gibbs and Lambert problems and least squares turn observations into orbits.",
+    "The middle of the course is about changing orbits. Impulsive manoeuvres are costed in delta-v: Hohmann and bi-elliptic transfers, plane changes and how to combine them, and phasing. The Clohessy–Wiltshire equations describe the motion of one spacecraft relative to another in a nearby circular orbit, and give the targeting burns for rendezvous. Patched conics join planet-centred hyperbolas to a heliocentric transfer to size interplanetary missions, and explain the gravity assist.",
+    "The last two chapters go beyond the ideal two-body problem. Gauss's variational equations show how small forces change the orbital elements: the Earth's oblateness (J2) turns the orbital plane and the line of apsides — the basis of sun-synchronous and Molniya orbits — while atmospheric drag shrinks low orbits and sets their lifetime. Euler's equations govern the spacecraft's orientation: spin stability and the major-axis rule, the gravity-gradient torque, and attitude control with reaction wheels, magnetic torquers and feedback.",
+    "Every chapter works with real numbers — Earth orbits, the Earth–Mars transfer, Jupiter flybys, space-station rendezvous — checked by computation, and uses interactive figures to show how the results depend on the parameters. The material underlies mission design, satellite operations and spacecraft guidance and control."
   ],
   "prerequisites": [
     "dynamics"
   ],
   "outcomes": [
-    "Derive the conic-section orbit equation from Newton's law of gravitation and the conservation of energy and angular momentum",
-    "Solve Kepler's equation for elliptic, parabolic and hyperbolic orbits using Newton-Raphson iteration",
-    "Convert between state vectors and classical orbital elements, and propagate orbits using the state transition matrix",
-    "Calculate delta-v requirements for Hohmann transfers, plane changes, phasing manoeuvres and rendezvous",
-    "Apply the Clohessy-Wiltshire equations to design proximity operations and formation flying trajectories",
-    "Design interplanetary trajectories using the patched conic method, hyperbolic excess velocities and gravity assists",
-    "Calculate J2 perturbation effects including nodal regression, apsidal rotation and sun-synchronous orbit design",
-    "Estimate orbital lifetimes under atmospheric drag and size reaction wheels for attitude control",
-    "Apply Euler's equations to analyse torque-free motion, spin stabilization and gravity gradient stabilization"
+    "Derive the conic-section orbit equation and the vis-viva equation from Newton's law of gravitation and the conservation of energy and angular momentum",
+    "Solve Kepler's equation for elliptic and hyperbolic orbits by Newton's method and find the time of flight between two positions",
+    "Convert between state vectors and classical orbital elements, and determine an orbit from three position vectors (Gibbs) or two positions and a time of flight (Lambert)",
+    "Calculate delta-v for Hohmann and bi-elliptic transfers, plane changes and phasing manoeuvres, and judge which transfer is cheaper",
+    "Use the Clohessy–Wiltshire equations to predict relative motion and to compute two-impulse rendezvous manoeuvres",
+    "Size interplanetary missions with patched conics: hyperbolic excess speeds, departure and capture burns, launch windows and gravity assists",
+    "Calculate J2 nodal regression and apsidal rotation, design sun-synchronous and critically inclined orbits, and estimate orbital lifetime under drag",
+    "Apply Euler's equations to torque-free motion, spin stability and gravity-gradient stabilisation, and size reaction-wheel slews and PD attitude controllers"
   ],
   "chapters": [
     {
@@ -71,7 +70,7 @@
     {
       "slug": "relative-motion-rendezvous",
       "title": "Relative motion and rendezvous",
-      "summary": "The Clohessy\u2013Wiltshire equations, and rendezvous and docking manoeuvres.",
+      "summary": "The Clohessy–Wiltshire equations, and rendezvous and docking manoeuvres.",
       "requires": [
         "orbital-mechanics/orbital-manoeuvres"
       ]
@@ -105,99 +104,178 @@
   ],
   "history": [
     {
-      "year": 1619,
-      "title": "Kepler publishes Harmonices Mundi",
-      "detail": "Johannes Kepler publishes his third law of planetary motion, establishing the relationship between orbital period and semi-major axis that bears his name."
+      "year": 1609,
+      "title": "Kepler's first two laws",
+      "detail": "Johannes Kepler publishes Astronomia nova, in which the orbit of Mars is an ellipse with the Sun at a focus and the line from the Sun sweeps out equal areas in equal times; the third law, relating period and orbit size, follows in Harmonices mundi (1619).",
+      "people": [
+        "Johannes Kepler"
+      ]
     },
     {
       "year": 1687,
-      "title": "Newton publishes Principia",
-      "detail": "Isaac Newton publishes Philosophiae Naturalis Principia Mathematica, deriving Kepler's laws from the inverse-square law of gravitation and laying the foundation for celestial mechanics."
+      "title": "Newton's Principia",
+      "detail": "Isaac Newton publishes Philosophiae naturalis principia mathematica, deriving Kepler's laws from the laws of motion and the inverse-square law of gravitation.",
+      "people": [
+        "Isaac Newton"
+      ]
     },
     {
-      "year": 1788,
-      "title": "Lagrange publishes Mecanique Analytique",
-      "detail": "Joseph-Louis Lagrange publishes the analytical mechanics formulation, introducing the Lagrangian and the restricted three-body problem with its five libration points."
+      "year": 1761,
+      "title": "Lambert's theorem",
+      "detail": "Johann Heinrich Lambert shows that the time to travel between two points on a conic orbit depends only on the semi-major axis, the sum of the two radii and the chord between them — the basis of the problem now named after him.",
+      "people": [
+        "Johann Heinrich Lambert"
+      ]
     },
     {
-      "year": 1882,
-      "title": "Darwin publishes satellite perturbation theory",
-      "detail": "George Darwin publishes the theory of the periodical perturbations of satellites, providing the mathematical framework for J2 perturbation analysis."
+      "year": 1772,
+      "title": "Lagrange's three-body solutions",
+      "detail": "Joseph-Louis Lagrange's prize essay on the three-body problem finds the equilibrium configurations now called the Lagrange points, later used as locations for space telescopes and solar observatories.",
+      "people": [
+        "Joseph-Louis Lagrange"
+      ]
     },
     {
-      "year": 1957,
-      "title": "Sputnik reveals J2 effects",
-      "detail": "The orbit of Sputnik 1 reveals the effects of Earth's oblateness on satellite orbits, confirming J2 perturbation predictions and launching the field of satellite geodesy."
+      "year": 1809,
+      "title": "Gauss's Theoria motus",
+      "detail": "Carl Friedrich Gauss publishes his methods of orbit determination, developed in 1801 to recover the asteroid Ceres from a few weeks of Giuseppe Piazzi's observations, together with the method of least squares.",
+      "people": [
+        "Carl Friedrich Gauss",
+        "Giuseppe Piazzi"
+      ]
+    },
+    {
+      "year": 1925,
+      "title": "Hohmann's transfer orbit",
+      "detail": "Walter Hohmann's book Die Erreichbarkeit der Himmelskörper (The attainability of celestial bodies) analyses the minimum-energy two-impulse transfer between circular orbits.",
+      "people": [
+        "Walter Hohmann"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Explorer 1 and the major-axis rule",
+      "detail": "Explorer 1, spun about its long axis, begins to tumble soon after launch; Ronald Bracewell and Owen Garriott explain that energy dissipated in its flexible antennas drives the spin towards the axis of maximum moment of inertia.",
+      "people": [
+        "Ronald Bracewell",
+        "Owen Garriott"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Satellites measure the Earth's shape",
+      "detail": "R. H. Merson and D. G. King-Hele derive the Earth's flattening from the rotation of the orbital plane of the Sputnik 2 rocket; in 1959 John O'Keefe, Ann Eckels and R. K. Squires find the odd harmonic J3 (the 'pear shape') from Vanguard 1.",
+      "people": [
+        "R. H. Merson",
+        "Desmond King-Hele",
+        "John O'Keefe",
+        "Ann Eckels",
+        "R. K. Squires"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "The Clohessy–Wiltshire equations",
+      "detail": "W. H. Clohessy and R. S. Wiltshire publish the linearised equations of relative motion for rendezvous with a target in circular orbit (equations equivalent to those of G. W. Hill's 1878 lunar theory).",
+      "people": [
+        "W. H. Clohessy",
+        "R. S. Wiltshire",
+        "George William Hill"
+      ]
     },
     {
       "year": 1965,
-      "title": "Gemini 6 and 7 perform first orbital rendezvous",
-      "detail": "NASA's Gemini 6 and 7 achieve the first orbital rendezvous, demonstrating the Clohessy-Wiltshire relative motion equations in practice."
+      "title": "First rendezvous in orbit",
+      "detail": "Gemini 6A, flown by Walter Schirra and Thomas Stafford, rendezvouses with Gemini 7 on 15 December 1965, approaching to within about 30 cm.",
+      "people": [
+        "Walter Schirra",
+        "Thomas Stafford"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "First planetary gravity assist",
+      "detail": "Mariner 10 flies past Venus on 5 February 1974 and uses its gravity to reach Mercury, the first use of a planetary flyby to reach another planet.",
+      "people": []
     },
     {
       "year": 1977,
-      "title": "Voyager launches on Grand Tour trajectory",
-      "detail": "Voyager 1 and 2 launch on trajectories using rare planetary alignments for gravity assists to visit the outer planets, demonstrating interplanetary trajectory design."
+      "title": "Voyager and the outer-planet alignment",
+      "detail": "Voyager 2 (20 August) and Voyager 1 (5 September) are launched to use the alignment of the giant planets for a chain of gravity assists identified by Gary Flandro at JPL in the mid-1960s; Voyager 2 reaches Neptune in 1989.",
+      "people": [
+        "Gary Flandro"
+      ]
     },
     {
-      "year": 1998,
-      "title": "ISS assembly begins",
-      "detail": "The International Space Station assembly begins with a series of orbital rendezvous and docking missions, demonstrating precision relative navigation and control."
-    },
-    {
-      "year": 2021,
-      "title": "James Webb Space Telescope reaches L2",
-      "detail": "The James Webb Space Telescope is inserted into a halo orbit around the Sun-Earth L2 libration point, demonstrating precision station-keeping in the three-body problem."
+      "year": 2022,
+      "title": "JWST arrives at Sun–Earth L2",
+      "detail": "The James Webb Space Telescope enters its orbit around the Sun–Earth L2 point on 24 January 2022, a month after launch.",
+      "people": []
     }
   ],
   "references": [
     {
-      "author": "R. Bate, D. D. Mueller and J. E. White",
-      "title": "Fundamentals of Astrodynamics",
+      "authors": "H. D. Curtis",
+      "title": "Orbital Mechanics for Engineering Students (4th edition)",
+      "publisher": "Butterworth-Heinemann",
       "year": 2020,
-      "publisher": "Dover"
+      "note": "The closest match to this course: two-body problem, Kepler's equation, orbital elements, Gibbs and Lambert, manoeuvres, relative motion, interplanetary trajectories and attitude dynamics, with many worked examples."
     },
     {
-      "author": "H. Curtis",
-      "title": "Orbital Mechanics for Engineering Students",
+      "authors": "R. R. Bate, D. D. Mueller, J. E. White and W. W. Saylor",
+      "title": "Fundamentals of Astrodynamics (2nd edition)",
+      "publisher": "Dover",
+      "year": 2020,
+      "note": "The classic inexpensive introduction (first edition 1971), strong on orbit determination, Lambert's problem and the universal-variable formulation."
+    },
+    {
+      "authors": "D. A. Vallado",
+      "title": "Fundamentals of Astrodynamics and Applications (4th edition)",
+      "publisher": "Microcosm Press",
       "year": 2013,
-      "publisher": "Butterworth-Heinemann"
+      "note": "Comprehensive reference with algorithms for Kepler's equation, Lambert, coordinate frames, perturbations (including Gauss's equations and J2 effects) and atmospheric models."
     },
     {
-      "author": "G. Vallado",
-      "title": "Fundamentals of Astrodynamics and Applications",
+      "authors": "J. E. Prussing and B. A. Conway",
+      "title": "Orbital Mechanics (2nd edition)",
+      "publisher": "Oxford University Press",
       "year": 2013,
-      "publisher": "Microcosm Press"
+      "note": "Concise graduate-level text: Lambert's problem, optimal impulsive transfers, Clohessy–Wiltshire equations, perturbations and gravity assists."
     },
     {
-      "author": "J. E. Prussing and B. A. Conway",
-      "title": "Orbital Mechanics",
-      "year": 2012,
-      "publisher": "Oxford University Press"
+      "authors": "R. H. Battin",
+      "title": "An Introduction to the Mathematics and Methods of Astrodynamics (revised edition)",
+      "publisher": "AIAA",
+      "year": 1999,
+      "note": "The advanced reference for Lambert's problem, the variation of parameters and perturbation theory."
     },
     {
-      "author": "H. Schaub and J. L. Junkins",
-      "title": "Analytical Mechanics of Space Systems",
-      "year": 2006,
-      "publisher": "AIAA"
+      "authors": "H. Schaub and J. L. Junkins",
+      "title": "Analytical Mechanics of Space Systems (4th edition)",
+      "publisher": "AIAA",
+      "year": 2018,
+      "note": "Rigid-body kinematics and attitude representations, Euler's equations, attitude control, and relative orbital motion."
     },
     {
-      "author": "B. Wie",
-      "title": "Space Vehicle Dynamics and Control",
-      "year": 2005,
-      "publisher": "AIAA"
+      "authors": "B. Wie",
+      "title": "Space Vehicle Dynamics and Control (2nd edition)",
+      "publisher": "AIAA",
+      "year": 2008,
+      "note": "Orbital and attitude dynamics with a control-engineering emphasis: spin stability, gravity gradient, reaction wheels and control-moment gyroscopes."
     },
     {
-      "author": "V. Szebehely",
-      "title": "Theory of Orbits: The Restricted Problem of Three Bodies",
-      "year": 1967,
-      "publisher": "Academic Press"
-    },
-    {
-      "author": "O. Montenbruck and E. Gill",
-      "title": "Satellite Orbits: Models, Methods, Applications",
+      "authors": "O. Montenbruck and E. Gill",
+      "title": "Satellite Orbits: Models, Methods and Applications",
+      "publisher": "Springer",
       "year": 2000,
-      "publisher": "Springer"
+      "note": "Force models, numerical integration and precise orbit determination as practised in satellite operations."
+    },
+    {
+      "authors": "V. Szebehely",
+      "title": "Theory of Orbits: The Restricted Problem of Three Bodies",
+      "publisher": "Academic Press",
+      "year": 1967,
+      "note": "The classic monograph on the restricted three-body problem, the Lagrange points and the Jacobi integral — the next step beyond patched conics."
     }
   ],
   "next": []
