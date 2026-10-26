@@ -169,49 +169,49 @@
   ],
   "references": [
     {
-      "author": "J. L. Meriam, L. G. Kraige and J. N. Bolton",
+      "authors": "J. L. Meriam, L. G. Kraige and J. N. Bolton",
       "title": "Engineering Mechanics: Dynamics",
       "publisher": "Wiley, 9th edition",
       "year": 2019
     },
     {
-      "author": "F. P. Beer, E. R. Johnston, D. F. Mazurek and P. J. Cornwell",
+      "authors": "F. P. Beer, E. R. Johnston, D. F. Mazurek and P. J. Cornwell",
       "title": "Vector Mechanics for Engineers: Dynamics",
       "publisher": "McGraw-Hill, 13th edition",
       "year": 2022
     },
     {
-      "author": "R. C. Hibbeler",
+      "authors": "R. C. Hibbeler",
       "title": "Engineering Mechanics: Dynamics",
       "publisher": "Pearson, 15th edition",
       "year": 2022
     },
     {
-      "author": "H. Baruh",
+      "authors": "H. Baruh",
       "title": "Analytical Dynamics",
       "publisher": "McGraw-Hill",
       "year": 1999
     },
     {
-      "author": "E. J. Routh",
+      "authors": "E. J. Routh",
       "title": "The Elementary Part of a Treatise on the Dynamics of a System of Rigid Bodies",
       "publisher": "Macmillan (Dover reprint 1960)",
       "year": 1905
     },
     {
-      "author": "H. Goldstein, C. Poole and J. Safko",
+      "authors": "H. Goldstein, C. Poole and J. Safko",
       "title": "Classical Mechanics",
       "publisher": "Addison-Wesley, 3rd edition",
       "year": 2002
     },
     {
-      "author": "A. P. French",
+      "authors": "A. P. French",
       "title": "Newtonian Mechanics",
       "publisher": "W. W. Norton",
       "year": 1971
     },
     {
-      "author": "D. T. Greenwood",
+      "authors": "D. T. Greenwood",
       "title": "Advanced Dynamics",
       "publisher": "Cambridge University Press",
       "year": 2003

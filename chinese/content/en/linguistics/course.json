@@ -195,49 +195,49 @@
   "references": [
     {
       "title": "Mashi Wentong (《马氏文通》)",
-      "author": "Ma Jianzhong",
+      "authors": "Ma Jianzhong",
       "year": 1898,
       "note": "The first systematic grammar of classical Chinese."
     },
     {
       "title": "Course in General Linguistics",
-      "author": "F. de Saussure",
+      "authors": "F. de Saussure",
       "year": 1916,
       "note": "Sign, value, synchrony: the founding text of structuralism."
     },
     {
       "title": "An Essay on the Phonology of the Chinese Languages",
-      "author": "Luo Changpei",
+      "authors": "Luo Changpei",
       "year": 1940,
       "note": "Chinese historical phonology argued with both the rhyme tradition and the comparative method."
     },
     {
       "title": "Essential Grammar of Chinese (《中国文法要略》)",
-      "author": "Lü Shuxiang",
+      "authors": "Lü Shuxiang",
       "year": 1942,
       "note": "Construction and meaning in Chinese, written as a comparative grammar."
     },
     {
       "title": "Syntactic Structures",
-      "author": "Noam Chomsky",
+      "authors": "Noam Chomsky",
       "year": 1957,
       "note": "Grammar as a generative device, not a catalogue."
     },
     {
       "title": "Spoken Chinese (《汉语口语》)",
-      "author": "Zhao Yuanren",
+      "authors": "Zhao Yuanren",
       "year": 1948,
       "note": "Descriptions of living spoken Chinese by its finest analyst."
     },
     {
       "title": "Lectures on Chinese Grammar (《语法讲义》)",
-      "author": "Zhu Dexi",
+      "authors": "Zhu Dexi",
       "year": 1982,
       "note": "Distributional tests applied to Chinese, in Chinese."
     },
     {
       "title": "Elements of General Linguistics",
-      "author": "H. Hock (or: Xu Degong, Introduction to Linguistics)",
+      "authors": "H. Hock (or: Xu Degong, Introduction to Linguistics)",
       "year": 1988,
       "note": "The standard Chinese textbook through which most readers meet the discipline."
     }

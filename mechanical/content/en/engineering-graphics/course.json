@@ -129,42 +129,42 @@
   "references": [
     {
       "title": "ASME Y14.5-2018: Dimensioning and Tolerancing",
-      "author": "ASME",
+      "authors": "ASME",
       "year": 2018,
       "url": "https://www.asme.org/codes-standards",
       "note": "The American standard for dimensioning and geometric tolerancing."
     },
     {
       "title": "ISO 1101:2017 — Geometrical product specifications (GPS): Geometrical tolerancing — Tolerances of form, orientation, location and run-out",
-      "author": "ISO",
+      "authors": "ISO",
       "year": 2017,
       "url": "https://www.iso.org/standard/66777.html",
       "note": "The ISO counterpart for geometrical tolerancing."
     },
     {
       "title": "ISO 286-1:2010 and ISO 286-2:2010 — ISO code system for tolerances on linear sizes",
-      "author": "ISO",
+      "authors": "ISO",
       "year": 2010,
       "url": "https://www.iso.org/standards.html",
       "note": "Tolerance grades, fundamental deviations and the tables of limits used in the tolerances lesson."
     },
     {
       "title": "Manual of Engineering Drawing (5th edition)",
-      "author": "Colin H. Simmons, Dennis E. Maguire and Neil Phelps",
+      "authors": "Colin H. Simmons, Dennis E. Maguire and Neil Phelps",
       "year": 2020,
       "url": "",
       "note": "Drawing practice to ISO and BS 8888."
     },
     {
       "title": "Technical Drawing with Engineering Graphics (15th edition)",
-      "author": "Frederick E. Giesecke et al.",
+      "authors": "Frederick E. Giesecke et al.",
       "year": 2016,
       "url": "",
       "note": "Comprehensive textbook on sketching, projection, sections, dimensioning and CAD."
     },
     {
       "title": "Fundamentals of Geometric Dimensioning and Tolerancing (3rd edition)",
-      "author": "Alex Krulikowski",
+      "authors": "Alex Krulikowski",
       "year": 2012,
       "url": "",
       "note": "Introductory text on GD&T to ASME Y14.5."

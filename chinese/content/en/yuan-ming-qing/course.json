@@ -169,49 +169,49 @@
   "references": [
     {
       "title": "《赵氏孤儿》",
-      "author": "纪君祥",
+      "authors": "纪君祥",
       "year": 1300,
       "note": "Revenge, loyalty and the first Chinese tragedy read in Europe."
     },
     {
       "title": "《西厢记》",
-      "author": "王实甫",
+      "authors": "王实甫",
       "year": 1300,
       "note": "Lyric density inside a comic plot."
     },
     {
       "title": "《三国演义》",
-      "author": "罗贯中",
+      "authors": "罗贯中",
       "year": 1522,
       "note": "History as a machine for producing character."
     },
     {
       "title": "《水浒传》",
-      "author": "施耐庵",
+      "authors": "施耐庵",
       "year": 1526,
       "note": "Banditry, amnesty and the ethics of the band."
     },
     {
       "title": "《西游记》",
-      "author": "吴承恩（通说）",
+      "authors": "吴承恩（通说）",
       "year": 1592,
       "note": "Cultivation, satire and the trainable monkey."
     },
     {
       "title": "《金瓶梅》",
-      "author": "兰陵笑笑生",
+      "authors": "兰陵笑笑生",
       "year": 1610,
       "note": "Money, weather and the ordinary as subject."
     },
     {
       "title": "《牡丹亭》《桃花扇》《长生殿》",
-      "author": "汤显祖、孔尚任、洪升",
+      "authors": "汤显祖、孔尚任、洪升",
       "year": 1699,
       "note": "Feeling, loyalty and the aesthetics of dynastic fall."
     },
     {
       "title": "《儒林外史》《红楼梦》",
-      "author": "吴敬梓、曹雪芹",
+      "authors": "吴敬梓、曹雪芹",
       "year": 1791,
       "note": "Episodic satire and the novel of memory."
     }

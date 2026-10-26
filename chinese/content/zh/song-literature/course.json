@@ -101,49 +101,49 @@
   "references": [
     {
       "title": "《乐章集》",
-      "author": "柳永",
+      "authors": "柳永",
       "year": 1050,
       "note": "慢词与城市声景。"
     },
     {
       "title": "《珠玉词》",
-      "author": "晏殊",
+      "authors": "晏殊",
       "year": 1050,
       "note": "宰相书房的从容。"
     },
     {
       "title": "《东坡乐府》",
-      "author": "苏轼",
+      "authors": "苏轼",
       "year": 1082,
       "note": "以生平与议论扩容的词。"
     },
     {
       "title": "《片玉词》",
-      "author": "周邦彦",
+      "authors": "周邦彦",
       "year": 1100,
       "note": "格律定式与钩顿之法。"
     },
     {
       "title": "《漱玉词》《词论》",
-      "author": "李清照",
+      "authors": "李清照",
       "year": 1132,
       "note": "词别是一家：实践者的批评。"
     },
     {
       "title": "《剑南诗稿》《入蜀记》",
-      "author": "陆游",
+      "authors": "陆游",
       "year": 1178,
       "note": "存世最大的韵文日记。"
     },
     {
       "title": "《稼轩长短句》",
-      "author": "辛弃疾",
+      "authors": "辛弃疾",
       "year": 1205,
       "note": "以文为词与士卒之词。"
     },
     {
       "title": "《沧浪诗话》",
-      "author": "严羽",
+      "authors": "严羽",
       "year": 1245,
       "note": "以品味与妙悟立法：唐诗威望的追认文书。"
     }

@@ -157,49 +157,49 @@
   "references": [
     {
       "title": "Republic, book X",
-      "author": "Plato",
+      "authors": "Plato",
       "year": 380,
       "note": "The prosecution text: poetry as thrice-removed imitation."
     },
     {
       "title": "Poetics",
-      "author": "Aristotle",
+      "authors": "Aristotle",
       "year": -335,
       "note": "The defence text: plot, universals, catharsis."
     },
     {
       "title": "On Literature (Dianlun)",
-      "author": "Cao Pi",
+      "authors": "Cao Pi",
       "year": 217,
       "note": "Literature as the enterprise of state; the origins debate and stylistic temperaments."
     },
     {
       "title": "Wenxin Diaolong",
-      "author": "Liu Xie",
+      "authors": "Liu Xie",
       "year": 501,
       "note": "Systematic Chinese literary theory: origins, genre, creativity, style."
     },
     {
       "title": "The Mirror and the Lamp",
-      "author": "M. H. Abrams",
+      "authors": "M. H. Abrams",
       "year": 1953,
       "note": "The four coordinates and the history of theories of poetry."
     },
     {
       "title": "Norton Anthology of Theory and Criticism",
-      "author": "Vincent B. Leitch, ed.",
+      "authors": "Vincent B. Leitch, ed.",
       "year": 2001,
       "note": "Standard classroom archive from Plato to the present."
     },
     {
       "title": "Renjian Cihua (Poetics of the World)",
-      "author": "Wang Guowei",
+      "authors": "Wang Guowei",
       "year": 1908,
       "note": "Jingjie and wujing; the quoted-redevised as a working method."
     },
     {
       "title": "The Location of Culture",
-      "author": "Homi K. Bhabha",
+      "authors": "Homi K. Bhabha",
       "year": 1994,
       "note": "Hybridity and the third space; late postcolonial theory."
     }

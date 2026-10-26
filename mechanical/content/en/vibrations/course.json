@@ -201,49 +201,49 @@
   ],
   "references": [
     {
-      "author": "J. P. Den Hartog",
+      "authors": "J. P. Den Hartog",
       "title": "Mechanical Vibrations",
       "publisher": "Dover (4th edition, Van Nostrand 1956)",
       "year": 1985
     },
     {
-      "author": "W. T. Thomson and M. D. Dahleh",
+      "authors": "W. T. Thomson and M. D. Dahleh",
       "title": "Theory of Vibration with Applications",
       "publisher": "Prentice Hall, 5th edition",
       "year": 1998
     },
     {
-      "author": "L. Meirovitch",
+      "authors": "L. Meirovitch",
       "title": "Elements of Vibration Analysis",
       "publisher": "McGraw-Hill, 2nd edition",
       "year": 1986
     },
     {
-      "author": "D. J. Inman",
+      "authors": "D. J. Inman",
       "title": "Engineering Vibration",
       "publisher": "Pearson, 4th edition",
       "year": 2014
     },
     {
-      "author": "D. E. Newland",
+      "authors": "D. E. Newland",
       "title": "An Introduction to Random Vibrations, Spectral and Wavelet Analysis",
       "publisher": "Longman, 3rd edition",
       "year": 1993
     },
     {
-      "author": "J. W. Strutt (Lord Rayleigh)",
+      "authors": "J. W. Strutt (Lord Rayleigh)",
       "title": "The Theory of Sound",
       "publisher": "Macmillan, 2 volumes (Dover reprint 1945)",
       "year": 1877
     },
     {
-      "author": "D. J. Ewins",
+      "authors": "D. J. Ewins",
       "title": "Modal Testing: Theory, Practice and Application",
       "publisher": "Research Studies Press, 2nd edition",
       "year": 2000
     },
     {
-      "author": "J. M. Vance",
+      "authors": "J. M. Vance",
       "title": "Rotordynamics of Turbomachinery",
       "publisher": "Wiley",
       "year": 1988

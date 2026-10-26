@@ -182,49 +182,49 @@
   ],
   "references": [
     {
-      "author": "G. F. Franklin, J. D. Powell and A. Emami-Naeini",
+      "authors": "G. F. Franklin, J. D. Powell and A. Emami-Naeini",
       "title": "Feedback Control of Dynamic Systems",
       "publisher": "Pearson, 8th edition",
       "year": 2019
     },
     {
-      "author": "R. C. Dorf and R. H. Bishop",
+      "authors": "R. C. Dorf and R. H. Bishop",
       "title": "Modern Control Systems",
       "publisher": "Pearson, 14th edition",
       "year": 2017
     },
     {
-      "author": "K. Ogata",
+      "authors": "K. Ogata",
       "title": "Modern Control Engineering",
       "publisher": "Pearson, 5th edition",
       "year": 2010
     },
     {
-      "author": "H. W. Bode",
+      "authors": "H. W. Bode",
       "title": "Network Analysis and Feedback Amplifier Design",
       "publisher": "Van Nostrand (reprinted IEEE Press 1991)",
       "year": 1945
     },
     {
-      "author": "K. J. Astrom and T. Hagglund",
+      "authors": "K. J. Astrom and T. Hagglund",
       "title": "Advanced PID Control",
       "publisher": "ISA",
       "year": 2006
     },
     {
-      "author": "K. J. Astrom and B. Wittenmark",
+      "authors": "K. J. Astrom and B. Wittenmark",
       "title": "Computer-Controlled Systems",
       "publisher": "Dover (3rd edition, Prentice Hall 1997)",
       "year": 2021
     },
     {
-      "author": "S. Skogestad and I. Postlethwaite",
+      "authors": "S. Skogestad and I. Postlethwaite",
       "title": "Multivariable Feedback Control: Analysis and Design",
       "publisher": "Wiley, 2nd edition",
       "year": 2005
     },
     {
-      "author": "J. G. Ziegler and N. B. Nichols",
+      "authors": "J. G. Ziegler and N. B. Nichols",
       "title": "Optimum settings for automatic controllers",
       "publisher": "Transactions of the ASME 65, 433-448",
       "year": 1943

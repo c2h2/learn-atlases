@@ -188,49 +188,49 @@
   ],
   "references": [
     {
-      "author": "F. P. Incropera, D. P. DeWitt, T. L. Bergman and A. S. Lavine",
+      "authors": "F. P. Incropera, D. P. DeWitt, T. L. Bergman and A. S. Lavine",
       "title": "Fundamentals of Heat and Mass Transfer",
       "publisher": "Wiley",
       "year": 2017
     },
     {
-      "author": "Y. A. Cengel and A. J. Ghajar",
+      "authors": "Y. A. Cengel and A. J. Ghajar",
       "title": "Heat and Mass Transfer: Fundamentals and Applications",
       "publisher": "McGraw-Hill",
       "year": 2020
     },
     {
-      "author": "J. P. Holman",
+      "authors": "J. P. Holman",
       "title": "Heat Transfer",
       "publisher": "McGraw-Hill",
       "year": 2010
     },
     {
-      "author": "R. K. Shah and D. P. Sekulic",
+      "authors": "R. K. Shah and D. P. Sekulic",
       "title": "Fundamentals of Heat Exchanger Design",
       "publisher": "Wiley",
       "year": 2003
     },
     {
-      "author": "J. R. Howell, M. P. Mengüç, K. Daun and R. Siegel",
+      "authors": "J. R. Howell, M. P. Mengüç, K. Daun and R. Siegel",
       "title": "Thermal Radiation Heat Transfer",
       "publisher": "CRC Press",
       "year": 2021
     },
     {
-      "author": "W. M. Kays, M. E. Crawford and B. Weigand",
+      "authors": "W. M. Kays, M. E. Crawford and B. Weigand",
       "title": "Convective Heat and Mass Transfer",
       "publisher": "McGraw-Hill",
       "year": 2005
     },
     {
-      "author": "VDI e.V.",
+      "authors": "VDI e.V.",
       "title": "VDI Heat Atlas",
       "publisher": "Springer",
       "year": 2010
     },
     {
-      "author": "S. Whitaker",
+      "authors": "S. Whitaker",
       "title": "Fundamental Principles of Heat Transfer",
       "publisher": "Pergamon",
       "year": 1977

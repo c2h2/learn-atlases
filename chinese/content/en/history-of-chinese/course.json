@@ -155,49 +155,49 @@
   "references": [
     {
       "title": "Shuowen Jiezi",
-      "author": "Xu Shen",
+      "authors": "Xu Shen",
       "year": 121,
       "note": "The etymological dictionary whose analysis of forms is the starting point for all work on early meanings."
     },
     {
       "title": "Qieyun",
-      "author": "Lu Fayan",
+      "authors": "Lu Fayan",
       "year": 601,
       "note": "The document at the centre of Chinese historical phonology."
     },
     {
       "title": "An Introduction to the History of Chinese Phonology",
-      "author": "Li Fang-Kuei",
+      "authors": "Li Fang-Kuei",
       "year": 1973,
       "note": "A clear account of the three-period framework by a major figure of the field."
     },
     {
       "title": "Studies on the Chinese Language",
-      "author": "Bernhard Karlgren",
+      "authors": "Bernhard Karlgren",
       "year": 1915,
       "note": "The work that brought comparative method and modern phonetics to Chinese historical study."
     },
     {
       "title": "A Draft History of the Chinese Language",
-      "author": "Wang Li",
+      "authors": "Wang Li",
       "year": 1957,
       "note": "The founding synthesis of Chinese historical linguistics: phonology, grammar and lexicon in one frame."
     },
     {
       "title": "An Introduction to Classical Chinese",
-      "author": "Wang Li (ed.)",
+      "authors": "Wang Li (ed.)",
       "year": 1962,
       "note": "The textbook that taught several generations to read premodern Chinese in historical order."
     },
     {
       "title": "Zhongyuan Yinyun (Sounds and Rhymes of the Central Plains)",
-      "author": "Zhou Deqing",
+      "authors": "Zhou Deqing",
       "year": 1324,
       "note": "The mirror of early Mandarin phonology, compiled for lyric writers."
     },
     {
       "title": "A Descriptive and Comparative Vocabulary of Early Mandarin",
-      "author": "Translators' bureau of the Mongol period",
+      "authors": "Translators' bureau of the Mongol period",
       "year": 1389,
       "note": "Practical bilingual wordlists preserving four-tone northern speech of the fourteenth century."
     }

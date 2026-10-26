@@ -164,49 +164,49 @@
   "references": [
     {
       "title": "Wenxin Diaolong, 'Voice and Form' (Shenglü)",
-      "author": "Liu Xie",
+      "authors": "Liu Xie",
       "year": 501,
       "note": "The earliest treatise on tone in literature; the beauty of sound is one of its three perfections."
     },
     {
       "title": "Manpishiki (Empty Mirror of the Literary Mirror)",
-      "author": "Kukai",
+      "authors": "Kukai",
       "year": 806,
       "note": "Preserves Tang poetry-rule texts, including the eight diseases theory."
     },
     {
       "title": "Pingshui mulian zhu (Pingshui rhyme-linked annotations)",
-      "author": "compiled from the Fang family system",
+      "authors": "compiled from the Fang family system",
       "year": 1200,
       "note": "The 106-rhyme book behind nearly all surviving regulated verse."
     },
     {
       "title": "Bibo Lu",
-      "author": "Ge Lifeng",
+      "authors": "Ge Lifeng",
       "year": 1100,
       "note": "First clear record of the four regulated verse patterns."
     },
     {
       "title": "Ci Yuan",
-      "author": "Zhang Yan",
+      "authors": "Zhang Yan",
       "year": 1299,
       "note": "Rules of ci with a musician's ear for melody and phrase."
     },
     {
       "title": "Zhongyuan Yin Yun",
-      "author": "Zhou Deqing",
+      "authors": "Zhou Deqing",
       "year": 1324,
       "note": "The rhyme book of northern music; entering tone redistributed among the other three tones."
     },
     {
       "title": "Qinding Cipu / Qinding Qupu",
-      "author": "Imperial compilers",
+      "authors": "Imperial compilers",
       "year": 1711,
       "note": "Standard inventories of ci and qu patterns, still the working reference today."
     },
     {
       "title": "Hanyu Shilvxue (Chinese Poetics)",
-      "author": "Wang Li",
+      "authors": "Wang Li",
       "year": 1958,
       "note": "The modern systematization of metre; the source of the standard textbook tables."
     }

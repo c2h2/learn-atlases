@@ -195,49 +195,49 @@
   ],
   "references": [
     {
-      "author": "G. K. Batchelor",
+      "authors": "G. K. Batchelor",
       "title": "An Introduction to Fluid Dynamics",
       "publisher": "Cambridge University Press",
       "year": 1967
     },
     {
-      "author": "P. K. Kundu, I. M. Cohen and P. K. Dowling",
+      "authors": "P. K. Kundu, I. M. Cohen and P. K. Dowling",
       "title": "Fluid Mechanics",
       "publisher": "Academic Press",
       "year": 2016
     },
     {
-      "author": "F. M. White",
+      "authors": "F. M. White",
       "title": "Fluid Mechanics",
       "publisher": "McGraw-Hill",
       "year": 2021
     },
     {
-      "author": "H. Schlichting and K. Gersten",
+      "authors": "H. Schlichting and K. Gersten",
       "title": "Boundary-Layer Theory",
       "publisher": "Springer",
       "year": 2017
     },
     {
-      "author": "L. Prandtl and O. G. Tietjens",
+      "authors": "L. Prandtl and O. G. Tietjens",
       "title": "Fundamentals of Hydro- and Aeromechanics",
       "publisher": "McGraw-Hill (Dover reprint)",
       "year": 1934
     },
     {
-      "author": "I. G. Currie",
+      "authors": "I. G. Currie",
       "title": "Fundamental Mechanics of Fluids",
       "publisher": "CRC Press",
       "year": 2012
     },
     {
-      "author": "J. D. Anderson",
+      "authors": "J. D. Anderson",
       "title": "Modern Compressible Flow",
       "publisher": "McGraw-Hill",
       "year": 2003
     },
     {
-      "author": "A. J. Smits and T. T. Lim",
+      "authors": "A. J. Smits and T. T. Lim",
       "title": "Flow Visualization: Techniques and Examples",
       "publisher": "Imperial College Press",
       "year": 2000

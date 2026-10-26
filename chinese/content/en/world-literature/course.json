@@ -186,49 +186,49 @@
   "references": [
     {
       "title": "Iliad / Odyssey",
-      "author": "Homer (as transmitted)",
+      "authors": "Homer (as transmitted)",
       "year": -700,
       "note": "Epic formula, oral composition, and the long editorial life of a text that began as performance."
     },
     {
       "title": "Aeneid",
-      "author": "Virgil",
+      "authors": "Virgil",
       "year": -19,
       "note": "The imperial response to Homer: the second epic that taught Europe how to read the first."
     },
     {
       "title": "Mahabharata (selected books)",
-      "author": "attributed to Vyasa",
+      "authors": "attributed to Vyasa",
       "year": 400,
       "note": "Encyclopic epic and continuous interpolation: a text that never closed."
     },
     {
       "title": "The Tale of Genji",
-      "author": "Murasaki Shikibu",
+      "authors": "Murasaki Shikibu",
       "year": 1010,
       "note": "Court narrative with no precedents in its own language: invention described as a diary."
     },
     {
       "title": "Divine Comedy",
-      "author": "Dante Alighieri",
+      "authors": "Dante Alighieri",
       "year": 1320,
       "note": "Vernacular theology and the invention of an author's own monument."
     },
     {
       "title": "Don Quixote",
-      "author": "Miguel de Cervantes",
+      "authors": "Miguel de Cervantes",
       "year": 1605,
       "note": "The novel reading itself; the founding case for a global genre."
     },
     {
       "title": "Faust, Part One",
-      "author": "Johann Wolfgang von Goethe",
+      "authors": "Johann Wolfgang von Goethe",
       "year": 1808,
       "note": "World literature as a concept coined by an author reading translations in Weimar."
     },
     {
       "title": "Dream of the Red Chamber",
-      "author": "Cao Xueqin",
+      "authors": "Cao Xueqin",
       "year": 1791,
       "note": "A manuscript culture's unfinished masterpiece; the case for translation without a fixed source."
     }

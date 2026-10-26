@@ -178,49 +178,49 @@
   ],
   "references": [
     {
-      "author": "Robert Willis",
+      "authors": "Robert Willis",
       "title": "Principles of Mechanism",
       "publisher": "John W. Parker, London (2nd ed. Longmans, Green, 1870)",
       "year": 1841
     },
     {
-      "author": "Franz Reuleaux",
+      "authors": "Franz Reuleaux",
       "title": "The Kinematics of Machinery (trans. A. B. W. Kennedy)",
       "publisher": "Macmillan (reprint Dover, 1963)",
       "year": 1876
     },
     {
-      "author": "R. S. Hartenberg and J. Denavit",
+      "authors": "R. S. Hartenberg and J. Denavit",
       "title": "Kinematic Synthesis of Linkages",
       "publisher": "McGraw-Hill (reprint Dover, 2013)",
       "year": 1964
     },
     {
-      "author": "J. J. Uicker, G. R. Pennock and J. E. Shigley",
+      "authors": "J. J. Uicker, G. R. Pennock and J. E. Shigley",
       "title": "Theory of Machines and Mechanisms",
       "publisher": "Oxford University Press, 5th edition",
       "year": 2017
     },
     {
-      "author": "A. G. Erdman, G. N. Sandor and S. Kota",
+      "authors": "A. G. Erdman, G. N. Sandor and S. Kota",
       "title": "Mechanism Design: An Analysis and Synthesis",
       "publisher": "Prentice Hall, 4th edition",
       "year": 2001
     },
     {
-      "author": "R. L. Norton",
+      "authors": "R. L. Norton",
       "title": "Design of Machinery: An Introduction to the Synthesis and Analysis of Mechanisms and Machines",
       "publisher": "McGraw-Hill, 6th edition",
       "year": 2020
     },
     {
-      "author": "F. L. Litvin and A. Fuentes",
+      "authors": "F. L. Litvin and A. Fuentes",
       "title": "Gear Geometry and Applied Theory",
       "publisher": "Cambridge University Press, 2nd edition",
       "year": 2004
     },
     {
-      "author": "I. I. Artobolevsky",
+      "authors": "I. I. Artobolevsky",
       "title": "Mechanisms in Modern Engineering Design, vols. I–V",
       "publisher": "Mir Publishers (trans. N. Weinstein)",
       "year": 1975

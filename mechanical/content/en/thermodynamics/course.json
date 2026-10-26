@@ -136,37 +136,37 @@
   "references": [
     {
       "title": "Thermodynamics: An Engineering Approach",
-      "author": "Yunus A. Cengel and Michael A. Boles",
+      "authors": "Yunus A. Cengel and Michael A. Boles",
       "year": 2019,
       "url": ""
     },
     {
       "title": "Fundamentals of Engineering Thermodynamics",
-      "author": "M. J. Moran, H. N. Shapiro, D. D. Boettner and M. B. Bailey",
+      "authors": "M. J. Moran, H. N. Shapiro, D. D. Boettner and M. B. Bailey",
       "year": 2018,
       "url": ""
     },
     {
       "title": "IAPWS-IF97: Revised Release on the Industrial Formulation 1997 for the Thermodynamic Properties of Water and Steam",
-      "author": "IAPWS",
+      "authors": "IAPWS",
       "year": 2007,
       "url": "http://www.iapws.org/relguide/IF97-Rev.html"
     },
     {
       "title": "Properties of Gases and Liquids",
-      "author": "Bruce E. Poling, John M. Prausnitz and John P. O'Connell",
+      "authors": "Bruce E. Poling, John M. Prausnitz and John P. O'Connell",
       "year": 2001,
       "url": ""
     },
     {
       "title": "Refrigeration and Air Conditioning",
-      "author": "C. P. Arora",
+      "authors": "C. P. Arora",
       "year": 2017,
       "url": ""
     },
     {
       "title": "NIST Chemistry WebBook: thermophysical properties of fluid systems",
-      "author": "NIST",
+      "authors": "NIST",
       "year": 2023,
       "url": "https://webbook.nist.gov/chemistry/fluid/"
     }

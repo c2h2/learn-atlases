@@ -164,49 +164,49 @@
   "references": [
     {
       "title": "Handbook of Regional Speech",
-      "author": "Yang Xiong",
+      "authors": "Yang Xiong",
       "year": -1,
       "note": "The earliest dialect word-list; read it as evidence that regional difference was already a scholarly object."
     },
     {
       "title": "Qieyun",
-      "author": "Lu Fayan",
+      "authors": "Lu Fayan",
       "year": 601,
       "note": "A compromise rhyme book explicitly above regional disagreement; the anchor of Middle Chinese."
     },
     {
       "title": "Studies on the Modern Wu Dialects",
-      "author": "Y. R. Chao",
+      "authors": "Y. R. Chao",
       "year": 1928,
       "note": "Field method, tone letters, and the first scientific description of a Chinese dialect group."
     },
     {
       "title": "Outline of Chinese Dialects",
-      "author": "Yuan Jiahua and others",
+      "authors": "Yuan Jiahua and others",
       "year": 1960,
       "note": "The standard overview of the regional systems and their diagnostics."
     },
     {
       "title": "Modern Chinese Dialects: A General Account",
-      "author": "Hou Jingyi",
+      "authors": "Hou Jingyi",
       "year": 2002,
       "note": "A consolidated survey by the editor of the major dialect reference series."
     },
     {
       "title": "Language Atlas of China",
-      "author": "Chinese Academy of Social Sciences",
+      "authors": "Chinese Academy of Social Sciences",
       "year": 1987,
       "note": "The map everyone argues with; its second edition moved several boundaries."
     },
     {
       "title": "Law on the Standard Spoken and Written Chinese Language",
-      "author": "Standing Committee",
+      "authors": "Standing Committee",
       "year": 2000,
       "note": "The legal status of the standard language and the reserved domains of dialects."
     },
     {
       "title": "Table for the Review of Polyphonic Readings",
-      "author": "Language commission",
+      "authors": "Language commission",
       "year": 1985,
       "note": "Where standardisation meets pronunciation - and where the public argument still lives."
     }

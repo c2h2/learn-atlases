@@ -169,49 +169,49 @@
   ],
   "references": [
     {
-      "author": "J. L. Meriam, L. G. Kraige and J. N. Bolton",
+      "authors": "J. L. Meriam, L. G. Kraige and J. N. Bolton",
       "title": "Engineering Mechanics: Statics",
       "publisher": "Wiley, 9th edition",
       "year": 2019
     },
     {
-      "author": "F. P. Beer, E. R. Johnston, D. F. Mazurek and P. J. Cornwell",
+      "authors": "F. P. Beer, E. R. Johnston, D. F. Mazurek and P. J. Cornwell",
       "title": "Vector Mechanics for Engineers: Statics",
       "publisher": "McGraw-Hill, 13th edition",
       "year": 2022
     },
     {
-      "author": "R. C. Hibbeler",
+      "authors": "R. C. Hibbeler",
       "title": "Engineering Mechanics: Statics",
       "publisher": "Pearson, 15th edition",
       "year": 2022
     },
     {
-      "author": "Jacques Heyman",
+      "authors": "Jacques Heyman",
       "title": "The Stone Skeleton: Structural Engineering of Masonry Architecture",
       "publisher": "Cambridge University Press",
       "year": 1995
     },
     {
-      "author": "Karl Culmann",
+      "authors": "Karl Culmann",
       "title": "Die Graphische Statik",
       "publisher": "Meyer & Zeller, Zurich",
       "year": 1866
     },
     {
-      "author": "Stephen Timoshenko",
+      "authors": "Stephen Timoshenko",
       "title": "A History of the Strength of Materials",
       "publisher": "McGraw-Hill (Dover reprint 1983)",
       "year": 1953
     },
     {
-      "author": "A. P. French",
+      "authors": "A. P. French",
       "title": "Newtonian Mechanics",
       "publisher": "W. W. Norton",
       "year": 1971
     },
     {
-      "author": "J. E. Gordon",
+      "authors": "J. E. Gordon",
       "title": "Structures: Or Why Things Don't Fall Down",
       "publisher": "Penguin",
       "year": 1978

@@ -153,49 +153,49 @@
   "references": [
     {
       "title": "Wenxin diaolong, chapter on documents and letters",
-      "author": "Liu Xie",
+      "authors": "Liu Xie",
       "year": 501,
       "note": "The earliest sustained Chinese discussion of practical genres, and a warning that style follows function."
     },
     {
       "title": "Xiuci xue fanli",
-      "author": "Chen Wangdao",
+      "authors": "Chen Wangdao",
       "year": 1932,
       "note": "The standard Chinese treatment of register: style as appropriateness to scene and purpose."
     },
     {
       "title": "Wenxin",
-      "author": "Xia Mijun, Ye Shengtao",
+      "authors": "Xia Mijun, Ye Shengtao",
       "year": 1934,
       "note": "Stories teaching composition, including practical writing, to secondary students."
     },
     {
       "title": "The Elements of Style",
-      "author": "William Strunk Jr.",
+      "authors": "William Strunk Jr.",
       "year": 1918,
       "note": "A small handbook of economy in English prose; influential far beyond its merits."
     },
     {
       "title": "The Art of Readable Writing",
-      "author": "Rudolf Flesch",
+      "authors": "Rudolf Flesch",
       "year": 1946,
       "note": "Readability as measurement: the origin of formulas that turn style into a score."
     },
     {
       "title": "Regulations on the handling of official documents of party and government organs",
-      "author": "General offices",
+      "authors": "General offices",
       "year": 2012,
       "note": "The operative rule set: definitions, functions and the fifteen document types."
     },
     {
       "title": "Format of official documents of party and government organs (GB/T 9704-2012)",
-      "author": "Standardisers",
+      "authors": "Standardisers",
       "year": 2012,
       "note": "Layout: zones, elements, fonts, dates, seals and page numbering."
     },
     {
       "title": "Code of professional ethics for journalists",
-      "author": "Journalists' association",
+      "authors": "Journalists' association",
       "year": 1991,
       "note": "Revised repeatedly; the reference point for source attribution and correction."
     }

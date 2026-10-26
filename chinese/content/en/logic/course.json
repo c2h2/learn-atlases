@@ -157,49 +157,49 @@
   "references": [
     {
       "title": "Prior Analytics",
-      "author": "Aristotle",
+      "authors": "Aristotle",
       "year": -340,
       "note": "The founding analysis of deductive inference."
     },
     {
       "title": "Mozi, Canon and Explains (Xiao Qu, Da Qu)",
-      "author": "Later Mohists",
+      "authors": "Later Mohists",
       "year": -300,
       "note": "The Chinese classical corpus of disputation."
     },
     {
       "title": "The Laws of Thought",
-      "author": "George Boole",
+      "authors": "George Boole",
       "year": 1854,
       "note": "Logic as algebra; classes and calculation."
     },
     {
       "title": "Begriffsschrift",
-      "author": "Gottlob Frege",
+      "authors": "Gottlob Frege",
       "year": 1879,
       "note": "Quantification and the modern proof language."
     },
     {
       "title": "Introduction to Logic",
-      "author": "Irving M. Copi",
+      "authors": "Irving M. Copi",
       "year": 1953,
       "note": "The twentieth-century standard course textbook."
     },
     {
       "title": "《逻辑哲学》",
-      "author": "金岳霖",
+      "authors": "金岳霖",
       "year": 1937,
       "note": "Reads ming-bian and the Mohist Canon comparatively; the Chinese classic of logic philosophy."
     },
     {
       "title": "New Logic (Xin Lixue)",
-      "author": "Yan Fu",
+      "authors": "Yan Fu",
       "year": 1908,
       "note": "Jevons via Yan Fu: the textbook that taught Republican China to reason."
     },
     {
       "title": "Traité de l'argumentation (The New Rhetoric)",
-      "author": "Perelman & Olbrechts-Tyteca",
+      "authors": "Perelman & Olbrechts-Tyteca",
       "year": 1958,
       "note": "Argumentation restored to the domain of the probable."
     }

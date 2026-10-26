@@ -162,49 +162,49 @@
   "references": [
     {
       "title": "《过秦论》",
-      "author": "贾谊",
+      "authors": "贾谊",
       "year": -200,
       "note": "The classic of the momentum essay."
     },
     {
       "title": "《师说》《原道》",
-      "author": "韩愈",
+      "authors": "韩愈",
       "year": 800,
       "note": "Single-thesis circling: the yuan-style essay."
     },
     {
       "title": "《嘉祐集》几策",
-      "author": "苏洵",
+      "authors": "苏洵",
       "year": 1060,
       "note": "Strategy essays: angle, concession, escalation."
     },
     {
       "title": "《新民说》",
-      "author": "梁启超",
+      "authors": "梁启超",
       "year": 1902,
       "note": "The new prose and its periodical audience."
     },
     {
       "title": "《文心雕龙·论说》",
-      "author": "刘勰",
+      "authors": "刘勰",
       "year": 501,
       "note": "Liu Xie's legislation of the lun genre."
     },
     {
       "title": "The Uses of Argument",
-      "author": "Stephen E. Toulmin",
+      "authors": "Stephen E. Toulmin",
       "year": 1958,
       "note": "Argument laid out for working writers."
     },
     {
       "title": "They Say / I Say",
-      "author": "Graff & Birkenstein",
+      "authors": "Graff & Birkenstein",
       "year": 2004,
       "note": "Templates for entering a conversation."
     },
     {
       "title": "《高考语文科考试说明》",
-      "author": "考试中心",
+      "authors": "考试中心",
       "year": 1999,
       "note": "How the exam defines what counts as an argument."
     }
