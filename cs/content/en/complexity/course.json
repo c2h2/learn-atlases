@@ -7,12 +7,26 @@
   "order": 130,
   "tagline": "Time complexity, P and NP, NP-completeness, coping with intractability, space complexity, the polynomial hierarchy, randomised computation and the PCP theorem",
   "summary": "Complexity theory asks which problems can be solved efficiently, and gives strong evidence that many cannot. This course defines time and space complexity classes, develops the theory of NP-completeness through polynomial-time reductions, surveys ways of coping with intractable problems, and studies space-bounded, randomised and approximate computation, ending with the PCP theorem and the hardness of approximation.",
-  "overview": [],
+  "overview": [
+    "Some computational problems can be solved quickly, and others seem to resist every efficient algorithm anyone has found. Complexity theory turns this observation into mathematics. It measures the time and space a Turing machine needs as a function of the input size, groups problems into classes such as P, NP and PSPACE, and compares problems by efficient reductions. Its central question, whether P equals NP — whether every problem whose solutions can be checked quickly can also be solved quickly — is open as of 2026 and is one of the most important unsolved problems in mathematics. Even without an answer, the theory gives strong evidence that thousands of practical problems are intractable, and tells the algorithm designer when to stop looking for an exact polynomial-time algorithm.",
+    "The course begins with time complexity and the robustness of polynomial time, the class NP defined by verifiers and by nondeterministic machines, and coNP. It proves the Cook–Levin theorem from a tableau of configurations and builds a catalogue of NP-complete problems — independent set, clique, vertex cover, Hamiltonian path, subset sum, 3-colouring — with every gadget reduction checked by brute force. It then turns to coping with intractability: 2-SAT and other polynomial special cases, exact exponential algorithms such as Held–Karp, fixed-parameter tractability and kernelisation, DPLL and modern SAT solvers, and the limits of resolution. The second half studies space complexity (Savitch's theorem, the PSPACE-completeness of TQBF, NL and the Immerman–Szelepcsényi theorem), the time and space hierarchy theorems and the limits of diagonalisation (Baker–Gill–Solovay), the polynomial hierarchy, randomised classes (BPP, RP, ZPP, amplification by Chernoff bounds, Adleman's and Sipser–Gács–Lautemann's theorems, and derandomisation), and finally approximation algorithms and the PCP theorem with the inapproximability results it implies.",
+    "Every theorem is proved, at the level of Sipser and Arora–Barak, except for a few deep results (the PCP theorem, Impagliazzo–Wigderson, Haken's resolution lower bound) whose statements are given with references. Worked examples are computed by short Python programs whose real output is shown, and each lesson ends with exercises with full solutions. The course assumes the Turing machines, decidability and mapping reductions of theory-of-computation and the algorithm design and analysis of the algorithms course."
+  ],
   "prerequisites": [
     "algorithms",
     "theory-of-computation"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define time and space complexity on deterministic and nondeterministic Turing machines, explain why polynomial time is robust across reasonable models and encodings, and prove problems such as PATH and RELPRIME to be in P.",
+    "Define NP by polynomial-time verifiers and by nondeterministic machines, prove the two definitions equivalent, and explain coNP, search-to-decision self-reducibility and the relationships P ⊆ NP ⊆ EXP.",
+    "Construct polynomial-time reductions, prove the Cook–Levin theorem, and prove NP-completeness of 3SAT, independent set, clique, vertex cover, Hamiltonian path, subset sum and 3-colouring, distinguishing weak from strong NP-completeness.",
+    "Choose and analyse approaches to NP-hard problems: polynomial special cases such as 2-SAT, exact exponential algorithms, branching and kernelisation for fixed-parameter tractability, DPLL-style SAT solving and randomised local search.",
+    "Prove Savitch's theorem, the PSPACE-completeness of TQBF, the NL-completeness of PATH and the Immerman–Szelepcsényi theorem, using log-space reductions.",
+    "Prove the time and space hierarchy theorems by diagonalisation, explain via oracles why diagonalisation alone cannot settle P versus NP, and define the polynomial hierarchy and its collapse properties.",
+    "Define BPP, RP, coRP and ZPP, prove amplification with a Chernoff bound, ZPP = RP ∩ coRP, BPP ⊆ P/poly and BPP ⊆ Σ2 ∩ Π2, and use the Schwartz–Zippel lemma for polynomial identity testing.",
+    "Design and prove approximation guarantees for vertex cover, set cover, metric TSP and MAX-3SAT, prove the inapproximability of general TSP, and explain the PCP theorem and its equivalence with hardness of approximation.",
+    "State accurately which central questions — P versus NP, NP versus coNP, P versus PSPACE, P versus BPP, the Unique Games Conjecture — are open as of 2026, and what evidence bears on them."
+  ],
   "chapters": [
     {
       "slug": "time-complexity",
@@ -89,8 +103,149 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1965,
+      "title": "Time complexity and the hierarchy theorem",
+      "detail": "Juris Hartmanis and Richard Stearns's 'On the computational complexity of algorithms' defined complexity classes by Turing-machine running time and proved the first time hierarchy theorem; the same year Jack Edmonds and Alan Cobham argued that polynomial time captures efficient computation.",
+      "people": [
+        "Juris Hartmanis",
+        "Richard Stearns",
+        "Jack Edmonds",
+        "Alan Cobham"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Savitch's theorem",
+      "detail": "Walter Savitch proved that nondeterministic space s(n) can be simulated deterministically in space s(n)², so PSPACE = NPSPACE.",
+      "people": [
+        "Walter Savitch"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "The Cook–Levin theorem",
+      "detail": "Stephen Cook's 'The complexity of theorem-proving procedures' proved that satisfiability is NP-complete; Leonid Levin independently obtained the same result for search problems in the Soviet Union (published 1973).",
+      "people": [
+        "Stephen Cook",
+        "Leonid Levin"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "Karp's 21 NP-complete problems",
+      "detail": "Richard Karp's 'Reducibility among combinatorial problems' showed that 21 classic problems, including clique, vertex cover, Hamiltonian cycle, knapsack and graph colouring, are NP-complete, making NP-completeness a central tool of algorithm design.",
+      "people": [
+        "Richard Karp"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "Relativisation",
+      "detail": "Theodore Baker, John Gill and Robert Solovay constructed oracles relative to which P = NP and others relative to which P ≠ NP, showing that diagonalisation alone cannot settle the question.",
+      "people": [
+        "Theodore Baker",
+        "John Gill",
+        "Robert Solovay"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "Probabilistic complexity classes",
+      "detail": "John Gill defined probabilistic Turing machines and the classes BPP, RP, ZPP and PP; the same year Solovay and Strassen published their randomised primality test.",
+      "people": [
+        "John Gill",
+        "Robert Solovay",
+        "Volker Strassen"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Garey and Johnson's guide",
+      "detail": "Michael Garey and David Johnson's Computers and Intractability gave a systematic account of NP-completeness and a catalogue of over 300 NP-complete problems.",
+      "people": [
+        "Michael Garey",
+        "David Johnson"
+      ]
+    },
+    {
+      "year": 1987,
+      "title": "Nondeterministic space is closed under complement",
+      "detail": "Róbert Szelepcsényi (1987) and Neil Immerman (1988) independently proved NL = coNL by inductive counting, answering a question open since the 1960s.",
+      "people": [
+        "Neil Immerman",
+        "Róbert Szelepcsényi"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "The PCP theorem",
+      "detail": "Sanjeev Arora and Shmuel Safra, and Arora, Lund, Motwani, Sudan and Szegedy, proved that NP = PCP(log n, 1), revealing that approximating many optimisation problems is NP-hard; the same year IP = PSPACE was proved by Lund, Fortnow, Karloff, Nisan and Shamir.",
+      "people": [
+        "Sanjeev Arora",
+        "Shmuel Safra",
+        "Carsten Lund",
+        "Rajeev Motwani",
+        "Madhu Sudan",
+        "Mario Szegedy"
+      ]
+    },
+    {
+      "year": 2002,
+      "title": "Primality in P",
+      "detail": "Manindra Agrawal, Neeraj Kayal and Nitin Saxena gave a deterministic polynomial-time primality test, derandomising the flagship problem of randomised complexity.",
+      "people": [
+        "Manindra Agrawal",
+        "Neeraj Kayal",
+        "Nitin Saxena"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to the Theory of Computation",
+      "authors": "Michael Sipser",
+      "year": 2012,
+      "note": "Third edition. Part Three (time and space complexity, intractability, advanced topics) is the main source for this course's first seven lessons and its level of rigour."
+    },
+    {
+      "title": "Computational Complexity: A Modern Approach",
+      "authors": "Sanjeev Arora and Boaz Barak",
+      "year": 2009,
+      "note": "The standard graduate text: randomised computation, circuits, interactive proofs, the PCP theorem (with Dinur's proof), derandomisation and hardness of approximation."
+    },
+    {
+      "title": "Computational Complexity",
+      "authors": "Christos Papadimitriou",
+      "year": 1994,
+      "note": "A classic graduate text with a strong treatment of reductions, the polynomial hierarchy, oracles and complete problems for many classes."
+    },
+    {
+      "title": "Computers and Intractability: A Guide to the Theory of NP-Completeness",
+      "authors": "Michael Garey and David Johnson",
+      "year": 1979,
+      "note": "The classic guide to proving NP-completeness, with an appendix cataloguing hundreds of NP-complete problems; still the first place to look up a problem's status."
+    },
+    {
+      "title": "Computational Complexity: A Conceptual Perspective",
+      "authors": "Oded Goldreich",
+      "year": 2008,
+      "note": "A carefully motivated graduate text emphasising search problems, randomness, pseudorandomness and the conceptual meaning of the main results."
+    },
+    {
+      "title": "The Design of Approximation Algorithms",
+      "authors": "David Williamson and David Shmoys",
+      "year": 2011,
+      "note": "Freely available online. Approximation algorithms from greedy and local search to LP rounding, primal–dual methods and semidefinite programming, with a chapter on hardness of approximation."
+    },
+    {
+      "title": "Parameterized Algorithms",
+      "authors": "Marek Cygan, Fedor Fomin, Łukasz Kowalik, Daniel Lokshtanov, Dániel Marx, Marcin Pilipczuk, Michał Pilipczuk and Saket Saurabh",
+      "year": 2015,
+      "note": "Freely available online. The modern text on fixed-parameter tractability: branching, kernelisation and parameterised hardness."
+    }
+  ],
   "next": [
     "cryptography",
     "quantum-computing"
