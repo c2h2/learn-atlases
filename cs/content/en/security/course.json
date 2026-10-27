@@ -7,12 +7,26 @@
   "order": 150,
   "tagline": "Threat models, authentication, access control, memory safety, web and network security, malware, privacy and secure development",
   "summary": "Security is about keeping systems working as intended when someone is trying to make them fail. This course teaches how attacks work at a conceptual level and, above all, how systems defend against them: threat modelling, authentication and access control, memory-safety vulnerabilities and their mitigations, web and network security, malware and intrusion detection, privacy, and secure software development. Attacks are explained only as far as is needed to understand the defences.",
-  "overview": [],
+  "overview": [
+    "Computer security is about keeping systems working as intended when someone is trying to make them fail. Reliability engineering asks what happens when components fail at random; security asks what happens when an intelligent adversary chooses the failure, and the answer changes how systems must be designed, built and run. This course teaches the defender's view: how to state what must be protected and against whom, which mechanisms enforce such policies, why they fail, and how failures are detected, contained and prevented from recurring. Attacks are explained only conceptually and always together with their defences; every program in the course is a small toy run on the reader's own machine.",
+    "The course starts with principles: confidentiality, integrity and availability, policies and mechanisms, threat models, attack trees and STRIDE, risk, and the Saltzer–Schroeder design principles with a quantitative look at defence in depth. It then follows a request through a system. Authentication covers password guessing and storage with bcrypt, scrypt and Argon2, one-time passwords, phishing-resistant public-key login and single sign-on. Access control covers the access-control matrix, Unix permissions, the reference monitor and time-of-check-to-time-of-use races, the undecidability of safety, Bell–LaPadula, Biba and role-based access control, capabilities and sandboxing. Later chapters treat memory-safety vulnerabilities and their mitigations, web security, network defence (firewalls, segmentation and zero trust, secure channels, intrusion detection and the base-rate problem), malware and incident response, privacy (tracking, anonymity, de-identification and differential privacy), and secure software development (taint analysis, fuzzing, the supply chain and coordinated disclosure).",
+    "What makes security hard is that it is a property of the whole system against every adversary within the threat model, including ones nobody has thought of yet, while a single overlooked path — a missing check, a reused credential, an unpatched library — can be enough to lose. The way to learn it is to ask the same questions everywhere: what is the trusted computing base, where does untrusted input enter, what is the cheapest attack, and which design would remove the whole class of problem rather than one instance. The prerequisites are operating systems and networks; the cryptography used throughout is developed in the cryptography course, and readers should test only systems they own or are authorised to test."
+  ],
   "prerequisites": [
     "operating-systems",
     "networks"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain confidentiality, integrity and availability, distinguish policies from mechanisms, and write a threat model naming assets, adversaries, capabilities and the trusted computing base.",
+    "Analyse a system with attack trees, STRIDE and simple risk estimates, and apply the Saltzer–Schroeder principles and defence in depth, including the effect of common-mode failures.",
+    "Design password storage with salted, memory-hard functions, compute guessing and hashing costs, implement HOTP/TOTP from the standard, and explain why origin-bound public-key authentication resists phishing.",
+    "Model access control with the access-control matrix, ACLs, capabilities, Bell–LaPadula, Biba and RBAC, prove the basic security theorem and the undecidability of the safety problem, and recognise TOCTOU races and confused deputies.",
+    "Explain memory-safety and web vulnerability classes conceptually and choose the mitigations that remove or contain them, from memory-safe languages and sandboxing to parameterised queries and output encoding.",
+    "Configure and analyse first-match firewall policies, explain segmentation, zero trust, VPNs and secure channels, and quantify reflection attacks and the base-rate limits of intrusion detection.",
+    "Describe kinds of malicious software and the incident-response life cycle of preparation, detection, containment, eradication, recovery and lessons learnt.",
+    "Measure identifiability in bits, explain why de-identification and k-anonymity fail, and prove and apply the Laplace mechanism, composition and randomised response of differential privacy.",
+    "Integrate security into development with threat-model-driven design, taint analysis, fuzzing, supply-chain controls and coordinated vulnerability disclosure, and explain the limits of each."
+  ],
   "chapters": [
     {
       "slug": "security-principles",
@@ -90,8 +104,132 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1972,
+      "title": "The reference monitor",
+      "detail": "James P. Anderson's Computer Security Technology Planning Study for the US Air Force defined the reference monitor: always invoked, tamperproof and verifiable.",
+      "people": [
+        "James P. Anderson"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "Bell–LaPadula model",
+      "detail": "David Bell and Leonard LaPadula at MITRE formalised military confidentiality with the simple security property and the *-property, developed further up to 1976.",
+      "people": [
+        "David Bell",
+        "Leonard LaPadula"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "Saltzer and Schroeder's design principles",
+      "detail": "'The protection of information in computer systems' (Proceedings of the IEEE) set out economy of mechanism, fail-safe defaults, complete mediation, open design, separation of privilege, least privilege, least common mechanism and psychological acceptability.",
+      "people": [
+        "Jerome Saltzer",
+        "Michael Schroeder"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Safety is undecidable",
+      "detail": "Harrison, Ruzzo and Ullman's 'Protection in operating systems' proved that whether a general access-control system can leak a right is undecidable.",
+      "people": [
+        "Michael Harrison",
+        "Walter Ruzzo",
+        "Jeffrey Ullman"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Salted password hashing",
+      "detail": "Robert Morris and Ken Thompson's 'Password security: a case history' described Unix's salted, deliberately slow password hashing.",
+      "people": [
+        "Robert Morris",
+        "Ken Thompson"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "Reflections on trusting trust",
+      "detail": "Ken Thompson's Turing Award lecture showed that a compiler can insert and perpetuate a backdoor invisible in all source code.",
+      "people": [
+        "Ken Thompson"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "The Morris worm",
+      "detail": "A self-propagating program exploiting a buffer overflow in fingerd, weak passwords and sendmail's debug mode disrupted thousands of internet hosts and led to the first CERT.",
+      "people": [
+        "Robert Tappan Morris"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "Fuzz testing",
+      "detail": "Barton Miller and colleagues showed that random input crashed a large fraction of Unix utilities, founding fuzz testing.",
+      "people": [
+        "Barton Miller"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "Differential privacy",
+      "detail": "Cynthia Dwork, Frank McSherry, Kobbi Nissim and Adam Smith defined differential privacy and the Laplace mechanism.",
+      "people": [
+        "Cynthia Dwork",
+        "Frank McSherry",
+        "Kobbi Nissim",
+        "Adam Smith"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "Heartbleed",
+      "detail": "A missing bounds check in OpenSSL's heartbeat extension (CVE-2014-0160) let anyone read server memory, prompting new investment in critical open-source code.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Security Engineering: A Guide to Building Dependable Distributed Systems",
+      "authors": "Ross Anderson",
+      "year": 2020,
+      "note": "Third edition. The broadest book on security as a systems discipline — protocols, access control, usability, economics, network and software security — with many real case studies; the course's main companion."
+    },
+    {
+      "title": "Computer Security: Art and Science",
+      "authors": "Matt Bishop",
+      "year": 2018,
+      "note": "Second edition. The standard rigorous text on policies and models: the state-machine view, HRU and its undecidability, Bell–LaPadula, Biba, Clark–Wilson and assurance."
+    },
+    {
+      "title": "Security in Computing",
+      "authors": "Charles P. Pfleeger, Shari Lawrence Pfleeger and Lizzie Coles-Kemp",
+      "year": 2023,
+      "note": "Sixth edition. A readable undergraduate survey of threats, controls, programs, operating systems, networks, privacy and management."
+    },
+    {
+      "title": "Threat Modeling: Designing for Security",
+      "authors": "Adam Shostack",
+      "year": 2014,
+      "note": "The practical guide to threat modelling with data-flow diagrams, STRIDE and attack trees, by a designer of Microsoft's process."
+    },
+    {
+      "title": "The Algorithmic Foundations of Differential Privacy",
+      "authors": "Cynthia Dwork and Aaron Roth",
+      "year": 2014,
+      "note": "Freely available monograph; the standard introduction to differential privacy, its mechanisms and composition theorems."
+    },
+    {
+      "title": "The Fuzzing Book",
+      "authors": "Andreas Zeller, Rahul Gopinath, Marcel Böhme, Gordon Fraser and Christian Holler",
+      "year": 2024,
+      "note": "Free online textbook with runnable Python code on random, mutational, grammar-based and coverage-guided fuzzing; continuously updated."
+    }
+  ],
   "next": [
     "cryptography"
   ]
