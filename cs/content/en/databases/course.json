@@ -7,11 +7,26 @@
   "order": 90,
   "tagline": "The relational model, SQL, conceptual design, normalisation, storage and indexing, query processing and optimisation, transactions and recovery",
   "summary": "Databases store the data that organisations depend on and answer questions about it efficiently and reliably. This course covers the relational model and relational algebra, SQL, conceptual design and normalisation, and then how a database engine works inside: storage and indexing, query processing and optimisation, transactions and concurrency control, and crash recovery.",
-  "overview": [],
+  "overview": [
+    "A **database system** stores the data an organisation depends on — students and grades, accounts and payments, orders and stock — and answers questions about it quickly and correctly while many programs read and change it at once and machines fail. The relational approach, which has dominated since the 1980s, separates *what* the data means from *how* it is stored: data is modelled as tables, queries are written in a declarative language, SQL, and the system decides how to evaluate them. This course teaches both sides: how to model, constrain and query data, and how a database engine works inside to make those queries fast and those updates safe.",
+    "The first half is about the logical level. [[databases/relational-model]] defines relations, keys and the relational algebra, and proves what the algebra can and cannot express; [[databases/sql]] teaches SQL with its bag semantics, three-valued logic for nulls, aggregation, subqueries and recursive queries, with every query run in SQLite; [[databases/conceptual-design]] turns requirements into entity–relationship designs and tables; and [[databases/normalisation]] uses functional dependencies, Armstrong's axioms and the BCNF and 3NF decomposition algorithms, with proofs of losslessness and dependency preservation. The second half opens the engine: pages, buffer management and B+-tree and hash indexes ([[databases/storage-indexing]]), algorithms for sorting and joins with their I/O costs ([[databases/query-processing]]), cost-based optimisation with cardinality estimates and System R's dynamic programming ([[databases/query-optimisation]]), serialisability, two-phase locking, isolation levels and snapshot isolation ([[databases/transactions]]), and write-ahead logging and the ARIES recovery algorithm ([[databases/recovery]]).",
+    "What makes the subject hard is that small differences in meaning have large consequences: a `NOT IN` over a column with a null, a lossy decomposition, an unclustered index used for a large range, an isolation level that permits write skew. The way through is to be precise — state what a query, a constraint or a schedule means, then check it on a small instance by hand and by running it. Do the cost calculations with real numbers, trace the algorithms (closure, BCNF decomposition, external sorting, ARIES) step by step, and run the SQL and Python listings. The prerequisite is [[data-structures]], in particular balanced search trees and hash tables, together with the sets, relations and logic of [Maths Atlas](/learn/maths/)."
+  ],
   "prerequisites": [
     "data-structures"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define relations, keys and foreign keys, write queries in relational algebra, and prove algebraic equivalences and limits of expressiveness such as the monotonicity of difference-free queries.",
+    "Write correct SQL queries with joins, outer joins, aggregation, nested and recursive queries, and explain their results under bag semantics and three-valued logic, including the pitfalls of nulls.",
+    "Design an entity–relationship model from requirements, choosing cardinality and participation constraints, and translate it into relational schemas with keys and referential constraints.",
+    "Compute attribute closures, candidate keys and minimal covers, test normal forms, and decompose schemas into BCNF or 3NF with proofs of lossless join and dependency preservation.",
+    "Explain record and page layouts and buffer replacement, and calculate the height, size and I/O cost of B+-tree and hash indexes, including when an index is worse than a scan.",
+    "Analyse the I/O cost of external sorting and of nested-loop, index, sort-merge and hash joins, and choose an algorithm for given sizes and memory.",
+    "Apply equivalence rules and cardinality estimation to compare query plans, and carry out System R-style dynamic programming for join ordering.",
+    "Test schedules for conflict serialisability with precedence graphs, prove that two-phase locking guarantees it, and handle deadlocks and phantoms.",
+    "Distinguish the SQL isolation levels from the guarantees of real systems, and explain snapshot isolation, its write-skew anomaly and serializable snapshot isolation.",
+    "Explain write-ahead logging and checkpoints, and trace the analysis, redo and undo passes of ARIES, including compensation log records and repeated crashes."
+  ],
   "chapters": [
     {
       "slug": "relational-model",
@@ -86,8 +101,144 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1970,
+      "title": "The relational model",
+      "detail": "Edgar F. Codd's 'A relational model of data for large shared data banks' in Communications of the ACM proposed storing data as relations and querying it independently of its physical layout.",
+      "people": [
+        "Edgar F. Codd"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "B-trees",
+      "detail": "Rudolf Bayer and Edward McCreight published 'Organization and maintenance of large ordered indexes' in Acta Informatica, introducing the balanced multiway trees that, as B+-trees, became the standard database index.",
+      "people": [
+        "Rudolf Bayer",
+        "Edward McCreight"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "SEQUEL",
+      "detail": "Donald Chamberlin and Raymond Boyce described SEQUEL, the structured English query language for IBM's System R that became SQL.",
+      "people": [
+        "Donald D. Chamberlin",
+        "Raymond F. Boyce"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Serialisability and two-phase locking",
+      "detail": "Kapali Eswaran, Jim Gray, Raymond Lorie and Irving Traiger's 'The notions of consistency and predicate locks in a database system' defined serialisability, proved that two-phase locking ensures it, and identified phantoms.",
+      "people": [
+        "Kapali P. Eswaran",
+        "Jim Gray",
+        "Raymond A. Lorie",
+        "Irving L. Traiger"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "The entity–relationship model",
+      "detail": "Peter Chen's 'The entity-relationship model — toward a unified view of data' in ACM Transactions on Database Systems introduced ER modelling and its diagrams.",
+      "people": [
+        "Peter Pin-Shan Chen"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Cost-based query optimisation",
+      "detail": "Patricia Selinger and colleagues' 'Access path selection in a relational database management system' described System R's optimiser: statistics, selectivity estimates and dynamic programming over join orders.",
+      "people": [
+        "Patricia G. Selinger",
+        "Morton M. Astrahan",
+        "Donald D. Chamberlin",
+        "Raymond A. Lorie",
+        "Thomas G. Price"
+      ]
+    },
+    {
+      "year": 1986,
+      "title": "The SQL standard",
+      "detail": "ANSI published the first SQL standard (adopted by ISO in 1987); later revisions added explicit joins (SQL-92), recursive queries (SQL:1999) and window functions (SQL:2003).",
+      "people": []
+    },
+    {
+      "year": 1992,
+      "title": "ARIES",
+      "detail": "C. Mohan, Don Haderle, Bruce Lindsay, Hamid Pirahesh and Peter Schwarz published the ARIES recovery method in ACM Transactions on Database Systems: write-ahead logging, repeating history and compensation log records.",
+      "people": [
+        "C. Mohan",
+        "Don Haderle",
+        "Bruce Lindsay",
+        "Hamid Pirahesh",
+        "Peter Schwarz"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "A critique of the SQL isolation levels",
+      "detail": "Hal Berenson, Phil Bernstein, Jim Gray, Jim Melton, Elizabeth O'Neil and Patrick O'Neil showed that the ANSI isolation levels were ambiguous, and defined snapshot isolation and its write-skew anomaly.",
+      "people": [
+        "Hal Berenson",
+        "Philip A. Bernstein",
+        "Jim Gray",
+        "Jim Melton",
+        "Elizabeth O'Neil",
+        "Patrick O'Neil"
+      ]
+    },
+    {
+      "year": 2008,
+      "title": "Serializable snapshot isolation",
+      "detail": "Michael Cahill, Uwe Röhm and Alan Fekete showed how to make snapshot isolation serialisable by detecting dangerous read–write dependencies at run time; PostgreSQL adopted the method in version 9.1 (2011).",
+      "people": [
+        "Michael J. Cahill",
+        "Uwe Röhm",
+        "Alan D. Fekete"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Database System Concepts",
+      "authors": "Abraham Silberschatz, Henry F. Korth, S. Sudarshan",
+      "year": 2019,
+      "note": "Seventh edition. The most widely used comprehensive textbook: relational model, SQL, ER design and normalisation, storage, indexing, query processing and optimisation, transactions and recovery, with a running university example."
+    },
+    {
+      "title": "Database Management Systems",
+      "authors": "Raghu Ramakrishnan, Johannes Gehrke",
+      "year": 2003,
+      "note": "Third edition. Especially strong on the engine: the I/O cost model, external sorting, join algorithms, B+-trees and extendible hashing, and a clear chapter on ARIES."
+    },
+    {
+      "title": "Database Systems: The Complete Book",
+      "authors": "Hector Garcia-Molina, Jeffrey D. Ullman, Jennifer Widom",
+      "year": 2008,
+      "note": "Second edition. Rigorous on design theory (functional and multivalued dependencies, the chase), relational algebra and query compilation, and on logging, concurrency control and recovery."
+    },
+    {
+      "title": "Transaction Processing: Concepts and Techniques",
+      "authors": "Jim Gray, Andreas Reuter",
+      "year": 1992,
+      "note": "The classic treatise on transactions: locking, logging, recovery and the engineering of transaction-processing systems, by two of their architects."
+    },
+    {
+      "title": "Designing Data-Intensive Applications",
+      "authors": "Martin Kleppmann",
+      "year": 2017,
+      "note": "How databases are used and built in modern systems: storage engines (B-trees and LSM trees), replication, partitioning, isolation levels and anomalies such as write skew, and distributed consistency."
+    },
+    {
+      "title": "Foundations of Databases",
+      "authors": "Serge Abiteboul, Richard Hull, Victor Vianu",
+      "year": 1995,
+      "note": "The theory of the relational model: algebra and calculus, expressive power, recursion and Datalog, and dependency theory; for readers who want full proofs."
+    }
+  ],
   "next": [
     "distributed-systems",
     "information-retrieval"
