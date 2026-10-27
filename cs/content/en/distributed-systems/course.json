@@ -7,12 +7,28 @@
   "order": 200,
   "tagline": "Failure models, remote communication, time and clocks, replication and consistency, consensus, fault tolerance, distributed storage, distributed transactions and data processing",
   "summary": "Modern services run on many machines that fail independently and communicate over unreliable networks. This course covers the foundations of building such systems: models of failure and timing, remote communication, time and logical clocks, replication and consistency models, consensus with Paxos and Raft, fault tolerance, distributed storage and transactions, and large-scale data processing.",
-  "overview": [],
+  "overview": [
+    "A distributed system is a collection of computers that cooperate by exchanging messages over a network and fail independently. Almost every service in daily use — search, social networks, payments, cloud storage, online games — runs on such systems, because only many machines can provide the capacity, the geographic reach and, above all, the tolerance of failures that these services need. The price is that two things a single computer provides for free disappear: there is no shared memory, so each machine knows only what messages have told it, and there is no global clock, so machines cannot agree on what happened when. Failures are partial — some machines keep running while others have stopped, and no machine can be sure which.",
+    "The course builds the subject from its foundations. It starts with precise **system models** — crash, omission and Byzantine failures; synchronous, asynchronous and partially synchronous timing — and with remote communication, serialisation and the unknowable outcome of a request that timed out. It then studies time and order: clock synchronisation with NTP, Lamport and vector clocks with the happened-before relation, and consistent snapshots. Replication and the spectrum of consistency models follow, from linearisability to eventual consistency, with quorums, the CAP theorem in Gilbert and Lynch's precise form, and CRDTs. The centre of the course is **consensus**: the FLP impossibility theorem, Paxos and Raft with their safety proofs, and a Raft simulation run with message loss and crashes. Fault tolerance adds failure detectors, leases and fencing, and Byzantine agreement with its $n \\ge 3f+1$ bound and PBFT. The last three chapters turn to systems: partitioned storage with consistent hashing, Dynamo, Bigtable, Spanner and GFS; distributed transactions with two-phase commit, its blocking, Paxos Commit and Spanner's commit wait; and large-scale data processing with MapReduce, Spark and stream processors.",
+    "Every claim is made precise. Impossibility results — the two generals, FLP, CAP, the $3f+1$ bound — are proved with the indistinguishability arguments that run through the whole field, and protocols come with proofs of their safety properties. Small Python programs, run with fixed seeds so that their output can be reproduced, test the theory: a perfect link over a lossy channel, idempotent RPC with deduplication, vector clocks checked against the transitive closure of happened-before, a linearisability checker, CRDT convergence, Raft, the oral-messages algorithm, consistent hashing, two-phase commit at every crash point, and MapReduce with failures.",
+    "What makes distributed systems hard is that intuition from single machines is systematically wrong: a timeout says nothing certain, a clock reading cannot be compared with another machine's, a retried request may run twice, and a design that needs every machine to work is far less reliable than one machine. The way to learn the subject is to state the model, look for the two executions that a process cannot tell apart, and separate safety (nothing bad ever happens) from liveness (something good eventually happens) — practical protocols guarantee the first always and the second only when the network behaves."
+  ],
   "prerequisites": [
     "operating-systems",
     "networks"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Specify a distributed system model — link failures, process failures (crash, crash-recovery, omission, Byzantine) and timing assumptions — and identify which model a real failure belongs to.",
+    "Prove impossibility results such as the two generals, FLP, CAP and the n ≥ 3f + 1 bound for Byzantine agreement using indistinguishability arguments.",
+    "Design request–response protocols with timeouts, retries, backoff and deduplication so that non-idempotent operations take effect exactly once, and evolve serialisation formats compatibly.",
+    "Compute NTP offsets and error bounds, assign Lamport and vector timestamps, decide causality and concurrency between events, and record consistent snapshots with the Chandy–Lamport algorithm.",
+    "Define linearisability, sequential, causal and eventual consistency precisely, classify histories, and design quorum systems and CRDTs with proofs of intersection and convergence.",
+    "Explain and prove the safety of Paxos and Raft, implement and test a small Raft simulation, and analyse the conditions under which consensus makes progress.",
+    "Analyse failure detectors, leases and fencing tokens, compute availability and mean time to data loss, and apply the oral-messages algorithm and PBFT quorums to Byzantine faults.",
+    "Design partitioned, replicated storage with consistent hashing, virtual nodes, quorums, anti-entropy and erasure coding, and compare leaderless and leader-based architectures.",
+    "Implement two-phase commit, explain why it blocks and how Paxos Commit and Spanner's commit wait address blocking and external consistency, and use sagas where locking is impossible.",
+    "Express computations as MapReduce, dataflow and streaming jobs, reason about shuffles, stragglers, lineage, windows and watermarks, and explain how barrier snapshots give exactly-once state."
+  ],
   "chapters": [
     {
       "slug": "system-models",
@@ -89,7 +105,137 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1978,
+      "title": "Time, clocks and the ordering of events",
+      "detail": "Leslie Lamport defined the happened-before relation and logical clocks, used them to build a total order of events and a distributed mutual-exclusion algorithm, and sketched state-machine replication.",
+      "people": [
+        "Leslie Lamport"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "The Byzantine generals problem",
+      "detail": "Lamport, Shostak and Pease named agreement with arbitrarily faulty processes, proved that oral messages need more than three times as many processes as traitors, and gave the recursive oral-messages algorithm.",
+      "people": [
+        "Leslie Lamport",
+        "Robert Shostak",
+        "Marshall Pease"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "FLP impossibility",
+      "detail": "Fischer, Lynch and Paterson proved in the Journal of the ACM that no deterministic algorithm solves consensus in an asynchronous system if a single process may crash.",
+      "people": [
+        "Michael Fischer",
+        "Nancy Lynch",
+        "Michael Paterson"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "Distributed snapshots",
+      "detail": "Chandy and Lamport's marker algorithm recorded a consistent global state of a running system over FIFO channels, the basis of later checkpointing in stream processors.",
+      "people": [
+        "K. Mani Chandy",
+        "Leslie Lamport"
+      ]
+    },
+    {
+      "year": 1998,
+      "title": "Paxos published",
+      "detail": "Lamport's \"The part-time parliament\", submitted in 1989, appeared in ACM Transactions on Computer Systems; \"Paxos made simple\" (2001) restated the protocol plainly, and it became the basis of systems such as Chubby.",
+      "people": [
+        "Leslie Lamport"
+      ]
+    },
+    {
+      "year": 2002,
+      "title": "CAP theorem proved",
+      "detail": "Gilbert and Lynch turned Brewer's 2000 conjecture into a theorem: in an asynchronous network that may lose messages, a read/write register cannot be both linearisable and available.",
+      "people": [
+        "Seth Gilbert",
+        "Nancy Lynch",
+        "Eric Brewer"
+      ]
+    },
+    {
+      "year": 2004,
+      "title": "MapReduce",
+      "detail": "Dean and Ghemawat described Google's MapReduce at OSDI: map, shuffle and reduce over thousands of machines, with fault tolerance by deterministic re-execution and backup tasks for stragglers.",
+      "people": [
+        "Jeffrey Dean",
+        "Sanjay Ghemawat"
+      ]
+    },
+    {
+      "year": 2007,
+      "title": "Dynamo",
+      "detail": "DeCandia and colleagues described Amazon's always-writable key–value store, combining consistent hashing, sloppy quorums, hinted handoff, vector clocks and Merkle-tree anti-entropy.",
+      "people": [
+        "Giuseppe DeCandia",
+        "Werner Vogels"
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "Spanner and TrueTime",
+      "detail": "Corbett and colleagues presented Google's globally distributed database, whose TrueTime interval clocks and commit wait give externally consistent transactions across continents.",
+      "people": [
+        "James C. Corbett",
+        "Jeffrey Dean",
+        "Sanjay Ghemawat"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "Raft",
+      "detail": "Ongaro and Ousterhout presented Raft at USENIX ATC as an understandable alternative to Multi-Paxos, organised around a strong leader, randomised elections and a small set of checkable safety rules.",
+      "people": [
+        "Diego Ongaro",
+        "John Ousterhout"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Designing Data-Intensive Applications",
+      "authors": "Martin Kleppmann",
+      "year": 2017,
+      "note": "The best practical introduction: replication, partitioning, transactions, consistency, consensus and batch and stream processing, explained through real systems with a clear eye for trade-offs. Read alongside chapters 4–9."
+    },
+    {
+      "title": "Distributed Systems",
+      "authors": "Maarten van Steen and Andrew S. Tanenbaum",
+      "year": 2023,
+      "note": "4th edition (freely available from the authors). A broad textbook covering architectures, communication, naming, coordination, consistency, fault tolerance and security, with many examples."
+    },
+    {
+      "title": "Introduction to Reliable and Secure Distributed Programming",
+      "authors": "Christian Cachin, Rachid Guerraoui and Luís Rodrigues",
+      "year": 2011,
+      "note": "2nd edition. Precise abstractions — links, broadcast, registers, consensus — with algorithms in event-handler style and proofs, for crash and Byzantine failures; the source of this course's link models."
+    },
+    {
+      "title": "Distributed Algorithms",
+      "authors": "Nancy A. Lynch",
+      "year": 1996,
+      "note": "The rigorous reference for models and proofs: synchronous and asynchronous algorithms, impossibility results including FLP and the lower bounds on rounds, and the I/O automaton framework."
+    },
+    {
+      "title": "Distributed Computing: Fundamentals, Simulations, and Advanced Topics",
+      "authors": "Hagit Attiya and Jennifer Welch",
+      "year": 2004,
+      "note": "2nd edition. A theory text strong on simulations between models, shared registers, linearisability and the lower bounds behind consistency–latency trade-offs."
+    },
+    {
+      "title": "Concurrency Control and Recovery in Database Systems",
+      "authors": "Philip A. Bernstein, Vassos Hadzilacos and Nathan Goodman",
+      "year": 1987,
+      "note": "The classic treatment of serialisability, locking, multiversion concurrency control, recovery and atomic commitment, including two- and three-phase commit; freely available online."
+    }
+  ],
   "next": []
 }
