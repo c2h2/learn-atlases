@@ -7,12 +7,26 @@
   "order": 140,
   "tagline": "Parallel architectures, performance laws, shared-memory programming, memory consistency, concurrent data structures, parallel algorithms, GPUs, message passing and performance engineering",
   "summary": "Almost every processor is now parallel, from multicore laptops to GPUs and supercomputers, and using them well takes new ideas. This course covers parallel architectures and the laws that limit speed-up, shared-memory programming with threads and OpenMP, cache coherence, memory consistency and concurrent data structures, the design of parallel algorithms, GPU programming, message passing with MPI, and performance engineering.",
-  "overview": [],
+  "overview": [
+    "Every processor sold today is parallel. A laptop has several cores, each with vector units that operate on eight or sixteen numbers at once; a graphics processor runs tens of thousands of threads; a supercomputer joins thousands of such machines with a fast network. Since around 2005, when clock frequencies stopped rising, almost all growth in computing speed has come from parallelism — and parallelism, unlike a faster clock, does not speed up a program by itself. It has to be found in the problem, expressed in the program, and paid for in coordination and in memory traffic. This course is about doing that well, and about knowing in advance how well it can be done.",
+    "It begins with the machines and the limits on them: parallel architectures and Flynn's taxonomy, interconnection topologies, peak performance, and the performance laws — Amdahl, Gustafson, work and span with Brent's theorem, isoefficiency and the roofline model. Shared-memory programming with threads and OpenMP follows, with races, reductions, scheduling and work stealing; then the hardware underneath it, cache coherence with MESI, false sharing and the C11 memory model; and concurrent data structures — locks, compare-and-swap, the Treiber stack, the ABA problem, linearisability and the consensus hierarchy. The middle of the course is parallel algorithms in the work–span model: reductions, prefix sums, merging, sorting networks verified with the 0-1 principle, and graph algorithms. GPU programming with CUDA, message passing with MPI and its collective operations, and performance engineering — vectorisation, cache blocking, NUMA and scaling studies — complete it.",
+    "Theory and measurement go together throughout. Theorems are proved — Brent's bound, the hypercube's bisection width, lock-freedom of the Treiber stack, the cost of the ring allreduce, the cache misses of blocked matrix multiplication — and every program whose output is shown was compiled and run on a real two-socket, 36-core Haswell server or on a Tesla P4 GPU, with timings reported as observations: races that lose updates, false sharing that costs a factor of ten, a matrix multiplication that becomes 170 times faster, and scaling curves that stop where the memory bandwidth runs out."
+  ],
   "prerequisites": [
     "operating-systems",
     "algorithms"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe parallel architectures — multicore, SIMD, GPUs and clusters, shared and distributed memory, interconnection topologies — and compute a machine's peak floating-point rate and bisection bandwidth.",
+    "Apply Amdahl's and Gustafson's laws, the work–span model with Brent's theorem, isoefficiency and the roofline model to predict and explain the performance of parallel programs.",
+    "Write correct shared-memory programs with threads and OpenMP, recognising data races and choosing among critical sections, atomics, reductions, loop schedules and tasks.",
+    "Explain cache coherence with the MESI protocol, diagnose false sharing, and reason about memory orderings in the C11 memory model.",
+    "Design and analyse concurrent data structures using locks and compare-and-swap, prove linearisability and lock-freedom, and recognise the ABA problem.",
+    "Design parallel algorithms for reduction, prefix sums, merging, sorting and graph problems, analyse their work and span, and verify sorting networks with the 0-1 principle.",
+    "Program GPUs in CUDA, using the thread hierarchy, shared memory, coalesced access and occupancy to write efficient kernels.",
+    "Write message-passing programs, analyse point-to-point and collective communication in the α–β model, and choose domain decompositions that scale.",
+    "Measure and improve performance through careful timing, profiling, vectorisation, cache blocking and NUMA-aware data placement, and interpret strong- and weak-scaling studies."
+  ],
   "chapters": [
     {
       "slug": "parallel-architectures",
@@ -90,8 +104,136 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1966,
+      "title": "Flynn's taxonomy",
+      "detail": "Michael Flynn classified computers by their instruction and data streams — SISD, SIMD, MISD and MIMD — in 'Very high-speed computing systems', and refined the classification in 1972.",
+      "people": [
+        "Michael J. Flynn"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Amdahl's law",
+      "detail": "Gene Amdahl argued at the AFIPS Spring Joint Computer Conference that the sequential part of a program limits the speed-up any number of processors can deliver.",
+      "people": [
+        "Gene Amdahl"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "Sorting networks",
+      "detail": "Kenneth Batcher described the bitonic and odd–even merge sorting networks, of depth O(log² n), still used on GPUs and in hardware.",
+      "people": [
+        "Kenneth E. Batcher"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "Brent's theorem",
+      "detail": "Richard Brent showed, in the context of evaluating arithmetic expressions, that a computation of work W and depth D can be scheduled on p processors in time W/p + D.",
+      "people": [
+        "Richard P. Brent"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Sequential consistency",
+      "detail": "Leslie Lamport defined sequential consistency, the first precise memory model for multiprocessors.",
+      "people": [
+        "Leslie Lamport"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Gustafson's law",
+      "detail": "John Gustafson, reporting near-linear speed-ups on a 1024-processor hypercube at Sandia, argued that problem sizes grow with machines and introduced scaled speed-up.",
+      "people": [
+        "John L. Gustafson"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "Wait-free synchronisation",
+      "detail": "Maurice Herlihy introduced consensus numbers and proved that compare-and-swap is universal while reads, writes and test-and-set are not.",
+      "people": [
+        "Maurice Herlihy"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "MPI-1",
+      "detail": "The MPI Forum published the Message Passing Interface standard, which became the universal programming interface for distributed-memory supercomputers.",
+      "people": []
+    },
+    {
+      "year": 1997,
+      "title": "OpenMP",
+      "detail": "The OpenMP Architecture Review Board released OpenMP 1.0 for Fortran (C and C++ followed in 1998), standardising directive-based shared-memory programming.",
+      "people": []
+    },
+    {
+      "year": 2007,
+      "title": "CUDA",
+      "detail": "NVIDIA released CUDA, making graphics processors programmable as general-purpose parallel machines with a C-like language.",
+      "people": []
+    },
+    {
+      "year": 2009,
+      "title": "The roofline model",
+      "detail": "Samuel Williams, Andrew Waterman and David Patterson published the roofline model, bounding performance by peak arithmetic and memory bandwidth.",
+      "people": [
+        "Samuel Williams",
+        "Andrew Waterman",
+        "David Patterson"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Art of Multiprocessor Programming",
+      "authors": "Maurice Herlihy, Nir Shavit, Victor Luchangco and Michael Spear",
+      "year": 2020,
+      "note": "2nd edition. The standard text on the theory and practice of shared-memory synchronisation: linearisability, consensus, locks, lock-free data structures, transactional memory. Read with chapters 4 and 5."
+    },
+    {
+      "title": "Introduction to Parallel Computing",
+      "authors": "Ananth Grama, Anshul Gupta, George Karypis and Vipin Kumar",
+      "year": 2003,
+      "note": "2nd edition. A thorough textbook on architectures, performance metrics (including isoefficiency), communication operations, MPI and parallel algorithms for dense matrices, sorting and graphs. Read with chapters 1, 2, 6 and 8."
+    },
+    {
+      "title": "Structured Parallel Programming: Patterns for Efficient Computation",
+      "authors": "Michael McCool, Arch D. Robison and James Reinders",
+      "year": 2012,
+      "note": "Parallel patterns — map, reduce, scan, fork–join, pipeline — with the work–span model and examples in Cilk Plus and Threading Building Blocks. Read with chapters 3 and 6."
+    },
+    {
+      "title": "Computer Architecture: A Quantitative Approach",
+      "authors": "John L. Hennessy and David A. Patterson",
+      "year": 2017,
+      "note": "6th edition. Memory hierarchies, instruction-level parallelism, vector and GPU architectures, multiprocessors and coherence, warehouse-scale computers and domain-specific accelerators. Read with chapters 1, 4 and 9."
+    },
+    {
+      "title": "Programming Massively Parallel Processors: A Hands-on Approach",
+      "authors": "David B. Kirk, Wen-mei W. Hwu and Izzat El Hajj",
+      "year": 2022,
+      "note": "4th edition. The standard introduction to CUDA: the execution model, memory hierarchy, tiling, reductions, scans, sorting and performance considerations. Read with chapter 7."
+    },
+    {
+      "title": "Introduction to Algorithms",
+      "authors": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein",
+      "year": 2022,
+      "note": "4th edition. Its chapter on parallel algorithms presents fork–join parallelism, work, span, greedy scheduling and parallel merge sort. Read with chapters 2 and 6."
+    },
+    {
+      "title": "Using MPI: Portable Parallel Programming with the Message-Passing Interface",
+      "authors": "William Gropp, Ewing Lusk and Anthony Skjellum",
+      "year": 2014,
+      "note": "3rd edition. A practical guide to MPI by members of the MPI Forum, covering point-to-point and collective communication, communicators and performance. Read with chapter 8."
+    }
+  ],
   "next": [
     "distributed-systems"
   ]
