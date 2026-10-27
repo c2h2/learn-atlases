@@ -7,11 +7,27 @@
   "order": 160,
   "tagline": "Perfect secrecy, computational security, block ciphers, hash functions and MACs, number theory, public-key encryption, digital signatures, protocols and post-quantum cryptography",
   "summary": "Modern cryptography turns secrecy and authenticity into precise definitions with provable guarantees. This course develops symmetric encryption, block ciphers and modes of operation, hash functions and message authentication, the number theory behind public-key cryptography, key exchange, public-key encryption and digital signatures, secure protocols such as TLS, and the post-quantum schemes now being deployed.",
-  "overview": [],
+  "overview": [
+    "Cryptography is the science of protecting information against adversaries: keeping messages secret, detecting tampering, proving who sent them, and agreeing on keys with people you have never met — over networks that the adversary controls. For most of its history it was an art of clever designs that were trusted until someone broke them. Modern cryptography is different: every goal is turned into a precise definition, usually a game between a scheme and an efficient adversary, and every construction comes with a proof that breaking it would solve a problem believed to be hard. This course teaches that way of thinking together with the schemes that protect real systems, from AES-GCM and SHA-256 to the TLS 1.3 handshake and the post-quantum standards of 2024.",
+    "The first half is symmetric cryptography. It starts with classical ciphers and Shannon's perfect secrecy, proving that the one-time pad is perfectly secret and that no perfectly secret scheme can have short keys. Computational security, negligible advantage, pseudorandom generators, functions and permutations, and the reduction and hybrid techniques of proof follow; then block ciphers (Feistel networks, DES and AES), chosen-plaintext and chosen-ciphertext security and the modes ECB, CBC, CTR and GCM; and hash functions and MACs, with the birthday bound computed exactly, the Merkle–Damgård and sponge constructions, HMAC and the proof that encrypt-then-MAC is CCA-secure. The second half is public-key cryptography: the number theory it needs (extended Euclid, the Chinese remainder theorem, Fermat and Euler, Miller–Rabin, discrete logarithms and the Diffie–Hellman assumptions), key exchange and public-key encryption (Diffie–Hellman, ElGamal, RSA and why textbook RSA is insecure, OAEP, elliptic curves), digital signatures and certificates (hash-and-sign, Schnorr, ECDSA and the danger of nonce reuse), cryptographic protocols (authenticated key exchange and TLS 1.3, secret sharing, zero-knowledge proofs), and post-quantum cryptography (learning with errors, ML-KEM, ML-DSA and hash-based SLH-DSA).",
+    "Every scheme is worked through on toy parameters small enough to check by hand — a Feistel cipher on one byte, RSA with $N = 3233$, an elliptic curve with $19$ points — with every number computed by a short Python program whose real output is shown. These toys are for understanding only. The course says repeatedly, and means it, that real systems must use standard schemes through vetted libraries: cryptographic failures in practice almost never come from the mathematics, but from home-made designs, reused nonces, bad randomness, timing leaks and protocols that combine sound parts unsoundly. Attacks are taught conceptually and always together with the defences that stop them.",
+    "What makes cryptography hard is that security is a statement about all possible adversaries, including ones nobody has thought of yet. The way to learn it is to read definitions slowly, ask exactly what each game allows the adversary to do, and work through the reductions until the logic of 'an attacker on this would give an attacker on that' becomes natural. The prerequisites are the algorithms course and its probability (Maths Atlas covers number theory and groups for those who want more depth); no prior cryptography is assumed."
+  ],
   "prerequisites": [
     "algorithms"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define perfect secrecy, prove that the one-time pad achieves it and that any perfectly secret scheme needs keys as long as its messages, and explain how classical ciphers were broken.",
+    "State computational security definitions (EAV, CPA and CCA security, negligible advantage, PRGs, PRFs and PRPs) and prove the security of constructions by reductions and hybrid arguments.",
+    "Explain the design of Feistel and substitution–permutation block ciphers including DES and AES, and analyse the security of the modes ECB, CBC, CTR and GCM, including the consequences of IV and nonce misuse.",
+    "Compute birthday-bound collision probabilities exactly, prove the Merkle–Damgård theorem, explain length extension and the SHA-3 sponge, and prove that encrypt-then-MAC gives CCA-secure authenticated encryption.",
+    "Carry out the number-theoretic algorithms of public-key cryptography — extended Euclid, square-and-multiply, the Chinese remainder theorem and Miller–Rabin — and state the factoring, discrete-logarithm, CDH and DDH assumptions and their relationships.",
+    "Analyse Diffie–Hellman, ElGamal, RSA and elliptic-curve schemes on toy parameters, prove their correctness and security under the stated assumptions, and explain why textbook RSA is insecure and how OAEP repairs it.",
+    "Explain digital signatures, hash-and-sign, Schnorr signatures via Fiat–Shamir and ECDSA, derive why nonce reuse reveals a private key, and describe how certificates and public-key infrastructure bind keys to names.",
+    "Describe the goals and structure of authenticated key exchange and TLS 1.3, and prove the correctness and privacy of Shamir secret sharing and the soundness and zero knowledge of a zero-knowledge proof.",
+    "Explain which schemes quantum computers threaten, describe learning with errors and the 2024 NIST standards ML-KEM, ML-DSA and SLH-DSA, and evaluate migration strategies such as hybrid key exchange.",
+    "Recognise unsafe cryptographic practice — home-made schemes, reused nonces, weak randomness, unauthenticated encryption — and choose standard constructions from vetted libraries instead."
+  ],
   "chapters": [
     {
       "slug": "perfect-secrecy",
@@ -86,8 +102,131 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1883,
+      "title": "Kerckhoffs's principles",
+      "detail": "Auguste Kerckhoffs's La cryptographie militaire demanded that a cipher remain secure when everything except the key is known to the enemy.",
+      "people": [
+        "Auguste Kerckhoffs"
+      ]
+    },
+    {
+      "year": 1949,
+      "title": "Shannon's theory of secrecy systems",
+      "detail": "Claude Shannon's 'Communication theory of secrecy systems' defined perfect secrecy, proved the one-time pad perfectly secret and showed that perfect secrecy needs keys as long as the messages.",
+      "people": [
+        "Claude Shannon"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "New directions in cryptography",
+      "detail": "Whitfield Diffie and Martin Hellman introduced public-key cryptography and Diffie–Hellman key exchange; the Data Encryption Standard followed in 1977.",
+      "people": [
+        "Whitfield Diffie",
+        "Martin Hellman"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "RSA",
+      "detail": "Ron Rivest, Adi Shamir and Leonard Adleman published the first public-key encryption and signature scheme, based on the difficulty of factoring.",
+      "people": [
+        "Ron Rivest",
+        "Adi Shamir",
+        "Leonard Adleman"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "Probabilistic encryption",
+      "detail": "Shafi Goldwasser and Silvio Micali defined semantic security and gave the first provably secure public-key encryption, founding modern provable security.",
+      "people": [
+        "Shafi Goldwasser",
+        "Silvio Micali"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "ElGamal encryption and elliptic-curve cryptography",
+      "detail": "Taher ElGamal published discrete-logarithm encryption and signatures, and Neal Koblitz and Victor Miller independently proposed cryptography on elliptic curves.",
+      "people": [
+        "Taher ElGamal",
+        "Neal Koblitz",
+        "Victor Miller"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "Shor's algorithm",
+      "detail": "Peter Shor showed that a quantum computer could factor integers and compute discrete logarithms in polynomial time, threatening all deployed public-key cryptography.",
+      "people": [
+        "Peter Shor"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "AES",
+      "detail": "After an open competition, NIST published Rijndael by Joan Daemen and Vincent Rijmen as the Advanced Encryption Standard (FIPS 197).",
+      "people": [
+        "Joan Daemen",
+        "Vincent Rijmen"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "TLS 1.3",
+      "detail": "RFC 8446 standardised TLS 1.3, with forward-secret key exchange in every full handshake and only authenticated-encryption cipher suites.",
+      "people": [
+        "Eric Rescorla"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Post-quantum standards",
+      "detail": "NIST published FIPS 203 (ML-KEM), FIPS 204 (ML-DSA) and FIPS 205 (SLH-DSA), the first standards for public-key cryptography designed to resist quantum computers.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Modern Cryptography",
+      "authors": "Jonathan Katz and Yehuda Lindell",
+      "year": 2020,
+      "note": "Third edition. The standard undergraduate text on definitions and proofs — perfect secrecy, PRFs, CPA/CCA security, MACs, number theory, public-key encryption and signatures; the level this course follows."
+    },
+    {
+      "title": "A Graduate Course in Applied Cryptography",
+      "authors": "Dan Boneh and Victor Shoup",
+      "year": 2023,
+      "note": "Freely available online (version 0.6, 2023). Deeper and broader than Katz–Lindell, with concrete-security proofs, authenticated encryption, protocols and lattice-based cryptography."
+    },
+    {
+      "title": "Handbook of Applied Cryptography",
+      "authors": "Alfred J. Menezes, Paul C. van Oorschot and Scott A. Vanstone",
+      "year": 1996,
+      "note": "Freely available online. A comprehensive reference for algorithms — modular arithmetic, primality testing, block ciphers, hash functions, signatures — still valuable for implementation detail, though it predates AES and modern security definitions."
+    },
+    {
+      "title": "Serious Cryptography",
+      "authors": "Jean-Philippe Aumasson",
+      "year": 2024,
+      "note": "Second edition. A practical, readable introduction to how modern primitives and protocols work and how they fail in real systems, including post-quantum schemes."
+    },
+    {
+      "title": "Cryptography Engineering",
+      "authors": "Niels Ferguson, Bruce Schneier and Tadayoshi Kohno",
+      "year": 2010,
+      "note": "Design and implementation advice for building systems from cryptographic primitives: randomness, key management, protocols and the many ways implementations go wrong."
+    },
+    {
+      "title": "The Code Book",
+      "authors": "Simon Singh",
+      "year": 1999,
+      "note": "A popular history of cryptography from classical ciphers and Enigma to public-key cryptography; good background for the first chapter."
+    }
+  ],
   "next": [
     "quantum-computing"
   ]
