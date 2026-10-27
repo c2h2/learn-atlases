@@ -7,12 +7,28 @@
   "order": 210,
   "tagline": "Text processing, inverted indexes, compression, ranked retrieval, BM25, evaluation, web search and link analysis, learning to rank and dense retrieval",
   "summary": "Search engines find the handful of relevant documents among billions in a fraction of a second. This course explains how: text processing and inverted indexes, index construction and compression, ranked retrieval with the vector space model and BM25, the evaluation of search quality, web crawling and link analysis with PageRank, learning to rank, and the dense neural retrieval used alongside language models.",
-  "overview": [],
+  "overview": [
+    "A search engine answers a query of a few words by finding, among millions or billions of documents, the handful most likely to satisfy the person who typed it, in a fraction of a second. This course explains how. It begins with text itself: how documents are split into tokens and normalised, and the statistical regularities, Zipf's and Heaps' laws, that shape every index. It then builds the central data structure of the field, the inverted index, together with Boolean and phrase query processing, and shows how indexes are constructed at scale and compressed with variable-byte, Elias and Golomb codes.",
+    "The middle of the course is about ranking. The vector space model with tf–idf weighting and cosine similarity, the probabilistic models that lead to BM25, and the language-modelling approach with Dirichlet smoothing are derived from their assumptions, and efficient top-k algorithms such as WAND and MaxScore show how they are computed over large indexes. Because ranking quality cannot be proved, only measured, a full chapter treats evaluation: test collections and pooling, precision, recall, average precision and nDCG, and significance testing over queries.",
+    "The last three chapters move to the web and to learning. Web search adds crawling, robots exclusion, near-duplicate detection by MinHash and SimHash, and link analysis with PageRank and HITS. Learning to rank combines hundreds of features with pointwise, pairwise and listwise methods and learns from biased click data with inverse propensity weighting. Dense retrieval represents queries and documents as learned vectors and searches them with approximate nearest-neighbour indexes, the retrieval side of retrieval-augmented generation; the neural models themselves are covered in the LLM Atlas.",
+    "Every algorithm is implemented in plain Python on a small public-domain corpus or on seeded synthetic data, and the outputs shown are the outputs of those programs. Prerequisites are data structures and algorithms, elementary probability, and the indexing chapter of the databases course."
+  ],
   "prerequisites": [
     "databases",
     "algorithms"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain tokenisation, normalisation and stemming, and use Zipf's and Heaps' laws to estimate vocabulary and index sizes",
+    "Build an inverted index and process Boolean, phrase and wildcard queries with merge and galloping intersection",
+    "Construct indexes at scale with BSBI, SPIMI and logarithmic merging, and compress postings with gap encoding and variable-byte, gamma and Golomb codes",
+    "Derive and compute tf–idf cosine scores, BM25 and query-likelihood scores, and implement top-k retrieval with WAND and MaxScore",
+    "Evaluate a retrieval system with precision, recall, average precision and nDCG, and test differences between systems for significance",
+    "Describe the architecture of a web crawler and detect near-duplicates with MinHash and locality-sensitive hashing",
+    "Compute PageRank and HITS scores and prove the convergence of PageRank's power iteration",
+    "Train pairwise and listwise rankers and correct click data for position bias with inverse propensity weighting",
+    "Explain bi-encoder dense retrieval and contrastive training, and compare IVF, product quantisation and graph-based nearest-neighbour search by recall and cost",
+    "Combine lexical and dense retrieval with reciprocal rank fusion and cross-encoder re-ranking"
+  ],
   "chapters": [
     {
       "slug": "text-processing",
@@ -89,7 +105,138 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Statistical indexing",
+      "detail": "Hans Peter Luhn at IBM proposes that the frequency of words in a document indicates its subject, the starting point of automatic indexing and of term weighting.",
+      "people": [
+        "Hans Peter Luhn"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "The SMART system",
+      "detail": "Gerard Salton's SMART retrieval system at Cornell becomes the testbed for the vector space model, term weighting and relevance feedback; Salton, Wong and Yang's vector space paper follows in 1975.",
+      "people": [
+        "Gerard Salton"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "Inverse document frequency",
+      "detail": "Karen Spärck Jones shows that weighting terms by the inverse of the number of documents containing them improves retrieval, the idea now called idf.",
+      "people": [
+        "Karen Spärck Jones"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Probabilistic relevance weighting",
+      "detail": "Stephen Robertson and Karen Spärck Jones derive term weights from the probability of relevance, the foundation of the binary independence model and later of BM25.",
+      "people": [
+        "Stephen Robertson",
+        "Karen Spärck Jones"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "TREC",
+      "detail": "The US National Institute of Standards and Technology begins the Text REtrieval Conference, organised by Donna Harman, establishing large shared test collections and pooled relevance judgements.",
+      "people": [
+        "Donna Harman"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "Okapi BM25",
+      "detail": "Robertson, Walker and colleagues introduce BM25 at TREC-3, combining term-frequency saturation and document-length normalisation; it remains a standard baseline.",
+      "people": [
+        "Stephen Robertson",
+        "Steve Walker"
+      ]
+    },
+    {
+      "year": 1998,
+      "title": "PageRank and HITS",
+      "detail": "Sergey Brin and Lawrence Page describe the Google prototype and PageRank; Jon Kleinberg's HITS algorithm appears the same year (journal version 1999).",
+      "people": [
+        "Sergey Brin",
+        "Lawrence Page",
+        "Jon Kleinberg"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "Learning to rank",
+      "detail": "Chris Burges and colleagues introduce RankNet, followed by LambdaRank and LambdaMART, making machine-learned ranking standard in web search.",
+      "people": [
+        "Christopher Burges"
+      ]
+    },
+    {
+      "year": 2016,
+      "title": "Graph-based nearest-neighbour search",
+      "detail": "Yury Malkov and Dmitry Yashunin publish HNSW, which with product quantisation and FAISS makes search over billions of vectors practical.",
+      "people": [
+        "Yury Malkov",
+        "Dmitry Yashunin"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Dense retrieval and RAG",
+      "detail": "Dense Passage Retrieval, ColBERT and retrieval-augmented generation establish neural retrieval as a first-stage method and as the memory of language models.",
+      "people": [
+        "Vladimir Karpukhin",
+        "Omar Khattab",
+        "Patrick Lewis"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Information Retrieval",
+      "authors": "Christopher D. Manning, Prabhakar Raghavan and Hinrich Schütze",
+      "year": 2008,
+      "note": "The standard textbook; covers indexing, compression, ranking, evaluation and web search, freely available online from the authors."
+    },
+    {
+      "title": "Information Retrieval: Implementing and Evaluating Search Engines",
+      "authors": "Stefan Büttcher, Charles L. A. Clarke and Gordon V. Cormack",
+      "year": 2010,
+      "note": "Systems-oriented, with detailed treatment of index construction, compression, query processing and evaluation."
+    },
+    {
+      "title": "Search Engines: Information Retrieval in Practice",
+      "authors": "W. Bruce Croft, Donald Metzler and Trevor Strohman",
+      "year": 2010,
+      "note": "A practical introduction built around the architecture of a search engine."
+    },
+    {
+      "title": "Inverted files for text search engines",
+      "authors": "Justin Zobel and Alistair Moffat",
+      "year": 2006,
+      "note": "ACM Computing Surveys article on index construction, compression and query evaluation."
+    },
+    {
+      "title": "The Probabilistic Relevance Framework: BM25 and Beyond",
+      "authors": "Stephen Robertson and Hugo Zaragoza",
+      "year": 2009,
+      "note": "Foundations and Trends in Information Retrieval monograph deriving BM25 and its variants."
+    },
+    {
+      "title": "Learning to Rank for Information Retrieval",
+      "authors": "Tie-Yan Liu",
+      "year": 2009,
+      "note": "Survey organising learned ranking into pointwise, pairwise and listwise approaches."
+    },
+    {
+      "title": "Pretrained Transformers for Text Ranking: BERT and Beyond",
+      "authors": "Jimmy Lin, Rodrigo Nogueira and Andrew Yates",
+      "year": 2021,
+      "note": "Survey of neural re-ranking and dense retrieval."
+    }
+  ],
   "next": []
 }
