@@ -137,7 +137,7 @@ $k_h = 1.4\times10^{9} \times (2.0\times10^{-3})^2 \times (2/4.0\times10^{-4}) =
 
 With $\beta = 0.7\ \mathrm{GPa}$, $k_h$ halves and $\omega_h$ falls by $\sqrt2$, to $26.6\ \mathrm{Hz}$, and the bandwidth to about $9\ \mathrm{Hz}$.
 
-Sanity check: a stiffness of $28\ \mathrm{N/\mu m}$ is far higher than the oil-free compliance of a pneumatic cylinder of similar size (a few hundredths of this, see below), but comparable with that of a modest steel frame — so in a real machine the structure's compliance acts in series and must be included.
+Sanity check: a stiffness of $28\ \mathrm{N/\mu m}$ is far higher than the oil-free compliance of a pneumatic cylinder of similar size (of the order of a thousandth of this, see below), but comparable with that of a modest steel frame — so in a real machine the structure's compliance acts in series and must be included.
 :::
 :::
 
