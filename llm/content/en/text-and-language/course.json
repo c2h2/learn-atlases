@@ -169,7 +169,7 @@
       "title": "Speech and Language Processing",
       "authors": "Daniel Jurafsky and James H. Martin",
       "year": 2024,
-      "note": "The standard NLP textbook: n-grams, tokenisation, embeddings, classification and linguistic structure; the third-edition drafts are free online."
+      "note": "The standard NLP textbook: n-grams, tokenisation, embeddings, classification and linguistic structure. The third edition exists as free online drafts (the year given is that of the August 2024 draft; chapters are revised periodically)."
     },
     {
       "title": "Foundations of Statistical Natural Language Processing",
@@ -187,7 +187,7 @@
       "title": "An Empirical Study of Smoothing Techniques for Language Modeling",
       "authors": "Stanley F. Chen and Joshua Goodman",
       "year": 1998,
-      "note": "The careful comparison of n-gram smoothing methods that established Kneser–Ney as the best."
+      "note": "The careful comparison of n-gram smoothing methods that established (modified) Kneser–Ney as the best; Harvard technical report TR-10-98, with a journal version in Computer Speech and Language (1999)."
     },
     {
       "title": "Neural Network Methods for Natural Language Processing",
