@@ -7,11 +7,27 @@
   "order": 110,
   "tagline": "Syntax and semantics, the lambda calculus, interpreters, scope and binding, type systems, type inference, polymorphism, control and concurrency",
   "summary": "Programming languages are designed artefacts with precise meanings, and understanding their principles makes every language easier to learn and use well. This course studies syntax and semantics, the lambda calculus, writing interpreters, names, scope and binding, type systems and type inference, polymorphism, subtyping and modules, and control constructs from exceptions and continuations to concurrency.",
-  "overview": [],
+  "overview": [
+    "A programming language is a designed artefact with a precise meaning, and the principles behind its design — how programs are structured, what they mean, how names are resolved, what types guarantee and how control flows — are shared by almost every language in use. This course studies those principles directly, rather than surveying languages one by one. Its central method is to define small languages exactly, by grammars, inference rules and interpreters, and then to prove things about them: that evaluation is deterministic, that a well-typed program cannot get stuck, that type inference finds the most general type.",
+    "The course begins with abstract syntax and operational and denotational semantics, and with the lambda calculus as the core of functional programming: reduction, confluence, Church encodings and fixed points. It then builds interpreters in Python, first by substitution and then with environments and closures, and uses them to study scope, binding and parameter passing — static and dynamic scope, de Bruijn indices, call by value, reference, name and need — and the lifetime of storage, including Rust's ownership.",
+    "The second half turns to types: typing rules and type safety through progress and preservation, the simply typed lambda calculus and the Curry–Howard correspondence, unification and Hindley–Milner type inference with algorithm W, System F, subtyping and existential types for modules and abstraction. It ends with control and concurrency: exceptions, continuations and a trampolined CPS interpreter with call/cc, generators and coroutines, then interleavings, data races and memory models, locks and deadlock, channels, actors, futures and async–await, and Rust's compile-time exclusion of data races.",
+    "Every interpreter, type checker and inference algorithm in the lessons is short, runnable Python whose real output is shown, so that each definition can be tried and each theorem tested on examples. The course assumes program design and some comfort with induction; it prepares for compilers, formal verification and the research literature on programming languages."
+  ],
   "prerequisites": [
     "program-design"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define the abstract syntax of a small language and give it small-step, big-step and denotational semantics.",
+    "Prove properties of languages and programs by structural induction and by induction on derivations.",
+    "Reduce lambda-calculus terms under different strategies, encode data with Church encodings and explain confluence and fixed-point combinators.",
+    "Implement substitution-based and environment-based interpreters with closures and recursive bindings.",
+    "Distinguish static and dynamic scope and the parameter-passing mechanisms, and predict their effect on programs.",
+    "State and prove type safety via progress and preservation for simple typed languages.",
+    "Carry out unification and Hindley–Milner type inference by hand and in code, and explain principal types and let-polymorphism.",
+    "Explain parametric polymorphism, subtyping and existential types, including variance and the soundness pitfalls of covariant mutable arrays.",
+    "Write programs in continuation-passing style and implement exceptions, call/cc and generators in an interpreter.",
+    "Analyse concurrent programs for data races and deadlock, and compare shared-memory, message-passing, actor and async–await models."
+  ],
   "chapters": [
     {
       "slug": "syntax-semantics",
@@ -87,8 +103,137 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1936,
+      "title": "The lambda calculus",
+      "detail": "Alonzo Church's 'An unsolvable problem of elementary number theory' used the lambda calculus to define effective calculability; his simply typed version followed in 1940.",
+      "people": [
+        "Alonzo Church"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "LISP and the meta-circular evaluator",
+      "detail": "John McCarthy's 'Recursive functions of symbolic expressions and their computation by machine' defined LISP by an evaluator written in LISP itself.",
+      "people": [
+        "John McCarthy"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "The next 700 programming languages",
+      "detail": "Peter Landin's ISWIM and the SECD machine (1964) explained languages through the lambda calculus, environments and closures.",
+      "people": [
+        "Peter Landin"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Fundamental concepts in programming languages",
+      "detail": "Christopher Strachey's lecture notes introduced l-values and r-values and distinguished parametric from ad hoc polymorphism.",
+      "people": [
+        "Christopher Strachey"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "Polymorphic lambda calculus",
+      "detail": "John Reynolds introduced the polymorphic lambda calculus independently of Jean-Yves Girard's System F (1972), and Strachey and Wadsworth named continuations.",
+      "people": [
+        "John Reynolds",
+        "Jean-Yves Girard",
+        "Christopher Wadsworth"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "Type polymorphism and ML; CSP",
+      "detail": "Robin Milner's 'A theory of type polymorphism in programming' gave algorithm W and 'well-typed programs cannot go wrong'; Tony Hoare published Communicating Sequential Processes.",
+      "people": [
+        "Robin Milner",
+        "Tony Hoare"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "Structural operational semantics",
+      "detail": "Gordon Plotkin's Aarhus lecture notes established the small-step rule-based style of semantics.",
+      "people": [
+        "Gordon Plotkin"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "Principal type schemes",
+      "detail": "Luis Damas and Robin Milner proved that algorithm W computes principal types for ML.",
+      "people": [
+        "Luis Damas",
+        "Robin Milner"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "Syntactic type soundness",
+      "detail": "Andrew Wright and Matthias Felleisen's 'A syntactic approach to type soundness' introduced the progress-and-preservation method.",
+      "people": [
+        "Andrew Wright",
+        "Matthias Felleisen"
+      ]
+    },
+    {
+      "year": 2015,
+      "title": "Rust 1.0",
+      "detail": "Rust brought ownership, borrowing and Send/Sync to a mainstream systems language, excluding data races at compile time.",
+      "people": [
+        "Graydon Hoare"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Types and Programming Languages",
+      "authors": "Benjamin C. Pierce",
+      "year": 2002,
+      "note": "The standard text on type systems: operational semantics, the simply typed lambda calculus, subtyping, System F and type inference, with OCaml implementations."
+    },
+    {
+      "title": "Practical Foundations for Programming Languages",
+      "authors": "Robert Harper",
+      "year": 2016,
+      "note": "Second edition; a uniform, rigorous treatment of statics and dynamics for a wide range of language features, including control and concurrency."
+    },
+    {
+      "title": "Essentials of Programming Languages",
+      "authors": "Daniel P. Friedman and Mitchell Wand",
+      "year": 2008,
+      "note": "Third edition; learning languages by writing interpreters in Scheme, including continuation-passing interpreters and type inference."
+    },
+    {
+      "title": "Programming Languages: Application and Interpretation",
+      "authors": "Shriram Krishnamurthi",
+      "year": 2017,
+      "note": "Second edition, freely available; interpreters, scope, types and control taught through implementation."
+    },
+    {
+      "title": "Structure and Interpretation of Computer Programs",
+      "authors": "Harold Abelson and Gerald Jay Sussman with Julie Sussman",
+      "year": 1996,
+      "note": "Second edition; the classic introduction to abstraction, evaluators and the metacircular interpreter."
+    },
+    {
+      "title": "The Lambda Calculus: Its Syntax and Semantics",
+      "authors": "Henk P. Barendregt",
+      "year": 1984,
+      "note": "Revised edition; the definitive reference on the untyped lambda calculus, confluence and standardisation."
+    },
+    {
+      "title": "The Art of Multiprocessor Programming",
+      "authors": "Maurice Herlihy and Nir Shavit",
+      "year": 2008,
+      "note": "Mutual exclusion, linearisability and concurrent data structures (second edition with Luchangco and Spear, 2020)."
+    }
+  ],
   "next": [
     "compilers"
   ]
