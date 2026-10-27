@@ -7,11 +7,26 @@
   "order": 100,
   "tagline": "Software processes, requirements, architecture, design principles, version control, testing, refactoring, verification and professional ethics",
   "summary": "Software engineering is programming done by teams, over years, for people who depend on the result. This course covers how real software is specified, designed, built, tested and maintained: development processes and requirements, architecture and design principles, version control and continuous integration, testing, refactoring and maintenance, verification of critical software, and the professional and ethical responsibilities of engineers.",
-  "overview": [],
+  "overview": [
+    "Software engineering is programming done by teams, over years, for people who depend on the result. A program that one person writes and runs once needs only to be correct; a system that dozens of people build and hundreds of thousands use must also be specified, planned, designed for change, integrated, tested, maintained and argued safe — and its builders are answerable for its effects. This course studies those activities: how they are organised into processes, which techniques make each of them reliable, and what can be proved, measured or only observed about them.",
+    "The chapters follow the life of a system. Chapter 1 covers life-cycle models, plan-driven and agile development, and the quantitative side of planning — critical paths, three-point estimates and simulation, Little's law, Brooks's law and risk exposure. Chapter 2 turns to requirements: the distinction between the world and the machine, verifiable requirements, use cases, user stories with executable acceptance tests, and decision tables checked mechanically. Chapters 3 and 4 treat design at two scales — architectural styles and quality attributes, then coupling metrics, the SOLID principles and dependency inversion. Chapter 5 explains Git's model of history, three-way merging, code review and continuous integration; chapter 6 makes testing systematic with boundaries, pairwise and MC/DC coverage, mutation testing, test doubles, property-based testing and TDD. Chapter 7 covers refactoring, legacy code, complexity and technical debt; chapter 8 static analysis, abstract interpretation, model checking and safety-critical standards; chapter 9 codes of ethics, licences, privacy, accessibility and accountability for automated decisions.",
+    "What makes the subject hard is that its claims are of very different kinds. Some are theorems — the critical path bounds a schedule, three-way merge is symmetric, no static analyser is both sound and complete — and the lessons prove them. Many are empirical, about real teams and projects, and the evidence behind them ranges from controlled experiments through surveys to folklore; the lessons cite their sources and say what they do and do not show. Every program, test run and Git session in the course was run as shown, so the best way to study is to repeat them, change them and watch what breaks."
+  ],
   "prerequisites": [
     "program-design"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Compare plan-driven, iterative and agile processes, and choose one for a project by its risks.",
+    "Compute critical paths, three-point estimates, risk exposures and cycle times, and explain with proofs and simulation why plans built from most-likely estimates are optimistic.",
+    "Elicit and write verifiable requirements, user stories and use cases, state domain assumptions explicitly, and check rule-based requirements for gaps and conflicts.",
+    "Describe a system's architecture in several views, select styles against quality-attribute scenarios, and quantify the availability and latency consequences of composing services.",
+    "Measure coupling and impact sets, apply the SOLID principles and dependency inversion to make code testable and changeable, and judge when an abstraction is not worth its cost.",
+    "Use Git's model of snapshots, branches and three-way merges to collaborate, resolve conflicts, review changes and set up continuous integration and automated bisection.",
+    "Design test suites with boundary-value, pairwise and MC/DC criteria, evaluate them by mutation testing, isolate units with test doubles, and use property-based testing and TDD.",
+    "Refactor legacy code safely with characterisation tests and small behaviour-preserving steps, and use complexity and change history to decide where to start.",
+    "Explain the limits of testing and static analysis, apply abstract interpretation and model checking to small examples, and describe how safety-critical software is assured.",
+    "Analyse professional and ethical problems with the ACM and Software Engineering codes, and apply licensing, data-protection, accessibility and fairness considerations to design decisions."
+  ],
   "chapters": [
     {
       "slug": "software-process",
@@ -87,8 +102,140 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1968,
+      "title": "The NATO Software Engineering Conference",
+      "detail": "A conference in Garmisch, Germany, in October 1968, deliberately titled 'software engineering' and reported by Peter Naur and Brian Randell, named the field and diagnosed a 'software crisis' of late, unreliable large systems.",
+      "people": [
+        "Friedrich L. Bauer",
+        "Peter Naur",
+        "Brian Randell"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Royce's paper on managing large software",
+      "detail": "Winston Royce's 'Managing the development of large software systems' presented the sequential life cycle later called the waterfall model — and called it risky, recommending iteration, prototyping and customer involvement.",
+      "people": [
+        "Winston W. Royce"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "The Mythical Man-Month",
+      "detail": "Frederick Brooks's essays on managing IBM's OS/360 argued that people and months are not interchangeable and stated Brooks's law; the 1995 anniversary edition added 'No Silver Bullet'.",
+      "people": [
+        "Frederick P. Brooks Jr."
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Code inspections and cyclomatic complexity",
+      "detail": "Michael Fagan's IBM Systems Journal paper introduced formal design and code inspections, and Thomas McCabe's 'A complexity measure' defined cyclomatic complexity.",
+      "people": [
+        "Michael Fagan",
+        "Thomas J. McCabe"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "Software Engineering Economics",
+      "detail": "Barry Boehm's book introduced the COCOMO cost model; his spiral model of risk-driven development followed in IEEE Computer in 1988.",
+      "people": [
+        "Barry Boehm"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "Refactoring and technical debt",
+      "detail": "William Opdyke's doctoral thesis gave the first systematic treatment of refactorings and their preconditions, and Ward Cunningham introduced the technical-debt metaphor at OOPSLA.",
+      "people": [
+        "William Opdyke",
+        "Ward Cunningham"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "The Agile Manifesto",
+      "detail": "Seventeen authors of lightweight methods, meeting in Snowbird, Utah, in February 2001, valued individuals and interactions, working software, customer collaboration and responding to change.",
+      "people": [
+        "Kent Beck",
+        "Ward Cunningham",
+        "Martin Fowler",
+        "Ken Schwaber",
+        "Jeff Sutherland"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "Git",
+      "detail": "After the Linux kernel lost free use of BitKeeper in April 2005, Linus Torvalds wrote Git, a distributed version-control system storing history as content-addressed snapshots.",
+      "people": [
+        "Linus Torvalds"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "Accelerate",
+      "detail": "Nicole Forsgren, Jez Humble and Gene Kim summarised years of State of DevOps survey research into four measures of software delivery performance, reporting that speed and stability went together in their data.",
+      "people": [
+        "Nicole Forsgren",
+        "Jez Humble",
+        "Gene Kim"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Software Engineering",
+      "authors": "Ian Sommerville",
+      "year": 2015,
+      "note": "10th edition. A broad, balanced textbook covering processes, requirements, design, testing, evolution, dependability and security engineering; the standard course text in many universities."
+    },
+    {
+      "title": "Software Engineering: A Practitioner's Approach",
+      "authors": "Roger S. Pressman and Bruce R. Maxim",
+      "year": 2019,
+      "note": "9th edition. A long-running practitioner-oriented textbook, strong on process, quality management and project management."
+    },
+    {
+      "title": "The Mythical Man-Month: Essays on Software Engineering",
+      "authors": "Frederick P. Brooks Jr.",
+      "year": 1995,
+      "note": "Anniversary edition, with 'No Silver Bullet' and Brooks's own retrospective. Short, readable essays on why large software projects are hard; still the best starting point for project management."
+    },
+    {
+      "title": "Software Architecture in Practice",
+      "authors": "Len Bass, Paul Clements and Rick Kazman",
+      "year": 2021,
+      "note": "4th edition. Quality attributes, scenarios, architectural tactics and patterns, and evaluation methods such as ATAM."
+    },
+    {
+      "title": "Refactoring: Improving the Design of Existing Code",
+      "authors": "Martin Fowler",
+      "year": 2018,
+      "note": "2nd edition, with examples in JavaScript. The catalogue of code smells and refactorings, with the mechanics of each step."
+    },
+    {
+      "title": "Test-Driven Development: By Example",
+      "authors": "Kent Beck",
+      "year": 2002,
+      "note": "A short book that develops two programs entirely test-first, showing the red–green–refactor rhythm and its effect on design."
+    },
+    {
+      "title": "Working Effectively with Legacy Code",
+      "authors": "Michael C. Feathers",
+      "year": 2004,
+      "note": "Practical techniques for getting untested code under test — seams, characterisation tests, sprouting — and changing it safely."
+    },
+    {
+      "title": "Accelerate: The Science of Lean Software and DevOps",
+      "authors": "Nicole Forsgren, Jez Humble and Gene Kim",
+      "year": 2018,
+      "note": "The survey research behind the four delivery-performance measures, with an account of its methods; read it together with its limitations."
+    }
+  ],
   "next": [
     "hci"
   ]
