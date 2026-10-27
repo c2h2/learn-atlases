@@ -8,21 +8,24 @@
   "tagline": "From the equivalence principle to an expanding universe",
   "summary": "The equivalence principle, the Schwarzschild geometry, black holes, gravitational waves, the structure of stars, and a first cosmology.",
   "overview": [
-    "General relativity is the theory of gravitation in which spacetime is curved by energy and momentum, and free fall is motion on a geodesic. This course does not develop the full tensor machinery. It develops the physical content that a physics graduate should be able to use: the equivalence principle, the Schwarzschild solution and what it predicts, gravitational waves at the level of their effect on a detector, and the two applications that dominate the observations, stars and cosmology.",
-    "The equivalence principle explains gravitational redshift and why light bends, before any field equation. The Schwarzschild geometry is then taken as the spherically symmetric vacuum solution and read for orbits, light deflection, the event horizon and the global structure of a black hole. Gravitational waves are introduced through their measured strain. Stellar structure uses the Newtonian hydrostatic equilibrium that relativity corrects for compact objects, and cosmology uses the Friedmann equation with matter, radiation and a cosmological constant.",
-    "Several famous formulae in this course are quoted from the field equations rather than derived. Each time, the text says so. The skill is to know which predictions are geometry, which are astrophysics, and which number comes from an observation."
+    "General relativity is the theory of gravitation in which energy and momentum curve spacetime and free fall is motion along a geodesic. This course does not develop the full tensor machinery. It develops the physical content a physics graduate should be able to use: the equivalence principle, the Schwarzschild geometry and its predictions, black holes, gravitational waves at the level of their effect on a detector, and the two great applications, stars and cosmology.",
+    "The equivalence principle alone gives the gravitational redshift, the GPS clock correction and half the bending of light, and leads to the idea that gravity is a metric. The Schwarzschild metric is then taken as the spherically symmetric vacuum solution and read for orbits, the innermost stable circular orbit, the precession of Mercury, the deflection of light, the Shapiro delay and, when all the mass is inside $r_s$, the event horizon. Gravitational waves are treated through linearised gravity and the quadrupole formula, tested by the binary pulsar and by GW150914. Stellar structure uses Newtonian hydrostatic equilibrium and the virial theorem, with general relativity entering for neutron stars, and cosmology uses the Friedmann equations with matter, radiation and a cosmological constant.",
+    "Several famous formulae in this course, including the Schwarzschild metric, the quadrupole formula and the Hawking temperature, are quoted from the field equations or from quantum field theory rather than derived, and the text says so each time. What is derived is everything that follows from them. The skill to acquire is knowing which predictions are geometry, which are astrophysics, and which numbers come from observation, and being able to compute each to the precision the data deserve."
   ],
   "prerequisites": [
     "relativity",
     "analytical-mechanics"
   ],
   "outcomes": [
-    "Use the equivalence principle to derive the gravitational redshift and to explain light deflection qualitatively.",
-    "Read the Schwarzschild metric for proper time, orbits and the photon sphere.",
-    "Describe the event horizon of a Schwarzschild black hole and the difference between a coordinate singularity and a physical one.",
-    "Interpret a gravitational-wave strain and the Hulse–Taylor pulsar as a test of the quadrupole formula.",
-    "Set up the equations of stellar structure in the Newtonian limit and describe white dwarfs and neutron stars.",
-    "Use the Friedmann equation for a flat universe with matter and a cosmological constant, and define redshift and the Hubble law."
+    "Explain the weak and Einstein equivalence principles and the experimental bounds on the Eötvös parameter.",
+    "Derive the gravitational redshift and compute clock-rate corrections such as the 38 μs per day for GPS.",
+    "Use the conserved energy and angular momentum of Schwarzschild geodesics to find the effective potential, the ISCO at 6GM/c² and the photon sphere.",
+    "Compute the perihelion precession of Mercury, the deflection of starlight by the Sun and the Shapiro delay.",
+    "Distinguish coordinate from curvature singularities, describe the event horizon, and compute tidal accelerations, shadow sizes and Hawking temperatures of black holes.",
+    "Describe how a gravitational wave moves free test masses, apply the quadrupole formula to a binary, and estimate a chirp mass from the frequency evolution.",
+    "Prove the virial theorem for a star and use it with hydrostatic equilibrium to estimate central temperatures and the Kelvin–Helmholtz and nuclear time scales.",
+    "Explain degeneracy pressure, the Chandrasekhar limit and the maximum mass of neutron stars.",
+    "Derive the Friedmann and fluid equations, and compute redshifts, critical density, cosmological distances and the age of the universe numerically."
   ],
   "chapters": [
     {
@@ -67,7 +70,8 @@
       "requires": [
         "gravitation/equivalence",
         "thermodynamics/first-law",
-        "particles/reactions"
+        "particles/reactions",
+        "statistical-mechanics/bose-fermi"
       ]
     },
     {
@@ -76,7 +80,8 @@
       "summary": "The expanding universe, the Friedmann equation, and the cosmic microwave background.",
       "requires": [
         "gravitation/equivalence",
-        "relativity/spacetime"
+        "relativity/spacetime",
+        "thermodynamics/first-law"
       ]
     }
   ],
@@ -84,7 +89,7 @@
     {
       "year": 1907,
       "title": "The equivalence principle",
-      "detail": "Einstein’s review of 1907 argued that a uniform gravitational field is locally indistinguishable from an acceleration, and deduced the gravitational redshift from that.",
+      "detail": "In a review article of 1907 Einstein argued that a uniform gravitational field is locally indistinguishable from an acceleration, and deduced the gravitational redshift and time dilation from that.",
       "people": [
         "Albert Einstein"
       ]
@@ -92,7 +97,7 @@
     {
       "year": 1915,
       "title": "The field equations",
-      "detail": "Einstein presented the final field equations to the Prussian Academy on 25 November 1915, and used them to compute the anomalous precession of Mercury.",
+      "detail": "Einstein presented the perihelion advance of Mercury to the Prussian Academy on 18 November 1915 and the final field equations on 25 November.",
       "people": [
         "Albert Einstein"
       ]
@@ -100,7 +105,7 @@
     {
       "year": 1916,
       "title": "The Schwarzschild solution",
-      "detail": "Karl Schwarzschild found the exact spherically symmetric vacuum solution while serving at the front, and communicated it in January 1916.",
+      "detail": "Karl Schwarzschild, serving on the Russian front, found the exact spherically symmetric vacuum solution; Einstein presented it to the Academy in January 1916.",
       "people": [
         "Karl Schwarzschild"
       ]
@@ -108,16 +113,52 @@
     {
       "year": 1919,
       "title": "The eclipse",
-      "detail": "Eddington and Dyson measured the deflection of starlight by the Sun during the eclipse of 29 May 1919. The result agreed with Einstein’s prediction and made the theory famous.",
+      "detail": "Expeditions to Sobral and Príncipe organised by Dyson and Eddington measured the deflection of starlight during the eclipse of 29 May 1919, in agreement with general relativity rather than with the Newtonian half-value.",
       "people": [
         "Arthur Eddington",
         "Frank Watson Dyson"
       ]
     },
     {
+      "year": 1929,
+      "title": "The expanding universe",
+      "detail": "Friedmann (1922) and Lemaître (1927) had found expanding solutions of Einstein's equations; Hubble's 1929 paper established that galaxy redshifts grow linearly with distance.",
+      "people": [
+        "Alexander Friedmann",
+        "Georges Lemaître",
+        "Edwin Hubble"
+      ]
+    },
+    {
+      "year": 1931,
+      "title": "The Chandrasekhar limit",
+      "detail": "Chandrasekhar showed that relativistic electron degeneracy cannot support a white dwarf above a limiting mass, now put at about 1.4 solar masses. In 1939 Oppenheimer and Volkoff computed the first neutron-star models.",
+      "people": [
+        "Subrahmanyan Chandrasekhar"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "Redshift in the laboratory",
+      "detail": "Pound and Rebka measured the gravitational redshift of 14.4 keV gamma rays over the 22.5 m height of a Harvard tower using the Mössbauer effect; the result was published in 1960.",
+      "people": [
+        "Robert Pound",
+        "Glen Rebka"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "The microwave background",
+      "detail": "Penzias and Wilson found an isotropic microwave background at Bell Laboratories, interpreted by Dicke's group as the relic radiation of a hot early universe.",
+      "people": [
+        "Arno Penzias",
+        "Robert Wilson"
+      ]
+    },
+    {
       "year": 1974,
       "title": "The binary pulsar",
-      "detail": "Hulse and Taylor found the pulsar PSR B1913+16 in orbit with another neutron star. Its orbital decay matches the energy loss to gravitational waves.",
+      "detail": "Hulse and Taylor discovered PSR B1913+16, a pulsar orbiting another neutron star; its orbital decay, measured over decades, matches the energy loss to gravitational waves.",
       "people": [
         "Russell Hulse",
         "Joseph Taylor"
@@ -126,7 +167,7 @@
     {
       "year": 2015,
       "title": "GW150914",
-      "detail": "On 14 September 2015 the two LIGO detectors recorded the merger of two black holes of about 30 solar masses. The announcement came on 11 February 2016.",
+      "detail": "On 14 September 2015 the two LIGO detectors recorded the merger of black holes of about 36 and 29 solar masses; the announcement came on 11 February 2016. In 2019 the Event Horizon Telescope published the first image of a black hole's shadow, in M87.",
       "people": [
         "LIGO Scientific Collaboration",
         "Virgo Collaboration"
@@ -150,13 +191,19 @@
       "title": "Spacetime and Geometry",
       "authors": "Sean Carroll",
       "year": 2004,
-      "note": "A graduate text. The early chapters are a clear account of the geometry this course uses."
+      "note": "A graduate text (reissued by Cambridge University Press in 2019). The early chapters are a clear account of the geometry used here; chapters 5, 6 and 8 treat the Schwarzschild solution, black holes and cosmology."
+    },
+    {
+      "title": "Gravitation",
+      "authors": "Charles W. Misner, Kip S. Thorne and John Archibald Wheeler",
+      "year": 1973,
+      "note": "The encyclopaedic classic. Its boxed physical discussions of the classical tests, stellar structure and gravitational waves reward browsing long after the course."
     },
     {
       "title": "An Introduction to Modern Astrophysics",
       "authors": "Bradley W. Carroll and Dale A. Ostlie",
-      "year": 2017,
-      "note": "Second edition. The stellar-structure and cosmology chapters, for the astrophysical half."
+      "year": 2007,
+      "note": "Second edition (Pearson, 2007; reissued by Cambridge University Press in 2017). The chapters on stellar interiors, degenerate stars and cosmology, for the astrophysical half."
     },
     {
       "title": "Introduction to Cosmology",
