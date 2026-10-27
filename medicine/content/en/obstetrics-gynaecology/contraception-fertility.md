@@ -1,140 +1,286 @@
-Contraception is the most effective preventive medicine in gynaecology and one of the safest, and infertility is a disease that mostly needs accurate staging rather than clever treatment. **This chapter covers the method-by-method pharmacology and counselling (mechanisms, efficacy, UKMEC eligibility, the side-effect conversations that determine continuation), the long-acting reversible contraceptives and their insertion-and-expulsion realities, emergency contraception as time-critical medicine, and the infertility pathway: the three-compartment workup (ovulation, tubes-and-uterus, sperm), the treatment ladder from lifestyle to IVF, the ovarian-stimulation hazards (OHSS and multiples), and the reproductive-age-and-egg-number honesty that should precede all of it. The through-line: fertility clinic success is measured in babies, and contraception clinic success is measured in the method the patient actually keeps.**
+This chapter covers two sides of the same physiology. Contraception prevents pregnancy by interrupting a step in the chain from ovulation to implantation; subfertility care looks for the broken link in that chain when pregnancy does not happen and repairs or bypasses it. Both depend on the menstrual cycle and the hypothalamic–pituitary–ovarian axis, described in [[endocrine/reproductive-endocrinology]].
 
-## Methods and eligibility
+Both are also areas where numbers drive good counselling. A method that is "99% effective" may fail for one woman in ten in a year of real use, and a couple told they are "infertile" after a year usually have a substantial chance of conceiving naturally in the next year. Clinicians need to know these numbers and to explain them clearly. UK practice in this chapter follows the Faculty of Sexual and Reproductive Healthcare (FSRH), the UK Medical Eligibility Criteria for Contraceptive Use (UKMEC, 2016, amended 2019) and NICE CG156 (*Fertility problems*, 2013, updated 2017).
 
-::: definition Contraceptive methods, mechanisms and UKMEC {#def-methods}
-**The effectiveness hierarchy (typical-use failures per 100 woman-years): the LARCs (implant, sterilisation, vasectomy partner, copper and hormonal IUDs - under 1), the user-dependent methods (pill, patch, ring, injection - roughly 1-13 depending on the population and the method's forgiveness profile), and the barrier-and-behavioural group (condoms ~2-13 with the STI-protection dividend, fertility-awareness methods with the correct-use caveats, withdrawal and spermicides at the bottom). Mechanisms drive the counselling: the combined hormonal methods (pill, patch, ring) suppress ovulation via oestrogen-and-progestogen gonadotropin suppression with the oestrogen's VTE-and-BP-and-migraine-with-aura-and-smoking-over-35 risks that define UKMEC category 4 (the cannot-use list); the progestogen-only methods (the traditional POP-thickens-mucus, the desogestrel-POP-often-ovulation-inhibiting, the implant's ovulation-inhibition-plus-mucus-plus-endometrial-activity, the DMPA-injection's profound ovulation-suppression-with-the-bone-mineral-and-delayed-fertility-return-and-weight-conversations, and the levonorgestrel-IUS's endometrial-and-cervical action-plus-some-ovulation-inhibition-in-older-users-with-the-lighter-bleeding-and-endometrial-protection-dividends) carry almost no VTE signal and are the workhorses for the combined-method-eligibility exclusions. UKMEC (the UK version of WHO medical eligibility criteria) categories 1-4 (unrestricted / advantages usually outweigh / disadvantages usually outweigh / unacceptable risk) are the consultation's grammar and are worth memorising for the common blocks: migraine with aura, VTE-on-treatment-or-anticoagulated, breast-cancer-current, smoking-age-over-35 for oestrogen methods; IUD insertion cautions (current-pelvic-infection, distorted-cavity, gestational-trophoblastic-disease-with-gestational-trophoblastic-disease-and-gestation; post-partum and post-abortion timing rules that make or break 'fit it now'); DMPA-and-osteoporosis-age-cautions and the progestogen-only-safe-in-VTE-history-versus-the-oestrogen-no; and the drug-interaction chapter (the enzyme-inducers - rifampicin-and-rifabutin, some antiepileptics, some antiretrovirals, St John's wort - with their combined-method-and-POP dose-shift rules and the DMPA-and-implant preference logic, versus the broad-antibiotic-no-interaction-myth-correction that keeps women from unnecessary condom-weeks). Method-side-effect counselling that prevents discontinuation: the bleeding-pattern predictions (the LNG-IUS's 3-6-month-irregularity-with-eventual-lightening-versus-the-copper-IUD's heavier-and-more-painful-periods-trade-off; the implant's unpredictable-bleeding-in-a-minority-that-is-the-top-removal-reason-and-the-empirical-treatment-options-BPs-and-the-treatment-course-not-the-reassurance; the POP's-continual-irregularity-expectation-management), the acne-and-mood-and-libido-and-weight-questions-answered-per-method-with-the-evidence-honesty (the DMPA-weight signal is real and the pill-mood-signal is smaller-than-reputation-but-individually-real), and the continuation-predictors literature: the method chosen with accurate expectations and some autonomy continues longer than the 'best' method imposed, which is why the consultation script is 'what matters to you' before 'what I would recommend' - [[obstetrics-gynaecology/postnatal-period]], [[endocrine/reproductive-endocrinology]], [[cardiovascular/vascular-disease]].**
-:::
+## How contraceptives work
 
-## LARC and emergency contraception
+Each method blocks one or more steps of reproduction:
 
-::: definition Long-acting and emergency contraception {#def-larc}
-**The LARC-first evidence: unintended pregnancy is concentrated in user-dependent-method users and non-users, the UK and US contraceptive-initiative trials showed LARC uptake rises when cost and same-day-access barriers fall (the Colorado-and-St-Conrace-adjacent data with their subsequent-method-choice-nuance-lessons), and the policy conclusion - offer and fit LARCs at every appropriate contact, postpartum, post-abortion, post-miscarriage and in the implant-at-caesarean-adjacent-window - is the single largest avoidable-pregnancy intervention in reproductive health. The devices: the etonogestrel implant (the 3-year licensed duration with the off-label-4th-year-questions, the insertion-and-removal-training-and-non-palpable-removal-imaging-pathology - ultrasound and MRI and the x-ray-not-visible fact, and the malpractice-adjacent 'learn where it went' rule), the LNG-IUS (the 5-8-year licensed durations by product, the 52-mg-versus-19.5-mg-indications - the Mirena-adjacent-heavy-bleeding-licence and the Levoskel-adjacent-HRT-endometrial-protection-use, the insertion-perforation-and-expulsion-risk-numbers-with-the-nulliparity-and-post-partum-timing nuances and the 'strings-not-visible-does-not-mean-perforation-scan-first' pathway), and the copper IUD (the 5-10-year durations, the non-hormonal-and-mood-neutral selling points, the heavier-bleeding cost, and the 5-day-post-unprotected-coitus-emergency-use-as-the-most-effective-EC-by-far). Emergency contraception is a five-option menu ranked by efficacy: the copper IUD (first choice up to 5 days - and ovulation-timing-dependent-later - with >99 percent efficacy and the continuing-contraception-fit), UPA-acetate 30 mg (5 days, the progestogen-interaction-rule - no-hormonal-EC-or-POP-restart-for-5-days-and-use-barrier-during-it-because-UPA-is-a-progestogen-receptor-modulator-and-anticipates-and-delays-ovulation-and-progestogen-methods-can-antagonise-its-own-efficacy), and the LNG-1.5-mg-dose (72-hour-licensed-with-off-label-96-120-hour-diminishing-use, the enzyme-inducer-double-dose-question-with-UPA-and-copper-IUD-preference), plus the Yuzpe-adjacent-combined-pill-regimen-historical-note and the nausea-and-vomit-redose rules; the counselling essentials: EC is less effective with higher BMI (the UPA-versus-LNG-divergence-with-obesity and why the copper IUD is the answer when the pill 'did not work'), it does not disrupt an existing pregnancy and is not an abortifacient (the implant-IUD-IUD-fact-that-prevents-the-pharmacy-argument), it does not protect forward (the start-regular-contraception-and-7-day-rule or the UPA's 5-day rule), pregnancy-testing-follow-up-rules (3 weeks after UPA-or-LNG-with-the-EC-failure-ectopic-thought), and the frequency question ('can I use it often' - safe but-inefficient answer with the method-conversation attached, because repeated EC is a service signal not a moral event). The access-and-rights layer: free-and-confidential-services-including-for-under-16s-per-Fraser-adjacent-competence-rules, the pharmacy-implant-and-IUD-initiation-and-fitting-expansion (the pharmacist and nurse-practitioner LARC training as an access multiplier with the governance-and-competency-volume requirements), and the conscientious-objection architecture which must never become a referral dead-end for a woman needing EC, an abortion-referral or a coil.**
-:::
+- **Preventing ovulation.** Combined hormonal contraception (the pill, patch and vaginal ring), the injectable, the implant and the desogestrel progestogen-only pill suppress the mid-cycle LH surge through negative feedback on the hypothalamus and pituitary.
+- **Blocking sperm.** Progestogens thicken cervical mucus, which becomes hostile to sperm. Barrier methods (condoms, diaphragms) physically separate sperm from the cervix. Vasectomy removes sperm from the ejaculate.
+- **Preventing fertilisation or implantation.** Copper ions from an intrauterine device are toxic to sperm and eggs and cause an inflammatory reaction in the endometrium. The levonorgestrel intrauterine system mainly acts on the endometrium and cervical mucus.
+- **Preventing fertilisation by timing or blocking the tubes.** Fertility awareness methods avoid intercourse around ovulation; female sterilisation occludes the fallopian tubes.
 
-## Infertility
+## Measuring effectiveness
 
-::: definition The infertility workup and treatment ladder {#def-infertility}
-**Definitions and urgency: fertility declines with ovarian reserve - the woman-age-35-plus evaluation starts after 6 months rather than 12, age 40-plus deserves same-year specialist discussion - and around half of subfertility couples have a male factor contributing, which is why the semen analysis is one of the two tests that must be done before anything invasive (the other being ovulation confirmation). The workup is three compartments plus two extras: ovulation (cycle history's reliability, the mid-luteal-or-23-day-if-regular-when-you-can-get-it progesterone with the anovulation-threshold-interpretation, the ovarian-reserve discussion - AMH-and-AFC-predict-response-to-stimulation-not-natural-conception, the honest note that 'low AMH' means fewer eggs for IVF not impossible pregnancy in most contexts and the FSH-and-day-2-3-panel-with-caution-about-single-low-values); tubal-and-uterine (the HSG's screening role with its false-positives-and-tubal-spasm-and-the-hydrosalpinx-that-doubles-as-a-treatment-decision-because-a-dilated-infected-tube-embarrasses-IVF-success-until-salpingectomy-or-occlusion, the HyCoSy-alternative, and the 'tubal testing only changes management' rule - skip it when IVF is going to happen anyway for other reasons - while the uterine-cavity-assessment for the fibroid-distorting-submucosal-and-septum-questions uses the saline-infusion-sonography-hysteroscopy-combination); and semen (the WHO-reference-limits-with-their-decade-drift, the repeat-abnormal-and-donor-insemination-or-ICSI-conversations, and the varicocele-surgery-adjacent-modest-benefit-literature). The treatment ladder by cause: anovulatory (the PCOS-adjacent-majority - lifestyle-then-letrozole-or-clomifene-first-line-ovulation-induction-with-the-metformin-adjacent-and-the-gonadotropins-and-the-ovarian-drilling-of-history-with-the-adhesion-and-ovarian-reserve-cost-now-recognised, into the IVF-for-failed-ovulation-induction; the hypothalamic minority - the pulsatile-GnRH-or-gonadotropin-specialist-protocols and the exercise-and-eating-disorder-amenorrhoea-repair-because-a-baby-after-IVF-in-an-undernourished-body-is-a-two-patient-problem); tubal-disease (IVF-for-bilateral-disease-or-severe-damage-versus-repair-for-the-selected-hydrosalpinx-and-sterilisation-reversal-and-the-tuberculosis-adjacent-devastated-tube-counselling); mild-male-and-unexplained (the IUI-with-its-modest-per-cycle-gain-and-the-NICE-era-limitation-to-3-cycles-and-then-IVF-and-the-clean-catch-about-IUI-not-helping-severe-male-factor); and IVF/ICSI (the stimulation-antagonist-protocols-with-GnRH-agonist-trigger-for-the-high-responder-and-the-freeze-all-adjacent-strategies, the trigger-and-oocyte-retrieval-and-transfer-day-counting, the single-embryo-transfer-policy-and-the-twins-avoidance-that-is-IVF's-real-public-health-victory, the ICSI-for-severe-male-factor-and-ICSI-for-low-fertilisation-risk-not-royalty, the preimplantation-testing-for-monogenic-disease-and-translocations-and-the-aneuploidy-screening-debate-not-yet-settled-into-routine-benefit). The hazards counselled and prevented: OHSS (the AMH-high-and-PCOS-ovary risk stratification, the antagonist-protocol-and-agonist-trigger-and-freeze-all-and-metformin-and-dose-tools, the cabergoline-adjacent-evidence, and the emergency-admission-pathway-for-the-thrombotic-and-ascitic-severe-form-with-the-haemoconcentration-and-LMWH-thinking), the multiples-with-transfer-policy-as-prevention, the ectopic-and-heterotopic-small-increases-with-assisted-conception, and the cancer-and-birth-defence-literature-the-couples-google ('no consistent increase in invasive cancers from stimulation and the subfertility itself carries the mild risks; the singleton-IVF-child-health-outlook is reassuring with the prematurity-confounding-acknowledged'). And the social-medical honesty: the elective-egg-freezing-and-late-pregnancy-planning conversations where the success numbers must come out as age-at-freezing-dependent ranges rather than marketing, the oncodepositing-fertility-preservation-timeline-that-must-not-lose-a-cycle-to-a-committee, and the NICE-1-3-cycles-versus-commissioning-postcode-lottery-that-the-couple-should-be-told-exists-rather-than-discovering-it-in-their-thirties - [[endocrine/reproductive-endocrinology]], [[obstetrics-gynaecology/early-pregnancy]], [[paediatrics/newborn]].**
-:::
+::: definition Perfect use, typical use and the Pearl index {#def-efficacy}
+**Perfect-use failure rate**: the percentage of women who become pregnant in the first year when the method is used correctly and consistently.
 
-::: example The 'the pill failed' conversation {#ex-failure}
-A 24-year-old on the COC, no missed tablets (she swears), presents at 9 weeks with an unwanted pregnancy and asks for 'the coil now, and then the pill again but a different one'.
-::: solution
-**Method-failure-counselling ([[#def-methods]], [[#def-larc]]): the non-blame frame - 'typical-use pill failure happens with perfect-sounding users because "no missed tablets" does not capture the vomit-and-diarrhoea days, the enzyme-inducer co-prescriptions, or the 12-to-36-hour-window drift; the honest sentence is "the pill is a 91-99 percent method depending on whose life it fits, and your life may need a 99.9 percent method" - which is a method statement, not an accusation, and it is the sentence she needs to hear instead of 'you must have forgotten''; the decision now - 'if she is continuing the pregnancy, the contraception conversation is antenatal not postnatal, with the implant-and-IUD-at-caesarean-or-within-48-hours-and-post-partum-window-numbers; if she is ending it, the LARC fitted at the procedure-visit is the guideline-recommended default and the "same-day" capability is what the service is measured on, because the next unintended pregnancy rate after an abortion is about adherence to this sentence'; and the method-choice - 'the "different pill" request honoured with facts (the ring-and-patch-adherence-profile-questions, the POP-and-implant-and-injection-versus-COC-for-her-bleeding-and-mood-and-migraine-status, and the 5-year-LNG-IUS-and-copper-versus-10-year-copper-bleeding-trade-off), the dual-protection-condom-and-STI-screen-offer-unchanged, and the follow-up-contact ("in one month, how is it going" as an appointment not an invitation), because continuation is a service behaviour - [[obstetrics-gynaecology/early-pregnancy]], [[public-health/prevention-promotion]].**
-:::
-:::
+**Typical-use failure rate**: the percentage who become pregnant in the first year of real-world use, including missed pills, late injections and inconsistent condom use.
 
-::: example The frozen-transfer patient with pain and haematocrit 52 {#ex-ohss}
-Day 6 after an hCG-triggered retrieval for low-reserve PCOS-type ovaries (28 oocytes), now: abdominal distension, vomiting, oliguria, tense ascites, Na 129, and she is 5 days post-trigger.
-::: solution
-**Severe-OHSS-admission ([[#def-infertility]]): the recognition - 'the third-space-collapse picture (intravascular dehydration with ascites and third-spaced oedema, haemoconcentration, hyponatraemia and hyperkalaemia-or-normal-kalaemia-with-renal-hypoperfusion) after an hCG trigger with a high oocyte count is severe OHSS, and pregnancy-derived endogenous hCG makes it later and worse - the day-6-12 form; the thromboembolic risk is real in both directions (hypo-and-hypervolaemic) so this is a medical admission, not a rehydration-letter; the management - 'the hospital-with-gynaecologists-and-medicine-together: careful IV crystalloid-or-colloid-with-monitoring-of-haematocrit-and-renal-function-and-electrolytes-with-a-catheter-and-daily-weights-and-abdominal-girth-and-paracentesis-for-compartment-pressure-and-breathlessness-relief-under-ultrasound-guidance-with-albumin-availability-thinking-and-LMWH-prophylaxis-with-the-platelet-check-and-the-thrombocytopenia-adjacent-platelets-for-the-bleeding-procedure-scenarios-when-paracentesis-is-needed, the antiemetics and VTE-stockings-and-gastrointestinal-motility-and-fluid-balance-nursing-plan; the dopamine-agonist-cabergoline-if-not-already-running-adjacent-question-and-the-avoid-further-hCG-and-avoid-NSAIDs-and-the-dietary-liberal-salt-and-fluid-advice-because-thirst-does-not-replete-the-intravascular-space-reliably; the pregnancy-test-and-its-double-message-answered-honestly (OHSS-will-be-longer-and-worse-if-pregnant-but-the-pregnancy-is-what-she-came-for-and-both-news-can-be-given-by-one-person-in-one-sentence)'; and the prevention-autopsy for the next cycle - 'the antagonist-protocol-and-agonist-trigger-and-freeze-all-strategies-she-may-not-have-had-a-chance-for-because-low-reserve-means-the-protocol-balanced-different-lessons: the dose-and-monitoring-adjacent-lessons: the OHSS-at-28-oocytes-is-a-protocol-review-trigger, and she should be told the next-cycle plan in plain terms before discharge because OHSS recurs if the protocol does not change, and a patient who understands her own risk-stratification consents better to the freeze-all decision when it saves her'.**
-:::
+**Pearl index**: the number of pregnancies per 100 woman-years of use,
+$$
+\text{Pearl index} = \frac{\text{number of pregnancies} \times 1200}{\text{total months of exposure}}.
+$$ {#eq-pearl}
 :::
 
-::: example The DMPA bone-mineral question {#ex-dmpa}
-A 16-year-old with learning disability and epilepsy on enzyme-inducing carbamazepine has had 3 years of DMPA for behaviourally-manageable-menstruation; her parents ask about 'the osteoporosis warnings' and whether to stop.
-::: solution
-**DMPA-in-adolescence-on-an-inducer ([[#def-methods]], [[#def-larc]]): the facts - 'DMPA reduces oestradiol and lowers bone-mineral-acquisition-rate during use, adolescents are the peak-acquisition decade, and the licensed warning exists - but the observational data show BMD largely recovers after stopping and fractures in young users are not established as increased; the decision is therefore a values-balancing act, not a prohibition, and the MHRA-and-FSRH-adjacent guidance is exactly that framing; the alternatives ranked for this girl: the LNG-IUS (lighter bleeding, no systemic oestrogen issue, but insertion in an adolescent often needs anaesthesia and the ovaries-versus-uterus-anatomy-question-answered-by-examination-under-anaesthesia-if-needed), the implant (the enzyme-inducer question: carbamazepine reduces implant levels - the effectiveness drop is real, which is why DMPA and the copper IUD are the inducer-friendly choices, with the LNG-IUS mostly-locally-acting-compromise-counselled), and the combined methods which the inducer also degrades; and if the answer is 'continue DMPA', the modifiers that make it better: calcium-and-vitamin-D-repletion, weight-bearing activity where her epilepsy and physiotherapy allow, the review-with-bone-consideration-at-intervals-not-annually-by-reflex, and the documented discussion that fertility return after stopping is delayed-but-expected so nobody panics at 24'; and the governance - 'menstrual-management-for-disability-is-a-legitimate-medical-indication-with-its-own-ethics-canon: no contraception or amenorrhoea induced for institutional convenience, the capacity-and-assessment-of-wishes-and-best-interests-record-done-under-the-Mental-Capacity-Act-for-adults-and-gillick-for-competent-children, and the second-opinion-and-advocate-involvement that the abuse-scandals-era guidance now mandates - because this consultation is as much about who decides as about what is decided' - [[paediatrics/neurodevelopment]], [[medical-ethics-law/consent-capacity]], [[endocrine/bone-calcium]].**
-:::
+The gap between perfect and typical use is the key counselling point. For methods that depend on the user, typical use is much less effective. For long-acting methods that do not depend on the user, the two are almost the same.
+
+| Method | Typical use (% pregnant in first year) | Perfect use (%) |
+|---|---|---|
+| Contraceptive implant | 0.05 | 0.05 |
+| Levonorgestrel intrauterine system (LNG-IUS) | 0.2 | 0.2 |
+| Copper intrauterine device (Cu-IUD) | 0.8 | 0.6 |
+| Female sterilisation | 0.5 | 0.5 |
+| Vasectomy | 0.15 | 0.1 |
+| Progestogen-only injectable | 6 | 0.2 |
+| Combined pill, patch or ring | 9 | 0.3 |
+| Progestogen-only pill | 9 | 0.3 |
+| Male condom | 18 | 2 |
+| Fertility awareness methods | 24 | 0.4–5 |
+| No method | 85 | 85 |
+
+These are the figures quoted by the FSRH and the NHS, from Trussell's estimates for the United States (2011); they are approximate and vary between populations.
+
+::: theorem Small annual risks accumulate {#thm-cumulative}
+If a method has an annual failure rate $p$ and the risk is roughly the same each year, the probability of at least one pregnancy over $n$ years is
+$$
+P(\text{pregnancy within } n \text{ years}) = 1 - (1-p)^n.
+$$ {#eq-cumulative}
+For small $p$ and $n$, this is close to $np$.
 :::
 
-::: example The hydrosalpinx and the 'quick IVF' request {#ex-hydro}
-A 33-year-old with secondary subfertility, normal semen and ovulation, HSG showing bilateral hydrosalpinges; her private clinic quotes 'you can start IVF next month'; she asks whether to 'just do it'.
-::: solution
-**Fix-the-tube-versus-rush-the-transfer ([[#def-infertility]]): the evidence sentence - 'an untreated hydrosalpinx roughly halves IVF success per transfer - the fluid is embryotoxic-and-flushes-the-cavity reasoning - and the randomised evidence is clear that laparoscopic salpingectomy (or proximal tubal occlusion where adhesions make excision hazardous) before IVF restores the odds; "you can start next month" is commercially true and clinically incomplete, which is the kind of sentence the couple should be equipped to hear as a flag'; the plan - 'the laparoscopy-and-pelvic-adhesions-mapping-with-the-endometriosis-and-infection-history-and-the-STI-and-TB-testing-where-the-history-suggests, the surgery-with-the-histology-and-the-culture-that-might-change-the-antibiotic-or-referral-story, the recovery-cycle-and-then-stimulation-timeline-which-is-weeks-not-months-and-should-be-said-as-a-plan, and the natural-conception-versus-IVF conversation revisited after surgery because the bilateral-damage-finding usually decides IVF anyway and the one-tube-normal-finding might not'; and the counselling hygiene - 'the second-opinion-is-not-an-insult framing for her own GP or another centre, the cost-versus-success-per-treatment-episode numbers in writing including the NHS-criteria-if-she-qualifies-anywhere, the hydrosalpinx-fluid-at-scan-day-management-if-she-were-already-mid-cycle, and the honest note that her secondary subfertility with tubal disease asks a chlamydia-and-PID-history-question-with-treatment-and-partner-and-screening-public-health-implications-she-is-entitled-to-have-raised-kindly-not-judgementally'; because IVF is expensive, imperfect and maximised by boring surgery done first - [[clinical-skills/communication]], [[infectious-diseases/sexually-transmitted-infections]].**
-:::
-:::
-
-::: exercise Advise on EC for the inducer user {level=1}
-A 27-year-old on sertraline and lamotrigine (corrected: no enzyme-inducing antiepileptic - she takes topiramate 200 mg) had condom failure 12 hours ago, BMI 33. What are her EC options and how do the drug and BMI change them?
-::: solution
-**EC-with-inducer-and-BMI ([[#def-larc]]): the ranking for her - 'topiramate at 200 mg is a mild-to-moderate enzyme inducer with progestogen-method-reducing effect, so the LNG-EC option is unreliable (the double-dose-adjacent-guidance-with-its-lower-certainty) and UPA-EC is also cautioned-with-inducers (reduced levels, with the advice that if UPA is used the regular-hormonal-method-timing-and-barrier-rules-and-a-pregnancy-test-follow-up-must-be-particularly-diligent); the copper IUD is the best answer twice over - it is unaffected by enzymes, its efficacy is the least BMI-dependent, and it then provides ongoing contraception; the logistics answer - 'a same-day-fitting-service-which-may-mean-a-different-building-than-the-pharmacy-is-the-correct-prescription-and-the-referral-line-not-a-bounce'; and the BMI counselling done kindly - 'UPA efficacy falls with weight and LNG-EC falls more, which is why guidelines offer the copper IUD first and why, if she declines a device, UPA-with-the-advice-about-reduced-certainty-and-the-3-week-pregnancy-test-is-still-given-not-withheld'; the sertraline-lamotrigine-interaction-noise answered (they do not affect EC), the forward-protection-rule restated, and the method-restart-and-recheck plan so this EC is not a lifestyle' - [[obstetrics-gynaecology/early-pregnancy]].**
-:::
-:::
-
-::: exercise Interpret the day-23 progesterone {level=2}
-A 30-year-old with 35-40 day cycles: day-23 progesterone 18 nmol/L, cycles 35-40 days, mid-cycle pain reported. Is she ovulating? What next in the workup and why is 'day 21' the wrong test here?
-::: solution
-**Late-ovulator ([[#def-infertility]]): the interpretation - 'progesterone above roughly 30 nmol/L indicates ovulation in most labs; 18 on a nominal day 23 of a 38-day cycle means she probably ovulated around day 24-26 and the sample is early - the luteal phase is fixed at 13-15 days, so the sample date should be a week-before-expected-period (the "day 21" rule assumes 28-day cycles); the correct move is to repeat timed to her cycle length or use a baseline-and-rise strategy, not to diagnose luteal insufficiency from mistimed bloods - the diagnosis of 'luteal phase defect' on single-hormone-sampling is a specialty relic worth naming as unreliable'; the next steps - 'the ovulation-timing-and-frequency question (35-40-day cycles with mid-cycle pain and a rising progesterone may be perfectly fertile late-ovulation or the mild-PCOS-adjacent-spectrum-without-the-syndrome's-anovulation - the AMH-and-follicle-count-and-androgens-debate-belongs-to-the-PCOS-criteria-discussion-not-to-this-single-blood), the correct next tests are the other compartments - semen analysis booked now because it changes everything at zero invasiveness, and the tubal assessment timed and indicated - and the corrected-cycle-timing-advice (intercourse-frequency-in-the-wake-of-the-mid-cycle-pain-is-the-cheapest-fertility-treatment-in-medicine)'; and the meta-lesson: before treating a hormone number, check what day the number thinks it is - [[endocrine/reproductive-endocrinology]], [[clinical-skills/clinical-reasoning]].**
-:::
-:::
-
-::: exercise Manage the IUD strings not visible {level=2}
-Two days after a post-partum LNG-IUS insertion at 30 hours, the strings are not visible at the 4-week check; she is asymptomatic, breastfeeding, and the insertion note says 'easy, fundal length 11 cm'. Plan.
-::: solution
-**Strings-not-visible ([[#def-larc]]): the sequence - 'first the outpatient ultrasound through a full bladder (transvaginal if tolerated) to answer the three-way question: in-situ-and-correct, in-situ-and-malpositioned-low-or-angulated, or absent; the "easy insertion with normal sounding" note makes perforation less likely but expulsion is common post-partum and strings retract into the canal at every parity; if the IUS is seen and well-sited: nothing to do, the strings-grow-back-or-do-not-and-its-efficacy-is-confirmed-by-the-scan-image-in-the-notes; if it is low or angled: the discussion of removal-versus-replacement-with-the-bridge-contraception-because-a-malpositioned-IUS-has-higher-expulsion-and-lower-efficacy; if not seen in the uterus: the bedside-or-urine-pregnancy-test-plus-abdominal-imaging-to-locate-it (the post-partum-perforation-into-the-peritoneum-that-presents-at-the-4-week-check-is-real-if-rare) with the laparoscopic-removal-decision-informed-by-position-and-symptoms-and-her-family-planning; and the breastfeeding-and-cycle context handled - contraception is needed now regardless of the period question, the method-continuity-offer (the same-day-replacement-if-she-wants with the counselling), and the documentation that the strings-check-and-the-scan-were-done-because-the-'strings-not-visible'entry-in-a-note-without-a-scan-is-how-migrated-devices-surface-years-later in someone else's clinic - [[obstetrics-gynaecology/postnatal-period]], [[clinical-skills/medical-imaging]].**
-:::
-:::
-
-::: exercise Audit your infertility service's equity and outcomes {level=3}
-Your centre's data: IVF funding eligibility requires under-35-and-no-previous-children-and-2-year-subfertility per commissioning; cycle-start-to-live-birth is 22 percent; a third of patients travel over 90 minutes; the waitlist for fertility-preservation-in-cancer is 3 weeks. Build the audit and advocacy plan.
-::: solution
-**Fertility-equity-audit ([[#def-infertility]]): the numbers that matter - 'the per-woman cumulative live-birth-rate across funded cycles (not the per-transfer headline), the dropout rate by deprivation quintile, ethnicity, and travel-time (the financial-and-emotional-attrition that turns a 3-cycle pathway into 1 cycle for working-class women is an access finding with a survival curve), the time-from-GP-referral-to-first-appointment-and-to-treatment-start-disaggregated, and the oncodepositing-preservation-start-to-chemotherapy interval measured in days against the 2-week-oncology-adjacent-standard - because 3-week-waitlists-are-sterility-manufactured-by-scheduling'; the advocacy evidence - 'the NICE-recommendation-versus-commissioning-implementation-gap-reports-and-the-local-need-numbers-constructed-from-conception-rates-and-PCOS-and-tubal-disease-epidemiology-in-your-catchment, the cost-offset-case (the-neonatal-and-social-costs-of-the-twin-pregnancies-that-single-embryo-transfer-and-funding-caps-trade-against), and the preservation-advocacy-which-is-the-easiest-case-in-medicine: iatrogenic-sterility-prevention-in-a-cured-22-year-old is costed against a lifetime of adoption-and-assisted-conception-and-the-law-is-moving-toward-a-right-to-preservation'; the service fixes within your walls - 'the one-stop-day-clinic (bloods-and-scan-and-semen-and-counsellor-in-one-visit-because-two-working-day-lost-per-appointment-is-itself-the-eligibility-test), the satellite-monitoring-network-with-local-partnership-trusts-and-GP-practices-doing-injections-and-scans-and-bloods-under-protocol-because-90-minutes-each-way-is-a-cycle-completion-barrier, the language-and-interpretation-and-transport-funds-and-the-online-results-and-video-consults-for-the-review-visits, and the 'you may not qualify here - here is exactly who does and what the private numbers look like and what their real per-woman success is' written sheet, because patients who discover the lottery at cycle three lose trust in everyone'; and the measurement the board cannot ignore - 'cumulative-birth-per-woman-starting-treatment-by-quintile, dropout-with-reason-codes, the preservation-interval-median, and the patient-reported-burden-score-published-alongside-the-HFEA-Department-of-Health-success-numbers - because the specialty's real outcome is babies per intention-to-treat population, and that number is a justice metric wearing a lab coat' - [[public-health/determinants-inequalities]], [[public-health/health-systems-economics]].**
-:::
-:::
-
-::: quiz
-Five days after UPA emergency contraception, a patient wants to start the combined pill. The correct advice is:
-- [ ] Start immediately, no extra precautions
-- [x] Wait 5 days before starting any hormonal method, use condoms meanwhile, and remember EC does not protect future sex
-- [ ] Start the POP immediately
-- [ ] UPA and hormonal contraception are forbidden together for one month
-::: solution
-**Progestogen-containing contraception started within 5 days of UPA can reduce UPA's effectiveness; the standard advice is the 5-day delay plus barrier cover, then the regular-method start with its own 7-day or 2-day rules - and a pregnancy test at 3 weeks if no bleed ([[#def-larc]]).**
-:::
+::: proof
+The probability of no pregnancy in a single year is $1-p$. If years are independent, the probability of no pregnancy in $n$ consecutive years is the product $(1-p)^n$, and the probability of at least one pregnancy is the complement. For small $p$, the binomial expansion gives $(1-p)^n \approx 1 - np$, so the cumulative risk is approximately $np$. In practice the failure rate falls with time as couples become more experienced with a method, so the formula slightly overestimates the long-term risk; it remains a useful way to show why a method with a 9% annual failure rate is not a reliable method for someone who must avoid pregnancy for years.
 :::
 
 ::: widget plot
-f: 0.1; 0.3; 7; 9; 0.05; 0.6
-x: 1, 10
-labels: \text{typical-use failures per 100 woman-years (illustrative)}\text{implant and IUDs (LARCs)};\ \text{sterilisation (both partners combined)};\ \text{pill and patch and ring (typical)};\ \text{condoms (typical)};\ \text{copper IUD};\ \text{injection (typical)}
-caption: Contraceptive efficacy is a counselling tool ([[#def-methods]], [[#def-larc]]): the LARC-vs-typical-use gap is roughly ten unintended pregnancies per hundred women per decade, which is why access and fitting-beat-prescription.
+f: 100*(1-(1-p/100)^x); 100*(1-(1-0.0005)^x)
+x: 0, 10
+y: 0, 100
+sliders: p=9:0.05:30:0.05
+labels: \text{method with annual failure } p\%; \text{implant (0.05\% per year)}
+caption: Cumulative percentage of women who become pregnant (vertical axis) over years of use (horizontal axis), using the formula in the Principle. The slider sets the annual typical-use failure rate p. At 9%, the typical-use rate for the pill, more than a third of women would be expected to have at least one pregnancy over five years; with an implant, fewer than 1 in 300. This is a simplified model that assumes the same risk every year.
+:::
+
+::: example A Pearl index {#ex-pearl}
+In a study of a new contraceptive vaginal ring, 400 women used the method for 24 months each, and 12 pregnancies occurred. Calculate the Pearl index.
+::: solution
+Total exposure is $400 \times 24 = 9600$ months. Using [[#eq-pearl]],
+$$
+\text{Pearl index} = \frac{12 \times 1200}{9600} = 1.5.
+$$
+There were 1.5 pregnancies per 100 woman-years of use. Note that this was measured in a trial, where use is usually more careful than in everyday life; the typical-use rate is likely to be higher.
+:::
+:::
+
+## The methods
+
+### Long-acting reversible contraception (LARC)
+
+LARC methods are the implant, the intrauterine methods and the injectable. Because they do not depend on daily action, the implant and intrauterine methods are the most effective reversible methods, and NICE and the FSRH recommend that they be offered to all women seeking contraception.
+
+- The **implant** is a flexible rod containing etonogestrel, inserted under the skin of the upper arm and effective for three years. It inhibits ovulation. Its main drawback is unpredictable bleeding, which is the commonest reason for removal. Fertility returns promptly after removal.
+- The **LNG-IUS** releases levonorgestrel into the uterus. It is licensed for contraception for 5 to 8 years depending on the device. Most users have lighter periods, and many have none, so it is also a first-line treatment for heavy menstrual bleeding ([[obstetrics-gynaecology/menstrual-pelvic-disorders]]) and can provide the progestogen part of hormone replacement therapy.
+- The **Cu-IUD** contains no hormone and is effective for 5 to 10 years depending on the device. Periods may become heavier and more painful. It is also the most effective method of emergency contraception.
+- The **progestogen-only injectable** (medroxyprogesterone acetate) is given every 13 weeks. It inhibits ovulation. It causes a small, largely reversible loss of bone mineral density, may cause weight gain, and fertility can take up to a year to return after stopping.
+
+Risks of intrauterine methods include pain at insertion, infection in the first three weeks (mainly if a sexually transmitted infection is present), expulsion (about 1 in 20), and perforation of the uterus (up to about 2 in 1,000 insertions, more often in breastfeeding women). If a pregnancy occurs with a device in place, the chance that it is ectopic is higher than usual, although the absolute risk of ectopic pregnancy is lower than with no contraception, because so few pregnancies occur.
+
+### Combined hormonal contraception
+
+**Combined hormonal contraception (CHC)** contains an oestrogen (usually ethinylestradiol) and a progestogen. It inhibits ovulation; the progestogen also thickens cervical mucus. It is available as a pill, a patch and a vaginal ring. Traditional regimens include a seven-day break each month that causes a withdrawal bleed; the FSRH supports tailored regimens with shorter or fewer breaks, which reduce the chance of ovulation after a missed pill and the frequency of bleeding.
+
+**Benefits** besides contraception include lighter, more regular and less painful periods, improvement of acne, and a reduced risk of ovarian, endometrial and colorectal cancer that lasts for years after stopping.
+
+**Risks.** The oestrogen component increases the production of clotting factors in the liver, which raises the risk of **venous thromboembolism**. The absolute risk is small but depends on the progestogen. The European Medicines Agency (2014) estimated the annual risk per 10,000 women as about 2 in non-users, 5–7 with pills containing levonorgestrel, norethisterone or norgestimate, and 9–12 with pills containing desogestrel, gestodene or drospirenone. For comparison, the risk in pregnancy and the postnatal period is much higher. CHC also slightly increases the risk of arterial disease (stroke and myocardial infarction), particularly in women who smoke, have hypertension or have migraine with aura, and slightly increases the risk of breast and cervical cancer while it is used.
+
+::: definition The UK Medical Eligibility Criteria {#def-ukmec}
+**UKMEC** classifies each method for each medical condition:
+- **UKMEC 1**: no restriction on use.
+- **UKMEC 2**: the advantages generally outweigh the theoretical or proven risks.
+- **UKMEC 3**: the risks generally outweigh the advantages; use requires expert clinical judgement.
+- **UKMEC 4**: an unacceptable health risk; the method should not be used.
+
+Examples of UKMEC 4 conditions for combined hormonal contraception: migraine with aura; age 35 or over and smoking 15 or more cigarettes a day; blood pressure of 160/100 mmHg or more; a current or past VTE; a known thrombogenic mutation such as factor V Leiden; current breast cancer; ischaemic heart disease or stroke; and less than six weeks after birth in a breastfeeding woman.
+:::
+
+**Drug interactions.** Enzyme-inducing drugs, such as carbamazepine, phenytoin, rifampicin and St John's wort, increase the metabolism of the hormones in CHC, progestogen-only pills and the implant, and make them unreliable. They do not affect the injectable or intrauterine methods, which are therefore preferred for women taking these drugs.
+
+### Progestogen-only pills
+
+**Progestogen-only pills (POPs)** contain no oestrogen, so they can be used by most women who cannot take oestrogen, including women with migraine with aura, women over 35 who smoke, and breastfeeding women. The desogestrel POP inhibits ovulation and has a 12-hour window for a late pill; older POPs act mainly on cervical mucus and have a 3-hour window. Irregular bleeding is the main side effect. Some POPs can be bought from pharmacies in the UK without a prescription.
+
+### Barrier methods, fertility awareness and sterilisation
+
+**Condoms** are the only method that also protects against sexually transmitted infections, so they are recommended in addition to another method for people at risk. **Fertility awareness methods** identify fertile days using cycle length, basal body temperature and cervical secretions; they require training and motivation and are much less effective with typical use. **Female sterilisation**, by laparoscopic occlusion or removal of the tubes, is permanent and should be considered irreversible; its effectiveness is similar to LARC. **Vasectomy** is simpler, with fewer complications, but is not effective until semen analysis shows no sperm, usually after about 12 weeks.
+
+::: example Choosing a method {#ex-ukmec}
+A 37-year-old woman who smokes 20 cigarettes a day asks to start the combined pill because her periods are heavy and painful. Her blood pressure is 128/78 mmHg and her BMI 27. What would you advise?
+::: solution
+At 35 or over and smoking 15 or more cigarettes a day, combined hormonal contraception is **UKMEC 4**: the risk of myocardial infarction and stroke is unacceptable. She should not be offered CHC.
+
+Suitable alternatives that also help heavy painful periods include the **LNG-IUS**, which is both highly effective contraception and first-line treatment for heavy menstrual bleeding, and the injectable or desogestrel POP, which often reduce bleeding. The implant is an effective option but bleeding is unpredictable. She should be offered support to stop smoking. If she stops smoking for at least a year, the UKMEC category for CHC changes, but other risk factors would still need to be assessed. Her heavy bleeding should also be assessed in its own right, including a full blood count.
+:::
+:::
+
+### Emergency contraception
+
+Emergency contraception is used after unprotected sexual intercourse or a contraceptive failure. FSRH guidance describes three options:
+
+- A **Cu-IUD** can be inserted up to 120 hours (5 days) after the first unprotected intercourse in a cycle, or up to 5 days after the earliest likely date of ovulation. It is the most effective option, preventing almost all pregnancies, and is not affected by body weight or other drugs. It then provides ongoing contraception.
+- **Ulipristal acetate**, a selective progesterone receptor modulator, can be taken up to 120 hours after intercourse. It delays ovulation even when taken shortly before the LH surge. Progestogens taken in the following five days can reduce its effect, so hormonal contraception is started five days after taking it.
+- **Levonorgestrel** can be taken up to 72 hours after intercourse. It delays ovulation but is ineffective once the LH surge has started. A double dose is suggested for women with a BMI over 26 kg/m² or weight over 70 kg, or taking enzyme-inducing drugs, although evidence for this is limited.
+
+The oral methods work only by delaying ovulation, so they do not work if ovulation has already happened and do not protect against intercourse later in the same cycle.
+
+::: example Missed pills {#ex-missed-pills}
+A 22-year-old takes a combined pill in the traditional regimen of 21 active pills followed by a 7-day break. She forgot to start her new pack after the break and realises on day 3 of the pack that she has missed the first two active pills. She had unprotected intercourse two days ago. What should she do?
+::: solution
+Missing pills at the start of a pack extends the hormone-free interval, which is when ovulation is most likely to escape suppression. Under FSRH guidance, two or more missed pills (more than 48 hours late) require her to take the most recent missed pill now, continue the pack, and use condoms or abstain until she has taken seven consecutive active pills. Because the pills were missed in the first week and she had unprotected intercourse during the extended break, she also needs **emergency contraception**. The Cu-IUD is most effective. If she chooses an oral method, levonorgestrel allows her to continue the pill immediately; if ulipristal is used, she should wait five days before restarting the pill and use condoms for seven days after restarting. A pregnancy test three weeks later is advised. This is also a good moment to discuss a tailored regimen without a monthly break, or a LARC method.
+:::
+:::
+
+## Subfertility
+
+::: definition Subfertility {#def-subfertility}
+NICE defines **infertility** as failure to conceive after one year of regular unprotected vaginal intercourse in a woman of reproductive age, in the absence of a known cause. The term **subfertility** is often preferred, because most such couples are not sterile and many will conceive without treatment. About 84% of couples in the general population conceive within a year of regular unprotected intercourse, and about 92% within two years.
+:::
+
+NICE recommends earlier referral when the woman is 36 or over, or when there is a known cause, such as amenorrhoea, previous pelvic infection or surgery, or a history of undescended testes or chemotherapy in the man. Female fertility declines with age, especially from the mid-thirties, because both the number and the quality of eggs fall; this is the most important single factor in the success of any treatment.
+
+**Causes.** The commonly quoted approximate distribution is: male factor about 30%, unexplained about 25%, ovulatory disorders about 25%, tubal damage about 20%, and uterine or peritoneal disorders about 10%. The figures add to more than 100% because many couples have more than one factor.
+
+**Investigations** are done for both partners together:
+
+- **Ovulation.** A regular cycle of 21 to 35 days usually indicates ovulation. It is confirmed by a **mid-luteal serum progesterone**, taken about 7 days before the next expected period (day 21 of a 28-day cycle); a level above about 30 nmol/L indicates ovulation. Women with irregular cycles have gonadotrophins (FSH and LH) measured, and prolactin and thyroid function checked if there are symptoms. Anti-Müllerian hormone or antral follicle count estimates **ovarian reserve** and predicts the response to ovarian stimulation, but not the chance of natural conception.
+- **Semen analysis.** Results are compared with the WHO (2021) lower reference limits, including a volume of 1.4 mL, a concentration of 16 million per mL, a total sperm number of 39 million, progressive motility of 30% and normal forms of 4%. An abnormal result is repeated, ideally three months later, because sperm production takes about that long and results vary.
+- **Tubal patency.** Women without known risk factors have hysterosalpingography (X-ray with contrast through the cervix) or hysterosalpingo-contrast sonography. Women with risk factors, such as previous pelvic infection or endometriosis, have laparoscopy and dye, which allows assessment and treatment of other pelvic disease at the same time.
+
+**Treatment** depends on the cause:
+
+- **Anovulation**: weight optimisation if the BMI is high or low; for polycystic ovary syndrome, **letrozole** is now recommended as the first-line drug for ovulation induction by the 2023 international PCOS guideline, with clomifene, metformin, gonadotrophins or laparoscopic ovarian drilling as alternatives. Women with hypothalamic amenorrhoea (for example from low body weight) need weight gain and sometimes pulsatile GnRH or gonadotrophins. Hyperprolactinaemia is treated with a dopamine agonist.
+- **Tubal disease**: surgery for selected cases; in vitro fertilisation (IVF) for most. A hydrosalpinx is removed or clipped before IVF because its fluid lowers implantation rates.
+- **Male factor**: correction of reversible causes; **intracytoplasmic sperm injection (ICSI)**, in which a single sperm is injected into each egg, for severe abnormalities; surgical sperm retrieval for obstructive azoospermia; donor sperm.
+- **Unexplained subfertility**: NICE advises trying to conceive naturally for a total of two years before IVF, because many couples conceive in that time.
+
+**IVF** involves ovarian stimulation with gonadotrophins, egg retrieval under ultrasound guidance, fertilisation in the laboratory and transfer of an embryo to the uterus. NICE recommends three full cycles for women under 40 who have not conceived after two years, and one cycle for women aged 40 to 42 who meet additional criteria, although local funding varies. Success rates fall steeply with the woman's age. The main risks are **ovarian hyperstimulation syndrome** (ovarian enlargement and fluid shift into the abdomen and chest, with risks of thrombosis and kidney injury) and **multiple pregnancy**. In the UK, elective single embryo transfer has reduced the multiple birth rate after IVF from about one in four in the 2000s to well under one in ten.
+
+::: example A couple who have not conceived {#ex-subfertility}
+A couple have been trying to conceive for 18 months. She is 33, with regular 35-day cycles; he is 35 and well. Her mid-luteal progesterone, taken on day 21, was 8 nmol/L. His semen analysis shows a volume of 2.5 mL, a concentration of 12 million per mL, progressive motility of 25% and 3% normal forms. Interpret the results.
+::: solution
+**Progesterone.** For a 35-day cycle, the next period is expected on day 36, so the mid-luteal sample should be taken about 7 days earlier, on **day 28**. A sample on day 21 was taken in the follicular phase, so a low result does not show anovulation. The test should be repeated at the correct time; with regular cycles, she is probably ovulating.
+
+**Semen analysis.** The concentration (12 million per mL, below 16), progressive motility (25%, below 30%) and morphology (3%, below 4%) are all below the WHO 2021 lower reference limits. This is a pattern called oligoasthenoteratozoospermia. The test should be repeated after about three months, and he should be assessed for causes (history, examination including the testes, and endocrine tests if the count is very low).
+
+**Next steps.** Tubal patency should also be assessed. If the repeat semen analysis is similar, the couple should be referred to a fertility specialist; depending on the severity, IVF or ICSI may be recommended. Lifestyle advice for both (smoking, alcohol, BMI, and avoiding heat and anabolic steroids for him) is given.
+:::
+:::
+
+::: warning Do not test progesterone on day 21 of every cycle
+The "day 21 progesterone" is only day 21 for a 28-day cycle. The test is meant to be taken in the mid-luteal phase, about 7 days before the next expected period. In a woman with a 35-day cycle, a day 21 sample is taken before ovulation and gives a falsely low result, which can lead to an incorrect diagnosis of anovulation and unnecessary treatment.
+:::
+
+::: quiz
+A woman had unprotected intercourse 96 hours ago, on day 13 of a regular 28-day cycle. She takes no other medicines and her BMI is 24. Which emergency contraceptive is the most effective option?
+- [ ] Levonorgestrel 1.5 mg.
+- [ ] Ulipristal acetate.
+- [x] A copper intrauterine device.
+- [ ] None, because it is too late for emergency contraception.
+::: solution
+At 96 hours, levonorgestrel is outside its 72-hour window. Ulipristal can be taken up to 120 hours, but because ovulation has probably already occurred around day 14, oral methods that act by delaying ovulation may not work. A **Cu-IUD** can be inserted up to 5 days after intercourse or up to 5 days after the earliest likely date of ovulation and is the most effective option. If she declines an IUD, ulipristal should be offered.
+:::
+:::
+
+::: history
+In 1916 Margaret Sanger opened a birth control clinic in Brooklyn and was arrested for it; in 1921 Marie Stopes opened Britain's first birth control clinic in London. The first combined oral contraceptive was developed in the 1950s by Gregory Pincus, Min Chueh Chang and John Rock, building on Carl Djerassi's and Frank Colton's syntheses of orally active progestogens, and was approved for contraception in the United States in 1960 and in the UK in 1961. The early pills contained much more oestrogen than modern ones, and the link with venous thrombosis, reported in the 1960s, led to progressively lower doses. Intrauterine devices were developed by Ernst Gräfenberg in the 1920s and by Jack Lippes in the 1960s, and the copper IUD followed in the late 1960s. In fertility, the decisive step was the birth of Louise Brown in Oldham in 1978, after the work of Robert Edwards, Patrick Steptoe and Jean Purdy; Edwards received the Nobel Prize in 2010. The UK's Human Fertilisation and Embryology Act 1990 created the HFEA, one of the first statutory regulators of assisted reproduction. Intracytoplasmic sperm injection, first reported by Gianpiero Palermo and colleagues in Brussels in 1992, made it possible for many men with severe sperm abnormalities to become genetic fathers.
 :::
 
 ## Where this leads
 
-Postpartum contraception is in [[obstetrics-gynaecology/postnatal-period]], the early-pregnancy consequences of failure in [[obstetrics-gynaecology/early-pregnancy]], the endocrine workup physiology in [[endocrine/reproductive-endocrinology]], and the reproductive-age evidence in [[public-health/prevention-promotion]].
-
-::: history
-**Contraception's history is access history: the barrier-and-rhythm-eras and the Comstock-and-obscenity-law-era censorship of information, the 1920s-60s clinical-and-chemical path (the Pill-ormsby-and-Pincus-and-Rock research, the 1960-enovid-approval, the 'the pill changed everything and was blamed for everything' decades with the 1970s high-estrogen side-effect reports driving the dose-reduction programme that made modern low-dose formulations safe enough for the eligibility-tables era), the IUD's own cautionary tale (the 1970s Dalkon-Shield uterine-perforation-and-sepsis disaster that poisoned device-contraception uptake for a generation and taught the field that safety data and consent-quality must ship with the device), and the LARC-rehabilitation of the 2000s-2010s (the Contraceptive CHOICE and Colorado Complex-Family-Planning initiatives' near-elimination-of-cost-and-bureaucracy-result-unintended-pregnancy-and-abortion-rate-falls, the UK LARC-in-postpartum-and-post-abortion-programmes, and the pharmacist-and-nurse-fitting-workforce-expansion that made 'fit it today' logistically possible). Emergency contraception's history is pharmacology's shortcut from oestrogen-pairs-to-the-LNG-Yuzpe-to-the-antiprogesteron-and-UPA-and-the-copper-IUD-as-the-gold-standard-recognised-in-guidelines, alongside the ongoing argument that EC access is a proxy for the whole abortion-adjacent-morality-fight (the pharmacy-refusals-and-the-age-16-barriers-and-the-telemedicine-era-prescribing-rules). Infertility treatment's dates are few and huge: the 1978-IVF-birth-of-Louis-Brown-and-the-Edwards-and-Steptoe-and-Popovich-ethics-campaign-that-led-to-the-1990-Human-Fertilisation-and-Embryology-Act-and-its-still-copied-licensing-model, the 1992-ICSI-for-severe-male-factor, the 2000s single-embryo-transfer era and its twins-reduction, the NICE cycle-number debates, and the frozen-transfer and freeze-all revolution that made modern IVF both more effective and OHSS-preventable, and the 2010s-and-2020s-era-of-the-egg-freezing-and-uteral-transplant-and-ovarian-tissue-transplants-and-the-artificial-womb-adjacent-science-fiction-frontier. But the deepest thread is access and demography: the subfertility-prevalence-rise-with-delayed-parenthood, the postcode-lottery-of-commissioning-that-the-2013-NICE-update-did-not-equalise, the egg-bank-and-the-anonymous-donation-history-opening-identity-access-to-donors-in-2005-with-its-unresolved-family-implications, and the oncodepositing-fertility-preservation-becoming-a-rights-conversation. The specialty's honest summary: medicine learned to prevent pregnancy cheaply and to create it expensively, and the ethical weight has always been in which patients get which - [[obstetrics-gynaecology/early-pregnancy]], [[public-health/determinants-inequalities]], [[medical-ethics-law/beginning-of-life]].**
-:::
+Postnatal contraception is in [[obstetrics-gynaecology/postnatal-period]]. Polycystic ovary syndrome and endometriosis, important causes of subfertility, are in [[obstetrics-gynaecology/menstrual-pelvic-disorders]]. Sexually transmitted infections, which cause tubal damage, are in [[infectious-diseases/sexually-transmitted-infections]]. The ethics and law of assisted conception are in [[medical-ethics-law/beginning-of-life]]. Contraception in perimenopausal women is in [[obstetrics-gynaecology/menopause]].
 
 ::: summary
-- Efficacy hierarchies beat efficacy arguments: the LARC-first conversation plus same-day fitting is the intervention, and continuation is predicted by accurate expectations and autonomy.
-- UKMEC category 4 is a short memorisable list (migraine-with-aura, VTE-on-treatment, breast-cancer-current, smoking-over-35 for oestrogens); progestogen-only methods carry almost no VTE signal.
-- EC is a ranked menu - copper IUD best, UPA second, LNG time-limited - with BMI, drug-interaction and forward-protection rules stated explicitly, including the UPA start-contraception 5-day delay.
-- Infertility is staged by three compartments - ovulation, tubes-and-cavity, semen - before any treatment, and ovarian reserve tests predict IVF response, not natural conception.
-- OHSS is preventable by protocol (antagonist, agonist trigger, freeze-all) and treatable by careful inpatient medicine; multiples are prevented by single-embryo transfer, not luck.
-- Reproductive-age counselling is honest numbers: fertility declines with age, freezing works best young, and commissioning lotteries should be disclosed, not discovered.
+- Contraceptives prevent ovulation, block sperm, or prevent fertilisation or implantation; many methods act at more than one step.
+- Typical-use failure rates are much higher than perfect-use rates for user-dependent methods (pill 9% versus 0.3% a year); LARC methods are almost equally effective in both.
+- Over $n$ years the chance of at least one pregnancy is $1-(1-p)^n$, so small annual risks accumulate.
+- UKMEC grades each method from 1 (no restriction) to 4 (unacceptable risk). CHC is UKMEC 4 with migraine with aura, age 35 or over and smoking 15 or more cigarettes a day, previous VTE or a thrombogenic mutation.
+- The VTE risk with CHC is small in absolute terms (about 5–12 per 10,000 women a year, depending on the progestogen, versus 2 in non-users).
+- Enzyme-inducing drugs make pills and the implant unreliable but not the injectable or intrauterine methods.
+- The Cu-IUD is the most effective emergency contraception (up to 120 hours, or up to 5 days after likely ovulation); ulipristal works up to 120 hours, levonorgestrel up to 72 hours.
+- Subfertility is failure to conceive after a year; most couples conceive within two years. Investigate both partners: ovulation (mid-luteal progesterone 7 days before the expected period), semen analysis against WHO 2021 limits, and tubal patency.
+- Letrozole is first-line ovulation induction in PCOS; IVF and ICSI bypass tubal and male factors; OHSS and multiple pregnancy are the main risks of treatment.
 :::
 
 ## Exercises
 
-::: exercise Choose the method {level=1}
-Advise: (a) 19-year-old asthmatic on no meds, chaotic mornings, wants 'something to forget'; (b) 34-year-old with migraine with aura; (c) 41-year-old, heavy painful periods, non-smoker, no contraindications.
+::: exercise Cumulative risk {level=1 check="round(100*(1-0.91^5))"}
+Using [[#eq-cumulative]], what percentage of women using the combined pill with typical use (9% failure per year) would be expected to have at least one pregnancy over five years? Give the nearest whole per cent.
 ::: solution
-**Three-methods ([[#def-methods]]): (a) forgettable means LARC - the implant or the LNG-IUS with the bleeding-pattern counselling, and the injection's 12-weekly-appointment-and-delayed-return-of-fertility-and-bone-mineral caveats discussed against her lifestyle honestly; (b) aura excludes oestrogen methods (UKMEC 4) - the POP, the implant, DMPA or the LNG-IUS or copper are all open, and the 'but I read strokes on the internet' conversation handled by giving the progestogen-only data plainly; (c) the LNG-IUS has the licensed-heavy-bleeding indication and treats both symptoms, with the 5-year duration, the fertility-return-immediately-after-removal note, and the alternative options (the NSAID-and-fibrinolytic-and-combined-pill-in-4-day-regimen medical routes and the ablation-and-surgery routes down the line) so she chooses rather than receives - and the condom-and-STI-message is offered to everyone, married or not.' - [[obstetrics-gynaecology/menstrual-pelvic-disorders]].**
+$1 - (1 - 0.09)^5 = 1 - 0.91^5 = 1 - 0.624 = 0.376$, so about **38%**. The approximation $np$ would give 45%; the exact formula is lower because a woman can only have a "first" pregnancy once.
 :::
 :::
 
-::: exercise Handle the non-palpable implant {level=2}
-A woman requests implant removal after 3 years; it is not palpable in the arm; she has had 'odd tingling' since a reinsertion attempt elsewhere; x-ray is negative. Plan the next steps and the consent conversation.
+::: exercise Timing the progesterone test {level=1 check="28"}
+A woman has regular 35-day cycles. On which cycle day should a mid-luteal progesterone be taken?
 ::: solution
-**The-migrated-implant ([[#def-larc]]): the imaging - 'the implant contains barium and is usually x-ray visible, so a well-taken negative film pushes the search toward deep or ectopic positions - but a poor film proves nothing either way: ultrasound of the arm by an operator who removes implants daily, and if not found, MRI - and the deep-intramuscular-and-neurovascular-adjacent-migration-with-the-tingling-she-reports-is-the-reason-this-is-an-expert-removal-not-a-local-anaesthetic-nudge-in-a-treatment-room'; the consent - 'the explanation that further attempts at blind removal are how implants end up in the pulmonary artery literature and how nerves get damaged, the referral to the trained remover or the specialised unit, and the documentation that the tingling preceded this attempt and was reported before removal was planned - because the medico-legal lesson in every non-palpable-implant case is that the first failed attempt should trigger training or referral, not persistence'; and the after - 'the ultrasound-confirmed-removal-and-correct-placement-check-and-the-new-method-discussion-she-asked-for-three-visits-ago-and-the-contraception-bridge-in-the-interim - because the implant that cannot be found is also the contraception that cannot be assumed'.**
+The next period is expected on day 36. The mid-luteal sample is taken about 7 days before that, on day **28**.
 :::
 :::
 
-::: exercise Counsel the 39-year-old single woman {level=2}
-A 39-year-old with no partner asks about egg freezing 'as insurance' and whether she should 'just wait for IVF'. Give the honest evidence and the plan you would offer.
+::: exercise UKMEC categories {level=1}
+Give the UKMEC category for combined hormonal contraception in each case: (a) a 25-year-old with migraine without aura; (b) a 30-year-old with migraine with aura; (c) a 28-year-old whose mother had a DVT at 45 but who has not been tested for a thrombophilia; (d) a 40-year-old non-smoker with no other risk factors.
 ::: solution
-**Egg-freezing-counselling ([[#def-infertility]]): the numbers - 'elective oocyte freezing works best at younger ages: per-baby-estimates from the large registry data fall steeply with age at freezing, a 39-year-old cycle yields fewer and lower-competence-oocytes and may need several cycles with no guarantee, and "insurance" should be quoted as probabilities and costs, not as a pause button; natural conception at 39 also remains probable in absolute terms per year, and IVF-at-42-with-own-eggs-has-a-low-per-cycle-success - which is why the conversation is about her actual values not about fear'; the plan - 'the ovarian-reserve-and-infection-and-general-health-workup, the expected-yet-not-guaranteed-cycle-count-and-cost estimate given before consent, the realistic framing that this is an option to reduce future regret-risk not an assurance, and the parallel truthful sentence that a donor-egg-or-adoption-or-single-mother-by-choice-pathway exist and are also life-plans rather than fallbacks; and the partner-adjacent-practical-question (sperm-banking and legal-consent forms are part of the plan even without a partner)'; and the system honesty - 'the clinic that quotes a per-baby rate per woman rather than per-embryo-transfer should be the one she signs with, and the commissioning and tax questions given upfront - because this consultation is one of the few where the specialty sells hope to people who will pay retail, and the ethics of a specialty that markets is to tell the truth early'.**
+(a) For starting CHC in a woman with migraine without aura, UKMEC 2. (b) **UKMEC 4**: migraine with aura is associated with an increased risk of ischaemic stroke, which oestrogen increases further. (c) A family history of VTE in a first-degree relative under 45 is UKMEC 3; at 45 or over it is UKMEC 2. Thrombophilia testing is not recommended routinely. (d) Age 40 or over is UKMEC 2 for CHC.
 :::
 :::
 
-::: exercise Design the contraception-first postpartum clinic {level=3}
-Your maternity unit: 28 percent of women use no reliable method at 3 months postpartum; LARC at caesarean is 'occasionally'; the GP 6-week check is not reliably contraception-inclusive; repeat-unintended-pregnancy within 12 months runs around 1 in 8 in the deprived quintiles. Build the service.
+::: exercise Interaction {level=2}
+A 24-year-old woman with epilepsy taking carbamazepine uses the combined pill. Explain the problem and suggest suitable alternatives.
 ::: solution
-**The-postpartum-contraception-service ([[#def-larc]], [[#def-methods]]): the design - 'contraception becomes a named item in the antenatal plan by 28 weeks (the documented conversation with method-specific information sheets and the quick-choose-appointment), the post-placental-and-caesarean-in-situ-IUD-and-implant-programmes-staffed-with-trained-inserters-and-the-48-hour-and-4-week-rules-written-as-algorithms-so-the-anaesthetist-and-registrar-are-not-guessing, the "no method yet" women tracked for the day-21-and-6-week-community-midwife-and-GP-handover-with-an-open-access-fitting-clinic-without-referral-bureaucracy, and the 3-month-postpartum check with a contraception-attendance-report that is the unit's compliance metric'; the workforce and finance - 'the band-6-contraception-liaison-midwife-and-nurse-inserters-with-competency-logbooks-and-proctored-numbers, the fitting rooms and times (the 'we could not fit it until week 12 because theatre time' problem solved as a scheduling not a clinical question), and the business case written in the currency the board reads - the repeat-unintended-pregnancy-and-abortion-and-unequal-interval-pregnancy-avoidance-numbers with their local maternity-and-neonatal costs'; the equity and consent layer - 'the LARC offer never becomes the LARC push - the coercion history of postpartum-long-acting-programs-and-disability-and-minority-women makes 'offer, inform, respect refusal, invite re-contact' a written service value with audit, the interpreter-not-a-relative rule, and the 'your methods, your reasons' conversation scripts from the community-advocacy-partnership-because-uptake-is-trust-times-access'; and the measurement - 'the method-at-3-months-by-quintile-and-ethnicity, the fitted-before-discharge rate for those who chose a LARC, the 12-month-continuation-by-method, the repeat-unintended-pregnancy-within-a-year rate with its 1-in-8-deprivation-gap-as-the-headline, and the annual review where the unit reads its own numbers out loud, because the entire service design is one long refusal to accept that sentence as inevitable' - [[public-health/determinants-inequalities]], [[public-health/prevention-promotion]].**
+Carbamazepine induces liver enzymes (cytochrome P450 3A4), increasing the metabolism of both ethinylestradiol and the progestogen, so the pill becomes unreliable; the same applies to the progestogen-only pill and the implant. Suitable alternatives are the **Cu-IUD**, the **LNG-IUS** or the **progestogen-only injectable**, whose effectiveness is not affected. Pre-pregnancy counselling about antiepileptic drugs and folic acid should also be offered ([[obstetrics-gynaecology/pregnancy-antenatal]]).
+:::
+:::
+
+::: exercise A Pearl index from a trial {level=2 check="4"}
+In a trial of a new contraceptive patch, 250 women were enrolled. Two hundred used it for 12 months; the other 50 stopped after 6 months and were not followed further. There were 9 pregnancies, all while the patch was being used. Calculate the Pearl index.
+::: hint
+Total exposure is the sum of the months that each woman actually used the method, not the number of women multiplied by 12.
+:::
+::: solution
+Exposure: $200 \times 12 + 50 \times 6 = 2400 + 300 = 2700$ months. Using [[#eq-pearl]], the Pearl index is $9 \times 1200 / 2700 = 10800/2700 = 4$ pregnancies per 100 woman-years. Using $250 \times 12 = 3000$ months by mistake would give 3.6 and make the method look better than it is.
+:::
+:::
+
+::: exercise Male factor {level=2}
+A semen analysis shows no sperm (azoospermia) on two occasions. The man has a normal testicular volume and normal FSH. What is the likely mechanism and what treatment options exist?
+::: solution
+Normal testicular size and FSH suggest that sperm production is normal and the problem is **obstruction**, for example congenital bilateral absence of the vas deferens (associated with CFTR variants, so genetic testing and counselling are needed) or post-infective or post-surgical blockage, including vasectomy. Options are surgical sperm retrieval from the epididymis or testis with ICSI, surgical reconstruction in some cases (such as vasectomy reversal), or donor sperm. By contrast, small testes with raised FSH suggest testicular failure (non-obstructive azoospermia), for which sperm retrieval is less often successful.
+:::
+:::
+
+::: exercise Counselling about LARC {level=3}
+A 19-year-old has had two unplanned pregnancies while using condoms and the pill. She asks for "something I don't have to think about" but is worried about weight gain and irregular bleeding. Compare the options she could choose, with their advantages and drawbacks.
+::: solution
+**Implant**: the most effective reversible method (0.05% failure), lasts three years, quickly reversible; drawback: unpredictable bleeding, which is the commonest reason for removal (some bleeding patterns improve with treatment). Weight gain has not been shown to be caused by the implant.
+
+**LNG-IUS**: highly effective (0.2%), lasts 5 to 8 years depending on the device, usually makes periods lighter; drawbacks: insertion is a pelvic procedure, irregular spotting in the first months, small risks of expulsion and perforation.
+
+**Cu-IUD**: highly effective, no hormones, can last up to 10 years; drawbacks: periods may become heavier and more painful.
+
+**Injectable**: very effective with timely injections (6% typical use because injections are missed); drawbacks: needs an injection every 13 weeks, can cause weight gain (more often in young women with a BMI over 30), delay in return of fertility, and reversible bone density loss.
+
+She should also be advised to continue using condoms to protect against sexually transmitted infections, and screening for chlamydia and gonorrhoea should be offered. The choice is hers, made with clear, unbiased information and without pressure.
+:::
+:::
+
+::: exercise A complex subfertility history {level=3}
+A 38-year-old woman has been trying to conceive for 8 months. She had a ruptured appendix with peritonitis at 15 and has painful periods and pain during intercourse. Her partner has a child from a previous relationship. What features of her history matter, and how should she be investigated?
+::: solution
+**Timing.** At 38, she should be referred now rather than waiting for a year: NICE advises earlier referral for women aged 36 or over, and she has a likely cause.
+
+**History.** Peritonitis from a ruptured appendix can cause pelvic adhesions and tubal damage. Painful periods and deep dyspareunia suggest **endometriosis**, which can distort pelvic anatomy and impair fertility. A previous pregnancy with another partner does not exclude a male factor now.
+
+**Investigations.** Ovarian reserve (AMH or antral follicle count), because her age and possible endometriosis may reduce it; confirmation of ovulation; semen analysis for her partner; transvaginal ultrasound for endometriomas and other pelvic pathology; and, because of her risk factors, **laparoscopy and dye** rather than hysterosalpingography, which allows tubal assessment and diagnosis and treatment of endometriosis and adhesions at the same procedure. If her tubes are badly damaged or her reserve is low, IVF should be discussed early, because her age limits the time available.
 :::
 :::

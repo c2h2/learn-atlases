@@ -6,11 +6,11 @@
   "level": 3,
   "order": 250,
   "tagline": "Pregnancy and birth, complications of pregnancy, contraception, fertility and gynaecological disease",
-  "summary": "Women’s health spans the reproductive years and beyond. This course covers normal pregnancy and antenatal care, complications of pregnancy, labour and birth, the postnatal period, early pregnancy problems, contraception and fertility, menstrual and pelvic disorders, gynaecological cancers and screening, and the menopause.",
+  "summary": "Women's health from pregnancy to the menopause. The course covers maternal physiology and antenatal care, the complications of pregnancy, labour and birth, the postnatal period, early pregnancy problems, contraception and subfertility, menstrual and pelvic disorders, gynaecological cancers and screening, and the menopause.",
   "overview": [
-    "Obstetrics and gynaecology cover the medicine of pregnancy, childbirth and the female reproductive tract — areas where two patients are present at once, where physiology and pathology overlap, and where conditions can move from well to catastrophic within minutes. This course teaches the physiology first, so that the complications make sense: how placentation transforms the maternal circulation, why pregnancy alters every drug's pharmacokinetics, how the menstrual cycle is built.",
-    "The obstetric half runs from conception booking and antenatal care — screening, dating, fetal growth, the anatomy survey — through the hypertensive disorders, diabetes, bleeding, preterm labour, multiple pregnancy and reduced fetal movement, to labour itself: assessment of progress, partographs, instrumental birth and caesarean section, and the emergencies of postpartum haemorrhage and maternal collapse. The postnatal chapter covers puerperal complications, thromboprophylaxis, breastfeeding and perinatal mental health. The gynaecological half covers early pregnancy (miscarriage, ectopic, trophoblastic disease), contraception and fertility, menstrual and pelvic disorders including fibroids, endometriosis and polycystic ovary syndrome, gynaecological cancers with their screening logic, and the menopause.",
-    "Quantitative and safety-critical material recurs: blood loss estimation and shock indices in haemorrhage, magnesium and antihypertensive logic in pre-eclampsia, the curve of beta-hCG, risk-of-malignancy indices, WHO growth-based fetal growth charts, and the saving-mothers-audit findings that reduced deaths to record lows. All management statements describe principles under current guidelines; cases are fictional."
+    "Obstetrics and gynaecology deal with pregnancy, birth and the female reproductive tract. In obstetrics there are two patients at once, normal values change, and a woman can move from well to critically ill within minutes. The course therefore starts with physiology: how pregnancy changes the circulation, kidneys, breathing and clotting, and why results must be interpreted against pregnancy ranges.",
+    "The obstetric chapters follow a pregnancy from booking to the weeks after birth: antenatal screening and risk assessment; pre-eclampsia, gestational diabetes, bleeding, preterm birth and fetal growth restriction; labour, fetal monitoring, operative birth and the emergencies of labour; and postpartum haemorrhage, sepsis, thromboembolism and perinatal mental health. The gynaecological chapters cover early pregnancy loss and ectopic pregnancy, contraception and subfertility, abnormal bleeding, endometriosis and polycystic ovary syndrome, the cancers of the cervix, endometrium, ovary and vulva, and the menopause.",
+    "Numbers matter throughout, and the course works through them: predictive values of screening and diagnostic tests, numbers needed to treat, hCG ratios, contraceptive failure rates, the risk of malignancy index and absolute risks of hormone therapy. Management is described as principles under current UK guidance (NICE, RCOG, FSRH and the NHS screening programmes), with WHO guidance where it differs; doses are illustrative and local guidelines apply. All cases are fictional."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -18,21 +18,22 @@
     "anatomy"
   ],
   "outcomes": [
-    "Describe maternal physiology in pregnancy — cardiovascular, respiratory, renal, haematological and endocrine — and its implications for drug handling and interpreting routine bloods.",
-    "Outline antenatal care: dating, routine screening (anaemia, infections, aneuploidy and anomaly), fetal growth surveillance and the evidence behind each element.",
-    "Recognise and initiate management of pre-eclampsia and the hypertensive disorders, antepartum haemorrhage, preterm labour, diabetes in pregnancy and rhesus disease, including the preventive strategies.",
-    "Manage normal labour — assessment, partograph, analgesia options — and the indications and principles of induction, instrumental birth and caesarean section; recognise obstructed labour and uterine rupture.",
-    "Diagnose and resuscitate the obstetric emergencies: postpartum haemorrhage with its causes and staged management, eclampsia, shoulder dystocia, cord prolapse, amniotic-fluid embolism and maternal collapse in pregnancy.",
-    "Assess early pregnancy: distinguish the types of miscarriage, diagnose ectopic and trophoblastic disease with hCG and ultrasound logic, and describe the management options for each.",
-    "Compare contraceptive methods by mechanism, efficacy and suitability, and outline subfertility investigation and the principles of assisted conception.",
-    "Investigate abnormal uterine bleeding, vaginal discharge and pelvic pain; manage fibroids, endometriosis, adenomyosis and polycystic ovary syndrome; and apply the screening and referral logic for cervical, endometrial, ovarian and vulval cancer.",
-    "Describe the menopause and perimenopause — symptoms, bone and cardiovascular consequences, and the benefits, risks and routes of hormone and non-hormone therapy."
+    "Describe the physiological changes of pregnancy and interpret routine results against pregnancy reference ranges.",
+    "Record and interpret an obstetric history, including gestational age, gravidity and parity.",
+    "Outline UK antenatal care and screening, and explain the predictive values of screening tests and the prevention of rhesus disease.",
+    "Recognise and outline the management of hypertensive disorders, gestational diabetes, antepartum haemorrhage, preterm labour and fetal growth restriction.",
+    "Explain the physiology and stages of normal labour, interpret fetal heart rate monitoring, and outline induction, operative birth and the management of labour emergencies.",
+    "Recognise postpartum haemorrhage, sepsis, thromboembolism and perinatal mental illness, and outline their management.",
+    "Assess bleeding and pain in early pregnancy using ultrasound and serum hCG, and outline the management of miscarriage, ectopic pregnancy and molar pregnancy.",
+    "Compare contraceptive methods by mechanism, effectiveness and eligibility, and outline the investigation and treatment of subfertility.",
+    "Investigate abnormal uterine bleeding and pelvic pain, and outline the management of fibroids, endometriosis, polycystic ovary syndrome and pelvic inflammatory disease.",
+    "Explain cervical screening and the presentation of gynaecological cancers, and discuss the benefits and risks of menopausal hormone therapy in absolute terms."
   ],
   "chapters": [
     {
       "slug": "pregnancy-antenatal",
       "title": "Pregnancy and antenatal care",
-      "summary": "Physiology of pregnancy, antenatal care and screening.",
+      "summary": "Maternal physiology, gravidity and parity, antenatal care and screening.",
       "requires": [
         "endocrine/reproductive-endocrinology"
       ]
@@ -40,7 +41,7 @@
     {
       "slug": "pregnancy-complications",
       "title": "Complications of pregnancy",
-      "summary": "Pre-eclampsia, gestational diabetes, bleeding in pregnancy and preterm labour.",
+      "summary": "Pre-eclampsia, diabetes, cholestasis, antepartum haemorrhage, preterm birth, growth restriction and twins.",
       "requires": [
         "obstetrics-gynaecology/pregnancy-antenatal"
       ]
@@ -48,7 +49,7 @@
     {
       "slug": "labour-birth",
       "title": "Labour and birth",
-      "summary": "Normal labour, monitoring, assisted birth and caesarean section.",
+      "summary": "Normal labour, fetal monitoring, induction, operative birth and labour emergencies.",
       "requires": [
         "obstetrics-gynaecology/pregnancy-antenatal",
         "anatomy/pelvis-perineum"
@@ -57,7 +58,7 @@
     {
       "slug": "postnatal-period",
       "title": "The postnatal period",
-      "summary": "Postnatal care, breastfeeding, postpartum haemorrhage and perinatal mental health.",
+      "summary": "Recovery after birth, postpartum haemorrhage, sepsis, thromboembolism, perinatal mental health and breastfeeding.",
       "requires": [
         "obstetrics-gynaecology/labour-birth"
       ]
@@ -65,7 +66,7 @@
     {
       "slug": "early-pregnancy",
       "title": "Early pregnancy problems",
-      "summary": "Miscarriage and ectopic pregnancy.",
+      "summary": "Pregnancy of unknown location, miscarriage, ectopic and molar pregnancy, and hyperemesis.",
       "requires": [
         "obstetrics-gynaecology/pregnancy-antenatal"
       ]
@@ -73,7 +74,7 @@
     {
       "slug": "contraception-fertility",
       "title": "Contraception and fertility",
-      "summary": "Methods of contraception, subfertility and assisted reproduction.",
+      "summary": "Contraceptive methods and effectiveness, emergency contraception, subfertility and assisted conception.",
       "requires": [
         "endocrine/reproductive-endocrinology"
       ]
@@ -81,7 +82,7 @@
     {
       "slug": "menstrual-pelvic-disorders",
       "title": "Menstrual and pelvic disorders",
-      "summary": "Heavy and painful periods, endometriosis, fibroids and polycystic ovary syndrome.",
+      "summary": "Heavy and painful periods, fibroids, endometriosis, polycystic ovary syndrome, amenorrhoea and pelvic infection.",
       "requires": [
         "endocrine/reproductive-endocrinology"
       ]
@@ -89,7 +90,7 @@
     {
       "slug": "gynaecological-cancer",
       "title": "Gynaecological cancer and screening",
-      "summary": "Cervical, endometrial and ovarian cancer, and cervical screening.",
+      "summary": "Cervical screening and cervical, endometrial, ovarian and vulval cancer.",
       "requires": [
         "obstetrics-gynaecology/menstrual-pelvic-disorders"
       ]
@@ -97,7 +98,7 @@
     {
       "slug": "menopause",
       "title": "The menopause",
-      "summary": "Physiology of the menopause, its symptoms and treatment options.",
+      "summary": "Physiology and diagnosis of the menopause, premature ovarian insufficiency and hormone therapy.",
       "requires": [
         "endocrine/reproductive-endocrinology"
       ]
@@ -105,71 +106,84 @@
   ],
   "history": [
     {
-      "year": 1817,
-      "title": "Forceps and transfusion",
-      "detail": "James Blundell designs a spring-forceps delivery for obstructed labour and, the following year, performs the first successful human blood transfusion — defibrinated donor blood given to a patient dying of gastric bleeding; obstetrics, the specialty most likely to kill by haemorrhage, begins both its instrumental and its transfusion era.",
+      "year": 1829,
+      "title": "Transfusion for postpartum haemorrhage",
+      "detail": "James Blundell reports in The Lancet a successful transfusion of human blood to a woman bleeding after childbirth, using his own apparatus. Transfusion would not become safe until blood groups were discovered in 1901.",
       "people": [
         "James Blundell"
       ]
     },
     {
       "year": 1847,
-      "title": "Handwashing against childbed fever",
-      "detail": "Ignaz Semmelweis, at the Vienna general hospital, demonstrates that puerperal fever is carried on examiners' hands from cadavers and mandates chlorine hand-rubs; mortality in his clinic falls from around ten per cent to around one, though the profession's reception of the lesson takes another forty years.",
+      "title": "Handwashing against puerperal fever",
+      "detail": "Ignaz Semmelweis, in Vienna, requires doctors and students to wash their hands in chlorinated lime solution before examining women, and deaths from puerperal fever on his ward fall sharply. His conclusions were widely rejected during his lifetime.",
       "people": [
         "Ignaz Semmelweis"
       ]
     },
     {
-      "year": 1847,
-      "title": "Anaesthesia in labour",
-      "detail": "James Young Simpson's experiments with chloroform culminate in its use for childbirth in Edinburgh and, by 1853, royal acceptance; labour ceases to be an ordeal that must simply be endured, and the debate over analgesia's risks to mother and baby begins.",
+      "year": 1853,
+      "title": "Chloroform for a royal birth",
+      "detail": "After James Young Simpson introduced chloroform for pain relief in labour in Edinburgh in 1847, John Snow gives it to Queen Victoria at the birth of Prince Leopold, making analgesia in childbirth socially acceptable.",
       "people": [
-        "James Young Simpson"
+        "James Young Simpson",
+        "John Snow"
       ]
     },
     {
-      "year": 1928,
+      "year": 1943,
       "title": "The cervical smear",
-      "detail": "Georgios Papanicolaou publishes his diagnostic smears in America; after the Toronto work of Bader, Saunders and Casson and the Berrill–Rank campaigns, cervical exfoliative cytology becomes the model of screening — population screening halves cervical-cancer mortality where it is organised well.",
+      "detail": "Georgios Papanicolaou and Herbert Traut publish their monograph showing that vaginal and cervical cytology can detect cancer before symptoms, the basis of cervical screening programmes that later greatly reduced cervical cancer deaths.",
       "people": [
         "Georgios Papanicolaou",
-        "William H. Bader"
+        "Herbert Traut"
       ]
     },
     {
       "year": 1958,
-      "title": "Ultrasound sees the fetus",
-      "detail": "Ian Donald and Tom Brown in Aberdeen apply the pulse-echo 'wedge' scanner to obstetrics, distinguishing twin from hydrocephalic pregnancies by sound; obstetrics acquires its safest imaging modality, and the entire modern edifice of dating, anomaly and growth assessment follows.",
+      "title": "Ultrasound in obstetrics",
+      "detail": "Ian Donald, John MacVicar and Tom Brown in Glasgow publish their use of pulsed ultrasound to image abdominal masses and pregnancies, beginning the use of ultrasound for dating, growth and anomaly assessment.",
       "people": [
         "Ian Donald",
+        "John MacVicar",
         "Tom Brown"
       ]
     },
     {
       "year": 1960,
-      "title": "The pill",
-      "detail": "Following Gregory Pincus's and Min-Chueh Chang's rabbit experiments and John Rock's clinical trials, the first combined oral contraceptive is licensed; fertility becomes separable from intercourse on a scale that changes women's health, work and family timing — and the thrombotic risk of the early high-dose pills teaches the dose–risk lesson of hormonal pharmacology.",
+      "title": "The oral contraceptive pill",
+      "detail": "Building on the work of Gregory Pincus, Min Chueh Chang and John Rock, the first combined oral contraceptive is approved for contraception in the United States, followed by the UK in 1961.",
       "people": [
         "Gregory Pincus",
-        "John Rock",
-        "Min-Chueh Chang"
+        "Min Chueh Chang",
+        "John Rock"
       ]
     },
     {
       "year": 1966,
       "title": "Preventing rhesus disease",
-      "detail": "Clarke in Sheffield and, in parallel, Gorman in New York show that antenatal and postnatal anti-D immunoglobulin prevents rhesus haemolytic disease; a mass screen-and-treat programme turns the commonest cause of immune hydrops and kernicterus into a preventable event.",
+      "detail": "Clinical trials by Cyril Clarke and Ronald Finn in Liverpool and by Vincent Freda, John Gorman and William Pollack in New York show that anti-D immunoglobulin given to RhD-negative mothers prevents sensitisation, making haemolytic disease of the newborn largely preventable.",
       "people": [
         "Cyril Clarke",
-        "Vincent Gorman",
-        "Ronald Finn"
+        "Ronald Finn",
+        "Vincent Freda",
+        "John Gorman",
+        "William Pollack"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "Antenatal corticosteroids",
+      "detail": "Graham Liggins and Ross Howie publish a randomised trial in New Zealand showing that corticosteroids given to women before preterm birth reduce respiratory distress and death in their babies, following Liggins's 1969 observations in lambs.",
+      "people": [
+        "Graham Liggins",
+        "Ross Howie"
       ]
     },
     {
       "year": 1978,
-      "title": "A baby by in-vitro fertilisation",
-      "detail": "Louise Brown is born in Oldham after Patrick Steptoe's laparoscopic egg recovery and Robert Edwards's laboratory fertilisation; the field of assisted conception — and its ethics, regulation and multiple-pregnancy lessons — begins.",
+      "title": "Birth after in vitro fertilisation",
+      "detail": "Louise Brown is born in Oldham after the work of Robert Edwards, Patrick Steptoe and Jean Purdy, beginning the era of assisted conception; Edwards received the Nobel Prize in 2010.",
       "people": [
         "Robert Edwards",
         "Patrick Steptoe",
@@ -178,8 +192,8 @@
     },
     {
       "year": 1983,
-      "title": "Papillomavirus causes cervical cancer",
-      "detail": "Harald zur Hausen detects hepatitis-B DNA in cervical-cancer tissue — the method — and then, in a decade of work, clones papillomavirus from cervical cancers, proving the aetiological link that makes HPV vaccination the first true anti-cancer vaccine (Nobel Prize 2008).",
+      "title": "Papillomavirus and cervical cancer",
+      "detail": "Harald zur Hausen's group isolates HPV 16 from cervical cancer tissue, followed by HPV 18 in 1984, establishing the viral cause of cervical cancer and leading to HPV testing and vaccination. Zur Hausen shared the 2008 Nobel Prize.",
       "people": [
         "Harald zur Hausen"
       ]
@@ -187,25 +201,46 @@
   ],
   "references": [
     {
-      "title": "The Obstetrics Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the system and the pregnancy.",
-      "slug": "ref1"
+      "title": "Williams Obstetrics",
+      "authors": "F. Gary Cunningham, Kenneth J. Leveno, Jodi S. Dashe, Barbara L. Hoffman, Catherine Y. Spong and Brian M. Casey",
+      "year": 2022,
+      "note": "Twenty-sixth edition. The comprehensive reference for maternal physiology, pregnancy complications and labour, from a US perspective."
     },
     {
-      "title": "The Obstetrics Guide",
-      "authors": "Textbook",
+      "title": "Berek & Novak's Gynecology",
+      "authors": "Jonathan S. Berek (editor)",
       "year": 2019,
-      "note": "A rigorous treatment of the system and the system.",
-      "slug": "ref2"
+      "note": "Sixteenth edition. A standard reference for benign gynaecology, reproductive endocrinology, infertility and gynaecological oncology."
     },
     {
-      "title": "Clinical Obstetrics",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the pregnancy and the practice.",
-      "slug": "ref3"
+      "title": "Antenatal care (NG201), Hypertension in pregnancy (NG133), Intrapartum care (NG235) and Menopause (NG23)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2023,
+      "note": "The NICE guidelines that set UK practice for the topics in this course; check the current versions online, as they are updated regularly."
+    },
+    {
+      "title": "Green-top Guidelines",
+      "authors": "Royal College of Obstetricians and Gynaecologists",
+      "year": 2024,
+      "note": "Evidence-based UK guidance on specific problems, including postpartum haemorrhage, shoulder dystocia, ectopic pregnancy, recurrent miscarriage and hyperemesis gravidarum."
+    },
+    {
+      "title": "UK Medical Eligibility Criteria for Contraceptive Use (UKMEC)",
+      "authors": "Faculty of Sexual and Reproductive Healthcare",
+      "year": 2016,
+      "note": "Amended 2019. The reference for which contraceptive methods are safe for women with particular medical conditions, with FSRH guidance on individual methods."
+    },
+    {
+      "title": "Saving Lives, Improving Mothers' Care",
+      "authors": "MBRRACE-UK",
+      "year": 2025,
+      "note": "The annual UK confidential enquiry into maternal deaths and morbidity; reading its case lessons is the best way to understand why the warning signs in this course matter."
+    },
+    {
+      "title": "WHO recommendations on antenatal care for a positive pregnancy experience",
+      "authors": "World Health Organization",
+      "year": 2016,
+      "note": "The international framework for antenatal care, useful for comparing UK practice with care in other settings."
     }
   ],
   "next": []

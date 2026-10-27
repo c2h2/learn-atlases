@@ -1,141 +1,331 @@
-Antenatal care is where most of obstetrics actually happens: sixteen to fifteen routine visits, a handful of scans, and a screening programme whose entire purpose is to find the small minority of pregnancies that will go wrong before they do. **This chapter covers the schedule and its evidence base, maternal physiology as the interpreter of symptoms, the screening and surveillance programme from dating to growth, management of the common pre-existing and pregnancy-specific conditions that antenatal clinics actually own (anaemia, hypertension risk, diabetes screening, thyroid disease, epilepsy, mental health, drugs and alcohol, infections including the routine bloods and the blood-group and antibody work), and the conversation skills that make risk communication survivable for patients who are, until proven otherwise, well.**
+Most pregnancies end well with very little medical help. Antenatal care exists for the minority that do not, and its difficulty is that the two groups look the same at the start. A woman with a placenta that is beginning to fail feels as well at 12 weeks as one whose pregnancy will be entirely normal. Antenatal care therefore works by repeated, structured checks: a careful history at booking, a short list of blood tests, two ultrasound scans, blood pressure and urine at every visit, and a plotted measurement of fetal growth. Each element is there because it finds something treatable.
 
-## The schedule and its physiology
+To interpret any of these checks you must first know what is normal in pregnancy, and normal is different. Blood volume rises by nearly half, the kidneys filter more, the breathing pattern changes and the clotting system shifts towards thrombosis. A haemoglobin, a creatinine or a blood gas that would be normal in a non-pregnant woman can be a warning sign in pregnancy, and the reverse is also true.
 
-::: definition The antenatal schedule and maternal physiology {#def-schedule}
-**A standard low-risk UK schedule runs: booking at 8-10 weeks (history including obstetric, medical, psychiatric, medication and family history; BMI, blood pressure, urinalysis, bloods - group and antibodies, full blood count and ferritin, red-cell folate where indicated, rubella immunity, HIV, hepatitis B and syphilis, plus haemoglobinopathy screening per prevalence and family origin, and bloods for HbA1c or glucose where risk factors exist); dating ultrasound at 11-14 weeks with nuchal translucency where offered, the combined anomaly scan at 18-22 weeks; growth surveillance from 28-36 weeks (serial symphysis-fundal height with ultrasound for the plotted-outliers or small-for-dates, and earlier serial scans for high-risk groups); and the third-trimester group-strep-adjacent and presentation questions around 36 weeks with the external-cephalic-version conversation for breech. The midwife-led and shared-care models are evidence-equivalent for low-risk childbearing women - the research that created them - and the skill is knowing which finding moves a pregnancy across, because the danger for both mother and fetus is the woman who was low-risk at booking and became not-low-risk at 30 weeks with nobody watching the part that changed: hypertensive disease and pre-eclampsia declare themselves late, diabetes appears mid-pregnancy, fetal growth restriction is a third-trimester disease, and the book's job (handheld and digital now) is to make those changes visible to every professional who sees her. Physiology is the interpreter: the fall in blood pressure and the rise in heart rate and cardiac output explain both the 'normal' syncope and the masked shock of concealed haemorrhage; the physiological anaemia (plasma volume up 40-50 percent, red-cell mass up 20-30 percent) means haemoglobin below 10.5 g/dL in the second trimester is pathological and that ferritin, not MCV, decides iron therapy; the alkalotic respiratory alkalosis with compensated metabolic compensation makes a 'normal' bicarbonate a red flag for sepsis or asthma decompensation; the left-lie aortocaval teaching, the urate handling, the leukocytosis to 15-20, the ESR that can legitimately exceed 100, the D-dimer that rises, and the C-reactive protein that does not rise from pregnancy alone - all of it changes how investigations read and how much of a symptom means disease - [[physiology/homeostasis-body-fluids]], [[cardiovascular/circulation-blood-pressure]], [[renal/filtration]].**
+This chapter covers the language used to describe a pregnancy, maternal physiology, the schedule and content of routine antenatal care in the UK, screening for fetal conditions, and the prescribing principles that pregnancy imposes. The complications themselves are in [[obstetrics-gynaecology/pregnancy-complications]]; the hormonal background is in [[endocrine/reproductive-endocrinology]].
+
+## Describing a pregnancy
+
+### Gestational age and dates
+
+By convention, **gestational age** is counted from the first day of the last menstrual period (LMP), not from conception. In a regular 28-day cycle, ovulation and fertilisation happen about two weeks after the LMP, so a woman who is "6 weeks pregnant" carries an embryo that is about 4 weeks post-conception. Gestation is written in completed weeks and days: 32+4 means 32 weeks and 4 days.
+
+The **estimated date of delivery (EDD)** is 280 days (40 weeks) after the LMP. Naegele's rule is the traditional shortcut: add one year, subtract three months and add seven days. Because months have unequal lengths, the shortcut and the 280-day count can differ by a day or two. A cycle longer than 28 days delays ovulation and makes the LMP date overestimate gestation.
+
+In UK practice the dates are confirmed, and usually replaced, by ultrasound. Between 10+0 and 13+6 weeks the **crown–rump length (CRL)** gives the gestational age to within about five days. If the CRL is above 84 mm, the head circumference is used instead. Once dating is set by a scan it is not changed by later scans, because later differences in size are information about growth, not about dates.
+
+::: definition Gestational landmarks {#def-landmarks}
+- **First trimester**: up to 13+6 weeks. **Second trimester**: 14+0 to 27+6 weeks. **Third trimester**: from 28+0 weeks.
+- **Preterm birth**: birth before 37+0 weeks. **Term**: 37+0 to 41+6 weeks. **Post-term**: 42+0 weeks or later.
+- **Miscarriage**: loss of a pregnancy before 24+0 weeks. **Stillbirth**: a baby born with no signs of life at or after 24+0 weeks. These are the definitions used in UK law and practice; the WHO uses 22 or 28 weeks for international comparison, so check the threshold before comparing rates between countries.
 :::
 
-## Screening and surveillance
+### Gravidity and parity
 
-::: definition The screening programme and its honest limits {#def-screening}
-**Antenatal screening is the largest population-screening programme any clinician touches, and it obeys screening doctrine: condition, test, treatment pathway, and informed choice. Aneuploidy screening (the national programme): combined first-trimester testing - nuchal translucency plus biochemistry - or non-invasive prenatal testing of cell-free DNA contingent on local commissioning, with chorionic-villus-sampling or amniocentesis reserved for those choosing diagnostic tests; the counselling arithmetic is the work: a 1-in-150 'high risk' means 149 of 150 such women have unaffected pregnancies, false positives cause procedure-adjacent anxiety and small procedure loss risks, and cell-free DNA, however accurate for trisomy 21, remains a screen whose positive predictive value falls with prevalence and whose findings include sex-chromosome and incidental genomic questions whose disclosure policies differ by nation. Structural screening: the 18-22-week anomaly scan detects a variable fraction of major anomalies by organ (anencephaly approaches 100 percent, cardiac defects far less and improving with views), and its purpose is delivery-planning, counselling and - for an increasing list - fetal therapy or planned postnatal surgery rather than termination alone; the growth scan's job is small-for-gestational-age and large-for-gestational-age detection with Dopplers where indicated, and its honest limits are that symphysis-fundal-height measurement misses a third of SGA babies, which is why ultrasound surveillance is expanded for the high-risk groups (hypertension, previous SGA, diabetes, smoking, ethnic and demographic risk) and why customised charts remain debated rather than settled. The infectious routine (HIV, hepatitis B, syphilis) exists because vertical transmission is preventable and the treatment is in the book - opt-out testing with documented offer is the standard that eliminated congenital syphilis's British near-resurgence window and keeps hepatitis B birth-dose vaccination on time; rubella immunity status drives postpartum vaccination and the non-immune woman's antenatal education. The blood group and antibody screen catches the red-cell-antibody pregnancies (anti-D prophylaxis for non-sensitised RhD-negative women at 28 and 34 weeks plus any sensitising event, and the rare but high-stakes atypical antibodies that need specialist surveillance and early delivery planning), and the Kleihauer and dose-of-anti-D decisions in trauma or abruption are this section's most time-critical bedside arithmetic. Finally the new eras that arrive through the same doctrine: the fetal-medicine interventions (feto-urinary shunts, laser for twin-to-twin transfusion, fetoscopic spina-bifida repair in selected centres), the cfDNA extension toward single-gene conditions, and the rapid-test STI screening in high-prevalence areas whose antenatal integration is a public-health success still unevenly implemented - [[public-health/screening]], [[paediatrics/newborn]], [[immunology/vaccines-immunotherapy]].**
+An obstetric history is summarised in two numbers, and many students get them wrong.
+
+::: definition Gravidity and parity {#def-gravidity-parity}
+**Gravidity** is the number of times a woman has been pregnant, whatever the outcome, **including a current pregnancy**. A twin pregnancy counts as one pregnancy.
+
+**Parity**, in UK practice, is the number of births after 24+0 weeks, whether the baby was born alive or stillborn, plus any live birth before 24 weeks. It is often written as **P a+b**, where *a* is the number of such births and *b* is the number of pregnancies lost before 24 weeks (miscarriages, ectopic pregnancies, molar pregnancies and terminations).
+
+A woman who has never been pregnant is **nulligravid**. A woman who has never given birth is **nulliparous**; a woman in her first pregnancy is a **primigravida**. A woman who has given birth before is **parous** or **multiparous**.
 :::
 
-## Conditions owned by the antenatal clinic
+The notation is a summary, not a substitute for the story. Conventions for multiple births differ between units: some count a twin birth as one delivery in the parity figure and some count each baby. The safe practice is to write each pregnancy out in words: year, gestation, mode of birth, outcome, birth weight and complications. "Para 1" does not say whether that birth was a straightforward vaginal birth or an emergency caesarean section at 28 weeks for pre-eclampsia, and the second fact changes the plan for this pregnancy.
 
-::: definition Medical disorders in pregnancy {#def-conditions}
-**The clinic's actual caseload: Hypertensive diseases ([[obstetrics-gynaecology/pregnancy-complications]] for pre-eclampsia's acute management) begin here as risk assessment - the 20-week cut-off, aspirin 75-150 mg from 12 weeks for high-risk women, the blood-pressure and proteinuria thresholds that trigger surveillance - because antenatal care's single biggest preventable-death contribution is finding hypertensive disease early and repeatedly. Anaemia: iron supplementation for the ferritin-low, transfusion thresholds and cell salvage for the placenta-accreta and caesarean-haemorrhage plans, and the haemoglobinopathies programme (sickle-cell and thalassaemia screening with partner testing, in-uterus and transfusion pathways) that is among screening's great equity successes. Metabolic and endocrine: the diabetes screening and management pathway (pre-pregnancy HbA1c targets for known diabetes because organogenesis happens before most women know they are pregnant, glucose targets and insulin or metformin, growth and anomaly surveillance, and delivery timing), thyroid disease with the trimester-specific reference ranges and the levothyroxine dose increase most women need early, and the hyperemesis pathway (thiamine before glucose, antiemetics up to and including the safe ones, and the Wernicke's cautionary tales that recur when 'morning sickness' is a diagnosis of exclusion applied too early). Neurology and psychiatry: epilepsy with pre-conception valproate avoidance as medicine's most successful teratogen-avoidance programme in action, antiepileptic-level monitoring and vitamin K; and the perinatal mental health that is the largest single cause of maternal death in some confidential-enquiry years - the medication-versus-illness debates (untreated severe illness has its own fetal risks), the history that reveals previous episodes ('What happened last pregnancy?' is one of the highest-yield questions in obstetrics), and the baby-blues-versus-postnatal-depression-versus-psychosis distinction that belongs to the postnatal chapter but is identified in this one. Substance use: opioids-with-methadone-or-buprenorphine-maintenance-not-detox-under-fetal-stress, alcohol as the leading preventable cause of intellectual disability with no proven safe threshold stated honestly, smoking with cessation support and the weighing-of-nicotine-replacement-while-pregnant that NICE does for you, and the benzodiazepine and cannabis tapers. Infections: the asymptomatic bacteriuria screen-that-is-no-longer-routine-and-still-matters-when-symptoms-exist, listeria-and-toxo food advice as the short version of 'wash the soft-cheese rind off your answers', the woman presenting with chickenpox exposure and VZV immunity questions, parvovirus exposure in teachers, and the HIV-positive pregnancy on treatment with undetectable viral load delivered without elective caesarean - a story of what antenatal medicine achieves when the pathway is funded. Add the multiple-pregnancy surveillance with its monchorionicity logic, the Rhesus-sensitised few, and the uterine-scar and placenta-praevia timeline; the clinic runs on these lists, and the skill is applying the list only after asking what is different about this woman - [[cardiovascular/hypertension]], [[endocrine/diabetes]], [[psychiatry/lifespan-psychiatry]], [[infectious-diseases/hiv]].**
-:::
-
-::: example The 34-year-old with a 'normal' booking and a hidden history {#ex-booking}
-A booking appointment at 12 weeks: BMI 38, para 2 with two 'fine' hospital births elsewhere, blood pressure 138/88, no medicines, and when asked 'anything else?' she mentions her sister 'had something wrong with the placenta' and both her babies were small.
+::: example Writing the summary {#ex-gp}
+A woman is 20 weeks pregnant. She had a son born by vaginal birth at 39 weeks, a miscarriage at 9 weeks, and a daughter stillborn at 30 weeks after a placental abruption. Write her gravidity and parity, and say what the summary hides.
 ::: solution
-**Everything-here-is-actionable ([[#def-schedule]], [[#def-conditions]]): the history that changes the plan - 'two small babies and a placental story is the family and obstetric history that predicts recurrent growth restriction and pre-eclampsia, the "fine" births from a transferred hospital record that nobody obtained are not a history, and a booking that accepts "everything was fine" is an administrative act not a clinical one: request the records, and in the meantime treat the reported pattern as data'; the pharmacology that follows - 'aspirin 75-150 mg from now (12 weeks is within the effective window for high-risk pre-eclampsia prevention - her BMI plus the growth-restriction history plus the interpregnancy factors - and the NICE risk list is read as a list, not a suggestion), thromboprophylaxis risk reassessed late, vitamin D at this BMI, and early HbA1c plus the gestative-diabetes screening plan'; the surveillance that follows - 'uterine-artery Dopplers at the anomaly scan per unit policy for high pre-eclampsia risk, serial growth scans from 26-28 weeks because her babies were small, and the explicit safety-netting conversation about reduced fetal movements and headache-and-visual-symptom red flags in words she can repeat'; and the tone that makes any of it work - 'the BMI conversation documented as health not blame - "our job is to watch a few things more closely" - because stigma in booking history-taking is why women arrive at 28 weeks with their real history unsaid, and this woman just told you the most important fact of her pregnancy in passing, which means she is already cooperating - the system must now do its half' - [[obstetrics-gynaecology/pregnancy-complications]].**
+She has been pregnant four times including now, so she is **gravida 4**. Two pregnancies ended in a birth after 24 weeks (the term birth and the stillbirth), and one ended before 24 weeks, so she is **para 2+1**, written G4 P2+1.
+
+The summary hides the most important fact: a previous stillbirth after abruption. Abruption recurs in a later pregnancy more often than in the general population, and a previous stillbirth changes the plan for growth surveillance, the timing of birth and the emotional support she needs. The history must be written out, not just coded.
 :::
 :::
 
-::: example The isolated echogenic focus and a question at 16 weeks {#ex-cfdna}
-An 18-week scan reports 'isolated echogenic focus in the left ventricle'; the parents have read 'soft marker' online and ask whether their baby has Down syndrome, given a 'low-risk' combined test at 12 weeks (1:1 800).
+## Maternal physiology
+
+Pregnancy changes almost every organ system. Most changes are driven by progesterone, oestrogen, human chorionic gonadotrophin (hCG), human placental lactogen and relaxin, and by the mechanical effect of a growing uterus. The changes have a purpose, which is to supply a fetus that, by term, weighs around 3.5 kg and receives about a tenth of the maternal cardiac output, and to prepare the mother to survive the blood loss of birth.
+
+::: theorem Pregnancy resets the normal range {#thm-new-normal}
+Many laboratory and clinical values have different reference ranges in pregnancy. A result should be interpreted against the pregnancy range for that gestation, not the non-pregnant range. A value that is "normal" for a non-pregnant adult may represent significant disease in pregnancy.
+:::
+
+::: proof
+The changes follow from a few physiological shifts.
+
+**Circulation.** Progesterone and nitric oxide relax vascular smooth muscle, so systemic vascular resistance falls in the first trimester. The kidneys respond to the lower pressure by retaining sodium and water through the renin–angiotensin–aldosterone system. Plasma volume rises by about 40–50% by the third trimester, red cell mass by only about 20–30%. The result is a lower haemoglobin concentration, the **physiological dilutional anaemia** of pregnancy. Cardiac output rises by 30–50%, through both a higher stroke volume and a heart rate about 10–15 beats per minute faster. Blood pressure usually falls in the second trimester and returns towards pre-pregnancy values by term.
+
+**Kidney.** Renal plasma flow and glomerular filtration rate rise by about 50%. Serum creatinine and urea therefore fall. A creatinine that would be normal outside pregnancy can mean a substantial loss of filtration in a pregnant woman.
+
+**Breathing.** Progesterone increases the sensitivity of the respiratory centre to carbon dioxide. Tidal volume rises by about 30–40% while the respiratory rate barely changes, so minute ventilation rises and the arterial $P_{\text{CO}_2}$ falls to about 4 kPa (30 mmHg). The kidneys excrete bicarbonate to compensate, giving a mild compensated respiratory alkalosis. A "normal" $P_{\text{CO}_2}$ of 5.3 kPa in a breathless pregnant woman suggests she is tiring and retaining carbon dioxide.
+
+**Clotting.** Fibrinogen and factors VII, VIII and X rise, von Willebrand factor rises, protein S falls and fibrinolysis is suppressed. Combined with venous stasis from compression of the pelvic veins, this makes pregnancy and the weeks after birth a prothrombotic state, ready to stop bleeding at placental separation. The cost is a several-fold increase in venous thromboembolism (VTE).
+
+**Metabolism and hormones.** Placental hormones, particularly human placental lactogen, make the mother increasingly insulin resistant in the second half of pregnancy, so that glucose is spared for the fetus. A woman whose pancreas cannot raise insulin secretion enough develops gestational diabetes. hCG has weak thyroid-stimulating activity, so free thyroxine can rise and TSH fall in the first trimester. Alkaline phosphatase rises because the placenta makes its own isoenzyme.
+:::
+
+| Measurement | Change in pregnancy | Practical consequence |
+|---|---|---|
+| Haemoglobin | Falls by dilution | Anaemia is Hb < 110 g/L in the first trimester, < 105 g/L in the second and third, < 100 g/L postpartum (UK) |
+| Creatinine | Falls (often 45–70 µmol/L) | A creatinine of 90 µmol/L or above is a marker of renal involvement in pre-eclampsia |
+| $P_{\text{CO}_2}$ | Falls to about 4 kPa | A normal non-pregnant value may mean respiratory fatigue |
+| White cell count | Rises, further in labour | A mild neutrophilia is not by itself evidence of infection |
+| Alkaline phosphatase | Rises (placental) | Not a reliable marker of liver or bone disease in the third trimester |
+| Fibrinogen, D-dimer | Rise | D-dimer is not useful to exclude VTE in pregnancy |
+| Free T4, TSH | TSH falls in the first trimester | Use trimester-specific ranges |
+
+Two mechanical effects matter at the bedside. From about 20 weeks, a woman lying flat on her back compresses her inferior vena cava and aorta with the uterus. Venous return and cardiac output fall, and she may become hypotensive and faint (**aortocaval compression**). This is why pregnant women are examined and resuscitated with a left lateral tilt or with the uterus displaced manually to the left. Second, progesterone relaxes the lower oesophageal sphincter and slows gastric emptying, which causes heartburn and raises the risk of aspiration under general anaesthesia.
+
+::: example Is this result normal? {#ex-bloods}
+A 31-year-old woman at 30 weeks has routine bloods: haemoglobin 108 g/L, creatinine 82 µmol/L, platelets 165 × 10⁹/L, alkaline phosphatase 210 U/L. Her blood pressure is 128/80 mmHg. Interpret each result.
 ::: solution
-**Soft-marker-counselling ([[#def-screening]], [[#def-conditions]]): the numbers - 'an isolated echogenic intracardiac focus in a low-risk woman with a normal 12-week combined screen changes the aneuploidy probability trivially - it is a normal-variant finding present in a few percent of unaffected pregnancies, weakly more common in populations with higher prevalence, and it typically disappears; and the "marker" language is a scanning-era inheritance that should have been retired from parental-facing reports along with the word "marker" itself'; the decision-support - 'offer nothing new unless local policy says otherwise or additional questions appear on the detailed view; the parents who want more certainty deserve a conversation about cell-free DNA or amniocentesis framed around their values and the small procedure risk, not around the scan report's hedge; and the clinician who says "this finding alone does not change my opinion of your baby's risk" has done the intervention'; and the systems lesson - 'reports that alarm parents should be readable by the women who receive them, sonographers now increasingly trained in what they say during the scan, and the trust that lets "abnormal-appearing" language leak to a text-message result portal is the complaint that follows - which is why this 10-minute conversation is the reason the screening programme keeps its consent-based legitimacy', and the closing sentence to write in the notes verbatim so the labour ward does not reopen it: 'isolated EIF, low-risk combined test, counselled, no further fetal testing indicated' - [[public-health/screening]], [[clinical-skills/communication]].**
+- **Haemoglobin 108 g/L** is above the third-trimester threshold of 105 g/L, so she is not anaemic by UK pregnancy criteria. It should still be compared with her booking value, because a large fall suggests iron deficiency is developing.
+- **Creatinine 82 µmol/L** would be normal in a non-pregnant woman, but it is high for 30 weeks, when filtration should be raised. It is below the 90 µmol/L marker used for pre-eclampsia, but it deserves a repeat and a urine protein measurement.
+- **Platelets 165 × 10⁹/L** are normal. A mild fall in platelet count is common in late pregnancy (gestational thrombocytopenia), but a falling trend needs attention because thrombocytopenia is a feature of pre-eclampsia and HELLP syndrome.
+- **Alkaline phosphatase 210 U/L** is expected in the third trimester because of the placental isoenzyme and needs no investigation on its own.
+
+The lesson is [[#thm-new-normal]]: the creatinine is the result that would have been ignored using non-pregnant ranges, and it is the one that matters.
 :::
 :::
 
-::: example The 28-week reduced-lie and the BMI 42 {#ex-anaemia}
-A 28-week booking (first attendance, no records) with BMI 42, Hb 8.9 g/dL, ferritin 4, blood group O rhesus-negative, and a fibroid uterus that makes the uterine actions hard to time.
+## Antenatal care in the UK
+
+### The schedule
+
+In England, antenatal care follows NICE guideline NG201 (*Antenatal care*, 2021). The first appointment, the **booking appointment**, should ideally happen by 10+0 weeks. A healthy nulliparous woman with an uncomplicated pregnancy is offered about ten appointments and a parous woman about seven. Women with medical conditions or previous complications are seen in consultant-led clinics in addition.
+
+The booking appointment does three jobs:
+
+1. **Information and prevention.** Folic acid 400 micrograms daily is advised until 12 weeks to reduce the risk of neural tube defects; a higher dose (5 mg) is advised for women at higher risk, such as those with diabetes, a previous pregnancy affected by a neural tube defect, a BMI of 30 or more, or who take certain antiepileptic drugs. Vitamin D 10 micrograms daily is advised throughout pregnancy and breastfeeding. Advice covers smoking (carbon monoxide testing is offered to all women), alcohol (no safe level is known), food safety and vaccination.
+2. **Risk assessment.** The history looks for previous obstetric complications, medical conditions, mental health problems, safeguarding concerns and domestic abuse, which often starts or escalates in pregnancy. The woman should be asked about domestic abuse when she is seen alone. Height, weight and BMI, blood pressure and urine are recorded.
+3. **Screening tests.** These are offered at booking and described below.
+
+At later visits the midwife measures blood pressure and tests urine for protein, asks about fetal movements and wellbeing, and from 24 weeks measures the **symphysis–fundal height** in centimetres and plots it on a growth chart. At 36 weeks the presentation of the baby is checked, because a breech presentation can be offered external cephalic version.
+
+### Vaccination in pregnancy
+
+In the UK in 2026, pregnant women are offered pertussis vaccine (from 16 weeks, ideally by 32 weeks, so that maternal antibody protects the baby before its own vaccinations), influenza vaccine in any trimester during the flu season, and RSV vaccine from 28 weeks. Live vaccines such as MMR are avoided in pregnancy and given after birth to women who are not immune. The schedule changes between seasons; see [[paediatrics/immunisation]].
+
+### Routine screening tests
+
+::: definition Antenatal screening {#def-screening}
+**Screening** is offering a test to people without symptoms to identify those at higher chance of a condition, so that they can be offered a diagnostic test or treatment. A screening test sorts people into **higher-chance** and **lower-chance** groups; it does not make a diagnosis. Every antenatal screening test is optional and requires informed consent.
+:::
+
+The routine programme in England (NHS screening programmes, 2026) includes:
+
+| Test | When | Why |
+|---|---|---|
+| Blood group and red cell antibodies | Booking and 28 weeks | Identify RhD-negative women and antibodies that can cause haemolytic disease of the fetus |
+| Full blood count | Booking and 28 weeks | Anaemia |
+| Sickle cell and thalassaemia | Booking (ideally by 10 weeks) | Identify carriers; test the baby's father if positive; offer prenatal diagnosis |
+| HIV, hepatitis B, syphilis | Booking | Treatment and interventions prevent transmission to the baby |
+| Urine culture | Booking | Treat asymptomatic bacteriuria, which can progress to pyelonephritis in pregnancy |
+| Screening for Down's, Edwards' and Patau's syndromes | 10+0 to 14+1 weeks (combined test) or 14+2 to 20+0 (quadruple test) | Offer further testing if higher chance |
+| Ultrasound dating scan | 10+0 to 13+6 weeks | Dating, number of fetuses and chorionicity, some major anomalies |
+| Fetal anomaly scan | 18+0 to 20+6 weeks | Structural anomalies, placental position |
+| Oral glucose tolerance test | 24 to 28 weeks, if risk factors | Gestational diabetes |
+
+Rubella immunity screening stopped in England in 2016, because rubella is now very rare in the UK and screening did not identify women in time to protect the pregnancy.
+
+**Screening for chromosomal conditions.** The **combined test** uses the nuchal translucency (the fluid-filled space at the back of the fetal neck) measured on ultrasound, maternal age, and two blood markers, free β-hCG and pregnancy-associated plasma protein A (PAPP-A). It calculates the chance that the baby has trisomy 21 (Down's syndrome) and, separately, trisomy 18 or 13 (Edwards' or Patau's syndrome). A chance of 1 in 150 or greater is reported as higher chance. The woman can then choose no further testing, **non-invasive prenatal testing (NIPT)**, which analyses cell-free DNA from the placenta in her blood, or a diagnostic test: **chorionic villus sampling** (from about 11 weeks) or **amniocentesis** (from 15 weeks). The diagnostic tests carry a small additional risk of miscarriage, usually quoted as around 0.5%. NIPT has a much higher detection rate and lower false-positive rate than the combined test, but a positive NIPT still needs confirmation by a diagnostic test before any irreversible decision.
+
+The reason a "higher-chance" result usually comes from a healthy pregnancy is arithmetic, not a fault of the test. The figure below lets you explore it.
+
+::: widget bayes
+mode: test
+prevalence: 0.004
+sensitivity: 0.85
+specificity: 0.975
+caption: Screening for a rare condition, using illustrative values close to a first-trimester combined test (prevalence 1 in 250, detection rate 85%, screen-positive rate 2.5%). Most screen-positive results come from unaffected pregnancies because unaffected pregnancies are so much more common. Move the prevalence to see how much the positive predictive value depends on the starting chance, for example in an older mother.
+:::
+
+::: example What does a higher-chance result mean? {#ex-ppv}
+Use the illustrative values in the figure: the condition affects 1 in 250 pregnancies, the screening test detects 85% of affected pregnancies, and 2.5% of unaffected pregnancies are screen-positive. Of 10,000 women screened, how many screen positive, and what proportion of them have an affected pregnancy?
 ::: solution
-**Everything-at-once ([[#def-schedule]], [[#def-conditions]]): the sequence for a late booker - 'the day-one bundle: dating and anomaly assessment arranged even at 28 weeks (a late scan still answers placental site, presentation and growth), the bloods repeated with the ferritin-4 iron deficiency treated now - oral iron started immediately with IV iron considered given the short runway to delivery and the haemorrhage risk that BMI and fibroids add, group-and-antibody confirmed with anti-D prophylaxis arranged because she is rhesus-negative and any bleed or procedure is a sensitising event, the pre-eclampsia bundle - blood pressure, protein, platelets and liver and renal function now and repeatedly, aspirin still worth starting though the prevention window was best before 16 weeks, and the VTE risk assessment documented with the third-trimester and puerperium plan, because booking at 28 with BMI 42 means the thromboprophylaxis conversation cannot wait for a consultant to notice her'; the anaemia work - 'the two causes here are iron deficiency and possibly thalassaemia trait if family origin fits - treat the iron first, recheck the count and the ferritin, and the transfusion-and-cell-salvage conversation belongs to the birth plan, not the night of a caesarean'; and the continuity fix - 'one named midwife who owns the fragments, handheld notes started with photocopies of everything, the GP and community services notified today, and the birth-place conversation honestly framed around her BMI, her late start and what each unit can offer at 3am - because the goal is that no one from here on meets this pregnancy cold' - [[blood/anaemia]], [[blood/transfusion]].**
+Affected pregnancies: $10\,000 \times 0.004 = 40$. Of these, $40 \times 0.85 = 34$ are screen-positive (true positives) and 6 are missed.
+
+Unaffected pregnancies: $9\,960$. Of these, $9\,960 \times 0.025 = 249$ are screen-positive (false positives).
+
+Total screen-positive: $34 + 249 = 283$. The positive predictive value is
+$$
+\text{PPV} = \frac{34}{283} \approx 0.12,
+$$
+so about 12% of women with a higher-chance result have an affected pregnancy and 88% do not. This is why a screen-positive result leads to an offer of a further test, never to a diagnosis, and why counselling uses words such as "higher chance" rather than "positive".
 :::
 :::
 
-::: example The chickenpox contact at 16 weeks {#ex-varicella}
-A 16-week pregnant teacher whose class had chickenpox two days ago; she cannot recall her own chickenpox, and the local VZV IgM result will not return for three days; she is frightened and asking about 'the scan showing damage'.
+### Blood groups and anti-D
+
+A woman whose red cells lack the RhD antigen (RhD-negative, about 15% of white European women and fewer in many other groups) can make anti-D antibodies if fetal RhD-positive red cells enter her circulation. This **sensitisation** can happen at birth, after bleeding, abdominal trauma or a procedure, and sometimes silently in the third trimester. In a later pregnancy, anti-D crosses the placenta and destroys the red cells of an RhD-positive fetus, causing **haemolytic disease of the fetus and newborn**: anaemia, hydrops and, after birth, severe jaundice.
+
+Sensitisation is prevented by giving anti-D immunoglobulin, which clears fetal cells before the mother's immune system responds. UK practice is:
+
+- **Routine antenatal anti-D prophylaxis** in the third trimester, either as a single dose at about 28 weeks or as two doses at 28 and 34 weeks, according to local protocol.
+- Anti-D after **potentially sensitising events** after 12 weeks (bleeding, abdominal trauma, external cephalic version, amniocentesis), ideally within 72 hours.
+- After birth, the baby's blood group is checked. If the baby is RhD-positive, the mother receives anti-D, with a test of the size of the fetomaternal haemorrhage (Kleihauer test or flow cytometry) to decide whether more is needed.
+
+Many services now offer **fetal RhD genotyping** on cell-free DNA in maternal blood. If the fetus is predicted to be RhD-negative, anti-D is unnecessary, which avoids giving a blood product to about 40% of RhD-negative women who do not need it.
+
+::: warning Anti-D does not help a woman who is already sensitised
+Anti-D immunoglobulin prevents the formation of antibodies; it cannot remove antibodies that already exist. A woman whose antibody screen shows immune anti-D needs a different pathway: serial antibody levels, referral to a fetal medicine unit, and ultrasound of the fetal middle cerebral artery peak velocity to detect fetal anaemia. Always check the antibody screen before giving prophylaxis, and do not interpret anti-D detected shortly after a prophylactic dose as sensitisation without discussing it with the laboratory.
+:::
+
+### Identifying risk and acting on it
+
+The booking history is also used to start preventive treatment. Two examples are standard.
+
+**Aspirin to reduce pre-eclampsia.** Under NICE NG133 (*Hypertension in pregnancy*, 2019, updated 2023), women at high risk of pre-eclampsia are advised to take aspirin 75–150 mg daily from 12 weeks until birth. High risk means **one high-risk factor**: hypertensive disease in a previous pregnancy, chronic kidney disease, autoimmune disease such as systemic lupus erythematosus or antiphospholipid syndrome, type 1 or type 2 diabetes, or chronic hypertension. It also means **two or more moderate-risk factors**: first pregnancy, age 40 or over, an interval of more than 10 years since the last pregnancy, BMI of 35 or more at booking, a family history of pre-eclampsia, or a multiple pregnancy.
+
+**Thromboprophylaxis.** Every woman has a documented VTE risk assessment at booking, on admission and after birth, following the Royal College of Obstetricians and Gynaecologists (RCOG) guidance. Women with a previous VTE, or with several risk factors such as obesity, age over 35, parity of three or more, smoking, immobility and some medical conditions, are offered low-molecular-weight heparin (LMWH) for a period set by their risk score.
+
+Other risk factors lead to specific plans: a **glucose tolerance test** at 24–28 weeks for women with a BMI above 30, a previous baby weighing 4.5 kg or more, previous gestational diabetes, a first-degree relative with diabetes, or a family origin from a population with a high prevalence of diabetes; **serial growth scans** for women at higher risk of a small baby; and **mental health referral** for women with a past history of severe mental illness.
+
+::: example A booking risk assessment {#ex-booking}
+A 41-year-old woman books at 10 weeks in her first pregnancy. Her BMI is 36 and her blood pressure is 132/84 mmHg. She has no medical history. Her mother had pre-eclampsia. Which preventive measures does she need?
 ::: solution
-**Varicella-exposure-counselling ([[#def-conditions]], [[#def-screening]]): the facts that organise the fear - 'her risk is whether she is immune: most UK adults are, the exposure-to-rash window is 10-21 days so today is day-2 and infectious risk starts later, and the fetal-risk numbers are small and time-specific - the embryopathy is essentially a before-20-weeks risk measured in single-digit percentages per hundred exposed with infection, and the neonatal danger is infection in the last weeks of pregnancy, not now'; the pathway - 'VZV IgM and IgG now regardless of the waiting-time embarrassment (results often stat-able when asked properly), varicella-zoster immunoglobulin if she is susceptible and in the window where prophylaxis is offered, the avoidance-and-signs advice (avoid further exposures, isolate from rash-onset, attend early if rash appears with the maternal pneumonitis caution that makes pregnancy a reason for prompt antivirals rather than waiting), and the follow-up scan timing per policy because the detailed anomaly scan looks for the embryopathy signs with an honest explanation that a normal scan cannot prove what was never likely'; and the meta-lesson - 'the three-day wait for a lab result in a frightened pregnant woman is itself a clinical episode: give her the numbers, the timeline, the name of the person who will call with the result and the time they will call, and write the plan where her midwife and the out-of-hours service will both find it, because this exact anxiety recurs at every exposure and the system should answer it the same way every time' - [[infectious-diseases/fever-sepsis]], [[paediatrics/newborn]].**
+**Pre-eclampsia risk.** She has no high-risk factor. She has four moderate-risk factors: first pregnancy, age 40 or over, BMI of 35 or more, and a family history of pre-eclampsia. Two or more moderate-risk factors meet the NICE threshold, so aspirin 75–150 mg daily from 12 weeks until birth is recommended, following local guidance on the dose.
+
+**Gestational diabetes.** A BMI above 30 is a risk factor, so she should be offered an oral glucose tolerance test at 24–28 weeks.
+
+**VTE.** Age over 35 and obesity are risk factors. She needs a formal score; depending on other factors she may need antenatal or postnatal LMWH.
+
+**Other.** Folic acid at the higher dose (5 mg) is advised because her BMI is 30 or more. Her blood pressure should be measured carefully with an appropriately sized cuff, since a cuff that is too small overestimates blood pressure in women with a large arm circumference. She should be seen in a consultant-led clinic, and serial growth scans in the third trimester are usually offered because obesity makes the fundal height unreliable.
 :::
 :::
 
-::: exercise Manage the rhesus-negative woman with bleeding {level=1}
-At 9 weeks, a rhesus-negative woman with a viable pregnancy has 36 hours of bleeding with clots and passes a large clot at 11am in the clinic; the scan shows a fetal heartbeat. Do you give anti-D, and what else does she need today?
-::: solution
-**Anti-D-and-the-threatened-miscarriage ([[#def-conditions]]): the rule - 'a sensitising event has occurred by definition with bleeding this significant after 12 weeks' or per local threshold for earlier bleeding with surgical management risk: anti-D immunoglobulin today (the standard dose and the Kleihauer-or-equivalent quantification where local policy directs for larger bleeds), because fetomaternal haemorrhage scales with the event and the prophylaxis dose must match'; the rest of the day - 'the quantitative beta-hCG or scan follow-up plan, the rhesus-and-antibody documentation that travels with her notes, the safety-net for ectopic if not yet located (bleeding plus no intrauterine pregnancy seen is never 'threatened miscarriage' by assumption), and the emotional reality: a wanted pregnancy bleeding in a scan room needs one honest sentence now and an appointment, not a leaflet'; and the follow-through - 'a repeat antibody screen per schedule and a note that any future bleeding, abdominal tenderness, version or procedure triggers the same question, because rhesus care is a checklist that a hundred clinicians must run consistently and the one that skips it creates the antibody that ends a later pregnancy' - [[immunology/adaptive-responses]], [[obstetrics-gynaecology/early-pregnancy]].**
-:::
-:::
+### Fetal growth and fetal movements
 
-::: exercise Treat the thyroid in pregnancy {level=2}
-A 10-week pregnant woman on levothyroxine 150 micrograms for Hashimoto's has TSH 6.2, free T4 low-normal. She asks whether the tablets 'can hurt the baby'. Adjust and explain.
-::: solution
-**Levothyroxine-in-pregnancy ([[#def-conditions]]): the physiology and the dose - 'pregnancy increases thyroxine-binding globulin and the maternal hormone requirement by roughly a quarter to a half, fetal brain depends on maternal thyroxine until the fetal thyroid works, and a TSH of 6.2 at 10 weeks on 150 micrograms means she is under-replaced: increase the dose now (typical practice is an immediate 20-30 percent rise or two extra doses weekly per local endocrine guidance), recheck thyroid function every 4-6 weeks, and keep the second half of pregnancy and postpartum down-titration in the plan'; the adherence teaching that often matters more than the number - 'the tablet works if taken fasting, separated from iron, calcium, antacids and soy by four hours - and the iron-and-folate prenatal vitamins are the commonest reason well-prescribed women stay high'; the answer to her real question - 'the tablets are not the risk; undertreated hypothyroidism is associated with miscarriage and worse neurodevelopmental scores, and levothyroxine is identical to the hormone she should be making - and the reassurance that if she had been on the old combination or liothyronine add-ons the answer differs, which is why the medication review happens today'; and the postpartum chapter - 'the weaning plan, the thyroxine-recheck at six weeks, and the postpartum-thyroiditis awareness in a Hashimoto's patient, because the fatigue she will blame on the baby at 12 weeks postpartum is sometimes this' - [[endocrine/thyroid]], [[obstetrics-gynaecology/postnatal-period]].**
-:::
-:::
+Fetal growth is monitored by measuring the symphysis–fundal height from 24 weeks, plotting it on a chart, and arranging an ultrasound scan if a single measurement is below the 10th centile or if serial measurements show slowing growth. Women with risk factors for a small baby, or in whom fundal height cannot be measured accurately, are offered serial ultrasound scans instead. Detecting a small baby before birth matters because a baby with fetal growth restriction is at increased risk of stillbirth, and timely birth reduces that risk ([[obstetrics-gynaecology/pregnancy-complications]]).
 
-::: exercise Write the aspirin conversation {level=2}
-A 24-year-old at 11 weeks, para 1, refuses 'blood thinners for pre-eclampsia' because her friend 'bled for weeks on them and had a healthy baby anyway'. Counsel her.
-::: solution
-**Aspirin-negotiation ([[#def-schedule]], [[#def-conditions]]): the arithmetic made personal - 'her risk factors (the exact combination - first baby plus the ones this woman has - map to a pre-eclampsia risk the aspirin reduces by roughly a fifth to a quarter of its baseline, which is why it is offered and why it is not mandatory), the bleeding fear handled honestly (aspirin in pregnancy does not meaningfully increase serious maternal bleeding in the trial data - her friend's story is real and unlucky and about labour epidural-timing anxieties more than spontaneous haemorrhage, and the late-pregnancy stopping or continuing debate has a settled middle: start at 12, most continue to 36, and the evidence on bleeding is reassuring enough that 'no' needs a different reason'); the decision architecture - 'she is not refusing medicine, she is managing fear with one anecdote, so the intervention is the numbers in a format she can keep: one side "if 100 women like you take aspirin, maybe 3-4 fewer will get pre-eclampsia", the other "serious bleeding: about the same either way" - and the explicit "your choice either way, and I will still watch your blood pressure" because a coerced yes that stops at 20 weeks teaches nothing'; and the follow-up - 'a note of what was offered and declined, a reintroduction at the anomaly scan when she asks about something else, and the safety-net symptom list given to every woman who declines surveillance medicine, because the aim is a woman who reports headache at 34 weeks whatever she decided at 11' - [[obstetrics-gynaecology/pregnancy-complications]], [[clinical-skills/communication]].**
-:::
-:::
+Most women feel fetal movements from about 18 to 20 weeks. Movements increase until about 32 weeks and then stay at a similar level until birth; they do not normally decrease near term. A woman who notices that her baby's movements have reduced should be told to contact her maternity unit the same day, not to wait until the next appointment. A reduction in movements can precede stillbirth, and assessment usually includes a cardiotocograph (CTG) and, depending on the findings and risk factors, an ultrasound scan.
 
-::: exercise Design a fetal-movement awareness campaign {level=3}
-Your unit's stillbirths include five cases where women described reduced movements and were 'checked and reassured' repeatedly; the midwifery-led audit names the phrase 'that happens at this stage' and 'the CTG was fine' as recurrent; the trust fears litigation-driven over-induction.
+## Prescribing in pregnancy
+
+Almost all drugs cross the placenta to some extent. Whether a drug harms the fetus depends on the drug, the dose and above all the **timing**.
+
+- In the first two weeks after conception, exposure tends to cause either loss of the pregnancy or no effect ("all or nothing").
+- From about 3 to 8 weeks after conception (5 to 10 weeks of gestation), the organs are forming (**organogenesis**). This is when structural malformations are most likely.
+- Later exposure can affect growth and the function of organs, such as the fetal kidney or the ductus arteriosus.
+
+Important examples: **sodium valproate** causes neural tube defects and other malformations and impairs neurodevelopment, and in the UK it must not be used in women who could become pregnant unless a pregnancy prevention programme is in place; **isotretinoin** and **methotrexate** are major teratogens; **warfarin** causes an embryopathy in the first trimester and fetal bleeding later; **ACE inhibitors and angiotensin receptor blockers** impair fetal kidney function in the second and third trimesters; **tetracyclines** stain teeth and bone; and **non-steroidal anti-inflammatory drugs** taken from about 20 weeks can reduce fetal kidney function and, in the third trimester, close the ductus arteriosus early.
+
+Pregnancy also changes pharmacokinetics. A larger volume of distribution, higher renal clearance and induced liver enzymes lower the concentrations of drugs such as lamotrigine and levetiracetam, so women with epilepsy may need monitoring and dose adjustment through pregnancy. The general approach ([[pharmacology/patient-variation]]) is to use a drug with a long safety record at the lowest effective dose, and not to stop a needed medicine abruptly: uncontrolled epilepsy, asthma or depression is itself a risk to mother and baby.
+
+::: example Dating a pregnancy {#ex-dating}
+A woman's last menstrual period began on 9 March 2026. Her cycles are regular, every 28 days. Calculate her EDD by the 280-day rule and by Naegele's rule. At a scan on 2 June 2026 the CRL corresponds to 11+1 weeks. What is her gestational age on 2 June by dates and by scan, and which should be used?
 ::: solution
-**Fetal-movement-campaign ([[#def-screening]], [[#def-conditions]]): the clinical truth first - 'reduced fetal movements is a weak predictor with a good negative: most women who feel reduced movements have normal outcomes, which is exactly why dismissing it is safe ninety times and fatal the ninety-first; the CTG's role is limited and reassuring CTGs do not exclude the small, hypoxic or anaemic fetus, which is why the response to a valid concern is a structured assessment - symptoms, fundal height and presentation, CTG where indicated by gestation, growth and fluid and Dopplers when smallness is possible - not one test treated as a verdict'; the culture work - 'the three-sentence script every professional learns: "that may well be nothing - and we check, because sometimes it is the only sign"; the phrase "that happens at this stage" is added to the never-say list in simulations; and the same-day-access rule: a woman assessed for reduced movements leaves knowing what was checked, what it meant, and when to return - the discharge note is written to be read aloud to her partner tonight'; the induction-balance - 'the honest numbers on late-appointment-induction trials do not support blanket induction for anxiety, and the campaign's measure is not inductions-per-thousand but stillbirths-after-reported-reduced-movements plus the time-from-report-to-assessment; the litigation fear is answered by documentation standards and the guideline-concordant-pathway defence, not by teaching women to stop complaining'; and the equity layer - 'movements-awareness materials in the languages actually spoken, the multiparity problem named (experienced mothers recognise change; first-time mothers recognise nothing - yet the audits show the worried multips being dismissed more), and the feedback loop: every stillbirth following reported reduced movements gets a within-72-hour systems review published to the delivery unit, because the campaign without the review is a poster' - [[obstetrics-gynaecology/pregnancy-complications]], [[clinical-skills/patient-safety]].**
+**280-day rule.** Counting 280 days from 9 March 2026 gives 14 December 2026.
+
+**Naegele's rule.** 9 March plus one year minus three months plus seven days gives 16 December 2026. The two-day difference is because the months between March and December are not all 30 days long; the 280-day count is the definition.
+
+**Gestation on 2 June.** From 9 March to 2 June is 85 days, which is 12 weeks and 1 day (12+1) by dates. The scan says 11+1, seven days less.
+
+**Which to use.** UK practice dates the pregnancy by the CRL when the scan is done between 10+0 and 13+6 weeks, so her gestation is 11+1 and her EDD moves forward by seven days, to 21 December 2026. A seven-day difference is entirely compatible with ovulation a few days later than day 14. The new EDD is then fixed and not changed by later scans.
 :::
 :::
 
 ::: quiz
-A 30-week pregnancy's symphysis-fundal height plot drops across two centiles. The correct next step is:
-- [ ] Repeat measurement in two weeks
-- [ ] Immediate induction of labour
-- [x] Third-trimester ultrasound assessment of growth, amniotic fluid and umbilical-artery Dopplers
-- [ ] Reassure - plotting variation is common
+A woman at 34 weeks has an arterial blood gas taken because she feels breathless. Her $P_{\text{CO}_2}$ is 5.4 kPa and her pH is 7.38. Which interpretation is most appropriate?
+- [ ] Normal, because these values are within the adult reference range.
+- [x] Concerning, because a pregnant woman normally has a $P_{\text{CO}_2}$ of about 4 kPa, so this suggests carbon dioxide retention.
+- [ ] Reassuring, because pregnancy normally causes a mild respiratory acidosis.
+- [ ] Uninterpretable without a lactate.
 ::: solution
-**A crossing centiles is the referral trigger: an ultrasound for estimated weight, fluid, and umbilical Dopplers decides whether this is a small healthy baby or growth restriction requiring surveillance or early delivery, and the timing decides whether the baby is born in hospital or not at all ([[#def-screening]]).**
+Progesterone-driven hyperventilation lowers the $P_{\text{CO}_2}$ to about 4 kPa in pregnancy, with renal compensation keeping the pH at or slightly above 7.40. A value of 5.4 kPa with a pH at the lower end of normal is relatively high for pregnancy and suggests that she is not ventilating as expected, for example because she is tiring in severe asthma. This is an example of [[#thm-new-normal]].
 :::
 :::
 
-::: widget plot
-f: 0.5; 2; 5; 12; 3
-x: 1, 10
-y: 0, 15
-labels: \text{percent of pregnancies (approximate)}\text{perinatal death in low-risk UK model};\ \text{preterm birth};\ \text{pre-eclampsia};\ \text{gestational diabetes screened-detected};\ \text{small-for-dates significant cases}
-caption: Antenatal care exists for the 1-10 percent tail of common outcomes ([[#def-schedule]], [[#def-screening]]): a programme judged only by reassuring the 90 percent misses the reason it is a screening system, not a comfort one.
+::: history
+Organised antenatal care is a twentieth-century idea. In Edinburgh, John William Ballantyne argued from the 1900s for a "pro-maternity" hospital to study and treat the fetus before birth, and the first antenatal beds opened at the Edinburgh Royal Maternity Hospital in 1901. Antenatal clinics spread across Britain in the 1910s and 1920s, largely to detect the rising blood pressure and proteinuria that came before eclampsia. Ultrasound arrived in 1958, when Ian Donald, John MacVicar and Tom Brown in Glasgow published images of pelvic masses and early pregnancies, and dating and anomaly scans became routine over the following decades. Anti-D prophylaxis, developed in the 1960s by Cyril Clarke and Ronald Finn in Liverpool and by Vincent Freda, John Gorman and William Pollack in New York, turned rhesus disease from a common cause of perinatal death into a rare one. Screening for Down's syndrome moved from maternal age alone, to second-trimester blood tests in the late 1980s, to the first-trimester combined test, and most recently to cell-free DNA testing, which entered the NHS programme in England in 2021.
 :::
 
 ## Where this leads
 
-Hypertensive and medical emergencies in [[obstetrics-gynaecology/pregnancy-complications]], birth mechanics in [[obstetrics-gynaecology/labour-birth]], postpartum care and bleeding in [[obstetrics-gynaecology/postnatal-period]], the early-pregnancy syndromes in [[obstetrics-gynaecology/early-pregnancy]], and screening doctrine in [[public-health/screening]].
-
-::: history
-**Antenatal care is older than obstetrics as a specialty and younger than the midwife: the first 'antenatal clinics' appeared as infant-welfare and pregnancy-outpatient services in Edwardian and interwar Britain - the 1918 Maternity Facilities and Midwives discussions, Ballantyne's 1914 textbook arguing pregnancy itself could sicken, and the mid-century shift of birth from home to hospital that made the pregnant woman a patient for the first time. The scientific spine came from three observations repeated in different countries: that booking-book surveillance reduced stillbirths among the hypertensive and growth-restricted minority (the post-war trials and the voluntary-coding of maternal deaths - the Confidential Enquiries into Maternal Deaths begun in 1926 - that invented the modern 'each death teaches the service' audit culture and gave the world the phrase 'the three delays' long before it entered global-health vocabulary); that screening had to be earned - the rhesus-disease story of the 1960s-70s, when anti-D immunoglobulin converted the commonest cause of haemolytic disease of the newborn into a preventable one and created the template (test, prophylax, audit) the whole programme follows; and that some 'routine' tests were bad medicine - the cardiotocography-into-unnecessary-intervention debate of the 1970s-80s, oestriol and 'placental-function' testing abandoned when trials showed no benefit, and the routine-late-induction arguments still running. The technology waves followed the screening template: ultrasound's journey from growth guesswork to dating precision to the fetal-medicine operating theatre (feto-urinary shunts of the 1980s, fetoscopic surgery now), the serum-screen era to nuchal translucency to cell-free DNA from 2011 and the 'diagnostic without needles' ethical argument still unfolding about what parents choose and what society screens; the aspirin-for-pre-eclampsia evidence (the 1990s-2017 meta-analyses and the 2018 FIGO-NICE adoption) as an example of prevention-by-150mg-tablet that took twenty-five years from first trials; and the confidential-enquiries-era reframing of what antenatal care must also address - maternal mental health now the leading cause of maternal death in the MBRRACE reports, suicide's place on every death certificate that triggers a review, and the MMBRRACE finding that Black and Asian women in Britain die at several times the white rate for reasons that are racism-and-access-and-comorbidity rather than biology - which has made the antenatal clinic the site of an equity audit as much as a blood-pressure check. The specialty's honest summary from eighty years of its own reports is unchanged: most maternal deaths are prevented not by clever late intervention but by noticing the right small things repeatedly, believing the woman's account of her own body, and handing her the thread that connects her midwife, her GP and her consultant - [[public-health/screening]], [[obstetrics-gynaecology/postnatal-period]], [[public-health/determinants-inequalities]].**
-:::
+Conditions detected by antenatal care, including pre-eclampsia, gestational diabetes, bleeding and preterm labour, are in [[obstetrics-gynaecology/pregnancy-complications]]. Problems before 14 weeks are in [[obstetrics-gynaecology/early-pregnancy]]. The physiology of labour is in [[obstetrics-gynaecology/labour-birth]], and screening as a population programme is discussed in [[public-health/screening]]. The genetic background to prenatal testing is in [[genetics/chromosomal-disorders]].
 
 ::: summary
-- The schedule is a surveillance system for the 1-10 percent tail: booking history quality determines everything downstream, and physiology rewrites how every investigation reads.
-- Pre-eclampsia prevention by aspirin, anaemia by ferritin, vertical-infection prevention by opt-out bloods - antenatal care's biggest wins are cheap and time-dependent.
-- Screening remains screening: counselling is arithmetic, cell-free DNA is a test with a positive predictive value, and reports should be written to be understood by the patient.
-- Every medical disorder has a pregnancy version: pre-conception is the best antenatal visit, and 'what happened last pregnancy' is the highest-yield question in the book.
-- The growth curve is the third-trimester vital sign; a crossing centiles is a referral, not a re-measure.
-- Equity and mental health are antenatal safety issues: the confidential enquiries' recurring findings are access failures, not biology, and both are measured on the same ward round.
+- Gestational age is counted from the LMP; the EDD is 280 days later. In the UK the CRL scan at 10+0 to 13+6 weeks sets the dates, and later scans do not change them.
+- Gravidity counts all pregnancies including the current one. Parity counts births after 24 weeks (live or stillborn) and live births before 24 weeks; losses before 24 weeks are written after the plus sign. Always write the history out in words as well.
+- Pregnancy changes the normal ranges: lower haemoglobin, creatinine and $P_{\text{CO}_2}$, higher clotting factors and alkaline phosphatase. Interpret results against pregnancy ranges.
+- After 20 weeks, aortocaval compression causes supine hypotension, so pregnant women are positioned with a left lateral tilt.
+- NICE NG201 sets the UK schedule: booking by 10 weeks, routine blood tests, a dating scan, screening for trisomies, an anomaly scan at 18+0 to 20+6 weeks, blood pressure and urine at every visit and fundal height from 24 weeks.
+- A screening test sorts women into higher and lower chance; because the conditions are rare, most higher-chance results come from unaffected pregnancies.
+- RhD-negative women receive anti-D prophylaxis antenatally, after sensitising events and after the birth of an RhD-positive baby; anti-D does not help a woman who is already sensitised.
+- Aspirin from 12 weeks is recommended for women with one high-risk or two moderate-risk factors for pre-eclampsia.
+- Drug effects on the fetus depend on timing: organogenesis (3 to 8 weeks after conception) is the period of greatest risk for malformations.
 :::
 
 ## Exercises
 
-::: exercise Build the booking consultation {level=1}
-List the drug and condition history items in a booking that most often change management, and the two questions that most often reveal an undisclosed problem.
+::: exercise Counting days {level=1 check="85"}
+A woman's last menstrual period began on 9 March 2026. How many days pregnant is she, by dates, on 2 June 2026?
+::: hint
+Count the remaining days of March, then April and May, then the days of June.
+:::
 ::: solution
-**Booking-highlights ([[#def-schedule]], [[#def-conditions]]): the change-managers - previous caesarean or major uterine surgery (mode-of-birth conversation and scar timeline), hypertension or renal disease (aspirin and surveillance), previous VTE (thromboprophylaxis planning across pregnancy and puerperium), epilepsy and psychiatric medication (valproate and lithium counselling and pre-conception where possible), autoimmune disease (antibody and flare planning), sickle cell or thalassaemia family origin (partner testing), bariatric surgery (anaemia and micronutrient surveillance), and current medicines including over-the-counter and herbal; the two revealing questions - 'What happened with your other pregnancies, in your words?' (the previous stillbirth, pre-eclampsia or preterm birth hides here, unsaid because nobody asked long enough) and 'Is there anything you are worried about but have not mentioned?' - because the woman who discloses the alcohol, the partner's anger, or the thyroid tablets she stopped is waiting for a door, not a form; and the record rule: every answer in a field that the next clinician can search, because transfer of records between units is the system's oldest failure - [[paediatrics/newborn]], [[clinical-skills/history-taking]].**
+March has 31 days, so from 9 March to 31 March is 22 days. April adds 30 and May adds 31, giving 83 days to 31 May. Two more days reach 2 June: $22 + 30 + 31 + 2 = 85$ days, which is 12 weeks and 1 day (12+1).
 :::
 :::
 
-::: exercise Interpret three 'abnormal' results {level=2}
-(1) 9 weeks: Hb 11.8, ferritin 9. (2) 15 weeks: blood pressure 135/85, no protein, BMI 31, first baby. (3) 24 weeks: HbA1c 6.0 percent with normal early fasting glucoses. Explain each and give the plan.
+::: exercise Gravidity and parity {level=1}
+A woman in her fifth pregnancy has had one term vaginal birth, one twin birth by caesarean section at 34 weeks with both babies alive, one ectopic pregnancy and one termination at 8 weeks. Write a summary and explain why you would also write the history in full.
 ::: solution
-**Three-numbers ([[#def-conditions]]): (1) iron-deficiency anaemia (the 'normal' pregnancy dilution does not make ferritin 9 normal) - oral iron with vitamin C, alternate-day dosing now favoured for absorption and tolerance, recheck in 2-4 weeks, and in the same breath the dietary and blood-donation questions and the bleeding-source thought if refractory; (2) raised blood pressure at 15 weeks: book as gestational-hypertension risk, confirm with repeat and ambulatory if borderline, aspirin if not already (by 16 weeks the prevention window narrows), plus the surveillance package and the teaching that symptoms matter only after the numbers - this woman becomes pre-eclampsia's statistic or its survivor on follow-up alone; and (3) the HbA1c 6.0 at 24 weeks: 'with normal early fasting glucoses this is at the gestational-diabetes border - local pathways differ between glucose-loaded screening results and HbA1c, so follow the unit's screen, and if borderline the honest plan is lifestyle counselled without guilt plus fasting-and-postprandial capillary glucose monitoring for two weeks and treatment if the profile crosses targets' - three cases, three different reasoning errors avoided: dismissing iron as dilution, dismissing blood pressure as whitecoat without data, and treating a number rather than a profile - [[endocrine/diabetes]], [[cardiovascular/hypertension]].**
+She is gravida 5 (four previous pregnancies plus this one). Two pregnancies ended in birth after 24 weeks. Counting each delivery once, she is para 2+2; if the unit counts each baby, the parity figure would be 3+2. This ambiguity is exactly why the history is written out: the twin birth by caesarean section at 34 weeks matters (a uterine scar, a preterm birth), and the previous ectopic pregnancy matters (an early scan is advised in this pregnancy to confirm the location).
 :::
 :::
 
-::: exercise Counsel about fetal therapy {level=2}
-At 21 weeks a male fetus has bilateral enlarged echogenic kidneys, absent bladder and low fluid; 'possible lethal' is on the scan report. The parents ask whether a shunt can fix it. What are the questions to ask, the options to present and the language to avoid?
+::: exercise Pregnancy anaemia thresholds {level=1}
+Give the UK haemoglobin thresholds that define anaemia in each trimester and after birth, and explain why they are lower than for non-pregnant women.
 ::: solution
-**The-scan-that-ends-a-world ([[#def-screening]]): the questions - 'is this bilateral renal dysplasia with oligohydramnios sequence, or lower-urinary-tract-obstruction (the keyhole, the distended bladder, the thick-walled bladder - that distinction decides whether any intervention has a target), what is the fluid trend and lung-development window, is this isolated or syndromic (karyotype or exome where chosen, and the amniocentesis result changes the counselling), and what does the paediatric nephrology or pediatric-surgery opinion already say - this is a fetal-medicine-plus-neonatology conversation, not a scan-report conversation'; the options - 'expectant management with serial assessment and the honest prediction for pulmonary hypoplasia, the vesicoamniotic shunt for selected obstructive cases with real but modest survival benefit and uncertain long-term renal outcome, and termination of pregnancy where legal and chosen, all three presented as choices rather than as success versus failure'; and the language - 'avoid "lethal" for a condition whose lethality depends on gestation, fluid trajectory and the intervention selected; avoid "we can try" without the denominator; do not write a scan report sentence that becomes the only sentence anyone remembers ("possible lethal" is exactly that); and when the parents ask about the shunt, the truthful structure is: it is a real operation for selected babies like yours, the best evidence says it changes survival by some amount for the obstructive group and less for the dysplasia group, and the survivors mostly face dialysis or transplant childhoods - which some families decide is worth everything and others cannot accept, and both are competent answers to an impossible question'. End with the continuity promise: whichever they choose, the same team, the same names, the same room - [[paediatrics/congenital-genetic]], [[obstetrics-gynaecology/pregnancy-complications]].**
+Anaemia is a haemoglobin below 110 g/L in the first trimester, below 105 g/L in the second and third trimesters, and below 100 g/L after birth. Plasma volume rises by about 40–50% while red cell mass rises by only about 20–30%, so the haemoglobin concentration falls by dilution even when the red cell mass is normal. The lowest values occur in the second and third trimesters, when the plasma volume expansion is greatest.
 :::
 :::
 
-::: exercise Audit the equity of your antenatal service {level=3}
-Your unit's data: women from the two most deprived quintiles book at a median 13 weeks versus 8 in the least deprived; caesarean rates are highest in the least deprived and lowest in the most deprived; perinatal deaths concentrate in two ethnic minorities and in the women who booked after 12 weeks. Design the improvement programme and the measurement that proves it.
+::: exercise A second positive predictive value {level=2 check="round(100*0.8*0.85/(0.8*0.85+99.2*0.025))"}
+The illustrative screening test in [[#ex-ppv]] (detection rate 85%, screen-positive rate in unaffected pregnancies 2.5%) is used in older women, in whom the prevalence is about 1 in 125 (0.8%). What percentage of screen-positive results come from affected pregnancies? Give the answer to the nearest whole per cent.
+::: hint
+Work with 10,000 women again, or with 100 women and decimals.
+:::
 ::: solution
-**Antenatal-equity-programme ([[#def-schedule]], [[#def-screening]]): the diagnosis - 'late booking is an access and trust problem - it clusters with migration, asylum processes, no-fixed-address, childcare-and-transport costs, and fear of services, and every one of those is fixable by design; the ethnic perinatal-death concentration repeats the confidential-enquiry pattern and demands the same disaggregation the Enquiry makes: is it late booking, comorbidity, interpreter absence, or the care-does-not-happen gap between attendance and treatment'; the design - 'book-in-anything-anyone pathways - community midwives booking in housing hostels and asylum accommodation, a named community midwife who keeps the relationship when addresses change, evening and weekend booking clinics, transport vouchers counted as clinical spend, interpretation in the woman's language from the first contact with video interpreting as the documented fallback, and the "you can book on the day you attend" rule with no documents required to start care', the workforce-and-culture layer - 'the consultant-and-midwife caseload model for high-risk minority women so at least one senior relationship exists per pregnancy, the "listen to her" campaign with the pain-and-symptom-dismissal data (the same women report not being believed), mandatory interpreter use with audit, and a workforce that reflects the population where recruitment permits, because the Enquiry data say continuity of carer reduces stillbirth in high-risk groups', the measurement that proves it - 'booking-week distribution by quintile and ethnicity monthly (the headline), first-trimester aspirin uptake by quintile, interpreter-use rate in labour and its association with outcomes, the perinatal-death review count of "care that did not happen" findings with actions closed, and the women's own access report ("could you get an appointment without a parent or a car?")' and the governance rule - 'the perinatal-mortality meetings are chaired with a public-health physician and the locality Director of Public Health in the room, because these differences are not specialties - they are postcode, racism and waiting-time made clinical, and an antenatal service that cannot publish its gap is not doing antenatal care - it is doing an average of it' - [[public-health/determinants-inequalities]], [[public-health/health-systems-economics]].**
+Of 10,000 women, 80 have an affected pregnancy and $80 \times 0.85 = 68$ screen positive. Of the 9,920 unaffected pregnancies, $9\,920 \times 0.025 = 248$ screen positive. The PPV is $68 / (68 + 248) = 68/316 \approx 0.215$, which is **22%**. Doubling the prevalence nearly doubled the PPV, while the test itself was unchanged.
+:::
+:::
+
+::: exercise Who needs aspirin? {level=2}
+For each woman, decide whether NICE criteria for aspirin to reduce the risk of pre-eclampsia are met: (a) a 28-year-old in her second pregnancy whose first pregnancy was complicated by gestational hypertension; (b) a 35-year-old in her first pregnancy with a BMI of 31; (c) a 30-year-old in her first pregnancy expecting twins; (d) a 26-year-old with type 1 diabetes.
+::: solution
+(a) **Yes.** Hypertensive disease in a previous pregnancy is a high-risk factor. (b) **No.** Nulliparity is one moderate-risk factor; she is under 40 and her BMI is below 35, so she has only one. (c) **Yes.** First pregnancy and multiple pregnancy are two moderate-risk factors. (d) **Yes.** Type 1 diabetes is a high-risk factor. In each case the decision follows local guidance and a discussion with the woman.
+:::
+:::
+
+::: exercise RhD-negative after bleeding {level=2}
+An RhD-negative woman at 22 weeks with no anti-D antibodies attends after a fall onto her abdomen. She has had a small vaginal bleed. Fetal genotyping earlier in the pregnancy predicted an RhD-positive fetus. What does she need, and why?
+::: solution
+Abdominal trauma after 12 weeks is a potentially sensitising event, and the fetus is RhD-positive, so she needs anti-D immunoglobulin, ideally within 72 hours. After 20 weeks a test of fetomaternal haemorrhage (Kleihauer test) is done to decide whether the standard dose is enough. She also needs assessment of the trauma itself: a fall with bleeding can cause placental abruption, so the fetal heart and the uterus must be assessed and she should be advised to return with pain or further bleeding. Routine antenatal prophylaxis at 28 weeks is still given; the event does not replace it.
+:::
+:::
+
+::: exercise A blood gas in pregnancy {level=3}
+A 29-year-old woman at 32 weeks with asthma arrives with breathlessness. Her arterial blood gas on air shows pH 7.44, $P_{\text{O}_2}$ 9.8 kPa, $P_{\text{CO}_2}$ 4.1 kPa, bicarbonate 20 mmol/L. One hour later, after treatment, she looks tired; the gas shows pH 7.37, $P_{\text{CO}_2}$ 5.3 kPa. Interpret both gases.
+::: solution
+**First gas.** The pH, $P_{\text{CO}_2}$ and bicarbonate are those of the normal compensated respiratory alkalosis of pregnancy. The $P_{\text{O}_2}$ of 9.8 kPa is low, showing that the asthma is impairing oxygenation. Hypoxaemia in pregnancy also reduces oxygen delivery to the fetus, so she needs oxygen and treatment of the asthma.
+
+**Second gas.** A $P_{\text{CO}_2}$ of 5.3 kPa would be normal outside pregnancy, but it is well above the expected 4 kPa, and the pH has fallen. With her tiredness, this is a sign of a life-threatening asthma attack with respiratory fatigue. She needs urgent senior review, including critical care and anaesthetic involvement. The fetus is best protected by treating the mother fully; asthma drugs, including steroids, should not be withheld because of the pregnancy.
+:::
+:::
+
+::: exercise Design a counselling script {level=3}
+A 38-year-old woman's combined test reports a chance of 1 in 40 for Down's syndrome. She asks, "So my baby has Down's syndrome?" Explain what the result means and outline her options, including the strengths and limits of each.
+::: solution
+**Meaning.** A chance of 1 in 40 means that of 40 women with this result, about one has a baby with Down's syndrome and 39 do not. The result places her in the higher-chance group (1 in 150 or greater) but is not a diagnosis.
+
+**Options.**
+1. **No further testing.** This is a valid choice; some women prefer not to know or would not change their plans.
+2. **NIPT.** A blood test with no risk of miscarriage. It detects most affected pregnancies and has few false positives, but a "higher-chance" NIPT result still needs a diagnostic test to confirm it, and occasionally no result is obtained.
+3. **Diagnostic testing.** Chorionic villus sampling now or amniocentesis from 15 weeks gives a definite answer but carries a small additional risk of miscarriage (around 0.5%). CVS can occasionally show placental mosaicism that is not present in the fetus.
+
+**Approach.** Use plain numbers and both framings ("1 in 40", "39 in 40 do not"), give written information, allow time, and support whatever decision she makes without directing her. If a diagnosis is confirmed, she should be offered information from specialist services and parent organisations about what the condition means, as well as her options.
 :::
 :::

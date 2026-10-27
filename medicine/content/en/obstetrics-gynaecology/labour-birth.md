@@ -1,141 +1,305 @@
-Labour is a series of decisions disguised as a physiological process: is this labour, is this progress, is this baby coping, is this the room for this moment, and is this clinician the right one to be watching. **This chapter covers the physiology and diagnosis of labour, intrapartum monitoring and its treacherous interpretation, the decision architecture of induction and augmentation, operative birth (instrumental and caesarean) including the judgement calls that audits actually examine, and the intrapartum emergencies whose management is protocol-plus-repetition: shoulder dystocia, cord prolapse, category-one caesarean, uterine rupture. The governing rule of modern intrapartum care: normal birth is the default and the service's job is to protect it while making the abnormal detectable, escalating with humility and delivering with speed when the two conflict.**
+Labour is a mechanical problem solved by physiology. A fetal head about 9.5 cm across has to pass through a bony pelvis whose diameters are not much larger, along a curved path, driven by a muscle that must contract hard enough to push the baby out yet relax often enough to let blood reach the placenta. Most of the time this works without help. Care in labour consists of noticing when it is not working, for the mother or the baby, and intervening at the right moment and no earlier.
 
-## Labour, monitoring and progress
+This chapter explains how labour starts and progresses, how mother and baby are monitored, the options for pain relief, induction and augmentation of labour, operative vaginal birth and caesarean section, and the emergencies of labour. UK practice in this chapter follows NICE NG235 (*Intrapartum care*, 2023), NICE NG229 (*Fetal monitoring in labour*, 2022), NICE NG207 (*Inducing labour*, 2021), NICE NG192 (*Caesarean birth*, 2021) and RCOG guidelines. The anatomy of the pelvis is in [[anatomy/pelvis-perineum]].
 
-::: definition Physiology, progress and fetal monitoring {#def-labour}
-**Diagnosis and stages: labour is regular contractions with cervical change; the latent phase (prolonged, miserable, frequently mis-sold as active labour to admit women too early - the new admission-approach trials favour later admission with community support for exactly this reason), the active first phase (now sensibly defined from about 5-6 cm dilated rather than 3-4), the second phase (full dilation to birth - parity-dependent, and the WHO-derived '2 hours nullip, 1 hour multip' guideposts for delays that warrant assessment rather than automatic intervention), and the third stage (placenta, managed actively with uterotonics or physiologically with the cord-care rules - see the postnatal chapter for haemorrhage). Progress is a curve, not a point: contractions and cervical assessment over time define arrest - the modern safe-care framework is that 'labour progress is slow until proven otherwise' in a well-supervised, mobile, supported woman, and the Friedman-curve legacy (active-phase slopes and the 1.2 cm/hour minimum) has been replaced by partograms that wait longer for normal variance while demanding escalation for genuine arrest - the discriminations are made with the full picture: contractions, membrane status, position, analgesia, descent, maternal exhaustion, and the baby's condition. Fetal monitoring: intermittent auscultation is the evidence-based default for low-risk labours; continuous CTG is offered for the indications (oxytocin in many units, fever, meconium, growth restriction, vaginal birth after caesarean, and the maternal-already-decided-to-continue group) with its honest record - the CTG is a high-sensitivity, low-specificity test whose predictive-value arithmetic means almost every trace abnormality is a false positive for hypoxia, so abnormality's meaning lives in the differential (sleep cycle, position, maternal position and hydration, the normal deceleration patterns of descent) and in the trend plus the scalp-sampling-or-stimulation-strips-and-the-expert-second-opinion-adjacency, with fetal blood sampling and the scalp-sampling era being replaced where the CTG is truly pathological; the delivery-decision for the category-1 picture (sustained bradycardia, recurrent late decelerations with reduced variability, pathological-plus-clinical-risk) is made on the whole trace plus the clinical situation, which is why guidelines describe patterns rather than thresholds-and-timers. Analgesia: the epidural is the most effective analgesia and its effects on labour length and instrumental birth are small and dose-related in modern practice; the remifentanil PCA is the alternative with its respiratory-saturation monitoring requirements; and non-pharmacological support (hds - the continuous one-to-one care whose Cochrane effect size beats most drugs) is the intervention with the most evidence and the least prescription, because the midwife-staffing model that provides it is a budget decision wearing a clinical coat. The whole chapter's epidemiological anchor: the confidential enquiries and perinatal-audit era keep finding the same three failures in bad intrapartum outcomes - failure to recognise and escalate abnormal CTGs or maternal deterioration, failure to act on escalation (the delay from decision to delivery that should be 30 minutes in a category-one and is sometimes an hour in a litigated case), and failure to communicate around emergency decisions - all three are human-factors problems, and the drills that fixed them are the reason the next sections read like protocols: they are - [[obstetrics-gynaecology/pregnancy-complications]], [[paediatrics/newborn]], [[clinical-skills/patient-safety]].**
-:::
+## How labour works
 
-## Induction and operative birth
+### The three Ps
 
-::: definition Induction, augmentation and operative birth decisions {#def-operative}
-**Induction of labour: the indications divide into maternal (hypertensive disease, diabetes, pre-eclampsia timing), fetal (growth restriction, reduced movements with a plan, post-dates - the now-strengthened evidence from the term-pregnancy-induction trials that offer-of-induction-at-37-40+ shifts outcomes toward fewer stillbirths with a small caesarean increase or no increase depending on the trial, an argument still settling into guidelines), and social-and-logistic (never an indication on its own but a reason the others get delivered late); methods - prostaglandin pessaries or PGE2 with the vaginal-misoprostol-alternative-now-widely-listed, the balloon-catheter era, and ARM-plus-oxytocin for the favourable cervix, all with the hyperstimulation-and-continuous-CTG trade-off and the caesarean-for-previous-uterine-rupture-avoidance nuance; the counselling standard is that induction is a proposed intervention with a stated purpose and a defined review point, not an order, and women decline for reasons worth hearing because the same woman will deliver here under worse circumstances otherwise. Augmentation: oxytocin for hypotonic contractions with a defined starting dose and titration table and continuous monitoring, because the drug that creates the hyperstimulation-hypoxia litigations is the same drug that prevents half the category-one caesareans for arrest - the skill is the discipline of the protocol and the senior review when the cervix refuses to move. Instrumental birth: the criteria are a fully dilated cervix, ruptured membranes, head engaged and position known, adequate analgesia, an empty bladder, an informed plan including failure, and an operator competent for the situation - the forceps-versus-ventouse choice is evidence-guided (ventouse fewer maternal injuries, forceps fewer failures for a given situation, the sequential-instruments rule of 'two attempts maximum and senior review before the second'), and the decision to abandon for caesarean after failed instruments is made before the third pull, not after. Caesarean birth: the indications are the four big buckets (previous uterine surgery and the VBAC arithmetic, failure of progress, fetal compromise, and the maternal-and-fetal-conditions lists - placenta praevia, transverse lie, the cord or tumour oddities) plus the growing category of maternal-request, whose evidence (the cesarean-on-request trials and the long-term incontinence-and-uterus-rupture data on both sides) supports a genuine conversation rather than a refusal; decision-to-delivery under 30 minutes for category-one with the drills that make it real (the theatre-team activation, the anaesthetic route decision - 'the spinal that takes ten minutes versus the GA that takes three with its airway risk' is a clinical judgement rehearsed, not improvised), and the VBA2C-adjacent truth that every caesarean is a decision about future pregnancies: the rupture-risk-and-TLOR-versus-repeat-cs numbers, the placenta-accreta-in-the-next-pregnancy risk, and the consent conversations that name the hysterectomy-and-adhesions possibilities because caesarean-section's long-term morbidity (adhesions, scar pregnancy, hysterectomy) is a public-health-scale problem in countries with rates above 30 percent - [[obstetrics-gynaecology/pregnancy-complications]], [[obstetrics-gynaecology/postnatal-period]].**
-:::
+Progress in labour depends on three factors, traditionally called the **powers** (uterine contractions and maternal effort), the **passenger** (the size, presentation and position of the fetus) and the **passage** (the bony pelvis and soft tissues). Slow progress is analysed by asking which of the three is at fault.
 
-## The intrapartum emergencies
+**Powers.** In labour the myometrium contracts in coordinated waves that start near the fundus and spread downward. Each contraction shortens the muscle fibres, which do not fully relax again (**retraction**), so the upper segment thickens and the thin lower segment and cervix are drawn up and opened. Effective labour typically has three to four contractions every ten minutes, each lasting about a minute.
 
-::: definition Shoulder dystocia, cord prolapse and uterine rupture {#def-emergencies}
-**Shoulder dystocia: the diagnosis is the head that does not deliver with restitution plus the Turtle-sign, and the management is the HELPERR-learned sequence with the drill made real - call for help (the second midwife, the paediatrician, the anaesthetist, the most senior obstetrician in the building), legs (McRoberts first because it works most of the time), suprapubic pressure, the manoeuvres (rotation - Rubin, Woods screw), the episiotomy-decision-as-space-not-principle, and the last-resort list (willets, deliberate clavicular fracture, Gaskins all-fours which is increasingly first-line because gravity is free), with the two time-critical errors named in every drill: pulling on the head and fundal pressure, and losing track of time - the clock is read aloud every minute and the delivery-to-head time recorded, because the brachial-palsy claim and the hypoxic-injury defence both turn on those minutes; the after: the neonatal exam for the plexus and the fracture, the third-stage vigilance, and the debrief with the actual numbers of the head-to-body interval - because the woman who is told 'it was nine minutes and here is what we did' processes a trauma better than one left with the mystery. Cord prolapse: the diagnosis is the visible-or-palpable cord with the sudden-deep-decelerations - the management is the muscle-memory drill: call for help, a gloved hand elevating the presenting part (the assistant's, not the operator-from-then-on's), bladder filling via a three-way catheter, the mother head-down (Trendelenburg with the knees-to-chest variations), tocolysis (terbutaline) to relax a contracting uterus, and the delivery-mode decision made in the ambulance-to-theatre - category-one caesarean by the shortest route, which may be the delivery-suite's own theatre, with vaginal delivery only if the cervix is fully dilated and the head low enough to lift out; every minute of cord compression is acidosis, and the 'time to delivery' in the notes is the number the review reads first. Uterine rupture: the VBAC-or-TLOR context plus the CTG's worst lie (the 'only sign may be the tachycardia-and-loss-of-contractions-and-the-mother-collapsing version') - the management is the category-one caesarean with the hysterectomy-possession, the blood-bank at the door, and the resuscitation, with the diagnosis made fastest when someone asks the question: no uterine scar is 100 percent protection (the unscarred ruptures happen - the fundal-placenta-percreta and the connective-tissue oddities) and a scar is not a verdict (the RCOG-adjacent one being that most VBACs succeed and the rupture risk sits around half-a-percent-to-one-percent territory, the number that makes or breaks the counselling). The unifying structure: all three are drills, and the drill's evidence (simulation-training trials for shoulder dystocia and the PROMPT-peripartum-haemorrhage programmes' effect on outcomes) is the argument for the annual mandatory afternoon the rota spends on them - [[emergency-critical-care/resuscitation]], [[clinical-skills/patient-safety]], [[obstetrics-gynaecology/pregnancy-complications]].**
-:::
+**Passenger.** The diameter of the fetal head that has to pass through the pelvis depends on how well the head is flexed.
 
-::: example The 4 a.m. bradycardia {#ex-cord}
-A 39+2 multigravida, 7 cm, ARM performed for meconium; a loop of cord prolapses; the cervix is 7 cm and the head is 2/5 palpable per abdomen; the CTG shows prolonged bradycardia at 55.
-::: solution
-**Cord-prolapse-at-7cm ([[#def-emergencies]]): the first sixty seconds decide the baby - 'hand in, do not remove it; the escalation call that says the words "cord prolapse, category one, bring the section kit and the anaesthetist to me now"; the midwife starting the bladder fill and the tocolysis per protocol; the mother into the position that keeps the hand effective; the clock started aloud; and the decision made instantly that this is a caesarean because 7 cm and a high head cannot deliver vaginally before the trace dies'; the minutes two-to-ten - 'the delivery-suite theatre with everything pre-positioned (the drills are what buy the seconds), the anaesthetic decision made for speed - usually GA with the difficult-airway readiness or the spinal-if-it-will-be-faster-than-the-baby-can-bear, whichever the on-call pair judge and the notes later justify, the scrub-in-while-transferring efficiency, and the neonatal team at the side from the beginning because a bradycardic 39-weeker is an Apgar-3-to-5 conversation the moment it is born'; and the afterwards - 'the cord length and compression time documented, the baby's cord gases and the serial-neurology vigilance and the cooling-centre threshold discussed with neonatology, and the same-day debrief for the woman and the team - hers because she lived through a theatre-in-the-dark, the team's because the only performance measure that night was time from decision to delivery and someone must write the number down and learn it; and the next-pregnancy counselling: the recurrence risk is small but real, delivery-planned, and the hospital with the 24-hour theatre she now knows by name' - [[paediatrics/newborn]], [[clinical-skills/patient-safety]].**
-:::
-:::
+| Attitude of the head | Presenting diameter | Length (approx.) |
+|---|---|---|
+| Well-flexed vertex (occipito-anterior) | Suboccipitobregmatic | 9.5 cm |
+| Deflexed vertex (often occipito-posterior) | Occipitofrontal | 11.5 cm |
+| Brow | Mentovertical | 13 cm |
+| Face | Submentobregmatic | 9.5 cm |
 
-::: example The second stage that stopped {#ex-secondstage}
-A 26-year-old primip, epidural, two hours of pushing, 3/5 above the brim, persistent OP position, fully dilated, contractions faded; the CTG reassuring; she is exhausted and says 'just cut me out'.
-::: solution
-**The-arrested-second-stage ([[#def-labour]], [[#def-operative]]): the assessment before the instrument - 'is this arrest or fatigue: recheck (is she truly complete, is the position OP as documented, is the bladder empty, is the epidural dense enough to abolish pushing sensation), because the answer changes the plan from theatre to a further hour with contractions supported and position varied - the WHO-style limits are guides and the physiological slow-but-progressing multip or epidural case deserves patience with a documented reason'; the decision ladder - 'rotational assessment: an OP at 3/5 with an unfavourable pelvis after two hours of pushing is a caesarean more often than a safe rotational forceps, and the trainee-at-4am should know that the honest call is "I need the consultant to decide this at the bedside", not "I must try something"; if the head is reachable and the position correctable with a plan - ventouse-then-forces rules with the two-attempt ceiling and the laboured-progress-plus-suspected-disproportion red flags respected; and if the answer is caesarean, it is a second-stage caesarean for a head deep in the pelvis, which is the hardest, bloodiest caesarean in the book - the Push-or-Brat technique knowledge, the post-partum-haemorrhage preparedness, and the consent that says why'; and the woman's sentence - '"just cut me out" is exhaustion plus a reasonable request plus a question: the answer is "we can do that now if that is the safest thing; first let me change three things and see if your body agrees - and if in an hour we are here again, the answer is theatre and I will say so"; because the birth story that goes unhealed is the one where nobody explained the decision she was part of', with the second-stage OASI-risk discussion held before any instrument, the third- and fourth-degree repair by the right person, and the physiotherapy-and-debrief follow-up that is the difference between a difficult birth and a birth trauma - [[obstetrics-gynaecology/postnatal-period]], [[clinical-skills/communication]].**
-:::
-:::
+A brow presentation cannot usually deliver vaginally at term; a well-flexed occipito-anterior head presents the smallest diameter. Malposition, especially occipito-posterior, is a common cause of slow labour.
 
-::: example The home-birth transfer at 3 a.m. {#ex-transfer}
-A low-risk 41+3 primip in labour at home since midnight is transferred for no progress at 7 cm: two hours' ambulance wait in progress, GBS status unknown, her partner calling the unit asking 'are they taking too long'.
-::: solution
-**The-transfer-window ([[#def-labour]]): the medicine - 'a transfer in established labour is an unmonitored window: the community midwife stays with her, the receiving unit opens a placeholder record and telephones every 15-20 minutes with specific questions (contractions, leakage, colour of fluid, baby's movements, maternal exhaustion), the CTG-on-arrival plan and the bloods-and-group status are pre-noted, and the decision to use oxytocin on arrival waits for a full admission assessment because precipitant labour after a long latent phase is a rupture-and-hyperstimulation story the audit will read as "she arrived progressing fine and we made her contract too hard"; the GBS-unknown-plus-prolonged-rom arithmetic per local protocol; and the arrival itself - the partogram restarted honestly from the admission cervix with a named senior review within an hour because transferred women are the population whose "failure to progress" was actually "nobody assessed her properly for six hours"; the human and system - 'her partner's phone call is a clinical observation: the unit answers it with a named midwife, information and kindness, because the transfer already broke the continuity promise, and the audit metric that catches the pattern is "transfer-in-labour-to-emergency-caesarean interval by hour of admission" - the number that gets ambulance handover delays and midwifery-ambulance-escort-shortages noticed by people who control budgets; and the debrief includes the community team, because the transfer that ends well is the one where the two services learn each other's names' - [[obstetrics-gynaecology/pregnancy-antenatal]], [[clinical-skills/records-handover]].**
-:::
-:::
+**Passage.** The pelvic inlet is widest from side to side and the outlet is widest from front to back, so the head enters the pelvis facing sideways and must rotate to face the mother's back to emerge. The level of the head is described in two ways: by the number of fifths of the head palpable above the pelvic brim on abdominal examination, and by its **station**, the position of the lowest bony point of the head relative to the ischial spines in centimetres (from −3 above to +3 below).
 
-::: example The meconium and the liquor that will not clear {#ex-meco}
-A 40+5 labour with thick green meconium at ARM; the CTG is suspicious with repetitive late decelerations; scalp stimulation gives no acceleration; the cervix is 6 cm.
-::: solution
-**Meconium-plus-suspicious-trace ([[#def-labour]], [[#def-operative]]): the decision frame - 'thick meconium plus repetitive late decelerations plus no acceleration on scalp stimulation is a fetus that is not compensating: at 6 cm the route is caesarean, and the question is only how fast and by whom; the wrong options are all named in the reviews - amnioinfusion-outside-trials (not standard), waiting for "a better trace" (traces with this combination do not improve at 6 cm), and the full-blown at-hope delivery with a non-reassering trace (a different disaster with its own file)'; the execution - 'category-one activation with the neonatal team at the delivery including the resuscitation-adjacent meconium-aspiration readiness (the suction-and-CPAP-and-intubation-decision-is-theirs, the passage-of-meconium-history-is-yours), the anaesthetic decision rehearsed in the cord-prolapse drill applies identically, and the cord gases taken from both arteries with the base-excess numbers recorded in the notes because they are the baby's medical record from this night forward'; and the next day - 'the cooling-criteria conversation with the neonatal unit if the baby is encephalopathic and the total-care-given timeline written while it is fresh (decision, incision, delivery, gases, team) - because meconium cases are where the two questions "could you have delivered sooner" and "did you interpret correctly" meet, and the honest answers live in that timeline; and the woman: the word for what she experienced is emergency, and the debrief by the people who did it, in her language, is part of the repair' - [[paediatrics/newborn]], [[clinical-skills/patient-safety]].**
-:::
-:::
+### Starting labour
 
-::: exercise Manage the hyperstimulation {level=1}
-On oxytocin augmentation, contractions every 90 seconds for 6 minutes with a 40-second peak and a suspicious CTG appearing. Sequence the next ten minutes.
-::: solution
-**Hyperstimulation ([[#def-labour]]): the ten minutes - 'stop the oxytocin (the infusion, not the "we will turn it down" that litigators quote), maternal position change left-or-right lateral, no abdominal pressure, reassess contractions within 2-3 minutes, continuous CTG confirmed and a second trained pair of eyes on the trace, escalate to the on-call obstetrician and anaesthetist if the trace does not recover with the contractions stopped, consider tocolysis (terbutaline per protocol) for persistent hyperstimulation with an abnormal trace, and prepare for delivery if the trace stays pathological - the vaginal-or-caesarean decision by dilation and station as usual'; and the discipline - 'the oxytocin protocol's reason for existing: a titration table, a maximum-contraction-frequency rule (five in ten minutes), continuous monitoring where the unit requires it for oxytocin, and a documented senior review before the infusion is restarted at the lower rate - because restarting without the review is the sentence in the notes that becomes the case' - [[obstetrics-gynaecology/pregnancy-complications]], [[clinical-skills/patient-safety]].**
-:::
+The exact trigger for human labour is not fully understood. In late pregnancy the uterus shifts from a quiet state maintained by progesterone to an active state: the myometrium gains oxytocin receptors and gap junctions that let contractions spread, prostaglandins are produced by the membranes and decidua, and the cervix **ripens**, as its collagen is remodelled so that it softens, shortens and can dilate. Once labour starts, stretch of the cervix and vagina causes reflex release of oxytocin from the posterior pituitary (the **Ferguson reflex**), which strengthens contractions in a positive feedback loop.
+
+### The mechanism of labour
+
+In a typical cephalic birth the head goes through a sequence of movements, each determined by the shape of the pelvis:
+
+1. **Engagement**: the widest part of the head enters the pelvic brim, usually in the occipito-transverse position.
+2. **Descent**, throughout labour.
+3. **Flexion**: the head flexes as it meets the pelvic floor, presenting the smallest diameter.
+4. **Internal rotation**: the occiput rotates forward to lie behind the symphysis pubis (occipito-anterior).
+5. **Extension**: the head extends under the symphysis and is born.
+6. **Restitution and external rotation**: the head turns back to line up with the shoulders, which rotate into the front-to-back diameter of the outlet.
+7. **Birth of the shoulders**: the anterior shoulder passes under the symphysis, then the posterior shoulder, and the body follows.
+
+## The stages of labour
+
+::: definition Stages of labour (NICE NG235) {#def-stages}
+- **Latent first stage**: painful contractions with some cervical change, including effacement and dilatation up to 4 cm.
+- **Established first stage**: regular painful contractions with progressive cervical dilatation from 4 cm.
+- **Second stage**: from full dilatation of the cervix to the birth of the baby. It is divided into a **passive** phase (fully dilated without involuntary expulsive contractions) and an **active** phase (expulsive contractions, the head visible, or active pushing).
+- **Third stage**: from the birth of the baby to the delivery of the placenta and membranes.
 :::
 
-::: exercise Advise on planned place of birth {level=2}
-A 30-year-old low-risk multigravida with a previous very fast birth at home asks about a freestanding midwifery unit for this birth. Give a balanced answer with the numbers and the caveats.
-::: solution
-**Place-of-birth-counselling ([[#def-labour]]): the evidence shape - 'for low-risk multiparous women the Birthplace-era data are the most favourable in perinatal medicine: birth in a freestanding midwifery unit or at home carries similar or better maternal outcomes with less intervention and no increase in the composite adverse neonatal outcome, though transfer in labour (roughly one-in-ten to one-in-five for home in that era's data) is the cost and should be discussed as an event, not a failure; for primiparous women the small absolute increase in the composite outcome (mainly intrapartum-related, driven by the longer labours) is the honest caveat the guidelines use to distinguish the two groups'; the modifiers - 'her previous fast birth argues for proximity (the one transfer disaster that matters is the birth-in-transit), her BMI, the interpregnancy interval, her anxiety-and-previous-trauma history and her transport time all belong in the conversation, as does the unit's own transfer statistics and ambulance-access reality, because national evidence is not local service; and the equity sentence: the same plan is not the same risk in a deprived postcode with one bus, and saying so is precision, not patronising'; and the method - 'the decision aid with frequencies and visuals, her values asked before your recommendation offered, the plan-B documented and rehearsed (who drives, whom she calls, what she will be told), and the midwife continuity that makes either route safer - because the single most robust finding in place-of-birth research is that the outcomes track the model of care, not just the room' - [[obstetrics-gynaecology/pregnancy-antenatal]], [[public-health/determinants-inequalities]].**
-:::
-:::
+The WHO (2018) defines the active first stage as starting at 5 cm, reflecting evidence that labour often progresses slowly until then. Both definitions share the same lesson: a woman in the latent phase who is admitted and expected to progress at the pace of active labour is at risk of unnecessary interventions.
 
-::: exercise Teach the obstetric handover {level=2}
-Design the labour-ward handover that the night team needs: content, format, and the two omissions that cause the most harm at night.
-::: solution
-**Obstetric-handover ([[#def-labour]], [[clinical-skills/records-handover]]): the format - 'a bedside-and-board hybrid: every woman on the ward named, bed, gestation, parity, membranes, contractions-and-cervix-trajectory, the CTG category and last interpretation, the epidural status, and the one-sentence plan with its trigger ("if 8 cm at 22.00, discuss augmentation; if trace changes, I want to see her not hear about her"), the bloods-and-group-and-antibody-status for the high-risk list, and the active list read aloud and questioned - the SBAR-adjacent structure exists because free-text handovers leak exactly the women who decompensate at 03.00'; the two omissions - '(1) the "she is progressing fine" that omits the trajectory - the 6 cm for four hours is a plan, the 6 cm with no time discussed is a surprise at 2am, and handover should force the number into the future tense; and (2) the escalation-state omissions - who is the consultant, who is the anaesthetist, does the theatre team know what might happen tonight, and is there any woman on the ward whose emergency would exceed this night's team (in which case the pre-emptive call happens now, not at midnight)'; and the culture check - 'the handover ends with "what worries anyone about anyone" because the junior who says "the 7 cm one just feels wrong" is running a better monitor than the partogram, and the units that invite that sentence have shorter DDIs and fewer incidents - which is the only handover metric that matters and the hardest to put in a spreadsheet' - [[clinical-skills/patient-safety]].**
-:::
-:::
+**Progress and delay.** In established labour, NICE suggests suspecting delay in the first stage if dilatation is less than 2 cm in 4 hours in a first labour, or if progress slows in a later labour, also taking into account descent and rotation of the head and changes in contractions. In the second stage, birth is expected within 3 hours of the start of the active second stage in most nulliparous women and within 2 hours in most parous women; delay is diagnosed after 2 hours of active second stage in a nulliparous woman and after 1 hour in a parous woman.
 
-::: quiz
-A pathological CTG appears at 5 cm in a low-risk labour. Continuous monitoring is already running. The best next step is:
-- [ ] Immediate category-one caesarean
-- [ ] Ignore it - CTGs are meaningless
-- [x] Full clinical review: maternal obs, contractions, position, consider fetal blood sampling/stimulated FHR where appropriate, correct contributors, escalate to senior decision, and re-interpret with the clinical picture
-- [ ] Start oxytocin to speed things up
-::: solution
-**Pathological does not equal abnormal-and-deliver: the response is a structured review and escalation with the clinical context, not a reflex knife and not shrugging; oxytocin for a pathological trace is the wrong direction - [[#def-labour]].**
-:::
-:::
+Progress is recorded on a **partogram**, a chart of cervical dilatation against time, together with descent, contractions, the fetal heart and maternal observations. A common design draws an **alert line** rising at 1 cm per hour from the first examination in established labour and an **action line** parallel to it four hours to the right. Crossing the action line prompts review and usually intervention. The WHO's Labour Care Guide (2020) replaces these lines with time limits at each centimetre of dilatation.
 
 ::: widget plot
-f: 100/(1+exp(-(x-38)*2.2)); 2; 8; 4; 100/(1+exp(-(x-40)*1.5))
-x: 34, 42
-y: 0, 100
-labels: \text{percent (illustrative)}\text{labour onset by gestation (cumulative-ish shape)};\ \text{shoulder dystocia (per 1000 vaginal, scaled x100)};\ \text{cord prolapse (per 1000, x100)};\ \text{uterine rupture in TLOR (percent-ish scale)}
-caption: Intrapartum incidence and gestation ([[#def-labour]], [[#def-emergencies]]): emergencies are individually rare and collectively the reason the drill exists, while the gestation axis decides which induction conversations are even evidence-based.
+f: 4 + x; x; 4 + r*x
+x: 0, 8
+y: 4, 10
+sliders: r=0.5:0.2:1.5:0.05
+labels: \text{alert line}; \text{action line}; \text{this labour}
+caption: A simplified partogram. Time in hours is on the horizontal axis and cervical dilatation in centimetres on the vertical axis, starting from 4 cm. The alert line rises at 1 cm per hour; the action line runs four hours behind it. Move the slider to change the rate of dilatation r (cm per hour). At 0.5 cm per hour, which meets the NICE threshold of less than 2 cm in 4 hours, the labour crosses the action line at 8 hours. The diagram is a teaching model: real progress is not linear and is judged with descent, rotation and contractions as well.
+:::
+
+::: example Slow progress in a first labour {#ex-delay}
+A 26-year-old woman in her first labour is examined at 22:00: the cervix is 4 cm dilated, the head is 3/5 palpable, she has two contractions every ten minutes and her membranes are intact. At 02:00 the cervix is 5 cm. The fetal heart is normal. Is there a delay, and what is the management?
+::: solution
+**Assessment.** Dilatation has increased by 1 cm in 4 hours. In a first labour, less than 2 cm in 4 hours suggests delay in the established first stage. Contractions at two in ten minutes are infrequent, so the most likely problem is the **powers**.
+
+**Management.** Following NICE, amniotomy (artificial rupture of the membranes) is offered, with a repeat examination two hours later. If progress is still less than 1 cm in those two hours, delay is confirmed and she is reviewed by an obstetrician, who will usually recommend an oxytocin infusion to strengthen contractions. Once oxytocin is started, continuous CTG monitoring is needed because stronger contractions reduce placental blood flow. She should be offered an epidural before oxytocin is started, and her position, hydration and bladder should be checked. If progress does not follow, the obstetrician reassesses for malposition (passenger) or disproportion (passage).
+:::
+:::
+
+### The third stage
+
+Delivery of the placenta can be **physiological**, waiting for the placenta to separate and be expelled by maternal effort, or **actively managed**. Active management means giving a uterotonic drug, usually oxytocin 10 IU intramuscularly as the anterior shoulder is born or soon after the birth, then clamping the cord (not before one minute, unless the baby needs resuscitation) and controlled cord traction after signs of separation. Active management roughly halves the risk of postpartum haemorrhage and is recommended by NICE, although women at low risk may choose physiological management after discussion. The third stage is **prolonged** if it lasts more than 30 minutes with active management or more than 60 minutes with physiological management.
+
+### Perineal trauma
+
+Most women who give birth vaginally have some perineal trauma. Tears are classified by depth:
+
+- **First degree**: skin only.
+- **Second degree**: perineal muscles, but not the anal sphincter.
+- **Third degree**: the anal sphincter complex. **3a**: less than 50% of the external sphincter thickness torn; **3b**: more than 50%; **3c**: the internal sphincter also torn.
+- **Fourth degree**: the anal sphincter complex and the anal mucosa.
+
+Third- and fourth-degree tears are called **obstetric anal sphincter injuries (OASI)**. They must be recognised by a careful rectal examination after every vaginal birth with perineal trauma, repaired in theatre by an experienced operator, and followed up, because unrecognised injuries cause faecal incontinence. An **episiotomy** is a deliberate incision of the perineum, made mediolaterally (angled away from the anus) when needed, for example in an instrumental birth.
+
+## Monitoring the fetus
+
+During a contraction, blood flow to the placenta falls. A healthy fetus with good reserves tolerates this easily; a fetus with a poorly functioning placenta may become hypoxic. Fetal monitoring aims to identify the second group in time.
+
+For women at low risk, NICE recommends **intermittent auscultation** with a hand-held Doppler or Pinard stethoscope: for at least one minute after a contraction every 15 minutes in the established first stage, and every 5 minutes in the second stage. **Continuous cardiotocography (CTG)** is recommended when there are risk factors, such as pre-eclampsia, FGR, meconium, oxytocin use, epidural analgesia, maternal fever, previous caesarean section, or abnormalities detected on auscultation.
+
+::: definition Features of the CTG {#def-ctg}
+- **Baseline fetal heart rate**: the mean rate over 10 minutes, excluding accelerations and decelerations. Normal is **110–160 beats per minute**.
+- **Baseline variability**: the fluctuation in the heart rate around the baseline. Normal is **5–25 beats per minute**. Reduced variability for a prolonged period can reflect hypoxia, although it also occurs in fetal sleep and after some drugs.
+- **Accelerations**: rises of 15 beats per minute or more lasting 15 seconds or more. Their presence is reassuring.
+- **Decelerations**: falls of 15 beats per minute or more lasting 15 seconds or more. **Early** decelerations mirror the contraction and reflect head compression. **Variable** decelerations are rapid in onset and recovery and reflect cord compression; they are common and usually benign unless prolonged or accompanied by other changes. **Late** decelerations start after the peak of the contraction and recover after it ends; when repeated, they suggest uteroplacental insufficiency. A **prolonged deceleration** lasts 3 minutes or more.
+:::
+
+NICE NG229 asks clinicians to interpret the CTG as part of a full assessment, including the woman's risk factors, the stage and progress of labour, and changes over time, and to classify the overall picture as normal, suspicious or pathological. A **pathological** trace, for example persistent late decelerations with reduced variability, or a prolonged bradycardia, needs urgent action: correcting reversible causes (stopping oxytocin, changing the mother's position, treating hypotension after an epidural) and, if the trace does not improve, expediting birth. A bradycardia below 100 beats per minute lasting 3 minutes or more is an obstetric emergency.
+
+::: warning A normal-looking baseline does not exclude hypoxia
+A CTG is assessed on all of its features together and on how they change. A fetus with a baseline of 150 beats per minute that started labour at 120 has developed a tachycardia relative to itself, which can be an early sign of hypoxia or infection. Similarly, a trace with no decelerations but persistently reduced variability and no accelerations may be abnormal. Review the whole trace from the start of monitoring, not just the last 10 minutes.
+:::
+
+::: example Reading a trace {#ex-ctg}
+A woman in her first labour with an oxytocin infusion is 7 cm dilated. Over the last 40 minutes the CTG shows a baseline of 165 beats per minute, variability of 3 beats per minute and late decelerations with every contraction. She has a temperature of 38.0 °C. Classify the trace and outline the response.
+::: solution
+**Classification.** Every feature is abnormal: baseline tachycardia (above 160), reduced variability (below 5) and recurrent late decelerations. The trace is **pathological**. With maternal fever, intrauterine infection is a likely contributor, and the oxytocin may be causing over-frequent contractions.
+
+**Response.** Call the senior obstetrician. Stop the oxytocin, position the woman on her left side, check her blood pressure and treat the fever and possible sepsis (cultures, antibiotics per local guidance). Because the trace is pathological and she is not fully dilated, if it does not improve promptly, birth should be expedited by caesarean section. The neonatal team should be present. An abnormal CTG in the presence of infection is especially concerning, because infection lowers the fetal threshold for brain injury from hypoxia.
+:::
+:::
+
+## Pain relief
+
+Pain in labour comes from uterine contractions and cervical dilatation (visceral fibres entering the spinal cord at T10 to L1) and, in the second stage, from stretching of the vagina and perineum (somatic fibres through the pudendal nerve, S2 to S4). The options include:
+
+- **Non-drug methods**: continuous one-to-one support, water immersion, movement, breathing techniques.
+- **Entonox** (50% nitrous oxide in oxygen), inhaled during contractions; short-acting, with nausea and light-headedness.
+- **Opioids** such as diamorphine or pethidine intramuscularly, or patient-controlled remifentanil. They cause maternal drowsiness and nausea and can depress the baby's breathing if given close to birth.
+- **Epidural analgesia**: a local anaesthetic with a low dose of opioid infused into the epidural space. It is the most effective method. It is associated with a longer second stage and a higher rate of instrumental birth, but not of caesarean section. Complications include hypotension, fever, a dense motor block and, rarely, post-dural puncture headache from accidental puncture of the dura. A working epidural can be topped up for an operative birth, avoiding general anaesthesia.
+
+## Induction and augmentation
+
+**Induction of labour** means starting labour artificially. It is offered when the risks of continuing the pregnancy outweigh the risks of induction. The most common reason is prolonged pregnancy: NICE NG207 recommends discussing induction from 41+0 weeks, because the risk of stillbirth rises slowly after term. Other indications include pre-eclampsia, diabetes, FGR, prelabour rupture of the membranes at term and some maternal conditions.
+
+The **Bishop score** assesses how ready the cervix is for labour, by scoring cervical dilatation, length, consistency and position and the station of the head. A score of 6 or less is generally considered unfavourable and 8 or more favourable.
+
+| Score | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|
+| Dilatation (cm) | Closed | 1–2 | 3–4 | 5 or more |
+| Cervical length (cm) | More than 4 | 2–4 | 1–2 | Less than 1 |
+| Station | −3 | −2 | −1 or 0 | +1 or +2 |
+| Consistency | Firm | Medium | Soft | |
+| Position | Posterior | Mid | Anterior | |
+
+Methods depend on the cervix. A **membrane sweep** at an antenatal visit, separating the membranes from the cervix with a finger, increases the chance of spontaneous labour. An unfavourable cervix is ripened with **vaginal prostaglandin E2**, oral misoprostol, or a **mechanical method** such as a balloon catheter. When the cervix is favourable, **amniotomy** is performed, followed if necessary by an **oxytocin infusion**. The main risk of pharmacological induction is **uterine hyperstimulation**, meaning contractions that are too frequent or too long, which reduces placental blood flow and can cause fetal distress. In women with a previous caesarean section, prostaglandins and oxytocin increase the risk of uterine rupture, and mechanical methods are often preferred.
+
+**Augmentation** is speeding up a labour that has already started, by amniotomy or oxytocin, as in [[#ex-delay]].
+
+## Breech presentation
+
+About 3–4% of babies are breech at term. Women with a breech presentation at 36 weeks (nulliparous) or 37 weeks (parous) are offered **external cephalic version (ECV)**, turning the baby by pressure on the abdomen, which succeeds in about half of cases. If the baby remains breech, the options are planned caesarean section or planned vaginal breech birth with an experienced attendant. The Term Breech Trial (2000) found lower short-term perinatal morbidity and mortality with planned caesarean section, and caesarean section became the usual choice, although later follow-up and observational data have tempered that conclusion for carefully selected women.
+
+## Operative vaginal birth and caesarean section
+
+### Operative vaginal birth
+
+**Operative (instrumental) vaginal birth** uses a vacuum device (ventouse) or forceps to assist the second stage, for delay, fetal compromise, or maternal conditions in which pushing is unsafe. Before it is attempted, RCOG guidance requires that the cervix is fully dilated and the membranes ruptured, the head is no more than one-fifth palpable abdominally, the position of the head is known exactly, analgesia is adequate, the bladder is empty and the operator is experienced, with a plan to abandon the attempt if it does not progress. Ventouse causes less maternal perineal trauma but fails more often and is associated with cephalhaematoma; forceps succeed more often but cause more maternal trauma, including OASI.
+
+### Caesarean section
+
+More than four in ten births in England are now by caesarean section, and the proportion is still rising. The urgency of an unplanned caesarean section is described by a **category**:
+
+- **Category 1**: immediate threat to the life of the woman or fetus (for example a prolonged bradycardia, cord prolapse or uterine rupture). The target is birth within 30 minutes of the decision.
+- **Category 2**: maternal or fetal compromise that is not immediately life-threatening. The target is birth within 75 minutes.
+- **Category 3**: no compromise, but early birth is needed.
+- **Category 4**: planned birth at a time that suits the woman and the team.
+
+Caesarean section is generally safe but carries risks of haemorrhage, infection, VTE, injury to bladder or bowel, and a longer recovery. In future pregnancies it increases the risk of uterine rupture, placenta praevia and placenta accreta spectrum. Babies born by planned caesarean before 39 weeks have more respiratory problems.
+
+**Vaginal birth after caesarean (VBAC).** A woman with one previous lower-segment caesarean section and no other contraindication can usually choose between planned VBAC and an elective repeat caesarean section. RCOG guidance (2015) gives a success rate for planned VBAC of about 72–75%, and a risk of uterine rupture of about 1 in 200 (0.5%). Rupture is the most serious risk; it is rarer with a repeat caesarean but not zero. Continuous CTG is recommended in labour, and a prolonged bradycardia or new pain between contractions should prompt urgent assessment for rupture.
+
+::: example Counselling for VBAC {#ex-vbac}
+A 32-year-old woman had an emergency caesarean section for fetal distress at 6 cm in her first labour. She is now 36 weeks in her second pregnancy, which has been uncomplicated, and asks whether she can try for a vaginal birth. Out of 1,000 women like her planning VBAC, how many would be expected to give birth vaginally and how many to have a uterine rupture?
+::: solution
+With a success rate of about 72–75%, around **720 to 750** of 1,000 women would give birth vaginally; the rest would have an emergency caesarean section in labour. With a rupture risk of about 0.5%, around **5** of 1,000 women would have a uterine rupture. Her previous caesarean section was for fetal distress rather than failure to progress, which is associated with a higher chance of success.
+
+The counselling should also cover the advantages of VBAC (shorter recovery, fewer complications in future pregnancies if successful), the advantages of elective repeat caesarean section (planned date, very low rupture risk), what happens if she labours before a planned caesarean date, and the need for continuous CTG and birth in a hospital with immediate access to caesarean section. The decision is hers and should be documented.
+:::
+:::
+
+## Emergencies in labour
+
+Obstetric emergencies are individually rare and develop over minutes. Teams train in them with regular drills, using structured algorithms and clear role allocation, because performance in a real emergency depends on rehearsal.
+
+::: definition Shoulder dystocia {#def-dystocia}
+**Shoulder dystocia** is a vaginal cephalic birth that requires additional obstetric manoeuvres to deliver the baby after the head has been born and gentle traction has failed. It is caused by the anterior shoulder impacting behind the symphysis pubis (or, less often, the posterior shoulder on the sacral promontory). It complicates about 0.6–0.7% of vaginal cephalic births. Risk factors include macrosomia, diabetes and a previous shoulder dystocia, but most cases occur in babies of normal weight and cannot be predicted.
+:::
+
+The RCOG algorithm is:
+1. **Call for help**: senior midwife, obstetrician, neonatologist and anaesthetist. Note the time of birth of the head.
+2. **McRoberts' manoeuvre**: flex and abduct the mother's hips sharply onto her abdomen, which flattens the lumbar spine and rotates the symphysis upward. Stop pushing.
+3. **Suprapubic pressure**: pressure behind the anterior shoulder, from the side of the fetal back, to adduct and rotate it under the symphysis.
+4. If these fail, **internal manoeuvres**: delivery of the posterior arm or internal rotation of the shoulders, with an episiotomy if it would help access. An alternative is turning the mother onto all fours.
+5. Further measures are rarely needed and are carried out by senior staff.
+
+Strong traction on the head and pressure on the fundus must be avoided, because they increase the risk of **brachial plexus injury** (Erb's palsy) without helping. The baby may be hypoxic and needs neonatal assessment. The mother is at risk of postpartum haemorrhage and perineal trauma.
+
+::: example A head that will not deliver {#ex-dystocia}
+A 34-year-old woman with gestational diabetes gives birth to the baby's head after a long second stage. The head retracts against the perineum (the "turtle sign") and the next contraction and gentle traction do not deliver the shoulders. What should happen next?
+::: solution
+This is **shoulder dystocia**. The midwife calls for help using the emergency call system and states the problem clearly ("shoulder dystocia"), and the time of birth of the head is noted. She stops the mother pushing and lays the bed flat. Two assistants perform **McRoberts' manoeuvre** while an assistant applies **suprapubic pressure** from the side of the fetal back, with routine traction only. If the shoulders do not deliver, the most experienced person performs **internal manoeuvres**, usually delivery of the posterior arm. The neonatal team is ready to resuscitate, and paired cord blood samples are taken. The third stage is actively managed in anticipation of haemorrhage, the perineum and baby are examined carefully, and the events are documented, including which shoulder was anterior and the times. The parents are debriefed.
+:::
+:::
+
+**Umbilical cord prolapse** is the descent of the cord below the presenting part after the membranes have ruptured. It occurs in about 0.1–0.6% of births, more often with a high or non-cephalic presenting part, polyhydramnios and amniotomy with a high head. Compression and spasm of the cord cause fetal hypoxia. Management while preparing for immediate birth is to **relieve pressure on the cord**: the presenting part is pushed up by a hand in the vagina or by filling the bladder with saline, and the woman is placed in the knee–chest or exaggerated left lateral position with the head down. Handling of the cord is kept to a minimum to avoid spasm. Birth is usually by category 1 caesarean section, unless the cervix is fully dilated and a quick vaginal birth is possible.
+
+**Uterine rupture** presents with fetal heart rate abnormalities (often a prolonged bradycardia), pain, vaginal bleeding, maternal shock, loss of station of the head or cessation of contractions. The main risk factor is a previous caesarean section. It requires immediate laparotomy.
+
+**Maternal collapse** in labour has a wide differential, including haemorrhage, thromboembolism, amniotic fluid embolism, sepsis, eclampsia, drug toxicity (including local anaesthetic toxicity) and cardiac disease. Resuscitation follows standard principles with modifications: manual displacement of the uterus to the left to relieve aortocaval compression, early intubation by an experienced anaesthetist, and, after about 20 weeks, delivery of the baby if circulation has not returned within about 4 minutes of cardiac arrest, aiming for birth within 5 minutes. Emptying the uterus improves the effectiveness of maternal resuscitation. See [[emergency-critical-care/resuscitation]].
+
+::: quiz
+A woman at 39 weeks is in labour, 7 cm dilated, with a high head. Immediately after amniotomy, the CTG shows a fetal heart rate of 70 beats per minute and a loop of cord is felt in the vagina. Which action comes first?
+- [ ] Attempt to replace the cord into the uterus.
+- [ ] Encourage the woman to push to achieve a rapid vaginal birth.
+- [x] Call for help and elevate the presenting part off the cord manually, with the woman in the knee–chest or head-down left lateral position, while preparing for category 1 caesarean section.
+- [ ] Wait 5 minutes to see whether the bradycardia resolves.
+::: solution
+This is a cord prolapse with fetal bradycardia. The immediate aim is to relieve compression of the cord by elevating the presenting part and positioning the mother, while arranging category 1 caesarean section. Replacing the cord is not recommended, and at 7 cm a vaginal birth is not possible. Delay risks severe fetal hypoxia.
+:::
+:::
+
+::: history
+For most of history, a labour that could not be completed meant the death of the mother or the destruction of the baby. Obstetric forceps were invented by the Chamberlen family in the early seventeenth century and kept as a family secret for about a century. In 1847 James Young Simpson in Edinburgh first used ether and then chloroform to relieve pain in labour, and in 1853 John Snow gave chloroform to Queen Victoria at the birth of Prince Leopold, which made analgesia in labour socially acceptable. Caesarean section became survivable in the late nineteenth century, after Max Sänger in 1882 described suturing the uterine wall, and safer still with antisepsis, blood transfusion and antibiotics. In 1953 Virginia Apgar published a simple score for assessing the newborn, and in 1954 Emanuel Friedman published his graph of cervical dilatation against time, the basis of the partogram later developed by Hugh Philpott in southern Africa. Electronic fetal monitoring spread in the 1970s, before trials showed that its benefit for low-risk women was much smaller than assumed.
 :::
 
 ## Where this leads
 
-Hypertensive and fetal-state decisions that trigger late deliveries are in [[obstetrics-gynaecology/pregnancy-complications]], the third and fourth stages' haemorrhage management in [[obstetrics-gynaecology/postnatal-period]], the neonatal resuscitation interface in [[paediatrics/newborn]], and the human-factors lessons in [[clinical-skills/patient-safety]].
-
-::: history
-**Birth's history is the history of who watched. For most of history that was midwives and neighbours - the man-midwives and then obstetricians of the eighteenth century entering first for the difficult cases, the forceps as the secret of the Chamberlen family, and the puerperal-fever catastrophe of the lying-in hospitals (Semmelweis's 1847 hand-washing observation ignored for a generation) that made hospital birth deadlier than home birth until antisepsis and then anaesthesia reversed the arithmetic. The monitoring era began with the intrapartum heart-rate auscultation of the nineteenth century, Edward Hon's tocography and the 1960s radio-pill and scalp-sampling work, and the CTG's arrival with the enthusiasm of a technology whose false-positive rate was understood too late - the Cochrane-era verdict (fewer neonatal seizures, no fewer cerebral palsies, far more operative births) is the textbook demonstration of a monitoring test creating interventions without improving the outcome it was built to prevent, and the entire modern discipline of trace-interpretation-consistency studies (the low inter-observer agreement that should have humbled the specialty for a decade) came from trying to fix it. The intervention pendulum: 1960s-80s routine-ish episiotomy, enemas, supine position and early ARM gave way, trial by trial, to the WHO recommendations - upright positions, spontaneous pushing, restricted episiotomy (the mediolateral argument), one-to-one care and water immersion all supported by the very reviews the specialty wrote against itself; the caesarean-rate question turned from 'how low' to 'how right' when Brazil-and-China-era high rates and the Chinese one-child-era policy experiment (caesarean rates falling when hospitals were paid per birth and forbidden to perform unindicated ones) reframed it as an economics-and-safety question, with the 10-15 percent ceiling doctrine now softened into 'no woman should lack one, no woman should have one without reason'. The drills history is the newest layer: the PROMPT and ALSO-advancing maternal-and-perinatal-robust-training programmes (the Liverpool and Oxford shoulder-dystocia and haemorrhage simulation work that reduced actual injury rates), the Safer Births and FIGO stillbirth-toolkit era moving the lesson from individual units to health systems, the Each Baby Counts and MBRRACE-and-Safer Babies audits that keep discovering the same 'someone saw it and did not escalate' finding across the Atlantic, and the corollary - the NPEU-adjacent findings that Black women, disabled women and asylum-seeking women face systematically worse intrapartum care in high-income systems, the Opioid-and-recession-era rise in obstetric complexity, and the maternal-and-perinatal-mental-health reckoning that now forces birth units to treat a previous-PTSD pregnancy as a clinical variable with an analgesia-and-continuity plan attached. The chapter's own lesson keeps repeating: the technology made the possibility; the audits, the simulators and the protocols are making the safety routine, and the midwife with the stopwatch, the woman believed when she says something is wrong, and the clinician who can say 'I need help now' do the rest - [[clinical-skills/patient-safety]], [[public-health/determinants-inequalities]], [[paediatrics/newborn]].**
-:::
+Complications of the third stage and the weeks after birth, including postpartum haemorrhage, are in [[obstetrics-gynaecology/postnatal-period]]. The conditions that make labour high risk are in [[obstetrics-gynaecology/pregnancy-complications]]. Assessment and resuscitation of the newborn are in [[paediatrics/newborn]], and anaesthesia is in [[surgery/anaesthesia-pain]].
 
 ::: summary
-- Progress is a trend over hours, not a single cervical check; modern partograms wait longer and escalate faster.
-- CTG is a screening test with a bad specificity: pathological means review, correct, re-look and escalate - the knife decision uses the whole clinical picture.
-- Induction and oxytocin are evidence tools with protocol discipline; the induction-at-term debate has moved from 'never' to 'offer and count the numbers'.
-- Instrumental birth lives by its criteria and its two-attempt ceiling; the second-stage caesarean is the hardest operation in obstetrics and demands the same respect.
-- Shoulder dystocia, cord prolapse and rupture are drill diseases - call, position, manoeuvre sequence, clock, and the debrief with the minutes named.
-- Epidurals and one-to-one care are both interventions; the evidence supports offering the first and funding the second, and the confidential enquiries keep saying the same about staffing.
+- Progress in labour depends on the powers, the passenger and the passage; slow labour is analysed by asking which is at fault.
+- A well-flexed occipito-anterior head presents its smallest diameter (9.5 cm); deflexion and occipito-posterior position slow labour, and a brow cannot usually deliver.
+- NICE: established first stage from 4 cm; delay suspected if less than 2 cm in 4 hours in a first labour; second-stage delay diagnosed after 2 hours of active pushing in nulliparous and 1 hour in parous women.
+- Low-risk women have intermittent auscultation; risk factors call for continuous CTG. Normal baseline is 110–160 beats per minute, variability 5–25. Recurrent late decelerations with reduced variability are pathological.
+- Induction is offered from 41+0 weeks and for maternal or fetal indications; the Bishop score guides the method. Hyperstimulation is the main risk.
+- Operative vaginal birth requires full dilatation, a head no more than 1/5 palpable and a known position. Caesarean urgency is graded in four categories; category 1 aims for birth within 30 minutes.
+- Planned VBAC succeeds in about 72–75% of women, with a uterine rupture risk of about 0.5%.
+- Shoulder dystocia: call for help, McRoberts' manoeuvre, suprapubic pressure, then internal manoeuvres; avoid strong traction and fundal pressure.
+- Cord prolapse: relieve pressure on the cord and deliver urgently. Maternal collapse: left uterine displacement, and birth within about 5 minutes of arrest after 20 weeks.
 :::
 
 ## Exercises
 
-::: exercise Read the CTG {level=1}
-Classify and act: (a) baseline 145, moderate variability, early decelerations with contractions; (b) baseline 160, minimal variability, repeated deep variable decelerations to 70 lasting 3 minutes, contractions 4/10 min; (c) baseline 115, normal variability, spontaneous accelerations, contractions 2/10 min.
+::: exercise Bishop score {level=1 check="7"}
+Using the table in this chapter, calculate the Bishop score of a cervix that is 2 cm dilated and 1.5 cm long, soft, mid-position, with the head at station −2.
 ::: solution
-**Three-traces ([[#def-labour]]): (a) normal-pattern physiology - early (head-compression) decelerations with normal variability are not hypoxia; continue usual care with the classification documented; (b) suspicious-to-pathological - the minimal-variability-plus-prolonged-deep-variables combination means cord compression with a baby not compensating: intrauterine resuscitation (position, stop any oxytocin, consider tocolysis, oxygen if hypoxic mother), scalp stimulation or fetal blood sampling where appropriate and practicable, senior call now, and the delivery-mode decision made on the trajectory - full dilation and low head means instruments, otherwise category-one; and (c) normal - and the teaching point: a reassuring trace buys time for the contractions to build, not discharge from vigilance, because the trace that matters is the next one - which is the one-sentence summary of CTG interpretation - [[obstetrics-gynaecology/pregnancy-complications]].**
+Dilatation 2 cm scores 1; length 1.5 cm scores 2; station −2 scores 1; soft scores 2; mid-position scores 1. The total is $1 + 2 + 1 + 2 + 1 = 7$. This is between the unfavourable (6 or less) and favourable (8 or more) ranges; amniotomy may be possible, or ripening may still be chosen depending on local practice and parity.
 :::
 :::
 
-::: exercise Counsel the VBAC {level=2}
-A 33-year-old with one previous lower-segment caesarean for 'failure to progress' (no other history) asks, at 36 weeks, whether a vaginal birth-after-caesarean is worth it. Give her the numbers and the caveats.
+::: exercise Degree of tear {level=1}
+After a forceps birth, examination shows a tear involving the perineal muscles and about two-thirds of the thickness of the external anal sphincter, with the internal sphincter and anal mucosa intact. Classify the tear and outline the management principles.
 ::: solution
-**The-VBAC-conversation ([[#def-operative]]): the numbers - 'in a straightforward previous-low-segment-for-inindications-similar situation, VBA2C-adjacent success rates run around 60-80 percent; the serious-risk sentence is that uterine rupture occurs in roughly 0.5-1 percent of attempts with attendant fetal and maternal risk, and elective repeat caesarean's risks are the surgical-and-placenta-accreta-and-future-pregnancy ones - both paths are defensible, and the honest comparison is not "safer/worse" but different-risk-shapes"; the modifiers - 'the failure-to-progress history modestly lowers the success odds (her own labour pattern is the best predictor), the induction-with-prostaglandin question needs the oxytocin-and-cervix-specific caution, the birth-centre-without-24-hour-theatre question answers itself (not for her), and the continuous-CTG-and-attending-physician-present-availability requirements are what make home-VBAC an unsafe-idea conversation done kindly'; and the method - 'give the numbers in frequencies with visuals, ask what she most wants to avoid and most hopes for (previous-labour-trauma-and-reduce-repeat-caesarean-pelvic-surgery-and-bonding-and-sibling-care-reasons-are-all-legitimate-motivators), state clearly that the plan includes intrapartum-continuous-monitoring-and-the-rapid-theatre-access-and-that-if-progress-stops-we-talk-before-we-act, and document the discussion with her chosen plan and her consent-awareness - because the one thing that cannot happen is her deciding at 9 cm alone' - [[obstetrics-gynaecology/pregnancy-antenatal]], [[clinical-skills/communication]].**
+More than 50% of the external sphincter is torn, with the internal sphincter intact: a **third-degree tear, grade 3b**. It is an obstetric anal sphincter injury and should be repaired in theatre with good analgesia and lighting by an experienced clinician. Broad-spectrum antibiotics and laxatives are usually given, and she is followed up to check for anal incontinence, with physiotherapy. The injury and its implications for a future birth should be discussed with her.
 :::
 :::
 
-::: exercise Run the third stage {level=2}
-A 37-week woman after oxytocin augmentation delivers a 4.2 kg baby; 12 minutes after the birth the placenta has not separated, the uterus is soft and the patient is pale with a pulse of 112. Give the sequence.
+::: exercise When to auscultate {level=1}
+A low-risk woman is in established labour and has chosen intermittent auscultation. How often and for how long should the fetal heart be auscultated in the first stage and the second stage? Name three findings that would lead you to recommend continuous CTG.
 ::: solution
-**The-third-stage-that-is-going-wrong ([[#def-labour]], [[obstetrics-gynaecology/postnatal-period]]): the rule-set - 'a retained placenta at 30-60-minutes-defined threshold gets the removal-performed-in-theatre-with-an-a-naesthetic pathway and this bleeding-while-soft-and-tachycardic woman is on the-postpartum-haemorrhage-protocol-now-because-12-minutes-plus-a-clotting-poor-uterus-is-not-a-clock-problem-anymore; bimanual-compression-and-ergometrine-and-oxytocin-and-carboprost-or-the-transamina-and-misoprostol-ladder-run-in-parallel-with-the-two-lu-IV-access-and-group-save-and-3.5-percent-or-balanced-crystalloid-not-4-litres-of-saline-and-the-second-person-documenting-amounts-because-visual-estimation-lies-by-half'; the simultaneous thoughts - 'the retained placenta means a manual-removal-decision-not-a-cord-tugging-and-the-4.2-kg-plus-augmentation-plus-precipitate-mix-makes-the-other-haemorrhage-causes-active: examine-after-stabilising-for-the-trauma-list (cervical, vaginal, the OASI-adjacent and the uterine-inversion-that-masquerades-as-the-soft-nothing-feeling), the coagulopathy-thought-that-is-actually-AFU-or-cord-prolapse-adjacent-bleeding-and-the-clot-test-adjacent, and the anaesthetic call early because the woman who settles into theatre late is the one who codes'; and the end-state - 'the quantitative blood loss recorded, the HDU bed offered not demanded, the rhesus-immunoglobulin-if-negative-with-the-Kleihauer-and-anti-D-dose-for-manual-removal, and the debrief with her because the words "you lost a litre" explained tonight prevent the panic-when-it-reopens-in-the-ward-2am-episode that the incident forms record as 'delay in calling' - [[blood/haemostasis-bleeding]], [[emergency-critical-care/shock-fluids]].**
+In the established first stage, for at least one minute immediately after a contraction, every 15 minutes; in the second stage, every 5 minutes. The maternal pulse is also palpated to distinguish it from the fetal heart. Reasons to change to continuous CTG include: a fetal heart rate outside 110–160 beats per minute or audible decelerations; significant meconium; maternal fever or tachycardia; fresh vaginal bleeding; the need for oxytocin; an epidural; or a delay in progress.
 :::
 :::
 
-::: exercise Triage the epidural question {level=2}
-A multigravida at 8 cm with a pathological CTG screams for 'the epidural I had last time'; the anaesthetist is 10 minutes away and the trace is deteriorating. Your management and the anaesthetic decision.
+::: exercise Hours to the action line {level=2 check="8"}
+In the simplified partogram of the figure, labour is first recorded at 4 cm on the alert line, and the action line runs four hours to the right of the alert line. If the cervix dilates at a constant 0.5 cm per hour, after how many hours does the labour reach the action line?
+::: hint
+The action line is $y = 4 + (t - 4) = t$ (in centimetres, for time $t$ in hours). The labour follows $y = 4 + 0.5t$.
+:::
 ::: solution
-**The-CTG-and-the-instrument-delivery-anaesthetic ([[#def-labour]], [[#def-operative]]): first - 'the station and the baby's status decide the mode: a multip with a pathological trace and a head on the perineum may be a forceps-in-the-suite-with-local-infiltration-or-remifentanil situation, not a GA category-one - at 8 cm it is a caesarean, and the "top-up or spinal or GA" question is the whole decision'; second - 'the anaesthetic decision ladder with the real times: spinal if she has time for the tap and the on-set (often right for a category-two-adjacent), the GA fast-track with a full-stomach-airway-team when minutes matter, the rapid-sequence-and-cricoid-and-smallest-tube-and-two-person-technique discipline that the difficult-airway-in-pregnancy guidelines exist to engrain, and the top-up-of-a-existing-epidural-which-is-only-safe-if-a-working-test-dose-and-a-sympathectomy-check-happened-before-1-litre-was-needed-fast'; third - 'the woman screaming for what she had last time is entitled to the honest sentence: "the fastest safe way to do this is X, and I need your mouth empty for the anaesthetic", delivered while hands move - the analgesia conversation she wanted is the one the team can actually give tonight'; and afterwards - 'the birth-debrief notes what the anaesthetic plan was and why, the neonatal team for the medication-crossing-baby, and the lactation-and-mood-check-on-day-5 that catches the woman who was anaesthetised in terror and nobody has asked since' - surgery/anaesthesia-pain].**
+Set $4 + 0.5t = t$, giving $0.5t = 4$ and $t = 8$ hours. At that point the cervix is 8 cm dilated. At 0.5 cm per hour the labour also meets the NICE threshold for suspected delay (less than 2 cm in 4 hours) after 4 hours, which would usually prompt assessment well before the action line is reached.
 :::
 :::
 
-::: exercise Audit the decision-to-delivery intervals {level=3}
-Your unit's data: median category-one decision-to-delivery 41 minutes; the DDI distribution has a tail of 70-plus; the audit finds no documentation of 'who decided the grade', midwives escalate by "phone-tag" with registrars, and the night-shift theatre team is the same people doing day-lists. Present the improvement plan with measures.
+::: exercise A breech at 37 weeks {level=2}
+A woman in her second pregnancy has a baby in breech presentation at 37 weeks. Her previous birth was a straightforward vaginal birth. What options would you discuss?
 ::: solution
-**DDI-improvement ([[#def-labour]], [[clinical-skills/patient-safety]]): the reframing - 'the 30-minute target is not bureaucracy but the biological window for an acute hypoxic event, and a 41-minute median with a 70-plus tail is two separate diseases: the average problem (process friction) and the tail problem (whoever was asleep at the wheel)'; the fixes for the average - 'the grading decision made by a named person (the on-call consultant or the labour-ward-triage-pair, trained and protocol-aided) recorded with the time; the theatre-activation triggered by the grade not by the anaesthetist's arrival; the pre-positioned section kit and the drills that rehearse the 3am path from the labour suite to the theatre; and the same-day review of every category-one with the DDI written on the ward board (visible metrics change behaviour - the RCOG's own guidance on the audit cycle assumes this because it works)'; the fixes for the tail - 'the phone-tag escalation replaced by an on-site-or-on-call-consultant-obstetric-and-anaesthetic-pager-model, the "you can call me for anything" culture measured and taught (the midwife escalation that was not punished is the outcome variable of the safety-culture survey), and the night list protected from the elective theatre rosters - the DDI tail lives where the double-shifted clinician stands'; the equity-and-communication layer - 'DDIs and grades are reported by ethnicity and language: the "she was calm so it was not urgent" and the "she was loud so she was difficult" biases both delay the knife, and the interpreter-called-when-escalation-is-explained is part of the DDI for the woman who needs to understand what is happening to consent in the 8 minutes that remain'; and the measurement - 'median-and-90th-percentile-DDI monthly, grading-audit concordance, escalation-call volumes (low volume means the culture is broken not that the nights are quiet), the simulation-attendance-completion-by-grade, and the never-forget-the-outcome-pair: cord gases and Apgars for category-one deliveries and the term-baby-hypoxic-injury register, because the process metric is a proxy and every audit should know when its proxy has lied - [[public-health/health-systems-economics]], [[obstetrics-gynaecology/pregnancy-complications]].**
+**External cephalic version** is offered first, as she is parous and at 37 weeks; it succeeds in about half of women, more often in parous women, and has a low rate of complications (a transient fetal heart rate abnormality is the most common; rarely bleeding or the need for emergency caesarean section, so it is done where a caesarean can be performed). She will need anti-D if RhD-negative. If ECV fails or she declines it, the options are **planned caesarean section** (usually at about 39 weeks) or **planned vaginal breech birth** in a unit with experienced staff. She should be told that planned caesarean section was associated with lower short-term perinatal risk in the Term Breech Trial, the risks of caesarean section for her and future pregnancies, and what would happen if she went into labour first.
+:::
+:::
+
+::: exercise Choosing the instrument {level=2}
+A nulliparous woman with an epidural has been actively pushing for 2 hours. The head is at station +2, 0/5 palpable, and in the direct occipito-anterior position; caput and moulding are minimal. The CTG is normal. What is the diagnosis, is an operative vaginal birth appropriate, and what must be in place first?
+::: solution
+After 2 hours of active second stage in a nulliparous woman, this is **delay in the second stage**. The prerequisites are met: full dilatation, ruptured membranes (to be confirmed), head 0/5 palpable at +2, position known (direct OA), and minimal caput and moulding (which argues against disproportion). An operative vaginal birth is appropriate after discussion and verbal consent. Before starting: confirm the epidural provides adequate analgesia, empty the bladder, have the neonatal team available if indicated, and set a plan to stop if there is no progress with each pull (and to abandon after a set number of pulls). Either ventouse or forceps is suitable for a low OA head; the choice depends on the operator and the circumstances. Active management of the third stage and a check for perineal trauma, including OASI, follow.
+:::
+:::
+
+::: exercise Two decelerations {level=3}
+Compare early and late decelerations on a CTG: their timing relative to contractions, their mechanism and their clinical significance. Why might variable decelerations become a concern over time?
+::: solution
+**Early decelerations** begin with the contraction, reach their lowest point at its peak and recover by its end. They are caused by compression of the fetal head, which triggers a vagal reflex, and are usually benign, typically in late first and second stage.
+
+**Late decelerations** start after the contraction has begun, reach their lowest point after the peak and recover after the contraction ends. They reflect a fall in fetal oxygenation during the reduced placental flow of each contraction, detected by chemoreceptors. Repeated late decelerations suggest uteroplacental insufficiency, especially with reduced variability or a rising baseline.
+
+**Variable decelerations** reflect cord compression and are common. They become concerning if they deepen, last longer (more than 60 seconds), recover slowly, are accompanied by a rising baseline or reduced variability, or occur with most contractions over a long period. A fetus repeatedly deprived of oxygen gradually uses up its reserve, which shows first as a rising baseline and then loss of variability. Interpretation always considers the trend over time and the clinical context.
+:::
+:::
+
+::: exercise Collapse on the labour ward {level=3}
+A woman at 38 weeks becomes acutely breathless and confused shortly after her membranes are ruptured, then collapses. She is pale and her pulse is not palpable. Give a differential diagnosis and the key steps of resuscitation, and explain why the baby is delivered if there is no response.
+::: solution
+**Differential diagnosis.** Amniotic fluid embolism is suggested by sudden collapse around membrane rupture or birth, often followed by bleeding from coagulopathy. Others include massive pulmonary embolism, haemorrhage (including concealed abruption or uterine rupture), local anaesthetic toxicity if she has an epidural, eclampsia, sepsis, anaphylaxis and cardiac causes such as peripartum cardiomyopathy or aortic dissection.
+
+**Resuscitation.** Call the obstetric emergency team, including senior obstetrician, anaesthetist and neonatologist, and the cardiac arrest team. Start chest compressions and ventilation according to adult life support, with **manual displacement of the uterus to the left** to relieve aortocaval compression. Secure the airway early (by an experienced anaesthetist, because of aspiration risk), obtain intravenous access above the diaphragm, and treat reversible causes. If there is no return of circulation within about 4 minutes, perform a **resuscitative hysterotomy** (perimortem caesarean section) where she is, aiming for birth by 5 minutes.
+
+**Why.** After about 20 weeks, the uterus compresses the vena cava and aorta and makes chest compressions much less effective. Emptying the uterus improves venous return and cardiac output, so delivery is primarily a resuscitation measure for the mother; it also gives the baby its best chance.
 :::
 :::
