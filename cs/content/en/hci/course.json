@@ -7,11 +7,26 @@
   "order": 190,
   "tagline": "Perception and cognition, user-centred design, prototyping, interaction techniques, visual design, usability evaluation, experiments, accessibility and ethics",
   "summary": "Software succeeds or fails in the hands of the people who use it. This course teaches how to design interactive systems around people: human perception, cognition and motor performance, user-centred design and prototyping, interaction techniques and visual design, usability evaluation and controlled experiments, accessibility, and the ethics of persuasive and data-driven design.",
-  "overview": [],
+  "overview": [
+    "Human–computer interaction (HCI) studies how people use interactive systems and how to design systems that people can use well. It sits between computer science, psychology and design: an interface is software, but whether it succeeds depends on the perceptual, cognitive and motor capabilities of the people using it, on the tasks and contexts they bring to it, and on values such as inclusion, autonomy and honesty. Because every program that has users has an interface, HCI is one of the most practically consequential parts of computing — and one where intuition is least reliable, since designers are almost never typical users.",
+    "The course moves from the human to the design process to evidence. It begins with the human as an information processor: the Model Human Processor, vision and attention, working memory (Miller's seven and Cowan's four, read carefully), the Hick–Hyman law and Fitts's law derived from an iterative-corrections model, with effective width and throughput. User-centred design and prototyping cover field research, reliable qualitative analysis, personas and task analysis, Norman's principles, paper and Wizard-of-Oz prototypes, and navigation models checked by graph search. Interaction techniques and visual design add direct manipulation, the keystroke-level model and GOMS, menu breadth, text-entry metrics, the steering law, Gestalt layout, and colour computed exactly — WCAG relative luminance and contrast, and simulated colour-vision deficiency. The last three chapters turn to evidence and responsibility: heuristic evaluation, cognitive walkthroughs and usability testing with the Nielsen–Landauer model and its critiques and the System Usability Scale; controlled experiments, balanced Latin squares, $t$-tests implemented from scratch, power and A/B testing; and accessibility under WCAG 2.2 and the European Accessibility Act, together with deceptive design.",
+    "What makes HCI hard is that its quantitative laws are empirical regularities with fitted constants and stated limits, not theorems about people, and that its most important findings come from careful observation rather than calculation. The course therefore states each model with its derivation, its source and its assumptions, shows real computations in short Python programs, and is explicit about what studies did and did not show. Read the models as tools for comparing designs and asking better questions, and test every conclusion with the people the system is for."
+  ],
   "prerequisites": [
     "software-engineering"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Apply the Model Human Processor, the Hick–Hyman law and Fitts's law to predict and compare the performance of interface designs, and explain their assumptions and limits.",
+    "Derive Fitts's law from the iterative-corrections model, fit its constants by regression, and compute throughput with the effective width.",
+    "Plan and analyse user research — interviews, contextual inquiry and surveys — and measure coding reliability with Cohen's kappa.",
+    "Describe users and tasks with personas, scenarios and hierarchical task analyses, and diagnose design failures with Norman's principles and the gulfs of execution and evaluation.",
+    "Choose prototypes by the questions they answer, run paper and Wizard-of-Oz studies, and check a prototype's navigation model for reachability and recoverability by graph search.",
+    "Model expert task times with the keystroke-level model and GOMS, and reason quantitatively about menus, text entry, touch targets and steering.",
+    "Compute relative luminance and WCAG contrast ratios exactly, simulate colour-vision deficiency, and choose honest and accurate visual encodings for data.",
+    "Conduct heuristic evaluations, cognitive walkthroughs and usability tests, score the System Usability Scale, and critically apply the Nielsen–Landauer model of sample size.",
+    "Design within- and between-subjects experiments with counterbalancing, analyse them with appropriate t-tests, effect sizes, intervals and power, and avoid the pitfalls of online A/B testing.",
+    "Evaluate interfaces against WCAG 2.2 and the law as of 2026, and identify and argue against deceptive design patterns."
+  ],
   "chapters": [
     {
       "slug": "human-factors",
@@ -78,7 +93,143 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1945,
+      "title": "“As We May Think”",
+      "detail": "Vannevar Bush's essay in The Atlantic described the memex, a desk that would store and link a person's documents — a vision of personal information machines and associative trails that inspired hypertext.",
+      "people": [
+        "Vannevar Bush"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "Fitts's law",
+      "detail": "Paul Fitts's 'The information capacity of the human motor system in controlling the amplitude of movement' showed that aimed-movement time grows with the logarithm of distance over width, the most widely used quantitative law in HCI.",
+      "people": [
+        "Paul Fitts"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "Sketchpad",
+      "detail": "Ivan Sutherland's MIT thesis system let users draw and manipulate objects on a display with a light pen, introducing direct graphical interaction, constraints and object instances.",
+      "people": [
+        "Ivan Sutherland"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "The “Mother of All Demos”",
+      "detail": "On 9 December 1968 Douglas Engelbart's SRI team demonstrated the mouse, hypertext, windows, shared-screen editing and video conferencing with their NLS system.",
+      "people": [
+        "Douglas Engelbart",
+        "William English"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "Xerox Alto",
+      "detail": "Xerox PARC's Alto combined a bitmapped display, a mouse, Ethernet and graphical applications in a personal workstation; its ideas led to the Xerox Star (1981) and the Apple Macintosh (1984).",
+      "people": [
+        "Charles Thacker",
+        "Butler Lampson",
+        "Alan Kay"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "The Psychology of Human–Computer Interaction",
+      "detail": "Stuart Card, Thomas Moran and Allen Newell's book introduced the Model Human Processor and GOMS, following their 1980 keystroke-level model; the same year Ben Shneiderman named direct manipulation.",
+      "people": [
+        "Stuart Card",
+        "Thomas Moran",
+        "Allen Newell",
+        "Ben Shneiderman"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "Designing for usability",
+      "detail": "John Gould and Clayton Lewis's Communications of the ACM article set out early focus on users, empirical measurement and iterative design, the core of user-centred design.",
+      "people": [
+        "John Gould",
+        "Clayton Lewis"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "The Psychology of Everyday Things",
+      "detail": "Don Norman's book (later The Design of Everyday Things) popularised affordances, mappings, feedback and conceptual models as explanations of why people struggle with designed objects.",
+      "people": [
+        "Don Norman"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "Heuristic evaluation",
+      "detail": "Jakob Nielsen and Rolf Molich introduced heuristic evaluation as a cheap inspection method; Nielsen and Landauer's 1993 model of problem discovery underlies the 'five users' rule.",
+      "people": [
+        "Jakob Nielsen",
+        "Rolf Molich"
+      ]
+    },
+    {
+      "year": 1999,
+      "title": "WCAG 1.0",
+      "detail": "The W3C's Web Accessibility Initiative published the first Web Content Accessibility Guidelines; WCAG 2.0 (2008), 2.1 (2018) and 2.2 (2023) followed and became the basis of accessibility law worldwide.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "The Design of Everyday Things (revised and expanded edition)",
+      "authors": "Don Norman",
+      "year": 2013,
+      "note": "The classic account of affordances, signifiers, mappings, feedback, conceptual models and human error; readable and essential."
+    },
+    {
+      "title": "The Psychology of Human–Computer Interaction",
+      "authors": "Stuart K. Card, Thomas P. Moran and Allen Newell",
+      "year": 1983,
+      "note": "The source of the Model Human Processor, GOMS and the keystroke-level model, with the parameter values still quoted today."
+    },
+    {
+      "title": "Designing the User Interface: Strategies for Effective Human-Computer Interaction (6th edition)",
+      "authors": "Ben Shneiderman, Catherine Plaisant, Maxine Cohen, Steven Jacobs, Niklas Elmqvist and Nicholas Diakopoulos",
+      "year": 2016,
+      "note": "Broad textbook covering direct manipulation, menus, forms, devices, guidelines and evaluation."
+    },
+    {
+      "title": "Interaction Design: Beyond Human-Computer Interaction (6th edition)",
+      "authors": "Yvonne Rogers, Helen Sharp and Jennifer Preece",
+      "year": 2023,
+      "note": "Widely used course text on the design process, data gathering and analysis, prototyping and evaluation."
+    },
+    {
+      "title": "Human-Computer Interaction: An Empirical Research Perspective (2nd edition)",
+      "authors": "I. Scott MacKenzie",
+      "year": 2024,
+      "note": "Experimental HCI: Fitts's law, throughput, text entry, experiment design and statistical analysis, with worked examples."
+    },
+    {
+      "title": "Research Methods in Human-Computer Interaction (2nd edition)",
+      "authors": "Jonathan Lazar, Jinjuan Heidi Feng and Harry Hochheiser",
+      "year": 2017,
+      "note": "Experiments, surveys, interviews, ethnography, usability testing and research with people with disabilities."
+    },
+    {
+      "title": "Quantifying the User Experience: Practical Statistics for User Research (2nd edition)",
+      "authors": "Jeff Sauro and James R. Lewis",
+      "year": 2016,
+      "note": "Confidence intervals for small samples, sample sizes, SUS and other questionnaires — the statistics of usability practice."
+    },
+    {
+      "title": "Trustworthy Online Controlled Experiments: A Practical Guide to A/B Testing",
+      "authors": "Ron Kohavi, Diane Tang and Ya Xu",
+      "year": 2020,
+      "note": "How large-scale A/B testing works and fails: metrics, sample ratio mismatch, peeking, novelty effects and culture."
+    }
+  ],
   "next": []
 }
