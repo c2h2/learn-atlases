@@ -7,9 +7,24 @@
   "order": 30,
   "tagline": "Mendel’s laws, chromosomes and meiosis, sex linkage, genetic maps, mutation, and the genetics of microbes and organelles",
   "summary": "Genetics explains how traits pass from parents to offspring and why relatives resemble each other. This course follows the classical route: Mendel’s laws and their extensions, the chromosome theory of inheritance, sex linkage and pedigrees, recombination and genetic maps, chromosome and gene mutations, the genetics of bacteria and viruses, and inheritance that breaks Mendel’s rules.",
-  "overview": [],
+  "overview": [
+    "Genetics is the science of heredity and variation: why offspring resemble their parents, why relatives differ, and how the information that makes an organism is transmitted from one generation to the next. This course follows the classical route, from the behaviour of traits in crosses and families to the genes and chromosomes that explain it. It starts with Mendel’s laws and the probability that makes them predictive, extends them to dominance relations, multiple and lethal alleles, gene interaction and polygenic traits, and then grounds them in the chromosome: meiosis, sex determination, sex linkage and the analysis of human pedigrees.",
+    "The middle of the course is about measurement. Recombination between linked genes is turned into genetic maps through recombination frequencies, mapping functions, three-point crosses and LOD scores; chromosome mutations — aneuploidy, polyploidy, deletions, duplications, inversions and translocations — are explained through their behaviour in meiosis. The last three chapters ask what a gene is and how it changes (DNA as the genetic material, complementation, point mutations, the fluctuation test), how genes are transferred and mapped in bacteria and phages, and how inheritance departs from Mendel’s rules through maternal effects, organelle genomes and genomic imprinting.",
+    "Genetics is a quantitative and deductive subject: most of its conclusions were reached by reasoning from counts of offspring to hypotheses about invisible genes. The difficulty for most students lies less in the facts than in the reasoning — setting up a probability, choosing between hypotheses with a χ² test, deciding which crossover classes are which. Work every example and as many exercises as you can, and check each answer for biological sense as well as arithmetic. Population genetics, quantitative genetics and molecular biology continue from here."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Explain Mendel’s laws of segregation and independent assortment and derive the ratios of monohybrid, dihybrid and multi-locus crosses with the product, sum and conditional-probability rules.",
+    "Test observed offspring counts against a genetic hypothesis with the χ² goodness-of-fit test, and interpret the result and its limitations.",
+    "Predict and recognise the modified ratios produced by incomplete dominance, codominance, multiple and lethal alleles, epistasis and additive polygenes.",
+    "Relate the behaviour of chromosomes in meiosis to Mendel’s laws, and describe the main systems of sex determination.",
+    "Analyse X-linked crosses and human pedigrees, identify the modes of inheritance consistent with a pedigree, and update genotype probabilities with Bayes’ theorem.",
+    "Calculate recombination frequencies, map distances (Haldane and Kosambi), gene order and interference from two- and three-point crosses, and LOD scores from family data.",
+    "Explain the origin and meiotic consequences of aneuploidy, polyploidy and structural chromosome rearrangements.",
+    "Use complementation, auxotroph analysis and the fluctuation test to reason about genes, pathways and the random origin of mutations.",
+    "Interpret mapping experiments by conjugation, transduction and phage crosses in bacteria and their viruses.",
+    "Distinguish maternal effects, organelle inheritance and genomic imprinting from Mendelian inheritance using reciprocal crosses and multigeneration data."
+  ],
   "chapters": [
     {
       "slug": "mendelian-inheritance",
@@ -83,8 +98,137 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1866,
+      "title": "Mendel’s experiments on plant hybrids",
+      "detail": "Gregor Mendel’s paper on crosses of garden peas, read to the Natural History Society of Brünn in 1865, is published in its proceedings, stating the principles of segregation and independent assortment.",
+      "people": [
+        "Gregor Mendel"
+      ]
+    },
+    {
+      "year": 1900,
+      "title": "Rediscovery of Mendel’s work",
+      "detail": "Hugo de Vries, Carl Correns and Erich von Tschermak report segregation ratios in their own plant crosses and draw attention to Mendel’s paper.",
+      "people": [
+        "Hugo de Vries",
+        "Carl Correns",
+        "Erich von Tschermak"
+      ]
+    },
+    {
+      "year": 1902,
+      "title": "The chromosome theory of inheritance",
+      "detail": "Walter Sutton, from the grasshopper Brachystola magna (1902–03), and Theodor Boveri, from sea-urchin embryos, point out that chromosomes in meiosis behave as Mendel’s factors must.",
+      "people": [
+        "Walter Sutton",
+        "Theodor Boveri"
+      ]
+    },
+    {
+      "year": 1910,
+      "title": "A gene on the X chromosome",
+      "detail": "Thomas Hunt Morgan finds a white-eyed male Drosophila melanogaster and shows that the white gene is inherited with the X chromosome.",
+      "people": [
+        "Thomas Hunt Morgan"
+      ]
+    },
+    {
+      "year": 1913,
+      "title": "The first genetic map",
+      "detail": "Alfred Sturtevant uses recombination frequencies to arrange six X-linked genes of Drosophila in a linear order with additive distances.",
+      "people": [
+        "Alfred Sturtevant"
+      ]
+    },
+    {
+      "year": 1916,
+      "title": "Non-disjunction proves the chromosome theory",
+      "detail": "Calvin Bridges explains exceptional Drosophila offspring by non-disjunction of the X chromosomes and confirms the predicted XXY and XO karyotypes cytologically.",
+      "people": [
+        "Calvin Bridges"
+      ]
+    },
+    {
+      "year": 1918,
+      "title": "Mendelian inheritance of continuous traits",
+      "detail": "Ronald Fisher shows that the correlations between relatives for continuous traits follow from Mendelian inheritance at many loci, reconciling Mendelism and biometry.",
+      "people": [
+        "Ronald Fisher"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "One gene, one enzyme",
+      "detail": "George Beadle and Edward Tatum isolate nutritional mutants of the mould Neurospora crassa and show that each blocks a single step of a biosynthetic pathway.",
+      "people": [
+        "George Beadle",
+        "Edward Tatum"
+      ]
+    },
+    {
+      "year": 1946,
+      "title": "Genetic recombination in bacteria",
+      "detail": "Joshua Lederberg and Edward Tatum obtain prototrophic recombinants by mixing multiply auxotrophic strains of Escherichia coli K-12, opening bacterial genetics.",
+      "people": [
+        "Joshua Lederberg",
+        "Edward Tatum"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "Transposable elements",
+      "detail": "Barbara McClintock describes the Activator–Dissociation system of maize, in which genetic elements move between chromosomal sites and cause unstable mutations.",
+      "people": [
+        "Barbara McClintock"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Genetic Analysis, 12th edition",
+      "authors": "Anthony J. F. Griffiths, John Doebley, Catherine Peichel, David A. Wassarman",
+      "year": 2020,
+      "note": "The standard analytical textbook: crosses, linkage, tetrads, bacterial genetics and mutation, with many problems; the closest companion to this course."
+    },
+    {
+      "title": "Genetics: From Genes to Genomes, 6th edition",
+      "authors": "Leland H. Hartwell, Michael L. Goldberg, Janice A. Fischer, Leroy Hood",
+      "year": 2018,
+      "note": "Integrates classical transmission genetics with molecular and genomic methods; strong on mapping and on human genetics."
+    },
+    {
+      "title": "Genetics: A Conceptual Approach, 7th edition",
+      "authors": "Benjamin A. Pierce",
+      "year": 2020,
+      "note": "Clear explanations and a large set of worked problems at first-year level, including χ² tests, epistasis ratios and chromosome mutations."
+    },
+    {
+      "title": "Human Molecular Genetics, 5th edition",
+      "authors": "Tom Strachan, Andrew Read",
+      "year": 2019,
+      "note": "Human chromosomes, pedigrees, linkage analysis, imprinting and mitochondrial genetics at a more advanced level."
+    },
+    {
+      "title": "Molecular Genetics of Bacteria, 5th edition",
+      "authors": "Larry Snyder, Joseph E. Peters, Tina M. Henkin, Wendy Champness",
+      "year": 2020,
+      "note": "Conjugation, transduction, transformation, phage genetics and the genetic analysis of regulation in bacteria."
+    },
+    {
+      "title": "Analysis of Human Genetic Linkage, 3rd edition",
+      "authors": "Jurg Ott",
+      "year": 1999,
+      "note": "The reference on likelihood methods, LOD scores and mapping functions for human pedigrees."
+    },
+    {
+      "title": "A History of Genetics",
+      "authors": "Alfred H. Sturtevant",
+      "year": 1965,
+      "note": "A short history of classical genetics by one of its founders, from Mendel to the 1950s."
+    }
+  ],
   "next": [
     "molecular-biology",
     "population-genetics"
