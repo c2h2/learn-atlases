@@ -175,6 +175,9 @@ Unresolved references are errors. Give ids to every important definition, theore
 `check="…"` on an exercise holds the exact value in the expression language of §6.2, e.g.
 `check="3/4"`, `check="2*sqrt(2)"`, `check="pi^2/6"`, `check="e - 1"`. The reader can type any
 equivalent expression; it is compared numerically. Only use it when the whole answer is one number.
+An exact value is matched to about six significant figures; a value written as a rounded decimal
+(`check="9.686"`, `check="2.5e-3"`) also accepts any answer that rounds to it, so state the
+precision the exercise expects. Integers are matched exactly.
 
 ### 5.5 Maths conventions (KaTeX)
 

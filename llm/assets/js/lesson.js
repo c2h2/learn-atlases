@@ -92,7 +92,11 @@
           verdict.textContent = MA.t('Could not read that: %s', e.message);
           return;
         }
-        const ok = Math.abs(v - want) <= 1e-6 * Math.max(1, Math.abs(want));
+        // a check written as a rounded decimal (9.686, 2.5e-3) also accepts any answer that rounds to it
+        let tol = 1e-6 * Math.max(1, Math.abs(want));
+        const m = /^\s*[-+]?\d*(?:\.(\d+))?(?:e([-+]?\d+))?\s*$/i.exec(expected);
+        if (m && (m[1] || m[2])) tol = Math.max(tol, 0.5000001 * Math.pow(10, (m[2] ? +m[2] : 0) - (m[1] || '').length));
+        const ok = Math.abs(v - want) <= tol;
         verdict.className = 'verdict ' + (ok ? 'ok' : 'no');
         verdict.textContent = ok ? MA.t('Correct!') : MA.t('Not quite — your answer is %s.', MA.fmt(v, 6));
       };
