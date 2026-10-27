@@ -7,12 +7,27 @@
   "order": 110,
   "tagline": "The analytical process, statistics and calibration, equilibria, gravimetry and titrimetry, electroanalysis, spectrometry, chromatography and hyphenated methods",
   "summary": "Analytical chemistry answers two questions — what is in a sample, and how much — with a known reliability. This course follows the analytical process from sampling to validated result, and covers statistics and calibration, equilibrium-based classical methods, electroanalytical techniques, molecular and atomic spectrometry, chromatography and detection by mass spectrometry.",
-  "overview": [],
+  "overview": [
+    "Analytical chemistry answers two questions about a sample — what is in it, and how much — and a third that gives the first two their value: how sure are we? A lead result for a school's drinking water, an iron result for an ore shipment, a drug concentration in a patient's plasma and a pesticide residue in a crate of fruit all lead to decisions, and each is useful only if its uncertainty is small enough for the decision it serves. The subject is therefore as much about sampling, calibration, statistics and quality control as it is about instruments.",
+    "The course follows the analytical process from start to finish. It begins with the problem, the sample and its preparation, and with the statistics that turn readings into results: significance tests, calibration lines and the uncertainty of a concentration read from them, standard addition and internal standards, and limits of detection. Chemical equilibria, treated systematically with activities and fractional compositions, then underpin the classical absolute methods — gravimetry and acid–base, complexometric, precipitation and redox titrations. The second half turns to instrumental methods: potentiometry, voltammetry and coulometry; molecular absorption and fluorescence; atomic absorption, plasma emission and plasma mass spectrometry; gas and liquid chromatography; and finally the hyphenated methods, such as LC–MS/MS and isotope dilution, that dominate trace analysis today.",
+    "Two things make the subject demanding. The first is that every method has assumptions — a linear response, a matrix that behaves like the standards, an equilibrium that lies far enough to one side, a peak that contains only one compound — and real samples break them; much of the skill lies in recognising which assumption a sample is breaking and choosing the remedy (matrix matching, standard addition, a releasing agent, a labelled internal standard). The second is arithmetic: dilution factors, stoichiometry and unit conversions, where a slip of a factor of ten is easy and fatal. The way through is to derive each working equation once, so that its conditions are clear, to carry units through every calculation, and always to ask whether a result is plausible before reporting it."
+  ],
   "prerequisites": [
     "general-chemistry-2",
     "laboratory-methods"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Design an analytical procedure from the problem to the reported result, including a sampling plan, sample preparation and quality-control samples, and justify it as fit for purpose.",
+    "Apply confidence intervals, t and F tests and outlier tests to replicate data, and interpret the results in terms of bias and precision.",
+    "Calculate a concentration and its confidence interval from a least-squares calibration line, and choose between external calibration, standard addition and internal standards for a given matrix.",
+    "Estimate activity coefficients from the ionic strength and solve multi-equilibrium problems with charge and mass balances and fractional-composition functions.",
+    "Derive titration curves for acid–base, EDTA, precipitation and redox titrations, choose indicators, and calculate results of gravimetric and titrimetric analyses.",
+    "Interpret potentiometric, voltammetric and coulometric measurements using the Nernst, Nikolsky–Eisenman, Cottrell and Faraday equations.",
+    "Explain the limits of the Beer–Lambert law and of fluorescence linearity, and analyse multicomponent spectra.",
+    "Compare flame and furnace atomic absorption, ICP-OES and ICP-MS for a given problem and identify and correct their interferences.",
+    "Use retention, plate height and the resolution equation to develop and troubleshoot GC and HPLC separations.",
+    "Select acquisition modes for GC–MS and LC–MS, assess matrix effects, and calculate results by isotope dilution."
+  ],
   "chapters": [
     {
       "slug": "analytical-process",
@@ -90,8 +105,138 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1846,
+      "title": "Fresenius's guide to quantitative analysis",
+      "detail": "Carl Remigius Fresenius published his Anleitung zur quantitativen chemischen Analyse, which with his earlier qualitative guide (1841) became the standard teaching text; in 1862 he founded the Zeitschrift für analytische Chemie.",
+      "people": [
+        "Carl Remigius Fresenius"
+      ]
+    },
+    {
+      "year": 1855,
+      "title": "Mohr's textbook of titrimetry",
+      "detail": "Karl Friedrich Mohr's Lehrbuch der chemisch-analytischen Titrirmethode systematised volumetric analysis, introducing the pinch-cock burette and the chromate end point for chloride.",
+      "people": [
+        "Karl Friedrich Mohr"
+      ]
+    },
+    {
+      "year": 1860,
+      "title": "Spectral analysis with the flame",
+      "detail": "Robert Bunsen and Gustav Kirchhoff showed that each element gives characteristic spectral lines in a flame and used the method to discover caesium (1860) and rubidium (1861).",
+      "people": [
+        "Robert Bunsen",
+        "Gustav Kirchhoff"
+      ]
+    },
+    {
+      "year": 1906,
+      "title": "Tsvet names chromatography",
+      "detail": "Mikhail Tsvet separated plant pigments on columns of calcium carbonate and named the technique chromatography.",
+      "people": [
+        "Mikhail Tsvet"
+      ]
+    },
+    {
+      "year": 1909,
+      "title": "The pH scale and the glass electrode",
+      "detail": "Søren Sørensen introduced the pH scale at the Carlsberg Laboratory, and in the same year Fritz Haber and Zygmunt Klemensiewicz described a practical glass electrode for measuring acidity.",
+      "people": [
+        "Søren Sørensen",
+        "Fritz Haber",
+        "Zygmunt Klemensiewicz"
+      ]
+    },
+    {
+      "year": 1922,
+      "title": "Heyrovský invents polarography",
+      "detail": "Jaroslav Heyrovský introduced voltammetry at the dropping mercury electrode, the start of modern electroanalytical chemistry; he received the 1959 Nobel Prize in Chemistry.",
+      "people": [
+        "Jaroslav Heyrovský"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "Partition chromatography and the plate theory",
+      "detail": "Archer Martin and Richard Synge described liquid–liquid partition chromatography and a plate theory of separation, and proposed gas as a mobile phase; they shared the 1952 Nobel Prize in Chemistry.",
+      "people": [
+        "Archer Martin",
+        "Richard Synge"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "Gas–liquid chromatography",
+      "detail": "Anthony James and Archer Martin published the first gas–liquid chromatographic separations, of volatile fatty acids.",
+      "people": [
+        "Anthony T. James",
+        "Archer Martin"
+      ]
+    },
+    {
+      "year": 1955,
+      "title": "Atomic absorption spectrometry",
+      "detail": "Alan Walsh, at the CSIRO in Melbourne, published the principles of analytical atomic absorption with a hollow-cathode line source.",
+      "people": [
+        "Alan Walsh"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "Inductively coupled plasma mass spectrometry",
+      "detail": "Robert Houk, Velmer Fassel and co-workers reported the first ICP-MS measurements, opening multi-element analysis at parts per trillion; commercial instruments followed in 1983.",
+      "people": [
+        "Robert S. Houk",
+        "Velmer A. Fassel"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Quantitative Chemical Analysis",
+      "authors": "Daniel C. Harris and Charles A. Lucy",
+      "year": 2020,
+      "note": "10th edition. The standard undergraduate text: very clear on equilibria, activity, titrations, electrochemistry and statistics; the source of the EDTA and buffer data conventions used here."
+    },
+    {
+      "title": "Fundamentals of Analytical Chemistry",
+      "authors": "Douglas A. Skoog, Donald M. West, F. James Holler and Stanley R. Crouch",
+      "year": 2022,
+      "note": "10th edition. Broad coverage of classical and instrumental methods with many worked problems."
+    },
+    {
+      "title": "Principles of Instrumental Analysis",
+      "authors": "Douglas A. Skoog, F. James Holler and Stanley R. Crouch",
+      "year": 2018,
+      "note": "7th edition. The reference for how spectrometers, atomic sources, electrochemical cells, chromatographs and mass spectrometers work."
+    },
+    {
+      "title": "Statistics and Chemometrics for Analytical Chemistry",
+      "authors": "James N. Miller, Jane C. Miller and Robert D. Miller",
+      "year": 2018,
+      "note": "7th edition. Short and practical: significance tests, calibration, detection limits and quality control, written for analysts."
+    },
+    {
+      "title": "Introduction to Modern Liquid Chromatography",
+      "authors": "Lloyd R. Snyder, Joseph J. Kirkland and John W. Dolan",
+      "year": 2010,
+      "note": "3rd edition. The practitioner's text on HPLC theory, columns, method development and troubleshooting."
+    },
+    {
+      "title": "Electrochemical Methods: Fundamentals and Applications",
+      "authors": "Allen J. Bard, Larry R. Faulkner and Henry S. White",
+      "year": 2022,
+      "note": "3rd edition. The definitive graduate text on voltammetry, mass transport and electrode kinetics, for going beyond this course."
+    },
+    {
+      "title": "Mass Spectrometry: A Textbook",
+      "authors": "Jürgen H. Gross",
+      "year": 2017,
+      "note": "3rd edition. Ion sources, analysers, tandem MS and the coupling of MS to chromatography, with interpretation of spectra."
+    }
+  ],
   "next": [
     "spectroscopy",
     "environmental-chemistry"
