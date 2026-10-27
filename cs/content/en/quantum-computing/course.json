@@ -7,11 +7,26 @@
   "order": 220,
   "tagline": "Qubits and measurement, quantum circuits, entanglement, early quantum algorithms, Shor’s and Grover’s algorithms, quantum complexity, error correction and hardware",
   "summary": "Quantum computers process information using superposition and entanglement, and for some problems they promise speed-ups that no known classical algorithm matches. This course builds the subject from linear algebra: qubits and measurement, quantum circuits, entanglement and teleportation, the first quantum algorithms, the quantum Fourier transform and Shor’s algorithm, Grover’s search, quantum complexity, error correction, and the physical platforms being built today.",
-  "overview": [],
+  "overview": [
+    "Quantum computers store information in **qubits**, whose states are unit vectors of complex amplitudes rather than strings of bits, and they compute by applying unitary operations and measuring. Amplitudes can cancel as well as add, and $n$ qubits need $2^n$ of them to describe, so a quantum computer can follow computational paths that no classical machine can track efficiently — but measurement returns only $n$ bits, sampled from a probability distribution. The art of quantum algorithms is to arrange **interference** so that useful answers become likely. For a few structured problems, above all factoring and discrete logarithms, this gives speed-ups that no known classical algorithm matches; for unstructured search it gives a quadratic speed-up that is provably the best possible.",
+    "The course builds the subject from linear algebra over $\\C$. The first three chapters set up the language: qubits, measurement and the Bloch sphere; gates, circuits and universality, together with a small pure-Python state-vector simulator used to check every algorithm; and entanglement, no-cloning, teleportation and superdense coding. The next three develop the algorithms — Deutsch–Jozsa, Bernstein–Vazirani and Simon in the query model; the quantum Fourier transform, phase estimation and Shor's algorithm, run in the simulator to factor $15$ and $21$; and Grover's search, amplitude amplification and the BBBV lower bound. The last three ask what this means and how it can be built: the class $\\mathsf{BQP}$ and its place among classical complexity classes, quantum error correction and the threshold theorem, and the hardware platforms and the state of the field as of 2026.",
+    "The prerequisites are linear algebra (inner products, unitary and Hermitian matrices, eigenvalues, the singular value decomposition), complex numbers, elementary probability and the complexity classes of [[complexity]]; no physics is assumed. What makes the subject hard is that intuition from classical probability misleads: a superposition is not a hidden coin flip, the global phase of a state is meaningless but relative phases carry information, and \"exponential parallelism\" is not a usable resource. Work every small example by hand — two or three qubits, written out amplitude by amplitude — and then check it in the simulator; and keep asking, for every claimed speed-up, which classical model and which inputs it is compared with."
+  ],
   "prerequisites": [
     "complexity"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Calculate measurement probabilities and post-measurement states for qubits in any orthonormal basis, using Dirac notation and the Bloch sphere.",
+    "Analyse quantum circuits by matrix multiplication and by simulation, decompose single-qubit gates into rotations, and explain universality and the Solovay–Kitaev theorem.",
+    "Prove the no-cloning theorem and verify teleportation, superdense coding and the quantum CHSH strategy, distinguishing entanglement from classical correlation.",
+    "Explain how phase kickback and the Hadamard transform give the Deutsch–Jozsa, Bernstein–Vazirani and Simon algorithms, and prove their query bounds against classical algorithms.",
+    "Construct the quantum Fourier transform circuit, analyse phase estimation, and carry out Shor's order-finding and factoring algorithm including the continued-fraction step.",
+    "Derive the success probability of Grover's algorithm geometrically, apply amplitude amplification, and prove the $\\Omega(\\sqrt N)$ BBBV lower bound for unstructured search.",
+    "Place $\\mathsf{BQP}$ among classical complexity classes, prove $\\mathsf{BPP}\\subseteq\\mathsf{BQP}\\subseteq\\mathsf{PSPACE}$, and evaluate claims of quantum advantage critically.",
+    "Describe noise with density matrices and quantum channels, and design and analyse the bit-flip, phase-flip, Shor and stabiliser codes.",
+    "Explain the threshold theorem and estimate, with a simple surface-code model, the physical resources a fault-tolerant algorithm needs.",
+    "Compare superconducting, trapped-ion, neutral-atom and photonic hardware by their figures of merit, and summarise what had and had not been demonstrated as of 2026."
+  ],
   "chapters": [
     {
       "slug": "qubits",
@@ -86,7 +101,134 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1982,
+      "title": "Feynman proposes quantum simulators",
+      "detail": "In \"Simulating physics with computers\" Richard Feynman argued that classical computers cannot simulate quantum systems efficiently and proposed computers built from quantum components.",
+      "people": [
+        "Richard Feynman"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "The universal quantum computer",
+      "detail": "David Deutsch defined the quantum Turing machine and gave the first quantum algorithm, for a version of Deutsch's problem.",
+      "people": [
+        "David Deutsch"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "The Deutsch–Jozsa algorithm",
+      "detail": "Deutsch and Richard Jozsa gave a problem solved exactly by one quantum query but needing exponentially many deterministic classical queries.",
+      "people": [
+        "David Deutsch",
+        "Richard Jozsa"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "Teleportation and quantum complexity theory",
+      "detail": "Bennett, Brassard, Crépeau, Jozsa, Peres and Wootters published quantum teleportation; Bernstein and Vazirani defined BQP and gave the first superpolynomial oracle separation from BPP.",
+      "people": [
+        "Charles Bennett",
+        "Gilles Brassard",
+        "Ethan Bernstein",
+        "Umesh Vazirani"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "Simon's and Shor's algorithms",
+      "detail": "Daniel Simon gave an exponential oracle separation from bounded-error classical computation, and Peter Shor presented polynomial-time quantum algorithms for factoring and discrete logarithms at FOCS (journal version 1997).",
+      "people": [
+        "Daniel Simon",
+        "Peter Shor"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "Quantum error correction",
+      "detail": "Shor's nine-qubit code showed that quantum information can be protected against arbitrary single-qubit errors; Kitaev's phase-estimation approach to the abelian stabiliser problem appeared the same year.",
+      "people": [
+        "Peter Shor",
+        "Alexei Kitaev"
+      ]
+    },
+    {
+      "year": 1996,
+      "title": "Grover's search algorithm",
+      "detail": "Lov Grover found a quantum algorithm for unstructured search with about (π/4)√N queries, which the BBBV lower bound (published 1997) shows to be optimal up to a constant.",
+      "people": [
+        "Lov Grover"
+      ]
+    },
+    {
+      "year": 1997,
+      "title": "The threshold theorem",
+      "detail": "Aharonov and Ben-Or, Kitaev, and Knill, Laflamme and Zurek proved that arbitrarily long quantum computations are possible if physical error rates are below a constant threshold.",
+      "people": [
+        "Dorit Aharonov",
+        "Michael Ben-Or",
+        "Alexei Kitaev",
+        "Emanuel Knill",
+        "Raymond Laflamme",
+        "Wojciech Zurek"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "The NISQ era",
+      "detail": "John Preskill named the era of noisy intermediate-scale quantum devices, with tens to hundreds of qubits but no error correction at scale.",
+      "people": [
+        "John Preskill"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Surface-code memories below threshold",
+      "detail": "A Google team reported surface codes of distance 3, 5 and 7 on its Willow processor whose logical error rate halved with each increase in distance, the first clear below-threshold scaling.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Quantum Computation and Quantum Information (10th anniversary edition)",
+      "authors": "Michael A. Nielsen and Isaac L. Chuang",
+      "year": 2010,
+      "note": "The standard graduate text and reference for the whole course: circuits, algorithms, quantum information theory and error correction, with many exercises."
+    },
+    {
+      "title": "An Introduction to Quantum Computing",
+      "authors": "Phillip Kaye, Raymond Laflamme and Michele Mosca",
+      "year": 2007,
+      "note": "A careful, computer-science-oriented introduction to the algorithms, especially phase estimation, Shor's algorithm and amplitude amplification."
+    },
+    {
+      "title": "Quantum Computer Science: An Introduction",
+      "authors": "N. David Mermin",
+      "year": 2007,
+      "note": "A short, elegant treatment for readers without physics, built entirely on Dirac notation and circuits; excellent on Deutsch, Simon, Shor and error correction."
+    },
+    {
+      "title": "Quantum Computing Since Democritus",
+      "authors": "Scott Aaronson",
+      "year": 2013,
+      "note": "An informal, opinionated tour of quantum computing and complexity theory: BQP, oracles, hidden variables and the limits of quantum computers."
+    },
+    {
+      "title": "Lecture Notes for Physics 219: Quantum Computation",
+      "authors": "John Preskill",
+      "year": 1998,
+      "note": "Caltech lecture notes, freely available online and revised since; outstanding on quantum information, error correction and fault tolerance. Preskill's 2018 paper \"Quantum Computing in the NISQ era and beyond\" complements them on near-term devices."
+    },
+    {
+      "title": "Classical and Quantum Computation",
+      "authors": "A. Yu. Kitaev, A. H. Shen and M. N. Vyalyi",
+      "year": 2002,
+      "note": "A concise mathematical treatment by the originators of phase estimation and QMA: the Solovay–Kitaev theorem, the abelian stabiliser problem and the local Hamiltonian problem."
+    }
+  ],
   "next": []
 }

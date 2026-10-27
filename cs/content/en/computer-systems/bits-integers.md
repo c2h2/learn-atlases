@@ -96,7 +96,7 @@ The bytes of `0x01234567` come out "backwards", least significant first: the mac
 
 ## Bit-level operations
 
-Before reading bit vectors as numbers, consider operations on the bits themselves. C provides the Boolean operations of [Maths Atlas: propositional logic](/learn/maths/lesson.php?c=discrete&l=logic) applied **bitwise**, position by position: `&` (and), `|` (or), `^` (exclusive or) and `~` (not). They work on any integer type.
+Before reading bit vectors as numbers, consider operations on the bits themselves. C provides the Boolean operations of [Maths Atlas: propositional logic](/learn/maths/lesson.php?c=proofs&l=propositional-logic) applied **bitwise**, position by position: `&` (and), `|` (or), `^` (exclusive or) and `~` (not). They work on any integer type.
 
 ```c
 unsigned x = 0x69, y = 0x55;     /* 0110 1001 and 0101 0101 */

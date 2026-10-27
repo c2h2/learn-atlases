@@ -79,7 +79,7 @@ $$
 $$
 :::
 
-A CNF formula is true iff *every* clause contains *at least one* true literal. Both problems are in $\mathsf{NP}$: the certificate is a satisfying assignment, which is checked by evaluating the formula in linear time. Truth tables ([Maths Atlas: propositional logic](/learn/maths/lesson.php?c=discrete&l=logic)) decide satisfiability in time $2^n$ times the formula length.
+A CNF formula is true iff *every* clause contains *at least one* true literal. Both problems are in $\mathsf{NP}$: the certificate is a satisfying assignment, which is checked by evaluating the formula in linear time. Truth tables ([Maths Atlas: propositional logic](/learn/maths/lesson.php?c=proofs&l=propositional-logic)) decide satisfiability in time $2^n$ times the formula length.
 
 ::: widget truthtable
 formula: (a | b | c) & ~(a & b) & ~(a & c) & ~(b & c)
