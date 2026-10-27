@@ -7,9 +7,24 @@
   "order": 40,
   "tagline": "Evidence for evolution, natural and sexual selection, drift, coevolution, speciation, phylogenies, macroevolution and human origins",
   "summary": "Nothing in biology makes sense except in the light of evolution, as Theodosius Dobzhansky put it. This course presents the evidence that life has evolved, the processes that change populations — natural and sexual selection, mutation, drift and gene flow — coevolution between species, the origin of species, how phylogenies are read and built, the large-scale patterns of the fossil record, and the evolution of our own species.",
-  "overview": [],
+  "overview": [
+    "Evolutionary biology explains why living things are the way they are. It asks two kinds of question: historical ones — how organisms are related, when lineages split, how the major groups and their structures arose — and mechanistic ones — which processes change populations from generation to generation, and how those processes produce adaptation, new species and the large-scale patterns of the fossil record. The answers connect every other part of biology, from the genetic code shared by all cells to the behaviour of animals and the structure of ecosystems, and they matter practically for antibiotic and pesticide resistance, crop breeding, conservation and the tracing of epidemics.",
+    "The course starts with the evidence that life has evolved, then builds the theory of how it evolves, quantitatively and at first-year level: the Hardy–Weinberg principle, selection in haploid and diploid populations, mutation, the Wright–Fisher model of drift with the fixation probabilities 1/2N and about 2s, gene flow, and the neutral theory and molecular clock. It then applies these tools to sexual selection, coevolution and speciation, turns to phylogenetics — how trees are read and built — and to macroevolution over geological time, and ends with the evolution of our own species, using fossils and ancient genomes.",
+    "Evolution is easy to state and easy to misunderstand. The common difficulties are thinking about populations rather than individuals, about probabilities rather than certainties, and about deep time; and resisting the intuitions that evolution has goals, that selection works for the good of the species, and that trees are ladders of progress. Each lesson flags these misconceptions and works through numerical examples and simulations, so that verbal arguments can be checked against what the models actually predict. The full population-genetic theory is developed later in Population and Quantitative Genetics."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Evaluate the main lines of evidence for common descent — fossils dated radiometrically, homology, biogeography and molecular data — and explain why their agreement is decisive.",
+    "Derive the Hardy–Weinberg proportions and use them to calculate genotype frequencies and to test a sample with a χ² test.",
+    "Calculate changes in allele frequency under haploid and diploid selection, including dominance, selection against recessives and heterozygote advantage, and predict the response of a quantitative trait with the breeder's equation.",
+    "Explain genetic drift with the Wright–Fisher model and calculate fixation probabilities (1/2N for a neutral allele, about 2s for a beneficial one), the decay of heterozygosity, effective population size and the effects of gene flow.",
+    "Explain the neutral theory of molecular evolution and use a calibrated molecular clock to estimate divergence times, stating its assumptions.",
+    "Analyse sexual selection, coevolution and the evolution of the sex ratio using Bateman gradients, frequency-dependent models and Fisher's principle.",
+    "Compare species concepts, quantify reproductive isolation, and explain how isolation evolves through Bateson–Dobzhansky–Muller incompatibilities, reinforcement, selection against gene flow and polyploidy.",
+    "Read phylogenetic trees correctly, count possible trees, and build trees by parsimony and distance methods with corrected distances.",
+    "Interpret macroevolutionary patterns — rates in darwins, diversification and extinction, adaptive radiation, mass extinctions and the origin of novelties — on the geological time scale.",
+    "Describe the well-established evidence on human evolution, from the hominin fossil record to ancient genomes and archaic admixture, and distinguish it from open questions."
+  ],
   "chapters": [
     {
       "slug": "evidence-for-evolution",
@@ -82,8 +97,145 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1858,
+      "title": "Darwin and Wallace announce natural selection",
+      "detail": "Papers by Charles Darwin and Alfred Russel Wallace, who had reached the idea independently in the Malay Archipelago, were read at the Linnean Society of London on 1 July 1858.",
+      "people": [
+        "Charles Darwin",
+        "Alfred Russel Wallace"
+      ]
+    },
+    {
+      "year": 1859,
+      "title": "On the Origin of Species",
+      "detail": "Darwin's book, published on 24 November 1859, set out the evidence for descent with modification and the mechanism of natural selection.",
+      "people": [
+        "Charles Darwin"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "The mathematical theory of evolution",
+      "detail": "Fisher's The Genetical Theory of Natural Selection (1930), Wright's 'Evolution in Mendelian populations' (1931) and Haldane's The Causes of Evolution (1932) reconciled selection with Mendelian genetics and founded theoretical population genetics.",
+      "people": [
+        "R. A. Fisher",
+        "Sewall Wright",
+        "J. B. S. Haldane"
+      ]
+    },
+    {
+      "year": 1937,
+      "title": "Genetics and the Origin of Species",
+      "detail": "Dobzhansky's book joined population genetics to studies of natural populations of Drosophila and described isolating mechanisms and the Dobzhansky–Muller model of hybrid incompatibility.",
+      "people": [
+        "Theodosius Dobzhansky"
+      ]
+    },
+    {
+      "year": 1942,
+      "title": "The biological species concept",
+      "detail": "Mayr's Systematics and the Origin of Species defined species by reproductive isolation and made the case for allopatric speciation, a pillar of the Modern Synthesis.",
+      "people": [
+        "Ernst Mayr"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "Phylogenetic systematics",
+      "detail": "Hennig's Grundzüge einer Theorie der phylogenetischen Systematik (English edition 1966) made shared derived characters the basis of classification and founded cladistics.",
+      "people": [
+        "Willi Hennig"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "The neutral theory of molecular evolution",
+      "detail": "Kimura argued in Nature that most molecular substitutions are selectively neutral and fixed by drift, so that they accumulate at the mutation rate; King and Jukes made the same case in 1969.",
+      "people": [
+        "Motoo Kimura",
+        "Jack King",
+        "Thomas Jukes"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "Punctuated equilibrium",
+      "detail": "Eldredge and Gould proposed that many fossil species show long stasis interrupted by rapid change associated with speciation, starting a long debate on tempo and mode in the fossil record.",
+      "people": [
+        "Niles Eldredge",
+        "Stephen Jay Gould"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "Darwin's finches on Daphne Major",
+      "detail": "Peter and Rosemary Grant began their annual study of Galápagos finches, later documenting natural selection on beak size during the 1977 drought and its evolutionary response.",
+      "people": [
+        "Peter Grant",
+        "Rosemary Grant"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "The E. coli long-term evolution experiment",
+      "detail": "On 24 February 1988 Richard Lenski founded twelve populations of Escherichia coli propagated by daily transfer, with a frozen record every 500 generations, which has passed tens of thousands of generations.",
+      "people": [
+        "Richard Lenski"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Evolution, 5th edition",
+      "authors": "Douglas J. Futuyma and Mark Kirkpatrick",
+      "year": 2023,
+      "note": "The standard undergraduate textbook: thorough on population genetics, speciation, phylogenetics and macroevolution, with clear figures and up-to-date examples."
+    },
+    {
+      "title": "Evolution",
+      "authors": "Nicholas H. Barton, Derek E. G. Briggs, Jonathan A. Eisen, David B. Goldstein and Nipam H. Patel",
+      "year": 2007,
+      "note": "Integrates molecular biology, genomics, development and palaeontology with population genetics; strong on the origin of life, the tree of life and evo-devo."
+    },
+    {
+      "title": "Evolution, 3rd edition",
+      "authors": "Mark Ridley",
+      "year": 2004,
+      "note": "A clear, quantitative introduction with worked population-genetic models, good chapters on adaptation, species and the fossil record."
+    },
+    {
+      "title": "Evolution: Making Sense of Life, 3rd edition",
+      "authors": "Carl Zimmer and Douglas J. Emlen",
+      "year": 2020,
+      "note": "An accessible, richly illustrated first-year text built around case studies; good for tree thinking and human evolution."
+    },
+    {
+      "title": "Speciation",
+      "authors": "Jerry A. Coyne and H. Allen Orr",
+      "year": 2004,
+      "note": "The authoritative monograph on species concepts, reproductive isolation, the geography of speciation and the genetics of hybrid incompatibility."
+    },
+    {
+      "title": "Inferring Phylogenies",
+      "authors": "Joseph Felsenstein",
+      "year": 2004,
+      "note": "The reference on parsimony, distance, likelihood and Bayesian methods, tree counting and the bootstrap, by the developer of many of them."
+    },
+    {
+      "title": "Sexual Selection",
+      "authors": "Malte Andersson",
+      "year": 1994,
+      "note": "The classic synthesis of theory and evidence on mate competition, mate choice and ornaments."
+    },
+    {
+      "title": "40 Years of Evolution: Darwin's Finches on Daphne Major Island",
+      "authors": "Peter R. Grant and B. Rosemary Grant",
+      "year": 2014,
+      "note": "A first-hand account of natural selection, hybridisation and speciation measured in the wild over four decades."
+    }
+  ],
   "next": [
     "diversity-of-life",
     "ecology",
