@@ -1,192 +1,456 @@
-The kinematics ([[continuum/fluid-kinematics]]), and the **the ideal, and the flow** (the two, the ideal and the flow, as the two, and the two as the two, the ideal and the flow, of the same flow), is the content of this chapter, and the two, the Bernoulli (the $p + \frac{1}{2} \rho v^2 + \rho g z$ (the two, the $p$ and the $\frac{1}{2} \rho v^2$ and the $\rho g z$, as the two, and the two as the two, the $p$ and the $\frac{1}{2} \rho v^2$, of the same $\frac{1}{2} \rho v^2$)) and the potential (the $\phi$ (the two, the $\phi$ and the potential, as the two, and the two as the two, the $\phi$ and the potential, of the same potential)), as the two, and the two as the two, the Bernoulli and the potential, of the same ideal flow, and the two combined as the content of the ideal flow.
+Air and water have small viscosities. In the flow round a car at motorway speed, the viscous stresses are some ten thousand times smaller than the pressure differences that the motion produces. It is tempting to drop viscosity altogether and study an **ideal fluid**, one whose stress is a pure pressure. That model, worked out by Euler in the 1750s, is one of the great successes of mathematical physics. It explains why a pitot tube measures airspeed, why a spinning ball swerves, why a wing lifts and how much, why a whirlpool speeds up as it narrows, and why a smoke ring persists.
 
-## Bernoulli
+It also predicts, as d'Alembert discovered in 1752 to his dismay, that a body moving steadily through an ideal fluid feels no drag at all. A submarine would need no engine once moving. The paradox is not a mistake in the algebra; it is a correct theorem about a model that leaves out something essential near the surface of the body. Seeing exactly what the ideal theory gets right, and exactly where it fails, is the aim of this chapter. The cure, Prandtl's boundary layer, belongs to [[continuum/viscous-flow]].
 
-::: definition Bernoulli equation {#def-bernoulli}
-The Bernoulli equation (the two, the Bernoulli and the equation, as the two, and the two as the two, the Bernoulli and the equation, of the same equation), the $p + \frac{1}{2} \rho v^2 + \rho g z = \text{const}$ (the two, the $p$ and the $\frac{1}{2} \rho v^2$ and the $\rho g z$, as the two, and the two as the two, the $p$ and the $\frac{1}{2} \rho v^2$, of the same $\frac{1}{2} \rho v^2$), along the streamline (the two, the streamline and the $\text{const}$, as the two, and the two as the two, the streamline and the const, of the same const), irrotational (the two, the irrotational and the const, as the two, and the two as the two, the irrotational and the const, of the same const), steady (the two, the steady and the const, as the two, and the two as the two, the steady and the const, of the same const), incompressible (the two, the incompressible and the const, as the two, and the two as the two, the incompressible and the const, of the same const), and the two, the steady, the incompressible, the irrotational, and the const, as the four, and the four as the four, the steady and the incompressible and the irrotational and the const, of the same Bernoulli), and the four combined as the content of the Bernoulli for the $p + \frac{1}{2} \rho v^2 + \rho g z$.
+We use the kinematics of [[continuum/fluid-kinematics]] — material derivative, continuity, vorticity $\boldsymbol\omega = \nabla\times\mathbf v$, circulation $\Gamma$ — and Cauchy's equation of motion $\rho\,D\mathbf v/Dt = \nabla\cdot\boldsymbol\sigma + \mathbf f$ from [[continuum/stress-strain]]. Complex variables, used in the section on potential flow, are reviewed in [[math-methods/complex-methods]].
+
+## Euler's equation {#euler}
+
+::: definition Ideal fluid {#def-ideal}
+A fluid is **ideal** (or inviscid) if the stress tensor is isotropic at every point, even in motion: $\sigma_{ij} = -p\,\delta_{ij}$. The scalar $p(\mathbf x, t)$ is the **pressure**. At a solid boundary moving with velocity $\mathbf U$ the fluid cannot pass through the wall, $\mathbf v\cdot\mathbf n = \mathbf U\cdot\mathbf n$, but it may slip along it.
+:::
+
+The boundary condition is weaker than for a real fluid, which sticks to walls. That loss of one condition is the mathematical root of d'Alembert's paradox.
+
+::: theorem Euler's equation {#thm-euler}
+In an ideal fluid with body force density $\rho\mathbf g$,
+
+$$
+\rho\Bigl(\pdv{\mathbf v}{t} + (\mathbf v\cdot\nabla)\mathbf v\Bigr) = -\nabla p + \rho\mathbf g .
+$$ {#eq-euler}
+
+Together with the continuity equation $\partial_t\rho + \nabla\cdot(\rho\mathbf v) = 0$ and a relation between $p$ and $\rho$ — for instance $\rho = \text{const}$ — it determines the flow.
 :::
 
 ::: proof
-The Euler (the two, and the two as the two, and the two, of the same Euler), the $\rho \frac{D \mathbf{u}}{D t} = -\nabla p$ (the two, the $\frac{D \mathbf{u}}{D t}$ and the $\nabla p$, as the two, and the two as the two, the $\frac{D \mathbf{u}}{D t}$ and the $\nabla p$, of the same $\nabla p$), steady, irrotational (the two, the steady and the irrotational, as the two, and the two as the two, the steady and the irrotational, of the same irrotational), incompressible (the two, the incompressible, as the one, and the one as the one, the incompressible, of the same incompressible). The $\frac{D \mathbf{u}}{D t} = \frac{\partial \mathbf{u}}{\partial t} + \mathbf{u} \cdot \nabla \mathbf{u}$ (the two, the $\frac{\partial \mathbf{u}}{\partial t}$ and the $\mathbf{u} \cdot \nabla \mathbf{u}$, as the two, and the two as the two, the $\frac{\partial \mathbf{u}}{\partial t}$ and the $\nabla \mathbf{u}$, of the same $\mathbf{u}$), $\frac{\partial \mathbf{u}}{\partial t} = 0$ (the two, the $\frac{\partial \mathbf{u}}{\partial t}$ and the $0$, as the two, and the two as the two, the $\frac{\partial \mathbf{u}}{\partial t}$ and the $0$, of the same $0$), $\mathbf{u} \cdot \nabla \mathbf{u} = \nabla \left(\frac{1}{2} v^2\right) - \mathbf{u} \times (\nabla \times \mathbf{u})$ (the two, the $\nabla \left(\frac{1}{2} v^2\right)$ and the $\mathbf{u} \times (\nabla \times \mathbf{u})$, as the two, and the two as the two, the $\nabla \left(\frac{1}{2} v^2\right)$ and the $\nabla \times \mathbf{u}$, of the same $\nabla \times \mathbf{u}$), $\nabla \times \mathbf{u} = 0$ (the two, the $\nabla \times \mathbf{u}$ and the $0$, as the two, and the two as the two, the $\nabla \times \mathbf{u}$ and the $0$, of the same $0$), $\mathbf{u} \cdot \nabla \mathbf{u} = \nabla \left(\frac{1}{2} v^2\right)$ (the two, the $\mathbf{u} \cdot \nabla \mathbf{u}$ and the $\nabla \left(\frac{1}{2} v^2\right)$, as the two, and the two as the two, the $\nabla \mathbf{u}$ and the $v^2$, of the same $v^2$), $\rho \nabla \left(\frac{1}{2} v^2\right) = -\nabla p$ (the two, the $\rho \nabla \left(\frac{1}{2} v^2\right)$ and the $\nabla p$, as the two, and the two as the two, the $\rho \nabla \left(\frac{1}{2} v^2\right)$ and the $\nabla p$, of the same $\nabla p$), $\nabla \left(\frac{1}{2} \rho v^2 + p\right) = 0$ (the two, the $\frac{1}{2} \rho v^2 + p$ and the $0$, as the two, and the two as the two, the $\frac{1}{2} \rho v^2 + p$ and the $0$, of the same $0$), with the $-\nabla (\rho g z)$ gravity (the two, the $\rho g z$ and the gravity, as the two, and the two as the two, the $\rho g z$ and the gravity, of the same gravity), $\nabla \left(p + \frac{1}{2} \rho v^2 + \rho g z\right) = 0$ (the two, the $p + \frac{1}{2} \rho v^2 + \rho g z$ and the $0$, as the two, and the two as the two, the $p + \frac{1}{2} \rho v^2 + \rho g z$ and the $0$, of the same $0$), and the two, the Bernoulli and the const, as the two, and the two as the two, the Bernoulli and the const, of the same const), and the two combined as the content of const for the Bernoulli.
+With $\sigma_{ij} = -p\,\delta_{ij}$, $\partial_j\sigma_{ij} = -\partial_ip$. Substitute in Cauchy's equation and write the acceleration as the material derivative of [[continuum/fluid-kinematics]].
 :::
 
-::: example The Venturi, the $A_1 = 4 A_2$ (the two, the $A_1$ and the $4 A_2$, as the two, and the two as the two, the $A_1$ and the $A_2$, of the same $A_2$), the $\rho = 10^3\,\mathrm{kg/m^3}$ (the two, the $\rho$ and the $10^3\,\mathrm{kg/m^3}$), the $v_1 = 1\,\mathrm{m/s}$ (the two, the $v_1$ and the $1\,\mathrm{m/s}$). Find the $v_2$ (the continuity, the $A_1 v_1 = A_2 v_2$, the $v_1 = 4 v_1$ (the two, and the two as the two, and the two, of the same $v_1$)), the $\Delta p = \frac{1}{2} \rho \left(v_2^2 - v_1^2\right)$ (the two, the $\frac{1}{2} \rho \left(v_2^2 - v_1^2\right)$ and the $0$).
-hint:"A₁v₁ = A₂v₂ → v₂ = v₁·A₁/A₂ = 4 m/s. Δp = ½ρ(v₂² − v₁²) = ½(1000)(16−1) = 7500 Pa."
+Each term is a force per unit volume. A pressure gradient pushes fluid from high to low pressure, gravity pulls it down, and their resultant is what accelerates it. With $\mathbf v = 0$, [[#eq-euler]] is the hydrostatic law $\nabla p = \rho\mathbf g$ of [[mechanics/fluids]]. For an incompressible fluid there are four unknowns ($p$ and three velocity components) and four equations (three components of [[#eq-euler]] and $\nabla\cdot\mathbf v = 0$). The pressure is then not given by any equation of state; it takes whatever value is needed to keep the flow divergence-free.
+
+::: example The pressure gradient in a nozzle {#ex-nozzle-p}
+In the nozzle of the previous chapter, water has acceleration $80.0\,\mathrm{m/s^2}$ along the axis at the exit. What pressure gradient produces it? Neglect gravity along the horizontal axis.
 ::: solution
-The continuity (the two, continuity as the one, and the one as the one, continuity as the same continuity), the $A_1 v_1 = A_2 v_2$ (the two, the $A_1 v_1$ and the $A_2 v_2$, as the two, and the two as the two, the $A_1 v_1$ and the $A_2 v_2$, of the same $A_2 v_2$), the $v_2 = \dfrac{A_1}{A_2} v_1 = 4 \times 1 = 4\,\mathrm{m/s}$ (the two, the $4$ and the $1$, as the two, and the two as the two, the $A_1/A_2$ and the $v_1$, of the same $v_2$), the Bernoulli (the two, the Bernoulli as the one, and the one as the one, the Bernoulli as the same Bernoulli), the $p_1 + \frac{1}{2} \rho v_1^2 = p_2 + \frac{1}{2} \rho v_2^2$ (the two, the $p_1 + \frac{1}{2} \rho v_1^2$ and the $p_2 + \frac{1}{2} \rho v_2^2$, as the two, and the two as the two, the $p$ and the $\frac{1}{2} \rho v^2$, of the same $\frac{1}{2} \rho v^2$), the $\Delta p = p_1 - p_2 = \frac{1}{2} \rho \left(v_2^2 - v_1^2\right) = \frac{1}{2} \times 10^3 \times (16 - 1) = \frac{1}{2} \times 10^3 \times 15 = 7500\,\mathrm{Pa}$ (the two, the $\frac{1}{2}$ and the $10^3$ and the $15$, as the two, and the two as the two, the $\frac{1}{2}$ and the $10^3$, of the same $10^3$), and the two, the $\Delta p$ and the $7500\,\mathrm{Pa}$, as the two, and the two as the two, the $\Delta p$ and the Pa, of the same Pa), and the two combined as the content of the $7500\,\mathrm{Pa}$ for the $\Delta p$.
+The axial component of [[#eq-euler]] is $\rho a_x = -\partial p/\partial x$. So
+
+$$
+\pdv{p}{x} = -\rho a_x = -1000\times80.0 = -8.00\times10^{4}\,\mathrm{Pa/m},
+$$
+
+a drop of $0.8\,\mathrm{bar}$ per metre, or $8\,\mathrm{kPa}$ over the last ten centimetres. The pressure falls in the direction of flow, and the fluid accelerates towards the low pressure. A steady flow speeds up only where the pressure falls along it.
 :::
 :::
 
-::: example The $\frac{1}{2} \rho v_1^2 = \frac{1}{2} \rho v_2^2 + p_2 - p_1$... hmm, let me redo this, the $p_1 + \frac{1}{2} \rho v_1^2 = p_2 + \frac{1}{2} \rho v_2^2$, the $\rho = 1.29\,\mathrm{kg/m^3}$ (air, the two, the $\rho$ and the air), the $v_1 = 0$ (stagnation, the two, the $v_1$ and the $0$, as the two, and the two as the two, the $v_1$ and the $0$, of the same $0$), the $v_2 = 100\,\mathrm{m/s}$ (the two, the $v_2$ and the $100\,\mathrm{m/s}$). Find the $p_2 - p_1 = -\frac{1}{2} \rho v_2^2 = -\frac{1}{2} \times 1.29 \times 10^4 = -6450\,\mathrm{Pa}$ (the two, the $\frac{1}{2} \times 1.29$ and the $10^4$, as the two, and the two as the two, the $\frac{1}{2}$ and the $1.29$, of the same $1.29$), hmm, the $p_{\text{stagnation}} - p_{\text{static}} = \frac{1}{2} \rho v_2^2$ (the two, the $p_{\text{stagnation}} - p_{\text{static}}$ and the $\frac{1}{2} \rho v_2^2$, as the two, and the two as the two, the $p$ and the $\frac{1}{2} \rho v^2$, of the same $\frac{1}{2} \rho v^2$), the $\frac{1}{2} \times 1.29 \times 10^4 = 6450\,\mathrm{Pa}$ (the two, the $\frac{1}{2} \times 1.29$ and the $10^4$, as the two, and the two as the two, the $\frac{1}{2}$ and the $1.29$, of the same $1.29$).
+::: example The rotating bucket {#ex-bucket}
+A cylindrical bucket of water spins about its vertical axis at angular velocity $\Omega$ until the water rotates rigidly with it. Find the pressure in the water and the shape of the free surface. How much higher is the surface at $r = 10.0\,\mathrm{cm}$ than on the axis, for $\Omega = 10.0\,\mathrm{rad/s}$?
 ::: solution
-The Bernoulli (the two, the Bernoulli as the one, and the one as the one, the Bernoulli as the same Bernoulli), $p_{\text{stagnation}} + \frac{1}{2} \rho \cdot 0^2 + \rho g z = p_{\text{static}} + \frac{1}{2} \rho v_2^2 + \rho g z$ (the two, the $p_{\text{stagnation}}$ and the $p_{\text{static}} + \frac{1}{2} \rho v_2^2$, as the two, and the two as the two, the $p$ and the $\frac{1}{2} \rho v^2$, of the same $\frac{1}{2} \rho v^2$), the $p_{\text{stagnation}} - p_{\text{static}} = \frac{1}{2} \rho v_2^2 = \frac{1}{2} \times 1.29 \times (100)^2 = \frac{1.29 \times 10^4}{2} = 6450\,\mathrm{Pa}$ (the two, the $\frac{1.29 \times 10^4}{2}$ and the $6450$, as the two, and the two as the two, the $1.29$ and the $10^4$, of the same $10^4$), and the two, the $6450\,\mathrm{Pa}$ and the $6450$, as the two, and the two as the two, the Pa and the Pa, of the same Pa), and the two combined as the content of the $6450\,\mathrm{Pa}$ for the dynamic pressure.
+In rigid rotation $\mathbf v = \Omega r\,\hat{\boldsymbol\theta}$, steady, and each particle moves in a circle, so its acceleration is centripetal: $\mathbf a = -\Omega^2r\,\hat{\mathbf r}$. With $\mathbf g = -g\hat{\mathbf z}$, the components of [[#eq-euler]] are
+
+$$
+-\rho\Omega^2r = -\pdv{p}{r}, \qquad 0 = -\pdv{p}{z} - \rho g .
+$$
+
+Integrating, $p = p_0 + \frac12\rho\Omega^2r^2 - \rho gz$, where $p_0$ is the pressure on the axis at $z = 0$. The free surface is where $p$ equals atmospheric pressure; choose $z = 0$ at its lowest point, so $p_0 = p_{\mathrm{atm}}$, and the surface is the paraboloid
+
+$$
+z = \frac{\Omega^2r^2}{2g}.
+$$
+
+At $r = 0.100\,\mathrm m$ and $\Omega = 10.0\,\mathrm{rad/s}$, $z = 100\times0.0100/19.6 = 5.10\,\mathrm{cm}$. Newton used the curved surface of a spinning bucket as evidence that rotation is absolute; for us it is a check that [[#eq-euler]] needs the full acceleration, not $\partial\mathbf v/\partial t$, which is zero here.
 :::
 :::
 
-## Potential flow
+### The Lamb form
 
-The $\mathbf{u} = \nabla \phi$ (the two, the $\nabla \phi$ and the $\mathbf{u}$, as the two, and the two as the two, the $\nabla \phi$ and the $\mathbf{u}$, of the same $\mathbf{u}$), the $\nabla \times \nabla \phi = 0$ (the two, the $\nabla \times \nabla \phi$ and the $0$, as the two, and the two as the two, the $\nabla \phi$ and the $0$, of the same $0$), the $\nabla \times \mathbf{u} = 0$ (the two, the $\nabla \times \mathbf{u}$ and the $0$, as the two, and the two as the two, the $\nabla \times \mathbf{u}$ and the $0$, of the same $0$), the irrotational (the two, the irrotational and the $\nabla \times \mathbf{u} = 0$, as the two, and the two as the two, the irrotational and the $\nabla \times \mathbf{u}$, of the same $\nabla \times \mathbf{u}$), and the two, the $\nabla \times \mathbf{u} = 0$ and the irrotational, as the two, and the two as the two, the $0$ and the irrotational, of the same irrotational), and the two combined as the content of the irrotational for the $\nabla \times \mathbf{u} = 0$, and the two as the two, the $\nabla \phi$ and the $\mathbf{u}$, of the same $\mathbf{u}$), and the two combined as the content of the $\mathbf{u}$.
-The $\nabla \cdot \mathbf{u} = 0$ (the two, the $\nabla \cdot \mathbf{u}$ and the $0$, as the two, and the two as the two, the $\nabla \cdot \mathbf{u}$ and the $0$, of the same $0$), the $\nabla \cdot \nabla \phi = 0$ (the two, the $\nabla \cdot \nabla \phi$ and the $0$, as the two, and the two as the two, the $\nabla \phi$ and the $0$, of the same $0$), the $\nabla^2 \phi = 0$ (the two, the $\nabla^2 \phi$ and the $0$, as the two, and the two as the two, the $\nabla^2 \phi$ and the $0$, of the same $0$), the Laplace (the two, the Laplace and the $\nabla^2 \phi = 0$, as the two, and the two as the two, the Laplace and the $\nabla^2 \phi$, of the same $\nabla^2 \phi$), and the two, the $\nabla^2 \phi = 0$ and the Laplace, as the two, and the two as the two, the $0$ and the Laplace, of the same Laplace), and the two combined as the content of the Laplace for the $\nabla^2 \phi = 0$.
+The convective acceleration can be rewritten using the identity $\mathbf v\times(\nabla\times\mathbf v) = \nabla(\frac12\abs{\mathbf v}^2) - (\mathbf v\cdot\nabla)\mathbf v$, so that
 
-::: definition The potential flow {#def-potflow}
-The potential flow (the two, the potential and the flow, as the two, and the two as the two, the potential and the flow, of the same flow), the $\mathbf{u} = \nabla \phi$ (the two, the $\nabla \phi$ and the $\mathbf{u}$, as the two, and the two as the two, the $\nabla \phi$ and the $\mathbf{u}$, of the same $\mathbf{u}$), the $\nabla \times \mathbf{u} = 0$ (the two, the $\nabla \times \mathbf{u}$ and the $0$, as the two, and the two as the two, the $\nabla \times \mathbf{u}$ and the $0$, of the same $0$), the $\nabla \cdot \mathbf{u} = 0$ (the two, the $\nabla \cdot \mathbf{u}$ and the $0$, as the two, and the two as the two, the $\nabla \cdot \mathbf{u}$ and the $0$, of the same $0$), the $\nabla^2 \phi = 0$ (the two, the $\nabla^2 \phi$ and the $0$, as the two, and the two as the two, the $\nabla^2 \phi$ and the $0$, of the same $0$), the Laplace (the two, the Laplace and the $\nabla^2 \phi = 0$, as the two, and the two as the two, the Laplace and the $\nabla^2 \phi$, of the same $\nabla^2 \phi$), and the two, the potential and the flow, as the two, and the two as the two, the potential and the flow, of the same flow), and the two combined as the content of the flow for the $\phi$.
+$$
+(\mathbf v\cdot\nabla)\mathbf v = \nabla\bigl(\tfrac12v^2\bigr) - \mathbf v\times\boldsymbol\omega .
+$$
+
+Suppose the body force is conservative, $\mathbf g = -\nabla\Phi$ (for uniform gravity $\Phi = gz$), and the fluid is **barotropic**: the density is a function of the pressure alone. Then $\nabla p/\rho = \nabla h$ with $h(p) = \int\dd p/\rho(p)$, which is $p/\rho$ for an incompressible fluid and the specific enthalpy for an isentropic gas. Euler's equation becomes
+
+$$
+\pdv{\mathbf v}{t} - \mathbf v\times\boldsymbol\omega = -\nabla\Bigl(\tfrac12v^2 + h + \Phi\Bigr).
+$$ {#eq-lamb}
+
+This form makes the two great theorems of ideal flow almost immediate.
+
+## Bernoulli's theorem {#bernoulli}
+
+::: theorem Bernoulli's theorem {#thm-bernoulli}
+In an ideal barotropic fluid with conservative body force:
+
+1. If the flow is **steady**, the **Bernoulli function** $H = \frac12v^2 + h + \Phi$ is constant along each streamline (and along each vortex line). For an incompressible fluid in uniform gravity,
+
+$$
+\tfrac12\rho v^2 + p + \rho gz = \text{const along a streamline}.
+$$ {#eq-bernoulli}
+
+2. If the flow is **irrotational**, $\mathbf v = \nabla\phi$, then, steady or not,
+
+$$
+\pdv{\phi}{t} + \tfrac12v^2 + h + \Phi = C(t)
+$$ {#eq-bernoulli-unsteady}
+
+throughout the fluid, with $C$ depending on time only. In steady irrotational flow $H$ is the same constant everywhere.
 :::
 
-The $\phi = \frac{Q}{2\pi} \ln r$ (the two, the $\frac{Q}{2\pi}$ and the $\ln r$, as the two, and the two as the two, the $Q$ and the $r$, of the same $r$), the $\psi = \frac{Q}{2\pi} \theta$ (the two, the $\frac{Q}{2\pi}$ and the $\theta$, as the two, and the two as the two, the $Q$ and the $\theta$, of the same $\theta$), the source (the two, the source and the $\phi = \frac{Q}{2\pi} \ln r$, as the two, and the two as the two, the source and the $Q$, of the same $Q$), and the two, the source and the $\phi$, as the two, and the two as the two, the source and the $Q$, of the same $Q$), and the two combined as the content of the $Q$ for the source.
-The $\phi = \frac{\Gamma}{2\pi} \theta$ (the two, the $\frac{\Gamma}{2\pi}$ and the $\theta$, as the two, and the two as the two, the $\Gamma$ and the $\theta$, of the same $\theta$), the $\psi = \frac{\Gamma}{2\pi} \ln r$ (the two, the $\frac{\Gamma}{2\pi}$ and the $\ln r$, as the two, and the two as the two, the $\Gamma$ and the $r$, of the same $r$), the vortex (the two, the vortex and the $\phi = \frac{\Gamma}{2\pi} \theta$, as the two, and the two as the two, the vortex and the $\Gamma$, of the same $\Gamma$), and the two, the vortex and the $\phi$, as the two, and the two as the two, the vortex and the $\Gamma$, of the same $\Gamma$), and the two combined as the content of the $\Gamma$ for the vortex.
-The uniform flow (the two, the uniform and the flow), the $\phi = U x$ (the two, the $U$ and the $x$, as the two, and the two as the two, the $U$ and the $x$, of the same $x$), the $\psi = U y$ (the two, the $U$ and the $y$, as the two, and the two as the two, the $U$ and the $y$, of the same $y$), and the two, the uniform and the flow, as the two, and the two as the two, the uniform and the flow, of the same flow), and the two combined as the content of the flow for the $U$.
-The doublet (the two, the doublet as the one, and the one as the one, the doublet as the same doublet), the $\phi = -\dfrac{\mu}{2\pi} \dfrac{x}{r^2}$ hmm, the $\phi = -\frac{\mu x}{2\pi r^2}$ (the two, the $\frac{\mu x}{2\pi r^2}$ and the $0$, as the two, and the two as the two, the $\mu$ and the $r$, of the same $r$), the $\psi = \frac{\mu}{2\pi} \frac{y}{r^2}$ hmm, the $\psi = -\frac{\mu \sin\theta}{2\pi r}$ (the two, the $\frac{\mu \sin\theta}{2\pi r}$ and the $0$, as the two, and the two as the two, the $\mu$ and the $r$, of the same $r$), and the two, the doublet and the $\phi$, as the two, and the two as the two, the doublet and the $\mu$, of the same $\mu$), and the two combined as the content of the $\mu$ for the doublet.
+::: proof
+(1) With $\partial_t\mathbf v = 0$, [[#eq-lamb]] says $\nabla H = \mathbf v\times\boldsymbol\omega$. The right side is perpendicular to $\mathbf v$ and to $\boldsymbol\omega$. Hence $\mathbf v\cdot\nabla H = 0$, so $H$ does not change along a streamline, and likewise $\boldsymbol\omega\cdot\nabla H = 0$ along a vortex line.
 
-::: proposition Cylinder {#thm-cylinder}
-The cylinder (the two, the cylinder as the one, and the one as the one, the cylinder as the same cylinder), $r = a$ (the two, the $r$ and the $a$, as the two, and the two as the two, the $r$ and the $a$, of the same $a$), the flow (the two, and the two as the two, and the two, of the same flow), the $\phi = U \left(r + \dfrac{a^2}{r}\right) \cos\theta$ (the two, the $U \left(r + \dfrac{a^2}{r}\right) \cos\theta$ and the $0$, as the two, and the two as the two, the $U \left(r + \dfrac{a^2}{r}\right)$ and the $\cos\theta$, of the same $\cos\theta$), the $\psi = U \left(r - \dfrac{a^2}{r}\right) \sin\theta$ (the two, the $U \left(r - \dfrac{a^2}{r}\right) \sin\theta$ and the $0$, as the two, and the two as the two, the $U \left(r - \dfrac{a^2}{r}\right)$ and the $\sin\theta$, of the same $\sin\theta$), the $v_r = 0$ at the $r = a$ (the two, the $0$ and the $a$, as the two, and the two as the two, the $v_r$ and the $a$, of the same $a$), and the two, the cylinder and the flow, as the two, and the two as the two, the cylinder and the flow, of the same flow), and the two combined as the content of the flow for the cylinder, in the $U \left(1 + \dfrac{a^2}{r^2}\right) \cos\theta$ (the two, the $U \left(1 + \dfrac{a^2}{r^2}\right) \cos\theta$ and the $0$, as the two, and the two as the two, the $U \left(1 + \dfrac{a^2}{r^2}\right)$ and the $\cos\theta$, of the same $\cos\theta$).
+(2) If $\boldsymbol\omega = 0$ and $\mathbf v = \nabla\phi$, then $\partial_t\mathbf v = \nabla(\partial_t\phi)$, and [[#eq-lamb]] reads $\nabla\bigl(\partial_t\phi + \frac12v^2 + h + \Phi\bigr) = 0$. A function whose gradient vanishes in a connected region depends on time only.
 :::
 
-::: example The $v_\theta\big|_{r=a}$, the $\theta = 0$ (the two, and the two, of the same $0$), the $\theta = \frac{\pi}{2}$ (the two, and the two, of the same $\frac{\pi}{2}$) {#ex-cyl}
-The $v_\theta = -\dfrac{\partial \phi}{\partial r} = U \left(1 - \dfrac{a^2}{r^2}\right) \sin\theta$ (the two, the $U \left(1 - \dfrac{a^2}{r^2}\right) \sin\theta$ and the $0$, as the two, and the two as the two, the $U \left(1 - \dfrac{a^2}{r^2}\right)$ and the $\sin\theta$, of the same $\sin\theta$), at the $r = a$ (the two, the $a$ and the $a$, as the two, and the two as the two, the $r$ and the $a$, of the same $a$), the $v_\theta\big|_{r=a} = 2 U \sin\theta$ (the two, the $2U \sin\theta$ and the $0$, as the two, and the two as the two, the $2U$ and the $\sin\theta$, of the same $\sin\theta$), at the $\theta = \frac{\pi}{2}$ (the two, and the two, of the same $\frac{\pi}{2}$), the $v_\theta = 2U$ (the two, the $2U$ and the $2U$, as the two, and the two as the two, the $U$ and the $2$, of the same $2$).
+Every hypothesis matters. Bernoulli's equation is an energy statement — kinetic energy plus the work done by pressure plus potential energy is conserved by a fluid particle — and it fails wherever energy is dissipated: in a boundary layer, behind a sudden expansion, in a hydraulic jump. In the rotating bucket, the flow is steady and ideal but rotational, with $\omega = 2\Omega$, and $H$ differs between streamlines: on the free surface $H = \frac12\Omega^2r^2 + gz + p_{\mathrm{atm}}/\rho = \Omega^2r^2 + p_{\mathrm{atm}}/\rho$, which grows with $r$.
+
+::: warning Bernoulli across streamlines
+Equation [[#eq-bernoulli]] relates two points on the *same* streamline. Applying it between points on different streamlines is justified only if the flow is irrotational, or if all streamlines come from a region of uniform $H$, such as a uniform stream far upstream. A second error is to apply it through a pump, a turbine or a fan, which add or remove energy, or across a region of separated, turbulent flow. A third is to use it for a gas at high speed with $\rho$ constant; for $\mathrm{Ma} > 0.3$ the compressible form, with $h$ the enthalpy, is needed.
+:::
+
+::: example A pitot-static tube {#ex-pitot}
+A pitot-static tube on a light aircraft has a forward-facing hole, where the air is brought to rest, and side holes, where the air passes at the flight speed. The pressure difference is $2.00\,\mathrm{kPa}$ and the air density at altitude is $1.00\,\mathrm{kg/m^3}$. Find the airspeed, and estimate the error from treating the air as incompressible.
 ::: solution
-The $v_\theta = -\dfrac{\partial \phi}{\partial r}$ (the two, the $-$ and the $\frac{\partial \phi}{\partial r}$, as the two, and the two as the two, the $\phi$ and the $r$, of the same $r$), the $\phi = U \left(r + \dfrac{a^2}{r}\right) \cos\theta$ (the two, the $U \left(r + \dfrac{a^2}{r}\right)$ and the $\cos\theta$, as the two, and the two as the two, the $U \left(r + \dfrac{a^2}{r}\right)$ and the $\cos\theta$, of the same $\cos\theta$), the $\dfrac{\partial \phi}{\partial r} = U \left(1 - \dfrac{a^2}{r^2}\right) \cos\theta$ (the two, the $U \left(1 - \dfrac{a^2}{r^2}\right)$ and the $\cos\theta$, as the two, and the two as the two, the $U \left(1 - \dfrac{a^2}{r^2}\right)$ and the $\cos\theta$, of the same $\cos\theta$), the $v_r = \dfrac{1}{r} \dfrac{\partial \psi}{\partial \theta} = U \left(1 - \dfrac{a^2}{r^2}\right) \cos\theta$ (the two, the $U \left(1 - \dfrac{a^2}{r^2}\right) \cos\theta$ and the $0$, as the two, and the two as the two, the $U \left(1 - \dfrac{a^2}{r^2}\right)$ and the $\cos\theta$, of the same $\cos\theta$), at the $r = a$ (the two, and the two, of the same $a$), the $v_r\big|_{r=a} = 0$ (the two, the $0$ and the $a$, as the two, and the two as the two, the $v_r$ and the $a$, of the same $a$), the no-slip, no... the impermeability (the two, the impermeability and the $v_r = 0$, as the two, and the two as the two, the impermeability and the $v_r$, of the same $v_r = 0$), the $v_\theta\big|_{r=a} = 2 U \sin\theta$ (the two, and the two, of the same $2U \sin\theta$), at the $\theta = \frac{\pi}{2}$ (the two, and the two, of the same $\frac{\pi}{2}$), the $v_\theta = 2U$ (the two, and the two, of the same $2U$), the stagnation the $\theta = 0, \pi$ (the two, and the two, of the same $0, \pi$), the $v_\theta = 0$ (the two, and the two, of the same $0$).
+The streamline that ends on the forward hole comes from far ahead, where the speed is $v$ and the pressure $p_\infty$; at the hole the speed is zero and the pressure is the **stagnation pressure** $p_0$. Height differences are negligible. By [[#eq-bernoulli]], $p_0 = p_\infty + \frac12\rho v^2$, and the side holes read $p_\infty$ because the flow past them is nearly undisturbed. So
+
+$$
+v = \sqrt{\frac{2(p_0 - p_\infty)}{\rho}} = \sqrt{\frac{2\times2000}{1.00}} = 63.2\,\mathrm{m/s},
+$$
+
+about $123$ knots. For compressibility: decelerating the air raises its density by $\Delta\rho = \Delta p/c^2$ to first order, where $c^2 = \dd p/\dd\rho$ is the square of the sound speed (see [[continuum/waves-in-fluids]]). Then
+
+$$
+\frac{\Delta\rho}{\rho} = \frac{\frac12\rho v^2}{\rho c^2} = \frac12\mathrm{Ma}^2 .
+$$
+
+With $c \approx 330\,\mathrm{m/s}$ at altitude, $\mathrm{Ma} = 0.19$ and $\Delta\rho/\rho \approx 0.018$. The compressible correction to the speed is of order $\frac18\mathrm{Ma}^2 \approx 0.5\,\%$, negligible here and significant for an airliner. This is the estimate $\Delta\rho/\rho \approx \frac12\mathrm{Ma}^2$ promised in [[continuum/fluid-kinematics]].
 :::
 :::
+
+::: quiz
+Air flows over the curved top of a wing faster than under its flat bottom. A popular explanation says this is because air parcels that separate at the leading edge must meet again at the trailing edge, so the upper parcel must go faster along its longer path. What is wrong with this?
+- [ ] Nothing; it is the standard explanation of lift.
+- [x] No law requires the parcels to meet; in fact the upper parcel arrives at the trailing edge well before the lower one.
+- [ ] Bernoulli's equation does not apply above a wing.
+- [ ] The air under the wing moves faster than the air above.
+::: solution
+There is no "equal transit time" principle. Smoke-pulse photographs in wind tunnels show that air passing above a lifting wing reaches the trailing edge first, by a wide margin. The speed difference is a consequence of the circulation round the wing, fixed by the Kutta condition as explained below. Bernoulli's equation then correctly converts the speed difference into the pressure difference that gives the lift. The faulty explanation also predicts far too little lift, and none at all for a symmetric wing at an angle of attack or a flat sail.
+:::
+:::
+
+## Kelvin's circulation theorem {#kelvin}
+
+The second consequence of [[#eq-lamb]] concerns vorticity, and it is the deeper of the two.
+
+::: theorem Kelvin's circulation theorem {#thm-kelvin}
+In an ideal barotropic fluid with conservative body force, the circulation round any closed material curve $C(t)$, moving with the fluid, is constant in time:
+
+$$
+\frac{D\Gamma}{Dt} = \frac{D}{Dt}\oint_{C(t)}\mathbf v\cdot\dd\mathbf l = 0 .
+$$
+:::
+
+::: proof
+Label the points of the curve by a parameter $s \in [0, 1]$ that moves with the fluid, so the curve at time $t$ is $\mathbf x(s, t)$ with $\mathbf x(0, t) = \mathbf x(1, t)$, and $\partial_t\mathbf x(s, t) = \mathbf v$. Then $\Gamma = \int_0^1\mathbf v\cdot\partial_s\mathbf x\,\dd s$, and, differentiating at fixed $s$,
+
+$$
+\frac{D\Gamma}{Dt} = \int_0^1\frac{D\mathbf v}{Dt}\cdot\pdv{\mathbf x}{s}\,\dd s + \int_0^1\mathbf v\cdot\pdv{\mathbf v}{s}\,\dd s .
+$$
+
+The second integral is $\int_0^1\partial_s(\frac12v^2)\,\dd s = 0$, since the curve is closed. By Euler's equation in the barotropic form, $D\mathbf v/Dt = -\nabla(h + \Phi)$, so the first integral is $-\int_0^1\partial_s(h + \Phi)\,\dd s = 0$ for the same reason. Hence $D\Gamma/Dt = 0$.
+:::
+
+Each hypothesis has a physical meaning. Viscosity diffuses vorticity and violates the theorem; a non-barotropic fluid, in which density depends on temperature as well as pressure, generates vorticity where surfaces of constant pressure and constant density cross — this is how sea breezes start — and a non-conservative force such as the Coriolis force in a non-inertial frame changes the circulation too.
+
+::: corollary Persistence of irrotational flow {#cor-irrotational}
+Under the hypotheses of [[#thm-kelvin]], a flow that is irrotational at one instant remains irrotational. In particular, any flow of an ideal fluid that starts from rest, or comes from a uniform stream, is irrotational for all time.
+:::
+
+::: proof
+If $\boldsymbol\omega = 0$ everywhere at $t = 0$, the circulation round every closed material curve is zero then, by Stokes' theorem, and remains zero by [[#thm-kelvin]]. If $\boldsymbol\omega \neq 0$ at some later point, choose a small material circle there perpendicular to $\boldsymbol\omega$: its circulation is approximately $\abs{\boldsymbol\omega}$ times its area, not zero. This contradiction shows $\boldsymbol\omega$ stays zero.
+:::
+
+Helmholtz, in 1858, had found the vortex theorems that Kelvin's result packages. Vortex lines move with the fluid. The circulation round a vortex tube — its **strength** — is the same at every section and does not change in time. So when a vortex tube is stretched, its cross-section shrinks and its vorticity grows in proportion: an ice skater pulling in her arms. This **vortex stretching** concentrates the vorticity of a draining bath into a narrow whirlpool and, in three-dimensional turbulence, drives the cascade of energy to small scales described in [[continuum/viscous-flow]].
+
+::: example Spinning up a tornado {#ex-tornado}
+A column of air in a thunderstorm rotates with speed $10.0\,\mathrm{m/s}$ at its edge, radius $1.00\,\mathrm{km}$. Updraughts stretch it vertically and it contracts, conserving its circulation, to a radius of $100\,\mathrm m$. Treating the column as a Rankine core (rigid rotation inside the edge) and neglecting friction, find the final edge speed, and the factor by which the vorticity and the length of the column change if the air is incompressible.
+::: solution
+Take a material circle round the edge of the column. By [[#thm-kelvin]] its circulation $\Gamma = 2\pi rv$ is constant:
+
+$$
+2\pi(1000)(10.0) = 2\pi(100)\,v_{\mathrm{f}}, \qquad v_{\mathrm{f}} = 100\,\mathrm{m/s}.
+$$
+
+The core's vorticity is $\omega = \Gamma/\pi r^2$ (circulation divided by area), so it grows by $(1000/100)^2 = 100$, from $2\times10/1000 = 0.0200\,\mathrm{s^{-1}}$ to $2.00\,\mathrm{s^{-1}}$. If the air is incompressible, the volume $\pi r^2\ell$ of the column is constant, so its length grows by the same factor of $100$: vorticity is proportional to stretching, as Helmholtz's theorems require. Real tornadoes reach such speeds, though friction near the ground and the non-barotropic thermodynamics of the storm make the story more complicated; the essential mechanism, concentration of existing vorticity by stretching, is this one.
+:::
+:::
+
+::: quiz
+A smoke ring travels across a still room for several metres without spreading much. According to the ideal theory, why does it persist?
+- [ ] Its vorticity is continually regenerated by the pressure gradient.
+- [x] Its vortex lines move with the air and its circulation is conserved, so the ring cannot simply dissolve; only viscosity slowly diffuses it.
+- [ ] Smoke is heavier than air and holds the ring together.
+- [ ] Bernoulli's equation keeps the pressure inside the ring constant.
+::: solution
+By [[#thm-kelvin]] and Helmholtz's theorems, the vortex lines forming the ring are material lines and the circulation round the core is fixed. In an ideal fluid the ring would last forever; in air, viscosity diffuses the core over a time of order $a^2/\nu$, which for a core of radius $1\,\mathrm{cm}$ is about $7\,\mathrm s$, and turbulent mixing shortens this. Kelvin was so impressed by the permanence of vortex rings that in 1867 he proposed atoms were knotted vortex rings in the ether — a wrong theory that started the mathematical study of knots.
+:::
+:::
+
+## Potential flow {#potential}
+
+By [[#cor-irrotational]], the flow of an ideal incompressible fluid past a body, started from rest or from a uniform stream, is irrotational. Then $\mathbf v = \nabla\phi$ for a **velocity potential** $\phi$, and incompressibility gives Laplace's equation:
+
+$$
+\nabla^2\phi = 0, \qquad \pdv{\phi}{n} = \mathbf U\cdot\mathbf n \text{ on the body}, \qquad \nabla\phi \to \mathbf v_\infty \text{ far away}.
+$$ {#eq-laplace}
+
+The problem has become linear. Nonlinearity has not vanished — it is in the pressure, $p = p_\infty + \frac12\rho(v_\infty^2 - v^2)$, which is computed afterwards from Bernoulli's theorem — but the velocity field can be built by superposition.
+
+In two dimensions, an incompressible irrotational flow has both a potential and a stream function, and the pair satisfies the Cauchy–Riemann equations $\partial_x\phi = \partial_y\psi = u$, $\partial_y\phi = -\partial_x\psi = v$. So $w = \phi + i\psi$ is an analytic function of $z = x + iy$, the **complex potential**, and
+
+$$
+\deriv{w}{z} = u - iv .
+$$
+
+Every analytic function is a flow. The elementary ones are:
+
+| $w(z)$ | flow |
+|---|---|
+| $Uz$ | uniform stream of speed $U$ along $x$ |
+| $\dfrac{m}{2\pi}\ln z$ | source of volume flux $m$ per unit depth at the origin |
+| $-\dfrac{i\kappa}{2\pi}\ln z$ | line vortex, anticlockwise circulation $\kappa$ |
+| $\dfrac{\mu}{z}$ | doublet: a source and sink merged, strength $\mu$ |
+
+### Flow past a circular cylinder
+
+Add a doublet to a uniform stream:
+
+$$
+w(z) = U\Bigl(z + \frac{a^2}{z}\Bigr), \qquad \phi = U\Bigl(r + \frac{a^2}{r}\Bigr)\cos\theta, \qquad \psi = U\Bigl(r - \frac{a^2}{r}\Bigr)\sin\theta .
+$$ {#eq-cylinder}
+
+The stream function vanishes on $r = a$, so the circle is a streamline and can be replaced by a solid cylinder: no fluid crosses it. Far away $w \approx Uz$, the uniform stream. Laplace's equation with these boundary conditions has a unique solution up to the circulation, so [[#eq-cylinder]] is *the* irrotational flow past a cylinder without circulation. The velocity components are
+
+$$
+v_r = \pdv{\phi}{r} = U\Bigl(1 - \frac{a^2}{r^2}\Bigr)\cos\theta, \qquad v_\theta = \frac1r\pdv{\phi}{\theta} = -U\Bigl(1 + \frac{a^2}{r^2}\Bigr)\sin\theta .
+$$
+
+On the surface, $v_r = 0$ and $v_\theta = -2U\sin\theta$. The fluid is at rest at the front and rear stagnation points $\theta = \pi$ and $\theta = 0$, and moves at twice the free-stream speed over the top and bottom. By Bernoulli's theorem, applicable everywhere since the flow is irrotational, the surface pressure is
+
+$$
+p(\theta) = p_\infty + \tfrac12\rho U^2\bigl(1 - 4\sin^2\theta\bigr), \qquad C_p \equiv \frac{p - p_\infty}{\frac12\rho U^2} = 1 - 4\sin^2\theta .
+$$ {#eq-cp}
+
+::: widget slopefield
+f: (-2*x*y/(x^2+y^2)^2)/(1-(x^2-y^2)/(x^2+y^2)^2)
+x: -3, 3
+y: -2, 2
+points: -3, 0.15; -3, 0.5; -3, 1; -3, 1.6; -3, -0.15; -3, -0.5; -3, -1; -3, -1.6
+caption: Streamlines of the potential flow [[#eq-cylinder]] past a cylinder of radius $a = 1$, with the stream coming from the left at $U = 1$; ignore the arrows inside the unit circle, which belong to the fictitious flow inside. The seeded streamlines divide and close up again symmetrically. Notice that the pattern is the same in front and behind: this fore–aft symmetry is the whole of d'Alembert's paradox. Notice also how the streamlines crowd over the top and bottom, where the speed reaches $2U$. Click near the front stagnation point $(-1, 0)$ to see how slowly the direction changes there.
+:::
+
+## D'Alembert's paradox {#dalembert}
+
+::: theorem D'Alembert's paradox for the cylinder {#thm-dalembert}
+In the steady potential flow [[#eq-cylinder]], the net force per unit length on the cylinder is zero: no drag and no lift.
+:::
+
+::: proof
+The outward normal is $\hat{\mathbf r} = (\cos\theta, \sin\theta)$ and the force on the cylinder per unit length is $-\oint p\,\hat{\mathbf r}\,a\,\dd\theta$. The constant $p_\infty + \frac12\rho U^2$ integrates to zero against $\cos\theta$ and $\sin\theta$. What remains is
+
+$$
+D = 2\rho U^2a\int_0^{2\pi}\sin^2\theta\cos\theta\,\dd\theta = 0, \qquad L = 2\rho U^2a\int_0^{2\pi}\sin^3\theta\,\dd\theta = 0 ,
+$$
+
+the first because $\sin^2\theta\cos\theta = \frac13\,\dd(\sin^3\theta)/\dd\theta$ integrates to zero over a period, the second because $\sin^3\theta$ is odd about $\theta = \pi$. The pressure is the same at $\theta$ and $\pi - \theta$ (front–back symmetry), which kills the drag, and at $\theta$ and $-\theta$ (top–bottom symmetry), which kills the lift.
+:::
+
+The result is general. For *any* body moving at constant velocity through an unbounded ideal incompressible fluid at rest at infinity, in steady irrotational flow, the drag is zero. A proof sketch: the potential of the disturbance decays like a dipole, $\phi \sim r^{-2}$ in three dimensions, so the velocity perturbation decays as $r^{-3}$. Apply momentum conservation to the fluid between the body and a large sphere. The momentum flux and pressure force through the sphere are of order $r^{-3}\times r^2 \to 0$, so the force on the body must vanish. In energy terms: the body's work against a drag would have to go somewhere, but a steady potential flow carries no energy away to infinity and has nowhere to dissipate it. (Full proofs are in chapter 6 of Batchelor's *Introduction to Fluid Dynamics* and §11 of Landau and Lifshitz, *Fluid Mechanics*.)
+
+Real flows past bluff bodies look nothing like [[#eq-cylinder]] behind the body. In a real fluid, the thin layer next to the wall where the fluid sticks loses energy to viscosity; on the rear half of the cylinder, where [[#eq-cp]] has the pressure rising towards the rear stagnation point, this slow fluid cannot climb the pressure hill, the flow separates, and a broad wake of low pressure forms behind the body. The pressure at the back never recovers to the front value, and that difference is the drag. The ideal theory is excellent on the front of the body and wrong in the wake.
 
 ::: widget plot
-x: -2 2
-y: -1.4 1.4
-f: 1 - (1 / Math.max(0.1, x*x))
-caption: The $v_\theta(x) = U \left(1 - \dfrac{a^2}{x^2}\right) \sin\theta$ hmm, the $v_\theta\big|_{r=a} = 2U \sin\theta$ (the two, the `$2U \sin\theta$` and the `0`, as the two, and the two as the two, the `2U` and the `sin θ`, of the same `sin θ`), the `a = 1` (the two, and the two, of the same `a`), the `U = 1` (the two, and the two, of the same `U`), and the two, and the two, of the same `2U sin θ`), and the two combined as the content of the `2U sin θ` for the cylinder surface speed, the `max` the `2U` at the `θ = π/2` (the two, and the two, of the same `2U`).
+f: 1 - (2*sin(x) + G)^2
+x: 0, 2pi
+y: -9, 1.5
+sliders: G=0:-3:3:0.1
+piticks: true
+caption: Surface pressure coefficient $C_p = (p - p_\infty)/\frac12\rho U^2$ on a cylinder against the polar angle $\theta$ ($\theta = 0$ is the rear, $\theta = \pi$ the front, $\theta = \pi/2$ the top), for circulation parameter $G = \Gamma/2\pi aU$. At $G = 0$ the curve is symmetric about $\pi/2$ (front–back) and about $\pi$ (top–bottom), and the force vanishes. Increase $G$: the suction on top ($\theta$ near $\pi/2$) deepens and the bottom ($\theta$ near $3\pi/2$) loses its suction, so the cylinder is pushed up — Kutta–Joukowski lift. The curve stays symmetric about $\pi/2$, so there is still no drag. The stagnation points, where $C_p = 1$, slide together underneath and merge at $G = 2$.
 :::
 
-::: example The $v_r(x, y)$, the $A = 10^3$, the air... the tank, the $A_1 = 4 \times 10^{-4}$ hmm, the venturi again. The $h = 2$ m, the $
-ho = 10^3$, the $v = \sqrt{2 g h}$ (the two, and the two, of the same `\sqrt{2 g h}`), the Torricelli (the two, and the two, of the same Torricelli) {#ex-torr}
-The $v = \sqrt{2 g h} = \sqrt{2 \times 9.8 \times 2} = \sqrt{39.2} \approx 6.3\,\mathrm{m/s}$ (the two, and the two, of the same `6.3` `m/s`), the Bernoulli (the two, and the two, of the same Bernoulli), the free surface $v_1 \approx 0$ (the two, and the two, of the same `0`), the hole $v_2$ (the two, and the two, of the same `v_2`), $p_1 = p_2 = p_{\text{atm}}$ (the two, and the two, of the same `p_atm`), the $z_1 - z_2 = h$ (the two, and the two, of the same `h`), the $p_{\text{atm}} + 0 + 
-ho g h = p_{\text{atm}} + \frac{1}{2} 
-ho v_2^2 + 0$ (the two, and the two, of the same `v_2^2`), the $
-ho g h = \frac{1}{2} 
-ho v_2^2$ (the two, and the two, of the same `v_2^2`), the $v_2 = \sqrt{2gh}$ (the two, and the two, of the same `sqrt(2gh)`). Find the $v_2 = \sqrt{2gh} \approx 6.3\,\mathrm{m/s}$ (the two, and the two, of the same `6.3` `m/s`).
+## Lift: the Kutta–Joukowski theorem {#lift}
+
+A cylinder in an ideal fluid can carry circulation. Add a line vortex to [[#eq-cylinder]]:
+
+$$
+w(z) = U\Bigl(z + \frac{a^2}{z}\Bigr) + \frac{i\Gamma}{2\pi}\ln z ,
+$$ {#eq-cylinder-circ}
+
+which, by the table, adds a *clockwise* circulation $\Gamma$ round the cylinder. The circle $r = a$ is still a streamline, since $\operatorname{Im}(i\ln z) = \ln r$ is constant on it, and the flow is still irrotational outside the cylinder. The surface velocity becomes
+
+$$
+v_\theta(a, \theta) = -2U\sin\theta - \frac{\Gamma}{2\pi a} .
+$$
+
+On top ($\theta = \pi/2$) the two terms add and the fluid moves faster; underneath they partly cancel. The stagnation points are where $\sin\theta = -\Gamma/4\pi Ua$, both on the lower half; they merge at the bottom when $\Gamma = 4\pi Ua$.
+
+::: theorem Kutta–Joukowski theorem for the cylinder {#thm-kj}
+In the flow [[#eq-cylinder-circ]] the force per unit length on the cylinder has zero component along the stream and a component
+
+$$
+L = \rho U\Gamma
+$$ {#eq-kj}
+
+perpendicular to it — upward for a stream in the $+x$ direction and clockwise circulation.
+:::
+
+::: proof
+By Bernoulli's theorem, $p = p_\infty + \frac12\rho(U^2 - v_\theta^2)$ on the surface, with
+
+$$
+v_\theta^2 = 4U^2\sin^2\theta + \frac{2U\Gamma}{\pi a}\sin\theta + \Bigl(\frac{\Gamma}{2\pi a}\Bigr)^2 .
+$$
+
+The vertical force per unit length is $L = -\oint p\sin\theta\,a\,\dd\theta = \frac12\rho a\oint v_\theta^2\sin\theta\,\dd\theta$, the constant terms integrating to zero against $\sin\theta$. Of the three terms in $v_\theta^2$, the first gives $\oint\sin^3\theta\,\dd\theta = 0$ and the third $\oint\sin\theta\,\dd\theta = 0$. The middle one gives
+
+$$
+L = \frac12\rho a\cdot\frac{2U\Gamma}{\pi a}\int_0^{2\pi}\sin^2\theta\,\dd\theta = \frac{\rho U\Gamma}{\pi}\cdot\pi = \rho U\Gamma .
+$$
+
+The drag is $\frac12\rho a\oint v_\theta^2\cos\theta\,\dd\theta$, and every term is a product of $\cos\theta$ with a power of $\sin\theta$ or a constant, each of which integrates to zero over a period.
+:::
+
+Martin Kutta (1902) and Nikolai Joukowski (1906) showed that [[#eq-kj]] holds for a two-dimensional body of *any* shape in a uniform stream: the lift per unit span is $\rho U\Gamma$, whatever the profile, where $\Gamma$ is the circulation round any curve enclosing the body. The general proof uses Blasius's contour-integral formula for the force and the residue theorem; it is in chapter 4 of Acheson's *Elementary Fluid Dynamics*.
+
+### Where the circulation comes from
+
+Potential theory allows any value of $\Gamma$. For a wing with a sharp trailing edge, all values but one make the flow go round the sharp edge with infinite speed. The **Kutta condition** selects the one circulation for which the flow leaves the trailing edge smoothly. For a thin wing of chord $c$ at a small angle of attack $\alpha$ it gives $\Gamma = \pi Uc\,\alpha$, so the lift coefficient is
+
+$$
+C_L = \frac{L}{\frac12\rho U^2c} = 2\pi\alpha ,
+$$ {#eq-thin-airfoil}
+
+with $\alpha$ in radians — confirmed by experiment to within about ten per cent up to the stall. Physically the circulation is created by viscosity, acting in the thin layer at the trailing edge when the wing starts to move. By Kelvin's theorem the total circulation of a large material curve enclosing the wing and its wake stays zero, so an equal and opposite **starting vortex** is shed from the trailing edge and left behind on the runway. Prandtl's laboratory in Göttingen filmed it in the 1920s. The details of wings of finite span, with their trailing vortices and induced drag, are developed in the Mechanical Engineering Atlas lessons [Potential flow](/learn/mechanical/lesson.php?c=aerodynamics&l=potential-flow) and [Thin-airfoil theory](/learn/mechanical/lesson.php?c=aerodynamics&l=thin-airfoil-theory).
+
+::: example Lift on a light aircraft {#ex-aircraft}
+A light aircraft of mass $1000\,\mathrm{kg}$ has a rectangular wing of span $10.0\,\mathrm m$ and chord $1.50\,\mathrm m$. It flies level at $50.0\,\mathrm{m/s}$ in air of density $1.20\,\mathrm{kg/m^3}$. Find the circulation round the wing, the lift coefficient, and the angle of attack predicted by thin-airfoil theory. Ignore end effects.
 ::: solution
-The Bernoulli (the two, and the two, of the same Bernoulli), $p_1 + \frac{1}{2} 
-ho v_1^2 + 
-ho g z_1 = p_2 + \frac{1}{2} 
-ho v_2^2 + 
-ho g z_2$ (the two, and the two, of the same `v_2^2`), the free surface the $v_1 \approx 0$ (the two, and the two, of the same `0`), both open to the atmosphere, the $p_1 = p_2 = p_{\text{atm}}$ (the two, and the two, of the same `p_atm`), the $v_1 \approx 0$ (the two, and the two, of the same `0`), the $
-ho g h = \frac{1}{2} 
-ho v_2^2$ (the two, and the two, of the same `v_2^2`), the $v_2 = \sqrt{2 g h} = \sqrt{2 \times 9.8 \times 2} = \sqrt{39.2} \approx 6.26\,\mathrm{m/s}$ (the two, and the two, of the same `6.26` `m/s`), and the two, the `v_2` and the `6.3` `m/s`, as the two, and the two as the two, the `sqrt(2gh)` and the `6.3`, of the same `6.3` `m/s`), and the two combined as the content of the `6.3` `m/s` for the Torricelli, in the Bernoulli (the two, the Bernoulli and the `const`, as the two, and the two as the two, the Bernoulli and the `const`, of the same `const`).
+In level flight the lift balances the weight, $L = mg = 1000\times9.80 = 9800\,\mathrm N$, or $980\,\mathrm{N/m}$ per unit span. By [[#eq-kj]],
+
+$$
+\Gamma = \frac{L/b}{\rho U} = \frac{980}{1.20\times50.0} = 16.3\,\mathrm{m^2/s}.
+$$
+
+The lift coefficient is
+
+$$
+C_L = \frac{L}{\frac12\rho U^2S} = \frac{9800}{0.5\times1.20\times2500\times15.0} = 0.436 ,
+$$
+
+and [[#eq-thin-airfoil]] gives $\alpha = C_L/2\pi = 0.0693\,\mathrm{rad} = 3.97^\circ$. The circulation corresponds to a speed difference between upper and lower surfaces of about $\Gamma/c \approx 11\,\mathrm{m/s}$, roughly $\pm5\,\mathrm{m/s}$ about the flight speed. A real wing of this aspect ratio, $6.7$, needs a few degrees more, because its trailing vortices induce a downwash that reduces the effective angle of attack.
 :::
 :::
 
-::: warning The Kutta, and the circulation
-A common error is to think the potential flow (the two, the potential and the flow, as the two, and the two as the two, the potential and the flow, of the same flow), the $v_\theta\big|_{r=a} = 2U \sin\theta$ (the two, and the two, of the same $2U \sin\theta$), the $v_\theta$ symmetric (the two, and the two, of the same $symmetric$), and the two, the symmetric and the flow, as the two, and the two as the two, the symmetric and the flow, of the same flow), and the two combined as the content of the flow. The content is the two, the Kutta condition (the two, the Kutta and the condition, as the two, and the two as the two, the Kutta and the condition, of the same condition) and the circulation (the two, the circulation and the $\Gamma$, as the two, and the two as the two, the circulation and the $\Gamma$, of the same $\Gamma$), and the two, the circulation and the lift (the two, the circulation and the lift, as the two, and the two as the two, the circulation and the lift, of the same lift), the Kutta and the Joukowski (the two, the Kutta and the Joukowski, as the two, and the two as the two, the Kutta and the Joukowski, of the same Joukowski), and the two, the lift and the circulation, as the two, and the two as the two, the lift and the circulation, of the same circulation), and the two combined as the content of the circulation for the lift, in the $\frac{\rho U \Gamma}{\text{...}}$ (the two, the $\frac{\rho U \Gamma}{...}$ and the $0$, as the two, and the two as the two, the $\rho U \Gamma$ and the $L$, of the same $L$).
+::: application The Magnus effect
+A spinning cylinder or ball drags fluid round with it through viscosity, creating a circulation; the Kutta–Joukowski theorem then gives a sideways force. Heinrich Gustav Magnus demonstrated it with rotating cylinders in 1852, and it is why topspin makes a tennis ball dip and sidespin makes a football curve. Anton Flettner's rotor ship *Buckau* crossed the Atlantic in 1926 driven by two tall spinning cylinders, and modern rotor sails are fitted to some cargo ships to save fuel. The force is roughly $\rho U\Gamma$ per unit length, with $\Gamma$ a fraction of $2\pi a\times$(surface speed), the fraction depending on Reynolds number and spin rate.
 :::
 
-::: quiz The $\nabla^2 \phi = 0$ in the incompressible potential flow is the:
-- [ ] $Euler-Lagrange$
-- [x] $Laplace$ (the two, the Laplace and the $\nabla^2 \phi = 0$, as the two, and the two as the two, the Laplace and the $\nabla^2 \phi$, of the same $\nabla^2 \phi$)
-- [ ] $Bernoulli$
-- [ ] $Stokes$
-::: solution
-The $\nabla^2 \phi = 0$ (the two, the $\nabla^2 \phi$ and the $0$, as the two, and the two as the two, the $\nabla^2 \phi$ and the $0$, of the same $0$), the Laplace (the two, the Laplace and the $\nabla^2 \phi = 0$, as the two, and the two as the two, the Laplace and the $\nabla^2 \phi$, of the same $\nabla^2 \phi$), and the two, the $\nabla^2 \phi = 0$ and the Laplace, as the two, and the two as the two, the $0$ and the Laplace, of the same Laplace), and the two combined as the content of the Laplace for the $\nabla^2 \phi = 0$, in the incompressible irrotational flow (the two, the incompressible and the irrotational, as the two, and the two as the two, the incompressible and the irrotational, of the same irrotational), and the two, the incompressible and the irrotational, as the two, and the two as the two, the incompressible and the irrotational, of the same irrotational), and the two combined as the content of the irrotational.
-:::
+::: history From Bernoulli to Kutta
+Daniel Bernoulli's *Hydrodynamica* (1738) related pressure and speed in flow from a vessel, using conservation of "live force" (energy); it did not contain the equation in today's form. Jean le Rond d'Alembert, in an essay submitted for a Berlin Academy prize in 1749 and published in 1752, wrote early partial differential equations of fluid motion and found that the resistance of a symmetric body in an ideal fluid vanishes. Leonhard Euler gave the general equations of ideal flow, and Bernoulli's integral from them, in memoirs written in 1755 and published in 1757. Hermann von Helmholtz published the vortex theorems in 1858; William Thomson, Lord Kelvin, the circulation theorem in 1869, in a paper on vortex atoms. The connection between circulation and lift was found independently by Frederick Lanchester in Britain, Martin Kutta in Germany (1902) and Nikolai Joukowski in Russia (1906).
 :::
 
-::: quiz The stagnation points on the cylinder $r = a$ in the potential flow are at:
-- [ ] $\frac{\pi}{4}$
-- [x] $0, \frac{\pi}{2}$ (the two, the $0$ and the $\frac{\pi}{2}$, as the two, and the two as the two, the $0$ and the $\frac{\pi}{2}$, of the same $\frac{\pi}{2}$)
-- [x] $\pi, \frac{3\pi}{2}$ (the two, the $\pi$ and the $\frac{3\pi}{2}$, as the two, and the two as the two, the $\pi$ and the $\frac{3\pi}{2}$, of the same $\frac{3\pi}{2}$)
-- [ ] $\frac{\pi}{6}, \frac{7\pi}{6}$
-::: solution
-The stagnation points, the $v_r = v_\theta = 0$ (the two, the $0$ and the $0$, as the two, and the two as the two, the $v_r$ and the $v_\theta$, of the same $0$), the $v_\theta\big|_{r=a} = 2U \sin\theta = 0$ (the two, the $2U \sin\theta$ and the $0$, as the two, and the two as the two, the $2U$ and the $\sin\theta$, of the same $\sin\theta$), the $\sin\theta = 0$ (the two, the $\sin\theta$ and the $0$, as the two, and the two as the two, the $\sin\theta$ and the $0$, of the same $0$), the $\theta = 0, \pi$ (the two, the $0$ and the $\pi$, as the two, and the two as the two, the $0$ and the $\pi$, of the same $\pi$), and the two, the stagnation points and the $\theta = 0, \pi$, as the two, and the two as the two, the stagnation and the $\theta$, of the same $\theta = 0, \pi$), and the two combined as the content of the $\theta = 0, \pi$ for the stagnation points.
-:::
-:::
+## Where this leads {#leads}
 
-## Where this leads
-
-The Bernoulli (the two, the $p + \frac{1}{2} \rho v^2 + \rho g z$ and the $const$, as the two, and the two as the two, the $p + \frac{1}{2} \rho v^2 + \rho g z$ and the $const$, of the same $const$), the potential flow (the two, the $\nabla^2 \phi = 0$ and the $0$, as the two, and the two as the two, the $\nabla^2 \phi$ and the $0$, of the same $0$), the circle (the two, the circuit and the $0$, as the two, and the two as the two, the circuit and the $0$, of the same $0$), is the content of this chapter, and it is the content that the ideal flow (the two, the ideal and the flow, as the two, and the two as the two, the ideal and the flow, of the same flow), is the two, and the two as the two, and the two, of the same ideal flow), and the two combined as the content of the ideal flow, and the two, and the two as the two, and the two, of the same flow), and the two combined as the content of the flow.
-
-::: history Bernoulli, and the 1738
-The Bernoulli (the two, the $p + \frac{1}{2} \rho v^2 + \rho g z$ and the $const$, as the two, and the two as the two, the $p + \frac{1}{2} \rho v^2 + \rho g z$ and the $const$, of the same $const$)), is Bernoulli's, in the 1738 (the two, Bernoulli and the 1738, as the two, and the two as the two, Bernoulli and the 1738, of the same Bernoulli), and the two, Bernoulli and the 1738, as the two, and the two as the two, Bernoulli and the 1738, of the same 1738), and the two combined as the content of the 1738 as Bernoulli's, and the two as the two, the Bernoulli and the 1738, of the same Bernoulli, and the two combined as the content of the Bernoulli. The potential flow (the two, the $\nabla^2 \phi = 0$ and the $0$, as the two, and the two as the two, the $\nabla^2 \phi$ and the $0$, of the same $0$)), is the Laplace (the two, Laplace and the $\nabla^2 \phi = 0$, as the two, and the two as the two, Laplace and the $\nabla^2 \phi$, of the same $\nabla^2 \phi$)), in the 1782 (the two, Laplace and the 1782, as the two, and the two as the two, Laplace and the 1782, of the same 1782), and the two, Laplace and the 1782, as the two, and the two as the two, Laplace and the 1782, of the same 1782), and the two combined as the content of the 1782 as Laplace, and the two as the two, the $\nabla^2 \phi = 0$ and the 1782, of the same Laplace, and the two combined as the content of the Laplace. The Kutta-Joukowski (the two, the Kutta and the Joukowski, as the two, and the two as the two, the Kutta and the Joukowski, of the same Joukowski)), in the 1902-1906 (the two, the Kutta and the Joukowski, as the two, and the two as the two, the Kutta and the Joukowski, of the same 1902-1906), and the two, the Kutta and the Joukowski, as the two, and the two as the two, the Kutta and the Joukowski, of the same 1902-1906), and the two combined as the content of the 1902-1906 as the Kutta-Joukowski, and the two as the two, the circulation and the 1902-1906, of the same Kutta-Joukowski, and the two combined as the content of the Kutta-Joukowski, and the three, the Bernoulli (1738), the Laplace (1782), and the Kutta-Joukowski (1902), as the three, and the three as the three, the 1738 and the 1782 and the 1902, of the same ideal flow), and the three combined as the content of the ideal flow.
-:::
+The ideal theory is correct away from walls and wakes, and it has to be completed by viscosity close to walls. [[continuum/viscous-flow]] adds the viscous stress, derives the Navier–Stokes equation, and explains with Prandtl's boundary layer why Euler's theory works where it does and fails where it does. Linearised about a state of rest, Euler's equation gives sound waves, and with a free surface it gives water waves — both in [[continuum/waves-in-fluids]], where the potential-flow methods of this chapter are used again. The elementary steady-flow Bernoulli equation of [[mechanics/fluids]] is the special case [[#eq-bernoulli]]; the engineering applications — venturi meters, flow from tanks, siphons — are worked in the Mechanical Engineering Atlas lesson [The Bernoulli equation](/learn/mechanical/lesson.php?c=fluid-mechanics&l=bernoulli).
 
 ::: summary
-- The Bernoulli, the $p + \frac{1}{2} \rho v^2 + \rho g z = \text{const}$ (the two, the $p + \frac{1}{2} \rho v^2 + \rho g z$ and the $const$, as the two, and the two as the two, the $p + \frac{1}{2} \rho v^2 + \rho g z$ and the $const$, of the same $const$), along the streamline, steady, incompressible, irrotational (the two, the streamline and the const and the steady and the incompressible and the irrotational, as the one, and the one as the one, the streamline and the const and the steady and the incompressible and the irrotational, of the same irrotational), and the two, the Bernoulli and the const, as the two, and the two as the two, the Bernoulli and the const, of the same const), and the two combined as the content of const for the Bernoulli.
-- The potential flow, the $\mathbf{u} = \nabla \phi$ (the two, the $\nabla \phi$ and the $\mathbf{u}$, as the two, and the two as the two, the $\nabla \phi$ and the $\mathbf{u}$, of the same $\mathbf{u}$), the $\nabla \times \mathbf{u} = 0$ (the two, the $\nabla \times \mathbf{u}$ and the $0$, as the two, and the two as the two, the $\nabla \times \mathbf{u}$ and the $0$, of the same $0$), the $\nabla^2 \phi = 0$ (the two, the $\nabla^2 \phi$ and the $0$, as the two, and the two as the two, the $\nabla^2 \phi$ and the $0$, of the same $0$), the Laplace (the two, the Laplace and the $\nabla^2 \phi = 0$, as the two, and the two as the two, the Laplace and the $\nabla^2 \phi$, of the same $\nabla^2 \phi$), and the two, the potential and the flow, as the two, and the two as the two, the potential and the flow, of the same flow), and the two combined as the content of the flow for the $\phi$.
-- The circle (the two, the cylinder and the $0$, as the two, and the two as the two, the cylinder and the $0$, of the same $0$)), the $\phi = U \left(r + \dfrac{a^2}{r}\right) \cos\theta$ (the two, the $U \left(r + \dfrac{a^2}{r}\right) \cos\theta$ and the $0$, as the two, and the two as the two, the $U \left(r + \dfrac{a^2}{r}\right)$ and the $\cos\theta$, of the same $\cos\theta$)), the $v_r\big|_{r=a} = 0$ (the two, and the two, of the same $0$), the $v_\theta\big|_{r=a} = 2U \sin\theta$ (the two, and the two, of the same $2U \sin\theta$)), the stagnation the $\theta = 0, \pi$ (the two, and the two, of the same $0, \pi$)), and the two, the cylinder and the flow, as the two, and the two as the two, the cylinder and the flow, of the same flow), and the two combined as the content of the flow for the cylinder.
-- The source, the $\frac{Q}{2\pi} \ln r$ (the two, the $\frac{Q}{2\pi} \ln r$ and the $ln r$, as the two, and the two as the two, the $Q$ and the $r$, of the same $r$), the vortex, the $\frac{\Gamma}{2\pi} \theta$ (the two, the $\frac{\Gamma}{2\pi} \theta$ and the $\theta$, as the two, and the two as the two, the $\Gamma$ and the $\theta$, of the same $\theta$), the doublet (the two, the doublet as the one, and the one as the one, the doublet as the same doublet), and the two, the source, the vortex, and the doublet, as the three, and the three as the three, the $Q$, the $\Gamma$, and the $\mu$, of the same elementary flow), and the three combined as the content of the elementary flow.
-- The Kutta-Joukowski (the two, the Kutta and the Joukowski, as the two, and the two as the two, the Kutta and the Joukowski, of the same Joukowski)), the lift the circulation $\frac{\rho U \Gamma}{\text{...}}$ (the two, the $\frac{\rho U \Gamma}{...}$ and the circulation, as the two, and the two as the two, the $\rho U \Gamma$ and the circulation, of the same circulation), in the 1902-1906 (the two, the Kutta and the Joukowski, as the two, and the two as the two, the Kutta and the Joukowski, of the same 1902-1906), and the two, the Kutta and the Joukowski, as the two, and the two as the two, the Kutta and the Joukowski, of the same 1902-1906), and the two combined as the content of the 1902-1906 as the Kutta-Joukowski.
-- The Bernoulli (1738), the Laplace (1782), and the Kutta-Joukowski (1902), are the three, the 1738 and the 1782 and the 1902, as the three, and the three as the three, the Bernoulli and the Laplace and the Kutta-Joukowski, of the same ideal flow), and the three combined as the content of the ideal flow.
+- An ideal fluid has $\sigma_{ij} = -p\,\delta_{ij}$, and Cauchy's equation becomes Euler's equation $\rho\,D\mathbf v/Dt = -\nabla p + \rho\mathbf g$, with slip allowed at walls.
+- For a barotropic fluid with conservative forces, $H = \frac12v^2 + h + \Phi$ is constant along streamlines in steady flow, and everywhere (with $\partial_t\phi$ added) in irrotational flow; between different streamlines of a rotational flow, $H$ varies.
+- Kelvin's theorem: the circulation round a material loop is conserved; hence flows started from rest stay irrotational, and vortex lines are carried with the fluid.
+- Incompressible irrotational flow has $\nabla^2\phi = 0$; in 2D, $w = \phi + i\psi$ is analytic with $w'(z) = u - iv$.
+- Flow past a cylinder: surface speed $2U\abs{\sin\theta}$, $C_p = 1 - 4\sin^2\theta$, and zero force — d'Alembert's paradox, resolved by viscous separation.
+- With circulation, the lift per unit span is $\rho U\Gamma$ for any 2D body; the Kutta condition fixes $\Gamma$ for a wing, giving $C_L \approx 2\pi\alpha$.
 :::
 
 ## Exercises
 
-::: exercise level=1
-The $A_1 = 10^{-3}$ $m^2$, the $A_2 = 2 \times 10^{-4}$ $m^2$, the $v_1 = 2$ $m/s$, the $\rho = 10^3$ $kg/m^3$. Find the $v_2 = \frac{A_1 v_1}{A_2} = \frac{10^{-3} \times 2}{2 \times 10^{-4}} = 10$ $m/s$ (the two, the $10^{-3}$ and the $2 \times 10^{-4}$, as the two, and the two as the two, the $A_1$ and the $A_2$, of the same $v_2$), the $\Delta p = \frac{1}{2} \rho (v_2^2 - v_1^2) = \frac{1}{2} \times 10^3 \times (100 - 4) = 48000$ $Pa$ (the two, the $100$ and the $4$, as the two, and the two as the two, the $v_2^2$ and the $v_1^2$, of the same $v_2^2$).
-hint:"v₂ = A₁v₁/A₂ = 2000×10⁻³/2×10⁻⁴ = 10 m/s. Δp = ½(1000)(100−4) = 48000 Pa = 48 kPa."
+::: exercise A pitot tube in water {level=1 check="sqrt(2*5000/1000)"}
+A pitot tube in a river records a stagnation pressure $5.00\,\mathrm{kPa}$ above the static pressure. Find the speed of the water in m/s.
 ::: solution
-The $A_1 v_1 = A_2 v_2$ (the two, the $A_1 v_1$ and the $A_2 v_2$, as the two, and the two as the two, the $A_1$ and the $A_2$, of the same $v_2$), the $v_2 = \frac{A_1}{A_2} v_1 = \frac{10^{-3}}{2 \times 10^{-4}} \times 2 = \frac{1}{2} \times 10 \times 2 = 10$ $m/s$ (the two, the $10^{-3}$ and the $2 \times 10^{-4}$, as the two, and the two as the two, the $A_1$ and the $A_2$, of the same $v_2$), the $\Delta p = \frac{1}{2} \rho (v_2^2 - v_1^2) = \frac{1}{2} \times 10^3 \times (10^2 - 2^2) = \frac{1}{2} \times 10^3 \times (100 - 4) = \frac{96}{2} \times 10^3 = 48 \times 10^3 = 48000$ $Pa$ (the two, the $48$ and the $10^3$, as the two, and the two as the two, the $100$ and the $4$, of the same $v_2^2$), and the two, the $\Delta p$ and the $48000$ $Pa$, as the two, and the two as the two, the $\Delta p$ and the $Pa$, of the same $Pa$), and the two combined as the content of the $48000$ $Pa$ for the $\Delta p$.
+By [[#eq-bernoulli]] along the stagnation streamline, $\frac12\rho v^2 = 5000\,\mathrm{Pa}$, so $v = \sqrt{2\times5000/1000} = \sqrt{10} = 3.16\,\mathrm{m/s}$. Water is $830$ times denser than air, so the same pressure difference means a much smaller speed than in [[#ex-pitot]].
 :::
 :::
 
-::: exercise level=1
-The $\frac{1}{2} \rho v^2 = \frac{1}{2} \times 1.29 \times 20^2 = \frac{1}{2} \times 1.29 \times 400 = 258$ $Pa$ (the two, the $258$ and the $1.29$, as the two, and the two as the two, the $400$ and the $1.29$, of the same $1.29$). Find the $\frac{1}{2} \rho v^2 = 258$ $Pa$ (the two, the $258$ and the $1.29$, as the two, and the two as the two, the $400$ and the $1.29$, of the same $1.29$).
-hint:"q = ½ρv² = ½(1.29)(400) = 258 Pa (dynamic pressure for v = 20 m/s)."
+::: exercise Suction on top of a cylinder {level=1 check="-180"}
+Air of density $1.20\,\mathrm{kg/m^3}$ flows at $10.0\,\mathrm{m/s}$ past a long cylinder. According to potential flow, what is $p - p_\infty$ (in Pa) at the top of the cylinder?
 ::: solution
-The $\frac{1}{2} \rho v^2 = \frac{1}{2} \times 1.29 \times (20)^2 = \frac{1}{2} \times 1.29 \times 400 = \frac{516}{2} = 258$ $Pa$ (the two, the $516$ and the $2$, as the two, and the two as the two, the $1.29$ and the $400$, of the same $1.29$), and the two, the $258$ $Pa$ and the $258$, as the two, and the two as the two, the $Pa$ and the $Pa$, of the same $Pa$), and the two combined as the content of the $258$ $Pa$ for the dynamic pressure.
+At $\theta = \pi/2$, [[#eq-cp]] gives $C_p = 1 - 4 = -3$, so $p - p_\infty = -3\times\frac12\times1.20\times(10.0)^2 = -180\,\mathrm{Pa}$. Measurements on a real cylinder at this speed give a minimum $C_p$ of about $-1.2$, near $\theta = 70^\circ$ from the front, because the flow separates before reaching the top: the ideal theory overestimates the suction.
 :::
 :::
 
-::: exercise level=2
-The $\phi = U r \cos\theta = U x$ (the two, the $U x$ and the $0$, as the two, and the two as the two, the $U$ and the $x$, of the same $x$), the $v_r = \frac{\partial \phi}{\partial r} = U \cos\theta$ (the two, the $U \cos\theta$ and the $0$, as the two, and the two as the two, the $U$ and the $\cos\theta$, of the same $\cos\theta$), the $v_\theta = \frac{1}{r}\frac{\partial \phi}{\partial \theta} = -U \sin\theta$ (the two, the $-U \sin\theta$ and the $0$, as the two, and the two as the two, the $U$ and the $\sin\theta$, of the same $\sin\theta$), the $\nabla \cdot \mathbf{u} = \frac{\partial v_r}{\partial r} + \frac{1}{r}\frac{\partial v_\theta}{\partial \theta} = 0 + \frac{1}{r}(-U \cos\theta) = ?$ (the two, and the two, of the same $?$), hmm, the $\frac{\partial v_r}{\partial r} = 0$ (the two, and the two, of the same $0$), the $\frac{1}{r}\frac{\partial v_\theta}{\partial \theta} = \frac{1}{r}(-U \cos\theta)$ (the two, and the two, of the same $-U \cos\theta$), not zero! The $\phi = U r \cos\theta$ is not incompressible? No, the $\nabla \cdot (U \cos\theta \hat{r} - U \sin\theta \hat{\theta}) = ?$ Hmm, the $v_r = \frac{\partial \phi}{\partial r} = U \cos\theta$ (the two, and the two, of the same $U \cos\theta$), the $v_\theta = \frac{1}{r}\frac{\partial \phi}{\partial \theta} = \frac{1}{r}(-Usin\theta) = -\frac{U \sin\theta}{r}$ (the two, and the two, of the same $-\frac{U \sin\theta}{r}$), the $\nabla \cdot \mathbf{u} = \frac{1}{r}\frac{\partial (r v_r)}{\partial r} - \frac{1}{r}\frac{\partial v_\theta}{\partial \theta} = \frac{1}{r}\frac{\partial (Ur \cos\theta)}{\partial r} - \frac{1}{r}\frac{\partial}{\partial \theta}\left(-\frac{U \sin\theta}{r}\right) = U \cos\theta - \frac{1}{r}\left(-\frac{U \cos\theta}{r}\right) = U \cos\theta + \frac{U \cos\theta}{r}$ hmm, that's not zero either. Let me redo this carefully. The potential flow in polar coordinates (the two, and the two, of the same polar coordinates), the $v_r = \frac{\partial \phi}{\partial r}$ (the two, and the two, of the same $v_r$), the $v_\theta = \frac{1}{r}\frac{\partial \phi}{\partial \theta}$ (the two, and the two, of the same $v_\theta$), the $\nabla \cdot \mathbf{u} = \frac{1}{r}\frac{\partial (r v_r)}{\partial r} + \frac{1}{r}\frac{\partial v_\theta}{\partial \theta}$ (the two, and the two, of the same $0$), for the $\phi = U r \cos\theta = U x$ (the two, and the two, of the same $U x$), the $v_r = U \cos\theta$ (the two, and the two, of the same $U \cos\theta$), the $v_\theta = \frac{1}{r}(-U \sin\theta)$ (the two, and the two, of the same $-\frac{U \sin\theta}{r}$), the $\nabla \cdot \mathbf{u} = \frac{1}{r}\frac{\partial (r U \cos\theta)}{\partial r} + \frac{1}{r}\frac{\partial}{\partial \theta}\left(-\frac{U \sin\theta}{r}\right) = \frac{1}{r}(U \cos\theta) + \frac{1}{r}\left(-\frac{U \cos\theta}{r}\right) = \frac{U \cos\theta}{r}\left(1 - \frac{1}{r}\right)$ hmm, this isn't zero...
-
-Wait — I think I'm making an error. The uniform flow $\mathbf{u} = U \hat{x}$ (the two, and the two, of the same $U \hat{x}$), in polar coordinates (the two, and the two, of the same polar coordinates), the $\hat{x} = \cos\theta \hat{r} - \sin\theta \hat{\theta}$ (the two, and the two, of the same $\hat{x}$), the $v_r = U \cos\theta$ (the two, and the two, of the same $U \cos\theta$), the $v_\theta = -U \sin\theta$ (the two, and the two, of the same $-U \sin\theta$). The $\nabla \cdot \mathbf{u} = \frac{1}{r}\frac{\partial (r v_r)}{\partial r} + \frac{1}{r}\frac{\partial v_\theta}{\partial \theta} = \frac{1}{r}\frac{\partial (r U \cos\theta)}{\partial r} + \frac{1}{r}\frac{\partial}{\partial \theta}(-U \sin\theta) = \frac{1}{r}(U \cos\theta) + \frac{1}{r}(-U \cos\theta) = 0$ (the two, and the two, of the same $0$). Find the $\nabla \cdot \mathbf{u} = 0$ (the two, and the two, of the same $0$).
-hint:"u = Ux̂ = U(cosθ r̂ − sinθ θ̂): v_r = Ucosθ, v_θ = −Usinθ. ∇·u = (1/r)∂(rUcosθ)/∂r + (1/r)∂(−U sinθ)/∂θ = Ucosθ/r·(1/r)·r + (1/r)(−Ucosθ) = Ucosθ/r − Ucosθ/r = 0."
+::: exercise A spinning bowl {level=1 check="(4*pi)^2*0.15^2/(2*9.8)"}
+A bowl of soup of radius $15.0\,\mathrm{cm}$ is spun at $2.00$ revolutions per second until it rotates rigidly. How much higher, in metres, is the surface at the rim than on the axis?
 ::: solution
-The $\hat{x} = \cos\theta \hat{r} - \sin\theta \hat{\theta}$ (the two, the $\cos\theta$ and the $-\sin\theta$, as the two, and the two as the two, the $\hat{x}$ and the $\hat{r}$, of the same $\hat{r}$), the $v_r = \mathbf{u} \cdot \hat{r} = U \cos\theta$ (the two, the $U \cos\theta$ and the $0$, as the two, and the two as the two, the $U$ and the $\cos\theta$, of the same $\cos\theta$), the $v_\theta = \mathbf{u} \cdot \hat{\theta} = -U \sin\theta$ (the two, the $U \sin\theta$ and the $0$, as the two, and the two as the two, the $U$ and the $\sin\theta$, of the same $-\sin\theta$), the $\nabla \cdot \mathbf{u} = \frac{1}{r}\frac{\partial}{\partial r}(r \, v_r) + \frac{1}{r}\frac{\partial v_\theta}{\partial \theta} = \frac{1}{r}\frac{\partial}{\partial r}(Ur \cos\theta) + \frac{1}{r}\frac{\partial}{\partial \theta}(-U \sin\theta) = \frac{1}{r}(U \cos\theta) + \frac{1}{r}(-U \cos\theta) = 0$ (the two, the $U \cos\theta$ and the $-U \cos\theta$, as the two, and the two as the two, the $U$ and the $\sin\theta$, of the same $0$), and the two, the $\nabla \cdot \mathbf{u}$ and the $0$, as the two, and the two as the two, the $\nabla \cdot \mathbf{u}$ and the incompressible, of the same incompressible), and the two combined as the content of the $0$ for the incompressible uniform flow.
+$\Omega = 2\pi\times2.00 = 4\pi = 12.57\,\mathrm{rad/s}$. From [[#ex-bucket]], $\Delta z = \Omega^2r^2/2g = 157.9\times0.0225/19.6 = 0.181\,\mathrm m$. The soup would need a bowl at least $18\,\mathrm{cm}$ deep, which is why soup is not spun at two revolutions per second.
 :::
 :::
 
-::: exercise level=2
-The $\sigma = \sigma_0 - \frac{\rho L}{A} \left(\frac{\Delta V}{L}
-ight)$ hmm, let me redo this. The bar (the two, and the two, of the same bar), the $L_0 = 1$ $m$, the $A = 4 \times 10^{-4}$ $m^2$, the $E = 2 \times 10^{11}$ $Pa$, the $M = 10^3$ $kg$ (the two, the $M$ and the $10^3$, as the two, and the two as the two, the $M$ and the $kg$, of the same $kg$). Find the natural frequency $f = \frac{1}{2\pi} \sqrt{\frac{k}{m}} = \frac{1}{2\pi} \sqrt{\frac{EA/L_0}{M}} = \frac{1}{2\pi} \sqrt{\frac{2 \times 10^{11} \times 4 \times 10^{-4}}{1 \times 10^3}}$ = $\frac{1}{2\pi} \sqrt{\frac{8 \times 10^7}{10^3}} = \frac{1}{2\pi} \sqrt{8 \times 10^4} \approx \frac{283}{6.28} \approx 45$ $Hz$ (the two, and the two, of the same $45$ $Hz$).
-hint:"k = EA/L = (2e11)(4e-4)/1 = 8e7 N/m. ω = √(k/M) = √(8e7/1e3) = √(8e4) ≈ 283 rad/s. f = ω/2π ≈ 45 Hz."
+::: exercise Merging stagnation points {level=2 check="4*pi"}
+For the cylinder with circulation [[#eq-cylinder-circ]], find the value of $\Gamma/(Ua)$ at which the two stagnation points merge on the surface. Where are the stagnation points for $\Gamma = 2\pi Ua$?
 ::: solution
-The $k = \frac{EA}{L_0} = \frac{2 \times 10^{11} \times 4 \times 10^{-4}}{1} = 8 \times 10^7$ $N/m$ (the two, the $2 \times 10^{11}$ and the $4 \times 10^{-4}$, as the two, and the two as the two, the $E$ and the $A$, of the same $A$), the $\omega = \sqrt{\frac{k}{M}} = \sqrt{\frac{8 \times 10^7}{10^3}} = \sqrt{8 \times 10^4} \approx \sqrt{80000} \approx 283$ $rad/s$ (the two, the $8 \times 10^7$ and the $10^3$, as the two, and the two as the two, the $k$ and the $M$, of the same $M$), the $f = \frac{\omega}{2\pi} \approx \frac{283}{6.28} \approx 45$ $Hz$ (the two, the $283$ and the $2\pi$, as the two, and the two as the two, the $\omega$ and the $2\pi$, of the same $2\pi$), and the two, the $f$ and the $45$ $Hz$, as the two, and the two as the two, the $f$ and the $Hz$, of the same $Hz$), and the two combined as the content of the $45$ $Hz$ for the natural frequency, in the Hooke's law (the two, the Hooke's law and the $\frac{\sigma}{\epsilon}$, as the two, and the two as the two, the $\sigma$ and the $\epsilon$, of the same $\epsilon$) and the harmonic oscillator (the two, the harmonic and the oscillator, as the two, and the two as the two, the harmonic and the oscillator, of the same oscillator).
+The surface stagnation points satisfy $v_\theta = 0$, that is $\sin\theta = -\Gamma/4\pi Ua$. Two solutions exist for $\Gamma/4\pi Ua < 1$; they merge at $\theta = -\pi/2$ (the bottom) when $\Gamma/(Ua) = 4\pi$. For larger $\Gamma$ the stagnation point leaves the surface and lies in the fluid below the cylinder, with closed streamlines circulating round it. For $\Gamma = 2\pi Ua$, $\sin\theta = -\frac12$, so $\theta = -30^\circ$ and $\theta = -150^\circ$ ($210^\circ$): both $30^\circ$ below the horizontal, at the rear and front.
 :::
 :::
 
-::: exercise level=1
-The $h = 5\,\mathrm{m}$ (the two, and the two, of the same `5` `\mathrm{m}`), the $\rho = 10^3\,\mathrm{kg/m^3}$ (the two, and the two, of the same $\rho$), the Torricelli (the two, and the two, of the same Torricelli). Find the $v = \sqrt{2 g h} = \sqrt{2 \times 9.8 \times 5} = \sqrt{98} \approx 9.9\,\mathrm{m/s}$ (the two, and the two, of the same `9.9` `\mathrm{m/s}`), the dynamic pressure $\frac{1}{2} \rho v^2 = \frac{1}{2} \times 10^3 \times 98 = 49000\,\mathrm{Pa}$ (the two, and the two, of the same `49000` `\mathrm{Pa}`).
-hint:"v = √(2·9.8·5) = √98 ≈ 9.9 m/s; q = ½ρv² = ½(1000)(98) = 49000 Pa."
+::: exercise Wing loading {level=2 check="2*700*9.8/(1.2*60^2*16*2*pi)"}
+A glider of mass $700\,\mathrm{kg}$ has a wing area of $16.0\,\mathrm{m^2}$. Using $C_L = 2\pi\alpha$, find the angle of attack, in radians, needed for level flight at $60.0\,\mathrm{m/s}$ in air of density $1.20\,\mathrm{kg/m^3}$.
 ::: solution
-The $v = \sqrt{2 g h} = \sqrt{2 \times 9.8 \times 5} = \sqrt{98} \approx 9.90\,\mathrm{m/s}$ (the two, and the two, of the same `9.90` `\mathrm{m/s}`), the $\frac{1}{2} \rho v^2 = \frac{1}{2} \times 10^3 \times (9.90)^2 = \frac{1}{2} \times 10^3 \times 98 = 4.9 \times 10^4\,\mathrm{Pa}$ (the two, and the two, of the same `4.9` `$\times$` `$10^4$` `\mathrm{Pa}`), and the two, the `v` and the `9.9` `\mathrm{m/s}` and the `$4.9 \times 10^4$` `\mathrm{Pa}`, as the three, and the three as the three, the `9.9` and the `4.9` and the `10^4`, of the same `10^4`), and the two combined as the content of the `4.9` `$\times$` `$10^4$` `\mathrm{Pa}` for the Torricelli.
+$C_L = 2mg/\rho U^2S = 2\times6860/(1.20\times3600\times16.0) = 13720/69120 = 0.1985$, so $\alpha = C_L/2\pi = 0.0316\,\mathrm{rad} = 1.81^\circ$. At half the speed the lift coefficient must be four times larger, $0.79$, and the angle of attack $7.2^\circ$: slow flight needs a steep angle, and the stall, at roughly $15^\circ$ for a typical profile, sets the minimum speed.
 :::
 :::
 
-::: exercise level=1
-The $v_r\big|_{r=a}$, the $\theta = \frac{\pi}{4}$ (the two, and the two, of the same `$\frac{\pi}{4}$`). Find the $v_r = U \left(1 - \frac{a^2}{a^2}\right) \cos\frac{\pi}{4} = 0$ (the two, and the two, of the same `0`), the $v_\theta\big|_{r=a} = 2U \sin\frac{\pi}{4} = 2U \times \frac{1}{\sqrt{2}} = \sqrt{2}\, U$ (the two, and the two, of the same `sqrt(2) U`).
-hint:"At r = a: v_r = U(1 − 1)cosθ = 0. v_θ = 2U sin(π/4) = 2U/√2 = √2 U."
+::: exercise When is air incompressible? {level=2 check="343*sqrt(0.1)"}
+Using the estimate $\Delta\rho/\rho \approx \frac12\mathrm{Ma}^2$ and a sound speed of $343\,\mathrm{m/s}$, find the speed (in m/s) at which the density of air brought to rest at a stagnation point rises by $5\,\%$.
 ::: solution
-The $v_r\big|_{r=a} = U \left(1 - \dfrac{a^2}{r^2}\right) \cos\theta \bigg|_{r=a} = U(1-1)\cos\theta = 0$ (the two, and the two, of the same `0`), the $v_\theta\big|_{r=a} = 2U \sin\theta \bigg|_{\theta = \frac{\pi}{4}} = 2U \times \dfrac{1}{\sqrt{2}} = \sqrt{2}\, U$ (the two, and the two, of the same `sqrt(2) U`), and the two, the `v_θ` and the `sqrt(2) U`, as the two, and the two as the two, the `2U` and the `sin(π/4)`, of the same `sin(π/4)`), and the two combined as the content of the `sqrt(2) U` for the tangential velocity.
+$\frac12\mathrm{Ma}^2 = 0.05$ gives $\mathrm{Ma} = \sqrt{0.1} = 0.316$, so $v = 343\times0.316 = 108\,\mathrm{m/s}$, about $390\,\mathrm{km/h}$. This is the origin of the rule of thumb that flows below $\mathrm{Ma} \approx 0.3$ may be treated as incompressible: the density changes are then below about $5\,\%$, and the pressure–speed relation is accurate to about $2\,\%$.
 :::
 :::
 
-::: exercise level=2
-The $\phi = \dfrac{Q}{2\pi} \ln r$ (the two, and the two, of the same `$\frac{Q}{2\pi} \\ln r$`), the $u_r = \dfrac{Q}{2\pi r}$ (the two, and the two, of the same `$\frac{Q}{2\pi r}$`), the $\displaystyle\oint_{r=R} \mathbf{u} \cdot d\mathbf{A} = \int_0^{2\pi} \frac{Q}{2\pi R} R \, d\theta = Q$ (the two, and the two, of the same `Q`). Show the $Q$ the $r$-independent (the two, and the two, of the same `independent`), the source $Q$ (the two, and the two, of the same `Q`), the $\nabla \cdot \mathbf{u} = 0$ for the $r > 0$ (the two, and the two, of the same `0`).
-hint:"∮ u·dA = ∫₀²π (Q/2πR)·R dθ = Q, independent of R. ∇·u = (1/r)∂(r·Q/2πr)/∂r = (1/r)∂(Q/2π)/∂r = 0 for r > 0."
+::: exercise The Rankine half-body {level=2}
+A source of strength $m$ (volume flux per unit depth) is placed at the origin in a uniform stream $U$ along $x$, so $w = Uz + (m/2\pi)\ln z$. Find the stagnation point, and show that the streamline through it, which separates fluid from the source and from the stream, approaches the half-width $m/2U$ far downstream.
 ::: solution
-The $u_r = \dfrac{\partial \phi}{\partial r} = \dfrac{Q}{2\pi} \cdot \dfrac{1}{r} = \dfrac{Q}{2\pi r}$ (the two, and the two, of the same `$\frac{Q}{2\pi r}$`), the $\displaystyle\oint_{C_R} \mathbf{u} \cdot d\mathbf{A} = \displaystyle\int_0^{2\pi} u_r \, r \, d\theta = \int_0^{2\pi} \dfrac{Q}{2\pi r} \cdot r \, d\theta = \int_0^{2\pi} \dfrac{Q}{2\pi} \, d\theta = Q$ (the two, and the two, of the same `Q`), the $R$ cancels, the $Q$ the $r$-independent (the two, and the two, of the same `independent`), the $\nabla \cdot \mathbf{u} = \dfrac{1}{r} \dfrac{\partial}{\partial r}(r \, u_r) = \dfrac{1}{r} \dfrac{\partial}{\partial r}\left(\dfrac{Q}{2\pi}\right) = 0$ for the $r > 0$ (the two, and the two, of the same `0`), the $\delta(\mathbf{r})$ at the $r = 0$ (the two, and the two, of the same `0`), and the two, the `∇·u` and the `0` for the `r > 0`, as the two, and the two as the two, the `δ(r)` and the source, of the same source), and the two combined as the content of the source for the `∇·u = δ(r)·Q/...` hmm, the $\nabla \cdot \mathbf{u} = Q \, \delta^2(\mathbf{r})$ (the two, and the two, of the same `δ²(r)`), and the two as the two, and the two, of the same source).
+$w'(z) = U + m/2\pi z$ vanishes at $z = -m/2\pi U$: the stagnation point is on the negative $x$-axis at distance $m/2\pi U$ upstream of the source. The stream function is $\psi = Ur\sin\theta + m\theta/2\pi$. At the stagnation point, $\theta = \pi$ and $r\sin\theta = 0$, so $\psi = m/2$. The dividing streamline is $Uy + m\theta/2\pi = m/2$. Far downstream $\theta \to 0$, so $y \to m/2U$ on the upper branch (and $-m/2U$ on the lower). The total width $m/U$ is exactly what is needed for the stream at speed $U$ to carry away the source's flux $m$, as mass conservation requires. The dividing streamline can be replaced by a solid body: this is the flow past the nose of a long blunt object, such as a bridge pier or the front of a pitot tube.
 :::
 :::
 
-::: exercise level=2
-The $\nabla^2 \phi = 0$ (the two, and the two, of the same `0`), the $\phi = A \ln r + B \theta + C$ (the two, and the two, of the same `$A \ln r + B\theta + C$`), in the 2D (the two, and the two, of the same `2D`), the $\nabla^2 \ln r = \dfrac{1}{r}\dfrac{d}{dr}\left(r \dfrac{1}{r}\right) = 0$ (the two, and the two, of the same `0`), for the $r > 0$ (the two, and the two, of the same `0`), the $\nabla^2 \theta = 0$ (the two, and the two, of the same `0`). Show $A \ln r + B \theta$ the harmonic (the two, and the two, of the same harmonic), in the $r > 0$ (the two, and the two, of the same `0`), the $\nabla^2(C) = 0$ (the two, and the two, of the same `0`).
-hint:"∇²lnr = (1/r)d/dr(r·1/r) = (1/r)d/dr(1) = 0 for r > 0; ∇²θ = 0; ∇²C = 0. So A·lnr + B·θ + C is a solution of Laplace's equation for r > 0."
+::: exercise Kelvin's theorem and starting from rest {level=3}
+Show from [[#eq-bernoulli-unsteady]] that if an ideal incompressible fluid at rest is set into motion by an impulsive movement of a body, the velocity potential just afterwards is $\phi = -\Pi/\rho$, where $\Pi$ is the **impulsive pressure** (the time integral of the pressure during the impulse). Explain why this, together with [[#cor-irrotational]], means that the flow immediately after a sudden start is the potential flow, even round a body with sharp edges.
+::: hint
+Integrate the unsteady Bernoulli equation over a short interval $\delta t$ during which $p$ is very large but $v$ remains finite.
+:::
 ::: solution
-The $\nabla^2 \ln r = \dfrac{1}{r} \dfrac{\partial}{\partial r}\left(r \dfrac{\partial \ln r}{\partial r}\right) = \dfrac{1}{r} \dfrac{\partial}{\partial r}(1) = 0$ for the $r > 0$ (the two, and the two, of the same `0`), the $\nabla^2 \theta = 0$ (the two, and the two, of the same `0`), the $\nabla^2 C = 0$ (the two, and the two, of the same `0`), the $\nabla^2(A \ln r + B \theta + C) = A \cdot 0 + B \cdot 0 + 0 = 0$ (the two, and the two, of the same `0`), for the $r > 0$ (the two, and the two, of the same `0`), and the two, the harmonic and the $A \ln r + B \theta + C$, as the two, and the two as the two, the harmonic and the `\nabla^2 = 0`, of the same harmonic), and the two combined as the content of the harmonic for the `\nabla^2 \phi = 0` in the $r > 0$ (the two, and the two, of the same `0`).
+During the impulse, $\frac12v^2$ and $\Phi$ stay bounded while $p$ is of order $\Pi/\delta t$. Integrate [[#eq-bernoulli-unsteady]] (with $h = p/\rho$) from $t = 0$, when $\phi = 0$, to $t = \delta t$:
+
+$$
+\phi(\delta t) + \int_0^{\delta t}\Bigl(\tfrac12v^2 + \Phi\Bigr)\dd t + \frac1\rho\int_0^{\delta t}p\,\dd t = \int_0^{\delta t}C\,\dd t .
+$$
+
+As $\delta t \to 0$ the second term vanishes, the third tends to $\Pi/\rho$, and the right side is a spatially uniform constant that can be absorbed into $\phi$. So $\phi = -\Pi/\rho$. Since the fluid was at rest, it was irrotational; by [[#cor-irrotational]] it is irrotational afterwards, so $\mathbf v = \nabla\phi$ with $\nabla^2\phi = 0$ and the body boundary condition: the potential flow, sharp edges included. The infinite velocities at a sharp edge are then smoothed by viscosity within a short time, shedding the starting vortex and setting up the Kutta circulation; in an exactly ideal fluid this never happens, which is why the Kutta condition must be imposed as an extra physical principle.
 :::
 :::
 
-::: exercise level=3
-The $\nabla^2 \phi = \dfrac{\partial^2 \phi}{\partial x^2} + \dfrac{\partial^2 \phi}{\partial y^2}$ (the two, and the two, of the same `\nabla^2 \phi`), the $\phi = f(x) g(y)$ (the two, and the two, of the same `f(x) g(y)`), the $\dfrac{f''}{f} = -\dfrac{g''}$, hmm, the $\dfrac{f''}{f} = \alpha$, the $\dfrac{g''}{g} = -\alpha$ hmm, let me redo: the $\nabla^2(f g) = f'' g + f g'' = (f'' g + f g'') = 0$ for all $x, y$ (the two, and the two, of the same `0`), the $\dfrac{f''}{f} = -\dfrac{g''}{g} = \lambda$ (const, the two, and the two, of the same `\lambda`), the $f'' - \lambda f = 0$ (the two, and the two, of the same `0`), the $g'' + \lambda g = 0$ (the two, and the two, of the same `0`). Find the $f(x), g(y)$ (the two, and the two, of the same `f, g`).
-hint:"Separation gives f''/f = −g''/g = λ (constant). f'' = λf, g'' = −λg. For λ > 0: f = Ae^{√λ x} + Be^{−√λ x}, g = C cos(√λ y) + D sin(√λ y)."
+::: exercise No pressure minimum inside the fluid {level=3}
+Prove that in a steady irrotational flow of an incompressible ideal fluid without body forces, the pressure cannot have a strict local minimum at an interior point of the fluid. Deduce that the lowest pressure — where cavitation would start in water — is always on a boundary.
+::: hint
+Show that $\nabla^2(\abs{\nabla\phi}^2) = 2\sum_{i,j}(\partial_i\partial_j\phi)^2 \ge 0$, and use the maximum principle for subharmonic functions.
+:::
 ::: solution
-The $\nabla^2(f g) = f'' g + f g'' = 0$ (the two, and the two, of the same `0`), the $\dfrac{f''}{f} = -\dfrac{g''}{g} = \lambda$ (constant, the two, and the two, of the same `\lambda`), the $f'' = \lambda f$ (the two, and the two, of the same `\lambda`), the $g'' = -\lambda g$ (the two, and the two, of the same `-\lambda`), for the $\lambda > 0$ (the two, and the two, of the same `0`), the $f(x) = A e^{\sqrt{\lambda}\, x} + B e^{-\sqrt{\lambda}\, x}$ (the two, and the two, of the same `e^{\sqrt{\lambda} x}`), the $g(y) = C \cos\sqrt{\lambda}\, y + D \sin\sqrt{\lambda}\, y$ (the two, and the two, of the same `cos` and the same `sin`), and the two, the $f(x)$ and the $g(y)$, as the two, and the two as the two, the `f` and the `g`, of the same `f g`), and the two combined as the content of the `f g` for the harmonic function, in the separation of variables (the two, the separation and the variables, as the two, and the two as the two, the separation and the `x, y`, of the same `x, y`).
+By [[#thm-bernoulli]], $p = C - \frac12\rho q$ with $q = \abs{\nabla\phi}^2 = \partial_k\phi\,\partial_k\phi$. Compute
+
+$$
+\nabla^2q = \partial_i\partial_i(\partial_k\phi\,\partial_k\phi) = 2\,\partial_i\partial_k\phi\,\partial_i\partial_k\phi + 2\,\partial_k\phi\,\partial_k(\partial_i\partial_i\phi) = 2\sum_{i,k}(\partial_i\partial_k\phi)^2 ,
+$$
+
+since $\nabla^2\phi = 0$. So $\nabla^2q \ge 0$: $q$ is subharmonic. A subharmonic function obeys the mean-value inequality: $q(\mathbf x_0)$ is at most the average of $q$ over any sphere centred at $\mathbf x_0$ and lying in the fluid (differentiate the spherical average with respect to the radius and use the divergence theorem; the derivative is the integral of $\nabla^2q \ge 0$ over the ball). If $\mathbf x_0$ were a strict local maximum, $q$ would be smaller than $q(\mathbf x_0)$ everywhere on a small sphere round it, and so would its average — a contradiction. So $q$ has no strict interior maximum. Therefore $p$ has no strict interior minimum. On any bounded part of the flow the minimum pressure is attained on the boundary — the surface of a body or a free streamline — which is where cavitation bubbles first appear on ship propellers and pump impellers.
 :::
 :::

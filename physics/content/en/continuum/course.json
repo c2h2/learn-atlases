@@ -6,29 +6,31 @@
   "level": 3,
   "order": 130,
   "tagline": "Solids that deform and fluids that flow",
-  "summary": "Stress and strain, linear elasticity, the kinematics of flow, Euler’s equation, the Navier–Stokes equation and waves in fluids.",
+  "summary": "Stress and strain, linear elasticity and seismic waves, the kinematics of flow, Euler's and Bernoulli's equations, the Navier–Stokes equation, boundary layers and waves in fluids.",
   "overview": [
-    "When the number of particles is enormous and we care about lengths much larger than the distance between them, matter is a continuum. The state is a few fields — density, velocity, displacement — and the laws are conservation of mass and momentum written for those fields. Solids remember a reference shape; fluids do not.",
-    "Stress and strain, and the linear relation between them, come first, with Young’s modulus and the shear modulus as the two numbers a beginner needs. Fluid kinematics then distinguishes a pathline from a streamline. Euler’s equation is Newton’s second law for an ideal fluid, and Bernoulli’s equation is its energy integral along a streamline. Viscosity produces the Navier–Stokes equation, whose few exact solutions — pipe flow, a boundary layer in outline — already explain a great deal. Waves on water and sound close the course.",
-    "The first-year fluid chapter is the special case of this one in which the flow is steady, incompressible and either at rest or inviscid. Every time that chapter’s formula is used, the hypotheses should be checked against the more general equation."
+    "When we care about lengths much larger than the spacing between atoms, matter can be described by smooth fields — density, velocity, displacement — obeying conservation of mass and momentum. Continuum mechanics is that description. It explains why a steel beam bends as it does, how earthquakes are located, why a wing lifts, why honey pours slowly, how fast a tsunami crosses an ocean and why clouds float. Solids and fluids are treated together because the same object, the stress tensor, carries the forces in both; they differ only in how the stress responds to deformation.",
+    "The first chapter builds the stress tensor from Cauchy's tetrahedron argument and the strain tensor from displacement gradients, with no assumption about the material. Linear elasticity then adds Hooke's law for isotropic solids, the relations between Young's modulus, Poisson's ratio and the shear and bulk moduli, the Navier–Cauchy equation and its P and S waves. The fluid half begins with kinematics — Eulerian and Lagrangian descriptions, the material derivative, continuity, vorticity and the Reynolds transport theorem — and continues with ideal flow (Euler's equation, Bernoulli's and Kelvin's theorems, potential flow, d'Alembert's paradox and Kutta–Joukowski lift) and viscous flow (the Navier–Stokes equation, Poiseuille's law, the Reynolds number, Stokes drag, boundary layers and Kolmogorov's picture of turbulence). Sound and surface waves on water close the course.",
+    "The mathematics is vector calculus and tensors in Cartesian index notation; the physics is Newton's second law applied to pieces of matter that deform. What makes the subject hard is that the equations are nonlinear and the boundary conditions decisive: the ideal theory predicts zero drag, and the resolution lies in a layer at the wall far thinner than the body. Work every order-of-magnitude estimate, and for each formula ask which hypotheses — small strain, steady flow, irrotational flow, small Reynolds number, shallow water — it needs. The first-year chapter on fluids is the special case of this course in which the flow is steady, incompressible and inviscid."
   ],
   "prerequisites": [
     "mechanics",
     "math-methods"
   ],
   "outcomes": [
-    "Define the stress tensor and the strain tensor and use Hooke’s law in isotropic linear elasticity.",
-    "Distinguish streamlines, pathlines and the material derivative.",
-    "Derive the continuity equation and Euler’s equation, and recover Bernoulli’s equation under its hypotheses.",
-    "Write the Navier–Stokes equation and solve it for steady flow in a pipe and for Couette flow.",
-    "Estimate a Reynolds number and say what it measures.",
-    "Describe sound waves and surface gravity waves at the level of their dispersion relations."
+    "Derive the Cauchy stress tensor from the traction on a tetrahedron, prove its symmetry, and compute principal stresses and the largest shear stress at a point.",
+    "Compute the small-strain tensor and rotation from a displacement field and interpret its components as stretches, angle changes and volume change.",
+    "State Hooke's law for an isotropic solid, derive the relations between E, ν, G and K, and use them with real material data for steel, aluminium, rubber and rock.",
+    "Derive the Navier–Cauchy equation and the speeds of P and S waves, and use them to interpret seismograms and ultrasonic measurements.",
+    "Use the material derivative, streamlines, pathlines, the stream function, the continuity equation and the Reynolds transport theorem to describe a flow.",
+    "Derive Euler's equation, Bernoulli's theorem with its hypotheses and Kelvin's circulation theorem, and solve potential flow past a cylinder with and without circulation.",
+    "Derive the Navier–Stokes equation and the Couette and Hagen–Poiseuille solutions, and use the Reynolds number, Stokes drag and boundary-layer scaling to estimate viscous effects.",
+    "Derive the speed of sound from compressibility and the dispersion relation of surface waves, and apply phase and group velocity to swell, ripples and tsunamis."
   ],
   "chapters": [
     {
       "slug": "stress-strain",
       "title": "Stress and strain",
-      "summary": "The stress tensor, the strain tensor, and what each component means.",
+      "summary": "Cauchy's stress tensor, its symmetry and principal stresses; the small-strain tensor from displacement gradients.",
       "requires": [
         "mechanics/newton-laws",
         "math-methods/vector-calculus"
@@ -37,7 +39,7 @@
     {
       "slug": "elasticity",
       "title": "Linear elasticity",
-      "summary": "Hooke’s law, Young’s modulus, Poisson’s ratio, and simple deformations.",
+      "summary": "Hooke's law for isotropic solids, the elastic moduli and their relations, the Navier–Cauchy equation, P and S waves, bending and torsion.",
       "requires": [
         "continuum/stress-strain"
       ]
@@ -45,7 +47,7 @@
     {
       "slug": "fluid-kinematics",
       "title": "How fluids move",
-      "summary": "The material derivative, streamlines, and the continuity equation.",
+      "summary": "Euler and Lagrange descriptions, the material derivative, streamlines, continuity, the transport theorem and vorticity.",
       "requires": [
         "continuum/stress-strain",
         "mechanics/fluids"
@@ -54,7 +56,7 @@
     {
       "slug": "ideal-flow",
       "title": "Ideal flow",
-      "summary": "Euler’s equation, vorticity, and Bernoulli’s equation along a streamline.",
+      "summary": "Euler's equation, Bernoulli and Kelvin theorems, potential flow past a cylinder, d'Alembert's paradox and Kutta–Joukowski lift.",
       "requires": [
         "continuum/fluid-kinematics"
       ]
@@ -62,7 +64,7 @@
     {
       "slug": "viscous-flow",
       "title": "Viscous flow",
-      "summary": "The Navier–Stokes equation, pipe flow, Couette flow and the Reynolds number.",
+      "summary": "The Navier–Stokes equation, Couette and Poiseuille flow, the Reynolds number, Stokes drag, boundary layers and turbulence.",
       "requires": [
         "continuum/ideal-flow"
       ]
@@ -70,7 +72,7 @@
     {
       "slug": "waves-in-fluids",
       "title": "Waves in fluids",
-      "summary": "Sound, shallow-water waves, and the dispersion of surface gravity waves.",
+      "summary": "Sound speed from compressibility, the dispersion of surface gravity and capillary waves, group velocity and tsunamis.",
       "requires": [
         "continuum/ideal-flow",
         "oscillations/travelling-waves"
@@ -79,85 +81,139 @@
   ],
   "history": [
     {
-      "year": 1687,
-      "title": "Newton on viscosity",
-      "detail": "In Book II of the Principia Newton proposed that the resistance between adjacent layers of a fluid is proportional to their relative speed, the linear viscosity used here.",
+      "year": 1678,
+      "title": "Hooke's law",
+      "detail": "Robert Hooke published “ut tensio, sic vis” — the extension is proportional to the force — in De Potentia Restitutiva, the solution of an anagram he had posted in 1676.",
       "people": [
-        "Isaac Newton"
+        "Robert Hooke"
       ]
     },
     {
       "year": 1738,
       "title": "Hydrodynamica",
-      "detail": "Daniel Bernoulli’s Hydrodynamica relates pressure and speed in a steady flow. The derivation taught now, from Euler’s equation, came later.",
+      "detail": "Daniel Bernoulli related pressure and speed in steady flow using conservation of energy. The equation in its modern form came later, from Euler's equations.",
       "people": [
         "Daniel Bernoulli"
       ]
     },
     {
+      "year": 1752,
+      "title": "D'Alembert's paradox",
+      "detail": "In his essay on the resistance of fluids, Jean le Rond d'Alembert wrote early partial differential equations of fluid motion and found that an ideal fluid exerts no drag on a symmetric body.",
+      "people": [
+        "Jean le Rond d'Alembert"
+      ]
+    },
+    {
       "year": 1757,
-      "title": "Euler’s equations",
-      "detail": "Leonhard Euler wrote the acceleration of a fluid element in terms of the pressure gradient, the inviscid equation that carries his name.",
+      "title": "Euler's equations",
+      "detail": "Leonhard Euler published the field description of fluid motion, the continuity equation and the equations of ideal flow, together with Bernoulli's integral.",
       "people": [
         "Leonhard Euler"
       ]
     },
     {
       "year": 1822,
-      "title": "Navier",
-      "detail": "Claude-Louis Navier added viscous terms to Euler’s equation from a molecular hypothesis. Stokes, in 1845, derived the same equation from a continuum argument.",
+      "title": "The stress tensor",
+      "detail": "Augustin-Louis Cauchy presented the concept of stress to the Paris Academy, and developed the stress and strain tensors and principal axes in his Exercices de mathématiques of 1827–28. In the same year Claude-Louis Navier derived the equation of viscous flow from a molecular model.",
       "people": [
-        "Claude-Louis Navier",
-        "George Gabriel Stokes"
+        "Augustin-Louis Cauchy",
+        "Claude-Louis Navier"
+      ]
+    },
+    {
+      "year": 1845,
+      "title": "Stokes's continuum derivation",
+      "detail": "George Gabriel Stokes derived the Navier–Stokes equation from a linear isotropic relation between stress and rate of strain; in 1851 he obtained the drag 6πηaU on a slowly moving sphere. Hagen (1839) and Poiseuille (1840–46) had measured laminar pipe flow.",
+      "people": [
+        "George Gabriel Stokes",
+        "Gotthilf Hagen",
+        "Jean Léonard Marie Poiseuille"
+      ]
+    },
+    {
+      "year": 1858,
+      "title": "Vortex theorems",
+      "detail": "Hermann von Helmholtz showed that vortex lines move with an ideal fluid and that the strength of a vortex tube is conserved. William Thomson (Lord Kelvin) stated the circulation theorem in 1869.",
+      "people": [
+        "Hermann von Helmholtz",
+        "William Thomson"
+      ]
+    },
+    {
+      "year": 1883,
+      "title": "Reynolds's experiment",
+      "detail": "Osborne Reynolds injected dye into water flowing in glass pipes and showed that the transition from laminar to turbulent flow is governed by the dimensionless number now named after him.",
+      "people": [
+        "Osborne Reynolds"
       ]
     },
     {
       "year": 1904,
       "title": "The boundary layer",
-      "detail": "Ludwig Prandtl showed that for small viscosity the flow is ideal except in a thin layer at a solid surface, where the no-slip condition is met.",
+      "detail": "Ludwig Prandtl showed that at small viscosity the flow is ideal except in a thin layer at a solid surface, whose separation explains drag; his student Heinrich Blasius solved the flat-plate layer in 1908.",
       "people": [
-        "Ludwig Prandtl"
+        "Ludwig Prandtl",
+        "Heinrich Blasius"
       ]
     },
     {
-      "year": 1851,
-      "title": "Stokes’ drag",
-      "detail": "Stokes solved the flow past a slowly moving sphere and found the drag 6πηav, still the formula used for a Millikan oil drop and for a small particle in air.",
+      "year": 1941,
+      "title": "Kolmogorov's theory of turbulence",
+      "detail": "Andrey Kolmogorov argued that the small-scale statistics of turbulence depend only on the energy dissipation rate and viscosity, giving the k^(−5/3) energy spectrum and the dissipation scale.",
       "people": [
-        "George Gabriel Stokes"
+        "Andrey Kolmogorov"
       ]
     }
   ],
   "references": [
     {
-      "title": "An Introduction to Fluid Dynamics",
-      "authors": "G. K. Batchelor",
-      "year": 2000,
-      "note": "The classic. Harder than this course, and the right reference for any derivation you want done properly."
+      "title": "Physics of Continuous Matter",
+      "authors": "B. Lautrup",
+      "year": 2011,
+      "note": "Second edition. A physicist's account of both solids and fluids at the level of this course, rich in real numbers and estimates; the closest single book to the whole course."
     },
     {
       "title": "Elementary Fluid Dynamics",
       "authors": "D. J. Acheson",
       "year": 1990,
-      "note": "The best undergraduate book. It covers everything here except the elasticity chapters, with real calculations."
+      "note": "The best short undergraduate text on ideal and viscous flow, vorticity, boundary layers and water waves, with clear derivations and good exercises."
+    },
+    {
+      "title": "Fluid Dynamics for Physicists",
+      "authors": "T. E. Faber",
+      "year": 1995,
+      "note": "Physical explanations and experiments rather than formal theory; excellent on the hypotheses behind Bernoulli's equation, on lift and on turbulence."
     },
     {
       "title": "Fluid Mechanics",
       "authors": "Pijush K. Kundu, Ira M. Cohen and David R. Dowling",
-      "year": 2015,
-      "note": "Sixth edition. A full course text, good on waves and on viscous flow."
+      "year": 2016,
+      "note": "Sixth edition. A complete course text, strong on kinematics, the Navier–Stokes equation, boundary layers and gravity waves."
+    },
+    {
+      "title": "An Introduction to Fluid Dynamics",
+      "authors": "G. K. Batchelor",
+      "year": 2000,
+      "note": "Cambridge Mathematical Library reissue of the 1967 classic. More advanced; the reference for careful derivations of anything in the fluid chapters."
     },
     {
       "title": "Theory of Elasticity",
       "authors": "L. D. Landau and E. M. Lifshitz",
       "year": 1986,
-      "note": "Third edition. Short and definitive for the solid half of the course, once the definitions are familiar."
+      "note": "Third edition (Course of Theoretical Physics, vol. 7). Concise and definitive on stress, strain, Hooke's law, elastic waves, rods and plates."
     },
     {
-      "title": "University Physics",
-      "authors": "Hugh D. Young and Roger A. Freedman",
-      "year": 2020,
-      "note": "Fifteenth edition, the chapter on fluid mechanics, as the elementary special case."
+      "title": "Fluid Mechanics",
+      "authors": "L. D. Landau and E. M. Lifshitz",
+      "year": 1987,
+      "note": "Second edition (Course of Theoretical Physics, vol. 6). Ideal and viscous flow, Stokes drag, turbulence and sound, at a graduate pace."
+    },
+    {
+      "title": "The Feynman Lectures on Physics, Volume II",
+      "authors": "R. P. Feynman, R. B. Leighton and M. Sands",
+      "year": 1964,
+      "note": "Chapters 38–41 on elasticity and the flow of 'dry' and 'wet' water: an inspiring first reading on why the ideal theory fails and what viscosity does."
     }
   ],
   "next": [
