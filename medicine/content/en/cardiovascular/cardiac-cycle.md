@@ -1,148 +1,341 @@
-The cardiac cycle is the pump's four-act pressure–volume play: filling, isovolumetric contraction, ejection, isovolumetric relaxation — each act defined by which valves stand open, which chamber pressure leads, and what the ventricle's fibre geometry can achieve. Read on the Wiggers diagram and the pressure–volume loop, it becomes the framework on which every murmur, every heart-failure physiology, every shock state and every anaesthetic interaction is written; the same loop redrawn for aortic stenosis, tamponade or dilated cardiomyopathy is the diagnosis.
+The heart is two pumps joined side by side. The right heart receives blood from the body and sends it through the lungs at low pressure; the left heart receives blood from the lungs and sends it round the body at high pressure. Each beat follows the same sequence of electrical activation, contraction, valve movement and relaxation. That sequence is the **cardiac cycle**. Once you can picture it, much of the bedside examination makes sense: the heart sounds are valves closing, the jugular venous pulse is the right atrium seen from the neck, and the arterial pulse is the left ventricle's ejection felt at the wrist.
 
-This chapter covers cycle mechanics and the sounds, the pressure–volume analysis, Starling and Guyton — the heart and the vessels as one coupled system — and the fetal circulation and its transition.
+This chapter covers the structure of the heart as a pump, the phases of the cycle, the heart sounds and venous pulse, cardiac output and the four things that control it, and the pressure–volume loop, the single diagram that shows how a ventricle is performing.
 
-## The cycle
+## The heart as a pump
 
-::: definition The four phases {#def-phases}
-**Filling (ventricular diastole):** after the third heart-sound era of early rapid filling (tension falls, the ventricle sucks — the atrioventricular pressure gradient and elastic recoil drive ~70% of filling passively), **atrial systole** contributes the final 15–30% (the "atrial kick" — modest at rest, decisive in the stiff ventricle and at high rates, the reason new atrial fibrillation decompensates aortic stenosis, a hypertrophic cardiomyopathy and any diastolic heart failure). **Isovolumetric contraction:** the AV valves close (**S1**), pressure climbs with all four valves shut — the phase whose maximal dP/dt is the classic isovolumetric index of contractility. **Ejection:** once aortic (or pulmonary) pressure is exceeded the semilunar valves open; rapid ejection then reduced ejection, with the ventricle's **ellipsoidal, helical fibre geometry** wringing blood out by longitudinal shortening, twisting and radial thickening — the mechanics behind ejection fraction and the strain measurement ([[cardiovascular/electrophysiology-ecg]]'s imaging cousins). **Isovolumetric relaxation:** aortic valve closure (**S2** — the aortic component before the pulmonic, the pulmonic splitting physiologically on inspiration, the same physics that makes wide and fixed splitting diagnostic in atrial septal defect), tension collapses below atrial pressure, the AV valves open and the cycle restarts — the relaxation itself an **ATP-driven, Lusitropic (SERCA-mediated) process**, impaired early in ischaemia and hypertrophy (the stiff ventricle of [[physiology/muscle]]'s relaxation exercise, the S4 heart, the diastolic failure of the hypertensive elder).
+The heart has four chambers. The two **atria** are thin-walled receiving chambers; the two **ventricles** are the pumps. Four valves keep the flow going one way:
+
+- the **tricuspid valve** between right atrium and right ventricle, and the **mitral valve** between left atrium and left ventricle. These are the **atrioventricular (AV) valves**. Their leaflets are tethered by **chordae tendineae** to **papillary muscles** in the ventricular wall, which stop the leaflets turning inside out when the ventricle contracts;
+- the **pulmonary valve** at the outlet of the right ventricle and the **aortic valve** at the outlet of the left ventricle. These are the **semilunar valves**. They have three cusps each and no chordae.
+
+Valves are passive. They open when the pressure behind them exceeds the pressure in front, and close when the gradient reverses. Every valve event in the cycle can therefore be predicted from the pressures on either side.
+
+The left ventricular wall is about three times thicker than the right because it generates about five times the pressure. Both ventricles pump the same volume per minute over any sustained period; if they did not, blood would accumulate in the lungs or in the body within minutes. The myocardium itself is supplied by the coronary arteries, which fill mainly in diastole, when the contracting muscle is not squeezing them. This detail matters later: a fast heart rate shortens diastole and so shortens the time available for coronary flow ([[cardiovascular/coronary-artery-disease]]). The gross anatomy is in [[anatomy/thorax]] and the cellular basis of contraction in [[physiology/muscle]].
+
+Typical resting pressures in a healthy adult, in mmHg, are worth learning because abnormal values are recognised against them:
+
+| Site | Systolic / diastolic (mean) |
+|---|---|
+| Right atrium | mean 0–6 |
+| Right ventricle | 15–30 / 0–6 |
+| Pulmonary artery | 15–30 / 6–15 (mean 10–20) |
+| Pulmonary capillary wedge (≈ left atrium) | mean 6–12 |
+| Left ventricle | 100–140 / 3–12 |
+| Aorta | 100–140 / 60–90 (mean 70–105) |
+
+## The phases of the cycle {#sec-phases}
+
+::: definition The cardiac cycle {#def-phases}
+The **cardiac cycle** is the sequence of events in one heartbeat. **Systole** is the period of ventricular contraction; **diastole** is the period of ventricular relaxation and filling. For the left ventricle it is divided into four phases:
+
+1. **Isovolumetric contraction.** The ventricle starts to contract. Its pressure rises above atrial pressure and the mitral valve closes, but the pressure is still below aortic pressure, so the aortic valve stays shut. With both valves closed, volume does not change.
+2. **Ejection.** When ventricular pressure exceeds aortic pressure (about 80 mmHg), the aortic valve opens and blood is ejected, rapidly at first and then more slowly.
+3. **Isovolumetric relaxation.** The ventricle relaxes, its pressure falls below aortic pressure, and the aortic valve closes. Both valves are again closed and volume is constant.
+4. **Filling.** When ventricular pressure falls below atrial pressure, the mitral valve opens. Filling is rapid at first (**early filling**), slows in mid-diastole (**diastasis**) and ends with a final boost from **atrial contraction**.
+
+The volume in the ventricle at the end of filling is the **end-diastolic volume (EDV)**; the volume left after ejection is the **end-systolic volume (ESV)**. The **stroke volume** is $SV = EDV - ESV$ and the **ejection fraction** is $EF = SV/EDV$.
 :::
 
-::: definition Sounds, murmurs and the JVP {#def-sounds}
-**S1** (mitral and tricuspid closure), **S2** (aortic then pulmonic; physiologically split on inspiration by the delayed pulmonic closure — fixed splitting is the atrial septal defect's equalised volumes, paradoxical splitting the left bundle-branch or severe aortic stenosis delay), **S3** (the rapid-filling deceleration sound in a dilated, compliant ventricle — normal in the young and pregnancy, in the elder a marker of systolic failure and high filling pressure), **S4** (atrial contraction against a stiff ventricle — hypertension, hypertrophy, ischaemia; never normal). **Murmurs** are fluid mechanics made audible: laminar flow is silent, turbulent flow sounds (Reynolds' velocity, diameter and viscosity — the same threshold logic as the airway of [[respiratory/mechanics-breathing]] and anaemia's flow murmurs); **systolic murmurs** cross the semilunar valves in ejection (aortic stenosis's ejection-crescendo, mitral regurgitation's plateau) and **diastolic murmurs** are always pathological (aortic regurgitation's early decrescendo with the collapsing pulse, mitral stenosis's low-pitched rumble with an opening snap — the lesion that makes the chapter's rhythm questions mortal). The **jugular venous pulse** is the right atrium's manometry seen at the neck: the **a wave** (atrial contraction — giant "cannon" a waves when the atrium contracts against a closed tricuspid in complete heart block and ventricular tachycardia, absent in fibrillation), the **c** (bulging, tricuspid closure), the **v** (filling against the closed valve — the giant cv of tricuspid regurgitation), and the **x and y descents** (systolic descent, diastolic collapse — the y descent's loss the tamponade's and its prominence the constrictive pericarditis's).
-:::
+In a healthy adult at rest, EDV is about 120 mL, ESV about 50 mL, so stroke volume is about 70 mL and ejection fraction about 58%. A normal left ventricular ejection fraction is usually quoted as 50% or more on echocardiography; values of 40% or less define heart failure with reduced ejection fraction ([[cardiovascular/heart-failure]]).
 
-## Pressure–volume analysis: the loop that diagnoses
+The right heart goes through the same four phases at lower pressure, slightly out of step with the left. Atrial contraction contributes roughly a fifth of ventricular filling at rest in a young person, more in older people whose ventricles relax slowly and fill less in early diastole. That is why the onset of atrial fibrillation, which abolishes coordinated atrial contraction, can tip an older person with a stiff ventricle into breathlessness.
 
-::: theorem The loop and its manipulations {#thm-pvloop}
-The left ventricle's beat plots as a cycle on pressure–volume coordinates: **end-diastolic point on the passive filling curve (EDPVR — compliance)**, vertical climb (isovolumetric contraction to the **end-systolic pressure–volume relation, ESPVR — the contractility line whose slope Emax is the load-independent inotropy index**), ejection down the top, and relaxation back along ESPVR to the filling curve. From it: **stroke volume = EDV − ESV** (the area is **stroke work = pressure × volume**, the rectangle beneath it the **potential energy**, and their sum — the **pressure–volume area — correlates with myocardial oxygen consumption**: the physiotherapist-free, anaesthesiologist's rationale for reducing wall tension — Laplace's tension = pressure × radius / 2 × wall thickness — as the treatment of angina, and for why the dilated, thinned ventricle costs more oxygen per unit of output). **Raise preload** (fluid) → the loop widens rightward along the Starling curve; **raise afterload** (phenylephrine, aortic stenosis) → the loop narrows, taller, ESV grows; **raise contractility** (exercise, dobutamine, sympathetic drive) → the ESPVR steepens, ESV falls, the loop widens at unchanged filling — ejection fraction rises because **end-systolic volume moves down the ESPVR**, the precise sense in which ejection fraction is a contractility readout contaminated by loading; **reduce compliance** (hypertrophy, oedema, tamponade's external constraint) → the EDPVR shifts up and left, small volume at high pressure (diastolic heart failure — the loop narrow and tall on a steep filling curve). Tamponade's loop and constrictive pericarditis's — ventricular interdependence, the septum's to-and-fro (the echo's septal bounce) — are the same diagram with the pericardium's constraint written onto the EDPVR, the physical basis of pulsus paradoxus below.
-:::
+Timing changes with heart rate. At 75 beats/min the cycle lasts 0.8 s, of which systole takes about 0.3 s and diastole about 0.5 s. As the rate rises, diastole shortens much more than systole. At 150 beats/min the cycle lasts 0.4 s and diastole may be only about 0.15 s. A ventricle that relies on slow filling, or coronary arteries with a fixed narrowing, suffer first.
 
-::: definition Starling, Guyton and the coupled circulation {#def-guyton}
-**Frank–Starling** — the heart pumps what returns, via length-dependent activation (the [[physiology/muscle]] length–tension mechanism plus enhanced calcium sensitivity) — is the ventricle's half of the handshake; **Guyton's venous-return curve** is the vascular half: flow returns down the gradient from **mean systemic filling pressure** (the stressed-volume elastic recoil, ~+7 mmHg) to right atrial pressure, so **venous return falls as right atrial pressure rises and rises with stressed volume and with sympathetic venoconstriction (which raises the filling pressure)**. The steady state is the **intersection of the two curves** — cardiac output and right atrial pressure settle together — and every clinical manoeuvre moves one curve or the other: **fluid, head-down tilt, leg raising and venoconstriction raise the filling pressure and move along the venous-return curve; cardiac stimulation lowers right atrial pressure at the intersection; haemorrhage collapses the stressed volume (the flat, low curve of hypovolaemic shock where the heart races against an empty tube); and the failing heart is the flat Starling line whose output cannot rise with filling — the reason its therapy unloads (diuretics, vasodilators, the renin–angiotensin and neprilysin blockade of [[cardiovascular/heart-failure]]) rather than stimulates.** The skeletal-muscle and respiratory pumps ([[physiology/integrative-physiology]]) are the two auxiliary curves: the venous valves and the contraction squeeze returning blood upward, and inspiration's negative intrathoracic pressure that both lowers right atrial pressure and squeezes pulmonary veins — the physiology behind active leg movements in spinal-anaesthesia hypotension and the Valsalva's four phases of [[physiology/autonomic-nervous-system]].
-:::
+::: example Stroke volume and ejection fraction {#ex-ef}
+An echocardiogram in a 62-year-old woman measures a left ventricular end-diastolic volume of 150 mL and an end-systolic volume of 90 mL. Her heart rate is 80 beats/min. Calculate her stroke volume, ejection fraction and cardiac output, and comment.
 
-::: example The triad at the bedside {#ex-tamponade}
-A lymphoma patient on chemotherapy becomes breathless and tachycardic; jugular veins are full, the arterial pressure falls 18 mmHg on inspiration, heart sounds are muffled, and the pulse is thin and rapid.
 ::: solution
-**Beck's triad and pulsus paradoxus: cardiac tamponade** — pericardial fluid raises the extracardiac pressure until all four chambers run at a common elevated diastolic pressure (the equalisation the catheter shows, the y-descent loss the JVP shows: the heart cannot fill because its external constraint, not its tone, sets the EDPVR of [[#thm-pvloop]]). The physiology of each sign: **tachycardia** (the only remaining way to hold output when stroke volume is capped — the tamponade patient collapses on beta-blockade and on induction's vasodilatation); **raised JVP with absent y descent** (filling happens only in early diastole before the pericardial pressure re-catches it — contrast constrictive pericarditis's prominent y and plateau); **pulsus paradoxus** (the exaggerated >10 mmHg inspiratory fall: inspiration's increased venous return bows the interventricular septum leftward inside the fixed total volume of a fluid-filled pericardium — ventricular interdependence — dropping left ventricular stroke volume exactly as left ventricular filling falls from the pooling pulmonary bed), and **muffled, distant heart sounds** (the fluid's acoustic insulation). Management is the loop's physics reversed: **volume to raise filling pressure while preparing drainage (a temporising bridge — the intersection curve argument of [[#def-guyton]] in real time), and urgent pericardiocentesis or window — echo- or fluoroscopy-guided, with the catheter left draining and the cause (malignant, uraemic, tuberculous, post-infarct, iatrogenic) pursued afterwards**; the pre-tap danger list — do not positive-pressure-ventilate (raising intrathoracic pressure collapses the filling further), do not beta-block, do not wait for the arrest whose rhythm is the PEA of an empty chamber ([[cardiovascular/arrhythmias]]'s reversible-cause box, the H's and T's with tamponade as one of the T's).
+Stroke volume is $SV = 150 - 90 = 60$ mL.
+
+Ejection fraction is $EF = 60/150 = 0.40$, that is 40%.
+
+Cardiac output is $CO = HR \times SV = 80 \times 60 = 4800$ mL/min, or 4.8 L/min.
+
+Her cardiac output is within the normal resting range, but it is maintained by a dilated ventricle: the EDV is larger than usual and the ejection fraction is reduced. An ejection fraction of 40% falls in the reduced range used for heart failure. This illustrates a general point. A dilated, weakly contracting ventricle can deliver a normal stroke volume at rest by working at a larger volume, so a normal cardiac output does not mean a normal heart.
 :::
 :::
 
-::: example The breathless dancer {#ex-mitral}
-A 34-year-old refugee, breathless on climbing one flight and newly palpitating, has a tapping apex, a loud S1, an opening snap and a low apical diastolic rumble; the ECG shows absent P waves and an irregularly irregular rhythm.
+## Heart sounds, the venous pulse and the arterial pulse
+
+The same events can be heard and seen at the bedside. Learning the cycle well is what turns auscultation from guesswork into reasoning.
+
+::: definition Heart sounds {#def-sounds}
+- **The first heart sound (S1)** is produced by closure of the mitral and tricuspid valves at the start of ventricular systole. It coincides with the carotid upstroke.
+- **The second heart sound (S2)** is produced by closure of the aortic (A2) and pulmonary (P2) valves at the end of ejection. A2 normally comes before P2.
+- **Physiological splitting of S2.** On inspiration, the fall in intrathoracic pressure increases venous return to the right heart and lengthens right ventricular ejection, so P2 is delayed and the split widens. On expiration the two components come together.
+- **A third heart sound (S3)** is a low-pitched sound in early diastole, during rapid filling. It is normal in children, young adults and pregnancy; after about 40 it usually indicates a dilated ventricle with high filling pressure, as in heart failure.
+- **A fourth heart sound (S4)** is heard just before S1, when the atrium contracts into a stiff ventricle (for example with left ventricular hypertrophy). It cannot occur in atrial fibrillation, because there is no atrial contraction.
+- **Murmurs** are produced by turbulent flow. Their timing (systolic or diastolic), site, radiation and response to manoeuvres point to the lesion ([[cardiovascular/valve-congenital-disease]]).
+:::
+
+Abnormal splitting of S2 is a classic test of reasoning from the cycle. A **wide split** that still varies with breathing occurs when right ventricular emptying is delayed, as in right bundle branch block. A **fixed split** that does not vary with respiration is typical of an atrial septal defect, because the shunt evens out the respiratory changes in right-heart filling. A **reversed (paradoxical) split**, which narrows on inspiration, occurs when aortic closure is delayed so that A2 comes after P2: left bundle branch block and severe aortic stenosis are the usual causes.
+
+The **jugular venous pressure (JVP)** is the height of the pulsation in the internal jugular vein, measured vertically from the sternal angle with the patient at 45°. The right atrium lies about 5 cm below the sternal angle, so a JVP of 3 cm corresponds to a right atrial pressure of about 8 cm of water. The internal jugular vein has no valve between it and the right atrium, so it shows right atrial pressure changes directly. The waveform has named parts:
+
+- the **a wave**: right atrial contraction, just before S1;
+- the **c wave**: a small bump as the tricuspid valve bulges back at the start of ventricular contraction (rarely seen at the bedside);
+- the **x descent**: atrial relaxation and the downward pull of the tricuspid ring during ventricular ejection;
+- the **v wave**: atrial filling against a closed tricuspid valve, peaking at the end of systole;
+- the **y descent**: the fall in pressure when the tricuspid valve opens and the atrium empties into the ventricle.
+
+Each part has a classic abnormality. The a wave disappears in atrial fibrillation. **Cannon a waves** appear when the atrium contracts against a closed tricuspid valve, irregularly in complete heart block and regularly in some junctional and ventricular rhythms. **Large v waves** that merge into one systolic wave are the sign of tricuspid regurgitation. A **steep y descent** suggests constrictive pericarditis, while in cardiac tamponade the y descent is lost. A JVP that rises on inspiration instead of falling (**Kussmaul's sign**) suggests constriction or a right ventricle that cannot accept extra volume.
+
+The **arterial pulse** reflects left ventricular ejection and the stiffness of the arteries. A **slow-rising, low-volume pulse** suggests aortic stenosis. A **collapsing pulse** with a wide pulse pressure suggests aortic regurgitation or another high-output state. **Pulsus alternans**, alternate strong and weak beats, is a sign of severe left ventricular dysfunction. **Pulsus paradoxus** is an exaggeration of the normal inspiratory fall in systolic pressure to more than 10 mmHg, classically in tamponade and severe acute asthma.
+
+::: example Hypotension with a raised venous pressure {#ex-tamponade}
+A 54-year-old man is brought back to the ward six hours after cardiac surgery. His blood pressure is 82/60 mmHg, heart rate 128 beats/min, JVP raised to the angle of the jaw, and the heart sounds are quiet. During inspiration his systolic pressure falls from 82 to 64 mmHg. Explain each finding in terms of the cardiac cycle, and state the likely diagnosis.
+
 ::: solution
-**Rheumatic mitral stenosis that has just lost its atrial kick to atrial fibrillation** — the cycle physiology in one admission. The stenotic valve makes filling a **diastolic gradient problem** ([[#def-sounds]]: the loud S1 from the still-mobile billowing leaflet, the opening snap from its abrupt halting, the rumble from the turbulent jet — Reynolds again); cardiac output across the valve needs a **diastolic time and an atrial pressure head**, both of which atrial fibrillation attacks: loss of organized contraction (the kick worth 20% of filling here, more than the normal 15–30% because the ventricle is chronically underfilled and dependent) and, worse, the **rate** — tachycardia shortens diastole, the gradient balloons, left atrial pressure soars into the pulmonary capillaries (the flash pulmonary oedema of the stenotic patient who develops fever, anaemia or pregnancy), and the enlarged, stagnant left atrium breeds the thrombus whose embolus makes mitral stenosis a stroke disease ([[nervous-system/stroke]]'s young-patient chapter). The management is the same physics: **rate control first (beta-blocker — lengthen diastole), then the mechanical solutions the chapter has been describing all along — percutaneous balloon commissurotomy for the favourable (pliable, non-calcified, non-regurgitant, non-thrombus) valve, surgery otherwise — and anticoagulation driven by rhythm and atrial size, the warfarin of rheumatic disease still unbeaten by the DOACs' trials ([[blood/thrombosis-anticoagulation]]'s excluded niche)**. The public-health footnote: the world's youngest heart-failure disease remains rheumatic, and its first presentation is often exactly this — the murmur nobody heard until the arrhythmia made it symptomatic ([[cardiovascular/valve-congenital-disease]]).
+**The likely diagnosis is cardiac tamponade** from blood collecting in the pericardium after surgery.
+
+- **Raised JVP.** Fluid in the pericardial space raises the pressure around the heart. The right atrium and ventricle can fill only when venous pressure rises above that external pressure, so the venous pressure climbs.
+- **Hypotension and tachycardia.** Because the ventricles cannot fill, end-diastolic volume and stroke volume fall. The baroreflex raises the heart rate to defend cardiac output, but filling is the limit.
+- **Pulsus paradoxus (a fall of 18 mmHg).** The pericardium fixes the total volume of the heart. On inspiration, venous return to the right ventricle increases; the septum moves towards the left ventricle, which then fills less, so left ventricular stroke volume and systolic pressure fall more than usual.
+- **Quiet heart sounds.** The fluid damps their transmission.
+
+The combination of hypotension, raised venous pressure and quiet heart sounds is **Beck's triad**. Echocardiography confirms the effusion and its effect on filling; treatment is drainage, which after cardiac surgery usually means return to theatre. The example shows that a "low blood pressure" can be a filling problem rather than a pump or a volume problem, and that the JVP distinguishes them.
 :::
 :::
+
+## Cardiac output and its four determinants
+
+::: definition Cardiac output and its determinants {#def-output}
+**Cardiac output** is the volume of blood pumped by one ventricle per minute:
+$$
+CO = HR \times SV
+$$ {#eq-co}
+At rest it is about 5 L/min in an adult. Because body size varies, it is often divided by body surface area to give the **cardiac index** (normal about 2.5–4.0 L/min/m²). Stroke volume depends on three factors and cardiac output on four:
+
+- **Preload**: the stretch of the ventricular muscle before contraction, best represented by end-diastolic volume.
+- **Afterload**: the load the ventricle must overcome to eject, determined mainly by arterial pressure and resistance, the stiffness of the aorta and the size of the ventricle.
+- **Contractility (inotropy)**: the intrinsic strength of contraction at a given preload and afterload.
+- **Heart rate (chronotropy)**.
+:::
+
+These factors are not independent. Increasing heart rate shortens diastole and can reduce preload. Increasing contractility empties the ventricle more and lowers end-systolic volume. Raising afterload reduces stroke volume, which leaves more blood behind and raises the next end-diastolic volume, so a healthy ventricle partly corrects itself. That self-correction is the Frank–Starling mechanism.
+
+::: theorem The Frank–Starling principle {#thm-starling}
+Within the physiological range, the greater the end-diastolic volume of a ventricle, the greater the stroke volume it ejects. A healthy heart therefore pumps out whatever blood returns to it, and the two ventricles stay matched beat by beat.
+:::
+
+::: proof
+The mechanism lies in the sarcomere. Stretching a cardiac muscle fibre before it contracts increases the force it produces, for two reasons.
+
+First, **filament overlap**. In the normal working range cardiac sarcomeres sit below their optimal length of about 2.2 µm. Stretch brings them closer to the length at which actin and myosin overlap best.
+
+Second, and more important in cardiac muscle, **length-dependent activation**. Stretch increases the sensitivity of troponin C to calcium and brings myosin heads closer to actin, so the same calcium transient produces more force. Titin, the giant elastic protein that runs through the sarcomere, contributes to this effect and also sets the passive stiffness of the fibre.
+
+At the level of the whole heart, a larger end-diastolic volume means longer fibres, more force and a larger stroke volume. If the right ventricle briefly pumps more than the left, left ventricular filling rises on the next beats and its output increases until the two are equal again. At very high filling pressures the curve flattens: the pericardium and the stiffness of the muscle limit further stretch, and in a failing heart the curve is lower and flatter throughout.
+:::
+
+Contractility shifts the whole Frank–Starling curve. Sympathetic stimulation through β1-adrenoceptors raises intracellular calcium and speeds relaxation; the curve moves up and to the left, so the same filling produces a larger stroke volume. Myocardial infarction, cardiomyopathy and negatively inotropic drugs such as verapamil move it down. In the figure, change the contractility factor to see how a weaker heart needs a much higher filling volume to produce the same stroke volume.
 
 ::: widget plot
-f: 3.5+9.5*(1-exp(-x/4.2))
-x: 0, 14
-y: 0, 15
-labels: \text{right atrial pressure (mmHg)},\ \text{venous return (L/min)}
-caption: The Guyton venous-return curve: flow rises as right atrial pressure falls toward the plateau where the systemic filling pressure (here shifted up by ~10 mmHg of sympathetic tone and normal stressed volume) meets cardiac emptying; the heart's own Starling function plots the mirror curve, and their intersection is the operating point. Haemorrhage drops the plateau (less filling pressure), fluid therapy slides the operating point rightward, and the failing ventricle's flat cardiac curve is why fluid helps the empty heart and floods the sick one.
+f: c*95*(1-exp(-(x-50)/70))
+x: 50, 260
+y: 0, 130
+sliders: c=1:0.4:1.5:0.05
+hlines: 70
+labels: \text{stroke volume (mL)}
+caption: A simplified Frank–Starling curve: stroke volume (mL) against left ventricular end-diastolic volume (mL). The slider $c$ scales contractility (1 = normal; below 1, a failing ventricle; above 1, sympathetic stimulation). The horizontal line marks a resting stroke volume of 70 mL. This is a teaching model, not a measured curve.
 :::
 
-## The fetal circulation and its transition
-
-::: definition Two circuits in parallel, then one in series {#def-fetal}
-The fetal circulation is built for a lung that does not work: **placarial gas exchange (the low-resistance placenta taking ~40% of combined ventricular output), right ventricle dominant (65% of output), parallel systemic circuits mixed by three shunts** — **ductus venosus** (oxygenated umbilical venous blood streaming across the foramen ovale to the left heart and brain — the **oxygen saturation of the right coronary and cerebral vessels exceeding the lower body's** — the upper-body-first streaming that spares the fetal brain and heart, **foramen ovale** (the right-to-left atrial shunt) and **ductus arteriosus** (the pulmonary-artery-to-aorta relief valve for the right ventricle's output against the ~35 mmHg fetal pulmonary vascular resistance). At birth the sequence is mechanical then molecular: **lung expansion drops pulmonary vascular resistance by orders of magnitude with the first breaths (and oxygen is the constrictor of the ductus and the relaxant of pulmonary vessels — the reverse of the adult's hypoxic pulmonary vasoconstriction, [[respiratory/gas-exchange]]'s vessel behaving the other way because it is behaving the fetal way)**, pulmonary blood flow soars, left atrial pressure exceeds right and closes the foramen ovale functionally (the probe-patent remainder in a quarter of adults), the **ductus constricts with rising PaO₂ and falling circulating prostaglandin E₂ (the source — the placenta and the ductus itself — removed with the cord)**, and the shunts become the ligaments (ligamentum arteriosum, venosum, the umbilical arteries' medial ligaments — [[anatomy/embryology]]'s adult vestiges). Failures of the transition are paediatric emergencies with adult consequences: **patent ductus arteriosus** (the machinery-type murmur; the premature ductus's prostaglandin sensitivity — indometacin/ibuprofen closure; **maternal indometacin closes the fetal ductus — the third-trimester NSAID rule**), **atrial septal defect's fixed-split S2 and the adult pulmonary-hypertension question (Eisenmenger's reversal — the differential cyanosis of the patent ductus: the lower limbs cyanotic while the hands are pink, the shunt anatomy writing the saturation pattern)**, **coarctation** (the duct-dependent lower-body circulation of the neonate — prostaglandin E₁ to reopen the duct and the rib-notching collaterals of the older child's repaired variant), and **transposition and the parallel-circulation lesions where the shunts are the only lifeline** (the prostaglandin-maintained ductus and the balloon atrial septostomy as the physiology's rescue operation) — the subject of [[cardiovascular/valve-congenital-disease]] and [[paediatrics/newborn]].
+::: theorem The Fick principle {#thm-fick}
+The oxygen taken up by the body per minute equals the blood flow through the lungs multiplied by the difference in oxygen content between arterial and mixed venous blood. Rearranged:
+$$
+CO = \frac{\dot V_{O_2}}{C_aO_2 - C_{\bar v}O_2}
+$$ {#eq-fick}
+where $\dot V_{O_2}$ is oxygen consumption (mL/min), and $C_aO_2$ and $C_{\bar v}O_2$ are the oxygen contents of arterial and mixed venous (pulmonary artery) blood (mL O₂ per litre of blood).
 :::
 
-::: example The murmur on the school-entry check {#ex-murmur}
-A 7-year-old is referred for a murmur: a grade 3/6, short, early-systolic, musical, best heard at the left lower sternal edge, softer lying down and standing, with no symptoms and a normal second heart sound.
+Adolf Fick stated this in 1870 as a conservation argument: oxygen entering the blood in the lungs must equal oxygen leaving the lungs in the blood minus oxygen arriving. It remains the reference method of measuring cardiac output, and its rearrangement explains a common clinical observation. If cardiac output falls while oxygen consumption is unchanged, tissues extract more oxygen and the mixed venous oxygen content falls. A low mixed venous (or central venous) oxygen saturation is therefore a marker of inadequate cardiac output in shock ([[emergency-critical-care/shock-fluids]]).
+
+::: example Cardiac output by the Fick method {#ex-fick}
+During cardiac catheterisation a 45-year-old man has an oxygen consumption of 250 mL/min. His arterial oxygen content is 200 mL/L and his pulmonary artery (mixed venous) oxygen content is 150 mL/L. His heart rate is 70 beats/min and his body surface area is 2.0 m². Calculate his cardiac output, stroke volume and cardiac index.
+
 ::: solution
-The description is **Still's innocent vibratory murmur** — the school-age classic (the musical, twanging, low-sternal, posture-sensitive, short early-peaking systolic murmur of laminar turbulence in the right ventricular outflow tract, with the normal S2 split and everything else absent: no click, no radiation, no thrill, no symptoms). The teaching is the **positive checklist of pathology the parent waits to hear**: diastolic murmurs (always structural), holosystolic and late-systolic murmurs, a harsh or radiating quality, the click of the bicuspid valve and its ejection sound, a wide or fixed split S2, the parasternal heave, the cyanosed or breathless child, the failure to thrive, and the family history of sudden death (hypertrophic cardiomyopathy — the murmur that **increases** with standing and Valsalva, the dynamic outflow obstruction's loading-dependence the mirror of [[#thm-pvloop]]'s afterload lesson). The innocent-versus-pathological discrimination is the chapter's physical examination distilled: **the murmur's timing, quality, position, behaviour with posture and its company — a full sentence about flow, orifice and chamber, read off the same pressure–volume and Reynolds logic as the catheter laboratory's numbers**; and the modern era's confirmation is the echocardiogram whose Doppler velocities convert, by the modified Bernoulli relation (**pressure gradient ≈ 4 × velocity²**) — the very equation of [[cardiovascular/vascular-disease]]'s stenosis physics — the murmur's note into the stenosis's millimetres of mercury.
+The arteriovenous oxygen difference is $200 - 150 = 50$ mL O₂ per litre of blood.
+
+By the Fick principle,
+$$
+CO = \frac{250 \text{ mL/min}}{50 \text{ mL/L}} = 5.0 \text{ L/min}.
+$$
+
+Stroke volume is $5000/70 \approx 71$ mL.
+
+Cardiac index is $5.0/2.0 = 2.5$ L/min/m², at the lower end of normal.
+
+Notice the units: oxygen content in mL per litre of blood, consumption in mL per minute, so the answer comes out in litres per minute. If contents are given in mL per 100 mL (mL/dL), multiply by 10 first.
 :::
 :::
-::: example The fistula that fed the heart too well {#ex-fistula}
-Six months after a dialysis access operation a 58-year-old develops ankle oedema, exertional breathlessness and a high-pulse-pressure circulation; the fistula thrill is bounding, cardiac output at rest is 9 L/min and the ejection fraction 68%.
+
+## Venous return and the coupled circulation
+
+The heart cannot pump out more blood than returns to it. Venous return is driven by the difference between the **mean systemic filling pressure** (the pressure that would exist throughout the circulation if the heart stopped and pressures equalised, about 7 mmHg) and right atrial pressure, divided by the resistance to venous return:
+$$
+\text{venous return} = \frac{P_{msf} - P_{RA}}{R_{VR}}.
+$$
+Arthur Guyton showed in the 1950s that plotting this venous return curve on the same axes as the cardiac function curve gives the operating point of the circulation: the right atrial pressure at which what returns equals what is pumped. Volume loading or venoconstriction raises mean systemic filling pressure and moves the operating point up; haemorrhage moves it down. A stronger heart lowers right atrial pressure for the same flow; a failing heart raises it.
+
+This coupled picture explains why right atrial pressure (central venous pressure) on its own is a poor guide to whether a patient needs fluid. A high value may mean too much volume or a heart that cannot pump what it receives; a low value may still be adequate in a healthy heart.
+
+::: warning Ejection fraction is not contractility, and venous pressure is not volume
+Two shortcuts cause errors. First, ejection fraction depends on preload and afterload as well as contractility. In severe mitral regurgitation the ventricle ejects part of its volume backwards into the low-pressure atrium, so the ejection fraction can look normal while the muscle is already failing; in a patient with very high afterload, a healthy ventricle may show a reduced ejection fraction that recovers when the pressure is controlled. Second, a central venous pressure tells you the pressure in the right atrium, not the volume of blood in the body or whether cardiac output will rise with fluid. Interpret both numbers in the context of the whole patient.
+:::
+
+## The pressure–volume loop {#sec-pvloop}
+
+Plotting left ventricular pressure against volume through one beat gives a closed loop that turns anticlockwise. The four corners are the four valve events: mitral closure at the bottom right (end-diastole), aortic opening at the top right, aortic closure at the top left (end-systole), and mitral opening at the bottom left.
+
+::: theorem What the pressure–volume loop shows {#thm-pvloop}
+- The **width** of the loop is the stroke volume; the vertical right edge is isovolumetric contraction and the left edge isovolumetric relaxation.
+- The **area** inside the loop is the external work done by the ventricle in one beat (stroke work).
+- The lower boundary follows the **end-diastolic pressure–volume relationship (EDPVR)**, a curve describing the passive stiffness of the relaxed ventricle. A stiffer ventricle has a steeper curve, so filling raises its pressure more.
+- The upper-left corners of loops recorded at different loads fall on a nearly straight line, the **end-systolic pressure–volume relationship (ESPVR)**. Its slope, the **end-systolic elastance**, is a load-independent index of contractility.
+:::
+
+Each of the determinants of stroke volume moves the loop in a predictable way:
+
+- **More preload** (a fluid bolus): the loop widens to the right; end-diastolic volume rises, stroke volume rises, end-systolic volume barely changes.
+- **More afterload** (a sudden rise in arterial pressure): the loop becomes taller and narrower; end-systolic volume rises, stroke volume falls.
+- **More contractility** (an inotrope or sympathetic drive): the ESPVR becomes steeper; the ventricle empties further and stroke volume rises.
+- **Diastolic dysfunction** (a stiff ventricle, as in long-standing hypertension): the EDPVR is steeper; normal volumes are reached only at high filling pressure, which is transmitted back to the lungs.
+
+::: example Reading a change in the loop {#ex-pvloop}
+A 70-year-old woman with long-standing hypertension has two loops recorded. In the second, the end-diastolic volume is unchanged, the end-systolic volume has risen from 50 to 70 mL, and the peak systolic pressure has risen from 140 to 190 mmHg. Which determinant has changed, and what has happened to stroke volume?
+
 ::: solution
-**High-output physiology from the arteriovenous fistula** — Guyton's curve moved, not the Starling line: the low-resistance shunt **drops systemic resistance and drains arterial pressure into the veins, raising mean systemic filling pressure and venous return** ([[#def-guyton]]: flow returns because the tap is open), so cardiac output rises to match — the wide pulse pressure (the run-off diastole), the hyperdynamic ventricle (the EF of 68% is a normal heart doing extra shifts), and, when the shunt flow exceeds what compensation tolerates (large fistulae, small hearts, anaemia or valve disease in reserve), **the congestion of decompensated high-output failure** (the oedema, the raised filling pressures on a still-squeezing ventricle). The differential list of high-output states is the same curve-shift in different costumes: **anaemia, thyrotoxicosis, pregnancy, beriberi (the wet form's arteriolar paralysis — [[cell-biochemistry/nutrition]]'s thiamine), Paget's disease, and the multiple myeloma arteriovenous shunts of [[blood/lymphoma-myeloma]]**. The management asks the flow: **measure the access flow and the cardiac output together; if the fistula is the lesion — banding, revision or (last) ligation, with the heart's remodelling expected afterwards; if not, treat the driver (the thyroid, the haemoglobin)** — and the diagnostic habit this case exists to teach: **a heart failure with a good ejection fraction is a loading problem until the curves prove otherwise** — exactly the loop-reading of [[#thm-pvloop]] brought to the dialysis clinic.
+End-diastolic volume is unchanged, so preload is the same. Peak pressure has risen and the ventricle empties less, which is the pattern of **increased afterload**. If contractility had fallen, the ventricle would also empty less, but peak pressure would fall rather than rise.
+
+If end-diastolic volume is, say, 120 mL, stroke volume has fallen from $120 - 50 = 70$ mL to $120 - 70 = 50$ mL. In a healthy heart the extra end-systolic volume would raise the next end-diastolic volume and partly restore stroke volume through the Frank–Starling mechanism. In a failing heart the Starling curve is flat, so the fall in stroke volume persists. This is why lowering afterload with vasodilators can increase cardiac output in heart failure.
 :::
 :::
+
 ::: quiz
-The second heart sound's aortic component normally precedes the pulmonic because:
-- [ ] The aortic valve has three cusps and the pulmonic only two
-- [x] Left ventricular ejection ends earlier; inspiration delays right ventricular ejection and splits them further
-- [ ] Pulmonic pressure is lower, so its valve closes more slowly
-- [ ] The bundle of His activates the right ventricle last
+Which event produces the first heart sound?
+- [ ] Opening of the aortic and pulmonary valves
+- [x] Closure of the mitral and tricuspid valves
+- [ ] Rapid ventricular filling in early diastole
+- [ ] Atrial contraction into a stiff ventricle
 ::: solution
-A2 precedes P2 because the systemic ventricle finishes ejection first; **inspiration** delays P2 (more venous return prolongs right ventricular ejection, and the compliant flooded lung lowers afterload dynamics — the reciprocal mechanics of [[#def-sounds]]) while hastening A2 slightly — the healthy two-component S2 on inspiration only. A **fixed** split (no respiratory variation) means the two sides are volume-decoupled by an atrial septal defect's shared compliance; a **paradoxically** split S2 (reversed and widening on expiration) means delayed left ventricular ejection — left bundle-branch block or severe aortic stenosis ([[#ex-murmur]]'s dynamic counterpart): the clinical auscultation of timing is the surface sign of the cycle's mechanics, and every anomaly is a loading or conduction lesion read on the clock of valve closures.
+S1 is produced by closure of the AV valves (mitral and tricuspid) at the start of ventricular systole, when ventricular pressure rises above atrial pressure. Opening of the semilunar valves is silent in a normal heart. Rapid filling produces S3, and atrial contraction into a stiff ventricle produces S4.
+:::
+:::
+
+## Myocardial oxygen demand
+
+The heart extracts about 70% of the oxygen from coronary blood even at rest, much more than most organs. It therefore has little reserve of extraction and must increase coronary flow when it works harder. The main determinants of myocardial oxygen demand are heart rate, wall tension and contractility. Wall tension follows the **law of Laplace**: for a sphere, tension is proportional to pressure times radius divided by wall thickness. A dilated ventricle needs more tension to generate the same pressure, so it uses more oxygen per beat; a hypertrophied wall spreads the load over more muscle. Heart rate is especially costly because it both increases demand and shortens diastole, when coronary flow occurs. These ideas return in angina, where beta-blockers relieve symptoms mainly by slowing the heart ([[cardiovascular/coronary-artery-disease]]), and in heart failure, where the dilated ventricle is mechanically inefficient ([[cardiovascular/heart-failure]]).
+
+::: example The fit young man with a slow pulse {#ex-athlete}
+A 24-year-old rower has a resting heart rate of 44 beats/min and a cardiac output measured at 5.3 L/min. During maximal exercise his heart rate reaches 190 beats/min and his stroke volume is 160 mL. Calculate his resting stroke volume and his maximal cardiac output, and explain how endurance training produces this pattern.
+
+::: solution
+Resting stroke volume is $5300/44 \approx 120$ mL (120.5 mL to one decimal place).
+
+Maximal cardiac output is $190 \times 160 = 30\,400$ mL/min, about 30 L/min.
+
+Endurance training increases blood volume and produces a larger, compliant left ventricle with a large end-diastolic volume (physiological, eccentric remodelling). A larger stroke volume delivers the same resting cardiac output at a lower heart rate, helped by increased vagal tone. During exercise the large stroke volume is maintained even at high rates, so maximal cardiac output can be several times higher than in an untrained person. A slow resting pulse in a fit person with no symptoms is expected; the same rate in an older person with dizziness would need investigation for conduction disease ([[cardiovascular/arrhythmias]]).
 :::
 :::
 
 ::: history
-The cycle's chronology is a method history: **Ludwig's** and **Marey's** kymographic carotid and jugular tracings (1860s–70s — the arterial pulse and the venous pulse as data), **Chauveau and Marey's** direct cardiac manometry in the horse (1863 — systole and diastole's pressure curves finally seen), **Einthoven's** string galvanometer and the phonocardiograph (the sounds' timeline, with his 1906 Nobel arriving before the clinic made the ECG daily), and **Wiggers'** 1928 diagrams that gave the cycle the textbook shape used here. **Frank's** 1895 and **Starling's** 1914 cardiopump-lung preparation established the length–tension law and its "law of the heart" (Starling's own reserve-energy and failure experiments), **Cournand and Richards's** cardiac catheterisation (Nobel 1956) brought chamber pressures and the Fick output to the ward, **Sarnoff's** contractility-component analysis and **Suga and Sagawa's** end-systolic elastance (the 1970s Japan school) made the pressure–volume loop the rigorous instrument it is, and **Guyton's** cross-plot physiology (the 1960s–70s venous-return and mean-filling-pressure programme) supplied the whole-circulation coupling that the modern shock and intensive-care literature still quotes. The fetal half belongs to **Barcroft's and Hamilton's** intrauterine physiology and **Dawes's** fetal-sheep work (the 1950s–60s — the key discoveries of the transitional circulation: the ductus's oxygen and prostaglandin pharmacology that made neonatology's first drug therapies, and **Keith, Rowe and Vladimir's** 1950s natural-history of the ductus).
+William Harvey's *De Motu Cordis* (1628) argued from the valves and from simple arithmetic that the blood circulates: multiplying the volume of a stroke by the number of beats gave more blood in an hour than the body could make from food. Adolf Fick described his principle for measuring cardiac output in 1870, although it was applied in humans only after cardiac catheterisation became possible. Otto Frank, working with frog hearts in the 1890s, and Ernest Starling, with the dog heart–lung preparation in the 1910s, showed that the heart's output rises with its filling; Starling summarised it as the "law of the heart". In 1929 Werner Forssmann passed a catheter into his own right atrium, and André Cournand and Dickinson Richards later developed catheterisation into a method for measuring pressures and output in patients; the three shared the 1956 Nobel Prize.
 :::
 
 ## Where this leads
 
-The muscle mechanics in [[physiology/muscle]]; the electrical–mechanical coupling in [[cardiovascular/electrophysiology-ecg]]; failure as the Starling line collapsing in [[cardiovascular/heart-failure]]; valve lesions' loading effects in [[cardiovascular/valve-congenital-disease]]; the anaesthetic manipulation of the two curves in [[cardiovascular/circulation-blood-pressure]] and the perioperative chapters; fetal shunt anatomy in [[anatomy/embryology]].
+The electrical events that trigger each cycle are in [[cardiovascular/electrophysiology-ecg]]. The control of the circulation that the heart feeds, and the arterial pressure the left ventricle works against, are in [[cardiovascular/circulation-blood-pressure]]. Heart failure ([[cardiovascular/heart-failure]]) is in many ways this chapter run in reverse: a flattened Frank–Starling curve, a shifted pressure–volume loop and the compensations they provoke. The valve lesions that disturb the cycle are in [[cardiovascular/valve-congenital-disease]].
 
 ::: summary
-- The cycle is four isovolumetric-and-ejection phases whose valves, sounds and JVP waves are direct signs of the chamber pressures; splitting and extra sounds localise timing lesions.
-- The pressure–volume loop unifies preload, afterload and contractility (EDPVR, ESPVR, stroke work and the oxygen-approximate area), and every drug, valve lesion and shock state is a redraw of one of its borders.
-- The steady state is Guyton's intersection: cardiac output and right atrial pressure are set together by the Starling and venous-return curves — the basis of fluid therapy, inotropes, vasopressors, and the flat-curve physiology of heart failure.
-- Fetal circulation runs the lungs on a resistance budget with three shunts; its transition (oxygen down, prostaglandins away) explains ductal and atrial shunt physiology and the neonatal emergencies that keep them open or need them closed.
-- Murmurs and pulses are the clinical reading of the same fluid mechanics: gradient ~ 4v², Reynolds' turbulence, Laplace's wall stress — the physics of the chapter, still auscultated with a tube.
+- The cardiac cycle has four left ventricular phases: isovolumetric contraction, ejection, isovolumetric relaxation and filling. Valves open and close passively according to pressure gradients.
+- Stroke volume is EDV − ESV; ejection fraction is SV/EDV (normal about 50% or more); cardiac output is heart rate × stroke volume, about 5 L/min at rest.
+- S1 is AV valve closure, S2 is semilunar valve closure (split on inspiration); S3 indicates rapid filling of a dilated ventricle in adults over about 40; S4 indicates atrial contraction into a stiff ventricle.
+- The JVP shows right atrial events: a wave (atrial contraction), x descent, v wave (atrial filling), y descent (tricuspid opening). Cannon a waves, giant v waves and Kussmaul's sign have specific causes.
+- Stroke volume depends on preload, afterload and contractility; the Frank–Starling principle matches output to filling through length-dependent activation of the sarcomere.
+- The Fick principle gives $CO = \dot V_{O_2}/(C_aO_2 - C_{\bar v}O_2)$; a low mixed venous saturation suggests low output.
+- The pressure–volume loop shows stroke volume (width), stroke work (area), contractility (ESPVR slope) and stiffness (EDPVR).
 :::
 
 ## Exercises
 
-::: exercise Name the phase {level=1}
-Ventricular pressure rising, all valves closed, volume constant: which phase, what follows it, and what happens to the arterial pressure during it?
+::: exercise Ejection fraction {level=1 check="57"}
+A left ventricle has an end-diastolic volume of 140 mL and an end-systolic volume of 60 mL. Calculate the ejection fraction as a percentage, rounded to the nearest whole number.
+::: hint
+First find stroke volume, then divide by end-diastolic volume.
+:::
 ::: solution
-**Isovolumetric contraction** — it follows mitral closure (S1) and ends when aortic pressure is exceeded, opening the valve and starting ejection; during it **aortic pressure falls gently toward its diastolic minimum** (the run-off to the periphery with no inflow), the dicrotic notch belongs to the end-ejection valve closure that begins the next isovolumetric relaxation. The phase's clinical uses: **its dP/dt maximal index of contractility (reduced by beta-blockade and failure, raised by catecholamines) and the "pre-ejection period" that lengthens with failing contractility — the systolic time intervals of the old mechanics, now replaced by the echo's tissue Doppler.**
+Stroke volume is $140 - 60 = 80$ mL. Ejection fraction is $80/140 = 0.5714$, which is **57%** to the nearest whole number. This is within the normal range.
 :::
 :::
 
-::: exercise Ejection fraction arithmetic {level=1}
-EDV 180 mL, ESV 60 mL, heart rate 75. Compute SV, EF, CO; then the same ventricle under phenylephrine (afterload up) with ESV 85 mL and EDV 190: what happens to EF and stroke volume, and why is "EF fell, the heart is worse" an incomplete reading?
+::: exercise Cardiac output {level=1 check="5.04"}
+A person has a heart rate of 72 beats/min and a stroke volume of 70 mL. Calculate the cardiac output in L/min (exact value).
 ::: solution
-Baseline: **SV 120 mL, EF 67%, CO 9 L/min**. Post-phenylephrine: SV = 190 − 85 = **105 mL**, EF = 105/190 ≈ **55%**. EF fell and so did stroke volume — but **afterload alone did it**: the same muscle, pushed against a higher aortic pressure, ejects less to a bigger ESV (the loop narrowed and rose), and the raised EDV (Frank–Starling) partly compensates SV. EF is load-dependent ([[#thm-pvloop]]); the load-insensitive questions are ESPVR slope, and clinically: is the patient's own afterload (and volume) different at each echo? — the hypertensive admission with an EF of 35 who is 55 at follow-up was never a new cardiomyopathy.
+$CO = 72 \times 70 = 5040$ mL/min $=$ **5.04 L/min**.
 :::
 :::
 
-::: exercise Cannon a waves {level=2}
-Explain the jugular wave that appears when atrial and ventricular systole desynchronise, and list three rhythms that produce intermittent giant a waves with their ECG signatures.
+::: exercise Name the sound {level=1}
+For each of the following, name the heart sound and the event that produces it: (a) a sound at the start of systole, synchronous with the carotid upstroke; (b) a low-pitched early diastolic sound in a 68-year-old man with breathlessness and a dilated left ventricle; (c) a late diastolic sound in a woman with hypertensive left ventricular hypertrophy in sinus rhythm.
 ::: solution
-The **a wave is atrial contraction against an open tricuspid valve**; when the atrium instead contracts against a **closed** tricuspid (ventricular systole coincident), the pressure shoots back to the neck as a **cannon a wave** — irregularly if the AV relationship varies beat to beat, regularly if it is fixed. The three rhythms: **complete heart block** (AV dissociation with the atrial rate faster, the random coincidences and the rate's bradycardia), **ventricular tachycardia** (the atria marching independently under the fast ventricle — the cannon a's as the bedside discriminator of wide-complex tachycardia's ventricular origin), and **junctional rhythm/AV nodal re-entry tachycardia** (retrograde atrial activation during or against ventricular systole — the regular "frog sign" — the rhythmic neck pounding of that rhythm). The exam chain: cannon a waves = AV dissociation or atrial-against-closed-valve timing; the ECG settles which — [[cardiovascular/electrophysiology-ecg]] and [[cardiovascular/arrhythmias]].
+(a) **S1**, closure of the mitral and tricuspid valves.
+
+(b) **S3**, produced during rapid early filling of a dilated ventricle with high filling pressure; at this age it suggests heart failure.
+
+(c) **S4**, produced by atrial contraction forcing blood into a stiff, hypertrophied ventricle. It would disappear if she developed atrial fibrillation.
 :::
 :::
 
-::: exercise Pulsus paradoxus beyond tamponade {level=2}
-Define it, give its mechanism in tamponade (interdependence), and three other causes with their mechanisms.
+::: exercise Cardiac output by Fick {level=2 check="5"}
+A patient's oxygen consumption is 300 mL/min. Arterial oxygen content is 190 mL/L and mixed venous oxygen content is 130 mL/L. Calculate cardiac output in L/min.
+::: hint
+Cardiac output equals oxygen consumption divided by the arteriovenous oxygen content difference.
+:::
 ::: solution
-**Pulsus paradoxus**: an inspiratory systolic fall >10 mmHg (measured as the difference between the pressures at which pulsations appear only during expiration and throughout the cycle). **Tamponade**: [[#ex-tamponade]]'s septal shift — the whole cardiac volume is fixed, so the inspiratory rise in right-heart filling directly steals left-heart geometry. Others: **constrictive pericarditis** (the same interdependence, less complete; ~one-third of cases); **massive pulmonary embolism** (the dilated right ventricle bowing the septum leftward within the intact pericardium — the same physics, the acute cor pulmonale of [[respiratory/respiratory-failure]]); and **severe asthma/COPD with great inspiratory pressures** (the mechanism here is different: the markedly negative intrathoracic pressure increases left ventricular transmural afterload and pools pulmonary blood — and the huge inspiratory fall in systolic pressure can be palpable as pulsus paradoxus without any pericardial disease — the reason the bedside sign is a physiology question, not a diagnosis).
+The arteriovenous difference is $190 - 130 = 60$ mL/L. $CO = 300/60 =$ **5 L/min**.
 :::
 :::
 
-::: exercise The stiff ventricle {level=2}
-A 78-year-old hypertensive has EF 62%, an S4, left atrial enlargement and dyspnoea on lying flat. Explain in loop language: the EDPVR shift, the filling-pressure response to atrial fibrillation onset, and why nitrates and diuretics help while digoxin does nothing.
+::: exercise Splitting the second sound {level=2}
+Predict the behaviour of S2 with breathing in (a) right bundle branch block, (b) an atrial septal defect, (c) left bundle branch block, and explain each in terms of which valve closes when.
 ::: solution
-Chronic hypertension adds sarcomeres in parallel ([[physiology/muscle]]'s hypertrophy biology) and collagen — the **EDPVR shifts up and left: normal volume, high pressure** (the S4 from the forceful atrial kick, the exertional dyspnoea from the pulmonary-congestion pressures, the left atrium dilating against the raised downstream pressure, the LA-enlargement substrate for **atrial fibrillation** — and remember the infiltrative mimic (amyloidosis, the same stiff-ventricle story, in [[cardiovascular/heart-failure]])). New-onset AF removes the atrial contribution ([[#def-phases]]) that was doing a large share of ventricular filling; rate rise shortens diastole — filling pressures climb further, pulmonary oedema. The treatments follow the curve: **diuretics and nitrates lower the operating point on the steep EDPVR (preload reduction relieves congestion — the loop's filling corner is the lesion); beta-blockers and rate control lengthen diastole and restore the atrial contribution where sinus can be kept; mineralocorticoid and blood-pressure control remodel the stiffness slowly.** **Digoxin helps nothing here** — the contractility (ESPVR) was never the problem (EF 62%): the drug of a failing pump given to a failing reservoir is the chapter's moral that the loop decides therapy ([[cardiovascular/heart-failure]]).
+(a) **Wide split that still widens on inspiration.** Right ventricular activation is delayed, so pulmonary closure is late; the normal inspiratory delay of P2 is added on top.
+
+(b) **Wide, fixed split.** The right ventricle carries a large volume throughout the cycle, so P2 is late; the atrial communication equalises filling of the right heart between inspiration and expiration, so the split does not vary.
+
+(c) **Reversed (paradoxical) split.** Left ventricular activation is delayed, so A2 comes after P2. On inspiration P2 moves later towards A2, so the split narrows; on expiration it widens.
 :::
 :::
 
-::: exercise Fetal to adult {level=2}
-Trace the three shunts' closures, their adult remnants, the two controls of the ductus, and the clinical consequences of failure in each direction (patency, and premature closure in utero).
+::: exercise Cannon waves {level=2}
+A 79-year-old woman has a pulse of 36 beats/min. In the neck you see occasional very large venous pulsations that bear no constant relation to the arterial pulse. Explain the waves and give the most likely rhythm.
 ::: solution
-**Foramen ovale** — functionally closed minutes after birth by the left-atrial-pressure overshoot, anatomically (fusion of septum primum and secundum margins) over months — remains probe-patent in ~25%, the substrate for **paradoxical embolism** ([[blood/thrombosis-anticoagulation]]'s exercise) and the interatrial-device world. **Ductus arteriosus** — constricted by rising PaO₂ and falling prostaglandin E₂, becoming the ligamentum arteriosum (with the ligamentum arteriosum's clinical kin: the **aortic coarctation's isthmic location and the recurrent-laryngeal-nerve loop beneath the arch** — [[anatomy/thorax]]'s nerve geometry). **Ductus venosus** — closes with cord clamping, the ligamentum venosum, its recanalisation the transjugular-intrahepatic shunt of [[gastrointestinal/liver-disease]]'s radiology. **Patency** (prematurity — the machinery murmur, the pulmonary overcirculation and the failure of the preterm's ductal steal of diastolic flow; closure with indometacin/paracetamol, or device closure in the older child) and **premature in-utero constriction** (maternal NSAID exposure, especially third-trimester — the fetal right ventricle against a closed outlet, the pulmonary hypertension of the newborn; the same prostaglandin axis explains **PGE₁ infusions keeping the duct open** when the neonate's lesion — transposition, coarctation, right-heart obstruction — depends on it until surgery, [[paediatrics/newborn]] and [[cardiovascular/valve-congenital-disease]]).
+These are **cannon a waves**. They occur when the right atrium contracts while the tricuspid valve is closed, because the ventricle is contracting at the same moment; the atrial blood is pushed back up the jugular vein. Their irregular timing means atrial and ventricular activity are independent. With a slow regular pulse this is **complete (third-degree) heart block**: the atria beat at the sinus rate and the ventricles at a slow escape rate, so atrial contraction occasionally coincides with ventricular systole. The ECG confirms the diagnosis ([[cardiovascular/arrhythmias]]).
 :::
 :::
 
-::: exercise Read a Wiggers strip {level=2}
-On a simultaneous aortic and left-ventricular pressure tracing, describe what happens to the two curves, S2 and the ejection timing in severe aortic stenosis, and why the pulse is parvus et tardus.
+::: exercise Cardiac index {level=2 check="2.2"}
+After a myocardial infarction a man has a heart rate of 110 beats/min, a stroke volume of 40 mL and a body surface area of 2.0 m². Calculate his cardiac index in L/min/m² (exact value) and comment on its significance.
 ::: solution
-The valve's fixed orifice turns ejection into a long, resisted climb: **the ventricular systolic pressure overshoots the aortic by the stenotic gradient (40–100+ mmHg), ejection time lengthens, aortic upstroke and peak slow and flatten, and the aortic dicrotic notch arrives late and soft — S2's A2 component quiet or absent** when the leaflets are immobile. **Parvus et tardus** (the weak, late carotid upstroke) is the same aortic-wave physics read at the periphery: reduced and delayed flow through a small opening blunts and retards the pressure wave ([[cardiovascular/vascular-disease]]'s pulse-wave chapter). The loading consequences run straight back into the loop: **chronic afterload pressure-overload concentric hypertrophy (Laplace's wall-stress normalisation — tension = Pr/2h, so thickness rises), raised EDPVR (the S4, the anginal oxygen supply–demand squeeze: hypertrophied muscle, high wall tension, compressed subendocardial perforators and shortened diastole — the triad behind the angina–syncope–failure natural history and the reason the severe-stenosis patient decompensates with AF, with vasodilators and with the volume shifts of anaesthesia**, and why valve replacement's loop, symptom list and risk score (and the paradox of the low-gradient, low-flow severe stenosis needing the dobutamine study) belong to [[cardiovascular/valve-congenital-disease]].
+$CO = 110 \times 40 = 4400$ mL/min $= 4.4$ L/min. Cardiac index $= 4.4/2.0 =$ **2.2 L/min/m²**.
+
+This is below the normal range of about 2.5–4.0 L/min/m², despite a high heart rate. The small stroke volume shows that the left ventricle is failing; the tachycardia is a compensation that also shortens diastole and raises myocardial oxygen demand. A cardiac index below about 2.2 L/min/m² with signs of poor perfusion is one of the haemodynamic criteria used for cardiogenic shock.
 :::
 :::
 
-::: exercise Design the fluid trial {level=3}
-A post-cardiac-surgery patient has a cardiac index of 1.8 L/min/m², central venous pressure 6, heart rate 110 on noradrenaline and dobutamine. Design a physiology-guided fluid strategy: the measurement sequence, the two curve-frameworks in play, the endpoints that count, and the stopping rule.
+::: exercise Shocked with a high venous pressure {level=3}
+A 66-year-old woman becomes hypotensive (78/50 mmHg) with a raised JVP and clear lung fields on auscultation. List four causes of hypotension with a raised venous pressure and clear lungs, and explain for each which part of the cardiac cycle or circulation is failing and which bedside or simple investigation finding would distinguish it.
+::: hint
+Think of obstructions to filling, obstructions to right ventricular outflow, and failure of the right ventricle itself.
+:::
 ::: solution
-**Frameworks**: the Starling curve (is this ventricle on the ascending limb?) and the Guyton venous-return curve (is the stressed volume or its pressure the limiter?), joined at the operating point. **Measurements before bags**: **pulse-pressure and stroke-volume variability during the mechanical cycle (ventilated patients — the respiratory variation in arterial pulse pressure and stroke volume from the flowmeter as the dynamic preload-responsiveness indices, superior to the static CVP whose "6" says nothing); echocardiography (filling — the small, hyperdynamic ventricle of hypovolaemia against the dilated, flat-curve one of failure; the inferior vena cava's variation as a coarse venous-pressure window), and the passive leg-raising test as an autologous, reversible 300 mL bolus with the stroke volume read beat-to-beat.** **Endpoints**: stroke volume and cardiac output (the flow) — not blood pressure or CVP; lactate and central venous oxygen saturation (the perfusion) as the secondary. **The rule**: **give fluid only where the stroke volume rises ≥10% with the challenge, and stop when the challenge no longer moves it (the flat Starling limb — further volume raises filling pressure and congestion, not flow: the post-cardiac-surgery positive-balance literature's harm, and the wound and pulmonary oedema costs of the wet third day).** **Then treat the curve, not the patient's thirst**: the low filling pressure with tachycardia after mediastinal bleeding is volume and blood first (the haemorrhage physiology of [[blood/transfusion]]'s ratios); the raised filling pressure with low output is inotropy and afterload reduction and eventually the mechanical support ladder of [[cardiovascular/heart-failure]]; and the high-output, low-filling-pressure picture is the vasoplegia of the bypass inflammatory response where noradrenaline and methylene-blue-era rescue are the curve's other lever. The answer is a plan of interrogations with a named stopping rule — the clinical exam of this chapter and the one before.
+1. **Cardiac tamponade.** Filling of both ventricles is limited by pericardial pressure. Clues: pulsus paradoxus, quiet heart sounds, loss of the y descent, small complexes or electrical alternans on the ECG; echocardiography shows the effusion and collapse of the right heart in diastole.
+2. **Massive pulmonary embolism.** Right ventricular outflow is obstructed, so the right ventricle dilates and fails and the left ventricle is underfilled. Clues: risk factors for thrombosis, hypoxia out of proportion to the chest signs, tachycardia, signs of right ventricular strain on the ECG; CT pulmonary angiography or echocardiography (dilated right ventricle) confirms ([[cardiovascular/vascular-disease]]).
+3. **Right ventricular infarction.** Usually with an inferior myocardial infarction. The right ventricle cannot pump, so right atrial pressure rises while left ventricular filling falls. Clues: inferior ST elevation, ST elevation in right-sided lead V4R, Kussmaul's sign; hypotension worsens with nitrates.
+4. **Tension pneumothorax.** Raised intrathoracic pressure impedes venous return and compresses the heart. Clues: absent breath sounds and hyper-resonance on one side, tracheal deviation away from that side, respiratory distress; it is treated immediately by decompression, without waiting for imaging.
+
+Other causes include constrictive pericarditis (steep y descent, Kussmaul's sign, slower onset). The common theme is that the left ventricle is underfilled while the venous side is congested, so giving fluid may help briefly but does not fix the cause.
 :::
 :::

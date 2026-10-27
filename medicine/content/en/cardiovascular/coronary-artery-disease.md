@@ -1,146 +1,318 @@
-Coronary artery disease is atherosclerosis applied to the heart's own circulation: a lifetime exposure to retained, modified lipoprotein in the artery wall, paid out as angina, infarction and sudden death, and now treatable at every stage of its natural history — which is precisely why it remains the leading cause of death, since treatment requires recognising a disease that is silent for decades. The physiology is a supply-and-demand balance sheet ([[#def-ischemia]]), the pathology the haemodynamic-field story of [[pathology/haemodynamics]], and the pharmacology and surgery a sequence of decisions about plaque stabilization, thrombosis and revascularisation thresholds.
+Coronary heart disease is the commonest single cause of death in the world. Its underlying process, atherosclerosis, begins in childhood and progresses silently for decades. It then shows itself in one of two ways: as **angina**, chest discomfort that appears when the heart works harder than a narrowed artery can supply; or as an **acute coronary syndrome**, when a plaque suddenly ruptures or erodes and a thrombus forms on it, partly or completely blocking the artery within minutes. The first is a problem of supply and demand that can usually be managed in clinic. The second is a medical emergency in which every minute of occlusion destroys more muscle.
 
-This chapter covers atherogenesis and risk, chronic coronary syndromes and their testing, acute coronary syndromes and their minutes, and the secondary-prevention programme that determines the next decade.
+This chapter covers the biology of atherosclerosis and its risk factors, lipid management, stable angina and its investigation, the acute coronary syndromes, troponin, reperfusion, the complications of myocardial infarction and secondary prevention. UK guidance from NICE is followed, with European Society of Cardiology (ESC) guidance noted where it differs; management in practice follows current local protocols.
 
-## The balance sheet: supply, demand, and the stenosis that matters
+## Atherosclerosis
 
-::: definition Atheroma and its risk arithmetic {#def-athero}
-Atherogenesis is the **response-to-retained-lipoprotein** process: **LDL and remnant particles that enter and become trapped in the intimal matrix (apoB's necessary-and-sufficient role the genetic proof — familial hypercholesterolaemia's autosomal-dominant LDL-receptor lessons, [[genetics/mendelian-inheritance]]) are retained, modified (oxidised, myeloperoxidated), and drive monocyte recruitment, foam-cell formation and the fatty streak**, with the fibrous-cap plaque (smooth-muscle collagen over a lipid–necrotic core) maturing over decades in the **low-shear, oscillatory-flow regions** (bifurcations — the proximal LAD and the coronary ostia's predilection, [[pathology/haemodynamics]]'s endothelial-mechanobiology and [[anatomy/thorax]]'s coronary anatomy and dominance). The **clinical risk factors are the process's dose variables** — LDL and Lp(a) (the genetically fixed, causal, now-measurable and therapeutically-approaching lipoprotein), apoB-vs-LDL discordance, the glycaemia and blood-pressure and smoking exposure–response curves (the latter's acute thrombotic and vasospastic effects layered on its chronic one), age, male sex and the family-history-plus-genetic-risk-architecture that makes the personal and polygenic history part of the arithmetic ([[genetics/common-disease-genetics]]); the **risk calculators (QRISK and SCORE-family)** integrate them to a 10-year probability that drives primary-prevention thresholds — crude but the interface where trial evidence meets the individual, and the home of the **coronary calcium score's reclassification** (the anatomical truth that settles the borderline calculator). Modern biology refines the target: **lifetimes matter more than last-values (area-under-the-curve LDL — the Mendelian-randomisation and statin-and-PCSK9 follow-up logic), and inflammation is a treatable axis (the CANTOS canakinumab and colchicine-trial proof that interleukin-1 pathway blockade cuts events without touching lipids — [[immunology/innate-immunity]]'s inflammasome in clinical dress).**
+::: definition Atherosclerosis {#def-athero}
+**Atherosclerosis** is a chronic inflammatory disease of the inner layer (intima) of large and medium-sized arteries, in which lipid, inflammatory cells, smooth muscle cells and connective tissue accumulate to form **plaques** (atheromas). A mature plaque has a **lipid-rich necrotic core** covered by a **fibrous cap** of smooth muscle cells and collagen.
 :::
 
-::: definition Ischaemia and the chronic coronary syndrome {#def-ischemia}
-Myocardial oxygen supply is **diastolic-coronary-flow limited** (the subendocardium, perfused last and compressed first — the vulnerability of the inner third and its ischaemic ECG signature of ST depression) and the **coronary bed meets demand by dilating (the adenosine-mediated metabolic hyperaemia of [[cardiovascular/circulation-blood-pressure]])** — a normal **flow reserve of 3–4×** that a stenosis consumes before resting flow falls: **hyperaemic flow collapses at ~85–90 % diameter reduction (the widget's fourth-power arithmetic) while fractional flow reserve (the pressure-wire ratio across the lesion, ≤0.80 the ischaemia line) and the flow-reserve concept reframe "significant stenosis" functionally rather than cosmetically**, resolving the angiogram's grey zone and the discordance of anatomy against symptoms (the woman with angina and non-obstructive coronary disease and microvascular dysfunction — the oestrogen, hypertension and diabetes substrate of [[cardiovascular/vascular-disease]]'s endothelial story, and a real, high-burden, under-named syndrome; and the vasospastic Prinzmetal variant's transient ST elevation and provocation testing). Demand's determinants — rate, contractility, **wall tension (Laplace: pressure × radius — the hypertrophied and dilated ventricles' extra oxygen bill, [[cardiovascular/cardiac-cycle]]'s ventricular-function argument applied to supply–demand)** — generate the **chronic stable angina** presentation: central exertional or emotional chest pressure, relieved by rest or nitrates within minutes, the Canadian Cardiovascular Society grade quantifying the threshold (I extreme exertion → IV at rest), the **atypical and "dyspnogetic" and pain-free ischaemia of diabetes's denervation, age and female presentation** — the reasons the pre-test probability (now clinical-score based, the old age–sex–symptom tables retired toward anatomy-first pathways) feeds the test chosen: **coronary CT angiography (the anatomical first-line of the contemporary pathways, with its calcium and stenosis reporting and its FFR-derived research arm) or functional testing (the adenosine or dobutamine perfusion and wall-motion studies — the adenosine test being [[cardiovascular/circulation-blood-pressure]]'s coronary-dilation-reserve principle turned against the stenosis, and the exercise ECG's modest sensitivity now reserved for the specific pre-test windows)**, with invasive angiography and revascularisation decisions following the symptom-and-ischaemia burden against the **medical therapy that must be maximal first in the stable patient (the ISCHEMIA and COURAGE trials' finding that immediate revascularisation does not beat optimal drugs for death and infarct in stable disease — while improving angina and quality of life, which is itself an indication)**.
+The process unfolds in stages:
+
+1. **Endothelial dysfunction.** At sites of disturbed flow, such as branch points, and under the influence of risk factors such as smoking, hypertension, diabetes and high LDL cholesterol, the endothelium becomes more permeable and expresses adhesion molecules.
+2. **Lipid retention.** Low-density lipoprotein (LDL) particles cross into the intima and are trapped by proteoglycans, where they are oxidised and otherwise modified.
+3. **Inflammation.** Monocytes enter the intima, become macrophages, take up modified LDL through scavenger receptors and become lipid-laden **foam cells**. Collections of foam cells form the **fatty streak**, visible in the arteries of many teenagers.
+4. **Fibrous plaque.** Smooth muscle cells migrate from the media and lay down collagen, forming a fibrous cap. Foam cells die, releasing lipid and debris into a necrotic core. Calcium is deposited.
+5. **Complications.** The plaque may slowly narrow the lumen (causing stable angina), or a **thrombus** may form on it suddenly (causing an acute coronary syndrome).
+
+Plaques that cause acute events are often not the most severely narrowing ones. **Vulnerable plaques** have a thin fibrous cap, a large lipid core and many inflammatory cells, which secrete enzymes (matrix metalloproteinases) that weaken the cap. **Plaque rupture** exposes the highly thrombogenic core to blood. **Plaque erosion**, loss of endothelium over a plaque without rupture of the cap, is a second mechanism, relatively more common in younger people and women. The general pathology of thrombosis is in [[pathology/haemodynamics]].
+
+Risk factors fall into two groups:
+
+- **Modifiable**: raised LDL cholesterol (the causal lipid, as shown by genetics, observational studies and trials), smoking, hypertension, diabetes, obesity, physical inactivity, unhealthy diet, excess alcohol, chronic kidney disease, and chronic inflammatory diseases such as rheumatoid arthritis.
+- **Non-modifiable**: age, male sex, family history of premature cardiovascular disease (in a first-degree male relative under 55 or female relative under 65), and ethnicity (risk is higher in people of South Asian family origin in the UK). A raised **lipoprotein(a)**, largely genetically determined, is an additional risk factor.
+
+Risk factors multiply rather than add. In the UK, 10-year cardiovascular risk for primary prevention is estimated with **QRISK3**, which includes ethnicity, deprivation, and conditions such as chronic kidney disease, rheumatoid arthritis, migraine and severe mental illness.
+
+## Lipids and statins
+
+Lowering LDL cholesterol reduces cardiovascular events in proportion to the absolute reduction achieved: in meta-analyses of statin trials, each 1 mmol/L reduction in LDL cholesterol lowers the risk of major vascular events by about a fifth. **Statins** inhibit HMG-CoA reductase, the rate-limiting enzyme of cholesterol synthesis; the liver responds by increasing LDL receptors and clearing more LDL from the blood ([[cell-biochemistry/lipid-amino-acid-metabolism]]).
+
+Under NICE NG238 (2023):
+
+- **Primary prevention**: after lifestyle advice and a shared discussion, a statin (atorvastatin 20 mg in NICE's recommendation) is offered to people with a QRISK3 10-year risk of 10% or more. Some groups, such as people with chronic kidney disease or type 1 diabetes, are considered without relying on QRISK3.
+- **Secondary prevention** (established cardiovascular disease): high-intensity statin treatment (atorvastatin 80 mg, or a lower dose if there are interactions, risk of adverse effects or the person prefers), aiming for an LDL cholesterol of **2.0 mmol/L or less**, or a non-HDL cholesterol of **2.6 mmol/L or less**.
+- If targets are not reached, **ezetimibe** (which blocks intestinal cholesterol absorption) is added; injectable treatments such as **PCSK9 inhibitors** (monoclonal antibodies) or **inclisiran** (a small interfering RNA) are used for selected people at high risk, as set out in NICE technology appraisals.
+
+Muscle symptoms are the commonest reason people stop statins. In blinded trials, most of these symptoms occur at similar rates with placebo; true myopathy is uncommon and rhabdomyolysis rare. Statins slightly increase the risk of developing type 2 diabetes in people already at risk, an effect much smaller than their cardiovascular benefit.
+
+**Familial hypercholesterolaemia**, usually an autosomal dominant variant in the LDL receptor gene, causes very high LDL cholesterol from birth and premature coronary disease. It should be suspected when total cholesterol is above 7.5 mmol/L in an adult, especially with a family history of early coronary disease or tendon xanthomas. Diagnosis uses the Simon Broome or Dutch Lipid Clinic Network criteria and genetic testing, followed by **cascade testing** of relatives ([[genetics/mendelian-inheritance]]).
+
+## Supply, demand and the coronary stenosis
+
+The heart extracts most of the oxygen from coronary blood at rest, so it meets increased demand almost entirely by increasing flow. Coronary arterioles can dilate to raise flow three- to five-fold; this capacity is the **coronary flow reserve**. A stenosis in an epicardial artery uses up part of the reserve: the arterioles beyond it dilate at rest to keep flow normal, so less dilatation is left for exercise.
+
+::: theorem Supply, demand and the significant stenosis {#thm-supply}
+Myocardial ischaemia occurs when oxygen demand exceeds supply.
+- **Demand** rises with heart rate, contractility and wall tension (systolic pressure and ventricular size).
+- **Supply** depends on coronary perfusion pressure (aortic diastolic pressure minus left ventricular diastolic pressure), the duration of diastole and the resistance of the coronary circulation, including any stenosis.
+
+A stenosis narrowing the diameter by about 70% or more usually limits flow during exercise; one of about 90% may limit flow at rest. Because resistance rises with the inverse fourth power of radius, flow falls steeply once the narrowing becomes severe.
 :::
 
-::: example The hill-walking jaw pain {#ex-stable}
-A 58-year-old man who smokes and has hypercholesterolaemia describes 3 months of jaw tightness on hills, gone in 2 minutes' rest, none at rest; exam, ECG and troponin normal; LDL 4.4 mmol/L; father infarcted at 52.
+The anatomical percentage on an angiogram is only an approximation to the physiological effect. **Fractional flow reserve (FFR)**, measured with a pressure wire during maximal dilatation of the microcirculation, is the ratio of pressure beyond a stenosis to aortic pressure; a value of **0.80 or less** indicates a functionally significant stenosis, and revascularisation guided by FFR performs better than revascularisation guided by appearance alone.
+
+The subendocardium, the inner layer of the ventricular wall, is most vulnerable. It is compressed most during systole, receives flow almost only in diastole and lies at the end of the coronary supply. Tachycardia shortens diastole, raised left ventricular diastolic pressure compresses the subendocardial vessels, and low diastolic aortic pressure reduces the driving pressure. This explains why anaemia, tachyarrhythmia, aortic stenosis and hypotension can cause angina or even infarction without any new coronary event.
+
+## Stable angina (chronic coronary syndrome)
+
+::: definition Angina {#def-ischemia}
+**Angina** is discomfort due to myocardial ischaemia. Under NICE guidance, chest pain is assessed by three features:
+1. constricting discomfort in the front of the chest, or in the neck, shoulders, jaw or arms;
+2. precipitated by physical exertion;
+3. relieved by rest or glyceryl trinitrate (GTN) within about 5 minutes.
+
+Three features make **typical angina**; two make **atypical angina**; one or none suggests **non-anginal chest pain**. Angina may also be provoked by cold, emotion or a heavy meal. **Stable angina** occurs predictably at a similar level of exertion. Breathlessness on exertion can be an "angina equivalent", especially in older people, women and people with diabetes.
+:::
+
+The **resting ECG** is often normal. NICE (CG95) recommends **CT coronary angiography (CTCA)** as the first-line test for people with typical or atypical angina, or with non-anginal chest pain and an abnormal resting ECG. Where CTCA shows disease of uncertain significance, **functional testing** (stress perfusion MRI, stress echocardiography or myocardial perfusion scintigraphy) shows whether it causes ischaemia. The exercise ECG is no longer recommended by NICE for diagnosis because it is less accurate, but it is still used to assess exercise capacity and symptoms. How much a positive test changes the probability of disease depends on the probability before the test, which the figure illustrates.
+
+::: widget bayes
+mode: test
+prevalence: 0.3
+sensitivity: 0.68
+specificity: 0.77
+caption: Bayes' theorem for a diagnostic test, using an exercise ECG with sensitivity about 68% and specificity about 77% (approximate pooled values from older meta-analyses) at a pre-test probability of coronary disease of 30%. Change the prevalence to see how the same positive result means very different things in a 35-year-old woman with non-anginal pain and a 70-year-old man with typical angina. A simplified model for teaching.
+:::
+
+::: example Breathless on the hill {#ex-stable}
+A 64-year-old man with type 2 diabetes and hypertension, an ex-smoker, has had three months of tightness across the chest radiating to his jaw when he walks up a hill in the cold, relieved within 3 minutes of stopping. He has no symptoms at rest. Examination and resting ECG are normal. How would you classify his pain, what investigation does NICE recommend, and what are the principles of treatment?
+
 ::: solution
-**Typical (obstructive) angina by pre-test probability, high-risk lipid and family profile** — the jaw-only distribution is classic referred cardiac pain (T1–T4 dermatomes and the vagal afferent pathway — [[nervous-system/sensory-systems]]), not an atypical story. The pathway: **CT angiography or functional testing to document the territory and burden (the choice per local pathway and the calculator — the clinical-probability logic of [[epidemiology-ebm/diagnostic-tests]] applied to chest pain)** plus **immediate, unconditional secondary-prevention-style therapy whatever the anatomy: high-intensity statin with the LDL target and the add-on ezetimibe/PCSK9-inhibitor-or-inclisiran ladder if the target is missed (and the cascade-family lipid screening [[genetics/mendelian-inheritance]] when the LDL and pedigree suggest familial hypercholesterolaemia — the LDL-receptor, apoB or PCSK9 gain-of-function pedigree), aspirin, the risk-factor programme (smoking cessation's measurable event reduction, the [[endocrine/diabetes]] and [[cardiovascular/hypertension]] targets, cardiac-rehabilitation-style exercise prescription), and symptom control with the beta-blocker or calcium-blocker or long-acting nitrate and the GTN spray's education (sitting, 5 minutes, repeat once, ambulance if not better — the patient's own acute-coronary-syndrome triage)**. If ischaemia is extensive or symptoms persist: **angiography with revascularisation by the lesion and anatomy logic (the left-main and three-vessel, especially diabetic, multivessel disease where bypass surgery's survival data (SYNTAX and FREEDOM trial families) beat angioplasty, and the single-territory lesion where PCI's stent-plus-dual-antiplatelet programme is the tool)**. The teaching points hide in plain sight: **normal enzymes never exclude stable angina, the jaw is a cardiac symptom site, and the lipid number — not the angiogram — is what will decide his next ten years.**
+His pain has all three features (constricting, exertional, relieved by rest), so it is **typical angina**. With his risk factors the probability of coronary disease is high.
+
+**Investigation**: **CT coronary angiography** is the first-line test under NICE. If it shows a stenosis of uncertain significance, functional imaging (or invasive angiography with FFR) is used to decide whether it causes ischaemia. Blood tests include full blood count (anaemia worsens angina), HbA1c, lipids, renal and thyroid function.
+
+**Treatment** has two aims:
+- **Relieve symptoms**: sublingual GTN for attacks and before exertion (with advice about headache and hypotension, and not to use it with phosphodiesterase-5 inhibitors); a **beta-blocker** or a **calcium channel blocker** as first-line regular treatment, combining the two if needed; other drugs (long-acting nitrates, ivabradine, nicorandil, ranolazine) if these are not tolerated or not enough.
+- **Prevent events**: aspirin, a high-intensity statin, control of blood pressure and diabetes, and lifestyle change (activity, diet, not smoking). An ACE inhibitor is appropriate given his diabetes and hypertension.
+
+**Revascularisation** (percutaneous coronary intervention or coronary artery bypass grafting) is considered when symptoms persist despite optimal medical treatment, or when anatomy suggests a survival benefit from surgery, such as significant left main stem disease or complex multivessel disease, particularly in diabetes. In the ISCHEMIA trial (2020), an initial invasive strategy in people with stable disease and moderate or severe ischaemia did not reduce major cardiovascular events compared with initial medical treatment, though it improved angina.
 :::
 :::
 
-::: widget plot
-f: 100/(1+(x/88)^14)
-x: 0, 99
-y: 0, 105
-labels: \text{diameter stenosis (\%)},\ \text{hyperaemic flow reserve (\% of normal)}
-caption: Why the stenosis has a threshold: hyperaemic myocardial flow is defended until a lesion approaches ~85–90 % diameter narrowing, then collapses steeply (Poiseuille plus the series-resistance of the microvasculature — the [[cardiovascular/circulation-blood-pressure]] x⁴ theme in its coronary dress). The consequences are clinical: resting perfusion and the ECG stay normal far into the disease, exertional ischaemia appears over a narrow anatomical band, angiographic "intermediate" lesions deserve physiological assessment (the FFR ≤0.80 line), and successful revascularisation relieves flow-limiting disease precisely because everything distal is still recruitable muscle — the hibernating myocardium's contractile down-regulation included.
+## Acute coronary syndromes
+
+::: definition The acute coronary syndromes {#def-acs}
+An **acute coronary syndrome (ACS)** results from sudden reduction in coronary blood flow, usually from thrombus on a ruptured or eroded plaque. It is classified by the ECG and troponin:
+
+- **ST-elevation myocardial infarction (STEMI)**: symptoms of ischaemia with persistent ST elevation (or an equivalent pattern), usually from complete occlusion of an artery.
+- **Non-ST-elevation myocardial infarction (NSTEMI)**: ischaemic symptoms with a rise and fall of cardiac troponin but without persistent ST elevation; usually a partly occlusive or intermittently occlusive thrombus.
+- **Unstable angina**: ischaemic symptoms at rest, new or rapidly worsening, without a rise in troponin. With high-sensitivity troponin assays it has become less common.
 :::
 
-## The acute coronary syndromes: minutes, thrombus and time
+::: definition Myocardial infarction (Fourth Universal Definition, 2018) {#def-mi}
+**Myocardial injury** is a cardiac troponin value above the **99th percentile upper reference limit**. It is **acute** if the values rise or fall.
 
-::: definition The plaque event and the syndrome spectrum {#def-acs}
-Acute coronary syndromes are **the thrombotic complication of a high-risk plaque** — thin cap, large lipid core, macrophage and mast-cell activation, spotty calcification and positive remodelling (the vulnerable-plaque features that only a minority ever infarct, and which mostly sit at non-obstructive angles: the epidemiology explaining why population statin-and-risk strategies beat high-risk-lesion hunting) — with **rupture or erosion exposing tissue factor and collagen, platelet adhesion (von Willebrand and GPIb, GPVI) and thrombin burst producing a predominantly arterial "white thrombus"**: complete occlusion gives **STEMI** (transmural injury: ST elevation, the Q-wave evolution of [[cardiovascular/electrophysiology-ecg]], the occlusion artery and territory), incomplete or intermittent occlusion with distal embolisation gives **NSTEMI/unstable angina** (subendocardial: ST depression and T inversion, troponin positive or not — the fourth universal definition's 99th-percentile-with-delta rule and the high-sensitivity assay's fast rule-in/rule-out protocols, [[epidemiology-ebm/diagnostic-tests]]'s and [[clinical-skills/laboratory-tests]]'s analytic story). **Type 2 ischaemia** (demand–supply mismatch — the sepsis, bleed, tachyarrhythmia and anaemia patient's troponin rise) and **MINOCA** (myocardial infarction with non-obstructed coronaries — spasm, embolus, spontaneous coronary dissection's young-woman tearing, the Takotsubo catecholamine-stunned ventricle of [[physiology/autonomic-nervous-system]]) are the differential that the catheter laboratory keeps, and **the troponin that is rising is myocardial injury, not automatically coronary thrombosis** — the distinction that saves the septic patient from unnecessary heparin and the dissected-coronary patient from the wrong stent. The STEMI's treatment is **the artery: primary PCI within the network minute-budgets (the symptom-onset and diagnosis-to-wire targets, the transfer-trial logic), or thrombolysis (the fibrin-specific agent plus the anticoagulant and the age- and BP-adjusted dosing) with a pharmacoinvasive transfer when PCI is out of reach; the NSTEMI's is risk-scored timing (the GRACE score's very-high/high/intermediate strata deciding the angiography within 2 hours to 72 hours to elective, the antiplatelet-plus-anticoagulant loading the same, and the conservative pathway's place in the frail, low-risk and non-coronary-injury patient)** ([[emergency-critical-care/acute-assessment]], [[emergency-critical-care/resuscitation]]).
+**Acute myocardial infarction** is acute myocardial injury with clinical evidence of ischaemia: at least one of ischaemic symptoms, new ischaemic ECG changes, new pathological Q waves, imaging evidence of new loss of viable myocardium or new regional wall-motion abnormality in an ischaemic pattern, or coronary thrombus at angiography or autopsy.
+
+Types include **type 1** (an atherothrombotic event, such as plaque rupture) and **type 2** (an imbalance of oxygen supply and demand without an acute plaque event, for example from severe anaemia, tachyarrhythmia, hypotension or respiratory failure). Further types cover sudden cardiac death and infarction related to PCI or bypass surgery.
 :::
 
-::: theorem Time is muscle, and muscle is remodelling {#thm-remodel}
-Infarct size scales with ischaemic time and collateral supply (the Krogh-capillary-tension and watershed-subendocardial logic of [[respiratory/gas-exchange]]'s diffusion-analogue: the wavefront of necrosis advancing from subendocardium to epicardium over ~6 hours); salvaged myocardium is contractile (stunned) and, when chronically underperfused, hibernating — function returning after revascularisation. Surviving remnant myocardium then undergoes neurohormonal remodelling.
+The classic symptom is central, heavy or crushing chest pain lasting more than 15–20 minutes, often radiating to the arm, neck or jaw, with sweating, nausea and breathlessness. Presentations vary. Older people, women and people with diabetes more often present with breathlessness, fatigue, epigastric discomfort, collapse or confusion, and some infarctions are silent. Atypical presentations are associated with delays in diagnosis and worse outcomes.
+
+### Troponin
+
+Cardiac troponins I and T are components of the contractile apparatus specific to heart muscle. With **high-sensitivity (hs) assays**, troponin rises within an hour or so of the onset of infarction, peaks at about 24 hours or later and stays raised for days (troponin T up to about two weeks). Because a single value can be raised for many reasons, the diagnosis relies on the **change** between two samples, together with the clinical picture.
+
+Rapid pathways (NICE diagnostics guidance DG40 and the ESC 0/1-hour and 0/2-hour algorithms) use a very low value at presentation, or a low value with little change over 1–3 hours, to rule out infarction safely, and a high value or a large change to rule it in. The thresholds are specific to each assay and are set by local laboratories.
+
+::: warning A raised troponin is not the same as a heart attack
+Troponin indicates myocardial injury, not its cause. It is raised in pulmonary embolism, sepsis, myocarditis, heart failure, tachyarrhythmias, aortic stenosis, aortic dissection, stroke, chronic kidney disease and after strenuous exercise, among others. A stable, chronically raised value is common in kidney disease and older people. Diagnose myocardial infarction only when there is a rise or fall **and** clinical evidence of ischaemia. Conversely, a normal troponin very soon after symptom onset does not exclude infarction; the serial measurement is essential.
+:::
+
+::: example Chest pain and two troponins {#ex-nstemi}
+A 71-year-old woman presents with 2 hours of central chest heaviness and breathlessness, now settled. Her ECG shows 1 mm horizontal ST depression in V4–V6. Her hs-troponin T is 38 ng/L at presentation and 71 ng/L one hour later (the laboratory's 99th percentile is 14 ng/L). Her blood pressure is 138/80 mmHg and there are no signs of heart failure. What is the diagnosis, and what are the principles of management?
+
+::: solution
+She has ischaemic symptoms, ischaemic ECG changes (ST depression) and a **rising troponin** above the 99th percentile (38 to 71 ng/L, nearly doubling in an hour). This meets the definition of **acute myocardial infarction**; without ST elevation it is an **NSTEMI**.
+
+Principles of management (following NICE NG185 and local protocols):
+- **Antithrombotic treatment**: aspirin, a second antiplatelet agent (a P2Y12 inhibitor such as ticagrelor or prasugrel, or clopidogrel if bleeding risk is high) and an anticoagulant such as fondaparinux, adjusted for bleeding risk and planned angiography.
+- **Pain relief** and **oxygen only if she is hypoxic**; routine oxygen does not help and may harm.
+- **Risk assessment** with a validated score such as **GRACE**, which estimates 6-month mortality. NICE recommends considering coronary angiography (with PCI if indicated) within 72 hours for people with a predicted 6-month mortality above 3%, and immediate angiography for people who are clinically unstable. ESC guidance recommends an early invasive strategy within 24 hours for those at high risk.
+- **Echocardiography** to assess left ventricular function.
+- **Secondary prevention** started in hospital (see below).
+
+Her age and sex do not lower the priority: women with NSTEMI have historically been investigated and treated less intensively than men with the same risk, with worse outcomes.
+:::
+:::
+
+### STEMI and reperfusion
+
+A STEMI usually means a completely occluded artery. Muscle begins to die within about 20–30 minutes of complete occlusion, and the extent of necrosis grows over the following hours.
+
+::: theorem Time is muscle {#thm-remodel}
+The amount of myocardium that can be saved by reperfusion falls with the time from coronary occlusion to restoration of flow. Reperfusion within the first one to two hours saves the most muscle; benefit declines over the next hours and is small beyond about 12 hours, except in people with ongoing ischaemia.
+:::
+
 ::: proof
-The **wavefront phenomenon** (the Reimer and Jennings ischaemic-cascade experiments: 20 minutes' reversible-injury boundary, the ATP and membrane-pump failures of [[cell-biochemistry/membranes-transport]]-adjacent chapters, and the ATP-depletion-to-necrosis gradient) plus the **collateral-competition** (the donor-artery steal physiology the adenosine test exploits in reverse) give the infarct-size arithmetic — and reperfusion adds its own biology (the oxygen-paradox calcium and reactive-oxygen-injury of reperfusion, the no-reflow of microvascular plugging and oedema, the salvaged-but-stunned contractile state whose calcium-handling recovery takes days to weeks — [[physiology/muscle]]'s excitation–contraction machinery rebooting). The **remodelling half is the RAAS-and-sympathetic story of [[cardiovascular/circulation-blood-pressure]] and [[cardiovascular/heart-failure]]**: infarct expansion and dilatation, the Laplace wall-tension spiral, the eccentric hypertrophy and functional mitral regurgitation ([[cardiovascular/valve-congenital-disease]]), the aneurysm and its mural thrombus and systemic embolus ([[blood/thrombosis-anticoagulation]]), and the peri-infarct re-entry circuit that is the commonest substrate of the late sudden-death substrate — each step a drug class's indication: the **ACE/ARB, beta-blocker, aldosterone antagonist, SGLT2-inhibitor and statin post-infarct prescription being secondary prevention of remodelling, not decoration, and the ejection-fraction recheck at 6–12 weeks deciding the primary-prevention defibrillator (the 40-day and 90-day trial-rule wait for remodelling to declare itself — [[cardiovascular/arrhythmias]]).**
-:::
+After an artery occludes, the subendocardium, which has the highest oxygen demand and the most tenuous supply, dies first. Necrosis then spreads outwards towards the epicardium in a **wavefront**, as shown in experimental work by Reimer and Jennings in the 1970s. Within roughly 3–6 hours, most of the territory supplied by the occluded artery is necrotic, though the timing varies with collateral flow and with intermittent opening of the artery. Restoring flow early limits the wavefront and leaves the outer layers alive. A smaller infarct means better left ventricular function, less heart failure, fewer arrhythmias and lower mortality.
+
+The infarcted area then thins and expands over weeks, and the rest of the ventricle dilates and hypertrophies (**remodelling**), driven partly by neurohormones. ACE inhibitors, beta-blockers and mineralocorticoid receptor antagonists reduce adverse remodelling, which is why they form part of treatment after infarction with reduced ejection fraction ([[cardiovascular/heart-failure]]).
 :::
 
-::: example The atypical seven days {#ex-nstemi}
-An 81-year-old woman on apixaban for atrial fibrillation presents with 3 days of fatigue and anorexia; troponin rises 3 → 140 ng/L, ECG shows lateral ST depression, haemoglobin 82, and she has melaena on the ward.
-::: solution
-**NSTEMI (type 1 versus type 2 — the case lives on that fork) in a high-bleeding-risk, anticoagulated, anaemic patient.** The reasoning sequence: (1) **is the troponin rise injury-from-ischaemia or demand?** The anaemia and any sepsis or arrhythmia drive type 2 — and treating type 2 as type 1 (heparin, dual antiplatelets) in a bleeding 81-year-old is how the iatrogenic harm happens ([[clinical-skills/patient-safety]]'s medication-harm ward round); the ST depression, however, plus symptoms, argue a coronary component and get the GRACE-scored pathway. (2) **Stop the harm first: the melaena is the priority — resuscitate, transfuse to the cardiac-symptom window ([[blood/transfusion]]'s restrictive-versus-liberal trial arithmetic and its MINT-infarct sub-trial nuance), stop the apixaban, reverse only if life-threatening bleeding, urgent endoscopy with the cardiology-and-gastroenterology joint plan ([[gastrointestinal/gi-bleeding-cancer]]).** (3) **Coronary decision by the merged risk scores (the GRACE ischaemic versus the CRUSADE/Bleeding-Risk scores), with an early invasive strategy only once haemostasis allows, and an angiogram that may show the demand lesion (the old moderate stenosis with no thrombus — physiology, not plaque rupture) or an occluded circumflex (the lateral ST-depression territory's usual suspect, and a genuine type 1 requiring antithrombotic strategy).** (4) **The long answer: the AF's stroke risk versus the re-bleeding risk and whether the left atrial appendage occlusion device belongs in the plan; anaemia's iron and malignancy workup; and the geriatric-frailty goal-conversation ([[geriatrics-palliative/polypharmacy]])**. NSTEMI management is thus the chapter's ethics-and-physiology case: **the same ECG and a different bleeding stomach point to opposite next hours.**
-:::
-:::
+Under NICE and ESC guidance, for people presenting within **12 hours** of symptom onset with STEMI:
 
-::: example The third-night murmur {#ex-mechanical}
-Day 3 after an inferior infarct treated with thrombolysis (late presenter), a 66-year-old abruptly becomes breathless and hypotensive; new pansystolic murmur at the apex radiating to the axilla, pulmonary oedema on the film, and a raised JVP with large v waves.
-::: solution
-**Posteromedial-papillary-muscle rupture with acute severe mitral regurgitation** — the mechanical-complication clock's classic entry (days 1–5, the coagulative-necrosis softening maximum of [[pathology/cell-injury]]'s repair timeline, the inferior infarct's single-artery papillary supply — [[anatomy/thorax]]'s coronaries, the delayed-reperfusion and first-presentation and female and older risk factors). The physiology explains the signs: **a normal-size, non-compliant left atrium receiving a regurgitant jet at systemic pressure (the giant v wave of [[cardiovascular/cardiac-cycle]]'s JVP/wedge discussion — here read on the wedge trace), the giant-atrial-pressure pulmonary oedema without cardiomegaly, the low forward output masquerading as "cardiogenic shock", and the murmur that may be deceptively soft when the atrial and ventricular pressures equalise**. Diagnosis and management in parallel: **echocardiography (the flail leaflet and eccentric jet, TTE then TOE), urgent CT and angiography as the surgical map, mechanical support (the intra-aortic balloon's diastolic-coronary-plus-afterload logic and the modern percutaneous devices) and afterload reduction with inotropic and vasopressor balance, and emergency surgery (repair versus replacement — the guideline's cardiogenic-shock-and-mechanical-complication emergency, with the mortality figures that make the transfer conversation honest), the heart-team and the palliative-care alternative in the unfit (the mechanical complication's non-survivors are a large fraction, and that too must be spoken).** The sibling list the same clock carries: **ventricular-septal rupture (the pansystolic murmur with a step-up and shock), free-wall rupture (the tamponade and pulseless-electrical-activity death), and true aneurysm's later mural thrombus and arrhythmia and failure** — the exam's "day 3, new murmur, shock" is one of these three until imaging says otherwise ([[cardiovascular/heart-failure]]).
-:::
-:::
+- **Primary percutaneous coronary intervention (PCI)** is the preferred reperfusion strategy if it can be delivered within **120 minutes** of the time when fibrinolysis could have been given. The artery is opened with a balloon and stented.
+- If primary PCI cannot be delivered within that time, **fibrinolysis** is given (ideally within minutes of diagnosis, including before arrival at hospital), followed by transfer for angiography; if the ECG does not show resolution of ST elevation about 60–90 minutes after fibrinolysis, rescue PCI is considered.
+- **Dual antiplatelet therapy** (aspirin and a P2Y12 inhibitor), an anticoagulant during the procedure, pain relief and oxygen only if needed are given alongside.
 
-::: example The postpartum tear {#ex-scad}
-A 33-year-old, six weeks post-partum after an uneventful delivery, wakes with crushing chest pain; ECG shows anterior ST elevation, troponin is rising, and she has no vascular risk factors and a normal BMI.
+Systems of care matter as much as the procedure: ambulance ECG transmission, direct admission to a catheter laboratory and regional heart-attack centres have reduced the delays to reperfusion.
+
+## Complications of myocardial infarction
+
+- **Arrhythmias**: ventricular fibrillation, mostly in the first hours (the main cause of death before reaching hospital); atrial fibrillation; heart block, especially after inferior infarction.
+- **Heart failure and cardiogenic shock**: from loss of muscle; shock carries a high mortality ([[cardiovascular/heart-failure]]).
+- **Mechanical complications**, usually within the first week, now uncommon with prompt reperfusion: **papillary muscle rupture** causing acute severe mitral regurgitation; **ventricular septal rupture** causing a left-to-right shunt; **free-wall rupture** causing tamponade and often sudden death. A new murmur or sudden deterioration after an infarct needs urgent echocardiography.
+- **Left ventricular aneurysm** and **mural thrombus**, with a risk of embolic stroke.
+- **Pericarditis**: early, over the infarcted area; or later, an autoimmune pericarditis weeks afterwards (Dressler syndrome).
+
+::: example A new murmur on day 3 {#ex-mechanical}
+A 67-year-old man was admitted with an inferior STEMI and presented too late for reperfusion. On day 3 he becomes suddenly breathless with pulmonary oedema and hypotension. There is a new pansystolic murmur at the apex radiating to the axilla. What has happened and why?
+
 ::: solution
-**Primary angioplasty activation — and in the laboratory, expect spontaneous coronary artery dissection (SCAD)** until the angiogram says otherwise: the young-postpartum STEMI archetype (the peripartum hormonal and haemodynamic arterial-wall changes, the fibromuscular-dysplasia and connective-tissue associations, the multiparity and pre-eclampsia history — [[obstetrics-gynaecology/postnatal-period]] and [[cardiovascular/vascular-disease]]). Why the distinction changes management: **in SCAD the wire and balloon are weapons against a friable intima — the default is conservative (most dissected arteries heal spontaneously), with PCI or grafting reserved for ongoing ischaemia, left-main extension or instability; thrombolysis given before the laboratory is a hazard, not a cure; and dual antiplatelets, beta-blockade (the recurrence-reduction signal) and the surveillance angiogram form the medical programme, with the pregnancy and hormonal-contraception counselling and the fibromuscular-dysplasia and arterial screening (the head-to-pelvis CT angiogram hunt for concomitant aneurysms) that follow.** The differential branch of [[#def-acs]]'s MINOCA list runs the same clinical artery: **Takotsubo (the apical ballooning, the emotional trigger, the clean coronaries), coronary embolus (the peripartum cardiomyopathy's [[cardiovascular/heart-failure]] thrombus, the valve and the paradoxical route of [[cardiovascular/valve-congenital-disease]]'s shunts), and true plaque-rupture STEMI in the rare high-Lp(a) young patient ([[#def-athero]])** — one ECG, four diseases, and the catheter laboratory as the arbiter.
+The likely diagnosis is **papillary muscle rupture** with **acute severe mitral regurgitation**. The posteromedial papillary muscle usually has a single blood supply (from the right coronary or circumflex artery), so it is vulnerable in inferior infarction; the anterolateral muscle has a dual supply. Necrotic muscle is weakest a few days after infarction, before the scar forms.
+
+When a mitral leaflet loses its support, a large volume regurgitates into a **small, non-compliant left atrium** with every beat; left atrial pressure rises abruptly and causes pulmonary oedema, and forward stroke volume falls, causing hypotension. The murmur may be soft or even absent when the regurgitation is torrential, because the pressures in ventricle and atrium equalise quickly.
+
+The differential diagnosis is **ventricular septal rupture**, which causes a harsh pansystolic murmur at the left sternal edge, often with a thrill; echocardiography distinguishes them. Both need urgent surgical assessment, with haemodynamic support (for example mechanical circulatory support) while it is arranged.
 :::
 :::
 
 ::: quiz
-The strongest single reason a statin reduces acute coronary events beyond lowering the LDL number is:
-- [ ] Its anti-arrhythmic ion-channel effect
-- [x] Plaque stabilisation — reduced lipid core inflammation and oedema with thicker, more collagenous fibrous caps
-- [ ] Its direct coronary-dilating effect at treatment doses
-- [ ] Its reduction of the resting heart rate
+A 58-year-old man has had 45 minutes of chest pain. His ECG shows 3 mm ST elevation in V2–V5. The nearest PCI centre can open the artery within 70 minutes. What is the preferred reperfusion strategy?
+- [ ] Fibrinolysis now, because it is faster
+- [x] Primary percutaneous coronary intervention
+- [ ] Wait for the first troponin result before deciding
+- [ ] Medical treatment and angiography within 72 hours
 ::: solution
-Statins (and the lipid-lowering generally — the PCSK9-inhibitor and ezetimibe outcome trials track the millimoles, but the imaging biology is shared) **reduce plaque macrophage and lipid content and improve endothelial function, producing thicker, more stable caps — plus the acute-phase "pleiotropic" endothelial and anti-inflammatory effects, with the CANTOS-style inflammation axis now separately proven druggable ([[#def-athero]])**. They neither pace the heart nor stent it; and the point matters clinically because plaque stabilisation begins within weeks (the unstable-patient statin-loading trials), explains why events fall before the lipid panel finishes responding, and pairs with the colchicine and anti-inflammatory trial results as the field's second therapeutic axis.
+This is an anterior **STEMI** within 12 hours of onset, and primary PCI can be delivered well within 120 minutes, so **primary PCI** is preferred. Troponin is not needed to make the diagnosis or to start reperfusion; waiting for it wastes muscle. Angiography within 72 hours is a strategy for NSTEMI, not STEMI.
+:::
+:::
+
+## After the acute event
+
+Secondary prevention after myocardial infarction (NICE NG185) includes:
+
+- **Dual antiplatelet therapy**, aspirin plus a P2Y12 inhibitor, usually for up to 12 months, then aspirin long term, with the duration adjusted for bleeding risk.
+- A **high-intensity statin**.
+- An **ACE inhibitor** (or ARB if not tolerated).
+- A **beta-blocker**, particularly when left ventricular function is reduced; for people whose ejection fraction is preserved, recent randomised trials have questioned the benefit, and guidance is evolving.
+- A **mineralocorticoid receptor antagonist** and other heart-failure treatment when the ejection fraction is reduced with heart failure.
+- **Cardiac rehabilitation**: supervised exercise, education and psychological support. It reduces readmission and improves quality of life, but uptake is lower in women, older people and minority ethnic groups.
+- **Lifestyle**: stopping smoking (the single most effective measure), diet, activity, weight, and advice about driving, work, sex and returning to normal activities.
+
+Anxiety and depression are common after an infarct and are associated with worse outcomes; they should be asked about and treated.
+
+::: example Chest pain in a young woman {#ex-scad}
+A 39-year-old woman, 6 weeks after giving birth, develops sudden severe chest pain. She does not smoke and has no cardiovascular risk factors. Her ECG shows anterior ST elevation and troponin is raised. Angiography shows a long, smooth narrowing of the left anterior descending artery without typical atheroma. What is the likely diagnosis and how does its management differ from atherothrombotic infarction?
+
+::: solution
+The likely diagnosis is **spontaneous coronary artery dissection (SCAD)**: a haematoma within the arterial wall compresses the true lumen. It mainly affects women, often without conventional risk factors, and is associated with pregnancy and the postpartum period, fibromuscular dysplasia, and extreme physical or emotional stress. It is an important cause of myocardial infarction in women under 50.
+
+Management differs because the problem is not plaque and thrombus. Most dissections **heal spontaneously** over weeks, and stenting can extend the dissection, so a conservative approach is preferred when the patient is stable and flow is preserved; PCI or bypass is reserved for ongoing ischaemia or instability. The usual atherosclerosis-based secondary prevention (such as high-intensity statin) is not automatically appropriate. Beta-blockers are commonly used, and screening for fibromuscular dysplasia elsewhere is recommended. Care should involve a specialist service.
 :::
 :::
 
 ::: history
-The disease's concept emerged with **Heberden's and Parr's** 18<sup>th</sup>-century chest-pain nosology, **Parry's** post-mortem coronaries, and **Herrick's** 1910 coronary-thrombosis thesis that made the infarct a medical diagnosis; the mid-century triad — **Master's** exercise test and the epidemiological revolution of the **Framingham Heart Study** (the risk-factor concept itself) and Keys's diet–cholesterol travels and seven-countries study — turned a fatalistic "coronary occlusion" into a modifiable disease. **DeBakey's** endarterectomy era, **Sones's and Judkins's** angiographic catheter technique, **Dotter's** first angioplasty, **Grüntzig's** 1977 balloon and the stent era (Palmaz, Sigwart) and drug-eluting refinements, and **Furchgott's** endothelial nitric oxide (the 1980 discovery that reframed the artery as an organ and the nitrate-and-adenosine physiology of this chapter) built the tools; **the thrombolysis era (the ISIS and GISSI trials, the streptokinase and tissue-plasminogen-activator networks, then the primary-PCI trial synthesis), Braunwald's unstable-angina and NSTEMI framework, and the reperfusion-biology laboratory (Jennings's and Reimer's wavefront and the Yellon and Hausenloy reperfusion-hallmark era)** — converted the chapter into a time-critical system, and **the cholesterol-hypothesis endgame (the statin trials of the 1990s onward, the PCSK9 discovery from the French kindreds and the LDL-receptor genetics of [[genetics/mendelian-inheritance]] and the evolocumab and FOURIER trials) and CANTOS/colchicine's inflammation proof** completed the three-axis therapy — lipids, thrombosis, inflammation — that the chapter teaches.
+William Heberden described "a disorder of the breast" in 1768, naming it angina pectoris. In 1912 James Herrick in Chicago argued that a coronary thrombosis need not be immediately fatal and described its clinical picture. Nikolai Anitschkow showed in 1913 that feeding cholesterol to rabbits produced arterial lesions resembling human atheroma. Mason Sones performed selective coronary angiography in 1958, René Favaloro developed coronary artery bypass grafting with vein grafts in the late 1960s, and Andreas Gruentzig performed the first coronary angioplasty in 1977. The ISIS-2 trial (1988) showed that streptokinase and aspirin each reduced mortality after myocardial infarction and that their effects added, and the Scandinavian Simvastatin Survival Study (4S, 1994) showed that lowering cholesterol reduced death in people with coronary disease.
 :::
 
 ## Where this leads
 
-Endothelial and shear biology in [[pathology/haemodynamics]]; the inflammatory axis in [[immunology/innate-immunity]]; the occlusion-ECG reading in [[cardiovascular/electrophysiology-ecg]]; thrombolysis and anticoagulation pharmacology and bleeding in [[blood/thrombosis-anticoagulation]]; coronary anatomy and dominance in [[anatomy/thorax]]; the infarct's cellular timeline in [[pathology/cell-injury]]; the failure and arrhythmia sequelae in [[cardiovascular/heart-failure]] and [[cardiovascular/arrhythmias]]; risk-calculation epidemiology in [[epidemiology-ebm/observational-studies]] and [[epidemiology-ebm/randomised-trials]].
+Heart failure after infarction is developed in [[cardiovascular/heart-failure]], the arrhythmias in [[cardiovascular/arrhythmias]], and atherosclerosis in other arterial beds in [[cardiovascular/vascular-disease]] and [[nervous-system/stroke]]. The antiplatelet and anticoagulant drugs are discussed in [[blood/thrombosis-anticoagulation]], and the interpretation of diagnostic tests in [[epidemiology-ebm/diagnostic-tests]].
 
 ::: summary
-- Atherosclerosis is a lifetime, dose-dependent response to retained apoB lipoproteins, modulated by pressure, glucose, smoking and inflammation; risk is continuous, calculable, and best judged with anatomy (calcium score) when calculators are borderline.
-- Chronic ischaemia is a supply–demand disease with a physiological threshold: flow reserve, FFR and the functional tests decide which stenosis matters; revascularise for symptoms and ischaemic burden on top of maximal medical therapy, and save surgery's survival benefit for the left-main and complex multivessel, especially diabetic, anatomy.
-- Acute syndromes are plaque-thrombus events: STEMI is an occlusion with a minute-budget; NSTEMI is risk-scored timing; type 2 injury and MINOCA and dissection are the differentials the catheter laboratory keeps.
-- Post-infarct death and disability come from remodelling, mechanical rupture (the days-1–5 murmurs), and peri-infarct re-entry — and the neurohormonal, antiplatelet, lipid and inflammation prescription is secondary prevention in the literal, trial-proven sense.
+- Atherosclerosis is a chronic inflammatory disease driven by retained LDL in the intima; acute events follow rupture or erosion of vulnerable plaques.
+- Risk factors multiply; QRISK3 estimates 10-year risk. NICE offers a statin when it is 10% or more, and high-intensity statin in secondary prevention aiming for LDL cholesterol of 2.0 mmol/L or less (non-HDL 2.6 or less).
+- Ischaemia is an imbalance of supply and demand; the subendocardium is most vulnerable; FFR of 0.80 or less marks a functionally significant stenosis.
+- Typical angina is constricting, exertional and relieved by rest or GTN; NICE uses CTCA first-line, then functional testing. Treatment relieves symptoms (GTN, beta-blocker or calcium channel blocker) and prevents events (aspirin, statin, risk-factor control).
+- Myocardial infarction is a rise or fall of troponin above the 99th percentile with evidence of ischaemia; type 2 infarction is supply–demand mismatch. A raised troponin alone means injury, not necessarily infarction.
+- STEMI within 12 hours: primary PCI if deliverable within 120 minutes of when fibrinolysis could be given, otherwise fibrinolysis. NSTEMI: antithrombotic treatment, GRACE risk assessment, angiography within 72 hours if 6-month mortality is above 3%.
+- Complications include ventricular arrhythmias, heart failure, mechanical rupture and pericarditis; secondary prevention combines antiplatelets, statin, ACE inhibitor, beta-blocker where indicated, rehabilitation and lifestyle change.
 :::
 
 ## Exercises
 
-::: exercise Explain the flow reserve {level=1}
-A 70 % stenosis produces angina only on running uphill, not walking. Explain with the chapter's two-curve physiology, and name two conditions that lower the angina threshold without changing the stenosis.
+::: exercise Typical or not {level=1}
+Classify each chest pain using NICE's three features: (a) tight central chest pain on walking briskly, relieved by 2 minutes' rest; (b) sharp left-sided pain lasting seconds, at rest, worse on pressing the chest wall; (c) heaviness on exertion lasting 20 minutes after stopping.
 ::: solution
-At rest the microcirculation is only partly dilated and reserve remains; hyperaemia (uphill running) demands 3–4× flow, which the stenosis's fixed resistance plus recruited vasodilation cannot deliver below its collapse point — ischaemia appears exactly in the steep zone of the [[#def-ischemia]]/widget curve, and the **stenosis becomes flow-limiting only when total resistance (lesion + maximally dilated bed) exceeds supply capacity**. Threshold-lowering conditions: **anaemia and hypoxia (less content — Fick's supply term, [[physiology/integrative-physiology]]), tachyarrhythmia and hypertension (higher demand and lower diastolic perfusion time/pressure), vasoconstriction (cold, smoking, cocaine — the spasm-plus-demand combination), and left-ventricular hypertrophy or aortic stenosis (the Laplace and compression penalties of [[cardiovascular/valve-congenital-disease]] — angina with normal coronaries' commonest explanation).** Clinically this is why "worse than usual angina" prompts the full re-check of the patient, not just the artery ([[cardiovascular/electrophysiology-ecg]]'s demand-ischaemia troponin rises belong to the same arithmetic).
+(a) Constricting, exertional, relieved by rest: **typical angina** (three features).
+
+(b) Not constricting, not exertional, not relieved by rest: **non-anginal chest pain**. Chest wall tenderness suggests a musculoskeletal cause.
+
+(c) Constricting and exertional, but not relieved within about 5 minutes: two features, **atypical angina** by NICE's scheme. However, pain persisting for 20 minutes raises the possibility of an acute coronary syndrome and needs same-day assessment.
 :::
 :::
 
 ::: exercise Interpret the FFR {level=1}
-A left-anterior-descending lesion looks 70 % on angiography; wire fractional-flow reserve distally during adenosine hyperaemia reads 0.74; after stenting it reads 0.96. Explain both numbers and why the visual estimate is untrustworthy.
+At angiography, a 60% narrowing of the left anterior descending artery has a fractional flow reserve of 0.72, and an 80% narrowing of a small diagonal branch has an FFR of 0.88. Which lesion is functionally significant?
 ::: solution
-FFR = **(distal pressure − filling offset)/aortic pressure during maximal hyperaemia ≈ the fraction of maximal flow the lesion permits** — 0.74 is below the ≤0.80 ischaemia line, so the lesion is functionally significant and worth stenting (the adenosine infusion is the same coronary-dilation-reserve pharmacology as the perfusion-imaging stress agent — [[#def-ischemia]]); 0.96 post-stent documents physiological success. Visual estimates fail because **angiography is a luminogram — projection-dependent, atherosclerotic-remodelling-blind (the Glagov outward expansion of [[pathology/haemodynamics]] keeps the lumen normal until the plaque is burdenful), diffuse-disease-blind (no normal reference segment), and non-physiological (no flow or demand in the picture)** — hence the physiology-first practice and the calcium-score and CT-FFR imaging chapters' analogous arguments ([[clinical-skills/medical-imaging]]).
+The **left anterior descending lesion** (FFR 0.72, at or below 0.80) is functionally significant, despite looking less severe. The diagonal lesion (FFR 0.88) is not, despite its appearance; a small branch supplies little muscle, so even a tight narrowing may cause little pressure loss at maximal flow. Revascularisation decisions guided by FFR avoid treating lesions that do not cause ischaemia.
 :::
 :::
 
-::: exercise The troponin fork {level=2}
-Give four mechanisms of troponin elevation without acute coronary thrombosis, and the two ECG-plus-history clues that separate each from a type 1 NSTEMI in a real ward patient.
+::: exercise Post-test probability {level=2 check="round(100*0.3*0.68/(0.3*0.68+0.7*0.23))"}
+A test for coronary disease has sensitivity 68% and specificity 77%. A patient's pre-test probability is 30%. Calculate the probability of coronary disease after a positive result, as a percentage rounded to the nearest whole number.
+::: hint
+Of 100 patients, 30 have disease. How many true positives and false positives are there?
+:::
 ::: solution
-**Type 2 demand ischaemia** (sepsis, pulmonary embolus, tachyarrhythmia, hypertensive crisis, anaemia) — the fever and source and hypoxia and the no-territory ST pattern; **myocarditis and Takotsubo** — the young-to-middle viral prodrome or emotional trigger, the diffuse ST-T changes and apical ballooning, the clean coronaries of [[#def-acs]]'s MINOCA list; **heart failure and myocardial strain** — the chronic rise with the clinical congestion and the flat serial delta; **renal failure** — the chronically elevated high-sensitivity value with a stable baseline (the delta rule's whole purpose — 99th-percentile-with-rise-and-fall, [[clinical-skills/laboratory-tests]]); plus ablation/cardioversion, contusion, rhabdomyolysis-adjacent assay issues and critical illness. The discriminators that matter at 3 a.m.: **the dynamic ST-T change in a coronary territory (type 1) versus the demand context with a rising trend that follows the illness's course, and the serial-delta shape (the rise-and-fall of an event versus a plateau)**; management follows the fork — treat the underlying illness and de-escalate antithrombotics in type 2, and score-and-activate in type 1 ([[emergency-critical-care/acute-assessment]], [[infectious-diseases/fever-sepsis]]).
+Of 100 such patients, 30 have disease; $30 \times 0.68 = 20.4$ test positive (true positives). Of the 70 without disease, $70 \times 0.23 = 16.1$ test positive (false positives). Post-test probability $= 20.4/(20.4 + 16.1) = 0.559$, which is **56%**. A positive result raises the probability from 30% to 56%, which is useful but far from certain; this is one reason NICE prefers more accurate tests.
 :::
 :::
 
-::: exercise Antiplatelet arithmetic {level=2}
-A drug-eluting-stent patient on aspirin and clopidogrel needs urgent surgery for a bleeding diverticulitis at day 21 post-stent. State the risk you are balancing and the guideline-shaped compromise.
+::: exercise LDL arithmetic {level=2 check="4.2*0.5*0.76"}
+After a myocardial infarction, a man's LDL cholesterol is 4.2 mmol/L. Assume (as an illustrative value) that a high-intensity statin lowers his LDL by 50% and that adding ezetimibe then lowers the remaining LDL by a further 24%. Calculate his LDL cholesterol on both drugs in mmol/L (exact value), and say whether he has reached the NICE secondary-prevention target.
 ::: solution
-**Stent thrombosis (the catastrophic — often fatal — occlusion of a thrombogenic polymer-and-strut surface whose endothelialisation takes months; highest in the first weeks and worst after abrupt withdrawal) versus surgical and anaesthetic bleeding on dual antiplatelets** (the P2Y12's irreversible platelet block — [[blood/haemostasis-bleeding]]'s platelet pharmacology). The compromise: **continue aspirin throughout if at all possible, delay elective surgery to the minimum dual-therapy window (the modern-generation-stent guidelines' shortenable windows — as short as 1–3 months in high-bleeding-risk patients versus the older 6–12; day 21 is inside the danger zone), run the urgent operation on aspirin alone with platelet transfusion and local and surgical haemostasis reinforced (platelets are less useful if the P2Y12 is present late — the timing caveat), restart the P2Y12 as soon as haemostasis allows (a days, not weeks, ambition), and involve the interventional cardiologist before, not after, the decision** — with the heparin-bridging logic of [[blood/thrombosis-anticoagulation]] applying only to the anticoagulant, never as an antiplatelet substitute (the classic exam trap).
+On the statin: $4.2 \times 0.5 = 2.1$ mmol/L, which is above the target of 2.0 mmol/L or less. Adding ezetimibe: $2.1 \times 0.76 = 1.596$ mmol/L, which is **1.596 mmol/L**, about 1.6 mmol/L, so the target is reached. Individual responses vary, so lipids are checked after each change.
 :::
 :::
 
-::: exercise Prinzmetal's lessons {level=2}
-A 38-year-old smoker has recurrent 4 a.m. chest pain with transient ST elevation, normal angiogram and troponin twice negative; smoking cessation aside, name the mechanism, the diagnostic provocation option, the treatment and the one drug class to be cautious with.
+::: exercise The troponin puzzle {level=2}
+Explain the likely meaning of each troponin pattern: (a) a 78-year-old with chronic kidney disease stage 4 and no chest pain has hs-troponin T of 32 and then 33 ng/L three hours apart (99th percentile 14); (b) a 45-year-old with pleuritic pain, hypoxia and a swollen calf has troponin 40 rising to 62 ng/L; (c) a 60-year-old with an hour of chest pain has troponin 3 ng/L at presentation and a normal ECG.
 ::: solution
-**Coronary vasospasm (Prinzmetal/variant angina; the endothelial dysfunction plus smooth-muscle hyper-reactivity of smoking's Rho-kinase and NO-degradation biology, the circadian and cold and triptan and ergot and cocaine and 5-FU/capecitabine chemotherapeutic triggers)** — a MINOCA and an ischaemia-with-normal-coronaries cause at once ([[#def-acs]]). Diagnostic: **ST capture during pain, and provocation with intracoronary acetylcholine or ergometrine in the laboratory when the diagnosis is consequential.** Treatment: **high-dose dihydropyridine calcium-channel blocker (the amlodipine/diltiazem backbone — the smooth-muscle relaxation pharmacology) plus long-acting nitrate and nicotine replacement done carefully; outcome is generally good with spasm controlled.** Caution class: **non-selective beta-blockers (propranolol's α-unopposed vasoconstriction and the loss of β₂-mediated coronary dilation) can aggravate spasm — the same unopposed-α physiology as the phaeochromocytoma's drug rule ([[physiology/autonomic-nervous-system]]); and the ergot and triptan and cocaine avoidance writes itself.** The teaching: a normal angiogram does not end the chest-pain differential, and the [[cardiovascular/circulation-blood-pressure]] endothelium is a drug-target organ ([[cardiovascular/vascular-disease]]).
+(a) A **stable, chronically raised** value (change of 1 ng/L) is common in kidney disease. Without a rise or fall or symptoms, this is **chronic myocardial injury**, not infarction.
+
+(b) A rising troponin with features of **pulmonary embolism**. Right ventricular strain causes **acute myocardial injury**; troponin here marks severity rather than coronary disease. CT pulmonary angiography is needed.
+
+(c) A very low value at presentation in rapid rule-out pathways may allow infarction to be excluded, **but only if** the time since symptom onset is long enough according to the assay's protocol; at one hour after onset a repeat sample is usually required. The ECG and history must also be considered.
 :::
 :::
 
-::: exercise Sudden death prevention {level=2}
-Name the three post-infarct decision points for sudden-cardiac-death risk and what each leads to (the ejection fraction, the timing rule, and the QRS/bundle question).
+::: exercise Infarct territory and rhythm {level=2}
+Explain why inferior myocardial infarction is often associated with bradycardia and heart block, why these are usually transient, and why anterior infarction with new heart block carries a worse prognosis.
 ::: solution
-**(1) The ejection fraction at 40 days/3 months post-infarct and post-revascularisation (the 40-day and 90-day trial windows — remodelling must declare itself before an implantable cardioverter-defibrillator's primary-prevention benefit is judged: EF ≤35 % with NYHA II–III on optimized therapy — the MADIT-II and SCD-HeFT families); (2) the syncope and arrhythmia findings (spontaneous ventricular tachycardia or fibrillation not within the acute-infarct window = secondary prevention, an immediate device question — [[cardiovascular/arrhythmias]]); (3) the electrical-substrate markers — the non-sustained VT plus programmed-stimulability (MUSTT logic) and the QRS-burden and early-repolarisation and Brugada patterns of [[cardiovascular/electrophysiology-ecg]].** The full answer adds the **beta-blocker and aldosterone and mineralocorticoid and wearable-device interim bridges, the resynchronisation question where wide-QRS dyssynchrony coexists ([[cardiovascular/heart-failure]]), and the family conversation (the ischaemic substrate needs no genetic work-up, but the young unexplained case reopens the channelopathy question — [[genetics/non-mendelian-inheritance]])**.
+In most people the **right coronary artery** supplies the SA node and the **AV nodal artery**, and inferior infarction also increases **vagal tone** (the Bezold–Jarisch reflex from receptors in the inferior wall). Block occurs at the level of the AV node, the escape rhythm is junctional with a narrow QRS and reasonable rate, and the node usually recovers as oedema and vagal activity settle.
+
+In **anterior infarction**, heart block means that the infarct has destroyed the **septum and bundle branches**. Block is below the AV node, the escape rhythm is ventricular, slow and unreliable, and the extent of muscle damage is large. It indicates a big infarct with a high risk of heart failure and death, and usually needs pacing.
 :::
 :::
 
-::: exercise The woman with angina and clean arteries {level=2}
-A 61-year-old diabetic woman has typical exertional angina, an ischaemic stress study, and normal coronary angiogram. Name the syndrome, the mechanism, two diagnostic tools, and the current evidence-based treatment targets.
+::: exercise Secondary prevention plan {level=2}
+List the medicines and non-drug measures that a 55-year-old man should be offered after an uncomplicated anterior STEMI treated by primary PCI, with an ejection fraction of 45%. For each drug, give its purpose.
 ::: solution
-**Ischaemia with no obstructed coronary arteries (INOCA), microvascular-angina phenotype (the ~half of the "angina with normal coronaries" population that is microvascular dysfunction — impaired coronary-flow reserve, hyperaemic resistance and vasospastic components; the diabetes, hypertension, oestrogen-loss and endothelial-risk substrate of [[#def-athero]] and [[cardiovascular/vascular-disease]]).** Mechanism: **microvascular constriction and rarefaction and impaired metabolic dilation (the adenosine pathway's end-organ arm — [[cardiovascular/circulation-blood-pressure]]) yielding true ischaemia, true events (these patients' heart-failure-with-preserved-ejection-fraction and infarction risk is elevated) and dismissed symptoms.** Tools: **coronary-flow-reserve and index-of-microcirculatory-resistance wire studies, and cardiac magnetic resonance's myocardial-blood-flow mapping (the research-to-clinic quantitative perfusion)** with PET flow reserve the classical reference standard. Treatment: **aggressive risk modification (the statin, pressure, glycaemia — the endothelial-NO programme, with the SGLT2 and GLP1 classes' emerging cardiorenal evidence of [[endocrine/diabetes]]), antianginals (beta-blocker, calcium-blocker — noting the spasm-overlap caution, trimetazidine and nicorandil and imipramine's neuromodulator role, the ranolazine data), and the symptom-trajectory follow-up that takes the pain seriously.** The teaching: **the angiogram answers "which artery", never "which tissue is starving" — the chapter's supply–demand physiology is the disease, and the stenosis only its commonest cause ([[clinical-skills/clinical-reasoning]]'s dual-process caution).**
+- **Aspirin** (lifelong) and a **P2Y12 inhibitor** (usually for up to 12 months): prevent stent thrombosis and further atherothrombotic events.
+- **High-intensity statin**: lower LDL and stabilise plaques; target LDL 2.0 mmol/L or less.
+- **ACE inhibitor**: reduces adverse remodelling and recurrent events, especially with reduced ejection fraction.
+- **Beta-blocker**: reduces arrhythmias, ischaemia and remodelling; indicated with an ejection fraction of 45% (mildly reduced).
+- Treatment for heart failure if symptoms develop, with repeat assessment of left ventricular function.
+- **Cardiac rehabilitation**, **stopping smoking**, diet, activity, weight, blood pressure and glucose control, mental health support, and advice on driving and return to work according to current rules.
 :::
 :::
 
-::: exercise Design the secondary-prevention bundle {level=3}
-Discharge planning after an uncomplicated STEMI with a drug-eluting stent in a 55-year-old. Build the full prevention bundle with physiological justification for each component, the follow-up timing, and the two conversations the bundle omits but should contain.
+::: exercise Chest pain in the emergency department {level=3}
+A 52-year-old man presents with 3 hours of severe central chest pain radiating to the back between the shoulder blades. His blood pressure is 172/96 mmHg in the right arm and 138/80 mmHg in the left. His ECG shows sinus tachycardia with no ST elevation, and troponin is slightly raised. Construct a differential diagnosis of acute chest pain, identify the most important diagnosis here and explain why antithrombotic treatment for ACS could be harmful.
+::: hint
+What does a difference in pressure between the arms suggest?
+:::
 ::: solution
-**Antiplatelets: dual therapy (aspirin plus a P2Y12 — the ticagrelor/prasugrel-versus-clopidogrel choice by ischaemic and bleeding risk — for the guideline window with the de-escalation and bleeding-adjusted strategies, then lifelong single aspirin) — the stent's [[#ex-nstemi]]-versus-thrombosis arithmetic. Lipids: high-intensity statin now (the unstable-plaque stabilisation of [[#def-acs]]'s quiz) with an LDL target and ezetimibe/PCSK9/inclisiran escalation, and the familial-hypercholesterolaemia and family-screening decision if LDL and pedigree fit ([[genetics/mendelian-inheritance]]). Neurohormonal: ACE/ARB (remodelling prevention — [[#thm-remodel]], with the [[cardiovascular/hypertension]] targets), beta-blocker (the demand reduction, anti-remodelling and anti-arrhythmic triple until the EF question is settled), aldosterone antagonist for the EF-and-diabetic indication (the EPHESUS/RALES logic). Glucose and heart: the SGLT2-inhibitor and metformin architecture where diabetes or its border exists ([[endocrine/diabetes]]). Lifestyle and rehabilitation: the exercise-based cardiac-rehab programme (the event-reduction and quality-of-life data — [[public-health/prevention-promotion]]), smoking cessation with pharmacotherapy, the diet and alcohol and vaccination and driving and work certificates (the DVLA-style and occupational rules that belong to the consultation, not the formulary). Follow-up: the 6–12-week EF recheck (the device decision of the previous exercise), the stent and antiplatelet clinic and the medication-reconciliation and adherence review. And the two omitted conversations: **the partner-and-family risk arithmetic (the shared-behaviour and shared-genetics risk — the screen-and-treat family meeting) and the meaning conversation — the patient's fear of the next pain, the sexual-life and anxiety-and-depression screening (the double-event-risk of post-infarct depression), and where on the record the "what if the next one is big" question belongs ([[clinical-skills/communication]]).**
+**Differential diagnosis of acute chest pain**: acute coronary syndrome; **aortic dissection**; pulmonary embolism; pericarditis or myocarditis; tension pneumothorax; oesophageal rupture; and less dangerous causes such as gastro-oesophageal reflux, musculoskeletal pain and anxiety.
+
+The features here, pain **radiating to the back**, of sudden severe onset, with **unequal arm pressures** (a difference above 20 mmHg) and hypertension, point to **acute aortic dissection**. A dissection flap can compromise the subclavian artery and so the pulse and pressure in one arm. A slightly raised troponin does not exclude dissection: a proximal dissection can involve a coronary ostium (most often the right), and hypotension or tachycardia can cause myocardial injury.
+
+**Why ACS treatment could harm**: antiplatelet drugs, anticoagulants and especially fibrinolytics greatly increase bleeding into the dissected aortic wall and the risk of rupture or tamponade. Before giving these drugs to someone with atypical features, dissection should be considered and, if suspected, excluded urgently with **CT angiography of the aorta** ([[cardiovascular/vascular-disease]]). A type A dissection needs emergency surgery; management includes controlling heart rate and blood pressure.
 :::
 :::

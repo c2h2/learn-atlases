@@ -6,11 +6,11 @@
   "level": 2,
   "order": 110,
   "tagline": "The heart and circulation, the ECG, hypertension, coronary disease, heart failure and arrhythmias",
-  "summary": "Cardiovascular disease is the leading cause of death worldwide. This course explains the heart and circulation and their control, the ECG and cardiac investigations, and the causes, presentation and treatment of hypertension, atherosclerosis and coronary disease, heart failure, arrhythmias, valve and congenital heart disease, and diseases of the blood vessels.",
+  "summary": "Cardiovascular disease is the leading cause of death worldwide. This course explains how the heart and circulation work and how they are controlled, how to read the ECG, and the causes, recognition and principles of management of hypertension, coronary artery disease, heart failure, arrhythmias, valve and congenital heart disease, and diseases of the arteries and veins.",
   "overview": [
-    "The cardiovascular system is two problems in one: a pump with its valves and chambers, and a plumbing tree whose pressures and resistances determine where blood goes. Clinical cardiology follows the same division — the patient with a failing pump, and the patient with an occluded or leaking vessel — and this course keeps both in view while teaching the underlying physiology.",
-    "It begins with the cardiac cycle and the pressure-volume loops that define systole and diastole, then electrophysiology and the ECG, because the electrocardiograph turned an invisible rhythm into a visible trace any clinician can read. From there: haemodynamics and blood pressure control; hypertension as the great population risk factor; coronary disease from plaque rupture to infarction; heart failure as the final common pathway, with its neurohormonal vicious circles; the arrhythmias by mechanism — re-entry, automaticity, triggered activity; and valve and congenital disease, where anatomy dictates the murmur and the physiology dictates the operation. A final chapter covers the aorta, arteries and veins: aneurysm, dissection, embolus, thrombosis and ischaemic limbs.",
-    "Each chapter works from mechanism to bedside to trial: why the JVP waveform looks as it does, why an aortic stenosis murmur radiates to the carotids, why four drug classes reduce mortality in heart failure, and what numbers an echocardiogram or an ejection fraction actually carries. Quantitative work — cardiac output by Fick, afterload, clearance of troponin, thrombolysis timing — is expected throughout."
+    "The cardiovascular system has two parts: a pump, the heart, with its chambers, valves and electrical system; and a network of vessels whose pressures and resistances decide where the blood goes. Clinical cardiology follows the same division. Some patients have a failing or misfiring pump; others have a blocked, leaking, torn or clotted vessel. This course keeps both in view and teaches the physiology that explains them.",
+    "It starts with the cardiac cycle, cardiac output and the pressure–volume loop, then the cardiac action potentials and the 12-lead ECG. Next come blood flow, blood pressure and its regulation over seconds, hours and days. The clinical chapters follow: hypertension, the largest modifiable cause of cardiovascular disease; atherosclerosis, angina and the acute coronary syndromes; heart failure and the neurohormonal model that explains why four drug classes prolong life; the arrhythmias and atrial fibrillation; valve disease, endocarditis, hypertrophic cardiomyopathy and congenital heart disease; and finally aneurysm, dissection, peripheral arterial disease and venous thromboembolism.",
+    "Each chapter moves from mechanism to bedside: why the heart sounds and the jugular venous pulse look and sound as they do, why aortic stenosis causes syncope on exertion, how a troponin result should be read, and how much a treatment reduces absolute risk. Worked cases and calculations (cardiac output by Fick, QTc, valve area, ABPI, numbers needed to treat) appear throughout. UK guidance from NICE is followed, with European and American guidance noted where they differ; the course explains the principles of management and is not a substitute for current local guidelines."
   ],
   "prerequisites": [
     "anatomy",
@@ -19,15 +19,16 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Describe the cardiac cycle on pressure–volume terms, and explain heart sounds, the JVP waveform and the arterial pulse in terms of valvular and chamber events.",
-    "Explain cardiac electrophysiology — pacemaker and myocyte action potentials, conduction, the conducting axes — and construct the standard 12-lead ECG, recognising ischaemia, hypertrophy, bundle branch block and the common arrhythmias.",
-    "State the determinants of blood pressure and its short- and long-term regulation, including the renin–angiotensin–aldosterone system and baroreceptor reflexes.",
-    "Classify hypertension, explain end-organ damage, and outline the principles — not patient-specific instructions — by which current guidelines choose treatment.",
-    "Explain the pathogenesis of atherosclerosis and the acute coronary syndromes, the significance of troponin kinetics, and the reasoning behind reperfusion strategies and secondary prevention.",
-    "Define heart failure, distinguish systolic from diastolic dysfunction, trace the neurohormonal model that explains its progression, and list the drug classes that alter its natural history.",
-    "Classify arrhythmias by mechanism and origin, explain the logic of antiarrhythmic drug classes, and state the principles of anticoagulation in atrial fibrillation including stroke-risk scoring.",
-    "Correlate valve lesion anatomy and haemodynamics with murmur timing, radiation and dynamic manoeuvres, and recognise the physiology of the common congenital shunts.",
-    "Describe aneurysm, dissection, acute limb ischaemia, venous thrombosis and chronic venous disease, and the surgical and endovascular options in principle."
+    "Describe the phases of the cardiac cycle and explain the heart sounds, the jugular venous pulse and the arterial pulse in terms of valve and chamber events.",
+    "Explain the determinants of cardiac output, the Frank–Starling principle, the Fick principle and the pressure–volume loop.",
+    "Explain cardiac action potentials and the conduction system, and interpret a 12-lead ECG systematically, including rate, axis, intervals, QTc, bundle branch block, ischaemia and electrolyte changes.",
+    "Apply the relationships between pressure, flow and resistance to blood pressure, oedema and shock, and describe the short- and long-term regulation of blood pressure.",
+    "Classify and confirm hypertension using NICE NG136, assess target-organ damage and secondary causes, and outline the principles of drug treatment.",
+    "Explain the pathogenesis of atherosclerosis, investigate stable chest pain, interpret troponin, and outline reperfusion and secondary prevention in the acute coronary syndromes.",
+    "Define and classify heart failure, explain its neurohormonal basis, interpret natriuretic peptides, and outline the medicines and devices that change its course.",
+    "Recognise the common bradycardias and tachycardias, explain the mechanisms of arrhythmia, and apply stroke-risk scoring and anticoagulation principles in atrial fibrillation.",
+    "Correlate valve lesions with their haemodynamics and murmurs, recognise infective endocarditis and hypertrophic cardiomyopathy, and explain the physiology of common congenital heart lesions.",
+    "Recognise peripheral arterial disease, acute limb ischaemia, aortic aneurysm and dissection, and venous thromboembolism, and outline the principles of their investigation and management."
   ],
   "chapters": [
     {
@@ -111,32 +112,32 @@
   "history": [
     {
       "year": 1628,
-      "title": "Exercitio Anatomica",
-      "detail": "William Harvey shows that the heart is a pump whose valves enforce one-way flow, that arterial blood flow is continuous and comes from the ventricle, and that blood returns in veins — closing the circle and moving physiology from qualitative to quantitative argument.",
+      "title": "The circulation of the blood",
+      "detail": "William Harvey's De Motu Cordis argues from the valves of the heart and veins, and from the volume pumped with each beat, that the blood moves in a circle, driven by the heart.",
       "people": [
         "William Harvey"
       ]
     },
     {
       "year": 1733,
-      "title": "Measuring the pressure",
-      "detail": "Stephen Hales cannulates a horse's artery and watches the mercury column rise and fall with the pulse, recording pulse rate changes on exercise and describing experimental shock — blood pressure becomes a measurable quantity.",
+      "title": "Measuring blood pressure",
+      "detail": "Stephen Hales connects a glass tube to the artery of a horse and sees the blood rise about eight feet and rise and fall with each beat, the first measurement of arterial pressure.",
       "people": [
         "Stephen Hales"
       ]
     },
     {
-      "year": 1816,
-      "title": "The stethoscope",
-      "detail": "René Laennec, unwilling to place his ear on a young woman's chest, rolls paper into a cylinder and finds sound travels well enough; he then spends years correlating chest sounds with findings at autopsy in the hospital where he works, founding cardiac auscultation.",
+      "year": 1785,
+      "title": "The foxglove",
+      "detail": "William Withering publishes An Account of the Foxglove, describing how digitalis relieves the oedema of 'dropsy', much of which was heart failure.",
       "people": [
-        "René Laennec"
+        "William Withering"
       ]
     },
     {
       "year": 1896,
-      "title": "The cuff at the clinic door",
-      "detail": "Scipione Riva-Rocci introduces the inflatable arm cuff that measures systolic pressure without opening an artery; with Nikolai Korotkoff's sounds (1905) it turns hypertension into a diagnosis any clinic can make — a condition that had barely existed before the instrument.",
+      "title": "The cuff",
+      "detail": "Scipione Riva-Rocci introduces the inflatable arm cuff; in 1905 Nikolai Korotkoff describes the sounds heard below it, making blood pressure measurement routine.",
       "people": [
         "Scipione Riva-Rocci",
         "Nikolai Korotkoff"
@@ -145,15 +146,23 @@
     {
       "year": 1903,
       "title": "The electrocardiogram",
-      "detail": "Willem Einthoven at Leiden records the heart's electrical activity with a string galvanometer, names its waves, and formulates the triangle and the law that still define the limb leads; cardiology acquires its most-used investigation.",
+      "detail": "Willem Einthoven records clear human electrocardiograms with his string galvanometer, names the P, Q, R, S and T waves and defines the limb leads; he receives the Nobel Prize in 1924.",
       "people": [
         "Willem Einthoven"
       ]
     },
     {
+      "year": 1929,
+      "title": "A catheter in the heart",
+      "detail": "Werner Forssmann passes a urinary catheter from a vein in his own arm into his right atrium and confirms its position by X-ray; cardiac catheterisation later becomes a standard method of measuring pressures and output.",
+      "people": [
+        "Werner Forssmann"
+      ]
+    },
+    {
       "year": 1944,
-      "title": "A shunt for blue babies",
-      "detail": "Alfred Blalock, guided by paediatrician Helen Taussig's reasoning that these infants need more pulmonary flow, anastomoses the subclavian artery to a pulmonary artery in a child with tetralogy of Fallot; congenital heart disease, previously untreatable, becomes a surgical subject.",
+      "title": "Surgery for blue babies",
+      "detail": "Alfred Blalock, following Helen Taussig's reasoning and with a technique worked out by Vivien Thomas, creates a subclavian-to-pulmonary artery shunt for a child with tetralogy of Fallot.",
       "people": [
         "Alfred Blalock",
         "Helen Taussig",
@@ -162,16 +171,16 @@
     },
     {
       "year": 1953,
-      "title": "Running the circulation outside the body",
-      "detail": "John Gibbon uses a heart–lung machine to close an atrial septal defect at the Jefferson Medical College: with blood oxygenated and circulated mechanically, the surgeon can stop and open a living heart, and all later cardiac operations follow.",
+      "title": "The heart–lung machine",
+      "detail": "John Gibbon uses a heart–lung machine to close an atrial septal defect, showing that the circulation can be maintained outside the body while the heart is opened.",
       "people": [
         "John Gibbon"
       ]
     },
     {
       "year": 1977,
-      "title": "Opening a coronary with a balloon",
-      "detail": "Andreas Gruentzig performs the first percutaneous transluminal coronary angioplasty; combined later with stents and antiplatelet therapy, it turns acute myocardial infarction into a condition treated by opening the artery within hours.",
+      "title": "Coronary angioplasty",
+      "detail": "Andreas Gruentzig performs the first percutaneous coronary angioplasty in Zurich, the start of catheter-based treatment of coronary disease.",
       "people": [
         "Andreas Gruentzig"
       ]
@@ -179,25 +188,60 @@
   ],
   "references": [
     {
-      "title": "The Cardiovascular Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the heart and the blood.",
-      "slug": "ref1"
+      "title": "Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine (12th edition)",
+      "authors": "Libby P, Bonow RO, Mann DL, Tomaselli GF, Bhatt DL, Solomon SD (eds)",
+      "year": 2022,
+      "note": "The standard comprehensive reference for cardiovascular medicine.",
+      "slug": "braunwald"
     },
     {
-      "title": "The Cardiovascular Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the heart and the system.",
-      "slug": "ref2"
-    },
-    {
-      "title": "Clinical Cardiovascular",
-      "authors": "Reference",
+      "title": "Levick's Introduction to Cardiovascular Physiology (6th edition)",
+      "authors": "Herring N, Paterson DJ",
       "year": 2018,
-      "note": "A practical treatment of the blood and the practice.",
-      "slug": "ref3"
+      "note": "A clear account of cardiovascular physiology, from the cardiac cycle to the control of the circulation.",
+      "slug": "levick"
+    },
+    {
+      "title": "Guyton and Hall Textbook of Medical Physiology (14th edition)",
+      "authors": "Hall JE, Hall ME",
+      "year": 2021,
+      "note": "Standard physiology textbook; its chapters on cardiac output, venous return and the renal control of blood pressure underlie several chapters here.",
+      "slug": "guyton"
+    },
+    {
+      "title": "The ECG Made Easy (10th edition)",
+      "authors": "Hampton J, Hampton J",
+      "year": 2024,
+      "note": "A short, practical introduction to reading the electrocardiogram.",
+      "slug": "hampton"
+    },
+    {
+      "title": "Hypertension in adults: diagnosis and management (NG136)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2019,
+      "note": "UK guideline on the diagnosis, staging and treatment of hypertension, last updated in 2023.",
+      "slug": "nice-ng136"
+    },
+    {
+      "title": "Chronic heart failure in adults: diagnosis and management (NG106)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2018,
+      "note": "UK guideline on diagnosing and treating chronic heart failure, updated in 2025.",
+      "slug": "nice-ng106"
+    },
+    {
+      "title": "2024 ESC Guidelines for the management of atrial fibrillation",
+      "authors": "Van Gelder IC, Rienstra M, Bunting KV, et al.",
+      "year": 2024,
+      "note": "European guideline on atrial fibrillation, introducing the CHA2DS2-VA score.",
+      "slug": "esc-af-2024"
+    },
+    {
+      "title": "2023 ESC Guidelines for the management of acute coronary syndromes",
+      "authors": "Byrne RA, Rossello X, Coughlan JJ, et al.",
+      "year": 2023,
+      "note": "European guideline on the diagnosis and treatment of the acute coronary syndromes.",
+      "slug": "esc-acs-2023"
     }
   ],
   "next": [

@@ -1,141 +1,318 @@
-Arterial pressure is the product the brain-stem guards above almost every other variable — **pressure = cardiac output × total peripheral resistance**, with output the business of the previous two chapters and resistance the arithmetic of the arterioles' radius to the fourth power. Around that product the body stacks three timescales of control: the baroreflex of seconds, the renin–angiotensin–aldosterone and vasopressin systems of minutes-to-days, and the kidneys' pressure-natriuresis of days-to-weeks — the last being the long-term set point, and the reason essential hypertension is, in the end, a renal pressure-reset disease. Shock is the failure of supply, and its four mechanisms (pump, pipe, volume and distribution) are the same physiology read in reverse.
+The heart generates pressure; the blood vessels decide where the flow goes. A healthy adult at rest pumps about 5 litres a minute, yet during exercise the muscles alone can receive more than 20 litres a minute, while the kidneys, gut and skin take less. This redistribution is achieved by small changes in the diameter of small arteries, and it happens while arterial pressure stays remarkably steady. Understanding how pressure, flow and resistance relate, and how the body defends its blood pressure, is the basis for understanding hypertension, shock, fainting and oedema.
 
-This chapter covers resistance and its regulation, the three timescales of pressure control, the oedema and capillary Starling forces, and shock as a physiological classification.
+This chapter covers the physics of flow in vessels, the arterial pressure and how it is measured, local control of blood flow, the exchange of fluid in capillaries, and the reflex and hormonal systems that regulate blood pressure over seconds, hours and days.
 
-## Resistance: the arteriole as the throttle
+## Pressure, flow and resistance
 
-::: definition Total peripheral resistance and its local control {#def-tpr}
-The systemic circulation's ~20 mmHg-per-capillary-bed-drop is negotiated mostly at the **arteriole** — the resistance vessel whose tone sets both blood pressure and organ perfusion pressure, with Poiseuille's fourth-power radius dependence (a 16 % radius change doubles or halves flow: [[physiology/homeostasis-body-fluids]]'s and [[anatomy/thorax]]'s x⁴ theme) and a series-arranged, massively parallel network (total peripheral resistance = 80 × (MAP − right atrial pressure)/cardiac output, ~900–1,200 dyn·s/cm⁵ in the convention the catheter laboratory still uses). Local control dominates where function demands: **metabolic and active hyperaemia** (working tissue's adenosine, K⁺, CO₂, H⁺, lactate, prostaglandins and nitric oxide from shear — the coronary, skeletal-muscle and gut-postprandial flows; adenosine's coronary role the basis of the adenosine/dipyridamole stress test of [[cardiovascular/coronary-artery-disease]]), **myogenic tone** (the Bayliss contraction to stretch — autoregulation's muscle arm, renal and cerebral especially), **shear-mediated endothelial nitric oxide** (flow-mediated dilation — the endothelium as a flow sensor, its dysfunction the earliest lesion of vascular disease), and **sympathetic** (α₁ constriction; β₂ and cholinergic dilation in muscle; the muscle pump and venous tone of [[physiology/integrative-physiology]]'s exercise budget). Cerebral and coronary beds pay the highest autoregulatory tribute — pressure-stable flow across ~60–150 mmHg mean, shifted right in chronic hypertension (the reason the hypertensive patient tolerates less hypotension and demands less of it) — while skin runs the opposite programme, sacrificed to thermoregulation ([[physiology/integrative-physiology]]'s heat budget) and to α-constriction in shock.
+Blood flows from high pressure to low pressure. For a vessel or a whole circulation, the relationship is the haemodynamic version of Ohm's law.
+
+::: theorem Flow, pressure and resistance {#thm-flow}
+Flow ($Q$) through a vascular bed equals the pressure difference across it divided by its resistance:
+$$
+Q = \frac{\Delta P}{R}.
+$$ {#eq-ohm}
+Applied to the whole systemic circulation, with cardiac output as the flow:
+$$
+MAP - RAP = CO \times TPR,
+$$ {#eq-map}
+where $MAP$ is mean arterial pressure, $RAP$ right atrial pressure and $TPR$ total peripheral (systemic vascular) resistance. Because RAP is small, this is often simplified to $MAP \approx CO \times TPR$.
+
+For steady laminar flow of a fluid through a rigid tube, **Poiseuille's law** gives the resistance:
+$$
+R = \frac{8 \eta L}{\pi r^4},
+$$ {#eq-poiseuille}
+where $\eta$ is viscosity, $L$ length and $r$ radius.
 :::
 
-## Three timescales, one variable
-
-::: definition Seconds to days: baroreflex, hormones, kidney {#def-timescales}
-**Seconds — the baroreflex** ([[physiology/autonomic-nervous-system]] is the primary text): carotid and aortic stretch → nucleus tractus solitarius → rostral ventrolateral medulla, sympathetic vasoconstrictor and cardiac drive and vagal release, high gain around the operating point, reset in days (the hypertensive's defended altitude). **Minutes–days — the endocrine pressors**: the **renin–angiotensin–aldosterone system** (juxtaglomerular renin release to fall in perfusion pressure — the renal baroreceptor — to β₁-sympathetic drive and to low distal-tubular sodium at the macula densa; angiotensin II as vasoconstrictor, aldosterone-stimulator, central thirst and sympathetic-facilitator, and cardiac and renal remodeler; ACE as the kininase that also degrades bradykinin — the cough and angio-oedema of the ACE-inhibitors' pharmacology) plus **vasopressin** ([[renal/water-sodium]]'s V₁ pressor arm at high doses), plus **capillary refill and stress-volume recruitment** (the venous reserve). **Days–weeks — pressure-natriuresis**: renal perfusion pressure drives sodium excretion steeply (the kidney's own operating curve, its gain reduced and set-point raised in essential hypertension — Guyton's synthesis and the reason nephron loss, obesity-related sodium retention and the monogenic tubular syndromes — Liddle's over-absorbing ENaC, the Gordon and Gitelman and Bartter counterexamples of [[renal/potassium-calcium-phosphate]] — reset whole-body pressure); the long-loop feedback whose chronic blockade (ACE-inhibitors, ARBs, diuretics, aldosterone antagonists) is the pharmacology of [[cardiovascular/hypertension]] and whose renal-artery denervation re-set attempts the device era's lesson in curve-plasticity. The timescales nest clinically: **the hypertensive emergency is the baroreflex and cerebral autoregulation failing above the shifted curve (the papilloedema and encephalopathy of [[nervous-system/stroke]]-adjacent territory); the dialysis patient's intradialytic hypotension is the ultrafiltration rate outrunning both the refill and the reflexes; and the post-transplant, denervated-kidney hypertension and the tetraplegic's lost sympathetic tone are each a timescale subtracted.**
-:::
-
-::: example The ankle swelling question {#ex-oedema}
-A 68-year-old has pitting ankle oedema; consider, from one equation, the five mechanisms by which it can arise, each with a disease.
-::: solution
-**Starling's capillary equation** — filtration = K_f × [(P_c − P_i) − σ(π_c − π_i)] — organises the whole differential: **raised capillary pressure** (heart failure's raised right atrial and venous pressure transmitted back; dependency and venous incompetence and the pregnancy uterus's mechanical block; the arteriovenous fistula's downstream hypertension of [[cardiovascular/cardiac-cycle]]'s high-output exercise), **low plasma oncotic pressure** (nephrotic, cirrhotic, malnutritional hypoalbuminaemia — π_c falls, reabsorption fails), **increased capillary permeability** (sepsis, burns, inflammation, angio-oedema — the σ term collapses and protein leaks out, dragging water; the oedema of inflammation, local and painful), **increased interstitial pressure/gross lymphatic obstruction** (lymphoedema — post-surgical, filarial, malignant; the non-pitting, protein-rich interstitium that pitting does not indent and that infection loves — the cellulitis loop), and **lymphatic overflow** (any severe filtration load outstrips the pump, the reason high-output failure and pregnancy's third trimester oedema decompensate). The bedside classifiers — pitting versus non-pitting, symmetrical versus unilateral, painful versus painless, with versus without raised JVP and pulmonary signs — read which term moved, and the treatment follows the term: **diuretics and salt for pressure, cause-directed albumin economics for oncotic (the albumin-infusion-plus-diuretic synergy of the nephrotic and cirrhotic patient — and the trials' caution), compression and lymphology for the pipes, and the inflammation's own therapy for the capillary leak.** The chapter's theme in miniature: a textbook equation, correctly read, is a differential diagnosis.
-:::
-:::
-
-::: example The headache and the swollen discs {#ex-hturg}
-A 47-year-old with untreated hypertension has a day of throbbing headache, blurred vision and vomiting; clinic pressure 232/138, fundus shows papilloedema with flame haemorrhages, creatinine 180 (baseline 110), and urine protein+++.
-::: solution
-**Hypertensive emergency (malignant/accelerated hypertension)** — the cerebral and renal autoregulatory ceilings breached: arterioles forced past their myogenic limits into **breakthrough vasodilatation and fibrinoid necrosis** (the hyperplastic arteriolitis and "flea-bitten kidney" of the pathology texts, the cerebral oedema of [[#def-timescales]]'s right-shifted curve and the papilloedema, the retinal haemorrhages and the albuminuric renal injury — end-organ damage that makes this a different disease from a big number). The treatment physiology is delicate: **lower the mean pressure by no more than roughly one quarter in the first hours (the right-shifted cerebral and renal autoregulation will underperfuse a "normalised" pressure — the watershed and border-zone infarcts and the dialysis-dependent kidney are the harm of haste), with titratable intravenous agents (labetalol's combined α/β, the pure afterload agents, the nicardipine class, nitroprusside's old reliability with its cyanide caveat and raised intracranial pressure caution) in a monitored bed**, then the oral ramp-down and the adherence and secondary-cause work-up over days (the renal-artery and aldosterone and phaeochromocytoma questions of [[cardiovascular/hypertension]] and [[endocrine/adrenal]]). The two variants that change the drugs: **eclampsia (magnesium, labetalol/hydralazine, delivery — [[obstetrics-gynaecology/pregnancy-antenatal]]) and phaeochromocytoma (the α-before-β commandment of [[physiology/autonomic-nervous-system]])** — and the fundus that grades the chronicity (the arteriolar narrowing and AV nipping of years, the discs and haemorrhages of weeks) is the ophthalmoscope reading this chapter's timescale history.
-:::
-:::
+The fourth power of the radius is the most important term in the equation. Halving the radius of a vessel increases its resistance sixteen-fold. Small changes in the tone of vascular smooth muscle therefore have very large effects on flow. Length barely changes in the body, and viscosity changes only with haematocrit (it rises in polycythaemia and falls in anaemia). Blood is not a simple fluid and vessels are not rigid tubes, so Poiseuille's law is an approximation, but the dependence on radius holds well enough to explain the clinical observations.
 
 ::: widget plot
-f: 9*x^4/(1+x^4)
-x: 0, 2.2
-y: 0, 10
-labels: \text{relative arteriolar radius},\ \text{fractional flow at constant pressure}
-caption: The fourth-power throttle: flow through a resistance vessel against constant driving pressure, normalised — a 20 % constriction costs ~60 % of flow and a 20 % dilation nearly doubles it. This is why arteriolar tone (sympathetic α, local metabolites, nitric oxide, myogenic response) is the dominant variable in both blood pressure and organ perfusion; why the coronary bed's dilation reserve (rest vs hyperaemic flow, the 3–4× "flow reserve" the adenosine test measures) fails in hypertrophy and stenosis; and why a drug's site on this curve predicts its haemodynamic signature.
+f: 100*x^4
+x: 0.4, 1.2
+y: 0, 210
+vlines: 1
+labels: \text{flow (\% of baseline)}
+caption: Relative flow through a vessel at constant pressure against its radius as a fraction of baseline, from Poiseuille's law (flow ∝ $r^4$). A 20% reduction in radius (0.8) leaves only about 41% of the flow; a 20% increase (1.2) roughly doubles it. A simplified model: real vessels are elastic and blood is non-Newtonian.
+:::
+
+Resistances add in series and combine as reciprocals in parallel. The organs of the systemic circulation are arranged mainly in parallel, so each organ receives arterial blood at roughly the same pressure and controls its own share of the cardiac output by adjusting its own resistance. The **arterioles** are the main site of resistance: the pressure falls most steeply across them, from a mean of about 85 mmHg to about 30 mmHg at the start of the capillaries. They are the throttles of the circulation.
+
+The **veins** behave differently. They are thin-walled and very compliant, so a small rise in pressure holds a large extra volume. About two-thirds of the blood volume lies in the systemic veins and venules at any moment; they are **capacitance vessels**. Sympathetic venoconstriction shifts some of this blood towards the heart, which raises filling and cardiac output.
+
+Flow in normal vessels is **laminar**: layers of blood slide past each other, fastest in the centre, and the flow is silent. When velocity rises, the vessel narrows abruptly or viscosity falls, flow becomes **turbulent**. Turbulence is audible. A **bruit** over a narrowed carotid or renal artery and a heart **murmur** across an abnormal valve are both sounds of turbulence. The tendency to turbulence is summarised by the Reynolds number, which rises with velocity, diameter and density and falls with viscosity; this is why anaemia, with low viscosity and high cardiac output, can produce a soft "flow murmur".
+
+::: example Calculating peripheral resistance {#ex-tpr}
+A 56-year-old man in intensive care has a blood pressure of 120/80 mmHg, a right atrial pressure of 5 mmHg and a cardiac output of 4.4 L/min measured by thermodilution. Estimate his mean arterial pressure and total peripheral resistance, and convert the resistance to the units used on many monitors (dyn·s·cm⁻⁵), using a conversion factor of 80.
+
+::: solution
+At normal heart rates, mean arterial pressure can be estimated as diastolic pressure plus one-third of the pulse pressure:
+$$
+MAP \approx 80 + \tfrac{1}{3}(120 - 80) = 80 + 13.3 = 93.3 \text{ mmHg}.
+$$
+
+Total peripheral resistance:
+$$
+TPR = \frac{MAP - RAP}{CO} = \frac{93.3 - 5}{4.4} = 20.1 \text{ mmHg·min/L}.
+$$
+
+Multiplying by 80 gives about **1600 dyn·s·cm⁻⁵**, above the usual resting adult range of roughly 800–1200. A high resistance with a modest cardiac output suggests vasoconstriction compensating for reduced flow. The calculation is only as good as the measurements: the one-third rule is an approximation, and the arterial line gives a directly measured mean if one is available.
+:::
+:::
+
+## Arterial blood pressure
+
+::: definition Systolic, diastolic, pulse and mean pressure {#def-bp}
+- **Systolic pressure**: the peak arterial pressure during ejection.
+- **Diastolic pressure**: the lowest pressure, reached just before the next ejection, as blood drains from the arteries into the arterioles.
+- **Pulse pressure**: systolic minus diastolic. It rises with stroke volume and with stiffness of the large arteries.
+- **Mean arterial pressure (MAP)**: the average pressure over the cycle, the pressure that drives flow into the organs. At resting heart rates it is approximately diastolic pressure plus one-third of the pulse pressure. A MAP of about 65 mmHg is a common minimum target in septic shock.
+:::
+
+The aorta and large arteries are elastic. During systole they stretch and store part of the stroke volume; during diastole they recoil and keep blood flowing to the tissues. This **Windkessel** function converts the heart's intermittent output into continuous flow. With age, elastin fragments and collagen increases, the arteries stiffen and the pressure wave travels faster. The wave reflected from the periphery returns to the aorta during systole rather than diastole. Systolic and pulse pressure rise while diastolic pressure falls. **Isolated systolic hypertension** of older people is the result ([[cardiovascular/hypertension]]).
+
+Blood pressure in clinical practice is measured non-invasively with a cuff. With the auscultatory method, the cuff is inflated above systolic pressure and slowly deflated; the first tapping **Korotkoff sounds** mark systolic pressure and their disappearance marks diastolic pressure. Most clinics now use validated automated oscillometric devices, which detect pressure oscillations in the cuff and calculate the values. The cuff bladder must fit the arm: a cuff too small for the arm overestimates the pressure. The patient should be seated with the back supported, the arm supported at heart level, after a few minutes' rest. Details of diagnostic measurement are in [[cardiovascular/hypertension]].
+
+## Local control of blood flow
+
+Each organ adjusts its own resistance to match flow to its needs, largely independently of central control.
+
+- **Autoregulation** keeps blood flow roughly constant over a range of perfusion pressures (in the brain and kidney, roughly a mean of 60 to 150 mmHg in healthy people). The **myogenic response** is part of it: stretch of arteriolar smooth muscle by a rise in pressure makes it contract. In chronic hypertension the autoregulatory range shifts upwards, so lowering pressure too fast can cause cerebral or renal ischaemia.
+- **Metabolic control.** Active tissue produces adenosine, carbon dioxide, hydrogen ions, potassium and lactate and consumes oxygen; all of these dilate arterioles. This **active hyperaemia** is how exercising muscle and working myocardium receive more flow. After a period of occlusion, flow overshoots (**reactive hyperaemia**).
+- **The endothelium** releases **nitric oxide** (in response to shear stress and agents such as acetylcholine and bradykinin) and **prostacyclin**, both vasodilators, and **endothelin**, a vasoconstrictor. Endothelial dysfunction, with reduced nitric oxide, is an early feature of atherosclerosis, diabetes and hypertension. Organic nitrates relieve angina by supplying nitric oxide.
+
+Some circulations have special behaviour. **Coronary** flow occurs mainly in diastole and is controlled almost entirely by metabolism. **Cerebral** flow is highly sensitive to carbon dioxide: hyperventilation lowers $P_aCO_2$ and constricts cerebral vessels. The **pulmonary** circulation is a low-pressure, low-resistance system in which hypoxia causes vasoconstriction (the reverse of systemic vessels), diverting blood away from poorly ventilated alveoli ([[respiratory/gas-exchange]]). **Skin** flow is controlled mainly by sympathetic nerves for temperature regulation. **Skeletal muscle** at rest has high resistance and a large potential to dilate.
+
+## Capillary exchange and oedema
+
+Capillaries are where the circulation does its work: oxygen, nutrients and waste cross the wall by diffusion, and water moves according to the balance of pressures across it.
+
+::: theorem Starling's principle of fluid exchange {#thm-starling-filtration}
+The net filtration of fluid across a capillary wall is
+$$
+J_v = K_f\big[(P_c - P_i) - \sigma(\pi_c - \pi_i)\big],
+$$ {#eq-starling}
+where $P_c$ and $P_i$ are the hydrostatic pressures in the capillary and the interstitium, $\pi_c$ and $\pi_i$ the corresponding oncotic (colloid osmotic) pressures, $\sigma$ the reflection coefficient for plasma proteins (close to 1 in most capillaries), and $K_f$ the filtration coefficient, which reflects the permeability and surface area of the wall.
+:::
+
+::: proof
+Hydrostatic pressure in the capillary pushes fluid out; the oncotic pressure of plasma proteins, which cannot easily cross the wall, draws water back. In most tissues the balance favours a small net outward filtration along the whole capillary. The modern view, based on the glycocalyx lining the endothelium, is that the relevant oncotic pressure is the one just beneath this layer, so little or no fluid is reabsorbed at the venous end of most capillaries. The filtered fluid is returned to the circulation by the **lymphatics**, which carry several litres a day back to the venous system. Oedema forms when filtration exceeds lymphatic drainage.
+:::
+
+The equation lists the causes of oedema directly:
+
+- **Raised capillary hydrostatic pressure**: heart failure, venous obstruction (deep vein thrombosis), venous insufficiency, fluid overload, and drugs that dilate arterioles more than venules, such as dihydropyridine calcium channel blockers (amlodipine), which raise capillary pressure in the legs.
+- **Reduced plasma oncotic pressure**: low albumin from nephrotic syndrome, liver disease or malnutrition.
+- **Increased permeability** (a rise in $K_f$ and fall in $\sigma$): inflammation, sepsis, burns, allergic reactions.
+- **Lymphatic obstruction**: after lymph node surgery or radiotherapy, malignancy or filariasis. Lymphoedema is non-pitting once fibrosis develops.
+
+Pulmonary oedema is the same process in the lung. When left atrial pressure rises above about 20–25 mmHg, filtration overwhelms lymphatic drainage and fluid enters the interstitium and then the alveoli. The general pathology of oedema is in [[pathology/haemodynamics]].
+
+::: example Swollen ankles {#ex-oedema}
+A 72-year-old woman has had bilateral ankle swelling for six weeks. Her JVP is not raised, her chest is clear, urine dipstick shows no protein, and her serum albumin is 41 g/L. Two months ago her blood pressure treatment was changed to amlodipine. Use Starling's principle to work through the likely cause.
+
+::: solution
+Take each term of the equation in turn.
+
+- **Oncotic pressure**: albumin is normal and there is no proteinuria, so a low plasma oncotic pressure (nephrotic syndrome, liver disease) is unlikely.
+- **Systemic venous pressure**: the JVP is not raised and the chest is clear, so right heart failure or fluid overload is less likely, although an echocardiogram may still be reasonable at her age.
+- **Capillary hydrostatic pressure from drugs**: dihydropyridine calcium channel blockers dilate the arterioles more than the venules. More pressure is transmitted into the capillaries of dependent tissues, raising $P_c$ and filtration. The timing fits.
+- **Permeability or lymphatic causes**: nothing suggests inflammation or lymphatic disease, and the swelling is bilateral.
+
+**Amlodipine-induced ankle oedema** is the most likely cause. It is dose-related and does not respond well to diuretics, because the problem is capillary pressure, not salt and water retention; options include dose reduction or a change of drug, decided by the prescriber with the patient. If unilateral swelling or calf tenderness were present, deep vein thrombosis would need exclusion first ([[cardiovascular/vascular-disease]]).
+:::
+:::
+
+## Regulating blood pressure: seconds, hours and days
+
+Arterial pressure is the product of cardiac output and peripheral resistance, and both are controlled. Three systems act on different timescales.
+
+::: definition The baroreceptor reflex {#def-baroreflex}
+**Arterial baroreceptors** are stretch receptors in the walls of the **carotid sinus** (afferents in the glossopharyngeal nerve) and the **aortic arch** (afferents in the vagus). They fire more when pressure rises. Their signals reach the **nucleus tractus solitarius** in the medulla, which:
+
+- increases **vagal** (parasympathetic) outflow to the heart, slowing it;
+- reduces **sympathetic** outflow to the heart (reducing rate and contractility), to arterioles (reducing resistance) and to veins (increasing venous capacitance).
+
+A fall in pressure has the opposite effects. The reflex acts within seconds and buffers moment-to-moment changes, such as those on standing. It **resets** within days to a sustained new pressure, so it does not set the long-term level of blood pressure.
+:::
+
+On standing, about 500–800 mL of blood pools in the legs and abdomen. Venous return, stroke volume and arterial pressure fall; baroreceptor firing falls; the heart rate rises and arterioles and veins constrict, all within a few heartbeats. When this fails, the result is **orthostatic (postural) hypotension**: a fall in systolic pressure of at least 20 mmHg, or in diastolic pressure of at least 10 mmHg, within 3 minutes of standing. Common causes are hypovolaemia, drugs (antihypertensives, diuretics, alpha-blockers, nitrates, antipsychotics, levodopa) and autonomic failure, for example in diabetes or Parkinson's disease. **Vasovagal syncope** is the opposite failure: a paradoxical reflex, often triggered by prolonged standing, pain or emotion, that withdraws sympathetic tone and increases vagal tone, so pressure and heart rate fall together.
+
+Other reflexes join in. **Cardiopulmonary receptors** in the atria and great veins sense filling. **Peripheral chemoreceptors** in the carotid and aortic bodies, stimulated by hypoxia, increase sympathetic activity. The **Cushing reflex** is a response to raised intracranial pressure: cerebral ischaemia triggers intense sympathetic vasoconstriction, and the resulting hypertension triggers a baroreflex bradycardia. Hypertension with bradycardia and irregular breathing in a person with a head injury is a late and dangerous sign.
+
+::: definition The renin–angiotensin–aldosterone system {#def-raas}
+**Renin** is released by the juxtaglomerular cells of the kidney's afferent arterioles in response to three signals: reduced renal perfusion pressure, reduced sodium chloride delivery to the **macula densa**, and sympathetic stimulation through β1-adrenoceptors. Renin cleaves angiotensinogen (from the liver) to angiotensin I, which **angiotensin-converting enzyme (ACE)**, mainly in the lung endothelium, converts to **angiotensin II**. Angiotensin II acts on AT1 receptors to:
+
+- constrict arterioles;
+- stimulate **aldosterone** release from the adrenal cortex, which increases sodium reabsorption (and potassium excretion) in the collecting duct;
+- increase sodium reabsorption in the proximal tubule;
+- constrict the efferent arteriole, maintaining glomerular filtration when renal perfusion falls;
+- stimulate thirst and release of antidiuretic hormone (vasopressin);
+- promote cardiac and vascular remodelling and fibrosis over the long term.
+
+ACE also breaks down bradykinin, which is why ACE inhibitors cause a dry cough and, rarely, angioedema.
+:::
+
+Other hormones complete the picture. **Antidiuretic hormone**, released in response to high plasma osmolality and to large falls in blood volume, retains water and, at high concentrations, constricts vessels. The **natriuretic peptides** (atrial and B-type natriuretic peptide), released when the atria and ventricles are stretched, promote sodium excretion and vasodilatation; the B-type peptide is used as a blood test for heart failure ([[cardiovascular/heart-failure]]).
+
+::: theorem Pressure natriuresis and the long-term level of blood pressure {#thm-natriuresis}
+Over days and weeks, arterial pressure is set by the kidney's handling of sodium and water. A rise in renal perfusion pressure increases sodium and water excretion (**pressure natriuresis**), reducing extracellular volume and cardiac output until pressure returns to the level at which intake equals output. Sustained hypertension therefore requires a shift of this relationship, so that the kidney needs a higher pressure to excrete the daily sodium load.
+:::
+
+::: proof
+Suppose pressure rises while salt intake is unchanged. The kidney excretes more sodium than is eaten, the extracellular fluid and plasma volume shrink, venous return and cardiac output fall, and pressure falls back. The process continues until excretion again equals intake, which occurs only at the original pressure. Because the system keeps acting until the error is zero, it has, in engineering terms, "infinite gain". The baroreflex, in contrast, resets and leaves a residual error.
+
+This is why many causes of hypertension act on the kidney: excess aldosterone, renal artery stenosis, chronic kidney disease, and the inherited syndromes of increased tubular sodium reabsorption. It is also why diuretics, which help the kidney excrete sodium at a lower pressure, are effective antihypertensives ([[cardiovascular/hypertension]]).
+:::
+
+::: example Fainting on standing {#ex-ortho}
+A 68-year-old man with type 2 diabetes for 20 years and peripheral neuropathy feels light-headed every morning on getting up. Lying, his blood pressure is 148/84 mmHg and pulse 76 beats/min; after 3 minutes standing it is 112/70 mmHg and pulse 78 beats/min. Interpret these readings and explain the mechanism.
+
+::: solution
+His systolic pressure falls by 36 mmHg and diastolic by 14 mmHg within 3 minutes of standing, which meets the definition of **orthostatic hypotension**.
+
+The key feature is that his heart rate barely changes (76 to 78). In hypovolaemia or drug-induced vasodilatation the baroreflex is intact, so the heart rate rises substantially as the pressure falls. A fall in pressure **without a compensatory tachycardia** points to failure of the reflex arc itself: here, **diabetic autonomic neuropathy**, which damages the efferent sympathetic fibres to the vessels and heart (and often the vagal fibres too).
+
+His supine hypertension illustrates the difficulty of managing autonomic failure: treatment that lowers lying pressure worsens his symptoms on standing. Management, decided with him and his clinicians, starts with reviewing drugs that lower pressure or cause volume depletion, rising slowly, adequate fluid intake, and physical measures such as compression; drugs to raise standing pressure are a specialist option.
+:::
 :::
 
 ::: quiz
-Chronic hypertension shifts cerebral autoregulation rightward. The direct clinical consequence:
-- [x] The patient tolerates higher pressures and suffers ischaemia at pressures a normotensive tolerates
-- [ ] The patient tolerates low pressures better
-- [ ] Autoregulation is abolished and flow is pressure-passive at all times
-- [ ] The circle of Willis supplies the whole brain independently
+A healthy person stands up suddenly. Which change in baroreceptor activity and autonomic outflow follows within seconds?
+- [ ] Baroreceptor firing increases; vagal outflow increases
+- [x] Baroreceptor firing decreases; sympathetic outflow increases and vagal outflow decreases
+- [ ] Baroreceptor firing decreases; renin release is the main response within seconds
+- [ ] Baroreceptor firing is unchanged because cerebral autoregulation compensates
 ::: solution
-The autoregulatory plateau moves to higher pressures with structural remodelling (the hypertrophic arteriolar wall with an increased lumen-to-wall ratio set-point, the shifted myogenic and metabolic curves): so **a mean of 65 that perfuses a healthy brain may underperfuse a chronic hypertensive one** — the basis of the "perfusion pressure" caution when treating hypertensive urgency (lower slowly, not to normal), of the dialysis and perioperative hypotension sensitivity of the hypertensive patient, and of the hypertensive-encephalopathy and eclampsia picture (pressure above the upper autoregulatory limit breaks through, forces vasodilation and leak — the posterior-circulation-predominant oedema of PRES and the occipital symptoms of eclampsia — [[obstetrics-gynaecology/pregnancy-antenatal]] and [[nervous-system/stroke]]).
-:::
-:::
-::: example Two pulses, one lesion {#ex-pulse-pressure}
-A 30-year-old injection-drug user presents with three days of fever and breathlessness; pulse 110, blood pressure 118/72 — a normal pulse pressure; a 62-year-old with known bicuspid valve has the same lesion chronically and 168/44 with a collapsing carotid pulse.
-::: solution
-Both have **aortic regurgitation**; the difference is **compliance, not severity**. Acute severe AR (the endocarditis-perforated cusp) unloads into a **non-compliant ventricle of normal size**: left ventricular end-diastolic pressure soars toward the atrial and pulmonary-capillary pressures (the flash oedema, the cardiogenic-shock of [[#def-shock]]'s obstructive-and-pump border), the diastolic murmur may be short or absent (the aortic and LV diastolic pressures equilibrate fast — the clinical trap with the narrow-ish pulse pressure the stem shows), and the treatment is **urgent surgery, after the blood cultures and the echocardiographic lesion assessment ([[cardiovascular/valve-congenital-disease]]'s endocarditis and acute-AR sections)**. Chronic AR (the dilated, compliant, eccentric-hypertrophied ventricle — [[physiology/muscle]]'s chamber-level adaptation) tolerates regurgitant volumes for years and reveals them through the **wide pulse pressure and the peripheral signs**: the large stroke volume on the arterial tree (the water-hammer pulse, the Quincke and Musset and Traube and de Musset signs of the eponym parade, all the same pulse-pressure arithmetic plus the hyperdynamic circulation), until the ventricle's compensation runs out and the ejection fraction and the exercise tolerance declare the timing for intervention — the **guideline thresholds (the ejection fraction and the end-systolic dimension) being the compliant ventricle's exit signs, read on the pressure–volume loop of [[cardiovascular/cardiac-cycle]]**. One lesion, two haemodynamic stories, and the pulse-pressure quotient of the previous exercise as the discriminator.
+Standing pools blood in the legs, venous return and stroke volume fall, and arterial pressure dips. Carotid and aortic baroreceptors fire **less**, so the medulla **increases sympathetic** outflow (heart rate, contractility, arteriolar and venous constriction) and **reduces vagal** outflow. Renin release does increase, but it acts over minutes to hours, not seconds. Cerebral autoregulation protects brain flow, but it does not stop the systemic pressure from falling.
 :::
 :::
 
-## Shock: the four-mechanism classification
+## Circulatory shock
 
-::: definition Supply, demand and the four shocks {#def-shock}
-Shock is **inadequate tissue oxygen delivery** (DO₂ = cardiac output × arterial content — Fick's equation of [[physiology/integrative-physiology]] turned into an emergency), recognised by the markers of extraction failure and sympathetic overflow (lactate, capillary refill, urine output, mentation, the base deficit and central venous oxygen saturation) long before the blood pressure falls — **hypotension is a late sign except in the neurogenic and some obstructive varieties.** The classification is mechanical, and the arterial and venous curve language of [[#def-timescales]] and [[cardiovascular/cardiac-cycle]]'s Guyton cross-plots does the separating: **hypovolaemic** (haemorrhage, burns, gastroenteritis, pancreatitis, diuretic and adrenal-crisis sodium loss — the stressed volume gone: tachycardia, vasoconstriction, oliguria, narrow pulse pressure, the fluid-responder with the raised filling-pressure needs the transfusion and the haemostasis of [[blood/transfusion]] and [[emergency-critical-care/acute-assessment]]); **cardiogenic** (pump failure — infarct, myocarditis, tamponade and tension pneumothorax and massive embolus as the obstructive cousins with their own physiology and their own physical signs: the tamponade of [[cardiovascular/cardiac-cycle]]'s example, the JVP-and-trachea of [[respiratory/respiratory-failure]]'s chest, the right-heart-strain echo of [[respiratory/interstitial-vascular-disease]]); **distributive** (vasoplegia — sepsis's cytokine and nitric-oxide and microcirculatory shut-down (the warm limb), anaphylaxis's mast-cell histamine and venous pooling ([[blood/transfusion]]'s anaphylaxis twin), and neurogenic/medullary sympathetic collapse with the paradoxical **bradycardia** and warm peripheries that separate it from haemorrhage at the bedside) — the early hyperdynamic, high-output state whose treatment is the catecholamine and volume restoration of the vascular-capacity loss (noradrenaline's α-fill of the unstressed-volume reservoir; [[infectious-diseases/fever-sepsis]]), and **obstructive** (tamponade, tension pneumothorax, thromboembolism — the flow path pinched between chambers and chest, the physiology of the central venous pressure raised and the output starved). Compensations follow the timescales (baroreflex minutes, renin–angiotensin and vasopressin hours, renal salt days — and the capillary-fluid-shift of stressed-volume loss, the transcapillary refill, runs within an hour and is the reason the bleeding patient's early haemoglobin lies twice: dilution unmasked and refill underway). The monitoring tools are the same curves: **the fluid-responsiveness question is the Starling slope (dynamic indices — pulse-pressure variation, the passive leg raise) and the fluid-tolerance question is the EDPVR (do not fill a stiff or failing ventricle) — the [[cardiovascular/cardiac-cycle]] exercise generalised to every resus-room bed** ([[emergency-critical-care/acute-assessment]] and the intensive-care chapters take the protocols; the physiology exam point is that **a lactate that clears and a warm periphery and a urine output prove resuscitation, and a normalised blood pressure proves nothing**).
-:::
+**Shock** is a failure of the circulation to deliver enough oxygen to meet the needs of the tissues. Low blood pressure is common but not essential: compensation may hold the pressure while perfusion is already inadequate. Signs of poor perfusion include cool peripheries with slow capillary refill, confusion, reduced urine output and a rising lactate. Shock is classified by mechanism, and each mechanism has a characteristic pattern in the variables of [[#eq-map]].
 
-::: example The postural fall in a diabetic patient {#ex-ortho}
-A 59-year-old with long-standing diabetes and early retinopathy reports near-syncope on standing at the bus stop; lying BP 138/82, pulse 78; at three minutes standing 96/60, pulse 82.
+| Type | Example causes | Cardiac output | Peripheral resistance | Venous pressure |
+|---|---|---|---|---|
+| Hypovolaemic | haemorrhage, vomiting and diarrhoea, burns | low | high | low |
+| Cardiogenic | myocardial infarction, arrhythmia, valve failure | low | high | high |
+| Obstructive | tamponade, massive pulmonary embolism, tension pneumothorax | low | high | high |
+| Distributive | sepsis, anaphylaxis, spinal cord injury | normal or high (after fluid) | low | low or normal |
+
+Hypovolaemic, cardiogenic and obstructive shock share a low output with compensatory vasoconstriction, so the skin is cold and pale. Distributive shock is a failure of resistance: the vessels dilate, so the skin may be warm, at least early on. In spinal cord injury above the mid-thoracic level, sympathetic outflow is lost, so hypotension is accompanied by bradycardia. Management principles for each type are in [[emergency-critical-care/shock-fluids]].
+
+::: example Two patients with low blood pressure {#ex-shock}
+Two patients have a blood pressure of 80/45 mmHg. Patient A, aged 34, is warm and flushed with a bounding pulse of 124 beats/min, a temperature of 39.4 °C and a low JVP; she has a urinary tract infection. Patient B, aged 70, is cold and clammy with a thready pulse of 118 beats/min, a raised JVP and crackles at both lung bases; he has had chest pain for four hours. Classify each type of shock and explain the findings using $MAP = CO \times TPR$.
+
 ::: solution
-**Neurogenic orthostatic hypotension** — the baroreflex arc ([[physiology/autonomic-nervous-system]]) destroyed by length-dependent autonomic neuropathy: standing pools ~700 mL in the legs and splanchnic bed ([[physiology/integrative-physiology]]'s exercise arithmetic in reverse), venous return and output fall, and the normal compensation (sympathetic vasoconstriction and vagal release) **fails in both limbs — the pressure falls ≥20/10 and the pulse does not rise proportionately (the ∆<15 bpm with the 40 mmHg fall is the neurogenic fingerprint)**. The diabetes context supplies the rest: the supine hypertension that coexists (denervation supersensitivity and loss of baroreflex buffering — the treatment trap of the same chapter's exercise), the adrenal and thyroid contributors to exclude, the volume and drug audit (the α-blocker for prostate symptoms, the diuretic, the SGLT2-inhibitor's volume effect, the tricyclic and the antipsychotic in the neuropath's pain and mood list — [[pharmacology/adverse-reactions]]). Management is physiology-restitutive: **patient education (slow rising, counter-pressure manoeuvres, crossing the legs, the gluteal clench), salt and water liberalisation if the supine pressure allows (the 1–1.5 L bolus rapid-volume trick with its osmopressin-adjacent pressor window), compression (waist-high 30–40 mmHg and the abdominal binder — the venous-capacity lever), head-up sleeping (the supine-hypertension and nocturnal-natriuresis correction), and drugs by mechanism: midodrine (α₁ agonist — dosed before the upright hours), droxidopa (noradrenaline prodrug), pyridostigmine (ganglionic potentiation — the modest, position-selective agent), and fludrocortisone (the volume-expander with its supine hypertension and hypokalaemia and ankle-oedema costs — the Starling equation of [[#ex-oedema]] on the credit side)**. The rule the case exists to teach: **in autonomic failure the same kidney and the same heart behave badly at both ends of the bed — treat the standing problem without wrecking the lying one.**
+**Patient A: distributive (septic) shock.** Inflammatory mediators and nitric oxide dilate the arterioles, so **TPR is low**. Cardiac output is normal or high (bounding pulse, tachycardia, warm skin), but not high enough to keep the MAP up. Venodilatation and leaky capillaries also reduce venous return, so the JVP is low and she will usually need fluid as well as a vasopressor to restore resistance.
+
+**Patient B: cardiogenic shock**, probably from a large myocardial infarction. **Cardiac output is low** because the left ventricle has failed. The sympathetic response raises **TPR** (cold, clammy skin, thready pulse), but this cannot fully restore pressure and adds to the work of the failing heart. Back-pressure raises the JVP and causes pulmonary oedema (crackles). Giving large volumes of fluid would worsen the oedema; treatment targets the cause (urgent coronary reperfusion) and supports the pump.
+
+The same blood pressure, opposite haemodynamic patterns: this is why the examination of the skin, pulse and venous pressure matters as much as the cuff reading.
 :::
+:::
+
+::: warning A normal blood pressure does not exclude shock
+Compensation can keep arterial pressure normal while flow to organs is inadequate. A young person can lose up to about 30% of blood volume before systolic pressure falls, because the heart rate and vasoconstriction compensate. Older people and those on beta-blockers may not mount a tachycardia at all. Look for the signs of poor perfusion (capillary refill, mental state, urine output, lactate) and do not be reassured by a single normal reading.
 :::
 
 ::: history
-**Stephen Hales's** garter-and-brass-tube cannulation of the mare's carotid (1733 — the first arterial pressure and the first mathematics of circulation), **Poiseuille's** capillary-tube flow law and the fourth-power radius, **Marey and Chauveau and Ludwig's** 19<sup>th</sup>-century manometry and kymography, and **Tigerstedt and Bergman's** 1898 discovery that a renal extract raises blood pressure — the pressorrenin/renin line whose 1930s–40s purification met **Goldblatt's** clipped-artery hypertension model (the two-kidney-one-clip experiment that made the kidney the arbiter of chronic pressure, the Guyton pressure-natriuresis synthesis to follow), **Cannon's** emergency physiology and **Selye's** stress triad (the endocrine pressors' integrative frame), **Wiggers'** haemorrhagic-shock physiology and **Blalock's and Rich's** surgical era of volume loss and its classifications. The capillary side runs **Starling's** 1896 equation and the lymphatic demonstrations of **Drinker and Field**, and the modern shock literature — **Weil and Shubin's** early goal-directed-era haemodynamics, the multiple-organ-dysfunction syndrome of the 1970s intensive-care pioneers and the 2016 Sepsis-3 redefinition around lactate and perfusion — made the chapter's old four-box classification the operating system of every resuscitation room.
+In 1733 Stephen Hales described inserting a brass tube into the artery of a horse and connecting it to a tall glass tube: the blood rose about eight feet and rose and fell with each beat, the first measurement of arterial pressure. Jean Poiseuille, a physician working in Paris in the 1830s and 1840s, studied flow in fine glass tubes to understand blood flow and derived the relationship between flow and the fourth power of the radius. In 1896 Ernest Starling described the balance of hydrostatic and protein osmotic pressures across the capillary wall. Robert Tigerstedt and Per Bergman reported in 1898 that extracts of rabbit kidney raised blood pressure and named the active substance renin. Scipione Riva-Rocci's arm cuff (1896) and Nikolai Korotkoff's description of the sounds heard below it (1905) made routine measurement of blood pressure possible. In the second half of the twentieth century Arthur Guyton and colleagues built quantitative models of circulatory control that placed the kidney at the centre of long-term regulation.
 :::
 
 ## Where this leads
 
-The reflex arc in full in [[physiology/autonomic-nervous-system]]; the renin–angiotensin system's renal half in [[renal/water-sodium]] and its drug classes in the antihypertensive pharmacology chapters; hypertension's clinical management in [[cardiovascular/hypertension]]; vascular disease's stiff-pipe consequences in [[cardiovascular/vascular-disease]]; anaphylaxis in [[blood/transfusion]]-adjacent and [[immunology/hypersensitivity]] chapters; sepsis in [[infectious-diseases/fever-sepsis]]; tamponade's mechanics in [[cardiovascular/cardiac-cycle]].
+These principles return throughout the course. Hypertension ([[cardiovascular/hypertension]]) is a disorder of the long-term regulation described here. The low-output and congestive states of heart failure ([[cardiovascular/heart-failure]]) are explained by the same equations, as is the circulatory management of shock in [[emergency-critical-care/shock-fluids]]. The autonomic nervous system is covered in [[physiology/autonomic-nervous-system]], body fluid compartments in [[physiology/homeostasis-body-fluids]] and the renal handling of sodium in [[renal/water-sodium]].
 
 ::: summary
-- Arterial pressure equals output times resistance, and resistance lives in the arteriole to the fourth power — local metabolite, myogenic, endothelial and sympathetic control allocate the cardiac output and defend the pressure.
-- Control runs on nested timescales — baroreflex (seconds), renin–angiotensin–aldosterone and vasopressin (minutes–days), renal pressure-natriuresis (days) — and chronic hypertension is a renal set-point disease with reflex and endocrine adaptations that define the treatment limits.
-- Starling forces across the capillary wall give a five-term differential for oedema that maps each mechanism to a therapy.
-- Cerebral and coronary autoregulation matter most clinically: their right-shift in hypertension and their breakthrough (PRES, eclampsia, ischaemia-at-normal-pressures) are the same curve read up and down.
-- Shock classifies by mechanism — volume, pump, obstruction, distribution — the first three identified by the filling pressures and the last by the warm periphery and the bradycardia of lost sympathetic tone, and resuscitation is monitored by perfusion markers, not by the blood pressure alone.
+- Flow equals pressure difference divided by resistance; for the systemic circulation $MAP - RAP = CO \times TPR$.
+- Resistance varies with the inverse fourth power of radius (Poiseuille), so arteriolar tone controls flow and pressure; veins are capacitance vessels holding about two-thirds of the blood.
+- Mean arterial pressure is approximately diastolic plus one-third of pulse pressure; arterial stiffening with age raises systolic and pulse pressure.
+- Autoregulation, metabolic vasodilatation and endothelial nitric oxide match local flow to need.
+- Starling's principle explains oedema: raised capillary pressure, low oncotic pressure, increased permeability or lymphatic obstruction.
+- The baroreflex buffers pressure within seconds but resets; the renin–angiotensin–aldosterone system and ADH act over minutes to hours; pressure natriuresis by the kidney sets the long-term level.
+- Orthostatic hypotension is a fall of at least 20 mmHg systolic or 10 mmHg diastolic within 3 minutes of standing; absence of a heart-rate rise suggests autonomic failure.
+- Shock is inadequate tissue oxygen delivery: hypovolaemic, cardiogenic, obstructive or distributive, each with a typical haemodynamic pattern.
 :::
 
 ## Exercises
 
-::: exercise Compute the resistance {level=1}
-MAP 100, right atrial pressure 5, cardiac output 5 L/min. Give TPR in Wood units and in mmHg·min/L, and predict the new TPR after a sympathetic surge doubles resistance with unchanged output (and the new MAP).
+::: exercise Mean arterial pressure {level=1 check="110"}
+Estimate the mean arterial pressure (mmHg) for a blood pressure of 150/90 mmHg using diastolic pressure plus one-third of pulse pressure (exact value).
 ::: solution
-TPR = (100 − 5)/5 = **19 Wood units ≈ 19 mmHg·min/L** (×80 = 1,520 dyn·s/cm⁵; note the normal ~15–20 Wood for the whole systemic circuit including the CVP subtraction). Doubling resistance at unchanged output doubles the gradient: **MAP ≈ 5 + 5×38 = 195** — the arithmetic that shows a pure vasoconstrictor must raise pressure if output is to hold, and why vasopressors' dose–pressure curves are used to titrate rather than to normalise; the body's own version (the phaeochromocytoma of [[physiology/autonomic-nervous-system]]'s example, the hypertensive crisis) is the same equation with the adrenal as the infusion pump.
+Pulse pressure is $150 - 90 = 60$ mmHg. $MAP \approx 90 + 60/3 =$ **110 mmHg**.
 :::
 :::
 
-::: exercise Which reflex limb {level=1}
-Carotid sinus massage slows the rate; the baroreflex of haemorrhage restores pressure partly by vagal withdrawal. Assign the efferent limbs (cardiac and vascular) and the neurotransmitters at each synapse, using the autonomic chapter's chain language.
+::: exercise Halving the radius {level=1 check="6.25"}
+By Poiseuille's law, if the radius of an arteriole is halved while the pressure across it stays the same, what percentage of the original flow remains (exact value)?
 ::: solution
-The efferents: **cardiac** — vagal (acetylcholine → muscarinic M₂ at the SA and AV nodes, the parasympathetic brake whose removal raises rate) and **sympathetic** (noradrenaline → β₁ rate and force; adrenal adrenaline into blood); **vascular** — sympathetic adrenergic (noradrenaline → α₁ arteriolar constriction; the sudomotor-cholinergic exception and the muscle vasodilator arm of [[physiology/autonomic-nervous-system]]). In haemorrhage the unloading response runs **both cardiac limbs plus withdrawal of the vasodilator tone**, with the renin–angiotensin system and vasopressin as the hormonal amplifiers of [[#def-timescales]] — and the clinical pearls: **carotid sinus syndrome (an overactive reflex arc — pause and fall with shaving and head-turning), the beta-blocker's blunting of the cardiac limb, and the α-blocker's unopposed-minus-one-limb orthostasis of the earlier exercise.**
+Resistance is proportional to $1/r^4$, so halving the radius multiplies resistance by $2^4 = 16$. Flow becomes $1/16$ of the original, which is **6.25%**.
 :::
 :::
 
-::: exercise The narrow pulse pressure {level=2}
-Explain mathematically and physiologically why hypovolaemic shock narrows the pulse pressure early, and why the aortic-regurgitation and thyrotoxic pulses widen it; one equation each.
+::: exercise Which limb of the reflex? {level=1}
+For each of the following, state whether the baroreflex arc is intact and which part is affected: (a) a person with a haemorrhage, pulse 130 beats/min; (b) a person with autonomic neuropathy whose pressure falls on standing with no change in pulse; (c) a person taking a beta-blocker whose pressure falls on standing with a small rise in pulse.
 ::: solution
-Pulse pressure ≈ **stroke volume / arterial compliance** (plus the wave-reflection timing): haemorrhage shrinks stroke volume (Frank–Starling's descending limb — the output term of MAP = CO × TPR falls, and the compensatory α-constriction maintains MAP **by raising the diastolic**: falling systolic, rising diastolic, narrow pressure) while **aortic regurgitation and thyrotoxicosis** enlarge stroke volume (the regurgitant volume plus normal, and the hyperdynamic, low-resistance, high-output state) and/or lower resistance (β₂ and vasodilator metabolism — the collapsing diastolic with a preserved systolic — the water-hammer (pulsus celer et altus) signature of [[cardiovascular/valve-congenital-disease]]). Both are the same quotient with opposite numerators, and the bedside pulse-pressure reading is thus a haemodynamic screen before the echo: narrow-vasoconstricted-cold versus wide-hyperdynamic-warm is the shock classification's first bifurcation.
+(a) **Intact**: the fall in pressure is sensed and the sympathetic response produces tachycardia and vasoconstriction.
+
+(b) **Efferent limb damaged**: the autonomic nerves to the heart and vessels cannot respond, so there is neither tachycardia nor adequate vasoconstriction.
+
+(c) **Reflex intact but the effector is blocked**: the sympathetic signal is sent but the β1-adrenoceptors of the heart are partly blocked, so the heart-rate response is blunted.
 :::
 :::
 
-::: exercise Ankle oedema, one line each {level=2}
-For each of the five mechanisms of [[#ex-oedema]], give the one clinical or laboratory clue that localises it.
+::: exercise Peripheral resistance {level=2 check="16"}
+A patient has a mean arterial pressure of 100 mmHg, right atrial pressure of 4 mmHg and cardiac output of 6 L/min. Calculate the total peripheral resistance in mmHg·min/L (exact value).
 ::: solution
-**Raised venous pressure** — raised JVP and hepatojugular reflux (failure) or the unilateral full calf of deep-vein obstruction ([[blood/thrombosis-anticoagulation]]); **low oncotic** — serum albumin (and the urine protein:protein ratio of nephrotic loss); **capillary leak** — the local signs (rubor, calor, dolor — inflammation) or the distributive picture of sepsis with a falling albumin and a raised haematocrit (the plasma's exit into the interstitium concentrating the cells); **lymphatic obstruction** — non-pitting, dorsal-foot-steak-sign (Stemmer), imaging and history (the mastectomy and node-field, the filaria); **overflow states** — pregnancy, the fistula flow and the high-output numbers. The management implications differ with the localisation (diuretic-responsive pressure oedema versus diuretic-resistant protein-rich lymphoedema whose treatment is compression and lymphology, and whose infection prophylaxis is the penicillin-and-skin-care rule of [[blood/haematopoiesis]]'s splenectomy-adjacent lessons).
+$TPR = (100 - 4)/6 =$ **16 mmHg·min/L**, which corresponds to 1280 dyn·s·cm⁻⁵.
 :::
 :::
 
-::: exercise The ACE-inhibitor's three jobs {level=2}
-Name the three arms of angiotensin II's action blocked or unmasked by an ACE-inhibitor, and derive from each one therapeutic use and one side effect.
+::: exercise A small change in radius {level=2 check="round(100*(1.1^4-1))"}
+A vasodilator increases the radius of a vascular bed's arterioles by 10%. By Poiseuille's law, at constant perfusion pressure, by what percentage does flow increase? Round to the nearest whole percent.
 ::: solution
-**Vasoconstriction (AT₁ on arteriolar muscle)** — use: hypertension, heart failure afterload reduction; side effect: the first-dose hypotension of the volume- and renin-dependent patient (the renal-artery-stenosis and diuretic and heart-failure caution — the drop in the efferent arteriolar tone that the second arm also blocks). **Aldosterone and sodium handling** — use: the post-infarct and failure remodelling and proteinuria-reduction benefit; side effect: **hyperkalaemia** (the aldosterone-withdrawal of [[renal/potassium-calcium-phosphate]], compounded by potassium-sparing diuretics, trimethoprim, NSAIDs and the salt substitutes). **Bradykinin degradation (ACE = kininase II)** — not a therapeutic arm but the side-effect arm: **the dry cough and, rarely, angio-oedema** (the reason the ARBs were designed — receptor blockade without kinin accumulation — and the reason the neprilysin-inhibitor combination sacubitril carries its own angio-oedema caution with the ACE side of the same pathway: [[cardiovascular/heart-failure]]'s switch-must-washout rule, the 36-hour window the formularies repeat).
+Flow is proportional to $r^4$, so it is multiplied by $1.1^4 = 1.4641$. Flow increases by **46%**. A modest change in diameter produces a large change in flow, which is why arteriolar tone is such a powerful control.
 :::
 :::
 
-::: exercise Read the shock numbers {level=2}
-Three ICU patients, all with lactate 4.5 and noradrenaline running. Assign the likely shock class and the next test from: (a) CVP 4, pulse-pressure variation 18 %, warm peripheries; (b) CVP 18, bedside echo small hyperdynamic left ventricle with a dilated septum-bowing right ventricle; (c) CVP 16, global hypokinesis with an ejection fraction 20 %, cool limbs.
+::: exercise Three ways to swell {level=2}
+Explain, using Starling's principle, why each of these causes oedema, and what you would expect to find on examination or testing: (a) nephrotic syndrome; (b) right heart failure; (c) a bee sting.
 ::: solution
-**(a) Distributive (septic) shock** — the low filling pressure plus **fluid responsiveness (the pulse-pressure variation >13 % on the mechanical cycle — the [[#def-shock]] dynamic index)** and the warm vasoplegic periphery: **fluids (balanced crystalloid bolus with reassessment) with blood cultures and antimicrobials within the hour ([[infectious-diseases/fever-sepsis]])**, and noradrenaline continuing for the α-fill of the capacity vessels. **(b) Obstructive — massive pulmonary embolus** (the raised CVP, the right ventricle dilated and bowing the septum — the interdependence of [[cardiovascular/cardiac-cycle]]'s tamponade logic, the small underfilled left ventricle): **CT pulmonary angiography or the bedside clot-in-transit echo, thrombolysis/embolectomy by risk, and the caveat that aggressive fluid worsens the septal bowing** (the right-ventricle volume trap of [[respiratory/interstitial-vascular-disease]]). **(c) Cardiogenic** — high filling pressures, low output, vasoconstricted cold periphery: **inotrope/vasopressor balance and mechanical interrogation of the cause (ischaemia? myocarditis? valve?), the echo-derived cardiac index, and the escalation ladder (intra-aortic balloon and percutaneous support to transplant and palliation) of [[cardiovascular/heart-failure]]** — the three answers all read from the intersection of the same two curves, the Guyton and the Starling, that this chapter keeps borrowing from [[cardiovascular/cardiac-cycle]].
+(a) **Nephrotic syndrome**: heavy proteinuria lowers plasma albumin and so plasma oncotic pressure ($\pi_c$), reducing the force that retains fluid in the capillaries; renal sodium retention also contributes. Expect generalised oedema, often periorbital in the morning, heavy proteinuria on dipstick and a low serum albumin; the JVP is not raised unless there is fluid overload.
+
+(b) **Right heart failure**: raised systemic venous pressure is transmitted back to the capillaries, raising $P_c$. Expect a raised JVP, dependent pitting oedema, hepatomegaly and possibly ascites.
+
+(c) **Bee sting**: histamine and other mediators increase capillary permeability (a rise in $K_f$ and a fall in $\sigma$), so protein and fluid leak out; arteriolar dilatation also raises $P_c$. Expect localised redness, warmth and swelling; a generalised reaction with hypotension or airway swelling would be anaphylaxis ([[emergency-critical-care/anaphylaxis]]).
 :::
 :::
 
-::: exercise The dialysis patient's cramp {level=2}
-A haemodialysis patient cramps and becomes light-headed in the last hour of a 4-litre removal; the machine's blood-pressure trace shows a progressive fall with a rising pulse. Explain the physiology of the ultrafiltration-versus-refill mismatch and the prescription changes that fix it.
+::: exercise ACE inhibitors and the kidney {level=2}
+Explain why ACE inhibitors (a) lower blood pressure, (b) can cause a dry cough, and (c) can cause an acute fall in glomerular filtration in a person with bilateral renal artery stenosis.
 ::: solution
-**The refill ceiling**: plasma volume is maintained during ultrafiltration by **transcapillary refill**, driven chiefly by the **plasma oncotic pressure (the π_c − π_i gradient of [[#ex-oedema]]'s equation, starved by low albumin) and opposed by the falling capillary hydrostatic pressure**, at ~5–10 mL/kg/min maximum; when the machine's plasma-water removal outruns refill, blood viscosity rises, venous return and output fall and the baroreflex (if the diabetic and uraemic autonomic neuropathy has left it) tachycardes and vasoconstrictes — cramps (the muscle's and the nervous system's hypoperfusion), yawning, the pressure slide. Prescription fixes by mechanism: **longer or split sessions (lower mL/h), cooler dialysate (the vasomotor gain), sodium and conductivity profiling and midodrine and the review of antihypertensive timing (holding before), the dry-weight reassessment with bioimpedance or ultrasound (the "dry weight" that is too dry — the anuric patient whose true weight was set by an oedematous era), albumin where oncotics are the limit, and the ultrafiltration-rate cap as the arithmetic answer — the refill equation read as a prescription, and the same Starling logic, in reverse, that filled the interstitium in the first place.**
+(a) They reduce angiotensin II, so arterioles dilate (lower TPR), aldosterone falls (less sodium retention, lower volume), and the long-term remodelling effects of angiotensin II are reduced.
+
+(b) ACE also breaks down **bradykinin**. Inhibiting it allows bradykinin to accumulate in the airways, causing a dry cough in some people; an angiotensin receptor blocker does not affect bradykinin and is the usual alternative.
+
+(c) When perfusion pressure to the kidney is low because of stenosis, glomerular filtration depends on angiotensin II constricting the **efferent arteriole**, which keeps glomerular capillary pressure up. Removing angiotensin II dilates the efferent arteriole, glomerular pressure falls and filtration drops. This is why creatinine and potassium are checked before and after starting these drugs.
 :::
 :::
 
-::: exercise Design the antihypertensive plan {level=3}
-A 64-year-old with type 2 diabetes, stage-3 chronic kidney disease (eGFR 40, albuminuria), and clinic BP 162/86 with a normal fundus except early arteriolar narrowing. Build the pharmacological plan from this chapter's timescales and curves, with monitoring rules and the rationale for each line.
+::: exercise The patient whose pressure will not stay down {level=3}
+A 49-year-old woman has a blood pressure of 168/104 mmHg despite three drugs. A trainee suggests that her baroreceptors "must be set too high" and that this is the cause. Using the principles of this chapter, explain why the kidney is a more likely site for the long-term problem, and list causes of hypertension that act through renal sodium handling.
+::: hint
+Think about what happens to the baroreflex when pressure is raised for days, and which control system keeps acting until its error is zero.
+:::
 ::: solution
-**Confirm and stage**: ambulatory or home monitoring (the white-coat and masked-hypertension arithmetic of [[epidemiology-ebm/diagnostic-tests]] — the clinic number is a screening sample, and the target is the out-of-clinic average), the retinal and ECG and urine and creatinine and electrolyte and calcium and lipids and HbA1c baseline, and the secondary-hypertension screen only where the physiology indicates (the resistant, the early-onset, the unprovoked hypokalaemia — the aldosterone/renin ratio and the renal-artery Doppler for the flash-pulmonary-oedema phenotype — [[renal/chronic-kidney-disease]], [[endocrine/adrenal]]). **Backbone by mechanism**: **ACE-inhibitor or ARB up-titrated to maximise the albuminuria-reducing efferent-arm effect (the two kidneys, the one glomerulus: the efferent arteriolar dilatation that lowers intraglomerular pressure — the expected ≤30 % creatinine rise at initiation accepted, potassium watched — the [[renal/water-sodium]] and [[renal/potassium-calcium-phosphate]] rules)**, plus **a dihydropyridine calcium-channel blocker (the arteriolar throttle of [[#def-tpr]] — potent in the low-renin, salt-handling, older and Black-population phenotype; the ankle oedema it causes is the precapillary dilator's Starling consequence, not allergy, and is relieved by adding the ACE/ARB rather than by stopping)**, and the **thiazide-like agent (indapamide, chlortalidone — the volume-times-resistance lever with the outcome trials, and the bendroflumethiazide's weaker evidence base and the eGFR-thiazide-resistance threshold at ~30 where the loop or the metolazone-potentiated strategy takes over)**. **Fourth line**: **spironolactone (the resistant-hypertension PATHWAY-2 winner — the aldosterone-component logic, with the potassium and gynaecomastia caveats and the eGFR caution)**, and the device and renal-denervation conversation only in trials and resistant centres. **Monitoring and targets**: home-reading culture (the numbers belong to the patient), annual potassium/creatinine and the sick-day rule for stopping the quadruple when volume-depleted (the SADMANS teaching for the unwell-holiday period — hold the ACE inhibitor, diuretic, metformin, ARB, SGLT2 inhibitor and NSAID when dehydrated, while steroid users double rather than stop — [[renal/acute-kidney-injury]] and [[endocrine/diabetes]] share the card), the step-down conversation once controlled, and the lifestyle lines (salt's renal-set-point effect, potassium-rich diet and its renal caution, weight's natriuresis, alcohol, exercise's autonomic gain) as the physiology the drugs enforce pharmacologically ([[cardiovascular/hypertension]]'s guideline tables, built on exactly this mechanism-to-population matching).
+The baroreflex resets to a sustained pressure within days, so it buffers short-term fluctuations but does not determine the level around which pressure is regulated over weeks. If the baroreflex were the only abnormality, the kidney would correct the pressure through **pressure natriuresis**: any pressure above the level at which sodium excretion equals intake causes net sodium loss and a fall in volume and cardiac output, until the pressure returns. A sustained rise in pressure therefore implies that the kidney's pressure–natriuresis relationship has shifted, so that it needs a higher pressure to excrete the daily sodium load. (The baroreflex can contribute, and baroreflex activation devices have been studied, but they work by altering sympathetic outflow, including to the kidney.)
+
+Causes that act through renal sodium handling include:
+- **primary aldosteronism** (excess aldosterone increases collecting duct sodium reabsorption; often with low potassium);
+- **renal artery stenosis** (activates renin–angiotensin);
+- **chronic kidney disease** (fewer nephrons, impaired excretion);
+- **high salt intake** in salt-sensitive people, and drugs that cause sodium retention (NSAIDs, corticosteroids, liquorice);
+- rare inherited syndromes such as Liddle syndrome (overactive epithelial sodium channel).
+
+Resistant hypertension in a woman of 49 also needs checks on adherence, measurement technique, white-coat effect, alcohol, sleep apnoea and secondary causes ([[cardiovascular/hypertension]]). Diuretics, including low-dose spironolactone where appropriate, target exactly this mechanism.
 :::
 :::

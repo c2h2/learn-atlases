@@ -1,140 +1,367 @@
-Hypertension is the commonest chronic disease and the largest single contributor to global premature death — and the clearest application of the previous chapter's physiology: a sustained upward reset of the renal pressure–natriuresis set point, expressed as a clinic number, paid for in stroke, myocardial infarction, heart failure, kidney disease, retinopathy and dementia. Its clinical logic rests on three facts: **risk rises continuously from well below current thresholds** (the log-linear relationship of usual pressure to vascular events, with no safe floor and no threshold benefit), **treatment prevents those events in proportion to the absolute pressure reduction** (the trials' reductions are achievable and broadly drug-class-specific at the level of the millimetres achieved), and **a minority of cases have a removable cause** — which is why the management algorithm spends its first lines on confirmation and exclusion before prescribing for years.
+High blood pressure rarely causes symptoms, yet it is the largest single modifiable cause of stroke, heart attack, heart failure and chronic kidney disease worldwide. The World Health Organization estimates that well over a billion adults have hypertension, and that fewer than one in five of them have it controlled. The clinical task is therefore unusual: to find a symptomless condition, confirm it with an imprecise measurement, assess the damage it has done, and persuade a person who feels well to take treatment for decades.
 
-This chapter covers definitions and measurement, the pathophysiology of primary hypertension, the secondary causes, target-organ damage, and the treatment algorithm as applied physiology.
+This chapter covers how hypertension is defined and measured, the mechanisms of primary hypertension, damage to target organs, the secondary causes worth finding, and the principles by which guidelines choose treatment. It follows UK guidance from the National Institute for Health and Care Excellence (NICE guideline NG136, *Hypertension in adults*, first published 2019 and last updated in 2023) and notes where European and American guidelines differ. Guidelines change; management in practice follows current local guidance.
 
-## Defining, confirming and measuring a moving number
+## Risk is continuous, thresholds are chosen
 
-::: definition Thresholds and the measurement problem {#def-definition}
-Hypertension is **a treatment-requiring level of blood pressure, not a disease entity**: clinic thresholds (in the NICE NG136 two-step algorithm: stage 1 is clinic ≥140/90 confirmed by an ambulatory or home average ≥135/85; stage 2 is clinic ≥160/100 with an ambulatory or home average ≥150/95; severe hypertension is clinic systolic ≥180 or diastolic ≥120 — target-organ damage is not a stage but one of the reasons to offer drugs in stage 1 for people under 80, alongside established cardiovascular disease, renal disease, diabetes or a 10-year cardiovascular risk ≥10 %; the lower ACC/AHA 130/80 reflects the continuous-risk data and an outcome-trial reading of SPRINT) sit **above** the true risk continuum — the reason the guideline language is "confirmed", "treat to below 140/90 in the clinic, below 135/85 at home". **The number's quality is a measurement problem**: cuff-bladder size (the arm-circumference error), rest and back support and arm height (the ±5–10 mmHg postural and hydrostatic terms), the repeat-reading rule (if the first clinic reading is ≥140/90, take a second and third and record the lower of the last two), talk and bladder and recent caffeine, and the **regression-to-the-mean that makes single visits untrustworthy** (the diagnosis needs a second occasion, and home or ambulatory monitoring — with its nocturnal dipping and variability and masked-pattern data — is the confirmatory instrument). The two named measurement syndromes are the epidemiologists' and the prescriber's joint problem: **white-coat hypertension** (clinic-high, out-of-clinic-normal — benign-ish, but a risk-marker worth following, and the trap that puts a decade of tablets into an innocent) and **masked hypertension** (clinic-normal, out-of-clinic- or night-high — the shift worker, the diabetic with arterial stiffness, the "normotensive" with unexplained left ventricular hypertrophy) — with **ambulatory monitoring's nocturnal non-dipping** the strongest out-of-clinic predictor in its own right ([[epidemiology-ebm/diagnostic-tests]]'s version of this argument: thresholds trade sensitivity against cost, and the confirmatory test's purpose is to move the patient from a screening state to a treated state with known numbers).
+The relationship between blood pressure and cardiovascular risk has no threshold. The Prospective Studies Collaboration (2002) pooled data on about a million adults and found that, from a usual pressure of 115/75 mmHg upwards, each 20 mmHg higher systolic pressure (or 10 mmHg higher diastolic) was associated with roughly a doubling of death from stroke and from ischaemic heart disease in people aged 40 to 69. There is no point at which pressure becomes "safe" or suddenly "dangerous".
+
+A diagnosis of hypertension is therefore a decision about where to draw a line: the level above which the benefits of investigation and treatment are judged to outweigh the costs and harms of labelling and drug treatment. Different guideline groups draw it in different places, which is why the same person can be "hypertensive" in one country and "high-normal" in another.
+
+::: definition Hypertension and its stages (NICE NG136) {#def-definition}
+In the UK, hypertension is diagnosed from a clinic reading confirmed by measurements outside the clinic, using **ambulatory blood pressure monitoring (ABPM)** or, if that is unsuitable, **home blood pressure monitoring (HBPM)**:
+
+| Stage | Clinic blood pressure | Daytime ABPM or HBPM average |
+|---|---|---|
+| Stage 1 hypertension | 140/90 to 159/99 mmHg | 135/85 to 149/94 mmHg |
+| Stage 2 hypertension | 160/100 mmHg or higher | 150/95 mmHg or higher |
+| Severe hypertension | systolic 180 or higher, or diastolic 120 or higher | — |
+
+Target-organ damage is **not** a stage. It is one of the reasons for offering drug treatment to people with stage 1 hypertension.
 :::
 
-::: definition Primary hypertension: the set-point disease {#def-primary}
-Ninety per cent of adult hypertension is **primary (essential)** — not one mechanism but several converging on the renal handling of sodium and the arteriolar tone of [[cardiovascular/circulation-blood-pressure]]: **nephron number and tubular reabsorption** (the developmental and genetic "nephron dose" — low birth weight's fewer, bigger glomeruli; the monogenic lessons of [[renal/potassium-calcium-phosphate]] — Liddle's gain-of-function ENaC mimicking aldosterone excess with suppressed renin, Gordon's thiazide-sensitive cotransporter overactivity, the loss-of-function Gitelman and Bartter phenotypes proving that transporters set population pressure); **pressure natriuresis with reduced gain** (the kidney excretes a sodium load only at a higher pressure — the Guyton synthesis of [[#def-primary]]'s title, which is why sodium restriction lowers pressure and why the set-point, once established, defends itself); **the renin–angiotensin–aldosterone system as an individual's "renin profile"** (the low-renin, salt-and-volume phenotype of older, Black and chronic-kidney-disease patients explaining differential drug responses rather than racial biology per se, and the high-renin vasospastic phenotype of the young white female); **sympathetic tone and its resetting** (the baroreflex, obesity-related renal-nerve afferent and efferent activation — the mechanistic rationale of the obesity-hypertension epidemic and of the denervation trials); and **vascular remodelling** (the arteriolar media-thickening and reduced internal diameter — cause or consequence, the Bayliss-hypertrophy feed-forward — with stiff large arteries adding the isolated systolic hypertension and wide pulse pressure of the old: the vascular-tree chapter's disease in its commonest form, [[cardiovascular/vascular-disease]]). Insulin resistance, uric acid, the microbiome and inflammation modulate; the Mendelian-randomisation and genome-wide association architecture (hundreds of small-effect blood-pressure loci, monogenic outliers) confirms the polygenic-plus-environment model ([[genetics/common-disease-genetics]]).
-:::
+Other guidelines classify differently. The **European Society of Cardiology (ESC) 2024** guideline keeps hypertension at 140/90 mmHg or above but adds a category of **elevated blood pressure** (120–139/70–89 mmHg) in which drug treatment is considered for people at high cardiovascular risk. The **American College of Cardiology and American Heart Association** guidelines (2017, and the 2025 update) define **stage 1 hypertension as 130–139/80–89 mmHg** and stage 2 as 140/90 mmHg or above. These are differences of policy, not of biology: they reflect different readings of the same trials and different judgements about cost and overdiagnosis.
 
-::: example The white coat and the night {#ex-confirm}
-A 44-year-old office manager has three clinic readings 148/94 over two visits; home monitoring averages 124/79; ambulatory daytime average 127/81 with a nocturnal dip of 4 %.
+## Measuring a number that moves
+
+Blood pressure varies from minute to minute with posture, activity, talking, a full bladder, caffeine, pain and anxiety. A single clinic reading is a poor guide to a person's usual pressure, and because a raised first reading tends to be lower when repeated (**regression to the mean**), diagnosis always needs repeated measurement.
+
+NICE describes a careful clinic technique:
+
+- use a validated device and a cuff of the right size for the arm;
+- the person should be seated, relaxed, with the arm supported at heart level;
+- measure in both arms at the first assessment; if the difference is more than 15 mmHg, repeat, and if it persists, use the arm with the higher reading from then on;
+- if the first reading is 140/90 mmHg or more, take a second and, if that differs substantially, a third; record the **lower of the last two**;
+- check for postural hypotension (standing readings) in people with diabetes, symptoms of postural dizziness or falls, or aged 80 or over.
+
+Out-of-clinic measurement then confirms the diagnosis. **ABPM** records at least two readings an hour during the person's usual waking hours, and the average of at least 14 waking readings is used. **HBPM** uses two consecutive seated readings at least a minute apart, twice daily (ideally morning and evening), for at least 4 and ideally 7 days; the first day's readings are discarded and the rest averaged.
+
+Comparing the two settings reveals two important patterns:
+
+- **White-coat hypertension**: raised clinic pressure with normal out-of-clinic pressure. Without out-of-clinic monitoring, these people would receive drugs they may not need. They have a somewhat higher long-term risk than people with normal pressure in both settings and are followed up.
+- **Masked hypertension**: normal clinic pressure with raised out-of-clinic pressure. It is missed unless looked for, and carries a risk close to that of sustained hypertension. It is suspected when there is target-organ damage (such as left ventricular hypertrophy) with apparently normal clinic readings.
+
+ABPM also records night-time pressure. Pressure normally falls by 10–20% during sleep; failure to fall ("non-dipping") is common in chronic kidney disease, diabetes and obstructive sleep apnoea and is associated with higher risk.
+
+::: example The white coat {#ex-confirm}
+A 44-year-old office manager has clinic readings of 146/92 and 150/94 mmHg on two visits. She measures her pressure at home with a validated device, twice morning and evening for seven days; after discarding day 1, her average is 131/83 mmHg. Her urine albumin–creatinine ratio, eGFR, ECG and fundi are normal and her 10-year cardiovascular risk is 3%. Does she have hypertension?
+
 ::: solution
-**White-coat hypertension with nocturnal non-dipping** — the two halves of the case come apart. The **office elevation, out-of-clinic normality and low cardiovascular event rate approaching the truly normotensive** say: no drugs on this number, lifestyle advice, annual re-check (a proportion convert to sustained hypertension), and the recognition that the clinic's sympathetic surge is a real trait marker of metabolic and pressor hyper-reactivity, worth following rather than treating ([[epidemiology-ebm/diagnostic-tests]]'s confirmation logic, [[clinical-skills/physical-examination]]). The **4 % dip (normal ≥10 %) is the finding that deserves the conversation**: non-dipping tracks with target-organ damage and predicts events, and its causes are the sleep apnoea she snores through, the alcohol and evening caffeine, diabetic autonomic neuropathy, chronic kidney disease and primary aldosteronism ([[endocrine/adrenal]]), depression and shift work. The management is therefore the **target-organ survey (fundoscopy, ECG and echocardiographic mass, urine albumin–creatinine ratio and creatinine and eGFR, the lipids and HbA1c), lifestyle with the pressure-specific numbers (weight's ~1 mmHg/kg, the salt target, the exercise's 5–8 mmHg across the week, alcohol caps, the DASH-style diet and potassium loading's renal caveat), and the 6–12-month re-monitor** — plus the sleep study the history already earned. The lesson generalises: **an ambulatory study is not a verdict but a different question answered** — the average rules, the pattern informs.
+Her clinic readings fall in the stage 1 range (140–159/90–99), but her home average of **131/83 mmHg is below the out-of-clinic threshold of 135/85**. Under NICE NG136 hypertension is **not diagnosed**: this is **white-coat hypertension**.
+
+The next steps are:
+- make sure the home number is reliable: correct technique, validated device, enough readings; if in doubt, confirm with ambulatory monitoring;
+- complete the routine assessment (done here, and normal). Target-organ damage without out-of-clinic hypertension would prompt a search for masked night-time hypertension or another cause;
+- give lifestyle advice;
+- re-measure clinic pressure at least every 5 years, and more often if it is close to 140/90 mmHg, because white-coat hypertension progresses to sustained hypertension more often than normal pressure does.
+
+Under the ACC/AHA framework, whose out-of-office threshold is 130/80 mmHg, the same home average would be called stage 1 hypertension, and treatment would be decided on her 10-year risk. The label depends on where the line is drawn.
 :::
+:::
+
+## Primary hypertension
+
+About 90% of adults with hypertension have **primary (essential) hypertension**, in which no single cause is found. It results from the interaction of many genetic variants, each with a small effect, with environmental factors.
+
+::: definition Primary hypertension {#def-primary}
+**Primary hypertension** is a sustained rise in blood pressure without an identifiable secondary cause. Its main contributors are:
+
+- **age**: arterial stiffening raises systolic pressure throughout adult life, so isolated systolic hypertension (raised systolic with normal or low diastolic pressure) is the commonest form in older people;
+- **dietary salt**, especially in salt-sensitive people, and low potassium intake;
+- **excess weight**, through sympathetic activation, insulin resistance, sodium retention and compression of the kidneys by visceral fat;
+- **alcohol**, physical inactivity and obstructive sleep apnoea;
+- **family history and ancestry**: hypertension is more common, develops earlier and causes more stroke and kidney disease in people of Black African and African-Caribbean family origin in the UK.
+:::
+
+Whatever the trigger, sustained hypertension implies that the kidney's pressure–natriuresis relationship has shifted, so that it needs a higher pressure to excrete the daily salt load ([[cardiovascular/circulation-blood-pressure#thm-natriuresis]]). Over time, raised pressure itself damages small arteries in the kidney and elsewhere, making the rise self-sustaining.
+
+## Damage to target organs
+
+Raised pressure damages the heart, brain, kidneys, eyes and arteries.
+
+- **Heart.** The left ventricle hypertrophies to normalise wall stress (law of Laplace). Hypertrophy becomes harmful: the stiff ventricle fills poorly (heart failure with preserved ejection fraction), the thickened muscle outgrows its blood supply, and atrial fibrillation becomes more likely. Hypertension is also a major cause of coronary disease and of heart failure with reduced ejection fraction ([[cardiovascular/heart-failure]]).
+- **Brain.** Hypertension is the strongest modifiable risk factor for both ischaemic stroke and intracerebral haemorrhage, and contributes to vascular cognitive impairment and dementia ([[nervous-system/stroke]]).
+- **Kidney.** Hypertensive nephrosclerosis narrows the small renal arteries; albuminuria is an early marker and chronic kidney disease a late consequence. Kidney disease in turn raises pressure ([[renal/chronic-kidney-disease]]).
+- **Eyes.** Hypertensive retinopathy ranges from arteriolar narrowing and arteriovenous nipping to flame haemorrhages, cotton-wool spots and, in accelerated hypertension, papilloedema.
+- **Arteries.** Hypertension accelerates atherosclerosis and is the main risk factor for aortic dissection and a contributor to aortic aneurysm and peripheral arterial disease ([[cardiovascular/vascular-disease]]).
+
+NICE recommends that everyone with newly diagnosed hypertension has an assessment for target-organ damage and cardiovascular risk:
+
+- urine **albumin–creatinine ratio** and urine dipstick for haematuria;
+- blood tests for **HbA1c**, electrolytes, creatinine and **eGFR**, and total and HDL cholesterol;
+- **fundoscopy** for retinopathy;
+- a **12-lead ECG** (for left ventricular hypertrophy, previous infarction or arrhythmia);
+- estimation of **10-year cardiovascular risk** with QRISK3 (not valid in people already known to be at high risk, such as those with established cardiovascular disease or chronic kidney disease).
+
+## Secondary hypertension
+
+About one in ten people with hypertension has an identifiable cause. Some of these causes are curable; others need specific treatment. NICE advises that people under 40 with hypertension should be considered for specialist evaluation of secondary causes and a more detailed assessment of long-term benefits and risks of treatment. Other clues include severe or resistant hypertension, a sudden rise in previously stable pressure, low potassium, and symptoms or signs of a specific cause.
+
+::: definition The main secondary causes {#def-secondary}
+- **Renal parenchymal disease**: the commonest secondary cause. Clues: raised creatinine, proteinuria or haematuria.
+- **Renovascular disease**: atherosclerotic renal artery stenosis in older people with vascular disease; fibromuscular dysplasia in younger people, especially women. Clues: an abdominal bruit, a rise in creatinine of more than about 30% after starting an ACE inhibitor or ARB, recurrent "flash" pulmonary oedema, kidneys of unequal size.
+- **Primary aldosteronism**: autonomous aldosterone secretion from an adrenal adenoma or bilateral hyperplasia. It is the commonest endocrine cause, present in an estimated 5–10% of people with hypertension and more of those with resistant hypertension. Potassium is low in only a minority. Screening test: the **aldosterone-to-renin ratio** ([[endocrine/adrenal]]).
+- **Phaeochromocytoma and paraganglioma**: catecholamine-secreting tumours. Clues: episodes of headache, sweating and palpitations, labile pressure. Test: plasma or urine **metanephrines**.
+- **Cushing's syndrome**, thyroid disease, primary hyperparathyroidism and acromegaly.
+- **Coarctation of the aorta**: hypertension in the arms with weak, delayed femoral pulses (radiofemoral delay) ([[cardiovascular/valve-congenital-disease]]).
+- **Obstructive sleep apnoea**: common in resistant hypertension, especially with obesity.
+- **Drugs and substances**: non-steroidal anti-inflammatory drugs, combined oral contraceptives, corticosteroids, ciclosporin and tacrolimus, erythropoietin, some antidepressants (venlafaxine), decongestants, liquorice, alcohol excess, cocaine and amfetamines.
+- **Pregnancy**: gestational hypertension and pre-eclampsia ([[obstetrics-gynaecology/pregnancy-complications]]).
+:::
+
+::: example Low potassium on two drugs {#ex-conn}
+A 52-year-old man has clinic pressure 158/96 mmHg and a home average of 152/94 mmHg despite amlodipine and indapamide. His serum potassium is 3.1 mmol/L. His brother had a stroke at 49. What is the most likely secondary cause, and how is it investigated?
+
+::: solution
+Hypertension not controlled on two drugs with **low potassium** suggests **primary aldosteronism**. A thiazide-like diuretic can lower potassium, but a level of 3.1 mmol/L should not be put down to the diuretic without testing, and a family history of early stroke adds weight.
+
+Investigation (usually led by an endocrinology or hypertension specialist):
+1. **Correct the potassium**, because low potassium suppresses aldosterone and can give a falsely normal result.
+2. **Measure the aldosterone-to-renin ratio.** In primary aldosteronism renin is suppressed while aldosterone is inappropriately normal or high. Several drugs alter the ratio (diuretics, ACE inhibitors, ARBs, beta-blockers, mineralocorticoid receptor antagonists), so the specialist may change his treatment to drugs that interfere less (for example a calcium channel blocker or an alpha-blocker) before testing, depending on local protocol.
+3. **Confirmatory testing** (for example a saline suppression test) if the screen is positive.
+4. **Subtype**: adrenal CT and, if surgery is being considered, **adrenal vein sampling** to show whether excess aldosterone comes from one gland (often an adenoma, which can be removed) or both (treated with a mineralocorticoid receptor antagonist).
+
+Primary aldosteronism matters beyond the blood pressure: at the same pressure it carries more atrial fibrillation, stroke, heart failure and kidney damage than primary hypertension, because aldosterone itself promotes fibrosis.
+:::
+:::
+
+::: example Flash pulmonary oedema {#ex-ras}
+A 74-year-old woman with peripheral arterial disease and a 50-pack-year smoking history is admitted for the second time in a year with sudden pulmonary oedema. Her blood pressure is 196/104 mmHg. Her ejection fraction is 55%. Three months ago her creatinine rose from 110 to 165 µmol/L after ramipril was started. Ultrasound shows a right kidney of 8.5 cm and a left kidney of 11 cm. Explain the likely diagnosis.
+
+::: solution
+The combination suggests **atherosclerotic renal artery stenosis**, probably bilateral or affecting a dominant kidney:
+
+- she has widespread atherosclerosis (peripheral arterial disease, heavy smoking);
+- her **creatinine rose by 50%** after an ACE inhibitor. When renal perfusion pressure is low, glomerular filtration depends on angiotensin II constricting the efferent arteriole; removing it lowers filtration pressure ([[cardiovascular/circulation-blood-pressure]]);
+- the **kidneys differ in size** by more than 1.5 cm, suggesting the smaller one is ischaemic;
+- **recurrent flash pulmonary oedema** with preserved ejection fraction is a recognised presentation: activation of renin and angiotensin with impaired sodium excretion causes sudden volume overload and hypertension.
+
+Imaging of the renal arteries (CT or MR angiography, or duplex ultrasound) confirms the diagnosis. Most atherosclerotic renal artery stenosis is managed medically (blood pressure control, statin, antiplatelet therapy, stopping smoking), because randomised trials of stenting in unselected patients showed no benefit. Revascularisation is considered for selected patients, and recurrent flash pulmonary oedema is one of the accepted indications.
+:::
+:::
+
+## Treatment: lifestyle and the case for drugs
+
+**Lifestyle measures** are offered to everyone with hypertension and to people with high-normal pressure. Each lowers pressure by a few mmHg, and together they can achieve as much as a single drug:
+
+- reduce salt intake (the UK recommendation for adults is no more than 6 g of salt a day; WHO recommends less than 5 g);
+- a healthy diet rich in fruit and vegetables (such as the DASH diet), which also increases potassium;
+- weight loss if overweight;
+- regular aerobic exercise;
+- keep alcohol within recommended limits;
+- stop smoking (which does not lower pressure, but greatly reduces overall cardiovascular risk);
+- reduce excessive caffeine.
+
+The case for drugs comes from randomised trials. A large meta-analysis by Ettehad and colleagues (2016, *Lancet*), of 123 trials, found that each 10 mmHg reduction in systolic pressure reduced the relative risk of major cardiovascular events by about 20% (relative risk 0.80), stroke by about 27%, heart failure by about 28%, coronary heart disease by about 17%, and all-cause death by about 13%. The proportional benefit was similar across a wide range of starting pressures.
+
+::: theorem Relative and absolute benefit {#thm-benefit}
+The proportional (relative) reduction in risk from lowering blood pressure is roughly constant, so the **absolute** benefit is proportional to the person's baseline risk:
+$$
+\text{absolute risk reduction} = \text{baseline risk} \times (1 - RR), \qquad NNT = \frac{1}{\text{absolute risk reduction}}.
+$$
+People at high overall cardiovascular risk gain the most from the same reduction in pressure. This is why guidelines combine blood pressure with absolute risk when deciding whom to treat.
 :::
 
 ::: widget plot
 f: 100*exp(-0.0223*x)
-x: 0, 24
-y: 50, 105
-labels: \text{sustained SBP reduction (mmHg)},\ \text{relative vascular-event risk (\%)}
-caption: The steepness that drives the thresholds: each sustained 10 mmHg of systolic reduction cuts major cardiovascular events by about a fifth (relative risk 0.80 in Ettehad and colleagues' 2016 *Lancet* meta-analysis of 123 trials; stroke 0.73, heart failure 0.72, coronary disease 0.83, all-cause death 0.87), with similar proportional benefit across baseline pressures — so the curve is drawn as a constant relative reduction per 10 mmHg (exponential), which is an extrapolation for teaching beyond the trial range. This curve is why guidelines treat absolute pressure and absolute risk, why combination therapy at standard doses usually beats maximal-dose monotherapy (same millimetres, fewer dose-dependent side effects — and the reverse read: half-dose combinations retain most of the fall), and why even the mild ranges matter to a 60-year cumulative-risk account.
+x: 0, 30
+y: 40, 105
+hlines: 80
+labels: \text{relative risk of major cardiovascular events (\%)}
+caption: Relative risk of major cardiovascular events (%) against sustained reduction in systolic pressure (mmHg), drawn as a constant 20% relative reduction per 10 mmHg (relative risk 0.80, Ettehad and colleagues, 2016). The horizontal line marks a relative risk of 80%, reached at 10 mmHg. The exponential shape is a teaching extrapolation; most trials achieved reductions of 10–20 mmHg.
+:::
+
+::: example What does treatment buy? {#ex-nnt}
+Two people both have a sustained systolic pressure of 152 mmHg. Person A is a 45-year-old woman with a 10-year cardiovascular risk of 4%. Person B is a 70-year-old man with diabetes and a 10-year risk of 25%. Assuming that treatment lowers systolic pressure by 10 mmHg and that the relative risk is 0.80, calculate the absolute risk reduction and number needed to treat for 10 years for each.
+
+::: solution
+**Person A**: the risk falls from 4% to $4 \times 0.80 = 3.2\%$. The absolute risk reduction is 0.8 percentage points, and $NNT = 1/0.008 = 125$: 125 people like her treated for 10 years to prevent one major cardiovascular event.
+
+**Person B**: the risk falls from 25% to $25 \times 0.80 = 20\%$. The absolute risk reduction is 5 percentage points, and $NNT = 1/0.05 = 20$.
+
+The same pressure and the same drug effect yield a six-fold difference in benefit. This arithmetic is why NICE offers drug treatment in stage 1 hypertension when there is target-organ damage, cardiovascular disease, renal disease, diabetes or a 10-year risk of 10% or more, and why the decision for a younger person at low risk is a shared one in which her own values carry weight. :::
+:::
+:::
+
+## Who to treat and the targets
+
+Under NICE NG136, as of 2026:
+
+- **Stage 2 hypertension**: offer drug treatment, in addition to lifestyle advice, at any age.
+- **Stage 1 hypertension, under 80**: discuss drug treatment with people who have one or more of target-organ damage, established cardiovascular disease, renal disease, diabetes, or an estimated 10-year cardiovascular risk of 10% or more.
+- **Stage 1 hypertension, under 60, with 10-year risk below 10%**: consider drug treatment.
+- **Over 80**: consider drug treatment for stage 1 hypertension if the clinic pressure is above 150/90 mmHg, taking frailty and multimorbidity into account.
+
+The clinic targets are **below 140/90 mmHg under the age of 80** and **below 150/90 mmHg at 80 or over**; the corresponding home or ambulatory targets are 5 mmHg lower (below 135/85 and below 145/85). In people with frailty or multiple long-term conditions, targets are set by clinical judgement. Other guidelines set lower targets: the ESC 2024 guideline recommends a systolic target of 120–129 mmHg for most adults if tolerated, and the ACC/AHA guidelines below 130/80 mmHg. These lower targets draw heavily on the SPRINT trial (2015), in which a systolic target below 120 mmHg in high-risk adults without diabetes reduced cardiovascular events and deaths compared with a target below 140 mmHg, at the cost of more hypotension, syncope, electrolyte disturbance and acute kidney injury. SPRINT measured pressure with an automated device while the participant sat alone, which gives lower readings than routine clinic measurement, so its numbers cannot be transferred directly to an ordinary clinic.
+
+## Choosing drugs
+
+The main first-line drug classes are:
+
+- **A**: ACE inhibitors (such as ramipril) or angiotensin II receptor blockers (ARBs, such as losartan or candesartan). They reduce the effects of angiotensin II. They cause hyperkalaemia and a rise in creatinine; ACE inhibitors cause cough and, rarely, angioedema. Both are **teratogenic** and are avoided in pregnancy and used with caution in people who could become pregnant.
+- **C**: calcium channel blockers, usually a dihydropyridine such as amlodipine. They dilate arterioles. Ankle oedema, flushing and headache are common.
+- **D**: thiazide-like diuretics (indapamide or chlortalidone are preferred to older thiazides such as bendroflumethiazide in new prescriptions). They cause hyponatraemia, hypokalaemia, raised urate (gout) and glucose.
+
+Beta-blockers are not first-line for uncomplicated hypertension in UK guidance, because in trials they protected less well against stroke than other classes. They are used when there is another reason, such as angina, previous myocardial infarction, heart failure or atrial fibrillation.
+
+::: algorithm The NICE NG136 treatment steps {#alg-steps}
+**Step 1**
+- Type 2 diabetes (any age or family origin): **A** (an ARB in preference to an ACE inhibitor for people of Black African or African-Caribbean family origin).
+- No type 2 diabetes, under 55 and not of Black African or African-Caribbean family origin: **A**.
+- No type 2 diabetes, aged 55 or over, or of Black African or African-Caribbean family origin at any age: **C** (a thiazide-like diuretic if a calcium channel blocker is unsuitable, for example because of oedema or heart failure).
+
+**Step 2**: if pressure is not controlled, add a second class: A + C or A + D, or C + A or C + D (an ARB rather than an ACE inhibitor for people of Black African or African-Caribbean family origin).
+
+**Step 3**: **A + C + D**, after checking adherence.
+
+**Step 4 (resistant hypertension)**: hypertension uncontrolled on optimal tolerated doses of A + C + D. First confirm with ABPM or HBPM, check for postural hypotension, and discuss adherence. Then:
+- if blood potassium is **4.5 mmol/L or less**, consider adding low-dose **spironolactone**;
+- if potassium is **above 4.5 mmol/L**, consider an **alpha-blocker** or a **beta-blocker**.
+
+Seek specialist advice if pressure remains uncontrolled on optimal tolerated doses of four drugs.
+:::
+
+The age and ethnicity rule reflects average differences in the renin–angiotensin system: older people and people of Black African or African-Caribbean origin more often have low-renin, salt-sensitive hypertension that responds better to calcium channel blockers and diuretics than to blockade of angiotensin. These are averages. The spironolactone recommendation at step 4 draws on the PATHWAY-2 trial (2015), in which spironolactone lowered pressure more than bisoprolol or doxazosin in resistant hypertension, consistent with a role for excess aldosterone. The potassium limit reflects the risk of hyperkalaemia, which also rises as kidney function falls; potassium and renal function are monitored after starting it.
+
+::: warning Resistant hypertension is often something else
+Before declaring hypertension "resistant" and adding a fourth drug, look for **pseudo-resistance**: poor measurement technique (a cuff too small for the arm), white-coat effect, and, most commonly, not taking the prescribed medicines, which studies using drug-level testing have found in a substantial proportion of people referred with apparently resistant hypertension. Then look for **drivers**: high salt or alcohol intake, NSAIDs and other interfering drugs, obstructive sleep apnoea, and secondary causes, especially primary aldosteronism. Adding drugs without these checks exposes the person to side effects without solving the problem.
 :::
 
 ::: quiz
-Primary aldosteronism is correctly screened for by:
-- [ ] Urinary aldosterone alone in a random sample
-- [x] Plasma aldosterone-to-renin ratio in an unsuspended state, with confirmatory testing and adrenal imaging/venous sampling afterwards
-- [ ] CT adrenograms before any biochemistry
-- [ ] A trial of spironolactone with the blood pressure as readout
+A 47-year-old white man without diabetes has confirmed stage 2 hypertension. Under NICE NG136, which drug class is the usual first choice?
+- [x] An ACE inhibitor or angiotensin receptor blocker
+- [ ] A calcium channel blocker
+- [ ] A thiazide-like diuretic
+- [ ] A beta-blocker
 ::: solution
-The **aldosterone-to-renin ratio** (elevated aldosterone with non-suppressed renin — the autonomous-secretion signature) is the accepted screen, performed off interfering drugs where possible (the beta-blocker false-negative and the ACE/ARB and diuretic and spironolactone false-positive pitfalls — [[pharmacology/adverse-reactions]]-adjacent and lab-specific caveats), then **confirmatory suppression testing (oral sodium loading, saline infusion, captopril challenge), then CT and adrenal-vein sampling** to separate the adenoma (surgery's cure) from bilateral hyperplasia (spironolactone or eplerenone — the resistant hypertension's common substrate, [[cardiovascular/hypertension]]'s own fourth-line finding — PATHWAY-2's argument that mild autonomous aldosterone excess populates the resistant cohort). The case-finding triggers: **spontaneous or diuretic-induced hypokalemia, resistant hypertension, an adrenal incidentaloma, early-onset hypertension with family history of stroke <40, sleep-apnoea hypertension and the hypertensive with atrial fibrillation** — and the teaching point: a low-renin hypertension with hypokalaemia is not "the diuretic's doing" until the ratio has said otherwise ([[endocrine/adrenal]]).
+He is under 55, does not have type 2 diabetes and is not of Black African or African-Caribbean family origin, so step 1 is **an ACE inhibitor or ARB**. A calcium channel blocker would be first-line if he were 55 or older or of Black African or African-Caribbean family origin. A thiazide-like diuretic is an alternative when a calcium channel blocker is unsuitable, and a beta-blocker is not first-line for uncomplicated hypertension.
 :::
 :::
 
-## The second causes and the damaged targets
+## Severe hypertension and hypertensive emergencies
 
-::: definition Secondary hypertension: the short list worth finding {#def-secondary}
-Find a cause when the physiology shouts or the numbers misbehave: **renal parenchymal disease** (the commonest secondary cause overall — the [[renal/chronic-kidney-disease]] volume-and-renin picture with anaemia and calcium–phosphate company), **renal artery stenosis** (atheroma in the old, fibromuscular dysplasia in the young woman with a bruit and a beaded angiogram — the two-kidney one-clip physiology of [[cardiovascular/circulation-blood-pressure]]'s history paragraph expressed as recurrent flash pulmonary oedema, an eGFR drop >30 % on an ACE inhibitor, and the revascularisation arguments of Pickering syndrome), **primary aldosteronism** ([[#ex-confirm]] and [[endocrine/adrenal]]), **phaeochromocytoma** (the sustained or paroxysmal catecholamine pressor surge: headache, palpitations, sweating and pallor, the labile or orthostatic picture, metanephrines' biochemical first-move and the α-before-β commandment of [[physiology/autonomic-nervous-system]] and [[cardiovascular/circulation-blood-pressure]]), **Cushing's syndrome and the thyroid, parathyroid and acromegaly endocrinopathies** ([[endocrine/thyroid]], [[endocrine/bone-calcium]], [[endocrine/hypothalamus-pituitary]] — cortisol's mineralocorticoid-permissive and vascular effects, thyrotoxic systolic and hypothyroid diastolic hypertension, the sleep apnoea of acromegaly), **coarctation** (the young hypertensive with radio-femoral delay and arm-leg gradient, the bicuspid valve and Turner associations of [[cardiovascular/valve-congenital-disease]]), **drug-induced** (the oral contraceptive and oestrogens' angiotensinogen effect, NSAIDs' prostaglandin-withdrawal sodium retention, steroids and the mineralocorticoid potency of carbenoxolone and liquorice — 11β-hydroxysteroid-dehydrogenase's apparent mineralocorticoid excess, ciclosporin and tacrolimus, erythropoietin, cocaine and amfetamine, the decongestants, venlafaxine and the MAOIs' cheese interaction, and the licorice-tea phenotype of the history of medicine), and **obstructive sleep apnoea** (the non-dipping, resistant, snoring-obese phenotype through sympathetic and aldosterone activation and intrathoracic-pressure swings). The examination and the basic bloods and urine and ECG and fundus find most of these; the alerting features (onset <30 or >55, resistance, hypokalaemia, worsening renal function, the spells, the discordant kidneys) open the specific pathway ([[clinical-skills/physical-examination]]).
-:::
+Very high pressure is managed according to whether there is acute organ damage.
 
-::: example The hypokalaemic hypertensive {#ex-conn}
-A 52-year-old on amlodipine and bendroflumethiazide has BP 158/96, a random potassium 3.0, eGFR 78, and a family history of stroke at 45.
+Under NICE NG136, a person with a clinic pressure of **180/120 mmHg or higher** should be referred for **same-day specialist assessment** if they have retinal haemorrhages or papilloedema (accelerated, or "malignant", hypertension), life-threatening symptoms such as new confusion, chest pain, signs of heart failure or acute kidney injury, or suspected phaeochromocytoma. Otherwise, tests for target-organ damage are done as soon as possible; if damage is found, treatment can be started without waiting for out-of-clinic monitoring, and if not, the clinic measurement is repeated within 7 days.
+
+A **hypertensive emergency** is severe hypertension with acute damage to the brain (hypertensive encephalopathy, stroke), heart (acute coronary syndrome, acute pulmonary oedema), aorta (dissection), kidneys or retina, or in pregnancy (severe pre-eclampsia or eclampsia). It needs admission, usually to a high-dependency setting, and controlled lowering of pressure with intravenous drugs. Because cerebral and renal autoregulation have adapted to high pressure, an abrupt fall can cause stroke or kidney injury; pressure is usually reduced gradually over hours, except in specific situations, such as aortic dissection, where rapid lowering is the aim.
+
+::: example Headache and blurred vision {#ex-accelerated}
+A 38-year-old man of African-Caribbean family origin presents with two weeks of headache and blurred vision. His blood pressure is 232/138 mmHg. Fundoscopy shows bilateral flame haemorrhages, cotton-wool spots and swollen optic discs. His creatinine is 210 µmol/L, urine dipstick shows protein and blood, and the blood film shows fragmented red cells. Interpret the findings.
+
 ::: solution
-**Screen for primary aldosteronism now** — resistant-ish hypertension plus spontaneous-adjacent hypokalaemia plus early-stroke family history is the [[#def-secondary]] case-finding triad, and the thiazide is an accomplice, not an explanation, when the potassium is 3.0 (a normal-person thiazide leak this low, once unmasked, still warrants the ratio). Practical sequence: **switch the antihypertensives away from the renin-interfering pair (stop the bendro and the ACE/ARB and the spironolactone-class if present; amlodipine, doxazosin and verapamil are comparatively ratio-neutral), correct the potassium, send the aldosterone–renin ratio (the suppressed renin with inappropriately normal-high aldosterone is the signal), confirm, then image — and accept that CT will show incidental micro-nodules in half of this age group, so the lateralisation decision belongs to adrenal-vein sampling, not to the radiologist.** The reason the disease matters beyond the number: **aldosterone's myocardial and renal fibrosis, the atrial-fibrillation, stroke and heart-failure excess at equal blood pressures** ([[renal/potassium-calcium-phosphate]]'s potassium and [[cardiovascular/heart-failure]]'s aldosterone-arm arguments), so an adenoma resected or an eplerenone started buys more than the millimetres. The differential the ratio sorts: **Liddle's syndrome** (the young, low-renin low-aldosterone, amiloride-responsive pedigree of [[renal/potassium-calcium-phosphate]]), apparent mineralocorticoid excess and liquorice, Cushing, congenital adrenal-hyperplasia's deoxycorticosterone excesses, and the renovascular high-renin/high-aldosterone picture the ratio reads as secondary hyperaldosteronism (both hormones up, renin not suppressed — the distinction that saves a patient an unnecessary adrenalectomy).
-:::
-:::
+This is **accelerated (malignant) hypertension**: severe hypertension with **papilloedema and retinal haemorrhages**, together with acute kidney injury and microangiopathic haemolysis (fragmented red cells). Very high pressure causes fibrinoid necrosis of small arterioles; red cells are damaged passing through them, and the kidney's small vessels are injured, which activates renin and drives the pressure higher still.
 
-::: example The flash oedema and the rising creatinine {#ex-ras}
-A 71-year-old smoker with diffuse vascular disease has two episodes of abrupt nocturnal breathlessness with pink froth and BP 210/110, treated as "asthma"; an ACE inhibitor started for proteinuria lifts creatinine from 96 to 148 µmol/L in ten days; the kidneys measure 9 and 7 cm on ultrasound.
-::: solution
-**Bilateral (or solitary-kidney) renal-artery stenosis with Pickering-flash pulmonary oedema and afterload-dependent glomerular filtration.** The physiology as a story: both kidneys (or the only functioning one) are perfused past a fixed stenosis and depend on **angiotensin II's efferent arteriolar constriction to hold the filtration pressure** (the single-nephron arithmetic of [[renal/filtration]]); removing that tone drops the GFR without much changing the pressure — the **creatinine rise after an ACE inhibitor is not allergy but physiology, and its >30 % rise with bilateral disease is the stop-and-survey signal** (the unilateral stenosis with a healthy partner tolerates the same drug and even benefits renoprotectively — the asymmetry examiners love). The flash oedema is the same state's pressure-load attack on a stiff ventricle ([[cardiovascular/heart-failure]]'s preserved-ejection-fraction physiology and [[cardiovascular/circulation-blood-pressure]]'s sodium-and-afterload story), and the discordant, small ischaemic kidney completes the anatomical evidence. Management: **aggressive medical therapy (the statin, antiplatelet, and the careful reintroduction of renin–angiotensin blockade under creatinine surveillance once the anatomy is known — the atherosclerotic-renovascular trials' lesson that stenting beats medical therapy only in the flash-oedema and refractory-heart-failure phenotypes, exactly this presentation, where revascularisation — angioplasty with stent — carries the highest yield), the fibromuscular-dysplasia contrast (the young woman, angioplasty without stent, often cured), and the aortogram or CT or MR or duplex anatomy decision made in a vascular centre** ([[cardiovascular/vascular-disease]], [[renal/chronic-kidney-disease]]).
-:::
-:::
-
-::: example The resistant snorer {#ex-osa}
-A 49-year-old man (BMI 38, neck 44 cm) on amlodipine 10, ramipril 10 and bendroflumethiazide 2.5 has home BP 156/98, daytime sleepiness, a witnessed apnoea, potassium 4.1 and eGFR 88.
-::: solution
-**Resistant hypertension with the obstructive-sleep-apnoea phenotype** — before adding a fourth drug, the [[#def-secondary]] checklist: adherence (the refill history and, increasingly, the urine or plasma drug assay), the NSAID and liquorice and decongestant audit, salt and alcohol, the cuff and technique, **and this patient's Epworth-scored sleep apnoea** — the intermittent hypoxaemia's sympathetic surges, aldosterone activation, nocturnal non-dipping and night-time mouth-breathing physiology that makes the neck circumference an examination finding with a blood-pressure consequence, and the phenotype in which the aldosterone screen of [[#ex-conn]] is also positive disproportionately often. Work-up and management: **home sleep study or polysomnography, CPAP or weight loss or mandibular devices by severity (the BP effect of CPAP is modest — a few mmHg — but the adherence-mediated and alertness benefits and the possible cardiovascular-event effects in the compliant drive the guideline support), the GLP-1-era weight argument (tirzepatide and semaglutide's apnoea-severity and blood-pressure trial results — [[endocrine/diabetes]]'s obesity pharmacology), the nocturnal-habits counselling, and then the spironolactone add-on ladder of the resistance exercise if the pressure stays up after the drivers are treated.** The teaching: resistance is a syndrome with an untreated cause more often than a four-drug disease — and the cause list is physiology ([[cardiovascular/circulation-blood-pressure]]'s timescales, [[endocrine/adrenal]]'s aldosterone, [[renal/water-sodium]]'s sodium).
+It is a **hypertensive emergency** requiring same-day specialist care, admission, close monitoring and controlled reduction of pressure, with careful attention to kidney function. Once stable, he needs a search for secondary causes, given his age and the severity, although primary hypertension is the commonest underlying cause of malignant hypertension. :::
 :::
 :::
 
 ::: history
-Hypertension's history is the defeat of **therapeutic nihilism**: Riva-Rocci's cuffed manometer (1896) and Korotkoff's auscultatory sounds made the number visible; von Recklinghausen and then **Allbutt and Mahomed and Parkes Weber** described the "high blood pressure" disease with its renal and cardiac endings; Keith, Wagener and Barker's **fundus grading (1939)** and the malignant-hypertension survival curves (the median-year figures before treatment — the most frightening graph in 20th-medicine) defined the natural history. The intervention era: **the Veterans Administration trials of the 1950s–60s (the sodium-restriction and antihypertensive-drug trials that proved benefit in severe hypertension), the Framingham cohort's risk-factor epidemiology (the continuous relationship that reframed the number as risk, [[epidemiology-ebm/observational-studies]]), the MRC Medical Research Council's mild-hypertension trial and the Australian and IPPPSH and HDFP trials extending treatment to the mild ranges, the SHEP and Syst-Eur trials proving the benefit in the elderly with isolated systolic hypertension (HYVET's fit-80-plus sequel), and the modern class-and-strategy trials the ALLHAT's thiazide-comparison controversy, the HOPE and ONTARGET's ACE/ARB-territory logic, and the Salt-Substitute trials of sodium's blood-pressure arithmetic, PATHWAY-2's spironolactone answer for resistance, and SPRINT's intensive-target controversy with its unattended-oscillometric-reading asterisk)**; between them, the causes were found — Conn's aldosterone-producing adenoma (1955), the phaeochromocytoma's surgical era, Liddle's amiloride-responsive pedigree, the renal-artery and Goldblatt line, and the genetics era's monogenic-pedigree harvest ([[renal/potassium-calcium-phosphate]]).
+In 1827 Richard Bright described patients with diseased kidneys and enlarged hearts, and later observers suspected that raised arterial pressure linked the two. Frederick Mahomed, in London in the 1870s, used a sphygmograph to show that pressure could be high in people without kidney disease. Scipione Riva-Rocci's inflatable cuff (1896) and Nikolai Korotkoff's description of the sounds (1905) made blood pressure measurement routine. For decades raised pressure was often regarded as a compensation that should not be disturbed. The Framingham Heart Study, begun in 1948, showed that higher pressure predicted cardiovascular disease, and in 1967 the Veterans Administration Cooperative Study, led by Edward Freis, showed that treating men with severe diastolic hypertension dramatically reduced complications. Later trials extended the benefit to milder and to isolated systolic hypertension in older people (SHEP, 1991) and to people aged 80 and over (HYVET, 2008).
 :::
 
 ## Where this leads
 
-The pressure physiology this chapter exploits is in [[cardiovascular/circulation-blood-pressure]]; the renal transport and monogenic forms in [[renal/water-sodium]] and [[renal/potassium-calcium-phosphate]]; the secondary-endocrine causes in [[endocrine/adrenal]] and [[endocrine/thyroid]]; the vascular and cardiac target damage in [[cardiovascular/vascular-disease]], [[cardiovascular/heart-failure]] and [[cardiovascular/coronary-artery-disease]]; the evidence machinery in [[epidemiology-ebm/randomised-trials]] and [[epidemiology-ebm/diagnostic-tests]]; pregnancy's hypertension in [[obstetrics-gynaecology/pregnancy-complications]].
+The physiology of pressure control is in [[cardiovascular/circulation-blood-pressure]]. Hypertension's consequences reappear in [[cardiovascular/coronary-artery-disease]], [[cardiovascular/heart-failure]], [[cardiovascular/vascular-disease]] and [[nervous-system/stroke]]. Hypertension in pregnancy is in [[obstetrics-gynaecology/pregnancy-complications]], the adrenal causes in [[endocrine/adrenal]], and the population approach to blood pressure in [[public-health/non-communicable-disease]]. The interpretation of trials and numbers needed to treat is developed in [[epidemiology-ebm/randomised-trials]].
 
 ::: summary
-- Hypertension is a treatment threshold on a continuous risk curve; confirmation by out-of-clinic measurement (white-coat and masked patterns, nocturnal non-dipping) is part of the diagnosis, not a formality.
-- Primary hypertension is the renal pressure–natriuresis set point plus arteriolar remodelling, with sodium handling, renin profile, sympathetic tone and vascular stiffness as its adjustable terms.
-- The secondary list is short and worth knowing — renal parenchymal and renovascular disease, aldosterone excess, phaeochromocytoma, endocrine and drug causes, coarctation and sleep apnoea — and is hunted by the clinical pattern, not by shotgun testing.
-- Target damage (left ventricle, retina, brain, kidney, vessels) both grades the disease and reframes the risk; finding it moves a borderline patient across the treatment line.
-- Treatment is millimetres: lifestyle numbers, an AB/CD-class algorithm matched to the renin/salt phenotype, add-on spironolactone for resistance, and the emergency rules of controlled reduction ([[cardiovascular/circulation-blood-pressure]]'s autoregulation caution).
+- Cardiovascular risk rises continuously with blood pressure; diagnostic thresholds are policy choices that differ between NICE, ESC and ACC/AHA.
+- NICE NG136: stage 1 is clinic 140/90 or higher confirmed by ABPM or HBPM average 135/85 or higher; stage 2 is clinic 160/100 or higher with an out-of-clinic average 150/95 or higher; severe hypertension is clinic systolic 180 or higher or diastolic 120 or higher.
+- Out-of-clinic monitoring detects white-coat and masked hypertension; measurement technique matters.
+- About 90% is primary hypertension; secondary causes include kidney disease, renal artery stenosis, primary aldosteronism, phaeochromocytoma, coarctation, sleep apnoea and drugs. People under 40 should be considered for specialist evaluation.
+- Assess target-organ damage and cardiovascular risk in everyone: urine albumin–creatinine ratio, HbA1c, renal function, lipids, fundi, ECG and QRISK3.
+- Each 10 mmHg systolic reduction lowers major cardiovascular events by about 20%; absolute benefit depends on baseline risk.
+- NICE steps: A or C at step 1 by age, ethnicity and diabetes; A + C or D at step 2; A + C + D at step 3; at step 4, spironolactone if potassium is 4.5 mmol/L or less, otherwise an alpha- or beta-blocker. Targets below 140/90 under 80, below 150/90 at 80 or over.
+- Severe hypertension with retinal haemorrhages, papilloedema or life-threatening features needs same-day specialist assessment; pressure is lowered in a controlled way.
 :::
 
 ## Exercises
 
-::: exercise Classify and confirm {level=1}
-Clinic readings 146/92 and 150/94 on two visits; home average 131/83 over seven days. Stage the patient and state the next action.
+::: exercise Stage the patient {level=1}
+Using NICE NG136, classify each person: (a) clinic 164/102 mmHg, ABPM daytime average 154/97 mmHg; (b) clinic 148/88 mmHg, HBPM average 139/86 mmHg; (c) clinic 186/112 mmHg on a single visit, no symptoms, fundi normal.
 ::: solution
-Clinic readings are in the stage 1 range (140–159/90–99), but the home average is **131/83 — below the 135/85 out-of-clinic threshold, so on NICE NG136 hypertension is not diagnosed: this is white-coat hypertension, not stage 1**. The next action is to make sure the home number is trustworthy — validated device, two readings at least a minute apart morning and evening for at least 4 and ideally 7 days, first-day readings discarded — and to confirm with ambulatory monitoring if technique or nocturnal pressure is in doubt; to do the routine assessment anyway (urine albumin–creatinine ratio, eGFR, ECG, fundi, cardiovascular risk score), remembering that target-organ damage without out-of-clinic hypertension prompts a search for another cause (or for masked night-time hypertension), not a stage label; to give lifestyle advice; and to re-measure clinic pressure at least every 5 years, more often when it runs close to 140/90, because white-coat hypertension progresses to sustained hypertension more often than true normotension. The ACC/AHA 2017 framework, whose out-of-office threshold is 130/80, would call the same home average stage 1 hypertension and decide treatment on 10-year risk — an honest example of threshold policy ([[epidemiology-ebm/diagnostic-tests]]) rather than biology.
+(a) **Stage 2 hypertension**: clinic 160/100 or higher and ABPM 150/95 or higher.
+
+(b) **Stage 1 hypertension**: clinic systolic 140 or higher and an out-of-clinic average of 135/85 or higher (both components are above the threshold here).
+
+(c) **Severe hypertension** (systolic 180 or higher). With no symptoms and normal fundi, same-day referral is not required; investigations for target-organ damage are done as soon as possible, and if none is found the clinic reading is repeated within 7 days. If damage is found, treatment can start without waiting for out-of-clinic monitoring.
+:::
+:::
+
+::: exercise Home average {level=1 check="round(10*824/6)/10"}
+A man records his home blood pressure for seven days. His daily average systolic readings are: day 1, 152; day 2, 140; day 3, 138; day 4, 136; day 5, 139; day 6, 137; day 7, 134 mmHg. Using the NICE method (discard the first day), calculate his average systolic pressure, rounded to one decimal place, and say whether it meets the stage 1 threshold.
+::: solution
+Discard day 1. The remaining six values sum to $140 + 138 + 136 + 139 + 137 + 134 = 824$. Average $= 824/6 = 137.33$, which is **137.3 mmHg**. This is above 135, so with a clinic reading of 140/90 or higher it confirms **stage 1 hypertension** (the diastolic average would also be considered).
 :::
 :::
 
 ::: exercise Choose the first drug {level=1}
-Give the NICE-style starting class (and the reasoning) for: (a) 28-year-old white woman; (b) 64-year-old Black man; (c) 57-year-old with type 2 diabetes and albuminuria; (d) 71-year-old with isolated systolic 168/72.
+Using the NICE NG136 algorithm, give the step 1 drug class for: (a) a 34-year-old white woman without diabetes; (b) a 48-year-old man of Black African family origin without diabetes; (c) a 61-year-old South Asian man with type 2 diabetes; (d) a 72-year-old white woman without diabetes and with ankle oedema on a previous trial of amlodipine.
 ::: solution
-**(a) A (ACE-inhibitor/ARB)** — the young, high-renin physiology (the class-effect trial rule: under-55s and women of childbearing potential — with the contraception and pregnancy-teratogenicity counselling that turns (a) into a family-planning conversation, [[obstetrics-gynaecology/contraception-fertility]]). **(b) C (calcium-channel blocker)** — older/Black-population low-renin salt-handling phenotype (the "A or C by age and ethnicity" algorithm; C beats B for stroke end-points in this physiology). **(c) A** — albuminuric diabetic kidney disease's efferent-arm renoprotection ([[renal/chronic-kidney-disease]]'s guideline-mandated ACE/ARB, now with the SGLT2-inhibitor and the finerenone arms of [[endocrine/diabetes]]). **(d) C or a thiazide-like diuretic** — the stiff-artery isolated systolic hypertension of the old (the wide-pulse-pressure physiology of [[#def-primary]]; the dihydropyridine and chlortalidone/indapamide evidence in this exact phenotype, HYVET's fit-octogenarian extension, and the caution against over-lowering the diastolic below ~60 with a coronary-disease history — the J-curve debate, [[cardiovascular/coronary-artery-disease]]). Beta-blockers: not a first-line class for uncomplicated hypertension in this framework (the stroke and new-diabetes comparisons), but first-line when the compelling indication arrives — angina, post-infarct, rate control, the aortopathy.
+(a) **ACE inhibitor or ARB** (under 55, no diabetes). Because she could become pregnant, the teratogenic risk is discussed, together with contraception and what to do if she plans pregnancy.
+
+(b) **Calcium channel blocker** (Black African family origin, no diabetes, any age).
+
+(c) **ACE inhibitor or ARB** (type 2 diabetes, whatever age or family origin).
+
+(d) A calcium channel blocker would normally be first (age 55 or over), but it caused oedema, so a **thiazide-like diuretic** is the alternative.
 :::
 :::
 
-::: exercise Interpret the renin profile {level=2}
-Assign the likely diagnosis: (a) high renin, high aldosterone, hypertension, hypokalaemia, asymmetric kidney sizes with one at 8 cm; (b) low renin, low aldosterone, hypertension, hypokalaemia, on liquorice teas daily; (c) low renin, high aldosterone; (d) high renin, high aldosterone, no hypertension, low-normal potassium.
+::: exercise Number needed to treat {level=2 check="ceil(1/(0.15-0.15*0.8^2))"}
+A person has a 10-year cardiovascular risk of 15%. Treatment lowers systolic pressure by 20 mmHg. Assuming a relative risk of 0.80 for each 10 mmHg, applied multiplicatively, calculate the number needed to treat for 10 years to prevent one event, rounded up to the next whole number.
+::: hint
+Two successive 10 mmHg reductions give a relative risk of $0.80 \times 0.80$.
+:::
 ::: solution
-**(a) Renovascular hypertension / ischaemic nephropathy** — the high-renin drive from the clipped kidney with secondary aldosteronism (the unilateral small kidney of the [[#ex-ras]] physiology; distinguishing it from (c) is exactly what the renin half of the ratio does). **(b) Apparent mineralocorticoid excess (liquorice/carbenoxolone)** — glycyrrhetinic acid's 11β-HSD2 block lets cortisol act at the mineralocorticoid receptor: volume-expanded, both renin and aldosterone suppressed, hypokalaemic — the archetype read-alike of Liddle's (also both low; the amiloride response and the pedigree separate them — [[renal/potassium-calcium-phosphate]]). **(c) Primary aldosteronism** — [[#ex-conn]]. **(d) The low-potassium-without-hypertension group: the renin- and aldosterone-high, normotensive state of Gitelman and Bartter and of surreptitious diuretics (the urine diuretic screen and the urine calcium and chloride do the sorting — [[renal/tubular-function]]'s chloride-based algorithm)** — the profile lesson: renin and aldosterone are a pair of coordinates, and the hypertension and potassium fill in the third and fourth dimensions.
+Relative risk for 20 mmHg is $0.80^2 = 0.64$. The treated risk is $0.15 \times 0.64 = 0.096$. Absolute risk reduction is $0.15 - 0.096 = 0.054$. $NNT = 1/0.054 = 18.5$, which rounds up to **19**. (Numbers needed to treat are conventionally rounded up.)
 :::
 :::
 
-::: exercise Resistant hypertension {level=2}
-Define resistance properly (the pseudo-list first), then give the physiological add-on ladder including the fourth-line agent with the best evidence and its monitoring.
+::: exercise Step 4 {level=2}
+A 63-year-old woman's home blood pressure average is 151/92 mmHg despite optimal tolerated doses of ramipril, amlodipine and indapamide. Her potassium is 4.1 mmol/L and eGFR 72 mL/min/1.73 m². List what should be checked before adding a fourth drug, and state which drug NICE suggests and what monitoring it needs.
 ::: solution
-**True resistance needs confirmed-against-measurement elevation (the [[#ex-confirm]] ambulatory check), adherence (the drug-level assay's uncomfortable honesty — a third of "resistant" cohorts), and the driver list: the NSAID, the decongestant, the liquorice, the alcohol and salt, the obstructive apnoea, the aldosterone of [[#ex-conn]], the renal-artery stenosis, the failing dialysis-access volume load and the aortic stiffness measured wrong by cuff (the pseudoresistance of the calcified artery in a long-standing diabetic).** The ladder: **A (or C) + C (or A) + thiazide-like diuretic at adequate dose (indapamide/chlortalidone — the bendro dose-ceiling problem) — then the spironolactone of PATHWAY-2 (the mild-autonomous-aldosterone physiology population; monitor potassium and creatinine at 1–2 weeks and the gynaecomastia conversation; eplerenone or amiloride as the tolerability alternatives, and with eGFR <45 the hyperkalaemia risk rises sharply — [[renal/potassium-calcium-phosphate]]); fourth-plus line options: beta-blocker or alpha-blocker (the prostatic benefit), minoxidil's direct arteriolar dilatation with a reflex-beta-blocker-plus-diuretic pairing (the hirsutism and pericardial-effusion vintage drug's modern rescue role), hydralazine's same-logic pairing, the centrally acting agents' older trade-off, and the referral-trial status of renal-denervation devices.** The underlying arithmetic: resistance is usually **volume/sodium and aldosterone physiology plus an unrecognized driver** — the ladder is that insight with drug names attached ([[cardiovascular/circulation-blood-pressure]], [[renal/water-sodium]]).
+**Before adding a drug**: confirm the elevation with out-of-clinic readings (done here, but check technique and device); check for postural hypotension; discuss **adherence** honestly; review interfering drugs (NSAIDs, decongestants, liquorice) and salt and alcohol intake; consider obstructive sleep apnoea and secondary causes, especially **primary aldosteronism**, which is common in resistant hypertension.
+
+**Drug**: with potassium **4.5 mmol/L or less**, NICE suggests considering low-dose **spironolactone**.
+
+**Monitoring**: potassium and renal function soon after starting and periodically afterwards, because of the risk of hyperkalaemia, especially if eGFR falls or other drugs that raise potassium are added. Gynaecomastia can occur in men. If pressure remains uncontrolled on four drugs, specialist advice is sought.
 :::
 :::
 
-::: exercise The phaeochromocytoma workup {level=2}
-List the clinical pattern, the biochemical first test with its preparation pitfalls, the localisation sequence, and the perioperative physiology that decides survival.
+::: exercise Spells {level=2}
+A 41-year-old woman has episodes of pounding headache, sweating and palpitations lasting 20 minutes, during which her blood pressure has been recorded at 210/120 mmHg. Between episodes it is 150/95 mmHg. What diagnosis must be excluded, how, and why should a beta-blocker not be started on its own?
 ::: solution
-**Pattern:** the paroxysmal headache–palpitation–sweating–pallor spell with labile or sustained resistant hypertension and orthostatic hypotension (the contracted plasma volume behind it), the incidental adrenal lesion with cystic and hypervascular imaging behaviour, the family syndrome (the RET/MEN2, VHL and SDH and NF1 lines — [[genetics/cancer-genetics]]'s tumour-syndrome chapter, and the 10 % bilateral, extra-adrenal, malignant, familial, paediatric mnemonics' modern percentages). **Biochemistry:** **plasma free metanephrines or 24-h urinary fractionated metanephrines** (the metabolite-leak logic — continuous tumour O-methylation of the cycling catecholamines beats fasting-spot catecholamines), with the false-positive drugs (tricyclics, labetalol and sotalol's assay interferences, acetaminophen in some assays) and the alpha-blocker-adjacent withdrawal pitfalls; acute illness and stress sampling false-positives ([[epidemiology-ebm/diagnostic-tests]]'s likelihood-ratio logic). **Localisation:** CT or MRI adrenals first, functional imaging (the MIBG/DOTATATE era) for extra-adrenal and metastatic hunting. **Perioperative physiology — the exam question:** **α-blockade (phenoxybenzamine's non-competitive covalent block or doxazosin's competitive) for 10–14 days with liberal salt and fluid to re-expand the contracted volume, β-blockade only after α is established (the unopposed-α hypertensive crisis logic — [[physiology/autonomic-nervous-system]] and [[cardiovascular/circulation-blood-pressure]]'s phaeochromocytoma mentions), the intra-operative tumour-handling pressor surges and post-clamp and post-excision circulatory collapses managed with fluid and infusions, and the post-excision hypoglycaemia and hypotension surveillance (the switched-off drive and the β-blocked, volume-fragile circulation)** — plus the genetic test and lifetime follow-up that make the operation the beginning of the care, not the end ([[endocrine/adrenal]]).
+**Phaeochromocytoma or paraganglioma** must be excluded. The first test is **plasma free metanephrines** or a 24-hour urine collection for metanephrines; tumours are then localised by CT or MRI and functional imaging. Panic attacks, hyperthyroidism and hypoglycaemia can mimic it, but missing a phaeochromocytoma risks a hypertensive crisis.
+
+A beta-blocker on its own is dangerous because blocking β2-mediated vasodilatation leaves the α-adrenoceptor vasoconstriction caused by the circulating catecholamines unopposed, which can precipitate a hypertensive crisis. Alpha-blockade is started first (for example with phenoxybenzamine or doxazosin), with a beta-blocker added later if needed for tachycardia, before surgical removal ([[endocrine/adrenal]]).
 :::
 :::
 
-::: exercise The target-organ survey {level=2}
-For a newly diagnosed 55-year-old with stage 1 hypertension, list the target-organ assessments, what each detects, and how one of them most often changes management.
+::: exercise The older patient {level=2}
+An 84-year-old woman who lives independently has a clinic pressure of 166/78 mmHg and a home average of 158/74 mmHg. Lying, her pressure is 164/80 mmHg; after 3 minutes standing it is 136/68 mmHg, and she feels dizzy. Discuss the issues in deciding on treatment.
 ::: solution
-**Heart:** ECG (left ventricular hypertrophy — the Sokolow–Lyon and Cornell voltage criteria and their repolarisation variants, the atrial-fibrillation substrate) and **echocardiography (the mass index — the strongest out-of-clinic vascular-risk marker and the heart-failure-with-preserved-ejection-fraction precursor: [[cardiovascular/heart-failure]]); retina:** fundoscopy (the arteriolar narrowing and AV nipping of chronicity, the haemorrhages, exudates and papilloedema of emergency — [[nervous-system/sensory-systems]]'s window); **kidney:** creatinine/eGFR and **urine albumin–creatinine ratio (the earliest hypertensive-renal marker and a cardiovascular risk multiplier)**; **brain:** the silent-infarct and small-vessel-disease question when symptomatic and the dementia-risk baseline ([[nervous-system/stroke]], [[geriatrics-palliative/delirium-dementia-care]]); **vessels and metabolism:** the pulses and ABI when indicated, lipids and HbA1c, the urate and calcium and TFTs and the ECG's electrolyte windows. **The management-changing finding is usually left ventricular hypertrophy or albuminuria: either moves a borderline-stage-1 patient across the treatment threshold (the NICE "target-organ damage" clause), steers the class (ACE/ARB for albuminuria), and sets the review intensity** — the survey's purpose being to find the patients whose pressure number understates their risk ([[cardiovascular/circulation-blood-pressure]]'s autoregulation-shift argument for why "the same number" is not the same disease).
+She has **isolated systolic hypertension** with a home average above the NICE threshold, and trials in fit people aged 80 and over (HYVET) showed that treatment reduces stroke, heart failure and death. Her clinic pressure is above 150/90 mmHg, so treatment can be considered.
+
+She also has **orthostatic hypotension** (a fall of 28 mmHg systolic with symptoms). Lowering her pressure further could cause falls, and a fall at her age can cause fractures, head injury and loss of independence ([[geriatrics-palliative/falls]]).
+
+Reasonable principles: review and remove drugs that worsen postural hypotension; advise on hydration and rising slowly; if treatment is started, use a low dose and increase slowly; base targets on **standing** as well as seated readings; and use the NICE target for her age (below 150/90 clinic, below 145/85 home) with clinical judgement about frailty. The decision is shared with her, weighing a benefit that accrues over years against harms that can be immediate.
 :::
 :::
 
-::: exercise The elderly and the frail {level=2}
-A 82-year-old (fit, independent) has clinic 164/78, home 158/74, and a postural drop of 28/14 with dizziness; creatinine 118, sodium 136. Plan the reduction and defend it.
+::: exercise Hypertension in a young adult {level=3}
+A 24-year-old man has a clinic pressure of 172/104 mmHg confirmed by ambulatory monitoring (average 165/100 mmHg). His potassium is 3.4 mmol/L. On examination his femoral pulses are weak and delayed compared with the radial pulses, and there is a systolic murmur heard over the back. Construct a differential diagnosis of hypertension in a young adult, identify the most likely cause here, and explain the findings.
+::: hint
+Compare the pulses in the arms and legs. What would cause a pressure difference between them?
+:::
 ::: solution
-Two diseases in one number: **systolic hypertension worth treating (HYVET and the treated-octogenarian evidence, and the stroke and heart-failure and dementia risks of the systolic load) plus autonomic/drug-related orthostatic hypotension whose treatment could cause the fall that ends independence ([[geriatrics-palliative/falls]], [[cardiovascular/circulation-blood-pressure]]'s baroreflex-failure physiology and the postural-drop rule that weighs symptoms before numbers).** The plan: first the driver hunt: stop the α-blocker, the nitrate, the tricyclic and the diuretic that are doing this; review the dose timing (chronotherapy aside); compression and the rise-slowly and water-and-salt-not-restricted advice; then a low-dose, long-acting agent (the amlodipine or the thiazide-like-with-caution — noting the postural-drop risk ranking of classes and the drug-by-drug frailty review of [[geriatrics-palliative/polypharmacy]]), a slow titration, and targets expressed as symptoms and function first, home average second (the <150 then <140 systolic logic for the very old, and the orthostatic floor below which pressure is harm). The defence: falls' fracture and subdural morbidity are immediate, the hypertension's benefit accrues over years — the competing-mortality and time-to-benefit arithmetic ([[geriatrics-palliative/end-of-life-care]]'s time-to-benefit discussion) and [[epidemiology-ebm/observational-studies]]) makes "treat the woman, not the 164" the right sentence, documented.**
-:::
-:::
+**Differential diagnosis** of hypertension under 40: renal parenchymal disease (glomerulonephritis, polycystic kidney disease, reflux nephropathy); renovascular disease (fibromuscular dysplasia); primary aldosteronism and other mineralocorticoid excess (including rare inherited forms such as Liddle syndrome); phaeochromocytoma; Cushing's syndrome; thyroid disease; **coarctation of the aorta**; obstructive sleep apnoea; drugs (anabolic steroids, stimulants, cocaine, decongestants, liquorice); and primary hypertension, which remains possible, especially with obesity and a family history.
 
-::: exercise Design the population argument {level=3}
-A health board must cut hypertension's contribution to stroke. Build the strategy from Rose's prevention-paradox logic, the sodium-substitution trial evidence, the treatment-gap cascade, and the adherence problem, naming the trial families that justify each line.
-::: solution
-**The individual line (the cascade):** the WHO HEARTS and NICE-style clinic algorithm — confirm, survey targets, treat by phenotype with fixed-dose combinations (the adherence and cost logic; polypill trials — polypill? POLYLISH and the TIPS and SECURE and the 2022–24 fixed-dose-combination primary-prevention trials — the "polypill strategy" evidence family), nurse and pharmacist-led titration and home-reading culture; the measured **treatment cascade (awareness → treatment → control)** as the accountability metric, with the community-health-worker and telemonitoring decentralisation trials' supporting numbers. **The population line (Rose):** small shifts in everyone beat large shifts in the few because risk is continuous — hence **food-policy sodium reduction and potassium-substituted salt (the Salt-Substitute and SSaTT China trials' stroke and death reductions at population scale, with the renal-disease safety caveat and the food-environment's labelling and reformulation levers — [[public-health/prevention-promotion]] and [[public-health/non-communicable-disease]]), alcohol and weight and activity policy, and the tobacco-and-diet interactions that make the vascular-risk clinic a single service ([[public-health/determinants-inequalities]]'s inequity gradient: hypertension's prevalence, detection and control all track deprivation).** **The evidence spine:** the mild-hypertension and elderly-systolic trial families proving treatment benefit ([[epidemiology-ebm/randomised-trials]]), the meta-analytic millimetre–risk curve of the widget, and SPRINT's reading caveat as the teachable example of measurement mattering ([[epidemiology-ebm/critical-appraisal]]). **The honesty lines:** overdiagnosis and label costs of threshold-lowering (the white-coat fraction — diagnostic-test arithmetic), adherence decay as the binding constraint (the directly-observed and once-daily-combination and clinic-integrated refill and mobile-reminder trial families, the drug-level monitoring's uncomfortable findings), and primary aldosteronism's under-screening as a resolvable fraction of the resistant cohort. The board's plan therefore: policy on salt, cascade on clinics, combinations on scripts, home monitoring on the patient's side, and control-rate targets — one curve, four levers.
+**Most likely: coarctation of the aorta.** A narrowing of the aorta, usually just beyond the origin of the left subclavian artery, causes:
+- **hypertension in the arms**, because the left ventricle ejects against the obstruction and the kidneys, perfused at low pressure beyond it, activate renin;
+- **weak, delayed femoral pulses** (radiofemoral delay) and lower pressure in the legs;
+- a **murmur over the back** from flow through the narrowing and through **collateral arteries** (intercostals), which can erode the undersides of the ribs (rib notching on the chest X-ray).
+
+Mildly low potassium fits secondary hyperaldosteronism from renal renin activation. Coarctation is associated with a bicuspid aortic valve, and with Turner syndrome in women. The diagnosis is confirmed by echocardiography and CT or MR angiography, and treatment is by stenting or surgery. Even after repair, hypertension often persists and needs long-term follow-up ([[cardiovascular/valve-congenital-disease]]).
 :::
 :::

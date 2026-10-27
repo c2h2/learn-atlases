@@ -1,144 +1,331 @@
-Valve and congenital heart disease is where the previous chapters' curves meet fixed anatomy: a stenotic valve imposes a flow-squared gradient and a pressure-overloaded ventricle, a regurgitant valve creates a volume-overloaded one with two outlets, and a shunt creates a parallel circuit with its own pressure-and-resistance politics ([[cardiovascular/circulation-blood-pressure]]'s and [[cardiovascular/cardiac-cycle]]'s equations, now with a surgical indication). The clinical arithmetic is timing — **the asymptomatic lesion with a compensating ventricle versus the symptomatic one with a decaying curve** — and the operations (repair, replacement, the transcatheter generation, the paediatric staged reconstructions) have moved from last-resort to planned physiology.
+The four heart valves open and close about 100,000 times a day. When a valve fails to open fully (**stenosis**) or fails to close properly (**regurgitation**), the chamber behind it has to work against an abnormal load, and the turbulent flow produces a murmur. When the heart forms abnormally before birth, blood may flow through holes between the chambers or great vessels, or the vessels may connect to the wrong chambers. In both kinds of disease, anatomy determines the physiology, the physiology determines the signs, and the signs, interpreted carefully, often predict what the echocardiogram will show.
 
-This chapter covers the valve lesions and their ventricles, endocarditis, the shunts and cyanotic congenital disease, hypertrophic cardiomyopathy, and adult congenital practice.
+This chapter covers the haemodynamics of valve lesions, the four main left-sided valve diseases, murmurs and the manoeuvres that alter them, prosthetic valves, infective endocarditis, hypertrophic cardiomyopathy, and the common congenital heart lesions, from the fetal circulation to the adult who was operated on as a child. European Society of Cardiology (ESC) guidance and UK practice are followed; management in practice is decided by a multidisciplinary heart team following current guidelines.
 
-## Stenosis and regurgitation: two loads, two ventricles
+## Stenosis and regurgitation: two kinds of load
 
-::: definition Lesion haemodynamics and the valve as a fixed orifice {#def-lesions}
-A stenotic valve is a **flow-dependent pressure sink**: by the orifice and continuity principles the mean gradient scales with flow squared over effective area (the widget's two curves), so **the same 0.7 cm² aortic valve that protests at exercise is "low-gradient" at rest in a failing, low-output ventricle — the low-flow, low-gradient severe stenosis with its dobutamine contractility-reserve arithmetic and its calculated-valve-area trap (the small-annulus and paradoxical- hypertension variants)** — while the ventricle answers pressure load with **concentric hypertrophy (the [[physiology/muscle]] afterload-growth programme): higher oxygen demand, subendocardial ischaemia with normal coronaries (the angina of [[#ex-as]]), reduced compliance (the HFpEF physiology and the atrial-fibrillation seedbed of [[cardiovascular/heart-failure]]), and eventual afterload-mismatch failure**. Regurgitation is a **two-outlet volume load**: total ejection fraction divided between forward and regurgitant flows, the ventricle dilating (eccentric growth) with a **supranormal-looking ejection fraction that already understates muscle mass — the reason "EF 55 %" in severe aortic or mitral regurgitation is sick, not reassuring (the guideline operating points for both valves sit well above the normal range)**; the receiving chamber's compliance decides the symptoms (the acute regurgitations of [[cardiovascular/coronary-artery-disease]]'s papillary rupture and endocarditis and dissection presenting in flash oedema or shock because a normal atrium cannot accept a systemic-pressure jet — [[cardiovascular/circulation-blood-pressure]]'s example of the same physiology). Lesion by lesion: **aortic stenosis** (degenerative-calcific of the old and the bicuspid's early decade, rheumatic with its mitral partner; the classic symptom triad — angina, exertional syncope, heart failure — each marking a survival-curve cliff, the murmur's late-peaking crescendo and parvus et tardus pulse and the lost S2 reading the severity, and the intervention timing's symptomatic-and-EF-and-very-severe criteria with surgical replacement versus transcatheter aortic-valve implantation (TAVI) decided by age, anatomy and operative risk, the aortic root and the conduction-system and patient-prosthesis mismatch and anticoagulation and endocarditis conversations following the prosthesis choice ([[#ex-as]] and the exercises)); **mitral stenosis** (almost always rheumatic — [[infectious-diseases/fever-sepsis]]'s streptococcal history now arriving in migrant and Indigenous cohorts; the mitral-area-and-gradient flow-dependence, the left-atrial enlargement → fibrillation → embolus and haemoptysis and voice-and-dysphagia sequelae, the diastolic murmur and opening snap and loud tapping apex, the pregnancy and tachycardia and infection precipitations of [[#ex-ms-pregnancy]], and valve repair-by-balloon-commissurotomy for the pliable fused commissures versus replacement for the calcified); **aortic regurgitation** (chronic — bicuspid and aortopathies and endocarditis and dissection and the connective-tissue diseases — managed to guideline dimensions and EF with the afterload-reduction bridge and the operation's excellent timing latitude before the ventricle's point of no return, and acute — the [[cardiovascular/circulation-blood-pressure]] example — an emergency); **mitral regurgitation** (primary/degenerative — the flail and barlow and myxomatous leaflets and the papillary muscle's infarct ruptures — versus secondary/functional from the dilated or ischaemic ventricle's tethering (the [[cardiovascular/heart-failure]] annular-dilation loop), with repair superior to replacement for degenerative disease, the edge-to-edge and annuloplasty device era for the inoperable functional lesions, and the guideline EF thresholds respecting the loading-condition lies of the volume-overloaded ventricle); **tricuspid and pulmonary lesions** (the carcinoid and the pacemaker-lead and the shunt-operated right heart's regurgitations, isolated rheumatic pulmonary stenosis's balloon cure, and the right ventricle's afterload sensitivity to pulmonary regurgitation after tetralogy repair).
+::: definition Pressure and volume overload {#def-lesions}
+- A **stenotic** valve obstructs forward flow. The chamber behind it must generate a higher pressure, imposing a **pressure load**. The typical response is **concentric hypertrophy**: a thick wall with a normal or small cavity.
+- A **regurgitant** valve lets blood leak backwards, so the chamber must pump the forward stroke volume plus the regurgitant volume, imposing a **volume load**. The typical response is **eccentric hypertrophy**: dilatation of the cavity with proportionate thickening.
+
+Chronic lesions develop slowly and the heart adapts; acute lesions (for example a valve torn by endocarditis) give no time to adapt and cause sudden heart failure.
 :::
 
-::: example The teacher who nearly fell {#ex-as}
-A 79-year-old teacher has twice nearly collapsed supervising sports, with 6 months of chest tightness on stairs; pulse 58 and slow-rising, BP 118/78, a slow-rising carotid upstroke, a harsh ejection murmur to the carotids with a soft single S2, and echocardiography: a calcified trileaflet aortic valve with area 0.7 cm², mean gradient 52 mmHg, EF 58 %, and normal coronaries on CT.
-::: solution
-**Symptomatic severe aortic stenosis — angina, near-syncope, and the numbers agreeing, which is the easy case and the urgent one.** The physiology is [[#def-lesions]] in full: **the fixed afterload's concentric hypertrophy causing subendocardial ischaemia (the angina with clean coronaries), exertional presyncope from a fixed output against vasodilating muscle (and the arrhythmia and vascular-reflex components), and the survival curve whose median falls to 2–5 years once symptoms declare (the historical natural history that makes "watch and wait" a decision about weeks, not decades).** Management: **expedited valve replacement — the choice between surgical replacement and TAVI made by the heart team on age and risk and anatomy (the bicuspid and coronary-height and aortic-dimension and transfemoral-access nuances; the tissue-versus-mechanical conversation with its anticoagulation and durability trade — [[blood/thrombosis-anticoagulation]]), the balloon valvuloplasty reserved as a bridge or palliation, and the guideline intervention criteria for the pre-symptomatic patient (the EF drift, the very-severe velocities, the exercise-test responses) that this patient has already overshot.** The medical layer meanwhile: **the caution with the vasodilators, the aggressive beta-blockade's bradycardia with a fixed stroke volume (her pulse 58), the nitrates-for-coincidental-angina trap, and the endocarditis-and-dental plan; post-procedure, expect the hypertrophy and diastolic function to regress over months, and the ECG and pacemaker statistics of TAVI's conduction injury ([[cardiovascular/electrophysiology-ecg]]'s block chapter).**
+Echocardiography measures valve disease with two physical relationships.
+
+::: theorem Measuring a stenosis {#thm-bernoulli}
+The pressure gradient across a narrowed valve can be estimated from the peak velocity of the jet measured by Doppler, using the **simplified Bernoulli equation**:
+$$
+\Delta P \approx 4v^2,
+$$ {#eq-bernoulli}
+where $\Delta P$ is in mmHg and $v$ in m/s. The valve area is calculated with the **continuity equation**: because the same volume passes through the left ventricular outflow tract (LVOT) and the valve each beat,
+$$
+AVA = \frac{CSA_{LVOT} \times VTI_{LVOT}}{VTI_{AV}},
+$$ {#eq-continuity}
+where $CSA_{LVOT}$ is the cross-sectional area of the outflow tract and $VTI$ is the velocity–time integral (the distance travelled by blood in one beat) in the outflow tract and through the aortic valve.
 :::
-:::
+
+The gradient depends on flow as well as on valve area: a severely narrowed valve may show only a moderate gradient if the ventricle is failing and cannot generate much flow ("low-flow, low-gradient" aortic stenosis). That is why the valve area and the ventricle's function are always assessed together.
 
 ::: widget plot
-f: 2.5*x^2; 1.0*x^2
-x: 1, 8
-y: 0, 165
-labels: \text{cardiac output (L/min)},\ \text{mean gradient across a fixed severe stenosis (mmHg)}
-caption: The same valve, two flows: mean gradient against cardiac output for a fixed severe stenotic orifice at normal (upper) and low (lower) output. Gradient is flow-squared-dependent and area-specific — so resting numbers understate severe disease in the low-output ventricle (the low-gradient severe aortic stenosis dobutamine stress was designed to unmask), overstate mild disease in high-output states (the anaemia, pregnancy and thyrotoxicosis flow murmurs mislabelled "stenosis"), and make the aortic-valve calcium score and the continuity-equation area (exercise-built) the anatomical tie-breakers ([[clinical-skills/laboratory-tests]]'s and [[epidemiology-ebm/diagnostic-tests]]'s measurement-dependence lesson in millimetres of mercury).
+f: 4*x^2
+x: 0, 6
+y: 0, 150
+vlines: 4
+hlines: 64
+labels: \Delta P\ \text{(mmHg)}
+caption: The simplified Bernoulli relation: peak pressure gradient (mmHg) against peak jet velocity (m/s). A peak velocity of 4 m/s, one criterion for severe aortic stenosis, corresponds to a peak gradient of 64 mmHg. The relation neglects viscous losses and the velocity proximal to the valve, which is small in most cases.
 :::
 
-::: example The breathless bride {#ex-ms-pregnancy}
-A 26-year-old, 28 weeks pregnant with her second child (an untreated rheumatic history from childhood), becomes acutely breathless with haemoptysis; pulse 126 and irregularly irregular, bilateral crackles, and the echo shows mitral stenosis with area 1.0 cm² and a dilated left atrium without thrombus.
+## Aortic stenosis
+
+**Aortic stenosis** is the commonest valve disease needing intervention in high-income countries. Its causes are **calcific degeneration** of a normal three-cusped valve in older people, a process with features of atherosclerosis; **calcification of a congenitally bicuspid valve**, presenting earlier, typically in the 50s and 60s; and **rheumatic disease**, usually with mitral disease as well.
+
+The classic symptoms are **breathlessness**, **angina** (the hypertrophied muscle needs more oxygen and is supplied at lower pressure), and **exertional syncope** (the fixed outflow cannot increase as muscle vessels dilate). Once symptoms appear, the outlook without valve replacement is poor. The signs are a **slow-rising, low-volume pulse**, a narrow pulse pressure, a heaving, undisplaced apex, an **ejection systolic murmur** loudest at the right upper sternal edge and radiating to the carotids, and a soft or absent second heart sound in severe disease. The loudness of the murmur does **not** reflect severity; a failing ventricle may produce only a soft murmur.
+
+Severe aortic stenosis on echocardiography is defined by a **peak velocity of 4 m/s or more**, a **mean gradient of 40 mmHg or more**, and a **valve area below 1.0 cm²** (below 0.6 cm² per m² of body surface area).
+
+Intervention is indicated for **symptomatic severe aortic stenosis**, and for asymptomatic severe disease with left ventricular dysfunction or other high-risk features. Two methods are available:
+- **Surgical aortic valve replacement (SAVR)**, with a mechanical or biological valve.
+- **Transcatheter aortic valve implantation (TAVI)**, in which a biological valve is delivered on a catheter, usually through the femoral artery, and expanded inside the diseased valve.
+
+The ESC/EACTS 2025 guideline recommends TAVI for people aged **70 or over** with a three-cusped valve and suitable anatomy for transfemoral access, and surgery for younger people at low surgical risk, in whom the long-term durability of TAVI valves is less certain, and generally for those with bicuspid valves. The decision is made by a heart team with the patient, taking account of frailty, coexisting disease and preferences.
+
+::: example The teacher who nearly fell {#ex-as}
+A 78-year-old retired teacher has had two near-faints while climbing stairs and breathlessness on hills. She has a slow-rising pulse, BP 128/90 mmHg and a grade 3/6 ejection systolic murmur radiating to both carotids. Echocardiography records a peak aortic jet velocity of 4.6 m/s. The LVOT diameter is 2.0 cm, the LVOT velocity–time integral is 22 cm and the aortic valve VTI is 110 cm. Calculate the peak gradient and the aortic valve area and interpret them.
+
 ::: solution
-**Pregnancy decompensating mitral stenosis — the haemodynamic perfect storm arriving on schedule.** The physiology: **plasma-volume expansion and cardiac output up ~40 % by the third trimester across a fixed 1.0 cm² orifice (the gradient scaling with flow-squared — the widget's upper curve), plus tachycardia stealing diastolic filling time (the gradient is a diastolic phenomenon — every beat shorter in diastole is more left-atrial pressure), plus new atrial fibrillation abolishing atrial emptying and raising rate (the final blow: the loss of the [[cardiovascular/cardiac-cycle]] atrial contribution and the diastolic-time tax at once) — oedema and haemoptysis from the bronchial-variceal and capillary-pressure mechanisms of [[cardiovascular/circulation-blood-pressure]]'s equation.** Management: **admission; rate control (the beta-blocker's double job — slower rate, longer diastole, and the obstetric growth surveillance) and cardioversion if unstable (safe in pregnancy with the fetal monitoring of [[cardiovascular/arrhythmias]]), careful diuresis (preload dependence — the balance between lungs and output), anticoagulation because atrial fibrillation plus rheumatic mitral stenosis is the warfarin-only territory of [[#def-lesions]] and [[blood/thrombosis-anticoagulation]] (with the pregnancy's heparin bridging and the fetal-warfarin timing rules — [[obstetrics-gynaecology/pregnancy-complications]]), and delivery planning by the joint obstetric–cardiac team (the second-stage Valsalva and the autotransfusion of uterine contraction being the haemodynamic precipitations the anaesthetic plan must anticipate — [[surgery/anaesthesia-pain]]).** Definitive: **percutaneous balloon mitral commissurotomy (the pliable-commissure lesion's cure, done with abdominal shielding when medical therapy fails, including in pregnancy) or post-partum surgery — the case the global rheumatic-heart-disease elimination strategies exist to prevent [[public-health/communicable-disease-control]].**
+**Peak gradient**: $\Delta P = 4 \times 4.6^2 = 4 \times 21.16 = 84.6$ mmHg.
+
+**Valve area**: LVOT radius is 1.0 cm, so $CSA_{LVOT} = \pi \times 1.0^2 = 3.14$ cm². Then
+$$
+AVA = \frac{3.14 \times 22}{110} = 0.63 \text{ cm}^2.
+$$
+
+A peak velocity above 4 m/s and a valve area below 1.0 cm² indicate **severe aortic stenosis**, and her exertional presyncope and breathlessness make it **symptomatic**. She should be referred to the heart team for **valve intervention**. At 78, with a three-cusped degenerative valve, TAVI is likely to be recommended if her anatomy and femoral arteries are suitable. Her BP of 128/90 mmHg shows the narrow pulse pressure typical of severe stenosis.
 :::
 :::
 
-## Infection on the endothelium, and the doors that should have closed
+## Aortic regurgitation
+
+**Aortic regurgitation** results from disease of the cusps (bicuspid valve, endocarditis, rheumatic disease) or dilatation of the aortic root (age and hypertension, Marfan syndrome and other aortopathies, aortic dissection, aortitis such as syphilis or large-vessel vasculitis). In chronic regurgitation, the left ventricle dilates to accommodate a large stroke volume, of which part leaks back in diastole. The result is a high systolic and low diastolic pressure: a **wide pulse pressure** and a **collapsing (water-hammer) pulse**. The murmur is a soft, high-pitched **early diastolic murmur** at the left sternal edge, heard best with the patient sitting forward in held expiration. The apex is displaced and thrusting.
+
+Chronic aortic regurgitation can be tolerated for years. Surgery is recommended when symptoms develop, or before symptoms if the left ventricle starts to fail or dilate beyond set limits. **Acute** aortic regurgitation (from endocarditis or dissection) causes sudden pulmonary oedema and shock, because the undilated ventricle cannot accommodate the regurgitant volume; it needs emergency surgery.
+
+## Mitral regurgitation
+
+**Primary mitral regurgitation** is disease of the valve itself: **degenerative mitral valve prolapse** (the commonest cause in high-income countries, from myxomatous change or ruptured chordae), endocarditis, rheumatic disease and papillary muscle rupture after infarction. **Secondary (functional) mitral regurgitation** occurs with a structurally normal valve when the left ventricle or left atrium dilates, stretching the ring and pulling the leaflets apart.
+
+The murmur is **pansystolic**, loudest at the apex and radiating to the axilla. The apex is displaced in chronic disease, and atrial fibrillation is common because the left atrium dilates. For severe primary regurgitation, **surgical repair** of the valve is preferred to replacement where possible, and is recommended when symptoms develop or the ventricle begins to dilate or fail. **Transcatheter edge-to-edge repair**, clipping the leaflets together, is an option for selected patients at high surgical risk and for some with secondary regurgitation that persists despite optimal heart failure treatment.
+
+## Mitral stenosis
+
+**Mitral stenosis** is almost always caused by **rheumatic heart disease**, the late consequence of acute rheumatic fever after streptococcal throat infection. Rheumatic heart disease is now uncommon in the UK except in people who grew up elsewhere, but it remains a leading cause of cardiovascular disease and death in young people in many low- and middle-income countries.
+
+The narrowed valve obstructs left ventricular filling. Left atrial pressure rises, the atrium dilates, and pulmonary congestion and pulmonary hypertension follow. Because the gradient across the valve depends on flow and on the time available for filling, symptoms worsen with anything that increases cardiac output or shortens diastole: exercise, fever, **atrial fibrillation** and **pregnancy**. The signs are a **loud first heart sound**, an **opening snap** after S2, and a low-pitched **mid-diastolic rumble** at the apex, best heard with the bell with the patient lying on the left side. Malar flush and AF are classic.
+
+People with mitral stenosis and AF have a high risk of stroke; they are anticoagulated with **warfarin** (not a DOAC) for moderate or severe stenosis. Suitable valves are treated by **percutaneous balloon mitral commissurotomy**, which splits the fused commissures; otherwise by surgery.
+
+::: example Breathless in pregnancy {#ex-ms-pregnancy}
+A 27-year-old woman who grew up in Bangladesh is 28 weeks into her first pregnancy. She has developed breathlessness, orthopnoea and palpitations. Her pulse is irregular at 128 beats/min. There is a loud S1 and a low-pitched diastolic murmur at the apex. Explain why pregnancy has unmasked her valve disease and outline the principles of management.
+
+::: solution
+The findings suggest **rheumatic mitral stenosis** with **atrial fibrillation**. Pregnancy unmasks it in three ways:
+- **Blood volume and cardiac output** rise by 30–50% by the third trimester. Flow across a narrowed valve raises the gradient (which rises roughly with the square of flow), so left atrial and pulmonary pressures rise.
+- **Heart rate** rises, shortening diastole, the only time the ventricle can fill through the valve.
+- **Atrial fibrillation**, here probably triggered by the dilated, pressurised atrium, removes atrial contraction and further shortens filling at fast rates.
+
+Principles of management, by a joint cardiology and obstetric team:
+- **Rate control** with a beta-blocker, which lengthens diastole and lowers left atrial pressure.
+- **Diuretic** cautiously for pulmonary congestion.
+- **Anticoagulation** for AF with mitral stenosis, with low-molecular-weight heparin often used in pregnancy because warfarin crosses the placenta and can harm the fetus.
+- If symptoms persist despite treatment, **percutaneous balloon mitral commissurotomy** can be performed during pregnancy in experienced centres.
+- Planning of delivery with the anaesthetic team, and pre-pregnancy counselling for future pregnancies.
+:::
+:::
+
+## Murmurs and manoeuvres
+
+| Lesion | Timing | Site and radiation | Other features |
+|---|---|---|---|
+| Aortic stenosis | Ejection systolic | Right upper sternal edge → carotids | Slow-rising pulse, soft S2 |
+| Mitral regurgitation | Pansystolic | Apex → axilla | Displaced apex, often AF |
+| Ventricular septal defect | Pansystolic | Left lower sternal edge | Often a thrill; small defects loud |
+| Aortic regurgitation | Early diastolic | Left sternal edge, sitting forward | Collapsing pulse, wide pulse pressure |
+| Mitral stenosis | Mid-diastolic | Apex, left lateral position | Loud S1, opening snap |
+| Patent ductus arteriosus | Continuous ("machinery") | Below left clavicle | Bounding pulses |
+
+Manoeuvres help distinguish murmurs:
+- **Inspiration** increases venous return to the right heart, so right-sided murmurs get louder; **expiration** favours left-sided murmurs.
+- The **Valsalva manoeuvre** (straining) and **standing** reduce venous return and ventricular volume. Most murmurs become quieter, but the murmur of **hypertrophic obstructive cardiomyopathy** becomes louder (a smaller ventricle worsens the obstruction), and the click and murmur of **mitral valve prolapse** come earlier.
+- **Squatting** and passive leg raising do the opposite.
+
+## Prosthetic valves
+
+**Mechanical valves** last for decades but need lifelong **warfarin**; DOACs are contraindicated because they performed worse in a trial with mechanical valves. **Biological (bioprosthetic) valves**, made from animal tissue, do not need long-term anticoagulation once healed, but degenerate, typically over 10–20 years, and failing bioprostheses can often be treated by a transcatheter "valve-in-valve" procedure. Younger people are usually offered mechanical valves and older people biological ones, but the choice is shared with the patient: a woman planning pregnancy, for example, must weigh the risks of warfarin in pregnancy against a later reoperation.
+
+## Infective endocarditis
 
 ::: definition Infective endocarditis {#def-endocarditis}
-Endocarditis is **infection fixed to turbulent-flow endothelium**: valve damage (the stenosis, the regurgitant jet's impact lesion, the high-velocity shunt's downstream wall — the lesions of [[#def-lesions]] and the VSD's septal "jet lesion") provides **platelet–fibrin non-bacterial thrombotic endocarditis onto which bacteraemia (the dental and mucosal and skin and line entries) seeds, the vegetation growing under the bloodstream's own protection (fibrin's antibiotic penetration limits and the biofilm of the prosthetic material)** — organisms by setting: **staphylococci (the acute, the injection-drug-use and device and healthcare-associated), viridans streptococci (the subacute dental story — [[microbiology/bacteria]]'s dextran and adherence chapters), enterococci (the genitourinary tract), the HACEK and Bartonella and culture-negative consorties (the prolonged-culture and serology and 16S and 18S molecular era)**. The clinical syndrome is **fever plus emboli plus immune phenomena** read through the **modified Duke criteria (blood-culture and echocardiographic majors — including the modern cardiac CT and PET/CT's role for prosthetic valves and devices — against the minor clinical ones — [[epidemiology-ebm/diagnostic-tests]]'s composite-standard example)**: the murmur's new regurgitation, the splinter haemorrhages and Osler and Janeway lesions and Roth spots (the embolic-versus-immune split), the splenic and renal infarcts, the **mycotic aneurysms and the stroke (the septic embolus whose anticoagulation is a decision against the haemorrhagic-conversion and mycotic-aneurysm rupture risks, and whose neurology timing governs operating-room timing)**, the valve destruction (the acute aortic or mitral regurgitation of [[cardiovascular/circulation-blood-pressure]]'s example) and root abscess (the new heart block on the monitor — the aortic ring's anatomy next to the His bundle, [[anatomy/thorax]]), the heart failure and the rupture that bring theatre. Management: **prolonged pathogen-directed intravenous therapy with the surgical indications — failure of medical therapy, the haemodynamic catastrophe, the difficult organisms and persistent bacteraemia and large mobile embolising vegetations — decided by a dedicated endocarditis team (the early-surgery trials' mortality arithmetic); the relapse-versus-reinfection follow-up; and prophylaxis reserved to the highest-risk prostheses and congenital and previous-endocarditis cohorts for dental procedures only (the NICE-versus-AHA guideline divergence being a policy argument about numbers, not bacteria — [[medical-ethics-law/justice-resources]]'s prevention-fairness footnote, [[microbiology/antimicrobials]]'s stewardship rationale).** The device era's additions: **pacemaker and defibrillator lead infections (the extraction-centre decision) and TAVI and transcatheter-valve endocarditis, and the injection-drug-use right-sided disease whose septic pulmonary emboli (the nodular and cavitating shadows of [[respiratory/respiratory-infections]]) and tricuspid destruction present with cough and pleurisy rather than a peripheral stigmata parade ([[#ex-ie-right]]).**
+**Infective endocarditis** is infection of the endocardial surface of the heart, usually a valve, forming **vegetations** of platelets, fibrin, microorganisms and inflammatory cells. Common organisms:
+- **Staphylococcus aureus**: now the commonest cause in many countries; acute, destructive course; associated with healthcare contact and injecting drug use.
+- **Viridans group streptococci**: from the mouth; subacute course on damaged valves.
+- **Enterococci** and *Streptococcus gallolyticus* (associated with colorectal neoplasia, so colonoscopy is advised).
+- **Coagulase-negative staphylococci**: prosthetic valves and devices.
+- The **HACEK** group of fastidious Gram-negative organisms, and fungi, are less common causes of culture-negative endocarditis.
+
+Diagnosis uses the modified **Duke criteria** (updated by the ESC and by the International Society for Cardiovascular Infectious Diseases in 2023). The two major criteria are **blood cultures positive for typical organisms** and **imaging evidence** of endocardial involvement (vegetation, abscess, new valve regurgitation or prosthetic dehiscence on echocardiography, CT or PET-CT).
 :::
 
-::: example The coughing injector {#ex-ie-right}
-A 31-year-old who injects heroin daily has 10 days of fever, pleuritic chest pain and haemoptysis; crackles and scattered nodular shadows with two cavities on film, a new soft tricuspid murmur, positive staphylococcal blood cultures, and a 1.5 cm mobile tricuspid vegetation on echo.
+Risk factors include previous endocarditis, prosthetic valves, congenital heart disease, damaged or degenerative valves, injecting drug use, intravascular devices and haemodialysis. Presentation ranges from an acute febrile illness with heart failure to months of fever, weight loss and malaise. The features are:
+- **Infection**: fever, raised inflammatory markers, splenomegaly, finger clubbing (late).
+- **Valve damage**: a new or changed murmur, heart failure.
+- **Embolism**: stroke, limb, splenic or renal infarction; septic pulmonary emboli in right-sided disease.
+- **Immune complex phenomena**: microscopic haematuria and glomerulonephritis, Osler nodes (tender finger-pulp nodules), Roth spots (retinal haemorrhages with pale centres).
+- **Vascular phenomena**: splinter haemorrhages, Janeway lesions (painless palmar or plantar macules), conjunctival haemorrhages.
+
+**Three sets of blood cultures** are taken from separate venepunctures **before antibiotics**, followed by transthoracic and often transoesophageal echocardiography. Treatment is prolonged intravenous antibiotics, usually 4–6 weeks, chosen with microbiology advice, and managed by an endocarditis team. **Surgery** is needed for heart failure from valve destruction, uncontrolled infection (abscess, persisting bacteraemia, fungal or resistant organisms) and prevention of embolism from large vegetations.
+
+**Antibiotic prophylaxis**: NICE (CG64) does not recommend routine antibiotic prophylaxis before dental or other procedures for people at risk of endocarditis, whereas the ESC 2023 guideline recommends it before certain dental procedures for people at highest risk (such as those with prosthetic valves or previous endocarditis). Both emphasise good oral hygiene and regular dental care.
+
+::: example Fever in a person who injects drugs {#ex-ie-right}
+A 31-year-old man who injects heroin has had 10 days of fever, rigors, cough and pleuritic chest pain. He has a pansystolic murmur at the left lower sternal edge that increases on inspiration, a JVP with large v waves, and a chest X-ray with several round cavitating lesions in both lungs. What is the most likely diagnosis and organism, and how is it confirmed?
+
 ::: solution
-**Right-sided native-valve staphylococcal endocarditis with septic pulmonary emboli** — the lesion of the tricuspid valve's low-pressure apparatus in a system bathed in skin flora through reused works. The physiology of the presentation: **emboli from the right heart go to the lungs (the wedge-shaped and cavitating nodules — the "pneumonia that is multiple and bilateral and in different ages"), so the peripheral stigmata and the systemic embolic complications of left-sided disease are absent, and the murmur is soft (the right-sided gradient is small); the paradoxical-embolus exception is the patent foramen ovale's road ([[cardiovascular/cardiac-cycle]]'s and [[cardiovascular/circulation-blood-pressure]]'s shunt physiology). Management: prolonged anti-staphylococcal intravenous therapy with source surgery only for the failures — the larger vegetation and persistent bacteraemia and right-heart-failure indications (the surgery-versus-outcome data favouring medical therapy in uncomplicated right-sided disease), the addiction-medicine engagement as seriously prescribed as the antibiotic (the harm-reduction and opioid-agonist and mental-health plan — without it the relapse-and-reinfection statistics dominate — [[psychiatry/substance-use]]), the search for metastatic infection (the spine, the joints, the brain and the eyes — the candida and staphylococcal endophthalmitis dilating) and the HIV and viral-hepatitis and vaccination agenda ([[infectious-diseases/fever-sepsis]], [[immunology/immunodeficiency]]), and the antibiotic-choice and line-care and outpatient-parenteral (the OPAT) safety programme.**
+The likely diagnosis is **right-sided (tricuspid valve) infective endocarditis**, most commonly caused by **Staphylococcus aureus** introduced by injection.
+
+- The murmur at the left lower sternal edge that **increases on inspiration** and the **large v waves** in the JVP indicate **tricuspid regurgitation**.
+- The cavitating lung lesions are **septic pulmonary emboli** from vegetations on the tricuspid valve. Emboli from the right heart go to the lungs, not the brain, unless there is a right-to-left shunt.
+
+**Confirmation**: three sets of blood cultures before antibiotics, then echocardiography to show vegetations on the tricuspid valve. Blood-borne virus testing (HIV, hepatitis B and C) is offered. Treatment is prolonged intravenous antibiotics guided by sensitivities. Care includes harm reduction and support for drug use, which is essential for a good outcome and to reduce reinfection, delivered without stigma.
 :::
 :::
 
-::: definition Shunts, Eisenmenger, and the grown-up child {#def-congenital}
-The left-to-right shunts (**ventricular and atrial septal defects and the arterial duct — [[anatomy/embryology]]'s septation and arch derivatives) send oxygenated blood back through the lungs in proportion to the defect's size and the two circulations' resistance ratio (Qp:Qs): the ventricle volume-overloads ([[#def-lesions]]'s eccentric growth), the pulmonary flow raises pressure, and years of high flow and pressure remodel the pulmonary bed (the [[cardiovascular/circulation-blood-pressure]] shear-and-tone and [[respiratory/interstitial-vascular-disease]]'s plexogenic arteriopathy) until **Eisenmenger physiology** reverses or equalises the shunt (the cyanotic, clubbed, exertional-dyspnoeic adult whose defect is now a pop-off valve and whose closure would precipitate acute right-heart failure — the un-closable lesion and the transplant-and-palliation disease, the pregnancy contraindication with its maternal-mortality figures ([[obstetrics-gynaecology/pregnancy-complications]])).** The clinical signatures: **the VSD's small ones loud and its large ones silent with failure in infancy; the ASD's fixed, widely split S2 (the delayed right-ventricular ejection the atria no longer modulate — [[cardiovascular/cardiac-cycle]]'s splitting physiology) and its paradoxical-embolus and late-fibrillation and exercise-intolerance presenting in the forties when the secundum lesion was never found; the duct's continuous machinery murmur and its wide pulse pressure and its endarteritis and its device closure; and the AV/canal defect of the trisomy-21 pedigree ([[genetics/chromosomal-disorders]]).** The cyanotic lesions (the tetralogy's ventricular septation failure and overriding aorta and right-ventricular outflow obstruction and its hypercyanotic spells — knee-chest, oxygen, phenylephrine's afterload-physiology, beta-blockade, surgery, and the prostaglandin E1 duct-preserving emergencies of the newborn ([[paediatrics/newborn]]) — and the transpositions needing the duct and the septum until the arterial-switch operation, and the left-heart hypoplasias' staged reconstructions) are now **adult congenital heart disease**: a growing population of operated children whose sequelae (the repaired tetralogy's pulmonary regurgitation and right-ventricular dilatation and atrial arrhythmia and the fontan's failing single ventricle and its thrombosis, protein-losing enteropathy and liver disease, and the baffle and conduit stenoses) require lifetime imaging-based surveillance — the chapter's epidemiological point that [[cardiovascular/heart-failure]]'s and [[cardiovascular/arrhythmias]]' phenotypes increasingly include the congenital variants — with endocarditis prophylaxis and pregnancy and exercise and anticoagulation all rewritten by the specific anatomy the reason adult congenital cardiology is a specialty, not a clinic day.**
-:::
-
-::: example The unfixed split {#ex-asd}
-A 43-year-old secretary is noted to have a "soft murmur" at a health check; echo shows a 24 mm ostium secundum atrial septal defect with right-ventricular dilatation, Qp:Qs 2.2, normal pulmonary pressures, and she mentions two migraines with aura and her father's "stroke young".
-::: solution
-**Haemodynamically significant secundum ASD with a family thromboembolic history** — the classic adult incidental that is not incidental: **the fixed splitting and the right-ventricular volume overload ([[#def-congenital]]'s examination clue), and the Qp:Qs 2.2 (the guideline closure threshold is roughly 1.5 with chamber enlargement) say this atrial septum has been recirculating a second circulation for four decades.** Management: **transcatheter device closure for the rims-adequate secundum lesion (surgical patch for the deficient-rim and the other septal varieties) — with the pre-closure catheter or imaging assessment of pulmonary-vascular resistance (the Eisenmenger caution: closing a defect that has become a pop-off is the [[#def-congenital]] harm), the expected remodelling (right-ventricular reverse-dilation over months, and the exercise-capacity and the quality-of-life gains and the atrial-arrhythmia-risk reduction when closed before the middle years), and the post-closure antiplatelet-and-endothelialisation schedule with its device-leaflet and residual-shunt follow-up).** The migraine-with-aura and the father's early stroke make the **paradoxical embolism ([[cardiovascular/circulation-blood-pressure]]'s exercise and [[blood/thrombosis-anticoagulation]]'s cryptogenic-stroke-and-PFO literature)** the counselling centrepiece: **closure's stroke and migraine evidence (the patent-foramen-ovale-closure trials' mixed verdicts and the selected-phenotype arguments) should be discussed honestly — she is closing for the right ventricle, and the embolic benefit is a reasonable hope, not a promise.**
-:::
-:::
+## Hypertrophic cardiomyopathy
 
 ::: definition Hypertrophic cardiomyopathy {#def-hcm}
-HCM is the **sarcomere-protein disease (the MYH7 and MYBPC3 and partner genes — autosomal dominant with age-dependent, variable expression: [[genetics/mendelian-inheritance]]'s and [[genetics/non-mendelian-inheritance]]'s penetrance lesson) producing asymmetric hypertrophy (the septum dominating), myocyte disarray and interstitial fibrosis** with three clinical consequences: **(1) dynamic left-ventricular-outflow obstruction (the basal septum plus systolic anterior movement of the mitral leaflet — the Venturi-and-drag geometry of the narrowed outflow — a murmur that behaves opposite to aortic stenosis's: louder with smaller ventricular volume — standing, Valsalva; softer with squatting and handgrip's afterload — the [[#def-lesions]]-versus-[[#def-hcm]] auscultation table that exists because the gradient is collapsible, not fixed ([[cardiovascular/circulation-blood-pressure]]'s arteriolar-vs-fixed-orifice contrast)); (2) the arrhythmia substrate (the disarray and fibrosis's re-entry — the sudden-death risk scored from the family history of premature death, syncope, wall thickness, non-sustained ventricular tachycardia and the abnormal blood-pressure response, with the defibrillator conversation and the cascade genetic screening); and (3) the diastolic-and-valve sequelae (the [[cardiovascular/heart-failure]] HFpEF picture and the mitral regurgitation of the leaflet's anterior drag, and the atrial fibrillation's disproportionate symptoms because the stiff ventricle lives on its atrial kick — [[cardiovascular/arrhythmias]]'s atrial-fibrillation footnote).** Management: **beta-blocker or non-dihydropyridine calcium-blocker or disopyramide (the negative inotropy and slowed rate lengthening filling and reducing the collapsible gradient — the avoid list: vasodilators, dihydropyridines, digoxin and the inotropes, which shrink or hypercontract the cavity and worsen obstruction — the physiology prescription), septal reduction (the alcohol ablation of the first septal perforator with its induced infarct-and-block arithmetic versus the surgical myectomy, both for drug-refractory obstructive disease), the myosin-inhibitor era (mavacamten and the sarcomere-assembly pharmacology finally targeted — [[pharmacology/drug-receptor]]'s modern example), the risk-stratified device and family programme, and the pregnancy-and-sport counselling (the haemodynamic rules — maintain preload and afterload, the maintain-preload-and-afterload and obstetric-anaesthesia cautions of [[obstetrics-gynaecology/pregnancy-complications]] and the athlete eligibility conversation of [[cardiovascular/arrhythmias]]).**
+**Hypertrophic cardiomyopathy (HCM)** is left ventricular wall thickening (15 mm or more in an adult, or 13 mm or more in a relative of an affected person) not explained by abnormal loading conditions such as hypertension or aortic stenosis. It is usually inherited as an **autosomal dominant** disorder of sarcomere proteins (most often *MYH7* or *MYBPC3*), with variable penetrance and expression, and affects about 1 in 500 people.
+:::
+
+Many people with HCM have no symptoms. Others have breathlessness, chest pain, palpitations or syncope. About two-thirds have **left ventricular outflow tract obstruction**, at rest or on provocation, as the thickened septum and **systolic anterior motion** of the mitral valve narrow the outflow tract; obstruction worsens with a smaller ventricle (dehydration, vasodilators, standing, Valsalva) and with stronger contraction. HCM is an important cause of **sudden cardiac death in young people**, including athletes.
+
+Treatment includes beta-blockers or rate-limiting calcium channel blockers for symptoms; **mavacamten**, a cardiac myosin inhibitor that reduces hypercontractility, for symptomatic obstruction; septal reduction by surgical myectomy or alcohol septal ablation; anticoagulation for AF; and an **ICD** for people at high risk of sudden death, estimated with a validated risk score. **First-degree relatives** are offered genetic testing (if a familial variant is known) and clinical screening with ECG and echocardiography.
+
+## Congenital heart disease
+
+Congenital heart disease affects just under 1 in 100 live births and is the commonest group of major congenital anomalies. With modern surgery, most affected children survive to adulthood, so there are now more adults than children living with congenital heart disease.
+
+The lesions make sense only in the light of the **fetal circulation**. Before birth, oxygenated blood comes from the placenta through the umbilical vein; much of it bypasses the liver through the **ductus venosus**, enters the right atrium and passes through the **foramen ovale** to the left atrium. Most of the blood the right ventricle pumps into the pulmonary artery passes through the **ductus arteriosus** into the aorta, because pulmonary vascular resistance is high in the unexpanded lungs. At birth, lung expansion lowers pulmonary resistance and raises pulmonary flow; left atrial pressure rises above right and closes the flap of the foramen ovale; and the rise in oxygen tension and fall in prostaglandins close the ductus arteriosus over hours to days. A **patent foramen ovale** persists in about a quarter of adults.
+
+::: definition Shunts and cyanosis {#def-congenital}
+- **Left-to-right shunts** (atrial septal defect, ventricular septal defect, patent ductus arteriosus) send extra blood through the lungs. They cause **no cyanosis** initially, but increased pulmonary flow can cause heart failure in infancy (large VSD, PDA) or right heart dilatation in adulthood (ASD).
+- **Eisenmenger syndrome**: if a large shunt is not closed, high pulmonary flow and pressure damage the pulmonary arterioles irreversibly. Pulmonary resistance rises until the shunt reverses (right to left), causing cyanosis, clubbing and secondary polycythaemia. Pregnancy carries a very high maternal mortality and is advised against.
+- **Cyanotic lesions** mix deoxygenated blood into the systemic circulation from birth. The commonest are **tetralogy of Fallot** (ventricular septal defect, overriding aorta, right ventricular outflow tract obstruction, right ventricular hypertrophy) and **transposition of the great arteries** (aorta from the right ventricle and pulmonary artery from the left, creating two parallel circulations).
+:::
+
+Specific lesions:
+- **Atrial septal defect (ASD)**: often not found until adulthood, with breathlessness, AF, or a **fixed split S2** and a pulmonary flow murmur. Paradoxical embolism through the defect can cause stroke. Closure is usually by a catheter-delivered device.
+- **Ventricular septal defect (VSD)**: the commonest congenital lesion at birth; **pansystolic murmur** at the left lower sternal edge. Small defects are loud, often close spontaneously and need only follow-up; large ones cause heart failure in infancy and need closure.
+- **Patent ductus arteriosus (PDA)**: continuous "machinery" murmur; common in premature babies.
+- **Coarctation of the aorta**: hypertension in the arms, weak delayed femoral pulses; associated with bicuspid aortic valve and Turner syndrome ([[cardiovascular/hypertension]]).
+- **Tetralogy of Fallot**: cyanosis and "hypercyanotic spells", relieved by squatting (which raises systemic resistance and reduces the right-to-left shunt). Repaired in infancy; adults may later need pulmonary valve replacement.
+- **Transposition of the great arteries**: severe cyanosis soon after birth as the duct closes; survival depends on mixing, so **prostaglandin** is given to keep the duct open and a balloon atrial septostomy may be performed, followed by the **arterial switch operation**.
+
+::: example An adult with a fixed split {#ex-asd}
+A 44-year-old woman has 2 years of increasing breathlessness and recent palpitations. Examination reveals a fixed, widely split S2 and a soft ejection systolic murmur at the left upper sternal edge. The ECG shows atrial fibrillation and right bundle branch block. Explain the findings and the likely diagnosis.
+
+::: solution
+The likely diagnosis is a **secundum atrial septal defect** with a left-to-right shunt.
+
+- **Shunt direction**: left atrial pressure is slightly higher than right, and the right ventricle is more compliant, so blood flows from left to right atrium. The right heart carries a large extra volume.
+- **Ejection systolic murmur** at the pulmonary area: increased flow across a normal pulmonary valve, not flow through the defect (the pressure difference between the atria is too small to make a murmur).
+- **Fixed split S2**: the large right ventricular volume delays pulmonary valve closure, and the communication equalises respiratory changes in right-heart filling.
+- **Right bundle branch block**: right ventricular dilatation.
+- **Atrial fibrillation** and breathlessness: right atrial dilatation and volume load develop over decades, which is why ASDs often present in middle age.
+
+Echocardiography (often transoesophageal) confirms the defect and its suitability for **device closure**. Closure is recommended for a significant shunt with right ventricular dilatation, provided pulmonary vascular resistance is not severely raised. Anticoagulation for her AF is considered.
+:::
 :::
 
 ::: quiz
-During Valsalva's strain phase, the hypertrophic-cardiomyopathy murmur grows louder while the aortic-stenosis murmur softens because:
-- [ ] Venous return increases, raising stroke volume across both lesions
-- [x] The smaller ventricular volume worsens the collapsible outflow obstruction but reduces flow across the fixed orifice
-- [ ] The afterload rise offsets the obstruction in hypertrophic cardiomyopathy
-- [ ] Parasympathetic surge slows conduction through the stenotic valve
+Which manoeuvre makes the murmur of hypertrophic obstructive cardiomyopathy louder?
+- [ ] Squatting
+- [ ] Passive leg raising
+- [x] Standing up from squatting, or the Valsalva manoeuvre
+- [ ] Handgrip
 ::: solution
-Strain reduces preload and shrinks the cavity: **the hypertrophic-cardiomyopathy gradient is dynamic (the septum-and-leaflet geometry tightens — [[#def-hcm]]), so obstruction and murmur increase; the aortic-stenosis gradient is a fixed-orifice function of flow (the widget's curve), so less flow means less gradient and less sound.** Squatting reverses both, and handgrip's afterload rise augments regurgitant murmurs — the bedside differentiation that exists because one obstruction collapses and the other does not ([[clinical-skills/physical-examination]]).
+Standing and Valsalva reduce venous return, so the left ventricle is smaller; the septum and mitral leaflet come closer, the outflow obstruction worsens and the murmur gets louder. Squatting and leg raising increase ventricular volume and soften it. Handgrip raises afterload, which also tends to reduce the obstruction and the murmur.
 :::
 :::
 
+::: warning Loudness is not severity
+A loud murmur is not necessarily a severe lesion, and a soft murmur is not necessarily a mild one. Small VSDs are among the loudest murmurs; severe aortic stenosis with a failing ventricle, torrential acute mitral regurgitation and Eisenmenger syndrome may produce little or no murmur. Judge severity by the pulse, the apex, the heart sounds, symptoms and echocardiography, not by the grade of the murmur.
+:::
+
 ::: history
-**Lancisi's** post-mortem valvular descriptions and **Burns and Hope and Stokes's** 19<sup>th</sup>-century clinical surgery-precursors, **the auscultation schools of Laennec, Stokes, Hope, Austin Flint and Musser's** eras that built the lesion-by-lesion bedside nosology, and the surgical dawn: **Ellis's** and the closed-commissurotomy pioneers, **Bailey's and Harken's and Björk's** valvotomy and then open surgery, **Lillehei's** intracardiac repairs and **Starr and Edwards's** 1960 ball-valve replacement and **Ross's** and **Karpov's** homograft and pulmonary-autograft lines, **Carpentier's** reconstructive mitral revolution (the repair-over-replacement paradigm and the ring's geometry) and **Kay and Cross's** resection-era physiology; the imaging revolution from **the M-mode and two-dimensional echocardiography and the Doppler-continuity-equation era** (the quantitative haemodynamics of [[#def-lesions]]) to transoesophageal, cardiac CT and MR; **the transcatheter aortic-valve era (Cribier's first transcatheter aortic-valve implantation and the PARTNER and CoreValve programmes) and the edge-to-edge and shunt-device generations**, and **the paediatric-cardiac-surgery arc from Senning and Glenn to Norwood and the Rastelli and Mustard and arterial-switch operations (the Blalock-Taussig shunt's 1944 origin of the whole specialty)**, with **the closed valvotomy collaborations of Brock and Russell** and **the hypertrophic-subaortic-stenosis era (Brock's surgical observation of the muscle bundle and Morrow's and Braunwald's and Whitteridge's dissection of the dynamic gradient)** and **the Wigle and Maron and McKenna familial studies and the Marian and Seidman and Watkins molecular HCM genetics ([[genetics/mendelian-inheritance]])** completing the chapter's mechanistic genealogy.
+In 1938 Robert Gross in Boston tied off a patent ductus arteriosus in a seven-year-old girl, an early operation for congenital heart disease. In 1944 Alfred Blalock, prompted by Helen Taussig's reasoning that children with tetralogy of Fallot needed more pulmonary blood flow, created a shunt from a subclavian to a pulmonary artery, with his laboratory technician Vivien Thomas, who had worked out the technique, standing behind him. John Gibbon used a heart–lung machine to close an atrial septal defect in 1953, and C. Walton Lillehei in Minneapolis repaired intracardiac defects using "cross-circulation" from a parent in 1954. Albert Starr and Lowell Edwards implanted their caged-ball mechanical mitral valve in 1960. In 2002 Alain Cribier in Rouen performed the first transcatheter aortic valve implantation in a human.
 :::
 
 ## Where this leads
 
-The valve-load physiology in [[cardiovascular/cardiac-cycle]] and [[cardiovascular/circulation-blood-pressure]]; the regurgitations' acute forms in [[cardiovascular/coronary-artery-disease]] and [[cardiovascular/circulation-blood-pressure]]; the failure sequelae in [[cardiovascular/heart-failure]]; the shunts' embryology in [[anatomy/embryology]]; the pulmonary-hypertension endpoint in [[respiratory/interstitial-vascular-disease]]; the anticoagulation of prostheses in [[blood/thrombosis-anticoagulation]]; the genetic cardiomyopathies in [[genetics/mendelian-inheritance]]; the duct-dependent neonate in [[paediatrics/newborn]].
+The cardiac cycle and heart sounds are in [[cardiovascular/cardiac-cycle]]. Heart failure caused by valve disease and cardiomyopathy is in [[cardiovascular/heart-failure]], and AF and anticoagulation in [[cardiovascular/arrhythmias]]. The embryology of the heart is in [[anatomy/embryology]], congenital and genetic disease in children in [[paediatrics/congenital-genetic]], and the inheritance of cardiomyopathies in [[genetics/mendelian-inheritance]]. Rheumatic fever as a streptococcal disease is in [[microbiology/bacterial-pathogenesis]].
 
 ::: summary
-- Stenoses impose flow-squared-dependent gradients and pressure load (concentric hypertrophy, ischaemia, diastolic disease); regurgitations impose volume load with two outlets (eccentric dilatation and deceptively good ejection fractions); timing intervention on the ventricle, not the symptom calendar, is the craft.
-- Symptomatic severe aortic stenosis is a survival-cliff diagnosis; transcatheter and surgical replacement are chosen by anatomy, age and risk, and the low-gradient states need flow-aware interpretation.
-- Endocarditis is infection on turbulence: Duke criteria, prolonged pathogen-directed therapy, and surgery for failure, haemodynamic catastrophe and embolic risk; prophylaxis is narrow, and addiction medicine is part of right-sided cure.
-- Shunt lesions are resistance politics — close them before Eisenmenger physiology makes closure lethal, and follow the operated children who are now adults with their own sequelae list.
-- HCM is an obstructive, arrhythmic and diastolic disease of the sarcomere whose drugs do the opposite of aortic stenosis's, whose risks are scored and device-treated, and whose family is screened by genetics and ECG.
+- Stenosis imposes a pressure load (concentric hypertrophy); regurgitation a volume load (dilatation). Acute lesions are poorly tolerated.
+- Doppler: $\Delta P \approx 4v^2$; valve area by the continuity equation. Severe aortic stenosis: peak velocity 4 m/s or more, mean gradient 40 mmHg or more, area below 1.0 cm².
+- Symptomatic severe aortic stenosis needs intervention: TAVI for most people aged 70 or over with suitable anatomy (ESC/EACTS 2025), surgery for younger, low-risk people and most bicuspid valves.
+- Aortic regurgitation: collapsing pulse, early diastolic murmur; mitral regurgitation: pansystolic murmur to the axilla, repair preferred; mitral stenosis: rheumatic, opening snap and mid-diastolic rumble, worsened by AF and pregnancy, anticoagulated with warfarin if AF.
+- Murmur loudness does not equal severity; Valsalva and standing increase the HCM murmur.
+- Endocarditis: Staphylococcus aureus commonest; three sets of blood cultures before antibiotics; modified Duke criteria; prolonged IV antibiotics and surgery for complications.
+- HCM is autosomal dominant, often with outflow obstruction, and a cause of sudden death in the young; relatives are screened.
+- Congenital lesions follow from the fetal circulation: left-to-right shunts (ASD, VSD, PDA) risk Eisenmenger syndrome; cyanotic lesions include tetralogy of Fallot and transposition.
 :::
 
 ## Exercises
 
-::: exercise Calculate the area {level=1}
-LVOT diameter 2.0 cm (circular), LVOT velocity-time integral 20 cm, aortic-valve velocity-time integral 60 cm. Compute the aortic-valve area and grade it; state the continuity-equation assumptions.
+::: exercise Peak gradient {level=1 check="81"}
+Using the simplified Bernoulli equation, calculate the peak pressure gradient (mmHg) across an aortic valve with a peak jet velocity of 4.5 m/s (exact value).
 ::: solution
-LVOT cross-sectional area = π×(1.0)² = 3.14 cm²; stroke volume crossing it = 3.14×20 = 62.8 mL; **AVA = 62.8/60 ≈ 1.05 cm² — severe territory is ≤1.0, so this is borderline severe-to-moderate (index to body surface area in the small patient — the 0.6 cm²/m² cut-off and the very-severe ≤0.6 cm²)**. Assumptions: **a circular LVOT (under-reads the ellipse), a single LVOT VTI sample aligned with flow (cosine error), laminar flow and no subvalvar obstruction, and a competent aortic valve with the forward volume equal to the regurgitant-free stroke (the mixed lesion caveat)** — the exam's point being [[#def-lesions]]'s: the area is arithmetic on physics assumptions, and the clinical picture and the calcium score arbitrate the disagreements ([[clinical-skills/medical-imaging]]).
+$\Delta P = 4 \times 4.5^2 = 4 \times 20.25 =$ **81 mmHg**.
+:::
+:::
+
+::: exercise Valve area {level=1 check="pi*1^2*20/100"}
+The LVOT diameter is 2.0 cm, the LVOT velocity–time integral is 20 cm, and the aortic valve VTI is 100 cm. Calculate the aortic valve area in cm² (exact value, in terms of π if you wish).
+::: solution
+$CSA_{LVOT} = \pi \times 1.0^2 = \pi$ cm². $AVA = \pi \times 20/100 = 0.2\pi \approx$ **0.63 cm²**: severe aortic stenosis.
 :::
 :::
 
 ::: exercise Murmur manoeuvres {level=1}
-Explain with load physiology why Valsalva's strain phase softens aortic-stenosis and HCM murmurs differently, why squatting softens HCM and can make the AS murmur louder, and what handgrip does to regurgitant murmurs.
+Predict the effect on the murmur of: (a) inspiration in tricuspid regurgitation; (b) sitting forward in held expiration in aortic regurgitation; (c) squatting in hypertrophic obstructive cardiomyopathy; (d) Valsalva in aortic stenosis.
 ::: solution
-**Valsalva strain (reduced preload, smaller cavity): AS murmur falls (less flow across the fixed orifice — the widget's flow term) while the HCM murmur rises (the smaller outflow tract increases the collapsible obstruction and the mitral leaflet's drag — [[#def-hcm]]); squatting (raised preload and afterload, bigger cavity): HCM murmur falls (the distended outflow) while AS murmur rises with the increased stroke volume (a fixed orifice converts flow into gradient and sound); handgrip (raised afterload): regurgitant murmurs — mitral and aortic regurgitation and VSD — louden (the afterload shifts the two-outlet split toward the regurgitant fraction), while ejection murmurs barely change.** The bedside table is the lesion arithmetic of [[#def-lesions]] performed acoustically — and the deeper point: the murmur is not the valve alone but the valve-times-flow-times-load, which is why anaemia, pregnancy and thyrotoxicosis make innocent-sounding flow murmurs and why beta-blockade changes HCM's sound within an hour ([[clinical-skills/physical-examination]]).
+(a) **Louder**: more venous return to the right heart (Carvallo's sign).
+
+(b) **Louder**: brings the aortic root closer to the chest wall and favours left-sided flow.
+
+(c) **Quieter**: larger ventricle, less obstruction.
+
+(d) **Quieter**: less venous return and stroke volume reduce flow across the valve.
 :::
 :::
 
 ::: exercise The asymptomatic severe valve {level=2}
-Give four guideline triggers for intervening on severe AS, MR and AR before or beyond symptoms, and the physiology each protects.
+A 69-year-old man who walks his dog daily without symptoms is found to have severe aortic stenosis (peak velocity 4.3 m/s) with an ejection fraction of 60%. What does follow-up involve, and what would change management?
 ::: solution
-**Severe AS:** symptoms (or the unmasked ones found by the exercise test), **EF <50 % (the afterload mismatch beginning), the very-severe anatomy (velocity ≥5 m/s or area ≤0.6 — the gradient-and-area curve of the widget), and rapid progression with a rising BNP or an abnormal blood-pressure response — each protecting against irreversible fibrosis and the post-procedure survival gap.** **Severe MR (primary):** **EF ≤60 % or end-systolic dimension ≥40 mm (the two-outlet arithmetic's deceptively good EF and the afterload-sensitive dimension — operating before the ventricle's point of no return, with repair preferred), or new atrial fibrillation or pulmonary hypertension (the atrium and the venous bed as leak gauges).** **Severe AR:** **EF <55 % or end-systolic dimension >40 mm (or indexed — the volume-overload dimensions being the lesion's true progressmeter), and the aortic root's own diameter thresholds (the 45–55 mm rules by aetiology and the bicuspid and the aortopathy and the pregnancy planning — [[cardiovascular/vascular-disease]] and [[obstetrics-gynaecology/pregnancy-complications]]).** The unifying physiology: **each trigger is the ventricle's or vessel's compensation curve crossing its inflection — imaging is surveillance of the curve, not of the valve ([[cardiovascular/cardiac-cycle]]'s EDPVR and ESPVR language, [[clinical-skills/medical-imaging]]'s serial-comparison discipline).**
+He has **asymptomatic severe aortic stenosis** with preserved ventricular function. Options are close surveillance or, under the 2025 ESC/EACTS guideline, early intervention may be considered in selected people at low procedural risk. Surveillance involves regular clinical review and echocardiography, and **education to report symptoms promptly** (breathlessness, chest pain, dizziness or syncope). An **exercise test** may reveal symptoms or an abnormal blood pressure response he has not noticed.
+
+Management would change to intervention if symptoms develop, if the ejection fraction falls below 50%, if exercise testing is abnormal, or if markers of very severe or rapidly progressive disease appear (for example a peak velocity of 5 m/s or more, rapid increase in velocity, severe calcification). Before any non-cardiac surgery he needs careful anaesthetic planning.
 :::
 :::
 
-::: exercise Valve and anticoagulation {level=2}
-A 58-year-old with a mechanical aortic valve, atrial fibrillation and previous GI bleed asks for a "modern blood thinner". Give the correct drug plan and the numbers that govern it, and why the direct oral anticoagulants are wrong here.
+::: exercise Valves and anticoagulation {level=2}
+For each person with AF, state whether a DOAC or warfarin is appropriate: (a) mechanical mitral valve; (b) moderate rheumatic mitral stenosis; (c) bioprosthetic aortic valve implanted 2 years ago; (d) mild degenerative mitral regurgitation.
 ::: solution
-**Warfarin is mandatory (the mechanical prosthesis' thrombogenic surface — the bileaflet pyrocarbon's shear-activated platelets and stasis and the fibrin layering — the direct-oral-anticoagulant trials in mechanical valves (the RE-ALIGN and the other dabigatran arm's early termination for thromboembolic and bleeding harm) being the modern proof that the thrombin generation of a prosthetic valve is not atrial-fibrillation stasis).** The plan: **warfarin to the correct INR band (the aortic bileaflet modern-generation target ~2.5 (2.0–3.0), higher or plus-aspirin for the older caged-ball and mitral prostheses and the thromboembolic-risk additions — her AF keeps the target at the band's therapeutic centre; aspirin added selectively by ischaemic and vascular risk given her GI-bleed history — [[blood/thrombosis-anticoagulation]]), the time-in-therapeutic-range quality metric with the bridging and peri-procedural and drug-interaction and pregnancy (the warfarin-embryopathy and the fetal windows) rules, and the long-term surveillance (the valve's own thrombosis — the fluoroscopic opening and the gradient and the transvalvar-regurgitation differential ([[#def-lesions]]'s paravalvular-versus-transvalvar problem), and the haemolysis's dark-urine-and-schistocyte signature ([[blood/haemoglobin-disorders]]'s mechanical fragmentation)).**
+(a) **Warfarin**: DOACs are contraindicated with mechanical valves.
+
+(b) **Warfarin**: moderate or severe mitral stenosis was excluded from DOAC trials, and warfarin remains standard.
+
+(c) A **DOAC** can be used in AF with a bioprosthetic valve beyond the early postoperative period.
+
+(d) A **DOAC**: mild regurgitation does not alter the choice.
 :::
 :::
 
-::: exercise Eisenmenger counselling {level=2}
-A 24-year-old unoperated large VSD with cyanosis, clubbing and equal pulmonary and systemic pressures asks about closure, about pregnancy and about flying. Answer each from the physiology.
+::: exercise Eisenmenger syndrome {level=2}
+A 29-year-old woman with an unrepaired large VSD has central cyanosis, clubbing and a haemoglobin of 205 g/L. Explain the pathophysiology and why closing the VSD now would be harmful.
 ::: solution
-**Closure: no — the defect is now the pop-off valve: with fixed, suprasystemic pulmonary vascular resistance ([[respiratory/interstitial-vascular-disease]]'s disease), closing it converts the right ventricle's relief into acute failure and death (the [[#def-congenital]] physiology); management is Eisenmenger medicine: advanced pulmonary-vasodilator therapy (the endothelin and PDE5 and prostacyclin pathways — [[cardiovascular/circulation-blood-pressure]]'s vasodilator pharmacology applied to the pulmonary bed), phlebotomy only for hyperviscosity symptoms with the iron-repletion caution, and the transplant conversation.** **Pregnancy: strongly discouraged — the systemic-vasodilation and the blood-loss-and-immobility of the puerperium deepen right-to-left shunting and maternal mortality (the historical 30–50 % figures — [[obstetrics-gynaecology/pregnancy-complications]]'s maternal-physiology chapters), with reliable contraception and, if she proceeds anyway, specialist management.** **Flying and altitude: the hypobaric cabin desaturates an already-desaturating circulation (the Dalton partial-pressure arithmetic of [[respiratory/mechanics-breathing]]) — short commercial flights usually tolerated with hydration, the altitude and exercise and dehydration combinations avoided, and the individual assessment documented** — one lesion, three answers, one physiology.
+Years of high pulmonary flow and pressure through the large VSD caused **irreversible pulmonary vascular disease**: intimal thickening, medial hypertrophy and obliteration of small pulmonary arteries. Pulmonary resistance rose above systemic, and the shunt **reversed** to right-to-left. Deoxygenated blood enters the aorta, causing **cyanosis**; chronic hypoxia drives erythropoietin and **secondary erythrocytosis**; clubbing follows chronic cyanosis.
+
+Closing the VSD now would remove the "pop-off" for the right ventricle, which would then have to pump the whole cardiac output against a very high pulmonary resistance; it would fail. Management is specialist: pulmonary vasodilator therapy, avoidance of dehydration and of venesection except for symptomatic hyperviscosity, avoiding air in intravenous lines (paradoxical embolism), and strong advice against pregnancy, with effective contraception.
 :::
 :::
 
-::: exercise The neonate who turns blue {level=2}
-A 4-day-old goes blue and limp during feeds; antenatal scans were "normal"; pulses are strong with a soft single second sound; prostaglandin E1 infusion improves the saturations. Explain which lesions this is and why the drug works.
+::: exercise The blue newborn {level=2}
+A term baby becomes increasingly cyanosed at 30 hours of age, with oxygen saturation of 70% that does not rise with oxygen. There is no respiratory distress. Explain why cyanosis appeared at this time, what drug is given and why.
 ::: solution
-**A duct-dependent cyanotic or obstructive left-/right-heart lesion declaring as the duct closes: the differential includes the transposition complex, the critical pulmonary or aortic stenosis and atresia, tetralogy with severe obstruction (the "pink tet" closing down to blue) and the left-heart obstructives (coarctation and hypoplastic left heart presenting with the ductal-dependent systemic circulation's shock rather than cyanosis — [[paediatrics/newborn]] and [[anatomy/embryology]]'s arch).** The pharmacology: **PGE1 (alprostadil) re-opens and maintains the ductus arteriosus ([[cardiovascular/cardiac-cycle]]'s fetal-circulation chapter: the duct's smooth muscle constricting with the postnatal oxygen and prostaglandin-withdrawal rise), restoring whichever mixing or systemic-or-pulmonary flow the lesion depends on (the apnoea and fever and hypotension side-effects monitored — the airway team briefed before starting, because these babies can obstruct from the duct's and the tongue's and the seizure-threshold reasons)** — the stabilising bridge to the echo diagnosis, the prostaglandin, the duct stenting or the shunt and the staged repairs of [[#def-congenital]]; the "normal antenatal scan" lesson: **the fetal circulation hides right-heart and arch lesions because the placenta is the lungs — a reminder that screening-test design ([[public-health/screening]], [[epidemiology-ebm/diagnostic-tests]]) must know what physiology masks.**
+Cyanosis not improved by oxygen without respiratory distress suggests **cyanotic congenital heart disease**, for example **transposition of the great arteries**, in which the systemic and pulmonary circulations run in parallel. Survival depends on mixing between them through the **ductus arteriosus** and foramen ovale. As the ductus closes in the first days after birth, mixing falls and cyanosis worsens.
+
+**Prostaglandin E** (alprostadil or dinoprostone) is infused to keep the ductus open, with monitoring for apnoea, a known side effect. Urgent echocardiography confirms the diagnosis; a balloon atrial septostomy may be needed to improve mixing, followed by surgical repair (the arterial switch operation for transposition). Newborn pulse oximetry screening aims to detect such lesions before the duct closes.
 :::
 :::
 
-::: exercise The HCM family {level=2}
-A 36-year-old with genotype-positive, phenotype-negative HCM (MYH7) asks about sport, pregnancy planning and his two children; his brother died at 19 in a road "accident". Structure the consultation.
+::: exercise Fever and a murmur {level=3}
+A 68-year-old man with a bioprosthetic aortic valve inserted 3 years ago presents with 6 weeks of malaise, night sweats and 5 kg weight loss. Temperature 37.9 °C. He has splinter haemorrhages and microscopic haematuria, and the murmur of his valve has changed. CRP is 86 mg/L and haemoglobin 104 g/L. Construct a differential diagnosis, explain which investigations are needed and in what order, and identify the features that would prompt surgery.
+::: hint
+Why must blood cultures be taken before any antibiotic? Which imaging tests are useful for prosthetic valves?
+:::
 ::: solution
-**Sport: the shared-decision framework (the eligibility documents' individual-risk language — the trained athlete's relative-benefit and absolute-risk argument, the avoidance of maximal competitive bursts in the high-risk profile, and the defibrillator's implications for the choice — the arrhythmia and ethics of [[cardiovascular/arrhythmias]]); risk modification: the sudden-death score elements reviewed (family history — the brother's "accident" re-investigated as a possible drowned-in-bath or single-car event: the sudden-death-history archaeology that changes scores), the symptoms, the wall thickness, the non-sustained ventricular tachycardia on the Holter and the abnormal exercise blood pressure, and the MRI fibrosis.** **Genetics: the phenotype-negative genotype-positive state's implications — serial surveillance (ECG and imaging intervals by age and family data), the cascade testing already anchoring on his variant ([[genetics/genetic-testing]]), and the reproductive options discussed if asked ([[medical-ethics-law/beginning-of-life]] for the preimplantation genetics).** **Pregnancy: usually tolerated with the [[#def-hcm]] haemodynamic rules (maintain preload and afterload, the beta-blocker continuation and the delivery and neuraxial-anaesthesia cautions — [[obstetrics-gynaecology/pregnancy-complications]]).** **Children: clinical screening from childhood per guidelines with the genotype-first option, the family's own ECGs and imaging, and the lifestyle safety net (the swimming-and-lifeguard and the AED-at-school advice — [[public-health/prevention-promotion]]'s chain of survival), plus the psychological support for the inherited-risk family ([[genetics/genomic-medicine]]'s counselling service).**
-:::
-:::
+**Differential diagnosis**: **prosthetic valve endocarditis** (most likely, given prosthetic valve, fever, weight loss, splinters, haematuria, changed murmur and anaemia of inflammation); other occult infection (abscess, osteomyelitis, tuberculosis); malignancy (including colorectal cancer, which also links to *S. gallolyticus* endocarditis); vasculitis; and lymphoma.
 
-::: exercise Design the adult congenital service {level=3}
-For a region, build the adult congenital heart disease service: the populations, the clinics, the transition model, the emergency interfaces, and the metrics — each justified by this chapter's physiology.
-::: solution
-**Populations (the physiology-defined cohorts):** the shunt-operated (the ASD and VSD and tetralogy adults with their pulmonary-regurgitation right ventricles and atrial arrhythmias — [[#def-congenital]]), the single-ventricle and fontan survivors (the preload-and-afterload and thrombotic and protein-losing-enteropathy and liver-congestion surveillance), the transposition's atrial- and arterial-switch generations (the systemic right ventricle's [[cardiovascular/heart-failure]] trajectory and the baffle obstructions), the valvular and aortic lesions (the bicuspid cohorts and the coarctation re-stenoses and aneurysms — [[cardiovascular/vascular-disease]]) and the unrepaired-and-Eisenmenger minority with their palliation and transplant questions.** **Clinics and imaging:** the specialist echo and MRI and CT interfaces with radiation-budget and contrast-and-renal care ([[clinical-skills/medical-imaging]]), the pulmonary-hypertension and heart-failure and arrhythmia and device clinics as the cross-services that already contain congenital phenotypes, and the pregnancy and non-cardiac-surgery and dentistry risk-register lists (the anticoagulation and endocarditis and haemodynamic rules of [[#def-endocarditis]] and [[obstetrics-gynaecology/pregnancy-complications]]).** **Transition:** the structured adolescent transfer (the competency-and-consent timeline — [[medical-ethics-law/consent-capacity]]) with the "lost-to-follow-up" retrieval programmes (the registry-and-primary-care record hunts), since the event rate climbs in the un-followed.** **Emergency interfaces:** the cyanotic-spell and duct-dependent neonatal pathway ([[paediatrics/newborn]]), the adult congenital ECG-and-echocardiographic literacy in every acute medical take (the fixed-split and the loud-P2 recognition — [[emergency-critical-care/acute-assessment]]), and the cardiac-arrest AED-and-EMS documentation for the operated anatomies ([[emergency-critical-care/resuscitation]]).** **Metrics:** late-mortality and emergency-admission rates, follow-up retention after transition, pregnancy and surgery outcomes through the specialist pathways, and the patient-reported function — all of which are the [[cardiovascular/circulation-blood-pressure]] and [[cardiovascular/cardiac-cycle]] curves counted at population scale.**
+**Investigations, in order**:
+1. **Three sets of blood cultures** from separate venepunctures, over at least an hour if he is stable, **before any antibiotic**; antibiotics given first are a common cause of culture-negative endocarditis.
+2. **Echocardiography**: transthoracic first, then **transoesophageal**, which is much more sensitive for prosthetic valves and abscesses.
+3. If echocardiography is inconclusive, **cardiac CT** or **PET-CT**, which detects infection around prosthetic valves, as allowed by the 2023 diagnostic criteria.
+4. Urinalysis, renal function, ECG (a lengthening PR interval suggests an aortic root abscess), and imaging for emboli as indicated. If streptococci or enterococci associated with bowel pathology are grown, colonoscopy.
+
+**Treatment**: prolonged intravenous antibiotics chosen with microbiology, under an endocarditis team.
+
+**Features prompting surgery**: heart failure from valve dysfunction or dehiscence; **uncontrolled infection** (paravalvular abscess, fistula, persistent bacteraemia, fungal or highly resistant organisms); large vegetations with embolism or high embolic risk. Prosthetic valve endocarditis, especially with *S. aureus*, frequently needs surgery.
 :::
 :::
