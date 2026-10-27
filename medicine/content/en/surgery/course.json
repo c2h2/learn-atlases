@@ -6,11 +6,11 @@
   "level": 3,
   "order": 220,
   "tagline": "The surgical patient, anaesthesia, trauma, the acute abdomen and the main surgical specialties",
-  "summary": "Surgery treats disease by operation, and every doctor looks after surgical patients. This course covers perioperative care and anaesthesia, wounds and surgical infection, the assessment of trauma, the acute abdomen, gastrointestinal, breast, endocrine, vascular and urological surgery, and orthopaedics.",
+  "summary": "Surgery treats disease by operation, and every doctor looks after surgical patients. This course covers perioperative care, anaesthesia and pain relief, wounds and surgical infection, trauma, the acute abdomen, and gastrointestinal, breast and endocrine, vascular and urological, and orthopaedic surgery.",
   "overview": [
-    "Surgery is medicine with controlled injury: the knife, the clamp and the suture trade immediate tissue damage for a larger physiological gain — the appendix removed before it ruptures, the artery tied, the fracture fixed so the limb can work again. This course teaches the general principles that underlie every operation, then the common emergency and elective presentations a junior surgical team actually manages.",
-    "The general part covers perioperative care — assessment and optimisation, fluids and fasting, thromboprophylaxis, and postoperative complications by timing (the day-by-day fever pattern, atelectasis, anastomotic leak); anaesthesia and analgesia from the physiology of general anaesthetic agents to regional blockade and multimodal pain plans; wounds and surgical infection — healing biology, dehiscence, surgical-site infection and necrotising soft-tissue infection; and trauma with its primary survey, haemorrhage control and damage-control logic. The regional chapters then run the surgical night shift: the acute abdomen and obstruction; gastrointestinal surgery (appendicitis, hernia, biliary disease, inflammatory bowel and bariatric principles); breast and endocrine surgery; vascular surgery and urology (the ischaemic limb, aneurysm, varicose veins, the urological emergencies); and orthopaedics with its fracture principles, joint sepsis and day-to-day presentations.",
-    "Throughout, the emphasis is on decision-making: which patient needs theatre now, which needs resuscitation first, which needs imaging, and how to say so concisely to the registrar on the phone. Anatomy is assumed (see the anatomy course); the taught threshold is recognising the surgical problem, stabilising, referring, and looking after the patient before and after the operation. All cases are fictional and all management is described as principle under current guidelines."
+    "An operation is a controlled injury: the surgeon damages tissue so that the patient ends up better off. Whether that trade succeeds depends as much on what happens before and after the operation as on the operation itself. This course teaches the principles that apply to every surgical patient and then the common emergency and elective conditions that a junior doctor on a surgical team meets.",
+    "The first four chapters cover the general principles: preoperative assessment and optimisation, fluids, and postoperative complications in the order in which they appear; general and regional anaesthesia, airway management, anaesthetic emergencies and acute pain; wound healing, surgical-site infection and necrotising soft-tissue infection; and the assessment and resuscitation of injured patients, including head injury and burns. The remaining chapters cover the acute abdomen; hernias, gallstones, gastrointestinal cancers, inflammatory bowel disease, stomas and bariatric surgery; breast, thyroid, parathyroid and adrenal surgery; arterial and venous disease and the main urological conditions; and fractures, orthopaedic emergencies, bone and joint infection and joint replacement.",
+    "Throughout, the emphasis is on decisions: which patient needs an operation now, which needs resuscitation first, which needs imaging, and how to explain the situation clearly to a senior colleague and to the patient. Each chapter includes worked clinical cases and calculations. Guidance is UK-first (NICE and the relevant specialist bodies) and dated; all cases are fictional, and management is described as principle rather than as instructions for individual patients."
   ],
   "prerequisites": [
     "clinical-skills",
@@ -18,21 +18,22 @@
     "musculoskeletal"
   ],
   "outcomes": [
-    "Assess fitness for surgery — cardiopulmonary risk, medication review, malnutrition and frailty — and plan perioperative care including fasting, thromboprophylaxis, glycaemic and analgesic strategies.",
-    "Explain the physiology and pharmacology of general and regional anaesthesia, describe routine intraoperative monitoring, and manage postoperative nausea, pain and delirium.",
-    "Describe wound healing by primary and secondary intention, the factors that impair it, and the diagnosis and management of surgical-site infection, dehiscence, incisional hernia and necrotising soft-tissue infection.",
-    "Apply the trauma primary survey and resuscitation sequence (massive haemorrhage, airway, breathing, circulation, disability, exposure); describe the classes of haemorrhagic shock, damage-control surgery and the principles of head, chest, abdominal and pelvic injury management.",
-    "Take a surgical history of abdominal pain and vomiting and use examination, blood tests and imaging to build a differential of the acute abdomen; know the indications for emergency surgery — perforation, obstruction, ischaemia, strangulation, peritonitis, appendicitis.",
-    "Outline the presentation, investigation and surgical management principles of common conditions: appendicitis, abdominal wall hernias, cholecystitis and biliary disease, inflammatory bowel disease surgery, diverticular disease, colorectal and upper-gastrointestinal cancer pathways, and bariatric surgery.",
-    "Diagnose and stage breast disease and thyroid and parathyroid surgical disease, and state the multidisciplinary management principles including sentinel-node logic.",
-    "Recognise and initiate management of acute limb ischaemia, rupturing and symptomatic aortic aneurysm, deep-vein thrombosis and varicose vein complications; describe the urological emergencies — retention, renal colic, torsion, priapism and Fournier's gangrene.",
-    "Apply orthopaedic fracture principles — reduction, retention, rehabilitation — and recognise the emergencies: open fractures, compartment syndrome, septic arthritis, periprosthetic joint infection, dislocations and the fractured neck of femur pathway."
+    "Explain the surgical stress response and assess fitness for surgery, including risk scoring, optimisation, medicine management, fasting and consent based on material risks.",
+    "Prescribe maintenance intravenous fluids in principle and recognise postoperative complications by their typical timing, including anastomotic leak, venous thromboembolism and delirium.",
+    "Describe general and regional anaesthesia, airway management and minimum monitoring, and recognise and outline the management of anaphylaxis, malignant hyperthermia and local anaesthetic toxicity.",
+    "Plan multimodal analgesia that limits opioid harm, and calculate local anaesthetic dose limits and PONV risk.",
+    "Explain wound healing and its failures, and outline the prevention, recognition and treatment of surgical-site infection, abscesses, necrotising soft-tissue infection and wound dehiscence.",
+    "Apply the primary survey and damage control resuscitation to an injured patient, and recognise life-threatening chest, abdominal, pelvic, head and burn injuries.",
+    "Assess a patient with acute abdominal pain, distinguish inflammation, obstruction, perforation and ischaemia, and know when emergency surgery is needed.",
+    "Outline the investigation and surgical management of hernias, gallstones, gastrointestinal cancers, inflammatory bowel disease, anorectal disease, stomas and obesity.",
+    "Describe triple assessment and the surgical management of breast cancer, and the assessment and surgery of thyroid nodules, hyperparathyroidism and adrenal tumours.",
+    "Recognise limb ischaemia, aortic aneurysm, testicular torsion, the obstructed infected kidney and other vascular and urological emergencies, and apply fracture principles, the hip fracture pathway and the management of orthopaedic emergencies."
   ],
   "chapters": [
     {
       "slug": "perioperative-care",
       "title": "Perioperative care",
-      "summary": "Preoperative assessment and consent, fluids, and postoperative care and complications.",
+      "summary": "Risk assessment and optimisation, medicines and fasting, fluids, and postoperative complications.",
       "requires": [
         "clinical-skills/history-taking"
       ]
@@ -40,7 +41,7 @@
     {
       "slug": "anaesthesia-pain",
       "title": "Anaesthesia and pain relief",
-      "summary": "General and regional anaesthesia, airway principles and acute pain management.",
+      "summary": "General and regional anaesthesia, the airway, anaesthetic emergencies and acute pain.",
       "requires": [
         "surgery/perioperative-care",
         "pharmacology/drug-receptor"
@@ -49,7 +50,7 @@
     {
       "slug": "wounds-surgical-infection",
       "title": "Wounds and surgical infection",
-      "summary": "Wound healing, surgical-site infection, abscesses and asepsis.",
+      "summary": "Wound healing, surgical-site infection, abscesses, necrotising infection and dehiscence.",
       "requires": [
         "surgery/perioperative-care",
         "pathology/chronic-inflammation-repair"
@@ -58,7 +59,7 @@
     {
       "slug": "trauma",
       "title": "Trauma",
-      "summary": "The primary survey, major trauma, head injury and burns.",
+      "summary": "The primary survey, haemorrhage, chest, abdominal and head injury, and burns.",
       "requires": [
         "surgery/perioperative-care"
       ]
@@ -66,7 +67,7 @@
     {
       "slug": "acute-abdomen",
       "title": "The acute abdomen",
-      "summary": "Appendicitis, bowel obstruction, perforation and other surgical causes of abdominal pain.",
+      "summary": "Assessment of abdominal pain, appendicitis, obstruction, perforation, ischaemia and pancreatitis.",
       "requires": [
         "surgery/perioperative-care",
         "gastrointestinal/bowel-disease"
@@ -75,7 +76,7 @@
     {
       "slug": "gastrointestinal-surgery",
       "title": "Gastrointestinal and hernia surgery",
-      "summary": "Hernias and colorectal, upper gastrointestinal and hepatobiliary surgery.",
+      "summary": "Hernias, gallstones, upper and lower gastrointestinal cancer, stomas and bariatric surgery.",
       "requires": [
         "surgery/acute-abdomen"
       ]
@@ -83,7 +84,7 @@
     {
       "slug": "breast-endocrine-surgery",
       "title": "Breast and endocrine surgery",
-      "summary": "Breast lumps and breast cancer, and thyroid and parathyroid surgery.",
+      "summary": "Breast lumps and breast cancer, and thyroid, parathyroid and adrenal surgery.",
       "requires": [
         "surgery/perioperative-care"
       ]
@@ -91,7 +92,7 @@
     {
       "slug": "vascular-urological-surgery",
       "title": "Vascular and urological surgery",
-      "summary": "Aneurysm repair and limb ischaemia, and surgery of the kidney, bladder and prostate.",
+      "summary": "Limb ischaemia, aneurysm, venous disease, stones, retention, urological cancer and the acute scrotum.",
       "requires": [
         "surgery/perioperative-care"
       ]
@@ -99,7 +100,7 @@
     {
       "slug": "orthopaedics",
       "title": "Orthopaedics",
-      "summary": "Common fractures and dislocations, joint replacement and sports injuries.",
+      "summary": "Fracture principles, orthopaedic emergencies, hip fracture, infection and joint replacement.",
       "requires": [
         "surgery/trauma",
         "musculoskeletal/fractures"
@@ -109,8 +110,8 @@
   "history": [
     {
       "year": 1846,
-      "title": "Public anaesthesia",
-      "detail": "William Morton's ether demonstration at the Massachusetts General Hospital — 'Gentlemen, this is no humbug' — follows Long's and Wells's earlier, less successful uses of ether and nitrous oxide; with pain, elective surgery and gentle technique become possible, and anaesthesia becomes a medical specialty within a generation.",
+      "title": "Public demonstration of anaesthesia",
+      "detail": "On 16 October 1846 William Morton gave ether to a patient at the Massachusetts General Hospital while John Collins Warren removed a tumour from his neck. Crawford Long had used ether in 1842 without publishing, and Horace Wells's demonstration of nitrous oxide in 1845 had been judged a failure. Within a year anaesthesia was in use worldwide.",
       "people": [
         "William Morton",
         "Crawford Long",
@@ -118,64 +119,59 @@
       ]
     },
     {
+      "year": 1847,
+      "title": "Handwashing and puerperal fever",
+      "detail": "Ignaz Semmelweis showed in Vienna that puerperal fever was far commoner on the ward staffed by doctors coming from the autopsy room, and that washing hands in chlorinated lime solution greatly reduced deaths. His work was largely rejected in his lifetime.",
+      "people": [
+        "Ignaz Semmelweis"
+      ]
+    },
+    {
       "year": 1867,
-      "title": "Antisepsis",
-      "detail": "Joseph Lister, reading Pasteur, carbolises wounds and instruments at the Glasgow Royal Infirmary and reports falls in putrefaction and amputation mortality; antiseptic technique, refined into asepsis by Bergmann's steam sterilisation and by rubber gloves (Halsted's request, via the Goodyear company, in 1890), creates the conditions for modern operative surgery.",
+      "title": "Antiseptic surgery",
+      "detail": "Joseph Lister, applying Louis Pasteur's germ theory, treated compound fractures and wounds with carbolic acid in Glasgow and reported falling rates of infection and amputation in The Lancet. Antisepsis gave way to asepsis, with steam sterilisation and, from about 1890, rubber gloves introduced by William Halsted.",
       "people": [
         "Joseph Lister",
-        "Eduard von Bergmann",
+        "Louis Pasteur",
         "William Halsted"
       ]
     },
     {
       "year": 1883,
-      "title": "Thyroid surgery made safe",
-      "detail": "Theodor Kocher's meticulous capsular technique and anatomical study at the Berne Inselspital bring thyroidectomy mortality under 1 per cent from near half; his systematic attention to the recurrent laryngeal nerve and the parathyroids is a model of audit-driven surgical improvement (Nobel Prize 1909).",
+      "title": "Safe thyroid surgery",
+      "detail": "Theodor Kocher in Bern reduced the mortality of thyroidectomy to well under 1% through meticulous technique, and his observation of hypothyroidism after total thyroidectomy helped reveal the function of the gland. He received the Nobel Prize in 1909.",
       "people": [
         "Theodor Kocher"
       ]
     },
     {
-      "year": 1894,
-      "title": "Halsted's programme",
-      "detail": "William Stewart Halsted — who had already made vascular clamping, meticulous haemostasis and the silk suture standard at Roosevelt Hospital — performs radical mastectomy, and at the new Johns Hopkins helps build the residency training system that fuses aseptic technique, anatomical rigour and graded surgical education into academic surgery.",
+      "year": 1895,
+      "title": "X-rays",
+      "detail": "Wilhelm Röntgen discovered X-rays, which were used to image fractures and foreign bodies within weeks and transformed the diagnosis of injury.",
       "people": [
-        "William Halsted"
+        "Wilhelm Röntgen"
       ]
     },
     {
-      "year": 1901,
-      "title": "Blood groups and transfusion",
-      "detail": "Karl Landsteiner's discovery of the human blood groups makes transfusion rational rather than Russian roulette; with Crile's direct-technique pioneer work, Hustin's and Robertson's citrate-glucose storage (1914–16) and the First World War's blood depots, haemorrhagic shock stops being routinely lethal on the table.",
+      "year": 1962,
+      "title": "Low-friction hip replacement",
+      "detail": "At Wrightington Hospital, John Charnley developed the low-friction total hip replacement, with a small metal head on high-density polyethylene fixed with acrylic cement, and introduced clean-air theatre enclosures to reduce infection.",
       "people": [
-        "Karl Landsteiner",
-        "George Crile",
-        "Albert Hustin",
-        "Oswald Robertson"
+        "John Charnley"
       ]
     },
     {
-      "year": 1941,
-      "title": "Penicillin reaches patients",
-      "detail": "The first clinical trials of Florey and Chain's penicillin — including Police Constable Albert Alexander in Oxford — prove systemic antibacterial therapy; together with sulphonamides' wartime use, debridement and delayed primary closure, it transforms battle and postoperative surgical infection.",
+      "year": 1978,
+      "title": "Advanced Trauma Life Support",
+      "detail": "After the disorganised care his family received following a plane crash in rural Nebraska in 1976, the orthopaedic surgeon James Styner and colleagues ran the first Advanced Trauma Life Support course; the American College of Surgeons adopted it in 1980, and it is now taught worldwide.",
       "people": [
-        "Howard Florey",
-        "Ernst Boris Chain",
-        "Norman Heatley"
+        "James Styner"
       ]
     },
     {
-      "year": 1966,
-      "title": "Accidental death and disability",
-      "detail": "The US National Research Council's report calls trauma 'the neglected disease of modern society' and finds early deaths driven by haemorrhage and airway failure in the first hours; the fix is systems — defined trauma regions and units, organised pre-hospital care, and the curriculum that becomes ATLS and the modern major-trauma centre.",
-      "people": [
-        "National Research Council"
-      ]
-    },
-    {
-      "year": 1987,
-      "title": "Keyhole cholecystectomy",
-      "detail": "After Erich Mühe's 1986 operation and the published series of Mouret in Lyon and Dubois in Marseille, laparoscopic gallbladder surgery spreads worldwide within years; the pattern repeats across general surgery — less access trauma, shorter stay, faster recovery — and forces the training, simulation and audit culture that now defines minimally invasive technique.",
+      "year": 1985,
+      "title": "Laparoscopic cholecystectomy",
+      "detail": "Erich Mühe in Germany performed the first laparoscopic cholecystectomy in 1985; from 1987 Philippe Mouret in Lyon and François Dubois in Paris popularised the technique, which began the era of minimally invasive general surgery.",
       "people": [
         "Erich Mühe",
         "Philippe Mouret",
@@ -183,36 +179,58 @@
       ]
     },
     {
-      "year": 2008,
-      "title": "Safe surgery, checked",
-      "detail": "The WHO Surgical Safety Checklist's eight-hospital study reports falls in mortality and major complications; sign-in, time-out and sign-out with spoken confirmation become a global standard, and the checklist spreads to trauma, anaesthesia and ward handover as the simplest safety technology yet evaluated.",
+      "year": 2009,
+      "title": "The surgical safety checklist",
+      "detail": "Alex Haynes, Atul Gawande and colleagues reported that introducing the WHO Surgical Safety Checklist in eight hospitals in eight countries was followed by a fall in inpatient deaths from 1.5% to 0.8% and in major complications from 11.0% to 7.0%. The checklist is now used routinely in most countries.",
       "people": [
-        "World Health Organization",
-        "Alex Haynes"
+        "Alex Haynes",
+        "Atul Gawande",
+        "World Health Organization"
       ]
     }
   ],
   "references": [
     {
-      "title": "The Surgery Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the procedure and the organ.",
-      "slug": "ref1"
+      "authors": "O'Connell PR, McCaskie AW, Sayers RD (eds)",
+      "year": 2023,
+      "title": "Bailey & Love's Short Practice of Surgery, 28th edition",
+      "note": "The standard British surgical textbook, covering general principles, trauma and every surgical specialty.",
+      "slug": "bailey-love"
     },
     {
-      "title": "The Surgery Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the procedure and the system.",
-      "slug": "ref2"
-    },
-    {
-      "title": "Clinical Surgery",
-      "authors": "Reference",
+      "authors": "Blom A, Warwick D, Whitehouse M (eds)",
       "year": 2018,
-      "note": "A practical treatment of the organ and the practice.",
-      "slug": "ref3"
+      "title": "Apley & Solomon's System of Orthopaedics and Trauma, 10th edition",
+      "note": "The classic textbook of fractures and orthopaedic disease.",
+      "slug": "apley"
+    },
+    {
+      "authors": "American College of Surgeons Committee on Trauma",
+      "year": 2025,
+      "title": "Advanced Trauma Life Support (ATLS) Student Course Manual, 11th edition",
+      "note": "The international standard for the initial assessment and resuscitation of injured patients.",
+      "slug": "atls"
+    },
+    {
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2020,
+      "title": "Perioperative care in adults (NICE guideline NG180)",
+      "note": "UK guidance on preoperative assessment, optimisation, enhanced recovery and postoperative care.",
+      "slug": "nice-ng180"
+    },
+    {
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2019,
+      "title": "Surgical site infections: prevention and treatment (NICE guideline NG125)",
+      "note": "UK guidance on hair removal, skin preparation, antibiotic prophylaxis and wound care.",
+      "slug": "nice-ng125"
+    },
+    {
+      "authors": "World Health Organization",
+      "year": 2009,
+      "title": "WHO Guidelines for Safe Surgery 2009: Safe Surgery Saves Lives",
+      "note": "The evidence and rationale behind the WHO Surgical Safety Checklist.",
+      "slug": "who-safe-surgery"
     }
   ],
   "next": []

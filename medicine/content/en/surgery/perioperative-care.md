@@ -1,141 +1,371 @@
-Surgery begins before the knife. **Perioperative care is applied physiology under controlled stress: the pre-assessment that finds the reversible risks, the optimisation that buys millimetres of safety, the fasting-and-medication decisions that avoid two iatrogenic epidemics (aspiration and withdrawal), the risk-stratification that matches patient to theatre to ward, and the postoperative vigilance for the clockwork complications - each clockwork complication being someone's failure of prophylaxis.** The modern model is enhanced recovery: a bundle so evidence-laden that its components read like a checklist of things that used to be routine and wrong.
+An operation is a deliberate injury. The surgeon cuts, handles and removes tissue so that the patient ends up better off, but the body reacts to that injury in the same way it reacts to an accident: with a surge of stress hormones, inflammation, fluid shifts and a period of reduced reserve. **Perioperative care** is the medical care of the surgical patient from the moment surgery is considered until full recovery. Its aim is simple to state: make sure the patient arrives in theatre as fit as possible, comes through the operation without avoidable harm, and recovers quickly and safely afterwards.
 
-## Before the operation
+Most of the deaths and complications after surgery are not caused by the operation going wrong technically. They come from the patient's heart, lungs, kidneys and brain struggling with the stress of surgery, and from complications such as infection, clots and delirium that can often be predicted and sometimes prevented. That is why every doctor who looks after surgical patients needs the ideas in this chapter.
 
-::: definition Pre-assessment and optimisation {#def-preassessment}
-**The preoperative clinic does four jobs: identify risk, modify it, plan the perioperative course, and set expectations. Risk identification uses history as the primary instrument (the cardiac-risk indices and the frailty scores with their geriatric-medicine validation, the functional-capacity question - flights of stairs and METs - that outperforms most tests, the airway-and-spine-and-drug-history specifics, the previous-anaesthetic-problems-and-family-history-of-succinylcholine-apnoea-and-malignant-hyperthermia questions, and the medication-list that drives half the day's decisions), supported by test-only-if-indicated policy (the routine-CT-and-ECG-and-echo findings' yield-versus-delay arithmetic, the FBC-and-urea-and-glucose-and-coagulation triggers by surgery-blood-loss-potential and history, and the delay-avoidance principle: tests that postpone urgent surgery for irrelevant numbers are harm); risk modification across the weeks available - the prehabilitation bundle (exercise-and-nutrition-and-smoking-and-alcohol-and-anaemia-and glycemic optimisation with their measured effect on complications and length-of-stay, the iron-and-erythropoietin pathways for surgical anaemia with the blood-transfusion-avoidance argument, the malnutrition-screen-and-oral-supplement-programs and the sarcopenia-mortality link), the medication architecture (the beta-blocker continuation-versus-cautious-initiation rule from the POISE-era evidence, the statin continuation, the ACE-and-ARB hold-day decisions weighed against rebound-hypertension, the anticoagulant bridging calculus by thrombotic-versus-bleeding-risk with the DOAC timing tables, the steroid-supplementation physiology covered in endocrinology, the SGLT2-inhibitor-euglycaemic-ketoacidosis-withholding rule and the GLP-1-agonist-gastroparesis-aspiration debate and its current guidance gradations), and the psychological-and-social preparation (the anxiety-and-expectation effect on recovery experience, the capacity-and-consent process with the anaesthetic-and-surgical-consent-boundaries clarified - who consents to what, the interpreters-and-carers-and-advance-decisions sorted before the morning-of, and the 'you will not be alone and in pain' promises the day-surgery-and-pain-services can actually keep); and the planning outputs - the ASA-and-surgical-risk-grading communication, the day-of-admission instructions (the fasting-guidance that has rightly loosened - clear-fluids-to-two-hours and the carbohydrate-drink era against the 6-hour-anything-by-mouth superstition, with the gastroparesis-and-obstruction-and-pregnancy exceptions honoured), the enhanced-recovery-pathway enrolment, the post-op-disposition prediction and the OT-and-physio-and-discharge-planning started at the pre-op visit, because discharge begins at admission and readmission begins at discharge) - [[pharmacology/patient-variation]], [[cardiovascular/hypertension]], [[endocrine/diabetes]], [[gastrointestinal/clinical-nutrition]], [[geriatrics-palliative/ageing-frailty]].**
+This chapter covers the stress response to surgery, preoperative assessment and optimisation, medicines and fasting, fluids, the operation itself, postoperative complications in the order in which they appear, and the safety systems and enhanced-recovery pathways that tie everything together. Throughout, the guidance followed is UK-first (NICE and the Centre for Perioperative Care, CPOC) as of 2026; local protocols always take precedence for individual patients.
+
+## The body's response to surgery
+
+When tissue is injured, the hypothalamus, the sympathetic nervous system and the immune system all respond. The response evolved to help an injured animal survive until it could heal: keep blood pressure up, retain salt and water, release fuel into the blood and fight infection. In a patient who is already being given fluids, nutrition and antibiotics, much of this response is no longer useful and some of it is harmful.
+
+::: definition The surgical stress response {#def-stress-response}
+The **surgical stress response** is the set of hormonal, metabolic and inflammatory changes that follow tissue injury. Its main features are:
+
+- **Hormonal:** a rise in cortisol, catecholamines, glucagon, antidiuretic hormone (ADH) and aldosterone, with relative resistance to insulin.
+- **Metabolic:** high blood glucose, breakdown of muscle protein and fat to provide fuel, and a negative nitrogen balance.
+- **Salt and water:** retention of sodium and water by the kidneys, so urine output falls in the first day or so even when fluid balance is adequate.
+- **Inflammatory:** release of cytokines (especially interleukin-6), causing fever, a raised white cell count and a rise in C-reactive protein (CRP) that peaks around the second or third day.
+
+The size of the response is roughly proportional to the size of the injury: larger for open than for laparoscopic surgery, larger for long than for short operations.
 :::
 
-## During and after
+Two consequences follow. A low urine output and a mild fever on the first postoperative day are often part of the normal response, so they are judged against the whole picture. And many modern measures, such as minimally invasive surgery, regional anaesthesia, short fasts and early feeding, work partly by reducing this response. The physiology behind the hormonal changes is covered in [[physiology/hormones]] and [[physiology/integrative-physiology]].
 
-::: definition Intraoperative physiology and postoperative care {#def-intraop}
-**The theatre is a fluid-and-temperature-and-airbody: the anaesthetic pharmacology sits in the anaesthesia chapter, while perioperative medicine owns the physiology - the fluid-stewardship revolution (the preloading-against-vasodilation-versus-goal-directed-therapy-with-dynamic-indices-and-oesophageal-flow-data debate, the salt-and-water-load ileus-and-wound-oedema-and-pulmonary-complication evidence that killed the '3 litres of saline for everyone' era, the balanced-crystalloid-versus-saline-chloride-load data, the colloid-trial-nulls, the restrictive-transfusion-trials and their haemoglobin-thresholds with the cardiac-and-anaemia-caveats, and the potassia-and-natremia-of-the-IV-fluids-postoperative-ward-syndrome) - [[renal/water-sodium]], [[blood/transfusion]], [[surgery/anaesthesia-pain]]; the thermoregulation programme (the inadvertent-perioperative-hypothermia harms - surgical-site-infection-and-coagulopathy-and-cardiac-events-and-length-of-stay - and the warming-and-fluid-warming-and-humidification-bundle with its cost-effectiveness as public health in miniature), the positioning-and-pressure-and-nerve-injury prevention (the padding-and-eye-tape-and-golfer's-paralysis-of-the-arm-board lessons and the lithotomy-positions the surgeons blame the anaesthetists for until the checklist owns them), and the antibiotic-prophylaxis arithmetic (the within-60-minutes-and-redose-by-half-life-and-surgery-duration timing, the agent-matched-to-flora rules by clean-contaminated-and-vascular-and-implant surgery, the stop-within-24-hours anti-escalation rule, the MRSA-screen-and-decolonisation programmes and their contested edges, and the wrong-antibiotic-and-no-anaesthetic-timeout near-misses fed back as routine); the postoperative clocks that structure ward-rounds - the immediate hours (the airway-and-bleeding-and-emergence-delirium surveillance and the HDU-criteria), the day-1-3 window (the atelectasis-and-pneumonia-and-VTE clocks and the mobilisation-and-thromboprophylaxis-and-incentive-spirometry-and-chewing-gum-for-ileus bundle evidence, the fluid-and-sodium-shifts-diuresis-transition, and the 'wind-water-walk-wind' teaching kept as a mnemonic not a truth since every component has its own timing), the day-3-7 window (the anastomotic-leak-and-collection-and-C.difficile-and-line-and-urinary-infection fevers with the leak-physiology - the tachycardia-and-urine-output-and-CRP-trajectory-early-warning-score era), and the late hazards (the venous-thromboembolism-beyond-discharge prophylaxis-duration data in cancer-and-orthopaedic surgery, the incisional-hernia-and-adhesive-obstruction-years-later, and the postoperative-cognitive-dysfunction-in-the-old with its anaesthetic-agent debates read honestly against the pain-and-delirium-and-sleep-deprivation confounds) - [[surgery/wounds-surgical-infection]], [[respiratory/mechanics-breathing]], [[geriatrics-palliative/delirium-dementia-care]]; and the discharge-and-beyond - the enhanced-recovery-endpoints (the drain-and-catheter-early-removal, the feeding-on-demand and the opioid-sparing-multimodal-analgesia covered in the pain chapter, the physiological-and-nutritional criteria-for-discharge checklists versus the calendar-based tradition, the readmission-and-complication safety-netting with named contact routes and the CT-and-portal-vein-thrombosis-and-leak presentations patients must be warned about in writing, and the 30-day-and-90-day-outcome reporting that made surgical-quality a public number) - [[surgery/acute-abdomen]], [[clinical-skills/records-handover]], [[public-health/health-systems-economics]].**
+## Assessing risk before surgery
+
+The risk of an operation depends on three things: the patient, the operation and the urgency. A healthy 30-year-old having a hernia repair is at very low risk. An 85-year-old with heart failure having an emergency laparotomy for a perforated bowel is at very high risk. Most patients fall somewhere in between, and the job of preoperative assessment is to place them accurately.
+
+::: theorem Surgical risk has three components {#thm-risk}
+The risk of death or major complication after surgery rises with (1) the **patient's physiological reserve** (age, frailty, heart and lung disease, kidney function, nutrition), (2) the **magnitude of the operation** (duration, blood loss, body cavity opened, organs removed) and (3) the **urgency** (an emergency operation on an unprepared, often septic or dehydrated patient carries several times the risk of the same operation done electively). The three multiply rather than add: a frail patient tolerates a minor elective procedure well but may not survive a major emergency one.
 :::
 
-## The system around the patient
-
-::: definition Surgical safety systems {#def-safety-systems}
-**Checklists converted craft into culture: the WHO surgical-safety-checklist lineage (the 2009 Johns-Hopkins-to-NEJM-eight-point study and the subsequent implementation-science literature showing that the effect lives in the speaking-up-climate and the team-briefing, not the paper), the wrong-site-surgery-and-retained-foreign-objects apparatus (the site-marking-while-awake-when-possible and the imaging-in-theatre-and-count-reconciliation rules), the never-events-and-HRCT-and-duty-of-candour-culture (the harm-from-positioning-and-pressure-ulcers-and-VTE-and-falls-within-a-24-hour-window-as-system-metrics), the mortality-and-morbidity-and-PIPOL-adjacent review traditions and their psychological-safety-dependency (data on blame-culture suppressing the reporting that makes reviews useful); the human-factors layer - the fatigue-and-bleb-and-interruption-and-gravity-of-illness-hierarchy research that explains most 'human error' as system-design, the briefing-and-handover-standards (the ISBAR-for-surgical-handover and the ICU-to-ward and theatre-to-anaesthetic-room-swap structures), the escalation-and-stop-the-line norms rehearsed before they are needed by a junior at 2am, and the check-that-the-surgeon-is-the-surgeon-and-the-consent-is-for-this-procedure boring heroism; the quality-metrics era - the hospital-standardised-mortality-and-reading-rates, the procedure-volume-outcome relationships that drove centralisation (the cancer-and-AAA-and-oesophageal-and-bariatric evidence), the patient-reported-outcome-measures converting survival into function, the get-home-postoperative-recovery-plans-and-social-prescribing, the post-anaesthesia-follow-up-clinics-for-high-risk-and-day-2-review-telephone-calls, and the honest limits (metric-gaming, the complications-too-complex-for-coding, and the equity blind-spot where readmission penalties without social support just move harm to the disadvantaged) - [[clinical-skills/patient-safety]], [[clinical-skills/records-handover]], [[medical-ethics-law/professionalism-regulation]]; and the medico-legal spine - the consent as a discussion not a signature (the Montgomery-era materiality-of-risks standard replaced the doctor-knows-best test, the operation-and-risk-and-alternative-and-do-nothing conversations documented in the patient's own terms, the capacity-and-advance-decision adjacency, the inherent-risk-versus-negligence distinction the public finds counter-intuitive and courts rehearse annually, and the duty-of-candour after harm that turns apology from admission into obligation), the incident-reporting-to-learning-loop (the DATIX-adjacent and SEIPS-and-Safety-II perspective - studying what goes right, the just-culture-vs-blame-vs-avoidable-avoidable-harm debates settled toward systems analysis with individual-accountability-for-recklessness preserved) - [[medical-ethics-law/consent-capacity]], [[medical-ethics-law/professionalism-regulation]].**
+::: proof
+Surgery imposes a period of increased oxygen demand: the stress response raises metabolic rate, and the tissues must heal. A patient with good cardiac and respiratory reserve meets that demand by increasing cardiac output and ventilation. A patient with poor reserve cannot, so tissues become relatively hypoxic, and organs that were just coping (a failing heart, kidneys with reduced function, a brain vulnerable to delirium) decompensate. A larger operation increases the demand; an emergency operation adds sepsis, dehydration and electrolyte disturbance, and removes the time needed to correct them. Hence the risk is determined by the gap between demand and reserve, and both sides of that gap matter.
 :::
 
-::: example The 78-year-old's hip {#ex-hip-prehab}
-A 78-year-old on frusemide, an ACE inhibitor, aspirin and sertraline falls and fractures her neck of femur; she lives alone on the third floor; cognitive screening is 'a bit quick'; surgery is 'tomorrow if beds'.
+### The preoperative assessment
+
+::: definition Preoperative assessment and optimisation {#def-preassessment}
+**Preoperative assessment** is a structured review, usually in a nurse-led or anaesthetist-led clinic weeks before elective surgery, with four aims:
+
+1. **Identify risk:** history, examination and targeted tests to find conditions that increase risk.
+2. **Optimise:** treat what can be improved in the time available, such as anaemia, poor diabetes control, smoking, malnutrition or uncontrolled blood pressure.
+3. **Plan:** decide on the anaesthetic technique, the level of postoperative care (ward, enhanced care unit or intensive care), medicine changes and discharge needs.
+4. **Inform:** give the patient the information needed for a shared decision, and prepare them for what will happen.
+:::
+
+The **history** is the most useful tool. The key questions are about heart and lung disease, previous anaesthetics and any problems with them, family history of anaesthetic problems (such as malignant hyperthermia or prolonged paralysis after suxamethonium), bleeding tendency, medicines and allergies, alcohol and smoking, and **functional capacity**. Functional capacity is often estimated by asking whether the patient can climb two flights of stairs or walk briskly uphill without stopping, which corresponds to about four metabolic equivalents (METs). A doctor's informal impression of this is imprecise; structured questionnaires such as the Duke Activity Status Index do better, and for major surgery some centres use **cardiopulmonary exercise testing (CPET)**, in which a low anaerobic threshold identifies patients with limited reserve.
+
+Scoring systems summarise risk. The ASA grade describes general fitness; the Revised Cardiac Risk Index (Lee) counts six predictors of cardiac complications (high-risk surgery, ischaemic heart disease, heart failure, cerebrovascular disease, insulin-treated diabetes and creatinine above 177 µmol/L, 2.0 mg/dL); the Clinical Frailty Scale grades frailty; and calculators such as the NELA tool estimate mortality after emergency laparotomy.
+
+::: definition ASA physical status classification {#def-asa}
+The **American Society of Anesthesiologists (ASA) physical status classification** grades a patient's overall fitness:
+
+- **ASA 1** — a normal healthy patient.
+- **ASA 2** — mild systemic disease (for example well-controlled hypertension, a current smoker, pregnancy).
+- **ASA 3** — severe systemic disease (for example poorly controlled diabetes, COPD, morbid obesity, a stable patient on dialysis).
+- **ASA 4** — severe systemic disease that is a constant threat to life (for example recent myocardial infarction, severe heart failure).
+- **ASA 5** — a moribund patient not expected to survive without the operation.
+- **ASA 6** — a brain-dead patient whose organs are being removed for donation.
+
+The suffix **E** marks an emergency operation (for example ASA 3E).
+:::
+
+**Tests** are chosen because the result could change management. NICE guideline NG45 (routine preoperative tests for elective surgery) links them to the ASA grade and the size of the operation: a fit young adult having minor surgery usually needs none, while a patient with cardiovascular disease having major surgery needs a full blood count, kidney function and an ECG. HbA1c is checked in people with diabetes, and pregnancy testing is offered to women who could be pregnant. Unnecessary tests delay surgery and create false positives.
+
+### Optimisation
+
+The weeks before elective surgery are an opportunity. **Prehabilitation** means improving fitness before the operation through exercise, nutrition and psychological preparation. Specific targets include:
+
+- **Anaemia**, usually from iron deficiency, which increases transfusion and complications; it is treated with iron, often intravenously if surgery is within a few weeks.
+- **Diabetes.** UK guidance (CPOC) advises referring a person whose HbA1c is above 69 mmol/mol (8.5%) for optimisation before elective surgery where it is safe to wait.
+- **Smoking and alcohol.** Stopping smoking reduces wound and chest complications at any point, more so the earlier it happens; heavy drinking is identified so that withdrawal can be anticipated.
+- **Nutrition and frailty.** Malnourished patients (identified with a tool such as MUST) benefit from nutritional support, and frail older patients from comprehensive geriatric assessment.
+
+### Consent
+
+Consent for surgery is a process of discussion, not a signature. In the UK, the Supreme Court's 2015 judgment in *Montgomery v Lanarkshire Health Board* established that doctors must take reasonable care to ensure that a patient is aware of any **material risk**: a risk that a reasonable person in the patient's position would consider significant, or that the doctor knows or should know this particular patient would consider significant. The discussion covers the diagnosis, the operation, its benefits and risks, the alternatives including doing nothing, and what recovery will involve. Capacity, consent and the legal framework are covered in [[medical-ethics-law/consent-capacity]].
+
+::: example A patient who should wait {#ex-defer-optimise}
+A 62-year-old woman is booked for elective laparoscopic cholecystectomy for recurrent biliary colic. At preoperative assessment she has a BMI of 42, smokes 25 cigarettes a day, has type 2 diabetes with an HbA1c of 74 mmol/mol, and mentions new chest tightness when she walks uphill. Should the operation go ahead next week?
 ::: solution
-**Hip-fracture-orthogeriatrics ([[#def-preassessment]], [[#def-intraop]], [[geriatrics-palliative/falls]]): the clock and the team - the operate-within-36-hours-and-sooner-if-medically-fit evidence for mortality-and-complications with the concurrent medical-optimisation-not-serial-clearance model (the anaesthetist-and-orthogeriatrician-and-surgeon joint assessment within hours, the 'faster-and-safer-together-not-slower-and-safer-apart' principle), the delirium-prevention-from-minute-one (the glasses-and-hearing-aids-and-orientation-and-sleep-and-daytime-lighting-and-hydration-and-bowel-and-bladder protocols, the opioid-sparing-regional-anaesthesia-adjacency and the nerve-block-offer, the family present at induction where she wants it) - [[surgery/orthopaedics]], [[geriatrics-palliative/delirium-dementia-care]]; the medication-day arithmetic (the ACE-inhibitor-withheld-and-frusemide-hold-versus-continue-by-volume-status decision documented, the aspirin-continued-for-primary-prevention-not-necessary question weighed against bleeding and the cardiac-stent-history-that-must-be-asked, the SSRI-hyponatraemia-and-bleeding-adjacency and the serotonergic-drug-continuation, the steroid-card-and-PPI-and-metformin-and-SGLT2-and-DOAC-adjacent-rules she fortunately does not have, and the anticoagulant-reversal-pathway-that-she-would-have-needed-learned-in-10-minutes), the physiology-save-the-muscle plan (the pre-and-postoperative-carbohydrate-and-protein-and-oral-supplement-protocol, the early-mobilisation-physio-with-weight-bearing-as-allowed, the VTE-prophylaxis-duration-per-orthopaedic-guidance and the mechanical-adjuncts-while-anticoagulation-interrupted, the blood-management-cell-saver-and-tranexamic-acid-and-threshold-transfusion-per-trial-evidence) - [[blood/transfusion]], [[gastrointestinal/clinical-nutrition]]; the discharge-that-starts-today - the orthogeriatric-three-day-pathway (the bone-health calcium-vitamin-D and anti-resorptive where indicated with the fracture-liaison-service referral and the falls-risk-review and home-hazard programme, the occupational-therapy-and-social-services-and-rehabilitation-or-adapted-home reality - the third-floor-without-lift problem is the readmission determinant, more than the nail), and the medication-reconciliation-and-cognitive-and-mood-follow-up and the 'who-to-call' card signed in her own handwriting; and the governance this case audits itself - the door-to-theatre-and-door-to-clinic times and the 30-day-mortality-and-31-day-readmission and the patient-pathway-dignity measures (the National-Fracture-Flowsheet-and-Frake-flowsheet-adjacent) reported to the board, because hip fractures are where health-and-social-care-and-housing meet with the most public mortality) - [[musculoskeletal/fractures]], [[clinical-skills/records-handover]].**
+**Step 1: weigh the urgency.** Recurrent biliary colic is painful and disruptive, but it is not usually dangerous in the short term. There is time to prepare her, provided she knows what symptoms (fever, jaundice, persistent pain) should bring her back urgently.
+
+**Step 2: find the most dangerous problem.** New exertional chest tightness may be angina. That is a bigger threat to her life than the gallstones, and it needs assessment by her GP or a cardiologist before any elective operation. If she were to need a coronary stent, the antiplatelet treatment that follows would itself affect the timing of surgery.
+
+**Step 3: optimise what can be improved.** Her HbA1c is above 69 mmol/mol, so she should be referred to improve her diabetes control. She should be offered smoking cessation support. Her weight increases anaesthetic and wound risk; a modest reduction helps, but surgery would not usually be delayed for weight loss alone.
+
+**Step 4: agree the plan with her.** Explain that postponement is part of her treatment, set a review date with specific goals (cardiac assessment completed, HbA1c falling, smoking reduced or stopped), and give written advice on when to seek urgent help. If she develops acute cholecystitis in the meantime, she would be managed on the emergency pathway with the information already gathered.
 :::
 :::
 
-::: example The elective that should wait {#ex-defer-optimise}
-A 62-year-old with BMI 42, HbA1c 74, 25-cigarettes-a-day and new exertional chest pain is booked for laparoscopic cholecystectomy 'because she keeps attending A&E with biliary pain'.
-::: solution
-**Elective-versus-urgent-versus-optimise-first ([[#def-preassessment]]): triage the indication honestly - recurrent biliary colic attending A&E is a quality-of-life and readmission problem but not a perforation-risk race, whereas the exertional chest pain is the more dangerous appointment of the two, so the cardiology workup comes first (the preoperative-ischaemia-evaluation-by-functional-capacity-and-risk-score and the 'do not stent-then-rush-surgery-onto-dual-antiplatelet-trap' sequencing with the bleeding-versus-thrombosis-timetable and the 'the cardiac risk is the operative risk' principle), the diabetes-optimisation decision (the 74-mmol HbA1c and the elective-surgery-postponement thresholds and the wound-infection-and-delay arguments, the 4-12-week-glycaemic-improvement programmes with the GLP-1-era-medicine timing conversations and the inpatient-insulin-protocol-if-emergency), and the smoking-and-CPAP-and-weight layer (the 4-8-week-smoking-cessation-nicotine-replacement-and-varenicline-programme with its measured pulmonary-complication reduction, the OSA-screen-and-post-op-monitoring-level decision and the opioid-sensitivity planning, the GLP1-agonist-gastric-emptying-and-aspiration-risk-and-withholding-guidance-by-agent-half-life with the honest evidence-grading) - [[cardiovascular/coronary-artery-disease]], [[endocrine/diabetes]], [[respiratory/mechanics-breathing]]; the optimisation-window plan written as a pathway not a list - the prehabilitation-referral-and-nutrition-and-an-iron-and-vitamin-D-and-B12-check, the biliary-diet-and-urgent-return-criteria-and-interventional-radiology-gallbladder-drainage-bridge-for-the-patient-who-cannot-wait-and-should-not-need, and the plan-to-rebook-at-week-8-with-the-objectives-measured (HbA1c-trajectory-and-quit-date-and-CPAP-adherence-and-chest-pain-status); the shared decision - the 'waiting is treatment' argument made explicitly (the 6-12-week-risk-reduction quantified against the pain-burden and the A&E-cycle, the cholecystectomy-now-versus-after-prehab outcomes compared with real numbers), the documented-consent-discussion-about-deferral-itself and the safety-netting letter (the cholecystitis-and-cholangitis-and-jaundice-and-fever-and-radiating-pain-and-vomiting red flags written in plain words), and the emergency-pathway contingency (if she re-presents acutely, the surgery-with-the-optimised-where-possible plan, the antibiotic-and-ERCP-adjacency for the cholangitis and the higher-risk-anaesthetic-conversation already had so it is not first raised at 2am); and the system point - the 'easy day lists keep becoming optimisation clinics' culture-shift, the waiting-list-pressure argument resisted with outcome data (the 'safe surgery, on time, after preparation' triple-aim framing), and the measurement of whether deferrals actually deliver (the % achieving targets before rebooking - because a deferral without a programme is just a delay) - [[clinical-skills/communication]], [[clinical-skills/patient-safety]].**
-:::
-:::
+## Medicines and fasting
 
-::: example The hypothermia that was 'fine' {#ex-warmth}
-A 90-minute open case ends with a shivering, confused patient: core temperature 35.1C, oozing from the wound, bleeding time prolonged, antibiotics given at induction 100 minutes ago, no history of concern noted on handover.
-::: solution
-**The avoidable-quartet case ([[#def-intraop]], [[#def-safety-systems]], [[surgery/wounds-surgical-infection]]): each finding is iatrophysiology - the hypothermia (the vasoconductive-shivering-oxygen-demand-and-coagulopathy-by-platelet-dysfunction-and-drug-metabolism-slowing-and-wound-infection-via-tissue-oxygen-and-neutricular-function data, the 'below 36 is a patient-safety incident' standard, the pre-warming bundle that prevents it at trivial cost), the oozing (the temperature-dependent-coagulation-cascade truth before any FFP-thinking, the re-warm-then-reassess rule and the tranexamic-adjacency-booked-early), the antibiotic timing (the redose-by-half-life-and-blood-loss rule violated silently, the cefazolin-two-hour-and-long-case-re-dose audit-item with the anaesthetic-record-as-evidence), and the handover gap (the 'no concerns' that omitted the temperature trajectory and the blood-loss running total - the standardized handover content that makes omission visible); the immediate management (the active-rewarming-with-endpoint-to-36-and-monitoring-for-afterdrop-and-vasodilation-hypotension, the glucose-and-potassium-watch-rewarming-shifts, the wound-recheck-for-surgical-bleeding-versus-ooze-decision, the analgesia-redosed-for-shivering-and-vigilance-for-sedation-stacking-as-metabolism-recovers, and the delirium-risk-acknowledged-in-the-old-with-the-temperature-corrected-before-any-'confusion-is-baseline'-note); the systems repair - the normothermia-bundle-compliance-reporting (the pre-warming-scores-and-intraop-temperature-minimums-audited-monthly with the 'cold OR is an ancient superstition about bacterial growth that the evidence reversed' teaching-point for the staff-who-like-it-chilly), the temperature-in-the-HV-and-PACU-and-ward-observation-sets-with-alarm-parameters and the 'under-36-triggers-a-plan' order-set, the antibiotic-timing-prompts-in-the-anaesthetic-machine-and-the-redose-alarm, and the SBAR-with-minimum-data-elements-handover-checklist (the loss-and-temperature-and-antibiotic-time-and-lines-and-blocks-and-awake-status numbers every handover contains because the human brain drops the fourth thing it is told under interruption); and the metric - the trust-level normothermia rate as the public quality indicator it should be, since it integrates anaesthetic, nursing, engineering and pharmacy performance in one honest number - [[clinical-skills/patient-safety]], [[immunology/innate-immunity]].**
-:::
-:::
+Most regular medicines are continued around surgery. A few must be stopped, adjusted or replaced, and a few are dangerous to stop. The decision depends on the drug, the operation and the patient, and it should be written down clearly at preoperative assessment.
 
-::: example The day-surgery candidate {#ex-daycase}
-A 44-year-old inguinal hernia with BMI 38, OSA on CPAP 'sometimes', 15 units alcohol weekly, no support at home, works gig-economy shifts; the list wants him as 'routine day case'.
-::: solution
-**Day-case-suitability-is-a-social-plus-medical-judgement ([[#def-preassessment]], [[#def-intraop]], [[surgery/anaesthesia-pain]]): the medical screening - the OSA-and-opioid-interaction plan (the STOP-BANG-and-severity-and-CPAP-adherence conversation, the 'bring and use the machine perioperatively' instruction with the theatre-adjacency-protocol for post-obstruction-risk, the multimodal-opioid-sparing-regional-TAP-block-and-regular-paracetamol-NSAID-where-renal-permitting-regimen-with-the-weak-opioid-as-rescue-not-routine-with-the-max-dose-written-down, and the overnight-monitoring-level-decision or overnight-stay-as-the-honest-answer), the alcohol-history-as-withdrawal-and-anaesthetic-requirement-and-liver-and-coagulation-adjacency (the AUDIT-C-scored, the '48-72 hour delirium-tremens-window-if-heavy-and-stopped' risk-explained and the chlordiazepoxide-protocol-and-thiamine-before-carbohydrate plan if dependent-pattern, and the day-case-unsuitability-if-withdrawal-risk rule), and the BMI-and-regional-and-airway-and-VTE-plan (the difficult-airway-trolley-awareness and the positioning-pressure-injury-check and the thromboprophylaxis-calculated-and-mechanical-adjuncts-and-early-mobilisation); the social reality - the 'no support at home' line is a formal criterion-failure for day surgery (the 24-hour-responsible-adult-and-transport-and-phone-and-stairs-and-comprehension requirements, the honest options - an overnight-bed with the friend-and-family promise re-negotiated, the community-and-volunteer-and-neighbour-network explored, the 'defer until a support exists' option that costs him a list-slot and a fortnight, weighed against a preventable-home-disaster), the work-and-income-conversation (the 'four weeks no lifting means four weeks no shifts' reality driving concealed-noncompliance-and-early-recurrence, the occupational-health-and-employer-letter-and-self-employed-sickness-benefit-deserts addressed with the sick-note-and-physio-and-return-to-work-plan early), and the alcohol-and-support-and-transport-and-phone-and-consent-form-checks made before-the-day-not-on-it (the 'screen once, phone the week before' pre-assessment-clinic design that prevents the 8am-cancellation whose harms are patient-trust and list-efficiency); and the system lesson - the day-case-criteria-as-public-explanation (the 'this protects you' framing beats 'beds are for emergencies'), the the patient-reported-experience-and-30-day-harm-audits-by-social-risk-category, and the gig-economy-equity-lens on every 'routine' pathway, because day-surgery thresholds silently select for patients with holidays and husbands and spare rooms - [[psychiatry/substance-use]], [[public-health/determinants-inequalities]].**
-:::
-:::
+| Drug group | Usual approach (follow local guidance) | Reason |
+|---|---|---|
+| Warfarin | Stop about 5 days before; check INR; bridging with heparin only for high thrombotic risk (for example some mechanical heart valves) | Bleeding risk |
+| Direct oral anticoagulants | Stop 1–3 days or more before, depending on the drug, kidney function and bleeding risk of the operation | Bleeding risk; short half-lives make bridging unnecessary |
+| Antiplatelets | Aspirin often continued; clopidogrel and similar drugs usually stopped about 7 days before, except after recent coronary stents, when a cardiologist must be involved | Balance of bleeding against stent thrombosis |
+| ACE inhibitors and angiotensin receptor blockers | Often withheld on the morning of surgery | Can cause hypotension under anaesthesia |
+| Beta-blockers and statins | Continue | Stopping causes rebound tachycardia and cardiac events |
+| SGLT2 inhibitors (for example dapagliflozin) | Omit the day before and the day of surgery (UK multisociety guidance, 2025) | Risk of euglycaemic diabetic ketoacidosis |
+| GLP-1 receptor agonists | Usually continued, with assessment and techniques to reduce aspiration risk (UK multisociety guidance, 2025) | Slowed gastric emptying |
+| Metformin | Usually continued unless more than one meal will be missed or contrast or kidney injury is expected | Small risk of lactic acidosis |
+| Insulin | Dose adjusted, not stopped; a variable-rate insulin infusion if a long fast is expected | Hypoglycaemia and ketoacidosis |
+| Long-term corticosteroids | Continue, with extra steroid cover during surgery | Risk of adrenal crisis |
+| Combined oral contraceptive and HRT | Consider stopping 4 weeks before major surgery, or give VTE prophylaxis | Venous thromboembolism |
+
+**Fasting** before anaesthesia reduces the risk of **pulmonary aspiration**: stomach contents passing into the lungs when protective airway reflexes are lost. The traditional "nothing by mouth from midnight" leaves patients thirsty, dehydrated and insulin resistant without making them safer. Current UK and European guidance for elective adult surgery is:
+
+- **solids** (including milk and food) up to **6 hours** before anaesthesia;
+- **clear fluids** (water, clear squash, black tea or coffee) up to **2 hours** before, and many units now encourage small sips of water until the patient is sent for;
+- **carbohydrate drinks** in the hours before surgery in many enhanced-recovery pathways (with caution in diabetes).
+
+Children are generally allowed clear fluids until 1 hour before anaesthesia. Patients with delayed gastric emptying (bowel obstruction, diabetic gastroparesis, late pregnancy, recent opioids, recent trauma) remain at risk however long they fast, and the anaesthetist plans for that with a rapid sequence induction ([[surgery/anaesthesia-pain]]).
 
 ::: quiz
-Current enhanced-recovery and aspiration-risk evidence supports which fasting approach for an unpremedicated adult without gastroparesis or obstruction?
-- [x] Solids for about 6 hours, clear fluids up to about 2 hours before anaesthesia, with carbohydrate loading where the pathway uses it
-- [ ] Nothing by mouth from midnight
-- [ ] Clear fluids until 6 hours, solids until 12 hours
-- [ ] Sips of water allowed at any time including immediately pre-induction
+An adult without delayed gastric emptying is due for elective surgery at 14:00. Which instruction fits current fasting guidance?
+- [ ] Nothing to eat or drink after midnight
+- [x] Light breakfast before 08:00, then clear fluids until 12:00
+- [ ] Clear fluids until 08:00, then nothing
+- [ ] Food and drink at any time until called to theatre
 ::: solution
-**Prolonged starvation increases insulin resistance, thirst and discomfort without reducing aspiration of acid contents; clear fluids to ~2 hours are safe and beneficial, carbohydrate drinks are used in many ERAS programmes - with exceptions for delayed gastric emptying, obstruction, reflux and pregnancy ([[#def-preassessment]], [[surgery/anaesthesia-pain]]).**
+Solids are allowed until 6 hours before anaesthesia (08:00) and clear fluids until 2 hours before (12:00). Fasting from midnight adds dehydration, thirst and insulin resistance without reducing aspiration risk. Food right up to theatre would leave solid food in the stomach.
 :::
+:::
+
+## Fluids
+
+During and after surgery, many patients cannot drink normally, and the prescription of intravenous fluid becomes a doctor's job. Too little fluid causes hypovolaemia, low blood pressure and kidney injury. Too much causes oedema of the tissues and bowel, slower return of gut function, impaired wound healing and breathing problems. NICE guideline CG174 (intravenous fluid therapy in adults in hospital) frames every prescription around the **5 Rs**: resuscitation, routine maintenance, replacement, redistribution and reassessment.
+
+::: definition Routine maintenance fluid requirements {#def-fluids}
+For an adult who needs intravenous fluid only for routine maintenance, NICE recommends initially prescribing per 24 hours:
+
+- **water:** 25–30 mL/kg/day;
+- **potassium, sodium and chloride:** about 1 mmol/kg/day of each;
+- **glucose:** 50–100 g/day, to limit starvation ketosis (this does not meet nutritional needs).
+
+Lower volumes (for example 20–25 mL/kg/day) are considered for patients who are older or frail, have kidney or heart failure, or are malnourished. **Replacement** of ongoing losses (vomiting, nasogastric drainage, stoma output, drain losses, fever) is prescribed separately, matched to the volume and composition of what is being lost.
+:::
+
+::: example A maintenance fluid prescription {#ex-fluid-calc}
+A 70 kg man is nil by mouth on the first day after an open bowel resection. He is not losing fluid by any other route and has normal kidney and heart function. What does he need over 24 hours for routine maintenance?
+::: solution
+**Water:** $25$ to $30\ \text{mL/kg/day} \times 70\ \text{kg} = 1750$ to $2100$ mL.
+
+**Potassium:** $1\ \text{mmol/kg/day} \times 70\ \text{kg} \approx 70$ mmol; sodium and chloride also about 70 mmol each.
+
+**Glucose:** 50–100 g.
+
+One way to meet this is about 2 litres of 0.18% sodium chloride with 4% glucose, with potassium added according to his measured serum potassium. This contains roughly 60 mmol of sodium and 80 g of glucose. The exact product depends on the local formulary.
+
+**Reassess** daily: weight, fluid balance, clinical examination and serum electrolytes. Hypotonic fluids can cause **hyponatraemia**, especially because ADH secretion is high after surgery (see [[#def-stress-response]]). If he starts vomiting or his nasogastric tube drains large volumes, those losses are replaced in addition, usually with a sodium-containing fluid such as Hartmann's solution or 0.9% sodium chloride with potassium.
+:::
+:::
+
+Resuscitation fluid for a hypovolaemic patient is different: a bolus of 500 mL of a balanced crystalloid over less than 15 minutes, followed by reassessment, as described in [[emergency-critical-care/shock-fluids]]. Urine output is one guide; a commonly used target is at least **0.5 mL/kg/h**, and an output below this for 6 hours meets the urine-output criterion for KDIGO stage 1 acute kidney injury ([[renal/acute-kidney-injury]]).
+
+## In theatre
+
+Anaesthesia itself is the subject of [[surgery/anaesthesia-pain]]. Here we focus on the parts of intraoperative care that prevent postoperative complications.
+
+::: definition Core elements of safe intraoperative care {#def-intraop}
+- **Antibiotic prophylaxis** where indicated, given intravenously before the incision (usually within the 60 minutes before; some guidance allows up to 120 minutes) so that tissue levels are high when bacteria enter the wound, and repeated if the operation is long or blood loss is large ([[surgery/wounds-surgical-infection]]).
+- **Normothermia:** keeping core temperature at or above 36.0 °C. NICE (CG65) defines **inadvertent perioperative hypothermia** as a core temperature below 36.0 °C and recommends active warming for operations longer than 30 minutes or for patients at high risk.
+- **Careful positioning and padding** to prevent nerve injuries, pressure injuries and eye damage.
+- **Goal-appropriate fluid and blood management**, avoiding both under- and over-filling, and using restrictive transfusion thresholds where appropriate ([[blood/transfusion]]).
+- **Venous thromboembolism prevention**, including mechanical methods during the operation.
+- **The WHO Surgical Safety Checklist** at three moments: before induction (sign in), before incision (time out) and before the patient leaves theatre (sign out).
+:::
+
+Hypothermia deserves particular attention because it is common, cheap to prevent and harmful. Anaesthesia abolishes shivering and causes vasodilatation, so heat moves from the core to the periphery and core temperature falls by 1–1.5 °C in the first hour. Mild hypothermia impairs clotting (more bleeding), reduces oxygen delivery to the wound (more infection), slows drug metabolism and causes shivering on waking, which raises oxygen consumption.
+
+::: example A cold patient in recovery {#ex-warmth}
+After a 2-hour open operation, a 71-year-old man arrives in the recovery room shivering and confused. His core temperature is 35.1 °C and the wound is oozing. The cefazolin prophylaxis was given at induction 130 minutes ago and has not been repeated. The handover from theatre said "no concerns". What has gone wrong, and what should be done?
+::: solution
+**Interpretation.** He has inadvertent perioperative hypothermia (below 36.0 °C). Hypothermia probably contributes to all three of the other findings: oozing (cold impairs clotting), confusion (slowed drug metabolism, plus his age) and shivering (which increases oxygen demand).
+
+**Immediate management.** Actively rewarm him with a forced-air warming blanket and warmed fluids, give oxygen while he is shivering, and monitor his heart rhythm and blood pressure (vasodilatation during rewarming can lower blood pressure). Treat pain. Check the wound to distinguish a general ooze, which should settle as he warms, from a surgical bleeding point that needs attention. Check blood glucose and electrolytes. Reassess his confusion once he is warm; delirium is common in older patients but should not be assumed.
+
+**Antibiotics.** Cefazolin is usually redosed after about 4 hours or after major blood loss; the timing should be checked against local policy and documented.
+
+**System lessons.** Warming should have started before induction and continued throughout. Temperature should be part of the standard handover, because "no concerns" hid a measurable problem. This is the kind of event an audit of perioperative normothermia should capture.
+:::
+:::
+
+## After the operation: complications by time
+
+Postoperative complications tend to appear at characteristic times. Knowing the usual timing helps a doctor think of the likely causes when a patient becomes unwell, but it must never stop the doctor from considering the dangerous ones.
+
+::: theorem Postoperative complications follow a clock {#thm-clock}
+Each common complication has a typical window:
+
+- **Hours (day 0):** bleeding, airway obstruction, respiratory depression from opioids, hypotension, nausea and vomiting, urinary retention.
+- **Days 1–3:** atelectasis, early pneumonia, fluid and electrolyte problems, acute kidney injury, delirium, and the normal inflammatory fever of the stress response.
+- **Days 3–7:** pneumonia, urinary tract infection, infection of intravenous lines, **anastomotic leak** and intra-abdominal collections, surgical-site infection, ileus.
+- **From day 5 and for weeks:** deep vein thrombosis and pulmonary embolism, *Clostridioides difficile* infection, deep wound infection.
+- **Months to years:** incisional hernia, adhesional bowel obstruction, chronic pain.
+:::
+
+::: proof
+The clock reflects the underlying biology. Bleeding and the effects of anaesthetic drugs happen while those drugs and the fresh wound are active. Atelectasis develops within hours because general anaesthesia, lying flat, pain and opioids all reduce lung volume. Infections need time for bacteria to multiply and for the host response to become detectable, so they declare themselves after about 3 days. An intestinal anastomosis is at its weakest around days 3–5, when collagen in the wound is being broken down faster than new collagen is laid down ([[surgery/wounds-surgical-infection]]), so leaks typically appear then. Venous thrombosis develops over days of immobility and the hypercoagulable state of the stress response, and the risk persists for weeks after discharge.
 :::
 
 ::: widget plot
-f: 100*exp(-x/0.6); 88*exp(-x/6)+8; 75*exp(-x/2.5)+6; 82*exp(-x/30)+10; 70*exp(-x/400)
-x: 0.01, 400
-y: 0, 100
-labels: \text{days after surgery},\ relative complication rate\text{bleeding \& airway (hours)};\ \text{atelectasis \& pneumonia};\ \text{VTE window (with tail)};\ \text{anastomotic leak \& sepsis};\ \text{adhesions \& hernia (months-years)}
-caption: Postoperative complications run on clocks ([[#def-intraop]]): each hazard has its characteristic window, which is why ward-rounds, observation frequencies, prophylaxis durations and discharge warnings are written against time, not against calendar dates.
+f: 100*exp(-x/0.4); 100*(x/2)*exp(1-x/2); 100*(x/5)^3*exp(3-3*x/5); 60*(1-exp(-x/4))*exp(-x/40)
+x: 0, 30
+y: 0, 105
+labels: \text{bleeding, airway}; \text{atelectasis, early pneumonia}; \text{anastomotic leak, collections}; \text{venous thromboembolism}
+caption: A schematic of when common postoperative complications tend to appear (relative likelihood against days after surgery, not real data). Hover over the curves to compare peaks: early bleeding and airway problems, chest complications over the first few days, anastomotic leak around days 3–7, and a long tail of venous thromboembolism risk that continues after discharge.
+:::
+
+### Postoperative fever
+
+A **fever** (temperature at or above 38.0 °C) is common after surgery. In the first 48 hours it is usually caused by the inflammatory response to tissue injury. Later, or if the patient looks unwell, it needs a careful search for a cause: examine the chest, the wound, the cannula sites, the calves and the abdomen; check urine, blood cultures, inflammatory markers and a chest X-ray as indicated; and ask whether an anastomosis or a collection could be the source. Drug reactions and transfusion reactions are less common causes.
+
+::: warning
+**"It's just atelectasis" is not a diagnosis to settle for.** The old teaching that early postoperative fever means atelectasis is poorly supported by evidence, and anchoring on it delays the diagnosis of serious problems. A patient after bowel surgery with fever, a rising heart rate, falling urine output and increasing abdominal pain on day 4 has an anastomotic leak until proven otherwise. The trend of the observations, especially a persistent tachycardia, matters more than the day number. Escalate early and consider CT.
+:::
+
+### Other common problems
+
+- **Postoperative nausea and vomiting** affects about a third of patients without prophylaxis; risk factors and treatment are in [[surgery/anaesthesia-pain]].
+- **Urinary retention** is common after spinal anaesthesia, pelvic and groin surgery, and with opioids; it presents as lower abdominal discomfort and low urine output and is confirmed with a bladder scan.
+- **Ileus**, a temporary loss of coordinated bowel movement, causes distension, vomiting and absent flatus; opioids, fluid overload and low potassium or magnesium prolong it.
+- **Acute kidney injury** after surgery is usually caused by hypovolaemia, hypotension, sepsis or nephrotoxic drugs (NSAIDs, ACE inhibitors, contrast). Withholding nephrotoxic drugs and restoring perfusion are the first steps ([[renal/acute-kidney-injury]]).
+- **Delirium** is an acute disturbance of attention and cognition. It is common in older patients after major or emergency surgery and is associated with higher mortality; prevention is described in the hip fracture example below ([[geriatrics-palliative/delirium-dementia-care]]).
+
+### Venous thromboembolism prophylaxis
+
+Surgical patients have all three elements of Virchow's triad: stasis from immobility, endothelial injury from the operation, and hypercoagulability from the stress response ([[blood/thrombosis-anticoagulation]]). NICE guideline NG89 recommends assessing every patient's risk of VTE and of bleeding on admission and reviewing it as their condition changes. Prophylaxis combines early mobilisation, mechanical methods (anti-embolism stockings or intermittent pneumatic compression, where not contraindicated) and pharmacological methods (usually low-molecular-weight heparin). Pharmacological prophylaxis is extended for about 28 days after major abdominal or pelvic cancer surgery and for several weeks after hip and knee replacement, according to the regimen chosen.
+
+::: example Hip fracture in an older woman {#ex-hip-prehab}
+A 78-year-old woman falls at home and fractures her neck of femur. She takes furosemide, ramipril, aspirin and sertraline, lives alone in a third-floor flat without a lift, and on admission scores below the normal range on a cognitive screen. How should her perioperative care be organised?
+::: solution
+**Timing.** NICE guideline CG124 recommends surgery on the day of, or the day after, admission. Delay increases pain, delirium, pressure injuries, pneumonia and mortality. Medical problems are optimised in parallel by the orthogeriatric, anaesthetic and surgical teams, not one after another.
+
+**Medicines.** Ramipril is usually withheld on the morning of surgery. Furosemide is held or continued according to her volume status. Aspirin does not usually delay hip fracture surgery. Sertraline is continued, but her sodium should be checked because SSRIs can cause hyponatraemia.
+
+**Delirium prevention.** Her low cognitive score means she is at high risk. Measures include orientation, her glasses and hearing aids, adequate pain relief (a fascia iliaca or femoral nerve block reduces opioid needs), hydration, bowel care and early mobilisation.
+
+**After surgery.** She should be mobilised with physiotherapy by the day after surgery, receive VTE prophylaxis, and have a review of bone health and falls risk.
+
+**Discharge.** Her flat without a lift is a major problem, so occupational therapy and social care planning start on admission.
+:::
+:::
+
+## Enhanced recovery and safety systems
+
+**Enhanced recovery after surgery (ERAS)** is a set of evidence-based measures, applied together across the whole pathway, that reduce the stress response and speed recovery. The idea was developed by the Danish surgeon Henrik Kehlet in the 1990s, who argued that much postoperative morbidity came from unnecessary practices rather than the operation itself.
+
+::: definition Enhanced recovery pathway {#def-eras}
+An **enhanced recovery pathway** combines:
+
+- **before surgery:** information and expectation setting, prehabilitation, avoidance of prolonged fasting, carbohydrate loading where appropriate, no routine bowel preparation for many operations;
+- **during surgery:** minimally invasive techniques where possible, short-acting anaesthetic drugs, regional anaesthesia, balanced fluid therapy, normothermia, avoidance of routine drains and nasogastric tubes;
+- **after surgery:** opioid-sparing multimodal analgesia, prevention of nausea and vomiting, early oral intake, early mobilisation, early removal of urinary catheters and lines, and clear discharge criteria.
+
+No single element is responsible for the benefit; the effect comes from the combination, and from auditing compliance with it.
+:::
+
+::: definition Surgical safety systems {#def-safety-systems}
+**Surgical safety systems** are the routines that make errors less likely to reach the patient. They include the **WHO Surgical Safety Checklist**; in England, the **National Safety Standards for Invasive Procedures (NatSSIPs)**, which set out how the checklist, site marking, swab and instrument counts and team briefings should work; structured **handover** (for example SBAR: situation, background, assessment, recommendation); **morbidity and mortality meetings**; national audits such as the National Emergency Laparotomy Audit and the National Hip Fracture Database; and the professional and legal **duty of candour**, which requires openness with patients when something has gone wrong.
+:::
+
+The checklist works because it creates moments when the whole team stops and speaks: confirming the patient, the operation and the side, allergies, antibiotics, expected blood loss and airway concerns. It also gives the most junior member of the team permission to raise a concern. Read out mechanically while people carry on working, it adds little.
+
+::: history
+Modern perioperative care grew from three changes. In the 1840s anaesthesia made long operations possible; in the 1860s Joseph Lister's antiseptic method, based on Louis Pasteur's germ theory, made them survivable. The third change came much later, when doctors began measuring what happened to patients after surgery. In 1997 Henrik Kehlet set out a "multimodal" approach to postoperative recovery that became the enhanced-recovery movement. In 2008 the World Health Organization launched its Surgical Safety Checklist, and in 2009 Alex Haynes, Atul Gawande and colleagues reported in the *New England Journal of Medicine* that, across eight hospitals in eight countries, introducing the checklist was followed by a fall in inpatient deaths from 1.5% to 0.8% and in major complications from 11.0% to 7.0%. Most countries now use it routinely.
 :::
 
 ## Where this leads
 
-The anaesthetic and analgesic pharmacology in [[surgery/anaesthesia-pain]], the complication syndromes in [[surgery/wounds-surgical-infection]] and [[surgery/acute-abdomen]], the organ-specific pathways in [[gastrointestinal/clinical-nutrition]] and [[cardiovascular/vascular-disease]], and the ethics of consent and candour in [[medical-ethics-law/consent-capacity]].
-
-::: history
-**Preoperative medicine is older than anaesthesia - the trephine-and-cautery-era survival statistics were physiological-selection statistics (the Hippocratic fitness-for-wounding observations and the battlefield triage tradition), but the modern field begins with the anaesthetic-era realisation that patients die on tables: the 1846-47 ether and chloroform demonstrations, John Snow's obstetric chloroform deaths analysis at Guy's that founded the study of anaesthetic mortality, and the early fatality inquiries that made physiological preparation a phrase; the antiseptic-and-aseptic revolution (Semmelweis's maternity-ward arithmetic, Lister's 1867 carbolic programme built on Pasteur, the surgical-infection-rate falls and the discovery-trials-before-trials era), and the blood-transfusion line (the 1901 Landsteiner ABO groups, the 1914 citrate-preservation breakthrough and the First World War blood banks and Second World War dried-plasma era that made shock a treatable physiology), the war-surgery-born perioperative physiology - the Cannon-era shock studies and their wound-toxin hypotheses' long debunking afterlife, the wartime plasma-and-morphine-syringe kits, and the postwar intensive-care-ification of high-risk surgery - the monitoring-and-fluid-resuscitation era and the pulmonary-artery-catheter trials whose non-benefit shaped today's dynamic-indices fashion; the21st-century bundles - the 2001 To Err Is Human harm reckoning, the 2008 WHO checklist era, the Kehlet-origin enhanced-recovery programmes with their physiology-trumps-ritual evidence base - early feeding, drains out, opioids down - and the fail-campaign era, the Mid-Staffordshire public inquiry's dignity-and-numbers-and-culture reckoning and the duty-of-candour legislation that followed, the national surgical audits on emergency laparotomy, hip fracture and upper-GI cancer whose outlier reports changed practice, and today's prehabilitation and pre-assessment movement with its risk-calculators and geriatric 4Ms frames and the persistent truth that the best perioperative technology remains the nurse, physiotherapist, surgeon and anaesthetist who read the clocks) - [[clinical-skills/patient-safety]], [[immunology/innate-immunity]].**
-:::
+Anaesthesia and pain relief are covered in [[surgery/anaesthesia-pain]], wound healing and surgical-site infection in [[surgery/wounds-surgical-infection]], and the emergency surgical patient in [[surgery/trauma]] and [[surgery/acute-abdomen]]. For the medical background, see [[emergency-critical-care/shock-fluids]], [[blood/transfusion]], [[geriatrics-palliative/ageing-frailty]] and [[clinical-skills/patient-safety]].
 
 ::: summary
-- Pre-assessment is risk-finding, risk-modifying and plan-making; tests follow history, and optimisation windows buy measurable safety.
-- Fasting guidance is physiology, not ritual: clear fluids to two hours, carbohydrate loading where the pathway uses it, exceptions for the slow stomach.
-- Intraoperative stewardship - fluids, warmth, antibiotics, positioning, transfusion thresholds - is where thousands of small harms are prevented.
-- Postoperative medicine runs on clocks: airway and bleed first hours, pneumonia and VTE days, leak and collection days 3-7, hernia and adhesions years.
-- Safety systems (checklists, handovers, candour, audit) work through culture and speaking-up, not paper.
-- Enhanced recovery is a bundle with components; deferral for optimisation is treatment when it is a programme, delay when it is not.
-:::
-
-::: exercise Write the fluid plan {level=1}
-Day 1 after open right hemicolectomy, NG tube to low intermittent suction, urine 0.3 mL/kg/h, Na 132, K 3.4, creatinine 110 from 78: prescribe the next 24 hours and the reasoning.
-::: solution
-**Postop-fluids-day-1 ([[#def-intraop]], [[renal/water-sodium]]): the read - 0.3 mL/kg/h-with-creatinine-bump-is-hypovolaemia-until-proven-otherwise on day 1 with third-spacing-and-NG-losses-and-insensible-losses-and-fever-and-early-sepsis-differential, the hyponatraemia-with-low-ish-potassium-the-classical-5-percent-dextrose-and-half-normal-salt-mistake-waiting-to-happen (the ADH-driven-water-retention-plus-sodium-free-fluid-hypnatraemia-harm-evidence-and-the-children-at-greatest-harm data), and the NG-losses-replacement-logic (the sodium-and-chloride-rich-solution-with-potassium-supplement-as-the-physiologic-match and the metabolic-alkalosis-and-hypokalaemia-pattern-confirmed-by-blood-gas-adjacency); the prescription - isotonic-sodium-containing-fluid-with-20-40-mmol-K-per-litre-and-glucose-as-prevention-of-ketosis-at-roughly-maintenance-plus-replacement-against-outputs-reassessed-q6h-not-fixed, the fluid-balance-chart-and-daily-weights-and-urine-output-not-targeted-to-a-magic-number-in-isolation, the review-triggers-written-in-the-notes (the output-not-rising-at-4-hours-or-lactate-or-tachycardia-or-CRP-trajectory triggers that escalate to a leak-and-sepsis-search not more-bags), and the stop-rules (the 'when drinking, stop the drip' and the de-escalation that prevents the day-4-dilutional-hyponatraemia-and-ileus-and-pulmonary-oedema-fluid-creep); the monitoring - the U&E-and-glucose-twice-daily-and-the-potassium-while-NG-and-the-magnesium-adjacency-and-the-sodium-trend-rate-of-correction-restraint-chronic-hyponatraemia-rules-if-125-lower, the ECG-if-potassium-moves-and-the-digoxin-and-QT-drug-list-check; and the honest caveats - the 'do not fluid-load a leak to fix oliguria' trap (the early-senior-review-and-CT-not-the-tenth-litre principle), the cardiac-and-renal-history-adjacency-that-changes-everything-and-was-in-the-notes, and the escalation-appropriate-fluid-therapy-as-drug-therapy-documented-as-such - [[renal/acute-kidney-injury]], [[gastrointestinal/bowel-disease]].**
-:::
-:::
-
-::: exercise Explain the risk {level=1}
-Using a risk calculator that gives 4 percent 30-day major morbidity for your patient's colectomy, hold the consent conversation in one paragraph: what you would and would not say, in Montgomery terms.
-::: solution
-**Montgomery-consent-conversation ([[#def-safety-systems]], [[medical-ethics-law/consent-capacity]]): the materiality-standard in practice - the 4-percent-major-morbidity translated to what matters to her (the stoma-probability-temporary-or-permanent, the-wound-infection-and-bleeding-and-clot-numbers, the 'one in twenty-five may need another operation', the anastomotic-leak-and-its-ICU-and-stoma-and-death-arithmetic stated without hedging or euphemism because she will meet these numbers again in the complications ward), the reasonable-person-and-this-person tests combined (the 'most patients in your situation would want to know' baseline plus her own values - the daughter's-wedding-and-the-church-and-the-driving-and-the-incontinence-she-fears-more-than-death documented as her material risks, since Montgomery's revolution is that her priorities define what must be disclosed), the alternatives including do-nothing-and-medical-management-and-stent-as-bridge-and-palliation-honestly-presented-with-their-comparable-numbers (the cancer-staging-and-prognosis-without-surgery given, not skipped), and the questions-answered-and-questions-invited (the 'what are you most worried about' opener, the teach-back-'tell me how you'd explain this to your husband' and the written-summary-and-named-contact-and-cooling-off-days-offered-not-rushed); the not-said list - no 'it's a routine operation' (routine is not a risk category), no 'you'll be fine' (a promise the 4-percent forbids), no jargon-as-shield (anastomosis explained as joins), and no consent-for-another-procedure-adjacency (the 'if we find something else' boundary discussed explicitly including the intraoperative-decisions-delegated-and-limits), plus the documentation - the discussion-in-her-words, the-risks-quantified-and-alternatives-given-and-questions-recorded, the-mental-capacity-and-support-person-noted, the-anaesthetic-plan-consented-separately-and-the-blood-and-transfusion-and-block-preferences-captured, and the signed-form-as-receipt-not-the-event (because the signature proves nothing; the conversation is the consent) - [[clinical-skills/communication]], [[gastrointestinal/gi-bleeding-cancer]].**
-:::
-:::
-
-::: exercise Chase the potassium {level=2}
-Post-bowel-resection patient on IV dextrose 4 hours: K falls 4.1 to 3.0, ECG shows new U waves; she is on digoxin for AF. Manage and explain the mechanism twice over - dilutional and total-body.
-::: solution
-**The-dextrose-dump ([[#def-intraop]], [[renal/potassium-calcium-phosphate]], [[cardiovascular/arrhythmias]]): the mechanism - insulin-release-driven-intracellular-potassium-shift-from-the-glucose-load-compounded-by-dilution-in-a-euvolaemic-patient-and-by-any-total-body-depletion-from-NG-and-diarrhoea-and-diuretics-where-serum-K-understates-deficit (the 'U-waves-and-flattened-T-and-long-QT-read-as-hypokalaemia-not-ischaemia-unless-otherwise' ECG-reading and the digoxin-toxicity-potentiating-relationship that makes this patient the worst possible recipient - the hypokalaia-increases-digoxin-binding-and-arrhythmia-risk-with-even-mild-falls), the immediate management - stop-the-dextrose (the-obvious-in-hindsight), IV-potassium-with-monitoring-and-rate-and-concentration-rules-peripheral-versus-central-and-the-alarm-limits-and-the-10-mmol-over-1-hour-not-faster-not-quietly, magnesium-checked-and-repleted-because-potassium-won't-stick-without-it (the renal-wasting-magnesemia-hypokalaemia-refractoriness-lesson), the-ECG-continuous-telemetry-and-digoxin-level-and-hold-or-dose-adjust-decision-and-AF-rate-control-alternative-plan, the-K-and-magnesium-rechecked-hourly-until-out-of-the-window, and the-cause-hunt-completed (the-GI-losses-quantified-and-the-insulin-and-nebulisers-and-beta-agonists-and-the-licorice-and-diuretic-recent-history-and-alkalosis-and-bicarb-adjacency); the prevention rewritten - the 'postoperative fluids are potassium-containing-and-glucose-is-not-maintenance' ward-policy-and-order-sets-with-the-children-protected-first and the drug-interaction-alert-for-digoxin-patients-in-hypokalaemia-ranges, the nursing-and-JR education-teaching-point-in-the-Simulation-and-GMC-curriculum era, the ECG-interpretation-drill-on-U-waves-in-departmental-meetings, and the DATIX-adjacent near-miss narrative (the 'nobody was harmed, teach it' culture) that makes the next 4am-dextrose-order get questioned by the nurse before the computer does - [[clinical-skills/laboratory-tests]], [[clinical-skills/patient-safety]].**
-:::
-:::
-
-::: exercise Audit the enhanced-recovery programme {level=3}
-Your colorectal ERAS pathway reports 18 percent readmission and 'good compliance'. Design the audit that tests whether either number is real.
-::: solution
-**ERAS-audit-design ([[#def-intraop]], [[#def-safety-systems]], [[public-health/health-systems-economics]]): compliance-reliability - the 'good compliance' definition interrogated (the bundle-component-level-auditing-with-explicit-denominators and-time-windows-versus-all-or-none-generosity, the 'patient-ate-toast' versus 'protein-and-calorie-targets-achieved' granularity, the data-source-crossing from dietitian-records-to-prescribing-systems-to-nursing-flowsheets with the missing-data-often-worse-than-reported pattern and the chart-review-against-database-validation-sample, and the observer-effect-awareness with the concurrent-control-period-and-case-notes-blinded-sub-sample); the 18-percent-recontextualised - the-30-day-and-all-cause-versus-planned-versus-day-21-plus-and-the-denominator-inclusions-who-died-or-transferred-out-excluded-silently (the funnel-and-HI-PE-and-ICD-coded-and-named-patient-follow-up-methods-compared), the-risk-adjusted-and-frailty-and-stage-and-emergency-versus-elective-stratification (an unadjusted 18 across a unit doing emergency-and-cancer-and-robotic-cases is uninterpretable), the-external-benchmarks-with-methodology-caveats-and-the-national-audit-collaborative-comparison and the-31-versus-72-hour-and-NHS-ambiguity-documented; the harm-the-metrics-miss - the 'never-admitted-cancellations-and-obs-out-delays-and-referred-elsewhere-and-death-outside-trust-readmission-capture', the the PRO and 'at-home-recovery' experience instruments with their non-responder-bias, the-GP-record-linked-and-primary-care-attendant-complications-that-never-become-ED-readmissions, and the-inequity-stratification-by-deprivation-and-ethnicity-and-education-with-English-as-additional-language and the-literacy-adjusted-discharge-materials-reach; the causal-probing - the-readmission-reason-pareto (the-leak-and-collection-versus-dehydration-and-obstruction-versus-social-versus-unexplained-pattern), the-early-discharge-with-outreach-versus-overnight-stay-versus-length-of-stay-tradeoff-examined (the 'did the pathway move harm from length-of-stay into readmission' question every sceptic asks, answered with combined-endpoint-analysis), the-component-level-effect-review-versus-bundle-level-compliance (which element's non-compliance actually predicts readmission - often the mobilisation-and-epidural-versus-TAP-and-fluid-balance-elements with the strongest signal), and the-qualitative-patient-and-staff-interviews-embedded-in-the-audit (the 'nobody told me' stories that reveal the pathway-vs-paper-reality gap, the-discharge-confusion-that-becomes-a-999-call-at-midnight); and the governance - the-PDSA-cycles-attached-to-findings-with-owner-and-date-and-re-audit-cycle-published, the compliance-as-process-versus-outcome-hierarchy-clarity, the-annual-pathway-review-and-the-reading-to-the-board-and-to-the-public-in-plain-English, and the honest summary line the good units dare to print: readmission down only if complications down, or we have moved the harm not reduced it - [[clinical-skills/patient-safety]], [[medical-ethics-law/professionalism-regulation]].**
-:::
+- Surgery triggers a **stress response**: raised cortisol, catecholamines and ADH, insulin resistance, salt and water retention and inflammation. Some early postoperative changes (low urine output, mild fever, high CRP) are part of it.
+- Surgical risk depends on the **patient's reserve**, the **size of the operation** and its **urgency**, and these multiply.
+- Preoperative assessment identifies risk, **optimises** what can be improved (anaemia, diabetes, smoking, nutrition, frailty), plans care and supports a consent discussion based on **material risks**.
+- Most medicines continue; anticoagulants, antiplatelets, SGLT2 inhibitors, ACE inhibitors and diabetes treatments need specific plans. Steroids must not simply be stopped.
+- Fasting: **solids to 6 hours, clear fluids to 2 hours** before elective anaesthesia in adults.
+- Maintenance fluid in adults: about **25–30 mL/kg/day water, 1 mmol/kg/day of sodium, potassium and chloride, and 50–100 g/day glucose**, with losses replaced separately and frequent reassessment.
+- Prophylactic antibiotics before incision, **normothermia (≥ 36.0 °C)**, positioning and the **WHO checklist** prevent avoidable harm in theatre.
+- Complications follow a **clock**: bleeding and airway in hours, chest problems in days 1–3, leaks and infections in days 3–7, VTE for weeks. Trends in observations matter more than the day number.
+- Enhanced recovery combines many measures across the pathway; safety systems work through teamwork and speaking up.
 :::
 
 ## Exercises
 
-::: exercise Plan the medicines list {level=1}
-Morning-of decisions with reasons: metformin, SGLT2 inhibitor, ramipril, bisoprolol, warfarin for mechanical valve, aspirin for secondary prevention, sertraline, oral contraceptive, prednisolone 5mg.
+::: exercise Grading fitness {level=1}
+Assign an ASA grade to each patient: (a) a fit 25-year-old having a knee arthroscopy; (b) a 50-year-old with well-controlled hypertension; (c) a 68-year-old with COPD who becomes breathless after one flight of stairs; (d) a 75-year-old with severe heart failure who is breathless at rest, having an emergency laparotomy.
 ::: solution
-**Medication-morning-of ([[#def-preassessment]], [[pharmacology/patient-variation]]): metformin - held-day-of (the lactic-acidosis-in-hypoperfusion-and-contrast-context convention with post-op-restart-on-eating-and-normal-creatinine), SGLT2-inhibitor - held-3-4-days-per-guidance for the euglycaemic-ketoacidosis-fasting-risk with the sick-day-rules-kidney-stone-education-and-the-urgent-case-exception-protocol-with-insulin-and-ketone-cover, ramipril - commonly held-day-of for the general-anaesthesia-hypotension-with-refractory-vasoplegia-adjacency (the vasopressin-treatment-awareness and the heart-failure-reason-for-it weighed), bisoprolol - continued (the withdrawal-rebound-and-POISE-continuation evidence and the day-of-dose-with-sip), warfarin-mechanical-valve - stop-5-days-and-INR-check-and-bridging-with-LMWH-or-UFH-by-thrombotic-risk-and-procedure-bleeding-class with the same-day-INR-below-1.5-rule, the post-op-restart-that-evening-and-the-bridging-continuation-till-eating, aspirin-secondary-prevention - usually continued (the stent-and-cerebrovascular-and-peripheral-artery-indications and the mucosal-bleeding-trade discussed with the surgeon's procedure-specific tolerance), sertraline - continued (the discontinuation-syndrome avoidance and the hyponatraemia-and-platelet-adjacency monitored), OCP - the individual-VTE-risk decision (the high-risk-procedures-and-immobilisation-and-oestrogen-and-factor-V-Leiden-question and the progestogen-or-method-switch-4-weeks-before-if-risk-acceptable per guidance), prednisolone-5mg - the physiologic-dose question (the continuing-on-usual-dose-and-the-supplementation-by-surgery-magnitude with the adrenal-crisis-avoidance-and-the-steroid-card-and-stress-dose-protocol-and-the-1mg-cosyntropin-adjacency-in-the-recently-supplemented) - [[endocrine/adrenal]], [[blood/thrombosis-anticoagulation]], [[psychiatry/anxiety-disorders]].**
+(a) ASA 1: a normal healthy patient. (b) ASA 2: mild, well-controlled systemic disease. (c) ASA 3: severe systemic disease that limits activity but is not a constant threat to life. (d) ASA 4E: severe heart failure is a constant threat to life, and the operation is an emergency. The ASA grade describes the patient's fitness, not the risk of the particular operation, so it is always combined with the size and urgency of the surgery when estimating risk.
 :::
 :::
 
-::: exercise Read the fever clock {level=2}
-Day-2 fever 38.9 after laparotomy, tachycardia 112, oliguria, CRP rising from 80 to 240: which of the five W's is statistically likely and what does the actual physiology demand? Separate the mnemonic from the medicine.
+::: exercise Maintenance water {level=1 check="1500"}
+A 60 kg woman is nil by mouth after surgery and needs routine maintenance fluid only. Using 25 mL/kg/day, how many millilitres of water does she need in 24 hours?
+::: hint
+Multiply the rate per kilogram by her weight.
+:::
 ::: solution
-**Post-op-fever-day-2 ([[#def-intraop]], [[surgery/wounds-surgical-infection]]): the mnemonic's honest place (the wind-water-walk-wound-window teaching maps day-based probabilities - atelectasis-and-pneumonia-and-early-line-and-urine-common, but it also breeds complacency because anastomotic-leak-and-necrotising-infection-and-malignant-hyperthermia-and-thyroid-storm-do-not-respect-the-calendar), the physiology demanded over the heuristic (the NEWS2-and-early-warning-score response, the full-observation-set-and-lactate-and-abg-and-FBC-and-U&E-and-blood-cultures-and-CRP-trend and urinalysis-and-chest-inspection-and-wound-inspection-and-drain-character-and-lines-and-legs-and-calf-and-cortisol-and-glucose-adjacency sweep done systematically, the chest-x-ray-and-CT-abdomen-and-pelvis-with-oral-and-IV-contrast decision threshold low for a rising-CRP-oliguria-day-2 laparotomy - because leak presents as this, and 'too early for leak' was never true for the technical-failure endo-leak), the immediate management (the IV-fluids-and-oxygen-and-NPO-and-catheter-and-senior-surgical-and-anaesthetic-review-now, the anaerobic-cover-broadening-and-GI-and-interventional-radiology-and-return-to-theatre-conversation started not after the CT, the anastomosis-and-drain-and-distal-obstruction-and-technical-failure-and-hypoperfusion-leak-mechanisms classified in the notes for the MDT), and the day-2-specific mimics that keep trainees safe (the transfusion-reaction-and-malignant-hyperthermia-delayed-recurrence-and-adrenal-crisis-and-cytokine-release-syndrome-and-pulmonary-embolism-and-serotonin-and-neuroleptic-syndromes-with-the-drug-list-rechecked-and-the-rhabdomyolysis-CK-adjacency); and the learning point - mnemonics organise probabilities, physiology organises mortality: tachycardia-plus-oliguria-plus-rising-CRP-is-a-medical-emergency-until-proven-benign, whatever day it is - [[renal/acute-kidney-injury]], [[cardiovascular/arrhythmias]], [[emergency-critical-care/shock-fluids]].**
+$25\ \text{mL/kg/day} \times 60\ \text{kg} = 1500$ mL per 24 hours. At the upper end of the NICE range (30 mL/kg/day) it would be 1800 mL. She also needs about 60 mmol each of sodium, potassium and chloride, and 50–100 g of glucose. Her fluid balance and electrolytes should be reassessed daily.
 :::
 :::
 
-::: exercise Fix the discharge {level=2}
-A frail 84-year-old is 'medically fit for discharge' on day 6 post-colectomy: mobilising 20 metres with frame, eating loosely, social services 'assessment pending', district nurse allocated, GP letter unsent. What is wrong with this discharge and design the better one.
+::: exercise Urine output {level=1 check="160"}
+An 80 kg man is 4 hours out of theatre. What is the minimum total urine volume, in millilitres, that would meet a target of 0.5 mL/kg/h over those 4 hours?
 ::: solution
-**Discharge-engineering ([[#def-intraop]], [[#def-safety-systems]], [[clinical-skills/records-handover]]): what is wrong - 'fit for discharge' is a single-doctor judgement on a multi-system transition (the functional-and-social-and-nutritional-and-cognitive-and-medical-parallel-risks unassessed, the pending-assessment-and-allocated-nurse-are-not-done), the unsent-GP-letter-as-readmission-seed, the stoma-or-wound-and-obstruction-and-dehydration-and-fall-instructions-not-yet-tested-in-her-actual-home, and the 'we-are-full' pressure that makes March-a-mistake (the bed-versus-readmission-mortality arithmetic honest); the better one - the multiprofessional-discharge-conference-with-her-and-her-family-at-the-centre (the PT-and-OT-and-dietitian-and-nurse-and-surgical-and-GP-and-social-work-and-community-services-at-the-table, the goal-not-the-bed-date decision), the home-rehearsal (the physio-on-her-stairs-and-toilet-frame-and-ot-recommendations-ordered-not-suggested, the district-nurse-briefing-call-with-the-dressing-and-stoma-and-observation-competency-confirmed, the equipment-delivery-dated-not-referral-dated), the medication-reconciliation-done-by-pharmacist-with-her-own-pills-brought-in-and-the-laxatives-and-iron-and-anticoagulant-duration-and-analgesia-taper-plan-explained-back-in-her-words (the teach-back for the opioid-and-anticholinergic-and-constipation-and-ileus-risk-cycle she is uniquely prone to), and the written-safety-net-with-named-numbers (the obstruction-and-leak-and-bleeding-and-dehydration-warning-cards-and-the-direct-surgical-assessment-unit-open-door-promise, the stoma-and-wound-clinic-appointment-printed, the GP-letter-sent-day-of-with-the-phone-call-for-the-complex-patient), and the follow-up-that-exists (the day-2-telephone-check-and-the-community-nurse-day-1-and-the-nutrition-weigh-in-and-the-OT-home-safety-review-and-the-2-week-surgical-review-and-the-48-hour-escalation-route-and-the-carer-assessment-offer-her-family-may-refuse-today-but-will-need-November); and the audit - the 30-day-readmission-and-ED-and-death-by-discharge-month-with-the-case-notes-re-read (the failed-discharge-as-serious-incident-review-not-blame, the discharge-stewardship-programme's-checklist-completion-rates-reported-and-the-third-floor-lift-problem-escalated-to-the-Joint-Committee-because-psychiatric-social-and-surgical-medicine-share-the-staircase) - [[geriatrics-palliative/ageing-frailty]], [[public-health/determinants-inequalities]].**
+$0.5\ \text{mL/kg/h} \times 80\ \text{kg} = 40$ mL/h, and $40 \times 4 = 160$ mL. A lower output should prompt assessment: check the catheter is not blocked (or scan the bladder if he has no catheter), assess his fluid status and blood pressure, and review his drugs. Sustained output below 0.5 mL/kg/h for 6 hours meets the urine-output criterion for KDIGO stage 1 acute kidney injury, although some reduction in the first hours after surgery is part of the stress response.
 :::
 :::
 
-::: exercise Argue the centralisation {level=3}
-Your area proposes moving oesophagectomies and ruptured-AAA repairs to a single high-volume hub with satellite emergency access. Make and critique the case: evidence, access, equity, workforce and finance.
+::: exercise The morning of surgery {level=2}
+A 66-year-old man is having an elective hip replacement. His medicines are metformin, dapagliflozin, ramipril, bisoprolol, atorvastatin, apixaban for atrial fibrillation, and prednisolone 5 mg daily for polymyalgia rheumatica. For each drug, state the usual perioperative plan and the reason. (Assume local guidance agrees with the principles in this chapter.)
+::: hint
+Think about which drugs cause harm when continued (bleeding, hypotension, ketoacidosis) and which cause harm when stopped (rebound effects, adrenal crisis).
+:::
 ::: solution
-**Centralisation-argument ([[#def-safety-systems]], [[public-health/health-systems-economics]], [[public-health/determinants-inequalities]]): the evidence case - the volume-outcome-relationships for oesophagectomy-pancreatectomy-ruptured-AAA-and-complex-spine-with-the-NICand-national-audit-era-data, the 'the team-not-the-surgeon' rehearsal (the finding that outcomes track multidisciplinary repetition and institutional protocols more than individual knife-counts), the failure-to-rescue-construct explaining why low-volume units die from complications rather than develop them, and the centralisation-experiments (the NHS Vascular-Programmes-and-cardiac-network-era evaluations, the Dutch-and-Danish-regionalisation-outcome-studies) showing mortality reductions where implemented with transport-then-treat; the access-and-equity case against - the rural-and-coastal-and-island-and-night-time-transfer-mortality-arithmetic (the distance-for-ruptured-AAA-is-lethality-difference-versus-elective-cancer-benefit-asymmetry, the 'load the helicopter not the ambulance' economics and the weather-and-darkness-realism), the 'travel-to-care' family-abandonment-and-bed-for-a-carer-and-lost-workday-costs, the equity-gradient-who-travels-and-who-stays-with-grandmother (the deprivation-and-ethnicity-attainment-gaps-in-regionalised-systems with the monitoring duty), and the 'hub-in-the-suburbs-of-the-capital-is-still-a-hub-for-the-rich' geography critique; the workforce reality - the centralisation-as-retention-sword-both-ways (the concentration-of-interesting-work-and-on-call-intensity-spirals-into-burnout-and-locum-cycles, the 'one-surgeon-anaesthetic-rota' single-points-of-failure, the training-pipeline-protection-and-the-hub-without-a-spoke-dies argument), the financial accounting (the tariff-favours-high-volume-loop, the capital-for-the-hub-versus-primary-and-community-care-underinvesting-politics, the transfer-bills-not-counted-in-hospital-budgets-and-the-ambulance-service-externalities), and the hybrid design most evidence supports - the hub-for-procedure-and-spoke-for-stabilisation-and-rehabilitation-and-follow-up-and-satellite-clinics-and-tele-MDT-and-pre-hospital-triage-and-HEMS-and-the-network-transport-protocols-with-the-destination-decided-by-the-protocol-not-the-nearest-bed, the local-maintaining-services-with-the-audited-referral-criteria-and-the-annual-outcome-publication-and-the-satellite-endoscopy-and-physiotherapy-and-chemo-and-palliative-and-clinical-nurse-specialist-continuity-and-community; and the governance - the-public-consultation-with-real-data-and-patient-and-staff-voices-in-design-not-defence-and-the-equality-and-access-impact-assessment-and-the-workforce-impact-plan-and-the-review-clause-with-published-mortality-and-patient-reported-and-access-metrics and the honest public-summary of the central trade-off: fewer operations for the most complex patients done in the fewest places, which is safer-but-farther, and the system must pay for both halves of that sentence - [[surgery/gastrointestinal-surgery]], [[clinical-skills/patient-safety]].**
+- **Metformin:** usually continued if he will miss no more than one meal; withheld if a longer fast, contrast or kidney injury is expected.
+- **Dapagliflozin:** omitted the day before and the day of surgery, because SGLT2 inhibitors can cause euglycaemic ketoacidosis during fasting and surgical stress. It is restarted once he is eating and drinking normally.
+- **Ramipril:** often withheld on the morning of surgery to avoid hypotension under anaesthesia.
+- **Bisoprolol and atorvastatin:** continued; stopping a beta-blocker abruptly can cause rebound tachycardia and ischaemia.
+- **Apixaban:** stopped before surgery, typically 2 or more days for a major operation with normal kidney function, according to the local protocol. No heparin bridging is needed. It is restarted when the bleeding risk allows, and VTE prophylaxis is covered in the meantime.
+- **Prednisolone:** continued, with additional steroid cover around the operation, because long-term steroid use suppresses the adrenal glands and stopping risks an adrenal crisis.
+:::
+:::
+
+::: exercise Fever on day 5 {level=2}
+A 59-year-old woman is 5 days after an anterior resection for rectal cancer. She has a temperature of 38.4 °C, heart rate 118/min, blood pressure 104/62 mmHg, and urine output of 20 mL/h for the past 4 hours. She weighs 70 kg. Her abdomen is more tender than yesterday and her CRP has risen from 140 to 290 mg/L. List the differential diagnosis in order of priority and outline the immediate actions.
+::: solution
+**Most likely and most dangerous: anastomotic leak** with intra-abdominal sepsis. The timing (day 5), rising tachycardia, worsening abdominal tenderness, rising CRP and oliguria (20 mL/h is below 0.5 mL/kg/h = 35 mL/h for her weight) fit.
+
+**Other causes:** intra-abdominal collection without a leak, pneumonia, urinary tract infection, line infection, surgical-site infection, *C. difficile* infection (if she has diarrhoea) and pulmonary embolism (which can cause fever and tachycardia).
+
+**Immediate actions:** an A-to-E assessment; oxygen if needed; intravenous access, bloods (FBC, U&E, lactate, cultures) and a fluid bolus with reassessment; start broad-spectrum antibiotics according to local sepsis guidance; catheterise and monitor hourly urine output; inform the senior surgeon immediately; arrange urgent CT of the abdomen and pelvis. A confirmed leak may need radiological drainage or return to theatre. The key lesson is that the trend (worsening tachycardia and pain) is enough to act on; waiting for a "typical" picture costs time.
+:::
+:::
+
+::: exercise A safer discharge {level=2}
+An 84-year-old man is declared "medically fit for discharge" on day 6 after a colectomy. He walks 20 metres with a frame, is eating small amounts, his social care assessment is pending and no GP letter has been written. What is missing?
+::: solution
+Medical fitness alone does not make a discharge safe. He needs agreed discharge criteria (oral diet, pain controlled on oral analgesia, bowels working, mobile enough for his home), a therapy and social care assessment of how he will manage, reconciled medicines (including any VTE prophylaxis to continue), written warning signs and a contact number for him and his family, and a discharge summary sent to his GP on the day he leaves.
+:::
+:::
+
+::: exercise Interpreting the checklist study {level=3 check="round(1/(0.015-0.008))"}
+In the 2009 WHO Surgical Safety Checklist study, inpatient mortality fell from 1.5% to 0.8%. Assuming this difference were entirely due to the checklist, how many patients would need to have surgery with the checklist to prevent one death (the number needed to treat)? Round to the nearest whole number. Then give two reasons why the true effect may be different.
+::: hint
+The number needed to treat is $1/\text{absolute risk reduction}$, with the risks written as proportions.
+:::
+::: solution
+The absolute risk reduction is $0.015 - 0.008 = 0.007$. The number needed to treat is $1/0.007 \approx 142.9$, which rounds to **143**.
+
+Reasons for caution: (1) the study compared outcomes before and after introducing the checklist, without randomisation, so other changes over the same period, including staff knowing they were being studied (the Hawthorne effect), may explain part of the effect; (2) baseline mortality differed greatly between hospitals, so the effect in a hospital with already low mortality is likely to be smaller. The arithmetic of absolute and relative risk is explained in [[epidemiology-ebm/randomised-trials]].
+:::
+:::
+
+::: exercise Deciding on emergency surgery in a frail patient {level=3}
+An 88-year-old woman with moderate dementia, who lives in a care home and needs help with washing and dressing, is admitted with a perforated sigmoid diverticulum and generalised peritonitis. Her estimated mortality from emergency laparotomy is very high. Her daughter holds a lasting power of attorney for health and welfare. Discuss how the decision about surgery should be made.
+::: solution
+**Assess the risk honestly.** A validated tool such as the NELA risk calculator, with her frailty score, estimates mortality and likely function if she survives; survival may mean a long ICU stay, a stoma and loss of independence.
+
+**Find out what matters to her.** Assess her capacity for this decision; with moderate dementia she may lack it, but this must be assessed, and she should still be involved as far as possible. Her daughter, as attorney for health and welfare, can make the decision in her best interests if she lacks capacity. Any advance decision or previously expressed wishes are important.
+
+**Discuss all the options.** These are: emergency laparotomy (usually a Hartmann's procedure with a stoma), a less invasive approach in selected cases, or treatment focused on comfort. A decision not to operate is not a decision not to care: it means good symptom control and support, with palliative care involvement ([[geriatrics-palliative/end-of-life-care]]).
+
+**Act quickly.** Whatever the decision, peritonitis needs prompt antibiotics, fluids and analgesia, and if surgery is chosen, delay worsens the outcome. The discussion should involve a senior surgeon and anaesthetist and be clearly documented, including the reasons for the decision.
 :::
 :::

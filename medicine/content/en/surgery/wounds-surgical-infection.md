@@ -1,138 +1,304 @@
-Wound healing is biology you can help or hinder. **Surgical infection and wound management is the applied science of controllable variables: the flora and the dose, the suture and the dead space, the antibiotic timing and the organism's resistance profile, the dressing and the patient's nutrition and perfusion and glucose. Most surgical-site infections are not misfortune but arithmetic - organism dose times host defences times time - and nearly every term in that product can be modified.** Complications of healing - dehiscence, hernia, sinus, chronic wounds - are the same science observed at its failures.
+Every operation makes a wound, and every wound has to heal. Most surgical wounds heal quietly within a couple of weeks, but when healing fails or infection takes hold, the consequences range from a few extra dressings to a burst abdomen or a life-threatening soft-tissue infection. Surgical-site infection is one of the commonest healthcare-associated infections, and much of it is preventable.
 
-## The infection side
+This chapter covers how wounds heal and what slows them down, how wounds are closed, how surgical-site infection is prevented, recognised and treated, and the specific problems of abscesses, necrotising soft-tissue infection, wound dehiscence, incisional hernia, pressure ulcers and bites. Guidance followed is UK-first (NICE guidelines NG125 on surgical site infections, NG184 on bites, and the UK Health Security Agency's *Green Book* on tetanus) as of 2026. Antibiotic choices are described as principles; individual prescriptions follow local microbiology guidance.
 
-::: definition Surgical-site infection and antimicrobial strategy {#def-ssi}
-**Surgical-site infection is defined, graded and largely preventable: the definitions (the incisional-superficial-versus-deep-versus-organ-space grades with their surveillance criteria and their reporting-comparability purpose, the clean-clean-contaminated-contaminated-dirty wound classes and their baseline-risk ladder, and the 30-day-with-implant-90-day surveillance windows that make readmission audits honest), the pathogenesis arithmetic (the operative-field-inoculum-versus-host-defence threshold and the contaminated-versus-infected-tissue-load logic, the devitalised-tissue-and-dead-space-and-haematoma-and-foreign-material as the culture-media quartet, the biofilm-on-implants problem with its tolerance-versus-resistance distinction and its explant-or-suppress management reality), the flora by operation-type (skin-flora for incisional disease - staphylococcus-aureus-and-coagulase-negative-staphylococci, gut-and-perineal flora - gram-negatives-and-anaerobes-and-enterococci - after colorectal and perianal surgery with the MRSA-and-ESBL-and-CPE-and-VRE-carriage era complicating empiric choices and the stewardship-versus-cover tension argued per-unit with local-antibiograms), the prevention bundle where the evidence is cumulative and cheap (the chlorhexidine-alcohol skin-prep superiority over povidone-iodine for most incisions and the 'allow to dry' contact-time rule, the hair-clipping-not-shaving rule from the 1970s-and-still-broken, the antibiotic-prophylaxis-timing-within-60-minutes-and-redose-by-half-life-and-blood-loss and stop-within-24-hours and the agent-matched-to-flora rules and the SSI-reduction-programmes that used bundle-compliance dashboards to halve rates, the normothermia-and-oxygenation-and-perfusion targets from the anaesthesia chapter, the glycaemic-control-without-hypoglycaemia data even in non-diabetics, the negative-pressure-wound-therapy-and-triclosan-coated-sutures-and-gentle-tissue-handling-and-dead-space-obliteration and irrigate-versus-suction debates graded honestly as modest), and the treatment algorithm (the 'where there is pus let it out' primacy - the opening-and-drainage-and-exploration-for-dehiscence-and-necrosis-and-retained-material-and-sinus-tracking and the antibiotics-as-adjunct-not-substitute-for-drainage with the cellulitis-and-systemic-sepsis-and-implant-and-organ-space exceptions where they lead, the wound-swab-culture-versus-deep-tissue-culture-versus-blood-culture yield reality and the antibiotics-directed-by-sensitivity-and-source-control with the stewardship-review-day-and-oral-switch-and-stop-dates, the necrotising-soft-tissue-infection which is a different disease - the pain-out-of-proportion-and-systemic-toxicity-and-crepitus-or-rapid-progression-and-LRINEC-adjacency-score-with-the-CT-and-finger-test-under-anaesthesia and the 'do not wait for imaging to cut' rule with the hour-by-hour mortality data, the broad-spectrum-plus-clindamycin-toxin-suppression-and-IVIG-adjacency-debate and the second-look-laparotomy-and-planned-re-exploration discipline) - [[microbiology/antimicrobials]], [[infectious-diseases/healthcare-infections]], [[surgery/perioperative-care]].**
-:::
+## How wounds heal
 
-## The healing side
+::: definition The phases of wound healing {#def-healing}
+Wound healing proceeds through four overlapping phases:
 
-::: definition Wound healing and its failures {#def-healing}
-**Healing has phases, endpoints and sabotages: the physiology (haemostasis-inflammation-proliferation-remodelling with their timelines and their clinical correlates - the inflammatory-phase-redness-that-is-normal-versus-infection-on-day-4-5 discrimination and the proliferative-granulation-and-epithelialisation-versus-contraction-and-matrix-maturation whose collagen-remodelling runs for a year, which is why the 'healed' incision has 80-percent-not-100-percent tensile strength forever and why the 5-to-10-day-dehiscence-window-exists), primary-versus-secondary-versus-tertiary-intention practice (the delayed-primary-closure of contaminated wounds and the open-abdomen-and-negative-pressure-therapy-bridge and the healing-by-secondary-intention-for-perianal-sepsis where closing is the crime), the closure hardware and its evidence (the suture-material-debate-graded-braided-versus-monofilament-and-absorbable-timeline-and-tissue-glue-versus-strips-for-clean-closures-and-the-staple-versus-suture-SSI-and-cosmesis-comparisons and the subcuticular-versus-interrupted-versus-staple-and-the-skin-folds-and-tension-relaxing-incisions and the retention-sutures-for-high-tension-closures and the closure-of-fascia-with-small-bites-5mm-rule-that-actually-reduces-hernia - the evidence overturning surgical folklore), the supports and their real effect sizes (the abdominal-aortic-binder-not-for-hernia-prevention myth-busting, the smoking-cessation-with-nicotine-replacement-evidence-versus-cold-turkey-failure-rates and the 'cut to 0 or delay elective' honesty and the obesity-and-diabetes-and-steroids-and-chemotherapy-and-malnutrition-and-anaemia-and-hypoperfusion-and-radiotherapy-tissue-and-age effect-chains on each healing-phase and the perioperative-nutrition-and-iron-and-protein-and-vitamin-C-and-zinc-adjacency-with-the-scientific-evidence-not-the-wound-healing-supermarket), the failed-healing syndromes (the burst-abdomen-evisceration-with-its-pop-of-fascia-and-serosanguinous-discharge-signature with the immediate-sterile-dressing-and-emergency-return-to-theatre-do-not-push-it-back sequence, the incisional-hernia-with-its-year-by-year-percent-increase-after-laparotomy and its mesh-repair-principles-sublay-onlay-ipom-with-the-chronic-pain-and-recurrence-trade-offs and the loss-of-domain-and-component-separation-adjacency, the chronic-wound-triad of pressure-injury-diabetic-foot-ulcer-and-venous-leg-ulcer each with its own causal-pathy and its own cure - offloading-and-glycaemic-and-perfusion-correction-for-the-diabetic-foot-with-the-probe-to-bone-and-MRI-and-amputation-prevention programme and the compression-for-venous-disease-not-arterial-and-the-revascularise-first-then-debride logic and the pressure-redistribution-and-nutrition-and-moisture-balance for pressure ulcers with the staging-classification-and-prevention-is-easier-than-cure-truth), and the wound-clinic ecosystem (the debridement-modalities-surgical-sharp-autolytic-enzymatic-biological-with-their-evidence-ladder and the negative-pressure-therapy-graded-for-acute-versus-chronic-wounds and the skin-grafting-and-flaps-and-tissue-expansion-and-the-plastic-surgery-referral-thresholds and the amniotic-and-collagen-and-laser-and-electrical-stimulation-market where the systematic reviews prune hope, with the psychosocial-and-pain-and-odour-and-exudate-management that chronic-wound patients list above closure) - [[gastrointestinal/clinical-nutrition]], [[endocrine/diabetes-complications]], [[pathology/chronic-inflammation-repair]].**
-:::
-
-::: definition Bite, sting, burn and contamination {#def-zoonotic}
-**Mammalian-and-environmental wounds obey their own microbiology: the hand-bite-and-fight-club-clenched-fist-injury-over-the-MCP ('the tooth hit the metacarpal head and the joint capsule') with Eikenella-corrodens-and-mouth-anaerobes-and-staph-strep and the wash-out-in-the-operating-theatre-and-open-packing-and-tendon-joint-bone-exploration rule, the ampicillin-amoxicillin-clavulanate-adjacency-versus-penicillin-allergy-with-doxy-or-TMP-SMX-metronidazole-combinations and the MRSA-consideration, the cat-bite-pasteurella-quick-and-deep-and-the-immunosuppressed-and-asplenic-and-cirrhosis-sepsis-warnings and the human oral flora - the hand-bite and clenched-fist injury avoid-primary-closure rule, the tetanus status as a five-minute-history-question with the vaccine-versus-immunoglobulin-versus-both-by-wound-class-and-status algorithm and the wound-cleaning-not-the-antitoxin-primacy, the rabies-exposure-category-risk-assessment-and-the-wound-washing-for-15-minutes-with-soap-being-the-cheapest-effective-intervention-ever-and-the-post-exposure-vaccine-schedule-and-the-immunoglobulin-infiltration-and-the-travel-and-bat-and-imported-dog-history-and-UK-rabies-vigilance-adjacency, the burn-assessment-and-referral (the TBSA-by-rule-of-nines-and-palm and the thickness-superficial-partial-full-and-the-dermal-flow-adjacency and the 'burns-unit-referral-criteria - face-hands-feet-genitalia-circumferential-full-thickness-large-partial-suspected-chemical-inhalation-electrical-or-any-doubt and the children-weighted thresholds', the cooling-with-running-water-for-20-minutes-and-plastic-wrap-and-no-ice-and-no-creams-and-analgesia-inhalation-adjacency-with-nitrous-oxygen-ideal for pre-hospital and the tetanus-check, no prophylactic systemic antibiotics and the simple-chlorhexidine-and-modern-dressing era and the escharotomy-for-circumferential-burn-compartment and the inhalation-injury with singed nose-hair and stridor and early-intubation bias and the fluid-formula-Parkland-and-its-modifications-started-by-clock-not-by-arrivals-with-urine-output-endpoint-and-the-above-baseline-not-starvation caveat and the chemical and hydrofluoric-acid calcium-gluconate and urgent-decontamination rules and the electrical-burns-deep-surface-myonecrosis-and-rhabdomyolysis-and-cardiac-monitoring and the 'the wound looks small because the current entered and exited' rule and the non-accidental-burn-patterns-of-the-spared-feet-in-soak-burns and the safeguarding-referral that is a surgical duty - [[emergency-critical-care/poisoning]], [[paediatrics/safeguarding]], [[pathology/environmental-pathology]].**
+1. **Haemostasis** (minutes): blood vessels constrict, platelets aggregate and a fibrin clot forms. Platelets release growth factors such as platelet-derived growth factor (PDGF) and transforming growth factor beta (TGF-β), which start the next phase.
+2. **Inflammation** (about days 0–4): neutrophils arrive first and clear bacteria and debris; macrophages follow and become the main coordinators of repair, releasing growth factors.
+3. **Proliferation** (about days 3–21): fibroblasts lay down new collagen (initially type III), new capillaries grow (angiogenesis), forming red, granular **granulation tissue**, epithelial cells migrate across the surface, and myofibroblasts contract the wound.
+4. **Remodelling** (about 3 weeks to 1–2 years): collagen is reorganised and type III is replaced by stronger type I; the scar flattens and pales. Tensile strength rises to about 20% of normal at 3 weeks and never exceeds about 80% of unwounded skin.
 :::
 
-::: example The discharge on day 6 {#ex-pop}
-Day 6 after emergency laparotomy for perforated diverticulitis, wound closed primarily: brown-pink fluid soaks the dressing, patient 'just feels tired', Temp 37.8, Na 131, WCC 16, CRP still 240.
-::: solution
-**Fascial-dehiscence-presenting-as-discharge ([[#def-healing]], [[#def-ssi]], [[surgery/acute-abdomen]]): the sign recognised - serosanguinous 'salmon-coloured' discharge day 4-8 after laparotomy is fascia-until-proven-otherwise (the evisceration-herald-bleed and the 'cough-impaction-and-strain' context, the exam-with-abdomen-exposed-and-cough-test-and-digital-check-of-the-fascial-defect-with-consent-and-senior-present and the-not-a-swab-of-the-skin-train), and the immediate sequence (the sterile-saline-soaked-swabs-and-abdominal-binder-and-nil-by-mouth-and-analgesia-and-IV-access-and-the-do-not-attempt-to-reduce-at-the-bedside rule with theatre-now preparation and the surgeon-anaesthetist-physician-communication and the ICU-bed-request-if-septic), the source-thinking-in-parallel (the anastomotic-leak-and-intra-abdominal-collection-with-the-CT-with-oral-IV-contrast-if-stable-and-the-return-to-theatre-decision-drives-the-CT-timing and the lavage-versus-resection-versus-stoma-versus-oversew-versus-drain-decisions made by findings not by plan-A, and the open-abdomen-and-negative-pressure-and-planned-second-look-or-damage-control-adjacency if the abdomen is hostile), the sepsis-and-host-workup-feeding-management (the blood-cultures-and-lactate-and-urine-output-monitoring-and-antibiotics-broadened-per-local-gram-negative-anaerobe-and-candida-risks-for-perforation-and-the-wound-culture-with-stewardship-review and the glycaemic-and-nutrition-and-steroid-and-immunosuppression-and-smoking-adjacency that produced this wound and will produce the next), and the honest sequel-planning - the stoma-counselling-if-created-today-and-the-explains-hernia-almost-certain-and-repair-timing-and-the-wound-clinic-and-negative-pressure-and-graft-options-and-the-secondary-closure-versus-healing-open-with-delayed-reconstruction-strategy, plus the incident-review of the day-6-event (the closure-technique-bite-size-and-suture-choice-audited-and-the-emergency-laparotomy-bundle-compliance-and-the-SSI-surveillance-and-the-6-day-review-that-caught-it-before-the-bowel-came-out - which is the entire point of watching for this sign) - [[gastrointestinal/bowel-disease]], [[clinical-skills/patient-safety]].**
-:::
-:::
-
-::: example The diabetic foot that was 'just a callus' {#ex-foot}
-A 58-year-old with T2DM presents with a 'corn' under his first metatarsal head, malodour, probing to bone, fever, glucose 19, CRP 180; he has walked on it for six weeks because 'it didn't hurt'.
-::: solution
-**Neuropathic-foot-ulcer-with-osteomyelitis ([[#def-healing]], [[#def-ssi]], [[endocrine/diabetes-complications]]): the pathophys-visit (the sensory-neuropathy-removes-pain-the-signal-and-the-motor-neuropathy-creates-high-pressure-plantar-hotspots-and-autonomic-neuropathy-cracks-the-skin-and-the-peripheral-arterial-disease-may-superadd-and-the-'corn'-is-hyperkeratosis-over-an-ulcer-with-occult-deep-infection and the probe-to-bone-test's-positive-predictive-value-in-an-infected-ulcer and the ESR-and-X-ray-MRI-for-osteomyelitis-vs-superficial-infection and bone-biopsy-culture-is-the-gold-standard-not-swab-of-surface), the inpatient-first-hours (the sepsis-six-and-blood-cultures-and-broad-gram-positive-gram-negative-anaerobe-cover-adjusted-to-local-antibiogram-and-MRSA-risk-and-the-podiatric-and-orthopaedic-and-vascular-and-diabetic-medicine-joint-assessment-same-day and the-glycaemic-rescue-insulin-infusion-or-SLID-protocol-and-the-renal-and-ketone-checks), the-debridement-principle (the 'dead tissue is culture medium' rule - theatre-debridement-of-necrotic-bone-and-sinus-and-probeable-tracks-and-ostectomy-ray-resection-with-negative-margins-goals-not-clinic-curettage and the offloading-as-definitive-treatment - total-contact-cast-or-removable-cast-walker-and-the-foot-not-weight-bearing-and-the-insole-and-shoe-rebuild-for-the-recurrence-cycle because the ulcer that heals without biomechanical correction recurs within months at a rate the audits keep proving, and the perfusion-decision - pulses-then-ABPI-and-if-low-then-TOE-and-angiography-and-the-vascular-surgery-endovascular-versus-bypass-for-the-ischaemic-foot-with-the-revascularise-then-debride-versus-sepsis-first sequencing argued per-patient), and the lifetime-programme that prevents the amputation (the multidisciplinary-foot-service-with-named-keyworker-and-the-annual-foot-screen-and-the-50-percent-ultimate-amputation-figures-published-to-motivate and the shared-decision-making-about-limb-salvage-versus-amputation-with-rehabilitation-and-prosthetics-and-3D-printed-sockets-and-socket-fitting-and-rehabilitation-and-peer-support-and-prosthetic-limb-programmes and the quality-of-life-and-mortality-statements-made-honestly because five-year-mortality-post-major-amputation approaches that of many cancers - a fact that changes how hard we screen and follow), and the system - the feet-first-clinics-and-diabetic-nurse-specialist-foot-check-KPI and the footwear-prescribing-scheme and the charcot-neuroarthropathy-recognition ('the swollen hot foot that is not cellulitis - do not antibiotics it, cast it'), and the safeguarding-and-self-neglect-adjacency-with-capacity-and-refusal decisions documented - [[cardiovascular/vascular-disease]], [[musculoskeletal/back-pain]].**
-:::
-:::
-::: example The glove that broke twice {#ex-glove}
-Twelve hours after a ring-finger flexor sheath washout for a cat bite, the surgeon operates again on a thumb-tip laceration using the same gloved hands under a second glove; by day 3 the patient's fingertip is throbbing and the surgeon has a spreading hand swelling of her own.
-::: solution
-**Double-glove-and-herpetic-lessons ([[#def-zoonotic]], [[#def-ssi]], [[infectious-diseases/healthcare-infections]]): two hazards in one story - the surgeon's own skin-flora hand infection from a glove breach during a contaminated case (the double-glove-surgical-hand-hygiene-and-glove-change-between-clean-and-dirty-steps and the 'glove-infection-paradox' of moist occlusion plus tiny trauma plus staph-and-candida plus the herpetic whitlow and the HSV-vesicle-versus-bacterial-paronychia-versus-felon-versus-thenar-space distinctions and the 'do not incise a whitlow' rule that protects both the patient's nerve and the diagnosis), and the patient's thumb-tip anatomy (the closed pulp-space compartments turning a laceration into a septa-locked infection - the 'unilateral versus pulpal versus mid-tract' felon taxonomy with the drainage-incisions-designed-to-spare-the-sensation-and-pulp-flap-vascularity and the Kanavel signs for the sheath-infection-she had in the ring finger and got washed out), plus the occupational loop - the staff with recurrent herpetic lesions or staph carriage off patient-contact until resolved with occupational-health involvement and the hand-hygiene-and-glove-audit and the MRSA-carriage-decolonisation-programme for recurrent staff carriers, and the meta-lesson about cat-bite latency (pasteurella presentations are measured in hours - a throbbing wound hours after a bite is infection-until-drained, and the second-glove-over-a-soiled-glove habit is how both patients get second operations - [[microbiology/bacteria]], [[clinical-skills/patient-safety]].**
-:::
-:::
-
-::: example The mesh clinic inbox {#ex-mesh}
-Five years after open inguinal mesh repair, a man emails: burning groin pain worse with cycling, a new bulge beside the scar, and a Facebook group telling him the mesh is 'poisoning him'.
-::: solution
-**Chronic-post-mesh-pain-and-recurrence ([[#def-healing]], [[nervous-system/headache-pain]]): the triage of three questions - neuropathic-ilioinguinal-or-iliohypogastric-or-genitofemoral pain (the burning-with-cycling-and-allodynia distribution and entrapment-by-tacks-or-fibrosis-versus-tissue-reaction debate graded honestly, the diagnostic ilioinguinal-block response predicting neurectomy benefit), recurrence-versus-chronic-pain-simulation-and-neuroma (the examination-standing-and-straining and the ultrasound-dynamic or CT-if-occult with the bulge-characterisation), and the systemic-attribution question handled with respect (the 'mesh isn't poisoning you' evidence explained without contempt, acknowledging the real chronic-pain epidemic documented by the excision-clinics and the litigation-and-registry history that reshaped practice), the management ladder (the multimodal-neuropathic-analgesia-and-physiotherapy-and-desensitisation-and-pelvic-floor-adjacency and the intervention blocks and the nerve-removal-versus-mesh-removal-surgery-with-the-third-level-pain-service-referral criteria and the honest expectation-setting about percent-getting-meaningful-relief and recurrence-and-hypoaesthesia trade-offs), and the clinic-culture - the mesh-pain-multidisciplinary-clinic-with-pain-medicine-and-specialist-surgery-and-physio-and-psychology and the patient-community-communications-taken-seriously-as-information-need-and-delayed-presentation-risk and the national-registry-and-LIMB-adjacent follow-up and consent-reform legacy that means new patients hear the pain numbers before surgery, because this inbox letter is the aftershock of understated 1990s consent - [[clinical-skills/communication]], [[medical-ethics-law/consent-capacity]].**
-:::
-:::
-
-::: quiz
-The single most important early intervention in a suspected necrotising soft-tissue infection is:
-- [x] Immediate surgical exploration and debridement - imaging must not delay the knife
-- [ ] Broad-spectrum antibiotics and observation for 24 hours
-- [ ] Hyperbaric oxygen within six hours
-- [ ] MRI to confirm gas before acting
-::: solution
-**Mortality tracks time-to-debridement in hours; the diagnosis is clinical plus surgical findings, antibiotics and adjuncts are secondary, and 'wait for MRI' is the classic fatal hesitation ([[#def-ssi]], [[surgery/acute-abdomen]]).**
-:::
-:::
+The tissue-level biology of inflammation and repair is covered in more detail in [[pathology/chronic-inflammation-repair]]. For the surgeon, two facts matter most. First, the wound is weakest in the first week, when collagen is being broken down and remodelled faster than it is laid down; this is when sutured wounds and bowel anastomoses are most likely to come apart. Second, every phase depends on a good blood supply carrying oxygen, nutrients and immune cells.
 
 ::: widget plot
-f: 100*exp(-((x-2.5)^2)/1.2); 90*exp(-((x-6.5)^2)/3); 80*exp(-((x-14)^2)/30); 70*exp(-((x-45)^2)/400); 60*exp(-((x-90)^2)/900)
-x: 0.5, 180
+f: 80*(1-exp(-x/k))
+x: 0, 26
 y: 0, 100
-labels: 	ext{days after surgery},\ 	ext{relative likelihood}\	ext{normal inflammatory phase (not infection)};\ 	ext{surgical-site infection presents};\ 	ext{fascial dehiscence \& hernia starts};\ 	ext{remodelling \& scar maturation};\ 	ext{mesh complications \& late sinus}
-caption: Wound events cluster by day ([[#def-ssi]], [[#def-healing]]): day-2 pyrexia is usually cytokine physiology, day-5 wound pain is the infection window, week-plus discharge is the fascia test, and the 'healed' scar keeps remodelling for a year at sub-normal strength.
+sliders: k=8:3:20:1
+labels: \text{wound tensile strength (\% of unwounded skin)}
+hlines: 20; 80
+vlines: 3
+caption: A schematic of how the tensile strength of a healing skin wound recovers over weeks (illustrative). The time constant k sets the speed; a larger k represents slower healing, as with poor blood supply, malnutrition or steroids. Strength is low in the first weeks, reaches about 20% around week 3 in normal healing and never returns fully to that of unwounded skin.
+:::
+
+### Primary and secondary intention
+
+::: definition Primary, secondary and delayed primary closure {#def-intention}
+- **Healing by primary intention:** the wound edges are brought together (by sutures, staples, glue or tape) soon after injury. Little granulation tissue is needed, healing is quick and the scar is thin. Used for clean surgical wounds.
+- **Healing by secondary intention:** the wound is left open and fills from the base with granulation tissue, then contracts and epithelialises. Healing takes weeks and leaves a wider scar, but infection can drain. Used for abscess cavities, heavily contaminated wounds and some pilonidal wounds.
+- **Delayed primary (tertiary) closure:** a contaminated wound is cleaned and left open for a few days, then closed once it is clean. Used for some traumatic and contaminated surgical wounds.
+:::
+
+### What impairs healing
+
+Factors that slow healing are usefully grouped into **local** factors in the wound and **systemic** factors in the patient.
+
+| Local factors | Systemic factors |
+|---|---|
+| Poor blood supply (arterial disease, tension on the closure, tight dressings) | Diabetes (impaired neutrophil function, small vessel disease) |
+| Infection | Malnutrition, especially protein, vitamin C and zinc deficiency |
+| Foreign bodies, dead tissue and haematoma | Smoking (vasoconstriction, carbon monoxide) |
+| Previous radiotherapy to the area | Corticosteroids, chemotherapy and other immunosuppressants |
+| Movement and mechanical stress | Older age, obesity, jaundice, uraemia |
+| Oedema and venous hypertension | Hypothermia and hypovolaemia during surgery |
+
+Corticosteroids are a good example of a systemic factor. They suppress the inflammatory phase, so macrophages release fewer growth factors and fibroblasts lay down less collagen. Vitamin A can partly counteract their effect on healing, though it is not used routinely.
+
+::: example A wound that will not heal {#ex-foot}
+A 67-year-old man with type 2 diabetes has had a painless ulcer on the ball of his right foot for 6 weeks. He thought it was a callus. The ulcer is 2 cm across, the probe reaches bone, the surrounding skin is red and warm for 3 cm, and the foot pulses are weak. What are the main problems, and what should happen next?
+::: solution
+**Problems.** He has a diabetic foot ulcer with three separate threats to healing:
+
+1. **Neuropathy**, which is why it is painless and why it developed under a pressure point.
+2. **Infection**: spreading redness and warmth indicate soft-tissue infection, and a probe reaching bone strongly suggests **osteomyelitis**.
+3. **Ischaemia**: weak pulses suggest peripheral arterial disease, which will prevent healing and may need revascularisation.
+
+**Next steps.** This is urgent. NICE guidance on diabetic foot problems (NG19) recommends that a person with a limb-threatening or spreading infection is referred immediately to acute services and the multidisciplinary foot care service. He needs blood tests including inflammatory markers and HbA1c, deep tissue samples or bone samples for culture (not superficial swabs), X-ray and probably MRI of the foot, and antibiotics according to local guidance. Arterial assessment with ankle–brachial pressure index (which can be falsely high in diabetes because of calcified arteries) or toe pressures and duplex ultrasound will show whether revascularisation is needed ([[surgery/vascular-urological-surgery]]). Pressure must be taken off the ulcer (offloading), dead tissue debrided and his glucose controlled. Delay increases the chance of amputation.
+:::
+:::
+
+## Closing a wound
+
+Most surgical wounds are closed with sutures, staples or tissue glue. The choice depends on the site, tension and cosmetic importance.
+
+- **Absorbable sutures** (for example polyglactin or polydioxanone) are broken down over weeks to months; they are used in deep layers, bowel anastomoses and many skin closures with buried stitches.
+- **Non-absorbable sutures** (for example nylon or polypropylene) keep their strength and are used for skin stitches that are removed, and for structures that need permanent support, such as some hernia repairs and vascular anastomoses.
+- **Monofilament** sutures pass smoothly and harbour fewer bacteria; **braided** sutures are easier to handle but can wick bacteria along their fibres.
+
+Skin sutures are removed at different times depending on blood supply: typically about 5 days on the face, 7–10 days on the scalp and trunk, and 10–14 days on the limbs and over joints.
+
+The midline abdominal wall is a special case. It must withstand coughing and straining while the scar is weak. A large randomised trial published in 2015 (STITCH) found that closing the midline fascia with **small bites** (stitches about 5 mm from the edge and 5 mm apart, with a slowly absorbable monofilament) rather than the traditional large bites reduced incisional hernia at one year from 21% to 13%. The underlying principle is that suture length should be at least four times the wound length, so that tension is shared by many small stitches.
+
+## Surgical-site infection
+
+::: definition Surgical-site infection {#def-ssi}
+A **surgical-site infection (SSI)** is an infection of the wound or of the tissues handled during the operation, occurring within 30 days of surgery (or up to 90 days for some operations involving implants, under surveillance definitions such as those of the US CDC). It is classified by depth:
+
+- **superficial incisional:** skin and subcutaneous tissue (redness, pus, wound opened);
+- **deep incisional:** fascia and muscle;
+- **organ or space:** any part of the body opened or manipulated, such as an intra-abdominal abscess, empyema or infected joint replacement.
+:::
+
+The risk of SSI depends on how many bacteria enter the wound, how virulent they are, and how well the patient and the wound can resist them. The amount of contamination is described by the **wound classification**.
+
+::: definition Wound contamination classes {#def-wound-class}
+- **Clean:** no inflammation, and the respiratory, gastrointestinal, genital and urinary tracts are not entered (for example hernia repair, thyroidectomy). Historical SSI rates around 1–2%.
+- **Clean-contaminated:** one of those tracts is entered under controlled conditions without unusual contamination (for example elective cholecystectomy or bowel resection). Historical rates under 10%.
+- **Contaminated:** fresh traumatic wounds, major breaks in sterile technique, or gross spillage from the gut. Historical rates around 15–20%.
+- **Dirty (infected):** existing infection or perforated viscus (for example a perforated appendix with pus, an old traumatic wound with dead tissue). Historical rates up to 40%.
+
+These figures come from older series without modern prophylaxis; current rates are lower, but the ranking remains.
+:::
+
+### Preventing SSI
+
+NICE guideline NG125 sets out measures before, during and after the operation. The most important are:
+
+- **Before:** treat remote infections where possible; shower or bathe with soap before surgery; do **not** remove hair routinely, and if hair must be removed, use electric clippers with a single-use head on the day of surgery, not razors (razors cause micro-abrasions that become colonised); in some operations, screen for and decolonise *Staphylococcus aureus* carriage according to local policy.
+- **Antibiotic prophylaxis:** given for clean surgery involving an implant or prosthesis, for clean-contaminated surgery and for contaminated surgery. It is given intravenously as a single dose on starting anaesthesia, so that tissue levels are high at the time of incision, and repeated if the operation is long. It is not routinely continued after the operation. Dirty wounds already infected need **treatment**, not prophylaxis.
+- **During:** prepare the skin immediately before incision, with **alcohol-based chlorhexidine** as first choice unless contraindicated or next to a mucous membrane (allowing it to dry fully before diathermy to avoid fire); keep the patient warm, well oxygenated and well perfused; maintain normal glucose; handle tissue gently; use sterile gowns, gloves and drapes.
+- **After:** cover the wound with an interactive dressing at the end of the operation; use an aseptic non-touch technique to change dressings; do not use topical antibiotics on wounds healing by primary intention.
+
+::: example Interpreting an SSI audit {#ex-ssi-audit}
+A colorectal unit performed 400 elective bowel resections in a year. Surveillance found 36 SSIs: 24 superficial, 8 deep and 4 organ or space. The unit then introduced a bundle (clipping instead of shaving, alcoholic chlorhexidine skin preparation, warming, glucose control and wound protectors). The next year, 410 resections had 23 SSIs. What were the SSI rates, and what is the relative reduction?
+::: solution
+**Before:** $36/400 = 0.09 = 9.0\%$.
+
+**After:** $23/410 \approx 0.0561 = 5.6\%$.
+
+**Relative reduction:** $(0.09 - 0.0561)/0.09 \approx 0.377$, a fall of about 38%. The absolute reduction is about 3.4 percentage points, so about one SSI was prevented for every 30 resections.
+
+**Interpretation.** The improvement is consistent with the bundle working, but a before-and-after comparison cannot prove it. Other explanations include a change in case mix (fewer emergencies, fewer stomas), less complete surveillance in the second year (especially after discharge, when many superficial SSIs appear), and chance (the numbers are modest). Good surveillance uses fixed definitions, active follow-up after discharge and risk adjustment, and continues after the change to see whether the effect is sustained.
+:::
+:::
+
+### Recognising and treating SSI
+
+A superficial SSI usually appears **5–7 days after surgery**, often after discharge, with increasing pain, redness, swelling, warmth and discharge of pus, sometimes with fever. Most superficial infections are treated by **opening the wound** (removing a few sutures or staples) to let pus drain, then dressing and allowing healing by secondary intention. Antibiotics are added if there is spreading cellulitis or systemic illness. A swab is taken for culture, but a positive swab without clinical signs of infection usually reflects colonisation, not infection.
+
+Deep and organ-space infections need imaging (ultrasound or CT) to find a collection. Collections are drained, usually by an interventional radiologist placing a drain under image guidance, sometimes surgically. An infected implant (such as a mesh or joint replacement) may need removal.
+
+::: warning
+**Antibiotics do not treat a collection of pus.** An abscess is a walled-off cavity with poor blood supply; antibiotics penetrate it poorly, and the pus inside contains dead neutrophils and bacteria that antibiotics cannot clear. A patient on antibiotics who still has a swinging fever, rising inflammatory markers and a tender wound or abdomen needs a search for undrained pus, not a change of antibiotic. *Ubi pus, ibi evacua*: where there is pus, let it out.
+:::
+
+### Abscesses
+
+An **abscess** is a localised collection of pus surrounded by inflamed tissue. Skin abscesses are usually caused by *Staphylococcus aureus*, including strains that produce Panton–Valentine leucocidin, which cause recurrent and necrotic boils. Perianal abscesses come from infected anal glands and are associated with fistula. Pilonidal abscesses form in the natal cleft around hairs.
+
+The treatment of an abscess is **incision and drainage**: open the cavity, break down any loculations, wash it out and leave it to heal from the base. Antibiotics are added for surrounding cellulitis, systemic signs or in immunocompromised patients. Recurrent abscesses prompt a search for an underlying cause, such as diabetes, a fistula, hidradenitis suppurativa or Crohn's disease.
+
+## Necrotising soft-tissue infection
+
+::: definition Necrotising soft-tissue infection {#def-nsti}
+**Necrotising soft-tissue infection** (including **necrotising fasciitis**) is a rapidly spreading infection of the fascia and subcutaneous tissue that causes thrombosis of small vessels and tissue death. It is classified by the organisms:
+
+- **Type I (polymicrobial):** mixed aerobic and anaerobic bacteria, often in people with diabetes, after abdominal or perineal surgery, or in the perineum (**Fournier's gangrene**, [[surgery/vascular-urological-surgery]]).
+- **Type II (monomicrobial):** usually *Streptococcus pyogenes* (group A streptococcus), sometimes with *S. aureus*; can affect healthy young people after minor injury.
+
+Other forms include clostridial gas gangrene and infections by *Vibrio* species after seawater exposure.
+:::
+
+The early features are deceptive. The skin may look only mildly red, but the pain is **out of proportion** to the visible signs, because the infection spreads along the fascia beneath normal-looking skin. Later signs are tense oedema beyond the redness, dusky or purple skin, blisters, crepitus from gas, loss of sensation as nerves die, and septic shock.
+
+Scoring systems such as the LRINEC score (based on CRP, white cell count, haemoglobin, sodium, creatinine and glucose) were proposed to help, but later studies found they miss many cases, so a low score must not be used to exclude the diagnosis. CT may show gas or fascial oedema, but imaging must never delay surgery when the clinical suspicion is high.
+
+Treatment is **urgent radical surgical debridement**, removing all dead tissue until bleeding healthy tissue is reached, with return to theatre every 24–48 hours until no further necrosis is found. Alongside this: resuscitation for septic shock, and broad-spectrum intravenous antibiotics that include clindamycin, which reduces toxin production by streptococci and staphylococci. The mortality remains substantial, and delay to surgery is one of the main factors that increases it.
+
+::: example Pain out of proportion {#ex-nsti}
+A 52-year-old woman with type 2 diabetes presents 2 days after a minor graze to her thigh. She has severe pain in the thigh, a temperature of 38.9 °C, heart rate 125/min and blood pressure 92/55 mmHg. There is a 6 cm area of mild redness, but the whole thigh is swollen and tense and very tender beyond the red area. Her CRP is 310 mg/L, sodium 129 mmol/L and glucose 22 mmol/L. How should she be managed?
+::: solution
+**Recognition.** Severe pain and tenderness beyond the visible redness, tense oedema, sepsis with hypotension, hyponatraemia and hyperglycaemia in a person with diabetes all point to **necrotising soft-tissue infection**. Cellulitis alone would not cause this degree of pain and systemic illness with so little skin change.
+
+**Immediate management.**
+
+1. Resuscitate following sepsis guidance: oxygen, intravenous access, blood cultures, lactate, fluid boluses, and early critical care involvement.
+2. Start broad-spectrum intravenous antibiotics with clindamycin according to local guidance.
+3. Call a senior surgeon immediately. The diagnosis is confirmed and treated in theatre: the fascia is grey and dull, separates easily from the tissues, and there may be thin "dishwater" fluid. All dead tissue is removed.
+4. Do not delay theatre for CT if the clinical picture is clear.
+
+**Afterwards.** She will need repeat debridement, critical care, glucose control, and later reconstruction with skin grafts. Group A streptococcal infection is notifiable, and close contacts may need advice.
+:::
+:::
+
+## Wound dehiscence and incisional hernia
+
+**Wound dehiscence** is the separation of the layers of a closed wound. Its most serious form is **abdominal fascial dehiscence** ("burst abdomen"), in which the fascial closure fails and bowel may appear in the wound. It typically happens **5–10 days** after surgery. The classic warning sign is a sudden discharge of **pink, serous fluid** from the wound, which is peritoneal fluid tracking through the failed fascia.
+
+Risk factors include those that impair healing (older age, malnutrition, steroids, diabetes, jaundice), those that raise abdominal pressure (coughing, ileus, obesity, vomiting) and technical factors (closure under tension, large-bite technique, infection).
+
+Management of a burst abdomen: reassure the patient, cover the exposed bowel with sterile saline-soaked swabs, give analgesia, keep the patient nil by mouth, and arrange return to theatre. Some patients are managed with temporary closure or negative pressure wound therapy when the abdomen cannot be closed safely.
+
+An **incisional hernia** is the late, chronic equivalent: the fascia separates gradually without the skin opening, and abdominal contents bulge through. It follows a substantial proportion of midline laparotomies, especially after wound infection. Small-bite closure, prophylactic mesh in high-risk patients, and avoiding infection reduce it. Repair is considered for symptoms or a narrow neck with a risk of incarceration ([[surgery/gastrointestinal-surgery]]).
+
+::: example Pink fluid on day 7 {#ex-pop}
+A 74-year-old man is 7 days after an emergency laparotomy for a perforated sigmoid colon. He has had a bad cough with a chest infection, and his albumin is 22 g/L. While straining on the commode he notices that his dressing is soaked with pink, watery fluid. What has probably happened, and what should be done?
+::: solution
+**Diagnosis.** A sudden pink, serous discharge from a laparotomy wound around days 5–10 suggests **fascial dehiscence**: the deep closure has failed, even if the skin is still intact. His risk factors are the emergency, contaminated operation, likely wound infection, poor nutrition (low albumin reflects his illness and inflammation more than nutrition alone), coughing and straining.
+
+**Immediate actions.** Lie him down and reassure him. Examine the wound: remove a few skin sutures if needed to inspect the fascia. If bowel is visible, cover it with warm, saline-soaked sterile swabs. Give analgesia, make him nil by mouth, check bloods, and inform the senior surgeon and anaesthetist.
+
+**Definitive management.** Most patients return to theatre for closure, often with tension-relieving techniques, or temporary abdominal closure if the abdomen is contaminated. His chest infection, nutrition and cough are treated. He is at high risk of a later incisional hernia.
+:::
+:::
+
+## Pressure ulcers
+
+A **pressure ulcer** (pressure injury) is localised damage to skin and underlying tissue, usually over a bony prominence such as the sacrum, heels or hips, caused by pressure alone or combined with shear. Prolonged pressure above capillary closing pressure causes ischaemia, and deep muscle is more vulnerable than skin, so damage may be extensive beneath an intact or slightly discoloured surface.
+
+Pressure ulcers are categorised from **category 1** (non-blanching redness of intact skin) through **category 2** (partial-thickness skin loss), **category 3** (full-thickness skin loss with visible fat) and **category 4** (full-thickness tissue loss exposing bone, tendon or muscle), with additional categories for **unstageable** ulcers covered by slough or eschar and **suspected deep tissue injury**. Surgical patients are at risk during long operations, in immobile periods after surgery and after hip fracture. Prevention relies on risk assessment, regular repositioning, pressure-redistributing mattresses, heel offloading, skin care and nutrition.
+
+## Bites and tetanus
+
+**Bites** from humans, dogs and cats are contaminated wounds. Cat bites in particular cause deep puncture wounds that inoculate bacteria (including *Pasteurella multocida*) into tendon sheaths and joints. Human bites over the knuckles, often from a punch to the mouth ("fight bite"), can enter the metacarpophalangeal joint and cause septic arthritis. Management principles are: clean and irrigate, debride dead tissue, consider leaving the wound open rather than suturing (except on the face), and assess for tendon or joint involvement. NICE guideline NG184 (2020) recommends antibiotic prophylaxis for bites that have broken the skin in certain circumstances, such as cat bites, human bites that draw blood, and bites in high-risk areas (hands, feet, face, genitals, near joints) or high-risk people; co-amoxiclav is the usual first choice. Blood-borne virus risk is assessed after human bites, and rabies risk after animal bites abroad or bat bites.
+
+**Tetanus** is caused by the toxin of *Clostridium tetani*, whose spores live in soil and manure. A **tetanus-prone wound** includes puncture wounds, wounds containing foreign bodies or soil, compound fractures, wounds with devitalised tissue, burns and bites, especially if treatment is delayed. Management depends on the wound and the patient's immunisation history, following the UK *Green Book*: all wounds are cleaned thoroughly; a person who has not completed a full course of tetanus vaccination, or whose status is uncertain, is given a dose of vaccine; and **human tetanus immunoglobulin** is given for high-risk tetanus-prone wounds when immunity cannot be assumed.
+
+::: quiz
+A 30-year-old woman is bitten on the back of the hand by her own cat. The puncture wounds are small and the hand looks normal. Which management is most appropriate?
+- [ ] Close the wounds with sutures and reassure her
+- [ ] No treatment is needed because the wounds are small
+- [x] Clean and irrigate, leave the wounds open, give antibiotic prophylaxis and arrange review
+- [ ] Give antibiotics only if a wound swab grows bacteria
+::: solution
+Cat bites cause deep punctures that inoculate bacteria into tendon sheaths and joints; small surface wounds can hide deep infection. NICE recommends prophylactic antibiotics for cat bites that break the skin, and wounds are cleaned and usually left open. Waiting for a swab result delays treatment of a fast-developing infection.
+:::
+:::
+
+::: history
+In 1847 Ignaz Semmelweis, working in the maternity wards of the Vienna General Hospital, showed that puerperal fever was far more common in the ward staffed by doctors and students, who came from the autopsy room, than in the midwives' ward, and that washing hands in chlorinated lime solution reduced deaths dramatically. His work was largely rejected during his lifetime. Twenty years later, Joseph Lister in Glasgow, reading Louis Pasteur's work on microorganisms, began treating compound fractures and wounds with carbolic acid and published his results in *The Lancet* in 1867; infections and amputations fell. Antisepsis (killing germs in the wound) was gradually replaced by asepsis (keeping germs out), helped by steam sterilisation of instruments and, from about 1890, rubber gloves, which William Halsted introduced at Johns Hopkins.
 :::
 
 ## Where this leads
 
-Perioperative prevention levers in [[surgery/perioperative-care]], organism science in [[microbiology/bacteria]] and resistance in [[infectious-diseases/stewardship-outbreaks]], abdominal sources in [[surgery/acute-abdomen]], trauma wounds in [[surgery/trauma]], and healing pathology in [[pathology/chronic-inflammation-repair]].
-
-::: history
-**Wound infection was surgery's ceiling until it was surgery's syllabus: the antiseptic era (Semmelweis's 1847 chlorine arithmetic ignored in his lifetime, Lister's 1867 carbolic programme built on Pasteur's germ theory, and the hospital deaths-from-listerism-versus-clean-hands controversies and the eventual aseptic-surgery-steam-sterilisation-and-rubber-glove-and-gown-and-mask cascade of the 1880s-90s that dropped amputation mortality from epidemic to sporadic), the wound-class-and-culture era (the 1960s surgical-witchcraft battles - the Chassin-and-Polk-and-Lowbury-adjacent prophylactic-antibiotic trials in contaminated surgery, the the era's abdominal-sepsis audits, the keep general: the surveillance definitions that the CDC's NHSN later standardised so hospitals could compare honestly), the suture-science line (the catgut-to-silk-to-steel-to-synthetics lineage and the 1970s-2000s small-bites-fascial-closure trials overturning the 'big bites thick suture' folklore and the mesh-in-hernia-revolution with its late chronic-pain-and-removal-reckoning), the negative-pressure and modern-dressing era (the 1990s Morykwas-and-Argent vacuum-assisted-closure serendipity and its subsequent evidence-pruning, the hydrocolloid-alginate-foam-honey-tiering dressing market and its Cochrane reviews finding most products unimpressive head-to-head), and the bite-and-burn lines - the the hand-surgery school's clenched-fist-infection rules from the World Wars' septic-hands units, the Rabies-prophylaxis-Pasteur-1885-inoculation lineage and the WHO exposure-category system and the animal-bite bacteriology settled only with culture systems and 16S (the the Eikenella-corrodens-naming-story kept simple: the oral-flora bacteriology settled only with modern culture systems), and the modern burns unit founded on the 1960s Baxter-crystalloid-formula-and-TBSA-and-exposure-warm-air-and-early-excision-grafting tradition with its 80-percent-survival-in-young-adults-from-a-90-percent-death-sentence-in-1900; and the stewardship-era twist - the MRSA-and-ESBL-CPE-and-C.difficile consequences of surgical antibiotic overuse turning our own prevention bundle into a resistance driver, which is why today's surgical-infection science is equally about the antibiotic we stop prescribing - [[microbiology/antimicrobials]], [[infectious-diseases/healthcare-infections]].**
-:::
+The general biology of inflammation and repair is in [[pathology/acute-inflammation]] and [[pathology/chronic-inflammation-repair]]. Infection control and antimicrobial stewardship are covered in [[microbiology/infection-control]] and [[infectious-diseases/stewardship-outbreaks]], and sepsis in [[infectious-diseases/fever-sepsis]]. Perioperative measures that prevent SSI (warming, glucose control, antibiotic timing) are in [[surgery/perioperative-care]].
 
 ::: summary
-- SSI is arithmetic: inoculum times host defences times dead space - every term is modifiable by bundle compliance (prep, timing, warmth, glucose, gentle tissue).
-- Pus demands drainage; antibiotics follow source control, except in necrotising infection where the knife leads everything by hours.
-- Fascial dehiscence announces itself as serosanguinous discharge around day 5-7; recognise it before evisceration, do not reduce at the bedside.
-- Healing never regains full tensile strength; hernia, burst abdomen and chronic wounds are the timeline's taxes.
-- Bite wounds, clenched-fist injuries and immersion and burn patterns each carry signature microbiology and signature avoidable errors.
-- Diabetic foot disease is a programme failure before it is an ulcer; offloading, perfusion and multidisciplinary clinics prevent amputations that antibiotics cannot.
+- Healing passes through **haemostasis, inflammation, proliferation and remodelling**. Wounds are weakest in the first week; scar strength reaches about 20% at 3 weeks and at most about 80% of normal.
+- Healing is by **primary intention** (edges apposed), **secondary intention** (left open, granulation) or **delayed primary closure**.
+- Local factors (blood supply, infection, foreign bodies, radiation) and systemic factors (diabetes, malnutrition, smoking, steroids) impair healing.
+- **SSI** is classified as superficial, deep or organ/space; risk rises with the **wound class** (clean, clean-contaminated, contaminated, dirty).
+- NICE NG125: no routine hair removal (clippers if needed), **alcoholic chlorhexidine** skin preparation, single-dose prophylaxis at induction when indicated, warming and good perfusion.
+- Superficial SSI is treated by opening the wound; **pus needs drainage**, not just antibiotics.
+- Necrotising soft-tissue infection presents with **pain out of proportion** and needs urgent debridement; scores do not rule it out.
+- A pink serous discharge around days 5–10 heralds **fascial dehiscence**; small-bite closure reduces incisional hernia.
+- Bites are contaminated wounds; cat and human bites often need prophylaxis. Tetanus management follows the wound type and immunisation status.
 :::
 
 ## Exercises
 
-::: exercise Order the prophylaxis {level=1}
-Elective open inguinal hernia with mesh in a MRSA-prevalent unit: prophylaxis yes/no, agent, timing, redose, duration - with reasons.
+::: exercise Classify the wound {level=1}
+Give the contamination class of each operation: (a) open inguinal hernia repair with mesh; (b) elective laparoscopic cholecystectomy; (c) laparotomy for a perforated duodenal ulcer with free pus; (d) emergency right hemicolectomy with spillage of bowel contents during the operation.
 ::: solution
-**Prophylaxis-arithmetic ([[#def-ssi]], [[microbiology/antimicrobials]]): clean-with-implant-justifies-prophylaxis (the mesh-infection-staphylococcal-biofilm-and-explant-morbidity argument and the guideline-agreement for mesh cases), agent-flora-matched (the cefazolin-or-cephalexin-IV-equivalent first-line with the co-amoxiclav-adjacency-per-local-formulary and the beta-lactam-allergy-Clindamycin-or-teicoplanin-adjacency with the unit-MRSA-rate-influencing-vancomycin-coverage-decision and the allergy-history-quality-question 'rash or anaphylaxis'), timing-and-redose (the within-60-minutes-before-incision-and-infusion-complete-and-the-redose-at-two-times-half-life-or-50-percent-blood-loss-and-the-anaesthetic-anaesthesia-adjacency with the 'at induction is not at knife' discipline and the 1500-mL-loss-trigger-audit-point), and duration (the single-dose-or-within-24-hours stop with the no-post-op-'cover'-wound-drains-logic because prolonged prophylaxis breeds resistance and C.difficile without preventing SSI), plus the non-drug-half-of-the-bundle - the chlorhexidine-alcohol-prep-and-clippers-not-razor-and-the-drying-time-and-the-port-wine-staining-adjacency-avoided and the normothermia-and-fiO2-and-glycaemic-and-hypoperfusion-targets and the glove-change-and-irrigation-and-minimal-tissue-trauma-and-dead-space-obliteration and the mesh-choice-and-fixation-debate-with-chronic-pain-awareness (the SSI-and-chronic-pain-metrics both on the audit dashboard since both are preventable) - [[surgery/perioperative-care]].**
+(a) Clean (no tract entered), though prophylaxis may be considered because of the implant. (b) Clean-contaminated (biliary tract entered under controlled conditions). (c) Dirty (established infection with pus). (d) Contaminated (gross spillage from the gut). Classes (c) and (d) need treatment-course antibiotics rather than prophylaxis alone in most cases, and the skin may be left open or closed loosely.
 :::
 :::
 
-::: exercise Triage the hot wound {level=2}
-Day-4 post-appendicectomy: wound edge tenderness, 3cm of angry erythema, temp 38.1, CRP 140 falling, patient well. Then day-5 variants: (a) fluctuant 2cm swelling; (b) spreading erythema with blistering and pain 8/10 out of proportion; (c) faeculent discharge from wound. Manage each.
+::: exercise Primary or secondary? {level=1}
+Which method of healing is most appropriate for each wound? (a) a clean laceration of the forearm 3 hours old; (b) a drained perianal abscess cavity; (c) a dog bite to the calf 18 hours old with surrounding contamination; (d) a laparotomy wound after surgery for faecal peritonitis in a very contaminated abdomen.
 ::: solution
-**Four-days-later-algorithm ([[#def-ssi]]): the day-4-base-reading (a little wound-edge inflammation with falling CRP and a well patient is often suture-line physiology - observe-review-not-swab-and-drip, and the CRP-trajectory-versus-wound-inspection-sequence done properly), (a) superficial incisional SSI with collection - open-it (the remove-a-few-sutures-and-drain-and-explore-for-deeper-tract-and-pack-and-the-no-antibiotics-unless-cellulitis-or-systemic-or-host-compromised rule with analgesia-and-dressing-review-and-healing-by-secondary-intention-explained to the patient who expected stitches-to-last-forever), (b) red-flag variant - necrotising until proven otherwise (the pain-out-of-proportion-plus-bullae-plus-systemic-toxicity-plus-CRP-diverging-from-expected trajectory and the LRINEC-as-support-not-verdict and the theatre-for-inspection-fascia-test-adjacency-now with the broadened-cover-plus-clindamycin-toxin-suppression while wheeling and the senior-not-junior-decision), and (c) faeculent-wound-discharge - enterocutaneous fistula or anastomotic or stump leak tracking out (the sepsis-and-fluid-and-skin-protection-with-pouching-or-ostomy-appliance-over-the-wound-and-the-NPO-versus-feeding-debate-per-fistula-output-and-anatomy with CT-fistulography-and-the-early-surgical-versus-conservative-SNAP-adjacency and the nutritional-and-catabolic-planning and the stoma-therapy-nurse-involvement early) - the unifying lesson that the wound is a window on the abdomen and each day-4-plus sign is a message about a layer, not a dermatological problem - [[surgery/acute-abdomen]], [[gastrointestinal/bowel-disease]].**
+(a) Primary intention: clean, fresh, well-vascularised. (b) Secondary intention: the cavity is left to heal from the base so that pus cannot re-accumulate. (c) Usually left open after cleaning, with delayed primary closure or secondary intention, because it is old and contaminated; facial bites are the main exception and are often closed. (d) Fascia is closed; the skin is often left open or loosely closed with delayed closure or negative pressure therapy, to reduce superficial SSI.
 :::
 :::
 
-::: exercise Prescribe for the bite {level=2}
-A dog bite across the wrist, 4 hours old, healthy adult, dog vaccinated and available, tetanus uncertain. Cover: wound care, antibiotics choice and duration, tetanus, rabies decision, closure decision, and follow-up safety net.
+::: exercise SSI rate {level=1 check="4.5"}
+A hospital records 18 surgical-site infections after 400 caesarean sections. What is the SSI rate as a percentage? Give the exact value.
 ::: solution
-**Bite-wound-package ([[#def-zoonotic]], [[microbiology/antimicrobials]], [[emergency-critical-care/poisoning]]): the wound-care-first (the copious-irrigation-and-removal-of-devitalised-tissue-and-explore-for-tendon-joint-nerve-injury-and-x-ray-for-teeth-fragments-and-immobilise-elevate and the 'cleaning is the best prophylaxis' evidence), the antibiotic-decision (deep-and-hand-and-joint-and-immunosuppressed cases favour hand location and crush mechanism favour prophylaxis - amoxicillin-clavulanate covering pasteurella-staph-strep-anaerobes with doxycycline-or-TMP-SMX-plus-metronidazole-or-moxi alternatives for penicillin allergy and the 3-5-day prophylaxis-versus-7-14-day treatment durations stated and the MRSA-rate-influenced-additions), the tetanus-algorithm-by-status-and-wound-class (uncertain-status-plus-dirty-wound equals vaccine-plus-TIG and the 'check the record, vaccinate the doubtful' default), the rabies-question-answered-by-geography-and-animal-behaviour-and-availability-for-10-day-observation (no-post-exposure-treatment-needed-for-a-healthy-vaccinated-observable-dog-in-a-rabies-free-country with the import-and-bat-and-unprovoked-feral-dog-and-UK-licensing-adjacency and the 'if suspect: wash 15 minutes and contact infection services same day' rule), the closure-decision (loose-primary-closure-of-clean-facial-wounds-versus-open-management-of-hands-and-punctates-and-delayed-primary-at-48-72 hours with the cosmetic-versus-infection-honest-trade and the tendon-joint-bone-exposure-needs-flap-coverage-today), and the safety-net (the 48-hour-review-booked-at-discharge-not-advised, the 24-hour-return-criteria written, the hand-surgery-referral-if-tendon-joint-involvement and the dog-management-and-public-health-notification-for-stray-or-abnormal-behaviour and the safeguarding-question-for-repetitive-child-bites-or-neglect) - [[paediatrics/safeguarding]], [[infectious-diseases/stewardship-outbreaks]].**
+$18/400 = 0.045 = 4.5\%$. Many caesarean-section SSIs appear after discharge, so surveillance that only counts inpatient infections underestimates the true rate.
 :::
 :::
 
-::: exercise Build the pressure-ulcer prevention programme {level=3}
-Your trust's community-and-hospital pressure-ulcer rate is a national outlier. Design the programme: risk assessment, surfaces, nutrition, tissue viability workforce, data honesty and the never-event tension.
-::: solution
-**Pressure-injury-programme ([[#def-healing]], [[clinical-skills/patient-safety]], [[geriatrics-palliative/ageing-frailty]]): the causal-targeting - pressure-injury-is-perfusion-time-arithmetic (the interface-pressure-versus-closing-capillary-pressure and the shear-and-moisture-and-malnutrition-and-perfusion-and-neuropathy-and-fever-catabolism-multiplier and why-'the hip is the first to go' from the greater-trochanter-muscle-flap-anatomy), the-risk-assessment-brass-tacks (the Waterlow-and-Braden-adequately-predictive-for-triage-with-inter-rater-drift-audited-and-the-admission-and-24-hour-and-transfer-and-change-of-condition reassessment and the 'assess the mattress as well as the patient' rule), the-intervention-bundle-with-real-effect-sizes (the repositioning-regimens-and-30-degree-tilt-and-the-prone-and-lateral-positioning-supports and the the superior-versus-foam trial evidence for high-risk and the surface-replacement-schedules-funded-not-wishful and the heel-offloading-boots-and-knee pillows and the microclimate-fabric-and-incontinence-regimes and the nutrition-team-involvement-with-protein-targets-and-oral-supplements-and-arginine-zinc-vit-C-cofactor-evidence-graded and the 'feed them or the mattress fails' truth), the workforce-and-process layer (the tissue-viability-nurse-specialist-establishment-with-caseload-standards and the wound-care-plans-with-named-goals-and-review-dates and the staff-competency-in-moving-people-mechanically-and-manually with the 'two people or a hoist, not a slide' rule and the patient-and-carer-education-that-reduces-the-discharge-recurrence and the 'do not massage a bony prominence' myth-correction), the data-honesty problem (the the admission-versus-acquired attribution disputes that make outlier-status hard to prove and the 'measure anyway, publish anyway' candour with the patient-facing numbers), and the never-event-policy-tension argued both ways (the 'avoidable = every hospital-acquired' rule driving investment-and-attention versus the frail-end-of-life-skin-failure literature and the dignity-versus-repositioning-conflict where palliative patients die with pressure injuries despite perfect care - with the honest resolution that the rule should exclude the genuinely unavoidable and stop using 'unavoidable' as a euphemism for under-staffed); and the metric stack - the trust-wide-point-prevalence-surveys-comparable-internationally-and-the-acquired-rate-and-the-treatment-outcomes-healing-times-pain-and-odour-and-quality-of-life and the serious-incident-reviews-whose-actions-are-mattress-purchases-sometimes-and-staffing-decisions-when-honest - [[pathology/environmental-pathology]], [[public-health/health-systems-economics]].**
+::: exercise A healing trajectory {level=2 check="40"}
+A diabetic foot ulcer measures 12.0 cm² at its first assessment and 7.2 cm² four weeks later. By what percentage has the area decreased? Give the exact value. Ulcers that shrink by less than about half in 4 weeks are unlikely to heal within 12 weeks on the current plan; what should happen?
+::: hint
+Percentage reduction = (initial − current) / initial × 100.
 :::
-:::
-::: exercise Grade and drain the collection {level=2}
-Day 8 laparotomy: CT shows a 4cm subphrenic collection and a 2cm pelvic collection; he is septic but BP responds to fluids. Plan the next six hours: who, where, with what, and when does 'source control' mean theatre?
 ::: solution
-**Deep-organ-space-SSI ([[#def-ssi]], [[surgery/acute-abdomen]], [[emergency-critical-care/critical-care]]): the-sepsis-bundle-in-the-first-hour (cultures-lactate-broad-antibiotics-fluids-and-lactate-serial-and-urine-output-adjacency with the HDU-bed-question answered early), the-source-control-map-read-with-radiology (the 4cm-subphrenic-drainable-and-the-2cm-pelvic-possibly-transgluteal-or-transrectal-or-conservative-if-not-the-driver-and-the-drain-versus-catheter-versus-aspiration-debate with the 'drain the one that is driving the sepsis and watch the rest' triage and the contrast-through-the-drain-and-repeat-CT trajectory logic), the-theatre-triggers (the drain-fails-not-accessible-or-multiloculated-or-faeculent-or-ongoing-leak-needing-resection-stoma-washout-or-damage-control and the 'source control within 6-12 hours of decision' principle with the anaesthetic-risk-of-the-septic-recent-laparotomy-patient weighed and the interventional-radiology-versus-operating-theatre capability that separates good units), and the trajectory-metrics (the-48-hour-clinical-and-CRP-response-and-repeat-imaging-for-the-non-responders and the drain-output-character-as-fistula-warning and the feeding-and-catabolism-plan and the drain-tract-sinuses-that-need-removal-to-see-versus-follow - because the second operation is sometimes pulling the tube out at week three in clinic, not the knife - [[gastrointestinal/bowel-disease]], [[renal/water-sodium]].**
+$(12.0 - 7.2)/12.0 \times 100 = 4.8/12 \times 100 = 40\%$. A 40% reduction is less than the roughly 50% that predicts healing, so the plan should be reviewed by the multidisciplinary foot team: check for infection (including osteomyelitis), reassess blood supply and consider revascularisation, check that offloading is effective and being used, debride, optimise glucose control and nutrition, and stop smoking.
 :::
 :::
 
-::: exercise The day-2 pyrexia {level=1}
-Day-2, 38.3C after open colectomy, otherwise asymptomatic, NEWS 3, wound clean, chest clear, urine clear, lines fine. 'The the textbook says wind - do we investigate?' Answer with the physiology and the reasonable workup.
+::: exercise Hot and swollen on day 6 {level=2}
+A 41-year-old woman 6 days after an open appendicectomy for a perforated appendix has a red, swollen, tender wound with a fluctuant area, a temperature of 38.2 °C and is otherwise well. She has been taking oral antibiotics for 3 days. What is the diagnosis and treatment? What features would make you look for a deeper problem?
 ::: solution
-**Day-2-fever-reasoning ([[#def-ssi]], [[surgery/perioperative-care]]): the physiology answer - early post-op fever is largely cytokine-driven surgical-trauma physiology with atelectasis-adjacency and the 'wind-water-walk-wound-window' heuristic exists because day-2-infection-is-uncommon-but-not-impossible, and the dangerous-not-to-miss day-1-2 causes are the ones that ignore the mnemonic (the-anastomotic-catastrophe-and-necrotising-infection-and-aspiration-pneumonitis-and-line-removed-with-cultures-and-malignant-hyperthermia-late-mimics-and-adrenal-insufficiency-and-drug-fever-and-transfusion-reaction and the pre-op-infection-that-was-already-cooking), so the reasonable workup - full-observation-set-and-lactate-and-FBC-and-U&E-and-CRP-trajectory-and-urine-dip-culture-from-catheter-and-chest-examination-and-inspection-of-every-wound-line-and-orifice-and-drain-output-character-review and the chest-x-ray-if-respiratory-signs-not-routine and the 'do not start antibiotics for fever alone' rule with the re-review-in-hours and the escalation-trigger-written-in-the-notes (the tachycardia-climbing-with-CRP-rising-with-urine-falling is a CT question not another observation round), and the honest meta-point - the mnemonic organises probability but the observations-and-trajectory-detect the exception, and the day-2-question is never 'is this atelectasis' but 'what would change my management if it is not' - [[respiratory/respiratory-infections]], [[clinical-skills/clinical-reasoning]].**
+**Diagnosis:** superficial incisional SSI with a subcutaneous collection. **Treatment:** open the wound by removing some sutures or staples, drain the pus, send a sample for culture, wash out and pack or dress the wound to heal by secondary intention. Antibiotics alone have failed because pus is present; they may continue if there is spreading cellulitis. **Look deeper if:** she has abdominal pain, ileus, diarrhoea or rectal discomfort (pelvic abscess), swinging fevers or rising inflammatory markers after drainage, or signs of sepsis. A CT of the abdomen and pelvis would look for an intra-abdominal collection, which is common after perforated appendicitis.
 :::
 :::
 
-::: exercise Counsel the burst abdomen {level=2}
-Evisceration at the bedside of a frail 80-year-old on day 5: copious serosanguinous discharge then bowel loop at the wound. Walk the minutes, the operation decisions, and the conversation with the family afterwards.
+::: exercise The right antibiotic plan {level=2}
+For each case, state whether antibiotic prophylaxis, a treatment course or no antibiotics is appropriate, and why: (a) elective laparoscopic inguinal hernia repair in a fit man, without mesh; (b) elective total hip replacement; (c) elective anterior resection; (d) laparotomy for faecal peritonitis.
 ::: solution
-**Evisceration-minute-by-minute ([[#def-healing]], [[surgery/perioperative-care]]): the-bedside-minutes (call-for-help-and-lay-her-flat-and-sterile-saline-soaked-swabs-over-the-bowel-and-an-abdominal-binder-or-towel-and-do-NOT-push-it-back-and-NBM-and-analgesia-and-IV-fluids-and-theft-of-the-scenario-from-panic with the rapid-audit-trail 'when did the discharge start, what is the perfusion' and theatre-now-not-next-list and the bloods-and-group-save-and-antibiotics-per-protocol), the-operation-decisions (the-inspect-for-ischaemic-or-injured-bowel-and-the-re-closure-strategy - retention-sutures-versus-Bogota-bag-versus-planned-open-with-negative-pressure-for-the-hostile-abdomen-versus-damage-control and the mesh-definitive-repair-is-yesterday's-contaminated-field-question and the-ICU-bed-and-ventilation-plan-and-the-renal-and-abdominal-compartment-pressure-monitoring-if-tight-closure with the laparostomy-protective-skin-adjacency and the stoma-question-honestly-faced), the-afterwards-with-the-family (what-happened-in-plain-words - the wall of the abdomen opened, we protected the bowel and closed/protected it, the road is longer now, the hernia is almost certain and repair is a months-away-conversation, the ICU-days expectation and the rehabilitation-and-nutrition-and-smoking-and-protein-plan and the duty-of-candour if any preventable-contributor-surfaced plus the support-and-advocacy-and-complaints-routes), and the-system-review (the closure-technique-audit-and-the-bundle-compliance-review-and-the-30-day-mortality-and-readmission-tracking because evisceration is a never-event-adjacent indicator of the whole perioperative chain and the family conversation that treats it as our failure to predict rather than her failure to heal - [[public-health/health-systems-economics]], [[medical-ethics-law/professionalism-regulation]].**
+(a) Generally no prophylaxis for clean surgery without an implant in a low-risk patient, following NICE NG125 (laparoscopic hernia repairs usually do use mesh, which changes the decision). (b) Prophylaxis: clean surgery with a prosthesis, where infection would be catastrophic. (c) Prophylaxis covering gut organisms (aerobes and anaerobes), a single dose at induction with redosing if prolonged. (d) A treatment course: the abdomen is already infected, so antibiotics continue after surgery for a defined period guided by clinical progress and source control.
 :::
 :::
 
-::: exercise Design the perianal sepsis rule {level=3}
-Your unit's ischiorectal abscess recurrences and seton-clinic non-attendance are outliers. Build the pathway: drainage standards, fistula-in-ano prevention talk, seton clinic design, and the Crohn's and immunosuppression flags.
+::: exercise Swollen leg in a person who injects drugs {level=3}
+A 34-year-old man who injects drugs presents with a painful, swollen groin and upper thigh, a temperature of 39.5 °C, heart rate 130/min and blood pressure 88/50 mmHg. There is a fluctuant mass in the groin near an injection site, and the skin over the thigh is tense, dusky and has a blister. Give a differential diagnosis, the investigations, and the immediate management. What specific danger must be considered before any incision in the groin?
 ::: solution
-**Perianal-pathway-build ([[#def-ssi]], [[#def-healing]], [[gastrointestinal/bowel-disease]]): the-drainage-standards (the 'antibiotics do not drain an ischioanal space' rule and the exam-under-anaesthesia-for-deep-and-bilateral-and-horseshoe-extension-mapping-and-the-counter-incision-drainage-sets-and-the-avoid-the-external-sphincter-in-primary-drainage-principle with the sphincter-sparing-seton-for-tracts-through-muscle and the MRSA-and-gram-negative-cultures-and-the-immunosuppressed-and-diabetic-and-neutropaemic-broad-cover-adjacency where perianal sepsis becomes life-limiting and the necrotising-perineum-Fournier's-escalation-threshold written large), the fistula-in-ano-forecast-into-the-consent (the 'one in three get a fistula and here is why' conversation and the seton-explanation-with-diagrams-and-video and the proctector-nurse-contact-at-discharge not at recurrence), the seton-clinic-reality-engineering (the open-access-triage-and-24-hour-worsening-pain-and-fever-line and the appt-times-outside-working-hours-and-childcare-and-transport-addressed-and-text-in-two-languages and the DNA-outreach-with-named-nurse-call-because-DNA-in-perianal-disease-is-pain-and-sepsis-accumulating-not-non-compliance and the day-case-tract-intervention-LIFT-and-advancement-flap-and-fibrin-glue-and-plug-options-with-their-recurrence-rates-honestly-compared and the faecal-urgency-and-seepage-counselling-before-anything-near-the-sphincter), and the-flags-that-change-everything (the-Crohn's-suspicion-triggers - young-plus-recurrent-plus-painless-plus-tagging-plus-extra-intestinal-clues - with the faecal-calprotectein-and-CRP-and-MRI-pelvis-with-gadolinium-and-colonoscopy-and-anal-ultrasound-and-theIBD-MDT-and-seton-not-fistulotomy-in-Crohn's principle and the HIV-and-diabetes-and-neutropenia-and-biologic-therapy-and-steroid-adjacency and the malignancy-mimic-biopsy-of-indurated-non-healing-chronic-fistula-tracts-squamous-adjacency), and the audit spine - the recurrence-and-incontinence-scored-and-PRO-and-DNA-equity-stratified-published-and-the-MDT-for-every-second-drainage, because the outliers hide in 'he just didn't come back' - [[gastrointestinal/bowel-disease]], [[immunology/immunodeficiency]].**
+**Differential:** groin abscess at an injection site; necrotising soft-tissue infection (tense, dusky skin with blistering and shock suggests it); infected **femoral artery pseudoaneurysm** from injection into the artery; septic thrombophlebitis or deep vein thrombosis; septic arthritis of the hip; clostridial infection (including from contaminated drugs).
+
+**Investigations:** blood cultures, lactate, full blood count, CRP, kidney function, glucose, blood-borne virus testing with consent; urgent duplex ultrasound or CT angiography of the groin.
+
+**Immediate management:** sepsis resuscitation and broad-spectrum antibiotics including clindamycin per local guidance; urgent senior surgical review; theatre for debridement if necrotising infection is confirmed; non-judgemental care with attention to pain, opioid substitution and withdrawal.
+
+**Danger:** a pulsatile groin mass may be a **pseudoaneurysm**. Incising it as an abscess can cause catastrophic haemorrhage. Imaging and vascular surgical involvement come before any incision near the femoral vessels in someone who injects.
 :::
 :::
 
+::: exercise Designing a burst abdomen prevention plan {level=3}
+Your unit has had three fascial dehiscences after emergency laparotomy in six months. Using the biology of healing and the evidence in this chapter, design a prevention plan covering the patient, the closure technique and the postoperative period.
+::: solution
+**Patient factors:** identify high-risk patients at the time of surgery (age over 65, emergency surgery, contamination, malnutrition, steroids, obesity, chronic lung disease, jaundice). Optimise what can be changed quickly: nutritional support from day 1, glucose control, reduce steroid doses where safe.
+
+**Closure:** close the fascia with a continuous slowly absorbable monofilament suture using the **small-bites technique** with a suture-to-wound length ratio of at least 4:1; consider prophylactic mesh in very high-risk patients according to local evidence; avoid closing under excessive tension and use temporary abdominal closure if the abdomen is swollen or heavily contaminated; take SSI prevention measures (wound protectors, warming, oxygenation, perfusion).
+
+**After surgery:** treat cough and chest infection, prevent and treat ileus and vomiting, avoid constipation and straining, support the wound when coughing, and recognise a pink serous discharge as an urgent warning sign.
+
+**Audit:** record technique and suture length to wound length for every closure, track dehiscence, SSI and incisional hernia at one year, and review each case at the morbidity and mortality meeting.
+:::
+:::
