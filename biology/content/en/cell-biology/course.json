@@ -7,9 +7,24 @@
   "order": 10,
   "tagline": "Cells and their membranes, organelles, protein traffic, the cytoskeleton, signalling, the cell cycle and cell death",
   "summary": "Every living thing is made of cells, and most of biology happens inside them. This course covers the organisation of prokaryotic and eukaryotic cells, membranes and transport, organelles and the traffic of proteins between them, the cytoskeleton and cell movement, cell signalling, the cell cycle and its control, and how cells adhere, form tissues and die.",
-  "overview": [],
+  "overview": [
+    "Cell biology asks how the smallest living units work: how a few femtolitres to a few picolitres of crowded, watery chemistry, bounded by a membrane five nanometres thick, take in matter and energy, keep their insides different from the outside, build and position their parts, sense their surroundings, copy themselves and, when the time comes, die. Every other part of biology — genetics, physiology, development, neuroscience, ecology and evolution — rests on these processes, and so do medicine and biotechnology.",
+    "The course moves from the outside of the cell inwards and then out again. It begins with the cell theory, the two plans of cellular organisation and the microscopes we see cells with; then treats membranes and transport across them, including the membrane potential; the organelles of eukaryotic cells and the endosymbiotic origin of mitochondria and plastids; the sorting of proteins and the traffic of vesicles; the cytoskeleton, motor proteins and cell movement; cell signalling; the cell cycle and its control; and finally adhesion, the extracellular matrix, stem cells and programmed cell death. Molecular biochemistry and metabolism are treated in Chemistry Atlas's biochemistry course, to which these lessons link rather than repeat it; clinical applications belong to Medicine Atlas.",
+    "Cell biology can look like an endless catalogue of named parts. The way through is to keep asking quantitative questions — how big, how many, how fast, how much energy — and to look for the few principles that recur: the hydrophobic effect, electrochemical gradients, sorting signals, dynamic polymers and motors, switches with feedback, and the arithmetic of diffusion, binding and growth. Each lesson therefore puts numbers on its subject, with worked examples checked against standard sources such as Alberts, Lodish and Milo and Phillips, and tells how the key experiments were done and by whom."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "State the cell theory and distinguish prokaryotic (bacterial and archaeal) from eukaryotic cells by their organisation and molecular features.",
+    "Estimate cell and organelle sizes, copy numbers and diffusion times, using relations such as copy number = concentration × volume × Avogadro constant, and ⟨x²⟩ = 2Dt.",
+    "Explain the resolution limits of light and electron microscopy and how fluorescence, super-resolution and cryo-electron methods extend them.",
+    "Explain why lipids form bilayers, how membrane fluidity is controlled and measured, and how integral, peripheral and lipid-anchored proteins are arranged in membranes.",
+    "Calculate equilibrium potentials with the Nernst equation, resting potentials with the Goldman–Hodgkin–Katz equation, and the free energy of active and coupled transport.",
+    "Describe the organelles of eukaryotic cells, the evidence for the endosymbiotic origin of mitochondria and plastids, and the pathways that sort proteins to each compartment.",
+    "Analyse polymerisation and motor-protein data using critical concentrations, elongation rates, step sizes, forces and the statistics of dynamic instability.",
+    "Interpret receptor-binding and dose–response data, and explain how second messengers, kinase cascades and feedback produce amplification, adaptation and switch-like decisions.",
+    "Explain how cyclin-dependent kinases, proteolysis and checkpoints order the cell cycle, and interpret phase fractions and genetic experiments on cell-cycle control and cancer.",
+    "Describe cell junctions, the extracellular matrix, stem-cell renewal and the pathways of programmed cell death, and reason quantitatively about tissue homeostasis."
+  ],
   "chapters": [
     {
       "slug": "cells-and-microscopy",
@@ -83,8 +98,140 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1665,
+      "title": "Hooke names the cell",
+      "detail": "In Micrographia Robert Hooke described the box-like compartments he saw in thin slices of cork and called them cells.",
+      "people": [
+        "Robert Hooke"
+      ]
+    },
+    {
+      "year": 1676,
+      "title": "Leeuwenhoek sees microorganisms",
+      "detail": "In a letter to the Royal Society, Antonie van Leeuwenhoek described tiny 'animalcules' in water seen through his single-lens microscopes, including protists and, in this and later letters, bacteria.",
+      "people": [
+        "Antonie van Leeuwenhoek"
+      ]
+    },
+    {
+      "year": 1839,
+      "title": "The cell theory",
+      "detail": "Following Matthias Schleiden's 1838 account of plants, Theodor Schwann's Mikroskopische Untersuchungen argued that animals too are built of cells, establishing the cell as the unit of structure of all organisms.",
+      "people": [
+        "Matthias Schleiden",
+        "Theodor Schwann"
+      ]
+    },
+    {
+      "year": 1855,
+      "title": "Every cell from a cell",
+      "detail": "Rudolf Virchow, building on Robert Remak's observations of dividing cells, asserted omnis cellula e cellula: cells arise only by division of pre-existing cells.",
+      "people": [
+        "Rudolf Virchow",
+        "Robert Remak"
+      ]
+    },
+    {
+      "year": 1955,
+      "title": "Cell fractionation and electron microscopy reveal organelles",
+      "detail": "Christian de Duve identified lysosomes in fractions of rat liver, and George Palade described ribosomes in electron micrographs; with Albert Claude they shared the 1974 Nobel Prize for founding modern cell biology.",
+      "people": [
+        "Christian de Duve",
+        "George Palade",
+        "Albert Claude"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "The chemiosmotic hypothesis",
+      "detail": "Peter Mitchell proposed that respiration drives ATP synthesis through a proton gradient across the mitochondrial inner membrane, making electrochemical gradients a general energy currency of cells.",
+      "people": [
+        "Peter Mitchell"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Endosymbiotic origin of organelles",
+      "detail": "Lynn Margulis (then Sagan) assembled the evidence that mitochondria and chloroplasts descend from engulfed bacteria in 'On the origin of mitosing cells'.",
+      "people": [
+        "Lynn Margulis"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "The fluid-mosaic model",
+      "detail": "S. Jonathan Singer and Garth Nicolson described membranes as a fluid lipid bilayer in which proteins float and diffuse; in the same year John Kerr, Andrew Wyllie and Alastair Currie named apoptosis.",
+      "people": [
+        "S. Jonathan Singer",
+        "Garth Nicolson"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "The signal hypothesis tested",
+      "detail": "Günter Blobel and Bernhard Dobberstein showed that secretory proteins carry an N-terminal signal sequence that directs them into the endoplasmic reticulum and is removed there.",
+      "people": [
+        "Günter Blobel",
+        "Bernhard Dobberstein"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Cyclins discovered",
+      "detail": "Tim Hunt and colleagues described proteins destroyed at each division of sea-urchin embryos; with Leland Hartwell's cdc genes of budding yeast and Paul Nurse's cdc2 of fission yeast they revealed the CDK control system of the cell cycle (Nobel Prize, 2001).",
+      "people": [
+        "Tim Hunt",
+        "Leland Hartwell",
+        "Paul Nurse"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Molecular Biology of the Cell",
+      "authors": "Bruce Alberts, Rebecca Heald, Alexander Johnson, David Morgan, Martin Raff, Keith Roberts, Peter Walter",
+      "year": 2022,
+      "note": "7th edition. The standard comprehensive text; source of the organelle volume and membrane-area tables and many representative values used here."
+    },
+    {
+      "title": "Molecular Cell Biology",
+      "authors": "Harvey Lodish, Arnold Berk, Chris A. Kaiser, Monty Krieger, Anthony Bretscher, Hidde Ploegh, Kelsey C. Martin, Michael Yaffe, Angelika Amon",
+      "year": 2021,
+      "note": "9th edition. Strong on experimental methods and on the molecular detail of transport, trafficking and signalling."
+    },
+    {
+      "title": "Cell Biology by the Numbers",
+      "authors": "Ron Milo, Rob Phillips",
+      "year": 2015,
+      "note": "Order-of-magnitude estimates of cell sizes, copy numbers, rates and energies, with sources from the BioNumbers database; the model for the quantitative examples in this course."
+    },
+    {
+      "title": "Physical Biology of the Cell",
+      "authors": "Rob Phillips, Jane Kondev, Julie Theriot, Hernan G. Garcia",
+      "year": 2012,
+      "note": "2nd edition. Simple physical models of diffusion, membranes, polymerisation, motors and signalling, for readers who want the derivations."
+    },
+    {
+      "title": "Cell Biology",
+      "authors": "Thomas D. Pollard, William C. Earnshaw, Jennifer Lippincott-Schwartz, Graham T. Johnson",
+      "year": 2017,
+      "note": "3rd edition. A clear, well-illustrated alternative to Alberts, particularly good on the cytoskeleton, motors and the cell cycle."
+    },
+    {
+      "title": "The Cell Cycle: Principles of Control",
+      "authors": "David O. Morgan",
+      "year": 2007,
+      "note": "A concise monograph on CDKs, checkpoints, mitosis and cytokinesis across yeast, frogs and mammals."
+    },
+    {
+      "title": "Essential Cell Biology",
+      "authors": "Bruce Alberts, Karen Hopkin, Alexander Johnson, David Morgan, Martin Raff, Keith Roberts, Peter Walter",
+      "year": 2019,
+      "note": "5th edition. A shorter introduction for first-year students who want the main ideas before the detail."
+    }
+  ],
   "next": [
     "molecular-biology",
     "microbiology",
