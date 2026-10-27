@@ -204,7 +204,7 @@ A pile embedded in soil can be modelled as a bar with a distributed spring suppo
 ::: solution
 The weak form gains a term $\int_0^1 w\,u\,dx$, so each element gets, besides the stiffness $\frac{1}{L_e}[1, -1; -1, 1]$, a **foundation matrix** $\int\mathbf{N}^{\mathsf T}\mathbf{N}\,dx = \frac{L_e}{6}[2, 1; 1, 2]$ (the same integrals as the linear load in [[#prop-element]]). With one element ($L_e = 1$) and $u_1 = 0$, only the $(2,2)$ entries matter: $(1 + \tfrac13)u_2 = \tfrac12$, so $u_2 = 0.375$. Exact: $u = 1 - \cosh(1 - x)/\cosh 1$, $u(1) = 1 - 1/1.5431 = 0.3519$. Error $6.6\,\%$. With four elements the computed tip value is $0.3532$ (error $0.37\,\%$).
 
-*Check.* The answer is no longer nodally exact, because the unit-load response of a beam on a foundation is made of exponentials, not linear pieces, so the argument of [[#prop-nodal]] fails. It still converges, and from the expected side: the error shrinks by a factor of about 4 per halving of $L_e$.
+*Check.* The answer is no longer nodally exact, because the unit-load response of a bar on a foundation is made of exponentials, not linear pieces, so the argument of [[#prop-nodal]] fails. It still converges, and from the expected side: the error shrinks by a factor of about 4 per halving of $L_e$.
 :::
 :::
 

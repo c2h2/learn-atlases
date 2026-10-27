@@ -11,7 +11,7 @@ It helps to separate four kinds of error, because they have different cures.
 
 ::: definition Error measures {#def-error}
 Let $u$ be the exact solution of the mathematical model and $u_h$ the finite element solution on a mesh of characteristic element size $h$. The error $e = u - u_h$ is measured by
-- the **energy norm** $\|e\|_E = \left(\int_V \boldsymbol{\varepsilon}(e)^{\mathsf T}\mathbf{D}\,\boldsymbol{\varepsilon}(e)\,dV\right)^{1/2}$, twice the square root of the strain energy of the error field — the natural measure for stresses and strains;
+- the **energy norm** $\|e\|_E = \left(\int_V \boldsymbol{\varepsilon}(e)^{\mathsf T}\mathbf{D}\,\boldsymbol{\varepsilon}(e)\,dV\right)^{1/2}$, the square root of twice the strain energy of the error field — the natural measure for stresses and strains;
 - the **$L^2$ norm** $\|e\|_{L^2} = \left(\int_V e^2\,dV\right)^{1/2}$, an average measure for displacements;
 - **pointwise errors** in quantities of interest, such as the tip deflection or the peak stress at a fillet.
 
