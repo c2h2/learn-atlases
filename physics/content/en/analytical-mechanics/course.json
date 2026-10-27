@@ -17,18 +17,20 @@
     "math-methods"
   ],
   "outcomes": [
-    "Identify holonomic constraints and choose generalised coordinates.",
-    "Derive equations of motion from a Lagrangian, including generalised forces when the force is not conservative.",
-    "Reduce the central-force problem to an orbit equation and solve the Kepler problem.",
-    "Use the inertia tensor, principal axes and Euler’s equations for a rigid body.",
-    "Find normal modes and normal frequencies of a coupled system from a quadratic Lagrangian.",
-    "Write Hamilton’s equations, use Poisson brackets, and recognise a chaotic trajectory in a simple system such as the driven pendulum."
+    "Count degrees of freedom, classify constraints as holonomic or nonholonomic, and choose generalised coordinates that build the constraints in.",
+    "Derive Lagrange’s equations from d’Alembert’s principle and from Hamilton’s principle of stationary action, and use them with generalised forces and Lagrange multipliers.",
+    "Prove Noether’s theorem and use symmetries of the Lagrangian to find conserved momenta and the conserved energy function.",
+    "Reduce the two-body central-force problem to an effective one-dimensional problem, derive Kepler’s three laws, and compute orbits and Rutherford scattering angles.",
+    "Compute inertia tensors and principal axes, derive Euler’s equations, and explain torque-free precession and the instability of rotation about the intermediate axis.",
+    "Find the normal modes and frequencies of a coupled system from its mass and stiffness matrices, by hand and numerically.",
+    "Construct the Hamiltonian by a Legendre transformation, use Hamilton’s equations and Poisson brackets, check canonical transformations, and prove Liouville’s theorem.",
+    "Analyse fixed points of nonlinear systems, read Poincaré sections, and compute Lyapunov exponents for the driven damped pendulum and the logistic map."
   ],
   "chapters": [
     {
       "slug": "constraints",
       "title": "Constraints and virtual work",
-      "summary": "Holonomic constraints, generalised coordinates, and d’Alembert’s principle.",
+      "summary": "Holonomic constraints, generalised coordinates, d’Alembert’s principle, Lagrange’s equations and Lagrange multipliers.",
       "requires": [
         "mechanics/newton-laws",
         "math-methods/vector-calculus"
@@ -37,7 +39,7 @@
     {
       "slug": "lagrangian",
       "title": "Lagrange’s equations",
-      "summary": "The calculus of variations, the Euler–Lagrange equation, and ignorable coordinates.",
+      "summary": "The calculus of variations, Hamilton’s principle, cyclic coordinates and Noether’s theorem.",
       "requires": [
         "analytical-mechanics/constraints",
         "mechanics/work-energy"
@@ -46,7 +48,7 @@
     {
       "slug": "central-forces",
       "title": "Central forces",
-      "summary": "Reduction to one dimension, the orbit equation, Kepler’s problem and scattering angle.",
+      "summary": "Reduction to one body, the effective potential, Kepler orbits, Bertrand’s theorem and Rutherford scattering.",
       "requires": [
         "analytical-mechanics/lagrangian",
         "mechanics/gravitation"
@@ -55,7 +57,7 @@
     {
       "slug": "rigid-bodies",
       "title": "Rigid-body dynamics",
-      "summary": "The inertia tensor, principal axes, Euler’s equations and the free symmetric top.",
+      "summary": "The inertia tensor, principal axes, Euler’s equations, torque-free precession and the tennis-racket instability.",
       "requires": [
         "analytical-mechanics/lagrangian",
         "mechanics/angular-momentum"
@@ -64,7 +66,7 @@
     {
       "slug": "small-oscillations",
       "title": "Small oscillations",
-      "summary": "Equilibria, the matrices of T and V, normal modes and degeneracy.",
+      "summary": "Equilibria, the mass and stiffness matrices, the generalised eigenproblem, normal modes and their numerical computation.",
       "requires": [
         "analytical-mechanics/lagrangian",
         "oscillations/simple-harmonic"
@@ -73,7 +75,7 @@
     {
       "slug": "hamiltonian",
       "title": "Hamiltonian mechanics",
-      "summary": "Legendre transforms, Hamilton’s equations, phase space and Poisson brackets.",
+      "summary": "Legendre transforms, Hamilton’s equations, Poisson brackets, canonical transformations and Liouville’s theorem.",
       "requires": [
         "analytical-mechanics/lagrangian"
       ]
@@ -81,7 +83,7 @@
     {
       "slug": "chaos",
       "title": "Nonlinear dynamics",
-      "summary": "Fixed points, the driven pendulum, sensitivity to initial conditions and a Poincaré section.",
+      "summary": "Fixed points, the driven damped pendulum, Poincaré sections, Lyapunov exponents and the logistic map.",
       "requires": [
         "analytical-mechanics/hamiltonian"
       ]
@@ -89,51 +91,86 @@
   ],
   "history": [
     {
+      "year": 1743,
+      "title": "D’Alembert’s principle",
+      "detail": "In the Traité de dynamique, Jean le Rond d’Alembert reduced dynamics to statics by requiring the “lost forces” to be in equilibrium under the constraints, which eliminates the constraint forces.",
+      "people": [
+        "Jean le Rond d’Alembert"
+      ]
+    },
+    {
+      "year": 1765,
+      "title": "Euler’s rigid-body dynamics",
+      "detail": "Euler’s Theoria motus corporum solidorum seu rigidorum set out principal axes and the equations of rotation now named after him, which he had derived in Berlin memoirs of the 1750s.",
+      "people": [
+        "Leonhard Euler"
+      ]
+    },
+    {
       "year": 1788,
       "title": "Mécanique analytique",
-      "detail": "Lagrange’s treatise contains no diagrams. It derives the equations of motion from a single variational principle and treats constraints by the choice of coordinates.",
+      "detail": "Lagrange’s treatise, famously without a single figure, derived all of mechanics from the principle of virtual work in arbitrary coordinates, with multipliers for constraints and a general theory of small oscillations.",
       "people": [
         "Joseph-Louis Lagrange"
       ]
     },
     {
       "year": 1834,
-      "title": "Hamilton’s general method",
-      "detail": "Hamilton’s two essays of 1834 and 1835 recast dynamics as a system of first-order equations in phase space and introduced the principal function.",
+      "title": "Hamilton’s general method in dynamics",
+      "detail": "Hamilton’s two essays in the Philosophical Transactions of 1834 and 1835 stated the principle of stationary action with fixed end times and introduced the canonical equations and the principal function.",
       "people": [
         "William Rowan Hamilton"
       ]
     },
     {
+      "year": 1838,
+      "title": "Liouville’s theorem",
+      "detail": "Joseph Liouville proved the result on solutions of differential equations that implies the conservation of phase-space volume under Hamiltonian flow, later the foundation of statistical mechanics.",
+      "people": [
+        "Joseph Liouville"
+      ]
+    },
+    {
       "year": 1842,
-      "title": "Jacobi’s lectures",
-      "detail": "Jacobi simplified Hamilton’s method, introduced the transformation theory, and showed how a complete integral of the Hamilton–Jacobi equation solves the motion.",
+      "title": "Jacobi’s lectures on dynamics",
+      "detail": "Jacobi’s Königsberg lectures of 1842–43, published in 1866, developed canonical transformations and the Hamilton–Jacobi method of solving problems through a complete integral.",
       "people": [
         "Carl Gustav Jacob Jacobi"
       ]
     },
     {
-      "year": 1918,
-      "title": "Noether’s theorem",
-      "detail": "Emmy Noether proved that every continuous symmetry of the action yields a conservation law. Energy, momentum and angular momentum are the cases this course uses.",
-      "people": [
-        "Emmy Noether"
-      ]
-    },
-    {
       "year": 1890,
       "title": "Poincaré and the three-body problem",
-      "detail": "Poincaré showed that the three-body problem does not have the integrals earlier mathematicians had hoped for, and found the homoclinic tangle that begins the modern study of chaos.",
+      "detail": "In his corrected prize memoir in Acta Mathematica, Poincaré showed that the three-body problem has orbits of tangled complexity and lacks the analytic integrals hoped for, the beginning of the modern study of chaos.",
       "people": [
         "Henri Poincaré"
       ]
     },
     {
-      "year": 1963,
-      "title": "A deterministic nonperiodic flow",
-      "detail": "Edward Lorenz’s three equations for a model of convection have solutions that stay bounded and never repeat. The paper is the public start of chaos as a subject physicists compute.",
+      "year": 1918,
+      "title": "Noether’s theorem",
+      "detail": "In “Invariante Variationsprobleme”, Emmy Noether proved that every continuous symmetry of an action gives a conservation law, for mechanics and for field theories alike.",
       "people": [
-        "Edward Lorenz"
+        "Emmy Noether"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "Deterministic nonperiodic flow",
+      "detail": "Edward Lorenz showed that three simple equations for convection have bounded solutions that never repeat and depend sensitively on initial conditions; the KAM theorem on the survival of invariant tori was completed in the same years.",
+      "people": [
+        "Edward Lorenz",
+        "Andrey Kolmogorov",
+        "Vladimir Arnold",
+        "Jürgen Moser"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "Feigenbaum’s universal constant",
+      "detail": "Mitchell Feigenbaum published the discovery that period-doubling cascades in all single-humped maps share the ratio δ = 4.6692…, later observed in convection, electronic circuits and lasers.",
+      "people": [
+        "Mitchell Feigenbaum"
       ]
     }
   ],
@@ -142,31 +179,43 @@
       "title": "Classical Mechanics",
       "authors": "John R. Taylor",
       "year": 2005,
-      "note": "The right first book on Lagrangians. Chapters 6 to 13 cover this course except the deepest parts of rigid-body motion."
+      "note": "The best first book on Lagrangians: clear, careful and full of worked examples. Chapters 6–13 cover this course, and Chapter 12 is an excellent numerical introduction to the driven damped pendulum."
     },
     {
-      "title": "Introduction to Classical Mechanics",
-      "authors": "David Morin",
-      "year": 2008,
-      "note": "Superb problems, with full solutions, especially on Lagrangians and central forces."
+      "title": "Classical Dynamics of Particles and Systems",
+      "authors": "Stephen T. Thornton and Jerry B. Marion",
+      "year": 2004,
+      "note": "Fifth edition. A standard intermediate text with many problems on central forces, rigid bodies and coupled oscillations."
     },
     {
       "title": "Classical Mechanics",
       "authors": "Herbert Goldstein, Charles Poole and John Safko",
       "year": 2002,
-      "note": "Third edition. The traditional graduate text. Use it for rigid bodies, canonical transformations and Hamilton–Jacobi theory."
+      "note": "Third edition. The traditional graduate text: rigid bodies, canonical transformations, Hamilton–Jacobi theory, and a proof of Bertrand’s theorem in an appendix."
     },
     {
       "title": "Mechanics",
       "authors": "L. D. Landau and E. M. Lifshitz",
       "year": 1976,
-      "note": "Third edition. Short, sharp and opinionated. Read it after Taylor, not before."
+      "note": "Third edition. Short, deep and opinionated; derives everything from symmetry and the action. Read it after Taylor, not before."
     },
     {
-      "title": "Classical Dynamics",
-      "authors": "David Tong",
-      "year": 2005,
-      "note": "Cambridge lecture notes, free online. A clean modern route through the same material, including a little field theory at the end."
+      "title": "Classical Dynamics: A Contemporary Approach",
+      "authors": "Jorge V. José and Eugene J. Saletan",
+      "year": 1998,
+      "note": "A modern geometric treatment that connects Lagrangian and Hamiltonian mechanics to manifolds, symplectic structure, perturbation theory and chaos."
+    },
+    {
+      "title": "Nonlinear Dynamics and Chaos",
+      "authors": "Steven H. Strogatz",
+      "year": 2015,
+      "note": "Second edition. The standard introduction to fixed points, bifurcations, the logistic map, Feigenbaum universality and the Lorenz equations, with physical applications throughout."
+    },
+    {
+      "title": "Mathematical Methods of Classical Mechanics",
+      "authors": "V. I. Arnold",
+      "year": 1989,
+      "note": "Second edition. The mathematician’s classic: symplectic geometry, Liouville’s theorem, action–angle variables and an overview of the KAM theorem."
     }
   ],
   "next": [
