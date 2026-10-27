@@ -29,8 +29,8 @@ The $\eta(A, B) = \frac{2 \left| (1 + 2 \times 10^{-12}) - 1 \right|}{(1 + 2 \ti
 ## Schiff
 
 ::: proposition The Schiff {#thm-schiff}
-The $\eta_{	ext{Schiff}} = \left| rac{m_g}{m_0} - 1 
-ight|$ (the two, and the two, of the same `1`), the $\eta_{	ext{Schiff}} = 0$ (the two, and the two, of the same `0`), for the all bodies (the two, and the two as the two, and the two, of the same all bodies), the $rac{m_g}{m_0} = 1$ (the two, and the two, of the same `1`), and the two, the $\eta_{	ext{Schiff}} = 0$ and the $rac{m_g}{m_0} = 1$, as the two, and the two as the two, the $\eta_{	ext{Schiff}}$ and the $rac{m_g}{m_0}$, of the same Schiff), and the two combined as the content of the Schiff for the $\eta_{	ext{Schiff}} = 0$.
+The $\eta_{\text{Schiff}} = \left| \frac{m_g}{m_0} - 1 
+ight|$ (the two, and the two, of the same `1`), the $\eta_{\text{Schiff}} = 0$ (the two, and the two, of the same `0`), for the all bodies (the two, and the two as the two, and the two, of the same all bodies), the $\frac{m_g}{m_0} = 1$ (the two, and the two, of the same `1`), and the two, the $\eta_{\text{Schiff}} = 0$ and the $\frac{m_g}{m_0} = 1$, as the two, and the two as the two, the $\eta_{\text{Schiff}}$ and the $\frac{m_g}{m_0}$, of the same Schiff), and the two combined as the content of the Schiff for the $\eta_{\text{Schiff}} = 0$.
 :::
 
 ::: warning The $m_g$, and the $m_0$

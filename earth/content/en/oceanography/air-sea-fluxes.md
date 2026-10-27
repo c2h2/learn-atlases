@@ -37,7 +37,7 @@ Buoyancy. The two combine non-linearly, because cold salty water is dense and wa
 :::
 
 ::: example Wind stress and the Charnock roughness {#ex-stress}
-Find the wind stress and the Charnock roughness length for a **10-m** wind of **10 m s⁻¹** and of **20 m s⁻¹** over the open ocean, taking $\rho_a = 1.2\ \mathrm{kg\,m^{-3}}$ and $C_D = 1.5	imes10^{-3}$ at the lower wind and $C_D = 2.0	imes10^{-3}$ at the higher.
+Find the wind stress and the Charnock roughness length for a **10-m** wind of **10 m s⁻¹** and of **20 m s⁻¹** over the open ocean, taking $\rho_a = 1.2\ \mathrm{kg\,m^{-3}}$ and $C_D = 1.5\times10^{-3}$ at the lower wind and $C_D = 2.0\times10^{-3}$ at the higher.
 ::: solution
 $$
 \tau(10) = 1.2\times1.5\times10^{-3}\times10^{2} = 0.18\ \mathrm{N\,m^{-2}}, \qquad

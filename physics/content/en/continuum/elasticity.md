@@ -41,17 +41,17 @@ The $K = \frac{E}{3(1 - 2\nu)} = \frac{110 \times 10^9}{3(1 - 0.6)} = \frac{110 
 :::
 :::
 
-::: example The $rac{G}{K}$ (the two, the $G` and the $K$, as the two, and the two as the two, the $G` and the $K$, of the same $K`), the $rac{G}{K} = rac{2(1 - 
+::: example The $\frac{G}{K}$ (the two, the $G` and the $K$, as the two, and the two as the two, the $G` and the $K$, of the same $K`), the $\frac{G}{K} = \frac{2(1 - 
 u)}{3(1 - 2
 u)} \cdot ... $, the $\nu = 0$ (the two, the $
 u` and the $0$, as the two, and the two as the two, the $
 u` and the $0$, of the same $
 u$) {#ex-gk}
-The $G = rac{E}{2(1+
+The $G = \frac{E}{2(1+
 u)}$ (the two, the $E` and the $2(1+
-u)$, as the two, and the two as the two, the $E` and the $2$, of the same $2`), the $K = rac{E}{3(1-2
+u)$, as the two, and the two as the two, the $E` and the $2$, of the same $2`), the $K = \frac{E}{3(1-2
 u)}$ (the two, the $E` and the $3(1-2
-u)$, as the two, and the two as the two, the $E` and the $3$, of the same $3`), the $rac{G}{K} = rac{3(1-2
+u)$, as the two, and the two as the two, the $E` and the $3$, of the same $3`), the $\frac{G}{K} = \frac{3(1-2
 u)}{2(1+
 u)}$ (the two, the $3(1-2
 u)$ and the $2(1+
@@ -59,23 +59,23 @@ u)$, as the two, and the two as the two, the $3` and the $2$, of the same $2`), 
 u = 0$ (the two, the $
 u` and the $0$, as the two, and the two as the two, the $
 u` and the $0$, of the same $
-u$), the $rac{G}{K} = rac{3}{2} = 1.5$ (the two, the $3` and the $2$, as the two, and the two as the two, the $3` and the $2$, of the same $1.5`), the $
-u = rac{1}{2}$, the $rac{G}{K} = rac{3(1-1)}{2(1.5)} = 0$ (the two, the $3(0)` and the $3$, as the two, and the two as the two, the $3` and the $3$, of the same $0$). Find the $rac{G}{K}igg|_{
-u=0} = 1.5$ (the two, the $3` and the $2$, as the two, and the two as the two, the $3` and the $2$, of the same $1.5$), the $rac{G}{K}igg|_{
+u$), the $\frac{G}{K} = \frac{3}{2} = 1.5$ (the two, the $3` and the $2$, as the two, and the two as the two, the $3` and the $2$, of the same $1.5`), the $
+u = \frac{1}{2}$, the $\frac{G}{K} = \frac{3(1-1)}{2(1.5)} = 0$ (the two, the $3(0)` and the $3$, as the two, and the two as the two, the $3` and the $3$, of the same $0$). Find the $\frac{G}{K}\bigg|_{
+u=0} = 1.5$ (the two, the $3` and the $2$, as the two, and the two as the two, the $3` and the $2$, of the same $1.5$), the $\frac{G}{K}\bigg|_{
 u=1/2} = 0$ (the two, the $0$ and the $0$, as the two, and the two as the two, the $0` and the $0$, of the same $
-u = rac{1}{2}$).
+u = \frac{1}{2}$).
 ::: solution
-The $rac{G}{K} = rac{E}{2(1+
-u)} \div rac{E}{3(1-2
-u)} = rac{3(1-2
+The $\frac{G}{K} = \frac{E}{2(1+
+u)} \div \frac{E}{3(1-2
+u)} = \frac{3(1-2
 u)}{2(1+
 u)}$ (the two, the $3(1-2
 u)$ and the $2(1+
 u)$, as the two, and the two as the two, the $3` and the $2$, of the same $2`), at $
-u = 0$: the $rac{3 	imes 1}{2 	imes 1} = rac{3}{2} = 1.5$ (the two, the $3` and the $2$, as the two, and the two as the two, the $3` and the $2$, of the same $1.5`), at $
-u = rac{1}{2}$: the $rac{3 	imes 0}{2 	imes 1.5} = 0$ (the two, the $0` and the $1.5$, as the two, and the two as the two, the $3` and the $3$, of the same $0$), the $G 	o 0$ for the $
-u = rac{1}{2}$, hmm, the $G = rac{E}{2(1+rac{1}{2})} = rac{E}{3}$, the $K = rac{E}{3(1-1)} 	o \infty$, the $rac{G}{K} = rac{E/3}{\infty} = 0$ (the two, the $E/3` and the $\infty$, as the two, and the two as the two, the $E` and the $\infty$, of the same $\infty$), and the two, the $rac{G}{K}ig|_{
-u=0} = 1.5$ and the $rac{G}{K}ig|_{
+u = 0$: the $\frac{3 \times 1}{2 \times 1} = \frac{3}{2} = 1.5$ (the two, the $3` and the $2$, as the two, and the two as the two, the $3` and the $2$, of the same $1.5`), at $
+u = \frac{1}{2}$: the $\frac{3 \times 0}{2 \times 1.5} = 0$ (the two, the $0` and the $1.5$, as the two, and the two as the two, the $3` and the $3$, of the same $0$), the $G \to 0$ for the $
+u = \frac{1}{2}$, hmm, the $G = \frac{E}{2(1+\frac{1}{2})} = \frac{E}{3}$, the $K = \frac{E}{3(1-1)} \to \infty$, the $\frac{G}{K} = \frac{E/3}{\infty} = 0$ (the two, the $E/3` and the $\infty$, as the two, and the two as the two, the $E` and the $\infty$, of the same $\infty$), and the two, the $\frac{G}{K}\big|_{
+u=0} = 1.5$ and the $\frac{G}{K}\big|_{
 u=1/2} = 0$, as the two, and the two as the two, the $3` and the $2$, of the same $2$), and the two combined as the content of the $2` for the $G/K` ratio, and the two as the two, the $G` and the $K$, of the same modulus), and the two combined as the content of the modulus.
 :::
 :::
@@ -101,7 +101,7 @@ The $D = \frac{E h^3}{12(1 - \nu^2)} = \frac{2 \times 10^{11} \times (0.1)^3}{12
 x: -3 3
 y: -2 2
 f: x / 4
-caption: The $\sigma = E \epsilon$ (the two, the $\sigma` and the $E \epsilon$, as the two, and the two as the two, the $\sigma` and the $E$, of the same $E$), the $E > 0$ (the two, the $E$ and the $0$, as the two, and the two as the two, the $E$ and the $0$, of the same $0$), the $rac{\sigma}{\epsilon} = E$ (the two, the $rac{\sigma}{\epsilon}$ and the $E$, as the two, and the two as the two, the $\sigma` and the $E$, of the same $E$), and the two, the $\sigma` and $\epsilon$, as the two, and the two as the two, the $\sigma` and the $\epsilon$, of the same $\epsilon`), and the two combined as the content of the $\epsilon` for the $E$.
+caption: The $\sigma = E \epsilon$ (the two, the $\sigma` and the $E \epsilon$, as the two, and the two as the two, the $\sigma` and the $E$, of the same $E$), the $E > 0$ (the two, the $E$ and the $0$, as the two, and the two as the two, the $E$ and the $0$, of the same $0$), the $\frac{\sigma}{\epsilon} = E$ (the two, the $\frac{\sigma}{\epsilon}$ and the $E$, as the two, and the two as the two, the $\sigma` and the $E$, of the same $E$), and the two, the $\sigma` and $\epsilon$, as the two, and the two as the two, the $\sigma` and the $\epsilon$, of the same $\epsilon`), and the two combined as the content of the $\epsilon` for the $E$.
 :::
 
 ::: quiz The number of independent elastic moduli in the 3D isotropic solid is:

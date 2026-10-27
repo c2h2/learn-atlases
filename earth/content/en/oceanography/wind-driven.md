@@ -55,7 +55,7 @@ M_E = \frac{\tau_x}{\rho f} = \frac{0.12}{1025\times4.2\times10^{-5}} = 2780\ \m
 $$
 directed $90°$ to the right of the wind — for an eastward wind in the Northern hemisphere that is northward, since $M_E = \hat{\mathbf{z}}\times\boldsymbol{\tau}/\rho f$ and $\hat{\mathbf{z}}\times\hat{\mathbf{x}} = \hat{\mathbf{y}}$. The stress curl is
 $$
-\mathrm{curl}\,\boldsymbol{\tau} = -\frac{\partial\tau_x}{\partial y} = \frac{0.12}{3	imes10^{6}} = 4.0\times10^{-8}\ \mathrm{N\,m^{-3}},
+\mathrm{curl}\,\boldsymbol{\tau} = -\frac{\partial\tau_x}{\partial y} = \frac{0.12}{3\times10^{6}} = 4.0\times10^{-8}\ \mathrm{N\,m^{-3}},
 $$
 and
 $$

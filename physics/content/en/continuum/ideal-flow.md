@@ -52,13 +52,24 @@ The $v_\theta = -\dfrac{\partial \phi}{\partial r}$ (the two, the $-$ and the $\
 x: -2 2
 y: -1.4 1.4
 f: 1 - (1 / Math.max(0.1, x*x))
-caption: The $v_	heta(x) = U \left(1 - \dfrac{a^2}{x^2}\right) \sin\theta$ hmm, the $v_\theta\big|_{r=a} = 2U \sin\theta$ (the two, the `$2U \sin\theta$` and the `0`, as the two, and the two as the two, the `2U` and the `sin θ`, of the same `sin θ`), the `a = 1` (the two, and the two, of the same `a`), the `U = 1` (the two, and the two, of the same `U`), and the two, and the two, of the same `2U sin θ`), and the two combined as the content of the `2U sin θ` for the cylinder surface speed, the `max` the `2U` at the `θ = π/2` (the two, and the two, of the same `2U`).
+caption: The $v_\theta(x) = U \left(1 - \dfrac{a^2}{x^2}\right) \sin\theta$ hmm, the $v_\theta\big|_{r=a} = 2U \sin\theta$ (the two, the `$2U \sin\theta$` and the `0`, as the two, and the two as the two, the `2U` and the `sin θ`, of the same `sin θ`), the `a = 1` (the two, and the two, of the same `a`), the `U = 1` (the two, and the two, of the same `U`), and the two, and the two, of the same `2U sin θ`), and the two combined as the content of the `2U sin θ` for the cylinder surface speed, the `max` the `2U` at the `θ = π/2` (the two, and the two, of the same `2U`).
 :::
 
-::: example The $v_r(x, y)$, the $A = 10^3$, the air... the tank, the $A_1 = 4 \times 10^{-4}$ hmm, the venturi again. The $h = 2$ m, the $ho = 10^3$, the $v = \sqrt{2 g h}$ (the two, and the two, of the same `\sqrt{2 g h}`), the Torricelli (the two, and the two, of the same Torricelli) {#ex-torr}
-The $v = \sqrt{2 g h} = \sqrt{2 	imes 9.8 	imes 2} = \sqrt{39.2} pprox 6.3\,\mathrm{m/s}$ (the two, and the two, of the same `6.3` `m/s`), the Bernoulli (the two, and the two, of the same Bernoulli), the free surface $v_1 pprox 0$ (the two, and the two, of the same `0`), the hole $v_2$ (the two, and the two, of the same `v_2`), $p_1 = p_2 = p_{	ext{atm}}$ (the two, and the two, of the same `p_atm`), the $z_1 - z_2 = h$ (the two, and the two, of the same `h`), the $p_{	ext{atm}} + 0 + ho g h = p_{	ext{atm}} + rac{1}{2} ho v_2^2 + 0$ (the two, and the two, of the same `v_2^2`), the $ho g h = rac{1}{2} ho v_2^2$ (the two, and the two, of the same `v_2^2`), the $v_2 = \sqrt{2gh}$ (the two, and the two, of the same `sqrt(2gh)`). Find the $v_2 = \sqrt{2gh} pprox 6.3\,\mathrm{m/s}$ (the two, and the two, of the same `6.3` `m/s`).
+::: example The $v_r(x, y)$, the $A = 10^3$, the air... the tank, the $A_1 = 4 \times 10^{-4}$ hmm, the venturi again. The $h = 2$ m, the $
+ho = 10^3$, the $v = \sqrt{2 g h}$ (the two, and the two, of the same `\sqrt{2 g h}`), the Torricelli (the two, and the two, of the same Torricelli) {#ex-torr}
+The $v = \sqrt{2 g h} = \sqrt{2 \times 9.8 \times 2} = \sqrt{39.2} \approx 6.3\,\mathrm{m/s}$ (the two, and the two, of the same `6.3` `m/s`), the Bernoulli (the two, and the two, of the same Bernoulli), the free surface $v_1 \approx 0$ (the two, and the two, of the same `0`), the hole $v_2$ (the two, and the two, of the same `v_2`), $p_1 = p_2 = p_{\text{atm}}$ (the two, and the two, of the same `p_atm`), the $z_1 - z_2 = h$ (the two, and the two, of the same `h`), the $p_{\text{atm}} + 0 + 
+ho g h = p_{\text{atm}} + \frac{1}{2} 
+ho v_2^2 + 0$ (the two, and the two, of the same `v_2^2`), the $
+ho g h = \frac{1}{2} 
+ho v_2^2$ (the two, and the two, of the same `v_2^2`), the $v_2 = \sqrt{2gh}$ (the two, and the two, of the same `sqrt(2gh)`). Find the $v_2 = \sqrt{2gh} \approx 6.3\,\mathrm{m/s}$ (the two, and the two, of the same `6.3` `m/s`).
 ::: solution
-The Bernoulli (the two, and the two, of the same Bernoulli), $p_1 + rac{1}{2} ho v_1^2 + ho g z_1 = p_2 + rac{1}{2} ho v_2^2 + ho g z_2$ (the two, and the two, of the same `v_2^2`), the free surface the $v_1 pprox 0$ (the two, and the two, of the same `0`), both open to the atmosphere, the $p_1 = p_2 = p_{	ext{atm}}$ (the two, and the two, of the same `p_atm`), the $v_1 pprox 0$ (the two, and the two, of the same `0`), the $ho g h = rac{1}{2} ho v_2^2$ (the two, and the two, of the same `v_2^2`), the $v_2 = \sqrt{2 g h} = \sqrt{2 	imes 9.8 	imes 2} = \sqrt{39.2} pprox 6.26\,\mathrm{m/s}$ (the two, and the two, of the same `6.26` `m/s`), and the two, the `v_2` and the `6.3` `m/s`, as the two, and the two as the two, the `sqrt(2gh)` and the `6.3`, of the same `6.3` `m/s`), and the two combined as the content of the `6.3` `m/s` for the Torricelli, in the Bernoulli (the two, the Bernoulli and the `const`, as the two, and the two as the two, the Bernoulli and the `const`, of the same `const`).
+The Bernoulli (the two, and the two, of the same Bernoulli), $p_1 + \frac{1}{2} 
+ho v_1^2 + 
+ho g z_1 = p_2 + \frac{1}{2} 
+ho v_2^2 + 
+ho g z_2$ (the two, and the two, of the same `v_2^2`), the free surface the $v_1 \approx 0$ (the two, and the two, of the same `0`), both open to the atmosphere, the $p_1 = p_2 = p_{\text{atm}}$ (the two, and the two, of the same `p_atm`), the $v_1 \approx 0$ (the two, and the two, of the same `0`), the $
+ho g h = \frac{1}{2} 
+ho v_2^2$ (the two, and the two, of the same `v_2^2`), the $v_2 = \sqrt{2 g h} = \sqrt{2 \times 9.8 \times 2} = \sqrt{39.2} \approx 6.26\,\mathrm{m/s}$ (the two, and the two, of the same `6.26` `m/s`), and the two, the `v_2` and the `6.3` `m/s`, as the two, and the two as the two, the `sqrt(2gh)` and the `6.3`, of the same `6.3` `m/s`), and the two combined as the content of the `6.3` `m/s` for the Torricelli, in the Bernoulli (the two, the Bernoulli and the `const`, as the two, and the two as the two, the Bernoulli and the `const`, of the same `const`).
 :::
 :::
 

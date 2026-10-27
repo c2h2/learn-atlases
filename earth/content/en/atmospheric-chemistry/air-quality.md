@@ -48,7 +48,7 @@ Air-quality law has three generations, each invented in a crisis. **First genera
 ::: example The benefits–cost ratio {#ex-bcr}
 The EPA's 2011 retrospective put the Clean Air Act's 1970–2020 monetised benefits at ~$30 trillion against costs of ~$1.5 trillion (roughly 20:1, 30:1 in the mortality-inclusive central case). If a mid-sized country with 60 million people considers a package cutting PM2.5 by 4 µg m⁻³, uses a benefit of $30,000 per statistical-life-year, and values lives as 15 life-years per premature death averted among 20,000 annual air-pollution deaths, find the benefit and whether a $6 billion programme passes.
 ::: solution
-$2\times10^{4}$ deaths $	imes$ 15 life-years = $3\times10^{5}$ life-years, times $\$3\times10^{4}$ per life-year = **$9 billion** — the programme passes at 1.5:1, and the example shows the structure of every air-quality decision: benefits are diffuse, statistical and in lives; costs are concentrated, immediate and in dollars, which is why the field runs on benefit–cost arithmetic and why the arithmetic keeps coming out in favour of cleanup.
+$2\times10^{4}$ deaths $\times$ 15 life-years = $3\times10^{5}$ life-years, times $\$3\times10^{4}$ per life-year = **$9 billion** — the programme passes at 1.5:1, and the example shows the structure of every air-quality decision: benefits are diffuse, statistical and in lives; costs are concentrated, immediate and in dollars, which is why the field runs on benefit–cost arithmetic and why the arithmetic keeps coming out in favour of cleanup.
 :::
 :::
 

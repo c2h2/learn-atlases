@@ -155,12 +155,12 @@ The stack holds one node $x$. Threads 1 and 2 call `push(a)` and `push(b)` at th
 | 2 reads `top` | $x$ | — | — | thread 2's `old` $= x$ |
 | 1 writes `a.next` | $x$ | $x$ | — | $a$ is still private to thread 1 |
 | 2 writes `b.next` | $x$ | $x$ | $x$ | $b$ is still private to thread 2 |
-| 1: CAS($x 	o a$) | $a$ | $x$ | $x$ | succeeds: **push(a) linearises here** |
-| 2: CAS($x 	o b$) | $a$ | $x$ | $x$ | fails: `top` is $a$; C11 copies $a$ into thread 2's `old` |
+| 1: CAS($x \to a$) | $a$ | $x$ | $x$ | succeeds: **push(a) linearises here** |
+| 2: CAS($x \to b$) | $a$ | $x$ | $x$ | fails: `top` is $a$; C11 copies $a$ into thread 2's `old` |
 | 2 writes `b.next` | $a$ | $x$ | $a$ | retry with `old` $= a$ |
-| 2: CAS($a 	o b$) | $b$ | $x$ | $a$ | succeeds: **push(b) linearises here** |
+| 2: CAS($a \to b$) | $b$ | $x$ | $a$ | succeeds: **push(b) linearises here** |
 
-The final list is $b 	o a 	o x$, the result of the sequential history `push(a)`, `push(b)`. Thread 2's failed CAS did no harm: it changed nothing, and its effect was to make thread 2 redo its two cheap steps. Had the CAS been replaced by a plain store, thread 2 would have set `top` $= b$ with `b.next` $= x$, losing $a$.
+The final list is $b \to a \to x$, the result of the sequential history `push(a)`, `push(b)`. Thread 2's failed CAS did no harm: it changed nothing, and its effect was to make thread 2 redo its two cheap steps. Had the CAS been replaced by a plain store, thread 2 would have set `top` $= b$ with `b.next` $= x$, losing $a$.
 :::
 :::
 
@@ -232,11 +232,11 @@ Each line of the output gives the time per pop–push pair per thread, so the to
 
 | $p$ | mutex | CAS with tag |
 |---|---|---|
-| $1$ | $1/21	ext{ ns} = 47.6$ M pairs/s | $1/27	ext{ ns} = 37.0$ M pairs/s |
-| $4$ | $4/753	ext{ ns} = 5.3$ M pairs/s | $4/434	ext{ ns} = 9.2$ M pairs/s |
-| $16$ | $16/4647	ext{ ns} = 3.4$ M pairs/s | $16/2520	ext{ ns} = 6.3$ M pairs/s |
+| $1$ | $1/21\text{ ns} = 47.6$ M pairs/s | $1/27\text{ ns} = 37.0$ M pairs/s |
+| $4$ | $4/753\text{ ns} = 5.3$ M pairs/s | $4/434\text{ ns} = 9.2$ M pairs/s |
+| $16$ | $16/4647\text{ ns} = 3.4$ M pairs/s | $16/2520\text{ ns} = 6.3$ M pairs/s |
 
-With one thread the line never moves, and the mutex (one atomic instruction to acquire and one to release, all within a single cache line) is even slightly faster than the two CAS loops. With several threads, every operation needs the line holding `top` (and, for the mutex, the line holding the lock word) in its own cache in state M. A pair of operations needs at least two transfers when consecutive operations come from different threads, so at $100$–$200$ ns per transfer the throughput is at most about $1/(2 	imes 100	ext{ ns}) = 5$ M to $1/(2 	imes 200	ext{ ns}) = 2.5$ M pairs per second, unless a thread manages several operations while it holds the line. The measurements are of that order. Neither design can exceed it, whatever the number of threads; only a design in which threads usually work on different lines can.
+With one thread the line never moves, and the mutex (one atomic instruction to acquire and one to release, all within a single cache line) is even slightly faster than the two CAS loops. With several threads, every operation needs the line holding `top` (and, for the mutex, the line holding the lock word) in its own cache in state M. A pair of operations needs at least two transfers when consecutive operations come from different threads, so at $100$–$200$ ns per transfer the throughput is at most about $1/(2 \times 100\text{ ns}) = 5$ M to $1/(2 \times 200\text{ ns}) = 2.5$ M pairs per second, unless a thread manages several operations while it holds the line. The measurements are of that order. Neither design can exceed it, whatever the number of threads; only a design in which threads usually work on different lines can.
 :::
 :::
 
@@ -245,7 +245,7 @@ f: 500/t
 x: 1, 16
 y: 0, 50
 sliders: t=100:50:250:10
-labels: 	ext{bound } 1/(2t) 	ext{ (M pairs/s)}
+labels: \text{bound } 1/(2t) \text{ (M pairs/s)}
 points: 1,47.6; 4,5.3; 16,3.4; 1,37.0; 4,9.2; 16,6.3
 caption: Total throughput of the shared stack in millions of pop–push pairs per second against the number of threads $p$, from [[#ex-stack-throughput]]: the mutex stack ($47.6$, $5.3$, $3.4$) and the tagged lock-free stack ($37.0$, $9.2$, $6.3$). The horizontal line is the coherence bound $1/(2t)$ for a transfer time of $t$ ns. Notice that one thread beats any number of threads: as soon as two threads compete, every operation pays for moving a cache line. Drag $t$ between $100$ and $250$ ns, the range measured on this machine, and see that the multi-threaded points sit near the line.
 :::

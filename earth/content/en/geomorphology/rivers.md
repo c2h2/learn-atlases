@@ -140,7 +140,7 @@ A river's bankfull width doubles between two gauging stations. Roughly what has 
 - [ ] It has increased about eightfold.
 - [ ] Nothing; width does not scale with discharge.
 ::: solution
-With a downstream width exponent of about 0.5, $W \propto Q^{0.5}$, so a doubling of width means a fourfold increase in discharge. The depth will have grown by $4^{0.4} = 1.7$ and the velocity by $4^{0.1} = 1.5$, and $2	imes1.7	imes1.5 = 5.1$, close to four given the scatter in the exponents. The point is that a river's width is a **log-scale gauge of its discharge**, which is why a meander-belt width is the most useful single measurement in palaeohydrology.
+With a downstream width exponent of about 0.5, $W \propto Q^{0.5}$, so a doubling of width means a fourfold increase in discharge. The depth will have grown by $4^{0.4} = 1.7$ and the velocity by $4^{0.1} = 1.5$, and $2\times1.7\times1.5 = 5.1$, close to four given the scatter in the exponents. The point is that a river's width is a **log-scale gauge of its discharge**, which is why a meander-belt width is the most useful single measurement in palaeohydrology.
 :::
 :::
 

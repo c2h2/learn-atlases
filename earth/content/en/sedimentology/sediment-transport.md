@@ -146,9 +146,9 @@ A **sixteen per cent increase in shear stress doubles the gravel flux**. This is
 :::
 
 ::: example Palaeohydraulics from a conglomerate {#ex-palaeo}
-A conglomerate contains imbricated clasts whose **mean** diameter is 60 mm and whose **maximum** clast is 200 mm. Estimate the boundary shear stress and the mean flow velocity, taking $	heta_{cr} = 0.045$, a Manning roughness of $n = 0.04$, and a hydraulic radius of 1 m.
+A conglomerate contains imbricated clasts whose **mean** diameter is 60 mm and whose **maximum** clast is 200 mm. Estimate the boundary shear stress and the mean flow velocity, taking $\theta_{cr} = 0.045$, a Manning roughness of $n = 0.04$, and a hydraulic radius of 1 m.
 ::: solution
-Setting $	heta = 	heta_{cr}$ gives the stress just sufficient to move a clast of each size:
+Setting $\theta = \theta_{cr}$ gives the stress just sufficient to move a clast of each size:
 $$
 \tau = 0.045\times1650\times9.81\,d = 728\,d\ \mathrm{Pa},
 $$

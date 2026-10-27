@@ -120,7 +120,7 @@ Komatiitic lava with $28\ \mathrm{wt\%}$ MgO contains olivine of $Fo_{94}$ and, 
 ::: solution
 The potential temperature is a property of the *solid* peridotite, not of its melt: it is the temperature the rock would have if decompressed to one atmosphere adiabatically and without melting. A peridotite ascending from depth begins to melt at about $40\ \mathrm{K}$ below the liquidus of the accumulated melt composition, and the melt segregates over a range of depths, so the potential temperature is somewhat below the measured liquidus of the erupted lava. For a komatiite with $28\ \mathrm{wt\%}$ MgO the requirement is
 $$
-T_p pprox 1600	ext{–}1750\ ^\circ\mathrm{C},
+T_p \approx 1600\text{–}1750\ ^\circ\mathrm{C},
 $$
 some $250$–$400\ \mathrm{K}$ hotter than the $1350\ ^\circ\mathrm{C}$ of the present-day ridge mantle.
 

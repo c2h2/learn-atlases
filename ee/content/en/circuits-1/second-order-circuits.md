@@ -123,11 +123,11 @@ A practical point that ties the three regimes to a design intuition. The resonan
 ::: example Choosing the resistance for a target overshoot {#ex-overshoot}
 You have an $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm F)$ tank and want no more than a $35\%$ first-peak overshoot on the step response. What damping ratio is required, and what series resistance gives it?
 ::: solution
-The overshoot fraction is $e^{-\zeta\pi/\sqrt{1-\zeta^2}} = 0.35$, so $\zeta\pi/\sqrt{1-\zeta^2} = \ln(1/0.35) = 1.05$, and solving, $\zeta pprox 0.32$. The example in this lesson, with $\zeta = 0.316$, has exactly a $35\%$ overshoot, which is the match. The required resistance is $R = 2\zeta\omega_0 L = 2	imes0.32	imes3162	imes0.01 = 20.2\ \Omega)$, essentially the $20\ \Omega)$ of the example. This is the design direction of the theorem: given the desired overshoot, the resistance follows from $\zeta$, and the two are in one-to-one correspondence, so the design is a single-line calculation.
+The overshoot fraction is $e^{-\zeta\pi/\sqrt{1-\zeta^2}} = 0.35$, so $\zeta\pi/\sqrt{1-\zeta^2} = \ln(1/0.35) = 1.05$, and solving, $\zeta \approx 0.32$. The example in this lesson, with $\zeta = 0.316$, has exactly a $35\%$ overshoot, which is the match. The required resistance is $R = 2\zeta\omega_0 L = 2\times0.32\times3162\times0.01 = 20.2\ \Omega)$, essentially the $20\ \Omega)$ of the example. This is the design direction of the theorem: given the desired overshoot, the resistance follows from $\zeta$, and the two are in one-to-one correspondence, so the design is a single-line calculation.
 :::
 :::
 
-The quality factor, the ratio $\omega_0/lpha$, is the inverse of the damping, and it is the number that appears in every resonant circuit. A high quality factor means a narrow, selective response and a long ring; a low one means a broad response and a quick settling. The three regimes of this lesson bracket the useful range, and the design is the choice of where in that range to sit for the behaviour the application needs.
+The quality factor, the ratio $\omega_0/\alpha$, is the inverse of the damping, and it is the number that appears in every resonant circuit. A high quality factor means a narrow, selective response and a long ring; a low one means a broad response and a quick settling. The three regimes of this lesson bracket the useful range, and the design is the choice of where in that range to sit for the behaviour the application needs.
 
 ## Where this leads
 

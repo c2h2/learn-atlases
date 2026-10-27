@@ -100,13 +100,13 @@ A node is fed by a $10\angle0^\circ$ V source through a $10\ \Omega)$ resistor a
 Directly, KCL at the node gives
 
 $$
-rac{v-10}{10} + rac{v-6j}{-j20} + rac{v}{10} = 0,
+\frac{v-10}{10} + \frac{v-6j}{-j20} + \frac{v}{10} = 0,
 $$
 
 and with $1/(-j20) = j0.05$, this is $v(0.2 + j0.05) = 0.7$, so
 
 $$
-v = rac{0.7}{0.2 + j0.05} = 3.29 - j0.82 = 3.40\angle-14.0^\circ\ \mathrm V).
+v = \frac{0.7}{0.2 + j0.05} = 3.29 - j0.82 = 3.40\angle-14.0^\circ\ \mathrm V).
 $$
 
 By superposition, the contribution of the first source, with the second turned off (its capacitor to ground), is $4.71 - j1.18$, and the contribution of the second source, with the first turned off (its resistor to ground), is $-1.41 + j0.35$, and the sum is $3.30 - j0.83$, agreeing with the direct result to rounding. The agreement is the check, and it is the same check, superposition should agree with the direct, that you use in the resistive case, and in the AC it is the one that catches the phase of one of the contributions.

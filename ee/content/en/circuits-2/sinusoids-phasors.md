@@ -88,7 +88,7 @@ The current of an inductor lags the voltage by $90^\circ$, and the current of a 
 :::
 
 ::: example The RLC series impedance {#ex-rlc}
-A series network has $R=10\ \Omega$, $L=10\ \mathrm{mH}$, $C=100\ \mu\mathrm F)$, driven at $60\ \mathrm{Hz}$ by $\mathbf V = 10ngle0^\circ\ \mathrm V)$. Find the total impedance and the current.
+A series network has $R=10\ \Omega$, $L=10\ \mathrm{mH}$, $C=100\ \mu\mathrm F)$, driven at $60\ \mathrm{Hz}$ by $\mathbf V = 10\angle0^\circ\ \mathrm V)$. Find the total impedance and the current.
 ::: solution
 The radian frequency is $\omega = 377\ \mathrm{rad/s}$. The element impedances are $Z_L = j\omega L = j3.77\ \Omega)$ and $Z_C = -j/(\omega C) = -j26.5\ \Omega)$, and the resistor is $10\ \Omega)$. The total is
 
@@ -96,10 +96,10 @@ $$
 Z = R + Z_L + Z_C = 10 + j(3.77 - 26.5) = 10 - j22.8\ \Omega),
 $$
 
-with magnitude $\sqrt{10^2 + 22.8^2} = 24.9\ \Omega)$ and angle $	an^{-1}(-22.8/10) = -66.3^\circ$. The current is
+with magnitude $\sqrt{10^2 + 22.8^2} = 24.9\ \Omega)$ and angle $\tan^{-1}(-22.8/10) = -66.3^\circ$. The current is
 
 $$
-\mathbf I = rac{10ngle0^\circ}{24.9ngle-66.3^\circ} = 0.40ngle66.3^\circ\ \mathrm A).
+\mathbf I = \frac{10\angle0^\circ}{24.9\angle-66.3^\circ} = 0.40\angle66.3^\circ\ \mathrm A).
 $$
 
 The net is capacitive, because the $-j26.5$ of the capacitor dominates the $+j3.77$ of the inductor, and the current leads the voltage by $66.3^\circ$. This is the single equation the method is for, and it is the full AC analysis of the network, done in four lines.
@@ -123,7 +123,7 @@ A $50\ \mathrm{Hz}$ source drives a pure $100\ \mathrm mH)$ inductor. The curren
 - [ ] $20\ \mathrm V)$
 - [ ] $62.8\ \mathrm V)$
 ::: solution
-The inductive reactance is $X_L = \omega L = 2\pi	imes50	imes0.1 = 31.4\ \Omega)$. The rms voltage is $V = I X_L = 0.2	imes31.4 = 31.4\ \mathrm V)$. The current lags the voltage by $90^\circ$, but the magnitude of the voltage is the product of the current and the reactance.
+The inductive reactance is $X_L = \omega L = 2\pi\times50\times0.1 = 31.4\ \Omega)$. The rms voltage is $V = I X_L = 0.2\times31.4 = 31.4\ \mathrm V)$. The current lags the voltage by $90^\circ$, but the magnitude of the voltage is the product of the current and the reactance.
 :::
 :::
 

@@ -121,7 +121,7 @@ $$
 p_1 = 3.04\ \mathrm{mW},\quad p_2 = 11.35\ \mathrm{mW},\quad p_3 = 0.30\ \mathrm{mW},\quad p_4 = 14.9\ \mathrm{mW}.
 $$
 
-So the resistors absorb $29.6\ \mathrm{mW}$. The $10\ \mathrm V}$ source delivers $10	imes1.23\ \mathrm{mA} = 12.3\ \mathrm{mW}$, and the $2\ \mathrm{mA}$ current source, acting at $v_2=8.63\ \mathrm V}$, delivers $8.63	imes2\ \mathrm{mA} = 17.3\ \mathrm{mW}$, totalling $29.6\ \mathrm{mW}$. Delivered equals absorbed, so the solution is internally consistent. This power balance is the most reliable check of a nodal or mesh solution you can do, and it is always available because it uses the same numbers you already have.
+So the resistors absorb $29.6\ \mathrm{mW}$. The $10\ \mathrm V}$ source delivers $10\times1.23\ \mathrm{mA} = 12.3\ \mathrm{mW}$, and the $2\ \mathrm{mA}$ current source, acting at $v_2=8.63\ \mathrm V}$, delivers $8.63\times2\ \mathrm{mA} = 17.3\ \mathrm{mW}$, totalling $29.6\ \mathrm{mW}$. Delivered equals absorbed, so the solution is internally consistent. This power balance is the most reliable check of a nodal or mesh solution you can do, and it is always available because it uses the same numbers you already have.
 :::
 :::
 

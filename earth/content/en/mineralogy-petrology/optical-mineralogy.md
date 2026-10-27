@@ -123,7 +123,7 @@ Three things get confused constantly, and they answer three different questions.
 
 ## Biaxial optics, quantitatively
 
-For a biaxial mineral the indicatrix has three unequal semi-axes and the two optic axes lie in the $X$–$Z$ plane (the **optic plane**), symmetrically about $Z$. Their half-angles follow from the condition that the central section normal to an optic axis be a circle of radius $n_eta$; the result is
+For a biaxial mineral the indicatrix has three unequal semi-axes and the two optic axes lie in the $X$–$Z$ plane (the **optic plane**), symmetrically about $Z$. Their half-angles follow from the condition that the central section normal to an optic axis be a circle of radius $n_\beta$; the result is
 
 $$
 \tan^2 V_z = \frac{n_\alpha^{2}\left(n_\gamma^{2} - n_\beta^{2}\right)}{n_\gamma^{2}\left(n_\beta^{2} - n_\alpha^{2}\right)},
