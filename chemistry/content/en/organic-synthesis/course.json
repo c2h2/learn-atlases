@@ -7,11 +7,26 @@
   "order": 160,
   "tagline": "Retrosynthesis, determining mechanisms, oxidation and reduction, protecting groups, C–C bond formation, pericyclic reactions, stereoselectivity and total synthesis",
   "summary": "Synthesis is the art of making molecules by design. This course teaches retrosynthetic planning and the evidence used to establish mechanisms, then the main tools of the synthetic chemist — selective oxidation and reduction, protecting groups, carbon–carbon bond formation, pericyclic reactions and stereoselective methods — and studies how they come together in total synthesis.",
-  "overview": [],
+  "overview": [
+    "Organic synthesis is the making of organic molecules by design: deciding which bonds to form, in what order, with which reagents, so that a target — a medicine, a natural product, a fragrance, a monomer — is obtained in useful amount and purity from simple starting materials. It is where the reactions learned in [[organic-1]] and [[organic-2]] become tools, and where they are tested hardest, because in a real molecule every reagent meets several functional groups at once and every step's yield multiplies into the next.",
+    "The course starts with planning and evidence: retrosynthetic analysis (disconnections, synthons, polarity patterns, yield and atom-economy arithmetic) and the experiments that establish mechanisms (rate laws, activation parameters, isotope effects, Hammett correlations, trapping and stereochemical probes). It then builds the toolkit: oxidation and reduction chosen by oxidation level and chemoselectivity; protecting groups and orthogonal strategies; carbon–carbon bond formation by organometallics, olefination, enolates and cross-coupling; pericyclic reactions and the Woodward–Hoffmann rules; stereoselective synthesis from the Felkin–Anh model to asymmetric catalysis and kinetic resolution; and rearrangements, carbenes and radicals. The final chapter shows how these tools come together in landmark total syntheses and how syntheses are judged.",
+    "What makes synthesis hard is that there is never a single right answer: many routes work on paper, and the best is decided by small energy differences (a few kJ mol⁻¹ separate 90 % from 99 % selectivity), by chemoselectivity conflicts that are easy to overlook, and by practical constraints of yield, cost, waste and safety. The way through is to work backwards from the target, to check every proposed forward step against every functional group present, to describe each mechanism step by step, and to put numbers on yields, selectivities and atom economy. Lessons describe the hazards of the reagents they mention; they are not laboratory procedures, and practical work always needs supervision and a risk assessment."
+  ],
   "prerequisites": [
     "organic-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Carry out a retrosynthetic analysis of a target molecule using disconnections, synthons, functional-group interconversion and the consonant/dissonant polarity rule, and propose a forward synthesis with reagents.",
+    "Calculate overall yields of linear and convergent routes, atom economies and percentage ideality, and use them to choose between routes.",
+    "Design and interpret mechanistic experiments — rate laws, Eyring activation parameters, kinetic isotope effects, Hammett correlations, isotopic labelling, crossover, trapping and stereochemical probes.",
+    "Assign oxidation levels and choose chemoselective oxidants and reductants for functional-group interconversions, including the quantitative limits on stopping at an intermediate oxidation level.",
+    "Select protecting groups for alcohols, carbonyl groups, amines and acids, explain their installation and removal mechanisms, and design orthogonal protection strategies.",
+    "Choose carbon–carbon bond-forming reactions — organometallic additions, conjugate additions, Wittig and HWE olefinations, kinetic or thermodynamic enolate chemistry, cross-coupling — for a given disconnection.",
+    "Apply frontier-orbital theory and the Woodward–Hoffmann rules to predict whether pericyclic reactions are allowed and to predict their regio- and stereochemistry.",
+    "Predict and explain diastereoselectivity and enantioselectivity with the Felkin–Anh, chelation and Zimmerman–Traxler models, auxiliaries and asymmetric catalysts, and relate ee and kinetic-resolution selectivity to energy differences.",
+    "Propose mechanisms for cationic rearrangements, carbene reactions and radical cyclisations, and use radical-clock kinetics to choose reaction conditions.",
+    "Analyse landmark total syntheses in terms of strategy, key reactions and stereochemical control, and describe the hazards of the reagents involved by hazard class and mechanism."
+  ],
   "chapters": [
     {
       "slug": "retrosynthesis",
@@ -90,8 +105,145 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1828,
+      "title": "Wöhler's synthesis of urea",
+      "detail": "Friedrich Wöhler obtained urea by heating ammonium cyanate, showing that a compound of living organisms could be made from inorganic starting materials.",
+      "people": [
+        "Friedrich Wöhler"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "The Diels–Alder reaction",
+      "detail": "Otto Diels and Kurt Alder reported the [4+2] cycloaddition of dienes with dienophiles, which became the most powerful ring-forming reaction in synthesis (Nobel Prize 1950).",
+      "people": [
+        "Otto Diels",
+        "Kurt Alder"
+      ]
+    },
+    {
+      "year": 1937,
+      "title": "The Hammett equation",
+      "detail": "Louis Hammett published his linear free-energy relationship between substituent constants and rates, a central quantitative tool for determining mechanisms.",
+      "people": [
+        "Louis P. Hammett"
+      ]
+    },
+    {
+      "year": 1944,
+      "title": "Woodward and Doering's quinine",
+      "detail": "Robert Burns Woodward and William von Eggers Doering completed a formal synthesis of quinine via quinotoxine, opening the era of complex natural-product synthesis.",
+      "people": [
+        "Robert Burns Woodward",
+        "William von Eggers Doering"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "The Wittig reaction",
+      "detail": "Georg Wittig and Ulrich Schöllkopf reported the olefination of carbonyl compounds with phosphonium ylides (Nobel Prize 1979).",
+      "people": [
+        "Georg Wittig",
+        "Ulrich Schöllkopf"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "The Woodward–Hoffmann rules",
+      "detail": "Woodward and Roald Hoffmann explained the stereochemistry of electrocyclic reactions by the conservation of orbital symmetry, generalised to all pericyclic reactions by 1969.",
+      "people": [
+        "Robert Burns Woodward",
+        "Roald Hoffmann"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Corey formalises retrosynthetic analysis",
+      "detail": "E. J. Corey's paper 'General methods for the construction of complex molecules' in Pure and Applied Chemistry introduced synthons and systematic backward planning (Nobel Prize 1990).",
+      "people": [
+        "Elias James Corey"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "Vitamin B₁₂",
+      "detail": "The total synthesis of vitamin B₁₂ by the groups of Woodward and Albert Eschenmoser was completed after about twelve years' work by some hundred chemists.",
+      "people": [
+        "Robert Burns Woodward",
+        "Albert Eschenmoser"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "Sharpless asymmetric epoxidation",
+      "detail": "Tsutomu Katsuki and K. Barry Sharpless reported the titanium–tartrate epoxidation of allylic alcohols, a landmark of asymmetric catalysis (Nobel Prize 2001, with Knowles and Noyori).",
+      "people": [
+        "Tsutomu Katsuki",
+        "K. Barry Sharpless"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "Total syntheses of Taxol",
+      "detail": "The groups of Robert Holton and K. C. Nicolaou independently completed total syntheses of the anticancer drug paclitaxel.",
+      "people": [
+        "Robert A. Holton",
+        "K. C. Nicolaou"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Organic Chemistry",
+      "authors": "Jonathan Clayden, Nick Greeves, Stuart Warren",
+      "year": 2012,
+      "note": "Second edition. The standard undergraduate text; its chapters on retrosynthesis, protecting groups, pericyclic reactions and stereoselectivity underpin this course."
+    },
+    {
+      "title": "Organic Synthesis: The Disconnection Approach",
+      "authors": "Stuart Warren, Paul Wyatt",
+      "year": 2008,
+      "note": "Second edition. Systematic teaching of disconnections, synthons and polarity patterns, with many worked problems; with its companion workbook, the best way to practise retrosynthesis."
+    },
+    {
+      "title": "Advanced Organic Chemistry, Part A: Structure and Mechanisms; Part B: Reactions and Synthesis",
+      "authors": "Francis A. Carey, Richard J. Sundberg",
+      "year": 2007,
+      "note": "Fifth edition. Detailed graduate-level reference: Part A for mechanism determination, Part B for reagents, selectivity and synthetic methods."
+    },
+    {
+      "title": "The Logic of Chemical Synthesis",
+      "authors": "E. J. Corey, Xue-Min Cheng",
+      "year": 1989,
+      "note": "Corey's own statement of retrosynthetic strategy, followed by a large collection of syntheses from his laboratory."
+    },
+    {
+      "title": "Classics in Total Synthesis",
+      "authors": "K. C. Nicolaou, Erik J. Sorensen",
+      "year": 1996,
+      "note": "Strategy and key steps of landmark total syntheses (reserpine, prostaglandins, progesterone, Taxol and many more); later volumes 2003 and 2011."
+    },
+    {
+      "title": "Greene's Protective Groups in Organic Synthesis",
+      "authors": "Peter G. M. Wuts",
+      "year": 2014,
+      "note": "Fifth edition. The comprehensive reference for installing and removing protecting groups and their stabilities."
+    },
+    {
+      "title": "Molecular Orbitals and Organic Chemical Reactions",
+      "authors": "Ian Fleming",
+      "year": 2010,
+      "note": "Reference edition. Frontier-orbital explanations of pericyclic reactions, regioselectivity and stereoelectronic effects."
+    },
+    {
+      "title": "Modern Physical Organic Chemistry",
+      "authors": "Eric V. Anslyn, Dennis A. Dougherty",
+      "year": 2006,
+      "note": "Kinetics, isotope effects, linear free-energy relationships and the experimental basis of mechanisms."
+    }
+  ],
   "next": [
     "medicinal-chemistry"
   ]
