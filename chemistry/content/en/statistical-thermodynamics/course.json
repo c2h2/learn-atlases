@@ -7,12 +7,26 @@
   "order": 180,
   "tagline": "The Boltzmann distribution, partition functions, thermodynamic functions, ensembles, equilibrium constants, real gases, quantum statistics and rate theory",
   "summary": "Statistical thermodynamics connects the energy levels of molecules with the bulk properties measured in the laboratory. This course derives the Boltzmann distribution and the partition function, computes thermodynamic functions and equilibrium constants from molecular data, and extends the theory to interacting molecules, quantum statistics and the rates of reactions.",
-  "overview": [],
+  "overview": [
+    "Statistical thermodynamics is the bridge between the molecular world of quantum mechanics and spectroscopy and the macroscopic world of heat capacities, entropies and equilibrium constants. Classical thermodynamics relates measurable properties to one another but says nothing about why they take the values they do; statistical thermodynamics computes them from the energy levels of molecules. Its central object, the partition function, is a sum over states that counts how many states a molecule or a system can reach at a given temperature, and every thermodynamic function is a logarithm or a derivative of it.",
+    "For the chemist the payoff is concrete. From a bond length, a few vibrational wavenumbers and a dissociation energy one can predict the standard entropy of a gas to within the accuracy of calorimetry, the heat capacity of carbon dioxide, the equilibrium constant of a dissociation or an isotope exchange, and the rate constant of a reaction through its transition state. Thermochemical tables for gases are computed this way, frequency calculations in computational chemistry exist largely to supply partition functions, and the language of the subject — entropy as a count of states, temperature as the parameter of a distribution, free energy as a logarithm of a partition function — runs through physical, inorganic, biological and materials chemistry.",
+    "The course builds the theory in one direction. The Boltzmann distribution is derived by counting configurations; the molecular partition function is evaluated for translation, rotation, vibration and electronic motion; internal energy, heat capacity and entropy follow, together with the equipartition theorem and its failure. The canonical ensemble then generalises the results to any system and settles the counting of indistinguishable molecules (the Sackur–Tetrode equation). The last four chapters are applications: equilibrium constants from molecular data, interacting molecules in real gases and liquids, Fermi–Dirac and Bose–Einstein statistics with the Einstein and Debye models of solids, and transition-state, Lindemann and RRKM theories of reaction rates.",
+    "What makes the subject hard is the bookkeeping rather than the mathematics, which is mostly sums, Gaussian integrals and partial derivatives. Every partition function depends on where the zero of energy is placed; degeneracies and symmetry numbers change answers by integer factors; molecular and canonical partition functions must not be confused; and standard states enter every equilibrium constant. The remedy is to work numerical examples by hand, check each formula against its high- and low-temperature limits, and compare every computed number with a measured one."
+  ],
   "prerequisites": [
     "thermodynamics",
     "quantum-chemistry"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Derive the Boltzmann distribution by maximising the weight of a configuration with Lagrange multipliers, and use it to calculate the relative populations of molecular energy levels, including their degeneracies.",
+    "Calculate translational, rotational (with symmetry numbers), vibrational and electronic partition functions from spectroscopic constants, and identify which modes are frozen or classical at a given temperature.",
+    "Compute internal energies, heat capacities and entropies of gases from partition functions, and explain the equipartition theorem, its range of validity and the Schottky anomaly.",
+    "Derive thermodynamic functions and energy fluctuations from the canonical partition function, and apply the Sackur–Tetrode equation and the indistinguishability correction to perfect gases.",
+    "Calculate equilibrium constants from molecular data for isomerisation, dissociation and isotope-exchange reactions, and interpret them in terms of energy and state-counting factors.",
+    "Relate the second virial coefficient to the intermolecular pair potential, interpret the van der Waals constants and the Boyle temperature, and use the radial distribution function to describe liquids.",
+    "Apply Fermi–Dirac and Bose–Einstein statistics to electrons in metals, photons and liquid helium, and use the Einstein and Debye models to explain the heat capacities of solids.",
+    "Express transition-state theory in terms of partition functions, show that it contains collision theory, and analyse the pressure dependence of unimolecular reactions with the Lindemann, RRK and RRKM theories."
+  ],
   "chapters": [
     {
       "slug": "boltzmann-distribution",
@@ -82,8 +96,138 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1860,
+      "title": "Maxwell's distribution of molecular speeds",
+      "detail": "James Clerk Maxwell's 'Illustrations of the dynamical theory of gases' derived the distribution of molecular velocities in a gas at equilibrium, the first statistical law in physics.",
+      "people": [
+        "James Clerk Maxwell"
+      ]
+    },
+    {
+      "year": 1877,
+      "title": "Boltzmann relates entropy to probability",
+      "detail": "Ludwig Boltzmann counted the 'complexions' of a gas, identified equilibrium with the distribution of maximum probability and showed that entropy is proportional to the logarithm of the number of complexions.",
+      "people": [
+        "Ludwig Boltzmann"
+      ]
+    },
+    {
+      "year": 1902,
+      "title": "Gibbs's Elementary Principles in Statistical Mechanics",
+      "detail": "J. Willard Gibbs introduced the microcanonical, canonical and grand canonical ensembles and gave the subject its name and its general form.",
+      "people": [
+        "J. Willard Gibbs"
+      ]
+    },
+    {
+      "year": 1907,
+      "title": "Einstein's quantum theory of the heat capacity of solids",
+      "detail": "Albert Einstein treated the atoms of a crystal as quantised oscillators and explained why heat capacities fall below the Dulong–Petit value at low temperature.",
+      "people": [
+        "Albert Einstein"
+      ]
+    },
+    {
+      "year": 1912,
+      "title": "Debye's theory and the Sackur–Tetrode entropy",
+      "detail": "Peter Debye derived the T³ law for the heat capacity of solids from a spectrum of lattice vibrations; in the same year Otto Sackur and Hugo Tetrode obtained the absolute entropy of a monatomic gas.",
+      "people": [
+        "Peter Debye",
+        "Otto Sackur",
+        "Hugo Tetrode"
+      ]
+    },
+    {
+      "year": 1922,
+      "title": "Lindemann's mechanism of unimolecular reactions",
+      "detail": "Frederick Lindemann explained first-order kinetics and its fall-off at low pressure by collisional activation followed by unimolecular decay of the energised molecule.",
+      "people": [
+        "Frederick Lindemann"
+      ]
+    },
+    {
+      "year": 1924,
+      "title": "Bose–Einstein statistics",
+      "detail": "Satyendra Nath Bose derived Planck's law by counting photons as indistinguishable particles; Albert Einstein extended the method to atoms in 1924–1925 and predicted their condensation.",
+      "people": [
+        "Satyendra Nath Bose",
+        "Albert Einstein"
+      ]
+    },
+    {
+      "year": 1926,
+      "title": "Fermi–Dirac statistics",
+      "detail": "Enrico Fermi and Paul Dirac independently derived the statistics of particles obeying the Pauli exclusion principle, the basis of Sommerfeld's 1927–1928 theory of electrons in metals.",
+      "people": [
+        "Enrico Fermi",
+        "Paul Dirac"
+      ]
+    },
+    {
+      "year": 1935,
+      "title": "Transition-state theory",
+      "detail": "Henry Eyring, and independently Meredith Evans and Michael Polanyi, expressed rate constants through the partition functions of an activated complex in quasi-equilibrium with the reactants.",
+      "people": [
+        "Henry Eyring",
+        "Meredith Evans",
+        "Michael Polanyi"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "RRKM theory",
+      "detail": "Rudolph Marcus combined the Rice–Ramsperger–Kassel theory with transition-state theory to give a microcanonical rate constant computed from quantum state counts.",
+      "people": [
+        "Rudolph A. Marcus"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Atkins' Physical Chemistry",
+      "authors": "Peter Atkins, Julio de Paula and James Keeler",
+      "year": 2022,
+      "note": "12th edition. The chapters on statistical thermodynamics follow the same route as this course (Boltzmann distribution, molecular partition function, canonical ensemble, equilibrium constants) with many worked examples; the standard first reference."
+    },
+    {
+      "title": "Physical Chemistry: A Molecular Approach",
+      "authors": "Donald A. McQuarrie and John D. Simon",
+      "year": 1997,
+      "note": "Builds thermodynamics from statistical mechanics, with very clear chapters on partition functions, the Sackur–Tetrode equation and equilibrium constants computed from spectroscopic data."
+    },
+    {
+      "title": "Statistical Mechanics",
+      "authors": "Donald A. McQuarrie",
+      "year": 2000,
+      "note": "University Science Books reissue of the 1976 classic. The graduate-level reference for ensembles, virial coefficients, liquids and the radial distribution function, quantum statistics and unimolecular rate theory."
+    },
+    {
+      "title": "Introduction to Modern Statistical Mechanics",
+      "authors": "David Chandler",
+      "year": 1987,
+      "note": "Short, deep and modern: fluctuations, the grand canonical ensemble, Monte Carlo simulation and the statistical mechanics of liquids and solvation."
+    },
+    {
+      "title": "An Introduction to Statistical Thermodynamics",
+      "authors": "Terrell L. Hill",
+      "year": 1960,
+      "note": "Dover reprint (1986). Thorough treatment of ensembles, adsorption, imperfect gases and polymer and solution models, with chemical applications throughout."
+    },
+    {
+      "title": "Statistical Thermodynamics",
+      "authors": "Andrew Maczek",
+      "year": 1998,
+      "note": "Oxford Chemistry Primers. A concise undergraduate introduction to partition functions, thermodynamic functions and equilibrium constants; good for revision."
+    },
+    {
+      "title": "Theory of Unimolecular and Recombination Reactions",
+      "authors": "Robert G. Gilbert and Sean C. Smith",
+      "year": 1990,
+      "note": "The standard monograph on Lindemann, RRK and RRKM theory, fall-off curves, state counting and collisional energy transfer."
+    }
+  ],
   "next": [
     "computational-chemistry"
   ]
