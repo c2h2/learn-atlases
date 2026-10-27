@@ -57,7 +57,7 @@
     {
       "slug": "structure-based-design",
       "title": "Structure-based and computer-aided design",
-      "summary": "Using protein structures, docking and modelling to design ligands, with the HIV protease inhibitors as a case study.",
+      "summary": "Protein structures and their limits, binding-site analysis, docking and scoring, free-energy calculations, fragment growing, and campaigns from captopril to the HIV protease inhibitors.",
       "requires": [
         "medicinal-chemistry/structure-activity"
       ]
