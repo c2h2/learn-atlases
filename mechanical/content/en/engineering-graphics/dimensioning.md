@@ -307,8 +307,8 @@ $$
 :::
 :::
 
-::: exercise Derivation {level=3 check="237"}
-Derive the worst-case and RSS stack formulas and state when RSS is valid. Then take a five-part axial stack, each part $\pm 0.1$, inside a housing bore length of $\pm 0.1$; the gap must be $0.4 \pm 0.3$ and is nominally $0.4$. Treating every tolerance as $\pm 3\sigma$ of a normal distribution, compute the fraction of assemblies outside the gap specification. (Enter the result in parts per million.)
+::: exercise Derivation {level=3 check="239"}
+Derive the worst-case and RSS stack formulas and state when RSS is valid. Then take a five-part axial stack, each part $\pm 0.1$, inside a housing bore length of $\pm 0.1$; the gap must be $0.4 \pm 0.3$ and is nominally $0.4$. Treating every tolerance as $\pm 3\sigma$ of a normal distribution, compute the fraction of assemblies outside the gap specification. (Enter the result in parts per million, rounded to the nearest whole number.)
 ::: solution
 **Worst case.** For $S = \sum x_i$ with each $x_i$ at its extreme, $\Delta S_{\mathrm{WC}} = \sum \Delta x_i = n\, \Delta x$.
 **RSS.** If the $x_i$ are **independent** and each $\Delta x_i = 3 \sigma_i$, then $\sigma_S^{2} = \sum \sigma_i^{2}$ and
@@ -320,9 +320,9 @@ $$
 $$
 \sigma_G = \sqrt{0.0745^{2} + 0.0333^{2}} = 0.0816\ \mathrm{mm},
 $$
-and the specification $\pm 0.3$ is $\pm 3.68\,\sigma_G$. The two-sided normal tail beyond $3.68\sigma$ is $2.37 \times 10^{-4}$, i.e. about **$237$ parts per million**.
+and the specification $\pm 0.3$ is $\pm 3.67\,\sigma_G$. The two-sided normal tail beyond $3.67\sigma$ is $2.39 \times 10^{-4}$, i.e. about **$239$ parts per million**.
 **Worst case** gives $\Delta G = 0.5 + 0.1 = 0.6 > 0.3$: it shows that out-of-specification assemblies are **possible**, not that they are common. Worst-case analysis is used where any failure is unacceptable (safety, or a preload that must never be lost); RSS where an occasional reject is cheaper than tight tolerances.
-*Sanity.* $237\ \mathrm{ppm}$ assumes centred, normal, independent processes; a process running off-centre by one standard deviation would make the reject rate many times larger, which is why RSS designs are paired with process-capability requirements.
+*Sanity.* $239\ \mathrm{ppm}$ assumes centred, normal, independent processes; a process running off-centre by one standard deviation would make the reject rate many times larger, which is why RSS designs are paired with process-capability requirements.
 :::
 :::
 
