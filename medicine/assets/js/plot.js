@@ -645,7 +645,15 @@
       const box = el('div', { class: 'w-legend' });
       items.forEach((it) => {
         const k = el('span', { class: 'k' }, el('span', { class: it.swatch ? 'sw' : 'ln', style: '--c:' + it.color }));
-        k.append(looksTeX(it.label) ? MA.texEl(it.label) : el('span', { text: it.label }));
+        if (/\$[^$]+\$/.test(it.label)) {
+          // text with inline $…$ maths: typeset only the maths
+          const sp = el('span');
+          it.label.split(/(\$[^$]+\$)/).forEach((part) => {
+            if (/^\$[^$]+\$$/.test(part)) sp.append(MA.texEl(part.slice(1, -1)));
+            else if (part) sp.append(document.createTextNode(part));
+          });
+          k.append(sp);
+        } else k.append(looksTeX(it.label) ? MA.texEl(it.label) : el('span', { text: it.label }));
         box.append(k);
       });
       stage.append(box);
