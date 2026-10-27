@@ -7,13 +7,27 @@
   "order": 150,
   "tagline": "Electron counting, main-group and transition-metal organometallics, elementary reactions, catalytic cycles, cross-coupling, metathesis and heterogeneous catalysis",
   "summary": "Organometallic compounds, with bonds between metals and carbon, are the workhorses of modern catalysis. This course covers electron counting and the common ligands, main-group organometallic reagents, the elementary reactions of transition-metal complexes, and how they combine into catalytic cycles for hydrogenation, cross-coupling, metathesis and polymerisation, ending with catalysis on surfaces.",
-  "overview": [],
+  "overview": [
+    "Organometallic chemistry is the chemistry of compounds with bonds between metals and carbon — from the polar organolithium and Grignard reagents that every synthetic chemist uses to the transition-metal alkyls, carbonyls, alkene complexes and carbenes that run catalytic cycles. It matters because most large-scale chemical manufacture and much of modern synthesis is catalysed by such compounds: polyethylene and polypropylene grow on titanium, zirconium and chromium alkyls; aldehydes for plasticisers and acetic acid are made by rhodium and iridium carbonyl chemistry; single-enantiomer drugs are hydrogenated on chiral rhodium and ruthenium catalysts; and almost every drug discovery programme joins aromatic rings with palladium. Heterogeneous catalysts — metals and oxides on supports, zeolites — make ammonia, fuels and clean exhaust gases.",
+    "The course is organised from bookkeeping to applications. It starts with the metal–carbon bond, electron counting and the empirical 18-electron rule, then surveys the main-group reagents (Li, Mg, Zn, Cu, B, Si) and the transition-metal ligands (CO, phosphines, alkenes, carbenes, cyclopentadienyl) with the infrared and steric measures used to compare them. The central chapter defines the handful of elementary reactions — substitution, oxidative addition, reductive elimination, migratory insertion, β-hydride elimination, σ-bond metathesis — from which every mechanism is assembled. The next three chapters build catalytic cycles from them: hydrogenation, hydroformylation and methanol carbonylation; palladium cross-coupling; and alkene metathesis and polymerisation. The last chapter moves to surfaces: active sites, dispersion, descriptors and volcano plots, zeolites, oxides and pore diffusion.",
+    "What makes the subject hard is that the species drawn in a mechanism are usually not the species you can see: the compound in the bottle is a precatalyst, the most abundant complex in solution is a resting state, and the selectivity is decided at transition states between intermediates too short-lived to observe. The way through is to count electrons at every step, to insist that each step is one of the known elementary reactions, and to test each proposed cycle against kinetics (orders, saturation, inverse ligand dependence, activation parameters), isotopic labelling and stereochemistry. Many of the reagents are pyrophoric or toxic, and the lessons explain those hazards; they are not laboratory procedures."
+  ],
   "prerequisites": [
     "coordination-chemistry",
     "kinetics",
     "organic-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Count valence electrons, oxidation states, d-electron configurations and coordination numbers of organometallic complexes by the ionic and covalent methods, and use the empirical 18- and 16-electron rules to predict stability and coordinative unsaturation.",
+    "Relate the polarity and aggregation of main-group organometallic reagents to their reactivity, and derive fractional rate orders and Schlenk speciation from pre-equilibria.",
+    "Interpret metal carbonyl infrared spectra (band counts from symmetry, force constants, isotope shifts) and use Tolman electronic and steric parameters to compare ligands.",
+    "Classify elementary reactions by their effect on the electron count and oxidation state, and identify their mechanisms from rate laws, activation parameters, stereochemistry and labelling.",
+    "Construct catalytic cycles for hydrogenation, hydroformylation and methanol carbonylation, derive their rate laws, and calculate turnover numbers, turnover frequencies and selectivities from transition-state energy differences.",
+    "Propose mechanisms for Suzuki–Miyaura, Heck, Sonogashira, Negishi and Buchwald–Hartwig couplings, and explain how ligand design and catalyst lifetime control their scope.",
+    "Explain the Chauvin mechanism of alkene metathesis and the Cossee–Arlman mechanism of insertion polymerisation, and predict ring–chain selectivity, molar mass, dispersity and tacticity from catalyst properties.",
+    "Calculate dispersion, turnover frequency, crystallite size and effectiveness factors for supported catalysts, and use adsorption-energy descriptors and volcano plots to compare catalytic metals.",
+    "Describe the hazards of pyrophoric, water-reactive and toxic organometallic reagents by hazard class and mechanism."
+  ],
   "chapters": [
     {
       "slug": "organometallic-bonding",
@@ -82,8 +96,150 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1827,
+      "title": "Zeise's salt",
+      "detail": "William Christopher Zeise in Copenhagen obtains the platinum–ethene compound K[PtCl₃(C₂H₄)]·H₂O, the first organometallic compound of a transition metal; its bonding was explained only in the 1950s.",
+      "people": [
+        "William Christopher Zeise"
+      ]
+    },
+    {
+      "year": 1849,
+      "title": "Frankland's diethylzinc",
+      "detail": "Edward Frankland makes diethylzinc while trying to isolate the ethyl radical, founding main-group organometallic chemistry and introducing the word 'organometallic'.",
+      "people": [
+        "Edward Frankland"
+      ]
+    },
+    {
+      "year": 1890,
+      "title": "Tetracarbonylnickel",
+      "detail": "Ludwig Mond, Carl Langer and Friedrich Quincke discover [Ni(CO)₄], the first binary metal carbonyl, and Mond develops its volatility into a process for refining nickel.",
+      "people": [
+        "Ludwig Mond",
+        "Carl Langer",
+        "Friedrich Quincke"
+      ]
+    },
+    {
+      "year": 1900,
+      "title": "Grignard reagents",
+      "detail": "Victor Grignard publishes the preparation of organomagnesium halides in ether and their additions to carbonyl compounds; he shares the 1912 Nobel Prize in Chemistry with Paul Sabatier.",
+      "people": [
+        "Victor Grignard"
+      ]
+    },
+    {
+      "year": 1938,
+      "title": "Hydroformylation",
+      "detail": "Otto Roelen at Ruhrchemie discovers the cobalt-catalysed addition of CO and H₂ to alkenes (the oxo process), now one of the largest homogeneous catalytic processes.",
+      "people": [
+        "Otto Roelen"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "The sandwich structure of ferrocene",
+      "detail": "After Kealy and Pauson's report of Fe(C₅H₅)₂ (1951), Wilkinson, Rosenblum, Whiting and Woodward, and independently E. O. Fischer and Pfab, propose the sandwich structure; Fischer and Wilkinson share the 1973 Nobel Prize.",
+      "people": [
+        "Geoffrey Wilkinson",
+        "Robert B. Woodward",
+        "Ernst Otto Fischer"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "Ziegler's low-pressure polyethylene",
+      "detail": "Karl Ziegler's group finds that TiCl₄ with triethylaluminium polymerises ethene at low pressure; Giulio Natta makes isotactic polypropylene in 1954, and both receive the 1963 Nobel Prize.",
+      "people": [
+        "Karl Ziegler",
+        "Giulio Natta"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Wilkinson's catalyst",
+      "detail": "Osborn, Jardine, Young and Wilkinson describe [RhCl(PPh₃)₃] as a homogeneous hydrogenation catalyst working at room temperature and 1 bar of hydrogen.",
+      "people": [
+        "John Osborn",
+        "Fred Jardine",
+        "John Young",
+        "Geoffrey Wilkinson"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "The Chauvin mechanism of metathesis",
+      "detail": "Yves Chauvin and Jean-Louis Hérisson propose that alkene metathesis proceeds through metal carbenes and metallacyclobutanes; Chauvin, Grubbs and Schrock share the 2005 Nobel Prize.",
+      "people": [
+        "Yves Chauvin",
+        "Jean-Louis Hérisson"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Suzuki–Miyaura coupling",
+      "detail": "Norio Miyaura, Kinji Yamada and Akira Suzuki report palladium-catalysed coupling of organoboron compounds, completing the family of cross-couplings begun by Mizoroki and Heck (1971–72); Heck, Negishi and Suzuki share the 2010 Nobel Prize.",
+      "people": [
+        "Akira Suzuki",
+        "Norio Miyaura",
+        "Richard Heck",
+        "Ei-ichi Negishi"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Organometallic Chemistry of the Transition Metals",
+      "authors": "Robert H. Crabtree",
+      "year": 2019,
+      "note": "Seventh edition. The most widely used one-semester text: electron counting, ligands, elementary steps and catalytic cycles at exactly the level of this course, with clear problems."
+    },
+    {
+      "title": "Organotransition Metal Chemistry: From Bonding to Catalysis",
+      "authors": "John F. Hartwig",
+      "year": 2010,
+      "note": "The comprehensive graduate reference for mechanisms: detailed, evidence-based chapters on oxidative addition, insertion, cross-coupling, hydrogenation and metathesis."
+    },
+    {
+      "title": "Organometallics",
+      "authors": "Christoph Elschenbroich",
+      "year": 2006,
+      "note": "Third edition. Thorough survey of main-group and transition-metal organometallic chemistry, with thermochemical data and structural detail."
+    },
+    {
+      "title": "Organometallic Chemistry",
+      "authors": "Gary O. Spessard and Gary L. Miessler",
+      "year": 2016,
+      "note": "Third edition. An accessible undergraduate text with a good treatment of electron counting, spectroscopy and applications in organic synthesis."
+    },
+    {
+      "title": "Organometallics and Catalysis: An Introduction",
+      "authors": "Manfred Bochmann",
+      "year": 2015,
+      "note": "A concise introduction connecting organometallic structure and bonding to homogeneous catalysis, including polymerisation."
+    },
+    {
+      "title": "Inorganic Chemistry",
+      "authors": "Catherine E. Housecroft and Alan G. Sharpe",
+      "year": 2018,
+      "note": "Fifth edition. The organometallic and catalysis chapters give a compact overview and connect to the coordination chemistry prerequisites."
+    },
+    {
+      "title": "Concepts of Modern Catalysis and Kinetics",
+      "authors": "I. Chorkendorff and J. W. Niemantsverdriet",
+      "year": 2017,
+      "note": "Third edition. The standard text on heterogeneous catalysis: surface kinetics, characterisation methods, descriptors and industrial processes."
+    },
+    {
+      "title": "Organic Chemistry",
+      "authors": "Jonathan Clayden, Nick Greeves and Stuart Warren",
+      "year": 2012,
+      "note": "Second edition. For the organic background: carbonyl chemistry, organolithium and Grignard reagents, and the synthetic uses of cross-coupling and metathesis."
+    }
+  ],
   "next": [
     "green-chemistry"
   ]

@@ -395,6 +395,6 @@ $$
 ::: exercise 二聚静息态与半级 {level=3 check="3"}
 某催化剂的静息态是二聚体：$2\,\mathrm{Cat} \rightleftharpoons \mathrm{Cat_2}$，$K = [\mathrm{Cat_2}]/[\mathrm{Cat}]^2 = 4.0\times10^{3}\ \mathrm{dm^{3}\,mol^{-1}}$，只有单体进入对单体一级、底物饱和的循环 $v = k_2[\mathrm{Cat}]$。(a) 设二聚体占优，证明 $v = k_2\left([\mathrm{Cat}]_0/2K\right)^{1/2}$，从而反应对催化剂总量为半级。(b) $[\mathrm{Cat}]_0$ 增至九倍时速率增大多少倍？（输入该倍数。）
 ::: solution
-(a) 催化剂主要在二聚体中，$[\mathrm{Cat}]_0 \approx 2[\mathrm{Cat_2}] = 2K[\mathrm{Cat}]^2$，故自由单体 $[\mathrm{Cat}] = \left([\mathrm{Cat}]_0/2K\right)^{1/2}$，$v = k_2\left([\mathrm{Cat}]_0/2K\right)^{1/2}$——半级，如 [[#ex-cat-order]] 所观察。(b) 又是平方根：九倍给出 $9^{1/2} = 3$ 倍。数值 $K$ 从*比值*中消去；只有级数留下来，这就是为什么级数是关于机理的陈述而非关于速率的陈述。（对假定的自洽检验：$[\mathrm{Cat}]_0 = 1.0\times10^{-3}\ \mathrm{mol\,dm^{-3}}$ 时单体约 $3.5\times10^{-4}\ \mathrm{mol\,dm^{-3}}$，约占总量 $70\,\%$——那里二聚占优的公式只是勉强可用；严格的处理要精确解 $[\mathrm{Cat}]_0 = [\mathrm{Cat}] + 2K[\mathrm{Cat}]^2$；催化剂稀释时级数向 $1$ 漂移。）
+(a) 催化剂主要在二聚体中，$[\mathrm{Cat}]_0 \approx 2[\mathrm{Cat_2}] = 2K[\mathrm{Cat}]^2$，故自由单体 $[\mathrm{Cat}] = \left([\mathrm{Cat}]_0/2K\right)^{1/2}$，$v = k_2\left([\mathrm{Cat}]_0/2K\right)^{1/2}$——半级，如 [[#ex-cat-order]] 所观察。(b) 又是平方根：九倍给出 $9^{1/2} = 3$ 倍。数值 $K$ 从*比值*中消去；只有级数留下来，这就是为什么级数是关于机理的陈述而非关于速率的陈述。（对假定的自洽检验：$[\mathrm{Cat}]_0 = 1.0\times10^{-3}\ \mathrm{mol\,dm^{-3}}$ 时，二聚占优的公式给出单体浓度 $3.5\times10^{-4}\ \mathrm{mol\,dm^{-3}}$，约占催化剂总量的 $35\,\%$（精确值为 $3.0\times10^{-4}\ \mathrm{mol\,dm^{-3}}$，即 $30\,\%$）——二聚体并非压倒性占优，那里该公式只是勉强可用；严格的处理要精确解 $[\mathrm{Cat}]_0 = [\mathrm{Cat}] + 2K[\mathrm{Cat}]^2$；催化剂稀释时级数向 $1$ 漂移。）
 :::
 :::
