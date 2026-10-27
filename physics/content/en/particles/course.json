@@ -8,21 +8,24 @@
   "tagline": "From radioactive decay to the Standard Model",
   "summary": "Nuclear structure, decay, reactions, detectors, and the Standard Model of quarks and leptons.",
   "overview": [
-    "Nuclei and particles are quantum systems bound by interactions other than electromagnetism. A nucleus is a few hundred nucleons bound by the residual strong force; a hadron is a bound state of quarks; and the decays that power the Sun and that we detect in the laboratory are the weak interaction changing one fermion into another.",
-    "The course begins with nuclear sizes, the semi-empirical mass formula and the stability of nuclei, then the three modes of decay and the reactions of fission and fusion. Detectors and accelerators are treated as instruments with a principle, not as a catalogue. The second half is particle physics proper: the quark model, the leptons, and the gauge structure of the Standard Model at the level of its particles, its conservation laws and its one observed scalar, the Higgs boson.",
-    "Orders of magnitude matter here more than in any earlier course. A nuclear binding energy is a few MeV per nucleon, a rest energy is about a GeV per nucleon, and an atomic energy is an eV. Keeping those three numbers separate prevents most mistakes."
+    "Nuclear and particle physics asks what matter is made of at the smallest scales and how its pieces interact. A nucleus is a few hundred protons and neutrons bound by the residual strong force into a drop of nearly constant density; a proton or neutron is itself a bound state of quarks and gluons; and the weak interaction, which changes one kind of quark or lepton into another, drives beta decay and the burning of the Sun. The same ideas explain why iron is the most tightly bound nucleus, why uranium can release energy by fission, and why the universe contains matter at all.",
+    "The course has two halves. The first is nuclear physics: nuclear sizes from electron scattering, binding energies and the semi-empirical mass formula, the shell model and its magic numbers, the decay law and the physics of alpha, beta and gamma decay, and reactions, from Q-values and cross-sections to the energetics of fission and fusion. A chapter on instruments then explains how accelerators and detectors work, as applications of relativistic kinematics and of the interaction of radiation with matter. The second half is particle physics: the quarks, leptons and gauge bosons of the Standard Model, the three interactions described through Feynman diagrams, the Higgs boson, and the symmetries (conservation laws, C, P, T, isospin and flavour SU(3)) that organised the subject before it could be calculated.",
+    "Two habits make the subject manageable. The first is keeping energy scales apart: atomic binding energies are electronvolts, nuclear binding energies a few MeV per nucleon, nucleon rest energies about 939 MeV, and the masses of the W, Z, Higgs boson and top quark around 100 GeV. The second is letting conservation laws do the work: most questions about whether a decay or reaction can happen, and many about how fast, are answered by energy, momentum, angular momentum, parity and the quantum numbers of the particles, before any dynamics is needed."
   ],
   "prerequisites": [
     "quantum-1",
     "relativity"
   ],
   "outcomes": [
-    "Use the semi-empirical mass formula and interpret a binding-energy curve.",
-    "Compute lifetimes and spectra for alpha, beta and gamma decay in the standard approximations.",
-    "Describe fission and fusion in terms of the binding-energy curve and Q values.",
-    "Explain how a scintillator, a semiconductor detector and a tracking detector identify a particle.",
-    "State the quark content of the light hadrons and the conservation laws of the strong, electromagnetic and weak interactions.",
-    "Describe the particles of the Standard Model and the role of the Higgs boson."
+    "Compute nuclear radii, binding energies and Q-values from atomic masses, and use the semi-empirical mass formula to explain the binding-energy curve and the valley of stability.",
+    "Predict ground-state spins and parities of nuclei near closed shells from the shell model with spin–orbit coupling.",
+    "Solve the decay law and two-member decay chains, and apply secular and transient equilibrium to dating and isotope production.",
+    "Explain alpha-decay lifetimes by Coulomb-barrier tunnelling and beta spectra by Fermi's theory, and apply the selection rules for beta and gamma transitions.",
+    "Use cross-sections, thresholds, the Coulomb barrier and the Gamow peak to analyse nuclear reactions, including the energetics of fission and of the pp chain in the Sun.",
+    "Compute the centre-of-mass energy of fixed-target and colliding-beam experiments, event rates from luminosity, and the momentum of a track from its curvature.",
+    "Describe the particles and interactions of the Standard Model, draw and interpret the basic Feynman diagrams, and explain colour, confinement, quark mixing and the role of the Higgs field.",
+    "Apply conservation laws, parity, charge conjugation, isospin and SU(3) flavour to decide whether processes are allowed and to relate their rates.",
+    "Explain the experimental evidence for parity violation (1957), CP violation (1964), neutrino oscillation (1998) and the Higgs boson (2012)."
   ],
   "chapters": [
     {
@@ -82,50 +85,99 @@
   "history": [
     {
       "year": 1896,
-      "title": "Becquerel’s rays",
-      "detail": "Henri Becquerel found that uranium salts darken a photographic plate wrapped against the light. Radioactivity was the first evidence of a nucleus with internal energy.",
+      "title": "Becquerel's rays",
+      "detail": "Henri Becquerel found that uranium salts fog a photographic plate wrapped against light. Marie and Pierre Curie isolated polonium and radium from pitchblende two years later.",
       "people": [
-        "Henri Becquerel"
+        "Henri Becquerel",
+        "Marie Curie",
+        "Pierre Curie"
       ]
     },
     {
       "year": 1911,
-      "title": "Rutherford’s nucleus",
-      "detail": "The Geiger–Marsden scattering experiment, interpreted by Rutherford, showed that the positive charge of an atom sits in a region far smaller than the atom.",
+      "title": "Rutherford's nucleus",
+      "detail": "Interpreting the alpha-scattering experiments of Geiger and Marsden, Rutherford showed that the positive charge and almost all the mass of an atom sit in a tiny central nucleus.",
       "people": [
-        "Ernest Rutherford"
+        "Ernest Rutherford",
+        "Hans Geiger",
+        "Ernest Marsden"
       ]
     },
     {
       "year": 1932,
-      "title": "The neutron and the positron",
-      "detail": "Chadwick identified the neutron. The same year Anderson observed the positron, the antiparticle Dirac had predicted.",
+      "title": "The neutron",
+      "detail": "Chadwick identified the neutron from the penetrating radiation produced when alpha particles strike beryllium. The same year Cockcroft and Walton split lithium with accelerated protons and Anderson found the positron.",
       "people": [
         "James Chadwick",
+        "John Cockcroft",
+        "Ernest Walton",
         "Carl Anderson"
       ]
     },
     {
       "year": 1934,
-      "title": "Fermi’s theory of beta decay",
-      "detail": "Fermi wrote a field theory of beta decay in which a neutron becomes a proton, an electron and a neutrino. It is the ancestor of the weak interaction.",
+      "title": "Fermi's theory of beta decay",
+      "detail": "Fermi described beta decay as the creation of an electron and a neutrino, the particle Pauli had proposed in 1930, through a point-like weak interaction. In 1935 Yukawa proposed that the nuclear force is carried by a massive meson.",
       "people": [
-        "Enrico Fermi"
+        "Enrico Fermi",
+        "Wolfgang Pauli",
+        "Hideki Yukawa"
+      ]
+    },
+    {
+      "year": 1939,
+      "title": "Nuclear fission",
+      "detail": "Hahn and Strassmann found barium among the products of neutron-bombarded uranium in December 1938; Meitner and Frisch explained it in early 1939 as the splitting of the nucleus, releasing about 200 MeV.",
+      "people": [
+        "Otto Hahn",
+        "Fritz Strassmann",
+        "Lise Meitner",
+        "Otto Robert Frisch"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Parity violation",
+      "detail": "Following Lee and Yang's proposal, Wu and collaborators found that electrons from polarised cobalt-60 nuclei are emitted preferentially against the nuclear spin.",
+      "people": [
+        "Chien-Shiung Wu",
+        "Tsung-Dao Lee",
+        "Chen-Ning Yang"
       ]
     },
     {
       "year": 1964,
-      "title": "Quarks",
-      "detail": "Gell-Mann and, independently, Zweig proposed that hadrons are bound states of fractionally charged quarks. Deep inelastic scattering at SLAC, from 1968, showed the pointlike constituents.",
+      "title": "Quarks and CP violation",
+      "detail": "Gell-Mann and Zweig proposed quarks to explain the Eightfold Way, and the Omega-minus it predicted was found; deep inelastic scattering at SLAC from 1968 and the J/psi of 1974 confirmed the picture. In 1964 Christenson, Cronin, Fitch and Turlay also observed CP violation in neutral-kaon decays.",
       "people": [
         "Murray Gell-Mann",
-        "George Zweig"
+        "George Zweig",
+        "James Cronin",
+        "Val Fitch"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "The W and Z bosons",
+      "detail": "The UA1 and UA2 experiments at CERN's proton–antiproton collider discovered the carriers of the weak force at the masses predicted by the Glashow–Weinberg–Salam electroweak theory. The top quark, the last quark, followed at Fermilab's Tevatron in 1995.",
+      "people": [
+        "Carlo Rubbia",
+        "Simon van der Meer"
+      ]
+    },
+    {
+      "year": 1998,
+      "title": "Neutrino oscillation",
+      "detail": "Super-Kamiokande found that atmospheric muon neutrinos oscillate, showing that neutrinos have mass; SNO confirmed flavour change of solar neutrinos in 2001–02.",
+      "people": [
+        "Takaaki Kajita",
+        "Arthur McDonald"
       ]
     },
     {
       "year": 2012,
       "title": "The Higgs boson",
-      "detail": "On 4 July 2012 the ATLAS and CMS collaborations at the LHC announced a boson near 125 GeV with the couplings expected of the Higgs boson of the Standard Model.",
+      "detail": "On 4 July 2012 the ATLAS and CMS collaborations at the LHC announced a new boson near 125 GeV with the properties expected of the Standard Model Higgs boson.",
       "people": [
         "ATLAS Collaboration",
         "CMS Collaboration"
@@ -137,31 +189,49 @@
       "title": "Introductory Nuclear Physics",
       "authors": "Kenneth S. Krane",
       "year": 1988,
-      "note": "The standard undergraduate nuclear text. Clear on decay and on the mass formula."
+      "note": "The standard undergraduate nuclear text: nuclear sizes, the mass formula, the shell model, decay and reactions, with many worked numbers. The main source for the first three chapters."
     },
     {
       "title": "Introduction to Elementary Particles",
       "authors": "David J. Griffiths",
       "year": 2008,
-      "note": "Second edition. The particle half of this course, written so that a quantum-mechanics student can read it."
+      "note": "Second edition. A clear, readable introduction to the quark model, Feynman calculus, QED, QCD and the electroweak theory for students who know quantum mechanics."
+    },
+    {
+      "title": "Modern Particle Physics",
+      "authors": "Mark Thomson",
+      "year": 2013,
+      "note": "A modern, more quantitative treatment of the Standard Model built around the experiments, with full calculations of cross-sections and decay rates."
     },
     {
       "title": "Particle Physics",
       "authors": "B. R. Martin and Graham Shaw",
       "year": 2017,
-      "note": "Fourth edition. A little more experimental than Griffiths, and good on detectors."
+      "note": "Fourth edition. Concise and experimental in outlook; good on detectors, accelerators, symmetries and the quark model."
     },
     {
-      "title": "Nuclear and Particle Physics",
+      "title": "Particles and Nuclei: An Introduction to the Physical Concepts",
+      "authors": "Bogdan Povh, Klaus Rith, Christoph Scholz, Frank Zetsche and Werner Rodejohann",
+      "year": 2015,
+      "note": "Seventh edition. Treats nuclei and particles together through scattering experiments; especially good on form factors and deep inelastic scattering."
+    },
+    {
+      "title": "Nuclear and Particle Physics: An Introduction",
       "authors": "B. R. Martin",
       "year": 2009,
-      "note": "Second edition. One book for both halves, at the length of a single course."
+      "note": "Second edition. Both halves of the course in one short book at the right level."
     },
     {
       "title": "Introduction to High Energy Physics",
       "authors": "Donald H. Perkins",
       "year": 2000,
-      "note": "Fourth edition. Older, and still excellent on how the experiments established the Standard Model."
+      "note": "Fourth edition. Excellent on how the experiments established the Standard Model, with many order-of-magnitude estimates."
+    },
+    {
+      "title": "Review of Particle Physics",
+      "authors": "Particle Data Group (S. Navas et al.)",
+      "year": 2024,
+      "note": "Phys. Rev. D 110, 030001. The authoritative compilation of particle properties and reviews of detectors, accelerators and the Standard Model; the source of all particle data in this course."
     }
   ],
   "next": []
