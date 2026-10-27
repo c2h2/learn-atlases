@@ -7,12 +7,27 @@
   "order": 70,
   "tagline": "DNA and chromatin, replication, repair and recombination, molecular tools, transcription, RNA processing, translation and gene regulation",
   "summary": "Molecular biology explains how genetic information is stored, copied and expressed. This course covers the structure of DNA and chromatin, replication, repair and recombination, the laboratory tools that made the field, transcription, RNA processing and translation, and how bacteria and eukaryotes control which genes are expressed, when and how much.",
-  "overview": [],
+  "overview": [
+    "Molecular biology explains heredity and gene expression in terms of molecules: how a sequence of bases in DNA is stored, copied, repaired and rearranged, and how it is read out into RNA and protein in the right cells, at the right time and in the right amounts. It grew in the 1950s and 1960s from genetics, biochemistry and structural biology, through a run of decisive experiments with bacteria and their viruses: the double helix, semiconservative replication, messenger RNA, the genetic code and the operon. It is now the common language of almost every part of biology, from development and neuroscience to evolution and ecology, and the basis of biotechnology and genomic medicine.",
+    "The course follows the flow of information. It begins with the physical object, DNA wrapped into chromatin, and then follows the processes that maintain it: replication, from the Meselson–Stahl experiment to origins, forks and telomeres; and repair, recombination and transposition. A chapter on the tools of the field (restriction enzymes, cloning, PCR, sequencing, blotting, reporters and CRISPR–Cas9) comes early, because every later chapter relies on experiments made with them. The second half covers gene expression: transcription in bacteria and eukaryotes, RNA processing, the genetic code and translation, and finally the regulation of genes, first in bacteria (the lac and trp operons, the λ switch, riboswitches) and then in eukaryotes (transcription factors, enhancers, chromatin, DNA methylation and small RNAs).",
+    "What makes the subject demanding is less the number of molecules than the reasoning. Most of what we know was inferred from indirect evidence: band positions in a density gradient, the dominance of a mutation in a partial diploid, the size of a fragment on a gel, the period of a helical repeat. Each chapter therefore works through the key experiments and the quantitative arguments that interpret them, with Python listings for sequence manipulations and short models of binding, amplification and turnover. Work the examples and exercises with pencil and calculator, keep track of 5′ and 3′ ends and of which strand is which, and always ask what experiment would distinguish one mechanism from another."
+  ],
   "prerequisites": [
     "cell-biology",
     "genetics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the structure of B-DNA, its grooves and helical repeat, and calculate genome lengths, linking-number changes and nucleosome numbers from sequence data.",
+    "Interpret the Meselson–Stahl experiment quantitatively, and explain how the replisome copies leading and lagging strands, how origins are licensed once per cell cycle and how telomerase solves the end-replication problem.",
+    "Explain how fidelity of replication arises from base selection, proofreading and mismatch repair, and match the main classes of DNA damage to the repair pathways that remove them.",
+    "Describe homologous recombination, site-specific recombination and transposition, and recognise their products in sequence data.",
+    "Explain the principles of restriction mapping, cloning, PCR and qPCR, Sanger and high-throughput sequencing, blotting, reporter genes and CRISPR–Cas9, and carry out the associated calculations (fragment sizes, amplification and efficiency, coverage, chance matches).",
+    "Compare transcription initiation, elongation and termination in bacteria and eukaryotes, and analyse promoter strength in terms of binding and isomerisation.",
+    "Explain capping, splicing, alternative splicing, polyadenylation, RNA editing and nonsense-mediated decay, and predict the consequences of splice-site and nonsense mutations.",
+    "Use the genetic code to translate sequences in all reading frames, apply the wobble rules, and explain how the ribosome achieves speed and accuracy and what it costs in energy.",
+    "Predict the expression of lac and trp operon mutants and partial diploids, and analyse repression, activation and cooperative induction with simple equilibrium models.",
+    "Explain how transcription factors, enhancers, chromatin modifications, DNA methylation and small RNAs regulate eukaryotic genes, and design experiments that distinguish correlation from causation in gene regulation."
+  ],
   "chapters": [
     {
       "slug": "dna-structure",
@@ -88,8 +103,151 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1944,
+      "title": "DNA is the transforming principle",
+      "detail": "Oswald Avery, Colin MacLeod and Maclyn McCarty show that the substance that heritably transforms rough pneumococci into the smooth form, first described by Frederick Griffith in 1928, is DNA.",
+      "people": [
+        "Oswald Avery",
+        "Colin MacLeod",
+        "Maclyn McCarty"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "The double helix",
+      "detail": "James Watson and Francis Crick propose the double-helical structure of DNA, using X-ray diffraction data of Rosalind Franklin, Raymond Gosling and Maurice Wilkins, and note that base pairing suggests a copying mechanism.",
+      "people": [
+        "James Watson",
+        "Francis Crick",
+        "Rosalind Franklin",
+        "Maurice Wilkins"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Semiconservative replication",
+      "detail": "Matthew Meselson and Franklin Stahl grow E. coli on heavy nitrogen and follow its DNA by density-gradient centrifugation, showing that each daughter duplex carries one parental strand.",
+      "people": [
+        "Matthew Meselson",
+        "Franklin Stahl"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "Messenger RNA, the operon and the first codon",
+      "detail": "François Jacob and Jacques Monod propose the operon model and an unstable messenger; Brenner, Jacob and Meselson demonstrate mRNA; Crick, Barnett, Brenner and Watts-Tobin show that the code is read in triplets; and Marshall Nirenberg and Heinrich Matthaei find that poly(U) encodes polyphenylalanine.",
+      "people": [
+        "François Jacob",
+        "Jacques Monod",
+        "Sydney Brenner",
+        "Marshall Nirenberg",
+        "Heinrich Matthaei"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "The genetic code completed",
+      "detail": "With Nirenberg and Leder's triplet-binding assay and Gobind Khorana's synthetic polynucleotides, all 64 codons are assigned; Crick proposes the wobble hypothesis.",
+      "people": [
+        "Marshall Nirenberg",
+        "Philip Leder",
+        "Gobind Khorana",
+        "Francis Crick"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "Recombinant DNA",
+      "detail": "Stanley Cohen, Annie Chang, Herbert Boyer and Robert Helling join plasmid fragments cut with EcoRI and propagate them in E. coli, a year after Paul Berg's group made the first recombinant molecule.",
+      "people": [
+        "Stanley Cohen",
+        "Annie Chang",
+        "Herbert Boyer",
+        "Robert Helling"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "DNA sequencing and split genes",
+      "detail": "Frederick Sanger and colleagues, and Allan Maxam and Walter Gilbert, publish methods for sequencing DNA; Phillip Sharp's and Richard Roberts's groups discover introns in adenovirus.",
+      "people": [
+        "Frederick Sanger",
+        "Walter Gilbert",
+        "Phillip Sharp",
+        "Richard Roberts"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "The polymerase chain reaction",
+      "detail": "Randall Saiki, Kary Mullis and colleagues at Cetus publish the first use of PCR, conceived by Mullis in 1983; Taq polymerase follows in 1988. The same year Carol Greider and Elizabeth Blackburn discover telomerase.",
+      "people": [
+        "Kary Mullis",
+        "Randall Saiki",
+        "Carol Greider",
+        "Elizabeth Blackburn"
+      ]
+    },
+    {
+      "year": 1998,
+      "title": "RNA interference",
+      "detail": "Andrew Fire, Craig Mello and colleagues show that double-stranded RNA silences the matching gene in C. elegans, five years after Victor Ambros's and Gary Ruvkun's groups described the first microRNA, lin-4.",
+      "people": [
+        "Andrew Fire",
+        "Craig Mello"
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "Programmable cutting by Cas9",
+      "detail": "Martin Jinek, Jennifer Doudna, Emmanuelle Charpentier and colleagues show that Cas9 guided by an RNA cuts any DNA matching a 20-nucleotide sequence next to a PAM, opening the era of genome editing.",
+      "people": [
+        "Martin Jinek",
+        "Jennifer Doudna",
+        "Emmanuelle Charpentier"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Molecular Biology of the Gene, 7th edition",
+      "authors": "James D. Watson, Tania A. Baker, Stephen P. Bell, Alexander Gann, Michael Levine, Richard Losick",
+      "year": 2014,
+      "note": "The classic text for this course, organised around mechanisms and the experiments that revealed them; especially strong on replication, recombination, transcription and bacterial and phage regulation."
+    },
+    {
+      "title": "Molecular Biology of the Cell, 7th edition",
+      "authors": "Bruce Alberts, Rebecca Heald, Alexander Johnson, David Morgan, Martin Raff, Keith Roberts, Peter Walter",
+      "year": 2022,
+      "note": "Broad, authoritative and well illustrated; its chapters on DNA, chromosomes, replication, repair, gene expression and its control are the standard reference for the numbers quoted in this course."
+    },
+    {
+      "title": "Lewin's Genes XII",
+      "authors": "Jocelyn E. Krebs, Elliott S. Goldstein, Stephen T. Kilpatrick",
+      "year": 2017,
+      "note": "Detailed treatment of gene structure, chromatin, transcription, RNA processing and regulation, with an emphasis on the molecular detail behind each process."
+    },
+    {
+      "title": "Molecular Biology: Principles of Genome Function, 3rd edition",
+      "authors": "Nancy L. Craig, Rachel Green, Carol W. Greider, Gisela Storz, Cynthia Wolberger, Orna Cohen-Fix",
+      "year": 2021,
+      "note": "A modern, experiment-centred text organised by genome function; excellent on the logic of experiments and on RNA-based regulation."
+    },
+    {
+      "title": "A Genetic Switch: Phage Lambda Revisited, 3rd edition",
+      "authors": "Mark Ptashne",
+      "year": 2004,
+      "note": "A short, lucid monograph on the λ switch that explains cooperative binding, repression and activation by recruitment; the best introduction to the logic of gene regulation."
+    },
+    {
+      "title": "Molecular Cloning: A Laboratory Manual, 4th edition",
+      "authors": "Michael R. Green, Joseph Sambrook",
+      "year": 2012,
+      "note": "The standard reference on the principles behind recombinant-DNA techniques, for readers who want to see how the tools of the field are used in teaching and research laboratories."
+    }
+  ],
   "next": [
     "genomics",
     "developmental-biology",
