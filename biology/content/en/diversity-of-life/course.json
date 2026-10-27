@@ -7,11 +7,25 @@
   "order": 50,
   "tagline": "Classification, the origin of life, bacteria and archaea, protists, fungi, land plants, invertebrates and vertebrates",
   "summary": "About two million living species have been named, and many more await discovery. This course surveys the tree of life: how organisms are classified, how life began, and the major lineages — bacteria and archaea, protists, fungi, land plants, invertebrates and vertebrates — with their body plans, life cycles and evolutionary history.",
-  "overview": [],
+  "overview": [
+    "About two million living species have scientific names, and estimates of the total run from several million to far more, most of them small, tropical, marine or microbial. This course surveys that diversity as a tree: how organisms are named and classified, how life began on the early Earth, and the major lineages — bacteria and archaea, the protists in which the eukaryotic cell and its plastids arose, fungi, land plants, invertebrate animals and vertebrates — with their body plans, life cycles, key innovations and dated history. It matters because every other branch of biology works with particular organisms, and because classification, species counts and phylogenies are the basis of conservation, agriculture, microbiology and the search for new drugs.",
+    "The course begins with systematics and nomenclature — the codes of nomenclature, ranks versus clades, and the debate over whether the tree of life has three primary domains or two, with eukaryotes arising from within the Asgard archaea — and with the quantitative problem of estimating how many species exist. It then follows life from prebiotic chemistry and the RNA world to the first cells, and works through the major groups in roughly the order in which they appeared. Each lesson ties biology to a little physics or mathematics where it explains something: thermodynamic limits on microbial metabolism, Eigen's error threshold, diversity indices and rarefaction, life at low Reynolds number, spore dispersal, the water cost of photosynthesis, diffusion limits on body size, swim-bladder buoyancy and metabolic scaling.",
+    "The difficulty of the subject is its size and its changing vocabulary. Names and classifications are revised as phylogenies improve — bacterial phyla were renamed in 2021, the eukaryotic supergroups have been rearranged repeatedly, and the root of the eukaryotic tree is unknown — so the lessons date fast-moving facts and say which conclusions are firm and which are debated. Approach each group by asking what problem its body plan solves and what evidence places it on the tree, rather than memorising lists; and read trees as hypotheses of common ancestry, never as ladders of progress. The course builds on Evolutionary Biology and leads to Microbiology, Plant Biology, Animal Physiology and Ecology."
+  ],
   "prerequisites": [
     "evolution"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Apply the rules of the zoological, botanical and prokaryotic codes of nomenclature to write, read and interpret scientific names, and distinguish ranks from clades, and crown groups from total groups.",
+    "Explain the evidence for the three-domains and two-domains trees of life, including ribosomal RNA, rooting with ancient paralogues and the discovery of the Asgard archaea, and state what remains uncertain.",
+    "Estimate species richness from samples with the Chao1 estimator and accumulation curves, calculate Shannon and Simpson diversity and rarefied richness, and evaluate published estimates of global species numbers with their uncertainty.",
+    "Describe the main lines of evidence and hypotheses for the origin of life — prebiotic chemistry, the RNA world, protocells and the early rock record — and calculate Eigen's error threshold and carbon-isotope signatures.",
+    "Classify prokaryotes by cell envelope and nutritional mode, use the Gibbs free energy equation to assess whether a metabolism is feasible, and name the major bacterial and archaeal phyla.",
+    "Explain the endosymbiotic origins of mitochondria and plastids and the current supergroup classification of eukaryotes, and analyse protist biology with the Reynolds number and simple models of diatom division.",
+    "Compare the life cycles of fungi and land plants, including the dikaryon, mating-type systems and the alternation of generations, and relate plant structure to water loss, water transport and phyllotaxis.",
+    "Describe animal body plans and the phylogeny of the major invertebrate and vertebrate groups, and use diffusion, buoyancy and scaling arguments to explain constraints on animal size and form.",
+    "Interpret dated phylogenies, distinguishing molecular divergence estimates from fossil minimum ages, and read trees without treating any living group as ancestral or primitive."
+  ],
   "chapters": [
     {
       "slug": "classifying-life",
@@ -78,8 +92,146 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1753,
+      "title": "Species Plantarum",
+      "detail": "Carl Linnaeus used two-word names consistently for all plants; the book, published on 1 May 1753, is the starting point of botanical nomenclature.",
+      "people": [
+        "Carl Linnaeus"
+      ]
+    },
+    {
+      "year": 1758,
+      "title": "Systema Naturae, 10th edition",
+      "detail": "Linnaeus applied binomial names to animals; the International Code of Zoological Nomenclature treats this edition as published on 1 January 1758, the starting point for animal names.",
+      "people": [
+        "Carl Linnaeus"
+      ]
+    },
+    {
+      "year": 1866,
+      "title": "Haeckel's trees and the Protista",
+      "detail": "In Generelle Morphologie der Organismen Ernst Haeckel coined the word phylogeny, drew some of the first trees of life and proposed a third kingdom, Protista, for microscopic organisms.",
+      "people": [
+        "Ernst Haeckel"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "The Miller–Urey experiment",
+      "detail": "Stanley Miller, working with Harold Urey, made amino acids by passing electric sparks through methane, ammonia, hydrogen and water vapour, showing that building blocks of life form readily without life.",
+      "people": [
+        "Stanley Miller",
+        "Harold Urey"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "Five kingdoms",
+      "detail": "Robert Whittaker proposed in Science the classification into Monera, Protista, Fungi, Plantae and Animalia that dominated textbooks for a generation.",
+      "people": [
+        "Robert H. Whittaker"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "Discovery of the Archaea",
+      "detail": "Comparing ribosomal RNA oligonucleotide catalogues, Carl Woese and George Fox found that methanogens are as distinct from bacteria as from eukaryotes, a third primary lineage of life.",
+      "people": [
+        "Carl Woese",
+        "George E. Fox"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "Three domains",
+      "detail": "Woese, Otto Kandler and Mark Wheelis proposed the rank of domain and the three domains Bacteria, Archaea and Eucarya.",
+      "people": [
+        "Carl Woese",
+        "Otto Kandler",
+        "Mark Wheelis"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "Tiktaalik",
+      "detail": "Edward Daeschler, Neil Shubin and Farish Jenkins described Tiktaalik roseae, a 375-million-year-old fish with tetrapod features, found by a targeted search of Devonian rocks on Ellesmere Island.",
+      "people": [
+        "Edward B. Daeschler",
+        "Neil H. Shubin",
+        "Farish A. Jenkins Jr."
+      ]
+    },
+    {
+      "year": 2015,
+      "title": "Lokiarchaeota",
+      "detail": "Anja Spang, Thijs Ettema and colleagues reconstructed from deep-sea sediment the genome of an archaeon that branched with eukaryotes and encoded eukaryotic signature proteins, reviving the two-domains tree.",
+      "people": [
+        "Anja Spang",
+        "Thijs J. G. Ettema"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "An Asgard archaeon in culture",
+      "detail": "After twelve years of enrichment, Hiroyuki Imachi, Masaru Nobu and colleagues grew 'Candidatus Prometheoarchaeum syntrophicum', a slow-growing syntrophic archaeon with long cell protrusions.",
+      "people": [
+        "Hiroyuki Imachi",
+        "Masaru K. Nobu"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Campbell Biology, 12th edition",
+      "authors": "Lisa A. Urry, Michael L. Cain, Steven A. Wasserman, Peter V. Minorsky and Rebecca B. Orr",
+      "year": 2020,
+      "note": "The standard introductory text; its unit on the evolutionary history of biological diversity covers every group in this course with clear phylogenies and illustrations."
+    },
+    {
+      "title": "Brock Biology of Microorganisms, 16th edition",
+      "authors": "Michael T. Madigan, Kelly S. Bender, Daniel H. Buckley, W. Matthew Sattley and David A. Stahl",
+      "year": 2021,
+      "note": "The reference for prokaryotic structure, metabolic diversity, the major bacterial and archaeal phyla and microbial ecology, and good on microbial eukaryotes."
+    },
+    {
+      "title": "Raven Biology of Plants, 8th edition",
+      "authors": "Ray F. Evert and Susan E. Eichhorn",
+      "year": 2013,
+      "note": "A thorough, well-illustrated account of algae, fungi, bryophytes, seedless vascular plants, gymnosperms and angiosperms, with their life cycles and evolution."
+    },
+    {
+      "title": "Introduction to Fungi, 3rd edition",
+      "authors": "John Webster and Roland W. S. Weber",
+      "year": 2007,
+      "note": "A detailed survey of fungal structure, life cycles and the major groups, including fungus-like protists; strong on spore discharge and ecology."
+    },
+    {
+      "title": "Invertebrates, 3rd edition",
+      "authors": "Richard C. Brusca, Wendy Moore and Stephen M. Shuster",
+      "year": 2016,
+      "note": "The authoritative text on invertebrate body plans and phylogeny, organised by phylum, with modern molecular phylogenies and extensive references."
+    },
+    {
+      "title": "Integrated Principles of Zoology, 17th edition",
+      "authors": "Cleveland P. Hickman Jr., Susan L. Keen, David J. Eisenhour, Allan Larson and Helen I'Anson",
+      "year": 2017,
+      "note": "A broad zoology text covering animal architecture, the invertebrate phyla and the vertebrate classes, useful for comparative anatomy."
+    },
+    {
+      "title": "Vertebrate Life, 10th edition",
+      "authors": "F. Harvey Pough, William E. Bemis, Betty McGuire and Christine M. Janis",
+      "year": 2018,
+      "note": "The leading account of vertebrate evolution, from chordate origins and early fishes to tetrapods, amniotes, birds and mammals, integrating fossils, phylogeny and function."
+    },
+    {
+      "title": "The new tree of eukaryotes",
+      "authors": "Fabien Burki, Andrew J. Roger, Matthew W. Brown and Alastair G. B. Simpson (Trends in Ecology & Evolution 35: 43–55)",
+      "year": 2020,
+      "note": "A concise review of the eukaryotic supergroups, the orphan lineages and the open problem of the root, the basis of the protist chapter."
+    }
+  ],
   "next": [
     "microbiology",
     "plant-biology",
