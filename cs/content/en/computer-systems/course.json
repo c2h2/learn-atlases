@@ -7,11 +7,27 @@
   "order": 40,
   "tagline": "Bits and integers, floating point, C, machine-level programs, the memory hierarchy, linking, processes, dynamic memory and system-level input and output",
   "summary": "Every program ultimately runs as machine instructions on real hardware, and knowing how makes programs faster, safer and easier to debug. This course follows a program from C source to a running process: how data are represented in bits, the C language and its memory model, x86-64 machine code, the memory hierarchy and caches, linking and loading, exceptional control flow and processes, dynamic memory allocation and system-level input and output.",
-  "overview": [],
+  "overview": [
+    "Every program, whatever language it is written in, ends up as machine instructions operating on bits in memory, and every program runs inside a process managed by an operating system. This course follows a C program on that journey: how integers and real numbers are represented in bits and what arithmetic on them really computes; the C language and its model of memory, with pointers, structures, the stack and the heap; the x86-64 machine code that the compiler produces; the memory hierarchy of caches and virtual memory that decides how fast that code runs; the linker and loader that turn object files into a running program; the exceptions, processes and signals through which programs and the operating system interact; dynamic memory allocation; and the Unix input and output on which every higher-level I/O library is built.",
+    "The course takes the programmer's view. It does not design hardware or operating systems — those are the subjects of computer architecture (in the Electrical Engineering Atlas) and of [[operating-systems]] — but asks what a programmer must know about them to write programs that are correct, fast and secure. The chapters build on each other: bits and C first, then machine code, after which the memory hierarchy, linking and exceptional control flow can be read in any order, followed by dynamic memory and system-level I/O, which draw on all of them.",
+    "Everything is concrete. Each chapter is built around small C programs, compiled with GCC on x86-64 Linux, whose output — and often whose assembly code, symbol tables or system-call traces — is shown exactly as the tools printed it. The theory is short and exact: what two's-complement addition computes and when it overflows, why rounding errors are bounded by the unit roundoff, why a stride-1 loop misses the cache once per block, why boundary tags make coalescing constant-time. Measurements are presented as observations on one machine, never as laws.",
+    "What makes the subject hard is that the abstractions of high-level programming stop being true: integers overflow, floating-point addition is not associative, out-of-bounds accesses are not caught, and memory is not uniformly fast. The way to learn it is to run the programs yourself, change them, read the assembly and the tool output, and use the sanitisers (`-fsanitize=address,undefined`) on everything you write. Security is treated throughout in the same spirit: buffer overflows, integer overflows and use-after-free bugs are explained as classes of error, together with the defences against them, on toy programs only."
+  ],
   "prerequisites": [
     "programming-1"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Convert between binary, hexadecimal and decimal, and explain unsigned and two's-complement encodings, sign extension, truncation and C's implicit signed/unsigned conversions.",
+    "Prove what fixed-width addition and multiplication compute, detect integer overflow without undefined behaviour, and explain how unchecked size arithmetic leads to security vulnerabilities.",
+    "Decode and encode IEEE 754 floating-point numbers, apply the rounding error bound, and recognise and avoid cancellation, accumulation and comparison pitfalls.",
+    "Write correct C programs using pointers, arrays, strings and structures, compute structure layouts, and identify undefined behaviour with compiler warnings and sanitisers.",
+    "Read x86-64 assembly produced by GCC: relate registers, operands, condition codes, jumps, loops and the System V calling convention to the C source, and explain how stack canaries and related defences work.",
+    "Analyse the cache behaviour of loops by counting misses, compute average memory access times, and restructure code for spatial and temporal locality.",
+    "Explain how object files, symbol resolution, relocation, static and shared libraries and the loader produce a running program, and diagnose common link errors.",
+    "Use fork, execve, waitpid and signals correctly, explain exceptions and system calls, and write a minimal shell.",
+    "Implement a simple heap allocator with boundary tags and coalescing, compare allocator designs, and find memory errors such as leaks and use-after-free.",
+    "Use Unix I/O robustly in the presence of short counts, explain descriptor sharing, redirection and pipes, and predict the effects of standard I/O buffering."
+  ],
   "chapters": [
     {
       "slug": "bits-integers",
@@ -88,8 +104,119 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1945,
+      "title": "The EDVAC report",
+      "detail": "John von Neumann's First Draft of a Report on the EDVAC described a stored-program computer with binary arithmetic, in which instructions and data share one memory — the organisation of nearly every computer since.",
+      "people": [
+        "John von Neumann"
+      ]
+    },
+    {
+      "year": 1949,
+      "title": "EDSAC runs its first program",
+      "detail": "Maurice Wilkes's EDSAC at Cambridge, one of the first practical stored-program computers, ran its first program on 6 May 1949; its team built the first subroutine library and a relocating loader, described in Wilkes, Wheeler and Gill's 1951 book.",
+      "people": [
+        "Maurice Wilkes",
+        "David Wheeler",
+        "Stanley Gill"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "Virtual memory on the Atlas",
+      "detail": "The Atlas computer at the University of Manchester went into service with a 'one-level store' that moved fixed-size pages automatically between core memory and a drum, together with interrupts and a privileged supervisor.",
+      "people": [
+        "Tom Kilburn"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "IBM System/360",
+      "detail": "IBM announced a compatible family of computers with 8-bit bytes, byte-addressed memory and two's-complement integers, establishing conventions still universal today.",
+      "people": [
+        "Gene Amdahl",
+        "Fred Brooks"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "The first cache",
+      "detail": "The IBM System/360 Model 85 introduced a small, fast buffer memory holding copies of recently used main-memory blocks, realising the 'slave memory' Maurice Wilkes had proposed in 1965.",
+      "people": []
+    },
+    {
+      "year": 1973,
+      "title": "Unix rewritten in C",
+      "detail": "Dennis Ritchie's C language, developed at Bell Labs from 1969 to 1973, became the language of the Unix kernel when it was rewritten in 1973; Kernighan and Ritchie's book followed in 1978.",
+      "people": [
+        "Dennis Ritchie",
+        "Ken Thompson"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "The UNIX Time-Sharing System",
+      "detail": "Ritchie and Thompson's paper in Communications of the ACM described Unix processes created by fork and exec, files as byte sequences accessed through descriptors, a hierarchical file system and pipes.",
+      "people": [
+        "Dennis Ritchie",
+        "Ken Thompson"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "IEEE 754 floating point",
+      "detail": "The IEEE 754-1985 standard, led by William Kahan, fixed binary floating-point formats, correct rounding, gradual underflow, infinities and NaNs; it was revised in 2008 and 2019.",
+      "people": [
+        "William Kahan"
+      ]
+    },
+    {
+      "year": 2003,
+      "title": "x86-64 processors ship",
+      "detail": "AMD's Opteron, the first processor implementing AMD's 64-bit extension of the x86 architecture (published in 2000), shipped in April 2003; Intel adopted the same architecture in 2004.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Computer Systems: A Programmer's Perspective",
+      "authors": "Randal E. Bryant and David R. O'Hallaron",
+      "year": 2016,
+      "note": "Third edition. The standard textbook for exactly this course, with x86-64 throughout; deeper treatments of every chapter, the memory mountain, and well-known programming labs."
+    },
+    {
+      "title": "The C Programming Language",
+      "authors": "Brian W. Kernighan and Dennis M. Ritchie",
+      "year": 1988,
+      "note": "Second edition (ANSI C). Short, precise and still the best introduction to the language by its designers; pair it with a modern reference for C11–C23 features."
+    },
+    {
+      "title": "Computer Organization and Design RISC-V Edition: The Hardware/Software Interface",
+      "authors": "David A. Patterson and John L. Hennessy",
+      "year": 2017,
+      "note": "The hardware side of the same story — instruction sets, pipelining, caches and virtual memory — for readers going on to computer architecture."
+    },
+    {
+      "title": "Linkers and Loaders",
+      "authors": "John R. Levine",
+      "year": 2000,
+      "note": "The classic account of object formats, symbol resolution, relocation and shared libraries; dated in details but clear on principles."
+    },
+    {
+      "title": "Advanced Programming in the UNIX Environment",
+      "authors": "W. Richard Stevens and Stephen A. Rago",
+      "year": 2013,
+      "note": "Third edition. The reference for processes, signals, file I/O and the rest of the POSIX interface, with complete example programs."
+    },
+    {
+      "title": "The Linux Programming Interface",
+      "authors": "Michael Kerrisk",
+      "year": 2010,
+      "note": "A comprehensive, exact guide to Linux and POSIX system calls by the maintainer of the Linux manual pages; ideal for the last three chapters."
+    }
+  ],
   "next": [
     "operating-systems",
     "networks",
