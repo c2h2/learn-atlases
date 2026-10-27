@@ -7,12 +7,26 @@
   "order": 130,
   "tagline": "Selection rules, rotational, vibrational and electronic spectra, NMR, EPR, mass spectrometry and solving structures",
   "summary": "Spectroscopy reveals the structure of molecules through their interaction with radiation. This course derives the principles and selection rules of rotational, vibrational and electronic spectroscopy and of magnetic resonance, and then shows how NMR, infrared and mass spectra are combined in practice to determine unknown structures.",
-  "overview": [],
+  "overview": [
+    "Almost everything chemists know about the structure of molecules — bond lengths to a thousandth of an ångström, the shapes of molecular orbitals, the connectivity of a newly made natural product — was learned by shining radiation on matter and recording what came back. Spectroscopy is that measurement made quantitative: a molecule absorbs, emits or scatters a photon only when the photon energy matches the gap between two of its quantised energy levels, $\\Delta E = h\\nu$, and only when a selection rule allows the transition. Microwaves probe rotation, infrared light probes vibration, visible and ultraviolet light probe electrons, and radiofrequency fields in a magnet probe nuclear and electron spins. Mass spectrometry, which weighs ions rather than counting photons, completes the toolkit.",
+    "The course has two halves. The first five chapters build the physics: the principles common to every technique (transition dipole moments, selection rules, Boltzmann populations, the Beer–Lambert law and line widths), then rotational, vibrational and electronic spectroscopy, and the principles of nuclear magnetic resonance. Each chapter derives where lines fall and how strong they are from the quantum mechanics of [[quantum-chemistry]], and turns measured spectra back into molecular parameters — rotational constants into bond lengths, band origins into force constants and dissociation energies, chemical shifts and coupling constants into local electronic structure. The second half applies the methods: NMR for structure determination with one- and two-dimensional experiments, electron paramagnetic resonance of radicals and metal ions, mass spectrometry, and a final chapter in which infrared, NMR and mass spectra are combined to solve unknown structures.",
+    "What makes spectroscopy demanding is that every spectrum must be read in two languages at once. One is physical: energy levels, selection rules and populations decide which lines exist and how intense they are. The other is chemical: a carbonyl stretch near $1715\\ \\mathrm{cm^{-1}}$, a triplet at $\\delta\\ 1.2$ coupled to a quartet at $\\delta\\ 4.1$, or a 3 : 1 pair of peaks two mass units apart are fingerprints of particular structural features. The way to master both is to work numerically — convert between wavenumbers, frequencies and energies until it is automatic, predict a spectrum before you look at one, and check every assignment against all the data rather than the first peak that seems to fit. The worked examples and exercises are built to practise exactly that habit."
+  ],
   "prerequisites": [
     "quantum-chemistry",
     "organic-1"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain how radiation interacts with molecules through the transition dipole moment, derive selection rules from symmetry, and calculate Boltzmann populations, absorbances and natural and Doppler line widths.",
+    "Derive the term values of rigid and centrifugally distorted rotors, assign microwave and rotational Raman spectra, and calculate bond lengths and dipole moments from rotational constants and Stark splittings.",
+    "Count and classify the normal modes of a molecule, predict its infrared and Raman activity, and use anharmonic term values and characteristic group frequencies to interpret vibrational spectra.",
+    "Interpret electronic spectra with molecular term symbols and the Franck–Condon principle, estimate absorption maxima of conjugated chromophores, and analyse fluorescence, phosphorescence and quenching kinetics.",
+    "Calculate Larmor frequencies, population differences and chemical shifts, explain spin–spin coupling, relaxation and pulsed Fourier-transform NMR, and predict first-order multiplet patterns.",
+    "Assign proton and carbon-13 NMR spectra from shifts, integrals, multiplicities and DEPT, and use COSY, HSQC, HMBC and NOESY correlations to assemble a molecular structure.",
+    "Calculate g values and hyperfine patterns of radicals and transition-metal ions, and relate hyperfine couplings to unpaired spin densities through the McConnell relation.",
+    "Compare ionisation methods and mass analysers, deduce molecular formulae from exact masses and isotope patterns, and rationalise common fragmentation pathways.",
+    "Combine mass, infrared and NMR data to deduce the structure of an unknown compound and check the proposal against every observation."
+  ],
   "chapters": [
     {
       "slug": "spectroscopy-principles",
@@ -93,8 +107,147 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1814,
+      "title": "Fraunhofer maps the dark lines of the solar spectrum",
+      "detail": "Joseph von Fraunhofer, testing prisms for optical glass, charts several hundred dark lines in sunlight and labels the strongest A to K; the sodium D lines still carry his letters.",
+      "people": [
+        "Joseph von Fraunhofer"
+      ]
+    },
+    {
+      "year": 1859,
+      "title": "Kirchhoff and Bunsen found spectral analysis",
+      "detail": "Gustav Kirchhoff and Robert Bunsen show that each element emits and absorbs light at its own characteristic wavelengths, explaining Fraunhofer's lines as absorption by elements in the solar atmosphere; with the new method they discover caesium (1860) and rubidium (1861).",
+      "people": [
+        "Gustav Kirchhoff",
+        "Robert Bunsen"
+      ]
+    },
+    {
+      "year": 1919,
+      "title": "Aston's mass spectrograph",
+      "detail": "Francis Aston builds a mass spectrograph that focuses ions by velocity and records their mass-to-charge ratios on a photographic plate, and uses it to show that most elements are mixtures of isotopes; he receives the 1922 Nobel Prize in Chemistry.",
+      "people": [
+        "Francis W. Aston"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "The Raman effect",
+      "detail": "C. V. Raman and K. S. Krishnan observe that light scattered by liquids contains weak new frequencies shifted by molecular vibration frequencies; Raman receives the 1930 Nobel Prize in Physics.",
+      "people": [
+        "C. V. Raman",
+        "K. S. Krishnan"
+      ]
+    },
+    {
+      "year": 1944,
+      "title": "Zavoisky observes electron paramagnetic resonance",
+      "detail": "Yevgeny Zavoisky in Kazan detects the resonant absorption of radiofrequency radiation by paramagnetic salts in a magnetic field, the first electron paramagnetic resonance experiment.",
+      "people": [
+        "Yevgeny Zavoisky"
+      ]
+    },
+    {
+      "year": 1946,
+      "title": "NMR in bulk matter",
+      "detail": "Felix Bloch's group at Stanford and Edward Purcell's group at Harvard independently detect nuclear magnetic resonance of protons in water and in paraffin wax; Bloch and Purcell share the 1952 Nobel Prize in Physics.",
+      "people": [
+        "Felix Bloch",
+        "Edward M. Purcell"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "Three proton signals for ethanol",
+      "detail": "James Arnold, Srinivas Dharmatti and Martin Packard resolve separate resonances for the $\\mathrm{CH_3}$, $\\mathrm{CH_2}$ and $\\mathrm{OH}$ protons of ethanol in the intensity ratio 3 : 2 : 1, showing that the chemical shift reports the chemical environment of a nucleus.",
+      "people": [
+        "James T. Arnold",
+        "Srinivas S. Dharmatti",
+        "Martin E. Packard"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "The first laser",
+      "detail": "Theodore Maiman obtains pulsed laser action at $694.3\\ \\mathrm{nm}$ from a flash-lamp-pumped ruby crystal, turning stimulated emission into an intense, monochromatic light source for spectroscopy.",
+      "people": [
+        "Theodore H. Maiman"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Fourier-transform NMR",
+      "detail": "Richard Ernst and Weston Anderson replace slow frequency sweeps by short radiofrequency pulses and Fourier transformation of the free induction decay, multiplying sensitivity per unit time; Ernst later develops two-dimensional NMR and receives the 1991 Nobel Prize in Chemistry.",
+      "people": [
+        "Richard R. Ernst",
+        "Weston A. Anderson"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Soft ionisation of large molecules",
+      "detail": "Koichi Tanaka and, independently, Michael Karas and Franz Hillenkamp report laser desorption of intact proteins (MALDI), and John Fenn's group develops electrospray ionisation of proteins (published 1988–89), opening biological macromolecules to mass spectrometry; Fenn and Tanaka share the 2002 Nobel Prize in Chemistry.",
+      "people": [
+        "Koichi Tanaka",
+        "Michael Karas",
+        "Franz Hillenkamp",
+        "John B. Fenn"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Atkins' Physical Chemistry",
+      "authors": "Peter Atkins, Julio de Paula and James Keeler",
+      "year": 2018,
+      "note": "Eleventh edition. The standard physical-chemistry account of rotational, vibrational and electronic spectroscopy and of magnetic resonance, with the notation used in the first half of this course."
+    },
+    {
+      "title": "Modern Spectroscopy",
+      "authors": "J. Michael Hollas",
+      "year": 2004,
+      "note": "Fourth edition. A thorough single-author treatment of molecular spectroscopy — symmetry, selection rules, rotational, vibrational and electronic spectra, lasers — at exactly the level of the physical chapters."
+    },
+    {
+      "title": "Fundamentals of Molecular Spectroscopy",
+      "authors": "Colin N. Banwell and Elaine M. McCash",
+      "year": 1994,
+      "note": "Fourth edition. The gentlest introduction to the subject, with short chapters and many numerical examples; good first reading before Hollas or Atkins."
+    },
+    {
+      "title": "Spectrometric Identification of Organic Compounds",
+      "authors": "Robert M. Silverstein, Francis X. Webster, David J. Kiemle and David L. Bryce",
+      "year": 2014,
+      "note": "Eighth edition. The classic text on solving organic structures from mass, infrared, proton, carbon-13 and two-dimensional NMR spectra, with many problems; the companion to the last chapters."
+    },
+    {
+      "title": "Structure Determination of Organic Compounds: Tables of Spectral Data",
+      "authors": "Ernö Pretsch, Philippe Bühlmann and Martin Badertscher",
+      "year": 2009,
+      "note": "Fourth edition. Tables of chemical shifts, coupling constants, group frequencies and mass-spectral fragments; the data source for many of the values quoted in the NMR, infrared and structure chapters."
+    },
+    {
+      "title": "Nuclear Magnetic Resonance",
+      "authors": "Peter J. Hore",
+      "year": 2015,
+      "note": "Second edition (Oxford Chemistry Primers). A short, clear account of the physics of NMR — chemical shift, coupling, relaxation and pulsed Fourier-transform methods."
+    },
+    {
+      "title": "Electron Paramagnetic Resonance: Elementary Theory and Practical Applications",
+      "authors": "John A. Weil and James R. Bolton",
+      "year": 2007,
+      "note": "Second edition. The standard textbook of EPR, from g values and hyperfine structure to transition-metal ions and relaxation."
+    },
+    {
+      "title": "Mass Spectrometry: Principles and Applications",
+      "authors": "Edmond de Hoffmann and Vincent Stroobant",
+      "year": 2007,
+      "note": "Third edition. Ion sources, mass analysers, tandem methods and fragmentation explained systematically; the reference for the mass-spectrometry chapter."
+    }
+  ],
   "next": [
     "computational-chemistry"
   ]

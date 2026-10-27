@@ -7,12 +7,28 @@
   "order": 120,
   "tagline": "Water and noncovalent forces, proteins, enzymes, carbohydrates, lipids and membranes, nucleic acids, bioenergetics and metabolism",
   "summary": "Biochemistry explains life in the language of chemistry. This course covers the noncovalent forces that organise biomolecules, the structure and function of proteins and enzymes, carbohydrates, lipids, membranes and nucleic acids, and then follows energy through metabolism, from glycolysis and the citric acid cycle to oxidative phosphorylation, photosynthesis and the metabolism of lipids and amino acids.",
-  "overview": [],
+  "overview": [
+    "Biochemistry is the chemistry of living matter: the study of the molecules cells are made of, the reactions they catalyse and the way energy and information flow through them. Its central claim, established over two centuries of work from Wöhler's urea to the atomic structures of ribosomes and ATP synthase, is that nothing in a cell needs more than ordinary chemistry to explain it — but the chemistry is organised with a precision found nowhere else. Proteins fold into specific shapes because of weak noncovalent forces in water; enzymes accelerate reactions by factors of $10^{10}$ or more using acid–base, covalent and metal-ion catalysis that an organic chemist would recognise; and metabolism is a network of a few hundred reactions whose thermodynamics and kinetics can be written down and calculated.",
+    "The course is organised in two halves. The first six chapters are about molecules: water and the noncovalent interactions that structure everything else; amino acids and the four levels of protein structure; protein function, told through myoglobin, haemoglobin and allostery; enzymes, with Michaelis–Menten kinetics, inhibition and catalytic mechanism; carbohydrates, lipids and membranes; and nucleic acids, with the chemistry of replication, transcription and translation. The last four chapters follow energy: bioenergetics (free energy under biochemical standard conditions, ATP and redox carriers), glycolysis and the citric acid cycle, oxidative phosphorylation and photosynthesis, and finally the oxidation and synthesis of fatty acids, amino-acid catabolism and the urea cycle, ending with how the pathways are integrated.",
+    "What makes biochemistry feel hard is its sheer quantity of names — twenty amino acids, ten glycolytic enzymes, eight steps of the citric acid cycle. The way through is to treat each pathway as a sequence of reaction types you already know from organic chemistry (aldol and retro-aldol cleavage, isomerisation via enediols, oxidative decarboxylation, thioester chemistry, hydride transfer) and each regulatory fact as a consequence of thermodynamics (which steps are far from equilibrium) or of binding (which molecules change an enzyme's shape). Every lesson works quantitatively: pH and buffer calculations, binding curves, rate laws, $\\Delta G$ under cellular conditions, ATP yields and redox potentials, all checked numerically.",
+    "The prerequisites are the acid–base, equilibrium and free-energy chapters of General Chemistry II and the structure, stereochemistry and mechanism chapters of Organic Chemistry I; enzyme kinetics builds on the steady-state methods of the kinetics course. Lessons are for education only and are not medical advice: where drugs, toxins or diseases appear, they illustrate mechanisms, and no value in the course is a dose or a treatment instruction. The course leads directly to Medicinal Chemistry, where the binding and inhibition theory of these chapters becomes drug design."
+  ],
   "prerequisites": [
     "organic-1",
     "general-chemistry-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain how hydrogen bonds, electrostatic and van der Waals interactions and the hydrophobic effect stabilise biomolecular structure, and calculate the pH and composition of physiological buffers with the Henderson–Hasselbalch equation.",
+    "Describe the structures and acid–base properties of the amino acids, calculate isoelectric points, and relate primary sequence to secondary, tertiary and quaternary structure and to the thermodynamics of folding.",
+    "Analyse ligand-binding data with fractional saturation, dissociation constants and the Hill equation, and explain cooperativity, the Bohr effect and allosteric regulation in haemoglobin with the concerted and sequential models.",
+    "Derive and apply the Michaelis–Menten equation, extract $k_\\mathrm{cat}$ and $K_\\mathrm{M}$ from data, diagnose types of reversible inhibition, and describe catalytic mechanisms such as that of the serine proteases.",
+    "Draw and name monosaccharides, glycosidic bonds and the common polysaccharides and lipids, and explain membrane structure and the thermodynamics of passive and active transport, including membrane potentials.",
+    "Describe the structures of DNA and RNA and the forces that stabilise the double helix, and explain the chemistry of replication, transcription and translation.",
+    "Calculate actual free-energy changes from biochemical standard values and concentrations, analyse coupled reactions and phosphoryl-transfer potentials, and relate reduction potentials of NAD⁺, FAD and other carriers to $\\Delta G$.",
+    "Trace carbon, energy and electrons through glycolysis, the citric acid cycle, gluconeogenesis, oxidative phosphorylation, β-oxidation and the urea cycle, identify their irreversible control points, and calculate ATP yields.",
+    "Explain chemiosmotic coupling quantitatively through the proton-motive force and the stoichiometry of ATP synthase, and compare it with the light reactions and carbon fixation of photosynthesis.",
+    "Explain how hormones and allosteric effectors integrate carbohydrate, lipid and amino-acid metabolism in different tissues and nutritional states."
+  ],
   "chapters": [
     {
       "slug": "water-noncovalent",
@@ -100,8 +116,144 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1833,
+      "title": "Payen and Persoz isolate diastase",
+      "detail": "Anselme Payen and Jean-François Persoz precipitate from malt extract a heat-sensitive substance that converts starch into sugar, the first enzyme to be concentrated from a living source; the name diastase gave biochemistry its suffix -ase.",
+      "people": [
+        "Anselme Payen",
+        "Jean-François Persoz"
+      ]
+    },
+    {
+      "year": 1897,
+      "title": "Buchner ferments sugar without cells",
+      "detail": "Eduard Buchner shows that a cell-free juice pressed from ground yeast converts sugar into ethanol and carbon dioxide, ending the vitalist view that fermentation needs a living cell. He received the 1907 Nobel Prize in Chemistry, and the search for the components of the juice became the study of glycolysis.",
+      "people": [
+        "Eduard Buchner"
+      ]
+    },
+    {
+      "year": 1913,
+      "title": "Michaelis and Menten publish their rate law",
+      "detail": "Leonor Michaelis and Maud Menten measure the initial rates of sucrose hydrolysis by invertase at buffered pH and with a correction for the mutarotation of the products, and show that rate rises hyperbolically to a maximum with substrate concentration, as predicted for an enzyme–substrate complex.",
+      "people": [
+        "Leonor Michaelis",
+        "Maud Menten"
+      ]
+    },
+    {
+      "year": 1937,
+      "title": "Krebs and Johnson propose the citric acid cycle",
+      "detail": "Working with minced pigeon breast muscle, Hans Krebs and William Arthur Johnson show that citrate is formed from oxaloacetate and a pyruvate-derived unit and is oxidised back to oxaloacetate, so that a catalytic quantity of the intermediates oxidises fuel continuously. Krebs shared the 1953 Nobel Prize in Physiology or Medicine.",
+      "people": [
+        "Hans Krebs",
+        "William Arthur Johnson"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "Pauling, Corey and Branson describe the α helix",
+      "detail": "From the planarity of the peptide bond and the geometry of hydrogen bonds, Linus Pauling, Robert Corey and Herman Branson predict the α helix and, in further papers that year, the pleated β sheet — the two secondary structures that dominate proteins.",
+      "people": [
+        "Linus Pauling",
+        "Robert Corey",
+        "Herman Branson"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "The double helix",
+      "detail": "James Watson and Francis Crick propose the antiparallel, base-paired double helix of DNA, building on Rosalind Franklin and Raymond Gosling's X-ray diffraction photographs and on Chargaff's base ratios; papers by Maurice Wilkins's and Franklin's groups appeared in the same issue of Nature.",
+      "people": [
+        "James Watson",
+        "Francis Crick",
+        "Rosalind Franklin",
+        "Maurice Wilkins"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "The first protein structure",
+      "detail": "John Kendrew and colleagues report a 6 Å model of sperm-whale myoglobin from X-ray diffraction using heavy-atom derivatives; Max Perutz's haemoglobin structure followed, and the two shared the 1962 Nobel Prize in Chemistry.",
+      "people": [
+        "John Kendrew",
+        "Max Perutz"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "Mitchell proposes chemiosmotic coupling",
+      "detail": "Peter Mitchell argues that respiration and photosynthesis make ATP not through a high-energy chemical intermediate but through a gradient of protons across a membrane. The idea was resisted for a decade and earned him the 1978 Nobel Prize in Chemistry.",
+      "people": [
+        "Peter Mitchell"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "The first codon is read",
+      "detail": "Marshall Nirenberg and Heinrich Matthaei find that poly(U) RNA directs a cell-free extract to make polyphenylalanine, so UUU codes for phenylalanine; the full genetic code was assigned by 1966.",
+      "people": [
+        "Marshall Nirenberg",
+        "Heinrich Matthaei"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "The concerted model of allostery",
+      "detail": "Jacques Monod, Jeffries Wyman and Jean-Pierre Changeux publish a model in which a symmetric oligomeric protein switches between two conformations with different ligand affinities, explaining cooperative binding and allosteric regulation with a few constants.",
+      "people": [
+        "Jacques Monod",
+        "Jeffries Wyman",
+        "Jean-Pierre Changeux"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Biochemistry",
+      "authors": "Jeremy M. Berg, John L. Tymoczko, Gregory J. Gatto Jr. and Lubert Stryer",
+      "year": 2019,
+      "note": "Ninth edition. The natural main text for this course: clear chemical explanations of protein structure, enzyme mechanisms and metabolism, with excellent figures."
+    },
+    {
+      "title": "Lehninger Principles of Biochemistry",
+      "authors": "David L. Nelson and Michael M. Cox",
+      "year": 2021,
+      "note": "Eighth edition. Broader and more systematic on metabolism and its regulation, with worked quantitative boxes on bioenergetics and many problems."
+    },
+    {
+      "title": "Biochemistry",
+      "authors": "Donald Voet and Judith G. Voet",
+      "year": 2011,
+      "note": "Fourth edition. The most chemically detailed of the standard texts: reaction mechanisms, thermodynamics and the experimental history of each discovery."
+    },
+    {
+      "title": "Structure and Mechanism in Protein Science",
+      "authors": "Alan Fersht",
+      "year": 1999,
+      "note": "The physical-organic chemist's guide to enzyme catalysis, binding and folding; the reference for the enzymes and protein-function chapters."
+    },
+    {
+      "title": "Fundamentals of Enzyme Kinetics",
+      "authors": "Athel Cornish-Bowden",
+      "year": 2012,
+      "note": "Fourth edition. Careful derivations of steady-state kinetics, inhibition and cooperativity, and sound advice on fitting kinetic data."
+    },
+    {
+      "title": "Bioenergetics 4",
+      "authors": "David G. Nicholls and Stuart J. Ferguson",
+      "year": 2013,
+      "note": "The standard monograph on chemiosmosis: proton-motive force, respiratory complexes, ATP synthase and photosynthetic energy transduction."
+    },
+    {
+      "title": "Molecular Driving Forces",
+      "authors": "Ken A. Dill and Sarina Bromberg",
+      "year": 2011,
+      "note": "Second edition. Statistical thermodynamics for chemistry and biology; the best place to understand the hydrophobic effect, binding polynomials and folding."
+    }
+  ],
   "next": [
     "medicinal-chemistry"
   ]
