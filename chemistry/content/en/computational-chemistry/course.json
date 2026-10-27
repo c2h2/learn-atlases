@@ -7,12 +7,27 @@
   "order": 220,
   "tagline": "Potential energy surfaces, force fields, Hartree–Fock, basis sets, electron correlation, density functional theory, molecular dynamics and free energies",
   "summary": "Computation now complements experiment in every branch of chemistry. This course covers potential energy surfaces and molecular mechanics, the Hartree–Fock method, basis sets, correlated wavefunction methods and density functional theory, and the simulation methods — molecular dynamics, Monte Carlo and free-energy calculations — that connect molecular models with measurable properties.",
-  "overview": [],
+  "overview": [
+    "Computational chemistry asks the computer to do what the Schrödinger equation and statistical mechanics promise in principle: predict the structures, energies, spectra and reactivity of molecules, and the thermodynamic and transport properties of the liquids, proteins and materials they make up. Every calculation rests on two choices — a model of the energy (a force field, Hartree–Fock, a correlated wavefunction method or a density functional, together with a basis set) and a way of exploring it (geometry optimisation, normal-mode analysis, molecular dynamics, Monte Carlo sampling). This course teaches both, and the judgement needed to combine them.",
+    "The subject matters because computation now accompanies experiment almost everywhere in chemistry. Mechanisms of organic and enzymatic reactions are routinely checked against computed transition states; drug candidates are ranked by computed binding free energies; catalysts, battery materials and photovoltaic absorbers are screened before they are made; and spectra are assigned by comparison with computed frequencies and shifts. A chemist who can read a methods section critically — who knows what “B3LYP-D3/def2-TZVP with SMD water” can and cannot be trusted to give — is equipped for modern research in any branch of the field.",
+    "The course has two halves. Chapters 1–2 introduce the potential energy surface and the tools for exploring it (stationary points, Newton–Raphson optimisation, normal modes, transition states and reaction paths), and the classical force fields of molecular mechanics. Chapters 3–6 develop electronic-structure theory: the Hartree–Fock method and the Roothaan–Hall equations, Gaussian basis sets and their convergence, electron correlation (configuration interaction, Møller–Plesset theory, coupled cluster) and density functional theory. Chapters 7–9 turn to simulation: molecular dynamics, Monte Carlo and free-energy methods, and the continuum solvation and QM/MM models that bring the two halves together. Throughout, the numbers in the worked examples — minimal-basis $\\mathrm{H_2}$ and $\\mathrm{HeH^{+}}$, a Kohn–Sham helium atom, Verlet trajectories — are small enough to reproduce yourself.",
+    "What makes the subject hard is that every method is an approximation with characteristic errors, and the errors are rarely printed in the output. The remedy is to know where each approximation comes from, to check results against limits and benchmarks (basis-set convergence, a higher-level single point, the number of imaginary frequencies, the convergence of an average with simulation length), and to keep chemical accuracy — about $4\\ \\mathrm{kJ\\,mol^{-1}}$, a factor of five in a rate constant at room temperature — in mind as the yardstick. Work through the derivations, redo the small calculations, and treat every computed number as a measurement with an uncertainty."
+  ],
   "prerequisites": [
     "quantum-chemistry",
     "statistical-thermodynamics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Locate and classify stationary points on a potential energy surface from gradients and Hessians, and derive harmonic frequencies, zero-point energies and normal modes from a mass-weighted Hessian.",
+    "Construct a force-field energy from bond, angle, torsion, Lennard-Jones and Coulomb terms, and explain how its parameters are obtained and why they are not transferable between force fields.",
+    "Derive the Hartree–Fock and Roothaan–Hall equations, carry out a minimal-basis SCF calculation by hand, and interpret orbital energies through Koopmans' theorem.",
+    "Choose basis sets appropriate to a method and property, extrapolate correlation energies to the complete-basis-set limit, and correct interaction energies for basis-set superposition error.",
+    "Compare configuration interaction, Møller–Plesset perturbation theory and coupled-cluster methods in terms of size consistency, cost and accuracy, and recognise when static correlation demands a multireference method.",
+    "State and prove the Hohenberg–Kohn theorems, derive the Kohn–Sham equations, and predict the characteristic failures of approximate functionals (self-interaction, delocalisation error, missing dispersion).",
+    "Integrate equations of motion with the Verlet algorithm, choose time steps, boundary conditions and thermostats, and extract temperatures and diffusion coefficients from trajectories.",
+    "Calculate free-energy differences by Metropolis Monte Carlo, free-energy perturbation, thermodynamic integration and thermodynamic cycles, and assess their convergence.",
+    "Estimate solvation free energies with Born, Onsager and polarisable continuum models, compute pKa values from thermodynamic cycles with correct standard states, and set up QM/MM calculations for reactions in enzymes."
+  ],
   "chapters": [
     {
       "slug": "potential-energy-surfaces",
@@ -89,7 +104,149 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1928,
+      "title": "Hartree's self-consistent field",
+      "detail": "Douglas Hartree solved for the electrons of an atom in the averaged field of the others, iterating until the field and the orbitals were consistent; Fock and Slater added exchange through antisymmetrised wavefunctions in 1930.",
+      "people": [
+        "Douglas Hartree",
+        "Vladimir Fock",
+        "John C. Slater"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "Gaussian basis functions",
+      "detail": "S. Francis Boys showed that Gaussian-type functions make all the integrals of molecular electronic-structure theory analytically tractable, the basis of nearly every modern quantum-chemistry program.",
+      "people": [
+        "S. Francis Boys"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "The Roothaan–Hall equations",
+      "detail": "Clemens Roothaan and George Hall independently expanded Hartree–Fock orbitals in a basis, turning the equations into the matrix problem FC = SCε that computers can solve.",
+      "people": [
+        "Clemens C. J. Roothaan",
+        "George G. Hall"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "The Metropolis Monte Carlo method",
+      "detail": "Metropolis, the Rosenbluths and the Tellers introduced importance sampling by a Markov chain obeying detailed balance, in a simulation of hard disks on the MANIAC computer at Los Alamos.",
+      "people": [
+        "Nicholas Metropolis",
+        "Arianna W. Rosenbluth",
+        "Marshall N. Rosenbluth",
+        "Augusta H. Teller",
+        "Edward Teller"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "The first molecular-dynamics simulation",
+      "detail": "Berni Alder and Thomas Wainwright integrated Newton's equations for a system of hard spheres and observed a fluid–solid transition; Aneesur Rahman simulated liquid argon with a Lennard-Jones potential in 1964.",
+      "people": [
+        "Berni J. Alder",
+        "Thomas E. Wainwright"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "The Hohenberg–Kohn theorems",
+      "detail": "Pierre Hohenberg and Walter Kohn proved that the ground-state density determines all properties of an electronic system; Kohn and Lu Jeu Sham's 1965 equations made density functional theory practical.",
+      "people": [
+        "Pierre Hohenberg",
+        "Walter Kohn",
+        "Lu Jeu Sham"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Coupled-cluster theory enters quantum chemistry",
+      "detail": "Jiří Čížek adapted the exponential cluster ansatz of nuclear physics to electronic structure; the CCSD(T) method of Raghavachari, Trucks, Pople and Head-Gordon (1989) became the standard for accurate molecular energies.",
+      "people": [
+        "Jiří Čížek"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Gaussian 70",
+      "detail": "John Pople and co-workers released Gaussian 70, the first widely distributed program for ab initio calculations with Gaussian basis sets, making electronic-structure calculations available to chemists generally.",
+      "people": [
+        "John A. Pople"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "QM/MM model of an enzyme reaction",
+      "detail": "Arieh Warshel and Michael Levitt combined a quantum-mechanical treatment of the reacting atoms with a classical force field for the rest of lysozyme, founding multiscale modelling.",
+      "people": [
+        "Arieh Warshel",
+        "Michael Levitt"
+      ]
+    },
+    {
+      "year": 1998,
+      "title": "Nobel Prize for Kohn and Pople",
+      "detail": "Walter Kohn (density functional theory) and John Pople (computational methods in quantum chemistry) shared the Nobel Prize in Chemistry; Karplus, Levitt and Warshel followed in 2013 for multiscale models of complex chemical systems.",
+      "people": [
+        "Walter Kohn",
+        "John A. Pople"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Modern Quantum Chemistry: Introduction to Advanced Electronic Structure Theory",
+      "authors": "Attila Szabo and Neil S. Ostlund",
+      "year": 1996,
+      "note": "Dover reprint of the revised first edition (1989). The classic derivation of Hartree–Fock, Roothaan–Hall, CI, MP and coupled-pair theories, with the minimal-basis H2 and HeH+ calculations used in this course worked in full."
+    },
+    {
+      "title": "Introduction to Computational Chemistry",
+      "authors": "Frank Jensen",
+      "year": 2017,
+      "note": "3rd edition. The broadest single textbook: force fields, electronic-structure methods, basis sets, DFT, optimisation, simulation and statistical mechanics, with balanced practical advice."
+    },
+    {
+      "title": "Essentials of Computational Chemistry: Theories and Models",
+      "authors": "Christopher J. Cramer",
+      "year": 2004,
+      "note": "2nd edition. Very readable, with excellent chapters on continuum solvation, QM/MM and thermodynamic cycles, and many case studies."
+    },
+    {
+      "title": "Molecular Electronic-Structure Theory",
+      "authors": "Trygve Helgaker, Poul Jørgensen and Jeppe Olsen",
+      "year": 2000,
+      "note": "The advanced reference for second quantisation, basis-set convergence, CI, perturbation and coupled-cluster theory; for readers going beyond this course."
+    },
+    {
+      "title": "A Chemist's Guide to Density Functional Theory",
+      "authors": "Wolfram Koch and Max C. Holthausen",
+      "year": 2001,
+      "note": "2nd edition. Clear account of the Hohenberg–Kohn and Kohn–Sham theory, the functional hierarchy and the performance of functionals for chemical properties."
+    },
+    {
+      "title": "Understanding Molecular Simulation: From Algorithms to Applications",
+      "authors": "Daan Frenkel and Berend Smit",
+      "year": 2023,
+      "note": "3rd edition. The standard text on Monte Carlo, molecular dynamics, free-energy methods and rare events, with derivations of detailed balance, integrators and thermostats."
+    },
+    {
+      "title": "Computer Simulation of Liquids",
+      "authors": "Michael P. Allen and Dominic J. Tildesley",
+      "year": 2017,
+      "note": "2nd edition. Practical and authoritative on periodic boundaries, long-range forces, integrators, ensembles and trajectory analysis."
+    },
+    {
+      "title": "Molecular Modelling: Principles and Applications",
+      "authors": "Andrew R. Leach",
+      "year": 2001,
+      "note": "2nd edition. Accessible introduction to force fields, conformational searching, simulation and applications in drug design."
+    }
+  ],
   "next": []
 }
