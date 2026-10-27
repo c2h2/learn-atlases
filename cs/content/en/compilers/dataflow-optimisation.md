@@ -160,7 +160,7 @@ A **meet semilattice** is a set $L$ with a binary operation $\sqcap$ (meet) that
 The convention: $\top$ is the optimistic "no information yet" start, and going down means learning that fewer facts are guaranteed. For liveness, $L$ is the set of subsets of the variables, the meet is $\cup$ (information from any successor counts), $\top = \emptyset$ and $\sqsubseteq$ is $\supseteq$; the height is the number of variables. For reaching definitions it is subsets of definitions with $\cup$. For a "must" analysis such as **available expressions** (an expression is available if it has been computed on *every* path and not invalidated since) the meet is $\cap$ and $\top$ is the set of all expressions. Gen/kill transfer functions $f(x) = g \cup (x \setminus k)$ are monotone in all these orders.
 
 ::: definition Data-flow framework {#def-framework}
-A **monotone data-flow framework** consists of a semilattice $L$ of finite height with top $\top$, a direction (forward or backward), a monotone transfer function $f_B\colon L \to L$ for each block, and a boundary value for the entry (forward) or the exits (backward). Its equations, for a forward problem, are $\mathrm{in}(r) = \mathit{boundary}$, $\mathrm{in}(B) = \bigsqcap_{P \in \mathrm{pred}(B)} \mathrm{out}(P)$ and $\mathrm{out}(B) = f_B(\mathrm{in}(B))$.
+A **monotone data-flow framework** consists of a semilattice $L$ of finite height with top $\top$, a direction (forward or backward), a monotone transfer function $f_B\colon L \to L$ for each block, and a boundary value for the entry (forward) or the exits (backward). Its equations, for a forward problem, are $\mathrm{in}(r) = \mathit{boundary}$, $\mathrm{in}(B) = \mathop{\Large\sqcap}_{P \in \mathrm{pred}(B)} \mathrm{out}(P)$ and $\mathrm{out}(B) = f_B(\mathrm{in}(B))$.
 :::
 
 ::: theorem The worklist algorithm terminates at the maximal fixed point {#thm-mfp}
@@ -174,7 +174,7 @@ For a monotone framework with lattice height $h$ and a CFG with $N$ blocks and $
 
 *It is a solution.* When the worklist is empty, every block was visited after the last change of any of its predecessors (a change puts the dependants back on the list), so its value equals $f_B$ applied to the meet of its predecessors' final values: the equations hold.
 
-*It is the maximal solution.* Let $S$ be any solution. We show $S(B) \sqsubseteq \mathrm{out}_t(B)$ for all $t$, by induction. At $t = 0$, $\mathrm{out}_0(B) = \top$. At a visit to $B$, the new value is $f_B(\bigsqcap_P \mathrm{out}_t(P))$; by the induction hypothesis and monotonicity, it is $\sqsupseteq f_B(\bigsqcap_P S(P)) = S(B)$. So the final values lie above every solution.
+*It is the maximal solution.* Let $S$ be any solution. We show $S(B) \sqsubseteq \mathrm{out}_t(B)$ for all $t$, by induction. At $t = 0$, $\mathrm{out}_0(B) = \top$. At a visit to $B$, the new value is $f_B(\mathop{\Large\sqcap}_P \mathrm{out}_t(P))$; by the induction hypothesis and monotonicity, it is $\sqsupseteq f_B(\mathop{\Large\sqcap}_P S(P)) = S(B)$. So the final values lie above every solution.
 :::
 
 "Maximal" may sound like the wrong goal, but remember the orientation: higher in the lattice means *more* optimistic facts (fewer live variables, more available expressions, more constants), so the MFP is the most precise solution of the equations. For liveness in the usual subset order it is the *least* solution — the smallest live sets.
@@ -182,7 +182,7 @@ For a monotone framework with lattice height $h$ and a CFG with $N$ blocks and $
 The equations, however, are only an approximation of what we want. The ideal answer for a block $B$ considers each path from the entry to $B$ separately, applies the transfer functions along it, and combines the results.
 
 ::: definition Meet over all paths {#def-mop}
-For a forward framework, $\mathrm{MOP}(B) = \bigsqcap_{\pi} f_\pi(\mathit{boundary})$, where $\pi$ ranges over all paths from the entry to the start of $B$, and $f_\pi$ is the composition of the transfer functions of the blocks along $\pi$ (excluding $B$).
+For a forward framework, $\mathrm{MOP}(B) = \mathop{\Large\sqcap}_{\pi} f_\pi(\mathit{boundary})$, where $\pi$ ranges over all paths from the entry to the start of $B$, and $f_\pi$ is the composition of the transfer functions of the blocks along $\pi$ (excluding $B$).
 :::
 
 ::: theorem MFP is safe, and exact for distributive frameworks {#thm-mop}
@@ -194,7 +194,7 @@ For every block $B$, $\mathrm{MFP}(B) \sqsubseteq \mathrm{MOP}(B)$. If every tra
 
 *Exactness.* Suppose all $f_B$ are distributive. Because $L$ has finite height, every meet over an infinite set of path values equals the meet of finitely many of them, so distributivity extends to the meets in the definition of MOP. Then $\mathrm{MOP}$ is a solution of the equations: for $B \ne r$, the paths to $B$ are the paths to the predecessors $P$ extended through $P$, so
 $$
-\mathrm{MOP}(B) = \bigsqcap_P \bigsqcap_{\pi' \text{ to } P} f_P(f_{\pi'}(\mathit{boundary})) = \bigsqcap_P f_P\Bigl(\bigsqcap_{\pi'} f_{\pi'}(\mathit{boundary})\Bigr) = \bigsqcap_P f_P(\mathrm{MOP}(P)).
+\mathrm{MOP}(B) = \mathop{\Large\sqcap}_P \mathop{\Large\sqcap}_{\pi' \text{ to } P} f_P(f_{\pi'}(\mathit{boundary})) = \mathop{\Large\sqcap}_P f_P\Bigl(\mathop{\Large\sqcap}_{\pi'} f_{\pi'}(\mathit{boundary})\Bigr) = \mathop{\Large\sqcap}_P f_P(\mathrm{MOP}(P)).
 $$
 By [[#thm-mfp]] the MFP lies above every solution, so $\mathrm{MOP}(B) \sqsubseteq \mathrm{MFP}(B)$; with safety, they are equal.
 :::

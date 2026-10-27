@@ -115,7 +115,7 @@ $$
 $$
 with, for example, $\chi(t\mathrm{Bu}) = 0$, $\chi(\mathrm{Me}) = 2.6$, $\chi(\mathrm{Ph}) = 4.3$, $\chi(\mathrm{OEt}) = 6.8$, $\chi(\mathrm{OMe}) = 7.7$, $\chi(\mathrm{F}) = 18.2$ (an empirical correlation).
 
-The **Tolman cone angle** $\theta$ measures steric size: it is the apex angle of a cone, with its apex at the metal ($2.28\ \text{Å}$ from phosphorus in Tolman's construction), that just encloses the van der Waals surfaces of the substituents. Typical values: $\mathrm{PF_3}$ $104^\circ$, $\mathrm{P(OMe)_3}$ $107^\circ$, $\mathrm{PMe_3}$ $118^\circ$, $\mathrm{PPh_3}$ $145^\circ$, $\mathrm{PCy_3}$ $170^\circ$, $\mathrm{P}t\mathrm{Bu_3}$ $182^\circ$, $\mathrm{P(}o\text{-tolyl)_3}$ $194^\circ$.
+The **Tolman cone angle** $\theta$ measures steric size: it is the apex angle of a cone, with its apex at the metal ($2.28\ \text{Å}$ from phosphorus in Tolman's construction), that just encloses the van der Waals surfaces of the substituents. Typical values: $\mathrm{PF_3}$ $104^\circ$, $\mathrm{P(OMe)_3}$ $107^\circ$, $\mathrm{PMe_3}$ $118^\circ$, $\mathrm{PPh_3}$ $145^\circ$, $\mathrm{PCy_3}$ $170^\circ$, $\mathrm{P}t\mathrm{Bu_3}$ $182^\circ$, $\mathrm{P(}o\text{-tolyl)}_3$ $194^\circ$.
 :::
 
 ::: widget regression
