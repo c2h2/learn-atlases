@@ -21,7 +21,7 @@ The SI unit of energy is the **joule** (J); of power, the **watt** ($1\,\mathrm{
 A **power** multiplied by a time is an energy: a $2\,\mathrm{kW}$ heater running for $3\,\mathrm{h}$ uses $6\,\mathrm{kWh} = 21.6\,\mathrm{MJ}$. An energy divided by a time is an **average power**: $8760\,\mathrm{kWh}$ consumed in a year ($8760\,\mathrm{h}$) is an average of $1\,\mathrm{kW}$.
 :::
 
-The kilowatt-hour is a perfectly good SI-compatible unit of energy (it is $3.6\,\mathrm{MJ}$), and it is often the most convenient. The trouble starts with units that look like powers but are energies ("kWh per year" is a power: $1\,\mathrm{kWh/yr} = 0.114\,\mathrm{W}$), or with "kW" written where "kWh" is meant. The cure is to carry units through every line.
+The kilowatt-hour is a perfectly good SI-compatible unit of energy (it is $3.6\,\mathrm{MJ}$), and it is often the most convenient. The trouble starts with units that look like energies but are powers ("kWh per year" is a power: $1\,\mathrm{kWh/yr} = 0.114\,\mathrm{W}$), or with "kW" written where "kWh" is meant. The cure is to carry units through every line.
 
 A useful mental scale: a person eating $2000\,\mathrm{kcal}$ a day ($8.4\,\mathrm{MJ}$) has an average metabolic power of about $97\,\mathrm{W}$. The average primary energy supply per person in the world in 2025 was about $73\,\mathrm{GJ}$ a year — $600\,\mathrm{EJ}$ (Energy Institute, *Statistical Review of World Energy* 2026) shared among about $8.2$ billion people — an average of $2.3\,\mathrm{kW}$, some twenty-four times the food we eat.
 
