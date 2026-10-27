@@ -7,11 +7,27 @@
   "order": 170,
   "tagline": "Intelligent agents, search, games, constraint satisfaction, logic, planning, probabilistic reasoning, decision making and reinforcement learning",
   "summary": "Artificial intelligence studies how to build agents that act well in the world. This course covers the classical core of the field — search, game playing, constraint satisfaction, logical reasoning and planning — and reasoning under uncertainty with Bayesian networks, decision theory and reinforcement learning. Machine learning and language models are covered in depth in the LLM Atlas.",
-  "overview": [],
+  "overview": [
+    "Artificial intelligence, in the sense of this course, is the study of agents that perceive their environment and act to achieve the best expected outcome. The course follows the classical core of the field: how an agent can choose actions by searching through models of the world, by reasoning logically from what it knows, and by weighing probabilities and utilities when the world is uncertain. Each topic is treated as computer science. Algorithms are stated precisely, their correctness and optimality are proved, their complexity is analysed, and they are run on small instances in Python.",
+    "We begin with agents and environments, then problem solving by search: uninformed strategies, A* with admissible and consistent heuristics, IDA*, and the derivation of heuristics from relaxed problems. Adversarial search covers minimax, alpha–beta pruning and Monte Carlo tree search. Constraint satisfaction adds propagation (AC-3), backtracking heuristics and local search. Logical agents use propositional and first-order logic, with resolution, unification and forward and backward chaining. Planning works with STRIPS representations, regression, delete-relaxation heuristics and planning graphs.",
+    "The second half handles uncertainty. Bayesian networks represent joint distributions compactly, d-separation reads independences off their graphs, and inference is done exactly by variable elimination and approximately by sampling. Hidden Markov models and the forward algorithm track a changing world. Decision theory combines probabilities with utilities, and Markov decision processes extend it to sequential decisions, solved by value iteration and policy iteration with contraction-based convergence proofs. Reinforcement learning drops the model and learns values and policies from experience with temporal-difference learning, Q-learning, bandit algorithms and policy gradients.",
+    "Machine learning, neural networks and large language models are covered in depth in the LLM Atlas, and this course links there instead of repeating them. It assumes the Algorithms course (graphs, shortest paths, dynamic programming) and basic probability, and it links to Computational Complexity for the hardness results it uses."
+  ],
   "prerequisites": [
     "algorithms"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Formulate a task as an agent, environment and performance measure, and classify the environment along the standard dimensions.",
+    "Implement uninformed and heuristic search, and prove the optimality of A* under admissible or consistent heuristics.",
+    "Design admissible heuristics by problem relaxation and compare them by dominance and effective branching factor.",
+    "Apply minimax with alpha–beta pruning and Monte Carlo tree search to games, and analyse the effect of move ordering.",
+    "Model problems as constraint satisfaction problems and solve them with backtracking, arc consistency and local search.",
+    "Represent knowledge in propositional and first-order logic, and derive conclusions by resolution, unification and chaining.",
+    "Encode planning problems in STRIPS and solve them with heuristic search or planning graphs.",
+    "Build Bayesian networks, test conditional independence by d-separation, and compute posteriors by variable elimination, sampling and HMM filtering.",
+    "Solve Markov decision processes by value and policy iteration, and prove convergence from the contraction property.",
+    "Explain and implement temporal-difference learning, Q-learning and bandit exploration, and state the conditions under which they converge."
+  ],
   "chapters": [
     {
       "slug": "intelligent-agents",
@@ -86,8 +102,142 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1950,
+      "title": "Turing's imitation game",
+      "detail": "Alan Turing's paper 'Computing Machinery and Intelligence' asks whether machines can think and proposes a behavioural test in its place.",
+      "people": [
+        "Alan Turing"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "The Dartmouth workshop",
+      "detail": "A summer research project at Dartmouth College gives the field its name, artificial intelligence. The proposal was written in 1955.",
+      "people": [
+        "John McCarthy",
+        "Marvin Minsky",
+        "Nathaniel Rochester",
+        "Claude Shannon"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Dynamic programming",
+      "detail": "Richard Bellman's book introduces the principle of optimality and the Bellman equation, the basis of Markov decision processes and reinforcement learning.",
+      "people": [
+        "Richard Bellman"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "Resolution",
+      "detail": "J. A. Robinson's resolution principle, with unification, gives a single, refutation-complete inference rule for first-order logic.",
+      "people": [
+        "John Alan Robinson"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "The A* algorithm",
+      "detail": "Hart, Nilsson and Raphael publish A* and prove that it is optimal with admissible heuristics.",
+      "people": [
+        "Peter Hart",
+        "Nils Nilsson",
+        "Bertram Raphael"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "STRIPS",
+      "detail": "Fikes and Nilsson's STRIPS planner introduces the precondition, add and delete-list representation of actions used in classical planning to this day.",
+      "people": [
+        "Richard Fikes",
+        "Nils Nilsson"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "Analysis of alpha–beta pruning",
+      "detail": "Knuth and Moore analyse alpha–beta and show that with perfect move ordering it examines about b^(d/2) leaves.",
+      "people": [
+        "Donald Knuth",
+        "Ronald Moore"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "Arc consistency",
+      "detail": "Alan Mackworth's AC-3 algorithm makes constraint propagation systematic for constraint satisfaction problems.",
+      "people": [
+        "Alan Mackworth"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Bayesian networks",
+      "detail": "Judea Pearl's 'Probabilistic Reasoning in Intelligent Systems' establishes Bayesian networks and d-separation. In 1989 Christopher Watkins introduces Q-learning in his PhD thesis.",
+      "people": [
+        "Judea Pearl",
+        "Christopher Watkins"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "Monte Carlo tree search",
+      "detail": "Kocsis and Szepesvári's UCT algorithm applies bandit-based exploration to tree search, and Coulom names Monte Carlo tree search. Together they lead to strong Go programs and, combined with deep networks, to AlphaGo in 2016.",
+      "people": [
+        "Levente Kocsis",
+        "Csaba Szepesvári",
+        "Rémi Coulom"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Artificial Intelligence: A Modern Approach",
+      "authors": "Stuart Russell, Peter Norvig",
+      "year": 2020,
+      "note": "4th edition. The standard comprehensive text, and the closest match to this course's coverage."
+    },
+    {
+      "title": "Artificial Intelligence: Foundations of Computational Agents",
+      "authors": "David L. Poole, Alan K. Mackworth",
+      "year": 2023,
+      "note": "3rd edition. A rigorous agent-centred alternative, freely available online, with strong coverage of CSPs and probabilistic reasoning."
+    },
+    {
+      "title": "Reinforcement Learning: An Introduction",
+      "authors": "Richard S. Sutton, Andrew G. Barto",
+      "year": 2018,
+      "note": "2nd edition. The standard text on reinforcement learning, from bandits and TD learning to policy gradients."
+    },
+    {
+      "title": "Probabilistic Graphical Models: Principles and Techniques",
+      "authors": "Daphne Koller, Nir Friedman",
+      "year": 2009,
+      "note": "Comprehensive treatment of Bayesian and Markov networks, inference and learning."
+    },
+    {
+      "title": "Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference",
+      "authors": "Judea Pearl",
+      "year": 1988,
+      "note": "The founding book on Bayesian networks and d-separation."
+    },
+    {
+      "title": "Automated Planning: Theory and Practice",
+      "authors": "Malik Ghallab, Dana Nau, Paolo Traverso",
+      "year": 2004,
+      "note": "A thorough reference on classical planning, planning graphs and planning under uncertainty."
+    },
+    {
+      "title": "Heuristics: Intelligent Search Strategies for Computer Problem Solving",
+      "authors": "Judea Pearl",
+      "year": 1984,
+      "note": "Classic analysis of heuristic search, A* and game-tree search."
+    }
+  ],
   "next": [
     "information-retrieval"
   ]
