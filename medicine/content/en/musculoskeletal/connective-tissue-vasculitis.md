@@ -1,164 +1,329 @@
-Connective-tissue disease and vasculitis are internal medicine's great pattern puzzles: **one aberrant immune response speaks dozens of organ languages - skin, kidney, lung, nerve, placenta, gut - and the clinician's job is to recognise the grammar (autoantibodies, complement, histology, distribution) before the sentence becomes irreversible.** Vasculitis adds urgency: inflamed vessels scar, stenose, thrombose or rupture, and vision, kidneys and bowel pay first.
+The connective-tissue diseases and the vasculitides are the great imitators of medicine. A young woman with tiredness, joint pain and a rash; an older man with headache and aching shoulders; a smoker with a cough, blood in the urine and a nosebleed: each could have a systemic autoimmune disease that is about to damage the kidneys, the eyes or the brain. These conditions are individually uncommon, but together they are an important cause of serious illness in young adults and older people alike, and many are now very treatable if they are recognised early.
 
-This chapter covers lupus and antiphospholipid syndrome, systemic sclerosis, inflammatory myositis, Sjögren's syndrome, and the vasculitides by vessel size.
+Two skills run through the chapter. The first is **pattern recognition**: knowing which combinations of features suggest which disease. The second is **intelligent use of autoantibody tests**, which are powerful when the clinical picture fits and misleading when it does not. The chapter covers the systemic autoimmune rheumatic diseases (lupus, antiphospholipid syndrome, Sjögren's disease, systemic sclerosis and inflammatory myopathy), then polymyalgia rheumatica and giant cell arteritis, and finally the classification and treatment of vasculitis. The immunology of autoimmunity is in [[immunology/autoimmunity]]; the inflammatory arthritides in [[musculoskeletal/inflammatory-arthritis]].
 
-## Systemic lupus and its neighbours
+## Autoantibodies and how to use them {#sec-antibodies}
 
-::: definition Systemic lupus erythematosus {#def-lupus}
-**Immunology (loss of tolerance to nuclear antigens with defective-clearance-of-apoptotic-debris-and-DNA-hands-free-to-the-immune-system, type-interferon-as-the-signature-cytokine-plasmacytoid-dendritic-cell-driver-and-hydrate-lupus-risk-genetics-in-HLA-class-III-and-STAT4-and-IRF5-and-clearance-complement-defects - the early-complement-C1q-C2-C4-deficiency-connection-between-cleanup-and-autoimmunity in [[immunology/innate-immunity]] and [[immunology/tolerance-regulation]], monogenic-and-signal-therapy-adjacent-interferon-pathway in [[genetics/common-disease-genetics]], and the complement consumption logic reused diagnostically in [[immunology/hypersensitivity]]); the clinical atlas (constitutional-and-arthropathy-nonerosive-Jaccoud-and-cutaneous-photosensitive-discoid-subacute-and-oral-nasal-ulcers-and-alopecia-and-livedo-and-Raynaud-and-sclerodactyly-spectrum - [[musculoskeletal/skin]]-rashes, [[musculoskeletal/skin-cancer]]-photosensitivity-adjacent; renal - the ISN-RKD-classes-with-nephritic-and-nephrotic-presentation-and-biopsy-guided-therapy-with-mycophenolate-and-ciclosporin-and-tacrolimus-and-cyclophosphamide-and-rituximab-and-belimumab-and-anifrolumab-era-arms - the glomerular pages in [[renal/filtration]], the nephritis presentation in [[renal/acute-kidney-injury]] and the progression-and-transplant questions in [[renal/chronic-kidney-disease]]; neuropsychiatric - seizures-and-psychosis-and-cerebritis-and-myelitis-and-the-headache-stroke-cognitive-plexus with the anti-NMDA-receptor-and-APS-and-thrombotic-microangiopathy-differential - [[nervous-system/epilepsy]], [[nervous-system/stroke]], [[nervous-system/neuroinflammation]]; haematological - the autoimmune-haemolytic-anaemia-coombs-and-immune-thrombocytopenia-and-lymphopenia-and-neutropenia-and-macrophage-activation-syndrome-with-the-lymphoma-and-infection-differential - [[blood/haemoglobin-disorders]], immune thrombocytopenia in [[blood/haemostasis-bleeding]], [[infectious-diseases/immunocompromised-host]]; and serositis-and-myocarditis-and-Libman-Sacks-endocarditis-and-pneumonitis-and-alveolar-haemorrhage-rows - [[cardiovascular/valve-congenital-disease]], [[respiratory/respiratory-infections]]-alveolar-haemorrhage); diagnosis and monitoring (ANA-as-high-sensitivity-low-specificity-screening-gate-and-anti-dsDNA-and-anti-Sm-and-complement-C3-C4-and-urinalysis-and-protein-quantification-as-the-follow-up-panel-with-a-falling-complement-rising-dsDNA-renal-warning-sign-and-the-serology-must-match-the-clinic-rule and the classification-criteria-research-versus-bedside-honesty with antiphospholipid-antibody-testing-and-repeat-at-12-weeks - [[clinical-skills/laboratory-tests]], [[epidemiology-ebm/diagnostic-tests]]; the damage-accumulation management - hydroxychloroquine-for-all-unless-excluded-with-retinal-monitoring-and-the-steroid-sparing-everything-ethic-and-organ-specific-immunosuppression-timing-and-vaccination-and-infection-vigilance-and-accelerated-atherosclerosis-risk-management-and-bone-and-sun-and-smoking-and-pregnancy-planning - [[endocrine/bone-calcium]], [[cardiovascular/coronary-artery-disease]], [[public-health/vaccination-programmes]], [[obstetrics-gynaecology/pregnancy-complications]]).**
+The **antinuclear antibody (ANA)** test is the usual screening test for connective-tissue disease. It is performed by indirect immunofluorescence on a layer of human epithelial (HEp-2) cells: the patient's serum is diluted step by step, and the result is reported as the highest dilution (the titre) at which nuclear staining is still visible, along with the staining pattern. ANA is positive in almost everyone with SLE, which makes a negative result very useful for ruling it out. But ANA at low titre is also common in healthy people, particularly women and older adults, and in people with infections, other autoimmune diseases such as autoimmune thyroid disease, and some cancers.
+
+::: theorem Pretest probability governs the meaning of an antibody test {#thm-pretest}
+The probability that a positive autoantibody test indicates disease, the **positive predictive value**, depends not only on the sensitivity and specificity of the test but on the **pretest probability** of the disease in the person tested. By Bayes' theorem,
+
+$$\text{PPV} = \frac{\text{sensitivity} \times p}{\text{sensitivity} \times p + (1 - \text{specificity}) \times (1 - p)},$$ {#eq-ppv}
+
+where $p$ is the pretest probability. When $p$ is low, even a test with good specificity produces mostly false positives.
 :::
 
-::: definition Antiphospholipid syndrome and scleroderma spectrum {#def-aps-scleroderma}
-**Antiphospholipid syndrome (the thrombosis-or-morbidity-pregnancy-plus-persistent-lupus-anticoagulant-and-anticardiolipin-and-anti-beta2-glycoprotein-I-antibody syndrome with the triple-positivity-risk-stratification and the catastrophic-CAPS-variant-multiorgan-thrombotic-storm-with-a-precipitant-infection-or-surgery-or-stopping-anticoagulation; the mechanism - endothelial-and-platelet-and-complement-and-tissue-factor-activation - in [[immunology/hypersensitivity]]-adjacent and the thrombotic-phenotype treatment - heparin-and-warfarin-over-DOACs-in-high-risk-and-arterial-disease-with-the-lab-interference-caveats and the pregnancy-lmwh-plus-aspirin-regimen-improving-live-birth-rates - [[blood/thrombosis-anticoagulation]], [[obstetrics-gynaecology/early-pregnancy]], [[obstetrics-gynaecology/pregnancy-complications]], [[blood/haemostasis-bleeding]-platelet-interference-rows); systemic sclerosis (the microangiopathy-plus-fibrosis-plus-autoimmunity triad with the limited-versus-diffuse-skin-phenotypes-and-Raynaud-as-herald-and-the-nailfold-capillary-loop-photography-art and the antibody grammar - anticentromere-limited-and-pulmonary-hypertension-risk-and-antiscl70-diffuse-and-interstitial-lung-disease-and-anti-RNA-polymerase-and-renal-crisis-and-anti-U3RNP-overlap-markers - nailfold-capillaroscopy in [[clinical-skills/physical-examination]]; organ-by-organ management - the digital-ulcer-and-critical-finger-ischaemia-ladder-calcium-blockade-to-pDE5-inhibitor-to-iloprost-to-sympathectomy-and-the-renal-crisis-ace-inhibitor-imperative-even-as-creatinine-creeps-and-the-detect-it-by-blood-pressure-and-headache-and-blurred-vision-and-do-not-steroid-above-a-threshold-discipline - [[surgery/vascular-urological-surgery]], [[renal/acute-kidney-injury]], [[cardiovascular/hypertension]], [[endocrine/adrenal]]-steroid-precipitant-row; the interstitial-lung-disease-and-pulmonary-hypertension-surveillance-with-HRCT-and-echo-and-transfer-function-and-myocardial-involvement-and-GI-dysmotility-and-GAVE-and-small-intestinal-bacterial-overgrowth-and-tendon-friction-rubs-and-calcinosis - [[respiratory/interstitial-vascular-disease]], [[gastrointestinal/digestion-absorption]], calcinosis in [[musculoskeletal/bones-joints]]; and the immunotherapy era - methotrexate-and-mycophenolate-for-skin-and-lung-and-tocilizumab-and-nintedanib-adjacencies-and-autologous-stem-cell-transplant-for-selected-severe-diffuse-disease-with-the-transplant-sections in [[immunology/transplant-tumour-immunology]]; the transplant-and-anaesthetic airway-and-microstomia-and-reflux-aspiration considerations - [[surgery/anaesthesia-pain]], [[gastrointestinal/oesophagus-stomach]]).**
+::: proof
+Imagine 1,000 people. A fraction $p$ have the disease, and the test detects a proportion (the sensitivity) of them: these are the true positives. The remaining $1 - p$ do not have the disease, and the test wrongly calls a proportion $(1 - \text{specificity})$ of them positive: these are the false positives. The PPV is the true positives divided by all positives. Because the false positives are a fraction of the large healthy group, they swamp the true positives whenever the disease is rare in the group tested. Raising $p$, by testing only people whose clinical picture already suggests the disease, shrinks the healthy group and raises the PPV.
 :::
 
-::: definition Myositis, Sjögren's and overlap {#def-myositis-sjogren}
-**Inflammatory myositis (the dermatomyositis-polymyositis-overlap-myositis-inclusion-body-myositis spectrum with the proximal-symmetrical-symmetrical-weakness-and-raised-muscle-enzymes-aldolase-and-myoglobin-and-the-EMG-and-MRI-and-biopsy-decision-tree - [[nervous-system/neuromuscular]], [[clinical-skills/laboratory-tests]]; the myospecific-and-myositis-associated antibodies and what each predicts - anti-Mi2-and-dermatomyositis-rash-and-anti-MDA5-with-rapidly-progressive-lung-disease-and-the-pathognomonic-Gottron-papules-and-heliotrope-and-mechanic-s-hands-and-shawl-sign-rash-distribution and the calcinosis - [[musculoskeletal/skin]]-rashes, [[respiratory/interstitial-vascular-disease]]; the cancer-association-and-age-appropriate-and-directed-screening-argument-with-anti-TIF1-gamma-and-NXP2-risk-context and the dysphagia-and-aspiration-and-respiratory-muscle-checks and the treatment-ladder - steroids-plus-steroid-sparing-first-line-azathioprine-or-mycophenolate-or-methotrexate-plus-IVIG-for-dysphagia-and-refractory-disease-and-rituximab-niches and the rehabilitation of regained strength - [[infectious-diseases/immunocompromised-host]], [[physiology/muscle]], [[public-health/screening]], [[pathology/cancer-diagnosis]]; and inclusion-body-myositis-the-old-man-s-painless-progressions-with-falls-and-finger-flexor-and-quadriceps-selectivity-poorly-responsive-to-immunotherapy-and-better-served-by-honest-function-centred-care - [[geriatrics-palliative/falls]]). Sjögren's syndrome (the sicca-complex with keratoconjunctivitis-sicca-and-xerostomia-and-dental-ruin-and-parotid-swelling-and-the-lymphoma-surveillance-awareness-mucosa-MALT-risk-with-persistent-glandular-swelling-and-cryoglobulinaemia-and-neuropathy-and-renal-tubular-acidosis-and-nephrocalcinosis - [[nervous-system/sensory-systems]]-dry-eye, [[nervous-system/motor-systems]]-neuropathy, [[renal/tubular-function]], [[blood/lymphoma-myeloma]]-lymphoma-adjacent; anti-Ro-and-La-with-neonatal-lupus-and-congenital-heart-block-fetal-echocardiography-counselling-and-the-lymphoma-risk-discussion-balance - [[obstetrics-gynaecology/pregnancy-antenatal]], [[cardiovascular/arrhythmias]]; and the objective-testing-set - Schirmer-test-and-ocular-surface-staining-and-unstimulated-salivary-flow-and-lip-biopsy-and-salivary-ultrasound - [[clinical-skills/physical-examination]]). Overlap and undifferentiated disease (the MCTD-anti-U1RNP-arthritis-myositis-sclerodactyly-pulmonary-hypertemia-overlap and the undifferentiated-CCTD-attack-of-the-partial-syndromes and the prognostic-counselling-tension between premature-labeling-and-repeated-diagnostic-liminality - follow-the-phenotype-domains-not-the-antibody-panel - [[clinical-skills/clinical-reasoning]], [[clinical-skills/communication]]).**
+::: widget bayes
+mode: test
+prevalence: 0.01
+sensitivity: 0.98
+specificity: 0.87
+caption: ANA as a test for SLE in a low-probability setting: a pretest probability of 1%, sensitivity of about 98% and specificity of about 87% (roughly the proportion of healthy people negative at a titre of 1:80). Most positive results are false positives. Increase the prevalence to 0.3, as in a person with a typical rash, arthritis and low platelets, and see the predictive value rise. Illustrative values.
 :::
 
-## Vasculitis
-
-::: definition Vasculitis by vessel size {#def-vasculitis}
-**Framing (vessel-wall-inflammation-causing-ischaemia-stenosis-aneurysm-haemorrhage-with-the-CHCC-nomenclature-by-vessel-size-and-the-ANCA-and-immune-complex-and-granulomatous-and-pauci-immune-mechanism-families and the secondary-causes - hepatitis-B-and-C-and-HIV-and-drug-and-malignancy-and-complement-rows - [[microbiology/viruses]], [[pharmacology/adverse-reactions]], [[blood/lymphoma-myeloma]]; and the histology-when-safe-and-where-to-biopsy-first - temporal-artery-and-skin-and-kidney-and-nerve-as-the-highest-yield-sites - [[pathology/diagnostic-pathology]], [[musculoskeletal/skin]]). Large vessel (giant-cell-arteritis-with-headache-and-jaw-claudication-and-scalp-tenderness-and-visual-amaurosis-permanent-if-waited-for-and-PMA-overlap-and-the-same-day-high-dose-steroid-never-wait-for-biopsy-or-ultrasound-halo-sign-and-the-aortitis-and-large-vessel-sequelae-surveillance-and-tocilizumab-steroid-sparing - [[musculoskeletal/connective-tissue-vasculitis]]-itself, [[nervous-system/sensory-systems]]-AION, [[musculoskeletal/inflammatory-arthritis]]-PMR, [[cardiovascular/valve-congenital-disease]]-aortic-regurgitation-row; and Takayasu-s-pulselessness-with-claudication-and-bruits-and-hypertension-in-a-young-woman-with-the-mRA-and-CTA-aorta-and-branch-vessel-stenosis-map-and-the-pregnancy-and-vascular-surgery-timing-decisions - [[cardiovascular/circulation-blood-pressure]], [[obstetrics-gynaecology/pregnancy-complications]], [[surgery/vascular-urological-surgery]]). Medium vessel (polyarteritis-nodosa-superficial-thrombophlebitis-adjacent-nodules-and-livedo-and-mononeuritis-multiplex-and-microaneurysms-and-no-glomerulonephritis-and-hepatitis-B-association-and-the-aneurysm-embolisation-versus-steroid-cyclophosphamide-path - [[microbiology/viruses]], [[nervous-system/motor-systems]], [[clinical-skills/medical-imaging]]; Kawasaki-disease-of-childhood-correct-name-Kawasaki-with-the-fever-and-conjunctivitis-and-lips-and-rash-and-nodes-and-coronary-artery-aneurysms-and-IVIG-and-aspirin-rationale-that-made-a-children-s-disease-an-adult-cardiac-history - [[paediatrics/acute-childhood-illness]], [[cardiovascular/coronary-artery-disease]]). ANCA-associated small-vessel (the GPA-Wegener-granulomatosis-with-upper-airways-and-lung-nodules-and-cavitating-nodules-and-the-RPGN-necrotising-glomerulonephritis-and-PR3-versus-MPO-ANCA-serology-interpretation-with-serum-and-urine-and-creatinine-urgency and the MPA-microscopic-polyangiitis-pauci-immune-pattern-and-the-EGPA-Churg-Strauss-asthma-eosinophilia-neuropathy-purpura-cardiac-involvement-with-the-ANCA-negative-eosinophilic-tissue-phenotype-and-IL5-mepolizumab-biologic-niche - [[respiratory/asthma-copd]], the RPGN logic in [[renal/acute-kidney-injury]], [[blood/haematopoiesis]]-eosinophilia; treatment - the remission-induction-with-high-dose-steroid-plus-cyclophosphamide-or-rituximab-and-plasma-exchange-for-selected-alveolar-haemorrhage-or-severe-renal-presentations-debated-and-the-avacopan-and-complement-adjacent-trials-and-maintenance-with-rituximab-or-azathioprine-or-methotrexate-with-co-trimoxazole-upper-airway-reduction-benefit-and-relapse-vigilance-and-PR3-persistence-counselling - [[renal/chronic-kidney-disease]], [[immunology/vaccines-immunotherapy]], [[microbiology/antimicrobials]]). Small-vessel immune-complex (IgA-vasculitis-Henoch-Schonlein-of-children-with-purpura-and-abdominal-pain-and-intussusception-and-arthritis-and-IgA-nephritis-like-renal-follow-up-and-adults-worse-prognosis-and-the-surgery-mimic-point - [[paediatrics/acute-childhood-illness]], [[surgery/acute-abdomen]]; cryoglobulinaemic-vasculitis-with-hepatitis-C-and-purpura-and-arthralgia-and-neuropathy-and-MPD-lymphoproliferation-and-the-direct-acting-antiviral-transformation-of-the-field - [[microbiology/viruses]], [[blood/lymphoma-myeloma]], the renal rows above; and anti-GBM-disease-pulmonary-renal-syndrome-and-lupus-and-ANCA-overlap-disease - [[renal/acute-kidney-injury]]-adjacent, [[respiratory/gas-exchange]]-haemorrhage). The management common-denominator (severity-stratified-remission-induction-and-maintenance-architecture-and-the-steroid-total-burn-budget-counted-in-grams-and-harms-and-PJP-prophylaxis-with-co-trimoxazole-and-bone-and-glucose-and-blood-pressure-and-infection-prophylaxis-layers and the relapse-plan-with-safety-netting-and-the-renal-replacement-and-transplant-and-fertility-counselling-timelines - [[endocrine/bone-calcium]], [[endocrine/diabetes-complications]], [[infectious-diseases/immunocompromised-host]], [[obstetrics-gynaecology/contraception-fertility]]).**
-:::
-
-::: example The headache that cost an eye {#ex-gca}
-A 74-year-old with 6 weeks of shoulder-girdle stiffness and new right temporal headache, jaw pain when eating almonds this weekend, CRP 78; "eyes fine"; three days later she attends with sudden painless right visual loss.
+::: example A positive ANA in a tired woman {#ex-ana}
+A 34-year-old woman sees her GP with fatigue and widespread aches for six months. Examination is normal. Full blood count, renal function, urinalysis, CRP and thyroid function are normal. An ANA test is reported as positive at 1:80 with a speckled pattern. She is worried she has lupus. Assume a pretest probability of SLE of 1%, an ANA sensitivity of 98% and specificity of 87%. What is the probability she has SLE, and what should be done?
 ::: solution
-**Giant-cell-arteritis-with-herald-symptoms-and-a-completed-infarction ([[#def-vasculitis]]): this was a same-day-steroid-diagnosis - the-PMR-pattern-plus-new-headache-plus-jaw-claudication-plus-CRP-demands-high-dose-glucocorticoids-immediately-and-temporal-artery-biopsy-or-ultrasound-halo-within-24-48-hours-must-not-delay-treatment - [[musculoskeletal/inflammatory-arthritis]]-PMR, [[nervous-system/sensory-systems]], [[clinical-skills/laboratory-tests]]; the now - same-day-IV-methylprednisolone-for-evolving-or-completed-visual-lost? and-urgent-ophthalmology-and-rheumatology-and-the-immediate-contralateral-eye-protection-because-the-other-eye-follows-in-days-and-the-aspirin-and-PPI-and-bone-and-steroid-side-effect-plan and the tocilizumab-steroid-sparing-introduction-early - the stroke-prevention adjacency of [[nervous-system/stroke]]; the aortitis-horizon - blood-pressure-comparisons-and-upper-limb-claudication-and-the-imaging-surveillance-policy-for-large-vessel-extension-and-aneurysm - [[clinical-skills/medical-imaging]], [[surgery/vascular-urological-surgery]]; the communication - the-avoidable-blindness-conversation-done-honestly-including-what-was-missed-and-the-incident-report-and-duty-of-candour-referral and the patient-leaflet-with-taper-schedule-and-sick-day-and-flare-recognition - [[clinical-skills/communication]], [[clinical-skills/patient-safety]], the candour rows in [[clinical-skills/records-handover]]; and the systems fix - the-community-and-ED-red-flag-educations-on-JAW-claudication-plus-headache-plus-visual-flags-as-emergency-not-rheumatology-queue - [[public-health/prevention-promotion]], [[emergency-critical-care/acute-assessment]].**
+Using [[#eq-ppv]], or natural frequencies with 1,000 similar women:
+
+- with SLE: $1{,}000 \times 0.01 = 10$, of whom about $9.8$ test positive;
+- without SLE: $990$, of whom $990 \times 0.13 \approx 128.7$ test positive.
+
+PPV $= 9.8 / (9.8 + 128.7) \approx 0.071$, about **7%**.
+
+So a low-titre positive ANA with no specific features leaves SLE unlikely. She does not need treatment on the basis of this result. A sensible approach is to explain what the result does and does not mean, look again for specific features (photosensitive rash, mouth ulcers, inflammatory arthritis, serositis, Raynaud's phenomenon, cytopenias, proteinuria), consider other causes of fatigue and widespread pain, and safety-net: if specific features develop, more specific tests (anti-dsDNA, extractable nuclear antigen antibodies, complement) and rheumatology referral become appropriate. The lesson is to request ANA when the clinical picture suggests a connective-tissue disease, not as a screen for fatigue.
 :::
 :::
 
-::: example The young woman with proteinuria {#ex-lupus-nephritis}
-A 26-year-old has malar rash, oral ulcers, alopecia, inflammatory hand pain, a spontaneous 3-months-earlier "miscarriage at 9 weeks", now ankles swollen; urine dip 3+ protein, RBC casts seen, creatinine 118, C3 and C4 low, anti-dsDNA high.
+::: definition Autoantibodies and their associations {#def-antibodies}
+| Antibody | Main associations |
+|---|---|
+| ANA | Screening test for SLE and other connective-tissue diseases; low titres common in healthy people |
+| Anti-double-stranded DNA (anti-dsDNA) | SLE; highly specific; levels often rise with active disease, especially nephritis |
+| Anti-Sm | SLE; highly specific but present in a minority |
+| Anti-Ro (SSA) and anti-La (SSB) | Sjögren's disease, SLE; in pregnancy, neonatal lupus and congenital heart block |
+| Anti-histone | Drug-induced lupus (for example with hydralazine, procainamide, isoniazid) |
+| Anti-centromere | Limited cutaneous systemic sclerosis |
+| Anti-topoisomerase I (anti-Scl-70) | Diffuse cutaneous systemic sclerosis; interstitial lung disease |
+| Anti-RNA polymerase III | Diffuse systemic sclerosis; scleroderma renal crisis |
+| Anti-Jo-1 and other anti-synthetase antibodies | Antisynthetase syndrome: myositis, interstitial lung disease, mechanic's hands, arthritis |
+| Anti-TIF1-γ | Dermatomyositis associated with cancer in adults |
+| Anti-MDA5 | Dermatomyositis with rapidly progressive interstitial lung disease |
+| Anti-U1 RNP | Mixed connective tissue disease |
+| Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, anti-β2-glycoprotein I) | Antiphospholipid syndrome |
+| ANCA: anti-PR3 (cytoplasmic pattern) | Granulomatosis with polyangiitis |
+| ANCA: anti-MPO (perinuclear pattern) | Microscopic polyangiitis; eosinophilic granulomatosis with polyangiitis |
+| Anti-glomerular basement membrane | Anti-GBM disease (Goodpasture's disease) |
+:::
+
+## Systemic lupus erythematosus {#sec-sle}
+
+::: definition Systemic lupus erythematosus {#def-sle}
+**Systemic lupus erythematosus (SLE)** is a chronic multisystem autoimmune disease characterised by antibodies against nuclear antigens, immune-complex deposition and complement activation. It is about nine times more common in women than men, usually begins between the late teens and the forties, and is more common and often more severe in people of African, Caribbean, Asian and Hispanic ancestry.
+
+Its features include:
+
+- **constitutional**: fatigue, fever, weight loss;
+- **mucocutaneous**: photosensitive rash, the **malar ("butterfly") rash** over the cheeks and nose that spares the nasolabial folds, discoid lupus (scarring plaques), painless oral ulcers, non-scarring alopecia;
+- **musculoskeletal**: inflammatory arthralgia or arthritis, usually non-erosive; deformities, when they occur, are reducible (Jaccoud's arthropathy);
+- **serositis**: pleurisy, pericarditis;
+- **renal**: **lupus nephritis**, which may be silent until advanced;
+- **haematological**: haemolytic anaemia, leucopenia, lymphopenia, thrombocytopenia;
+- **neuropsychiatric**: seizures, psychosis, cognitive impairment, stroke;
+- **immunological**: ANA, anti-dsDNA, anti-Sm, antiphospholipid antibodies, and **low complement (C3 and C4)**, which reflects consumption by immune complexes during active disease.
+
+The 2019 EULAR/ACR classification criteria require an ANA titre of at least 1:80 as an entry criterion, then add weighted points across clinical and immunological domains; a total of 10 or more, with at least one clinical criterion, classifies SLE.
+:::
+
+A useful laboratory clue is that active SLE often raises the **ESR** while the **CRP** stays normal or only slightly raised. A high CRP in a person with lupus suggests infection or serositis and should prompt a search for infection, which is a leading cause of death in SLE.
+
+**Lupus nephritis** affects a large minority of people with SLE and is a major cause of morbidity. Immune complexes deposit in the glomeruli, producing anything from mild proteinuria to rapidly progressive glomerulonephritis. Because it is often silent, people with SLE have regular checks of **blood pressure**, **urine dipstick** for blood and protein, a **urine protein:creatinine ratio** and renal function. Significant proteinuria or an active sediment leads to **renal biopsy**, which classifies the disease (classes I to VI) and guides treatment.
+
+::: definition Principles of SLE treatment {#def-sle-treatment}
+- **Hydroxychloroquine** for almost everyone with SLE unless contraindicated: it reduces flares, organ damage and thrombosis and improves survival. Long-term users need retinal screening.
+- **Sun protection**, because ultraviolet light triggers flares.
+- **Glucocorticoids** for flares, at the lowest dose and for the shortest time possible, because they are the main cause of long-term damage (osteoporosis, diabetes, cataracts, avascular necrosis, infection, cardiovascular disease).
+- **Immunosuppressants** according to the organs involved: methotrexate or azathioprine for skin and joint disease; **mycophenolate mofetil** or low-dose intravenous **cyclophosphamide** for lupus nephritis induction; biological drugs such as **belimumab** (against B-cell activating factor), **anifrolumab** (against the type I interferon receptor) and **rituximab** in selected cases.
+- **Attention to long-term risks**: cardiovascular risk factors, bone health, vaccination, and **pregnancy planning** (disease should be quiet for at least six months before conception, drugs must be compatible with pregnancy, and anti-Ro and antiphospholipid antibodies must be known).
+:::
+
+::: example A lupus flare with swollen ankles {#ex-nephritis}
+A 26-year-old woman of Nigerian heritage with SLE diagnosed two years ago (malar rash, arthritis, positive ANA and anti-dsDNA) stopped her hydroxychloroquine six months ago. She now has swollen ankles. Blood pressure is 152/96 mmHg. Urine dipstick shows 3+ protein and 2+ blood; the urine protein:creatinine ratio is 310 mg/mmol. Creatinine has risen from 68 to 104 µmol/L. Anti-dsDNA has risen and C3 and C4 are low. What is happening, and what are the principles of management?
 ::: solution
-**New systemic lupus erythematosus with likely proliferative lupus nephritis and probable antiphospholipid territory ([[#def-lupus]], [[#def-aps-scleroderma]]): the urgency is the renal biopsy - class-determining-treatment-now-not-after-a-trial-of-steroid-creep - with the fertility-and-ovarian-protection-conversation-before-cyclophosphamide-if-there-is-time-and-GnRH-co-therapy-and-pregnancy-planning-must-wait-for-six-months-stable-remission-and-stable-renal-function-and-the-high-risk-obstetric-referral-with-Ro-La-and-APS-antibody-panel-including-repeat-at-12-weeks - [[obstetrics-gynaecology/contraception-fertility]], [[obstetrics-gynaecology/pregnancy-complications]], the renal class pages in [[renal/chronic-kidney-disease]]; the regimen - hydroxychloroquine-for-all-and-induction-mycophenolate-or-cyclophosphamide-plus-tapering-steroid-plus-consideration-of-belimumab-or-voclosporin-or-anifrolumab-by-availability-and-the-ACE-inhibitor-for-proteinuria-and-BP-and-the-bone-protective-stack-and-vaccination-before-deep-immunosuppression - [[endocrine/bone-calcium]], [[public-health/vaccination-programmes]], [[immunology/vaccines-immunotherapy]]; the APS question decided by repeat-serology-and-not-panicking-once-positive-and-aspirin-versus-heparin-by-history-and-triple-positivity-risk - [[blood/thrombosis-anticoagulation]]; and the long game - young-woman-lupus-care-map - contraception-oestrogen-exclusion-flare-risk-pregnancy-timing-skin-cancer-screening-cervical-screening-cardiovascular-risk-mental-health-school-and-work-and-the-transition-service-readiness-if-she-was-teenage - [[musculoskeletal/skin-cancer]], [[public-health/screening]], [[psychiatry/mood-disorders]], [[paediatrics/adolescent-health]].**
+This is an **SLE flare with active lupus nephritis**: heavy proteinuria (a protein:creatinine ratio of 310 mg/mmol corresponds to about 3 g/day, in the nephrotic range), haematuria, new hypertension and a rising creatinine, with serological activity (rising anti-dsDNA, low complement). Stopping hydroxychloroquine may have contributed.
+
+**Principles of management** (in a specialist renal and rheumatology setting, following local guidance):
+
+1. **Urgent renal biopsy** to confirm and classify the nephritis; proliferative nephritis (classes III and IV) needs intensive immunosuppression.
+2. **Induction therapy**: glucocorticoids (often intravenous methylprednisolone followed by oral prednisolone with a planned taper) plus **mycophenolate mofetil** or low-dose intravenous **cyclophosphamide**; additional agents such as belimumab may be added.
+3. **Restart hydroxychloroquine**.
+4. **Renal protection**: control blood pressure, with an ACE inhibitor or angiotensin receptor blocker to reduce proteinuria; manage oedema and lipids.
+5. **Pregnancy**: mycophenolate and cyclophosphamide are teratogenic, so effective contraception and a pregnancy test are essential.
+6. **Prevention of treatment harms**: bone protection, infection prophylaxis where indicated, vaccination.
+
+Lupus nephritis is more common and has historically had worse outcomes in people of African and Caribbean ancestry, which makes regular urine monitoring especially important.
 :::
 :::
 
-::: example The asthma patient with a drop foot {#ex-egpa}
-A 52-year-old with "brittle asthma" on inhaled steroids and montelukast for 4 years presents with 3 weeks of weight loss, fever and calf pain, a foot-drop, palpable purpura, eosinophils 4.2, creatinine normal, MPO-ANCA positive.
+### Antiphospholipid syndrome
+
+**Antiphospholipid syndrome (APS)** is an autoimmune disorder in which persistent antiphospholipid antibodies cause **thrombosis** (venous, arterial or small-vessel) and **pregnancy morbidity**. It can occur alone (primary APS) or with SLE. Diagnosis requires a typical clinical event plus antibodies on **two occasions at least 12 weeks apart**, because antibodies can appear transiently with infections. Pregnancy morbidity includes recurrent early miscarriage, unexplained fetal death and early delivery due to severe pre-eclampsia or placental insufficiency. The classification criteria were revised by the ACR and EULAR in 2023.
+
+People with APS and thrombosis usually need **long-term warfarin**. Direct oral anticoagulants are **not** recommended in APS, particularly in people positive for all three antibody types ("triple-positive"), after a trial with rivaroxaban was stopped early because of excess thrombotic events. In pregnancy, women with APS are managed with **low-dose aspirin** and, depending on their history, **low-molecular-weight heparin** under specialist care ([[blood/thrombosis-anticoagulation]], [[obstetrics-gynaecology/pregnancy-complications]]).
+
+### Sjögren's disease
+
+**Sjögren's disease** (Sjögren's syndrome) is a chronic autoimmune disease in which lymphocytes infiltrate the exocrine glands, especially the lacrimal and salivary glands, causing **dry eyes** and **dry mouth** (sicca symptoms), parotid swelling, fatigue and joint pain. It can be primary or accompany RA or SLE. Systemic features include interstitial lung disease, renal tubular acidosis, peripheral neuropathy, vasculitis and cytopenias. Anti-Ro and anti-La antibodies and rheumatoid factor are common. The risk of **B-cell lymphoma**, particularly mucosa-associated lymphoid tissue (MALT) lymphoma of the salivary glands, is substantially increased; persistent gland swelling should be investigated. Treatment is mainly symptomatic (artificial tears and saliva, dental care), with hydroxychloroquine or immunosuppression for systemic disease.
+
+### Systemic sclerosis and Raynaud's phenomenon
+
+**Raynaud's phenomenon** is an exaggerated vasospastic response of the digital arteries to cold or emotion. The fingers turn white (ischaemia), then blue (deoxygenation) and then red (reactive hyperaemia). **Primary Raynaud's** is common, starts in the teens or twenties, is symmetrical and has no tissue damage, a negative ANA and normal **nailfold capillaries**. **Secondary Raynaud's** suggests an underlying disease: features include onset after about 30, asymmetry, digital ulcers or pitting scars, a positive ANA and abnormal (dilated or lost) nailfold capillaries. Systemic sclerosis is the most important cause.
+
+**Systemic sclerosis (SSc)** combines small-vessel damage, autoimmunity and fibrosis of the skin and internal organs. It is divided by the extent of skin thickening:
+
+- **Limited cutaneous SSc**: skin thickening of the hands, forearms, feet and face; a long history of Raynaud's; **anti-centromere** antibodies. Features have been summarised as CREST: calcinosis, Raynaud's, oesophageal dysmotility, sclerodactyly, telangiectasia. A late, serious complication is **pulmonary arterial hypertension**, which is screened for with annual echocardiography, lung function and NT-proBNP.
+- **Diffuse cutaneous SSc**: rapidly progressive skin thickening extending to the upper arms, thighs or trunk, with early internal organ involvement: **interstitial lung disease** (associated with anti-Scl-70) and **scleroderma renal crisis** (associated with anti-RNA polymerase III).
+
+**Scleroderma renal crisis** presents with abrupt, severe hypertension and acute kidney injury, sometimes with microangiopathic haemolysis. It is treated with an **ACE inhibitor**, which transformed it from a usually fatal complication to a treatable one. Moderate to high doses of glucocorticoids are a known trigger, so they are used with caution in diffuse SSc.
+
+### Inflammatory myopathies
+
+The **idiopathic inflammatory myopathies** cause muscle inflammation and weakness:
+
+- **Dermatomyositis**: symmetrical **proximal muscle weakness** (difficulty rising from a chair, climbing stairs, lifting arms) with characteristic skin signs: a violaceous **heliotrope rash** of the upper eyelids, **Gottron's papules** over the knuckles, a photosensitive rash over the upper chest and back (V-sign and shawl sign), and dilated nailfold capillaries. In adults it is associated with **cancer**, especially in the first few years after diagnosis, so age- and sex-appropriate cancer screening is carried out.
+- **Polymyositis** (a diagnosis made less often now that antibody-defined subgroups are recognised) and the **antisynthetase syndrome** (myositis, interstitial lung disease, arthritis, fever, Raynaud's and cracked "mechanic's hands", with anti-Jo-1 or related antibodies).
+- **Immune-mediated necrotising myopathy**, including a form triggered by statins with antibodies against HMG-CoA reductase.
+- **Inclusion body myositis**: in people over 50, more often men; slowly progressive weakness of the **finger flexors** and **quadriceps**, often asymmetrical; it does not respond to immunosuppression.
+
+Investigations include **creatine kinase** (raised, often greatly), myositis-specific antibodies, MRI of muscle, electromyography and muscle biopsy, and assessment of lung function and swallowing. Treatment of dermatomyositis and polymyositis uses glucocorticoids with a steroid-sparing drug such as methotrexate, azathioprine or mycophenolate, and intravenous immunoglobulin or rituximab for refractory disease.
+
+## Polymyalgia rheumatica and giant cell arteritis {#sec-pmr-gca}
+
+These two conditions affect people over 50, often overlap, and share an inflammatory process. About one in five people with polymyalgia rheumatica develops giant cell arteritis, and many people with giant cell arteritis have polymyalgic symptoms.
+
+**Polymyalgia rheumatica (PMR)** causes bilateral pain and stiffness of the **shoulder and hip girdles** and neck, worst in the morning, of subacute onset, usually with raised ESR and CRP. Muscle strength and creatine kinase are normal. The response to a moderate dose of prednisolone (for example 15 mg daily) is usually dramatic within days; failure to respond should prompt reconsideration of the diagnosis. Treatment is then tapered slowly over a year or more, with bone protection. Because other conditions mimic PMR, including late-onset RA, myeloma and other cancers, hypothyroidism, infection and statin myopathy, baseline tests (blood count, renal, liver and thyroid function, calcium, protein electrophoresis, CK, urinalysis, and often a chest X-ray) are recommended.
+
+::: definition Giant cell arteritis {#def-gca}
+**Giant cell arteritis (GCA)** is a granulomatous vasculitis of large and medium-sized arteries, especially the branches of the external carotid artery (including the temporal artery), the ophthalmic and posterior ciliary arteries, and the aorta and its major branches. It almost always affects people over 50.
+
+Typical features include:
+
+- **new headache**, often temporal;
+- **scalp tenderness** (pain on combing the hair);
+- **jaw claudication** (pain in the jaw muscles on chewing), the most specific symptom;
+- **visual disturbance**: transient loss of vision (amaurosis fugax), double vision or sudden painless permanent loss of vision from anterior ischaemic optic neuropathy;
+- systemic features (fever, weight loss, fatigue) and polymyalgic symptoms;
+- on examination, a thickened, tender or pulseless temporal artery; arm claudication or unequal blood pressures suggest large-vessel involvement.
+
+ESR and CRP are usually raised. Diagnosis is confirmed by **temporal artery ultrasound** (a "halo" of oedematous arterial wall) or **temporal artery biopsy** (granulomatous inflammation with giant cells, though skip lesions mean a negative biopsy does not exclude GCA).
+:::
+
+::: warning Do not wait for the biopsy
+Suspected GCA is a medical emergency because vision lost from ischaemic optic neuropathy rarely returns, and the second eye can follow within days. **High-dose glucocorticoids are started immediately** when GCA is strongly suspected, before ultrasound or biopsy. British Society for Rheumatology guidance (2020) recommends prednisolone 40 to 60 mg daily for most people, with intravenous methylprednisolone considered for people with visual symptoms, and urgent assessment through a **fast-track pathway**; new visual loss or double vision should be assessed by an ophthalmologist on the same day. Biopsy findings remain detectable for at least one to two weeks after starting steroids. Treatment continues with a slow taper, with bone protection, and **tocilizumab** (an IL-6 receptor blocker) for relapsing or refractory disease.
+:::
+
+::: example Headache and a blurred eye {#ex-gca}
+A 74-year-old woman has had a new right-sided headache for three weeks. Her scalp hurts when she brushes her hair, and her jaw aches after chewing meat. This morning, the vision in her right eye went grey for about five minutes and then recovered. She has lost 3 kg. The right temporal artery is thickened and tender. ESR is 86 mm/h and CRP 64 mg/L. What should happen now?
 ::: solution
-**Eosinophilic granulomatosis with polyangiitis emerging from the asthma phenotype it grew inside ([[#def-vasculitis]]): the classic unmasking-when-steroids-taper-or-leukotriene-narrative-and-the-real-story-of-disease-evolution and the eosinophil-plus-neuropathy-plus-purpura-plus-ANCA-subset-syndrome; the urgency grid - nerve-conduction-studies-and-skin-biopsy-of-fresh-purpura-and-echocardiography-because-cardiac-involvement-is-the-killer-and-cranial-and-imaging-for-cns-and-pituitary-adjacent-lesions and the stool-and-travel-parasite-and-drug-exclusions-before-escalation - [[nervous-system/motor-systems]], [[musculoskeletal/skin]], [[cardiovascular/heart-failure]], [[microbiology/fungi-parasites]], drug-mimics in [[pharmacology/adverse-reactions]]; treatment architecture - glucocorticoid-backbone-with-mepolizumab-for-the-eosinophilic-relapsing-phenotype-and-rituximab-or-cyclophosphamide-for-organ-threatening-disease-with-the-five-factor-score-era-risk-stratification-and-anaemia-and-asthma-co-optimisation - [[respiratory/asthma-copd]], [[immunology/vaccines-immunotherapy]], [[pharmacology/dosing-principles]]; and the longitudinal frame - the-asthma-is-the-disease-now-realisation-therapy-shift-for-the-patient-who-thought-they-had-lung-problems-and-the-ENT-and-allergy-shared-follow-up and the relapse-safety-net-with-skin-and-nerve-self-check-education - [[clinical-skills/communication]], [[clinical-skills/records-handover]].**
+This is **giant cell arteritis** until proven otherwise, with an episode of **transient visual loss (amaurosis fugax)**, which signals a high risk of permanent blindness.
+
+1. **Start high-dose glucocorticoids immediately**, today, without waiting for confirmation. Because she has had visual symptoms, intravenous methylprednisolone may be given according to local guidance, followed by high-dose oral prednisolone.
+2. **Same-day ophthalmology assessment** for the visual symptoms, and **urgent referral through the GCA fast-track pathway** for temporal artery ultrasound and/or biopsy, which should happen within days and remains informative after steroids have started.
+3. **Supportive measures**: bone protection (with calcium, vitamin D and usually a bisphosphonate), gastroprotection where indicated, and monitoring of blood glucose and blood pressure. Check for large-vessel involvement (pulses and blood pressure in both arms).
+4. **Longer term**: a slow, monitored taper; tocilizumab if she relapses or cannot reduce the dose.
+
+The combination of new headache, scalp tenderness, jaw claudication, visual symptoms and high inflammatory markers in a person over 50 makes the diagnosis highly likely. The risk of a short course of steroids is far smaller than the risk of blindness.
 :::
 :::
 
-::: example The parotid that will not stop swelling {#ex-sjogren-lymphoma}
-A 61-year-old with 5 years of Sjögren's has 3 months of a persistently enlarging left parotid gland, dry eyes and mouth, fatigue, new purpuric patches on the legs, low C4, positive RF and a monoclonal band on protein electrophoresis.
+## Vasculitis {#sec-vasculitis}
+
+**Vasculitis** is inflammation of blood vessel walls, which can lead to bleeding, narrowing, occlusion or aneurysm, and therefore to ischaemia of the tissues supplied. The features depend on the size and distribution of the vessels involved.
+
+::: definition Classification of vasculitis by vessel size {#def-vasculitis}
+The 2012 revised **International Chapel Hill Consensus Conference** nomenclature classifies vasculitis mainly by the size of vessel affected.
+
+| Vessel size | Disease | Key features |
+|---|---|---|
+| **Large** (aorta and major branches) | Giant cell arteritis | Over 50; cranial arteries and aorta |
+| | Takayasu arteritis | Usually women under 40; aorta and its branches; absent pulses, arm claudication |
+| **Medium** (main visceral arteries) | Polyarteritis nodosa | Necrotising arteritis with microaneurysms; renal, gut, nerve and skin involvement; linked to hepatitis B; ANCA negative; spares glomeruli |
+| | Kawasaki disease | Young children; fever, conjunctivitis, red lips, rash, swollen hands and feet, lymphadenopathy; coronary artery aneurysms |
+| **Small**, ANCA-associated | Granulomatosis with polyangiitis | Upper airway (sinusitis, nasal crusting, saddle-nose), lung nodules, glomerulonephritis; anti-PR3 |
+| | Microscopic polyangiitis | Glomerulonephritis and pulmonary haemorrhage; anti-MPO |
+| | Eosinophilic granulomatosis with polyangiitis | Asthma, eosinophilia, neuropathy; ANCA (usually MPO) in a minority |
+| **Small**, immune complex | IgA vasculitis (Henoch–Schönlein purpura) | Mainly children; palpable purpura on legs and buttocks, arthralgia, abdominal pain, nephritis |
+| | Cryoglobulinaemic vasculitis | Purpura, arthralgia, neuropathy, nephritis; associated with hepatitis C |
+| | Anti-GBM disease | Glomerulonephritis and pulmonary haemorrhage |
+| **Variable vessel** | Behçet's syndrome | Recurrent oral and genital ulcers, uveitis, skin lesions, venous and arterial thrombosis |
+:::
+
+**Small-vessel vasculitis** typically causes **palpable purpura** (raised purple spots that do not blanch, usually on the legs), **glomerulonephritis** (haematuria, proteinuria, red cell casts, rising creatinine), **pulmonary haemorrhage** (haemoptysis, infiltrates, falling haemoglobin), mononeuritis multiplex and episcleritis or scleritis. The combination of lung and kidney involvement, **pulmonary–renal syndrome**, is a medical emergency.
+
+The **ANCA-associated vasculitides** (AAV) are treated in two phases. **Induction** aims for remission with glucocorticoids plus **rituximab** or **cyclophosphamide**; plasma exchange is considered in selected people with severe kidney disease or pulmonary haemorrhage; and **avacopan**, an oral inhibitor of the complement C5a receptor, can be used to reduce glucocorticoid exposure. **Maintenance** then continues with rituximab or azathioprine for several years. Untreated, generalised AAV was usually fatal within a year; with treatment most people survive, although relapses, kidney damage and infection remain major problems.
+
+::: example Nosebleeds and blood in the urine {#ex-gpa}
+A 58-year-old man has had blocked, crusty nostrils with blood-stained discharge for three months, treated as sinusitis. Over two weeks he has developed a cough with streaks of blood, aching joints and a rash on his shins. Creatinine is 210 µmol/L (it was 85 a year ago). Urine dipstick shows 3+ blood and 2+ protein. Chest X-ray shows two cavitating nodules. What is the most likely diagnosis, how would you confirm it, and how urgent is it?
 ::: solution
-**Sjögren's-lymphoma-transition-red-flags collected in one patient ([[#def-myositis-sjogren]]): persistent-parotid-enlargement-plus-purpura-plus-cryoglobulinaemia-flavoured-features-plus-low-C4-plus-RF-plus-monoclonal-gammopathy-is-the-classic-risk-cluster-for-B-cell-lymphoproliferation - [[blood/lymphoma-myeloma]], [[immunology/autoimmunity]], [[musculoskeletal/skin]]; the work-up - imaging-and-tissue - ultrasound-characterisation-and-core-or-incisional-biopsy-of-the-gland-with-histology-and-flow-and-clonality-studies-and-bone-marrow-staging-if-positive-and-the-salivary-ultrasound-versus-lip-biopsy-history - [[clinical-skills/medical-imaging]], [[pathology/diagnostic-pathology]], [[clinical-skills/laboratory-tests]]; the management fork - haematology-oncology-for-lymphoma-subtyping-and-stage-adapted-therapy-with-the-infection-and-vaccination-and-fertility-columns-of-chemotherapy-adjacent-care-versus-haematology-observation-for-benign-lymphoepithelial-lesions - [[infectious-diseases/immunocompromised-host]], [[obstetrics-gynaecology/contraception-fertility]]; the supportive-sicca-care-that-must-not-be-forgotten-in-the-drama - ocular-lubrication-and-cyclosporin-tears-and-punctal-plugs-and-dental-fluoride-and-sialogogues-and-saliva-substitutes-and-the-denture-and-swallowing-and-vaginal-dryness-conversations-someone-should-start-earlier - [[nervous-system/sensory-systems]], the dental-and-ocular symptom burden, [[clinical-skills/communication]]; and the surveillance-policy-lesson - the-low-C4-and-monoclonal-band-and-parotid-triad-should-have-triggered-haematology-awareness-years-ago so the annual-review-bloods-and-exam-get-a-checklist in every Sjögren's clinic - [[public-health/screening]], [[clinical-skills/records-handover]].**
+The most likely diagnosis is **granulomatosis with polyangiitis (GPA)**, an ANCA-associated small-vessel vasculitis affecting the **upper airway** (crusting, bloody discharge), the **lungs** (cavitating nodules, haemoptysis) and the **kidneys** (rapidly rising creatinine with haematuria and proteinuria, suggesting rapidly progressive glomerulonephritis). The shin rash may be vasculitic purpura.
+
+**Confirmation**: **ANCA** testing (anti-PR3 is typical of GPA; anti-MPO is more typical of microscopic polyangiitis), anti-GBM antibodies (anti-GBM disease also causes pulmonary–renal syndrome), urine microscopy for red cell casts, and **tissue biopsy**, usually of the kidney, showing pauci-immune necrotising crescentic glomerulonephritis. CT of the chest and sinuses defines the extent. Infection (including tuberculosis, given the cavities) must be excluded.
+
+**Urgency**: this is a **medical emergency**. Kidney function can be lost within days and pulmonary haemorrhage can be fatal. He needs same-day referral to the renal or vasculitis team; treatment with glucocorticoids and rituximab or cyclophosphamide often starts as soon as the diagnosis is strongly suspected, sometimes before the biopsy result. A urine dipstick in every patient with unexplained systemic illness would have flagged this weeks earlier.
 :::
 :::
 
 ::: quiz
-A patient on long-term glucocorticoids for vasculitis develops new foot-drop and a purpuric rash; ANCA is positive. The best interpretation:
-- [x] Possible vasculitic flare with nerve and skin involvement - urgent reassessment
-- [ ] Steroid myopathy
-- [ ] Drug allergy to co-trimoxazole
-- [ ] Coincidental disc prolapse
+Which antibody is most closely associated with scleroderma renal crisis?
+- [ ] Anti-centromere
+- [ ] Anti-Jo-1
+- [x] Anti-RNA polymerase III
+- [ ] Anti-histone
 ::: solution
-**Mononeuritis-multiplex-pattern-plus-purpura-in-ANCA-disease-is-relapse-until-proven-otherwise-and-foot-drop-is-an-organ-threatening-presentation-needing-same-week-specialist-review-and-likely-escalation-induction-therapy ([[#def-vasculitis]], [[nervous-system/motor-systems]]); steroid-myopathy-is-proximal-and-painless-without-rash ([[musculoskeletal/bones-joints]]-myopathy-adjacent, [[endocrine/adrenal]]); disc-disease-does-not-bruise-or-raise-CRP ([[musculoskeletal/back-pain]]).**
+Anti-RNA polymerase III is associated with diffuse cutaneous systemic sclerosis and a high risk of scleroderma renal crisis, which is treated with an ACE inhibitor. Anti-centromere is associated with limited cutaneous SSc and pulmonary hypertension; anti-Jo-1 with the antisynthetase syndrome; and anti-histone with drug-induced lupus.
 :::
 :::
 
-::: widget plot
-f: 100*exp(-x/2.5); 100*exp(-x/9)
-x: 0, 12
-y: 0, 105
-labels: \text{months from vasculitis diagnosis},\ \%\text{active-disease-burden};\ \text{remission-induction plus maintenance};\ \text{relapsing phenotype}
-caption: Remission architecture in ANCA-associated vasculitis ([[#def-vasculitis]]): fast deep control with rituximab-or-cyclophosphamide-plus-tapering-steroid then maintenance keeps the curve down, while PR3-positive and relapsing phenotypes creep back - the justification for protocol maintenance and relapse safety-netting rather than one-prescription-fits-all ([[immunology/vaccines-immunotherapy]], [[epidemiology-ebm/randomised-trials]], [[pharmacology/dosing-principles]]).
+::: history
+In 1862 the French physician **Maurice Raynaud** described episodic digital ischaemia in his doctoral thesis. Four years later, in 1866, **Adolf Kussmaul** and **Rudolf Maier** described the nodular arteritis now called polyarteritis nodosa. **Jonathan Hutchinson** described an elderly man with painful, inflamed temporal arteries in 1890, and **Bayard Horton** and colleagues at the Mayo Clinic defined temporal arteritis as a distinct disease in 1932. **Friedrich Wegener** described the granulomatous vasculitis long known by his name in 1936; the name was later replaced by granulomatosis with polyangiitis, partly because of his membership of the Nazi party. At the Mayo Clinic in 1948, **Malcolm Hargraves** described the "LE cell" in the bone marrow of people with lupus, the first laboratory test for an autoimmune disease and the start of the autoantibody era. In 1983 **Graham Hughes** and colleagues in London described the syndrome of thrombosis, miscarriage and antiphospholipid antibodies that bears his name as Hughes syndrome.
 :::
-
-
-## The drug and monitoring ledger
-
-::: definition Immunosuppression: choosing, dosing, protecting {#def-drugs}
-**The shared decision frame (severity-velocity-and-reversibility-of-the-organ-lesion-decide-the-drug - a-rash-versus-a-creatinine-versa-a-nervous-system - and the patient's fertility, occupation, travel, faith-and-blood-product positions and pregnancy intentions are part of the regimen design from the first prescription, not amendments after - [[clinical-skills/communication]], [[medical-ethics-law/consent-capacity]], [[obstetrics-gynaecology/contraception-fertility]]). The agents and their non-negotiables (hydroxychloroquine - the-whole-cohort-drug-with-retinal-screening-by-risks-duration-dose-and-obesity-and-renal-and-tamoxifen-co-factors and its cardiac-and-muscle-rare-toxicities - [[nervous-system/sensory-systems]], [[cardiovascular/arrhythmias]], [[renal/chronic-kidney-disease]]; methotrexate - the weekly-dose-error-guardrail and hepatic-and-pulmonary-and-haematologic monitoring and third-space-drug-accumulation-in-ascites - [[pharmacology/dosing-principles]], [[gastrointestinal/liver-disease]], [[respiratory/interstitial-vascular-disease]]; mycophenolate - the teratogenicity-and-both-sexes-contraception-strictness-and-GI-and-marrows and its nephritis-adjacent-pregnancy-switch-plans - [[obstetrics-gynaecology/contraception-fertility]]; azathioprine - TPMT-and-NUDT15-pharmacogenetics-before-first-dose-and-allopurinol-and-febuxostat-fatal-interaction-and-pregnancy-compatibility - [[pharmacology/patient-variation]], [[musculoskeletal/inflammatory-arthritis]]-gout-adjacent; cyclophosphamide - the-cumulative-dose-and-haemorrhagic-cystitis-and-hydration-and-mesna-and-bladder-symptom-red-flags-and-the-bladder-cancer-and-MDS-later-risk-and-fertility-preservation-before-treatment-and-GnRH-co-protection-in-women - [[blood/haematopoiesis]], [[renal/urinary-tract]], [[musculoskeletal/skin-cancer]]-bladder-skin-surveillance, [[obstetrics-gynaecology/contraception-fertility]]; rituximab - the-hypogammaglobulinaemia-and-infection-chronology-and-hepatitis-B-reactivation-prophylaxis-and-PML-rarity-counselling-and-vaccination-timing-and-the-infusion-reaction-plan and its B-cell-repopulation-and-re-dosing-by-CD19-versus-by-protocol debates - [[immunology/vaccines-immunotherapy]], [[microbiology/viruses]], [[nervous-system/neuroinflammation]], [[emergency-critical-care/anaphylaxis]]; and the calcineurin-and-mTOR-and-belimumab-and-anifrolumab-and-IL6-and-JAK-adjacencies each with their own BP-and-renal-and-contraceptive-and-infection-and-VTE-and-zoster columns - [[cardiovascular/hypertension]], [[endocrine/diabetes-complications]], [[pharmacology/adverse-reactions]]). The prophylaxis stack (co-trimoxazole-for-PJP-when-regimens-cross-thresholds-with-the-sulfa-allergy-workaround and antifungal-and-antiviral-niches-in-deep-suppression and the vaccination-before-timing-and-booster-response-reality and the household-contact-live-vaccine-question - [[public-health/vaccination-programmes]], [[infectious-diseases/immunocompromised-host]], [[microbiology/antimicrobials]]; plus the PJP-of-the-iatrogenic-Cushing's-differential and the steroid-card-bracelet-sick-day-rules-again-and-again - [[endocrine/adrenal]], [[surgery/perioperative-care]]).**
-:::
-
 
 ## Where this leads
 
-The immune mechanisms underlying everything above sit in [[immunology/autoimmunity]] and [[immunology/hypersensitivity]]; glomerular and tubular patterns in the renal chapters from [[renal/filtration]] to [[renal/chronic-kidney-disease]]; skin lesions in [[musculoskeletal/skin]] and their malignancy adjacencies in [[musculoskeletal/skin-cancer]]; thrombotic management in [[blood/thrombosis-anticoagulation]]; pregnancy risk in [[obstetrics-gynaecology/pregnancy-complications]]; and the infection counterweight that every regimen carries into [[infectious-diseases/immunocompromised-host]].
-
-
-## Bedside heuristics that survive contact with serology
-
-Five habits carry most of the safety in this chapter. First, treat the organ, not the antibody: a positive ANA changes nothing about a patient with two aching joints, while a rising creatinine with an active urine sediment in any of these diseases is an emergency-adjacent event that deserves tissue, steroids and a plan inside days, regardless of what the last serology panel said. Second, complement and inflammatory markers are trend instruments; a falling C3 and C4 with climbing anti-dsDNA is the lupus nephritis early-warning channel, and a normal CRP in afebrile lupus serositis tells you the pain is real. Third, every new neurological deficit in these patients is vascular until proven otherwise - foot-drop, mononeuritis multiplex, amaurosis, stroke in a young woman with antiphospholipid antibodies - and the window for saving the nerve, the eye or the brain is measured in hours. Fourth, the drug ledger is part of the disease ledger: the hydroxychloroquine eye register, the cyclophosphamide cumulative dose, the rituximab immunoglobulin trend, the steroid grams burned this year, and the vaccination dates belong on one visible page of the record, because the clinician who inherits this patient in five years will make decisions from exactly that page. Fifth, these are young-to-middle-aged diseases with decades of accumulation ahead - damage accrues quietly through treatment toxicity, cardiovascular inflammation and missed screenings, and the annual review that checks bones, blood pressure, lipids, skin, cervix, kidneys, mood and fertility is as valuable as any infusion.
-
-The referral heuristics follow the same logic. Suspected giant-cell arteritis with any visual symptom is an emergency call, not a form; suspected lupus nephritis or ANCA disease is a same-week rheumatology-and-nephrology conversation; a first unprovoked thrombosis in an under-50, or any thrombosis with a prolonged APTT, deserves antiphospholipid testing before warfarin becomes a decade-long mystery; and any patient on maintenance immunosuppression who develops fever, breathlessness or new neurological symptoms should be seen, not telephoned, because infection kills these patients faster than flares do.
-
-## Prognosis in numbers worth knowing
-
-Untreated proliferative lupus nephritis progressed to renal failure in a substantial minority within years; with biopsy-guided induction, mycophenolate or cyclophosphamide regimens, hydroxychloroquine and modern supportive care, renal survival and pregnancy outcomes have transformed, though cardiovascular disease and infection remain the leading long-term threats. Five-year survival in severe ANCA-associated vasculitis cohorts now exceeds eighty per cent in most series, but end-stage kidney disease affects a quarter of those who present with severe renal failure, and relapse - particularly with persistent PR3 positivity - reshapes maintenance strategy. In systemic sclerosis, the era of early ACE inhibition turned renal crisis from a death sentence into a manageable emergency, and lung disease has replaced it as the leading cause of death, which is exactly why surveillance moved from the blood pressure cuff to the scanner and the transfer factor. These outcome shifts are the strongest argument this course makes for prevention infrastructure: registries, protocol clinics and honest audit are not administration; they are the mechanism by which a diagnosis stops predicting a disability. Two caveats keep the optimism honest. Survivorship with organ damage is its own clinical problem - the dialysis patient with a healed pulmonary haemorrhage, the woman whose retina was saved but whose jaw now clicks with ischaemic temporomandibular change, the man whose vasculitis sleeps while his hips are replaced for avascular necrosis - and the long-condition review exists for exactly those sequelae rather than for the antibody. And the trial populations still underrepresent the old, the pregnant, the renally impaired and the multi-morbid, so much of this chapter's bedside arithmetic is principled extrapolation; documenting that reasoning, revisiting it as evidence lands, and telling patients where the certainty ends is part of practising this medicine well rather than around its edges.
-
-::: history
-**Autoimmune internal medicine's palimpsest: the classical "consumption" descriptions of what became lupus - the "wolf-face" ulceration of medieval dermatology through Kaposi and Jarisch's late-nineteenth-century separation of lupus erythematosus from lupus vulgaris; the 1897 discovery that the "LE cell" phenomenon of the 1940s - Hargreaves' bone-marrow finding and Miescher's demonstration of the antinuclear factor - gave rheumatology its first laboratory window into autoimmunity, and the 1957 Kellett-and-Barnett-complement-studies-of-heritable-hypocomplementaemia that linked clearance failure to disease - [[immunology/innate-immunity]]; the 1966-1982 Kunkel-Fauci-Nossal era - the CHCC-nomenclature-project-of-1988-giving-vasculitis a shared language where Kussmaul-and-Maier's-1866-polyarteritis-nodosa-had-started-the-atlas - and van-der-Heide's-and-Harkness-Wegener-s-recognition of the triad - [[pathology/diagnostic-pathology]]; the ANCA-discovery-1980s-van-Leuwen-and-Kallenberg-era-turning-diagnosis-into-a-blood-test-and-transforming-clinical-trials - [[clinical-skills/laboratory-tests]]; Hughes-syndrome - the 1983-Hutchinson-Roitt-Harris-reunification-of-recurring-thrombosis-and-miscarriage-and-lupus-anticoagulant-into-one-syndrome-that-changed-obstetric-practice-for-miscarriage-clinics-worldwide - [[obstetrics-gynaecology/early-pregnancy]], [[blood/thrombosis-anticoagulation]]; and the interferon-antibody-depleting-and-complement-blocking biologic eras ending decades of "steroids or nothing" - [[immunology/vaccines-immunotherapy]], [[pharmacology/drug-development-prescribing]].**
-:::
-
-::: exercise Write the rituximab checklist {level=2}
-Before the first rituximab infusion for ANCA vasculitis, list the checks, the counselling and the infection-layer decisions.
-::: solution
-**Serology-and-status - hepatitis-B-core-and-surface-with-prophylaxis-if-exposed-and-HIV-and-TB-screen-per-regimen-and-immunoglobulin-baseline-and-CMV-and-EBV-context - [[microbiology/viruses]], [[infectious-diseases/tuberculosis]], [[infectious-diseases/immunocompromised-host]]; vaccination-timing - finish-inactivated-and-recombinant-vaccines-2-4-weeks-where-possible-and-document-live-vaccine-exclusions-and-plan-booster-erosion - [[public-health/vaccination-programmes]]; pre-medication-and-infusion-reaction-plan - steroid-antihistamine-paracetamol-and-the-anaphylaxis-trolley-and-graded-rate-and-observation-window - [[emergency-critical-care/anaphylaxis]], [[surgery/anaesthesia-pain]]-adjacent-drug-safety; counselling - the-B-cell-depletion-and-3-12-months-hypogammaglobulinaemia-infection-trajectory-and-the-fever-phone-now-card-and-the-fertility-and-blood-product-and-travel-implications - [[clinical-skills/communication]], [[obstetrics-gynaecology/contraception-fertility]], [[blood/transfusion]]; and the PJP-prophylaxis-and-steroid-co-taper-and-monitoring-schedule-written-down with the re-dosing-strategy-by-protocol-versus-CD19-stated-and-audited - [[pharmacology/dosing-principles]], [[clinical-skills/records-handover]].**
-:::
-:::
-
-::: exercise Diagnose the drug fever {level=2}
-A lupus patient started on a new antihypertensive 6 weeks ago now has arthralgia, pleuritic pain, fever, positive ANA and anti-histone antibodies, normal complement. Name the trap and the test of cure.
-::: solution
-**Drug-induced-lupus - hydralazine-and-minoxidil-and-methyldopa-and-others-and-the-anti-TNF-and-anti-histone-with-normal-complement-and-mild-serositis-arthralgia-phenotype-versus-true-flip ([[#def-lupus]], [[#def-myositis-sjogren]]-overlap-adjacent, [[pharmacology/adverse-reactions]]): the-test-of-cure-is-withdrawal-and-time - stop-the-culprit-with-prescriber-communication-and-document-the-class-avoidance-and-observe-gradual-resolution-over-weeks-months - [[clinical-skills/patient-safety]], [[clinical-skills/records-handover]]; the-don't-miss - that a real SLE can coexist-or-be-unmasked-and-renal-and-CNS-disease-say-look-again-and-the-anti-TNF-induced-lupus-has-its-own-anti-dsDNA-flavour-and-steroids-may-be-needed-for-symptoms-while-waiting - [[renal/filtration]], [[immunology/vaccines-immunotherapy]]; and the prescribing-hygiene lesson - the drug-list-is-part-of-the-immunological-history and the allergy-and-intolerance-record-is-a-diagnostic-instrument-for-the-next-clinician - [[clinical-skills/history-taking]], [[geriatrics-palliative/polypharmacy]].**
-:::
-:::
+The immunological mechanisms of these diseases are developed in [[immunology/autoimmunity]] and [[immunology/hypersensitivity]]. Glomerulonephritis and acute kidney injury are covered in [[renal/acute-kidney-injury]] and [[renal/chronic-kidney-disease]], interstitial lung disease and pulmonary hypertension in [[respiratory/interstitial-vascular-disease]], and thrombosis in [[blood/thrombosis-anticoagulation]]. Pregnancy in autoimmune disease is discussed in [[obstetrics-gynaecology/pregnancy-complications]], and Kawasaki disease in [[paediatrics/acute-childhood-illness]]. Skin features of lupus and dermatomyositis connect to [[musculoskeletal/skin]].
 
 ::: summary
-- Connective-tissue disease is organ-grammar: antibodies tell probabilities, but the phenotype - skin distribution, renal sediment, nailfold capillaries, spirometry trend - decides treatment.
-- Lupus needs hydroxychloroquine, the lowest possible steroid burden, organ-specific escalation on biopsy evidence, and a pregnancy plan written years ahead.
-- Antiphospholipid syndrome is thrombosis with an antibody fingerprint: warfarin where evidence lives, heparin where pregnancy happens, never ignore a positive lupus anticoagulant before surgery.
-- Systemic sclerosis kills through lung, vessel and crisis - annual HRCT-and-transfer-factor surveillance, the renal-crisis blood-pressure reflex, and never-omit the digital-ischaemia ladder.
-- Vasculitis is sized by vessel and syndromed by organ; new visual symptoms with jaw claudication are an emergency, and new foot-drop with purpura is a relapse.
-- Every immunosuppression decision is a prophylaxis decision: infection, vaccination, bone, fertility, sun, cancer screening and the taper plan.
+- Connective-tissue diseases and vasculitides are multisystem; diagnosis rests on clinical pattern plus targeted autoantibody tests.
+- The meaning of a positive antibody depends on pretest probability: a low-titre ANA in a person without specific features usually does not mean lupus. A negative ANA makes SLE very unlikely.
+- SLE affects skin, joints, serosa, blood, kidneys and brain, with ANA, anti-dsDNA, anti-Sm and low complement. Monitor urine and blood pressure for nephritis. Hydroxychloroquine is for almost everyone; minimise steroids.
+- Antiphospholipid syndrome causes thrombosis and pregnancy morbidity; antibodies must persist for 12 weeks. Warfarin, not a DOAC, after thrombosis.
+- Systemic sclerosis: limited (anti-centromere, pulmonary hypertension) versus diffuse (anti-Scl-70 with lung fibrosis; anti-RNA polymerase III with renal crisis, treated with an ACE inhibitor). Secondary Raynaud's has abnormal nailfold capillaries.
+- Dermatomyositis combines proximal weakness, typical rashes and an association with cancer; inclusion body myositis affects finger flexors and quadriceps and does not respond to immunosuppression.
+- PMR causes girdle pain and stiffness with a dramatic steroid response. GCA is an emergency: start high-dose glucocorticoids immediately and arrange fast-track assessment.
+- Vasculitis is classified by vessel size (Chapel Hill 2012). Pulmonary–renal syndrome is an emergency; ANCA-associated vasculitis is treated with glucocorticoids plus rituximab or cyclophosphamide, then maintenance.
 :::
 
 ## Exercises
 
-::: exercise Read the ANA {level=1}
-An ANA 1:640 fine-speckled turns up on a fatigue clinic blood for a well woman with two arthralgias and normal CRP. Interpret and plan.
+::: exercise Match the antibody {level=1}
+Match each antibody to its most typical association: (a) anti-centromere, (b) anti-Ro, (c) anti-PR3, (d) anti-Jo-1, (e) anti-dsDNA. Associations: granulomatosis with polyangiitis; lupus nephritis activity; congenital heart block; limited cutaneous systemic sclerosis; antisynthetase syndrome.
 ::: solution
-**ANA-is-sensitive-nonspecific-and-titre-pattern-context-decide ([[#def-lupus]], [[clinical-skills/laboratory-tests]]): the-extractable-nuclear-antigen-and-dsDNA-and-complement-and-urinalysis-reflex-only-if-suggestive-and-the-low-pretest-probability-arithmetic-that-keeps-positive-predictive-value-small-in-fatigue-clinics ([[epidemiology-ebm/diagnostic-tests]], prevalence-reasoning in [[epidemiology-ebm/measuring-disease]]); the plan - symptom-diary-and-exam-findings-must-earn-treatment-not-serology-and-one-rheumatology-opinion-if-features-accumulate-and-do-not-start-hydroxychloroquine-on-an-antibody ([[clinical-skills/clinical-reasoning]], [[pharmacology/dosing-principles]]); and the counselling - the-uncertainty-tolerance-script and the-avoid-the-patients-labelling-spiral while keeping an open door - [[psychiatry/anxiety-disorders]], [[clinical-skills/communication]].**
+(a) Anti-centromere: **limited cutaneous systemic sclerosis**. (b) Anti-Ro: **congenital heart block** (and neonatal lupus) in babies of mothers with the antibody, as well as Sjögren's disease and SLE. (c) Anti-PR3: **granulomatosis with polyangiitis**. (d) Anti-Jo-1: **antisynthetase syndrome**. (e) Anti-dsDNA: **lupus nephritis activity** (and SLE generally).
 :::
 :::
 
-::: exercise Chase the eosinophils {level=1}
-Asthma, migratory purpura, foot-drop and an eosinophil count of 4 give the likely diagnosis, the two confirmatory tests and the treatment niche.
+::: exercise Primary or secondary Raynaud's? {level=1}
+List four features that suggest Raynaud's phenomenon is secondary to an underlying disease rather than primary.
 ::: solution
-**Eosinophilic granulomatosis with polyangiitis ([[#def-vasculitis]]): ANCA-for-MPO-positivity-in-a-minority-and-tissue-biopsy-or-nerve-conduction-and-imaging-and-echo-for-cardiac-involvement-and-the-differential-of-parasites-and-drugs-and-hypereosinophilic-syndrome-and-lymphocyte-variant-haematology - parasites in [[microbiology/fungi-parasites]] and [[infectious-diseases/tropical-infections]], [[blood/leukaemia]], [[nervous-system/motor-systems]], [[cardiovascular/heart-failure]]; treatment - glucocorticoid-backbone-with-steroid-sparing-and-mepolizumab-or-rituximab-and-cyclophosphamide-for-severe-organ-involvement-and-the-ANCA-negative-eosinophilic-phenotype-management - [[respiratory/asthma-copd]], [[immunology/vaccines-immunotherapy]].**
+Any four of: onset after about age 30; asymmetrical attacks; digital ulcers, pitting scars or gangrene; abnormal nailfold capillaries (dilated loops, dropout); a positive ANA or specific antibodies; other features of connective-tissue disease (skin thickening, arthritis, rash, dysphagia); raised inflammatory markers; attacks that are very severe or painful; and a relevant drug or occupational history (vibrating tools).
 :::
 :::
 
-::: exercise Treat the crisis {level=2}
-A diffuse-SSc patient on prednisolone 30 mg presents with BP 188/105, headache, visual blur, creatinine doubled in a week, mild thrombocytopenia. Name it and manage it.
+::: exercise Predictive value of a test {level=1 check="round(100*0.02*0.98/(0.02*0.98+0.98*0.05))"}
+In a rheumatology clinic, a test has a sensitivity of 98% and a specificity of 95% for a disease whose pretest probability among the people tested is 2%. Calculate the positive predictive value, as a percentage rounded to the nearest whole number.
 ::: solution
-**Scleroderma renal crisis - the-steroid-precipitant-dose-threshold-aware-clinic ([[#def-aps-scleroderma]]): immediate-ACE-inhibitor-captopril-titrated-as-the-life-saving-answer-even-as-creatinine-continues-to-climb-and-avoid-the-reflex-to-stop-it-for-the-number and the ICU-renal-and-ophthalmology-and-neuro-review-for-encephalopathy-and-dialysis-contingency-planning - [[renal/acute-kidney-injury]], [[cardiovascular/hypertension]], [[nervous-system/stroke]], [[emergency-critical-care/critical-care]]; the drug-history review - tapering-the-steroid-strategy-and-avoiding-angiogenic-inhibitor-and-erythropoietin-misfires-and-transfusion-caution-thrombotic-microangiopathy-overlap-and-plasma-exchange-for-TMA-variant-debates - [[blood/haemostasis-bleeding]], [[blood/transfusion]]; the honest prognosis talk - dialysis-dependence-and-recovery-window-and-renal-transplant-outcomes-in-SSc and the future-pregnancy-and-chemo-and-radiotherapy-planning-implications - [[renal/chronic-kidney-disease]], [[immunology/transplant-tumour-immunology]], [[obstetrics-gynaecology/pregnancy-complications]].**
+Using [[#eq-ppv]] with $p = 0.02$: PPV $= (0.98 \times 0.02)/(0.98 \times 0.02 + 0.05 \times 0.98) = 0.0196/(0.0196 + 0.049) = 0.0196/0.0686 \approx 0.286$, so **29%**. Even with a specificity of 95%, most positive results are false positives when the pretest probability is 2%.
 :::
 :::
 
-::: exercise Plan the pregnancy {level=2}
-A 31-year-old with quiescent SLE, prior nephritis, Ro-and-La-positive, on hydroxychloroquine and low-dose prednisolone, asks "can I have a baby?". Structure the answer.
+::: exercise Aching shoulders {level=2}
+A 71-year-old man has had six weeks of pain and stiffness in both shoulders and hips, worse in the mornings for two hours. He struggles to get out of bed. Muscle strength is normal when tested. ESR is 58 mm/h and CRP 36 mg/L. (a) What is the most likely diagnosis? (b) Which three symptoms would you ask about specifically, and why? (c) What tests should be done before starting treatment?
 ::: solution
-**The-timing-gate ([[#def-lupus]]): six-twelve-months-quiescent-disease-and-renal-function-stable-and-proteinuria-low-and-blood-pressure-controlled-off-ACE-inhibitors-before-trying and the pre-conception-medication-audit - continue-hydroxychloroquine-and-taper-prednisolone-and-stop-mycophenolate-and-methotrexate-and-cyclophosphamide-history-and-folate - [[renal/chronic-kidney-disease]], [[obstetrics-gynaecology/pregnancy-antenatal]], [[pharmacology/patient-variation]]; the antibody-specific risks - anti-Ro-La-and-neonatal-lupus-and-congenital-heart-block-with-serial-fetal-echo-and-the-fluoride-free-dexamethasone-adjacent-decision-and-APS-antibodies-and-LMWH-plus-aspirin-if-positive - [[cardiovascular/arrhythmias]], [[blood/thrombosis-anticoagulation]]; the multidisciplinary labour plan - serial-mum-and-baby-surveillance-and-pre-eclampsia-differentiation-and-flare-versus-pre-eclampsia-and-steroid-and-hydroxychloroquine-through-lactation-and-contraception-plan-after - [[obstetrics-gynaecology/pregnancy-complications]], [[obstetrics-gynaecology/postnatal-period]], [[obstetrics-gynaecology/contraception-fertility]]; and the psychological-and-partner-inclusive-counselling-with-real-numbers-not-catalogues-of-disaster - [[psychiatry/anxiety-disorders]], [[clinical-skills/communication]].**
+(a) **Polymyalgia rheumatica**.
+
+(b) Ask about **headache**, **jaw claudication** and **visual disturbance** (and scalp tenderness), because giant cell arteritis coexists in a significant minority and changes management: it needs urgent, higher-dose glucocorticoids and fast-track assessment.
+
+(c) Tests to exclude mimics: full blood count, renal and liver function, calcium, thyroid function, **creatine kinase** (to exclude myositis), protein electrophoresis (myeloma), urinalysis, and often rheumatoid factor or anti-CCP and a chest X-ray. Treatment is then a moderate dose of prednisolone with a slow taper and bone protection; failure to respond within about a week should prompt reconsideration of the diagnosis.
 :::
 :::
 
-::: exercise Sort the pulmonary-renal syndrome {level=2}
-A patient arrives with haemoptysis and creatinine doubled in 5 days with RBC casts. Give the three diagnoses that must be excluded in hours and the tests.
+::: exercise Anticoagulation in APS {level=2}
+A 39-year-old woman with a first unprovoked deep vein thrombosis is found to have lupus anticoagulant, anticardiolipin and anti-β2-glycoprotein I antibodies, all confirmed again 14 weeks later. She asks to take a direct oral anticoagulant because it needs no blood tests. What would you advise, and why?
 ::: solution
-**ANCA-associated-vasculitis-versus-anti-GBM-disease-versus-severe-lupus - and-coags-coagulopathic-pulmonary-haemorrhage-differential ([[#def-vasculitis]], [[#def-lupus]]): urgent-FBC-creatinine-urine-microscopy-cast-count-ANCA-and-anti-GBM-and-ANA-dsDNA-complement-coagulation-and-ABG-and-CT-thorax-and-serial-Hb-and-consider-bronchoscopy-for-infection-and-other-bleeding-sources - [[renal/acute-kidney-injury]], [[respiratory/gas-exchange]], [[clinical-skills/medical-imaging]], [[microbiology/bacteria]]; treat-early - high-dose-steroid-and-plasma-exchange-decisions-for-anti-GBM-and-selected-severe-ANCA-and-renal-biopsy-when-safe-and-platelet-corrected - the renal biopsy pathway in [[renal/acute-kidney-injury]] and [[clinical-skills/medical-imaging]]; the ICU-collaboration-and-dialysis-and-ventilation-decisions - [[emergency-critical-care/airway-ventilation]], [[renal/chronic-kidney-disease]]; and the do-not-miss secondary layer - endocarditis-and-pulmonary-embolism-and-lung-cancer-and-drug-and-cocaine-levamisole-vasculitic-mimics - [[cardiovascular/valve-congenital-disease]], [[psychiatry/substance-use]], [[blood/haemostasis-bleeding]].**
+She has **antiphospholipid syndrome** with **triple positivity**, which carries the highest thrombotic risk. Current guidance advises **long-term warfarin** (with INR monitoring) rather than a direct oral anticoagulant, because a randomised trial in high-risk (triple-positive) APS comparing rivaroxaban with warfarin was stopped early owing to an excess of thrombotic events, mainly arterial, in the rivaroxaban group. She should also have pregnancy planning advice: warfarin is teratogenic, so she would switch to low-molecular-weight heparin (with low-dose aspirin) under specialist care before or as soon as pregnancy is confirmed.
 :::
 :::
 
-::: exercise Design a vasculitis service {level=3}
-Build the regional vasculitis pathway from community presentation through maintenance, with equity and safety auditing.
+::: exercise Weak hands in an older man {level=2}
+A 69-year-old man has had slowly progressive difficulty gripping and climbing stairs for three years. Examination shows weakness of the finger flexors and quadriceps, worse on the left. CK is mildly raised. He was given prednisolone for presumed polymyositis with no improvement. What is the most likely diagnosis, and why does it matter?
 ::: solution
-**Front-door-speed - the-GCA-red-flag-same-day-steroid-and-24-48h-biopsy-or-ultrasound-lambda-clinic-and-the-ED-pulmonary-renal-bundle-with-rheumatology-renal-ICU-access-rules-and-public-and-pharmacy-awareness-campaign-evaluation-for-visual-loss-avoidance - [[nervous-system/sensory-systems]], [[emergency-critical-care/acute-assessment]], [[public-health/prevention-promotion]]; the-curriculum - induction-and-maintenance-protocols-with-rituximab-and-cyclophosphamide-and-avacopan-adjacent-decision-trees-and-prophylaxis-bundles-co-trimoxazole-and-bone-and-glucose-and-infection-and-vaccination-and-a-day-unit-infrastructure - [[pharmacology/dosing-principles]], [[immunology/vaccines-immunotherapy]], [[infectious-diseases/immunocompromised-host]], [[public-health/vaccination-programmes]]; the-organ-interface - nephrology-biopsy-and-dialysis-and-transplant-pathways-and-neurology-nerve-conduction-and-ICU-alveolar-haemorrhage-and-ophthalmology-and-rheumatology-joint-clinics-and-fertility-preservation-at-first-cyclophosphamide-discussion - renal interfaces in [[renal/chronic-kidney-disease]], [[obstetrics-gynaecology/contraception-fertility]]; the-survivorship - relapse-safety-net-and-flare-cards-and-the-steroid-total-and-damage-indices-and-cancer-and-cardiovascular-and-mental-health-long-conditions-review-and-pregnancy-planning-clinic-and-the-annual-review-of-vessel-imaging-when-indicated - [[endocrine/adrenal]], [[psychiatry/mood-disorders]], [[cardiovascular/circulation-blood-pressure]]; and-the-equity-and-audit - referral-interval-stratified-by-deprivation-and-rural-distance-and-ethnicity-outcome-gaps-in-renal-survival-and-the-death-and-visits-and-blind-and-dialysis-starts-review-board - [[public-health/determinants-inequalities]], [[public-health/health-systems-economics]], [[epidemiology-ebm/measuring-disease]], [[clinical-skills/patient-safety]].**
+The most likely diagnosis is **inclusion body myositis**: onset over 50, more common in men, slowly progressive, often asymmetrical weakness of the **finger flexors** and **quadriceps**, a modestly raised CK, and **no response to glucocorticoids**. Muscle biopsy (rimmed vacuoles, inflammation, protein aggregates) and antibodies (anti-cN1A in some) support it. It matters because immunosuppression does not help and causes harm, so steroids should be withdrawn; management is physiotherapy, falls prevention, assessment of swallowing (dysphagia is common) and supportive care.
+:::
+:::
+
+::: exercise Classify the vasculitis {level=3}
+For each case, name the most likely vasculitis and the vessel size: (a) a 6-year-old with palpable purpura on the buttocks and legs, knee pain and colicky abdominal pain after a sore throat; (b) a 3-year-old with five days of fever, bilateral non-purulent conjunctivitis, cracked red lips, a rash and swollen hands; (c) a 28-year-old woman with arm claudication, unequal blood pressures and a bruit over the subclavian artery; (d) a 45-year-old with hepatitis B, testicular pain, foot drop and new hypertension, with ANCA negative.
+::: hint
+Use the table in [[#def-vasculitis]] together with age and associated features.
+:::
+::: solution
+(a) **IgA vasculitis** (Henoch–Schönlein purpura): small-vessel, immune-complex. Check urine and blood pressure for nephritis.
+
+(b) **Kawasaki disease**: medium-vessel. It needs urgent paediatric treatment with intravenous immunoglobulin and aspirin, and echocardiography for coronary artery aneurysms.
+
+(c) **Takayasu arteritis**: large-vessel, typically in young women.
+
+(d) **Polyarteritis nodosa**: medium-vessel, classically associated with hepatitis B; it causes mononeuritis multiplex, renal artery involvement with hypertension, and testicular pain, and is ANCA negative. Antiviral treatment is part of management.
+:::
+:::
+
+::: exercise Interpret the results {level=3}
+A 66-year-old woman with two weeks of malaise, arthralgia and breathlessness has: haemoglobin 92 g/L (was 128 three weeks ago), creatinine 340 µmol/L, urine dipstick 3+ blood and 2+ protein, chest X-ray with bilateral alveolar shadowing, MPO-ANCA strongly positive, anti-GBM negative, ANA negative, complement normal. (a) What syndrome is this? (b) What is the most likely diagnosis? (c) What explains the fall in haemoglobin? (d) What are the immediate priorities?
+::: hint
+Put the lung and kidney findings together, then use the antibody results to choose between the causes of that syndrome.
+:::
+::: solution
+(a) **Pulmonary–renal syndrome**: glomerulonephritis (rapidly rising creatinine with haematuria and proteinuria) plus alveolar shadowing.
+
+(b) **Microscopic polyangiitis**, an MPO-ANCA-associated vasculitis. Anti-GBM disease is less likely with a negative anti-GBM test, and normal complement and negative ANA argue against lupus.
+
+(c) **Diffuse alveolar haemorrhage**: bleeding into the alveoli causes the shadowing and the fall in haemoglobin, even without obvious haemoptysis. Anaemia of kidney disease and inflammation may contribute.
+
+(d) Priorities: assess and support **oxygenation** (she may need high-level respiratory support); urgent referral to the renal and vasculitis teams; exclude infection; **kidney biopsy** when safe; and prompt **induction treatment** with high-dose glucocorticoids plus rituximab or cyclophosphamide, with plasma exchange considered for severe kidney involvement or alveolar haemorrhage according to specialist guidance. Dialysis may be needed. Delay costs kidney function and life.
 :::
 :::

@@ -1,154 +1,340 @@
-A fracture is a materials-failure event in living tissue, and everything that follows - healing, complications, rehabilitation - is the same three questions: **is the bone in the right place, is it stable enough to heal there, and is the patient's biology and body prepared to do the healing.** Orthopaedic judgement is knowing which of the three is the binding constraint.
+A fracture is a break in the continuity of a bone. Fractures are among the commonest injuries seen in emergency departments, and they occur in two very different populations. Young adults break bones in high-energy injuries such as road traffic collisions, falls from height and sport. Older adults, mostly women with osteoporosis, break them in low-energy falls from standing height. Both groups need the same core knowledge: how to describe a fracture precisely, how bone heals, how the healing environment is controlled by treatment, and which complications threaten the limb or the life.
 
-This chapter covers fracture biology and classification, healing, management principles, complications, and the pattern-recognition list of fractures that dominate practice.
+This chapter builds on bone structure and remodelling from [[musculoskeletal/bones-joints]] and on the general biology of repair in [[pathology/chronic-inflammation-repair]]. The operative detail belongs to [[surgery/orthopaedics]] and the management of the severely injured patient to [[surgery/trauma]].
 
-## The failure and its description
+## Describing a fracture {#sec-describe}
 
-::: definition Fracture mechanics and classification {#def-classification}
-**Materials logic (bone's anisotropic composite - strong in compression, weaker in tension and shear - explains the classic morphologies: transverse from bending, oblique-spiral from torsion, comminuted from compression-and-shatter, avulsion where tendon-beats-bone, and stress-fracture from fatigue-loading-below-failure-strength-repeated-over-thousands-of-cycles in the run-up-or-march-up or the osteoporotic-or-atherosclerotic-insufficient-bone - the fracture-risk-and-bone-quality context in [[endocrine/bone-calcium]], the exercise-biology in [[physiology/muscle]]); energy transfer and the injury patterns it writes (low-energy-falls-in-the-elderly-at-hip-and-wrist-and-vertebra, high-energy-motorcycle-and-fall-from-height patterns with their associated-injury-hunt - the pelvis-spine-chest-head-audit of major trauma - [[surgery/trauma]], [[emergency-critical-care/major-incidents]]; and the non-accidental injury question in children and the dependent adult - the fracture-patterns-out-of-developmental-context and the delayed-presentation-inconsistency story, with the safeguarding duty that outranks diagnostic discomfort - [[paediatrics/safeguarding]], the elder-abuse disclosure ethics in [[medical-ethics-law/confidentiality]]). Classification as communication (the open-versus-closed-first-question - Gustilo-and-Anderson grading of open wounds and its debridement-timing-and-antibiotic-and-tetanus imperatives - [[#def-open]]-below and [[infectious-diseases/healthcare-infections]]; intra-articular-versus-extra-articular because joint-surface-step-and-gap predict post-traumatic osteoarthritis - [[musculoskeletal/osteoarthritis]]; complete-versus-incomplete-and-greenstick-and-torus in children, physeal Salter-Harris types with their growth-arrest risk and the paediatric-remodelling-forgiveness that changes acceptable alignment - [[paediatrics/acute-childhood-illness]], [[musculoskeletal/fractures]]-physeal-rows; pathologic-through-lesion fractures with the myeloma-and-metastasis-and-Paget-and-osteoid-osteoma-and-fibrous-dysplasia hunt - [[blood/lymphoma-myeloma]], [[pathology/cancer-diagnosis]], [[endocrine/bone-calcium]]-Paget-row, benign-lesion biology in [[pathology/cancer-biology]]; and the radiographic literacy that describes site, alignment, translation, angulation, rotation and articular involvement - [[clinical-skills/medical-imaging]], [[surgery/orthopaedics]]).)**
+A fracture description should let a colleague who has not seen the X-ray picture it accurately over the telephone. Describing fractures in a fixed order makes this reliable.
+
+::: definition Describing a fracture {#def-description}
+A full description includes:
+
+1. **The patient and the image**: name, age, date, which X-ray views, and which side.
+2. **The bone and the site**: for a long bone, whether the fracture is in the **diaphysis** (shaft), **metaphysis** (the flared end) or **epiphysis** (the end beyond the growth plate), and whether it extends into a joint (**intra-articular**).
+3. **The pattern**:
+   - **transverse**: straight across, usually from a direct blow or bending;
+   - **oblique**: at an angle;
+   - **spiral**: winding around the shaft, from a twisting force;
+   - **comminuted**: more than two fragments;
+   - **segmental**: two separate fracture lines isolating a segment of shaft;
+   - **avulsion**: a fragment pulled off by a tendon or ligament;
+   - **impacted** or **compression**: fragments driven into each other, as in many vertebral fractures.
+4. **Displacement**, always describing the position of the **distal** fragment relative to the proximal one: **translation** (shift sideways, as a percentage of shaft width), **angulation** (in degrees, and the direction in which the apex points), **rotation**, and **shortening** or distraction.
+5. **Whether it is open or closed**. In an **open (compound)** fracture the fracture or its haematoma communicates with the outside through a wound in the skin or a mucous membrane.
+6. Any joint **dislocation**, and features suggesting an underlying bone disease.
 :::
 
-## Healing
+Some special types deserve separate names because their causes and management differ.
 
-::: definition Fracture healing biology {#def-healing}
-**Secondary (indirect) healing - the default (haematoma-and-inflammatory-phase with the neutrophil-then-macrophage-then-lymphocyte sequence and the fracture-haematoma-organisation, the soft callus intramembranous-and-endochondral phase with chondroblastic cartilage template, hard-callus mineralisation, and remote remodelling with trabecular reorientation along stress lines over months-to-years - the cell-and-signal orchestration reads with [[cell-biochemistry/signalling-cell-cycle]], [[pathology/chronic-inflammation-repair]], and the BMP-and-Wnt-and-RANKL signalling mentioned in [[endocrine/bone-calcium]]); primary (direct) healing - the surgical variant (rigid-compression-fixation cutting osteon-by-osteon directly across the without callus, and why "the callus you don't see" is not better healing but different mechanics - stability-shared-between-implant-and-bone - [[surgery/orthopaedics]]). The biology of the parts (periosteal-and-endosteal stem-cell pools, the mechanosensitive callus that needs micromotion-within-stability-not-motion-within-instability, the vascular-ingrowth prerequisite that makes soft-tissue-envelope-preservation a healing-strategy and open-fracture-and-replacement-arthroplasty-and-plate-versus-nail choices healing-philosophy choices - surgical-approach biology in [[surgery/orthopaedics]]; and smoking-NICOTINE-vasoconstriction-and-oxygen-and-nutrition-protein-vitamin-C-vitamin-D-energy-and-diabetes-glycaemic-control-and-NSAID-debate-and-corticoid-and-age as the modifiable healing-input list - [[cell-biochemistry/nutrition]], [[endocrine/diabetes-complications]], [[pharmacology/adverse-reactions]], smoking cessation in [[public-health/prevention-promotion]]). Timeline expectations and monitoring (clinical-union-versus-radiographic-union-versus-remodelling with their different clocks per bone-and-age-and-blood-supply, the "expected callus by week X" review discipline and the fracture-clinic non-progression trigger for the CT-or-exchange-nailing-or-bone-graft-workup, and the reload-and-return-to-work-and-sport-chronology written in the notes because patients ask - [[clinical-skills/records-handover]], [[physiology/muscle]]).**
+- A **pathological fracture** occurs through bone weakened by disease: osteoporosis, a metastasis, myeloma, a primary bone tumour, Paget's disease or infection. A fracture after trivial force, or one through an area of abnormal-looking bone, should prompt a search for the cause.
+- A **stress fracture** results from repeated loading that outpaces remodelling, as in the metatarsals of a military recruit or the tibia of a distance runner. X-rays are often normal at first; MRI shows it early.
+- **Children's fractures** have their own patterns. A **greenstick fracture** breaks one cortex and bends the other; a **buckle (torus) fracture** is a crumpling of the metaphyseal cortex under compression. Injuries involving the growth plate (physis) are graded by the **Salter–Harris** classification: type I through the physis; type II through the physis and out through the metaphysis (the commonest); type III through the physis and out through the epiphysis into the joint; type IV crossing metaphysis, physis and epiphysis; and type V a crush of the physis. Higher types carry a greater risk of growth disturbance.
+
+Open fractures are graded by the **Gustilo–Anderson** classification, which reflects the energy of injury and the state of the soft tissues. Type I has a clean wound less than 1 cm long; type II a wound of 1 to 10 cm without extensive soft-tissue damage; and type III extensive soft-tissue damage, usually from high-energy injury. Type III is subdivided into IIIA (soft tissue can still cover the bone), IIIB (periosteal stripping, so the bone needs a flap to cover it) and IIIC (an arterial injury that needs repair). The final grade is assigned in theatre after debridement, because the true extent of damage is often greater than the wound suggests.
+
+## How fractures heal {#sec-healing}
+
+Bone is one of the few tissues that heals by regenerating itself rather than forming a scar. A healed fracture, after remodelling, can be indistinguishable from the original bone. How it heals depends on the mechanical environment in the fracture gap.
+
+::: definition Stages of secondary fracture healing {#def-healing}
+Most fractures heal by **secondary (indirect) healing**, through a callus. The stages overlap:
+
+1. **Haematoma and inflammation** (first few days). Bleeding from the bone and periosteum forms a haematoma. Platelets and inflammatory cells release cytokines and growth factors. Bone at the fracture ends, deprived of blood supply, dies back for a short distance.
+2. **Soft callus** (roughly the first two to three weeks). Granulation tissue invades the haematoma. Mesenchymal cells from the periosteum and surrounding tissue differentiate into fibroblasts and chondrocytes, forming fibrocartilage that bridges the gap. The fracture becomes "sticky" and less painful but is not yet strong.
+3. **Hard callus** (weeks to months). The cartilage is mineralised and replaced by **woven bone** through endochondral ossification, while bone also forms directly beneath the periosteum. When the callus bridges the fracture and the site is no longer tender or mobile, the fracture is **clinically united**. When bridging callus is seen across the fracture on X-ray, it is **radiologically united**.
+4. **Remodelling** (months to years). Osteoclasts and osteoblasts replace woven bone with **lamellar bone** and reshape the bone along the lines of stress. In children, remodelling can correct substantial angulation, especially near a growth plate and in the plane of joint movement; it does not correct rotation.
+
+In **primary (direct) healing**, which happens only when the fragments are anatomically reduced and rigidly compressed (for example with a compression plate), cutting cones of osteoclasts and osteoblasts cross the fracture line directly and no callus forms.
 :::
 
-::: example The hip fracture that is a medical admission {#ex-nof}
-An 81-year-old woman lives alone, walks with a frame, takes 9 medicines, mild dementia, no chest pain but a new irregular-rhythm ECG, sustained a ground-level fall in her kitchen, short externally-rotated leg, cannot weight-bear, Na 131, Hb 108, eGFR 48, temp 36.9.
+Why some fractures form callus and others heal directly is explained by the strain in the gap.
+
+::: theorem Interfragmentary strain {#thm-strain}
+**Strain** is the relative change in length of the tissue in a fracture gap: if the gap has width $L$ and the fragments move by $\Delta L$ under load, then
+
+$$\varepsilon = \frac{\Delta L}{L}.$$ {#eq-strain}
+
+A tissue can form in the gap only if it can tolerate the strain there. According to Perren's strain theory, granulation tissue tolerates very high strain (up to about 100%), cartilage and fibrous tissue intermediate strain (roughly 10%), and bone very little (about 2%). Healing therefore needs the strain to fall step by step: each tissue that forms stiffens the gap and lowers the strain enough for the next one.
+:::
+
+::: proof
+With **absolute stability** (anatomical reduction and compression), movement and therefore strain stay below about 2%, so bone can form directly without a callus. With **relative stability** (a cast, an intramedullary nail or a bridging plate), some movement occurs. Strain in the range of a few per cent up to about 10% stimulates callus, which widens the effective cross-section and stiffens the fracture, progressively reducing strain until woven bone can form. If strain stays too high, only granulation or fibrous tissue survives and the fracture may fail to unite.
+
+The formula also explains a counter-intuitive point. For the same movement, a **narrow** gap has **higher** strain than a wide one. A simple fracture with a 1 mm gap that is allowed to move by 0.3 mm has a strain of 30%, too high for bone. The same movement in a comminuted fracture, where load is shared across a longer zone, gives a lower strain. This is why simple fractures are usually fixed with absolute stability and comminuted fractures with relative stability, and why a small amount of movement in a simple fracture fixed with a plate that is not quite rigid can lead to nonunion.
+:::
+
+::: widget plot
+f: 100*d/x
+x: 0.2, 5
+y: 0, 60
+sliders: d=0.1:0.02:0.6:0.02
+hlines: 2; 10
+labels: \text{strain (\%) for movement } d \text{ mm}
+title: Interfragmentary strain and gap width
+caption: Strain $\varepsilon = \Delta L / L$ for a given movement $d$ (in mm) across gaps from 0.2 to 5 mm. The lines at 2% and 10% mark the approximate tolerance of bone and of cartilage or fibrous tissue in Perren's theory ([[#thm-strain]]). Small gaps with movement sit far above both lines. A simplified teaching model; real fractures have uneven gaps and loads.
+:::
+
+Healing time depends on the bone, the patient and the injury. A rough rule (Perkins' rule) is that a spiral fracture of an upper-limb long bone in an adult unites in about six weeks, a transverse fracture takes twice as long, and lower-limb fractures take twice as long again; children heal much faster. Healing is slower with:
+
+- **poor blood supply**: high-energy injury with stripping of soft tissues, and sites with precarious supply such as the scaphoid, the femoral neck and the talus;
+- **too much or too little movement** (see [[#thm-strain]]);
+- **infection**;
+- **patient factors**: older age, smoking, diabetes, malnutrition, peripheral vascular disease and some drugs (long-term corticosteroids; the effect of NSAIDs on healing is debated and they are often avoided in fractures at high risk of nonunion).
+
+::: example Strain in a plated fracture {#ex-strain}
+A transverse fracture of the radius is fixed with a plate. Because the plate is not well compressed, the fracture gap is 1.0 mm and moves by 0.3 mm with each forearm movement. A comminuted fracture of the femoral shaft, fixed with an intramedullary nail, has an effective gap of 3.0 mm and moves by 0.05 mm under the same conditions. Calculate the strain in each and predict how each will heal.
 ::: solution
-**Neck-of-femur fracture until proven otherwise and an orthogeriatric service by name ([[musculoskeletal/fractures]], [[surgery/orthopaedics]]): the immediate bundle is analgesia-with-fascia-iliaca-block-and-oxygen-and-fluids-and-pressure-area-and-VTE-risk-calculation-not-treatment-yet-and-do-not-triage-her-to-a-corridor-trolley-for-six-hours ([[emergency-critical-care/acute-assessment]], [[blood/thrombosis-anticoagulation]], [[surgery/anaesthesia-pain]]); the surgery decision (displaced-intracapsular-arthroplasty-versus-undisplaced-fixation logic and the low-threshold-implant-choice-conversation for the community-ambulator-versus-the-housebound-with-cognitive-impairment - the same decision written as prosthesis-type in the dictation); the medical co-management that runs in parallel, not before theatre (the new-arrhythmia-rate-and-anticoagulation-and-treat-the-cause-and-operate-today-or-tomorrow-not-next-week decision, the hyponatraemia-cause-sweep including the thiazide, the AKI-hydration-review, the delirium-prevention-pack, the medication-reconciliation, the falls-and-bone-workup and the discharge-destination-planning-that-starts-on-admission - [[cardiovascular/arrhythmias]], [[renal/water-sodium]], [[geriatrics-palliative/delirium-dementia-care]], [[geriatrics-palliative/polypharmacy]], [[geriatrics-palliative/falls]], [[endocrine/bone-calcium]]); the outcome numbers worth quoting to families (the one-year-mortality-and-independent-ambulation-baselines and why early surgery and geriatric co-management and rehab-and-refracture-prevention each move them - [[public-health/health-systems-economics]], [[epidemiology-ebm/measuring-disease]]); and the fracture-liaison-service-that-must-catch-her-after-discharge - her second hip is the next quality indicator - [[endocrine/bone-calcium]].**
+Using [[#eq-strain]]:
+
+- Radius: $\varepsilon = 0.3/1.0 = 0.30$, or **30%**. This is far above the tolerance of bone (about 2%) and of cartilage (about 10%). Only granulation and fibrous tissue can survive, so the fracture is at risk of **nonunion**. The fix needed is more stability: compression of the fracture so that the gap and the movement both approach zero.
+- Femur: $\varepsilon = 0.05/3.0 \approx 0.017$, or about **1.7%**. This is low enough for bone to form; callus will form where strain is higher at the edges, and the fracture would be expected to unite.
+
+The point is that stability must be matched to the fracture pattern: absolute stability for simple fractures, relative stability for comminuted ones.
 :::
 :::
 
-## Management principles and complications
+## Principles of management {#sec-management}
 
-::: definition The three-question plan: reduce, hold, move {#def-management}
-**Reduction (restoring-length-rotation-alignment-articular-congruity - by closed-manipulation-with-sedation-or-haematoma-block-analgesia-versus-open-with-anatomical-plates-versus-indirect-with-nails-and-external-frames-for-damage-control-and-comminuted-work - the timing rules - dislocation-hours-matter-for-hip-prosthesis-and-native-shoulder-AVN-risk, open-fracture-hours-matter-for-infection, and swollen-limb-compartment-risk - [[surgery/orthopaedics]], [[#def-open]]-below, and the conscious-sedation-airway-safety of ED reduction - [[emergency-critical-care/airway-ventilation]]); holding (cast-and-splint-and-brace-versus-plates-and-rods-and-nails-and-external-fixators-and-what-each-implant-does-and-doesn't-share-with-the-load-and-its-removal-and-stress-shielding-and-infection-and-implant-failure-later-life-and-metal-and-MRI-questions - [[surgery/orthopaedics]]-implant-rows, [[musculoskeletal/bones-joints]]-mechanics, [[blood/haemostasis-bleeding]]-anticoagulation-perioperative-bridging-with-surgery-medicine-[[surgery/perioperative-care]]); moving (the rehabilitation contract - joint-surface-protection-versus-stiffness-prevention with controlled-motion-protocols, the weight-bearing-status-written-clearly-and-read-back-and-the-mobility-aid-and-OT-and-physio-prescription, the contralateral-limb-and-core-and-confidence-and-home-exercise-program, and the fall-prevention-and-bone-and-smoking-and-nutrition-interventions bundled into the same clinic visit - [[physiology/muscle]], [[geriatrics-palliative/falls]], [[gastrointestinal/clinical-nutrition]]). The follow-up system (fracture-clinic-and-cast-check-and-serial-radiograph-protocols-and-the-nonunion-pathway-and-the-implant-removal-questions-and-the-driving-and-return-to-work-and-sport-certification-traffic - [[clinical-skills/records-handover]], the fitness-to-drive guidance traffic ([[endocrine/diabetes-complications]] driving rows)).**
+Fracture management begins with the whole patient. A person with a dramatic limb injury may have a hidden head, chest or abdominal injury that will kill them first. The structured primary survey (airway with cervical spine protection, breathing, circulation with haemorrhage control, disability and exposure) comes before the limb ([[emergency-critical-care/acute-assessment]] and [[surgery/trauma]]). Pelvic and femoral fractures can each lose a litre or more of blood.
+
+For the limb itself:
+
+1. **Assess** the skin, the circulation and the nerves distal to the injury, and **document** the findings before and after any manipulation.
+2. **Relieve pain** and **splint** the limb. Straightening a grossly deformed limb and splinting it reduces pain and bleeding and can restore circulation.
+3. **Image** correctly: at least two views at right angles, including the joints above and below the fracture.
+4. Then follow the classic sequence: **reduce** (if displacement is unacceptable), **hold** (maintain the reduction until union), and **rehabilitate** (restore movement, strength and function).
+
+Not every fracture needs reduction. Displacement is accepted when it will remodel or will not affect function, such as many fractures of the clavicle or of the metacarpal neck of the little finger. Intra-articular fractures, on the other hand, usually need accurate reduction because a step in the joint surface leads to osteoarthritis.
+
+::: definition Methods of holding a fracture {#def-fixation}
+- **Non-operative**: slings, casts (plaster of Paris or fibreglass), splints and **functional braces** that allow joints to move. Most fractures in children and many in adults are treated this way.
+- **Traction**: pulling along the limb to align fragments, now used mainly as a temporary measure.
+- **Internal fixation**:
+  - **screws** and **plates**, which can give absolute stability (compression plating) or relative stability (bridging plating);
+  - **intramedullary nails**, inserted down the medullary canal, the standard for many femoral and tibial shaft fractures; they share load with the bone and allow early weight-bearing;
+  - **wires** and tension bands for small fragments.
+- **External fixation**: pins or wires in the bone connected to a frame outside the skin. It is used for severe open fractures, as temporary "damage control" in an unstable patient, and in limb reconstruction.
+- **Joint replacement (arthroplasty)**: when the fracture has destroyed the joint or its blood supply, as in many displaced femoral neck fractures in older people.
 :::
 
-::: definition Complications, early and late {#def-complications}
-**Early, local (compartment syndrome with its full logic in [[musculoskeletal/bones-joints]]; joint damage from dislocation-or-intra-articular-fragments; avascular necrosis where blood-supply-anatomy-predicts-the-disaster - femoral-neck-and-head, scaphoid-pole, talus, tibial-plateau, with the head-preserving-versus-replacement consequences - [[surgery/orthopaedics]] and the AVN differential - sickle-and-steroid-and-alcohol - [[blood/haemoglobin-disorders]], [[endocrine/adrenal]], [[psychiatry/substance-use]]; nerve-and-tendon-injuries-iatrogenic-or-primary-with-documentation-before-splinting - shoulder-abaxillary-neck, humeral-spiral-nerve, fibular-neck, wrist-and-carpal-tunnel-acute - [[nervous-system/motor-systems]], [[anatomy/back-upper-limb]], [[anatomy/lower-limb]]; vascular injury with the knee-dislocation-and-pelvic-and- Supracondylar-artery-legs - [[surgery/vascular-urological-surgery]]). Early, systemic (fat embolism syndrome after long-bone and pelvic fractures with the hypoxaemia-confusion-petechiae triad and supportive-ventilation care and the early-fixation-prevention argument - [[respiratory/respiratory-failure]], [[surgery/trauma]]; VTE after lower-limb-immobilisation, hip and pelvic and major orthotrauma with the risk-stratified prophylaxis arithmetic - [[blood/thrombosis-anticoagulation]], [[surgery/perioperative-care]]; pneumonia, pressure injury, deconditioning, rhabdomyolysis-AKI and the delirium-and-drug-toxicity-in-the-older-fracture patient - [[geriatrics-palliative/delirium-dementia-care]], [[renal/acute-kidney-injury]], [[respiratory/respiratory-infections]]). Late (malunion and nonunion - the mechanical-stability-biology-mechanical-insult-and-infection-reasons and the exchange-nailing-and-bone-grafting-and-biologic-augmentation answers - [[#def-healing]]; chronic osteomyelitis with its sequestrum-involucrum-sinus anatomy, the diabetic-foot-and-prosthetic-joint variants and the long-culture-directed-antibiotics-and-debridement-surgery pairing - [[microbiology/bacteria]], [[endocrine/diabetes-complications]], [[surgery/orthopaedics]]; post-traumatic osteoarthritis at the price of every intra-articular step - [[musculoskeletal/osteoarthritis]]; complex regional pain syndrome - the disproportionate-pain-allodymy-oedema-sweating-colour-change-with-early-pain-control-and-move-it-and-avoid-disuse logic and the diagnostic-criteria-realism and the specialist referral before the chronicity cliff - [[surgery/anaesthesia-pain]], [[psychiatry/anxiety-disorders]]; and implant problems years on - loosening, periprosthetic fracture and metal-reactive and infection-low-grade-presentations - [[surgery/orthopaedics]], [[immunology/hypersensitivity]]). The open fracture addendum below {#def-open-link}.**
-:::
+### Open fractures
 
-::: definition The open fracture and the degloving-adjacent soft-tissue emergency {#def-open}
-**Why open fractures reorder the day (skin-is-organ: communication from the outside world converts a mechanical injury into a contamination-and-desiccation-and-infection problem and the evidence base is wound-debridement-and-irradiation-not-orthopaedics alone - [[infectious-diseases/healthcare-infections]], [[microbiology/bacteria]]); the first-hours bundle (early-broad-spectrum-antibiotics-with-the-soil-and-farm-and-timber-and-water-variations-within-days-not-weeks and the tetanus-booster-or-immunoglobulin-check against a documented history - [[public-health/vaccination-programmes]], [[microbiology/viruses]]-clostridial-neighbours; photograph-and-remove-foreign-bodies-and-sterile-saline-soaked-dressing-and-splint-and-do-not-probe-wound-in-ED-and-do-not-close-the-wound-yourself decisions - [[emergency-critical-care/acute-assessment]]; and the operative lavage-and-debridement-clock with the second-look culture-and-excision-discipline and the skeletal-stabilisation-sequencing - [[surgery/orthopaedics]], [[surgery/perioperative-care]]). The soft-tissue coverage question (the degloving and crush and compartment-adjacent injuries where the plastic-surgery-decision tree is viability-and-zone-of-injury-and-flap-versus-graft-versus-negative-pressure-versus-healing-by-intention and the amputation-versus-salvage-conversation with its functional-score-and-early-prosthetic-planning honesty - [[surgery/wounds-surgical-infection]]-flap-adjacent, [[surgery/orthopaedics]]; the mangled-extremity-team-timing that decides whether the limb is a resource or a liability; and the long psychological-and-occupational-recovery after salvage-or-amputation with peer-support and prosthetics - [[psychiatry/mood-disorders]], rehabilitation-services realism from [[public-health/health-systems-economics]]).**
-:::
+An open fracture is a surgical emergency because bacteria have reached the bone. In the UK, the British Orthopaedic Association Standards for Trauma (BOAST) on open fractures (2017) set out the main steps, which most systems follow in similar form:
 
-::: example The wrist that was "just a fall" {#ex-scaphoid}
-A 19-year-old falls on an outstretched hand playing football; snuffbox tenderness and pain on axial thumb compression; initial three-view wrist X-ray normal; he wants to "get it out of the way" before exams.
+- intravenous **antibiotics** as soon as possible, ideally **within one hour** of injury, according to the local protocol;
+- **tetanus** status checked and prophylaxis given if needed;
+- the wound **photographed**, gross contamination removed, and the wound covered with a saline-soaked dressing; the limb splinted and the neurovascular status rechecked;
+- **surgical debridement** (removal of dead and contaminated tissue) by senior orthopaedic and plastic surgeons together: immediately for highly contaminated wounds (for example agricultural or sewage contamination) or vascular compromise, within 12 hours for other high-energy injuries, and within 24 hours for other low-energy open fractures;
+- definitive fixation and soft-tissue cover planned jointly by the orthopaedic and plastic surgical ("orthoplastic") team.
+
+::: example An open tibial fracture {#ex-open}
+A 32-year-old motorcyclist arrives after a collision. After the primary survey shows no life-threatening injury, the left leg is angulated mid-shaft with a 4 cm wound over the shin through which bone is visible. The foot is pale and cool with no palpable pulses; sensation is reduced on the sole. How should this be managed?
 ::: solution
-**Scaphoid injury until proven otherwise, because the missed one is a lawsuit and a lifetime of wrist pain ([[musculoskeletal/fractures]], [[surgery/orthopaedics]]): the anatomy that explains everything (retrograde-blood-supply and the nonunion-and-AVN-of-the-proximal-pole consequence and why this is the fracture you treat-on-suspicion with immobilisation-and-repeat-imaging-or-MRI-CT-now rather than "reassure and review" - [[#def-healing]]-biology, [[clinical-skills/medical-imaging]]); the shared decision (a normal X-ray does not exclude, the time-cost-and-comfort-cost of a cast-versus-splint-versus-early-MRI-definitive-pathway-and-the-return-to-sport-plan and the "exams are two weeks - a nonunion is two years" framing - [[clinical-skills/communication]], [[physiology/muscle]]); the follow-through rules (documented-neurovascular-and-movement-baseline-and-cast-check-and-driving-and-contact-sport-clearance-chronology and the referral-for-percutaneous-screw-fixation-option in the compliant athlete - [[surgery/orthopaedics]], [[clinical-skills/records-handover]]); and the safety net (the reinjury-or-persistent-snuffbox-pain-come-back-instruction given as a date not a feeling and the child-with-multiple-unexplained-injuries-question kept in the back of the mind where the history keeps changing - [[paediatrics/safeguarding]]).**
+This is an **open tibial shaft fracture** with a wound longer than 1 cm and **signs of vascular compromise**.
+
+1. **Realign and splint the limb immediately** with analgesia. Gross angulation can kink the popliteal and tibial vessels; realignment often restores pulses. Recheck and document the pulses, capillary refill and sensation afterwards.
+2. Give **intravenous antibiotics** now (ideally within an hour of injury) and check tetanus status.
+3. Photograph the wound, remove gross contamination, and cover it with a saline-soaked dressing.
+4. If pulses do not return after realignment, this is a **limb-threatening vascular injury**: urgent CT angiography or direct transfer to theatre with vascular surgery, with **immediate** debridement, temporary stabilisation (often an external fixator) and arterial repair. If repair is needed it is at least a Gustilo–Anderson type IIIC injury.
+5. Monitor for **compartment syndrome**, which commonly follows tibial fractures and reperfusion after vascular repair.
+
+The tibia has little soft-tissue cover over its front, so open fractures here have high rates of infection and nonunion; early joint orthoplastic care improves outcomes.
 :::
 :::
 
-::: example The femur with breathing difficulty {#ex-fat-embolism}
-Day 2 after a femoral shaft fracture and reamed nailing, a 27-year-old becomes confused, tachypnoeic and hypoxic with a petechial rash over the chest; temp 38.8, HR 128, GCS 13, platelets falling, chest X-ray diffusely abnormal.
+### Fragility fractures and the hip
+
+A hip fracture in an older person is a medical as much as a surgical emergency. About a quarter to a third of people die within a year, and many never regain their previous mobility. Hip fractures are divided by their relation to the joint capsule:
+
+- **Intracapsular** (femoral neck) fractures can disrupt the retinacular arteries running along the neck to the femoral head, so a **displaced** intracapsular fracture carries a high risk of **avascular necrosis** and nonunion. These are usually treated by replacing the femoral head: **hemiarthroplasty**, or **total hip replacement** in people who were walking independently outdoors with no more than a stick and who are fit for it (NICE CG124, updated 2023). Undisplaced fractures may be fixed with screws.
+- **Extracapsular** (intertrochanteric and subtrochanteric) fractures leave the head's blood supply intact and are fixed: a sliding hip screw for most trochanteric fractures and an intramedullary nail for subtrochanteric fractures.
+
+NICE recommends surgery on the day of, or the day after, admission, care shared with an orthogeriatrician, early mobilisation, and assessment of falls risk and bone health. Every fragility fracture is a warning: people who have had one are at high risk of another. **Fracture liaison services** identify these people and start osteoporosis assessment and treatment ([[musculoskeletal/bones-joints]] and [[geriatrics-palliative/falls]]).
+
+::: example A fall at home {#ex-hip}
+An 84-year-old woman is found on her kitchen floor. Her right leg is shortened and externally rotated. X-ray shows a displaced subcapital (intracapsular) fracture of the right femoral neck. Before the fall she walked to the shops with a stick and lived alone. She has atrial fibrillation and takes apixaban. Outline her care.
 ::: solution
-**Fat embolism syndrome on the classic clock (24-72 hours post long-bone/pelvic fracture or instrumentation - a clinical diagnosis, not a laboratory one - [[#def-complications]], [[surgery/trauma]]): the ABCDE-and-escalation-and-ICU-referral move with the differential swept in parallel - pneumonia-and-aspiration-and-pulmonary-embolism-and-early-ARDS-and-transfusion-reaction-and-sepsis-from-the-wound - [[emergency-critical-care/resuscitation]], [[respiratory/respiratory-infections]], [[blood/transfusion]], [[respiratory/gas-exchange]]-ARDS-adjacent; management is supportive ventilation-with-lung-protective-strategy-and-haemodynamics-with-the-cause-counsel and the steroid-prophylaxis-debate-stated-as-debate - [[emergency-critical-care/airway-ventilation]], [[emergency-critical-care/critical-care]]; the prevention lesson for the unit - early-definitive-fixation-and-limiting-reattempted-manipulation-and-minimising-unnecessary-reaming-and-adequate-resuscitation as the surgical-strategy-evidence ([[surgery/orthopaedics]], [[epidemiology-ebm/randomised-trials]]); and the family-and-incident communication (this-can-hurt-anyone-it-happens-to and the documented-deterioration-timeline-with-NEWS-triggers-that-caught-it, or should have - [[clinical-skills/patient-safety]], [[clinical-skills/communication]]).**
+**Immediate**: analgesia (paracetamol, cautious opioids and a femoral or fascia iliaca nerve block), intravenous fluids, assessment for the cause of the fall (syncope, arrhythmia, infection, stroke, medications) and for a long lie (pressure damage, rhabdomyolysis, hypothermia, dehydration). Check blood count, renal function, electrolytes, group and save, ECG and chest X-ray.
+
+**Anticoagulation**: the direct oral anticoagulant is withheld, and the timing of surgery planned with anaesthesia using local guidance; it should not delay surgery beyond what is necessary ([[blood/thrombosis-anticoagulation]]).
+
+**Surgery**: on the day of, or the day after, admission. A displaced intracapsular fracture has a high risk of avascular necrosis, so replacement is preferred over fixation. Because she was independent outdoors with a stick, a total hip replacement may be considered if she is fit for it; otherwise a cemented hemiarthroplasty.
+
+**After surgery**: mobilise from the day after surgery, with orthogeriatric review, delirium prevention, VTE prophylaxis, nutrition, and planning for discharge. Before discharge she needs a **falls assessment** and **bone health assessment**; with a hip fragility fracture she will usually be offered osteoporosis treatment.
 :::
 :::
 
-::: example The farmer, the bolt and the tibia {#ex-open-tibia}
-A 39-year-old farmer is kicked through a boot by a draught horse: a 4 cm ragged wound over the anteromedial tibia with visible bone, WCC rising at hour 10, tetanus status "unknown, maybe childhood", wound edge dark and contaminated with soil; X-ray shows a segmental tibial fracture with a cortical window communicating with the wound.
+### Children and safeguarding
+
+Children's bones are more flexible and have a thick periosteum, so they produce greenstick and buckle fractures and heal quickly. Growth plate injuries must be recognised because they can cause limb-length discrepancy or angular deformity. Most children's fractures are accidental, but some are not. Features that should raise concern about **non-accidental injury** include any fracture in a child who is not yet mobile, multiple fractures of different ages, posterior rib fractures, metaphyseal "corner" fractures in infants, an injury inconsistent with the history or the child's development, and a delay in seeking help. Concerns are escalated through local safeguarding procedures ([[paediatrics/safeguarding]]).
+
+## Complications {#sec-complications}
+
+Complications are best learned by timing: those that threaten the limb or life in the first hours and days, and those that appear weeks to years later.
+
+::: definition Complications of fractures {#def-complications}
+**Early (hours to days)**
+
+- **Haemorrhage and shock**, especially from pelvic and femoral fractures.
+- **Arterial injury**, for example the popliteal artery in knee dislocations and supracondylar fractures of the femur, or the brachial artery in supracondylar fractures of the humerus in children.
+- **Nerve injury**: the radial nerve with humeral shaft fractures (wrist drop), the axillary nerve with shoulder dislocation and proximal humerus fractures, and the common peroneal nerve at the fibular neck (foot drop).
+- **Acute compartment syndrome** (see below).
+- **Fat embolism syndrome**: typically 24 to 72 hours after a long-bone or pelvic fracture, with breathlessness and hypoxia, confusion, and a petechial rash over the upper body, conjunctivae and mouth.
+- **Venous thromboembolism**, particularly after pelvic and lower-limb fractures.
+- **Infection**, especially after open fractures and surgery.
+- **Rhabdomyolysis** after crush injury or a long lie, with risk of acute kidney injury ([[renal/acute-kidney-injury]]).
+
+**Late (weeks to years)**
+
+- **Delayed union** (healing slower than expected) and **nonunion** (healing has stopped without bridging). Nonunion is called **hypertrophic** when there is abundant callus but too much movement (it needs stability) and **atrophic** when there is little callus because the biology is poor (it needs bone graft and a better blood supply).
+- **Malunion**: healing in an abnormal position, causing deformity, shortening or abnormal joint loading.
+- **Avascular necrosis (osteonecrosis)**: death of bone deprived of its blood supply, classically the **femoral head** after intracapsular fracture, the **proximal pole of the scaphoid**, and the **body of the talus**.
+- **Post-traumatic osteoarthritis** after intra-articular fractures.
+- **Joint stiffness** and muscle wasting.
+- **Complex regional pain syndrome**: disproportionate pain, swelling, and changes in skin colour, temperature and sweating after an injury, often a distal radius fracture.
+- **Growth disturbance** after physeal injury in children.
+:::
+
+### Compartment syndrome
+
+Muscles in the limbs lie in compartments enclosed by tough, inelastic fascia. After a fracture, crush or reperfusion, swelling inside a compartment raises its pressure. When compartment pressure approaches the pressure in the capillaries, blood flow to the muscles and nerves stops, even though the large arteries are still open and the pulses are palpable. Muscle starts to die within hours. The commonest site is the lower leg after a tibial fracture, followed by the forearm.
+
+::: theorem Perfusion pressure in a compartment {#thm-compartment}
+Tissue perfusion depends on the difference between the pressure driving blood in and the pressure in the tissue. For a muscle compartment this is expressed as the **delta pressure**:
+
+$$\Delta P = \text{diastolic blood pressure} - \text{compartment pressure}.$$ {#eq-delta-p}
+
+A $\Delta P$ below about **30 mmHg** indicates that perfusion is inadequate and supports the diagnosis of compartment syndrome (this is the threshold used in the British Orthopaedic Association's standard on compartment syndrome).
+:::
+
+::: proof
+Blood moves from arterioles through capillaries to venules down a pressure gradient. When tissue pressure rises, the thin-walled venules and capillaries are compressed first, venous outflow is impeded, and the pressure needed to keep capillaries open rises with it. Using the diastolic pressure rather than the mean arterial pressure gives a margin of safety. The delta pressure is more useful than the compartment pressure alone, because a hypotensive patient can lose perfusion at a compartment pressure that a hypertensive patient would tolerate.
+:::
+
+The diagnosis is primarily **clinical**. The earliest and most reliable features are:
+
+- **pain out of proportion** to the injury, increasing despite adequate analgesia, often with escalating opioid requirements;
+- **pain on passive stretch** of the muscles in the compartment (for example passively extending the toes for the deep posterior and anterior compartments of the leg);
+- a tense, swollen compartment;
+- later, paraesthesia and numbness in the nerve running through the compartment.
+
+Pressure measurement is used when the patient cannot report pain reliably: under anaesthesia or sedation, in a young child, or with a nerve block. The treatment is to **split all dressings and casts down to skin**, keep the limb at heart level (elevation reduces perfusion pressure), correct hypotension, and perform urgent **fasciotomy** of all affected compartments if the diagnosis is made.
+
+::: warning Pulses are not the test
+Palpable pulses, a warm foot and normal vital signs do **not** exclude compartment syndrome. Compartment pressures that kill muscle are well below arterial systolic pressure, so the large arteries keep pulsating. Loss of pulses is a late finding, by which time muscle has usually died. Increasing pain and pain on passive stretch are the signals to act on. Regional nerve blocks and patient-controlled opioids can mask the pain, so people at high risk need regular, documented reassessment.
+:::
+
+::: example Measuring the pressure {#ex-compartment}
+A 19-year-old man is in intensive care after a road traffic collision, sedated and ventilated. His closed tibial fracture was fixed with a nail eight hours ago. The calf is tense. His blood pressure is 105/58 mmHg. The anterior compartment pressure is measured at 40 mmHg. What is the delta pressure, and what does it mean?
 ::: solution
-**Gustilo-grade IIIA open tibial fracture by description - and the clock starts at injury, not at arrival ([[#def-open]], [[surgery/orthopaedics]]): the bundle - immediate-antibiotic-with-gram-negative-and-clostridial-consideration-for-soil-injury-and-the-check-with-the-oral-antibiotic-history-not-the-paracetamol-chart, tetanus-booster-plus-immunoglobulin-decision-on-a-real-history-not-guesswork ([[public-health/vaccination-programmes]], [[microbiology/viruses]]-clostridial-neighbours); photograph-wound-remove-debris-sterile-saline-soak-splint-analgesia-and-NBM-for-theatre-and-antistreptococcal-and-staphylococcal-cover ([[emergency-critical-care/acute-assessment]], [[microbiology/bacteria]]); the operative lavage-and-excise-everything-dead-and-repeat-at-24-48-hours discipline with deep cultures and the do-not-tidy-in-ED rule ([[surgery/orthopaedics]], [[pathology/chronic-inflammation-repair]]-wound-biology); stabilisation and coverage planning - the nail-versus-frame decision, the timing of closure-versus-flap with the plastic-surgery-conversation and the compartment-recheck-after-reperfusion ([[#def-complications]]); the long ledger he must hear today - infection-deep-or-surface-nonunion-soft-tissue-shortness-osteoarthritis-and-work-loss, the smoking-and-diabetes-and-anticoagulant-review, the compensation-and-occupational-records-letter written honestly, and the mental-health-check-at-month-three because the injured worker's depression is underasked-about - [[psychiatry/mood-disorders]], [[public-health/environmental-occupational]], [[endocrine/diabetes-complications]]; and the incident learning on timing - door-to-antibiotic and door-to-theatre minutes recorded because they predict outcome ([[clinical-skills/patient-safety]], [[public-health/health-systems-economics]]).**
+Using [[#eq-delta-p]]: $\Delta P = 58 - 40 = 18$ mmHg.
+
+This is well below 30 mmHg, so perfusion of the anterior compartment is inadequate. Because he is sedated, the usual clinical signs cannot be assessed, which is exactly the situation in which pressure measurement is valuable. He needs urgent **fasciotomy** of all four compartments of the leg. His blood pressure should also be optimised, since a low diastolic pressure lowers $\Delta P$. Watch for rhabdomyolysis and acute kidney injury afterwards.
 :::
 :::
 
 ::: quiz
-A 30-year-old with an undisplaced, stable, extra-articular distal-radius fracture after a fall is best managed initially by:
-- [ ] Immediate open reduction and plating
-- [x] Immobilisation with follow-up radiographs and orthopaedic review
-- [ ] Skeletal traction
-- [ ] CT of the wrist
+A 25-year-old fell on an outstretched hand. She is tender in the anatomical snuffbox, but X-rays of the wrist, including scaphoid views, show no fracture. What is the most appropriate next step?
+- [ ] Discharge with reassurance, as the X-ray is normal
+- [x] Immobilise the wrist and arrange further imaging (MRI, or repeat X-ray if MRI is not available)
+- [ ] Arrange urgent surgical fixation
+- [ ] Inject corticosteroid into the wrist
 ::: solution
-**Stability-and-position-decide-the-pathway ([[#def-management]]): undisplaced-extra-articular-fragments-hold-in-a-cast-or-splint-with-progression-and-remodeling-check-radiographs; surgery is for the unstable-displaced-intra-articular-or-neurovascular-compromised - [[surgery/orthopaedics]]; the cast-check-and-swelling-and-nerve-injury-documentation and the driving-and-work-advice are the real-world complications of doing this well ([[clinical-skills/records-handover]], [[musculoskeletal/bones-joints]]).**
+Scaphoid fractures are often invisible on initial X-rays. The scaphoid's blood supply enters distally, so a missed fracture of the waist or proximal pole risks **nonunion** and **avascular necrosis** of the proximal fragment. With snuffbox tenderness after a fall, the wrist is immobilised and further imaging is arranged; MRI is the preferred test where available. Surgery is reserved for displaced or proximal pole fractures and nonunions.
 :::
 :::
 
-::: widget plot
-f: 100*(1-exp(-0.45*x)); 100*(1-exp(-0.22*x)); 55*(1-exp(-0.06*x))
-x: 0, 16
-labels: \text{weeks},\ \%\text{healed};\ \text{child forearm};\ \text{adult tibia};\ \text{femoral neck (AVN-prone)}
-caption: Healing speed is a function of bone, age, blood supply and stability ([[#def-healing]]): children remodel and unite fast, adult long bones with precarious soft-tissue envelopes crawl, and intracapsular hip fractures may never biologically "finish" because the vascular territory is gone ([[surgery/orthopaedics]], the AVN row in [[#def-complications]]). Curves are teaching shapes calibrated to typical clinical-union windows, not patient predictions ([[epidemiology-ebm/measuring-disease]], [[clinical-skills/clinical-reasoning]]).
+::: history
+Fracture care is among the oldest parts of medicine. The **Hippocratic** text *On Fractures* (around 400 BCE) describes traction, reduction and splinting in terms still recognisable today. In 1852 the Dutch army surgeon **Antonius Mathijsen** introduced bandages impregnated with plaster of Paris, giving the cast its modern form. **Wilhelm Röntgen**'s X-rays (1895) allowed fractures to be seen and their reduction checked. During the First World War **Robert Jones** introduced the splint designed by his uncle **Hugh Owen Thomas** for open fractures of the femur, which is credited with a dramatic fall in deaths from these injuries. In 1939 the German surgeon **Gerhard Küntscher** used an intramedullary nail in the femur. In 1958 a group of Swiss surgeons including **Maurice Müller** founded the AO (Arbeitsgemeinschaft für Osteosynthesefragen), which standardised the principles of internal fixation. In the Soviet Union in the 1950s, **Gavriil Ilizarov** developed the circular external fixator and showed that bone could be lengthened by gradual distraction.
 :::
-
-
-## Fractures in context: the epidemiology you inherit
-
-Today's fracture workload is an ageing-and-activity-mixture shaped by demographics more than by any single intervention: the fragility-fracture epidemic (hip, vertebra, distal radius, proximal humerus, pelvis) riding on longer lifespans with late post-menopausal bone loss, falls-risk clusters (polypharmacy, vision, sarcopenia, housing), and the osteoporosis-treatment gap measured in every audit [[endocrine/bone-calcium]], [[geriatrics-palliative/falls]], [[geriatrics-palliative/polypharmacy]], [[nervous-system/sensory-systems]]; the young-adult high-energy stream (road traffic injury, work and sport) with its polytrauma and TBI and limb-injury intersections [[surgery/trauma]], [[nervous-system/motor-systems]]; the stress-fracture stream whose management is a loading-and-energy-availability conversation with the sports-and-endocrine-and-dietetic teams - the female-athlete-triad-relative-energy-deficiency bone-health story that ends in early osteoporosis if missed [[gastrointestinal/clinical-nutrition]], [[endocrine/reproductive-endocrinology]], [[physiology/muscle]]; and the child-fracture stream where growth-plate biology, remodelling forgiveness, and safeguarding vigilance define competence [[paediatrics/acute-childhood-illness]], [[paediatrics/safeguarding]]. Each stream has a prevention lever more powerful than any implant - the fracture clinic is a prevention clinic pretending to be a surgical service [[public-health/prevention-promotion]].
 
 ## Where this leads
 
-Bone biology behind healing in [[musculoskeletal/bones-joints]]; surgical technique and implants in [[surgery/orthopaedics]]; trauma primary survey in [[surgery/trauma]]; the fragility-fracture-prevention system in [[endocrine/bone-calcium]]; anticoagulation perioperatively in [[blood/thrombosis-anticoagulation]]; VTE prevention in the same place; rehabilitation physiology in [[physiology/muscle]].
-
-::: history
-**Fracture management is older than medicine's other chapters - Edwin Smith's papyrus surgical cases and trephination, Hippocratic traction and reduction and the "skilled set of hands" ideal, and Ambroise Paré's arterial-ligation-and-dressings humanisation of the amputation theatre; John Hunter's experimental bone-graft biology and the centuries-long argument about whether callus is inflammation or repair; the railway-age fracture explosion and the birth of fracture-clinics and Thomas's splint and the "sets" of open reduction debate before Lister's antisepsis made internal fixation survivable; theAO foundation principles of compression and stable fixation and the biological-plating counter-revolution; the intramedullary nailing lineage from Kuntscher to reamed interlocking; the hip-fracture-ortho-geriatric-medicine model and its National Hip Fracture Audit-era outcome data and the audit-driven early-operation and co-management standards it exported worldwide; and the modern open-fracture evidence wars over timing, irrigation pressure and wound closure, teaching that even the most ancient operation is a hypothesis under test ([[epidemiology-ebm/randomised-trials]], [[public-health/health-systems-economics]]).**
-:::
-
-::: exercise Hunt the pathologic fracture {level=2}
-A 63-year-old with minimal-trauma humeral shaft fracture, a 3-month history of "tennis elbow" at that site, weight loss and a smoking pack-year history. What is on the list and what is ordered today?
-::: solution
-**Metastatic disease until proven otherwise - the prodromal-pain-at-the-lesion and the non-mechanical history and the lung-primary-first-suspicion ([[#def-classification]], [[pathology/cancer-diagnosis]], [[respiratory/lung-cancer-pleura]]); today's list - plain-film-appearance-lytic-versus-blastic-and-full-bloods-calcium-ALP-myeloma-screen ([[clinical-skills/laboratory-tests]], [[endocrine/bone-calcium]], [[blood/lymphoma-myeloma]]), CT-chest-abdomen-pelvis and bone-scan-or-equivalent-staging with the MDT-referral-route ([[clinical-skills/medical-imaging]], [[pathology/cancer-biology]]); the orthopaedic decisions running in parallel - the-fixation-device-choice-that-spans-the-whole-bone-and-the-possible-postoperative-radiotherapy-and-intraoperative-tissue-sent-for-histology-culture-always, and the prophylactic-fixation-thresholds for other impending lesions - [[surgery/orthopaedics]], [[pathology/cancer-diagnosis]]; the communication - the-cancer-conversation-done-with-the-surgeon-and-oncologist-same-day-not-after-two-more-clinics - [[clinical-skills/communication]], [[geriatrics-palliative/palliative-care]].**
-:::
-:::
-
-::: exercise Judge the immobilised limb {level=2}
-Two weeks in a backslab for a wrist injury, now burning pain out of proportion, shiny swollen hand, sweatier and colour-changeable, moving-it-less-every-day. Name it, stage the response.
-::: solution
-**Complex regional pain syndrome type 1 - the disproportionate-pain-sensory-vasomotor-sweating-oedema-motor cluster with the fear-avoidance spiral ([[#def-complications]]); the response ladder - believe-it-and-say-it-and-explain-the-model-in-one-sentence-that-is-not-"it's-in-your-head" ([[clinical-skills/communication]], [[psychiatry/anxiety-disorders]]); urgent-physiotherapy-with-pain-ladder-optimisation-and-neuropathic-agents-and-the-braceel-and-mirror-adjuncts-realism ([[surgery/anaesthesia-pain]], [[pharmacology/adverse-reactions]]); the removal-of-contributors review - tight-cast-release-nerve-compression-complexity-CRP-infection-exclusion-when-hot ([[musculoskeletal/bones-joints]]); the early-specialist-referral-because-chronicity-treatment-is-harder-and-the-driving-and-work-impacts ([[public-health/health-systems-economics]], [[medical-ethics-law/professionalism-regulation]]); and the prognosis-honesty with the recovery-most-children-and-few-adults-full-data ([[epidemiology-ebm/measuring-disease]]).**
-:::
-:::
+Operative technique, fixation devices and joint replacement are developed in [[surgery/orthopaedics]]; the injured patient as a whole in [[surgery/trauma]]; and wound infection in [[surgery/wounds-surgical-infection]]. Fragility fractures connect to osteoporosis in [[musculoskeletal/bones-joints]] and [[endocrine/bone-calcium]], and to falls in [[geriatrics-palliative/falls]]. Post-traumatic joint damage leads into [[musculoskeletal/osteoarthritis]], and spinal fractures into [[musculoskeletal/back-pain]].
 
 ::: summary
-- A fracture is described by mechanism, location, pattern, stability, joints and soft tissues, and the patient - in that clinical order, not alphabetically.
-- Healing is biology obeying mechanics: stability within tolerated micromotion, blood supply preserved, and host factors optimised - smoking, nutrition, glycaemia, load.
-- Reduce by the least damaging route that buys enough stability; hold with the least implant that maintains it; then move the joints the plan can spare.
-- The dangerous days are early - compartment, vessels, fat embolism, VTE, infection; the dangerous months are late - nonunion, AVN, osteoarthritis, CRPS, osteoporosis of the next bone.
-- Every fragility fracture is a bone-health diagnosis and a falls diagnosis wearing a cast; the fixation is the easy part.
+- Describe a fracture in a fixed order: bone and site, pattern, displacement of the distal fragment, open or closed, associated joint injury and abnormal bone.
+- Open fractures are graded by Gustilo–Anderson; growth plate injuries by Salter–Harris. A fracture from trivial force may be pathological.
+- Secondary healing passes through haematoma, soft callus, hard callus and remodelling; primary healing occurs only with rigid, compressed fixation.
+- Interfragmentary strain ($\Delta L / L$) determines which tissue can form: bone tolerates only about 2%. Simple fractures need absolute stability; comminuted fractures heal well with relative stability.
+- Manage the patient before the limb, then reduce, hold and rehabilitate. Open fractures need early antibiotics and timely debridement by a combined orthoplastic team.
+- Displaced intracapsular hip fractures risk avascular necrosis and are usually replaced; extracapsular fractures are fixed. Surgery should happen on the day of or the day after admission, followed by falls and bone health assessment.
+- Compartment syndrome is diagnosed clinically by pain out of proportion and pain on passive stretch; pulses are usually present. $\Delta P$ below 30 mmHg supports the diagnosis. Treatment is fasciotomy.
+- Late complications include nonunion, malunion, avascular necrosis (femoral head, scaphoid, talus), post-traumatic osteoarthritis and complex regional pain syndrome.
 :::
 
 ## Exercises
 
-::: exercise Describe a fracture {level=1}
-Write the full one-line description of a distal-third radius fracture with dorsal angulation and impacted fragments after a FOOSH injury, and list the two complications most specific to it.
+::: exercise Describe the fracture {level=1}
+An X-ray of an adult's right forearm (anteroposterior and lateral views) shows a single break running straight across the middle third of the radial shaft. The distal fragment is shifted laterally by half the width of the shaft and angulated so that the apex points towards the palm by 15 degrees. The skin is intact. Write a one-sentence description using the order in [[#def-description]].
 ::: solution
-**Site-configuration-communication-displacement-mechanism in order ([[#def-classification]]): "closed, extra-articular, impacted dorsally-angulated (Colles-type) fracture of the left distal radius from a fall onto the outstretched hand"; the specific complications - median-nerve-compression-acute-carpal-tunnel-and-then-late-malunion-loss-of-reduction-and-distal-radio-ulnar-joint-pain-and-DRUJ-instability, plus the CRPS-risk-phenotype (the anxious middle-aged woman - not a reason to undertreat pain) - [[#def-complications]], wrist rows in [[surgery/orthopaedics]].**
+"There is a closed, transverse fracture of the mid-shaft (diaphysis) of the right radius, with the distal fragment translated laterally by 50% of the shaft width and with 15 degrees of volar (apex-palmar) angulation." A full description would also mention whether the distal radioulnar joint is disrupted (a Galeazzi injury), because isolated radial shaft fractures are often accompanied by it, and would comment on the bone quality.
 :::
 :::
 
-::: exercise Decide the operation {level=1}
-Which of these needs theatre tonight and which needs clinic on Monday: patella fracture with intact extensor mechanism, displaced intra-articular calcaneus, hip prosthesis dislocated 20 minutes ago, ankle fracture with tenting blanching skin?
+::: exercise Salter–Harris {level=1}
+A 12-year-old has a wrist fracture in which the fracture line runs along the distal radial growth plate and then exits through a small triangular piece of the metaphysis. Which Salter–Harris type is this, and is it generally associated with a high or low risk of growth disturbance?
 ::: solution
-**Tonight (the hip-prosthesis-dislocation-hours-of-ischaemia-and-cartilage-and-relocation-with-sedation-and-post-relocation-stability-plan - [[#def-management]], [[surgery/orthopaedics]]; and the ankle-with-skin-tenting-pressure-necrosis-promising-reduction-or-fixation-to-save-the-envelope - skin-is-organ - [[#def-open]], [[surgery/wounds-surgical-infection]]); clinic-pathway (the-intact-extensor-mechanism-patella-with-knee-extension-brace-and-weight-bear-as-pain-allows; the displaced-intra-articular-calcaneus-typically-after-high-energy-and-swollen-soft-tissues-waiting-for-the-wrinkle-test-before-plating with compartment-and-soft-tissue-surveillance meanwhile) - [[#def-management]], [[#def-classification]]; the organising question in both lists: what does delay cost - cartilage, nerve, skin, or nothing? ([[clinical-skills/clinical-reasoning]]).**
+This is **Salter–Harris type II**: through the physis and out through the metaphysis (the metaphyseal fragment is sometimes called the Thurston Holland fragment). It is the commonest type and generally has a **low** risk of growth disturbance, although it still needs appropriate reduction and follow-up.
 :::
 :::
 
-::: exercise Optimise the biology {level=2}
-A 56-year-old with a tibial plateau fracture waits for soft-tissue settling; he smokes 20/day, HbA1c 68, takes ibuprofen and prednisolone for asthma. What can be changed this week and how do you say it without pushing him away?
+::: exercise Grade the open fracture {level=1}
+A 45-year-old falls from a ladder and has an open fracture of the distal tibia with a clean 0.8 cm wound. Another patient has a high-energy open tibial fracture with extensive periosteal stripping that requires a muscle flap to cover the bone. Give the likely Gustilo–Anderson grade of each and the antibiotic standard that applies to both.
 ::: solution
-**The modifiable set with the evidence-honest strength labels (smoking-cessation-as-the-biggest-single-healing-improvement-and-NRT-combination-therapy-and-same-day-quit-support; glycaemic-control-impact-on-infection-and-union-and-the-diabetes-team-with-the-surgery-date; the-NSAID-debate-acknowledged-as-a-debate-and-cannot-be-the-only-analgesia-conversation-solved-with-multimodal-steroid-sparing-plan; the-prednisolone-dose-reduction-and-inhaler-optimisation-and-steroid-card-and-surgical-cover-review; protein-and-energy-and-vitamin-D-and-calcium-intake-in-the-cast-period - [[#def-healing]], [[pharmacology/adverse-reactions]], [[endocrine/diabetes-complications]], [[respiratory/asthma-copd]], [[endocrine/adrenal]], [[gastrointestinal/clinical-nutrition]]); and the-communication-frame (not "fracture shaming" - the autonomy-respecting, benefit-and-window-honest, single-action-first approach and the offer of help in the same breath as the advice - [[clinical-skills/communication]], [[public-health/prevention-promotion]], [[psychiatry/mood-disorders]]-motivation-adjacent).**
+The first is likely **type I** (wound under 1 cm, clean, low energy), although the final grade is confirmed at debridement. The second is **type IIIB** (bone exposed after periosteal stripping and needing flap cover). Both need intravenous antibiotics as soon as possible, ideally within one hour of injury, according to the local protocol.
 :::
 :::
 
-::: exercise Protect the child's physis {level=2}
-A 9-year-old Salter-Harris II distal tibial fracture is reduced and casted. What unique complication is being watched, and how does surveillance work years later?
+::: exercise Delta pressure {level=2 check="22"}
+A patient with a forearm fracture has a blood pressure of 130/70 mmHg and a measured flexor compartment pressure of 48 mmHg. Calculate $\Delta P$ in mmHg and say whether it supports a diagnosis of compartment syndrome.
 ::: solution
-**Growth-plate arrest with angular deformity or limb-length discrepancy depending on the arrested fraction of the physis ([[#def-classification]], [[paediatrics/acute-childhood-illness]]); the biologic rules (the physeal bar-tethering-asymmetry and the remaining-growth-remaining-deformity geometry and the distal-tibia-and-femur high-contribution-sites); the surveillance plan (the documented-injury-and-reduction-details-in-the-notes, the growth-review-chronology-and-clinician-awareness-flag-and-the-tethering-release-or-physeal-bar-resection-versus-osteo-vs-epiphysiodesis-options-at-the-right-time - [[surgery/orthopaedics]], limb-length inequality management in [[surgery/orthopaedics]]; and the parent-facing explanation that the "healed X-ray" still needs a growth check - not distrust but development - [[clinical-skills/communication]], [[clinical-skills/records-handover]]).**
+$\Delta P = 70 - 48 = 22$ mmHg. This is below 30 mmHg, so it supports the diagnosis. Combined with the clinical findings, it is an indication for urgent fasciotomy.
 :::
 :::
 
-::: exercise Run the fracture-night trolley {level=2}
-Explain why "orthopaedic night admissions are medicine patients with an X-ray" and build the overnight orders for the 84-year-old hip-fracture patient.
+::: exercise Strain in a fracture gap {level=2 check="25"}
+A fracture fixed with an external fixator has a gap of 2 mm, and the fragments move by 0.5 mm under load. Calculate the interfragmentary strain as a percentage (exact value). Which tissues can form in this environment, according to Perren's theory?
 ::: solution
-**The thesis ([[musculoskeletal/fractures]]-orthogeriatrics): the overnight risks are medical - delirium, sepsis-mimics, cardiac events, hyponatraemia-and-AKI, hypoxia, constipation-and-retention, pressure-injury, and undertreated pain ([[geriatrics-palliative/delirium-dementia-care]], [[renal/acute-kidney-injury]], [[surgery/anaesthesia-pain]]); the order-set - regular analgesia with nerve-block and paracetamol backbone and opioid-minimisation-and-bowel-plan, IV-fluids-to-goal-and-electrolyte-review, oxygen-and-obs-schedules-with-escalation-criteria, ECG-and-meds-reconciliation-and-anticoagulation-review, cognitive-screen-and-orientation-and-sleep-and-glasses-and-hearing-aids-and-food-and-laxatives-and-pressure-area-and-DVT-plan, family-presence-and-continuity-notes, and the morning-list-booking-and-"why-not-operating-tomorrow" documented answer - [[#def-complications]], [[surgery/perioperative-care]], [[geriatrics-palliative/polypharmacy]], [[clinical-skills/records-handover]]; the metric to remember - every hour of delay before hip-fracture surgery is measurable harm, so the night team's job is preparation, not waiting - [[public-health/health-systems-economics]].**
+$\varepsilon = 0.5/2 = 0.25$, which is **25%**. This exceeds the tolerance of bone (about 2%) and of cartilage (about 10%), so only granulation and fibrous tissue can form at this strain. Healing would need the fixator to be stiffened (or the gap compressed) so that the strain falls.
 :::
 :::
 
-::: exercise Redesign for the second fracture {level=3}
-Your hospital fixes 400 hip fractures a year; 30 % of patients have a prior fragility fracture never treated for osteoporosis. Design the system fix with evidence, ethics and economics.
+::: exercise A wrist injury in an older person {level=2}
+A 66-year-old woman slips on ice and sustains a dorsally displaced fracture of the distal radius. It is reduced and placed in a cast. (a) What does this fracture tell you about her skeleton? (b) What should happen before she is discharged from fracture care? (c) Name two complications to warn her about.
 ::: solution
-**The spine of the fix - a fracture-liaison-service (FLS) with a named nurse-owner, a capture-list from every fracture pathway, fracture-risk-assessment-and-DEXA-and-labs-and-treatment-initiation-before-discharge-or-within-30-days, and the second-fracture-rate as the public KPI ([[endocrine/bone-calcium]], [[public-health/screening]], [[#def-management]]); the evidence (the secondary-prevention-effect-sizes and the medication-adherence-and-infusion-clinic-solutions and the "treat-the-patient-not-the-hip" trial-and-observational-base - [[epidemiology-ebm/randomised-trials]], [[epidemiology-ebm/observational-studies]]); the equity-and-ethics layer (the-deprivation-and-sex-and-ethnicity-treatment-gaps, the capacity-and-consent-for-risk-reduction-talks-in-dementia, the cost-of-testing-versus-cost-of-refracture-and-the-commissioning-case, and the primary-prevention-boundary-debate about who should not be treated - [[public-health/determinants-inequalities]], [[medical-ethics-law/consent-capacity]], [[medical-ethics-law/justice-resources]], [[public-health/health-systems-economics]]); and the governance loop (the-audit-of-what-doctors-actually-order-vs-the-FLS-protocol-and-the-smart-repeat-and-register-data-capture so that the system learns - [[clinical-skills/records-handover]], [[public-health/prevention-promotion]]).**
+(a) A distal radius fracture from a fall from standing height is a **fragility fracture**. It is often the first sign of osteoporosis and predicts later vertebral and hip fractures.
+
+(b) She should be referred to a **fracture liaison service** or equivalent for fracture risk assessment (FRAX or QFracture, with DXA where indicated), investigation for secondary causes, and consideration of bone-protective treatment, together with a falls risk assessment.
+
+(c) Complications include **loss of reduction** (redisplacement in the cast), **malunion**, a **tight cast** causing swelling and nerve compression (median nerve symptoms), **stiffness**, rupture of the extensor pollicis longus tendon, and **complex regional pain syndrome**.
+:::
+:::
+
+::: exercise Breathless on day two {level=3}
+A 23-year-old man has a closed femoral shaft fracture after a road traffic collision. Thirty-six hours after admission, while waiting for surgery in traction, he becomes confused and breathless. His oxygen saturation is 86% on air, temperature 38.1 °C, pulse 124 per minute. There are petechiae across his chest, in the axillae and on the conjunctivae. Give the most likely diagnosis, two differential diagnoses, and the principles of management.
+::: hint
+Think about the timing after a long-bone fracture and the combination of lungs, brain and skin.
+:::
+::: solution
+The most likely diagnosis is **fat embolism syndrome**. It typically appears 24 to 72 hours after a long-bone or pelvic fracture, with the triad of **respiratory distress (hypoxia)**, **neurological change (confusion)** and a **petechial rash** in the upper body, conjunctivae and mouth. Fever and tachycardia are common. Fat globules from the marrow enter the circulation, block small vessels and provoke an inflammatory response in the lungs.
+
+Differential diagnoses: **pulmonary embolism** (immobility after injury); **pneumonia** or aspiration; **sepsis**; **acute respiratory distress syndrome** from another cause; **head injury** (for the confusion); and, less likely, transfusion-related lung injury.
+
+Management is **supportive**: high-flow oxygen with escalation to ventilatory support if needed ([[respiratory/respiratory-failure]]), fluid balance, and investigation to exclude alternatives (CT pulmonary angiography, chest X-ray, blood tests). **Early stabilisation of the fracture**, usually with an intramedullary nail once he is fit, reduces the risk of further embolism; timing is a senior decision when the lungs are compromised. Most patients recover with supportive care.
+:::
+:::
+
+::: exercise A fracture in a baby {level=3}
+A 5-month-old girl is brought to the emergency department because she has been crying when her right thigh is moved. Her father says she rolled off the sofa the day before. X-ray shows a spiral fracture of the femoral shaft. (a) What concerns you, and why? (b) What should happen next? (c) Name one medical condition that can cause fractures in infancy and should be considered.
+::: hint
+Can a 5-month-old generate a twisting force on her own femur? Consider the child's developmental stage.
+:::
+::: solution
+(a) A femoral fracture in a **non-mobile infant** is a strong warning sign of **non-accidental injury**. A spiral fracture implies a twisting force that a 5-month-old cannot generate by rolling, so the injury is inconsistent with the history. A delay in presentation may also be relevant.
+
+(b) Treat the fracture and the pain, and follow **local safeguarding procedures** immediately: involve the senior clinician and the safeguarding paediatric team, document the history verbatim, and arrange the recommended investigations, which usually include a **skeletal survey** (looking for other fractures, such as posterior rib or metaphyseal fractures of different ages), examination of the skin, eye examination for retinal haemorrhages, and consideration of brain imaging. Siblings may also need assessment ([[paediatrics/safeguarding]]).
+
+(c) **Osteogenesis imperfecta** (defective type I collagen; look for blue sclerae, a family history and dentinogenesis imperfecta), and metabolic bone disease such as **rickets** or the bone disease of prematurity. Considering these is part of a fair, thorough assessment; they do not remove the need for a safeguarding evaluation.
 :::
 :::

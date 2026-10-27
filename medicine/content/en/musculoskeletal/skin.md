@@ -1,159 +1,353 @@
-The skin is the largest organ and the most visual one, and it punishes sloppy thinking twice: **rash is a distribution-and-morphology diagnosis that must be made before steroids are sprinkled, and the skin is also the window onto systemic disease - lupus, vasculitis, lymphoma, endocrine failure, drug reactions and internal malignancy all advertise themselves here.** A dermatology clinic is largely pattern recognition plus the confidence to say "I don't know - biopsy, or refer".
+The skin is the body's largest organ, about 1.5 to 2 square metres in an adult. It keeps water in and microbes, chemicals and ultraviolet light out, regulates temperature, senses touch and pain, makes vitamin D and takes part in immune defence. Skin problems are among the commonest reasons for seeing a doctor, they affect how people feel about themselves, and many are clues to internal disease.
 
-This chapter covers skin structure and symptoms, eczema, psoriasis, acne and its severe relatives, skin infections, drug eruptions and blistering disease.
+This chapter covers the structure of the skin, how to describe what you see, and the common diseases: eczema, psoriasis, acne, urticaria, skin infections, drug eruptions and blistering diseases. Skin cancer follows in [[musculoskeletal/skin-cancer]], and the immunology of allergic and drug reactions is in [[immunology/hypersensitivity]].
 
-## Structure and vocabulary
+## Structure and function {#sec-structure}
 
-::: definition Skin biology and the itchy organ {#def-structure}
-**Architecture (the epidermis-as-stratified-squamous-keratinising-barrier-with-basal-stem-cell-niche-and-transit-and-differentiation-cascade - the cornified-envelope-and-lamellar-body-and-keratohyalin-granule-sequence and the skin-barrier-protein-genetics of filaggrin and companions in [[genetics/mendelian-inheritance]] and [[cell-biochemistry/proteins-enzymes]]; the dermis-as-collagen-and-elastin-mechanics-with-its-mast-cells-and-sentinel-Langerhans-cells - [[cell-biochemistry/proteins-enzymes]]-ECM-adjacent, [[immunology/innate-immunity]]; the appendages - sebaceous-glands-as-androgen-driven-lipid-factories and sweat-glands-ecrine-and-apocrine and hair follicles as stem-cell-reservoirs and the source of the folliculitis-and-hirsutism-phenotypes - [[endocrine/reproductive-endocrinology]]-androgen-rows; and the subcutis as fat-pad, inflammatory-site-panniculitis and injection-landing-zone - [[gastrointestinal/clinical-nutrition]]-adipose-biology-adjacent); the immune skin (skin-as-actively-surveilled-barrier with the antimicrobial-peptides-and-defensins-and-TLR-logic of [[immunology/innate-immunity]], the resident-memory-T-cell-and-skin-homing-addressins-explaining-why-some-rashes-sit-where-they-do - [[immunology/adaptive-responses]], and the type-I-to-IV-hypersensitivity mapping of urticaria-and-angioedema-and-contact-dermatitis-and-eczema-and-serum-sickness-like-and-vasculitic-drug-eruptions onto the immunology chapters - [[immunology/hypersensitivity]]); itch (the-pruriception-separateness - histaminergic-versus-non-histaminergic-itch and the TRPV1-and-IL-31-and-bile-acid-and-uremic-and-neuropathic-and-psychogenic-itch-taxonomy with the antihistamine-why-it-fails-in-most-itch-lesson and the scratch-itch-cycle-chronicity-mechanics - [[nervous-system/sensory-systems]], [[renal/chronic-kidney-disease]]-pruritus-row, [[gastrointestinal/liver-disease]]-cholestatic-pruritus-row, [[endocrine/thyroid]]); and the descriptive discipline (morphology-first-language - macule-papule-plaque-nodule-vesicle-bulla-pustule-wheal-scale-crust-erosion-ulcer-lichenification-scar and distribution-and-configurational-terms - annular-and-linear-and-dermatomal-and-photodistributed-and-acral-and-flexural - and the two questions - how-long-and-what-changed - that outperform most blood tests - [[clinical-skills/history-taking]], [[clinical-skills/physical-examination]]).**
-:::
+::: definition The layers of the skin {#def-skin-structure}
+The skin has three layers.
 
-## Eczema and psoriasis
+**Epidermis**: a stratified squamous epithelium without blood vessels, mostly made of **keratinocytes**. New keratinocytes are produced in the **stratum basale** and move outwards through the **stratum spinosum** (where cells are joined by **desmosomes**, built from proteins including **desmogleins**), the **stratum granulosum** (where cells make keratohyalin granules containing **filaggrin** and lamellar bodies containing lipids) and, on the palms and soles, the stratum lucidum. They end as flattened dead **corneocytes** in the **stratum corneum**, which is shed. The journey takes about four weeks. Other epidermal cells are:
 
-::: definition Atopic and contact eczema {#def-eczema}
-**Atopic dermatitis (the barrier-dysfunction-and-type-2-inflammation-disease - filaggrin-loss-of-function-and-the-protein-lost-in-trans-epidermal-water-loss-connection-and-the-Staphylococcus-aureus-colonisation-and-superantigen-superinfection-loop and the IL-4-IL-13-IL-31-OX40L immunological-therapeutic-landscape in [[immunology/adaptive-responses]] and [[immunology/vaccines-immunotherapy]]; the itch-scratch-cycle chronicity with the flexural-lichenified-pattern in older children-and-adults versus the extensor-and-facial-infant-pattern and the personal-and-family-atopy-association with asthma, allergic rhinitis and food allergy and the early-skin-barrier-intervention-prevention-research - [[respiratory/asthma-copd]], [[paediatrics/acute-childhood-illness]], [[immunology/hypersensitivity]], [[gastrointestinal/bowel-disease]]-food-protein-proctocolitis-adjacent; management as a ladder with an education spine - emollients-liberally-and-regularly-with-the-prescriber-chooses-brand-versus-buy-generic-pragmatism-and-soap-substitutes-and-bathing-technique and topical-corticosteroids-by-potency-and-site-and-week-and-quantity-with-the-topical-steroid-phobia-conversation-done-early-and-the-proactive-weekend-dosing-maintenance-strategy - [[pharmacology/dosing-principles]], [[clinical-skills/communication]]; and the escalation tier - wet-wraps-for-severe-flares-and-dupilumab-and-tralokinumab-and-the-JAK-inhibitor-arsenal-with-their-eyes-and-laboratory-and-herpes-zoster-and-VTE-and-dermatology-entry-criteria-and-phototherapy-narrowband-UVB-and-PUVA-era-photosafety-and-tanning-salon-fraud-boundary; plus the food-allergy-entanglement-handled-by-allergy-services-not-by-elimination-diets-from-the-internet - food-allergy pathways in [[immunology/hypersensitivity]], [[paediatrics/acute-childhood-illness]]); contact dermatitis (the allergic-versus-irritant-split - patch-test-distinguishable-type-IV-mechanism-versus-cumulative-cuff-and-cleaning-hands-irritancy and the-occupational-and-hobby-and-cosmetic-and-topical-medicine-exposure-history and the nickel-and-fragrance-and-preservative-and-acrylate-and-rubber-accelerator-and-hair-dye-para-phenylenediamine-garden-of-allergens - [[public-health/environmental-occupational]]; and the photo-distribution-and-shampoo-and-hands-and-eyelid-clues that give the source away before dermatology does - [[clinical-skills/physical-examination]]).**
-:::
+- **melanocytes** in the basal layer, which make **melanin** and transfer it in melanosomes to surrounding keratinocytes, where it shields the nucleus from ultraviolet radiation. People of all skin tones have similar numbers of melanocytes; skin colour depends on the amount and type of melanin and the size and distribution of the melanosomes;
+- **Langerhans cells**, dendritic cells that capture antigens and present them in lymph nodes;
+- **Merkel cells**, involved in touch sensation.
 
-::: definition Psoriasis and its severe relatives {#def-psoriasis}
-**Immunology (the IL-23/IL-17-axis-T-cell-driven-keratinocyte-hyperproliferation-disease with the early-childhood-or-second-adulthood-peak-bimodality, the skin-flowers-and-scale-and-keratinocyte-turnover-in-days-not-weeks-parakeratosis-and-Munro-microabscess-histology and the genetic-immunologic-bridge from GWAS-HLA-Cw6-and-IL23R-to-the-entire-biologic-arsenal - [[immunology/adaptive-responses]], [[immunology/vaccines-immunotherapy]], [[genetics/common-disease-genetics]]); morphology-and-distribution (the-silvery-scaling-erythematous-plaques-on-extensor-surfaces-scalp-ears-gluteal-cleft-and-umbilicus with the Auspitz-sign-and-Koebner-phenomenon-post-traumatic-localisation and the nail pitting-and-onycholysis-and-oil-spots and the inverse-genital-and-intertriginous-flavour stripped of its scale by moisture - [[clinical-skills/physical-examination]], [[musculoskeletal/skin]]-itself; and the mimics list - chronic-tinea-and-seborrhoeic-dermatitis-and-pityriasis-rubra-pilaris-erythroderma-adjacent and the psoriatic-arthritis-questions-asked-at-every-review because joint damage is the outcome that matters - [[musculoskeletal/inflammatory-arthritis]]); severity-and-system (the-BSA-and-DLQI-and-PASI-framework-and-the-10-percent-is-not-the-only-trigger-when-hands-feet-genitals-face-or-erythroderma-or-pustular-psoriasis-or-nail-or-joint-disease-and-the-psoriatic-arthropathy-and-cardiometabolic-comorbidity-cluster - metabolic syndrome and fatty liver and depression and cardiovascular risk - and the do-not-blame-the-patient framing of the obesity link - [[gastrointestinal/liver-disease]], [[cardiovascular/hypertension]], [[psychiatry/mood-disorders]], [[musculoskeletal/inflammatory-arthritis]]); treatment (topical-steroid-plus-vitamin-D-analogue-combination-and-emollient-backbone-and-coal-tar-and-dithranol-historical-stains-and-calcineurin-inhibitors-for-the-thin-skin-sites - [[pharmacology/dosing-principles]]; phototherapy-narrowband-UVB-with-photosensitiser-avoidance-and-skin-cancer-surveillance-and-the-PUVA-cumulative-dose-legacy-data - [[musculoskeletal/skin-cancer]]; methotrexate-acitretin-ciclosporin - the conventional-systemic-tier-rexinoids-for-pustular-disease-and-the-renal-and-hypertensive-and-teratogenic-ciclosporin-and-acitretin-pregnancy-avoidance-decades-long-caveat - [[pharmacology/patient-variation]], [[renal/chronic-kidney-disease]], [[obstetrics-gynaecology/contraception-fertility]]; and the biologic-and-small-molecule era - anti-TNF-and-IL-17-and-IL-23-and-IL-12-23-and-TYK2-and-PDE4-and-de-escalation-and-switching-rules and the paradoxical-psoriasiform-eruption-on-anti-TNF and the screening-before-biologics-TB-and-hepatitis-and-live-vaccine-rule and the inflammatory-bowel-disease-and-uveitis-choosing-the-cytokine nuance - [[immunology/vaccines-immunotherapy]], [[infectious-diseases/tuberculosis]], [[gastrointestinal/bowel-disease]], [[nervous-system/sensory-systems]]); and the triggers-and-exacerators (the-streptococcal-guttate-psoriasis-in-a-child-with-a-sore-throat-weeks-earlier and beta-blockers-and-lithium-and-antimalarials-and-NSAIDs-and-steroid-withdrawal-rebound-pustular-psoriasis-and-hIV-and-pregnancy-post-partum-flares and alcohol-and-smoking-and-obesity-and-stress - [[infectious-diseases/hiv]], [[psychiatry/psychotic-disorders]]-lithium, [[pharmacology/adverse-reactions]], the post-partum row in [[obstetrics-gynaecology/postnatal-period]]).**
-:::
+**Basement membrane zone**: the junction between epidermis and dermis. Basal keratinocytes are anchored to it by **hemidesmosomes**, which contain the proteins **BP180** and **BP230**.
 
-## Follicles, infections, drugs, blisters
+**Dermis**: connective tissue of collagen and elastin, containing blood vessels, lymphatics, nerves and the skin appendages: **hair follicles** with their **sebaceous glands** (together, the pilosebaceous unit), **eccrine sweat glands** (for thermoregulation, all over the body) and **apocrine glands** (axillae and groins).
 
-::: definition Acne, hidradenitis and follicular disease {#def-acne}
-**Acne vulgaris (the pilosebaceous-unit - androgen-driven-sebaceous-lipid-output-and-Cutibacterium-acnes-colonisation-and-follicular-keratinisation-and-innate-inflammatory-activation and the comedone-papule-pustule-nodule-cyst-graded-morphology with face-chest-back-distribution and the scarring-and-pigmentation-stakes-in-skin-of-colour - [[musculoskeletal/skin-cancer]]-pigmentation-adjacent, [[cell-biochemistry/signalling-cell-cycle]]-androgen-receptor-adjacent; management - the-topical-retinoid-and-benzoyl-peroxide-and-topical-antibiotic-combination-with-antibiotic-resistance-stewardship-and-the-never-topical-monotherapy-antibiotic rule and the hormonal options - combined-oral-contraceptive-and-spironolactone-for-the-adult-female-jawline-pattern - [[endocrine/reproductive-endocrinology]], [[obstetrics-gynaecology/contraception-fertility]], [[microbiology/antimicrobials]]; and the systemic tier - oral-tetracyclines-photosafety-and-pregnancy-avoidance-isotretinoin-with-the-teratogenicity-contraception-and-pregnancy-prevention-programme-rigour-and-the-psychiatric-and-inflammatory-bowel-disease-debate-honesty and the isotretinoin-monitoring-lipids-and-liver-context and the-acne-scar-laser-and-subcision-referral-timing - [[pharmacology/patient-variation]], [[microbiology/bacteria]]); rosacea-acne-flavours (the-centrofacial-erythema-telangiectasia-flush-triggers-spicy-alcohol-heat-and-demodex-and-oculor-rosacea-and-rhinophyma and the perioral-dermatitis-and-steroid-induced-rosacea-from-face-cream-misapplication and the differential-against-lupus-malar-rash with the photo-distribution-and-sparing-nasolabial-fold nuance - SLE rash rows in [[musculoskeletal/connective-tissue-vasculitis]], the ocular-surface dry-eye overlap in [[nervous-system/sensory-systems]]); hidradenitis suppurativa (the-follicular-occlusion-apocrine-site-suppurative-disease - axillae-groin-perineal-and-under-breast-tunnels-and-tracts-and-double-comedones-and-odorous-discharge-and-scarring with the delay-in-diagnosis-shame-and-smoking-and-obesity-and-metabolic-and-IBD-and-arthritis-associations and the stepwise-management - topical-and-intralesional-steroid-clindamycin-zinc-combinations-and-biologic-adalimumab-and-secukinumab-licensed-options-and-the-wide-excision-and-plastic-reconstruction-surgery-for-tunnel-disease and the mental-health-burden-this-disease-is-designed-to-create - [[gastrointestinal/bowel-disease]], the PsA association adjacency of [[musculoskeletal/inflammatory-arthritis]], [[psychiatry/mood-disorders]], [[surgery/wounds-surgical-infection]]).**
+**Subcutis**: fat and connective tissue, which insulates, cushions and stores energy.
 :::
 
-::: definition Skin infections {#def-infections}
-**Bacterial (impetigo-crusted-honey-coloured-lesions-of-childhood-and-ecthyma-and-folliculitis-furunculosis-carbuncle with the S aureus-and-GAS-territory and the MRSA-and-community-transmission-and-hygiene-bundle - [[microbiology/bacteria]], [[infectious-diseases/healthcare-infections]]; cellulitis-and-erysipelas - the-streptococcal-dermal-infection-with-the-tinea-pedis-and-crack-and-wound-entry-point-and-lymphatic-damage-and-recurring-episode-prophylaxis-and-the-do-not-omit-differential-list - the-stasis-dermatitis-bilateral-red-legs-mimic-and-the-necrotising-fasciitis-pain-out-of-proportion-toxicity-crepitus-spread-fast-pair - the vascular review in [[surgery/vascular-urological-surgery]] and the necrotising-infection-surgery rule in [[surgery/wounds-surgical-infection]]; and erysipelas-versus-cellulitis-naming-reality, the dental-and-perianal-and-bite-organisms-adjacent - bites and water exposures in [[microbiology/bacteria]]); viral (HSV-recurrent-vesicles-with-eczema-herpeticum-over-skin-disease-as-an-ophthalmic-and-admission-emergency-and-neonatal-and-encephalitis-adjacency - [[microbiology/viruses]], [[paediatrics/newborn]], [[nervous-system/neuroinflammation]]; VZV-dermatomal-shingles-with-the-post-herpetic-neuralgia-prevention-vaccination-and-early-antiviral-window-and-the-disseminated-in-immunosuppressed-and-ophthalmicus-urgency - [[immunology/immunodeficiency]], [[public-health/vaccination-programmes]], the ophthalmic-division point in [[nervous-system/sensory-systems]]; molluscum-and-warts-with-the-eczema-complication-and-immunosuppression-signalling and HP-vaccination-adjacent anogenital disease - [[infectious-diseases/sexually-transmitted-infections]], [[public-health/vaccination-programmes]]; and the exanthems and drug-viral-confusion in children - [[paediatrics/acute-childhood-illness]]); fungal-and-parasitic (tinea-capitis-and-corporis-and-pedis-and-cruris-and-unguium with the KOH-and-culture-diagnosis and the terbinafine-and-azole-and-phototherapy-mimic-boundaries and the tinea-incognito-from-misapplied-steroid - [[microbiology/fungi-parasites]]; candida-intertrigo-and-nappy-rash-and-vulvovaginitis-and-line-infections with the diabetes signal - [[endocrine/diabetes-complications]], [[infectious-diseases/healthcare-infections]]; scabies-with-the-web-space-and-genital-nodules-and-night-itch-and-household-treatment-and-crusted-in-the-neurologically-impaired-immunosuppressed and pediculosis - the itch-clinic bread and butter - [[public-health/communicable-disease-control]], crusted-scabies-in-care-homes - [[infectious-diseases/healthcare-infections]]).**
+The **stratum corneum** is the main barrier, often pictured as a brick wall: corneocytes are the bricks, and lipids from lamellar bodies (ceramides, cholesterol, free fatty acids) are the mortar. **Filaggrin** aggregates keratin and is broken down into natural moisturising factors. Several skin diseases are, at heart, diseases of barrier or adhesion: atopic eczema (barrier), pemphigus (desmosomes) and bullous pemphigoid (hemidesmosomes).
+
+::: theorem Barrier failure drives inflammation {#thm-barrier}
+When the epidermal barrier fails, water escapes, and irritants, allergens and microbes penetrate the skin. This activates innate and adaptive immune responses, which cause **inflammation and itch**. Scratching damages the barrier further, so barrier failure and inflammation reinforce each other in a self-sustaining **itch–scratch cycle**.
 :::
 
-::: definition Drug eruptions and blistering disease {#def-drug-blister}
-**The drug-rash taxonomy (the-morbilliform-drug-eruption-as-the-common-benign-default-and-the-timing-rules - days-to-two-weeks-new-drug-and-the-coal-and-abacavir-HLA-B*5701-and-carbamazepine-HLA-B*1502-and-HLA-A*3101-ancestry-genetics - [[pharmacology/patient-variation]], [[genetics/common-disease-genetics]]; the severe cutaneous adverse reactions - SJS-and-TEN-with-the-mucositis-and-detachment-surface-area-and-Nikolsky-and-the-drug-stop-immediately-allopurinol-and-anticonvulsants-and-nevirapine-and-sulfonamides-culprits-and-the-burn-unit-and-SCORTEN-era-care and DRESS-with-the-facial-swelling-and-eosinophilia-and-hepatic-and-renal-and-hematologic-organ-involvement-and-viral-reactivation-HHV-6-flare and AGEP-with-the-pustules-and-fever-and-antibiotic-association and the fixed-drug-eruption-recurrence-at-the-same-spot - [[infectious-diseases/immunocompromised-host]], [[gastrointestinal/liver-disease]], [[renal/acute-kidney-injury]], [[blood/haematopoiesis]]); the immunobullous diseases (the-autoantibodies-against-dermal-epidermal-adhesion-molecules - pemphigus-vulgaris-anti-desmoglein-intraepidermal-flaccid-blisters-and-oral-erosions-as-first-presentation-and-the-Nikolsky-sign-and-the-clinician-hunt and bullous-pemphigoid-anti-hemidesmosome-tense-blisters-on-elderly-skin-with-urticarial-prodrome-and-the-drug-association-DPP4-inhibitor-honesty and dermatitis-herpetiformis-with-coeliac-gluten-sensitive-enteropathy-twin and linear-IgA-and-drug-flavours and the porphyria-cutanea-tarda-and-pseudoporphyria-blistering-sun-exposed-skin - [[immunology/autoimmunity]], [[gastrointestinal/bowel-disease]]-coeliac, the DPP4 bullous pemphigoid row in [[endocrine/diabetes]]; diagnosis - punch-for-H-E-and-perilesional-for-direct-immunofluorescence-serum-BP180-BP230-desmoglein-1-2-antibodies and the immunosuppression-management-dapsone-and-azathioprine-and-mycophenolate-steroid-sparing-and-rituximab-for-pemphigus and wound-and-nutrition-and-fluid-support-for-extensive-blisters and the admission-thresholds); and the urgent rashes (the-purpura-with-systemic-features-vasculitis-meningococcaemia-coagulopathy-platelet-questions workup - [[musculoskeletal/connective-tissue-vasculitis]], [[blood/haemostasis-bleeding]], [[infectious-diseases/fever-sepsis]]; the skin-flare-that-is-erythroderma - the-scalded-patient-differential psoriasis-drug-lymphoma-Sezary-and-the-temperature-and-fluid-and-protein-and-high-output-cardiac-physiology of total-body-skin-failure and the do-not-overlook drug-with-dose reaction cause - [[musculoskeletal/inflammatory-arthritis]], [[blood/lymphoma-myeloma]], [[cardiovascular/circulation-blood-pressure]]).**
+::: proof
+Loss-of-function variants in the filaggrin gene (*FLG*) are the strongest genetic risk factor for atopic eczema. Through the leaky barrier, allergens meet dendritic cells and drive a type 2 immune response with **IL-4, IL-13 and IL-31**: IL-4 and IL-13 further reduce filaggrin and lipids, and IL-31 causes itch. Scratching damages the epidermis and lets in more allergens and *Staphylococcus aureus*. Treatment works on both sides: emollients repair the barrier, and anti-inflammatory treatment breaks the immune loop.
 :::
 
-::: example The itchy hands of a cleaner {#ex-hand-dermatitis}
-A 34-year-old supermarket checkout cleaner has 8 months of itchy, fissured, scaly finger-sides and palms, worse after work; no asthma but a childhood eczema history; she washes hands with sanitiser constantly, wears nitrile gloves under cotton liners sometimes; potassium hydroxide of the edges of the rash at a pharmacist visit was negative.
-::: solution
-**Chronic hand dermatitis, and the differential is irritant-versus-allergic-contact-versus-atopic-flare-versus-tinea-versus-psoriasis - usually several at once ([[#def-eczema]]): the exposure-history-forensics - wash-frequency-and-sanitiser-and-glove-occlusion-and-detergent-splash-and-food-contact-and-the-hours-per-day-wet-work that makes this an occupational disease with compensation implications - [[public-health/environmental-occupational]]; the investigations - patch-testing-for-nickel-and-fragrance-and-accelerator-and-preservative-and-disinfectant-and-glove-chemicals-and-repeat-open-application-testing-of-her-own-sanitiser-and-fungal-retesting-because-one-negative-potassium-hydroxide-does-not-close-the-door - [[clinical-skills/laboratory-tests]], [[microbiology/fungi-parasites]]; the management bundle - wet-work-minimisation-and-glove-protocol-the-right-glove-changed-not-worn-all-day-and-cotton-liners-reality-and-fragrance-free-cleanser-and-emollient-after-every-wash-and-potent-topical-steroid-timed-not-timid-with-then-calcineurin-or-steroid-sparing-maintenance and the alitretinoin-for-refractory-endogenous-hand-eczema-niche-with-its-teratogenic-counselling - [[pharmacology/dosing-principles]], [[obstetrics-gynaecology/contraception-fertility]]; the escalation - dupilumab-for-hand-eczema-phenotypes-per-licensing and phototherapy-partial-hand-narrowband-UVB-or-PUVA-or-alitretin-plus-UVA-combination-era - [[immunology/vaccines-immunotherapy]]; and the occupational close - the-employer-conversation-about-glove-and-cleanser-and-rota-changes documented as a clinical recommendation and the-occupational-health-referral and the "this rash is your job" honesty that determines whether the treatment can work at all - [[clinical-skills/communication]], [[clinical-skills/records-handover]].**
-:::
+## Describing skin lesions {#sec-lesions}
+
+Accurate description makes diagnosis possible and lets colleagues understand what you saw. Describe the **distribution** (where on the body, symmetry, sun-exposed or covered areas, flexures or extensors), then the **individual lesions**: their type, size, shape, colour, surface, and how they feel.
+
+::: definition Primary and secondary lesions {#def-lesions}
+**Primary lesions** arise directly from the disease:
+
+- **macule**: a small, flat area of colour change, not palpable; a larger one is a **patch**;
+- **papule**: a small raised solid lesion; a **nodule** is a larger one, often deeper;
+- **plaque**: a raised, flat-topped area larger than a papule, often formed by papules merging;
+- **vesicle**: a small blister containing clear fluid; a larger one is a **bulla**;
+- **pustule**: a visible collection of pus (which may be sterile, as in pustular psoriasis);
+- **wheal**: a transient, itchy, raised oedematous swelling, lasting less than 24 hours (urticaria);
+- **petechiae** and **purpura**: small and larger areas of bleeding into the skin that **do not blanch** on pressure.
+
+The size that separates small from large (macule from patch, papule from nodule, vesicle from bulla) is about 0.5 cm in some textbooks and 1 cm in others.
+
+**Secondary changes** develop as a lesion evolves or is scratched: **scale** (flakes of stratum corneum), **crust** (dried serum, blood or pus), **erosion** (loss of part of the epidermis, healing without a scar), **ulcer** (loss of epidermis and some dermis, which can scar), **excoriation** (a scratch mark), **lichenification** (thickening with exaggerated skin markings from chronic rubbing), **atrophy** (thinning) and **scar**.
 :::
 
-::: example The blisters and the new antibiotic {#ex-drug-reaction}
-Day 12 of co-trimoxazole for a wound infection: fever 39.2, painful red eyes, mouth ulcers, dusky atypical targetoid macules on the trunk, a few flaccid blisters she can spread with lateral pressure, genital sore; CRP high, mild transaminitis, skin biopsy pending.
-::: solution
-**Stevens-Johnson syndrome until proven otherwise and the drug stopped an hour ago is not soon enough ([[#def-drug-blister]]): stop-co-trimoxazole-and-document-the-class-and-cross-reference-sulfonamide-and-azole-candidates-and-never-rechallenge and the same-hour-senior-dermatology-and-burn-unit-or-ICU-consultation-with-surface-area-calculation-and-SCORTEN-staging - [[microbiology/antimicrobials]], [[emergency-critical-care/critical-care]], the burn-unit adjacency of [[surgery/trauma]]; the care bundle - fluid-and-electrolyte-and-nutrition-management-and-temperature-control-and-sterile-handling-and-epidermal-removal-strategy-debate-and-early-eye-lysis-of-adhesions-and-urogenital-and-airway-review-and-the-vTE-and-infection-and-pain-adjuncts - [[renal/water-sodium]], [[gastrointestinal/clinical-nutrition]], [[nervous-system/sensory-systems]], [[blood/thrombosis-anticoagulation]]; the differential held open - SJS-versus-TEN-spectrum-versus-DRESS-versus-AGEP-versus-EM-infection-associated-versus-IgA-bullous-and-the-perilesional-immunofluorescence-that-separates-autoimmune-blisters - [[clinical-skills/laboratory-tests]], [[pathology/diagnostic-pathology]]; and the aftermath - the-cicatricial-sequelae list - dry-eye-and-blinding-conjunctival-scarring-and-skin-and-vaginal-and-oesophageal-stenoses-and-nail-loss and the long follow-up with ophthalmology and gynaecology and plastics and the incident-reporting-drug-regulatory-yellow-card-or-equivalent duty and the record that makes this a lifelong documented severe allergy - the stricture adjacency of [[gastrointestinal/oesophagus-stomach]], the gynaecology scarring referral, [[clinical-skills/patient-safety]], [[pharmacology/adverse-reactions]].**
-:::
-:::
+Colour needs care in skin of colour. **Erythema** may look violaceous, dark brown or grey on darker skin and is easier to miss; warmth, swelling and texture help. Inflammation often leaves **post-inflammatory hyperpigmentation** lasting months. Teaching images have historically shown mainly white skin, which contributes to delayed diagnosis in people with darker skin.
 
-::: example The red legs that were never cellulitis {#ex-stasis}
-An 78-year-old with bilateral swollen ankles and varicose veins has had four "cellulitis" admissions in a year, each treated with IV antibiotics; today both shins are red, warm, scaly and weeping with brown discolouration, no fever, normal WCC and CRP, toes warm.
-::: solution
-**Stasis dermatitis with lipodermatosclerosis mislabelled as recurrent cellulitis - the commonest dermatology inpatient error ([[#def-infections]]-cellulitis-row): the discriminators - bilateral-and-background-redness-versus-unilateral-and-acute-and-systemic-toxicity and normal-inflammatory-markers-and-afebrile-and-the-haemosiderin-and-pitting-and-varicose-context - and the honest statement that cellulitis is almost always unilateral and usually has a portal of entry to find - [[clinical-skills/physical-examination]], [[clinical-skills/laboratory-tests]]; the treatment flip - compression-when-arterially-safe-ABPI-first-and-topical-treatment-of-the-eczema-and-emollients-and-leg-elevation-and-treat-the-tinea-pedes-portal-and-avoid-repeat-antibiotics-and-their-C.diff-and-rashes - the vascular review in [[surgery/vascular-urological-surgery]], [[pharmacology/adverse-reactions]], [[microbiology/fungi-parasites]]; the recurrence-prevention programme - the-long-stretch-compression-and-exercise-and-weight-and-oedema-cause-review-cardiac-renal-venous-and-the-care-home-and-community-nurse-education so the next red leg is assessed not assumed - [[cardiovascular/heart-failure]], [[renal/chronic-kidney-disease]], [[gastrointestinal/clinical-nutrition]], [[public-health/health-systems-economics]]; and the stewardship audit-value - bilateral-red-legs-are-a-antibiotic-waste-and-harm-signal worth counting and correcting service-wide - [[infectious-diseases/stewardship-outbreaks]], [[clinical-skills/records-handover]].**
-:::
-:::
-
-::: example The psoriasis that exploded after the course {#ex-rebound}
-A 41-year-old with mild plaque psoriasis received a short oral prednisolone course for a chest infection two weeks ago; he now presents febrile with sheets of pustules on angry red skin across trunk and limbs, feeling miserable, HR 112.
-::: solution
-**Generalised pustular psoriasis precipitated by systemic steroid withdrawal - the classic iatrogenic flip ([[#def-psoriasis]]-triggers-row): the assessment - drug-and-infection-and-pregnancy-and-stopping-trigger-history and the differentials of acute generalised exanthematous pustulosis-from-an-antibiotic-and-infected-erythroderma-and-IgA-pemphigus and the bloods - FBC-and-CRP-and-liver-and-renal-and-calcium-and-albumin with the hypocalcaemia-hypoalbuminaemia-and-high-output-and-fluid-and-thermoregulation risks of skin failure - [[#def-drug-blister]]-erythroderma-logic, [[renal/potassium-calcium-phosphate]], [[cardiovascular/circulation-blood-pressure]], [[microbiology/antimicrobials]]; the management - dermatology-emergency-admission-and-supportive-bundle-and-systemic-therapy-choice-acitretin-or-ciclosporin-or-infliximab-or-il36-adjacent-targeted-agents-per-specialist-assessment-with-the-infection-screen-before-fast-immunosuppression - [[immunology/vaccines-immunotherapy]], [[infectious-diseases/tuberculosis]]; the system-lesson - the-inner-city-prescribing-habit-of-oral-steroids-for-everything-needing-anti-inflammatory-cover in populations where psoriasis is common, and the patient-facing teaching that psoriasis patients should know their steroid-rebound risk and ask for the dermatology phone number before taking any course - [[pharmacology/adverse-reactions]], [[clinical-skills/communication]]; and the after-action - the-psoriasis-control-plan-and-the-dermatology-referral-that-should-have-existed-years-ago and the mental-health check after a disfiguring explosion of skin disease - [[psychiatry/mood-disorders]], [[public-health/health-systems-economics]].**
-:::
-:::
-
-::: quiz
-The distribution most characteristic of allergic contact dermatitis is:
-- [ ] Symmetric flexural surfaces in a child
-- [x] Sharp geometric borders matching the exposure - watchstrap, waistband, earring, cosmetic margin
-- [ ] Dermatomal vesicles crossing the midline
-- [ ] Solitary annular scaly plaque with central clearing
-::: solution
-**Geometry-is-the-giveaway for contact ([[#def-eczema]]); symmetric-flexural suggests atopic dermatitis; dermatomal-vesicles are shingles and do not respect the midline as a rule - [[#def-infections]]-VZV-row; a solitary annular scaly plaque with a raised active border suggests tinea and deserves potassium hydroxide or culture before steroid - [[microbiology/fungi-parasites]], [[clinical-skills/laboratory-tests]]; and patch-testing distinguishes allergic from irritant contact when the history is equivocal - [[immunology/hypersensitivity]].**
-:::
-:::
+The extent of skin disease is often estimated as a **percentage of body surface area (BSA)**. A useful rule is that the area of a person's palm with the fingers together is about **1%** of their BSA. The amount of topical treatment needed is measured in **fingertip units (FTU)**: the amount squeezed from a standard tube along the distal segment of an adult's index finger, about **0.5 g**, which covers an area of skin equal to two adult palms, about 2% of BSA.
 
 ::: widget plot
-f: 65*exp(-x/4)+4; 65*exp(-x/14)+4
-x: 0, 16
-y: 0, 75
-labels: \text{weeks},\ \%\text{symptom burden (DLQI-scaled)};\ \text{high-potency steroid 2 weeks then proactive weekend use};\ \text{reactive-on-flares-only strategy}
-caption: Atopic dermatitis control strategy comparison in teaching shape ([[#def-eczema]]): short intensive therapy followed by proactive twice-weekly application to previously affected sites reduces flares compared with purely reactive treatment, because subclinical type-2 inflammation persists between visible lesions - the trial logic now in most guidelines and the reason the "weekend steroid" conversation belongs at diagnosis, not relapse four ([[epidemiology-ebm/randomised-trials]], [[pharmacology/dosing-principles]], [[immunology/adaptive-responses]]).
+f: 0.25*x*a*7
+x: 0, 100
+y: 0, 400
+sliders: a=1:1:2:1
+hlines: 100
+labels: \text{grams per week}
+title: Topical treatment needed per week
+caption: Grams needed per week to treat a percentage of body surface area with $a$ applications a day, at 1 FTU (0.5 g) per 2% BSA. Treating 30% of the body twice daily needs about 105 g a week: under-prescribing is a common cause of apparent treatment failure. Illustrative arithmetic, not a prescription.
 :::
 
-## Photography, referral and the two-week rule
+## Eczema {#sec-eczema}
 
-Two cross-cutting habits finish the chapter. First, photograph rashes that move and presentations that will change by the time anyone senior sees them - a dated clinical image in the record converts "was it really urticaria?" into a solvable question, and teledermatology image-referral has shortened waits for pigmented lesions and suspicious ulcers where malignancy timing matters - always with consent, storage governance and the identity-matching safeguards the imaging ethics require ([[clinical-skills/records-handover]], [[musculoskeletal/skin-cancer]], [[medical-ethics-law/confidentiality]], [[public-health/health-systems-economics]]). Second, know your two-week-wait and urgent-referral triggers cold, because skin cancer and severe drug reactions are the two dermatological clocks nobody can win back: any single lesion that grows, changes, bleeds, itches on one spot or refuses to heal for a month - especially against a background of immunosuppression or prior radiotherapy - deserves expert eyes, and any rash with mucositis, detachment, facial swelling with systemic upset or purpura plus feeling systemically unwell is a same-day hospital conversation, not an outpatient form ([[#def-drug-blister]], [[musculoskeletal/skin-cancer]], [[emergency-critical-care/acute-assessment]]).
+::: definition Eczema (dermatitis) {#def-eczema}
+**Eczema** (used interchangeably with **dermatitis**) is an inflammatory skin reaction with itch, poorly demarcated erythema and, depending on the stage, vesicles, oozing and crusting (acute) or dryness, scaling and lichenification (chronic). The main types are:
+
+- **Atopic eczema**: a chronic relapsing condition usually starting in infancy or early childhood, often with a personal or family history of asthma, allergic rhinitis or food allergy. In infants it affects the face and extensor surfaces; in older children and adults the **flexures** (elbows, knees, wrists, neck). In skin of colour, it may show more follicular papules, extensor involvement and pigment change.
+- **Irritant contact dermatitis**: direct damage from water, detergents, solvents and friction, typically on the hands of health workers, cleaners, hairdressers and caterers.
+- **Allergic contact dermatitis**: a type IV (delayed) hypersensitivity to a specific allergen such as nickel, fragrances, preservatives (for example methylisothiazolinone), hair dye (para-phenylenediamine), rubber chemicals or topical medicines. The distribution often points to the cause. **Patch testing** identifies the allergen.
+- **Seborrhoeic dermatitis** (greasy scaling of the scalp, eyebrows and nasolabial folds, linked to *Malassezia* yeasts), **discoid**, **venous (stasis)** eczema of the lower legs, and **pompholyx** (vesicles on the palms and soles).
+:::
+
+The management of atopic eczema rests on three activities: repairing the barrier, controlling inflammation, and treating complications.
+
+- **Emollients** are used generously and often, including as a soap substitute; the best emollient is one the person will use. Different textures suit different areas and times.
+- **Topical corticosteroids** are the main anti-inflammatory treatment, chosen by **potency** for site and severity: **mild** (hydrocortisone 1%), **moderate** (clobetasone butyrate 0.05%), **potent** (betamethasone valerate 0.1%, mometasone furoate 0.1%) and **very potent** (clobetasol propionate 0.05%). Weaker preparations are used on the face, flexures and in infants. They are applied once or twice daily for flares, and sometimes twice weekly on flare-prone areas to prevent relapse.
+- **Topical calcineurin inhibitors** (tacrolimus, pimecrolimus) are steroid-sparing options, useful on the face and eyelids.
+- For severe disease under specialist care: **phototherapy**; systemic immunosuppressants (**ciclosporin**, **methotrexate**, azathioprine, mycophenolate); biological drugs that block the type 2 pathway (**dupilumab** against the IL-4 receptor alpha chain; **tralokinumab** and **lebrikizumab** against IL-13); and oral **JAK inhibitors** (abrocitinib, baricitinib, upadacitinib).
+
+Fear of topical steroids is a common reason for undertreatment. Used appropriately they are safe: skin thinning and systemic effects come mainly from prolonged use of potent preparations on thin skin or large areas. Clear instructions on which preparation, where, how much and for how long are part of treatment.
+
+::: example Planning treatment for a baby {#ex-infant}
+A 9-month-old boy has had itchy eczema for four months, now affecting his cheeks, the fronts of both legs and the backs of both arms, with excoriations. His parents are using a small amount of a "natural" cream once a day and are worried about steroids. Using the palm rule, about 25% of his skin is affected. How would you plan his treatment?
+::: solution
+**Explanation**: atopic eczema is a common, treatable condition of a leaky skin barrier and inflammation ([[#thm-barrier]]); it often improves with age; treatment controls it but does not cure it.
+
+**Emollients**: liberal, frequent use of a bland emollient (several times a day), including as a soap substitute for washing; prescribe enough (for an infant with widespread eczema, perhaps 250 g a week). Avoid fragranced products.
+
+**Topical corticosteroid** for flares: a **mild** steroid (hydrocortisone 1%) for the face, and a mild or **moderate** one for the limbs, applied once or twice daily to inflamed skin until it settles (usually 1 to 2 weeks). Explain that short courses used this way do not thin the skin.
+
+**Safety-netting**: return urgently if the eczema suddenly worsens with painful, clustered, punched-out erosions or blisters, or if he becomes unwell (possible **eczema herpeticum**). Signs of bacterial infection (weeping, crusting, pustules, fever) also need review.
+:::
+:::
+
+::: warning Eczema herpeticum is an emergency
+**Eczema herpeticum** (herpes simplex spreading through eczematous skin) appears as clusters of painful, punched-out erosions or vesicles, often with fever. It is easily mistaken for a bacterial infection or a simple flare. It needs **immediate antiviral treatment** (aciclovir) and same-day specialist assessment, with urgent ophthalmology review if the eyes are involved. Do not respond to a sudden painful flare with stronger steroids alone.
+:::
+
+## Psoriasis {#sec-psoriasis}
+
+::: definition Psoriasis {#def-psoriasis}
+**Psoriasis** is a chronic, immune-mediated inflammatory skin disease affecting about 2% of people in the UK and Europe. Dendritic cells produce **IL-23**, which sustains **Th17** cells producing **IL-17**; IL-17 and TNF drive keratinocytes to proliferate and attract neutrophils. The epidermis turns over in days rather than weeks, producing thick, scaly plaques.
+
+Main forms:
+
+- **Chronic plaque psoriasis** (most common): well-demarcated, red or salmon-pink plaques with silvery-white scale, on **extensor surfaces** (elbows, knees), the **scalp**, the lower back and the umbilicus. On darker skin, plaques may look violaceous or grey-brown and leave pigment change. New plaques can appear at sites of injury (the **Koebner phenomenon**).
+- **Guttate psoriasis**: many small "raindrop" plaques on the trunk, often in children and young adults 2 to 3 weeks after a **streptococcal throat infection**.
+- **Flexural (inverse) psoriasis**: smooth, red, shiny plaques without scale in the groins, natal cleft and under the breasts.
+- **Pustular psoriasis**: localised to the palms and soles, or **generalised** (von Zumbusch type), which is a medical emergency with fever and sheets of pustules.
+- **Erythrodermic psoriasis**: involvement of more than 90% of the skin, an emergency (see [[#sec-drugs]]).
+- **Nail psoriasis**: pitting, onycholysis (separation of the nail from the bed), "oil-drop" discolouration and subungual hyperkeratosis; strongly associated with psoriatic arthritis.
+
+Triggers include streptococcal infection, stress, smoking, alcohol, skin injury and drugs (lithium, beta-blockers, antimalarials, and **withdrawal of systemic corticosteroids**, which can precipitate pustular flares).
+:::
+
+Psoriasis is a systemic inflammatory disease, associated with **psoriatic arthritis** ([[musculoskeletal/inflammatory-arthritis]]), **cardiovascular disease**, obesity, diabetes, fatty liver disease, **inflammatory bowel disease** and **depression**. NICE (CG153) recommends assessing severity (body surface area, **PASI**) and impact (**DLQI**), screening for psoriatic arthritis at least annually (for example with PEST), and assessing cardiovascular risk.
+
+Treatment follows a ladder:
+
+1. **Topical**: a **potent corticosteroid** with a **vitamin D analogue** such as calcipotriol for trunk and limbs; milder steroids or calcineurin inhibitors for the face and flexures.
+2. **Phototherapy**: narrowband ultraviolet B.
+3. **Systemic non-biological drugs**: **methotrexate** (usually first choice), **ciclosporin**, **acitretin** (a highly teratogenic oral retinoid), apremilast and deucravacitinib.
+4. **Biological drugs** for severe disease: inhibitors of TNF (such as adalimumab), IL-17 (such as secukinumab and bimekizumab), IL-23 (such as guselkumab and risankizumab) and IL-12/23 (ustekinumab). Many people now achieve clear or nearly clear skin.
+
+::: example Psoriasis beyond the skin {#ex-psoriasis}
+A 46-year-old man has had chronic plaque psoriasis for 20 years. Plaques now cover about 15% of his body, including his scalp and hands, despite topical treatment, and he avoids swimming with his children. His nails are pitted, and for six months his right middle finger has been swollen along its whole length, with morning stiffness in his hands. He smokes, drinks 40 units of alcohol a week, has a BMI of 34 kg/m² and his blood pressure is 152/94 mmHg. What problems need to be addressed, and what are the treatment options?
+::: solution
+**Skin**: extensive plaque psoriasis (15% BSA, with high-impact sites: scalp and hands) uncontrolled by topical therapy, with a substantial effect on his quality of life (a DLQI would quantify this). He qualifies for **phototherapy or systemic treatment**.
+
+**Joints**: nail pitting with **dactylitis** and inflammatory morning stiffness strongly suggest **psoriatic arthritis**. He needs referral to rheumatology, because early treatment prevents joint damage ([[musculoskeletal/inflammatory-arthritis]]).
+
+**Comorbidities**: smoking, heavy drinking, obesity and raised blood pressure add to the cardiovascular risk that psoriasis already carries. He needs cardiovascular risk assessment and support to stop smoking, reduce alcohol and lose weight; mood should be asked about.
+
+**Treatment options**: **methotrexate** treats skin and joints but is hepatotoxic, a problem with his alcohol intake. **Ciclosporin** is limited by his hypertension. A **biological drug** (an IL-17, IL-23 or TNF inhibitor) is a strong option for skin and joints together, after screening for tuberculosis and hepatitis.
+:::
+:::
+
+## Acne, rosacea and hidradenitis suppurativa {#sec-acne}
+
+::: definition Acne vulgaris {#def-acne}
+**Acne vulgaris** is a chronic inflammatory disease of the pilosebaceous unit, affecting most adolescents and many adults. Four processes contribute: androgen-driven **sebum production**; **abnormal keratinisation** of the follicle opening, forming **comedones** (open "blackheads" and closed "whiteheads"); *Cutibacterium acnes*; and **inflammation**, producing papules, pustules and, in severe acne, **nodules** and **cysts**. Scarring and post-inflammatory hyperpigmentation can be permanent, and acne of any severity can cause significant psychological distress.
+:::
+
+In the UK, acne is managed according to NICE NG198 (2021). The first-line options are a **12-week course** of one of:
+
+- a fixed combination of topical **adapalene with benzoyl peroxide** (any severity);
+- a fixed combination of topical **tretinoin with clindamycin** (any severity);
+- a fixed combination of topical **benzoyl peroxide with clindamycin** (mild to moderate);
+- for moderate to severe acne, topical adapalene with benzoyl peroxide **plus** oral lymecycline or doxycycline, or topical **azelaic acid plus** oral lymecycline or doxycycline.
+
+Antibiotic **monotherapy** and combined topical and oral antibiotics are avoided, to limit resistance; an oral antibiotic is normally used for no more than 6 months. Tetracyclines are not used in pregnancy or under 12. People with nodulocystic acne, scarring, persistent pigmentation, significant psychological distress, or acne that has not responded to adequate first-line courses are referred to a **consultant dermatologist-led team**.
+
+### Isotretinoin {#sec-isotretinoin}
+
+Oral **isotretinoin** is a retinoid that shrinks sebaceous glands, greatly reduces sebum production and normalises follicular keratinisation. It is the only treatment that produces long-lasting remission of acne in many people after a single course. It is used for **severe acne**, and for acne that has not responded to adequate courses of standard treatment with systemic antibiotics and topical therapy, and it is prescribed only by, or under the supervision of, a **consultant dermatologist-led team** whose lead prescriber has expertise in systemic retinoids. It is not used under the age of 12.
+
+Its important harms and the safeguards around them, as set out by the UK Medicines and Healthcare products Regulatory Agency (MHRA), are:
+
+- **Teratogenicity**: isotretinoin causes severe birth defects. Anyone who could become pregnant must be enrolled in the **Pregnancy Prevention Programme**, which requires highly effective contraception from before treatment until at least one month after stopping, and **medically supervised pregnancy tests** before, during (usually monthly) and after treatment. Since October 2025, supervised testing may be carried out remotely where there is appropriate oversight.
+- **Psychiatric effects**: depression, anxiety, mood change and, rarely, suicidal thoughts have been reported. A review by the Commission on Human Medicines found that gaps in the evidence meant it was not possible to say whether isotretinoin definitely causes these effects. **Mental health is assessed before treatment**, including with patient-reported outcome measures, and monitored at every follow-up.
+- **Sexual side effects**: reduced libido and erectile dysfunction have been reported, in some cases persisting after treatment stops. People are asked about sexual function before starting and at follow-up.
+- **Common effects**: dry lips (almost universal), dry skin and eyes, nosebleeds, muscle and joint aches, photosensitivity, and raised blood lipids and liver enzymes, which are monitored with blood tests. Rare effects include benign intracranial hypertension, particularly if combined with a tetracycline, which is why the two are not given together.
+
+UK requirements have changed recently. In October 2023 the MHRA introduced measures that included a requirement for two independent prescribers to agree before isotretinoin was started in people under 18. In January 2026, after finding that this step had delayed access for some young people without clear evidence of added safety, the MHRA replaced the second-prescriber requirement with other measures: an updated (digital) **Acknowledgement of Risk Form**, a **patient information video** produced by the British Association of Dermatologists to be watched before treatment starts, and a regular **national clinical audit**. The Pregnancy Prevention Programme, the counselling and monitoring for mental health and sexual side effects, the lead-prescriber requirement, the patient reminder card and pharmacist checklist all continue, and the first appointment should be in person. Local guidance and the current MHRA advice should be followed, since these arrangements continue to evolve.
+
+### Rosacea and hidradenitis suppurativa
+
+**Rosacea** causes flushing, central facial redness and telangiectasia, often with papules and pustules but **without comedones**. Treatment includes trigger avoidance, topical ivermectin, metronidazole or azelaic acid, and oral doxycycline. Potent topical steroids on the face worsen rosacea and **perioral dermatitis**.
+
+**Hidradenitis suppurativa** causes painful recurrent nodules, abscesses and draining tunnels in the axillae, groins and under the breasts. It is linked to smoking and obesity, is often diagnosed late, and is treated with long antibiotic courses, biologics (adalimumab, secukinumab, bimekizumab) and surgery.
+
+## Urticaria {#sec-urticaria}
+
+**Urticaria** consists of **wheals**, each lasting less than 24 hours, from mast cell histamine release in the dermis; deeper swelling is **angio-oedema**. **Acute urticaria** (under 6 weeks) often follows a viral infection, less often a drug or food. **Chronic urticaria** (6 weeks or more) is usually **spontaneous**, sometimes induced by pressure, cold or scratching. Treatment is a regular **non-sedating H1 antihistamine**, up-dosed to as much as four times the licensed dose in chronic urticaria under supervision, with **omalizumab** for resistant disease.
+
+Two exceptions matter. **Angio-oedema without wheals** suggests a bradykinin-mediated cause, such as an **ACE inhibitor** or **hereditary angio-oedema**, which does not respond to antihistamines, corticosteroids or adrenaline. Wheals lasting more than 24 hours or leaving bruising suggest **urticarial vasculitis**. Urticaria with breathing difficulty, hypotension or collapse is **anaphylaxis** ([[emergency-critical-care/anaphylaxis]]).
+
+::: example Swollen lips without a rash {#ex-angioedema}
+A 63-year-old Black British man has had three episodes in two months of painless swelling of his lips and once his tongue, each lasting about two days. There is no itch and no rash. He started ramipril for hypertension four months ago. On one occasion an emergency department gave him chlorphenamine and hydrocortisone, with little effect. What is the likely cause and what should be done?
+::: solution
+The likely cause is **ACE-inhibitor-induced angio-oedema**. Angio-oedema **without wheals or itch**, lasting a day or more, unresponsive to antihistamines and corticosteroids, suggests a **bradykinin-mediated** mechanism: ACE normally breaks down bradykinin, so inhibiting it allows bradykinin to accumulate. It can start months or even years after the drug is begun, and is more common in people of Black African or Caribbean ancestry.
+
+**Ramipril is stopped permanently**, recorded as an adverse reaction, and ACE inhibitors avoided in future; another antihypertensive, such as a calcium-channel blocker, is chosen. Episodes may continue for some weeks. Tongue or throat swelling is an emergency because the airway can obstruct. If episodes persist or there is a family history, **C4 and C1-esterase inhibitor** levels are checked.
+:::
+:::
+
+## Skin infections {#sec-infections}
+
+::: definition Common skin infections {#def-infections}
+**Bacterial**
+
+- **Impetigo**: superficial infection with *Staphylococcus aureus* and/or *Streptococcus pyogenes*, mainly in children, with golden "honey-coloured" crusts. NICE NG153 recommends hydrogen peroxide 1% cream for localised non-bullous impetigo in people who are not systemically unwell, and an oral antibiotic such as flucloxacillin for widespread or bullous disease.
+- **Cellulitis** and the more superficial, sharply demarcated **erysipelas**: a hot, tender, spreading area of erythema, usually on **one** leg, often entering through a crack or tinea between the toes. Bilateral red legs are rarely cellulitis.
+- **Necrotising fasciitis**: rapidly spreading infection of the fascia with **pain out of proportion** to the visible signs and systemic toxicity; a **surgical emergency** ([[surgery/wounds-surgical-infection]]).
+
+**Fungal**: **dermatophyte (tinea)** infections of the body, feet, groin, scalp and nails, with annular scaly plaques and an active edge, confirmed by microscopy and culture of scrapings (treating tinea with a topical steroid alters its appearance: **tinea incognito**); and **candida** intertrigo with satellite pustules in moist skin folds.
+
+**Viral**: **herpes simplex** (grouped vesicles, recurrent at the same site); **herpes zoster** (shingles: pain and grouped vesicles in one **dermatome**; antiviral treatment within 72 hours of the rash; ophthalmic division involvement needs urgent eye assessment; vaccination reduces risk); **viral warts** and **molluscum contagiosum**.
+
+**Infestation**: **scabies**, from the mite *Sarcoptes scabiei*, with intense night-time itch, burrows in the finger webs and wrists, and genital papules. All household and close contacts are treated at the same time (usually permethrin cream, repeated after a week). **Crusted scabies** in frail or immunosuppressed people causes outbreaks in care homes.
+:::
+
+## Drug eruptions, blistering disease and skin failure {#sec-drugs}
+
+Most **drug eruptions** are a **morbilliform rash** of small red macules and papules starting 4 to 14 days after a new drug and settling when it is stopped. The skill is to recognise the warning features of the few life-threatening reactions: mucosal involvement, blistering or peeling, skin pain, facial swelling, fever and systemic illness.
+
+::: definition Severe cutaneous adverse reactions {#def-scar}
+**Stevens–Johnson syndrome (SJS)** and **toxic epidermal necrolysis (TEN)** are a spectrum of severe reactions in which keratinocytes die and the epidermis detaches. Usually 4 to 28 days after starting a drug, fever and malaise are followed by painful dusky macules, atypical targets, blisters and **epidermal detachment** (positive Nikolsky sign), with **erosions of two or more mucous membranes**. They are classified by the detached body surface area:
+
+- **SJS**: less than 10%;
+- **SJS/TEN overlap**: 10 to 30%;
+- **TEN**: more than 30%.
+
+Common culprits include **allopurinol**, **carbamazepine**, **lamotrigine**, **phenytoin**, **sulfonamides** (co-trimoxazole), **nevirapine** and oxicam NSAIDs. Risk is much higher with particular HLA alleles: **HLA-B\*15:02** with carbamazepine (testing is recommended before starting in people of Han Chinese and South-East Asian ancestry) and **HLA-B\*58:01** with allopurinol.
+
+The **SCORTEN** score estimates mortality from seven factors present within 24 hours of admission, each scoring 1 point: age 40 years or over; malignancy; heart rate 120 per minute or more; initial detached BSA more than 10%; serum urea more than 10 mmol/L; serum glucose more than 14 mmol/L; and serum bicarbonate less than 20 mmol/L. Predicted mortality rises steeply with the score, from a few per cent with 0 or 1 points to more than 90% with 5 or more.
+
+**Drug reaction with eosinophilia and systemic symptoms (DRESS)** starts later, usually 2 to 8 weeks after the drug, with fever, a widespread rash, **facial swelling**, lymphadenopathy, **eosinophilia** and involvement of the **liver**, kidneys, lungs or heart. Reactivation of human herpesvirus 6 is common. Anticonvulsants, allopurinol and some antibiotics are frequent causes.
+:::
+
+The first step in SJS/TEN and DRESS is to **stop the suspected drug**. People with SJS/TEN are managed in a burns or intensive care unit much as for a burn: fluids, temperature, wound, eye and mucosal care, nutrition and infection surveillance. The culprit must be avoided for life and the reaction reported (in the UK, through the Yellow Card scheme) ([[pharmacology/adverse-reactions]]).
+
+::: example A rash after a new drug {#ex-ten}
+A 52-year-old man started allopurinol for gout 18 days ago. For two days he has had fever, sore eyes and painful mouth ulcers, and now dusky red patches over his trunk with blisters; the skin peels off with light pressure over about 18% of his body. Heart rate 128 per minute. Urea is 12 mmol/L, glucose 9 mmol/L and bicarbonate 18 mmol/L. He has no history of cancer. Classify the reaction and calculate his SCORTEN.
+::: solution
+This is a severe cutaneous adverse reaction with epidermal detachment and mucosal involvement, typical of **SJS/TEN**. With 18% of BSA detached, it falls in the **SJS/TEN overlap** range (10 to 30%). Allopurinol, started 18 days ago, is the likely culprit.
+
+**SCORTEN**: age 40 or over (1); malignancy (0); heart rate 120 or more (1); detached BSA more than 10% (1); urea more than 10 mmol/L (1); glucose more than 14 mmol/L (0); bicarbonate less than 20 mmol/L (1). Total **5**, which predicts a very high mortality.
+
+**Management**: stop allopurinol immediately; transfer urgently to a burns or intensive care unit; fluids, warming, analgesia, wound care and nutrition; urgent ophthalmology review. Allopurinol must never be given again: document it as an allergy and report the reaction.
+:::
+:::
+
+**Immunobullous diseases** are caused by autoantibodies against the proteins that hold the skin together.
+
+- **Pemphigus vulgaris**: antibodies against **desmoglein 3** (often with desmoglein 1) split the epidermis, producing **flaccid** blisters and painful erosions; **oral erosions** are often the first sign. It is treated with corticosteroids and rituximab.
+- **Bullous pemphigoid**: antibodies against **BP180** and **BP230** split the skin below the epidermis, producing **tense** blisters on itchy skin, mainly in people over 70; some cases are linked to DPP-4 inhibitors (gliptins). Treatment includes very potent topical corticosteroids, doxycycline or oral corticosteroids.
+- **Dermatitis herpetiformis**: intensely itchy vesicles on the elbows, knees and buttocks, associated with **coeliac disease** and IgA deposits in the dermal papillae; it responds to a gluten-free diet and dapsone ([[gastrointestinal/bowel-disease]]).
+
+Diagnosis uses skin biopsies for histology and **direct immunofluorescence**, plus serum antibodies. **Erythroderma** is inflammation of more than 90% of the skin surface, from causes such as eczema, psoriasis, drug reactions and cutaneous T-cell lymphoma. It is a form of **acute skin failure**: heat and fluid loss, protein loss, infection risk and high-output cardiac strain. It needs urgent assessment and usually admission.
+
+::: quiz
+An 80-year-old woman has several weeks of itching followed by large, tense, fluid-filled blisters on her thighs and abdomen. The mouth is spared and the blisters do not spread with pressure. Which is the most likely diagnosis?
+- [ ] Pemphigus vulgaris
+- [x] Bullous pemphigoid
+- [ ] Toxic epidermal necrolysis
+- [ ] Dermatitis herpetiformis
+::: solution
+Tense blisters with an itchy prodrome in an older person, without mucosal involvement, are typical of **bullous pemphigoid**. Pemphigus causes flaccid blisters and erosions, usually with mouth involvement; TEN causes widespread painful detachment with mucosal involvement and systemic illness.
+:::
+:::
+
+::: history
+The London physician **Robert Willan** founded modern dermatology with *On Cutaneous Diseases* (from 1798), classifying skin diseases by the appearance of their lesions. In 1925 **William Goeckerman** at the Mayo Clinic introduced coal tar followed by ultraviolet light for psoriasis. The Scottish dermatologist **Alan Lyell** described toxic epidermal necrolysis in 1956. Isotretinoin was approved for severe acne in the United States in 1982; its teratogenicity led to some of the most stringent risk-management programmes for any medicine. In 2006 **Irwin McLean** and colleagues showed that filaggrin gene variants are a major risk factor for atopic eczema.
+:::
 
 ## Where this leads
 
-Immune mechanisms in [[immunology/hypersensitivity]] and [[immunology/autoimmunity]]; the psoriasis-joint axis in [[musculoskeletal/inflammatory-arthritis]]; hidradenitis and IBD in [[gastrointestinal/bowel-disease]]; drug genetics in [[pharmacology/patient-variation]]; infection management in [[microbiology/bacteria]] and [[microbiology/viruses]]; skin malignancy in [[musculoskeletal/skin-cancer]].
-
-::: history
-**Dermatology's slow emergence from venereology and cosmetics: the pattern-first Vienna school - Hebra's catalogue of skin architecture teaching a generation to look before they bled - and the unna-papule-herpes-classification era; the filaggrin-and-atopic-dermatitis-positional-cloning of 2006 as the day the atopic march gained its barrier mechanism and the eczema-genetics-and-allergic-disease-epidemiology of HLA-DQ-and-IL13-association-studies matured into the hygiene-and-microbiome-hypotheses - [[genetics/common-disease-genetics]], [[microbiology/microbiota]]; psoriasis from "leprosy's poor cousin" and the tar-and-dithranol-and-Fowler's-porcelain-lamp era to Gottlieb's-and-the-IL-23/17-axis-rationale that turned a skin disease into the flagship of cytokine medicine - [[immunology/vaccines-immunotherapy]]; the isotretinoin story - its teratogenic-scare-driven-risk-management-architecture becoming a model for every high-risk drug afterwards and its mood controversy that the evidence has largely, not entirely, quieted - [[pharmacology/patient-variation]], [[medical-ethics-law/research-ethics]]; Lyell's 1956 delineation of toxic epidermal necrolysis and the subsequent EuroSCAR-and-RegiSCAR case-control culprit-drug epidemiology that is pharmacovigilance's proudest methodological chapter - [[pharmacology/adverse-reactions]], [[epidemiology-ebm/observational-studies]], [[public-health/health-systems-economics]]; and Walshe's-and-Coombs'—the pemphigus-passive-transfer and immunofluorescence discoveries that converted blistering diseases from diagnoses of despair into antibody diseases with titres, treatments and remissions - [[immunology/autoimmunity]], [[pathology/diagnostic-pathology]].**
-:::
-
-::: exercise Sort the facial rash {level=2}
-A 29-year-old has 3 months of centrofacial redness, burning more than itching, visible vessels, papules without comedones, worse with wine and hot drinks, and a history of using a potent steroid cream "for dryness" on her cheeks. Give three differentials, the winner and the withdrawal plan.
-::: solution
-**The-three - papulopustular-rosacea-versus-steroid-induced-rosacea-and-perioral-dermatitis-versus-seborrhoeic-dermatitis with lupus and photosensitivity dermatoses held on the list - [[#def-acne]], [[musculoskeletal/connective-tissue-vasculitis]]-malar-comparison; the-winner given the trigger-history and morphology-absent-comedones is steroid-driven/rosacea-spectrum; the plan - stop-the-potent-steroid-with-warning-about-the-flare-within-days-and-explain-it-as-healing-not-failure and substitute-anti-inflammatory-topicals-metronidazole-or-ivermectin-or-azelaic-acid-per-phenotype-and-sun-protection-and-trigger-diary-and-the-oral-anti-inflammatory-tetracycline-course-with-photosafety-and-pregnancy-rules and the-refractory-laser-and-light-options-for-persistent-erythema-telangiectasia - [[pharmacology/patient-variation]], [[musculoskeletal/skin-cancer]]-sun-protection; the-ophthalmology-bridge - ocular-symptoms-questioned-routinely-and-dry-eye-workup with contact-lens-and-screen-time-context - [[nervous-system/sensory-systems]]; and the-protective-closing - the-record-that-says-steroid-induced-so-the-next-prescriber-does-not-restart-it and the gentle-conversation about skin-of-colour pigment and about cosmetics that do not clog - [[clinical-skills/records-handover]], [[musculoskeletal/skin-cancer]]-pigmentation.**
-:::
-:::
-
-::: exercise Don't miss lichen sclerosus {level=2}
-A 62-year-old has 2 years of vulval itching and soreness, treated repeatedly as "thrush"; examination finds white atrophic paper-like plaques with purpura and architectural loss and fissuring; she is embarrassed and has avoided examination before.
-::: solution
-**Lichen sclerosus with a delay bought by embarrassment and empirical antifungals ([[#def-structure]]-vocabulary, and the vulval-disease niche): the diagnosis-is-clinical-with-biopsy-when-atypical-or-treatment-failing-or-suspicious-and-the-ulcer-or-lump-or-hypertrophic-area-biopsy-because-differentiated-VIN-and-vulval-intraepithelial-and-squamous-cell-cancer-risk-is-real-if-modest - [[musculoskeletal/skin-cancer]], [[obstetrics-gynaecology/menstrual-pelvic-disorders]], [[pathology/cancer-diagnosis]]; the treatment-is-effective - ultrapotent-topical-corticosteroid-with-a-written-tapered-supervised-regimen-and-expected-symptom-relief-and-attenuated-scarring-progression and the follow-up-with-a-annual-review-and-self-palpation-teaching-that-preserves-anatomy-and-sexual-function - [[pharmacology/dosing-principles]], [[clinical-skills/communication]]; the-associated-disease-sweep - other-body-site-LS-and-autoimmune-thyroid-and-vitiligo-context and the-vaginal-oestrogen-and-emollient-and-no-irritants-supportive-set - [[musculoskeletal/connective-tissue-vasculitis]]-autoimmune-cluster-adjacent, [[endocrine/thyroid]], [[obstetrics-gynaecology/menopause]]; and-the-examination-equity-lesson - the-trauma-informed-and-chaperoned-and-position-choice-and-photography-consent-and-the-option-of-specialist-referral-rather-than-repeating-an-examination-she-dreads matter as much as the steroid - [[clinical-skills/physical-examination]], [[medical-ethics-law/consent-capacity]], [[clinical-skills/patient-safety]].**
-:::
-:::
+Skin cancer and pigmented lesions follow in [[musculoskeletal/skin-cancer]]. The immunology of allergy and autoimmune blistering is in [[immunology/hypersensitivity]] and [[immunology/autoimmunity]], the skin in lupus and dermatomyositis in [[musculoskeletal/connective-tissue-vasculitis]], pathogens in [[microbiology/bacteria]], [[microbiology/viruses]] and [[microbiology/fungi-parasites]], and adverse drug reactions in [[pharmacology/adverse-reactions]].
 
 ::: summary
-- Describe before you diagnose: morphology, distribution, timing and symptoms; a photograph and a timeline outperform most empirical steroid.
-- Eczema is barrier plus type-2 inflammation - emollients as medicine, potent topical steroids used properly and proactively, and the occupational and allergen hunt for hands.
-- Psoriasis is an IL-23/IL-17 systemic disease with a skin flag; ask about joints, nails, mood and metabolic risk at every review and treat to clear skin as a legitimate goal.
-- Antibiotics cause four dangerous rashes to remember - SJS/TEN, DRESS, AGEP and the benign morbilliform default - and stopping early is the treatment.
-- Blistering disease is diagnosed on immunofluorescence and treated on antibodies; pemphigus mucosal erosions precede skin by months and are missed.
-- Cellulitis is overdiagnosed bilaterally and underdiagnosed in the toxic; always ask what the red legs are not.
+- The epidermis is a renewing barrier of keratinocytes held together by desmosomes and anchored by hemidesmosomes; the stratum corneum (corneocytes and lipids, with filaggrin) is the main barrier.
+- Barrier failure drives inflammation, itch and scratching in a self-sustaining cycle, which is why emollients and anti-inflammatory treatment work together in atopic eczema.
+- Describe distribution, then lesion type (macule, papule, plaque, nodule, vesicle, bulla, pustule, wheal, purpura) and secondary changes. Erythema is harder to see on darker skin; pigment change is common after inflammation.
+- One palm is about 1% of body surface area; one fingertip unit (0.5 g) covers about 2%.
+- Eczema: emollients, topical steroids by potency and site, calcineurin inhibitors, and for severe disease, phototherapy, systemic drugs, dupilumab and JAK inhibitors. Eczema herpeticum is an emergency.
+- Psoriasis is an IL-23/IL-17 disease with systemic associations; treat with topical steroid and vitamin D analogue, phototherapy, methotrexate and other systemic drugs, then biologics. Screen for psoriatic arthritis.
+- Acne (NICE NG198): 12-week fixed topical combinations, with an oral tetracycline for moderate to severe disease; avoid antibiotic monotherapy. Isotretinoin is specialist-led, needs the Pregnancy Prevention Programme and monitoring of mental health and sexual function; in January 2026 the MHRA replaced the under-18 second-prescriber rule with other safeguards.
+- Urticarial wheals last under 24 hours; angio-oedema without wheals may be bradykinin-mediated and unresponsive to antihistamines.
+- SJS/TEN is classified by detached BSA (under 10%, 10–30%, over 30%); stop the drug and treat as a burn. Pemphigus gives flaccid blisters and oral erosions; pemphigoid gives tense blisters in older people.
 :::
 
 ## Exercises
 
-::: exercise Name the rash {level=1}
-Give your first-line diagnosis and confirmatory test for: (a) itchy wrist-web-space with penile nodules; (b) unilateral dermatomal crusted vesicles in an elderly patient; (c) annular scaly plaque with central clearing on the shin; (d) painful targetoid macules with oral erosions after antibiotics.
+::: exercise Name the lesion {level=1}
+Give the correct term for each: (a) a flat, non-palpable brown spot 4 mm across; (b) a raised, flat-topped, scaly area 3 cm across; (c) a clear fluid-filled blister 2 cm across; (d) an itchy raised swelling that disappears within hours; (e) a non-blanching purple spot 2 mm across.
 ::: solution
-**(a) Scabies - skin-scraping-or-dermoscopy-of-the-mite-and-treat-contacts-with-permethrin-or-ivermectin-regimens - [[#def-infections]]-scabies-row, [[public-health/communicable-disease-control]]; (b) herpes-zoster - PCR-of-vesicle-fluid-if-atypical-and-antiviral-window-and-vaccination-planning - [[microbiology/viruses]], [[public-health/vaccination-programmes]]; (c) tinea-corporis - potassium-hydroxide-preparation-and-culture-and-the-steroid-not-first rule - [[microbiology/fungi-parasites]], [[clinical-skills/laboratory-tests]]; (d) suspected-SJS/TEN-spectrum - urgent-clinical-diagnosis-with-biopsy-and-stop-the-drug-and-specialist-transfer - [[#def-drug-blister]], [[emergency-critical-care/critical-care]].**
+(a) **Macule**. (b) **Plaque** (with scale). (c) **Bulla**. (d) **Wheal**. (e) **Petechia** (a small area of purpura).
 :::
 :::
 
-::: exercise Prescribe topical steroids sanely {level=1}
-Write the teaching script for a family terrified of "steroid tablets for the skin".
+::: exercise Which layer? {level=1}
+State the target of the autoantibodies, and the level of the split in the skin, in (a) pemphigus vulgaris and (b) bullous pemphigoid. Explain why one produces flaccid blisters and the other tense blisters.
 ::: solution
-**The-quantified-safety-script ([[#def-eczema]], [[pharmacology/dosing-principles]], [[clinical-skills/communication]]): fingertip-unit-dosing-and-site-specific-potency-choice-face-and-flexures-weak-arms-moderate-hands-feet-strong and the-week-or-two-clear-then-proactive-weekend-maintenance-schedule and the-side-effects-in-context - skin-thinning-and-striae-possible-with-misuse-and-absorption-with-extreme-use-while-uncontrolled-severe-eczema-carries-sleep-infection-and-quality-of-life-costs and the-do-not-omit-finger-tip-audit at reviews - steroid-phobia-undertreatment-and-the-internet-natural-remedy-harm-balance ([[pharmacology/adverse-reactions]], [[public-health/prevention-promotion]]).**
+(a) Pemphigus vulgaris: **desmoglein 3** (often with desmoglein 1), components of desmosomes; the split is **within the epidermis**. (b) Bullous pemphigoid: **BP180 and BP230**, components of hemidesmosomes; the split is **beneath the epidermis**. In pemphigus the roof is only part of the epidermis, so blisters are flaccid and rupture into erosions; in pemphigoid the whole epidermis forms a stronger roof, so blisters are tense.
 :::
 :::
 
-::: exercise Run the erythroderma {level=2}
-An 67-year-old on amlodipine with "bad psoriasis" is red, hot, weeping and shivering from neck to ankles, HR 118, temp 35.8, albumin low, legs oedematous. Admit-plan in priorities.
+::: exercise How much steroid? {level=1 check="140"}
+An adult with a flare of eczema covering 20% of body surface area is to apply a topical corticosteroid twice daily for 14 days. Using 1 FTU $= 0.5$ g covering 2% of BSA, how many grams are needed for the course?
 ::: solution
-**Erythroderma-is-skin-failure-and-an-admission ([[#def-drug-blister]]-erythroderma-row, thermoregulation and fluid physiology in [[physiology/homeostasis-body-fluids]]): resuscitation-with-warm-fluids-and-avoid-aggressive-over-drainage-and-nutrition-high-protein-and-temperature-control-warm-room-and-fluid-and-electrolyte-and-albumin-and-thromboprophylaxis-because-these-patients-immobilise-and-edema and cardiac-output-load-monitoring in the anaemic-elderly - [[renal/water-sodium]], [[blood/thrombosis-anticoagulation]], [[gastrointestinal/clinical-nutrition]], [[cardiovascular/circulation-blood-pressure]]; cause-hunt-in-parallel - psoriasis-flare-after-steroid-withdrawal-or-non-adherence-and-drug-reaction-and-cutaneous-T-cell-lymphoma-Sezary-and-scabies-crusted-and-contact-systemic-and-idiopathic and the medication-and-alcohol-extract-reconciliation - [[musculoskeletal/inflammatory-arthritis]], [[pharmacology/adverse-reactions]], [[blood/lymphoma-myeloma]], [[#def-infections]]-crusted-scabies; skin-directed-therapy - bland-emollients-and-non-irritating-topicals-and-low-dose-UVB-when-settled-and-disease-specific-systemics-and-infection-and-fluid-surveillance with the dermatology-senior-review-day-one rule - [[#def-psoriasis]]; and the honest-prognosis-and-advance-planning-conversation for frail recurrent erythroderma - [[geriatrics-palliative/palliative-care]].**
+Each application needs $20/2 = 10$ FTU $= 10 \times 0.5 = 5$ g. Twice daily for 14 days is 28 applications: $28 \times 5 = 140$ g. A single 30 g tube would last less than three days, which explains many apparent treatment failures.
 :::
 :::
 
-::: exercise Screen before the biologic {level=2}
-A severe psoriasis patient is booked for ustekinumab; he emigrated from a high-TB-prevalence country and has never been screened. List your pre-treatment set and the vaccination conversation.
+::: exercise A new rash on the trunk {level=2}
+A 17-year-old develops dozens of small, scaly, pink "drop-like" plaques over her trunk and upper limbs two weeks after a sore throat. Her father has psoriasis. What is the likely diagnosis, which investigation might support the trigger, and what is the outlook?
 ::: solution
-**The-set: TB-screening-with-IGRA-and-chest-imaging-and-latent-TB-treatment-protocol-before-starting-or-documented-low-risk-decision - [[infectious-diseases/tuberculosis]], [[respiratory/respiratory-infections]]; hepatitis-B-and-C-and-HIV-serology-with-viral-load-and-hepatology-input-if-core-or-surface-positive and the immunoglobulin-baseline - [[microbiology/viruses]], [[infectious-diseases/hiv]]; live-vaccine-completion-before-start-and-household-rules and inactivated-influenza-and-pneumococcal-and-zoster-recombinant-planning - [[public-health/vaccination-programmes]]; routine-safety-bloods-and-BP-and-weight-and-alcohol-and-drug-interaction-review-and-pregnancy-plans-and-skin-cancer-history - [[pharmacology/patient-variation]], [[musculoskeletal/skin-cancer]], [[obstetrics-gynaecology/contraception-fertility]]; and the documentation-plus-safety-netting - the-immunosuppressed-alert-on-the-record-and-the-fever-card-and-the-surgery-and-pregnancy-modification-rules and the shared-care-prescribing-with-dermatology-owns-the-biologic-primary-care-owns-the-rest - [[clinical-skills/records-handover]], [[clinical-skills/patient-safety]].**
+**Guttate psoriasis**, typically triggered by **streptococcal throat infection** in children and young adults; a throat swab or raised anti-streptolysin O titre supports this. It often clears within weeks to months with emollients, topical treatment or narrowband UVB; some people later develop chronic plaque psoriasis.
 :::
 :::
 
-::: exercise Defend the prescription {level=2}
-A 15-year-old with nodulocystic acne is referred for isotretinoin; the parents are frightened by the internet. Structure the visit: benefits, harms, the programme, the follow-up.
+::: exercise Choose the acne treatment {level=2}
+A 16-year-old boy has moderate to severe acne with many papules and pustules on his face, chest and back, and a few early scars. He has used benzoyl peroxide gel from a pharmacy. According to NICE NG198, what would you offer, for how long, and when would you refer him?
 ::: solution
-**The-visit-frames-benefit-first ([[#def-acne]]): the-scarring-and-burden-argument - nodulocystic-acne-is-disfiguring-permanent-if-under-treated-and-isotretinoin-is-the-only-drug-that-changes-disease-trajectory-with-high-remission-rates - and-the-harms-in-perspective - teratogenicity-and-contract-of-pregnancy-prevention-conditions-and-mucocutaneous-dryness-and-lipids-and-liver-and-muscle-monitoring-and-psychiatric-signal-history-told-honestly-with-the-actual-evidence-weight - [[pharmacology/patient-variation]], [[obstetrics-gynaecology/contraception-fertility]]; the programme-logistics - pregnancy-testing-and-contraception-requirements-by-local-policy-and-which-contraceptive-methods-and-the-monthly-presence-rules-and-school-and-driving-considerations and the cumulative-dose-and-course-and-relapse-re-treatment-expectations - [[clinical-skills/communication]], contraception mechanics in [[obstetrics-gynaecology/contraception-fertility]]; the-support-layer - the-skin-of-colour-post-inflammatory-pigmentation-stakes-and-the-sun-and-scar-plans and the mental-health-open-door-without-blaming-the-drug-for-adolescence and the-parent-facing-information-leaflet-that-actually-exists - [[musculoskeletal/skin-cancer]]-pigmentation, [[psychiatry/lifespan-psychiatry]], [[clinical-skills/records-handover]]; and-the-therapeutic-alliance-close - "we monitor this together, monthly, and you can stop at any point by talking to us" - [[clinical-skills/patient-safety]], [[medical-ethics-law/consent-capacity]].**
+Offer a **12-week course** of a first-line option for moderate to severe acne, such as **topical adapalene with benzoyl peroxide plus oral lymecycline or doxycycline** (the oral drug helps the back and chest). Avoid antibiotic monotherapy. Review at 12 weeks. Because he already has **scarring**, NICE advises considering referral to a consultant dermatologist-led team, where isotretinoin may be appropriate. Ask about mood and the psychological impact.
 :::
 :::
 
-::: exercise Audit a dermatology service {level=3}
-Design an audit or quality-improvement project on one high-harm dermatology theme in your service: SJS/TEN drug causation, cellulitis overdiagnosis, biologic screening completeness, or hand-eczema occupational outcomes.
+::: exercise Counselling about isotretinoin {level=2}
+A 19-year-old woman with nodulocystic acne and scarring is starting isotretinoin under a dermatology team. List the key safety points that must be covered.
 ::: solution
-**Pick-structure - the-phenotype-definition-and-ICD-coding-and-record-search-strategy-and-manual-case-note-review-with-two-observers-and-kappa-agreement - [[epidemiology-ebm/measuring-disease]], audit methods in [[public-health/screening]]; theme-appropriate-measures - for-SJS/TEN-the-five-cause-drug-exposure-timing-documentation-and-dermatology-review-delay-and-yellow-card-completion and the cross-reference-of-culprit-prescribing-after-discharge - [[pharmacology/adverse-reactions]], [[clinical-skills/records-handover]]; for-cellulitis-the-bilateral-leg-and-stasis-and-erythema-exclusion-rate-and-antibiotic-days-and-recurrence-prophylaxis-and-DVT-workups - [[surgery/wounds-surgical-infection]], [[blood/thrombosis-anticoagulation]]; for-biologics-the-TB-and-hepatitis-and-vaccination-screening-completeness-and-start-to-first-dose-intervals - [[infectious-diseases/tuberculosis]], [[public-health/vaccination-programmes]]; for-hand-eczema-the-patch-testing-access-and-occupational-referral-rates-and-work-retention - [[public-health/environmental-occupational]]; the-intervention-design - checklists-and-EMR-hard-stops-and-multidisciplinary-cases-and-education-with-re-measurement-and-control-site-comparison - [[clinical-skills/patient-safety]], [[public-health/health-systems-economics]]; and the-ethics-of-audit-versus-research-and-data-governance in a skin-image-photography-service context - [[medical-ethics-law/research-ethics]], [[medical-ethics-law/confidentiality]].**
+**Pregnancy prevention**: she is enrolled in the Pregnancy Prevention Programme: highly effective contraception from before starting until at least one month after stopping, and supervised pregnancy tests before, during (usually monthly) and after treatment. She must not share the medicine or donate blood during or shortly after treatment.
+
+**Mental health**: assessed before starting, with a patient-reported outcome measure, and at every follow-up; she and her family should report low mood, anxiety or thoughts of self-harm promptly and seek urgent help if needed.
+
+**Sexual function**: she is asked about it before starting and at follow-up; sexual side effects have been reported, occasionally persisting after stopping.
+
+**Common effects**: dry lips, skin and eyes, nosebleeds, aches, photosensitivity; blood tests for lipids and liver function. No tetracyclines during treatment (intracranial hypertension).
+
+**Process**: the Acknowledgement of Risk Form, the patient information video, the patient reminder card and pharmacist checks at dispensing; she may ask for a second opinion at any time.
+:::
+:::
+
+::: exercise SCORTEN {level=3 check="2"}
+A 35-year-old woman develops TEN 10 days after starting lamotrigine. On admission she has 35% of BSA detached, heart rate 110 per minute, urea 8 mmol/L, glucose 15 mmol/L, bicarbonate 22 mmol/L, and no malignancy. Calculate her SCORTEN.
+::: hint
+Go through the seven factors in [[#def-scar]] one at a time.
+:::
+::: solution
+Age 40 or over: 0. Malignancy: 0. Heart rate 120 or more: 0. Detached BSA more than 10%: **1**. Urea more than 10 mmol/L: 0. Glucose more than 14 mmol/L: **1**. Bicarbonate less than 20 mmol/L: 0. Total SCORTEN $= 2$. Her detached area of 35% classifies the reaction as TEN. She still needs burns or intensive care management; SCORTEN is recalculated on day 3, and the lamotrigine must be stopped and never restarted.
+:::
+:::
+
+::: exercise Two red legs {level=3}
+A 76-year-old woman with heart failure is admitted with "bilateral cellulitis". Both lower legs are red, warm, scaly and itchy, with brown discolouration and varicose veins. She is afebrile with normal white cell count and CRP. She has already had two courses of antibiotics without improvement. (a) What is the most likely diagnosis? (b) What features would make true cellulitis more likely? (c) How should she be managed?
+::: hint
+Cellulitis is almost always unilateral. Think about the venous circulation and the skin over it.
+:::
+::: solution
+(a) **Venous (stasis) eczema**, possibly with lipodermatosclerosis or an allergic contact dermatitis to topical treatments, on a background of venous hypertension and oedema from heart failure. Bilateral, scaly, itchy redness with haemosiderin pigmentation and varicose veins, no fever and normal inflammatory markers make cellulitis very unlikely.
+
+(b) True cellulitis is usually **unilateral**, acutely **painful and tender** rather than itchy, spreading, often with fever, raised white count and CRP, and an entry point (such as a crack or tinea between the toes). It may cause lymphangitis or tender regional lymph nodes.
+
+(c) **Stop antibiotics**. Treat the eczema with **emollients** and a short course of a **moderate or potent topical corticosteroid**, with patch testing if contact allergy to creams is suspected. Treat the oedema (heart failure treatment, elevation) and, once arterial disease is excluded with an ankle–brachial pressure index, use **compression**.
 :::
 :::

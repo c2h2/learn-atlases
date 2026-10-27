@@ -1,154 +1,377 @@
-The musculoskeletal system is where biochemistry becomes architecture: **a living composite material that remodels along stress lines, a lubricated hinge that fails quietly for decades before it hurts, and the body's calcium bank, phosphate sink and uranium-free radiation shield.** Rheumatology and orthopaedics both start here, and both make the same beginner error - treating pictures instead of mechanisms.
+Bones and joints are often pictured as the body's inert scaffolding: struts and hinges that matter only when they break or wear out. That picture is wrong in a way that matters clinically. Bone is a living tissue that is constantly being removed and rebuilt, it holds 99% of the body's calcium, and it responds to hormones, drugs, loading and disease. A synovial joint is an organ in its own right, with a lining that can become inflamed, a fluid that can be sampled, and a cartilage surface that cannot repair itself well.
 
-This chapter covers bone structure and remodelling, joint anatomy and the musculoskeletal examination, and the shared vocabulary of the conditions that follow in the rest of the course.
+This chapter builds the foundation for the rest of the course. It covers the structure of bone and how it is remodelled, the biochemistry of calcium and bone turnover, the way bone mass changes across life, the anatomy and physiology of the synovial joint, and the examination and tests used to work out what is wrong with a painful joint. The anatomy of individual limbs is in [[anatomy/lower-limb]] and [[anatomy/back-upper-limb]]; the endocrine control of calcium is covered in depth in [[endocrine/bone-calcium]].
 
-## Bone as an organ
+## Bone as a living tissue {#sec-bone}
 
-::: definition Bone structure, remodelling and the mechanical rules {#def-bone}
-**Hierarchy (the cortical-versus-trabecular split - dense shaft envelope versus metabolic sponge, and why the hip and spine and vertebral bodies fracture when either thins; the osteon, the travertular-plate-and-rod geometry, and the mechanics of stiffness-versus-toughness - the composite of mineral and collagen that makes bone simultaneously stiff, strong and damage-tolerant, and why the mineral-and-matrix balance flips with age and disease - [[anatomy/back-upper-limb]] and [[anatomy/lower-limb]] for regional anatomy, [[cell-biochemistry/proteins-enzymes]]). Cells (the remodelling unit - osteocytes as the embedded mechanosensor-and-conductor-network that senses strain-and-microdamage-and-directs-traffic, osteoblasts as the bone-forming lineage from mesenchymal stem cells with their RANKL-and-sclerostin-and-osteoprotegerin-signalling-role, osteoclasts as the multinucleate acid-and-proton-pump-and-cathepsin excavation crews descended from monocyte precursors - [[blood/haematopoiesis]] for the osteoclast lineage, and juxtacrine RANK-RANKL-OPG signalling in [[cell-biochemistry/signalling-cell-cycle]]). Remodelling and modelling (the basic multicellular unit sequence - activation, resorption, reversal, formation, and the coupling that normally keeps balanced; the age-, oestrogen-, glucocorticoid-, immobilisation-, and hypercalciuria-... — no: the age, oestrogen-withdrawal, glucocorticoid, disuse and inflammatory-cytocline shifts that make resorption outrun formation, and the osteoporosis consequence read in full in [[endocrine/bone-calcium]]; Wolff's and Frost's mechanostat - how strain magnitude and rate tune bone mass, why loading and impact exercise build bone and why bed-rest and spaceflight and hemiplegia and cast-immobilisation remove it in months - the calcium endocrine control in [[endocrine/bone-calcium]] and the immobilisation-hypercalcaemia row in [[renal/acute-kidney-injury]]). Mineral and hormone integration (hydroxyapatite as the body's calcium-phosphate reservoir, the PTH-vitamin-D-FGF23-phosphate-kidney-bone axis - [[endocrine/bone-calcium]], [[renal/potassium-calcium-phosphate]], [[renal/chronic-kidney-disease]]-the-renal-osteodystrophy-continuum, [[gastrointestinal/digestion-absorption]]-vitamin-D-and-calcium-uptake-row; and bone as endocrine organ - osteocalcin and FGF23 and the exercise-myokine-crosstalk frontier - [[endocrine/bone-calcium]]). Bone turnover tests (alkaline-phosphatase-and-urinary-collagen-crosslinks-as-crude-turnover-markers-and-the-serum-calcium-phosphate-PTH-vitamin-D-alphabet and the-who-gets-a-DEXA-what-a-T-score-means argument - [[clinical-skills/laboratory-tests]], [[endocrine/bone-calcium]], [[public-health/screening]]; and biopsy-and-histomorphometry-as-the-rare-gold-standard - [[pathology/diagnostic-pathology]]).**
+Bone is a composite material. About two-thirds of its dry weight is mineral, a calcium phosphate crystal called hydroxyapatite, which gives stiffness and resistance to compression. Most of the rest is protein, mainly type I collagen, which gives toughness and resistance to tension and bending. Chalk is stiff but brittle; a rope is tough but floppy. Bone combines the two, and diseases that disturb one component show it: in osteogenesis imperfecta, defective type I collagen makes bones that snap easily, while in osteomalacia, poorly mineralised bone bends and deforms.
+
+::: definition Bone structure and bone cells {#def-bone}
+**Cortical (compact) bone** forms the dense outer shell of every bone and the shafts of long bones. It makes up about 80% of skeletal mass and is organised into **osteons**: cylinders of concentric lamellae around a central (Haversian) canal carrying vessels and nerves.
+
+**Trabecular (cancellous) bone** is a lattice of thin plates and rods inside the vertebral bodies, pelvis and the ends of long bones. It makes up about 20% of skeletal mass but has a much larger surface area, so it is remodelled faster and responds sooner to disease and treatment.
+
+Three cell types maintain bone:
+
+- **Osteoblasts** come from mesenchymal stem cells. They lay down **osteoid** (unmineralised matrix, mainly type I collagen) and then direct its mineralisation. They release alkaline phosphatase, which is why serum **alkaline phosphatase (ALP)** rises when bone formation is active.
+- **Osteocytes** are osteoblasts that have become buried in the matrix. They are the most numerous bone cells and are connected by long processes running through tiny canals. They sense mechanical strain and signal to the other cells, partly through the protein **sclerostin**, which inhibits bone formation.
+- **Osteoclasts** are large multinucleated cells derived from the monocyte–macrophage lineage. They attach to the bone surface, seal off a space and dissolve the mineral with acid and the collagen with enzymes such as cathepsin K.
+
+The **periosteum** is the fibrous membrane covering the outer surface; its inner layer contains bone-forming cells and is essential for fracture healing ([[musculoskeletal/fractures]]).
 :::
 
-## Joint as a hinge
+### Remodelling
 
-::: definition Synovial joint anatomy and the musculoskeletal examination {#def-joint}
-**Synovial architecture (the hyaline-cartilage-low-friction-bearing-surface with its avascular-chondrocyte-in-a-pericellular-matrix-territory-and-its-compression-drives-fluid-film-lubrication-physics - regional joint anatomy in [[anatomy/back-upper-limb]] and [[anatomy/lower-limb]], and the type-II-collagen-and-aggrecan cartilage matrix in [[cell-biochemistry/proteins-enzymes]]; the synovium as a selectively permeable villous membrane producing lubricin-rich fluid, and the inflamed synovium as the effusion-and-swig-and-pulsus-gelée-source - the septic-joint aspiration logic in [[#def-red-flags]] and [[infectious-diseases/healthcare-infections]]; the fibrous capsule, the pressure-and-congruence-stability, the labrum-and-meniscomics-and-bursae-and-entheses - the enthesis as the painful attachment site of spondyloarthritis and overuse syndromes - [[musculoskeletal/inflammatory-arthritis]], overuse tendinopathies in [[musculoskeletal/back-pain]]). Non-synovial joints (fibrous-and-cartilaginous types - sutures and symphysis pubis and disc - and why the intervertebral disc's annulus-and-nucleus-hydration-and-degenerating-collagen-biology underlies the entire back-pain chapter - [[musculoskeletal/back-pain]], [[cell-biochemistry/proteins-enzymes]]). The examination as an algorithm - the rheumatological "look-feel-move-special-tests-function" sequence (gait and posture and symmetry inspection; joint-line and soft-tissue palpation; active-versus-passive-range-of-movement-and-resisted-movement-and-capsular-pattern-versus-non-capsular-pattern-restriction; the pattern-recognition of inflammatory-versus-mechanical - morning-stretching-stiffness-that-eases-versus-stiffness-that-wears-with-use, small-joint-symmetry-versus-large-joint-asymmetry, night-pain-and-systemic-features - [[clinical-skills/physical-examination]], [[clinical-skills/history-taking]]; the special-tests-evidence-table - McMurray-and-Lachman-and-impingement-and-Finkelstein-and-Phalen with their likelihood-ratio-realism and why imaging orders follow examination not mood - [[clinical-skills/medical-imaging]], [[epidemiology-ebm/diagnostic-tests]]). Imaging and fluid (the X-ray-first-for-bone-and-fracture-and-endstage-joints logic and the MRI-for-marrows-and-soft-tissues-and-infection-and-inflammatory-early-erosions-sensitivity-plus-incidentaloma-cost and the ultrasound-for-effusion-and-erosion-and-guided-injection-portability - [[clinical-skills/medical-imaging]], [[endocrine/bone-calcium]] for DEXA and [[clinical-skills/medical-imaging]] for radionuclide scanning; and synovial-fluid analysis as the microbiology-and-crystal-and-cell-count triage - septic-versus-inflammatory-versus-degenerative-versus-crystal-with the urgent-septic-joint-exclusion that outranks everything - [[clinical-skills/laboratory-tests]], [[microbiology/bacteria]], [[musculoskeletal/inflammatory-arthritis]]).**
+Throughout adult life, small packets of old bone are removed and replaced. The work is done by a **basic multicellular unit (BMU)**: a team of osteoclasts followed by osteoblasts. The sequence at any one site runs in four phases:
+
+1. **Activation**: osteoclast precursors are recruited to a surface, often where osteocytes signal microdamage.
+2. **Resorption**: osteoclasts dig a pit (in trabecular bone) or a tunnel (in cortical bone) over about two to four weeks.
+3. **Reversal**: the surface is cleaned and prepared.
+4. **Formation**: osteoblasts fill the cavity with osteoid, which then mineralises over several months.
+
+Remodelling repairs fatigue damage, adapts the skeleton to the loads placed on it, and releases calcium when it is needed. Roughly a tenth of the adult skeleton is replaced each year.
+
+The key molecular switch is the **RANK–RANKL–OPG system**. Osteoblasts and osteocytes express **RANKL**, which binds the receptor **RANK** on osteoclast precursors and drives them to mature and resorb. They also release **osteoprotegerin (OPG)**, a decoy receptor that mops up RANKL. The ratio of RANKL to OPG sets how much resorption happens. Oestrogen, parathyroid hormone (PTH), glucocorticoids and inflammatory cytokines all act partly through this ratio.
+
+::: theorem The remodelling balance {#thm-remodelling}
+The change in bone mass over time depends on two quantities: the **balance within each BMU** (bone formed minus bone resorbed at one site) and the **activation frequency** (how many new BMUs start per unit time). Bone is lost when the balance per BMU is negative, and the loss is faster the more BMUs are active.
 :::
 
-::: definition Red flags and the painful limb {#def-red-flags}
-**The five emergencies hiding in "joint and back pain" (the septic joint - acute-hot-swolten-single-joint-with-systemic-features-and-the-fascinating-truth-that-a-third-lack-fever-and-the-blood-culture-and-immediate-aspiration-and-orthopaedic-washout-and-IV-antibiotic-pathway, with the prosthetic-joint-and-immunosuppressed-and-IV-drug-use-and-rheumatoid-variants - [[musculoskeletal/inflammatory-arthritis]]-crystal-mimic-row, [[infectious-diseases/fever-sepsis]], [[immunology/immunodeficiency]]; septic discitis-and-vertebral-osteomyelitis and their back-pain-plus-fever-plus-raised-CRP-and-MRI-diagnosis-and-blood-culture-and-prolonged-antibiotics-and-neuro-deterioration-watch - [[renal/urinary-tract]]-haematogenous-source, [[nervous-system/motor-systems]]; fractures-with-their-own-chapter - pathologic-through-metastasis-and-myeloma-and-Paget and the fragility-fracture-that-signals-untreated-osteoporosis - [[musculoskeletal/fractures]], [[endocrine/bone-calcium]], [[blood/lymphoma-myeloma]]; the neurovascular limb - compartment-syndrome-after-fracture-casting-crush-with-pain-out-of-proportion-and-passive-stretch-pain-and-the-fasciotomy-decision-does-not-wait-for-pulselessness and acute-limb-ischaemia's-six-Ps-and-urgent-arterial-pathway - [[musculoskeletal/fractures]]-complications, [[surgery/vascular-urological-surgery]]; and cauda-equina and spinal-cord compression - saddle-anaesthesia-and-bladder-bowel-dysfunction-and-bilateral-leg-weakness-and-known-cancer-or-fever-with-back-pain - the MRI-now-and-dexamethasone-and-neurosurgical-urgent-decompression logic - [[musculoskeletal/back-pain]], the cord-compression pathway in [[musculoskeletal/back-pain]] and [[surgery/orthopaedics]]). The malignancy-and-inflammatory-systemic-patterns behind chronic presentations (unrelenting-night-pain-and-weight-loss-and-histological-risk-factors and the referred-pain map - hip-as-knee and shoulder-as-neck and the visceral-referred-pain-traps - [[clinical-skills/physical-examination]], diaphragmatic referral patterns in [[anatomy/thorax]]). Soft-tissue and regional syndromes (tendinopathy-as-degenerative-not-tendonitis-with-its-load-management-and-ecentric-loading-evidence; bursitis and enthesopathy and frozen-shoulder-with-its-association-with-diabetes-and-thyroid-disease and its staging-natural-history-reassurance - [[endocrine/diabetes-complications]], [[endocrine/thyroid]], [[musculoskeletal/back-pain]] shoulder rows; and the fibromyalgia-and-nociplastic-pain paradigm - centralized-sensitization-with-abnormal-pain-processing-not-non-organic-pain and the graded-exercise-and-sleep-and-psychological-skills-and-medicine-triage approach - [[psychiatry/mood-disorders]], [[psychiatry/anxiety-disorders]], [[geriatrics-palliative/symptom-control]].)**
+::: proof
+In a healthy young adult, each BMU replaces almost exactly what it removed, so the balance is close to zero and the activation frequency does not matter. With ageing, osteoblasts become less effective, so each BMU leaves a small deficit. After the menopause, the fall in oestrogen raises RANKL and increases the activation frequency, so many more slightly negative units are working at once and bone is lost quickly, especially from trabecular bone. Glucocorticoids act mainly by suppressing osteoblasts, making the balance per unit more negative. The principle also explains how drugs work. **Bisphosphonates** (such as alendronic acid and zoledronic acid) bind to bone mineral and are taken up by osteoclasts, reducing resorption and activation frequency. **Denosumab** is an antibody against RANKL with the same overall effect. **Teriparatide**, a fragment of PTH given in intermittent daily doses, stimulates osteoblasts so that formation exceeds resorption. **Romosozumab** blocks sclerostin and both increases formation and reduces resorption.
 :::
 
-::: example The hot knee after a scratch {#ex-septic-knee}
-A 67-year-old diabetic man, hot swollen right knee for 18 hours, cannot weight-bear, pain on the slightest passive movement, temp 38.4, CRP 280, WCC 17; he had a grazed shin two weeks ago; X-ray shows chondrocalcinosis.
+Mechanical loading matters too. Osteocytes sense strain, and bone that is loaded is maintained or strengthened while unloaded bone is lost. An astronaut in microgravity, a person on bed rest and a limb in plaster all lose bone quickly. This idea, that bone adapts its structure to the loads it carries, is usually called **Wolff's law**.
+
+### Calcium, phosphate and the biochemistry of bone
+
+Serum calcium is held within a narrow range by three hormones: **PTH**, which raises calcium by increasing resorption, reducing renal calcium loss and stimulating vitamin D activation; **calcitriol** (1,25-dihydroxyvitamin D), which increases gut absorption of calcium and phosphate; and, much less importantly in humans, **calcitonin**. Vitamin D is made in the skin under ultraviolet B light or eaten, hydroxylated in the liver to 25-hydroxyvitamin D (the form measured to assess vitamin D status) and then in the kidney to calcitriol. The details are in [[endocrine/bone-calcium]] and [[renal/potassium-calcium-phosphate]].
+
+About 45% of serum calcium is bound to albumin. When albumin is low, total calcium falls even if the physiologically active ionised calcium is normal. Many laboratories therefore report an **adjusted (corrected) calcium**. A common formula is
+
+$$\text{adjusted Ca} = \text{total Ca} + 0.02 \times (40 - \text{albumin})$$ {#eq-adjusted-ca}
+
+with calcium in mmol/L and albumin in g/L. Local formulas differ slightly, and ionised calcium on a blood gas analyser is more reliable when the result matters.
+
+::: example A low calcium that is not low {#ex-calcium}
+A 74-year-old woman admitted with pneumonia has a total calcium of 2.02 mmol/L (reference range 2.20–2.60) and an albumin of 26 g/L. Is she hypocalcaemic?
 ::: solution
-**A septic joint until the aspirate says otherwise, whatever the X-ray shows ([[#def-red-flags]]): immediate aspiration for cell count and differential-and Gram stain-and culture-and-crystals - the same syringe answers both questions, and the two diagnoses coexist - [[clinical-skills/laboratory-tests]], [[musculoskeletal/inflammatory-arthritis]]; blood cultures and the same-hour orthopaedic notification when clinical suspicion is high, wash-out-and-IV-antibiotics-not-observation, and diabetic-plus-old-joint-plus-skin-entry-as-the-textual-risk-factor-set - [[microbiology/bacteria]], [[endocrine/diabetes-complications]]. The teaching points: **the presence of CPPD crystals does not exclude infection and infection does not exclude crystals (send the fluid for both, always); a prosthetic or recently injected joint raises the stakes and changes the organism mix - [[surgery/orthopaedics]], [[infectious-diseases/healthcare-infections]]; the management of the coagulopathic or anticoagulated aspirant patient is not a contraindication to a necessary joint tap - [[blood/haemostasis-bleeding]]; and the after-the-storm plan - the antibiotic duration and joint-function physiotherapy and the diabetes-and-skin-entry audit and the reason the graze got infected at all - the rehab and wound-care rows and [[clinical-skills/records-handover]].**
+Use [[#eq-adjusted-ca]]: adjusted calcium $= 2.02 + 0.02 \times (40 - 26) = 2.02 + 0.28 = 2.30$ mmol/L.
+
+This is within the reference range. The low total calcium is explained by the low albumin, which is common in acute illness. She does not need calcium replacement on this basis. If there were symptoms of hypocalcaemia (tingling, cramps, a prolonged QT interval), an ionised calcium would settle the question.
 :::
 :::
 
+The common metabolic bone diseases give distinct patterns on routine blood tests. The table is a guide to typical findings, not a rule; real patients often have more than one process at once.
 
-## One curve, two futures
+| Condition | Calcium | Phosphate | ALP | PTH | Key point |
+|---|---|---|---|---|---|
+| Osteoporosis | normal | normal | normal | normal | Diagnosed by bone density, not blood tests |
+| Osteomalacia (vitamin D deficiency) | low or normal | low | raised | raised | Poor mineralisation; bone pain, proximal weakness |
+| Primary hyperparathyroidism | raised | low or normal | normal or raised | raised or inappropriately normal | Usually a parathyroid adenoma |
+| Paget's disease of bone | normal | normal | raised (often markedly) | normal | Disorganised, excessive remodelling |
+| Bone metastases | normal or raised | normal | often raised | low if calcium raised | Look for the primary tumour |
+| Chronic kidney disease–mineral bone disorder | low or normal | raised | raised | raised | Secondary hyperparathyroidism |
 
-::: definition Bone mass through life {#def-bonemass}
-**Peak bone mass in the third decade, a long plateau, then an accelerating loss - faster in trabecular bone, faster after the menopause, faster again in the eighties - is the trajectory behind almost every diagnosis in this course ([[endocrine/bone-calcium]]). The clinical levers are exactly the ones in the trajectory's modifiers: loading history in youth, oestrogen status, glucocorticoid exposure, falls, and the treatments that flatten the curve - which is why a lifetime bone strategy reads like the [[#def-bone]] physiology rendered in decades.**
+The point of the table is that osteoporosis, the commonest bone disease, has **normal** biochemistry. Blood tests in a person with osteoporosis are done to look for secondary causes and for conditions that mimic it, such as osteomalacia and myeloma.
+
+## Bone mass across life {#sec-bone-mass}
+
+Bone mass rises through childhood and adolescence, reaches a **peak** in the third decade, stays roughly level for some years and then declines. Peak bone mass is largely genetic, but nutrition, physical activity, puberty timing and illness in childhood all contribute. Women have a smaller peak than men and lose bone rapidly for several years around and after the menopause; men lose bone more slowly. The result is that by old age many women, and a substantial minority of men, have bones that break with little force.
+
+::: definition Osteoporosis and fragility fracture {#def-osteoporosis}
+**Osteoporosis** is a skeletal disease of low bone mass and deteriorated bone microarchitecture, leading to fragile bones and an increased risk of fracture.
+
+Bone mineral density (BMD) is measured by **dual-energy X-ray absorptiometry (DXA)**, usually at the hip and lumbar spine. The result is expressed as a **T-score**, the number of standard deviations above or below the mean for healthy young adults of the same sex:
+
+$$T = \frac{\text{measured BMD} - \text{young-adult mean BMD}}{\text{young-adult SD}}$$ {#eq-tscore}
+
+By the World Health Organization definition, used in postmenopausal women and men aged 50 or over:
+
+- normal: $T \ge -1.0$;
+- low bone mass (osteopenia): $-2.5 < T < -1.0$;
+- osteoporosis: $T \le -2.5$;
+- severe (established) osteoporosis: $T \le -2.5$ with one or more fragility fractures.
+
+A **fragility fracture** is one caused by a fall from standing height or less, or with no identifiable trauma. The typical sites are the vertebrae, hip, distal radius and proximal humerus.
 :::
+
+BMD is only one predictor of fracture. Age, previous fracture, glucocorticoid use, a parent with a hip fracture, smoking, alcohol, low body weight, rheumatoid arthritis and falls all add risk independently. Tools such as **FRAX** (developed by the WHO Collaborating Centre in Sheffield) and **QFracture** combine these factors to estimate a 10-year probability of major osteoporotic and hip fracture. In the UK, the National Osteoporosis Guideline Group (NOGG) publishes intervention thresholds based on FRAX, and NICE recommends assessing fracture risk in women aged 65 and over, men aged 75 and over, and younger people with risk factors.
 
 ::: widget plot
-f: 100-0.35*x-0.06*x^2; 100-0.30*x-0.012*x^2
-x: 0, 55
+f: 100-0.2*max(0,x-35)-1.5*min(max(x-a,0),7)-0.5*max(0,x-a-7); 100-0.2*max(0,x-35)-0.3*max(0,x-55)
+x: 20, 90
 y: 55, 105
-labels: \text{years after peak bone mass},\ \text{%\ of peak}\ \text{bone mass};\ \text{untreated post-menopause};\ \text{with risk-appropriate therapy}
-caption: Illustrative trajectories of [[#def-bonemass]]: the quadratic term encodes the accelerating post-menopausal and late-age loss on [[endocrine/bone-calcium]], and the treated curve reflects trial-magnitude antiresorptive effects ([[epidemiology-ebm/randomised-trials]]). Fracture risk rises exponentially as mass falls - the reason the T-score threshold is not linear geometry but event data ([[public-health/screening]], [[clinical-skills/laboratory-tests]]).
+sliders: a=50:40:58:1
+hlines: 70
+labels: \text{women (menopause at age } a\text{)}; \text{men}
+title: Bone mass as a percentage of young-adult peak
+caption: A simplified model of bone mass with age. Women lose bone quickly for several years after the menopause (slider $a$) and then more slowly; men lose bone gradually from middle age. The dashed line at 70% is roughly where the hip T-score reaches $-2.5$ if one standard deviation is about 12% of the young-adult mean. Move the menopause earlier and see how much sooner the threshold is crossed: early menopause is a recognised risk factor. Illustrative shapes, not population data.
 :::
 
-::: example The cast that hurts too much {#ex-compartment}
-A 24-year-old, six hours after a tibial fracture reduced into a backslab, has escalating pain needing IV opioids, pain on passive toe extension, a tense swollen leg; foot warm with palpable pulses; the nurse flags "the obs are normal".
+::: example Reading a DXA result {#ex-tscore}
+A 68-year-old woman who broke her wrist after slipping on a wet floor has a DXA scan. Her femoral neck BMD is 0.550 g/cm². For the reference population used by the scanner, the young-adult mean is 0.858 g/cm² with a standard deviation of 0.120 g/cm². Calculate her T-score and interpret it.
 ::: solution
-**Acute compartment syndrome until fasciotomy says otherwise - and the "normal obs" reassurance is the classic trap ([[#def-red-flags]]): pulses-are-usually-present-and-loss-is-terminal, and the diagnosis is clinical - pain-out-of-proportion, pain-on-passive-stretch, paraesthesia, a tense compartment, the analgesia-escalation-flag - and the observation-chart can be entirely normal - [[musculoskeletal/fractures]], [[surgery/orthopaedics]], the-observation-point in [[emergency-critical-care/acute-assessment]]; the actions - remove all dressings-and-bivalve-the-cast-to-the-skin-and-position-at-heart-level-not-elevated-above-perfusion-and-escalate-to-orthopaedics-immediately-and-recheck-serially-and-low-threshold-for-compartment-pressure-measurement-when-the-examination-is-unreliable-sedated-or-young - the-pressure-monitoring detail and analgesia-confounding point in [[surgery/anaesthesia-pain]]; the fasciotomy decision is time-not-laboratory, with the contracture-and-nerve-and-rhabdomyolysis-and-renal-costs-of-delay named in the incident file - [[renal/acute-kidney-injury]], [[musculoskeletal/fractures]]; and the medico-legal anatomy of these cases - the documented-neurovascular-obs-frequency and the nurse-escalation-pathway-that-worked-or-didn't - [[clinical-skills/patient-safety]], [[clinical-skills/records-handover]].**
+Using [[#eq-tscore]]:
+
+$$T = \frac{0.550 - 0.858}{0.120} = \frac{-0.308}{0.120} \approx -2.57.$$
+
+The T-score of $-2.6$ (to one decimal place) is below $-2.5$, so by the WHO definition she has osteoporosis at the femoral neck. Because she has already had a fragility fracture of the wrist, this is severe (established) osteoporosis. Her fracture risk is high and she would usually be offered bone-protective treatment after checks for secondary causes (for example calcium, vitamin D, renal function, thyroid function and, if indicated, a myeloma screen). Falls assessment matters as much as drugs, because most hip fractures follow a fall ([[geriatrics-palliative/falls]]).
 :::
 :::
 
-::: example The bad back with a saddle sign {#ex-cauda}
-A 44-year-old with two weeks of worsening low back pain and bilateral sciatica now reports urinary hesitancy and peri-anal numbness; MRI is "booked for next Tuesday"; CRP normal, afebrile.
-::: solution
-**Cauda equina syndrome is a same-hour surgical diagnosis and the booked-mri-is-the-error ([[#def-red-flags]], [[musculoskeletal/back-pain]]): the bladder-and-saddle-and-bilateral-neuro findings demand immediate spine-surgery referral, urgent whole-spine MRI-now with post-void residual-bladder-scan as the bedside-adjunct, and dexamethasone-discussion per local pathway while the decompression clock runs - [[clinical-skills/physical-examination]], [[nervous-system/motor-systems]], [[surgery/orthopaedics]]; the differential - massive central disc versus tumour versus epidural abscess-or-haematoma (the IVD and anticoagulation and immune rows) - changes treatment not urgency - [[infectious-diseases/healthcare-infections]], [[blood/haemostasis-bleeding]], metastatic-compression in [[surgery/orthopaedics]]; the safety-net governance - the documented-red-flag-checklist-in-every-back-pain-triage-and-the-direct-access-out-of-hours-MRI-route-that-makes-"next-Tuesday"-impossible - [[clinical-skills/patient-safety]], [[public-health/health-systems-economics]]; and the outcome honesty - bladder-outcome depends more on the clock than the knife, so the family conversation and the transfer decision are both time-critical - [[clinical-skills/communication]], [[emergency-critical-care/resuscitation]].**
+## The synovial joint {#sec-joint}
+
+Joints are classified by what joins the bones. **Fibrous joints**, such as the skull sutures, allow almost no movement. **Cartilaginous joints**, such as the pubic symphysis and the intervertebral discs, allow a little. **Synovial joints** allow free movement and are where most joint disease happens.
+
+::: definition The synovial joint {#def-joint}
+A **synovial joint** has the following parts:
+
+- **Articular cartilage**: hyaline cartilage, a few millimetres thick, covering the bone ends. It has no blood vessels, nerves or lymphatics. Its cells, **chondrocytes**, are sparse and sit in a matrix of **type II collagen** and **proteoglycans**, chiefly **aggrecan**. Aggrecan carries a strong negative charge, draws in water and makes the cartilage resist compression like a water-filled cushion.
+- **Subchondral bone**: the plate of bone beneath the cartilage, which absorbs load and has a rich nerve supply.
+- **Joint capsule**: a fibrous sleeve that holds the bones together, reinforced by **ligaments**.
+- **Synovium**: a thin membrane lining the capsule (but not the cartilage). Its cells remove debris and secrete the components of synovial fluid. Normal synovium is only a few cells thick; in inflammatory arthritis it thickens greatly.
+- **Synovial fluid**: a small volume of viscous fluid, essentially a filtrate of plasma enriched with **hyaluronan** and **lubricin**. It lubricates the surfaces and nourishes the chondrocytes, which have no blood supply of their own.
+- Some joints also have intra-articular structures such as the menisci and cruciate ligaments of the knee.
 :::
+
+Two consequences follow from this design. First, because cartilage has no blood supply and few cells, damage to it heals poorly; this underlies osteoarthritis ([[musculoskeletal/osteoarthritis]]). Second, because the synovium is a vascular, cell-rich tissue, it is the main target of inflammatory arthritis ([[musculoskeletal/inflammatory-arthritis]]) and of joint infection. A joint can hurt because of the bone, the cartilage-bone interface, the synovium, the capsule, the ligaments, the tendons and bursae around it, or a nerve referring pain into it.
+
+Tendons, ligaments and bursae deserve their own mention. A **tendon** attaches muscle to bone; the junction where it inserts into bone is called the **enthesis**, and inflammation there (enthesitis) is the hallmark of spondyloarthritis. A **bursa** is a fluid-filled sac that reduces friction, such as the prepatellar bursa in front of the kneecap; bursitis can mimic arthritis but swelling is localised and joint movement is often preserved.
+
+## Examining the musculoskeletal system {#sec-exam}
+
+Most musculoskeletal diagnoses are made from the history and examination. Blood tests and imaging refine the answer or rule out dangerous alternatives.
+
+### The history
+
+The first question is whether the problem is **inflammatory** or **mechanical**. The answer separates conditions such as rheumatoid arthritis, gout and spondyloarthritis from osteoarthritis, injury and most back pain.
+
+::: definition Inflammatory and mechanical joint pain {#def-inflammatory}
+**Inflammatory joint pain** is typically worse after rest and better with use. It is accompanied by **prolonged early-morning stiffness** (usually more than 30 minutes, often more than an hour), soft-tissue joint swelling, and sometimes systemic features such as fatigue, weight loss or fever. Inflammatory markers are often raised.
+
+**Mechanical joint pain** is worse with use and relieved by rest. Morning stiffness is brief (usually under 30 minutes), and any swelling is often bony or due to a small effusion. Systemic features are absent and inflammatory markers are normal.
 :::
+
+The second question is the **pattern**:
+
+- **Number of joints**: one (monoarthritis), two to four (oligoarthritis) or five or more (polyarthritis).
+- **Distribution**: small or large joints; symmetrical or asymmetrical; upper or lower limb; spine involved or not.
+- **Time course**: sudden (hours, as in gout or infection), subacute (days to weeks) or chronic (months).
+- **Associated features**: rash, psoriasis, eye inflammation, diarrhoea, urethritis, mouth ulcers, Raynaud's phenomenon, recent infection or travel.
+
+Function matters as much as diagnosis. Ask what the person can no longer do, whether they can work, dress, climb stairs and look after themselves, and what they want to be able to do again.
+
+### The examination
+
+A quick screening examination such as **GALS** (gait, arms, legs, spine) can be done in a couple of minutes and detects most significant abnormalities. Each joint that is abnormal on screening is then examined in detail with the sequence **look, feel, move**, followed by special tests:
+
+- **Look** for swelling, redness, deformity, muscle wasting, scars and skin or nail changes (psoriatic plaques, nail pitting).
+- **Feel** for warmth, tenderness, and the type of swelling: soft and boggy (synovitis), fluctuant (effusion) or hard (bony enlargement, as in osteoarthritis). Squeezing across the metacarpophalangeal (MCP) or metatarsophalangeal (MTP) joints is a useful screen for synovitis of the small joints.
+- **Move** the joint actively and then passively. Limited active but full passive movement suggests a muscle, tendon or nerve problem; limitation of both suggests the joint itself. Note crepitus and pain at the end of range.
+
+The details of examining each region are taught in [[clinical-skills/physical-examination]].
 
 ::: example Two pairs of hands {#ex-hands}
-Hand X: 72-year-old, 3 minutes of morning stiffness, painful thumb-base and DIP joints, hard bony enlargements, weak grip, normal CRP. Hand Y: 34-year-old, 90 minutes of morning stiffness, swollen warm MCP-and-WRIST joints bilaterally, fatigue, CRP 48.
+Two people come to the same clinic with painful hands.
+
+Person A is a 63-year-old woman with aching in the finger-tip joints for two years, worse after gardening. Morning stiffness lasts ten minutes. There are hard swellings at several distal interphalangeal (DIP) joints and at the base of the thumb.
+
+Person B is a 41-year-old woman with eight weeks of pain and swelling across the knuckles and wrists of both hands. She is stiff for two hours each morning and has trouble opening jars. The MCP joints are soft, swollen and tender, and squeezing across them is painful.
+
+What is the most likely diagnosis in each, and how urgent is each problem?
 ::: solution
-**Two archetypes read side by side ([[#def-joint]], [[clinical-skills/history-taking]]): Hand X is osteoarthritis - brief-gelling-stiffness, DIP-and-1st-CMC distribution, hard-bony-nodes, mechanical pain pattern, normal biochemistry, clinical-diagnosis-with-X-ray-only-if-uncertain - [[musculoskeletal/osteoarthritis]]; Hand Y is synovitis until proven otherwise - prolonged-morning-stiffness, symmetric-MCP-and-wrist-swelling, systemic inflammation, the urgent-rheumatology-referral-and-ACPA-RF-serology-and-imaging-baseline - because the early-treatment-window logic makes weeks matter - [[musculoskeletal/inflammatory-arthritis]], [[immunology/autoimmunity]], [[clinical-skills/laboratory-tests]]; the traps - early inflammatory disease hides in "just a painful hand" and advanced OA flares can mimic synovitis, and crystals love both (the gout-and-CPPD masquerade) - [[musculoskeletal/inflammatory-arthritis]]; and the management fork that follows the pattern, not the age - hand-therapy-and-adaptation-versus-DMARD-and-treat-to-target - [[musculoskeletal/osteoarthritis]], [[musculoskeletal/inflammatory-arthritis]], [[pharmacology/dosing-principles]].**
+Person A has **mechanical** features (pain with use, brief stiffness) and **bony** swelling in the classic distribution of hand osteoarthritis: the DIP joints (Heberden's nodes) and the first carpometacarpal joint at the base of the thumb. Blood tests are not needed to make the diagnosis. Management is non-urgent and centres on exercise, hand therapy and topical treatment ([[musculoskeletal/osteoarthritis]]).
+
+Person B has **inflammatory** features (long morning stiffness, soft-tissue swelling) in a **symmetrical small-joint polyarthritis** affecting the MCPs and wrists. This is persistent synovitis and the most likely cause is rheumatoid arthritis. She needs **urgent referral to rheumatology**, because early disease-modifying treatment prevents joint damage. Blood tests (rheumatoid factor, anti-CCP antibodies, CRP, ESR) can be sent but should not delay referral ([[musculoskeletal/inflammatory-arthritis]]).
+
+The distinction rests on the history and the feel of the swelling, not on age alone.
+:::
+:::
+
+### Blood tests
+
+**Inflammatory markers** show whether there is systemic inflammation, but they do not say where or why.
+
+- **C-reactive protein (CRP)** is made by the liver in response to interleukin-6. It rises within hours of an inflammatory stimulus and falls quickly once it settles, so it is good for following acute changes.
+- **Erythrocyte sedimentation rate (ESR)** measures how fast red cells settle in a tube. It rises when plasma fibrinogen and immunoglobulins are increased, and it changes slowly. It also rises with age, anaemia and in women, and is very high in myeloma, giant cell arteritis and polymyalgia rheumatica.
+
+Neither test is specific. A normal CRP makes active inflammatory arthritis less likely but does not exclude it; a raised CRP may come from a chest infection rather than a joint. Autoantibodies such as rheumatoid factor and antinuclear antibodies are useful only when the clinical picture already suggests the relevant disease, because they are common in healthy people; this point is developed in [[musculoskeletal/connective-tissue-vasculitis]].
+
+### Synovial fluid
+
+Aspirating a joint (arthrocentesis) is the single most useful test in a hot, swollen joint. The fluid is examined for appearance, white cell count, Gram stain and culture, and crystals under polarised light microscopy.
+
+::: definition Synovial fluid analysis {#def-synovial-fluid}
+| Feature | Normal | Non-inflammatory (e.g. osteoarthritis) | Inflammatory (e.g. rheumatoid, gout) | Septic |
+|---|---|---|---|---|
+| Appearance | clear, pale yellow | clear, yellow | cloudy, yellow | turbid, often purulent |
+| Viscosity | high | high | reduced | low |
+| White cells per mm³ | < 200 | < 2,000 | 2,000–50,000 | usually > 50,000 |
+| Neutrophils | < 25% | < 25% | often > 50% | usually > 90% |
+| Gram stain and culture | negative | negative | negative | often positive |
+
+**Crystals**: **monosodium urate** crystals in gout are needle-shaped and **negatively birefringent** (yellow when parallel to the compensator axis). **Calcium pyrophosphate** crystals in calcium pyrophosphate deposition disease (CPPD, formerly pseudogout) are rhomboid and weakly **positively birefringent**.
+
+The categories overlap. Gout can produce white counts above 50,000 per mm³, and partly treated or early infection can produce lower counts.
+:::
+
+::: warning Crystals do not exclude infection
+Finding urate or pyrophosphate crystals in a hot joint does **not** rule out septic arthritis. The two can coexist, and a damaged joint is more prone to infection. Equally, a normal temperature, a normal white cell count in the blood or a modest CRP does not exclude infection, particularly in older people, people taking immunosuppressants and people with a prosthetic joint. If the clinical picture suggests infection, treat it as infection until the culture result is known.
+:::
+
+::: example The hot knee {#ex-septic}
+A 71-year-old man with type 2 diabetes and knee osteoarthritis presents with two days of a hot, swollen, very painful right knee. He cannot bear weight and will barely let the knee be moved. Temperature is 37.6 °C. Two weeks ago he had a leg ulcer. CRP is 148 mg/L. Aspiration yields turbid fluid with 85,000 white cells per mm³, 95% neutrophils, and a few calcium pyrophosphate crystals. The Gram stain shows no organisms. What is the working diagnosis and what should happen next?
+::: solution
+The working diagnosis is **septic arthritis**. The features that point to it are an acute monoarthritis with severe pain on any movement, a likely source (the leg ulcer), risk factors (age, diabetes, a previously damaged joint), a very high CRP and a synovial white count above 50,000 per mm³ with a strong neutrophil predominance.
+
+The calcium pyrophosphate crystals do not change this ([[#def-synovial-fluid]]): crystal deposition is common in an osteoarthritic knee of a man of this age and may be an incidental finding. A negative Gram stain is also common in septic arthritis and does not exclude it.
+
+Next steps, following local guidance:
+
+1. Send synovial fluid for culture (already done) and take **blood cultures** before antibiotics.
+2. Start **empirical intravenous antibiotics** promptly, chosen to cover *Staphylococcus aureus* and streptococci (the commonest causes) according to the local policy, adjusted later to culture results.
+3. Refer urgently to orthopaedics for **joint washout** (arthroscopic or open), because pus destroys cartilage within days.
+4. Look for and treat the source and assess for sepsis ([[infectious-diseases/fever-sepsis]]).
+
+Septic arthritis has a substantial mortality in older people and frequently leaves permanent joint damage. Speed matters more than diagnostic certainty.
 :::
 :::
 
 ::: quiz
-The finding that most reliably raises suspicion of acute compartment syndrome is:
-- [ ] Absent dorsalis pedis pulse
-- [x] Severe pain on passive stretch of the compartment muscles
-- [ ] Temp 38.5
-- [ ] CRP 90
+A 30-year-old man has a hot, swollen first metatarsophalangeal joint that started overnight. Which finding on joint aspiration would most strongly support gout?
+- [ ] Rhomboid crystals with weak positive birefringence
+- [x] Needle-shaped crystals with negative birefringence
+- [ ] A synovial white cell count of 150 per mm³
+- [ ] A raised blood CRP
 ::: solution
-**Pain-out-of-proportion-and-passive-stretch-pain lead; pulses, temperature and CRP are all late, absent or irrelevant respectively ([[#def-red-flags]], [[musculoskeletal/fractures]]); the pulseless-limb chapters are vascular emergencies ([[surgery/vascular-urological-surgery]]); analgesia can mask but never excludes, so escalation-serial-examination-beats-single-observation - [[clinical-skills/patient-safety]].**
+Needle-shaped, negatively birefringent crystals are monosodium urate, which confirms gout. Rhomboid, positively birefringent crystals are calcium pyrophosphate (CPPD). A white count of 150 per mm³ is normal fluid, which would argue against any acute arthritis. A raised CRP is non-specific: it occurs in gout, infection and many other conditions. Remember that crystals do not exclude coexisting infection.
 :::
 :::
 
+### Imaging
 
-A closing examination habit worth teaching explicitly: in every painful joint the competent clinician asks four questions in order - is it infected, is it inflammatory, is it mechanical, is something else referring pain here - and can state the single finding that would overturn the current answer ([[clinical-skills/clinical-reasoning]], [[clinical-skills/history-taking]]). That disciplined uncertainty, renewed at each review, is what catches the second diagnosis: the tumour beneath the "osteoarthritis", the crystal disease hiding inside the septic joint, the inflammatory polyarthritis whose first presentation was blamed on age ([[musculoskeletal/inflammatory-arthritis]], [[musculoskeletal/osteoarthritis]], [[pathology/cancer-diagnosis]]).
+Each imaging method answers different questions.
+
+- **Plain X-ray** shows bone: fractures, joint-space narrowing, osteophytes, erosions, calcification and bone density changes, though it is insensitive to early bone loss and early inflammatory arthritis.
+- **Ultrasound** shows soft tissue: effusions, synovitis (including increased blood flow with Doppler), tendon tears, enthesitis and the "double contour" sign of urate deposition on cartilage. It can guide aspiration and injection.
+- **MRI** shows bone marrow oedema, cartilage, ligaments, menisci, discs and nerve roots, and early inflammatory changes in the sacroiliac joints.
+- **CT** shows complex fractures and bony anatomy in detail; dual-energy CT can identify urate deposits.
+- **DXA** measures bone mineral density, as described above.
+
+Imaging findings are common in people without symptoms, especially with age. Degenerative changes on an X-ray or MRI do not prove that they are the cause of the pain. This theme returns in [[musculoskeletal/osteoarthritis]] and [[musculoskeletal/back-pain]].
+
+## Putting it together: four questions for a painful joint {#sec-four-questions}
+
+A useful habit is to ask four questions, in this order, about any painful joint:
+
+1. **Could it be infected?** Septic arthritis destroys a joint within days and can kill. A single hot, swollen joint is septic until proven otherwise.
+2. **Is it inflammatory?** Inflammatory arthritis needs prompt specialist assessment, because treatment in the first months changes the long-term outcome.
+3. **Is it mechanical?** Most joint pain in the community is mechanical: osteoarthritis, injury, tendon problems and overuse.
+4. **Is the pain coming from somewhere else?** Hip disease often presents as knee pain; neck problems refer pain to the shoulder and arm; and visceral problems can refer pain to the back and shoulder.
+
+For each answer, it is worth stating the one finding that would change your mind. That discipline catches the second diagnosis: the crystal arthritis inside the infected joint, the bone tumour under the "osteoarthritis", or the inflammatory arthritis first blamed on age.
+
+::: history
+The microscopic structure of bone was described in 1691 by the English physician **Clopton Havers**, whose name survives in the Haversian canals. In 1892 the German surgeon **Julius Wolff** argued that the internal architecture of bone adapts to the loads it bears, the idea now called Wolff's law. **Wilhelm Röntgen**'s discovery of X-rays in 1895 made it possible, for the first time, to see bone in a living person, and fracture and joint care changed within a few years. In the 1960s the American orthopaedic researcher **Harold Frost** described the basic multicellular unit and the "mechanostat", explaining how remodelling and loading are linked. The molecular switch was found in the late 1990s, when research groups identified osteoprotegerin and RANKL; within a decade a RANKL antibody, denosumab, was in clinical use. In 2008 **John Kanis** and colleagues at the WHO Collaborating Centre in Sheffield released FRAX, moving osteoporosis care from a single density measurement to an estimate of absolute fracture risk.
+:::
 
 ## Where this leads
 
-Fracture biology and management in [[musculoskeletal/fractures]]; osteoarthritis in [[musculoskeletal/osteoarthritis]]; the inflammatory and crystal arthritides in [[musculoskeletal/inflammatory-arthritis]]; connective-tissue disease and vasculitis in [[musculoskeletal/connective-tissue-vasculitis]]; the spine in [[musculoskeletal/back-pain]]; bone density and calcium metabolism in [[endocrine/bone-calcium]]; joint surgery in [[surgery/orthopaedics]]; exercise biology in [[physiology/muscle]].
-
-::: history
-**Bone and joint medicine's long reconnaissance: Fuller Albright's 1940s syndrome-first description of osteoporosis as a mass-and-fragility disease, the Albright-Arch-Buell papers that founded bone-mass thinking; Nordin and the twentieth-century calcium-balance metabolists who turned rickets and osteomalacia into measurable axes - [[endocrine/bone-calcium]]; the synovectomy-and-synovium-as-target insight that predated and then justified the entire biologic era of rheumatoid arthritis - [[musculoskeletal/inflammatory-arthritis]], [[immunology/vaccines-immunotherapy]]; Hench's 1949 compound-E revelation and the shared rheumatology-endocrinology destiny of glucocorticoids, with their bone-and-tendon-and-cartilage price learned slowly afterwards - [[endocrine/adrenal]], [[endocrine/bone-calcium]]; the orthopaedic fixation revolution - the AO principles of compression and stability and biology-preserving reduction that made internal fixation a science of mechanics and healing windows - [[musculoskeletal/fractures]]; the knee-arthroscopy-oversupply lesson - the placebo-controlled trials showing degenerative-meniscectomy-benefit-nothing-beyond-sham becoming the textbook example of surgical evidence - [[epidemiology-ebm/randomised-trials]], [[public-health/health-systems-economics]]; and the low-friction joint replacement lineage from Gluck's and Charnley's cemented hip to modern bearings and accelerated recovery - the VTE-after-arthroplasty lesson in [[blood/thrombosis-anticoagulation]].**
-:::
-
-## Mechanisms onward
-
-The mechanostat's clinical cousins - stress-fracture and bone-stress-injury staging and the return-to-play loading conversation - sit with exercise medicine in [[physiology/muscle]] and overuse patterns in [[musculoskeletal/back-pain]]; cartilage-biology failures from avascular necrosis to ochronosis appear in [[musculoskeletal/osteoarthritis]]; rehabilitation medicine - the functional-restoration and goal-setting discipline that turns a repaired structure into a usable limb - is the thread connecting every chapter here to the discharge destination, and it shares its loading logic with the mechanostat above. The immune-driven joint as therapeutic target runs through [[musculoskeletal/inflammatory-arthritis]] and [[musculoskeletal/connective-tissue-vasculitis]] with the biologic-and-monitoring pharmacology of [[pharmacology/dosing-principles]] and the infection-vigilance trade of [[immunology/vaccines-immunotherapy]].
+Fractures, their healing and their complications are the subject of [[musculoskeletal/fractures]]. Cartilage failure and whole-joint disease are covered in [[musculoskeletal/osteoarthritis]]. Synovial inflammation and crystal disease are in [[musculoskeletal/inflammatory-arthritis]], and systemic autoimmune disease in [[musculoskeletal/connective-tissue-vasculitis]]. The hormonal control of calcium and the drugs for osteoporosis are covered more fully in [[endocrine/bone-calcium]], and the physiology of skeletal muscle in [[physiology/muscle]].
 
 ::: summary
-- Bone is living composite architecture: osteocytes sense, osteoclasts excavate, osteoblasts refill, and hormones and load set the balance between the two crews.
-- The remodelling balance is tipped by age, oestrogen withdrawal, steroids, disuse, inflammation and kidney failure - the same list appears in every bone disease ahead.
-- Synovial joints fail in two great patterns - mechanical wear with use-related pain and inflammatory synovitis with rest stiffness - and the history tells you which before any scan.
-- The examination is a probability machine; special tests and imaging only re-weight it.
-- A hot swollen joint, a back with fever or neurology, and a limb in pain out of proportion are emergencies first and diagnoses second.
+- Bone is a living composite of type I collagen and hydroxyapatite. Cortical bone gives strength; trabecular bone has a large surface and turns over faster.
+- Osteoblasts form bone, osteoclasts resorb it, and osteocytes sense load and coordinate both. The RANKL/OPG ratio is the main switch for resorption.
+- Bone is lost when each remodelling unit leaves a deficit, and faster when more units are active, as after the menopause. Antiresorptive drugs slow resorption; anabolic drugs boost formation.
+- Osteoporosis is defined on DXA as a T-score of $-2.5$ or below. Its blood tests are normal; they are done to find secondary causes and mimics. Fracture risk tools combine BMD with clinical risk factors.
+- Adjusted calcium corrects total calcium for a low albumin: total Ca $+ 0.02 \times (40 - \text{albumin})$.
+- A synovial joint consists of avascular hyaline cartilage, subchondral bone, capsule, synovium and synovial fluid. Cartilage heals poorly; synovium is the target of inflammation.
+- Separate inflammatory from mechanical pain, then define the pattern (number, distribution, time course, associated features).
+- A hot swollen joint is septic until proven otherwise. Aspirate it; crystals do not exclude infection.
 :::
 
 ## Exercises
 
-::: exercise Draw the remodelling unit {level=1}
-Explain, to a patient starting glucocorticoids, why their bones are at risk and what the prevention list contains.
+::: exercise Bone cells {level=1}
+Name the cell that (a) secretes osteoid and alkaline phosphatase, (b) dissolves bone mineral with acid, and (c) senses mechanical strain and secretes sclerostin. From which cell lineage does each come?
 ::: solution
-**The mechanism in one sentence: steroids tip the remodelling balance toward resorption and suppress formation and calcium absorption and bone-building osteocyte and osteoblast function, and the loss is fastest in the first months ([[endocrine/adrenal]], [[endocrine/bone-calcium]]); the prevention list - lowest-effective-dose-and-steroid-sparing-plans, calcium-and-vitamin-D-adequacy-with-diet-first-then-sensible-supplements, resistance-and-impact-exercise-and-no-smoking-and-alcohol-moderation, bone-density-monitoring-by-risk-and-fracture-risk-assessment-treatment-thresholds, and early-osteoporosis-drug-therapy-by-risk-not-by-age ([[endocrine/bone-calcium]], [[public-health/screening]], [[gastrointestinal/clinical-nutrition]], [[physiology/muscle]]).**
+(a) The **osteoblast**, derived from mesenchymal stem cells. (b) The **osteoclast**, a multinucleated cell of the monocyte–macrophage lineage. (c) The **osteocyte**, which is an osteoblast that has become embedded in mineralised matrix. Sclerostin from osteocytes inhibits bone formation; loading reduces sclerostin, which is one way exercise maintains bone.
 :::
 :::
 
-::: exercise Interpret the synovial fluid {level=1}
-Give the three-way synovial-fluid pattern (cell count, appearance, key additions) separating septic, inflammatory and degenerative.
+::: exercise Calculate a T-score {level=1 check="-2"}
+A 58-year-old man taking long-term prednisolone has a lumbar spine BMD of 0.700 g/cm². The young-adult mean for the reference population is 0.940 g/cm² with a standard deviation of 0.120 g/cm². Calculate his T-score (exact value) and classify it.
 ::: solution
-**Septic - purulent, very-high-neutrophil-count (often far above inflammatory ranges but overlapping), positive Gram-or-culture and the clinical-trust-rule (treat-on-suspicion, never wait for culture); inflammatory - cloudy, high-white-cell-count-with-neutrophils, crystals-or-negative-culture-and-the-autoimmune-serology-context; degenerative - clear, low-cell-count, and a diagnosis of pattern - the clinical-score and the ultrasound-or-MRI-only-if-it-changes-management discipline ([[clinical-skills/laboratory-tests]], [[microbiology/bacteria]], [[musculoskeletal/inflammatory-arthritis]], [[musculoskeletal/osteoarthritis]], [[clinical-skills/medical-imaging]]).**
+$T = (0.700 - 0.940)/0.120 = -0.240/0.120 = -2.0.$
+
+This lies between $-1.0$ and $-2.5$, so it is classed as low bone mass (osteopenia). Because he takes long-term glucocorticoids, his fracture risk is higher than the BMD alone suggests. Glucocorticoids reduce bone quality as well as density, and guidelines lower the threshold for treatment in this group.
 :::
 :::
 
-::: exercise Sort mechanical from inflammatory {level=2}
-A 54-year-old has 25 minutes of morning stiffness, worse after rest, small-joint-hand-symmetry and raised CRP. A 54-year-old has 5 minutes of stiffness, worse at day-end, knee-line pain and a normal CRP. Assign diagnoses and next tests.
+::: exercise Adjusted calcium {level=1 check="2.34"}
+A patient has a total calcium of 2.10 mmol/L and an albumin of 28 g/L. Using the formula in [[#eq-adjusted-ca]], calculate the adjusted calcium in mmol/L (exact value).
 ::: solution
-**The first is an inflammatory-pattern history needing urgent-referral-for-rheumatoid-arthritis-evaluation - ACPA-and-RF-and-CRP-and-ESR-and-ultrasound-or-MRI-of-hands-and-feet-and-the-early-treatment-window-that-makes-referral-timing-a-treatment-variable ([[musculoskeletal/inflammatory-arthritis]], [[immunology/autoimmunity]], [[clinical-skills/laboratory-tests]]); the second is osteoarthritis-pattern with the clinical-diagnosis-no-routine-imaging-needed rule and the weight-and-exercise-and-strength-and-pain-literacy plan and the when-to-image-against-urgency-flags ([[musculoskeletal/osteoarthritis]], the weight-management service row in [[public-health/prevention-promotion]], [[physiology/muscle]]).**
+Adjusted calcium $= 2.10 + 0.02 \times (40 - 28) = 2.10 + 0.24 = 2.34$ mmol/L. This is within the usual reference range, so the low total calcium reflects the low albumin.
 :::
 :::
 
-::: exercise Justify or refuse the scan {level=2}
-Uncomplicated lower-back-pain of two weeks, no red flags, anxious patient demanding an MRI "to see something". Decide and defend.
+::: exercise Read the biochemistry {level=2}
+A 52-year-old woman who rarely goes outdoors and wears full-body covering has aching bones, difficulty climbing stairs and a waddling gait. Calcium is 2.12 mmol/L (adjusted), phosphate is low, ALP is raised and PTH is raised. What is the most likely diagnosis, what explains each result, and what single further test would you request?
+::: hint
+Compare the pattern with the table of metabolic bone diseases. Which hormone deficiency lowers both calcium and phosphate absorption?
+:::
 ::: solution
-**Refuse-kindly: imaging without indications increases cost, anxiety and incidental findings without improving outcomes, and the natural history is favourable for most episodes ([[musculoskeletal/back-pain]], [[public-health/health-systems-economics]], [[clinical-skills/medical-imaging]]); the defence package is the real treatment - the serious-cause-exclusion-already-done, the stay-active-and-do-not-bed-rest advice, the analgesia-ladder-with-caution-list, the expected-recovery-timeframe and the named-red-flags-to-return-for, and the follow-up-trigger if it persists beyond the expected window with the psychological-and-workplace-barriers screen ([[clinical-skills/communication]], [[psychiatry/anxiety-disorders]], the analgesic-harms row in [[pharmacology/adverse-reactions]]); and the audit-loop honesty - if the service books MRI faster than it can interpret, the pathway itself creates demand ([[public-health/health-systems-economics]], [[epidemiology-ebm/measuring-disease]]).**
+The most likely diagnosis is **osteomalacia due to vitamin D deficiency**. Lack of sunlight exposure reduces skin synthesis of vitamin D. Low vitamin D reduces gut absorption of calcium and phosphate. The fall in calcium stimulates PTH (secondary hyperparathyroidism), which restores calcium towards normal at the cost of increased renal phosphate loss, so phosphate is low. Osteoblasts are working hard on unmineralised osteoid, so ALP is raised. Proximal muscle weakness causes the waddling gait. The key further test is **serum 25-hydroxyvitamin D**. Osteoporosis would give normal biochemistry, and primary hyperparathyroidism would give a raised calcium.
 :::
 :::
 
-::: exercise Explain the frozen shoulder {level=2}
-A 52-year-old with type 1 diabetes has a painful, globally-stiff shoulder with lost passive external rotation; X-ray normal. Name the pattern, the associations to check, and the staging logic.
+::: exercise Mechanical or inflammatory? {level=2}
+For each person, decide whether the pain is more likely inflammatory or mechanical and give two features that support your answer. (a) A 26-year-old man with low back pain for six months that wakes him in the second half of the night and improves with exercise. (b) A 70-year-old woman with right knee pain on walking, eased by rest, with five minutes of morning stiffness. (c) A 35-year-old woman with three months of pain and swelling in both wrists and morning stiffness lasting ninety minutes.
 ::: solution
-**Capsular-pattern restriction equals frozen shoulder (adhesive capsulitis), not a rotator-cuff or joint-surface problem - the capsular-pattern-loss-of-passive-movement examination signature ([[#def-joint]], [[clinical-skills/physical-examination]]); the diabetes-and-thyroid association is real and bidirectional-with-control - check the HbA1c and TSH and the other-shoulder-and-predictive-counselling and the other-cause-sweep ([[endocrine/diabetes-complications]], [[endocrine/thyroid]]); the staging logic - the painful-freezing stage needing pain-control-and-early-intra-articular-steroid-and-physiotherapy-versus-the-frozen-stage-needing-mobilisation-and-distension-or-surgical-options-and-the-do-not-omit-the-diabetes-clinic conversation ([[musculoskeletal/back-pain]]-shoulder-rows, [[pharmacology/adverse-reactions]]-injection-glycaemia-blip-counselling, [[clinical-skills/physical-examination]]-injection-technique).**
+(a) **Inflammatory**: onset under 40 with a long duration, night pain in the second half of the night, and improvement with exercise. This is the pattern of inflammatory back pain seen in axial spondyloarthritis ([[musculoskeletal/back-pain]]).
+
+(b) **Mechanical**: pain with use, relieved by rest, brief stiffness, in a typical age group for osteoarthritis.
+
+(c) **Inflammatory**: prolonged morning stiffness and soft-tissue swelling of both wrists for three months. This is persistent synovitis and needs urgent rheumatology referral.
 :::
 :::
 
-::: exercise Design the community bone service {level=3}
-A region treats osteoporosis only after hip fracture. Build the prevention-first service with evidence, economics and equity components.
+::: exercise Interpret the fluid {level=2}
+Synovial fluid from a swollen knee is cloudy with reduced viscosity, contains 18,000 white cells per mm³ (70% neutrophils), shows no crystals, and the Gram stain and culture are negative. Which category does this fall into, and give three conditions that could produce it.
 ::: solution
-**The evidence spine - the-fracture-risk-assessment-and-targeted-DEXA-and-the-bisphosphonate-denomumab-and-anabolic-arms-and-the-vertebral-fracture-identification-gap ([[endocrine/bone-calcium]], [[clinical-skills/laboratory-tests]]); the delivery spine - the-fracture-liaison-service-for-each-fragility-fracture-patient-with-name-owner-follow-up-and-the-repeat-fracture-rate-as-the-headline-KPI ([[musculoskeletal/fractures]], [[clinical-skills/records-handover]], [[public-health/screening]]); the economics case - the-hip-fracture-versus-generic-bisphosphonate-cost-comparison-and-the-avoids-nursing-home-and-lost-independence-and-economy-of-scale-in-infusion-clinics ([[public-health/health-systems-economics]], [[geriatrics-palliative/ageing-frailty]]); the equity-and-access layer - the-deprivation-and-ethnicity-and-sex-gaps-in-diagnosis-and-treatment-and-the-community-pharmacy-and-optometry-of-bone-and-telehealth-adherence-and-the-fall-prevention-and-vision-and-footwear-and-housing-hazards-program ([[public-health/determinants-inequalities]], [[geriatrics-palliative/falls]], [[nervous-system/sensory-systems]]-vision-row); and the safety governance - the-atypical-femoral-fracture-and-ONJ-disclosure-honesty-and-medication-holiday-policies-and-the-pharmacovigilance-feedback-loops ([[pharmacology/adverse-reactions]], [[musculoskeletal/fractures]]).**
+This is **inflammatory** fluid ([[#def-synovial-fluid]]): the white count lies between 2,000 and 50,000 per mm³ with a neutrophil majority, and the viscosity is reduced because inflammatory enzymes break down hyaluronan.
+
+Conditions that could produce it include **rheumatoid arthritis**, **reactive arthritis** or another spondyloarthritis, **psoriatic arthritis**, and **gout or CPPD** in which crystals were missed (crystals can be scanty, and the sample should be examined promptly by an experienced observer). Partially treated **septic arthritis** must also be considered: culture can be negative after antibiotics, and gonococcal arthritis often gives negative synovial cultures. The clinical picture, blood tests and sometimes a repeat aspiration decide between them.
 :::
 :::
 
-::: exercise Run the aspiration clinic safely {level=3}
-Design the day-unit for joint injections and aspirations: indications, safety checks, consent, infection control, anticoagulation, governance.
+::: exercise Post-test probability from synovial fluid {level=3 check="round(100*(0.25*7.7)/(1+0.25*7.7))"}
+In a systematic review of adults with a hot joint (Margaretten and colleagues, *JAMA* 2007), a synovial white cell count of 50,000 per mm³ or more had a positive likelihood ratio for septic arthritis of about 7.7. A clinician estimates that a patient's probability of septic arthritis before aspiration is 20%. The count comes back at 62,000 per mm³. Using odds, calculate the post-test probability of septic arthritis, as a percentage rounded to the nearest whole number.
+::: hint
+Convert the probability to odds, multiply by the likelihood ratio, and convert back: probability $=$ odds$/(1 + $odds$)$.
+:::
 ::: solution
-**Clinical spine - the-suspected-septic-joint-never-uses-a-day-unit-and-goes-straight-to-orthopaedics ([[#def-red-flags]]); the crystal-and-osteoarthritis-and-bursa-and-glenohumeral-injection-suites with the ultrasound-guidance-accuracy-evidence and the post-injection-rest-and-no-immediate-heavy-use plan ([[musculoskeletal/osteoarthritis]], [[clinical-skills/medical-imaging]]). Safety checks - the-anticoagulation-threshold-decisions-with-radiology-and-haematology-shared-protocols and the do-not-withhold-life-saving-tap-versus-defer-elective-steroid logic ([[blood/haemostasis-bleeding]], [[blood/thrombosis-anticoagulation]]); infection control - the-clean-not-sterile-field-evidence-versus-practice-and-the-diabetic-injection-glycaemia-counselling ([[infectious-diseases/healthcare-infections]], [[endocrine/diabetes-complications]]); consent and communication - the-post-injection-flare-and-the-insomnia-and-the-face-flush-and-the-tendon-or-cartilage-rare-harms and the "steroids-into-joints-is-a-diagnostic-as-well-as-therapeutic-test" framing ([[clinical-skills/communication]], [[pharmacology/adverse-reactions]]); governance - the-traceability-and-lot-batch-records-and-skin-checklists-and-complication-flags-and-the-audit-of-pain-scores-and-reinjection-intervals ([[clinical-skills/records-handover]], [[public-health/health-systems-economics]]-capacity-row).**
+Pre-test odds $= 0.20/0.80 = 0.25$.
+
+Post-test odds $= 0.25 \times 7.7 = 1.925$.
+
+Post-test probability $= 1.925/(1 + 1.925) = 1.925/2.925 \approx 0.658$, or **66%**.
+
+The result moves the probability substantially but does not reach certainty. In practice a probability this high means treating as septic arthritis (cultures, antibiotics and orthopaedic review) while awaiting culture. Note also that a count below 50,000 would not have excluded infection; the likelihood ratio for a negative result is much less impressive. Diagnostic-test reasoning of this kind is developed in [[epidemiology-ebm/diagnostic-tests]].
 :::
 :::
 
-::: exercise Read the epidemiology {level=2}
-MSK pain is the leading cause of years-lived-with-disability worldwide yet consumes a small share of health budgets. Give three mechanisms of the mismatch and one metric fix.
+::: exercise An isolated raised ALP {level=3}
+A 72-year-old man has a routine blood test showing an ALP of 640 U/L (reference up to 130) with normal calcium, phosphate, liver transaminases, bilirubin and gamma-glutamyl transferase. He mentions that his hats no longer fit and he has aching in his right thigh. (a) Is the ALP more likely to come from liver or bone, and why? (b) What is the most likely diagnosis? (c) Name two complications to ask about and one investigation that would support the diagnosis.
+::: hint
+ALP comes from both liver and bone. What do the other liver tests tell you? Which bone disease enlarges the skull?
+:::
 ::: solution
-**The mechanisms - the-survival-not-mortality-metric-bias-that-underprices-disability-and-the-diffuse-not-focal-nature-that-defeats-hospital-oriented-services-and-the-low-status-of-rehabilitation-and-community-MSK-workforce-versus-procedural-specialties ([[public-health/determinants-inequalities]], [[epidemiology-ebm/measuring-disease]], [[public-health/health-systems-economics]]); the-metric-fix - fund-and-compare-on-DALY-or-YLD-reduction-and-function-scales-and-back-to-work-and-pain-registers-not-admission-counts, and the musculoskeletal-conditions-as-chronic-pain-conditions-policy-reframe with the mental-health-and-sleep-and-workplace-integration ([[public-health/prevention-promotion]], [[psychiatry/anxiety-disorders]], [[epidemiology-ebm/critical-appraisal]]).**
+(a) **Bone**. A hepatic source would usually be accompanied by a raised gamma-glutamyl transferase and often other abnormal liver tests. Isoenzyme analysis or bone-specific ALP can confirm the source if needed.
+
+(b) **Paget's disease of bone**: a focal disorder of excessive, disorganised remodelling in older adults, with large, overactive osteoclasts followed by chaotic new bone formation. The skull enlargement and the thigh pain (femoral involvement) fit. Calcium and phosphate are typically normal.
+
+(c) Complications include bone pain, deformity (bowing of the femur or tibia), **deafness** from skull involvement compressing the cochlea or auditory nerve, pathological fracture, secondary osteoarthritis of adjacent joints, nerve compression and, rarely, osteosarcoma. An **X-ray** of the affected area showing bone expansion with thickened, disorganised trabeculae, or an isotope **bone scan** showing the extent of involvement, supports the diagnosis. A bisphosphonate is used for bone pain due to active Paget's disease.
 :::
 :::

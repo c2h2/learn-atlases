@@ -1,146 +1,312 @@
-Osteoarthritis is the joint's answer to a question nobody asks politely: **what happens when cartilage, bone, synovium, muscle and the nervous system all age together under load?** The old "wear and tear" label is wrong twice over - it implies inevitability, and it implies the cartilage alone. Modern practice treats osteoarthritis as a whole-joint disease with a pain generator that may live in the bone, the synovium, the bursae, the muscles or the spinal cord, and a management ladder whose first rungs are not drugs and never will be.
+Osteoarthritis is the commonest joint disease in the world. The Global Burden of Disease study estimated that about 595 million people were living with it in 2020, and it is one of the leading causes of pain and disability in older adults. It is often dismissed as "wear and tear", an inevitable consequence of ageing that nothing can be done about. Both halves of that phrase are misleading. Osteoarthritis is an active disease process involving every tissue of the joint, and although it cannot be cured, the right combination of exercise, weight management, sensible use of drugs and, when needed, joint replacement substantially improves pain and function for most people.
 
-This chapter covers why joints degenerate, how osteoarthritis presents and is diagnosed, and the management pyramid from education and exercise to replacement and its aftermath.
+This chapter covers what osteoarthritis is, why it develops, how it is diagnosed (usually without imaging), how it is managed according to current UK guidance, and the principles and complications of joint replacement. It assumes the structure of cartilage and the synovial joint from [[musculoskeletal/bones-joints]].
 
-## Why joints degenerate
+## What osteoarthritis is {#sec-what}
 
-::: definition Pathophysiology of the failing joint {#def-pathophysiology}
-**Cartilage first (hyaline cartilage is avascular, aneural, acompressive-viscoelastic bearing in which chondrocytes sit marooned in a water-trapped proteoglycan gel constrained by a type-II-collagen cage, with chondrocytes sensing load through integrins and primary cilia and maintaining a matrix that turns over on a geological timescale - the failure mode is a shift from anabolic maintenance to catabolic matrix-degrading-enzyme dominance, aggrecan cleavage and collagen-network disruption and fibrillation, and the limited self-repair that leaves defects unfilled - [[cell-biochemistry/proteins-enzymes]], [[physiology/muscle]]-load-rows); the whole-joint cast (subchondral bone - sclerosis, cysts, the remodeling-response-to-altered-loading and the marrow-lesion-pain-association; synovium - low-grade-mechanically-driven inflammation with effusions and the "flare" biology; capsule and ligaments - laxity-and-stiffness-both; the meniscus and labrum - degenerative-fissures-and-bucket-handle-tears-on-minimal-twists-with-the-knee-arthroscopy-lesson-learned-hard; bursae and tendons around the joint - the "periarticular" pain generators that get blamed on cartilage; and muscle - quadriceps-and-hip-abductor weakness as both cause and consequence with the atrophy-from-pain reflex to break - [[physiology/muscle]], [[musculoskeletal/bones-joints]]); and the pain generator problem (nociceptive bone-and-synovial-and-bursal pain, referred capsular patterns, and the nociplastic amplification that explains why X-ray severity and pain so often disagree - the chronic-pain-overlap addressed in [[musculoskeletal/back-pain]] and [[psychiatry/anxiety-disorders]]). Aetiology - primary versus secondary (age-and-genetics-polygenic-and-female-sex-and-menopause-and-ethnicity-load-patterns; obesity as the modifiable-systemic-mechanical-inflammatory-exposure - adipose-mechanotransduction-and-adipokines and the dose-response of weight-and-knee-load - [[gastrointestinal/clinical-nutrition]], [[endocrine/diabetes]]; joint-shape-failure - developmental dysplasia of the hip, femoroacetabular impingement, and malalignment post-meniscectomy or post-fracture - [[paediatrics/congenital-genetic]]-DDH-row, [[musculoskeletal/fractures]]-intra-articular-row; post-traumatic osteoarthritis after ligament-losing ligament-injury and the young-knee's long argument with pivoting sport - [[physiology/muscle]]; and the secondary-mimics that must not be called "just OA" - crystal deposition CPPD and gout, neuropathic Charcot joint, avascular necrosis, inflammatory arthritis presenting late, haemophilia and iron and Wilson disease arthropathy - [[musculoskeletal/inflammatory-arthritis]], [[endocrine/bone-calcium]], the Charcot row in [[endocrine/diabetes-complications]], [[blood/haemostasis-bleeding]]-haemophilic-arthropathy-row, [[gastrointestinal/liver-disease]]-Wilson-row).**
+::: definition Osteoarthritis {#def-oa}
+**Osteoarthritis (OA)** is a disease of the whole synovial joint in which an imbalance between tissue damage and repair leads to:
+
+- focal **loss of articular cartilage**;
+- **remodelling of the subchondral bone**, with sclerosis (increased density) and sometimes cysts and bone marrow lesions;
+- **osteophytes**: outgrowths of new bone and cartilage at the joint margins;
+- variable, usually low-grade **synovitis**;
+- changes in the **capsule, ligaments, menisci and muscles**, including capsular thickening, meniscal degeneration and weakness of the muscles that move and protect the joint.
+
+Clinically it causes joint pain related to use, short-lived stiffness, reduced movement and function, and sometimes deformity.
 :::
 
-## Recognising it
+The joints most often affected are the **knees**, **hips**, **hands** (the distal and proximal interphalangeal joints and the first carpometacarpal joint at the base of the thumb), the **first metatarsophalangeal joint** and the facet joints of the **spine**. The metacarpophalangeal joints, wrists, elbows, shoulders and ankles are much less commonly affected without a specific cause such as previous injury, a crystal disease or haemochromatosis. This distribution is itself a diagnostic clue: OA at an unusual site should prompt a search for a reason.
 
-::: definition Clinical features and diagnosis {#def-diagnosis}
-**The history that names the joint (activity-related-pain-worsening-through-the-day-and-with-the-stair-squat-get-up-transfers, brief-gelling-morning-stiffness-under-thirty-minutes, the "startup" gelling after rest, night-pain-as-a-flare-or-progression-flag-not-routine, the giving-way-and-locking-with-loose-body-or-menisca-implications-and-the-stiffness-deformity-trajectory of the late joint; the functional-questions that actually change referrals - stairs-and-shopping-and-bathing-and-driving-and-work-and-sleep - [[clinical-skills/history-taking]], [[musculoskeletal/bones-joints]]); the examination (the joint-by-joint algorithm - bony-enlargement-and-crepitus-and-capsular-pattern-loss-of-passive-movement-and-Heberden-and-Bouchard-nodes-in-hands-and-the DIP-CMC-KTP-first-distribution, the hip's groin-pain-and-internal-rotation-loss-and-the-knee-referral-trap, the knee's varus-or-valus-malalignment-and-effusion-and-quadriceps-wasting-and-medial-joint-line-tenderness-versus-patellofemoral-compression-signs, and the foot's first-MTP-stiffness-hallux-rigidus and the midfoot - [[clinical-skills/physical-examination]], [[anatomy/lower-limb]], [[anatomy/back-upper-limb]]); and imaging and labs - the "usually unnecessary" discipline (plain films when they change management with the classic tetrad - joint-space-loss-subchondral-sclerosis-cysts-osteophytes - and the honest disclaimer that radiographic severity correlates poorly with symptoms, which is why imaging cannot diagnose clinical OA in an unusual presentation; bloods to exclude the mimics - inflammatory markers when inflammatory disease is genuinely suspected, urate and calcium and thyroid as context - [[clinical-skills/laboratory-tests]]; MRI's real indications - the diagnostic-dilemma, the young septic-OR-locking-knee question, the suspected insufficiency fracture and AVN and the trial-clinic it should not be - [[clinical-skills/medical-imaging]], [[musculoskeletal/fractures]]-stress-rows; and ultrasound for effusion and the hand-pattern when the diagnosis is genuinely uncertain [[musculoskeletal/bones-joints]]).**
+## Why it develops {#sec-pathogenesis}
+
+For many years OA was thought of as cartilage simply wearing away. The modern view is that joint tissues are constantly adapting to the loads placed on them, and OA develops when that adaptation fails.
+
+::: theorem Load and tissue capacity {#thm-load-capacity}
+Osteoarthritis develops when the **mechanical load** on a joint exceeds the **capacity** of its tissues to withstand and adapt to it. It can therefore arise from abnormal loading of a normal joint (for example after a meniscal tear, with malalignment or with obesity) or from normal loading of a joint whose tissues are less able to cope (for example with ageing or genetic variation in cartilage and bone).
 :::
 
-::: example The knees that are not "just old" {#ex-mimic}
-A 58-year-old with "bilateral knee osteoarthritis" for 3 years reports 75 minutes of morning stiffness, large effusions most mornings, CRP 34 and fatigue; previous X-rays "a bit of gap narrowing".
+::: proof
+Chondrocytes respond to load. Moderate cyclical loading maintains the cartilage matrix; excessive or abnormal loading, injury or inflammatory signals switch chondrocytes towards a **catabolic** state in which they produce matrix-degrading enzymes, notably the collagenase **MMP-13** and the aggrecanases **ADAMTS-4 and ADAMTS-5**. Aggrecan is lost first, so the cartilage holds less water and becomes softer; then the type II collagen network is cut and the surface frays (**fibrillation**) and fissures. Because cartilage has no blood supply and few cells, this damage repairs poorly.
+
+The subchondral bone responds with increased remodelling and sclerosis, which stiffens it and may concentrate stress on the overlying cartilage. Growth factors at the joint margins stimulate **osteophytes**, which may partly stabilise an unstable joint. Fragments of cartilage and other breakdown products stimulate the synovium, producing low-grade synovitis and effusions, which in turn release more inflammatory mediators.
+
+**Pain** does not come from cartilage, which has no nerves. It comes from the subchondral bone (especially areas of bone marrow lesion on MRI), the synovium, the capsule and the periarticular tissues. With time, the nervous system itself becomes more sensitive (**central sensitisation**), so pain can persist or spread out of proportion to the structural change. This is why X-ray severity and pain correlate poorly: some people with severe radiographic change have little pain, and some with mild change have severe pain.
+:::
+
+The main risk factors follow from the principle.
+
+- **Age**: the strongest risk factor, reflecting reduced tissue capacity and cumulative load.
+- **Female sex**: OA of the knee and hand is more common in women, especially after the menopause.
+- **Obesity**: increases load on weight-bearing joints and also has metabolic and inflammatory effects; obesity is also associated with hand OA, which is not a weight-bearing joint.
+- **Joint injury**: meniscal tears, cruciate ligament rupture and intra-articular fractures greatly increase the risk of later OA in that joint, often within 10 to 20 years.
+- **Joint shape and alignment**: developmental dysplasia of the hip, femoroacetabular impingement, varus or valgus knees.
+- **Occupation and activity**: repetitive kneeling and heavy lifting (farmers, builders); elite-level impact sport. Recreational running in people with healthy joints does not appear to increase the risk.
+- **Genetics**: hand and hip OA in particular are strongly heritable; many common variants each add a small risk.
+- **Muscle weakness**, especially of the quadriceps, which reduces the protection of the knee during loading.
+
+Body weight deserves emphasis because it is modifiable and its effect is magnified. When walking, the force across the knee is several times body weight. In a trial of older adults with knee OA and overweight, Messier and colleagues (2005) found that each kilogram of weight lost reduced the peak compressive load on the knee by about 4 kg with every step.
+
+::: widget plot
+f: m*x
+x: 50, 140
+y: 100, 600
+sliders: m=4:2:5:0.5
+points: 102, 408; 90, 360
+title: Knee load per step and body mass
+caption: A simplified model in which peak knee load per step is a multiple $m$ of body mass. With $m = 4$, matching the weight-loss trial of Messier and colleagues, a person who goes from 102 kg to 90 kg removes about 48 kg of load from the knee at every step: multiplied by thousands of steps a day, a large reduction. The multiple varies with activity (stairs and rising from a chair are higher than level walking). Illustrative only.
+:::
+
+## Clinical features and diagnosis {#sec-diagnosis}
+
+The typical story is of joint pain that is worse with use and towards the end of the day, eased by rest, with short-lived stiffness after inactivity ("gelling"). Pain at rest and at night can occur in advanced disease. People describe giving way, reduced range of movement, crepitus and difficulty with specific tasks: stairs and rising from a chair for the knee, putting on shoes and socks for the hip, opening jars for the thumb base.
+
+On examination there may be:
+
+- **bony enlargement** (osteophytes), for example Heberden's nodes at the distal interphalangeal joints and Bouchard's nodes at the proximal interphalangeal joints, and squaring of the thumb base;
+- **crepitus** on movement;
+- a small, cool **effusion**;
+- **reduced range of movement**, with pain at the end of the range; in the hip, **internal rotation** is lost first;
+- **deformity**, such as a varus (bow-legged) knee from medial compartment OA;
+- **quadriceps wasting** and an antalgic gait; with hip OA, a Trendelenburg gait.
+
+::: definition Clinical diagnosis of osteoarthritis {#def-oa-diagnosis}
+NICE guideline NG226 (2022) recommends diagnosing osteoarthritis **clinically, without imaging**, in people who:
+
+- are **45 or over**, and
+- have **activity-related joint pain**, and
+- have either **no morning joint-related stiffness** or morning stiffness lasting **no longer than 30 minutes**.
+
+Imaging is not routinely used unless there are **atypical features**, such as a history of recent trauma, prolonged morning stiffness, rapid worsening of symptoms or deformity, a hot swollen joint, or features suggesting infection or malignancy, or features that suggest an alternative or additional diagnosis.
+:::
+
+When an X-ray is taken, the four classic features of OA are often remembered as **LOSS**: **L**oss of joint space (narrowing, usually asymmetric, for example the medial compartment of the knee), **O**steophytes, **S**ubchondral sclerosis and **S**ubchondral cysts. The **Kellgren–Lawrence** scale grades radiographic severity from 0 (none) to 4 (severe: large osteophytes, marked narrowing, severe sclerosis and deformity). It is used in research and helps communication, but NICE advises against using numerical severity scores to decide on referral for surgery, because symptoms and function matter more than the picture.
+
+Blood tests are normal in OA and are not needed to make the diagnosis. They are useful when an alternative is suspected: inflammatory markers and autoantibodies for inflammatory arthritis, urate for gout, and ferritin and transferrin saturation for haemochromatosis (which causes OA-like changes in the second and third metacarpophalangeal joints).
+
+::: example A typical knee {#ex-knee}
+A 62-year-old woman who works as a school cook has had pain in both knees for three years, worse on stairs and at the end of her shifts. Morning stiffness lasts about ten minutes. Her BMI is 33 kg/m². There is crepitus in both knees, a small cool effusion on the right, mild varus alignment and quadriceps wasting. She asks whether she needs an X-ray. What is the diagnosis and does she need imaging?
 ::: solution
-**The inflammatory-masquerading-as-OA presentation, and the CRP-and-stiffness-duration that unmask it ([[#def-diagnosis]], [[musculoskeletal/inflammatory-arthritis]]): the re-frame - prolonged-morning-stiffness-plus-effusions-plus-systemic-inflammation-plus-raised-CRP-is-synovitis-until-excluded-and-OA-and-RA-coexist-frequently-in-the-same-60-year-old-knees ([[immunology/autoimmunity]]); the work-up - ACPA-and-RF-and-ESR-and-CRP-and-ultrasound-for-synovitis-erosions-and-the-hand-and-foot-joint-audit-and-the-crystal-check-on-any-aspirated-fluid ([[clinical-skills/laboratory-tests]], [[musculoskeletal/inflammatory-arthritis]]); the management fork that matters - DMARD-and-treat-to-target-referral-for-rheumatoid-arthritis-versus-an-OA-pathway-and-the-do-not-inject-steroids-repeatedly-into-an-undiagnosed-swollen-joint caution ([[musculoskeletal/inflammatory-arthritis]], [[pharmacology/dosing-principles]]); the safety-net - the "worse-than-expected-for-the-X-rays" reflex that should trigger a mimic re-sweep every time: crystal, Charcot, AVN, insufficiency fracture, malignancy near the joint - [[#def-pathophysiology]], [[musculoskeletal/fractures]], [[pathology/cancer-diagnosis]]; and the communication of the pivot - "the scan and bloods changed the label, here is what that changes for you" honesty and the revised plan in writing - [[clinical-skills/communication]], [[clinical-skills/records-handover]].**
+She meets all three NICE criteria for a **clinical diagnosis** of knee OA ([[#def-oa-diagnosis]]): she is over 45, her pain is activity-related, and her morning stiffness lasts less than 30 minutes. There are no atypical features (no trauma, no hot swollen joint, no rapid progression, no systemic symptoms).
+
+She **does not need an X-ray** to make the diagnosis, and an X-ray would not change her initial management. It can be helpful to explain why: the degree of change on an X-ray does not predict how much pain she will have or how she will respond to treatment. If she later reaches the stage of considering referral for a knee replacement, the surgical team will arrange imaging.
+
+Management starts with information, a tailored **therapeutic exercise** programme focused on quadriceps strengthening and general fitness, and support for **weight loss** (see [[#sec-management]]).
 :::
 :::
 
-::: example The hip with a normal knee X-ray {#ex-hip-referral}
-A 71-year-old presents with 4 months of right knee pain, minimal knee findings on exam except an effusion tendency, full painful knee ROM; the hip is not examined because "it's the knee"; knee X-ray shows mild OA; she now walks with a stick and the pain wakes her.
+::: example Knee pain from the hip {#ex-hip}
+A 71-year-old man has had pain in his left knee for six months. He limps and has difficulty putting on his left sock. The knee looks and feels normal, with full painless movement. Internal rotation of the left hip is markedly reduced and reproduces pain in the groin and anterior thigh. Where is the problem, and why might it present this way?
 ::: solution
-**Referred hip disease until the hip is examined ([[#def-diagnosis]]): the obturator-nerve shared-dermatome explains why hip pathology announces itself in the groin, thigh and knee, and the not-examining-the-joint-above-the-symptom rule is one of MSK's oldest traps - examine-the-hip-look-for-IR-loss-and-groin-pain-and-an-obvious-leg-length-and-abductor-situation ([[clinical-skills/physical-examination]], [[anatomy/lower-limb]]); the investigation - hip films-AP-and-frog-leg and a low threshold for MRI when films are normal but pain and night-symptoms persist - AVN, insufficiency fracture, inflammatory hip, and the intra-articular-injection-as-diagnostic-test-with-ultrasound-guidance ([[clinical-skills/medical-imaging]], [[musculoskeletal/fractures]], [[#def-pathophysiology]]-AVN-row); the management consequences of the right label - core-and-abductor-program-and-load-strategies-and-early-arthroplasty-discussion-for-advanced-hip-OA-with-her-actual-symptoms-versus-knee-directed-treatments-that-would-have-done-nothing ([[#def-management-pyramid]], [[surgery/orthopaedics]]); and the teachable generalisation - hip disease can present as thigh or knee pain, lumbar disease can present as hip or knee pain, and the diagnostic-anaesthetic-block-referral when both spine and hip are abnormal is a senior decision, not an MRI order - [[musculoskeletal/back-pain]].**
+The problem is almost certainly in the **left hip**, most likely **hip osteoarthritis**. Pain from the hip joint is felt mainly in the **groin** and anterior thigh, but it commonly **refers to the knee** because the obturator and femoral nerves supply both joints. A normal knee examination with painful, restricted hip internal rotation localises the problem.
+
+The lesson is to **examine the joint above** whenever knee pain is unexplained, especially in children (slipped upper femoral epiphysis and Perthes disease present the same way) and older adults. If his symptoms had come on suddenly after a fall, a hip fracture would need to be excluded; if he had risk factors such as long-term corticosteroid use or heavy alcohol use, **avascular necrosis** of the femoral head would be another possibility.
 :::
 :::
 
-::: example The 44-year-old hip {#ex-young-hip}
-A 44-year-old fitness instructor has had 18 months of right groin pain after "tight hip" rehab that never worked; pain with deep squatting and prolonged sitting, pinch at end-range internal rotation; pelvic films show a shallow acetabulum and a prominent cam at the femoral neck-head junction; joint space still preserved.
+The differential diagnosis of a painful joint in an older adult includes inflammatory arthritis (prolonged morning stiffness, soft-tissue swelling, raised inflammatory markers), **crystal arthritis** (gout and calcium pyrophosphate deposition, which often coexist with OA and cause acute flares), **septic arthritis** (a hot joint, especially a replaced one), **avascular necrosis**, **referred pain** (hip to knee, spine to hip or buttock), periarticular problems such as trochanteric pain syndrome and anserine bursitis, and **malignancy** (night pain, weight loss, a history of cancer).
+
+## Management {#sec-management}
+
+The aims of management are to reduce pain, improve function and quality of life, and help the person stay active and in work. In the UK, management follows NICE guideline NG226 (2022). The emphasis is on non-drug treatments, with drugs used to support them rather than replace them.
+
+::: definition Core management of osteoarthritis (NICE NG226) {#def-management}
+**For everyone**
+
+- **Information and support**, tailored to the person, explaining that OA is not simply "wear and tear", that it does not inevitably get worse, and that treatment can help.
+- **Therapeutic exercise** tailored to the person, such as local muscle strengthening and general aerobic fitness. People are warned that pain may increase when they start, and that regular, consistent exercise is beneficial in the long term.
+- **Weight management** for people living with overweight or obesity. Any weight loss is likely to help, but losing 10% of body weight is likely to be better than 5%.
+
+**Additional non-drug options**
+
+- Walking aids (such as a stick) for lower-limb OA.
+- Manual therapy only alongside therapeutic exercise, not on its own.
+- Insoles, braces, tape and splints are not routinely offered unless there is joint instability or abnormal loading and exercise is otherwise ineffective or unsuitable.
+- Acupuncture, dry needling and electrotherapy (including TENS and ultrasound therapy) are **not** offered.
+
+**Drugs** (used alongside exercise, at the lowest effective dose for the shortest possible time)
+
+- **Topical NSAIDs** are offered for knee OA and considered for other joints.
+- **Oral NSAIDs** are considered if topical treatment is ineffective or unsuitable, taking account of gastrointestinal, renal, liver and cardiovascular risk, and with a **gastroprotective** drug such as a proton pump inhibitor.
+- **Paracetamol and weak opioids** are **not routinely** offered, because there is no strong evidence of benefit, unless used infrequently for short-term relief when all other drug options are unsuitable.
+- **Glucosamine** and **strong opioids** are **not** offered.
+- **Intra-articular corticosteroid** injections are considered when other drugs are ineffective or unsuitable, or to support exercise; they give only short-term relief, about 2 to 10 weeks.
+- **Intra-articular hyaluronan** injections are **not** offered.
+
+**Surgery**
+
+- Referral for **joint replacement** is considered for hip, knee or shoulder OA when symptoms substantially affect quality of life and non-surgical management has been ineffective or is unsuitable.
+- **Arthroscopic lavage or debridement is not offered** for OA.
+:::
+
+Several points deserve comment. Exercise is the foundation because it works: strengthening the quadriceps and hip muscles reduces pain and improves function about as much as NSAIDs, with benefits that last as long as the exercise continues and without drug toxicity. Programmes such as ESCAPE-pain in the UK combine education and group exercise.
+
+The NSAID choice reflects risk. Topical NSAIDs achieve useful concentrations in the superficial tissues of the knee and hand with very low blood levels, so they avoid most of the gastrointestinal and renal harm of oral NSAIDs. Oral NSAIDs are effective but older people with OA are exactly those most at risk of gastrointestinal bleeding, kidney injury, fluid retention and cardiovascular events ([[pharmacology/adverse-reactions]]).
+
+The advice against paracetamol is a change from older practice. Large systematic reviews found its effect on OA pain to be very small, below what patients notice, and NICE therefore no longer recommends it routinely. Strong opioids are avoided because their harms (falls, constipation, dependence) outweigh their modest benefits in long-term OA pain.
+
+::: warning Don't treat the X-ray
+Two common errors come from over-reliance on imaging. The first is **ordering X-rays or MRI to diagnose typical OA**, which adds cost and delay and can harm: a report full of "degenerative changes" can make people afraid to move, while MRI in middle-aged knees frequently shows meniscal tears that are present in many people without pain. The second is **treating the image rather than the person**: offering arthroscopic "clean-up" for a degenerative knee or a meniscal tear seen on MRI. Randomised trials comparing arthroscopic surgery with sham surgery or with exercise therapy found no meaningful benefit for degenerative knee disease, and NICE does not recommend it. Decide on treatment from symptoms, function and examination.
+:::
+
+::: example Choosing the medicines {#ex-drugs}
+A 78-year-old man with hip and knee OA has stage 3b chronic kidney disease (eGFR 38 mL/min/1.73 m²), heart failure and a past duodenal ulcer. He has been taking regular paracetamol for two years with little benefit and asks for "something stronger". He walks very little. Using current guidance, how would you approach his pain?
 ::: solution
-**Joint-shape-failure OA-in-progress, not overuse tendinopathy ([[#def-pathophysiology]]): the dysplasia-and-cam-and-pincer morphology shortens the cartilage-and-labrum lifespan by concentrating contact stress, and the "preserve-the-native-hip" decision window is exactly this preserved-joint-space moment - [[#def-diagnosis]], [[surgery/orthopaedics]]; the work-up - weight-bearing-pelvic views with standing-hip-radiographs-and-centre-edge-and-alpha-angle-measurement-and-MRV-when-surgery-is-considered and the spine-hip-mobility-mixture-and-the-mimic-sweep - stress-fracture-in-a-runner-and-avascular-necrosis-and-inflammatory-hip-and-snapping-hip-and-referred-lumbar - [[clinical-skills/medical-imaging]], [[musculoskeletal/fractures]]-stress-rows, [[musculoskeletal/back-pain]]; the management branches - targeted-physiotherapy-for-mobility-and-strength-with-load-avoidance-coaching-versus-osteotomy-periacetabular-or-femoral-versus-arthroscopic-cam-resection-and-labral-repair-with-their-evidence-gradations-and-their-failure-modes-when-performed-on-dysplastic-unstable-joints ([[#def-surgery-below]], [[epidemiology-ebm/observational-studies]]); and the long-view counselling - activity-modification-not-cessation, the future-arthroplasty-probability-conversation-done-without-catastrophising, the contralateral-hip-check-and-offspring-and-family-awareness-temperament, and the return-to-coaching-plan-agreed-with-someone-who-understands-both-hip-preservation-and-CAM-malpractice ([[clinical-skills/communication]], [[physiology/muscle]]).**
-:::
-:::
+**Review what he is already taking.** Paracetamol has given little benefit; NICE advises it is not used routinely, so it is reasonable to discuss stopping it.
 
-## The management pyramid
+**Oral NSAIDs are high risk** in his situation: chronic kidney disease (NSAIDs reduce renal blood flow and can cause acute kidney injury), heart failure (fluid retention) and a past peptic ulcer (bleeding). They would usually be avoided.
 
-::: definition Management: exercise, weight, medicines, surgery {#def-management-pyramid}
-**Foundation for everyone (education-and-expectations - the "OA is not just erosion; pain is treatable at every stage" frame and the honest natural history and the self-management-skills - goal-setting-and-pacing-and-flare-management and the digitally-supported-programs that scale - [[clinical-skills/communication]], [[public-health/prevention-promotion]]); exercise as the disease-modifying intervention (graded strengthening including quadriceps-and-hip-abductor work, aerobic-and-aqua-and-tai-chi-and-bike options by joint-and-body-region, the "hurt-during-but-settle-by-next-day is safe, sharp-sustained-worsening is a load-adjustment-signal" dosing rule, pre-habilitation before arthroplasty with the outcome-link evidence, and the long-term-adherence-engineering of enjoyment-and-social-context-and-walkable-places - [[physiology/muscle]], [[public-health/prevention-promotion]], [[musculoskeletal/back-pain]]-load-logic); weight (the dose-response of weight-loss-on-knee-load-and-symptoms - clinically-meaningful-improvement-from-even-modest-sustained-loss, and the surgery-referral-threshold-entanglement and the stigma-safe-delivery of weight conversation - [[gastrointestinal/clinical-nutrition]], [[#def-surgery-below]]); aids-and-orthotics-and-footwear (the cane-in-the-opposite-hand-teaching-point, insoles-and-branching-bracing-for-medial-compartment-KOA-honest-effect-sizes, the first-MTP-insole-stiff-sole-for-hallux-rigidus, and the home-and-transport-OT-assessment with the falls overlap - [[geriatrics-palliative/falls]]; medicines (topical-NSAID-first-for-superficial-joints-with-the-gastric-and-renal-savings, oral-NSAID-with-the-cardiovascular-renal-GI-frailty-polypharmacy-risk-account-and-gastroprotection-arithmetic and the paracetamol's-demotion-to-modest-analgesia-adjunct, the duloxetine-niche-in-chronic-pain-with-central-features-and-the-tramadol-savings-for-short-courses-with-the-falls-confusion-hyponatraemia-seizure-serotonin-drug-interaction-list - [[pharmacology/adverse-reactions]], the chronic-pain adjuvant row ([[psychiatry/mood-disorders]]), [[geriatrics-palliative/polypharmacy]]; intra-articular-corticosteroid-for-short-term-flare-relief-with-the-max-interval-honesty-and-the-post-injection-glycaemia-blip-and-rare-septic-joint-safety-net and the hyaluronan-evidence-shrinkage - the joint-injection-clinic design in [[musculoskeletal/bones-joints]]; and the opioid-question - not-for-routine-OA, the-harms-data-and-the-functional-goal-trade-and-exit-strategies-for-patients-already-on-them - [[geriatrics-palliative/symptom-control]], [[pharmacology/patient-variation]]); supplements-and-niche-biologics (glucosamine-and-chondroitin-and-vitamin-D-and-collagen-hydrolysate as the effect-size-versus-cost-versus-expectation-management conversation, and the PRP-and-stem-cell-clinic-privatisation-ethics - promising-mechanisms-without-established-indication-level-evidence-and-the-informed-consent-honesty-they-usually-skip - [[epidemiology-ebm/critical-appraisal]], [[medical-ethics-law/professionalism-regulation]], [[pharmacology/drug-development-prescribing]]).**
-:::
+**Topical NSAID** for the knee is a sensible option, with very little systemic absorption.
 
-::: definition Surgery: when, which, and after {#def-surgery-below}
-**Arthroplasty indications as an explicit conversation (endstage-joint-plus-significant-symptoms-plus-failed-conservative-options-plus-informed-expectations - the pain-and-function-and-not-X-ray triggers and the "too young/too fat/too unfit" myths that delay operations that are on balance better, and the realistic numbers on pain-relief-magnitude-timing-of-maximal-benefit-and-the-reoperation-clock-and-15-year-survivorship - [[surgery/orthopaedics]]); the joint-by-joint menu (THR-for-hips-with-the-approach-and-bearing-and-approach-dislocation-precaution-culture and UKR-unicompartmental-niche-with-the-progression-and-revision-trade, knee arthroplasty's patellofemoral-and-ACL-status-planning and the rehabilitation-prediction-setting, shoulder and ankle and elbow and the foot's fusion-versus-replacement debates; osteotomy in the young-unilateral-compartment-patient-with-the-malalignment-calculation, arthrodesis where stability-beats-motion, and resection-arthroplasty salvage-after-infection - [[surgery/orthopaedics]]); and the perioperative system (prehabilitation-and-optimisation - anaemia-and-iron-and-hbA1c-and-smoking-and-nutrition-and-medication-review and the fitness-for-anaesthesia picture - [[surgery/perioperative-care]], [[blood/anaemia]], [[endocrine/diabetes-complications]], [[gastrointestinal/clinical-nutrition]]; VTE prophylaxis-and-early-mobilisation-and-bladder-and-bowel-and-delirium-anticipation - [[blood/thrombosis-anticoagulation]], [[geriatrics-palliative/delirium-dementia-care]]; the enhanced-recovery-pathway-and-same-day-discharge-pilot-evidence and the home-first-and-rehab-destination-equity question - [[public-health/health-systems-economics]], [[public-health/determinants-inequalities]]; and the long tail - periprosthetic-joint-infection-presenting-as-persistent-pain-or-sinus-or-loosening-and-the-acute-haematogenous-spread-from-dental-and-skin-and-urinary-sources-debates, aseptic-loosening-and-osteolysis-and-the-metal-and-cobalt-chromium-and-MRI-artifact-questions, dislocation-and-fracture-around-implants, and the prophylactic-antibiotics-and-dental-guidance-evidence-shifting-sands - [[infectious-diseases/healthcare-infections]], [[microbiology/bacteria]], [[musculoskeletal/fractures]].)**
-:::
+**Strong opioids** are not recommended for OA because of the risk of falls, confusion and dependence, particularly at his age.
 
-::: example The waiting-list negotiation {#ex-waitlist}
-A 64-year-old with severe tricompartmental knee OA, BMI 38, HbA1c 72, smokes 10/day, has been told "you'll need to lose weight and stop smoking before we can book you"; she now cannot climb to her bedroom and has stopped working.
-::: solution
-**A weight-and-smoking-barrier culture meeting the risk-benefit-reality ([[#def-surgery-below]], [[#def-management-pyramid]]): the honest evidence - obesity-and-smoking-raise-complication-rates-without-removing-benefit-except-at-the-extremes, and blanket-threshold-policies-without-individual-risk-benefit-analysis-or-support-programs-are-late-stage-dating-of-surgery-not-medicine ([[public-health/determinants-inequalities]], [[medical-ethics-law/justice-resources]]); the reframe - a time-limited optimisation-program-with-dates-and-metrics-and-support (prehab-exercise-and-dietetic-and-stop-smoking-pharmacotherapy-and-iron-and-glucose-optimisation-with-the-diabetes-team-and-a-shared-risk-calculation-conversation) that ends in a decision, not a cliff - [[surgery/perioperative-care]], [[gastrointestinal/clinical-nutrition]], [[endocrine/diabetes-complications]], [[public-health/prevention-promotion]]); the interim burden-reduction plan that must be real because the wait is - flare-plan-and-injection-option-and-mobility-aids-and-OT-home-assessment-and-work-and-benefits-navigation-and-mental-health-check - [[#def-management-pyramid]], [[geriatrics-palliative/falls]], [[psychiatry/mood-disorders]], [[public-health/health-systems-economics]]; the documentation and advocacy - the-individualised-risk-assessment-in-writing-and-the-second-opinion-and-complaint-route-if-"thresholds"-are-actually-rationing-hidden-as-clinical-criteria ([[clinical-skills/records-handover]], [[medical-ethics-law/professionalism-regulation]]); and the outcome accountability - post-implementation-audit-of-whose-surgeries-get-delayed-by-which-numeric-criteria - the audit that changes policies when it exists (the audit-cycle in [[public-health/health-systems-economics]], [[epidemiology-ebm/measuring-disease]]).**
+**An intra-articular corticosteroid injection** into the knee or (under imaging guidance) the hip could give short-term relief to help him start exercising.
+
+**Non-drug care matters most**: a tailored therapeutic exercise programme, perhaps supervised; a walking stick in the hand opposite the worse hip; and attention to his heart failure and fitness.
+
+If symptoms remain severe and limit his quality of life despite this, **referral for joint replacement** should be discussed. His comorbidities increase the risks of surgery, but NICE advises that age and comorbidity alone are not reasons to refuse referral; the risks and benefits are weighed with him.
 :::
 :::
 
 ::: quiz
-The initial management of a patient newly diagnosed with knee osteoarthritis should be built around:
-- [ ] Serial intra-articular hyaluronan injections
-- [x] Education, graded exercise and weight management with analgesia as adjunct
-- [ ] MRI to map the cartilage loss
-- [ ] Referral for arthroscopic debridement
+According to NICE NG226, which treatment should be offered to everyone with osteoarthritis?
+- [ ] Regular paracetamol
+- [ ] Glucosamine
+- [x] Therapeutic exercise tailored to the person
+- [ ] Arthroscopic washout of the joint
 ::: solution
-**Exercise-and-weight-and-education-first is the guideline spine of [[#def-management-pyramid]] with analgesia - topical-NSAIDs-for-superficial-joints, systemic-therapy-tailored-by-risk ([[pharmacology/adverse-reactions]]); hyaluronan's effect-size-collapse and arthroscopic-debridement-for-unselected-OA's-sham-controlled-death-blow are both teaching examples of treatment-preceding-evidence ([[epidemiology-ebm/randomised-trials]], the injection-clinic row in [[musculoskeletal/bones-joints]]); MRI is for problems the plain films and history separate poorly - not cartilage tourism ([[clinical-skills/medical-imaging]]).**
+Therapeutic exercise (for example local muscle strengthening and general aerobic fitness) is offered to everyone with OA, together with information and support and, where relevant, weight management. Paracetamol is not routinely offered, glucosamine is not offered, and arthroscopic lavage or debridement is not offered.
 :::
 :::
 
-::: widget plot
-f: 90*exp(-x/3)+6; 90*exp(-x/14)+6
-x: 0, 24
-y: 0, 100
-labels: \text{months since diagnosis},\ \text{VAS-pain (0-100)};\ \text{sham surgery};\ \text{arthroscopic debridement}
-caption: The sham-controlled trial shape that retired a procedure ([[#def-management-pyramid]]): real debridement and sham converge within months because the natural history of a "locking" degenerative knee and placebo effects carry most of the apparent benefit - the landmark example for surgical evidence culture ([[epidemiology-ebm/randomised-trials]], [[surgery/orthopaedics]]). Exercise, weight and education beat this baseline with far lower harm budgets ([[physiology/muscle]], [[gastrointestinal/clinical-nutrition]]).
+## Joint replacement {#sec-arthroplasty}
+
+Total hip and total knee replacement are among the most successful operations in medicine. Most people have substantial relief of pain and improvement in function, and modern implants often last 20 years or more. In a hip replacement, the femoral head is replaced by a metal or ceramic ball on a stem in the femur, articulating with a cup in the acetabulum lined with polyethylene or ceramic. In a knee replacement, the ends of the femur and tibia are resurfaced with metal components separated by a polyethylene insert. Implants may be fixed with bone cement or by bone growing onto a textured surface. **Partial** (unicompartmental) knee replacement is an option when only one compartment is affected.
+
+NICE recommends considering referral when symptoms substantially affect quality of life and non-surgical treatment has failed or is unsuitable. Referral decisions are based on clinical assessment rather than numerical scores, and people should not be excluded because of age, sex, smoking, comorbidities or body mass index, although these factors change the risks and should be discussed.
+
+::: definition Complications of joint replacement {#def-arthroplasty-complications}
+**Early**
+
+- **Venous thromboembolism**: deep vein thrombosis and pulmonary embolism. Mechanical and pharmacological prophylaxis are used according to guidance ([[blood/thrombosis-anticoagulation]]).
+- **Infection**: superficial wound infection or deep **periprosthetic joint infection (PJI)**, which affects roughly 1% of primary hip and knee replacements.
+- **Dislocation** of a hip replacement, especially in the first months.
+- **Nerve injury**, such as the sciatic nerve in hip replacement and the common peroneal nerve in knee replacement.
+- **Bleeding**, wound problems, and the general risks of anaesthesia and surgery, including myocardial infarction, stroke and delirium in older patients.
+- **Leg-length discrepancy** after hip replacement.
+
+**Late**
+
+- **Aseptic loosening** of components, often driven by wear particles provoking an inflammatory response and bone resorption (**osteolysis**) around the implant.
+- **Late periprosthetic infection**, including seeding from bacteraemia.
+- **Periprosthetic fracture**, usually after a fall.
+- **Persistent pain and dissatisfaction**: after knee replacement in particular, a minority of people, often quoted as up to about one in five, remain dissatisfied with the result, which is why expectations are discussed before surgery.
+:::
+
+National joint registries, such as the National Joint Registry for England, Wales, Northern Ireland, the Isle of Man and Guernsey (established in 2003), record every implant and its outcome. They identify implants that fail early: registry data were central to recognising the high failure rates of some metal-on-metal hip designs in the late 2000s.
+
+::: example A hot knee replacement {#ex-pji}
+A 69-year-old woman had a left total knee replacement six weeks ago. For four days the knee has become increasingly painful, hot and swollen, and the wound has a small area of discharge. Temperature is 37.9 °C; she is otherwise well, with normal blood pressure. Her GP is considering starting oral antibiotics. What is the concern and what should happen?
+::: solution
+The concern is **periprosthetic joint infection (PJI)**. Increasing pain, warmth, swelling and wound discharge after joint replacement are infection until proven otherwise.
+
+**Antibiotics should not be started in the community before specialist assessment** unless she has sepsis. Antibiotics given blindly can suppress the organism, make cultures negative, and make it harder to identify and treat the infection, which typically involves bacteria living in a **biofilm** on the implant surface.
+
+She should be referred urgently to the **orthopaedic team that performed the operation**, who will take blood tests (including CRP), **aspirate the joint** for cell count and culture, and plan treatment. Early infection (within weeks of surgery) can sometimes be treated by surgical debridement, exchange of the modular polyethylene insert and retention of the implant (a procedure abbreviated to DAIR), followed by a prolonged course of targeted antibiotics. Established or late infection usually needs revision surgery in one or two stages. If she had signs of sepsis, she would need blood cultures and immediate intravenous antibiotics ([[infectious-diseases/fever-sepsis]]).
+:::
+:::
+
+::: history
+The English physician **William Heberden** described the bony nodes on the finger joints that bear his name in his *Commentaries on the History and Cure of Diseases*, published in 1802. In 1957 **Jonas Kellgren** and **John Lawrence** in Manchester published their radiographic grading of OA, still used today. The modern hip replacement was developed by **John Charnley** at Wrightington Hospital in Lancashire, who from 1962 combined a small metal femoral head with a high-density polyethylene cup, bone cement and clean-air operating theatres in his low-friction arthroplasty. Knee replacement followed in the 1970s. Surgical culture changed when **Bruce Moseley** and colleagues reported in the *New England Journal of Medicine* in 2002 that arthroscopic lavage and debridement for knee OA were no better than a sham operation, one of the best-known placebo-controlled trials in surgery.
 :::
 
 ## Where this leads
 
-Joint biology and the examination in [[musculoskeletal/bones-joints]]; inflammatory differentials in [[musculoskeletal/inflammatory-arthritis]]; post-traumatic OA in [[musculoskeletal/fractures]]; surgical technique and complications in [[surgery/orthopaedics]]; perioperative optimisation in [[surgery/perioperative-care]]; weight interventions in [[gastrointestinal/clinical-nutrition]]; chronic pain mechanisms in [[musculoskeletal/back-pain]].
-
-::: history
-**Osteoarthritis' long demotion from "age erosion" to whole-joint disease: Hippocrates' "the joints are destroyed by labour" framing and the eighteenth-century "white swelling" descriptions that separated inflammatory joints from degenerative ones; the Hunterian attention to cartilage and the nineteenth-century autopsy-era classification of "organic debility of the joints"; the epidemiology turn - the Framingham-and-Fels-and-Chingford-should-and-knee-and-hand-cohorts that made OA a measurable population disease with obesity's smoking-gun risk coefficient - [[epidemiology-ebm/observational-studies]]; the total-hip-replacement revolution and Charnley's low-friction arthroplasty with cement, bearing couples and survivorship curves, arguably the twentieth century's most valuable operation per quality-adjusted life-year - [[surgery/orthopaedics]], [[public-health/health-systems-economics]]; the cartilage-repair-enthusiasm-and-its-boundaries - microfracture-and-MACI-and-osteochondral-grafts proving focal-defect biology differs from diffuse-OA biology; the arthroscopic-debridement-and-meniscectomy-sham-trials and their surgical-humility lesson - [[epidemiology-ebm/randomised-trials]]; and the exercise-medicine-rehabilitation evidence maturing from "move gently" to dosed strength-and-aerobic-prescriptions with adherence engineering - [[physiology/muscle]], [[public-health/prevention-promotion]].**
-:::
-
-::: exercise Counsel the frail hip {level=2}
-A 79-year-old widow with severe hip OA, heart failure with reduced ejection fraction, frailty, and a care-home residency asks "am I too old for the hip operation?". Structure the conversation.
-::: solution
-**The four columns ([[#def-surgery-below]], [[surgery/perioperative-care]]): benefit - hip arthroplasty for severe OA usually converts housebound pain to mobile comfort, with real quality-of-life gains even in older and frailer patients and geriatric co-management and anaesthetic planning improving the risk envelope ([[cardiovascular/heart-failure]], [[geriatrics-palliative/ageing-frailty]], [[surgery/anaesthesia-pain]]); risk - cardiac decompensation and delirium and transfusion and dislocation and infection and VTE quantified with her numbers not averages ([[geriatrics-palliative/delirium-dementia-care]], [[blood/thrombosis-anticoagulation]], [[musculoskeletal/fractures]]); the no-surgery column - optimised non-operative care and its honest ceiling ([[#def-management-pyramid]]); and her goals - "to sit up in the garden and hold my grandchild" is a legitimate surgical indication - values-first decision-making with time to think and family present ([[clinical-skills/communication]], [[medical-ethics-law/consent-capacity]], [[geriatrics-palliative/palliative-care]]). The system jobs after yes - prehabilitation-and-optimisation-and-blood-management-and-delirium-prevention-and-rehabilitation-destination-planning - "too old" replaced by "prepared properly" ([[public-health/health-systems-economics]], [[physiology/muscle]]).**
-:::
-:::
-
-::: exercise Hip, back, or both {level=2}
-A 68-year-old has low back pain and buttock and thigh pain; the hip has mildly limited IR, lumbar extension reproduces some pain; films show moderate hip OA and multilevel disc disease. Plan the next steps without an operating list.
-::: solution
-**The spine-hip-concomitance problem ([[#def-diagnosis]], [[musculoskeletal/back-pain]]): first examine-to-attribute - hip-pattern-loss-of-IR-with-groin-referral-versus-radicular-or-facet-or-stenosis patterns and the antalgic-and-stand-walk-retest sequences ([[clinical-skills/physical-examination]]); structure-next-steps - targeted trials with a documented response read as diagnostic information (hip-directed exercise-and-injection-with-clear-pre-post-function-scores versus spine-directed conservative care with the stenosis-walk-test and the neuro-clues) - [[#def-management-pyramid]], [[clinical-skills/clinical-reasoning]]; reserve - diagnostic intra-articular anaesthetic blocks and occasionally selective nerve-root blocks in genuine multi-source cases as an aid to a surgical question, not a hobby - [[clinical-skills/medical-imaging]], [[surgery/anaesthesia-pain]]; the imaging discipline - no "which-hurts-more MRI" in the absence of red flags and a decision it would change ([[clinical-skills/medical-imaging]], [[public-health/health-systems-economics]]); and the note that the answer may legitimately be "both, treat the dominant one first, reassess functionally" - a stated plan beats a scan ([[clinical-skills/records-handover]], [[clinical-skills/communication]]).**
-:::
-:::
+The surgical detail of joint replacement and revision is in [[surgery/orthopaedics]], and preoperative assessment in [[surgery/perioperative-care]]. Inflammatory and crystal disease that can mimic or complicate OA are in [[musculoskeletal/inflammatory-arthritis]]. Spinal OA and degenerative disc disease are covered in [[musculoskeletal/back-pain]]. Chronic pain mechanisms are developed in [[nervous-system/headache-pain]], and the safe use of analgesics in [[surgery/anaesthesia-pain]] and [[geriatrics-palliative/polypharmacy]].
 
 ::: summary
-- Osteoarthritis is whole-joint and whole-person disease: cartilage catabolism, bone and synovial responses, muscle failure, and a pain system that may outrun the tissue.
-- The diagnosis is clinical; imaging confirms the unusual and stages the surgical; and CRP-and-stiffness-duration catch most of the mimics.
-- Exercise, weight management and education are the disease-modifying core - prescribed, dosed and followed up like drugs, because that is what they are.
-- Medicines are adjuncts with risk budgets: topicals before orals, NSAID arithmetic in the older multimorbid patient, injections for flares not futures, opioids almost never.
-- Replacement surgery is the most successful operation in medicine and still needs the right patient moment, the optimisation bundle, and honest long-term numbers.
+- Osteoarthritis is a disease of the whole joint (cartilage loss, subchondral bone remodelling, osteophytes, synovitis and periarticular changes), not passive wear and tear.
+- It arises when load exceeds the capacity of joint tissues to adapt. Major risk factors are age, female sex, obesity, joint injury, joint shape, occupation, genetics and muscle weakness.
+- Pain comes from bone, synovium and capsule, not cartilage, and is amplified by central sensitisation, so X-ray severity correlates poorly with symptoms.
+- Typical sites are knees, hips, hand interphalangeal joints, the thumb base, the first MTP joint and the spine. OA at unusual sites needs an explanation.
+- NICE NG226: diagnose clinically without imaging in people aged 45 or over with activity-related pain and no or brief (30 minutes or less) morning stiffness.
+- Core treatment is information, therapeutic exercise and weight management. Topical NSAIDs are offered for knee OA; oral NSAIDs with gastroprotection if needed; paracetamol and weak opioids not routinely; glucosamine, strong opioids, hyaluronan injections and arthroscopic lavage or debridement not at all.
+- Joint replacement is considered when symptoms substantially affect quality of life despite non-surgical care. Key complications are VTE, infection, dislocation, loosening, periprosthetic fracture and persistent pain.
+- A hot, painful joint replacement is infected until proven otherwise; avoid blind antibiotics and refer urgently for aspiration.
 :::
 
 ## Exercises
 
-::: exercise Explain the diagnosis {level=1}
-In one patient-facing paragraph, explain knee OA without the words "wear and tear", "bone on bone" or "arthritis".
+::: exercise Name the features {level=1}
+List the four classic radiographic features of osteoarthritis and say which tissue each reflects.
 ::: solution
-**A-possible-version ([[#def-pathophysiology]] rendered in plain language, per [[clinical-skills/communication]]): "the cushioning lining of your knee has thinned and the joint has reacted - the bone underneath has thickened, the lining gets inflamed at flare-ups, and the muscles around have weakened from guarding it; that combination makes pain and stiffness, and all of those parts are treatable even though the lining itself won't regrow; exercise, your weight, pain medicines when needed, and if necessary an operation, each help different parts of that picture". The banned-phrase audit is deliberate - threat-inflation language changes outcomes ([[public-health/prevention-promotion]], [[psychiatry/anxiety-disorders]]).**
+**Loss of joint space**: loss of articular cartilage (cartilage is not visible on X-ray, so its thinning shows as narrowing of the gap between bones). **Osteophytes**: new bone and cartilage formation at the joint margins. **Subchondral sclerosis**: increased density of the bone beneath damaged cartilage, from remodelling. **Subchondral cysts**: fluid-filled cavities in the subchondral bone.
 :::
 :::
 
-::: exercise Sort the hand {level=1}
-Give the three-hand patterns: OA of DIP/CMC, RA of MCP/wrist, and the CPPD-or-haemochromatosis-MCP pattern, with the discriminating tests.
+::: exercise Which joints? {level=1}
+Which of the following joints are typically affected by primary osteoarthritis, and which would make you look for another cause: distal interphalangeal joints, second and third metacarpophalangeal joints, first carpometacarpal joint, ankle, hip?
 ::: solution
-**OA - hard-bony-DIP-nodes-and-first-CMC-and-pain-with-grip-and-stiffness-after-rest-brief-morning ([[#def-diagnosis]]); RA - soft-synovitic-MCP-and-wrist-swelling-with-prolonged-morning-stiffness-and-symmetry-and-raised-CRP-and-serology ([[musculoskeletal/inflammatory-arthritis]], [[clinical-skills/laboratory-tests]]); CPPD-or-haemochromatosis - the-second-and-third-MCP-erosive-or-hook-like-osteophytes-pattern with chondrocalcinosis-on-films-and-the-iron-studies-and-crystal-fluid-confirmation ([[musculoskeletal/inflammatory-arthritis]], [[gastrointestinal/liver-disease]]); the clinical habit - the hand-distribution-plus-stiffness-duration does most of the sorting before any blood is drawn ([[clinical-skills/history-taking]]).**
+**Typical**: distal interphalangeal joints, first carpometacarpal joint and hip. **Atypical**: the second and third metacarpophalangeal joints (consider haemochromatosis or calcium pyrophosphate deposition) and the ankle (usually secondary to previous fracture or ligament injury). OA at an atypical site should prompt a search for a cause.
 :::
 :::
 
-::: exercise Do the NSAID arithmetic {level=2}
-A 76-year-old with hip OA, stage-3 kidney disease, previous GI bleed on diclofenac, and hypertension on ramipril and a diuretic: negotiate her analgesia with her.
+::: exercise Body mass index {level=1 check="round(10*102/1.68^2)/10"}
+A woman with knee OA weighs 102 kg and is 1.68 m tall. Calculate her body mass index in kg/m², rounded to one decimal place.
 ::: solution
-**Topical-NSAID-or-no-systemic-NSAID ([[#def-management-pyramid]], [[pharmacology/patient-variation]]): the triple-risk explanation (renal-perfusion-and-BP-and-GI-bleed-on-top-of-the-CV-risk - the risk-columns done explicitly with her and the gastroprotection-not-a-free-pass point - [[renal/chronic-kidney-disease]], [[cardiovascular/hypertension]], [[gastrointestinal/oesophagus-stomach]]); the alternatives ladder - regular-paracetamol-if-useful, duloxetine-consideration-for-the-chronic-pain-component, topical-capsaicin-as-a-liked-by-some-adjunct, flare-plan-with-ice-and-load-adjustment-and-consideration-of-injection-for-the-dominant-joint, and the honest opioid-position ([[pharmacology/adverse-reactions]], [[geriatrics-palliative/symptom-control]]); the non-drug intensification - targeted-physiotherapy-and-aids-and-sleep-and-mood-and-the-pain-reprogramme ([[physiology/muscle]], [[psychiatry/mood-disorders]]); and the surgical-conversation-inevitably-on-the-table-with-risk-stratified-hip-replacement-not-nothing ([[#def-surgery-below]], [[surgery/perioperative-care]]).**
+BMI $= 102 / 1.68^2 = 102 / 2.8224 \approx 36.1$ kg/m². This falls in the obesity range (30 or above), so weight management is a core part of her treatment.
 :::
 :::
 
-::: exercise Catch the flare trap {level=2}
-A patient with known knee OA gets a third steroid injection in four months for "the flares that keep coming". What three questions should the clinic ask?
+::: exercise Weight loss and knee load {level=2 check="48"}
+The same woman loses 10% of her body weight, rounded to 12 kg after a year of effort. Using the finding that each kilogram lost reduces peak knee compressive load by about 4 kg per step, by how many kilograms is her peak knee load per step reduced? Explain why NICE says a 10% loss is likely to be better than 5%.
 ::: solution
-**One - is it still OA driving the flares, or synovitis, crystal disease, meniscal pathology, or infection hiding behind the label ([[#def-diagnosis]], [[musculoskeletal/inflammatory-arthritis]], [[musculoskeletal/bones-joints]]-septic-joint-rule - re-aspirate-any-hot-swollen-joint-regardless-of-label ([[musculoskeletal/bones-joints]]))? Two - is the injection plan substituting for the exercise-weight-and-load plan that changes trajectory, and is the interval and total dose within the safety envelope ([[#def-management-pyramid]])? Three - what does the persistence mean for the surgical conversation, and has she been offered it with honest timing numbers ([[#def-surgery-below]])? Governance footnote - the repeated-injection-without-review flag in the notes is an audit trigger, not a personal failing ([[clinical-skills/records-handover]], [[clinical-skills/patient-safety]]).**
+Reduction $= 12 \times 4 = 48$ kg per step. With several thousand steps a day, that is a very large reduction in cumulative load on the knee. Larger weight loss produces proportionally larger reductions in load and, in trials, greater improvements in pain and function, which is why NICE advises that any weight loss is likely to help but that losing 10% of body weight is likely to be better than 5%. Weight loss also reduces the metabolic and inflammatory effects of adipose tissue.
 :::
 :::
 
-::: exercise Design the OA service {level=3}
-A region has long joint-replacement waits and no primary-care OA pathway. Design the service with the evidence pyramid, the equity layer and the economics.
+::: exercise Does she need a scan? {level=2}
+For each person, decide whether imaging is indicated and why. (a) A 58-year-old with three years of activity-related knee pain and five minutes of morning stiffness. (b) A 52-year-old with knee pain that has worsened rapidly over six weeks, with night pain and weight loss. (c) A 47-year-old with hand pain and swelling of the metacarpophalangeal joints, with stiffness lasting two hours each morning.
 ::: solution
-**The pyramid as pathway - a-primary-care-led-conservative-core (the structured-education-and-dosed-exercise-and-weight-management-service-with-referral-criteria-and-time-limited-reviews-and-the-open-access-MSK-practitioner-and-physiotherapist-led- injection-and-monitoring-clinics) - [[#def-management-pyramid]], [[physiology/muscle]], [[gastrointestinal/clinical-nutrition]], [[public-health/prevention-promotion]]; the escalation gate - prehabilitation-and-optimisation-clinics-with-risk-stratified-surgical-scheduling and the explicit-threshold-transparency-with-support-not-punishment ([[#def-surgery-below]], [[surgery/perioperative-care]], [[medical-ethics-law/justice-resources]]); the equity layer - deprivation-and-language-and-occupation-and-carer-burden-adjusted-access and the transport-and-online-versus-in-person-program-and-the-working-patient's-evening-and-weekend-slots ([[public-health/determinants-inequalities]], [[public-health/health-systems-economics]]); the economics - the-conservative-core-saves-surgery-demand-only-if-completed-not-attended-and-the-prehab-saves-complications-and-bed-days-and-the-waitlist-perverse-effect-on-health-capital ([[epidemiology-ebm/observational-studies]], [[public-health/health-systems-economics]]); and the measurement - PROM-and-FOR-score-collection-at-each-step-and-the-equity-stratified-outcome-reporting-and-the-registry-discipline-borrowed-from-arthroplasty-registries (registries as surveillance - [[epidemiology-ebm/measuring-disease]], [[surgery/orthopaedics]]).**
+(a) **No imaging needed**: this meets the NICE clinical criteria for OA.
+
+(b) **Imaging is indicated**: rapid worsening, night pain and weight loss are atypical features that raise concern about malignancy (for example a bone metastasis or primary bone tumour) or infection. An X-ray is the first test, with urgent onward investigation as needed.
+
+(c) This is **not typical of OA**: metacarpophalangeal involvement and prolonged morning stiffness suggest **inflammatory arthritis**. She needs urgent rheumatology referral; X-rays of the hands and feet, blood tests and possibly ultrasound will be arranged as part of that assessment ([[musculoskeletal/inflammatory-arthritis]]).
 :::
 :::
 
-::: exercise Read the registry {level=2}
-A national arthroplasty registry reports 95 % ten-year survivorship but rising revision rates in under-55s. Explain what registries do well, what they miss, and how that changes counselling.
+::: exercise Explain the guidance {level=2}
+A patient with knee OA has read online that paracetamol is the "first-line painkiller for arthritis" and that a knee "washout" will fix his torn meniscus. Explain, in plain language suitable for him, what current UK guidance says and why.
 ::: solution
-**Registry strengths - all-consecutive-real-world-cohorts-and-implant-and-surgeon-and-hospital-comparison-and-revision-as-the-hard-endpoint ([[public-health/screening]]-surveillance-adjacent, [[epidemiology-ebm/observational-studies]], [[surgery/orthopaedics]]); what they miss - patient-reported-outcomes-and-complications-that-don't-revise-and-case-mix-and-deprivation-gradients-unless-linked-to-PROM-and-admission-data ([[epidemiology-ebm/measuring-disease]], [[public-health/determinants-inequalities]]); the counselling consequence - the-survivorship-curve-is-a-population-average-and-the-under-55-patient-should-hear-the-percent-at-risk-of-revision-in-their-lifetime-in-framed-absolute-terms-with-the-reoperation-and-bearing-and-bone-loss-consequences and the "aim to make the second operation unnecessary but plan the first one like it might be needed" summary (absolute-risk framing - [[epidemiology-ebm/measuring-disease]], [[clinical-skills/communication]]); and the modifiable-part honesty - body-weight-and-smoking-and-mechanical-overload-and-infection-risk-all-move-the-person's-position-around-the-curve ([[#def-surgery-below]], [[gastrointestinal/clinical-nutrition]], [[public-health/prevention-promotion]]).**
+A good explanation might say: "For many years paracetamol was recommended first, but when large studies were pooled the benefit for osteoarthritis turned out to be very small, too small for most people to notice. So guidelines no longer recommend it as a routine regular treatment. Gels containing an anti-inflammatory rubbed on the knee work better and are safe for most people. A keyhole washout or clean-up has been tested against fake operations, and people did just as well with the fake operation. The small tears in the meniscus that MRI shows are very common in people of our age, including many with no pain, so they are usually not the cause of the pain. What does help is a well-designed exercise programme to strengthen the muscles around the knee, keeping active, and losing weight if that applies. If the pain still seriously affects your life, a knee replacement can be considered."
+:::
+:::
+
+::: exercise After a ligament injury {level=3}
+A 34-year-old woman played football at county level until she ruptured her anterior cruciate ligament and tore her medial meniscus ten years ago; the meniscus was partly removed. She now has activity-related pain in the same knee. (a) Explain, using [[#thm-load-capacity]], why her risk of OA is increased. (b) Does she meet the NICE criteria for a clinical diagnosis? (c) What would you recommend?
+::: hint
+Think about what the meniscus and the cruciate ligament do for load distribution and stability, and check the age criterion in [[#def-oa-diagnosis]].
+:::
+::: solution
+(a) The meniscus spreads load across the tibial plateau. Removing part of it **concentrates load** on a smaller area of cartilage. An ACL-deficient or reconstructed knee also has abnormal motion and **instability**, producing shear forces. Load per unit area therefore exceeds the tissues' capacity to adapt, and post-traumatic OA commonly appears 10 to 20 years after such an injury, often in young adults.
+
+(b) She does **not** meet the NICE criteria for a clinical diagnosis, because she is under 45. That does not mean she does not have OA; it means the diagnosis cannot be assumed and **imaging** (X-ray, and possibly MRI if instability or a further meniscal tear is suspected) is reasonable to assess the joint and exclude other problems.
+
+(c) Management follows the same principles: education, a progressive **strengthening and neuromuscular programme**, maintaining a healthy weight, and adapting rather than abandoning activity. Topical NSAIDs may help. Referral to a knee specialist is appropriate if there is instability or mechanical symptoms suggesting a displaced meniscal tear, or if there is significant malalignment, for which joint-preserving procedures such as an osteotomy may be considered in younger people.
+:::
+:::
+
+::: exercise A new limp after a hip replacement {level=3}
+A 76-year-old man had a total hip replacement eight years ago that has worked well. Over six months he has developed groin and thigh pain on weight-bearing and on first standing up ("start-up pain"). He is otherwise well, with no fever, and the CRP is normal. (a) What is the most likely cause? (b) What differential diagnoses must be considered? (c) What investigations would help?
+::: hint
+Think about the late complications in [[#def-arthroplasty-complications]] and what start-up pain suggests about the implant.
+:::
+::: solution
+(a) The most likely cause is **aseptic loosening** of the femoral stem or acetabular cup. Pain when starting to bear weight and thigh pain suggest movement of the implant relative to the bone. Loosening is often driven by wear particles from the bearing surface, which provoke macrophages to release cytokines that activate osteoclasts and cause **osteolysis** around the implant.
+
+(b) Differential diagnoses include **low-grade periprosthetic infection** (which may have a normal or only slightly raised CRP; *Cutibacterium acnes* and coagulase-negative staphylococci cause indolent infection), **periprosthetic fracture**, lumbar spine pathology with referred pain, trochanteric pain, and, much less commonly, metastatic disease.
+
+(c) **Serial X-rays** comparing with previous films can show lucent lines around the components, osteolysis, change in implant position or a fracture. Blood tests (CRP, ESR) and, if infection is possible, **hip aspiration** for culture before any antibiotics. Specialist referral to an arthroplasty surgeon will determine whether revision surgery is needed, because distinguishing infection from aseptic loosening changes the operation.
 :::
 :::
