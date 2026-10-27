@@ -9,7 +9,7 @@
   "summary": "Integration of the equations of motion, linear algebra, Monte Carlo methods, fields on a grid, many-particle simulation and the numerical signs of chaos.",
   "overview": [
     "Most of the equations in the other courses do not have closed-form solutions. Computational physics is the disciplined replacement of those equations by a finite algorithm whose error you can estimate. The subject is not a programming course. The code is short; the question is whether it computes the thing you think it computes.",
-    "Ordinary differential equations come first, because Newtonian mechanics is a system of them: Euler’s method, and why its error forces you on to a Runge–Kutta method, with energy as the diagnostic. Linear algebra is the language of small oscillations, of quantum finite differences and of fitting. Monte Carlo integration and the Metropolis algorithm connect to statistical mechanics. Grids turn Poisson’s equation and the wave equation into matrices. A short molecular-dynamics example and a driven pendulum show many degrees of freedom and sensitive dependence in practice.",
+    "Ordinary differential equations come first, because Newtonian mechanics is a system of them: Euler’s method, and why its error forces you on to a Runge–Kutta method, with energy as the diagnostic. Linear algebra is the language of small oscillations, of quantum finite differences and of fitting. Monte Carlo integration and the Metropolis algorithm connect to statistical mechanics. Grids turn Poisson’s equation and the wave equation into matrices. Many-particle simulation adds the cost of the force sum, softening, trees, periodic boundaries, and the measurement of temperature, pressure and structure from a trajectory. The last chapter computes chaos, in the logistic map and the Lorenz system, and then treats data: fitting with $\\chi^2$, error propagation, the bootstrap, and the discrete Fourier transform.",
     "Every numerical result in this course should be accompanied by a check against a known limit: energy drift, a halving of the step, or a comparison with an exact solution at a special value of the parameters. A plot is not a check."
   ],
   "prerequisites": [
@@ -18,10 +18,14 @@
   "outcomes": [
     "Integrate a second-order equation of motion and estimate the global error of the method used.",
     "Solve a linear system and a linear eigenvalue problem and know which algorithms are stable.",
-    "Estimate an integral and an expectation value by Monte Carlo sampling, with an error bar.",
-    "Implement a simple Metropolis simulation of an Ising lattice.",
+    "Estimate an integral and an expectation value by Monte Carlo sampling, with an error bar that accounts for correlation.",
+    "Implement a simple Metropolis simulation and state the detailed-balance condition it satisfies.",
     "Discretise Poisson’s equation and the wave equation on a grid and state the stability condition.",
-    "Recognise sensitive dependence in a numerical trajectory and test it by varying the initial data."
+    "Write a molecular-dynamics program with periodic boundaries and measure temperature, virial pressure and the radial distribution function.",
+    "Explain the cost of direct force summation and how softening, neighbour lists and the Barnes–Hut tree change it.",
+    "Compute a bifurcation diagram and a Lyapunov exponent, and quantify the predictability time of a chaotic system.",
+    "Fit a model to data with weighted least squares, judge it by χ², and propagate or bootstrap its uncertainties.",
+    "Compute a power spectrum with the fast Fourier transform and recognise aliasing and the Nyquist limit."
   ],
   "chapters": [
     {
@@ -62,16 +66,16 @@
     {
       "slug": "many-particles",
       "title": "Many particles",
-      "summary": "A short molecular-dynamics simulation and what it measures.",
+      "summary": "N-body gravity, a Lennard-Jones liquid, and what a molecular-dynamics run measures.",
       "requires": [
         "computation/integrating-motion",
-        "continuum/fluid-kinematics"
+        "statistical-mechanics/canonical"
       ]
     },
     {
       "slug": "chaos-and-data",
       "title": "Chaos and data",
-      "summary": "The driven pendulum, sensitivity, and fitting a model to data.",
+      "summary": "Chaos computed in the logistic map and the Lorenz system; fitting, error bars and spectra.",
       "requires": [
         "analytical-mechanics/chaos",
         "computation/linear-algebra"
@@ -108,6 +112,34 @@
       ]
     },
     {
+      "year": 1955,
+      "title": "The Fermi–Pasta–Ulam–Tsingou experiment",
+      "detail": "A chain of weakly nonlinear oscillators integrated on the Los Alamos MANIAC failed to share its energy among the modes and returned almost to its initial state, the first great surprise of a computer experiment. Mary Tsingou wrote the program.",
+      "people": [
+        "Enrico Fermi",
+        "John Pasta",
+        "Stanislaw Ulam",
+        "Mary Tsingou"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Molecular dynamics",
+      "detail": "Berni Alder and Thomas Wainwright integrated the motion of hard spheres and found a transition between fluid and solid. Aneesur Rahman simulated liquid argon with the Lennard-Jones potential in 1964.",
+      "people": [
+        "Berni Alder",
+        "Thomas Wainwright"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "Lorenz’s equations",
+      "detail": "Edward Lorenz integrated a three-dimensional model of convection and found that trajectories starting close together diverge, the numerical discovery of sensitive dependence.",
+      "people": [
+        "Edward Lorenz"
+      ]
+    },
+    {
       "year": 1965,
       "title": "The fast Fourier transform",
       "detail": "Cooley and Tukey published an algorithm for the discrete Fourier transform in O(n log n) operations. Gauss had used the idea; the paper made it a tool.",
@@ -125,11 +157,20 @@
       ]
     },
     {
-      "year": 1963,
-      "title": "Lorenz’s equations",
-      "detail": "Edward Lorenz integrated a three-dimensional model of convection and found that trajectories starting close together diverge, the numerical discovery of sensitive dependence.",
+      "year": 1978,
+      "title": "Feigenbaum’s universality",
+      "detail": "Mitchell Feigenbaum published the result that period-doubling cascades in a wide class of maps converge geometrically with the same ratio 4.669…, found in numerical experiments begun in 1975.",
       "people": [
-        "Edward Lorenz"
+        "Mitchell Feigenbaum"
+      ]
+    },
+    {
+      "year": 1986,
+      "title": "The Barnes–Hut tree",
+      "detail": "Josh Barnes and Piet Hut published a hierarchical algorithm that computes gravitational forces among N bodies in O(N log N) operations by replacing distant groups with their centres of mass.",
+      "people": [
+        "Josh Barnes",
+        "Piet Hut"
       ]
     }
   ],
@@ -139,12 +180,6 @@
       "authors": "Mark Newman",
       "year": 2013,
       "note": "The book this course follows. It assumes you will write the programs; the physics is in the exercises."
-    },
-    {
-      "title": "An Introduction to Computer Simulation Methods",
-      "authors": "Harvey Gould, Jan Tobochnik and Wolfgang Christian",
-      "year": 2016,
-      "note": "Third edition. A wide set of projects, from mechanics to statistical physics."
     },
     {
       "title": "Computational Physics",
@@ -161,8 +196,26 @@
     {
       "title": "Understanding Molecular Simulation",
       "authors": "Daan Frenkel and Berend Smit",
-      "year": 2002,
-      "note": "Second edition. The next step after the short molecular-dynamics chapter."
+      "year": 2023,
+      "note": "Third edition. Molecular dynamics and Monte Carlo for many particles, with the statistical mechanics behind every measured quantity."
+    },
+    {
+      "title": "Computer Simulation of Liquids",
+      "authors": "Michael P. Allen and Dominic J. Tildesley",
+      "year": 2017,
+      "note": "Second edition. The standard reference for periodic boundaries, neighbour lists, the virial pressure and thermostats."
+    },
+    {
+      "title": "Nonlinear Dynamics and Chaos",
+      "authors": "Steven H. Strogatz",
+      "year": 2015,
+      "note": "Second edition. The logistic map, the Lorenz equations and Lyapunov exponents, with the geometry that the numerical chapter assumes."
+    },
+    {
+      "title": "An Introduction to Computer Simulation Methods",
+      "authors": "Harvey Gould, Jan Tobochnik and Wolfgang Christian",
+      "year": 2016,
+      "note": "Third edition. A wide set of projects, from mechanics to statistical physics."
     }
   ],
   "next": [
