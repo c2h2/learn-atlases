@@ -86,7 +86,7 @@ Differentiate [[#eq-unsym]] along the beam, using $dM_y/dx = S_z$ and $dM_z/dx =
 $$
 \frac{\partial\sigma_x}{\partial x} = \frac{(S_yI_{yy} - S_zI_{yz})\,y + (S_zI_{zz} - S_yI_{yz})\,z}{I_{yy}I_{zz} - I_{yz}^2}.
 $$
-Substitute and integrate from $0$ to $s$ to obtain [[#eq-shear-flow}]. At a free edge there is no adjacent material to carry a longitudinal shear force, so $q_0 = 0$. The assumption that the load passes through the shear centre is needed because otherwise an additional, torsional shear flow must be superposed.
+Substitute and integrate from $0$ to $s$ to obtain [[#eq-shear-flow]]. At a free edge there is no adjacent material to carry a longitudinal shear force, so $q_0 = 0$. The assumption that the load passes through the shear centre is needed because otherwise an additional, torsional shear flow must be superposed.
 :::
 
 ::: warning Signs in shear flow: let the physics decide
