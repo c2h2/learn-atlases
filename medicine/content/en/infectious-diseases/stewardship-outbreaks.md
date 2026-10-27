@@ -1,166 +1,279 @@
-Antimicrobial resistance is the clearest example in medicine of a benefit enjoyed privately and a cost paid publicly: **every course of antibiotics helps a patient and spends a molecule, and no individual prescriber captures the future susceptibility their prescribing consumes.** Stewardship is the discipline of making that future visible and accountable; outbreak control is the same skill applied to transmission instead of selection - detect early, break chains, communicate clearly, and learn in public.
+Antibiotics changed medicine more than almost any other invention. They made pneumonia, meningitis and childbirth survivable, and they underpin surgery, chemotherapy, transplantation and intensive care. Every use of an antibiotic also selects for resistance, and resistance spreads between people, animals and the environment. The Global Research on Antimicrobial Resistance (GRAM) project estimated that in 2021 bacterial antimicrobial resistance directly caused about 1.14 million deaths and was associated with 4.71 million, and forecast more than 39 million deaths directly caused by resistance between 2025 and 2050 if trends continue.
 
-This chapter covers resistance mechanisms and their clinical reading, stewardship science, antimicrobial governance, and outbreak detection and management.
+This chapter is about the public-health half of infectious diseases. It covers how bacteria resist antibiotics, how pharmacology and the laboratory guide good prescribing, the practice of **antimicrobial stewardship**, and the investigation and control of **outbreaks**. UK practice follows NICE (NG15), UK Health Security Agency guidance including "Start smart, then focus", and the UK national action plan *Confronting antimicrobial resistance 2024 to 2029*; global practice follows WHO.
 
-## Resistance and how to read it
+## How bacteria resist
 
-::: definition The resistance toolkit, clinically {#def-resistance}
-**The four mechanisms (enzatic-destruction-or-modification - beta-lactamases-from-penicillinases-to-ESBLs-to-AmpC-to-carbapenemases-KPC-NDM-OXA-48-and-aminoglycoside-modifying-enzymes-and-chloramphenicol-acetyltransferase and target-protection-or-alteration - mecA-altered-PBP2a-and-vanA-D-Ala-D-Lac-and-rRNA-methylation-for-macrolides-and-quinolone-resistance-determining-regions-and-ribosomal-protection-proteins for tetracyclines and linezolid and the permeability-and-efflux-combinatorics - porin-loss-and-Efflux-pumps-that-turn-single-mechanisms-into-pan-resistance and the bypass pathways - Ddpa-vancomycin-operons and trimethoprim-sulfa-bypasses - [[microbiology/bacteria]], [[microbiology/bacterial-pathogenesis]], [[microbiology/antimicrobials]]); the genetic logistics (chromosomal-mutation-selected-versus-acquired-plasmid-transmission-and-conjugation-and-transduction-and-transformation-and-integrons-stacking-entire-resistance-arrays-and-transposons-jumping-between-species-and-the-plasmid-as-the-real-epidemiological-unit - the mobile gene pool as the reason gonorrhoea and Klebsiella lessons travel - [[microbiology/bacterial-pathogenesis]], the gene-transfer analogies in [[microbiology/bacteria]]); fitness, cost and compensation (resistance-carries-costs-and-withdrawal-can-bring-back-susceptibility-with-the-famous-ampicillin-after-colistin-era-optimism-tempered-by-compensatory-mutation-and-the-need-for-long-horizon-data and collateral sensitivity and heteroresistance and the biofilm-shelters-tolerance-from-resistance distinction that matters for devices - [[infectious-diseases/healthcare-infections]], [[microbiology/microbiota]]); and why the microbiome is the patient (antibiotic-ecology - dysbiosis-and-C.diff-and-post-antibiotic-diarrhoea and the microbiota resilience-versus-alternative-stable-states-question and the neonatal-and-frail-elderly-windows-of-collateral-damage and the faecal-transplantation-era as applied microbiology - [[gastrointestinal/digestion-absorption]], [[paediatrics/growth-development]]-microbiota-rows, [[infectious-diseases/healthcare-infections]]).**
-:::
+::: definition Antimicrobial resistance {#def-resistance}
+**Antimicrobial resistance** is the ability of a microorganism to survive or grow in the presence of a drug concentration that would normally kill or inhibit it. **Intrinsic resistance** is a property of the whole species (for example, Gram-negative bacteria are not affected by vancomycin, whose large molecule cannot cross their outer membrane). **Acquired resistance** arises in previously susceptible strains, by **mutation** or by **acquisition of genes** from other bacteria.
 
-::: definition Reading the antibiogram {#def-antibiogram}
-**Phenotype-to-genotype-inference (the-report-reading-discipline - ESBL-signature-on-ceftriaxone-ceftazidime-and-aztreonam-and-AmpC-in-SPACE-organisms-with-inducible-expression-and-why-esbl-positive-E-coli-is-a-prescribing-event-not-a-report-line and the MRSA-versus-MSSA-foundation and VRE-enterococcus-versus-leuconostoc-pediococcus-traps and the D-test-for-inducible-clindamycin-resistance in staph and strep and the co-trimoxazole-with-S aureus nuance and the ceftazidime-avibactam-versus-meropenem-vaborbactam-versus-cefiderocol-matching-to-carbapenemase-class with the honest reminder that these are pharmacy-and-microbiology conversations - [[clinical-skills/laboratory-tests]], [[microbiology/laboratory-diagnosis]], [[microbiology/antimicrobials]], [[pharmacology/metabolism-excretion]]); the surveillance layer (point-prevalence-surveys-and-antibiograms-with-denominators-versus-throwaway-paper-and-whole-hospital-versus-ICU-versus-ward-level-trends-and-blood-culture-specific-versus-urine-heavy-datasets and the GLASS-and-EARSnet-and-ECDC-and-local-annual-reports and the genomic-overlay-with-cluster-detection and the do-not-aggregate-colonisation-with-infection rule and the resistance-attribution models for deaths attributable-versus-associated honesty - [[epidemiology-ebm/measuring-disease]], [[public-health/communicable-disease-control]], [[public-health/environmental-occupational]] environmental rows, and [[infectious-diseases/tropical-infections]]); the clinical decisions under uncertainty (empiric-versus-definitive-versus-suppressive framing and risk-factor-weighted-empiric-choices-recent-antibiotics-and-transfer-history-and-travel-and-local-ecology-and-prognostic-severity-and-source-control-priority and de-escalation-at-48-72-hours as the central act of stewardship and the duration-shortening-evidence-base - shorter-is-non-inferior-for-many-gram-negatives-bacteraemias-and-community-pneumonia-and-intra-abdominal-after-source-control and the osteomyelitis-versus-endocarditis-versus-prosthesis exceptions with the oral-step-down-trial-results - [[microbiology/antimicrobials]], [[emergency-critical-care/shock-fluids]], [[cardiovascular/valve-congenital-disease]], [[surgery/acute-abdomen]], [[musculoskeletal/bones-joints]], [[infectious-diseases/healthcare-infections]]).**
-:::
+The mechanisms fall into four groups:
 
-## Stewardship and governance
+1. **Destroying or modifying the drug**: beta-lactamases hydrolyse the beta-lactam ring. They range from simple penicillinases to **extended-spectrum beta-lactamases (ESBLs, such as CTX-M)**, which destroy third-generation cephalosporins, and **carbapenemases (KPC, OXA-48, NDM, VIM, IMP)**, which also destroy carbapenems. Aminoglycoside-modifying enzymes act in a similar way.
+2. **Altering the target**: MRSA makes an alternative penicillin-binding protein (PBP2a, encoded by *mecA*) with low affinity for beta-lactams; enterococci with *vanA* build cell walls ending in D-Ala–D-Lac, which vancomycin binds poorly; mutations in DNA gyrase cause fluoroquinolone resistance, and mutations in *rpoB* rifampicin resistance.
+3. **Reducing entry**: loss of outer-membrane porins in Gram-negative bacteria.
+4. **Pumping the drug out**: efflux pumps, often acting on several drug classes at once.
 
-::: definition What stewardship programs actually do {#def-stewardship}
-**The core interventions (prospective-audit-and-feedback-with-infectious-disease-specialist-review of antibiotics past 48-72 hours and pre-authorization-for-the-reserve-agents-used-sparingly-because-approval-queues-kill-patients-too and formulary-structure-with-restricted-versus-unrestricted-class-logic and the local-antibiogram-in-every-formulary and IV-to-OP-switch-with-clinical-stability-criteria-and-high-bioavailability-agents-linezolid-fluoroquinolones-metronidazole-doxycycline-clindamycin-principles and the DA-AgRT-ambulatory-IV-antimicrobial-therapy-safety-systems - [[microbiology/antimicrobials]], [[pharmacology/dosing-principles]], [[pharmacology/absorption-distribution]], [[clinical-skills/clinical-reasoning]]); the diagnostic half (blood-cultures-before-antibiotics-and-specimen-quality-and-contamination-rates as a KPI and rapid-diagnostics-and-the-questions-they-answer - MALDI-TOF-identification-speed-and-blood-culture-positivity-panels-and-resistance-gene-PCR-and-Galactomannan-and-TB-Xpert-with-turnaround-times-as-the-endpoint and RDT-guided-antibiotic-decisions for respiratory illness with fever syndromes and the procalcitonin-algorithms with the honest meta-analyses showing antibiotic-day-reduction but no consistent mortality signal and the dosing-and-safety-adjacency - therapeutic-drug-monitoring-for-vancomycin-AUC-dosing-and-renal-adjustment-and-pharmacy-ownership - [[microbiology/laboratory-diagnosis]], [[clinical-skills/laboratory-tests]], [[pharmacology/dosing-principles]], [[renal/acute-kidney-injury]], [[emergency-critical-care/acute-assessment]]); the communication layer (the-antibiotic-sensitivity-hub-and-delayed-prescribing-for-sore-throat-and-cough-and-the-consultation-scripts-that-work-versus-the-leaflets-that-dont and the veterinary-agricultural-aquacultural-and-community-pharmacy-dimensions-one-health and the public-engagement-campaigns-evidence-Eurobarometer-knowledge-versus-expectation-gaps and the do-not-prescribe-for-the-parent-who-insists myth-testing and the self-medication-and-informal-market-economies that dominate low-income-settings resistance - [[public-health/prevention-promotion]], [[public-health/determinants-inequalities]], [[public-health/global-health]]); and stewardship in the primary-care and long-care majority (the-billions-of-ambulatory-DDDs-and-RTI-and-UTI-and-skin-prescribing-and-problem-based-education-versus-backdrop-audit-interventions and the nursing-home-antibiotic-prescribing-decision-support-trials-and-reducing-asymptomatic-bacteriuria-treatment and the dental and optometric and over-the-counter counter voices - [[public-health/health-systems-economics]], [[geriatrics-palliative/polypharmacy]], [[renal/urinary-tract]], [[infectious-diseases/sexually-transmitted-infections]]-gonorrhoea-frontline).**
-:::
-
-::: definition Governance, incentives and the pipeline {#def-governance}
-**Institutions (the-antimicrobial-management-team-with-microbiology-pharmacy-infection-control-clinical-leadership-and-executive-accountability and the mandatory stewardship programmes in acute hospitals with standards-and-inspection hooks and national action plans with the O'Neill-review framing and the GRAM-report era and the WHO AWaRe-classification as the prescriber-facing dashboard and Access-Watch-Reserve-targets-now-more-access-oriented-with-2030-ambitions - [[public-health/health-systems-economics]], [[medical-ethics-law/professionalism-regulation]]); money and metrics (the-DDD-and-DDDOT-and-DOT-and-GPAD-normalisations-with-denominator-wars and pay-for-performance-versus-public-reporting-versus-educational-messaging-trial-evidence and the harm-of-target-driven-prescribing-deferral and the antitrust-adjacent caution against reimbursement rules that reward IV and long courses - duration-trial-evidence-vs-payment-structures - [[epidemiology-ebm/measuring-disease]], [[pharmacology/drug-development-prescribing]], [[public-health/health-systems-economics]]); the broken pipeline and its fixes (the-discovery-desert-and-the-resistance-race with the Gram-negative-gap and the MACE-adjacent-companies-exit-waves and the market-failure-economics-pull-and-push-incentives - subscription-models-UK-market-access-pilot-and-Australia-subscription-trial-and-ADAPTT-ACTs-and-AMR-entrepreneurial-comparisons and the approval-pathways-shortened-non-inferiority-endpoints-unmet-need-rules and the AMR-disease-burden-economics-that-justify-payments-with-uncertainty-stated - [[pharmacology/drug-development-prescribing]], [[public-health/global-health]]); and the One Health and environmental half (the-agriculture-colistin-withdrawal-as-the-largest-natural-experiment-and-its-results and the-animals-to-people-transmission-Genomics-and-meat-chain-surveillance and the wastewater-and-hospital-effluent-and-aquaculture-resistance-gene-flows-and-sludge-and-irrigation-economics and manufacturing-discharge-standards-for-API-effluent with the G20-CD-EPM-frameworks and the climate-and-flooding-resistance-epidemiology interface - [[public-health/environmental-occupational]], [[public-health/global-health]], [[microbiology/microbiota]]).**
+**Horizontal gene transfer** spreads resistance genes between bacteria, including between species: **conjugation** of plasmids (the main route for ESBL and carbapenemase genes), **transformation** by free DNA and **transduction** by bacteriophages. Plasmids often carry several resistance genes together, as well as genes for disinfectant and metal resistance.
 :::
 
-::: example The ESBL on the ward {#ex-esbl}
-A 78-year-old from a nursing home is admitted with a fall; urine culture on a catheter specimen grows ESBL E coli; she has no urinary symptoms; the foundation doctor reaches for meropenem because "it's resistant".
-::: solution
-**Two errors in one prescription - treating colonisation and misreading the report ([[#def-antibiogram]], [[#def-stewardship]]): the-asymptomatic-bacteriuria-rule - catheterised-nursing-home-residents-are-colonised-and-treatment-buys-resistance-and-C.diff-not-protection-with-the-fever-and-symptom-and-source-decisions made on the clinical frame - [[renal/urinary-tract]], [[infectious-diseases/healthcare-infections]], [[geriatrics-palliative/ageing-frailty]]; what-ESBL-means-prescription - ESBL-positive-Enterobacterales-are-frequently-also-susceptible-in-vitro-and-clinically-usable-to-nitrofurantoin-for-cystitis-and-co-trimoxazole-or-ciprofloxacin-when-susceptible-and-a-minor-aminoglycoside-dose-and-the-carbapenem-question-when-genuinely-invasive-infection-and-no-oral-options and the source-control thinking about obstruction and stones and the catheter itself - [[microbiology/antimicrobials]], [[clinical-skills/medical-imaging]]; the-de-escalation-and-communication-act - phone-the-microbiologist-for-context-not-just-report-and-write-the-indication-and-stop-date-into-the-notes-and-the-nursing-home-communication-because-a-flag-saying-ESBL-travels-with-her-forever-and-changes-future-empiric-choices - [[clinical-skills/records-handover]], [[microbiology/laboratory-diagnosis]]; and the-future-facing-audit - how-many-same-ward-ESBLs-this-quarter-and-are-they-related-and-the-infection-control-team-look-at-transmission-and-stewardship-look-at-what-drove-the-screening-in-the-first-place - [[public-health/communicable-disease-control]], [[infectious-diseases/healthcare-infections]].**
-:::
+::: proof
+**Why antibiotic use selects resistance, and why it rarely goes away.** Suppose a population of bacteria contains a small fraction of resistant cells. Without antibiotic, resistance genes usually carry a **fitness cost**: the resistant cells grow slightly slower and stay rare. With antibiotic, the susceptible majority is killed and the resistant minority expands to fill the space. The more often a population (in one patient, a ward, a farm or a country) is exposed, the more resistance is enriched. This is why antibiotic consumption and resistance rates correlate across hospitals and countries.
+
+If use stops, one might expect resistance to decline as the costly genes are lost. In practice it often persists, for three reasons: bacteria acquire **compensatory mutations** that reduce the fitness cost; resistance genes travel on plasmids with other genes, so the use of **any** drug whose resistance gene is on the same plasmid co-selects them all; and reservoirs in the community, in animals and in the environment keep reintroducing resistant strains. Stewardship therefore aims to prevent resistance emerging and spreading, rather than relying on it to disappear.
 :::
 
-::: example The cluster that is not one {#ex-pseudo}
-Three ICU patients in six weeks grow Stenotrophomonas maltophilia from sputum; two had the same bronchoscope session; the laboratory asks whether you are "seeing anything odd".
-::: solution
-**Pseudo-outbreak-versus-real-cluster - answer the laboratory fast ([[#def-resistance]], [[#def-governance]]): the-organism-signal - Stenotrophomonas-as-low-virulence-but-high-signal-organism-with-water-and-moisture-epidemiology-and-selective-antibiotic-pressure-carbapenems-and-the-question-of-what-the-ICU-uses-most-and-when-it-is-true-pneumonia-versus-colonisation-with-abnormal-sputum - [[microbiology/bacteria]], [[infectious-diseases/healthcare-infections]]; the-epi-curve-and-line-list - time-and-place-and-exposure-tables-for-bronchoscopy-sessions-and-humidifiers-and-sinks-and-reprocessing-log-review-with-infection-control-and-endoscopy-teams-and-the-ICU-director-and-the-same-shift-staff-interviews - [[epidemiology-ebm/observational-studies]], [[microbiology/infection-control]]; the-environmental-and-microbiological-work - specimen-and-sink-and-machine-sampling-and-DST-matching-and-whole-genome-comparison-to-distinguish-common-source-from-independent-appearances and the honest category of contamination-with-imperfect-collection-and-transport - [[microbiology/laboratory-diagnosis]], [[genetics/genomic-medicine]]; and the-action-under-uncertainty - temporary-bronchoscope-removal-or-reprocessing-override-and-enhanced-cleaning-and-clip-records-and-communication-to-ICU-staff-families-and-referring-hospitals-about-testing-cancellations-if-reprocessing-failure-is-real with the post-incident review that changes reprocessing design not just minutes - [[public-health/communicable-disease-control]], [[clinical-skills/patient-safety]], [[medical-ethics-law/professionalism-regulation]].**
-:::
-:::
+The colistin story shows how quickly this can happen. Colistin was an old, toxic drug held back as a last resort for carbapenem-resistant infections, but it had been used heavily in livestock. In 2015 researchers in China identified *mcr-1*, a plasmid-borne colistin resistance gene, in bacteria from pigs and patients; within months it had been found in many countries. This is a **One Health** problem: human, animal and environmental antibiotic use and resistance are linked.
 
-::: example The antibiotic that outlived its indication {#ex-cdiff-switch}
-An 81-year-old aspiration-pneumonia patient, day 7 of IV co-amoxiclav, develops watery diarrhoea four times daily; she is now afebrile, saturating well, CRP falling, but the ward says "the course finishes on day 10".
-::: solution
-**Switch-early-stop-early - the two stewardship levers firing together ([[#def-stewardship]], [[infectious-diseases/healthcare-infections]]): the-stop-date-revision - aspiration-events-that-are-chemical-pneumonitis-versus-bacterial-pneumonia-trajectories and 5-7-day-standards-where-supported and the falling-CRP-clinically-well patient as the licence to stop rather than finish by habit and the documented rationale so the night team does not restart - [[respiratory/respiratory-infections]], [[microbiology/antimicrobials]], [[clinical-skills/records-handover]]; the-diarrhoea-work - test-for-C.diff-only-in-significant-unformed-stool-and-laxative-review-and-medication-causes-and-early-feeding-and-nutrition and the infection-control-instant-actions-contact-precautions-and-soap-and-water-while-waiting - [[gastrointestinal/bowel-disease]], [[microbiology/laboratory-diagnosis]], [[microbiology/infection-control]]; the-never-again-lesson - which-days-of-this-admission-were-unnecessary and the prophylaxis-versus-treatment-drift and the do-not-escalate-to-broad-anaerobic-cover-for-every-foul-sputum-story-when-plain-ampicillin-and-metronidazole-or-amoxicillin-clavulanate-short-courses-do - [[pharmacology/adverse-reactions]], [[renal/chronic-kidney-disease]]-dosing; and the-system-half - audit-antibiotic-days-past-72-hours-without-review-on-this-ward-and-the-switch-list-and-oral-options-with-high-bioavailability and the nursing-home-alert-if-she-is-really-CDI-positive-and-infectious - [[public-health/communicable-disease-control]], [[infectious-diseases/healthcare-infections]], [[public-health/health-systems-economics]].**
-:::
-:::
+## Using antibiotics well: pharmacology
 
-::: example The treatment failure that is a sentinel {#ex-gc-resistance}
-A patient treated with intramuscular ceftriaxone 1 gram for gonorrhoea returns in a week with persistent discharge; repeat NAAT is positive and the laboratory reports reduced cephalosporin susceptibility on culture.
-::: solution
-**Treat the organism and the epidemiology at once ([[#def-antibiogram]], [[infectious-diseases/sexually-transmitted-infections]]): the-patient-protocol - expert-microbiologist-and-public-health-phone-contacts-immediately-not-in-a-week-and-repeat-detailed-sexual-history-with-dates-and-partners-and-travel-and-re-treat-with-high-dose-ceftriaxone-plus-second-agent-per-specialist-guidance-and-test-of-cure-at-7-14-days-by-NAAT-with-culture-confirmation - [[infectious-diseases/sexually-transmitted-infections]], [[microbiology/antimicrobials]], [[clinical-skills/laboratory-tests]]; the-epidemiological-instrument - isolate-sent-for-reference-sequencing-and-minimum-inhibitory-concentration-reference-laboratory-panel-and-phylogenetic-comparison-against-national-import-events-and-the-exposure-network-traced-urgently-because-the-second-untreated-partner-is-the-amplification-step - [[public-health/communicable-disease-control]], [[genetics/genomic-medicine]]; the-clinic-response - review-all-recent-gonorrhoea-treatments-for-test-of-cure-status-and-consider-enhanced-empiric-dosing-and-dual-coverage-strategy-review-with-colleagues-and-communicate-changes-to-partners-in-sexual-health-and-emergency-departments so the guidance changes together - [[microbiology/infection-control]], [[infectious-diseases/healthcare-infections]]; and the-communication-line - to-the-patient-without-blame-explaining-why-they-are-the-tip-of-an-important-snowflake-and-what-abstinence-and-partner-treatment-now-protect and the media and public-health liaison done jointly - [[clinical-skills/communication]], [[public-health/determinants-inequalities]].**
-:::
-:::
+::: theorem Pharmacokinetic–pharmacodynamic targets {#thm-pkpd}
+An antibiotic's effect depends on how its concentration over time compares with the **minimum inhibitory concentration (MIC)** of the organism. Antibiotics fall into three groups:
 
-::: quiz
-The stewardship intervention with the strongest evidence base for reducing antibiotic days without worsening outcomes is:
-- [x] Prospective audit with feedback at 48-72 hours plus de-escalation
-- [ ] Mandatory antibiotic susceptibility testing for every prescription
-- [ ] Banning third-generation cephalosporins
-- [ ] Requiring a microbiologist's signature for all IV antibiotics
-::: solution
-**Audit-feedback-de-escalation-is-the-programme-backbone ([[#def-stewardship]], [[public-health/health-systems-economics]]); pre-authorization-works-for-selected-reserve-agents-but-is-not-everything-and-signature-bottlenecks-can-delay-appropriate-therapy - [[microbiology/antimicrobials]]; short-course-evidence-and-IV-to-oral-switches-are-the-other-two-pillars and diagnostic stewardship-shapes-what-gets-treated-at-all - [[clinical-skills/laboratory-tests]], [[pharmacology/dosing-principles]].**
-:::
+- **Time-dependent killing** (beta-lactams): what matters is the **fraction of the dosing interval during which the free concentration exceeds the MIC** ($fT_{>\text{MIC}}$). Frequent dosing or prolonged infusions achieve this.
+- **Concentration-dependent killing** (aminoglycosides): what matters is the **peak concentration relative to the MIC** ($C_{\max}/\text{MIC}$). Large once-daily doses achieve high peaks and allow the drug to clear before the next dose, which also reduces kidney toxicity.
+- **Exposure-dependent killing** (vancomycin, fluoroquinolones): what matters is the **area under the concentration–time curve relative to the MIC** ($\text{AUC}/\text{MIC}$).
+
+For a drug eliminated by first-order kinetics, $C(t) = C_0 e^{-kt}$ with half-life $t_{1/2} = \ln 2/k$, so the time for the concentration to fall from $C_0$ to the MIC is
+
+$$
+t_{>\text{MIC}} = \frac{\ln(C_0/\text{MIC})}{k} = t_{1/2} \log_2\!\left(\frac{C_0}{\text{MIC}}\right).
+$$
 :::
 
 ::: widget plot
-f: 100*exp(-0.55*x); 100*exp(-0.55*x)+18*(1-exp(-0.9*x)); 100*exp(-0.9*x)+35*(1-exp(-0.5*x))
-x: 0, 10
-y: 0, 120
-labels: \text{years since intervention},\ \%\text{of pre-intervention resistance level};\ \text{withdrawal with tight control (idealised)};\ \text{partial withdrawal, community reservoir};\ \text{resistance locked in by plasmid spread}
-caption: Three fates of a resistance intervention ([[#def-resistance]], [[#def-governance]]): removing the antibiotic pressure can let a costly resistance phenotype fade in a controlled setting, stall when a community or agricultural reservoir keeps reseeding it, or fail entirely once a fit plasmid has spread it beyond recall - the reason stewardship programmes are judged in decades and paired with infection prevention and One Health action ([[microbiology/microbiota]], [[public-health/environmental-occupational]]).
+f: 40*exp(-ln(2)*x/h); m
+x: 0, 8
+y: 0, 42
+sliders: h=1:0.5:4:0.25; m=2:0.25:16:0.25
+labels: \text{concentration (mg/L)}; \text{MIC}
+caption: Concentration of a beta-lactam after a single intravenous dose (peak 40 mg/L), with half-life $h$ hours, over an 8-hour dosing interval, against an organism with MIC $m$ mg/L. The time during which the curve stays above the MIC line is $fT_{>\text{MIC}}$. Doubling the MIC shortens it by one half-life, so organisms with higher MICs need more frequent dosing or a prolonged infusion. Illustrative values; real dosing comes from the formulary and therapeutic drug monitoring.
 :::
 
+::: example How long above the MIC? {#ex-pkpd}
+A beta-lactam given every 8 hours reaches a free peak concentration of 40 mg/L and has a half-life of 1 hour. (a) For how long is the concentration above an MIC of 2 mg/L? (b) What fraction of the dosing interval is this? (c) What happens if the organism's MIC is 8 mg/L?
+::: solution
+(a) $t_{>\text{MIC}} = 1 \times \log_2(40/2) = \log_2 20 = 4.32$ hours.
 
-## The prescriber's three honest questions
+(b) $4.32/8 = 0.54$, so the concentration is above the MIC for 54% of the interval. For penicillins, a target of roughly 50% is usually adequate.
 
-Everything in this chapter compresses into three questions worth teaching as reflexes. First: what is the smallest duration and spectrum that is still safe for this patient, given the culture results and the source? Almost every overuse event in hospitals is a failure to ask it at 72 hours rather than a belief that antibiotics cure more than they do. Second: what is this course costing the patient's future self - the next urinary infection, the next operation, the next antibiotic? That question has no wrong asking, and its answers vary hugely by colonisation status, age, residence and geography. Third: what would make me stop today? A stop-condition written at the start converts antibiotic therapy from a drifting default into a decision that gets renewed deliberately. Stewardship programmes, reserve-agent policies, One Health rules and pipeline subsidies are the same three questions, institutionalised; the institutions fail exactly when nobody in the room remembers that the questions are clinical rather than administrative.
+(c) $t_{>\text{MIC}} = \log_2(40/8) = \log_2 5 = 2.32$ hours, only 29% of the interval. Options are to give the same total dose more often (every 6 or 4 hours), to use a **prolonged or continuous infusion**, or to choose another drug. This reasoning underlies extended-infusion beta-lactams in intensive care and the use of breakpoints that link MICs to achievable doses.
+:::
+:::
 
-One more, for the outbreak desk: speed is a control measure. Every hour between suspicion and action shortens the epidemic curve, which is why the laboratory phone call at the end of this chapter's summary is not an interruption to your day but the day's most valuable data.
+## Using antibiotics well: the laboratory
 
+::: definition Susceptibility testing and the antibiogram {#def-antibiogram}
+**Susceptibility testing** measures how an isolate responds to antibiotics, by determining the **MIC** (the lowest concentration that inhibits visible growth) or by disc diffusion. Results are interpreted using **clinical breakpoints** set by bodies such as EUCAST (used in the UK): **S** (susceptible at standard dosing), **I** ("susceptible, increased exposure": effective if a higher dose or concentration at the site is achieved) and **R** (resistant).
 
-## Why optimism is still the correct stance
+An **antibiogram** is a summary of the percentage of isolates of each organism that are susceptible to each antibiotic in a given hospital or region over a period, usually counting only the first isolate per patient. It describes local resistance and is the basis of **empirical** prescribing guidelines: an antibiotic is generally not used empirically for a serious infection if a substantial share of the likely organisms (often above 10–20%) are resistant to it.
+:::
 
-It would be easy to read this chapter as a defeat in slow motion, and the honest version is neither triumphalist nor apocalyptic. Resistance trends are real and locally grim, but the same twenty years contain the almost complete reversal of invasive disease from Hib vaccination, the transformation of surgical prophylaxis from week-long infusions to single timely doses, the halving of hospital MRSA in several countries through unglamorous bundles, and a treatment revolution for hepatitis C and tuberculosis regimens that would have sounded like science fiction in 1995. None of these victories arrived from a new molecule; they arrived from measurement, feedback, incentives and communication - stewardship's actual toolkit - applied to particular organisms at particular moments. That record justifies treating resistance as a solvable management problem with unsolved science attached, rather than as a flood against which nothing helps.
+Rapid diagnostics are changing this picture: molecular tests can detect resistance genes such as *mecA* or carbapenemases directly from positive blood cultures within hours, allowing earlier targeted treatment. "Diagnostic stewardship" means testing the right patients with the right tests: urine cultures from people with symptoms rather than routine screening, and *C. difficile* tests on liquid stools only.
 
-The corollary for your first year of practice is modest and completely achievable. Draw the cultures before the first dose when it costs minutes. Write the indication and the stop date when you start. Review at seventy-two hours even when the ward is busy, because that single act is the intervention with the best evidence attached. Learn your local antibiogram the way you learned drug doses. Answer the microbiologist's phone, and phone them back. These five habits, held by ordinary clinicians for an entire career, are the substance of what every national action plan is trying to describe in policy language, and they are the reason the next molecule, whenever it arrives, will still work on the day you need it.
+::: example A resistant *E. coli* {#ex-esbl}
+A 72-year-old woman with type 2 diabetes is admitted with pyelonephritis and treated empirically with intravenous ceftriaxone. After 48 hours she is still febrile. Blood and urine cultures grow *E. coli* resistant to ceftriaxone, co-amoxiclav and trimethoprim, susceptible to meropenem, piperacillin–tazobactam (MIC near the breakpoint), gentamicin, temocillin and ciprofloxacin. The laboratory reports it as an **ESBL producer**.
+::: solution
+**Interpretation**: an ESBL hydrolyses third-generation cephalosporins, explaining the failure of ceftriaxone. ESBL genes are often carried with genes for resistance to other classes, as here.
 
+**Choice of treatment**: for a **bloodstream infection** with an ESBL-producing *E. coli*, the MERINO trial (2018) found higher 30-day mortality with piperacillin–tazobactam than with meropenem (12.3% versus 3.7%), so a **carbapenem** is generally preferred for serious infection. Alternatives guided by susceptibility and local advice include temocillin and aminoglycosides. Once she is improving, with negative repeat cultures and able to take tablets, switching to an oral agent to which the organism is susceptible (here ciprofloxacin) completes treatment, typically 7 days in total for an uncomplicated pyelonephritis with bacteraemia that is responding well. Imaging (ultrasound or CT) looks for obstruction or abscess, which would need drainage.
 
-A final frame worth keeping: antibiotics are the only class of therapy whose value to you depends primarily on how other people use them. That strange property is why they attract governance no other drug carries, and why a clinician's relationship with the microbiology laboratory is not a service arrangement but the visible edge of a social contract about the future. Honour it in small ways daily and the abstraction stops mattering; ignore it and no policy document will save the situation. The contract, in one sentence: prescribe as if the molecule were finite, because it is the one thing in your bag that definitely is.
+**Stewardship and infection control**: the patient's record is flagged as an ESBL carrier to guide future empirical treatment; carbapenem use is reviewed daily and stopped as soon as an oral switch is possible, because carbapenem use drives carbapenemase selection.
+:::
+:::
+
+## Antimicrobial stewardship
+
+::: definition Antimicrobial stewardship {#def-stewardship}
+**Antimicrobial stewardship** is an organisational or system-wide approach to promoting and monitoring the judicious use of antimicrobials, to preserve their future effectiveness (NICE NG15). Its aims are to improve outcomes for the patient, reduce adverse effects including *C. difficile* infection, and limit the emergence and spread of resistance.
+
+Typical interventions:
+- **Local guidelines** based on the antibiogram, with restriction of selected broad-spectrum agents.
+- **Prospective audit and feedback** by an antimicrobial stewardship team (infection specialists and pharmacists).
+- **The 48–72 hour review**: in UK "Start smart, then focus", every antibiotic prescription is reviewed with the results and a documented decision is made: **stop**, **switch** from intravenous to oral, **change** (usually narrow), **continue** with a set duration and review date, or move to **outpatient parenteral antimicrobial therapy**.
+- **Shorter courses** where evidence supports them, for example 5 days for most community-acquired pneumonia in NICE guidance, and 7 rather than 14 days for many bloodstream infections (BALANCE trial, 2024).
+- **Penicillin allergy assessment and de-labelling**.
+- **Dose optimisation** and therapeutic drug monitoring.
+- **Primary care measures**: self-care advice, **back-up (delayed) prescriptions** for respiratory infections, and point-of-care tests.
+
+Globally, WHO's **AWaRe** classification groups antibiotics into **Access** (first- and second-choice antibiotics for common infections), **Watch** (higher resistance potential, to be used for specific indications) and **Reserve** (last-resort agents). The UK action plan for 2024–2029 aims to reduce total human antibiotic use by 5% from the 2019 baseline and to have 70% of antibiotic use come from the Access group by 2029.
+:::
+
+::: warning
+**A penicillin allergy label is not a harmless precaution.** Around one in ten hospital patients carries a penicillin allergy label, and when tested more than 90% of them can take penicillin safely. Many labels record side-effects (nausea, diarrhoea), childhood rashes during viral infections, or family history. People with a label receive more broad-spectrum and second-line antibiotics, have more *C. difficile* and MRSA infections and longer hospital stays. Take a careful allergy history (what happened, when, how soon after the drug, what treatment was needed), document it precisely, and refer for de-labelling where appropriate. A history of anaphylaxis, severe skin reactions or other serious reactions is respected and recorded.
+:::
+
+::: example The day-three review {#ex-cdiff-switch}
+A 67-year-old man was admitted three days ago with suspected community-acquired pneumonia (CURB-65 score 2) and started on intravenous piperacillin–tazobactam because of a vague "penicillin allergy?" note, which on questioning was nausea with amoxicillin as a child. He is now afebrile for 36 hours, eating and drinking, with heart rate 82 per minute and oxygen saturation 96% on air. CRP has fallen from 190 to 70 mg/L. Blood cultures are negative; sputum grew normal flora. Chest radiograph showed right lower lobe consolidation.
+::: solution
+**Review using "Start smart, then focus"**: the diagnosis of pneumonia is supported; he is clinically stable and improving, can swallow and absorb, and has no condition requiring intravenous therapy (such as meningitis, endocarditis, undrained abscess or neutropenia). The decision is to **switch** to an oral antibiotic.
+
+**Choice**: piperacillin–tazobactam is broader than needed; the allergy history describes an intolerance, not allergy, so the label should be updated, and he can take an oral penicillin. For moderate-severity community-acquired pneumonia, a narrow oral agent per local guidance (for example amoxicillin, with a macrolide if atypical infection is suspected) completes treatment.
+
+**Duration**: NICE recommends a **5-day course** for community-acquired pneumonia in most adults, provided they are stable by day 3. He has had 3 days, so 2 more days of oral treatment is enough.
+
+**Why it matters**: each extra day of broad-spectrum intravenous therapy adds risk of line infection, *C. difficile* infection and resistance with no benefit. Writing the stop date on the prescription at the time of the switch prevents courses from running on by default.
+:::
+:::
+
+## Outbreaks and their investigation
+
+An **outbreak** is the occurrence of more cases of a disease than expected in a particular place, time or group of people, or two or more linked cases of an unusual infection. Outbreaks range from norovirus on a hospital ward to a food-borne outbreak at a wedding to an international epidemic.
+
+::: definition Outbreak investigation {#def-outbreak}
+**Outbreak investigation** follows a recognised sequence, although in practice several steps run at the same time and **control measures are started as soon as there is a reasonable suspicion of the source**:
+
+1. **Prepare**: assemble the team (outbreak control group) with clear roles.
+2. **Confirm the diagnosis** (clinical and laboratory) and **confirm that an outbreak exists**, excluding artefacts such as changes in testing or reporting, or laboratory contamination.
+3. **Write a case definition**: clinical and laboratory criteria, restricted by **time, place and person**, often graded as confirmed, probable and possible.
+4. **Find cases** systematically.
+5. **Describe the outbreak** by time (an **epidemic curve**), place (maps, ward plans) and person (age, sex, exposures). A **point-source** outbreak gives a sharp single peak within one incubation period; a **continuing common source** gives a plateau; **person-to-person (propagated)** spread gives successive waves separated by about one incubation period.
+6. **Form hypotheses** about the source and route, and **test them** with an analytical study: a **cohort study** comparing **attack rates** in exposed and unexposed people (giving a **relative risk**), or a **case–control study** comparing exposures in cases and controls (giving an **odds ratio**). Microbiological typing, now often whole-genome sequencing, links cases to each other and to the source.
+7. **Control and prevent**: remove the source, interrupt transmission (isolation, cohorting, hygiene, closure), protect people at risk (vaccination, prophylaxis).
+8. **Communicate** with staff, patients and the public, and **evaluate and report**, including lessons for prevention.
+:::
+
+::: theorem The reproduction number and herd immunity {#thm-r0}
+The **basic reproduction number** $R_0$ is the average number of secondary cases caused by one infectious person in a fully susceptible population. When a fraction $s$ of the population is susceptible, the **effective reproduction number** is $R = R_0 s$. An outbreak grows while $R > 1$ and declines when $R < 1$. Transmission therefore cannot be sustained once the immune fraction exceeds the **herd immunity threshold**
+
+$$
+H = 1 - \frac{1}{R_0}.
+$$
+
+For measles, with $R_0$ commonly estimated at 12–18, the threshold is above 90%, which is why very high vaccine coverage is needed; for influenza, with $R_0$ near 1.5, it is about a third.
+:::
+
+::: widget phaseplane
+f: -R*x*y
+g: R*x*y - y
+x: 0, 1
+y: 0, 0.6
+sliders: R=2.5:1.2:6:0.1
+points: 0.99, 0.01
+caption: A simple SIR epidemic model in the phase plane, with time measured in infectious periods: $x$ is the susceptible fraction and $y$ the infectious fraction, $R$ is $R_0$. Starting with 1% infectious, the trajectory rises while $x > 1/R$ and turns down when the susceptible fraction falls below $1/R$, the herd immunity threshold drawn as a nullcline. Increase $R$ to see a taller, faster epidemic that leaves fewer susceptibles behind. A teaching model that ignores births, deaths, age structure and interventions.
+:::
+
+::: example Illness after a wedding {#ex-outbreak}
+Twelve to thirty-six hours after a wedding reception attended by 100 guests, many develop vomiting and diarrhoea. A questionnaire is completed by all guests. Of 60 who ate the chicken dish, 45 became ill; of 40 who did not, 6 became ill. Of 70 who ate the rice salad, 36 became ill; of 30 who did not, 15 became ill. Analyse these data.
+::: solution
+This is a **retrospective cohort study**, because the whole exposed group (the guests) can be surveyed.
+
+**Chicken**: attack rate in those who ate it $= 45/60 = 75\%$; in those who did not $= 6/40 = 15\%$. **Relative risk** $= 0.75/0.15 = 5.0$.
+
+**Rice salad**: attack rate $36/70 \approx 51\%$ versus $15/30 = 50\%$; relative risk $\approx 1.03$, no association.
+
+The **chicken dish** is strongly implicated, with a fivefold risk. The six ill people who said they did not eat it may have misremembered, had a small taste or been secondary cases. The incubation period of 12–36 hours and the symptoms fit, for example, *Clostridium perfringens* or *Salmonella*; stool samples from cases and any leftover food are tested, and the kitchen's practices (cooling and reheating of large batches of meat) are inspected by environmental health. The epidemic curve would be expected to show a **point-source** pattern with a single peak.
+:::
+:::
+
+::: example A pseudo-outbreak {#ex-pseudo}
+Over two months, bronchoalveolar lavage samples from eleven patients in one hospital grow *Pseudomonas aeruginosa*, compared with one or two a month previously. Most of the patients had no signs of pneumonia, and several had been bronchoscoped for suspected cancer. What could explain this, and how would you investigate?
+::: solution
+The pattern (a rise in positive cultures in patients who do not appear infected, all linked by a procedure) suggests a **pseudo-outbreak**: contamination of samples or equipment rather than true infection. Possible sources include a contaminated bronchoscope (damaged channels can hold biofilm that survives decontamination), a contaminated automated endoscope washer or its rinse water, contaminated topical solutions, or laboratory contamination.
+
+**Investigation**: confirm the case definition and review each patient's clinical state; list the bronchoscope serial number, washer and date for each sample; **type the isolates** (whole-genome sequencing) to see whether they are identical; culture the bronchoscopes, washer and water; and review decontamination procedures. **Control**: withdraw the implicated scopes or washer, notify the patients' clinicians (some may have received unnecessary antibiotics), and report the incident. Pseudo-outbreaks matter: they lead to unnecessary treatment, and the same equipment fault could transmit real infection.
+:::
+:::
+
+**Emerging infections and global health security.** The COVID-19 pandemic, Ebola in West Africa (2014–2016), mpox and recurring avian influenza show how quickly a new or re-emerging pathogen can spread. The **International Health Regulations (2005)** require countries to detect, assess and report events that may constitute a **public health emergency of international concern**, which the WHO Director-General can declare. Nationally, doctors in England must notify suspected cases of listed infectious diseases to the health protection team, without waiting for laboratory confirmation, so that public-health action starts early ([[public-health/communicable-disease-control]]).
+
+::: history
+In 1854 John Snow mapped cholera deaths around the Broad Street pump in London, showed that they clustered around it, and persuaded the authorities to remove its handle: a founding example of outbreak investigation. In 1907 the investigation of typhoid in New York households led to Mary Mallon, an asymptomatic carrier working as a cook. As penicillin was being developed, Edward Abraham and Ernst Chain described a bacterial enzyme that destroyed it (1940). In his Nobel lecture of 1945, Alexander Fleming warned that under-dosing would allow resistant organisms to emerge. In 1951 Alexander Langmuir founded the Epidemic Intelligence Service at the US Communicable Disease Center, training "disease detectives" in field epidemiology. In 2015 the World Health Assembly adopted the Global Action Plan on Antimicrobial Resistance, and in 2016 the UK review led by Jim O'Neill brought the economic and human cost of resistance to wide attention.
+:::
+
+::: quiz
+An epidemic curve of a diarrhoeal outbreak in a care home shows a first small peak, then larger peaks roughly every two days for two weeks. Which type of outbreak is most likely?
+- [ ] A point-source outbreak from a single meal
+- [ ] A continuing common source such as a contaminated water supply
+- [x] Person-to-person (propagated) spread, as with norovirus
+- [ ] A pseudo-outbreak due to laboratory error
+::: solution
+Successive peaks separated by roughly one incubation period (one to two days for norovirus) indicate propagated spread from person to person. A single meal would cause one sharp peak; a continuing source would produce a plateau of cases. Control focuses on isolating or cohorting ill residents, excluding ill staff until 48 hours after symptoms stop, hand washing with soap and water, enhanced cleaning, and restricting admissions and transfers.
+:::
+:::
 
 ## Where this leads
 
-Mechanisms and organisms in [[microbiology/antimicrobials]] and [[microbiology/bacteria]]; the healthcare ecology in [[infectious-diseases/healthcare-infections]]; STI resistance in [[infectious-diseases/sexually-transmitted-infections]]; outbreak machinery in [[public-health/communicable-disease-control]]; trial and pipeline economics in [[pharmacology/drug-development-prescribing]].
-
-::: history
-**Resistance history is a race with a predictable leaderboard: Fleming's 1943 penicillin-purification-era warning that sloppy use breeds resistance delivered from a Nobel podium already sounding prophetic; the Staphylococcus-aureus-penicillin-resistance-already-present-in-the-first-trials and the methicillin-answer-of-1959-61 and its own decline within hospital decades - [[microbiology/bacteria]], [[infectious-diseases/healthcare-infections]]; the Silverman-era-tetracycline-broadening and the plasmid-revolution of the 1960s Shigella-surveillance-and-Japanese-epidemiology-that-first-taught-multi-drug-transmissibility - [[microbiology/bacterial-pathogenesis]], [[infectious-diseases/tropical-infections]]-shigellosis-pages; the antibiotic Golden-Age-discovery-engine-that-ran-1940s-70s-and-then-stalled-with-the-Gram-negative-gap and the post-1990s near-extinction of the hospital-adjacent-discovery-lab model and the MACE-companies-exit-annus and the O'Neill-review-and-GRAM-report-era economics with their subscription-model pilots - [[pharmacology/drug-development-prescribing]], [[public-health/global-health]]; the stewardship-science-lineage - the-infectious-disease-consultant-audit-and-feedback-trials-of-the-1990s-and-the-pre-authorization-vs-audit-comparisons and the shortening-duration-trial-wave - the-14-versus-7-days-era for gram-negative bacteraemia and the 5-versus-10-day pneumonias and the short-course intra-abdominal-after-source-control studies and the POET-and-OPIUM-adjacent-oral-switch and osteomyelitis trials - [[microbiology/antimicrobials]], the osteomyelitis pages of [[musculoskeletal/bones-joints]]; and the genomic-public-health-era - real-time-sequence-surveillance-of-gonococcal-and-TB-resistance-patterns and the wastewater-based-resistance-and-antibiotic-monitoring-programmes and the AMR-and-Covid-19-observations-on-secondary-infection-prescribing-surges as the newest demonstration that stewardship is a system property, not a poster - [[infectious-diseases/tuberculosis]], [[infectious-diseases/sexually-transmitted-infections]], [[public-health/environmental-occupational]].**
-:::
-
-::: exercise Read these patterns {level=1}
-Interpret and give the prescribing consequence: (a) E coli resistant to ceftriaxone, susceptible to meropenem and nitrofurantoin, cystitis; (b) S aureus resistant to oxacillin, susceptible to clindamycin with positive D-test, abscess; (c) Klebsiella susceptible to ceftazidime-avibactam only among beta-lactams.
-::: solution
-**Patterns-to-prescriptions ([[#def-antibiogram]], [[microbiology/antimicrobials]]): (a) ESBL-signature - uncomplicated-cystitis-is-nitrofurantoin-territory-with-single-dose-aminoglycoside-or-co-trimoxazole-if-susceptible-as-alternatives-and-the-carbapenem-reserved-for-invasive-disease-or-no-orals-and-source-questions-cleared - [[renal/urinary-tract]], [[infectious-diseases/healthcare-infections]]; (b) MRSA-with-inducible-clindamycin-resistance - the positive D-test removes clindamycin as a confident choice despite the report line and incision-drainage-is-the-primary-therapy-with-doxycycline-or-linezolid-or-bactrim-options-by-context-and-severity and the decolonisation-household-question - [[musculoskeletal/skin]], [[microbiology/laboratory-diagnosis]]; (c) carbapenemase-producing-Klebsiella-hint - match-the-agent-to-the-enzyme-class with pharmacy-microbiology-ownership and culture-negatives-not-treated-on-inference alone and infection-control-escalates-contact-precautions-and-screening-whilst-clinicians-treat-the-patient - [[infectious-diseases/healthcare-infections]], [[microbiology/bacteria]], [[pharmacology/dosing-principles]].**
-:::
-:::
-
-::: exercise Build the AWaRe report {level=2}
-The medical director wants antibiotic stewardship data that boards understand. Design the quarterly report: metrics, denominators, visuals and the pitfalls you will state.
-::: solution
-**Metrics-with-honest-denominators ([[#def-governance]], [[epidemiology-ebm/measuring-disease]]): consumption-layer - DDDs-per-1000-bed-days-versus-DOT-versus-GPAD-comparability-and-the-Access-Watch-Reserve-proportion-as-the-single-most-legible-chart and unit-level-and-specialty-splitting-with-case-mix-caveats and the do-not-manage-by-denominator-change warning - [[public-health/health-systems-economics]]; quality-layer - percentage-receiving-antibiotic-with-documented-indication-and-stop-date and IV-to-oral-switch-rate-and-time-to-oral-and-72-hour-review-coverage and prophylaxis-timing-compliance and blood-culture-before-antibiotics-rate-with-contamination-rate-beside-it - [[microbiology/laboratory-diagnosis]], [[surgery/perioperative-care]]; outcome-layer - C.diff-and-CDI-rates-and-resistant-organism-trends-with-denominator-context-and-antibiograms-and-de-escalation-survival-curves-if-adventurous-and-the-harm-metrics-of-renal-injury-from-dosing and the CDI-testing-rate-as-a-behaviour-mirror - [[gastrointestinal/bowel-disease]], [[renal/acute-kidney-injury]]; and the-pitfalls-page - Goodhart-law-on-every-number-and-attribution-of-resistance-to-hospital-versus-community-and-the-seasonal-virus-confounder-and-what-this-report-cannot-prove-and-the-comparison-with-peer-trusts-published-alongside-the-methodology - [[clinical-skills/patient-safety]], [[medical-ethics-law/professionalism-regulation]], [[public-health/communicable-disease-control]].**
-:::
-:::
-
-::: exercise Counsel before travel {level=2}
-A medical student is spending eight weeks in rural South Asia. Give the resistance-aware pre-travel advice.
-::: solution
-**Resistance-aware-travel-medicine ([[#def-resistance]], [[infectious-diseases/tropical-infections]]): the-acquisition-risk-explained-without-terror - travellers-diarrhoea-and-ESBL-and-AmpC-colonisation-rates-after-long-stays-and-what-carriage-does-and-does-not-mean-and-the-return-urinary-infection-episode-that-needs-a-culture-first-thought-process - [[renal/urinary-tract]], [[microbiology/microbiota]]; the-never-self-medicate-logic - no-leftover-fluoroquinolones-and-no-local-pharmacy-without-a-diagnosis-and-the-informal-market-economy-you-will-see-and-why-it-exists-and-the-do-not-lecture-reflex and standby-drug-decisions-made-with-travel-clinic-protocols - [[public-health/global-health]], [[pharmacology/patient-variation]]; the-up-front-half - routine-and-destination-vaccines-current-and-typhoid-and-hepatitis-A-and-B-and-Japanese-encephalitis-per-itinerary and malaria chemoprophylaxis-choice-and-adherence-as-a-stewardship-act-and-standby-awareness and safe-food-and-water-and-swimming-choices and the health-insurance-and-where-to-go-when-serious - [[public-health/vaccination-programmes]], [[infectious-diseases/tropical-infections]]; and the-returning-traveller-rule-for-their-GP - any-fever-after-tropical-exposure-gets-malaria-tested-same-day-and-a-screening-culture-if-urinary-symptoms-with-a-plain-English-note-about-probable-acquired-resistance-and-the-value-of-telling-the-public-health-lab-network-nothing-embarrassing-about-it - [[emergency-critical-care/acute-assessment]], [[clinical-skills/records-handover]].**
-:::
-:::
+The antimicrobial drugs themselves are covered in [[microbiology/antimicrobials]], and infection prevention and control in [[microbiology/infection-control]] and [[infectious-diseases/healthcare-infections]]. Resistance in gonorrhoea is discussed in [[infectious-diseases/sexually-transmitted-infections]], and drug-resistant TB in [[infectious-diseases/tuberculosis]]. The epidemiological study designs used in outbreaks are in [[epidemiology-ebm/observational-studies]], and the national control of communicable disease in [[public-health/communicable-disease-control]].
 
 ::: summary
-- Resistance is genetics plus selection plus transmission; stewardship attacks selection, prevention attacks transmission, and diagnostics improve the prescribing that drives both.
-- Read antibiograms as inference: ESBL signatures, inducible resistance and reserve-agent matching are pharmacy-and-microbiology conversations, not report lines.
-- Audit-and-feedback at 72 hours, de-escalation on culture, short courses, early oral switch and diagnostic stewardship are the interventions with evidence; posters are not.
-- Do not treat colonisation, catheters or urine dipsticks; do not send the carbapenem where nitrofurantoin would do.
-- Resistance governance is economics: the market cannot price a molecule's future, so access targets, subscription pilots and One Health rules are trying to.
-- Outbreak and pseudo-outbreak both begin with a telephone call from the laboratory; answer early, list exposures, compare genomes, act on transmission, publish the lesson.
+- Resistance arises by mutation and by horizontal gene transfer (especially plasmids), through drug inactivation, target change, reduced entry and efflux. Antibiotic use selects it, and co-selection and compensatory mutations keep it from disappearing.
+- PK/PD targets guide dosing: time above MIC for beta-lactams, peak/MIC for aminoglycosides, AUC/MIC for vancomycin and fluoroquinolones.
+- Susceptibility testing (MIC and breakpoints) guides targeted therapy, and the antibiogram guides empirical choices.
+- Stewardship: local guidelines, review at 48–72 hours (stop, switch, change, continue, OPAT), shorter evidence-based courses, penicillin allergy de-labelling, and the WHO AWaRe classification; the UK aims for 70% Access use by 2029.
+- Outbreak investigation: confirm, define cases, find cases, describe by time, place and person, test hypotheses (attack rates and relative risks; odds ratios), control early, and communicate.
+- An outbreak grows while $R > 1$; the herd immunity threshold is $1 - 1/R_0$.
 :::
 
 ## Exercises
 
-::: exercise Write the 72-hour review {level=1}
-List the questions for the ward round's "antibiotic review" on every surgical patient receiving antibiotics past day 3.
+::: exercise Herd immunity {level=1 check="1-1/4"}
+An infection has $R_0 = 4$. What fraction of the population must be immune to prevent sustained transmission? Give the answer as a decimal.
 ::: solution
-**The-four-questions-plus-one ([[#def-stewardship]], [[surgery/wounds-surgical-infection]]): what-is-it-treating - indication-and-culture-results-and-source-control-status and the do-not-continue-for-a-drain-that-is-doing-its-job rule - [[surgery/perioperative-care]]; does-it-still-need-IV - bioavailability-and-gut-function-and-switch-list-membership and line-removal-as-a-stewardship-win - [[pharmacology/absorption-distribution]], [[infectious-diseases/healthcare-infections]]; is-the-spectrum-narrowest-defensible-option - antibiogram-and-renal-and-hepatic-dosing-and-interaction-sweep and the de-escalation-documented-even-when-unchanged - [[microbiology/antimicrobials]], [[pharmacology/dosing-principles]]; when-does-it-stop - written-stop-date-with-duration-justified-not-inertia and who-decides-fever-resolves-later questions - [[clinical-skills/records-handover]]; and-the-one-for-the-future-patient - what-does-this-course-cost-her-next-admission-and-should-her-record-carry-an-allergy-versus-resistance-versus-ESBL-distinction-because-those-three-words-mean-different-things and are written correctly - [[clinical-skills/patient-safety]], [[medical-ethics-law/professionalism-regulation]].**
+$H = 1 - 1/R_0 = 1 - 1/4 = 0.75$, so 75% of the population must be immune. If a vaccine is less than fully effective, coverage must be higher still: with 90% vaccine effectiveness, coverage of $0.75/0.9 \approx 83\%$ would be needed.
 :::
 :::
 
-::: exercise Choose the empiric regimen {level=1}
-Community-acquired pneumonia needing ICU: what does the first-hour regimen cover and what must you order alongside it?
+::: exercise A relative risk {level=1 check="8"}
+In an outbreak at a school lunch, 24 of 30 pupils who ate the egg sandwiches became ill, compared with 5 of 50 who did not. What is the relative risk of illness associated with the egg sandwiches?
 ::: solution
-**Coverage-plus-cultures-plus-context ([[#def-stewardship]], [[respiratory/respiratory-infections]]): the-regimen - beta-lactam-plus-macrolide-versus-respiratory-fluoroquinolone-rationale-with-QTc-and-tendon-and-C.diff-context and MRSA-and-Pseudomonas-risk-extensions-only-with-validated-risk-factors-with-stop-rules-at-48-hours and local-guidance-ownership - [[microbiology/antimicrobials]], [[pharmacology/adverse-reactions]]; the-microbiology-orders-with-yield-intent - blood-cultures-x2-and-pneumococcal-antigen-and-urinary-antigen-and-respiratory-viral-PCR-and-legionella-urinary-antigen-with-serotype-honesty-and-sputum-quality-and-BAL-if-intubated-within-reach and the do-not-culture-everything rule's exception for severe disease - [[microbiology/laboratory-diagnosis]], [[clinical-skills/laboratory-tests]]; the-stopping-plan - de-escalate-on-PCR-and-antigen-results-and-shorten-on-clinical-stability-with-5-7-day-standards-and-steroids-for-severe-CAP-adjacency-where-guidelines-support and the procalcitonin's-limited-authority here - severity scores in [[respiratory/respiratory-failure]]; and the-audit-trail - why-this-empiric-choice-recorded-in-a-grammar-the-night-team-and-the-stewardship-pharmacist-can-read - [[clinical-skills/records-handover]], [[public-health/health-systems-economics]].**
+Attack rates: $24/30 = 0.8$ and $5/50 = 0.1$. Relative risk $= 0.8/0.1 = 8$.
 :::
 :::
 
-::: exercise Handle a reserve-agent request {level=2}
-At 2 a.m. a surgical registrar asks for IV colistin for a septic patient with carbapenem-resistant organism history. You are the on-call microbiology SpR. Negotiate the decision.
+::: exercise Finding a half-life {level=1 check="2"}
+After an intravenous dose, an antibiotic's concentration is 20 mg/L at 1 hour and 5 mg/L at 5 hours. Assuming first-order elimination, what is its half-life in hours?
 ::: solution
-**Pre-authorization-as-a-conversation-not-a-wall ([[#def-antibiogram]], [[#def-stewardship]]): the-clinical-frame - severity-and-source-and-organism-history-and-previous-susceptibilities-and-current-cultures-drawn-and-recent-antibiotics-and-transfer-or-travel-epidemiology and whether-colonisation-history-is-driving-an-empiric-panic - [[microbiology/laboratory-diagnosis]], [[emergency-critical-care/shock-fluids]]; the-co-design - a-defensible-empiric-bridge-with-the-best-available-susceptibility-matched-agent-plus-source-control-urgency-and-add-or-switch-triggers-at-defined-hours-and-renal-function-trajectory-against-colistin-and-nephrotoxicity-and-neurological-and-safety-monitoring-and-dosing-mechanics-per-salt-form and the rapid-transport-for-DST-or-genotypic-resistance-testing - [[microbiology/antimicrobials]], [[renal/acute-kidney-injury]], [[pharmacology/dosing-principles]]; the-system-check - previous-identical-requests-that-might-indicate-a-cluster-and-alerting-the-IPCN-and-adding-the-patient-to-contact-precautions-and-screening-per-policy and the ICU-versus-ward-capacity-implications - [[infectious-diseases/healthcare-infections]], [[microbiology/infection-control]]; and the-morning-follow-through - documented-agreement-with-stop-and-review-times-and-consultant-microbiology-and-surgery-synchronisation-and-the-2-a-m-decision-written-so-the-review-is-informed-not-litigious - [[clinical-skills/records-handover]], [[clinical-skills/patient-safety]].**
+The concentration falls from 20 to 5 mg/L, a factor of 4 or two half-lives, in 4 hours. So $t_{1/2} = 2$ hours. Equivalently, $k = \ln 4/4 = 0.347$ per hour and $t_{1/2} = \ln 2/k = 2$ hours.
 :::
 :::
 
-::: exercise Fix the cough prescriptions {level=2}
-Your practice prescribes antibiotics for 60% of acute cough consultations. Design a multi-component intervention and evaluate it.
+::: exercise Time above MIC {level=2 check="1.5*log2(32)"}
+A beta-lactam reaches a free peak of 32 mg/L, has a half-life of 1.5 hours, and is given every 8 hours. For how many hours does its concentration exceed an MIC of 1 mg/L? Is this dosing adequate for a target of 50% $fT_{>\text{MIC}}$?
 ::: solution
-**Consultation-plus-community-plus-code ([[#def-stewardship]], [[public-health/prevention-promotion]]): the-evidence-menu - delayed-prescribing-and-safety-netting-scripts-and-communication-skills-training-trials-and-the-NNT-for-acute-bronchitis-symptom-duration-expectations-setting and the symptom-relief-arms-honey-and-lozenges-and-paracetamol-honest-limitations and the Fever-NICE-style-severity-flags-to-exclude-pneumonia-and-sepsis - [[respiratory/respiratory-infections]], [[emergency-critical-care/acute-assessment]]; the-clinician-layer - peer-comparison-letters-of-your-prescribing-versus-lowest-decile-neighbours-as-behavioural-science-with-real-trial-evidence and audit-with-feedback-and-the-consultation-length-and-re-attendance-incentive-conflict-stated-openly - [[public-health/health-systems-economics]], [[epidemiology-ebm/randomised-trials]]; the-community-layer - pharmacy-counter-and-school-and-care-home-and-social-media-messaging-in-community-voices-and-the-patient-information-that-mentions-viral-shedding-days-not-bacteria and the-do-not-ask-for-antibiotics moralising-avoidance-because-asking-is-rational-in-a-3-minute-slot - [[public-health/screening]], [[clinical-skills/communication]]; and the-evaluation - GP-level-DDDs-per-1000-registered-and-condition-specific-prescribing-versus-sentinel-circulating-virus-data and re-attendance-and-antibiotic-related-harm-signals-and-eq-5d-adjacent-PROM-sampling and the unintended consequences like amoxicillin-for-sore-throat-substitution and equity of access to advice when the antibiotic is gone - [[epidemiology-ebm/measuring-disease]], [[public-health/determinants-inequalities]], [[pharmacology/adverse-reactions]].**
+$t_{>\text{MIC}} = 1.5 \times \log_2(32/1) = 1.5 \times 5 = 7.5$ hours, which is $7.5/8 = 94\%$ of the interval, comfortably above the 50% target. If the MIC were 8 mg/L, the time would be $1.5 \times \log_2 4 = 3$ hours (37.5%), and more frequent dosing or a prolonged infusion would be needed.
 :::
 :::
 
-::: exercise Argue the pipeline policy {level=3}
-A government asks you to justify a national subscription model for new antibiotics. Present the economics, the evidence, the risks and the governance.
+::: exercise A penicillin allergy label {level=2}
+A 45-year-old woman with cellulitis has "penicillin allergy" in her records. List the questions you would ask, and explain how the answers change management.
 ::: solution
-**Market-failure-argument-built-for-scrutiny ([[#def-governance]], [[pharmacology/drug-development-prescribing]], [[public-health/global-health]]): the-failure - resistance-makes-new-antibiotics-perishable-and-success-destroys-demand-so-no-price-solves-it and the-decision-under-infection-economics-with-expected-value-of-option-avoided-deaths-costed-with-transparency and the burden-of-AFR-estimates-with-methodological-caveats - [[epidemiology-ebm/statistics-for-clinicians]]; the-design-options - push-R-D-grants-and-tax-credits-versus-pull-market-exclusivities-and-prize-funds-versus-subscription-delinked-volume models with the UK-pilot-and-Australian-experience-read-honestly and the access-conditions-versus-innovation-reward-tension and the linkage to diagnostic-and-stewardship-strengthening-so-the-new-drug-is-not-the-plan - [[public-health/screening]], [[microbiology/laboratory-diagnosis]]; the-risks - capturing-rent-for-marginal-molecules-and-the-me-too-innovation-question and the reserve-agent-with-no-competition-and-the-safety-data-thinness-of-shortened-trial-pathways and the trade-versus-domestic-capacity question and stock-out history of older agents as a caution that markets fail at cheap molecules too - [[pharmacology/drug-development-prescribing]], [[pharmacology/patient-variation]]; and the-governance - transparency-of-secret-pricing-with-accountability-and-public-sector-purchasing-competence-and-international-coordination-versus-free-riding and the review-and-exit-clauses and the parallel promise to keep old antibiotics out of agricultural overuse so the new ones survive - [[medical-ethics-law/justice-resources]], [[public-health/environmental-occupational]], [[public-health/health-systems-economics]].**
+Ask: **which drug**, and **what happened** (rash, its appearance and extent; swelling of lips, tongue or throat; breathing difficulty; collapse; blistering or peeling skin; mouth ulcers; organ involvement); **how soon** after the first dose; **how long ago**; whether she needed **treatment** (adrenaline, hospital admission); whether she has taken any penicillin or cephalosporin **since** without problems; and whether the label came from a **family history** or a side-effect such as nausea or diarrhoea.
+
+**Interpretation**: gastrointestinal upset or a family history is **not allergy**, so the label should be removed and a penicillin (such as flucloxacillin) used. A remote, mild, non-urticarial rash is low risk and may be suitable for direct oral challenge or referral for de-labelling under local protocols. Features of an immediate reaction (urticaria, angioedema, bronchospasm, anaphylaxis) mean avoiding penicillins and choosing an alternative, with referral to allergy services. Severe delayed reactions such as Stevens–Johnson syndrome or DRESS mean permanent avoidance of the culprit and related drugs. The result is documented precisely.
 :::
 :::
 
-## Taking it further
+::: exercise Choosing from an antibiogram {level=2}
+A hospital's antibiogram for *E. coli* from blood cultures shows susceptibility: amoxicillin 42%, co-amoxiclav 68%, trimethoprim 64%, ciprofloxacin 84%, ceftriaxone 88%, piperacillin–tazobactam 91%, gentamicin 93%, meropenem 99.9%, temocillin 96%. The empirical guideline for suspected urinary sepsis is being revised. Which agents are reasonable empirical choices, and which are not? What other information would you want?
+::: solution
+Agents with susceptibility well below 80–90% (amoxicillin, co-amoxiclav, trimethoprim, and arguably ciprofloxacin) are **not suitable alone** for empirical treatment of a serious infection, because too many patients would receive an ineffective drug. Reasonable options include **gentamicin** (93%, often as a single dose or short course combined with another agent while awaiting cultures), **temocillin** or **piperacillin–tazobactam**, chosen with attention to kidney function and allergy. **Meropenem**, despite near-total susceptibility, is best reserved for patients with known ESBL carriage or severe sepsis with risk factors, to limit carbapenem pressure. Other information: susceptibility of *Klebsiella* and other urinary pathogens; how resistance differs between community and hospital-onset infections; the patient's previous cultures and recent antibiotics; and local rates of *C. difficile* infection, which may argue against broad-spectrum beta-lactams.
+:::
+:::
 
-The infectious-diseases mindset in one paragraph: think in source, route, host and time. Identify the source before naming the syndrome; ask what the exposure history permits and what the local resistance map makes likely; adjust everything for the host standing in front of you; and treat the clock as a drug - the sepsis, endocarditis and meningitis outcomes are functions of hours. Then audit yourself against the two failure modes of the specialty: anchoring on the first plausible organism while the atypical presentation evolves, and de-escalating never - the narrow-spectrum switch that should happen on day three and does not. Both failures are curable by the habit of re-asking, at every review, what the story said yesterday that it no longer says today.
+::: exercise Norovirus on the ward {level=3}
+Over three days, eight patients and four staff on a 28-bed elderly care ward develop sudden vomiting and diarrhoea. Write a case definition and list the control measures, explaining how you would decide when the outbreak is over.
+::: hint
+Norovirus has an incubation period of 12–48 hours and is shed for some time after symptoms stop.
+:::
+::: solution
+**Case definition** (example): any patient or staff member on Ward X, from [date of first case] onwards, with two or more episodes of vomiting and/or diarrhoea (type 5–7 stool) within 24 hours, not explained by another cause. A **confirmed** case has norovirus detected in stool; a **probable** case meets the clinical definition with an epidemiological link.
+
+**Control measures**: confirm with stool samples from the first cases; **isolate** symptomatic patients in single rooms or **cohort** them in one bay; close affected bays (or the ward) to admissions and transfers, with a risk assessment that balances patient flow; **exclude ill staff** until 48 hours after their symptoms stop; **hand hygiene with soap and water** (alcohol rub is less effective against norovirus); gloves and aprons; enhanced cleaning with chlorine-based agents, especially toilets and frequently touched surfaces; limit visiting and advise visitors; communicate with infection prevention and control, bed managers and the health protection team; and keep a daily line list and epidemic curve.
+
+**Declaring the outbreak over**: according to local policy, typically when **no new cases have occurred and the last case has been free of symptoms for at least 48 hours** (some policies use 72 hours), followed by a **terminal clean** of affected areas before reopening.
+:::
+:::
+
+::: exercise A case–control study {level=3 check="9"}
+Forty people with *Salmonella* infection (cases) and eighty people without it (controls) are asked about eating at a particular restaurant. Thirty cases and twenty controls report eating there. Calculate the odds ratio, explain why a case–control rather than cohort design was used, and interpret the result.
+::: solution
+The 2×2 table: cases 30 exposed, 10 unexposed; controls 20 exposed, 60 unexposed.
+
+$$
+\text{OR} = \frac{30 \times 60}{10 \times 20} = \frac{1800}{200} = 9
+$$
+
+**Why case–control**: the people who ate at the restaurant cannot all be identified (it serves the general public), so attack rates cannot be calculated; but cases can be found through laboratory reports and controls recruited from the same population. The **odds ratio** of 9 means the odds of having eaten at the restaurant were nine times higher in cases than controls, strong evidence of an association. It is not proof: chance (calculate a confidence interval), bias (cases may recall exposures differently from controls, and controls must come from the same population as cases) and confounding must be considered. Microbiological evidence, such as whole-genome sequencing linking case isolates to food or kitchen samples, would strengthen the conclusion and justify control measures at the restaurant.
+:::
+:::

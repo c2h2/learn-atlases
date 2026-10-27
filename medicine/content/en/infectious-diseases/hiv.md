@@ -1,157 +1,288 @@
-HIV is simultaneously a solved disease and an unsolved one, depending entirely on when and how it is found: **a person diagnosed early, treated and retained in care has a near-normal life expectancy and cannot sexually transmit the virus, while thousands still present late, with opportunistic infection, because of stigma, testing gaps and lost follow-up.** The medicine below is easy to memorise; the competencies that matter are testing, staging, starting therapy the same week, preventing and recognising opportunistic disease, and treating the whole lifespan of a person with a chronic viral illness.
+In 1981 a new illness began killing previously healthy young adults. For fifteen years an HIV diagnosis usually meant death within about a decade. Today a person diagnosed early and treated well can expect a near-normal life span, and a person whose virus is suppressed by treatment does not pass HIV on to sexual partners. Few changes in medicine have been so large.
 
-This chapter covers virology and immunopathogenesis, testing and diagnosis, antiretroviral therapy, opportunistic infections, and the non-AIDS comorbidities of ageing with HIV.
+The epidemic is not over. UNAIDS estimated that in 2024 about 40.8 million people were living with HIV, 1.3 million acquired it, and 630,000 died of HIV-related causes, most of them in sub-Saharan Africa and most because they were diagnosed late or could not stay on treatment. In countries like the UK the main problems are late diagnosis, stigma, and the long-term health of an ageing population living with HIV.
 
-## Virus and immune destruction
+This chapter covers the virus and its life cycle, transmission and natural history, diagnosis, antiretroviral therapy, the opportunistic infections of advanced disease, and prevention. UK practice follows the British HIV Association (BHIVA) and British Association for Sexual Health and HIV (BASHH); global practice follows WHO. Drug choices are given as principles: individual regimens come from specialist HIV services and current guidelines.
 
-::: definition HIV virology and immunopathogenesis {#def-virology}
-**The virus (an enveloped retrovirus with gp120-and-gp41 surface and core glycoproteins, a plus-strand RNA diploid genome and reverse transcriptase, integrase and protease enzymes - the same three enzyme targets that constitute most of the drug classes - with HIV-2's-intrinsic-nevirapine-resistance-and-dolutegravir-lower-sensitivity-note and the co-receptor-switching-from-CXCR4-to-CCR5-tropism-makeup-and-the-escape-mutations-that-defeat-therapy-when-monotherapy-occurs - [[microbiology/viruses]]-retrovirus-family-logic, [[cell-biochemistry/gene-expression]]-reverse-transcription-steps); the target cell and the reservoir (CD4-T-cells-as-thief-in-the-house - gp120-binding-CD4-and-then-co-receptor-engagement-and-membrane-fusion-and-integration-into-host-genome-as-proviral-latency and the anatomic-reservoirs-gut-lymph-tissue-and-macrophages-and-microglia-and-resting-memory-CD4-cells-explaining-why-therapy-is-lifelong-and-cure-remains-a-research-horizon with the CNS-penetration-and-CNS-escape-questions - [[immunology/adaptive-responses]]-T-cell-homes, [[nervous-system/neuroinflammation]]-microglia-row); the immunological arc (acute-viraemia-and-monolike-illness-and-partial-immune-control-into-a-clinical-latency-with-CD4-decline-of-hundreds-per-year-by-phenotype and the set-point-and-viral-load-exception-of-rare-elite-controllers and the gut-mucosal-CD4-depletion-happening-in-weeks-driving-systemic-immune-activation and the the functional immunity collapse producing exactly the opportunistic organisms and tumours listed in [[#def-opportunistic]]); and modes of transmission and prevention (sexual-blood-and-perinatal-routes-with-viral-load-as-the-master-variable - the-treatment-as-prevention-and-U=U-evidence-base and the condoms-and-PrEP-and-PEP-and-needle-syringe-and-tested-blood-supply-and-vertical-transmission-prophylaxis-stack and the immunology of why vaccines remain unsolved despite decades - envelope-glycan-shielding-and-germline-targeting-attempts - [[public-health/vaccination-programmes]], [[obstetrics-gynaecology/pregnancy-complications]]-vertical-transmission, [[public-health/health-systems-economics]]-blood-supply).**
+## The virus and its life cycle
+
+::: definition HIV and its replication cycle {#def-virology}
+**Human immunodeficiency virus (HIV)** is an enveloped RNA virus of the lentivirus genus of retroviruses. **HIV-1** causes almost all infections worldwide; **HIV-2**, found mainly in West Africa, is less transmissible, progresses more slowly and is naturally resistant to some drugs. Each virion carries two copies of a single-stranded RNA genome of about 9,700 bases, together with three viral enzymes: **reverse transcriptase**, **integrase** and **protease**.
+
+The replication cycle has seven steps, and each is a drug target:
+
+1. **Attachment**: the envelope glycoprotein gp120 binds the **CD4** molecule on helper T cells, macrophages and dendritic cells.
+2. **Co-receptor binding**: gp120 then binds a chemokine co-receptor, **CCR5** (most transmitted viruses) or **CXCR4** (often later in infection).
+3. **Fusion**: gp41 drives fusion of the viral and cell membranes, and the capsid enters the cytoplasm.
+4. **Reverse transcription**: reverse transcriptase copies the RNA genome into double-stranded DNA. It has no proofreading function and makes frequent errors.
+5. **Integration**: integrase inserts the viral DNA into the host chromosome as a **provirus**, which persists for the life of the cell.
+6. **Transcription and translation**: the host machinery makes viral RNA and long polyproteins.
+7. **Assembly, budding and maturation**: new virions bud from the membrane, and protease cuts the polyproteins into working parts; without this the virions are not infectious.
 :::
 
-## Testing, staging, starting
+::: proof
+**Why the CD4 count falls, and why treatment is lifelong.** In the first weeks of infection the virus replicates explosively, especially in the gut-associated lymphoid tissue, where most of the body's memory CD4 T cells live. Many are destroyed within weeks. CD4 cells are then lost steadily through direct killing by the virus, inflammatory death of abortively infected cells, killing by cytotoxic T cells, and chronic immune activation that drives cells to exhaustion. The bone marrow and thymus cannot keep pace, and the blood CD4 count falls by an average of roughly 50–100 cells/µL per year without treatment, with wide variation between people.
 
-::: definition Diagnosis and initial management {#def-diagnosis}
-**Testing strategy (fourth-generation-combo-assays-detecting-antibody-plus-p24-antigen-with-the-window-period-arithmetic - the-seroconversion-illness-often-diagnosed-retrospectively - and HIV-RNA-or-NAAT-for-the-acute-suspicions-and-confirmed-positive-always-with-the-supplemental-differentiation-assay-and-the-do-not-report-a-single-reactive-screen - [[microbiology/laboratory-diagnosis]], [[microbiology/viruses]]; the offering-duty - opt-out-and-opt-in-programmes-in offer-in-ED-and-antenatal-and-medication-clinics-and-STS-clinics-and-any-risk-presentation-and-the-blindness-to-older-heterosexual-and-trans-and-migrant-populations - [[public-health/screening]], [[obstetrics-gynaecology/pregnancy-antenatal]], [[infectious-diseases/sexually-transmitted-infections]], [[public-health/determinants-inequalities]]). Baseline and staging (confirmed-positive-then-CD4-and-viral-load-as-the-staging-pair and resistance-genotyping-before-therapy - transmitted drug-resistance mutations - and HLA-B*5701-before-abacavir and the co-infection-screen - hepatitis-B-and-C-and-TB-and-STI-and-toxoplasma-serology-and-varicella-immunity - and the baseline-labs-for-organ-function-and-co-morbidity - [[clinical-skills/laboratory-tests]], [[pharmacology/patient-variation]]); staging-as-prophylaxis-thresholds (CD4-counts-that-trigger-PJP-and-toxoplasma-prophylaxis-and-the-ART-starts-immediately-and-fixes-the-underlying-problem-philosophy with-when-to-add-co-trimoxazole-while-waiting for immune recovery - [[infectious-diseases/immunocompromised-host]], [[microbiology/antimicrobials]]); and antiretroviral therapy (the modern default - two-nucleoside-or-nucleotide-backbone-plus-an-integrase-inhibitor-or-a-boosted-protease-or-an-NNRTI-with-dolutegravir-and-bictegravir-era-favourability and the single-tablet-daily-architecture designed for adherence - the pharmacology classes with their toxicities - tenofovir-renal-and-bone-and-the-alafenamide-improvement-and-lamivudine-Abacavir-hypersensitivity-and-HLA-linkage and integrase weight-gain-and-insomnia-and-divalent-cation-chelation interactions and the NNRTI-rash-and-neuropsychiatric-and-CYP-induction-interactions - [[pharmacology/drug-receptor]]-CYP-logic, [[pharmacology/adverse-reactions]], [[endocrine/bone-calcium]]-bone-rows); the start-with-everything-same-week-approach (rapid-start-before-results-with-a-bictegravir-or-dolutegravir-based-regimen-usually and the adherence-conversation-about-food-and-privacy-and-pill-remembering-and-follow-up-intervals and the domestic-violence-safety-planning that the diagnosis can detonate - [[clinical-skills/communication]], [[obstetrics-gynaecology/contraception-fertility]] - the safer-conception-adjacency for serodiscordant couples lives in that chapter, [[public-health/communicable-disease-control]] - partner notification in [[infectious-diseases/sexually-transmitted-infections]]).**
+A small number of infected cells are **resting memory CD4 T cells**. In these the provirus is integrated but silent, so the cell makes no virus and is invisible to both the immune system and drugs, which act only on replicating virus. This **latent reservoir** decays extremely slowly, with a half-life of years. If treatment stops, virus re-emerges from it, usually within weeks. That is why antiretroviral therapy controls HIV but does not cure it.
 :::
 
-::: definition Opportunistic disease in the treated era {#def-opportunistic}
-**The list by CD4 descent (Pneumocystis-jirovecii-pneumonia-now-still-the-most-common-AIDS-defining-presentation-in-late-presenters - the subacute-dry-cough-desaturation-LDH-raise-hypoxia-out-of-proportion-to-auscultation-and-CT-ground-glass syndrome and the high-dose-treatment-with-adjuvant-steroid-for-hypoxia and the diagnostic-PCR-versus-silver-stain-and-induced-sputum-versus-BAL-realism - [[respiratory/respiratory-infections]]-PJP-adjacent, [[microbiology/fungi-parasites]]-PJP-classification, [[renal/acute-kidney-injury]] - the co-trimox renal-and-potassium-and-hyponatraemia monitoring - [[renal/potassium-calcium-phosphate]], [[microbiology/antimicrobials]]; CNS - toxoplasma-encephalitis-ring-enhancing-lesions-mass-effect-and-serology-guided-presumptive-treatment-versus-biopsy and the amphotericin-flucytosine-consolidation-maintenance-marathon-with-CSF-pressure-management-and-the-do-not-rush-ART-in-crypto-IRM-timing-rule and PML-JC-virus-and-CNS-lymphoma-versus-infection-imaging-dilemmas - [[nervous-system/neuroinflammation]], [[nervous-system/motor-systems]], [[pathology/cancer-diagnosis]] - CNS-lymphoma in [[blood/leukaemia]]; mycobacteria - rifamycin-integrase-inhibitor-dose-adjustment-dance and MAC-at-the-bottom-of-the-ladder-now-rarer-with-early-ART - [[infectious-diseases/tuberculosis]], [[microbiology/bacteria]]; GI and ocular - CMV-colitis-and-oesophagitis-and-retinitis-the-blurred-floaters-ophthalmic-emergency-and-CMV-encephalitis-radicular-syndrome - [[gastrointestinal/oesophagus-stomach]]-oesophageal-ulcer-differential, [[nervous-system/sensory-systems]]-retinitis, [[microbiology/viruses]]; and the tumour triad - Kaposi-sarcoma-HHV8-with-skin-and-oral-and-visceral-and-lymphatic-involvement and non-Hodgkin-lymphoma-systemic-and-CNS and cervical-cancer-dysplasia-screening-intensification with the anal-cancer-screening-argument in MSM and transgender women - [[musculoskeletal/skin-cancer]]-Kaposi-row, [[blood/lymphoma-myeloma]], [[obstetrics-gynaecology/gynaecological-cancer]], [[public-health/screening]]); the immune reconstitution inflammatory syndrome (the-paradoxical-worsening-of-known-or-unmasking-of-occult-infection-in-the-first-weeks-of-ART-with-early-fever-and-lymphadenitis-and-meningitis-worsening-and-the-do-not-stop-ART-usually-and-treat-the-organism-and-steroids-for-selected-IRM-syndromes approach - the diagnosis of exclusion and the clinical vigilance it needs and the cryptococcal-and-TB-neighbourhood where it is most dangerous - [[infectious-diseases/immunocompromised-host]]); and prophylaxis and pre-emptive policy (co-trimoxazole-for-PJP-and-toxoplasma-cover-with-sulfa-allergy-desensitisation-or-atovaquone-or-dapsone-or-aerosolised-pentamidine-fallbacks and the cryptococcal-antigen-screening-at-very-low-CD4-strategy and the vaccine-priority-list - mpox in relevant risk groups - and the live-vaccine-CD4-threshold-rules - [[public-health/vaccination-programmes]], [[immunology/immunodeficiency]]).**
+## Transmission and natural history
+
+HIV is transmitted by **sexual contact**, by **blood** (shared injecting equipment, transfusion of unscreened blood, needlestick injury) and **from parent to child** during pregnancy, birth or breastfeeding. It is not transmitted by kissing, sharing utensils, insect bites or ordinary social contact.
+
+The risk from a single exposure to an untreated source is low but not trivial. United States CDC estimates are about 1.4% for receptive anal sex, about 0.6% for sharing a needle when injecting drugs, about 0.2–0.3% for a needlestick injury, and about 0.1% for receptive vaginal sex. Without intervention, 15–45% of babies born to mothers with HIV acquire it. Other STIs, a high viral load in the source and acute infection all raise the risk. A source on treatment with a suppressed viral load removes sexual transmission risk entirely.
+
+Untreated infection passes through three phases:
+
+- **Acute (primary) HIV infection**, 2–4 weeks after exposure: many people have a glandular-fever-like illness with fever, sore throat, rash, lymphadenopathy, mouth ulcers and sometimes aseptic meningitis. The viral load is extremely high, so this is the most infectious phase, and antibodies may not yet be detectable.
+- **Chronic asymptomatic infection**, a median of about ten years: the person feels well while the CD4 count declines. Shingles, seborrhoeic dermatitis, persistent lymphadenopathy, thrombocytopenia and recurrent bacterial pneumonia may appear.
+- **Advanced disease and AIDS**: opportunistic infections and cancers appear as the CD4 count falls below about 200 cells/µL. WHO defines **advanced HIV disease** in adults as a CD4 count below 200 cells/µL or a WHO clinical stage 3 or 4 event; all children under five with HIV are considered to have advanced disease.
+
+::: widget plot
+f: log10(1e5*(0.97*exp(-k*x) + 0.03*exp(-0.05*x)))
+x: 0, 120
+y: 0, 5.5
+sliders: k=0.5:0.2:1:0.05
+hlines: 1.7
+labels: \log_{10}\text{HIV RNA (copies/mL)}
+caption: A simplified two-phase model of viral load after starting effective ART from 100,000 copies/mL. Virus made by short-lived productively infected cells falls fast (rate $k$ per day, half-life of one to two days), and a slower second phase follows from longer-lived infected cells. The horizontal line is 50 copies/mL, roughly log₁₀ 1.7, the usual threshold for "undetectable"; most people cross it within three to six months. Latently infected resting cells, which keep the infection alive for life, are not shown. A teaching model, not a clinical predictor.
 :::
 
-::: example The pneumonia with the normal stethoscope {#ex-pjp}
-A 40-year-old undiagnosed-until-today HIV-positive man has 3 weeks of dry cough, exertional desaturation from 98 to 89 percent, fever, weight loss; exam is almost silent, LDH elevated, oxygen gradient wide, CT shows diffuse ground-glass opacities; CD4 is 60, viral load 900 000.
+## Diagnosis
+
+::: definition HIV testing {#def-diagnosis}
+The standard laboratory screening test is a **fourth-generation assay**, which detects both HIV-1/2 antibodies and HIV-1 **p24 antigen**. Because p24 appears before antibodies, most infections are detectable about four weeks after exposure, and UK guidance (BHIVA/BASHH/BIA, 2020) states that a negative fourth-generation test **45 days** after the last possible exposure excludes infection. Point-of-care and self-tests that detect antibody only have a longer window period of up to **90 days**.
+
+A reactive screening test is always **confirmed** on a separate sample with a different assay before diagnosis is given. After diagnosis, the baseline assessment includes the **CD4 count** (immune status), the **HIV RNA viral load** (replication), a **genotypic resistance test**, **HLA-B\*57:01** (before abacavir), hepatitis B and C serology, STI screening and a check for opportunistic infections when the CD4 count is low.
+:::
+
+Testing is the gateway to everything else, and the main obstacle to good outcomes is late diagnosis. In the UK a person is "late" if their CD4 count at diagnosis is below 350 cells/µL. Strategies to reduce this include **opt-out testing** (testing is routine unless the person declines), which NHS England introduced in emergency departments in areas of very high prevalence from 2022, and testing anyone with an **indicator condition**: an illness that is more common in people with HIV. Examples are tuberculosis, any STI, hepatitis B or C, lymphoma, cervical or anal cancer, shingles in a younger adult, unexplained weight loss or lymphadenopathy, a glandular-fever-like illness, community-acquired pneumonia, oral candidiasis and unexplained low platelets.
+
+::: warning
+**Don't call it glandular fever without testing for HIV.** Acute HIV infection looks like infectious mononucleosis: fever, sore throat, lymph nodes and a rash. If the Epstein–Barr virus test is negative, or the person has had a recent possible exposure, test for HIV with a fourth-generation assay (and repeat it if the first is within the window period). Diagnosing HIV at this stage allows treatment to start when the reservoir is smallest, and prevents transmission during the most infectious weeks.
+:::
+
+## Antiretroviral therapy
+
+::: theorem Principles of antiretroviral therapy {#thm-art}
+1. **Treat everyone.** Antiretroviral therapy (ART) is recommended for every person with HIV, whatever their CD4 count, and started as soon as they are ready.
+2. **Combine drugs.** A regimen contains at least two, and usually three, fully active drugs, normally from at least two classes.
+3. **Aim for suppression.** The goal is a viral load below 50 copies/mL, usually reached within 3–6 months, and kept there for life.
+4. **Undetectable = untransmittable (U=U).** A person with a sustained viral load below 200 copies/mL does not transmit HIV sexually.
+:::
+
+::: proof
+**Why combination therapy prevents resistance.** The numbers explain it. Reverse transcriptase makes roughly $3 \times 10^{-5}$ errors per base copied. With a genome of about $9.7 \times 10^{3}$ bases, the expected number of new mutations per genome per cycle is
+
+$$
+3 \times 10^{-5} \times 9.7 \times 10^{3} \approx 0.29,
+$$
+
+so roughly one in four new genomes carries at least one mutation. An untreated person produces in the order of $10^{10}$ virions per day. Every possible single-base change is therefore made many times every day, and a virus resistant to any single drug that needs only one mutation already exists before treatment starts. Monotherapy selects it within weeks, as zidovudine monotherapy showed in the late 1980s.
+
+A virus that must carry two or three specific mutations at once, each with a probability of order $10^{-5}$ per site, arises with a probability near $10^{-10}$ to $10^{-15}$ per genome. When three active drugs suppress replication almost completely, very few new genomes are made at all, and the chance of such a virus emerging becomes negligible. Resistance under combination therapy comes mostly from **incomplete adherence**, which allows replication in the presence of drug levels too low to suppress it.
+:::
+
+The START trial (2015) settled the question of when to start: immediate ART reduced serious AIDS and non-AIDS events by more than half compared with waiting until the CD4 count fell below 350 cells/µL. Most people start within days to weeks of diagnosis.
+
+| Class | Examples | Key points |
+|---|---|---|
+| Nucleoside/nucleotide reverse transcriptase inhibitors (NRTIs) | tenofovir (as TDF or TAF), emtricitabine, lamivudine, abacavir | Backbone of most regimens. Tenofovir and emtricitabine/lamivudine also treat hepatitis B. Abacavir causes a severe hypersensitivity reaction in people with HLA-B\*57:01. TDF can affect the kidneys and bone density |
+| Non-nucleoside reverse transcriptase inhibitors (NNRTIs) | efavirenz, rilpivirine, doravirine | Single mutations can cause high-level resistance. Efavirenz has neuropsychiatric effects. Rilpivirine needs stomach acid to be absorbed |
+| Integrase strand transfer inhibitors (INSTIs) | dolutegravir, bictegravir, cabotegravir | Potent, well tolerated, high barrier to resistance (dolutegravir, bictegravir). Absorption reduced by antacids, iron and calcium. Weight gain reported |
+| Protease inhibitors (PIs) | darunavir, atazanavir | Given with a pharmacokinetic **booster** (ritonavir or cobicistat), which inhibits CYP3A4 and causes many drug interactions. High barrier to resistance |
+| Entry and other inhibitors | maraviroc (CCR5 antagonist), fostemsavir (attachment inhibitor), lenacapavir (capsid inhibitor) | Used mainly in treatment-experienced people. Long-acting lenacapavir is also used for prevention |
+
+As of 2026, BHIVA and WHO guidance recommend that most people start with **two NRTIs plus an integrase inhibitor**, such as dolutegravir or bictegravir. WHO's preferred first-line regimen for adults is a single daily tablet of tenofovir disoproxil, lamivudine and dolutegravir. Two-drug regimens (for example dolutegravir with lamivudine) and long-acting injections of cabotegravir with rilpivirine every two months are options for selected people. Monitoring after the start includes viral load at about 1 and 3 months, then every 6–12 months once suppressed, with renal function and other tests according to the drugs used. A confirmed viral load above 200 copies/mL on treatment is **virological failure** and prompts a review of adherence, interactions and resistance.
+
+::: warning
+**Boosted regimens interact with many everyday drugs.** Ritonavir and cobicistat strongly inhibit CYP3A4. Inhaled or injected fluticasone or triamcinolone can then accumulate and cause **iatrogenic Cushing's syndrome** with adrenal suppression; simvastatin can cause rhabdomyolysis; some sedatives become dangerous. Rifampicin, carbamazepine and St John's wort do the opposite: they induce metabolism and can lower antiretroviral levels enough to cause failure. Check every new prescription, including over-the-counter and herbal products, against an HIV drug interaction resource.
+:::
+
+::: example Resistance arithmetic {#ex-mutation}
+Using a reverse transcriptase error rate of $3 \times 10^{-5}$ per base, (a) estimate how many copies of the genome must be made, on average, to produce one with a particular single-base change at one site, and (b) explain what this means for a person producing $10^{10}$ virions per day.
 ::: solution
-**Pneumocystis pneumonia as the presenting AIDS illness - the classic mismatch between hypoxaemia and examination ([[#def-opportunistic]], [[microbiology/fungi-parasites]]): confirm-if-possible - induced-sputum-or-BAL-with-PJP-PCR-or-immunofluorescence-and-serum-BD-glucan-as-supporting-not-sole-evidence-and-the-CMV-and-TB-and-fungal-co-pathogen-sweep-on-the-same-specimen - [[clinical-skills/laboratory-tests]], [[microbiology/laboratory-diagnosis]], [[infectious-diseases/tuberculosis]]; treat-the-severity - high-dose-co-trimoxazole-IV-versus-oral-by-gut-function-and-adjuvant-corticosteroid-for-the-hypoxic-patient-because-lymphocyte-lysis-worsens-gas-exchange-first and the do-not-intubate-quietly-watch-the-desaturation rule - [[microbiology/antimicrobials]], [[respiratory/gas-exchange]], [[emergency-critical-care/airway-ventilation]]; the ART question - start-within-two-weeks-usually-after-antibiotic-initiation-with-the-exception-weighing-for-CNS-coinfections and the admission-isolation-and-public-health-hygiene - [[immunology/immunodeficiency]]; the co-diagnosis work - cryptococcal-antigen-and-toxoplasma-serology-and-chest-for-other-opportunists-and-STI-screen-and-hepatitis-serology and the CNS-symptom-audit-for-occult-crypto-and-PML-and-lymphoma - [[nervous-system/neuroinflammation]]; and the whole-life-opening - the-newly-diagnosed-with-advanced-disease pathway - adherence-support-without-blame-and-partner-notification-and-work-and-insurance-and-viral-hepatitis-treatment-and-the-immune-recovery-timeline-that-makes-prophylaxis-stoppable-in-a-couple-of-years - [[clinical-skills/communication]], [[public-health/communicable-disease-control]], [[infectious-diseases/stewardship-outbreaks]] - the public-health reporting duty in [[public-health/communicable-disease-control]].**
+(a) A specific base can mutate to one of three alternatives, so a particular change at a particular site has a probability of about $3 \times 10^{-5}/3 = 10^{-5}$ per copy. On average about $10^{5}$ copies are needed to produce it once.
+
+(b) With $10^{10}$ new virions per day, that specific mutation arises about $10^{10}/10^{5} = 10^{5}$ times **every day**. Any single-mutation resistance is therefore pre-existing in an untreated person. For a combination of two specific mutations the probability falls to about $10^{-10}$ per copy, and for three to about $10^{-15}$: rare enough that, once three drugs have cut virus production to almost nothing, multiply resistant virus is very unlikely to emerge, provided drug levels stay adequate.
 :::
 :::
 
-::: example Headache after starting treatment {#ex-crypto}
-A 35-year-old with newly diagnosed HIV, CD4 40, started ART 12 days ago; now 10 days of escalating headache, fever, neck stiffness and blurred vision; confused and vomiting; opening pressure at LP is 40 cm water with clear CSF, lymphocyte-predominant pleocytosis, low glucose, cryptococcal antigen positive at high titre.
+## Opportunistic infections
+
+::: definition Opportunistic infections and the CD4 count {#def-opportunistic}
+An **opportunistic infection** is caused by an organism that rarely causes disease in a person with normal immunity. In HIV the risk tracks the CD4 count:
+
+| CD4 count (cells/µL) | Typical conditions |
+|---|---|
+| Any | Tuberculosis, bacterial pneumonia, herpes zoster, Kaposi sarcoma, lymphoma (risks rise as CD4 falls) |
+| Below 200 | *Pneumocystis jirovecii* pneumonia (PCP), oesophageal candidiasis, progressive multifocal leukoencephalopathy |
+| Below 100 | Cerebral toxoplasmosis, cryptococcal meningitis |
+| Below 50 | Cytomegalovirus retinitis, disseminated *Mycobacterium avium* complex |
+
+**Primary prophylaxis** prevents a first episode: co-trimoxazole for people with a CD4 count below 200 cells/µL prevents PCP and, at lower counts, toxoplasmosis. In WHO guidance, people with a CD4 count below 100 cells/µL (and considered below 200) are screened for **cryptococcal antigen** in blood so that pre-emptive treatment can prevent meningitis. Prophylaxis is stopped once ART has restored the CD4 count above guideline thresholds.
+:::
+
+**Kaposi sarcoma**, caused by human herpesvirus 8, produces purple patches, plaques or nodules on the skin, mouth, gut and lungs; it often regresses with ART alone, and chemotherapy is added for extensive disease. Lymphomas, cervical cancer and anal cancer are also more common.
+
+**Immune reconstitution inflammatory syndrome (IRIS)** is a paradoxical worsening after ART is started. As the immune system recovers, it mounts an inflammatory response against an infection that was already present: tuberculosis, cryptococcus or cytomegalovirus, for example. It is most likely when the starting CD4 count is very low. The timing of ART after an opportunistic infection balances the risk of IRIS against the risk of further immune decline: for most infections, including PCP and tuberculosis, ART is started within two weeks; for **cryptococcal** and **tuberculous meningitis**, where inflammation inside the skull is dangerous, it is deferred by about four to eight weeks.
+
+::: example Breathless and desaturating {#ex-pjp}
+A 34-year-old man has had three weeks of dry cough, low-grade fever and increasing breathlessness on exertion. He has oral thrush. His oxygen saturation is 95% at rest but falls to 86% after walking up a flight of stairs. The chest radiograph shows faint bilateral perihilar haziness. An HIV test is positive and his CD4 count is 40 cells/µL; arterial $P_a\mathrm{O_2}$ on air is 8.6 kPa.
 ::: solution
-**Cryptococcal meningoencephalitis unmasked by early immune reconstitution - the timing lesson this syndrome exists to teach ([[#def-opportunistic]], [[nervous-system/neuroinflammation]]): the induction regimen - liposomal-amphotericin-B-plus-flucytosine-with-therapeutic-drug-monitoring-and-renal-and-fBC-surveillance and aggressive CSF-pressure-management - serial-lumbar-punctures-or-lumbar-drain-or-shunt-with-daily-headache-and-vision-and-neuro-checks because pressure kills and blinds before drug works - [[microbiology/antimicrobials]], [[microbiology/fungi-parasites]], [[renal/acute-kidney-injury]], [[blood/haematopoiesis]]; the ART question in reverse - antifungal-therapy-started-and-the-discussion-of-whether-to-pause-or-continue-ART-with-infectious-diseases-specialists-timing-per-severity and the consolidation-maintenance-marathon-fluconazole-with-hepatic-and-qt-monitoring and the relapse-surveillance-crypto-antigen-trend - [[pharmacology/adverse-reactions]], [[cardiovascular/arrhythmias]]; the extra-CNS sweep - blood-culture-and-lung-and-prostate-and-skin-crypto-and-the-drainage-decisions and the ophthalmology-urgency for vision-threatening-disease and ICP-related-papilloedema - [[clinical-skills/medical-imaging]], [[nervous-system/sensory-systems]]; and the prognosis-honesty - neurocognitive-sequelae-and-deafness-and-blindness-and-shunt-dependence and the relapse-threshold-for-life-until-immune-recovery and the family-communication-about-a-treatable-but-lethal-infection - [[clinical-skills/communication]], [[nervous-system/dementia-neurodegeneration]] - neurocognitive in [[nervous-system/neuroinflammation]].**
+**Diagnosis.** A subacute dry cough, exertional desaturation, perihilar infiltrates and oral candidiasis with a CD4 count below 200 cells/µL point strongly to ***Pneumocystis jirovecii* pneumonia**. It is confirmed by PCR or immunofluorescence on induced sputum or bronchoalveolar lavage; serum beta-D-glucan is usually raised. Pneumothorax is a recognised complication.
+
+**Treatment.** High-dose co-trimoxazole for 21 days is first-line. Because his $P_a\mathrm{O_2}$ is below 9.3 kPa, **adjunctive corticosteroids** are given, started early, because they reduce mortality and the need for ventilation in moderate to severe disease. Alternatives exist for people who cannot take co-trimoxazole.
+
+**Then.** ART is started within two weeks, after which he takes co-trimoxazole prophylaxis until his CD4 count recovers. His partners should be offered testing. The case also shows a missed opportunity: oral thrush and weight loss are indicator conditions that should have prompted an HIV test earlier.
 :::
 :::
 
-::: example The weekend after the assault {#ex-pep}
-A 23-year-old woman presents to the emergency department on Sunday morning, 20 hours after being sexually assaulted by a stranger; she is shaken but haemodynamically normal, and asks whether she "can be protected from HIV" without involving the police yet.
+::: example Headache that would not settle {#ex-crypto}
+A 29-year-old woman who moved to the UK from Zimbabwe three years ago has had two weeks of worsening headache, nausea and blurred vision. She is newly diagnosed with HIV with a CD4 count of 35 cells/µL. CT head is normal. Lumbar puncture: opening pressure 38 cm H₂O, cerebrospinal fluid white cells 12/µL, protein mildly raised, glucose low-normal; cryptococcal antigen is strongly positive and India ink shows encapsulated yeasts.
 ::: solution
-**Post-exposure prophylaxis is a time-critical emergency treatment, not a policy question ([[#def-diagnosis]], [[#def-virology]]): the clock - offer-PEP-immediately-when-exposure-was-potentially-infectious-and-start-within-72-hours-with-a-preferred-tenofovir-based-plus-integrase-inhibitor-28-day-course-and-give-the-first-dose-now rather than deferring to a Monday clinic - and the source-status-logic-that-a-known-undetectable-source-means-PEP-is-usually-unnecessary and the local-protocol-honesty-about-viral-load-unknown; the parallel care that must not be sacrificed to one drug - a sexual-assault-referral-centre-route-and-emergency-contraception-and-hepatitis-B-vaccine-with-or-without-HBIG-and-HIV-testing-offered-but-not-compelled-and-STI-presumptive-cover-and-wound-care-and-safeguarding-and-domestic-violence-risk-assessment and the offer of independent sexual violence advocacy - [[obstetrics-gynaecology/contraception-fertility]], [[public-health/vaccination-programmes]], [[infectious-diseases/sexually-transmitted-infections]], [[clinical-skills/communication]]; the follow-through - adherence-support-for-a-28-day-course-started-in-crisis-and-repeat-HIV-testing-at-intervals-and-PKP-toxicity-and-renal-checks-and-what-to-do-about-a-missed-dose-and-confidentiality-explained-explicitly-regarding-police-liaison-boundaries - [[pharmacology/adverse-reactions]], [[medical-ethics-law/confidentiality]], [[clinical-skills/records-handover]]; and the long shadow - PTSD-screening-and-follow-up-and-the-reassurance-that-PEP-is-highly-effective-but-not-absolute-and-that-her-choices-about-reporting-remain-hers - [[psychiatry/anxiety-disorders]], [[psychiatry/lifespan-psychiatry]], [[medical-ethics-law/consent-capacity]].**
+**Diagnosis**: **cryptococcal meningitis** caused by *Cryptococcus neoformans*, a leading cause of HIV-related death in sub-Saharan Africa. The cerebrospinal fluid can look almost normal, because there are so few white cells to mount a response. The very high **opening pressure** explains the headache and visual blurring and is itself a cause of death.
+
+**Induction treatment**: WHO (2022) recommends a single high dose of **liposomal amphotericin B** with 14 days of **flucytosine** and **fluconazole**, based on the AMBITION-cm trial, which showed this to be as effective as longer amphotericin regimens with fewer side-effects. Where liposomal amphotericin is unavailable, other amphotericin-based combinations are used. This is followed by consolidation and maintenance fluconazole.
+
+**Raised pressure** is treated with repeated therapeutic lumbar punctures until it normalises; acetazolamide and steroids do not help and steroids are harmful.
+
+**ART is deferred** for about four to six weeks: the COAT trial found higher mortality when ART was started within one to two weeks, probably because of IRIS in the brain.
 :::
 :::
 
-::: example The mouth lesions and the weight loss {#ex-kaposi}
-A 45-year-old with unknown HIV status has 2 months of weight loss, fever and swollen legs, and violaceous patches on the palate and shin; CXR shows nodules and pleural effusion; CD4 90, viral load 1.2 million; biopsy of the palate confirms HHV8-positive spindle-cell lesion.
-::: solution
-**Disseminated Kaposi sarcoma as an AIDS-defining presentation with lymphoedema and visceral and pulmonary involvement ([[#def-opportunistic]], [[musculoskeletal/skin-cancer]]-Kaposi-row): staging-and-severity - CT-chest-abdomen-pelvis-and-GI-bleeding-and-obstruction-and-effusion-assessment-and-the-pulmonary-KS-danger-flag-that-anticancer-therapy-is-needed-not-ART-alone and the oedema-infiltrative-mechanics - [[clinical-skills/medical-imaging]], [[respiratory/lung-cancer-pleura]]; the dual treatment - start-ART-as-the-primary-therapy-for-limited-cutaneous-disease-and-add-liposomal-doxorubicin-or-paclitaxel-per-oncology-for-bulky-visceral-or-progressing-disease with the IRIS-flare-counselling-and-the-co-infection-screen and HHV8-lymphoproliferative-neighbours-multicentric-Castleman-and-primary-effusion-lymphoma - [[blood/lymphoma-myeloma]], [[immunology/immunodeficiency]]; the symptom layer that decides dignity - pain-and-nosocomial-infection-of-ulcerated-lesions-and-lymphoedema-compression-and-wound-care-and-cosmetic-and-sexual-impact-conversations-and-radiotherapy-palliation-of-disfiguring-lesions - [[geriatrics-palliative/symptom-control]], [[musculoskeletal/skin]], [[clinical-skills/communication]]; and the prognosis conversation between two eras - that modern ART-plus-chemotherapy-makes-disseminated-KS-controllable-for-many while acknowledging the era when this diagnosis meant weeks - a framing that calibrates hope to evidence - [[public-health/health-systems-economics]], [[clinical-skills/communication]].**
+## Prevention and living with HIV
+
+::: definition HIV prevention and long-term care {#def-longterm}
+**Combination prevention** uses several methods together:
+
+- **Treatment as prevention**: ART that suppresses the viral load prevents sexual transmission (U=U). The HPTN 052 trial (2011) showed a 96% reduction in linked transmission in couples, and the PARTNER studies found no linked transmissions from partners with suppressed virus during tens of thousands of acts of condomless sex.
+- **Pre-exposure prophylaxis (PrEP)**: antiretroviral drugs taken by HIV-negative people before exposure. Oral tenofovir disoproxil with emtricitabine, taken daily or (for anal sex) on demand around sex, is highly effective when taken as directed. Long-acting injectable **cabotegravir** every two months is more effective than oral PrEP in trials. Twice-yearly **lenacapavir** was approved for PrEP in the United States in June 2025, recommended by WHO in July 2025, and licensed in the UK in December 2025; as of 2026, routine NHS access is still under assessment.
+- **Post-exposure prophylaxis (PEP)**: a 28-day course of ART started as soon as possible, ideally within 24 hours and no later than 72 hours after a significant exposure.
+- **Prevention of vertical transmission**: antenatal testing, ART throughout pregnancy, management of delivery according to the viral load, and short-course ART for the baby. In the UK this has reduced vertical transmission to well below 1%.
+- Condoms, sterile injecting equipment, screened blood and treatment of other STIs.
+
+**Long-term care** of people with suppressed HIV focuses on the conditions of ageing, which occur earlier and more often: cardiovascular disease, kidney and bone disease, some cancers, and cognitive and mental-health problems. Smoking cessation, blood pressure and lipid management, cervical and anal cancer screening, vaccination (avoiding live vaccines when the CD4 count is below 200 cells/µL) and support against stigma are part of routine care.
 :::
+
+::: example A needlestick on the ward {#ex-pep}
+A nurse sustains a deep needlestick injury with a hollow needle used to take blood from a patient known to have HIV. What is the approximate risk of transmission, and does she need PEP? How would the answer change if the source patient had been on ART with an undetectable viral load for two years?
+::: solution
+**First aid**: encourage bleeding, wash with soap and running water, do not scrub or suck the wound, and report the injury immediately to occupational health or the emergency department.
+
+**Risk**: about 0.3% (roughly 1 in 300) for a percutaneous injury from an untreated source; deep injuries, visible blood on the device and a needle that had been in a vein carry more risk. The source's viral load is the key fact.
+
+**If the source viral load is unknown or detectable**: PEP is recommended: a combination of antiretrovirals (typically two NRTIs plus an integrase inhibitor), started as soon as possible, ideally within an hour or two and no later than 72 hours, continued for 28 days. She is tested at baseline and again after the window period, and followed for side-effects and adherence.
+
+**If the source has a confirmed undetectable viral load**: the risk of transmission is negligible, and current UK guidance (BHIVA/BASHH, 2021) does not recommend PEP in this situation. She still has baseline and follow-up testing and the injury is reported. Hepatitis B and C risks are assessed separately in every needlestick injury.
+:::
+:::
+
+::: history
+On 5 June 1981 the United States CDC's *Morbidity and Mortality Weekly Report* described *Pneumocystis* pneumonia in five previously healthy young gay men in Los Angeles, reported by Michael Gottlieb and colleagues. In 1983 Françoise Barré-Sinoussi and Luc Montagnier at the Pasteur Institute isolated the causative retrovirus, work recognised by the Nobel Prize in 2008; Robert Gallo's group in the United States confirmed it as the cause in 1984. Antibody tests to screen blood followed in 1985, and the first antiretroviral drug, zidovudine, was licensed in 1987. Monotherapy failed through resistance. In 1996 combination therapy with protease inhibitors, developed with the viral-dynamics work of David Ho and others, transformed survival. The HPTN 052 trial (2011), led by Myron Cohen, proved that treatment prevents transmission, and the START trial (2015) that everyone benefits from immediate treatment.
 :::
 
 ::: quiz
-The correct statement about transmission risk in people living with HIV is:
-- [x] Sustained undetectable viral load means no sexual transmission risk (U=U)
-- [ ] Undetectable load only reduces risk during vaginal sex
-- [ ] Detectable load only matters for anal, not vaginal, sex
-- [ ] Antiretroviral therapy prevents transmission but not disease progression
+A woman with newly diagnosed HIV has a CD4 count of 80 cells/µL and is well. Which preventive measures are indicated? Select all that apply.
+- [x] Co-trimoxazole prophylaxis
+- [x] Serum cryptococcal antigen screening
+- [x] Starting antiretroviral therapy promptly
+- [ ] Live attenuated yellow fever vaccine before travel
 ::: solution
-**U=U-is-evidence-based-for-sexual-transmission-and-treatment-prevents-progression-for-the-person-themselves ([[#def-virology]], [[#def-diagnosis]]); the caveats are honesty-preserving - other-STIs-still-transmit-and-adherence-and-viral-monitoring-and-the-breastfeeding-and-needle-share-contexts-differ - and the public-health message depends on getting this right without overreach - [[public-health/prevention-promotion]], [[infectious-diseases/sexually-transmitted-infections]], [[obstetrics-gynaecology/contraception-fertility]].**
+At a CD4 count of 80 cells/µL, co-trimoxazole prevents *Pneumocystis* pneumonia and toxoplasmosis, and cryptococcal antigen screening (recommended below 100 cells/µL) can detect infection before meningitis develops. ART should start promptly once active opportunistic infections have been excluded. Live vaccines such as yellow fever are contraindicated when the CD4 count is below 200 cells/µL.
 :::
 :::
 
-::: widget plot
-f: 450*exp(-x/0.6)+40; 40*(1-exp(-x/8))+320
-x: 0, 36
-y: 0, 520
-labels: \text{months on effective ART},\ \text{cells/µL (viral load on log scale)};\ \text{CD4 count rising};\ \text{HIV RNA falling}
-caption: Two curves, one decision: effective ART drops viraemia by orders of magnitude within weeks while immune recovery takes longer and starts from wherever the diagnosis was made ([[#def-diagnosis]], [[#def-opportunistic]]). Opportunistic prophylaxis is timed to the descending CD4 of untreated disease and stopped once reconstitution is durable - the reason late presenters carry months of excess risk that early testing would have erased ([[public-health/screening]], [[immunology/immunodeficiency]]).
-:::
+## Where this leads
 
-## Living with HIV
-
-::: definition Non-AIDS comorbidity, pregnancy and practicalities {#def-longterm}
-**The ageing-with-HIV agenda (chronic-immune-activation-and-inflammation-aging-with-accelerated-cardiovascular-disease-and-the-statins-for-selected-risk-argument and bone-loss-early-on-tenofovir-disoproxil-and-fracture-risk-economics and kidney-tenofovir-and-legacy-indinavir-crystal and metabolic-and-weight-and-NNRTI-and-INSTI-era-lipid-and-diabetes-shifts and neurocognitive-HIV-associated-neurocognitive-disorder-despite-suppression-with-depression-and-sleep-and-education-adjacency and the cancer-risk-beyond-the-AIDS-defining-set - [[cardiovascular/hypertension]], [[cardiovascular/coronary-artery-disease]], [[endocrine/bone-calcium]], [[renal/chronic-kidney-disease]], [[endocrine/diabetes-complications]], [[nervous-system/dementia-neurodegeneration]], [[psychiatry/mood-disorders]], [[public-health/screening]]); coinfections as chronic disease (hepatitis-B-tenofovir-dual-active-regimens-and-flare-on-stopping-and-cure-search and hepatitis-C-the-direct-acting-antiviral-cure-era-and-the-treatment-for-everyone-strategy-and-reinfection-risk and TB-the-latent-TB-treatment-rhythm-in-people-with-HIV and the STI-reinfection-screening-cadence - [[microbiology/viruses]], [[gastrointestinal/liver-disease]], [[infectious-diseases/tuberculosis]], [[infectious-diseases/sexually-transmitted-infections]]); pregnancy and families the dolutegravir-neural-tube-signal-and-its-reassurance-and-the-current-recommendation and the placental-transfer-and-prevention-of-vertical-transmission-stack-and-avoid-breastfeeding-where-alternatives-are-acceptable-and-safe and the-teen-with-perinatally-acquired-HIV-and-adherence-and-disclosure-and-sexual-health-development - [[obstetrics-gynaecology/pregnancy-complications]], [[obstetrics-gynaecology/contraception-fertility]], [[obstetrics-gynaecology/pregnancy-antenatal]], [[paediatrics/adolescent-health]], [[paediatrics/safeguarding]] - the disclosure support adjacency - [[clinical-skills/communication]]); and the everyday-medicine layer (drug-interactions-rifamycins-and-anticonvulsants-and-ergots-and-methadone-and-buprenorphine-and-PPIs-and-divalent-cations-with-the-INSTI-absorption-trap and the pharmacokinetic-enhancer interactions with hormonal contraception and the adherence-and-forget-a-dose rules and the drug-facilitated-sexual-assault-and-substance-use-and-mental-health-and-stigma-and-inner-city-clinic-waiting-room-questions that determine whether any of the pharmacology happens - [[pharmacology/adverse-reactions]], [[pharmacology/patient-variation]], [[psychiatry/substance-use]], [[psychiatry/mood-disorders]], [[public-health/determinants-inequalities]]).**
-:::
-
-
-
-## When the diagnosis arrives late: a clinical anatomy of advanced HIV
-
-Late presenters deserve a checklist as well as compassion, because the diseases cluster and the sequencing decisions multiply. On the day of a CD4 count below 100: start co-trimoxazole prophylaxis for Pneumocystis and toxoplasma unless already treating either; screen serum cryptococcal antigen at very low counts and pre-emptively treat antigenaemia to prevent meningitis; inspect the fundi and ask specifically about visual symptoms for CMV retinitis; examine the mouth, skin and lymph nodes for Kaposi sarcoma; and take a neurological history that treats confusion, headache and focal symptoms as emergencies with their own chapter in [[nervous-system/neuroinflammation]]. In the first two weeks: start ART with a regimen chosen for interactions and CNS penetration, arrange TB symptom screening and, where indicated, treat latent infection, and open the vaccination conversation with the CD4-aware timing of live vaccines described in [[public-health/vaccination-programmes]]. In the first three months: repeat the STI screen, engage hepatitis B and C treatment where found, review renal, bone and metabolic baselines, and - the item most often skipped - ask about mood, housing, income, safety and the people the diagnosis affects, because advanced HIV is as often a social crisis with a viral cause as the reverse [[psychiatry/mood-disorders]], [[public-health/determinants-inequalities]], [[clinical-skills/records-handover]]. The pay-off of this discipline is measurable: prophylaxis prevents the first opportunistic event, early ART restores the immune ladder over months, and the patient who survives the first year with suppressed viraemia faces, increasingly, the same ageing agenda as everyone else.
-
-## Two public healths
-
-HIV behaves differently in different geographies, and a clinician who has read only one of them practises badly in the other. In high-income settings the epidemic concentrates in key populations - men who have sex with men, transgender people, people who inject drugs, sex workers and migrants from high-prevalence regions - and the work is targeted testing, PrEP for those at ongoing risk, rapid linkage after diagnosis, and relentless attention to the stigma and criminal-law environments that keep people away. In high-burden southern and eastern African settings the epidemic is generalised, the ART cohorts are enormous, and the victories - mother-to-child transmission approaching elimination, life expectancy curves restored - are logistics victories as much as pharmacological ones, while the failures are supply chains, staffing and conflict. Both public healths now share the same horizon: long-acting treatments that could make adherence a clinic memory rather than a daily secret, and a cure research agenda whose case reports of post-treatment control are beacons, not blueprints. The clinical implication for whoever reads this chapter is uniform: know your local epidemiology, know your local testing and PrEP pathways by phone number, and treat prevention prescribing as the same specialty as treatment prescribing, since in this field the two prescriptions share one clinic, one record and one outcome.
-
-::: history
-**HIV's four-decade mirror of medicine and society: the 1981-1983 recognition arc - the case series of Pneumocystis in young men and Kaposi sarcoma and the clustering of immune collapse, then the Gallo-and-Montagnier-isolation-and-the-HTLV-LAV-nomenclature-war and the patient-activism eruption - ACT-UP-and-the-DIAN-parallel-and-treatment-parallel-and-treatment-through-parallel-approval-paths that rewrote how trials and drug access are governed - [[medical-ethics-law/research-ethics]], [[epidemiology-ebm/randomised-trials]]; the AZT-monotherapy-error era and the combination-therapy revolution from 1996 that turned AIDS from a death sentence into a chronic disease and the adherence-science it invented - [[pharmacology/dosing-principles]]; the treatment-access battles - the the South-African-treatment-advocacy-and-the-Medicines-Patent-Law-fight-and-the-Clinton-Foundation-and-PEPFAR-and-Global-Fund-build-out that made three-drug therapy a global right in policy if not always in practice - [[public-health/global-health]], [[medical-ethics-law/justice-resources]]; the test-and-treat and U=U evidence programme - HPTN-052-and-Partner-and-Opposites-Attract-and-the-early-ART-trials - [[epidemiology-ebm/randomised-trials]], [[public-health/prevention-promotion]]; and the stigma ledger that medicine did not cause and cannot prescribe away - long-acting capsid inhibitors and monthly-or-2-monthly-oral-and-injectable-options that make adherence a different problem than swallowing nine pills in a hostile doorway - [[public-health/determinants-inequalities]], [[pharmacology/drug-development-prescribing]].**
-:::
-
-::: exercise Manage the paradoxical fever {level=2}
-Eight weeks into successful ART for pulmonary TB with an initial CD4 of 30, a patient who was improving develops high fevers, worsening infiltrates and enlarging mediastinal nodes; viral load has fallen 2 logs; Xpert on sputum is now negative; he is not hypoxic.
-::: solution
-**TB-IRIS-is-the-leading-diagnosis-and-the-trap-is-stopping-ART-or-chasing-resistance ([[#def-opportunistic]], [[infectious-diseases/tuberculosis]]): restate-the-TB-treatment-is-working-and-this-is-immunological - the-defining-features-paradoxical-worsening-after-initial-improvement-with-rapid-viral-load-fall-and-exclusion-of-treatment-failure-and-new-infection-and-the-evidence-that-IRIS-correlates-with-good-virological-response - [[clinical-skills/clinical-reasoning]]; the workup-that-rules-out-others - culture-and-sensitivity-for-drug-resistance-and-reinfection-and-lymphoma-and-CMV-and-MAC-and-pneumocystis-and-drug-fever-and-adherence-to-TB-drugs-and-vomiting-malabsorption and the pregnancy-and-renal-context - [[microbiology/laboratory-diagnosis]], [[blood/lymphoma-myeloma]]; management - continue-ART-and-TB-therapy-and-NSAIDs-or-corticosteroids-for-moderate-severe-IRIS-with-the-steroid-taper-plan-and-infection-cover-thought-through-and-the-do-not-add-antibiotics-forever reflex - [[microbiology/antimicrobials]], [[endocrine/adrenal]]; and the follow-through - documented-IRIS-explanation-for-the-patient-so-he-keeps-taking-medicine-that-made-him-feel-worse-and-the-monitoring-of-airway-and-node-compression-rarely-dangerous - [[clinical-skills/communication]], [[clinical-skills/records-handover]].**
-:::
-:::
-
-::: exercise Keep the secret or not {level=2}
-A man with HIV refuses to tell his partner; his 17-year-old son, who lives at home and has asthma, attends your clinic alone for a wheeze review and mentions "my dad never tells us things". What do you do and why?
-::: solution
-**The-confidentiality-core ([[#def-longterm]], [[medical-ethics-law/confidentiality]]): the-adult-patient-s-HIV-information-is-not-yours-to-disclose-and-the-son-s-clinic-is-not-a-backdoor - and-the-consultation-still-owes-him-something: general-signposting about sexual health and testing services and the fact that HIV is a treatable chronic condition, without confirming or denying anything - [[clinical-skills/communication]], [[paediatrics/adolescent-health]]; the duty that does exist is toward the adults at risk - explore-the-patient-s-barriers-and-fear-and-offer-supported-partner-notification-through-specialist-services-and-document-the-offer and the public-health-notification-rules-that-share-with-authorities-not-family and the exceptional-circumstances-override-which-requires-identifiable-person-serious-harm-and-proportionality-and-senior-and-legal-input-not-clinical-annoyance - [[public-health/communicable-disease-control]], [[medical-ethics-law/ethical-principles]], [[medical-ethics-law/professionalism-regulation]]; the safeguarding-check-that-actually-belongs-here - the-son-s-welfare-and-any-domestic-tension-is-assessed-on-its-own-grounds and the daughter-or-wife-who-might-be-pregnant-is-a-different-notification-pathway - [[paediatrics/safeguarding]], [[obstetrics-gynaecology/pregnancy-antenatal]]; and the system answer - partner-notification-services-and-peer-support-and-couples-testing-exist-to-make-this-conversation-possible-earlier-so-the-emergency-department-does-not-inherit-it - [[public-health/health-systems-economics]], [[infectious-diseases/sexually-transmitted-infections]].**
-:::
-:::
+Primary and secondary immunodeficiency is covered in [[immunology/immunodeficiency]], and the virus itself in [[microbiology/viruses]]. Tuberculosis, the leading cause of death in people with HIV, is in [[infectious-diseases/tuberculosis]]. Other sexually transmitted infections are in [[infectious-diseases/sexually-transmitted-infections]], and infection in other immunocompromised hosts in [[infectious-diseases/immunocompromised-host]]. Population testing programmes are discussed in [[public-health/screening]].
 
 ::: summary
-- HIV destroys gut and systemic CD4 immunity over years; the reservoir of integrated provirus makes treatment lifelong and cure a research horizon.
-- Fourth-generation testing plus RNA for acute suspicion; offer tests widely because late presentation, not virology, drives AIDS today.
-- Start effective integrase-inhibitor-based therapy the same week; monitor viral load, and expect the U=U conversation to be a treatment conversation.
-- Opportunistic disease runs down a CD4 ladder - PJP, cryptococcus, toxoplasma, CMV, TB, MAC, Kaposi and lymphoma - each with a named treatment, prophylaxis threshold and immune-reconstitution timing trap.
-- Ageing with HIV is cardiovascular, bone, kidney, metabolic, neurocognitive, oncologic and psychological care delivered with an interaction-aware prescriber.
-- Pregnancy, disclosure, substance use, mental health and stigma are adherence variables; the clinic that ignores them fails the pharmacology.
+- HIV is a retrovirus that infects CD4-bearing cells using CCR5 or CXCR4, integrates into the host genome and establishes a latent reservoir, so ART controls but does not cure it.
+- Untreated infection runs from acute seroconversion through years of silent CD4 decline to advanced disease with opportunistic infections below about 200 cells/µL.
+- Fourth-generation tests detect antibody and p24 antigen; a negative test 45 days after exposure excludes infection. Reactive results are always confirmed.
+- ART is recommended for everyone, combining at least two (usually three) active drugs; two NRTIs plus an integrase inhibitor is the usual start. The goal is a viral load below 50 copies/mL.
+- Combination therapy prevents resistance because a virus needing several simultaneous mutations is vanishingly rare; resistance mostly follows poor adherence.
+- Opportunistic infections track the CD4 count; co-trimoxazole and cryptococcal antigen screening prevent common killers. ART timing after an opportunistic infection balances IRIS against continued immune decline.
+- Prevention combines U=U, PrEP, PEP within 72 hours, and prevention of vertical transmission.
 :::
 
 ## Exercises
 
-::: exercise Interpret the window {level=1}
-A patient requests an HIV test 9 days after a condomless exposure during which they felt unwell now; the GP is considering a 6-week wait. Explain the right test and timing.
+::: exercise Counting log drops {level=1 check="round(10*log10(250000/50))/10"}
+A man's viral load falls from 250,000 copies/mL before treatment to 50 copies/mL after three months of ART. By how many log₁₀ units has it fallen? Give the answer to one decimal place.
 ::: solution
-**Symptomatic-recent-exposure-needs-RNA-NOW ([[#def-diagnosis]], [[microbiology/laboratory-diagnosis]]): the acute seroconversion illness is frequently non-specific and the 4th-gen-combo-can-still-be-negative-in-the-first-two-weeks - so send HIV-RNA-viral-load-or-NAAT-plus-combo-assay-and-repeat-combo-at-the-end-of-the-window-and-explain-that-a-negative-at-day-9-excludes-little - and do-not-start-empiric-ART-outside-a-specialist-protocol-unless-guidance-says-so; consider-and-offer-PEP-within-72-hours-was-the-real-question - [[infectious-diseases/sexually-transmitted-infections]] - PEP-pathway lives here and in that chapter; and the-counselling-and-safety-net - the-follow-up-appointment-booked-and-the-transmission-precautions-in-the-window-and-the-partner-support-and-the-repeat-test-when-the-moment-arrives - [[clinical-skills/communication]], [[clinical-skills/records-handover]].**
+$\log_{10}(250{,}000/50) = \log_{10}(5000) = 3.699 \approx 3.7$ log₁₀ units, a more than 5,000-fold reduction. A fall of at least 1 log₁₀ in the first month is expected with effective treatment.
 :::
 :::
 
-::: exercise Choose the first regimen {level=1}
-Give the modern default regimen architecture and the pre-prescription checks for a 28-year-old with CD4 520, eGFR 118, hepatitis B negative, wanting to start tonight.
+::: exercise Window periods {level=1}
+A man attends for testing 20 days after condomless sex with a partner of unknown HIV status. A laboratory fourth-generation test is negative. What do you tell him, and when should he be retested? Would a negative antibody-only self-test at the same time be more or less informative?
 ::: solution
-**Architecture - two-N(t)NRTI-backbone-plus-INI - TAF-or-TDF-plus-FTC-or-3TC as the common same-day-defaults - [[#def-diagnosis]], [[pharmacology/dosing-principles]]; checks - resistance-testing-resulted-then-adjusted-per-it-and-hepatitis-B-status-because-the-backbone-usually-treats-HBV-too-and-stopping-can-flare-and-renal-and-bone-tenofovir-salt-choice-and-drug-interactions-divalent-cations-and-rifamycins-and-antiepileptics-and-the-contraception-and-pregnancy-plans-and-HLA-B*5701-if-abacavir-and-the-adherence-and-storage-and-privacy-talk - [[gastrointestinal/liver-disease]], [[renal/chronic-kidney-disease]], [[endocrine/bone-calcium]], [[obstetrics-gynaecology/contraception-fertility]], [[pharmacology/adverse-reactions]]; and the follow-up plan - viral-load-at-intervals-and-CD4-for-the-first-year-or-two-and-the-U=U-date-and-when-it-becomes-true-and-the-vaccination-and-STI-and-screening-calendar - [[public-health/vaccination-programmes]], [[infectious-diseases/sexually-transmitted-infections]].**
+At 20 days he is still within the window period, so a negative fourth-generation test does not exclude infection. He should be retested at **45 days** after the exposure; a negative result then excludes HIV. An antibody-only self-test has a longer window (up to 90 days), so it is less informative at 20 days. PEP is no longer an option at 20 days, because it must start within 72 hours of exposure; PrEP should be discussed for the future, and he should be offered a full STI screen.
 :::
 :::
 
-::: exercise Time the ART {level=2}
-For each of cryptococcal meningitis, TB meningitis, pulmonary TB with CD4 60, and CMV retinitis, give the ART timing logic and the reason.
+::: exercise Testing in a low-prevalence population {level=1 check="round(100*0.002*0.999/(0.002*0.999 + 0.998*0.002))/100"}
+A screening test for HIV has sensitivity 99.9% and specificity 99.8%. It is used in a population where the prevalence is 0.2%. What is the positive predictive value of a single reactive result? Give the answer as a decimal to two decimal places.
+::: hint
+Out of 100,000 people, how many have HIV and test positive, and how many do not have HIV but test positive?
+:::
 ::: solution
-**The-timing-table ([[#def-opportunistic]]): crypto-meningitis - delay-ART-several-weeks-because-early-ART-increased-mortality-in-trials-and-the-CNS-IRM-is-devastating and treat-and-decompress-pressure-first - [[nervous-system/neuroinflammation]]; TB-meningitis - similar-caution-several-weeks-with-the-same-IRM-argument - [[infectious-diseases/tuberculosis]]; pulmonary-TB-with-CD4-under-50 - rifamycin-integrase-dose-adjustment-and-IRIS-vigilance; CMV-retinitis - ART-early-after-systemic-therapy-started-with-the-immune-recovery-uveitis-steroid-question and the-ophthalmology-co-ownership - [[nervous-system/sensory-systems]]; the common rule - never-stop-ART-for-IRIS-unless-life-threatening-and-treat-the-organism-and-consider-steroids-for-selected-syndromes - [[immunology/immunodeficiency]], [[endocrine/adrenal]]-steroid-logic.**
+Per 100,000 people: 200 have HIV, of whom $200 \times 0.999 \approx 199.8$ test positive. Of the 99,800 without HIV, $99{,}800 \times 0.002 = 199.6$ test falsely positive.
+
+$$
+\text{PPV} = \frac{0.002 \times 0.999}{0.002 \times 0.999 + 0.998 \times 0.002} = \frac{0.001998}{0.003994} \approx 0.50
+$$
+
+Only about half of reactive screening results are true positives in this setting, which is why every reactive result is confirmed with a different assay on a second sample before diagnosis.
 :::
 :::
 
-::: exercise Prescribe around interactions {level=2}
-A woman on efavirenz-based ART requests the combined pill; another on dolutegravir takes calcium carbonate and omeprazole; a third needs rifampicin for TB. Resolve each.
+::: exercise An inhaler and a booster {level=2}
+A 52-year-old man with HIV has taken darunavir boosted with ritonavir, with tenofovir and emtricitabine, for six years. His GP started inhaled fluticasone for asthma four months ago. He now has a round face, easy bruising, weight gain around the abdomen and new hypertension. Explain what has happened and how it should be managed.
 ::: solution
-**The-interaction-triad ([[#def-longterm]], [[pharmacology/drug-receptor]]-CYP-and-transporter-logic): efavirenz-is-a-CYP-inducer-reducing-contraceptive-hormone-levels - use-the-appropriate-method-and-dose-adjustments-or-another-regimen-with-infectious-diseases-advice and emergency-contraception-education - [[obstetrics-gynaecology/contraception-fertility]]; dolutegravir-chelation by calcium, iron, magnesium and antacids - separate-doses-by-hours-or-take-with-food-per-guidance-and-PPIs-affect-atazanavir-and-nelfinavir-not-dolutegravir-much-and-document-the-OTC-list-in-the-notes - [[pharmacology/absorption-distribution]], [[gastrointestinal/oesophagus-stomach]]; twice-daily-dolutegravir-or-specific-boosted-protease-adjustments-or-an-NNRTI-or-rifabutin-substitution-strategy and the-contraceptive-and-prednisolone-level-implications-of-rifamycins - [[infectious-diseases/tuberculosis]], [[microbiology/antimicrobials]].**
+Ritonavir strongly inhibits **CYP3A4**, the enzyme that metabolises fluticasone. Even inhaled fluticasone then reaches high systemic levels and causes **iatrogenic Cushing's syndrome**, with suppression of the hypothalamic–pituitary–adrenal axis. Management: switch to an inhaled corticosteroid less dependent on CYP3A4 (for example beclometasone) or change the antiretroviral regimen to one without a booster, in discussion with the HIV team. Because his own adrenal function is suppressed, the steroid must not simply be stopped: he is at risk of **adrenal crisis**, needs assessment of adrenal function, and may need a temporary physiological glucocorticoid with sick-day rules. The case shows why every new prescription for a person on ART must be checked for interactions.
 :::
 :::
 
-::: exercise Run the pregnancy case {level=2}
-A 26-year-old at 11 weeks books antenatal care and is found HIV-positive, viral load 22 000, on no therapy. Structure the first fortnight of care.
+::: exercise Glandular fever that was not {level=2}
+A 24-year-old woman has a week of fever, sore throat, a fine rash on her trunk, cervical lymphadenopathy and two painful mouth ulcers. A monospot test for Epstein–Barr virus is negative. Her liver enzymes are mildly raised and her platelets are 110 × 10⁹/L. Give a differential diagnosis, the key test, and why diagnosis now matters.
 ::: solution
-**Same-week-everything ([[#def-longterm]], [[obstetrics-gynaecology/pregnancy-complications]]): confirm-and-stage-with-CD4-and-resistance-and-hepatitis-and-STI-and-TOXO-serology and start-optimised-ART-with-preferred-pregnancy-regimen-now - dolutegravir-based-now-recommended-with-folate-and-the-old-neural-tube-signal-contextualised and the tenofovir-emtricitabine-or-lamivudine-backbone - [[obstetrics-gynaecology/pregnancy-antenatal]], [[pharmacology/patient-variation]]; the multidisciplinary package - HIV-obstetric-midwifery-neonatal-and-paediatric-team-and-partner-testing-and-support-and-domestic-violence-and-housing-and-immigration-status-questions-done-with-advocacy-awareness and the iron-and-vitamin-D-and-vaccination review - [[public-health/determinants-inequalities]], [[public-health/vaccination-programmes]]; the delivery-and-feeding-plan-trajectory - viral-load-surveillance-through-pregnancy-and-mode-and-feeding-decisions-by-local-guidance-and-baby-prophylaxis-and-testing-schedule - [[paediatrics/newborn]], [[paediatrics/immunisation]]; and the psychological-first-aid-of-the-consultation - the-good-news-reality-of-near-zero-vertical-transmission-with-treatment-and-the-not-your-fault-tone-that-determines-whether-she-returns - [[clinical-skills/communication]], [[psychiatry/anxiety-disorders]].**
+**Differential**: acute HIV infection, cytomegalovirus, early Epstein–Barr virus infection (monospot can be falsely negative early), secondary syphilis, streptococcal pharyngitis, toxoplasmosis and drug reaction. Mouth ulcers, rash and a negative monospot make **acute HIV** important to exclude.
+
+**Key test**: a fourth-generation HIV antigen/antibody test (p24 antigen is usually positive in acute infection even before antibodies appear), with HIV RNA if the result is equivocal, plus syphilis serology. A sexual history is needed.
+
+**Why now**: the viral load in acute infection is very high, so the risk of transmission to partners is highest in these weeks. Starting ART early limits the size of the latent reservoir, protects the immune system and prevents onward transmission; partners can be offered testing and PEP if within 72 hours of exposure.
 :::
 :::
 
-::: exercise Design the late-presenter programme {level=3}
-One third of new diagnoses in your city are late. Build the testing, linkage and retention redesign with evidence, equity and ethics.
+::: exercise HIV in pregnancy {level=2}
+A woman is found to have HIV at her booking blood tests at 12 weeks of pregnancy. Her CD4 count is 420 cells/µL and her viral load 35,000 copies/mL. Outline the principles of care to prevent transmission to the baby.
 ::: solution
-**Testing-side - opt-out-ED-and-ward-testing-with-digital-pathway-community-testing-and-self-testing-with-supported-linkage-and-clinic-based-risk-norms-and-the-pregnancy-exception-debate - [[public-health/screening]], [[obstetrics-gynaecology/pregnancy-antenatal]], [[emergency-critical-care/acute-assessment]]; linkage-side - same-day-start-clinics-and-navigator-roles-and-open-access-culture-and-the-telehealth-and-pharmacy-adjacency for people who cannot be seen in an HIV clinic without being seen as gay - [[public-health/determinants-inequalities]], [[clinical-skills/communication]]; retention-side - adherence-support-and-mental-health-and-substance-use-integration-and-long-acting-and-simplified-regimens-and-the-appointments-that-fit-work-and-caring - [[psychiatry/substance-use]], [[psychiatry/mood-disorders]], [[pharmacology/dosing-principles]]; the-equity-and-ethics-layer - migrant-and-undocumented-access-and-criminalisation-law-effects-on-testing-and-confidentiality-and-data-sharing-boundaries-and-community-governance-of-services - [[medical-ethics-law/confidentiality]], [[medical-ethics-law/justice-resources]], [[public-health/global-health]]; and the-evaluation - late-presentation-rate-as-headline-KPI-and-the-diagnosis-to-ART-to-undetectable-cascade-measured-quarterly-and-published-by-subgroup - [[epidemiology-ebm/measuring-disease]], [[public-health/health-systems-economics]].**
+**ART should start promptly**, with a regimen known to be safe and effective in pregnancy, aiming for an undetectable viral load well before delivery; the viral load is monitored during pregnancy and at about 36 weeks. **Mode of delivery** depends on the viral load near term: in UK guidance, a viral load below 50 copies/mL at 36 weeks supports a planned vaginal birth, a viral load of 400 copies/mL or more leads to a recommendation of planned caesarean section, and intravenous zidovudine is given in labour when the viral load is above 1,000 copies/mL or unknown. **The baby** receives a short course of antiretroviral prophylaxis and is tested at intervals to confirm they are HIV-negative. **Feeding**: in the UK formula feeding avoids all postnatal risk; for women who are fully suppressed and choose to breastfeed, BHIVA guidance supports this with close monitoring of mother and baby. Her partner and any older children should be offered testing. With this care, vertical transmission is well below 1%.
 :::
 :::
 
-## Taking it further
+::: exercise Reading a resistance report {level=3}
+A 40-year-old man has taken tenofovir disoproxil, emtricitabine and efavirenz for three years. He admits to frequently missing doses. His viral load is 4,500 copies/mL on two occasions a month apart. A genotype shows M184V in reverse transcriptase and K103N. Interpret these results and outline the next steps.
+::: hint
+M184V affects lamivudine and emtricitabine; K103N affects the first-generation NNRTIs.
+:::
+::: solution
+**Interpretation**: two viral loads above 200 copies/mL confirm **virological failure**. **M184V** gives high-level resistance to emtricitabine and lamivudine (though it also reduces viral fitness and slightly increases susceptibility to tenofovir). **K103N** gives high-level resistance to efavirenz and nevirapine but not to newer NNRTIs such as doravirine or etravirine in isolation. In effect he has been taking a regimen with only one fully active drug, tenofovir, and further resistance is likely if nothing changes.
 
-The infectious-diseases mindset in one paragraph: think in source, route, host and time. Identify the source before naming the syndrome; ask what the exposure history permits and what the local resistance map makes likely; adjust everything for the host standing in front of you; and treat the clock as a drug - the sepsis, endocarditis and meningitis outcomes are functions of hours. Then audit yourself against the two failure modes of the specialty: anchoring on the first plausible organism while the atypical presentation evolves, and de-escalating never - the narrow-spectrum switch that should happen on day three and does not. Both failures are curable by the habit of re-asking, at every review, what the story said yesterday that it no longer says today.
+**Next steps**: address the cause first: explore the reasons for missed doses (side-effects such as efavirenz's vivid dreams, mental health, housing, stigma, pill burden) and offer support. Check for drug interactions. Construct a new regimen with **at least two fully active drugs**, usually including a drug with a high barrier to resistance such as dolutegravir or boosted darunavir, guided by the resistance report and specialist advice (often in a virtual multidisciplinary clinic). Repeat the viral load at about 1 and 3 months to confirm re-suppression.
+:::
+:::
+
+::: exercise HIV and tuberculosis together {level=3}
+A 33-year-old man with smear-positive pulmonary tuberculosis is newly diagnosed with HIV, CD4 count 60 cells/µL. He is starting standard TB treatment including rifampicin. Discuss (a) when to start ART, (b) the main drug interaction and how it is handled, and (c) what complication to watch for in the following weeks.
+::: solution
+(a) **Timing**: ART should be started within about two weeks of TB treatment, especially with a CD4 count this low, because early ART reduces death in people with advanced HIV. The exception is tuberculous meningitis, where ART is deferred by several weeks because of the risk of intracranial inflammation.
+
+(b) **Interaction**: rifampicin is a strong inducer of CYP3A4 and UGT1A1. It lowers levels of dolutegravir, which is overcome by giving dolutegravir twice daily instead of once for as long as rifampicin is taken and for two weeks afterwards. Rifampicin cannot be combined with boosted protease inhibitors, bictegravir or long-acting cabotegravir/rilpivirine, which is why regimen choice is made with the TB and HIV teams together.
+
+(c) **TB-associated IRIS**: within weeks of starting ART, fever, enlarging lymph nodes, worsening chest radiograph or serous effusions can appear as the immune system recovers. It must be distinguished from TB treatment failure, drug resistance or a new infection; most cases are managed by continuing both treatments, and prednisolone reduces symptoms in moderate cases. Prednisolone given when ART is started also reduces IRIS in people at high risk.
+:::
+:::

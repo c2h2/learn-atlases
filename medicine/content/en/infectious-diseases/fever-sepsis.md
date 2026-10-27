@@ -1,155 +1,303 @@
-Few areas of medicine reward early recognition like infection and sepsis: **the organisms are often ordinary, the syndromes are repeatable, and the difference between a good outcome and a bad one is usually measured in hours of appropriate antibiotics, source control and resuscitation rather than in clever diagnosis.** This chapter is the acute-medicine spine of the whole infectious-disease course, and it is read first in every emergency rotation.
+Most infections end well with little help. A child with a cold, an adult with cystitis and a student with a sore throat recover with rest, fluids or a short course of antibiotics. A small minority do not. In them the response to infection damages the body's own organs, and the illness can move from "unwell" to "dying" within hours. That is **sepsis**, and it kills about one in five of the people it affects worldwide.
 
-This chapter covers the febrile patient and the sepsis syndrome, its resuscitation, source-hunting, and the mimics and modifiers that bend every rule.
+This chapter teaches two linked skills. The first is the approach to a person with fever: deciding how ill they are, finding the source, and choosing the first antibiotic. The second is recognising and treating sepsis in its first hours, when good basic care saves the most lives. The organisms are usually ordinary. The difference between a good and a bad outcome usually lies in speed, in source control and in resuscitation rather than in rare diagnoses.
 
-## The febrile patient
+Throughout, management is described as principles and typical adult practice. Doses and local choices come from current national and local guidelines; this page follows UK guidance (NICE) first and mentions international guidance (the Surviving Sepsis Campaign) where it differs.
 
-::: definition Fever and its immediate questions {#def-fever}
-**Physiology (the pyrogenic cytokine cascade - IL-1, IL-6 and TNF from innate myeloid cells resetting the hypothalamic set point via prostaglandin signalling, the fever-and-rigour mechanics and the sweating-off phase, read with the [[pathology/acute-inflammation]] vascular-and-cellular script and the [[physiology/homeostasis-body-fluids]] thermostat arithmetic; the pattern-vocabulary that still helps - continuous, intermittent, relapsing, quotidian, Pel-Ebstein - and the honest limits of pattern-reading in the antibiotic and antipyretic era; and fever of unknown origin as a defined problem - three weeks, three hospital visits or one week inpatient, and the three-horse diagnosis list of occult infection, malignancy and inflammatory disease with temporal-arteritis, adult-still's, and occult-abscess weighting in the elderly - [[musculoskeletal/connective-tissue-vasculitis]], [[blood/lymphoma-myeloma]], [[infectious-diseases/tuberculosis]]). The immediate assessment (the ill-versus-well judgement as the first diagnostic act and the NEWS-and-qSOFA-style early-warning scores as triage language not diagnostic criteria; the ABCDE approach to the febrile patient and the hypotension-that-needs-fluid-or-vasopressors and the confusion-that-needs-glucose-and-thiamine-and-oxygen - [[emergency-critical-care/acute-assessment]], [[emergency-critical-care/resuscitation]]; and the exposure history that changes the differential within minutes - travel-and-water-and-animal-and-bite-and-sexual-and-drug-use-and-occupational-and-dietary-and-surgical-and-device-history - [[clinical-skills/history-taking]], [[infectious-diseases/tropical-infections]]). The special fevers (the neutropenic fever as a same-hour-antibiotic-emergency with its own regimen logic and the line-and-gut-and-lung source thinking - [[immunology/immunodeficiency]], [[blood/leukaemia]], [[infectious-diseases/immunocompromised-host]]; the prosthetic-joint, valve, and device fevers where organisms are skilful biofilm residents and source-hunting means imaging and multiple blood culture sets before empirical destruction of the yield - [[musculoskeletal/fractures]]-prosthesis-row, [[cardiovascular/valve-congenital-disease]], [[infectious-diseases/healthcare-infections]]; the HIV-test-always-culture in the right clinical context and the malaria-think-always-in-returning-travellers rule with its same-day thick-and-thin-film or rapid-antigen testing - [[infectious-diseases/hiv]], [[infectious-diseases/tropical-infections]]; and the non-infectious impostors - drug fever and malignancy fever and VTE and alcohol-withdrawal and line-flushes and factitious patterns - [[pharmacology/adverse-reactions]], [[blood/thrombosis-anticoagulation]]).**
+## Fever: what it is and what it tells us
+
+::: definition Fever {#def-fever}
+**Fever** is a rise in core body temperature caused by an upward shift of the hypothalamic temperature set point. In adults a temperature of **38.0 °C or above** is the usual working threshold. **Hyperthermia** is different: the set point is normal, but heat production or gain outstrips heat loss (heat stroke, serotonin syndrome, neuroleptic malignant syndrome, some drugs). **Fever of unknown origin (FUO)** is a fever above 38.3 °C on several occasions for more than three weeks, without a diagnosis after a defined period of investigation (originally one week in hospital; later definitions accept three outpatient visits or three inpatient days).
 :::
 
-::: example The rash and the hour clock {#ex-meningococcus}
-A 19-year-old student is brought in confused, vomiting, with cold extremities and a non-blanching purpuric rash; BP 82/40, HR 138, mottled knees, CRT 5s, lactate 6.8; the GP had said "viral" by phone six hours earlier.
+The distinction between fever and hyperthermia matters at the bedside. In fever the body is defending a higher target, so the person feels cold, shivers and wraps up while the temperature climbs. In hyperthermia the body is losing the battle against heat, the skin is usually hot and the person feels hot. Antipyretics such as paracetamol lower the set point and work in fever; they do nothing for heat stroke, which needs active cooling.
+
+::: proof
+**How a fever is made.** Microbial products (for example lipopolysaccharide from Gram-negative bacteria) are detected by pattern-recognition receptors on monocytes and macrophages. These cells release the **endogenous pyrogens** interleukin-1, interleukin-6 and tumour necrosis factor. The cytokines act on the endothelium of the circumventricular organs around the hypothalamus, which lack a full blood–brain barrier. There, cyclo-oxygenase-2 is induced and **prostaglandin E₂** is produced. PGE₂ acts on neurons of the preoptic area and raises the set point.
+
+The body now "feels" too cold. Skin vessels constrict to conserve heat, and muscles shiver to generate it. A violent episode of shivering with a rapid temperature rise is a **rigor**; rigors suggest bacteraemia, although they also occur in malaria, influenza and transfusion reactions. When the stimulus falls, the set point returns to normal, the person is now too hot for the new target, and they flush and sweat. Paracetamol and NSAIDs reduce fever because they inhibit prostaglandin synthesis.
+:::
+
+Fever is a sign, not a diagnosis. Its height correlates only loosely with severity. Old pattern names (continuous, intermittent, relapsing) occasionally help: for instance, fever every 48 hours in someone back from Africa points to malaria. But antipyretics and early antibiotics have blurred most patterns, and pattern-reading should never replace a structured assessment.
+
+### The first question: how ill is this person?
+
+The first clinical act is a judgement of severity, made in minutes using the ABCDE approach ([[emergency-critical-care/acute-assessment]]). Airway, breathing, circulation, disability (conscious level and glucose) and exposure (rash, wounds, lines) are checked and treated in order. In UK hospitals and ambulances the **National Early Warning Score 2 (NEWS2)** puts this into numbers. It scores respiratory rate, oxygen saturation, use of supplemental oxygen, systolic blood pressure, pulse, level of consciousness (including new confusion) and temperature. A higher score means a higher risk of deterioration and a faster, more senior response.
+
+Several features should alarm in any febrile patient: new confusion, a respiratory rate of 25 per minute or more, systolic pressure below 90 mmHg, a heart rate above 130 per minute, mottled or ashen skin, a non-blanching rash, no urine output for 18 hours, and a lactate of 2 mmol/L or more. Each points to failing organs.
+
+### The second question: where is the infection?
+
+Once the patient is safe, the search for a source begins. Most sources are found by a careful history and examination, not by scans.
+
+- **Symptoms by system**: cough and breathlessness (chest), dysuria and loin pain (urinary tract), abdominal pain and jaundice (biliary tree), headache and neck stiffness (central nervous system), a hot swollen limb (skin and soft tissue, bone or joint), diarrhoea (gut).
+- **Exposures**: travel and its dates, animals, food and water, sexual contacts, injecting drug use, recent healthcare, sick contacts.
+- **The host**: age, pregnancy, diabetes, chemotherapy, steroids or biological drugs, splenectomy, HIV, transplantation. A weakened host changes the likely organisms ([[infectious-diseases/immunocompromised-host]]).
+- **Devices and foreign material**: intravenous lines, urinary catheters, prosthetic joints and heart valves, pacemakers ([[infectious-diseases/healthcare-infections]]).
+
+Examination is head to toe, including the skin (rashes, cellulitis, pressure sores), the line and catheter sites, the heart (new murmur), the abdomen, the joints and the spine. Bedside tests follow: urine dipstick and culture, blood cultures, full blood count, renal and liver function, C-reactive protein, lactate, and a chest radiograph where breathing is affected.
+
+::: example A student with a rash {#ex-meningococcus}
+A 19-year-old university student is brought to the emergency department by her flatmates. She has had a fever and vomiting for 12 hours and now has severe leg pains. Her hands and feet are cold. Pulse 132 per minute, blood pressure 92/50 mmHg, respiratory rate 28 per minute, capillary refill 4 seconds. She is alert but anxious. There are a few purple spots on her legs that do not fade when a glass is pressed on them.
+
+What is the likely diagnosis, and what should happen in the first hour?
 ::: solution
-**Meningococcal sepsis until proven otherwise, and meningitis pathway treatment in minutes not hours ([[#def-sepsis]], [[microbiology/bacteria]]): the first-hour bundle - ABCDE-and-high-flow-oxygen-and-two-GN-access-or-IO-and-IV-fluid-boluses-with-reassessment-and-IV-antibiotic-do-not-wait-for-lumbar-puncture-or-cultures-or-CT-and-urgent-benzylpenicillin-or-ceftriaxone-per-local-meningitis-guidance-plus-dexamethasone-if-bacterial-meningitis-suspected-and-notify-the-public-health-team-for-chemoprophylaxis-of-contacts - [[nervous-system/neuroinflammation]]-meningitis-pages, [[public-health/communicable-disease-control]], [[microbiology/antimicrobials]]; the escalation parallel-track - senior-resuscitation-and-critCare-with-vasopressors-for-fluid-refractory-shock-and-hydrocortisone-for-refractory-shock-and-consider-admission-bleeding-and-purpura-fulminans-and-the-blood-product-and-skin-graft-future - [[emergency-critical-care/shock-fluids]], [[emergency-critical-care/critical-care]], [[blood/haemostasis-bleeding]], [[musculoskeletal/skin]]; the diagnostic residue done properly once treatment started - blood-cultures-and-LP-when-safe-and-PCR-and-the-throat-carrier-status-and-the-complement-and-splenectomy-immunology-questions-after-a-severe-invasive-case - [[clinical-skills/laboratory-tests]], [[immunology/immunodeficiency]], [[nervous-system/neuroinflammation]]; and the six-hour GP-call aftermath - the-duty-of-candour-and-learn-from-avoidable-death-reviews-and-the-safety-netting-standards-for-non-blanching-rashes and the public-and-media-education-value of every case - [[clinical-skills/patient-safety]], [[clinical-skills/records-handover]], [[public-health/prevention-promotion]].**
+**Recognise the pattern.** Fever with a **non-blanching rash**, limb pain and cold peripheries in a young adult is **meningococcal septicaemia** until proven otherwise. Leg pain, cold hands and feet and abnormal skin colour are early signs; neck stiffness and photophobia may never appear, because septicaemia can occur without meningitis.
+
+**Assess severity.** She has tachycardia, tachypnoea, borderline hypotension and poor peripheral perfusion. She is at high risk of severe illness and death.
+
+**Act immediately.**
+1. High-flow oxygen if hypoxic, and two large-bore cannulae.
+2. Blood cultures and blood for meningococcal PCR, but **antibiotics must not wait for them**. UK guidance (NICE NG240, 2024) is that a parenteral antibiotic should be given as soon as meningococcal disease is suspected; outside hospital this is benzylpenicillin if it does not delay transfer, and in hospital a third-generation cephalosporin such as ceftriaxone.
+3. Fluid resuscitation with careful reassessment, and early involvement of critical care. Lumbar puncture is **not** done while she is shocked or has a spreading rash; it would delay treatment and could harm her.
+4. **Public health.** Meningococcal disease is notifiable. The local health protection team arranges antibiotic prophylaxis (commonly a single dose of ciprofloxacin) and vaccination advice for close contacts such as her flatmates.
+
+The lesson of the case: when the pattern is recognised, the antibiotic comes first and the diagnostic tests follow.
 :::
 :::
 
-## Sepsis
+## Sepsis: definition and mechanism
 
-::: definition The sepsis syndrome and its first hours {#def-sepsis}
-**Definition and biology (sepsis-as-life-threatening-organ-dysfunction-caused-by-a-dysregulated-host-response-to-infection with the SOFA-delta arithmetic and the qSOFA-and-SIRS-and-NEWS2-triage-realism and the survival-gap-between-recognition-and-antibiotics measured in hourly mortality increments - the inflammatory-spillover pathophysiology - endotheliopathy-and-microvascular-thrombosis-and-mitochondrial-hibernation-and-catecholamine-resistance - built on [[pathology/acute-inflammation]], the cellular-energy rows in [[cell-biochemistry/metabolic-integration]], and the immune mechanics in [[immunology/innate-immunity]]); the six-hour bundle in its honest form (measure-lactate-and-repeat-it-and-get-blood-cultures-before-but-never-delaying-antibiotics-past-the-time-it-takes-and-give-broad-empiric-antibiotics-within-the-hour-shaped-by-the-syndrome-and-local-resistance-patterns-and-start-30-mL-per-kg-crystalloid-for-hypotension-or-lactate-at-or-above-4-with-repeated-assessment-of-fluid-responsiveness-and-danger - the fluid types and harm-limits argued in [[emergency-critical-care/shock-fluids]] and [[renal/acute-kidney-injury]]; vasopressors-to-hold-a-MAP-around-65-early-noradrenaline-over-dopamine-and-consider-adding-vasopressin-and-stress-dose-hydrocortisone-for-refractory-shock - [[emergency-critical-care/critical-care]], [[endocrine/adrenal]]; and the antibiotic stewardship of the broad start - de-escalate-at-48-72-hours-on-culture-and-clinical-response-and-choose-oral-switches-deliberately - [[microbiology/antimicrobials]], [[infectious-diseases/stewardship-outbreaks]]). Source, source, source (the hunt that must run concurrently with the bundle - the urine-and-chest-and-skin-and-catheter-and-abdomen-and-CNS-and-joint-and-dental-and-device-templates and the CT-with-contrast-for-the-occult-abdominal-source-and-ultrasound-for-biliary-and-pelvic-and-empyema-questions and the surgical-and-interventional-radiology-drainage-decision where antibiotics alone cannot beat an undrained collection - [[gastrointestinal/pancreas-biliary]]-cholangitis-row, [[renal/urinary-tract]], [[respiratory/lung-cancer-pleura]]-empyema, [[surgery/acute-abdomen]], [[clinical-skills/medical-imaging]], [[emergency-critical-care/critical-care]]-damage-control); and the modifiers that bend every rule (the elderly-and-frail-without-fever-and-with-delirium-as-the-only-flag - [[geriatrics-palliative/delirium-dementia-care]]; the immunosuppressed masking pus and organisms - [[immunology/immunodeficiency]], [[infectious-diseases/immunocompromised-host]]; the obesity-and-oedema-making-examination-and-lines-harder; the heart-failure-and-CKD-patients-for-whom-30-mL-per-kg-is-a-cliff-edge and the small-titrated-bolus-plus-lactate-and-perfusion-trajectory-philosophy - [[cardiovascular/heart-failure]], [[renal/chronic-kidney-disease]]; the pregnant patient resuscitated-with-a-left-tilt-and-obstetric-source-think - [[obstetrics-gynaecology/pregnancy-complications]]; and the do-not-attempt-resuscitation-and-ceiling-of-care patients for whom the bundle must be filtered through goals-of-care conversation not reflex - [[geriatrics-palliative/end-of-life-care]], [[medical-ethics-law/consent-capacity]]).**
+For 25 years sepsis was defined as infection plus a systemic inflammatory response (SIRS). That definition was sensitive but not specific: a sprained ankle with a fast pulse met it. In 2016 an international task force redefined sepsis around **organ dysfunction**, because organ dysfunction is what predicts death.
+
+::: definition Sepsis and septic shock (Sepsis-3) {#def-sepsis}
+**Sepsis** is life-threatening organ dysfunction caused by a dysregulated host response to infection. For clinical criteria, organ dysfunction is an acute **increase of 2 points or more** in the **Sequential (Sepsis-related) Organ Failure Assessment (SOFA) score**, which grades six systems (respiratory, coagulation, liver, cardiovascular, central nervous system, kidney) from 0 to 4 each. A baseline of zero is assumed unless known pre-existing dysfunction.
+
+**Septic shock** is the subset of sepsis in which circulatory and cellular abnormalities are profound enough to increase mortality substantially. Clinically, it is sepsis with **hypotension requiring vasopressors to maintain a mean arterial pressure (MAP) of 65 mmHg or more** and a **serum lactate above 2 mmol/L despite adequate fluid resuscitation**.
 :::
 
-::: example The confusion that was a foot {#ex-occult-source}
-An 80-year-old diabetic is brought in because she is "not herself" - afebrile, BP 96/54, HR 104, RR 24, lactate 3.6, urine clear on dipstick; her feet are wrapped in bandages "for corns" and the family mentions a black toe nail two weeks ago.
+In the data used to build the definition, in-hospital mortality was above 10% for sepsis and above 40% for septic shock. A global analysis of 2017 data estimated 48.9 million cases and 11 million sepsis-related deaths, about one in five deaths worldwide, with the heaviest burden in low- and middle-income countries.
+
+The definition is not a screening tool. The task force also proposed **qSOFA** (quick SOFA) as a bedside prompt: one point each for respiratory rate 22 per minute or more, altered mentation, and systolic blood pressure 100 mmHg or less. Two or more points identify patients at higher risk of a poor outcome. qSOFA is specific but misses many patients early in their illness, so the 2021 Surviving Sepsis Campaign guidelines recommend **against** using it alone to screen for sepsis. In the UK, NEWS2 is used instead.
+
+::: theorem Oxygen delivery {#thm-delivery}
+Tissue oxygen delivery is the product of cardiac output and arterial oxygen content:
+
+$$
+\dot{D}\mathrm{O_2} = \mathrm{CO} \times C_a\mathrm{O_2} \times 10, \qquad C_a\mathrm{O_2} = 1.34 \times \mathrm{Hb} \times S_a\mathrm{O_2} + 0.0225 \times P_a\mathrm{O_2}
+$$
+
+with $\dot{D}\mathrm{O_2}$ in mL/min, cardiac output (CO) in L/min, haemoglobin in g/dL, $S_a\mathrm{O_2}$ as a fraction, $P_a\mathrm{O_2}$ in kPa and $C_a\mathrm{O_2}$ in mL O₂ per dL of blood (the factor 10 converts dL to L). Almost all oxygen is carried bound to haemoglobin; dissolved oxygen is a small term. Resuscitation in shock aims to restore delivery by improving each factor: cardiac output (fluid, inotropes), haemoglobin (transfusion when very low) and saturation (oxygen).
+:::
+
+::: proof
+**Why organs fail in sepsis.** Bacterial components (pathogen-associated molecular patterns) and products of damaged cells (damage-associated molecular patterns) activate Toll-like and other receptors on innate immune cells. The response that should stay local spills into the circulation:
+
+1. **Vasodilatation.** Inducible nitric oxide synthase in vessel walls produces large amounts of nitric oxide; arterioles dilate and respond poorly to catecholamines. Systemic vascular resistance and blood pressure fall.
+2. **Capillary leak.** Inflammatory mediators damage the endothelium and its glycocalyx, so fluid and albumin move into the tissues. The patient becomes oedematous yet intravascularly depleted.
+3. **Coagulation.** Tissue factor expression drives microvascular thrombosis and consumption of platelets and clotting factors (disseminated intravascular coagulation), blocking small vessels.
+4. **Cellular dysfunction.** Mitochondria use oxygen less effectively, so organs fail even when delivery has been restored.
+5. **Immune suppression.** After the early storm, lymphocytes undergo apoptosis and monocytes become less responsive, leaving survivors open to secondary infections.
+
+**Lactate** rises when tissue perfusion is inadequate, but also when adrenaline drives glycolysis and when a failing liver clears less. A raised lactate is therefore a marker of severity, not proof of hypoxia, and a falling lactate is a useful sign that resuscitation is working.
+:::
+
+::: warning
+**A normal temperature does not exclude sepsis.** Older people, people taking corticosteroids or immunosuppressants, and people with overwhelming infection may be normothermic or **hypothermic** (below 36 °C); hypothermia in sepsis carries a worse prognosis. Beta-blockers blunt tachycardia, and a person with long-standing hypertension may be hypoperfused at a "normal" blood pressure of 110/70 mmHg. Judge the whole patient: new confusion, fast breathing, mottled skin and reduced urine output.
+:::
+
+## The first hour: initial management
+
+The core of early sepsis care is simple and has not changed for two decades: recognise it, take cultures, give the right antibiotic quickly, restore perfusion, and remove the source. In UK practice this is taught as the **Sepsis Six**: give oxygen to a target saturation, take blood cultures, give intravenous antibiotics, give intravenous fluids, measure lactate (with a full blood count), and monitor urine output.
+
+**Timing of antibiotics.** Observational studies show that mortality rises with each hour of delay in antibiotics, most clearly in septic shock. In a large New York cohort (Seymour and colleagues, 2017) each hour of delay in completing the sepsis bundle was associated with about 4% higher odds of in-hospital death. Over-hasty broad-spectrum antibiotics in people who are not septic, however, cause harm through side-effects, *Clostridioides difficile* infection and resistance. Guidelines therefore grade urgency by risk:
+
+- **NICE NG253** (November 2025, which replaced the adult parts of NG51) uses NEWS2 for people aged 16 and over who are not pregnant. A score of **7 or more** with suspected sepsis means high risk: broad-spectrum antibiotics **within 1 hour**, with senior review. A score of **5 or 6** calls for prompt review and a lactate; antibiotics should follow **within 3 hours** if infection remains the likely cause, and sooner if the lactate is above 2 mmol/L or there is acute kidney injury. Lower scores allow time for assessment, guided by clinical concern.
+- The **Surviving Sepsis Campaign (2021)** recommends antibiotics within 1 hour for possible septic shock or a high likelihood of sepsis, and a rapid assessment with antibiotics within 3 hours if concern for infection persists when shock is absent.
+
+**Blood cultures** are taken before antibiotics when this does not cause meaningful delay: at least two sets (each an aerobic and an anaerobic bottle), from separate venepunctures, with adequate volume. Other cultures follow the suspected source: urine, sputum, wound swabs, cerebrospinal fluid and joint fluid.
+
+**Fluids.** Hypotension or a lactate of 4 mmol/L or more indicates hypoperfusion. Fluid is given as boluses of crystalloid (balanced solutions such as Hartmann's are preferred to large volumes of 0.9% saline) with reassessment after each bolus: pulse, blood pressure, capillary refill, mental state, urine output, lactate and signs of fluid overload. The Surviving Sepsis Campaign suggests at least 30 mL/kg in the first 3 hours for hypoperfusion, a weak recommendation; trials comparing restrictive and liberal strategies have not shown either to be better, so individual reassessment matters more than a fixed volume.
+
+**Vasopressors.** If the MAP remains below 65 mmHg after initial fluid, a vasopressor is started. **Noradrenaline** is first-line; vasopressin is added when noradrenaline requirements are rising, and adrenaline or an inotrope may be used for cardiac dysfunction. Vasopressors can be started through a peripheral cannula while central access is arranged. For persistent shock needing noradrenaline of at least 0.25 µg/kg/min for 4 hours or more, intravenous hydrocortisone is suggested.
+
+**Source control.** Antibiotics penetrate pus, dead tissue and infected devices poorly. Draining an abscess, relieving an obstructed kidney or bile duct, debriding necrotic tissue and removing an infected line are as important as the drug, and should happen as soon as practical, usually within hours.
+
+::: widget plot
+f: d + (x - d)/3
+x: 60, 200
+y: 30, 150
+sliders: d=50:30:110:1
+hlines: 65
+labels: \text{MAP (mmHg)}
+caption: Mean arterial pressure estimated from systolic pressure (horizontal axis) and diastolic pressure (slider $d$) with the bedside formula MAP ≈ DBP + (SBP − DBP)/3. The dashed line marks the usual resuscitation target of 65 mmHg. Lower the diastolic pressure, as happens in vasodilated septic shock, and see how a "reassuring" systolic pressure can hide a MAP below target. A simplified teaching model, not a monitoring tool.
+:::
+
+::: example The arithmetic of the first hour {#ex-numbers}
+A 70-kg man with pneumonia has blood pressure 84/42 mmHg, pulse 118 per minute, haemoglobin 10 g/dL, $S_a\mathrm{O_2}$ 0.88 and $P_a\mathrm{O_2}$ 7.0 kPa. Estimate (a) his MAP, (b) the fluid volume corresponding to 30 mL/kg, and (c) his arterial oxygen content.
 ::: solution
-**Sepsis with the source you find by undressing the patient - the diabetic foot until proven otherwise ([[#def-sepsis]], [[endocrine/diabetes-complications]]): the undressing-principle - fever-absent-exam-complete-every-orifice-every-device-every-bandage and the foot-neuro-ischaemic-classification-and-probe-to-bone-and-occult-plantar-collection hunt - [[clinical-skills/physical-examination]], [[nervous-system/motor-systems]]-neuropathy-row; the syndrome bundle - cultures-and-broad-empiric-cover-shaped-for-mixed-diabetic-foot-and-severity-and-recent-antibiotics-and-MRSA-risk and the imaging-for-osteomyelitis-and-gas-and-deep-space-tracking - [[microbiology/bacteria]], [[clinical-skills/medical-imaging]]; the source-control reality - that antibiotics cannot sterilise dead bone or an undrained abscess and the vascular-surgery-and-podiatry-and-orthopaedic-triage between debridement-and-revascularisation-and-amputation-conversations-done-early-not-after-week-two and the intensive-care-overlap-when-shock-deepens - [[surgery/vascular-urological-surgery]], [[surgery/orthopaedics]], [[emergency-critical-care/critical-care]]; and the secondary-questions that determine her month - the HbA1c-and-services-and-footwear-and-nail-care-plan and the cardiology-and-kidney-review for the contrast-and-volume-decisions and the goals-of-care-and-limb-or-life-conversation done honestly with diabetes-team support - [[endocrine/diabetes-complications]], [[geriatrics-palliative/polypharmacy]], [[clinical-skills/communication]], [[medical-ethics-law/consent-capacity]].**
+(a) $\text{MAP} \approx 42 + (84-42)/3 = 42 + 14 = 56$ mmHg, below the target of 65.
+
+(b) $30 \times 70 = 2100$ mL. This is a ceiling for the first 3 hours given in boluses with reassessment, not a volume to pour in regardless.
+
+(c) $C_a\mathrm{O_2} = 1.34 \times 10 \times 0.88 + 0.0225 \times 7.0 = 11.79 + 0.16 = 11.95$ mL/dL. Normal is about 20 mL/dL. Both the anaemia and the hypoxaemia reduce oxygen delivery, and oxygen therapy to a saturation of 94–98% (lower for people at risk of hypercapnia) will improve it more than anything done to the dissolved term.
 :::
 :::
 
-::: example The post-operative day three fever {#ex-wind-water-wound}
-Day 3 after emergency laparotomy for perforated diverticulitis, a 67-year-old spikes 39.1 with HR 114; the wound is lightly erythematous at one corner, the chest is clear, the urinalysis shows 12 white cells with a catheter in situ, and the drain output has turned turbid; she is on co-amoxiclav and metronidazole since operation.
-::: solution
-**The surgical fever taxonomy run properly - wind, water, wound, walk, wonder drugs, and the one that matters here, the abdomen ([[#def-templates]], [[surgery/gastrointestinal-surgery]]): at-day-three-the-atelectasis-pneumonia-catheter-and-DVT-questions-are-real-but-turbid-drain-output-after-perforation-is-an-anastomotic-or-collection-problem-until-CT-says-otherwise - the-contrast-CT-for-organised-collection-versus-generalised-peritonitis-versus-ischaemia-and-the-senior-surgeon-re-examination-not-the-junior-antibiotic-escalation reflex - [[clinical-skills/medical-imaging]], [[surgery/acute-abdomen]]; the syndromic bundle - cultures-from-blood-urine-wound-and-drain-and-respiratory-if-indicated-and-repeat-lactate-and-FBC-and-renal-function-and-review-of-antibiotic-adequacy-for-enteric-organisms-with-resistance-context-and-the-CT-guided-drainage-versus-return-to-theatre-decision - [[microbiology/bacteria]], [[microbiology/laboratory-diagnosis]], [[emergency-critical-care/critical-care]]; the do-not-miss mimics - the-drug-fever-and-line-infection-and-clostridioides-collateral-damage-and-the C. difficile and acalculous cholecystitis collateral investigations in the febrile ICU patient - [[gastrointestinal/bowel-disease]], [[gastrointestinal/pancreas-biliary]]; and the escalation-honesty - the-source-control-first-argument-told-clearly-to-the-ward-team-and-the-goals-review-when-re-laparotomy-carries-mortality-of-its-own and the documented-antibiotic-timeouts-at-48-72-hours - [[surgery/perioperative-care]], [[infectious-diseases/stewardship-outbreaks]], [[medical-ethics-law/consent-capacity]].**
+### Choosing the first antibiotic
+
+The first antibiotic is **empirical**: chosen before the organism is known, from the likely source, the likely organisms, local resistance patterns, the patient's allergies and recent antibiotic exposure. Within 48–72 hours, culture results allow it to be narrowed (**targeted therapy**).
+
+::: definition Empirical therapy by source {#def-templates}
+An **empirical regimen** is an antibiotic choice that covers the organisms most likely to cause infection at a given site in a given host. Typical sources and organisms in adults:
+
+| Source | Common organisms | Principle of empirical choice |
+|---|---|---|
+| Community-acquired pneumonia | *Streptococcus pneumoniae*, *Haemophilus influenzae*, atypicals (*Mycoplasma*, *Legionella*) | Severity-guided (CURB-65); a beta-lactam, plus a macrolide or doxycycline for atypical cover in more severe disease |
+| Urinary tract / pyelonephritis | *Escherichia coli* and other Enterobacterales, *Enterococcus* | Gram-negative cover according to local resistance; consider ESBL risk |
+| Intra-abdominal and biliary | Enterobacterales, anaerobes, enterococci | Gram-negative plus anaerobic cover, and source control |
+| Skin and soft tissue | *Streptococcus pyogenes*, *Staphylococcus aureus* | Anti-streptococcal and anti-staphylococcal beta-lactam; MRSA cover if colonised |
+| Meningitis | *S. pneumoniae*, *Neisseria meningitidis*; *Listeria* in the old and immunocompromised | High-dose third-generation cephalosporin; add amoxicillin for *Listeria* risk |
+| Unknown source, septic shock | Any of the above | Broad cover from the local sepsis guideline, narrowed early |
+
+Local guidelines translate these principles into named drugs, because resistance differs between hospitals and countries.
 :::
+
+::: example A confused woman without a fever {#ex-occult-source}
+A 78-year-old woman is brought in from home with two days of confusion. Temperature 36.4 °C, pulse 104 per minute, blood pressure 98/56 mmHg, respiratory rate 24 per minute. Her chest is clear and urine dipstick shows a trace of leucocytes. Bloods: white cell count 17 × 10⁹/L, bilirubin 58 µmol/L, alkaline phosphatase 410 U/L, ALT 160 U/L, creatinine 150 µmol/L (baseline 80), lactate 3.4 mmol/L. She winces when her right upper quadrant is palpated.
+
+Is this a urinary tract infection? What is the source, and what does management need beyond antibiotics?
+::: solution
+**Sepsis is present** despite the normal temperature: new confusion, tachypnoea, relative hypotension, a raised lactate and acute kidney injury (creatinine nearly doubled).
+
+**The urine is a distraction.** Asymptomatic bacteriuria and dipstick leucocytes are common in older women and do not explain the picture. Labelling this "UTI" would miss the real source.
+
+**The source is the biliary tree.** Cholestatic liver tests with a raised bilirubin, right upper quadrant tenderness and sepsis suggest **acute cholangitis**, usually from a stone obstructing the common bile duct. The classic triad of fever, jaundice and right upper quadrant pain is often incomplete in older people.
+
+**Management.** Blood cultures, then antibiotics covering Enterobacterales and anaerobes according to local guidance; fluid resuscitation with reassessment; urgent ultrasound to look for a dilated duct; and **biliary drainage** (usually ERCP) as source control. Without drainage, antibiotics alone often fail.
+:::
+:::
+
+## After the first hour
+
+### Reading the results
+
+**Blood cultures** usually flag positive within 12–48 hours. A Gram stain gives the first clue (Gram-positive cocci in clusters suggest staphylococci; Gram-negative rods suggest Enterobacterales or *Pseudomonas*), and identification and susceptibility follow. Rapid molecular methods can shorten this further ([[microbiology/laboratory-diagnosis]]).
+
+Not every positive culture is real. **Coagulase-negative staphylococci**, *Cutibacterium* and diphtheroids in one bottle out of several sets are usually skin contaminants. The same organism in several sets, a short time to positivity, or a prosthetic device in the patient make true infection more likely. *Staphylococcus aureus* in a blood culture is **never** dismissed as a contaminant.
+
+**Inflammatory markers** (C-reactive protein, procalcitonin) support but do not make the diagnosis. Their main value is in following the trend and helping decide when to stop antibiotics.
+
+### The 48–72 hour review
+
+Every antibiotic prescription is reviewed at 48–72 hours with the results in hand. The options are: **stop** (no infection, or another diagnosis), **switch** from intravenous to oral, **change** to a narrower agent, **continue** and set a duration, or move to outpatient parenteral therapy. This is the UK "Start smart, then focus" approach, developed further in [[infectious-diseases/stewardship-outbreaks]]. Trials keep showing that shorter courses work for many infections; for example, 7 days was non-inferior to 14 days for many hospital bloodstream infections (the BALANCE trial, 2024; *S. aureus* bacteraemia was excluded).
+
+### Culture-negative sepsis and the mimics
+
+Cultures are negative in a large minority of patients with sepsis, often because antibiotics were given first. Before accepting "culture-negative sepsis", consider conditions that look like it:
+
+- **Non-infective inflammation**: acute pancreatitis, extensive burns, major trauma, vasculitis, adult-onset Still's disease.
+- **Cardiovascular**: pulmonary embolism, myocardial infarction with cardiogenic shock, aortic dissection.
+- **Endocrine and metabolic**: adrenal crisis, thyroid storm, diabetic ketoacidosis.
+- **Drugs and toxins**: drug fever, DRESS, serotonin syndrome, neuroleptic malignant syndrome, salicylate poisoning, alcohol withdrawal.
+- **Anaphylaxis** and **transfusion reactions**.
+- **Malignancy**, especially lymphoma, and haemophagocytic lymphohistiocytosis.
+
+::: example Fever after an operation {#ex-wind-water-wound}
+A 64-year-old man had a right hemicolectomy for cancer. On day 1 his temperature was 38.1 °C and settled without treatment. On day 5 he spikes to 38.9 °C, his abdomen becomes more tender, his pulse rises to 115 per minute and his white cell count is 21 × 10⁹/L. How does the day of onset guide thinking, and what is the likely cause?
+::: solution
+**Timing is a useful guide.** Fever in the first 48 hours after major surgery is usually part of the inflammatory response to tissue injury and often settles without treatment, as on day 1 here. From around day 3, infections become more likely: pneumonia, urinary infection related to the catheter, and infection of intravenous lines. Around days 5–7, **anastomotic leak**, intra-abdominal abscess and wound infection are typical. After the first week, think also of venous thromboembolism, drug fever and *C. difficile* infection. The student mnemonic "wind, water, wound, walking, wonder drugs" covers these sources, though the timings overlap.
+
+**This patient** has new fever, worsening abdominal tenderness and tachycardia on day 5 after a bowel anastomosis. **Anastomotic leak** must be excluded first. He needs sepsis assessment, blood cultures, broad Gram-negative and anaerobic cover, an urgent CT of the abdomen with contrast, and early surgical review, because a leak needs **source control** (drainage or re-operation). Looking only at his chest and urine would risk missing a surgical emergency.
+:::
+:::
+
+::: history
+The modern idea of sepsis is young. In 1991 a consensus conference led by Roger Bone defined sepsis as infection plus the **systemic inflammatory response syndrome** (SIRS). A 2001 revision added more signs but kept the concept. In 2001 Emanuel Rivers and colleagues reported that protocol-driven "early goal-directed therapy" with central venous monitoring reduced mortality in one emergency department. This shaped sepsis care for a decade, until three large trials, ProCESS (USA, 2014), ARISE (Australasia, 2014) and ProMISe (UK, 2015), found no benefit over usual care. By then usual care had itself improved: the parts of the bundle that mattered were early recognition, early antibiotics and adequate resuscitation. In 2016 the Third International Consensus Definitions (Sepsis-3), led by Mervyn Singer and Clifford Deutschman, moved the definition from inflammation to organ dysfunction. In 2017 the World Health Assembly adopted a resolution making sepsis a global health priority.
 :::
 
 ::: quiz
-The single most important antibiotic-timing statement in sepsis is:
-- [x] Give appropriate broad-spectrum antibiotics within one hour while cultures are being obtained, without delaying for investigations
-- [ ] Always await culture results before starting
-- [ ] Antibiotics matter less than fluids
-- [ ] Oral therapy is adequate if lactate is under 4
+Under the Sepsis-3 definitions, which patient has **septic shock**?
+- [ ] A patient with pneumonia, a temperature of 39.5 °C, pulse 120 per minute and white cell count 18 × 10⁹/L
+- [ ] A patient with pyelonephritis whose blood pressure rises from 85/50 to 112/68 mmHg after 1 litre of crystalloid
+- [x] A patient with cholangitis who needs noradrenaline to keep the MAP at 65 mmHg after fluid resuscitation and whose lactate is 4.1 mmol/L
+- [ ] A patient with cellulitis and a lactate of 2.5 mmol/L who is normotensive
 ::: solution
-**Hour-one-appropriate-therapy drives outcome; cultures-should-not-cost-time-not-antibiotics ([[#def-sepsis]], [[microbiology/antimicrobials]]); "appropriate"-means syndrome-and-resistance-pattern-shaped-not-narrow-for-comfort and the de-escalation discipline follows at 48-72h - [[infectious-diseases/stewardship-outbreaks]]; the fluid-antibiotic-and-source-control-triplet each independently matter - [[emergency-critical-care/shock-fluids]].**
+Septic shock requires **both** a vasopressor requirement to maintain a MAP of 65 mmHg or more **and** a lactate above 2 mmol/L despite adequate fluid. The first patient meets the old SIRS criteria but no organ dysfunction is described. The second responded to fluid and needs no vasopressor. The fourth has a raised lactate and may have sepsis, but is not in shock.
 :::
 :::
-
-::: widget plot
-f: 7.6*x; 3.0*x
-x: 0, 6
-y: 0, 50
-labels: \text{hours from septic shock onset to antibiotics},\ \%\text{mortality-increase-from-baseline};\ \text{with delayed resuscitation};\ \text{with early recognition bundle}
-caption: The hourly decay curve behind the one-hour rule ([[#def-sepsis]]): each hour of delay in effective therapy measurably raises mortality, and the bundle of early antibiotics plus lactate measurement plus fluids plus vasopressors attenuates the slope - the trial and cohort heritage behind sepsis campaigns and their current personalised-physiology refinements ([[emergency-critical-care/shock-fluids]], [[epidemiology-ebm/observational-studies]], [[public-health/health-systems-economics]]).
-:::
-
-## Mimics, syndromes and systems
-
-::: definition The syndrome templates {#def-templates}
-**Meningitis and CNS infection (the headache-fever-neck-stiffness-photophobia-rationale with the rash-and-shock-caveat that purpura-meningococcal-sepsis-doesn't-need-meningism and the immunocompromised-and-neonate-and-over-60-listeria-coverage-list and the CT-before-LP-only-for-specific-indications rule and the dexamethasone-for-pneumococcal-and-Hib-evidence and the TB-meningitis-and-HIV-coinfection-chronicity-with-its-own-hydrocephalus-and-infarct-fate and the encephalitis-herpes-simplex-treat-empirically-aciclovir-early-personality-change-seizure-olfactory-hallucination-clues - [[nervous-system/neuroinflammation]], [[infectious-diseases/hiv]], [[infectious-diseases/immunocompromised-host]]); pneumonia (the severity-scored-ambulatory-versus-hospital-versus-critical-illness pathway with CURB-65-and-PSI-realism and the atypical-and-legionella-and-post-viral-staphylococcal-and-aspiration-flavours and the parapneumonic-effusion-and-empyema-drainage-reflex and the do-not-repeat-chest-X-ray-routine rule - [[respiratory/respiratory-infections]], [[respiratory/lung-cancer-pleura]], [[microbiology/bacteria]]); urinary and abdominal templates (the urosepsis-from-obstruction-emergency-decompression-percutaneous-nephrostomy-or-stent-decision and the cholangitis-hour-clock-and-ERCP-era-logic and the appendicitis-and-perforation-and-diverticular-and-ischaemic-bowel templates where surgery is the antibiotic - [[renal/urinary-tract]], [[gastrointestinal/pancreas-biliary]], [[gastrointestinal/bowel-disease]], [[surgery/acute-abdomen]], [[surgery/gastrointestinal-surgery]]); endovascular and device infections (infective-endocarditis-the-Duke-criteria-logic-and-the prolonged-IV-or-oral-step-down-trial-era-endocarditis-antibiotic-marathon-and-the-surgery-for-heart-failure-abscess-persistent-bacteraemia-and-Staphylococcus-aureus-early-discussion-indications and the line-infection-diagnosis-pair-with-differential-time-to-positivity-and-the-salvage-versus-remove-decision-and-the-prosthetic-joint-and-graft-associations - [[cardiovascular/valve-congenital-disease]], [[infectious-diseases/healthcare-infections]], prosthetic-joint infection in [[surgery/orthopaedics]]); and bone, joint and skin templates (the-septic-arthritis-same-day-washout-and-the-osteomyelitis-prolonged-culture-directed-therapy-and-the-necrotising-fasciitis-pain-out-of-proportion-toxicity-surgeon-now-rule and the Clostridioides-difficile-and-neutropenic-enterocolitis-and-toxic-megacolon-territory - [[musculoskeletal/bones-joints]]-septic-joint-row, [[surgery/orthopaedics]], [[microbiology/bacteria]], [[gastrointestinal/bowel-disease]], [[surgery/gastrointestinal-surgery]]).**
-:::
-
-::: example The diarrhoea after antibiotics {#ex-cdiff}
-A 76-year-old ten days into co-amoxiclav for a chest infection develops profuse watery diarrhoea, cramps, fever 38.6, WCC 24, creatinine 156, tender abdomen with guarding; CT shows pancolonic wall thickening.
-::: solution
-**Clostridioides difficile infection, severe, approaching complicated - the iatrogenic epidemic still growing ([[#def-templates]]-GI, [[gastrointestinal/bowel-disease]], [[microbiology/bacteria]]): the severity-grading-and-test algorithm - faecal-toxin-and-glutamate-dehydrogenase-or-NAAT-with-preformed-toxin-testing-and-the-do-not-test-formed-stool-or-swab rule and the lactate-and-creatinine-and-albumin-and-WCC-severity-columns and the hypotension-ileus-megacolon-peritonitis-complicated-markers - [[clinical-skills/laboratory-tests]], [[gastrointestinal/clinical-nutrition]]; the treatment-now set - stop-the-inciting-antibiotic-if-clinically-possible-and-start-oral-vancomycin-or-fidaxomicin-per-current-guidance-and-consider-rectal-vancomycin-plus-IV-metronidazole-in-ileus-and-surgical-and-ITU-early-co-management-for-complicated-disease-with-colectomy-versus-diverting-ileus-decisions-and-the-fluid-electrolyte-and-thromboprophylaxis-and-nutrition-support - [[microbiology/antimicrobials]], [[surgery/gastrointestinal-surgery]], [[emergency-critical-care/critical-care]], [[blood/thrombosis-anticoagulation]]; the infection-control reflex - contact-precautions-and-soap-and-water-not-hand-rub-for-spores-and-single-or-bowel-occupied-room-and-environmental-cleaning-with-sporecidal-agents-and-the-ward-outbreak-threshold-notifying-microbiology-and-infection-control-teams - [[infectious-diseases/healthcare-infections]], [[microbiology/infection-control]], [[infectious-diseases/stewardship-outbreaks]]; and the prevention-ledger - the-antibiotic-stewardship-audit-that-produced-this-case-and-the-recurrence-strategies-fidaxomicin-and-bezlotoxumab-and-faecal-microbiota-transplant-evidence-and-the-nosocomial-transmission-chain-mapping and the medication review of her PPI and laxative context - [[infectious-diseases/stewardship-outbreaks]], [[gastrointestinal/bowel-disease]]-IBD-mimic-and-microbiota-rows, [[microbiology/microbiota]].**
-:::
-:::
-
-
-## The host decides the script
-
-Two patients with identical organisms can need opposite medicine, because infection is a negotiation between microbe and host. The diabetic foot, the cirrhotic with ascitic infection, the asplenic patient overwhelmed within hours by encapsulated organisms, the renal patient with an obstructed infected system, the woman with puerperal sepsis, the man with alcoholic ketoacidosis masking abdominal catastrophe, and the older adult whose only sign of urosepsis is delirium all teach the same sentence: ask what this body can and cannot do, then ask what source this body hides ([[immunology/immunodeficiency]], [[endocrine/diabetes-complications]], [[gastrointestinal/liver-disease]], [[renal/urinary-tract]], [[obstetrics-gynaecology/pregnancy-complications]], [[geriatrics-palliative/delirium-dementia-care]], [[renal/acid-base-disorders]]). The same principle governs the fever that never finds an organism: neutropenic and drug-modified hosts culture-negative because antibiotics or timing or fastidious organisms conspire, and the right response is better source-hunting and imaging and sometimes treating the syndrome anyway, not diagnostic surrender after two sterile bottles ([[microbiology/laboratory-diagnosis]], [[clinical-skills/medical-imaging]]).
-
-
-## After recovery: the disposition and the sequel
-
-Deciding where a septic patient is cared for is a clinical decision with survival attached. The patients who need critical care are the ones with vasopressor requirement, respiratory failure, altered consciousness, acidosis-clearance failure or a source needing immediate intervention; the patients who die on general wards are disproportionately the ones who "did not look that bad" at 4 pm on a Friday, which is why escalation criteria, observation frequency and senior-attender thresholds must be written, taught and honoured rather than improvised [[emergency-critical-care/critical-care]], [[clinical-skills/patient-safety]]. Equally, the patients who survive need a named discharge identity, because post-sepsis is a real syndrome - fatigue, cognitive fog, myopathy and neuropathy, new or worsened kidney function, psychological morbidities indistinguishable from and frequently comorbid with PTSD, depression and anxiety, and a measurable excess risk of subsequent infection and cardiovascular events. Good services therefore hand over with a written sepsis summary, a medication and organ-follow-up plan, screening for the psychological sequelae that nobody asks about unless asked, and a frank conversation about recurrence risk and when to re-attend - the last being the single sentence most likely to prevent the next hour-one delay [[psychiatry/mood-disorders]], [[psychiatry/anxiety-disorders]], [[renal/chronic-kidney-disease]], [[clinical-skills/records-handover]], [[public-health/prevention-promotion]]. Vaccination against pneumococcus, influenza and, where indicated, meningococcus and Haemophilus after invasive disease is the closing act of the admission and often the one that never happens [[public-health/vaccination-programmes]], [[immunology/immunodeficiency]].
 
 ## Where this leads
 
-The organisms, virulence mechanisms and resistance behind every regimen in [[microbiology/bacteria]], [[microbiology/bacterial-pathogenesis]] and [[microbiology/antimicrobials]]; the host defects that shape atypical presentations in [[immunology/immunodeficiency]] and [[infectious-diseases/immunocompromised-host]]; the resuscitation science in [[emergency-critical-care/shock-fluids]] and [[emergency-critical-care/critical-care]]; the antimicrobial governance in [[infectious-diseases/stewardship-outbreaks]].
-
-One vocabulary warning before the templates: the words colonisation, infection and disease carry treatment decisions. A positive urine culture without symptoms in a catheterised or elderly patient is colonisation and antibiotics usually cause more harm than benefit; the same organism in a bloodstream with shock is a reason for hours-one therapy. Learning to say which of the three is in front of you - and to write it that way in the notes so the next clinician does not "treat the result" - is among the highest-yield stewardship skills any ward doctor can practise, and it is the daily work of every microbiology conversation in [[infectious-diseases/stewardship-outbreaks]] and [[microbiology/laboratory-diagnosis]].
-
-::: history
-**Sepsis thinking as a moving target: the Hippocratic-Septic-art and the nineteenth-century surgical-fever-and-puerperal-fever epidemiology - Semmelweis and Holmes and the handwash before germ theory - [[medical-ethics-law/research-ethics]] and the hygiene battle in [[infectious-diseases/healthcare-infections]]; Lister's antisepsis and the nosocomial-infection science it founded; the Weil-and-Shumacker shock-physiology of the mid-twentieth century and the reframing of sepsis as a circulatory-and-metabolic syndrome; the 1991-and-2003-consensus-constructions of SIRS-and-severe-sepsis-and-septic-shock and the Rivers-early-goal-directed-therapy-eruption that changed emergency-department resuscitation and its later Three-Rivers-ProCESS-And-ProMISE-and-ARISE-And-ABLE-deflation and the surviving-sepsis-campaigns-bundle-politics that made hour-one-antibiotics global ritual and the 2016-Sepsis-3-redefinition-to-organ-dysfunction-dropping-SIRS - [[epidemiology-ebm/randomised-trials]], [[epidemiology-ebm/systematic-reviews]], [[public-health/health-systems-economics]]; the hydrocortisone meta-analyses and the balanced-solution-versus-saline-trials - [[endocrine/adrenal]], [[emergency-critical-care/shock-fluids]]; and the antibiotic-stewardship lineage from the dysentery-ward-isolation-logic through the Sale-by-prescription-era-activism and the carbapenem-resistance alarm that made antimicrobial governance a WHO global-action-plan subject - [[microbiology/antimicrobials]], [[public-health/global-health]].**
-:::
-
-::: exercise Apply the travel rule {level=2}
-A 34-year-old returns from a month in sub-Saharan Africa without prophylaxis; day 4 of fever, rigors, headache and diarrhoea; and the clinic closes in 40 minutes and he looks "a bit fluish". Decide and justify.
-::: solution
-**Fever-in-a-returning-traveller-is-malaria-until-proven-otherwise-and-malaria-kills-in-hours-not-days ([[#def-fever]], [[infectious-diseases/tropical-infections]]): never-send-home-without-testing - same-hour rapid-antigen-test-and-thick-and-thin-films-with-repeat-q12-24h-if-first-set-negative and the on-call parasitology service on the phone and the severity-markers-looked-for-blindedly-jaundice-confusion-bleeding-acidosis-renal-failure-anaemia-parasitaemia-percentage - [[clinical-skills/laboratory-tests]], [[renal/acute-kidney-injury]], [[blood/anaemia]]; the-differential-held-loosely - dengue-and-typhoid-and-rickettsial-and-hepatitis-and-arbovirus-and-SARS-CoV-2-adjacent and the do-not-start-empiric-chloroquine-and-miss-severity-testing point - [[microbiology/bacteria]], [[microbiology/viruses]]; the-when-positive-pathway - uncomplicated-oral-ART-vs-severe-IV-artsunate-icu-territory-and-public-health-notification-and-no-blood-donation-window - [[emergency-critical-care/critical-care]], [[blood/transfusion]], [[public-health/communicable-disease-control]]; and the-systems-autopsy-of-the-clinic-closing-at-6pm - the-out-of-hours-malaria-testing-route-that-should-exist-and-the-travel-clinic-pre-departure-lesson-learned-in-hindsight - [[public-health/health-systems-economics]], [[public-health/prevention-promotion]].**
-:::
-:::
-
-::: exercise Teach neutropenic fever {level=2}
-Write the one-page ward card given to every chemotherapy patient: what fever means, what to do, what not to do.
-::: solution
-**The-card ([[immunology/immunodeficiency]], [[infectious-diseases/immunocompromised-host]], [[public-health/health-systems-economics]]): the-threshold - one-temperature-at-or-above-38-or-two-readings-over-37.5-or-shivering-or-feeling-hot-and-wrong-counts-and-the-why-no-waiting-for-a-rigour explanation; the-action - phone-the-named-oncology-triage-line-day-and-night-and-attend-for-bloods-and-urine-and-chest-film-and-IV-antibiotics-within-the-hour-no-driving-alone-if-feverish and the-do-not-take-your-own-antibiotics-or-paracetamol-and-carry-on-traffic-jam; the-why - you-may-have-no-pus-and-no-fever-pattern-because-neutrophils-make-the-signs-and-the-common-organisms-are-your-own-gut-and-skin-and-the-line - [[microbiology/bacteria]], [[clinical-skills/patient-safety]]; the-everyday-prevention-list - hand-hygiene-and-food-safety-and-avoiding-sick-contacts-and-toothbrush-versus-razor-and-socks-and-gardening-and-shower-versus-bath-and-the-mouth-care-routine - [[public-health/prevention-promotion]], the food-safety and mouth-care rows; and the-what-changed-locally - the-neutropenic-sepsis-bucket-and-direct-access-blood-cultures-and-the-noon-huddle-between-oncology-and-microbiology that makes the card true - [[microbiology/laboratory-diagnosis]], [[clinical-skills/records-handover]].**
-:::
-:::
+Shock physiology and fluid choice are developed in [[emergency-critical-care/shock-fluids]], and organ support in [[emergency-critical-care/critical-care]]. Infection in people with weakened immunity, including neutropenic sepsis, is in [[infectious-diseases/immunocompromised-host]]. Infections linked to devices and hospital care are in [[infectious-diseases/healthcare-infections]]. How to choose, review and stop antibiotics is in [[infectious-diseases/stewardship-outbreaks]], and the drugs themselves in [[microbiology/antimicrobials]]. The returning traveller with fever is in [[infectious-diseases/tropical-infections]].
 
 ::: summary
-- Fever is a sign, not a diagnosis: assess ill-appearance and organ function first, hunt the source by template, and let exposure history narrow the organism list.
-- Sepsis is time-dependent organ injury; the bundle works because hours matter - antibiotics, cultures-while-not-delaying, measured fluids, early noradrenaline, source control.
-- The source hunt is concurrent, not sequential: undress, image when uncertain, and drain or resect what antibiotics cannot reach.
-- Special hosts rewrite presentations - elderly, neutropenic, immunosuppressed, pregnant, device-bearing - and a normal temperature has never excluded serious infection.
-- Iatrogenic infections - lines, urine catheters, antibiotics themselves - are the only fevers entirely under our control; prevention and stewardship are part of every sepsis chapter.
-- Survivors leave hospital with a new chronic condition called post-sepsis; the discharge letter, organ follow-up, psychological screening and vaccination plan are bundle components, not kindness extras.
+- Fever is a raised hypothalamic set point driven by IL-1, IL-6, TNF and prostaglandin E₂; hyperthermia is a failure of heat loss with a normal set point.
+- The febrile patient is assessed in two steps: how ill (ABCDE, NEWS2, red flags), then where the infection is (history, exposures, host, devices, examination).
+- Sepsis (Sepsis-3) is life-threatening organ dysfunction caused by a dysregulated response to infection, measured as a rise of 2 or more in the SOFA score. Septic shock adds vasopressor need for a MAP of 65 mmHg and a lactate above 2 mmol/L despite fluids.
+- A normal temperature, a normal-looking blood pressure or a negative urine dipstick does not exclude sepsis.
+- Initial care: cultures, early antibiotics graded by risk (within 1 hour for the highest risk), fluid boluses with reassessment, noradrenaline for persistent hypotension, and early source control.
+- Review antibiotics at 48–72 hours: stop, switch, narrow or set a duration. Consider sepsis mimics when cultures are negative.
 :::
 
 ## Exercises
 
-::: exercise Build the first hour {level=1}
-For a hypotensive, confused, febrile patient on a medical ward: list your first-hour actions in order with times.
+::: exercise Mean arterial pressure {level=1 check="60"}
+A patient's blood pressure is 88/46 mmHg. Estimate the mean arterial pressure in mmHg using MAP ≈ DBP + (SBP − DBP)/3.
 ::: solution
-**The-bundle ([[#def-sepsis]], [[emergency-critical-care/acute-assessment]]): recognise-and-escalate-to-a-senior-immediately-with-observation-frequency-upped; ABCDE-oxygen-and-two-point-access-and-lactate-and-blood-cultures-and-FBC-U&E-LFT-coagulation-and-urine-dip-and-chest-film-and-start-empiric-antibiotics-per-syndrome-and-local-policy-within-the-hour - [[clinical-skills/laboratory-tests]], [[microbiology/antimicrobials]]; 30-mL-per-kg-balanced-crystalloid-in-titrated-boluses-with-reassessment-and-early-noradrenaline-for-persistent-hypotension-with-senior-and-critCare-involvement - [[emergency-critical-care/shock-fluids]]; source-undress-and-image-and-surgical-or-radiological-drainage-booking; and the-communication-and-ceiling-review - the-goals-of-care-question-for-the-frail-patient and the-family-informed-note - [[geriatrics-palliative/end-of-life-care]], [[clinical-skills/records-handover]].**
+$\text{MAP} \approx 46 + (88-46)/3 = 46 + 14 = 60$ mmHg. This is below the usual target of 65 mmHg.
 :::
 :::
 
-::: exercise Choose empirical cover {level=1}
-Give empirical antibiotic logic for: neutropenic sepsis; community-acquired severe pneumonia with cavitation after influenza; native-valve endocarditis with day-3 positive Staphylococcus aureus blood cultures.
+::: exercise Scoring qSOFA {level=1 check="2"}
+A 55-year-old man with cellulitis has a respiratory rate of 24 per minute, blood pressure 108/66 mmHg, pulse 112 per minute, temperature 38.6 °C, and is newly disorientated in time. What is his qSOFA score?
 ::: solution
-**Neutropenic-sepsis - anti-pseudomonal-beta-lactam-backbone-with-syndrome-extensions-and-aminoglycoside-and-glycopeptide-niches-and-dose-and-sampling-urgency - [[immunology/immunodeficiency]], [[infectious-diseases/immunocompromised-host]], [[microbiology/antimicrobials]]; severe-necrotising-post-influenza-pneumonia - MRSA-cover-plus-standard-severe-CAP-regimen-and-consideration-of-clindamycin-or-linezolid-toxin-suppression-in-necrotising-pneumonia-with-critCare-and-sampling-for-PVL-Staphylococcus-aureus-context - [[respiratory/respiratory-infections]], [[microbiology/bacteria]]; Staphylococcus-aureus-bacteraemia-endocarditis - early-IV-anti-staphylococcal-therapy-with-source-control-of-lines-and-metastatic-foci-audit-brain-spine-joints-and-echo-progression-TTE-then-TOE-and-the-2-6-week-duration-and-surgery-indication-discussion-with-the-endocarditis-team - [[cardiovascular/valve-congenital-disease]], [[infectious-diseases/healthcare-infections]], [[nervous-system/motor-systems]].**
+Respiratory rate 22 or more: 1 point. Altered mentation: 1 point. Systolic pressure 100 mmHg or less: no (108). Pulse and temperature are not part of qSOFA. The score is **2**, which marks a higher risk of poor outcome and should prompt a search for organ dysfunction. A score below 2 would not exclude sepsis.
 :::
 :::
 
-::: exercise Interpret the lactate {level=2}
-A septic patient's lactate is 4.2 on admission, 3.8 after 2 L fluid, and the BP is unchanged but urine output improved. What does the trajectory mean and what next?
+::: exercise A fluid volume {level=1 check="1920"}
+A woman weighing 64 kg has septic shock with a lactate of 5 mmol/L. What volume in mL corresponds to 30 mL/kg of crystalloid?
 ::: solution
-**Lactate-clearance-is-a-response-biomarker-not-a-goal-and-perfusion-endpoints-matter-as-much ([[#def-sepsis]], [[emergency-critical-care/shock-fluids]]): a-small-fall-with-stable-hemodynamics-suggests-incomplete-resuscitation-or-non-hypoperfusion-lactate-contributors-liver-cleanup-and-type-B-mechanisms or ongoing source-uncontrolled-disease - [[gastrointestinal/liver-disease]], [[cell-biochemistry/metabolic-integration]]; next - assess-fluid-responsiveness-dynamically-passive-leg-raise-or-stroke-volume-variation-rather-than-more-blind-boluses-and-start-noradrenaline-instead-of-chasing-millilitres-and-repeat-lactate-and-image-for-the-occult-source-and-consider-vasopressin-and-hydrocortisone-escalation-per-critCare - [[emergency-critical-care/critical-care]], [[clinical-skills/medical-imaging]], [[endocrine/adrenal]]; and the-do-not-do - do-not-treat-the-number-with-bicarbonate-or-more-fluids-in-a-non-responsive-ventilated-heart - [[renal/acid-base-disorders]], [[cardiovascular/heart-failure]].**
+$30 \times 64 = 1920$ mL. In practice this is given as repeated boluses, each followed by reassessment of perfusion and of signs of fluid overload, rather than as a single fixed volume.
 :::
 :::
 
-::: exercise Run the LP decision {level=2}
-A 30-year-old with fever, headache, photophobia and neck stiffness is drowsy but has no focal signs, no rash, and a normal glucose. LP or CT first? What else at the same moment?
+::: exercise One bottle out of four {level=2}
+A 70-year-old man admitted with a stroke develops a temperature of 37.9 °C. Two sets of blood cultures are taken. After 40 hours, one aerobic bottle out of the four grows coagulase-negative staphylococci. He has no intravenous line in place and no prosthetic material, and he is now afebrile. A junior doctor suggests starting vancomycin. What do you advise?
+::: hint
+Think about which organism, how many bottles, how long to positivity, and what the host has implanted.
+:::
 ::: solution
-**The-indications-not-the-drowsiness-decide ([[#def-templates]], [[nervous-system/neuroinflammation]]): no-focal-deficit-no-seizure-no-rapid-progression-no-immunosuppression-no-papilloedema-and-GCS-adequate-means-LP-proceed-and-do-not-CT-delay-antibiotics-for-a-normal-CT-first-argument and the-aciclovir-and-antibiotics-started-before-or-during-the-procedure-if-any-delay-occurs - [[clinical-skills/clinical-reasoning]], [[microbiology/viruses]]; simultaneous-actions - blood-cultures-and-dexamethasone-with-or-before-first-antibiotic-dose-and-glucose-and-lactate-and-CT-or-MRI-later-for-empyema-or-cerebritis-or-venous-sinus-questions and the-herpes-simplex-encephalitis-suspicion-index-for-behaviour-change-and-seizures - [[nervous-system/epilepsy]], [[infectious-diseases/immunocompromised-host]]; the CSF interpretation-grid - neutrophilic-versus-lymphocytic-and-protein-and-lactate-and-glucose-ratio-and-Gram-stain-and-PCR-panel-and-culture-times and the-do-not-stop-aciclovir-until-HSV-PCR-negative-and-time-point-right rule - [[clinical-skills/laboratory-tests]]; and the public-health-twin-duty - notify-and-contact-tracing-and-prophylaxis-and-the-resistance-and-serotyping-questions - [[public-health/communicable-disease-control]].**
+This is almost certainly a **contaminant**. Coagulase-negative staphylococci are skin commensals; growth in one bottle of four, after a long time to positivity, in a patient without a line or prosthetic material, and with no ongoing fever, fits contamination during venepuncture. Vancomycin would add toxicity, cost and resistance pressure without benefit. The advice is to not treat, to review the patient clinically, and to repeat cultures only if he becomes unwell. The answer would differ if he had a prosthetic heart valve, a pacemaker or a central line, or if the same organism grew in several sets.
 :::
 :::
 
-::: exercise Handle the line fever {level=2}
-A haemodialysis patient via tunnelled catheter has fever with rigors "during the flush"; blood cultures from line and vein grow coagulase-negative staphylococci at day 2 in line-set only... actually both sets positive, and the patient is stable. Decide: organism, line, duration, and the echo question.
+::: exercise Oxygen delivery {level=2 check="round(1.34*8*0.9*60 + 0.0225*8*60)"}
+A patient has haemoglobin 8 g/dL, $S_a\mathrm{O_2}$ 0.90, $P_a\mathrm{O_2}$ 8 kPa and cardiac output 6 L/min. Using [[#thm-delivery]], calculate oxygen delivery in mL/min, rounded to the nearest whole number.
 ::: solution
-**Line-related-coagulase-negative-bacteraemia-is-usually-real-in-a-device-patient-and-treat-it-as-such ([[#def-templates]], [[infectious-diseases/healthcare-infections]]): the-differential-time-to-positivity-and-dual-set-logic-and-contamination-versus-infection-arithmetic with microbiology - [[microbiology/laboratory-diagnosis]]; the-line-decision - salvage-with-antibiotic-lock-and-systemic-therapy-possible-for-uncomplicated-CoNS-versus-remove-for-tunnel-infection-or-persistent-bacteraemia-or-S-aureus-or-Candida and the-exchange-over-wire-versus-new-site-logic - [[renal/chronic-kidney-disease]]-dialysis-access-coordination, [[surgery/vascular-urological-surgery]]; the-duration-and-echo-question - typically-10-14-days-for-uncomplicated-and-longer-with-persistence and echocardiography-threshold-lowered-by-S-aureus-or-Staphylococcus-epidermidis-persistence-or-prosthesis-and-the-metastatic-spinous-and-joint-and-endovascular-sweep - [[cardiovascular/valve-congenital-disease]], [[musculoskeletal/back-pain]]-discitis-row; and the-prevention-loop - the-aseptic-technique-audit-and-flush-protocol-and-the-catheter-bundle-compliance-and-what-this-episode-changes-for-her-access-future - [[microbiology/infection-control]], [[clinical-skills/patient-safety]].**
+$C_a\mathrm{O_2} = 1.34 \times 8 \times 0.90 + 0.0225 \times 8 = 9.648 + 0.18 = 9.828$ mL/dL.
+
+$\dot{D}\mathrm{O_2} = 6 \times 9.828 \times 10 = 589.68 \approx 590$ mL/min. A normal resting value is roughly 1000 mL/min. Most of the shortfall here comes from the low haemoglobin and saturation, not from the cardiac output.
 :::
 :::
 
-::: exercise Redesign the sepsis pathway {level=3}
-Your district general hospital's sepsis deaths are being reviewed. Build the system reform: detection, treatment, audit, equity, ethics.
+::: exercise Diarrhoea on day 6 {level=2}
+A 72-year-old woman is on day 6 of intravenous co-amoxiclav for a chest infection. She develops six episodes of watery diarrhoea a day, a temperature of 38.2 °C and a white cell count of 19 × 10⁹/L. What is the most likely diagnosis, how is it confirmed, and what are the first steps in management?
 ::: solution
-**Detection - the-early-warning-scores-with-human-response-rules-and-the-obs-frequency-escalation-logic-and-the-ed-and-ward-sepsis-triage-and-the-do-not-miss-special-populations-adaptation-for-elderly-and-immunosuppressed-and-postnatal-women - [[emergency-critical-care/acute-assessment]], [[geriatrics-palliative/delirium-dementia-care]], [[immunology/immunodeficiency]], [[obstetrics-gynaecology/postnatal-period]]; treatment-bundle-reliability - the-hour-one-antibiotics-kit-access-and-fluid-protocol-and-vasopressor-early-peripherally-and-critCare-bed-access-rules-and-the-source-control-24-hour-surgery-and-interventional-radiology-capacity - [[microbiology/antimicrobials]], [[emergency-critical-care/shock-fluids]], [[emergency-critical-care/critical-care]], [[clinical-skills/patient-safety]]; the-audit-and-learning-system - sepsis-death-and-near-miss-review-with-time-to-antibiotic-and-time-to-critCare-and-to-drainage-metrics-and-the-duty-of-candour-process-and-the-avoidable-death-reduction-program - [[clinical-skills/records-handover]], [[public-health/health-systems-economics]], [[medical-ethics-law/professionalism-regulation]]; the-equity-and-ethics-layer - deprivation-and-ethnicity-presentation-delay-analysis-and-the-do-not-attempt-resuscitation-versus-sepsis-bundle-collision-and-goals-of-care-documentation-and-the-communication-with-families-when-bundle-burden-exceeds-benefit - [[public-health/determinants-inequalities]], [[geriatrics-palliative/end-of-life-care]], [[medical-ethics-law/consent-capacity]]; and the-antibiotic-governance-balance - stewardship-audit-of-broad-empiric-usage-versus-under-treatment-and-the-48-72-hour-de-escalation-rounds-and-the-C.diff-and-resistance-costs-of-the-strategy - [[infectious-diseases/stewardship-outbreaks]], [[microbiology/infection-control]].**
+The most likely diagnosis is ***Clostridioides difficile* infection**, triggered by broad-spectrum antibiotics that have disturbed the colonic microbiota. It is confirmed by testing a liquid stool sample: a screening test (glutamate dehydrogenase antigen or toxin-gene PCR) followed by a toxin test. First steps: isolate her in a single room with enteric precautions and soap-and-water hand washing (alcohol gel does not kill spores); review and if possible stop the co-amoxiclav; stop drugs that slow the gut or reduce acid where possible; assess hydration and severity (a white cell count above 15 × 10⁹/L marks severe disease); and start oral vancomycin, the first-line treatment in UK guidance. Details are in [[infectious-diseases/healthcare-infections#def-cdiff]].
+:::
+:::
+
+::: exercise Shock after a tampon {level=3}
+A 23-year-old woman presents on day 3 of her period with fever of 39.8 °C, vomiting, diarrhoea, a diffuse red rash like sunburn, blood pressure 78/40 mmHg, and confusion. Her platelets are 70 × 10⁹/L and creatinine 210 µmol/L. Give a differential diagnosis, the most likely diagnosis, and explain why the antibiotic plan differs from standard sepsis treatment.
+::: hint
+Which bacterial products act as superantigens, and how can an antibiotic reduce toxin production?
+:::
+::: solution
+**Differential**: meningococcal septicaemia, streptococcal toxic shock from another source, Gram-negative sepsis, severe drug reaction, and viral illness with shock.
+
+**Most likely**: **staphylococcal toxic shock syndrome**, linked to a retained or high-absorbency tampon. *S. aureus* produces toxic shock syndrome toxin-1, a **superantigen** that cross-links MHC class II molecules and T-cell receptors outside the normal antigen-binding groove, activating a large fraction of all T cells at once and releasing a cytokine storm. The result is fever, a diffuse erythroderma (later desquamation of palms and soles), hypotension and multi-organ failure.
+
+**Management** includes removing the tampon (source control), resuscitation, and antibiotics that kill the organism **plus a protein-synthesis inhibitor such as clindamycin**. Clindamycin reduces toxin production by bacteria that are no longer dividing rapidly, which cell-wall agents alone do not achieve. Intravenous immunoglobulin is sometimes used in severe cases to neutralise toxin. The same logic applies to streptococcal toxic shock and necrotising fasciitis ([[infectious-diseases/healthcare-infections]]).
+:::
+:::
+
+::: exercise Counting the SOFA score {level=3 check="9"}
+A 60-year-old man with peritonitis has: PaO₂ 10.5 kPa breathing air (FiO₂ 0.21); platelets 90 × 10⁹/L; bilirubin 40 µmol/L; MAP 68 mmHg without vasopressors; Glasgow Coma Scale 14; creatinine 180 µmol/L. His baseline SOFA score is assumed to be 0. Use these SOFA bands: respiratory (PaO₂/FiO₂) below 53.3 kPa = 1; platelets below 150 = 1, below 100 = 2; bilirubin 20–32 = 1, 33–101 = 2; MAP below 70 mmHg = 1; GCS 13–14 = 1; creatinine 110–170 = 1, 171–299 = 2. What is his total SOFA score, and does he meet the Sepsis-3 criterion for sepsis?
+::: solution
+Respiratory: $\text{PaO}_2/\text{FiO}_2 = 10.5/0.21 = 50$ kPa, below 53.3: **1**. Platelets 90: **2**. Bilirubin 40: **2**. MAP 68 without vasopressors: **1**. GCS 14: **1**. Creatinine 180: **2**.
+
+Total $= 1 + 2 + 2 + 1 + 1 + 2 = 9$. The rise from baseline (9 points) is far above the 2-point threshold, so he has **sepsis** with dysfunction of several organs. He is not in septic shock by definition, because he needs no vasopressor, but he needs urgent resuscitation, antibiotics and surgical source control.
 :::
 :::

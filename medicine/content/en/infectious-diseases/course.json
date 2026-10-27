@@ -5,33 +5,32 @@
   "area": "defence",
   "level": 3,
   "order": 210,
-  "tagline": "Fever and sepsis, HIV, tuberculosis, tropical and sexually transmitted infections, and antimicrobial stewardship",
-  "summary": "Infections remain a leading cause of illness and death worldwide. This course approaches infection clinically: the febrile patient and sepsis, HIV and tuberculosis, malaria and other tropical infections, sexually transmitted infections, infections in healthcare and in people with weakened immunity, antimicrobial stewardship, and outbreaks and emerging infections.",
+  "tagline": "Fever and sepsis, HIV, tuberculosis, tropical and sexually transmitted infections, infection in healthcare and in weakened immunity, and antimicrobial stewardship",
+  "summary": "Infections remain a leading cause of illness and death worldwide. This course approaches infection clinically and from the population side: the febrile patient and sepsis, HIV and tuberculosis, malaria and other tropical infections, sexually transmitted infections, infections acquired in healthcare and in people with weakened immunity, and antimicrobial resistance, stewardship and outbreak investigation.",
   "overview": [
-    "Infectious diseases are the great mimics and the great levellers: every fever without a focus, every pneumonia, every traveller's rash and every line-related sepsis is caused by a living organism with its own epidemiology. This course teaches the clinical discipline — syndromic reasoning from fever syndrome to source, from exposure history to organism, from host defences to likely bug — together with the great individual infections that dominate global burden.",
-    "It opens with fever and sepsis: the systemic inflammatory response, the sepsis bundles, and the culture-negative fevers. Then the persistent pandemics: HIV from viral lifecycle to antiretroviral strategy, treatment as prevention and the complications of immunodeficiency; tuberculosis, the world's leading infectious killer, with its microbiology, latent infection, drug regimens and resistance. Chapters then cover tropical infections by mechanism (vector-borne, water-borne, helminths), sexually transmitted infections and their syndromic management, and the infections of healthcare: line and urinary sepsis, Clostridioides difficile, surgical wounds, MRSA and outbreak-prone organisms. A chapter on the immunocompromised host — the neutropenic, the splenectomised, the transplant recipient, the person with HIV — assembles the exposure-and-deficit reasoning that makes that group diagnosable, and the course closes with antimicrobial stewardship and outbreak investigation: the public-health half of the specialty.",
-    "Throughout, the emphasis is on the logic of specifying therapy — empirical then targeted — source control, and the infection-control consequences of each diagnosis, with guidance framed by WHO and national bodies because recommendations differ by country and change."
+    "Every infection is caused by a living organism with its own biology and epidemiology, acting on a host with particular defences and exposures. This course teaches the clinical reasoning that follows from that: from a fever to its source, from the exposure history to the likely organism, from the immune defect to the infections it permits, and from empirical to targeted treatment.",
+    "It opens with fever and sepsis: how to recognise and treat sepsis early, find and control its source, and investigate fever without an obvious cause. Two chapters cover the great chronic infections: HIV, from virology and diagnosis to antiretroviral therapy, prevention and opportunistic infections; and tuberculosis, from pathogenesis to latent infection, standard treatment and drug resistance. The returning traveller and the tropics follow, with malaria first, then dengue, enteric fever, emerging viral infections and helminths, and then sexually transmitted infections, from the sexual history to syphilis serology and partner notification.",
+    "The last three chapters turn to infections that medicine itself shapes. Healthcare-associated infections covers device and surgical-site infection, Clostridioides difficile and resistant organisms. Infection in weakened immunity matches each immune defect to its organisms, with neutropenic sepsis, transplant infections and the risks of biological drugs and asplenia. The course closes with antimicrobial resistance, pharmacokinetic principles, stewardship and outbreak investigation. Guidance is UK-first (NICE, UKHSA, BHIVA, BASHH) with WHO for the global picture; doses are given as principles, because recommendations change and local guidance must be followed."
   ],
   "prerequisites": [
     "microbiology",
     "clinical-skills"
   ],
   "outcomes": [
-    "Apply the syndromic approach to fever: recognise the life-threatening causes of acute fever, localise a source, and choose empirical then targeted antimicrobials with correct use of cultures and imaging.",
-    "Define sepsis by current criteria, apply the initial management bundle, and describe the principles of organ support and de-escalation.",
-    "Describe HIV virology and lifecycle, natural history and immunodeficiency, diagnosis including acute seroconversion, the principles and classes of antiretroviral therapy, treatment as prevention, and the main opportunistic infections and their prophylaxis.",
-    "Explain Mycobacterium tuberculosis microbiology and pathogenesis, diagnose latent and active pulmonary and extrapulmonary disease, outline first- and second-line treatment principles, drug toxicity monitoring, and the epidemiology and management of drug resistance.",
-    "Recognise the major tropical infections — malaria first, with its severity criteria and emergency management — plus dengue, rickettsioses, typhoid, viral hepatitis, schistosomiasis, soil-transmitted helminths and the returning-fever differential, and use travel history systematically.",
-    "Diagnose and manage the common sexually transmitted infections including syphilis, gonorrhoea, chlamydia, genital herpes and HIV, apply contact tracing and partner notification, and understand antimicrobial-resistance pressures in gonorrhoea.",
-    "Identify healthcare-associated infections by device and site, apply the principles of line and urinary catheter care, recognise C. difficile infection and its management, and describe the control of multidrug-resistant organisms.",
-    "Reason about infection in the immunocompromised host from the nature and duration of immune deficit to likely organisms and diagnostic tests, including the neutropenic-sepsis pathway.",
-    "Explain antimicrobial resistance mechanisms and population consequences, and describe stewardship interventions and outbreak investigation step by step (case definition, curve, source, control measures)."
+    "Recognise sepsis and septic shock using current definitions and early warning scores, deliver initial management promptly, identify and control the source, and approach fever without an obvious cause systematically.",
+    "Describe HIV virology and natural history, choose and interpret HIV tests, explain the principles of antiretroviral therapy and prevention (U=U, PrEP, PEP), and recognise and prevent the main opportunistic infections.",
+    "Explain the pathogenesis of tuberculosis, diagnose pulmonary, extrapulmonary and latent infection, outline standard and drug-resistant treatment with monitoring, and apply contact tracing.",
+    "Assess the returning traveller with fever, diagnose and grade malaria and start emergency treatment, and recognise dengue, enteric fever, viral haemorrhagic fevers and important helminth infections.",
+    "Take a sexual history, diagnose and manage chlamydia, gonorrhoea, syphilis, herpes and other common sexually transmitted infections, interpret syphilis serology, and arrange partner notification.",
+    "Explain how healthcare-associated infections arise and are prevented, manage device-related and surgical-site infections, and diagnose and treat Clostridioides difficile infection.",
+    "Match immune defects to likely organisms, manage neutropenic sepsis, describe the timeline of infection after transplantation, and apply screening, vaccination and prophylaxis before immunosuppressive treatment and after splenectomy.",
+    "Explain the mechanisms and spread of antimicrobial resistance, use pharmacokinetic-pharmacodynamic principles and susceptibility data to choose antibiotics, apply stewardship interventions, and investigate an outbreak step by step."
   ],
   "chapters": [
     {
       "slug": "fever-sepsis",
       "title": "Fever and sepsis",
-      "summary": "Approach to the patient with fever, recognising sepsis and its early management.",
+      "summary": "Recognising sepsis, early management and source control, and fever without an obvious cause.",
       "requires": [
         "microbiology/bacterial-pathogenesis",
         "clinical-skills/clinical-reasoning"
@@ -40,7 +39,7 @@
     {
       "slug": "hiv",
       "title": "HIV infection",
-      "summary": "Natural history, diagnosis, antiretroviral therapy and opportunistic infections.",
+      "summary": "Virology, testing, antiretroviral therapy, prevention and opportunistic infections.",
       "requires": [
         "immunology/immunodeficiency",
         "microbiology/viruses"
@@ -49,7 +48,7 @@
     {
       "slug": "tuberculosis",
       "title": "Tuberculosis",
-      "summary": "Pathogenesis, latent and active disease, diagnosis and treatment.",
+      "summary": "Pathogenesis, pulmonary and extrapulmonary disease, treatment, latent infection and drug resistance.",
       "requires": [
         "microbiology/bacterial-pathogenesis"
       ]
@@ -57,7 +56,7 @@
     {
       "slug": "tropical-infections",
       "title": "Malaria and tropical infections",
-      "summary": "Malaria, dengue, typhoid and other infections of travellers and the tropics.",
+      "summary": "The returning traveller with fever: malaria, dengue, enteric fever, emerging viruses and helminths.",
       "requires": [
         "microbiology/fungi-parasites"
       ]
@@ -65,7 +64,7 @@
     {
       "slug": "sexually-transmitted-infections",
       "title": "Sexually transmitted infections",
-      "summary": "Chlamydia, gonorrhoea, syphilis, herpes and human papillomavirus.",
+      "summary": "The sexual history, bacterial and viral infections, syphilis serology and partner notification.",
       "requires": [
         "microbiology/bacterial-pathogenesis"
       ]
@@ -73,7 +72,7 @@
     {
       "slug": "healthcare-infections",
       "title": "Healthcare-associated infections",
-      "summary": "Surgical-site, catheter and device infections, Clostridioides difficile and resistant organisms.",
+      "summary": "Device and surgical-site infections, Clostridioides difficile and multidrug-resistant organisms.",
       "requires": [
         "microbiology/infection-control"
       ]
@@ -81,7 +80,7 @@
     {
       "slug": "immunocompromised-host",
       "title": "Infection in weakened immunity",
-      "summary": "Neutropenia, transplant recipients and opportunistic pathogens.",
+      "summary": "Immune defects and their organisms, neutropenic sepsis, transplantation, biologics and asplenia.",
       "requires": [
         "infectious-diseases/hiv"
       ]
@@ -89,7 +88,7 @@
     {
       "slug": "stewardship-outbreaks",
       "title": "Antimicrobial stewardship and outbreaks",
-      "summary": "Choosing and stopping antimicrobials, outbreak investigation and emerging infections.",
+      "summary": "Resistance mechanisms, PK/PD, stewardship and outbreak investigation.",
       "requires": [
         "infectious-diseases/fever-sepsis",
         "microbiology/antimicrobials"
@@ -100,7 +99,7 @@
     {
       "year": 1882,
       "title": "The tubercle bacillus",
-      "detail": "Robert Koch announces the aetiology of tuberculosis, with staining and culture methods and postulates for proving microbial causation; tuberculosis, the greatest killer of the age, acquires a target — though a treatment is still seventy years away.",
+      "detail": "On 24 March 1882 Robert Koch announced in Berlin that tuberculosis is caused by a bacillus, which he had stained, grown in culture and used to reproduce the disease in animals. Effective drug treatment came only in the 1940s.",
       "people": [
         "Robert Koch"
       ]
@@ -108,7 +107,7 @@
     {
       "year": 1898,
       "title": "The mosquito theory of malaria",
-      "detail": "After Laveran's 1880 discovery of the parasite, Ronald Ross — and independently Giovanni Battista Grassi — work out the complete Plasmodium lifecycle in mosquitoes, converting Golgi's clinical malaria typology into a transmissible disease that could be attacked at the vector.",
+      "detail": "Alphonse Laveran had seen malaria parasites in human blood in 1880. In 1897–1898 Ronald Ross showed that mosquitoes transmit malaria parasites (in birds), and Giovanni Battista Grassi and colleagues showed that Anopheles mosquitoes transmit human malaria, opening the way to control by attacking the vector.",
       "people": [
         "Ronald Ross",
         "Giovanni Battista Grassi",
@@ -118,7 +117,7 @@
     {
       "year": 1910,
       "title": "The magic bullet",
-      "detail": "Paul Ehrlich's team introduces salvarsan (arsphenamine) for syphilis — the first synthetic systemic antimicrobial and the proof that a chemical could target a microbe in the body, with the trial-and-toxicity trade-off that names the whole field of chemotherapy.",
+      "detail": "Paul Ehrlich and Sahachiro Hata introduced arsphenamine (Salvarsan) for syphilis, the first synthetic drug designed to target a microbe inside the body. Ehrlich called the idea a 'magic bullet', and his systematic screening of compounds founded chemotherapy.",
       "people": [
         "Paul Ehrlich",
         "Sahachiro Hata"
@@ -127,7 +126,7 @@
     {
       "year": 1929,
       "title": "Penicillin noticed",
-      "detail": "Alexander Fleming, back from holiday, notices a mould contaminant lysing staphylococci and describes the bacteriolysis; the observation sleeps a decade until Howard Florey and Ernst Boris Chain at Oxford purify, test and prove penicillin (with Norman Heatley's engineering), and the beta-lactam era begins.",
+      "detail": "Alexander Fleming published his observation that a Penicillium mould killed staphylococci on a culture plate. A decade later Howard Florey, Ernst Chain and Norman Heatley in Oxford purified penicillin and showed in 1940–1941 that it cured infections in mice and people, beginning the antibiotic era.",
       "people": [
         "Alexander Fleming",
         "Howard Florey",
@@ -138,7 +137,7 @@
     {
       "year": 1944,
       "title": "Streptomycin — and its price",
-      "detail": "The first effective treatment for tuberculosis, isolated from soil bacteria by Albert Schatz working with Selman Waksman, proves chemotherapy of a chronic intracellular infection possible; its almost immediate emergence of resistance becomes the founding lesson of stewardship and combination therapy.",
+      "detail": "Albert Schatz, working in Selman Waksman's laboratory, isolated streptomycin from a soil bacterium, the first drug active against tuberculosis. The Medical Research Council trial of 1948 showed its benefit and also the rapid emergence of resistance, which led to combination therapy for tuberculosis.",
       "people": [
         "Albert Schatz",
         "Selman Waksman"
@@ -147,7 +146,7 @@
     {
       "year": 1955,
       "title": "Field trial of the polio vaccine",
-      "detail": "The largest medical experiment to date — 1.8 million children, placebo-controlled, double-blind for the injectable Salk vaccine — demonstrates efficacy and launches mass immunisation against paralytic poliomyelitis; Sabin's oral vaccine follows in the early 1960s and together they set the eradication agenda.",
+      "detail": "On 12 April 1955 the results of the 1954 field trial of Jonas Salk's inactivated polio vaccine, led by Thomas Francis and involving about 1.8 million children, were announced: the vaccine was safe and effective. Albert Sabin's oral vaccine followed in the early 1960s, and together they made polio eradication possible.",
       "people": [
         "Jonas Salk",
         "Albert Sabin"
@@ -156,7 +155,7 @@
     {
       "year": 1981,
       "title": "A new syndrome reported",
-      "detail": "The CDC's MMWR reports Pneumocystis pneumonia and Kaposi sarcoma in five previously healthy young men in Los Angeles; within two years the aetiological retrovirus is identified (Gallo and Montagnier's groups) and named HIV, and the pandemic, its treatments and its stigma dominate two generations of medicine.",
+      "detail": "On 5 June 1981 the CDC's Morbidity and Mortality Weekly Report described Pneumocystis pneumonia in five previously healthy young men in Los Angeles, reported by Michael Gottlieb and colleagues. The causative retrovirus was identified in 1983–1984 by the groups of Luc Montagnier and Robert Gallo, and named HIV in 1986.",
       "people": [
         "Michael Gottlieb",
         "Robert Gallo",
@@ -166,7 +165,7 @@
     {
       "year": 1996,
       "title": "Combination antiretroviral therapy",
-      "detail": "David Ho and colleagues, joined by trials of protease-inhibitor combinations, show that potent multi-drug therapy suppresses HIV replication and reverses the epidemic's death curves in treated populations; HIV infection becomes a chronic disease where drugs are available and adherence is destiny.",
+      "detail": "At the International AIDS Conference in Vancouver in 1996, trials of combinations of antiretroviral drugs including protease inhibitors were presented, and David Ho and others argued for early, potent combination therapy. Deaths from AIDS fell sharply where treatment became available, and HIV became a manageable chronic infection.",
       "people": [
         "David Ho"
       ]
@@ -174,7 +173,7 @@
     {
       "year": 2014,
       "title": "Ebola and the limits of response",
-      "detail": "The West African Ebola epidemic — 28,000 cases, 11,000 deaths — exposes the gap between virological knowledge and health-system capacity, and provokes the WHO's International Health Regulations review, vaccine ring vaccination later proved in Guinea, and the 'research during outbreaks' agenda.",
+      "detail": "The West African Ebola epidemic of 2014–2016 caused more than 28,600 cases and 11,300 deaths, mainly in Guinea, Liberia and Sierra Leone, exposing weaknesses in health systems and in international response. A ring vaccination trial in Guinea in 2015 showed that the rVSV-ZEBOV vaccine protected against Ebola.",
       "people": [
         "World Health Organization"
       ]
@@ -182,25 +181,74 @@
   ],
   "references": [
     {
-      "title": "The Infectious Textbook",
-      "authors": "Standard",
+      "title": "Mandell, Douglas, and Bennett's Principles and Practice of Infectious Diseases",
+      "authors": "Bennett JE, Dolin R, Blaser MJ (eds)",
       "year": 2020,
-      "note": "The standard reference for the pathogen and the infection.",
-      "slug": "ref1"
+      "note": "9th edition. The comprehensive reference textbook of infectious diseases.",
+      "slug": "mandell"
     },
     {
-      "title": "The Infectious Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the pathogen and the system.",
-      "slug": "ref2"
+      "title": "Oxford Handbook of Infectious Diseases and Microbiology",
+      "authors": "Torok E, Moran E, Cooke F",
+      "year": 2016,
+      "note": "2nd edition. A concise UK handbook linking clinical infection to microbiology.",
+      "slug": "oxford-handbook"
     },
     {
-      "title": "Clinical Infectious",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the infection and the practice.",
-      "slug": "ref3"
+      "title": "Manson's Tropical Diseases",
+      "authors": "Farrar J, Garcia PJ, Hotez PJ, Junghanss T, Kang G, Lalloo D, White NJ (eds)",
+      "year": 2023,
+      "note": "24th edition. The standard reference on tropical infections, including malaria, dengue and helminths.",
+      "slug": "manson"
+    },
+    {
+      "title": "Suspected sepsis in people aged 16 or over: recognition, assessment and early management (NG253)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2025,
+      "note": "The current NICE guideline on sepsis in adults, used for the sepsis chapter.",
+      "slug": "nice-ng253"
+    },
+    {
+      "title": "BHIVA guidelines on antiretroviral treatment for adults living with HIV-1 2022",
+      "authors": "British HIV Association",
+      "year": 2022,
+      "note": "UK guidance on when and how to start antiretroviral therapy and on regimen choice.",
+      "slug": "bhiva-art"
+    },
+    {
+      "title": "WHO consolidated guidelines on tuberculosis: module 4: treatment and care",
+      "authors": "World Health Organization",
+      "year": 2025,
+      "note": "WHO recommendations for drug-susceptible and drug-resistant tuberculosis.",
+      "slug": "who-tb-module4"
+    },
+    {
+      "title": "UK malaria treatment guidelines 2016",
+      "authors": "Lalloo DG, Shingadia D, Bell DJ, Beeching NJ, Whitty CJM, Chiodini PL",
+      "year": 2016,
+      "note": "Journal of Infection 72:635-649. UK guidance on diagnosis, severity assessment and treatment of malaria.",
+      "slug": "uk-malaria"
+    },
+    {
+      "title": "Neutropenic sepsis: prevention and management in people with cancer (CG151)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2012,
+      "note": "NICE guidance on the recognition, empirical treatment and prevention of neutropenic sepsis.",
+      "slug": "nice-cg151"
+    },
+    {
+      "title": "Antimicrobial stewardship: systems and processes for effective antimicrobial medicine use (NG15)",
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2015,
+      "note": "NICE guidance on organisational and prescriber-level antimicrobial stewardship.",
+      "slug": "nice-ng15"
+    },
+    {
+      "title": "Modern Infectious Disease Epidemiology",
+      "authors": "Giesecke J",
+      "year": 2017,
+      "note": "3rd edition. A clear introduction to the epidemiology of infection, outbreak investigation and transmission models.",
+      "slug": "giesecke"
     }
   ],
   "next": [
