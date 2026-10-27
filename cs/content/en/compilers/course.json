@@ -7,13 +7,29 @@
   "order": 120,
   "tagline": "Lexical analysis, parsing, semantic analysis, intermediate representations, data-flow analysis and optimisation, code generation, register allocation and runtime systems",
   "summary": "A compiler translates programs into machine code that runs fast, and its techniques power many other tools, from linters to query engines. This course follows a program through the phases of a compiler — lexing, parsing, semantic analysis, intermediate representations, data-flow analysis and optimisation, instruction selection and register allocation — and ends with runtime systems and garbage collection.",
-  "overview": [],
+  "overview": [
+    "A compiler translates a program written for people into one a machine can run, and it must do so correctly for every program, quickly, and producing fast code. Meeting all three demands at once is one of the great engineering achievements of computer science, and the techniques it required — finite automata for scanning, context-free grammars and LR parsing, attribute grammars and type checking, data-flow analysis over lattices, static single assignment form, graph-colouring register allocation, garbage collection — are now used far beyond compilers, in linters and formatters, query engines, hardware synthesis, static analysers and just-in-time engines for every dynamic language.",
+    "This course follows a program through every phase of a compiler. After an overview of phases, passes and bootstrapping, it builds a lexer generator from regular expressions through Thompson's construction, subset construction and DFA minimisation; derives FIRST and FOLLOW sets and LL(1) tables for recursive-descent parsing; constructs LR(0), SLR, LR(1) and LALR(1) automata and compares them with Bison; and checks scopes and types over abstract syntax trees. The middle of the course lowers the checked program to three-address code and control-flow graphs, computes dominators and dominance frontiers to build SSA form, and formulates liveness, reaching definitions and constant propagation as fixed points of monotone functions on lattices, with proofs of termination and of the relationship between the fixed-point and meet-over-paths solutions. The last chapters select x86-64 instructions by tree tiling, leave SSA correctly, allocate registers by graph colouring with spilling and coalescing, follow the System V calling convention, and then turn to what compiled code needs at run time: activation records, closures, virtual-method tables and garbage collectors.",
+    "Everything is built and run. A single compiler for a small language, Mini, grows chapter by chapter in Python — lexer, parser, type checker, IR, SSA construction, optimiser and an x86-64 back end — and its output is assembled by GCC and executed on every test program, with real output shown. Claims about production compilers are checked against GCC 15.2, Clang/LLVM 21 and Bison 3.8 on the same machine, with versions and flags stated, so you can see how the textbook algorithms appear in real tools and where those tools go further.",
+    "The course assumes the programming-languages, theory-of-computation and computer-systems courses: grammars and automata, the semantics and type systems of the languages being compiled, and the machine-level view of x86-64 and memory. Each chapter has numbered definitions and theorems with proofs, worked examples and exercises with full solutions; the way to learn compilers is to run the code, change it, and watch what breaks."
+  ],
   "prerequisites": [
     "programming-languages",
     "theory-of-computation",
     "computer-systems"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the phases of a compiler, the interfaces between front end, middle end and back end, and how compilers are bootstrapped and ported, using T-diagrams.",
+    "Specify tokens with regular expressions and build a scanner from them by Thompson's construction, subset construction and DFA minimisation, with longest-match and priority rules.",
+    "Compute FIRST and FOLLOW sets, construct LL(1) tables, transform grammars to remove left recursion and common prefixes, and write recursive-descent and precedence-climbing parsers.",
+    "Construct LR(0), SLR, LR(1) and LALR(1) automata and tables, diagnose shift–reduce and reduce–reduce conflicts, and resolve them with precedence declarations in a parser generator.",
+    "Build abstract syntax trees, resolve names with scoped symbol tables, and implement and justify a type checker for a small imperative language.",
+    "Lower programs to three-address code and control-flow graphs, compute dominators and dominance frontiers, and construct and destruct SSA form correctly.",
+    "Formulate data-flow analyses as monotone frameworks over lattices, prove their termination, relate MFP and MOP solutions, and implement liveness, reaching definitions, constant propagation, copy propagation and dead-code elimination.",
+    "Select x86-64 instructions by tree tiling, allocate registers by graph colouring with spilling and coalescing, follow the System V calling convention, and generate assembly that runs.",
+    "Explain activation records, closure conversion, virtual-method tables and inline caches, and implement mark-sweep, copying, generational and incremental garbage collectors with their invariants.",
+    "Read the output of GCC and LLVM at different optimisation levels and explain which analyses and transformations produced it."
+  ],
   "chapters": [
     {
       "slug": "compiler-structure",
@@ -93,7 +109,136 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1957,
+      "title": "The first FORTRAN compiler",
+      "detail": "John Backus's team at IBM delivered the FORTRAN compiler for the IBM 704 after some 18 person-years of work, showing that a compiler could produce code nearly as efficient as hand-written assembly; it already performed common-subexpression elimination and register allocation by estimated frequency.",
+      "people": [
+        "John Backus"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "Algol 60, BNF and the run-time stack",
+      "detail": "The Algol 60 report defined syntax with Backus–Naur form, and Dijkstra's 'Recursive programming' introduced the stack of activation records needed for recursion and block structure; McCarthy's LISP paper of the same year introduced garbage collection.",
+      "people": [
+        "Peter Naur",
+        "Edsger W. Dijkstra",
+        "John McCarthy"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "LR parsing",
+      "detail": "Donald Knuth's 'On the translation of languages from left to right' defined LR(k) grammars and showed that they are exactly the grammars parsable deterministically bottom-up, though his tables were too large for the machines of the day.",
+      "people": [
+        "Donald Knuth"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "Regular expressions to automata",
+      "detail": "Ken Thompson's 'Regular expression search algorithm' compiled regular expressions into nondeterministic automata simulated on the fly, the construction behind lexer generators and grep.",
+      "people": [
+        "Ken Thompson"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "SLR and LALR parsing",
+      "detail": "Frank DeRemer's thesis introduced LALR parsing, and his 1971 paper 'Simple LR(k) grammars' the SLR method, making LR parsing practical with tables as small as LR(0)'s.",
+      "people": [
+        "Frank DeRemer"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "A unified approach to data-flow analysis",
+      "detail": "Gary Kildall formulated global optimisation as the iterative solution of equations over lattices and proved that it computes the meet-over-paths solution for distributive problems, building on Frances Allen and John Cocke's flow analyses at IBM.",
+      "people": [
+        "Gary Kildall",
+        "Frances Allen",
+        "John Cocke"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "Lex and Yacc",
+      "detail": "Stephen Johnson's Yacc and Mike Lesk's Lex, written at Bell Labs, made LALR(1) parser generation and DFA-based scanner generation everyday Unix tools; their descendants Flex and Bison are still in use.",
+      "people": [
+        "Stephen C. Johnson",
+        "Mike Lesk"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "Register allocation by graph colouring",
+      "detail": "Gregory Chaitin and colleagues at IBM built the first graph-colouring register allocator for the PL.8 compiler and showed that every graph arises as an interference graph; Briggs, Cooper and Torczon later added optimistic colouring and conservative coalescing.",
+      "people": [
+        "Gregory Chaitin",
+        "Preston Briggs"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "Efficient SSA construction",
+      "detail": "Ron Cytron, Jeanne Ferrante, Barry Rosen, Mark Wegman and Kenneth Zadeck showed how to compute static single assignment form efficiently using dominance frontiers; SSA became the IR of GCC (2005) and LLVM.",
+      "people": [
+        "Ron Cytron",
+        "Jeanne Ferrante",
+        "Barry Rosen",
+        "Mark Wegman",
+        "Kenneth Zadeck"
+      ]
+    },
+    {
+      "year": 2004,
+      "title": "LLVM",
+      "detail": "Chris Lattner and Vikram Adve's 'LLVM: A compilation framework for lifelong program analysis & transformation' introduced a typed SSA IR and modular pass infrastructure that now underlies Clang, Rust, Swift and many other compilers.",
+      "people": [
+        "Chris Lattner",
+        "Vikram Adve"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Compilers: Principles, Techniques, and Tools",
+      "authors": "Alfred V. Aho, Monica S. Lam, Ravi Sethi and Jeffrey D. Ullman",
+      "year": 2006,
+      "note": "2nd edition, the 'Dragon Book'. The classic reference for lexing, LL and LR parsing, syntax-directed translation, data-flow analysis and the theory of optimisation."
+    },
+    {
+      "title": "Engineering a Compiler",
+      "authors": "Keith D. Cooper and Linda Torczon",
+      "year": 2022,
+      "note": "3rd edition. A modern, practical treatment of the whole compiler with particular strength in SSA, optimisation, instruction selection and register allocation, written by contributors to those algorithms."
+    },
+    {
+      "title": "Modern Compiler Implementation in ML",
+      "authors": "Andrew W. Appel",
+      "year": 1998,
+      "note": "Builds a complete compiler for a small language step by step, with clear chapters on tree tiling, liveness, iterated register coalescing, closure conversion and garbage collection; editions in C and Java exist."
+    },
+    {
+      "title": "Advanced Compiler Design and Implementation",
+      "authors": "Steven S. Muchnick",
+      "year": 1997,
+      "note": "A detailed reference on optimisation: data-flow and alias analysis, loop optimisations, scheduling and the design of production optimisers."
+    },
+    {
+      "title": "SSA-based Compiler Design",
+      "authors": "Fabrice Rastello and Florent Bouchez Tichadou (eds.)",
+      "year": 2022,
+      "note": "A collective book on static single assignment form, from construction and destruction to SSA-based analyses and register allocation on chordal interference graphs."
+    },
+    {
+      "title": "The Garbage Collection Handbook: The Art of Automatic Memory Management",
+      "authors": "Richard Jones, Antony Hosking and Eliot Moss",
+      "year": 2023,
+      "note": "2nd edition. The comprehensive survey of garbage collection: mark-sweep, copying, generational, incremental, concurrent and real-time collectors, and their interaction with compilers."
+    }
+  ],
   "next": []
 }
