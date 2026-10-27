@@ -6,26 +6,26 @@
   "level": 4,
   "order": 300,
   "tagline": "Determinants of health, prevention, screening, vaccination programmes, global health and health systems",
-  "summary": "The health of populations depends as much on living conditions and policy as on medical care. This course covers the determinants of health and health inequalities, prevention and health promotion, screening and vaccination programmes, the control of communicable and non-communicable disease, environmental and occupational health, global health, and health systems and economics.",
+  "summary": "The health of populations depends as much on living conditions and policy as on medical care. This course covers the determinants of health and health inequalities, prevention and health promotion, screening and vaccination programmes, the control of communicable and non-communicable disease, environmental and occupational health, global health, and health systems and economics, with UK arrangements as the main example.",
   "overview": [
-    "Public health is what keeps the average lifespan rising: clean water, vaccination, accident prevention, tobacco control, screening, and health systems that deliver treatment to populations rather than to individuals who happen to arrive. Its methods are epidemiology and statistics, its units are programmes and policies, and its ethic is the population — including the uncomfortable trade-offs that a clinical encounter never has to make.",
-    "The course starts with the distribution of health: the social determinants, the measurement of inequalities and why the gradient — not just the gap — matters. Prevention is then organised by level (upstream, primordial, primary, secondary, tertiary) with health-promotion theory and the evidence for the big interventions. Screening gets its own chapter, with Wilson–Jungner-style criteria, sensitivity and specificity in real programmes, lead time and length bias and the arithmetic of overdiagnosis; vaccination programmes follow, with herd immunity, coverage thresholds, cold chains, adverse-event surveillance and communication. Communicable-disease control covers surveillance, notifiable disease, contact tracing and outbreak response, and the non-communicable chapter the risk-factor approach to cardiovascular disease, cancer, diabetes and chronic respiratory disease, including tobacco, alcohol, diet and physical activity as policy targets.",
-    "Environmental and occupational health brings air pollution, heat, toxins and work-related disease; global health covers the disease-burden transition, the International Health Regulations, One Health and universal health coverage. The final chapter examines health systems and economics: financing models, primary care as the gate, quality improvement, QALYs and cost-effectiveness, and rationing by name. Every claim about guidelines or performance is dated, because national arrangements differ and change."
+    "Public health is the work of protecting and improving the health of whole populations. Most of the gains in life expectancy over the past two centuries came from clean water and sanitation, better housing and nutrition, vaccination, safer roads and workplaces, and tobacco control, rather than from treating individual patients. Public health uses epidemiology and statistics as its methods, and programmes, policies and services as its tools.",
+    "The course begins with how health is distributed: the social determinants of health, how inequalities are measured, and why the social gradient matters. It then covers prevention and health promotion, including Rose's population strategy and behaviour change; screening, with its criteria, test performance, biases and overdiagnosis, and the UK national programmes; vaccination programmes, herd immunity and vaccine confidence; and the control of communicable disease, from surveillance and outbreak investigation to the International Health Regulations.",
+    "Later chapters deal with non-communicable disease and its main risk factors (tobacco, alcohol, diet, obesity and physical inactivity); environmental and occupational health, including air pollution, heat, lead, radon and occupational disease; global health, including the burden of disease, maternal and child health, antimicrobial resistance and universal health coverage; and health systems and economics, including QALYs, cost-effectiveness, NICE and how the NHS is financed and organised. Each chapter has worked examples and calculations. Figures and policies are dated, because they change."
   ],
   "prerequisites": [
     "epidemiology-ebm",
     "infectious-diseases"
   ],
   "outcomes": [
-    "Describe the determinants of health and the measurement of health inequalities, and explain the evidence for structural versus individual interventions.",
-    "Classify prevention (primordial to tertiary) and appraise major programmes — tobacco and alcohol control, road safety, diet and activity policy — by their study designs and effect sizes.",
-    "Apply the principles of screening: programme criteria, test performance in populations, lead-time and length bias, overdiagnosis, and the evaluation of screening by mortality versus incidence endpoints.",
-    "Explain vaccine types, schedules, herd immunity and coverage thresholds, pharmacovigilance of immunisation, and the communication strategies evidence supports when confidence wavers.",
-    "Describe surveillance and notifiable-disease systems, outbreak investigation steps, contact tracing, isolation and quarantine, and the International Health Regulations.",
-    "Summarise the risk-factor approach to non-communicable disease, the population versus high-risk strategies, and the policy levers (taxation, regulation, labelling, urban design) with their evidence.",
-    "Outline environmental and occupational exposures — air pollution, lead, asbestos, noise, heat, pesticides — their disease burdens, exposure limits and reporting duties, and the clinician's role in recognition.",
-    "Explain the global burden of disease, the health-related sustainable development goals, One Health, antimicrobial resistance as a global problem and the meaning of universal health coverage.",
-    "Compare health-system financing and delivery models, and use cost-effectiveness, QALY and budget-impact logic — and its critiques — in priority-setting debates."
+    "Describe the social determinants of health, measure health inequalities with absolute and relative measures and the slope index of inequality, and explain why structural interventions tend to reduce inequalities more than individual ones.",
+    "Distinguish the levels of prevention and the population and high-risk strategies, calculate numbers needed to treat and attributable fractions, and describe the evidence for major health promotion interventions.",
+    "Apply the criteria for screening, calculate predictive values, explain lead-time bias, length bias and overdiagnosis, and describe the UK national screening programmes and their eligibility.",
+    "Explain herd immunity and the herd immunity threshold, describe how vaccination programmes are designed, monitored and evaluated, and discuss vaccine hesitancy and how to respond to it.",
+    "Describe surveillance and notification, the steps of an outbreak investigation, contact tracing, isolation and quarantine, and the International Health Regulations.",
+    "Summarise the burden and main risk factors of non-communicable disease and the evidence for policies on tobacco, alcohol, diet and physical activity, including taxation and regulation.",
+    "Describe the health effects of air pollution, climate change, lead, radon and carbon monoxide, apply the hierarchy of control and UK occupational health law, calculate noise exposure, and take an occupational history.",
+    "Use DALYs and the main measures of maternal and child mortality, explain the epidemiological transition, antimicrobial resistance and One Health, and describe the global health institutions and universal health coverage.",
+    "Calculate QALYs, ICERs and net monetary benefit, explain opportunity cost and NICE's use of thresholds, and compare the ways health systems are financed and providers are paid."
   ],
   "chapters": [
     {
@@ -105,48 +105,48 @@
     {
       "year": 1775,
       "title": "An occupational cancer described",
-      "detail": "Percivall Pott attributes scrotal cancer among London chimney sweeps to soot and recommends washing and sweeping habits; the first clean demonstration that environment causes cancer — and that prevention, not therapy, is the answer.",
+      "detail": "Percivall Pott describes scrotal cancer in London chimney sweeps who had worked in chimneys as children, and attributes it to soot. It was the first cancer linked to an occupational exposure.",
       "people": [
         "Percivall Pott"
       ]
     },
     {
-      "year": 1798,
+      "year": 1796,
       "title": "Vaccination begins",
-      "detail": "Edward Jenner, basing himself on milkmaids' exemption from smallpox, inoculates James Phipps with cowpox and challenges him with smallpox; within 180 years the world's most deadly virus is declared eradicated after a coordinated global campaign — public health's founding proof that populations can be protected by design.",
+      "detail": "Edward Jenner inoculates James Phipps with material from a cowpox lesion and later shows that he is protected against smallpox. His work, published in 1798, led to vaccination programmes and, nearly two centuries later, to the eradication of smallpox.",
       "people": [
         "Edward Jenner"
       ]
     },
     {
-      "year": 1848,
-      "title": "The sanitation report",
-      "detail": "Edwin Chadwick's report on the sanitary condition of the labouring populations, built from Poor Law evidence, turns miasma theory into sewers, water and factory inspection; the public-health acts that follow make disease prevention an object of state administration.",
+      "year": 1842,
+      "title": "The sanitary report",
+      "detail": "Edwin Chadwick's Report on the Sanitary Condition of the Labouring Population of Great Britain links disease and early death to poor drainage, water supply and housing. It led to the Public Health Act 1848 and the building of sewers and clean water supplies.",
       "people": [
         "Edwin Chadwick"
       ]
     },
     {
       "year": 1854,
-      "title": "Cholera and the pump handle",
-      "detail": "John Snow's epidemiological argument against the water companies' supply, and his map of the Broad Street outbreak, show that a statistical comparison — not bacteriology, which came later — can justify removing an exposure; the template for environmental outbreak investigation.",
+      "title": "Cholera and the Broad Street pump",
+      "detail": "John Snow maps cases of cholera in Soho around a water pump in Broad Street and compares death rates between customers of two water companies, showing that cholera is spread by contaminated water decades before its cause was identified.",
       "people": [
         "John Snow"
       ]
     },
     {
       "year": 1948,
-      "title": "Two new institutions",
-      "detail": "The World Health Organization is founded, defining health as complete well-being, and Britain's National Health Service opens care to all irrespective of payment; between them the postwar settlement makes health a state responsibility with an international coordinator.",
+      "title": "The WHO and the NHS",
+      "detail": "The World Health Organization is founded on 7 April 1948, and the National Health Service begins on 5 July 1948, providing care to everyone in the UK free at the point of use.",
       "people": [
         "World Health Organization",
         "Aneurin Bevan"
       ]
     },
     {
-      "year": 1969,
-      "title": "The Black Report groundwork",
-      "detail": "Britain's government establishes research into class differences in health, culminating in the 1980 Black Report's conclusion that material conditions drive the gradient — the modern start of inequalities research and of the policy argument that health is mostly made outside clinics.",
+      "year": 1980,
+      "title": "The Black Report",
+      "detail": "The Working Group on Inequalities in Health, chaired by Sir Douglas Black and set up in 1977, reports that the gap in health between social classes is large and mainly explained by material conditions. Its findings shaped later research and policy on health inequalities.",
       "people": [
         "Douglas Black"
       ]
@@ -154,25 +154,25 @@
     {
       "year": 1980,
       "title": "Smallpox eradicated",
-      "detail": "The World Health Assembly certifies eradication — the first human disease destroyed by deliberate campaign, achieved through surveillance-and-containment rather than mass vaccination, and the existence proof that global public health action can succeed.",
+      "detail": "The World Health Assembly declares smallpox eradicated, after a WHO programme that combined vaccination with surveillance and containment around cases. It remains the only human disease to have been eradicated.",
       "people": [
-        "Frank Fenner",
+        "Donald Henderson",
         "William Foege",
-        "Donald Henderson"
+        "Frank Fenner"
       ]
     },
     {
       "year": 1986,
       "title": "The Ottawa Charter",
-      "detail": "The first International Conference on Health Promotion issues the Ottawa Charter — build healthy public policy, create supportive environments, strengthen community action, develop personal skills, reorient services — the vocabulary of health promotion still used by the WHO and national programmes.",
+      "detail": "The first International Conference on Health Promotion adopts the Ottawa Charter, with five areas for action: build healthy public policy, create supportive environments, strengthen community action, develop personal skills and reorient health services.",
       "people": [
         "World Health Organization"
       ]
     },
     {
       "year": 2015,
-      "title": "The sustainable development goals",
-      "detail": "UN member states adopt the 2030 agenda with health-related goals from maternal survival to universal health coverage and the two-thirds cut in premature NCD mortality — targets that let clinicians and economists argue for spending with an agreed scoreboard.",
+      "title": "The Sustainable Development Goals",
+      "detail": "UN member states adopt the 2030 Agenda. Goal 3 includes targets to reduce maternal and child deaths, end epidemics of AIDS, tuberculosis and malaria, reduce premature mortality from non-communicable diseases by one-third, and achieve universal health coverage.",
       "people": [
         "United Nations"
       ]
@@ -180,25 +180,60 @@
   ],
   "references": [
     {
-      "title": "The Public Health Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the population and the system.",
+      "title": "Oxford Textbook of Global Public Health",
+      "authors": "Roger Detels, Quarraisha Abdool Karim, Fran Baum, Liming Li and Alastair H. Leyland (eds)",
+      "year": 2022,
+      "note": "Seventh edition. A comprehensive reference on the scope, methods and practice of public health worldwide.",
       "slug": "ref1"
     },
     {
-      "title": "The Public Health Guide",
-      "authors": "Textbook",
-      "year": 2019,
-      "note": "A rigorous treatment of the population and the system.",
+      "title": "Donaldsons' Essential Public Health",
+      "authors": "Liam J. Donaldson and Paul D. Rutter",
+      "year": 2017,
+      "note": "Fourth edition. A concise introduction to public health with a UK focus, covering epidemiology, health protection, health improvement and health services.",
       "slug": "ref2"
     },
     {
-      "title": "Clinical Public Health",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the system and the practice.",
+      "title": "Rose's Strategy of Preventive Medicine",
+      "authors": "Geoffrey Rose, with commentary by Kay-Tee Khaw and Michael Marmot",
+      "year": 2008,
+      "note": "Rose's 1992 classic on the population and high-risk strategies of prevention and the prevention paradox.",
       "slug": "ref3"
+    },
+    {
+      "title": "Principles and Practice of Screening for Disease",
+      "authors": "J. M. G. Wilson and G. Jungner",
+      "year": 1968,
+      "note": "WHO Public Health Papers No. 34. The source of the classic criteria for screening programmes.",
+      "slug": "ref4"
+    },
+    {
+      "title": "Immunisation against Infectious Disease (the Green Book)",
+      "authors": "UK Health Security Agency",
+      "year": 2013,
+      "note": "The UK reference on vaccines and vaccination procedures; individual chapters are updated online as schedules change.",
+      "slug": "ref5"
+    },
+    {
+      "title": "Fair Society, Healthy Lives: The Marmot Review",
+      "authors": "Michael Marmot and colleagues",
+      "year": 2010,
+      "note": "The strategic review of health inequalities in England, which introduced proportionate universalism and six policy objectives.",
+      "slug": "ref6"
+    },
+    {
+      "title": "Hunter's Diseases of Occupations",
+      "authors": "Peter J. Baxter, Tar-Ching Aw, Anne Cockcroft, Paul Durrington and J. Malcolm Harrington (eds)",
+      "year": 2010,
+      "note": "Tenth edition. The standard reference on occupational disease, exposures and their prevention.",
+      "slug": "ref7"
+    },
+    {
+      "title": "Methods for the Economic Evaluation of Health Care Programmes",
+      "authors": "Michael F. Drummond, Mark J. Sculpher, Karl Claxton, Greg L. Stoddart and George W. Torrance",
+      "year": 2015,
+      "note": "Fourth edition. The standard text on cost-effectiveness and cost-utility analysis, QALYs and decision modelling.",
+      "slug": "ref8"
     }
   ],
   "next": []

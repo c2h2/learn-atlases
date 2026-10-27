@@ -1,141 +1,262 @@
-Health economics is the clinical science of scarcity: every decision not to treat is a decision somewhere else to treat, and the discipline studies how systems make that choice - by queue, price, ration or planning. **This chapter covers the economist's toolkit (opportunity cost, marginal analysis, the quality-adjusted life year and its critics, cost-effectiveness thresholds and the appraisal institutions built around them), health-systems financing (revenue raising, pooling, purchasing and the universal-health-coverage triangle), and delivery economics (workforce supply and pay-for-performance, pharmaceutical pricing and the innovation incentives, and digital-health evaluation), ending with the pandemic's forced experiment in non-marginal resource allocation.**
+Every health system has less money, staff and time than it could use. A new cancer drug costing £80,000 a course, an extra community nursing team, a smoking cessation service and a shorter waiting list for hip replacements all compete for the same budget. When the NHS pays for one of them, the money is not available for the others. Health economics studies how such choices are made and how they could be made better; health systems research studies how care is financed, organised and delivered, and with what results.
 
-## The toolkit
+This chapter introduces the basic ideas of health economics (scarcity, opportunity cost and why health care markets do not work like other markets), the methods of economic evaluation (cost-effectiveness analysis, the quality-adjusted life year and the incremental cost-effectiveness ratio), how NICE uses them, and how health systems are financed and organised, with the NHS as the main example. These ideas matter for clinicians, who make most of the decisions that spend health care resources.
 
-::: definition Scarcity, appraisal and the quality-adjusted life year {#def-toolkit}
-**The foundational concepts are deceptively simple. Opportunity cost is the real price of everything: the funded programme's cost is the next-best programme it displaced, a sentence that makes every formulary decision a hidden rationing decision. Marginal analysis asks what one more unit is worth (the last ICU bed's value in a surge equals the value of the care displaced at the margin, which is why the NHS's escalation plans are applied economics). The production-function literature studies what turns money into health (staffing-mix studies, the nurse-to-bed ratios' outcome slopes, the primary-care-density mortality associations) and finds organisation matters as much as volume, which is the institution-economics answer to 'does spending work'. The evaluation hierarchy: cost-minimisation (identical outcomes), cost-effectiveness (natural units - life-years, mmHg), cost-utility (the QALY combining length and quality of life), and cost-benefit (monetised everything, including life, which economists prefer and publics distrust). The QALY carries its standing objections (the disability-paradox of lower valuations by people with disabilities, the age and severity blind spots, the distributional insensitivity that pure QALY-maximisation treats equals unequally), answered by institutional practice: NICE's cost-effectiveness 'range not threshold' (the 20-30 thousand pounds-per-QALY convention with end-of-life and orphan-drug exceptions), the 'severity modifier' additions, and the explicit 'budget-impact tests' that sit beside appraisals. The appraisal institutions are the field's greatest invention: HTA bodies (NICE's technology appraisals, CADTH and PBAC and G-PAQ-equivalents, the WHO's HTA-move initiative for adopting rather than repeating assessments), their methods consensus (reference-case analyses, discount rates, comparators and the 'does-it-beat-the-real-world' questions), and the managed-entry agreements (the confidential discounts and outcomes-based arrangements whose evaluations show discounts large and measurement harder). Health technology assessment's disinvestment cousin (the 'recycling-research-into-practice-not-the-reverse' finding, the 'Choosing-Wisely'-campaigns' modest effects and the stronger 'de-implementation-frameworks') completes the loop: economics is not just funding the new but stopping the bad.**
+## Scarcity and opportunity cost {#scarcity}
+
+::: definition Opportunity cost and efficiency {#def-opportunity}
+- **Scarcity**: resources (money, staff, beds, time) are limited relative to the needs and wants they could meet, so choices must be made.
+- The **opportunity cost** of using a resource in one way is the benefit that would have been obtained from its best alternative use. In a health system with a fixed budget, the opportunity cost of funding a new treatment is the health lost by the patients whose care is displaced to pay for it.
+- **Technical efficiency** means producing a given output with the fewest resources (for example, doing day-case surgery rather than inpatient surgery when outcomes are the same).
+- **Allocative efficiency** means distributing resources between different activities so as to produce the greatest total benefit (for example, deciding how much to spend on prevention compared with treatment).
+- **Equity** concerns the fairness of the distribution of resources and health. **Horizontal equity** means equal treatment for equal need; **vertical equity** means appropriately unequal treatment for unequal need.
 :::
 
-## The money
+Opportunity cost is easy to forget because the people who lose out are usually invisible: they are not in the room when a decision to fund a new drug is made, and they do not know that a service they might have used was never provided. The benefit of a new treatment is concentrated in identifiable patients; its cost is spread across many unidentifiable ones. Economic evaluation tries to make both sides visible.
 
-::: definition Financing systems and universal coverage {#def-financing}
-**Health systems answer four questions differently, and the answers predict performance. Raising revenue: general taxation (the Beveridge lineage), social insurance (the Bismarckian sickness-funds with payroll contributions), private insurance (risk-rated and therefore adverse-selection-prone, the medical-savings-account experiment), and out-of-pocket payments (regressive, under-insuring and still a fifth of global spending). Pooling is where solidarity lives: community-rated, cross-subsidising risk pools spread the sick among the well, while experience rating and risk-stratified pricing re-segregate them - the American individual-market lesson. Purchasing separates money from provision: the internal-market and 'providers-compete-for-patients' era, the diagnosis-related-group payment revolution (the prospective-payment study that turned hospitals' length of stay into economics and produced coding-behaviour to match), and capitation-and-global-budget trade-offs (volume incentives versus innovation-suppression). Provider payment is behavioural economics at national scale: fee-for-service's supply-induced-demand evidence (the supplier-induced-demand studies and the roster-effect of adding consultants), salary with its quiet under-capacity, pay-for-performance's 'what-measured-gets-improved-and-what-not-gets-neglected' gaming literature, bundled payments and the accountable-care-organisation risk experiments, and diagnosis-related-group gaming (upcoding and cream-skimming, both documented and both auditable). Universal health coverage is the sustainable-development-goal frame: coverage of population, services and cost, measured by the financial-protection indicators (the catastrophic-and-impoverishing-expenditure lines) and the service-coverage index - and the finding that most countries sit between the polar systems in 'mixed' configurations whose study requires this whole vocabulary. The equity instruments: means-tested exemptions and their take-up failures, the 'inverse-care-law' financing corollaries, supply-side subsidies, and the social-health-extension programmes that enrol informal workers (the Rwanda-and-Thailand-and-Ghana-district-schemes evidence with their free-riding-and-enrollment-hurdles findings). The pandemic economics: the 'elective-care-backlog-as-compound-interest' models, the 'opportunity-cost-of-covid-beds' estimates, excess-death accounting beyond viral confirmation, and the 'health-spending-as-investment-not-liability' argument that the recovery documents all made and that no treasury has fully funded.**
+### Why health care is different {#market-failure}
+
+In 1963 the economist Kenneth Arrow explained why markets for health care do not behave like markets for ordinary goods. Several features lead to **market failure**, in which an unregulated market would produce an inefficient or unfair result:
+
+- **Uncertainty.** Illness is unpredictable and can be very expensive, so people want insurance; but insurance markets have their own problems.
+- **Information asymmetry.** Doctors know much more than patients about what care is needed. Patients rely on doctors as their agents, which creates a risk of **supplier-induced demand** when providers are paid for each item of service.
+- **Moral hazard.** People who are insured may use more care than they would if they paid the full price at the point of use.
+- **Adverse selection.** If insurers cannot tell who is at high risk, the people who buy insurance will be those who expect to need it, premiums will rise, and low-risk people will drop out. Insurers respond by **risk selection** ("cream-skimming"): avoiding people with pre-existing conditions.
+- **Externalities.** Some care benefits others: vaccinating one person protects those around them; treating tuberculosis prevents transmission.
+- **Equity.** Many people believe that access to health care should depend on need, not ability to pay.
+
+These failures explain why every high-income country intervenes heavily in health care: through public financing, compulsory insurance, regulation of insurers and professionals, and public provision.
+
+## Economic evaluation {#evaluation}
+
+Economic evaluation compares two or more alternatives in terms of both their costs and their consequences. The main types differ in how they measure consequences:
+
+| Type | Consequences measured as | Example question |
+|---|---|---|
+| Cost-minimisation analysis | Assumed equal; compare costs only | Is a generic drug cheaper than the branded one, with the same effect? |
+| Cost-effectiveness analysis | Natural units (cases detected, life years gained) | What is the cost per case of cancer detected by two screening strategies? |
+| Cost-utility analysis | Quality-adjusted life years (QALYs) | What is the cost per QALY gained of a new drug for multiple sclerosis compared with current treatment? |
+| Cost-benefit analysis | Money | Do the monetary benefits of a road safety scheme exceed its costs? |
+
+Cost-utility analysis is the form used by NICE, because the QALY allows comparisons across very different areas of health care.
+
+::: definition QALY and ICER {#def-qaly}
+A **quality-adjusted life year** (QALY) combines length and quality of life. Each period of life is weighted by a **utility** (health state value) on a scale on which 1 represents full health and 0 represents death (negative values, representing states considered worse than death, are possible). One QALY is one year in full health; two years at a utility of 0.5 is also one QALY.
+
+In the UK, utilities are usually obtained by asking patients to complete the **EQ-5D** questionnaire (mobility, self-care, usual activities, pain or discomfort, anxiety or depression), and converting their answers into a value using preferences elicited from the general public.
+
+The **incremental cost-effectiveness ratio** (ICER) of a new intervention compared with its comparator is
+
+$$
+\text{ICER} = \frac{C_{\text{new}} - C_{\text{old}}}{E_{\text{new}} - E_{\text{old}}} = \frac{\Delta C}{\Delta E},
+$$ {#eq-icer}
+
+the additional cost per additional QALY gained. The comparator should be the best current alternative, not doing nothing, unless doing nothing is current practice.
+
+The **net monetary benefit** at a threshold $\lambda$ (the value placed on one QALY) is $\text{NMB} = \lambda\,\Delta E - \Delta C$. An intervention is cost-effective at that threshold if its NMB is positive, which is the same as an ICER below $\lambda$ when $\Delta E > 0$.
 :::
 
-## The delivery
-
-::: definition Workforce, pharmaceuticals and digital evaluation {#def-delivery}
-**Workforce economics is delivery economics: the supply models (the training-pipeline arithmetic, the migration elasticity that makes domestic-plans national-plans, and the 'physician-induced-demand' and 'induced-delivery' debates), the distribution problem (the rural-and-disadvantaged-area shortages that price and mandate and loan-repayment schemes only partly fix - the 'compulsion-works-better-than-invite' Australian-and-Danish-rural-service findings with their quality-of-care caveats), and remuneration design (the 'salaried-versus-fee-for-service-in-primary-care' natural experiments across health systems). The pharmaceutical economy is the field's live frontier: the 'R-and-D-cost-myth-versus-actual-returns' debates (the 'cost-per-approval'-studies-adjacent numbers on both sides), patent cliffs and 'pay-for-delay'-and-'authorized-generic'-strategies, the 'reference-pricing-and-international-price-comparison' policy export, the 'volume-based-procurement'-and-'central-tender' savings evidence, the 'loss-of-patent-protect-and-pipeline-incentive' argument, the 'orphan-drug-redefinition-gaming' of rare-disease pricing, the 'value-based-pricing-for-gene-therapies-and-the-'amortisation-and-outcome-uncertainty'-problems (the 'pay-per-patient-year-versus-mortgage-models'), and the 'antibiotic-pipeline-as-market-failure-exemplar' (why the 'subscription-models-like-the-UK-pilot'-and-'push-pull-incentives'-experiments exist). Digital health's evaluation economics: the 'app-overload-and-no-evidence' audits, the 'digital-therapeutics-regulatory-pathways' (the German 'DiGA'-prescription-app model), the 'telemedicine-consultation-volume-versus-substitution' studies (more contact often means more total use), and the 'AI-in-clinical-workflows-return-on-investment'-literature whose honest verdict is that savings land where workflows are redesigned, not where software is merely installed. Quality and safety economics closes the chapter: the 'cost-of-avoidable-harm' studies (the admissions-for-drug-injuries-and-falls-and-infections-as-a-share-of-hospital-spend), the 'negligence-versus-no-fault-compensation'-economics and its Scandinavian findings, the 'just-culture-and-reporting-systems' effect sizes, and the commissioning rule that quality improvement is cheaper than the harm it prevents but politically invisible - the same asymmetry that makes prevention chronically underspent.**
-:::
-
-::: example The joint-injection appraisal {#ex-appraisal}
-A company seeks funding for a viscosupplementation knee injection at 900 pounds per course; its trial shows a small pain benefit against placebo with a weaker comparator against physiotherapy; the local formulary committee meets fortnightly.
+::: example An ICER for a new drug {#ex-icer}
+A new drug for a chronic inflammatory condition costs £3,000 a year more than current treatment, including savings from fewer hospital admissions. Patients live about 10 years with or without it, but it improves their utility from 0.60 to 0.75. Calculate the ICER (a) without discounting and (b) discounting both costs and QALYs at 3.5% a year, with costs and QALYs in the first year not discounted.
 ::: solution
-**Appraisal-in-practice ([[#def-toolkit]], [[#def-delivery]], [[musculoskeletal/osteoarthritis]]): the committee's real questions: Is the effect real (the sham-controlled trials' lesson - the placebo responses in device trials, the minimal-clinically-important-difference thresholds for pain scores) and is it worth having (the incremental cost per QALY against the conventional range, the 'comparator-should-be-best-supported-care-not-cheapest' submission bias)? The evidence review: the submission's internal inconsistencies (the selective trial inclusion, the utility weights, the modelling assumptions - committee training is partly archaeology of assumptions), and the independent assessment centre's appraisal of the appraisal. The decision architecture: the cost-effectiveness estimate lands in the 'uncertain zone', the budget-impact test matters because the at-risk population is everyone over fifty with aching knees, and the equality-and-need considerations are flagged (the deprived populations' higher osteoarthritis burden, and the 'private-pay-versus-NHS-access' inequity if the intervention persists unequally). The decision: not-recommended with the honest reasoning and the 'evidence-gap research commissioned' clause - and, crucially, the recommendation's second limb: the physiotherapy-and-weight-and-exercise-programme that should replace it, because appraisals that only refuse are read by patients as neglect, and the disinvestment literature's strongest finding is that stopping works only when a better pathway is offered alongside. The submission lesson for the company: the comparator you choose decides your fate; the clinician lesson for the committee: the 'small effects across millions' arithmetic is where cost-effectiveness earns or loses public trust.**
+(a) Each year: $\Delta C = £3{,}000$ and $\Delta E = 0.15$ QALY. Over 10 years, $\Delta C = £30{,}000$ and $\Delta E = 1.5$ QALYs. ICER $= 30{,}000/1.5 = £20{,}000$ per QALY.
+
+(b) The discount factor for year $t$ (with $t = 0$ for the first year) is $1/1.035^{t}$. Summing over $t = 0, \ldots, 9$ gives 8.608. Discounted $\Delta C = 3{,}000 \times 8.608 = £25{,}823$; discounted $\Delta E = 0.15 \times 8.608 = 1.291$ QALYs. ICER $= 25{,}823/1.291 = £20{,}000$ per QALY.
+
+Because costs and benefits occur evenly over the same years and are discounted at the same rate, discounting does not change the ICER here. It does change the ICER when costs and benefits occur at different times. For prevention, costs come now and benefits years later, so discounting makes prevention look less cost-effective.
 :::
 :::
 
-::: example The winter that broke the electives {#ex-backlog}
-Your trust's finance director projects a 40-million-pound deficit: staff beds consumed by respiratory surges, elective recovery below plan, agency spend, and a 'no-further-escalation' quarter. The board asks for the plan; the clinical directors ask what the economics actually say.
-::: solution
-**Deficits-are-diagnoses ([[#def-financing]], [[#def-toolkit]], [[public-health/determinants-inequalities]]): the honest translation: a trust's deficit is usually activity-versus-tariff arithmetic plus the cost of variance (the winter's staffed-bed losses are real money: the opportunity cost of every closed surgical list, the agency premium that fills rosters no one would choose to fund, the delayed-discharge bed-days that are the social-care system's cost arriving in the hospital's accounts). The plan's three columns: throughput (the 'theatres-through-extended-running-versus-closure-trade', the 'community-diagnostic-hubs'-and-'virtual-ward'-substitution with their capacity-per-pound comparisons), variance (the 'escalation-and-discharge-liaison'-investment whose return is the occupancy economics, the 'roster-stability' spend whose return is the agency-premium avoided), and demand (the 'urgent-and-primary-and-community-care-avoidable-admissions' work that reduces activity but also reduces revenue - the perverse-incentive that makes activity-based payment hostile to prevention, stated in the board's own paper). The QALY-blind-spot to flag: elective backlog costs health in ways the accounts miss (the 'lost-quality-adjusted-life-years-from-nhs-waiting-times' modelling - hip replacements and cataracts are QALY factories), which is the clinical directors' strongest budget argument and the system's most chronic accounting failure. The ask, ordered: capacity-adjacent investment that cuts both cost and harm (discharge teams, virtual wards, roster stability), transparency on what the deficit actually rations (the 'list-of-what-we-stop' that rationing frameworks demand), and the winter-prevention compact with partners (the respiratory-season vaccination and PPE and urgent-care surge deals whose cost sits in four budgets and whose savings sit in none until someone counts).**
+**Discounting.** People and societies generally prefer benefits now to benefits later, and money spent now could otherwise be invested. Economic evaluations therefore convert future costs and outcomes to their **present value**: a cost or outcome $X$ occurring in $t$ years is worth $X/(1 + r)^{t}$ now, at a discount rate $r$. NICE uses 3.5% a year for both costs and health effects in its reference case, with 1.5% considered in some cases where benefits are long-lasting.
+
+::: widget plot
+f: 100*(1 + r)^(-x)
+x: 0, 50
+y: 0, 100
+sliders: r=0.035:0:0.1:0.005
+labels: \text{present value of 100 (QALYs or £)}
+caption: The present value of 100 units of cost or health occurring x years in the future, at a discount rate r. At NICE's standard rate of 3.5%, 100 QALYs gained in 20 years are worth about 50 today, and in 50 years about 18. Move the slider to see how strongly the choice of rate affects interventions such as childhood vaccination or smoking prevention, whose benefits come decades later.
 :::
+
+### The cost-effectiveness plane and dominance {#plane}
+
+Results are often shown on the **cost-effectiveness plane**, with the difference in effect on the horizontal axis and the difference in cost on the vertical axis. An intervention that is cheaper and more effective than its comparator (bottom right) **dominates** it, and should be adopted. One that is more costly and less effective (top left) is **dominated** and should be rejected. In the other two quadrants (more effective but more costly, or less effective but cheaper) a judgement is needed, using the ICER and a threshold.
+
+When several options are compared, they are ranked by effectiveness, dominated options are removed, and ICERs are calculated for each option compared with the next less effective option that remains.
+
+::: example Choosing among several strategies {#ex-dominance}
+A health board is choosing a strategy to prevent a complication. Discounted costs and QALYs per patient compared with no programme (A) are: B costs £4,000 and gains 0.10 QALY; C costs £8,000 and gains 0.25 QALY; D costs £20,000 and gains 0.30 QALY; E costs £10,000 and gains 0.20 QALY. Which strategy should be chosen at a threshold of £35,000 per QALY?
+::: solution
+**Strict dominance.** E costs more than C and gains fewer QALYs, so E is dominated and removed.
+
+**Extended dominance.** Compared with A, B has an ICER of $4{,}000/0.10 = £40{,}000$ per QALY, while C has an ICER of $8{,}000/0.25 = £32{,}000$. B is less effective than C but has a higher ICER, so a mixture of A and C could achieve B's effect more cheaply; B is **extendedly dominated** and removed.
+
+**Remaining options.** A, C, D. ICER of C against A $= £32{,}000$ per QALY. ICER of D against C $= (20{,}000 - 8{,}000)/(0.30 - 0.25) = £240{,}000$ per QALY.
+
+At £35,000 per QALY, C is cost-effective compared with A, but D is not compared with C. Choose **C**. Comparing D with A directly (ICER £66,667) would hide the fact that most of D's extra cost buys very little extra health compared with C.
+:::
+:::
+
+### NICE and the threshold {#nice}
+
+The **National Institute for Health and Care Excellence** (NICE), established in 1999, appraises new medicines and other technologies for the NHS in England (Wales and Northern Ireland generally follow its technology appraisals; Scotland has the Scottish Medicines Consortium). When NICE recommends a medicine in a technology appraisal, NHS commissioners in England must fund it, normally within 90 days.
+
+NICE's reference case uses QALYs measured with the EQ-5D, costs from the perspective of the NHS and personal social services, and a 3.5% discount rate. For many years it judged interventions with an ICER below **£20,000 per QALY** as usually cost-effective and those between £20,000 and £30,000 as acceptable with additional considerations. Following a government decision in 2025, the range was raised to **£25,000 to £35,000 per QALY** for appraisals from April 2026. Special arrangements apply: highly specialised technologies for very rare diseases are appraised against much higher thresholds, and since 2022 a **severity modifier** gives extra weight (multiplying QALY gains by 1.2 or 1.7) to treatments for conditions that cause a large proportion of a person's expected remaining healthy life to be lost. Many medicines are recommended only after the company agrees a confidential discount (a "patient access scheme"), and some through the **Cancer Drugs Fund** or managed access while more evidence is collected. The **Voluntary Scheme for Branded Medicines Pricing, Access and Growth** (VPAG) caps the growth of NHS spending on branded medicines, with companies paying back a proportion of sales above the cap.
+
+::: theorem The opportunity cost argument for a threshold {#thm-threshold}
+With a fixed budget, adopting a new intervention that costs more than current care improves total population health only if the health it gains is greater than the health lost from the services displaced to pay for it. If displaced services produce health at a cost of $k$ pounds per QALY at the margin, then a new intervention with an ICER above $k$ reduces total health, even though it benefits its own patients. The cost-effectiveness threshold should therefore reflect the marginal productivity of the health system.
+:::
+
+::: proof
+Suppose the new intervention adds cost $\Delta C$ and gains $\Delta E$ QALYs. Under a fixed budget, $\Delta C$ must be found by cutting or not expanding other services, which at the margin produce one QALY per $k$ pounds; the health lost is $\Delta C/k$. The net effect on population health is $\Delta E - \Delta C/k$, which is positive only if $\Delta C/\Delta E < k$, that is, ICER $< k$. Claxton and colleagues (2015) estimated the marginal productivity of NHS spending in England at about £13,000 per QALY, below the NICE threshold; if that estimate is correct, interventions approved with ICERs between £13,000 and the threshold displace more health than they create. The estimate is contested, and the threshold set by policy also reflects other aims, such as supporting the life sciences industry.
+:::
+
+::: example Budget impact and displaced health {#ex-budget}
+A new treatment is recommended with an ICER of £30,000 per QALY. It will cost the NHS an extra £10 million a year and gain 333 QALYs a year. If displaced NHS services produce one QALY for every £13,000 at the margin, what is the net effect on population health?
+::: solution
+Health lost from displaced services $= 10{,}000{,}000/13{,}000 \approx 769$ QALYs a year.
+
+Net effect $= 333 - 769 = -436$ QALYs a year.
+
+The treatment is "cost-effective" by the policy threshold, yet on these assumptions it reduces total population health. The losers would be patients whose care is delayed or not provided, often in services with less political visibility, such as mental health or community care. This example illustrates why the threshold matters and why some economists argue it should be lower; others argue that the marginal productivity estimate is too uncertain, or that the NHS budget is not truly fixed. A budget impact analysis, separate from cost-effectiveness, tells commissioners whether the service is affordable in the short term.
+:::
+:::
+
+**Criticisms of the QALY.** QALYs are valued equally regardless of who receives them, which some regard as fair and others regard as ignoring factors people care about, such as severity, rarity, the end of life and whether a person has dependants. QALYs may undervalue treatments for people with disabilities or long-term conditions, whose quality of life cannot rise to 1, and may miss benefits outside health, such as to carers. The EQ-5D is insensitive in some conditions, for example in mental health and hearing loss. Measures such as the **ICECAP** capability instruments and **wellbeing-adjusted life years** have been proposed as alternatives or supplements.
+
+## Health systems and financing {#systems}
+
+::: definition Health system {#def-health-system}
+The WHO defines a **health system** as all the organisations, people and actions whose primary intent is to promote, restore or maintain health. Its framework describes six **building blocks**: service delivery; health workforce; health information systems; access to essential medicines, vaccines and technologies; financing; and leadership and governance. The goals of a health system are improved health (level and equity), **responsiveness** (treating people with dignity and meeting their non-health expectations), **financial protection** (fairness in financing), and efficiency.
+
+**Health financing** has three functions: **revenue collection** (raising money), **pooling** (sharing financial risk across the population, so that the healthy subsidise the sick), and **purchasing** (paying providers for services).
+:::
+
+Countries finance health care in four main ways, and most use a mixture:
+
+- **General taxation** (the "Beveridge" model): the NHS in the UK, and systems in Scandinavia, Spain and Italy. Coverage is universal and based on residence; services are largely free at the point of use; the government controls the overall budget.
+- **Social health insurance** (the "Bismarck" model): Germany, France, the Netherlands and Japan. Compulsory contributions from employers and employees go to insurance funds (sickness funds), with the state covering people without work. Providers are often a mix of public, non-profit and private.
+- **Private health insurance**: voluntary premiums, often through employers, as for much of the working-age population in the United States. Without regulation, it tends to exclude high-risk people; in most countries it supplements public coverage.
+- **Out-of-pocket payments**: patients pay providers directly. They are the least equitable form of financing, deter use of necessary care and cause catastrophic expenditure; they make up a large share of health spending in many low-income countries ([[public-health/global-health]]).
+
+**Paying providers.** The way providers are paid affects what they do. **Fee-for-service** encourages more activity (and supplier-induced demand); **salaries** do not reward productivity; **capitation** (a fixed amount per registered person, as for UK general practice) encourages efficiency and prevention but risks under-provision and avoiding complex patients; **case-based payment** (a fixed price per episode, as in diagnosis-related groups and the former NHS "payment by results") rewards efficiency per case but can encourage early discharge and more admissions. **Pay-for-performance** schemes reward measured quality: the **Quality and Outcomes Framework** (QOF), introduced for UK general practice in 2004, improved recording and some process measures, but evidence of effects on mortality is weak, and unmeasured aspects of care can suffer.
+
+### The NHS {#nhs}
+
+The NHS was founded on 5 July 1948, based on the principles that it should meet the needs of everyone, be free at the point of delivery, and be based on clinical need, not ability to pay. Health policy is devolved: NHS England, NHS Scotland, NHS Wales and Health and Social Care in Northern Ireland are organised differently. Northern Ireland has integrated health and social care since 1973; Scotland and Wales abolished the internal market and organise care through health boards.
+
+In England, the **Health and Care Act 2022** created 42 **integrated care systems** (ICSs) from July 2022, each with an **integrated care board** (ICB) that plans and commissions most NHS services for its population, and an integrated care partnership with local authorities. The Act moved away from the competition-based approach of the Health and Social Care Act 2012. In March 2025 the government announced that NHS England would be abolished and its functions merged into the Department of Health and Social Care, with ICBs asked to reduce their running costs substantially. The **10 Year Health Plan** for England, published in July 2025, set out three "shifts": from hospital to community, from analogue to digital, and from sickness to prevention.
+
+Adult **social care** is funded and organised separately, by local authorities, and is means-tested; people with assets above a threshold pay for their own care. The boundary between free NHS care and means-tested social care, and the shortage of social care staff and funding, are major sources of delayed hospital discharges and of unequal access.
+
+::: example A health system choice {#ex-financing}
+A middle-income country with a large informal labour sector wants to move towards universal health coverage. One adviser proposes a social health insurance scheme funded by payroll contributions; another proposes expanding tax-funded primary care. Compare the options.
+::: solution
+**Social health insurance funded by payroll contributions** works well where most people are formally employed. Where much of the workforce is informal (farmers, traders, domestic workers), contributions are hard to collect, so the scheme would initially cover mainly better-off formal workers and civil servants. Covering others requires government subsidies from tax revenue, so the system ends up partly tax-funded anyway. Multiple funds fragment the risk pool unless they are merged or risk-equalised.
+
+**Tax-funded services** can cover everyone from the start, based on residence, and pool risk across the whole population. The constraints are the country's tax capacity and the political priority given to health. Expanding primary care first reaches the poorest people and addresses common conditions efficiently.
+
+**In practice**, countries that have made rapid progress (for example Thailand's Universal Coverage Scheme in 2002) have used general revenue to cover the informal sector, removed or reduced user fees, defined a benefits package using evidence on cost-effectiveness, and paid providers by capitation for primary care. Whichever model is chosen, financial protection requires limiting out-of-pocket payments, and coverage should be monitored by income group.
+:::
+:::
+
+::: warning Cost-effective is not the same as cheap or affordable
+"Cost-effective" means that an intervention offers good value for the health it produces compared with the alternatives at a given threshold. A cost-effective intervention may still increase spending (most do), and a cheap one may be poor value if it does little good. An intervention can also be cost-effective but unaffordable in the short term, if it would be given to very many people: this is why budget impact matters as well. Conversely, "saving money" is rarely the right test for prevention: most preventive interventions improve health at an acceptable cost rather than saving money, and few treatments are expected to pay for themselves.
 :::
 
 ::: quiz
-Opportunity cost in health care means:
-- [ ] The administrative cost of processing claims
-- [x] The health forgone in the next-best alternative use of the same resources
-- [ ] The price paid by insurers for a treatment
-- [ ] The overhead share of hospital tariffs
+A new drug gains 0.5 QALY per patient compared with current treatment and costs £20,000 more per patient. Which statement is correct?
+- [ ] The drug dominates current treatment.
+- [x] The ICER is £40,000 per QALY, which is above NICE's normal threshold range from April 2026.
+- [ ] The ICER is £10,000 per QALY.
+- [ ] The drug should be rejected because it increases costs.
 ::: solution
-**The funded intervention's true cost is the displaced alternative's forgone health - the invisible half of every budget decision - [[#def-toolkit]], [[#def-financing]].**
+ICER $= 20{,}000/0.5 = £40{,}000$ per QALY, above £25,000–£35,000. NICE would be unlikely to recommend it at this price unless a severity modifier, special considerations or a price discount applied. It does not dominate because it costs more. Increasing costs alone is not a reason to reject an intervention: almost all new treatments cost more; the question is whether the extra health justifies the extra cost.
 :::
 :::
 
-::: widget plot
-f: 100*(1-exp(-x/8)); 105; 0; 1; 60
-x: 0, 60
-y: 0, 100
-labels: \text{spending per capita (log-scaled illustrative)},\ \text{share}\ \text{of attainable population health};\ \text{the spending-health curve: steep early, flat later};\ \text{typical high-income position (rich, plateau, unequal)};\ \text{the equity gap: same spend, worse outcomes in deprived areas}
-caption: Above low thresholds, spending buys less and less additional health: the plateau is where allocation, organisation and equity decide outcomes ([[#def-toolkit]], [[#def-financing]]).
+::: history
+William Beveridge's report *Social Insurance and Allied Services* (1942) identified disease as one of five "giant evils" and assumed a comprehensive health service. Aneurin Bevan, as Minister of Health, launched the NHS on 5 July 1948; earlier, Otto von Bismarck had introduced compulsory sickness insurance for German workers in 1883. Kenneth Arrow's 1963 paper "Uncertainty and the welfare economics of medical care" founded health economics as a field. In 1971 Julian Tudor Hart described the "inverse care law": the availability of good medical care tends to vary inversely with the need for it in the population served. Alan Williams's 1985 analysis of the cost per QALY of coronary artery bypass grafting helped establish QALYs in British policy. NICE was established in 1999 and its threshold range was first stated explicitly in the early 2000s. The Health and Social Care Act 2012 increased the role of competition; the Health and Care Act 2022 reversed much of it in favour of integration.
 :::
 
 ## Where this leads
 
-The system comparisons continue in [[public-health/global-health]]; the safety economics in [[clinical-skills/patient-safety]]; pharmaceutical pricing with [[pharmacology/drug-development-prescribing]]; workforce and migration in [[medical-ethics-law/justice-resources]]; financing for prevention in [[public-health/prevention-promotion]] and [[public-health/screening]]; and global financing in [[public-health/global-health]].
-
-::: history
-**Health economics' founding texts came from scarcity's bedside: Arrow's 1963 paper on uncertainty and the welfare economics of medical care (its analysis of why markets cannot price competence, with professional ethics and clinical norms as the quality-assurance substitute, still explains the profession's structure), the 1970s cost-explosion literature and the health-services research that measured hospital costs and their determinants. The appraisal turn arrived with Oregon's Medicaid waiver experiment (the priority-list process that made explicit rationing a public argument) and with NICE's founding in 1999 after the postcode-lottery controversies; the appraisal bodies that spread internationally made the QALY an administrative instrument rather than an academic quarrel, and the 'threshold-versus-range' arguments plus the orphan-and-end-of-life exceptions wrote the distributional ethics back into the arithmetic. Pharmaceutical cost containment is its own policy history: the patent bargain, the price-regulation and reference-pricing systems, and the central-tender regimes whose savings proved reproducible (with the access-and-innovation counter-arguments permanently in the footnotes). Payment-reform waves followed: the Medicare prospective-payment system's 1983 diagnosis-related-group revolution and the worldwide codification of its behavioural side effects; the pay-for-performance trials with their mixed verdicts; and the user-fee abolition movement (the 'remove-the-fees-and-attendance-rises-especially-among-the-poor' evidence that made financial protection a sustainable-development target). The pandemic contributed the macro dimension: the health-share-of-GDP accounting, the excess-mortality debates that made health economics forensic demography, the non-pharmaceutical-interventions economics with their contested modelling, and the vaccine-financing mechanisms as an experiment in international cost-effectiveness and geopolitics at once. Unresolved is the founding question the discipline keeps answering technically and politics keeps asking morally: can a fair society afford to say what it will not pay for, and can it say anything else?** - [[public-health/prevention-promotion]], [[clinical-skills/patient-safety]].**
-:::
+The economic evaluation of screening and prevention programmes uses the methods in this chapter; see [[public-health/screening]] and [[public-health/prevention-promotion]]. Global financing and universal health coverage are discussed in [[public-health/global-health]]. Evidence on effectiveness, which economic evaluations depend on, comes from the methods in [[epidemiology-ebm/critical-appraisal]].
 
 ::: summary
-- Opportunity cost is the chapter's first sentence: funding anything forgoes something else, so rationing is inevitable and the only choice is whether it is explicit, fair and evidence-guided.
-- Evaluation is applied ethics: cost-utility with QALYs is flawed and indispensable, and the appraisal institutions (NICE-style HTA) are among the twentieth century's best public-health inventions precisely because they made rationing visible and contestable.
-- Financing design predicts performance: pooling spreads risk, purchaser-provider splits change incentives, and provider payment is behavioural economics at scale (fee-for-service induces volume, pay-for-performance games, diagnosis-related groups code).
-- Universal coverage is a three-sided triangle (population, services, cost protection), and out-of-payment remains the most regressive tax no government legislates.
-- Delivery economics dominates outcomes above low spending thresholds: workforce rosters, discharge flow, procurement and digital redesign move health more than marginal technologies - and avoidable harm is the system's most expensive product.
-- The pandemic proved the chapter's hardest lessons: surplus capacity is insurance, backlogs compound, and elective activity is a QALY factory whose absence the accounts do not see.
-:::
-
-## Exercises
-::: example The insulin negotiation {#ex-insulin}
-Your regional purchasing consortium faces insulin list prices triple last year's; four bidders, one new biosimilar, and patient groups have started a pricing campaign. The consortium lead asks for the negotiation strategy.
-::: solution
-**Buying-what-cannot-be-substituted ([[#def-delivery]], [[#def-financing]]): the market reading first: insulin is the essential-drug market failure (inelastic demand, near-oligopoly, switching costs and device lock-in, and the 'rebate-wall' architecture where list and net prices diverge). The leverage instruments with precedent: volume-based tender with firm award shares (the mechanisms that produced double-digit percentage savings in several national systems), biosimilar qualification and interchangeability rules written before the bid, portfolio tenders across analogues and human glibenclamide-class products, and confidential discounts with transparent savings accounting. The negotiation table's realities: the 'launch-then-raise' pattern (holding multi-year commitments back until formulary conversion is measured), the supply-security clauses (the 'diversified-manufacture-and-priority-allocation' terms written after the shortage years), and the 'state-of-manufacture-and-cold-chain' conditions. The equity audit: the list-versus-net-price divergence's effect on patient assistance and on the poorest countries' reference prices (the 'tiered-pricing-and-the-most-favoured-nation'-problem the campaigns exposed), and the consortium's disclosure policy - the 'no-secret-savings-in-public-health' position. The outcome measures to publish: net price per defined daily dose, switch completion, stock-out days, and patient out-of-pocket shares. The strategy sentence: in buyer-side-monopsony situations, process is price - the consortium that tenders credibly and consistently buys cheaper than the one that negotiates angrily.**
-:::
-:::
-
-::: example The private-sector question {#ex-private}
-Half of first-contact care in your country's poor districts is private (pharmacists, mission clinics, unregistered providers); the ministry's new quality policy ignores them 'because regulation is hard'. Advise the director of quality.
-::: solution
-**Regulating-the-invisible-market ([[#def-delivery]], [[#def-financing]], [[public-health/determinants-inequalities]]): the evidence to start from: the informal-provider studies (the fever-and-antibiotic-prescribing quality data - much first contact in poor countries happens here, and its practices range from excellent to dangerous), and the 'quality-works-even-informally' trials (the provider training, feedback and clinical-audit interventions that demonstrably change prescribing in drug shops). The policy menu with its honest rankings: registration-and-inspection (cheap, under-enforced, capture-prone), information interventions (the referral-guidance labelling and the community scorecards whose reputational effects work where patients choose), contracting-in (the performance-based contracting programmes for family planning and child health that purchase from missions and private clinics with verifiable results), and accreditation-with-carrot (the quality-fee-bonuses that avoid the punitive-regulation-death-spiral). The equity clause: regulation that raises costs can price out the poor's only access - so the sequencing matters (support-then-standard-then-sanction), with 'no-abandonment-triage' commitments. The data strategy: the private-health-information-systems integration (the 'reporting-burden-versus-visibility'-trade that explains why private data never arrive), and medicines-market surveillance (the medicines quality-detection and supply-chain crackdowns as the highest-yield entry point). The advice in one line: half of care cannot be half a system - start by purchasing from and measuring the informal market where it already serves the poor, and regulate with support before punishment.**
-:::
+- **Opportunity cost**: in a fixed budget, funding one service means the health benefit of the next best use is lost. Efficiency may be technical or allocative; equity may be horizontal or vertical.
+- Health care markets fail because of **uncertainty, information asymmetry, moral hazard, adverse selection and externalities**, so governments intervene.
+- Economic evaluation types: cost-minimisation, cost-effectiveness, **cost-utility** (QALYs; used by NICE) and cost-benefit.
+- **QALY** = years × utility; **ICER** = ΔC/ΔE; **NMB** = λΔE − ΔC. Dominated and extendedly dominated options are removed before ICERs are calculated. Costs and QALYs are **discounted** at 3.5% a year.
+- NICE's threshold range is **£25,000–£35,000 per QALY** from April 2026 (previously £20,000–£30,000), with separate arrangements for very rare diseases and a severity modifier. The threshold should reflect the health displaced elsewhere; one estimate of NHS marginal productivity is about £13,000 per QALY.
+- Financing: general taxation (Beveridge), social insurance (Bismarck), private insurance and out-of-pocket payments; financing functions are revenue collection, pooling and purchasing. Provider payment methods create incentives.
+- In England, 42 **integrated care systems** were created in 2022; NHS England is being merged into DHSC; the 10 Year Health Plan (2025) seeks shifts to community, digital and prevention.
 :::
 
 ## Exercises
 
-::: exercise Explain opportunity cost {level=1}
-A patient group campaigns for funding a drug your integrated care board cannot afford without cutting a falls-prevention programme. Write the 200-word decision explanation the board publishes.
+::: exercise Calculating an ICER {level=1 check="30000"}
+A new intervention costs £12,000 more per patient than current care and gains 0.4 QALY per patient. Calculate the ICER in pounds per QALY.
 ::: solution
-**Explicit-rationing-done-right ([[#def-toolkit]]): the published explanation should name the trade without naming villains: the drug's incremental benefit and cost per QALY against the falls programme's (both numbers, both sourced), the threshold convention applied and its exceptions considered, the budget-impact and the 'no-new-money-this-cycle' constraint stated, the consultation with the groups affected on both sides, and the review date with the evidence that would change the decision (the 'managed-entry-with-reassessment' clause). Include the equity impact (which patients lose and which gain, by deprivation and age), the appeals and re-review routes, and the plain sentence the campaigns fear and citizens respect: 'funding this means not funding that; here is why we chose, and here is how to make us reconsider.' The evidence that this honesty works: appraisal-transparency studies show decisions accepted more readily when the reasoning and the loser are named than when refusal is dressed as 'insufficient evidence'.**
+ICER $= 12{,}000/0.4 = £30{,}000$ per QALY, within NICE's £25,000–£35,000 range from April 2026.
 :::
 :::
 
-::: exercise Compute the QALY {level=1}
-A one-off gene therapy costs 900,000 pounds; the model projects 8 additional QALYs for the average treated patient with wide uncertainty and no long-term comparator. Advise the appraisal committee beyond the arithmetic.
+::: exercise Counting QALYs {level=1 check="3.5"}
+A patient lives 5 years with a utility of 0.7. How many undiscounted QALYs is this?
 ::: solution
-**When-the-number-is-the-argument ([[#def-toolkit]], [[#def-delivery]]): the arithmetic is 112,500 pounds per QALY - outside conventional ranges, inside the orphan-and-severity exceptions several systems now write. The judgement calls to force into the open: the model's structural assumptions (the 'treatment-effect-persistence' extrapolation - the curve's tail is the decision), the comparator's realism, and the endpoint's patient-valuedness (surrogate versus function). The instruments between yes and no: the outcomes-based scheme (the 'payment-contingent-on-registry-survival' designs with their administrative-cost-and-measurement debates), the confidential discount plus list-price discipline, the 'managed-access-with-collective-evidence' pooled-registry route, and the 'mortgage-versus-lump-sum' financing question that is intergenerational accounting, not ethics. The distributional questions stated plainly: severity-and-rarity weights (is an equal QALY worth more to a rarer patient - the 'fair-infinite' and 'severity-modifier' literatures as policy), and the 'what-falls-when-this-rises' opportunity cost named. The recommendation template: conditional funding with named evidence, named price logic, and a sunset date - with the committee's own publication of its reasoning, because one-off novel-mechanism decisions set precedent markets read for decades.**
+$5 \times 0.7 = 3.5$ QALYs.
 :::
 :::
 
-::: exercise Diagnose the waiting list {level=2}
-Your region's orthopaedic waiting list has doubled in two years despite record operating volumes. Using supply-side and demand-side economics, write the diagnosis and the three interventions with expected effect sizes.
+::: exercise Present value {level=1 check="round(1000/1.035^5)"}
+What is the present value of a cost of £1,000 incurred in 5 years' time, at a discount rate of 3.5% a year? Give a whole number of pounds.
 ::: solution
-**Lists-are-equilibria ([[#def-financing]], [[#def-toolkit]]): the diagnosis: record volumes with doubling lists means demand or inflow grew faster - the candidates: an ageing-and-obesity-and-activity-demand curve, the primary-care and imaging access that surfaces referrals, the 'backlog unwinds slower than it forms' queue physics after pandemic pausing, the surgeon-retirement-and-recruitment lag, and the activity-based-payment perverse supply constraints (the theatre-session capacity, the anaesthetist roster, the post-acute-care bed dependency). The three interventions the evidence ranks: capacity-through-flow (the extended-running theatre plans plus the 'parallel-ward-and-discharge-liaison' that add lists without premium rates - the most reliable per-pound effect), demand management (the conservative-care-first pathways with patient-expected-outcome decision aids that shift some knees off lists without harm), and purchased external capacity (the independent-sector tariff economics - works for volume, expensive, and hollows rosters if permanent). The honest add-ons: the 'waiting-list-costs-in-QALYs-lost' estimate for the board's paper, and the equity audit (the list's queue position by deprivation and private-pay escape) without which the whole exercise is silently regressive.**
+$1{,}000/1.035^5 = 1{,}000/1.188 = £842$.
 :::
 :::
 
-::: exercise Design the payment reform {level=2}
-Ministry asks whether primary care should move from capitation toward salary-plus-performance for equity reasons. Give the comparative evidence, the gaming risks, and the transition design.
+::: exercise Net monetary benefit {level=2 check="-2500"}
+An intervention gains 0.5 QALY and costs £15,000 more than its comparator. Calculate its net monetary benefit at a threshold of £25,000 per QALY.
 ::: solution
-**Paying-the-door ([[#def-financing]], [[#def-delivery]]): the comparative record: capitation's strengths (cost containment, continuity) and its access failure modes (cream-skimming healthy patients, risk-selection against complex ones - the supplier-induced-demand literature and the Dutch and Danish selection findings); fee-for-service's volume induction with better access for attenders; salary's equity and restraint with under-capacity risk; and performance payments' 'measured-things-improve-and-others-wither' evidence base. The equity logic for the reform: salaried teams with population-based targets plus need-adjusted incentives (the 'additional-needs-adjustment' of several list-based systems) remove the panel's financial shape entirely - and the 'no-incentive-without-monitoring-and-feedback' condition. The gaming map: upcoding the deprivation index, teaching-to-the-target (the 'cherry-and-lemon' pairing), and indicator neglect (the QOF-era 'measured-versus-unmeasured-care'-findings on mental health and long conditions). The transition design: pilot-with-matched-controls (the payment reforms' evaluation-before-scale discipline), 'keep-the-good-and-remove-the-perverse- grandfathering, the transition-years income guarantees that prevent the political economy from killing the pilot, and the published equity dashboard (access, outcomes and unmet need by quintile) as the reform's own primary outcome.**
+NMB $= 25{,}000 \times 0.5 - 15{,}000 = 12{,}500 - 15{,}000 = -£2{,}500$. It is not cost-effective at this threshold (its ICER is £30,000). At £35,000 the NMB would be +£2,500.
 :::
 :::
 
-::: exercise Cost the safety programme {level=2}
-Your trust hesitates on funding a falls-prevention and a medicines-optimisation programme; both cost 'against backlogs'. Build the business case with the harm economics and the honesty clause about what remains unfunded.
+::: exercise Discounted QALYs {level=2 check="round(100*0.8*(1+1/1.035+1/1.035^2))/100"}
+A treatment gives 0.8 QALY a year for 3 years. Discount at 3.5% a year, with the first year not discounted (years $t = 0, 1, 2$). How many discounted QALYs is this, to 2 decimal places?
 ::: solution
-**Safety-as-investment ([[#def-delivery]], [[#def-toolkit]], [[clinical-skills/patient-safety]]): the harm-side arithmetic: the avoidable-harm cost studies (the share of admitted patient days attributable to falls, drug-related harm and post-operative complications at your profile), the tariff-versus-true-cost distinction (a fall's cost is the whole delayed-discharge episode, the litigation and the lost bed-day at margin, not the incident form's fee), and the 'cost-of-negligence-versus-cost-of-prevention' comparisons the Scandinavian and English reports publish. The programme evidence: multifactorial falls interventions' numbers-needed-to-treat in the inpatient and community settings; pharmacist-led medication review's effects on admissions and on high-risk prescribing (the evidence graded honestly - effects concentrate where the review is structured and acted upon). The honesty clause: these business cases succeed politically by funding from the harm budget, not the backlog budget - so the paper must say what this does not solve (the elective waits remain, and harm prevention's returns accrue to next year's balance sheet). The governance asks: the harm-cost dashboards as a finance-line (not just a quality report), the 'prevention-not-punishment' compensation route's cost comparison, and the post-implementation audit that closes the loop - because harm-costing studies that never audit themselves become the new unfunded folklore.**
+$0.8 \times (1 + 1/1.035 + 1/1.035^2) = 0.8 \times (1 + 0.9662 + 0.9335) = 0.8 \times 2.8997 = 2.32$ QALYs.
 :::
 :::
 
-::: exercise Advise the minister on the tax {level=3}
-The government considers a health-earmarked levy (a sugar-sweetened-beverage or insurance-tax model) to fund primary-care expansion, amid claims it will destroy jobs and fail to raise revenue. Write the assessment brief: incidence, behaviour, revenue reliability, earmarking politics, and the evaluation plan.
+::: exercise Displaced health {level=2 check="round(5000000/13000)"}
+A commissioner funds a new service costing £5 million a year from a fixed budget. If displaced services produce one QALY for every £13,000 at the margin, how many QALYs a year are lost elsewhere? Give a whole number.
 ::: solution
-**Taxing-toward-health ([[#def-financing]], [[#def-toolkit]], [[public-health/non-communicable-disease]]): incidence: who actually pays (the consumption-share regressivity studies and the employer-versus-consumer-versus-shareholder-shifting evidence - the 'tax-incidence-in-open-economies' literature says shifting is partial and product-specific), and the progressivity of the spending side if earmarked to primary care (the 'the-tax-and-the-service-both-help-the-poor' double-dividend argument and its 'but-differently' caveat). Behaviour: the elasticity evidence (the SSB-tax volume-and-reformulation findings - the Mexican and South-African and UK-class studies: consumption falls, reformulation follows, and cross-product substitution is real but modest at design-level rates). Revenue reliability: the 'sin-tax-success-kills-its-own-base' paradox (the anti-smoking-duty line's decline - plan the fade), versus the 'broad-base-low-rate' alternative. Earmarking politics: the 'hypothecation-weakens-budget-discipline-versus-hypothecation-builds-coalitions' literature (both real; the 'ring-fenced-until-the-next-negotiation' failure mode needs a statutory fund with published grant rules). The evaluation plan: the 'real-time-revenue-and-consumption-and-health'-monitoring dashboards, the industry-and-employment-transition-fund (the 'just-transition' clause that answers the jobs claim with data), and the pre-registered independent evaluation with the 'no-reformulation-without-reassessment' rule. The closing advice: earmarked health taxes are fiscally modest and symbolically large - their true yield is that they make health a budgeted argument rather than a moral plea.**
-:::
-:::
-::: exercise Evaluate the telemedicine expansion {level=2}
-Post-pandemic, your integrated board wants to keep virtual-first clinics at triple the 2019 rate, claiming access and cost savings. Give the evaluation framework and the three questions that decide whether to keep funding it.
-::: solution
-**Substitution-versus-addition ([[#def-delivery]], [[#def-toolkit]], [[clinical-skills/communication]]): the framework is the digital-health evaluation literature's standard: measure net consultations (did virtual replace face-to-face or add to total activity - the induction finding appears in several systems), access distribution (who gained: working-age and rural users versus those without devices, language or digital literacy - the 'double-exclusion' studies), and quality signals (consultation length, prescribing, revisit and admission rates, missed-cancer-red-flag audits). The three funding questions: Does virtual care at this volume change outcomes or only experiences? Does it reduce waiting time without inducing demand the workforce cannot absorb? Is its unit cost truly lower once platform, connectivity support and the face-to-face capacity it failed to release are counted? The conditions under which the evidence favours keeping it: triage and follow-up pathways, photograph and dermatology clinics, and the rural access equity cases; the conditions against: the 'video-visit-for-abdominal-pain' class where examination matters. The decision rule: fund the pathway evidence, not the modality - the same triage applied to every new technology since cost-benefit analysis itself.**
+$5{,}000{,}000/13{,}000 = 385$ QALYs a year. The new service improves total health only if it gains more than this.
 :::
 :::
 
-::: exercise Write the pandemic's economics verdict {level=3}
-You co-chair the pandemic-inquiry economics module. Write the terms of reference's four questions and the evidence standards for each, including the contested ones.
+::: exercise Paying general practice {level=2}
+Compare capitation, fee-for-service and pay-for-performance as ways to pay general practices. What incentives does each create, and why do many systems use a mixture?
 ::: solution
-**Economics-of-a-pandemic-terms-of-reference ([[#def-financing]], [[#def-toolkit]]): Question one, preparedness economics: was the pre-pandemic reserve-and-surge posture optimal, given the insurance-versus-efficiency trade and the 'surplus-capacity-is-never-cost-effective-in-a-normal-year' argument? Evidence: the scenario-document and stockpile-rebuild studies, with the counterfactual discipline the modelling wars teach. Question two, the non-pharmaceutical interventions: effect sizes on mortality versus cost including education, employment and mental health, judged against the 'horizontal-vs-vertical-evidence' critique and its 'pandemics-are-not-randomised' reply - the module must publish its method pluralism explicitly. Question three, supply chains and market structure: PPE and ventilator procurement (the competition-policy waivers, the quality failures), the pharmaceutical-pipeline-and-manufacturing-concentration economics, and the vaccine-finance instruments' cost-effectiveness including COVAX's opportunity cost to the poorest. Question four, the ledger of indirect harms: the backlog QALY accounting (including the waiting-list modelling's own uncertainty), the learning-loss and household-income effects, the health-workforce attrition estimates, and the excess-death accounting across definitions. The contested-evidence standard: every chapter publishes competing estimates with methods graded pre-specified, names its data limitations, and states which question would be answered differently under the other side's assumptions - the transparency norm the field learned the hard way.**
+**Capitation** (a fixed sum per registered patient, often weighted for age, sex and deprivation) gives a predictable budget and rewards keeping patients healthy and providing care efficiently, but may encourage under-provision, referring work elsewhere and avoiding complex patients, unless the weighting reflects need.
+
+**Fee-for-service** rewards activity, which is useful for services that are under-provided (such as vaccinations, which UK practices are paid per dose for), but encourages over-provision of profitable items and supplier-induced demand, and is costly to administer.
+
+**Pay-for-performance** (such as QOF) rewards measured quality and can raise standards in what is measured, but encourages attention to measured indicators at the expense of unmeasured care, may reward practices already doing well, and can increase inequalities if targets are harder to achieve in deprived areas; exception reporting creates scope for gaming.
+
+**Mixtures** combine the strengths: capitation for a stable core, item-of-service fees for specific under-provided services, and modest quality payments, with monitoring for unintended effects.
+:::
+:::
+
+::: exercise Appraising a costly drug for a rare disease {level=3}
+A new gene therapy for a rare, fatal childhood condition costs £1.5 million per patient, with an estimated ICER of £120,000 per QALY. Discuss the arguments for and against funding it in the NHS, using the ideas in this chapter.
+::: solution
+**For.** The condition is severe and the patients are children with few or no alternatives; the severity modifier and the highly specialised technologies process recognise that society may value such health gains more. Few patients are affected, so the budget impact is small. Funding encourages research into rare diseases that would otherwise be commercially unattractive. Uncertainty may be reduced through managed access with data collection, and the price may be reduced by a confidential discount or an outcomes-based agreement (paying only if the treatment works).
+
+**Against.** At £120,000 per QALY, the money would produce several times more health if spent on existing services (at a marginal productivity of about £13,000 per QALY, roughly nine times more). The patients who lose out are less visible but equally real. High prices may reflect market power rather than research costs, and accepting them sets a precedent. Long-term effectiveness is often uncertain, because trials are small and short.
+
+**Balance.** A reasonable answer recognises that the decision is a value judgement made through a legitimate, transparent process (NICE's highly specialised technologies programme uses a much higher threshold and weights QALYs for very large gains), seeks the lowest price and robust data collection, and accounts openly for the opportunity cost.
 :::
 :::

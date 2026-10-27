@@ -1,141 +1,314 @@
-Immunisation programmes are the most cost-effective public health intervention after sanitation and the most politically fragile achievement of medicine: they compress a population's epidemiology into a calendar, depend on every cohort trusting the needle, and are judged in two currencies no other service faces - deaths averted (invisible) and adverse events (visible). **This chapter covers the immunology programmes exploit (primary and secondary responses, schedules and boosters, maternal antibody, herd effects and their thresholds, and waning immunity), the programme architecture (appraisal and schedules, delivery systems and the cold chain, adverse-event surveillance and benefit-risk communication, coverage measurement and its equity map), vaccine hesitancy as a scientific object (its measurement, drivers, and the communication evidence), and the endgame questions (elimination versus eradication, polio's unfinished war, and the pandemic's curriculum for the next programme).**
+In January 2026 the World Health Organization announced that the United Kingdom had lost its measles elimination status. The decision rested on data from 2024, when England recorded 2,911 laboratory-confirmed cases of measles, the highest annual number since 2012. Children died. Measles vaccine had been in the UK schedule since 1968 and MMR since 1988, and it is one of the most effective vaccines ever made. The problem was not the vaccine. It was that too few children received both doses, and that the unvaccinated were clustered in particular communities and areas.
 
-## The science
+A vaccine protects the person who receives it. A vaccination *programme* protects a population, and that requires decisions about which vaccines to offer, to whom, at what age and how; enough people vaccinated to stop transmission; a system to monitor coverage, disease and safety; and the trust of the public. This chapter covers the population side of vaccination: herd immunity and coverage thresholds, how programmes are designed, the UK programme as of 2026, how vaccine effectiveness and safety are monitored, and how confidence is built and lost. The immunology of vaccines is covered in [[immunology/vaccines-immunotherapy]], and the clinical delivery of childhood immunisation in [[paediatrics/immunisation]].
 
-::: definition Immunology, herd effects and the schedule logic {#def-immunology}
-**Vaccine schedules are applied immunology. Primary courses build immunological memory whose faster, higher-amplitude secondary response justifies intervals and boosters, and the whole calendar negotiates between the infant immune system's maturity, maternal antibody, the epidemiology of exposure, and how long protection lasts. The polysaccharide capsules of Haemophilus, pneumococcus and meningococcus do not provoke good infant responses until conjugated to protein carriers - the chemistry that bought the first decade of life - while maternal antibody protects the newborn and simultaneously blunts live-vaccine responses, which is why measles's first-dose age is an argument in every country and why maternal vaccination now protects neonates transplacentally (the pertussis and RSV programs' logic). Waning is a programme constant: acellular pertussis's shorter durability restructured adolescent and pregnancy-boosting policy, and the HPV schedules were simplified to fewer doses once adolescent immunogenicity trials proved the memory was better than the titre suggested. Herd effects are the public good the programme sells: the critical-coverage threshold follows from the reproduction number, live vaccines can interrupt carriage and transmission (measles, rubella, polio), and coverage must therefore be sufficient and homogeneous locally - outbreaks begin in clusters of the unvaccinated that national percentages hide. The same biology runs the programme's ironies: oral polio vaccine's shed and reverting virus causes vaccine-derived outbreaks, so eradication strategy had to retire the tool that made it possible, and the new-generation oral and inactivated-virus schedules are the current chapter. Finally, correlates of protection (the antibody thresholds licensing decisions rest on) meet variant evolution: when 'sterilising immunity' gives way to 'severe-disease reduction' as the achievable endpoint - as in the pandemic's later vaccines and as influenza programs always knew - programme communication must restate its own success criteria honestly, which is harder than it sounds and was this decade's most consequential failure of the genre.**
+## Direct and indirect protection {#protection}
+
+Vaccines are of several types: **live attenuated** (MMRV, rotavirus, BCG, the nasal influenza vaccine), **inactivated whole organism** (inactivated polio vaccine), **toxoid** (diphtheria, tetanus), **subunit and recombinant protein** (hepatitis B, acellular pertussis, HPV, MenB, shingles), **polysaccharide conjugate** (Hib, pneumococcal, meningococcal ACWY), **mRNA** and **viral vector** vaccines. The type determines the immune response, the number of doses, the duration of protection and the contraindications.
+
+A vaccine's effect on a population has two parts. The **direct effect** is the protection of vaccinated individuals. The **indirect effect** is the protection of unvaccinated people (and vaccinated people in whom the vaccine failed) because there is less infection circulating. Indirect protection requires that the vaccine reduces infection or transmission, not only disease. Tetanus vaccine gives no indirect protection, because tetanus is not transmitted from person to person. Conjugate vaccines against Hib, pneumococci and meningococci reduce nasopharyngeal carriage and therefore transmission, and their introduction in infants and adolescents has reduced disease in older age groups who were never vaccinated.
+
+## Herd immunity {#herd-immunity}
+
+::: definition Reproduction numbers and herd immunity {#def-herd}
+The **basic reproduction number** $R_0$ is the average number of secondary cases caused by one infectious person introduced into a wholly susceptible population.
+
+The **effective reproduction number** $R_e$ (or $R_t$) is the average number of secondary cases at a given time, when part of the population is immune or control measures are in place. If a proportion $s$ of the population is susceptible and mixing is random, $R_e = R_0 s$.
+
+**Herd immunity** is the indirect protection of susceptible people that arises when enough of the population is immune that an infection cannot spread widely, because $R_e < 1$. The **herd immunity threshold** is the proportion of the population that must be immune for this to happen.
 :::
 
-## The programme
+::: theorem The herd immunity threshold {#thm-hit}
+With random mixing, an infection cannot sustain transmission when the immune proportion $p$ exceeds
 
-::: definition Delivery, safety surveillance and hesitancy {#def-delivery}
-**Delivery decides what the science achieves. The architectures differ (general-practice-records and primary-care infant programmes, school immunisation teams for adolescent schedules, pharmacy delivery legitimised at scale by the pandemic, and in low-income countries the WHO-Unicef-Gavi procurement, cold-chain and last-mile apparatus), but the design rules are universal: default appointments at natural contact points (baby clinics, emergency departments, pharmacies), standing orders and non-nurse administration where evidence supports it, working call-and-recall across the record-system conflicts that leave children 'status unknown to every database', and cold-chain and dose-error controls audited like any medication system. Coverage measurement is surveillance: the three-dose proxy, the small-area cluster detection that finds the next outbreak's kindling, and the equity audit by deprivation, ethnicity and traveller status without which programmes reproduce the determinants. Safety surveillance is the licence to operate: spontaneous reporting (Yellow Card, VAERS and their under-reporting and signal-generating properties), active record-linkage systems that quantify rare risks fast (the thrombosis-with-thrombocytopenia and myocarditis-in-young-males findings and the Pandemrix-narcolepsy precedent), causality versus coincidence handled with background-rate tables, and the risk-comparison triangle - the vaccine's risk against the disease's risk against no vaccination's risk - communicated by independent regulators, not manufacturers. Hesitancy is now studied like a pathogen: measured on continua from caution to refusal, modelled through confidence, complacency and convenience, and explained less by ignorance than by institutional distrust and media ecosystems - while genuine adverse-event experiences and compensation refusals convert into community narratives that facts alone do not move. The intervention evidence is clear about priorities: most non-vaccination is inconvenience, so access, reminders and presumptive-then-participatory recommendation move the majority; for the hesitant minority, motivational-interviewing-style conversations, trusted messengers and prebunking outperform debate and fact-dumps, which can backfire; mandates reliably raise coverage and spend trust, so their use is a proportionality decision the ethics chapters own. The clinician is the programme's last mile: catch-up schedules reconstructed from fragments, adverse events reported anyway, and the conversation script that assumes the parent loves the child, not that they need correcting.**
+$$
+p_c = 1 - \frac{1}{R_0}.
+$$ {#eq-hit}
+
+If a vaccine prevents infection in a proportion $E$ of those vaccinated (its effectiveness against infection), the **critical vaccination coverage** is
+
+$$
+V_c = \frac{1 - 1/R_0}{E}.
+$$ {#eq-vc}
+
+If $V_c > 1$, elimination cannot be achieved with that vaccine alone at any coverage.
 :::
 
-## The endgame
+::: proof
+An epidemic grows if each case causes more than one new case on average. In a population with susceptible fraction $s$, each infectious person makes $R_0$ effective contacts, of which a fraction $s$ are with susceptible people, so $R_e = R_0 s$. Transmission declines when $R_e < 1$, that is when $s < 1/R_0$. The immune fraction is $p = 1 - s$, so the condition is $p > 1 - 1/R_0$.
 
-::: definition Elimination, eradication and pandemic lessons {#def-endgame}
-**The vocabulary is strategy: control means reduced transmission and disease; elimination means zero indigenous transmission in a region (the measles, rubella and polio verification programmes, always hostage to importation and coverage clusters); eradication means the species is gone (smallpox, and the polio endgame's last valleys); and eradication's technique was invented under necessity - the smallpox eradication's surveillance-and-ring-vaccination that counted houses rather than percentages, replacing universal coverage when universal coverage stalled. The endgame problems are now classic: funding and attention trough when cases near zero, conflict zones and the killing of immunisation workers hold the last reservoirs, laboratory and vaccine-stock biosafety becomes a live policy question ('what do we do with the stocks when the virus is gone'), and vaccine-derived poliovirus proved eradication programmes can generate their own virology, requiring the novel oral vaccines and the injection-coverage catch-up the Global Polio Eradication Initiative still fights. The pandemic wrote a new curriculum: platform speed (the mRNA era's risk-stacked manufacturing and regulatory sequencing showed emergency development in months was scientifically possible), access inequity (the dose-diplomacy and COVAX arithmetic, the trips-waiver argument, and the commissions' verdict that the next emergency will be judged on equity), trust polarisation (vaccine policy becoming identity politics, workforce morale and mandate coercion debates, and the misinformation-monetisation research), and the '100-days' architecture now being built (regional manufacturing and technology-transfer hubs, platform-licensing agreements, and the Pandemic Agreement's governance arguments). For practising clinicians the current programme frontier includes the RSV and cytomegalovirus vaccine era arriving via maternal immunisation, group B streptococcus and tuberculosis candidates, shingles and whooping-pertussis-in-older-adults policy debates, dengue programmes teaching every new-vaccine-science-meets-old-programme-politics lesson, and climate and migration shifting the exposure maps the schedules were drawn against. The one-sentence summary of the chapter's whole logic: herd protection is a coverage map, the map is an equity document, and the equity document is only as strong as the trust that fills it.**
+If a proportion $V$ of the population is vaccinated with a vaccine that prevents infection in a proportion $E$ of recipients, the immune fraction from vaccination is $VE$. Setting $VE = 1 - 1/R_0$ gives $V_c = (1 - 1/R_0)/E$.
 :::
 
-::: example The unvaccinated cluster {#ex-cluster}
-City MMR first-dose coverage is 91 percent overall, but three primary schools sit below 70. A family returns from a measles-endemic country; a febrile rash in the parents' luggage-sized child; the emergency department sees them at night, the GP is closed, and the school office does not know which other children are unvaccinated.
+The threshold is a simplification. Real populations do not mix randomly: people mix mostly with others of similar age, in households, schools and communities. If unvaccinated people are clustered, for example in a school or a religious or social community with low uptake, $R_e$ within the cluster can exceed 1 even when national coverage is above the threshold, and outbreaks occur. Immunity also wanes for some vaccines (pertussis, mumps), and some vaccines prevent disease better than infection. The threshold is therefore a lower bound for planning, not a guarantee.
+
+| Infection | Typical $R_0$ | Herd immunity threshold |
+|---|---|---|
+| Measles | 12–18 | 92–94% |
+| Pertussis | 12–17 | 92–94% |
+| Varicella | 8–10 | 88–90% |
+| Mumps | 4–7 | 75–86% |
+| Rubella | 6–7 | 83–86% |
+| Polio | 5–7 | 80–86% |
+| Smallpox | 5–7 | 80–86% |
+
+*Values of $R_0$ vary between settings; these are commonly quoted ranges.*
+
+::: example Measles and the 95% target {#ex-measles-vc}
+Take $R_0 = 15$ for measles and a two-dose MMR effectiveness of 97%. (a) What is the herd immunity threshold? (b) What vaccination coverage is needed? (c) If two-dose coverage is 85% and there is no other immunity, what is $R_e$?
 ::: solution
-**The measles countdown ([[#def-immunology]], [[#def-delivery]], [[respiratory/respiratory-infections]]): minute one - suspected measles is airborne precautions before triage paperwork: mask, separate room, separate entrance, call ahead, and the notification clock starts at clinical suspicion, not laboratory confirmation (the public-health-protection team runs the exposure list overnight). The medicine: vitamin A for the index child per guidance, airborne nursing, and the complications watch (the pneumonia, croup and encephalitis timetable). The exposure arithmetic drives everything: measles's infectiousness means the susceptible contacts are household, plane, waiting room, class and clinic - the public-health team's role definition, with post-exposure vaccination for susceptible contacts within 72 hours and immunoglobulin for the too-young, pregnant and immunosuppressed within six days, a set of deadlines that make hour-one notification clinical treatment for other people. The cluster answer the school needs comes from the same system: the vaccination-status reconciliation with GP records (the lawful, urgent kind), the 'who is unvaccinated and where do they gather' map, and the catch-up clinics with transport and weekend hours because the 70-percent schools are the 70-percent postcodes. And the programme-level response the outbreak writes by itself: the coverage-gap data becoming the health-protection board's agenda, the trust-building with the specific communities (trusted messengers, no punishment framing), and the school-entry or documentation-policy debate the politicians will start - which the evidence advises sequencing after the trust work, because mandates imposed on a burned community move children between records, not into arms.**
+(a) $p_c = 1 - 1/15 = 0.933$, or 93.3%.
+
+(b) $V_c = 0.933/0.97 = 0.962$, or about 96%. This is why the WHO target is at least 95% coverage with two doses.
+
+(c) Immune fraction $= 0.85 \times 0.97 = 0.8245$; susceptible fraction $s = 0.1755$; $R_e = 15 \times 0.1755 = 2.6$. Each case would on average cause more than two new cases, so outbreaks would grow wherever measles was introduced. In reality some older people are immune from past infection, and coverage varies between areas, so local $R_e$ differs from this average.
+
+In 2023–24, 83.9% of children in England had received two doses of MMR by their fifth birthday. That is far below the threshold, and coverage in some London boroughs and other areas is much lower.
 :::
 :::
 
-::: example The safety signal that was real {#ex-signal}
-Eleven reports of facial nerve palsy after a new influenza vaccine in one region within three weeks; a journalist calls the health board; the regional immunisation lead's options are silence, reassurance, or process.
+::: widget phaseplane
+f: -R*x*y
+g: R*x*y - y
+x: 0, 1
+y: 0, 0.4
+points: 0.99, 0.01; 0.5, 0.01; 0.1, 0.01
+nullclines: true
+sliders: R=3:0.5:18:0.5
+caption: A simplified SIR epidemic drawn in the susceptible–infectious plane: x is the susceptible fraction, y the infectious fraction, and time is measured in units of the infectious period. The vertical nullcline at x = 1/R marks the herd immunity threshold: an epidemic can grow only from a starting point to the right of it. The three trajectories start with 99%, 50% and 10% susceptible. Raise R towards measles values and watch how small the susceptible fraction must be to prevent an outbreak.
+:::
+
+## Designing a vaccination programme {#programme-design}
+
+In the UK, the **Joint Committee on Vaccination and Immunisation** (JCVI) advises the governments of the four nations on which vaccines to use and for whom. It considers the burden of disease, vaccine efficacy and safety, the likely impact on the population (including indirect effects, modelled with transmission models) and cost-effectiveness. The **Green Book** (*Immunisation against infectious disease*), published by the UK Health Security Agency (UKHSA), is the clinical reference for each vaccine and is updated chapter by chapter. Vaccines are bought centrally, which gives purchasing power and allows national supply to be managed.
+
+Key design choices are:
+
+- **Strategy.** **Universal** programmes offer the vaccine to everyone in an age group (MMRV to all infants). **Selective** programmes target groups at higher risk (BCG for infants in areas of high tuberculosis incidence or with parents from high-incidence countries; hepatitis B for babies of mothers with hepatitis B; influenza and pneumococcal vaccines for people with certain clinical conditions). **Occupational** vaccination protects workers and those they care for (hepatitis B and influenza for health workers). **Travel** vaccines are mostly outside the routine programme.
+- **Age at vaccination.** The vaccine should be given before the age of greatest risk but when the immune system can respond and maternal antibody no longer interferes. This is why most infant vaccines start at 8 weeks and measles-containing vaccine is given at 1 year.
+- **Target group for indirect protection.** Sometimes vaccinating one group protects another. Adolescent MenACWY vaccination targets the age group with the highest carriage, protecting younger and older people. Pertussis vaccination in pregnancy protects the newborn, who is too young to be vaccinated, through transplacental antibody.
+- **Routine and catch-up.** New programmes often include a one-off catch-up of older cohorts. Mass campaigns are used in outbreaks and for eradication.
+- **Doses and schedule.** Fewer doses reduce cost and improve completion; the HPV programme moved to a **single dose** for adolescents in England from September 2023, after evidence that one dose gives protection comparable to two in that age group.
+
+## The UK programme in 2026 {#uk-schedule}
+
+The routine childhood schedule in England, after the changes of July 2025 and January 2026, is:
+
+| Age | Vaccines |
+|---|---|
+| 8 weeks | 6-in-1 (DTaP/IPV/Hib/HepB) dose 1; MenB dose 1; rotavirus dose 1 |
+| 12 weeks | 6-in-1 dose 2; MenB dose 2; rotavirus dose 2 |
+| 16 weeks | 6-in-1 dose 3; pneumococcal conjugate (PCV) dose 1 |
+| 1 year | PCV booster; MenB booster; MMRV dose 1 |
+| 18 months | 6-in-1 dose 4; MMRV dose 2 |
+| 3 years 4 months | 4-in-1 pre-school booster (dTaP/IPV) |
+| 12–13 years | HPV (one dose) |
+| 14 years | 3-in-1 teenage booster (Td/IPV); MenACWY |
+
+Children are also offered influenza vaccine every autumn from age 2 through the school years. The changes of January 2026 replaced MMR with **MMRV**, adding varicella (chickenpox) to the routine programme, withdrew the Hib/MenC booster, and created the 18-month appointment. Details of the transition for older children, and of selective neonatal BCG and hepatitis B, are in [[paediatrics/immunisation]].
+
+Programmes for adults include:
+
+- **Pregnancy**: pertussis (from 16 weeks), RSV (from 28 weeks) and seasonal influenza.
+- **Older adults**: annual influenza from 65; a pneumococcal vaccine at 65; shingles vaccine (the recombinant vaccine, Shingrix) from 65, with transitional arrangements for older cohorts and earlier vaccination for people who are severely immunosuppressed; and **RSV** vaccine, introduced in September 2024 for people aged 75 to 79 and extended from 1 April 2026 to everyone aged 80 and over and to residents of care homes for older adults.
+- **Clinical risk groups**: influenza, pneumococcal, COVID-19 (seasonal campaigns for people at highest risk) and others according to the Green Book.
+- **Sexual health services**: hepatitis A and B, HPV and mpox vaccines for gay, bisexual and other men who have sex with men at higher risk; and, since August 2025, the 4CMenB vaccine to reduce gonorrhoea in those at highest risk, the first programme of its kind in the world, based on observational evidence of about 30–40% protection.
+
+### Monitoring coverage {#coverage}
+
+Coverage is measured from GP and child health records. In England, UKHSA's **COVER** programme reports quarterly and annual coverage by age 1, 2 and 5 years for each local area. Coverage is lower in more deprived areas, in some ethnic and religious communities, among Gypsy, Roma and Traveller families, among children in care and recently arrived migrants, and in areas with high population turnover such as inner London. National averages hide these pockets, which is where outbreaks start.
+
+Reasons for missed vaccination are varied: practical barriers (appointment availability, changing address, lost records, work, transport), lack of reminders, missed opportunities when a child attends for something else, false beliefs about contraindications, and hesitancy. Effective measures include call and recall systems, text reminders, flexible and outreach clinics, checking status at every contact, and working with community leaders. Most unvaccinated children in the UK have parents who are not opposed to vaccination; they face access barriers or have unanswered questions.
+
+## Vaccine effectiveness in the field {#effectiveness}
+
+Pre-licensure trials measure **efficacy** under trial conditions. **Effectiveness** is the protection achieved in routine use, which may differ because of storage and handling, schedules, the population vaccinated, strain variation and waning. Effectiveness is estimated after introduction with cohort studies, case–control studies (including the **test-negative design**, used for influenza and COVID-19, which compares vaccination among people testing positive and negative for the infection), and the **screening method**.
+
+::: warning "Most cases were vaccinated" does not mean the vaccine failed
+When coverage is high, vaccinated people make up most of the population, so even a very effective vaccine can leave more vaccinated than unvaccinated cases. With 97% coverage and 97% effectiveness, about half of all cases occur in vaccinated people, because 3% of a very large group fail to be protected while the unvaccinated group is tiny. The proportion of cases vaccinated must always be compared with the proportion of the population vaccinated. This misunderstanding is common in news reports and anti-vaccine material.
+:::
+
+::: example The screening method {#ex-screening-method}
+The **screening method** estimates vaccine effectiveness (VE) from the proportion of cases vaccinated (PCV) and the proportion of the population vaccinated (PPV):
+
+$$
+VE = 1 - \frac{PCV}{1 - PCV} \times \frac{1 - PPV}{PPV}.
+$$ {#eq-screening-method}
+
+In an outbreak of measles in a school, 90% of pupils have had two doses of MMR. Of the cases, 31.0% were vaccinated. Estimate the vaccine effectiveness.
 ::: solution
-**Signals are handled in public ([[#def-delivery]], [[#def-endgame]], [[clinical-skills/communication]]): the first 24 hours - report-rate-versus-background-rate calculation (facial palsy's base incidence makes clustering plausible by chance - but plausibility is not proof and is not what the public hears), the precautionary step that costs nothing (pause the batch while the signal is assessed, not the programme), the case ascertainment (structured reviews, the differential - the viral prodrome itself causes Bell's palsy and causes vaccination visits), and the timeline the communication must state before the journalist states it: what we know, what we are checking, when we will report, who is independent of whom. The assessment layer: the record-linkage study against contemporaneous controls, the immunological plausibility review (the adjuvant-and-cross-reactivity hypotheses), the comparator (same-vaccine coverage in other regions' rates), and the reference-database and causality-framework language ('consistent with a causal relationship' is a specific sentence with a specific meaning). The outcomes: if the signal dies, say so with the numbers and thank the reporters; if it lives, define the risk in the comparison triangle (per million doses, versus disease risk, versus alternatives), change the recommendation visibly, and compensate the injured promptly through the compensation scheme - because the compensation literature's clearest finding is that denial and delay, not injury, convert harmed individuals into permanent opponents. The meta-lesson the Pandemrix-narcolepsy and GSK-pandemic-vaccine-era precedents teach: the programme survives by demonstrating that its safety system works in public, at speed, against its own short-term interest - which is the only argument that outranks a bad-news story about a vaccine.**
+$\dfrac{PCV}{1-PCV} = \dfrac{0.310}{0.690} = 0.449$. $\dfrac{1-PPV}{PPV} = \dfrac{0.10}{0.90} = 0.111$.
+
+$VE = 1 - 0.449 \times 0.111 = 1 - 0.050 = 0.95$, or about 95%.
+
+Nearly a third of cases were vaccinated, yet the vaccine reduced the risk by about 95%. The method is quick and useful for monitoring, but it is sensitive to errors in PPV (which should be measured in the same population as the cases, here the school) and assumes that vaccinated and unvaccinated people have similar exposure.
 :::
 :::
+
+## Vaccine safety {#safety}
+
+Vaccines are given to healthy people, often children, in very large numbers, so the standard of safety must be very high, and rare adverse events matter. Pre-licensure trials, typically including thousands to tens of thousands of participants, cannot detect adverse events rarer than about 1 in 10,000. **Post-licensure surveillance** (pharmacovigilance) is therefore essential.
+
+In the UK, the **Yellow Card** scheme run by the Medicines and Healthcare products Regulatory Agency (MHRA) collects spontaneous reports of suspected adverse reactions from health professionals and the public. New vaccines carry a black triangle, asking for all suspected reactions to be reported. Spontaneous reports can generate **signals** but cannot establish causation, because events occur by chance after vaccination and reporting is incomplete and influenced by publicity.
+
+Signals are tested with analytical methods:
+
+- **Observed versus expected analysis.** The number of events reported in a risk window after vaccination is compared with the number expected from the background incidence.
+- **The self-controlled case series** (SCCS), developed by Paddy Farrington and colleagues in the 1990s, compares the incidence of an event in defined risk periods after vaccination with its incidence at other times in the *same* individuals. Because each person is their own control, fixed confounders such as genetics and chronic disease are removed. It was used to show the association between one MMR vaccine containing the Urabe mumps strain and aseptic meningitis, which led to its withdrawal in the UK in 1992, and the absence of an association between MMR and autism.
+- **Cohort and case–control studies** in large linked databases.
+
+::: example Observed versus expected {#ex-observed-expected}
+Two million adults receive a new vaccine. Guillain–Barré syndrome (GBS) has a background incidence of about 1.5 per 100,000 person-years. In the 42 days after vaccination, 8 cases are reported. How many would be expected by chance, and is this a signal?
+::: solution
+Person-time at risk $= 2{,}000{,}000 \times 42/365 = 230{,}137$ person-years.
+
+Expected cases $= 230{,}137 \times 1.5/100{,}000 = 3.45$.
+
+Observed 8. If cases follow a Poisson distribution with mean 3.45, the probability of 8 or more is about 0.025. The observed number is more than twice the expected number, and unlikely to be chance alone, so this is a **signal** that needs investigation. It is not proof: background rates may be higher than assumed in the vaccinated group (older age, for example), reporting may be more complete after vaccination, and some cases may not meet the case definition. A self-controlled case series or cohort study with confirmed cases would follow. If confirmed, the risk (here a few excess cases per million doses) must be weighed against the benefits of the vaccine. This is the kind of analysis that identified rare thrombosis with thrombocytopenia after adenoviral-vector COVID-19 vaccines in 2021, which led to age-based changes to their use.
+:::
+:::
+
+People who are severely disabled as a result of vaccination can claim under the UK **Vaccine Damage Payment** scheme (established by the Vaccine Damage Payments Act 1979), which pays a lump sum without the need to prove negligence. Such schemes support public trust by acknowledging that rare harms happen.
+
+## Vaccine confidence and communication {#confidence}
+
+::: definition Vaccine hesitancy {#def-hesitancy}
+**Vaccine hesitancy** is the delay in acceptance or refusal of vaccines despite availability of vaccination services (WHO Strategic Advisory Group of Experts on Immunization, 2015). It is a continuum between full acceptance and outright refusal, and it is specific to context, time, place and vaccine.
+
+Its determinants are often summarised as the "3Cs": **confidence** (trust in the vaccine, the health service and the policy makers), **complacency** (low perceived risk of the disease) and **convenience** (availability, affordability, accessibility). Later models add **calculation** (information searching) and **collective responsibility**.
+:::
+
+Successful vaccination creates complacency: when diseases become rare, parents no longer see them, and attention shifts to the side effects of the vaccine. Confidence can be damaged quickly. In 1998 Andrew Wakefield and colleagues published a case series in *The Lancet* that suggested a link between MMR and autism. The research was later shown to be fraudulent; the paper was retracted in 2010 and Wakefield was struck off the UK medical register. Large studies found no association. But MMR coverage in England fell to around 80% in the early 2000s and took years to recover, and measles became endemic again in 2008.
+
+Evidence on communication suggests several principles:
+
+- **Recommend clearly.** A health professional's recommendation is the strongest predictor of vaccination. A **presumptive** approach ("Today she is due her 1-year vaccines") leads to higher uptake than a participatory one ("What do you want to do about her vaccines?") without reducing satisfaction.
+- **Listen and respond to concerns.** Many hesitant parents have specific questions. Techniques from **motivational interviewing**, which explore the person's own views and reasons, are recommended for those with persistent concerns. Dismissing concerns damages trust.
+- **Give accurate, balanced information**, including about common side effects, in plain language and in the languages people use.
+- **Address misinformation carefully.** Lead with the facts rather than the myth, explain why the false claim is wrong, and use trusted messengers from the community. Repeating the myth prominently can strengthen recall of it.
+- **Make vaccination easy.** Convenience barriers often matter more than beliefs.
+
+::: example A hesitant parent {#ex-hesitant}
+A father brings his 13-month-old daughter to the GP practice for a minor illness. Her record shows she has not had her 1-year vaccines. He says he is "not against vaccines" but has read that MMRV "overloads the immune system" and that he would prefer to wait. How should the practice nurse respond?
+::: solution
+**Use the contact.** A minor illness without fever is not a contraindication, so the vaccines could be given today if he agrees.
+
+**Recommend, then listen.** "She's due her 1-year vaccines, and I'd recommend she has them today. You mentioned some worries; can you tell me more?" Explore what he has read and what matters to him.
+
+**Respond to the specific concern.** Infants' immune systems respond to enormous numbers of antigens every day from food, the environment and the bacteria that colonise them. The vaccines in the schedule contain a tiny fraction of the antigens the immune system deals with daily, and modern vaccines contain far fewer antigens than older ones. Giving several vaccines at once has been studied extensively; it is safe and does not reduce the response to each. Delay leaves her unprotected at an age when measles and pneumococcal and meningococcal disease are dangerous, and measles is currently circulating in England.
+
+**Be honest about side effects.** Fever and irritability are common; MMRV can cause fever and a rash about 7 to 12 days later. Febrile seizures are uncommon. Serious reactions are very rare.
+
+**Respect the decision.** If he wants to think about it, give written information, arrange a convenient appointment soon, and record the discussion. Keep the door open: many parents return, and a respectful conversation increases the chance of that.
+:::
+:::
+
+## Elimination and eradication {#eradication}
+
+**Control** reduces disease to an acceptable level; **elimination** stops endemic transmission in a defined area (for example, measles elimination requires the absence of endemic transmission for at least 12 months with high-quality surveillance); **eradication** is the permanent reduction to zero of worldwide incidence, so that interventions are no longer needed.
+
+Smallpox, declared eradicated in 1980, is the only human disease eradicated so far. Features that made it possible were: no animal reservoir; no asymptomatic carriage, so cases were visible; a characteristic rash that allowed diagnosis without a laboratory; lifelong immunity after infection or vaccination; a heat-stable freeze-dried vaccine; and a strategy of **surveillance and containment** (finding cases and vaccinating their contacts in "rings") that worked even where mass coverage was impossible. Wild poliovirus transmission has been reduced by more than 99% since 1988 and remains endemic only in Afghanistan and Pakistan, but the oral vaccine's rare reversion to circulating vaccine-derived poliovirus, conflict and vaccine refusal have made the last steps difficult. The global aspects of vaccination are discussed further in [[public-health/global-health]].
 
 ::: quiz
-Herd immunity thresholds are determined principally by:
-- [ ] The vaccine's adverse-event profile
-- [x] The pathogen's basic reproduction number and how completely and homogeneously the vaccine blocks transmission
-- [ ] The size of the birth cohort
-- [ ] The number of doses in the schedule
+In a community with 97% two-dose MMR coverage, an outbreak of measles occurs and half of the cases had two doses of MMR. A local newspaper headline says "Vaccine fails half the time". What is the best interpretation?
+- [ ] The vaccine's effectiveness is about 50%.
+- [ ] The vaccine has lost effectiveness because the virus has mutated.
+- [x] The result is consistent with a highly effective vaccine, because almost everyone is vaccinated.
+- [ ] Two doses give no more protection than none.
 ::: solution
-**The critical-coverage arithmetic (the herd-immunity threshold scales with the reproduction number) and the vaccine's transmission-blocking properties, applied to heterogeneous local coverage - [[#def-immunology]].**
+With coverage of 97% and effectiveness of 97%, vaccinated cases arise from $0.97 \times 0.03 = 2.9\%$ of the population and unvaccinated cases from up to 3%. About half of cases would be vaccinated even though each vaccinated person's risk is reduced by 97%. The screening method, which uses both the proportion of cases vaccinated and the coverage, would give an effectiveness of about 97%.
 :::
 :::
 
-::: widget plot
-f: 100*max(0,(1-1/(0.95*(1+0)))); 12; 2; 1; 60
-x: 0, 20
-y: 0, 100
-labels: \text{basic reproduction number (log-scaled illustrative)},\ \text{percent}\ \text{critical coverage for herd protection};\ \text{measles (R0 ~12-18): needs ~93-95 percent};\ \text{polio (R0 ~5-7)};\ \text{local cluster coverage that fails (the outbreak line)}
-caption: Herd protection is a coverage map: national averages hide the failing clusters ([[#def-immunology]], [[#def-delivery]]).
+::: history
+In 1796 Edward Jenner inoculated James Phipps with material from a cowpox lesion and later showed that the boy was protected against smallpox; he published his *Inquiry* in 1798. Vaccination was made compulsory for infants in England in 1853, which provoked an anti-vaccination movement and, in 1898, a "conscientious objection" clause. Louis Pasteur's attenuated vaccines for chicken cholera, anthrax and rabies (1885) showed that the principle could be generalised. The 20th century brought vaccines against diphtheria, tetanus, pertussis, polio (Salk 1955, Sabin in the early 1960s), measles (1963), mumps and rubella. The WHO launched the Expanded Programme on Immunization in 1974, and the World Health Assembly declared smallpox eradicated in May 1980. The UK introduced MMR in 1988, Hib vaccine in 1992 and, in 1999, became the first country to introduce a meningococcal C conjugate vaccine. Gavi, the Vaccine Alliance, was founded in 2000 to finance vaccines for low-income countries. The COVID-19 vaccines of 2020, including the first licensed mRNA vaccines, were developed and deployed faster than any before.
 :::
 
 ## Where this leads
 
-The immunological mechanisms are in [[immunology/vaccines-immunotherapy]], the paediatric delivery contact points in [[paediatrics/immunisation]] and [[paediatrics/newborn]], the individual diseases in [[respiratory/respiratory-infections]] and the tropical and travel contexts in [[infectious-diseases/tropical-infections]], communication with hesitant parents in [[clinical-skills/communication]], the global architecture in [[public-health/global-health]], and the risk-communication numeracy in [[epidemiology-ebm/statistics-for-clinicians]].
-
-::: history
-**Programme immunisation begins with Jenner's cowpox (1796) and the vaccination acts that followed Britain's 1840-1853 compulsion and its antivaccine leagues - the first modern collision between population benefit and bodily liberty, resolved then by exemption and repeated ever after. The germ-theory era delivered the first generation (the rabies, diphtheria-antitoxin and tetanus prophylaxes of the 1890s), the twentieth century's middle decades the classic paediatric programme: the pertussis vaccines of the 1940s-50s, Sabin and Salk's polio campaigns (with their 1955 Cutter-laboratory disaster teaching surveillance, and the field trials that made randomisation familiar to publics), the measles-mumps-rubella combination era, and the smallpox eradication (1967-1980) that invented endgame strategy and, in its final phase, the surveillance-and-ring-vaccination method that counted households instead of hoping for percentages. The 1974 Expanded Programme on Immunisation carried the model to low-income countries with the six-antigen core; the Hepatitis-B, Hib, pneumococcal-conjugate and rotavirus and HPV and rotavirus and meningococcal-conjugate waves followed the platform sciences (the conjugate chemistry of the 1980s-90s, reverse vaccinology and mRNA of the 2010s-2020s), while the Gavi alliance (2000) and the WHO prequalification system built the global market architecture. Safety governance matured through crisis: the DTP-efficacy-and-safety controversies of the 1970s-80s (the National Childhood Vaccine Injury Act of 1986 creating the no-fault compensation model), the oral-polio-virus vaccine-derived-strain era's scheduled retirements (the type-2 switch of 2016), the Pandemrix-narcolepsy finding that active surveillance could catch, and the pandemic's thrombosis-with-thrombocytopenia and myocarditis episodes - each testing whether signal detection, transparent comparison of risks and compensation could keep trust solvent. The hesitancy literature has its own history: the Wakefield fraud (1998) and the study's retraction and the documented persistence of its effects, the 'confidence-complacency-convenience' framing (2011) and the WHO's 2012 vaccine-hesitancy working group, the 'infodemic' neologism of 2020 and the platform-governance and prebunking research that followed. The verification-and-endgame era supplies the present: the maternal-tetanus and rubella and rubella-and-congenital-rubella-syndrome and yellow-fever verification programmes' criteria, polio's two-endemic-country-and-vaccine-derived-circulating-strain status as immunisation's unfinished war, and the pandemic's post-mortems - the access inequity (the 'vaccine apartheid' reporting and the trips and COVAX debates), the 100-Days-Mission and mRNA-hub manufacturing responses, and the Pandemic Agreement's governance argument that the next emergency will be survived or not decided in the years between emergencies.** - [[immunology/vaccines-immunotherapy]], [[paediatrics/immunisation]], [[public-health/global-health]].**
-:::
+The immunology behind vaccines is in [[immunology/vaccines-immunotherapy]], and the clinical delivery of childhood vaccination, including contraindications and catch-up schedules, in [[paediatrics/immunisation]]. Outbreak control, in which vaccination is one tool, is the subject of [[public-health/communicable-disease-control]].
 
 ::: summary
-- Schedules are immunology applied: memory kinetics, infant and maternal antibody constraints, exposure epidemiology and durability together decide who gets what when - and waning immunity and variants force boosters and honest restatements of what 'protection' means.
-- Herd protection is a coverage map: thresholds follow from the reproduction number, and national averages conceal the local clusters where outbreaks are authored; equity auditing is therefore infectious-disease control.
-- Delivery systems (default appointments, recall across conflicting records, cold chains, standing orders, outreach) determine realised effectiveness; safety surveillance (spontaneous and active, background-rate reasoning, independent communication, prompt compensation) is the programme's licence to operate.
-- Hesitancy is driven by trust and convenience more than information: presumptive-then-participatory recommendation, access fixes and trusted messengers work; debate-style correction can backfire; mandates raise coverage and spend trust, so they are proportionality decisions.
-- Elimination and eradication have their own epidemiology and politics - the smallpox lesson (count houses), polio's last valleys and vaccine-derived strains, and biosafety of stocks - and the endgame always costs more per case prevented than the campaign did.
-- The pandemic's curriculum - platform speed, access inequity, trust collapse, infodemic management and the 100-days architecture - is the next programme's design brief; the clinician's job stays the conversation, the catch-up schedule, and the reported adverse event.
+- Vaccines give **direct** protection to recipients and, if they reduce transmission, **indirect** protection to others.
+- **Herd immunity threshold** $p_c = 1 - 1/R_0$; **critical coverage** $V_c = (1 - 1/R_0)/E$. Measles ($R_0$ 12–18) needs about 95% two-dose coverage. Clustering of unvaccinated people allows outbreaks even above national thresholds.
+- In the UK, the **JCVI** advises, the **Green Book** guides practice, and UKHSA monitors coverage (COVER), disease and effectiveness.
+- The 2026 schedule includes MMRV at 1 year and 18 months, MenB at 8 and 12 weeks and 1 year, single-dose HPV, maternal pertussis and RSV, and RSV for adults aged 75 and over and in care homes.
+- **Effectiveness** in the field is estimated by cohort, case–control (test-negative) and screening methods. High coverage means many cases are vaccinated even with an excellent vaccine.
+- Safety relies on post-licensure surveillance: **Yellow Card** signals, observed-versus-expected analysis and the **self-controlled case series**.
+- **Vaccine hesitancy** depends on confidence, complacency and convenience. Clear recommendation, listening, honest information and easy access improve uptake.
+- Smallpox is the only human disease eradicated; wild polio remains endemic only in Afghanistan and Pakistan.
 :::
 
 ## Exercises
 
-::: exercise Build the catch-up {level=1}
-A 6-year-old refugee child arrives with no records after 14 months of travel; the practice 'doesn't know what to do with her'. Write the catch-up approach and its evidence frame.
+::: exercise Herd immunity threshold {level=1 check="round(1000*(1-1/6))/10"}
+Mumps has $R_0 = 6$ in a population. What is the herd immunity threshold, as a percentage to 1 decimal place?
 ::: solution
-**No-records-is-a-routine-situation ([[#def-delivery]], [[paediatrics/immunisation]]): the method - 'the national catch-up rules exist for this: treat as unvaccinated and rebuild by age (the schedules are designed so that fewer doses at older ages complete the series for most antigens), with the documented-risk exceptions (the birth-dose-dependent vaccines and the rotavirus age ceilings that close doors - a reason catch-up starts at the first contact, not the third) and the serology options for selected antigens (the hepatitis B and varicella antibody tests that can save doses where licensed and available) ; the delivery frame - 'a named nurse owns the schedule, the Red-Book-equivalent record is created on the day, the recall is booked before she leaves with interpreter present, and the travel-clinic-and-school-team-and-immigration-health routes coordinate so the record is not re-created nightly; the evidence and ethics - 'the 'catch-up-programme-evaluations-and-the-'under-vaccinated-in-migrant-children'-data show the gaps are system failures (records, continuity, language, cost, fear of public-charge rules) more than refusal, so the right answer is a system that knows children; and the clinical bonus - 'the same visit that delivers hexavalents does the bloodlead-and-vitamin-D-and-haemoglobin-and-eye-and-growth-and-development screen the journey made urgent: the catch-up appointment is the paediatric preventive-medicine visit that migration made possible.'**
+$p_c = 1 - 1/6 = 0.8333$, or 83.3%.
 :::
 :::
 
-::: exercise Advise the school {level=2}
-A head teacher asks whether to exclude unvaccinated children during a school measles outbreak, and whether to publish the school's MMR rates. Advise with the public-health law and ethics.
+::: exercise Critical coverage {level=1 check="round(1000*(1-1/6)/0.9)/10"}
+If the mumps component of a vaccine is 90% effective against infection, what coverage is needed to reach the threshold of the previous exercise? Give a percentage to 1 decimal place.
 ::: solution
-**Schools-in-an-outbreak ([[#def-delivery]], [[#def-endgame]], [[medical-ethics-law/justice-resources]]): the exclusion question - 'removal of susceptible children from school during outbreaks is lawful, evidence-supported (the 'susceptible-exclusion-for-21-days' measure's documented role in the US and Australian outbreak literature), and ethically defensible when proportionate: vaccination status verified, exemption processes exhausted, education continuity planned, and the decision public-health-led with the school executing, not the school improvising; the sequencing honest - 'exclusion works only if the clinic door behind it is open (same-week catch-up with transport), and it targets the susceptible, not the unvaccinated-by-exemption families' identity, or it hardens the very communities the response needs; the publication question - 'routine coverage rates per school are already published in several systems and the evidence says transparency helps parents and focuses programmes; publishing during an outbreak must be paired with support, or it converts a health statistic into a stigma; and the durable answer - 'the head teacher's real question is 'how do we never have this meeting again': the year-7 and year-9 catch-up sweeps by the school team, the 'MMR-status-at-registration' admin culture done lawfully, and the trusted-parent liaison who is the outbreak communication no health board can buy later.'**
+$V_c = 0.8333/0.90 = 0.926$, or 92.6%. Mumps outbreaks among vaccinated university students show that effectiveness against infection can be lower than this and that immunity can wane, making the coverage needed even higher.
 :::
 :::
 
-::: exercise Read the trial, advise the minister {level=2}
-A candidate malaria vaccine shows 30 percent efficacy against clinical disease in its phase-3 trial in five African countries, with efficacy waning by year two; ministers want it deployed because 'anything helps'. Give the programme appraisal: the efficacy arithmetic, the risk compensation and ethics debate, and the deployment conditions.
+::: exercise Effective reproduction number {level=1 check="2.4"}
+An infection has $R_0 = 8$. Seventy per cent of the population is immune. Assuming random mixing, what is $R_e$?
 ::: solution
-**Modest-efficacy-vaccine-programme-appraisal ([[#def-immunology]], [[#def-endgame]], [[infectious-diseases/tropical-infections]]): the arithmetic - '30 percent against clinical malaria is not 30 percent against death: multiply by the case-fatality-of-treated-and-untreated structure and the seasonality, and ask what the vaccine adds to nets-and-diagnosis-and-treatment - the 'vaccines-as-complements-not-substitutes' framework; the waning matters (the two-year curve decides dose timing and the 'single-dose-campaign-versus-programme' decision); the risk-compensation debate - 'the malaria literature's own version of the 'bednets-reduce-other-protection' studies: if perceived protection reduces net-use and care-seeking, a weak vaccine can be net-harmful - so deployment must be bundled with unchanged-interventions messaging and measured; the ethics layer - 'deploying a weak vaccine to the poorest children while better tools (the next-generation high-efficacy candidates and seasonal-malaria-chemoprevention's dramatic trials) stay in pipelines or unaffordable is the 'imperfect-now-versus-better-later' argument the WHO's phased-recommendations (the RTS,S and R21 programmes) resolved by pilot-deployment design: real-world effectiveness and equity data before scale, with the 'no child should need a weak vaccine because the strong one is priced out' clause visible; the deployment conditions: the integrated-delivery (the 'vaccine-plus-net-plus-seasonal-chemoprevention bundle'), the pharmacovigilance-and-effectiveness surveillance funded as part of the launch, the financing commitment (the Gavi-and-Global-Fund joint architecture, because the vaccine's cost per averted case at 30 percent efficacy is the minister's number to be told), and the public honesty about what it can and cannot do - the sentence that protects both children and trust.'**
+$s = 0.3$; $R_e = 8 \times 0.3 = 2.4$. The infection can still spread.
 :::
 :::
 
-::: exercise Write the pandemic post-mortem {level=3}
-Your country's second booster campaign reached 38 percent of eligible adults; coverage fell to 22 percent in the most deprived quintile and among the clinically vulnerable under-60s who had hesitated early; the programme's comms were expert-led and government-branded; uptake correlated with trust scores and inversely with 'being nagged' reports. Write the improvement plan with evidence labels.
+::: exercise Proportion of cases vaccinated {level=2 check="round(1000*0.97*0.03/(0.97*0.03+0.03))/10"}
+Coverage is 97% and vaccine effectiveness is 97%. Assuming equal exposure, what percentage of cases will have been vaccinated? Give your answer to 1 decimal place.
 ::: solution
-**Boosters-and-trust ([[#def-delivery]], [[#def-endgame]], [[clinical-skills/communication]], [[public-health/determinants-inequalities]]): the diagnosis - 'two separable failures: access (the deprivation gradient - appointment friction, work schedules, transport, record-linkage gaps for the houseless and mobile) and trust (the hesitated-early cohort and the 'nagged' reports - the 'protection-motivation-that-backfires' psychology and the government-branding-polarisation literature); the access instruments (strongest evidence first) - 'the default-and-varied-settings options (pharmacy-and-general-practice-and-mobile-and-workplace-and-community-venue clinics with walk-in windows), the 'reminder-fatigue-versus-reminder-value' calibration (fewer, better, human, from the clinician's name where possible - the 'presumptive-recommendation-by-a-trusted-clinician' effect sizes), the 'no-appointment-needed-with-oral-advice-and-interpretation' stations, and the entitlement-navigation for the uninsured-or-ineligible-adjacent groups the schemes miss; the trust instruments - 'the messenger-switch (the trusted-local-clinician-and-community-leader comms tested in the 'messengers-matter' trials, the 'transparency-dashboard' of risks-and-benefits-updated-monthly, the 'acknowledge-uncertainty-and-compensation-rights' package, and the 'invitation-not-pressure' framing the reactance studies support); the structural learning - 'the 'vaccinate-for-everything-at-every-contact' culture (the flu-and-RSV-and-HPV-and-catch-up co-delivery at every autumn respiratory-season visit, the immunisation-registry-with-a-single-patient-identifier as the 'records that follow people' fix), the equity-target-and-fund rule (each underserved cohort a named programme line with community partners), and the after-action discipline: publish the coverage and trust curves and the campaign's own survey data, because the next booster's uptake depends on this one's honesty; and the closing metric: 'the programme's success next autumn is not 38-to-60 percent nationally - it is the bottom quintile's line rising without the coercion reports.'**
-:::
-:::
-::: example The cold-chain breach {#ex-coldchain}
-A freezer alarm log shows a vaccine fridge at 14 degrees overnight during a power cut; the clinic's Monday list includes twelve infants due for hexavalent and pneumococcal doses and a hepatitis B birth-dose overdue; the practice manager says 'they felt fine this morning'.
-::: solution
-**Potency-is-invisible ([[#def-delivery]], [[paediatrics/immunisation]], [[clinical-skills/patient-safety]]): the rules - 'vaccine potency cannot be sensed by look, touch or the patient's morning; the manufacturer-and-Green-Book-equivalent temperature-and-hold-time data decide per product (the live-attenuated-versus-adsorbed-vaccine sensitivities differ, the freeze-damaged-and-heat-damaged cases opposite in direction), and the data-logger-and-time-outside-range arithmetic is the evidence, not the smell; the immediate decisions - 'quarantine-and-label-DO-NOT-USE, call the medicines-supply-and-immunisation-lead, product-by-product disposition against the excursion log (the 'discard list' and the 'retain-with-record' list), and reschedule Monday's clinic doses from unaffected stock while documenting the batch-level story in each child's record - because the alternative to paperwork is a cohort of children documented as protected who are not, which is the cold-chain failure mode the audit literature calls silent immunisation; the system fixes - 'the continuous-monitoring-with-SMS-alarms-and-generation-or-priority-outlet-for-fridges (the power-cut class of breaches is engineering-fixable), the 'fridge-map-and-excursion-SOP-in-every-vaccine-room-with-the-phone-numbers-on-the-lid', the annual cold-chain competency for everyone who touches a vaccine including the locums, and the incident report that treats a near miss as the free lesson it is; and the honest frame for the team - 'no one is blamed for the power cut; everyone is responsible for whether the children who got Monday's doses are re-vaccinated this week.'**
+Relative to the population, vaccinated cases arise from $0.97 \times 0.03 = 0.0291$ and unvaccinated cases from $0.03 \times 1 = 0.03$ (taking the attack rate in the unvaccinated as the reference). Proportion vaccinated $= 0.0291/(0.0291 + 0.03) = 0.492$, or 49.2%.
 :::
 :::
 
-::: example The grandfather's shingles question {#ex-shingles}
-A 71-year-old transplant recipient asks why the free shingles programme letter excludes him but his wife got vaccinated at the pharmacy; he also wants the pandemic booster 'because my son says the immune ones should not'.
+::: exercise The screening method {level=2 check="round(100*(1 - (0.2/0.8)*(0.15/0.85)))"}
+In an outbreak of pertussis among children, 85% of the children in the community are fully vaccinated, and 20% of the cases are fully vaccinated. Estimate vaccine effectiveness using the screening method, as a whole percentage.
 ::: solution
-**Programmes-versus-immunocompromised-people ([[#def-immunology]], [[#def-delivery]], [[immunology/immunodeficiency]], [[infectious-diseases/immunocompromised-host]]): the epidemiology of the exclusion - 'the live or historically-live shingles vaccines' safety rule in transplant recipients versus the recombinant adjuvanted vaccine's suitability (the programme designs that swapped products for exactly this population - the 'exclusion usually means the wrong product, not no vaccine'), and his wife's pharmacy eligibility demonstrating the age-and-cohort logic; the reduced-efficacy truth said kindly - 'immunocompromotion lowers vaccine responses across the board (the transplant-and-rituximab-and-timing-of-doses literature: vaccination intervals after B-cell-depleting therapy, the third-dose and additional-primary-series recommendations in some programmes); the disease risks he carries are larger than a healthy 71-year-old's (the disseminated-zoster-and-postherpetic-neuralgia-and-measles-pneumonia-in-the-immunocompromised data), which is precisely why the programme exists with the right product; the practical plan - 'the transplant-infectious-disease-and-immunisation-specialist-in-the-loop (the 'which-vaccine-when-and-which-dose' for his regimen), the contact-and-outbreak plan (the household-vaccination ring - his grandchildren's MMR and varicella status becoming his clinical material, the 'protect-the-protected-patient-by-the-contacts' strategy), the exposure prophylaxis card (the immunoglobulin-and-antiviral-post-exposure-rules he should carry like a diabetic carries glucagon), and the booster answered on evidence (the 'severe-disease-reduction-with-reduced-antibody-responses' transplant-cohort data and the shared decision on timing); and the letter to the programme the case generates - 'the eligibility rules written for products exclude people, and the transplant community's standing submission for immunocompromised-access routes is how programmes catch up with their own epidemiology.**
+$\dfrac{PCV}{1-PCV} = 0.2/0.8 = 0.25$; $\dfrac{1-PPV}{PPV} = 0.15/0.85 = 0.176$. $VE = 1 - 0.25 \times 0.176 = 0.956$, or 96%.
 :::
 :::
 
-::: exercise Handle the refusal {level=1}
-A mother declines her 8-month-old's first measles dose 'because he is a boy and my sister's son died after MMR'. Scripts and systems: what do you actually do today?
+::: exercise Expected background events {level=2 check="round(100*500000*30/365*10/100000)/100"}
+Half a million people receive a vaccine. The background incidence of Bell's palsy is about 10 per 100,000 person-years. How many cases would be expected by chance in the 30 days after vaccination? Give your answer to 2 decimal places.
 ::: solution
-**Refusal-is-a-relationship ([[#def-delivery]], [[clinical-skills/communication]]): the move set - 'sit, ask permission to ask questions, and explore the sister's child (the grief is real and the causal story is where protection lives - the 'acknowledge-then-inform' sequence: 'I am sorry about that - can I tell you what we know about vaccine deaths and about measles in an 8-month-old boy today?'); the honest numbers in the triangle form (the MMR serious-adverse-event rates against the measles hospitalisation-and-death rates in the current global-and-local-epidemiology, the febrile-seizure risk stated plainly and put in its harm position); the motivational frame (the 'what would have to be true for you to feel comfortable' and the 'you do not have to decide today and here is what I am worried will happen in the meantime' honesty); the record and the system - 'document the discussion and the offer, book the re-visit with the same person (the 'continuity-of-recommendation' effect), flag the child for the outbreak-priority-list (the 'susceptible-contacts-register' duty the health-protection teams maintain), and offer the review of the actual death through the reporting-and-compensation route (the 'report-it-and-someone-will-call' pathway - because for this family an investigated outcome beats an argued outcome, and the compensation-and-investigation literature's finding that processed grievance moves people back toward the programme); and the never-list: no shaming, no discharging from the practice, no lecture repetition, and never the 'it's safe, trust us' sentence that the hesitancy research identifies as the exact wrong key.**
+Person-time $= 500{,}000 \times 30/365 = 41{,}096$ person-years. Expected $= 41{,}096 \times 10/100{,}000 = 4.11$. Several cases of Bell's palsy after vaccination are therefore expected by coincidence alone; reports of a handful would not by themselves indicate a problem.
 :::
 :::
 
-::: exercise Design the adolescent catch-up {level=2}
-Your region's HPV and MenACWY adolescent coverage: 88 percent and 91 percent in school-year-8 cohorts, 61 percent and 58 percent among home-educated, hospitalled and absent pupils, and no data for the migrant-in-school groups. Design the programme fix.
+::: exercise Planning an outbreak response {level=3}
+A primary school in an area with low MMR coverage reports two confirmed cases of measles. Records show that of 420 pupils, 330 have had two doses of MMR or MMRV, 30 one dose and 60 none. Describe the public health response, and explain why the herd immunity threshold calculated for England as a whole is not reassuring here.
 ::: solution
-**The-invisible-adolescents ([[#def-delivery]], [[#def-endgame]], [[public-health/determinants-inequalities]]): the mapping - 'the school-based programme's structural blind spots are known (the home-educated registers, the pupil-referral-units and hospital schools, the exclusions and absences, the in-migration mid-academic-year, the looked-after children whose GP-and-school-record-tug-of-war loses doses); the fix is a named-operator design: the 'immunisation-for-home-educated-children pathway (the 'named-sessional-clinic-or-community-nurse-with-consent-routing' some systems publish), the 'hospital-school-and-pupil-referral-service-vaccination-teams' standing arrangements (the looked-after-child-health-advocate's role codified), the 'catch-up-clinic-at-the-youth-hub-with-flexible-hours' offer, and the school-data-sharing-agreements-with-privacy-safeguards that let the team see who exists; the consent layer - 'the school-consent-versus-self-consent-versus-GP-consent architecture per vaccine (the 'mature-minor-self-consent' Fraser-adjacent practice the adolescent-medicine chapter owns), the parent-notification-not-permission debates' settled middle ground, and the consent-formats-in-community-languages with easy-read versions; the measurement - 'coverage reported by cohort with the 'no-record' category named-and-sized quarterly (the 'unseen-10-percent' is the programme's true denominator), the equity dashboard by special-educational-need-and-looked-after-and-migrant-status, and the outbreak-readiness register that knows where the unvaccinated clusters are; and the governance - 'the school-immunisation-service-and-public-health-and-NHS-Board-data-line-and-the-'no-child-without-a-vaccination-record' audit, because adolescent programmes are where universal systems quietly become means-tested.**
+**Immediate actions.** Notify the local UKHSA health protection team (measles is notifiable on clinical suspicion). Confirm cases (oral fluid or blood testing), exclude cases until 4 days after rash onset, and identify contacts in the school and in households.
+
+**Vaccination.** Offer MMR or MMRV to unvaccinated and partially vaccinated pupils and staff, ideally within 72 hours of exposure as post-exposure prophylaxis, and in any case to protect against further exposure. Run a school or community clinic to remove access barriers.
+
+**Vulnerable contacts.** Identify contacts who are pregnant, immunosuppressed or infants too young for vaccination, who may need human normal immunoglobulin according to UKHSA guidance.
+
+**Communication.** Clear letters to parents in the languages they use, with trusted community figures involved.
+
+**Why the national threshold does not help.** The school's own immunity determines spread within it. With roughly 0.97 × 330 + 0.93 × 30 ≈ 348 pupils immune, about 72 (17%) remain susceptible, well above the 6–7% susceptible fraction that measles can tolerate. The school is a cluster with $R_e$ above 1, regardless of national averages.
 :::
 :::
 
-::: exercise Audit a vaccine decision {level=2}
-A GP practice stops offering the routine infant hepatitis B dose because 'the mother antenatal screen was negative'; three infants later have positive mothers whose results never reached the clinic. Audit the decision against programme logic and the harm classes it created.
+::: exercise Should a new vaccine be added? {level=3}
+A new vaccine against a bacterial infection that causes 300 cases of severe disease and 30 deaths a year in UK infants is licensed. It is 80% effective against disease, may reduce carriage, causes fever in 10% of recipients and is expensive. Outline the questions JCVI would consider before recommending it.
 ::: solution
-**The-antigen-logic-error ([[#def-immunology]], [[#def-delivery]], [[infectious-diseases/stewardship-outbreaks]]): the programme design - 'infant hepatitis B vaccination has two indications stacked by design: the mother-negative route (universal-programme logic: the escape routes - false negatives, infections acquired in pregnancy and postpartum, the household-and-travel-and-needlestick-and-dental-and-adolescent-risks, and the 'chronic-infection-if-infected-infantily' arithmetic that makes universal infant programmes cost-effective in low-incidence countries too) and the mother-positive route (the birth-dose-within-24-hours-plus-immunoglobulin-where-indicated emergency pathway); the audit's findings - '1) the protocol conflated the two and deleted the universal indication (a programme-design misunderstanding, not one clinician's error), 2) the antenatal-screen-to-baby-communication chain failed (the lab-to- maternity-to-clinic-to-pharmacy 'the birth-dose must reach the fridge before delivery' pathway - a documented system-hazard class), and 3) the three missed infants are now unprotected newborns of positive mothers - the highest-yield prevention opportunity in the programme, with the catch-up still possible (the schedule can be started urgently; immunoglobulin's window is days, and this is why the pathway's failure is measured in weeks); the fixes - 'the two-indication protocol rewritten with the 'mother-status-unknown-or-unreachable means give the birth dose' rule (the safety-default principle from transfusion medicine ported), the antenatal-results-to-baby-records integration with exception reports, the 'no-unvaccinated-discharge-from-maternity' check, and the incident class reported upward because 'screen-negative' protocols deleting universal indications are a known international failure mode; and the harm taxonomy the board should learn from this: a programme that outsources its logic to individual memory manufactures exactly these three infants quietly, which is why programme medicine is written in protocols, reminders and defaults, not opinions.**
-:::
-:::
+**Burden.** Incidence, severity, deaths and long-term sequelae by age, and trends over time.
 
-::: exercise Model the outbreak response {level=3}
-Measles is confirmed in your city: an index school cluster (secondary school, 40 percent unvaccinated in one year group), a secondary household generation, and a gym chain exposure list still running. Model the response as a programme: the objectives, the coverage arithmetic, the communication, and the evaluation.
-::: solution
-**An-outbreak-as-a-programme-test ([[#def-immunology]], [[#def-delivery]], [[#def-endgame]]): the objectives in order - 'stop transmission where it is hottest (ring the cluster: the year group, the households, the gym), protect the highest-risk susceptibles (the infants, pregnant and immunocompromised contacts first for immunoglobulin and the 'advice-if-exposed' cards), and keep the health system and the public narrative functional; the coverage arithmetic operationalised - 'the 'two-dose-status-not-one' verification (the 'single-dose-children-are-the-outbreaks'-data), the 'post-exposure-vaccination-within-72-hours-and-immunoglobulin-within-6-days' clocks staffed by a team that can see the exposure list and the GP records at once, the 'age-band-vaccination-campaign-for-the-immune-naive-cohort' decision (the schools-with-40-percent-gaps get a nurse-staffed two-day clinic, not a leaflet), and the 'susceptible-exclusion-in-outbreak-zones' proportionality decision reviewed daily; the communication - 'the single-voice architecture (the health-protection-lead briefing daily with the NHS-and-council-and-schools-and- paediatricians-visible), the risk presented in the triangle (the measles-complication-rates-for-the-unvaccinated against the vaccine's actual numbers, no scare, no minimising), the community-messenger network for the specific under-vaccinated communities (the trusted-clinician-and-faith-leader visits the hesitancy literature validates), and the 'we-will-name-the-places-and-not-the-children' privacy line published before it is asked about; the evaluation the outbreak mandates - 'the 'time-from-notification-to-clinic-open' and 'ring-coverage-by-48-hours' metrics, the 'attack-rate-by-verified-two-dose-status' (the vaccine-effectiveness-under-real-conditions data that also answers the antivaccine narrative with local numbers), the 'second-generation-case-curve' (whether the household transmission bent), the post-outbreak 'coverage-in-impacted-schools-now' audit (outbreaks move some communities toward clinics and push others away - measure which), and the serious-incident-style review of the system failures the case series exposes (the records that could not answer 'who is unvaccinated' - the registry and interoperability business case written in infectious-protein), because measles outbreaks are immunisation programmes' unannounced inspection.**
-:::
-:::
+**Vaccine.** Efficacy against disease and carriage, duration of protection, the number of doses and the ages at which they must be given to protect infants at peak risk, strain coverage, safety (including the fever and any rare events), and whether it can be given alongside existing vaccines without interference or more appointments.
 
+**Impact.** Transmission modelling of direct and indirect effects, including possible protection of older people if carriage is reduced, and the risk of serotype or strain replacement.
+
+**Cost-effectiveness.** Cost per QALY gained, using the vaccine price and programme costs; the price negotiated for national supply often determines the decision.
+
+**Programme.** Fit with the schedule, workload, acceptability to parents, the effect of extra injections or fever on confidence (for example the need for prophylactic paracetamol, as with MenB), surveillance to measure impact, and equity of access.
+:::
+:::

@@ -1,140 +1,273 @@
-Global health is the epidemiology of the world as it is and the ethics of the world as it should be: a field that began as tropical medicine for colonisers, became international health for donors, and is now the study of how wealth, power and disease distribute across borders. **This chapter covers the burden accounting and the epidemiological transition with its double burden, the institutional architecture (the WHO and UN system, the Bretton Woods institutions, the vertical funds and the bilateral donors that finance much of what is measured), the financing and workforce flows (the development-assistance-health ledger, the Gavi-Global Fund-World Bank triangle, and brain drain), the security framing (pandemic preparedness and the International Health Regulations), and equity as the field's governing question: the 1978 Alma-Ata primary-health-care promise, its vertical-programme undoing, and the post-pandemic rebuild argument.**
+In 2024 an estimated 4.9 million children died before their fifth birthday, nearly half of them in the first month of life. Most died from causes that are rare among children in the UK: complications of preterm birth, problems during labour, pneumonia, diarrhoea and malaria. In 2023 about 260,000 women died from complications of pregnancy and childbirth, around 70% of them in sub-Saharan Africa. Almost all of these deaths are preventable with knowledge and technologies that have existed for decades. Global health is concerned with why they still happen and what can be done.
 
-## The map
+**Global health** is the study and practice of improving health and achieving equity in health for all people worldwide, with attention to problems that cross national boundaries and to the global causes of health and disease. It builds on the determinants of health ([[public-health/determinants-inequalities]]) and applies them across countries. This chapter covers how the global burden of disease is measured and how it is changing, maternal and child health, the major infectious diseases and antimicrobial resistance, One Health, the institutions of global health, universal health coverage and the Sustainable Development Goals.
 
-::: definition Burden accounting and the transition {#def-burden}
-**Global health speaks in comparators. The disability-adjusted life year counts years lost to premature death or disability, with method controversies (age weighting, discounting) and an equity-blind property: a year saved in a rich country counts the same as a year in a poor one unless social weighting is deliberately added. Healthy life expectancy supplies the headline: a 10-15 year gap between countries, and similar gaps between a country's neighbourhoods, which makes global health a domestic policy wherever migration and inequality exist. The Global Burden of Disease enterprise made risk-factor attribution a single comparable accounting system, with ongoing arguments about cause-of-death coding quality but unmatched value as the field's shared map. The epidemiological transition - Omran's framing, updated by the compression-of-morbidity revisions - describes most populations' shift from infectious to chronic causes of death, but the central modern fact is the double burden: HIV, tuberculosis, malaria, diarrhoea and malnutrition coexisting with hypertension, diabetes, obesity and cancer in the same countries, districts and households, while health systems designed for neither struggle to deliver both. The transition's drivers are the determinants chapter's, globalised: the commercial expansion of ultra-processed food, tobacco and alcohol into markets with no regulatory history; urbanisation, transport and air-solids changes; and demographic mathematics, since low-income populations are ageing precisely because their children now survive. The vertical-versus-horizontal literature lives here: the campaign successes that saved millions (the immunisation, ART-coverage and bednet curves) against the evidence that disease-specific programmes can hollow the primary care that would sustain them - the parallel systems, the salary supplements pulling staff from clinics to projects. The synthesis is now orthodox: selective primary health care as the historical compromise, the pandemic's build-back-stronger primary-care verdict, and the costed essential-health-operations packages that operationalise Alma-Ata without its politics. The clinical translation for trainees: migration medicine at home (arrivals with the latent infections, vaccination records and genetic traits of their origin epidemiology - the hepatitis B, thalassaemia and G6PD screening logic that antenatal and newborn programmes already apply), and the competence to treat the passport as well as the patient, which global health supplies.**
+## Measuring the global burden of disease {#burden}
+
+Comparing the burden of different diseases requires a measure that combines death and disability. A death at age 5 and a death at age 85 are both one death, but the first loses far more life; and conditions such as depression, back pain and hearing loss cause little death but much suffering.
+
+::: definition Disability-adjusted life years {#def-daly}
+A **disability-adjusted life year** (DALY) is one lost year of healthy life. The DALYs due to a condition are the sum of:
+
+- **years of life lost** (YLL) to premature death: for each death, the remaining life expectancy at the age of death, taken from a standard life table;
+- **years lived with disability** (YLD): the number of people with the condition, multiplied by a **disability weight** between 0 (full health) and 1 (equivalent to death) and by the duration.
+
+$$
+\text{DALY} = \text{YLL} + \text{YLD}.
+$$ {#eq-daly}
+
+DALYs are the main measure of the **Global Burden of Disease** (GBD) study, coordinated by the Institute for Health Metrics and Evaluation, which estimates deaths, illness and risk factors for over 200 countries and territories.
 :::
 
-## The machinery
+DALYs measure health lost; the **quality-adjusted life year** (QALY) used in economic evaluation, discussed in [[public-health/health-systems-economics]], measures health gained. Both rest on value judgements: disability weights come from surveys of the public, and the use of a single standard life expectancy treats a year of life as equally valuable everywhere. Critics argue that disability weights can seem to devalue the lives of disabled people, and that they ignore the social context of disability.
 
-::: definition Institutions, financing and the security frame {#def-machinery}
-**The World Health Organization is the field's constitutional body: norm-setter (the classification systems, treatment guidelines and essential-medicines list that most national formularies copy), certifier (the elimination verification programmes), and emergency alarm (the International Health Regulations' public-health-emergency-of-international-concern declarations, the 2005 post-SARS revision, and the Pandemic Agreement negotiations with their 100-days-equity targets and pathogen-access system, to be judged by the next outbreak). Around it sits the UN family (UNAIDS, UNICEF and its procurement dominance, UNFPA, and the joint FAO-WHO-OIE One Health secretariat), the World Bank as the largest external health financier with its doctrinal swings between insurance and social protection, and the regional development banks. The financing architecture is a triangle: Gavi as the vaccine market's demand aggregator (with its middle-income graduation problem), the Global Fund with its performance-based grant model and its civil-society governance seats, and the pooled-procurement and advance-market-commitment innovations that cut antiretroviral prices by orders of magnitude; alongside them the bilateral agencies (USAID and its family-planning and PEPFAR legacy, the European health lines), the philanthropies with their agenda-setting power subjected to steady audit, and the '99 percent of health aid targets diseases of poverty while chronic disease kills more of the same people' finding that defines the NCD-funding gap. Health financing science runs underneath: the out-of-pocket payments that push households into poverty each year (the catastrophic-health-expenditure indicators), the social-insurance and single-payer debates, the domestic-resource-mobilisation versus aid-dependence argument, and the cash-transfer trial findings now policy in several graduation programmes. The security frame arrived with SARS in 2003 and never left: health security as national security (the Global Health Security Agenda and its external evaluations), the pandemic-bonds and financing-intermediary experiments, the dual-use research and gain-of-function arguments, and the leak-versus-spillover controversy whose sober lesson is that surveillance would have made the question moot. The workforce ledger closes the account: the migration data showing high-income countries training a large share of other countries' doctors and nurses, the WHO international recruitment code with its voluntary teeth, the training-investment-capture versus remittance-economics argument, and the brain-circulation programmes that partially reverse the flow.**
-:::
-
-## The question
-
-::: definition Equity, solidarity and the rebuild argument {#def-equity}
-**Equity is global health's dependent variable, and its ledger has four columns. The research ledger shows the ten-ninety gap: a tenth of health research chases nine tenths of the burden, which is why product-development partnerships and push-and-pull incentives exist (the non-profit antimalarial and visceral-leishmaniasis successes prove the model; the antibiotic market failure proves its limits). The pricing ledger is the field's permanent argument: the TRIPS flexibilities and compulsory-licensing history (the Brazilian and Thai antiretroviral negotiations), the middle-income paradox as branded products displace generics just as purchasing power rises, the voluntary patent pools and tiered-pricing experiments, and the price-transparency campaigns' disquieting finding that purchasers rarely know what medicines actually cost. The pandemic filled the fourth column in public: the dose diplomacy and export bans, the COVAX shortfall against national stockpiling, the TRIPS-waiver debate whose innovation-versus-access positions were both partly evidence-backed, the mRNA technology-transfer hubs now multiplying, and the commissions' verdict that the world's failure was predicted in the after-action reports of the previous failures. Against the ledger stands the rebuild argument, which is also an efficiency argument: universal primary health care is the only delivery platform that handles the double burden (the Alma-Ata-to-Sustainable-Development-Goals lineage, the 'primary-care-oriented-union' scorecards, and the Lancet-Sen-and-Atun analyses showing strong primary systems' cost and outcome advantages), the pandemic's own epidemiology proved it (the countries with trusted community health workers bent several curves at once), and the health-for-all-economics line - that every dollar in primary prevention and care in low-income settings returns several - now sits inside the World Bank's own documents. The solidarity instruments remain contested: the levies and levies-proposals (the 'Unitaid-air-ticket-levy' precedent and the pandemic-levy arguments), the development-assistance targets missed by most donors, and the 'domestic-resource-first' counsel that aid should catalyse, not substitute. The clinical heart of the argument stays simple: the difference between a preventable death in one district and a survivable one in the next is usually a system - a supply chain, a roster, a referral slip, a trust - and systems are built by decisions that are political, which is why global health keeps ending in political economy.**
-:::
-
-::: example The referral that arrived twice {#ex-migration}
-A 34-year-old recently arrived from West Africa registers at your practice, asymptomatic, asking for 'the screening everyone gets here'; her records are a vaccination card with two of three hepatitis B doses.
+::: example Calculating DALYs {#ex-daly}
+In a country, a disease causes 100 deaths a year, all at about age 40; the standard remaining life expectancy at 40 is 45 years. In the same year, 1,000 people have a non-fatal form of the disease with a disability weight of 0.2, lasting 5 years on average. Calculate the DALYs for the incident cases of that year.
 ::: solution
-**Migration-medicine-competence ([[#def-burden]], [[infectious-diseases/hiv]], [[public-health/communicable-disease-control]]): the evidence-based offer, not the stereotype: the UK-style new-arrival bundle (the TB screening by history and chest X-ray or the GP referral pathway for high-incidence-country arrivals, the hepatitis B and C and HIV blood screen offered to all adult arrivals with its opt-out counselling script, the bloods on ferritin and thalassaemia and sickle-cell traits where the family-tracing-and-genetics-programme criteria apply, and the strongyloides and schistosomiasis and helminth screens guided by origin-and-exposure questions rather than by skin colour), the vaccination catch-up against her card (the two-of-three-hepatitis-B-schedule completed by serology-or-restart logic, plus the routine and travel-relevant updates), the 'asymptomatic-and-asking-is-a-gift' point (she is the engaged end of a population the system usually meets in crisis), and the administrative medicine that determines whether prevention happens (the healthcare-access rules and charges she should be told accurately, the interpreter booked for the results conversation, and the 'no-record-no-history' problem solved by asking her origin-clinic if one exists). The global-health context to state when colleagues ask why: the screening bundle exists because disease prevalence follows migration corridors (the TB-incidence gradient by country of origin that every European register reports), and because the alternative is diagnosis at the infectious or decompensated stage - which is both worse medicine and worse economics. The clinical trap to avoid: the 'returnee-is-a-container-of-exotic-disease' frame (the malaria-tested-with-negative-travel-history-panic and the screening that misses the depression, the trauma and the loneliness that will actually present) - the same consultation that draws the bloods should book the follow-up that asks how the first winter is going.**
+YLL $= 100 \times 45 = 4{,}500$.
+
+YLD $= 1{,}000 \times 0.2 \times 5 = 1{,}000$.
+
+DALYs $= 4{,}500 + 1{,}000 = 5{,}500$.
+
+Most of the burden here comes from premature death. For a condition such as migraine or depression, the balance would be reversed: few deaths but many YLD. Earlier versions of the GBD also discounted future years and weighted years of life by age; current versions do neither.
 :::
 :::
 
-::: example The fund that wanted indicators {#ex-donor}
-A district health officer in a low-income country receives vertical-funds money for HIV testing with monthly reporting, while the clinic's generator fuel and the lab's reagents come from a budget line reported yearly. Staff increasingly do the funded activity and postpone the unfunded one.
-::: solution
-**The-project-versus-the-system ([[#def-machinery]], [[#def-equity]], [[public-health/health-systems-economics]]): the named phenomenon is the parallel implementing unit - donor projects that deliver measurable activities while the clinic's unmeasured foundations erode, salary supplements that pull the best staff toward the funded project, and the stock-out irony of fully reported test kits beside unreported gloves. The negotiation is old: general budget support preserves country systems but raises fiduciary-risk objections; project aid is accountable line by line and destroys the whole. The middle path the partnerships now teach is to fund activities through country systems with co-owned indicators. The design fixes with evidence: indicator packages co-written with the ministry (the few-good-commands monitoring reforms), start-up and phase-down plans that state what remains when the project ends, co-financing rules that let vertical money buy shared inputs (the laboratory networks and cold chains that serve HIV and tuberculosis and routine immunisation at once), and resident-staff secondments replacing consultant fly-overs. The officer's own leverage, often underestimated: the monthly data he produces is the donor's product, the district's written costed plan is his, and the health-management-information system gives him the evidence that the generator, not the algorithm, is binding. The ethics column: reporting what is measured while patients wait for what is not is a distributive harm the evaluation literature now names, and the 'do-no-harm' clause belongs to programme design as much as to field medicine. The global lesson the case exports: the next pandemic instrument will be judged by whether its money strengthens the generator - the cold chain, the workforce roster, the referral slip - or buys another parallel machine that stops the year the funding stops.**
-:::
+### The epidemiological transition {#transition}
+
+::: theorem The epidemiological transition {#thm-transition}
+As countries develop economically and socially, the pattern of disease shifts from a predominance of infectious diseases, maternal and neonatal conditions and undernutrition, which kill mainly children and young adults, towards a predominance of non-communicable diseases and injuries, which kill mainly older adults. Life expectancy rises and the leading causes of death change. The transition accompanies the **demographic transition**, in which falling mortality is followed, after a lag, by falling fertility, so that the population first grows rapidly and then ages.
 :::
 
-::: example The outbreak briefing at midnight {#ex-emergency}
-Your ministry receives an NGO field report: 40 unexplained child deaths with jaundice in two districts, serum-sickness-like illness in carers, a funeral this week; the borders are 80km away. The national reference lab closes in three hours.
-::: solution
-**The first 24 hours of an international event ([[#def-machinery]], [[#def-burden]], [[emergency-critical-care/major-incidents]]): the operating rules from the outbreak canon - verify (the case definition, the line list, and specimens out of the districts on ice before the lab closes), notify (the national focal point under the International Health Regulations, whose assessment clock starts at the judgement of seriousness, not at the death toll), and act in public view (publish the risk assessment, because rumour travels faster). The overnight clinical epidemiology: the syndrome tree (jaundice plus encephalopathy plus a child cluster says viral haemorrhagic fever, toxin, or yellow fever until excluded; the 'carers affected' line is the transmission clue that decides whether this is a containment mission or a treatment mission), the specimen logistics (triple packaging, the reference-lab network, and the collaborating-centre shipping that the polio and Ebola systems built), and the exposure-list arithmetic with the funeral as the superspreading event. The machinery it triggers: the emergency toolkit pathway (ring vaccination if yellow fever; the investigational-therapeutics question with its days-not-months ethics review), the international support offers, and the neighbour-state communications the regulations deliberately enable. The two failure modes the reviews keep finding: notification delay (the shame-versus-solidarity calculus that the rules try to de-penalise) and the data freeze followed by the dump (the weekly bulletin that starts too late and stops too early). The clinician's close: the districts remember who helped in week one, and every later reform - laboratory, surveillance, workforce - negotiates easier with gratitude than with blame.**
-:::
+::: proof
+Abdel Omran described the transition in 1971 in three stages: an "age of pestilence and famine", an "age of receding pandemics" and an "age of degenerative and man-made diseases". The mechanisms are well understood. Better nutrition, clean water and sanitation, housing, education (especially of women), vaccination and medical care reduce deaths from infection, mostly among children. More children survive to adulthood and old age, where the risk of cardiovascular disease, cancer and other NCDs is highest. At the same time, urbanisation and economic change alter diet, physical activity, tobacco and alcohol use. Falling child mortality and better education and access to contraception lead families to have fewer children, so the population ages.
 :::
 
-::: example The graduation problem {#ex-graduation}
-A middle-income country's Gavi support for pneumococcal and HPV vaccines ends in three years; the domestic budget covers half the invoice at current prices; the same products are cheaper across the border under a negotiated tender.
-::: solution
-**Vaccine and finance graduation ([[#def-machinery]], [[#def-equity]], [[public-health/vaccination-programmes]]): the arithmetic first - per-dose price, cohort sizes, the full programme cost including cold chain and delivery, the share of routine-immunisation spending the country already carries, and the health-budget headroom finance actually controls. The menu with its politics: regional joint purchasing (the PAHO and UNICEF-mechanism models with their demonstrated discounts and their eligibility and timeliness constraints), pooled tenders, the 'middle-income trap' finding that countries graduate on income before they graduate on fiscal space or market leverage, and the domestic-manufacturing strategy whose pandemic-era promise still waits on technology transfer and regulatory convergence. The health-technology-assessment lever: the cost-effectiveness and budget-impact dossiers that give finance ministers a reason, the schedule-optimisation evidence (the single-dose HPV findings that cut cost without cutting protection - the immunology chapter become fiscal policy), and the honest argument about what shares the line with vaccines. The negotiation posture the evidence supports: phased graduation with predictability (the cliff-edge finding that abrupt stops break budget and confidence at once), co-financing ramps, and south-south price benchmarking that turns the neighbour's tender into leverage. The administrative lesson for whoever inherits the file: coverage percentages are a financing variable, not a virtue - the year after graduation is when the defaulter cohorts form, and the equity audit should run on the invoice as well as the arm.**
-:::
-:::
-
-::: quiz
-The 'double burden of disease' in global health refers to:
-- [ ] Two pandemics occurring simultaneously
-- [x] Infectious and chronic disease burdens coexisting in the same populations
-- [ ] Maternal and child diseases counted together
-- [ ] Public and private funding of the same services
-::: solution
-**The defining epidemiological fact of this generation: the infections of poverty and the diseases of plenty in one district, one household, one waiting room - [[#def-burden]].**
-:::
-:::
+The transition is not uniform or inevitable. Many low- and middle-income countries now face a **double burden**: infectious and maternal and child conditions remain common while NCDs rise rapidly, often at younger ages and with less access to treatment than in high-income countries. HIV reversed gains in life expectancy in southern Africa in the 1990s, and COVID-19 reduced life expectancy in many countries in 2020–21. Within any country, poorer groups are at an earlier stage of the transition than richer ones.
 
 ::: widget plot
-f: 100-70/(1+exp(-(x-45)/12)); 120; 0; 1; 60
-x: 0, 100
-y: 0, 100
-labels: \text{years},\ \text{percent}\ \text{of deaths from chronic causes (illustrative)};\ \text{the epidemiological transition curve};\ \text{the double-burden plateau where both persist};\ \text{healthy-life-expectancy divergence (the equity gap)}
-caption: Populations age and survive; the transition flattens into a double burden where systems stay designed for one half ([[#def-burden]], [[#def-equity]]).
+f: 50 + 6*ln(x)
+x: 1, 100
+y: 40, 90
+labels: \text{life expectancy (years, illustrative)}
+points: 2, 54.2; 50, 73.5
+caption: An illustrative "Preston curve": life expectancy rises steeply with national income at low incomes and flattens at high incomes (here a simple model, 50 + 6 ln x, with x in thousands of dollars per person per year). At low incomes a small increase in resources buys large health gains; at high incomes, how resources are distributed and used matters more than how much there is. Real countries scatter widely around such a curve, and the whole curve has moved upwards over time as knowledge and technologies spread.
+:::
+
+## Maternal, newborn and child health {#mch}
+
+::: definition Maternal and child mortality measures {#def-mmr}
+- A **maternal death** is the death of a woman while pregnant or within 42 days of the end of pregnancy, from any cause related to or aggravated by the pregnancy or its management, but not from accidental or incidental causes.
+- The **maternal mortality ratio** (MMR) is the number of maternal deaths per 100,000 live births in a period.
+- The **lifetime risk of maternal death** combines the MMR with fertility: the probability that a 15-year-old woman will eventually die from a maternal cause.
+- The **under-5 mortality rate** is the probability of dying before age 5, per 1,000 live births. The **neonatal mortality rate** is the probability of dying in the first 28 days, per 1,000 live births.
+:::
+
+According to the WHO, there were about 260,000 maternal deaths in 2023, a global MMR of 197 per 100,000 live births, with around 70% of deaths in sub-Saharan Africa. The main causes are haemorrhage (especially postpartum), hypertensive disorders (pre-eclampsia and eclampsia), sepsis, complications of unsafe abortion and obstructed labour, together with indirect causes such as malaria, HIV and pre-existing heart disease. SDG target 3.1 is a global MMR below 70 per 100,000 by 2030; the WHO notes that this would require an annual rate of reduction of almost 15%, far faster than recent progress.
+
+In 2024, 4.9 million children died before age 5, 2.3 million of them (47%) as newborns. Leading causes include complications of preterm birth, intrapartum complications (birth asphyxia and trauma), pneumonia, diarrhoea and malaria, with undernutrition an underlying factor in a large share of deaths. SDG target 3.2 aims to end preventable deaths of newborns and children under 5, with every country reducing neonatal mortality to 12 or fewer per 1,000 live births and under-5 mortality to 25 or fewer per 1,000 live births by 2030.
+
+Effective interventions are well known and inexpensive:
+
+- **Before and during pregnancy**: family planning, antenatal care, iron and folic acid, tetanus vaccination, prevention of malaria in pregnancy (insecticide-treated nets, intermittent preventive treatment), and prevention of mother-to-child transmission of HIV and syphilis.
+- **At birth**: a skilled birth attendant, clean delivery, access to emergency obstetric care (including caesarean section and blood transfusion), active management of the third stage of labour and uterotonic drugs (such as oxytocin) to prevent haemorrhage, and magnesium sulfate for eclampsia.
+- **Newborns**: neonatal resuscitation, early and exclusive breastfeeding, thermal care (including "kangaroo" skin-to-skin care for small babies) and treatment of neonatal infection.
+- **Children**: vaccination, oral rehydration solution and zinc for diarrhoea, antibiotics for pneumonia, insecticide-treated nets and prompt treatment of malaria, safe water and sanitation, and prevention and treatment of malnutrition.
+
+::: example The three delays {#ex-three-delays}
+A 24-year-old woman in a rural district has a postpartum haemorrhage at home after the birth of her third child. Her family waits several hours before deciding to seek help; it takes four hours to reach the district hospital by borrowed motorbike; at the hospital there is no blood available and the only doctor is in theatre. She dies. Analyse her death using the "three delays" model and suggest interventions at each level.
+::: solution
+The **three delays model** (Thaddeus and Maine, 1994) identifies delays in (1) deciding to seek care, (2) reaching a health facility and (3) receiving adequate care once there.
+
+**Delay 1: deciding to seek care.** Causes include lack of knowledge of danger signs, decisions controlled by others in the household, cost and previous poor experiences of care. Interventions: birth preparedness plans, community education on danger signs, women's groups, removing user fees, and respectful maternity care so that women want to use services. Encouraging birth in a facility with a skilled attendant avoids the situation entirely.
+
+**Delay 2: reaching care.** Causes: distance, roads, lack of transport and money. Interventions: maternity waiting homes near hospitals, community emergency transport schemes, ambulance services, and more facilities able to manage emergencies.
+
+**Delay 3: receiving adequate care.** Causes: lack of staff, blood, drugs (oxytocin, misoprostol), equipment and skills. Interventions: emergency obstetric care at district level, blood transfusion services, essential medicine supply chains, training, and audit of maternal deaths with action on findings.
+
+In addition, prevention at the birth itself (active management of the third stage of labour with a uterotonic) would have greatly reduced her risk of haemorrhage. Her death reflects failures across the system, not one moment.
+:::
+:::
+
+::: example Lifetime risk {#ex-lifetime-risk}
+In a country, the MMR is 200 per 100,000 live births and the average woman has 5 births. In another, the MMR is 10 per 100,000 and women have 1.6 births on average. Estimate the lifetime risk of maternal death in each, ignoring deaths from other causes, and express each as "1 in N".
+::: solution
+Risk per birth: $0.002$ and $0.0001$.
+
+**First country.** Lifetime risk $\approx 1 - (1 - 0.002)^5 = 0.00996$, or about 1 in 100.
+
+**Second country.** Lifetime risk $\approx 1 - (1 - 0.0001)^{1.6} = 0.00016$, or about 1 in 6,250.
+
+The difference in lifetime risk (about 60-fold) is larger than the difference in MMR (20-fold), because women in the first country face the risk more times. Family planning therefore reduces maternal mortality both by reducing the number of pregnancies and by avoiding high-risk and unwanted pregnancies.
+:::
+:::
+
+## Infectious diseases and antimicrobial resistance {#infections}
+
+HIV, tuberculosis and malaria remain major global causes of death, concentrated in sub-Saharan Africa and South Asia. Large global programmes since the early 2000s, including the Global Fund to Fight AIDS, Tuberculosis and Malaria (2002) and the US President's Emergency Plan for AIDS Relief (PEPFAR, 2003), expanded antiretroviral treatment, insecticide-treated nets and TB treatment, with large reductions in deaths. Tuberculosis has again become the leading single infectious cause of death worldwide since the COVID-19 pandemic receded. Progress is fragile: reductions in international funding in 2025, including the dismantling of USAID, disrupted HIV, TB, malaria and nutrition programmes in many countries.
+
+**Neglected tropical diseases** (such as schistosomiasis, soil-transmitted helminths, lymphatic filariasis, onchocerciasis, trachoma, leishmaniasis and snakebite envenoming) affect over a billion of the world's poorest people. Many are controlled by mass drug administration and improved water and sanitation, and several countries have eliminated one or more of them as public health problems.
+
+**Eradication.** Smallpox was eradicated in 1980. Wild poliovirus cases have fallen by over 99% since the Global Polio Eradication Initiative began in 1988, and wild poliovirus remains endemic only in Afghanistan and Pakistan, though outbreaks of circulating vaccine-derived poliovirus occur elsewhere. Dracunculiasis (Guinea worm disease) is close to eradication without any vaccine or drug, through safe water and behaviour change. The principles are in [[public-health/vaccination-programmes]].
+
+### Antimicrobial resistance {#amr}
+
+Antimicrobial resistance (AMR) arises wherever antimicrobials are used: in human medicine, in animals (for treatment and, in some countries, growth promotion) and in agriculture. Resistant organisms and resistance genes spread between people, animals and the environment and across borders through travel, trade and food. A systematic analysis for 2019 (the GRAM study, published in *The Lancet* in 2022) estimated that bacterial AMR directly caused about 1.27 million deaths and was associated with about 4.95 million, with the highest rates in sub-Saharan Africa and South Asia. In poorer countries the problem is often too little access to effective antibiotics as well as too much inappropriate use.
+
+The response requires surveillance, infection prevention (including water, sanitation and vaccination, which reduce the need for antibiotics), stewardship in human and animal health, regulation of sales without prescription, and new antimicrobials, which need new economic models because new antibiotics should be used sparingly. The UK pays for some new antibiotics through a subscription model that is not linked to volume sold.
+
+::: definition One Health {#def-one-health}
+**One Health** is an integrated approach that recognises that the health of people, domestic and wild animals, plants and the wider environment are closely linked and interdependent, and that aims to balance and optimise the health of all of them together. It is promoted by the **Quadripartite** organisations: the Food and Agriculture Organization (FAO), the UN Environment Programme (UNEP), the WHO and the World Organisation for Animal Health (WOAH).
+:::
+
+About three-quarters of emerging infectious diseases in humans are zoonoses, including HIV, Ebola, avian influenza, SARS, MERS and probably SARS-CoV-2. Their emergence is driven by deforestation, land-use change, intensive farming, wildlife trade and climate change. One Health approaches include joint surveillance of animal and human disease, coordinated control of zoonoses such as rabies and brucellosis, reducing antimicrobial use in livestock, and environmental protection.
+
+## The institutions of global health {#institutions}
+
+- **The World Health Organization** (founded 1948) is the UN agency for health. Its governing body, the World Health Assembly, meets every May; its functions include setting norms and standards (such as the Essential Medicines List and treatment guidelines), coordinating responses to health emergencies under the International Health Regulations, prequalifying medicines and vaccines, and supporting countries. Most of its budget comes from voluntary contributions earmarked by donors for specific purposes, which limits its independence. The United States, historically the largest funder, withdrew from the WHO with effect from January 2026.
+- **Other UN agencies**: UNICEF (child health, vaccine procurement), UNAIDS, UNFPA (reproductive health), and the World Bank (financing and health system loans).
+- **Global health initiatives** focused on particular problems: **Gavi**, the Vaccine Alliance (2000), which finances vaccines for low-income countries, and the **Global Fund** (2002).
+- **Bilateral donors**, such as the UK's Foreign, Commonwealth and Development Office; the UK government announced in 2025 that official development assistance would fall from 0.5% to 0.3% of gross national income by 2027.
+- **Philanthropic foundations**, notably the Gates Foundation and the Wellcome Trust, which shape research and policy priorities.
+- **Non-governmental organisations**, academic institutions, and the governments and health systems of low- and middle-income countries themselves, which provide most health spending in most countries.
+
+The architecture has been criticised for fragmentation (many initiatives, each with its own reporting), for donor-driven priorities that favour single diseases over health systems, and for power imbalances in which decisions affecting low- and middle-income countries are made in high-income ones. Calls to "decolonise" global health ask for leadership, funding decisions, research authorship and agenda-setting to be shifted to the countries and communities most affected.
+
+Health security is governed by the **International Health Regulations (2005)**, amended in 2024 with effect from September 2025, and the **WHO Pandemic Agreement**, adopted in May 2025; both are described in [[public-health/communicable-disease-control]].
+
+## Universal health coverage and the Sustainable Development Goals {#uhc}
+
+::: definition Universal health coverage {#def-uhc}
+**Universal health coverage** (UHC) means that all people have access to the full range of quality health services they need, when and where they need them, without financial hardship. It has three dimensions, often drawn as a cube: **who** is covered (the share of the population), **which services** are covered, and **what proportion of the costs** is covered.
+
+**Catastrophic health expenditure** is commonly defined as household out-of-pocket health spending exceeding 10% (or, in a stricter definition, 25%) of total household consumption or income. **Impoverishing** health expenditure pushes a household below the poverty line.
+:::
+
+The **Declaration of Alma-Ata** (1978) called for "health for all" through **primary health care**, and the Astana Declaration (2018) renewed the commitment. UHC is target 3.8 of the **Sustainable Development Goals**, adopted by UN member states in September 2015 with a deadline of 2030. SDG 3 ("ensure healthy lives and promote well-being for all at all ages") includes targets on maternal, newborn and child mortality (3.1, 3.2), epidemics of AIDS, TB, malaria and neglected tropical diseases (3.3), NCDs and mental health (3.4), substance use (3.5), road traffic injuries (3.6), sexual and reproductive health (3.7), UHC (3.8), and pollution (3.9). Many other goals, on poverty, hunger, education, gender equality, water and sanitation, and climate, are determinants of health.
+
+Paying for care out of pocket at the time of use deters people from seeking care and pushes millions of households into poverty every year. Countries that have made progress towards UHC have generally increased public financing (from taxes or compulsory insurance), pooled risks across the population, and removed or reduced user fees, especially for poor people and for priority services such as maternal and child health. Financing models are compared in [[public-health/health-systems-economics]].
+
+::: example Catastrophic health expenditure {#ex-catastrophic}
+A household's monthly consumption is 200 dollars. A child is admitted to hospital with pneumonia and the family pays 30 dollars that month for fees, medicines and transport. Is this catastrophic at the 10% threshold? At the 25% threshold? What could the household have to give up?
+::: solution
+Share of consumption $= 30/200 = 15\%$. This exceeds the 10% threshold but not the 25% threshold.
+
+A household spending most of its income on food and housing may cover such costs by selling assets (livestock, tools), borrowing at high interest, taking children out of school or cutting food intake, each of which harms health and future income. Measures based on spending also miss households that could not pay and so went without care. This is why UHC monitoring uses both service coverage and financial protection indicators.
+:::
+:::
+
+::: warning Averages hide the people left behind
+National progress towards global targets can conceal large gaps. A country can reach a national average under-5 mortality below 25 per 1,000 while rural, poorer and minority populations remain far above it; vaccination coverage can be high nationally with "zero-dose" children concentrated in urban slums, remote areas and conflict zones. The SDGs' principle of "leave no one behind" requires data broken down by income, sex, age, location, ethnicity, disability and migratory status. The same caution applies in the UK, as earlier chapters show.
+:::
+
+## Migration, conflict and humanitarian crises {#humanitarian}
+
+Over 100 million people are forcibly displaced worldwide by conflict, persecution and disaster. Conflict destroys health facilities, kills health workers and causes outbreaks of measles and cholera, malnutrition and untreated chronic disease. Humanitarian health priorities, set out in the Sphere standards, include water, sanitation and hygiene, food and nutrition, shelter, vaccination (especially measles), communicable disease control, sexual and reproductive health, mental health and psychosocial support, and continuity of care for chronic conditions. Attacks on health care violate international humanitarian law.
+
+Migrants arriving in high-income countries such as the UK generally have health needs similar to those of the host population, with some specific needs: incomplete vaccination, infections common in their country of origin (such as tuberculosis, hepatitis B and C, HIV), and, for refugees and asylum seekers, the effects of trauma. Barriers to care include language, cost (charging for some NHS services for overseas visitors), fear of immigration enforcement and unfamiliarity with the system. Every person, regardless of immigration status, can register with a GP in England.
+
+::: quiz
+Which statement about the global burden of disease is correct?
+- [ ] Non-communicable diseases are mainly a problem of high-income countries.
+- [ ] DALYs measure only deaths.
+- [x] Most premature deaths from non-communicable diseases occur in low- and middle-income countries.
+- [ ] The epidemiological transition happens at the same pace in every country.
+::: solution
+The WHO estimates that 82% of premature NCD deaths (before age 70) occur in low- and middle-income countries, where people often develop NCDs at younger ages and have less access to treatment. DALYs combine years of life lost to death with years lived with disability. The transition varies widely between and within countries, and many face a double burden of infectious and non-communicable disease.
+:::
+:::
+
+::: history
+The International Sanitary Conferences, beginning in Paris in 1851, tried to agree on quarantine rules against cholera, plague and yellow fever, and led to the first international health bodies. The World Health Organization was founded on 7 April 1948, now celebrated as World Health Day. The WHO's smallpox eradication programme, intensified in 1967, ended with the last natural case in Somalia in 1977 and the declaration of eradication in 1980. The Declaration of Alma-Ata (1978) made primary health care the route to "health for all by the year 2000". Oral rehydration therapy, described by *The Lancet* in 1978 as potentially the most important medical advance of the century, and UNICEF's "child survival revolution" of the 1980s cut child deaths from diarrhoea. The Millennium Development Goals (2000–2015) set targets for child and maternal mortality and for HIV, TB and malaria, and the first Global Burden of Disease study was published in the 1990s. The Sustainable Development Goals replaced them in 2015, with universal health coverage at their centre.
 :::
 
 ## Where this leads
 
-The programme delivery layer is in [[public-health/vaccination-programmes]] and [[public-health/communicable-disease-control]], the economics instruments in [[public-health/health-systems-economics]], determinants science in [[public-health/determinants-inequalities]], the infection clinical material in [[infectious-diseases/tropical-infections]] and [[infectious-diseases/hiv]], and the ethics of the international compact in [[medical-ethics-law/justice-resources]].
-::: history
-**Global health's periodisation follows power. The tropical-medicine era served empire: missionary hospitals, colonial medical services, and textbooks that named diseases after destinations. After 1945 came international health: the WHO constitution (1946) with its health-as-a-fundamental-right clause, the Rockefeller Foundation's campaign stations, and the mass-campaign era against malaria, yaws and tuberculosis. Alma-Ata (1978) made primary health care the field's creed - 'health for all by the year 2000' - and the structural-adjustment 1980s dismantled its financing: the World Bank's 1993 World Development Report triaged services into essential packages while user fees spread and then, after the equity evidence mounted, retreated. The 1990s-2000s were the vertical decade: DOTS for tuberculosis, the antiretroviral scale-up and the 'treatment-as-prevention' reversal of therapeutic nihilism, Roll Back Malaria's nets, and the three diseases that captured development aid (HIV, tuberculosis, malaria) through the Global Fund, Gavi and PEPFAR - saving tens of millions of lives and generating the parallel-systems critique in the same breath. The 2000s added the millennium development goals (and the measurement revolution they forced), the 2015 sustainable development goals (universal, integrated, and criticised for their sixty targets), and the health-security turn: SARS (2003) and the revised International Health Regulations, avian and pandemic influenza, the H1N1 emergency-architecture argument, Ebola 2014-16 (the 'fastest reportable disease, slowest international response' verdict and the creation of the emergency-response architecture), and the 2020 pandemic with its COVAX inequity, its primary-care collapses (the deferred-diagnosis and vaccination-gap deaths that may rival the direct toll), and its institutional fruit: the pandemic-instrument negotiations and the 100-days-equity architecture. The field's own history-writing grew adversarial in parallel: the decolonising-global-health movement's critique of its workforce politics, the partnership-equity audits, the brain-drain and remittance ledger argument, and the appropriate-technology reassessment that followed every donated machine and app. What remains contested is the field's soul: whether solidarity can be contracted, whether equity can be a metric, and whether a century of external delivery can become partnership without losing its epidemiological impatience.** - [[public-health/determinants-inequalities]], [[medical-ethics-law/justice-resources]].**
-:::
+The social determinants behind global inequalities are discussed in [[public-health/determinants-inequalities]], NCDs in [[public-health/non-communicable-disease]], environmental and climate threats in [[public-health/environmental-occupational]], and health security and the International Health Regulations in [[public-health/communicable-disease-control]]. How health systems are financed and organised, and how priorities are set, is the subject of [[public-health/health-systems-economics]]. Tropical infections are covered clinically in [[infectious-diseases/tropical-infections]].
 
 ::: summary
-- Global health is distribution science: burden accounting (DALYs, healthy life expectancy) shows disease tracking power, and the double burden of infection and chronic disease is now the norm inside single health systems.
-- The architecture mixes normative bodies (WHO), financiers (World Bank, Gavi, Global Fund, bilaterals, philanthropies) and security instruments (IHR, COVAX-era mechanisms); its performance reviews find the same two gaps: primary-care investment and accountability.
-- Financing decides epidemiology: out-of-pocket payments, aid volatility, graduation cliffs and intellectual-property regimes are upstream determinants clinicians never see in the chart but die inside of.
-- Health security is primary health care: every pandemic review reached the detection-and-trust conclusion, and detection means a laboratory, a roster and a community health worker.
-- Equity is the dependent variable: the research, pricing, pandemic and workforce ledgers all show that preventable deaths of the poor are an economic and political output, not an accident.
-- Clinical competence includes global literacy: migration screening bundles, origin-epidemiology in the history, and knowing that every intervention delivered abroad carries that country's history.
+- The **DALY** combines years of life lost and years lived with disability; the Global Burden of Disease study uses it to compare conditions and risk factors across countries.
+- The **epidemiological transition** shifts the burden from infection, maternal and child conditions and undernutrition to NCDs; many countries face a **double burden**.
+- In 2023 about 260,000 women died from maternal causes (MMR 197 per 100,000 live births, about 70% in sub-Saharan Africa); in 2024, 4.9 million children died before age 5, 47% as newborns. SDG targets are an MMR below 70, neonatal mortality of 12 or fewer and under-5 mortality of 25 or fewer per 1,000 by 2030.
+- The **three delays** (deciding, reaching, receiving care) explain maternal deaths; effective, cheap interventions exist across pregnancy, birth and childhood.
+- Wild polio is endemic only in Afghanistan and Pakistan. **AMR** directly caused about 1.27 million deaths in 2019. **One Health** links human, animal and environmental health.
+- Global health institutions include the WHO, UNICEF, the World Bank, Gavi and the Global Fund; their funding and power are contested and in flux.
+- **Universal health coverage** (SDG 3.8): everyone gets the services they need without financial hardship; out-of-pocket payments cause catastrophic and impoverishing expenditure.
 :::
 
 ## Exercises
 
-::: exercise Read the burden table {level=1}
-A ministry's new DALY profile shows chronic causes overtaking infectious causes; the health minister concludes 'we have finished with infectious disease'. Correct the reading.
+::: exercise Maternal mortality ratio {level=1 check="200"}
+A country records 500 maternal deaths and 250,000 live births in a year. Calculate the maternal mortality ratio per 100,000 live births.
 ::: solution
-**Transitions lie by omission ([[#def-burden]], [[public-health/communicable-disease-control]]). Three corrections: transitions add causes without subtracting them - the double burden means infections still kill while the chronic curve rises, and the categories are porous (infection-associated cancers, rheumatic heart disease, tuberculosis in diabetics). The DALY shift partly reflects success: fewer child deaths shrink the infectious slice of a growing total. And reversion is local and real: conflict, climate and resistance reverse gains, and elimination is a maintained state, not a trophy. The policy sentence: the chronic rise should fund the primary-care platform that does both jobs, not defund the infection apparatus that keeps the denominator falling. The minister's honest metrics are age-standardised rates on both halves, tracked by district and quintile.**
+$500/250{,}000 \times 100{,}000 = 200$ per 100,000 live births.
 :::
 :::
 
-::: exercise Redesign the elective {level=2}
-Your college sends junior doctors on two-week electives to a partner hospital abroad; students report transformation, hosts report supervision burden. Write the replacement policy.
+::: exercise Years of life lost {level=1 check="3000"}
+A disease causes 60 deaths in children, each at an age where the standard remaining life expectancy is 50 years. Calculate the years of life lost.
 ::: solution
-**Electives-need-reciprocity ([[#def-equity]], [[#def-machinery]]). The documented critique: short placements displace local task agendas, exceed trainee competence, and burden hosts who supervise for nothing; the 'solidarity' framing often measures the student's glow, not the ward's gain. The redesign: long institutional partnerships with memoranda that name deliverables the host chooses (a tele-mentoring clinic, an audit cycle taught and re-taught, a funded registrar seat, a lab quality-system accreditation push). Selection criteria: language, vaccination-and-insurance logistics, ethical-conduct training, and a rule that no clinical act happens beyond the trainee's licensed scope with named local supervision. Benefit-sharing: the tuition-funded reciprocal training post, open-data agreements, and authorship under the ICMJE-plus-local-leadership norms. The honest clause: some electives should not happen - where the host cannot supervise safely, money transfers and nobody flies. Assessment: the host's annual satisfaction audit counts as the programme's primary outcome.**
+YLL $= 60 \times 50 = 3{,}000$ years.
 :::
 :::
 
-::: exercise Simulate the notification {level=2}
-Table-top: pneumonia in three ICU colleagues after a shared intubation session in an under-resourced referral hospital; the district asks whether this is reportable. Advise within the IHR logic.
+::: exercise Years lived with disability {level=1 check="1200"}
+Four thousand people have a condition with a disability weight of 0.1 that lasts on average 3 years. Calculate the YLD.
 ::: solution
-**Cluster-at-the-bedside ([[#def-machinery]], [[microbiology/infection-control]]). The assessment: an unexplained severe-respiratory cluster with healthcare exposure is a syndrome-of-interest under the national framework - notifiable before laboratory confirmation, because the assessment clock starts at suspicion of seriousness, not at proof. Actions in order: isolation and PPE and an aerosol-generating-procedure audit; specimens and air sampling; contact listing and active surveillance; pausing elective intubations in that venue; occupational support for staff and families (the cover-my-ward question answered before it is asked). The international layer: the focal-point judgement is 'could this become an event of international concern' - a novel pathogen with nosocomial spread qualifies for consideration, and a documented 'no' is as responsible an act as a 'yes'. The simulation's lesson: notification is protection, not exposure, which is the belief every pandemic review says countries most needed before calling.**
+YLD $= 4{,}000 \times 0.1 \times 3 = 1{,}200$.
 :::
 :::
 
-::: exercise Audit the app import {level=2}
-A donor-funded smartphone triage app arrives in district clinics; dashboards improve while health workers report 'more reporting than patients'. Evaluate like a health-systems economist.
+::: exercise Share of neonatal deaths {level=2 check="round(1000*2.3/4.9)/10"}
+In 2024, 4.9 million children died before age 5, of whom 2.3 million died in the first 28 days. What percentage of under-5 deaths were neonatal? Give your answer to 1 decimal place.
 ::: solution
-**Digital-donor-goods ([[#def-machinery]], [[public-health/health-systems-economics]]). The failure class is known: apps raise dashboards without raising cure. Measure four things: time-and-motion (logging minutes per patient before versus after); data triangulation (app coverage against registers, stock levels and actual attendance - the 'digital-facade' detector); the renewal arithmetic (who pays for phones, airtime and servers when the donor leaves); and indicator drift (whether the app's five metrics are still the district's priorities). Contractual conditions: interoperability with the national health-information system as a term, worker-designed workflows with data that serves the worker first, a costed exit plan, and open data-sharing terms that let the ministry leave. Recommendation: keep the app only if the audit shows clinical time saved or decisions improved, not simply reports completed - the 'one-system-of-records' rule outlives every platform.**
+$2.3/4.9 = 0.469$, or 46.9% (the WHO reports 47%). As child mortality falls, the share of deaths in the neonatal period rises, because interventions against pneumonia, diarrhoea and malaria in older children have been more successful than those for newborns, which depend on quality care at birth.
 :::
 :::
 
-::: exercise Draft the partnership clauses {level=3}
-After a decade of extractive-research complaints, your institution adds standard clauses to every international research agreement. Draft the three that matter.
+::: exercise Catastrophic expenditure {level=2 check="25"}
+A household with monthly consumption of 160 dollars spends 40 dollars on medicines for a family member with diabetes. What percentage of consumption is this? Is it catastrophic at the 25% threshold?
 ::: solution
-**Contracts-as-ethics ([[#def-equity]], [[medical-ethics-law/research-ethics]]). Clause one, materials and data: no specimen or dataset leaves without a named domestic custodian, a benefit plan (capacity funded, results returned in-country), and dual ethical review with real timelines. Clause two, authorship and leadership: first-and-corresponding-authorship eligibility for the investigators who conceived and will use the work, contributorship statements under CRediT, and a prohibition on 'parachute' bylines; data-publication embargoes negotiated, not imposed. Clause three, sustainability and exit: named funding lines outliving the grant (the 'what remains in five years' clause), local-PI hiring at parity with visiting faculty, and an annual equity report to the partner institution's board. The enforcement design that makes clauses real: signature only with the partner's legal review, breach consequences in the memorandum, and publication of the template itself - because the field's transparency deficit is part of the extractive machinery.**
+$40/160 = 25\%$. It is at the 25% threshold (and well above the 10% threshold). Chronic conditions requiring lifelong medicines cause repeated expenditure, which is especially damaging to household finances.
 :::
 :::
 
-::: exercise Answer the ward {level=2}
-Your nurses ask why a war-zone crisis 'is the WHO's problem' when the local hospital is struggling. Make the honest case for global health investment.
+::: exercise Lifetime risk {level=2 check="round(1/(1-(1-0.004)^6))"}
+In a country the MMR is 400 per 100,000 live births and the average woman has 6 births. Estimate the lifetime risk of maternal death as "1 in N", giving N as a whole number.
 ::: solution
-**Why-the-world-is-a-ward-issue ([[#def-equity]], [[#def-machinery]], [[public-health/determinants-inequalities]]). The security case: the next variant's origin address is where surveillance is weakest - detection capacity abroad is this triage area's frontier. The economics: pandemic prevention costs a rounding error beside the lockdown bill (the independent-panel arithmetic), and migration, trade and supply-chain links make foreign health a domestic input; the evaluations that strong primary systems abroad reduce humanitarian spending are unsurprising once read as the same health system. The professional case: this workforce trains many of the doctors who will treat these patients and staff these GP practices - the brain-drain ledger has a domestic page - and origin-epidemiology literacy is clinical competence (the melioidosis and Chagas cardiomyopathy that present as 'fever of unknown origin'). The ethics: the same principle that makes you treat the uninsured emergency patient makes distance morally irrelevant. The caveat: health aid is a political choice and 'buy wards with it' deserves an answer - departmental budgets are not fungible, and the influence that opens emergency supply lines is a return. The closing sentence: the ward fights disease one patient at a time; global health fights the distribution of who gets a ward at all.**
+Risk per birth $= 0.004$. Lifetime risk $= 1 - (1 - 0.004)^6 = 0.0238$. $N = 1/0.0238 = 42$. About 1 in 42 women would die from a maternal cause.
 :::
 :::
 
-::: exercise Grade the response {level=3}
-Score your country's performance in the last international health emergency across the IHR core-capacity categories, and write the two paragraphs the WHO's own state-party-prevented-process would like.
+::: exercise One Health in practice {level=3}
+An increase in human cases of a zoonotic disease, such as brucellosis or avian influenza, is reported in a rural region where livestock farming is expanding. Describe a One Health response.
 ::: solution
-**Self-grading-with-stakes ([[#def-machinery]], [[public-health/communicable-disease-control]]). The categories to score: prevention (pathogen-surveillance coverage, laboratory-network reach, workforce numbers), detection (days from sentinel-event to official signal - the metric, with the source and the date for each claim), reporting (focal-point function and the 'no-unwanted-interference' climate that made early callers reluctant), and response (emergency-operations-centre activation, risk communication, isolation-and-support capacity, vaccine-and-therapeutic access negotiations). The honest report format the joint-monitoring-process expects: evidence, caveats and named gaps, not the grant-application prose the self-assessments often become. The two paragraphs to write: first, what failed mechanically (the laboratory surge limits, the data-quality lag, the 'support-absent-from-isolation' compliance ceiling) with the costed fix per failure; second, what failed politically (the delay before notification, the equity language without equity finance) with the governance change. The discipline: publish it, because the states that graded themselves loudly in year one bought their own reform agendas by year three, and the ones that did not are still negotiating with the same virus.**
+**Joint surveillance.** Share data between human and animal health services and laboratories; test livestock and, where relevant, wildlife; use genomic data to link human and animal isolates.
+
+**Control at the animal source.** Vaccination of livestock (brucellosis), culling and movement controls where appropriate (avian influenza), biosecurity on farms, and compensation schemes so that farmers report disease rather than hide it.
+
+**Interrupt transmission to people.** Pasteurisation of milk and safe food handling (brucellosis), protective equipment for farm and abattoir workers, and public information.
+
+**Human health.** Diagnosis and treatment, contact follow-up, antivirals and seasonal influenza vaccination for exposed workers where recommended, and notification under the International Health Regulations if there is a risk of international spread.
+
+**Environment and drivers.** Address land-use change, farm intensification and wildlife contact; reduce antimicrobial use in livestock.
+
+**Governance.** A coordinating mechanism between ministries of health, agriculture and environment, with shared plans and budgets.
 :::
 :::
 
-::: exercise Teach the transition {level=1}
-Design a 45-minute teaching session for medical students on the double burden, using one district's data. Specify the learning objectives, the data exercise, and the clinical vignettes.
+::: exercise Priorities for a district {level=3}
+A rural district with an under-5 mortality rate of 60 per 1,000 live births and an MMR of 350 per 100,000 has a small additional budget. Propose and justify three priorities.
 ::: solution
-**One-district-epidemiology ([[#def-burden]], [[#def-equity]]). Objectives by Bloom's verbs: interpret a district's cause-of-death and risk-factor profile (analyse), explain why chronic-disease rise does not retire infectious disease (explain), and prescribe one service-design change for the double burden (create). The data exercise: students receive the mock district's facility statistics - hypertension-and-diabetes clinic registers beside tuberculosis-notification and childhood-vaccination data - and compute the burden shares, then find the overlap cases (the diabetic with tuberculosis, the asthmatic grandmother in a smoking household) that make categories real. The vignettes: a 40-year-old woman with new diabetes and no screening history whose mother had undiagnosed hypertension (the transition inside one family), a mineworker returning with silicosis-and-TB (the occupational ledger), and an arrival needing the screening bundle (the corridor's endpoint). The closing ten minutes: the 'whose transition, whose data' critique (vital-statistics quality, the misclassification of chronic deaths in verbal-autopsy systems), because students should learn the map is as contested as the territory.**
+Many answers are reasonable if they rest on evidence of effectiveness, cost and equity. For example:
+
+1. **Skilled care at birth and emergency obstetric and newborn care.** A large share of both maternal and neonatal deaths occur around birth. Strengthening the district hospital's capacity (staff, blood, uterotonics, magnesium sulfate, caesarean section, neonatal resuscitation, kangaroo care) and making transport and maternity waiting homes available tackle the second and third delays, and benefit mothers and babies together.
+
+2. **Community case management of childhood illness.** Trained and supplied community health workers who can treat pneumonia (antibiotics), diarrhoea (ORS and zinc) and malaria (rapid diagnostic tests and artemisinin-based combinations) close to home, addressing the leading post-neonatal causes of death in places far from facilities.
+
+3. **Vaccination and prevention.** Reaching "zero-dose" children with routine vaccines, distributing insecticide-treated nets, and supporting breastfeeding, nutrition and family planning.
+
+Removing user fees for maternal and child services would support all three. Progress should be monitored with data disaggregated by area and wealth, and maternal and perinatal deaths audited to guide improvement.
 :::
 :::
