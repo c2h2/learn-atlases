@@ -7,12 +7,27 @@
   "order": 200,
   "tagline": "Polymer structure and molar mass, step and chain growth, controlled polymerisation, copolymers, chains in solution, characterisation and properties",
   "summary": "Polymers — long chains built from small repeating units — range from proteins and DNA to plastics and fibres. This course explains how polymers are made by step-growth, chain-growth and controlled polymerisation, how chains behave in solution, how polymers are characterised, and how structure determines their mechanical, thermal and functional properties.",
-  "overview": [],
+  "overview": [
+    "Polymers are molecules built from thousands of repeating units: polyethylene and nylon, rubber and PET, and also cellulose, proteins and DNA. Their length gives them properties no small molecule has. They form entangled melts and rubbery networks, glasses that soften over a range instead of melting, solutions thousands of times more viscous than the solvent, and fibres stronger than steel per unit mass. Synthetic polymers are produced in hundreds of millions of tonnes a year, and the chemistry that makes them, shapes them and, increasingly, unmakes them is one of the largest applications of everything earlier courses teach.",
+    "The course follows a polymer from synthesis to use. It starts with structure and the new idea that a polymer sample has a *distribution* of molar masses, summarised by $\\bar{M}_\\mathrm{n}$, $\\bar{M}_\\mathrm{w}$ and the dispersity. Next come the two ways of growing chains. Step growth (polyesters, polyamides, networks) is governed by the Carothers equation and Flory statistics, and chain growth by radical kinetics, chain transfer and the ceiling temperature. Then come living anionic and cationic polymerisation, ATRP and RAFT, ring-opening and Ziegler–Natta catalysis, which give control over length, end groups, tacticity and architecture. Copolymerisation adds the Mayo–Lewis equation and block-copolymer self-assembly.",
+    "The second half turns from making chains to understanding them. A single chain is a random walk. Flory–Huggins theory explains why polymers dissolve selectively and rarely mix with one another, and the same dilute-solution physics underlies osmometry, light scattering, viscometry and size-exclusion chromatography. Crystallinity, the glass transition, viscoelasticity and the entropic elasticity of rubber then connect molecular structure to mechanical behaviour. The final chapter applies the whole course to conducting, responsive, biomedical and degradable polymers, and to recycling.",
+    "What makes polymer chemistry hard is that familiar small-molecule instincts mislead: a 90% yield can give useless oligomers, a weighing error of 1% can halve a molar mass, and 'insoluble' and 'immiscible' are statements about entropy, not chemistry. The remedy is to think statistically, counting molecules, bonds and conformations, and to check every result against its limiting cases. Every equation in this course is derived from a counting argument or a rate law that you can reproduce yourself."
+  ],
   "prerequisites": [
     "organic-2",
     "thermodynamics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Calculate number-, weight- and z-average molar masses and the dispersity of a polymer sample or blend, and interpret tacticity from NMR triad fractions using Bernoullian statistics.",
+    "Apply the Carothers equation, including stoichiometric imbalance and monofunctional reagents, to predict and control the molar mass of a step-growth polymer, and predict gel points by the Carothers and Flory–Stockmayer methods.",
+    "Derive the steady-state rate and kinetic chain length of a radical polymerisation, and use the Mayo equation and the ceiling temperature to explain how molar mass and conversion are limited.",
+    "Distinguish living, controlled and conventional chain growth from kinetic and molar-mass data, and design anionic, ATRP, RAFT and ring-opening syntheses of polymers with target molar mass, low dispersity and defined end groups.",
+    "Use reactivity ratios and the Mayo–Lewis equation to predict copolymer composition, sequence statistics and composition drift, and explain block-copolymer microphase separation in terms of χN.",
+    "Calculate the dimensions of ideal and real chains, and use Flory–Huggins theory to predict solvent quality, theta conditions, critical points of polymer solutions and the miscibility of blends.",
+    "Interpret osmometry, light-scattering, viscometry, SEC, MALDI and DSC data to obtain molar-mass averages, coil sizes, second virial coefficients, crystallinity and transition temperatures, stating which average each method gives.",
+    "Explain melting, the glass transition, viscoelasticity, rubber elasticity and melt viscosity in molecular terms, and apply the Gibbs–Thomson, Fox, WLF and affine-network equations.",
+    "Analyse the function of conducting, stimuli-responsive, drug-releasing and degradable polymers with band, Flory–Huggins, diffusion and chain-scission models, and evaluate claims about biodegradation and recycling."
+  ],
   "chapters": [
     {
       "slug": "polymer-structure",
@@ -89,8 +104,131 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1839,
+      "title": "Goodyear's vulcanisation of rubber",
+      "detail": "Charles Goodyear found that heating natural rubber with sulfur turns a sticky, temperature-sensitive gum into a durable elastomer (patented in 1844), the first deliberate chemical crosslinking of a polymer.",
+      "people": [
+        "Charles Goodyear"
+      ]
+    },
+    {
+      "year": 1907,
+      "title": "Bakelite, the first fully synthetic plastic",
+      "detail": "Leo Baekeland filed his patent on phenol–formaldehyde resin in 1907 and announced Bakelite in 1909: a thermoset network made by step growth, decades before polymers were understood as molecules.",
+      "people": [
+        "Leo Baekeland"
+      ]
+    },
+    {
+      "year": 1920,
+      "title": "Staudinger's macromolecular hypothesis",
+      "detail": "In 'Über Polymerisation' (Berichte der Deutschen Chemischen Gesellschaft 53, 1073) Hermann Staudinger argued that polymers are long covalent chains rather than colloidal aggregates; he received the Nobel Prize in Chemistry in 1953.",
+      "people": [
+        "Hermann Staudinger"
+      ]
+    },
+    {
+      "year": 1935,
+      "title": "Carothers' group makes nylon-6,6",
+      "detail": "Following Wallace Carothers' systematic study of condensation polymers at DuPont, begun in 1928, his group made nylon-6,6 in February 1935; his 1936 paper gave the relation between conversion and chain length now called the Carothers equation.",
+      "people": [
+        "Wallace Carothers",
+        "Gerard Berchet"
+      ]
+    },
+    {
+      "year": 1942,
+      "title": "Flory–Huggins theory of polymer solutions",
+      "detail": "Maurice Huggins (1941) and Paul Flory (1942) independently derived the lattice theory of polymer solutions in the Journal of Chemical Physics, explaining the small entropy of mixing of long chains.",
+      "people": [
+        "Maurice Huggins",
+        "Paul Flory"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "Ziegler and Natta catalysts",
+      "detail": "Karl Ziegler polymerised ethylene at low pressure with titanium–aluminium catalysts in 1953, and Giulio Natta made isotactic polypropylene in 1954; they shared the 1963 Nobel Prize in Chemistry.",
+      "people": [
+        "Karl Ziegler",
+        "Giulio Natta"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "Szwarc's living polymers",
+      "detail": "Michael Szwarc showed that anionic polymerisation of styrene initiated by sodium naphthalenide has no termination, so the chains stay active and can be extended into block copolymers (Nature 178, 1168).",
+      "people": [
+        "Michael Szwarc"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "Conducting polyacetylene",
+      "detail": "Hideki Shirakawa, Alan MacDiarmid and Alan Heeger reported that doping polyacetylene with iodine raises its conductivity by many orders of magnitude; they shared the 2000 Nobel Prize in Chemistry.",
+      "people": [
+        "Hideki Shirakawa",
+        "Alan MacDiarmid",
+        "Alan Heeger"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "Atom-transfer radical polymerisation",
+      "detail": "Krzysztof Matyjaszewski and Jin-Shan Wang, and independently Mitsuo Sawamoto's group, reported metal-catalysed reversible-deactivation radical polymerisation, followed by RAFT from CSIRO in 1998, bringing living-type control to radical chemistry.",
+      "people": [
+        "Krzysztof Matyjaszewski",
+        "Jin-Shan Wang",
+        "Mitsuo Sawamoto"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Principles of Polymerization",
+      "authors": "George Odian",
+      "year": 2004,
+      "note": "Fourth edition. The standard reference for polymerisation chemistry and kinetics: step growth, radical, ionic, coordination and ring-opening polymerisation and copolymerisation, with extensive data tables."
+    },
+    {
+      "title": "Polymer Chemistry",
+      "authors": "Paul C. Hiemenz and Timothy P. Lodge",
+      "year": 2007,
+      "note": "Second edition. A rigorous, well-written undergraduate text strong on chain statistics, solution thermodynamics, characterisation and viscoelasticity."
+    },
+    {
+      "title": "Introduction to Polymers",
+      "authors": "Robert J. Young and Peter A. Lovell",
+      "year": 2011,
+      "note": "Third edition. Broad coverage from synthesis to mechanical properties, especially good on crystallinity, the glass transition, rubber elasticity and fracture."
+    },
+    {
+      "title": "Polymer Physics",
+      "authors": "Michael Rubinstein and Ralph H. Colby",
+      "year": 2003,
+      "note": "The graduate-level reference for chain conformations, Flory–Huggins theory, scaling, networks and reptation; read it after this course for the physics in depth."
+    },
+    {
+      "title": "Principles of Polymer Chemistry",
+      "authors": "Paul J. Flory",
+      "year": 1953,
+      "note": "The classic monograph that founded much of the subject: step-growth statistics, gelation, solution thermodynamics and rubber elasticity, still worth reading for its derivations."
+    },
+    {
+      "title": "Polymer Science and Technology",
+      "authors": "Joel R. Fried",
+      "year": 2014,
+      "note": "Third edition. Connects polymer chemistry to processing, engineering properties and applications, including specialty and biomedical polymers."
+    },
+    {
+      "title": "Polymer Handbook",
+      "authors": "J. Brandrup, E. H. Immergut and E. A. Grulke (eds)",
+      "year": 1999,
+      "note": "Fourth edition. The standard data compilation: rate constants, transfer constants, reactivity ratios, Q–e values, Mark–Houwink constants, solubility parameters and transition temperatures."
+    }
+  ],
   "next": [
     "green-chemistry"
   ]
