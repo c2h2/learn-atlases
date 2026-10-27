@@ -38,9 +38,9 @@ $I = I_0 \cos^2\theta = 10 \times \cos^2 30^\circ \cdot ... $ directly, $\cos 30
 :::
 
 ::: widget plot
-x: 0 90
-y: 0 11
-f: 10*Math.pow(Math.cos(x*Math.PI/180),2)
+x: 0, 90
+y: 0, 11
+f: 10*cos(x*pi/180)^2
 caption: Malus's law $I/I_0 = \cos^2\theta$, the transmitted intensity (in $\\mathrm{mW/cm^2}$, for $I_0 = 10$) as a function of the analyser angle $\\theta$: the $\\theta = 0$ the $10$, the $\\theta = 90$ the $0$, the two as the content of [[#eq-malus]].
 :::
 

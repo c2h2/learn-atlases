@@ -221,12 +221,11 @@ The apparent power is $\mathcal{E}_0 I_0/2 \approx 157\,\mathrm{VA}$, and the th
 :::
 
 ::: widget plot
-f: 1/sqrt(4 + (w - 1/w)^2)
-f: 1/sqrt(16 + (w - 1/w)^2)
-w: 0.3, 4
+f: 1/sqrt(4 + (x - 1/x)^2)
+f: 1/sqrt(16 + (x - 1/x)^2)
 x: 0.3, 4
 labels: R = 2; R = 4
-caption: Two series RLC responses, different damping (the $R$ in the expression is the damping in units of $\sqrt{L/C}$). Both peak at $w = 1$ where the inductive and capacitive reactances cancel, but the low-damping curve is tall and narrow (high $Q$) and the high-damping curve is short and broad (low $Q$). The $Q$-factor [[#eq-Q]] is the ratio of center frequency to bandwidth, and it is the number that names the curve's selectivity, not its height.
+caption: Two series RLC responses, different damping (the $R$ in the expression is the damping in units of $\sqrt{L/C}$). Both peak at $x = \omega/\omega_0 = 1$ where the inductive and capacitive reactances cancel, but the low-damping curve is tall and narrow (high $Q$) and the high-damping curve is short and broad (low $Q$). The $Q$-factor [[#eq-Q]] is the ratio of center frequency to bandwidth, and it is the number that names the curve's selectivity, not its height.
 :::
 
 ::: quiz At the resonance of a series RLC, what is the phase of the source current relative to the source voltage?

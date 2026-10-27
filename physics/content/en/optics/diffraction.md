@@ -38,9 +38,9 @@ The first minimum, $a \sin\theta_1 = \lambda$, small angle, $\theta_1 = \lambda/
 :::
 
 ::: widget plot
-x: -3 3
-y: 0 1.1
-f: Math.pow(x<1e-9?1:Math.sin(Math.PI*x)/(Math.PI*x),2)
+x: -3, 3
+y: 0, 1.1
+f: sinc(pi*x)^2
 caption: The single-slit intensity $I/I_0 = [\sin\beta/\beta]^2$, with $\beta = \pi a \sin\theta/\lambda$: the central maximum at $\beta = 0$, the first minima at $\beta = \pm\pi$, the two as the content of [[#eq-slit-int]], and the two, the central and the side, as the two features of the diffraction pattern.
 :::
 

@@ -40,9 +40,9 @@ The fringe spacing, $\Delta y = \lambda L / d = (600 \times 10^{-9})(1.5)/(0.30 
 :::
 
 ::: widget plot
-x: -4 4
-y: 0 1
-f: Math.pow(Math.cos(Math.PI*x),2)
+x: -4, 4
+y: 0, 1
+f: cos(pi*x)^2
 caption: The two-slit intensity $I/I_{\text{peak}} = \cos^2(\delta/2)$, with the phase difference $\delta = 2x$ (in units of $\pi$): the bright at $x = 0, \pm1, \pm2,$ the dark at $x = \pm0.5, \pm1.5,$ the content of [[#eq-twonit]] with the $\delta/2 = x\pi$.
 :::
 

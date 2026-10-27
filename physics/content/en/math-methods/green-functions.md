@@ -94,9 +94,9 @@ The Green's function is the response to a finite force, and a finite force gives
 The string Green's function, as a function of the observation point $x$ for a fixed load point $\xi$, is the tent of [[#eq-string-g]]:
 
 ::: widget plot
-x: 0 1
-y: -0.05 0.35
-f: (x <= 0.3 ? 0.7*x : 0.3*(1-x))
+x: 0, 1
+y: -0.05, 0.35
+f: min(0.7*x, 0.3*(1-x))
 caption: The string Green's function $G(x, \xi)$ with $L = 1$, $\xi = 0.3$: $G = 0.7\,x$ for $x \le \xi$ and $G = 0.3\,(1 - x)$ for $x \ge \xi$ — the tent of [[#eq-string-g]], continuous at the load, with the slope jump of $-1$ there. Replace the $0.3$ to move the load point; the reciprocity is $G(x, \xi) = G(\xi, x)$.
 :::
 

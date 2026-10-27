@@ -111,8 +111,8 @@ so $v = 2000/39 \approx 51.28\,\mathrm{mm}$. The magnification is $m = -v/u = -5
 :::
 
 ::: widget plot
-x: 12 100
-y: -5 60
+x: 12, 100
+y: -5, 60
 f: 10*(x-10)/x
 caption: The image distance $v$ for a lens of focal length $f = 10$ as a function of the object distance $u$: $v = f\,u/(u - f) = 10u/(u-10)$. The vertical asymptote at $u = f$ is the focal point, where the image is at infinity, and the $v \to f$ as $u \to \infty$ is the object at infinity giving the image at the focal length, as the [[#ex-camera]] case. The $v < 0$ region (not shown, $u < 10$) is the virtual image of the magnifying glass, [[#ex-mag]].
 :::

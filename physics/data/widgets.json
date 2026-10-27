@@ -17,7 +17,7 @@
       "desc": "A curve (fx(t), fy(t)) traced by a moving point, with its velocity vector.",
       "zh_desc": "动点描绘的参数曲线 (fx(t), fy(t))，并显示速度矢量。",
       "example": "fx: cos(t)\nfy: sin(2*t)\nt: 0, 2pi",
-      "params": { "fx": {"type": "expr"}, "fy": {"type": "expr"}, "t": {"type": "range", "default": "0, 2pi"} }
+      "params": { "fx": {"type": "expr", "vars": ["t"]}, "fy": {"type": "expr", "vars": ["t"]}, "t": {"type": "range", "default": "0, 2pi"} }
     },
     "oscillator": {
       "file": "ode",
@@ -35,7 +35,7 @@
       "desc": "Direction field of y' = f(x, y). Click to grow a solution curve.",
       "zh_desc": "y' = f(x, y) 的方向场。点击即可长出一条解曲线。",
       "example": "f: y*(1 - y)\npoints: 0, 0.1",
-      "params": { "f": {"type": "expr", "required": true}, "x": {"type": "range"}, "y": {"type": "range"}, "points": {"type": "points"} }
+      "params": { "f": {"type": "expr", "required": true, "vars": ["x", "y"]}, "x": {"type": "range"}, "y": {"type": "range"}, "points": {"type": "points"} }
     },
     "vector": {
       "file": "physics",
