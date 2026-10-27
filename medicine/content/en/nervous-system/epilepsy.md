@@ -1,141 +1,280 @@
-Epileptology is applied electrochemistry with a social conscience: **a seizure is transient dysfunction from excessive synchronous neuronal activity, and the clinical work is separating seizures from the many things that mimic them, classifying the epilepsy to choose drugs, and then managing a treatment that interacts with driving, work, pregnancy, mood and death anxiety in equal measure.** Most of the diagnosis is history; most of the treatment is choosing which side effects a particular patient can tolerate.
+About one person in a hundred has epilepsy, and roughly one in ten will have at least one seizure in their lifetime. A seizure can be a dramatic convulsion, a few seconds of staring, a rising feeling in the stomach, or a sudden fall. Some people with seizures are wrongly told they have epilepsy, and some people with epilepsy are wrongly told they faint. The diagnosis matters because it changes driving, work, pregnancy planning and medication, and because some people die from epilepsy.
 
-This chapter covers definitions and classification, the seizure-semiology-physics of the EEG era, status epilepticus, anti-seizure pharmacology, and the life-context chapter that follows every prescription.
+This chapter explains what a seizure is, how seizures and epilepsies are classified, how to tell a seizure from its mimics, how the antiseizure medications work, and how to manage status epilepticus. UK practice follows NICE NG217 (Epilepsies in children, young people and adults, 2022); classification follows the International League Against Epilepsy (ILAE).
 
-## Definitions and classification
+## What a seizure is
 
-::: definition Seizures, epilepsy, and their kinds {#def-classification}
-**The vocabulary that ends arguments - a seizure is a transient occurrence of signs and symptoms due to abnormal excessive or synchronous neuronal activity, usually self-limited; epilepsy is a disease defined operationally as at least two unprovoked seizures more than 24 hours apart, or one unprovoked seizure with a high recurrence probability (a lesion on imaging, a typical EEG, a syndrome), or a diagnosed epilepsy syndrome that has outgrown its activity - and nonepileptic-episodes (syncope, events that are not seizures at all - the most common misdiagnosis in epilepsy clinics - and functional (psychogenic) nonepileptic seizures, which are real experiences without electrographic seizure and require a different treatment entirely - [[psychiatry/anxiety-disorders]], [[nervous-system/motor-systems]] for the conversion signs); the seizure taxonomy that actually changes prescribing (focal-onset seizures - awareness intact versus impaired, motor versus non-motor with their auras as small focal seizures: epigastric rising, déjà vu, fear, gustatory, somatosensory and the hyperkinetic frontal-lobe nocturnals that get misfiled as night terrors and parasomnias - [[nervous-system/sensory-systems]] for the insular and temporal sensory anatomy; generalised-onset seizures - motor (tonic-clonic with the tongue-lateral-bite and incontinence and post-ictal confusion pattern) and non-motor absence with their 3-Hz spike-wave and their drug list that excludes the wrong drugs (carbamazepine worsens absence and myoclonus) - and the unknown-onset category that forces honest documentation until more data arrive); the syndromes and their arcades by age (the neonatal-and-febrile-and-SCN1A-and-Dravet-and-Doose-and-Childhood-Absence-and-Juvenile-Absence-and-Juvenile-Myoclonic-Epilepsy-and-photosensitivity-and-TLE-with-hippocampal-sclerosis-and-lesional-and-genetic-generalised-epilepsies-arcade) with their recurrence-prognosis-and-pregnancy implications and the developmental-and-behavioural-comorbidity burden that often outweighs the seizures themselves - [[paediatrics/neurodevelopment]], [[genetics/mendelian-inheritance]]; and the aetiology categories worth listing on every proforma (structural - tumour and prior stroke and traumatic and focal cortical dysplasia and hippocampal sclerosis and vascular malformation; genetic; infectious - the neurocysticercosis and TB and HIV of global practice; metabolic; immune - the antibody encephalitides presenting as refractory new-onset seizures and psychiatric crisis; unknown) with the imaging decision rules (first-ever seizure with focal features or deficit or immunocompromise gets urgent MRI not CT, and the "CT negative therefore fine" error that misses dysplasia) - [[clinical-skills/medical-imaging]], [[pathology/cancer-biology]], [[infectious-diseases/hiv]], [[infectious-diseases/tropical-infections]], [[nervous-system/neuroinflammation]].**
+::: definition Seizure and epilepsy {#def-epilepsy}
+An **epileptic seizure** is a transient occurrence of signs or symptoms due to abnormal excessive or synchronous neuronal activity in the brain.
+
+**Epilepsy** is a disease of the brain defined (ILAE practical definition, 2014) by any of:
+
+1. at least two unprovoked (or reflex) seizures occurring more than 24 hours apart;
+2. one unprovoked (or reflex) seizure and a probability of further seizures similar to the general recurrence risk after two unprovoked seizures (at least 60%) over the next 10 years;
+3. diagnosis of an epilepsy syndrome.
+
+A **provoked (acute symptomatic) seizure** occurs at the time of an acute brain insult or systemic disturbance, such as hypoglycaemia, hyponatraemia, alcohol withdrawal, encephalitis or the first week after a stroke or head injury. Provoked seizures do not by themselves make a diagnosis of epilepsy.
 :::
 
-::: definition First seizures, mimics and investigations {#def-mimics}
-**Syncope in all its forms is the great mimic (reflex/vasovagal with its prodrome of warmth and nausea and tunnel vision and its short myoclonic jerks that non-specialists call convulsive seizures; orthostatic and postural-orthostatic-tachycardia contexts; cardiac arrhythmia syncope, the dangerous one, with its exertional-and-supine-and-palpitation-and-family-history red flags and the ECG-and-monitoring-and-epilepsy-versus-arrhythmia-referral with its QT-and-Brugada-and-PHCM-and-channelopathy reading - [[cardiovascular/arrhythmias]], [[cardiovascular/valve-congenital-disease]]; functional nonepileptic seizures, whose diagnosis is a clinical-plus-video-EEG exercise delivered with care because the phrase "it's psychological" is experienced as "it's faked", and whose treatment is a psychiatric-and-psychotherapy pathway with the seizure-drugs tapered off - [[psychiatry/anxiety-disorders]], [[clinical-skills/communication]]); the other mimics - migraine aura (spreading, marching over minutes, positive visual phenomena versus the seconds-fast cutaneous march of the sensory seizure, though the two coexist and migralepsy is rarer than the label), transient global amnesia (the repetitive-questioning hour with preserved identity that families research at 3 a.m. and reassure themselves wrongly about - [[nervous-system/dementia-neurodegeneration]] for the amnesia differential), sleep events and parasomnias and night terrors and REM behaviour disorder in the older male (a synucleinopathy herald) - [[nervous-system/movement-disorders]], [[geriatrics-palliative/delirium-dementia-care]], and the transient-is-attacks differential where the TIA clinic meets the epilepsy clinic (limb-shaking TIA from carotid stenosis with its exercise-precipitation, and the "amyloid spells" of cortical superficial siderosis) - [[nervous-system/stroke]]; investigations and their honest value - EEG (the sleep-deprived and photic-sensitivity and ambulatory and inpatient-video variants, the interictal-sensitivity ceiling of one routine record meaning a normal EEG never excludes epilepsy and epileptiform abnormalities in a non-seizing person never diagnose it - the pre-test-probability discipline), MRI with the epilepsy-protocol sequences (hippocampal sclerosis and the focal-cortical-dysplasia-that-needs-a-specially-trained-eye and the post-lesional question of whether the lesion is the cause and whether resecting it cures), and the bloodwork for the metabolic-and-infective-and-immune-context with the autoantibody-panel judiciousness - [[clinical-skills/laboratory-tests]], [[clinical-skills/medical-imaging]], [[nervous-system/neuroinflammation]]; and the first-seizure consultation which is mostly about recurrence risk (the roughly 30-50% two-year figure moved up by lesion, EEG and nocturnal events) and immediate practicalities (driving notification, swimming-and-bath-and-height-and-cooking-and-baby-carrying advice delivered as risk-reduction rather than prohibition) - [[medical-ethics-law/professionalism-regulation]], [[public-health/prevention-promotion]].**
+The second criterion means that a single unprovoked seizure can justify a diagnosis of epilepsy if the risk of another is high, for example when there is an epileptiform EEG or a structural brain lesion such as an old stroke.
+
+::: theorem The balance of excitation and inhibition {#thm-balance}
+Normal brain activity depends on a balance between excitation, mainly by glutamate acting on AMPA and NMDA receptors, and inhibition, mainly by GABA acting on GABA-A receptors. A seizure occurs when this balance tips so that a population of neurons fires excessively and in synchrony, and the activity spreads through connected networks. Anything that increases excitation (sodium channel mutations, cortical scarring, withdrawal of alcohol or benzodiazepines) or reduces inhibition (loss of inhibitory interneurons, GABA-A receptor mutations) lowers the threshold for seizures.
 :::
 
-## Treating seizures
-
-::: definition Anti-seizure medication {#def-drugs}
-**The principles that outrank any drug (treat after the second unprovoked seizure or after a first with high recurrence probability and patient choice; monotherapy starting low going slow titrated to effect or side effects; the mechanism-matched choice by seizure type and syndrome and by patient factors - sex-and-childbearing-potential and weight and hepatic and renal function and psychiatric-and-bone-and-cardiac comorbidity and the interaction list because enzyme inducers (carbamazepine, phenytoin, phenobarbital, high-dose topiramate) chew up contraceptives and statins and anticoagulants and vitamin D and the oncology-and-transplant drug lists - [[pharmacology/metabolism-excretion]], [[pharmacology/dosing-principles]], [[obstetrics-gynaecology/contraception-fertility]], [[endocrine/bone-calcium]]); the drug classes with their personality cards - sodium-channel blockers (carbamazepine and oxcarbazepine with the hyponatraemia and the HLA-B*1502-and-SJS-in-southern-Han-Chinese-and-other-populations screening and the DRESS-with-eosinophilia-fever-rash-adenopathy-hepatitis-that-kills and the carbamazepine-phenytoin-and-folate-and-B12-caveats; lamotrigine with the slow-titration-to-avoid-SJS-and-the-valproate-interaction-dose-reduction and its mood-stabilising bonus; lacosamide with PR-interval and dizziness and the modern-add-on-turned-first-line story; and phenytoin, the zero-order-kinetics albumin-binding monitoring culture that should now rarely be started de novo) and broad-spectrum agents (valproate - the most effective drug for the generalised epilepsies and the most problematic teratogen with its dose-related malformation and neurodevelopmental risk that regulators have confined to specialist-authorized use in pregnancy-capable patients unless no alternative works, the enzyme inhibitor causing hyperammonaemia and the pancreatitis and the weight-hair-tremor-PCOS-adjacency; levetiracetam with its once-daily convenience and no interactions and its behavioural side effects - the irritability-and-rage question that determines adherence more than any blood level; brivaracetam as the better-behaved relative; topiramate and zonisamide with the cognitive-slowing-and-weight-loss-and-oligohidrosis-and-stone-and-glaucoma-and-teratogenicity bundle; and the newer entries with fewer side effects and limited long-term data - perampanel with its black-box psychiatric warning and the slow-cenobamate-titration programme) - [[pharmacology/adverse-reactions]]; the monitoring and levels culture - which drugs need levels (phenytoin and valproate and carbamazepine with their concentration-effect and toxicity windows and the pregnancy- and interaction- triggered checks) versus which do not, and the "level low because non-adherent" conversation that should be approached as a trust problem rather than a compliance failure - [[pharmacology/patient-variation]]; and the withdrawal question - two-to-five-years-seizure-free with a syndrome that permits it and an EEG and history without high-relapse features, slow taper over months, never driving-and-insurance-and-occupation advice given without the plan written down - **and the surgical-and-device-era (drug-resistant epilepsy defined after two tolerated appropriately-chosen monotherapy or combination trials fails - which is roughly 30% of patients and should trigger early referral to a specialist centre rather than sequential drug shuffling; the resection workup (video-EEG concordance with semiology, MRI and PET-and-ictal-SPECT-and-MEG-focalisation, the Wada-and-fMRI-language-lateralisation and the intracranial-electrode and awake-mapping era) and the outcomes of temporal-lobe and lesional surgery with their cure rates and their memory-and-field-deficit-and-psychiatric-flare risks; and the neuromodulation and diet menu (vagus-nerve stimulation with its palliative-response curve and its hoarseness and cough caveats; responsive neurostimulation; deep-brain stimulation of the anterior thalamic nuclei; the ketogenic and modified-Atkins diets with their paediatric-first evidence and adult metabolic trade-offs) - [[clinical-skills/clinical-reasoning]].**
+::: proof How a focal seizure starts and spreads
+At the cellular level, the signature of epileptic tissue is the **paroxysmal depolarisation shift**: a large, prolonged depolarisation of a neuron, driven by synaptic glutamate and by calcium currents, with a burst of action potentials on top. In normal tissue each burst is followed by a strong hyperpolarisation mediated by GABA and potassium currents, which keeps the activity local; on the EEG this burst appears as an **interictal spike**. A seizure begins when this surrounding inhibition fails: inhibitory interneurons become exhausted, extracellular potassium rises, and chloride gradients shift so that GABA becomes less inhibitory. Neighbouring neurons are then recruited, and the discharge spreads along anatomical connections. Spread within one hemisphere produces a focal seizure whose symptoms reflect the regions involved; spread through the thalamus and corpus callosum to both hemispheres produces a focal to bilateral tonic–clonic seizure. Generalised seizures, by contrast, arise within bilaterally distributed networks, typically involving the thalamus and cortex; in absence seizures, rhythmic thalamocortical oscillations depend on T-type calcium channels in thalamic neurons, which is why ethosuximide works.
 :::
 
-::: example The night-call seizure {#ex-status}
-An adult with known epilepsy is brought in after a generalised tonic-clonic seizure 20 minutes ago that has not stopped; another begins in front of you; IV access exists; glucose 6; temp 37.9.
+## Classifying seizures and epilepsies
+
+The ILAE classification was revised in 2017 and updated in 2025. The 2025 version keeps four main classes of seizure:
+
+- **Focal seizures** begin in networks limited to one hemisphere. They are described by whether **consciousness** is preserved or impaired (judged by the person's awareness and responsiveness) and by their observable features, such as motor activity, sensory or emotional experiences, or automatisms (lip smacking, fumbling). A focal seizure may evolve into a **focal to bilateral tonic–clonic seizure**. Older terms ("simple partial", "complex partial", "secondarily generalised") are no longer used.
+- **Generalised seizures** begin in networks across both hemispheres. The main types are **generalised tonic–clonic** seizures, **absence** seizures (a sudden brief arrest of activity with staring, typically 5–15 seconds), **myoclonic** seizures (brief jerks), **atonic** seizures (sudden loss of tone and falls) and tonic seizures.
+- **Unknown** whether focal or generalised, when the start is not seen.
+- **Unclassified**, when there is not enough information.
+
+The **epilepsy type** (focal, generalised, combined, or unknown) and, where possible, an **epilepsy syndrome** are then identified, along with the **cause**: structural, genetic, infectious, metabolic, immune or unknown.
+
+| Syndrome | Typical age | Features | Notes |
+|---|---|---|---|
+| Childhood absence epilepsy | 4–10 years | Many absences a day; 3 Hz spike-and-wave on EEG, provoked by hyperventilation | Usually remits by adolescence |
+| Juvenile myoclonic epilepsy | Teenage years | Morning myoclonic jerks (dropping things at breakfast), generalised tonic–clonic seizures, sometimes absences | Lifelong tendency; sleep deprivation and alcohol provoke; some drugs worsen it |
+| Self-limited epilepsy with centrotemporal spikes | 4–10 years | Nocturnal focal seizures with facial twitching and drooling | Remits in adolescence; treatment often not needed |
+| Infantile epileptic spasms syndrome | First year | Clusters of flexor spasms, developmental regression, hypsarrhythmia on EEG | Emergency for specialist treatment |
+| Lennox–Gastaut syndrome | Early childhood | Several seizure types including tonic and atonic, cognitive impairment | Usually drug-resistant |
+| Temporal lobe epilepsy with hippocampal sclerosis | Adolescence or adulthood | Rising epigastric sensation, déjà vu, automatisms, impaired consciousness | Often drug-resistant; surgery can be curative |
+
+::: example The daydreaming pupil {#ex-absence}
+A 7-year-old girl's teacher reports that she "switches off" many times a day, stopping mid-sentence and staring for a few seconds before carrying on as if nothing had happened. Her parents had thought she was daydreaming. In clinic she is asked to breathe deeply and quickly; after about 90 seconds she stops, stares, and her eyelids flutter for 8 seconds, then she resumes counting where she left off.
 ::: solution
-**Established status epilepticus - a time-critical drug protocol with an intensive-care horizon ([[#def-classification]], [[#def-drugs]]): the minute-by-minute protocol - abortive therapy with a benzodiazepine at the right dose (IM midazolam or IV lorazepam or buccal/rectal diazepam depending on route and setting, repeat per guideline once) and, when it fails, the urgent second-line IV anti-seizure drug (levetiracetam or valproate or fosphenytoin or phenobarbital by local protocol with their cardiac and infusion-rate cautions) with continuous seizure monitoring and the third-line anaesthetic pathway continuous-EEG-burst-burden-suppression-target-interpretation) and the "the seizure is controlled but the patient is not" principle; the simultaneous ABC-and-reversible-causes sweep - airway protection decision with anaesthesia, glucose and thiamine if alcohol-and-malnutrition-risk and the fever-and-neck-stiffness-and-immunocompromise-meningitis-encephalitis-and-its-aciclovir-do-not-delay logic, the trauma-and-aspiration check and the sodium-and-calcium-and-renal-and-drug-level-and-toxicology screens - [[emergency-critical-care/resuscitation]], [[infectious-diseases/fever-sepsis]], [[nervous-system/neuroinflammation]], [[emergency-critical-care/poisoning]]; and the after-actions - the cause hunt that runs on ward (non-adherence and drug interactions and alcohol-withdrawal and the new lesion and the autoimmune encephalitis that presents as refractory status with normal scans) and the prognosis-and-goals conversation with the family (mortality scales such as STEPSS used carefully) with the ICU-escalation and the do-not-escalate decision taken with the same transparency - [[#def-drugs]] for the reload-and-maintenance restart, and [[emergency-critical-care/critical-care]] for the ventilation-and-vasopressor context.**
+1. **Seizure type.** Brief arrests of activity with staring and immediate recovery, many times a day, provoked by hyperventilation: typical **absence seizures**, a generalised seizure type. Unlike daydreaming, they cannot be interrupted by calling her name or touching her.
+2. **Syndrome.** Onset at 4–10 years in an otherwise healthy child suggests **childhood absence epilepsy**.
+3. **Confirmation.** EEG with hyperventilation, expected to show generalised 3 Hz spike-and-wave discharges during the attacks.
+4. **Treatment principles.** Ethosuximide is the first choice (NICE NG217), with sodium valproate or lamotrigine as alternatives in specialist hands; carbamazepine and other sodium channel blockers can make absences worse. Doses follow the children's formulary.
+5. **Practical points.** Hundreds of absences a day can affect learning, so school is told; the outlook is good, with most children growing out of it by adolescence; and she should be supervised when swimming or bathing.
 :::
 :::
 
-::: example The student with morning jerks {#ex-jme}
-A 19-year-old university student drops her toothbrush most mornings and "knows something odd happens" but remembers nothing; two "big fits" after drinking at Freshers' week; EEG shows 4-5 Hz polyspike-and-wave; MRI normal; she is on the pill.
+## Diagnosis: is it a seizure?
+
+The diagnosis of epilepsy is clinical. It rests on a detailed account from the person and, crucially, from a **witness**; a video recorded on a phone is often more useful than any test. The main differential diagnoses are syncope and functional (dissociative) seizures.
+
+| Feature | Seizure (tonic–clonic) | Syncope | Functional/dissociative seizure |
+|---|---|---|---|
+| Trigger | Often none; sleep deprivation, flashing lights in some | Standing, heat, pain, venepuncture, exertion (cardiac) | Emotional stress, but often none apparent |
+| Onset | Sudden; may have an aura | Prodrome of light-headedness, sweating, greying vision | Gradual or fluctuating |
+| Eyes | Open | Usually open | Often tightly closed, resisting opening |
+| Movements | Rhythmic jerking for 1–2 minutes | Brief irregular jerks (under about 15 seconds) are common | Asynchronous, side-to-side, pelvic thrusting, waxing and waning; may last many minutes |
+| Colour | Cyanosed | Pale | Usually normal |
+| Tongue biting | Side of tongue | Rare; tip if any | Uncommon |
+| Recovery | Confused for minutes to hours, sleepy, muscle aches | Rapid return to clarity | Variable; may be tearful |
+
+**Convulsive syncope**, a few jerks during a faint, is the commonest reason for a mistaken diagnosis of epilepsy. Incontinence occurs in both and does not help. Cardiac syncope, especially when it occurs during exercise or lying down, or with a family history of sudden death, needs an ECG and cardiology review (see [[cardiovascular/arrhythmias]]).
+
+**Investigations** support but rarely make the diagnosis:
+
+- **Blood tests**: glucose, sodium, calcium, magnesium, and a toxicology screen when relevant, to look for provoked seizures.
+- **ECG** for everyone with a suspected first seizure, to look for a cardiac cause of collapse such as long QT syndrome.
+- **EEG** to support a diagnosis and identify the syndrome, but not to exclude epilepsy: a routine EEG between seizures is normal in about half of people with epilepsy, and minor non-specific abnormalities are common in people without it. Sleep-deprived EEG and prolonged video-EEG telemetry increase the yield.
+- **MRI** of the brain, preferred over CT, to look for a structural cause, particularly when the seizure is focal or the person is an adult.
+
+::: example A collapse at the bus stop {#ex-syncope}
+A 19-year-old student collapsed at a bus stop on a hot morning after skipping breakfast. A friend says she went pale, said she felt "funny" and her vision was going grey, and then slumped. Her arms jerked a few times for about 10 seconds. She was confused for less than a minute, then apologised and asked what happened. She did not bite her tongue. She has had two similar episodes at blood tests.
 ::: solution
-**Juvenile myoclonic epilepsy - syndrome diagnosis saves her from the wrong decade of treatment ([[#def-classification]], [[#def-drugs]]): the pattern - myoclonic jerks within 1-2 hours of waking (the dropped objects and the embarrassed concealment), generalised tonic-clonic seizures precipitated by sleep deprivation and alcohol, the photosensitivity check, the polyspike EEG and normal imaging - and the reason syndrome matters: carbamazepine and lamotrigine (at times) and phenytoin aggravate myoclonus, whereas valproate is the most effective drug, which collides head-on with her sex and the teratogenicity rules; the drug negotiation - lamotrigine or levetiracetam as the reasonable first choices with honest lower efficacy for the jerks, the valproate conversation done only with the specialist pregnancy-prevention programme framework (contraception, monthly risk acknowledgement, alternative-first documentation) if it is genuinely needed, and the lifestyle prescriptions that are the cheapest anti-seizure drugs: sleep regularity, alcohol moderation, and gaming-and-photosensitivity advice where relevant - [[obstetrics-gynaecology/contraception-fertility]], [[pharmacology/adverse-reactions]]; the syndrome's life - the lifelong relapse rate on withdrawal (so the "can I come off for university/med-school" conversation answered honestly as probable-never-complete-withdrawal rather than promising a finish line), the driving rules with the seizure-free-period arithmetic, and the disclosure-to-university-and-insurance-and-employer question answered with the equality-act frame; and the comorbidity screen - the anxiety-and-mood-and-adherence-and-alcohol patterns that determine her outcome more than the EEG, with the treatment pathway offered in the same breath as the diagnosis so the epilepsy clinic is not the only place she hears the word "treatment".**
+1. **Before the event.** Standing in heat, fasting, a prodrome of light-headedness and greying vision, and previous episodes at venepuncture: typical of vasovagal syncope.
+2. **During.** Pallor and a few seconds of jerking. Brief myoclonic jerks are common in syncope ("convulsive syncope") and are not evidence of a seizure.
+3. **After.** Rapid recovery of orientation, under a minute. After a tonic–clonic seizure, confusion usually lasts much longer.
+4. **Plan.** The diagnosis is vasovagal syncope. An ECG is still recorded, to exclude long QT or other conduction abnormalities. An EEG is not needed and could mislead. She is given advice on recognising prodromes and on counter-manoeuvres. A diagnosis of epilepsy would have had serious consequences for driving and work; avoiding it is as important as making it when it is correct.
 :::
 :::
 
-::: example The events that are not seizures {#ex-nes}
-A 24-year-old has daily "seizures" despite three anti-seizure drugs: episodes last 8-15 minutes, start with side-to-side head shaking and eye closure, wax and wane, and end with crying; there is a history of sexual abuse she has never disclosed to a doctor.
+::: widget bayes
+mode: test
+prevalence: 0.3
+sensitivity: 0.5
+specificity: 0.95
+caption: An interictal EEG as a diagnostic test after a suspected first seizure, as natural frequencies. The starting values are illustrative: a 30% chance that the event was an epileptic seizure, a sensitivity of about 50% for epileptiform discharges on one routine EEG, and a specificity of 95%. Notice how many people with epilepsy have a normal EEG, and what happens to the predictive value of an "abnormal" EEG when it is ordered for people whose history suggests a faint (lower the prevalence to 0.05). A simplified teaching model, not a clinical calculator.
+:::
+
+## Antiseizure medications
+
+Antiseizure medications suppress seizures; they do not cure the underlying epilepsy. About two-thirds of people become seizure-free with medication, usually on the first or second drug tried. **Drug-resistant epilepsy** is defined as failure of two appropriately chosen and tolerated drugs, used at adequate doses, to achieve sustained seizure freedom; such people should be referred to a specialist epilepsy centre, where surgery or other treatments may be possible.
+
+::: definition Main mechanisms of antiseizure medications {#def-asm}
+- **Sodium channel blockers** stabilise the inactivated state of voltage-gated sodium channels and limit rapid repetitive firing: carbamazepine, oxcarbazepine, lamotrigine, phenytoin, lacosamide.
+- **Synaptic vesicle protein SV2A ligands** reduce transmitter release: levetiracetam, brivaracetam.
+- **GABA enhancers** increase inhibition: benzodiazepines and phenobarbital (GABA-A receptor modulators).
+- **T-type calcium channel blockers** in the thalamus: ethosuximide (absence seizures).
+- **Broad or multiple mechanisms**: sodium valproate, topiramate, zonisamide.
+:::
+
+Choosing a drug depends on the seizure type and syndrome, age, sex and the possibility of pregnancy, other medicines and other conditions. In NICE NG217 (2022), first-line choices include **lamotrigine or levetiracetam** for focal seizures; **sodium valproate** for generalised tonic–clonic seizures and juvenile myoclonic epilepsy in males and in females unable to have children, with lamotrigine or levetiracetam as the alternatives; and **ethosuximide** for absence seizures. Doses are increased slowly and follow the current formulary.
+
+Some important properties and hazards:
+
+- **Valproate** is highly teratogenic: about 10% of babies exposed in the womb have major malformations, and up to 30–40% have neurodevelopmental problems. Since January 2024 the UK Medicines and Healthcare products Regulatory Agency (MHRA) has required that valproate is not started in anyone under 55 unless two specialists independently agree that there is no suitable alternative or that the reproductive risks do not apply. In females who can become pregnant, it may only be used under a **pregnancy prevention programme**.
+- **Carbamazepine, oxcarbazepine and phenytoin** can cause severe skin reactions (Stevens–Johnson syndrome and toxic epidermal necrolysis). The risk with carbamazepine is strongly associated with the **HLA-B\*15:02** allele, common in people of Han Chinese, Thai and Malay ancestry, who are tested before starting it. They are **enzyme inducers**, reducing the effect of hormonal contraceptives, warfarin and many other drugs. They can worsen absence and myoclonic seizures.
+- **Lamotrigine** can cause a rash, especially if the dose is increased quickly or it is combined with valproate (which raises its levels). Its levels fall during pregnancy and with combined oral contraceptives.
+- **Levetiracetam** can cause irritability, low mood and, rarely, psychosis.
+- **Phenytoin** follows non-linear (saturable) kinetics, so small dose increases can cause large rises in level and toxicity (ataxia, nystagmus).
+
+Most antiseizure medicines follow first-order kinetics: after starting a regular dose, the level rises towards a steady state, reaching about 50% after one half-life, 75% after two, and about 97% after five. The same rule tells how long a drug interaction takes to have its full effect.
+
+::: widget plot
+f: 1 - 0.5^(x/h)
+x: 0, 200
+y: 0, 1.05
+sliders: h=30:5:100:5
+hlines: 1
+labels: \text{fraction of steady-state level}
+caption: Accumulation towards steady state for a drug given regularly, as a fraction of the final level, against time in hours. The slider sets the elimination half-life (illustrative values). Whatever the half-life, the level reaches 50% after one half-life and about 97% after five. A drug that induces the enzymes metabolising another shortens its half-life, so the new, lower steady state is reached sooner. Simplified one-compartment model, not for dosing.
+:::
+
+::: example Contraception and seizures {#ex-contraception}
+A 24-year-old woman with focal epilepsy has been seizure-free for two years on carbamazepine. She has started a combined oral contraceptive pill and asks whether this is a good choice. She plans a pregnancy in about two years.
 ::: solution
-**Functional (psychogenic) nonepileptic seizures - a positive diagnosis, delivered as one ([[#def-mimics]], [[psychiatry/anxiety-disorders]]): the diagnostic evidence - the semiology (eye closure and resisting eye opening, long duration, waxing-waning, asynchronous side-to-side movement, pelvic thrusting and ictal crying, preserved pupillary reflexes), the video-EEG capture of a typical event without electrographic seizure as the gold standard and the honest limits of prolactin and the normal interictal EEG - [[clinical-skills/laboratory-tests]], [[clinical-skills/medical-imaging]]; the disclosure conversation - the phrase "these are real events with a mind-body cause, not fakery, and they will not respond to epilepsy drugs" written out and rehearsed, the harm of the ambivalent "let's try one more drug" referral that has often run for years, and the trauma history asked about only when there is a treatment pathway to offer, not as diagnostic ammunition - [[clinical-skills/communication]], [[paediatrics/safeguarding]] - adult context; keep [[psychiatry/mood-disorders]]; the treatment architecture - gradual, consented anti-seizure-drug tapering with driving advice recalculated honestly, psychological therapy (the CBT-and-trauma-focused evidence with its modest effect sizes and access problems), management of the mood-and-sleep-and-pain comorbidities and the personality-and-trauma complexity that predicts outcome, and the shared care letter that stops the emergency-department-reattendance cascade - [[pharmacology/patient-variation]], [[clinical-skills/records-handover]]; and the safeguarding and prognosis nuance - the abuse history's implications for self-harm and revictimisation risk and the message that recovery rates in recent-onset NES are good, which is one of the few genuinely hopeful sentences in this chapter.**
+1. **Interaction.** Carbamazepine induces liver enzymes (CYP3A4) and increases the metabolism of oestrogens and progestogens, so the combined pill may fail. Contraceptive methods unaffected by enzyme induction (copper intrauterine device, levonorgestrel intrauterine system, or medroxyprogesterone injection) are recommended according to UK Faculty of Sexual and Reproductive Healthcare guidance.
+2. **Planning pregnancy.** She should be referred for pre-conception counselling with her epilepsy team. Carbamazepine carries a lower but real risk of malformations; switching to lamotrigine or levetiracetam, which have the lowest known risks, may be considered, but changes are made well before conception and only if seizure control can be maintained, because uncontrolled tonic–clonic seizures are themselves dangerous in pregnancy.
+3. **Folic acid.** NICE NG217 advises folic acid 5 mg daily for women taking antiseizure medicines who could become pregnant, started before conception.
+4. **Valproate.** Not an option for her unless two specialists agree there is no alternative.
+5. **Pregnancy registers** and closer monitoring (including drug levels for lamotrigine, which fall in pregnancy) would follow.
 :::
 :::
 
-::: example The old man who keeps "fainting" {#ex-convulsive-syncope}
-A 79-year-old has had four brief "fits" in three months, each after standing quickly or during a hot bath, with 10 seconds of jerking and immediate reorientation; one witness said "he went grey before he fell"; ECG shows first-degree AV block and he takes doxazosin and furosemide.
+### Beyond tablets
+
+When medication fails, **epilepsy surgery** (for example anterior temporal lobectomy for hippocampal sclerosis) can make people seizure-free; in a 2001 randomised trial, 58% of surgically treated patients with temporal lobe epilepsy were free of seizures impairing awareness at one year compared with 8% of those continuing medication. Other options include **vagus nerve stimulation**, the **ketogenic diet** (especially in children), and newer targeted drugs such as cannabidiol for Lennox–Gastaut and Dravet syndromes.
+
+## Living with epilepsy
+
+**Driving.** In the UK, the DVLA sets the rules. For a car or motorcycle licence (group 1), after a first unprovoked seizure the person usually must not drive for 6 months if assessment shows no increased risk; after a diagnosis of epilepsy they must usually be seizure-free for 12 months. Clinicians must tell the person of their legal duty to inform the DVLA. Group 2 (bus and lorry) rules are much stricter.
+
+**Safety.** Showers rather than baths, care with heights, water and cooking, and appropriate supervision for activities such as swimming.
+
+**Sudden unexpected death in epilepsy (SUDEP)** occurs in roughly 1 in 1,000 adults with epilepsy each year, more often with frequent generalised tonic–clonic seizures, nocturnal seizures and when sleeping alone. It should be discussed with every person with epilepsy, because seizure control and adherence reduce the risk.
+
+**Mental health.** Depression and anxiety are common in epilepsy and should be asked about. Stigma remains a real burden in many communities.
+
+## Status epilepticus
+
+::: definition Status epilepticus {#def-status}
+**Status epilepticus** is a condition resulting either from the failure of the mechanisms responsible for seizure termination or from the start of mechanisms that lead to abnormally prolonged seizures. The ILAE (2015) gives two time points for convulsive (tonic–clonic) status: **t1 = 5 minutes**, after which the seizure is unlikely to stop by itself and treatment should start; and **t2 = 30 minutes**, after which there is a risk of long-term consequences, including neuronal injury. Repeated seizures without recovery between them are treated in the same way.
+:::
+
+The treatment of convulsive status follows a staged protocol, with timing more important than the precise choice of drug. Doses follow the current UK protocol (for example, Resuscitation Council UK and APLS algorithms) and the formulary.
+
+1. **0–5 minutes**: airway, breathing, circulation, oxygen, capillary glucose (treat hypoglycaemia), time the seizure, and protect from injury.
+2. **At 5 minutes**: a **benzodiazepine**, intravenous lorazepam if there is access, or buccal midazolam (or rectal diazepam) if not. A second dose may be given once, after 5–10 minutes if seizures continue. Pre-hospital doses count.
+3. **About 20 minutes, if seizures continue**: a **second-line drug** intravenously: levetiracetam, phenytoin (or fosphenytoin) or sodium valproate. The ESETT trial (2019) found these three similarly effective, each stopping status in about half of patients.
+4. **Refractory status (about 30–45 minutes)**: rapid sequence induction of anaesthesia and intensive care, with EEG monitoring.
+
+Throughout, look for and treat the cause: hypoglycaemia, hyponatraemia, alcohol withdrawal (give intravenous thiamine), infection (meningitis or encephalitis), stroke, drug toxicity, or stopping antiseizure medication.
+
+::: warning Too few benzodiazepines, given too late
+The most common error in status epilepticus is under-treatment: waiting too long before the first benzodiazepine, giving doses too small to work, or then giving more than two doses of benzodiazepines in total, which causes respiratory depression without stopping the seizure. Give an adequate first dose at 5 minutes, at most one repeat, and then move promptly to a second-line drug. Remember too that a person who has stopped jerking but does not wake up may be in **non-convulsive status**; an EEG is needed when consciousness does not return as expected.
+:::
+
+::: example A prolonged seizure in a care home {#ex-status}
+A 58-year-old man with a learning disability and epilepsy is found having a tonic–clonic seizure in his care home. Staff gave buccal midazolam at 8 minutes. Paramedics arrive at 15 minutes; he is still seizing, saturations are 91% on air, and his glucose is 5.2 mmol/L. He reaches the emergency department at 30 minutes, still having a seizure.
 ::: solution
-**Syncope with myoclonus, not epilepsy - and a drug list to edit ([[#def-mimics]]): the history tells you - the postural-and-heat triggers and the grey-then-fall sequence and the seconds-not-minutes Jerks and the immediate reorientation without confusion or tongue-bite or incontinence-timing-ambiguity separate reflex and orthostatic syncope from a seizure, and the eyewitness video that families now supply should be watched by the clinician, not described - [[clinical-skills/history-taking]], [[clinical-skills/communication]]; the workup - lying-standing blood pressures with the drug review (alpha-blocker-plus-diuretic as iatrogenic orthostasis), ECG with the conduction-disease and pause question, the arrhythmia monitoring and the carotid-sinus and TTE-for-aortic-stenosis considerations and the "seizure-like-activity-does-not-equal-epilepsy" documentation - [[cardiovascular/arrhythmias]], [[cardiovascular/valve-congenital-disease]], [[clinical-skills/medical-imaging]]; the interventions - medication rationalisation and compression and fluid-and-salt advice with the heart-failure-counterpoint acknowledged, physical-counterpressure manoeuvres taught, pacing considered only for the documented cardioinhibitory phenotype with the honest evidence appraisal - [[cardiovascular/heart-failure]], [[renal/water-sodium]], [[pharmacology/patient-variation]]; and the harms avoided - the anti-seizure-drug cascade started on an ED letter saying "seizure", with its hyponatraemia (carbamazepine in an older patient on diuretics), falls and licence consequences, which is why admission documentation should name the mechanism and not the movement - [[pharmacology/adverse-reactions]], [[nervous-system/motor-systems]].**
+1. **Recognise status.** He has had a continuous seizure for more than 5 minutes: convulsive status epilepticus. At 30 minutes he has passed t2, so neuronal injury becomes a risk.
+2. **Count the benzodiazepines.** One dose of buccal midazolam has been given. Paramedics give a second benzodiazepine (for example intravenous lorazepam if access is obtained), according to their protocol. That makes two doses: no more benzodiazepines.
+3. **Second-line.** On arrival, give an intravenous second-line drug immediately: levetiracetam, phenytoin or valproate. In a man whose usual drugs are known, the choice takes them into account (for example, avoiding phenytoin loading if he already takes phenytoin and the level is unknown).
+4. **Prepare for refractory status.** Call the intensive care team now. If seizures continue after the second-line drug, he will need anaesthesia and ventilation.
+5. **Look for the cause.** Check blood glucose again, sodium, calcium, magnesium, drug levels where relevant, infection markers, and ask about missed medication, recent illness and alcohol. CT of the head is done once he is stable.
+6. **After recovery.** Review his care plan, ensure the rescue medication plan is clear, and discuss with him and his carers, in an accessible way, what happened.
 :::
 :::
 
 ::: quiz
-Which is the most appropriate immediate action for a first-ever unprovoked focal seizure with focal features on examination in a 60-year-old?
-- [x] Urgent MRI brain (with same-day CT if a tumour or bleed is suspected acutely) plus specialist assessment
-- [ ] Reassure and discharge with a leaflet
-- [ ] Start carbamazepine and review in 6 months
-- [ ] Repeat EEG in a year
+A 16-year-old has jerks of both arms most mornings, often dropping her toothbrush, and had a generalised tonic–clonic seizure after a sleepover. Her EEG shows generalised polyspike-and-wave discharges. Which drug would be the least appropriate choice?
+- [ ] Levetiracetam
+- [ ] Lamotrigine
+- [x] Carbamazepine
+- [ ] Sodium valproate, only if two specialists agree there is no suitable alternative and a pregnancy prevention programme is in place
 ::: solution
-**New focal epilepsy in later life is a structural lesion until proven otherwise - the tumour, stroke and chronic-differential list - so imaging is the first investigation, MRI being the study that answers the question, with the same-day CT reserved for the acute presentation ([[#def-mimics]], [[clinical-skills/medical-imaging]]); drug choice follows the syndrome and the lesion, and driving advice and safety-netting must happen today regardless - [[nervous-system/stroke]], [[pathology/cancer-biology]].**
+The picture is juvenile myoclonic epilepsy. Carbamazepine (and other sodium channel blockers such as phenytoin and oxcarbazepine) can worsen myoclonic and absence seizures in generalised epilepsies, so it should be avoided. Levetiracetam is a common first choice for a young woman. Lamotrigine can be used but may occasionally worsen myoclonus. Valproate is very effective in this syndrome but, because of its teratogenicity, is used in girls and women only under the strict UK rules described above.
 :::
 :::
 
-::: widget plot
-f: 60*exp(-0.09*x); 60*exp(-0.09*x)*0.35; 60*0.35+10*(1-exp(-0.5*x))
-x: 0, 24
-y: 0, 70
-labels: \text{months since last seizure},\ \%\text{relapse risk index};\ \text{any anti-seizure drug stopped};\ \text{monotherapy maintained};\ \text{drug withdrawal after 24+ seizure-free months}
-caption: Seizure control is a balance of recurrence versus treatment burden ([[#def-classification]], [[#def-drugs]]): relapse probability falls steeply after the last seizure and is much lower on maintained therapy, while planned withdrawal after a prolonged seizure-free interval carries its own modest and syndrome-dependent risk - the arithmetic behind every "we can try coming off, here is what it costs" conversation ([[clinical-skills/communication]], [[pharmacology/patient-variation]]).
-:::
-
-::: exercise Interpret these EEG requests {level=1}
-Advise on utility: (a) routine EEG after a first unprovoked seizure; (b) EEG in a comatose ICU patient on paralysis; (c) EEG 3 days after a typical syncope with normal examination; (d) sleep-deprived EEG for suspected JME with a normal routine study; (e) ambulatory EEG for daily spell-like events.
-::: solution
-**Right-test-right-question ([[#def-mimics]]): (a) genuinely useful - epileptiform abnormalities raise recurrence probability and can reveal a syndrome, so order after the event with sleep-deprivation enhancement - [[clinical-skills/laboratory-tests]]; (b) essential - non-convulsive status hides under sedation-and-paralysis and only EEG finds it, hence the monitoring protocols - [[emergency-critical-care/critical-care]], [[nervous-system/stroke]]; (c) low yield and potentially misleading - incidental benign variants invite misdiagnosis, treat the syncope workup instead - [[cardiovascular/arrhythmias]]; (d) high value - photoparoxysmal and generalised-discharge yield rises with sleep deprivation and the record changes drug choice; and (e) the right escalation for frequent events when video-EEG admission is the destination - diagnostic clarity before labelling someone drug-resistant - [[#def-drugs]].**
-:::
-:::
-
-::: exercise Choose the first drug {level=1}
-Pick and justify a first anti-seizure drug: (a) 70-year-old with post-stroke focal epilepsy on apixaban; (b) 30-year-old man with JME who plays rugby; (c) 8-year-old with childhood absence epilepsy; (d) 55-year-old woman with focal epilepsy, osteoporosis and depression.
-::: solution
-**Syndrome-first, comorbidity-second ([[#def-drugs]]): (a) levetiracetam or lamotrigine - avoid enzyme inducers that disturb DOAC exposure and remember post-stroke epilepsy's recurrence and mood considerations - [[nervous-system/stroke]], [[blood/thrombosis-anticoagulation]]; (b) valproate-or-lamotrigine or levetiracetam with the contact-sport-and-water rules discussed and the syndrome's lifelong nature stated - [[#def-drugs]] for the teratogenicity irrelevance in a man balanced against adherence realities; (c) ethosuximide first for absence with valproate and lamotrigine alternatives and the school-and-sports paperwork with the swimming rules - [[paediatrics/neurodevelopment]]; (d) avoid the inducers that worsen bone health and the agents with mood liabilities (levetiracetam's irritability and topiramate's slowing), favour lamotrigine with its mood benefit and normal skeletal effects, and add the vitamin D and calcium and falls assessment to the plan - [[endocrine/bone-calcium]], [[musculoskeletal/back-pain]] - falls belongs to [[geriatrics-palliative/falls]], [[psychiatry/mood-disorders]].**
-:::
-:::
-
-::: exercise Manage the breakthrough {level=2}
-A 34-year-old with six-year remission on lamotrigine has two nocturnal tonic-clonic seizures in a fortnight after starting a new job with night shifts; levels unknown; he drove to work this morning.
-::: solution
-**Precipitant-hunting-before-polypharmacy ([[#def-drugs]], [[medical-ethics-law/professionalism-regulation]]): the safety stop - immediate driving cessation with the licensing notification duty explained without accusation, the work-safety conversation about night shifts and machinery and heights with occupational-health involvement, and the bath-and-swim-and-baby-carrying rules refreshed - [[clinical-skills/communication]]; the data - adherence conversation first (levels as a trust instrument, not a lie detector), a lamotrigine level with the interaction-and-biosimilar-substitution check, the sleep-deprivation-and-alcohol-and-new-medication history (including the over-the-counter tramadol and the weight-loss diet and the herbal extracts that inhibit metabolism), and the illness-and-fever context; the plan - temporary dose adjustment per levels with re-check and relapse-prevention review, and only then syndrome re-appraisal (is this really still the same epilepsy, or was the original diagnosis wrong?) with the MRI-repeat question when focal features emerge - [[clinical-skills/laboratory-tests]], [[pharmacology/dosing-principles]]; and the longer view - the shift-work advice negotiated with the employer under equality duties, the seizure action plan and rescue medication, and the mood-and-anxiety-and-alcohol follow-up after breakthrough events because patients read a relapse as personal failure rather than a shift roster's arithmetic - [[public-health/environmental-occupational]], [[psychiatry/mood-disorders]].**
-:::
+::: history
+Hippocratic writers argued around 400 BCE, in *On the Sacred Disease*, that epilepsy was a disease of the brain rather than a divine visitation. In the 1870s John Hughlings Jackson defined a seizure as an "occasional, sudden, excessive, rapid and local discharge of grey matter", and described the march of focal motor seizures. Bromide, introduced by Charles Locock in 1857, was the first effective drug; phenobarbital followed in 1912, and phenytoin was discovered by H. Houston Merritt and Tracy Putnam in 1938 using an electroshock model in cats. Hans Berger recorded the human EEG in the 1920s, and in the 1930s Frederic and Erna Gibbs and William Lennox described the 3 Hz spike-and-wave of absence seizures. Wilder Penfield and Herbert Jasper developed epilepsy surgery in Montreal from the 1930s to the 1950s.
 :::
 
 ## Where this leads
 
-The channel and receptor physiology in [[physiology/membrane-potentials]] and [[physiology/synapses]]; the acute management of convulsions in [[emergency-critical-care/acute-assessment]]; febrile seizures and immunisations in [[paediatrics/immunisation]]; the pregnancy and contraception collisions in [[obstetrics-gynaecology/contraception-fertility]] and [[obstetrics-gynaecology/pregnancy-complications]]; and the immune-mediated encephalitides in [[nervous-system/neuroinflammation]].
-
-::: history
-**Epilepsy is the disease whose treatments were ancient while its explanations were not: the Hippocratic note that "the sacred disease" was natural, the medieval and demonisation counter-currents that shaped centuries of stigma the WHO still names; the nineteenth-century neurology of Jackson's focal march and his use of the electric analogy (the "little protoplasmic fits"), and the Berger EEG of 1924 whose twelve-year lag between invention and clinical adoption is a lesson in technology-readiness - [[physiology/membrane-potentials]], [[clinical-skills/laboratory-tests]]; the bromide era (the Victorian potassium-bromide sedation cocktail and the phenobarbital sequel) and then the dilantin story - the 1930s serendipitous discovery of phenytoin's activity from a search for a better hypnotic by Putnam and Merritt and Volk, whose structure-activity work is an early example of rational-ish anticonvulsant discovery, and the carbamazepine-and-primidone-and-valproate arrivals that made modern polypharmacy possible - [[pharmacology/drug-development-prescribing]]; the ILAE classifications of 1964 onward and the syndromic turn of the 1980s that made clinicians think in trajectories rather than seizures; the surgical renaissance - the older temporal lobectomies, the failed trials of their era, and the modern evidence base with the randomised surgery-versus-medication data showing dramatic superiority in well-selected drug-resistant temporal-lobe cases; and the genetic era - the SCN1A-Dravet and the GLUT1-deficiency-and-ketogenic-diet pairing (one of the clearest examples of mechanism-treatment matching in paediatrics) and the antibody encephalitis that converted refractory status into a treatable immune disease, so that the next patient with "psychiatric seizure crisis and normal MRI" now gets an immunotherapy trial instead of an asylum - [[nervous-system/neuroinflammation]], [[genetics/mendelian-inheritance]].**
-:::
+The ion channels and synapses that underlie seizures are in [[physiology/membrane-potentials]] and [[physiology/synapses]]. Seizures caused by stroke, infection and inflammation are discussed in [[nervous-system/stroke]] and [[nervous-system/neuroinflammation]]. Epilepsy in children, including febrile seizures, is covered in [[paediatrics/neurodevelopment]]; pregnancy and medicines in [[obstetrics-gynaecology/pregnancy-complications]].
 
 ::: summary
-- Diagnose the seizure before the epilepsy and the syndrome before the drug; a normal EEG never excludes either and an abnormal one never creates them.
-- Focal features demand imaging, and later-life new focal epilepsy is a structural lesion until an MRI says otherwise.
-- Match mechanism to syndrome: sodium-channel blockers worsen generalised myoclonus and absence; valproate is the generalised-epilepsy gold standard with a teratogenicity price.
-- Status epilepticus is timed protocols (benzodiazepine, second-line infusion, anaesthetic pathway) run alongside glucose, thiamine, fever and cause hunting.
-- Two failed appropriately-chosen drug trials is drug-resistant epilepsy and a referral, not a reason for a third.
-- Driving, contraception, pregnancy, alcohol, sleep and stigma belong in every epilepsy consultation because the treatment fails without them.
+- A seizure is abnormal excessive or synchronous neuronal activity; epilepsy is defined by two unprovoked seizures more than 24 hours apart, one unprovoked seizure with a high recurrence risk, or an epilepsy syndrome.
+- Provoked seizures (hypoglycaemia, alcohol withdrawal, acute brain injury) are not epilepsy.
+- Seizures are classified as focal (with preserved or impaired consciousness, possibly evolving to bilateral tonic–clonic), generalised, unknown or unclassified (ILAE 2025).
+- Diagnosis is clinical and depends on a witness account; syncope (including convulsive syncope) and functional seizures are the main mimics. Everyone with a first seizure needs an ECG; a normal EEG does not exclude epilepsy.
+- Drug choice follows seizure type and individual factors: lamotrigine or levetiracetam for focal seizures; ethosuximide for absences; valproate is effective but highly teratogenic and restricted in the UK.
+- Enzyme inducers interact with contraceptives and other drugs; carbamazepine can worsen generalised epilepsies; HLA-B\*15:02 testing precedes carbamazepine in people of relevant ancestry.
+- Drug-resistant epilepsy (two failed appropriate drugs) needs specialist referral; surgery can be curative.
+- Status epilepticus: treat at 5 minutes with a benzodiazepine, repeat once, then a second-line drug (levetiracetam, phenytoin or valproate), then anaesthesia; look for the cause throughout.
+- Discuss driving, safety and SUDEP with every person with epilepsy.
 :::
 
 ## Exercises
 
-::: exercise Name the seizure {level=1}
-Classify: (a) 8-year-old with 10-second staring spells and 3-Hz spike-wave; (b) 22-year-old with an epigastric rising sensation and olfactory hallucination then confusion for 5 minutes; (c) 16-year-old with 3 a.m. generalised tonic-clonic seizure, normal EEG awake, abnormal after sleep deprivation; (d) 30-year-old with frequent brief bilateral shoulder jerks only on waking.
+::: exercise Provoked or unprovoked? {level=1}
+Classify each as a provoked or unprovoked seizure, and say whether it alone establishes a diagnosis of epilepsy: (a) a seizure 18 hours after stopping heavy drinking; (b) a seizure in a man whose sodium is 112 mmol/L; (c) a single seizure two years after a large stroke, with an epileptiform EEG; (d) a seizure on the day of a head injury.
 ::: solution
-**Classifications-with-consequences ([[#def-classification]]): (a) childhood absence epilepsy - ethosuximide-or-valproate-or-lamotrigine territory and the do-not-give-carbamazepine rule and the school-notification conversation - [[paediatrics/neurodevelopment]]; (b) focal impaired-awareness seizure with temporal-lobe aura - the lesion hunt with MRI and the surgical-prognosis angle if drug-resistant - [[nervous-system/sensory-systems]]; (c) probable genetic generalised epilepsy with the sleep-deprivation EEG yield and the alcohol-and-sleep-hygiene prescription and the driving arithmetic; (d) myoclonic jerks of JME - broad-spectrum drugs and the valproate-in-a-woman-of-reproductive-potential negotiation - [[obstetrics-gynaecology/contraception-fertility]].**
+(a) Provoked (alcohol withdrawal): not epilepsy. (b) Provoked (severe hyponatraemia): not epilepsy. (c) Unprovoked, occurring long after the stroke, with a structural lesion and an epileptiform EEG: the recurrence risk is high (at least 60%), so epilepsy can be diagnosed after one seizure. (d) Provoked (acute symptomatic, immediately after injury): not epilepsy by itself.
 :::
 :::
 
-::: exercise Advise the parent after a febrile convulsion {level=1}
-A 15-month-old has a 4-minute generalised febrile seizure with a viral illness; recovered fully in the ambulance; first episode.
+::: exercise Steady state {level=1 check="0.875"}
+A drug with first-order kinetics is started at a regular dose. What fraction of its steady-state level is reached after three half-lives? Give the exact decimal.
 ::: solution
-**Simple-febrile-seizure-counselling ([[#def-classification]], [[paediatrics/newborn]]-adjacent-ages, [[infectious-diseases/fever-sepsis]]): what it is - age-specific fever-provoked susceptibility affecting 2-5% of children, benign in the simple form (generalised, under 15 minutes, once in 24 hours) and the small recurrence-risk-versus-epilepsy-risk numbers (low single-digit eventual epilepsy) stated because parents search the internet before they sleep; what to do next time - the fever-medicine-comfort-and-safety-position-and-timing-record-and-when-to-call-ambulance rule with the do-not-restrain-and-do-not-bath-drug-and-alcohol-myths avoided - [[clinical-skills/communication]]; when to admit and investigate - the complex features (focal, prolonged, recurrent, post-ictal deficit, meningism, immunisation-schedule context) and the non-immunised-and-travel-history-differential that changes LP decisions - [[clinical-skills/laboratory-tests]], [[public-health/vaccination-programmes]]; and the safety-net written down - the seizure-action plan for nursery and grandparents and the return-for-consultation triggers, which is the piece that reduces both panic attendance and missed meningitis.**
+The fraction is $1 - 0.5^{3} = 1 - 0.125 = 0.875$, that is 87.5%.
 :::
 :::
 
-::: exercise Handle the enzyme interactions {level=2}
-A 45-year-old on carbamazepine for focal epilepsy starts warfarin for a mechanical valve and takes combined oral contraception; what happens and what do you do?
+::: exercise Match the drug to the mechanism {level=1}
+Match each drug to its main mechanism: levetiracetam, ethosuximide, lamotrigine, lorazepam. Mechanisms: (i) sodium channel blockade; (ii) GABA-A receptor modulation; (iii) SV2A binding; (iv) T-type calcium channel blockade.
 ::: solution
-**Inducer-central-chaos ([[#def-drugs]], [[pharmacology/metabolism-excretion]]): the pharmacology - carbamazepine's CYP3A4-and-2C9 induction and UGT effects lowering warfarin exposure (INR fall and clotting risk), lowering ethinylestradiol-and-progestogen exposure (contraceptive failure) and its own auto-induction and the reverse-direction interactions from azoles-and-macrolides-and-grapefruit that raise carbamazepine to toxicity levels - [[pharmacology/dosing-principles]], [[blood/thrombosis-anticoagulation]]; the fix - switch the antiepileptic to a non-inducing agent (lamotrigine with its own valproate-interaction nuance, or levetiracetam or lacosamide) where seizure control permits, with the cross-taper schedule and the driving-safety-during-switch rules; or, if the valve mandates warfarin and the epilepsy mandates carbamazepine, the intensified INR monitoring and dose-increase expectations documented for whoever inherits the patient; the contraception conversation - the evidence hierarchy showing the enzyme-inducer-appropriate options (the levonorgestrel-IUS and copper IUD and the DMPA-with-caveats list, and the combined-pill-and-POP unreliability) which must be a pre-prescribing discussion, not a pregnancy-visit post-mortem - [[obstetrics-gynaecology/contraception-fertility]], the vitamin-D-and-bone piece in [[endocrine/bone-calcium]]; and the record - an updated interaction alert on the epilepsy and anticoagulation notes both, and the letter to the GP listing what changed on which day because warfarin dosing without that date is guesswork - [[clinical-skills/records-handover]].**
+Levetiracetam, (iii); ethosuximide, (iv); lamotrigine, (i); lorazepam, (ii).
 :::
 :::
 
-::: exercise Run the pregnancy clinic {level=2}
-A 28-year-old on levetiracetam 1000 mg twice daily and lamotrigine 150 mg twice daily, seizure-free 3 years on this regimen, tells you she is 6 weeks pregnant.
+::: exercise Time to a new steady state {level=2 check="100"}
+A drug has an elimination half-life of 40 hours. A second drug that induces its metabolism is started, halving the half-life. Using the rule that a new steady state is effectively reached after five half-lives, how many hours after the inducer has fully taken effect will the first drug reach its new steady state?
 ::: solution
-**Seizure-control-and-teratogen-minimisation-together ([[#def-drugs]], [[obstetrics-gynaecology/pregnancy-complications]]): the evidence and the tone - her absolute risks on this regimen (lamotrigine and levetiracetam among the lower-risk agents; combined therapy adding modest risk) versus the demonstrated harm of generalised tonic-clonic seizures, hypoxia and falls to the fetus, so "stop everything because I saw the leaflet" must be actively argued against and no change made unilaterally - [[pharmacology/adverse-reactions]]; the plan - folic acid at the doses used in this population (the higher-dose practice, with the caveat that the evidence base is weaker than the prescribing), the level-monitoring schedule through pregnancy for lamotrigine's increased clearance (and the post-partum return-to-dose error that causes toxicity), the vitamin-K-and-neonatal-management context for enzyme-inducer-exposed infants (she is not induced, but the plan says why), and the fetal-surveillance-and-delivery-plan discussion with the obstetric team and the named epileptologist; the logistics of birth and life - the sleep-deprivation-versus-breastfeeding trade-off managed with a night-feeder rota (the literature supporting breastfeeding-with-supported-sleep), the antenatal seizure action plan and the do-not-withhold-treatment-in-labour rules, and the breastfeeding-and-sedation-and-safety advice for the neonatal period - [[paediatrics/newborn]], [[obstetrics-gynaecology/labour-birth]], [[obstetrics-gynaecology/postnatal-period]]; and the documentation and the person - the shared-decision record (risks stated, values noted), the teratology-information-service contact offered, and the mood-and-support screen in a patient who has just been handed a double anxiety about drugs and pregnancy - [[psychiatry/mood-disorders]], [[clinical-skills/communication]].**
+The new half-life is $40/2 = 20$ hours. Five half-lives $= 5 \times 20 = 100$ hours, a little over four days. (Enzyme induction itself takes days to weeks to develop fully, so in practice the effect builds up over a longer period, and levels may need to be checked.)
 :::
 :::
 
-::: exercise Set the seizure-action-plan law {level=3}
-You are asked to advise a national transport authority on driving rules after seizures. Present the evidence, the ethics and the practicalities.
+::: exercise Faint or fit? {level=2}
+A 45-year-old man collapsed while jogging, with no warning. His wife saw him fall, go grey, jerk for about 10 seconds, and come round within a minute. His brother died suddenly at 38. What is the most important differential diagnosis, and what should happen next?
 ::: solution
-**Population-safety-versus-individual-mobility ([[#def-drugs]], [[medical-ethics-law/professionalism-regulation]], [[public-health/determinants-inequalities]]): the epidemiology - recurrence probabilities by syndrome-and-seizure-type-and-context (nocturnal-only versus unprovoked daytime, structural lesions, sleep-deprivation patterns) and the crash-risk data showing elevation before treatment and after seizures that the licensing rules encode, with the honest gap between seizure-risk and on-road-risk-modified-by-reporting-and-adherence; the ethical frame - autonomy, employment and rural mobility against third-party risk, the medicalisation of transport policy and the group (epilepsy) versus individual risk assessment debate and the confidentiality-versus-notification duty that jurisdictions solve differently and clinicians must know cold - [[clinical-skills/communication]]; the clinical-practicalities - the seizure-free-period and compliance-with-treatment conditions and the individual-licence and conditional-licence mechanisms and the commercial and taxi licensing layers, with the appeal-and-advocacy-organisation role for the patient who disagrees with their neurologist and the documentation habit ("advised, informed, date") that protects everyone; and the honest reform agenda - the under-reporting of seizures to keep licences as a predictable perverse incentive, the sleep-apnoea-and-insomnia-and-shift-work-precipitant management that reduces risk more cheaply than revocation, and the alternatives-to-driving transport solutions for the rural patient for whom licence loss is job loss - [[public-health/determinants-inequalities]], [[epidemiology-ebm/measuring-disease]].**
+Collapse during exertion without warning, a brief period of jerking and rapid recovery, with a family history of sudden death at a young age, suggests **cardiac syncope** (an arrhythmia or structural heart disease such as hypertrophic cardiomyopathy or a channelopathy) rather than epilepsy. The jerks are convulsive syncope. He needs an urgent ECG and cardiology assessment (echocardiography, ambulatory monitoring, exercise testing, possibly genetic testing), and should not drive or exercise until assessed. Labelling him with epilepsy and starting an antiseizure drug would leave a potentially fatal cause untreated.
+:::
+:::
+
+::: exercise A first seizure clinic {level=2}
+A 30-year-old woman has had one witnessed generalised tonic–clonic seizure from sleep. Examination, blood tests and ECG are normal. Outline her investigations and the advice she needs before she leaves the first appointment.
+::: solution
+Investigations: EEG (ideally including sleep, or sleep-deprived if a routine EEG is normal) to look for epileptiform discharges and a syndrome; MRI of the brain to look for a structural cause. Advice: she must not drive and must tell the DVLA (usually at least 6 months without driving after a first unprovoked seizure, longer if epilepsy is diagnosed); safety measures (showers rather than baths, care with heights and water); what to do if another seizure happens (witness description, video if possible, when to call an ambulance); avoid sleep deprivation and excess alcohol; and information on SUDEP appropriate to her situation. Whether to start treatment depends on her recurrence risk (higher with an abnormal EEG or MRI) and her preferences.
+:::
+:::
+
+::: exercise A case of status {level=3}
+A 72-year-old woman with a history of alcohol dependence is admitted with a seizure that has lasted 12 minutes. She has had two doses of lorazepam. Her glucose is 3.1 mmol/L. Describe your immediate management in order, and explain the reasoning for each step.
+::: solution
+1. Airway, breathing and circulation; high-flow oxygen; monitoring. 2. Treat the hypoglycaemia, but give **intravenous thiamine** before or with glucose, because she is at risk of Wernicke encephalopathy and glucose without thiamine can precipitate it. 3. Do not give a third benzodiazepine: two doses have been given, and more would mainly cause respiratory depression. 4. Give a second-line drug intravenously now (levetiracetam, phenytoin or valproate according to local protocol; valproate is avoided if liver disease is suspected). 5. Call intensive care in case refractory status develops. 6. Look for causes: alcohol withdrawal, hypoglycaemia, electrolytes (sodium, magnesium, calcium), head injury from falls (CT head, as she may have a subdural haematoma), infection, and drug toxicity. 7. Afterwards, monitor for alcohol withdrawal, review nutrition, and plan follow-up.
+:::
+:::
+
+::: exercise Bayes and the EEG {level=3 check="0.77"}
+In a first seizure clinic, 40% of people referred have had an epileptic seizure. A routine EEG shows epileptiform discharges in 50% of people with epilepsy and in 10% of those without (illustrative values). What is the probability that a person with epileptiform discharges has epilepsy? Give the answer to two decimal places, and comment on what a normal EEG means.
+::: solution
+Take 100 people. Of the 40 with epilepsy, $40 \times 0.5 = 20$ have a positive EEG. Of the 60 without epilepsy, $60 \times 0.1 = 6$ have a positive EEG. The positive predictive value is $20 / (20 + 6) = 0.769$, which is 0.77 to two decimal places.
+
+A normal EEG is much less informative: 20 of the 74 people with a normal EEG still have epilepsy ($20/74 \approx 0.27$), so the probability falls only from 0.40 to about 0.27. This is why a normal interictal EEG never excludes epilepsy, and why an EEG ordered for someone whose history suggests syncope, with a low prior probability, produces more false positives than true ones.
 :::
 :::

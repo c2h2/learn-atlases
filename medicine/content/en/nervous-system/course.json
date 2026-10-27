@@ -5,12 +5,12 @@
   "area": "systems",
   "level": 2,
   "order": 160,
-  "tagline": "Sensory and motor systems, stroke, epilepsy, headache, movement disorders, dementia and neuromuscular disease",
-  "summary": "Neurological disease affects how people move, feel, think and communicate. This course links the organisation of the sensory and motor systems to the neurological examination and to the common disorders of the nervous system: stroke, epilepsy, headache, multiple sclerosis, movement disorders, dementia, and diseases of nerve and muscle.",
+  "tagline": "Sensory and motor systems, stroke, epilepsy, headache, movement disorders, neuroinflammation, dementia and neuromuscular disease",
+  "summary": "Neurological disease affects how people move, feel, think and communicate. This course links the organisation of the sensory and motor systems to the neurological examination, and then to the common disorders of the nervous system: stroke, epilepsy, headache, movement disorders, multiple sclerosis and infection, dementia and motor neuron disease, and diseases of nerve and muscle.",
   "overview": [
-    "Neurology localises before it diagnoses: the nervous system's anatomy is a map on which symptoms acquire position, and a lesion's position narrows the diseases possible. This course teaches that method from the hardware up — the sensory and motor systems and their tracts, the cranial nerves, the muscle and nerve junction — and then applies it to the diseases that dominate practice.",
-    "Stroke gets the weight its burden deserves: vascular territories, the thrombolysis and thrombectomy time windows, intracerebral haemorrhage and subarachnoid haemorrhage. Then epilepsy — seizure classification by onset and network, the syndromes of childhood and adulthood, antiseizure drug mechanisms and the emergency of status. Headache and pain chapters cover migraine's vascular–neuronal mechanism, cluster, tension-type and secondary headaches, and the neurobiology of pain with its chronic-pain management principles. Movement disorders follow the basal-ganglia circuit: Parkinson's disease and the atypical parkinsonisms, tremor, dystonia, chorea and tics. Neuroinflammation covers multiple sclerosis and its mimics, optic neuritis, aquaporin-4 disease, and the inflammatory neuropathies; dementia and neurodegeneration covers Alzheimer's, vascular, Lewy-body and frontotemporal dementias, motor neuron disease and the ataxias; and a final chapter on the neuromuscular junction, muscle and peripheral nerve completes the system.",
-    "Every chapter demands the examination that localises — the pattern of weakness, the field defect, the reflex asymmetry, the cerebellar signs — and the investigation that confirms: imaging reading by territory, cerebrospinal fluid profiles, electroencephalography and nerve conduction studies at an interpretable level. Cases with differentials and lesion-localisation exercises are the spine of the course."
+    "Neurology localises before it diagnoses. The anatomy of the nervous system is a map: each symptom and sign places the problem somewhere on it, and knowing where the lesion is narrows down what it could be. The first two lessons teach that method, through the sensory pathways, vision and hearing, the motor pathways, the cranial nerves and the neurological examination.",
+    "The remaining lessons apply it to the conditions that fill neurology clinics and wards. Stroke covers recognition, thrombolysis and thrombectomy, intracerebral and subarachnoid haemorrhage and secondary prevention. Epilepsy covers seizure classification, first seizures, antiseizure medicines and status epilepticus. Headache and pain covers migraine, cluster headache, dangerous secondary headaches and medication overuse. Movement disorders covers Parkinson's disease, tremor, dystonia and chorea. Neuroinflammation covers multiple sclerosis, neuromyelitis optica, autoimmune encephalitis, meningitis and encephalitis. Dementia and neurodegeneration covers the dementias, motor neuron disease, the ataxias and prion disease, and the final lesson covers peripheral nerve, neuromuscular junction and muscle disease.",
+    "Each lesson works through clinical cases with step-by-step solutions, follows current UK guidance (mainly NICE), and ends with exercises that practise localisation, interpretation of tests such as CSF, nerve conduction studies and imaging, and the principles of treatment."
   ],
   "prerequisites": [
     "anatomy",
@@ -19,20 +19,20 @@
     "pharmacology"
   ],
   "outcomes": [
-    "Trace the anatomy and physiology of the sensory and motor pathways and use them to localise a lesion from a neurological examination — cortical, capsular, brainstem, spinal cord, root, plexus, nerve, junction, muscle.",
-    "Recognise and examine the cranial nerves and their syndromes, including the pupil pathways, the causes of double vision, facial weakness and dysphagia.",
-    "Diagnose acute stroke by territory and time, describe the indications, evidence and risks of thrombolysis and thrombectomy, and the secondary-prevention and rehabilitation principles; distinguish ischaemic from intracerebral and subarachnoid haemorrhage.",
-    "Classify seizures and epilepsies, explain the mechanisms of the main antiseizure medications and their key adverse effects and interactions, and manage status epilepticus by staged protocol.",
-    "Diagnose migraine and its variants, cluster and tension-type headache, apply the red-flag criteria for secondary headache, and describe acute and preventive treatment principles including medication-overuse headache.",
-    "Explain the basal-ganglia circuitry and the pathology of Parkinson's disease, the levodopa–carbidopa rationale and motor complications, and recognise the atypical parkinsonian syndromes, tremor, dystonia and choreas.",
-    "Apply dissemination-in-space-and-time logic to multiple sclerosis, recognise optic neuritis, transverse myelitis, Guillain–Barré syndrome and myasthenia gravis, and describe their acute and preventive management principles.",
-    "Differentiate the common dementias clinically, apply reversible-cause screening, and outline motor neuron disease, the cerebellar ataxias and the neuromuscular disorders with their diagnostic tests."
+    "Describe the sensory and motor pathways and use them to localise a lesion from the history and examination: cortex, internal capsule, brainstem, spinal cord, root, plexus, nerve, neuromuscular junction or muscle.",
+    "Examine the cranial nerves and interpret common abnormalities, including visual field defects, pupil abnormalities, double vision, facial weakness, hearing loss and vertigo.",
+    "Recognise acute stroke and TIA, explain the time-dependent benefits and risks of thrombolysis and thrombectomy, distinguish ischaemic stroke from intracerebral and subarachnoid haemorrhage, and outline secondary prevention.",
+    "Classify seizures and epilepsies, assess a first seizure, explain the main antiseizure medicines and their safety issues, including valproate in pregnancy, and manage status epilepticus by a staged protocol.",
+    "Diagnose migraine, tension-type and cluster headache, apply red flags for secondary headache, and describe acute and preventive treatment, including medication overuse headache.",
+    "Explain basal ganglia circuitry, diagnose and manage Parkinson's disease and its motor complications, and recognise atypical parkinsonism, essential tremor, dystonia and Huntington's disease.",
+    "Apply dissemination in space and time to multiple sclerosis, recognise optic neuritis, NMOSD and autoimmune encephalitis, interpret CSF findings, and give immediate treatment for bacterial meningitis and viral encephalitis.",
+    "Assess cognitive impairment, distinguish the common dementias, outline motor neuron disease, ataxia and prion disease, and diagnose and manage neuropathies, Guillain-Barre syndrome, myasthenia gravis and myopathies."
   ],
   "chapters": [
     {
       "slug": "sensory-systems",
       "title": "Sensory systems",
-      "summary": "Somatic sensation, pain, vision and hearing, and how lesions present.",
+      "summary": "Somatic sensation, the spinal sensory pathways, vision and the pupil, hearing and balance, and how lesions present.",
       "requires": [
         "anatomy/neuroanatomy",
         "physiology/synapses"
@@ -41,7 +41,7 @@
     {
       "slug": "motor-systems",
       "title": "Motor systems",
-      "summary": "Upper and lower motor neurones, the basal ganglia and cerebellum, and the neurological examination.",
+      "summary": "Upper and lower motor neurons, the cerebellum, the cranial nerves, the neurological examination and localisation.",
       "requires": [
         "anatomy/neuroanatomy"
       ]
@@ -49,7 +49,7 @@
     {
       "slug": "stroke",
       "title": "Stroke and cerebrovascular disease",
-      "summary": "Ischaemic stroke, intracranial haemorrhage and transient ischaemic attack, and their acute treatment.",
+      "summary": "Ischaemic stroke and TIA, intracerebral and subarachnoid haemorrhage, acute treatment and secondary prevention.",
       "requires": [
         "nervous-system/motor-systems",
         "pathology/haemodynamics"
@@ -58,7 +58,7 @@
     {
       "slug": "epilepsy",
       "title": "Seizures and epilepsy",
-      "summary": "Classification of seizures, causes, investigation and treatment of epilepsy.",
+      "summary": "Seizure classification, first seizures, syncope and its mimics, antiseizure medicines and status epilepticus.",
       "requires": [
         "physiology/membrane-potentials"
       ]
@@ -66,7 +66,7 @@
     {
       "slug": "headache-pain",
       "title": "Headache and chronic pain",
-      "summary": "Migraine and other primary headaches, dangerous headaches and pain pathways.",
+      "summary": "Pain pathways, migraine, cluster and tension-type headache, dangerous headaches and medication overuse.",
       "requires": [
         "nervous-system/sensory-systems"
       ]
@@ -74,7 +74,7 @@
     {
       "slug": "movement-disorders",
       "title": "Movement disorders",
-      "summary": "Parkinson’s disease, tremor and other movement disorders.",
+      "summary": "The basal ganglia, Parkinson's disease, atypical parkinsonism, tremor, dystonia, chorea and tics.",
       "requires": [
         "nervous-system/motor-systems",
         "pharmacology/drug-receptor"
@@ -83,7 +83,7 @@
     {
       "slug": "neuroinflammation",
       "title": "Multiple sclerosis and neuroinflammation",
-      "summary": "Demyelinating disease and autoimmune and infectious inflammation of the nervous system.",
+      "summary": "Multiple sclerosis, NMOSD and MOG antibody disease, autoimmune encephalitis, meningitis and encephalitis.",
       "requires": [
         "nervous-system/motor-systems",
         "immunology/autoimmunity"
@@ -92,7 +92,7 @@
     {
       "slug": "dementia-neurodegeneration",
       "title": "Dementia and neurodegeneration",
-      "summary": "Alzheimer’s disease, other dementias and motor neurone disease.",
+      "summary": "Assessment of dementia, Alzheimer's and other dementias, motor neuron disease, ataxias and prion disease.",
       "requires": [
         "nervous-system/motor-systems"
       ]
@@ -100,7 +100,7 @@
     {
       "slug": "neuromuscular",
       "title": "Peripheral nerve and muscle disease",
-      "summary": "Neuropathies, myasthenia gravis and myopathies.",
+      "summary": "Neuropathies, nerve conduction studies, Guillain-Barre syndrome, myasthenia gravis, myopathies and genetic muscle disease.",
       "requires": [
         "nervous-system/motor-systems",
         "physiology/synapses"
@@ -111,23 +111,23 @@
     {
       "year": 1817,
       "title": "An essay on the shaking palsy",
-      "detail": "London surgeon James Parkinson describes six cases of paralytic agitans with rest tremor, flexed posture and festination — a clinical entity that would wait until 1912 for the Lewy bodies that define it and 1960 for the dopamine explanation.",
+      "detail": "The London physician James Parkinson described six people with rest tremor, flexed posture and a hurrying gait, which he called paralysis agitans. Friedrich Lewy described the inclusions now named after him in 1912, and the loss of brain dopamine was shown in 1960.",
       "people": [
         "James Parkinson"
       ]
     },
     {
       "year": 1861,
-      "title": "We speak with the left hemisphere",
-      "detail": "Paul Broca examines the brain of Leborgne ('Tan'), a patient with two decades of expressive aphasia and a frontal lesion, and locates speech production in the left inferior frontal gyrus — the first widely accepted cortical function localisation, and the founding gesture of clinical neuroscience.",
+      "title": "Speech and the left frontal lobe",
+      "detail": "Paul Broca examined the brain of a patient who for many years could say only the syllable 'tan', and found a lesion in the left inferior frontal gyrus. It was the first widely accepted localisation of a function to a region of cortex.",
       "people": [
         "Paul Broca"
       ]
     },
     {
       "year": 1870,
-      "title": "Stimulating the motor map",
-      "detail": "Gustav Fritsch and Eduard Hitzig's electrical stimulation of a dog's cortex maps the motor areas; combined with Hughlings Jackson's clinical reasoning from the epileptic march, it gives the motor homunculus its evidence base.",
+      "title": "Electrical stimulation of the motor cortex",
+      "detail": "Gustav Fritsch and Eduard Hitzig showed that electrical stimulation of a dog's cortex caused movements of the opposite side of the body. With John Hughlings Jackson's study of seizures that march from one body part to the next, this established that the motor cortex is organised as a map.",
       "people": [
         "Gustav Fritsch",
         "Eduard Hitzig",
@@ -137,17 +137,17 @@
     {
       "year": 1891,
       "title": "The neuron doctrine",
-      "detail": "Wilhelm Waldeyer names the neuron and, synthesising Camillo Golgi's silver stain and Santiago Ramón y Cajal's drawings, argues that the nervous system is a network of discrete cells communicating across gaps — the structural basis of everything from synaptic transmission to stroke deficits.",
+      "detail": "Wilhelm Waldeyer coined the term neuron and, drawing on Santiago Ramon y Cajal's studies with Camillo Golgi's silver stain, argued that the nervous system is made of separate cells that communicate across gaps rather than a continuous network.",
       "people": [
         "Wilhelm Waldeyer",
-        "Santiago Ramón y Cajal",
+        "Santiago Ramon y Cajal",
         "Camillo Golgi"
       ]
     },
     {
       "year": 1924,
       "title": "The human electroencephalogram",
-      "detail": "Hans Berger, a psychiatrist in Jena, records the human brain's electrical rhythm through the intact skull — the alpha rhythm and the sleep spindle — after years of being dismissed; the technique becomes the workhorse of epilepsy and intensive-care neurology.",
+      "detail": "Hans Berger, a psychiatrist in Jena, first recorded the electrical activity of the human brain through the scalp in 1924 and published his findings, including the alpha rhythm, in 1929. EEG became a basic tool in epilepsy and intensive care.",
       "people": [
         "Hans Berger"
       ]
@@ -155,15 +155,16 @@
     {
       "year": 1937,
       "title": "The cortical homunculus",
-      "detail": "Wilder Penfield's direct stimulation of exposed cortex during epilepsy surgery at the Montreal Neurological Institute maps sensory and motor representations as orderly, distorted body arrays — and with it, the safe boundaries of resection.",
+      "detail": "Wilder Penfield and Edwin Boldrey published maps of the sensory and motor cortex made by stimulating the brains of awake patients during epilepsy surgery in Montreal, showing an orderly but distorted representation of the body.",
       "people": [
-        "Wilder Penfield"
+        "Wilder Penfield",
+        "Edwin Boldrey"
       ]
     },
     {
       "year": 1952,
-      "title": "The ionic mechanism of the nerve impulse",
-      "detail": "Alan Hodgkin and Andrew Huxley, using the squid giant axon and the voltage clamp, quantify the sodium and potassium conductance changes underlying the action potential — neurophysiology becomes biophysics, and anaesthetic and antiseizure pharmacology gain their molecular vocabulary.",
+      "title": "The ionic basis of the nerve impulse",
+      "detail": "Alan Hodgkin and Andrew Huxley used the squid giant axon and the voltage clamp to show how sodium and potassium currents generate the action potential. Their work explains how many anaesthetics and antiseizure medicines act.",
       "people": [
         "Alan Hodgkin",
         "Andrew Huxley"
@@ -171,8 +172,8 @@
     },
     {
       "year": 1967,
-      "title": "L-dopa for Parkinson's disease",
-      "detail": "Ole Hornykiewicz's demonstration of striatal dopamine deficiency in parkinsonian brains becomes therapy when George Cotzias pushes high-dose levodopa in the late 1960s; dopamine replacement transforms the wards and founds modern movement-disorder practice.",
+      "title": "Levodopa for Parkinson's disease",
+      "detail": "After Ole Hornykiewicz and colleagues showed dopamine deficiency in the striatum of people with Parkinson's disease, George Cotzias showed that gradually increased oral levodopa produced large, sustained benefit, the basis of treatment ever since.",
       "people": [
         "Ole Hornykiewicz",
         "George Cotzias"
@@ -180,8 +181,8 @@
     },
     {
       "year": 1995,
-      "title": "Time is brain",
-      "detail": "The NINDS rt-PA trial shows that intravenous alteplase within three hours of onset improves stroke outcome; later trials extend the window with imaging selection and prove thrombectomy for large-vessel occlusion (2015), making acute stroke the neurological emergency with a clock and a treatment.",
+      "title": "Thrombolysis for acute stroke",
+      "detail": "The NINDS rt-PA trial showed that intravenous alteplase given within three hours of ischaemic stroke improved outcome. Later trials extended the time window and, in 2015, proved the benefit of thrombectomy for large vessel occlusion.",
       "people": [
         "NINDS rt-PA Stroke Study Group"
       ]
@@ -189,25 +190,67 @@
   ],
   "references": [
     {
-      "title": "The Nervous Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the neuron and the brain.",
-      "slug": "ref1"
+      "authors": "Charles Clarke, Robin Howard, Martin Rossor and Simon Shorvon (eds)",
+      "year": 2016,
+      "title": "Neurology: A Queen Square Textbook, 2nd edition",
+      "note": "A comprehensive UK textbook of clinical neurology from the National Hospital for Neurology and Neurosurgery.",
+      "slug": "queen-square"
     },
     {
-      "title": "The Nervous Guide",
-      "authors": "Textbook",
+      "authors": "Allan H. Ropper, Martin A. Samuels, Joshua P. Klein and Sashank Prasad",
+      "year": 2023,
+      "title": "Adams and Victor's Principles of Neurology, 12th edition",
+      "note": "A detailed reference on the clinical features and mechanisms of neurological disease.",
+      "slug": "adams-victor"
+    },
+    {
+      "authors": "Geraint Fuller",
       "year": 2019,
-      "note": "A rigorous treatment of the neuron and the system.",
-      "slug": "ref2"
+      "title": "Neurological Examination Made Easy, 6th edition",
+      "note": "A short practical guide to performing and interpreting the neurological examination.",
+      "slug": "fuller"
     },
     {
-      "title": "Clinical Nervous",
-      "authors": "Reference",
+      "authors": "Eric R. Kandel, John D. Koester, Sarah H. Mack and Steven A. Siegelbaum (eds)",
+      "year": 2021,
+      "title": "Principles of Neural Science, 6th edition",
+      "note": "The standard neuroscience text, covering the sensory and motor systems that underlie the clinical lessons.",
+      "slug": "kandel"
+    },
+    {
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2019,
+      "title": "Stroke and transient ischaemic attack in over 16s: diagnosis and initial management (NG128)",
+      "note": "UK guidance on recognition, imaging, thrombolysis, thrombectomy and early management of stroke and TIA; updated since publication.",
+      "slug": "nice-ng128"
+    },
+    {
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2022,
+      "title": "Epilepsies in children, young people and adults (NG217)",
+      "note": "UK guidance on diagnosis, antiseizure medicines and status epilepticus.",
+      "slug": "nice-ng217"
+    },
+    {
+      "authors": "Headache Classification Committee of the International Headache Society",
       "year": 2018,
-      "note": "A practical treatment of the brain and the practice.",
-      "slug": "ref3"
+      "title": "The International Classification of Headache Disorders, 3rd edition (Cephalalgia 38:1-211)",
+      "note": "The diagnostic criteria for migraine, cluster headache, medication overuse headache and other headaches.",
+      "slug": "ichd3"
+    },
+    {
+      "authors": "Alan J. Thompson, Brenda L. Banwell, Frederik Barkhof et al.",
+      "year": 2018,
+      "title": "Diagnosis of multiple sclerosis: 2017 revisions of the McDonald criteria (Lancet Neurology 17:162-173)",
+      "note": "The diagnostic criteria for MS, revised again in 2024 (published 2025).",
+      "slug": "mcdonald-2017"
+    },
+    {
+      "authors": "National Institute for Health and Care Excellence",
+      "year": 2018,
+      "title": "Dementia: assessment, management and support for people living with dementia and their carers (NG97)",
+      "note": "UK guidance on diagnosing dementia, drug treatment and care.",
+      "slug": "nice-ng97"
     }
   ],
   "next": [
