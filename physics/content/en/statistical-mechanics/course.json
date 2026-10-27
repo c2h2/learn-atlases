@@ -8,21 +8,24 @@
   "tagline": "Thermodynamics derived from counting states",
   "summary": "The microcanonical and canonical ensembles, the classical ideal gas, quantum statistics, Bose and Fermi gases, and phase transitions.",
   "overview": [
-    "Thermodynamics says what entropy does. Statistical mechanics says what entropy is: the logarithm of the number of microscopic states consistent with a macroscopic description. From that identification the ensembles, the laws of the earlier course, and the properties of ideal gases, quantum and classical, are calculations rather than postulates.",
-    "The microcanonical ensemble is counting at fixed energy. The canonical ensemble, at fixed temperature, is the one used for almost every application, and the partition function is its generating object. The classical ideal gas, the equipartition theorem and the Gibbs paradox sit in between. Quantum statistics then distinguishes bosons and fermions, with black-body radiation, electrons in a metal, and Bose–Einstein condensation as the three examples everyone must be able to compute. The last chapter is an introduction to interacting systems and phase transitions, at the level of mean-field theory.",
-    "The thermodynamic limit and the difference between a most probable value and a mean value are worth watching. For the systems in this course they agree; the fluctuations tell you by how much."
+    "Thermodynamics says what entropy does. Statistical mechanics says what entropy is: Boltzmann's $S = k_B\\ln\\Omega$, the logarithm of the number of microscopic states compatible with a macroscopic description. From that identification, and one postulate about probabilities, the laws of thermodynamics become theorems, and the properties of gases, solids, radiation and magnets become calculations rather than measurements.",
+    "The course begins by counting exactly: a two-state paramagnet and the Einstein solid, two solids sharing energy, and the definitions of entropy and temperature that follow. The canonical ensemble, derived from a system in contact with a reservoir, replaces counting by the partition function, which generates every thermodynamic quantity and proves the equipartition theorem. The classical ideal gas then yields the Sackur–Tetrode entropy and the Maxwell–Boltzmann distribution, and the Gibbs paradox shows why identical particles must be counted with care. Quantum statistics, through the grand canonical ensemble, gives the Bose–Einstein and Fermi–Dirac distributions, which are applied to black-body radiation, the Debye solid, electrons in metals and white dwarfs, and Bose–Einstein condensation. The last chapter treats interacting systems: the Ising model, mean-field theory, critical exponents, Onsager's exact result and Monte Carlo simulation.",
+    "Two ideas are worth watching throughout. The first is the thermodynamic limit: macroscopic quantities have fluctuations of relative size $1/\\sqrt N$, which is why the ensembles agree and why the second law is, in practice, certain. The second is the parameter $n\\lambda^3$, the number of particles per cube of thermal wavelength, which decides whether classical counting is good enough. Every numerical result in the course is checked against fundamental constants in the 2019 SI, and many against measured data."
   ],
   "prerequisites": [
     "thermodynamics",
     "quantum-1"
   ],
   "outcomes": [
-    "Relate entropy to the number of microstates and derive the thermodynamic identity from the microcanonical ensemble.",
-    "Use the canonical partition function to compute free energy, energy, entropy and heat capacity.",
-    "Derive the Sackur–Tetrode entropy of a classical ideal gas and resolve the Gibbs paradox.",
-    "State the Fermi–Dirac and Bose–Einstein distributions and the assumptions behind them.",
-    "Compute the properties of a photon gas, a degenerate Fermi gas and an ideal Bose gas below and above condensation.",
-    "Explain a phase transition in mean-field theory, including the Ising model."
+    "Count the microstates of simple models exactly, and use Stirling's approximation to compute multiplicities of macroscopic systems.",
+    "Define entropy as $k_B\\ln\\Omega$ and temperature, pressure and chemical potential as derivatives of it, and explain the second law as a statement of overwhelming probability.",
+    "Derive the Boltzmann distribution from a system in contact with a reservoir, and compute free energy, energy, entropy and heat capacity from a partition function.",
+    "Prove the equipartition theorem, explain when it fails, and relate energy fluctuations to the heat capacity.",
+    "Derive the ideal-gas law, the Sackur–Tetrode entropy and the Maxwell–Boltzmann distribution from the partition function, and resolve the Gibbs paradox.",
+    "Derive the Fermi–Dirac and Bose–Einstein distributions from the grand canonical ensemble and state when they reduce to the classical limit.",
+    "Compute the Planck spectrum and the Stefan–Boltzmann constant, the Debye heat capacity, the properties of a degenerate Fermi gas, and the Bose–Einstein condensation temperature.",
+    "Solve the one-dimensional Ising model, derive mean-field theory and its critical exponents, and compare them with Onsager's exact results.",
+    "Write and interpret a Metropolis Monte Carlo simulation of the Ising model."
   ],
   "chapters": [
     {
@@ -78,42 +81,59 @@
   ],
   "history": [
     {
-      "year": 1860,
-      "title": "Maxwell’s distribution",
-      "detail": "Maxwell derived the distribution of speeds in a gas at equilibrium from the assumption that the components of velocity are independent.",
-      "people": [
-        "James Clerk Maxwell"
-      ]
-    },
-    {
-      "year": 1877,
-      "title": "Boltzmann’s counting",
-      "detail": "Boltzmann’s paper of 1877 counted the ways of distributing energy among molecules and identified entropy with that count.",
+      "year": 1872,
+      "title": "Boltzmann's H-theorem",
+      "detail": "Ludwig Boltzmann introduced his kinetic equation for dilute gases and proved that a functional of the velocity distribution can only decrease under collisions.",
       "people": [
         "Ludwig Boltzmann"
       ]
     },
     {
+      "year": 1877,
+      "title": "Entropy as a count",
+      "detail": "Answering Loschmidt's reversibility objection, Boltzmann counted the ways of distributing energy among molecules and identified entropy with the logarithm of that number.",
+      "people": [
+        "Ludwig Boltzmann"
+      ]
+    },
+    {
+      "year": 1900,
+      "title": "Planck's radiation law",
+      "detail": "Max Planck derived the black-body spectrum using energy elements hν, wrote the entropy as S = k log W and introduced the constants h and k.",
+      "people": [
+        "Max Planck"
+      ]
+    },
+    {
       "year": 1902,
-      "title": "Gibbs’s ensembles",
-      "detail": "Josiah Willard Gibbs’s Elementary Principles in Statistical Mechanics defined the canonical and grand canonical ensembles in essentially their modern form.",
+      "title": "Gibbs's ensembles",
+      "detail": "Josiah Willard Gibbs's Elementary Principles in Statistical Mechanics defined the microcanonical, canonical and grand canonical ensembles in essentially their modern form.",
       "people": [
         "Josiah Willard Gibbs"
       ]
     },
     {
       "year": 1924,
-      "title": "Bose and Einstein",
-      "detail": "Satyendra Nath Bose’s derivation of Planck’s law, extended by Einstein to material particles, began quantum statistics for bosons.",
+      "title": "Bose–Einstein statistics",
+      "detail": "Satyendra Nath Bose derived Planck's law by counting photons as indistinguishable; Einstein extended the counting to atoms in 1924–25 and predicted condensation.",
       "people": [
         "Satyendra Nath Bose",
         "Albert Einstein"
       ]
     },
     {
+      "year": 1925,
+      "title": "The Ising chain",
+      "detail": "Ernst Ising published his solution of the one-dimensional version of the lattice model proposed by Wilhelm Lenz, finding no phase transition.",
+      "people": [
+        "Ernst Ising",
+        "Wilhelm Lenz"
+      ]
+    },
+    {
       "year": 1926,
       "title": "Fermi–Dirac statistics",
-      "detail": "Fermi and, independently, Dirac applied Pauli’s exclusion principle to a gas and obtained the distribution used for electrons in metals.",
+      "detail": "Enrico Fermi and, independently, Paul Dirac applied the exclusion principle to an ideal gas and obtained the distribution used for electrons in metals and stars.",
       "people": [
         "Enrico Fermi",
         "Paul Dirac"
@@ -121,10 +141,32 @@
     },
     {
       "year": 1944,
-      "title": "Onsager’s solution",
-      "detail": "Lars Onsager solved the two-dimensional Ising model exactly, showing a phase transition with a logarithmically diverging specific heat.",
+      "title": "Onsager's solution",
+      "detail": "Lars Onsager solved the two-dimensional Ising model exactly, showing a phase transition at a temperature where the specific heat diverges logarithmically.",
       "people": [
         "Lars Onsager"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "The Metropolis algorithm",
+      "detail": "Nicholas Metropolis, Arianna and Marshall Rosenbluth, and Augusta and Edward Teller published the Monte Carlo method for sampling the Boltzmann distribution, run on the MANIAC computer at Los Alamos.",
+      "people": [
+        "Nicholas Metropolis",
+        "Arianna W. Rosenbluth",
+        "Marshall N. Rosenbluth",
+        "Augusta H. Teller",
+        "Edward Teller"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "Bose–Einstein condensates",
+      "detail": "Eric Cornell and Carl Wieman at JILA condensed rubidium-87 atoms, and Wolfgang Ketterle's group at MIT condensed sodium atoms; the three shared the 2001 Nobel Prize in Physics.",
+      "people": [
+        "Eric Cornell",
+        "Carl Wieman",
+        "Wolfgang Ketterle"
       ]
     }
   ],
@@ -132,32 +174,44 @@
     {
       "title": "An Introduction to Thermal Physics",
       "authors": "Daniel V. Schroeder",
-      "year": 2021,
-      "note": "Second edition. The statistical half of the book is the friendliest entry to the ensembles."
+      "year": 2000,
+      "note": "Addison Wesley Longman; reissued unchanged by Oxford University Press in 2021. The friendliest entry to counting states, the Einstein solid and the ensembles, with excellent problems."
     },
     {
-      "title": "Statistical Mechanics",
-      "authors": "R. K. Pathria and Paul D. Beale",
-      "year": 2011,
-      "note": "Third edition. The standard detailed reference for ideal quantum gases."
-    },
-    {
-      "title": "Statistical Physics of Particles",
-      "authors": "Mehran Kardar",
-      "year": 2007,
-      "note": "A modern graduate course. The early chapters are a clean restatement of the undergraduate theory."
+      "title": "Fundamentals of Statistical and Thermal Physics",
+      "authors": "F. Reif",
+      "year": 1965,
+      "note": "McGraw-Hill. A thorough, careful classic; especially good on probability, the ensembles and fluctuations."
     },
     {
       "title": "Thermal Physics",
       "authors": "Charles Kittel and Herbert Kroemer",
       "year": 1980,
-      "note": "Second edition. Short and demanding; the problems are famous."
+      "note": "Second edition, W. H. Freeman. Short and demanding, built on orbitals and the Gibbs factor; the problems are famous."
+    },
+    {
+      "title": "Concepts in Thermal Physics",
+      "authors": "Stephen J. Blundell and Katherine M. Blundell",
+      "year": 2010,
+      "note": "Second edition, Oxford University Press. Short chapters with many applications, including astrophysics and the photon gas."
+    },
+    {
+      "title": "Statistical Mechanics",
+      "authors": "R. K. Pathria and Paul D. Beale",
+      "year": 2021,
+      "note": "Fourth edition, Academic Press. The standard detailed reference for ideal quantum gases, the Ising model and critical phenomena."
+    },
+    {
+      "title": "Statistical Physics of Particles",
+      "authors": "Mehran Kardar",
+      "year": 2007,
+      "note": "Cambridge University Press. A modern graduate course; its companion, Statistical Physics of Fields, covers critical phenomena and the renormalisation group."
     },
     {
       "title": "Statistical Mechanics: Entropy, Order Parameters, and Complexity",
       "authors": "James P. Sethna",
       "year": 2021,
-      "note": "Second edition. The best next reading on phase transitions, and free online from the author."
+      "note": "Second edition, Oxford University Press. The best next reading on phase transitions and universality, with superb exercises; free online from the author."
     }
   ],
   "next": [
