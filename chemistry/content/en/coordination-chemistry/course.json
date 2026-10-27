@@ -7,12 +7,27 @@
   "order": 140,
   "tagline": "Complexes and isomerism, crystal and ligand field theory, electronic spectra, magnetism, stability, mechanisms, the d and f blocks and metals in biology",
   "summary": "Transition-metal complexes give us pigments, catalysts, magnets and the active sites of many enzymes. This course explains the structure and bonding of complexes with crystal field and ligand field theory, interprets their spectra and magnetism, studies their stability and reaction mechanisms, and surveys the d- and f-block elements and the roles of metals in biology.",
-  "overview": [],
+  "overview": [
+    "Coordination chemistry is the chemistry of a metal atom or ion surrounded by ligands: molecules or anions that donate electron pairs to it. Almost every compound of the transition metals is a coordination compound, and so are the active sites of haemoglobin, chlorophyll, vitamin $\\mathrm{B_{12}}$ and a third of all enzymes, the pigments of paints and gemstones, the catalysts of industry, the MRI contrast agents and platinum drugs of medicine, and the reagents of complexometric analysis. The subject asks three questions about such compounds: what holds them together and gives them their shape, colour and magnetism; how stable they are; and how they react.",
+    "The course is built in three parts. The first five chapters develop the theory: Werner's coordination theory, isomerism and nomenclature; crystal field theory, which explains the splitting of the $d$ orbitals, high- and low-spin states and the Jahn–Teller effect; ligand field and molecular orbital theory, which adds σ and π bonding, the spectrochemical series and the 18-electron rule; electronic spectra interpreted with term symbols and Tanabe–Sugano diagrams; and magnetic susceptibility, spin-only moments, orbital contributions and spin crossover. The next two chapters treat thermodynamics and kinetics: stability constants, the chelate and macrocyclic effects, the Irving–Williams series and hard–soft matching; then substitution mechanisms, the trans effect and inner- and outer-sphere electron transfer. The last three chapters apply all of this to the descriptive chemistry of the $d$ block, to the lanthanides and actinides, and to metals in biology and medicine.",
+    "What makes the subject hard is that several energy scales compete — the ligand field splitting $\\Delta_\\mathrm{o}$, electron pairing and repulsion, spin–orbit coupling, bond energies and the thermal energy $k_\\mathrm{B}T$ — and the answer to almost every question depends on which one wins. A $d^6$ ion is diamagnetic or strongly paramagnetic depending on whether $\\Delta_\\mathrm{o}$ exceeds the pairing energy; a complex is inert or labile depending on how much ligand field stabilisation its transition state loses; a lanthanide's magnetism follows $J$ rather than spin because spin–orbit coupling beats the ligand field. The lessons make these comparisons quantitative, with numbers from spectra, susceptibilities and stability constants checked in worked examples.",
+    "Work with a small set of key complexes until they are familiar — $\\mathrm{[Ti(H_2O)_6]^{3+}}$, $\\mathrm{[Cr(H_2O)_6]^{3+}}$, $\\mathrm{[Fe(H_2O)_6]^{2+}}$ and $\\mathrm{[Fe(CN)_6]^{4-}}$, $\\mathrm{[Co(NH_3)_6]^{3+}}$, $\\mathrm{[Ni(NH_3)_6]^{2+}}$, $\\mathrm{[Cu(H_2O)_6]^{2+}}$, $\\mathrm{[PtCl_2(NH_3)_2]}$, $\\mathrm{[Cr(CO)_6]}$ — and for each new compound ask the same questions in the same order: charge, oxidation state, $d^n$ count, geometry, spin state, CFSE. Distinguish carefully between thermodynamic stability and kinetic inertness, which the language of \"strongly bound\" constantly confuses."
+  ],
   "prerequisites": [
     "main-group",
     "quantum-chemistry"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Name and write formulas of coordination compounds, determine the oxidation state, d-electron count and coordination number of the metal, and enumerate structural and stereoisomers, including enantiomers.",
+    "Derive the splitting of the d orbitals in octahedral, tetrahedral and square-planar fields, calculate crystal field stabilisation energies and predict high- or low-spin ground states and Jahn–Teller distortions.",
+    "Construct σ and π molecular orbital diagrams for octahedral complexes from ligand group orbitals, explain the spectrochemical series in terms of π donation and back-donation, and apply the 18-electron rule within its range of validity.",
+    "Derive free-ion terms from microstates, assign the electronic spectra of complexes with Tanabe–Sugano diagrams, extract Δo and the Racah parameter B, and predict band intensities from the spin and Laporte selection rules.",
+    "Calculate effective magnetic moments from susceptibility data, distinguish spin-only from orbitally contributing ground states, and analyse spin-crossover equilibria thermodynamically.",
+    "Calculate speciation from stepwise and overall formation constants, and explain the chelate, macrocyclic and Irving–Williams effects and hard–soft selectivity quantitatively.",
+    "Propose substitution mechanisms (D, A, I) from rate laws and activation volumes, predict inert and labile behaviour from d-electron configuration, use the trans effect in synthesis, and apply Marcus theory to outer-sphere electron transfer.",
+    "Interpret periodic trends in the d and f blocks — oxidation states, the lanthanide contraction, redox potentials, metal–metal bonding, free-ion magnetism and luminescence of the lanthanides — and use them to rationalise the chemistry of key compounds.",
+    "Explain the coordination chemistry of oxygen transport, biological electron transfer, metalloenzymes and metal-based drugs and imaging agents."
+  ],
   "chapters": [
     {
       "slug": "coordination-compounds",
@@ -98,8 +113,132 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1893,
+      "title": "Werner's coordination theory",
+      "detail": "Alfred Werner proposed in the Zeitschrift für anorganische Chemie that metals have a fixed coordination number with a definite geometry, explaining the cobalt and platinum ammines; his resolution of chiral cobalt complexes in 1911 and of the carbon-free hexol in 1914 confirmed the octahedron, and he received the Nobel Prize in 1913.",
+      "people": [
+        "Alfred Werner"
+      ]
+    },
+    {
+      "year": 1929,
+      "title": "Bethe's crystal field theory",
+      "detail": "Hans Bethe's paper 'Termaufspaltung in Kristallen' in Annalen der Physik used group theory to show how the energy levels of an ion split in a crystal of given symmetry, the foundation of crystal and ligand field theory.",
+      "people": [
+        "Hans Bethe"
+      ]
+    },
+    {
+      "year": 1937,
+      "title": "The Jahn–Teller theorem",
+      "detail": "Hermann Jahn and Edward Teller proved that a non-linear molecule in an orbitally degenerate state distorts to remove the degeneracy, explaining the tetragonal structures of copper(II) and high-spin manganese(III) compounds.",
+      "people": [
+        "Hermann Jahn",
+        "Edward Teller"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "Bjerrum's stepwise formation constants",
+      "detail": "Jannik Bjerrum's thesis 'Metal Ammine Formation in Aqueous Solution' introduced stepwise formation constants and methods for measuring them, the basis of the quantitative study of complex stability.",
+      "people": [
+        "Jannik Bjerrum"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "Labile and inert complexes",
+      "detail": "Henry Taube's review in Chemical Reviews related the rates of ligand substitution to d-electron configuration; with his demonstration of inner-sphere electron transfer in 1953–54 it founded the study of inorganic reaction mechanisms, recognised by the 1983 Nobel Prize.",
+      "people": [
+        "Henry Taube"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "Tanabe–Sugano diagrams",
+      "detail": "Yukito Tanabe and Satoru Sugano published complete energy-level diagrams for d2–d8 ions in octahedral fields in the Journal of the Physical Society of Japan, still the standard tool for assigning the spectra of complexes.",
+      "people": [
+        "Yukito Tanabe",
+        "Satoru Sugano"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "Marcus theory of electron transfer",
+      "detail": "Rudolph Marcus published his theory relating the rate of outer-sphere electron transfer to the driving force and the reorganisation energy, later extended to the cross relation and the inverted region; he received the 1992 Nobel Prize.",
+      "people": [
+        "Rudolph A. Marcus"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "The metal–metal quadruple bond",
+      "detail": "F. Albert Cotton and co-workers explained the very short, eclipsed Re–Re bond of [Re2Cl8]2- as a quadruple bond containing a δ component.",
+      "people": [
+        "F. Albert Cotton"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "Biological activity of cisplatin",
+      "detail": "Barnett Rosenberg and co-workers reported in Nature that platinum complexes formed from electrodes inhibited bacterial cell division, leading to cisplatin, approved as an anticancer drug in 1978.",
+      "people": [
+        "Barnett Rosenberg"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Inorganic Chemistry",
+      "authors": "Catherine E. Housecroft and Alan G. Sharpe",
+      "year": 2018,
+      "note": "Fifth edition. Clear, well-illustrated coverage of all the topics of this course, with good chapters on d-block chemistry, the f block and bioinorganic chemistry."
+    },
+    {
+      "title": "Inorganic Chemistry",
+      "authors": "Mark Weller, Tina Overton, Jonathan Rourke and Fraser Armstrong",
+      "year": 2018,
+      "note": "Seventh edition of 'Shriver and Atkins'. Rigorous treatment of ligand field theory, electronic spectra and reaction mechanisms, and a strong biological inorganic chemistry chapter."
+    },
+    {
+      "title": "Inorganic Chemistry",
+      "authors": "Gary L. Miessler, Paul J. Fischer and Donald A. Tarr",
+      "year": 2014,
+      "note": "Fifth edition. Detailed use of group theory to build ligand group orbitals and MO diagrams, and many worked problems on spectra and the angular overlap model."
+    },
+    {
+      "title": "Inorganic Chemistry: Principles of Structure and Reactivity",
+      "authors": "James E. Huheey, Ellen A. Keiter and Richard L. Keiter",
+      "year": 1993,
+      "note": "Fourth edition. Classic source for pairing energies, Jørgensen's f and g factors, CFSE tables and thermodynamic arguments."
+    },
+    {
+      "title": "Ligand Field Theory and Its Applications",
+      "authors": "Brian N. Figgis and Michael A. Hitchman",
+      "year": 2000,
+      "note": "The advanced reference for ligand field theory, the angular overlap model, magnetism and spectra; for students who want derivations in full."
+    },
+    {
+      "title": "Inorganic Electronic Spectroscopy",
+      "authors": "A. B. P. Lever",
+      "year": 1984,
+      "note": "Second edition. The standard monograph on d–d and charge-transfer spectra, with Tanabe–Sugano analysis of many complexes."
+    },
+    {
+      "title": "Bioinorganic Chemistry",
+      "authors": "Ivano Bertini, Harry B. Gray, Stephen J. Lippard and Joan Selverstone Valentine",
+      "year": 1994,
+      "note": "Concise, authoritative introduction to metals in biology by leading researchers; a good companion to the last chapter."
+    },
+    {
+      "title": "Mechanisms of Inorganic Reactions",
+      "authors": "Fred Basolo and Ralph G. Pearson",
+      "year": 1967,
+      "note": "Second edition of the classic text that established substitution mechanisms, the trans effect and crystal field activation energies."
+    }
+  ],
   "next": [
     "organometallics-catalysis"
   ]
