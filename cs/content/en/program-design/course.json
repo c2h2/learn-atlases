@@ -7,11 +7,25 @@
   "order": 20,
   "tagline": "Abstraction and specifications, abstract data types, classes and objects, inheritance, higher-order functions, iterators, types and design patterns",
   "summary": "Once programs grow beyond a page, design matters more than syntax. This course teaches how to structure programs: abstraction and specifications, abstract data types, classes and objects, inheritance and polymorphism, functional programming with higher-order functions and immutable data, iterators, types and interfaces, and modules and design patterns.",
-  "overview": [],
+  "overview": [
+    "Once programs grow beyond a page, the hard part is no longer getting each line right but organising the whole so that people can understand it, check it and change it. This course is about that organisation. Its central idea is abstraction: each part of a program — a function, a data type, a class, a module — is used through a short, precise description of what it does, so that its implementation can be read, verified and replaced on its own. Everything else in the course is a way of drawing such boundaries well and of reasoning across them.",
+    "The chapters build the idea up in layers, in Python. Chapter 1 writes specifications for functions, compares them and proves code correct against them with Hoare's logic; chapter 2 specifies whole data types, with representation invariants and abstraction functions; chapters 3 and 4 implement them as classes, with inheritance, dynamic dispatch and the substitution principle that decides when a subclass is correct. Chapters 5 to 7 turn to the functional side: functions as values, map, filter and folds with their algebraic laws, closures and decorators, pure functions and persistent data reasoned about by substitution and structural induction, and lazy iterators and generators. Chapter 8 adds static types, generics, protocols and variance, and chapter 9 divides programs into modules by information hiding and collects the design patterns met along the way.",
+    "What makes the subject hard is that design decisions pay off, or fail, later: a boundary drawn in the wrong place costs nothing until the program has to change. The way to learn it is to make the consequences visible early — write the specification and the representation invariant before the code, ask of every subclass whether each client of the base class would stay correct, and for every module name the decision it hides. Every program in the lessons runs as shown, the type-checker output is real, and the exercises mix short predictions of what code does with proofs and small designs."
+  ],
   "prerequisites": [
     "programming-1"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Write requires, modifies and effects clauses for functions, decide whether one specification refines another, and prove simple code correct with Hoare triples and loop invariants.",
+    "Design abstract data types with explicit representation invariants and abstraction functions, and prove that each operation preserves the invariant and implements its specification.",
+    "Implement value and entity types as Python classes with constructors, properties and special methods, respecting the equality and hashing contract and avoiding representation exposure.",
+    "Use inheritance and dynamic dispatch correctly, compute a method resolution order, and judge with the Liskov substitution principle when a subclass is a behavioural subtype and when composition is better.",
+    "Write and reason about higher-order functions, closures and decorators, and prove algebraic laws such as map fusion and the agreement of folds over a monoid.",
+    "Program with pure functions and immutable, persistent data, and prove properties of recursive functions by structural induction.",
+    "Implement the iteration protocol and generators, and build lazy pipelines whose cost and memory use you can predict.",
+    "Annotate Python programs with types, generics and protocols, interpret a type checker's output, and explain covariance, contravariance and invariance.",
+    "Decompose a program into modules by information hiding, analyse coupling, cohesion and dependency cycles, and apply the strategy, observer and adapter patterns where they solve a real problem."
+  ],
   "chapters": [
     {
       "slug": "abstraction-specifications",
@@ -90,8 +104,148 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1967,
+      "title": "Simula 67: classes and objects",
+      "detail": "Ole-Johan Dahl and Kristen Nygaard's Simula 67 introduced classes, objects, subclasses and virtual procedures (dynamic dispatch), designed for writing simulations.",
+      "people": [
+        "Ole-Johan Dahl",
+        "Kristen Nygaard"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "\"Go To Statement Considered Harmful\"",
+      "detail": "Edsger Dijkstra's letter in Communications of the ACM argued that unrestricted jumps make programs hard to reason about, helping to establish structured programming.",
+      "people": [
+        "Edsger W. Dijkstra"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "Hoare's axiomatic basis for programming",
+      "detail": "C. A. R. Hoare's 'An axiomatic basis for computer programming' introduced the triples {P} S {Q} and the proof rules for assignment, sequencing, conditionals and loops.",
+      "people": [
+        "C. A. R. Hoare"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "Information hiding",
+      "detail": "David Parnas's 'On the criteria to be used in decomposing systems into modules' argued, with the KWIC index example, that each module should hide a design decision likely to change.",
+      "people": [
+        "David L. Parnas"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "Abstract data types",
+      "detail": "Barbara Liskov and Stephen Zilles's 'Programming with abstract data types' defined types by their operations and proposed language support, later realised in the language CLU.",
+      "people": [
+        "Barbara Liskov",
+        "Stephen Zilles"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Smalltalk-80 published",
+      "detail": "Adele Goldberg and David Robson's book described Smalltalk-80, the language developed at Xerox PARC in which everything is an object and computation is message sending.",
+      "people": [
+        "Alan Kay",
+        "Adele Goldberg",
+        "Daniel Ingalls"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "Structure and Interpretation of Computer Programs",
+      "detail": "Harold Abelson and Gerald Jay Sussman's textbook, from MIT's introductory course, taught abstraction through higher-order procedures, data abstraction and the substitution and environment models of evaluation.",
+      "people": [
+        "Harold Abelson",
+        "Gerald Jay Sussman",
+        "Julie Sussman"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "Design Patterns and behavioural subtyping",
+      "detail": "Gamma, Helm, Johnson and Vlissides catalogued 23 object-oriented design patterns; in the same year Liskov and Wing's 'A behavioral notion of subtyping' gave the precise substitution principle.",
+      "people": [
+        "Erich Gamma",
+        "Richard Helm",
+        "Ralph Johnson",
+        "John Vlissides",
+        "Barbara Liskov",
+        "Jeannette Wing"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "How to Design Programs",
+      "detail": "Felleisen, Findler, Flatt and Krishnamurthi's textbook introduced the design recipe, deriving the structure of functions from data definitions.",
+      "people": [
+        "Matthias Felleisen",
+        "Robert Bruce Findler",
+        "Matthew Flatt",
+        "Shriram Krishnamurthi"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "Type hints for Python",
+      "detail": "PEP 484, by Guido van Rossum, Jukka Lehtosalo and Łukasz Langa, standardised type annotations for gradual static checking of Python, released with Python 3.5 in 2015.",
+      "people": [
+        "Guido van Rossum",
+        "Jukka Lehtosalo",
+        "Łukasz Langa"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Structure and Interpretation of Computer Programs",
+      "authors": "Harold Abelson and Gerald Jay Sussman, with Julie Sussman",
+      "year": 1996,
+      "note": "Second edition. The classic on abstraction with procedures and data, higher-order functions, the substitution and environment models, and interpreters; uses Scheme, freely available online."
+    },
+    {
+      "title": "How to Design Programs: An Introduction to Programming and Computing",
+      "authors": "Matthias Felleisen, Robert Bruce Findler, Matthew Flatt and Shriram Krishnamurthi",
+      "year": 2018,
+      "note": "Second edition. The design recipe — from data definitions to templates, tests and code — taught systematically in Racket's teaching languages; freely available online."
+    },
+    {
+      "title": "Program Development in Java: Abstraction, Specification, and Object-Oriented Design",
+      "authors": "Barbara Liskov with John Guttag",
+      "year": 2000,
+      "note": "Requires/modifies/effects specifications, representation invariants, abstraction functions and type hierarchies, explained by the originators of the ideas; the examples are in Java but the method is language-independent."
+    },
+    {
+      "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+      "authors": "Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides",
+      "year": 1994,
+      "note": "The original catalogue of 23 patterns, with their intents, structures and trade-offs; examples in C++ and Smalltalk."
+    },
+    {
+      "title": "Object-Oriented Software Construction",
+      "authors": "Bertrand Meyer",
+      "year": 1997,
+      "note": "Second edition. A thorough treatment of design by contract, inheritance and the open–closed principle, built around the Eiffel language."
+    },
+    {
+      "title": "Fluent Python",
+      "authors": "Luciano Ramalho",
+      "year": 2022,
+      "note": "Second edition. How Python's data model, special methods, iterators, generators, closures, decorators, protocols and type hints work in practice; the best companion for the Python side of this course."
+    },
+    {
+      "title": "A Philosophy of Software Design",
+      "authors": "John Ousterhout",
+      "year": 2021,
+      "note": "Second edition. A short book on managing complexity: deep modules with simple interfaces, information hiding and the cost of leaked design decisions."
+    }
+  ],
   "next": [
     "software-engineering",
     "programming-languages"
