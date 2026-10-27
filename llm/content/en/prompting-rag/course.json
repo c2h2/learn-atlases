@@ -185,6 +185,18 @@
       "authors": "Lei Huang and colleagues",
       "year": 2023,
       "note": "The causes, detection and mitigation of hallucination."
+    },
+    {
+      "title": "Survey of Hallucination in Natural Language Generation",
+      "authors": "Ziwei Ji and colleagues",
+      "year": 2023,
+      "note": "The intrinsic–extrinsic taxonomy of hallucination across summarisation, dialogue, translation and question answering (ACM Computing Surveys)."
+    },
+    {
+      "title": "Speech and Language Processing (3rd edition draft)",
+      "authors": "Daniel Jurafsky and James H. Martin",
+      "year": 2025,
+      "note": "Free online draft, revised regularly; its chapters on information retrieval, question answering and retrieval-augmented generation complement this course."
     }
   ],
   "next": [
