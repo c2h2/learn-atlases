@@ -7,12 +7,26 @@
   "order": 170,
   "tagline": "Cell thermodynamics, conductivity, the double layer, electrode kinetics, voltammetry, batteries, fuel cells and corrosion",
   "summary": "Electrochemistry links chemical change with electric current, and underlies batteries, fuel cells, electrolysis and corrosion. This course builds the thermodynamics of cells, the structure of the electrode–solution interface and the kinetics of electron transfer, introduces voltammetry, and applies these ideas to energy storage and conversion and to the corrosion of metals.",
-  "overview": [],
+  "overview": [
+    "Electrochemistry is the chemistry of reactions in which electrons are made to travel through an external circuit, so that a chemical change and an electric current are the same event seen from two sides. Measured at zero current, the voltage of a cell is a precise reading of a reaction Gibbs energy; with current flowing, the current is a reaction rate and the potential is a dial that changes activation energies by kilojoules per mole. This double role makes electrochemistry both a branch of physical chemistry — a route to activities, entropies and rate constants — and the basis of technologies that matter on a global scale: batteries, fuel cells, the electrolytic production of hydrogen, chlorine and aluminium, sensors, and the corrosion that destroys a few per cent of the world's economic output every year.",
+    "The course is built in two halves. The first four chapters assemble the physical chemistry: the thermodynamics of cells and the Nernst equation with activities ([[electrochemistry/cell-thermodynamics]]), the motion of ions through electrolytes ([[electrochemistry/conductivity]]), the structure of the electrode–solution interface ([[electrochemistry/double-layer]]) and the kinetics of electron transfer, from the Butler–Volmer equation to Marcus theory ([[electrochemistry/electrode-kinetics]]). Mass transport and voltammetry ([[electrochemistry/voltammetry]]) combine kinetics with diffusion and convection. The last three chapters apply the whole toolkit to batteries, to fuel cells, electrolysers and electrocatalysts, and to corrosion and its prevention.",
+    "What makes the subject hard is bookkeeping: sign conventions for potentials and currents, which electrode is the anode at a given moment, concentration units that must match ($\\mathrm{mol\\,cm^{-3}}$ with $\\mathrm{cm\\,s^{-1}}$), standard versus formal versus equilibrium potentials, and the distinction between what thermodynamics allows and what kinetics delivers. Work every numerical example with units carried through, keep asking whether a voltage is measured at zero current or under load, and treat the three losses — activation, ohmic and mass transport — as the recurring structure behind every practical device."
+  ],
   "prerequisites": [
     "thermodynamics",
     "kinetics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Calculate cell potentials, reaction Gibbs energies, equilibrium constants and solubility products from standard and formal electrode potentials, using the Nernst equation with activities.",
+    "Derive reaction entropies, enthalpies and heat capacities from the temperature dependence of a cell potential, and determine standard potentials and mean activity coefficients by extrapolation to infinite dilution.",
+    "Relate conductivity, molar conductivity, ionic mobility, diffusion coefficient and transport number, and use them to obtain dissociation constants, hydrodynamic radii and liquid-junction potentials.",
+    "Explain the Helmholtz, Gouy–Chapman and Stern models of the electrical double layer and calculate double-layer capacitances, Debye lengths, charging currents and cell time constants.",
+    "Derive the Butler–Volmer equation from transition-state theory, and extract exchange current densities, transfer coefficients and charge-transfer resistances from Tafel and linear-polarisation data.",
+    "Interpret steady-state, rotating-disc and cyclic voltammograms quantitatively, using the Levich, Koutecký–Levich and Randles–Ševčík equations and the diagnostics for reversible, quasi-reversible and coupled-chemical behaviour.",
+    "Calculate the theoretical capacity, specific energy, maximum power and heat generation of batteries, and explain the voltage profiles, interphases and ageing mechanisms of lead–acid and lithium-ion cells.",
+    "Analyse the efficiency of fuel cells and electrolysers from reversible and thermoneutral voltages and polarisation curves, and apply Sabatier's principle, volcano plots and limiting potentials to electrocatalysts.",
+    "Predict corrosion behaviour from Pourbaix and Evans diagrams, compute corrosion rates from mixed-potential theory, the Stern–Geary relation and Faraday's law, and size cathodic protection."
+  ],
   "chapters": [
     {
       "slug": "cell-thermodynamics",
@@ -82,8 +96,140 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1800,
+      "title": "Volta's pile",
+      "detail": "Alessandro Volta described a stack of zinc and silver or copper discs separated by brine-soaked cloth, the first source of continuous current; within weeks Nicholson and Carlisle used it to electrolyse water.",
+      "people": [
+        "Alessandro Volta",
+        "William Nicholson",
+        "Anthony Carlisle"
+      ]
+    },
+    {
+      "year": 1834,
+      "title": "Faraday's laws of electrolysis",
+      "detail": "Michael Faraday showed that the amount of substance changed at an electrode is proportional to the charge passed and to the chemical equivalent, and introduced the words electrode, anode, cathode, ion and electrolyte.",
+      "people": [
+        "Michael Faraday"
+      ]
+    },
+    {
+      "year": 1859,
+      "title": "The rechargeable lead–acid cell",
+      "detail": "Gaston Planté demonstrated a cell of lead plates in sulfuric acid that could be recharged; it remains the most widely produced rechargeable battery.",
+      "people": [
+        "Gaston Planté"
+      ]
+    },
+    {
+      "year": 1889,
+      "title": "The Nernst equation",
+      "detail": "Walther Nernst related the electromotive force of a cell to the concentrations of its ions through a logarithmic law, connecting cell potentials with thermodynamics.",
+      "people": [
+        "Walther Nernst"
+      ]
+    },
+    {
+      "year": 1905,
+      "title": "Tafel's law",
+      "detail": "Julius Tafel reported that the overpotential for hydrogen evolution rises linearly with the logarithm of the current density, the first quantitative law of electrode kinetics.",
+      "people": [
+        "Julius Tafel"
+      ]
+    },
+    {
+      "year": 1922,
+      "title": "Polarography",
+      "detail": "Jaroslav Heyrovský introduced the dropping mercury electrode and current–potential curves as an analytical and mechanistic tool, recognised by the Nobel Prize in Chemistry in 1959.",
+      "people": [
+        "Jaroslav Heyrovský"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "The Butler–Volmer equation",
+      "detail": "Following J. A. V. Butler's 1924 treatment, Tibor Erdey-Grúz and Max Volmer derived the exponential dependence of electrode reaction rates on potential with a transfer coefficient.",
+      "people": [
+        "John Alfred Valentine Butler",
+        "Tibor Erdey-Grúz",
+        "Max Volmer"
+      ]
+    },
+    {
+      "year": 1938,
+      "title": "Mixed-potential theory of corrosion",
+      "detail": "Carl Wagner and Wilhelm Traud showed that a corroding metal adopts a potential at which anodic and cathodic partial currents balance, the basis of the electrochemical theory of corrosion.",
+      "people": [
+        "Carl Wagner",
+        "Wilhelm Traud"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Theory of cyclic voltammetry",
+      "detail": "Richard Nicholson and Irving Shain published the theory of stationary-electrode voltammetry for reversible, irreversible and coupled-chemical systems, making cyclic voltammetry the standard mechanistic method.",
+      "people": [
+        "Richard S. Nicholson",
+        "Irving Shain"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "Commercial lithium-ion cells",
+      "detail": "Sony commercialised the lithium-ion cell based on Goodenough's lithium cobalt oxide and Yoshino's carbon negative electrode; Goodenough, Whittingham and Yoshino shared the 2019 Nobel Prize in Chemistry.",
+      "people": [
+        "John B. Goodenough",
+        "M. Stanley Whittingham",
+        "Akira Yoshino"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Electrochemical Methods: Fundamentals and Applications (3rd edn)",
+      "authors": "Allen J. Bard, Larry R. Faulkner and Henry S. White",
+      "year": 2022,
+      "note": "The standard graduate text: electrode kinetics, mass transport, voltammetric methods and the double layer, with derivations and notation followed in this course."
+    },
+    {
+      "title": "Atkins' Physical Chemistry (12th edn)",
+      "authors": "Peter Atkins, Julio de Paula and James Keeler",
+      "year": 2023,
+      "note": "Clear undergraduate treatment of cell thermodynamics, ionic conductivity and the Butler–Volmer equation; the place to start before Bard and Faulkner."
+    },
+    {
+      "title": "Fundamentals of Electrochemistry (2nd edn)",
+      "authors": "Vladimir S. Bagotsky (ed.)",
+      "year": 2006,
+      "note": "Broad, readable survey from equilibrium electrochemistry to batteries, fuel cells, electrocatalysis and corrosion, strong on the physical picture."
+    },
+    {
+      "title": "Understanding Voltammetry (3rd edn)",
+      "authors": "Richard G. Compton and Craig E. Banks",
+      "year": 2018,
+      "note": "Thorough and practical account of cyclic voltammetry, rotating discs, microelectrodes and coupled homogeneous kinetics, with simulation in mind."
+    },
+    {
+      "title": "Modern Electrochemistry 2A: Fundamentals of Electrodics (2nd edn)",
+      "authors": "John O'M. Bockris, Amulya K. N. Reddy and Maria Gamboa-Aldeco",
+      "year": 2000,
+      "note": "Detailed, discursive treatment of interfaces and electrode kinetics with much historical and physical insight."
+    },
+    {
+      "title": "Fuel Cell Systems Explained (2nd edn)",
+      "authors": "James Larminie and Andrew Dicks",
+      "year": 2003,
+      "note": "Accessible introduction to fuel-cell thermodynamics, efficiency, polarisation curves and the main cell types."
+    },
+    {
+      "title": "Corrosion and Corrosion Control (4th edn)",
+      "authors": "R. Winston Revie and Herbert H. Uhlig",
+      "year": 2008,
+      "note": "Standard text on the electrochemistry of corrosion, passivity, localised attack and protection by coatings, inhibitors and cathodic protection."
+    }
+  ],
   "next": [
     "materials-chemistry"
   ]
