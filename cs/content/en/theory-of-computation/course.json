@@ -7,11 +7,27 @@
   "order": 60,
   "tagline": "Finite automata, nondeterminism, regular expressions, context-free grammars, pushdown automata, Turing machines, decidability and reductions",
   "summary": "What can a computer do in principle, and what is impossible however much time we allow? This course builds the mathematical models of computation — finite automata, regular expressions, context-free grammars, pushdown automata and Turing machines — and uses them to prove the limits of computation: undecidable problems, reductions and Rice’s theorem.",
-  "overview": [],
+  "overview": [
+    "Theory of computation asks what can be computed at all, and with what kind of machine. It answers with a ladder of mathematical models — finite automata, pushdown automata and Turing machines — each matched by a way of *describing* languages: regular expressions, context-free grammars and, at the top, arbitrary algorithms. Each rung is characterised exactly, its limits are proved, and at the top the limits become absolute: some problems, such as deciding whether a program halts, cannot be solved by any program whatever.",
+    "The subject matters far beyond its own theorems. Finite automata and regular expressions are the machinery of lexers, search tools and input validation; context-free grammars define the syntax of every programming language and drive its parser; and the undecidability results explain why compilers, static analysers and verification tools can only ever approximate semantic questions about programs. The same proof techniques — simulation, diagonalisation and reduction — are the foundation of computational complexity.",
+    "The course climbs the ladder in order. Chapters 1–4 treat the regular languages: deterministic and nondeterministic automata, the subset construction, Kleene's theorem, the pumping lemma, the Myhill–Nerode theorem and minimisation. Chapters 5–6 treat the context-free languages: grammars, ambiguity, Chomsky normal form and the CYK algorithm, pushdown automata and their equivalence with grammars, and the context-free pumping lemma. Chapters 7–9 introduce Turing machines and the Church–Turing thesis, prove the halting problem undecidable by diagonalisation, and spread undecidability by mapping reductions, Rice's theorem and the Post correspondence problem.",
+    "The difficulty is mostly in the proofs. Many arguments have alternating quantifiers (\"for every pumping length there is a string such that every split …\"), many constructions must be proved correct in both directions, and diagonal arguments are short but subtle. Work every example on paper, run the small simulators in the lessons on inputs of your own, and when you prove that a language is not regular or not decidable, write out exactly which choices are yours and which belong to the adversary."
+  ],
   "prerequisites": [
     "data-structures"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Design deterministic and nondeterministic finite automata for given languages and prove them correct by induction on the input.",
+    "Apply the subset construction, the product construction and Thompson's construction, and convert automata to regular expressions by state elimination.",
+    "Prove that languages are not regular using distinguishing strings, the pumping lemma and closure properties, and minimise a DFA with partition refinement.",
+    "Write context-free grammars for given languages, prove them sound and complete, recognise and remove ambiguity, and convert grammars to Chomsky normal form.",
+    "Implement and trace the CYK algorithm and simulators for finite, pushdown and Turing machines.",
+    "Construct pushdown automata from grammars and grammars from pushdown automata, and use the context-free pumping lemma and closure properties to prove languages are not context-free.",
+    "Program Turing machines at formal, implementation and high levels, and prove the equivalence of multitape, nondeterministic and enumerator variants.",
+    "Explain the Church–Turing thesis, why it is a thesis rather than a theorem, and what it does and does not say about efficiency.",
+    "Prove the undecidability of the acceptance and halting problems by diagonalisation, and classify languages as decidable, recognisable or co-recognisable.",
+    "Construct mapping reductions, apply Rice's theorem correctly, and use the Post correspondence problem to prove questions about grammars undecidable."
+  ],
   "chapters": [
     {
       "slug": "finite-automata",
@@ -85,8 +101,139 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1936,
+      "title": "Church and Turing: unsolvable problems",
+      "detail": "Alonzo Church, with the λ-calculus, and Alan Turing, with his machines and a universal machine, independently proved that Hilbert's Entscheidungsproblem has no algorithmic solution. Turing's paper “On computable numbers” appeared in the Proceedings of the London Mathematical Society in 1936–37.",
+      "people": [
+        "Alonzo Church",
+        "Alan Turing"
+      ]
+    },
+    {
+      "year": 1946,
+      "title": "Post correspondence problem",
+      "detail": "Emil Post's “A variant of a recursively unsolvable problem” introduced the domino-matching problem that became the standard route to undecidability results about grammars.",
+      "people": [
+        "Emil Post"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "Rice's theorem",
+      "detail": "Henry Gordon Rice proved that every non-trivial property of the languages recognised by Turing machines is undecidable, in “Classes of recursively enumerable sets and their decision problems”.",
+      "people": [
+        "Henry Gordon Rice"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "Kleene's theorem and Chomsky's grammars",
+      "detail": "Stephen Kleene's “Representation of events in nerve nets and finite automata” (Automata Studies) proved the equivalence of regular expressions and finite automata; Noam Chomsky's “Three models for the description of language” introduced phrase-structure grammars and the hierarchy of grammar types.",
+      "people": [
+        "Stephen Kleene",
+        "Noam Chomsky"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "The Myhill–Nerode theorem",
+      "detail": "Anil Nerode's “Linear automaton transformations” characterised the regular languages by the finite index of an equivalence relation on strings, following a related 1957 result of John Myhill; it yields the unique minimal DFA.",
+      "people": [
+        "Anil Nerode",
+        "John Myhill"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "Finite automata and their decision problems",
+      "detail": "Michael Rabin and Dana Scott introduced nondeterministic finite automata and the subset construction, and in the same year Chomsky's “On certain formal properties of grammars” gave the normal form named after him.",
+      "people": [
+        "Michael Rabin",
+        "Dana Scott",
+        "Noam Chomsky"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "Pumping lemmas and context-free decision problems",
+      "detail": "Yehoshua Bar-Hillel, Micha Perles and Eli Shamir proved the pumping lemma for context-free languages, their non-closure under intersection and complement, and the undecidability of equivalence and intersection-emptiness for grammars.",
+      "people": [
+        "Yehoshua Bar-Hillel",
+        "Micha Perles",
+        "Eli Shamir"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "Pushdown automata and context-free grammars",
+      "detail": "Chomsky's “Context-free grammars and pushdown storage”, with work of Schützenberger and Evey in 1963, established that pushdown automata recognise exactly the context-free languages; Cantor and Floyd proved ambiguity undecidable the same year.",
+      "people": [
+        "Noam Chomsky",
+        "Marcel-Paul Schützenberger",
+        "Robert Floyd",
+        "David Cantor"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "Thompson's regular-expression search",
+      "detail": "Ken Thompson's “Regular expression search algorithm” built NFAs from regular expressions and simulated sets of states, the linear-time method behind grep and modern guaranteed-linear engines.",
+      "people": [
+        "Ken Thompson"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Hilbert's tenth problem is undecidable",
+      "detail": "Yuri Matiyasevich, completing work of Martin Davis, Hilary Putnam and Julia Robinson, proved that no algorithm decides whether a polynomial equation with integer coefficients has an integer solution.",
+      "people": [
+        "Yuri Matiyasevich",
+        "Martin Davis",
+        "Hilary Putnam",
+        "Julia Robinson"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to the Theory of Computation",
+      "authors": "Michael Sipser",
+      "year": 2012,
+      "note": "Third edition. The standard undergraduate text: clear proofs of every theorem in this course (subset construction, pumping lemmas, PDA–CFG equivalence, undecidability, Rice's theorem, PCP) and an introduction to complexity."
+    },
+    {
+      "title": "Introduction to Automata Theory, Languages, and Computation",
+      "authors": "John E. Hopcroft, Rajeev Motwani and Jeffrey D. Ullman",
+      "year": 2006,
+      "note": "Third edition. More detail on automata and grammars than Sipser, with many worked constructions (ε-NFAs, minimisation, normal forms, closure properties) and exercises."
+    },
+    {
+      "title": "Automata and Computability",
+      "authors": "Dexter C. Kozen",
+      "year": 1997,
+      "note": "Short lectures with elegant proofs, including Myhill–Nerode, two-way automata and the Chomsky–Schützenberger theorem; excellent supplementary exercises."
+    },
+    {
+      "title": "Elements of the Theory of Computation",
+      "authors": "Harry R. Lewis and Christos H. Papadimitriou",
+      "year": 1998,
+      "note": "Second edition. A rigorous, mathematically careful treatment of the same material, leading into NP-completeness."
+    },
+    {
+      "title": "Computability and Logic",
+      "authors": "George S. Boolos, John P. Burgess and Richard C. Jeffrey",
+      "year": 2007,
+      "note": "Fifth edition. Turing machines, recursive functions, undecidability and Gödel's theorems from the logician's side."
+    },
+    {
+      "title": "The Annotated Turing",
+      "authors": "Charles Petzold",
+      "year": 2008,
+      "note": "A line-by-line guide to Turing's 1936 paper, with the historical and mathematical background; good for reading the original."
+    }
+  ],
   "next": [
     "complexity",
     "compilers"
