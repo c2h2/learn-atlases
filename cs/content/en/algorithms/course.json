@@ -7,11 +7,26 @@
   "order": 50,
   "tagline": "Correctness and recurrences, divide and conquer, sorting and selection, graph algorithms, greedy algorithms, dynamic programming, network flow and randomised algorithms",
   "summary": "An algorithm is a precise method for solving a problem, and its analysis tells us how its cost grows with the size of the input. This course teaches the main design techniques — divide and conquer, greedy choice, dynamic programming and reduction to network flow — together with proofs of correctness, the analysis of running time, graph algorithms and randomised algorithms.",
-  "overview": [],
+  "overview": [
+    "An **algorithm** is a precise, finite method for solving a computational problem, and the design and analysis of algorithms asks two questions of every method: is it correct on *every* valid input, and how does its cost — running time, memory — grow with the size of the input? The answers decide what is computable in practice. A $\\Theta(n^2)$ sort is fine for a thousand items and hopeless for a billion; a shortest-path algorithm that is correct only for non-negative weights silently returns wrong routes when one edge is negative. This course teaches the main techniques for designing efficient algorithms and the mathematics for proving them correct and bounding their cost.",
+    "The course begins with the tools used throughout: loop invariants and induction for correctness, and recurrences — solved with recursion trees and the master theorem — for the cost of recursive algorithms. It then works through the great design paradigms, each with its canonical problems: **divide and conquer** (mergesort, quicksort, Karatsuba multiplication, closest pair), with the lower bound showing that comparison sorting needs $\\Omega(n\\log n)$ time and the linear-time sorts and selection algorithms that escape it; **graph search** (BFS, DFS, topological sorting, strongly connected components) and **shortest paths** (Dijkstra, Bellman–Ford, Floyd–Warshall); **greedy algorithms** with exchange arguments (interval scheduling, Huffman codes, minimum spanning trees with union–find); **dynamic programming** (weighted scheduling, edit distance, knapsack); **network flow** and reductions to it (max-flow min-cut, bipartite matching); and **randomised algorithms** (universal hashing, Karger's minimum cut).",
+    "What makes the subject hard is that intuition is unreliable: plausible greedy rules fail, natural recursions take exponential time, and a proof that \"looks right\" may hide an $O$ inside an induction. Approach each algorithm by tracing it by hand on a small input, then stating precisely what is true at each step (an invariant, a recurrence, an exchange) and proving it; run the Python implementations and vary their inputs. The prerequisites are [[data-structures]] and the discrete mathematics, induction and probability of [Maths Atlas](/learn/maths/)."
+  ],
   "prerequisites": [
     "data-structures"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Prove the correctness of iterative and recursive algorithms with loop invariants, variants and induction.",
+    "Analyse worst-case, average-case, expected and amortised running times, and solve recurrences by substitution, recursion trees and the master theorem, checking its conditions.",
+    "Design divide-and-conquer algorithms and explain how the number of subproblems, the balance of the split and the cost of combining determine their running time.",
+    "Prove the $\\Omega(n\\log n)$ lower bound for comparison sorting, and use counting sort, radix sort and linear-time selection where the bound does not apply.",
+    "Apply breadth- and depth-first search to shortest unweighted paths, cycle detection, topological sorting, strongly connected components and bipartiteness.",
+    "Choose and justify a shortest-path algorithm — Dijkstra, Bellman–Ford, DAG relaxation or Floyd–Warshall — according to the weights and the queries, including the non-negative-weight condition for Dijkstra's algorithm.",
+    "Design greedy algorithms and prove them optimal with stays-ahead and exchange arguments, or exhibit counterexamples when they fail.",
+    "Formulate dynamic programs by identifying subproblems with optimal substructure, prove their recurrences, and reconstruct optimal solutions.",
+    "Model problems as maximum flows, prove the max-flow min-cut theorem, and reduce bipartite matching and disjoint-path problems to flow.",
+    "Analyse Las Vegas and Monte Carlo algorithms with indicator variables, Markov's inequality and amplification, including universal hashing and randomised minimum cut."
+  ],
   "chapters": [
     {
       "slug": "correctness-recurrences",
@@ -90,8 +105,146 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1945,
+      "title": "Mergesort",
+      "detail": "John von Neumann wrote a merge-sorting program in 1945 for the planned EDVAC, one of the first programs written for a stored-program computer.",
+      "people": [
+        "John von Neumann"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "Kruskal's algorithm and the max-flow min-cut theorem",
+      "detail": "Joseph Kruskal published his minimum-spanning-tree algorithm, and Lester Ford Jr. and Delbert Fulkerson published the augmenting-path method and the max-flow min-cut theorem in 'Maximal flow through a network'.",
+      "people": [
+        "Joseph Kruskal",
+        "L. R. Ford Jr.",
+        "D. R. Fulkerson"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Dynamic programming",
+      "detail": "Richard Bellman's book Dynamic Programming set out the method of solving multistage optimisation problems through a recurrence over subproblems, the 'principle of optimality'; Robert Prim published his spanning-tree algorithm the same year.",
+      "people": [
+        "Richard Bellman",
+        "Robert Prim"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "Dijkstra's shortest-path algorithm",
+      "detail": "Edsger Dijkstra's 'A note on two problems in connexion with graphs' gave his single-source shortest-path algorithm for non-negative edge lengths, together with a minimum-spanning-tree algorithm.",
+      "people": [
+        "Edsger W. Dijkstra"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "Quicksort",
+      "detail": "C. A. R. Hoare published PARTITION, QUICKSORT and FIND as Algorithms 63–65 in Communications of the ACM, followed by a full analysis in The Computer Journal in 1962.",
+      "people": [
+        "C. A. R. Hoare"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "Fast integer multiplication",
+      "detail": "Anatoly Karatsuba and Yuri Ofman published the first multiplication algorithm using fewer than order n² digit operations, refuting a conjecture of Kolmogorov; Floyd's all-pairs shortest-path algorithm appeared the same year.",
+      "people": [
+        "Anatoly Karatsuba",
+        "Yuri Ofman",
+        "Robert W. Floyd"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "Edmonds–Karp and depth-first search",
+      "detail": "Jack Edmonds and Richard Karp proved that shortest augmenting paths give a polynomial maximum-flow algorithm, and Robert Tarjan's 'Depth-first search and linear graph algorithms' gave linear-time algorithms for strongly connected components and biconnectivity.",
+      "people": [
+        "Jack Edmonds",
+        "Richard M. Karp",
+        "Robert E. Tarjan"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "Linear-time selection and fast matching",
+      "detail": "Blum, Floyd, Pratt, Rivest and Tarjan showed that the median can be found in worst-case linear time, and Hopcroft and Karp gave an O(m√n) bipartite matching algorithm.",
+      "people": [
+        "Manuel Blum",
+        "Robert W. Floyd",
+        "Vaughan Pratt",
+        "Ronald L. Rivest",
+        "Robert E. Tarjan",
+        "John Hopcroft",
+        "Richard M. Karp"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Universal hashing",
+      "detail": "Lawrence Carter and Mark Wegman's 'Universal classes of hash functions' (Journal of Computer and System Sciences; conference version 1977) showed how choosing the hash function at random gives good expected performance for every set of keys.",
+      "people": [
+        "J. Lawrence Carter",
+        "Mark N. Wegman"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "Karger's minimum-cut algorithm",
+      "detail": "David Karger showed that repeatedly contracting random edges finds a global minimum cut with probability at least 1/C(n,2) per run, a strikingly simple randomised algorithm.",
+      "people": [
+        "David R. Karger"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Algorithms",
+      "authors": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
+      "year": 2022,
+      "note": "Fourth edition. The standard comprehensive reference: rigorous proofs of correctness and running time for every topic of this course, including the full proof of the master theorem, union–find and flow algorithms."
+    },
+    {
+      "title": "Algorithm Design",
+      "authors": "Jon Kleinberg, Éva Tardos",
+      "year": 2005,
+      "note": "Organised by design technique, with exceptionally clear treatments of greedy stays-ahead and exchange arguments, dynamic programming, network flow and its many reductions; excellent exercises."
+    },
+    {
+      "title": "Algorithms",
+      "authors": "Robert Sedgewick, Kevin Wayne",
+      "year": 2011,
+      "note": "Fourth edition. Implementation-focused (in Java), with careful code for sorting, searching, graphs and strings and an emphasis on empirical performance; companion website with data and visualisations."
+    },
+    {
+      "title": "Algorithms",
+      "authors": "Sanjoy Dasgupta, Christos Papadimitriou, Umesh Vazirani",
+      "year": 2006,
+      "note": "A short, elegant textbook covering divide and conquer (including the FFT), graphs, greedy algorithms, dynamic programming, linear programming and flows, ending with NP-completeness."
+    },
+    {
+      "title": "The Art of Computer Programming, Volume 3: Sorting and Searching",
+      "authors": "Donald E. Knuth",
+      "year": 1998,
+      "note": "Second edition. The definitive mathematical analysis of sorting and searching — exact comparison counts, minimum-comparison sorting, hashing — for readers who want every constant."
+    },
+    {
+      "title": "Randomized Algorithms",
+      "authors": "Rajeev Motwani, Prabhakar Raghavan",
+      "year": 1995,
+      "note": "The classic text on randomised algorithms: tail bounds, the probabilistic method, hashing, min-cut and randomised data structures, in much greater depth than the last chapter here."
+    },
+    {
+      "title": "The Algorithm Design Manual",
+      "authors": "Steven S. Skiena",
+      "year": 2020,
+      "note": "Third edition. A practical guide to recognising which known problem you are facing, with a catalogue of problems and 'war stories' from real applications."
+    }
+  ],
   "next": [
     "complexity",
     "artificial-intelligence",
