@@ -785,6 +785,8 @@ function md_inline(string $s, ?MdDoc $doc = null, int $line = 0): string
     $s = preg_replace_callback('/\$((?:[^$\\\\]|\\\\.)+?)\$/s', fn($m) => $put(math_html($restoreDollar($m[1]), false, $line)), $s);
     $s = preg_replace_callback('/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/', fn($m) => $put(md_ref(trim($m[1]), isset($m[2]) ? trim($m[2]) : null, $doc, $line)), $s);
     $s = preg_replace_callback('/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/', fn($m) => $put('<a href="' . h($m[2]) . '" target="_blank" rel="noopener">' . md_emph(h($m[1])) . '</a>'), $s);
+    // site-relative links to other atlases (/learn/…) open in the same tab
+    $s = preg_replace_callback('/\[([^\]]+)\]\((\/learn\/[^\s)]+)\)/', fn($m) => $put('<a href="' . h($m[2]) . '">' . md_emph(h($m[1])) . '</a>'), $s);
     $s = md_emph(h($s));
     $s = str_replace("\u{E002}", '$', $s);
     for ($k = 0; $k < 4 && str_contains($s, "\u{E000}"); $k++) {
