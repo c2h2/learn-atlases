@@ -7,11 +7,25 @@
   "order": 70,
   "tagline": "Kernel structure, processes and scheduling, address spaces and paging, threads and locks, synchronisation and deadlock, storage, file systems and virtual machines",
   "summary": "The operating system turns one machine into many: it shares the processor, memory and devices between programs while protecting them from one another. This course explains how, following the three themes of virtualisation, concurrency and persistence — processes and scheduling, address spaces and paging, threads, locks and deadlock, storage devices and file systems — and ends with virtual machines and containers.",
-  "overview": [],
+  "overview": [
+    "An operating system turns one machine into many. It shares the processor, memory and devices between programs that do not trust one another, gives each of them a simpler and larger machine than the real one — a processor of its own, a private address space, named and persistent files — and protects them, and itself, from each other. This course explains how, from the hardware mechanisms that make protection possible (kernel mode, the timer interrupt, the memory-management unit) to the policies built on them.",
+    "The course follows the three themes made standard by the Arpaci-Dusseaus' *Operating Systems: Three Easy Pieces*. **Virtualisation**: the kernel's structure and system calls, processes and CPU scheduling, address translation and paging, and page replacement. **Concurrency**: threads, race conditions and locks built from atomic instructions, then condition variables, semaphores and deadlock. **Persistence**: devices, hard disks, SSDs and RAID, and file systems with their on-disk layout and crash consistency. A final chapter virtualises whole machines and builds containers. The chapters assume [[computer-systems]], whose chapters on exceptions and processes, the memory hierarchy, dynamic memory and system-level I/O are used throughout and not repeated.",
+    "Operating systems are hard because they are concurrent, asynchronous and must never fail: an interrupt can arrive between any two instructions, a crash can interrupt any sequence of disk writes, and a bug in the kernel takes down everything above it. The way to learn them is to combine precise models with experiment. Every lesson proves its central results — the optimality of shortest-job-first and of Bélády's algorithm, Peterson's algorithm, the deadlock conditions, the atomicity of journalling, the Popek–Goldberg theorem — and every lesson measures real behaviour on a Linux machine: the cost of a system call and a context switch, the TLB's reach, page faults under copy-on-write, lost updates in a racy program, a deadlock caught by `timeout`, an ext4 file system inspected with `debugfs`, a process confined by namespaces and cgroups. Run the programs, change them, and break them on purpose."
+  ],
   "prerequisites": [
     "computer-systems"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain how dual-mode operation, the timer interrupt and the MMU let a kernel protect itself and other programs, and why each is necessary.",
+    "Trace and compare scheduling policies — FCFS, SJF, SRTF, round robin, MLFQ and weighted fair sharing — computing turnaround, waiting and response times, and prove the optimality of shortest-job-first.",
+    "Translate virtual addresses through base-and-bounds, segment and multi-level page tables, and calculate page-table sizes and effective access times with a TLB.",
+    "Simulate FIFO, LRU, clock and optimal page replacement, explain Bélády's anomaly and the stack property, and recognise and remedy thrashing.",
+    "Identify race conditions in multithreaded code, prove properties of mutual-exclusion algorithms, and implement locks from atomic instructions and futexes.",
+    "Solve synchronisation problems with condition variables and semaphores, and prevent, avoid or detect deadlock using lock ordering, the banker's algorithm and resource-allocation graphs.",
+    "Analyse the performance of hard disks, SSDs and RAID arrays, including disk scheduling, write amplification and the reliability of redundant arrays.",
+    "Describe how file systems lay out inodes, directories and data on disk, and explain how journalling and copy-on-write keep them consistent across crashes.",
+    "Explain how hypervisors virtualise the processor, memory and devices, and how containers use namespaces and control groups, and compare the isolation they provide."
+  ],
   "chapters": [
     {
       "slug": "os-structure",
@@ -89,8 +103,143 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1961,
+      "title": "CTSS demonstrated",
+      "detail": "Fernando Corbató's group at MIT demonstrated the Compatible Time-Sharing System on a modified IBM 709 in November 1961 and described it in a 1962 paper: interactive time sharing with time slicing and a multilevel feedback queue.",
+      "people": [
+        "Fernando Corbató",
+        "Marjorie Merwin-Daggett",
+        "Robert Daley"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "Atlas: paged virtual memory",
+      "detail": "Tom Kilburn and colleagues at Manchester described the Atlas computer's 'one-level storage system', the first paged virtual memory, with demand paging between core and drum.",
+      "people": [
+        "Tom Kilburn",
+        "David Edwards",
+        "Michael Lanigan",
+        "Frank Sumner"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "Multics and cooperating sequential processes",
+      "detail": "A set of papers at the 1965 Fall Joint Computer Conference described Multics, with hierarchical files and protection rings; in the same year Edsger Dijkstra solved mutual exclusion for n processes and introduced semaphores in 'Cooperating sequential processes'.",
+      "people": [
+        "Fernando Corbató",
+        "Victor Vyssotsky",
+        "Edsger W. Dijkstra"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Bélády's study of replacement algorithms",
+      "detail": "László Bélády's IBM Systems Journal paper compared page-replacement algorithms on real traces and introduced the optimal algorithm MIN.",
+      "people": [
+        "László Bélády"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "THE multiprogramming system and the working set",
+      "detail": "Dijkstra's paper on the THE system showed a layered operating system organised with semaphores; Peter Denning introduced the working-set model, explaining thrashing.",
+      "people": [
+        "Edsger W. Dijkstra",
+        "Peter Denning"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "System deadlocks",
+      "detail": "Edward Coffman, Melanie Elphick and Arie Shoshani's survey stated the four necessary conditions for deadlock and the strategies of prevention, avoidance and detection.",
+      "people": [
+        "Edward G. Coffman",
+        "Melanie Elphick",
+        "Arie Shoshani"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "Unix and the Popek–Goldberg theorem",
+      "detail": "Dennis Ritchie and Ken Thompson's 'The UNIX time-sharing system' appeared in Communications of the ACM; in the same journal and year, Gerald Popek and Robert Goldberg gave the formal requirements for virtualisable architectures, and Leslie Lamport published the bakery algorithm.",
+      "people": [
+        "Dennis Ritchie",
+        "Ken Thompson",
+        "Gerald Popek",
+        "Robert Goldberg",
+        "Leslie Lamport"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "Peterson's algorithm",
+      "detail": "Gary Peterson published a simple two-process mutual-exclusion algorithm using only reads and writes, still the standard example for proofs of mutual exclusion.",
+      "people": [
+        "Gary L. Peterson"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "The Fast File System",
+      "detail": "Marshall McKusick, William Joy, Samuel Leffler and Robert Fabry's FFS introduced cylinder groups and locality-aware allocation, improving Unix file-system throughput up to tenfold.",
+      "people": [
+        "Marshall Kirk McKusick",
+        "William Joy",
+        "Samuel Leffler",
+        "Robert Fabry"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "Hardware-assisted virtualisation",
+      "detail": "Intel shipped VT-x in 2005 (AMD-V followed in 2006), making the x86 satisfy the Popek–Goldberg condition through a new root/non-root mode; Linux's KVM, built on it, was merged in 2007.",
+      "people": [
+        "Avi Kivity"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Operating Systems: Three Easy Pieces",
+      "authors": "Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau",
+      "year": 2023,
+      "note": "Version 1.10, freely available online. The organising text for this course — virtualisation, concurrency, persistence — with clear explanations, simulators and projects; excellent on scheduling, paging, locks and crash consistency."
+    },
+    {
+      "title": "Operating System Concepts",
+      "authors": "Abraham Silberschatz, Peter Baer Galvin and Greg Gagne",
+      "year": 2018,
+      "note": "Tenth edition. The broadest standard textbook, with careful treatments of scheduling, synchronisation problems, deadlock and the banker's algorithm, and case studies of Linux and Windows."
+    },
+    {
+      "title": "Modern Operating Systems",
+      "authors": "Andrew S. Tanenbaum and Herbert Bos",
+      "year": 2023,
+      "note": "Fifth edition. Strong on kernel structure, microkernels, virtualisation and security, with detailed Linux, Android and Windows case studies."
+    },
+    {
+      "title": "Operating Systems: Principles and Practice",
+      "authors": "Thomas Anderson and Michael Dahlin",
+      "year": 2014,
+      "note": "Second edition, in four volumes. Rigorous and practical on concurrency, with a strong treatment of synchronisation patterns, file systems and reliability."
+    },
+    {
+      "title": "Computer Systems: A Programmer's Perspective",
+      "authors": "Randal E. Bryant and David R. O'Hallaron",
+      "year": 2016,
+      "note": "Third edition. The prerequisite material from the programmer's side — exceptions, processes, virtual memory, system-level I/O — on which this course builds."
+    },
+    {
+      "title": "The Design and Implementation of the FreeBSD Operating System",
+      "authors": "Marshall Kirk McKusick, George V. Neville-Neil and Robert N. M. Watson",
+      "year": 2014,
+      "note": "Second edition. How a real Unix kernel implements processes, virtual memory, file systems (UFS and ZFS) and I/O, by the designers of the Fast File System."
+    }
+  ],
   "next": [
     "parallel-computing",
     "security",
