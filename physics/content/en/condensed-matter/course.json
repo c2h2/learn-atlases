@@ -8,27 +8,30 @@
   "tagline": "Why solids are metals, insulators or magnets",
   "summary": "Crystal lattices, phonons, the free-electron gas, band structure, semiconductors, and an introduction to magnetism and superconductivity.",
   "overview": [
-    "A solid is a quantum many-body problem with Avogadro’s number of particles. The reason it is solvable at all is symmetry: a crystal is periodic, so its excitations are waves labelled by a crystal momentum, and its electrons occupy bands rather than atomic orbitals. This course builds that picture from the lattice up.",
-    "Diffraction fixes the lattice. Lattice vibrations — phonons — are the normal modes of the coupled atoms and carry the heat capacity of an insulator. Electrons are treated first as a free Fermi gas, which already explains conduction and the heat capacity of a metal, and then as waves in a periodic potential, which opens gaps and distinguishes metals from insulators. Semiconductors are the technologically decisive case. Magnetism and superconductivity are introduced as broken symmetries, not as complete theories.",
-    "The reciprocal lattice and the first Brillouin zone do more work than any formula in the course. Draw them. A band structure is a plot of energy against crystal momentum in that zone, and almost every qualitative question about a solid is a question about that plot."
+    "A solid is a quantum many-body problem with some $10^{23}$ particles per cubic centimetre. It is tractable at all because a crystal is periodic: its vibrations and its electron states are waves labelled by a wavevector that is defined only up to a vector of the reciprocal lattice, and the whole of the physics can be drawn inside one cell of that lattice, the first Brillouin zone. This course builds that picture from the lattice up and uses it to explain why solids are metals, insulators, semiconductors, magnets or superconductors.",
+    "The first chapter fixes the geometry: Bravais lattices, the reciprocal lattice and X-ray diffraction, with Bragg's and Laue's conditions proved equivalent. Lattice vibrations, quantised as phonons, then explain the heat capacity of insulators through the Einstein and Debye models. Electrons are treated first as a free gas, classically with Drude and quantum mechanically with Sommerfeld, and then as Bloch waves in a periodic potential, where gaps open at the zone boundaries and the counting of states separates metals from insulators. Semiconductors apply the band picture to the carrier densities of silicon and to the p–n junction. The last chapter leaves independent electrons behind for ordered states: ferromagnetism from exchange, treated in mean-field theory, and superconductivity from the London equations to the flux quantum and the Josephson effect.",
+    "What makes the subject hard is the number of scales in play: ångström lattice constants, electronvolt band energies, millielectronvolt phonons and superconducting gaps, kelvin and thousands of kelvin. The remedy is to estimate. Every chapter computes real numbers for real materials, from the Fermi energy of copper to the intrinsic carrier density of silicon, and checking orders of magnitude is the best way to learn which approximations matter. Draw the Brillouin zone; almost every qualitative question about a solid is a question about the band structure plotted in it."
   ],
   "prerequisites": [
     "quantum-1",
     "statistical-mechanics"
   ],
   "outcomes": [
-    "Index crystal planes and use Bragg’s law to interpret a diffraction pattern.",
-    "Derive the phonon dispersion of a monatomic and a diatomic chain, and the Debye heat capacity.",
-    "Apply the free-electron model: Fermi energy, density of states, and the electronic heat capacity.",
-    "Explain band gaps with the nearly-free-electron model and state Bloch’s theorem.",
-    "Describe electrons and holes in a semiconductor and the p–n junction in outline.",
-    "Distinguish diamagnetism, paramagnetism and ferromagnetism, and state the phenomenological facts of superconductivity."
+    "Describe crystals as a Bravais lattice plus a basis, and construct the reciprocal lattice and first Brillouin zone of the cubic lattices.",
+    "Prove that the Bragg and Laue diffraction conditions are equivalent, and use structure factors to index a powder pattern and identify fcc and bcc lattices.",
+    "Derive the phonon dispersion of monatomic and diatomic chains and the Einstein and Debye heat capacities, including the low-temperature $T^3$ law.",
+    "Compute Drude conductivities and Hall coefficients, and Fermi energies, electronic heat capacities and Lorenz numbers in the Sommerfeld model.",
+    "Prove Bloch's theorem and derive band gaps in the nearly-free-electron model and bands in the tight-binding model, with effective masses and holes.",
+    "Explain from the counting of states why a crystal is a metal or an insulator.",
+    "Calculate intrinsic and extrinsic carrier densities in semiconductors using the law of mass action, and the built-in potential, depletion width and current of a p–n junction.",
+    "Derive Curie's law and the mean-field theory of ferromagnetism, and explain why exchange rather than dipolar interaction orders a magnet.",
+    "Derive the London penetration depth and flux quantisation in units of h/2e, and use the BCS gap relation and the Josephson relations quantitatively."
   ],
   "chapters": [
     {
       "slug": "crystals",
       "title": "Crystal lattices",
-      "summary": "Bravais lattices, the reciprocal lattice, and diffraction.",
+      "summary": "Bravais lattices, the reciprocal lattice, Bragg and Laue diffraction, and structure factors.",
       "requires": [
         "quantum-1/schrodinger-equation"
       ]
@@ -71,7 +74,7 @@
     {
       "slug": "magnetism-superconductivity",
       "title": "Order",
-      "summary": "Paramagnetism, ferromagnetism in mean field, and the London picture of a superconductor.",
+      "summary": "Dia- and paramagnetism, exchange and mean-field ferromagnetism, and superconductivity from the London equations to BCS, flux quantisation and the Josephson effect.",
       "requires": [
         "condensed-matter/free-electrons",
         "statistical-mechanics/phase-transitions"
@@ -80,44 +83,66 @@
   ],
   "history": [
     {
-      "year": 1912,
-      "title": "Diffraction by a crystal",
-      "detail": "Max von Laue proposed that a crystal would diffract X-rays. Friedrich and Knipping observed the spots the same year, and the Braggs turned the observation into a law and a method in 1913.",
-      "people": [
-        "Max von Laue",
-        "William Henry Bragg",
-        "William Lawrence Bragg"
-      ]
-    },
-    {
       "year": 1900,
-      "title": "Drude’s metal",
-      "detail": "Paul Drude treated conduction electrons as a classical gas. Sommerfeld replaced the classical distribution by a Fermi gas in 1927, which is the free-electron model of this course.",
+      "title": "Drude's electron gas",
+      "detail": "Paul Drude applied the kinetic theory of gases to the electrons in a metal, explaining Ohm's law and, with a lucky factor of two, the Wiedemann–Franz law.",
       "people": [
-        "Paul Drude",
-        "Arnold Sommerfeld"
+        "Paul Drude"
       ]
     },
     {
-      "year": 1928,
-      "title": "Bloch’s theorem",
-      "detail": "Felix Bloch proved that the eigenstates of an electron in a periodic potential are plane waves modulated by a periodic function, the starting point of band theory.",
+      "year": 1907,
+      "title": "The first quantum solid",
+      "detail": "Albert Einstein applied Planck's quantum hypothesis to atomic vibrations and explained why diamond falls below the Dulong–Petit heat capacity. In the same year Pierre Weiss proposed the molecular field of ferromagnets.",
       "people": [
-        "Felix Bloch"
+        "Albert Einstein",
+        "Pierre Weiss"
       ]
     },
     {
       "year": 1911,
       "title": "Superconductivity",
-      "detail": "Heike Kamerlingh Onnes found that the resistance of mercury vanishes below 4.2 K. The microscopic theory, by Bardeen, Cooper and Schrieffer, came in 1957.",
+      "detail": "Heike Kamerlingh Onnes found that the resistance of mercury vanishes below about 4.2 K, three years after he first liquefied helium.",
       "people": [
         "Heike Kamerlingh Onnes"
       ]
     },
     {
+      "year": 1912,
+      "title": "X-ray diffraction and the Debye model",
+      "detail": "Max von Laue proposed that crystals diffract X-rays and Walter Friedrich and Paul Knipping observed it; William Lawrence Bragg reinterpreted the spots as reflections from lattice planes, and with his father determined the first crystal structures in 1913. Peter Debye published his theory of the heat capacity of solids the same year.",
+      "people": [
+        "Max von Laue",
+        "William Lawrence Bragg",
+        "William Henry Bragg",
+        "Peter Debye"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "Bloch waves and the Sommerfeld gas",
+      "detail": "Felix Bloch proved that electron states in a periodic potential are modulated plane waves, and Arnold Sommerfeld rebuilt Drude's model on Fermi–Dirac statistics. Werner Heisenberg explained ferromagnetism by exchange in the same year.",
+      "people": [
+        "Felix Bloch",
+        "Arnold Sommerfeld",
+        "Werner Heisenberg"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "The Meissner effect",
+      "detail": "Walther Meissner and Robert Ochsenfeld found that a superconductor expels a magnetic field; Fritz and Heinz London gave the electrodynamics of the effect in 1935.",
+      "people": [
+        "Walther Meissner",
+        "Robert Ochsenfeld",
+        "Fritz London",
+        "Heinz London"
+      ]
+    },
+    {
       "year": 1947,
       "title": "The transistor",
-      "detail": "Bardeen and Brattain demonstrated the point-contact transistor in December 1947; Shockley’s junction transistor followed. The device is a p–n junction put to work.",
+      "detail": "John Bardeen and Walter Brattain demonstrated the point-contact transistor at Bell Laboratories in December 1947; William Shockley's junction transistor and diode theory followed in 1948–49.",
       "people": [
         "John Bardeen",
         "Walter Brattain",
@@ -125,11 +150,30 @@
       ]
     },
     {
-      "year": 1980,
-      "title": "The quantum Hall effect",
-      "detail": "Klaus von Klitzing found that the Hall conductance of a two-dimensional electron gas is quantised in units of e²/h. It is the cleanest macroscopic quantum effect in a solid.",
+      "year": 1957,
+      "title": "BCS theory",
+      "detail": "John Bardeen, Leon Cooper and Robert Schrieffer explained superconductivity by the pairing of electrons through the lattice, predicting the energy gap.",
       "people": [
-        "Klaus von Klitzing"
+        "John Bardeen",
+        "Leon Cooper",
+        "Robert Schrieffer"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "The Josephson effect",
+      "detail": "Brian Josephson predicted that Cooper pairs tunnel between superconductors with a current set by their phase difference, oscillating at 2eV/h under a voltage V; Philip Anderson and John Rowell observed it in 1963.",
+      "people": [
+        "Brian Josephson"
+      ]
+    },
+    {
+      "year": 1986,
+      "title": "High-temperature superconductors",
+      "detail": "Georg Bednorz and Alex Müller found superconductivity near 35 K in a lanthanum–barium–copper oxide; within a year YBa₂Cu₃O₇ was found to superconduct at 93 K, above the boiling point of liquid nitrogen.",
+      "people": [
+        "Georg Bednorz",
+        "K. Alex Müller"
       ]
     }
   ],
@@ -138,31 +182,49 @@
       "title": "The Oxford Solid State Basics",
       "authors": "Steven H. Simon",
       "year": 2013,
-      "note": "The right first book. It covers this course and no more, with problems that teach."
+      "note": "The best first book: covers almost exactly this course, with clear derivations of phonons, bands and semiconductors and problems that teach."
     },
     {
       "title": "Introduction to Solid State Physics",
       "authors": "Charles Kittel",
       "year": 2005,
-      "note": "Eighth edition. The traditional text and a useful reference for numbers and for magnetism."
+      "note": "Eighth edition. The classic text, and the standard source of tabulated data: Debye temperatures, Fermi energies, susceptibilities and superconducting parameters."
     },
     {
       "title": "Solid State Physics",
       "authors": "Neil W. Ashcroft and N. David Mermin",
       "year": 1976,
-      "note": "Deeper and slower. The chapters on the free-electron gas and on bands are worth the effort."
+      "note": "Deeper and more careful; the chapters on the Drude and Sommerfeld models, Bloch's theorem and semiclassical dynamics are the standard references for the proofs sketched here."
     },
     {
-      "title": "Condensed Matter Physics",
-      "authors": "Michael P. Marder",
-      "year": 2010,
-      "note": "Second edition. A modern survey that continues past this course into broken symmetry."
+      "title": "Solid-State Physics: An Introduction to Principles of Materials Science",
+      "authors": "Harald Ibach and Hans Lüth",
+      "year": 2009,
+      "note": "Fourth edition. Strong on experiment, with good treatments of diffraction, phonon measurements and semiconductors."
+    },
+    {
+      "title": "Physics of Semiconductor Devices",
+      "authors": "S. M. Sze and Kwok K. Ng",
+      "year": 2007,
+      "note": "Third edition. The engineer's reference for carrier statistics, the p–n junction, transistors and material parameters of silicon and gallium arsenide."
+    },
+    {
+      "title": "Magnetism in Condensed Matter",
+      "authors": "Stephen Blundell",
+      "year": 2001,
+      "note": "A readable account of dia-, para- and ferromagnetism, exchange and mean-field theory, at the level just beyond this course."
+    },
+    {
+      "title": "Introduction to Superconductivity",
+      "authors": "Michael Tinkham",
+      "year": 1996,
+      "note": "Second edition. The standard text on the London and Ginzburg–Landau theories, BCS, vortices and the Josephson effect."
     },
     {
       "title": "The Feynman Lectures on Physics, Volume III",
       "authors": "Richard P. Feynman, Robert B. Leighton and Matthew Sands",
       "year": 1965,
-      "note": "Chapters 13 and 14, on propagation in a lattice, are a fine introduction to Bloch’s theorem."
+      "note": "Chapters 13 and 14 on propagation in a crystal lattice and semiconductors, and chapter 21 on superconductivity, are a beautiful informal introduction."
     }
   ],
   "next": []
