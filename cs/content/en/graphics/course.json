@@ -7,11 +7,26 @@
   "order": 180,
   "tagline": "Images and colour, transformations, viewing and projection, rasterisation, shading, texture mapping, the GPU pipeline, ray tracing, curves and animation",
   "summary": "Computer graphics turns geometric descriptions of a scene into images. This course covers raster images and colour, transformations with homogeneous coordinates, cameras and projection, rasterisation and visibility, lighting, shading and texture mapping, the programmable GPU pipeline, ray tracing and global illumination, and curves, surfaces and animation.",
-  "overview": [],
+  "overview": [
+    "Computer graphics turns a description of a scene — shapes, materials, lights and a camera — into an image, and it does so in two very different settings: real-time rendering, which must produce a new image every few milliseconds on a GPU for games, user interfaces, visualisation and virtual reality, and offline rendering, which may spend hours per frame computing the light in a film shot to physical accuracy. Both rest on the same foundations: linear algebra in homogeneous coordinates to place and project geometry, sampling theory to turn continuous images into pixels without aliasing, radiometry and reflectance models to compute how much light reaches the eye, and numerical methods to evaluate the integrals that describe light transport.",
+    "The course follows the path of light backwards from the screen. It starts with what pixels and colour values mean — point samples, the Nyquist limit, CIE XYZ, the sRGB transfer function and compositing — and then builds the viewing pipeline: affine and projective transformations, cameras, the perspective matrix and the non-linear depth it produces, and clipping in homogeneous coordinates. Rasterisation with edge functions, barycentric and perspective-correct interpolation, the top-left fill rule and the depth buffer turns triangles into fragments; Lambertian, Blinn–Phong and microfacet BRDFs shade them; mipmapping and anisotropic filtering texture them; and the GPU chapter shows how hardware runs all of this in parallel with shaders, warps and quads, together with shadow maps and deferred shading. The ray-tracing chapter then solves the full rendering equation with Möller–Trumbore intersection, bounding volume hierarchies and unbiased Monte Carlo path tracing, and the final chapter covers Bézier curves, B-splines, subdivision surfaces, skinning and simulation.",
+    "Every algorithm is implemented in short, dependency-free Python programs — an image writer, a rasteriser with a depth buffer, a software GPU pipeline, a Whitted ray tracer, a path tracer checked against an exact answer, de Casteljau and Chaikin subdivision — and their real output is shown, so you can change them and see what happens. The mathematics is proved where it matters (perspective-correct interpolation, the top-left rule, depth precision, the normalisation of BRDFs, unbiasedness of path tracing, Chaikin's limit curve), and the matrices and probability it relies on are taken from Maths Atlas. What makes graphics hard is that small errors are visible: a half-pixel offset, a missing gamma decode, a normal transformed by the wrong matrix or a biased estimator all show up on screen. The way through is to keep the units and coordinate systems explicit, and to test every formula on a case whose answer you know."
+  ],
   "prerequisites": [
     "data-structures"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain images as point samples, predict aliasing from the Nyquist limit, and prevent it by supersampling and prefiltering.",
+    "Convert between linear RGB, CIE XYZ and sRGB-encoded values, derive an RGB-to-XYZ matrix from primaries and a white point, and composite premultiplied images with the over operator.",
+    "Compose, invert and apply affine and projective transformations in homogeneous coordinates, including rotations as matrices and quaternions and normals by the inverse transpose.",
+    "Derive the look-at, orthographic and perspective matrices, analyse the non-linearity and precision of stored depth, and explain why clipping precedes the perspective division.",
+    "Implement triangle rasterisation with edge functions, the top-left fill rule, perspective-correct barycentric interpolation, Sutherland–Hodgman clipping and a depth buffer, and prove their correctness.",
+    "Compute reflected radiance with Lambertian, normalised Blinn–Phong and Cook–Torrance microfacet BRDFs, and check their energy conservation numerically.",
+    "Filter textures with bilinear interpolation, mipmaps and summed-area tables, select levels of detail from screen-space derivatives, and use normal and environment maps.",
+    "Describe the programmable GPU pipeline and its execution model, estimate the costs of divergence, small triangles and bandwidth, and apply shadow mapping and deferred shading.",
+    "Implement ray–sphere and Möller–Trumbore ray–triangle intersection and bounding volume hierarchies, and solve the rendering equation by unbiased Monte Carlo path tracing with importance sampling and Russian roulette.",
+    "Construct and evaluate Bézier curves, B-splines and subdivision curves and surfaces, and animate with keyframe interpolation, linear blend skinning and stable integrators."
+  ],
   "chapters": [
     {
       "slug": "images-colour",
@@ -84,8 +99,133 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1963,
+      "title": "Sketchpad",
+      "detail": "Ivan Sutherland's MIT thesis system let users draw on a display with a light pen, with constraints and instanced master drawings — the beginning of interactive computer graphics. Lawrence Roberts's thesis the same year used homogeneous coordinates and perspective matrices to render polyhedra.",
+      "people": [
+        "Ivan Sutherland",
+        "Lawrence Roberts"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "Bresenham's line algorithm",
+      "detail": "Jack Bresenham's 'Algorithm for computer control of a digital plotter' (IBM Systems Journal) drew lines with integer additions only, the model for incremental rasterisation algorithms.",
+      "people": [
+        "Jack Bresenham"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "Gouraud shading",
+      "detail": "Henri Gouraud's 'Continuous shading of curved surfaces' interpolated vertex intensities across polygons, making faceted meshes look smooth.",
+      "people": [
+        "Henri Gouraud"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "The depth buffer and texture mapping",
+      "detail": "Edwin Catmull's Utah thesis, A Subdivision Algorithm for Computer Display of Curved Surfaces, introduced the z-buffer (described independently by Wolfgang Straßer) and texture mapping onto curved patches.",
+      "people": [
+        "Edwin Catmull",
+        "Wolfgang Straßer"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "Phong shading and reflection",
+      "detail": "Bui Tuong Phong's 'Illumination for computer generated pictures' (Communications of the ACM) introduced per-pixel normal interpolation and the specular reflection model named after him; James Blinn's halfway-vector version followed in 1977.",
+      "people": [
+        "Bui Tuong Phong",
+        "James Blinn"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "Recursive ray tracing",
+      "detail": "Turner Whitted's 'An improved illumination model for shaded display' traced reflected, refracted and shadow rays recursively, producing the first images of glass and mirrors with global effects.",
+      "people": [
+        "Turner Whitted"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "The Cook–Torrance microfacet model",
+      "detail": "Robert Cook and Kenneth Torrance's 'A reflectance model for computer graphics' (ACM Transactions on Graphics) combined a facet distribution, Fresnel reflectance and shadowing into the physically based BRDF that underlies modern material models.",
+      "people": [
+        "Robert Cook",
+        "Kenneth Torrance"
+      ]
+    },
+    {
+      "year": 1986,
+      "title": "The rendering equation",
+      "detail": "James Kajiya's 'The rendering equation' (SIGGRAPH) unified rendering algorithms as approximations of one integral equation and introduced Monte Carlo path tracing to solve it.",
+      "people": [
+        "James Kajiya"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "OpenGL 1.0",
+      "detail": "Silicon Graphics' IRIS GL became the open OpenGL standard, fixing the conventions of the hardware graphics pipeline used for the next three decades.",
+      "people": [
+        "Kurt Akeley",
+        "Mark Segal"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Programmable GPUs",
+      "detail": "DirectX 8 (2000) and NVIDIA's GeForce 3 (2001) made the vertex stage programmable, as described in Lindholm, Kilgard and Moreton's 'A user-programmable vertex engine' (SIGGRAPH 2001); programmable fragment shading followed, and unified shader cores arrived in 2005–2006.",
+      "people": [
+        "Erik Lindholm",
+        "Mark Kilgard",
+        "Henry Moreton"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Fundamentals of Computer Graphics",
+      "authors": "Steve Marschner and Peter Shirley",
+      "year": 2021,
+      "note": "5th edition. The standard undergraduate textbook: sampling, transformations, viewing, rasterisation, shading, texture mapping, ray tracing, curves and animation at the level of this course."
+    },
+    {
+      "title": "Physically Based Rendering: From Theory to Implementation",
+      "authors": "Matt Pharr, Wenzel Jakob and Greg Humphreys",
+      "year": 2023,
+      "note": "4th edition (PBRT), free online. A complete, literate-programming path tracer: radiometry, BRDFs, sampling and Monte Carlo integration, BVHs and light transport in depth."
+    },
+    {
+      "title": "Real-Time Rendering",
+      "authors": "Tomas Akenine-Möller, Eric Haines, Naty Hoffman, Angelo Pesce, Michał Iwanicki and Sébastien Hillaire",
+      "year": 2018,
+      "note": "4th edition. The reference for GPU-based rendering: the pipeline, physically based shading, texturing, shadows, deferred and clustered shading, antialiasing and acceleration."
+    },
+    {
+      "title": "Computer Graphics: Principles and Practice",
+      "authors": "John F. Hughes, Andries van Dam, Morgan McGuire, David F. Sklar, James D. Foley, Steven K. Feiner and Kurt Akeley",
+      "year": 2013,
+      "note": "3rd edition. A broad, carefully argued treatment of the whole field, strong on light transport, sampling, the history of the ideas and the reasons behind design choices."
+    },
+    {
+      "title": "Curves and Surfaces for CAGD: A Practical Guide",
+      "authors": "Gerald Farin",
+      "year": 2002,
+      "note": "5th edition. Bézier curves, B-splines, NURBS and surfaces with full proofs, for the material of the last chapter."
+    },
+    {
+      "title": "Foundations of 3D Computer Graphics",
+      "authors": "Steven J. Gortler",
+      "year": 2012,
+      "note": "A concise, mathematically careful account of coordinate frames, rotations and quaternions, projection, interpolation, sampling and splines."
+    }
+  ],
   "next": [
     "hci"
   ]
