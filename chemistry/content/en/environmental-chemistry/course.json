@@ -7,12 +7,26 @@
   "order": 210,
   "tagline": "Element cycles, stratospheric ozone, tropospheric chemistry, aerosols and acid deposition, greenhouse gases, natural waters, pollutants, soils and monitoring",
   "summary": "Environmental chemistry studies the chemical processes of air, water and soil, and how human activity changes them. This course covers the global cycles of the elements, ozone chemistry in the stratosphere and troposphere, aerosols and acid deposition, greenhouse gases, the chemistry of natural waters, the fate and remediation of pollutants, and environmental monitoring.",
-  "overview": [],
+  "overview": [
+    "Environmental chemistry is the chemistry of the air, waters, soils and living things of the Earth, studied as one coupled system. Elements cycle between reservoirs, change oxidation state and phase, and are driven by sunlight, microbes and rock weathering; human activity now moves some of them — carbon, reactive nitrogen, sulfur, mercury — as fast as nature does, and adds synthetic compounds that nature has never handled. The subject asks where a substance goes, how fast it is transformed, what it becomes and what it does on the way, and it supplies the evidence on which policy on ozone depletion, air quality, acid rain, climate and chemical pollution is based.",
+    "The course is organised from the planet inwards. It begins with box models, residence times and the global cycles of carbon, nitrogen and sulfur, then follows the atmosphere from the stratospheric ozone layer to tropospheric smog, particles and acid rain, and the radiative forcing of greenhouse gases. It then turns to water — the carbonate system, alkalinity, redox conditions and metal speciation — and to the fate of persistent organic pollutants and metals, the chemistry of soils, water treatment and remediation, and finally the sampling, trace analysis and quality control without which none of the numbers could be trusted.",
+    "What makes environmental chemistry hard is that it is almost never at equilibrium and almost never in a beaker. The same equations you know — the steady-state approximation, Henry's law, acid–base and redox equilibria, Beer–Lambert — must be combined across several phases and timescales, and the art lies in deciding which processes are fast, which are slow and which can be ignored. Work every example with real numbers, keep track of units (ppb, molecules per cubic centimetre, micrograms per cubic metre, Dobson units, equivalents), and always ask which compartment a property sends a substance to. Statistics and regulations are dated as of 2026 and cited to their sources (IPCC AR6, the WMO/UNEP ozone assessments, NOAA, WHO and EU/US legislation), and policy is described, not advocated."
+  ],
   "prerequisites": [
     "analytical-chemistry",
     "kinetics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Construct one-box and multi-box models of environmental reservoirs, calculate residence times and lifetimes, and predict how a reservoir responds to a change in its sources.",
+    "Derive the Chapman steady state, analyse catalytic ozone-destruction cycles, and explain the heterogeneous chemistry that produces the Antarctic ozone hole.",
+    "Calculate hydroxyl-radical production and the lifetimes of trace gases, apply the Leighton photostationary state, and distinguish NOx-limited from VOC-limited ozone production.",
+    "Apply Henry's law, effective solubilities and gas–particle equilibria to cloud chemistry, ammonium nitrate formation and the pH of rain, and interpret the ion balance of precipitation.",
+    "Compute radiative forcing, equilibrium warming and global warming potentials, and explain the logarithmic forcing of carbon dioxide and the buffer chemistry of ocean acidification.",
+    "Solve carbonate equilibria in open and closed systems, calculate alkalinity and calcite solubility, and use pe–pH relations and the redox ladder to predict speciation in natural waters.",
+    "Predict the environmental distribution of organic pollutants from K_ow, K_aw and K_oc using fugacity models, retardation factors and bioconcentration relations.",
+    "Explain cation exchange, sorption isotherms, water-treatment chemistry (coagulation, disinfection) and the chemical basis and limits of remediation methods.",
+    "Design a sampling and analysis scheme for an environmental question, estimate detection limits and measurement uncertainty, and interpret quality-control data and compliance decisions."
+  ],
   "chapters": [
     {
       "slug": "earth-system-chemistry",
@@ -89,8 +103,138 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1872,
+      "title": "Angus Smith's Air and Rain",
+      "detail": "Robert Angus Smith, Britain's first Alkali Inspector, published Air and Rain: The Beginnings of a Chemical Climatology, analysing urban rain and introducing the term acid rain.",
+      "people": [
+        "Robert Angus Smith"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "Chapman's theory of the ozone layer",
+      "detail": "Sydney Chapman proposed that stratospheric ozone is formed by photolysis of O₂ and destroyed by reactions of oxygen atoms and ozone, the oxygen-only mechanism that bears his name.",
+      "people": [
+        "Sydney Chapman"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "Photochemical smog explained",
+      "detail": "Arie Haagen-Smit showed that Los Angeles smog and its ozone form when nitrogen oxides and hydrocarbons from vehicle exhaust are exposed to sunlight.",
+      "people": [
+        "Arie Haagen-Smit"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "The Mauna Loa CO₂ record begins",
+      "detail": "Charles David Keeling began continuous, calibrated measurements of atmospheric CO₂ at Mauna Loa, Hawaiʻi, revealing both the seasonal cycle and the steady rise from fossil-fuel burning.",
+      "people": [
+        "Charles David Keeling"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "Silent Spring",
+      "detail": "Rachel Carson's book documented the effects of persistent pesticides such as DDT on wildlife and brought the environmental fate of synthetic chemicals to public attention.",
+      "people": [
+        "Rachel Carson"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Stumm and Morgan's Aquatic Chemistry",
+      "detail": "Werner Stumm and James Morgan unified acid–base, complexation, redox and surface equilibria of natural waters in a single quantitative framework.",
+      "people": [
+        "Werner Stumm",
+        "James J. Morgan"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "CFCs and the ozone layer",
+      "detail": "Mario Molina and F. Sherwood Rowland argued in Nature that chlorofluorocarbons survive to the stratosphere and release chlorine atoms that destroy ozone catalytically.",
+      "people": [
+        "Mario Molina",
+        "F. Sherwood Rowland"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "Discovery of the Antarctic ozone hole",
+      "detail": "Joseph Farman, Brian Gardiner and Jonathan Shanklin of the British Antarctic Survey reported large springtime losses of ozone over Halley Bay since the late 1970s.",
+      "people": [
+        "Joseph Farman",
+        "Brian Gardiner",
+        "Jonathan Shanklin"
+      ]
+    },
+    {
+      "year": 1987,
+      "title": "The Montreal Protocol",
+      "detail": "The Montreal Protocol on Substances that Deplete the Ozone Layer set binding limits on CFC and halon production, later tightened to phase-outs; it became the first UN treaty ratified by every member state.",
+      "people": []
+    },
+    {
+      "year": 2001,
+      "title": "The Stockholm Convention",
+      "detail": "The Stockholm Convention on Persistent Organic Pollutants was adopted, restricting or eliminating twelve initial POPs; it entered into force in 2004 and has since been extended to further substances, including PFOS and PFOA.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Atmospheric Chemistry and Physics: From Air Pollution to Climate Change (3rd edition)",
+      "authors": "John H. Seinfeld and Spyros N. Pandis",
+      "year": 2016,
+      "note": "The standard graduate text on atmospheric chemistry, aerosols, cloud chemistry and acid deposition; the source of many constants used here."
+    },
+    {
+      "title": "Chemistry of the Upper and Lower Atmosphere",
+      "authors": "Barbara J. Finlayson-Pitts and James N. Pitts Jr.",
+      "year": 2000,
+      "note": "Detailed kinetics and photochemistry of the troposphere and stratosphere, with laboratory and field methods."
+    },
+    {
+      "title": "Introduction to Atmospheric Chemistry",
+      "authors": "Daniel J. Jacob",
+      "year": 1999,
+      "note": "A concise, quantitative introduction built on box models, with excellent problems on lifetimes, ozone and the carbon cycle."
+    },
+    {
+      "title": "Aquatic Chemistry: Chemical Equilibria and Rates in Natural Waters (3rd edition)",
+      "authors": "Werner Stumm and James J. Morgan",
+      "year": 1996,
+      "note": "The classic reference for the carbonate system, alkalinity, pe–pH and metal speciation in natural waters."
+    },
+    {
+      "title": "Environmental Organic Chemistry (3rd edition)",
+      "authors": "René P. Schwarzenbach, Philip M. Gschwend and Dieter M. Imboden",
+      "year": 2017,
+      "note": "Partitioning, sorption, transformation and transport of organic pollutants, with quantitative models."
+    },
+    {
+      "title": "Environmental Chemistry (5th edition)",
+      "authors": "Colin Baird and Michael Cann",
+      "year": 2012,
+      "note": "An accessible undergraduate text covering air, water, soils, energy and toxic chemicals, good for context and descriptive chemistry."
+    },
+    {
+      "title": "Environmental Chemistry: A Global Perspective (4th edition)",
+      "authors": "Gary W. vanLoon and Stephen J. Duffy",
+      "year": 2017,
+      "note": "A balanced undergraduate text on atmosphere, hydrosphere and terrestrial chemistry with a global outlook."
+    },
+    {
+      "title": "Multimedia Environmental Models: The Fugacity Approach (2nd edition)",
+      "authors": "Donald Mackay",
+      "year": 2001,
+      "note": "The definitive account of fugacity and multimedia fate models, from Level I to Level III."
+    }
+  ],
   "next": [
     "green-chemistry"
   ]
