@@ -8,26 +8,30 @@
   "tagline": "How light travels, bends and interferes",
   "summary": "Geometrical optics of mirrors and lenses, then the wave theory: interference, diffraction and polarisation.",
   "overview": [
-    "Geometrical optics treats light as rays that reflect and refract. It is an approximation, valid when obstacles are large compared with a wavelength, and it is good enough to design a telescope. The wave theory is the more fundamental account: light is the electromagnetic wave of the magnetism course, and rays are the direction in which the wave’s energy travels.",
-    "The first chapter covers reflection, refraction, the thin-lens equation and optical instruments, with the sign convention stated explicitly. Interference and diffraction then explain what rays cannot: why a double slit produces fringes, why a single slit has a width, and why a grating disperses colours. Polarisation is the evidence that the wave is transverse.",
-    "Path difference, not a memorised formula, is the thing to compute. A bright fringe is a path difference of a whole number of wavelengths, once any phase change on reflection has been counted. The small-angle approximation sin θ ≈ tan θ ≈ θ (in radians) is used constantly and should be labelled when it is used."
+    "Optics is the physics of light: how it travels, bends, reflects, interferes, spreads and carries a direction of oscillation. It is also the most precise measuring technology physics has. Interferometers compare lengths to a fraction of a wavelength, gratings and etalons separate spectral lines a thousandth of a nanometre apart, and the same principles design camera lenses, optical fibres and the largest telescopes.",
+    "The course starts with geometrical optics, in which light travels along rays. Fermat's principle gives the laws of reflection and refraction, and from them total internal reflection, optical fibres, image formation by lenses and mirrors (with a sign convention stated once and kept), ray-transfer matrices and the classical instruments. The remaining chapters use the wave theory, with light as the electromagnetic wave of the magnetism course: interference of two and of many beams, diffraction by slits, gratings and circular apertures, and finally polarisation, described with Jones vectors and matrices and explained at boundaries by the Fresnel equations.",
+    "The single idea to carry through the course is the optical path difference. Bright and dark fringes, thin-film colours, grating orders, the zeros of a diffraction pattern and the retardance of a wave plate are all statements about it, once any phase change of π on reflection has been counted. The small-angle approximation sin θ ≈ tan θ ≈ θ is used constantly and should be labelled each time; many apparent paradoxes are cases where it has quietly failed."
   ],
   "prerequisites": [
     "oscillations"
   ],
   "outcomes": [
-    "Apply the law of reflection and Snell’s law, including total internal reflection.",
-    "Use the mirror and thin-lens equations with a consistent sign convention, and locate images.",
-    "Explain two-slit interference and thin-film interference in terms of path difference.",
-    "Find the single-slit diffraction pattern and the resolving power of a circular aperture.",
-    "Use the grating equation and describe how a spectrometer separates wavelengths.",
-    "Account for polarisation by selective absorption, reflection and birefringence, and use Malus’s law."
+    "Derive the laws of reflection and refraction from Fermat's principle, and apply Snell's law, total internal reflection and the numerical aperture of a fibre.",
+    "Locate images formed by spherical surfaces, thin lenses and mirrors with a consistent sign convention, and use the lensmaker's equation.",
+    "Analyse multi-element paraxial systems with ray-transfer matrices, and compute the magnification of a magnifier, microscope and telescope.",
+    "Explain coherence and coherence length, and calculate two-beam interference patterns for Young's slits, thin films and the Michelson interferometer.",
+    "Derive the Airy transmission function of a Fabry–Pérot interferometer and compute its finesse, free spectral range and resolving power.",
+    "Derive the Fraunhofer patterns of a single slit and of N slits, and use the grating equation and the resolving power mN.",
+    "Apply the Rayleigh criterion θ = 1.22λ/D to telescopes, cameras and the eye, and describe Fresnel diffraction with Fresnel zones.",
+    "Describe polarisation states and optical elements with Jones vectors and matrices, and apply Malus's law.",
+    "Derive the Fresnel equations and Brewster's angle from the electromagnetic boundary conditions, and compute reflectances.",
+    "Explain birefringence, wave plates and optical activity, and design a quarter-wave or half-wave plate."
   ],
   "chapters": [
     {
       "slug": "geometric",
       "title": "Rays and images",
-      "summary": "Reflection, refraction, mirrors, thin lenses and simple instruments.",
+      "summary": "Fermat's principle, refraction and fibres, thin lenses and mirrors, ray matrices and instruments.",
       "requires": [
         "oscillations/travelling-waves"
       ]
@@ -35,7 +39,7 @@
     {
       "slug": "interference",
       "title": "Interference",
-      "summary": "Two-slit interference, coherence, and thin films.",
+      "summary": "Coherence, Young's double slit, thin films, the Michelson and Fabry–Pérot interferometers.",
       "requires": [
         "optics/geometric",
         "oscillations/superposition"
@@ -44,7 +48,7 @@
     {
       "slug": "diffraction",
       "title": "Diffraction",
-      "summary": "Single-slit diffraction, the Rayleigh criterion, and diffraction gratings.",
+      "summary": "Single-slit and N-slit diffraction, gratings, the Rayleigh criterion, Fresnel zones and Fourier optics.",
       "requires": [
         "optics/interference"
       ]
@@ -52,7 +56,7 @@
     {
       "slug": "polarisation",
       "title": "Polarisation",
-      "summary": "Transverse waves, Malus’s law, polarisation by reflection, and birefringence.",
+      "summary": "Jones vectors, Malus's law, the Fresnel equations and Brewster's angle, wave plates and optical activity.",
       "requires": [
         "optics/interference",
         "magnetism/electromagnetic-waves"
@@ -61,52 +65,90 @@
   ],
   "history": [
     {
+      "year": 1021,
+      "title": "Ibn al-Haytham's Book of Optics",
+      "detail": "Ibn al-Haytham (Alhazen), working in Cairo, completed his Book of Optics around 1021, arguing that vision is caused by light entering the eye and studying reflection and refraction by experiment.",
+      "people": [
+        "Ibn al-Haytham"
+      ]
+    },
+    {
       "year": 1621,
       "title": "The sine law of refraction",
-      "detail": "Willebrord Snell found that the sines of the angles of incidence and refraction are in a constant ratio. Descartes published the law in 1637.",
+      "detail": "Willebrord Snell found that the sines of the angles of incidence and refraction are in a constant ratio, but did not publish it. René Descartes published the law in La Dioptrique in 1637.",
       "people": [
         "Willebrord Snell",
         "René Descartes"
       ]
     },
     {
+      "year": 1662,
+      "title": "Fermat's principle of least time",
+      "detail": "Pierre de Fermat derived the law of refraction from the principle that light takes the path of least time, which requires light to travel more slowly in denser media.",
+      "people": [
+        "Pierre de Fermat"
+      ]
+    },
+    {
+      "year": 1690,
+      "title": "Huygens's wave theory",
+      "detail": "Christiaan Huygens's Traité de la lumière explained reflection, refraction and the double refraction of Iceland spar by the propagation of secondary wavelets.",
+      "people": [
+        "Christiaan Huygens"
+      ]
+    },
+    {
       "year": 1704,
-      "title": "Newton’s Opticks",
-      "detail": "Newton’s Opticks set out experiments on the prism, thin films (Newton’s rings) and diffraction, and defended a particle theory of light.",
+      "title": "Newton's Opticks",
+      "detail": "Isaac Newton's Opticks described his experiments on the prism and on the coloured rings of thin films, and argued for a particle theory of light.",
       "people": [
         "Isaac Newton"
       ]
     },
     {
       "year": 1801,
-      "title": "Young’s interference",
-      "detail": "Thomas Young’s lectures of 1801–1803 showed that light from two slits forms fringes, which a particle picture does not explain.",
+      "title": "Young's interference",
+      "detail": "In lectures to the Royal Society from 1801 to 1803, Thomas Young explained the colours of thin films by the interference of waves, and his two-slit experiment measured the wavelength of light.",
       "people": [
         "Thomas Young"
       ]
     },
     {
-      "year": 1818,
-      "title": "Fresnel’s memoir",
-      "detail": "Augustin-Jean Fresnel’s memoir on diffraction, assessed by Poisson and Arago, predicted the bright spot in the shadow of a disc and confirmed the wave theory.",
-      "people": [
-        "Augustin-Jean Fresnel"
-      ]
-    },
-    {
       "year": 1808,
       "title": "Polarisation by reflection",
-      "detail": "Étienne-Louis Malus found that light reflected from glass at a particular angle is polarised, evidence that the light wave is transverse.",
+      "detail": "Étienne-Louis Malus found that light reflected from glass is polarised, named the phenomenon, and stated the cos² law. David Brewster found the law tan θ_B = n in 1815.",
       "people": [
-        "Étienne-Louis Malus"
+        "Étienne-Louis Malus",
+        "David Brewster"
       ]
     },
     {
-      "year": 1865,
-      "title": "Light as an electromagnetic wave",
-      "detail": "Maxwell’s identification of light with an electromagnetic disturbance explains why the wave is transverse and why its speed is 1/√(ε₀μ₀).",
+      "year": 1818,
+      "title": "Fresnel's memoir on diffraction",
+      "detail": "Augustin-Jean Fresnel's memoir on diffraction won the French Academy's prize in 1819 after François Arago observed the bright spot in the shadow of a disc that Poisson had derived from it as an objection.",
       "people": [
-        "James Clerk Maxwell"
+        "Augustin-Jean Fresnel",
+        "François Arago",
+        "Siméon Denis Poisson"
+      ]
+    },
+    {
+      "year": 1821,
+      "title": "Fraunhofer's gratings",
+      "detail": "Joseph von Fraunhofer described diffraction gratings and used them to measure the wavelengths of the dark lines in the solar spectrum.",
+      "people": [
+        "Joseph von Fraunhofer"
+      ]
+    },
+    {
+      "year": 1879,
+      "title": "Rayleigh's criterion",
+      "detail": "Lord Rayleigh gave the criterion for the resolving power of optical instruments. Albert Michelson's interferometer followed in 1881, and Charles Fabry and Alfred Pérot described their multiple-beam interferometer in 1897–1899.",
+      "people": [
+        "Lord Rayleigh",
+        "Albert A. Michelson",
+        "Charles Fabry",
+        "Alfred Pérot"
       ]
     }
   ],
@@ -115,31 +157,37 @@
       "title": "Optics",
       "authors": "Eugene Hecht",
       "year": 2017,
-      "note": "Fifth edition. The standard undergraduate optics book, from rays through Fourier optics."
+      "note": "Fifth edition. The standard undergraduate text, from rays and matrices through interference, diffraction, polarisation and Fourier optics; the sign convention of this course is Hecht's."
     },
     {
       "title": "Introduction to Optics",
       "authors": "Frank L. Pedrotti, Leno M. Pedrotti and Leno S. Pedrotti",
-      "year": 2017,
-      "note": "Third edition. Clear on geometrical optics and on polarisation."
+      "year": 2007,
+      "note": "Third edition. Clear and well organised, with especially good chapters on matrix methods, the Fabry–Pérot interferometer and Jones calculus."
+    },
+    {
+      "title": "Principles of Optics",
+      "authors": "Max Born and Emil Wolf",
+      "year": 1999,
+      "note": "Seventh edition. The classic advanced reference for the electromagnetic theory of optics, diffraction theory, aberrations and coherence."
+    },
+    {
+      "title": "Fundamentals of Photonics",
+      "authors": "Bahaa E. A. Saleh and Malvin Carl Teich",
+      "year": 2019,
+      "note": "Third edition. A modern treatment of Fourier optics, beam optics, fibres, polarisation and lasers, for going beyond the course."
     },
     {
       "title": "University Physics",
       "authors": "Hugh D. Young and Roger A. Freedman",
       "year": 2020,
-      "note": "Fifteenth edition, the optics chapters, for a first pass and for problems."
-    },
-    {
-      "title": "Optics",
-      "authors": "Ajoy Ghatak",
-      "year": 2010,
-      "note": "A thorough account with many worked examples, widely used in physics degrees."
+      "note": "Fifteenth edition, the optics chapters, for a first pass and for many routine problems."
     },
     {
       "title": "Introduction to Electrodynamics",
       "authors": "David J. Griffiths",
       "year": 2017,
-      "note": "Fourth edition, chapter 9, for the electromagnetic wave that geometrical optics approximates."
+      "note": "Fourth edition, chapter 9, for the electromagnetic waves, boundary conditions and Fresnel equations behind the wave optics of this course."
     }
   ],
   "next": [
