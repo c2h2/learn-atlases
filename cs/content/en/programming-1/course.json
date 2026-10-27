@@ -7,9 +7,24 @@
   "order": 10,
   "tagline": "Values and types, control flow, functions, recursion, collections, files, testing and debugging",
   "summary": "Programming is the craft of telling a computer precisely what to do. This course teaches it from the beginning in Python: values, types and expressions, control flow, functions and recursion, lists, dictionaries and strings, files and exceptions, and the habits of testing and debugging that make programs trustworthy.",
-  "overview": [],
+  "overview": [
+    "Programming is the craft of describing a computation so precisely that a machine can carry it out. This first course teaches that craft from the beginning, in Python: what an algorithm and a program are and how source code is executed; the values, types and expressions programs compute with; decisions and loops; functions and recursion; the collections — lists, tuples, strings, dictionaries and sets — that hold real data; files and exceptions for working with data from outside the program; and the habits of testing and debugging that make programs trustworthy.",
+    "The course is organised as a progression from small to large. The first three chapters build a precise model of what happens when a program runs — a sequence of states, changed one statement at a time — and use it to predict the behaviour of short programs before running them. Chapters 4 and 5 introduce functions as the unit of abstraction, with contracts that say what they promise, and recursion as the programming form of induction. Chapters 6 to 8 add data: sequences, keyed collections and files, together with the cost of their operations and the discipline of handling errors. The final chapter turns the specification of a function into tests, and a failing test into a systematic search for the defect.",
+    "Throughout, the emphasis is on reasoning as well as writing. Every loop comes with an argument that it stops and computes the right thing — a variant and an invariant — and every recursive function with a proof by induction. These arguments are short, but they are the difference between a program that seems to work and one that is known to. Every listing in the course has been run, and its output is shown exactly as Python 3.14 printed it.",
+    "What makes programming hard at first is not any single idea but the need for complete precision: the machine does exactly what the program says, never what was meant. The way to learn it is to write and run a great many small programs, to trace them by hand when they surprise you, and to treat every error message as information. The exercises, from routine traces to small proofs and implementations, are designed for exactly that."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Explain what an algorithm and a program are, how CPython compiles source code to bytecode and executes it, and distinguish syntax, runtime and logic errors.",
+    "Predict the value of Python expressions involving integers, floating-point numbers, strings and Booleans, including floor division, operator precedence, short-circuit evaluation and floating-point rounding.",
+    "Write programs with conditionals and loops, and prove them correct using loop invariants and termination arguments based on variants.",
+    "Design programs as collections of small functions with stated preconditions and postconditions, and explain call frames, scope and the passing of functions as values.",
+    "Write recursive functions, prove them correct by induction, analyse how many calls they make, and choose between recursion, memoisation and iteration.",
+    "Manipulate lists, tuples, strings, dictionaries and sets, explain mutability and aliasing, and choose the collection whose operations suit a task.",
+    "Estimate the cost of common operations on Python's built-in collections and recognise code whose running time grows quadratically.",
+    "Read and write text files with explicit encodings, and handle errors with exceptions, raising and catching specific exception types.",
+    "Design test suites using equivalence classes, boundary values, coverage and random testing against a reference, and debug failures systematically, including by bisection."
+  ],
   "chapters": [
     {
       "slug": "computation-and-programs",
@@ -82,8 +97,127 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1843,
+      "title": "Lovelace's notes on the Analytical Engine",
+      "detail": "Ada Lovelace's translation of Luigi Menabrea's paper on Charles Babbage's Analytical Engine appeared with her extensive notes; Note G sets out step by step how the engine could compute Bernoulli numbers, often called the first published program.",
+      "people": [
+        "Ada Lovelace",
+        "Charles Babbage"
+      ]
+    },
+    {
+      "year": 1936,
+      "title": "Turing defines computability",
+      "detail": "Alan Turing's paper 'On computable numbers, with an application to the Entscheidungsproblem' introduced the machines now named after him and showed that some well-defined problems, such as the halting problem, cannot be solved by any algorithm.",
+      "people": [
+        "Alan Turing"
+      ]
+    },
+    {
+      "year": 1945,
+      "title": "The stored-program design",
+      "detail": "John von Neumann's First Draft of a Report on the EDVAC described a computer that holds its program in the same memory as its data, the design of almost every computer since.",
+      "people": [
+        "John von Neumann"
+      ]
+    },
+    {
+      "year": 1949,
+      "title": "Turing's 'Checking a large routine'",
+      "detail": "At a conference in Cambridge in June 1949, Turing proposed annotating a program with assertions about its state and checking them, an early statement of the reasoning behind loop invariants and testing.",
+      "people": [
+        "Alan Turing"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "FORTRAN",
+      "detail": "John Backus's team at IBM delivered the first FORTRAN compiler, showing that programs written in a high-level, algebraic notation could run nearly as fast as hand-written machine code.",
+      "people": [
+        "John Backus"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "The ALGOL 60 report",
+      "detail": "The report on the algorithmic language ALGOL 60, edited by Peter Naur, defined a language with block structure, nested scopes and recursive procedures, and described its syntax formally in what became known as Backus–Naur form.",
+      "people": [
+        "Peter Naur",
+        "John Backus"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "'Go To Statement Considered Harmful'",
+      "detail": "Edsger Dijkstra's letter in Communications of the ACM argued that unrestricted jumps make programs hard to reason about, launching the structured programming built from sequence, selection and iteration.",
+      "people": [
+        "Edsger Dijkstra"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "Hoare's axiomatic basis for programming",
+      "detail": "C. A. R. Hoare's paper 'An axiomatic basis for computer programming', building on Robert Floyd's 1967 work, gave rules for proving programs correct from preconditions, postconditions and loop invariants.",
+      "people": [
+        "C. A. R. Hoare",
+        "Robert Floyd"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "Python is released",
+      "detail": "Guido van Rossum released version 0.9.0 of Python in February 1991; its emphasis on readability later made it one of the most widely taught first programming languages.",
+      "people": [
+        "Guido van Rossum"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Think Python: How to Think Like a Computer Scientist",
+      "authors": "Allen B. Downey",
+      "year": 2024,
+      "note": "Third edition. A short, gentle introduction to programming in Python that parallels most of this course; freely available online."
+    },
+    {
+      "title": "Introduction to Computation and Programming Using Python",
+      "authors": "John V. Guttag",
+      "year": 2021,
+      "note": "Third edition. The textbook of MIT's introductory course; stronger on algorithms, testing and computational problem solving than most first texts."
+    },
+    {
+      "title": "Introduction to Programming in Python: An Interdisciplinary Approach",
+      "authors": "Robert Sedgewick, Kevin Wayne and Robert Dondero",
+      "year": 2015,
+      "note": "A first course built around scientific and mathematical applications, with careful attention to the cost of programs; leads naturally into Sedgewick and Wayne's Algorithms."
+    },
+    {
+      "title": "How to Design Programs",
+      "authors": "Matthias Felleisen, Robert Bruce Findler, Matthew Flatt and Shriram Krishnamurthi",
+      "year": 2018,
+      "note": "Second edition. A systematic method for designing functions from specifications and examples, in a teaching dialect of Racket; the best treatment of design recipes and recursion on data."
+    },
+    {
+      "title": "Structure and Interpretation of Computer Programs",
+      "authors": "Harold Abelson and Gerald Jay Sussman, with Julie Sussman",
+      "year": 1996,
+      "note": "Second edition. The classic MIT text, in Scheme: abstraction, recursion, higher-order functions and interpreters, at a deeper level than this course."
+    },
+    {
+      "title": "The Practice of Programming",
+      "authors": "Brian W. Kernighan and Rob Pike",
+      "year": 1999,
+      "note": "Practical advice on style, interfaces, testing, debugging and performance from two of the authors of Unix tools; examples in C, C++ and Java, lessons for every language."
+    },
+    {
+      "title": "Fluent Python",
+      "authors": "Luciano Ramalho",
+      "year": 2022,
+      "note": "Second edition. For after this course: how Python's data model, collections, functions and iteration really work."
+    }
+  ],
   "next": [
     "program-design",
     "data-structures"
