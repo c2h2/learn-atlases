@@ -7,11 +7,27 @@
   "order": 80,
   "tagline": "Layers and protocols, the application layer, sockets, reliable transport, TCP and congestion control, IP and routing, link layers and wireless networks",
   "summary": "The internet connects billions of devices by layering simple protocols over unreliable links. This course follows the layers from the top down — applications and sockets, reliable transport and TCP congestion control, IP addressing and routing, link layers and switching, wireless and mobile networks — and explains the performance and design principles that let the internet scale.",
-  "overview": [],
+  "overview": [
+    "The internet connects billions of devices that were built by different manufacturers, run different software and belong to tens of thousands of independent organisations — over links that lose, corrupt, delay and reorder packets, and with no one in charge of the whole. That it works at all is the result of a small number of design principles: packet switching and statistical multiplexing, layering with a single narrow waist (IP), the end-to-end argument, and protocols that recover from failure and share capacity by reacting to what they observe. This course explains those principles and the protocols built on them, precisely enough that you could implement them and predict their performance.",
+    "The chapters follow the layers from the top down. After a first chapter on packet switching, delay, throughput and layering, the course studies the application layer — the web and HTTP up to HTTP/3, DNS, email and content distribution — and then how programs use the network through the sockets interface. The transport layer comes next: reliable data transfer from first principles (stop-and-wait, go-back-N, selective repeat, with proofs of their correctness and their sequence-number requirements), then TCP itself with its connection management, round-trip estimation, flow control and congestion control from Reno's AIMD to CUBIC and BBR. The network layer follows with IPv4 and IPv6, addressing, subnetting, NAT and ICMP, then routing — Dijkstra, distance vectors and count-to-infinity, OSPF and BGP — and finally the link layer (error detection, multiple access, Ethernet, ARP, switches) and wireless and mobile networks.",
+    "Everything is made concrete. Formulas for delay, utilisation, fairness and throughput are derived and then checked against small simulations in Python; packet headers, checksums and CRCs are built byte by byte; socket programs in Python and C are run over the loopback interface of one machine, with their real output shown. Every protocol is cited by its RFC or IEEE standard so that you can read the definitive text, and deployment figures are dated, because they change.",
+    "What makes networking hard is that it is distributed: no node sees the whole state, messages are delayed and lost, and correct behaviour emerges from many independent decisions. The way to learn it is to trace protocols by hand, run the programs, change their parameters and watch what breaks. Security runs through the course in the same spirit — spoofing, hijacking, poisoning and denial of service are explained as consequences of design decisions, together with the defences that address them, and every example runs only on your own machine."
+  ],
   "prerequisites": [
     "computer-systems"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Compute transmission, propagation and queueing delays, throughput, bottlenecks and bandwidth–delay products, and use them to predict the performance of a transfer.",
+    "Explain the internet's layered architecture, encapsulation and the end-to-end argument, and identify which layer and which protocol performs a given function.",
+    "Describe HTTP from version 1.1 to HTTP/3, DNS resolution and message formats, email transfer and content distribution, and count the round trips a web transaction needs.",
+    "Write correct TCP and UDP clients and servers in Python and C, with message framing, timeouts and concurrency, and explain why one send is not one receive.",
+    "Design and prove correct reliable transfer protocols, analyse their utilisation, and derive the sequence-number requirements of go-back-N and selective repeat.",
+    "Explain TCP's connection management, RTT estimation and flow control, simulate Reno's congestion control, prove that AIMD converges to fairness, and compare CUBIC and BBR.",
+    "Calculate with IPv4 and IPv6 addresses, CIDR prefixes, subnets and fragments, implement longest-prefix matching, and explain NAT, DHCP and ICMP.",
+    "Run Dijkstra's and the distance-vector algorithms by hand, explain count-to-infinity, and analyse BGP route selection and Gao–Rexford policies, including how prefix hijacks are prevented.",
+    "Compute CRCs and the efficiency of ALOHA and CSMA, and explain Ethernet, ARP, self-learning switches, spanning trees and VLANs.",
+    "Explain how wireless links, CSMA/CA, cellular architectures and mobility differ from wired networks, and quantify how link-layer retransmission protects TCP from wireless losses."
+  ],
   "chapters": [
     {
       "slug": "network-principles",
@@ -86,8 +102,137 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1964,
+      "title": "Distributed communications",
+      "detail": "Paul Baran's RAND memoranda On Distributed Communications proposed a survivable network relaying message blocks hop by hop over redundant links; Donald Davies independently proposed packet switching, and coined the word, at the National Physical Laboratory in 1965–66.",
+      "people": [
+        "Paul Baran",
+        "Donald Davies"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "The first ARPANET link",
+      "detail": "On 29 October 1969 the first message was sent over the ARPANET, from UCLA to SRI; by the end of the year four sites were connected by packet-switching IMPs.",
+      "people": [
+        "Leonard Kleinrock",
+        "Lawrence Roberts"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "A protocol for packet network intercommunication",
+      "detail": "Vint Cerf and Bob Kahn's paper in IEEE Transactions on Communications described a transmission control program for connecting different packet networks — the design that became TCP and IP.",
+      "people": [
+        "Vint Cerf",
+        "Bob Kahn"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Ethernet",
+      "detail": "Robert Metcalfe and David Boggs described Ethernet, built at Xerox PARC in 1973, in Communications of the ACM: a shared cable with carrier sensing, collision detection and binary exponential back-off.",
+      "people": [
+        "Robert Metcalfe",
+        "David Boggs"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "The ARPANET switches to TCP/IP",
+      "detail": "On 1 January 1983 the ARPANET replaced its original host protocol with TCP/IP (RFC 791 and 793 of 1981); the same year Paul Mockapetris designed the domain name system.",
+      "people": [
+        "Jon Postel",
+        "Paul Mockapetris"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "End-to-end arguments",
+      "detail": "Jerome Saltzer, David Reed and David Clark's paper in ACM Transactions on Computer Systems argued that functions such as reliability belong at the end points, giving the internet's architecture its guiding principle.",
+      "people": [
+        "Jerome Saltzer",
+        "David Reed",
+        "David Clark"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Congestion avoidance and control",
+      "detail": "After the congestion collapses of 1986, Van Jacobson's SIGCOMM paper introduced slow start, congestion avoidance, fast retransmit and better RTT estimation into TCP, the basis of internet congestion control ever since.",
+      "people": [
+        "Van Jacobson",
+        "Michael Karels"
+      ]
+    },
+    {
+      "year": 1989,
+      "title": "BGP",
+      "detail": "Kirk Lougheed and Yakov Rekhter published the Border Gateway Protocol as RFC 1105; its fourth version (1995, now RFC 4271) is the internet's single inter-domain routing protocol.",
+      "people": [
+        "Kirk Lougheed",
+        "Yakov Rekhter"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "Classless inter-domain routing",
+      "detail": "RFC 1519 replaced address classes with prefixes of any length, allowing addresses to be allocated in right-sized blocks and routes to be aggregated, which kept routing tables manageable.",
+      "people": [
+        "Vince Fuller",
+        "Tony Li"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "QUIC",
+      "detail": "The IETF published QUIC as RFC 9000: an encrypted, multiplexed transport over UDP that grew out of Google's experiments from 2012 and carries HTTP/3 (RFC 9114, 2022).",
+      "people": [
+        "Jana Iyengar",
+        "Martin Thomson"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Computer Networking: A Top-Down Approach",
+      "authors": "James F. Kurose and Keith W. Ross",
+      "year": 2021,
+      "note": "8th edition. The standard undergraduate text, organised top-down like this course, with clear treatments of reliable transfer, congestion control and routing and many exercises."
+    },
+    {
+      "title": "Computer Networks: A Systems Approach",
+      "authors": "Larry L. Peterson and Bruce S. Davie",
+      "year": 2021,
+      "note": "6th edition. Emphasises design principles and implementation; strong on congestion control, quality of service and the reasons behind protocol choices. Also available openly online."
+    },
+    {
+      "title": "Computer Networks",
+      "authors": "Andrew S. Tanenbaum, Nick Feamster and David J. Wetherall",
+      "year": 2021,
+      "note": "6th edition. Bottom-up and encyclopaedic, with thorough coverage of the physical and link layers, wireless networks and network security."
+    },
+    {
+      "title": "TCP/IP Illustrated, Volume 1: The Protocols",
+      "authors": "Kevin R. Fall and W. Richard Stevens",
+      "year": 2011,
+      "note": "2nd edition of Stevens's classic. Explains IP, ICMP, UDP, TCP and DNS through real packet traces; the best way to see what the protocols actually put on the wire."
+    },
+    {
+      "title": "UNIX Network Programming, Volume 1: The Sockets Networking API",
+      "authors": "W. Richard Stevens, Bill Fenner and Andrew M. Rudoff",
+      "year": 2003,
+      "note": "3rd edition. The definitive guide to the sockets interface in C, including IPv6, concurrency models and the many corner cases of real network programs."
+    },
+    {
+      "title": "Data Networks",
+      "authors": "Dimitri Bertsekas and Robert Gallager",
+      "year": 1992,
+      "note": "2nd edition. A rigorous treatment of queueing models, multiple access, routing and flow control, with proofs; for readers who want the mathematics behind the protocols."
+    }
+  ],
   "next": [
     "security",
     "distributed-systems"
