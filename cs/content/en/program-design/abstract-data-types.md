@@ -136,8 +136,7 @@ If $AF$ is not injective on valid reps, comparing reps component by component gi
 ::: example Equality without a canonical form {#ex-cross-equal}
 Write `equal_rat` for the unreduced representation, and show that the relation it computes on reps is an equivalence relation whose classes are exactly the sets of reps with the same abstract value.
 ::: solution
-Two reps $(a, b)$ and $(c, d)$ (with $b, d 
-e 0$) represent the same rational exactly when $a/b = c/d$, that is when $ad = cb$ — a test that needs no division and no gcd:
+Two reps $(a, b)$ and $(c, d)$ (with $b, d \neq 0$) represent the same rational exactly when $a/b = c/d$, that is when $ad = cb$ — a test that needs no division and no gcd:
 
 ```python
 def equal_rat(x, y):
