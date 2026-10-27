@@ -7,9 +7,23 @@
   "order": 60,
   "tagline": "Describing data, probability, estimation, hypothesis tests, comparing groups, categorical data, experimental design and linear models",
   "summary": "Biological data are variable, so conclusions have to be drawn with statistics. This course covers describing data, probability distributions, estimation and confidence intervals, hypothesis tests and their pitfalls, comparisons between groups, categorical data, the design of experiments, and regression and linear models, with examples from field, laboratory and genetic studies.",
-  "overview": [],
+  "overview": [
+    "Biological data are variable. No two plants, mice or cultures are alike, measurements carry error, and every sample is one of many that could have been drawn. Biostatistics is the set of methods that lets biologists describe that variation honestly, estimate the quantities they care about with a stated precision, decide whether an apparent effect is larger than chance would produce, and — before any of this — design experiments that can answer the question asked. It underlies every quantitative claim in genetics, ecology, physiology, molecular biology and evolution, and the reproducibility of published research depends on it.",
+    "The course follows the life of a study. It begins with types of data, summary statistics and graphs, and with the probability distributions — binomial, Poisson and normal — that model biological counts and measurements. It then builds the logic of inference: sampling distributions, standard errors and confidence intervals; hypothesis tests, P-values, power and the multiple-testing problem; t-tests, analysis of variance and rank-based tests for comparing groups; χ² and exact tests for counts and genetic ratios. The chapter on experimental design — replication, randomisation, blocking, controls, blinding, pseudoreplication and sample size — comes before the final chapters on correlation, regression, allometry, and linear and generalised linear models.",
+    "The examples are real classic data sets wherever possible — Darwin's cross- and self-fertilised maize as analysed by Fisher, Mendel's peas, Bortkiewicz's horse kicks, Anderson's irises, Anscombe's quartet and Bliss's beetle mortality data — supplemented by clearly labelled simulations with fixed random seeds, and every number has been recomputed. The underlying mathematics is developed in Maths Atlas's probability and statistics courses, to which the lessons link rather than repeat it; clinical trials and clinical epidemiology are in Medicine Atlas. The hardest part of the subject is not the arithmetic, which software does, but the reasoning: what the experimental unit is, what a P-value does and does not say, and when an association can be read as a cause. The lessons therefore stress interpretation, common misreadings and design throughout."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Classify biological variables and summarise them with appropriate measures of location and spread, transformations and graphs that show the data.",
+    "Calculate probabilities from the binomial, Poisson and normal distributions and judge which model suits a given kind of biological data.",
+    "Explain sampling distributions and the central limit theorem, and compute standard errors and confidence intervals for means and proportions.",
+    "Carry out and interpret hypothesis tests, explaining P-values, type I and II errors and power in line with the 2016 ASA statement, and apply Bonferroni, Holm and Benjamini–Hochberg corrections.",
+    "Compare groups with paired, Student and Welch t-tests, one-way ANOVA with Tukey's procedure, and Wilcoxon, Mann–Whitney and Kruskal–Wallis tests, checking their assumptions.",
+    "Analyse counts with χ² goodness-of-fit and contingency tests and Fisher's exact test, including tests of Mendelian ratios, and report odds ratios and relative risks.",
+    "Design experiments with appropriate replication, randomisation, blocking, controls and blinding, identify the experimental unit, recognise pseudoreplication, and calculate sample sizes for a required power.",
+    "Fit and interpret correlation and least-squares regression, diagnose problems with residual plots, and estimate allometric scaling exponents on log–log scales.",
+    "Build and interpret linear models with several predictors, ANCOVA and interactions, and logistic and Poisson regression, and compare models by likelihood-ratio tests and AIC."
+  ],
   "chapters": [
     {
       "slug": "data-and-variation",
@@ -83,8 +97,137 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1710,
+      "title": "Arbuthnot's sex-ratio argument",
+      "detail": "John Arbuthnot showed that male christenings had exceeded female ones in London in each of 82 years, a chance of (1/2)^82 if the sexes were equally likely — often called the first significance test.",
+      "people": [
+        "John Arbuthnot"
+      ]
+    },
+    {
+      "year": 1876,
+      "title": "Darwin's maize experiment",
+      "detail": "In The Effects of Cross and Self Fertilisation in the Vegetable Kingdom Charles Darwin reported heights of 15 pairs of cross- and self-fertilised Zea mays grown in shared pots, data that Galton and later Fisher analysed.",
+      "people": [
+        "Charles Darwin",
+        "Francis Galton"
+      ]
+    },
+    {
+      "year": 1886,
+      "title": "Galton's regression towards mediocrity",
+      "detail": "Francis Galton's analysis of the heights of 928 adult children and their parents showed offspring regressing towards the mean and gave regression its name; he introduced the correlation coefficient in 1888.",
+      "people": [
+        "Francis Galton"
+      ]
+    },
+    {
+      "year": 1900,
+      "title": "Pearson's χ² test",
+      "detail": "Karl Pearson published the χ² goodness-of-fit test in the Philosophical Magazine, giving biologists a general way to compare observed counts with a hypothesis.",
+      "people": [
+        "Karl Pearson"
+      ]
+    },
+    {
+      "year": 1908,
+      "title": "Student's t distribution",
+      "detail": "William Sealy Gosset, a Guinness brewer writing as 'Student', derived the distribution of the standardised mean of a small sample in 'The probable error of a mean' in Biometrika.",
+      "people": [
+        "William Sealy Gosset"
+      ]
+    },
+    {
+      "year": 1925,
+      "title": "Statistical Methods for Research Workers",
+      "detail": "Ronald Fisher's handbook, written at Rothamsted Experimental Station, made significance tests, the analysis of variance and the 0.05 convention routine in biology; The Design of Experiments followed in 1935.",
+      "people": [
+        "Ronald Fisher"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "The Neyman–Pearson theory of testing",
+      "detail": "Jerzy Neyman and Egon Pearson introduced alternative hypotheses, type I and type II errors and power, and the lemma identifying most powerful tests.",
+      "people": [
+        "Jerzy Neyman",
+        "Egon Pearson"
+      ]
+    },
+    {
+      "year": 1945,
+      "title": "Rank tests",
+      "detail": "Frank Wilcoxon introduced the signed-rank and rank-sum tests; Henry Mann and Donald Whitney gave the U statistic and its distribution in 1947.",
+      "people": [
+        "Frank Wilcoxon",
+        "Henry Mann",
+        "Donald Whitney"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "Pseudoreplication named",
+      "detail": "Stuart Hurlbert's paper in Ecological Monographs defined pseudoreplication and found it in 48 % of the ecological field experiments he surveyed that applied inferential statistics.",
+      "people": [
+        "Stuart Hurlbert"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "The false discovery rate",
+      "detail": "Yoav Benjamini and Yosef Hochberg introduced the false discovery rate and a step-up procedure to control it, later the standard for genomic screens; in 2016 the American Statistical Association issued its statement on P-values.",
+      "people": [
+        "Yoav Benjamini",
+        "Yosef Hochberg"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Analysis of Biological Data",
+      "authors": "Michael C. Whitlock, Dolph Schluter",
+      "year": 2020,
+      "note": "3rd edition. The clearest undergraduate introduction for biologists, built on real biological examples; covers almost all of this course, with an emphasis on estimation and design."
+    },
+    {
+      "title": "Biometry: The Principles and Practice of Statistics in Biological Research",
+      "authors": "Robert R. Sokal, F. James Rohlf",
+      "year": 2012,
+      "note": "4th edition. The classic comprehensive reference, strong on ANOVA, G-tests and the analysis of biological measurement data."
+    },
+    {
+      "title": "Biostatistical Analysis",
+      "authors": "Jerrold H. Zar",
+      "year": 2010,
+      "note": "5th edition. Encyclopaedic and procedural, with worked examples and tables for a very wide range of tests, including non-parametric and circular methods."
+    },
+    {
+      "title": "Experimental Design and Data Analysis for Biologists",
+      "authors": "Gerry P. Quinn, Michael J. Keough",
+      "year": 2023,
+      "note": "2nd edition (Cambridge University Press). Linear and mixed models, design and model selection for ecologists and other biologists, at the level of the last three chapters and beyond."
+    },
+    {
+      "title": "Experimental Design for the Life Sciences",
+      "authors": "Graeme D. Ruxton, Nick Colegrave",
+      "year": 2016,
+      "note": "4th edition. A short, readable guide to replication, controls, randomisation, blocking, pseudoreplication and sample size, written for students planning their own experiments."
+    },
+    {
+      "title": "The Design of Experiments",
+      "authors": "Ronald A. Fisher",
+      "year": 1935,
+      "note": "The founding text of randomisation, replication and blocking, with the lady tasting tea and Darwin's maize; still worth reading for its reasoning."
+    },
+    {
+      "title": "An Introduction to Generalized Linear Models",
+      "authors": "Annette J. Dobson, Adrian G. Barnett",
+      "year": 2018,
+      "note": "4th edition. A concise introduction to GLMs, logistic and Poisson regression, including Bliss's beetle data."
+    }
+  ],
   "next": [
     "ecology",
     "bioinformatics"
