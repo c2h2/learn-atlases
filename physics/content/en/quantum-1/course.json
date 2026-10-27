@@ -8,21 +8,24 @@
   "tagline": "Wavefunctions, operators and the hydrogen atom",
   "summary": "The experimental origins, the Schrödinger equation, piecewise potentials, the harmonic oscillator, the formal theory, angular momentum, hydrogen and spin.",
   "overview": [
-    "Quantum mechanics replaces the trajectory of a particle by a wavefunction, whose modulus squared is a probability density, and replaces dynamical quantities by operators. The Schrödinger equation is the equation of motion. Almost every exact solution an undergraduate meets is in this course: the free particle, the infinite and finite wells, the step, the harmonic oscillator and the hydrogen atom.",
-    "The first four chapters are the wave mechanics of one dimension, where the new ideas can be seen without angular momentum. The formal chapter then says what a state, an observable and a measurement are, so that angular momentum, hydrogen and spin are applications of a single structure rather than three separate tricks. Spin is introduced as an angular momentum that is not a function of position; the Stern–Gerlach experiment is the evidence.",
-    "Normalisation, boundary conditions and the difference between a stationary state and a wave packet are the points to be careful about. A stationary state has a time-independent probability density even though the wavefunction carries a phase e^{−iEt/ℏ}. Superpositions are what move."
+    "Quantum mechanics replaces the trajectory of a particle by a complex wavefunction $\\Psi$, whose squared modulus is a probability density, and replaces position, momentum and energy by operators. The Schrödinger equation $i\\hbar\\,\\partial_t\\Psi = \\hat H\\Psi$ is the equation of motion. Almost every exact solution an undergraduate meets is in this course: the infinite and finite square wells, the step and the barrier, the harmonic oscillator, the rigid rotor and the hydrogen atom, together with the two-state system of spin one-half.",
+    "The course begins with the experiments that broke classical physics (black-body radiation, the photoelectric effect, Compton scattering, atomic spectra and electron diffraction) and does each calculation with real numbers. Three chapters of wave mechanics in one dimension follow, where quantisation, reflection and tunnelling can be seen without the complication of angular momentum. The formal chapter then states what a state, an observable and a measurement are, and proves the uncertainty principle, so that angular momentum, hydrogen and spin appear as applications of a single structure rather than as three separate tricks.",
+    "The hard part is not the mathematics, which is linear algebra and second-order differential equations, but learning to read it. Keep separate a stationary state, whose probability density is frozen, and a superposition, which moves at the Bohr frequencies; an expectation value and a measured result; a commutator and a product. Check normalisation and boundary conditions every time, and estimate before you calculate: comparing $h\\nu$ with $k_BT$, or a de Broglie wavelength with the size of the system, tells you whether quantum effects matter at all."
   ],
   "prerequisites": [
     "oscillations",
     "math-methods"
   ],
   "outcomes": [
-    "State the experimental evidence that classical mechanics fails at atomic scales, and the de Broglie relation.",
-    "Solve the time-independent Schrödinger equation for piecewise constant potentials and interpret the solutions.",
-    "Solve the harmonic oscillator with raising and lowering operators and with the differential equation.",
-    "Use Dirac notation, compute expectation values and uncertainties, and state the measurement postulate.",
-    "Add angular momenta in the cases needed for atoms, and use spherical harmonics at the level of their properties.",
-    "Solve the hydrogen atom for the energy levels and the angular part of the wavefunction, and describe spin-1/2."
+    "Explain how black-body radiation, the photoelectric effect, Compton scattering and atomic spectra contradict classical physics, and compute the quantities involved with Planck's constant.",
+    "Normalise a wavefunction, compute probabilities, expectation values, uncertainties and probability currents, and use Ehrenfest's theorem.",
+    "Separate the time-dependent Schrödinger equation into stationary states and expand a given initial state in energy eigenfunctions to find its time evolution.",
+    "Solve the time-independent Schrödinger equation for piecewise constant potentials, including the transcendental equation of the finite well and the transmission coefficient of a barrier.",
+    "Derive the spectrum and eigenfunctions of the harmonic oscillator with ladder operators and with the power-series method.",
+    "Use Dirac notation, Hermitian operators and the measurement postulates, and prove the Robertson uncertainty relation.",
+    "Derive the eigenvalues of angular momentum from its commutation relations, and use spherical harmonics and the rules for adding two angular momenta.",
+    "Solve the hydrogen atom for its energy levels, degeneracies and low-lying wavefunctions, and compute spectral lines with the reduced mass.",
+    "Describe spin one-half with Pauli matrices, predict Stern–Gerlach outcomes along arbitrary axes, follow Larmor precession, and form triplet and singlet states."
   ],
   "chapters": [
     {
@@ -95,8 +98,8 @@
   "history": [
     {
       "year": 1900,
-      "title": "Planck’s quantum",
-      "detail": "On 14 December 1900 Planck presented a derivation of the black-body spectrum in which the energy of an oscillator is an integer multiple of hν.",
+      "title": "Planck's quantum",
+      "detail": "On 14 December 1900 Max Planck presented a derivation of the black-body spectrum in which the energy of an oscillator of frequency ν comes in multiples of hν.",
       "people": [
         "Max Planck"
       ]
@@ -104,43 +107,85 @@
     {
       "year": 1905,
       "title": "Light quanta",
-      "detail": "Einstein’s paper on the photoelectric effect treated light of frequency ν as quanta of energy hν, against the wave theory then in possession.",
+      "detail": "Einstein proposed that light is absorbed and emitted in quanta of energy hν and predicted the linear law of the photoelectric effect, which Millikan confirmed in 1916.",
       "people": [
-        "Albert Einstein"
+        "Albert Einstein",
+        "Robert Millikan"
       ]
     },
     {
       "year": 1913,
-      "title": "Bohr’s atom",
-      "detail": "Bohr combined Rutherford’s nucleus with a quantisation condition and obtained the Balmer formula for hydrogen. The orbits were a temporary picture; the numbers survived.",
+      "title": "Bohr's atom",
+      "detail": "Niels Bohr combined Rutherford's nuclear atom with quantised orbits and derived the Rydberg constant of hydrogen from e, m and h.",
       "people": [
         "Niels Bohr"
       ]
     },
     {
+      "year": 1922,
+      "title": "Stern–Gerlach experiment",
+      "detail": "A beam of silver atoms passed through an inhomogeneous magnetic field split into two discrete spots, showing that the component of the atomic magnetic moment is quantised.",
+      "people": [
+        "Otto Stern",
+        "Walther Gerlach"
+      ]
+    },
+    {
+      "year": 1923,
+      "title": "Compton scattering",
+      "detail": "Arthur Compton measured the increase in wavelength of X-rays scattered by electrons and explained it by photons carrying momentum h/λ.",
+      "people": [
+        "Arthur Compton"
+      ]
+    },
+    {
       "year": 1924,
       "title": "Matter waves",
-      "detail": "Louis de Broglie’s thesis assigned a wavelength h/p to a particle. Davisson and Germer, and independently G. P. Thomson, observed the diffraction of electrons in 1927.",
+      "detail": "Louis de Broglie's thesis assigned a wavelength h/p to every particle; Davisson and Germer, and independently G. P. Thomson, observed electron diffraction in 1927.",
       "people": [
-        "Louis de Broglie"
+        "Louis de Broglie",
+        "Clinton Davisson",
+        "Lester Germer",
+        "George Paget Thomson"
+      ]
+    },
+    {
+      "year": 1925,
+      "title": "Matrix mechanics and spin",
+      "detail": "Heisenberg's paper of July 1925, developed with Born and Jordan, founded matrix mechanics; in November Uhlenbeck and Goudsmit proposed that the electron has an intrinsic angular momentum ħ/2.",
+      "people": [
+        "Werner Heisenberg",
+        "Max Born",
+        "Pascual Jordan",
+        "George Uhlenbeck",
+        "Samuel Goudsmit"
       ]
     },
     {
       "year": 1926,
-      "title": "Wave mechanics",
-      "detail": "Schrödinger’s papers of 1926 introduced the wave equation and solved the hydrogen atom. Heisenberg’s matrix mechanics of 1925 is the same theory, as Schrödinger and Dirac showed.",
+      "title": "Wave mechanics and the Born rule",
+      "detail": "Schrödinger published his wave equation and solved hydrogen with it; Born proposed that the squared modulus of the wavefunction is a probability.",
       "people": [
         "Erwin Schrödinger",
-        "Werner Heisenberg"
+        "Max Born"
       ]
     },
     {
       "year": 1927,
-      "title": "Uncertainty",
-      "detail": "Heisenberg’s uncertainty paper, and Born’s probability interpretation of the year before, fixed the reading of the wavefunction that this course uses.",
+      "title": "Uncertainty and Pauli matrices",
+      "detail": "Heisenberg published the uncertainty relations, Kennard proved Δx Δp ≥ ħ/2, and Pauli gave the two-component theory of electron spin.",
       "people": [
         "Werner Heisenberg",
-        "Max Born"
+        "Earle Kennard",
+        "Wolfgang Pauli"
+      ]
+    },
+    {
+      "year": 1932,
+      "title": "Hilbert space",
+      "detail": "John von Neumann's Mathematische Grundlagen der Quantenmechanik gave the theory its rigorous formulation in terms of self-adjoint operators on Hilbert space.",
+      "people": [
+        "John von Neumann"
       ]
     }
   ],
@@ -149,31 +194,37 @@
       "title": "Introduction to Quantum Mechanics",
       "authors": "David J. Griffiths and Darrell F. Schroeter",
       "year": 2018,
-      "note": "Third edition. The book this course tracks. The problems are part of the text."
-    },
-    {
-      "title": "Quantum Mechanics",
-      "authors": "B. H. Bransden and C. J. Joachain",
-      "year": 2000,
-      "note": "Second edition. More detail on the hydrogen atom and on the experimental origins."
+      "note": "Third edition. The standard first course, which this one follows closely; clear derivations and excellent problems."
     },
     {
       "title": "Principles of Quantum Mechanics",
       "authors": "R. Shankar",
-      "year": 2011,
-      "note": "Second edition, corrected. Begins with the linear algebra the formalism chapter needs. A good second reading."
+      "year": 1994,
+      "note": "Second edition. Opens with the linear algebra of Hilbert space and is the best companion to the formalism chapter; thorough on the oscillator and angular momentum."
+    },
+    {
+      "title": "A Modern Approach to Quantum Mechanics",
+      "authors": "John S. Townsend",
+      "year": 2012,
+      "note": "Second edition. Starts from spin and Stern–Gerlach experiments and builds the formalism from two-state systems; a good alternative order."
     },
     {
       "title": "Modern Quantum Mechanics",
       "authors": "J. J. Sakurai and Jim Napolitano",
       "year": 2020,
-      "note": "Third edition. For the next course. The opening chapter on spin is already worth reading."
+      "note": "Third edition. The graduate-level sequel; its first chapters on Stern–Gerlach, Dirac notation and angular momentum deepen this course."
+    },
+    {
+      "title": "Quantum Mechanics",
+      "authors": "B. H. Bransden and C. J. Joachain",
+      "year": 2000,
+      "note": "Second edition. More detail on the experimental origins, the hydrogen atom and one-dimensional problems, with many worked examples."
     },
     {
       "title": "The Feynman Lectures on Physics, Volume III",
       "authors": "Richard P. Feynman, Robert B. Leighton and Matthew Sands",
       "year": 1965,
-      "note": "Starts from spin and amplitudes. Read it for the picture, and Griffiths for the calculations."
+      "note": "Quantum mechanics from amplitudes and spin; read it for physical insight alongside a more systematic text."
     }
   ],
   "next": [
