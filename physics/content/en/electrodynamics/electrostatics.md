@@ -1,242 +1,662 @@
-The electrostatics course of the physics curriculum builds the field, the potential, the capacitance, and the current, from the Coulomb's law, and the content is the same as the boundary-value problem, with the source and the boundary as the two, and the two combined as the content of the field. The content of this chapter is the boundary-value view, the one that the later field theory (the magnetostatics, the radiation, the relativistic fields) is built on: the Poisson equation, the $-\nabla^2 V = \rho/\varepsilon_0$, as the equation; the boundary condition, the $V$ fixed on the boundary, or the $\partial V/\partial n$ fixed, or the mixed, as the three cases of the boundary; the **uniqueness theorem**, the content that the equation and the boundary fix the solution, and the two, the Poisson and the boundary, as the two that determine the field; and the **method of images**, the replacement of the conductor (or the dielectric) by the image charges, the content that the boundary-value problem, with the conductor as the boundary, has the simple solution, the image-charge solution, and the two, the conductor and the image, as the two views of the same boundary condition.
+A point charge sits ten centimetres from the centre of an earthed metal sphere of radius five centimetres. How hard is it pulled towards the sphere? Coulomb's law alone cannot answer, because the sphere's induced charge is not given: it arranges itself so that the surface stays at zero potential. The real question is to find the potential that satisfies a differential equation outside the sphere and takes a prescribed value on it. That is a **boundary-value problem**, and most of electrostatics beyond the first course is of this kind.
 
-The plan is: the Poisson equation, and the two forms (the $V$ and the $\mathbf{E}$), and the boundary condition, the three cases; the uniqueness theorem, and the proof, and the content of the linearity and the superposition, and the two, the Poisson and the boundary, as the two that fix the solution; the dipole, as the limit of the two charges, and the multipole expansion, as the general content of the far field, and the two, the dipole and the monopole, as the two of the far field, and the two as the two limits of the same $V$; the method of images, the two, the plane and the sphere, as the two geometries, and the image-charge solution, and the force, and the energy, as the two results of the image; and the two, the uniqueness and the image, as the two contents of the boundary-value problem, and the two combined as the content of the electrostatics as the boundary-value problem.
+This chapter turns the integral laws of [[electrostatics/gauss-law]] and [[electrostatics/potential]] into one partial differential equation, proves that its solution is fixed by the boundary data, and then develops the three standard ways of finding that solution: images, separation of variables, and the multipole expansion. It ends with dielectrics. For a charge of $1\,\mathrm{nC}$ the answer to the opening question is $0.80\,\mu\mathrm{N}$, and it will take three lines.
 
-## The Poisson equation, and the boundary condition
+The vector calculus is that of [[math-methods/vector-calculus]] and [[math-methods/integral-theorems]]. The Fourier series of [[math-methods/fourier]] and the Legendre polynomials of [[math-methods/odes]] are used without re-derivation, and the free-space Green's function $1/(4\pi\lvert\mathbf r-\mathbf r'\rvert)$ is the one constructed in [[math-methods/green-functions]]. SI units throughout, with $\varepsilon_0 = 8.8541878128\times10^{-12}\,\mathrm{F/m}$ and $1/(4\pi\varepsilon_0) = 8.98755\times10^{9}\,\mathrm{N\,m^2/C^2}$.
 
-The electrostatics, the $\mathbf{E}$ field, the $\rho$ the source, the $\varepsilon_0$ the medium: the Gauss's law, the $\nabla\cdot\mathbf{E} = \rho/\varepsilon_0$, and the $\nabla\times\mathbf{E} = 0$ (the electrostatic, the $\mathbf{E}$ as the gradient, the $\mathbf{E} = -\nabla V$), the two combined as the two, the divergence and the curl, and the two as the two equations of the $\mathbf{E}$, and the $\nabla\times\mathbf{E} = 0$ the $\mathbf{E} = -\nabla V$, and the $\nabla\cdot\mathbf{E} = \rho/\varepsilon_0$ the $\nabla\cdot(-\nabla V) = \rho/\varepsilon_0$, the
+## Poisson's and Laplace's equations {#poisson}
+
+Electrostatics rests on two differential statements about the field $\mathbf E$ of charges at rest. Gauss's law in differential form is $\nabla\cdot\mathbf E = \rho/\varepsilon_0$. The field of a static charge distribution is also curl-free, $\nabla\times\mathbf E = \mathbf 0$, because it is a superposition of Coulomb fields, each of which is a gradient. So $\mathbf E = -\nabla V$ for a scalar potential $V$, defined up to a constant, and Gauss's law becomes one second-order equation for one unknown.
+
+::: definition Poisson's and Laplace's equations {#def-poisson}
+The electrostatic potential $V$ of a charge density $\rho$ satisfies **Poisson's equation**
 
 $$
--\nabla^2 V = \frac{\rho}{\varepsilon_0}, \qquad \nabla^2 V \equiv \partial_x^2 V + \partial_y^2 V + \partial_z^2 V,
+\nabla^2 V = -\frac{\rho}{\varepsilon_0}, \qquad \nabla^2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}.
 $$ {#eq-poisson}
-the **Poisson equation**, and the $\rho = 0$ the
+
+In a region with no charge it reduces to **Laplace's equation**
 
 $$
-\nabla^2 V = 0,
+\nabla^2 V = 0.
 $$ {#eq-laplace}
-the **Laplace equation**, and the two, the Poisson and the Laplace, as the two equations, the source and the no-source, and the two combined as the content of the electrostatics, and the two as the two forms of the same $V$, and the two as the two, the $\rho \neq 0$ and the $\rho = 0$, of the same Poisson.
 
-The boundary condition, on the boundary $S$ of the region $\Omega$: the three cases, the **Dirichlet** (the $V$ fixed on the $S$, the $V|_S = f$), the **Neumann** (the $\partial V/\partial n$ fixed on the $S$, the $\partial V/\partial n|_S = g$), and the **mixed** (the two, the $V$ on the part of the $S$, and the $\partial V/\partial n$ on the other), and the two, the Dirichlet and the Neumann, as the two, and the mixed as the two, and the three as the three cases of the boundary, and the two combined (the Dirichlet or the Neumann) as the content of the boundary-value problem, and the two as the two, the $V$ and the $\partial V/\partial n$, of the same boundary.
+A twice-differentiable function satisfying [[#eq-laplace]] on a region is called **harmonic** there.
+:::
 
-The conductor, the $\rho_f$ the surface charge, the $\mathbf{E}$ the two, the normal and the tangential, on the surface: the tangential $\mathbf{E} = 0$ (the $V$ constant on the conductor, the equipotential, the content of the conductor as the equipotential), and the normal $\mathbf{E} = \sigma_f/\varepsilon_0$ (the $\sigma_f$ the surface charge, the content of the Gauss's law at the surface, and the two, the tangential and the normal, as the two boundary conditions of the conductor, and the two combined as the content of the conductor as the boundary, and the two as the two, the $V$ (the Dirichlet) and the $\partial V/\partial n$ (the Neumann) of the same conductor, and the two as the two cases of the boundary condition, the conductor fixing the two).
+In all of space, with $V \to 0$ at infinity, the solution of [[#eq-poisson]] is the Coulomb integral
 
-## The uniqueness theorem
+$$
+V(\mathbf r) = \frac{1}{4\pi\varepsilon_0}\int \frac{\rho(\mathbf r')}{\lvert\mathbf r - \mathbf r'\rvert}\,\dd\tau',
+$$ {#eq-coulomb-int}
 
-::: theorem Uniqueness {#thm-unique}
-The Poisson (or the Laplace) equation, in the region $\Omega$, with the Dirichlet boundary condition (the $V$ fixed on the $S = \partial\Omega$), has the **unique** solution. With the Neumann boundary condition (the $\partial V/\partial n$ fixed on the $S$), the solution is unique up to the constant, and the two, the Dirichlet and the Neumann, as the two uniqueness, and the two combined as the content of the boundary-value problem, and the two as the two, the $V$ and the $\partial V/\partial n$, of the same uniqueness.
+because $\nabla^2(1/\lvert\mathbf r-\mathbf r'\rvert) = -4\pi\,\delta^3(\mathbf r - \mathbf r')$. This is the Green's-function solution of [[math-methods/green-functions]]. It is the right answer only when every charge is known in advance. As soon as conductors are present, part of $\rho$ is the unknown induced charge, and [[#eq-coulomb-int]] becomes an equation for itself. Poisson's equation with boundary conditions avoids the circularity: we solve for $V$ in the space between the conductors and read the induced charge off afterwards.
+
+### Boundary conditions {#bc}
+
+At a surface carrying a surface charge density $\sigma$, apply Gauss's law to a thin pillbox straddling the surface and the circulation law to a thin rectangular loop. Letting the thickness go to zero gives, with $\hat{\mathbf n}$ the unit normal from side 1 to side 2,
+
+$$
+E_2^{\perp} - E_1^{\perp} = \frac{\sigma}{\varepsilon_0}, \qquad \mathbf E_2^{\parallel} = \mathbf E_1^{\parallel}, \qquad V_2 = V_1.
+$$ {#eq-jump}
+
+In terms of the potential the first condition reads $\partial V_2/\partial n - \partial V_1/\partial n = -\sigma/\varepsilon_0$. A conductor in equilibrium has $\mathbf E = \mathbf 0$ inside, so its whole volume is one equipotential, the field just outside is normal to its surface, and the induced surface charge is
+
+$$
+\sigma = -\varepsilon_0 \frac{\partial V}{\partial n},
+$$ {#eq-sigma-cond}
+
+with $\hat{\mathbf n}$ the outward normal of the conductor. Every problem in this chapter ends with this formula.
+
+::: example A uniformly charged slab between earthed plates {#ex-slab}
+Two large parallel metal plates at $x = 0$ and $x = d$ are both earthed. The space between them is filled with a uniform charge density $\rho$. Find $V(x)$, the maximum potential, and the charge induced on each plate per unit area. Evaluate for $d = 1.00\,\mathrm{cm}$ and $\rho = 1.00\times10^{-5}\,\mathrm{C/m^3}$.
+::: solution
+The plates are large, so $V$ depends on $x$ only and [[#eq-poisson]] becomes the ordinary differential equation $V'' = -\rho/\varepsilon_0$. Integrating twice,
+
+$$
+V(x) = -\frac{\rho}{2\varepsilon_0}x^2 + C_1 x + C_2 .
+$$
+
+The conditions $V(0) = 0$ and $V(d) = 0$ give $C_2 = 0$ and $C_1 = \rho d/(2\varepsilon_0)$, so
+
+$$
+V(x) = \frac{\rho}{2\varepsilon_0}\,x(d - x).
+$$
+
+The maximum is at the midplane, $V(d/2) = \rho d^2/(8\varepsilon_0)$. With the numbers,
+
+$$
+V_{\max} = \frac{(1.00\times10^{-5})(1.00\times10^{-2})^2}{8\,(8.854\times10^{-12})} = 14.1\,\mathrm{V}.
+$$
+
+At the plate $x = 0$ the outward normal of the conductor points in $+x$, so [[#eq-sigma-cond]] gives $\sigma = -\varepsilon_0 V'(0) = -\rho d/2$. At $x = d$ the outward normal points in $-x$, and $\sigma = +\varepsilon_0 V'(d) = -\rho d/2$. Together the plates cancel the slab's charge $\rho d$ per unit area, so the field outside is zero. Numerically, $\sigma = -5.00\times10^{-8}\,\mathrm{C/m^2}$ on each plate.
+:::
+:::
+
+### The mean-value property {#mean-value}
+
+Harmonic functions have a remarkable rigidity, which is the root of everything that follows.
+
+::: theorem Mean-value property {#thm-mean}
+Let $V$ be harmonic on a region containing the closed ball of radius $R$ centred at $\mathbf r_0$. Then $V(\mathbf r_0)$ equals the average of $V$ over the sphere of radius $R$ about $\mathbf r_0$:
+
+$$
+V(\mathbf r_0) = \frac{1}{4\pi R^2}\oint_{\lvert\mathbf r-\mathbf r_0\rvert = R} V\,\dd a .
+$$ {#eq-mean}
 :::
 
 ::: proof
-**Dirichlet.** Let the $V_1$ and the $V_2$ be the two solutions, and the $u = V_1 - V_2$, the $u$ the $\nabla^2 u = 0$ (the $\nabla^2 V_1 = \nabla^2 V_2 = -\rho/\varepsilon_0$, the two cancel), and the $u|_S = 0$ (the $V_1|_S = V_2|_S = f$, the two cancel). The Green's second identity, the $\int_\Omega (u \nabla^2 u - u \nabla^2 u)\, dV = \oint_S (u \nabla u - u \nabla u) \cdot d\mathbf{S} \cdot ... $ the clean statement, the Green's first identity, the $\int_\Omega |\nabla u|^2\, dV + \int_\Omega u \nabla^2 u\, dV = \oint_S u \frac{\partial u}{\partial n}\, dS$, and the $\nabla^2 u = 0$ and the $u|_S = 0$, the two give the $\int_\Omega |\nabla u|^2\, dV = 0$, and the $|\nabla u|^2 \geq 0$ (the square, the two, the $u$ and the $\nabla u$, as the two, and the two combined as the $|\nabla u|^2 \geq 0$), the $\nabla u = 0$ in the $\Omega$, the $u$ constant, and the $u|_S = 0$, the $u = 0$ (the constant is the $0$), and the $V_1 = V_2$, the uniqueness. The two, the Green's first identity and the $|\nabla u|^2 \geq 0$, as the two of the proof, and the two combined as the content of the uniqueness, and the two as the two, the identity and the positivity, of the same Dirichlet uniqueness.
-
-**Neumann.** Let the $V_1$ and the $V_2$ be the two solutions, and the $u = V_1 - V_2$, the $\nabla^2 u = 0$, and the $\partial u/\partial n|_S = 0$ (the $\partial V_1/\partial n = \partial V_2/\partial n = g$, the two cancel). The Green's first identity, the same, the $\int_\Omega |\nabla u|^2\, dV + \int_\Omega u\nabla^2 u\, dV = \oint_S u \partial u/\partial n\, dS$, the $\nabla^2 u = 0$ and the $\partial u/\partial n|_S = 0$, the two give the $\int_\Omega |\nabla u|^2\, dV = 0$, the $\nabla u = 0$, the $u$ constant, and the $V_1 = V_2 + C$, the uniqueness up to the constant. The content of the $C$ (the constant) is the Neumann does not fix the $V$ absolute, only the $\mathbf{E} = -\nabla V$ (the $\nabla C = 0$, the $C$ the no-$\mathbf{E}$), and the two, the Dirichlet (the $C$ fixed, by the $V|_S$) and the Neumann (the $C$ free), as the two, and the two as the two uniqueness, and the two combined as the content of the two boundary conditions.
-:::
-
-::: warning The Neumann, and the $\int \rho$
-The Neumann boundary condition, in the Poisson (the $\rho \neq 0$), has the consistency condition, the $\oint_S \partial V/\partial n\, dS = -\int_\Omega \rho/\varepsilon_0\, dV \cdot ... $ directly, the Gauss's law, the $\oint_S \mathbf{E}\cdot d\mathbf{S} = Q_{\text{enc}}/\varepsilon_0$, and the $\mathbf{E} = -\nabla V$, the $-\oint_S \nabla V \cdot d\mathbf{S} = Q_{\text{enc}}/\varepsilon_0 \cdot ... $ the $\int \rho/\varepsilon_0\, dV = \oint_S \partial V/\partial n \cdot ... $ the clean statement, the $\oint_S \frac{\partial V}{\partial n} dS = -\int_\Omega \nabla^2 V\, dV = \int_\Omega \rho/\varepsilon_0\, dV$ (the $\nabla^2 V = -\rho/\varepsilon_0$), and the two, the boundary (the $\oint \partial V/\partial n$) and the source (the $\int \rho/\varepsilon_0$), as the two, and the two as the consistency, the $\oint \partial V/\partial n\, dS = Q_{\text{tot}}/\varepsilon_0$, and the two combined as the content of the Neumann-Poisson consistency, and the two as the reason the Neumann-Poisson has the $\int \rho$ constraint, and the two as the two, the boundary and the source, of the same Gauss.
-:::
-
-## The dipole, and the multipole expansion
-
-The dipole, the two, the $+q$ and the $-q$, the separation $\mathbf{d}$, the limit of the $q \to \infty$, the $d \to 0$, the $p = q d$ fixed (the $\mathbf{p} = q \mathbf{d}$, the dipole moment): the $V$, at the $\mathbf{r}$ (the $|\mathbf{r}| \gg d$), is the
+Write the average over the sphere of radius $s$ as $\bar V(s) = \frac{1}{4\pi}\oint V(\mathbf r_0 + s\hat{\mathbf u})\,\dd\Omega$, an integral over directions $\hat{\mathbf u}$ that no longer depends on $s$ through its domain. Differentiating under the integral,
 
 $$
-V(\mathbf{r}) = \frac{1}{4\pi\varepsilon_0} \frac{\mathbf{p}\cdot \hat{\mathbf{r}}}{|\mathbf{r}|^2} = \frac{1}{4\pi\varepsilon_0} \frac{q d \cos\theta}{r^2},
-$$ {#eq-dipole}
-and the $\mathbf{E} = -\nabla V$, the two, the radial and the angular, the $\mathbf{E} = \frac{1}{4\pi\varepsilon_0} \frac{1}{r^3}\left[2(\mathbf{p}\cdot\hat{\mathbf{r}})\hat{\mathbf{r}} - \mathbf{p}\right]$, and the two, the $1/r^3$ (the $\mathbf{E}$) and the $1/r^2$ (the $V$), as the two, the field and the potential, of the dipole, and the two combined as the content of the dipole, and the two as the two, the $V$ and the $\mathbf{E}$, of the same dipole.
-
-::: proposition The multipole expansion {#prop-mult}
-The $V$, of the general $\rho$ (the finite, the $|\mathbf{r}| \gg$ the source), is the
-
+\deriv{\bar V}{s} = \frac{1}{4\pi}\oint \hat{\mathbf u}\cdot\nabla V\,\dd\Omega = \frac{1}{4\pi s^2}\oint_{\text{sphere } s} \nabla V\cdot\dd\mathbf a = \frac{1}{4\pi s^2}\int_{\text{ball } s} \nabla^2 V\,\dd\tau = 0,
 $$
-V(\mathbf{r}) = \frac{1}{4\pi\varepsilon_0} \left[ \frac{Q}{r} + \frac{\mathbf{p}\cdot\hat{\mathbf{r}}}{r^2} + \frac{1}{2r^3} \sum_{ij} Q_{ij} \hat{r}_i \hat{r}_j + \cdots \right],
-$$ {#eq-mult}
-the $Q = \int \rho\, dV$ (the monopole, the total charge), the $\mathbf{p} = \int \mathbf{r}' \rho\, dV$ (the dipole, the first moment), the $Q_{ij} = \int \rho (3x_i' x_j' - r'^2 \delta_{ij})\, dV$ (the quadrupole, the second), and the three, the $Q$ and the $\mathbf{p}$ and the $Q_{ij}$, as the three multipoles, and the three as the three, the $1/r$, the $1/r^2$, the $1/r^3$, of the same $V$, and the three combined as the content of the far field, and the three as the three, the charge and the dipole and the quadrupole, of the same multipole expansion.
+
+by the divergence theorem and [[#eq-laplace]]. So $\bar V(s)$ is constant for $0 < s \le R$. As $s \to 0$, continuity of $V$ gives $\bar V(s) \to V(\mathbf r_0)$. Hence $\bar V(R) = V(\mathbf r_0)$.
 :::
 
-The content of the multipole is the $1/r^n$ of the $n$-multipoles, and the two, the $Q$ and the $\mathbf{p}$, as the two leading, and the two as the two, the $1/r$ and the $1/r^2$, of the same $V$, and the two combined as the content of the far field, and the two as the reason the neutral atom (the $Q = 0$) has the dipole (the $\mathbf{p} \neq 0$) as the leading, and the two as the two, the ion (the $Q \neq 0$) and the atom (the $Q = 0$, the $\mathbf{p}$), of the same multipole, and the two combined as the content of the atomic and the ionic, and the two as the two limits of the same $V$.
+::: corollary Earnshaw's theorem {#cor-earnshaw}
+A harmonic function has no strict local maximum or minimum inside its region. Consequently a point charge cannot rest in stable equilibrium at a point where the electrostatic field is produced only by other, fixed charges.
+:::
 
-::: example The dipole, from the two charges {#ex-dip}
-The two, the $+q$ at the $(0,0,d/2)$ and the $-q$ at the $(0,0,-d/2)$, the $\mathbf{p} = q d\, \hat{\mathbf{z}}$. Find the $V$, at the $(0, 0, z)$ (the $z \gg d$), and verify the [[#eq-dipole]].
+::: proof
+If $V$ had a strict local maximum at $\mathbf r_0$, then on a small sphere about $\mathbf r_0$ every value would be less than $V(\mathbf r_0)$, and so would their average, contradicting [[#thm-mean]]. The same argument rules out a minimum. A test charge $q$ at $\mathbf r_0$ has potential energy $qV$, and the other charges are outside a small ball about $\mathbf r_0$, so $V$ is harmonic there. Stable equilibrium requires a strict local minimum of $qV$, which [[#thm-mean]] forbids for either sign of $q$.
+:::
+
+Earnshaw's theorem (1842) explains why ions are trapped with oscillating fields (the Paul trap) or with a magnetic field added (the Penning trap) and never with static electric fields alone.
+
+## The uniqueness theorems {#uniqueness}
+
+A method of solving Poisson's equation is useful only if the answer it produces is *the* answer. The following theorem says that boundary data of the right kind fix the solution completely, so that any function satisfying the equation and the boundary conditions, however it was found, is correct.
+
+::: theorem Uniqueness for Poisson's equation {#thm-unique}
+Let $\Omega$ be a connected region bounded by closed surfaces $S = S_1\cup\dots\cup S_N$. Let $V_1$ and $V_2$ be twice continuously differentiable in $\Omega$, with first derivatives continuous up to $S$, and suppose both satisfy $\nabla^2 V = -\rho/\varepsilon_0$ with the same $\rho$. Suppose that on each $S_i$ either $V_1 = V_2$ (Dirichlet data) or $\partial V_1/\partial n = \partial V_2/\partial n$ (Neumann data). Then $V_1 = V_2$ throughout $\Omega$, except that if Neumann data are given on every $S_i$, then $V_1 - V_2$ is a constant and the field $\mathbf E$ is still unique. If $\Omega$ extends to infinity, the same holds provided both potentials vanish there at least as fast as $1/r$, with gradients falling at least as fast as $1/r^2$.
+:::
+
+::: proof
+Let $W = V_1 - V_2$. Subtracting the two Poisson equations, $\nabla^2 W = 0$ in $\Omega$. The product rule gives
+
+$$
+\nabla\cdot(W\nabla W) = \nabla W\cdot\nabla W + W\,\nabla^2 W = \lvert\nabla W\rvert^2 .
+$$
+
+Integrate over $\Omega$ and apply the divergence theorem, with $\hat{\mathbf n}$ the outward normal of $\Omega$:
+
+$$
+\int_\Omega \lvert\nabla W\rvert^2\,\dd\tau = \oint_S W\,\frac{\partial W}{\partial n}\,\dd a = \sum_{i=1}^{N} \oint_{S_i} W\,\frac{\partial W}{\partial n}\,\dd a .
+$$
+
+On each $S_i$ either $W = 0$ or $\partial W/\partial n = 0$, so every surface integral vanishes. For an unbounded region, enclose everything in a large sphere of radius $L$; on it $W = O(1/L)$ and $\partial W/\partial n = O(1/L^2)$ while the area is $4\pi L^2$, so its contribution is $O(1/L) \to 0$. Hence $\int_\Omega\lvert\nabla W\rvert^2\,\dd\tau = 0$. The integrand is continuous and non-negative, so $\nabla W = \mathbf 0$ everywhere in $\Omega$, and since $\Omega$ is connected $W$ is a constant. If Dirichlet data are given on some $S_i$, or the region is unbounded with $W\to0$, the constant is zero. Otherwise it is undetermined, but $\mathbf E_1 - \mathbf E_2 = -\nabla W = \mathbf 0$ regardless.
+:::
+
+A first consequence: inside an empty cavity in a conductor, $V$ is harmonic and equals the conductor's constant potential on the wall, so by [[#thm-unique]] it is that constant throughout and $\mathbf E = \mathbf 0$, whatever charges are outside. This is the Faraday cage; the argument is static, and fast-changing fields are a different matter ([[electrodynamics/waves-in-media]]).
+
+The theorem covers conductors held at given voltages by batteries: their surfaces carry Dirichlet data. Isolated conductors are different. Their potential is not given; their total charge is. A second form of the theorem handles that.
+
+::: corollary Uniqueness with given conductor charges {#cor-unique-charge}
+Let the region $\Omega$ outside conductors $C_1,\dots,C_N$ contain a given charge density $\rho$, let each conductor carry a given total charge $Q_i$, and let $V \to 0$ at infinity as in [[#thm-unique]]. Then the electric field in $\Omega$ is unique.
+:::
+
+::: proof
+Let $\mathbf E_1, \mathbf E_2$ be two solutions with potentials $V_1, V_2$, and let $W = V_1 - V_2$. Each conductor is an equipotential in either solution, so $W$ takes a constant value $W_i$ on the surface $S_i$ of $C_i$. With the normal of $\Omega$ pointing into the conductor, the calculation of [[#thm-unique]] gives
+
+$$
+\int_\Omega \lvert\nabla W\rvert^2\,\dd\tau = \sum_i W_i \oint_{S_i}\frac{\partial W}{\partial n}\,\dd a .
+$$
+
+By Gauss's law applied to a surface hugging $C_i$, $\oint_{S_i}\mathbf E\cdot\hat{\mathbf n}_{\mathrm{out}}\,\dd a = Q_i/\varepsilon_0$ for either solution, where $\hat{\mathbf n}_{\mathrm{out}}$ points out of the conductor, opposite to the normal of $\Omega$. Since $-\nabla W = \mathbf E_1 - \mathbf E_2$, the derivative along the normal of $\Omega$ is $\partial W/\partial n = (\mathbf E_1 - \mathbf E_2)\cdot\hat{\mathbf n}_{\mathrm{out}}$, and its integral over $S_i$ is $(Q_i - Q_i)/\varepsilon_0 = 0$. The surface at infinity contributes nothing, as before. Every term vanishes, so $\nabla W = \mathbf 0$ and $\mathbf E_1 = \mathbf E_2$.
+:::
+
+::: quiz
+A charge-free region is bounded by two closed surfaces. On the outer one $V$ is specified; on the inner one nothing is given. Is the potential in the region determined?
+- [ ] Yes, because one boundary condition is enough for a second-order equation.
+- [x] No: data are required on every part of the boundary, and different values on the inner surface give different solutions.
+- [ ] Yes, but only up to an additive constant.
+- [ ] No, because Laplace's equation has no solutions with Dirichlet data.
 ::: solution
-The $V$, at the $(0,0,z)$, is the $\frac{1}{4\pi\varepsilon_0}\left[\frac{q}{|z - d/2|} - \frac{q}{|z + d/2|}\right] \cdot ... $ for the $z \gg d$, the $|z - d/2| \approx z - d/2$ and the $|z + d/2| \approx z + d/2$ (the $z > 0$, the two, the $z$ and the $\pm d/2$, as the two), and the
-
-$$
-\frac{1}{z - d/2} - \frac{1}{z + d/2} = \frac{(z + d/2) - (z - d/2)}{z^2 - d^2/4} = \frac{d}{z^2 - d^2/4} \approx \frac{d}{z^2}
-$$
-
-(the $d^2/4 \ll z^2$), and the $V \approx \frac{1}{4\pi\varepsilon_0} \frac{q d}{z^2} = \frac{1}{4\pi\varepsilon_0} \frac{p}{r^2}$ (the $r = z$, the $\cos\theta = 1$, the axial), matching the [[#eq-dipole]] at the axis. The two, the $d/z^2$ and the $p/r^2$, as the two, the direct and the $\mathbf{p}$, of the same dipole, and the two combined as the content of the dipole as the limit of the two charges, and the two as the two, the $q \to \infty$, $d \to 0$, $p = qd$ fixed, of the same dipole.
+Between concentric spheres of radii $a<b$ with $V(b) = 0$, every function $V = C(1/r - 1/b)$ is harmonic and satisfies the outer condition, for any $C$. Fixing $V$, $\partial V/\partial n$, or (for a conductor) the total charge on the inner sphere picks one value of $C$.
 :::
 :::
 
-::: example The quadrupole, and the neutral molecule {#ex-quad}
-The four, the $+q$ at the $(\pm a, 0, 0)$ and the $-q$ at the $(0, \pm a, 0)$, the $Q = 0$, the $\mathbf{p} = 0$ (the symmetric), the $Q_{zz}$ the quadrupole. Find the leading $V$, at the $(0, 0, z)$ (the $z \gg a$).
+## The method of images {#images}
+
+Uniqueness licenses guessing. Any function that satisfies Poisson's equation in the region and the boundary conditions on its edges is the solution. The **method of images** guesses by placing fictitious charges *outside* the region, where they do not disturb Poisson's equation inside, with sizes and positions chosen to make the conductor surfaces equipotentials.
+
+### The infinite earthed plane {#image-plane}
+
+A point charge $q$ sits at height $d$ above the earthed conducting plane $z = 0$. The region is $z > 0$, with $V = 0$ on the plane and at infinity. Put an image charge $-q$ at $(0,0,-d)$. For $z>0$,
+
+$$
+V(x,y,z) = \frac{q}{4\pi\varepsilon_0}\left[\frac{1}{\sqrt{x^2+y^2+(z-d)^2}} - \frac{1}{\sqrt{x^2+y^2+(z+d)^2}}\right].
+$$ {#eq-image-plane}
+
+The image lies outside the region, so $\nabla^2 V = -\rho/\varepsilon_0$ holds there with only the real charge as source. On $z = 0$ the two distances are equal and $V = 0$, and $V \to 0$ at infinity. By [[#thm-unique]] this is the potential. The induced surface charge follows from [[#eq-sigma-cond]] with the outward normal $+\hat{\mathbf z}$:
+
+$$
+\sigma(s) = -\varepsilon_0\frac{\partial V}{\partial z}\bigg|_{z=0} = -\frac{q\,d}{2\pi\,(s^2+d^2)^{3/2}}, \qquad s^2 = x^2+y^2 .
+$$
+
+Since $\int_0^\infty s\,\dd s/(s^2+d^2)^{3/2} = 1/d$, the total induced charge is $\int_0^\infty\sigma\,2\pi s\,\dd s = -q$, equal to the image charge. The force on $q$ is that of the image, $q^2/(4\pi\varepsilon_0(2d)^2)$ towards the plane, because the field in $z>0$ is the field of the two point charges.
+
+::: warning The image is not real, and neither is its energy
+The image charge reproduces the field only in the physical region. Below the plane the true field is zero, not the field of $-q$. One consequence catches many students: the work needed to bring $q$ in from infinity to height $d$ is $-q^2/(4\pi\varepsilon_0\cdot 4d)$, *half* the interaction energy $-q^2/(4\pi\varepsilon_0\cdot 2d)$ of two real charges $q$ and $-q$ at separation $2d$. Integrate the force $q^2/(16\pi\varepsilon_0 z^2)$ from $\infty$ to $d$ to see it; the factor arises because the image moves as $q$ moves, and the field energy exists only on one side of the plane.
+:::
+
+### The earthed sphere {#image-sphere}
+
+The sphere is the case that answers the opening question, and it is not obvious that a single image works.
+
+::: theorem Image in an earthed sphere {#thm-sphere-image}
+A point charge $q$ is at distance $a$ from the centre of an earthed conducting sphere of radius $R < a$. Outside the sphere the potential is that of $q$ together with an image charge
+
+$$
+q' = -\frac{R}{a}\,q \quad\text{at distance}\quad b = \frac{R^2}{a}
+$$ {#eq-sphere-image}
+
+from the centre, on the line joining the centre to $q$. The total charge induced on the sphere is $q'$.
+:::
+
+::: proof
+Put the centre at the origin and $q$ at $a\hat{\mathbf z}$, the image at $b\hat{\mathbf z}$ with $b = R^2/a < R$. For a point on the sphere, $\mathbf r = R\hat{\mathbf r}$ with polar angle $\theta$,
+
+$$
+\lvert\mathbf r - b\hat{\mathbf z}\rvert^2 = R^2 - 2Rb\cos\theta + b^2 = R^2 - \frac{2R^3}{a}\cos\theta + \frac{R^4}{a^2} = \frac{R^2}{a^2}\left(a^2 - 2aR\cos\theta + R^2\right) = \frac{R^2}{a^2}\lvert\mathbf r - a\hat{\mathbf z}\rvert^2 .
+$$
+
+Every point of the sphere is therefore $R/a$ times as far from the image point as from $q$. With $q' = -qR/a$,
+
+$$
+\frac{q}{\lvert\mathbf r-a\hat{\mathbf z}\rvert} + \frac{q'}{\lvert\mathbf r-b\hat{\mathbf z}\rvert} = \frac{q}{\lvert\mathbf r-a\hat{\mathbf z}\rvert} - \frac{qR}{a}\cdot\frac{a}{R\,\lvert\mathbf r-a\hat{\mathbf z}\rvert} = 0
+$$
+
+on the sphere. The image lies inside the sphere, outside the region $r > R$, and the potential tends to zero at infinity. By [[#thm-unique]] the potential of $q$ and $q'$ is the solution for $r > R$. For the induced charge, apply Gauss's law to a sphere of radius slightly greater than $R$: in the physical problem it encloses only the induced charge; in the image problem the same field gives flux $q'/\varepsilon_0$. The fields agree on that surface, so the induced charge is $q'$.
+:::
+
+The set of points whose distances to two fixed points are in a fixed ratio is a sphere, the *sphere of Apollonius*.
+
+::: example The force on a charge near an earthed sphere {#ex-sphere-force}
+A charge $q = 1.00\,\mathrm{nC}$ is $a = 10.0\,\mathrm{cm}$ from the centre of an earthed sphere of radius $R = 5.00\,\mathrm{cm}$. Find the force on it. Then find the force if the sphere is instead isolated and uncharged.
 ::: solution
-The $Q = 0$ (the two, the $+q$ and the $-q$, the four, the two $+$ and the two $-$, the $Q = 2q - 2q = 0$), the $\mathbf{p} = 0$ (the symmetric, the two, the $x$ and the $y$, the two axes, the two, the $+q$ and the $-q$, the two cancel), and the $V$, at the $(0,0,z)$, is the $\frac{q}{4\pi\varepsilon_0}\left[\frac{2}{\sqrt{z^2 + a^2}} - \frac{2}{z}\right] \cdot ... $ directly, the four, the two $+q$ at the $(\pm a, 0, 0)$, the $\sqrt{z^2 + a^2}$ each, and the two $-q$ at the $(0, \pm a, 0)$, the $\sqrt{z^2 + a^2}$ each, and the two, the $+$ and the $-$, the same distance, the $\sqrt{z^2 + a^2}$, and the $V = \frac{q}{4\pi\varepsilon_0}\left[\frac{2}{\sqrt{z^2+a^2}} - \frac{2}{\sqrt{z^2+a^2}}\right] = 0 \cdot ... $ the two, the $+$ and the $-$, at the same distance, the $V = 0$, at the $(0,0,z)$, and the two, the monopole and the dipole, the two zero, and the quadrupole, the $V = 0$, at the axis (the symmetric), and the two, the symmetry and the zero, as the two, and the two as the content of the symmetric quadrupole (the $V = 0$, at the axis, the two, the $+$ and the $-$, at the same distance), and the two as the two, the $Q = 0$, the $\mathbf{p} = 0$, of the same symmetric charge, and the two combined as the content of the quadrupole as the leading, for the general (the non-symmetric) neutral, and the two as the two, the symmetric (the $V = 0$, the axis) and the non-symmetric (the $\mathbf{p} \neq 0$, the dipole), of the same multipole.
-:::
-:::
-
-## The method of images
-
-The conductor, the grounded (the $V = 0$, on the surface), the plane (the $z = 0$, the $z < 0$ the conductor, the $z > 0$ the vacuum), the $+q$ at the $(0,0,a)$: the image, the $-q$ at the $(0,0,-a)$ (the reflection, about the plane), and the $V$, in the $z > 0$, is the
+By [[#eq-sphere-image]], $q' = -(5.00/10.0)(1.00\,\mathrm{nC}) = -0.500\,\mathrm{nC}$, at $b = R^2/a = 2.50\,\mathrm{cm}$ from the centre. The separation of $q$ and $q'$ is $a - b = 7.50\,\mathrm{cm}$, so the force is
 
 $$
-V(\mathbf{r}) = \frac{1}{4\pi\varepsilon_0}\left[\frac{q}{|\mathbf{r} - a \hat{\mathbf{z}}|} + \frac{(-q)}{|\mathbf{r} + a \hat{\mathbf{z}}|}\right],
-$$ {#eq-image}
-and the $V|_{z=0} = 0$ (the two, the $+q$ and the $-q$, at the $z = 0$, the two, the $a$ and the $a$, the same distance, the two cancel), and the $\nabla^2 V = 0$, in the $z > 0$ (the two, the $+q$ and the $-q$, the two, the $\nabla^2 (1/|...|) = 0$, in the $z > 0$, the two, the source and the image, the two, the $z > 0$ and the $z < 0$, the two, and the two combined as the $\nabla^2 V = 0$, in the $z > 0$), and the two, the $V|_{z=0} = 0$ and the $\nabla^2 V = 0$, as the two, satisfying the Dirichlet and the Laplace, and the two combined as the content of the image, and the two as the two, the boundary and the Laplace, of the same image solution, and the two, the uniqueness (the [[#thm-unique]]) and the image, as the two, and the two as the two, and the image solution is the unique, by the [[#thm-unique]].
-
-::: proposition The image-charge method, the plane {#thm-image}
-The $+q$, at the $(0,0,a)$, and the grounded conducting plane, at the $z = 0$: the image, the $-q$ at the $(0,0,-a)$, and the $V$ of [[#eq-image]], is the unique solution, by the [[#thm-unique]]. The force, on the $+q$, is the
-
-$$
-\mathbf{F} = \frac{1}{4\pi\varepsilon_0} \frac{-q^2}{(2a)^2} \hat{\mathbf{z}} = -\frac{q^2}{16\pi\varepsilon_0 a^2} \hat{\mathbf{z}},
-$$ {#eq-force}
-(attractive, toward the plane), and the surface charge, on the plane, the $\sigma_f = -\varepsilon_0 \partial V/\partial z|_{z=0^+}$, the two, the force and the $\sigma_f$, as the two results of the image, and the two as the two, the $\mathbf{F}$ and the $\sigma_f$, of the same image.
-:::
-
-The content of the image is the two, the conductor and the image, as the two views of the same boundary condition, and the two combined as the content of the method of images, and the two as the reason the image is the simple solution, and the two as the two, the $V$ (the [[#eq-image]]) and the $\mathbf{F}$ (the [[#eq-force]]) of the same image, and the two combined as the content of the image-charge method.
-
-::: example The image-charge force {#ex-imgforce}
-The $q = 1\,\mathrm{nC}$, at the $a = 1\,\mathrm{cm}$ from the grounded plane. Find the force.
-::: solution
-The force is the Coulomb attraction of the charge $q$ toward its image $-q$, which lies a distance $2a$ away:
-
-$$
-F = \frac{1}{4\pi\varepsilon_0} \frac{q^2}{(2a)^2} = 8.99\times 10^{9} \times \frac{(10^{-9})^2}{(2 \times 10^{-2})^2} = 8.99 \times 10^{9} \times \frac{10^{-18}}{4 \times 10^{-4}} = \frac{8.99}{4} \times 10^{-5} \approx 2.25 \times 10^{-5}\,\mathrm{N},
+F = \frac{1}{4\pi\varepsilon_0}\frac{q\,q'}{(a-b)^2} = (8.988\times10^{9})\frac{(1.00\times10^{-9})(-0.500\times10^{-9})}{(0.0750)^2} = -7.99\times10^{-7}\,\mathrm{N},
 $$
 
-directed toward the plane (the attraction to the opposite image charge), about a quarter of a milli-newton acting on a nano-coulomb a centimetre from the plane. The force is real — it can be measured on the charge — even though only one real charge is present: the conductor's induced surface charge is equivalent, for the field in $z > 0$, to the image, and the $1/(2a)^2$ is the geometry of the two-charge picture, and the two, the image and the conductor, give the same $\mathbf{F}$ of [[#eq-force]].
+an attraction of $0.799\,\mu\mathrm{N}$. This is the opening question.
+
+If the sphere is isolated and neutral, its total charge must be zero and it must be an equipotential, though not necessarily at zero. Add a second image $q'' = -q' = +0.500\,\mathrm{nC}$ at the centre. A point charge at the centre adds a constant on the sphere's surface, so the sphere remains an equipotential, and the total charge enclosed is now zero. By [[#cor-unique-charge]] this is the solution. The force is
+
+$$
+F = \frac{q}{4\pi\varepsilon_0}\left[\frac{q'}{(a-b)^2} + \frac{-q'}{a^2}\right] = (8.988)\left[\frac{-0.500}{0.0750^2} + \frac{0.500}{0.100^2}\right]\times10^{-9}\,\mathrm{N} = -3.50\times10^{-7}\,\mathrm{N}.
+$$
+
+A neutral sphere still attracts the charge, because the induced negative charge sits nearer to $q$ than the compensating positive charge, but less than half as strongly. At large $a$ the attraction falls as $1/a^5$, the signature of an induced dipole.
 :::
 :::
+
+::: widget charges
+charges: 1, 2, 0; -0.5, 0.5, 0
+caption: The real charge $q = 1$ at distance $a = 2$ from the centre and its image $q' = -\tfrac12$ at $b = \tfrac12$, which makes the circle of radius $R = 1$ about the origin an equipotential. Look along that circle (it passes through $x = \pm1$ and $y = \pm1$): every arrow crosses it at right angles, as the field must at the surface of a conductor. Outside the circle the arrows are the true field. Inside, they are the field of the fictitious pair and mean nothing; the true field in the metal is zero.
+:::
+
+## Separation of variables {#separation}
+
+Images work for planes, spheres and a few other shapes. A systematic method for boundaries that are coordinate surfaces is separation of variables: look for solutions of Laplace's equation that are products of functions of one coordinate each, then build the solution as a series of such products, fitting the coefficients to the boundary data.
+
+### Cartesian coordinates {#cartesian}
+
+Consider an infinitely long slot: two earthed plates $y = 0$ and $y = a$, extending from $x = 0$ to $x = \infty$, closed at $x = 0$ by a strip held at potential $V_0$ and insulated from the plates. Nothing depends on $z$. We want $V(x,y)$ in the slot, with $V \to 0$ as $x \to \infty$.
+
+Try $V = X(x)Y(y)$. Laplace's equation divided by $XY$ is
+
+$$
+\frac{X''}{X} + \frac{Y''}{Y} = 0 .
+$$
+
+The first term depends only on $x$, the second only on $y$, so each is a constant: $X''/X = k^2$, $Y''/Y = -k^2$. The conditions $Y(0) = Y(a) = 0$ force $Y = \sin(n\pi y/a)$ with $k = n\pi/a$, $n = 1,2,\dots$, and decay as $x\to\infty$ selects $X = e^{-n\pi x/a}$. Linearity allows any superposition,
+
+$$
+V(x,y) = \sum_{n=1}^\infty C_n\, e^{-n\pi x/a}\sin\frac{n\pi y}{a}.
+$$
+
+The last condition, $V(0,y) = V_0$ for $0<y<a$, is a Fourier sine series for the constant $V_0$. Multiplying by $\sin(m\pi y/a)$ and integrating over $0<y<a$, with $\int_0^a \sin(n\pi y/a)\sin(m\pi y/a)\,\dd y = \tfrac a2\delta_{nm}$,
+
+$$
+C_n = \frac{2}{a}\int_0^a V_0\sin\frac{n\pi y}{a}\,\dd y = \frac{2V_0}{n\pi}\bigl(1 - \cos n\pi\bigr) = \begin{cases} 4V_0/(n\pi), & n \text{ odd},\\ 0, & n \text{ even}.\end{cases}
+$$
+
+So
+
+$$
+V(x,y) = \frac{4V_0}{\pi}\sum_{n\ \mathrm{odd}}\frac{1}{n}\,e^{-n\pi x/a}\sin\frac{n\pi y}{a} .
+$$ {#eq-slot}
+
+Each term is harmonic, the series converges for $x > 0$ (the exponentials make it converge very fast), and it meets every boundary condition. By [[#thm-unique]] it is the answer. The sum can even be done in closed form, $V = (2V_0/\pi)\arctan\bigl[\sin(\pi y/a)/\sinh(\pi x/a)\bigr]$, but the series is the method that generalises.
 
 ::: widget plot
-x: -4 4
-y: -2 4
-f: (Math.abs(x-1) < 0.05) ? 0 : (1/Math.abs(x-1) - 1/Math.abs(x+1))
-caption: The image-charge potential (in units of $q/(4\pi\varepsilon_0 a)$) for the $q$ at the $z = a$ and the image $-q$ at the $z = -a$, along the $z$-axis: $V(z)/[q/(4\pi\varepsilon_0 a)] = 1/|z/a - 1| - 1/|z/a + 1|$ with $a = 1$, and the $z = 0$ the plane (the $V = 0$), the content of [[#eq-image]].
+f: sum(4/((2*k-1)*pi)*exp(-(2*k-1)*pi*s)*sin((2*k-1)*pi*x), k, 1, N)
+x: 0, 1
+y: -0.1, 1.3
+sliders: N=1:1:30:1; s=0:0:1:0.02
+labels: V/V₀ across the slot
+caption: The partial sum of [[#eq-slot]] with $N$ odd terms, plotted against $y/a$ across the slot at depth $s = x/a$. Start at $s = 0$, the end strip: with few terms the curve wobbles about $1$, and as you raise $N$ it flattens but keeps an overshoot of about $18\%$ near the corners (the Gibbs phenomenon), because a sine series is trying to reproduce a jump to zero at the plates. Now move $s$ up to $0.1$: the wobbles vanish, and by $s = 0.5$ a single term is indistinguishable from the sum. Higher harmonics decay like $e^{-n\pi x/a}$, so the field forgets the detail of the boundary within about one slot width.
 :::
 
-::: quiz A charge near a grounded conducting plane: the force on the charge is best computed as
-- [ ] the Coulomb force between $q$ and the induced surface charge, integrated over the plane with no shortcut
-- [x] the Coulomb force between $q$ and the single image charge $-q$ at the mirror position
-- [ ] zero, since the plane is grounded and can supply any charge
-- [ ] the $qE$ with the $E$ of a uniform field $V_0/d$
+::: example How fast the slot forgets its boundary {#ex-slot}
+Using [[#eq-slot]], find $V/V_0$ on the centre line $y = a/2$ at $x = a/2$ and at $x = a$, and compare with the first term alone.
 ::: solution
-By the uniqueness of the Dirichlet problem, the image solution of [[#eq-image]] is the actual field in the half-space, and in that half-space the field is the field of the two charges. The force on the real charge is therefore the Coulomb force from the image alone (the real charge does not act on itself), [[#eq-force]]. The integral over the plane gives the same answer — the method of images simply does it for you — but option 2 is the direct computation. Zero (option 3) would require the total field at the charge to vanish, which is not the case; the uniform field (option 4) is the parallel-plate, not the point-charge, geometry.
-:::
-:::
-
-::: example Capacitance of the isolated sphere {#ex-sphere-c}
-An isolated conducting sphere, radius $a$, held at the potential $V$. Find the capacitance $C = Q/V$.
-::: solution
-The field outside the sphere, by the spherical symmetry, is the radial $\mathbf{E} = Q/(4\pi\varepsilon_0 r^2)\, \hat{\mathbf{r}}$ (the Gauss, the flux $Q/\varepsilon_0$ on $r^2$), and the potential, relative to the infinity, is
+On the centre line $\sin(n\pi/2) = +1, -1, +1,\dots$ for $n = 1, 3, 5, \dots$. At $x = a/2$,
 
 $$
-V = \int_a^\infty \frac{Q}{4\pi\varepsilon_0 r^2}\, dr = \frac{Q}{4\pi\varepsilon_0 a},
+\frac{V}{V_0} = \frac{4}{\pi}\left[e^{-\pi/2} - \frac{1}{3}e^{-3\pi/2} + \frac{1}{5}e^{-5\pi/2} - \cdots\right] = \frac{4}{\pi}\bigl[0.20788 - 0.00299 + 0.00008 - \cdots\bigr] = 0.2610 .
 $$
 
-so $C = Q/V = 4\pi\varepsilon_0 a$: the capacitance of the isolated sphere is proportional to the radius, and for $a = 1\,\mathrm{m}$, $C = 4\pi \times 8.854 \times 10^{-12} \approx 1.11 \times 10^{-8}\,\mathrm{F} \approx 11\,\mathrm{nF}$. The content is the $4\pi\varepsilon_0 a$ as the $C$ of the single conductor, and the application is the Faraday cage and the lightning rod, both of which use the sphere or the sharp-tip field, the $E \propto Q/a$ (the small $a$, the large $E$, the corona), and the two, the $C$ and the $E$, as the two of the same $Q$ and the $a$.
+The first term alone gives $0.2647$, $1.4\%$ high. At $x = a$,
+
+$$
+\frac{V}{V_0} = \frac{4}{\pi}\left[e^{-\pi} - \frac13 e^{-3\pi} + \cdots\right] = 0.05499,
+$$
+
+and the first term gives $0.05502$, an error of $0.06\%$. The closed form gives the same values. One slot width in, only the lowest mode remains.
 :::
 :::
 
-## Where this leads
+### Spherical coordinates and Legendre polynomials {#spherical}
 
-The boundary-value problem, the Poisson and the Laplace, the uniqueness and the image, is the content of this chapter, and it is the content that the magnetostatics (the $\mathbf{B}$ as the analogous, the $\nabla\cdot\mathbf{B} = 0$, the $\nabla\times\mathbf{B} = \mu_0 \mathbf{J}$, the two as the two, the analogous of the electrostatics), the radiation (the $\mathbf{E}$ and the $\mathbf{B}$, the two, the time-dependent, the two as the two, the wave), and the relativistic fields (the $\mathbf{E}$ and the $\mathbf{B}$, the two, the $V$ and the $\mathbf{A}$, the two as the two, the scalar and the vector potential, of the same relativistic), of the same field theory, and the two, the electrostatics and the magnetostatics, as the two, the static, of the same field, and the two as the two, the $\rho$ and the $\mathbf{J}$, of the same source, and the two combined as the content of the field theory, and the two as the two, the charge and the current, of the same electromagnetism.
+When the boundaries are spheres and the problem is symmetric about the $z$-axis, $V$ depends on $r$ and the polar angle $\theta$ only. Laplace's equation in spherical coordinates is then
 
-::: history Poisson, and the image
-The Poisson equation, the $\nabla^2 V = -\rho/\varepsilon_0$, is the Simeon Denis Poisson's, in the 1812 "Nouvelle méthode pour résoudre l'équation différentielle $\partial V/\partial x \cdot ... $ the clean statement, the Poisson's 1812 work, the $\nabla^2 V = -\rho/\varepsilon_0$, and the Green's function, the $1/|\mathbf{r} - \mathbf{r}'|$, the Green's, in the 1828 (the essay, the posthumous, the 1831), and the method of images, the Kelvin's, in the 1863 (the "On a method of solving physical problems," the image-charge of the point and the plane, and the two, the point and the sphere, as the two, the two geometries, of the same image), and the two, the Poisson and the Kelvin, as the two origins of the boundary-value, and the two combined as the content of the electrostatics as the boundary-value problem, and the two as the two, the equation and the method, of the same boundary-value, and the two combined as the content of the electrostatics, and the two as the two, the 1812 and the 1863, of the same boundary-value problem.
+$$
+\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial V}{\partial r}\right) + \frac{1}{r^2\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\,\frac{\partial V}{\partial\theta}\right) = 0 .
+$$
+
+Put $V = R(r)\Theta(\theta)$, multiply by $r^2/(R\Theta)$, and separate: $\frac{1}{R}(r^2R')' = l(l+1)$ and $\frac{1}{\Theta\sin\theta}(\sin\theta\,\Theta')' = -l(l+1)$, where writing the constant as $l(l+1)$ is a convenience. The radial equation is solved by powers: $r^2R'' + 2rR' = l(l+1)R$ has solutions $r^l$ and $r^{-(l+1)}$. The angular equation, in the variable $x = \cos\theta$, is Legendre's equation $\bigl((1-x^2)\Theta'\bigr)' + l(l+1)\Theta = 0$, whose solutions are finite at both poles $x = \pm1$ only when $l$ is a non-negative integer, and are then the **Legendre polynomials** $P_l(\cos\theta)$, given by Rodrigues' formula $P_l(x) = \frac{1}{2^l l!}\frac{\dd^l}{\dd x^l}(x^2-1)^l$:
+
+$$
+P_0 = 1,\quad P_1 = x,\quad P_2 = \tfrac12(3x^2-1),\quad P_3 = \tfrac12(5x^3-3x).
+$$
+
+The series method behind these is in [[math-methods/odes]]. They are orthogonal, $\int_{-1}^{1}P_l(x)P_{l'}(x)\,\dd x = \frac{2}{2l+1}\delta_{ll'}$, and complete on $[-1,1]$. The general azimuthally symmetric solution of Laplace's equation is therefore
+
+$$
+V(r,\theta) = \sum_{l=0}^\infty\left(A_l\,r^l + \frac{B_l}{r^{l+1}}\right)P_l(\cos\theta).
+$$ {#eq-legendre-general}
+
+Inside a sphere, regularity at the origin kills the $B_l$; outside, decay at infinity kills the $A_l$ (except for terms imposed by an external field).
+
+::: example A conducting sphere in a uniform field {#ex-sphere-field}
+An uncharged conducting sphere of radius $R$ is placed in a uniform field $\mathbf E_0 = E_0\hat{\mathbf z}$. Find the potential outside, the induced surface charge, and the induced dipole moment.
+::: solution
+Choose the zero of potential on the equatorial plane of the undisturbed field, so far from the sphere $V \to -E_0 z = -E_0 r\cos\theta$. By symmetry the sphere sits at the potential of its equatorial plane, $V = 0$. The boundary data are therefore $V(R,\theta) = 0$ and $V \to -E_0r\cos\theta$ as $r \to\infty$.
+
+In [[#eq-legendre-general]] the condition at infinity allows only $A_1 = -E_0$ among the $A_l$. On $r = R$,
+
+$$
+\sum_l\left(A_lR^l + \frac{B_l}{R^{l+1}}\right)P_l(\cos\theta) = 0 \quad\text{for all }\theta,
+$$
+
+and by orthogonality each coefficient vanishes: $B_l = -A_lR^{2l+1}$. Only $l = 1$ survives, with $B_1 = E_0R^3$:
+
+$$
+V(r,\theta) = -E_0\left(r - \frac{R^3}{r^2}\right)\cos\theta, \qquad r \ge R .
+$$
+
+The induced charge, from [[#eq-sigma-cond]] with outward normal $\hat{\mathbf r}$, is
+
+$$
+\sigma(\theta) = -\varepsilon_0\frac{\partial V}{\partial r}\bigg|_{r=R} = \varepsilon_0E_0\left(1 + \frac{2R^3}{R^3}\right)\cos\theta = 3\varepsilon_0E_0\cos\theta .
+$$
+
+Its integral over the sphere is zero, as it must be. The added term $E_0R^3\cos\theta/r^2$ is the potential of a point dipole [[#eq-dipole]] with $p/(4\pi\varepsilon_0) = E_0R^3$, so
+
+$$
+\mathbf p = 4\pi\varepsilon_0R^3\,\mathbf E_0 .
+$$
+
+A conducting sphere has polarisability $4\pi\varepsilon_0R^3$, proportional to its volume. For $R = 1.00\,\mathrm{cm}$ in $E_0 = 1.00\times10^5\,\mathrm{V/m}$, $p = 1.11\times10^{-11}\,\mathrm{C\,m}$. The field at the poles is $3E_0$, three times the applied field.
 :::
+:::
+
+## The multipole expansion {#multipole}
+
+Far from a localised charge distribution, the details of the distribution matter less and less. The multipole expansion makes that precise: it writes the exterior potential as a series in $1/r$ whose coefficients are moments of the charge.
+
+Let $\rho$ vanish outside a sphere of radius $r_{\max}$ about the origin, and let $r > r_{\max}$. For a source point $\mathbf r'$ at angle $\alpha$ to $\mathbf r$, the generating function of the Legendre polynomials, $(1 - 2xt + t^2)^{-1/2} = \sum_l P_l(x)t^l$ for $\lvert t\rvert<1$, gives with $t = r'/r$ and $x = \cos\alpha$
+
+$$
+\frac{1}{\lvert\mathbf r-\mathbf r'\rvert} = \frac{1}{r}\left(1 - 2\frac{r'}{r}\cos\alpha + \frac{r'^2}{r^2}\right)^{-1/2} = \sum_{l=0}^\infty\frac{r'^l}{r^{l+1}}P_l(\cos\alpha).
+$$
+
+Substituting into [[#eq-coulomb-int]] and exchanging sum and integral, which the uniform convergence for $r'\le r_{\max}<r$ permits,
+
+$$
+V(\mathbf r) = \frac{1}{4\pi\varepsilon_0}\sum_{l=0}^\infty\frac{1}{r^{l+1}}\int (r')^l P_l(\cos\alpha)\,\rho(\mathbf r')\,\dd\tau' .
+$$ {#eq-multipole}
+
+The $l = 0$ term is the **monopole** potential $Q/(4\pi\varepsilon_0 r)$, with $Q = \int\rho\,\dd\tau'$ the total charge. For $l = 1$, $r'\cos\alpha = \hat{\mathbf r}\cdot\mathbf r'$, and the integral is $\hat{\mathbf r}\cdot\mathbf p$.
+
+::: definition Electric dipole moment and dipole potential {#def-dipole}
+The **electric dipole moment** of a charge distribution about the origin is $\mathbf p = \int\mathbf r'\rho(\mathbf r')\,\dd\tau'$, or $\mathbf p = \sum_i q_i\mathbf r_i$ for point charges. The **dipole potential** is
+
+$$
+V_{\mathrm{dip}}(\mathbf r) = \frac{1}{4\pi\varepsilon_0}\frac{\mathbf p\cdot\hat{\mathbf r}}{r^2} .
+$$ {#eq-dipole}
+:::
+
+The dipole field follows by differentiation. With $\mathbf p = p\hat{\mathbf z}$, $V = p\cos\theta/(4\pi\varepsilon_0r^2)$, and $E_r = -\partial_r V = 2p\cos\theta/(4\pi\varepsilon_0r^3)$, $E_\theta = -r^{-1}\partial_\theta V = p\sin\theta/(4\pi\varepsilon_0r^3)$. Since $\mathbf p = p(\cos\theta\,\hat{\mathbf r} - \sin\theta\,\hat{\boldsymbol\theta})$, the two components assemble into the coordinate-free form
+
+$$
+\mathbf E_{\mathrm{dip}}(\mathbf r) = \frac{1}{4\pi\varepsilon_0}\frac{3(\mathbf p\cdot\hat{\mathbf r})\hat{\mathbf r} - \mathbf p}{r^3} .
+$$ {#eq-dipole-field}
+
+On the axis the field is $2p/(4\pi\varepsilon_0r^3)$ along $\mathbf p$; in the equatorial plane it is $p/(4\pi\varepsilon_0r^3)$ opposite to $\mathbf p$. The quadrupole term $l = 2$ can be written $\frac{1}{4\pi\varepsilon_0}\frac{1}{2r^3}\sum_{ij}Q_{ij}\hat r_i\hat r_j$ with the traceless tensor $Q_{ij} = \int(3x_i'x_j' - r'^2\delta_{ij})\rho\,\dd\tau'$, and each higher term falls by another power of $r$.
+
+::: proposition When the dipole moment depends on the origin {#prop-origin}
+Under a shift of origin by $\mathbf d$, the dipole moment changes to $\mathbf p - Q\mathbf d$. It is therefore independent of the origin if and only if the total charge $Q$ is zero.
+:::
+
+::: proof
+With the new origin at $\mathbf d$, source positions become $\mathbf r' - \mathbf d$, and $\int(\mathbf r'-\mathbf d)\rho\,\dd\tau' = \mathbf p - \mathbf d\int\rho\,\dd\tau' = \mathbf p - Q\mathbf d$. This equals $\mathbf p$ for every $\mathbf d$ exactly when $Q = 0$.
+:::
+
+In general the lowest non-vanishing moment is origin-independent and the higher ones are not.
+
+::: example A linear quadrupole {#ex-quadrupole}
+Charges $+q$ at $z = \pm d$ and $-2q$ at the origin. Find the leading term of the potential at $r\gg d$.
+::: solution
+The total charge and the dipole moment $\sum q_iz_i = qd - qd = 0$ both vanish, so the first two terms of [[#eq-multipole]] are zero. For point charges the $l$-th term is $\frac{1}{4\pi\varepsilon_0r^{l+1}}\sum_iq_ir_i^lP_l(\cos\alpha_i)$. The charge at the origin has $r_i = 0$ and contributes nothing for $l\ge1$. The two outer charges have $\cos\alpha = \cos\theta$ and $\cos\alpha = -\cos\theta$, and $P_2$ is even, so
+
+$$
+V \approx \frac{1}{4\pi\varepsilon_0}\frac{2qd^2P_2(\cos\theta)}{r^3} = \frac{1}{4\pi\varepsilon_0}\frac{qd^2(3\cos^2\theta - 1)}{r^3}.
+$$
+
+It falls as $1/r^3$, vanishes on the cones $\cos^2\theta = 1/3$ ($\theta = 54.7^\circ$ and $125.3^\circ$), and is positive along the axis, where the like charges $+q$ are nearer.
+:::
+:::
+
+::: quiz
+A distribution has total charge $Q = 0$ and dipole moment $\mathbf p\ne\mathbf 0$ about the origin. You move the origin by $\mathbf d$. Which statements are correct?
+- [x] The dipole moment is unchanged.
+- [ ] The dipole moment becomes $\mathbf p - Q\mathbf d$, which is different from $\mathbf p$.
+- [x] The quadrupole moment may change.
+- [ ] The far potential now falls as $1/r$.
+::: solution
+By [[#prop-origin]] the shift changes $\mathbf p$ by $-Q\mathbf d = \mathbf 0$, so the lowest non-zero moment is intrinsic. The next moment, the quadrupole, picks up terms proportional to $\mathbf p$ and $\mathbf d$, so it does depend on the origin. The monopole is zero, so there is no $1/r$ term whatever the origin.
+:::
+:::
+
+## Dielectrics {#dielectrics}
+
+In an insulator the electrons are bound to their molecules, but an applied field displaces them slightly, or turns molecules that already have a dipole moment. Matter in a field becomes a continuum of tiny dipoles.
+
+::: definition Polarisation {#def-polarisation}
+The **polarisation** $\mathbf P(\mathbf r)$ of a material is its electric dipole moment per unit volume, averaged over a region large compared with a molecule and small compared with the scale on which the fields vary. Its SI unit is $\mathrm{C/m^2}$.
+:::
+
+### Bound charge {#bound}
+
+The potential of the polarised body is the superposition of dipole potentials [[#eq-dipole]], with $\mathbf p$ replaced by $\mathbf P\,\dd\tau'$:
+
+$$
+V(\mathbf r) = \frac{1}{4\pi\varepsilon_0}\int\frac{\mathbf P(\mathbf r')\cdot(\mathbf r-\mathbf r')}{\lvert\mathbf r-\mathbf r'\rvert^3}\,\dd\tau' = \frac{1}{4\pi\varepsilon_0}\int\mathbf P\cdot\nabla'\frac{1}{\lvert\mathbf r-\mathbf r'\rvert}\,\dd\tau' ,
+$$
+
+using $\nabla'(1/\lvert\mathbf r-\mathbf r'\rvert) = (\mathbf r-\mathbf r')/\lvert\mathbf r-\mathbf r'\rvert^3$. Integrate by parts with $\nabla'\cdot(f\mathbf P) = f\nabla'\cdot\mathbf P + \mathbf P\cdot\nabla' f$ and the divergence theorem over the body:
+
+$$
+V(\mathbf r) = \frac{1}{4\pi\varepsilon_0}\oint_S\frac{\mathbf P\cdot\hat{\mathbf n}'}{\lvert\mathbf r-\mathbf r'\rvert}\,\dd a' + \frac{1}{4\pi\varepsilon_0}\int\frac{-\nabla'\cdot\mathbf P}{\lvert\mathbf r-\mathbf r'\rvert}\,\dd\tau' .
+$$
+
+This is exactly the potential of a surface charge and a volume charge,
+
+$$
+\sigma_b = \mathbf P\cdot\hat{\mathbf n}, \qquad \rho_b = -\nabla\cdot\mathbf P ,
+$$ {#eq-bound}
+
+the **bound charges**. They are real charge: a uniformly polarised slab has uncancelled layers of opposite sign on its two faces, and where $\mathbf P$ is non-uniform more dipole ends enter a small volume than leave it.
+
+### The displacement field {#displacement}
+
+Gauss's law counts all charge, $\varepsilon_0\nabla\cdot\mathbf E = \rho_f + \rho_b = \rho_f - \nabla\cdot\mathbf P$, where $\rho_f$ is the **free charge** we control. Moving $\mathbf P$ to the left defines a field whose divergence is the free charge alone.
+
+::: definition Displacement field and linear dielectrics {#def-D}
+The **electric displacement** is $\mathbf D = \varepsilon_0\mathbf E + \mathbf P$. It satisfies
+
+$$
+\nabla\cdot\mathbf D = \rho_f, \qquad \oint\mathbf D\cdot\dd\mathbf a = Q_{f,\mathrm{enc}} .
+$$ {#eq-gauss-D}
+
+A material is a **linear dielectric** if $\mathbf P = \varepsilon_0\chi_e\mathbf E$, with **susceptibility** $\chi_e$. Then $\mathbf D = \varepsilon\mathbf E$ with **permittivity** $\varepsilon = \varepsilon_0(1+\chi_e) = \varepsilon_0\varepsilon_r$, where $\varepsilon_r$ is the **relative permittivity** (dielectric constant).
+:::
+
+Across an interface carrying free surface charge $\sigma_f$, the pillbox and loop arguments now give
+
+$$
+D_2^\perp - D_1^\perp = \sigma_f, \qquad \mathbf E_2^\parallel = \mathbf E_1^\parallel .
+$$ {#eq-bc-D}
+
+Inside a homogeneous linear dielectric with no free charge, $\nabla\cdot\mathbf E = 0$, so $V$ is again harmonic and the whole of this chapter applies, region by region, with [[#eq-bc-D]] stitching the regions together.
+
+::: warning $\mathbf D$ is not "the field of the free charge"
+Equation [[#eq-gauss-D]] looks like Gauss's law with $\varepsilon_0$ and the bound charge removed, and it tempts one to write $\mathbf D = \frac{1}{4\pi}\int\rho_f(\mathbf r-\mathbf r')/\lvert\mathbf r-\mathbf r'\rvert^3\,\dd\tau'$. That is false in general, because a vector field is fixed by its divergence *and* its curl, and $\nabla\times\mathbf D = \nabla\times\mathbf P$ need not vanish. A uniformly polarised bar electret has no free charge, yet $\mathbf D \neq \mathbf 0$ near its ends. Gauss's law for $\mathbf D$ is useful only when symmetry, or a region uniformly filled with one linear dielectric, disposes of the curl.
+:::
+
+::: example A dielectric sphere in a uniform field {#ex-dielectric-sphere}
+A sphere of radius $R$ and relative permittivity $\varepsilon_r$, with no free charge, is placed in a uniform field $E_0\hat{\mathbf z}$. Find the field inside it. Evaluate the ratio $E_{\mathrm{in}}/E_0$ for $\varepsilon_r = 5$.
+::: solution
+Inside and outside, $V$ is harmonic. By [[#eq-legendre-general]], keep the terms allowed by regularity at the centre and the behaviour at infinity. Because the applied potential is pure $l = 1$, try
+
+$$
+V_{\mathrm{in}} = A\,r\cos\theta, \qquad V_{\mathrm{out}} = -E_0r\cos\theta + \frac{B}{r^2}\cos\theta .
+$$
+
+If this guess satisfies every boundary condition, [[#thm-unique]] guarantees it is the solution. Continuity of $V$ at $r = R$ gives $AR = -E_0R + B/R^2$. With no free charge, $D^\perp$ is continuous: $\varepsilon_r\varepsilon_0\,\partial_rV_{\mathrm{in}} = \varepsilon_0\,\partial_rV_{\mathrm{out}}$ at $R$, that is
+
+$$
+\varepsilon_rA = -E_0 - \frac{2B}{R^3}.
+$$
+
+The first condition gives $B = R^3(A + E_0)$. Substituting, $\varepsilon_rA = -E_0 - 2A - 2E_0$, so $A = -3E_0/(\varepsilon_r+2)$. Inside, $V = Az$ and
+
+$$
+\mathbf E_{\mathrm{in}} = -\nabla(Az) = \frac{3}{\varepsilon_r+2}\,E_0\hat{\mathbf z},
+$$
+
+a uniform field, weaker than $E_0$. For $\varepsilon_r = 5$, $E_{\mathrm{in}}/E_0 = 3/7 = 0.429$. As $\varepsilon_r\to\infty$ the internal field vanishes and the conducting sphere of [[#ex-sphere-field]] is recovered. The reduction comes from the bound surface charge $\sigma_b = \varepsilon_0(\varepsilon_r - 1)E_{\mathrm{in}}\cos\theta$, whose field inside opposes $E_0$.
+:::
+:::
+
+### From molecules to the dielectric constant {#clausius-mossotti}
+
+A single molecule in a field $\mathbf E_{\mathrm{loc}}$ acquires a dipole moment $\mathbf p = \alpha\mathbf E_{\mathrm{loc}}$, where $\alpha$ is its **polarisability**. In a dilute gas $\mathbf E_{\mathrm{loc}}$ is the macroscopic field and $\varepsilon_r - 1 = N\alpha/\varepsilon_0$, with $N$ the number density. In a dense medium each molecule also feels its neighbours. Lorentz's estimate is that, for a cubic or isotropic arrangement, the local field is $\mathbf E + \mathbf P/(3\varepsilon_0)$: the macroscopic field plus the field at the centre of a spherical hole cut in uniformly polarised material. With $\mathbf P = N\alpha\mathbf E_{\mathrm{loc}}$ this gives the relation below (derivation in Jackson §4.5 or Griffiths §4.4).
+
+::: proposition Clausius–Mossotti relation {#prop-cm}
+For a linear isotropic dielectric of $N$ molecules per unit volume, each of polarisability $\alpha$, in which the local field is $\mathbf E + \mathbf P/(3\varepsilon_0)$,
+
+$$
+\frac{\varepsilon_r - 1}{\varepsilon_r + 2} = \frac{N\alpha}{3\varepsilon_0} .
+$$ {#eq-cm}
+:::
+
+Polarisabilities are often quoted as a volume $\alpha/(4\pi\varepsilon_0)$, a few cubic ångströms for small atoms: atoms respond like conducting spheres of about their own size (compare $4\pi\varepsilon_0R^3$ in [[#ex-sphere-field]]). For liquid argon, with $\alpha/(4\pi\varepsilon_0) = 1.64\times10^{-30}\,\mathrm{m^3}$ and $N = 2.11\times10^{28}\,\mathrm{m^{-3}}$, the right side of [[#eq-cm]] is $0.145$ and $\varepsilon_r = 1.51$, close to the measured $1.50$; the dilute-gas formula would give $1.44$.
+
+::: history From Coulomb to Kelvin
+Charles-Augustin de Coulomb established the inverse-square law with his torsion balance in 1785. Laplace's equation appears in Pierre-Simon Laplace's work on the attraction of spheroids in the 1780s, where Adrien-Marie Legendre introduced his polynomials (published 1785). Siméon Denis Poisson added the source term in 1813 and applied potential theory to charges on conductors in 1812. George Green, a Nottingham miller, privately published his *Essay on the Application of Mathematical Analysis to the Theories of Electricity and Magnetism* in 1828, introducing the "potential function" and Green's identities; William Thomson (later Lord Kelvin) rescued it in the 1840s and developed the method of images between 1845 and 1848. Samuel Earnshaw proved his stability theorem in 1842. Michael Faraday coined "dielectric" and measured specific inductive capacities in 1837, and Ottaviano Mossotti (1850) and Rudolf Clausius (1879) linked the dielectric constant to molecular polarisability.
+:::
+
+## Where this leads {#leads}
+
+The vector potential of [[electrodynamics/magnetostatics]] satisfies a Poisson equation for each Cartesian component and inherits [[#thm-unique]] and the multipole expansion, with no monopole term. In [[electrodynamics/maxwell-equations]] Poisson's equation becomes a wave equation, whose Green's-function solution, the retarded potential of [[electrodynamics/radiation]], is the time-dependent version of [[#eq-coulomb-int]]; the multipoles return there as dipole and quadrupole radiation. The molecular polarisability, a constant here, becomes a function of frequency in [[electrodynamics/waves-in-media]], which is the origin of dispersion.
 
 ::: summary
-- The Poisson equation [[#eq-poisson]], the $-\nabla^2 V = \rho/\varepsilon_0$, and the Laplace [[#eq-laplace]], the $\nabla^2 V = 0$, are the two equations of the electrostatics, the $\rho \neq 0$ and the $\rho = 0$, and the two combined as the content of the $V$.
-- The boundary condition, the three cases (the Dirichlet, the Neumann, the mixed), is the content of the boundary-value, and the two, the Dirichlet and the Neumann, as the two, and the mixed as the two, and the three as the three cases of the same boundary.
-- The uniqueness theorem [[#thm-unique]], the Dirichlet the unique, the Neumann the unique up to the constant, is the content of the boundary-value, and the two, the Dirichlet and the Neumann, as the two uniqueness, and the two combined as the content of the uniqueness.
-- The dipole [[#eq-dipole]], and the multipole expansion [[#eq-mult]], are the two, the $1/r^2$ and the $1/r$ (the $Q \neq 0$) and the $1/r^3$ (the quadrupole), of the far field, and the two, the ion and the atom, as the two, the $Q$ and the $\mathbf{p}$, of the same multipole.
-- The method of images [[#eq-image]], the Kelvin's, is the content of the conductor as the image, and the two, the conductor and the image, as the two views of the same boundary, and the two combined as the content of the image-charge method, and the two as the two, the $V$ and the $\mathbf{F}$, of the same image.
+- Electrostatics is Poisson's equation $\nabla^2V = -\rho/\varepsilon_0$, or Laplace's equation where $\rho = 0$, together with boundary conditions; conductors are equipotentials, and the induced charge is $\sigma = -\varepsilon_0\,\partial V/\partial n$.
+- Harmonic functions equal their averages over spheres; hence they have no interior extrema, and no static field can trap a charge stably (Earnshaw).
+- Dirichlet or Neumann data on every boundary (or the total charge on each conductor) determine the field uniquely, so any solution that fits, however guessed, is the solution.
+- Images: a charge $q$ at distance $a$ from an earthed sphere of radius $R$ has an image $-qR/a$ at $R^2/a$; for a plane the image is $-q$ at the mirror point.
+- Separation of variables turns Laplace's equation into ordinary equations; boundary data fix the coefficients of Fourier or Legendre series, and higher modes decay within about one characteristic length.
+- Far from a localised source $V$ is a sum of multipoles; the dipole term is $\mathbf p\cdot\hat{\mathbf r}/(4\pi\varepsilon_0r^2)$, and the lowest non-zero moment is independent of the origin.
+- Polarisation produces bound charges $\sigma_b = \mathbf P\cdot\hat{\mathbf n}$, $\rho_b = -\nabla\cdot\mathbf P$; the displacement $\mathbf D = \varepsilon_0\mathbf E + \mathbf P$ has divergence $\rho_f$, $D^\perp$ jumps by $\sigma_f$ and $\mathbf E^\parallel$ is continuous.
 :::
 
-## Exercises
+## Exercises {#exercises}
 
-::: exercise level=1
-The $+q$, at the $(0,0,a)$, and the grounded plane at the $z = 0$. Verify the $V|_{z=0} = 0$, from the [[#eq-image]].
-hint="At z = 0, |r - a ẑ| = |r + a ẑ|, the two charges equidistant, the V = q/r - q/r = 0."
+::: exercise The force from an earthed plane {level=1 check="9.99"}
+A charge of $2.00\,\mathrm{nC}$ is held $3.00\,\mathrm{cm}$ above a large earthed metal plate. Find the magnitude of the force on it, in $\mu\mathrm{N}$.
 ::: solution
-At the $z = 0$, the $\mathbf{r} = (x, y, 0)$, and the $|\mathbf{r} - a\hat{\mathbf{z}}| = \sqrt{x^2 + y^2 + a^2}$ and the $|\mathbf{r} + a\hat{\mathbf{z}}| = \sqrt{x^2 + y^2 + a^2}$, the two, the $+q$ and the $-q$, at the same distance, and the $V = \frac{1}{4\pi\varepsilon_0}\left[\frac{q}{\sqrt{x^2+y^2+a^2}} - \frac{q}{\sqrt{x^2+y^2+a^2}}\right] = 0$, the $V|_{z=0} = 0$, as the Dirichlet, and the two, the $+q$ and the $-q$, at the same distance, as the two, and the two as the zero, and the two combined as the content of the Dirichlet at the plane.
-:::
-:::
-
-::: exercise level=1
-The grounded sphere, the radius $a$, the centre at the origin, the $+q$ at the $r > a$ (along the $z$-axis, at $r = b$). The image, the $q' = -qa/b$, at the $r' = a^2/b$ (inside the sphere). Verify the $V|_{r=a} = 0$.
-hint="At r = a, the two charges q (at b) and q' (at a²/b): the distances are |a - b| and |a - a²/b| = a|b - a|/b; the V = q/|a-b| + q'/|a - a²/b| = q/(b-a) + (-qa/b)/(a(b-a)/b) = q/(b-a) - q/(b-a) = 0."
-::: solution
-At the $r = a$ (the surface), the distance from the $q$ (at $b$) is the $b - a$ (the $b > a$), and the distance from the $q' = -qa/b$ (at $a^2/b$) is the $a - a^2/b = a(b - a)/b$, and the $V|_{r=a} = \frac{1}{4\pi\varepsilon_0}\left[\frac{q}{b - a} + \frac{(-qa/b)}{a(b-a)/b}\right] = \frac{1}{4\pi\varepsilon_0}\left[\frac{q}{b - a} - \frac{q}{b - a}\right] = 0$, the $V|_{r=a} = 0$, the Dirichlet at the sphere, and the two, the $q$ and the $q'$, as the two, the $+q$ and the $-qa/b$, of the same image, and the two combined as the zero at the surface, and the two as the two, the $b - a$ and the $a(b-a)/b$, of the same distance, and the two as the content of the sphere-image, the $q' = -qa/b$ and the $r' = a^2/b$, and the two as the two, the charge and the position, of the same image-charge of the sphere.
-:::
-:::
-
-::: exercise level=2
-The $q$, at the $a$, from the grounded plane. Find the surface charge $\sigma_f(\rho)$ (the $\rho$ the radial distance, on the plane), from the $\sigma_f = -\varepsilon_0 \partial V/\partial z|_{z=0^+}$.
-hint="∂V/∂z of the image potential; the result is the −qaz / (4π(ρ² + a²)^(3/2))."
-::: solution
-The $V$ of [[#eq-image]], and the $\partial V/\partial z$, at the $z = 0^+$: the $\mathbf{r} = (\rho, 0, z)$ (the cylindrical, the $\rho$ the radial), the $|\mathbf{r} - a\hat{\mathbf{z}}| = \sqrt{\rho^2 + (z - a)^2}$, and the $\partial/\partial z (1/|\mathbf{r} - a\hat{\mathbf{z}}|) = -(z - a)/[\rho^2 + (z-a)^2]^{3/2} \cdot ... $ the $\partial_z (z - a)^{-1} \cdot ... $ directly, the $\partial/\partial z [ (\rho^2 + (z-a)^2)^{-1/2} ] = -(z - a)(\rho^2 + (z-a)^2)^{-3/2}$, and the $\partial/\partial z [ (\rho^2 + (z+a)^2)^{-1/2} ] = -(z + a)(\rho^2 + (z+a)^2)^{-3/2}$, at the $z = 0$, the two, the $-( - a)(\rho^2 + a^2)^{-3/2} = a(\rho^2+a^2)^{-3/2}$ and the $-(a)(\rho^2 + a^2)^{-3/2}$, and the $\partial V/\partial z|_{z=0^+} = \frac{q}{4\pi\varepsilon_0}\left[a(\rho^2+a^2)^{-3/2} - a(\rho^2+a^2)^{-3/2} \cdot (-1)\right] \cdot ... $ the two, the $+q$ (the $a$) and the $-q$ (the $-a \cdot ... $ the clean, the $\partial V/\partial z = \frac{q}{4\pi\varepsilon_0}\left[\frac{a}{(\rho^2+a^2)^{3/2}} + \frac{a}{(\rho^2+a^2)^{3/2}}\right] \cdot ... $ the two, the $a$ and the $a$, the $(+q)$ the $+(a)$ and the $(-q)$ the $-(-a) = +a \cdot ... $ the $\partial V/\partial z|_{z=0^+} = \frac{q}{4\pi\varepsilon_0} \frac{2a}{(\rho^2 + a^2)^{3/2}} \cdot ... $ the two, the $+q$ (contributing $+a$) and the $-q$ (contributing $+a$ through the minus sign in $V$), add:
+The image is $-2.00\,\mathrm{nC}$ at $3.00\,\mathrm{cm}$ below the plate, a separation $2d = 6.00\,\mathrm{cm}$. The force is that of the image:
 
 $$
-\frac{\partial V}{\partial z}\bigg|_{z=0^+} = \frac{q}{4\pi\varepsilon_0}\, \frac{2a}{(\rho^2 + a^2)^{3/2}},
+F = \frac{1}{4\pi\varepsilon_0}\frac{q^2}{(2d)^2} = (8.988\times10^9)\frac{(2.00\times10^{-9})^2}{(0.0600)^2} = 9.99\times10^{-6}\,\mathrm{N},
 $$
 
-and the surface charge is
+that is $9.99\,\mu\mathrm{N}$, directed towards the plate.
+:::
+:::
+
+::: exercise Locating the image {level=1 check="-2.4"}
+An earthed sphere has radius $20.0\,\mathrm{cm}$. A charge $+6.00\,\mathrm{nC}$ is $50.0\,\mathrm{cm}$ from its centre. Find the image charge, in nC, and its position. What is the total charge on the sphere?
+::: solution
+By [[#eq-sphere-image]], $q' = -(R/a)q = -(0.200/0.500)(6.00\,\mathrm{nC}) = -2.40\,\mathrm{nC}$, at $b = R^2/a = 0.0400/0.500 = 0.0800\,\mathrm{m}$, that is $8.00\,\mathrm{cm}$ from the centre towards the charge. By [[#thm-sphere-image]] the induced charge on the sphere equals the image charge, $-2.40\,\mathrm{nC}$: the earth supplied it through the earthing wire.
+:::
+:::
+
+::: exercise Field inside a dielectric sphere {level=1 check="0.5"}
+A sphere with $\varepsilon_r = 4.00$ is placed in a uniform field $E_0$. Find $E_{\mathrm{in}}/E_0$, and the polarisation inside in terms of $\varepsilon_0E_0$.
+::: solution
+From [[#ex-dielectric-sphere]], $E_{\mathrm{in}}/E_0 = 3/(\varepsilon_r+2) = 3/6 = 0.500$. The polarisation is $P = \varepsilon_0\chi_eE_{\mathrm{in}} = \varepsilon_0(\varepsilon_r-1)E_{\mathrm{in}} = \varepsilon_0(3.00)(0.500E_0) = 1.50\,\varepsilon_0E_0$, uniform and parallel to $E_0$.
+:::
+:::
+
+::: exercise Reading the charge from the potential {level=2}
+In some region the potential is $V(r) = V_0\,a\,e^{-r/\lambda}/r$, the screened potential of a charge in a plasma or an electrolyte. Use [[#eq-poisson]] to find the charge density for $r>0$, and show that the total charge, including a point charge at the origin, is zero.
+::: hint
+For a function of $r$ alone, $\nabla^2f = \frac{1}{r}\frac{\dd^2}{\dd r^2}(rf)$ for $r > 0$. Near the origin $V\approx V_0a/r$, which is a point charge.
+:::
+::: solution
+For $r>0$, $rV = V_0ae^{-r/\lambda}$, so $\nabla^2V = \frac1r\frac{\dd^2}{\dd r^2}(V_0ae^{-r/\lambda}) = \frac{V_0a}{\lambda^2}\frac{e^{-r/\lambda}}{r}$. Poisson's equation gives
 
 $$
-\sigma_f(\rho) = -\varepsilon_0 \, \frac{\partial V}{\partial z}\bigg|_{z=0^+} = -\frac{q\, a}{2\pi\, (\rho^2 + a^2)^{3/2}}.
+\rho(r) = -\varepsilon_0\nabla^2V = -\frac{\varepsilon_0V_0a}{\lambda^2}\frac{e^{-r/\lambda}}{r}, \qquad r>0,
 $$
 
-The $\sigma_f$ is negative (as it must be, the induced charge opposite to $q$), concentrated at $\rho = 0$ and falling off as $\rho^{-3}$ for $\rho \gg a$; one can check that $\int \sigma_f \, dS = -q$, the total induced charge on a grounded plane equals $-q$, the content of the image charge.
-:::
-:::
-
-::: exercise level=2
-The two, the $+q$ at the $(0,0,a)$ and the $-q$ at the $(0,0,-a)$ (the dipole, the $\mathbf{p} = 2qa \hat{\mathbf{z}}$), near the grounded plane at the $z = 0$ (the two, the $a$ and the $-a$, the two, above and below... the two, the $a$ and the $-a$, as the two, and the two as the two charges, the $+q$ at $a$ and the $-q$ at $-a$, the plane at the $z = 0$, the two, the $a$ and the $-a$, as the two, symmetric about the plane). Find the $V$ (the image).
-hint="The +q at a has the image −q at −a; the −q at −a has the image +q at +a; the total: the 4 charges, and the V."
-::: solution
-The $+q$, at the $(0,0,a)$, the image the $-q$, at the $(0,0,-a)$. The $-q$, at the $(0,0,-a)$, is in the conductor (the $z < 0$), and the image, for the $-q$, is the $+q$, at the $(0,0,a) \cdot ... $ the two, the $+q$ at the $a$ and the $-q$ at the $-a$, and the two images, the $-q$ at the $-a$ (for the $+q$) and the $+q$ at the $a$ (for the $-q$), the two, and the two, the $+q$ at the $a$ and the $-q$ at the $-a$, the two, and the two images, the two, and the two combined, the four, the $+q$ at $a$, the $-q$ at $a$ (the image of the $-q$), the $-q$ at $-a$, the $+q$ at $-a$ (the image of the $+q$), and the two, the $a$ and the $-a$, the two, the $+q$ and the $-q$ at each, cancel, and the $V = 0$ (the two, the $+q$ and the $-q$, at each of the $a$ and the $-a$, cancel), and the two, the dipole (the $\mathbf{p} = 2qa\hat{\mathbf{z}}$), and the $V = 0$, the two, and the two as the content of the dipole at the symmetric (the two, the $+q$ and the $-q$, at the $\pm a$, the two cancel at the $V$), and the two as the two, the symmetric (the $V = 0$) and the non-symmetric (the $V \neq 0$, the image), of the same dipole, and the two combined as the content of the dipole image.
-:::
-:::
-
-::: exercise level=3
-Prove the Green's first identity, the $\int_\Omega (u \nabla^2 v + (\nabla u) \cdot (\nabla v))\, dV = \oint_\partial\Omega u \frac{\partial v}{\partial n}\, dS$, from the divergence theorem, and use it to prove the Dirichlet uniqueness of the [[#thm-unique]].
-hint="∇·(u ∇v) = u ∇²v + ∇u·∇v; apply the divergence theorem; then set u = v in the identity, and use ∇²u = 0 and u|_S = 0."
-::: solution
-The divergence theorem, the $\int_\Omega \nabla \cdot \mathbf{F}\, dV = \oint_{\partial\Omega} \mathbf{F} \cdot d\mathbf{S}$, and the $\mathbf{F} = u \nabla v$, the $\nabla \cdot (u \nabla v) = u \nabla^2 v + (\nabla u) \cdot (\nabla v)$ (the product rule, the two, the $u$ and the $\nabla v$, as the two, and the two combined as the $\nabla \cdot (u\nabla v)$), and the two, the $\int u \nabla^2 v$ and the $\int (\nabla u) \cdot (\nabla v)$, as the two, and the two as the $\oint u \partial v/\partial n$, and the two combined as the Green's first identity, the $\int_\Omega (u\nabla^2 v + (\nabla u)\cdot(\nabla v))\, dV = \oint_\Omega u \partial v/\partial n\, dS$.
-
-The Dirichlet uniqueness: let the $u = V_1 - V_2$, the $\nabla^2 u = 0$, the $u|_S = 0$. The Green's first identity, with the $v = u$ (the two, the $u$ and the $v$, the two, and the two as the same, the $u$), the $\int_\Omega (u\nabla^2 u + |\nabla u|^2)\, dV = \oint_S u \partial u/\partial n\, dS$, and the $\nabla^2 u = 0$ and the $u|_S = 0$, the two give the $\int_\Omega |\nabla u|^2\, dV = 0$, and the $|\nabla u|^2 \geq 0$, the $\nabla u = 0$, the $u$ constant, and the $u|_S = 0$, the $u = 0$, the $V_1 = V_2$, the uniqueness. The two, the Green's first identity and the $|\nabla u|^2 \geq 0$, as the two, and the two as the proof, and the two combined as the content of the Dirichlet uniqueness, the [[#thm-unique]].
-:::
-:::
-
-::: exercise level=3
-The capacitance, of the parallel-plate, the $A$ the area, the $d$ the separation, the $\varepsilon_0$ the medium. Show the $C = \varepsilon_0 A/d$, from the $V = Ed$ and the $Q = \sigma_f A = \varepsilon_0 E A \cdot ... $ the $C = Q/V$.
-hint="E = V/d; Q = ε0 E A (the Gauss at the plate); C = Q/V = ε0 A/d."
-::: solution
-The $\mathbf{E}$, between the plates, the $E = V/d$ (the uniform, the two, the $+$ and the $-$ plates, the two, and the two as the $\mathbf{E}$ uniform, the $V = Ed$). The $\sigma_f$, on the plate, the $\sigma_f = \varepsilon_0 E$ (the Gauss, the $\sigma_f/\varepsilon_0 = E$), and the $Q = \sigma_f A = \varepsilon_0 E A$. The two, the $V = Ed$ and the $Q = \varepsilon_0 E A$, as the two, and the two combined as the $C = Q/V = \varepsilon_0 E A / (E d) = \varepsilon_0 A/d$, and the two, the $\varepsilon_0 A$ and the $d$, as the two, and the two as the $C$, and the two combined as the content of the parallel-plate $C$, and the two as the two, the $A$ and the $d$, of the same $C$.
-:::
-:::
-
-::: exercise level=3
-The $V$, of the point $q$ at the origin, in the free space, is the $V = q/(4\pi\varepsilon_0 r)$. Verify the $\nabla^2 V = 0$, for the $r \neq 0$, and the $\nabla^2 V = -\delta(\mathbf{r})/\varepsilon_0 \cdot ... $ directly, the $\nabla^2 (1/r) = -4\pi \delta(\mathbf{r})$, the two, the $r \neq 0$ (the $0$) and the $r = 0$ (the $-4\pi\delta$), of the same $\nabla^2 (1/r)$.
-hint="For r ≠ 0, 1/r is harmonic (the direct computation in spherical coords). For r = 0, integrate ∇²(1/r) over a small ball: the −4πδ content."
-::: solution
-For the $r \neq 0$, the $\nabla^2 (1/r)$, in the spherical, the $\frac{1}{r^2} \partial_r (r^2 \partial_r (1/r)) = \frac{1}{r^2} \partial_r (r^2 \cdot (-1/r^2)) = \frac{1}{r^2} \partial_r (-1) = 0$, the $\nabla^2 (1/r) = 0$, for the $r \neq 0$. For the $r = 0$, the $\int_{B_\epsilon} \nabla^2 (1/r)\, dV = \oint_{\partial B_\epsilon} \nabla(1/r) \cdot d\mathbf{S} = \oint (-\hat{\mathbf{r}}/r^2) \cdot \hat{\mathbf{r}} \epsilon^2 d\Omega = -4\pi$, and the $\nabla^2 (1/r) = -4\pi \delta(\mathbf{r})$ (the $-4\pi$ the integral, the $\delta$ the localisation), and the two, the $r \neq 0$ (the $0$) and the $r = 0$ (the $-4\pi\delta$), as the two, and the two as the $\nabla^2 (1/r) = -4\pi\delta(\mathbf{r})$, and the $V = q/(4\pi\varepsilon_0 r)$, the $\nabla^2 V = -\rho/\varepsilon_0$, the $\rho = q\delta(\mathbf{r})$, and the two, the $q\delta$ and the $-4\pi\delta/\varepsilon_0 \cdot ... $ directly, the $\nabla^2 V = \frac{q}{4\pi\varepsilon_0} (-4\pi\delta) = -\frac{q\delta}{\varepsilon_0} = -\frac{\rho}{\varepsilon_0}$, the Poisson of the [[#eq-poisson]], and the two as the two, the $r \neq 0$ and the $r = 0$, of the same Poisson.
-:::
-:::
-
-::: exercise level=3
-The $q$, in the corner, the two grounded planes, the $z = 0$ and the $y = 0$ (the two, the perpendicular, the two planes), the $q$ at the $(a, a, a) \cdot ... $ directly, the $q$ at the $(x_0, y_0, z_0) = (a, a, a)$, in the octant, the $x, y, z > 0$. Find the images, and the $V$.
-hint="Each grounded plane reflects the charge: the x=0 plane gives −q at (−a,a,a); the y=0 gives −q at (a,−a,a); the z=0 gives −q at (a,a,−a); and the three "corner" images +q at (−a,−a,a), (−a,a,−a), (a,−a,−a); and the final −q at (−a,−a,−a). 8 charges total."
-::: solution
-The two planes, the $z = 0$ and the $y = 0$ (and the $x = 0$? the two, the $z = 0$ and the $y = 0$, the two planes, the two, and the two as the two, the perpendicular, of the same corner), the images: the $q$ at the $(a, a, a)$, the $z = 0$ gives the $-q$ at the $(a, a, -a)$; the $y = 0$ gives the $-q$ at the $(a, -a, a)$; and the two, the $-q$ at the $(a,a,-a)$ and the $-q$ at the $(a,-a,a)$, the two, and the two, the $z = 0$ and the $y = 0$, the two, and the two, the $-q$ at the $(a,-a,-a)$ (the image of the image, the two, the $y$ and the $z$, the two), and the two, the four, the $+q$ at the $(a,a,a)$, the $-q$ at the $(a,-a,a)$, the $-q$ at the $(a,a,-a)$, the $+q$ at the $(a,-a,-a)$, the two, and the two as the four, and the two planes, the $z = 0$ and the $y = 0$, the two, and the two, the four charges, as the two, the $V$, in the $y, z > 0$, the
+a cloud of opposite sign. As $r\to0$ the potential behaves like $V_0a/r$, the potential of a point charge $q_0 = 4\pi\varepsilon_0V_0a$, since $\nabla^2(1/r) = -4\pi\delta^3(\mathbf r)$. The cloud's total charge is
 
 $$
-V = \frac{1}{4\pi\varepsilon_0}\left[\frac{q}{|\mathbf{r} - (a,a,a)\hat{\mathbf{e}}|} - \frac{q}{|\mathbf{r} - (a,-a,a)\hat{\mathbf{e}}|} - \frac{q}{|\mathbf{r} - (a,a,-a)\hat{\mathbf{e}}|} + \frac{q}{|\mathbf{r} - (a,-a,-a)\hat{\mathbf{e}}|}\right],
+\int_0^\infty\rho\,4\pi r^2\,\dd r = -\frac{4\pi\varepsilon_0V_0a}{\lambda^2}\int_0^\infty re^{-r/\lambda}\,\dd r = -\frac{4\pi\varepsilon_0V_0a}{\lambda^2}\lambda^2 = -q_0 .
 $$
 
-the four, the two planes, the $V = 0$, at the $z = 0$ and the $y = 0$ (the two, the two planes, the two, and the two as the zero, at the two), and the two, the $V|_{z=0} = 0$ and the $V|_{y=0} = 0$, as the two Dirichlet, and the two combined as the content of the two-plane image, and the two as the two, the $z = 0$ and the $y = 0$, of the same corner, and the two, the four charges, as the two, and the two as the content of the image in the corner, and the two as the two, the $q$ and the four, of the same $V$.
+The total is $q_0 - q_0 = 0$. The cloud screens the point charge completely, which is why the potential decays faster than any power of $r$: by [[#eq-multipole]] a distribution with any non-zero moment would produce a power-law tail.
+:::
+:::
+
+::: exercise The slot far from its end {level=2 check="0.0550"}
+For the slot of [[#eq-slot]], find $V/V_0$ on the centre line at $x = a$ to three significant figures, and then estimate how far from the end the potential on the centre line falls below $10^{-3}V_0$.
+::: solution
+From [[#ex-slot]], $V(a,a/2)/V_0 = 0.0550$. At such distances the first term dominates, $V/V_0\approx(4/\pi)e^{-\pi x/a}$. Setting this equal to $10^{-3}$, $e^{-\pi x/a} = \pi\times10^{-3}/4 = 7.85\times10^{-4}$, so $\pi x/a = 7.15$ and $x = 2.28a$. A little more than two slot widths in, the end strip is invisible at the level of one part in a thousand.
+:::
+:::
+
+::: exercise A sphere with prescribed surface potential {level=3 check="1/3"}
+The surface of a hollow sphere of radius $R$ is held at $V(R,\theta) = V_0\cos^2\theta$. There is no charge inside or outside, and $V\to0$ at infinity. Find $V$ inside and outside, the surface charge density, and $V/V_0$ at the centre.
+::: hint
+Write $\cos^2\theta = \frac13 + \frac23P_2(\cos\theta)$.
+:::
+::: solution
+Since $P_2 = \frac12(3\cos^2\theta - 1)$, $\cos^2\theta = \frac13P_0 + \frac23P_2$. Inside, only $r^l$ terms are allowed, and matching at $r = R$ term by term (orthogonality),
+
+$$
+V_{\mathrm{in}} = \frac{V_0}{3} + \frac{2V_0}{3}\frac{r^2}{R^2}P_2(\cos\theta).
+$$
+
+Outside, only $r^{-(l+1)}$ terms:
+
+$$
+V_{\mathrm{out}} = \frac{V_0}{3}\frac{R}{r} + \frac{2V_0}{3}\frac{R^3}{r^3}P_2(\cos\theta).
+$$
+
+By [[#thm-unique]] (Dirichlet data on the sphere, decay at infinity) these are the solutions. The surface charge is $\sigma = -\varepsilon_0(\partial_rV_{\mathrm{out}} - \partial_rV_{\mathrm{in}})$ at $r = R$:
+
+$$
+\sigma = \frac{\varepsilon_0V_0}{R}\left[\frac13 + 2P_2 + \frac43P_2\right] = \frac{\varepsilon_0V_0}{3R}\bigl[1 + 10P_2(\cos\theta)\bigr].
+$$
+
+At the centre $V = V_0/3$, which is also the average of $V_0\cos^2\theta$ over the sphere, as [[#thm-mean]] demands: $\frac{1}{4\pi}\oint\cos^2\theta\,\dd\Omega = \frac13$.
+:::
+:::
+
+::: exercise Green's reciprocity theorem {level=3}
+Let $V_1$ be the potential produced by a charge distribution $\rho_1$ and $V_2$ that produced by $\rho_2$, both localised, in all space. Prove that $\int\rho_1V_2\,\dd\tau = \int\rho_2V_1\,\dd\tau$. Then use it to show that a point charge $q$ at distance $a$ from the centre of an earthed sphere of radius $R$ induces total charge $-qR/a$ on it, without using images.
+::: hint
+For the application, compare the actual configuration with a second one in which there is no point charge and the sphere is held at potential $V_s$. Earthed conductors and isolated point charges are both allowed in the identity, provided you integrate over all the charges in each configuration.
+:::
+::: solution
+Using [[#eq-coulomb-int]] for $V_2$,
+
+$$
+\int\rho_1V_2\,\dd\tau = \frac{1}{4\pi\varepsilon_0}\iint\frac{\rho_1(\mathbf r)\rho_2(\mathbf r')}{\lvert\mathbf r-\mathbf r'\rvert}\,\dd\tau\,\dd\tau'.
+$$
+
+The kernel is symmetric under $\mathbf r\leftrightarrow\mathbf r'$, so the same double integral equals $\int\rho_2V_1\,\dd\tau$. (The exchange of the order of integration is legitimate because the charges are localised and the singularity $1/\lvert\mathbf r-\mathbf r'\rvert$ is integrable in three dimensions.)
+
+For the application, configuration 1 is the real one: point charge $q$ at $\mathbf a$, induced charge $Q_i$ on the sphere, sphere at potential $0$. Configuration 2: no point charge, sphere raised to potential $V_s$, carrying charge $4\pi\varepsilon_0RV_s$, with potential $V_sR/r$ outside. The charges of configuration 1 sit at the point $\mathbf a$ and on the sphere; the charges of configuration 2 sit only on the sphere. The theorem gives
+
+$$
+q\,V_2(\mathbf a) + Q_i\,V_s = (\text{charge of 2 on the sphere})\times V_1(\text{sphere}) = 0,
+$$
+
+because the sphere is earthed in configuration 1. With $V_2(\mathbf a) = V_sR/a$, $qV_sR/a + Q_iV_s = 0$, so $Q_i = -qR/a$, in agreement with [[#thm-sphere-image]].
+:::
+:::
+
+::: exercise Clausius–Mossotti in reverse {level=3 check="2.02"}
+A non-polar liquid has $\varepsilon_r = 1.90$. Assuming [[#eq-cm]] holds with a fixed molecular polarisability, find $\varepsilon_r$ after the liquid is compressed so that its number density rises by $10.0\%$. Compare the fractional change with the prediction of the dilute-gas formula $\varepsilon_r - 1 = N\alpha/\varepsilon_0$.
+::: solution
+Write $x = N\alpha/(3\varepsilon_0)$. Before compression, $x = (1.90 - 1)/(1.90 + 2) = 0.90/3.90 = 0.2308$. After compression $x$ rises in proportion to $N$, to $1.100\times0.2308 = 0.2538$. Inverting [[#eq-cm]],
+
+$$
+\varepsilon_r = \frac{1 + 2x}{1 - x} = \frac{1.5077}{0.7462} = 2.02 .
+$$
+
+The increase is $6.3\%$. The dilute-gas formula makes $\varepsilon_r - 1$ proportional to $N$, so $0.90$ would become $0.99$ and $\varepsilon_r = 1.99$, an increase of only $4.7\%$. The local-field correction amplifies the response to density: compressing the liquid raises both the number of dipoles and the field each feels from its neighbours. Measurements of $\varepsilon_r$ under pressure in simple liquids follow the Clausius–Mossotti trend closely, which was one of the early pieces of evidence that the Lorentz local field is the right correction for non-polar matter.
 :::
 :::

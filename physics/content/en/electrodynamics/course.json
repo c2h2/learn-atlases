@@ -8,21 +8,24 @@
   "tagline": "Maxwell’s equations as a working theory",
   "summary": "Electrostatics and magnetostatics as boundary-value problems, Maxwell’s equations, waves in vacuum and in matter, radiation, and the fields of moving charges.",
   "overview": [
-    "The integral laws of the second-year course are Maxwell’s theory seen from outside. This course goes inside. The same four equations are written differentially, solved as boundary-value problems, and used to compute the fields of realistic charges and currents, the waves they radiate, and the way those fields look to a moving observer.",
-    "Electrostatics in vacuum and in linear media is Poisson’s equation with boundary conditions, solved by images, separation of variables and multipoles. Magnetostatics is the vector-potential version of the same idea. Maxwell’s equations then unify the two, conservation of charge becomes the continuity equation, and energy and momentum live in the fields. Waves in conductors and dielectrics, waveguides in outline, radiation from dipoles, and the Liénard–Wiechert fields of a moving point charge complete the undergraduate theory.",
-    "The calculations are longer than in the first electromagnetism course, and the physics is in the boundary conditions and the choice of gauge as much as in the algebra. Write the symmetry of the problem in a sentence before you choose a coordinate system."
+    "The integral laws of the second-year course are Maxwell's theory seen from outside. This course goes inside. The same four equations are written as differential equations, solved as boundary-value problems, and used to compute the fields of realistic charges and currents, the energy and momentum those fields carry, the waves they radiate, and the way they look to a moving observer.",
+    "The course begins with statics. Electrostatics becomes Poisson's equation with boundary conditions: the uniqueness theorem is proved, and images, separation of variables in Cartesian and spherical coordinates, and the multipole expansion are developed as methods, with dielectrics treated through bound charge and $\\mathbf D$. Magnetostatics follows the same plan with the vector potential, gauge freedom, the magnetic dipole, and magnetised matter described by $\\mathbf H$. Maxwell's displacement current then unifies the two; Poynting's theorem and the Maxwell stress tensor show that energy and momentum live in the field; and the Lorenz gauge turns the equations into wave equations for the potentials. The second half applies them: reflection and refraction, skin depth, plasmas and waveguides; retarded potentials, the Liénard–Wiechert fields, the Larmor formula, antennas and the blue sky; and finally the field tensor $F^{\\mu\\nu}$, the transformation of $\\mathbf E$ and $\\mathbf B$, and the field of a moving charge.",
+    "The calculations are longer than in the first electromagnetism course, and the physics is in the boundary conditions and the choice of gauge as much as in the algebra. Before choosing coordinates, write down the symmetry of the problem and the boundary data in a sentence; after finishing, check the answer against a limit you already know (a point charge, a conductor, $v \\ll c$). Every number in the lessons can be reproduced with a calculator and CODATA constants, and doing so is the best way to learn the orders of magnitude."
   ],
   "prerequisites": [
     "magnetism",
     "math-methods"
   ],
   "outcomes": [
-    "Solve electrostatic boundary-value problems by images and by separation of variables in simple coordinates.",
-    "Use the multipole expansion and the vector potential for magnetostatics, including the dipole field.",
-    "Write Maxwell’s equations in differential form and derive the continuity equation and Poynting’s theorem from them.",
-    "Describe plane waves in dielectrics and conductors, including skin depth and reflection at a boundary.",
-    "Compute the power radiated by an electric dipole and the angular distribution of the radiation.",
-    "Use the Liénard–Wiechert fields and explain the transformation of the electromagnetic field under a boost."
+    "Prove the uniqueness theorem for Poisson's equation and use it to justify solutions found by images or by inspection.",
+    "Solve electrostatic boundary-value problems by images and by separation of variables in Cartesian and spherical coordinates, using Fourier and Legendre series.",
+    "Compute multipole moments of charge and current distributions and the dipole fields they produce, and explain why there is no magnetic monopole term.",
+    "Use bound charges and currents, $\\mathbf D$ and $\\mathbf H$, and the interface conditions to find fields in linear dielectric and magnetic media.",
+    "Derive the displacement current, Poynting's theorem and the Maxwell stress tensor from Maxwell's equations, and use them to compute energy flow, momentum and forces.",
+    "Work with the scalar and vector potentials in the Coulomb and Lorenz gauges, and carry out gauge transformations.",
+    "Derive the Fresnel coefficients and Brewster's angle, and compute skin depths, plasma frequencies and waveguide cutoffs for real materials and devices.",
+    "Derive the Larmor formula and the power and pattern of electric dipole radiation, and apply them to antennas and to Rayleigh and Thomson scattering.",
+    "Write Maxwell's equations in covariant form, transform $\\mathbf E$ and $\\mathbf B$ between inertial frames, use the invariants $\\mathbf E\\cdot\\mathbf B$ and $E^2 - c^2B^2$, and find the field of a uniformly moving charge."
   ],
   "chapters": [
     {
@@ -82,52 +85,90 @@
   ],
   "history": [
     {
-      "year": 1873,
-      "title": "The Treatise",
-      "detail": "Maxwell’s Treatise on Electricity and Magnetism assembled the theory. The compact four-equation form taught now is Heaviside’s later vector version.",
+      "year": 1785,
+      "title": "The inverse-square law",
+      "detail": "Charles-Augustin de Coulomb measured the force between charged spheres with a torsion balance and established that it falls as the inverse square of the distance.",
+      "people": [
+        "Charles-Augustin de Coulomb"
+      ]
+    },
+    {
+      "year": 1820,
+      "title": "Currents make magnetic fields",
+      "detail": "Hans Christian Ørsted saw a current deflect a compass needle; within months Biot and Savart measured the field of a wire and Ampère began the study of forces between currents that he summarised in 1826.",
+      "people": [
+        "Hans Christian Ørsted",
+        "Jean-Baptiste Biot",
+        "Félix Savart",
+        "André-Marie Ampère"
+      ]
+    },
+    {
+      "year": 1828,
+      "title": "Green's essay",
+      "detail": "George Green's privately printed essay on electricity and magnetism introduced the potential function, Green's identities and the Green's-function method for boundary-value problems.",
+      "people": [
+        "George Green"
+      ]
+    },
+    {
+      "year": 1831,
+      "title": "Electromagnetic induction",
+      "detail": "Michael Faraday discovered that a changing magnetic flux induces a current, and pictured the space around charges and magnets as filled with lines of force.",
+      "people": [
+        "Michael Faraday"
+      ]
+    },
+    {
+      "year": 1865,
+      "title": "A dynamical theory of the field",
+      "detail": "James Clerk Maxwell, having introduced the displacement current in 1861–62, presented the complete field equations in 1865 and identified light as an electromagnetic wave; his Treatise followed in 1873.",
       "people": [
         "James Clerk Maxwell"
       ]
     },
     {
-      "year": 1898,
-      "title": "The field of a moving charge",
-      "detail": "Alfred-Marie Liénard (1898) and Emil Wiechert (1900) wrote the potentials of a point charge in arbitrary motion, from which the radiation of an accelerated charge follows.",
+      "year": 1884,
+      "title": "Energy flow in the field",
+      "detail": "John Henry Poynting derived the theorem on the flux of electromagnetic energy; Oliver Heaviside, who found it independently, recast Maxwell's equations in the four-equation vector form in 1884–85.",
       "people": [
-        "Alfred-Marie Liénard",
-        "Emil Wiechert"
+        "John Henry Poynting",
+        "Oliver Heaviside"
       ]
     },
     {
-      "year": 1909,
-      "title": "The Theory of Electrons",
-      "detail": "H. A. Lorentz’s book treated matter as charges in the vacuum field and gave the force law that carries his name its modern setting.",
+      "year": 1887,
+      "title": "Electromagnetic waves detected",
+      "detail": "Heinrich Hertz generated and detected electromagnetic waves with spark-gap dipoles in 1887–88, measuring their reflection, refraction and polarisation.",
       "people": [
+        "Heinrich Hertz"
+      ]
+    },
+    {
+      "year": 1898,
+      "title": "The field of a moving charge",
+      "detail": "Alfred-Marie Liénard (1898) and Emil Wiechert (1900) derived the potentials of a point charge in arbitrary motion, following Joseph Larmor's 1897 formula for the power radiated by an accelerated charge.",
+      "people": [
+        "Alfred-Marie Liénard",
+        "Emil Wiechert",
+        "Joseph Larmor"
+      ]
+    },
+    {
+      "year": 1905,
+      "title": "The electrodynamics of moving bodies",
+      "detail": "Building on Lorentz's transformations (1892–1904), Albert Einstein derived them from the relativity principle and the constancy of the speed of light, and gave the transformation of E and B between frames.",
+      "people": [
+        "Albert Einstein",
         "Hendrik Antoon Lorentz"
       ]
     },
     {
       "year": 1908,
-      "title": "The relativistic field tensor",
-      "detail": "Minkowski wrote the electromagnetic field as an antisymmetric tensor, so that the transformation of E and B is a change of frame rather than a new law.",
+      "title": "The field tensor",
+      "detail": "Hermann Minkowski reformulated electrodynamics in four-dimensional spacetime and wrote the electromagnetic field as a single antisymmetric tensor.",
       "people": [
         "Hermann Minkowski"
-      ]
-    },
-    {
-      "year": 1884,
-      "title": "Poynting’s theorem",
-      "detail": "John Henry Poynting identified the flux of electromagnetic energy. The momentum density of the field is the same construction divided by c².",
-      "people": [
-        "John Henry Poynting"
-      ]
-    },
-    {
-      "year": 1949,
-      "title": "Synchrotron radiation",
-      "detail": "Julian Schwinger calculated the spectrum of radiation from a relativistic charge in a magnetic field. Graduate courses still teach that 1949 result.",
-      "people": [
-        "Julian Schwinger"
       ]
     }
   ],
@@ -135,32 +176,38 @@
     {
       "title": "Introduction to Electrodynamics",
       "authors": "David J. Griffiths",
-      "year": 2017,
-      "note": "Fourth edition. This course follows it. Work the problems; the text is not a substitute for them."
-    },
-    {
-      "title": "Modern Electrodynamics",
-      "authors": "Andrew Zangwill",
-      "year": 2013,
-      "note": "A rich modern alternative to Jackson at the start of graduate study, with excellent physical discussion."
-    },
-    {
-      "title": "Classical Electrodynamics",
-      "authors": "John David Jackson",
-      "year": 1998,
-      "note": "Third edition. The reference, not the first textbook. Use it for radiation and for looking up a standard result."
+      "year": 2023,
+      "note": "Fifth edition. The standard upper-level text and the closest companion to this course, with excellent worked problems on boundary-value problems, radiation and relativistic fields."
     },
     {
       "title": "Electricity and Magnetism",
       "authors": "Edward M. Purcell and David J. Morin",
       "year": 2013,
-      "note": "Third edition. Still the best place to remember what the fields mean while the calculations get longer."
+      "note": "Third edition. The best place to build physical intuition, especially its derivation of magnetism from relativity and its treatment of fields in matter."
+    },
+    {
+      "title": "Modern Electrodynamics",
+      "authors": "Andrew Zangwill",
+      "year": 2013,
+      "note": "A rich, modern text bridging the undergraduate and graduate levels, with careful physical discussion and many applications; good for dielectrics, waveguides and radiation."
     },
     {
       "title": "Classical Electrodynamics",
+      "authors": "John David Jackson",
+      "year": 1999,
+      "note": "Third edition. The graduate reference: Green's functions, multipoles, waveguides, radiation and the relativistic theory in full."
+    },
+    {
+      "title": "The Classical Theory of Fields",
+      "authors": "L. D. Landau and E. M. Lifshitz",
+      "year": 1975,
+      "note": "Course of Theoretical Physics, vol. 2, fourth English edition. A concise, relativistic-first treatment of the field tensor, invariants, the fields of moving charges and radiation."
+    },
+    {
+      "title": "Electromagnetism (lecture notes)",
       "authors": "David Tong",
       "year": 2015,
-      "note": "Cambridge lecture notes. A clear path through the undergraduate and early graduate theory."
+      "note": "Cambridge lecture notes, freely available. A clear path through the undergraduate theory, with a good chapter on the relativistic formulation."
     }
   ],
   "next": [
