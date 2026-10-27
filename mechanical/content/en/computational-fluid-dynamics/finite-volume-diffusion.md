@@ -102,7 +102,7 @@ In steady one-dimensional diffusion without source, the flux $q_e$ is the same o
 $$
 \phi_P - \phi_E = q_e\left(\frac{\delta x_{e^-}}{\Gamma_P} + \frac{\delta x_{e^+}}{\Gamma_E}\right).
 $$
-Defining $\Gamma_e$ by $q_e = \Gamma_e(\phi_P - \phi_E)/\delta x_{PE}$ gives [[#eq-harmonic}]. It is the series-resistance law: resistances add, not conductivities.
+Defining $\Gamma_e$ by $q_e = \Gamma_e(\phi_P - \phi_E)/\delta x_{PE}$ gives [[#eq-harmonic]]. It is the series-resistance law: resistances add, not conductivities.
 :::
 
 The harmonic mean has the right limits. If one material is a perfect insulator ($\Gamma_E \to 0$), $\Gamma_e \to 0$ and no heat crosses, as it should; the arithmetic mean would give $\tfrac12\Gamma_P$ and let heat stream through the insulation. If $\Gamma_E \to \infty$, $\Gamma_e \to 2\Gamma_P$: all the resistance lies in the half cell on the $P$ side, which has half the length of $\delta x_{PE}$.

@@ -270,7 +270,7 @@ $\cos\alpha = \mathbf{d}\cdot\mathbf{n}/\lvert\mathbf{d}\rvert = 1.0/\sqrt{1.04}
 ::: exercise A validation uncertainty {level=2 check="43.87"}
 Compute $u_{\text{val}}$ for $u_{\text{num}} = 20\ \mathrm{Pa}$, $u_{\text{input}} = 25\ \mathrm{Pa}$ and $u_D = 30\ \mathrm{Pa}$. (Enter $u_{\text{val}}$ in Pa to two decimal places.)
 ::: solution
-$u_{\text{val}} = \sqrt{400 + 625 + 900} = \sqrt{1925} = 43.87\ \mathrm{Pa}$. Note that the largest component dominates: halving $u_{\text{num}}$ alone would only reduce $u_{\text{val}}$ to $40.4\ \mathrm{Pa}$.
+$u_{\text{val}} = \sqrt{400 + 625 + 900} = \sqrt{1925} = 43.87\ \mathrm{Pa}$. Note that the largest component dominates: halving $u_{\text{num}}$ alone would only reduce $u_{\text{val}}$ to $40.31\ \mathrm{Pa}$.
 :::
 :::
 
