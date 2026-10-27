@@ -20,10 +20,10 @@
     "Build recurrent neural language models and train them with backpropagation through time.",
     "Explain vanishing and exploding gradients in recurrent networks, and how LSTM and GRU gating and gradient clipping address them.",
     "Construct encoder–decoder models for sequence-to-sequence tasks, trained with teacher forcing.",
-    "Implement greedy and beam-search decoding, and explain length normalisation and exposure bias.",
+    "Implement greedy and beam-search decoding and temperature, top-k and nucleus sampling, and explain length normalisation, exposure bias and degenerate repetition.",
     "Derive additive and multiplicative attention, and interpret attention weights as a soft alignment.",
     "Explain the move from static to contextual embeddings and the transfer learning it enabled.",
-    "Compare recurrent, convolutional and state-space sequence models in cost and in how far back they can see."
+    "Compare recurrent, convolutional and state-space sequence models in cost and in how far back they can see, and prove the recurrence–convolution duality of a linear time-invariant state-space model."
   ],
   "chapters": [
     {
@@ -54,7 +54,7 @@
     {
       "slug": "decoding-basics",
       "title": "Decoding",
-      "summary": "Greedy and beam search, length normalisation and exposure bias.",
+      "summary": "Greedy and beam search, length normalisation, temperature, top-k and nucleus sampling, and repetition.",
       "requires": [
         "sequence-models/seq2seq"
       ]
@@ -161,7 +161,7 @@
     {
       "year": 2023,
       "title": "Mamba",
-      "detail": "Gu and Dao made the state-space parameters depend on the input, giving a recurrent model that matches Transformers of the same size in language modelling.",
+      "detail": "Gu and Dao made the state-space parameters depend on the input, giving a selective recurrent model that their experiments showed matching Transformers of similar or larger size in language modelling.",
       "people": [
         "Albert Gu",
         "Tri Dao"
@@ -182,6 +182,12 @@
       "note": "A monograph on LSTMs, bidirectional networks and connectionist temporal classification."
     },
     {
+      "title": "Speech and Language Processing (3rd edition draft)",
+      "authors": "Daniel Jurafsky and James H. Martin",
+      "year": 2025,
+      "note": "Freely available draft (revised regularly; cited here as of 2025) with clear chapters on RNNs and LSTMs, encoder–decoder models, attention and decoding."
+    },
+    {
       "title": "Neural Machine Translation",
       "authors": "Philipp Koehn",
       "year": 2020,
@@ -192,6 +198,12 @@
       "authors": "Aston Zhang, Zachary C. Lipton, Mu Li and Alexander J. Smola",
       "year": 2023,
       "note": "Runnable implementations of RNNs, LSTMs, GRUs, sequence-to-sequence models and attention."
+    },
+    {
+      "title": "Modeling Sequences with Structured State Spaces",
+      "authors": "Albert Gu",
+      "year": 2023,
+      "note": "PhD thesis (Stanford) developing HiPPO, S4 and the theory of state-space sequence models, with their connections to recurrences and convolutions."
     }
   ],
   "next": [
