@@ -6,24 +6,25 @@
   "level": 4,
   "order": 310,
   "tagline": "Ethical principles, consent and capacity, confidentiality, end-of-life decisions, research ethics and professionalism",
-  "summary": "Medicine raises hard questions about what should be done, not only what can be done. This course covers the principles and theories of medical ethics, consent and mental capacity, confidentiality, ethical questions at the beginning and end of life, justice and resource allocation, research ethics, and professionalism and regulation, noting how laws differ between countries.",
+  "summary": "Medicine raises hard questions about what should be done, not only what can be done. This course covers the principles and theories of medical ethics, consent and mental capacity, confidentiality, ethical and legal questions at the beginning and end of life, justice and resource allocation, research ethics, and professionalism and regulation, following the law of England and Wales and noting where other countries differ.",
   "overview": [
-    "Clinical decisions are rarely only technical. Whether to transfuse, whether to disclose, whether to resuscitate, whether to test a relative, whether to allocate an intensive-care bed — each mixes evidence with values, and values need a method. Medical ethics supplies it: the principlist framework of autonomy, beneficence, non-maleficence and justice, its casuistic and narrative correctives, and the skills of justification, proportionality and conflict resolution under time pressure.",
-    "The course works through the places where the method matters. Ethical principles and their conflicts; consent — the move from paternalism through disclosure to genuine informed consent, and the assessment of capacity with its legal tests in major jurisdictions; confidentiality and its limits (public interest, safeguarding, communicable disease, genetics). Beginning-of-life ethics covers contraception, abortion, surrogacy, embryo research and preimplantation genetics; end-of-life ethics covers withholding and withdrawing treatment, palliative sedation, the euthanasia and assisted-dying debates and the law as it stands in different countries — with the explicit recognition that guidance differs by jurisdiction and changes.",
-    "Distributive justice brings resource limits into view: queueing, age, QALYs, priority setting and the pandemic triage experience. Research ethics runs from Nuremberg through Helsinki and Belmont to today's register- and consent-based trial ecosystem and data ethics. The final chapter covers professionalism: duties, fitness to practise, conflicts of interest, honesty after error and regulation. Throughout, the teaching uses cases and structured reasoning rather than slogans, and presents law descriptively — what different legal systems require — not as advice."
+    "Clinical decisions are rarely only technical. Whether to admit a patient who refuses, whether to tell a relative about a genetic result, whether to start or stop a ventilator, who gets the last intensive care bed: each mixes evidence with values. Medical ethics offers methods for these decisions: the four principles of respect for autonomy, beneficence, non-maleficence and justice, the moral theories behind them, and a structured way of working through a case that gets the facts right before arguing about values.",
+    "The course then applies these tools. It covers valid consent and the Montgomery duty to disclose material risks; capacity, best interests and advance decisions under the Mental Capacity Act 2005; the duty of confidentiality and when information may or must be shared; abortion, prenatal screening, assisted conception and decisions about newborns; withdrawing treatment, resuscitation decisions, palliative sedation and the assisted dying debate; QALYs, cost-effectiveness and fair process in resource allocation; the history and requirements of research ethics; and the professional duties of doctors and how they are regulated.",
+    "The law described is that of England and Wales as of 2026, with the main cases and statutes named and dated, and the GMC's current guidance. Scotland, Northern Ireland and other countries differ in important ways, and the law changes, as recent reforms of abortion law and debates on assisted dying show. The law is presented to explain how decisions are made, not as legal advice. Every chapter uses fictional clinical cases worked step by step, quick checks, and exercises with full answers."
   ],
   "prerequisites": [
     "clinical-skills"
   ],
   "outcomes": [
-    "Apply the four-principles framework and its rivals (care ethics, narrative ethics, casuistry) to a clinical dilemma, and write out the reasoning — facts, principles, stakeholders, options — rather than asserting a position.",
-    "Explain informed consent — disclosure, comprehension, voluntariness — and its exceptions, and assess decision-making capacity using the functional test with its legal variants.",
-    "Describe the justification and limits of confidentiality, including disclosure in the public interest, communicable-disease reporting, genetic information about relatives, and duties in safeguarding.",
-    "Discuss the principal arguments in beginning-of-life debates — contraception, abortion, assisted conception, embryo research, preimplantation genetic testing — and summarise how different jurisdictions regulate them.",
-    "Analyse end-of-life decisions: advance directives and lasting powers of attorney, surrogate decision-making, withholding and withdrawing treatment including nutrition and hydration, sedation at the end of life, and the legal status of euthanasia and assisted dying across jurisdictions.",
-    "Explain approaches to justice in resource allocation — need, prognosis, cost-effectiveness, years of life, equity weights — and the ethics of triage in scarcity, including pandemic experience.",
-    "State the core requirements of research ethics: review, informed consent, equipoise, risk–benefit, vulnerable participants, registration and reporting, and the historical abuses that produced the codes.",
-    "Describe the duties of professionalism: candour after harm, conflicts of interest, probity and fitness to practise, boundaries, and how regulators approach impairment and misconduct."
+    "Apply the four principles and the main moral theories to a clinical dilemma, using specification and balancing, and set out the reasoning in a structured way.",
+    "Explain the requirements of valid consent, including the Montgomery test of material risk, and communicate risk using absolute numbers and natural frequencies.",
+    "Assess decision-making capacity using the functional test of the Mental Capacity Act 2005, and describe best-interests decisions, advance decisions to refuse treatment and lasting powers of attorney.",
+    "Describe the legal and ethical basis of confidentiality, and decide when information may be disclosed with consent, by legal requirement or in the public interest.",
+    "Summarise the law on abortion and assisted conception in Great Britain, and discuss the ethics of moral status, prenatal screening and decisions about newborn infants.",
+    "Analyse decisions to withhold or withdraw life-sustaining treatment and about CPR, distinguish palliative sedation from euthanasia, and outline the law and arguments on assisted dying.",
+    "Calculate and interpret QALYs and incremental cost-effectiveness ratios, and evaluate allocation decisions against theories of justice and fair process.",
+    "State the requirements of ethical research, including equipoise, consent and its exceptions, independent review and transparency, and relate them to the history of research abuses.",
+    "Describe how doctors are regulated in the UK, the duties of candour and of raising concerns, and the standards of probity and professional boundaries."
   ],
   "chapters": [
     {
@@ -92,103 +93,139 @@
   "history": [
     {
       "year": -400,
-      "title": "The Oath tradition",
-      "detail": "The Hippocratic corpus — oath and ethics writings — binds the physician to confidentiality, non-maleficence and fidelity, the profession's first explicit social contract, whose descendants still open medical-school graduation ceremonies.",
+      "title": "The Hippocratic Oath",
+      "detail": "The Hippocratic Oath, probably written in the 5th or 4th century BCE, binds physicians to help the sick, to avoid harm and injustice, and to keep secret what they learn in treating patients.",
       "people": [
-        "Hippocratic corpus"
+        "Hippocratic school"
       ]
     },
     {
-      "year": 1793,
-      "title": "The humane treatment argument",
-      "detail": "The great unwinding of the chains at Bicêtre, popularly attributed to Philippe Pinel (with Quincy's earlier reforms at York), begins the argument that the mad and the miserable are patients rather than captives — the ancestor of liberty and consent debates that run through mental-health law.",
+      "year": 1803,
+      "title": "Percival's Medical Ethics",
+      "detail": "Thomas Percival, a Manchester physician, publishes Medical Ethics, a code of professional conduct for hospital doctors that shapes later codes in Britain and the United States.",
       "people": [
-        "Philippe Pinel"
+        "Thomas Percival"
       ]
     },
     {
-      "year": 1932,
-      "title": "The Tuskegee study begins",
-      "detail": "The US Public Health Service study of untreated syphilis in 400 Black men enrolls, continuing with deception until 1972; together with the Willowbrook hepatitis studies it becomes the paradigm case of research exploitation and the direct spur to the Belmont Report and institutional review.",
+      "year": 1858,
+      "title": "The General Medical Council",
+      "detail": "The Medical Act 1858 creates the General Medical Council and a register of qualified practitioners, beginning statutory regulation of the medical profession in the UK.",
       "people": [
-        "United States Public Health Service"
+        "Parliament of the United Kingdom"
       ]
     },
     {
       "year": 1947,
       "title": "The Nuremberg Code",
-      "detail": "The judges at the doctors' trial set out ten requirements for permissible human experimentation, beginning with voluntary consent — a reaction to the medicine of the Holocaust that becomes the grammar of every subsequent research-ethics code.",
+      "detail": "After the trial of Nazi doctors, the judges set out ten principles for permissible human experimentation, beginning with the statement that the voluntary consent of the human subject is absolutely essential.",
       "people": [
-        "Military Tribunal Nuremberg"
+        "Nuremberg Military Tribunal"
       ]
     },
     {
       "year": 1964,
       "title": "The Declaration of Helsinki",
-      "detail": "The World Medical Association adopts its ethical principles for medical research involving human subjects, revised repeatedly since (most recently 2013) — the living document that governs ethics-committee review, placebos and post-trial obligations.",
+      "detail": "The World Medical Association adopts its ethical principles for medical research involving people. Revised many times, most recently in 2024, it remains the main international code for research ethics.",
       "people": [
         "World Medical Association"
       ]
     },
     {
-      "year": 1976,
-      "title": "Karen Quinlan and the right to refuse",
-      "detail": "After Karen Quinlan's parents petition to remove her ventilator, the New Jersey Supreme Court allows it, grounding the decision in a constitutional right of privacy and recognising surrogate decision-making; the case launches advance directives, ethics committees and the whole end-of-life jurisprudence.",
+      "year": 1966,
+      "title": "Beecher exposes unethical research",
+      "detail": "Henry Beecher, an anaesthetist at Harvard, publishes 22 examples of ethically questionable studies from mainstream research in the New England Journal of Medicine.",
       "people": [
-        "Karen Quinlan",
-        "Joseph Quinlan"
+        "Henry K. Beecher"
       ]
     },
     {
       "year": 1979,
-      "title": "The Belmont Report",
-      "detail": "The US National Commission distils research ethics into respect for persons, beneficence and justice, and translates them into the requirements of informed consent, risk–benefit assessment and fair selection that now sit inside every ethics application; Beauchamp and Childress's principles approach appears the same year.",
+      "title": "Principles and the Belmont Report",
+      "detail": "Tom Beauchamp and James Childress publish Principles of Biomedical Ethics, and the US National Commission issues the Belmont Report, setting out respect for persons, beneficence and justice in research.",
       "people": [
-        "National Commission for the Protection of Human Subjects",
         "Tom Beauchamp",
         "James Childress"
       ]
     },
     {
-      "year": 1989,
-      "title": "Choosing death",
-      "detail": "The US Supreme Court, in Cruzan, accepts that a competent person may refuse life-sustaining treatment and that states may set evidentiary standards for surrogate decisions; the case — with the subsequent Patient Self-Determination Act — makes advance care planning a routine part of hospital admission.",
+      "year": 1985,
+      "title": "Gillick",
+      "detail": "In Gillick v West Norfolk and Wisbech Area Health Authority, the House of Lords holds that a child under 16 with sufficient understanding and intelligence can consent to medical treatment.",
       "people": [
-        "Nancy Cruzan",
-        "Supreme Court of the United States"
+        "Victoria Gillick",
+        "Lord Scarman",
+        "Lord Fraser"
       ]
     },
     {
-      "year": 2005,
-      "title": "Global norms for research",
-      "detail": "WHO's international guidelines frame research ethics for low- and middle-income settings — community engagement, post-trial access, responsiveness of research to local health needs — responding to the 1990s controversies over placebo-controlled trials of perinatal HIV transmission prevention.",
+      "year": 1993,
+      "title": "Airedale NHS Trust v Bland",
+      "detail": "The House of Lords holds that tube feeding is medical treatment and may lawfully be withdrawn from Anthony Bland, in a persistent vegetative state, because continuing it is no longer in his best interests.",
       "people": [
-        "World Health Organization",
-        "CIOMS"
+        "Anthony Bland"
+      ]
+    },
+    {
+      "year": 2015,
+      "title": "Montgomery",
+      "detail": "The UK Supreme Court rules in Montgomery v Lanarkshire Health Board that doctors must ensure patients are aware of material risks and reasonable alternatives, replacing the Bolam test for disclosure of risk.",
+      "people": [
+        "Nadine Montgomery",
+        "Lord Kerr",
+        "Lord Reed"
       ]
     }
   ],
   "references": [
     {
-      "title": "The Ethics Textbook",
-      "authors": "Standard",
-      "year": 2020,
-      "note": "The standard reference for the decision and the principle.",
+      "title": "Principles of Biomedical Ethics",
+      "authors": "Tom L. Beauchamp and James F. Childress",
+      "year": 2019,
+      "note": "Eighth edition. The classic account of the four principles, with chapters on moral status, autonomy, non-maleficence, beneficence, justice and professional relationships.",
       "slug": "ref1"
     },
     {
-      "title": "The Ethics Guide",
-      "authors": "Textbook",
+      "title": "Medical Ethics and Law: A Curriculum for the 21st Century",
+      "authors": "Dominic Wilkinson, Jonathan Herring and Julian Savulescu",
       "year": 2019,
-      "note": "A rigorous treatment of the decision and the system.",
+      "note": "Third edition. A UK textbook organised around the medical ethics and law curriculum, with clinical cases and the law of England and Wales.",
       "slug": "ref2"
     },
     {
-      "title": "Clinical Ethics",
-      "authors": "Reference",
-      "year": 2018,
-      "note": "A practical treatment of the principle and the practice.",
+      "title": "Medical Law and Ethics",
+      "authors": "Jonathan Herring",
+      "year": 2025,
+      "note": "Tenth edition. A detailed and readable account of English medical law, including consent, capacity, confidentiality, reproduction, end of life and resource allocation.",
       "slug": "ref3"
+    },
+    {
+      "title": "Clinical Ethics: A Practical Approach to Ethical Decisions in Clinical Medicine",
+      "authors": "Albert R. Jonsen, Mark Siegler and William J. Winslade",
+      "year": 2022,
+      "note": "Ninth edition. The source of the four-topics method for analysing clinical ethics cases.",
+      "slug": "ref4"
+    },
+    {
+      "title": "Good medical practice",
+      "authors": "General Medical Council",
+      "year": 2024,
+      "note": "The professional standards for doctors in the UK, in effect from 30 January 2024, with linked guidance on decision making and consent (2020), confidentiality (2017) and treatment and care towards the end of life.",
+      "slug": "ref5"
+    },
+    {
+      "title": "Mental Capacity Act 2005 Code of Practice",
+      "authors": "Department for Constitutional Affairs",
+      "year": 2007,
+      "note": "Statutory guidance on the principles of the Mental Capacity Act, assessing capacity, best interests, advance decisions, lasting powers of attorney and research involving adults who lack capacity.",
+      "slug": "ref6"
+    },
+    {
+      "title": "Declaration of Helsinki: Ethical Principles for Medical Research Involving Human Participants",
+      "authors": "World Medical Association",
+      "year": 2024,
+      "note": "The current revision of the main international code for research ethics, adopted in October 2024.",
+      "slug": "ref7"
     }
   ],
   "next": []
