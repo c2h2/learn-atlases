@@ -1,141 +1,393 @@
-Innate immunity is the system you are born with and the one that answers every day: **barriers, phagocytes, complement and pattern-recognition receptors buy the minutes and hours, shape the days, and instruct the weeks-long adaptive response that the next chapter covers.** Clinical immunology, sepsis, autoimmunity and vaccinology all lean on these mechanisms, so this chapter is deliberately mechanistic with clinical hooks.
+Every day you inhale, swallow and touch millions of microbes, and almost none of them cause disease. The reason is not antibodies or T cells, which take a week or more to respond to something new. It is the **innate immune system**: defences that are present from birth, that recognise broad classes of microbe rather than individual ones, and that act within minutes to hours.
 
-This chapter covers barriers and phagocyte biology, pattern recognition and inflammation initiation, the inflammasome and cytokine logic, and complement.
+Innate immunity does three jobs. It holds most infections in check by itself. It buys time while the adaptive response is being organised. And it tells the adaptive system what kind of threat it is dealing with, so that the right type of lymphocyte response follows. When any part of it fails, the clinical pattern is distinctive enough that the missing part can often be named from the history alone.
 
-## Barriers and phagocytes
+This chapter covers the barriers, the cells of innate immunity, how those cells recognise microbes, the complement system, and the inflammatory and acute-phase responses that follow. The next chapter, [[immunology/antigen-recognition]], turns to the receptors of the adaptive system.
 
-::: definition Physical, chemical and cellular first lines {#def-barriers}
-**The barriers as medicine's most underrated organ system (the skin with its acidic-lipid-sebum microbiome-multilayer defence and the breach consequences - burns and wounds and lines and ulcers and the neutrophilic-and-staphylococcal-and-streptococcal arithmetic of infected trauma - [[surgery/wounds-surgical-infection]], [[musculoskeletal/skin]]; the respiratory tract with its mucociliary escalator and surfactant-and-alveolar-macrophage alveolar peace and the ciliary-dyskinesia-and-smoking-and-ciliary-paralysis-viral-and-intubation breakdowns that produce the bronchiectasis-and-pneumonia phenotypes - [[respiratory/mechanics-breathing]], [[respiratory/respiratory-infections]]; the gastrointestinal tract with its acid-and-mucus-and-peristalsis-and-IgA-and-flora architecture and the antibiotic-and-PPI-and-infection disruptions of it - [[gastrointestinal/digestion-absorption]], [[microbiology/microbiota]]; the genitourinary tract with its flow-and-pH-and-oestrogen-lactobacillus ecology and the catheter-and-obstruction-and-pregnancy and reflux exceptions that explain most pyelonephritis - [[renal/urinary-tract]], [[obstetrics-gynaecology/pregnancy-complications]]; and the blood-brain and blood-ocular barriers with their tight junctions and choroid-plexus transport and the meningitic-and-ventriculitis-and-intraocular-immune-privilege special cases that make CNS and eye infection treatment different pharmacokinetically and immunologically - [[nervous-system/neuroinflammation]], [[nervous-system/sensory-systems]]); the phagocyte story (neutrophil production and marrow reserve with the G-CSF axis and the margined-versus-circulating pools and the demargination cortisol-and-adrenaline effects and the neutropenia thresholds and drug-and-autoimmune-and-infiltrative causes - [[blood/haematopoiesis]], [[blood/leukaemia]]; the adhesion cascade - selectin-mediated rolling and integrin-mediated arrest and diapedesis and chemotaxis along C5a-and-IL-8-and-LTB4-and-formyl-peptide gradients, with the named human diseases proving each step (leucocyte-adhesion-deficiency types with their delayed cord separation and omphalitis and non-purulent necrotic infections and the integrin-deficiency flow-cytometry diagnosis, and the rare chemokine-receptor syndromes) - [[immunology/immunodeficiency]]; phagocytosis and killing - opsonisation with C3b and IgG (the splenectomy-and-encapsulated-organism and the complement-deficiency-and-Neisseria and the antibody-deficiency-and-recurrent-sinopulmonary-infection triads as the clinical proofs of opsonisation) and actin-driven engulfment and the oxidase burst (the NADPH-oxidase assembly and superoxide-and-myeloperoxidase-hypohalite chemistry and the chronic granulomatous disease with its catalase-positive abscesses and granulomas and the DHR-flow-cytometry-and-NBT history and the interferon-gamma-and-HSCT-and-gene-therapy management - [[infectious-diseases/immunocompromised-host]], [[genetics/mendelian-inheritance]]); and the non-phlogistic housekeeping (macrophage tissue residency and the monocyte-recruitment-versus-self-renewal taxonomy and the alveolar-and-Kupffer-and-microglial-and-Langerhans communities, eosinophils with their helminth-and-MAIT-and-IgE-and-IL-5 biology and the hypereosinophilic syndrome and drug-reaction organ damage - [[musculoskeletal/skin]], [[infectious-diseases/tropical-infections]], [[pharmacology/adverse-reactions]], mast cells as tissue sentinels bridging innate and allergic effector cells - [[immunology/hypersensitivity]], and natural-killer cells reading missing-self and stress ligands - [[immunology/adaptive-responses]] and the KIR and alloreactivity uses in [[immunology/transplant-tumour-immunology]]).**
+## Barriers
+
+The first defence is to keep microbes out. Intact skin is a dry, acidic, constantly shedding surface coated with antimicrobial lipids. Mucosal surfaces are thinner and wetter, so they rely on movement and secretions instead: mucus traps particles, cilia sweep them upward in the airways, peristalsis and urine flow wash them along, and gastric acid kills most of what is swallowed.
+
+::: definition Barrier defences {#def-barriers}
+**Barrier defences** are the physical, chemical and biological features of epithelial surfaces that prevent microbes from entering tissue. They include:
+
+- **physical barriers**: keratinised skin, tight junctions between epithelial cells, mucus, cilia and the flow of fluids;
+- **chemical barriers**: low pH (skin, stomach, vagina), lysozyme in tears and saliva, and **antimicrobial peptides** such as defensins and cathelicidin, which disrupt microbial membranes;
+- **biological barriers**: the resident **microbiota**, which occupy space and nutrients that pathogens would otherwise use.
 :::
 
-## Sensing and signalling
+Barrier failures are a common, practical cause of infection, and they are often created by medical care. A burn removes the skin barrier. An intravenous cannula or urinary catheter provides a route straight past it. Smoking and viral infection paralyse cilia. Broad-spectrum antibiotics remove the protective microbiota, which is why *Clostridioides difficile* colitis follows antibiotic use. Proton-pump inhibitors reduce gastric acidity and modestly increase the risk of enteric infection. In each case the immune cells are normal; the problem is that microbes arrive where they would not normally be.
 
-::: definition Pattern recognition and the inflammasome {#def-prr}
-**The germline-encoded surveillance toolkit (PAMPs and DAMPs - the microbial molecules (LPS-and-lipoproteins and peptidoglycan and unmethylated CpG DNA and dsRNA and flagellin) and the damage molecules (ATP and uric acid and HMGB1 and mitochondrial DNA and S100 proteins) with their receptor families and the danger-model logic that Polanyi-Medawar-Burnet lineage made respectable - [[immunology/tolerance-regulation]]; the TLRs on the cell surface and in endosomes - TLR4 with MD-2 and CD14 sensing Gram-negative LPS (the endotoxic-shock pharmacology target that never quite delivered and the LAL-test and water-bath pyrogen legacy), TLR2 heterodimers for lipoproteins and zymosan, TLR5 for flagellin, and the endosomal TLR3-7-8-9 for nucleic acids explaining the plasmacytoid-dendritic-cell interferon specialisation and the TLR7-and-TLR9 self-nucleic-acid autoimmunity of lupus and its mouse models and the hydroxychloroquine rationale - the lupus rationale in [[immunology/autoimmunity]]; the cytosolic sensors (RIG-I-and-MDA5 for viral RNA with the IFN-beta induction and the MDA5-GOF mutations' lung disease and the Aicardi-Goutieres interferonopathy spectrum of [[genetics/mendelian-inheritance]], the cGAS-STING DNA-sensing axis with its autoinflammation and its tumour-immunotherapy excitement, and the NLRP3 inflammasome with its assembly logic - priming by NF-kB (a TLR or TNF or danger signal) and activation by potassium-efflux-and-ROS-and-crystals-and-membrane-disruption triggers - [[nervous-system/neuroinflammation]] - keep AGS with genetics); the interleukin and TNF core (IL-1beta and IL-18 released via caspase-1 with their fever-and-neutrophil-and-collagen-and-metabolic effects and the IL-1 blockade pharmacopoeia - anakinra and canakinumab and rilonacept and colchicine's NLRP3-adjacent mechanism and the the CANTOS trial proof that inflammation reduction prevents vascular events; the TNF-α hub with its endothelial activation and cachexia and granuloma-maintenance role and the anti-TNF drug class and its TB-and-HBV-and-demyelinating-and-heart-failure caveats - [[musculoskeletal/inflammatory-arthritis]], [[infectious-diseases/tuberculosis]], [[gastrointestinal/bowel-disease]], the demyelinating contraindication noted in the drug tables and the type I interferon programme with its antiviral state (the PKR-and-OAS-and-Mx effectors) and its SLE and interferonopathy and long-COVID-adjacent research fronts - [[immunology/autoimmunity]]); and the autoinflammatory diseases as the human knockouts of this chapter (the NLRP3 gain-of-function cryopyrinopathies from FCAS to Muckle-Wells to NOMID and the IL-1-receptor-antagonist-deficiency and TRAPS and the familial-Mediterranean-fever-pyrin/marenostrin-pyrin with its colchicine-responsive-serositis-and-FMF-amyloidosis and the mevalonate-kinase and the ADA2-deficiency-and-Behcet-mimic and the SAVI-STING gain-of-function - each a cytokine-pathway-dissection with a biologic matched to it, and each a fever-of-unknown-origin genetics-clinic diagnosis with the genetic-testing-and-treat-and-registry loop - [[genetics/mendelian-inheritance]], [[infectious-diseases/fever-sepsis]] for the fever-workup interface, [[musculoskeletal/inflammatory-arthritis]] for the arthritis-mimic differential).**
-:::
+The microbiota are covered in more detail in [[microbiology/microbiota]].
 
-::: definition Complement {#def-complement}
-**The three routes to C3 (the classical pathway with C1q bound to immune-complex IgG-and-IgM and the antibody-independent CRP-and-pentraxin and directly-membrane routes, the lectin pathway with MBL-and-ficolins binding microbial sugar patterns and the associated serine proteases, and the alternative pathway as spontaneous C3-hydrolysis-tick-over amplified on surfaces lacking regulatory molecules - the C3 convertases C4b2a and C3bBb and the C5 convertases and the terminal C5b-9 membrane-attack complex with its quantitative-neisserian-susceptibility clinical signature); the four uses of C3b (opsonisation with the receptor-mediated phagocytosis and the splenic clearance of opsonised organisms, immune-complex solubilisation and clearance via CR1 on erythrocytes to liver and spleen explaining the immune-complex disease of complement-poor states, the anaphylatoxins C3a-and-C5a driving mast-cell-and-neutrophil-and-endothelial activation and chemotaxis, and the amplification loop bridging all three pathways with properdin as the stabiliser and factor H-and-I-and-CD46-and-CD55-and-CD59 as the regulators keeping self-surfaces quiet); the regulator diseases (CD55-and-CD59-deficiency as paroxysmal nocturnal haemoglobinuria with its complement-mediated haemolysis and thrombosis and the eculizumab-and-ravulizumab anti-C5 therapy and its meningococcal-vaccination-and-antibiotic-prophylaxis obligation and breakthrough-infection education and the gene-editing and complement-fixing-bispecific-era trials - [[blood/haemoglobin-disorders]], [[blood/thrombosis-anticoagulation]], [[public-health/vaccination-programmes]]; factor-H-and-I-and-B-and-C3-and-MCP-and-CFH-autoantibody disease in atypical haemolytic uraemic syndrome and C3-glomerulopathy and partial lipodystrophy, and the genetic-and-acquired complement- dysregulation of the kidney that the transplant and nephrology teams manage with terminal-pathway blockade - cite [[renal/filtration]] and [[renal/acute-kidney-injury]] and the transplantation context in [[immunology/transplant-tumour-immunology]]); the deficiency table with its clinical grammar (early-classical C1-C4 deficiencies - the immune-complex and lupus-like disease with the hypocomplementaemic-urticarial-vasculitic-syndrome and C1-inhibitor-deficiency hereditary angioedema being a regulator not a deficiency - the bradykinin-mediated recurrent-laryngeal-and-abdominal-and-cutaneous oedema without urticaria and its C4-and-screening-and-C1-INH-and-lanadelumab-and-icatibant management and the ACE-inhibitor-and-oestrogen exacerbators and the peri-procedural airway risk - [[musculoskeletal/connective-tissue-vasculitis]]; C3-and-its-receptors - the severe-recurrent-pyogenic-infection-with-immune-complex-disease; the terminal C5-C9 - the recurrent meningitis and gonorrhoea with otherwise-good-health; MBL-and-ficolin-3 - the common-minor-infections-in-early-childhood-and-chemotherapy-context debate; and the drug-acquired-and-disease-acquired hypocomplementaemias - the lupus-consumption-and-low-C3-C4-and-C4-binding-protein monitoring and the post-infectious-GN and endocarditis and cryoglobulinaemia and liver-disease-production patterns that make "low complement" a differential-diagnosis exercise in itself) - [[clinical-skills/laboratory-tests]], [[immunology/autoimmunity]], [[infectious-diseases/fever-sepsis]], [[renal/filtration]].**
-:::
+## The cells of innate immunity
 
-::: example The child with catalase-positive abscesses {#ex-cgd}
-A 3-year-old boy has had a perianal abscess, an Aspergillus pneumonia and a Staphylococcus liver abscess in a year; examination shows granulomatous gastric outlet obstruction; his maternal uncle "died of infections"; the oxidative-burst testing is abnormal.
+Microbes that cross a barrier meet resident cells first, then cells recruited from the blood.
+
+**Macrophages** live in almost every tissue and have local names: Kupffer cells in the liver, alveolar macrophages in the lung, microglia in the brain. They engulf microbes and dead cells, and when they detect a microbe they release cytokines that start inflammation.
+
+**Neutrophils** are the most numerous white cells in blood. They are made in large numbers in the bone marrow, circulate for hours and are recruited to tissue within minutes to hours of an infection. They are short-lived, and dead neutrophils form much of pus. Neutrophils are the main defence against extracellular bacteria and fungi.
+
+**Dendritic cells** sit in tissues and sample their surroundings. When they pick up microbial material together with a danger signal, they migrate through the lymphatics to a lymph node and present antigen to T cells. They are the main link between innate and adaptive immunity.
+
+**Mast cells** sit near blood vessels and nerves in skin and mucosa. They contain granules of histamine and other mediators. They can be triggered directly by complement fragments or by microbial products, and they are the central cell of allergic reactions, covered in [[immunology/hypersensitivity]].
+
+**Eosinophils** and **basophils** are specialised for multicellular parasites and take part in allergic inflammation.
+
+**Natural killer (NK) cells** are lymphocytes without antigen-specific receptors. They kill virus-infected and malignant cells, as described below.
+
+### Getting neutrophils out of the blood
+
+Neutrophils flow quickly through blood vessels, so leaving the circulation takes a sequence of steps known as the **leucocyte adhesion cascade**.
+
+1. **Activation of the endothelium.** Cytokines from tissue macrophages (TNF and IL-1) cause nearby endothelial cells to display adhesion molecules called **selectins**.
+2. **Rolling.** Selectins bind sugars on the neutrophil surface (sialyl-Lewis X). The bonds form and break rapidly, so the neutrophil slows and rolls along the vessel wall.
+3. **Firm adhesion.** Chemokines on the endothelium, especially CXCL8 (IL-8), switch the neutrophil's **integrins** (such as LFA-1, made of CD11a and CD18) into a high-affinity state. The integrins bind ICAM-1 on endothelium and the cell stops.
+4. **Transmigration.** The neutrophil squeezes between endothelial cells into the tissue.
+5. **Chemotaxis.** It then moves up gradients of chemoattractants: C5a, leukotriene B4, CXCL8 and bacterial formyl peptides.
+
+Each step has a human disease that proves it matters. In **leucocyte adhesion deficiency type 1**, a recessive defect in CD18 means integrins cannot form. Neutrophils cannot leave the blood, so the blood neutrophil count is very high while tissues are poorly defended. Infants present with delayed separation of the umbilical cord, omphalitis, and skin and gum infections that do not form pus. The diagnosis is made by flow cytometry showing absent CD18. In the rarer type 2, the fucose-containing selectin ligand is missing.
+
+### Phagocytosis and killing
+
+A phagocyte engulfs a particle more readily if the particle is coated with molecules the phagocyte has receptors for. This coating is called **opsonisation**, and the two main opsonins are the complement fragment **C3b** and **IgG antibody**. Encapsulated bacteria such as *Streptococcus pneumoniae*, *Haemophilus influenzae* type b and *Neisseria meningitidis* resist phagocytosis unless they are opsonised, which is why antibody deficiency, complement deficiency and loss of the spleen all predispose to them.
+
+Once inside the phagosome, the microbe is killed by two mechanisms:
+
+- **Oxygen-dependent killing.** The enzyme complex **NADPH oxidase** assembles on the phagosome membrane and transfers electrons to oxygen, making superoxide. This is converted to hydrogen peroxide and, by **myeloperoxidase**, to hypochlorous acid. The sudden oxygen consumption is called the respiratory burst.
+- **Oxygen-independent killing.** Granule contents, including defensins, lysozyme, lactoferrin and proteases, are released into the phagosome.
+
+Neutrophils can also expel their DNA and granule proteins as **neutrophil extracellular traps** (NETs), which immobilise microbes but can also damage tissue and promote thrombosis.
+
+**Chronic granulomatous disease** (CGD) is caused by a defect in one of the NADPH oxidase subunits; about two thirds of cases are X-linked (the *CYBB* gene). Neutrophils engulf bacteria normally but cannot kill some of them. People with CGD have recurrent deep infections and abscesses with organisms such as *Staphylococcus aureus*, *Aspergillus*, *Burkholderia cepacia* complex, *Serratia* and *Nocardia*, and they form granulomas because macrophages keep trying to wall off what they cannot kill. The diagnostic test is the **dihydrorhodamine (DHR) flow cytometry test**, which measures the oxidative burst directly.
+
+::: example A boy with a liver abscess {#ex-cgd}
+A 6-year-old boy is admitted with fever and right upper quadrant pain. Imaging shows a liver abscess, and drainage grows *Staphylococcus aureus*. He has had two previous admissions: a neck lymph node abscess at age 2 and an *Aspergillus* pneumonia at age 4. His full blood count shows a high neutrophil count. Immunoglobulins are normal. A maternal uncle died in childhood of "pneumonia". What is the most likely diagnosis, how would you confirm it, and what are the principles of management?
 ::: solution
-**Chronic granulomatous disease - the oxidase defect written as a family tree ([[#def-barriers]], [[genetics/mendelian-inheritance]]): the mechanism - NADPH-oxidase assembly failure (X-linked CYBB gp91-phox being the commonest and most severe, with the autosomal p47-p67-p22-phox and NCF variants) so phagocytes engulf but cannot generate superoxide and its hypohalite derivatives, leaving catalase-positive organisms (Staphylococcus and Serratia and Burkholderia and Nocardia and Aspergillus - the catalase spares its own peroxide from the host) in unkilled phagolysosomes that wall off as granulomas - [[microbiology/bacteria]], [[microbiology/fungi-parasites]]; the diagnosis - the DHR-123 flow-cytometry or NBT stimulation test with the X-inheritance-skewed female-carrier mosaicism note and the genetics confirming and counselling (the carrier mother's opportunity for prenatal and preimplantation options and the extended-family screening) - [[genetics/genetic-testing]], [[clinical-skills/laboratory-tests]]; the prophylaxis architecture that changed survival - lifelong co-trimoxazole and itraconazole and interferon-gamma (with its immunomodulatory mechanism) and the antibiotic stewardship for the catalase-positive cast and the vaccine plan including the no-live-BCG-where-used caution - [[microbiology/antimicrobials]], [[public-health/vaccination-programmes]], [[infectious-diseases/tropical-infections]] for BCG; the acute-attack medicine - aggressive prolonged antifungal-and-antibacterial therapy for the Aspergillus-and-liver-abscess phenotypes (source control with drainage decisions and the surgery that granulomas and poor healing complicate) and corticosteroids for the dysregulated inflammatory obstructive complications (the GI and GU obstruction and the aspiration) balanced against infection risk; and the definitive futures - HSCT outcomes by age-and-donor-and-conditioning with the transplant-medicine collaboration and the gene-therapy trials and the adult-organ-damage-survivor clinic (the IBD-like colitis and the discoid lupus-like lesions and the lymphoma risk) which is where this child's care actually ends up being managed - [[immunology/transplant-tumour-immunology]], [[gastrointestinal/bowel-disease]], [[infectious-diseases/immunocompromised-host]].**
+**Pattern.** Deep abscesses (liver, lymph node) and an invasive fungal infection in a child point to a phagocyte killing defect rather than an antibody problem. Antibody deficiency typically causes recurrent sinus and chest infections with encapsulated bacteria, and his immunoglobulins are normal.
+
+**Why not a neutrophil number or migration problem?** His neutrophil count is high, and abscesses mean neutrophils are reaching the tissue. They arrive but fail to kill.
+
+**Family history.** An affected maternal uncle in a boy fits X-linked inheritance, the commonest form of chronic granulomatous disease.
+
+**Confirmation.** A DHR flow cytometry test shows absent or greatly reduced oxidative burst in stimulated neutrophils. Genetic testing then identifies the subunit (most likely *CYBB*), which allows carrier testing of his mother and counselling for the family.
+
+**Management principles.** Treat the current abscess with drainage and prolonged antimicrobial therapy guided by culture. Long-term antibacterial and antifungal prophylaxis is standard; interferon-gamma is used in some centres. Haematopoietic stem cell transplantation can be curative and is increasingly offered early. Specific choices follow specialist immunology guidance.
 :::
 :::
 
-::: example The swollen face without an itch {#ex-hae}
-A 19-year-old girl has recurrent 2-3 day episodes of painless facial and lip swelling, one with colicky abdominal pain and a CT showing bowel-wall oedema and ascites; no urticaria, no trigger, antihistamines and adrenaline "never helped"; her mother has had "belly attacks".
+## Natural killer cells
+
+NK cells solve a problem that T cells cannot. Many viruses, and many tumours, reduce the expression of **MHC class I** molecules on the cell surface to hide from cytotoxic T cells (see [[immunology/antigen-recognition]]). NK cells carry **inhibitory receptors** (in humans, the killer-cell immunoglobulin-like receptors, KIRs) that recognise self MHC class I. A healthy cell with normal MHC class I switches the NK cell off.
+
+::: theorem The missing-self principle {#thm-missing-self}
+An NK cell kills a target when activating signals outweigh inhibitory signals. Loss of self MHC class I removes inhibition (**missing self**), and stress-induced ligands on infected or transformed cells add activation (**induced self**). Either change can tip the balance towards killing.
+:::
+
+NK cells kill by releasing **perforin**, which makes pores in the target membrane, and **granzymes**, which enter through the pores and trigger apoptosis. They also carry the Fc receptor CD16, which binds IgG on antibody-coated cells and triggers killing. This is **antibody-dependent cellular cytotoxicity** (ADCC), and it explains part of how therapeutic antibodies such as rituximab work. NK cells are also a major source of **interferon-gamma** early in infection, which activates macrophages.
+
+## Pattern recognition
+
+How does an innate cell tell a bacterium from a human cell without antigen-specific receptors? Charles Janeway's answer, proposed in 1989, was that innate cells carry germline-encoded receptors for molecular structures that are shared by whole classes of microbes and absent from host cells.
+
+::: definition Pattern-recognition receptors {#def-prr}
+**Pathogen-associated molecular patterns** (PAMPs) are conserved microbial structures, such as lipopolysaccharide (LPS) of Gram-negative bacteria, bacterial lipoproteins, flagellin, unmethylated CpG DNA and double-stranded RNA. **Damage-associated molecular patterns** (DAMPs) are host molecules released by injured or dying cells, such as ATP, uric acid crystals, HMGB1 and mitochondrial DNA.
+
+**Pattern-recognition receptors** (PRRs) are germline-encoded receptors that bind PAMPs or DAMPs and trigger an innate response. The main families are:
+
+- **Toll-like receptors** (TLRs) on the cell surface and in endosomes;
+- **NOD-like receptors** (NLRs) in the cytoplasm, some of which form inflammasomes;
+- **RIG-I-like receptors** (RLRs) in the cytoplasm, which detect viral RNA;
+- the **cGAS–STING** pathway, which detects DNA in the cytoplasm;
+- **C-type lectin receptors**, which bind microbial sugars such as fungal β-glucan (dectin-1).
+:::
+
+The location of each receptor matches the location of its ligand. Surface TLRs detect the outside of bacteria and fungi; endosomal TLRs and cytoplasmic sensors detect nucleic acids, which are the main clue to a virus.
+
+| Receptor | Location | Main ligand | Typical organism |
+|---|---|---|---|
+| TLR4 | Cell surface | Lipopolysaccharide | Gram-negative bacteria |
+| TLR2 (with TLR1 or TLR6) | Cell surface | Lipoproteins, lipoteichoic acid | Gram-positive bacteria, mycobacteria |
+| TLR5 | Cell surface | Flagellin | Motile bacteria |
+| TLR3 | Endosome | Double-stranded RNA | Viruses |
+| TLR7 and TLR8 | Endosome | Single-stranded RNA | Viruses |
+| TLR9 | Endosome | Unmethylated CpG DNA | Bacteria, DNA viruses |
+| RIG-I, MDA5 | Cytoplasm | Viral RNA | RNA viruses |
+| cGAS–STING | Cytoplasm | DNA in the cytoplasm | DNA viruses, intracellular bacteria |
+| NOD2 | Cytoplasm | Muramyl dipeptide (peptidoglycan) | Bacteria |
+
+### What happens when a PRR is triggered
+
+Most TLRs signal through the adaptor protein **MyD88**, which activates the transcription factor **NF-κB**. NF-κB switches on genes for inflammatory cytokines (TNF, IL-1, IL-6), chemokines and adhesion molecules. The viral sensors (TLR3, TLR7/8/9, RIG-I and cGAS–STING) also activate **interferon regulatory factors**, which switch on **type I interferons** (IFN-α and IFN-β). Type I interferons put neighbouring cells into an antiviral state: they induce proteins that block viral replication and increase MHC class I expression.
+
+Two human examples show that these pathways matter. Children with inherited MyD88 or IRAK-4 deficiency have severe, invasive pyogenic bacterial infections, often with a surprisingly weak fever and CRP. Children with defects in the TLR3 pathway are susceptible to herpes simplex encephalitis while handling most other viruses normally. Each narrow susceptibility reveals what the missing pathway normally does.
+
+### The inflammasome
+
+IL-1β is so potent that its release needs two signals. The first signal, usually a TLR, makes the inactive precursor pro-IL-1β. The second signal assembles an **inflammasome**, a cytoplasmic protein complex. The best-known one is built around **NLRP3**, which responds to a wide range of disturbances: potassium efflux, crystals such as monosodium urate, and damaged mitochondria. The inflammasome activates **caspase-1**, which cuts pro-IL-1β and pro-IL-18 into their active forms and also cleaves gasdermin D, which forms pores in the cell membrane and causes an inflammatory cell death called **pyroptosis**.
+
+This explains why gout is so painful and so inflammatory: urate crystals activate NLRP3 in joint macrophages, and the resulting IL-1β drives neutrophil influx. It also explains a group of rare **autoinflammatory diseases**, in which inflammation occurs without autoantibodies or autoreactive T cells. Gain-of-function variants in *NLRP3* cause the cryopyrin-associated periodic syndromes, with recurrent fever, urticaria-like rash and raised inflammatory markers; they respond strikingly to IL-1 blockade. Familial Mediterranean fever, caused by variants in *MEFV* (encoding pyrin, another inflammasome sensor), produces recurrent attacks of fever and serositis and is treated with colchicine.
+
+:::warning
+"Autoimmune" and "autoinflammatory" are not interchangeable. Autoimmune disease is driven by the adaptive immune system recognising self antigen, usually with autoantibodies or autoreactive T cells. Autoinflammatory disease is driven by innate pathways switched on without a specific antigen. A patient with recurrent fevers, raised CRP and negative autoantibodies has not "ruled out" immune disease; they may have an autoinflammatory one.
+:::
+
+## Complement
+
+The complement system is a set of more than 30 plasma and membrane proteins, mostly made by the liver. Most circulate as inactive precursors. When activated, they cleave and activate each other in sequence, so a small trigger is amplified into a large response.
+
+::: definition The complement system {#def-complement}
+**Complement** is a cascade of plasma proteins that, once activated on a surface, has three main effects:
+
+1. **Opsonisation**: C3b coats the surface and is recognised by complement receptors on phagocytes.
+2. **Inflammation**: the small fragments **C3a** and **C5a** (anaphylatoxins) cause mast-cell degranulation and increased vascular permeability; C5a is also a strong neutrophil chemoattractant.
+3. **Lysis**: C5b with C6, C7, C8 and C9 forms the **membrane attack complex** (MAC), a pore that kills some bacteria, notably *Neisseria*.
+
+Complement also clears **immune complexes** from the blood, carrying them on red cells to the liver and spleen.
+:::
+
+### Three pathways to one central step
+
+Complement can be activated in three ways, all of which converge on the cleavage of **C3**.
+
+- **Classical pathway.** C1q binds antibody (IgM, or IgG clustered on a surface) attached to an antigen. C1 then cleaves C4 and C2 to make the classical C3 convertase, C4b2a. This pathway links complement to adaptive immunity.
+- **Lectin pathway.** **Mannose-binding lectin** (MBL) or ficolins bind sugar patterns on microbial surfaces and activate MBL-associated serine proteases, which also cleave C4 and C2.
+- **Alternative pathway.** C3 in plasma undergoes slow spontaneous hydrolysis ("tick-over"). The product binds factor B, which factor D cleaves, forming a C3 convertase (C3bBb, stabilised by properdin). On host cells this is switched off quickly; on microbial surfaces it is not, so C3b deposition amplifies.
+
+Each C3 convertase cleaves C3 into C3a and C3b. As more C3b binds, the convertase becomes a **C5 convertase**, which cleaves C5 into C5a and C5b and begins the membrane attack complex.
+
+The alternative pathway also acts as an **amplification loop**: C3b made by any pathway can form more alternative-pathway convertase. This is why most C3b on a microbe ends up being made by the alternative pathway, whichever pathway started the process.
+
+### Regulation: protecting self
+
+Because C3b binds almost any nearby surface, host cells need protection. Regulatory proteins include:
+
+- **C1 inhibitor** (C1-INH), which inactivates C1 and the MBL-associated proteases, and also kallikrein and factor XIIa in the contact (bradykinin) system;
+- **factor H** and **factor I**, which inactivate C3b in plasma and on host cells;
+- membrane regulators: **decay-accelerating factor** (CD55), which breaks down convertases, and **CD59**, which blocks assembly of the MAC.
+
+Failure of a regulator causes disease just as surely as failure of a component. Loss of CD55 and CD59 from red cells in **paroxysmal nocturnal haemoglobinuria** (PNH) leaves them exposed to complement lysis. Variants in factor H or other alternative-pathway regulators predispose to **atypical haemolytic uraemic syndrome**, in which complement damages the endothelium of the kidney. Both are treated with antibodies that block C5.
+
+::: theorem Complement deficiencies predict their infections {#thm-complement-def}
+The clinical pattern of a complement deficiency follows from which function is lost:
+
+- **early classical components** (C1q, C2, C4): poor clearance of immune complexes and apoptotic cells, so a high risk of **systemic lupus erythematosus**, plus infections with encapsulated bacteria;
+- **C3**: loss of opsonisation, so severe recurrent **pyogenic infections**, like antibody deficiency;
+- **terminal components** (C5 to C9) and **properdin**: loss of the membrane attack complex, so recurrent **neisserial** infection (meningococcal disease, sometimes with unusual serogroups, or disseminated gonococcal infection);
+- **C1 inhibitor**: hereditary angioedema, caused by bradykinin rather than by complement itself.
+:::
+
+::: proof
+Opsonisation by C3b and lysis by the MAC are partly redundant for most bacteria, because antibody and phagocytes can still clear them. *Neisseria* are an exception: their killing depends heavily on the MAC, so losing C5 to C9 exposes a narrow susceptibility. C3 sits at the convergence of all three pathways and is the source of C3b, so losing it removes opsonisation and everything downstream; the result resembles antibody deficiency. The early classical components are needed to tag immune complexes and dying cells with C4b and C3b for clearance; without them, nuclear material lingers and is presented to the adaptive immune system, which is one route to lupus autoantibodies.
+:::
+
+The same logic predicts the main risk of **C5 inhibitors** such as eculizumab and ravulizumab: they create a drug-induced terminal complement deficiency, so meningococcal infection is a serious risk. People starting these drugs are vaccinated against meningococci (including serogroup B) and in the UK are usually also given antibiotic prophylaxis, following the product information and local guidance.
+
+### Hereditary angioedema
+
+**Hereditary angioedema** (HAE) is an autosomal dominant deficiency or dysfunction of C1 inhibitor. Without C1-INH, the contact system runs unchecked and generates **bradykinin**, which increases vascular permeability. People with HAE have recurrent swelling of the skin, the gut wall (causing severe abdominal pain) and the upper airway, often triggered by minor trauma, dental work or oestrogens. There is no urticaria and no itch.
+
+Because the swelling is caused by bradykinin rather than histamine, adrenaline, antihistamines and corticosteroids are not effective. Acute attacks are treated with C1-INH concentrate or the bradykinin B2-receptor antagonist icatibant, and long-term prophylaxis options include the anti-kallikrein antibody lanadelumab. The best screening test is the **C4 level**, which is low because C1 continuously consumes C4; C1-INH level and function then confirm the diagnosis. ACE inhibitors cause a similar bradykinin-mediated angioedema, because ACE normally breaks down bradykinin.
+
+::: example Swelling that does not respond to adrenaline {#ex-hae}
+A 24-year-old woman attends the emergency department with swelling of her lips and tongue that began 6 hours after a dental extraction. She has no rash or itch. She was given intramuscular adrenaline, chlorphenamine and hydrocortisone by the ambulance crew with no improvement. She has had episodes of severe abdominal pain since adolescence that settled after 2 to 3 days, and her father has had "allergic" swelling of his hands. She takes the combined oral contraceptive pill. What is the likely mechanism, what test would support it, and what are the principles of management?
 ::: solution
-**Hereditary angioedema - bradykinin, not histamine ([[#def-complement]], [[immunology/hypersensitivity]]): the recognition that changes treatment - the non-urticarial non-pruritic slower-onset slower-offset swelling with the abdominal-and-laryngeal morbidity and the ACE-inhibitor-and-oestrogen exacerbation and the trauma-and-procedure-and-stress triggers, versus mast-cell/histamine angioedema (the itchy fast hive with adrenaline responsiveness) - [[clinical-skills/clinical-reasoning]]; the confirmatory tests - C4 as the screening sentinel (persistently low between attacks in types 1 and 2) with C1-inhibitor level and function and the type-2 normal-level-dysfunctional-protein nuance and the C1q to separate acquired-C1-INH-deficiency (the lymphoma and autoimmune-complex-consumption versions) from hereditary and the normal-C3 note, plus the type-3 (normal C1-INH) genetic panel for the factor-XII-and-plasminogen-and-ANGPT1 kindreds - [[clinical-skills/laboratory-tests]]; the acute and the long-term treatment - the C1-inhibitor concentrate and the bradykinin-receptor-antagonist icatibant and the ecallantide option with the attack-diary-and-two-doses-and-observation guidance, the lanadelumab-anti-kallikrein and the oral gonad-receptor-antagonist prophylaxis era with the attenuated-androgens-and-tranexamic-acid older options and the pregnancy-and-paediatric-specific guidance, and the adrenaline-and-steroid-and-antihistamine-refractoriness taught to the patient and the ED so nobody wastes the airway window on them - [[pharmacology/drug-development-prescribing]], [[emergency-critical-care/anaphylaxis]]; and the safety-and-family programme - the written attack plan and the laryngeal-episode nearest-airway-unit rule and the pre-procedure prophylaxis for dental-and-ENT-and-surgery with the documented plan agreed pre-operatively and the oestrogen-contraception withdrawal and the ACE-inhibitor allergy-list entry and the autosomal-dominant cascade-testing of relatives including the asymptomatic children with the adolescent-consent nuance and the emergency-alert-card and the patient-organisation helpline - [[obstetrics-gynaecology/contraception-fertility]], [[surgery/perioperative-care]], [[genetics/genetic-testing]], [[medical-ethics-law/consent-capacity]].**
+**Mechanism.** Angioedema without urticaria or itch, a dental trigger, no response to adrenaline, antihistamine or steroid, recurrent abdominal pain and an affected parent together point to hereditary angioedema: a C1-inhibitor deficiency causing bradykinin-mediated swelling. Oestrogen-containing contraception is a recognised aggravating factor.
+
+**Tests.** A low C4 supports the diagnosis; C1-INH antigen level and function confirm it (low level in type 1, normal level with low function in type 2). Tryptase would be expected to be normal, because mast cells are not involved.
+
+**Management principles.** Tongue swelling threatens the airway: early senior anaesthetic and ENT involvement and airway monitoring come first. The specific treatment is C1-INH concentrate or icatibant, following local protocol. Afterwards she needs referral to an immunology service, a written plan and access to on-demand treatment, pre-procedure prophylaxis before future dental work, a review of oestrogen-containing contraception, and testing of first-degree relatives.
 :::
 :::
 
-::: example The cord that never fell off {#ex-lad}
-A 6-week-old has had a red, draining umbilical stump since birth ("the cord hasn't separated"), a perianal abscess drained twice with no pus seen at surgery, delayed wound healing, and a white-cell count of 40 x 10^9/L with neutrophilia; two courses of antibiotics only half-worked.
+## Inflammation
+
+Inflammation is the coordinated response of blood vessels and leucocytes to infection or injury. The Roman writer Celsus described four **cardinal signs**: redness (*rubor*), heat (*calor*), swelling (*tumor*) and pain (*dolor*); loss of function (*functio laesa*) was added later and is usually credited to Virchow. Each has an immunological explanation:
+
+- **Redness and heat** come from arteriolar dilatation, caused by histamine, prostaglandins and nitric oxide.
+- **Swelling** comes from leakage of plasma proteins and fluid through gaps between endothelial cells in post-capillary venules, caused by histamine, bradykinin, C3a, C5a and leukotrienes.
+- **Pain** comes from bradykinin and prostaglandin E2 sensitising nerve endings.
+- **Loss of function** follows from pain, swelling and tissue damage.
+
+The cellular events are those described above: endothelial activation, neutrophil recruitment within hours, then monocytes and lymphocytes over the following days. Most acute inflammation resolves actively: neutrophils die by apoptosis, macrophages remove them and switch to producing anti-inflammatory mediators, and the tissue is repaired. The pathology of acute and chronic inflammation is covered in [[pathology/acute-inflammation]].
+
+## Cytokines, fever and the acute-phase response
+
+**Cytokines** are small signalling proteins that act between cells. Three are central to innate immunity:
+
+- **TNF** activates endothelium and neutrophils, and in large amounts causes shock;
+- **IL-1** (mainly IL-1β) causes fever and activates endothelium;
+- **IL-6** causes fever and drives the liver's acute-phase response.
+
+**Fever** occurs when IL-1, IL-6 and TNF cause the hypothalamus to produce prostaglandin E2, which raises the temperature set point. Antipyretics such as paracetamol and NSAIDs reduce prostaglandin synthesis.
+
+The **acute-phase response** is a change in the proteins the liver makes, driven mainly by IL-6. The liver increases production of C-reactive protein (CRP), serum amyloid A, fibrinogen, ferritin and hepcidin, and reduces albumin and transferrin. Hepcidin traps iron in macrophages and is the main cause of the anaemia of inflammation. Raised fibrinogen increases the erythrocyte sedimentation rate (ESR).
+
+::: definition C-reactive protein {#def-crp}
+**C-reactive protein** (CRP) is an acute-phase protein made by hepatocytes in response to IL-6. It binds phosphocholine on bacterial surfaces and on damaged cells and activates the classical complement pathway. In blood it begins to rise within about 6 hours of a stimulus, peaks at around 48 hours, and once the stimulus stops it falls with a half-life of about 19 hours. Its level therefore reflects how much IL-6 was being made over the previous day or two.
+:::
+
+The half-life gives CRP a useful property: once an infection is controlled, CRP should fall by about half every day. A CRP that stays high or rises after 48 to 72 hours of appropriate treatment suggests a source that has not been controlled, such as an undrained abscess, or a wrong diagnosis.
+
+::: widget plot
+f: c*0.5^(x/19); c*0.5^(x/h)
+x: 0, 120
+y: 0, 260
+sliders: c=240:50:300:10; h=19:10:80:1
+labels: \text{falls with half-life 19 h}; \text{falls with half-life } h
+hlines: 5
+caption: A simplified model of CRP after the source of inflammation is removed. The first curve falls with the normal half-life of about 19 hours. Increase $h$ to see what slower decline looks like: an apparent half-life much longer than 19 hours means IL-6 is still being made, usually because the source has not been controlled. The dotted line marks a typical upper reference limit of 5 mg/L. Illustrative model only; real CRP curves also depend on when production actually stops.
+:::
+
+::: example Is the CRP falling fast enough? {#ex-crp}
+A 70-year-old man has a perforated appendix with a pelvic collection. His CRP is 240 mg/L on day 1 of antibiotics. Assume CRP production stops completely once treatment controls the source and CRP then falls with a half-life of 19 hours. (a) What would the CRP be 57 hours later? (b) His actual CRP at that time is 190 mg/L. What does this suggest?
 ::: solution
-**Leukocyte-adhesion-deficiency type 1 - neutrophils that cannot leave the blood ([[#def-barriers]], [[immunology/immunodeficiency]]): the signature - the triad of delayed umbilical separation beyond 3 weeks and bacterial and fungal infections without pus formation and marked neutrophilia (the marrow makes and holds them but integrin CD18 failure stops adhesion and transmigration) with the omphalitis-and-perianal-and-periodontal-and-necrotic-skin-ulcer pattern and the poor-healing-excessive-scarring irony, and the severity gradient from the CD18-null-infantile-lethal form to the hypomorphic "less severe LAD" with its later dental and periodontal disease - [[paediatrics/acute-childhood-illness]], [[blood/haematopoiesis]]; the diagnosis - flow cytometry for CD11/CD18 (the CD63-and-other-activation-markers nuance) and the ITGB2 genotypes and the differential of reactive neutrophil states and the leukogram of steroid-and-whooping-cough-and-chronic-myeloid-disease contexts - [[clinical-skills/laboratory-tests]], [[blood/leukaemia]]; the management - aggressive early antibiotics for every fever with a low threshold for surgery-with-cover, the hygiene-and-stool-and-dental protocols and the trauma-and-splint wound care (because "watch a wound that will not heal" is not a plan), granulocyte transfusions only as a bridge in the specialist setting and the HSCT decision with its timing-against-infection-damage logic and the conditioning-and-donor conversation with transplant immunology - [[immunology/transplant-tumour-immunology]], [[surgery/wounds-surgical-infection]]; and the service memory - the newborn-screening-and-early-diagnosis argument (the severe combined immunodeficiency T-cell screens do not catch this, and the neutrophilia-with-omphalitis pattern should trigger flow cytometry before the third antibiotics course), the genetic-counselling-of-autosomal-recessive-recurrence and the prophylaxis-and-vaccination-and-school-and-travel plan and the emergency-information letter every such child should carry - [[genetics/mendelian-inheritance]], [[clinical-skills/records-handover]].**
+(a) 57 hours is $57/19 = 3$ half-lives, so the CRP should be
+
+$$
+240 \times \left(\tfrac{1}{2}\right)^{3} = 240 \times \tfrac{1}{8} = 30\ \text{mg/L}.
+$$
+
+(b) A CRP of 190 mg/L is far above the expected value. Solve for the apparent half-life: $190/240 = 0.5^{57/h}$, so $h = 57 \times \ln 0.5 / \ln(190/240) \approx 169$ hours. The CRP has barely fallen, which means IL-6 is still being produced. The likely explanation is that the collection has not been drained. This should prompt repeat imaging and discussion of drainage, not simply a change of antibiotic. The exact figure is less important than the comparison: the CRP is not behaving as it would if the source were controlled.
 :::
 :::
 
-::: example The dark morning urine {#ex-pnh}
-A 32-year-old man has fatigue, back ache and cola-coloured urine most conspicuous in the morning, a hematocrit fell from 40 to 26 over 6 weeks with a raised LDH and bilirubin and low haptoglobin and a negative Coombs, and he developed a sagittal-sinus thrombosis; flow cytometry shows a CD55-and-CD59-deficient clone.
+:::warning
+CRP is not specific for infection. Any process that drives IL-6 production raises it, including surgery, trauma, pancreatitis, active inflammatory arthritis, vasculitis and some cancers. Conversely, CRP can be surprisingly low in early infection (it takes hours to rise), in severe liver disease, and in people taking the IL-6 receptor antibody tocilizumab, which blocks CRP production completely. In systemic lupus erythematosus a high ESR with a normal CRP is common, so a high CRP in a person with lupus should prompt a search for infection.
+:::
+
+## From local defence to systemic danger
+
+If innate activation spreads beyond the infected tissue, the same mediators that help locally cause harm everywhere. Widespread vasodilatation and capillary leak cause hypotension; endothelial activation and tissue factor expression drive disseminated intravascular coagulation; and organ perfusion fails. **Sepsis** is now defined as life-threatening organ dysfunction caused by a dysregulated host response to infection (the Sepsis-3 definition of 2016). The definition puts the host response, not the microbe, at the centre. The clinical recognition and management of sepsis are covered in [[infectious-diseases/fever-sepsis]].
+
+## Innate defects in the clinic
+
+Defects of innate immunity are rare, but the infection pattern points to the missing component. The table summarises the patterns in this chapter; the full approach to the patient with recurrent infection is in [[immunology/immunodeficiency]].
+
+| What is missing | Typical infections | Clues | Key test |
+|---|---|---|---|
+| Neutrophil numbers (neutropenia) | Bacterial sepsis, *Candida*, *Aspergillus* | Mouth ulcers, chemotherapy | Full blood count |
+| Neutrophil adhesion (LAD-1) | Skin, gum and umbilical infections | Delayed cord separation, no pus, very high neutrophil count | CD18 by flow cytometry |
+| Neutrophil killing (CGD) | *S. aureus*, *Aspergillus*, *Burkholderia*, *Serratia*, *Nocardia* | Deep abscesses, granulomas | DHR test |
+| C3 | Pyogenic bacteria | Resembles antibody deficiency | C3 level |
+| Terminal complement (C5–C9) | *Neisseria* | Recurrent or familial meningococcal disease | CH50 and AH50 |
+| Early classical (C1q, C2, C4) | Encapsulated bacteria | Lupus-like disease | CH50, individual components |
+| C1 inhibitor | (none) | Angioedema without urticaria | C4, then C1-INH level and function |
+
+**CH50** and **AH50** are functional screening tests for the classical and alternative pathways respectively. Each measures the ability of a patient's serum to lyse target red cells, so a deficiency of any component in that pathway gives a low or absent result.
+
+::: example Neutropenia and fever {#ex-neutropenic}
+A 45-year-old woman receiving chemotherapy for breast cancer has a temperature of 38.4 °C, 10 days after her last cycle. She is alert, heart rate 104 per minute, blood pressure 118/72 mmHg. Her white cell count is $1.2 \times 10^9$/L, of which 30% are neutrophils. Calculate the absolute neutrophil count and explain its significance.
 ::: solution
-**Paroxysmal nocturnal haemoglobinuria - complement without its regulators ([[#def-complement]], [[blood/haemoglobin-disorders]]): the mechanism - an acquired GPI-anchor-synthesis PIGA mutation in a haematopoietic stem cell (so somatic and clonal, not inherited) strips CD55 and CD59 from every lineage, leaving red cells naked to the alternative-complement tick-over with intravascular haemolysis and the morning-urine concentration myth-nuance and, more importantly, the platelet-and-endothelial complement injury that produces the unusual-site venous thromboses (hepatic and portal and mesenteric and cerebral) that kill - [[blood/thrombosis-anticoagulation]], [[nervous-system/stroke]] for the sinus thrombosis pathway; the associations and monitoring - the bone-marrow-failure interface (aplastic anaemia and hypocellular marrow and the telomere-and-clonal-evolution-and-MDS-AML-risk-counselling and the clone-size surveillance and the iron-and-folate-and-transfusion-support and the haemolysis-driven oesophageal-and-erectile-and-abdominal-pain smooth-muscle-dystonia symptoms from nitric-oxide scavenging) - [[blood/haematopoiesis]], [[gastrointestinal/oesophagus-stomach]]; the terminal-pathway blockade - eculizumab-or-ravulizumab with the meningococcal-revaccination-and-antibiotic-prophylaxis-obligation and the breakthrough-infection education (any fever is same-day assessment with cultures and broad antibiotics because encapsulated organisms kill these patients within hours) and the pregnancy-and-anaesthesia-and-vaccination contexts and the stopping-versus-continuing and the thrombosis-risk-return debate; and the cure conversation - allogeneic HSCT for the marrow-failure-and-thrombosis-severe phenotypes with its risk-benefit honesty and the registry participation and the lifelong haematology-follow-up and the emergency-card-and-patient-organisation support that make the next fever presentation safe - [[immunology/transplant-tumour-immunology]], [[public-health/vaccination-programmes]], [[infectious-diseases/immunocompromised-host]].**
+The absolute neutrophil count is the total white cell count multiplied by the neutrophil fraction:
+
+$$
+1.2 \times 10^9/\text{L} \times 0.30 = 0.36 \times 10^9/\text{L}.
+$$
+
+This is below $0.5 \times 10^9$/L, which defines severe neutropenia. A temperature above 38 °C in a person with a neutrophil count of $0.5 \times 10^9$/L or lower meets the NICE definition of **neutropenic sepsis** (NICE CG151). With so few neutrophils, the usual signs of local infection, such as pus, consolidation and even pyuria, may be absent, and bacterial infection can progress to septic shock within hours. Management follows the local neutropenic sepsis pathway: immediate assessment, blood cultures and empirical intravenous broad-spectrum antibiotics within one hour of presentation, without waiting for the count.
 :::
 :::
 
 ::: quiz
-Recurrent meningococcal meningitis in an otherwise well young adult with normal opsonisation of staphylococci most suggests deficiency of:
-- [ ] C3
-- [ ] C1 inhibitor
-- [x] Terminal complement components C5-C9
-- [ ] Mannose-binding lectin
+A 17-year-old student is admitted with meningococcal meningitis. His older brother had meningococcal septicaemia at the age of 15. Which investigation is most likely to reveal an underlying cause?
+- [ ] Serum immunoglobulins
+- [ ] Neutrophil oxidative burst (DHR) test
+- [x] Complement function (CH50 and AH50)
+- [ ] Lymphocyte subsets
 ::: solution
-**The membrane-attack complex is the neuter-specific defence - terminal-component deficiency gives recurrent neisserial infection with otherwise-good pyogenic handling, C3 deficiency would be severe and pyogenic with immune-complex disease, C1-inhibitor deficiency causes angioedema not infection, and MBL deficiency gives mild childhood infections ([[#def-complement]], [[immunology/immunodeficiency]]); the meningococcal-vaccination-and-antibiotic-prophylaxis and the eculizumab-mimicking-risk lesson belong with the diagnosis ([[public-health/vaccination-programmes]], [[infectious-diseases/fever-sepsis]]).**
+Recurrent or familial neisserial infection is the classic presentation of a deficiency of the terminal complement components (C5 to C9) or of properdin, because killing of *Neisseria* depends on the membrane attack complex. CH50 tests the classical and terminal pathway, AH50 the alternative pathway and terminal pathway; together they screen for these defects. People with a confirmed deficiency are offered meningococcal vaccination and often antibiotic prophylaxis, and relatives are tested.
 :::
 :::
 
-::: widget plot
-f: 100*(1-exp(-1.5*x)); 100*(1-exp(-1.5*x))*exp(-0.05*x); 100*(1-exp(-0.25*x))
-x: 0, 24
-y: 0, 110
-labels: \text{hours since breach},\ \text{response index};\ \text{neutrophil response (innate)};\ \text{neutrophil with opsonin deficiency};\ \text{adaptive antibody response}
-caption: Innate speed versus adaptive precision ([[#def-barriers]], [[immunology/adaptive-responses]]): the neutrophil response arrives within hours and needs opsonins to reach full effect, whereas protective antibody takes days in a naive host - the reason antibody-deficient and asplenic and complement-deficient patients die of bacteria that a neutrophil-only textbook ignores, and the reason vaccination works at all ([[immunology/immunodeficiency]], [[immunology/vaccines-immunotherapy]]).
-:::
+::: history
+In 1882 the zoologist Élie Metchnikoff pushed rose thorns into transparent starfish larvae and saw mobile cells gather around them. He proposed that such cells, which he called phagocytes, defended the body by engulfing invaders. For two decades his "cellular" school argued with the "humoral" school of Paul Ehrlich and others, who held that the active agents were in serum. Jules Bordet showed in the 1890s that bacterial killing by fresh serum needed a heat-labile factor in addition to antibody; Ehrlich named it complement. Metchnikoff and Ehrlich shared the Nobel Prize in 1908, an early recognition that both views were right.
 
-::: exercise Read the haemolytic picture {level=1}
-Coombs-negative intravascular haemolysis with morning haemoglobinuria, cytopenias and a splanchnic thrombosis: what are the two diagnostic tests and what must be completed before treatment?
-::: solution
-**PNH-workup-and-vaccine-gate ([[#def-complement]], [[blood/haemoglobin-disorders]]): the tests - flow cytometry for GPI-linked markers (FLAER and CD55/CD59 and CD24/CD66b across lineages with clone-size reporting for both red cells and granulocytes) and the haemolysis-and-marrow panel (LDH-haptoglobin-reticulocyte-and-bilirubin and the B12-and-folate-and-iron-status and the bone-marrow-biopsy-for-the-aplastic-context) and the thrombosis imaging and the MDS-and-PNH-syndrome vigilance - [[blood/haematopoiesis]], [[clinical-skills/laboratory-tests]]; the pre-treatment essentials - the meningococcal-conjugate-and-group-B-vaccination-per-schedule-with-timing-rules-and-the-antibiotic-prophylaxis-bridge-and-the-booster-cadence and the pneumococcal-and-Haemophilus cover and the pregnancy-and-teratogenicity-planning and the vaccination-status-audit-before-first-infusion - [[public-health/vaccination-programmes]]; and the treatment initiation with its safety netting - the complement-inhibitor and the complement-vaccination-and-antibiotic-prophylaxis-obligation and the breakthrough-infection education (any fever is same-day assessment with cultures and broad antibiotics because encapsulated organisms kill these patients within hours) and the vaccination record and the vaccination-verification-before-dispensing rule; and the anticoagulation debate in a complement-inhibitor era - the historical thrombosis reduction and the individual bleeding-risk discussion and the vaccination-culture-and-needle-stick-and-irreversible-anticoagulant cautions - [[blood/thrombosis-anticoagulation]], [[infectious-diseases/immunocompromised-host]].**
-:::
-:::
-
-::: exercise Interpret the complement screen {level=2}
-CH50 undetectable, AH50 normal, C3 normal, C4 very low. What pathway is broken, name two diseases this profile produces, and how does vaccination fit?
-::: solution
-**Classical-pathway-selective-absence ([[#def-complement]]): the reading - the CH50-is-classical-pathway-function-and-AH50-is-alternative-function-and-normal-C3-with-low-C4-points-to-a-block-at-C4-or-C2-or-C1 (or to C1-inhibitor-consumption) and the hereditary-angioedema-versus-early-classical-deficiency-versus-acquired-C1-INH-deficiency differential already run in the low-C4 exercise; the two disease patterns - the immune-complex-and-lupus-like-and-infection-susceptibility of C1-C4-and-C2 deficiency (with the infective-endocarditis-and-GN-and-angioedema-abdominal mimics, and C2 deficiency's pyogenic-sinus-chest infections) versus the bradykinin-swelling-and-airway-morbidity of C1-inhibitor deficiency with its own C4-low-both-states trap; and the vaccination-and-prophylaxis logic - this is not a MAC-deficiency-neisseria-situation (so meningococcal vaccines are not the point) but the encapsulated-organism vigilance applies if complement function is broadly impaired, with the individualised-immunology-letter-and-flu-and-pneumococcal-offer and the genetic-testing-for-C1NH-SERPING1-and-C4-C2-genes-and-family-screening-and-the-autoimmune-surveillance and the annual-review-with-urine-and-complements and the emergency-information card - [[immunology/immunodeficiency]], [[renal/filtration]]-no: keep the GN generic here, [[public-health/vaccination-programmes]].**
-:::
-:::
-
-::: exercise Audit an anti-cytokine safety programme {level=3}
-Your region starts biologic therapy (anti-TNF, anti-IL-1, anti-IL-6, anti-IL-17, JAK inhibitors) at scale. Design the infection-safety programme: screening, vaccination, pharmacovigilance and equity.
-::: solution
-**Biologics-are-safe-if-the-system-around-them-is ([[#def-prr]], [[infectious-diseases/immunocompromised-host]], [[public-health/health-systems-economics]]): pre-prescription screening - the tuberculosis-interferon-gamma-release-assay-and-chest-imaging-and-latent-TB-treatment-rules-with-the-regimen-specific-risk-ranking (anti-TNF-and-JAK-highest) and the hepatitis-B-and-C-and-HIV-serology-with-antiviral-prophylaxis-triggers (the rituximab-and-HBV-reactivation-fulminant-hepatitis lesson) and the strongyloides-and-TB-and-malaria-and-chagas-geography-for-the-travel-and-birth-history-patient and the baseline-complete-blood-count-and-liver-and-renal-and-medication-reconciliation - [[musculoskeletal/inflammatory-arthritis]], [[infectious-diseases/tuberculosis]], [[gastrointestinal/liver-disease]], [[infectious-diseases/tropical-infections]]; the vaccination architecture - the inactivated-vaccines-ideally-2-4-weeks-before-first-dose-and-live-vaccines-usually-forbidden-on-therapy-and-household-contacts-and-shingles-recombinant-vaccine-offer and the immunosenescence-honesty-about-blunted-responses and the annual-influenza and the pneumococcal sequences and the travel-clinic liaison and the record-of-what-was-given-when - [[public-health/vaccination-programmes]], [[immunology/vaccines-immunotherapy]]; surveillance-and-stewardship - the biologic-registry-and-pharmacovigilance-yellow-card-culture and the opportunistic-infection-alerts (the histoplasmosis-and-listiosis-and-PML-and-invasive-fungal-signals-with-a-centre-to-call), the patient-held-safety-card-with-the-drug-and-stop-rules-and-who-to-call, and the sick-day-and-procedure-and-biologic-hold-protocols with the rheumatology-gastroenterology-dermatology-paediatricians-shared-and-primarily-care-parsable version - [[pharmacology/adverse-reactions]], [[clinical-skills/patient-safety]]; and the equity-and-evaluation - the access-criteria-and-biosimilar-substitution-transparency and the rural-and-work-and-infusion-centre-burden-and-home-administration-trainee-and-carry-discussions and the registry outcomes (serious-infection-rates-and-tuberculosis-reactivation-and-vaccine-responses-and-treatment-persistence) reported publicly - [[public-health/health-systems-economics]], [[medical-ethics-law/justice-resources]].**
-:::
+For most of the twentieth century innate immunity was seen as crude and non-specific. In 1989 Charles Janeway argued that innate cells must have receptors for conserved microbial patterns, and that these receptors decide whether an adaptive response starts at all. The receptors were found within a decade. In 1996 Jules Hoffmann's group, with Bruno Lemaitre, showed that the Toll protein controls antifungal defence in fruit flies; in 1997 Ruslan Medzhitov and Janeway described a human Toll homologue that activates inflammatory genes; and in 1998 Bruce Beutler's group showed that mice resistant to LPS carry mutations in *Tlr4*, identifying TLR4 as the LPS receptor. Beutler and Hoffmann shared the 2011 Nobel Prize with Ralph Steinman, who discovered dendritic cells.
 :::
 
 ## Where this leads
 
-The adaptive handover in [[immunology/adaptive-responses]]; the allergy and anaphylaxis effectors in [[immunology/hypersensitivity]]; clinical immunodeficiency in [[immunology/immunodeficiency]]; the renal and haematological complement diseases in [[renal/filtration]] and [[blood/haemoglobin-disorders]].
-
-::: history
-**Innate immunity's concepts are older than immunology's name: the barrier-of-the-body metaphors of nineteenth-century medicine and Metchnikoff's 1882 larval-thymus-cell epiphany at the seaside and his phagocyte theory against the humoral school, the duelling-sciences framing of cellular-versus-humoral immunity that consumed two Nobel generations; Ehrlich's complement (alexine) as the humoral side and the Bordet-Gengou haemolysin-and-adsorption work that made complement an assayable substance and an immune-complex-haemolysin-serology-diagnostic-technique still used for syphilis a century later - [[microbiology/laboratory-diagnosis]], [[infectious-diseases/sexually-transmitted-infections]]; the endotoxin arc - the the late-nineteenth-century tetanus-toxin-and-shock work and the boiled-bacteria fever phenomena and the LAL and the limulus-lysate and the pyrogen-testing-era pharmacopoeia and the lipid-A-structure-era TLR4-MD2-CD14 discovery in the 1990s-2000s via the drosophila Toll mutants (the lineage from the Drosophila Toll mutants to Medzhitov and colleagues' mammalian TLR4 - a fly developmental gene becoming the central mammalian inflammation receptor, genetics' greatest unplanned gift); the inflammasome and autoinflammation revolution of the 1990s-2000s - Dinarello's interleukin-1 purification and the cryopyrinopathies and FMF and TRAPS molecular diagnoses converting "periodic fever" patients from psychosomatic case reports to cytokine-pathway diseases with targeted therapy, and the CANTOS trial of canakinumab - the anti-IL-1beta cardiovascular-event-reduction serendipity that proved inflammation is a therapeutic target in atherosclerosis; and the complement-medicine arc - the Bordet and Ehrlich and Levine-Müller-era immune-haemolysis and Arthus-reaction and serum-sickness-renal-injury work to the C3b-opsonin-and-MAC-molecular physiology of the 1980s to the eculizumab era of complement-inhibitor drugs for PNH and aHUS and now the antibody and transplant indications and the glomerular disease pipeline - [[renal/filtration]], [[pathology/acute-inflammation]], [[public-health/health-systems-economics]].**
-:::
+Innate recognition decides whether, and how, the adaptive system responds. [[immunology/antigen-recognition]] describes the receptors of B and T cells and how dendritic cells present antigen; [[immunology/adaptive-responses]] follows what happens next. Mast cells reappear in [[immunology/hypersensitivity]], and the clinical approach to defects in innate immunity is in [[immunology/immunodeficiency]].
 
 ::: summary
-- Barriers do most of the defending; breaches (skin, tube, tumour, burn) matter more than most immune-cell counts in everyday infection risk.
-- Neutrophils need opsonins: the spleen, antibody and C3b triad explains encapsulated-organism sepsis and why "just a low neutrophil count" understates risk.
-- Pattern recognition turns PAMPs and DAMPs into the IL-1, IL-18, TNF and interferon vocabulary; the human mutations in these pathways are named diseases with named biologics.
-- Complement opsonises, solubilises, inflames and lyses; its deficiencies spell organism-specific infection and its regulators' failure spells haemolysis, thrombosis and nephritis.
-- Angioedema without itch is bradykinin medicine, not histamine medicine - treat with C1-inhibitor and kallikrein-pathway drugs and protect the airway.
-- The innate system instructs the adaptive one: this chapter determines how strong, what type and how long the response of the next chapter will be.
+- Barriers are the first line of defence, and many infections in hospital follow a barrier breach rather than a failure of immune cells.
+- Neutrophils leave the blood by rolling (selectins), firm adhesion (integrins such as CD18) and transmigration, then kill by phagocytosis, the NADPH oxidase burst and granule contents. LAD-1 and chronic granulomatous disease show what happens when adhesion or killing fails.
+- NK cells kill cells that have lost MHC class I or display stress ligands, and kill antibody-coated cells by ADCC.
+- Pattern-recognition receptors (TLRs, NLRs, RLRs, cGAS–STING, C-type lectins) detect conserved microbial molecules and danger signals, signal through NF-κB and interferon regulatory factors, and produce inflammatory cytokines and type I interferons.
+- The NLRP3 inflammasome activates caspase-1 to release IL-1β; its overactivity underlies gout flares and autoinflammatory syndromes, which are distinct from autoimmune disease.
+- Complement is activated by the classical, lectin and alternative pathways, converges on C3, and opsonises (C3b), inflames (C3a, C5a) and lyses (C5b–9). Deficiencies predict infections: C3 with pyogenic bacteria, terminal components with *Neisseria*, early classical components with lupus.
+- Hereditary angioedema is a C1-inhibitor deficiency causing bradykinin-mediated swelling that does not respond to adrenaline or antihistamines; C4 is the screening test.
+- IL-1, IL-6 and TNF cause fever and the acute-phase response. CRP rises within hours, peaks at about 48 hours and falls with a half-life of about 19 hours, so failure to fall suggests an uncontrolled source.
 :::
 
 ## Exercises
 
-::: exercise Match the deficiency to the bug {level=1}
-Which immune defect and organism pairing: (a) asplenia; (b) terminal complement deficiency; (c) neutropenia; (d) CGD; (e) antibody deficiency.
+::: exercise Absolute neutrophil count {level=1 check="0.68"}
+A man has a white cell count of $3.4 \times 10^9$/L with 20% neutrophils. Calculate his absolute neutrophil count in units of $10^9$/L.
+::: hint
+Multiply the total white cell count by the neutrophil fraction.
+:::
 ::: solution
-**The-grammar ([[#def-barriers]], [[#def-complement]], [[immunology/immunodeficiency]]): (a) encapsulated organisms - pneumococcus especially, plus H influenzae and meningococcus, hence the vaccine-and-penicillin architecture - [[public-health/vaccination-programmes]]; (b) Neisseria including unusual gonococcal presentations - [[infectious-diseases/sexually-transmitted-infections]]; (c) staphylococci and gram-negatives and Candida and Aspergillus with the count-duration arithmetic - [[blood/haematopoiesis]]; (d) catalase-positives - S aureus, Serratia, Burkholderia, Nocardia, Aspergillus; and (e) recurrent sinopulmonary encapsulated and Giardia infection with enteroviral chronicity and the bronchiectasis trajectory - cite [[respiratory/respiratory-infections]].**
+$3.4 \times 0.20 = 0.68$, so the absolute neutrophil count is $0.68 \times 10^9$/L. This is moderate neutropenia (between 0.5 and $1.0 \times 10^9$/L).
 :::
 :::
 
-::: exercise Explain fever to a parent {level=1}
-In two minutes: why fever happens, when it helps, and when to worry.
+::: exercise Match receptor and ligand {level=1}
+For each of the following microbial molecules, name a pattern-recognition receptor that detects it: (a) lipopolysaccharide; (b) flagellin; (c) double-stranded viral RNA in an endosome; (d) fungal β-glucan; (e) DNA in the cytoplasm.
 ::: solution
-**IL-1-and-IL-6-and-PGE2-on-the-hypothalamus ([[#def-prr]], [[paediatrics/acute-childhood-illness]]): the mechanism in plain words (the immune system's alarm chemical resetting the thermostat and the shivering-behaviour-vessel effects and why antipyretics wear off before the infection does); the benefits honestly stated (the replication-slowing and immune-trafficking effects, the febrile-seizure-in-nursery-age fear and what the evidence supports and does not about antipyretics preventing them - [[nervous-system/epilepsy]]); and the worry-list (the under-3-months-age rule and the non-blanching rash and the neck stiffness and the immunosuppression and the focal-neurology and the prolonged-malaise context and the antipyretic-dose-and-unsure-about-dosing practicalities) - [[infectious-diseases/fever-sepsis]], [[emergency-critical-care/acute-assessment]].**
+(a) TLR4 (with MD-2 and CD14). (b) TLR5. (c) TLR3. (d) Dectin-1, a C-type lectin receptor. (e) cGAS, which signals through STING. The general rule is that surface receptors detect bacterial and fungal cell-wall components, while endosomal and cytoplasmic receptors detect nucleic acids.
 :::
 :::
 
-::: exercise Screen the low C4 {level=2}
-A 34-year-old with urticaria and arthralgia has C4 undetectable, C3 low-normal, and negative autoimmune serology so far. Structure the workup.
+::: exercise Functions of complement {level=1}
+Name the complement product responsible for each of the following: (a) opsonisation; (b) neutrophil chemotaxis; (c) lysis of *Neisseria*; (d) the screening test result most likely to be low in hereditary angioedema.
 ::: solution
-**Low-C4-is-a-map-not-a-diagnosis ([[#def-complement]]): the inheritance-versus-consumption-first-bracket - hereditary-angioedema (low C4 between attacks with normal C3 and the family and swelling history) versus acquired-C1-INH-deficiency (the C1q-low lymphoproliferative and autoimmune associations - so the CT-and-SPEP-and-fat-pad-and-clinic-haematology-review) versus classical-pathway-consumption immune-complex disease (the early lupus and cryoglobulinaemia and infection-associated and hypocomplementaemic-urticarial-vasculitis-syndrome - the anti-C1q-antibody test) versus the lab-technical and congenital-C4-deficiency benign variants - [[clinical-skills/laboratory-tests]]; the urticaria-vs-vasculitis distinction - the individual-lesion-duration-and-bruising-and-burning-and-histology-with-leukocytoclasis and the complement-levels-monitoring of activity - [[musculoskeletal/skin]]; the serology timing and repeat-discipline - ANA-and-dsDNA-and-ENA-and-Sm-RNP nuances and the complement-C3-C4-C4BP trajectories in established disease and the antiphospholipid-screen-before-any-anticoagulation-decision; and the follow-up plan - the lymphoma-surveillance-if-acquired-C1-INH and the nephrology-rim-and-urine-testing for the subclinical-glomerulonephritis and the named-clinician review date and the patient-held summary of what "low complement" does and does not mean, because they will search the phrase tonight - [[blood/lymphoma-myeloma]], [[clinical-skills/communication]].**
+(a) C3b. (b) C5a. (c) The membrane attack complex, C5b–9. (d) C4, which is consumed continuously by uncontrolled C1 activity when C1 inhibitor is deficient.
 :::
 :::
 
-::: exercise Interpret the fever syndrome {level=2}
-A 9-year-old has had 3 years of 3-5 day fevers every 5 weeks with urticarial rash, arthralgia and raised acute-phase reactants between attacks; antibiotics never altered an attack; IL-1 blockade gave complete remission in a trial.
+::: exercise CRP half-life {level=2 check="30"}
+A woman with pyelonephritis has a CRP of 120 mg/L when an obstructing ureteric stone is relieved. Assuming CRP production then stops and CRP falls with a half-life of 19 hours, what would her CRP be after 38 hours, in mg/L?
+::: hint
+How many half-lives is 38 hours?
+:::
 ::: solution
-**Autoinflammatory-not-autoimmune-fever ([[#def-prr]]): the diagnostic frame - regularity-and-clockwork-and-well-intervals-and-urticaria-without-trigger-and-marked-SAA-CRP-and-negative-autoantibodies-and-no-response-to-antibiotics-and-a-family-history-or-de-novo-dominant-mutation and the cryopyrin-associated-periodic-fever NLRP3 gain-of-function spectrum with its plaque-like neutrophilic skin biopsy - [[clinical-skills/laboratory-tests]], with the histamine-versus-neutrophilic urticaria contrast in [[musculoskeletal/skin]]; the genetics service interface - the NLRP3 and the other-gene panels (TNFRSF1A and MVK and MEFV and the NLRC4-and-proteasome syndromes) with the somatic-mosaicism-negative-blood-test caveat and the genotype-phenotype-treatment-matching statement; the treatment - IL-1-blockade as disease replacement therapy with the drug-specific access-and-pregnancy-and-vaccine-and-biologic-safety context, the SAA-and-urine-protein-amyloidosis-surveillance and the steroid-sparing-and-growth-and-school-and-sport normalisation plan - [[genetics/genetic-testing]], [[public-health/vaccination-programmes]], [[paediatrics/growth-development]]; and the fever-of-unknown-origin discipline for adults and children with a differential that includes infection (TB and abscess and endocarditis), malignancy (leukaemia and lymphoma) and immune disease (SLE and vasculitis and IBD) and the honest stopping-rules so the biopsy-and-scan-and-empiric-treatment carousel does not replace the diagnostic reasoning - [[infectious-diseases/tuberculosis]], [[blood/leukaemia]], [[pathology/cancer-diagnosis]].**
+38 hours is $38/19 = 2$ half-lives, so the CRP should be $120 \times (1/2)^2 = 120/4 = 30$ mg/L. A value close to this supports adequate source control; a value much higher should prompt a search for a persisting source.
 :::
 :::
 
-::: exercise Design the neutropenic infection prevention bundle {level=3}
-Design prophylaxis and prevention for a haematology unit: patient-level, environmental, pharmacological and organisational measures with evaluation metrics.
+::: exercise Why no pus? {level=2}
+An infant has a CD18 deficiency. Explain, step by step, why the blood neutrophil count is very high but skin infections do not form pus.
 ::: solution
-**Layered-defence-medicine ([[#def-barriers]], [[infectious-diseases/immunocompromised-host]], [[infectious-diseases/healthcare-infections]]): patient-level - the neutropenia-duration-and-regimen-risk-stratification (the anticipated-nadir-days driving antifungal-and-antibacterial-and-antiviral-prophylaxis choices with the resistance-and-C.diff-and-toxicity trade-offs documented), the fluoroquinolone-prophylaxis-debate-and-reaction-policies and the line-care-and-oral-hygiene-and-perianal-and-skin-bundles and the G-CSF-primary-prophylaxis-by-regimen-risk-tables - [[blood/leukaemia]], [[pharmacology/adverse-reactions]], [[microbiology/antimicrobials]]; environmental - the protected-environments-and-hepa-filters evidence-versus-symbolism and the construction-and-water-and-composting-and-plant-and-pet-and-food rules for mould-and-Legionella-and-Toxoplasma-and-salmonella-exposures, the shower-versus-bath and the bare-floor-and-no-flowers housekeeping protocols with their actual evidence graded - [[public-health/environmental-occupational]], [[microbiology/infection-control]]; organisational - the time-to-antibiotics protocol with triage empowerment and the febrile-neutropenia order sets and the blood-culture-suites and the antifungal-trigger-and-CT-policy and the stewardship-rounds-presence-and-the-weekend-microbiology and the outbreak-alert-interface with the transplant-unit-transfer-network - [[emergency-critical-care/acute-assessment]], [[infectious-diseases/stewardship-outbreaks]]; and the evaluation - febrile-neutropenia-episode-rates-per-chemotherapy-cycle and bacteraemia-with-organism-mix and mould-infection-and-mortality-at-30-days and the length-of-stay-and-readmission and the patient-reported-safety-experience and the honest review of how many admissions the bundle actually prevents versus displaces - [[epidemiology-ebm/measuring-disease]], [[clinical-skills/patient-safety]].**
+CD18 is the shared β2 chain of the leucocyte integrins, including LFA-1 and Mac-1. Without it, neutrophils can still roll on selectins but cannot switch to firm adhesion on ICAM-1, so they cannot stop and cross the endothelium. Neutrophils therefore stay in the blood, raising the count, especially during infection when the marrow releases more. Pus is mostly dead neutrophils in tissue; if neutrophils cannot reach the tissue, infections become necrotic and spread without forming pus. Mac-1 (CD11b/CD18) is also a complement receptor, so phagocytosis of C3b-coated microbes is impaired as well.
+:::
+:::
+
+::: exercise Before starting a C5 inhibitor {level=2}
+A 32-year-old woman with paroxysmal nocturnal haemoglobinuria is to start eculizumab. Explain why her red cells are destroyed in this disease, how the drug helps, and which infection risk it creates and why.
+::: solution
+In PNH an acquired *PIGA* mutation in a haematopoietic stem cell prevents synthesis of the GPI anchor, so the red cells derived from it lack the GPI-anchored complement regulators CD55 and CD59. Complement then deposits on the red cells and the membrane attack complex lyses them, causing intravascular haemolysis, haemoglobinuria and thrombosis. Eculizumab binds C5 and prevents its cleavage, so the MAC cannot form and intravascular haemolysis stops. Blocking C5 reproduces a terminal complement deficiency, and killing of *Neisseria meningitidis* depends on the MAC. She therefore has a greatly increased risk of meningococcal disease and is vaccinated against meningococcal serogroups ACWY and B before treatment, with antibiotic prophylaxis according to local guidance, and is taught to seek urgent help for fever.
+:::
+:::
+
+::: exercise A febrile child with a normal CRP {level=3}
+A 14-month-old girl presents with high fever, lethargy and pneumococcal bacteraemia. Her CRP is only 18 mg/L despite 24 hours of illness. She had *Staphylococcus aureus* cellulitis at 6 months. Immunoglobulins, complement and neutrophil count are normal. Suggest an explanation that links the infections and the low CRP, and how it could be investigated.
+::: hint
+Think about which signalling pathway is needed to make IL-6 in response to bacteria.
+:::
+::: solution
+A defect in TLR signalling through MyD88 or IRAK-4 would explain both features. These adaptors are needed for most TLRs (and the IL-1 receptor) to activate NF-κB, so the child's innate cells produce little IL-6, IL-1 or TNF in response to bacteria. Low IL-6 means little CRP and often little fever, and poor early inflammation allows invasive infection with pyogenic bacteria, especially *S. pneumoniae* and *S. aureus*. Such children typically have normal immunoglobulin levels, complement and neutrophil counts, so routine screening is normal. Investigation is by specialist assays of cytokine production after stimulation of blood cells with TLR ligands, followed by genetic testing. Recognising the pattern matters because a normal CRP in such a child does not exclude serious bacterial infection; these defects are rare, and the CRP is far more often low because sampling was too early. Infection risk in these conditions tends to decrease with age.
+:::
+:::
+
+::: exercise The differential of recurrent infection by component {level=3}
+Three children are referred for recurrent infection. (a) A 4-year-old with recurrent pneumococcal pneumonia and otitis media, normal immunoglobulins, low CH50 and low AH50. (b) A 16-year-old with a second episode of meningococcal disease, normal CH50 but absent AH50. (c) A 9-year-old with recurrent *S. aureus* skin abscesses and a *Serratia* osteomyelitis, normal complement and immunoglobulins. For each, name the most likely defect and the confirmatory test.
+::: solution
+(a) Both CH50 and AH50 are low, so the defect lies in a component shared by both pathways: C3 or a terminal component. Pyogenic pneumococcal infections rather than neisserial infections point to **C3 deficiency** (or consumption, for example by factor H or factor I deficiency, which cause secondary C3 depletion). Confirm with C3 level, factor H and factor I levels.
+
+(b) A normal CH50 with absent AH50 indicates a defect confined to the alternative pathway, and recurrent meningococcal disease points to **properdin deficiency** (X-linked) or factor D deficiency. Confirm with properdin and factor D measurement.
+
+(c) Catalase-positive organisms causing abscesses and osteomyelitis with normal complement and immunoglobulins point to **chronic granulomatous disease**. Confirm with a DHR flow cytometry test and genetic testing.
 :::
 :::
