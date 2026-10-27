@@ -7,12 +7,27 @@
   "order": 190,
   "tagline": "Crystal structures, X-ray diffraction, defects, band theory, synthesis of solids, magnetic and optical materials, porous solids, nanomaterials and energy materials",
   "summary": "Materials chemistry connects the arrangement of atoms in solids with properties we can use. This course covers crystal structures and their determination by diffraction, defects and the electronic structure of solids, methods of making solids, and the chemistry behind magnetic, optical, porous, nanoscale and energy materials.",
-  "overview": [],
+  "overview": [
+    "Materials chemistry asks how the arrangement of atoms in a solid, and the defects in that arrangement, determine properties we can use: the conductivity of a semiconductor, the voltage of a battery electrode, the colour of a pigment, the magnetism of a ferrite, the selectivity of a zeolite catalyst. It draws on inorganic chemistry for structures and oxidation states, on physical chemistry for thermodynamics and kinetics, and on solid-state physics for bands and collective phenomena, and it ends in technologies, from capacitors and LEDs to lithium-ion cells, solar panels and superconducting magnets.",
+    "The course has three parts. The first three chapters describe and measure solids: lattices, Miller indices and the common structure types (rock salt, fluorite, perovskite, spinel), with Pauling's rules, tolerance factors and bond valence sums as tests of chemical sense; X-ray diffraction, from the Laue condition and structure factors to powder indexing, Scherrer broadening and structure solution; and point defects, Kröger–Vink notation, non-stoichiometry and ionic conduction. The next three explain properties and how to make the materials: band structures, densities of states and carrier statistics in semiconductors; ceramic, sol–gel, hydrothermal and vapour-phase synthesis; and cooperative magnetism, ferroelectricity, colour and luminescence. The last three apply everything to porous solids (zeolites and metal–organic frameworks, with adsorption isotherms and surface areas), to nanomaterials (surface and quantum-size effects, nucleation, plasmons, carbon and two-dimensional materials) and to materials for energy (battery electrodes and electrolytes, photovoltaics, thermoelectrics and superconductors).",
+    "The subject is hard because a solid is a single giant entity whose properties emerge from about $10^{23}$ atoms, so it needs both the chemist's local picture (coordination polyhedra, ligand fields, bond valences, defect reactions) and the physicist's collective one (reciprocal space, bands, mean fields). The lessons move constantly between the two, and between idealised structures and the real, defective, finite crystals that are actually made and used. Work through the numbers: most quantitative questions in materials chemistry reduce to a density from a cell, a $d$-spacing, a mass-action law with an Arrhenius constant, or an estimate of a characteristic length, and checking orders of magnitude is the best defence against both errors and hype."
+  ],
   "prerequisites": [
     "main-group",
     "thermodynamics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe crystal structures with lattice parameters, fractional coordinates and Miller indices, calculate interplanar spacings and densities, and build the common structure types from close-packed arrays and their holes.",
+    "Assess whether a structure is chemically reasonable using Pauling's rules, the Goldschmidt tolerance factor, octahedral site preference energies and bond valence sums.",
+    "Derive Bragg's law from the Laue condition, calculate structure factors and systematic absences, index cubic powder patterns, and estimate crystallite sizes from line broadening.",
+    "Calculate equilibrium defect concentrations, write balanced defect reactions in Kröger–Vink notation, predict the oxygen-pressure dependence of conductivity, and relate ionic conductivity to diffusion.",
+    "Construct tight-binding bands and densities of states, calculate Fermi energies and intrinsic and extrinsic carrier concentrations, and explain direct and indirect gaps and the failure of band theory in Mott insulators.",
+    "Choose and plan a synthesis route (ceramic, sol–gel, hydrothermal, CVD or ALD) for a target solid, and explain the kinetics that control each.",
+    "Interpret magnetic susceptibilities with the Curie–Weiss law and Néel's model of ferrimagnetism, describe ferroelectric transitions with Landau theory, and explain the colours and luminescence of solids.",
+    "Relate the structures of zeolites and metal–organic frameworks to their uses, and extract surface areas and pore sizes from adsorption isotherms with the Langmuir, BET and Kelvin equations.",
+    "Explain size effects in nanomaterials quantitatively, including surface fractions, nucleation barriers, quantum confinement (Brus equation) and plasmon resonances.",
+    "Evaluate battery electrodes, solar absorbers, thermoelectrics and superconductors from capacities, voltages, diode parameters, figures of merit and critical temperatures."
+  ],
   "chapters": [
     {
       "slug": "crystal-structures",
@@ -89,8 +104,152 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1912,
+      "title": "Diffraction of X-rays by crystals",
+      "detail": "Walter Friedrich and Paul Knipping, following Max von Laue's suggestion, recorded the diffraction pattern of copper sulfate, proving that crystals are periodic and X-rays are waves; Laue received the 1914 Nobel Prize in Physics.",
+      "people": [
+        "Max von Laue",
+        "Walter Friedrich",
+        "Paul Knipping"
+      ]
+    },
+    {
+      "year": 1913,
+      "title": "First crystal structures",
+      "detail": "William Lawrence Bragg and William Henry Bragg derived nλ = 2d sin θ and solved the structures of NaCl, KCl and diamond, showing that ionic crystals contain no molecules; they shared the 1915 Nobel Prize in Physics.",
+      "people": [
+        "William Lawrence Bragg",
+        "William Henry Bragg"
+      ]
+    },
+    {
+      "year": 1926,
+      "title": "Goldschmidt's crystal chemistry",
+      "detail": "Victor Moritz Goldschmidt's Geochemische Verteilungsgesetze der Elemente introduced systematic ionic radii and the tolerance factor for perovskites; Linus Pauling's rules for ionic structures followed in 1929.",
+      "people": [
+        "Victor Moritz Goldschmidt"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "Statistical theory of defects",
+      "detail": "Carl Wagner and Walter Schottky published the statistical thermodynamics of point defects and non-stoichiometry in ionic crystals, building on Yakov Frenkel's 1926 interstitial defect.",
+      "people": [
+        "Carl Wagner",
+        "Walter Schottky",
+        "Yakov Frenkel"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "Néel's theory of ferrimagnetism",
+      "detail": "Louis Néel explained the magnetism of magnetite and the spinel ferrites by antiparallel, unequal sublattice moments; he received the 1970 Nobel Prize in Physics.",
+      "people": [
+        "Louis Néel"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "LiCoO₂ as a lithium insertion cathode",
+      "detail": "Koichi Mizushima, Philip Jones, Peter Wiseman and John Goodenough reported reversible lithium extraction from layered LiCoO₂ at about 4 V, leading with Akira Yoshino's carbon anode (1985) to the lithium-ion cell commercialised in 1991.",
+      "people": [
+        "John B. Goodenough",
+        "Koichi Mizushima",
+        "Akira Yoshino"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "Discovery of C₆₀",
+      "detail": "Harold Kroto, Robert Curl, Richard Smalley and co-workers identified buckminsterfullerene in laser-vaporised graphite (Nobel Prize in Chemistry 1996), opening the field of carbon nanomaterials.",
+      "people": [
+        "Harold Kroto",
+        "Robert Curl",
+        "Richard Smalley"
+      ]
+    },
+    {
+      "year": 1986,
+      "title": "High-temperature superconductivity in cuprates",
+      "detail": "Georg Bednorz and Alex Müller reported superconductivity near 35 K in La–Ba–Cu–O; YBa₂Cu₃O₇, superconducting at 92 K, followed in 1987.",
+      "people": [
+        "J. Georg Bednorz",
+        "K. Alex Müller"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "Monodisperse quantum dots",
+      "detail": "Christopher Murray, David Norris and Moungi Bawendi's hot-injection synthesis gave CdSe nanocrystals of controlled size, following Alexei Ekimov's and Louis Brus's discovery of quantum-size effects; the three discoverers shared the 2023 Nobel Prize in Chemistry.",
+      "people": [
+        "Moungi Bawendi",
+        "Louis Brus",
+        "Alexei Ekimov"
+      ]
+    },
+    {
+      "year": 1999,
+      "title": "MOF-5 and permanent porosity",
+      "detail": "Omar Yaghi and co-workers reported MOF-5, Zn₄O(benzenedicarboxylate)₃, a robust framework with a very high surface area, establishing reticular chemistry; Yaghi, Susumu Kitagawa and Richard Robson shared the 2025 Nobel Prize in Chemistry.",
+      "people": [
+        "Omar M. Yaghi",
+        "Susumu Kitagawa",
+        "Richard Robson"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Solid State Chemistry and its Applications",
+      "authors": "Anthony R. West",
+      "year": 2014,
+      "note": "Second edition. The standard comprehensive text: structures, defects, synthesis, characterisation and properties, with many inorganic examples; a companion to every chapter of this course."
+    },
+    {
+      "title": "Solid State Chemistry: An Introduction",
+      "authors": "Lesley E. Smart and Elaine A. Moore",
+      "year": 2012,
+      "note": "Fourth edition. Accessible introduction with good chapters on band theory, defects, porous solids, nanomaterials and superconductors."
+    },
+    {
+      "title": "Inorganic Chemistry",
+      "authors": "Mark Weller, Tina Overton, Jonathan Rourke and Fraser Armstrong",
+      "year": 2018,
+      "note": "Seventh edition of 'Shriver and Atkins'. Its chapters on the structures of simple solids and on materials chemistry cover structure types, defects, bands and functional oxides at undergraduate level."
+    },
+    {
+      "title": "The Electronic Structure and Chemistry of Solids",
+      "authors": "P. A. Cox",
+      "year": 1987,
+      "note": "Concise chemist's account of bands, densities of states, localised electrons, Mott insulators and defects, linking orbital ideas to solids."
+    },
+    {
+      "title": "Solids and Surfaces: A Chemist's View of Bonding in Extended Structures",
+      "authors": "Roald Hoffmann",
+      "year": 1988,
+      "note": "Classic short book that builds band structures from molecular orbitals, with crystal orbital overlap populations and the Peierls distortion."
+    },
+    {
+      "title": "X-Ray Crystallography",
+      "authors": "William Clegg",
+      "year": 2015,
+      "note": "Second edition, Oxford Chemistry Primers. A compact, clear introduction to diffraction, structure factors, structure solution and refinement."
+    },
+    {
+      "title": "Introduction to Solid State Physics",
+      "authors": "Charles Kittel",
+      "year": 2005,
+      "note": "Eighth edition. The physicist's standard reference for reciprocal lattices, free electrons, semiconductors, magnetism and superconductivity."
+    },
+    {
+      "title": "Adsorption by Powders and Porous Solids",
+      "authors": "Françoise Rouquerol, Jean Rouquerol, Kenneth Sing, Philip Llewellyn and Guillaume Maurin",
+      "year": 2014,
+      "note": "Second edition. The authoritative guide to adsorption isotherms, BET surface areas, pore-size analysis and their pitfalls."
+    }
+  ],
   "next": [
     "polymer-chemistry"
   ]
