@@ -7,12 +7,27 @@
   "order": 240,
   "tagline": "Principles and metrics of green chemistry, the chemical industry, industrial processes, safer solvents, renewable feedstocks, carbon management and recycling",
   "summary": "Chemistry at industrial scale feeds and equips the world, and it must do so sustainably. This course introduces the principles and metrics of green chemistry, surveys the chemical industry and its major inorganic and petrochemical processes, and examines safer solvents and conditions, renewable feedstocks, carbon capture and low-emission hydrogen, and recycling in a circular economy.",
-  "overview": [],
+  "overview": [
+    "Chemistry at industrial scale feeds the world, houses it, clothes it and supplies its medicines, and it does so by converting a handful of raw materials — natural gas, oil, coal, salt, air, water, sulfur, phosphate rock and biomass — into a few hundred base chemicals and intermediates and then into tens of thousands of products. The same scale makes the chemical industry one of the largest consumers of energy and sources of waste and greenhouse-gas emissions. **Green chemistry** is the design of products and processes that reduce or eliminate hazardous substances, waste and energy use at source, rather than treating them afterwards; this course treats it together with the industrial chemistry it aims to change.",
+    "The course begins with the twelve principles of green chemistry, the distinction between hazard and risk, and the metrics — atom economy, E-factor, process mass intensity, reaction mass efficiency and life-cycle assessment — that turn the principles into numbers. It then surveys the chemical industry and its economics of scale and scale-up, and analyses the great inorganic processes (Haber–Bosch ammonia, contact sulfuric acid, Ostwald nitric acid, chlor-alkali, Solvay soda ash, fertilisers) and the petrochemical chain from crude oil and natural gas through steam cracking to ethylene oxide, vinyl chloride, propylene oxide and phenol. The second half turns to the levers of change: safer solvents and continuous-flow processing, renewable feedstocks and biocatalysis, carbon capture and low-emission hydrogen, and recycling, design for end of life and chemicals regulation in a circular economy.",
+    "What makes the subject demanding is that every judgement is quantitative and comparative. A reaction that is reversible and exothermic needs a temperature that balances equilibrium against rate ($1/T_\\mathrm{opt} = 1/T_\\mathrm{eq} + [R/(E_{-1} - E_1)]\\ln(E_{-1}/E_1)$); a metric means something only with its basis stated; a bio-based or recycled product is better only if its life cycle says so; and statistics and regulations change from year to year, so they are dated (as of 2026) and sourced. Work through the energy and mass balances yourself, with units, and always ask what a number is being compared with. The course draws on thermodynamics, kinetics and catalysis, and links throughout to [[organic-synthesis]], [[organometallics-catalysis]], [[polymer-chemistry]] and [[electrochemistry]]."
+  ],
   "prerequisites": [
     "organometallics-catalysis",
     "thermodynamics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Apply the twelve principles of green chemistry and the hierarchy of inherent safety to propose improvements to a chemical process, distinguishing hazard from risk.",
+    "Calculate atom economy, E-factor, process mass intensity and reaction mass efficiency for single steps and multistep routes, stating the basis of each metric.",
+    "Outline a life-cycle assessment with a functional unit and system boundary, and explain how allocation and system expansion affect its conclusions.",
+    "Calculate equilibrium conversions for industrial gas-phase reactions such as ammonia synthesis, sulfur dioxide oxidation and ethane dehydrogenation, and justify the temperatures, pressures and reactor configurations used.",
+    "Analyse reactors and plants using conversion, selectivity, recycle and purge balances, the six-tenths rule, adiabatic temperature rise and the Semenov criterion for runaway.",
+    "Compare industrial routes to major chemicals (ethylene oxide, vinyl chloride, propylene oxide, soda ash, ibuprofen) by atom economy, selectivity, co-products and hazard.",
+    "Select and justify safer solvents using solubility parameters, selection guides and regulation, and size simple continuous-flow reactors.",
+    "Estimate maximum fermentation yields from degrees of reduction and enzymatic batch times from Michaelis–Menten kinetics, and evaluate bio-based feedstocks.",
+    "Calculate minimum work of CO₂ separation, emission intensities of hydrogen routes and round-trip efficiencies of chemical energy storage.",
+    "Interpret recycling rates, polymer degradation and ceiling temperatures, and describe how REACH and related laws regulate chemicals and products as of 2026."
+  ],
   "chapters": [
     {
       "slug": "green-principles",
@@ -87,7 +102,135 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1791,
+      "title": "The Leblanc soda process",
+      "detail": "Nicolas Leblanc patented the conversion of salt to sodium carbonate via sodium sulfate; its hydrogen chloride emissions led to the British Alkali Act of 1863, the first industrial pollution control law.",
+      "people": [
+        "Nicolas Leblanc"
+      ]
+    },
+    {
+      "year": 1865,
+      "title": "The Solvay process",
+      "detail": "Ernest Solvay's ammonia–soda process, using ammonia and carbon dioxide cycles and solubility differences, began displacing the Leblanc process from the mid-1860s.",
+      "people": [
+        "Ernest Solvay"
+      ]
+    },
+    {
+      "year": 1913,
+      "title": "First Haber–Bosch ammonia plant",
+      "detail": "BASF started the first industrial ammonia synthesis at Oppau, based on Fritz Haber's high-pressure catalytic process scaled up by Carl Bosch, with Alwin Mittasch's promoted iron catalyst.",
+      "people": [
+        "Fritz Haber",
+        "Carl Bosch",
+        "Alwin Mittasch"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "Silent Spring",
+      "detail": "Rachel Carson's book on the environmental effects of synthetic pesticides helped launch modern environmental regulation, including the founding of the US EPA in 1970.",
+      "people": [
+        "Rachel Carson"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "Inherent safety",
+      "detail": "Trevor Kletz's article 'What you don't have, can't leak' argued for plants made safe by design rather than by added protection, a principle reinforced by the Bhopal disaster of 1984.",
+      "people": [
+        "Trevor Kletz"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "Atom economy",
+      "detail": "Barry Trost proposed atom economy in Science as a criterion for synthetic efficiency; in the same years Paul Anastas and colleagues at the US EPA began the programme they called green chemistry.",
+      "people": [
+        "Barry M. Trost",
+        "Paul Anastas"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "The E-factor",
+      "detail": "Roger Sheldon introduced the E-factor, kilograms of waste per kilogram of product, in Chemistry & Industry, showing that fine chemicals and pharmaceuticals generate far more waste per kilogram than bulk chemicals.",
+      "people": [
+        "Roger A. Sheldon"
+      ]
+    },
+    {
+      "year": 1998,
+      "title": "The twelve principles",
+      "detail": "Paul Anastas and John Warner published Green Chemistry: Theory and Practice, setting out the twelve principles of green chemistry; the RSC journal Green Chemistry followed in 1999.",
+      "people": [
+        "Paul Anastas",
+        "John Warner"
+      ]
+    },
+    {
+      "year": 2007,
+      "title": "REACH enters into force",
+      "detail": "The EU Regulation on the Registration, Evaluation, Authorisation and Restriction of Chemicals (EC 1907/2006) came into force on 1 June 2007, requiring data on all substances marketed at one tonne a year or more.",
+      "people": []
+    },
+    {
+      "year": 2010,
+      "title": "An evolved enzyme for sitagliptin",
+      "detail": "Merck and Codexis reported in Science a transaminase engineered by directed evolution that replaced a rhodium-catalysed high-pressure hydrogenation in the manufacture of sitagliptin.",
+      "people": [
+        "Christopher Savile",
+        "Jeffrey Moore",
+        "Gjalt Huisman"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Green Chemistry: Theory and Practice",
+      "authors": "Paul T. Anastas and John C. Warner",
+      "year": 1998,
+      "note": "The founding statement of the twelve principles; short, readable and still the best introduction to the ideas."
+    },
+    {
+      "title": "Green Chemistry: An Introductory Text (3rd edn)",
+      "authors": "Mike Lancaster",
+      "year": 2016,
+      "note": "Undergraduate textbook covering metrics, catalysis, solvents, renewable feedstocks and industrial case studies, with exercises."
+    },
+    {
+      "title": "Green Chemistry and Catalysis",
+      "authors": "Roger A. Sheldon, Isabel Arends and Ulf Hanefeld",
+      "year": 2007,
+      "note": "Catalysis-centred account by the originator of the E-factor, with detailed industrial examples including biocatalysis."
+    },
+    {
+      "title": "Chemical Process Technology (2nd edn)",
+      "authors": "Jacob A. Moulijn, Michiel Makkee and Annelies E. van Diepen",
+      "year": 2013,
+      "note": "The standard text on industrial processes — refining, steam cracking, syngas, ammonia, methanol, sulfuric acid — with reactor and process analysis."
+    },
+    {
+      "title": "Industrial Organic Chemicals (3rd edn)",
+      "authors": "Harold A. Wittcoff, Bryan G. Reuben and Jeffrey S. Plotkin",
+      "year": 2013,
+      "note": "Product-by-product survey of the petrochemical and organic chemical industry: feedstocks, routes, economics and uses."
+    },
+    {
+      "title": "Industrial Inorganic Chemistry (2nd edn)",
+      "authors": "Karl Heinz Büchel, Hans-Heinrich Moretto and Peter Woditsch",
+      "year": 2000,
+      "note": "Comprehensive reference on ammonia, nitric and sulfuric acids, chlor-alkali, soda ash, phosphates and other inorganic processes."
+    },
+    {
+      "title": "Principles of Polymerization (4th edn)",
+      "authors": "George Odian",
+      "year": 2004,
+      "note": "Standard polymer text; source of the polymerisation thermodynamics and ceiling temperatures used for depolymerisation and recycling."
+    }
+  ],
   "next": []
 }
