@@ -44,7 +44,8 @@ Every term is a **thermal resistance in series**, and — this is the part stude
 |:--|--:|:--|--:|
 | Sea water and treated boiler feedwater, below $5 0 \ \ {} ^ { \circ } \mathrm { C }$ | $0 . 0 0 0 1$ | Sea water and treated boiler feedwater, above $5 0 \ \ {} ^ { \circ } \mathrm { C }$ | $0 . 0 0 0 2$ |
 | River water, below $5 0 \ \ {} ^ { \circ } \mathrm { C }$ | $0 . 0 0 0 2$–$0 . 0 0 1$ | Fuel oil | $0 . 0 0 0 9$ |
-| Steam, oil-free | $0 . 0 0 0 1$ | Refrigerating liquids | $0 . 0 0 0 2$ | $0 . 0 0 0 2$ | Air, dusty / compressor discharge | $0 . 0 0 0 6$ |
+| Steam, oil-free | $0 . 0 0 0 1$ | Refrigerating liquids | $0 . 0 0 0 2$ |
+| Air, dusty / compressor discharge | $0 . 0 0 0 6$ | | |
 
 **The resistances are added as resistances, never as coefficients: two fluids at $h = 5 0 0 0$ and $h = 5 0$ give $U \approx 4 9 . 5$ , not $2 5 0 0$ and not $5 0 2 5$ .**
 :::
@@ -238,9 +239,9 @@ A balanced water–water exchanger, $C _ { \min } = 6 2 7 0 \ \mathrm { W / K }$
 ::: exercise A condenser's area {#ex-condenser level=2 check="39"}
 Cooling water at $3 0 \ \mathrm { k g / s }$ ($c _ { p } = 4 1 8 0 \ \mathrm { J / k g \, K }$) is heated from $1 5$ to $6 5 \ \ {} ^ { \circ } \mathrm { C }$ by steam condensing at $1 0 0 \ \ {} ^ { \circ } \mathrm { C }$ . Take the clean coefficient $U = 4 0 0 0 \ \mathrm { W / m ^ { 2 } K }$ and a total fouling resistance of $0 . 0 0 0 1 \ \mathrm { m ^ { 2 } K / W }$ , and find the required area. (Enter $\mathrm { m ^ { 2 } }$ , to the nearest square metre.)
 ::: solution
-$Q = 3 0 \times 4 1 8 0 \times 5 0 = 6 . 2 7 \ \mathrm { M W }$ . With one side isothermal, $\Delta T _ { 1 } = 8 5 \ \mathrm { K }$ , $\Delta T _ { 2 } = 3 5 \ \mathrm { K }$ , $\Delta T _ { \text{lm } } = ( 8 5 - 3 5 ) / \ln ( 8 5 / 3 5 ) = 5 6 . 5 \ \mathrm { K }$ , and
-clean, that is $A = 6 . 2 7 \times 1 0 ^ { 6 } / ( 4 0 0 0 \times 5 6 . 5 ) = 2 8 \ \mathrm { m ^ { 2 } }$ . Referred to the same area, the fouling resistance gives
-$$U _ { \text{dirty } } = \left[ 1 / 4 0 0 0 + 0 . 0 0 0 1 \right] ^ { - 1 } = 2 8 6 0 \ \mathrm { W / m ^ { 2 } K } \qquad A = { \frac { 6 . 2 7 \times 1 0 ^ { 6 } } { 2 8 6 0 \times 5 6 . 5 } } = \mathbf { 3 9 \ m ^ { 2 } }$$
+$Q = 3 0 \times 4 1 8 0 \times 5 0 = 6 . 2 7 \ \mathrm { M W }$ . With one side isothermal, $\Delta T _ { 1 } = 8 5 \ \mathrm { K }$ , $\Delta T _ { 2 } = 3 5 \ \mathrm { K }$ , $\Delta T _ { \text{lm } } = ( 8 5 - 3 5 ) / \ln ( 8 5 / 3 5 ) = 5 6 . 4 \ \mathrm { K }$ , and
+clean, that is $A = 6 . 2 7 \times 1 0 ^ { 6 } / ( 4 0 0 0 \times 5 6 . 4 ) = 2 8 \ \mathrm { m ^ { 2 } }$ . Referred to the same area, the fouling resistance gives
+$$U _ { \text{dirty } } = \left[ 1 / 4 0 0 0 + 0 . 0 0 0 1 \right] ^ { - 1 } = 2 8 6 0 \ \mathrm { W / m ^ { 2 } K } \qquad A = { \frac { 6 . 2 7 \times 1 0 ^ { 6 } } { 2 8 6 0 \times 5 6 . 4 } } = \mathbf { 3 9 \ m ^ { 2 } }$$
 **The clean answer is $2 8 \ \mathrm { m ^ { 2 } }$ : a fouling resistance of $0 . 0 0 0 1 \ \mathrm { m ^ { 2 } K / W }$ — a tenth of a thousandth — costs $4 0 \ \%$ of the surface, because the clean resistance is only $0 . 0 0 0 2 5 \ \mathrm { m ^ { 2 } K / W }$ and the deposit more than doubles it.** **Check by $\varepsilon$–NTU: $\mathrm { N T U } = 2 8 6 0 \times 3 9 / 1 2 5 \, 4 0 0 = 0 . 8 9$ and $\varepsilon = 1 - e ^ { - 0 . 8 9 } = 0 . 5 9$ , against the required $\varepsilon = 5 0 / 8 5 = 0 . 5 9$ — the two methods agree, as they must.**
 :::
 :::

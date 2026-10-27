@@ -298,7 +298,7 @@ f: 100*exp(-x/139); 100*exp(-x/2652)
 x: 0, 600
 y: 0, 105
 labels: daily wave, delta = 139 mm; annual wave, delta = 2652 mm
-caption: Amplitude as a percentage of the surface swing against depth in millimetres for concrete ($\alpha = 7 . 0 \times 1 0 ^ { - 7 } \ \mathrm { m ^ { 2 } / s }$) subjected to a daily and to an annual surface temperature wave. **At $6 0 0 \ \mathrm{mm}$ the daily wave is down to $1 . 3 \ \%$ and the annual wave has lost only $2 0 \ \%$.** **The two curves are the same exponential with time constants in the ratio $1 9$, which is $\sqrt { 3 6 5 }$ — the square root of the ratio of the periods, exactly as $\delta = \sqrt { \alpha P / \pi }$ requires.** **Read the design conclusion off the graph: no thickness of concrete will ever insulate a building against the seasons, and no thickness thinner than about $3 0 0 \ \mathrm{mm}$ will do much about a summer afternoon. Insulation stops the annual wave; mass only delays the daily one, and the two are not substitutes.**
+caption: Amplitude as a percentage of the surface swing against depth in millimetres for concrete ($\alpha = 7 . 0 \times 1 0 ^ { - 7 } \ \mathrm { m ^ { 2 } / s }$) subjected to a daily and to an annual surface temperature wave. **At $6 0 0 \ \mathrm{mm}$ the daily wave is down to $1 . 3 \ \%$ and the annual wave has lost only $2 0 \ \%$.** **The two curves are the same exponential with decay lengths in the ratio $1 9$, which is $\sqrt { 3 6 5 }$ — the square root of the ratio of the periods, exactly as $\delta = \sqrt { \alpha P / \pi }$ requires.** **Read the design conclusion off the graph: no thickness of concrete will ever insulate a building against the seasons, and no thickness thinner than about $3 0 0 \ \mathrm{mm}$ will do much about a summer afternoon. Insulation stops the annual wave; mass only delays the daily one, and the two are not substitutes.**
 :::
 
 ## Multi-dimensional transients by product solutions
@@ -398,7 +398,7 @@ $$
 :::
 
 ::: exercise Penetration depth {#ex-pen level=1 check="50.2"}
-How far has a temperature change penetrated into a concrete slab ($\alpha = 7 . 0 \times 1 0 ^ { - 7 } \ \mathrm { m ^ { 2 } / s }$) one hour after the surface is suddenly cooled? Give $\sqrt{\alpha t}$ in mm. Give $\sqrt{\alpha t}$ in mm.
+How far has a temperature change penetrated into a concrete slab ($\alpha = 7 . 0 \times 1 0 ^ { - 7 } \ \mathrm { m ^ { 2 } / s }$) one hour after the surface is suddenly cooled? Give $\sqrt{\alpha t}$ in mm.
 ::: solution
 $$
 \delta = { \sqrt { \alpha t } } = { \sqrt { 7 . 0 \times 1 0 ^ { - 7 } \times 3 6 0 0 } } = { \sqrt { 2 . 5 2 \times 1 0 ^ { - 3 } } } = \mathbf { 5 0 . 2 \ m m }
@@ -408,7 +408,7 @@ $$
 :::
 
 ::: exercise Damping depth {#ex-damp level=2 check="121"}
-Find the damping depth of a daily temperature wave in brick ($\alpha = 5 . 3 \times 1 0 ^ { - 7 } \ \mathrm { m ^ { 2 } / s }$), and the amplitude and phase lag at $2 4 0 \ \mathrm{mm }$. Enter the damping depth in mm. Enter the damping depth in mm.
+Find the damping depth of a daily temperature wave in brick ($\alpha = 5 . 3 \times 1 0 ^ { - 7 } \ \mathrm { m ^ { 2 } / s }$), and the amplitude and phase lag at $2 4 0 \ \mathrm{mm }$. Enter the damping depth in mm.
 ::: solution
 $$
 \delta = { \sqrt { \frac { \alpha P } { \pi } } } = { \sqrt { \frac { 5 . 3 \times 1 0 ^ { - 7 } \times 8 6 { , } 4 0 0 } { \pi } } } = \mathbf { 1 2 1 \ m m }

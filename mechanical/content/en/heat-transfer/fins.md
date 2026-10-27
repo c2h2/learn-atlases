@@ -405,7 +405,7 @@ And one warning is worth repeating, because it is the most common error in the f
 - **An array is $\eta _ { o } = 1 - ( A _ { f } / A _ { t } ) ( 1 - \eta _ { f } )$, and in a dense array the base is irrelevant.** Everything is the fins, and the joint under the base is a separate resistance that no fin can help.
 - **Optimum pitch is $S \approx 2 k _ { f } / h _ { \infty }$** — about $1 0 \ \mathrm{mm}$ for natural convection in air, $1 . 3 \ \mathrm{mm}$ at $h = 40$, and about $0 . 2 5 \ \mathrm{mm}$ in water — the scale of microchannel cold plates.
 - **The optimum is flat.** From about two-thirds to one and a half times the best gap the performance changes by less than $10\ \%$, so choose the sink that fits, cleans and costs least.
-- **Doubling a fin's height buys $\tanh$ of the increase, not the increase**: $+ 2 6\ \%$ for a fin at $m L _ { c } = 1 . 0$, and $+ 3 . 5 \ \%$ for one at $m L _ { c } = 2$.
+- **Doubling a fin's height buys $\tanh$ of the increase, not the increase**: $+ 2 6\ \%$ for a fin at $m L _ { c } = 1 . 0$, and $+ 3 . 7 \ \%$ for one at $m L _ { c } = 2$.
 - **A flux plot gives $q = ( M / N ) k \Delta T w$** by counting curvilinear squares, is good to a few per cent, and identifies $M / N$ as the shape factor per unit thickness.
 - **Spreading resistance into a half-space is $1 / ( 4 k \sqrt { A _ { s } / \pi } )$**, independent of the body's thickness once it is several source-sizes thick. A thicker lid does little for a hot spot; a bigger effective source area does a lot.
 :::

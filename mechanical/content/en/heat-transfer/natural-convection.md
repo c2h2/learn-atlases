@@ -132,7 +132,7 @@ $$
 $$
 q ^ { \prime \prime } = h \Delta T = C \, \Delta T ^ { 1 / 4 } \Delta T = C \Delta T ^ { 5 / 4 } \qquad \Longrightarrow \qquad { \frac { \mathrm { d } q ^ { \prime \prime } } { \mathrm { d } \Delta T } } = { \frac { 5 } { 4 } } \, { \frac { q ^ { \prime \prime } } { \Delta T } }
 $$
-**Three consequences that are design decisions, not algebra.** **(i) Sensitivity.** **A $1 0 \ \ \%$ error in $h$ — easy to make from orientation alone — gives a $1 0 \ \ \%$ error in $\Delta T$ , because $\Delta T \propto h ^ { - 4 / 5 }$ gives $0 . 9 ^ { - 0 . 8 } = 1 . 0 8 7$ : an $8 . 7 \ \ \%$ error in the temperature rise.** **In the turbulent regime $\Delta T \propto h ^ { - 3 / 4 }$ and the same correlation error costs $7 . 5 \ \ \%$ : natural convection is a forgiving subject, and the forgiving exponent is why its rules of thumb survive.** **(ii) Area does not work the way it does in forced flow.** **Doubling the area doubles $Q$ at the same $\Delta T$ , but if instead you double the height of a vertical plate you gain only $2 ^ { 3 / 4 } = 1 . 6 8$ , because $h \propto L ^ { - 1 / 4 }$ and the area gains $2 \times$ while the coefficient loses $2 ^ { - 1 / 4 }$ .** **Widening a plate costs nothing in $h$ : if you must add area to a passive sink, add width, not height — the opposite of the forced-flow instinct, where height is what the fan can afford.** **(iii) The "resistance" is a curve.** **$R _ { \theta } = \Delta T / Q = 1 / ( C A \Delta T ^ { 1 / 4 } )$ , so a datasheet that quotes $R _ { \theta } = 2 . 5 \ \mathrm { K / W }$ for a passive enclosure has quoted it at one particular temperature rise, and the same enclosure at half the rise has $2 . 5 \times 2 ^ { 1 / 4 } = 2 . 9 7 \ \mathrm { K / W }$ .** **The right way to use catalogue data for passive parts is a log-log plot of $Q$ against $\Delta T$ , which is a straight line of slope $5 / 4$ if the part is behaving, and a kinked line if the flow has transitioned or choked.**
+**Three consequences that are design decisions, not algebra.** **(i) Sensitivity.** **A $1 0 \ \ \%$ error in $h$ — easy to make from orientation alone — gives an error of under $1 0 \ \ \%$ in $\Delta T$ , because $\Delta T \propto h ^ { - 4 / 5 }$ gives $0 . 9 ^ { - 0 . 8 } = 1 . 0 8 7$ : an $8 . 7 \ \ \%$ error in the temperature rise.** **In the turbulent regime $\Delta T \propto h ^ { - 3 / 4 }$ and the same correlation error costs $8 . 2 \ \ \%$ : natural convection is a forgiving subject, and the forgiving exponent is why its rules of thumb survive.** **(ii) Area does not work the way it does in forced flow.** **Doubling the area doubles $Q$ at the same $\Delta T$ , but if instead you double the height of a vertical plate you gain only $2 ^ { 3 / 4 } = 1 . 6 8$ , because $h \propto L ^ { - 1 / 4 }$ and the area gains $2 \times$ while the coefficient loses $2 ^ { - 1 / 4 }$ .** **Widening a plate costs nothing in $h$ : if you must add area to a passive sink, add width, not height — the opposite of the forced-flow instinct, where height is what the fan can afford.** **(iii) The "resistance" is a curve.** **$R _ { \theta } = \Delta T / Q = 1 / ( C A \Delta T ^ { 1 / 4 } )$ , so a datasheet that quotes $R _ { \theta } = 2 . 5 \ \mathrm { K / W }$ for a passive enclosure has quoted it at one particular temperature rise, and the same enclosure at half the rise has $2 . 5 \times 2 ^ { 1 / 4 } = 2 . 9 7 \ \mathrm { K / W }$ .** **The right way to use catalogue data for passive parts is a log-log plot of $Q$ against $\Delta T$ , which is a straight line of slope $5 / 4$ if the part is behaving, and a kinked line if the flow has transitioned or choked.**
 :::
 :::
 
@@ -336,7 +336,7 @@ $$
 $$
 **For aiding flow (surface facing up in a rising stream, hot vertical plate in an upward current) the standard combination is**
 $$
-\mathrm { N u } ^ { 3 } = \mathrm { N u } _ { \text{forced} } ^ { 3 } + \mathrm { N u } _ { \text{natural} } ^ { 3 } \qquad \text{(aiding)} \qquad \mathrm { N u } ^ { 3 } = \mathrm { N u } _ { \text{forced} } ^ { 3 } - \mathrm { Nu } _ { \text{natural} } ^ { 3 } \qquad \text{(opposing, if positive)}
+\mathrm { N u } ^ { 3 } = \mathrm { N u } _ { \text{forced} } ^ { 3 } + \mathrm { N u } _ { \text{natural} } ^ { 3 } \qquad \text{(aiding)} \qquad \mathrm { N u } ^ { 3 } = \left| \mathrm { N u } _ { \text{forced} } ^ { 3 } - \mathrm { Nu } _ { \text{natural} } ^ { 3 } \right| \qquad \text{(opposing)}
 $$
 **Four things to take from this block.** **(i) The $U ^ { 2 }$ in the denominator is the whole story:** mixed convection is a low-speed phenomenon, and it occupies the band $0 . 0 5$ to $0 . 5 \ \mathrm { m / s }$ in air, which is exactly the speed range of a room, a cable tray, a rack's leakage flow and the wind over a parked vehicle. **(ii) Aiding flow is nearly always safe:** the combined coefficient is never below either part, and where the two parts are equal it is $2 ^ { 1 / 3 } = 1 . 2 6$ times either. **(iii) Opposing flow is not safe.** **A downward forced flow over a hot upward-facing surface can give a coefficient far below either calculation — the two layers cancel, the flow reverses inside the layer, and a laminar opposing layer is steady but nearly insulating.** **Worst of all, opposing mixed convection can be bistable: two solutions at the same flow rate, which is why "the temperature oscillates and we cannot reproduce it on test" is a mixed-convection symptom.** **(iv) The combination exponents are empirical and $\pm 2 5 \ \ \%$ ;** $n = 3$ for aiding and $n = 2$ to $3$ for opposing are the usual recommendations, and where the case matters the answer is a hot-wire anemometer and not a formula.
 :::
@@ -363,7 +363,7 @@ $$
 
 ## Exercises
 
-::: exercise A warm wall {#ex-nat-wall level=1 check="37"}
+::: exercise A warm wall {#ex-nat-wall level=1 check="18.4"}
 A $3 0 0 \times 3 0 0 \ \mathrm { m m }$ vertical plate is held at $6 0 \ \ {} ^ { \circ } \mathrm { C }$ in a room at $2 0 \ \ {} ^ { \circ } \mathrm { C }$. Find the average coefficient and the heat loss from one face. (Enter the heat loss in W.)
 ::: solution
 **Film temperature** $4 0 \ \ {} ^ { \circ } \mathrm { C }$ : $\nu = 1 . 7 0 \times 1 0 ^ { - 5 }$ , $\alpha = 2 . 3 9 \times 1 0 ^ { - 5 } \ \mathrm { m ^ { 2 } / s }$ , $k = 0 . 0 2 7 2 \ \mathrm { W / m \, K }$ , $\beta = 1 / 3 1 3 \ \mathrm { K ^ { - 1 } }$ .
@@ -371,9 +371,9 @@ $$
 \mathrm { R a } _ { L } = { \frac { 9 . 8 1 \times 3 . 1 9 \times 1 0 ^ { - 3 } \times 4 0 \times 0 . 3 0 0 ^ { 3 } } { 1 . 7 0 \times 1 0 ^ { - 5 } \times 2 . 3 9 \times 1 0 ^ { - 5 } } } = 8 . 3 \times 1 0 ^ { 7 } \qquad ( \text{laminar} )
 $$
 $$
-{ \overline { { \mathrm { N u } } } } = 0 . 5 9 \times \left( 8 . 3 \times 1 0 ^ { 7 } \right) ^ { 1 / 4 } = 5 6 . 3 \qquad { \overline { { h } } } = { \frac { 5 6 . 3 \times 0 . 0 2 7 2 } { 0 . 3 0 0 } } = 5 . 1 \ \mathrm { W / m ^ { 2 } K } \qquad q = 5 . 1 \times 0 . 0 9 \times 4 0 = \mathbf { 3 7 \ W }
+{ \overline { { \mathrm { N u } } } } = 0 . 5 9 \times \left( 8 . 3 \times 1 0 ^ { 7 } \right) ^ { 1 / 4 } = 5 6 . 3 \qquad { \overline { { h } } } = { \frac { 5 6 . 3 \times 0 . 0 2 7 2 } { 0 . 3 0 0 } } = 5 . 1 \ \mathrm { W / m ^ { 2 } K } \qquad q = 5 . 1 \times 0 . 0 9 \times 4 0 = \mathbf { 1 8 . 4 \ W }
 $$
-**Churchill–Chu gives $5 . 2 \ \mathrm { W / m ^ { 2 } K }$ , within $2 \ \ \%$ , because $8 . 3 \times 1 0 ^ { 7 }$ is comfortably inside the laminar band.** **Radiation at $\varepsilon = 0 . 9$ would add $q _ { r } = 0 . 9 \times 5 . 6 7 \times 1 0 ^ { - 8 } \times ( 3 3 3 ^ { 4 } - 2 9 3 ^ { 4 } ) \times 0 . 0 9 = 2 3 \ \mathrm { W }$ , sixty per cent as much again: the $3 7 \ \mathrm { W }$ is the answer to the question asked, and the $6 0 \ \mathrm { W }$ is the answer to the question a designer needs.**
+**Churchill–Chu gives $5 . 2 \ \mathrm { W / m ^ { 2 } K }$ , within $2 \ \ \%$ , because $8 . 3 \times 1 0 ^ { 7 }$ is comfortably inside the laminar band.** **Radiation at $\varepsilon = 0 . 9$ would add $q _ { r } = 0 . 9 \times 5 . 6 7 \times 1 0 ^ { - 8 } \times ( 3 3 3 ^ { 4 } - 2 9 3 ^ { 4 } ) \times 0 . 0 9 = 2 3 \ \mathrm { W }$ , more than the convection itself: the $1 8 . 4 \ \mathrm { W }$ is the answer to the question asked, and the $4 1 \ \mathrm { W }$ is the answer to the question a designer needs.**
 :::
 :::
 
@@ -382,10 +382,10 @@ A $4 0 0 \times 4 0 0 \ \mathrm { m m }$ horizontal plate is at $7 0 \ \ {} ^ { 
 ::: solution
 $L _ { c } = A _ { s } / P _ { s } = 0 . 1 6 / 1 . 6 = 0 . 1 0 0 \ \mathrm { m }$ . **Film** $4 5 \ \ {} ^ { \circ } \mathrm { C }$ : $k = 0 . 0 2 7 6 \ \mathrm { W / m \, K }$ , $\nu = 1 . 7 5 \times 1 0 ^ { - 5 }$ , $\alpha = 2 . 4 7 \times 1 0 ^ { - 5 }$ , $\beta = 1 / 3 1 8$ .
 $$
-\mathrm { R a } _ { L _ { c } } = { \frac { 9 . 8 1 \times 3 . 1 4 \times 1 0 ^ { - 3 } \times 5 0 \times 0 . 1 0 0 ^ { 3 } } { 1 . 7 5 \times 1 0 ^ { - 5 } \times 2 . 4 7 \times 1 0 ^ { - 5 } } } = 2 . 9 \times 1 0 ^ { 6 }
+\mathrm { R a } _ { L _ { c } } = { \frac { 9 . 8 1 \times 3 . 1 4 \times 1 0 ^ { - 3 } \times 5 0 \times 0 . 1 0 0 ^ { 3 } } { 1 . 7 5 \times 1 0 ^ { - 5 } \times 2 . 4 7 \times 1 0 ^ { - 5 } } } = 3 . 6 \times 1 0 ^ { 6 }
 $$
 $$
-\text{up: } \ { \overline { { h } } } = { \frac { 0 . 5 4 \times ( 2 . 9 \times 1 0 ^ { 6 } ) ^ { 1 / 4 } \times 0 . 0 2 7 6 } { 0 . 1 0 0 } } = 6 . 5 \ \mathrm { W / m ^ { 2 } K } \qquad q = 6 . 5 \times 0 . 1 6 \times 5 0 = 5 2 \ \mathrm { W }
+\text{up: } \ { \overline { { h } } } = { \frac { 0 . 5 4 \times ( 3 . 6 \times 1 0 ^ { 6 } ) ^ { 1 / 4 } \times 0 . 0 2 7 6 } { 0 . 1 0 0 } } = 6 . 5 \ \mathrm { W / m ^ { 2 } K } \qquad q = 6 . 5 \times 0 . 1 6 \times 5 0 = 5 2 \ \mathrm { W }
 $$
 $$
 \text{down: } \ { \overline { { h } } } = { \frac { 0 . 2 7 } { 0 . 5 4 } } \times 6 . 5 = 3 . 2 \ \mathrm { W / m ^ { 2 } K } \qquad q = \mathbf { 2 6 \ W }

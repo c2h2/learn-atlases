@@ -103,7 +103,7 @@ $$F _ { ( 0 \rightarrow \lambda ) } = { \frac { \int _ { 0 } ^ { \lambda } E _ {
 
 $$F _ { \text{visible } } = 0 . 5 5 0 - 0 . 1 2 4 = \mathbf { 0 . 4 3 } \quad ( 4 3 \ \%) \qquad F _ { ( \lambda < 4 \ \mu \mathrm { m } ) } = 0 . 9 9$$
 
-**(b) How much of a room-temperature surface's emission is below $4 \ \mu \mathrm { m }$ ?** $\lambda T = 4 \times 3 0 0 = 1 2 0 0$ , $F = 0 . 0 0 5$ : **half a per cent.** **Everything a $3 0 0 \ \mathrm { K }$ surface emits is thermal infrared.**
+**(b) How much of a room-temperature surface's emission is below $4 \ \mu \mathrm { m }$ ?** $\lambda T = 4 \times 3 0 0 = 1 2 0 0$ , $F = 0 . 0 0 2$ : **a fifth of a per cent.** **Everything a $3 0 0 \ \mathrm { K }$ surface emits is thermal infrared.**
 
 **(c) Now put a glass pane between them.** Ordinary soda-lime glass transmits from about $0 . 3$ to $2 . 5 \ \mu \mathrm { m }$ and is effectively opaque beyond $4 \ \mu \mathrm { m }$ . **Sunlight passes through it almost unimpeded; the infrared emission of the furniture it has heated cannot get back out through the glass.** That is the radiative half of why a closed car or a glazed room in the sun gets so hot (the other half, in a real greenhouse, is that the glass also stops the warm air from escaping), and it is why a solar collector is covered with glass. The atmosphere's greenhouse effect involves the same band-by-band physics, with water vapour and carbon dioxide in place of the glass (section 8).
 

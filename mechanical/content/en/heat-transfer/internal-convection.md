@@ -194,7 +194,7 @@ $$
 $$
 j _ { H } \equiv \mathrm { St } \, \mathrm { Pr } ^ { 2 / 3 } = { \frac { f } { 8 } } \qquad \Longleftrightarrow \qquad \mathrm { N u } = { \frac { f } { 8 } } \, \mathrm { R e } \, \mathrm { Pr } ^ { 1 / 3 }
 $$
-**with $f$ the Darcy friction factor — $f = 0 . 1 2 8 \, \mathrm { R e } ^ { - 0 . 2 5 }$ for smooth tubes at these Reynolds numbers, which reproduces the $0 . 0 2 3 \, \mathrm { R e } ^ { 0 . 8 }$ to within a few per cent. The analogy says the tube trades heat and momentum at the same exchange rate, exactly as on the flat plate: any device that raises $f$ to trip the layer — wire coils, turbulators, roughness — raises $\mathrm { N u }$ in proportion, and the whole art of enhanced surfaces is doing it with less friction than the analogy prices in.**
+**with $f$ the Darcy friction factor — $f = 0 . 1 8 4 \, \mathrm { R e } ^ { - 0 . 2 }$ for smooth tubes at these Reynolds numbers, which reproduces the $0 . 0 2 3 \, \mathrm { R e } ^ { 0 . 8 }$ to within a few per cent. The analogy says the tube trades heat and momentum at the same exchange rate, exactly as on the flat plate: any device that raises $f$ to trip the layer — wire coils, turbulators, roughness — raises $\mathrm { N u }$ in proportion, and the whole art of enhanced surfaces is doing it with less friction than the analogy prices in.**
 :::
 
 ::: definition Gnielinski: the accurate one {#def-gnielinski}
@@ -225,7 +225,7 @@ U _ { m } = { \frac { 0 . 4 0 } { 9 9 2 \times 2 . 0 1 1 \times 1 0 ^ { - 4 } } 
 $$
 **Turbulent and thermally long ($L / D = 6 2 5 \gg 6 0$), so fully developed correlations apply.** Gnielinski with $f = \left( 0 . 7 9 \ln 4 8 \, 7 0 0 - 1 . 6 4 \right ) ^ { - 2 } = 0 . 0 2 1 1$ :
 $$
-\mathrm { N u } = { \frac { ( 0 . 0 2 1 1 / 8 ) \times 4 7 { , } 7 0 0 \times 4 . 3 2 } { 1 + 1 2 . 7 \times ( 0 . 0 2 1 1 / 8 ) ^ { 1 / 2 } \times \left( 4 . 3 2 ^ { 2 / 3 } - 1 \right ) } } = { \frac { 4 8 2 } { 1 . 8 4 } } = 2 6 2 \qquad h = { \frac { 2 6 2 \times 0 . 6 3 1 } { 0 . 0 1 6 } } = 1 0 { , } 3 0 0 \ \mathrm { W / m ^ { 2 } K }
+\mathrm { N u } = { \frac { ( 0 . 0 2 1 1 / 8 ) \times 4 7 { , } 7 0 0 \times 4 . 3 2 } { 1 + 1 2 . 7 \times ( 0 . 0 2 1 1 / 8 ) ^ { 1 / 2 } \times \left( 4 . 3 2 ^ { 2 / 3 } - 1 \right ) } } = { \frac { 5 4 4 } { 2 . 0 8 } } = 2 6 2 \qquad h = { \frac { 2 6 2 \times 0 . 6 3 1 } { 0 . 0 1 6 } } = 1 0 { , } 3 0 0 \ \mathrm { W / m ^ { 2 } K }
 $$
 **(Dittus–Boelter would give $2 3 2$ and $9 1 7 0$ — $1 1 \ \ \%$ lower, inside both correlations' error bands, which is the whole argument between them in a sentence.)** Constant wall temperature means the exponential approach:
 $$
@@ -333,7 +333,7 @@ $$
 $$
 { \overline { { h } } } = { \frac { 6 . 9 5 \times 0 . 6 1 3 } { 0 . 0 1 0 } } = \mathbf { 4 2 6 \ \mathrm { W / m ^ { 2 } K } }
 $$
-**The fully developed value would be $3 . 6 6 \times 0 . 6 1 3 / 0 . 0 1 0 = 2 2 4$ — the entry region contributes nearly half again, and the Graetz group of $5 2$ (against the threshold of about $2 0$ for "fully developed") says the tube is thermally short.**
+**The fully developed value would be $3 . 6 6 \times 0 . 6 1 3 / 0 . 0 1 0 = 2 2 4$ — the entry region nearly doubles it, and the Graetz group of $5 2$ (against the threshold of about $2 0$ for "fully developed") says the tube is thermally short.**
 :::
 :::
 
@@ -347,7 +347,7 @@ $$
 $$
 \mathrm { N u } = 0 . 0 2 3 \times 6 8 \, 3 0 0 ^ { 0 . 8 } \times 2 . 9 8 ^ { 0 . 4 } = 0 . 0 2 3 \times 7 3 7 0 \times 1 . 5 4 8 = 2 6 2 \qquad h = { \frac { 2 6 2 \times 0 . 6 5 4 } { 0 . 0 1 2 } } = \mathbf { 1 4 \, 3 0 0 \ \mathrm { W / m ^ { 2 } K } }
 $$
-**Heated fluid, so $n = 0 . 4$ ; at $6 8 \, 3 0 0$ the correlation is comfortably in range, and the $2 5 \ \ \%$ scatter band means the honest answer is "$1 2 \, 0 0 0$ to $1 8 \, 0 0 0$ ."**
+**Heated fluid, so $n = 0 . 4$ ; at $6 8 \, 3 0 0$ the correlation is comfortably in range, and the $2 5 \ \ \%$ scatter band means the honest answer is "$1 1 \, 0 0 0$ to $1 8 \, 0 0 0$ ."**
 :::
 :::
 
@@ -432,7 +432,7 @@ $$
 \mathrm { R e } = { \frac { 9 9 3 \times 1 . 4 3 \times 0 . 0 1 6 } { 6 9 0 \times 1 0 ^ { - 6 } } } = 3 3 \, 0 0 0 \quad ( \text{turbulent, } 1 4 \times \text{ above transition} ) \qquad f = 0 . 0 2 3 1
 $$
 $$
-\mathrm { N u } = { \frac { ( 0 . 0 2 3 1 / 8 ) \times 3 2 \, 0 0 0 \times 4 . 5 5 } { 1 + 1 2 . 7 \times ( 0 . 0 2 3 1 / 8 ) ^ { 1 / 2 } \times \left( 4 . 5 5 ^ { 2 / 3 } - 1 \right) } } = { \frac { 5 2 7 } { 2 . 7 5 } } = 1 9 2 \qquad h = { \frac { 1 9 2 \times 0 . 6 3 4 } { 0 . 0 1 6 } } = 7 6 0 0 \ \mathrm { W / m ^ { 2 } K }
+\mathrm { N u } = { \frac { ( 0 . 0 2 3 1 / 8 ) \times 3 2 \, 0 0 0 \times 4 . 5 5 } { 1 + 1 2 . 7 \times ( 0 . 0 2 3 1 / 8 ) ^ { 1 / 2 } \times \left( 4 . 5 5 ^ { 2 / 3 } - 1 \right) } } = { \frac { 4 2 0 } { 2 . 1 9 } } = 1 9 2 \qquad h = { \frac { 1 9 2 \times 0 . 6 3 4 } { 0 . 0 1 6 } } = 7 6 0 0 \ \mathrm { W / m ^ { 2 } K }
 $$
 **Step 3 — the length.** Per tube, $\mathrm { N T U } = h \pi D L / ( { \dot { m } } _ { t } c _ { p } )$ :
 $$
