@@ -7,11 +7,26 @@
   "order": 30,
   "tagline": "Asymptotic analysis, arrays and linked lists, stacks and queues, hash tables, trees, search trees, heaps and graph representations",
   "summary": "Data structures organise information so that the operations a program needs are fast. This course introduces asymptotic analysis and then the essential structures — dynamic arrays and linked lists, stacks and queues, hash tables, binary search trees and their balanced variants, heaps and priority queues, and graph representations — with their costs and the trade-offs between them.",
-  "overview": [],
+  "overview": [
+    "A **data structure** is a way of organising information in memory so that the operations a program needs — look up a key, add an item, find the smallest, list the neighbours of a vertex — are fast. Choosing the right one often matters more than any other decision in a program: the difference between a hash table and a list, or between a balanced tree and an unbalanced one, can be the difference between a millisecond and an hour. This course studies the essential structures that every programmer uses and every later course in computer science builds on.",
+    "It begins with the language of cost, **asymptotic analysis**, in which each operation is described by how its running time grows with the input — $O(1)$, $O(\\log n)$, $\\Theta(n)$ — in the worst case, on average under a stated assumption, or amortised over a sequence. It then builds up from the two basic ways of storing data, contiguous **arrays** and linked **nodes**: dynamic arrays, linked lists, stacks, queues and deques; **hash tables**, which give expected constant-time lookup; **trees** and their traversals; **binary search trees** and the **balanced trees** (AVL, red–black, B-trees) that guarantee logarithmic height; **heaps** and priority queues; and finally the **representation of graphs**, on which the algorithms of the next course run.",
+    "Every structure is presented in the same way: the abstract interface it implements, a concrete representation, algorithms with proofs that they are correct, and an analysis of their cost — followed by small Python (and occasionally C) programs that you can run and modify. The hard part is not the code, which is short, but the reasoning: stating an invariant precisely, seeing why an amortised or expected bound holds and what it assumes, and recognising which structure fits a problem. Work through the traces by hand before running them, and do the exercises; most of them ask you to prove or implement something small."
+  ],
   "prerequisites": [
     "programming-1"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Analyse the worst-case, average-case and amortised cost of operations and express them with $O$, $\\Omega$ and $\\Theta$ notation.",
+    "Implement dynamic arrays, linked lists, stacks, queues and deques, and prove the amortised constant cost of resizing by doubling.",
+    "Apply stacks and queues to problems such as bracket matching, expression evaluation and breadth-first search.",
+    "Design and analyse hash tables with separate chaining and open addressing, stating the hashing assumptions behind each expected-time bound.",
+    "Traverse trees in preorder, inorder, postorder and level order, and use traversals to process hierarchies and expression trees.",
+    "Implement binary search tree search, insertion and deletion, prove them correct, and explain how insertion order affects height.",
+    "Explain how AVL trees, red–black trees and B-trees maintain logarithmic height, and prove their height bounds.",
+    "Implement binary heaps and heapsort, and prove that a heap can be built in linear time.",
+    "Choose between adjacency matrices and adjacency lists for a given graph and algorithm, and derive the cost of basic graph operations in each.",
+    "Select an appropriate data structure for a problem by comparing the costs of the operations it requires."
+  ],
   "chapters": [
     {
       "slug": "asymptotic-analysis",
@@ -87,8 +102,134 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1953,
+      "title": "Hashing and chaining at IBM",
+      "detail": "Hans Peter Luhn's internal IBM memorandum proposed placing records in buckets by a computed address, with overflow chains; open addressing with linear probing followed at IBM in 1954.",
+      "people": [
+        "Hans Peter Luhn"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "Linked lists in IPL",
+      "detail": "Allen Newell, Cliff Shaw and Herbert Simon introduced linked lists in the Information Processing Language for their Logic Theorist program.",
+      "people": [
+        "Allen Newell",
+        "Cliff Shaw",
+        "Herbert Simon"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "Binary search trees",
+      "detail": "Tree insertion and its average-case analysis were published independently by P. F. Windley and by A. D. Booth and A. J. T. Colin; Thomas Hibbard added deletion in 1962.",
+      "people": [
+        "P. F. Windley",
+        "A. D. Booth",
+        "A. J. T. Colin"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "AVL trees",
+      "detail": "Georgy Adelson-Velsky and Evgenii Landis published the first self-balancing binary search tree, guaranteeing logarithmic height.",
+      "people": [
+        "Georgy Adelson-Velsky",
+        "Evgenii Landis"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Heaps and heapsort",
+      "detail": "J. W. J. Williams introduced the binary heap and heapsort, and Robert Floyd showed how to build a heap in linear time.",
+      "people": [
+        "J. W. J. Williams",
+        "Robert Floyd"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "The Art of Computer Programming, volume 1",
+      "detail": "Donald Knuth's Fundamental Algorithms set out information structures — lists, stacks, queues, trees — and the analysis of algorithms in the form textbooks still follow.",
+      "people": [
+        "Donald Knuth"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "B-trees",
+      "detail": "Rudolf Bayer and Edward McCreight published B-trees in Acta Informatica, the structure behind database and file-system indexes; Bayer's symmetric binary B-trees of the same year became red–black trees in Guibas and Sedgewick's 1978 formulation.",
+      "people": [
+        "Rudolf Bayer",
+        "Edward McCreight"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Universal hashing",
+      "detail": "J. Lawrence Carter and Mark Wegman showed that choosing the hash function at random from a universal family gives expected constant-time operations for every set of keys.",
+      "people": [
+        "J. Lawrence Carter",
+        "Mark Wegman"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "Amortised analysis",
+      "detail": "Robert Tarjan's paper 'Amortized computational complexity' formalised the analysis of costs averaged over sequences of operations.",
+      "people": [
+        "Robert Tarjan"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "Skip lists",
+      "detail": "William Pugh introduced skip lists, a randomised alternative to balanced trees with expected logarithmic search time.",
+      "people": [
+        "William Pugh"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Algorithms",
+      "authors": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
+      "year": 2022,
+      "note": "Fourth edition. The standard reference: rigorous chapters on hash tables, binary search trees, red–black trees, B-trees, heaps and amortised analysis, with the proofs this course cites."
+    },
+    {
+      "title": "Algorithms",
+      "authors": "Robert Sedgewick, Kevin Wayne",
+      "year": 2011,
+      "note": "Fourth edition. Clear implementations (in Java) of every structure in this course, with left-leaning red–black trees, many experiments and an accompanying website."
+    },
+    {
+      "title": "The Art of Computer Programming, Volumes 1 and 3",
+      "authors": "Donald E. Knuth",
+      "year": 1997,
+      "note": "Third edition of volume 1 (Fundamental Algorithms, 1997) and second edition of volume 3 (Sorting and Searching, 1998). The deepest treatment of lists, trees, hashing and their exact analysis, including linear probing."
+    },
+    {
+      "title": "Data Structures and Network Algorithms",
+      "authors": "Robert E. Tarjan",
+      "year": 1983,
+      "note": "A short, dense monograph on heaps, search trees, union–find and their amortised analysis, connecting data structures to graph algorithms."
+    },
+    {
+      "title": "Algorithm Design",
+      "authors": "Jon Kleinberg, Éva Tardos",
+      "year": 2006,
+      "note": "Excellent on graph representations, priority queues and how data structures serve algorithm design; a good bridge to the Algorithms course."
+    },
+    {
+      "title": "Open Data Structures",
+      "authors": "Pat Morin",
+      "year": 2013,
+      "note": "A free, openly licensed textbook (editions in Python, Java and C++) covering array-based lists, hashing, binary trees, heaps and B-trees with complete code and proofs."
+    }
+  ],
   "next": [
     "algorithms",
     "databases"
