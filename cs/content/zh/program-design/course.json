@@ -1,0 +1,135 @@
+{
+  "title": "程序设计",
+  "full_title": "程序设计：抽象、对象与函数",
+  "tagline": "抽象与规格说明、抽象数据类型、类与对象、继承、高阶函数、迭代器、类型与设计模式",
+  "summary": "当程序长过一页，设计就比语法更重要。本课程讲授如何组织程序：抽象与规格说明、抽象数据类型、类与对象、继承与多态、用高阶函数与不可变数据进行函数式编程、迭代器、类型与接口，以及模块与设计模式。",
+  "overview": [
+    "当程序长过一页，难的就不再是把每一行写对，而是把整体组织好，让人们能理解它、检查它、修改它。本课程讲的就是这种组织。它的中心思想是抽象：程序的每一部分——一个函数、一个数据类型、一个类、一个模块——都通过一段关于它做什么的简短而精确的描述来使用，以至于它的实现可以被单独地阅读、验证和替换。课程里其余的一切，都是把这样的边界画好、并跨越它们进行推理的办法。",
+    "各章用 Python 把这一思想逐层搭建起来。第 1 章为函数书写规格说明、比较规格说明，并用霍尔逻辑对照规格说明证明代码正确；第 2 章规格说明整个数据类型，使用表示不变式与抽象函数；第 3、4 章把它们实现为类，涉及继承、动态分派，以及决定一个子类何时正确的替换原则。第 5 到 7 章转向函数式的一面：函数作为值，map、filter 与折叠及其代数定律，闭包与装饰器，纯函数与持久化数据以及借助替换和结构归纳的推理，还有惰性的迭代器与生成器。第 8 章加入静态类型、泛型、协议与协变、逆变和不变，第 9 章按信息隐藏把程序划分为模块，并把一路上遇到的设计模式收集起来。",
+    "这门学科之所以难，是因为设计决策的收益或失败都在以后：边界画错了地方，在程序必须改变之前分文不花。学它的办法是尽早让后果可见——先写规格说明和表示不变式，再写代码；对每个子类都问一句：基类的每个客户是否仍然正确；对每个模块都说出它隐藏的是哪个决策。课程里的每个程序都照展示的样子运行，类型检查器的输出是真实的，习题把对代码行为的小段预测与证明、小型设计题混合在一起。"
+  ],
+  "outcomes": [
+    "为函数书写 requires、modifies 与 effects 子句，判断一个规格说明是否精化另一个，并用霍尔三元组与循环不变式证明简单代码的正确性。",
+    "设计带有显式表示不变式与抽象函数的抽象数据类型，并证明每个运算保持不变式、实现其规格说明。",
+    "用带构造方法、property 与特殊方法的 Python 类实现值类型与实体类型，遵守相等与哈希的约定，避免暴露表示。",
+    "正确使用继承与动态分派，计算方法解析顺序，并用利斯科夫替换原则判断一个子类何时是行为子类型、何时组合优于继承。",
+    "编写并推理高阶函数、闭包与装饰器，并证明诸如 map 融合以及折叠在幺半群上一致之类的代数定律。",
+    "用纯函数与不可变的持久化数据编程，并用结构归纳法证明递归函数的性质。",
+    "实现迭代协议与生成器，构造代价与内存用量可以预测的惰性流水线。",
+    "为 Python 程序添加类型、泛型与协议标注，解读类型检查器的输出，并解释协变、逆变与不变。",
+    "按信息隐藏把程序分解为模块，分析耦合、内聚与依赖环，并在策略、观察者与适配器模式能解决真实问题的地方运用它们。"
+  ],
+  "chapters": [
+    {
+      "title": "抽象与规格说明",
+      "summary": "过程抽象、前置条件与后置条件，以及契约式编程。"
+    },
+    {
+      "title": "抽象数据类型",
+      "summary": "把接口与表示分开，表示不变式与抽象函数。"
+    },
+    {
+      "title": "类与对象",
+      "summary": "类、属性与方法，构造方法，封装，以及对象的标识。"
+    },
+    {
+      "title": "继承与多态",
+      "summary": "子类与覆盖，动态分派，替换原则，以及组合优于继承。"
+    },
+    {
+      "title": "高阶函数",
+      "summary": "函数作为值，map、filter 与 reduce，λ表达式与闭包。"
+    },
+    {
+      "title": "不可变数据与函数式风格",
+      "summary": "纯函数，不可变与持久化数据，在结构上递归，以及用替换进行推理。"
+    },
+    {
+      "title": "迭代器与生成器",
+      "summary": "迭代协议，生成器与惰性序列，以及变换的流水线。"
+    },
+    {
+      "title": "类型、接口与泛型",
+      "summary": "静态类型与动态类型，类型标注，接口与泛型容器。"
+    },
+    {
+      "title": "模块与设计模式",
+      "summary": "模块与包，耦合与内聚，以及迭代器、观察者、策略等常用模式。"
+    }
+  ],
+  "history": [
+    {
+      "title": "Simula 67：类与对象",
+      "detail": "奥勒-约翰·达尔（Ole-Johan Dahl）与克里斯滕·尼加德（Kristen Nygaard）的 Simula 67 引入了类、对象、子类与虚过程（动态分派），其设计目的是编写模拟程序。",
+      "people": ["Ole-Johan Dahl", "Kristen Nygaard"]
+    },
+    {
+      "title": "《GOTO 语句被认为有害》",
+      "detail": "迪杰斯特拉（Dijkstra）致《Communications of the ACM》的信主张，不加限制的跳转使程序难以推理，助推了结构化程序设计的建立。",
+      "people": ["Edsger W. Dijkstra"]
+    },
+    {
+      "title": "霍尔的程序公理化基础",
+      "detail": "霍尔（Hoare）的论文《An axiomatic basis for computer programming》提出了三元式 {P} S {Q} 以及赋值、顺序、条件与循环的证明规则。",
+      "people": ["C. A. R. Hoare"]
+    },
+    {
+      "title": "信息隐藏",
+      "detail": "帕纳斯（Parnas）的《On the criteria to be used in decomposing systems into modules》以 KWIC 索引为例提出：每个模块都应当隐藏一个可能改变的设计决策。",
+      "people": ["David L. Parnas"]
+    },
+    {
+      "title": "抽象数据类型",
+      "detail": "利斯科夫（Liskov）与齐尔斯（Zilles）的《Programming with abstract data types》用操作来定义类型，并提出了语言层面的支持，后来在语言 CLU 中实现。",
+      "people": ["Barbara Liskov", "Stephen Zilles"]
+    },
+    {
+      "title": "Smalltalk-80 发表",
+      "detail": "戈德堡（Goldberg）与罗布森（Robson）的著作描述了 Smalltalk-80，这门在施乐 PARC 发展起来的语言中一切皆对象，计算就是消息传递。",
+      "people": ["Alan Kay", "Adele Goldberg", "Daniel Ingalls"]
+    },
+    {
+      "title": "《计算机程序的构造和解释》出版",
+      "detail": "阿贝尔森（Abelson）与苏斯曼（Sussman）的这本教材出自 MIT 的入门课程，通过高阶过程、数据抽象以及求值的替换模型与环境模型讲授抽象。",
+      "people": ["Harold Abelson", "Gerald Jay Sussman", "Julie Sussman"]
+    },
+    {
+      "title": "设计模式与行为子类型",
+      "detail": "伽玛（Gamma）、赫尔姆（Helm）、约翰逊（Johnson）与弗利西德斯（Vlissides）编目了 23 个面向对象设计模式；同年，利斯科夫（Liskov）与周以真（Wing）的《A behavioral notion of subtyping》给出了精确的替换原则。",
+      "people": ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides", "Barbara Liskov", "Jeannette Wing"]
+    },
+    {
+      "title": "《How to Design Programs》出版",
+      "detail": "费莱森（Felleisen）、芬德勒（Findler）、弗拉特（Flatt）与克里希纳穆尔蒂（Krishnamurthi）的教材提出了设计配方，从数据定义推导函数的结构。",
+      "people": ["Matthias Felleisen", "Robert Bruce Findler", "Matthew Flatt", "Shriram Krishnamurthi"]
+    },
+    {
+      "title": "Python 的类型标注",
+      "detail": "吉多·范罗苏姆（Guido van Rossum）与 Jukka Lehtosalo、Łukasz Langa 的 PEP 484 标准化了 Python 的类型标注，用于渐进式的静态检查，随 Python 3.5 于 2015 年发布。",
+      "people": ["Guido van Rossum", "Jukka Lehtosalo", "Łukasz Langa"]
+    }
+  ],
+  "references": [
+    {
+      "note": "第二版。关于用过程与数据进行抽象的经典：高阶函数、替换模型与环境模型、解释器；使用 Scheme，可免费在线获取。"
+    },
+    {
+      "note": "第二版。设计配方——从数据定义到模板、测试与代码——在 Racket 的教学语言中系统讲授；可免费在线获取。"
+    },
+    {
+      "note": "requires/modifies/effects 规格说明、表示不变式、抽象函数与类型层次，由这些理念的创立者亲自讲解；示例用 Java，但方法独立于语言。"
+    },
+    {
+      "note": "最初的 23 个模式目录，附意图、结构与权衡；示例用 C++ 与 Smalltalk。"
+    },
+    {
+      "note": "第二版。围绕 Eiffel 语言构建的对契约式设计、继承与开闭原则的透彻阐述。"
+    },
+    {
+      "note": "第二版。Python 的数据模型、特殊方法、迭代器、生成器、闭包、装饰器、协议与类型标注在实践中如何运作；本课程 Python 部分的最佳伴侣。"
+    },
+    {
+      "note": "第二版。关于管理复杂性的短小著作：接口简单的深模块、信息隐藏，以及设计决策泄漏的代价。"
+    }
+  ]
+}
