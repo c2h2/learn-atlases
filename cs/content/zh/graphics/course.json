@@ -1,0 +1,160 @@
+{
+  "title": "计算机图形学",
+  "full_title": "计算机图形学",
+  "tagline": "图像与颜色、变换、观察与投影、光栅化、着色、纹理映射、GPU 管线、光线追踪、曲线与动画",
+  "summary": "计算机图形学把场景的几何描述变成图像。本课程讲授光栅图像与颜色、齐次坐标下的变换、摄像机与投影、光栅化与可见性、光照、着色与纹理映射、可编程 GPU 管线、光线追踪与全局光照，以及曲线、曲面与动画。",
+  "overview": [
+    "计算机图形学把场景的描述——形状、材质、灯光与摄像机——变成图像，而它工作在两个截然不同的场合：实时渲染必须每隔几毫秒就在 GPU 上产出一幅新图像，服务于游戏、用户界面、可视化与虚拟现实；离线渲染则可以为一个镜头花上几个小时，把电影画面的光算到物理精度。两者依赖同样的基础：用齐次坐标下的线性代数放置并投影几何，用采样理论把连续图像变成不混叠的像素，用辐射度学与反射模型计算到达眼睛的光有多少，用数值方法求描述光传输的积分。",
+    "本课程沿着光的来路从屏幕往回走。它先从像素与颜色值的含义讲起——点采样、奈奎斯特极限、CIE XYZ、sRGB 传递函数与合成——然后建立观察管线：仿射变换与射影变换、摄像机、透视矩阵及其产生的非线性深度，以及齐次坐标下的裁剪。用边函数、重心坐标与透视正确的插值、左上规则和深度缓冲进行的光栅化把三角形变成片元；朗伯、Blinn-Phong 与微表面 BRDF 为片元着色；mipmap 与各向异性滤波为片元贴上纹理；GPU 一章则展示硬件如何用着色器、线程束与四像素块把这一切并行地跑起来，并讲阴影映射与延迟着色。光线追踪一章随后用 Möller–Trumbore 求交、包围体层次结构与无偏的蒙特卡洛路径追踪求解完整的渲染方程；最后一章讲贝塞尔曲线、B 样条、细分曲面、蒙皮与模拟。",
+    "每个算法都实现为简短、零依赖的 Python 程序——一个图像写出器、一个带深度缓冲的光栅化器、一个软件实现的 GPU 管线、一个 Whitted 光线追踪器、一个对照精确答案检验的路径追踪器、de Casteljau 与 Chaikin 细分——并展示它们的真实输出，你可以改动它们看看会发生什么。数学在该证明的地方都给出了证明（透视正确的插值、左上规则、深度精度、BRDF 的归一化、路径追踪的无偏性、Chaikin 细分的极限曲线），而其依赖的矩阵与概率来自 Maths Atlas。图形学之难，难在错误都看得见：半像素的偏移、漏掉的伽马解码、用错矩阵变换的法向量、有偏的估计量，全都会在屏幕上现形。出路在于始终写明单位与坐标系，并在答案已知的算例上检验每个公式。"
+  ],
+  "outcomes": [
+    "把图像解释为点采样，由奈奎斯特极限预测混叠，并用超采样与预滤波加以防止。",
+    "在线性 RGB、CIE XYZ 与 sRGB 编码值之间转换，由原色与白点导出 RGB 到 XYZ 的矩阵，并用 over 算子合成预乘图像。",
+    "在齐次坐标下复合、求逆并施加仿射变换与射影变换，包括用矩阵与四元数表示旋转，以及用逆转置矩阵变换法向量。",
+    "推导 look-at、正交投影与透视矩阵，分析存储深度的非线性与精度，并解释为什么裁剪要先于透视除法。",
+    "用边函数、左上规则、透视正确的重心坐标插值、萨瑟兰–霍奇曼裁剪和深度缓冲实现三角形光栅化，并证明其正确性。",
+    "用朗伯、归一化的 Blinn-Phong 与 Cook–Torrance 微表面 BRDF 计算反射辐射亮度，并数值检验它们的能量守恒。",
+    "用双线性插值、mipmap 与面积和表滤波纹理，由屏幕空间导数选择细节层次，并使用法线贴图与环境贴图。",
+    "描述可编程 GPU 管线及其执行模型，估计分支发散、小三角形与带宽的代价，并应用阴影映射与延迟着色。",
+    "实现光线与球、Möller–Trumbore 光线与三角形的求交以及包围体层次结构，并用带重要性采样与俄罗斯轮盘赌的无偏蒙特卡洛路径追踪求解渲染方程。",
+    "构造并求值贝塞尔曲线、B 样条与细分曲线和曲面，并用关键帧插值、线性混合蒙皮与稳定的积分器制作动画。"
+  ],
+  "chapters": [
+    {
+      "title": "光栅图像与颜色",
+      "summary": "像素与采样、颜色空间与伽马，以及混叠。"
+    },
+    {
+      "title": "变换",
+      "summary": "二维与三维变换、齐次坐标与变换的复合。"
+    },
+    {
+      "title": "观察与投影",
+      "summary": "摄像机、正交投影与透视投影，以及观察管线。"
+    },
+    {
+      "title": "光栅化与可见性",
+      "summary": "直线与三角形的绘制、重心坐标插值、裁剪与深度缓冲。"
+    },
+    {
+      "title": "光照与着色",
+      "summary": "光与表面如何相互作用、Phong 与基于物理的模型，以及平滑着色。"
+    },
+    {
+      "title": "纹理映射",
+      "summary": "纹理坐标、滤波与 mipmap，以及凹凸贴图与环境贴图。"
+    },
+    {
+      "title": "GPU 管线与着色器",
+      "summary": "可编程管线、顶点着色器与片元着色器，以及实时渲染技术。"
+    },
+    {
+      "title": "光线追踪与全局光照",
+      "summary": "光线与物体的求交、加速结构、渲染方程与路径追踪。"
+    },
+    {
+      "title": "曲线、曲面与动画",
+      "summary": "贝塞尔曲线与样条、细分曲面、关键帧与骨骼动画。"
+    }
+  ],
+  "history": [
+    {
+      "title": "Sketchpad",
+      "detail": "萨瑟兰（Sutherland）在 MIT 的博士论文系统让用户用光笔在显示器上作图，带有约束与实例化的母图——交互式计算机图形学的开端。同年罗伯茨（Roberts）的博士论文用齐次坐标与透视矩阵渲染多面体。",
+      "people": [
+        "Ivan Sutherland",
+        "Lawrence Roberts"
+      ]
+    },
+    {
+      "title": "布雷森汉姆直线算法",
+      "detail": "布雷森汉姆（Bresenham）的 \"Algorithm for computer control of a digital plotter\"（IBM Systems Journal）只用整数加法画直线，是增量式光栅化算法的典范。",
+      "people": [
+        "Jack Bresenham"
+      ]
+    },
+    {
+      "title": "古劳德着色",
+      "detail": "古劳德（Gouraud）的 \"Continuous shading of curved surfaces\" 在多边形上插值顶点亮度，使带棱面的网格看起来光滑。",
+      "people": [
+        "Henri Gouraud"
+      ]
+    },
+    {
+      "title": "深度缓冲与纹理映射",
+      "detail": "卡特穆尔（Catmull）在犹他大学的博士论文《A Subdivision Algorithm for Computer Display of Curved Surfaces》引入了 z 缓冲（Wolfgang Straßer 独立提出）以及向曲面片贴纹理。",
+      "people": [
+        "Edwin Catmull",
+        "Wolfgang Straßer"
+      ]
+    },
+    {
+      "title": "Phong 着色与反射",
+      "detail": "Bui Tuong Phong 的 \"Illumination for computer generated pictures\"（Communications of the ACM）提出了逐像素的法向量插值与以他命名的镜面反射模型；Blinn 的半程向量版本于 1977 年发表。",
+      "people": [
+        "Bui Tuong Phong",
+        "James Blinn"
+      ]
+    },
+    {
+      "title": "递归光线追踪",
+      "detail": "Turner Whitted 的 \"An improved illumination model for shaded display\" 递归地追踪反射、折射与阴影光线，产生了最早带有全局效果的玻璃与镜子的图像。",
+      "people": [
+        "Turner Whitted"
+      ]
+    },
+    {
+      "title": "库克-托兰斯微表面模型",
+      "detail": "Robert Cook 与 Kenneth Torrance 的 \"A reflectance model for computer graphics\"（ACM Transactions on Graphics）把微面分布、菲涅耳反射率与微面互遮挡合在一起，构成了支撑现代材质模型的基于物理的 BRDF。",
+      "people": [
+        "Robert Cook",
+        "Kenneth Torrance"
+      ]
+    },
+    {
+      "title": "渲染方程",
+      "detail": "James Kajiya 的 \"The rendering equation\"（SIGGRAPH）把各种渲染算法统一为同一个积分方程的近似，并引入蒙特卡洛路径追踪来求解它。",
+      "people": [
+        "James Kajiya"
+      ]
+    },
+    {
+      "title": "OpenGL 1.0",
+      "detail": "Silicon Graphics 的 IRIS GL 成为开放的 OpenGL 标准，确立了此后三十年硬件图形管线沿用的约定。",
+      "people": [
+        "Kurt Akeley",
+        "Mark Segal"
+      ]
+    },
+    {
+      "title": "可编程 GPU",
+      "detail": "DirectX 8（2000）与 NVIDIA 的 GeForce 3（2001）使顶点阶段可编程，其设计见 Lindholm、Kilgard 与 Moreton 的 \"A user-programmable vertex engine\"（SIGGRAPH 2001）；可编程片元着色器随之到来，统一着色器核心在 2005–2006 年出现。",
+      "people": [
+        "Erik Lindholm",
+        "Mark Kilgard",
+        "Henry Moreton"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "note": "第 5 版。标准的本科教科书：采样、变换、观察、光栅化、着色、纹理映射、光线追踪、曲线与动画，深度与本课程相当。"
+    },
+    {
+      "note": "第 4 版（PBRT），免费在线。一个完整的、文学式编程写成的路径追踪器：辐射度学、BRDF、采样与蒙特卡洛积分、包围体层次结构与光传输，讲解深入。"
+    },
+    {
+      "note": "第 4 版。基于 GPU 的渲染的参考书：管线、基于物理的着色、纹理、阴影、延迟与分簇着色、抗锯齿与加速。"
+    },
+    {
+      "note": "第 3 版。对整个领域宽广而论证细密的处理，之长在于光传输、采样、思想的历史以及设计选择背后的理由。"
+    },
+    {
+      "note": "第 5 版。贝塞尔曲线、B 样条、NURBS 与曲面，证明完整，对应最后一章的内容。"
+    },
+    {
+      "note": "对坐标系、旋转与四元数、投影、插值、采样与样条简洁而数学严谨的讲述。"
+    }
+  ]
+}
