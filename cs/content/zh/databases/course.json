@@ -1,0 +1,133 @@
+{
+  "title": "数据库",
+  "full_title": "数据库系统",
+  "tagline": "关系模型、SQL、概念设计、规范化、存储与索引、查询处理与优化、事务与恢复",
+  "summary": "数据库保存组织所依赖的数据，并对关于这些数据的问题作出高效而可靠的回答。本课程先讲关系模型与关系代数、SQL、概念设计与规范化，然后深入数据库引擎的内部：存储与索引、查询处理与优化、事务与并发控制，以及崩溃恢复。",
+  "overview": [
+    "**数据库系统**保存组织所依赖的数据——学生与成绩、账户与支付、订单与库存——并在众多程序同时读写、机器又可能出故障的情形下，快速而正确地回答关于这些数据的问题。自 20 世纪 80 年代以来一直占主导地位的关系方法，把数据*是什么*与数据*怎么存*分开：数据被建模为表，查询用声明式语言 SQL 书写，而由系统决定如何求值。本课程两面兼顾：如何对数据建模、施加约束并提出查询，以及数据库引擎内部如何工作，才能使这些查询又快、这些更新又安全。",
+    "前半部分讲逻辑层。[[databases/relational-model]] 定义关系、码与关系代数，并证明这门代数能表达什么、不能表达什么；[[databases/sql]] 讲授 SQL 及其包语义、针对空值的三值逻辑、聚集、嵌套查询与递归查询，每条查询都在 SQLite 中运行；[[databases/conceptual-design]] 把需求变成实体-联系设计与表；[[databases/normalisation]] 使用函数依赖、Armstrong 公理以及 BCNF 与 3NF 分解算法，并给出无损连接与依赖保持性的证明。后半部分打开引擎：页、缓冲管理以及 B+树与哈希索引（[[databases/storage-indexing]]），排序与连接算法及其 I/O 代价（[[databases/query-processing]]），基于基数估计的代价优化与 System R 的动态规划（[[databases/query-optimisation]]），可串行化、两阶段锁、隔离级别与快照隔离（[[databases/transactions]]），以及预写式日志与 ARIES 恢复算法（[[databases/recovery]]）。",
+    "这门学科的难处在于，语义上的细微差别会带来巨大的后果：在含有空值的列上使用 `NOT IN`、一次有损分解、用非聚集索引去做大范围查询、一个允许写偏斜的隔离级别。出路在于精确——先说明一条查询、一个约束或一个调度意味着什么，再在小实例上手工核对，并把它跑出来验证。代价计算要用真实数字做，算法（闭包、BCNF 分解、外部排序、ARIES）要一步步跟踪，SQL 与 Python 清单要亲手运行。先修课程是 [[data-structures]]，尤其是平衡搜索树与哈希表，再加上 [Maths Atlas](/learn/maths/) 中的集合、关系与逻辑内容。"
+  ],
+  "outcomes": [
+    "定义关系、码与外码，用关系代数书写查询，并证明代数等价律以及表达力的局限，例如不含差运算的查询的单调性。",
+    "写出含连接、外连接、聚集、嵌套查询与递归查询的正确 SQL，并在包语义与三值逻辑下解释查询结果，包括空值的种种陷阱。",
+    "从需求出发设计实体-联系模型，选定基数与参与约束，并将其翻译成带码与引用约束的关系模式。",
+    "计算属性闭包、候选码与最小覆盖，判定范式，并把模式分解成 BCNF 或 3NF，证明无损连接性与依赖保持性。",
+    "解释记录与页的布局及缓冲替换策略，计算 B+树与哈希索引的高度、规模与 I/O 代价，包括索引何时反而不如扫描。",
+    "分析外部排序以及嵌套循环连接、索引连接、排序-合并连接与哈希连接的 I/O 代价，并在给定的数据规模与内存下选择合适的算法。",
+    "运用等价规则与基数估计比较查询计划，并用 System R 式的动态规划确定连接顺序。",
+    "用优先图检验调度的冲突可串行化，证明两阶段锁保证可串行化，并处理死锁与幻象。",
+    "区分 SQL 的隔离级别与真实系统实际提供的保证，解释快照隔离、它的写偏斜异常以及可串行化的快照隔离。",
+    "解释预写式日志与检查点，并跟踪 ARIES 的分析、重做与撤销三个趟次，包括补偿日志记录与反复崩溃。"
+  ],
+  "chapters": [
+    {
+      "title": "关系模型",
+      "summary": "关系、码与完整性约束，以及关系代数。"
+    },
+    {
+      "title": "SQL",
+      "summary": "查询与连接、聚集与分组、嵌套查询、空值与视图。"
+    },
+    {
+      "title": "概念设计",
+      "summary": "实体-联系建模，以及把设计翻译成关系模式。"
+    },
+    {
+      "title": "函数依赖与规范化",
+      "summary": "函数依赖与异常，Boyce-Codd 范式与第三范式，以及无损分解。"
+    },
+    {
+      "title": "存储与索引",
+      "summary": "页与记录、缓冲管理，以及 B+树与哈希索引。"
+    },
+    {
+      "title": "查询处理",
+      "summary": "选择、排序与连接算法及其代价。"
+    },
+    {
+      "title": "查询优化",
+      "summary": "等价规则、基数估计与基于代价的查询计划选择。"
+    },
+    {
+      "title": "事务与并发控制",
+      "summary": "ACID 特性、可串行化、两阶段锁、隔离级别与多版本并发控制。"
+    },
+    {
+      "title": "崩溃恢复",
+      "summary": "日志、预写式日志与检查点，以及 ARIES 恢复算法。"
+    }
+  ],
+  "history": [
+    {
+      "title": "关系模型",
+      "detail": "埃德加·F. 科德（Codd）发表在 Communications of the ACM 上的论文《A relational model of data for large shared data banks》提出把数据存成关系，并以与物理布局无关的方式对其查询。",
+      "people": ["Edgar F. Codd"]
+    },
+    {
+      "title": "B树",
+      "detail": "鲁道夫·拜耳（Bayer）与爱德华·麦克雷特（McCreight）在 Acta Informatica 上发表了《Organization and maintenance of large ordered indexes》，提出了这种平衡多路树；它以 B+树的形式成为数据库索引的标准。",
+      "people": ["Rudolf Bayer", "Edward McCreight"]
+    },
+    {
+      "title": "SEQUEL",
+      "detail": "唐纳德·钱伯林（Chamberlin）与雷蒙德·博伊斯（Boyce）描述了 SEQUEL——IBM System R 的结构化英语查询语言，它就是后来的 SQL。",
+      "people": ["Donald D. Chamberlin", "Raymond F. Boyce"]
+    },
+    {
+      "title": "可串行化与两阶段锁",
+      "detail": "卡帕利·埃斯瓦兰（Eswaran）、吉姆·格雷（Gray）、雷蒙德·洛里（Lorie）与欧文·特雷格（Traiger）的论文《The notions of consistency and predicate locks in a database system》定义了可串行化，证明两阶段锁能保证它，并指出了幻象问题。",
+      "people": ["Kapali P. Eswaran", "Jim Gray", "Raymond A. Lorie", "Irving L. Traiger"]
+    },
+    {
+      "title": "实体-联系模型",
+      "detail": "陈品山（Chen）发表在 ACM Transactions on Database Systems 上的论文《The entity-relationship model — toward a unified view of data》提出了 ER 建模及其图记法。",
+      "people": ["Peter Pin-Shan Chen"]
+    },
+    {
+      "title": "基于代价的查询优化",
+      "detail": "帕特里夏·塞林格（Selinger）等人的论文《Access path selection in a relational database management system》描述了 System R 的优化器：统计信息、选择率估计，以及对连接顺序的动态规划。",
+      "people": ["Patricia G. Selinger", "Morton M. Astrahan", "Donald D. Chamberlin", "Raymond A. Lorie", "Thomas G. Price"]
+    },
+    {
+      "title": "SQL 标准",
+      "detail": "ANSI 发布了第一个 SQL 标准（ISO 于 1987 年采纳）；后续修订加入了显式连接（SQL-92）、递归查询（SQL:1999）与窗口函数（SQL:2003）。",
+      "people": []
+    },
+    {
+      "title": "ARIES",
+      "detail": "C. 莫汉（Mohan）、唐·哈德勒（Haderle）、布鲁斯·林赛（Lindsay）、哈米德·皮拉赫什（Pirahesh）与彼得·施瓦茨（Schwarz）在 ACM Transactions on Database Systems 上发表了 ARIES 恢复方法：预写式日志、重演历史与补偿日志记录。",
+      "people": ["C. Mohan", "Don Haderle", "Bruce Lindsay", "Hamid Pirahesh", "Peter Schwarz"]
+    },
+    {
+      "title": "对 SQL 隔离级别的批判",
+      "detail": "哈尔·贝伦森（Berenson）、菲尔·伯恩斯坦（Bernstein）、吉姆·格雷（Gray）、吉姆·梅尔顿（Melton）、伊丽莎白·奥尼尔（O'Neil）与帕特里克·奥尼尔（O'Neil）指出 ANSI 的隔离级别存在歧义，并定义了快照隔离及其写偏斜异常。",
+      "people": ["Hal Berenson", "Philip A. Bernstein", "Jim Gray", "Jim Melton", "Elizabeth O'Neil", "Patrick O'Neil"]
+    },
+    {
+      "title": "可串行化的快照隔离",
+      "detail": "迈克尔·凯希尔（Cahill）、乌韦·勒姆（Röhm）与艾伦·费凯特（Fekete）展示了如何在运行期检测危险的读-写依赖，从而使快照隔离达到可串行化；PostgreSQL 在 9.1 版（2011 年）采用了该方法。",
+      "people": ["Michael J. Cahill", "Uwe Röhm", "Alan D. Fekete"]
+    }
+  ],
+  "references": [
+    {
+      "note": "第七版。使用最广泛的综合教材：关系模型、SQL、ER 设计与规范化、存储、索引、查询处理与优化、事务与恢复，并以一个贯穿全书的大学示例展开。"
+    },
+    {
+      "note": "第三版。对引擎的讲述尤为出色：I/O 代价模型、外部排序、连接算法、B+树与可扩展哈希，以及讲解清晰的 ARIES 一章。"
+    },
+    {
+      "note": "第二版。对设计理论（函数依赖与多值依赖、追逐法）、关系代数与查询编译，以及日志、并发控制与恢复的讲述都很严格。"
+    },
+    {
+      "note": "关于事务的经典专著：锁、日志、恢复以及事务处理系统的工程实践，出自两位缔造者之手。"
+    },
+    {
+      "note": "数据库在现代系统中如何被使用与构建：存储引擎（B树与 LSM 树）、复制、分区、隔离级别与写偏斜等异常，以及分布式一致性。"
+    },
+    {
+      "note": "关系模型的理论：代数与微积分、表达力、递归与 Datalog，以及依赖理论；面向想要完整证明的读者。"
+    }
+  ]
+}
