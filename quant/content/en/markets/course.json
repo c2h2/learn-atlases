@@ -1,0 +1,143 @@
+{
+  "slug": "markets",
+  "title": "Markets and Data",
+  "full_title": "Markets, Instruments and Data",
+  "area": "markets",
+  "level": 1,
+  "order": 10,
+  "tagline": "What a systematic rule is allowed to know, and the prices, instruments and bars it is computed from",
+  "summary": "Systematic trading research starts from a rule that maps information available at a time t to a position after t. This course fixes the objects that rule is made of: who trades, cash equities and ETFs, spot FX and futures, bars and closes, corporate actions, universes, continuous contracts, and how to read a published results page without treating it as a forecast.",
+  "overview": [
+    "A systematic strategy is a function. It takes data that existed at a decision time and returns a target position, a set of weights, or a list of orders. Everything else in this atlas — trend rules, volatility targets, stop orders, walk-forward folds — is a choice about that function and about the experiment used to criticise it. This course fixes the objects the function is allowed to see.",
+    "The first chapters separate the economic question (who is on the other side, and what a price is) from the data question (what a daily bar keeps and what it throws away). Equities, exchange-traded funds, spot foreign exchange and futures do not share a calendar, a quotation convention or a notion of a continuous price. A rule that ignores a split, a roll or a delisting is not testing the idea it claims to test.",
+    "The last chapter reads a results dashboard the way a referee reads a table: total return, compound growth, a Sharpe ratio, a drawdown, a win rate and a profit factor, each with the question it does not answer. The worked cases are the public examples collected at quants.md by QuantJourney. Their numbers are cited as that project's published backtests. They are not recommendations, and this atlas has not re-run them.",
+    "No chapter tells you what to buy or sell. The point of the course is to make the later courses precise: a signal is not a weight, a weight is not an order, and an order is not a fill."
+  ],
+  "prerequisites": [],
+  "outcomes": [
+    "State a systematic strategy as a function from information available at t to a decision that can only affect results after t.",
+    "Distinguish cash equities, exchange-traded funds, spot FX and futures, including how each is quoted and what a continuous series has to invent.",
+    "Explain what an OHLC bar keeps and discards, and why a close-to-close return is a modelling choice.",
+    "Adjust a price series for a split and a dividend, and say what a total-return series is for.",
+    "Describe survivorship, point-in-time membership and a futures roll as data problems, not as afterthoughts.",
+    "Read a published performance summary — return, CAGR, Sharpe, drawdown, win rate, profit factor — and name the question each number leaves open."
+  ],
+  "chapters": [
+    {
+      "slug": "systematic-question",
+      "title": "The systematic question",
+      "summary": "A rule as a function of information available at a decision time, and the three research families — weights, orders and walk-forward — used by the open library.",
+      "requires": []
+    },
+    {
+      "slug": "instruments",
+      "title": "Instruments",
+      "summary": "Cash equities, exchange-traded funds, spot FX and futures: what is traded, how it is quoted, and what a position means.",
+      "requires": [
+        "markets/systematic-question"
+      ]
+    },
+    {
+      "slug": "prices-and-bars",
+      "title": "Prices and bars",
+      "summary": "Ticks, OHLC bars, the close, and the difference between a price path and the return a rule actually uses.",
+      "requires": [
+        "markets/instruments"
+      ]
+    },
+    {
+      "slug": "adjustment-universes-and-rolls",
+      "title": "Adjustments, universes and rolls",
+      "summary": "Splits and dividends, point-in-time membership, survivorship, and the construction of a continuous futures series.",
+      "requires": [
+        "markets/prices-and-bars"
+      ]
+    },
+    {
+      "slug": "reading-a-dashboard",
+      "title": "Reading a results dashboard",
+      "summary": "How to read total return, CAGR, Sharpe, drawdown, win rate and profit factor on a published page, using the quants.md library as the case.",
+      "requires": [
+        "markets/adjustment-universes-and-rolls"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1602,
+      "title": "Shares of the Dutch East India Company",
+      "detail": "The Vereenigde Oostindische Compagnie issued transferable shares in 1602, and a secondary market in those shares grew in Amsterdam. It is the usual starting point for the modern joint-stock share.",
+      "people": [
+        "Dutch East India Company"
+      ]
+    },
+    {
+      "year": 1848,
+      "title": "The Chicago Board of Trade",
+      "detail": "The Chicago Board of Trade was founded in 1848 and became the home of standardised grain futures, the template for later financial futures.",
+      "people": [
+        "Chicago Board of Trade"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "Currency futures",
+      "detail": "On 16 May 1972 the International Monetary Market of the Chicago Mercantile Exchange listed currency futures, the first widely traded financial futures.",
+      "people": [
+        "Leo Melamed",
+        "Chicago Mercantile Exchange"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "The first US ETF on the S&P 500",
+      "detail": "The SPDR S&P 500 ETF, ticker SPY, began trading on 22 January 1993. Most of the long equity examples in the open library are studies of ETF prices of this kind, not of a hand-built stock universe.",
+      "people": [
+        "State Street"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Decimal pricing in US equities",
+      "detail": "By 9 April 2001 the New York Stock Exchange and the American Stock Exchange had completed the move from fractions to decimals, shrinking the minimum price increment and changing the arithmetic of spreads.",
+      "people": [
+        "New York Stock Exchange"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Trading and Exchanges",
+      "authors": "Larry Harris",
+      "year": 2003,
+      "note": "The microstructure textbook: who trades, what an order book is, and why a price is not a single number."
+    },
+    {
+      "title": "Asset Management: A Systematic Approach to Factor Investing",
+      "authors": "Andrew Ang",
+      "year": 2014,
+      "note": "A clear map from instruments and factors to portfolios, with the institutional constraints stated."
+    },
+    {
+      "title": "Advances in Financial Machine Learning",
+      "authors": "Marcos López de Prado",
+      "year": 2018,
+      "note": "Chapters on bars, labelling and sampling. Read it for the data objections, not as a menu of strategies."
+    },
+    {
+      "title": "Quantitative Trading",
+      "authors": "Xin Guo, Tze Leung Lai, Howard Shek and Samuel Po-Shing Wong",
+      "year": 2017,
+      "note": "A mathematical treatment of execution and statistical trading, useful once the objects are fixed."
+    },
+    {
+      "title": "quantjourney-bt strategy catalogue",
+      "authors": "QuantJourney",
+      "year": 2026,
+      "note": "The Apache-2.0 examples behind quants.md: fifty weight, order and walk-forward cases, each with source and a results page. Cite the reported figures; do not treat them as advice."
+    }
+  ],
+  "next": [
+    "performance"
+  ]
+}

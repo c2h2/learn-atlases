@@ -1,0 +1,151 @@
+{
+  "slug": "momentum",
+  "title": "Momentum",
+  "full_title": "Cross-Sectional and Time-Series Momentum",
+  "area": "signals",
+  "level": 2,
+  "order": 60,
+  "tagline": "Ranking past winners, the skip-month, dual momentum, calendars, crashes and other asset classes",
+  "summary": "Momentum is two hypotheses that share a name. Cross-sectional momentum ranks assets by past return and holds the winners against the losers. Time-series momentum, already met as trend, looks only at an asset’s own past. This course builds the ranking, the skip-month, dual momentum and calendar rotation, then studies the crash, and finally asks what happens when the same sentences are applied to FX.",
+  "overview": [
+    "Jegadeesh and Titman formed portfolios on the past three to twelve months of stock returns, skipped a short gap, and held them for a similar horizon. Winners continued to beat losers on average in their sample. That is cross-sectional momentum. It needs a universe and a ranking. It is not the same object as a single ETF crossing its own moving average, even though both are called momentum in casual speech. This course keeps the two names apart.",
+    "Implementation choices move the result as much as the hypothesis does. Skipping the most recent month avoids a short-horizon reversal that can contaminate a twelve-month ranking. Rebalancing on a calendar, on a drift band, or only when a signal flips are three different turnover policies. Dual momentum adds an absolute filter: hold the relative winner only if its own past return is positive, otherwise hold cash. Each of these is a different experiment. The library’s quarterly dual-momentum example and its monthly rotation example are worked as cases, with their reported summaries attached to the specification rather than to the word 'momentum'.",
+    "The crash chapter is not optional. Momentum portfolios have had concentrated left-tail losses, particularly when the market rebounds after a panic and yesterday’s losers lead. A high average return with a severe conditional crash is a different fact from a high Sharpe ratio in a quiet window.",
+    "The last chapter takes the same specifications outside equities. Several published FX examples in the library lost money over the window they report. A negative published result is part of the record. It is not an instruction to take the opposite trade."
+  ],
+  "prerequisites": [
+    "statistics"
+  ],
+  "outcomes": [
+    "Distinguish cross-sectional momentum from time-series momentum by the information each one uses.",
+    "Form a winner-minus-loser portfolio from a past-return ranking and state the formation and holding windows.",
+    "Explain the skip-month and an absolute (dual) filter, and compute both on a small cross-section.",
+    "Compare calendar rebalancing, drift-band rebalancing and signal-change rebalancing as turnover policies.",
+    "Describe momentum crashes as a conditional left tail, not as a reason to discard the average historical result or to trade it.",
+    "Read a negative FX momentum backtest as evidence about that specification and sample, not as a forecast of the opposite sign."
+  ],
+  "chapters": [
+    {
+      "slug": "two-kinds-of-momentum",
+      "title": "Two kinds of momentum",
+      "summary": "Cross-sectional ranking versus an asset’s own past return, and why the shared name causes bad comparisons.",
+      "requires": [
+        "statistics/moments-and-dependence",
+        "trend/the-trend-hypothesis"
+      ]
+    },
+    {
+      "slug": "formation-skip-and-dual",
+      "title": "Formation, the skip-month and dual momentum",
+      "summary": "Formation and holding windows, skipping the last month, and an absolute filter on top of a relative ranking.",
+      "requires": [
+        "momentum/two-kinds-of-momentum"
+      ]
+    },
+    {
+      "slug": "rotation-and-calendars",
+      "title": "Rotation and rebalance calendars",
+      "summary": "Monthly and quarterly rotation, drift bands and signal-change trading as three ways to hold a momentum book.",
+      "requires": [
+        "momentum/formation-skip-and-dual"
+      ]
+    },
+    {
+      "slug": "momentum-crashes",
+      "title": "Momentum crashes",
+      "summary": "The left tail of winner-minus-loser portfolios, especially after market stress, and what an average return conceals.",
+      "requires": [
+        "momentum/two-kinds-of-momentum"
+      ]
+    },
+    {
+      "slug": "momentum-across-assets",
+      "title": "Momentum outside equities",
+      "summary": "The same sentences applied to FX and futures, including published examples whose reported returns are negative.",
+      "requires": [
+        "momentum/rotation-and-calendars"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "Returns to buying winners and selling losers",
+      "detail": "Jegadeesh and Titman documented intermediate-horizon momentum in US stocks: past winners outperformed past losers over the next three to twelve months in their sample.",
+      "people": [
+        "Narasimhan Jegadeesh",
+        "Sheridan Titman"
+      ]
+    },
+    {
+      "year": 1997,
+      "title": "Momentum as a fourth factor",
+      "detail": "Carhart added a winner-minus-loser factor to the Fama–French three-factor model and used it to study mutual-fund performance. The factor is a research instrument, not a product recommendation.",
+      "people": [
+        "Mark Carhart"
+      ]
+    },
+    {
+      "year": 2013,
+      "title": "Value and momentum everywhere",
+      "detail": "Asness, Moskowitz and Pedersen studied value and momentum together across markets and asset classes, and the correlation between them.",
+      "people": [
+        "Clifford Asness",
+        "Tobias Moskowitz",
+        "Lasse Heje Pedersen"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "Dual momentum as a book",
+      "detail": "Antonacci’s book popularised the combination of relative momentum across assets and absolute momentum against cash. The library’s quarterly example is one specification in that family, not the book itself.",
+      "people": [
+        "Gary Antonacci"
+      ]
+    },
+    {
+      "year": 2016,
+      "title": "Momentum crashes",
+      "detail": "Daniel and Moskowitz showed that momentum strategies have episodic crashes, concentrated in volatile rebounds after declines, and that those crashes account for a large part of the option-like payoff.",
+      "people": [
+        "Kent Daniel",
+        "Tobias Moskowitz"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Returns to Buying Winners and Selling Losers",
+      "authors": "Narasimhan Jegadeesh and Sheridan Titman",
+      "year": 1993,
+      "note": "Journal of Finance. The paper that fixed the cross-sectional definition."
+    },
+    {
+      "title": "On Persistence in Mutual Fund Performance",
+      "authors": "Mark M. Carhart",
+      "year": 1997,
+      "note": "Journal of Finance. The momentum factor as a control in performance evaluation."
+    },
+    {
+      "title": "Value and Momentum Everywhere",
+      "authors": "Clifford S. Asness, Tobias J. Moskowitz and Lasse Heje Pedersen",
+      "year": 2013,
+      "note": "Journal of Finance. Cross-market evidence and the value–momentum mix."
+    },
+    {
+      "title": "Momentum Crashes",
+      "authors": "Kent Daniel and Tobias J. Moskowitz",
+      "year": 2016,
+      "note": "Journal of Financial Economics. The crash paper. Read it before quoting an average momentum premium."
+    },
+    {
+      "title": "Dual Momentum Investing",
+      "authors": "Gary Antonacci",
+      "year": 2014,
+      "note": "The practitioner source for combining relative and absolute momentum. Separate the specification from the investing advice."
+    }
+  ],
+  "next": [
+    "asset-classes"
+  ]
+}

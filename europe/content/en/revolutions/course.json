@@ -1,0 +1,130 @@
+{
+  "slug": "revolutions",
+  "title": "Revolutions",
+  "full_title": "Revolutions, 1789 to 1848",
+  "area": "modern",
+  "level": 4,
+  "order": 90,
+  "tagline": "The French Revolution as a sequence of choices, Napoleon’s empire, Vienna, and 1848 as many revolutions rather than one failure",
+  "summary": "This course follows France from the fiscal crisis of the old regime to the Terror and to Brumaire, and then the empire, Haiti, Vienna and the revolutions of 1848. It treats 1789 as a sequence with dates, not as the moment modernity began. It treats 1848 as a set of outcomes, some of which lasted.",
+  "overview": [
+    "The Estates-General, the National Assembly, the Tennis Court Oath, the Bastille, the August decrees and the Declaration are different acts in one summer. The republic is not declared in 1789. War, the suspension of the monarchy, and the execution of the king come later, and the Terror has dates.",
+    "Brumaire, the Civil Code, the coronation and the Russian campaign are the Napoleonic sequence. Haiti’s declaration on 1 January 1804 is part of the same revolutionary era. Vienna’s Final Act is signed on 9 June 1815, before Waterloo. Restoration is a project, not a return.",
+    "1830 changes the French dynasty and creates a Belgian state. The British Reform Act of 1832 widens a narrow franchise. In 1848 many regimes shake and most revolutionary governments are defeated. Serfdom in the Habsburg empire ends, and the Swiss settlement holds. The Communist Manifesto is a document of that February, not a government."
+  ],
+  "prerequisites": [
+    "states"
+  ],
+  "outcomes": [
+    "Order the main acts of the summer of 1789 and say what had not yet happened.",
+    "Place the Terror between September 1793 and 9 Thermidor, and Brumaire in November 1799.",
+    "Include Haiti in the revolutionary sequence, with the dates of the two French abolitions and the restoration of slavery.",
+    "Explain Vienna as a settlement signed before Waterloo, not as a reflex after it.",
+    "Name one result of 1848 that lasted and one that was defeated."
+  ],
+  "chapters": [
+    {
+      "slug": "old-regime",
+      "title": "The old regime in crisis",
+      "summary": "Debt, the Estates-General, and why a fiscal crisis is not yet a revolution.",
+      "requires": []
+    },
+    {
+      "slug": "from-1789",
+      "title": "From the Bastille to war",
+      "summary": "The summer of 1789, the constitution of 1791, Varennes, and the war and republic of 1792.",
+      "requires": [
+        "revolutions/old-regime"
+      ]
+    },
+    {
+      "slug": "republic-and-terror",
+      "title": "Republic and Terror",
+      "summary": "The execution of the king, the levée en masse, the Terror’s dates, and Thermidor.",
+      "requires": [
+        "revolutions/from-1789"
+      ]
+    },
+    {
+      "slug": "napoleon",
+      "title": "Napoleon and Haiti",
+      "summary": "Brumaire, the Code, the empire, the restoration of colonial slavery, Haiti’s independence, and the campaigns to 1815.",
+      "requires": [
+        "revolutions/republic-and-terror"
+      ]
+    },
+    {
+      "slug": "restoration-and-1848",
+      "title": "Vienna, 1830 and 1848",
+      "summary": "The Final Act, the July Revolution, the Reform Act, and the several revolutions of 1848.",
+      "requires": [
+        "revolutions/napoleon"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1789,
+      "title": "A summer of acts",
+      "detail": "The Estates-General opens on 5 May 1789. The Bastille falls on 14 July. The Declaration of the Rights of Man and of the Citizen is dated 26 August. The republic is not among these acts.",
+      "people": [
+        "Louis XVI"
+      ]
+    },
+    {
+      "year": 1794,
+      "title": "Thermidor",
+      "detail": "On 27 July 1794 Robespierre falls. The date ends the period conventionally called the Terror. It does not end the republic.",
+      "people": [
+        "Maximilien Robespierre"
+      ]
+    },
+    {
+      "year": 1804,
+      "title": "A code, an empire, a new state",
+      "detail": "The Civil Code is promulgated on 21 March 1804. Napoleon is crowned on 2 December. On 1 January Haiti has declared independence.",
+      "people": [
+        "Napoleon",
+        "Jean-Jacques Dessalines"
+      ]
+    },
+    {
+      "year": 1848,
+      "title": "Many revolutions",
+      "detail": "In February 1848 a revolution in Paris opens a year of revolutions. The Communist Manifesto appears in London the same month. Some results, including the end of Habsburg serfdom, outlast the defeat of the barricades.",
+      "people": [
+        "Karl Marx",
+        "Friedrich Engels"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Oxford History of the French Revolution",
+      "authors": "William Doyle",
+      "year": 2002,
+      "note": "A political narrative of 1789–1799 that keeps the sequence of institutions clear."
+    },
+    {
+      "title": "Liberty or Death: The French Revolution",
+      "authors": "Peter McPhee",
+      "year": 2016,
+      "note": "The Revolution in the provinces and in the colonies as well as in Paris."
+    },
+    {
+      "title": "Napoleon: A Life",
+      "authors": "Adam Zamoyski",
+      "year": 2018,
+      "note": "A full life, useful here for the difference between the Code, the empire and the wars."
+    },
+    {
+      "title": "1848: Year of Revolution",
+      "authors": "Mike Rapport",
+      "year": 2008,
+      "note": "The revolutions as a European set of events with different outcomes."
+    }
+  ],
+  "next": [
+    "nations"
+  ]
+}

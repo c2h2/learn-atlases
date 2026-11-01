@@ -1,0 +1,128 @@
+{
+  "slug": "christendom",
+  "title": "Latin Christendom",
+  "full_title": "Latin Christendom, about 1000 to 1300",
+  "area": "medieval",
+  "level": 2,
+  "order": 50,
+  "tagline": "Lordship, the reform papacy, crusades, towns and universities, and the people Latin Christendom marked as outside",
+  "summary": "Between about 1000 and 1300, Latin Christian polities grew more literate, more governed and more exclusive. This course treats lordship and serfdom as varied, the conflict of popes and kings as a fight over office, the crusades as wars with more than one target, and towns, law and universities as institutions. Exclusion of Jews, heretics and Muslims is part of the same centuries, not a stain added later.",
+  "overview": [
+    "A manor is a unit of lordship. Unfreedom was widespread and it was not one legal status from Scotland to Sicily. The first chapter stays with rents, labour and courts, and refuses the cartoon of a continent of identical peasants.",
+    "The reform papacy claimed a freedom for the Church that kings also claimed to supervise. Canossa is a scene in that conflict, not its ending. Magna Carta is a baronial peace. Unam sanctam is a papal claim at the other end of the period. Neither is a constitution of the modern state.",
+    "The crusades were preached as penance and fought as war, including the sack of Constantinople in 1204. Towns, universities and the friars belong beside them. So do the rules of the Fourth Lateran Council that marked Jews and Muslims by dress. A history of Latin Christendom that keeps only the cathedrals has edited the record."
+  ],
+  "prerequisites": [
+    "after-rome"
+  ],
+  "outcomes": [
+    "Define a manor and explain why serfdom was not a single European system.",
+    "Narrate the investiture conflict from Gregory VII to the Concordat of Worms without making Canossa the end.",
+    "Distinguish the First Crusade from the Fourth, and say who the victims of crusading violence included.",
+    "Explain a university and a commune as institutions with privileges, not as the birth of the middle class.",
+    "Use the Fourth Lateran Council as evidence of exclusion built into Latin Christian law."
+  ],
+  "chapters": [
+    {
+      "slug": "lords-and-peasants",
+      "title": "Lords and peasants",
+      "summary": "The manor, rents, labour services, and the variety of unfreedom. Domesday as a survey of one kingdom, not of Europe.",
+      "requires": []
+    },
+    {
+      "slug": "popes-and-kings",
+      "title": "Popes and kings",
+      "summary": "Reform, Canossa, Worms, Magna Carta, and Unam sanctam. Office, not the birth of the state.",
+      "requires": [
+        "christendom/lords-and-peasants"
+      ]
+    },
+    {
+      "slug": "crusades",
+      "title": "Crusades",
+      "summary": "Clermont, Jerusalem in 1099, Hattin and Jerusalem in 1187, and the sack of Constantinople in 1204.",
+      "requires": [
+        "christendom/popes-and-kings"
+      ]
+    },
+    {
+      "slug": "towns-and-learning",
+      "title": "Towns and learning",
+      "summary": "Communes, trade, universities, friars, and Aquinas’ death in 1274 as a date inside a practice of argument.",
+      "requires": [
+        "christendom/crusades"
+      ]
+    },
+    {
+      "slug": "exclusion",
+      "title": "Exclusion",
+      "summary": "Heresy and inquisition, Lateran IV’s dress rules, Jews, and the limits of a history written only about knights.",
+      "requires": [
+        "christendom/towns-and-learning"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1066,
+      "title": "Hastings",
+      "detail": "On 14 October 1066 a Norman duke takes the English kingdom by battle and then by settlement. Conquest is a political fact, not a racial one.",
+      "people": [
+        "William I"
+      ]
+    },
+    {
+      "year": 1095,
+      "title": "Clermont",
+      "detail": "In November 1095 Urban II preaches the expedition later called the First Crusade. Jerusalem is taken on 15 July 1099.",
+      "people": [
+        "Pope Urban II"
+      ]
+    },
+    {
+      "year": 1204,
+      "title": "A Christian city sacked",
+      "detail": "On 13 April 1204 the Fourth Crusade sacks Constantinople. Crusading violence is not only violence against Muslims.",
+      "people": [
+        "Enrico Dandolo"
+      ]
+    },
+    {
+      "year": 1215,
+      "title": "A baronial peace, and a council",
+      "detail": "Magna Carta is sealed in June 1215. In November the Fourth Lateran Council legislates for a Christian society, including rules that mark Jews and Muslims.",
+      "people": [
+        "Innocent III"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Making of Europe: Conquest, Colonization and Cultural Change, 950–1350",
+      "authors": "Robert Bartlett",
+      "year": 1993,
+      "note": "Latin Christendom as an expanding set of institutions, not as a mood."
+    },
+    {
+      "title": "God’s War: A New History of the Crusades",
+      "authors": "Christopher Tyerman",
+      "year": 2006,
+      "note": "The crusades as a series of wars, including 1204, rather than as a single spiritual impulse."
+    },
+    {
+      "title": "The War on Heresy",
+      "authors": "R. I. Moore",
+      "year": 2012,
+      "note": "How heresy was made into a category that authorities could prosecute."
+    },
+    {
+      "title": "A Short History of the Middle Ages",
+      "authors": "Barbara H. Rosenwein",
+      "year": 2018,
+      "note": "A survey that keeps Byzantium and Islam inside the same centuries as the Latin west."
+    }
+  ],
+  "next": [
+    "crises"
+  ]
+}

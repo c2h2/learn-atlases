@@ -1,0 +1,148 @@
+{
+  "slug": "performance",
+  "title": "Performance and Risk",
+  "full_title": "Returns, Risk and Performance",
+  "area": "measurement",
+  "level": 1,
+  "order": 20,
+  "tagline": "Simple and log returns, volatility, drawdown, the Sharpe ratio and the numbers a win rate hides",
+  "summary": "Before a rule can be compared with another rule it needs a scale. This course defines simple and log returns, volatility and drawdown, the Sharpe ratio and its relatives, win rate and profit factor, and the sampling uncertainty of a performance number. The arithmetic is exact; the interpretation is where track records mislead.",
+  "overview": [
+    "Two rules that both 'made money' can be answers to different questions. One compounded slowly with a shallow drawdown. Another had a high fraction of winning trades and a single loss that wiped out the gains. This course gives the definitions that make those sentences quantitative, and the caveats that stop a definition being used as a ranking.",
+    "The return chapters separate a simple return from a log return and show when they may be added. Volatility and drawdown are then two different summaries of the same path: one is a scale of typical moves, the other is a path property that no volatility number determines. The Sharpe ratio divides an average excess return by that scale and, under extra assumptions, annualises. Sortino, Calmar and the information ratio change the numerator or the denominator; each change has to be stated.",
+    "Win rate and profit factor look like trading statistics and are easy to game by changing what counts as a trade. A reported win rate of 100 percent, which one limit-order example in the open library shows, is a prompt to ask how a win was defined, not a prompt to copy the rule. The last chapter puts standard errors under a Sharpe ratio, following Lo, so that a short sample cannot masquerade as a precise edge.",
+    "Every numerical example uses a short invented series, checked by direct calculation. Where a page quotes quants.md, the figure is labelled as that project's reported backtest."
+  ],
+  "prerequisites": [
+    "markets"
+  ],
+  "outcomes": [
+    "Convert between simple and log returns, and state when a sum of log returns equals the log of a gross compound return.",
+    "Compute volatility from a return series and distinguish it from maximum drawdown on the same path.",
+    "Define the Sharpe ratio, state an annualisation, and compare it with the Sortino ratio, the Calmar ratio and an information ratio.",
+    "Define win rate and profit factor, and show a case where a high win rate coexists with a poor compound return.",
+    "Compute a rough standard error for a Sharpe ratio and explain why overlapping returns shrink the effective sample.",
+    "Refuse to rank two published track records whose ratios were computed under unstated conventions."
+  ],
+  "chapters": [
+    {
+      "slug": "simple-and-log-returns",
+      "title": "Simple and log returns",
+      "summary": "Gross, simple and log returns, compounding, and the link from a price path to a P&L.",
+      "requires": [
+        "markets/prices-and-bars"
+      ]
+    },
+    {
+      "slug": "volatility-and-drawdown",
+      "title": "Volatility and drawdown",
+      "summary": "Standard deviation of returns, downside deviation, and maximum drawdown as a property of the equity path.",
+      "requires": [
+        "performance/simple-and-log-returns"
+      ]
+    },
+    {
+      "slug": "sharpe-and-its-relatives",
+      "title": "The Sharpe ratio and its relatives",
+      "summary": "Sharpe, Sortino, Calmar and the information ratio, including annualisation and the risk-free convention.",
+      "requires": [
+        "performance/volatility-and-drawdown"
+      ]
+    },
+    {
+      "slug": "win-rate-and-profit-factor",
+      "title": "Win rate and profit factor",
+      "summary": "What a win is, why profit factor can be infinite, and why neither number is a utility.",
+      "requires": [
+        "performance/sharpe-and-its-relatives"
+      ]
+    },
+    {
+      "slug": "uncertainty-of-performance",
+      "title": "Uncertainty of a performance number",
+      "summary": "Standard errors for means and Sharpe ratios, autocorrelation, and why a short backtest has a wide interval.",
+      "requires": [
+        "performance/sharpe-and-its-relatives"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1952,
+      "title": "Portfolio selection",
+      "detail": "Markowitz defined portfolio risk as the variance of return and showed that diversification is a statement about covariance, not about holding many names.",
+      "people": [
+        "Harry Markowitz"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "Rating fund management",
+      "detail": "Treynor proposed a reward-to-volatility ratio that divided average excess return by systematic risk. It is the ancestor of later performance ratios that change the denominator.",
+      "people": [
+        "Jack Treynor"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "The reward-to-variability ratio",
+      "detail": "Sharpe’s 'Mutual Fund Performance' defined the ratio of average excess return to the standard deviation of return, the statistic now called the Sharpe ratio.",
+      "people": [
+        "William F. Sharpe"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "Downside risk as a denominator",
+      "detail": "Sortino and Price set out a performance ratio that replaces total volatility with downside deviation, so that upside variation is not treated as risk.",
+      "people": [
+        "Frank Sortino",
+        "Lee N. Price"
+      ]
+    },
+    {
+      "year": 2002,
+      "title": "The statistics of Sharpe ratios",
+      "detail": "Lo derived the sampling distribution of the Sharpe ratio, including the effect of serial correlation, and showed how wide the interval is for samples of a few years.",
+      "people": [
+        "Andrew W. Lo"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Statistics of Sharpe Ratios",
+      "authors": "Andrew W. Lo",
+      "year": 2002,
+      "note": "Financial Analysts Journal. The standard reference for annualisation and for standard errors under autocorrelation."
+    },
+    {
+      "title": "Mutual Fund Performance",
+      "authors": "William F. Sharpe",
+      "year": 1966,
+      "note": "Journal of Business. The original reward-to-variability ratio."
+    },
+    {
+      "title": "Active Portfolio Management",
+      "authors": "Richard Grinold and Ronald Kahn",
+      "year": 2000,
+      "note": "The information ratio, the fundamental law, and a disciplined language for active risk."
+    },
+    {
+      "title": "Quantitative Equity Portfolio Management",
+      "authors": "Edward Qian, Ronald Hua and Eric Sorensen",
+      "year": 2007,
+      "note": "Practical definitions of risk, contribution and constraints used by long-only and long–short books."
+    },
+    {
+      "title": "A Quantitative Primer on Investments with R",
+      "authors": "Dale W. R. Rosenthal",
+      "year": 2018,
+      "note": "Worked calculations of returns, risk and performance that match the arithmetic in this course."
+    }
+  ],
+  "next": [
+    "statistics",
+    "portfolio"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "slug": "after-rome",
+  "title": "After Rome",
+  "full_title": "After Rome: Several Heirs",
+  "area": "medieval",
+  "level": 2,
+  "order": 40,
+  "tagline": "Christianisation, successor kingdoms, Byzantium, al-Andalus, and the Frankish empire — several heirs, not one dark age",
+  "summary": "The western empire’s conventional end did not leave an empty continent. This course follows Christianisation, the successor kingdoms, the Roman state at Constantinople, Islamic polities in the western Mediterranean, and the Carolingian empire. Each is an heir. None is a detour on the way to France.",
+  "overview": [
+    "Christianisation is a change of public religion and a change in institutions. It is not the arrival of a European spirit. Councils define doctrine and also define people as heretics. The sack of 410 did not unmake the Church, and the Church did not unmake Roman law.",
+    "The word barbarian is a Roman insult that became a period label. Goths and Franks built kingdoms on Roman soil with Roman personnel. Byzantium is the Roman empire, still. Justinian’s law and Hagia Sophia belong in a European course because later Latin Europe argued with them and sometimes forgot them.",
+    "Al-Andalus is part of the history of the peninsula and of learning in the western Mediterranean. It is not a foreign interruption. The Carolingian coronation of 800 made a new imperial claim in the west. Verdun in 843 divided an inheritance. It did not found France and Germany."
+  ],
+  "prerequisites": [
+    "rome"
+  ],
+  "outcomes": [
+    "Describe Christianisation as a public and institutional change, using Nicaea and the Edict of Thessalonica.",
+    "Explain why “barbarian invasions” is a poor summary of the successor kingdoms.",
+    "Treat Byzantium as a Roman state, and place Justinian’s law and the dedication of Hagia Sophia.",
+    "Place 711 and the emirate of Cordoba inside European history without making them a footnote.",
+    "Say what the coronation of 800 claimed, and what Verdun did not create."
+  ],
+  "chapters": [
+    {
+      "slug": "christianisation",
+      "title": "Christianisation",
+      "summary": "From toleration in 313 to the official religion in 380, the councils, and what did not change in law and land.",
+      "requires": []
+    },
+    {
+      "slug": "successor-kingdoms",
+      "title": "Successor kingdoms",
+      "summary": "Goths, Franks and others inside Roman provinces. The baptism of Clovis as a disputed date. Why “invasion” misleads.",
+      "requires": [
+        "after-rome/christianisation"
+      ]
+    },
+    {
+      "slug": "byzantium",
+      "title": "The Roman east",
+      "summary": "Justinian, the law books, Hagia Sophia, the Nika riot, and a state that outlives 476 by centuries.",
+      "requires": [
+        "after-rome/successor-kingdoms"
+      ]
+    },
+    {
+      "slug": "islam-in-the-west",
+      "title": "Islam in the western Mediterranean",
+      "summary": "The Hijra, 711, Cordoba, and Tours as a battle whose date and legend are both in dispute.",
+      "requires": [
+        "after-rome/byzantium"
+      ]
+    },
+    {
+      "slug": "carolingians",
+      "title": "Carolingians",
+      "summary": "Charles Martel, the coronation of 800, and Verdun in 843 as a division of inheritance rather than the birth of two nations.",
+      "requires": [
+        "after-rome/islam-in-the-west"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 380,
+      "title": "An official religion",
+      "detail": "The Edict of Thessalonica makes Christianity the official religion of the empire. Practice and enforcement take longer than a decree.",
+      "people": [
+        "Theodosius I"
+      ]
+    },
+    {
+      "year": 711,
+      "title": "Into Iberia",
+      "detail": "A force led by Tariq ibn Ziyad crosses into Iberia. The peninsula’s political history is not only a Latin history after this year.",
+      "people": [
+        "Tariq ibn Ziyad"
+      ]
+    },
+    {
+      "year": 800,
+      "title": "An emperor in the west",
+      "detail": "On 25 December 800 Leo III crowns Charlemagne emperor in Rome. The claim is new, and it is contested from Constantinople.",
+      "people": [
+        "Charlemagne",
+        "Pope Leo III"
+      ]
+    },
+    {
+      "year": 843,
+      "title": "Verdun",
+      "detail": "The Treaty of Verdun divides the Frankish inheritance. It does not found the modern states of France and Germany.",
+      "people": [
+        "Lothar I",
+        "Louis the German",
+        "Charles the Bald"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The World of Late Antiquity",
+      "authors": "Peter Brown",
+      "year": 1971,
+      "note": "The classic argument for transformation rather than a sudden dark age."
+    },
+    {
+      "title": "The Inheritance of Rome",
+      "authors": "Chris Wickham",
+      "year": 2009,
+      "note": "A comparative history of Europe from 400 to 1000, east and west, including the early Islamic world."
+    },
+    {
+      "title": "Byzantium: The Surprising Life of a Medieval Empire",
+      "authors": "Judith Herrin",
+      "year": 2007,
+      "note": "The eastern Roman empire as a state with a long life, not as a prelude."
+    },
+    {
+      "title": "Kingdoms of Faith: A New History of Islamic Spain",
+      "authors": "Brian A. Catlos",
+      "year": 2018,
+      "note": "Al-Andalus as a political history rather than as a symbol of tolerance or of threat."
+    }
+  ],
+  "next": [
+    "christendom"
+  ]
+}

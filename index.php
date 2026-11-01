@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 /* Learn — landing page for the atlases under /learn (Maths, Physics, Electrical Engineering, LLM, Medicine, Peptide,
-   and the curriculum skeletons Chemistry, Computer Science, Biology, Mechanical & Aerospace, Economics & Finance, Earth & Climate and English). Self-contained. */
+   and the curriculum skeletons Chemistry, Computer Science, Biology, Mechanical & Aerospace, Economics & Finance, Earth & Climate, English, Quant Trading and European History). Self-contained. */
 
 mb_internal_encoding('UTF-8');
 $q = $_GET['lang'] ?? null;
@@ -49,6 +49,10 @@ $T = [
     'Earth and Climate Science Atlas' => '地球与气候科学图谱',
     'University Earth and climate science: the Earth system, minerals, rocks and tectonics, geophysics, landscapes and water, the atmosphere and weather, oceans and ice, Earth history, biogeochemistry and climate change. The curriculum is mapped out; the lessons are still to be written.' => '大学地球与气候科学：地球系统、矿物岩石与构造、地球物理、地貌与水、大气与天气、海洋与冰冻圈、地球历史、生物地球化学与气候变化。课程体系已经规划好，课文尚待编写。',
     'English Language Atlas' => '英语图谱',
+    'Quant Trading Atlas' => '量化交易图谱',
+    'European History Atlas' => '欧洲史图谱',
+    'European history in depth: evidence and argument, Greece and Rome, medieval Europe, the reformations, states and empires, revolutions, industry and nations, the world wars, and Europe since 1945. For study, not a national myth. All 60 English lessons are written. The Chinese translation is not yet.' => '深入讲解欧洲史：证据与论证、希腊与罗马、中世纪欧洲、宗教改革、国家与帝国、革命、工业与民族、两次世界大战，以及1945年以来的欧洲。供学习，不是民族神话。六十章英文课文已经写完。中文译文尚未开始。',
+    'Systematic trading research: market data, performance and risk, trend, mean reversion and momentum, portfolio construction, orders and execution, backtesting and walk-forward validation. For education, not investment advice. All 60 English lessons are written. The Chinese translation is not yet.' => '系统化交易研究：市场数据、绩效与风险、趋势、均值回归与动量、组合构建、订单与执行、回测与前推验证。仅供教育学习，不构成投资建议。六十章英文课文已经写完。中文译文尚未开始。',
     'English for learners, especially Chinese speakers, from level A1 to C2: pronunciation, vocabulary and grammar, reading and writing up to academic papers, listening and speaking, the history and varieties of English, and English–Chinese translation. The curriculum is mapped out; the lessons are still to be written.' => '面向英语学习者、尤其是以中文为母语者的英语课程，从 A1 到 C2 级：语音、词汇与语法，直至学术论文的阅读与写作，听说，英语的历史与变体，以及英汉互译。课程体系已经规划好，课文尚待编写。',
     'Chinese Language and Literature Atlas' => '中国语言文学图谱',
     'Chinese language and literature for native speakers, at the level of a university degree: characters and calligraphy, modern and classical Chinese, literature from the Book of Songs to the present day, literary theory and world literature, and writing and reasoning. All 270 chapters are written in Chinese, and every chapter has an English version that keeps the same figures, quizzes and exercises.' => '写给以中文为母语者的中国语言文学课程，相当于大学汉语言文学专业的水平：汉字与书法、现代汉语与古代汉语、从《诗经》到当代的中国文学、文学理论与外国文学，以及写作与思维。二百七十章课文均已用中文写成，每章另有保留同样图形、小测与练习的英文版本。',
@@ -88,9 +92,9 @@ $dFigures = 0;
 foreach (glob(__DIR__ . '/medicine/content/en/*/*.md') ?: [] as $f) {
     $dFigures += preg_match_all('/^:::\s*widget\b/m', (string)file_get_contents($f));
 }
-// curriculum skeletons: courses and chapters are mapped out, the lessons are still to be written
+// curriculum skeletons: course and chapter counts, and how many English lessons are on disk
 $sk = [];
-foreach (['llm', 'chemistry', 'cs', 'biology', 'mechanical', 'economics', 'earth', 'english'] as $dir) {
+foreach (['llm', 'chemistry', 'cs', 'biology', 'mechanical', 'economics', 'earth', 'english', 'quant', 'europe'] as $dir) {
     $src = 'en';
     $sk[$dir] = ['courses' => 0, 'chapters' => 0, 'written' => count(glob(__DIR__ . "/$dir/content/$src/*/*.md") ?: [])];
     foreach (glob(__DIR__ . "/$dir/content/en/*/course.json") ?: [] as $f) {
@@ -316,6 +320,26 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
       <h2><?= $skName('English Language Atlas') ?></h2>
       <p><?= $h($t('English for learners, especially Chinese speakers, from level A1 to C2: pronunciation, vocabulary and grammar, reading and writing up to academic papers, listening and speaking, the history and varieties of English, and English–Chinese translation. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('english') ?>
+      <span class="open"><?= $h($t('Open')) ?> →</span>
+    </a>
+    <a class="card" href="quant/<?= $L ?>">
+      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
+        <path d="M16 58 H284 M28 50 L70 46 110 40 150 42 190 28 230 22 270 14" class="curve"/>
+        <?= $skDots([[28, 50], [70, 46], [110, 40], [150, 42], [190, 28], [230, 22], [270, 14]], 6) ?>
+      </svg>
+      <h2><?= $skName('Quant Trading Atlas') ?></h2>
+      <p><?= $h($t('Systematic trading research: market data, performance and risk, trend, mean reversion and momentum, portfolio construction, orders and execution, backtesting and walk-forward validation. For education, not investment advice. All 60 English lessons are written. The Chinese translation is not yet.')) ?></p>
+      <?= $skStats('quant') ?>
+      <span class="open"><?= $h($t('Open')) ?> →</span>
+    </a>
+    <a class="card" href="europe/<?= $L ?>">
+      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
+        <path d="M16 40 H284" class="curve"/>
+        <?= $skDots([[36, 40], [88, 40], [140, 40], [196, 40], [252, 40]], 6.5) ?>
+      </svg>
+      <h2><?= $skName('European History Atlas') ?></h2>
+      <p><?= $h($t('European history in depth: evidence and argument, Greece and Rome, medieval Europe, the reformations, states and empires, revolutions, industry and nations, the world wars, and Europe since 1945. For study, not a national myth. All 60 English lessons are written. The Chinese translation is not yet.')) ?></p>
+      <?= $skStats('europe') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>
   </div>

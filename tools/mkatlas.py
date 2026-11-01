@@ -10,7 +10,7 @@ README.md and tools/*.md are only created when missing (course.json as a stub wi
 Re-running it pulls later Maths Atlas engine fixes into the atlas without touching its content, so
 engine changes for these atlases belong here (or in maths/), not in the generated copies, which a
 re-run replaces. MA_SKELETON keeps its current value; a new atlas starts as a skeleton.
-Used for: llm, chemistry, cs, biology, mechanical, economics, earth, english, chinese.
+Used for: llm, chemistry, cs, biology, mechanical, economics, earth, english, chinese, quant.
 
 Optional spec keys: "sources" (the about page's sources paragraph), "levels" (names for levels 1–4
 instead of Year 1–4), "labels" (what theorem and proof blocks are called, with the pages that
@@ -249,6 +249,15 @@ def build(spec_path):
     cat_path = os.path.join(SRC, 'data/widgets.json')
     with open(cat_path, encoding='utf-8') as f:
         cat = json.load(f)
+    # Types that are not in Maths live in the atlas (data/widgets-local.json) and survive a refresh.
+    local_widgets = os.path.join(dst, 'data/widgets-local.json')
+    if os.path.isfile(local_widgets):
+        with open(local_widgets, encoding='utf-8') as f:
+            local = json.load(f)
+        for k, v in local.get('types', {}).items():
+            if not {'file', 'title', 'params'} <= set(v):
+                die(f'{slug}: local figure {k} needs file, title and params')
+            cat['types'][k] = v
     missing = [w for w in spec['widgets'] if w not in cat['types']]
     if missing:
         die(f'{slug}: unknown figure types {missing}')

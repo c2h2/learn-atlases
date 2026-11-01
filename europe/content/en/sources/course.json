@@ -1,0 +1,127 @@
+{
+  "slug": "sources",
+  "title": "Evidence and Argument",
+  "full_title": "Evidence, Dates and Argument",
+  "area": "method",
+  "level": 1,
+  "order": 10,
+  "tagline": "What the name Europe picks out, and how a claim is tied to a source",
+  "summary": "Before a date can be used, a reader needs to know what kind of claim it is doing. This course separates the name Europe from a natural fact, a source from a conclusion, a calendar from the past itself, a period label from an event, and the scale of a life from the scale of a state.",
+  "overview": [
+    "European history is an argument about a place that has never had one edge. The name has been a classical inheritance, a religious map, a political project and a customs union. A course that begins by assuming the outline of the present European Union, and then walks backwards until the outline fills in, will misread every century in which that outline was not the question.",
+    "The chapters that follow treat evidence as a practice. A charter, a coin, a parish register and a silence are not the same kind of witness. Each can be asked what it was for, who made it, and what it cannot see. The point is not a general scepticism. It is a way of saying, in public, what would count against the sentence you have just written.",
+    "Time is one of the tools that looks neutral and is not. The year after 1 BCE is 1 CE. Britain did not change calendars when Rome did. A Russian date in 1917 is two dates. Period names — ancient, medieval, modern — are claims about what changed, and they are taught here as claims.",
+    "The last chapter asks at what scale a story is being told. A village, a kingdom, a trade and a life do not illustrate one another automatically. The rest of the atlas keeps that question open: Greece is not a nation, 1492 is not one event, and 1945 is not the end of argument."
+  ],
+  "prerequisites": [],
+  "outcomes": [
+    "Say what the name Europe has picked out in more than one century, and name at least two populations a Latin map of Christendom left at the edge.",
+    "Distinguish a source, an inference and a silence, and say what each can and cannot support.",
+    "Compute an elapsed span that crosses from BCE to CE, and explain why there is no year 0.",
+    "Explain why a period label such as the Middle Ages is a claim rather than a natural joint in time.",
+    "Give an example in which a true local story and a true state story do not illustrate each other."
+  ],
+  "chapters": [
+    {
+      "slug": "naming-europe",
+      "title": "The name Europe",
+      "summary": "Europe as a classical name, a religious map and a political project, and the people a single outline leaves out: Byzantium, al-Andalus, the Ottoman world, Jews and Roma.",
+      "requires": []
+    },
+    {
+      "slug": "evidence",
+      "title": "Sources and silence",
+      "summary": "What a charter, a chronicle, an object and an absence can witness, and how an invented sentence differs from a sourced one.",
+      "requires": [
+        "sources/naming-europe"
+      ]
+    },
+    {
+      "slug": "time-and-names",
+      "title": "Calendars, dates and names",
+      "summary": "BCE and CE, the missing year 0, the Gregorian switch, and why one event in 1917 has two dates.",
+      "requires": [
+        "sources/evidence"
+      ]
+    },
+    {
+      "slug": "argument",
+      "title": "What a historical claim is",
+      "summary": "A claim, the evidence that does the work, the counter-evidence, and the difference between a cause and a label.",
+      "requires": [
+        "sources/time-and-names"
+      ]
+    },
+    {
+      "slug": "scale",
+      "title": "Scale",
+      "summary": "A life, a town, a kingdom and a trade are different objects. A true story at one scale is not yet a story at another.",
+      "requires": [
+        "sources/argument"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": -1,
+      "title": "No year zero",
+      "detail": "In the historical count there is no year 0. The year after 1 BCE is 1 CE, so a span that crosses the divide is not the difference of the integers.",
+      "people": [
+        "Dionysius Exiguus"
+      ]
+    },
+    {
+      "year": 1582,
+      "title": "The Gregorian reform",
+      "detail": "In Rome, 4 October 1582 was followed by 15 October 1582. States adopted the reform on different dates, so a shared past still has local calendars.",
+      "people": [
+        "Pope Gregory XIII"
+      ]
+    },
+    {
+      "year": 1752,
+      "title": "Britain changes calendar",
+      "detail": "In Britain, 2 September 1752 was followed by 14 September 1752. A date before the switch is not wrong; it is dated in the calendar then in use.",
+      "people": [
+        "Parliament of Great Britain"
+      ]
+    },
+    {
+      "year": 1918,
+      "title": "Russia changes calendar",
+      "detail": "The day after 31 January 1918, on the Julian calendar, was 14 February 1918. The revolutions of 1917 are dated in both styles.",
+      "people": [
+        "Council of People's Commissars"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "History: A Very Short Introduction",
+      "authors": "John H. Arnold",
+      "year": 2000,
+      "note": "A short account of what historians do with evidence, period labels and narrative."
+    },
+    {
+      "title": "From Reliable Sources: An Introduction to Historical Methods",
+      "authors": "Martha Howell and Walter Prevenier",
+      "year": 2001,
+      "note": "How to read a source against the purpose for which it was made."
+    },
+    {
+      "title": "The Historian's Craft",
+      "authors": "Marc Bloch",
+      "year": 1949,
+      "note": "Written during the war and published after Bloch was murdered. On evidence, criticism and the legitimacy of the craft."
+    },
+    {
+      "title": "The Cheese and the Worms",
+      "authors": "Carlo Ginzburg",
+      "year": 1976,
+      "note": "A study of one Friulian miller and of what an inquisition record can and cannot show about a life."
+    }
+  ],
+  "next": [
+    "greece"
+  ]
+}

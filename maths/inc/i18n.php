@@ -75,6 +75,11 @@ function js_dict(): array
             $out[$k] = $all[$k];
         }
     }
+    // Atlas-local figure strings. mkatlas recopies zh-figures.php from Maths; this file is not in Maths, so it survives.
+    $local = __DIR__ . '/lang/zh-figures-local.php';
+    if (is_file($local)) {
+        $out = array_merge($out, require $local);
+    }
     return $out;
 }
 

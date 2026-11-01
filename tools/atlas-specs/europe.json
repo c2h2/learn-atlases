@@ -1,0 +1,98 @@
+{
+  "slug": "europe",
+  "name": "European History Atlas",
+  "name_zh": "欧洲史图谱",
+  "card_name": "European History Atlas",
+  "card_name_zh": "欧洲史图谱",
+  "desc": "A detailed survey of European history: how a claim is argued from evidence, the ancient Mediterranean, medieval worlds, reformations, states and empires, revolutions, industry and nations, the world wars, and Europe since 1945.",
+  "desc_zh": "一套详尽的欧洲史导览：历史论断如何由证据构成，古代地中海、中世纪诸世界、宗教改革、国家与帝国、革命、工业与民族、两次世界大战，以及1945年以来的欧洲。",
+  "lede": "A detailed, interactive survey of European history, written to be read on its own or beside a textbook. It runs from the ancient Mediterranean to Europe since 1945, and it starts from a prior question: what counts as evidence, and what the name Europe leaves out. The English lessons are written. The Chinese translation is not yet. This is a work of history for study. It is not a national myth, and it does not tell you what to think about a live political dispute.",
+  "lede_zh": "一套详尽、可交互的欧洲史导览，可单独阅读，也可对照教材。它从古代地中海讲到1945年以来的欧洲，并先问一个更基本的问题：什么算证据，以及“欧洲”这个名字漏掉了谁。英文课文已经写完。中文译文尚未编写。本图谱是供学习的历史，不是民族神话，也不对正在进行的政治争论下结论。",
+  "foot": "a free, detailed survey of European history, from the ancient Mediterranean to the decades after 1989, written for study rather than as a national story.",
+  "foot_zh": "一套免费、详尽的欧洲史导览，从古代地中海到1989年之后的几十年，为学习而写，而不是为某一民族的故事而写。",
+  "about_lede": "European History Atlas is a free, detailed survey of European history: evidence and argument, the Greek and Roman Mediterranean, the medieval heirs of Rome, reformations, states and overseas empires, revolutions, industry and nations, the world wars, and Europe since 1945.",
+  "about_lede_zh": "欧洲史图谱是一套免费、详尽的欧洲史导览：证据与论证、希腊与罗马的地中海、罗马之后的中世纪继承者、宗教改革、国家与海外帝国、革命、工业与民族、两次世界大战，以及1945年以来的欧洲。",
+  "timeline_desc": "From the Persian wars to the treaties after 1945: the dates behind every course.",
+  "timeline_desc_zh": "从希波战争到1945年之后的条约：每门课程背后的年代。",
+  "timeline_title": "Timeline of European history",
+  "timeline_title_zh": "欧洲史时间线",
+  "timeline_lede": "Selected dates from the courses. A year on this page is a marker historians argue about, not a moment when an age began. Negative years are printed as BC; the lessons say BCE for the same count. Coloured dots show the area; links lead to the course.",
+  "timeline_lede_zh": "选自各门课程的年代。本页上的一年是史家会争论的标记，不是一个时代开始的瞬间。负年份印作公元前；课文对同一套纪年使用 BCE。彩色圆点表示所属领域；链接指向相应课程。",
+  "card_desc": "European history in depth: evidence and argument, Greece and Rome, medieval Europe, the reformations, states and empires, revolutions, industry and nations, the world wars, and Europe since 1945. All 60 English lessons are written. The Chinese translation is not yet.",
+  "card_desc_zh": "深入的欧洲史：证据与论证、希腊与罗马、中世纪欧洲、宗教改革、国家与帝国、革命、工业与民族、两次世界大战，以及1945年以来的欧洲。六十章英文课文已经写完。中文译文尚未开始。",
+  "sources": "The lessons are original texts for study. Dates and figures that a lesson treats as settled are the ones collected for this atlas from standard scholarly reference points: treaty dates, census reports, and the Slave Voyages estimates of people embarked. Where historians disagree, the lesson says so, and it does not invent a quotation, a casualty total or a population to fill a gap. The Chinese translation of the lessons is not yet written.",
+  "sources_zh": "课文是供学习的原创文本。课文当作已确定来使用的年代和数字，是本图谱从标准学术参照点汇集的：条约日期、人口普查报告，以及奴隶航程数据库（Slave Voyages）对登船人数的估计。凡史家有分歧处，课文会写明，并且不会为了填补空白而编造引文、伤亡总数或人口数字。课文的中文译文尚未编写。",
+  "brand": "<path d=\"M4 8H34\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"8\" cy=\"8\" r=\"2.5\" style=\"fill:var(--a-method)\"/><circle cx=\"19\" cy=\"8\" r=\"2.5\" style=\"fill:var(--a-medieval)\"/><circle cx=\"30\" cy=\"8\" r=\"2.6\" style=\"fill:var(--a-contemporary)\"/>",
+  "levels": {
+    "labels": ["Foundations", "Medieval", "Early modern", "Modern"],
+    "labels_zh": ["基础", "中世纪", "近代早期", "现代"],
+    "filter": "Period",
+    "filter_zh": "时段",
+    "any": "Any period",
+    "any_zh": "全部时段"
+  },
+  "labels": {
+    "theorem": ["Claim", "论断"],
+    "theorems": ["Claims", "论断"],
+    "proof": ["Argument", "论证"],
+    "end_proof": ["End of argument", "论证完毕"],
+    "page": ["Definitions and claims", "定义与论断"],
+    "page_desc": ["Every numbered definition and claim in the atlas, with its statement and a link to the lesson.", "图谱中每一条带编号的定义和论断，附有表述和指向课文的链接。"],
+    "page_lede": ["Every numbered definition and claim, in the words of the lesson. Follow a link to read the argument, the examples and the exercises.", "每一条带编号的定义和论断，用课文中的原话列出。点击链接可阅读论证、例子和练习。"],
+    "about_definition": ["Definitions of the terms the lessons use, numbered so a later chapter can point back to them.", "课文所用术语的定义，带编号，以便后面的章节引用。"],
+    "about_theorem": ["Claims stated so that the argument can be checked: what is being said, what evidence is doing the work, and what would count against it.", "把论断写到可以核对论证的程度：究竟在主张什么，哪条证据在起作用，以及什么会构成反证。"],
+    "about_example": ["Worked cases: a date to compute, a source to read against its limits, or two accounts set side by side.", "详细的例子：计算一段年代，对照一份史料的限度来阅读，或把两种叙述并置。"],
+    "about_intuition": ["The point of a distinction, in plain words, before the argument is tightened.", "在收紧论证之前，用平实的话说明一个区分的意义。"],
+    "report": ["If you find an error, please report it on %s, noting the chapter and the number of the claim, example or exercise.", "如果发现错误，欢迎在 %s 上反馈，并注明所在章节以及论断、例子或练习的编号。"]
+  },
+  "areas": [
+    {"key": "method", "palette": "foundations", "label": "Evidence and argument", "blurb": "What the name Europe picks out, and how a historical claim is tied to a source.", "label_zh": "证据与论证", "blurb_zh": "“欧洲”这个名字圈定了什么，以及一条历史论断如何系于史料。"},
+    {"key": "mediterranean", "palette": "analysis", "label": "The ancient Mediterranean", "blurb": "Greek poleis and the Roman state, including the people those polities excluded.", "label_zh": "古代地中海", "blurb_zh": "希腊城邦与罗马国家，包括这些政体排除在外的人。"},
+    {"key": "medieval", "palette": "algebra", "label": "Medieval worlds", "blurb": "The several heirs of Rome: Latin, Byzantine and Islamic, down to the fifteenth century.", "label_zh": "中世纪诸世界", "blurb_zh": "罗马的多个继承者：拉丁、拜占庭与伊斯兰世界，直至十五世纪。"},
+    {"key": "reform", "palette": "geometry", "label": "Reformations", "blurb": "More than one Reformation, the Catholic reform, and the wars that followed.", "label_zh": "宗教改革", "blurb_zh": "不止一场宗教改革、天主教改革，以及随后的战争。"},
+    {"key": "polities", "palette": "discrete", "label": "States and empires", "blurb": "Composite monarchies, fiscal-military states, the Atlantic trade in enslaved people, and Enlightenment publics.", "label_zh": "国家与帝国", "blurb_zh": "复合君主国、财政—军事国家、大西洋贩奴贸易，以及启蒙时代的公众。"},
+    {"key": "modern", "palette": "probability", "label": "Revolutions and nations", "blurb": "From 1789 to 1914: revolution, industry, nation-states and overseas empire.", "label_zh": "革命与民族", "blurb_zh": "从1789年到1914年：革命、工业、民族国家与海外帝国。"},
+    {"key": "contemporary", "palette": "applied", "label": "Since 1914", "blurb": "The world wars, genocide, division, integration, and arguments that are still open.", "label_zh": "1914年以来", "blurb_zh": "两次世界大战、种族灭绝、分裂、一体化，以及仍未结束的争论。"}
+  ],
+  "widgets": ["plot", "distribution", "graph", "venn", "timeline", "series"],
+  "lab_groups": {
+    "calculus": "Curves",
+    "prob": "Estimates",
+    "discrete": "Diagrams",
+    "europe": "Timelines"
+  },
+  "lab_groups_zh": {
+    "calculus": "曲线",
+    "prob": "估计",
+    "discrete": "图示",
+    "europe": "时间线"
+  },
+  "paths": {
+    "survey": ["The survey", ["sources", "greece", "rome", "after-rome", "christendom", "crises", "reformations", "states", "revolutions", "nations", "wars", "postwar"]],
+    "ancient": ["The ancient Mediterranean", ["sources", "greece", "rome", "after-rome"]],
+    "medieval": ["Medieval worlds", ["after-rome", "christendom", "crises", "reformations"]],
+    "modern": ["From the old regime to 1945", ["states", "revolutions", "nations", "wars"]],
+    "since": ["Since 1945", ["wars", "postwar"]]
+  },
+  "paths_zh": {
+    "survey": "通史",
+    "ancient": "古代地中海",
+    "medieval": "中世纪诸世界",
+    "modern": "从旧制度到1945年",
+    "since": "1945年以来"
+  },
+  "courses": [
+    {"slug": "sources", "title": "Evidence and Argument", "full_title": "Evidence, Dates and Argument", "area": "method", "level": 1, "order": 10, "prerequisites": [], "next": ["greece"]},
+    {"slug": "greece", "title": "Greek Worlds", "full_title": "Greek Worlds", "area": "mediterranean", "level": 1, "order": 20, "prerequisites": ["sources"], "next": ["rome"]},
+    {"slug": "rome", "title": "Roman Worlds", "full_title": "Roman Worlds", "area": "mediterranean", "level": 1, "order": 30, "prerequisites": ["greece"], "next": ["after-rome"]},
+    {"slug": "after-rome", "title": "After Rome", "full_title": "After Rome: Several Heirs", "area": "medieval", "level": 2, "order": 40, "prerequisites": ["rome"], "next": ["christendom"]},
+    {"slug": "christendom", "title": "Latin Christendom", "full_title": "Latin Christendom, about 1000 to 1300", "area": "medieval", "level": 2, "order": 50, "prerequisites": ["after-rome"], "next": ["crises"]},
+    {"slug": "crises", "title": "Crisis and Renewal", "full_title": "Plague, Schism and the Fifteenth Century", "area": "medieval", "level": 2, "order": 60, "prerequisites": ["christendom"], "next": ["reformations"]},
+    {"slug": "reformations", "title": "Reformations", "full_title": "Reformations and Religious War", "area": "reform", "level": 3, "order": 70, "prerequisites": ["crises"], "next": ["states"]},
+    {"slug": "states", "title": "States and Empires", "full_title": "States, Commerce and Enlightenment", "area": "polities", "level": 3, "order": 80, "prerequisites": ["reformations"], "next": ["revolutions"]},
+    {"slug": "revolutions", "title": "Revolutions", "full_title": "Revolutions, 1789 to 1848", "area": "modern", "level": 4, "order": 90, "prerequisites": ["states"], "next": ["nations"]},
+    {"slug": "nations", "title": "Nations and Industry", "full_title": "Industry, Nations and Empires, 1815 to 1914", "area": "modern", "level": 4, "order": 100, "prerequisites": ["revolutions"], "next": ["wars"]},
+    {"slug": "wars", "title": "The World Wars", "full_title": "Europe, 1914 to 1945", "area": "contemporary", "level": 4, "order": 110, "prerequisites": ["nations"], "next": ["postwar"]},
+    {"slug": "postwar", "title": "Europe since 1945", "full_title": "Division, Integration and Argument since 1945", "area": "contemporary", "level": 4, "order": 120, "prerequisites": ["wars"], "next": []}
+  ]
+}

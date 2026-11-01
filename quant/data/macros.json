@@ -1,0 +1,11 @@
+{
+  "\\R": "\\mathbb{R}", "\\N": "\\mathbb{N}", "\\Z": "\\mathbb{Z}", "\\Q": "\\mathbb{Q}", "\\C": "\\mathbb{C}", "\\F": "\\mathbb{F}",
+  "\\Prob": "\\mathbb{P}", "\\E": "\\mathbb{E}", "\\Var": "\\operatorname{Var}", "\\Cov": "\\operatorname{Cov}", "\\Corr": "\\operatorname{Corr}",
+  "\\abs": "\\left|#1\\right|", "\\norm": "\\left\\lVert#1\\right\\rVert", "\\inner": "\\left\\langle#1,#2\\right\\rangle", "\\set": "\\left\\{#1\\right\\}",
+  "\\dd": "\\mathrm{d}", "\\deriv": "\\frac{\\mathrm{d}#1}{\\mathrm{d}#2}", "\\pdv": "\\frac{\\partial #1}{\\partial #2}", "\\eps": "\\varepsilon",
+  "\\rank": "\\operatorname{rank}", "\\tr": "\\operatorname{tr}", "\\Span": "\\operatorname{span}", "\\sgn": "\\operatorname{sgn}", "\\Img": "\\operatorname{im}",
+  "\\Res": "\\operatorname*{Res}", "\\Arg": "\\operatorname{Arg}", "\\Log": "\\operatorname{Log}", "\\diag": "\\operatorname{diag}", "\\proj": "\\operatorname{proj}",
+  "\\lcm": "\\operatorname{lcm}", "\\ord": "\\operatorname{ord}", "\\Aut": "\\operatorname{Aut}", "\\Hom": "\\operatorname{Hom}", "\\id": "\\mathrm{id}",
+  "\\supp": "\\operatorname{supp}", "\\erf": "\\operatorname{erf}", "\\curl": "\\operatorname{curl}", "\\divg": "\\operatorname{div}",
+  "\\Bin": "\\operatorname{Bin}", "\\Normal": "\\mathcal{N}", "\\iid": "\\overset{\\text{iid}}{\\sim}", "\\T": "^{\\mathsf{T}}"
+}

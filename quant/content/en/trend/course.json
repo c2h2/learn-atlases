@@ -1,0 +1,153 @@
+{
+  "slug": "trend",
+  "title": "Trend Following",
+  "full_title": "Trend Following",
+  "area": "signals",
+  "level": 2,
+  "order": 40,
+  "tagline": "Moving averages, breakouts, MACD and defensive filters as a hypothesis about persistence",
+  "summary": "Trend following bets that returns keep their sign for a while. This course states that hypothesis, then builds the usual instruments: moving-average crosses, Donchian-style breakouts, MACD, and filters that switch a book between risk-on assets and cash or defensive assets. Lag, whipsaw and trading costs are part of the hypothesis, not a footnote.",
+  "overview": [
+    "A trend rule is a claim about the sign of future returns given the sign of past returns. The academic version is time-series momentum: the past return of an asset, over an intermediate horizon, has been positively related to its next return in many futures markets. The open library’s versions are simpler and more specific — a fast average above a slow average, a price above a channel, a MACD line above its signal — and they are applied mostly to equity ETFs.",
+    "Specificity is the point of the course. 'Follow the trend' is not a strategy. SMA(20) crossing SMA(50), traded with market orders, is a different experiment from holding a sector ETF whenever SMA(50) exceeds SMA(200) and rebalancing the weights every day. Both appear in the library. Comparing their reported summaries is a lesson in implementation, developed fully in Research Practice, and a warning against talking about 'the' moving-average result.",
+    "Filters and defensive switches — risk-on assets when a broad index is above a long average, otherwise defensive assets — are still trend rules. They change the universe rather than the position in a single name. Breakouts and MACD change the feature, not the economic claim.",
+    "The last chapter is the bill. A moving average lags a turn. A choppy market flips the sign and pays the spread twice. Published Sharpe ratios on these equity-ETF examples are modest. That is what the hypothesis looks like after costs and whipsaw, not a defect in the definition."
+  ],
+  "prerequisites": [
+    "statistics"
+  ],
+  "outcomes": [
+    "State time-series momentum as a hypothesis about the sign of returns, with the horizon and the asset class made explicit.",
+    "Define a simple and an exponential moving average and a cross rule, and compute both on a short price path.",
+    "Define a channel breakout and MACD, and say how each differs from a moving-average cross.",
+    "Write a defensive filter that maps an index trend signal into a risk-on or defensive universe.",
+    "Show how lag produces whipsaw, and how a cost per turnover changes the compound return of a flip-flop rule.",
+    "Read the library’s trend examples as implementations of one hypothesis, not as competing recommendations."
+  ],
+  "chapters": [
+    {
+      "slug": "the-trend-hypothesis",
+      "title": "The trend hypothesis",
+      "summary": "Time-series momentum as a claim about signed persistence, and what would count as evidence against it.",
+      "requires": [
+        "statistics/moments-and-dependence"
+      ]
+    },
+    {
+      "slug": "moving-averages",
+      "title": "Moving averages",
+      "summary": "SMA and EMA crosses, daily weight rules and order rules, and signal-change versus calendar rebalancing.",
+      "requires": [
+        "trend/the-trend-hypothesis"
+      ]
+    },
+    {
+      "slug": "breakouts-and-macd",
+      "title": "Breakouts and MACD",
+      "summary": "Donchian-style channels, buy-stops on a high, and the MACD line against its signal.",
+      "requires": [
+        "trend/moving-averages"
+      ]
+    },
+    {
+      "slug": "filters-and-defensive",
+      "title": "Filters and defensive allocation",
+      "summary": "Using a broad trend filter to switch between risk-on assets and cash or defensive assets.",
+      "requires": [
+        "trend/moving-averages"
+      ]
+    },
+    {
+      "slug": "lag-whipsaw-and-costs",
+      "title": "Lag, whipsaw and costs",
+      "summary": "Why a smoother signal turns late, how often a cross can flip, and what a cost per unit of turnover does.",
+      "requires": [
+        "trend/breakouts-and-macd"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1978,
+      "title": "Directional systems in a trading manual",
+      "detail": "Wilder’s New Concepts in Technical Trading Systems collected several still-standard indicators, including the relative strength index, and treated trend and extreme readings as separate tools.",
+      "people": [
+        "J. Welles Wilder"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "MACD",
+      "detail": "Gerald Appel introduced the moving-average convergence/divergence oscillator in the late 1970s. The usual construction subtracts a slower exponential average from a faster one and smooths the difference again.",
+      "people": [
+        "Gerald Appel"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "Simple technical rules and stock returns",
+      "detail": "Brock, Lakonishok and LeBaron tested moving-average and channel rules on the Dow Jones index and found historically positive results. Later work argued about costs, data mining and whether the result survived.",
+      "people": [
+        "William Brock",
+        "Josef Lakonishok",
+        "Blake LeBaron"
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "Time series momentum",
+      "detail": "Moskowitz, Ooi and Pedersen documented a positive relation between an asset’s past 12-month return and its next return across equity-index, currency, commodity and bond futures.",
+      "people": [
+        "Tobias Moskowitz",
+        "Yao Hua Ooi",
+        "Lasse Heje Pedersen"
+      ]
+    },
+    {
+      "year": 2017,
+      "title": "A century of trend-following",
+      "detail": "Hurst, Ooi and Pedersen assembled a long futures history and argued that trend-following’s average result was not an artefact of the most recent decades. The result is an average across markets and years, not a promise about a single ETF rule.",
+      "people": [
+        "Brian Hurst",
+        "Yao Hua Ooi",
+        "Lasse Heje Pedersen"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Time Series Momentum",
+      "authors": "Tobias Moskowitz, Yao Hua Ooi and Lasse Heje Pedersen",
+      "year": 2012,
+      "note": "Journal of Financial Economics. The journal article for the trend hypothesis used in this course."
+    },
+    {
+      "title": "Simple Technical Trading Rules and the Stochastic Properties of Stock Returns",
+      "authors": "William Brock, Josef Lakonishok and Blake LeBaron",
+      "year": 1992,
+      "note": "Journal of Finance. The classic test of moving-average and trading-range rules."
+    },
+    {
+      "title": "A Century of Evidence on Trend-Following Investing",
+      "authors": "Brian Hurst, Yao Hua Ooi and Lasse Heje Pedersen",
+      "year": 2017,
+      "note": "Journal of Portfolio Management. A long-sample futures study. Read the market list and the cost assumptions."
+    },
+    {
+      "title": "Following the Trend",
+      "authors": "Andreas F. Clenow",
+      "year": 2013,
+      "note": "A practitioner’s account of diversified futures trend-following, useful for the contract and roll details the academic papers abstract away."
+    },
+    {
+      "title": "Evidence-Based Technical Analysis",
+      "authors": "David Aronson",
+      "year": 2007,
+      "note": "How to test a technical rule without fooling yourself. The methodological half matters more than any example rule."
+    }
+  ],
+  "next": [
+    "portfolio",
+    "orders"
+  ]
+}

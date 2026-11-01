@@ -1,0 +1,153 @@
+{
+  "slug": "orders",
+  "title": "Orders and Execution",
+  "full_title": "Orders, Fills and Execution",
+  "area": "execution",
+  "level": 3,
+  "order": 80,
+  "tagline": "Market, limit, stop, trailing, bracket and OCO orders, and the fill a backtest has to assume",
+  "summary": "Weight research ends at a target. Order research starts at a message to a market: market, limit, stop, stop-limit, trailing stop, bracket and one-cancels-the-other. This course defines each message, the fill assumption a simulator must make, and the extra conventions of lots, futures contracts and intraday bars. Slippage and the spread are part of the definition of a fill.",
+  "overview": [
+    "An order is not a weight. A target weight can be reached by a market order, by a passive limit, or not at all if the limit is never touched. The open library’s order examples exist to make that difference concrete: the same economic story — trend, or an RSI dip — is sent to the market as a market order, a limit, a stop, a bracket or a pair of competing orders. The reported summaries differ, and the course treats those differences as objects of study.",
+    "Each order type is a contract with a precise trigger. A stop becomes a market order when a price is touched. A stop-limit becomes a limit, which may not fill. A trailing stop moves with a favourable price and freezes when the price reverses. A bracket places a profit-taking limit and a protective stop together. One-cancels-the-other keeps two entry ideas and kills the loser. None of these is a prediction. Each is a function from a future path to a fill, a cancel, or a miss.",
+    "Futures and FX add a quantity convention: whole contracts, lot sizes, and a point value. Intraday bars add a session and a horizon so short that a few weeks of data, which is what several library examples report, cannot support a performance ratio. The course says so next to the definitions.",
+    "The last chapter is the gap between a printed price and a fill. A backtest that fills a market order at the next close, or a limit at its limit price whenever the bar’s range touches it, has chosen an assumption. Adverse selection — the tendency of passive fills to happen when the price is about to move through the order — is why a 100 percent win rate on a passive dip rule is not the good news it appears to be."
+  ],
+  "prerequisites": [
+    "markets",
+    "trend"
+  ],
+  "outcomes": [
+    "Define market and limit orders and the information a simulator needs in order to declare a fill.",
+    "Define stop, stop-limit and trailing-stop orders, including when a stop-limit can fail to fill.",
+    "Define a bracket and a one-cancels-the-other pair, and trace both on a short price path.",
+    "Size an order in shares, FX lots and futures contracts given a point value and a volatility budget.",
+    "State a slippage model and a spread cost, and explain adverse selection against passive limits.",
+    "Explain why a reported win rate of 100 percent on a limit-entry rule is a statement about fills, not about expected growth."
+  ],
+  "chapters": [
+    {
+      "slug": "market-and-limit-orders",
+      "title": "Market and limit orders",
+      "summary": "Aggressive and passive orders, the bid–ask spread, and a first fill convention for a daily bar.",
+      "requires": [
+        "markets/prices-and-bars",
+        "trend/moving-averages"
+      ]
+    },
+    {
+      "slug": "stops-and-stop-limits",
+      "title": "Stops and stop-limits",
+      "summary": "Protective stops, breakout stops, and stop-limits that cap the fill or fail to fill.",
+      "requires": [
+        "orders/market-and-limit-orders"
+      ]
+    },
+    {
+      "slug": "trailing-brackets-and-oco",
+      "title": "Trailing stops, brackets and OCO",
+      "summary": "Trailing stops, profit-and-loss brackets, and one-cancels-the-other entries.",
+      "requires": [
+        "orders/stops-and-stop-limits"
+      ]
+    },
+    {
+      "slug": "lots-contracts-and-intraday",
+      "title": "Lots, contracts and intraday orders",
+      "summary": "FX lots, futures point values, and what an intraday bar changes about fills and sample length.",
+      "requires": [
+        "orders/market-and-limit-orders",
+        "markets/instruments"
+      ]
+    },
+    {
+      "slug": "fills-slippage-and-spread",
+      "title": "Fills, slippage and the spread",
+      "summary": "Fill assumptions, a linear slippage model, and adverse selection against passive orders.",
+      "requires": [
+        "orders/market-and-limit-orders"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1985,
+      "title": "The bid–ask spread as adverse selection",
+      "detail": "Glosten and Milgrom modelled the spread as compensation for trading against someone who may be better informed. A passive fill is not a free improvement on a market order.",
+      "people": [
+        "Lawrence Glosten",
+        "Paul Milgrom"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "Continuous auctions and market impact",
+      "detail": "Kyle’s model gave a linear relation between an informed order and the price move it causes, the ancestor of later impact formulas.",
+      "people": [
+        "Albert S. Kyle"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Optimal execution",
+      "detail": "Almgren and Chriss posed execution as a trade-off between market impact and the risk of waiting, and derived schedules between a pure risk-minimising path and an aggressive one.",
+      "people": [
+        "Robert Almgren",
+        "Neil Chriss"
+      ]
+    },
+    {
+      "year": 1996,
+      "title": "An electronic equity book",
+      "detail": "Island ECN, launched in 1996, was one of the electronic limit-order markets that moved US equity trading off the floor and made the public book the object a simulator has to imitate.",
+      "people": [
+        "Island ECN"
+      ]
+    },
+    {
+      "year": 2002,
+      "title": "Statistics of the order book",
+      "detail": "Bouchaud, Mézard and Potters measured the order books of liquid Paris stocks and showed regularities — the distribution of incoming limit prices, the shape of the average book — that a fill model either respects or ignores.",
+      "people": [
+        "Jean-Philippe Bouchaud",
+        "Marc Mézard",
+        "Marc Potters"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Trading and Exchanges",
+      "authors": "Larry Harris",
+      "year": 2003,
+      "note": "Order types, the spread and who supplies liquidity, in plain language."
+    },
+    {
+      "title": "Optimal Execution of Portfolio Transactions",
+      "authors": "Robert Almgren and Neil Chriss",
+      "year": 2001,
+      "note": "Journal of Risk. The execution schedule this course sketches."
+    },
+    {
+      "title": "Bid, Ask and Transaction Prices",
+      "authors": "Lawrence R. Glosten and Paul R. Milgrom",
+      "year": 1985,
+      "note": "Journal of Financial Economics. Adverse selection and the spread."
+    },
+    {
+      "title": "Continuous Auctions and Insider Trading",
+      "authors": "Albert S. Kyle",
+      "year": 1985,
+      "note": "Econometrica. Linear impact."
+    },
+    {
+      "title": "Trades, Quotes and Prices",
+      "authors": "Jean-Philippe Bouchaud, Julius Bonart, Jonathan Donier and Martin Gould",
+      "year": 2018,
+      "note": "A modern statistical account of market microstructure for readers who want the empirical regularities."
+    }
+  ],
+  "next": [
+    "backtesting"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "slug": "quant",
+  "name": "Quant Trading Atlas",
+  "name_zh": "量化交易图谱",
+  "card_name": "Quant Trading Atlas",
+  "card_name_zh": "量化交易图谱",
+  "desc": "A detailed, interactive course in systematic trading research: market data, performance, trend, mean reversion and momentum, portfolios, orders, backtesting and walk-forward validation. For education only, not investment advice.",
+  "desc_zh": "深入、可交互的系统化交易研究课程：市场数据、绩效、趋势、均值回归与动量、组合、订单、回测与前推验证。仅供教育学习，不构成投资建议。",
+  "lede": "A detailed, interactive course in systematic trading research — how a rule becomes a tested hypothesis, from prices and returns through trend, mean reversion and momentum, position sizing, orders, backtesting and walk-forward validation. For education only, not investment advice. The open strategy library at quants.md is the set of worked cases. The English lessons are written. The Chinese translation is not yet.",
+  "lede_zh": "深入、可交互的系统化交易研究课程——一条规则如何成为可检验的假设：从价格与收益，到趋势、均值回归与动量、仓位、订单、回测与前推验证。仅供教育学习，不构成投资建议。quants.md 上的公开策略库是本图谱的案例集。英文课文已经写完。中文译文尚未编写。",
+  "foot": "a free, detailed and interactive tour of systematic trading research, written to be read alongside lectures and textbooks. For education only — not investment or trading advice.",
+  "foot_zh": "一套免费、详尽、可交互的系统化交易研究导览，可配合课堂和教材阅读。仅供教育学习，不构成投资或交易建议。",
+  "about_lede": "Quant Trading Atlas is a free, detailed tour of systematic trading research — how data, signals, portfolios and orders are specified and tested. It is for education only and is not investment or trading advice.",
+  "about_lede_zh": "量化交易图谱是一套免费、详尽的系统化交易研究导览——数据、信号、组合与订单如何被写清楚并加以检验。内容仅供教育学习，不构成投资或交易建议。",
+  "timeline_desc": "From Bachelier and Markowitz to momentum, trend and the statistics of backtests: the ideas behind every course.",
+  "timeline_desc_zh": "从巴舍利耶和马科维茨，到动量、趋势与回测的统计：每门课程背后的思想。",
+  "timeline_title": "Timeline of quantitative trading",
+  "timeline_title_zh": "量化交易时间线",
+  "timeline_lede": "The ideas behind the courses, from Bachelier’s model of prices and Markowitz’s portfolios to trend, momentum, pairs and the measurement of backtest overfitting. Coloured dots show the area; links lead to the course where the idea is taught.",
+  "timeline_lede_zh": "各门课程背后的思想：从巴舍利耶的价格模型与马科维茨的投资组合，到趋势、动量、配对交易，以及对回测过拟合的度量。彩色圆点表示所属领域；链接指向讲授该内容的课程。",
+  "card_desc": "Systematic trading research: market data, performance and risk, trend, mean reversion and momentum, portfolio construction, orders and execution, backtesting and walk-forward validation. For education, not investment advice. All 60 English lessons are written. The Chinese translation is not yet.",
+  "card_desc_zh": "系统化交易研究：市场数据、绩效与风险、趋势、均值回归与动量、组合构建、订单与执行、回测与前推验证。仅供教育学习，不构成投资建议。六十章英文课文已经写完。中文译文尚未开始。",
+  "sources": "The lessons are original texts on systematic trading research, for education only and not as investment advice. Where a page cites a result from the open strategy library at quants.md, that figure is the QuantJourney project’s published backtest (Apache-2.0 examples), not a forecast and not a result this atlas has re-run. Formulas in the worked examples were checked by direct calculation. The Chinese translation of the lessons is not yet written.",
+  "sources_zh": "课文是关于系统化交易研究的原创文本，仅供教育学习，不构成投资建议。若某一页引用 quants.md 公开策略库中的结果，该数字是 QuantJourney 项目已发表的回测（Apache-2.0 示例），不是预测，也不是本图谱重新运行后的结果。例题中的公式已用直接计算核对。课文的中文译文尚未编写。",
+  "brand": "<path d=\"M3 12L10 11L16 7L22 8L28 4L35 5\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"6\" cy=\"12\" r=\"2.2\" style=\"fill:var(--a-markets)\"/><circle cx=\"16\" cy=\"7\" r=\"2.2\" style=\"fill:var(--a-signals)\"/><circle cx=\"28\" cy=\"4\" r=\"2.3\" style=\"fill:var(--a-research)\"/>",
+  "areas": [
+    {"key": "markets", "palette": "foundations", "label": "Markets and data", "blurb": "Instruments, prices, bars and the data a rule is allowed to see.", "label_zh": "市场与数据", "blurb_zh": "工具、价格、K 线，以及一条规则当时允许看到的数据。"},
+    {"key": "measurement", "palette": "analysis", "label": "Measurement", "blurb": "Returns, risk, performance ratios and the statistics of a track record.", "label_zh": "度量", "blurb_zh": "收益、风险、绩效比率，以及一条业绩记录的统计。"},
+    {"key": "signals", "palette": "algebra", "label": "Signals", "blurb": "Trend, mean reversion and momentum as testable hypotheses.", "label_zh": "信号", "blurb_zh": "作为可检验假设的趋势、均值回归与动量。"},
+    {"key": "portfolio", "palette": "geometry", "label": "Portfolios", "blurb": "From a signal to a weight: volatility, risk parity and constraints.", "label_zh": "组合", "blurb_zh": "从信号到权重：波动率、风险平价与约束。"},
+    {"key": "execution", "palette": "discrete", "label": "Execution", "blurb": "Market, limit, stop and bracket orders, and what a fill assumes.", "label_zh": "执行", "blurb_zh": "市价、限价、止损与括号订单，以及一次成交假定了什么。"},
+    {"key": "research", "palette": "probability", "label": "Research design", "blurb": "Backtests, walk-forward tests and the statistics of searching.", "label_zh": "研究设计", "blurb_zh": "回测、前推检验，以及搜索参数的统计。"},
+    {"key": "practice", "palette": "applied", "label": "Practice", "blurb": "Asset classes, specifications, and the line research does not cross.", "label_zh": "实践", "blurb_zh": "资产类别、规格说明书，以及研究不越过的那条线。"}
+  ],
+  "widgets": [
+    "plot", "riemann", "cobweb", "sequence", "newton", "contour", "surface", "gradientdescent",
+    "rowreduce", "slopefield", "phaseplane", "odesolver", "markov", "distribution", "clt", "lln",
+    "montecarlo", "hypothesis", "confidence", "bayes", "regression", "graph",
+    "equity", "compound", "candles", "average", "bands", "barlimit", "stop", "folds",
+    "weights", "sharpe", "payoff", "spread", "formation"
+  ],
+  "lab_groups": {
+    "calculus": "Curves and compounding",
+    "multivar": "Constraints and objectives",
+    "linalg": "Linear books",
+    "ode": "Continuous dynamics",
+    "prob": "Returns, tests and simulation",
+    "discrete": "Graphs of dependence",
+    "quant": "Trading charts"
+  },
+  "lab_groups_zh": {
+    "calculus": "曲线与复利",
+    "multivar": "约束与目标",
+    "linalg": "线性组合",
+    "ode": "连续动态",
+    "prob": "收益、检验与模拟",
+    "discrete": "依赖关系图",
+    "quant": "交易图表"
+  },
+  "paths": {
+    "core": ["The research core", ["markets", "performance", "statistics", "backtesting", "validation", "research-craft"]],
+    "signals": ["Signals", ["markets", "performance", "trend", "reversion", "momentum"]],
+    "construction": ["Portfolios and orders", ["performance", "portfolio", "orders", "asset-classes"]],
+    "testing": ["Testing a rule", ["statistics", "backtesting", "validation", "research-craft"]],
+    "library": ["The open library", ["trend", "reversion", "momentum", "portfolio", "orders", "asset-classes"]]
+  },
+  "paths_zh": {
+    "core": "研究主线",
+    "signals": "信号",
+    "construction": "组合与订单",
+    "testing": "检验一条规则",
+    "library": "公开策略库"
+  },
+  "courses": [
+    {"slug": "markets", "title": "Markets and Data", "full_title": "Markets, Instruments and Data", "area": "markets", "level": 1, "order": 10, "prerequisites": [], "next": ["performance"]},
+    {"slug": "performance", "title": "Performance and Risk", "full_title": "Returns, Risk and Performance", "area": "measurement", "level": 1, "order": 20, "prerequisites": ["markets"], "next": ["statistics", "portfolio"]},
+    {"slug": "statistics", "title": "Statistics for Trading Research", "full_title": "Statistics for Trading Research", "area": "measurement", "level": 2, "order": 30, "prerequisites": ["performance"], "next": ["trend", "reversion", "momentum", "validation"]},
+    {"slug": "trend", "title": "Trend Following", "full_title": "Trend Following", "area": "signals", "level": 2, "order": 40, "prerequisites": ["statistics"], "next": ["portfolio", "orders"]},
+    {"slug": "reversion", "title": "Mean Reversion", "full_title": "Mean Reversion and Pairs", "area": "signals", "level": 2, "order": 50, "prerequisites": ["statistics"], "next": ["asset-classes"]},
+    {"slug": "momentum", "title": "Momentum", "full_title": "Cross-Sectional and Time-Series Momentum", "area": "signals", "level": 2, "order": 60, "prerequisites": ["statistics"], "next": ["asset-classes"]},
+    {"slug": "portfolio", "title": "Portfolio Construction", "full_title": "Weights, Risk Budgets and Constraints", "area": "portfolio", "level": 3, "order": 70, "prerequisites": ["performance", "trend"], "next": ["asset-classes"]},
+    {"slug": "orders", "title": "Orders and Execution", "full_title": "Orders, Fills and Execution", "area": "execution", "level": 3, "order": 80, "prerequisites": ["markets", "trend"], "next": ["backtesting"]},
+    {"slug": "backtesting", "title": "Backtesting", "full_title": "Backtesting as an Experiment", "area": "research", "level": 3, "order": 90, "prerequisites": ["performance", "orders"], "next": ["validation"]},
+    {"slug": "asset-classes", "title": "Asset Classes", "full_title": "Equity, FX, Futures and Market-Neutral Books", "area": "practice", "level": 3, "order": 100, "prerequisites": ["momentum", "portfolio", "orders"], "next": ["research-craft"]},
+    {"slug": "validation", "title": "Validation and Overfitting", "full_title": "Walk-Forward Tests and Overfitting", "area": "research", "level": 4, "order": 110, "prerequisites": ["statistics", "backtesting"], "next": ["research-craft"]},
+    {"slug": "research-craft", "title": "Research Practice", "full_title": "Specifications, Monitoring and the Boundary", "area": "practice", "level": 4, "order": 120, "prerequisites": ["validation", "asset-classes"], "next": []}
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "slug": "statistics",
+  "title": "Statistics for Trading Research",
+  "full_title": "Statistics for Trading Research",
+  "area": "measurement",
+  "level": 2,
+  "order": 30,
+  "tagline": "Dependence, regression of a return on a signal, testing, regimes and resampling",
+  "summary": "Trading rules are claims about dependence in returns. This course sets up expectation, variance and autocorrelation, the regression of a future return on a signal known today, hypothesis tests under multiple looks at the same history, stationarity and regimes, and resampling methods that respect time order.",
+  "overview": [
+    "Probability and statistics are taught in full in the Maths Atlas. This course does not repeat that development. It specialises the pieces a trading experiment actually uses: the mean and variance of a return, the covariance that diversification relies on, and the autocorrelation that trend and mean-reversion stories are arguing about.",
+    "A signal is interesting only if it lines up with a later return. The regression chapter writes that sentence as a model, with the signal lagged so that the fit cannot see the future. Hypothesis tests then ask whether a slope or a mean excess return is distinguishable from noise — and, just as importantly, whether the test still means anything after many rules have been tried on the same years.",
+    "Returns are not a single stationary draw. Volatility clusters, correlations rise in stress, and a rule estimated in one regime can fail in the next. The last chapter replaces the fantasy of an i.i.d. sample with block bootstrap and related resamples that keep local dependence.",
+    "Nothing here is a claim that a particular pattern will persist. The course supplies the language in which later courses state their hypotheses and the tests those hypotheses have to survive."
+  ],
+  "prerequisites": [
+    "performance"
+  ],
+  "outcomes": [
+    "Compute the mean, variance, covariance and autocorrelation of a return series and interpret each one.",
+    "Fit a regression of a next-period return on a signal known at the decision time, and read the slope, residual and R-squared.",
+    "State a hypothesis test for a mean excess return and explain why many trials on one history inflate false discoveries.",
+    "Distinguish a stationary return model from a price level, and describe a simple two-regime picture of volatility.",
+    "Resample a dependent return series with a block bootstrap and say what the resulting interval does and does not cover.",
+    "Point to the matching theorem in the Maths Atlas when a proof belongs there rather than here."
+  ],
+  "chapters": [
+    {
+      "slug": "moments-and-dependence",
+      "title": "Moments and dependence",
+      "summary": "Expectation, variance, covariance and autocorrelation of returns, and what each one is evidence for.",
+      "requires": [
+        "performance/simple-and-log-returns"
+      ]
+    },
+    {
+      "slug": "regression-on-a-signal",
+      "title": "Regression of a return on a signal",
+      "summary": "A lagged signal as a regressor, least squares, and why a same-bar regression is not a forecast.",
+      "requires": [
+        "statistics/moments-and-dependence"
+      ]
+    },
+    {
+      "slug": "testing-and-snooping",
+      "title": "Tests and data snooping",
+      "summary": "Tests of a mean or a slope, and the multiplicity problem when many rules see one history.",
+      "requires": [
+        "statistics/regression-on-a-signal"
+      ]
+    },
+    {
+      "slug": "stationarity-and-regimes",
+      "title": "Stationarity and regimes",
+      "summary": "Why price levels are not stationary, volatility clustering, and a two-state picture of calm and stress.",
+      "requires": [
+        "statistics/moments-and-dependence"
+      ]
+    },
+    {
+      "slug": "resampling",
+      "title": "Resampling a return series",
+      "summary": "The i.i.d. bootstrap, the block bootstrap, and intervals for a mean or a Sharpe ratio.",
+      "requires": [
+        "statistics/testing-and-snooping"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1900,
+      "title": "Théorie de la spéculation",
+      "detail": "Bachelier modelled the price of a French government bond as a random walk and derived an option formula. The dissertation is the start of the mathematical theory of speculative prices.",
+      "people": [
+        "Louis Bachelier"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Efficient capital markets",
+      "detail": "Fama’s review organised the evidence on whether prices reflect information, and gave the weak, semi-strong and strong forms that later empirical work argues with.",
+      "people": [
+        "Eugene F. Fama"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Prices do not follow random walks",
+      "detail": "Lo and MacKinlay rejected the random-walk hypothesis for weekly US stock returns using a variance-ratio test. Dependence can be statistically detectable and still economically small.",
+      "people": [
+        "Andrew W. Lo",
+        "A. Craig MacKinlay"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "A reality check for data snooping",
+      "detail": "White gave a bootstrap test of whether the best rule in a large search beats the benchmark, once the search itself is taken into account.",
+      "people": [
+        "Halbert White"
+      ]
+    },
+    {
+      "year": 2016,
+      "title": "The cross-section of expected returns",
+      "detail": "Harvey, Liu and Zhu documented the multiplicity behind the factor literature and argued that published t-statistics overstate the evidence.",
+      "people": [
+        "Campbell R. Harvey",
+        "Yan Liu",
+        "Heqing Zhu"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Econometrics of Financial Markets",
+      "authors": "John Y. Campbell, Andrew W. Lo and A. Craig MacKinlay",
+      "year": 1997,
+      "note": "The standard bridge from statistics to returns, predictability and event studies."
+    },
+    {
+      "title": "Analysis of Financial Time Series",
+      "authors": "Ruey S. Tsay",
+      "year": 2010,
+      "note": "Autocorrelation, volatility models and resampling, with worked financial series."
+    },
+    {
+      "title": "A Reality Check for Data Snooping",
+      "authors": "Halbert White",
+      "year": 2000,
+      "note": "Econometrica. The paper to read before treating the winner of a search as a discovery."
+    },
+    {
+      "title": "… and the Cross-Section of Expected Returns",
+      "authors": "Campbell R. Harvey, Yan Liu and Heqing Zhu",
+      "year": 2016,
+      "note": "Review of Financial Studies. Multiplicity in the factor literature."
+    },
+    {
+      "title": "All of Statistics",
+      "authors": "Larry Wasserman",
+      "year": 2004,
+      "note": "A compact reference for the probability this course uses and does not re-prove. The full development is in the Maths Atlas."
+    }
+  ],
+  "next": [
+    "trend",
+    "reversion",
+    "momentum",
+    "validation"
+  ]
+}

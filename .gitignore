@@ -13,6 +13,8 @@
 /earth/data/cache/
 /english/data/cache/
 /chinese/data/cache/
+/quant/data/cache/
+/europe/data/cache/
 
 # Read-aloud audio for the Medicine Atlas lessons (~6 GB): remade by medicine/tools/tts.py
 /medicine/audio/

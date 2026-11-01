@@ -1,0 +1,17 @@
+{
+  "_doc": "Field-wide milestones for the timeline (course-specific events live in each course.json). year < 0 means BC.",
+  "milestones": [
+    {"year": -490, "title": "Marathon", "detail": "A Persian expedition is defeated. The war continues, and Persia remains the great power of the region.", "people": ["Darius I"], "area": "mediterranean"},
+    {"year": 476, "title": "A conventional end in the west", "detail": "Romulus Augustulus is deposed. The date is the usual marker for the end of the western emperors. The eastern empire continues.", "people": ["Odoacer"], "area": "mediterranean"},
+    {"year": 800, "title": "An imperial claim in the west", "detail": "Charlemagne is crowned in Rome on 25 December. The claim is new, and Constantinople does not accept it as the only Roman empire.", "people": ["Charlemagne"], "area": "medieval"},
+    {"year": 1453, "title": "Constantinople falls", "detail": "On 29 May the Ottoman sultan Mehmed II takes the city. The eastern Roman state ends. The same summer, Castillon ends the conventional Hundred Years' War.", "people": ["Mehmed II"], "area": "medieval"},
+    {"year": 1517, "title": "Theses", "detail": "The Ninety-five Theses are dated 31 October. The story of a church door is later and is not established.", "people": ["Martin Luther"], "area": "reform"},
+    {"year": 1648, "title": "Westphalia", "detail": "The peace of 24 October adjusts the religious settlement of the empire. A theory of modern sovereignty is a later reading of it.", "people": ["Peace of Westphalia"], "area": "reform"},
+    {"year": 1789, "title": "A summer of acts", "detail": "From the opening of the Estates-General on 5 May to the Declaration of 26 August, the French Revolution is a sequence. The republic is not one of those summer acts.", "people": ["Louis XVI"], "area": "modern"},
+    {"year": 1848, "title": "A year of revolutions", "detail": "Revolutions break out in many cities. The Communist Manifesto is published in London in February. Some results last, and many regimes do not.", "people": ["Karl Marx"], "area": "modern"},
+    {"year": 1914, "title": "War is declared", "detail": "From the assassination on 28 June to the British declaration on 4 August, the July crisis is a chain of choices under a mobilisation timetable.", "people": ["Franz Ferdinand"], "area": "modern"},
+    {"year": 1945, "title": "Surrender, with two dates", "detail": "Germany surrenders at Reims on 7 May and at Karlshorst on 8 May. The Soviet Union marked 9 May. The murder of the Jews is part of what the war contained.", "people": ["German surrender"], "area": "contemporary"},
+    {"year": 1957, "title": "The Treaties of Rome", "detail": "On 25 March six states establish the European Economic Community. Membership is not a definition of the continent.", "people": ["Treaties of Rome"], "area": "contemporary"},
+    {"year": 1989, "title": "The Wall is opened", "detail": "On 9 November the Berlin Wall is opened. It is one event in a year of exits from communist rule, not the end of European argument.", "people": ["Berlin Wall"], "area": "contemporary"}
+  ]
+}

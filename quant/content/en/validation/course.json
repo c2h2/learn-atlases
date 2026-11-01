@@ -1,0 +1,152 @@
+{
+  "slug": "validation",
+  "title": "Validation and Overfitting",
+  "full_title": "Walk-Forward Tests and Overfitting",
+  "area": "research",
+  "level": 4,
+  "order": 110,
+  "tagline": "Rolling and expanding walk-forward, purging, embargoes, grid search, sequential search and the deflated Sharpe ratio",
+  "summary": "A parameter chosen on the same sample that is then quoted as evidence has not been tested. This course builds walk-forward protocols — rolling, expanding and anchored — inserts a purge and an embargo where labels overlap, and treats grid search and a sequential model-based search as part of the experiment. The deflated Sharpe ratio is derived as a correction for selection, and the last chapter says what a stack of folds still does not prove.",
+  "overview": [
+    "The open library’s walk-forward examples are unusually honest about their own status. The pages describe rolling, expanding and anchored splits, with a purge before the test window, and they label the output as slice diagnostics rather than as independent out-of-sample evidence. This course teaches the machinery those pages are using, and it teaches the caveat in the same chapter as the machinery.",
+    "A walk-forward split is a sequence of training windows and later test windows. Rolling windows keep a fixed training length. Expanding windows use all history up to the split. An anchored design adds an explicit exclusion, fixed or proportional, so that a label which looks past the split does not train on data that overlap the test. That exclusion is the purge. An embargo adds a further gap when serial dependence would leak information across the boundary. López de Prado’s account is the one followed here.",
+    "Search is not validation. A 3 by 3 grid of moving-average windows, scored by the in-sample Sharpe ratio, is nine experiments. A sequential search such as the TPE sampler used by Optuna spends a budget of trials on the same history. The trial that wins is the most selected, not the most confirmed. Confirmation is a later walk-forward of the frozen choice, and even that confirmation is one path through one asset class.",
+    "The deflated Sharpe ratio, following Bailey and López de Prado, adjusts a reported Sharpe for the number of trials, the length of the sample and non-normality. The course works the formula on small numbers. It does not produce a threshold above which a rule should be traded."
+  ],
+  "prerequisites": [
+    "statistics",
+    "backtesting"
+  ],
+  "outcomes": [
+    "Construct a rolling and an expanding walk-forward split and state what is known at each training date.",
+    "Place a purge and an embargo between train and test when labels or dependence overlap the boundary.",
+    "Count the number of trials in a grid and explain why the best in-sample cell is a selected statistic.",
+    "Describe a sequential model-based search at the level of its objective and its trial budget, and separate the search from a later test of the winner.",
+    "Compute a deflated Sharpe ratio from a reported Sharpe, a trial count and a sample length under the stated assumptions.",
+    "Explain why dozens of folds on one history are not dozens of independent replications."
+  ],
+  "chapters": [
+    {
+      "slug": "walk-forward",
+      "title": "Walk-forward splits",
+      "summary": "Rolling and expanding windows, a pre-test purge, and the difference between a fold and a replication.",
+      "requires": [
+        "backtesting/the-backtest-as-an-experiment",
+        "statistics/testing-and-snooping"
+      ]
+    },
+    {
+      "slug": "purging-and-embargo",
+      "title": "Purging and embargoes",
+      "summary": "Why overlapping labels leak, and how a fixed or proportional purge and a serial embargo close the leak.",
+      "requires": [
+        "validation/walk-forward"
+      ]
+    },
+    {
+      "slug": "parameter-search",
+      "title": "Parameter search",
+      "summary": "Grids and sequential model-based search, trial budgets, and why the winner is not yet a result.",
+      "requires": [
+        "validation/walk-forward"
+      ]
+    },
+    {
+      "slug": "the-deflated-sharpe",
+      "title": "The deflated Sharpe ratio",
+      "summary": "Selection, multiple trials and non-normality as corrections to a reported Sharpe ratio.",
+      "requires": [
+        "validation/parameter-search",
+        "performance/uncertainty-of-performance"
+      ]
+    },
+    {
+      "slug": "what-a-fold-does-not-prove",
+      "title": "What a fold does not prove",
+      "summary": "Dependence across folds, one market regime, and the gap between a research diagnostic and a decision to trade.",
+      "requires": [
+        "validation/the-deflated-sharpe",
+        "validation/purging-and-embargo"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 2000,
+      "title": "A reality check that includes the search",
+      "detail": "White’s bootstrap reality check tests the best rule found by snooping against the null that none of the tried rules has value. It is the predecessor of later deflators.",
+      "people": [
+        "Halbert White"
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "Random search as a baseline",
+      "detail": "Bergstra and Bengio showed that random search is a strong and simple baseline for hyperparameter optimisation. A grid is not the only search, and it is not free of multiplicity.",
+      "people": [
+        "James Bergstra",
+        "Yoshua Bengio"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "The deflated Sharpe ratio",
+      "detail": "Bailey and López de Prado corrected a Sharpe ratio for selection bias, the number of trials and non-normal returns.",
+      "people": [
+        "David H. Bailey",
+        "Marcos López de Prado"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "Purged cross-validation",
+      "detail": "López de Prado’s book set out purged and embargoed cross-validation for financial labels that overlap in time. The walk-forward examples in the open library are a practical cousin of that design.",
+      "people": [
+        "Marcos López de Prado"
+      ]
+    },
+    {
+      "year": 2019,
+      "title": "Optuna and the TPE sampler",
+      "detail": "Akiba, Sano, Yanase, Ohta and Koyama released Optuna, whose Tree-structured Parzen Estimator is the sequential sampler the library’s fifth walk-forward example uses. The paper is about the optimiser, not about trading.",
+      "people": [
+        "Takuya Akiba"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Deflated Sharpe Ratio",
+      "authors": "David H. Bailey and Marcos López de Prado",
+      "year": 2014,
+      "note": "Journal of Portfolio Management. The formula this course computes."
+    },
+    {
+      "title": "Advances in Financial Machine Learning",
+      "authors": "Marcos López de Prado",
+      "year": 2018,
+      "note": "Purging, embargoes and combinatorial purged cross-validation."
+    },
+    {
+      "title": "A Reality Check for Data Snooping",
+      "authors": "Halbert White",
+      "year": 2000,
+      "note": "Econometrica. The bootstrap test of a searched winner."
+    },
+    {
+      "title": "Random Search for Hyper-Parameter Optimization",
+      "authors": "James Bergstra and Yoshua Bengio",
+      "year": 2012,
+      "note": "Journal of Machine Learning Research. Why a small grid is neither exhaustive nor innocent."
+    },
+    {
+      "title": "Optuna: A Next-generation Hyperparameter Optimization Framework",
+      "authors": "Takuya Akiba, Shotaro Sano, Toshihiko Yanase, Takeru Ohta and Masanori Koyama",
+      "year": 2019,
+      "note": "Proceedings of KDD. The sampler behind sequential search. Read it for the algorithm, not for a trading result."
+    }
+  ],
+  "next": [
+    "research-craft"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "slug": "rome",
+  "title": "Roman Worlds",
+  "full_title": "Roman Worlds",
+  "area": "mediterranean",
+  "level": 1,
+  "order": 30,
+  "tagline": "A republic that conquered a sea, a slavery at the centre of that conquest, a principate that kept republican names, and a western empire whose end is a convention",
+  "summary": "Rome is taught here as a republic, a slave society, a monarchy that did not advertise itself, and a later empire whose western end in 476 is a convention. Citizenship, the army and the frontiers are institutions. They are not a moral that Europe inherited ready-made.",
+  "overview": [
+    "The Republic’s traditional start in 509 BCE is a later story. The institutions — magistrates, senate, assemblies — are real, and so is the conquest of the Mediterranean that paid for politics in the city. Enslaved people are not a side chapter. Conquest and slavery are the same process seen from two ends.",
+    "The civil wars ended in a monarchy that kept the offices of the Republic. Actium and the name Augustus are markers, not a single evening on which freedom ended. The imperial chapters follow citizenship, cities and frontiers, including the wide grant of 212.",
+    "The third century is a bundle of crises, not one event. Diocletian and Constantine rebuilt a state. The sack of 410 and the deposition of 476 matter, and the eastern empire did not fall with them. Julius Nepos lived until 480. The next course starts from that survival."
+  ],
+  "prerequisites": [
+    "greece"
+  ],
+  "outcomes": [
+    "Separate the traditional date 509 BCE from the institutions of the Republic.",
+    "Connect Mediterranean conquest with slavery, using the Punic Wars as the case.",
+    "Explain what changed in 27 BCE and what republican forms were kept.",
+    "Say what the Constitutio Antoniniana did and did not do.",
+    "Explain why 476 is a convention, and what continued after it."
+  ],
+  "chapters": [
+    {
+      "slug": "republic",
+      "title": "The Republic",
+      "summary": "Traditional origins, magistrates, senate and assemblies, and expansion in Italy before the wars with Carthage.",
+      "requires": []
+    },
+    {
+      "slug": "slavery-and-conquest",
+      "title": "Slavery and conquest",
+      "summary": "The Punic Wars, provincial empire, and slavery as a central Roman institution rather than a private vice.",
+      "requires": [
+        "rome/republic"
+      ]
+    },
+    {
+      "slug": "end-of-the-republic",
+      "title": "The end of the Republic",
+      "summary": "Civil war, the Ides of March, Actium, and Augustus’ settlement. The forms survive the politics.",
+      "requires": [
+        "rome/slavery-and-conquest"
+      ]
+    },
+    {
+      "slug": "imperial-society",
+      "title": "Citizenship, cities, frontiers",
+      "summary": "Cities, the army, Trajan’s death in 117, and the grant of citizenship in 212.",
+      "requires": [
+        "rome/end-of-the-republic"
+      ]
+    },
+    {
+      "slug": "later-empire",
+      "title": "The later empire",
+      "summary": "The third-century crisis as a label, Diocletian, Constantine, 410, and 476 beside 480.",
+      "requires": [
+        "rome/imperial-society"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": -44,
+      "title": "The Ides of March",
+      "detail": "Julius Caesar is assassinated on 15 March 44 BCE. The Republic is not thereby restored.",
+      "people": [
+        "Julius Caesar"
+      ]
+    },
+    {
+      "year": -27,
+      "title": "Augustus",
+      "detail": "In 27 BCE Octavian is granted the name Augustus. Republican offices continue inside a new monarchy.",
+      "people": [
+        "Augustus"
+      ]
+    },
+    {
+      "year": 212,
+      "title": "A wide citizenship",
+      "detail": "The Constitutio Antoniniana extends Roman citizenship very widely. Enslaved people remain enslaved.",
+      "people": [
+        "Caracalla"
+      ]
+    },
+    {
+      "year": 476,
+      "title": "A conventional end",
+      "detail": "Odoacer deposes Romulus Augustulus. The eastern empire continues, and Julius Nepos dies only in 480.",
+      "people": [
+        "Odoacer",
+        "Romulus Augustulus"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "SPQR: A History of Ancient Rome",
+      "authors": "Mary Beard",
+      "year": 2015,
+      "note": "A survey from the city’s traditions to Caracalla, written against the idea of a single Roman lesson for later Europe."
+    },
+    {
+      "title": "Rome: An Empire’s Story",
+      "authors": "Greg Woolf",
+      "year": 2012,
+      "note": "The empire as a set of institutions and local deals, not as a map that filled itself in."
+    },
+    {
+      "title": "Slavery and Society at Rome",
+      "authors": "Keith Bradley",
+      "year": 1994,
+      "note": "Slavery as a structural fact of Roman society."
+    },
+    {
+      "title": "The Fall of the Roman Empire",
+      "authors": "Peter Heather",
+      "year": 2005,
+      "note": "One major account of the fifth-century west. Read it beside the argument that collapse was real, not beside a single moral."
+    }
+  ],
+  "next": [
+    "after-rome"
+  ]
+}

@@ -12,9 +12,10 @@ Every topic is explained in depth, with figures you can play with. Live at <http
 | **[Chinese Language and Literature Atlas](chinese/)** | 28 courses and 270 chapters for native speakers, at the level of a university degree in Chinese, every chapter written in Chinese with an English version: characters and calligraphy, modern Chinese, classical Chinese, literature from the *Book of Songs* to the present day, literary theory and world literature, and writing and reasoning. 264 interactive figures, 808 self-test questions and 905 exercises with solutions. Written in Chinese first; the site opens in Chinese. |
 | **[Peptide Atlas](peptides/)** | 44 therapeutic and research peptides (semaglutide, insulin, tirzepatide, BPC-157 …) drawn residue by residue, with 3D structures, history, regulation and worldwide attention. |
 
-**Skeletons, to be completed.** These eight atlases are curricula so far: every course and chapter is
-mapped out with a summary and its prerequisites, the guides for writing them are in place, and the
-lessons are still to be written. Each says "(skeleton)" in its title until it is finished.
+**Skeletons, to be completed.** These ten atlases are curricula so far: every course and chapter is
+mapped out with a summary and its prerequisites, and the guides for writing them are in place.
+Each says "(skeleton)" in its title until it is finished. Quant Trading and European History have
+their English lessons; the Chinese translations, and the other lessons, are still to be written.
 
 | | |
 |---|---|
@@ -26,10 +27,12 @@ lessons are still to be written. Each says "(skeleton)" in its title until it is
 | **[Economics and Finance Atlas](economics/)** (skeleton) | 25 courses and 220 chapters, for education only (not investment advice): micro- and macroeconomics, econometrics, game theory, finance, trade, development, and public and behavioural economics. |
 | **[Earth and Climate Science Atlas](earth/)** (skeleton) | 24 courses and 216 chapters: the Earth system, geology and geophysics, landscapes and water, the atmosphere, oceans and ice, Earth history and the climate system. |
 | **[English Language Atlas](english/)** (skeleton) | 26 courses and 251 chapters from CEFR level A1 to C2, for learners and especially Chinese speakers: pronunciation, vocabulary, grammar, reading, writing, listening and speaking, linguistics, the history and varieties of English, and English–Chinese translation. |
+| **[Quant Trading Atlas](quant/)** (skeleton) | 12 courses and 60 chapters on systematic trading research: market data, performance, trend, mean reversion and momentum, portfolios, orders, backtesting and walk-forward validation. For education only, not investment advice. The worked cases are the open library at quants.md. Every English lesson is written; the Chinese translation is not yet. |
+| **[European History Atlas](europe/)** (skeleton) | 12 courses and 60 chapters, from evidence and argument through Greece and Rome, the medieval west, the reformations, states and empires, the revolutions, industry and nations, the world wars, and Europe since 1945. For study. It is not a national myth, and it does not take a side in a live political dispute. Every English lesson is written; the Chinese translation is not yet. |
 
 All are plain PHP sites: no framework, no database, no build step needed to serve them, and every
 script, font and library is self-hosted. The thirteen course atlases share one lesson engine (each keeps
-its own copy); the eight skeletons are generated from the Maths Atlas engine by
+its own copy); the ten skeletons are generated from the Maths Atlas engine by
 [`tools/mkatlas.py`](tools/mkatlas.py) and the specs in `tools/atlas-specs/`, and re-running it
 brings later engine fixes into them without touching their content.
 
@@ -48,7 +51,7 @@ Optional, for speed and completeness:
 
 - **Maths:** `cd maths && tools/build.sh` (Node 18+) pre-renders every formula with KaTeX and checks
   all lessons; without it, formulas are rendered in the browser. See [maths/README.md](maths/README.md).
-  The EE and Medicine atlases and the eight skeletons have the same tools (see their READMEs); for Physics run
+  The EE and Medicine atlases and the ten skeletons have the same tools (see their READMEs); for Physics run
   `php tools/extract.php && node tools/build.js && php tools/prerender.php`.
 - **Peptides:** `cd peptides && tools/refresh.sh` fetches Wikipedia, PubMed, ClinicalTrials.gov,
   PubChem and PDB data (attention maps and charts stay empty until then). See
@@ -63,8 +66,8 @@ physics/               Physics Atlas
 ee/                    Electrical Engineering Atlas (curriculum; lessons being written)
 medicine/              Medicine Atlas
 peptides/              Peptide Atlas
-llm/  chemistry/  cs/  biology/  mechanical/  economics/  earth/  english/
-                       the eight skeleton atlases (curricula; lessons to be written)
+llm/  chemistry/  cs/  biology/  mechanical/  economics/  earth/  english/  quant/  europe/
+                       the ten skeleton atlases (Quant Trading and European History have their English lessons)
 chinese/               Chinese Atlas — 中文图谱 (written in Chinese, mirrored in English)
 tools/                 mkatlas.py, which generates the skeleton atlases from the Maths engine, and their specs
 ```

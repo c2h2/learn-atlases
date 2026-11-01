@@ -1,0 +1,129 @@
+{
+  "slug": "greece",
+  "title": "Greek Worlds",
+  "full_title": "Greek Worlds",
+  "area": "mediterranean",
+  "level": 1,
+  "order": 20,
+  "tagline": "Poleis, Persia, a democracy of some of the men, a long war, and Alexander’s empire that did not stay one kingdom",
+  "summary": "This course refuses the picture of a single Greek nation waiting to become Europe. It teaches the polis, the Persian wars as wars against a great empire, the exclusions inside Athenian democracy, the Peloponnesian War as a Greek war, and Alexander’s conquest as the start of several Hellenistic kingdoms.",
+  "overview": [
+    "The Greek past that later Europeans claimed was a world of poleis: small citizen-states, colonies, and arguments about who the citizens were. Persia was the great power on the other side of the Aegean. A story that needs the Persians to be a formless East is not using the evidence.",
+    "Athenian democracy is real and it is narrow. The chapters name who voted, who did not, and which laws tightened the citizen body. Socrates’ death is a fact about that city, not a summary of the Greek mind.",
+    "The Peloponnesian War was fought among Greeks. It is not a rehearsal for a later clash of civilisations. Alexander’s campaign destroyed the Achaemenid imperial centre and did not leave a single successor. The Hellenistic kingdoms are the result, and they are the world Rome later met."
+  ],
+  "prerequisites": [
+    "sources"
+  ],
+  "outcomes": [
+    "Define a polis and say why it is not a nation-state.",
+    "Place Marathon, Salamis and Plataea, and describe Persia as an empire rather than as a symbol.",
+    "State who was excluded from the Athenian citizen body after the mid-fifth century.",
+    "Explain the Peloponnesian War as a war among Greek states, with dates for its start and for Athens’ surrender.",
+    "Explain why Alexander’s death in 323 BCE is the start of a political problem, not the completion of a Greek nation."
+  ],
+  "chapters": [
+    {
+      "slug": "poleis",
+      "title": "What a polis was",
+      "summary": "A polis is a citizen community and a territory. Colonies, leagues and tyrannies belong in the picture. A Greek nation does not.",
+      "requires": []
+    },
+    {
+      "slug": "persian-wars",
+      "title": "The Persian wars",
+      "summary": "Marathon, Thermopylae, Salamis and Plataea, and the Achaemenid empire as a state with its own politics.",
+      "requires": [
+        "greece/poleis"
+      ]
+    },
+    {
+      "slug": "athenian-democracy",
+      "title": "A democracy of some of the men",
+      "summary": "Cleisthenes, the institutions, Pericles’ citizenship law, and the exclusion of women, enslaved people and metics.",
+      "requires": [
+        "greece/persian-wars"
+      ]
+    },
+    {
+      "slug": "peloponnesian-war",
+      "title": "A war among Greeks",
+      "summary": "From 431 to 404 BCE: empire inside the Aegean, plague, Sicily, and the surrender of Athens. Philosophy is not the same thing as the city’s policy.",
+      "requires": [
+        "greece/athenian-democracy"
+      ]
+    },
+    {
+      "slug": "alexander",
+      "title": "Alexander and after",
+      "summary": "Macedon, Chaeronea, the campaign to Babylon, and the kingdoms that followed a death in 323 BCE.",
+      "requires": [
+        "greece/peloponnesian-war"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": -490,
+      "title": "Marathon",
+      "detail": "A Persian expedition is defeated by Athens and its allies. The war is not over.",
+      "people": [
+        "Darius I"
+      ]
+    },
+    {
+      "year": -480,
+      "title": "Salamis",
+      "detail": "In the same campaign season as Thermopylae, a Greek fleet defeats the Persian fleet at Salamis.",
+      "people": [
+        "Xerxes I",
+        "Themistocles"
+      ]
+    },
+    {
+      "year": -431,
+      "title": "The Peloponnesian War begins",
+      "detail": "Athens and Sparta, and their allies, begin the war that ends with Athens’ surrender in 404 BCE.",
+      "people": [
+        "Pericles"
+      ]
+    },
+    {
+      "year": -323,
+      "title": "Death of Alexander",
+      "detail": "Alexander dies in Babylon. The conquered empire is divided among his commanders rather than inherited as one Greek state.",
+      "people": [
+        "Alexander of Macedon"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Greece in the Making, 1200–479 BC",
+      "authors": "Robin Osborne",
+      "year": 1996,
+      "note": "A history of the archaic Greek world that does not start from a later national story."
+    },
+    {
+      "title": "Polis: An Introduction to the Ancient Greek City-State",
+      "authors": "Mogens Herman Hansen",
+      "year": 2006,
+      "note": "What a polis was, from the Copenhagen Polis Centre’s comparative work."
+    },
+    {
+      "title": "Democracy: A Life",
+      "authors": "Paul Cartledge",
+      "year": 2016,
+      "note": "Athenian democracy as an institution with a history, including its exclusions."
+    },
+    {
+      "title": "Alexander the Great and His Empire",
+      "authors": "Pierre Briant",
+      "year": 2010,
+      "note": "The conquest read against the Achaemenid empire it overthrew, and against the legend."
+    }
+  ],
+  "next": [
+    "rome"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "slug": "portfolio",
+  "title": "Portfolio Construction",
+  "full_title": "Weights, Risk Budgets and Constraints",
+  "area": "portfolio",
+  "level": 3,
+  "order": 70,
+  "tagline": "From a signal to a weight: inverse volatility, volatility targeting, risk parity, drift and caps",
+  "summary": "A signal is not a portfolio. This course turns signs and scores into weights: equal weight, inverse volatility, volatility targeting, and equal risk contribution. It then adds the constraints that dominate live research — drift bands, turnover budgets, tracking-error gates, drawdown breakers, long-only holdings and market-neutral budgets — and shows what each one changes in the algebra.",
+  "overview": [
+    "The open library splits research into weight strategies and order strategies. This course is the weight half. A weight is a target fraction of net asset value. Getting from a vector of signals to a vector of weights is a separate model, with its own parameters, and it can dominate the signal. Two rules with the same moving-average sign can have very different paths once one of them is scaled to a volatility target.",
+    "Inverse volatility and volatility targeting both divide by a risk estimate. They answer different questions. Inverse volatility sets relative sizes so that each asset contributes a similar standalone variance. Volatility targeting scales the whole book, or a sleeve, so that a recent volatility estimate matches a chosen number. Risk parity, in the equal-risk-contribution sense, sets weights so that each position’s marginal contribution to portfolio variance is equal. A cap on a single weight is a further constraint, and it breaks the pure solution.",
+    "Rebalancing policy is part of the portfolio. Trading only at month-end, only after a weight has drifted by a stated band, or only when a tracking-error or turnover budget allows, changes turnover and therefore the cost term studied in Backtesting. A circuit breaker that flattens the book after a drawdown is a path-dependent weight, not a property of the signal.",
+    "Long-only weights live in a simplex. Market-neutral weights sum to zero, or to zero after a hedge, and need a convention for gross exposure. The course writes both feasible sets. It does not pick a portfolio for the reader."
+  ],
+  "prerequisites": [
+    "performance",
+    "trend"
+  ],
+  "outcomes": [
+    "Map a vector of signals to a vector of weights under a stated gross-exposure and long-only or long–short constraint.",
+    "Compute inverse-volatility weights and a volatility-targeting scale, and explain the difference.",
+    "State the equal-risk-contribution condition and compute it for a diagonal covariance.",
+    "Write a drift band, a turnover budget and a tracking-error gate as constraints on the trade, not on the signal.",
+    "Define a drawdown circuit breaker as a path-dependent weight and show how it changes compound growth.",
+    "Distinguish a long-only simplex from a dollar-neutral book with a gross-exposure budget."
+  ],
+  "chapters": [
+    {
+      "slug": "from-signal-to-weight",
+      "title": "From a signal to a weight",
+      "summary": "Equal weight, score-proportional weight, gross exposure, and the difference between a sign and a holding.",
+      "requires": [
+        "performance/volatility-and-drawdown",
+        "trend/moving-averages"
+      ]
+    },
+    {
+      "slug": "inverse-volatility-and-targets",
+      "title": "Inverse volatility and volatility targets",
+      "summary": "Sizing by the reciprocal of volatility, and scaling a book to a stated volatility.",
+      "requires": [
+        "portfolio/from-signal-to-weight"
+      ]
+    },
+    {
+      "slug": "risk-parity",
+      "title": "Risk parity",
+      "summary": "Equal risk contribution, the role of correlation, and a per-name cap that breaks the unconstrained solution.",
+      "requires": [
+        "portfolio/inverse-volatility-and-targets"
+      ]
+    },
+    {
+      "slug": "drift-turnover-and-breakers",
+      "title": "Drift, turnover and circuit breakers",
+      "summary": "Drift bands, turnover budgets, tracking-error gates and drawdown flatteners.",
+      "requires": [
+        "portfolio/from-signal-to-weight"
+      ]
+    },
+    {
+      "slug": "long-only-and-neutral",
+      "title": "Long-only and market-neutral weights",
+      "summary": "The simplex, dollar neutrality, beta neutrality as a constraint, and gross versus net exposure.",
+      "requires": [
+        "portfolio/risk-parity"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1952,
+      "title": "Variance as a portfolio objective",
+      "detail": "Markowitz’s mean–variance problem is the ancestor of every risk budget in this course: weights chosen to control variance, subject to constraints the investor can actually hold.",
+      "people": [
+        "Harry Markowitz"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Separation",
+      "detail": "Tobin showed that, under his assumptions, every mean–variance investor holds a combination of the risk-free asset and a single tangency portfolio. Volatility targeting is a later, cruder relative of that separation.",
+      "people": [
+        "James Tobin"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "Risk parity portfolios",
+      "detail": "Qian’s research note argued for allocating by risk contribution rather than by capital, the idea behind the equal-risk-contribution books in this course.",
+      "people": [
+        "Edward Qian"
+      ]
+    },
+    {
+      "year": 2010,
+      "title": "The properties of equal risk contribution",
+      "detail": "Maillard, Roncalli and Teiletche characterised equally weighted risk-contribution portfolios and their place between minimum variance and equal weight.",
+      "people": [
+        "Sébastien Maillard",
+        "Thierry Roncalli",
+        "Jérôme Teïletche"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "A single-factor hedge",
+      "detail": "Sharpe’s CAPM supplied the beta that a later market-neutral constraint sets to zero. The model is a constraint one may impose, not a description one has to believe in full.",
+      "people": [
+        "William F. Sharpe"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Portfolio Selection",
+      "authors": "Harry Markowitz",
+      "year": 1952,
+      "note": "Journal of Finance. The mean–variance problem."
+    },
+    {
+      "title": "The Properties of Equally Weighted Risk Contribution Portfolios",
+      "authors": "Sébastien Maillard, Thierry Roncalli and Jérôme Teïletche",
+      "year": 2010,
+      "note": "Journal of Portfolio Management. The ERC characterisation used here."
+    },
+    {
+      "title": "Risk Parity Portfolios",
+      "authors": "Edward Qian",
+      "year": 2005,
+      "note": "The short note that put risk contribution, rather than capital, at the centre of the allocation."
+    },
+    {
+      "title": "Expected Returns",
+      "authors": "Antti Ilmanen",
+      "year": 2011,
+      "note": "A survey of return and risk sources across asset classes, with the diversification argument stated carefully."
+    },
+    {
+      "title": "Quantitative Equity Portfolio Management",
+      "authors": "Edward Qian, Ronald Hua and Eric Sorensen",
+      "year": 2007,
+      "note": "Constraints, risk models and long-only books at the level a specification needs."
+    }
+  ],
+  "next": [
+    "asset-classes"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "slug": "nations",
+  "title": "Nations and Industry",
+  "full_title": "Industry, Nations and Empires, 1815 to 1914",
+  "area": "modern",
+  "level": 4,
+  "order": 100,
+  "tagline": "Mechanised industry as a claim about Britain, nations made and nations refused, mass politics, overseas empire, and a July crisis that was full of choices",
+  "summary": "From 1815 to 1914 European states industrialised on different paths, built or refused nation-states, widened some franchises, partitioned much of Africa, and entered a war in 1914 that was not an appointment the nineteenth century had made. This course keeps the census integers, the unifications, the reform acts, the Berlin Conference and the July dates in one frame.",
+  "overview": [
+    "The census chapter uses England and Wales in 1801, 1851 and 1901, and Ireland in 1841 and 1851. The two 1801 figures for England and Wales are both taught. The Irish fall is not a death count. Industry is taught as the classic claim about British cotton, coal and iron, together with the arguments about coal, slavery and empire.",
+    "Italy and Germany are made by war and negotiation between 1859 and 1871. Poland is not. Mass politics means reform acts, socialist parties, churches and antisemitism, with the Dreyfus affair as the worked case. Finland in 1906 is a parliamentary franchise that includes women. Britain’s nineteenth-century reform acts do not.",
+    "The Berlin Conference regulates claims. It does not hand over a continent in an afternoon. Congo and German South-West Africa are taught as documented violence, without invented death totals. The alliances of 1879–1907 and the dates of July and early August 1914 close the course. A staff plan constrained Germany. It did not abolish choice."
+  ],
+  "prerequisites": [
+    "revolutions"
+  ],
+  "outcomes": [
+    "Quote the locked census figures and explain the gap between the two 1801 totals for England and Wales.",
+    "State the classic claim about British industrialisation and two arguments against treating it as a law.",
+    "Date the proclamation of the Kingdom of Italy and of the German Empire, and name a nation that did not receive a state.",
+    "Explain the Berlin Conference and refuse an invented death total for Congo or for the Herero and Nama.",
+    "Order the declarations of late July and early August 1914 and say what a mobilisation plan does not prove."
+  ],
+  "chapters": [
+    {
+      "slug": "industry",
+      "title": "Industry and numbers",
+      "summary": "Census figures, railways, factory law, and the claim that Britain industrialised first.",
+      "requires": []
+    },
+    {
+      "slug": "unifications",
+      "title": "Unifications",
+      "summary": "Italy and Germany, the Ausgleich, and nations — Polish, Irish, Czech — without a state of their own.",
+      "requires": [
+        "nations/industry"
+      ]
+    },
+    {
+      "slug": "mass-politics",
+      "title": "Mass politics",
+      "summary": "Reform acts, socialist parties, the Paris Commune, Dreyfus, 1905 in Russia, and the Finnish franchise of 1906.",
+      "requires": [
+        "nations/unifications"
+      ]
+    },
+    {
+      "slug": "empires",
+      "title": "Empires",
+      "summary": "Algiers, 1857 in India, Berlin 1884–85, Congo, and German South-West Africa.",
+      "requires": [
+        "nations/mass-politics"
+      ]
+    },
+    {
+      "slug": "toward-1914",
+      "title": "Toward 1914",
+      "summary": "Alliances, the Balkan Wars, Sarajevo, and the declarations of war. Choices under a timetable.",
+      "requires": [
+        "nations/empires"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1801,
+      "title": "Two figures for one census",
+      "detail": "The Enumeration Abstract gives England 8,331,434 and Wales 541,546. A later official series used by the 1901 report gives England and Wales as 8,892,536. Both are part of the history of the number.",
+      "people": [
+        "1801 census"
+      ]
+    },
+    {
+      "year": 1871,
+      "title": "An empire proclaimed",
+      "detail": "On 18 January 1871 the German Empire is proclaimed at Versailles, while Paris is still at war and before the Commune.",
+      "people": [
+        "Otto von Bismarck",
+        "Wilhelm I"
+      ]
+    },
+    {
+      "year": 1884,
+      "title": "Berlin",
+      "detail": "The Berlin Conference sits from 15 November 1884 to 26 February 1885 and regulates European claims in Africa. Conquest is a longer and more violent process.",
+      "people": [
+        "Otto von Bismarck"
+      ]
+    },
+    {
+      "year": 1914,
+      "title": "A crisis with dates",
+      "detail": "Franz Ferdinand is killed on 28 June 1914. Austria-Hungary declares war on Serbia on 28 July. By 4 August Germany has invaded Belgium and Britain has declared war on Germany.",
+      "people": [
+        "Franz Ferdinand"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Pursuit of Power: Europe 1815–1914",
+      "authors": "Richard J. Evans",
+      "year": 2016,
+      "note": "A survey of the century that keeps society, empire and politics in one narrative."
+    },
+    {
+      "title": "The Age of Empire, 1875–1914",
+      "authors": "Eric Hobsbawm",
+      "year": 1987,
+      "note": "A powerful Marxist synthesis. Use it as an argument about capital and empire, not as a neutral chronicle."
+    },
+    {
+      "title": "The Sleepwalkers: How Europe Went to War in 1914",
+      "authors": "Christopher Clark",
+      "year": 2012,
+      "note": "One major interpretation of the July crisis. The lesson treats it as an argument about choices."
+    },
+    {
+      "title": "The Transformation of the World: A Global History of the Nineteenth Century",
+      "authors": "Jürgen Osterhammel",
+      "year": 2014,
+      "note": "The century at a global scale, useful when a European chapter is tempted to ignore the empires."
+    }
+  ],
+  "next": [
+    "wars"
+  ]
+}

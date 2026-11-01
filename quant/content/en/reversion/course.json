@@ -1,0 +1,152 @@
+{
+  "slug": "reversion",
+  "title": "Mean Reversion",
+  "full_title": "Mean Reversion and Pairs",
+  "area": "signals",
+  "level": 2,
+  "order": 50,
+  "tagline": "RSI, Bollinger bands, pairs spreads and short-horizon reversal, and the regimes that break them",
+  "summary": "Mean reversion bets that a move overshoots and then gives some of itself back. This course separates that hypothesis from trend, builds RSI and Bollinger rules, constructs a pairs spread by a ratio and by a hedge ratio, and treats cross-sectional reversal as the same idea applied to a ranking. The last chapter is about failure: a reversion rule in a trend, and an exit rule that dominates the entry.",
+  "overview": [
+    "Short-horizon equity returns have, in several classic studies, tended to reverse: last month’s losers have outperformed last month’s winners over the next month, before costs. That sentence is not a trading rule. A trading rule names the universe, the horizon, the entry, the exit and the cost. RSI thresholds, a close below a Bollinger band, and a z-score of a log price ratio are three such namings. They can all lose money in a sample where the historical average reversal was positive, because the implementation is part of the hypothesis.",
+    "Pairs trading tightens the idea. Two prices that share a common component may leave a spread that is more stable than either price. A ratio z-score and a rolling ordinary-least-squares hedge ratio are different estimates of that spread. Neither is cointegration until the assumptions of a cointegration test are stated and checked. The course states them and does not pretend a single z-score plot is the test.",
+    "The open library includes both profitable-looking and loss-making reversion examples, including a trailing-stop exit on an RSI entry whose reported compound return is negative. Those pages are there to be read, not to be ranked into a portfolio. The failure chapter asks which part of the rule broke.",
+    "As elsewhere, nothing is a suggestion to trade a pair, a band or an oscillator."
+  ],
+  "prerequisites": [
+    "statistics"
+  ],
+  "outcomes": [
+    "State short-horizon reversal as a hypothesis, separate from time-series momentum, and name the horizon each one uses.",
+    "Compute Wilder’s RSI and a Bollinger band, and write an entry and an exit in terms of each.",
+    "Build a spread as a log price ratio and as a rolling hedge-ratio residual, and state what a z-score assumes.",
+    "Distinguish correlation from cointegration and list the assumptions of an Engle–Granger style residual test.",
+    "Define a cross-sectional reversal book as a ranking of recent returns with explicit long and short legs.",
+    "Diagnose a reversion rule whose exit, rather than its entry, accounts for the reported loss."
+  ],
+  "chapters": [
+    {
+      "slug": "the-reversion-hypothesis",
+      "title": "The reversion hypothesis",
+      "summary": "Short-horizon reversal and slow mean reversion in prices as two different claims, with the evidence attached to each.",
+      "requires": [
+        "statistics/moments-and-dependence"
+      ]
+    },
+    {
+      "slug": "rsi-and-bands",
+      "title": "RSI and Bollinger bands",
+      "summary": "The relative strength index, Bollinger bands, and threshold rules for entry and exit.",
+      "requires": [
+        "reversion/the-reversion-hypothesis"
+      ]
+    },
+    {
+      "slug": "pairs-and-spreads",
+      "title": "Pairs and spreads",
+      "summary": "Log-ratio z-scores, rolling hedge ratios, and what cointegration adds beyond a correlation.",
+      "requires": [
+        "reversion/rsi-and-bands",
+        "statistics/regression-on-a-signal"
+      ]
+    },
+    {
+      "slug": "cross-sectional-reversal",
+      "title": "Cross-sectional reversal",
+      "summary": "Long recent losers and short recent winners: the portfolio version of short-horizon reversal.",
+      "requires": [
+        "reversion/the-reversion-hypothesis"
+      ]
+    },
+    {
+      "slug": "when-reversion-fails",
+      "title": "When reversion fails",
+      "summary": "Trends, structural breaks and exit rules that dominate the entry, read off published examples that lost money.",
+      "requires": [
+        "reversion/pairs-and-spreads",
+        "reversion/rsi-and-bands"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1978,
+      "title": "The relative strength index",
+      "detail": "Wilder defined the RSI in New Concepts in Technical Trading Systems, as a normalised comparison of average gains and average losses over a fixed window. The 14-period window used everywhere since is his suggestion, not a theorem.",
+      "people": [
+        "J. Welles Wilder"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Mean reversion in stock prices",
+      "detail": "Poterba and Summers reported evidence that stock-price innovations reverse in part over long horizons. The horizon is years, not the few days of an oscillator rule.",
+      "people": [
+        "James Poterba",
+        "Lawrence Summers"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "Short-horizon reversal",
+      "detail": "Jegadeesh, and separately Lehmann, documented negative autocorrelation in individual US stock returns at horizons of a week to a month.",
+      "people": [
+        "Narasimhan Jegadeesh",
+        "Bruce Lehmann"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Bollinger bands in print",
+      "detail": "John Bollinger’s book set out the band construction he had used since the early 1980s: a moving average plus and minus a multiple of a moving standard deviation.",
+      "people": [
+        "John Bollinger"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "Pairs trading as a relative-value rule",
+      "detail": "Gatev, Goetzmann and Rouwenhorst specified a distance-based pairs rule on US stocks and reported its historical performance after a delay that limits look-ahead in the matching step.",
+      "people": [
+        "Evan Gatev",
+        "William Goetzmann",
+        "K. Geert Rouwenhorst"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Evidence of Predictable Behavior of Security Returns",
+      "authors": "Narasimhan Jegadeesh",
+      "year": 1990,
+      "note": "Journal of Finance. Short-horizon reversal in individual stocks."
+    },
+    {
+      "title": "Fads, Martingales, and Market Efficiency",
+      "authors": "Bruce N. Lehmann",
+      "year": 1990,
+      "note": "Quarterly Journal of Economics. A companion weekly-reversal result."
+    },
+    {
+      "title": "Pairs Trading: Performance of a Relative-Value Arbitrage Rule",
+      "authors": "Evan Gatev, William N. Goetzmann and K. Geert Rouwenhorst",
+      "year": 2006,
+      "note": "Review of Financial Studies. The paper to imitate when you specify a pairs rule, especially the matching delay."
+    },
+    {
+      "title": "Bollinger on Bollinger Bands",
+      "authors": "John Bollinger",
+      "year": 2001,
+      "note": "The source for the band definition. Treat the trading advice as the author’s, and the formula as the object of study."
+    },
+    {
+      "title": "Analysis of Financial Time Series",
+      "authors": "Ruey S. Tsay",
+      "year": 2010,
+      "note": "Unit roots and cointegration at the level this course needs."
+    }
+  ],
+  "next": [
+    "asset-classes"
+  ]
+}

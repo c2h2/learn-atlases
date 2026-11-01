@@ -1,0 +1,128 @@
+{
+  "slug": "wars",
+  "title": "The World Wars",
+  "full_title": "Europe, 1914 to 1945",
+  "area": "contemporary",
+  "level": 4,
+  "order": 110,
+  "tagline": "Two wars, the revolutions of 1917, the interwar dictatorships, occupation, and the genocide of the Jews",
+  "summary": "This course runs from 1914 to the German surrender in May 1945. It includes the home fronts and the soldiers of empire, the two calendars of 1917, the fragile settlements of 1919, the dictatorships of the 1930s, occupation, and the murder of about six million Jews. It does not sort nations into the guilty and the innocent.",
+  "overview": [
+    "The First World War is dated by Verdun, the Somme, the American entry, Brest-Litovsk and the armistice, without invented casualty totals. The revolutions of 1917 are dated in both calendars. Versailles is one treaty among the Paris settlements, signed in the same hall where the German Empire had been proclaimed.",
+    "The interwar chapter includes Italy, the USSR, the German slump, Hitler’s appointment, and the Spanish Civil War. It does not reduce the years 1918–1939 to a corridor leading to one man. The war chapter follows Poland, France, the Soviet Union, occupation, and the dates of surrender, including the difference between 8 May and 9 May.",
+    "The genocide chapter uses the estimate of about six million Jews, the date of Wannsee as a coordination meeting rather than a beginning, and the coining of the word genocide. It names other victim groups without inventing totals. It does not describe killing procedures."
+  ],
+  "prerequisites": [
+    "nations"
+  ],
+  "outcomes": [
+    "Place Verdun, the Somme, Brest-Litovsk and the armistice without inventing a death total.",
+    "Give both dates of the October Revolution and say why both are used.",
+    "Distinguish the Treaty of Versailles from the other Paris treaties, and name two interwar dictatorships besides Germany.",
+    "Order the European war from 1 September 1939 to the surrenders of May 1945, including 22 June 1941.",
+    "Explain why Wannsee is not the start of the Holocaust, and use the figure of about six million Jews as an estimate."
+  ],
+  "chapters": [
+    {
+      "slug": "first-world-war",
+      "title": "The First World War",
+      "summary": "From the invasion of Belgium to the armistice: fronts, home fronts, and the soldiers of the empires.",
+      "requires": []
+    },
+    {
+      "slug": "revolutions-1917",
+      "title": "The revolutions of 1917",
+      "summary": "Both calendars, abdication, October, Brest-Litovsk, and the new map after the armistice.",
+      "requires": [
+        "wars/first-world-war"
+      ]
+    },
+    {
+      "slug": "interwar",
+      "title": "The interwar years",
+      "summary": "Versailles and the other treaties, inflation, the slump, Italy, Germany, Spain, and authoritarian regimes further east.",
+      "requires": [
+        "wars/revolutions-1917"
+      ]
+    },
+    {
+      "slug": "second-world-war",
+      "title": "The Second World War in Europe",
+      "summary": "Poland, France, the invasion of the Soviet Union, occupation, and the two dates of the German surrender.",
+      "requires": [
+        "wars/interwar"
+      ]
+    },
+    {
+      "slug": "genocide",
+      "title": "Genocide",
+      "summary": "The murder of the Jews, Wannsee as coordination, other victim groups, Lemkin’s word, and the Convention of 1948.",
+      "requires": [
+        "wars/second-world-war"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1917,
+      "title": "Two calendars",
+      "detail": "The October Revolution is 25 October 1917 on the Julian calendar and 7 November 1917 on the Gregorian. Russia moves its civil calendar the next year.",
+      "people": [
+        "Vladimir Lenin"
+      ]
+    },
+    {
+      "year": 1919,
+      "title": "Versailles",
+      "detail": "The treaty is signed on 28 June 1919 in the Hall of Mirrors. It is one of the Paris settlements, not the whole of the peace.",
+      "people": [
+        "Treaty of Versailles"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Appointment",
+      "detail": "Hitler is appointed chancellor on 30 January 1933. The Enabling Act follows on 23 March, after the Reichstag fire of 27 February.",
+      "people": [
+        "Adolf Hitler"
+      ]
+    },
+    {
+      "year": 1942,
+      "title": "Wannsee",
+      "detail": "On 20 January 1942 officials meet at Wannsee to coordinate deportation and murder. Mass killing has already begun. The figure of about six million Jewish dead is an estimate used by historians and by memorial institutions.",
+      "people": [
+        "Reinhard Heydrich"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Pandora’s Box: A History of the First World War",
+      "authors": "Jörn Leonhard",
+      "year": 2018,
+      "note": "The war as a European and imperial event, not as a single front."
+    },
+    {
+      "title": "The Coming of the Third Reich",
+      "authors": "Richard J. Evans",
+      "year": 2003,
+      "note": "The first volume of Evans’s trilogy. The later volumes carry the regime and the war."
+    },
+    {
+      "title": "The Years of Extermination",
+      "authors": "Saul Friedländer",
+      "year": 2007,
+      "note": "The Holocaust inside the war, written so that the victims’ voices are part of the evidence."
+    },
+    {
+      "title": "Hitler’s Empire: Nazi Rule in Occupied Europe",
+      "authors": "Mark Mazower",
+      "year": 2008,
+      "note": "Occupation as a system of rule across the continent, not only as a German domestic story."
+    }
+  ],
+  "next": [
+    "postwar"
+  ]
+}

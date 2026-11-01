@@ -1,0 +1,158 @@
+{
+  "slug": "asset-classes",
+  "title": "Asset Classes",
+  "full_title": "Equity, FX, Futures and Market-Neutral Books",
+  "area": "practice",
+  "level": 3,
+  "order": 100,
+  "tagline": "How the same research sentence changes in ETFs, multi-asset books, FX, futures and long–short portfolios",
+  "summary": "A rule that is well specified on one equity ETF is not yet a rule on a currency or a futures curve. This course specialises the earlier definitions: equity and ETF books, multi-asset trend and defensive mixes, spot FX quoting and lots, continuous futures and rolls, and market-neutral construction. Published losses are included on purpose.",
+  "overview": [
+    "The open library is not a single market. Its long examples sit on equity ETFs, often sector funds, over one or two decades. A smaller set uses several asset classes at once, spot FX quoted in dollars, or a vendor’s continuous futures. Market-neutral examples go long and short, either as a pair or as a cross-sectional ranking. The mathematics of a moving average does not change across these pages. The instrument, the denominator of the return, the cost and the sample length do.",
+    "ETF chapters ask what an investor in the fund has already delegated: a basket, a rebalance, a fee. Studying an ETF trend rule is not the same as studying the constituents. Multi-asset chapters ask what 'defensive' means once bonds and gold, or whatever the specification lists, enter the universe. The course refuses to treat a ticker list as a recommendation.",
+    "FX and futures chapters are where casual ports of an equity rule fail. A dollar-quoted spot rate is a convention. A six-month momentum rule on several such rates, sized by inverse volatility, is the library’s time-series FX example, and the library reports a loss. A continuous futures series hides a roll that the real contract would have paid or received. Contract multipliers turn a weight into an integer. The course computes the integer.",
+    "Market-neutral chapters reconcile the weight constraints from Portfolio Construction with pairs and rankings from the signal courses. Dollar neutrality is not beta neutrality. A reported profit factor on a short futures sample is not a carry-home Sharpe ratio. Capacity — how much AUM the rule could have borne before its own trading moved the price — is stated as a question the library pages do not answer."
+  ],
+  "prerequisites": [
+    "momentum",
+    "portfolio",
+    "orders"
+  ],
+  "outcomes": [
+    "Explain what an equity-ETF backtest does and does not say about the underlying constituents.",
+    "Specify a multi-asset trend or defensive book, including the universe and the fallback asset.",
+    "Compute a return on a dollar-quoted FX rate and size a position in lots.",
+    "Describe a continuous futures series, a roll, and the conversion from a weight to a whole number of contracts.",
+    "Build a dollar-neutral and a simple beta-neutral set of weights from a ranking or a pair.",
+    "Interpret a published loss on FX momentum, and a short futures sample, without flipping the sign into a recommendation."
+  ],
+  "chapters": [
+    {
+      "slug": "equity-etf-books",
+      "title": "Equity and ETF books",
+      "summary": "Single funds, sector baskets, fees inside the instrument, and long-only constraints on equities.",
+      "requires": [
+        "portfolio/long-only-and-neutral",
+        "momentum/two-kinds-of-momentum"
+      ]
+    },
+    {
+      "slug": "multi-asset-books",
+      "title": "Multi-asset books",
+      "summary": "Trend and defensive mixes across asset classes, and what a fallback asset does to the return.",
+      "requires": [
+        "asset-classes/equity-etf-books",
+        "trend/filters-and-defensive"
+      ]
+    },
+    {
+      "slug": "foreign-exchange",
+      "title": "Foreign exchange",
+      "summary": "Dollar-quoted spot rates, lots, time-series and cross-sectional FX momentum, including published losses.",
+      "requires": [
+        "asset-classes/multi-asset-books",
+        "orders/lots-contracts-and-intraday",
+        "momentum/momentum-across-assets"
+      ]
+    },
+    {
+      "slug": "futures",
+      "title": "Futures",
+      "summary": "Continuous series, rolls, point values, Donchian contracts and a diversified futures trend book.",
+      "requires": [
+        "asset-classes/foreign-exchange",
+        "trend/breakouts-and-macd"
+      ]
+    },
+    {
+      "slug": "market-neutral-books",
+      "title": "Market-neutral books",
+      "summary": "Pairs, winner-minus-loser rankings, dollar and beta neutrality, borrow and the limits of a short sample.",
+      "requires": [
+        "asset-classes/equity-etf-books",
+        "reversion/pairs-and-spreads",
+        "reversion/cross-sectional-reversal"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1972,
+      "title": "A futures market for currencies",
+      "detail": "Currency futures at the CME gave exchange-traded prices to what had been an interbank market, and fixed the contract as the unit of position.",
+      "people": [
+        "Chicago Mercantile Exchange"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "Stock-index futures",
+      "detail": "S&P 500 futures began trading at the CME on 21 April 1982, making a broad equity portfolio something a futures trend rule could hold long or short.",
+      "people": [
+        "Chicago Mercantile Exchange"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Exchange rates and the out-of-sample record",
+      "detail": "Meese and Rogoff showed that standard macroeconomic models of the exchange rate did not beat a random walk out of sample. FX predictability has had to argue with that result ever since.",
+      "people": [
+        "Richard Meese",
+        "Kenneth Rogoff"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "Equity baskets as a single price",
+      "detail": "The listing of SPY made a capitalisation-weighted equity basket a traded instrument. An ETF backtest studies that instrument, including its fee and its creation mechanism only to the extent the price already reflects them.",
+      "people": [
+        "State Street"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "A fully specified pairs book",
+      "detail": "Gatev, Goetzmann and Rouwenhorst published a pairs rule whose matching, entry, exit and delay are explicit enough to argue with. Market-neutral chapters in this course use that standard of specification.",
+      "people": [
+        "Evan Gatev",
+        "William Goetzmann",
+        "K. Geert Rouwenhorst"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Expected Returns",
+      "authors": "Antti Ilmanen",
+      "year": 2011,
+      "note": "Cross-asset evidence, written with the sample periods and the caveats attached."
+    },
+    {
+      "title": "Asset Management",
+      "authors": "Andrew Ang",
+      "year": 2014,
+      "note": "Factor and asset-class chapters for the institutional objects an ETF or a futures overlay sits on."
+    },
+    {
+      "title": "Empirical Exchange Rate Models of the Seventies",
+      "authors": "Richard A. Meese and Kenneth Rogoff",
+      "year": 1983,
+      "note": "Journal of International Economics. The random-walk benchmark for FX."
+    },
+    {
+      "title": "Following the Trend",
+      "authors": "Andreas F. Clenow",
+      "year": 2013,
+      "note": "Contract sizing, rolls and a diversified futures book, as a practitioner specification."
+    },
+    {
+      "title": "Pairs Trading: Performance of a Relative-Value Arbitrage Rule",
+      "authors": "Evan Gatev, William N. Goetzmann and K. Geert Rouwenhorst",
+      "year": 2006,
+      "note": "Review of Financial Studies. The specification standard for a market-neutral pair."
+    }
+  ],
+  "next": [
+    "research-craft"
+  ]
+}

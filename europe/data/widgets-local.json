@@ -1,0 +1,31 @@
+{
+  "_doc": "Figure types that belong to this atlas. tools/mkatlas.py merges them into data/widgets.json on refresh. They are implemented in assets/js/widgets/europe.js. A figure plots only the years and values named in the lesson. It does not invent a population or a casualty total.",
+  "types": {
+    "timeline": {
+      "file": "europe",
+      "title": "Timeline",
+      "zh": "时间线",
+      "desc": "A short list of dated events on one axis. Move the year and the window. Negative years are BCE. The integer 0 is not a historical year.",
+      "zh_desc": "一条轴上的一短串有年代的事件。移动年份和窗口。负年份为公元前。整数 0 不是历史年份。",
+      "params": {
+        "start": {"type": "int", "required": true, "desc": "first year on the axis; negative means BCE"},
+        "end": {"type": "int", "required": true, "desc": "last year on the axis"},
+        "events": {"type": "list", "required": true, "desc": "year,label items separated by semicolons; the label may contain further commas"},
+        "window": {"type": "int", "default": "10", "desc": "half-width of the highlight, in years"}
+      },
+      "example": "start: 1789\nend: 1815\nwindow: 2\nevents: 1789,Bastille; 1792,Republic; 1799,Brumaire; 1815,Waterloo"
+    },
+    "series": {
+      "file": "europe",
+      "title": "Dated series",
+      "zh": "按年份的序列",
+      "desc": "Points the lesson supplies, each a year and a value. The cursor finds the nearest recorded year and does not invent a value in between.",
+      "zh_desc": "课文给出的点，每点是一个年份和一个数值。游标找到最近的有记录年份，不在两点之间编造数值。",
+      "params": {
+        "points": {"type": "list", "required": true, "desc": "year,value items separated by semicolons"},
+        "ylabel": {"type": "str", "desc": "label for the vertical axis"}
+      },
+      "example": "points: 1801,8892536; 1851,17927609; 1901,32527843\nylabel: people, England and Wales"
+    }
+  }
+}

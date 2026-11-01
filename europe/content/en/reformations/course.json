@@ -1,0 +1,128 @@
+{
+  "slug": "reformations",
+  "title": "Reformations",
+  "full_title": "Reformations and Religious War",
+  "area": "reform",
+  "level": 3,
+  "order": 70,
+  "tagline": "More than one Reformation, a Catholic reform that is not only a reaction, the English settlements, and a century of religious war that Westphalia did not neatly end",
+  "summary": "“The Reformation” is a plural. Luther, the Reformed cities, Trent and the Tudor settlements did not pursue one doctrine or one relationship with the prince. The wars that followed, from the French civil wars to the Thirty Years’ War, were religious and also fiscal, dynastic and local. Westphalia adjusted a peace. It did not invent sovereignty.",
+  "overview": [
+    "The Ninety-five Theses are dated 31 October 1517 and they circulated. The door of the castle church is a later story. Worms, the Peasants’ War and the split with Zwingli at Marburg are all required if Luther is to be more than a portrait.",
+    "Zurich and Geneva are not Wittenberg. Trent is a council with a gap in the middle, and Catholic reform includes new orders as well as the refusal of Protestant doctrine. England’s settlements are acts of parliament and of succession, not a slow approach to modern toleration.",
+    "St Bartholomew’s Day, the Armada and the Edict of Nantes sit inside the French and Habsburg wars. The Defenestration of Prague opens a German war that becomes European. The peace of 1648 admits Calvinists to the imperial religious peace and leaves most of the old order of princes standing."
+  ],
+  "prerequisites": [
+    "crises"
+  ],
+  "outcomes": [
+    "Date the Ninety-five Theses and say what is not established about the church door.",
+    "Distinguish Lutheran and Reformed positions using Marburg and Geneva.",
+    "Explain Trent as Catholic reform, and say what the label Counter-Reformation hides.",
+    "Summarise the English settlements from Henry VIII to the acts of 1559 without writing them as inevitable.",
+    "State what the Peace of Westphalia changed in the empire, and what later theory has claimed for it."
+  ],
+  "chapters": [
+    {
+      "slug": "luther",
+      "title": "Luther and the German lands",
+      "summary": "Indulgences, 1517, Worms, the Peasants’ War, and the split at Marburg in 1529.",
+      "requires": []
+    },
+    {
+      "slug": "reformed-cities",
+      "title": "Reformed cities",
+      "summary": "Zurich, Zwingli’s death at Kappel, Calvin’s Institutes and his return to Geneva.",
+      "requires": [
+        "reformations/luther"
+      ]
+    },
+    {
+      "slug": "catholic-reform",
+      "title": "Catholic reform",
+      "summary": "New orders and the Council of Trent from 1545 to 1563. Why “Counter-Reformation” is only half a name.",
+      "requires": [
+        "reformations/reformed-cities"
+      ]
+    },
+    {
+      "slug": "england",
+      "title": "The English settlements",
+      "summary": "The Act of Supremacy of 1534, the dissolution as a process, and Elizabeth’s acts of 1559.",
+      "requires": [
+        "reformations/catholic-reform"
+      ]
+    },
+    {
+      "slug": "religious-war",
+      "title": "Religious war and Westphalia",
+      "summary": "The French wars, St Bartholomew, Nantes, the Thirty Years’ War, and the peace of 24 October 1648.",
+      "requires": [
+        "reformations/england"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1517,
+      "title": "Theses, not a door",
+      "detail": "The Ninety-five Theses are dated 31 October 1517. That they were nailed to a door is a later story and is not established.",
+      "people": [
+        "Martin Luther"
+      ]
+    },
+    {
+      "year": 1555,
+      "title": "Augsburg",
+      "detail": "On 25 September 1555 the Peace of Augsburg lets Lutheran and Catholic princes in the empire settle the public religion. Calvinists are not included.",
+      "people": [
+        "Charles V"
+      ]
+    },
+    {
+      "year": 1598,
+      "title": "A limited toleration",
+      "detail": "The Edict of Nantes, in April 1598, gives Huguenots a limited and revocable toleration. It is not equality.",
+      "people": [
+        "Henry IV of France"
+      ]
+    },
+    {
+      "year": 1648,
+      "title": "Westphalia",
+      "detail": "On 24 October 1648 the treaties of Münster and Osnabrück adjust the imperial peace and admit Calvinists. They do not publish a theory of modern sovereignty.",
+      "people": [
+        "Peace of Westphalia"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Reformation: Europe’s House Divided, 1490–1700",
+      "authors": "Diarmaid MacCulloch",
+      "year": 2003,
+      "note": "The plural Reformation across Europe, including the Orthodox east and the people who refused all of the new orthodoxies."
+    },
+    {
+      "title": "Reformations: The Early Modern World, 1450–1650",
+      "authors": "Carlos M. N. Eire",
+      "year": 2016,
+      "note": "A broad account that keeps Catholic reform and global consequences in the same frame."
+    },
+    {
+      "title": "The Stripping of the Altars",
+      "authors": "Eamon Duffy",
+      "year": 1992,
+      "note": "English parish religion before and during the Tudor breaks. A warning against writing the English story only from the centre."
+    },
+    {
+      "title": "The Thirty Years War: Europe’s Tragedy",
+      "authors": "Peter H. Wilson",
+      "year": 2009,
+      "note": "The war as more than religion, and Westphalia as a peace rather than as the birth of the state system."
+    }
+  ],
+  "next": [
+    "states"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "slug": "postwar",
+  "title": "Europe since 1945",
+  "full_title": "Division, Integration and Argument since 1945",
+  "area": "contemporary",
+  "level": 4,
+  "order": 120,
+  "tagline": "Occupation and division, welfare and the treaties, decolonisation and 1968, 1989, and the arguments that are still open",
+  "summary": "The last course begins with zones, the Federal Republic and the GDR, NATO and the treaties of Paris and Rome. It treats welfare as several settlements, decolonisation as European history, and 1968 as more than one event. It follows 1989, the end of the USSR, the Yugoslav wars, the euro, enlargement, Brexit, and the invasion of Ukraine as a war that, in 2026, is not over.",
+  "overview": [
+    "Division is made by occupation, currency reform, the Berlin blockade, two German constitutions and a military alliance. The Marshall speech and the Truman Doctrine are context from outside the continent. They are not a sufficient history of European choices.",
+    "The ECSC and the EEC are treaties with members and with exclusions. Welfare states differ, and a typology published in 1990 is not a description of 1950. Decolonisation — India and Pakistan, Dien Bien Phu, Algeria, the Portuguese empire — belongs in this course because the empires were European.",
+    "1989 is a sequence: Poland, Hungary, the Wall, Prague, Bucharest. The USSR ends in December 1991. The wars in Yugoslavia are part of the same decade. Maastricht, the euro and the enlargements build a union whose membership changes again with Brexit. The full-scale invasion of Ukraine on 24 February 2022 is stated as an invasion still unfinished in 2026, without a casualty total and without a speech for a policy."
+  ],
+  "prerequisites": [
+    "wars"
+  ],
+  "outcomes": [
+    "Date the Berlin blockade, NATO, the Basic Law and the founding of the GDR.",
+    "Distinguish the ECSC from the EEC, and give the date of the Treaties of Rome.",
+    "Explain why Indian independence and the Algerian war are part of a European history course.",
+    "Order the main events of 1989 and the dissolution of the USSR in December 1991.",
+    "State the dates of the Maastricht treaty, the 2004 enlargement, Brexit, and the invasion of 24 February 2022, with the limits the chronology requires."
+  ],
+  "chapters": [
+    {
+      "slug": "division",
+      "title": "Division",
+      "summary": "Potsdam, the Marshall speech, the Berlin blockade, NATO, and the two German states.",
+      "requires": []
+    },
+    {
+      "slug": "welfare-and-treaties",
+      "title": "Welfare and the treaties",
+      "summary": "Different welfare settlements, the NHS, the Coal and Steel Community, and the Treaties of Rome.",
+      "requires": [
+        "postwar/division"
+      ]
+    },
+    {
+      "slug": "decolonisation-and-1968",
+      "title": "Decolonisation and 1968",
+      "summary": "India and Pakistan, Algeria, the Portuguese empire, the Prague Spring, and Paris in May.",
+      "requires": [
+        "postwar/welfare-and-treaties"
+      ]
+    },
+    {
+      "slug": "from-1989",
+      "title": "1989 and after",
+      "summary": "The Wall, the end of the USSR, German unification, and the wars in Yugoslavia.",
+      "requires": [
+        "postwar/decolonisation-and-1968"
+      ]
+    },
+    {
+      "slug": "union",
+      "title": "Union and argument",
+      "summary": "Maastricht, the euro, enlargement, the debt crisis, Brexit, and the invasion of Ukraine.",
+      "requires": [
+        "postwar/from-1989"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1949,
+      "title": "Two republics and an alliance",
+      "detail": "NATO is signed on 4 April 1949. The Federal Republic’s Basic Law is dated 23 May. The German Democratic Republic is founded on 7 October.",
+      "people": [
+        "Konrad Adenauer"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Rome",
+      "detail": "On 25 March 1957 the Treaties of Rome establish the European Economic Community and Euratom. Membership is small, and several European states are outside it.",
+      "people": [
+        "Paul-Henri Spaak"
+      ]
+    },
+    {
+      "year": 1989,
+      "title": "The Wall is opened",
+      "detail": "On 9 November 1989 the Berlin Wall is opened. It is one event in a year that also includes the Polish Round Table and the fall of Ceaușescu.",
+      "people": [
+        "Berlin Wall"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "An invasion, unfinished",
+      "detail": "On 24 February 2022 Russia begins a full-scale invasion of Ukraine. As of 2026 the war has not ended. This atlas states the fact and does not offer a casualty total or a policy.",
+      "people": [
+        "Ukraine",
+        "Russian Federation"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Postwar: A History of Europe Since 1945",
+      "authors": "Tony Judt",
+      "year": 2005,
+      "note": "The survey this course argues with: division, prosperity, memory and the eastern half of the continent restored to the narrative."
+    },
+    {
+      "title": "Dark Continent: Europe’s Twentieth Century",
+      "authors": "Mark Mazower",
+      "year": 1998,
+      "note": "A shorter history of the century that refuses to treat democracy as Europe’s default setting."
+    },
+    {
+      "title": "To Hell and Back: Europe, 1914–1949",
+      "authors": "Ian Kershaw",
+      "year": 2015,
+      "note": "Closes the war and opens the division. The sequel, Roller-Coaster, carries the later decades."
+    },
+    {
+      "title": "Project Europe: A History",
+      "authors": "Kiran Klaus Patel",
+      "year": 2020,
+      "note": "The European Communities as a project with limits, not as the destination of the continent."
+    }
+  ],
+  "next": []
+}

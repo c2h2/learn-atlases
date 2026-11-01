@@ -1,0 +1,129 @@
+{
+  "slug": "states",
+  "title": "States and Empires",
+  "full_title": "States, Commerce and Enlightenment",
+  "area": "polities",
+  "level": 3,
+  "order": 80,
+  "tagline": "Composite monarchies, fiscal-military states, the Atlantic trade in enslaved people, the erasure of Poland-Lithuania, and Enlightenment publics",
+  "summary": "Early modern states were often composite: one prince, several laws. They taxed and borrowed in order to fight. The Dutch Republic and Louis XIV’s France are cases, not a single model called absolutism. The Atlantic trade embarked an estimated 12,521,354 people between 1501 and 1866 on the Slave Voyages table. Poland-Lithuania was partitioned out of existence. Enlightenment publics grew up inside this world, not instead of it.",
+  "overview": [
+    "A composite monarchy is a stack of titles. Spain under Charles V and the Stuart multiple kingdom are the teaching cases. The Dutch Republic shows that a rich, armed, commercial state did not have to be a monarchy. Fiscal-military pressure — taxes, debt, the Bank of England in 1694 — is the common problem, and Louis XIV is one solution, loudly advertised.",
+    "The Atlantic chapters use the Slave Voyages embarked total and refuse invented death totals. The trade is European history because European and Euro-American ships and law made it. It is not the only slave trade in the world. Partitions of Poland-Lithuania in 1772, 1793 and 1795 remove a large state with a parliamentary tradition of its own.",
+    "The Encyclopédie, Rousseau, Beccaria and the salons are real. So are censors, empires and the exclusion of women from most academies. The Seven Years’ War is the global war that sits between the high Enlightenment and the fiscal crisis of the French old regime. The next course begins from that crisis."
+  ],
+  "prerequisites": [
+    "reformations"
+  ],
+  "outcomes": [
+    "Define a composite monarchy and give two examples.",
+    "Explain a fiscal-military state using taxation, debt and one institution founded in 1694.",
+    "Use the Slave Voyages figure of people embarked, and say what the atlas will not invent.",
+    "Narrate the three partitions and say what kind of polity Poland-Lithuania had been.",
+    "Describe an Enlightenment public and two of its limits."
+  ],
+  "chapters": [
+    {
+      "slug": "composite-monarchy",
+      "title": "Composite monarchy",
+      "summary": "Several kingdoms under one ruler: Charles V’s abdications, the Stuart kingdoms, and the Union of 1707.",
+      "requires": []
+    },
+    {
+      "slug": "fiscal-military",
+      "title": "Fiscal-military states",
+      "summary": "War, tax and debt. The Dutch Republic, Louis XIV, Vienna in 1683, and the Bank of England.",
+      "requires": [
+        "states/composite-monarchy"
+      ]
+    },
+    {
+      "slug": "atlantic",
+      "title": "The Atlantic trade",
+      "summary": "Iberian empires, the Slave Voyages estimates for 1501–1866, the Code Noir, and abolition as a legal sequence rather than a moral sunrise.",
+      "requires": [
+        "states/fiscal-military"
+      ]
+    },
+    {
+      "slug": "east",
+      "title": "The east of the continent",
+      "summary": "The Ottoman frontier, Poland-Lithuania, Russia, and the partitions of 1772, 1793 and 1795.",
+      "requires": [
+        "states/atlantic"
+      ]
+    },
+    {
+      "slug": "enlightenment",
+      "title": "Enlightenment publics",
+      "summary": "Print, salons, the Encyclopédie, and the limits: women, censors, empire, and the Seven Years’ War.",
+      "requires": [
+        "states/east"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1707,
+      "title": "A union of parliaments",
+      "detail": "On 1 May 1707 the Acts of Union join the kingdoms of England and Scotland. The union is a statute, not a natural merging of peoples.",
+      "people": [
+        "Queen Anne"
+      ]
+    },
+    {
+      "year": 1756,
+      "title": "A war on several continents",
+      "detail": "The Seven Years’ War, 1756–1763, is fought in Europe and outside it. A cabinet war and an imperial war are, in these years, the same war.",
+      "people": [
+        "Frederick II",
+        "William Pitt the Elder"
+      ]
+    },
+    {
+      "year": 1772,
+      "title": "The first partition",
+      "detail": "In 1772 Prussia, Austria and Russia take territory from Poland-Lithuania. Further partitions follow in 1793 and 1795.",
+      "people": [
+        "Stanisław August Poniatowski"
+      ]
+    },
+    {
+      "year": 1685,
+      "title": "Revocation and a slave code",
+      "detail": "In 1685 Louis XIV revokes the Edict of Nantes, and the Code Noir is issued for French colonial slavery. Toleration at home and slavery abroad are not two different centuries.",
+      "people": [
+        "Louis XIV"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Empires of the Atlantic World",
+      "authors": "J. H. Elliott",
+      "year": 2006,
+      "note": "British and Spanish Atlantic empires compared, including the labour systems they built."
+    },
+    {
+      "title": "Atlas of the Transatlantic Slave Trade",
+      "authors": "David Eltis and David Richardson",
+      "year": 2010,
+      "note": "The geography of the trade behind the Slave Voyages estimates."
+    },
+    {
+      "title": "The Thirty Years War",
+      "authors": "Peter H. Wilson",
+      "year": 2009,
+      "note": "Already cited for the peace; use it here for the fiscal-military world the peace left in place."
+    },
+    {
+      "title": "The Secular Enlightenment",
+      "authors": "Margaret C. Jacob",
+      "year": 2019,
+      "note": "Enlightenment as a set of publics and practices, not as a single philosophy."
+    }
+  ],
+  "next": [
+    "revolutions"
+  ]
+}

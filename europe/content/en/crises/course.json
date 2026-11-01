@@ -1,0 +1,131 @@
+{
+  "slug": "crises",
+  "title": "Crisis and Renewal",
+  "full_title": "Plague, Schism and the Fifteenth Century",
+  "area": "medieval",
+  "level": 2,
+  "order": 60,
+  "tagline": "Famine, plague, a long war, two popes and then three, humanism as a practice, print, and a year — 1492 — that is asked to mean too much",
+  "summary": "The fourteenth and fifteenth centuries are not a waiting room for modernity. Plague killed on a scale that has to be stated as a range. The Western Schism and the Hundred Years’ War are political crises with religious and fiscal sides. Humanism is a way of reading and writing. Print is a technology with markets. And 1492 is at least four events.",
+  "overview": [
+    "The Great Famine and the plague of 1347–49 are demographic facts with religious and economic consequences. This atlas does not give a single European death total for the plague. It does say that in many studied regions the estimates lie between about a third and about a half, and that local figures differ.",
+    "Two and then three popes, and a war fought at intervals from the conventional date 1337 until Castillon in 1453, belong together as crises of authority and taxation. Joan of Arc is a person inside that war, not a symbol of a nation already formed.",
+    "Italian city-states trained humanists to write a classical Latin for chanceries and for fame. Gutenberg’s Bible, about 1454–1455, multiplied a text the Church already held. The fall of Constantinople in May 1453 and the events of 1492 — Granada, the expulsion, Columbus — are contemporaneous with these practices. They do not form one birth of the modern world."
+  ],
+  "prerequisites": [
+    "christendom"
+  ],
+  "outcomes": [
+    "State the plague’s arrival and the range of regional estimates without inventing a European total.",
+    "Explain the Western Schism and the conventional dates of the Hundred Years’ War as labels as well as conflicts.",
+    "Describe humanism as a practice of education and chanceries, not as a personality type.",
+    "Say what print changed in the making of books, and what it did not cause by itself.",
+    "Separate the events of 1492 into Granada, the Alhambra Decree and Columbus’s voyage."
+  ],
+  "chapters": [
+    {
+      "slug": "plague",
+      "title": "Famine and plague",
+      "summary": "1315, Messina in 1347, and how to talk about mortality when the number is a range.",
+      "requires": []
+    },
+    {
+      "slug": "war-and-schism",
+      "title": "War and schism",
+      "summary": "The Hundred Years’ War as a label, Agincourt, Joan of Arc, the Western Schism, Constance and Hus.",
+      "requires": [
+        "crises/plague"
+      ]
+    },
+    {
+      "slug": "city-states",
+      "title": "City-states and humanism",
+      "summary": "Italian republics and princes, chancery humanism, and why “the Renaissance” is a label for practices.",
+      "requires": [
+        "crises/war-and-schism"
+      ]
+    },
+    {
+      "slug": "print",
+      "title": "Print",
+      "summary": "The Gutenberg Bible around 1454–1455, markets for books, and the limits of a technological cause.",
+      "requires": [
+        "crises/city-states"
+      ]
+    },
+    {
+      "slug": "year-1492",
+      "title": "The year 1492",
+      "summary": "Granada on 2 January, the Alhambra Decree, Columbus’s sailing and landfall, and Tordesillas two years later.",
+      "requires": [
+        "crises/print"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1347,
+      "title": "Plague at Messina",
+      "detail": "In October 1347 plague is reported at Messina. It is in much of western Europe in 1348 and 1349. Mortality estimates are regional, not a single European total.",
+      "people": [
+        "plague"
+      ]
+    },
+    {
+      "year": 1378,
+      "title": "Two popes",
+      "detail": "The Western Schism begins in 1378 and is ended by the election of Martin V in 1417, after the Council of Constance.",
+      "people": [
+        "Urban VI",
+        "Clement VII"
+      ]
+    },
+    {
+      "year": 1453,
+      "title": "Constantinople falls",
+      "detail": "On 29 May 1453 Mehmed II takes Constantinople. On 17 July Castillon ends the conventional Hundred Years’ War.",
+      "people": [
+        "Mehmed II"
+      ]
+    },
+    {
+      "year": 1492,
+      "title": "Four events, one year",
+      "detail": "Granada surrenders on 2 January. The Alhambra Decree is dated 31 March. Columbus sails on 3 August and makes landfall on 12 October.",
+      "people": [
+        "Isabella I",
+        "Ferdinand II",
+        "Christopher Columbus"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Black Death",
+      "authors": "Rosemary Horrox",
+      "year": 1994,
+      "note": "A collection of sources, so the mortality is read from witnesses rather than from a single modern total."
+    },
+    {
+      "title": "The Hundred Years War",
+      "authors": "Christopher Allmand",
+      "year": 1988,
+      "note": "The wars of 1337–1453 as politics, taxation and society, not as one battle."
+    },
+    {
+      "title": "The Renaissance in Italy: A Social and Cultural History",
+      "authors": "Guido Ruggiero",
+      "year": 2015,
+      "note": "Humanism and the arts inside Italian society, not as a mood that floated over it."
+    },
+    {
+      "title": "1492: The Year Our World Began",
+      "authors": "Felipe Fernández-Armesto",
+      "year": 2009,
+      "note": "A world history of the year, useful here as a warning against letting one landfall stand for all of it."
+    }
+  ],
+  "next": [
+    "reformations"
+  ]
+}

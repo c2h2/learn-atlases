@@ -1,0 +1,154 @@
+{
+  "slug": "backtesting",
+  "title": "Backtesting",
+  "full_title": "Backtesting as an Experiment",
+  "area": "research",
+  "level": 3,
+  "order": 90,
+  "tagline": "An engine contract, weights versus orders, time conventions, costs, biases and how to read someone else’s test",
+  "summary": "A backtest is an experiment with a protocol. This course writes the protocol: data, features, signals, weights or orders, fills, positions, NAV, metrics. It separates a vectorised weight path from an order simulator, fixes the clock so that a signal cannot see its own return, and catalogues the biases that make a careful-looking curve meaningless. Intraday samples of a few weeks are treated as illustrations of a mechanism, not as evidence.",
+  "overview": [
+    "Most bad backtests fail in a sentence one can write down in advance. The signal at the close of day t was allowed to multiply the return from t−1 to t. A delisted name was absent from the whole history. The winning parameter was chosen on the same years that are then called evidence. Costs were zero in a rule that trades every bar. This course makes each of those failures a check, not a mood.",
+    "The engine contract used here follows the split in the QuantJourney backtester that powers the quants.md library. Weight mode turns signals into target weights and rebalances under a stated policy. Order mode submits market, limit, stop, bracket and related messages and reconstructs NAV from fills, cash and positions. Both modes are models. A weight backtest that assumes fractional shares and fills at the next open is answering a different question from an order backtest that can miss a limit.",
+    "Costs, slippage and turnover sit inside the experiment, not beside it. A rule with a high gross Sharpe and high turnover can be a rule with a negative net Sharpe under a spread the author considers ordinary. The course computes that subtraction on small examples.",
+    "The last chapter is how to read a published test, including the fifty library pages, without re-running them and without trusting them. Sample length, the fill rule, the cost model and the number of configurations tried are part of the result. Several intraday examples cover days or weeks. Their curves can teach a mechanism. They cannot support a CAGR."
+  ],
+  "prerequisites": [
+    "performance",
+    "orders"
+  ],
+  "outcomes": [
+    "Write a backtest as a pipeline from data to features, signals, weights or orders, fills, positions, NAV and metrics.",
+    "Contrast a weight-mode experiment with an order-mode experiment and say which questions each one can answer.",
+    "Enforce a clock: a decision at t uses only information available at t and earns the return after t.",
+    "Apply a spread and a slippage model to a turnover series and show the net return.",
+    "Name look-ahead, survivorship, cost omission and selection bias, and give a concrete example of each.",
+    "Read a published dashboard, including a short intraday one, and state what the sample length permits."
+  ],
+  "chapters": [
+    {
+      "slug": "the-backtest-as-an-experiment",
+      "title": "The backtest as an experiment",
+      "summary": "The pipeline from data to NAV, the protocol that has to be written down, and reproducibility.",
+      "requires": [
+        "performance/uncertainty-of-performance",
+        "orders/fills-slippage-and-spread"
+      ]
+    },
+    {
+      "slug": "weights-versus-orders",
+      "title": "Weights versus orders",
+      "summary": "Target-weight accounting versus an order simulator, and why the same story can produce two experiments.",
+      "requires": [
+        "backtesting/the-backtest-as-an-experiment"
+      ]
+    },
+    {
+      "slug": "timing-costs-and-biases",
+      "title": "Timing, costs and biases",
+      "summary": "The decision clock, spreads and slippage, look-ahead, survivorship and omitted costs.",
+      "requires": [
+        "backtesting/weights-versus-orders"
+      ]
+    },
+    {
+      "slug": "intraday-samples",
+      "title": "Intraday samples",
+      "summary": "What 1-minute, 15-minute and hourly bars change, and why a sample of days or weeks is a demonstration.",
+      "requires": [
+        "backtesting/timing-costs-and-biases",
+        "orders/lots-contracts-and-intraday"
+      ]
+    },
+    {
+      "slug": "reading-published-tests",
+      "title": "Reading a published test",
+      "summary": "A checklist for someone else’s dashboard, applied to the quants.md library without re-running it.",
+      "requires": [
+        "backtesting/timing-costs-and-biases"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1992,
+      "title": "Testing technical rules on a long index",
+      "detail": "Brock, Lakonishok and LeBaron published one of the first widely cited computer tests of simple trading rules. The methodological arguments that followed — costs, data mining, out of sample — are the subject of this course.",
+      "people": [
+        "William Brock",
+        "Josef Lakonishok",
+        "Blake LeBaron"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "Accounting for the search",
+      "detail": "White’s reality check is the date this course uses for the idea that the winner of a large in-sample search needs a test which includes the search.",
+      "people": [
+        "Halbert White"
+      ]
+    },
+    {
+      "year": 2007,
+      "title": "Evidence-based technical analysis",
+      "detail": "Aronson’s book argued that a technical rule is a hypothesis and that data mining without a holdout is not evidence. It is a methods book that happens to use trading rules as examples.",
+      "people": [
+        "David Aronson"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "Backtest overfitting named",
+      "detail": "Bailey, Borwein, López de Prado and Zhu showed how easy it is to produce an attractive in-sample equity curve by searching, and named the practice backtest overfitting.",
+      "people": [
+        "David H. Bailey",
+        "Jonathan M. Borwein",
+        "Marcos López de Prado",
+        "Qiji Jim Zhu"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "A book of the objections",
+      "detail": "López de Prado’s Advances in Financial Machine Learning collected the sampling, labelling, cross-validation and overfitting objections that a modern backtest is expected to answer.",
+      "people": [
+        "Marcos López de Prado"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Pseudo-Mathematics and Financial Charlatanism",
+      "authors": "David H. Bailey, Jonathan M. Borwein, Marcos López de Prado and Qiji Jim Zhu",
+      "year": 2014,
+      "note": "Notices of the American Mathematical Society. The short, sharp paper on backtest overfitting."
+    },
+    {
+      "title": "Evidence-Based Technical Analysis",
+      "authors": "David Aronson",
+      "year": 2007,
+      "note": "Hypothesis tests for trading rules, including the reality check."
+    },
+    {
+      "title": "Advances in Financial Machine Learning",
+      "authors": "Marcos López de Prado",
+      "year": 2018,
+      "note": "The working reference for purging, embargoes and the backtest protocol. Validation continues the argument."
+    },
+    {
+      "title": "The Econometrics of Financial Markets",
+      "authors": "John Y. Campbell, Andrew W. Lo and A. Craig MacKinlay",
+      "year": 1997,
+      "note": "Event-study and predictability chapters for the clock and the statistics."
+    },
+    {
+      "title": "quantjourney-bt documentation",
+      "authors": "QuantJourney",
+      "year": 2026,
+      "note": "The engine whose weight mode and order mode this course uses as the concrete protocol. Apache-2.0. Not a broker and not advice."
+    }
+  ],
+  "next": [
+    "validation"
+  ]
+}

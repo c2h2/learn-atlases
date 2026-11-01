@@ -1,0 +1,150 @@
+{
+  "slug": "research-craft",
+  "title": "Research Practice",
+  "full_title": "Specifications, Monitoring and the Boundary",
+  "area": "practice",
+  "level": 4,
+  "order": 120,
+  "tagline": "Writing a rule so someone else can test it, comparing implementations, monitoring, and what this subject will not do",
+  "summary": "The last course is about the craft around the mathematics. A strategy that cannot be specified cannot be replicated. Two implementations of one sentence are not one result. A paper record is not a live order. Combining books, watching a rule decay, and stopping are research decisions. The final chapter draws the line this atlas does not cross: no advice, no broker, no promise that a published backtest will recur.",
+  "overview": [
+    "Research that cannot be repeated is a story. This course starts from a specification complete enough that a second person, or a later you, can code it without inventing a missing window, a missing cost or a missing universe. The open library is the worked example of that standard: each case is a short rule, a source file under an Apache-2.0 licence, and a results page. The atlas teaches you to read those artefacts. It does not ask you to deploy them.",
+    "Comparing implementations is a skill the earlier courses set up and this one exercises. A moving-average cross submitted as market orders and a moving-average filter held as daily weights are not replicates. Putting their reported numbers in one table, and listing every protocol difference beside the table, is the method. The same method applies to a grid-search winner and to the walk-forward that is supposed to confirm it.",
+    "Monitoring is what happens after a specification is frozen. A paper record — signals, hypothetical fills, a NAV that no broker has seen — can reveal that the live data do not match the research data. It cannot reveal the future. Combination of several books is a covariance problem, already met in portfolio construction, applied now to strategy P&Ls. Decay and crowding are hypotheses about why a published pattern can shrink; they are not a timing system.",
+    "The boundary chapter is part of the syllabus, not a disclaimer pasted on at the end. This atlas explains mechanisms. It does not recommend a security, a fund, a strategy or a broker, and it does not give orders to send to a market. Law and regulation depend on the jurisdiction and are not taught here as legal advice. A reader who wants a trading system has to leave this text and accept responsibilities the text will not take."
+  ],
+  "prerequisites": [
+    "validation",
+    "asset-classes"
+  ],
+  "outcomes": [
+    "Write a specification that fixes universe, signal, portfolio or order rule, rebalance policy, costs, clock and benchmark.",
+    "Compare two implementations of one economic sentence by listing protocol differences beside the reported metrics.",
+    "Define a paper record and say which failures it can detect and which it cannot.",
+    "Combine strategy P&Ls with a covariance and explain why diversifying rules is not the same as diversifying assets.",
+    "State crowding and decay as hypotheses with observable signs, not as a signal to trade.",
+    "Apply the education-only boundary: describe a mechanism without recommending a position, a product or a broker."
+  ],
+  "chapters": [
+    {
+      "slug": "writing-a-specification",
+      "title": "Writing a specification",
+      "summary": "The fields a second researcher needs: universe, clock, signal, weights or orders, costs, benchmark and the exact statistic.",
+      "requires": [
+        "validation/what-a-fold-does-not-prove",
+        "backtesting/reading-published-tests"
+      ]
+    },
+    {
+      "slug": "comparing-implementations",
+      "title": "Comparing implementations",
+      "summary": "Same sentence, different protocol: how to put two published tests side by side without declaring a winner to trade.",
+      "requires": [
+        "research-craft/writing-a-specification"
+      ]
+    },
+    {
+      "slug": "paper-records-and-monitoring",
+      "title": "Paper records and monitoring",
+      "summary": "Hypothetical records after the specification is frozen, and the difference between a paper NAV and a live order.",
+      "requires": [
+        "research-craft/writing-a-specification"
+      ]
+    },
+    {
+      "slug": "combination-and-decay",
+      "title": "Combination and decay",
+      "summary": "Covariance across strategy results, crowding, and the decision to stop a piece of research.",
+      "requires": [
+        "research-craft/comparing-implementations",
+        "portfolio/from-signal-to-weight"
+      ]
+    },
+    {
+      "slug": "the-boundary",
+      "title": "The boundary",
+      "summary": "What this subject explains and what it will not do: no advice, no deployment, no promise that a backtest recurs.",
+      "requires": [
+        "research-craft/paper-records-and-monitoring"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1970,
+      "title": "A market hypothesis with a scope",
+      "detail": "Fama’s review is the model of a claim with a stated scope. Later arguments succeed or fail by narrowing that scope, not by adding adjectives.",
+      "people": [
+        "Eugene F. Fama"
+      ]
+    },
+    {
+      "year": 1999,
+      "title": "Performance presentation as a protocol",
+      "detail": "The first Global Investment Performance Standards, issued by what is now CFA Institute, treated a track record as something with a written method. Research records in this course borrow the instinct, not the compliance manual.",
+      "people": [
+        "CFA Institute"
+      ]
+    },
+    {
+      "year": 2007,
+      "title": "Rules as hypotheses",
+      "detail": "Aronson’s book insisted that a trading rule be tested as a hypothesis, with the search disclosed. The specification chapter is that insistence turned into a form.",
+      "people": [
+        "David Aronson"
+      ]
+    },
+    {
+      "year": 2014,
+      "title": "A warning about impressive curves",
+      "detail": "Bailey, Borwein, López de Prado and Zhu published their overfitting paper in a mathematics journal, aimed as much at readers outside finance as inside it. The boundary chapter inherits that audience.",
+      "people": [
+        "David H. Bailey",
+        "Jonathan M. Borwein",
+        "Marcos López de Prado",
+        "Qiji Jim Zhu"
+      ]
+    },
+    {
+      "year": 2018,
+      "title": "Reproducible financial research",
+      "detail": "López de Prado’s book made reproducibility — labels, splits, and the absence of leakage — a minimum standard for a published financial-machine-learning result.",
+      "people": [
+        "Marcos López de Prado"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Advances in Financial Machine Learning",
+      "authors": "Marcos López de Prado",
+      "year": 2018,
+      "note": "The reproducibility standard the specification chapter turns into a checklist."
+    },
+    {
+      "title": "Evidence-Based Technical Analysis",
+      "authors": "David Aronson",
+      "year": 2007,
+      "note": "How to write a rule so that a test of it is possible."
+    },
+    {
+      "title": "Pseudo-Mathematics and Financial Charlatanism",
+      "authors": "David H. Bailey, Jonathan M. Borwein, Marcos López de Prado and Qiji Jim Zhu",
+      "year": 2014,
+      "note": "Notices of the AMS. The warning the boundary chapter is enforcing."
+    },
+    {
+      "title": "Active Portfolio Management",
+      "authors": "Richard Grinold and Ronald Kahn",
+      "year": 2000,
+      "note": "Combining signals and reading an information ratio without confusing it with a decision to trade."
+    },
+    {
+      "title": "quantjourney-bt, strategies directory",
+      "authors": "QuantJourney",
+      "year": 2026,
+      "note": "Apache-2.0 source for the fifty examples, plus the quants.md pages that report their results. Read them as specifications. The project states that it is not a broker and not investment advice."
+    }
+  ],
+  "next": []
+}
