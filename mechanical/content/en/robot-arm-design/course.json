@@ -1,0 +1,190 @@
+{
+  "slug": "robot-arm-design",
+  "title": "Robot Arm Design",
+  "full_title": "Robot Arm Design: Actuators, Drives, Control and Integration",
+  "area": "control",
+  "level": 4,
+  "order": 250,
+  "tagline": "Specifying, building and commissioning a robot arm: joint sizing, motors and encoders, gear reducers, structure, joint control, the software stack, calibration, end effectors and safety",
+  "summary": "The Robotics course says how an arm should move; this course is about building one that does. It sizes the joints from a payload and reach specification, chooses motors, encoders and gear reducers, designs stiff and light links, tunes cascaded joint servos with gravity and friction compensation, assembles the software stack from a robot description to a motion planner, calibrates the kinematics and cameras, selects grippers, and makes the arm safe to work beside.",
+  "overview": [
+    "A robot arm on paper is a chain of frames and a Jacobian. A robot arm on the bench is a set of motors, gearboxes, bearings, cables, encoders, drive electronics and software that must all agree with that paper model to within a fraction of a millimetre. Most of the difficulty of building one lies in the gap between the two: a gearbox with backlash, a link that bends under its own weight, a current loop that rings, a camera whose position relative to the base is only roughly known.",
+    "The course follows the order in which an arm is designed. It starts from a specification — degrees of freedom, reach, payload, speed and repeatability — and turns it into a torque and speed requirement for every joint. It then chooses the parts that meet those requirements: servo, stepper and brushless motors with field-oriented control; encoders; planetary, cycloidal and strain-wave reducers; links, bearings and cable routing. With the hardware fixed it closes the loops, from current through velocity to position, and adds gravity and friction compensation. The last chapters cover the software that sits above the joint controllers (robot descriptions, ROS 2 and MoveIt), calibration of the kinematics and of the cameras, end effectors and grasping, and the safety measures and standards that let an arm work near people.",
+    "Two habits pay off throughout. The first is to keep a budget: every millimetre of tip error, every newton-metre of joint torque and every millisecond of control latency is spent somewhere, and writing the budget down shows which part to improve. The second is to measure early: a quick step response, a backlash test or a calibration run on the real arm teaches more than another iteration of the model."
+  ],
+  "prerequisites": [
+    "robotics",
+    "mechatronics",
+    "machine-design"
+  ],
+  "outcomes": [
+    "Turn a reach, payload, speed and repeatability specification into the torque, speed and stiffness required at each joint.",
+    "Select joint motors, drives and encoders, and explain how field-oriented control of a brushless motor produces torque.",
+    "Compare planetary, cycloidal and strain-wave reducers by ratio, backlash, torsional stiffness, efficiency and back-drivability, and choose one for a given joint.",
+    "Size links, bearings and joint housings for deflection and mass, and plan cable routing through rotating joints.",
+    "Tune cascaded current, velocity and position loops and add gravity and friction compensation to a joint servo.",
+    "Describe an arm in URDF, run it under ROS 2 with MoveIt, and identify the real-time requirements of each software layer.",
+    "Calibrate the kinematic parameters, tool point and camera-to-robot transform of an arm from measured data.",
+    "Select a gripper or end effector for a task and use force sensing and compliance to grasp reliably.",
+    "Apply the safety measures and standards for industrial and collaborative robots, including power and force limiting."
+  ],
+  "chapters": [
+    {
+      "slug": "arm-specification",
+      "title": "Arm architecture and specification",
+      "summary": "Degrees of freedom, kinematic layouts, reach, payload, speed and repeatability, and sizing the torque at each joint.",
+      "requires": [
+        "robotics/jacobians",
+        "robotics/manipulator-dynamics"
+      ]
+    },
+    {
+      "slug": "joint-actuators",
+      "title": "Joint actuators and encoders",
+      "summary": "Hobby servos, steppers and brushless motors, field-oriented control, motor drives, and incremental and absolute encoders.",
+      "requires": [
+        "mechatronics/electric-actuators",
+        "mechatronics/sensors"
+      ]
+    },
+    {
+      "slug": "gear-reducers",
+      "title": "Gear reducers",
+      "summary": "Planetary, cycloidal and strain-wave drives; backlash, torsional stiffness, efficiency, back-drivability and quasi-direct drives.",
+      "requires": [
+        "robot-arm-design/joint-actuators",
+        "machine-design/gear-design"
+      ]
+    },
+    {
+      "slug": "links-and-structure",
+      "title": "Links, bearings and structure",
+      "summary": "Stiffness versus mass, link deflection, joint bearings, materials and cable routing through rotating joints.",
+      "requires": [
+        "robot-arm-design/arm-specification",
+        "machine-design/bearings"
+      ]
+    },
+    {
+      "slug": "joint-control",
+      "title": "Joint control in practice",
+      "summary": "Cascaded current, velocity and position loops, tuning, gravity compensation, friction compensation and joint flexibility.",
+      "requires": [
+        "robot-arm-design/gear-reducers",
+        "robotics/robot-control"
+      ]
+    },
+    {
+      "slug": "software-stack",
+      "title": "The robot software stack",
+      "summary": "Robot descriptions in URDF, ROS 2, MoveIt motion planning, controllers and real-time constraints.",
+      "requires": [
+        "robot-arm-design/joint-control",
+        "robotics/trajectory-planning"
+      ]
+    },
+    {
+      "slug": "calibration",
+      "title": "Calibration",
+      "summary": "Kinematic calibration, tool-point calibration and hand–eye calibration of cameras to the arm.",
+      "requires": [
+        "robot-arm-design/software-stack",
+        "robotics/forward-kinematics"
+      ]
+    },
+    {
+      "slug": "end-effectors",
+      "title": "End effectors and grasping",
+      "summary": "Parallel-jaw, vacuum and soft grippers, grasp quality, compliance and wrist force–torque sensing.",
+      "requires": [
+        "robot-arm-design/joint-control"
+      ]
+    },
+    {
+      "slug": "arm-safety",
+      "title": "Safety and standards",
+      "summary": "Risk assessment, emergency stops and safety-rated monitoring, collaborative operation and power and force limiting under ISO 10218 and ISO/TS 15066.",
+      "requires": [
+        "robot-arm-design/end-effectors"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1959,
+      "title": "Strain-wave gearing patented",
+      "detail": "C. Walton Musser is granted the US patent for strain-wave gearing, the flexing-spline reducer later sold as the Harmonic Drive and now fitted to the joints of most compact robot arms.",
+      "people": [
+        "C. Walton Musser"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "The all-electric IRB 6",
+      "detail": "ASEA introduces the IRB 6, among the first microprocessor-controlled, all-electric industrial robots, replacing the hydraulic drives of earlier machines.",
+      "people": []
+    },
+    {
+      "year": 1978,
+      "title": "The PUMA arm",
+      "detail": "Unimation delivers the PUMA (Programmable Universal Machine for Assembly), designed with Victor Scheinman, whose six-axis layout with a spherical wrist became a reference design for arms.",
+      "people": [
+        "Victor Scheinman"
+      ]
+    },
+    {
+      "year": 2008,
+      "title": "First UR5 collaborative arm sold",
+      "detail": "Universal Robots sells its first UR5, a lightweight arm designed to work beside people without a cage, starting the commercial market for collaborative robots.",
+      "people": []
+    },
+    {
+      "year": 2016,
+      "title": "ISO/TS 15066",
+      "detail": "ISO publishes the technical specification for collaborative robots, giving body-region limits on force and pressure for power and force limiting.",
+      "people": []
+    },
+    {
+      "year": 2017,
+      "title": "ROS 2 first release",
+      "detail": "The first ROS 2 distribution, Ardent Apalone, is released, rebuilding the Robot Operating System on DDS for real-time and multi-robot use.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Modern Robotics: Mechanics, Planning, and Control",
+      "authors": "K. M. Lynch and F. C. Park",
+      "year": 2017,
+      "note": "Cambridge University Press. The kinematic and dynamic models this course builds hardware for; free preprint and videos."
+    },
+    {
+      "title": "Shigley's Mechanical Engineering Design",
+      "authors": "R. G. Budynas and J. K. Nisbett",
+      "year": 2020,
+      "note": "McGraw-Hill, 11th edition. Shafts, bearings, gears and fatigue for the joint and link design chapters."
+    },
+    {
+      "title": "Electric Motors and Drives: Fundamentals, Types and Applications",
+      "authors": "A. Hughes and B. Drury",
+      "year": 2019,
+      "note": "Newnes, 5th edition. A clear, practical account of DC, brushless and stepper motors and their drives."
+    },
+    {
+      "title": "Springer Handbook of Robotics",
+      "authors": "B. Siciliano and O. Khatib (eds.)",
+      "year": 2016,
+      "note": "Springer, 2nd edition. Chapters on actuators, mechanism design, calibration, grasping and safety by specialists."
+    },
+    {
+      "title": "Programming Robots with ROS",
+      "authors": "M. Quigley, B. Gerkey and W. D. Smart",
+      "year": 2015,
+      "note": "O'Reilly. The concepts of nodes, topics, transforms and robot descriptions, still the core of ROS 2."
+    }
+  ],
+  "next": [
+    "vision-language-action",
+    "llm-robot-control"
+  ]
+}

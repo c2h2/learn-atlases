@@ -250,5 +250,7 @@
       "note": "MIT Press, 2nd edition. Wheeled-robot kinematics, sensors, perception and navigation at an introductory level."
     }
   ],
-  "next": []
+  "next": [
+    "robot-arm-design"
+  ]
 }

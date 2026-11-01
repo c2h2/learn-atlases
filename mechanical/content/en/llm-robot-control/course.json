@@ -1,0 +1,179 @@
+{
+  "slug": "llm-robot-control",
+  "title": "LLM Robot Control",
+  "full_title": "LLM Robot Control: Language Models as Planners and Programmers for Robot Arms",
+  "area": "control",
+  "level": 4,
+  "order": 270,
+  "tagline": "Using large language models to command robot arms: grounding language in what the robot can do, task planning, code as policies, tool-calling robot APIs, vision-language perception, closed-loop recovery and safety guardrails",
+  "summary": "A large language model cannot move a motor, but it can decide what an arm should do next, write the program that does it, or call the right robot function with the right arguments. The course shows how to connect an LLM to a robot arm safely: grounding plans in the robot's real skills, task planning, generating code against a robot API, exposing the arm as tools, using vision-language models to find objects, closing the loop with feedback, and enforcing limits the model cannot override.",
+  "overview": [
+    "The VLA course trains one network that goes from pixels to motor commands. This course takes the other route: keep a conventional, verified robot stack — motion planner, joint controllers, grasp detector — and put a large language model above it as the part that understands the request and decides what to do. The LLM never sends a raw joint torque; it chooses among skills, fills in their parameters, or writes a short program against a robot API, and the layers beneath it check and execute the result.",
+    "The chapters follow the information flow from words to motion. They start with why language is useful and why a language model alone is not enough — it does not know what the robot can reach or see — and with the grounding techniques that fix this. They then cover task planning with LLMs, generating code as a policy, and exposing the arm as typed tools that a model can call, including over standard protocols to a ROS 2 system. Perception chapters show how vision-language models locate and point to objects so that a plan refers to real coordinates. The closing chapters close the loop with feedback and error recovery, set out guardrails — workspace limits, confirmation steps, prompt-injection defences — and assemble an end-to-end system.",
+    "The point of view is that of an engineer building a system that must work every time, not a demonstration that works once. Every chapter therefore asks what happens when the model is wrong, and where in the stack the error is caught."
+  ],
+  "prerequisites": [
+    "robot-arm-design"
+  ],
+  "outcomes": [
+    "Explain why a language model must be grounded in a robot's skills and perception, and apply affordance-based grounding to a plan.",
+    "Use an LLM to decompose a natural-language request into a sequence of robot skills, and verify the plan before execution.",
+    "Write a robot API and prompts that let an LLM generate safe, short programs as policies.",
+    "Expose a robot arm's capabilities as typed tools for function calling, including through a ROS 2 bridge.",
+    "Use vision-language models for open-vocabulary detection and pointing to turn object descriptions into poses.",
+    "Close the loop with success detection, feedback to the model and replanning after failures.",
+    "Design guardrails — workspace and force limits, human confirmation and prompt-injection defences — that an LLM cannot override.",
+    "Build and test an end-to-end system in which a user commands an arm in plain language."
+  ],
+  "chapters": [
+    {
+      "slug": "language-and-robots",
+      "title": "Language models meet robots",
+      "summary": "What an LLM knows and does not know about the physical world, and the grounding problem.",
+      "requires": [
+        "robot-arm-design/software-stack"
+      ]
+    },
+    {
+      "slug": "grounded-task-planning",
+      "title": "Grounded task planning",
+      "summary": "Decomposing instructions into skills, affordance scoring as in SayCan, PDDL and LLM planners, and checking plans before execution.",
+      "requires": [
+        "llm-robot-control/language-and-robots"
+      ]
+    },
+    {
+      "slug": "code-as-policies",
+      "title": "Code as policies",
+      "summary": "Designing a robot API, prompting an LLM to write programs against it, and sandboxing generated code.",
+      "requires": [
+        "llm-robot-control/grounded-task-planning"
+      ]
+    },
+    {
+      "slug": "robot-tool-calling",
+      "title": "Robot tools and function calling",
+      "summary": "Typed robot skills as tools, structured outputs, bridging an agent to ROS 2 actions and services, and the Model Context Protocol.",
+      "requires": [
+        "llm-robot-control/code-as-policies"
+      ]
+    },
+    {
+      "slug": "vision-language-perception",
+      "title": "Perception with vision-language models",
+      "summary": "Open-vocabulary detection and segmentation, pointing and spatial reasoning, and turning image coordinates into grasp poses.",
+      "requires": [
+        "llm-robot-control/robot-tool-calling",
+        "robot-arm-design/calibration"
+      ]
+    },
+    {
+      "slug": "closed-loop-recovery",
+      "title": "Closing the loop",
+      "summary": "Success detection, feeding observations back to the model, replanning after failure, and combining LLM planners with learned VLA skills.",
+      "requires": [
+        "llm-robot-control/vision-language-perception",
+        "vision-language-action/vla-architectures"
+      ]
+    },
+    {
+      "slug": "llm-guardrails",
+      "title": "Guardrails and safety",
+      "summary": "Hard limits below the model, human confirmation, prompt injection through the scene and the user, and logging for audit.",
+      "requires": [
+        "llm-robot-control/closed-loop-recovery",
+        "robot-arm-design/arm-safety"
+      ]
+    },
+    {
+      "slug": "end-to-end-system",
+      "title": "Building an end-to-end system",
+      "summary": "A complete language-commanded arm: architecture, latency, testing with scripted scenarios, and failure analysis.",
+      "requires": [
+        "llm-robot-control/llm-guardrails"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "year": 1970,
+      "title": "SHRDLU",
+      "detail": "Terry Winograd's SHRDLU, at MIT, follows English commands to stack blocks in a simulated world — the classic early system linking language to manipulation.",
+      "people": [
+        "Terry Winograd"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "STRIPS",
+      "detail": "Richard Fikes and Nils Nilsson publish STRIPS, the action-planning formalism developed for the Shakey robot and the ancestor of PDDL.",
+      "people": [
+        "Richard Fikes",
+        "Nils Nilsson"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "SayCan",
+      "detail": "Google and Everyday Robots combine an LLM's estimate of which skill is useful with a learned value of which skill can succeed, grounding plans in what the robot can actually do.",
+      "people": []
+    },
+    {
+      "year": 2022,
+      "title": "Code as Policies and Inner Monologue",
+      "detail": "Code as Policies (Liang et al.) has an LLM write robot programs against a perception and control API; Inner Monologue (Huang et al.) feeds success detection and scene descriptions back to the model.",
+      "people": [
+        "Jacky Liang",
+        "Wenlong Huang"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "VoxPoser",
+      "detail": "Huang et al. use an LLM and a vision-language model to compose 3-D value maps that a motion planner follows, giving zero-shot manipulation from language.",
+      "people": [
+        "Wenlong Huang",
+        "Li Fei-Fei"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Model Context Protocol",
+      "detail": "Anthropic publishes the Model Context Protocol, an open standard for exposing tools to language models, later used to bridge assistants to ROS-based robots.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Artificial Intelligence: A Modern Approach",
+      "authors": "S. Russell and P. Norvig",
+      "year": 2020,
+      "note": "Pearson, 4th edition. Classical planning, PDDL and agents — the background for LLM task planning."
+    },
+    {
+      "title": "Speech and Language Processing",
+      "authors": "D. Jurafsky and J. H. Martin",
+      "year": 2024,
+      "note": "3rd edition draft, free online. Language models, transformers and prompting."
+    },
+    {
+      "title": "Modern Robotics: Mechanics, Planning, and Control",
+      "authors": "K. M. Lynch and F. C. Park",
+      "year": 2017,
+      "note": "Cambridge University Press. The motion-planning and control layers that an LLM commands."
+    },
+    {
+      "title": "Springer Handbook of Robotics",
+      "authors": "B. Siciliano and O. Khatib (eds.)",
+      "year": 2016,
+      "note": "Springer, 2nd edition. Grasping, perception and human–robot interaction chapters."
+    },
+    {
+      "title": "Programming Robots with ROS",
+      "authors": "M. Quigley, B. Gerkey and W. D. Smart",
+      "year": 2015,
+      "note": "O'Reilly. Topics, services and actions — the interfaces that robot tools wrap."
+    }
+  ],
+  "next": []
+}

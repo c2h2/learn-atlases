@@ -22,7 +22,7 @@ content/en/<course>/<chapter>.md   one lesson per chapter, in the order listed i
 data/milestones.json               field-wide timeline milestones
 ```
 
-The curriculum — 24 courses and 215 chapters in seven areas (solid mechanics, dynamics and
+The curriculum — 27 courses and 241 chapters in seven areas (solid mechanics, dynamics and
 vibration, thermofluids, materials and manufacturing, design, control and robotics, aerospace)
 over four years — is fixed in the `course.json` files. **Do not rename, add, remove or reorder
 courses or chapters**: other lessons and the map link to them. Electric circuits and electronics

@@ -229,6 +229,7 @@
     }
   ],
   "next": [
-    "robotics"
+    "robotics",
+    "robot-arm-design"
   ]
 }

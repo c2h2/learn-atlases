@@ -65,6 +65,7 @@ $PATHS = [
     'thermofluids' => ['Thermofluids and energy', ['thermodynamics', 'fluid-mechanics', 'heat-transfer', 'computational-fluid-dynamics', 'energy-systems', 'propulsion']],
     'aerospace' => ['Aerospace engineering', ['dynamics', 'thermodynamics', 'fluid-mechanics', 'solid-mechanics', 'aerodynamics', 'propulsion', 'flight-mechanics', 'orbital-mechanics']],
     'robotics' => ['Mechatronics and robotics', ['dynamics', 'mechanisms', 'vibrations', 'control-systems', 'mechatronics', 'robotics']],
+    'robot-arms' => ['Robot arms and robot learning', ['mechanisms', 'control-systems', 'mechatronics', 'machine-design', 'robotics', 'robot-arm-design', 'vision-language-action', 'llm-robot-control']],
 ];
 page_head(t('Map'), 'map', ['description' => t('How the courses depend on each other, and suggested pathways through the atlas.')]);
 ?>

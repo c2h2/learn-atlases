@@ -301,6 +301,7 @@ return [
     'Thermofluids and energy' => '热流体与能源',
     'Aerospace engineering' => '航空航天工程',
     'Mechatronics and robotics' => '机电一体化与机器人',
+    'Robot arms and robot learning' => '机械臂与机器人学习',
     'Graphs, curves and motion' => '函数、曲线与运动',
     'Matrices, stress and strain' => '矩阵、应力与应变',
     'Fields and surfaces' => '场与曲面',
