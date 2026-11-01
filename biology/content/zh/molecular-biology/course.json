@@ -1,0 +1,178 @@
+{
+  "title": "分子生物学",
+  "full_title": "基因的分子生物学",
+  "tagline": "DNA 与染色质、复制、修复与重组、分子工具、转录、RNA 加工、翻译与基因调控",
+  "summary": "分子生物学解释遗传信息如何储存、复制与表达。本课程涵盖 DNA 与染色质的结构、复制、修复与重组、造就这一领域的实验工具、转录、RNA 加工与翻译，以及细菌与真核生物如何控制哪些基因被表达、何时表达、表达多少。",
+  "overview": [
+    "分子生物学以分子来解释遗传与基因表达：DNA 中一个碱基序列如何被储存、复制、修复与重排，又如何在正确的细胞、正确的时间、以正确的量被读成 RNA 与蛋白质。它在 1950 与 1960 年代从遗传学、生物化学与结构生物学中成长起来，其基础是一连串用细菌及其噬菌体做出的决定性实验：双螺旋、半保留复制、信使 RNA、遗传密码与操纵子。它如今几乎是生物学几乎所有分支的通用语言——从发育与神经科学到进化与生态学——也是生物技术与基因组医学的基础。",
+    "本课程追随信息的流动。它从物理实体讲起——缠绕成染色质的 DNA——然后是维持它的过程：复制，从梅塞尔森与斯塔尔的实验到复制起点、复制叉与端粒；以及修复、重组与转座。讲本领域工具的一章（限制酶、克隆、聚合酶链反应（PCR）、测序、印迹、报告基因与 CRISPR–Cas9）放在前面，因为后面每一章都依赖用它们做出的实验。后半部分讲基因表达：细菌与真核生物的转录、RNA 加工、遗传密码与翻译，最后是基因调控——先讲细菌（*lac* 与 *trp* 操纵子、λ 开关、核糖开关），再讲真核生物（转录因子、增强子、染色质、DNA 甲基化与小 RNA）。",
+    "这门课之难，与其说在分子的数量，不如说在推理。我们所知的大多数东西是从间接证据推断出来的：密度梯度中的条带位置、部分二倍体中一个突变的显隐性、凝胶上一个片段的大小、螺旋重复的周期。因此每一章都会讲解关键实验与解释它们的定量论证，并配有序列操作的 Python 清单，以及关于结合、扩增与周转的短模型。请动笔、用计算器做完例题与习题，记清 5′ 端与 3′ 端、哪条链是哪条链，并时刻追问：什么实验能区分一种机制与另一种机制。"
+  ],
+  "outcomes": [
+    "描述 B-DNA 的结构、它的大沟小沟与螺旋重复，并由序列数据计算基因组长度、连环数的改变与核小体数目。",
+    "定量解读梅塞尔森与斯塔尔的实验，并解释复制体如何复制前导链与滞后链、复制起点如何每个细胞周期只被许可一次，以及端粒酶如何解决末端复制问题。",
+    "解释复制的保真度如何来自碱基选择、校对与错配修复，并把主要的 DNA 损伤类型与清除它们的修复途径对应起来。",
+    "描述同源重组、位点特异性重组与转座，并在序列数据中识别它们的产物。",
+    "解释限制酶与酶切作图、克隆、聚合酶链反应（PCR）与 qPCR、桑格测序与高通量测序、印迹、报告基因和 CRISPR–Cas9 的原理，并完成相关计算（片段大小、扩增与效率、覆盖度、偶然匹配）。",
+    "比较细菌与真核生物转录的起始、延伸与终止，并从结合与异构化分析启动子强度。",
+    "解释加帽、剪接、可变剪接、多聚腺苷酸化、RNA 编辑与无义介导降解，并预测剪接位点突变与无义突变的后果。",
+    "运用遗传密码在所有阅读框中翻译序列，应用摆动规则，并解释核糖体如何做到速度与准确、其能量代价为何。",
+    "预测 *lac* 与 *trp* 操纵子突变体及部分二倍体的表达，并用简单平衡模型分析阻遏、激活与合作诱导。",
+    "解释转录因子、增强子、染色质修饰、DNA 甲基化与小 RNA 如何调控真核生物基因，并设计实验区分基因调控中的相关与因果。"
+  ],
+  "chapters": [
+    {
+      "title": "DNA 与染色质",
+      "summary": "双螺旋、超螺旋、核小体与基因组的包装。"
+    },
+    {
+      "title": "DNA 的复制",
+      "summary": "DNA 聚合酶、复制叉、复制起点、端粒与复制的保真度。"
+    },
+    {
+      "title": "DNA 的修复与重组",
+      "summary": "错配修复、切除修复与双链断裂修复，同源重组与转座元件。"
+    },
+    {
+      "title": "分子生物学的工具",
+      "summary": "限制酶、克隆、聚合酶链反应、测序、印迹与报告基因。"
+    },
+    {
+      "title": "转录",
+      "summary": "RNA 聚合酶、启动子，以及细菌与真核生物转录的起始、延伸与终止。"
+    },
+    {
+      "title": "RNA 的加工",
+      "summary": "加帽、剪接与可变剪接、多聚腺苷酸化、RNA 编辑，以及信使 RNA 运出细胞核。"
+    },
+    {
+      "title": "遗传密码与翻译",
+      "summary": "密码子、转运 RNA、核糖体与蛋白质合成的各个步骤。"
+    },
+    {
+      "title": "细菌的基因调控",
+      "summary": "操纵子、阻遏蛋白与激活蛋白、衰减与核糖开关。"
+    },
+    {
+      "title": "真核生物的基因调控",
+      "summary": "转录因子、增强子、染色质修饰与调控 RNA。"
+    }
+  ],
+  "history": [
+    {
+      "title": "DNA 是转化原理",
+      "detail": "奥斯瓦尔德·艾弗里（Oswald Avery）、科林·麦克劳德（Colin MacLeod）与麦克林·麦卡蒂（Maclyn McCarty）证明，能把粗糙型肺炎链球菌可遗传地转变为光滑型——弗雷德里克·格里菲思（Frederick Griffith）1928 年首次描述的现象——的物质是 DNA。",
+      "people": [
+        "Oswald Avery",
+        "Colin MacLeod",
+        "Maclyn McCarty"
+      ]
+    },
+    {
+      "title": "双螺旋",
+      "detail": "沃森（James Watson）与克里克（Francis Crick）提出 DNA 的双螺旋结构，使用了罗莎琳德·富兰克林（Rosalind Franklin）、雷蒙德·戈斯林（Raymond Gosling）与莫里斯·威尔金斯（Maurice Wilkins）的 X 射线衍射数据，并指出碱基配对提示了一种复制机制。",
+      "people": [
+        "James Watson",
+        "Francis Crick",
+        "Rosalind Franklin",
+        "Maurice Wilkins"
+      ]
+    },
+    {
+      "title": "半保留复制",
+      "detail": "梅塞尔森（Matthew Meselson）与斯塔尔（Franklin Stahl）用含重氮的培养基培养大肠杆菌，并以密度梯度离心追踪其 DNA，证明每个子代双链都带有一条亲代链。",
+      "people": [
+        "Matthew Meselson",
+        "Franklin Stahl"
+      ]
+    },
+    {
+      "title": "信使 RNA、操纵子与第一个密码子",
+      "detail": "雅各布（François Jacob）与莫诺（Jacques Monod）提出操纵子模型和一种不稳定的信使；布伦纳（Sydney Brenner）、雅各布与梅塞尔森证明了信使 RNA 的存在；克里克、巴尼特（Leslie Barnett）、布伦纳与沃茨-托宾（Richard Watts-Tobin）证明密码子以三联体读取；尼伦伯格（Marshall Nirenberg）与马泰（Heinrich Matthaei）发现 poly(U) 编码多聚苯丙氨酸。",
+      "people": [
+        "François Jacob",
+        "Jacques Monod",
+        "Sydney Brenner",
+        "Marshall Nirenberg",
+        "Heinrich Matthaei"
+      ]
+    },
+    {
+      "title": "遗传密码破译完成",
+      "detail": "借助尼伦伯格与莱德（Philip Leder）的三核苷酸结合实验和科拉纳（Gobind Khorana）的人工合成多聚核苷酸，64 个密码子全部得到指定；克里克提出摆动假说。",
+      "people": [
+        "Marshall Nirenberg",
+        "Philip Leder",
+        "Gobind Khorana",
+        "Francis Crick"
+      ]
+    },
+    {
+      "title": "重组 DNA",
+      "detail": "科恩（Stanley Cohen）、张安尼（Annie Chang）、博耶（Herbert Boyer）与赫林（Robert Helling）把用 EcoRI 切开的质粒片段连接起来，并在大肠杆菌中繁殖；一年前，伯格（Paul Berg）的实验室制成了第一个重组分子。",
+      "people": [
+        "Stanley Cohen",
+        "Annie Chang",
+        "Herbert Boyer",
+        "Robert Helling"
+      ]
+    },
+    {
+      "title": "DNA 测序与断裂基因",
+      "detail": "桑格（Frederick Sanger）及同事、马克萨姆（Allan Maxam）与吉尔伯特（Walter Gilbert）发表了测定 DNA 序列的方法；夏普（Phillip Sharp）与罗伯茨（Richard Roberts）的实验室在腺病毒中发现内含子。",
+      "people": [
+        "Frederick Sanger",
+        "Walter Gilbert",
+        "Phillip Sharp",
+        "Richard Roberts"
+      ]
+    },
+    {
+      "title": "聚合酶链反应",
+      "detail": "塞特斯（Cetus）公司的斋木（Randall Saiki）、穆利斯（Kary Mullis）及同事发表了 PCR 的首次应用；PCR 由穆利斯于 1983 年构想，Taq 聚合酶则于 1988 年跟上。同年，卡罗尔·格雷德（Carol Greider）与伊丽莎白·布莱克本（Elizabeth Blackburn）发现了端粒酶。",
+      "people": [
+        "Kary Mullis",
+        "Randall Saiki",
+        "Carol Greider",
+        "Elizabeth Blackburn"
+      ]
+    },
+    {
+      "title": "RNA 干扰",
+      "detail": "法厄（Andrew Fire）、梅洛（Craig Mello）及同事证明，双链 RNA 能在线虫（Caenorhabditis elegans）中沉默与之匹配的基因；在此之前五年，安布罗斯（Victor Ambros）与鲁夫昆（Gary Ruvkun）的实验室描述了第一个 microRNA——lin-4。",
+      "people": [
+        "Andrew Fire",
+        "Craig Mello"
+      ]
+    },
+    {
+      "title": "Cas9 的程序化切割",
+      "detail": "伊内克（Martin Jinek）、杜德纳（Jennifer Doudna）、夏庞蒂埃（Emmanuelle Charpentier）及同事证明，由一条 RNA 引导的 Cas9 能切开 PAM 旁侧与 20 个核苷酸序列匹配的任何 DNA，开启了基因组编辑的时代。",
+      "people": [
+        "Martin Jinek",
+        "Jennifer Doudna",
+        "Emmanuelle Charpentier"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "note": "第 7 版。本课程最对口的经典教材：围绕机制与揭示它们的实验组织，复制、重组、转录以及细菌和噬菌体的调控部分尤为出色。"
+    },
+    {
+      "note": "第 7 版。广博、权威、插图精良；其关于 DNA、染色体、复制、修复、基因表达及其调控的章节，是课程中引用的数据的标准出处。"
+    },
+    {
+      "note": "第 12 版。对基因结构、染色质、转录、RNA 加工与调控的详尽论述，着重每个过程背后的分子细节。"
+    },
+    {
+      "note": "第 3 版。按基因组功能组织的现代、以实验为中心的教材；在实验的逻辑与 RNA 水平的调控方面极佳。"
+    },
+    {
+      "note": "关于 λ 开关的简短而透彻的专著，解释合作结合、阻遏与通过募集实现的激活；是基因调控逻辑的最佳入门。"
+    },
+    {
+      "note": "第 4 版。关于重组 DNA 技术背后原理的标准参考书，适合想了解本领域工具在教学与科研实验室中如何使用的读者。"
+    }
+  ]
+}
