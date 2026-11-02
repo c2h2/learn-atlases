@@ -90,3 +90,21 @@ and structural widget lines.
 already clean). For the BUILD, zh must reproduce the English baseline exactly — en itself has
 word-check exercises the expression parser rejects (greece 3, reformations 2, wars 1 at
 genocide.md, christendom 1); zero-error courses must build at zero.
+
+## Style review rules (2026-11-03)
+
+A review of the first complete zh pass found accurate but calqued prose. These rules apply to all
+new and revised zh text:
+
+- **Years:** write four-digit years without 公元 (1534年, 1789–1848年). Keep 公元 only for
+  years below 1000 (公元476年, 公元800年) and always write 公元前 for BCE.
+- **No article calques:** drop 一个/一部/一种/那个 where English "a/the" carries no counting
+  sense ("一部法令不是一个堂区的日记" → "法令不等于堂区的日记").
+- **诸 is not a plural marker.** Leave plurals unmarked, or use 各、历次、这些、多个. Keep
+  genuine words (诸侯、诸神). Titles: 希腊世界, 罗马世界, 宗教改革, 革命时代, 国家与帝国.
+- **Terms:** genocide 种族灭绝 (legal names keep 灭绝种族罪, 《防止及惩治灭绝种族罪公约》);
+  English Reformation "settlement" 宗教安排, never 解决方案; Reformed (church) 改革宗;
+  partitions of Poland 历次瓜分; public "argument" about Europe 争论 (the atlas's own
+  claim/argument pair stays 论断/论证).
+- Join choppy sentences and break 它……它…… chains the way a Chinese editor would, within the
+  same line, without changing any fact or hedge.
