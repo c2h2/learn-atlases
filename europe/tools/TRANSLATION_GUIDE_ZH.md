@@ -56,9 +56,37 @@ mention in a lesson — 亚里士多德（Aristotle）, 凡尔登（Verdun）. F
 parentheses; journal and series titles stay Latin. Latin technical phrases (res publica, SPQR)
 may keep Latin with a Chinese gloss on first use.
 
+## House headings and fixed sentences
+
+`## Exercises` → `## 习题`; `## Where this leads` → `## 通向何处`. The invented-sentence lead is
+verbatim 「下面这句话为示例而虚构。它不是史料。」 wherever the English marks an invented example.
+Quotes in prose are curly “…” (balanced per file); straight ASCII `"` only inside `check="…"`
+and structural widget lines.
+
+## Verification battery (every lesson, every overlay)
+
+    # 1. exact line count + blank-line positions vs en (diff must be empty)
+    # 2. punctuation, BOTH directions (forward grep alone misses digit/Latin between: 711,得)
+    grep -Pn '[\x{4e00}-\x{9fff}][,;:!?]' f.md   # and reverse: '[,;:!?][\x{4e00}-\x{9fff}]'
+    #    exempt only ^\s*(events|labels|points|nodes|edges|series|expr|ylabel|…): lines —
+    #    those keep ASCII delimiters and their labels stay comma-free
+    # 3. stranded English (space-flanked words slip adjacency checks):
+    grep -Pn '[\x{4e00}-\x{9fff}] [a-zA-Z]{2,}|[a-zA-Z]{2,} [\x{4e00}-\x{9fff}]' f.md
+    #    legal only in （glosses）, *italics*, [[links]], {#anchors}, :::block headers, check=, widgets
+    # 4. per-year numeral reconciliation — en must equal zh per year:
+    grep -oP '(?<!\d)[12]\d{3}(?!\d)' f.md | sort | uniq -c        # run on en and zh, diff
+    #    do NOT use \b — GNU grep treats CJK as word characters, so 公元1804年 never matches
+    #    Dropped years and added years are both defects (see the years rule above).
+    # 5. overlay JSON: value-level scan of decoded strings (raw-file grep false-positives on
+    #    JSON structural ASCII); people byte-identical; lengths index-aligned.
+
 ## Check
 
     cd /home/c2h2/learn/europe
     php tools/check.php <course>          # both languages once the zh lessons exist
+    node tools/build.js --quiet --lang=zh <course>
 
-0 errors and 0 warnings is the gate for a finished course (the en side is already clean).
+0 errors and 0 warnings from the checker is the gate for a finished course (the en side is
+already clean). For the BUILD, zh must reproduce the English baseline exactly — en itself has
+word-check exercises the expression parser rejects (greece 3, reformations 2, wars 1 at
+genocide.md, christendom 1); zero-error courses must build at zero.
