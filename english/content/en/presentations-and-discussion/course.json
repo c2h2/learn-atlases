@@ -7,11 +7,26 @@
   "order": 180,
   "tagline": "Planning a talk, signposting, delivery, visual aids, handling questions, seminars and group discussion, debate and persuasion, meetings and negotiation, and interviews",
   "summary": "Speaking at length and in groups needs structure, clear delivery and the language to manage interaction. This course covers planning and signposting a presentation, using the voice and visual aids, handling questions, taking part in seminars and discussions, debating and persuading, meetings and negotiations, and job and academic interviews.",
-  "overview": [],
+  "overview": [
+    "This course is about speaking at length and speaking in groups: the talk you give to a class or a conference, the seminar in which twelve people try to make sense of a reading, the meeting that has to end with a decision, the debate in which you must answer an opponent you cannot interrupt, and the interview in which every answer is being weighed. The first half follows a presentation from start to finish — planning it for a particular audience and purpose, signposting it so that listeners always know where they are, delivering it with a clear voice and controlled nerves, supporting it with simple slides and well-described charts, and handling the questions at the end. The second half turns to interaction: contributing to seminars and group discussions, building and rebutting arguments in debate, chairing and taking part in meetings and negotiations, and answering and asking questions in job and academic interviews.",
+    "These are the situations in which many learners discover that knowing English is not the same as being able to use it under pressure. A presentation has no second draft, and listeners cannot turn back a page. A discussion moves on while you are still composing your sentence. The language that makes the difference is often small and learnable — *Let's move on to…*, *Can I just come in here?*, *If we could agree on the date, we'd be happy to…* — and the habits behind it, such as planning around three main points or answering the question before giving the background, can be practised deliberately. The course explains why these habits work, with the evidence where there is some, and gives model talks, transcripts and tasks written for the atlas.",
+    "Each chapter builds on *Listening and Conversation*, which taught turn-taking, clarification and polite disagreement in everyday conversation, and on *Connected Speech*, which taught stress and intonation; this course applies them to longer and more formal speech rather than teaching them again. Politeness and directness are explained in *Pragmatics*, hedging in *Modality*, and the written counterparts of these skills — signposting, argument and describing data — in *Essay Writing* and *Academic Reading*. There is no audio on the site yet, so talks are given as scripts and transcripts: read them aloud, time yourself, and record yourself whenever a task asks you to speak.",
+    "Chinese speakers often bring real strengths to this course — careful preparation, well-organised content, and a habit of listing points with *first*, *second* and *finally*. The difficulties tend to lie elsewhere: reading a script aloud in a narrow pitch range, opening with an apology for one's English, putting the background before the main point when an English-speaking audience expects the reverse, waiting to be invited into a discussion that never pauses long enough, and presenting achievements too modestly in an interview. None of these is a fault of character or culture; each is a convention that differs, and each can be adjusted once it is noticed. Speakers from any background vary widely, and the course describes conventions, not national types."
+  ],
   "prerequisites": [
     "listening-and-conversation"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Plan a ten-minute talk for a stated audience and purpose, with an opening that gives the listener a reason to listen, two to four main points, and an ending that summarises and closes.",
+    "Use signposting language to announce the structure of a talk, move between sections, digress and return, refer to visuals, summarise and conclude.",
+    "Deliver a prepared talk from notes rather than a script, with pauses at the ends of tone units, the nucleus on the new information, and a speaking rate your audience can follow, and use at least two evidence-based techniques for managing nerves.",
+    "Design slides that follow Mayer's coherence, signalling and redundancy principles, and describe a chart aloud by stating its subject, its axes, the main trend and one notable detail.",
+    "Invite, clarify, answer and, where necessary, defer questions after a talk, including saying honestly and usefully that you do not know an answer.",
+    "Take the floor, build on and challenge other speakers' points, and bring quieter members into a seminar or group discussion.",
+    "Prepare and deliver a short debate speech with a clear case and a rebuttal, and recognise common weaknesses in an opponent's reasoning.",
+    "Chair a meeting through an agenda, and make proposals, conditional offers and counter-offers in a negotiation that moves towards an agreement both sides can accept.",
+    "Answer behavioural and motivational questions in a job or academic interview with specific, structured examples, and ask the interviewers informed questions of your own."
+  ],
   "chapters": [
     {
       "slug": "planning-a-talk",
@@ -87,8 +102,123 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 95,
+      "title": "Quintilian's *Institutio Oratoria*",
+      "detail": "Around the end of the first century CE, the Roman teacher Quintilian completed a twelve-book education of the orator, covering the classical stages of invention, arrangement, style, memory and delivery that still shape advice on preparing a talk.",
+      "people": [
+        "Quintilian"
+      ]
+    },
+    {
+      "year": 1762,
+      "title": "Sheridan's lectures on elocution",
+      "detail": "Thomas Sheridan's *A Course of Lectures on Elocution* argued that reading and speaking aloud should be taught as seriously as writing, and helped to start the elocution movement in British and American schools.",
+      "people": [
+        "Thomas Sheridan"
+      ]
+    },
+    {
+      "year": 1815,
+      "title": "The Cambridge Union Society",
+      "detail": "Students at Cambridge founded a debating society, followed by the Oxford Union in 1823; their debates on a motion, with speakers for and against and a vote at the end, became a model for university debating.",
+      "people": []
+    },
+    {
+      "year": 1876,
+      "title": "*Robert's Rules of Order*",
+      "detail": "Henry Martyn Robert, an American army engineer, published a pocket manual of rules for conducting meetings — motions, seconding, amendments and voting — which, in revised editions, is still used by many associations.",
+      "people": [
+        "Henry Martyn Robert"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "Observing groups at work",
+      "detail": "Robert F. Bales's *Interaction Process Analysis* gave researchers a way to code every act in a small-group discussion — giving opinions, asking for suggestions, showing agreement or tension — and began the systematic study of how groups talk.",
+      "people": [
+        "Robert F. Bales"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Toulmin's model of argument",
+      "detail": "Stephen Toulmin's *The Uses of Argument* described everyday arguments as claims supported by data and warrants, with qualifiers and rebuttals, a model widely used in teaching debate and argumentation.",
+      "people": [
+        "Stephen Toulmin"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Measuring communication apprehension",
+      "detail": "James C. McCroskey published questionnaires for measuring anxiety about speaking, including what became the Personal Report of Communication Apprehension, making fear of public speaking something researchers could study and treat.",
+      "people": [
+        "James C. McCroskey"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "*Getting to Yes*",
+      "detail": "Roger Fisher and William Ury of the Harvard Negotiation Project described principled negotiation — separating the people from the problem, focusing on interests rather than positions, and knowing your best alternative to a negotiated agreement.",
+      "people": [
+        "Roger Fisher",
+        "William Ury"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Mayer's *Multimedia Learning*",
+      "detail": "Richard E. Mayer brought together experiments on learning from words and pictures and stated principles such as coherence, signalling and redundancy, which are now widely applied to the design of slides.",
+      "people": [
+        "Richard E. Mayer"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Art of Public Speaking",
+      "authors": "Stephen E. Lucas and Paul Stob",
+      "year": 2020,
+      "note": "13th edition. A widely used university textbook on preparing and delivering speeches: audience analysis, organisation, outlines, delivery, visual aids and persuasive speaking, with many sample speeches."
+    },
+    {
+      "title": "Multimedia Learning",
+      "authors": "Richard E. Mayer",
+      "year": 2020,
+      "note": "3rd edition. The research behind evidence-based advice on slides: each principle of multimedia design is stated with the experiments that support it and the conditions under which it holds."
+    },
+    {
+      "title": "The Uses of Argument",
+      "authors": "Stephen E. Toulmin",
+      "year": 2003,
+      "note": "Updated edition. The source of the claim–data–warrant model of argument; useful background for debate, persuasion and rebuttal."
+    },
+    {
+      "title": "Getting to Yes: Negotiating Agreement Without Giving In",
+      "authors": "Roger Fisher, William Ury and Bruce Patton",
+      "year": 2011,
+      "note": "3rd edition. A short, readable account of principled negotiation — interests, options, objective criteria and the BATNA — that underlies the negotiation section of this course."
+    },
+    {
+      "title": "Robert's Rules of Order Newly Revised",
+      "authors": "Henry M. Robert III, Daniel H. Honemann, Thomas J. Balch, Daniel E. Seabold and Shmuel Gerber",
+      "year": 2020,
+      "note": "12th edition. The standard reference for formal meeting procedure — motions, amendments, points of order and voting — and the source of much formal meeting vocabulary."
+    },
+    {
+      "title": "The Surprising Science of Meetings",
+      "authors": "Steven G. Rogelberg",
+      "year": 2019,
+      "note": "A research-based guide to running meetings, written by one of the main researchers in the field, with practical advice on agendas, length, size and facilitation."
+    },
+    {
+      "title": "Cambridge Grammar of English",
+      "authors": "Ronald Carter and Michael McCarthy",
+      "year": 2006,
+      "note": "Its corpus-based sections on spoken grammar describe the discourse markers, signposts, hedges and vague language that structure talks and discussions."
+    }
+  ],
   "next": [
     "pragmatics",
     "world-englishes"
