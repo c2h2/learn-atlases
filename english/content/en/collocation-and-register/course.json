@@ -7,11 +7,26 @@
   "order": 150,
   "tagline": "Collocation, using a corpus, verb–noun and adjective–noun collocations, phrasal verbs and their formal equivalents, idioms, register, connotation and near-synonyms, translation traps and Chinglish, and academic vocabulary",
   "summary": "Knowing a word includes knowing its company: which words it goes with, in which situations it is used and what it suggests. This course covers collocation and how to check it in a corpus, idioms and fixed expressions, the vocabulary of formal and informal registers, connotation and near-synonyms, the translation traps that produce Chinglish, and the core vocabulary of academic English.",
-  "overview": [],
+  "overview": [
+    "This course is about the company words keep. A learner who knows what *rain*, *mistake* and *argument* mean still has to know that English says *heavy rain*, *make a mistake* and *a strong argument*; that *find out* suits a conversation and *discover* a report; that *slim* is a compliment and *skinny* usually is not; and that *learn knowledge*, a word-for-word rendering of 学习知识, is understood but not said. These are questions of **collocation**, **register** and **connotation**, and together they decide whether correct English also sounds natural.",
+    "They matter most at exactly the level where grammar stops being the main problem. Studies of learner writing, from Sylviane Granger's International Corpus of Learner English to Nadja Nesselhauf's work on verb–noun combinations, show that advanced learners make far more errors of word combination and register than of tense or agreement, and that many of these errors come from the first language. The good news is that such errors can be checked: a corpus, a collocation dictionary or a learner's dictionary shows how a word is actually used, and this course teaches you to ask them the right questions.",
+    "The first three chapters explain what collocation is, how to check a combination in a freely available corpus, and the high-frequency verb–noun and adjective–noun collocations that every learner needs. The next two cover phrasal verbs and their formal equivalents, and idioms and other fixed expressions. The chapters on register and connotation then explain how words carry the situation and the speaker's attitude with them. The last two bring everything together: the translation traps that produce Chinglish, and the academic vocabulary that university writing depends on.",
+    "For Chinese speakers the main difficulty is that the commonest Chinese verbs and adjectives (开, 打, 做, 大, 高) cover ranges of meaning that English divides among many different words, so a single dictionary translation is the start of a search, not the end of it. The distinction between 书面语 and 口语 helps with register, but it does not map one to one onto English formal and informal vocabulary. The habit this course tries to build is simple: notice whole combinations when you read and listen, and check a combination before you rely on it."
+  ],
   "prerequisites": [
     "word-formation"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain what a collocation is and tell free combinations, collocations and idioms apart by how restricted their words are.",
+    "Check whether a word combination is natural using a free corpus interface, a collocation dictionary or a learner's dictionary, and interpret concordance lines, frequencies and association scores.",
+    "Use the common verb–noun collocations of *make*, *do*, *take*, *have* and *give* and frequent adjective–noun collocations accurately, noting British and American differences.",
+    "Choose between a phrasal verb and a one-word equivalent (*put off* or *postpone*) to suit the register of a text.",
+    "Recognise idioms, binomials and sentence frames, judge how far they can be varied, and decide when using one is appropriate.",
+    "Describe the register of a text in terms of field, tenor and mode, and keep the vocabulary of a text consistent in register.",
+    "Distinguish near-synonyms by connotation, strength, collocation and register (*thin*, *slim*, *skinny*; *famous*, *notorious*).",
+    "Identify word-for-word translations from Chinese that give unnatural English and find the natural expression.",
+    "Use frequent academic words with their collocations and word families in academic writing."
+  ],
   "chapters": [
     {
       "slug": "what-is-collocation",
@@ -87,8 +102,146 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1933,
+      "title": "Palmer's report on collocations",
+      "detail": "Harold Palmer, working in Tokyo, published the *Second Interim Report on English Collocations*, one of the first attempts to collect word combinations for language teaching.",
+      "people": [
+        "Harold Palmer"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Firth and meaning by collocation",
+      "detail": "J. R. Firth's papers collected in *Papers in Linguistics 1934–1951* and his \"Synopsis of linguistic theory\" argued that part of a word's meaning lies in the words it habitually occurs with, summed up in his phrase \"You shall know a word by the company it keeps\".",
+      "people": [
+        "J. R. Firth"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Register in language teaching",
+      "detail": "M. A. K. Halliday, Angus McIntosh and Peter Strevens's *The Linguistic Sciences and Language Teaching* described registers as varieties of language according to use, distinguished by field, mode and style of discourse; in Halliday's later work the third dimension became tenor.",
+      "people": [
+        "M. A. K. Halliday",
+        "Angus McIntosh",
+        "Peter Strevens"
+      ]
+    },
+    {
+      "year": 1986,
+      "title": "A combinatory dictionary",
+      "detail": "Morton Benson, Evelyn Benson and Robert Ilson's *BBI Combinatory Dictionary of English* was one of the first dictionaries devoted to the grammatical and lexical collocations of English words.",
+      "people": [
+        "Morton Benson",
+        "Evelyn Benson",
+        "Robert Ilson"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "The idiom principle",
+      "detail": "John Sinclair's *Corpus, Concordance, Collocation* used corpus evidence to argue that speakers mostly choose ready-made combinations (the idiom principle) and build freely (the open-choice principle) only when they must.",
+      "people": [
+        "John Sinclair"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "The British National Corpus",
+      "detail": "The British National Corpus, about 100 million words of late twentieth-century British English, about a tenth of it spoken, was completed and became a standard source of evidence for collocation and register.",
+      "people": []
+    },
+    {
+      "year": 1999,
+      "title": "Grammar by register",
+      "detail": "Douglas Biber and colleagues' *Longman Grammar of Spoken and Written English*, based on a corpus of about 40 million words, compared conversation, fiction, news and academic prose throughout, showing how strongly grammar and vocabulary vary with register.",
+      "people": [
+        "Douglas Biber",
+        "Stig Johansson",
+        "Geoffrey Leech",
+        "Susan Conrad",
+        "Edward Finegan"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "The Academic Word List",
+      "detail": "Averil Coxhead's Academic Word List gave 570 word families that are frequent across academic subjects but outside the most frequent general vocabulary; they covered about 10% of the words in her academic corpus.",
+      "people": [
+        "Averil Coxhead"
+      ]
+    },
+    {
+      "year": 2002,
+      "title": "A corpus of learner English",
+      "detail": "The first version of the International Corpus of Learner English, directed by Sylviane Granger at Louvain, made essays by learners from many first-language backgrounds available for comparison with native-speaker writing.",
+      "people": [
+        "Sylviane Granger",
+        "Estelle Dagneaux",
+        "Fanny Meunier"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "Collocations in a learner corpus",
+      "detail": "Nadja Nesselhauf's *Collocations in a Learner Corpus* analysed the verb–noun combinations in essays by advanced German-speaking learners and showed how often they deviate from native usage and how often the first language is involved.",
+      "people": [
+        "Nadja Nesselhauf"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "English Collocations in Use: Intermediate",
+      "authors": "Michael McCarthy and Felicity O'Dell",
+      "year": 2005,
+      "note": "Cambridge University Press. Self-study units on collocations by topic and by word class, with exercises; a good companion to the first three chapters."
+    },
+    {
+      "title": "Oxford Collocations Dictionary for Students of English",
+      "authors": "Oxford University Press",
+      "year": 2009,
+      "note": "Second edition. A dictionary that lists, for each headword, the verbs, adjectives, nouns and prepositions it typically combines with; the quickest way to choose a collocate when writing."
+    },
+    {
+      "title": "Corpus, Concordance, Collocation",
+      "authors": "John Sinclair",
+      "year": 1991,
+      "note": "Oxford University Press. The classic account of what concordances show about words, and of the idiom principle."
+    },
+    {
+      "title": "Longman Grammar of Spoken and Written English",
+      "authors": "Douglas Biber, Stig Johansson, Geoffrey Leech, Susan Conrad and Edward Finegan",
+      "year": 1999,
+      "note": "Longman. A corpus grammar that compares conversation, fiction, news and academic prose throughout; the source of most register facts in this course."
+    },
+    {
+      "title": "Register, Genre, and Style",
+      "authors": "Douglas Biber and Susan Conrad",
+      "year": 2009,
+      "note": "Cambridge University Press. A clear introduction to describing registers by their situation and their typical language, with many text samples."
+    },
+    {
+      "title": "Collocations in a Learner Corpus",
+      "authors": "Nadja Nesselhauf",
+      "year": 2005,
+      "note": "John Benjamins. A research study of learners' verb–noun collocations, useful for teachers who want to know which combinations cause trouble and why."
+    },
+    {
+      "title": "Practical English Usage",
+      "authors": "Michael Swan",
+      "year": 2016,
+      "note": "Fourth edition (Oxford University Press). Short, reliable entries on confusable words, formal and informal usage and British and American differences."
+    },
+    {
+      "title": "英汉对比研究（增订本）",
+      "authors": "连淑能",
+      "year": 2010,
+      "note": "高等教育出版社. A systematic comparison of English and Chinese, including word meaning and word combination; background to the chapter on translation traps."
+    }
+  ],
   "next": [
     "style-and-rhetoric",
     "translation"
