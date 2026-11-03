@@ -7,12 +7,26 @@
   "order": 135,
   "tagline": "Measurement and uncertainty, sensors, bridges, signal conditioning, data acquisition and EMC",
   "summary": "Engineering depends on measuring things accurately. This course treats measurement errors and uncertainty, sensors and transducers, bridges and signal conditioning, instrumentation amplifiers, grounding and shielding, data acquisition, test instruments and electromagnetic compatibility.",
-  "overview": [],
+  "overview": [
+    "Every engineering decision rests on a measurement: the voltage that says a battery is charged, the strain that says a bridge is safe, the temperature that keeps a reactor or an incubator within limits. A measurement is never just a number. It is a number with a unit, obtained by a chain of physical effects and electronic circuits, each of which adds its own error, and it means something only when we can say how far from the truth it might be. Instrumentation is the engineering of that chain: choosing the sensor, exciting it, extracting a microvolt signal from volts of interference, digitising it without aliasing or losing resolution, and stating the result with an honest uncertainty traceable to the SI.",
+    "The course follows a signal from the physical world to a reported number. It opens with the language of measurement — the 2019 SI, traceability, systematic and random errors and the GUM method for evaluating and combining uncertainties — and then surveys the physical principles of sensors: resistive, capacitive, inductive, piezoelectric, thermoelectric and optical. Bridges, excitation and signal conditioning turn small changes of resistance or capacitance into usable voltages; instrumentation amplifiers, grounding, shielding and isolation recover them from common-mode interference. The data-acquisition chapter treats anti-aliasing, multiplexing, quantisation, jitter and the choice of converter. The last two chapters look at the bench instruments engineers use every day and at electromagnetic compatibility, the discipline of making equipment that neither disturbs nor is disturbed by its environment.",
+    "What makes instrumentation hard is that the difficulties are rarely in the main signal path. A strain-gauge amplifier with a perfect gain of $1000$ can still be useless because of a ground loop, a thermocouple at a copper–tin joint, an unbalanced cable capacitance or a $50\\,\\mathrm{Hz}$ harmonic aliased into the band. Work the chapters with a budget in mind: for every design, list the error and noise sources, estimate each in the same units (usually volts or microstrain referred to the input), and combine them. Keep a feel for magnitudes — millivolts per volt from a bridge, tens of microvolts per kelvin from a thermocouple, nanovolts per root hertz of amplifier noise — and the right approximation will usually be obvious."
+  ],
   "prerequisites": [
     "electronics-1",
     "signals-systems"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Express a measurement result with its standard and expanded uncertainty using the terminology and methods of the GUM, including Type A and Type B evaluations and the law of propagation of uncertainty.",
+    "Explain how the 2019 SI defines the units through fixed constants and how electrical units are realised and made traceable through Josephson and quantum Hall standards and calibration chains.",
+    "Describe the operating principles, transfer characteristics and limitations of resistive, capacitive, inductive, piezoelectric, thermoelectric and optical sensors, and select a sensor for a given measurand and environment.",
+    "Analyse Wheatstone and AC bridges, compute their outputs and nonlinearity, and design excitation, amplification, filtering and linearisation for a bridge sensor.",
+    "Analyse and design instrumentation amplifiers, calculating gain, common-mode rejection and the effect of resistor and source mismatch.",
+    "Diagnose ground loops and capacitive and inductive interference, and apply grounding, shielding, twisting, guarding and isolation to suppress them.",
+    "Design a data-acquisition channel: anti-aliasing filter, multiplexer settling, sampling rate and ADC resolution, using SNR, SINAD, ENOB and jitter budgets.",
+    "Use multimeters, oscilloscopes and probes, spectrum analysers, signal generators and network analysers correctly, accounting for loading, bandwidth, rise time and resolution bandwidth.",
+    "Identify the sources and coupling paths of electromagnetic interference, estimate emissions from differential- and common-mode currents, and apply filtering, layout and shielding to meet EMC standards."
+  ],
   "chapters": [
     {
       "slug": "measurement-uncertainty",
@@ -74,7 +88,138 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1821,
+      "title": "The thermoelectric effect",
+      "detail": "Thomas Johann Seebeck found that a circuit of two different metals with its junctions at different temperatures deflects a compass needle; the effect underlies every thermocouple.",
+      "people": [
+        "Thomas Johann Seebeck"
+      ]
+    },
+    {
+      "year": 1843,
+      "title": "The Wheatstone bridge",
+      "detail": "In a Royal Society lecture Charles Wheatstone popularised the balanced bridge for comparing resistances, crediting Samuel Hunter Christie, who had described it in 1833.",
+      "people": [
+        "Charles Wheatstone",
+        "Samuel Hunter Christie"
+      ]
+    },
+    {
+      "year": 1871,
+      "title": "The platinum resistance thermometer",
+      "detail": "William Siemens proposed measuring temperature by the resistance of platinum wire; Hugh Longbourne Callendar made it a precision instrument in the late 1880s.",
+      "people": [
+        "William Siemens",
+        "Hugh Longbourne Callendar"
+      ]
+    },
+    {
+      "year": 1880,
+      "title": "Piezoelectricity",
+      "detail": "Pierre and Jacques Curie showed that quartz, tourmaline and other crystals develop electric charge when stressed, the basis of piezoelectric force, pressure and acceleration sensors.",
+      "people": [
+        "Pierre Curie",
+        "Jacques Curie"
+      ]
+    },
+    {
+      "year": 1938,
+      "title": "The bonded strain gauge",
+      "detail": "Edward Simmons at Caltech and Arthur Ruge at MIT independently developed the bonded resistance-wire strain gauge, which became the standard tool of experimental stress analysis.",
+      "people": [
+        "Edward E. Simmons",
+        "Arthur C. Ruge"
+      ]
+    },
+    {
+      "year": 1947,
+      "title": "The triggered-sweep oscilloscope",
+      "detail": "Tektronix, founded by Howard Vollum and Jack Murdock in 1946, introduced the 511, whose triggered sweep made calibrated time measurements of non-repetitive waveforms routine.",
+      "people": [
+        "Howard Vollum",
+        "Jack Murdock"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "The Josephson effect",
+      "detail": "Brian Josephson predicted that a junction between two superconductors irradiated at frequency $f$ develops voltage steps of $hf/2e$, which became the basis of the primary voltage standard.",
+      "people": [
+        "Brian Josephson"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "The quantum Hall effect",
+      "detail": "Klaus von Klitzing discovered that the Hall resistance of a two-dimensional electron gas is quantised in steps of $h/e^2$, giving a resistance standard reproducible worldwide to parts in $10^{9}$ or better.",
+      "people": [
+        "Klaus von Klitzing"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "The GUM",
+      "detail": "The Guide to the Expression of Uncertainty in Measurement, prepared under the BIPM, IEC, ISO, OIML and other bodies, established Type A and Type B evaluation and the law of propagation of uncertainty as the international method.",
+      "people": []
+    },
+    {
+      "year": 2019,
+      "title": "The redefined SI",
+      "detail": "On 20 May 2019 the SI was redefined by fixing the numerical values of seven constants, including $h$, $e$ and $k$, so that the Josephson and von Klitzing constants became exact and the electrical units were brought back into the SI.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Principles of Measurement Systems",
+      "authors": "John P. Bentley",
+      "year": 2005,
+      "note": "A clear systems view of measurement: static and dynamic characteristics, error budgets, sensors and signal conditioning; well matched to the first three chapters."
+    },
+    {
+      "title": "Measurement Systems: Application and Design",
+      "authors": "Ernest O. Doebelin",
+      "year": 2004,
+      "note": "The classic engineering reference on sensors and their dynamics, with many practical transducer designs for motion, force, pressure, flow and temperature."
+    },
+    {
+      "title": "Handbook of Modern Sensors",
+      "authors": "Jacob Fraden",
+      "year": 2016,
+      "note": "A broad survey of sensing principles and devices with practical numbers; the place to look up a sensor you have not met."
+    },
+    {
+      "title": "The Art of Electronics",
+      "authors": "Paul Horowitz, Winfield Hill",
+      "year": 2015,
+      "note": "Unrivalled practical chapters on precision design, instrumentation amplifiers, noise, grounding and measurement; read for how circuits really behave."
+    },
+    {
+      "title": "Data Conversion Handbook",
+      "authors": "Walt Kester (ed.), Analog Devices",
+      "year": 2005,
+      "note": "ADC and DAC architectures, specifications (SINAD, ENOB, jitter), sampling and the design of data-acquisition front ends."
+    },
+    {
+      "title": "Electromagnetic Compatibility Engineering",
+      "authors": "Henry W. Ott",
+      "year": 2009,
+      "note": "The standard practical text on grounding, shielding, filtering, PCB layout, emissions and immunity."
+    },
+    {
+      "title": "Grounding and Shielding: Circuits and Interference",
+      "authors": "Ralph Morrison",
+      "year": 2016,
+      "note": "A compact, physical explanation of ground loops, shields and guards in instrumentation systems."
+    },
+    {
+      "title": "Evaluation of Measurement Data — Guide to the Expression of Uncertainty in Measurement (JCGM 100:2008)",
+      "authors": "Joint Committee for Guides in Metrology (BIPM, IEC, IFCC, ILAC, ISO, IUPAC, IUPAP, OIML)",
+      "year": 2008,
+      "note": "The GUM itself, freely available from the BIPM; the authority on Type A and Type B evaluation, combined and expanded uncertainty."
+    }
+  ],
   "next": []
 }
