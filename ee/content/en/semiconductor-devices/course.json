@@ -7,11 +7,24 @@
   "order": 60,
   "tagline": "Energy bands, carriers, pn junctions, bipolar transistors and MOSFETs",
   "summary": "Transistors and diodes are made from semiconductors whose behaviour follows from quantum mechanics and statistics. This course builds the physics of carriers in crystals and uses it to explain pn junctions, bipolar junction transistors, MOS capacitors and MOSFETs, the devices on which all of modern electronics is built.",
-  "overview": [],
+  "overview": [
+    "Every transistor, diode, LED, solar cell and image sensor is a carefully arranged piece of semiconductor crystal, and its terminal behaviour — the exponential current of a diode, the gain of a bipolar transistor, the square-law or velocity-saturated current of a MOSFET — follows from a small number of physical ideas: energy bands, the statistics of electrons and holes, and the drift and diffusion of those carriers under fields and concentration gradients. This course builds those ideas from the ground up and turns them into the device models that circuit designers use every day.",
+    "The course has two halves. The first three chapters establish the physics of carriers: why a crystal has bands and a gap, how many electrons and holes there are at a given doping and temperature, and how they move, recombine and obey the continuity equations. The second half applies that toolkit to devices in a fixed sequence: the pn junction (electrostatics, the ideal diode equation, capacitance and breakdown), real diodes, metal–semiconductor contacts and optoelectronic devices, the bipolar junction transistor, the MOS capacitor, and finally the MOSFET with its long-channel equations and the short-channel effects that dominate modern processes.",
+    "What makes the subject demanding is the number of approximations stacked on top of each other — non-degenerate statistics, the depletion approximation, low-level injection, the gradual-channel approximation — and the need to know when each one fails. Work every example with the numbers in front of you: use the standard silicon constants at $300\\,\\mathrm{K}$, check orders of magnitude (a doping of $10^{16}\\,\\mathrm{cm^{-3}}$, a depletion width of a fraction of a micrometre, a built-in potential below the band gap), and sketch the band diagram before writing any equation. The band diagram is the single most useful picture in device physics; once you can draw it for a device under bias, the equations usually follow."
+  ],
   "prerequisites": [
     "circuits-1"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain how a periodic crystal potential produces energy bands and a band gap, and classify materials as metals, semiconductors or insulators from their band filling.",
+    "Calculate electron and hole concentrations and the Fermi-level position in intrinsic and doped silicon from the density of states and Fermi–Dirac statistics.",
+    "Compute drift and diffusion currents, conductivity and resistivity, and apply the Einstein relation, recombination lifetimes and the continuity equations to simple one-dimensional problems.",
+    "Derive the electrostatics of an abrupt pn junction in the depletion approximation and the ideal diode equation, and calculate built-in potential, depletion width, junction capacitance and breakdown voltage.",
+    "Distinguish Schottky from ohmic metal–semiconductor contacts and analyse light-emitting diodes, photodiodes and solar cells, including open-circuit voltage, fill factor and efficiency.",
+    "Explain the operation of the bipolar junction transistor, derive its current gain and the Ebers–Moll model, and describe the Early effect, high injection and the transit-time limit on speed.",
+    "Draw band diagrams of the MOS capacitor in accumulation, depletion and inversion, calculate its flat-band and threshold voltages, and interpret low- and high-frequency C–V curves.",
+    "Derive the long-channel MOSFET current–voltage characteristics, include body effect and channel-length modulation, and explain velocity saturation, short-channel effects and the limits of scaling."
+  ],
   "chapters": [
     {
       "slug": "crystals-energy-bands",
@@ -76,8 +89,140 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1874,
+      "title": "Rectification at a crystal contact",
+      "detail": "Ferdinand Braun observed that a metal point pressed on lead sulphide and other metal sulphides conducted more easily in one direction than the other — the first recorded semiconductor rectifier, later used as the crystal detector of early radio.",
+      "people": [
+        "Ferdinand Braun"
+      ]
+    },
+    {
+      "year": 1931,
+      "title": "Band theory of semiconductors",
+      "detail": "Alan Herries Wilson applied the band theory of Bloch to explain why some solids are insulators and others semiconductors, introducing the picture of a filled band, an energy gap and thermally excited carriers.",
+      "people": [
+        "Alan Herries Wilson"
+      ]
+    },
+    {
+      "year": 1938,
+      "title": "Theory of the metal–semiconductor barrier",
+      "detail": "Walter Schottky and, independently, Nevill Mott explained rectification at metal–semiconductor contacts by a space-charge barrier in the semiconductor.",
+      "people": [
+        "Walter Schottky",
+        "Nevill Mott"
+      ]
+    },
+    {
+      "year": 1940,
+      "title": "The pn junction in silicon",
+      "detail": "At Bell Laboratories Russell Ohl found that a silicon rod with a natural boundary between differently purified regions produced a photovoltage under light and rectified current; the two sides were named p- and n-type.",
+      "people": [
+        "Russell Ohl"
+      ]
+    },
+    {
+      "year": 1947,
+      "title": "The point-contact transistor",
+      "detail": "John Bardeen and Walter Brattain demonstrated amplification with two gold point contacts on a germanium crystal at Bell Laboratories in December 1947.",
+      "people": [
+        "John Bardeen",
+        "Walter Brattain"
+      ]
+    },
+    {
+      "year": 1949,
+      "title": "Theory of the pn junction and junction transistor",
+      "detail": "William Shockley published the theory of pn junctions and the junction transistor in the Bell System Technical Journal, deriving the ideal diode equation from minority-carrier diffusion.",
+      "people": [
+        "William Shockley"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "Silicon transistors and the silicon solar cell",
+      "detail": "Gordon Teal's group at Texas Instruments produced the first commercial silicon transistors, and Daryl Chapin, Calvin Fuller and Gerald Pearson at Bell Laboratories announced a silicon pn-junction solar cell of about 6 % efficiency.",
+      "people": [
+        "Gordon Teal",
+        "Daryl Chapin",
+        "Calvin Fuller",
+        "Gerald Pearson"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "The planar process and the MOSFET",
+      "detail": "Jean Hoerni at Fairchild developed the planar process with a protective oxide, and Mohamed Atalla and Dawon Kahng at Bell Laboratories built the first working silicon MOSFET (reported in 1960).",
+      "people": [
+        "Jean Hoerni",
+        "Mohamed Atalla",
+        "Dawon Kahng"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "Visible LEDs and semiconductor lasers",
+      "detail": "Nick Holonyak at General Electric made the first visible-light LED from GaAsP, and in the same year groups at General Electric, IBM and MIT Lincoln Laboratory demonstrated GaAs junction lasers.",
+      "people": [
+        "Nick Holonyak",
+        "Robert N. Hall"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "Constant-field MOSFET scaling",
+      "detail": "Robert Dennard and colleagues at IBM showed that shrinking all MOSFET dimensions and voltages by the same factor keeps the electric field constant while improving speed and density, the rule that guided CMOS scaling for three decades.",
+      "people": [
+        "Robert Dennard"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Solid State Electronic Devices",
+      "authors": "Ben G. Streetman, Sanjay Kumar Banerjee",
+      "year": 2015,
+      "note": "The classic undergraduate text (7th edition): clear band diagrams, carrier physics and all the devices of this course at the right level."
+    },
+    {
+      "title": "Semiconductor Device Fundamentals",
+      "authors": "Robert F. Pierret",
+      "year": 1996,
+      "note": "Very careful and readable development of carrier statistics, transport and the pn junction, BJT and MOSFET, with many worked problems."
+    },
+    {
+      "title": "Semiconductor Physics and Devices",
+      "authors": "Donald A. Neamen",
+      "year": 2012,
+      "note": "A thorough, problem-rich treatment (4th edition) that starts from quantum mechanics and crystal structure; good for extra practice."
+    },
+    {
+      "title": "Modern Semiconductor Devices for Integrated Circuits",
+      "authors": "Chenming Hu",
+      "year": 2010,
+      "note": "Device physics with an eye on modern CMOS: MOS electrostatics, short-channel effects, leakage and scaling, by the co-inventor of the FinFET."
+    },
+    {
+      "title": "Device Electronics for Integrated Circuits",
+      "authors": "Richard S. Muller, Theodore I. Kamins, Mansun Chan",
+      "year": 2003,
+      "note": "Rigorous treatment of junctions, bipolar transistors and MOS devices as used in integrated circuits (3rd edition)."
+    },
+    {
+      "title": "Physics of Semiconductor Devices",
+      "authors": "S. M. Sze, Kwok K. Ng",
+      "year": 2007,
+      "note": "The standard reference (3rd edition) for device physics, parameters and more advanced devices; use it to look things up rather than to learn from first."
+    },
+    {
+      "title": "Fundamentals of Modern VLSI Devices",
+      "authors": "Yuan Taur, Tak H. Ning",
+      "year": 2009,
+      "note": "Graduate-level account of CMOS and bipolar device design and scaling (2nd edition); the natural next step after this course."
+    }
+  ],
   "next": [
     "electronics-1",
     "digital-ic",
