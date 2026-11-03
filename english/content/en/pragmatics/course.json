@@ -7,12 +7,27 @@
   "order": 190,
   "tagline": "Meaning beyond words, speech acts, politeness and face, requests and refusals, apologies, thanks and compliments, small talk, directness across cultures, irony and understatement, and writing to people you do not know well",
   "summary": "Pragmatics is about what speakers mean rather than what their words literally say, and it is where fluent learners still make their most noticeable mistakes. This course explains implied meaning, speech acts and politeness, and applies them to requests, refusals, apologies, compliments, small talk, humour and email, comparing English conventions with Chinese ones without reducing either to a stereotype.",
-  "overview": [],
+  "overview": [
+    "Pragmatics is the study of meaning in use: not what a sentence means in the dictionary and the grammar book, but what a particular speaker means by saying it to a particular person, at a particular moment. *It's quite warm in here* is a remark about the temperature; said by a visitor looking at a closed window, it is also a request. *Interesting* can be praise, polite criticism or a warning. This course explains how listeners work out such meanings, and how speakers choose their words so that the meaning arrives — and so that the relationship survives the message.",
+    "For a learner at this level, pragmatics is where the remaining problems are most visible. Grammar mistakes are usually forgiven, because listeners recognise them as language mistakes. A request that is too blunt, a refusal that is too vague, a compliment rejected in the wrong way or a question that seems too personal is different: it is often heard not as a language mistake but as a fact about the speaker's character. Researchers call this **pragmatic failure** (Thomas 1983), and the best protection against it is to understand the conventions explicitly rather than guess them.",
+    "The course has three parts. The first three chapters give the theory: implied meaning and Grice's maxims, speech acts and indirect speech acts after Austin and Searle, and the theories of politeness and face — Brown and Levinson's, Leech's, Spencer-Oatey's, and the Chinese concepts of 面子 and 脸 together with the critiques of universality made by Gu Yueguo, Mao and others. The middle chapters apply it to the speech acts learners need most: requests and refusals; apologies, thanks and compliments; and small talk. The last three chapters widen the view: what research says, and does not say, about directness across cultures; irony, understatement and humour; and writing emails to teachers, colleagues and strangers. The course assumes the polite modal forms of the course *Modality* and the conversational skills of *Listening and Conversation*, and builds on them rather than repeating them.",
+    "Chinese speakers bring a rich politeness system of their own — respectful address terms, self-deprecation, warm insistence, careful attention to 面子 — and much of it carries over well. The difficulties come where the conventions differ: English relies more on modal questions than on *please*, usually accepts compliments rather than denying them, keeps many personal questions out of first conversations, and often states a refusal or a request early, with the reasons after it. None of this makes one culture more polite than the other, and individuals vary greatly in both. The approach of the course is to describe tendencies with their evidence, to show what each choice signals to the listener, and to leave the choice to you."
+  ],
   "prerequisites": [
     "listening-and-conversation",
     "modality"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain the difference between what is said and what is meant, and work out the implicature of an utterance using Grice's Cooperative Principle and maxims.",
+    "Identify the illocutionary force of an utterance, classify speech acts with Searle's five categories, and recognise conventional indirect speech acts such as *Can you…?* requests.",
+    "Describe Brown and Levinson's model of face and politeness strategies, Leech's maxims and Spencer-Oatey's rapport management, and explain the main critiques of their universality, including Gu Yueguo's and Mao's accounts of Chinese politeness and the distinction between 面子 and 脸.",
+    "Make requests and refusals at a level of directness suited to the power, distance and imposition involved, with suitable supportive moves and reasons.",
+    "Apologise, thank and respond to thanks and compliments in ways that fit English conventions, and explain how compliment responses differ, and have changed, between English and Chinese speakers.",
+    "Choose safe topics for small talk, deflect questions that feel too personal without offence, and recognise questions of your own that may seem intrusive to some listeners.",
+    "Describe research findings on directness across cultures as tendencies with evidence, and avoid both pragmatic failure and national stereotypes when interpreting other speakers.",
+    "Recognise irony, sarcasm and understatement, interpret them from context and intonation, and use mild understatement and humour appropriately.",
+    "Write emails to teachers, colleagues and strangers with suitable openings, requests, follow-ups, apologies and closings, and diagnose common mistakes of tone."
+  ],
   "chapters": [
     {
       "slug": "meaning-beyond-words",
@@ -89,8 +104,144 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1923,
+      "title": "Phatic communion",
+      "detail": "In a supplement to C. K. Ogden and I. A. Richards's *The Meaning of Meaning*, the anthropologist Bronisław Malinowski described talk whose purpose is to create social bonds rather than to pass on information, and called it phatic communion.",
+      "people": [
+        "Bronisław Malinowski"
+      ]
+    },
+    {
+      "year": 1955,
+      "title": "Goffman's “On face-work”",
+      "detail": "The sociologist Erving Goffman's essay in the journal *Psychiatry*, reprinted in *Interaction Ritual* (1967), defined face as the positive social value a person claims in an interaction and described the ritual work people do to keep it.",
+      "people": [
+        "Erving Goffman"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "*How to Do Things with Words*",
+      "detail": "J. L. Austin's William James Lectures, given at Harvard in 1955 and published after his death, argued that many utterances perform actions rather than describe the world, and distinguished locutionary, illocutionary and perlocutionary acts.",
+      "people": [
+        "J. L. Austin"
+      ]
+    },
+    {
+      "year": 1969,
+      "title": "Searle's *Speech Acts*",
+      "detail": "John Searle stated the conditions under which a speech act such as a promise is successfully performed; his “Indirect speech acts” (1975) and “A classification of illocutionary acts” (1976) followed.",
+      "people": [
+        "John R. Searle"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "Grice's “Logic and Conversation”",
+      "detail": "Paul Grice's paper, first given as William James Lectures at Harvard in 1967, set out the Cooperative Principle and its maxims of quantity, quality, relation and manner, and explained implicature as meaning that hearers infer from them.",
+      "people": [
+        "H. P. Grice"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Leech's *Principles of Pragmatics*",
+      "detail": "Geoffrey Leech proposed a Politeness Principle with maxims such as tact, generosity, approbation and modesty, alongside Grice's Cooperative Principle; in the same year Stephen Levinson's textbook *Pragmatics* surveyed the field.",
+      "people": [
+        "Geoffrey Leech",
+        "Stephen C. Levinson"
+      ]
+    },
+    {
+      "year": 1986,
+      "title": "Relevance theory",
+      "detail": "Dan Sperber and Deirdre Wilson's *Relevance: Communication and Cognition* (2nd edition 1995) replaced Grice's maxims with a single principle of relevance, balancing the effects of an utterance against the effort of processing it.",
+      "people": [
+        "Dan Sperber",
+        "Deirdre Wilson"
+      ]
+    },
+    {
+      "year": 1987,
+      "title": "*Politeness: Some Universals in Language Usage*",
+      "detail": "Penelope Brown and Stephen Levinson reissued their 1978 essay as a book, with positive and negative face, face-threatening acts, five broad strategies and the three variables of distance, power and imposition.",
+      "people": [
+        "Penelope Brown",
+        "Stephen C. Levinson"
+      ]
+    },
+    {
+      "year": 1989,
+      "title": "The Cross-Cultural Speech Act Realization Project",
+      "detail": "Shoshana Blum-Kulka, Juliane House and Gabriele Kasper published *Cross-Cultural Pragmatics: Requests and Apologies*, comparing requests and apologies across several languages and varieties with a shared coding scheme.",
+      "people": [
+        "Shoshana Blum-Kulka",
+        "Juliane House",
+        "Gabriele Kasper"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "Chinese politeness and the critique of universality",
+      "detail": "Gu Yueguo's “Politeness phenomena in modern Chinese” (*Journal of Pragmatics*) argued that Chinese 礼貌 is normative rather than a matter of individual face wants; LuMing Mao (1994) developed the critique using the distinction between 面子 and 脸 drawn by Hu Hsien Chin in 1944.",
+      "people": [
+        "Gu Yueguo",
+        "LuMing Mao"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Pragmatics",
+      "authors": "George Yule",
+      "year": 1996,
+      "note": "A short, clear introduction (Oxford Introductions to Language Study): deixis, implicature, speech acts, politeness and conversation, with exercises. The best first book."
+    },
+    {
+      "title": "Meaning in Interaction: An Introduction to Pragmatics",
+      "authors": "Jenny Thomas",
+      "year": 1995,
+      "note": "A readable introduction with many real examples; especially good on Grice, indirectness and the author's own idea of pragmatic failure."
+    },
+    {
+      "title": "Pragmatics",
+      "authors": "Stephen C. Levinson",
+      "year": 1983,
+      "note": "The classic university textbook: implicature, presupposition, speech acts and conversational structure, explained with precision. Demanding but still the standard reference."
+    },
+    {
+      "title": "Pragmatics",
+      "authors": "Yan Huang",
+      "year": 2014,
+      "note": "2nd edition (Oxford Textbooks in Linguistics). A thorough survey including neo-Gricean and relevance-theoretic approaches, with examples from many languages, Chinese among them."
+    },
+    {
+      "title": "Politeness: Some Universals in Language Usage",
+      "authors": "Penelope Brown and Stephen C. Levinson",
+      "year": 1987,
+      "note": "The founding work of politeness research: face, face-threatening acts and the catalogue of strategies, with examples from English, Tamil and Tzeltal. Read the introduction for the debate it started."
+    },
+    {
+      "title": "The Pragmatics of Politeness",
+      "authors": "Geoffrey Leech",
+      "year": 2014,
+      "note": "Leech's mature account of politeness, with a General Strategy of Politeness, corpus evidence from English, and a chapter on whether politeness differs between East and West."
+    },
+    {
+      "title": "Culturally Speaking: Culture, Communication and Politeness Theory",
+      "authors": "Helen Spencer-Oatey (ed.)",
+      "year": 2008,
+      "note": "2nd edition. Rapport management and chapters on intercultural communication, several of them on Chinese and British interaction; good for the cross-cultural chapters."
+    },
+    {
+      "title": "Teaching and Learning Pragmatics: Where Language and Culture Meet",
+      "authors": "Noriko Ishihara and Andrew D. Cohen",
+      "year": 2010,
+      "note": "A practical book for teachers and self-directed learners on how speech acts such as requests, refusals, apologies and compliments can be learned, with research summaries."
+    }
+  ],
   "next": [
     "world-englishes",
     "translation"
