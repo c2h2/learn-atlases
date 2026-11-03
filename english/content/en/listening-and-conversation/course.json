@@ -7,12 +7,27 @@
   "order": 120,
   "tagline": "How listening works, gist and detail, keeping a conversation going, clarification, opinions, telling stories, different accents, calls and online meetings, and learning from podcasts, films and TV",
   "summary": "Listening is the skill learners practise least and need most, and conversation depends on small signals as much as on vocabulary. This course explains how listeners combine sounds with expectations, how to listen for gist and for detail, how conversations are managed through turn-taking, feedback and clarification, how to give opinions and tell stories, how to understand different accents, and how to keep learning from podcasts, films and television.",
-  "overview": [],
+  "overview": [
+    "This course is about the two halves of spoken English that textbooks often keep apart: understanding what you hear, and taking part in a conversation. It begins with listening itself — how a listener builds meaning from sounds, words, grammar, context and expectation at the same time, and how to listen for the main idea and for particular details. It then turns to conversation: how speakers take turns and show that they are listening, how they ask for clarification when something is not clear, how they give opinions, agree and disagree, and how they tell a story so that others want to hear it.",
+    "Many learners can read English well and still find listening and conversation hard. A text on a page waits for you; speech does not. It comes once, at the speaker's speed, in the speaker's accent, and a conversation asks you to answer while you are still working out what was said. The good news is that listening is a skill, not a gift. Knowing what listeners actually do, which words and signals matter most, and which simple phrases keep a conversation going makes a large difference, and the course gives many dialogues and exercises to practise them.",
+    "The chapters go from listening to conversation and back to listening. The first two chapters explain how listening works and how to listen for gist and for detail. The next four deal with conversation: turn-taking and feedback, clarification, opinions, and storytelling. The last three widen the range: understanding accents other than the two models of the atlas, managing phone calls and online meetings, and using podcasts, films and television to keep learning on your own. There is no audio on the site yet, so dialogues are given as transcripts, and sounds are described in words and transcription; read the dialogues aloud, or with a partner, wherever you can.",
+    "Chinese learners often face three particular difficulties. Many were trained on clear recordings for examinations, so natural conversation, with its reduced forms and overlaps, can come as a shock. Many feel that a listener should be quiet and that interrupting or asking someone to repeat is impolite, while English conversation expects frequent small signals from the listener and treats a quick *Sorry, what was that?* as normal. And many aim to understand every word, which slows them down. This course suggests a different aim: catch the stressed words and the main idea, ask when you need to, and say clearly what you think."
+  ],
   "prerequisites": [
     "everyday-english",
     "connected-speech"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain how bottom-up decoding and top-down knowledge work together in listening, and say which of the two failed when you misunderstand something.",
+    "Predict the content of a recording from its situation, listen once for the gist and again for specific numbers, names and reasons.",
+    "Keep a conversation going with back-channel signals (*mm*, *right*, *really?*), follow-up questions and smooth turn-taking, and recognise when a speaker is handing over the turn.",
+    "Ask for repetition, for a word to be spelled or explained, and for a meaning to be confirmed, and check that the other person has understood you.",
+    "Give and ask for opinions, agree, and disagree politely with softeners such as *I see what you mean, but …*",
+    "Tell a short personal story with an orientation, a series of events, a high point and an ending, and react to other people's stories.",
+    "Recognise the main features of several common accents of English, such as rhoticity, /t/ tapping and glottal stops, and use strategies for adjusting to an unfamiliar accent.",
+    "Open, join, interrupt and close phone calls and video meetings, and deal with sound problems and silences politely.",
+    "Choose podcasts, films and television at the right level, use subtitles in stages, and plan a routine of extensive listening, intensive listening and shadowing."
+  ],
   "chapters": [
     {
       "slug": "how-listening-works",
@@ -87,8 +102,128 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1953,
+      "title": "The cocktail party problem",
+      "detail": "Colin Cherry's experiments, published in the *Journal of the Acoustical Society of America*, asked how a listener can follow one voice among many; listeners could follow a chosen message but noticed very little of the content of an ignored one.",
+      "people": [
+        "E. Colin Cherry"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "The structure of spoken stories",
+      "detail": "William Labov and Joshua Waletzky analysed personal stories told in interviews and found a regular structure — orientation, complicating action, evaluation, resolution and coda — to which Labov later added the abstract.",
+      "people": [
+        "William Labov",
+        "Joshua Waletzky"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "The back channel",
+      "detail": "Victor Yngve's paper “On getting a word in edgewise” used the term *back channel* for the short signals, such as *uh-huh* and nods, that a listener sends without taking the turn.",
+      "people": [
+        "Victor H. Yngve"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Hearing a sound that is not there",
+      "detail": "Richard Warren replaced one sound in a recorded sentence with a cough; listeners reported hearing the missing sound and could not say where the cough had been, a clear demonstration of top-down processing.",
+      "people": [
+        "Richard M. Warren"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "Repair in conversation",
+      "detail": "Schegloff, Jefferson and Sacks described how speakers deal with problems of speaking, hearing and understanding, and showed that conversation is organised so that speakers usually get the chance to correct themselves first.",
+      "people": [
+        "Emanuel A. Schegloff",
+        "Gail Jefferson",
+        "Harvey Sacks"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "Wells's *Accents of English*",
+      "detail": "John Wells's three volumes described the accents of English across the British Isles, North America and the rest of the world, and introduced the lexical sets (KIT, DRESS, TRAP …) used to compare them.",
+      "people": [
+        "John C. Wells"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Negotiating meaning",
+      "detail": "Michael Long showed that in conversations between native and non-native speakers, both sides use clarification requests, confirmation checks and comprehension checks to make input understandable, an idea later developed as the interaction hypothesis.",
+      "people": [
+        "Michael H. Long"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "Accent is not the same as intelligibility",
+      "detail": "Murray Munro and Tracey Derwing showed that speech that listeners judged strongly accented was often still fully intelligible, separating accentedness, comprehensibility and intelligibility.",
+      "people": [
+        "Murray J. Munro",
+        "Tracey M. Derwing"
+      ]
+    },
+    {
+      "year": 2008,
+      "title": "Field's *Listening in the Language Classroom*",
+      "detail": "John Field argued that listening lessons should teach the processes of listening — decoding and building meaning — rather than only test comprehension with questions.",
+      "people": [
+        "John Field"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Listening in the Language Classroom",
+      "authors": "John Field",
+      "year": 2008,
+      "note": "The most useful single book on how second-language listening works and how to practise it: decoding and meaning-building, why learners fail, and practical exercises."
+    },
+    {
+      "title": "Teaching and Learning Second Language Listening: Metacognition in Action",
+      "authors": "Larry Vandergrift and Christine C. M. Goh",
+      "year": 2012,
+      "note": "Explains listening as a set of processes and strategies, with a cycle of prediction, listening, checking and reflection that learners can use on their own."
+    },
+    {
+      "title": "Teaching and Researching Listening",
+      "authors": "Michael Rost",
+      "year": 2011,
+      "note": "2nd edition. A clear survey of research on listening — perception, word recognition, comprehension, interaction — with ideas for teaching and self-study."
+    },
+    {
+      "title": "Conversation: From Description to Pedagogy",
+      "authors": "Scott Thornbury and Diana Slade",
+      "year": 2006,
+      "note": "Describes how real conversation works — turn-taking, back-channels, storytelling, chat and gossip — and how it can be taught; many examples from recorded talk."
+    },
+    {
+      "title": "Cambridge Grammar of English",
+      "authors": "Ronald Carter and Michael McCarthy",
+      "year": 2006,
+      "note": "A grammar based on a spoken corpus as well as written texts; its sections on spoken grammar cover discourse markers, response tokens, vague language and the way stories are told."
+    },
+    {
+      "title": "Conversation Analysis: An Introduction",
+      "authors": "Jack Sidnell",
+      "year": 2010,
+      "note": "An introduction to the study of recorded conversation: turn-taking, sequences, repair, and stories in talk."
+    },
+    {
+      "title": "Accents of English",
+      "authors": "John C. Wells",
+      "year": 1982,
+      "note": "Three volumes. The standard description of accents across the English-speaking world, with the lexical sets used to compare them; still the reference for the accent chapter."
+    }
+  ],
   "next": [
     "presentations-and-discussion",
     "pragmatics"
