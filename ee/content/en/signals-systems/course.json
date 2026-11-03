@@ -7,11 +7,25 @@
   "order": 40,
   "tagline": "Continuous- and discrete-time signals, LTI systems, convolution, Fourier, Laplace and z-transforms, and sampling",
   "summary": "Signals carry information and systems transform them. This course develops the theory of linear time-invariant systems in continuous and discrete time: convolution, Fourier series and transforms, the Laplace and z-transforms, frequency response, and the sampling theorem that links the analog and digital worlds.",
-  "overview": [],
+  "overview": [
+    "A **signal** is a quantity that varies with time (or space) and carries information: the voltage on a microphone lead, the current in a power line, the samples streaming out of an analog-to-digital converter, the pixels of an image. A **system** is anything that takes a signal in and gives a signal out: an amplifier, a filter, a communication channel, a motor and its controller, a few lines of code in a phone. Signals and systems is the common language of electrical engineering for describing both, independently of whether the system is built from resistors, transistors, gears or software.",
+    "The course is built around one idea. If a system is **linear** and **time-invariant** (LTI), its whole behaviour is captured by a single signal, its impulse response, and the output for any input is the convolution of the input with that response. Complex exponentials $e^{st}$ and $z^n$ pass through an LTI system unchanged in shape, merely scaled by the system function, so decomposing signals into exponentials — the Fourier series, the Fourier transform, the Laplace and $z$-transforms — turns convolution into multiplication and differential or difference equations into algebra. That is why filters are specified in the frequency domain, why stability is read from pole locations and why a digital signal processor can imitate an analog filter.",
+    "We treat continuous and discrete time side by side: signals and their transformations, system properties, convolution, Fourier series, the continuous-time and discrete-time Fourier transforms, sampling (the bridge between the two worlds), and finally the Laplace and $z$-transforms, which extend Fourier analysis to unstable signals and give the pole–zero picture used throughout control and filter design. The mathematics of the transforms themselves is developed in the Maths Atlas; here the emphasis is on what the transforms mean for engineering systems.",
+    "The difficulty is less in any single calculation than in holding several viewpoints at once — time and frequency, continuous and discrete, a signal and its transform — and moving between them fluently. Work every example in both domains when you can, sketch signals before computing with them, and keep track of units ($\\mathrm{rad/s}$ versus $\\mathrm{Hz}$, radians per sample versus cycles per sample): most mistakes in this subject are mistakes of bookkeeping rather than of understanding."
+  ],
   "prerequisites": [
     "circuits-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Classify signals as continuous or discrete, periodic or aperiodic, energy or power, and transform them by shifting, scaling and reversing the independent variable.",
+    "Determine whether a system is linear, time-invariant, causal, stable, memoryless and invertible, and justify the answer from its input–output description.",
+    "Compute the output of an LTI system by convolution in continuous and discrete time, and relate the impulse response to differential and difference equation models.",
+    "Expand periodic signals in Fourier series and predict the steady-state response of an LTI system to a periodic input.",
+    "Use the continuous-time and discrete-time Fourier transforms and their properties to analyse filtering, modulation and frequency response.",
+    "State and derive the sampling theorem, predict aliasing, and design anti-aliasing and reconstruction filters for a sampled-data system.",
+    "Apply the Laplace and $z$-transforms with their regions of convergence to find system functions, impulse responses and stability from poles and zeros.",
+    "Move between time-domain, frequency-domain and pole–zero descriptions of the same system and choose the one that makes a given problem simplest."
+  ],
   "chapters": [
     {
       "slug": "signals",
@@ -86,8 +100,122 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1812,
+      "title": "Laplace's generating integrals",
+      "detail": "In the Théorie analytique des probabilités Pierre-Simon Laplace used integrals of the form now called the Laplace transform to solve difference and differential equations in probability.",
+      "people": [
+        "Pierre-Simon Laplace"
+      ]
+    },
+    {
+      "year": 1822,
+      "title": "Fourier's theory of heat",
+      "detail": "Joseph Fourier's Théorie analytique de la chaleur expanded arbitrary functions in trigonometric series to solve the heat equation, the origin of Fourier series and, later, the Fourier integral.",
+      "people": [
+        "Joseph Fourier"
+      ]
+    },
+    {
+      "year": 1893,
+      "title": "Heaviside's operational calculus",
+      "detail": "Oliver Heaviside treated the derivative as an algebraic operator to solve transmission-line and circuit equations, introducing the unit step; the Laplace transform later gave his methods a rigorous footing.",
+      "people": [
+        "Oliver Heaviside"
+      ]
+    },
+    {
+      "year": 1899,
+      "title": "The Gibbs phenomenon",
+      "detail": "Prompted by overshoot seen in Albert Michelson's mechanical harmonic analyser, J. Willard Gibbs explained in letters to Nature that Fourier partial sums of a discontinuous function overshoot by about 9 % of the jump however many terms are taken.",
+      "people": [
+        "J. Willard Gibbs",
+        "Albert A. Michelson"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "Nyquist on telegraph transmission",
+      "detail": "Harry Nyquist showed that a channel of bandwidth $W$ can carry at most $2W$ independent pulse values per second, the rate now bearing his name.",
+      "people": [
+        "Harry Nyquist"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Kotelnikov's sampling theorem",
+      "detail": "Vladimir Kotelnikov proved that a band-limited signal is determined by samples taken at twice its highest frequency, in a paper for the first All-Union conference on communications.",
+      "people": [
+        "Vladimir Kotelnikov"
+      ]
+    },
+    {
+      "year": 1949,
+      "title": "Shannon's sampling theorem",
+      "detail": "Claude Shannon's paper Communication in the Presence of Noise stated and proved the sampling theorem with the sinc interpolation formula, building on the cardinal series of E. T. Whittaker (1915).",
+      "people": [
+        "Claude Shannon",
+        "E. T. Whittaker"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "The z-transform named",
+      "detail": "John Ragazzini and Lotfi Zadeh introduced the name and systematic use of the z-transform for sampled-data control systems at Columbia University.",
+      "people": [
+        "John R. Ragazzini",
+        "Lotfi A. Zadeh"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "The fast Fourier transform",
+      "detail": "James Cooley and John Tukey published an algorithm computing the discrete Fourier transform of $N$ points in about $N\\log_2 N$ operations, making spectral analysis practical on digital computers.",
+      "people": [
+        "James W. Cooley",
+        "John W. Tukey"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Signals and Systems (2nd ed.)",
+      "authors": "Alan V. Oppenheim, Alan S. Willsky, S. Hamid Nawab",
+      "year": 1997,
+      "note": "The standard text, treating continuous and discrete time in parallel; this course follows its notation and order closely."
+    },
+    {
+      "title": "Linear Systems and Signals (3rd ed.)",
+      "authors": "B. P. Lathi, Roger Green",
+      "year": 2018,
+      "note": "Very readable, with many worked examples and a careful treatment of the Laplace transform and system response."
+    },
+    {
+      "title": "Signals and Systems (2nd ed.)",
+      "authors": "Simon Haykin, Barry Van Veen",
+      "year": 2003,
+      "note": "Strong on applications to communications and control, with good problem sets."
+    },
+    {
+      "title": "Discrete-Time Signal Processing (3rd ed.)",
+      "authors": "Alan V. Oppenheim, Ronald W. Schafer",
+      "year": 2010,
+      "note": "The next step after this course: sampling, the z-transform and filter design in depth."
+    },
+    {
+      "title": "The Fourier Transform and Its Applications (3rd ed.)",
+      "authors": "Ronald N. Bracewell",
+      "year": 2000,
+      "note": "A classic for intuition about transforms, with pictorial transform pairs and physical examples."
+    },
+    {
+      "title": "Signals and Systems: Analysis Using Transform Methods and MATLAB (2nd ed.)",
+      "authors": "Michael J. Roberts",
+      "year": 2012,
+      "note": "Detailed derivations and computational examples; useful for checking your own calculations numerically."
+    }
+  ],
   "next": [
     "dsp",
     "control-systems",
