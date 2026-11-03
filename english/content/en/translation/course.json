@@ -7,12 +7,28 @@
   "order": 260,
   "tagline": "What translation is, English and Chinese compared, translating words, long English sentences into Chinese, building English sentences from Chinese, structural shifts, idioms and culture, specialised and literary translation, interpreting, and machine translation",
   "summary": "Translating between English and Chinese means moving between two languages that build sentences in very different ways: English links clauses explicitly with conjunctions and relative pronouns, while Chinese often leaves the connections to meaning and word order. This course covers the theory of translation, the main contrasts between the two languages, translating words, sentences and cultural references in both directions, specialised and literary texts, the basics of interpreting, and working with machine translation.",
-  "overview": [],
+  "overview": [
+    "This course is about moving meaning between English and Chinese, in writing and, briefly, in speech. It begins with the question of what a translation is meant to be — faithful to the words, to the sense, or to the effect on a reader — and with the answers given by Chinese and Western traditions, from Yan Fu's 信、达、雅 to the modern ideas of equivalence and of domestication and foreignisation. It then sets out the contrasts between the two languages that shape almost every sentence a translator writes: English links its clauses explicitly (形合) where Chinese often leaves the links to meaning and order (意合); English is subject-prominent and Chinese topic-prominent; written English favours nouns and the passive, Chinese verbs and the active.",
+    "The middle of the course is practical. It works through the choice of words, the restructuring of long English sentences into Chinese, the building of English sentences out of chains of short Chinese clauses (流水句), passives, nominalisations and other structural shifts, and the translation of idioms, metaphors, names and culture-bound terms. The last four lessons apply these skills to specialised texts (technical, legal, business, academic, public signs), to literature, to interpreting, and to machine translation and post-editing.",
+    "Every lesson works from sentence pairs and short passages, most of them written for the atlas in both languages; older literary texts are used only where the original is in the public domain, and translations of them are the atlas's own unless an older translation is itself in the public domain. Each technique is stated as a numbered rule with an explanation of why it works and where it stops working, then practised in worked examples and graded exercises with model translations. Model translations are models, not the only answers: the solutions say which alternatives are equally good and why.",
+    "Chinese-speaking learners at this level usually translate English into Chinese more fluently than Chinese into English, and the typical problems are different in the two directions. Into Chinese, the danger is 翻译腔 — Chinese that keeps English word order, long 的-chains, 被 for every passive and 当……的时候 for every *when*. Into English, it is sentences that follow the Chinese clause by clause, with no clear subject, missing articles and tense, and commas where English needs a full stop or a conjunction. The remedy in both directions is the same: read for the meaning of the whole sentence first, then write it as a good writer of the target language would, and check the result against the original."
+  ],
   "prerequisites": [
     "complex-sentences",
     "collocation-and-register"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain the main ideas of translation theory — 信达雅, formal and dynamic equivalence, semantic and communicative translation, domestication and foreignisation — and use them to describe and justify a translation choice.",
+    "Identify the contrasts between English and Chinese (形合 and 意合, subject and topic prominence, nominal and verbal style, explicit and implicit tense and number) in a sentence pair, and predict where a literal translation will fail.",
+    "Choose the right equivalent for a word in context, using collocation, register and the strategies for words that have no direct equivalent.",
+    "Translate long English sentences into natural Chinese by dividing them, reordering their parts and turning nouns into verbs.",
+    "Translate Chinese run-on sentences (流水句) into English by choosing a subject, ranking the clauses into main and subordinate ones, and supplying connectives, articles, number and tense.",
+    "Translate English passives, nominalisations and other structures with the shifts that each language expects, and recognise when a 被-sentence is the right choice.",
+    "Translate idioms, metaphors, names and culture-bound terms with a stated strategy, and write English for public signs that is clear and consistent.",
+    "Recognise the conventions of technical, legal, business and academic texts in both languages, build a small termbase, and keep terminology consistent.",
+    "Describe the differences between consecutive and simultaneous interpreting, and take and use notes for short consecutive interpreting.",
+    "Describe how machine translation works and its typical errors between English and Chinese, and post-edit its output to a stated standard."
+  ],
   "chapters": [
     {
       "slug": "what-translation-is",
@@ -105,8 +121,138 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1898,
+      "title": "Yan Fu's 信、达、雅",
+      "detail": "In the preface on method (译例言) to 《天演论》, his translation of T. H. Huxley's *Evolution and Ethics*, Yan Fu named three difficulties of translation — faithfulness (信), comprehensibility (达) and elegance (雅). The triad became the best-known statement of translation standards in Chinese.",
+      "people": [
+        "Yan Fu"
+      ]
+    },
+    {
+      "year": 1899,
+      "title": "Lin Shu's La Dame aux camélias",
+      "detail": "Lin Shu, who read no foreign language, published 《巴黎茶花女遗事》, a classical-Chinese version of Alexandre Dumas fils's novel, written from Wang Shouchang's oral rendering. It began a career of well over a hundred such translations of Western fiction.",
+      "people": [
+        "Lin Shu",
+        "Wang Shouchang"
+      ]
+    },
+    {
+      "year": 1945,
+      "title": "Simultaneous interpreting at Nuremberg",
+      "detail": "The International Military Tribunal at Nuremberg (1945–1946) used simultaneous interpreting with headphones in four languages, the first large-scale use of the technique. Conference interpreting as a profession grew from it.",
+      "people": []
+    },
+    {
+      "year": 1954,
+      "title": "The Georgetown–IBM experiment",
+      "detail": "Georgetown University and IBM publicly demonstrated a computer translating a selected set of Russian sentences into English with a small vocabulary and a handful of rules. The demonstration encouraged funding for machine translation research for a decade.",
+      "people": [
+        "Léon Dostert"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Vinay and Darbelnet's procedures",
+      "detail": "Jean-Paul Vinay and Jean Darbelnet published *Stylistique comparée du français et de l'anglais*, which classified translation procedures from borrowing and calque to transposition, modulation, equivalence and adaptation. The English version, *Comparative Stylistics of French and English*, appeared in 1995.",
+      "people": [
+        "Jean-Paul Vinay",
+        "Jean Darbelnet"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Nida's dynamic equivalence",
+      "detail": "Eugene Nida's *Toward a Science of Translating* distinguished formal equivalence, which follows the form of the original, from dynamic equivalence, which aims at the same response in the new reader. The book grew out of his work on Bible translation.",
+      "people": [
+        "Eugene Nida"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "Zhang Peiji's 英汉翻译教程",
+      "detail": "Zhang Peiji and his co-authors published 《英汉翻译教程》, a textbook of techniques for English–Chinese translation (choosing word meanings, conversion of word classes, amplification and omission, dividing and combining sentences, passives and long sentences) that was used in Chinese universities for decades.",
+      "people": [
+        "Zhang Peiji"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "Lian Shuneng's 英汉对比研究",
+      "detail": "Lian Shuneng's 《英汉对比研究》 set out ten contrasts between English and Chinese, among them hypotaxis and parataxis, static and dynamic style, and impersonal and personal subjects, with translation examples. An enlarged edition appeared in 2010.",
+      "people": [
+        "Lian Shuneng"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "Venuti's Translator's Invisibility",
+      "detail": "Lawrence Venuti's *The Translator's Invisibility* argued that fluent, domesticating translation hides the translator and the foreignness of the source, and called for foreignising translation. The terms domestication and foreignisation (归化 and 异化) became central to the field.",
+      "people": [
+        "Lawrence Venuti"
+      ]
+    },
+    {
+      "year": 2017,
+      "title": "The Transformer",
+      "detail": "Ashish Vaswani and colleagues described the Transformer, a neural network architecture based on attention, in the paper *Attention Is All You Need*. It became the basis of most later machine translation systems and large language models.",
+      "people": [
+        "Ashish Vaswani"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "In Other Words: A Coursebook on Translation",
+      "authors": "Mona Baker",
+      "year": 2018,
+      "note": "3rd edition. The standard coursebook on equivalence at the levels of word, phrase, grammar, text and pragmatics, with strategies for non-equivalence illustrated from many languages, Chinese among them."
+    },
+    {
+      "title": "A Textbook of Translation",
+      "authors": "Peter Newmark",
+      "year": 1988,
+      "note": "A practical guide by a working translator: text types, semantic and communicative translation, the eight translation methods, and the translation of metaphors, names and cultural terms."
+    },
+    {
+      "title": "Introducing Translation Studies: Theories and Applications",
+      "authors": "Jeremy Munday",
+      "year": 2016,
+      "note": "4th edition. A clear survey of the theories — equivalence, Vinay and Darbelnet, Nida, skopos, descriptive studies, Venuti — with summaries and case studies; the best map of the field."
+    },
+    {
+      "title": "The Translator's Invisibility: A History of Translation",
+      "authors": "Lawrence Venuti",
+      "year": 1995,
+      "note": "The book that made domestication and foreignisation central terms; argued from the history of translation into English."
+    },
+    {
+      "title": "Toward a Science of Translating",
+      "authors": "Eugene A. Nida",
+      "year": 1964,
+      "note": "The source of formal and dynamic equivalence; still worth reading for its analysis of meaning and of the reader's response."
+    },
+    {
+      "title": "英汉对比研究（增订本）",
+      "authors": "连淑能",
+      "year": 2010,
+      "note": "The standard contrastive study of English and Chinese for translators: ten contrasts (形合与意合, 静态与动态, 物称与人称, 被动与主动 …) with many sentence pairs."
+    },
+    {
+      "title": "英汉翻译教程",
+      "authors": "张培基、喻云根、李宗杰、彭谟禹",
+      "year": 1980,
+      "note": "The classic Chinese textbook of English–Chinese translation techniques: 词类转译, 增词, 省略, 正反表达, 分句与合句, passives and long sentences."
+    },
+    {
+      "title": "Basic Concepts and Models for Interpreter and Translator Training",
+      "authors": "Daniel Gile",
+      "year": 2009,
+      "note": "Revised edition. The Effort Models of interpreting and a clear account of comprehension, processing capacity and quality in interpreting and translation."
+    }
+  ],
   "next": [
     "style-and-rhetoric",
     "world-englishes"
