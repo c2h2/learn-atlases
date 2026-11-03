@@ -7,12 +7,27 @@
   "order": 160,
   "tagline": "Sequencing and assembly, genome architecture, comparative and functional genomics, epigenomics, the 3D genome, human variation, association studies and metagenomics",
   "summary": "Since the first genome of a free-living organism was sequenced in 1995, sequencing has become routine and cheap enough to read the genomes of thousands of species and hundreds of thousands of people. This course covers sequencing technologies and assembly, what genomes contain, comparative and functional genomics, epigenetic marks and the three-dimensional genome, human genetic variation, genome-wide association studies and the genomics of whole communities.",
-  "overview": [],
+  "overview": [
+    "Genomics is the study of whole genomes: how they are read, what they contain, how they differ between species and between individuals, and how the information in them is used and regulated. Where classical genetics followed one gene at a time through crosses and molecular biology dissected one mechanism at a time, genomics measures everything at once — every base, every transcript, every methylated cytosine, every contact between distant parts of a chromosome — and then asks what the patterns mean. Since the first genome of a free-living organism was sequenced in 1995, falling costs have turned sequencing into a routine measurement used in evolutionary biology, ecology, agriculture, microbiology and human genetics alike.",
+    "The course has three parts. The first is about genomes as objects: the sequencing technologies and assembly algorithms that produce them, the architecture of genomes (genes, non-coding DNA, repeats and transposons, and why genome size varies so widely), and comparative genomics, which reads evolution from gene families, duplications and conserved sequence. The second is about genomes in action: functional genomics with RNA sequencing, single-cell methods and genome-wide screens; the epigenome of DNA methylation, histone modifications and chromatin states; and the three-dimensional folding of the genome into territories, compartments, domains and loops. The third is about variation among individuals and communities: human genetic variation and population structure, genome-wide association studies and polygenic scores, and metagenomics and environmental DNA.",
+    "What makes the subject hard is less any single concept than the scale and the statistics. Genome-scale data sets are large, noisy and biased in ways that depend on the technology, so you have to understand how each measurement is made to know what it can and cannot show; millions of tests produce thousands of false positives unless thresholds are set accordingly; and correlations between a mark, a contact or a variant and a phenotype are easy to find and hard to interpret causally. Work through the coverage, multiple-testing and enrichment calculations by hand, and for every method ask what the raw data are, what is inferred from them and under which assumptions. Molecular biology (gene structure, transcription, chromatin, the laboratory toolkit) and population genetics (Hardy–Weinberg, drift, linkage disequilibrium, heritability) are assumed; the algorithms are developed further in Bioinformatics."
+  ],
   "prerequisites": [
     "molecular-biology",
     "population-genetics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain how Sanger, short-read and long-read sequencing technologies work, compare their read lengths, error profiles and uses, and calculate coverage and expected gaps with the Lander–Waterman model.",
+    "Describe how reads are assembled into contigs and scaffolds with overlap and de Bruijn graphs, and interpret assembly statistics such as N50 and completeness measures.",
+    "Describe the composition of prokaryotic and eukaryotic genomes — genes, introns, regulatory and repetitive DNA, transposable elements — and explain the C-value paradox.",
+    "Distinguish orthologues from paralogues, identify whole-genome duplications and synteny, and use conservation across species to find functional sequence.",
+    "Explain how RNA sequencing, single-cell transcriptomics and genome-wide CRISPR screens measure gene expression and function, and interpret fold changes, normalisation and false discovery rates.",
+    "Describe DNA methylation, histone modifications, chromatin accessibility and genomic imprinting, the methods that map them genome-wide, and what is and is not established about their heritability.",
+    "Explain how chromosome conformation capture reveals compartments, topologically associating domains and loops, and how cohesin, CTCF and genome folding influence gene regulation.",
+    "Characterise human genetic variation — SNVs, indels, copy-number and structural variants, haplotypes — and interpret the geographic structure of human diversity without recourse to racial categories.",
+    "Design and interpret a genome-wide association study, including significance thresholds, population stratification, fine-mapping and heritability, and explain the uses and limits of polygenic scores.",
+    "Explain how shotgun metagenomics, amplicon sequencing and environmental DNA are used to characterise microbial communities and survey biodiversity, and estimate diversity from sequence data."
+  ],
   "chapters": [
     {
       "slug": "sequencing-genomes",
@@ -90,8 +105,147 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1977,
+      "title": "The first DNA genome sequenced",
+      "detail": "Frederick Sanger and colleagues used their new chain-termination method to sequence the 5,386-nucleotide genome of the bacteriophage φX174, finding genes that overlap in different reading frames.",
+      "people": [
+        "Frederick Sanger",
+        "Alan Coulson"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "The first genome of a free-living organism",
+      "detail": "A team at The Institute for Genomic Research sequenced the 1.83-Mb genome of the bacterium Haemophilus influenzae Rd by whole-genome shotgun sequencing and computational assembly.",
+      "people": [
+        "Robert Fleischmann",
+        "J. Craig Venter",
+        "Hamilton Smith"
+      ]
+    },
+    {
+      "year": 1996,
+      "title": "The first eukaryotic genome",
+      "detail": "An international consortium of over a hundred laboratories published the 12-Mb genome of the budding yeast Saccharomyces cerevisiae, with about 6,000 genes.",
+      "people": [
+        "André Goffeau"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Draft sequences of the human genome",
+      "detail": "The publicly funded International Human Genome Sequencing Consortium and the company Celera Genomics published draft human genome sequences in February 2001; the finished euchromatic sequence followed in 2004.",
+      "people": [
+        "Eric Lander",
+        "John Sulston",
+        "Francis Collins",
+        "J. Craig Venter"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "Massively parallel sequencing",
+      "detail": "Marcel Margulies and colleagues at 454 Life Sciences described pyrosequencing of DNA fragments amplified on beads in picolitre wells, the first commercial high-throughput sequencing platform.",
+      "people": [
+        "Marcel Margulies",
+        "Jonathan Rothberg"
+      ]
+    },
+    {
+      "year": 2007,
+      "title": "Genome-wide association studies at scale",
+      "detail": "The Wellcome Trust Case Control Consortium genotyped about 14,000 cases of seven common diseases and 3,000 shared controls at some 500,000 SNPs, establishing the design and statistical standards of modern GWAS.",
+      "people": [
+        "Peter Donnelly"
+      ]
+    },
+    {
+      "year": 2009,
+      "title": "Hi-C maps the folding of the genome",
+      "detail": "Erez Lieberman Aiden, Job Dekker and colleagues combined chromosome conformation capture with high-throughput sequencing to map contacts across the whole human genome, revealing two compartments of open and closed chromatin.",
+      "people": [
+        "Erez Lieberman Aiden",
+        "Job Dekker",
+        "Eric Lander"
+      ]
+    },
+    {
+      "year": 2010,
+      "title": "The Neanderthal genome",
+      "detail": "Richard Green, Svante Pääbo and colleagues sequenced a draft Neanderthal genome from bones from Vindija Cave, Croatia, and showed that present-day non-Africans carry a small percentage of Neanderthal ancestry.",
+      "people": [
+        "Svante Pääbo",
+        "Richard E. Green"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "A complete human genome",
+      "detail": "The Telomere-to-Telomere Consortium published the first gap-free sequence of a human genome (CHM13), assembled mainly from long reads and adding about 200 Mb of sequence, including centromeres and the short arms of acrocentric chromosomes.",
+      "people": [
+        "Sergey Nurk",
+        "Adam Phillippy",
+        "Karen Miga",
+        "Evan Eichler"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "A draft human pangenome",
+      "detail": "The Human Pangenome Reference Consortium published phased, near-complete assemblies of 47 individuals combined into a graph, capturing structural variation that a single linear reference misses.",
+      "people": [
+        "Wen-Wei Liao",
+        "Benedict Paten",
+        "Erich Jarvis"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Genomes 4",
+      "authors": "T. A. Brown",
+      "year": 2017,
+      "note": "A comprehensive textbook of genome structure, expression, replication and evolution, with clear accounts of sequencing, assembly and the methods of functional genomics."
+    },
+    {
+      "title": "A Primer of Genome Science, 3rd edition",
+      "authors": "Greg Gibson and Spencer V. Muse",
+      "year": 2009,
+      "note": "A compact, quantitative introduction to genome sequencing, comparative and functional genomics and the statistics of genome-scale data."
+    },
+    {
+      "title": "Human Molecular Genetics, 5th edition",
+      "authors": "Tom Strachan and Andrew Read",
+      "year": 2018,
+      "note": "The standard text on the human genome, its variation, and the mapping of genes for Mendelian and complex traits."
+    },
+    {
+      "title": "Epigenetics, 2nd edition",
+      "authors": "C. David Allis, Marie-Laure Caparros, Thomas Jenuwein and Danny Reinberg (editors)",
+      "year": 2015,
+      "note": "Chapters by leading researchers on DNA methylation, histone modification, chromatin, imprinting and dosage compensation across model organisms."
+    },
+    {
+      "title": "The Origins of Genome Architecture",
+      "authors": "Michael Lynch",
+      "year": 2007,
+      "note": "An argument, grounded in population genetics, that much of eukaryotic genome complexity arose through drift in small populations rather than adaptation; essential for thinking about why genomes look as they do."
+    },
+    {
+      "title": "Biological Sequence Analysis: Probabilistic Models of Proteins and Nucleic Acids",
+      "authors": "Richard Durbin, Sean Eddy, Anders Krogh and Graeme Mitchison",
+      "year": 1998,
+      "note": "The classic treatment of alignment, hidden Markov models and phylogeny that underlies most genome-analysis algorithms."
+    },
+    {
+      "title": "10 years of GWAS discovery: biology, function, and translation",
+      "authors": "Peter M. Visscher, Naomi R. Wray, Qian Zhang, Pamela Sklar, Mark I. McCarthy, Matthew A. Brown and Jian Yang",
+      "year": 2017,
+      "note": "A review in the American Journal of Human Genetics of what genome-wide association studies have and have not shown about complex traits."
+    }
+  ],
   "next": [
     "bioinformatics"
   ]
