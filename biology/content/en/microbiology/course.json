@@ -7,12 +7,27 @@
   "order": 80,
   "tagline": "Microbial cells, growth, metabolism, diversity and evolution, viruses, microbial ecology, microbes and hosts, and antimicrobials",
   "summary": "Microbes are the most abundant and metabolically diverse organisms on Earth. This course covers the structure of bacterial and archaeal cells, how microbes grow, their remarkable range of metabolism, microbial diversity and evolution, viruses, microbial communities and their part in the cycles of the elements, relationships with hosts, and the control of microbes and the evolution of resistance.",
-  "overview": [],
+  "overview": [
+    "Microbiology is the study of organisms too small to see without a microscope: bacteria and archaea, microscopic fungi, protists and algae, and the viruses that infect all of them. Microbes were the only life on Earth for most of its history, they still make up most of its genetic and metabolic diversity, and every larger organism lives among them and depends on them. They fix nitrogen, make much of the planet’s oxygen, decompose organic matter and close the cycles of carbon, nitrogen and sulfur; they live in and on plants and animals as partners and as pathogens; and they are the workhorses of molecular biology and biotechnology.",
+    "The course treats the bacterial and archaeal cell as an organism in its own right. It begins with how microbes were discovered and how they are studied, then the structure of microbial cells — envelopes, appendages, endospores and the differences between the two prokaryotic domains — and the quantitative description of growth: exponential growth, the growth curve and the environmental limits of temperature, pH, water and oxygen. Microbial metabolism is surveyed through the ways cells conserve energy (fermentation, respiration with many acceptors, chemolithotrophy and phototrophy) and through nitrogen fixation. The middle chapters turn to evolution and diversity (ribosomal RNA phylogeny, horizontal gene transfer and metagenomics) and to viruses. The last three chapters are about microbes in their surroundings: communities, biofilms and biogeochemical cycles; relationships with hosts, from microbiomes to the outline of pathogenesis; and the control of microbes by sterilisation, disinfection and antibiotics, and the evolution of resistance.",
+    "Microbiology is hard in two ways. Its organisms are invisible, so almost everything we know comes from indirect measurements — counts of colonies, optical densities, gene sequences, chemical fluxes — and you must learn to reason from such data to the cells behind them. And its diversity is enormous: the vocabulary of cell structures, metabolic types and lineages is large and still changing as names are revised. Learn the principles that organise the facts — energy from redox chemistry, exponential growth, the selective logic of gene transfer and resistance — and work the quantitative examples, which turn many apparently separate facts into consequences of a few equations. Clinical microbiology and infectious disease are treated in Medicine Atlas; this course stays with the biology of the organisms."
+  ],
   "prerequisites": [
     "cell-biology",
     "biochemistry"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe how microbes are observed, counted, cultured and identified, and explain why most microbial diversity was invisible to culture-based methods.",
+    "Compare the envelopes, appendages and resting stages of Gram-positive and Gram-negative bacteria and of archaea, and relate each structure to its function.",
+    "Calculate growth rates, doubling times and numbers of generations from counts or optical densities, and interpret the phases of a batch growth curve and steady states in a chemostat.",
+    "Predict how temperature, pH, water activity and oxygen limit the growth of a microbe from its physiological category.",
+    "Classify microbial ways of life by energy source, electron donor and carbon source, and estimate the energy available from fermentations, respirations and chemolithotrophic reactions.",
+    "Explain how ribosomal RNA phylogeny, horizontal gene transfer and metagenomics have shaped our picture of microbial evolution and the tree of life.",
+    "Describe the structure of virions and the replication cycles of bacteriophages and animal viruses, and classify viruses by genome type.",
+    "Explain the roles of microbial communities, biofilms and symbioses in the cycles of carbon, nitrogen and sulfur.",
+    "Outline the relationships between microbes and their hosts, from mutualistic microbiomes to the general steps by which pathogens cause disease.",
+    "Calculate the kinetics of microbial killing, explain the targets and mechanisms of the main classes of antibiotics, and analyse how antimicrobial resistance evolves and spreads."
+  ],
   "chapters": [
     {
       "slug": "microbial-world",
@@ -89,8 +104,140 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1676,
+      "title": "Animalcules under a single lens",
+      "detail": "Antonie van Leeuwenhoek describes, in a letter to the Royal Society dated 9 October 1676, the protists and bacteria he saw in pepper infusions with his hand-made single-lens microscopes.",
+      "people": [
+        "Antonie van Leeuwenhoek"
+      ]
+    },
+    {
+      "year": 1861,
+      "title": "The end of spontaneous generation",
+      "detail": "Louis Pasteur shows with swan-necked flasks that boiled broths stay sterile when dust-borne microbes are kept out, even though air can enter.",
+      "people": [
+        "Louis Pasteur"
+      ]
+    },
+    {
+      "year": 1876,
+      "title": "A microbe causes a disease",
+      "detail": "Robert Koch traces the life cycle of Bacillus anthracis, including its spores, and shows that it causes anthrax in mice; his 1882 identification of the tubercle bacillus followed, and the criteria later called Koch’s postulates were set out in 1884.",
+      "people": [
+        "Robert Koch"
+      ]
+    },
+    {
+      "year": 1887,
+      "title": "Chemolithotrophy",
+      "detail": "Sergei Winogradsky shows that the filamentous sulfur bacterium Beggiatoa oxidises hydrogen sulfide and stores sulfur, the first evidence that microbes can live on inorganic energy sources.",
+      "people": [
+        "Sergei Winogradsky"
+      ]
+    },
+    {
+      "year": 1898,
+      "title": "A filterable infectious agent",
+      "detail": "Martinus Beijerinck shows that the agent of tobacco mosaic disease passes through bacteria-proof filters and multiplies only in living plant tissue, extending Dmitri Ivanovsky’s observation of 1892; he calls it a contagium vivum fluidum.",
+      "people": [
+        "Martinus Beijerinck",
+        "Dmitri Ivanovsky"
+      ]
+    },
+    {
+      "year": 1917,
+      "title": "Bacteriophages",
+      "detail": "Félix d’Herelle describes an invisible agent that lyses dysentery bacilli and forms clear plaques on bacterial lawns, after Frederick Twort’s observation of a similar phenomenon in 1915.",
+      "people": [
+        "Félix d’Herelle",
+        "Frederick Twort"
+      ]
+    },
+    {
+      "year": 1929,
+      "title": "Penicillin",
+      "detail": "Alexander Fleming reports that a Penicillium mould contaminating a culture plate of staphylococci secretes a substance that lyses them; Howard Florey, Ernst Chain and colleagues purified it and showed its therapeutic effect in 1940–41.",
+      "people": [
+        "Alexander Fleming",
+        "Howard Florey",
+        "Ernst Chain"
+      ]
+    },
+    {
+      "year": 1949,
+      "title": "The quantitative study of bacterial growth",
+      "detail": "Jacques Monod’s review ‘The growth of bacterial cultures’ defines the phases of the growth curve and the hyperbolic dependence of growth rate on substrate concentration; Monod and, independently, Aaron Novick and Leo Szilard described the chemostat in 1950.",
+      "people": [
+        "Jacques Monod",
+        "Aaron Novick",
+        "Leo Szilard"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "The third domain",
+      "detail": "Carl Woese and George Fox compare ribosomal RNA fingerprints and show that methanogens form a lineage as distinct from other bacteria as from eukaryotes, later named the Archaea.",
+      "people": [
+        "Carl Woese",
+        "George Fox"
+      ]
+    },
+    {
+      "year": 2004,
+      "title": "Genomes from the environment",
+      "detail": "Gene Tyson, Jillian Banfield and colleagues reconstruct nearly complete genomes of uncultured bacteria and archaea directly from the DNA of an acid mine drainage biofilm.",
+      "people": [
+        "Gene Tyson",
+        "Jillian Banfield"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Brock Biology of Microorganisms, 16th edition",
+      "authors": "Michael T. Madigan, Kelly S. Bender, Daniel H. Buckley, W. Matthew Sattley, David A. Stahl",
+      "year": 2021,
+      "note": "The standard undergraduate textbook: cell structure, growth, metabolism, diversity, ecology and virology in depth, with an emphasis on prokaryotic physiology and evolution; the closest companion to this course."
+    },
+    {
+      "title": "Prescott’s Microbiology, 11th edition",
+      "authors": "Joanne M. Willey, Kathleen M. Sandman, Dorothy H. Wood",
+      "year": 2020,
+      "note": "A broad, clearly illustrated alternative to Brock, with more on eukaryotic microbes and on applied and medical microbiology."
+    },
+    {
+      "title": "Microbiology: An Evolving Science, 5th edition",
+      "authors": "Joan L. Slonczewski, John W. Foster, Erik R. Zinser",
+      "year": 2020,
+      "note": "Strong on molecular mechanisms, cell biology and genomics of microbes, with good chapters on metabolism and on the microbiome."
+    },
+    {
+      "title": "Physiology of the Bacterial Cell: A Molecular Approach",
+      "authors": "Frederick C. Neidhardt, John L. Ingraham, Moselio Schaechter",
+      "year": 1990,
+      "note": "A classic monograph on growth, the composition of the bacterial cell and the coordination of its metabolism; still the best account of the quantitative physiology behind the growth chapter."
+    },
+    {
+      "title": "Principles of Virology, 5th edition",
+      "authors": "S. Jane Flint, Vincent R. Racaniello, Glenn F. Rall, Theodora Hatziioannou, Anna Marie Skalka",
+      "year": 2020,
+      "note": "The standard two-volume virology text, organised by step of the replication cycle rather than by virus family; for the viruses chapter."
+    },
+    {
+      "title": "Processes in Microbial Ecology, 2nd edition",
+      "authors": "David L. Kirchman",
+      "year": 2018,
+      "note": "A concise, quantitative treatment of microbial communities and their role in the carbon, nitrogen and sulfur cycles; for the ecology chapter."
+    },
+    {
+      "title": "Antibiotics: Challenges, Mechanisms, Opportunities",
+      "authors": "Christopher Walsh, Timothy Wencewicz",
+      "year": 2016,
+      "note": "Antibiotic targets, chemistry, biosynthesis and resistance, written by chemists for biologists; for the final chapter."
+    }
+  ],
   "next": [
     "biotechnology"
   ]
