@@ -7,9 +7,25 @@
   "order": 30,
   "tagline": "What knowing a word means, frequency and coverage, word families, numbers, dates and money, everyday topics, function words, learner’s dictionaries, remembering words, and phrases and chunks",
   "summary": "A few thousand words make up most of what learners read and hear, so the order in which words are learned matters. This course explains what it means to know a word, which words are worth learning first and why, how words come in families, the vocabulary of numbers, dates and everyday life, the small function words that hold sentences together, how to use a learner’s dictionary, and how spaced practice helps words stay in memory.",
-  "overview": [],
+  "overview": [
+    "This course is about the words a learner needs most and how to learn them well. It starts with what it means to know a word — its form, its meaning and its use — and with the finding that a small number of very frequent words make up most of any text. It then turns to the practical vocabulary every learner needs: word families, numbers, dates, time and money, the core words of everyday topics, and the small function words that hold sentences together.",
+    "The second half is about learning itself. A learner's dictionary shows far more than a translation: pronunciation, grammar patterns, collocations and examples. Research on memory explains why words read many times in one evening are soon forgotten, and why recalling words and spreading practice over days works much better. The last chapter shows that much of English comes in ready-made chunks — *by the way*, *make a decision*, *I'm afraid …* — and that learning them makes speech faster and more natural.",
+    "Each chapter explains the key ideas with definitions, rules and worked examples, compares English with Chinese where the two differ, and ends with graded exercises with full answers. Figures about frequency, coverage and memory are given with the study they come from, so that learners can see what the evidence actually says and what it does not.",
+    "The chapters can be read in order, but the numbers chapter and the chapters on dictionaries and remembering also stand on their own. The course leads on to *Word Formation*, which looks at prefixes, suffixes and compounds in depth, and to *Reading Skills*, where the vocabulary learned here is met again in real texts."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Describe what knowing a word involves — form, meaning and use — and tell receptive from productive knowledge.",
+    "Explain, with figures from named studies, why a few thousand frequent word families cover most of ordinary text.",
+    "Choose which words to learn first, using frequency, coverage and personal need.",
+    "Recognise members of a word family and use common suffixes to choose the right word class.",
+    "Say and write numbers, fractions, dates, prices and large figures, converting between 万/亿 and thousands/millions.",
+    "Learn the core words of everyday topics in useful thematic sets and avoid confusing similar words.",
+    "Identify the common function words, use their weak forms in speech, and learn them in phrases.",
+    "Read a learner's dictionary entry for pronunciation, grammar patterns, collocations and the right sense.",
+    "Plan vocabulary study with retrieval practice, spaced review and well-made word cards.",
+    "Use common chunks, collocations and sentence frames accurately in everyday conversation."
+  ],
   "chapters": [
     {
       "slug": "knowing-a-word",
@@ -80,8 +96,130 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1885,
+      "title": "Ebbinghaus measures forgetting",
+      "detail": "Hermann Ebbinghaus's *Über das Gedächtnis* reported the first careful experiments on memory, describing how quickly learned material is forgotten and the benefit of spreading practice over several days.",
+      "people": [
+        "Hermann Ebbinghaus"
+      ]
+    },
+    {
+      "year": 1921,
+      "title": "Thorndike's Teacher's Word Book",
+      "detail": "Edward Thorndike's *Teacher's Word Book* listed 10,000 English words ranked by how often they occurred in a large collection of texts, one of the first frequency lists made for teachers.",
+      "people": [
+        "Edward Thorndike"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "Basic English",
+      "detail": "C. K. Ogden proposed Basic English, a reduced English of 850 words intended for international use. It was never widely adopted, but it encouraged interest in small, carefully chosen vocabularies.",
+      "people": [
+        "C. K. Ogden"
+      ]
+    },
+    {
+      "year": 1935,
+      "title": "A dictionary with a defining vocabulary",
+      "detail": "Michael West and James Endicott's *New Method English Dictionary* explained its entries using a limited vocabulary of about 1,500 words, an idea later taken up by learner's dictionaries.",
+      "people": [
+        "Michael West",
+        "James Endicott"
+      ]
+    },
+    {
+      "year": 1942,
+      "title": "The first learner's dictionary",
+      "detail": "A. S. Hornby's *Idiomatic and Syntactic English Dictionary*, compiled with E. V. Gatenby and H. Wakefield and published in Tokyo, showed grammar patterns and examples for learners. Oxford University Press republished it in 1948; it became the *Oxford Advanced Learner's Dictionary*.",
+      "people": [
+        "A. S. Hornby",
+        "E. V. Gatenby",
+        "H. Wakefield"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "The General Service List",
+      "detail": "Michael West's *General Service List of English Words* gave about 2,000 headwords chosen for frequency and usefulness, with counts for their different meanings. It shaped vocabulary teaching for decades.",
+      "people": [
+        "Michael West"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "The Brown Corpus",
+      "detail": "W. Nelson Francis and Henry Kučera completed a computer corpus of about one million words of American English at Brown University, opening the way to frequency counts based on computers.",
+      "people": [
+        "W. Nelson Francis",
+        "Henry Kučera"
+      ]
+    },
+    {
+      "year": 1987,
+      "title": "COBUILD and corpus lexicography",
+      "detail": "The *Collins COBUILD English Language Dictionary*, directed by John Sinclair, was the first major dictionary based on a large computer corpus, with full-sentence definitions and real examples.",
+      "people": [
+        "John Sinclair"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "The Academic Word List",
+      "detail": "Averil Coxhead's Academic Word List of 570 word families, which together covered about 10% of the words in her corpus of academic texts, gave learners a target beyond general high-frequency vocabulary.",
+      "people": [
+        "Averil Coxhead"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "How much vocabulary is needed?",
+      "detail": "Paul Nation estimated that about 8,000–9,000 word families are needed to read a wide range of written texts with 98% coverage, and about 6,000–7,000 for spoken texts.",
+      "people": [
+        "Paul Nation"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Learning Vocabulary in Another Language",
+      "authors": "I. S. P. Nation",
+      "year": 2013,
+      "note": "Second edition (Cambridge University Press). The standard survey of vocabulary research for teachers and researchers: frequency, word cards, spaced practice and the four strands."
+    },
+    {
+      "title": "How Vocabulary Is Learned",
+      "authors": "Stuart Webb and Paul Nation",
+      "year": 2017,
+      "note": "Oxford University Press. A short, readable account of what research says about learning words, written for teachers."
+    },
+    {
+      "title": "Vocabulary in Language Teaching",
+      "authors": "Norbert Schmitt and Diane Schmitt",
+      "year": 2020,
+      "note": "Second edition (Cambridge University Press). An introduction to vocabulary for teachers, including frequency bands, formulaic language and assessment."
+    },
+    {
+      "title": "Formulaic Language and the Lexicon",
+      "authors": "Alison Wray",
+      "year": 2002,
+      "note": "Cambridge University Press. Brings together linguistic and psychological research on chunks; background to the last chapter."
+    },
+    {
+      "title": "Corpus, Concordance, Collocation",
+      "authors": "John Sinclair",
+      "year": 1991,
+      "note": "Oxford University Press. The classic account of what corpora show about words, including the idiom principle."
+    },
+    {
+      "title": "Practical English Usage",
+      "authors": "Michael Swan",
+      "year": 2016,
+      "note": "Fourth edition (Oxford University Press). A reference for learners and teachers on problem points of grammar and vocabulary, such as *make* and *do* or confusing word pairs."
+    }
+  ],
   "next": [
     "word-formation",
     "reading-skills"
