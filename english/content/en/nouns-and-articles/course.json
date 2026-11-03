@@ -7,11 +7,26 @@
   "order": 60,
   "tagline": "Countable and uncountable nouns, *a* and *the*, no article and generic reference, articles with names, quantifiers, possessives and *of*, determiners, noun phrases, and subject–verb agreement",
   "summary": "Articles are among the most frequent words in English and one of its hardest areas for learners whose first language, like Chinese, has none. This course explains how English sorts nouns into countable and uncountable, how *a*, *the* and no article signal what the speaker assumes the listener knows, how quantifiers and other determiners work, how long noun phrases are built, and how the verb agrees with its subject.",
-  "overview": [],
+  "overview": [
+    "This course is about the small words at the front of English noun phrases and the nouns they belong to. It begins with the distinction that controls everything else, countable and uncountable nouns, and then explains the articles: *a* for something the listener cannot yet identify, *the* for something both speakers can, and no article for plural and uncountable nouns used in a general sense. Later lessons cover the conventions for names of people and places, the quantifiers (*some*, *any*, *much*, *many*, *few*, *a little*, *each*, *every* …), possessives and *of*, demonstratives and the other determiners, the structure of long noun phrases, and the agreement of the verb with its subject.",
+    "*The*, *a* and *of* are among the most frequent words in English: in large corpora *the* alone is roughly one word in every fifteen. Because they are so frequent, a mistake with them is noticed in almost every sentence, and many of them change the meaning: *I'm looking for a flat* and *I'm looking for the flat* send the listener in different directions. These are also the words that make an English noun phrase hang together, so they matter for reading long academic sentences as much as for writing correct ones.",
+    "The lessons are meant to be read in order, since each builds on the previous ones: *a* and *the* depend on countability, generic reference depends on *a* and *the*, and the lessons on determiners and noun phrases put all the pieces together. Each lesson states the rules with their scope, explains why they hold, shows many short examples with Chinese translations in the Chinese version, and ends with graded exercises. British and American differences, such as *in hospital* and *in the hospital* or *the team are* and *the team is*, are marked wherever they occur.",
+    "Chinese has no articles. It signals what the listener knows through word order, demonstratives such as 这 and 那, the numeral 一 with a classifier, and context, so a Chinese speaker has to learn to ask questions that Chinese never asks: is this noun countable here? is this thing new to my listener, or can they identify it? The answer is not to memorise more rules but to use a short decision procedure until it becomes automatic, to notice articles in everything you read, and to check one thing at a time when you edit your own writing. Accuracy with articles grows slowly even for advanced learners, so expect steady improvement over months rather than quick perfection."
+  ],
   "prerequisites": [
     "core-grammar"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Decide whether a noun is countable or uncountable in a given meaning, and count uncountable nouns with unit nouns such as *a piece of* and *a cup of*.",
+    "Choose *a*/*an*, *the* or no article for a noun in context, and explain the choice in terms of countability, number and what the listener can identify.",
+    "Use the three forms of generic reference (*dogs*, *a dog*, *the dog*) and the zero article in fixed expressions such as *go to school* and *by bus*, including British and American differences.",
+    "Use the right article with the names of people, countries, rivers, mountains, buildings and organisations.",
+    "Use *some*, *any*, *much*, *many*, *a lot of*, *few*, *a few*, *little*, *a little*, *each*, *every*, *all*, *both*, *either* and *neither* with the right kind of noun and the right meaning.",
+    "Choose between *’s*, *of* and a noun used as a modifier (*Tom’s car*, *the end of the film*, *the car door*).",
+    "Use *this*, *that*, *these*, *those*, *other*, *another* and *such* correctly, and put determiners in the right order before a noun.",
+    "Build and understand long noun phrases with adjectives in the usual order, nouns as modifiers, and phrases and clauses after the noun, and translate Chinese modifiers placed before the noun into English ones placed after it.",
+    "Make the verb agree with its subject after long subjects, collective nouns, quantifiers and indefinite pronouns, in British and American English."
+  ],
   "chapters": [
     {
       "slug": "countable-uncountable",
@@ -87,8 +102,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1905,
+      "title": "Russell's theory of definite descriptions",
+      "detail": "In the article *On Denoting*, published in the journal *Mind*, Bertrand Russell analysed phrases such as *the present King of France* and argued that *the* claims that exactly one thing fits the description. His paper began a long discussion in philosophy and linguistics about what *the* means.",
+      "people": ["Bertrand Russell"]
+    },
+    {
+      "year": 1924,
+      "title": "Jespersen's The Philosophy of Grammar",
+      "detail": "Otto Jespersen's *The Philosophy of Grammar* discussed, among many other topics, the difference between nouns for countable things and what he called mass-words, the distinction that learners' grammars now call countable and uncountable.",
+      "people": ["Otto Jespersen"]
+    },
+    {
+      "year": 1939,
+      "title": "Christophersen's The Articles",
+      "detail": "Paul Christophersen's *The Articles: A Study of Their Theory and Use in English* explained *the* by familiarity: the speaker uses it when the listener can be assumed to know which thing is meant. The idea still underlies most explanations for learners.",
+      "people": ["Paul Christophersen"]
+    },
+    {
+      "year": 1942,
+      "title": "Hornby's learner's dictionary",
+      "detail": "A. S. Hornby, with E. V. Gatenby and H. Wakefield, published the *Idiomatic and Syntactic English Dictionary* in Tokyo. Reissued by Oxford University Press after the war, it became the *Oxford Advanced Learner's Dictionary*, and its grammatical information, including the marking of nouns as countable or uncountable, set the pattern for learner's dictionaries.",
+      "people": ["A. S. Hornby", "E. V. Gatenby", "H. Wakefield"]
+    },
+    {
+      "year": 1967,
+      "title": "Word counts from the Brown Corpus",
+      "detail": "Henry Kučera and W. Nelson Francis published *Computational Analysis of Present-Day American English*, with frequency counts from the one-million-word Brown Corpus. *The* was the most frequent word, at nearly 7 per cent of all the words in the corpus, with *of* second.",
+      "people": ["Henry Kučera", "W. Nelson Francis"]
+    },
+    {
+      "year": 1981,
+      "title": "Li and Thompson's grammar of Mandarin",
+      "detail": "Charles N. Li and Sandra A. Thompson's *Mandarin Chinese: A Functional Reference Grammar* described how Mandarin, which has no articles, signals whether a noun phrase refers to something the listener can identify, above all through word order, the numeral 一 with a classifier, and demonstratives.",
+      "people": ["Charles N. Li", "Sandra A. Thompson"]
+    },
+    {
+      "year": 1982,
+      "title": "朱德熙《语法讲义》",
+      "detail": "Zhu Dexi's 《语法讲义》, a standard description of modern Chinese grammar, noted the strong tendency of Chinese to use the subject for definite, known things and the object for indefinite ones, a point that helps explain how Chinese does the work of English articles.",
+      "people": ["Zhu Dexi"]
+    },
+    {
+      "year": 1985,
+      "title": "A Comprehensive Grammar of the English Language",
+      "detail": "Randolph Quirk, Sidney Greenbaum, Geoffrey Leech and Jan Svartvik's reference grammar gave a detailed account of English determiners, sorting them into predeterminers, central determiners and postdeterminers, a classification widely used in teaching.",
+      "people": ["Randolph Quirk", "Sidney Greenbaum", "Geoffrey Leech", "Jan Svartvik"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Practical English Usage",
+      "authors": "Michael Swan",
+      "year": 2016,
+      "note": "Fourth edition. Short, reliable entries on articles, countability, quantifiers and agreement, with British and American differences; the best book for checking a doubtful point."
+    },
+    {
+      "title": "English Grammar in Use",
+      "authors": "Raymond Murphy",
+      "year": 2019,
+      "note": "Fifth edition. Self-study units on countable and uncountable nouns, *a* and *the*, names, quantifiers and possessives, each with exercises; a good companion to this course at B1–B2."
+    },
+    {
+      "title": "Collins COBUILD English Guides 3: Articles",
+      "authors": "Roger Berry",
+      "year": 1993,
+      "note": "A whole book on the articles for learners, based on corpus examples, with many cases that shorter grammars leave out."
+    },
+    {
+      "title": "A Comprehensive Grammar of the English Language",
+      "authors": "Randolph Quirk, Sidney Greenbaum, Geoffrey Leech and Jan Svartvik",
+      "year": 1985,
+      "note": "The large reference grammar behind most teaching grammars; detailed chapters on nouns, determiners, reference and the noun phrase, and on concord."
+    },
+    {
+      "title": "The Cambridge Grammar of the English Language",
+      "authors": "Rodney Huddleston and Geoffrey K. Pullum",
+      "year": 2002,
+      "note": "A modern, carefully argued reference grammar; especially clear on definiteness, on the difference between determiners as words and as a function, and on agreement."
+    },
+    {
+      "title": "Longman Grammar of Spoken and Written English",
+      "authors": "Douglas Biber, Stig Johansson, Geoffrey Leech, Susan Conrad and Edward Finegan",
+      "year": 1999,
+      "note": "A corpus grammar that shows how often each kind of noun phrase, determiner and modifier occurs in conversation, fiction, news and academic writing."
+    },
+    {
+      "title": "Mandarin Chinese: A Functional Reference Grammar",
+      "authors": "Charles N. Li and Sandra A. Thompson",
+      "year": 1981,
+      "note": "A standard grammar of Mandarin in English, used here to check the comparisons with Chinese: classifiers and measure words, definiteness and word order, modifiers before the noun."
+    },
+    {
+      "title": "语法讲义",
+      "authors": "朱德熙",
+      "year": 1982,
+      "note": "A classic short description of modern Chinese grammar, used here for the Chinese side of the comparisons: nouns and measure words, 的, and definite subjects and indefinite objects."
+    }
+  ],
   "next": [
     "sentences-and-paragraphs",
     "complex-sentences"
