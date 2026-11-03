@@ -7,13 +7,29 @@
   "order": 200,
   "tagline": "Academic style, research questions, finding sources, citation and referencing, academic integrity, literature reviews, methods and results, discussion and conclusions, abstracts and titles, and peer review",
   "summary": "Academic writing follows conventions shared across disciplines: how to make a claim, position it among other work, credit sources and report research. This course covers academic style, research questions and planning, finding and citing sources, academic integrity, literature reviews, writing up methods and results, discussing findings with appropriate caution, abstracts and titles, and revising in response to peer review.",
-  "overview": [],
+  "overview": [
+    "This course is about writing the texts of research: the paper, the report, the dissertation and the parts that every one of them contains. It begins with the style that readers of academic English expect — precise, impersonal where impersonality helps, personal where the writer must take responsibility — and with the planning that comes before any writing: turning a topic into a question that can be answered, and finding, judging and recording the sources that answer it. The middle of the course is about other people's words and ideas: how to cite them in the main styles, and what academic integrity requires, including the rules for AI writing tools, which vary between institutions and are changing. The second half follows the research article section by section — the literature review, methods and results, discussion and conclusions, the abstract and title — and ends with peer review: how to read the comments of a tutor or a reviewer and revise in response.",
+    "The course builds on three earlier ones and does not repeat them. *Academic Reading* taught the reader's side of the same genres: the IMRaD pattern, the moves of an introduction, hedges and reporting verbs, paraphrase and patchwriting. *Essay Writing* taught the thesis, the argumentative paragraph and the process of drafting and revising. *Modality* taught the grammar of hedging. Here the question is always the writer's: given what I found, what may I claim, in what words, and in which part of the paper? The chapters draw on genre analysis — the study of what research communities need from their texts, begun by John Swales — and on corpus studies of academic English by Ken Hyland, Douglas Biber and others. All model abstracts, introductions and sections are written for the atlas and describe fictional studies, which are labelled as such.",
+    "Each chapter has definitions and rules, worked examples on short model texts, quick checks and graded exercises with answers; the hardest exercises ask for a section of a paper of your own. The chapters can be read in order as a guide to writing a first research paper or dissertation chapter, or separately when a particular part of a paper is due. The English of the explanations is itself C1–C2 reading practice.",
+    "Chinese-speaking writers usually find four things hard. The first is the line between using a source and copying it, which English-medium universities draw closer to the source than many students expect. The second is the voice of the writer: whether to write *I*, *we*, *this study* or nothing at all, where Chinese academic prose prefers 本文 and 笔者. The third is the strength of claims, which in English must match the evidence closely, in both directions. The fourth is genre: an English 摘要 is not simply a translated Chinese one, and a literature review that summarises sources one by one, as many Chinese theses once did, is not what an English-language examiner expects. The notes on English and Chinese in each chapter take these points one by one. The most useful habit is to write each section by asking what its reader needs from it."
+  ],
   "prerequisites": [
     "essay-writing",
     "academic-reading",
     "modality"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Revise a paragraph into academic style by making its claims precise, its register consistent and its use of nominalisation, the passive and *I* or *we* suited to the discipline.",
+    "Write a research question that is focused, answerable with the data and methods available and worth answering, and a plan for the paper or dissertation that answers it.",
+    "Search library databases with keywords, Boolean operators and citation chaining, and evaluate and record the sources found.",
+    "Cite sources in the text and in a reference list consistently in an author–date style or a numbered style, choosing integral or non-integral citations and reporting verbs to suit the purpose.",
+    "Explain what counts as plagiarism, self-plagiarism, fabrication and falsification, and use sources and permitted tools, including AI tools where the rules allow them, without breaching academic integrity.",
+    "Write a literature review that synthesises sources by theme and leads to a clearly stated gap.",
+    "Write method and results sections with the conventional tenses and voice, reporting procedures fully enough to be repeated and results without interpretation.",
+    "Write a discussion that interprets the main results, compares them with earlier studies, states limitations and draws conclusions whose strength matches the evidence.",
+    "Write an informative title and an abstract, structured or unstructured, that report the purpose, method, main results and conclusion of a study within a word limit.",
+    "Respond to feedback from a tutor or peer reviewers with a revised text and a point-by-point response that is courteous, specific and honest."
+  ],
   "chapters": [
     {
       "slug": "academic-style",
@@ -99,8 +115,124 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1752,
+      "title": "Papers read by a committee",
+      "detail": "The Royal Society of London took over responsibility for the *Philosophical Transactions* and set up a Committee of Papers to decide which submissions to print, an early form of editorial review.",
+      "people": []
+    },
+    {
+      "year": 1906,
+      "title": "The Chicago Manual of Style",
+      "detail": "The University of Chicago Press published the first edition of its *Manual of Style*, a guide for its own typesetters that became one of the main style guides for writers in the humanities. Its eighteenth edition appeared in 2024.",
+      "people": []
+    },
+    {
+      "year": 1929,
+      "title": "The origin of APA style",
+      "detail": "A seven-page set of instructions for preparing manuscripts, by a group of psychologists and editors led by Madison Bentley, appeared in the *Psychological Bulletin*. It grew into the American Psychological Association's *Publication Manual*, whose first edition as a book followed in 1952.",
+      "people": [
+        "Madison Bentley"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "The MLA Style Sheet",
+      "detail": "The Modern Language Association published its *Style Sheet*, compiled by William Riley Parker, the forerunner of the *MLA Handbook* used in literary and language studies.",
+      "people": [
+        "William Riley Parker"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "The Vancouver group",
+      "detail": "A small group of editors of general medical journals met in Vancouver and agreed common requirements for manuscripts, published in 1979, including the numbered reference style now called Vancouver. The group became the International Committee of Medical Journal Editors.",
+      "people": []
+    },
+    {
+      "year": 1987,
+      "title": "Structured abstracts",
+      "detail": "An ad hoc working group proposed in the *Annals of Internal Medicine* that abstracts of clinical articles have headings such as objective, design, setting, patients, interventions, measurements, results and conclusions. Structured abstracts spread through medical journals in the following years.",
+      "people": []
+    },
+    {
+      "year": 1990,
+      "title": "Genre Analysis",
+      "detail": "John Swales's *Genre Analysis* described the research article as a genre made of moves, with the CARS model of introductions, and founded the genre-based teaching of academic writing.",
+      "people": [
+        "John Swales"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "Academic Writing for Graduate Students",
+      "detail": "John Swales and Christine Feak published the first edition of their course in research writing, based on genre analysis; the third edition appeared in 2012.",
+      "people": [
+        "John Swales",
+        "Christine Feak"
+      ]
+    },
+    {
+      "year": 1997,
+      "title": "The Committee on Publication Ethics",
+      "detail": "A group of medical journal editors in the United Kingdom founded COPE to discuss cases of misconduct in publishing. It now publishes guidance for editors and publishers in all fields.",
+      "people": []
+    },
+    {
+      "year": 2016,
+      "title": "Grammatical complexity in academic English",
+      "detail": "Douglas Biber and Bethany Gray's *Grammatical Complexity in Academic English* showed from corpora covering three centuries how academic writing, especially in science, came to rely on compressed noun phrases rather than on clauses.",
+      "people": [
+        "Douglas Biber",
+        "Bethany Gray"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Academic Writing for Graduate Students: Essential Tasks and Skills",
+      "authors": "John M. Swales and Christine B. Feak",
+      "year": 2012,
+      "note": "Third edition (University of Michigan Press). The standard genre-based course in research writing: general–specific texts, problem–solution texts, data commentary, summary and critique, and the sections of a research paper. Behind most of this course."
+    },
+    {
+      "title": "Genre Analysis: English in Academic and Research Settings",
+      "authors": "John M. Swales",
+      "year": 1990,
+      "note": "Cambridge University Press. The study that introduced moves and the CARS model of introductions, and the distinction between integral and non-integral citation; for teachers and for writers who want the reasons behind the conventions."
+    },
+    {
+      "title": "Metadiscourse: Exploring Interaction in Writing",
+      "authors": "Ken Hyland",
+      "year": 2005,
+      "note": "Continuum (second edition 2019, Bloomsbury). How writers guide readers and show stance with hedges, boosters, attitude markers, self-mention and engagement, with corpus comparisons across disciplines."
+    },
+    {
+      "title": "Disciplinary Discourses: Social Interactions in Academic Writing",
+      "authors": "Ken Hyland",
+      "year": 2000,
+      "note": "Longman (reissued by the University of Michigan Press in 2004). Corpus studies of citation, reporting verbs, abstracts and reviews across eight disciplines; the evidence for how much the conventions vary by field."
+    },
+    {
+      "title": "Grammatical Complexity in Academic English: Linguistic Change in Writing",
+      "authors": "Douglas Biber and Bethany Gray",
+      "year": 2016,
+      "note": "Cambridge University Press. Corpus evidence that academic prose is complex in its noun phrases rather than its clauses, and how this style developed; background to the chapter on academic style."
+    },
+    {
+      "title": "The Craft of Research",
+      "authors": "Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup and William T. FitzGerald",
+      "year": 2016,
+      "note": "Fourth edition (University of Chicago Press). From topic to question to problem, and from sources to argument; the clearest guide to planning a research project in any field."
+    },
+    {
+      "title": "The Literature Review: A Step-by-Step Guide for Students",
+      "authors": "Diana Ridley",
+      "year": 2012,
+      "note": "Second edition (SAGE). Searching, reading, recording and synthesising sources for a dissertation, with many extracts from real theses analysed."
+    }
+  ],
   "next": [
     "style-and-rhetoric"
   ]
