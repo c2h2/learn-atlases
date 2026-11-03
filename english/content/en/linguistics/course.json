@@ -7,13 +7,29 @@
   "order": 230,
   "tagline": "What linguistics studies, phonetics and phonology, morphology, phrases and constituents, clauses and movement, semantics, pragmatics and discourse, corpus linguistics, language acquisition, and variation and change",
   "summary": "Linguistics studies language scientifically, describing how it is actually used rather than prescribing how it should be. This course surveys the structure of English at every level — sounds, words, phrases and sentences, meaning and discourse — and introduces corpus linguistics, how first and second languages are acquired, and how language varies and changes.",
-  "overview": [],
+  "overview": [
+    "Linguistics is the scientific study of language: it asks what speakers of a language know when they know it, how that knowledge is organised, how it is used, how it is acquired and how it changes. This course applies those questions to English at every level of structure. It begins with what linguists study and how — description rather than prescription, the levels of analysis and the kinds of evidence — and then works upward through the sound system (phonetics and phonology), the structure of words (morphology), the structure of phrases and clauses (syntax), and meaning in sentences and in context (semantics, pragmatics and discourse). The last three chapters turn from the system to the people who use it: corpus linguistics, which studies large collections of real text; language acquisition, in children and in second-language learners; and variation and change, from social class in New York department stores to the slow spread of a sound change through the vocabulary.",
+    "For an advanced learner the course is the theory behind the practical lessons of the atlas. *Sounds of English* and *Connected Speech* teach how to pronounce English; here you see why aspiration, flapping and assimilation happen where they do. *Word Formation* and *Complex Sentences* teach how words and sentences are built; here you meet the tests and models that grammarians use to decide what the parts are. *Pragmatics* teaches how to make requests and refuse invitations; here you meet the theories of presupposition and conversation behind that advice. Each chapter links to those lessons instead of repeating them, and the explanations are written in C1–C2 English, so reading them is itself practice in the academic register of the humanities and social sciences.",
+    "Each chapter defines its terms, states the main generalisations as rules with their evidence and their limits, and carries out analyses step by step: transcribing a word and finding its allophones, splitting a word into morphemes, drawing a tree with constituency tests, testing a presupposition, computing a collocation score, reading a sociolinguistic study. Where linguists disagree — between generative, functional and construction-based approaches to grammar, about the critical period, about language and thought — the chapter sets out the positions and the evidence for each, without choosing for you. Interactive figures show syllable and sentence trees, a sound wave built from harmonics, word-frequency plots, a model of next-word prediction and the S-curve of a language change.",
+    "Chinese speakers bring an advantage to linguistics: they already know a language that is structured very differently from English, with lexical tone, classifiers, little inflection, topic–comment sentences and question words that stay in place. The notes on English and Chinese in each chapter use that knowledge, following standard descriptions such as Li and Thompson's *Mandarin Chinese* (1981) and 朱德熙's 《语法讲义》 (1982). The common difficulty is not the ideas but the habit of treating a grammar rule as a law to be obeyed; linguistics treats it as a hypothesis about what speakers do, to be tested against evidence. Read each analysis as an argument, check it against your own examples, and the course will sharpen both your English and your understanding of your first language."
+  ],
   "prerequisites": [
     "complex-sentences",
     "connected-speech",
     "word-formation"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish descriptive from prescriptive statements about English, and judge a usage claim by the kind of evidence offered for it.",
+    "Transcribe English words phonemically and phonetically, identify the allophones of a phoneme from their distribution, and state a simple phonological rule.",
+    "Analyse English words into morphemes, distinguish inflection from derivation and productive from unproductive processes, and compare English word structure with that of Mandarin.",
+    "Apply constituency tests to an English sentence and draw a labelled tree for it, including both trees of a structurally ambiguous sentence.",
+    "Describe questions, passives and relative clauses as relations between structures, recognise island violations, and explain how generative, constraint-based and construction-based grammars treat these relations differently.",
+    "Identify sense relations, entailments and truth conditions, and represent the meaning of quantified and logically connected sentences with Venn diagrams and truth tables.",
+    "Distinguish entailment, presupposition and implicature with the appropriate tests, and analyse the structure of a short conversation or text.",
+    "Plan a corpus query, interpret frequency, Zipf plots and collocation scores, and explain how an n-gram model predicts the next word.",
+    "Summarise the main evidence on first- and second-language acquisition, including the debate over a critical period, without overstating what it shows.",
+    "Explain how a linguistic variable is studied, interpret the results of classic sociolinguistic studies, and describe how sound and grammatical changes spread through a community and a vocabulary."
+  ],
   "chapters": [
     {
       "slug": "what-linguistics-studies",
@@ -99,8 +115,134 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1786,
+      "title": "Sanskrit, Greek and Latin related",
+      "detail": "In his third anniversary discourse to the Asiatic Society in Calcutta, William Jones argued that Sanskrit, Greek and Latin had sprung from a common source, probably together with Gothic and Celtic. The idea led to comparative and historical linguistics in the nineteenth century.",
+      "people": [
+        "William Jones"
+      ]
+    },
+    {
+      "year": 1916,
+      "title": "Saussure's *Course in General Linguistics*",
+      "detail": "Charles Bally and Albert Sechehaye published the *Cours de linguistique générale* from students' notes of Ferdinand de Saussure's lectures, three years after his death. It introduced the linguistic sign, the arbitrariness of the sign, and the distinctions between *langue* and *parole* and between synchronic and diachronic study.",
+      "people": [
+        "Ferdinand de Saussure",
+        "Charles Bally",
+        "Albert Sechehaye"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Bloomfield's *Language*",
+      "detail": "Leonard Bloomfield's *Language* set out the methods of American structural linguistics — the phoneme, the morpheme and immediate-constituent analysis — and remained the standard textbook for two decades.",
+      "people": [
+        "Leonard Bloomfield"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "*Syntactic Structures*",
+      "detail": "Noam Chomsky's *Syntactic Structures* proposed that a grammar is an explicit system that generates all and only the sentences of a language, and used *Colorless green ideas sleep furiously* to show that grammaticality is not the same as meaningfulness.",
+      "people": [
+        "Noam Chomsky"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "The wug test",
+      "detail": "Jean Berko published 'The child's learning of English morphology' in the journal *Word*, showing with invented words such as *wug* that young children apply rules of English inflection to words they have never heard.",
+      "people": [
+        "Jean Berko Gleason"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "The Brown Corpus",
+      "detail": "W. Nelson Francis and Henry Kučera at Brown University completed a corpus of about one million words of American English printed in 1961, in 500 samples from 15 genres — the first large computer-readable corpus of English.",
+      "people": [
+        "W. Nelson Francis",
+        "Henry Kučera"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "The social stratification of English in New York City",
+      "detail": "William Labov's book reported his studies of New York speech, including the department-store survey of /r/ in *fourth floor*, and established the methods of variationist sociolinguistics.",
+      "people": [
+        "William Labov"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "Grice's 'Logic and conversation'",
+      "detail": "H. P. Grice's William James Lectures of 1967 on the Cooperative Principle and conversational implicature appeared in print in *Syntax and Semantics*, volume 3, and became the starting point of modern pragmatics.",
+      "people": [
+        "H. P. Grice"
+      ]
+    },
+    {
+      "year": 2002,
+      "title": "*The Cambridge Grammar of the English Language*",
+      "detail": "Rodney Huddleston and Geoffrey K. Pullum, with other contributors, published a comprehensive descriptive grammar of English informed by modern linguistic theory, with a careful distinction between categories and functions.",
+      "people": [
+        "Rodney Huddleston",
+        "Geoffrey K. Pullum"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "The Study of Language",
+      "authors": "George Yule",
+      "year": 2020,
+      "note": "Seventh edition (Cambridge University Press). A short, clear introduction to every area of linguistics covered here, with tasks at the end of each chapter; the best first book alongside this course."
+    },
+    {
+      "title": "English Phonetics and Phonology: A Practical Course",
+      "authors": "Peter Roach",
+      "year": 2009,
+      "note": "Fourth edition (Cambridge University Press). The standard introduction to the sounds of English for learners and teachers: phonemes, allophones, syllables, stress, connected speech and intonation."
+    },
+    {
+      "title": "A Course in Phonetics",
+      "authors": "Peter Ladefoged and Keith Johnson",
+      "year": 2015,
+      "note": "Seventh edition (Cengage). The general phonetics textbook: articulation, the IPA, acoustic analysis of vowels and consonants, and the sounds of other languages, including Mandarin, for comparison."
+    },
+    {
+      "title": "The Cambridge Grammar of the English Language",
+      "authors": "Rodney Huddleston and Geoffrey K. Pullum",
+      "year": 2002,
+      "note": "Cambridge University Press. The most detailed modern description of English grammar, theory-informed but not tied to one framework; the source for the category–function distinction and the constituency analyses in the syntax chapters. *A Student's Introduction to English Grammar* (Huddleston and Pullum 2005; second edition with Brett Reynolds 2022) is the shorter version."
+    },
+    {
+      "title": "Syntax: A Generative Introduction",
+      "authors": "Andrew Carnie",
+      "year": 2021,
+      "note": "Fourth edition (Wiley-Blackwell). A step-by-step course in generative syntax — constituency, X-bar theory, movement and its constraints — with many exercises; read it to go further with trees and movement."
+    },
+    {
+      "title": "Corpus Linguistics: Method, Theory and Practice",
+      "authors": "Tony McEnery and Andrew Hardie",
+      "year": 2012,
+      "note": "Cambridge University Press. Corpus design, annotation, frequency and collocation statistics, and the debates about what corpus evidence can show."
+    },
+    {
+      "title": "How Languages are Learned",
+      "authors": "Patsy M. Lightbown and Nina Spada",
+      "year": 2021,
+      "note": "Fifth edition (Oxford University Press). A readable survey of first- and second-language acquisition research and its meaning for teaching, careful about what the evidence does and does not show."
+    },
+    {
+      "title": "Sociolinguistics: An Introduction to Language and Society",
+      "authors": "Peter Trudgill",
+      "year": 2000,
+      "note": "Fourth edition (Penguin). A short classic on language and social class, gender, ethnicity, region and nation, by the author of the Norwich study."
+    }
+  ],
   "next": [
     "history-of-english",
     "world-englishes"
