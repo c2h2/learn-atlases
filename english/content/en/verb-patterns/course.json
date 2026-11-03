@@ -7,11 +7,27 @@
   "order": 70,
   "tagline": "Transitive, intransitive and linking verbs, two objects, *-ing* or *to*-infinitive, verb + object + verb, causatives, phrasal verbs, verbs with prepositions, the passive, and reflexive and reciprocal verbs",
   "summary": "Each English verb comes with its own patterns: what can follow it, and in which form. This course covers transitive, intransitive and linking verbs, verbs with two objects, the choice between *-ing* and the *to*-infinitive, verbs followed by an object and another verb, causatives such as *make* and *let*, phrasal and prepositional verbs, the passive voice, and reflexive and reciprocal verbs.",
-  "overview": [],
+  "overview": [
+    "This course is about what comes after a verb. Every English verb has its own **patterns**: some need an object (*I enjoyed the film*), some cannot take one (*The accident happened*), some take two (*She gave me a key*), some are followed by *-ing* (*I enjoy cooking*) and others by *to* (*I want to cook*), and some need a particular preposition or particle (*It depends on the weather*, *She gave up smoking*). The course works through these patterns one family at a time: transitive, intransitive and linking verbs; verbs with two objects; *-ing* or *to*-infinitive; verb + object + verb; the causatives *make*, *let*, *have* and *get*; phrasal verbs; verbs with prepositions; the passive; and reflexive and reciprocal verbs.",
+    "Verb patterns matter because a mistake in them is noticed at once. *I want go home*, *She suggested me to apply* and *We discussed about the plan* are all clear in meaning, but each one breaks the pattern of its verb, and readers and examiners see that. The patterns are not random. Many follow from the verb's meaning — *-ing* verbs often look at an action that is real or already happening, *to* verbs often look forward — and the lessons show these tendencies, while also saying plainly where a pattern simply has to be learned with the verb, as a dictionary gives it.",
+    "The course builds on the seven clause patterns taught in *Core Grammar* (SV, SVO, SVC, SVA, SVOO, SVOC, SVOA), which it takes as known. Each lesson starts from a real question, sets out the forms in tables and rules, gives many short examples with their Chinese meanings, and ends with key takeaways and graded exercises with full answers. The first three lessons are the foundation; the others can be read in any order once those are done. Where British and American English differ (*fill in* or *fill out* a form, *different from*, *to* or *than*, *like doing* or *like to do*), or where a pattern belongs to formal or informal English, the lessons say so.",
+    "Chinese speakers face two particular difficulties. First, Chinese verbs do not change form, so a learner has nothing in the mother tongue to tell them whether *to go*, *going* or *go* is needed; the forms have to be noticed and practised verb by verb. Second, Chinese words that look like translations of English patterns work differently: 让 can mean *let*, *make*, *have* or *want … to*; 给 can mean *to* or *for*; 被 is used much less often than the English passive, and 把 is not a passive at all. The notes on English and Chinese in each lesson show where these differences lie. The best habit is to learn every new verb with its pattern — *depend on something*, *suggest doing*, *ask someone to do* — and to check the pattern in a learner's dictionary, which lists it in the entry."
+  ],
   "prerequisites": [
     "core-grammar"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Recognise whether a verb is transitive, intransitive, both or linking, and use an object, an adjective or nothing after it accordingly.",
+    "Use verbs with two objects in both patterns (*give her the book*, *give the book to her*), choosing *to* or *for*, and avoid the double-object pattern with verbs such as *explain*, *say* and *suggest*.",
+    "Choose between *-ing* and the *to*-infinitive after common verbs, and explain the change of meaning after *remember*, *forget*, *stop*, *try* and *regret*.",
+    "Build verb + object + verb patterns correctly (*want someone to do*, *see someone do* or *doing*, *help someone (to) do*), and rewrite verbs such as *suggest* and *insist* with a *that*-clause.",
+    "Use *make*, *let*, *have* and *get* as causative verbs, and use *have* or *get something done* for services and for things that happen to us.",
+    "Place the object correctly with phrasal verbs, including pronoun objects (*turn it off*), and choose between a phrasal verb and a one-word verb to suit the register.",
+    "Use the right preposition after common verbs, adjectives and nouns (*depend on*, *interested in*, *the reason for*), and recognise verbs such as *discuss*, *enter* and *marry* that take no preposition.",
+    "Form the passive in every common tense and with modal verbs, and explain when English prefers it, including the *get*-passive and *It is said that…*.",
+    "Explain why English passives are often translated into Chinese without 被, and why 把 sentences correspond to English active sentences.",
+    "Use reflexive pronouns and *each other* correctly, and recognise verbs such as *relax*, *concentrate* and *meet* that normally need neither."
+  ],
   "chapters": [
     {
       "slug": "transitive-intransitive",
@@ -86,8 +102,133 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1942,
+      "title": "Hornby's verb patterns",
+      "detail": "A. S. Hornby, E. V. Gatenby and H. Wakefield's *Idiomatic and Syntactic English Dictionary*, published in Tokyo, marked each verb with numbered verb patterns. The dictionary was reissued by Oxford University Press in 1948 and later became the *Oxford Advanced Learner's Dictionary*.",
+      "people": [
+        "A. S. Hornby",
+        "E. V. Gatenby",
+        "H. Wakefield"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "A Guide to Patterns and Usage in English",
+      "detail": "Hornby set out the verb patterns of his dictionary as a grammar for learners and teachers, with lists of the verbs that belong to each pattern.",
+      "people": [
+        "A. S. Hornby"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "Tesnière's valency",
+      "detail": "Lucien Tesnière's *Éléments de syntaxe structurale*, published after his death, described a verb as having a valency: a number of places for participants, as an atom has places for bonds. The idea lies behind later valency dictionaries of English.",
+      "people": [
+        "Lucien Tesnière"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "A dictionary of verbs with particles and prepositions",
+      "detail": "A. P. Cowie and R. Mackin's *Oxford Dictionary of Current Idiomatic English*, volume 1, *Verbs with Prepositions and Particles*, was one of the first large dictionaries devoted to phrasal and prepositional verbs.",
+      "people": [
+        "A. P. Cowie",
+        "R. Mackin"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "Verb complementation in the Comprehensive Grammar",
+      "detail": "Randolph Quirk, Sidney Greenbaum, Geoffrey Leech and Jan Svartvik's *Comprehensive Grammar of the English Language* gave a full description of what can follow English verbs, including multi-word verbs and the passive.",
+      "people": [
+        "Randolph Quirk",
+        "Sidney Greenbaum",
+        "Geoffrey Leech",
+        "Jan Svartvik"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "English Verb Classes and Alternations",
+      "detail": "Beth Levin grouped several thousand English verbs by the patterns they allow, such as the two patterns of *give* and the transitive and intransitive uses of *break*, and showed that verbs with similar meanings tend to share patterns.",
+      "people": [
+        "Beth Levin"
+      ]
+    },
+    {
+      "year": 1996,
+      "title": "COBUILD Grammar Patterns: Verbs",
+      "detail": "Gill Francis, Susan Hunston and Elizabeth Manning listed the patterns of English verbs as they occur in the Bank of English corpus, with the verbs that use each pattern grouped by meaning.",
+      "people": [
+        "Gill Francis",
+        "Susan Hunston",
+        "Elizabeth Manning"
+      ]
+    },
+    {
+      "year": 2004,
+      "title": "A Valency Dictionary of English",
+      "detail": "Thomas Herbst and colleagues published a corpus-based dictionary of the complementation patterns of English verbs, nouns and adjectives, building on Tesnière's idea of valency.",
+      "people": [
+        "Thomas Herbst",
+        "David Heath",
+        "Ian F. Roe",
+        "Dieter Götz"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Practical English Usage",
+      "authors": "Michael Swan",
+      "year": 2016,
+      "note": "Fourth edition. Short, reliable entries on the patterns of individual verbs, on *-ing* and infinitives, phrasal verbs and the passive, with British and American differences."
+    },
+    {
+      "title": "English Grammar in Use",
+      "authors": "Raymond Murphy",
+      "year": 2019,
+      "note": "Fifth edition. Self-study units with exercises on *-ing* and the infinitive, the passive, causative *have* and phrasal verbs, at the level of this course."
+    },
+    {
+      "title": "A Comprehensive Grammar of the English Language",
+      "authors": "Randolph Quirk, Sidney Greenbaum, Geoffrey Leech and Jan Svartvik",
+      "year": 1985,
+      "note": "The standard large reference grammar; its chapter on verb complementation is the fullest description of verb patterns."
+    },
+    {
+      "title": "Longman Grammar of Spoken and Written English",
+      "authors": "Douglas Biber, Stig Johansson, Geoffrey Leech, Susan Conrad and Edward Finegan",
+      "year": 1999,
+      "note": "Corpus figures for phrasal verbs, the passive and complement clauses in conversation, fiction, news and academic writing."
+    },
+    {
+      "title": "The Cambridge Grammar of the English Language",
+      "authors": "Rodney Huddleston and Geoffrey K. Pullum",
+      "year": 2002,
+      "note": "A modern descriptive grammar with a careful analysis of complements, catenative verbs, prepositional verbs and the passive, for teachers and advanced readers."
+    },
+    {
+      "title": "Collins COBUILD Grammar Patterns 1: Verbs",
+      "authors": "Gill Francis, Susan Hunston and Elizabeth Manning",
+      "year": 1996,
+      "note": "Lists of the verbs that occur in each pattern, taken from a corpus and grouped by meaning: the place to look for which verbs behave alike."
+    },
+    {
+      "title": "Mandarin Chinese: A Functional Reference Grammar",
+      "authors": "Charles N. Li and Sandra A. Thompson",
+      "year": 1981,
+      "note": "Used here for the comparisons with Chinese: the 把 and 被 constructions, resultative and directional verb compounds, and 自己."
+    },
+    {
+      "title": "语法讲义",
+      "authors": "朱德熙",
+      "year": 1982,
+      "note": "A classic description of Mandarin grammar, with chapters on 把 and 被 sentences, double-object verbs and verb complements; used to check the notes on English and Chinese."
+    }
+  ],
   "next": [
     "complex-sentences",
     "collocation-and-register"

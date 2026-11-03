@@ -1,0 +1,157 @@
+{
+  "title": "动词句型",
+  "full_title": "动词及其句型",
+  "tagline": "及物动词、不及物动词和系动词，双宾语，*-ing* 还是带 *to* 的不定式，动词 + 宾语 + 动词，使役动词，短语动词，带介词的动词，被动语态，以及反身动词和相互动词",
+  "summary": "每个英语动词都有自己的句型：后面可以跟什么，用什么形式。本课程讲解及物动词、不及物动词和系动词，带两个宾语的动词，*-ing* 形式和带 *to* 的不定式之间的选择，后接宾语和另一个动词的动词，*make*、*let* 这样的使役动词，短语动词和介词动词，被动语态，以及反身动词和相互动词。",
+  "overview": [
+    "本课程讲的是动词后面跟什么。每个英语动词都有自己的**句型**：有的需要宾语（*I enjoyed the film*“我很喜欢那部电影”），有的不能带宾语（*The accident happened*“事故发生了”），有的带两个宾语（*She gave me a key*“她给了我一把钥匙”），有的后面接 *-ing*（*I enjoy cooking*“我喜欢做饭”），有的接 *to*（*I want to cook*“我想做饭”），还有的需要特定的介词或小品词（*It depends on the weather*“这要看天气”，*She gave up smoking*“她戒烟了”）。本课程一次讲一类句型：及物动词、不及物动词和系动词；带两个宾语的动词；*-ing* 还是带 *to* 的不定式；动词 + 宾语 + 动词；使役动词 *make*、*let*、*have* 和 *get*；短语动词；带介词的动词；被动语态；以及反身动词和相互动词。",
+    "动词句型之所以重要，是因为这方面的错误一下子就会被注意到。*I want go home*、*She suggested me to apply* 和 *We discussed about the plan* 意思都很清楚，但每一句都违反了它的动词的句型，读者和考官都看得出来。这些句型并不是任意的。许多句型来自动词的意义——接 *-ing* 的动词往往着眼于真实的或已经在进行的动作，接 *to* 的动词往往着眼于将来——各课会说明这些倾向，同时也明确指出：哪些句型只能像词典所列的那样，和动词一起记住。",
+    "本课程以《核心语法》中讲过的七种基本句型（SV、SVO、SVC、SVA、SVOO、SVOC、SVOA）为基础，假定读者已经掌握。每一课都从一个真实的问题开始，用表格和规则列出形式，给出许多附有中文意思的简短例句，最后是要点总结和附有完整答案的分级习题。前三课是基础；学完这三课以后，其余各课可以按任意顺序学习。凡是英式英语和美式英语有差别的地方（*fill in* 还是 *fill out* 表格，*different from*、*to* 还是 *than*，*like doing* 还是 *like to do*），或者某个句型属于正式或非正式英语的地方，各课都会说明。",
+    "中国学习者面临两个特别的困难。第一，汉语动词没有形态变化，所以母语里没有任何东西能告诉学习者这里需要的是 *to go*、*going* 还是 *go*；这些形式要一个动词一个动词地留意和练习。第二，看起来像是英语句型译文的汉语词，用法其实不同：“让”可以表示 *let*、*make*、*have* 或 *want … to*；“给”可以表示 *to* 或 *for*；“被”的使用远不如英语被动语态频繁，而“把”根本不是被动语态。每一课的英汉对比注都会说明这些差别在哪里。最好的习惯是把每个新动词和它的句型一起记——*depend on something*、*suggest doing*、*ask someone to do*——并在学习型词典里查一查句型，词典会把它列在词条中。"
+  ],
+  "outcomes": [
+    "辨认一个动词是及物的、不及物的、两者皆可的还是系动词，并据此在它后面用宾语、形容词或什么也不用。",
+    "用两种句型使用带两个宾语的动词（*give her the book*、*give the book to her*），选择 *to* 或 *for*，并避免在 *explain*、*say*、*suggest* 等动词后使用双宾语句型。",
+    "在常见动词后选择 *-ing* 形式或带 *to* 的不定式，并解释 *remember*、*forget*、*stop*、*try* 和 *regret* 后面意义的变化。",
+    "正确构成“动词 + 宾语 + 动词”句型（*want someone to do*、*see someone do* 或 *doing*、*help someone (to) do*），并把 *suggest*、*insist* 等动词改写成带 *that* 从句的句子。",
+    "把 *make*、*let*、*have* 和 *get* 用作使役动词，并用 *have* 或 *get something done* 表示请人提供的服务和发生在自己身上的事。",
+    "在短语动词中把宾语放在正确的位置上，包括代词宾语（*turn it off*），并根据语域在短语动词和单个动词之间作出选择。",
+    "在常见的动词、形容词和名词后使用正确的介词（*depend on*、*interested in*、*the reason for*），并认出 *discuss*、*enter*、*marry* 等不用介词的动词。",
+    "构成各种常用时态和情态动词的被动语态，并解释英语什么时候倾向于用被动语态，包括 *get* 被动式和 *It is said that…*。",
+    "解释为什么英语的被动句常常不用“被”译成汉语，以及为什么“把”字句对应的是英语的主动句。",
+    "正确使用反身代词和 *each other*，并认出 *relax*、*concentrate*、*meet* 等通常两者都不需要的动词。"
+  ],
+  "chapters": [
+    {
+      "title": "及物动词、不及物动词和系动词",
+      "summary": "需要宾语的动词，不能带宾语的动词，两者皆可的动词，以及 *be*、*seem*、*become* 等系动词。"
+    },
+    {
+      "title": "带两个宾语的动词",
+      "summary": "*Give her the book* 和 *give the book to her*，哪些动词两种句型都可以用，哪些用 *to*，哪些用 *for*。"
+    },
+    {
+      "title": "*-ing* 还是带 *to* 的不定式",
+      "summary": "后接 *-ing* 的动词（*enjoy*、*avoid*），后接 *to* 的动词（*want*、*decide*），以及两者都可以接但意义不同的动词（*remember*、*stop*、*try*）。"
+    },
+    {
+      "title": "动词 + 宾语 + 动词",
+      "summary": "*Want someone to do*，*see someone do* 或 *doing*，以及 *help someone (to) do*：第二个动词前面有宾语的句型。"
+    },
+    {
+      "title": "*Make*、*let*、*have* 和 *get*",
+      "summary": "表示使、让、安排他人做事的使役动词，以及 *have something done*。"
+    },
+    {
+      "title": "短语动词",
+      "summary": "*give up*、*look after*、*take off* 等带小品词的动词，宾语放在哪里，以及 *up*、*out* 这样的小品词怎样增加意义。"
+    },
+    {
+      "title": "带介词的动词",
+      "summary": "*Depend on*、*consist of*、*apologise for* 等动词与介词的搭配，以及常见形容词和名词后面的介词。"
+    },
+    {
+      "title": "被动语态",
+      "summary": "各种时态的被动语态怎样构成，英语什么时候倾向于用被动语态，*get* 被动式，以及为什么英语用被动语态比汉语用“被”更频繁、更中性。"
+    },
+    {
+      "title": "反身动词和相互动词",
+      "summary": "*Myself* 和 *yourself*，*each other* 和 *one another*，以及 *relax*、*concentrate*、*meet* 等通常两者都不需要的动词。"
+    }
+  ],
+  "history": [
+    {
+      "title": "霍恩比的动词句型",
+      "detail": "霍恩比（A. S. Hornby）、盖顿比（E. V. Gatenby）和韦克菲尔德（H. Wakefield）在东京出版的《英语习语与句法词典》（*Idiomatic and Syntactic English Dictionary*）给每个动词标上编号的动词句型。这部词典1948年由牛津大学出版社重新出版，后来成为《牛津高阶英语词典》。",
+      "people": [
+        "A. S. Hornby",
+        "E. V. Gatenby",
+        "H. Wakefield"
+      ]
+    },
+    {
+      "title": "《英语句型和惯用法指南》",
+      "detail": "霍恩比把他词典中的动词句型整理成一部供学习者和教师使用的语法书，列出了属于每种句型的动词。",
+      "people": [
+        "A. S. Hornby"
+      ]
+    },
+    {
+      "title": "泰尼埃尔的配价",
+      "detail": "泰尼埃尔（Lucien Tesnière）身后出版的《结构句法基础》（*Éléments de syntaxe structurale*）把动词描述为具有“配价”：动词有若干个供参与者占据的位置，就像原子有若干个成键的位置。这一思想是后来英语配价词典的基础。",
+      "people": [
+        "Lucien Tesnière"
+      ]
+    },
+    {
+      "title": "一部收录带小品词和介词的动词的词典",
+      "detail": "考伊（A. P. Cowie）和麦金（R. Mackin）的《牛津当代英语习语词典》（*Oxford Dictionary of Current Idiomatic English*）第一卷《带介词和小品词的动词》是最早专门收录短语动词和介词动词的大型词典之一。",
+      "people": [
+        "A. P. Cowie",
+        "R. Mackin"
+      ]
+    },
+    {
+      "title": "《英语语法大全》中的动词补足成分",
+      "detail": "夸克（Randolph Quirk）、格林鲍姆（Sidney Greenbaum）、利奇（Geoffrey Leech）和斯瓦特维克（Jan Svartvik）的《英语语法大全》（*A Comprehensive Grammar of the English Language*）全面描述了英语动词后面可以跟什么，包括多词动词和被动语态。",
+      "people": [
+        "Randolph Quirk",
+        "Sidney Greenbaum",
+        "Geoffrey Leech",
+        "Jan Svartvik"
+      ]
+    },
+    {
+      "title": "《英语动词类别与交替》",
+      "detail": "莱文（Beth Levin）按照所允许的句型对数千个英语动词进行了分类，例如 *give* 的两种句型、*break* 的及物和不及物用法，并指出意义相近的动词往往有相同的句型。",
+      "people": [
+        "Beth Levin"
+      ]
+    },
+    {
+      "title": "《柯林斯 COBUILD 语法句型：动词》",
+      "detail": "弗朗西斯（Gill Francis）、汉斯顿（Susan Hunston）和曼宁（Elizabeth Manning）根据英语语料库（Bank of English）中的实际用例列出英语动词的句型，并把使用每种句型的动词按意义分组。",
+      "people": [
+        "Gill Francis",
+        "Susan Hunston",
+        "Elizabeth Manning"
+      ]
+    },
+    {
+      "title": "《英语配价词典》",
+      "detail": "赫布斯特（Thomas Herbst）及其同事出版了一部基于语料库的词典，收录英语动词、名词和形容词的补足成分句型，继承了泰尼埃尔的配价思想。",
+      "people": [
+        "Thomas Herbst",
+        "David Heath",
+        "Ian F. Roe",
+        "Dieter Götz"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "note": "第4版。关于单个动词的句型、*-ing* 形式和不定式、短语动词和被动语态的简短可靠的词条，并说明英美差异。"
+    },
+    {
+      "note": "第5版。自学用书，有关于 *-ing* 形式和不定式、被动语态、使役 *have* 和短语动词的单元和练习，程度与本课程相当。"
+    },
+    {
+      "note": "标准的大型参考语法书；其中关于动词补足成分的一章是对动词句型最完整的描述。"
+    },
+    {
+      "note": "提供短语动词、被动语态和补足从句在会话、小说、新闻和学术写作中的语料库数据。"
+    },
+    {
+      "note": "一部现代描写语法，对补足成分、链接动词（catenative verb）、介词动词和被动语态有细致的分析，适合教师和高级读者。"
+    },
+    {
+      "note": "列出出现在每种句型中的动词，取自语料库并按意义分组：想知道哪些动词用法相同，就查这本书。"
+    },
+    {
+      "note": "本课程用它来核对英汉对比：“把”字句和“被”字句、动结式和动趋式复合词，以及“自己”。"
+    },
+    {
+      "note": "对现代汉语语法的经典描述，有关于“把”字句和“被”字句、双宾语动词和动词补语的章节；本课程用它来核对英汉对比注。"
+    }
+  ]
+}
