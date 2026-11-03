@@ -7,13 +7,28 @@
   "order": 90,
   "tagline": "Plant cells and form, water and nutrient transport, photosynthesis, C4 and CAM, hormones, responses to the environment and reproduction",
   "summary": "Plants turn sunlight, water and carbon dioxide into the food and oxygen on which most other life depends. This course covers plant cells and tissues, growth and form, the movement of water and nutrients, photosynthesis and its variants, hormones and signalling, responses to light and stress, and flowering, fertilisation and seeds.",
-  "overview": [],
+  "overview": [
+    "Plants are the organisms that make most of the living world possible. Using sunlight, water and carbon dioxide they build the sugars, cellulose, proteins and oils that feed almost every food chain on land, and they release the oxygen we breathe. They do this while rooted to one spot: a plant cannot run from drought, frost, shade or a hungry caterpillar, so it must sense its surroundings and respond by changing its growth, its chemistry and its development. Plant biology is the study of how that works, from the cell wall and the chloroplast to the whole plant in its environment, and it underpins agriculture, forestry and our understanding of the carbon and water cycles.",
+    "The course follows the plant body from its parts to its life. It begins with the plant cell — its wall, plastids, vacuole and plasmodesmata — and the tissue systems built from it, then the meristems that make plants grow throughout life and the anatomy of roots, stems and leaves. Two chapters on transport follow: water potential, transpiration and the cohesion–tension mechanism that lifts water to the tops of trees, the pressure flow that carries sugar in the phloem, and the uptake of mineral nutrients with the help of mycorrhizal fungi and nitrogen-fixing bacteria. Two chapters treat photosynthesis — the light reactions, the Calvin–Benson cycle, and the photorespiratory problem that C4 and CAM plants solve. The last three chapters cover hormones and their signalling, responses to light, day length, temperature, stress and pathogens, and finally flowers, fertilisation, seeds and germination.",
+    "Plant biology rewards a quantitative habit of mind. Much of it is physics and chemistry applied to a living system: water potentials in megapascals, the Hagen–Poiseuille law in a xylem vessel, redox potentials along the Z-scheme, the kinetics of Rubisco, the pH-driven trapping of auxin, and the geometry of day length. Each lesson works through these numbers, using the model plant *Arabidopsis thaliana* and the major crops as running examples, and says which results are firm laws, which are useful models, and where the mechanism is still debated. The prerequisites — cell organelles, membrane transport, bioenergetics and the evolution of land plants — are linked rather than repeated."
+  ],
   "prerequisites": [
     "cell-biology",
     "biochemistry",
     "diversity-of-life"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the structure of the plant cell wall, plastids, vacuole and plasmodesmata, and calculate wall stresses produced by turgor pressure.",
+    "Explain how apical and lateral meristems generate the primary and secondary body of roots, stems and leaves, and use the Lockhart equation to relate turgor and wall properties to growth.",
+    "Calculate water potentials of cells, soils and air, and explain transpiration, the cohesion–tension theory, embolism and pressure-driven translocation in the phloem.",
+    "Identify the essential mineral elements and their roles, and analyse nutrient uptake with Michaelis–Menten kinetics, diffusion in soil, mycorrhizae and symbiotic nitrogen fixation.",
+    "Explain light harvesting, the Z-scheme of photosynthetic electron transport, photophosphorylation and the Calvin–Benson cycle, and calculate photon energies, redox free energies and ATP:NADPH budgets.",
+    "Explain photorespiration from the kinetics of Rubisco, and compare C3, C4 and CAM photosynthesis in their anatomy, biochemistry, energy costs and ecology.",
+    "Describe the synthesis, transport, perception and effects of the major plant hormones, and explain the recurring logic of signal-induced degradation of repressors.",
+    "Explain how phytochromes, cryptochromes, phototropins and the circadian clock let plants respond to light, day length and temperature, and how plants defend themselves against stress and pathogens.",
+    "Describe flower development by the ABC(E) model, pollination and self-incompatibility, double fertilisation, and seed and fruit development, dispersal, dormancy and germination.",
+    "Interpret experimental data from plant physiology — pressure-chamber readings, gas-exchange curves, uptake isotherms and mutant phenotypes — and judge what they show."
+  ],
   "chapters": [
     {
       "slug": "plant-cells-tissues",
@@ -90,8 +105,148 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1727,
+      "title": "Vegetable Staticks",
+      "detail": "Stephen Hales measured the water lost by transpiring plants and the root pressure of bleeding vines, founding quantitative plant physiology.",
+      "people": [
+        "Stephen Hales"
+      ]
+    },
+    {
+      "year": 1779,
+      "title": "Light and the restoration of air",
+      "detail": "Jan Ingenhousz showed that only the green parts of plants, and only in light, 'restore' air spoiled by a candle or an animal, extending Joseph Priestley's 1771 experiments with mint.",
+      "people": [
+        "Jan Ingenhousz"
+      ]
+    },
+    {
+      "year": 1880,
+      "title": "The Power of Movement in Plants",
+      "detail": "Charles and Francis Darwin showed that canary-grass coleoptiles bend towards light only if their tip is exposed, and inferred that an influence travels from the tip to the bending zone — the starting point for the discovery of auxin.",
+      "people": [
+        "Charles Darwin",
+        "Francis Darwin"
+      ]
+    },
+    {
+      "year": 1894,
+      "title": "The cohesion–tension theory",
+      "detail": "Henry Dixon and John Joly proposed that water is pulled up the xylem by evaporation from leaves, held together as a column under tension by the cohesion of water molecules.",
+      "people": [
+        "Henry Dixon",
+        "John Joly"
+      ]
+    },
+    {
+      "year": 1920,
+      "title": "Photoperiodism discovered",
+      "detail": "Wightman Garner and Harry Allard showed that the flowering of Maryland Mammoth tobacco and of soybean is controlled by the length of the day.",
+      "people": [
+        "Wightman Garner",
+        "Harry Allard"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "Auxin isolated in agar",
+      "detail": "Frits Went collected the growth-promoting substance from oat coleoptile tips in agar blocks and measured it by the curvature it caused, the first bioassay of a plant hormone.",
+      "people": [
+        "Frits Went"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "Red/far-red reversibility",
+      "detail": "Harry Borthwick, Sterling Hendricks and colleagues showed that red light promotes and far-red light reverses the germination of lettuce seeds, revealing the photoreversible pigment later isolated as phytochrome.",
+      "people": [
+        "Harry Borthwick",
+        "Sterling Hendricks"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "The path of carbon",
+      "detail": "James Bassham, Andrew Benson, Melvin Calvin and colleagues completed the cycle by which Chlorella and other algae fix ¹⁴CO₂ into sugar and regenerate ribulose 1,5-bisphosphate (Nobel Prize to Calvin, 1961).",
+      "people": [
+        "Melvin Calvin",
+        "Andrew Benson",
+        "James Bassham"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "The Z-scheme",
+      "detail": "Robin Hill and Fay Bendall proposed that two light reactions act in series, linked by cytochromes, to move electrons from water to NADP⁺.",
+      "people": [
+        "Robin Hill",
+        "Fay Bendall"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "C4 photosynthesis",
+      "detail": "Marshall Hatch and Roger Slack showed that sugarcane leaves first fix CO₂ into four-carbon acids, explaining the C4 pathway and its Kranz anatomy.",
+      "people": [
+        "Marshall Hatch",
+        "Roger Slack"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "The Arabidopsis genome",
+      "detail": "The Arabidopsis Genome Initiative published the sequence of Arabidopsis thaliana, the first plant genome, about 125 Mb with some 25,500 predicted genes.",
+      "people": [
+        "Arabidopsis Genome Initiative"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Plant Physiology and Development",
+      "authors": "Lincoln Taiz, Eduardo Zeiger, Ian Max Møller, Angus Murphy",
+      "year": 2015,
+      "note": "6th edition. The standard undergraduate text on water relations, nutrition, photosynthesis, hormones, photobiology and development; the main companion to this course."
+    },
+    {
+      "title": "Biochemistry and Molecular Biology of Plants",
+      "authors": "Bob B. Buchanan, Wilhelm Gruissem, Russell L. Jones (eds)",
+      "year": 2015,
+      "note": "2nd edition. Detailed molecular treatment of cell walls, membranes, photosynthesis, nitrogen assimilation and signalling."
+    },
+    {
+      "title": "Plant Biology",
+      "authors": "Alison M. Smith, George Coupland, Liam Dolan, Nicholas Harberd, Jonathan Jones, Cathie Martin, Robert Sablowski, Abigail Amey",
+      "year": 2010,
+      "note": "A modern integrated text organised around genes and development, strong on Arabidopsis genetics, flowering and plant–pathogen interactions."
+    },
+    {
+      "title": "Esau's Plant Anatomy",
+      "authors": "Ray F. Evert",
+      "year": 2006,
+      "note": "3rd edition. The reference work on meristems, cells and tissues of the plant body, and on primary and secondary growth."
+    },
+    {
+      "title": "Physicochemical and Environmental Plant Physiology",
+      "authors": "Park S. Nobel",
+      "year": 2009,
+      "note": "4th edition. Quantitative treatment of water potential, diffusion, light, gas exchange and energy budgets of leaves, with worked problems."
+    },
+    {
+      "title": "Marschner's Mineral Nutrition of Higher Plants",
+      "authors": "Petra Marschner (ed.)",
+      "year": 2012,
+      "note": "3rd edition. The standard monograph on essential elements, uptake, deficiency and toxicity, mycorrhizae and the rhizosphere."
+    },
+    {
+      "title": "Molecular Mechanisms of Photosynthesis",
+      "authors": "Robert E. Blankenship",
+      "year": 2014,
+      "note": "2nd edition. Clear account of antenna systems, reaction centres, electron transport, ATP synthase and the evolution of photosynthesis."
+    }
+  ],
   "next": [
     "ecology"
   ]
