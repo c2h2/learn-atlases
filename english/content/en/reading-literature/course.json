@@ -7,12 +7,28 @@
   "order": 220,
   "tagline": "Close reading, narrative and point of view, the short story, the novel, metre and rhythm, poetic forms, figurative language, drama and Shakespeare, literary periods, and writing about literature",
   "summary": "Reading literature in English rewards attention to how something is said as well as to what is said. Using texts in the public domain, this course teaches close reading, narrative and point of view, the short story and the novel, metre, rhythm and poetic form, figurative language, reading Shakespeare and other drama, a map of literary periods from Chaucer to the modernists, and how to write about literature.",
-  "overview": [],
+  "overview": [
+    "This course is about reading literature in English: poems, short stories, novels and plays. It begins with close reading — the slow, repeated reading of a short passage that asks why it is written exactly as it is — and then gives the reader the tools that literary critics use for each kind of text: narrators, point of view and free indirect style for fiction; the short story and the novel as forms; stress, metre and scansion for verse; rhyme, stanza and the fixed forms such as the sonnet and the ballad; metaphor, imagery and symbol; and the special demands of reading a play, especially one by Shakespeare. It ends with a map of English literary periods from *Beowulf* to the modernists and with the writing of literary essays, including the main critical approaches.",
+    "For an advanced learner, literature is the most demanding and the most rewarding English there is. It uses the whole range of the language — old words and new, the grammar of speech and of formal prose, sound and rhythm — and it depends on effects that are easy to miss in a second language: connotation, irony, a change of pronoun, a line that breaks in mid-phrase. Reading it well sharpens every other reading skill, and it opens the texts that English-speaking culture quotes, alludes to and argues about. All the passages quoted at length are in the public domain (authors who died before 1956, works first published before 1931), from Shakespeare, the King James Bible, Donne, Milton, Blake, Wordsworth, Keats, Austen, the Brontës, Dickens, George Eliot, Dickinson, Hardy, Chopin, Joyce, Mansfield, Owen, Woolf and others; later writers are discussed and quoted only briefly.",
+    "Each chapter has definitions and rules, worked analyses of real passages, quick checks and graded exercises with model answers. *Close reading* comes first and underlies everything else. *Narrative and point of view* leads to the chapters on the short story and the novel; *Metre and rhythm* leads to *Poetic forms* and then to *Drama and Shakespeare*. *Figurative language* can be read at any point after close reading. *Literary periods* draws the course together historically, and *Writing about literature* turns all of it into argument. The English of the explanations is itself C1–C2 reading practice.",
+    "Chinese readers usually find four things hard. The first is the language of older texts: archaic forms (*thou*, *-eth*, *wherefore*) and, more dangerously, words that look modern but had other meanings. The second is sound: English verse is built on stress, not tone, and it cannot be heard if every syllable is read with equal weight, so the course asks you to read aloud. The third is implication — irony, unreliable narrators, free indirect style and open endings — which in English are signalled by small words and grammatical shifts. The fourth is the kind of answer expected: an English literary essay rewards a specific, arguable interpretation supported by short quotations, not a summary or a formula that would fit any text. Notes comparing English and Chinese literary traditions appear in every chapter, with links to the Chinese Atlas."
+  ],
   "prerequisites": [
     "academic-reading",
     "collocation-and-register"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Read a short poem or prose passage closely, annotating its diction, syntax, sound, imagery and structure, and explain how specific features produce its meanings and effects.",
+    "Distinguish story from discourse, identify the narrator and point of view of a narrative, and recognise free indirect style and unreliable narration from evidence in the text.",
+    "Explain how a short story's opening, details, turn and ending work, and analyse situational and dramatic irony, epiphanies and open endings.",
+    "Read a long novel with a strategy for tracking characters, chapters and patterns of imagery, and place it in the history of the English novel.",
+    "Scan a line of English verse, name its metre (iambic pentameter, trochaic tetrameter, anapaestic metre and others) and its variations, and read it aloud with natural stress.",
+    "Describe the form of a poem — stanza, rhyme scheme, fixed form and turn — and explain what the form contributes to its meaning, including sonnets, ballads, blank verse and free verse.",
+    "Analyse metaphors, similes, conceits, imagery and symbols using tenor, vehicle and ground, and trace patterns of imagery across a text.",
+    "Read a scene of Shakespeare as a performance, understanding Early Modern English forms and false friends, the choice of *thou* and *you*, and the uses of verse and prose.",
+    "Place a text in its literary period from its language, form and subject, while explaining the limits of period labels.",
+    "Write a literary essay with an arguable thesis, analytical paragraphs and correctly integrated and cited quotations, drawing on one or more critical approaches."
+  ],
   "chapters": [
     {
       "slug": "close-reading",
@@ -97,8 +113,140 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1595,
+      "title": "Sidney's defence of poetry",
+      "detail": "Sir Philip Sidney's essay, written about 1580, was printed in 1595 in two editions, as *The Defence of Poesie* and *An Apologie for Poetrie*. It is the first major work of literary criticism in English, arguing that poetry teaches and delights better than history or philosophy.",
+      "people": [
+        "Philip Sidney"
+      ]
+    },
+    {
+      "year": 1765,
+      "title": "Johnson's Preface to Shakespeare",
+      "detail": "Samuel Johnson's edition of Shakespeare's plays opened with a Preface that praised Shakespeare as the poet of nature and general human truth, and discussed his faults with equal frankness. It set the terms of Shakespeare criticism for a generation.",
+      "people": [
+        "Samuel Johnson"
+      ]
+    },
+    {
+      "year": 1800,
+      "title": "The Preface to Lyrical Ballads",
+      "detail": "In the Preface to the second edition of *Lyrical Ballads* (dated 1800, published in January 1801), William Wordsworth defined good poetry as \"the spontaneous overflow of powerful feelings\" and argued for poetry in the language of ordinary people — a manifesto of English Romanticism.",
+      "people": [
+        "William Wordsworth"
+      ]
+    },
+    {
+      "year": 1904,
+      "title": "Shakespearean Tragedy",
+      "detail": "A. C. Bradley's lectures on *Hamlet*, *Othello*, *King Lear* and *Macbeth* analysed the tragedies through their characters with great care and became the most influential book on Shakespeare of the early twentieth century.",
+      "people": [
+        "A. C. Bradley"
+      ]
+    },
+    {
+      "year": 1927,
+      "title": "Aspects of the Novel",
+      "detail": "E. M. Forster's Cambridge lectures distinguished story from plot and flat from round characters, giving readers of fiction terms that are still used.",
+      "people": [
+        "E. M. Forster"
+      ]
+    },
+    {
+      "year": 1929,
+      "title": "Practical Criticism",
+      "detail": "I. A. Richards published his analysis of Cambridge students' responses to poems given without their authors' names, showing how readers misread, and made the close reading of unseen passages central to literary education.",
+      "people": [
+        "I. A. Richards"
+      ]
+    },
+    {
+      "year": 1938,
+      "title": "Understanding Poetry",
+      "detail": "Cleanth Brooks and Robert Penn Warren's textbook taught generations of American students to analyse poems closely, as unified structures of language, and spread the methods of the New Criticism.",
+      "people": [
+        "Cleanth Brooks",
+        "Robert Penn Warren"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "The Rhetoric of Fiction",
+      "detail": "Wayne C. Booth's study of how novels shape their readers' responses introduced the terms *implied author* and *unreliable narrator*.",
+      "people": [
+        "Wayne C. Booth"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "The Madwoman in the Attic",
+      "detail": "Sandra Gilbert and Susan Gubar's study of nineteenth-century women writers, taking its title from Bertha Mason in *Jane Eyre*, became a founding work of feminist literary criticism.",
+      "people": [
+        "Sandra Gilbert",
+        "Susan Gubar"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Literary Theory: An Introduction",
+      "detail": "Terry Eagleton's survey of phenomenology, reception theory, structuralism, post-structuralism and psychoanalysis, written from a Marxist position, became the most widely read introduction to the theoretical debates that transformed literary study.",
+      "people": [
+        "Terry Eagleton"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "A Glossary of Literary Terms",
+      "authors": "M. H. Abrams and Geoffrey Galt Harpham",
+      "year": 2015,
+      "note": "Eleventh edition (Cengage). Clear, authoritative entries on every term in this course, from *alexandrine* to *unreliable narrator*, with short accounts of the critical approaches; the best single reference for students."
+    },
+    {
+      "title": "Literary Theory: A Very Short Introduction",
+      "authors": "Jonathan Culler",
+      "year": 2011,
+      "note": "Second edition (Oxford University Press). A short, lucid account of what literary theory asks — about literature, interpretation, narrative, poetry and identity — organised by questions rather than schools."
+    },
+    {
+      "title": "Literary Theory: An Introduction",
+      "authors": "Terry Eagleton",
+      "year": 2008,
+      "note": "Anniversary edition (Blackwell; first published 1983). A lively, opinionated survey of modern critical approaches, from the rise of English as a subject to psychoanalysis and political criticism."
+    },
+    {
+      "title": "Beginning Theory: An Introduction to Literary and Cultural Theory",
+      "authors": "Peter Barry",
+      "year": 2017,
+      "note": "Fourth edition (Manchester University Press). A practical guide to formalist, structuralist, feminist, Marxist, postcolonial and other approaches, with examples of how each reads a text."
+    },
+    {
+      "title": "Poetic Meter and Poetic Form",
+      "authors": "Paul Fussell",
+      "year": 1979,
+      "note": "Revised edition (Random House). A short classic on metre, scansion, stanza and form in English verse, with many examples; background to the chapters on metre and poetic forms."
+    },
+    {
+      "title": "Poetic Rhythm: An Introduction",
+      "authors": "Derek Attridge",
+      "year": 1995,
+      "note": "Cambridge University Press. Teaches the rhythm of English verse through beats and offbeats rather than feet, with exercises; especially useful for readers whose first language is not English."
+    },
+    {
+      "title": "The Cambridge Introduction to Narrative",
+      "authors": "H. Porter Abbott",
+      "year": 2008,
+      "note": "Second edition (Cambridge University Press). A clear introduction to story and discourse, narration, focalisation and interpretation, with examples from fiction, film and drama."
+    },
+    {
+      "title": "The Art of Fiction",
+      "authors": "David Lodge",
+      "year": 1992,
+      "note": "Penguin. Fifty short essays, each on one technique of fiction (point of view, the epiphany, the unreliable narrator, symbolism) illustrated by a short extract; an easy entry to the methods of novels and stories."
+    }
+  ],
   "next": [
     "history-of-english",
     "style-and-rhetoric"
