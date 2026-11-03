@@ -7,12 +7,26 @@
   "order": 130,
   "tagline": "Microcontrollers, embedded C, timers and interrupts, interfaces, sensors and real-time systems",
   "summary": "Embedded computers control everything from washing machines to aircraft. This course programs microcontrollers close to the hardware: memory-mapped peripherals, timers and interrupts, serial interfaces, analog input and output, real-time operating systems and the design of reliable, low-power embedded systems.",
-  "overview": [],
+  "overview": [
+    "An **embedded system** is a computer built into a product to do one job: the controller in a washing machine, the engine-management unit of a car, the flight controller of a drone, the firmware of a pacemaker or a smart meter. Most of them are built around a **microcontroller**, a single chip that combines a processor core, flash and RAM with timers, converters and serial interfaces, and costs from a few tens of cents to a few dollars. Tens of billions of microcontrollers are shipped every year, far more than all the processors in phones and computers together, so most of the computing that engineers design is embedded computing.",
+    "Embedded programming differs from ordinary programming in three ways. The program talks directly to hardware, through registers at fixed addresses whose bits switch pins, start conversions and report events. It must meet **deadlines**: a motor-control loop that runs late, or a received byte that is overwritten before it is read, is a failure even if every computed value is right. And it must live within hard limits of memory, energy and cost, often for years on a battery and without anyone to press reset. This course teaches the hardware mechanisms and the programming techniques that deal with all three.",
+    "The course starts with the microcontroller itself — memory map, clocks, reset and general-purpose input and output — and with C as it is used close to the hardware: fixed-width types, bit manipulation, `volatile`, startup code and the toolchain. It then treats the peripherals that every application uses: timers and interrupts, pulse-width modulation, the serial interfaces UART, SPI, I²C, CAN and USB, and the analog front end of converters, sensors and actuator drivers. The last two chapters move from single peripherals to whole systems: real-time operating systems with rate-monotonic and response-time analysis, and the design of reliable, low-power products with watchdogs, testing and debugging.",
+    "What makes the subject hard is that a bug can live in the hardware, the software or the timing between them, and the usual tools of a desktop programmer — a console, a debugger that stops everything, abundant memory — are either missing or change the behaviour you are trying to observe. The way through is to read the data sheet and reference manual with the same care as the code, to compute timing by hand before measuring it ($f_\\text{tick} = f_\\text{clk}/(\\text{PSC}+1)$, frame times, interrupt loads, utilisation), and to make every assumption about time explicit. Work the examples with real numbers, and whenever possible try them on a development board with an oscilloscope or logic analyser attached."
+  ],
   "prerequisites": [
     "computer-architecture",
     "electronics-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the architecture of a microcontroller — core, memories, bus matrix, clock tree, reset system and peripherals — and read its memory map and register descriptions.",
+    "Configure general-purpose input and output pins and size the external components (current-limiting resistors, pull-ups) for given loads.",
+    "Write embedded C that accesses memory-mapped registers correctly with fixed-width types, bit masks and `volatile`, and explain the startup code, linker sections and toolchain that turn it into a flash image.",
+    "Calculate timer prescaler and reload values for a required period or PWM frequency, and analyse interrupt latency, interrupt load and the safe sharing of data between interrupt handlers and the main program.",
+    "Compare UART, SPI, I²C, CAN and USB, compute baud-rate errors, frame times and bus loads, and design pull-up resistors and buffered, interrupt-driven drivers.",
+    "Interface sensors and actuators to a microcontroller: choose ADC sampling and reference settings, convert codes to physical units, and design drivers for LEDs, relays and motors.",
+    "Analyse the schedulability of periodic task sets with the Liu–Layland bound and response-time analysis, and use RTOS tasks, semaphores, mutexes and queues without races, deadlock or unbounded priority inversion.",
+    "Estimate the battery life of a duty-cycled system, and apply watchdogs, brown-out detection, defensive coding, testing and debugging techniques to build reliable embedded products."
+  ],
   "chapters": [
     {
       "slug": "microcontrollers",
@@ -73,7 +87,132 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1969,
+      "title": "Real-time computing reaches the Moon",
+      "detail": "During the Apollo 11 descent the guidance computer was overloaded by extra radar work and raised 1201 and 1202 alarms; its priority-scheduled executive restarted, shed low-priority jobs and kept the guidance tasks running, and the landing continued.",
+      "people": [
+        "Margaret Hamilton",
+        "J. Halcombe Laning"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "Rate-monotonic scheduling",
+      "detail": "C. L. Liu and James Layland published the utilisation bound for fixed-priority scheduling of periodic tasks and the optimality of earliest-deadline-first, the foundation of real-time scheduling theory.",
+      "people": [
+        "C. L. Liu",
+        "James W. Layland"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "The single-chip microcontroller",
+      "detail": "Texas Instruments put the TMS1000 on the market, a 4-bit processor with ROM, RAM and I/O on one chip, developed from the single-chip calculator work of Gary Boone and Michael Cochran.",
+      "people": [
+        "Gary Boone",
+        "Michael Cochran"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "The Intel 8051",
+      "detail": "Intel introduced the MCS-51 family; the 8051 architecture became the most widely copied 8-bit microcontroller and is still built into many chips as a small control core.",
+      "people": []
+    },
+    {
+      "year": 1982,
+      "title": "The I²C bus",
+      "detail": "Philips developed the two-wire Inter-Integrated Circuit bus to connect chips inside television sets with a minimum of wiring; it became the standard bus for sensors and configuration of peripheral chips.",
+      "people": []
+    },
+    {
+      "year": 1986,
+      "title": "Controller Area Network",
+      "detail": "Bosch presented CAN at the SAE congress in Detroit, a multi-master serial bus with non-destructive bitwise arbitration for networking the control units of a car; the first CAN controller chips followed in 1987.",
+      "people": [
+        "Uwe Kiencke"
+      ]
+    },
+    {
+      "year": 1996,
+      "title": "USB 1.0",
+      "detail": "A consortium of computer and chip companies released the Universal Serial Bus specification, which replaced many serial and parallel ports and later became the standard way to connect microcontroller boards to computers.",
+      "people": [
+        "Ajay Bhatt"
+      ]
+    },
+    {
+      "year": 2003,
+      "title": "FreeRTOS",
+      "detail": "Richard Barry released FreeRTOS, a small open-source real-time kernel that was ported to most microcontroller families; it has been maintained by Amazon Web Services since 2017.",
+      "people": [
+        "Richard Barry"
+      ]
+    },
+    {
+      "year": 2004,
+      "title": "Arm Cortex-M3",
+      "detail": "Arm announced the Cortex-M3, a 32-bit core with a nested vectored interrupt controller and a fixed memory map designed for microcontrollers; the Cortex-M family went on to dominate 32-bit microcontrollers.",
+      "people": []
+    },
+    {
+      "year": 2005,
+      "title": "Arduino",
+      "detail": "A group at the Interaction Design Institute Ivrea released the Arduino board and its simplified programming environment, making microcontroller programming accessible to students, artists and hobbyists.",
+      "people": [
+        "Massimo Banzi",
+        "David Cuartielles",
+        "Tom Igoe",
+        "Gianluca Martino",
+        "David Mellis"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Embedded Systems: Introduction to Arm Cortex-M Microcontrollers",
+      "authors": "Jonathan W. Valvano",
+      "year": 2012,
+      "note": "Volume 1 of a widely used course series (5th edition): numbers, registers, GPIO, interrupts, timers and interfacing, taught on a Cortex-M board with many worked circuits."
+    },
+    {
+      "title": "The Definitive Guide to ARM Cortex-M3 and Cortex-M4 Processors",
+      "authors": "Joseph Yiu",
+      "year": 2014,
+      "note": "The reference (3rd edition) for the Cortex-M programmer's model: memory map, exceptions and the NVIC, startup, low-power modes and the instruction set."
+    },
+    {
+      "title": "Making Embedded Systems: Design Patterns for Great Software",
+      "authors": "Elecia White",
+      "year": 2024,
+      "note": "Practical software design for embedded systems (2nd edition): hardware abstraction, interrupts, state machines, debugging and power, with a working engineer's judgement."
+    },
+    {
+      "title": "Introduction to Embedded Systems: A Cyber-Physical Systems Approach",
+      "authors": "Edward A. Lee, Sanjit A. Seshia",
+      "year": 2017,
+      "note": "A rigorous treatment (2nd edition) of models of computation, sensors and actuators, concurrency, scheduling and verification."
+    },
+    {
+      "title": "Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and Applications",
+      "authors": "Giorgio C. Buttazzo",
+      "year": 2011,
+      "note": "The standard text (3rd edition) on real-time scheduling: rate-monotonic and EDF analysis, resource access protocols and aperiodic servers, with proofs."
+    },
+    {
+      "title": "The Art of Electronics",
+      "authors": "Paul Horowitz, Winfield Hill",
+      "year": 2015,
+      "note": "Its chapters on digital interfacing and microcontrollers (3rd edition) are the best guide to the analog and electrical side: pin drive, level shifting, converters and driving loads."
+    },
+    {
+      "title": "Test Driven Development for Embedded C",
+      "authors": "James W. Grenning",
+      "year": 2011,
+      "note": "How to unit-test firmware on a host computer with test doubles for hardware, and how to design drivers so that they can be tested."
+    }
+  ],
   "next": []
 }
