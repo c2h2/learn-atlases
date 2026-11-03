@@ -7,11 +7,26 @@
   "order": 50,
   "tagline": "Electrostatics, magnetostatics, Maxwell’s equations, plane waves and transmission lines",
   "summary": "Circuit theory is an approximation to electromagnetism. This course develops static electric and magnetic fields, capacitance and inductance, Faraday’s law and Maxwell’s equations, and the propagation, reflection and guiding of electromagnetic waves, ending with transmission lines.",
-  "overview": [],
+  "overview": [
+    "Every circuit you have analysed so far rests on an approximation: that charge and energy move along wires, that a capacitor's field stays between its plates and an inductor's flux inside its coil, and that a change at one end of a wire is felt at the other end at once. Electromagnetics is the theory underneath. It describes the electric and magnetic fields themselves, how charges and currents create them, how they store and carry energy, and how they travel through space and along structures as waves. It tells you what the capacitance of a coaxial cable is, why a printed-circuit trace has an impedance of $50\\,\\Omega$, how deep a $50\\,\\mathrm{Hz}$ current penetrates into copper, and why a fast logic edge rings when it reaches the end of a long track.",
+    "The course follows the historical and logical order. After a chapter of vector analysis in the three standard coordinate systems, it treats static electric fields, conductors, dielectrics and capacitance, and the boundary-value problems of Poisson's and Laplace's equations, including numerical solutions. Static magnetic fields, magnetic materials and inductance follow, then Faraday's law, which couples the two fields. Maxwell's displacement current completes the equations, and the remaining chapters are about their wave solutions: uniform plane waves in lossless and lossy media, their reflection and refraction at boundaries, and finally the transmission line, where field theory turns back into a distributed circuit with characteristic impedance, reflections and standing waves.",
+    "The physics is the same as in a physics course on electrodynamics; the emphasis is different. We work with phasors and complex permittivity, quote numbers for real materials, cables and frequencies, and keep asking when the circuit model is good enough and what to do when it is not. The difficulty is mostly geometric. Fields are vectors that vary in three dimensions, and most problems become tractable only when symmetry is spotted and exploited. Draw pictures, check units at every step, and test every result against a limiting case you can do in your head."
+  ],
   "prerequisites": [
     "circuits-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Evaluate line, surface and volume integrals and the gradient, divergence and curl in Cartesian, cylindrical and spherical coordinates, and apply the divergence and Stokes theorems.",
+    "Calculate electric fields and potentials of charge distributions using Coulomb's law, Gauss's law and the potential, choosing the method that the symmetry allows.",
+    "Apply boundary conditions at conductor and dielectric interfaces, and compute the capacitance, resistance and stored energy of practical electrode geometries.",
+    "Solve Laplace's and Poisson's equations by direct integration, separation of variables, images and finite differences.",
+    "Find magnetic fields of current distributions with the Biot–Savart and Ampère laws, and the inductance of coils, coaxial cables and two-wire lines.",
+    "Use Faraday's law to calculate motional and transformer emf, induced currents and magnetic forces.",
+    "State Maxwell's equations in integral, differential and time-harmonic form, and interpret each in terms of measurable quantities.",
+    "Analyse uniform plane waves in lossless, lossy and conducting media, including attenuation, skin depth, polarisation and power flow.",
+    "Calculate reflection and transmission of plane waves at planar boundaries at normal and oblique incidence, including total internal reflection and the Brewster angle.",
+    "Model transmission lines with distributed parameters, compute characteristic impedance, input impedance, reflection coefficient and standing-wave ratio, and analyse pulse transients with bounce diagrams."
+  ],
   "chapters": [
     {
       "slug": "vector-analysis",
@@ -93,8 +108,128 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1785,
+      "title": "Coulomb's inverse-square law",
+      "detail": "Using a torsion balance of his own design, Coulomb measured the force between charged spheres and reported that it falls off as the inverse square of their separation.",
+      "people": [
+        "Charles-Augustin de Coulomb"
+      ]
+    },
+    {
+      "year": 1820,
+      "title": "Currents produce magnetic fields",
+      "detail": "Ørsted observed that a current deflects a compass needle. Within months Biot and Savart measured the field of a long wire and Ampère described the forces between currents.",
+      "people": [
+        "Hans Christian Ørsted",
+        "Jean-Baptiste Biot",
+        "Félix Savart",
+        "André-Marie Ampère"
+      ]
+    },
+    {
+      "year": 1831,
+      "title": "Electromagnetic induction",
+      "detail": "Faraday found that a changing magnetic flux through a circuit induces a current in it, using an iron ring with two windings and a moving magnet; Joseph Henry made similar observations independently.",
+      "people": [
+        "Michael Faraday",
+        "Joseph Henry"
+      ]
+    },
+    {
+      "year": 1865,
+      "title": "A dynamical theory of the electromagnetic field",
+      "detail": "Maxwell's paper, built on the displacement current he had introduced in 1861–62, gave a complete set of field equations and showed that they predict transverse waves travelling at the measured speed of light.",
+      "people": [
+        "James Clerk Maxwell"
+      ]
+    },
+    {
+      "year": 1884,
+      "title": "The Poynting theorem",
+      "detail": "Poynting showed that the energy carried by electromagnetic fields flows with density $\\mathbf E\\times\\mathbf H$, so that energy reaches a resistor through the space around the wires.",
+      "people": [
+        "John Henry Poynting"
+      ]
+    },
+    {
+      "year": 1885,
+      "title": "Maxwell's equations in vector form",
+      "detail": "Heaviside recast Maxwell's equations as the four vector equations used today; he also developed the telegrapher's equations and showed that loading a line with series inductance makes it distortionless.",
+      "people": [
+        "Oliver Heaviside"
+      ]
+    },
+    {
+      "year": 1888,
+      "title": "Hertz detects electromagnetic waves",
+      "detail": "Hertz generated waves with a spark-gap oscillator, detected them with a resonant loop and showed reflection, standing waves and polarisation, confirming Maxwell's prediction.",
+      "people": [
+        "Heinrich Hertz"
+      ]
+    },
+    {
+      "year": 1939,
+      "title": "The Smith chart",
+      "detail": "Phillip Smith of Bell Telephone Laboratories published his transmission-line calculator chart, which maps normalised impedance onto the reflection-coefficient plane.",
+      "people": [
+        "Phillip H. Smith"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "The finite-difference time-domain method",
+      "detail": "Kane Yee published the staggered-grid algorithm for solving Maxwell's curl equations directly in time, the basis of much of today's electromagnetic simulation software.",
+      "people": [
+        "Kane S. Yee"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Engineering Electromagnetics",
+      "authors": "William H. Hayt Jr., John A. Buck",
+      "year": 2019,
+      "note": "The classic engineering text, with the same order of topics as this course and many worked examples in all three coordinate systems."
+    },
+    {
+      "title": "Fundamentals of Applied Electromagnetics",
+      "authors": "Fawwaz T. Ulaby, Umberto Ravaioli",
+      "year": 2020,
+      "note": "Starts with transmission lines and has strong coverage of the Smith chart, applications boxes and clear figures; a good second view of every chapter."
+    },
+    {
+      "title": "Elements of Electromagnetics",
+      "authors": "Matthew N. O. Sadiku",
+      "year": 2018,
+      "note": "Very many solved problems, and a chapter on numerical methods (finite differences, moments, finite elements)."
+    },
+    {
+      "title": "Field and Wave Electromagnetics",
+      "authors": "David K. Cheng",
+      "year": 1989,
+      "note": "A rigorous and compact treatment, especially good on boundary-value problems, waves in media and waveguides."
+    },
+    {
+      "title": "Introduction to Electrodynamics",
+      "authors": "David J. Griffiths",
+      "year": 2023,
+      "note": "The physics view of the same material, with careful derivations and an emphasis on understanding the fields rather than devices."
+    },
+    {
+      "title": "Fields and Waves in Communication Electronics",
+      "authors": "Simon Ramo, John R. Whinnery, Theodore Van Duzer",
+      "year": 1994,
+      "note": "An advanced engineering classic that connects field theory with transmission lines, waveguides, resonators and antennas."
+    },
+    {
+      "title": "Microwave Engineering",
+      "authors": "David M. Pozar",
+      "year": 2012,
+      "note": "The standard next step: transmission-line theory, the Smith chart, waveguides and microwave networks."
+    }
+  ],
   "next": [
     "rf-microwave",
     "photonics",
