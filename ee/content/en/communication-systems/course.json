@@ -7,12 +7,27 @@
   "order": 150,
   "tagline": "Analog and digital modulation, noise, detection, bit error rates and wireless systems",
   "summary": "Communication systems move information across distance through noisy, band-limited channels. This course analyses analog amplitude and angle modulation, sampling and pulse-code modulation, baseband and passband digital transmission, optimal detection in noise, and the techniques used in modern wireless systems.",
-  "overview": [],
+  "overview": [
+    "A **communication system** carries information from a source to a destination through a **channel** — a pair of wires, a coaxial cable, an optical fibre, a radio path through a city — that attenuates the signal, distorts it, limits its bandwidth and adds noise. The engineer's task is to shape the transmitted signal so that the receiver can recover the message as faithfully as possible within limits on power, bandwidth, cost and delay. Broadcast radio, the telephone network, satellite links, Wi-Fi and cellular networks are all solutions to that same problem under different constraints.",
+    "The course follows the historical and logical path of the subject. We first describe bandpass signals and channels with complex envelopes, then analyse the classical analog methods — amplitude modulation and its single-sideband variants, frequency and phase modulation — and compute the signal-to-noise ratio each achieves in additive Gaussian noise. Sampling and pulse-code modulation turn analog messages into bits; the rest of the course is digital: pulse shaping and intersymbol interference in baseband, passband modulations such as PSK and QAM, the matched filter and maximum-likelihood detection that make error rates computable, and finally the fading channels, diversity, OFDM and link budgets of modern wireless systems.",
+    "Two currencies are traded throughout: **power** (signal-to-noise ratio, $E_b/N_0$) and **bandwidth** (hertz, bits per second per hertz). Every modulation and every receiver design is a point on the trade-off between them, and Shannon's capacity $C = B\\log_2(1 + S/N)$ marks the boundary that no design can cross. Keeping both in view, and checking each design against the Shannon limit, is the habit this course aims to build.",
+    "The subject is hard because it combines three toolkits at once: Fourier analysis from [[signals-systems]], probability and random processes from [[random-signals]], and a good deal of decibel bookkeeping. Most errors are errors of convention — bandwidth in hertz or in radians per second, one-sided or two-sided noise density, power or voltage decibels, symbols or bits. Write units on every line, sketch spectra before computing with them, and check each answer against an order-of-magnitude estimate."
+  ],
   "prerequisites": [
     "signals-systems",
     "random-signals"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Represent bandpass signals and noise by complex envelopes and in-phase and quadrature components, and use the Hilbert transform to describe single-sideband signals.",
+    "Analyse DSB, conventional AM, SSB and VSB signals in time and frequency, and design envelope and coherent detectors and the frequency plan of a superheterodyne receiver.",
+    "Derive the spectra of FM and PM signals with Bessel functions, estimate their bandwidth with Carson's rule, and explain FM demodulation with discriminators and phase-locked loops.",
+    "Calculate the output signal-to-noise ratio of AM, DSB, SSB and FM receivers in additive white Gaussian noise, and explain the FM threshold and pre-emphasis.",
+    "Design a PCM system: choose the sampling rate and word length, compute the quantisation signal-to-noise ratio and the bit rate, and explain companding, delta modulation and time-division multiplexing.",
+    "Apply the Nyquist criterion to design raised-cosine pulse shaping, relate bandwidth to symbol rate and interpret eye diagrams.",
+    "Derive the matched filter and maximum-likelihood receivers and compute bit and symbol error rates of binary and M-ary modulations with the Q-function.",
+    "Compare digital modulations by bandwidth and power efficiency and locate them relative to the Shannon capacity limit.",
+    "Model multipath fading and evaluate diversity, OFDM and multiple-access techniques, and compute the link budget of a cellular or Wi-Fi link."
+  ],
   "chapters": [
     {
       "slug": "signals-spectra-channels",
@@ -89,8 +104,132 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1844,
+      "title": "The electric telegraph spans Washington to Baltimore",
+      "detail": "Samuel Morse sent the message “What hath God wrought” over a telegraph line from Washington to Baltimore, opening the era of long-distance electrical communication with an on–off coded signal.",
+      "people": [
+        "Samuel Morse"
+      ]
+    },
+    {
+      "year": 1876,
+      "title": "The telephone patent",
+      "detail": "Alexander Graham Bell was granted US patent 174,465 for transmitting speech electrically, an analog signal whose current followed the sound pressure.",
+      "people": [
+        "Alexander Graham Bell"
+      ]
+    },
+    {
+      "year": 1901,
+      "title": "Transatlantic radio",
+      "detail": "Guglielmo Marconi reported receiving the Morse letter S at St John’s, Newfoundland, transmitted from Poldhu in Cornwall, showing that radio waves could cross an ocean.",
+      "people": [
+        "Guglielmo Marconi"
+      ]
+    },
+    {
+      "year": 1915,
+      "title": "Single-sideband modulation",
+      "detail": "John Renshaw Carson of AT&T filed the patent for single-sideband suppressed-carrier transmission (granted 1923), halving the bandwidth of AM; in 1922 he also showed that FM cannot be narrower than AM.",
+      "people": [
+        "John R. Carson"
+      ]
+    },
+    {
+      "year": 1918,
+      "title": "The superheterodyne receiver",
+      "detail": "Edwin Howard Armstrong devised the superheterodyne receiver, which converts every station to a fixed intermediate frequency where most of the gain and selectivity is provided; it remains the basis of radio receivers.",
+      "people": [
+        "Edwin H. Armstrong"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Wideband FM",
+      "detail": "Armstrong was granted patents on wideband frequency modulation and in 1935–1936 demonstrated and published its large improvement in noise immunity over AM.",
+      "people": [
+        "Edwin H. Armstrong"
+      ]
+    },
+    {
+      "year": 1938,
+      "title": "Pulse-code modulation",
+      "detail": "Alec Reeves, working for International Telephone and Telegraph in Paris, patented pulse-code modulation: sampling, quantising and sending speech as binary codes.",
+      "people": [
+        "Alec Reeves"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "A mathematical theory of communication",
+      "detail": "Claude Shannon defined information quantitatively and proved that every channel has a capacity below which arbitrarily reliable transmission is possible; his 1949 paper gave $C = B\\log_2(1+S/N)$ for the band-limited Gaussian channel.",
+      "people": [
+        "Claude Shannon"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Orthogonal frequency-division multiplexing",
+      "detail": "Robert W. Chang of Bell Labs published the principle of transmitting many overlapping but orthogonal subcarriers; in 1971 Weinstein and Ebert showed that the DFT implements it, the basis of OFDM in DSL, Wi-Fi, LTE and 5G.",
+      "people": [
+        "Robert W. Chang",
+        "Stephen Weinstein",
+        "Paul Ebert"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "Digital cellular telephony",
+      "detail": "The first call on a commercial GSM network was made in Finland, beginning the move of mobile telephony from analog FM to digital modulation with TDMA.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Communication Systems (5th ed.)",
+      "authors": "Simon Haykin and Michael Moher",
+      "year": 2009,
+      "note": "Thorough standard text covering analog and digital modulation, noise and detection; good on complex envelopes and the phase-locked loop."
+    },
+    {
+      "title": "Modern Digital and Analog Communication Systems (5th ed.)",
+      "authors": "B. P. Lathi and Zhi Ding",
+      "year": 2019,
+      "note": "Readable undergraduate text with many worked examples; strong on modulation, sampling and PCM."
+    },
+    {
+      "title": "Communication Systems Engineering (2nd ed.)",
+      "authors": "John G. Proakis and Masoud Salehi",
+      "year": 2002,
+      "note": "Rigorous treatment of analog and digital communication with signal-space detection theory; a good bridge to graduate study."
+    },
+    {
+      "title": "Digital and Analog Communication Systems (8th ed.)",
+      "authors": "Leon W. Couch II",
+      "year": 2013,
+      "note": "Practical orientation with many system examples, line codes, spectra of digital signals and link budgets."
+    },
+    {
+      "title": "Digital Communications: Fundamentals and Applications (2nd ed.)",
+      "authors": "Bernard Sklar",
+      "year": 2001,
+      "note": "Clear explanations of error-rate analysis, link budgets and the power–bandwidth trade-off."
+    },
+    {
+      "title": "Wireless Communications",
+      "authors": "Andrea Goldsmith",
+      "year": 2005,
+      "note": "Fading channel models, diversity, adaptive modulation, OFDM and multiple access at advanced undergraduate level."
+    },
+    {
+      "title": "Fundamentals of Wireless Communication",
+      "authors": "David Tse and Pramod Viswanath",
+      "year": 2005,
+      "note": "Elegant modern treatment of fading, diversity, MIMO and multiuser systems; the next step after this course."
+    }
+  ],
   "next": [
     "information-theory",
     "rf-microwave"
