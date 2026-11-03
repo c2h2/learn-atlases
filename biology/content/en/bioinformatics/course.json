@@ -7,12 +7,26 @@
   "order": 180,
   "tagline": "Sequence databases, alignment, BLAST, profiles and hidden Markov models, phylogenetic inference, gene finding, assembly and variant calling, expression analysis and machine learning",
   "summary": "Bioinformatics is the computational analysis of biological data, above all of sequences. This course covers the algorithms and statistics behind sequence alignment and database searches, profiles and hidden Markov models, phylogenetic inference, gene finding, genome assembly and variant calling, the analysis of gene expression, and machine learning for biological data.",
-  "overview": [],
+  "overview": [
+    "Modern biology produces more data than any person can read. A single sequencing run yields billions of bases; public databases hold the sequences of hundreds of millions of proteins and the genomes of hundreds of thousands of organisms; an RNA-sequencing experiment measures the activity of twenty thousand genes in dozens of samples at once. Bioinformatics is the discipline that turns these data into biological knowledge: it asks which sequences are related and how, where the genes are in a genome, which variants an individual carries, which genes respond to a treatment, and how a protein family has evolved. Its methods are algorithms and statistical models, and its results — a BLAST hit, an alignment, a tree, a list of differentially expressed genes — are the starting point of most experiments in molecular biology, genetics, evolution and medicine.",
+    "The course follows the flow of sequence data. It begins with the formats and databases in which sequences are stored and with the small amount of programming every biologist needs. It then develops the central idea of the field, the alignment of sequences by dynamic programming with substitution matrices and gap penalties, and the heuristics and extreme-value statistics that make database searches by BLAST fast and their E-values meaningful. Multiple alignments lead to sequence profiles and profile hidden Markov models, which in turn underlie phylogenetic inference by distance, parsimony, likelihood and Bayesian methods and the hidden Markov models that find genes. The last three chapters turn to high-throughput sequencing: assembling genomes and mapping reads with de Bruijn graphs and the Burrows–Wheeler transform, calling variants with genotype likelihoods, analysing RNA-sequencing counts with negative binomial models and false discovery rates, and the machine-learning methods — from logistic regression to deep networks and protein-structure prediction — that are now everywhere in biology.",
+    "Bioinformatics sits between biology, computer science and statistics, and that is what makes it hard. Every method rests on a model of how sequences evolve or how data are generated, and every output can be produced even when the model is wrong, so the skill to cultivate is not running programs but knowing what their numbers mean and when to distrust them. The lessons therefore work through each algorithm by hand on small examples, derive the statistics that come with it, show short standard-library Python listings whose printed output is real, and stress the common misreadings — a low E-value is not proof of shared function, a bootstrap value is not a probability that a clade is true, a P-value of 0.01 among twenty thousand tests is not a discovery. General algorithms and data structures are developed in Computer Science Atlas, and probability and statistics in Maths Atlas and the biostatistics course; the lessons link to them rather than repeat them."
+  ],
   "prerequisites": [
     "biostatistics",
     "molecular-biology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Read and write the standard sequence and annotation formats (FASTA, FASTQ, GenBank, GFF, SAM, VCF), find records in the main public databases, and write short Python programs that manipulate sequences.",
+    "Explain how substitution matrices are derived as log-odds scores, and compute optimal global and local alignments with linear and affine gap penalties by dynamic programming.",
+    "Describe the heuristics of BLAST and calculate and interpret bit scores, E-values and P-values from Karlin–Altschul statistics.",
+    "Construct multiple alignments by progressive methods, build position-specific scoring matrices with pseudocounts, and explain how profile hidden Markov models represent protein families.",
+    "Apply the forward and Viterbi algorithms to hidden Markov models, and use them to explain gene finding, CpG-island detection and motif discovery.",
+    "Build phylogenetic trees by neighbour joining, parsimony and maximum likelihood, compute substitution-model distances and site likelihoods, and interpret bootstrap support and Bayesian posterior probabilities.",
+    "Explain how genomes are assembled from de Bruijn graphs and how reads are mapped with the Burrows–Wheeler transform, and calculate genotype likelihoods and posteriors for variant calls.",
+    "Normalise RNA-sequencing counts, model them with the negative binomial distribution, test for differential expression and control the false discovery rate.",
+    "Choose, train and evaluate machine-learning models for biological data, recognising data leakage, class imbalance and the limits of dimensionality-reduction plots."
+  ],
   "chapters": [
     {
       "slug": "sequences-databases",
@@ -89,8 +103,146 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1965,
+      "title": "Atlas of Protein Sequence and Structure",
+      "detail": "Margaret Dayhoff and colleagues published the first collection of all known protein sequences, the forerunner of every sequence database, and later used it to build the PAM substitution matrices (1978).",
+      "people": [
+        "Margaret Dayhoff"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Global alignment by dynamic programming",
+      "detail": "Saul Needleman and Christian Wunsch published a dynamic-programming method for finding the best alignment of two protein sequences in the Journal of Molecular Biology.",
+      "people": [
+        "Saul Needleman",
+        "Christian Wunsch"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "Local alignment",
+      "detail": "Temple Smith and Michael Waterman modified the dynamic programme to find the best-matching pair of segments of two sequences, the basis of sensitive database searching.",
+      "people": [
+        "Temple Smith",
+        "Michael Waterman"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "Maximum-likelihood phylogenies from DNA",
+      "detail": "Joseph Felsenstein showed how to compute the likelihood of a tree from aligned DNA sequences under a substitution model, with the pruning algorithm that all likelihood and Bayesian programs still use.",
+      "people": [
+        "Joseph Felsenstein"
+      ]
+    },
+    {
+      "year": 1987,
+      "title": "Neighbour joining",
+      "detail": "Naruya Saitou and Masatoshi Nei published the neighbour-joining method, a fast distance method that does not assume a molecular clock.",
+      "people": [
+        "Naruya Saitou",
+        "Masatoshi Nei"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "BLAST",
+      "detail": "Stephen Altschul, Warren Gish, Webb Miller, Eugene Myers and David Lipman published the Basic Local Alignment Search Tool, combining a fast word-based heuristic with the extreme-value statistics of Samuel Karlin and Altschul (1990).",
+      "people": [
+        "Stephen Altschul",
+        "Warren Gish",
+        "Webb Miller",
+        "Eugene Myers",
+        "David Lipman",
+        "Samuel Karlin"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "Profile hidden Markov models",
+      "detail": "Anders Krogh, David Haussler and colleagues applied hidden Markov models to protein families, the approach later implemented in HMMER and used to build the Pfam database.",
+      "people": [
+        "Anders Krogh",
+        "David Haussler"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Eulerian-path assembly",
+      "detail": "Pavel Pevzner, Haixu Tang and Michael Waterman recast fragment assembly as finding an Eulerian path in a de Bruijn graph, the idea behind most short-read assemblers.",
+      "people": [
+        "Pavel Pevzner",
+        "Haixu Tang",
+        "Michael Waterman"
+      ]
+    },
+    {
+      "year": 2009,
+      "title": "Read mapping with the Burrows–Wheeler transform",
+      "detail": "Bowtie (Ben Langmead and colleagues) and BWA (Heng Li and Richard Durbin) used the Burrows–Wheeler transform and FM-index to map hundreds of millions of short reads to the human genome on ordinary computers.",
+      "people": [
+        "Ben Langmead",
+        "Heng Li",
+        "Richard Durbin"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "AlphaFold2",
+      "detail": "John Jumper, Demis Hassabis and colleagues at DeepMind published AlphaFold2, a deep network that predicts protein structures from sequence and multiple alignments with near-experimental accuracy for many proteins.",
+      "people": [
+        "John Jumper",
+        "Demis Hassabis"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Biological Sequence Analysis: Probabilistic Models of Proteins and Nucleic Acids",
+      "authors": "Richard Durbin, Sean R. Eddy, Anders Krogh, Graeme Mitchison",
+      "year": 1998,
+      "note": "The classic text on the probabilistic foundations of the field: alignment scores as log-odds, hidden Markov models, profile HMMs, RNA structure and phylogenetic likelihood. Still the best account of chapters 2–6."
+    },
+    {
+      "title": "Bioinformatics Algorithms: An Active Learning Approach",
+      "authors": "Phillip Compeau, Pavel Pevzner",
+      "year": 2018,
+      "note": "3rd edition. A problem-driven introduction to the algorithms of the field — motif finding, assembly with de Bruijn graphs, alignment, phylogeny, HMMs and the Burrows–Wheeler transform — with programming exercises."
+    },
+    {
+      "title": "An Introduction to Bioinformatics Algorithms",
+      "authors": "Neil C. Jones, Pavel A. Pevzner",
+      "year": 2004,
+      "note": "MIT Press. A gentle, well-illustrated account of dynamic programming, graph algorithms, clustering and HMMs as applied to biological sequences."
+    },
+    {
+      "title": "Inferring Phylogenies",
+      "authors": "Joseph Felsenstein",
+      "year": 2004,
+      "note": "Sinauer. The authoritative monograph on phylogenetic methods — parsimony, distances, likelihood, bootstrap and Bayesian inference — by the author of many of them."
+    },
+    {
+      "title": "Molecular Evolution: A Statistical Approach",
+      "authors": "Ziheng Yang",
+      "year": 2014,
+      "note": "Oxford University Press. Substitution models, likelihood and Bayesian phylogenetics, molecular clocks and tests of selection, with careful derivations."
+    },
+    {
+      "title": "Algorithms on Strings, Trees, and Sequences",
+      "authors": "Dan Gusfield",
+      "year": 1997,
+      "note": "Cambridge University Press. The computer-science reference for exact and approximate string matching, suffix trees and alignment algorithms."
+    },
+    {
+      "title": "Modern Statistics for Modern Biology",
+      "authors": "Susan Holmes, Wolfgang Huber",
+      "year": 2019,
+      "note": "Cambridge University Press. Statistics for high-throughput data in R — count models, multiple testing, clustering, dimension reduction and RNA-seq analysis — at the level of chapters 8 and 9."
+    }
+  ],
   "next": [
     "systems-biology"
   ]
