@@ -7,11 +7,26 @@
   "order": 80,
   "tagline": "Instruction sets, processor datapaths, pipelining, memory hierarchy and parallelism",
   "summary": "A processor is a large finite-state machine that executes instructions. This course follows a program from its instruction set to the hardware: computer arithmetic, single-cycle and pipelined datapaths, hazards, caches and virtual memory, input and output, and the parallel architectures of multicore processors and GPUs.",
-  "overview": [],
+  "overview": [
+    "A processor is the most complex finite-state machine most engineers will ever meet: billions of transistors whose state is a set of registers and memory, and whose next-state function is defined by an **instruction set**. Computer architecture is the discipline that sits between the logic of [[digital-logic]] and the software that runs on the result. It asks how instructions should be chosen and encoded, how a datapath and its control execute them, how to keep that datapath busy by overlapping instructions, and how to feed it with data from memories that are hundreds of times slower than the logic itself.",
+    "The subject matters because almost every electronic product now contains at least one processor, and because the choices made at this level dominate speed, energy and cost. A phone, a car's engine controller and a data-centre server run the same few instruction sets on very different implementations; the differences between them — pipelines, caches, branch predictors, multiple cores, vector and graphics units — are the material of this course. The engineering question is always quantitative: execution time is instruction count × cycles per instruction × clock period, and every idea is judged by what it does to those three factors and to power.",
+    "The course follows one program down through the layers. It begins with the RISC-V instruction set and the arithmetic circuits the instructions need, builds a single-cycle processor from registers, an ALU and memories, and then pipelines it, treating data and control hazards, forwarding and branch prediction in detail. It then turns to memory: caches, their organisation and performance, virtual memory and translation look-aside buffers, followed by input and output, interrupts and DMA. The last two chapters measure performance with CPI and Amdahl's law and widen the view to instruction-level parallelism, multicore processors with coherent caches, and vector and GPU architectures.",
+    "What makes architecture hard is that nothing can be judged in isolation: a deeper pipeline raises the clock rate but increases branch penalties, a larger cache lowers the miss rate but lengthens the hit time. The way through is to keep a simple quantitative model in your head — CPI stacks, average memory access time, Amdahl's law — and to work every example with numbers. Trace instructions through the datapath cycle by cycle until it becomes second nature; most misunderstandings of hazards and caches disappear once you have filled in a pipeline diagram or a cache table by hand."
+  ],
   "prerequisites": [
     "digital-logic"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Write and read RISC-V assembly programs, including loops, array access and procedure calls, and encode instructions in the six RISC-V formats.",
+    "Design fast adders, multipliers and dividers, and explain IEEE 754 floating-point representation, rounding and the hardware for floating-point addition and multiplication.",
+    "Construct the datapath and control unit of a single-cycle RISC-V processor and determine its critical path and clock period.",
+    "Analyse a five-stage pipeline cycle by cycle, identify structural, data and control hazards, and resolve them with forwarding, stalls and branch prediction.",
+    "Calculate the hit rate, average memory access time and storage cost of direct-mapped, set-associative and fully associative caches, and explain write policies and replacement.",
+    "Explain virtual memory, page tables and translation look-aside buffers, and compute address-translation parameters.",
+    "Compare polling, interrupts and direct memory access for input and output, and estimate the processor load each imposes.",
+    "Evaluate performance with the processor performance equation, CPI, MIPS and benchmarks, and apply Amdahl's law to judge an enhancement.",
+    "Describe superscalar and out-of-order execution, multicore processors with cache coherence, and SIMD, vector and GPU architectures, and choose an architecture for a given workload."
+  ],
   "chapters": [
     {
       "slug": "instruction-set-architecture",
@@ -81,8 +96,149 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1945,
+      "title": "The stored-program concept",
+      "detail": "John von Neumann's First Draft of a Report on the EDVAC described a computer that keeps its program in the same memory as its data, the organisation that almost all later computers follow.",
+      "people": [
+        "John von Neumann",
+        "J. Presper Eckert",
+        "John Mauchly"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "The first stored program runs",
+      "detail": "On 21 June 1948 the Manchester Small-Scale Experimental Machine (the 'Baby') ran a program held in its Williams-tube memory; Cambridge's EDSAC followed in May 1949 as the first practical stored-program computer in regular service.",
+      "people": [
+        "Frederic Williams",
+        "Tom Kilburn",
+        "Geoff Tootill",
+        "Maurice Wilkes"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "Microprogramming",
+      "detail": "Maurice Wilkes proposed implementing a processor's control unit as a small memory of microinstructions, the technique used for most control units of the following three decades.",
+      "people": [
+        "Maurice Wilkes"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "IBM System/360 and the CDC 6600",
+      "detail": "IBM announced the System/360, the first family of computers sharing one instruction set across different implementations, separating architecture from implementation. The same year Control Data delivered the CDC 6600, which issued instructions to multiple functional units under a scoreboard.",
+      "people": [
+        "Gene Amdahl",
+        "Gerrit Blaauw",
+        "Frederick Brooks",
+        "Seymour Cray",
+        "James Thornton"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Tomasulo's algorithm and Amdahl's law",
+      "detail": "Robert Tomasulo published the dynamic scheduling scheme with register renaming used in the IBM System/360 Model 91 floating-point unit, and Gene Amdahl presented the argument now known as Amdahl's law at the AFIPS Spring Joint Computer Conference.",
+      "people": [
+        "Robert Tomasulo",
+        "Gene Amdahl"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "The microprocessor",
+      "detail": "Intel released the 4004, a 4-bit processor on a single chip of about 2,300 transistors, designed for a Busicom calculator.",
+      "people": [
+        "Federico Faggin",
+        "Ted Hoff",
+        "Stanley Mazor",
+        "Masatoshi Shima"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "The case for RISC",
+      "detail": "David Patterson and David Ditzel argued for simple, fixed-length instruction sets that can be pipelined efficiently, building on John Cocke's IBM 801 project; the Berkeley RISC and Stanford MIPS processors followed in the early 1980s.",
+      "people": [
+        "David Patterson",
+        "David Ditzel",
+        "John Hennessy",
+        "John Cocke"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "IEEE 754 floating point",
+      "detail": "The IEEE standard for binary floating-point arithmetic fixed formats, rounding and exceptional values, so that numerical programs give the same results on different processors.",
+      "people": [
+        "William Kahan"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "Multicore becomes mainstream",
+      "detail": "With clock rates limited by power density, AMD and Intel shipped dual-core desktop processors, and performance growth moved from single-thread speed to parallelism.",
+      "people": []
+    },
+    {
+      "year": 2010,
+      "title": "RISC-V",
+      "detail": "A group at the University of California, Berkeley began the RISC-V instruction set as an open, royalty-free architecture; it is now maintained by RISC-V International.",
+      "people": [
+        "Krste Asanović",
+        "Yunsup Lee",
+        "Andrew Waterman",
+        "David Patterson"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Computer Organization and Design RISC-V Edition: The Hardware/Software Interface",
+      "authors": "David A. Patterson, John L. Hennessy",
+      "year": 2020,
+      "note": "The standard first text (2nd RISC-V edition): instruction sets, arithmetic, the single-cycle and pipelined datapath, caches and parallelism, with the notation used in this course."
+    },
+    {
+      "title": "Computer Architecture: A Quantitative Approach",
+      "authors": "John L. Hennessy, David A. Patterson",
+      "year": 2017,
+      "note": "The graduate sequel (6th edition): instruction-level parallelism, memory hierarchy design, data-level and thread-level parallelism and domain-specific architectures, always argued with measurements."
+    },
+    {
+      "title": "Digital Design and Computer Architecture, RISC-V Edition",
+      "authors": "Sarah L. Harris, David Harris",
+      "year": 2021,
+      "note": "Goes from gates to a working RISC-V processor in SystemVerilog; the clearest treatment of single-cycle, multicycle and pipelined datapaths at gate level."
+    },
+    {
+      "title": "Computer Systems: A Programmer's Perspective",
+      "authors": "Randal E. Bryant, David R. O'Hallaron",
+      "year": 2015,
+      "note": "The software view (3rd edition): machine code, the memory hierarchy, virtual memory and exceptions as a programmer meets them."
+    },
+    {
+      "title": "Modern Processor Design: Fundamentals of Superscalar Processors",
+      "authors": "John Paul Shen, Mikko H. Lipasti",
+      "year": 2005,
+      "note": "Detailed treatment of superscalar pipelines, register renaming, out-of-order execution and branch prediction."
+    },
+    {
+      "title": "Computer Arithmetic: Algorithms and Hardware Designs",
+      "authors": "Behrooz Parhami",
+      "year": 2010,
+      "note": "Reference (2nd edition) for fast adders, multipliers, dividers and floating-point units."
+    },
+    {
+      "title": "A Primer on Memory Consistency and Cache Coherence",
+      "authors": "Vijay Nagarajan, Daniel J. Sorin, Mark D. Hill, David A. Wood",
+      "year": 2020,
+      "note": "Short, precise introduction (2nd edition) to coherence protocols and memory models in multicore processors."
+    }
+  ],
   "next": [
     "embedded-systems",
     "digital-ic"
