@@ -7,11 +7,26 @@
   "order": 140,
   "tagline": "Modelling, transient response, stability, root locus, frequency response, compensation and state space",
   "summary": "Feedback lets a system follow commands and reject disturbances despite uncertainty. This course models dynamic systems, analyses their transient response and stability, designs controllers with the root-locus and frequency-response methods, introduces state-space models and state feedback, and implements controllers digitally.",
-  "overview": [],
+  "overview": [
+    "A control system measures what a process is doing, compares it with what it should be doing, and acts on the difference. The thermostat in a soldering station, the current loop inside a motor drive, the voltage loop of a laptop's power supply, the pitch servo of a wind turbine and the phase-locked loop of a radio are all **feedback systems**, and nearly every one of them is built from electrical sensors, electrical actuators and an analog or digital controller. Feedback lets a cheap, uncertain plant behave like an accurate one, suppresses disturbances such as load changes and supply ripple, and can even stabilise a process that is unstable on its own. Badly designed, the same feedback makes a system ring, drift or oscillate.",
+    "The course follows the classical route and then the modern one. We first build models — transfer functions and block diagrams of circuits, DC motors and power converters, linearised where the physics is nonlinear — and learn how pole positions set the transient response and the steady-state error. Stability is decided algebraically with the Routh–Hurwitz criterion, then graphically: the **root locus** shows how the closed-loop poles move as a gain is raised, and the **Bode and Nyquist** plots of the loop gain give gain and phase margins that can be measured on real hardware. With these tools we design PID controllers and lead–lag compensators, realised with op-amps or in software. The last three chapters work in the time domain with **state-space** models, place every closed-loop pole by state feedback, estimate unmeasured states with observers, and finally implement controllers on a microcontroller, where sampling, delay and quantisation enter the loop.",
+    "Control is hard for two reasons. The mathematics links three views of one system — differential equations in time, poles and zeros in the $s$-plane, and frequency responses — and design means moving fluently between them. And every real loop involves trade-offs that no formula resolves for you: speed against overshoot, disturbance rejection against noise sensitivity, performance against robustness to a plant you do not know exactly. Work each example numerically, sketch before you compute, and check every design by simulating its step response. The Mechanical Engineering Atlas has a companion course on control with a mechanical emphasis; this one takes the electrical engineer's view of the same theory."
+  ],
   "prerequisites": [
     "signals-systems"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Derive transfer-function and block-diagram models of electrical, electromechanical and power-electronic systems, and linearise nonlinear models about an operating point.",
+    "Predict the step response of first- and second-order systems from their poles and zeros, and compute rise time, overshoot, settling time and steady-state error.",
+    "Determine the stability of a feedback system and the range of gains for which it is stable using pole locations and the Routh–Hurwitz criterion.",
+    "Sketch root loci with the construction rules and use them to choose gains and place compensator poles and zeros.",
+    "Construct Bode and Nyquist plots of a loop gain, apply the Nyquist criterion, and compute gain, phase and delay margins.",
+    "Design and tune PID controllers, including cascade current and speed loops for motor drives, and protect them against integrator windup and derivative kick.",
+    "Design lead, lag and lead–lag compensators to meet transient, steady-state and margin specifications, and realise them with op-amp circuits.",
+    "Formulate state-space models, solve them with the matrix exponential, convert between state-space and transfer-function forms, and test controllability and observability.",
+    "Design state-feedback controllers and observers by pole placement, explain the separation principle, and solve a simple linear-quadratic regulator problem.",
+    "Discretise continuous controllers and plants, analyse sampled-data loops in the $z$-plane, and implement a controller in fixed-rate software accounting for delay and quantisation."
+  ],
   "chapters": [
     {
       "slug": "modelling-dynamic-systems",
@@ -97,8 +112,136 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1868,
+      "title": "Maxwell's 'On governors'",
+      "detail": "James Clerk Maxwell linearised the equations of centrifugal speed governors and showed that their stability depends on the signs of the real parts of the roots of a characteristic equation.",
+      "people": [
+        "James Clerk Maxwell"
+      ]
+    },
+    {
+      "year": 1877,
+      "title": "Routh's stability criterion",
+      "detail": "Edward Routh's Adams Prize essay gave a tabular test for whether all roots of a polynomial have negative real parts; Adolf Hurwitz found an equivalent determinant condition independently in 1895.",
+      "people": [
+        "Edward John Routh",
+        "Adolf Hurwitz"
+      ]
+    },
+    {
+      "year": 1922,
+      "title": "Three-term control of ship steering",
+      "detail": "Nicolas Minorsky analysed automatic steering of ships and proposed a controller with proportional, integral and derivative terms, the theoretical origin of PID control.",
+      "people": [
+        "Nicolas Minorsky"
+      ]
+    },
+    {
+      "year": 1932,
+      "title": "The Nyquist criterion",
+      "detail": "Harry Nyquist's paper 'Regeneration theory' showed how to decide closed-loop stability from the open-loop frequency response, building on Harold Black's negative-feedback amplifier of 1927.",
+      "people": [
+        "Harry Nyquist",
+        "Harold S. Black"
+      ]
+    },
+    {
+      "year": 1940,
+      "title": "Bode's gain–phase relations",
+      "detail": "Hendrik Bode related the attenuation and phase of minimum-phase networks and introduced gain and phase margins; his 1945 book made frequency-response design standard practice.",
+      "people": [
+        "Hendrik W. Bode"
+      ]
+    },
+    {
+      "year": 1942,
+      "title": "Ziegler–Nichols tuning rules",
+      "detail": "John Ziegler and Nathaniel Nichols of Taylor Instrument Companies published empirical rules for setting the gains of PID process controllers from a step test or the ultimate gain.",
+      "people": [
+        "John G. Ziegler",
+        "Nathaniel B. Nichols"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "The root-locus method",
+      "detail": "Walter Evans published 'Graphical analysis of control systems', introducing the root locus as a way of seeing how closed-loop poles move with gain; his 1950 paper applied it to synthesis.",
+      "people": [
+        "Walter R. Evans"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "z-transform analysis of sampled-data systems",
+      "detail": "John Ragazzini and Lotfi Zadeh at Columbia University introduced the z-transform as the standard tool for analysing control systems with sampled signals.",
+      "people": [
+        "John R. Ragazzini",
+        "Lotfi A. Zadeh"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "State-space control theory",
+      "detail": "Rudolf Kálmán introduced controllability and observability, the linear-quadratic regulator and, with the Kalman filter, optimal state estimation, founding modern state-space control.",
+      "people": [
+        "Rudolf E. Kálmán"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Observers",
+      "detail": "David Luenberger showed how to reconstruct the state of a linear system from its inputs and outputs with a dynamic observer, completing the toolkit for output-feedback design by pole placement.",
+      "people": [
+        "David G. Luenberger"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Control Systems Engineering",
+      "authors": "Norman S. Nise",
+      "year": 2019,
+      "note": "The most widely used first course text (8th edition): very clear on modelling, time response, root locus and frequency response, with many electrical and electromechanical case studies."
+    },
+    {
+      "title": "Feedback Control of Dynamic Systems",
+      "authors": "Gene F. Franklin, J. David Powell, Abbas Emami-Naeini",
+      "year": 2019,
+      "note": "Rigorous and design-oriented (8th edition); excellent on root locus, frequency-response design, state-space methods and digital implementation."
+    },
+    {
+      "title": "Modern Control Engineering",
+      "authors": "Katsuhiko Ogata",
+      "year": 2010,
+      "note": "A classic (5th edition) with many fully worked problems on transient response, PID tuning, lead–lag design and state space."
+    },
+    {
+      "title": "Feedback Systems: An Introduction for Scientists and Engineers",
+      "authors": "Karl J. Åström, Richard M. Murray",
+      "year": 2021,
+      "note": "A modern treatment (2nd edition, freely available online) that emphasises robustness, the sensitivity functions and the limits of performance."
+    },
+    {
+      "title": "Digital Control of Dynamic Systems",
+      "authors": "Gene F. Franklin, J. David Powell, Michael L. Workman",
+      "year": 1998,
+      "note": "The standard reference on sampled-data control (3rd edition): discretisation, z-plane design, quantisation and sample-rate selection."
+    },
+    {
+      "title": "Advanced PID Control",
+      "authors": "Karl J. Åström, Tore Hägglund",
+      "year": 2006,
+      "note": "Everything practical about PID controllers: tuning rules, windup, filtering, setpoint weighting and implementation."
+    },
+    {
+      "title": "Fundamentals of Power Electronics",
+      "authors": "Robert W. Erickson, Dragan Maksimović",
+      "year": 2020,
+      "note": "Chapters on averaged converter models and feedback loop design (3rd edition) show the control of switching power supplies, including right-half-plane zeros and Type II/III compensators."
+    }
+  ],
   "next": [
     "power-electronics"
   ]
