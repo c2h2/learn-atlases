@@ -7,12 +7,27 @@
   "order": 100,
   "tagline": "Reading with a purpose, guessing words from context, main ideas, following the thread of a text, long sentences, inference and attitude, text types, numbers and charts, and extensive reading",
   "summary": "Good readers read differently depending on what they need, and they use the structure of a text to understand it. This course teaches skimming, scanning and close reading, working out unknown words from context, finding main ideas, following the links between sentences, untangling long sentences, reading between the lines, recognising common text types, reading numbers and charts, and building fluency by reading a lot.",
-  "overview": [],
+  "overview": [
+    "This course is about reading English for meaning. It starts with the idea that there is no single way to read: you skim a text to get the general idea, scan it to find one fact, and read it closely when every detail matters. It then shows what to do when you meet a word you do not know, how to find the main idea of a paragraph, how pronouns, synonyms and linking words connect the sentences of a text, and how to find the subject and the main verb in a long sentence. Later chapters deal with what a text says without saying it directly, with the writer's opinion and tone, with common types of text, and with numbers, tables and charts. The last chapter is about reading a lot of easy text, which is how readers become fast and fluent.",
+    "Many learners read every English text in the same way: slowly, word by word, translating each sentence and stopping at every unknown word. This works for a short paragraph in a textbook, but not for a novel, a website or a report at work. Reading is also the main way to meet the many thousands of words that a learner needs after the first two or three thousand, and research on vocabulary coverage (Laufer 1989; Hu & Nation 2000) shows that this only works well when most of the words in a text are already known. So learners need two things: the skills to read difficult texts carefully, and the habit of reading large amounts of easier text quickly.",
+    "Each chapter uses short passages written for the atlas, so that the structure is easy to see. It explains the key ideas with definitions, rules and worked examples, gives quick checks and ends with graded exercises with full answers. Claims about reading research — coverage, reading speed, eye movements and extensive reading — are given with the study they come from. The first chapter is the base for all the others; after it, the chapters on main ideas, the thread of a text and long sentences form one group, and inference, text types and numbers another. The chapter on extensive reading can be read at any time, and the sooner its advice is followed, the better.",
+    "Chinese learners often meet two particular problems. The first is a habit of translating every sentence into Chinese, which makes reading slow and tiring and hides the structure of the English. The second comes from differences between the languages: English puts long modifiers after the noun, uses pronouns and connectives where Chinese leaves them out, and marks the links between ideas with words such as *however* and *therefore* that need to be noticed. The course points out these differences where they matter. The best approach is to read for meaning first, to use the structure of the text instead of translating, and to read every day, mostly texts that are easy for you."
+  ],
   "prerequisites": [
     "core-vocabulary",
     "core-grammar"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Choose between skimming, scanning and close reading for a given text and task, and explain the choice.",
+    "Work out the likely meaning of an unknown word from its word class, the words around it, examples, contrasts and word parts, and decide when a dictionary is needed.",
+    "Identify the main idea of a paragraph and of a short text, and tell it apart from the examples, reasons and evidence that support it.",
+    "Track what pronouns, *this* and *that*, synonyms and linking words refer to across the sentences of a text.",
+    "Find the subject and the main verb of a long sentence, and read a long noun phrase by finding its head noun.",
+    "Draw reasonable inferences from a text, recognise the writer's attitude and tone, and tell facts from opinions.",
+    "Recognise narratives, descriptions, instructions, news reports, reviews and opinion pieces from their features, and read each with the right expectations.",
+    "Read figures, percentages, tables and simple charts in a text, and check whether the words of a text match its numbers.",
+    "Choose texts at a suitable level for extensive reading, using the 95% and 98% coverage levels, and plan a regular reading routine."
+  ],
   "chapters": [
     {
       "slug": "reading-with-a-purpose",
@@ -87,8 +102,128 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1879,
+      "title": "The eyes move in jumps",
+      "detail": "The French eye doctor Louis Émile Javal reported, in a series of articles on the physiology of reading, that the eyes do not glide smoothly along a line of print but move in short jumps with pauses between them.",
+      "people": [
+        "Louis Émile Javal"
+      ]
+    },
+    {
+      "year": 1908,
+      "title": "Huey's Psychology and Pedagogy of Reading",
+      "detail": "Edmund Burke Huey's *The Psychology and Pedagogy of Reading* brought together the early experiments on eye movements and word recognition and asked how reading should be taught. It is still read as the founding book of reading research.",
+      "people": [
+        "Edmund Burke Huey"
+      ]
+    },
+    {
+      "year": 1917,
+      "title": "Reading as reasoning",
+      "detail": "Edward Thorndike's article *Reading as Reasoning: A Study of Mistakes in Paragraph Reading* argued that understanding a paragraph is like solving a problem: the reader must weigh each word and idea and decide how they fit together.",
+      "people": [
+        "Edward Thorndike"
+      ]
+    },
+    {
+      "year": 1923,
+      "title": "The first readability formula",
+      "detail": "Bertha Lively and Sidney Pressey published a method for measuring the 'vocabulary burden' of school textbooks from the words they contained, usually counted as the first readability formula.",
+      "people": [
+        "Bertha Lively",
+        "Sidney Pressey"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "Flesch's Reading Ease score",
+      "detail": "Rudolf Flesch's article *A New Readability Yardstick* gave a formula that estimates how easy a text is from its average sentence length and the average number of syllables per word. It was made for texts for native speakers and is still widely used.",
+      "people": [
+        "Rudolf Flesch"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Reading as a guessing game",
+      "detail": "Kenneth Goodman's article *Reading: A Psycholinguistic Guessing Game* described readers as predicting meaning from context. Later eye-movement research showed that skilled readers in fact look at almost every word, and that heavy guessing is typical of weaker readers.",
+      "people": [
+        "Kenneth Goodman"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Cohesion in English",
+      "detail": "M. A. K. Halliday and Ruqaiya Hasan's *Cohesion in English* described the ties that connect the sentences of a text — reference, substitution, ellipsis, conjunction and lexical cohesion — and gave teachers a way to talk about how texts hang together.",
+      "people": [
+        "M. A. K. Halliday",
+        "Ruqaiya Hasan"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "The book flood in Fiji",
+      "detail": "Warwick Elley and Francis Mangubhai reported a study in Fijian primary schools in which classes were given many illustrated storybooks in English. Children who read and shared these books made larger gains in English reading than children taught with the usual course.",
+      "people": [
+        "Warwick Elley",
+        "Francis Mangubhai"
+      ]
+    },
+    {
+      "year": 1998,
+      "title": "Extensive reading for language learners",
+      "detail": "Richard Day and Julian Bamford's *Extensive Reading in the Second Language Classroom* set out the case for reading large amounts of easy, interesting material and described how teachers could organise it.",
+      "people": [
+        "Richard Day",
+        "Julian Bamford"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Teaching Reading Skills in a Foreign Language",
+      "authors": "Christine Nuttall",
+      "year": 2005,
+      "note": "Third edition (Macmillan). A classic, practical book for teachers on skimming and scanning, word attack skills, text structure, questions and extensive reading."
+    },
+    {
+      "title": "Teaching ESL/EFL Reading and Writing",
+      "authors": "I. S. P. Nation",
+      "year": 2009,
+      "note": "Routledge. Short chapters on reading for meaning, intensive and extensive reading, reading faster and guessing from context, with clear advice based on research."
+    },
+    {
+      "title": "Reading in a Second Language: Moving from Theory to Practice",
+      "authors": "William Grabe",
+      "year": 2009,
+      "note": "Cambridge University Press. A thorough survey of research on second-language reading: word recognition, vocabulary, discourse structure, strategies and fluency."
+    },
+    {
+      "title": "Extensive Reading in the Second Language Classroom",
+      "authors": "Richard R. Day and Julian Bamford",
+      "year": 1998,
+      "note": "Cambridge University Press. The standard book on extensive reading: why it works, how to choose materials and how to organise it."
+    },
+    {
+      "title": "Teaching Extensive Reading in Another Language",
+      "authors": "Paul Nation and Rob Waring",
+      "year": 2020,
+      "note": "Routledge. A more recent guide to graded readers, levels, reading speed and extensive reading programmes, with the research behind them."
+    },
+    {
+      "title": "Cohesion in English",
+      "authors": "M. A. K. Halliday and Ruqaiya Hasan",
+      "year": 1976,
+      "note": "Longman. The classic description of how reference, substitution, ellipsis, conjunction and vocabulary connect sentences into a text; background to the chapter on following the thread."
+    },
+    {
+      "title": "Psychology of Reading",
+      "authors": "Keith Rayner, Alexander Pollatsek, Jane Ashby and Charles Clifton Jr.",
+      "year": 2012,
+      "note": "Second edition (Psychology Press). What experiments show about eye movements, word recognition, reading speed and comprehension, including the limits of speed reading."
+    }
+  ],
   "next": [
     "academic-reading"
   ]
