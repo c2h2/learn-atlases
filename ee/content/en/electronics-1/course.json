@@ -7,12 +7,25 @@
   "order": 70,
   "tagline": "Diode circuits, transistor biasing, small-signal amplifiers, current mirrors and differential pairs",
   "summary": "Electronics turns devices into useful circuits. This course models diodes and transistors for circuit design, biases MOSFET and BJT amplifiers, analyses single- and multistage amplifiers with small-signal models, and introduces current mirrors, differential pairs and the frequency response of amplifiers.",
-  "overview": [],
+  "overview": [
+    "A transistor on its own is a nonlinear, temperature-sensitive device whose parameters vary by a factor of two from one sample to the next. Electronics is the art of building circuits around such devices that are precise, predictable and useful anyway: rectifiers that turn mains into a clean DC supply, bias networks that hold a transistor at the same operating point from $-40$ to $125\\,^\\circ\\mathrm{C}$, and amplifiers whose gain is set by a ratio of resistors or transistor sizes rather than by any single device parameter. Every phone, sensor interface, audio system, radio receiver and power supply contains the circuits of this course, usually by the hundred inside an integrated circuit.",
+    "The course moves from devices to systems in three steps. The first three chapters model the diode, the MOSFET and the bipolar transistor for circuit design and solve their DC problems: rectifiers and regulators, bias points, load lines, switches. The next three introduce the small-signal model, the linearised circuit that describes how an amplifier responds to small signals around its bias point, and use it to analyse the common-source, common-emitter, common-gate, common-base and follower stages and to combine them into cascodes, Darlington pairs and multistage chains. The last three chapters turn to the building blocks of integrated circuits — current mirrors, active loads and the differential pair — and finish with the frequency response of amplifiers, where the device capacitances, the Miller effect and the method of open-circuit time constants set the bandwidth.",
+    "What makes electronics hard at first is that every problem has two layers: a nonlinear DC problem (find the bias point) and a linear AC problem (find the gain, resistances and bandwidth around it), and the two must never be mixed. The second difficulty is judgement: a good designer knows which approximations to make ($r_o \\to \\infty$, $\\beta \\gg 1$, $V_{BE} \\approx 0.7\\,\\mathrm{V}$) and checks afterwards that they held. Work every example in that rhythm — DC first, check the operating region, then small-signal — and keep a feel for typical numbers: a few hundred microamperes of bias, transconductances of milli-siemens, intrinsic gains of tens to hundreds."
+  ],
   "prerequisites": [
     "circuits-2",
     "semiconductor-devices"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Analyse diode circuits with the ideal, constant-drop and exponential models, and design rectifiers with filter capacitors, peak detectors, clippers, clampers and Zener regulators.",
+    "Determine the DC operating point and operating region of MOSFET and BJT circuits, and design bias networks that make the operating point insensitive to device parameters and temperature.",
+    "Derive the small-signal models of the MOSFET and the BJT from their large-signal equations and use them to compute voltage gain, input resistance and output resistance.",
+    "Analyse and compare the six basic single-transistor amplifier configurations and choose the right one for a given source and load.",
+    "Analyse and design multistage amplifiers, including cascode stages and Darlington pairs, taking loading between stages into account.",
+    "Design current mirrors and current sources, including cascode and Widlar mirrors, and use them as biasing networks and active loads.",
+    "Analyse the MOSFET and BJT differential pair for differential and common-mode signals, and calculate the common-mode rejection ratio and the effect of mismatch.",
+    "Estimate the low- and high-frequency cut-offs of an amplifier using the high-frequency device models, the Miller approximation and the method of time constants."
+  ],
   "chapters": [
     {
       "slug": "diode-circuits",
@@ -92,8 +105,122 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1904,
+      "title": "The thermionic diode",
+      "detail": "John Ambrose Fleming patented the two-electrode vacuum valve as a detector of radio waves, the first electronic rectifier.",
+      "people": [
+        "John Ambrose Fleming"
+      ]
+    },
+    {
+      "year": 1906,
+      "title": "The Audion",
+      "detail": "Lee de Forest added a grid between the cathode and the plate of a vacuum diode; within a few years the triode had become the first practical electronic amplifier.",
+      "people": [
+        "Lee de Forest"
+      ]
+    },
+    {
+      "year": 1920,
+      "title": "The Miller effect",
+      "detail": "John Milton Miller of the US Bureau of Standards showed that the grid–plate capacitance of a triode appears at its input multiplied by one plus the voltage gain.",
+      "people": [
+        "John Milton Miller"
+      ]
+    },
+    {
+      "year": 1936,
+      "title": "The long-tailed pair",
+      "detail": "Alan Blumlein's British patent described a pair of valves sharing a common cathode resistor, the ancestor of the differential pair used in every operational amplifier.",
+      "people": [
+        "Alan Blumlein"
+      ]
+    },
+    {
+      "year": 1947,
+      "title": "The point-contact transistor",
+      "detail": "John Bardeen and Walter Brattain demonstrated amplification with a germanium point-contact transistor at Bell Labs in December 1947; William Shockley's junction transistor theory followed in 1948–1949.",
+      "people": [
+        "John Bardeen",
+        "Walter Brattain",
+        "William Shockley"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "The Darlington pair",
+      "detail": "Sidney Darlington of Bell Labs patented the connection of two or more transistors on one substrate with the emitter of one driving the base of the next.",
+      "people": [
+        "Sidney Darlington"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "The MOSFET",
+      "detail": "Mohamed Atalla and Dawon Kahng at Bell Labs fabricated the first working silicon metal–oxide–semiconductor field-effect transistor, reported in 1960.",
+      "people": [
+        "Mohamed Atalla",
+        "Dawon Kahng"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "CMOS",
+      "detail": "Frank Wanlass and Chih-Tang Sah of Fairchild presented complementary MOS logic, combining n- and p-channel transistors; it became the dominant integrated-circuit technology in the 1980s.",
+      "people": [
+        "Frank Wanlass",
+        "Chih-Tang Sah"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "Integrated operational amplifiers",
+      "detail": "Bob Widlar at Fairchild designed the μA709 monolithic op-amp, using current mirrors, active loads and the low-current Widlar source in place of large resistors.",
+      "people": [
+        "Bob Widlar"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Microelectronic Circuits",
+      "authors": "Adel Sedra, Kenneth Smith, Tony Chan Carusone, Vincent Gaudet",
+      "year": 2020,
+      "note": "The standard undergraduate text; this course follows its order and notation closely, with MOSFET and BJT treated side by side."
+    },
+    {
+      "title": "Fundamentals of Microelectronics",
+      "authors": "Behzad Razavi",
+      "year": 2021,
+      "note": "Exceptionally clear on intuition: small-signal analysis by inspection, cascodes, mirrors and differential pairs."
+    },
+    {
+      "title": "Microelectronic Circuit Design",
+      "authors": "Richard Jaeger, Travis Blalock",
+      "year": 2016,
+      "note": "Many worked design examples with realistic tolerances and SPICE comparisons."
+    },
+    {
+      "title": "Analysis and Design of Analog Integrated Circuits",
+      "authors": "Paul Gray, Paul Hurst, Stephen Lewis, Robert Meyer",
+      "year": 2009,
+      "note": "The graduate reference for device models, current mirrors, differential pairs and frequency response."
+    },
+    {
+      "title": "Design of Analog CMOS Integrated Circuits",
+      "authors": "Behzad Razavi",
+      "year": 2017,
+      "note": "For the integrated-circuit view of single-stage amplifiers, mirrors and frequency response in CMOS."
+    },
+    {
+      "title": "The Art of Electronics",
+      "authors": "Paul Horowitz, Winfield Hill",
+      "year": 2015,
+      "note": "The practitioner's book: real parts, real supplies and many circuits that work, with little algebra."
+    }
+  ],
   "next": [
     "electronics-2",
     "power-electronics",
