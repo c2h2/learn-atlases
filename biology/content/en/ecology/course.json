@@ -7,11 +7,26 @@
   "order": 110,
   "tagline": "The niche, life histories, population growth, competition, predation, communities, energy flow, nutrient cycles and biogeography",
   "summary": "Ecology studies how organisms interact with each other and with their environment, from single populations to the whole biosphere. This course covers the niche, life histories, population growth and regulation, competition, predation and parasitism, the structure and dynamics of communities, energy flow and nutrient cycling in ecosystems, and the large-scale patterns of biogeography.",
-  "overview": [],
+  "overview": [
+    "Ecology is the scientific study of the distribution and abundance of organisms and of the interactions that determine them. It asks why a species lives where it does and not elsewhere, why its numbers rise, fall or stay steady, how species that eat, compete with or depend on one another affect each other's numbers, and how the energy and chemical elements that all organisms need move through living systems. Its scale runs from the physiology of a single leaf or lizard to the carbon budget of the whole planet, and its answers underpin fisheries and pest management, agriculture, epidemiology, conservation and our understanding of climate change.",
+    "The course climbs the levels of ecological organisation. It begins with individual organisms — the physical conditions and resources they face, their tolerances and their niche — and with life histories, the evolved schedules of growth, reproduction and death. It then builds the theory of single populations (life tables, exponential and logistic growth, density dependence), of pairs of interacting species (the Lotka–Volterra models of competition and predation, functional responses, host–parasite dynamics) and of whole communities (mutualism, food webs, keystone species, succession and diversity). The last three chapters treat ecosystems as machines for processing energy and nutrients — primary production, trophic efficiency, decomposition and the carbon, nitrogen and phosphorus cycles — and the large-scale patterns of biogeography: biomes, the latitudinal diversity gradient and island biogeography.",
+    "Ecology is hard for two reasons. Its systems are complex, variable and historically contingent, so general laws are few and most results are models with stated assumptions or empirical regularities with exceptions; and its central ideas are quantitative, so verbal arguments easily mislead. Each lesson therefore pairs simple mathematical models — always with their assumptions — with the field and laboratory experiments that test them, works numerical examples, and uses interactive figures to show what the equations actually predict. The evolutionary background comes from the Evolution course; the applications to threatened species and ecosystems are developed in Conservation Biology."
+  ],
   "prerequisites": [
     "evolution"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain how physical conditions and resources limit where organisms live, and distinguish an organism's fundamental niche from its realised niche.",
+    "Analyse life-history trade-offs between growth, reproduction and survival, and predict how mortality schedules shape the timing of reproduction and senescence.",
+    "Construct a life table and calculate from it the net reproductive rate, generation time and intrinsic rate of increase of a population.",
+    "Derive and apply the exponential and logistic models of population growth, and explain how density dependence and time lags regulate populations or make them cycle.",
+    "Use the Lotka–Volterra competition model and its isoclines to predict competitive exclusion or coexistence, and interpret experiments on competition in the field and laboratory.",
+    "Analyse predator–prey and host–parasite dynamics with phase-plane models, functional responses and the basic reproduction number.",
+    "Describe food webs, keystone species, trophic cascades and succession, and calculate and compare measures of species diversity.",
+    "Calculate primary and secondary production and the efficiency of energy transfer between trophic levels, and explain why food chains are short.",
+    "Trace the cycles of carbon, nitrogen and phosphorus through ecosystems, and explain how human activity has altered them.",
+    "Interpret species–area relationships, the latitudinal diversity gradient and the equilibrium theory of island biogeography."
+  ],
   "chapters": [
     {
       "slug": "organisms-environment",
@@ -86,8 +101,134 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1798,
+      "title": "Malthus on population",
+      "detail": "Thomas Robert Malthus's An Essay on the Principle of Population argued that a population grows geometrically while its food supply cannot, so growth must be checked by mortality — an argument that later shaped the thinking of both Darwin and Wallace.",
+      "people": [
+        "Thomas Robert Malthus"
+      ]
+    },
+    {
+      "year": 1838,
+      "title": "The logistic equation",
+      "detail": "Pierre-François Verhulst proposed that a population's growth rate declines as it approaches a ceiling, the logistic model; it was rediscovered by Raymond Pearl and Lowell Reed in 1920.",
+      "people": [
+        "Pierre-François Verhulst"
+      ]
+    },
+    {
+      "year": 1866,
+      "title": "The word 'ecology'",
+      "detail": "Ernst Haeckel coined Oekologie in Generelle Morphologie der Organismen for the science of the relations between an organism and its surroundings.",
+      "people": [
+        "Ernst Haeckel"
+      ]
+    },
+    {
+      "year": 1926,
+      "title": "Equations of interacting species",
+      "detail": "Vito Volterra, analysing Adriatic fish catches, and Alfred Lotka, in Elements of Physical Biology (1925), independently formulated the differential-equation models of predation and competition that bear their names.",
+      "people": [
+        "Alfred J. Lotka",
+        "Vito Volterra"
+      ]
+    },
+    {
+      "year": 1934,
+      "title": "Competitive exclusion in the laboratory",
+      "detail": "Georgii Gause's The Struggle for Existence reported that Paramecium aurelia consistently excluded P. caudatum in mixed cultures, giving experimental support to the principle that complete competitors cannot coexist.",
+      "people": [
+        "Georgii F. Gause"
+      ]
+    },
+    {
+      "year": 1935,
+      "title": "The ecosystem concept",
+      "detail": "Arthur Tansley introduced the term ecosystem for organisms together with their physical environment, treated as one system.",
+      "people": [
+        "Arthur G. Tansley"
+      ]
+    },
+    {
+      "year": 1942,
+      "title": "Trophic dynamics",
+      "detail": "Raymond Lindeman's study of Cedar Bog Lake, Minnesota, analysed an ecosystem as a flow of energy between trophic levels with a measurable efficiency at each transfer.",
+      "people": [
+        "Raymond L. Lindeman"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "The niche as a hypervolume",
+      "detail": "G. Evelyn Hutchinson defined the fundamental niche as an n-dimensional region of environmental conditions and resources, distinguishing it from the realised niche left by competitors.",
+      "people": [
+        "G. Evelyn Hutchinson"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Keystone predation",
+      "detail": "Robert Paine reported that removing the starfish Pisaster ochraceus from a rocky shore at Mukkaw Bay, Washington, led to a collapse in the number of species, as mussels monopolised the space.",
+      "people": [
+        "Robert T. Paine"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "The Theory of Island Biogeography",
+      "detail": "Robert MacArthur and Edward O. Wilson explained the number of species on an island as a dynamic balance between immigration and extinction, developing their 1963 paper into a book.",
+      "people": [
+        "Robert H. MacArthur",
+        "Edward O. Wilson"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Ecology: From Individuals to Ecosystems (5th edn)",
+      "authors": "Michael Begon and Colin R. Townsend",
+      "year": 2021,
+      "note": "The standard comprehensive undergraduate text, organised from individuals to ecosystems as this course is; strong on experiments and examples."
+    },
+    {
+      "title": "Ecology: The Experimental Analysis of Distribution and Abundance (6th edn)",
+      "authors": "Charles J. Krebs",
+      "year": 2009,
+      "note": "Emphasises how ecological hypotheses are tested in the field; good on population regulation and community ecology."
+    },
+    {
+      "title": "A Primer of Ecology (4th edn)",
+      "authors": "Nicholas J. Gotelli",
+      "year": 2008,
+      "note": "A short, clear introduction to the mathematical models of population and community ecology — logistic growth, life tables, Lotka–Volterra and island biogeography."
+    },
+    {
+      "title": "Community Ecology (2nd edn)",
+      "authors": "Gary G. Mittelbach and Brian J. McGill",
+      "year": 2019,
+      "note": "An advanced text on coexistence theory, food webs, succession and the patterns of diversity."
+    },
+    {
+      "title": "Principles of Terrestrial Ecosystem Ecology (2nd edn)",
+      "authors": "F. Stuart Chapin III, Pamela A. Matson and Peter M. Vitousek",
+      "year": 2011,
+      "note": "The standard text on production, decomposition and nutrient cycling in terrestrial ecosystems."
+    },
+    {
+      "title": "Biogeochemistry: An Analysis of Global Change (4th edn)",
+      "authors": "William H. Schlesinger and Emily S. Bernhardt",
+      "year": 2020,
+      "note": "Global carbon, nitrogen and phosphorus cycles and their human alteration, with quantitative budgets."
+    },
+    {
+      "title": "The Theory of Island Biogeography",
+      "authors": "Robert H. MacArthur and Edward O. Wilson",
+      "year": 1967,
+      "note": "The classic monograph that founded the equilibrium theory; still readable and influential."
+    }
+  ],
   "next": [
     "behaviour",
     "conservation-biology"
