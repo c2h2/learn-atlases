@@ -7,12 +7,26 @@
   "order": 170,
   "tagline": "Protein architecture and folding, nucleic acids, X-ray crystallography, NMR, cryo-EM, structure prediction, molecular machines and dynamics",
   "summary": "Structural biology explains how biological molecules work by locating their atoms. This course covers the architecture and folding of proteins and nucleic acids, the methods that determine structures — X-ray crystallography, NMR spectroscopy and cryo-electron microscopy — the prediction of structure from sequence, and what structures reveal about molecular machines, dynamics and binding.",
-  "overview": [],
+  "overview": [
+    "Structural biology asks where the atoms of biological molecules are, and what their positions explain. A sequence tells us which residues a protein contains; only a structure shows how a chain of a few hundred of them folds into a pocket that binds one sugar and rejects its mirror image, how a channel admits potassium but not the smaller sodium ion, or how a rotary motor turns a flow of protons into ATP. Since the first protein structure in 1958 the field has moved from single small proteins solved over decades to ribosomes, spliceosomes and viruses solved in weeks, and, since 2020, to the prediction of reliable models for almost every known protein sequence. Structures now underpin the design of drugs and vaccines, the interpretation of disease mutations and the engineering of new enzymes and binders.",
+    "The course has three parts. The first three chapters describe the objects: the architecture of proteins (secondary structure, folds, domains and their classification), the physics of folding and stability, and the structures of DNA and RNA and the ways proteins recognise them. The middle three chapters describe the experimental methods: X-ray crystallography, from crystals and diffraction to the phase problem and model building; NMR and the optical spectroscopies (circular dichroism and fluorescence); and cryo-electron microscopy, single-particle analysis and tomography. The last three chapters put structures to work: predicting them from sequence, from homology modelling to deep learning; explaining molecular machines such as the ribosome, ATP synthase, motor proteins and transporters; and describing the dynamics, binding and design of proteins. The biochemistry of amino acids and the double helix come from Biochemistry and Molecular Biology, and the physics of waves, diffraction and spectroscopy from the Physics and Chemistry Atlases, to which these lessons link.",
+    "Structural biology is hard in two ways. It needs a little physics and mathematics — waves and Fourier transforms, Boltzmann populations, free energies — and these are best learned by working the numbers: a Bragg angle, a resolution, an NOE distance, a free energy of unfolding, the number of protons per ATP. And a structure is a model, not a photograph: every coordinate comes with an uncertainty, every method has its own blind spots (crystal packing, size limits, averaging over conformations), and a beautiful picture can be wrong. Read every structure with the same questions: what was measured, at what resolution, how well does the model fit the data, and what else could explain it?"
+  ],
   "prerequisites": [
     "biochemistry",
     "molecular-biology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the backbone geometry of polypeptides, interpret a Ramachandran plot, and recognise the main secondary structures, supersecondary motifs, folds and domain classes.",
+    "Explain protein folding with the energy-landscape picture, calculate stabilities and melting temperatures from two-state models, and explain how chaperones, misfolding and amyloid formation fit in.",
+    "Compare the A, B and Z forms of DNA and the main RNA structural motifs, and explain how proteins read DNA and RNA through direct and indirect readout.",
+    "Explain how X-ray diffraction from a crystal is recorded and interpreted, apply Bragg's law, describe how the phase problem is solved, and judge a crystal structure by its resolution, R-factors and B-factors.",
+    "Explain how NMR yields distances, angles and dynamics of proteins in solution, and use circular dichroism and fluorescence (including FRET) to measure secondary structure, folding and distances.",
+    "Describe single-particle cryo-electron microscopy and electron tomography, from sample to map, and explain the contrast transfer function, the Fourier shell correlation and the advances behind the resolution revolution.",
+    "Explain how protein structures are predicted by homology modelling, physics-based methods and deep learning, and interpret confidence measures such as pLDDT, PAE and the TM-score.",
+    "Use structures to explain the mechanisms of molecular machines such as the ribosome, ATP synthase, kinesin and myosin, and alternating-access transporters, including their energetics.",
+    "Relate binding constants to free energies, distinguish induced fit from conformational selection, describe what molecular dynamics simulations can and cannot show, and outline how new proteins are designed."
+  ],
   "chapters": [
     {
       "slug": "protein-architecture",
@@ -89,8 +103,149 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1934,
+      "title": "The first diffraction pattern of a protein crystal",
+      "detail": "J. D. Bernal and Dorothy Crowfoot (later Hodgkin) photographed sharp X-ray diffraction from pepsin crystals kept wet in their mother liquor, showing that globular proteins have ordered atomic structures.",
+      "people": [
+        "J. D. Bernal",
+        "Dorothy Crowfoot Hodgkin"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "The α-helix and the β-sheet",
+      "detail": "Linus Pauling, Robert Corey and Herman Branson predicted the α-helix and the pleated sheets from the planar geometry of the peptide bond and the demand that backbone groups form hydrogen bonds.",
+      "people": [
+        "Linus Pauling",
+        "Robert Corey",
+        "Herman Branson"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "The first protein structure",
+      "detail": "John Kendrew and colleagues solved sperm-whale myoglobin at 6 Å by X-ray crystallography, using heavy-atom derivatives to obtain the phases; the 2 Å structure followed in 1960, alongside Max Perutz's haemoglobin.",
+      "people": [
+        "John Kendrew",
+        "Max Perutz"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "The first enzyme structure",
+      "detail": "David Phillips and colleagues solved hen egg-white lysozyme and, with bound sugar analogues, proposed a catalytic mechanism from the structure of the active-site cleft.",
+      "people": [
+        "David Phillips"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "The Protein Data Bank",
+      "detail": "The Protein Data Bank was founded at Brookhaven National Laboratory as an archive of atomic coordinates, starting with seven structures; deposition later became a condition of publication.",
+      "people": [
+        "Walter Hamilton",
+        "Helen Berman"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "A membrane protein by electron microscopy",
+      "detail": "Richard Henderson and Nigel Unwin reconstructed bacteriorhodopsin from two-dimensional crystals in the purple membrane at 7 Å, revealing seven transmembrane helices and starting biological electron crystallography.",
+      "people": [
+        "Richard Henderson",
+        "Nigel Unwin"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "A protein structure by NMR",
+      "detail": "Kurt Wüthrich and colleagues determined the solution structure of a small proteinase inhibitor from bull seminal plasma using NOE distances, showing that structures could be solved without crystals.",
+      "people": [
+        "Kurt Wüthrich"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "Atomic structures of the ribosome",
+      "detail": "Crystal structures of the large ribosomal subunit of Haloarcula marismortui (Thomas Steitz, Peter Moore and colleagues) and the small subunit of Thermus thermophilus (Venki Ramakrishnan's and Ada Yonath's groups) showed that peptide-bond formation is catalysed by RNA.",
+      "people": [
+        "Thomas Steitz",
+        "Peter Moore",
+        "Venki Ramakrishnan",
+        "Ada Yonath"
+      ]
+    },
+    {
+      "year": 2013,
+      "title": "The resolution revolution in cryo-EM",
+      "detail": "Maofu Liao, Erhu Cao, David Julius and Yifan Cheng reported the 3.4 Å structure of the TRPV1 ion channel by single-particle cryo-EM, made possible by direct electron detectors and new image processing.",
+      "people": [
+        "Yifan Cheng",
+        "David Julius"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "Accurate structure prediction",
+      "detail": "John Jumper, Demis Hassabis and colleagues published AlphaFold2, which had predicted structures at close to experimental accuracy in the CASP14 assessment of 2020; predicted models for most known proteins followed in 2021–22.",
+      "people": [
+        "John Jumper",
+        "Demis Hassabis"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Protein Structure, 2nd ed.",
+      "authors": "Carl Branden and John Tooze",
+      "year": 1999,
+      "note": "The classic, beautifully illustrated introduction to secondary structure, motifs, folds and the families of DNA-binding, membrane and enzyme structures; the best companion to the first three chapters."
+    },
+    {
+      "title": "The Molecules of Life: Physical and Chemical Principles",
+      "authors": "John Kuriyan, Boyana Konforti and David Wemmer",
+      "year": 2013,
+      "note": "A physically minded text on the structure, energetics and dynamics of proteins and nucleic acids, strong on binding, folding, molecular motors and the statistical thermodynamics behind them."
+    },
+    {
+      "title": "Structure and Mechanism in Protein Science",
+      "authors": "Alan Fersht",
+      "year": 1999,
+      "note": "The standard account of folding kinetics, protein engineering and Φ-value analysis, and of how structure explains enzyme catalysis and binding."
+    },
+    {
+      "title": "Biomolecular Crystallography: Principles, Practice, and Application to Structural Biology",
+      "authors": "Bernhard Rupp",
+      "year": 2010,
+      "note": "A thorough modern guide to macromolecular crystallography, from crystallisation and diffraction to phasing, refinement and validation."
+    },
+    {
+      "title": "Crystallography Made Crystal Clear, 3rd ed.",
+      "authors": "Gale Rhodes",
+      "year": 2006,
+      "note": "A short, non-mathematical guide for users of crystal structures: what a map, a resolution and an R-factor mean, and how to judge a model."
+    },
+    {
+      "title": "Protein NMR Spectroscopy: Principles and Practice, 2nd ed.",
+      "authors": "John Cavanagh, Wayne J. Fairbrother, Arthur G. Palmer III, Mark Rance and Nicholas J. Skelton",
+      "year": 2007,
+      "note": "The standard graduate reference on the multidimensional NMR experiments used to assign spectra and determine protein structures and dynamics."
+    },
+    {
+      "title": "Three-Dimensional Electron Microscopy of Macromolecular Assemblies, 2nd ed.",
+      "authors": "Joachim Frank",
+      "year": 2006,
+      "note": "The foundational monograph on single-particle reconstruction by one of its inventors; read with recent reviews for direct detectors and maximum-likelihood processing."
+    },
+    {
+      "title": "Principles of Nucleic Acid Structure",
+      "authors": "Wolfram Saenger",
+      "year": 1984,
+      "note": "The detailed reference on the geometry of nucleotides, base pairing and the A, B and Z helices, and on DNA–drug and DNA–protein interactions."
+    }
+  ],
   "next": [
     "bioinformatics"
   ]
