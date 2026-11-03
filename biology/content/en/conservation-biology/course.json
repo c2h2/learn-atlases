@@ -7,11 +7,26 @@
   "order": 190,
   "tagline": "Biodiversity, extinction, small populations, conservation genetics, fragmentation, protected areas, invasions and climate change, restoration and policy",
   "summary": "Species are now being lost far faster than the background rate seen in the fossil record. This course applies ecology and evolutionary biology to the problem: measuring biodiversity, the drivers of extinction, the biology and genetics of small populations, habitat fragmentation, protected areas, invasive species and climate change, restoration, and the people and policies on which conservation depends.",
-  "overview": [],
+  "overview": [
+    "Conservation biology is the science of understanding and slowing the loss of biological diversity. It was named and organised as a discipline around 1980, when ecologists and population geneticists began to apply their theories to the question of how small, isolated populations of threatened species could be kept alive, and Michael Soulé described it as a 'crisis discipline' — one in which decisions often have to be made before the data are complete. Its subject matter is broad: the genes, species and ecosystems that make up biodiversity; the processes, from habitat destruction to climate change, that are reducing it; and the scientific basis for the protected areas, recovery programmes, restoration projects and international agreements through which societies try to protect it.",
+    "The course follows the logic of the problem. It begins by defining and measuring biodiversity and asking why it is valued, then sets the present wave of extinctions against the fossil record and analyses its drivers, together with the IUCN Red List that assesses extinction risk. Three chapters develop the population biology of rarity: the demographic and environmental chance events that threaten small populations and the population viability analyses that quantify them; the loss of genetic variation, inbreeding depression and genetic rescue; and habitat fragmentation, metapopulations and connectivity. The remaining chapters turn to responses — the design and effectiveness of protected areas, the management of invasive species and the consequences of climate change, ecological restoration and rewilding — and end with the economics, governance and policy on which all of these depend.",
+    "Conservation biology is hard because its questions are urgent, its systems are complex and its experiments are rarely possible: one cannot replicate the extinction of a species. Much of the evidence is therefore observational, models are indispensable, and good practice means stating assumptions, quantifying uncertainty and comparing outcomes with what would have happened without intervention. Each lesson pairs simple quantitative models — the birth–death process, the decay of heterozygosity, the Levins metapopulation, the reaction–diffusion spread of an invader, the bioeconomics of harvesting — with real cases and worked numerical examples. The course builds on the population and community ecology of the Ecology course and on drift and gene flow from the Evolution course; numbers that change from year to year, such as Red List counts and protected-area coverage, are dated to their sources."
+  ],
   "prerequisites": [
     "ecology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define biodiversity at the genetic, species and ecosystem levels, and calculate species-richness estimates, alpha, beta and gamma diversity and phylogenetic diversity from survey data.",
+    "Compare present extinction rates with background rates in the fossil record, and explain how habitat loss, overexploitation, invasive species, pollution and climate change drive extinction.",
+    "Apply the IUCN Red List criteria to classify the extinction risk of a species from data on its decline, range and population size.",
+    "Explain how demographic and environmental stochasticity threaten small populations, and use simple population viability models to estimate extinction and quasi-extinction probabilities.",
+    "Calculate the loss of heterozygosity and the effective population size of small populations, and evaluate the evidence for inbreeding depression and genetic rescue.",
+    "Analyse habitat fragmentation with metapopulation models, edge effects and connectivity, and predict the threshold of habitat loss beyond which a metapopulation cannot persist.",
+    "Use complementarity and irreplaceability to design a reserve network, and interpret counterfactual evidence on whether protected areas reduce habitat loss.",
+    "Describe the stages of biological invasion and the rate of spread of an invader, and predict how species distributions, phenology and communities respond to climate change.",
+    "Evaluate ecological restoration, reintroduction and rewilding projects against a reference ecosystem and the IUCN guidelines for conservation translocations.",
+    "Apply bioeconomic models of harvesting and the concepts of ecosystem services, discounting and payment for ecosystem services, and explain the role of international agreements such as CITES and the Kunming–Montreal Global Biodiversity Framework."
+  ],
   "chapters": [
     {
       "slug": "biodiversity",
@@ -88,7 +103,134 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1864,
+      "title": "Man and Nature",
+      "detail": "George Perkins Marsh's Man and Nature documented how deforestation, drainage and overgrazing had degraded the lands of the Mediterranean and argued that human action could destroy the conditions on which societies depend — an early scientific case for conservation.",
+      "people": [
+        "George Perkins Marsh"
+      ]
+    },
+    {
+      "year": 1872,
+      "title": "Yellowstone National Park",
+      "detail": "The United States Congress set aside Yellowstone as a 'public park or pleasuring-ground', usually counted as the first national park and the model for protected areas around the world.",
+      "people": []
+    },
+    {
+      "year": 1962,
+      "title": "Silent Spring",
+      "detail": "Rachel Carson's Silent Spring described the effects of DDT and other persistent pesticides on birds and other wildlife; Derek Ratcliffe's 1967 measurements of thinning eggshells in British raptors confirmed the mechanism, and DDT was banned for agricultural use in many countries in the 1970s.",
+      "people": [
+        "Rachel Carson",
+        "Derek Ratcliffe"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "The IUCN Red List",
+      "detail": "The International Union for Conservation of Nature began its assessments of threatened species, published as Red Data Books; the quantitative criteria used today were adopted in 1994 and revised in 2001.",
+      "people": [
+        "Peter Scott"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "CITES and the Endangered Species Act",
+      "detail": "The Convention on International Trade in Endangered Species of Wild Fauna and Flora was signed in Washington (in force 1975), and the United States passed the Endangered Species Act, two of the first legal instruments built around lists of threatened species.",
+      "people": []
+    },
+    {
+      "year": 1980,
+      "title": "Conservation biology founded",
+      "detail": "Michael Soulé and Bruce Wilcox edited Conservation Biology: An Evolutionary-Ecological Perspective, following the first international conference on conservation biology in San Diego (1978); in it Ian Franklin proposed the '50/500' rule for minimum effective population sizes. The Society for Conservation Biology was founded in 1985.",
+      "people": [
+        "Michael Soulé",
+        "Bruce Wilcox",
+        "Ian Franklin"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Biodiversity and hotspots",
+      "detail": "The proceedings of the 1986 National Forum on BioDiversity, edited by E. O. Wilson as Biodiversity, popularised the word; the same year Norman Myers identified ten tropical forest 'hotspots' of endemism and threat, later extended to 25 (2000) and now 36 regions.",
+      "people": [
+        "Edward O. Wilson",
+        "Norman Myers"
+      ]
+    },
+    {
+      "year": 1992,
+      "title": "The Convention on Biological Diversity",
+      "detail": "Opened for signature at the Earth Summit in Rio de Janeiro and in force from 1993, the CBD committed its parties to the conservation of biodiversity, the sustainable use of its components and the fair sharing of benefits from genetic resources.",
+      "people": []
+    },
+    {
+      "year": 2000,
+      "title": "Systematic conservation planning",
+      "detail": "Chris Margules and Bob Pressey's review in Nature set out the principles of complementarity, representation and persistence for choosing networks of reserves, implemented in planning software such as Marxan.",
+      "people": [
+        "Chris Margules",
+        "Robert Pressey"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "The Kunming–Montreal Global Biodiversity Framework",
+      "detail": "Adopted at the fifteenth Conference of the Parties to the CBD in Montreal, the framework set 23 targets for 2030, including the conservation of 30 % of land and of sea ('30 by 30') and the restoration of 30 % of degraded ecosystems; it followed the IPBES Global Assessment (2019), which estimated that around a million species are threatened with extinction.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Essentials of Conservation Biology (6th edition)",
+      "authors": "Richard B. Primack",
+      "year": 2014,
+      "note": "The standard undergraduate textbook: clear coverage of every topic in this course, with many case studies from around the world."
+    },
+    {
+      "title": "Principles of Conservation Biology (3rd edition)",
+      "authors": "Martha J. Groom, Gary K. Meffe and C. Ronald Carroll",
+      "year": 2006,
+      "note": "A deeper multi-author text with strong chapters on the history and values of conservation, economics and policy."
+    },
+    {
+      "title": "Conservation Biology for All",
+      "authors": "Navjot S. Sodhi and Paul R. Ehrlich (eds)",
+      "year": 2010,
+      "note": "Short chapters by leading researchers, written to be freely available to students worldwide; especially good on tropical conservation."
+    },
+    {
+      "title": "Introduction to Conservation Genetics (2nd edition)",
+      "authors": "Richard Frankham, Jonathan D. Ballou and David A. Briscoe",
+      "year": 2010,
+      "note": "The clearest treatment of genetic diversity, effective population size, inbreeding depression and genetic management, with worked problems."
+    },
+    {
+      "title": "Conservation and the Genomics of Populations (3rd edition)",
+      "authors": "Fred W. Allendorf, W. Chris Funk, Sally N. Aitken, Margaret Byrne and Gordon Luikart",
+      "year": 2022,
+      "note": "The advanced text on conservation genetics and genomics, from population genetic theory to genomic tools, units of conservation and genetic rescue."
+    },
+    {
+      "title": "Quantitative Conservation Biology: Theory and Practice of Population Viability Analysis",
+      "authors": "William F. Morris and Daniel F. Doak",
+      "year": 2002,
+      "note": "How to build and interpret population viability analyses, from count-based diffusion models to stage-structured matrices, with code."
+    },
+    {
+      "title": "Metapopulation Ecology",
+      "authors": "Ilkka Hanski",
+      "year": 1999,
+      "note": "The theory of populations in fragmented landscapes, from the Levins model to the incidence function, illustrated by the Glanville fritillary."
+    },
+    {
+      "title": "Ecology: From Individuals to Ecosystems (4th edition)",
+      "authors": "Michael Begon, Colin R. Townsend and John L. Harper",
+      "year": 2006,
+      "note": "The ecological background assumed throughout, including population dynamics, metapopulations, harvesting and biodiversity."
+    }
+  ],
   "next": []
 }
