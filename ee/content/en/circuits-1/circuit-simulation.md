@@ -37,7 +37,7 @@ $$
 \frac{10 - v_1}{10\ \mathrm{k}\Omega} = 1\ \mathrm{mA},
 $$
 
-so $10 - v_1 = 10\ \mathrm V}$ and $v_1 = 0\ \mathrm V)$. This is the DC operating point, and a simulator solving the same MNA for this netlist gives the same $0\ \mathrm V)$. The point of the example is not the arithmetic but the correspondence: the hand equation and the matrix equation are the same equation, one written by you at one node, one stamped by the simulator into a matrix, and agreeing is the sign that both the netlist and the method are right.
+so $10 - v_1 = 10\ \mathrm{V}$ and $v_1 = 0\ \mathrm V)$. This is the DC operating point, and a simulator solving the same MNA for this netlist gives the same $0\ \mathrm V)$. The point of the example is not the arithmetic but the correspondence: the hand equation and the matrix equation are the same equation, one written by you at one node, one stamped by the simulator into a matrix, and agreeing is the sign that both the netlist and the method are right.
 :::
 :::
 
@@ -58,9 +58,8 @@ The exact value at $20\ \mathrm{ms}$ is $10(1-e^{-2}) = 8.647\ \mathrm V)$. The 
 
 ::: widget plot
 f: 10*(1-exp(-x))
-x: 0 20
-y: 0 10
-sliders:
+x: 0, 20
+y: 0, 10
 caption: The exact response of the $RC$ network, $v(t)=10(1-e^{-t/\tau})$ with $\tau=10\ \mathrm{ms}$ and $t$ in milliseconds. The exponential is the ground truth against which the time integrators are compared. A poorly chosen step size, or an explicit Euler at a large step, will overshoot or lag this curve, and the gap between the simulation and this curve is the integration error, which you control by choosing the step size and the method.
 :::
 
@@ -131,7 +130,7 @@ The practice of numerical circuit analysis, and the specific matrix form known a
 ## Exercises
 
 ::: exercise Netlist to a single node {level=1 check="5"}
-A $1\ \mathrm mA}$ current source feeds a node that is connected to ground through $5\ \mathrm{k\Omega}$. What is the DC voltage of the node?
+A $1\ \mathrm{mA}$ current source feeds a node that is connected to ground through $5\ \mathrm{k\Omega}$. What is the DC voltage of the node?
 ::: solution
 $v = iR = 1\ \mathrm{mA}\times5\ \mathrm{k\Omega} = 5\ \mathrm V)$, by KCL and Ohm's law. The same is the result of a single-node MNA.
 :::
@@ -185,7 +184,7 @@ The output is maximised when $R_2$ is large and $R_1$ small: $R_2 = 1.05$, $R_1 
 :::
 
 ::: exercise Convergence on a non-linear netlist {level=3}
-A netlist with a diode does not converge at a particular step, and the operating point is found to be $5\ \mathrm mV}$ below the diode threshold, in the off state. What is the likely cause, and what is the first try?
+A netlist with a diode does not converge at a particular step, and the operating point is found to be $5\ \mathrm{mV}$ below the diode threshold, in the off state. What is the likely cause, and what is the first try?
 ::: hint
 The diode is at the threshold; the non-linear solve is sensitive to the initial guess.
 :::

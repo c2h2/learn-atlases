@@ -68,7 +68,7 @@ For $\zeta = 1$ the response is the fastest non-oscillatory approach to the fina
 ::: example Comparing the three regimes {#ex-compare}
 Using the same $L=10\ \mathrm{mH}$ and $C=10\ \mu\mathrm F)$, find the resistance for the critically damped case, and the two roots for an overdamped case with $R=120\ \Omega$.
 ::: solution
-The resonant frequency is fixed at $\omega_0 = 3162\ \mathrm{rad/s}$ by $L$ and $C$. Critical damping is at $\zeta=1$, so $\alpha = \omega_0$ and $R = 2\alpha L = 2\times3162\times0.01 = 63.25\ \Omega}$. For $R = 120\ \Omega$, $\alpha = 120/0.02 = 6000\ \mathrm{rad/s}$, which is larger than $\omega_0$, so the case is overdamped, and the two roots are
+The resonant frequency is fixed at $\omega_0 = 3162\ \mathrm{rad/s}$ by $L$ and $C$. Critical damping is at $\zeta=1$, so $\alpha = \omega_0$ and $R = 2\alpha L = 2\times3162\times0.01 = 63.25\ \Omega$. For $R = 120\ \Omega$, $\alpha = 120/0.02 = 6000\ \mathrm{rad/s}$, which is larger than $\omega_0$, so the case is overdamped, and the two roots are
 
 $$
 s_{1,2} = -6000 \pm \sqrt{6000^2 - 3162^2} = -6000 \pm 5099,
@@ -101,9 +101,8 @@ The resonant frequency is, as before, $\omega_0 = 1/\sqrt{LC} = 3162\ \mathrm{ra
 
 ::: widget plot
 f: 10*(1 - exp(-x)*cos(3*x) - (1/3)*exp(-x)*sin(3*x))
-x: 0 5
-y: 0 15
-sliders:
+x: 0, 5
+y: 0, 15
 caption: The underdamped step response of the series $RLC$ of the example, $v_C(t)=10\left[1-e^{-t}\cos(3t)-\tfrac13 e^{-t}\sin(3t)\right]$ with $t$ in milliseconds. The response overshoots the $10\ \mathrm V)$ final value to about $13.5\ \mathrm V)$ at $1.05\ \mathrm{ms}$, then rings with a decaying envelope of time constant $1\ \mathrm{ms}$, settling to $10\ \mathrm V)$. The oscillation and the envelope are the two time scales of the underdamped response.
 :::
 

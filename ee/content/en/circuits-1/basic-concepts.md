@@ -85,33 +85,32 @@ For any element you may draw the current arrow either way and mark the voltage p
 A resistor is the everyday absorber, and a battery the everyday deliverer. Sizing and interrogating each of them is how you build a feel for realistic magnitudes.
 
 ::: example Power in a resistor {#ex-resistor}
-A $4.7\ \mathrm{k\Omega}$ resistor has $5\ \mathrm V}$ across it. Find the current, the power it dissipates as heat, and the energy released in five minutes.
+A $4.7\ \mathrm{k\Omega}$ resistor has $5\ \mathrm{V}$ across it. Find the current, the power it dissipates as heat, and the energy released in five minutes.
 ::: solution
 By Ohm's law the current is $i = v/R = 5/4700 = 1.064\times10^{-3}\ \mathrm A = 1.064\ \mathrm{mA}$. The power is $p = v^2/R = 25/4700 = 5.32\ \mathrm{mW}$, equivalently $p=vi$. Energy over $t=300\ \mathrm s$ is $E = p\,t = 5.32\times10^{-3}\times300 = 1.595\ \mathrm J}. Notice that the power is positive, which is exactly what the passive convention predicts for an element that turns electrical energy into heat.
 :::
 :::
 
 ::: example Energy delivered by a battery {#ex-battery}
-A $12\ \mathrm V}$ car battery is being drawn at $2\ \mathrm A}$ for $5$ hours. Find the power it delivers and the total energy it expends.
+A $12\ \mathrm{V}$ car battery is being drawn at $2\ \mathrm{A}$ for $5$ hours. Find the power it delivers and the total energy it expends.
 ::: solution
-Power is the product, $p = v\,i = 12\times2 = 24\ \mathrm W}$. Over $5\times3600 = 18000\ \mathrm s}$ the energy is $E = p\,t = 24\times18000 = 4.32\times10^{5}\ \mathrm J = 432\ \mathrm{kJ}$. In the common unit of ampere-hours the charge delivered is $2\ \mathrm A\times5\ \mathrm h = 10\ \mathrm{Ah}$, and since energy is charge times voltage, $E = 10\ \mathrm{Ah}\times12\ \mathrm V = 120\ \mathrm{Wh}$; and $432\ \mathrm{kJ}/3600 = 120\ \mathrm{Wh}$, so the two unit systems agree. These cross-checks are how you confirm an answer is right and not merely plausible.
+Power is the product, $p = v\,i = 12\times2 = 24\ \mathrm{W}$. Over $5\times3600 = 18000\ \mathrm{s}$ the energy is $E = p\,t = 24\times18000 = 4.32\times10^{5}\ \mathrm J = 432\ \mathrm{kJ}$. In the common unit of ampere-hours the charge delivered is $2\ \mathrm A\times5\ \mathrm h = 10\ \mathrm{Ah}$, and since energy is charge times voltage, $E = 10\ \mathrm{Ah}\times12\ \mathrm V = 120\ \mathrm{Wh}$; and $432\ \mathrm{kJ}/3600 = 120\ \mathrm{Wh}$, so the two unit systems agree. These cross-checks are how you confirm an answer is right and not merely plausible.
 :::
 :::
 
 ::: widget plot
-f: 8*t + 2
-x: 0 1.5
-y: 0 15
-sliders: t
-caption: The current $i(t)=8t+2\ \mathrm A}$ from the worked example. It rises linearly with time; the slope $8\ \mathrm{A/s}$ is the rate at which stored charge is changing. Move the slider to place a marker and read both the current and the time from the axes.
+f: 8*x + 2
+x: 0, 1.5
+y: 0, 15
+caption: The current $i(t)=8t+2\ \mathrm{A}$ from the worked example. It rises linearly with time; the slope $8\ \mathrm{A/s}$ is the rate at which stored charge is changing. Move the slider to place a marker and read both the current and the time from the axes.
 :::
 
 Because $p=v\,i$, a design task is usually just an algebraic rearrangement. The trick is to identify which quantity is given and which is wanted, and to keep the reference directions straight.
 
 ::: example Choosing a resistance to meet a current {#ex-design}
-You need $0.5\ \mathrm A}$ to flow from a $12\ \mathrm V}$ supply through a single resistor. Which resistance is required, and at what continuous power rating should the resistor be chosen?
+You need $0.5\ \mathrm{A}$ to flow from a $12\ \mathrm{V}$ supply through a single resistor. Which resistance is required, and at what continuous power rating should the resistor be chosen?
 ::: solution
-Rearrange the current law: $R = v/i = 12/0.5 = 24\ \Omega$. The continuous power that resistor must absorb is $p = v\,i = 12\times0.5 = 6\ \mathrm W}$. In practice you select a $24\ \Omega$ body with a rating *above* $6\ \mathrm W}$, say $10\ \mathrm W}$, because running a component at its limit pushes its temperature to the upper edge of the rated range and shortens life.
+Rearrange the current law: $R = v/i = 12/0.5 = 24\ \Omega$. The continuous power that resistor must absorb is $p = v\,i = 12\times0.5 = 6\ \mathrm{W}$. In practice you select a $24\ \Omega$ body with a rating *above* $6\ \mathrm{W}$, say $10\ \mathrm{W}$, because running a component at its limit pushes its temperature to the upper edge of the rated range and shortens life.
 :::
 :::
 
@@ -120,13 +119,13 @@ Power is a rate of energy transfer, not an amount, and a component's power ratin
 :::
 
 ::: quiz
-An element is drawn with the current entering the $+$ terminal, $v=4\ \mathrm V}$ and $i=3\ \mathrm A}$. Is it absorbing or delivering power, and how much?
-- [x] Absorbing $12\ \mathrm W}$
-- [ ] Delivering $12\ \mathrm W}$
-- [ ] Absorbing $7\ \mathrm W}$
-- [ ] Delivering $7\ \mathrm W}$
+An element is drawn with the current entering the $+$ terminal, $v=4\ \mathrm{V}$ and $i=3\ \mathrm{A}$. Is it absorbing or delivering power, and how much?
+- [x] Absorbing $12\ \mathrm{W}$
+- [ ] Delivering $12\ \mathrm{W}$
+- [ ] Absorbing $7\ \mathrm{W}$
+- [ ] Delivering $7\ \mathrm{W}$
 ::: solution
-Under the passive sign convention (current entering the $+$ terminal) the absorbed power is $p=vi=4\times3=12\ \mathrm W}$. Positive means absorbing, so the first option is correct. Had the current entered the $-$ terminal instead, the same numbers would mean it is delivering.
+Under the passive sign convention (current entering the $+$ terminal) the absorbed power is $p=vi=4\times3=12\ \mathrm{W}$. Positive means absorbing, so the first option is correct. Had the current entered the $-$ terminal instead, the same numbers would mean it is delivering.
 :::
 :::
 
@@ -173,21 +172,21 @@ The language of this lesson was assembled in the early nineteenth century and th
 ::: exercise Charge from a steady current {level=1 check="45"}
 A conductor carries a steady $3\ \mathrm A$. How many coulombs cross a section in $15\ \mathrm s$?
 ::: solution
-$q = i\,t = 3\times15 = 45\ \mathrm C}$.
+$q = i\,t = 3\times15 = 45\ \mathrm{C}$.
 :::
 :::
 
 ::: exercise Current from a charge pulse {level=1 check="5"}
-A charge of $10\ \mathrm C}$ passes a surface in $2\ \mathrm s}$ at a constant rate. What is the current?
+A charge of $10\ \mathrm{C}$ passes a surface in $2\ \mathrm{s}$ at a constant rate. What is the current?
 ::: solution
-$i = q/t = 10/2 = 5\ \mathrm A}$.
+$i = q/t = 10/2 = 5\ \mathrm{A}$.
 :::
 :::
 
 ::: exercise Power from voltage and current {level=1 check="9"}
-An element has $9\ \mathrm V}$ across it and carries $1\ \mathrm A}$ into the $+$ terminal. What power does it absorb?
+An element has $9\ \mathrm{V}$ across it and carries $1\ \mathrm{A}$ into the $+$ terminal. What power does it absorb?
 ::: solution
-By the passive sign convention $p = vi = 9\times1 = 9\ \mathrm W}$.
+By the passive sign convention $p = vi = 9\times1 = 9\ \mathrm{W}$.
 :::
 :::
 
@@ -202,17 +201,17 @@ The labelled conventional current is negative. That only tells you the charge fl
 :::
 
 ::: exercise Energy of a small load {level=2 check="1080"}
-A device draws a constant $100\ \mathrm{mA}$ at $3\ \mathrm V}$ for one hour. How many joules does it consume?
+A device draws a constant $100\ \mathrm{mA}$ at $3\ \mathrm{V}$ for one hour. How many joules does it consume?
 ::: hint
 Find the power first, then multiply by the time in whole seconds.
 :::
 ::: solution
-Power $p = vi = 3\times0.1 = 0.3\ \mathrm W}$. One hour is $3600\ \mathrm s}$. Energy $= 0.3\times3600 = 1080\ \mathrm J}$. If you obtain $108\ \mathrm J}$ you have used minutes; always convert to seconds.
+Power $p = vi = 3\times0.1 = 0.3\ \mathrm{W}$. One hour is $3600\ \mathrm{s}$. Energy $= 0.3\times3600 = 1080\ \mathrm{J}$. If you obtain $108\ \mathrm{J}$ you have used minutes; always convert to seconds.
 :::
 :::
 
 ::: exercise Resistor current and power {level=2}
-A $2\ \mathrm{k\Omega}$ resistor has $4\ \mathrm V}$ across it. Find the current in milliamperes and the power in milliwatts.
+A $2\ \mathrm{k\Omega}$ resistor has $4\ \mathrm{V}$ across it. Find the current in milliamperes and the power in milliwatts.
 ::: hint
 Use $i=v/R$, then $p=v i$ or $p=v^2/R$.
 :::
@@ -222,17 +221,17 @@ $i = 4/2000 = 2.0\ \mathrm{mA}$. Power $p = v^2/R = 16/2000 = 8\ \mathrm{mW}$.
 :::
 
 ::: exercise A two-element loop {level=2}
-A source and a resistor form a single loop. The source is $10\ \mathrm V}$ with its upper terminal marked $+$, and the current is $2\ \mathrm A}$ clockwise. Assign the power of each element and state which absorbs and which delivers.
+A source and a resistor form a single loop. The source is $10\ \mathrm{V}$ with its upper terminal marked $+$, and the current is $2\ \mathrm{A}$ clockwise. Assign the power of each element and state which absorbs and which delivers.
 ::: hint
 Apply the passive sign convention to each element; the two powers must sum to zero.
 :::
 ::: solution
-The source drives current out of its $+$ terminal, so its absorbed power under the passive convention is $p = -v i = -20\ \mathrm W}$, i.e. it delivers $20\ \mathrm W}$. The resistor absorbs $+20\ \mathrm W}$. Delivered equals absorbed, as conservation requires.
+The source drives current out of its $+$ terminal, so its absorbed power under the passive convention is $p = -v i = -20\ \mathrm{W}$, i.e. it delivers $20\ \mathrm{W}$. The resistor absorbs $+20\ \mathrm{W}$. Delivered equals absorbed, as conservation requires.
 :::
 :::
 
 ::: exercise Estimating drift velocity {level=3}
-Copper has a free-electron density $n=8.5\times10^{28}\ \mathrm{m}^{-3}$ and a wire cross-section $A=10^{-6}\ \mathrm{m^2}$. If it carries $1\ \mathrm A}$, estimate the electron drift speed.
+Copper has a free-electron density $n=8.5\times10^{28}\ \mathrm{m}^{-3}$ and a wire cross-section $A=10^{-6}\ \mathrm{m^2}$. If it carries $1\ \mathrm{A}$, estimate the electron drift speed.
 ::: hint
 Use $i = n q A v_d$ with $q$ the magnitude of the electron charge.
 :::
@@ -242,11 +241,11 @@ Re-arrange to $v_d = i/(n q A) = 1/(8.5\times10^{28}\times1.602\times10^{-19}\ti
 :::
 
 ::: exercise Delivering or absorbing, with a negative voltage {level=3 check="-4"}
-An element has $v=-2\ \mathrm V}$ with $i=2\ \mathrm A}$ entering the $+$ terminal. Using the passive sign convention, what is the absorbed power, and is the element absorbing or delivering?
+An element has $v=-2\ \mathrm{V}$ with $i=2\ \mathrm{A}$ entering the $+$ terminal. Using the passive sign convention, what is the absorbed power, and is the element absorbing or delivering?
 ::: hint
 Compute $p=vi$ directly, keeping both signs.
 :::
 ::: solution
-$p = vi = (-2)(2) = -4\ \mathrm W}$. A negative absorbed power means the element is in fact delivering $4\ \mathrm W}$. The check value $-4$ records the signed absorbed power.
+$p = vi = (-2)(2) = -4\ \mathrm{W}$. A negative absorbed power means the element is in fact delivering $4\ \mathrm{W}$. The check value $-4$ records the signed absorbed power.
 :::
 :::

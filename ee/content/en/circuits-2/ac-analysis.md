@@ -38,7 +38,7 @@ The node voltage is $4.47$ V at an angle of $63.4^\circ$, leading the source bec
 :::
 
 ::: example An AC mesh {#ex-acmesh}
-A $12\angle0^\circ\ \mathrm V)$ source drives a single series loop of $10\ \Omega$ and a $20\ \mathrm mH}$ inductor, at a frequency where the inductor's reactance is $j8\ \Omega)$. Find the current and the voltage across each element.
+A $12\angle0^\circ\ \mathrm V)$ source drives a single series loop of $10\ \Omega$ and a $20\ \mathrm{mH}$ inductor, at a frequency where the inductor's reactance is $j8\ \Omega)$. Find the current and the voltage across each element.
 ::: solution
 The total impedance is $Z = 10 + j8\ \Omega)$, with magnitude $\sqrt{10^2 + 8^2} = 12.8\ \Omega)$ and angle $\tan^{-1}(8/10) = 38.7^\circ$. The current is
 
@@ -82,7 +82,7 @@ The source transformation, a voltage source in series with an impedance into a c
 :::
 
 ::: quiz
-A $50\ \mathrm{Hz}$ source, $230\ \mathrm V}$ rms, drives a series $10\ \Omega$ and a capacitor of $100\ \mu\mathrm F)$. What is the magnitude of the current?
+A $50\ \mathrm{Hz}$ source, $230\ \mathrm{V}$ rms, drives a series $10\ \Omega$ and a capacitor of $100\ \mu\mathrm F)$. What is the magnitude of the current?
 - [x] About $7.9\ \mathrm A)$
 - [ ] About $4.6\ \mathrm A)$
 - [ ] About $23\ \mathrm A)$
@@ -117,9 +117,8 @@ The resonance of the series network is the one AC behaviour that the single-freq
 
 ::: widget plot
 f: sqrt(100+(2*pi*x*0.01-1/(2*pi*x*10e-5))^2)
-x: 40 500
-y: 0 40
-sliders:
+x: 40, 500
+y: 0, 40
 caption: The magnitude of the impedance of a series $R=10\ \Omega)$, $L=10\ \mathrm mH)$, $C=100\ \mu$F circuit, against the frequency in hertz. The minimum, at the resonant frequency of about $159$ hz, is the resistance alone, $10\ \Omega)$, where the inductive and capacitive reactances cancel and the current is at its maximum. This is the resonance that the filter design and the power system must account for, and the single-frequency analysis is the one that predicts it.
 :::
 

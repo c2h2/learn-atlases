@@ -137,9 +137,8 @@ $$
 
 ::: widget plot
 f: (4/(1.3333+x))^2*x
-x: 0 5
-y: 0 3.4
-sliders:
+x: 0, 5
+y: 0, 3.4
 caption: 电压$4\ \mathrm V$、电阻$1.333\ \mathrm{k\Omega}$的戴维南电源输出给负载$R_L$的功率$P(R_L)=(V_{\text{th}}/(R_{\text{th}}+R_L))^2 R_L$，其中$R_L$以千欧计、功率以毫瓦计。曲线在$R_L=R_{\text{th}}=1.333\ \mathrm{k\Omega}$处达到峰值，最大功率为$3\ \mathrm{mW}$，效率恰为一半——这正是匹配的标志。
 :::
 

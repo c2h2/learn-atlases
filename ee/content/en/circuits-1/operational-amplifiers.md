@@ -31,9 +31,9 @@ The minus sign means the output is inverted. The gain depends only on the ratio 
 :::
 
 ::: example Inverting gain {#ex-inverting}
-An inverting amplifier has $R_1 = 10\ \mathrm{k\Omega}$ and $R_f = 40\ \mathrm{k\Omega}$. What is the output for a $0.5\ \mathrm V}$ input, and what is the feedback current?
+An inverting amplifier has $R_1 = 10\ \mathrm{k\Omega}$ and $R_f = 40\ \mathrm{k\Omega}$. What is the output for a $0.5\ \mathrm{V}$ input, and what is the feedback current?
 ::: solution
-The gain is $-R_f/R_1 = -4$. The output is $-4\times0.5 = -2\ \mathrm V}$. The current through $R_1$ is $0.5/10\ \mathrm{k\Omega} = 50\ \mu\mathrm A}$, and because no current enters the inverting node, it all flows through $R_f$, giving $v_{\text{out}} = -50\ \mu\mathrm A\times40\ \mathrm{k\Omega} = -2\ \mathrm V}$, the same result. The virtual ground at the inverting node is why the analysis is so simple: the input sees only $R_1$ to ground, independent of the feedback.
+The gain is $-R_f/R_1 = -4$. The output is $-4\times0.5 = -2\ \mathrm{V}$. The current through $R_1$ is $0.5/10\ \mathrm{k\Omega} = 50\ \mu\mathrm{A}$, and because no current enters the inverting node, it all flows through $R_f$, giving $v_{\text{out}} = -50\ \mu\mathrm A\times40\ \mathrm{k\Omega} = -2\ \mathrm{V}$, the same result. The virtual ground at the inverting node is why the analysis is so simple: the input sees only $R_1$ to ground, independent of the feedback.
 :::
 :::
 
@@ -48,9 +48,9 @@ with $R_f$ the feedback resistor. The output is in phase with the input and the 
 :::
 
 ::: example Non-inverting gain {#ex-noninverting}
-A non-inverting amplifier has $R_1 = 10\ \mathrm{k\Omega}$ and $R_f = 40\ \mathrm{k\Omega}$. What gain does it give, and what is the feedback current for a $1\ \mathrm V}$ input?
+A non-inverting amplifier has $R_1 = 10\ \mathrm{k\Omega}$ and $R_f = 40\ \mathrm{k\Omega}$. What gain does it give, and what is the feedback current for a $1\ \mathrm{V}$ input?
 ::: solution
-The gain is $1+R_f/R_1 = 1+4 = 5$. With a $1\ \mathrm V}$ input, the output is $5\ \mathrm V}$. The inverting node is at $1\ \mathrm V}$ by the virtual short, so the current through $R_1$ (from the inverting node to ground) is $1/10\ \mathrm{k\Omega} = 100\ \mu\mathrm A}$, and this current flows from the output through $R_f$: $5 - 1 = 4\ \mathrm V}$ across $40\ \mathrm{k\Omega}$ is $100\ \mu\mathrm A}$, consistent. The input impedance of this configuration is the infinite input resistance of the op-amp, far higher than the inverting case, which is the usual reason to choose it.
+The gain is $1+R_f/R_1 = 1+4 = 5$. With a $1\ \mathrm{V}$ input, the output is $5\ \mathrm{V}$. The inverting node is at $1\ \mathrm{V}$ by the virtual short, so the current through $R_1$ (from the inverting node to ground) is $1/10\ \mathrm{k\Omega} = 100\ \mu\mathrm{A}$, and this current flows from the output through $R_f$: $5 - 1 = 4\ \mathrm{V}$ across $40\ \mathrm{k\Omega}$ is $100\ \mu\mathrm{A}$, consistent. The input impedance of this configuration is the infinite input resistance of the op-amp, far higher than the inverting case, which is the usual reason to choose it.
 :::
 :::
 
@@ -77,9 +77,9 @@ The inverting node is a virtual ground, so the input currents do not interact an
 :::
 
 ::: example Weighted sum {#ex-summer}
-A summing amplifier has $R_f = 20\ \mathrm{k\Omega}$, and two inputs, $v_1 = 1\ \mathrm V}$ through $R_1 = 10\ \mathrm{k\Omega}$ and $v_2 = 1\ \mathrm V}$ through $R_2 = 20\ \mathrm{k\Omega}$. What is the output?
+A summing amplifier has $R_f = 20\ \mathrm{k\Omega}$, and two inputs, $v_1 = 1\ \mathrm{V}$ through $R_1 = 10\ \mathrm{k\Omega}$ and $v_2 = 1\ \mathrm{V}$ through $R_2 = 20\ \mathrm{k\Omega}$. What is the output?
 ::: solution
-Both inputs are at a virtual ground, so their currents are $v_1/R_1 = 1/10\ \mathrm{k\Omega} = 100\ \mu\mathrm A}$ and $v_2/R_2 = 1/20\ \mathrm{k\Omega} = 50\ \mu\mathrm A}$. The sum is $150\ \mu\mathrm A}$ through $R_f$, giving $v_{\text{out}} = -150\ \mu\mathrm A\times20\ \mathrm{k\Omega} = -3\ \mathrm V}$. Notice that the two equal inputs did not give equal contributions, because their resistors are different; the resistor sets the weight of each input, which is the whole design freedom of a summer.
+Both inputs are at a virtual ground, so their currents are $v_1/R_1 = 1/10\ \mathrm{k\Omega} = 100\ \mu\mathrm{A}$ and $v_2/R_2 = 1/20\ \mathrm{k\Omega} = 50\ \mu\mathrm{A}$. The sum is $150\ \mu\mathrm{A}$ through $R_f$, giving $v_{\text{out}} = -150\ \mu\mathrm A\times20\ \mathrm{k\Omega} = -3\ \mathrm{V}$. Notice that the two equal inputs did not give equal contributions, because their resistors are different; the resistor sets the weight of each input, which is the whole design freedom of a summer.
 :::
 :::
 
@@ -96,9 +96,9 @@ and reduces to the clean difference $v_{\text{out}} = (R_f/R_1)(v_+ - v_-)$ when
 :::
 
 ::: example Difference of two signals {#ex-diff}
-A difference amplifier has $R_1 = 10\ \mathrm{k\Omega}$, $R_f = 20\ \mathrm{k\Omega}$, and the matching pair $R_2 = 10\ \mathrm{k\Omega}$, $R_g = 20\ \mathrm{k\Omega}$. With $v_+ = 3\ \mathrm V}$ and $v_- = 1\ \mathrm V}$, what is the output?
+A difference amplifier has $R_1 = 10\ \mathrm{k\Omega}$, $R_f = 20\ \mathrm{k\Omega}$, and the matching pair $R_2 = 10\ \mathrm{k\Omega}$, $R_g = 20\ \mathrm{k\Omega}$. With $v_+ = 3\ \mathrm{V}$ and $v_- = 1\ \mathrm{V}$, what is the output?
 ::: solution
-The resistor ratios match, $R_f/R_1 = 20/10 = 2$ and $R_g/R_2 = 20/10 = 2$, so the circuit is an ideal differencing amplifier with gain two on the difference. The output is $2\times(3-1) = 4\ \mathrm V}$. This configuration rejects the common part of the two inputs and amplifies only their difference, which is exactly what is wanted when a signal rides on a common mode that you want to remove.
+The resistor ratios match, $R_f/R_1 = 20/10 = 2$ and $R_g/R_2 = 20/10 = 2$, so the circuit is an ideal differencing amplifier with gain two on the difference. The output is $2\times(3-1) = 4\ \mathrm{V}$. This configuration rejects the common part of the two inputs and amplifies only their difference, which is exactly what is wanted when a signal rides on a common mode that you want to remove.
 :::
 :::
 
@@ -117,19 +117,18 @@ the negative integral of the input, scaled by $1/RC$. This is the analog circuit
 :::
 
 ::: example Integrating a step {#ex-int}
-An integrating amplifier has $R = 10\ \mathrm{k\Omega}$ and $C = 1\ \mu\mathrm F}$. If a $1\ \mathrm V}$ step is applied for $10\ \mathrm{ms}$, what is the change in the output?
+An integrating amplifier has $R = 10\ \mathrm{k\Omega}$ and $C = 1\ \mu\mathrm{F}$. If a $1\ \mathrm{V}$ step is applied for $10\ \mathrm{ms}$, what is the change in the output?
 ::: solution
-The time constant is $RC = 10\ \mathrm{k\Omega}\times1\ \mu\mathrm F = 10\ \mathrm{ms}$. A constant input drives a constant current $v_{\text{in}}/R = 1/10\ \mathrm{k\Omega} = 100\ \mu\mathrm A}$ into the capacitor, and the capacitor voltage changes at a constant rate $i/C = 100\ \mu\mathrm A/1\ \mu\mathrm F = 100\ \mathrm V/s}$. Over $10\ \mathrm{ms}$ that is a change of $100\times0.01 = 1\ \mathrm V}$, negative by the inverting convention, so the output falls by $1\ \mathrm V}$. The linear ramp in response to a step, and the straight-line response, is the signature of the integrator, and it is the same mathematics that governs the first-order response of the next lessons.
+The time constant is $RC = 10\ \mathrm{k\Omega}\times1\ \mu\mathrm F = 10\ \mathrm{ms}$. A constant input drives a constant current $v_{\text{in}}/R = 1/10\ \mathrm{k\Omega} = 100\ \mu\mathrm{A}$ into the capacitor, and the capacitor voltage changes at a constant rate $i/C = 100\ \mu\mathrm A/1\ \mu\mathrm F = 100\ \mathrm{V/s}$. Over $10\ \mathrm{ms}$ that is a change of $100\times0.01 = 1\ \mathrm{V}$, negative by the inverting convention, so the output falls by $1\ \mathrm{V}$. The linear ramp in response to a step, and the straight-line response, is the signature of the integrator, and it is the same mathematics that governs the first-order response of the next lessons.
 :::
 :::
 
 The differentiator, the dual, has a capacitor in series with the input and a resistor in the feedback, and it outputs the scaled derivative of the input. It is the same device run with the two elements swapped, and it is the configuration that produces the sharp edges and the noise sensitivity that make it a harder circuit to use cleanly, because a derivative amplifies the high-frequency content of any real signal.
 
 ::: widget plot
-f: -4*v
-x: -1 1
-y: -5 5
-sliders:
+f: -4*x
+x: -1, 1
+y: -5, 5
 caption: The input-output relation of the inverting amplifier of the example, $v_{\text{out}} = -4\,v_{\text{in}}$. The straight line of negative slope is the signature of the linear, inverting gain: double the input, double the output, and the sign reverses. The line passes through the origin because there is no offset in the ideal model.
 :::
 
@@ -203,7 +202,7 @@ A summing amplifier has $R_f=30\ \mathrm{k\Omega}$ and three inputs, each $1\ \m
 The inverting node is a virtual ground; sum the input currents and multiply by $R_f$.
 :::
 ::: solution
-Each input contributes $1/10\ \mathrm{k\Omega} = 100\ \mu\mathrm A}$, and the sum is $300\ \mu\mathrm A)$. The output is $-300\ \mu\mathrm A\times30\ \mathrm{k\Omega} = -9\ \mathrm V)$. The check field records the gain per input, which is $-R_f/R = -3$.
+Each input contributes $1/10\ \mathrm{k\Omega} = 100\ \mu\mathrm{A}$, and the sum is $300\ \mu\mathrm A)$. The output is $-300\ \mu\mathrm A\times30\ \mathrm{k\Omega} = -9\ \mathrm V)$. The check field records the gain per input, which is $-R_f/R = -3$.
 :::
 :::
 

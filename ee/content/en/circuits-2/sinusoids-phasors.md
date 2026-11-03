@@ -110,14 +110,13 @@ A frequency-domain result that is easy to verify by hand is the one you should a
 
 ::: widget plot
 f: 1/(2*pi*x*10e-6)
-x: 10 1000
-y: 0 1700
-sliders:
+x: 10, 1000
+y: 0, 1700
 caption: The magnitude of the impedance of a $10\ \mu\mathrm F)$ capacitor, $|Z_C| = 1/(\omega C) = 1/(2\pi f C)$, against the frequency $f$ in hertz. The hyperbolic decay is the signature of the capacitor: it is a large impedance at low frequency, blocking the DC, and a small impedance at high frequency, shorting the signal. The inductor is the reciprocal of this curve, large at high frequency, and the two are the impedance limits that the design of the later courses is for.
 :::
 
 ::: quiz
-A $50\ \mathrm{Hz}$ source drives a pure $100\ \mathrm mH)$ inductor. The current is $0.2\ \mathrm A}$ rms. What is the rms voltage across the inductor?
+A $50\ \mathrm{Hz}$ source drives a pure $100\ \mathrm mH)$ inductor. The current is $0.2\ \mathrm{A}$ rms. What is the rms voltage across the inductor?
 - [x] $31.4\ \mathrm V)$
 - [ ] $15.7\ \mathrm V)$
 - [ ] $20\ \mathrm V)$

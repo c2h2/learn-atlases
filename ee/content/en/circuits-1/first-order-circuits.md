@@ -35,7 +35,7 @@ $$
 v_C(t) = 10\left(1 - e^{-t/\tau}\right).
 $$
 
-At $t = 0.5\ \mathrm{ms}$, $t/\tau = 0.5$, and $v_C = 10(1 - e^{-0.5}) = 10(1-0.6065) = 3.93\ \mathrm V}$. The current at the same instant is $i = C\,\mathrm dv_C/\mathrm dt = (10/RC)e^{-t/\tau} = (10/1\ \mathrm{ms})e^{-0.5} = 10\ \mathrm{kA}\times0.6065 = 10\ \mathrm k\Omega$ gives $i = 10/10\ \mathrm{k\Omega}\times0.6065 = 0.607\ \mathrm{mA}$. At $t=0$ the current is $10/10\ \mathrm{k\Omega}=1\ \mathrm{mA}$, the full source current, and at $t\to\infty$ it is zero, with the capacitor fully charged.
+At $t = 0.5\ \mathrm{ms}$, $t/\tau = 0.5$, and $v_C = 10(1 - e^{-0.5}) = 10(1-0.6065) = 3.93\ \mathrm{V}$. The current at the same instant is $i = C\,\mathrm dv_C/\mathrm dt = (10/RC)e^{-t/\tau} = (10/1\ \mathrm{ms})e^{-0.5} = 10\ \mathrm{kA}\times0.6065 = 10\ \mathrm k\Omega$ gives $i = 10/10\ \mathrm{k\Omega}\times0.6065 = 0.607\ \mathrm{mA}$. At $t=0$ the current is $10/10\ \mathrm{k\Omega}=1\ \mathrm{mA}$, the full source current, and at $t\to\infty$ it is zero, with the capacitor fully charged.
 :::
 :::
 
@@ -69,7 +69,7 @@ rising to the steady current $V/R$. Disconnecting the source, the current decays
 :::
 
 ::: example Inductor current rise {#ex-rl}
-A $20\ \mathrm{mH}$ inductor is connected through a $100\ \Omega$ resistor to a $12\ \mathrm V}$ source, initially carrying no current. Find the current $100\ \mu\mathrm s}$ later and the time constant.
+A $20\ \mathrm{mH}$ inductor is connected through a $100\ \Omega$ resistor to a $12\ \mathrm{V}$ source, initially carrying no current. Find the current $100\ \mu\mathrm{s}$ later and the time constant.
 ::: solution
 The time constant is $\tau = L/R = 20\times10^{-3}/100 = 0.2\ \mathrm{ms} = 200\ \mu\mathrm s)$. The steady current is $V/R = 12/100 = 0.12\ \mathrm A)$. At $t = 100\ \mu\mathrm s)$, $t/\tau = 0.5$, so $i_L = 0.12(1 - e^{-0.5}) = 0.12\times0.3935 = 0.0472\ \mathrm A)$. At $t=0$ the current is zero and the full source voltage is across the inductor, and as the current rises the inductor voltage falls, the two sharing the $12\ \mathrm V)$ with the resistor. By $5\tau = 1\ \mathrm{ms}$ the current is within $1\%$ of $0.12\ \mathrm A)$.
 :::
@@ -116,10 +116,9 @@ with $x(0)$ set by the initial state, $x(\infty)$ by the DC steady state, and $\
 This is the most practical result in the course, and it is the one to reach for whenever a single capacitor or inductor appears with some resistors and a DC source. The method is mechanical and always works, and it replaces a differential equation by three algebraic steps. The differential equation is still there, and it is what the formula comes from, but for the first-order case you never need to solve it by hand, because the form of the answer is known and only the constants need finding. This is the same pattern that will repeat, in a richer form, in every subsequent course, from control to power electronics to signal processing.
 
 ::: widget plot
-f: 10*(1-exp(-t))
-x: 0 5
-y: 0 10
-sliders:
+f: 10*(1-exp(-x))
+x: 0, 5
+y: 0, 10
 caption: The charging of the $100\ \mu\mathrm F)$ capacitor toward $10\ \mathrm V)$, $v_C(t)=10(1-e^{-t/\tau})$ with $\tau=1\ \mathrm{ms}$ and $t$ in milliseconds. The curve rises from zero and approaches the source value asymptotically, with about $63\%$ of the way covered in one time constant and $99\%$ in the neighbourhood of five. The exponential is the signature of every first-order response.
 :::
 

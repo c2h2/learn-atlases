@@ -23,9 +23,9 @@ The capacitor's impedance-like behaviour follows from this: with a constant volt
 The law has two signatures you will see constantly. First, a capacitor is an **open circuit** to a steady DC: a constant voltage produces no current, so in a DC steady state a capacitor carries no current and the network can be solved by treating it as an open. Second, a rapidly changing voltage drives a large current, so a capacitor passes high-frequency signals and blocks low-frequency ones, the basis of coupling and bypass. Both signatures are the same equation, $i=C\,\mathrm dv/\mathrm dt$, read in the two limits.
 
 ::: example Current from a changing voltage {#ex-cap}
-A $100\ \mu\mathrm F)$ capacitor's voltage rises from $0$ to $5\ \mathrm V}$ in $10\ \mathrm{ms}$. What is the average current, and how much energy is stored?
+A $100\ \mu\mathrm F)$ capacitor's voltage rises from $0$ to $5\ \mathrm{V}$ in $10\ \mathrm{ms}$. What is the average current, and how much energy is stored?
 ::: solution
-With a uniform rise, $\mathrm dv/\mathrm dt = 5/0.01 = 500\ \mathrm V/s}$, so the current is $i = C\,\mathrm dv/\mathrm dt = 100\times10^{-6}\times500 = 50\ \mathrm{mA}$. The stored energy is
+With a uniform rise, $\mathrm dv/\mathrm dt = 5/0.01 = 500\ \mathrm{V/s}$, so the current is $i = C\,\mathrm dv/\mathrm dt = 100\times10^{-6}\times500 = 50\ \mathrm{mA}$. The stored energy is
 
 $$
 w = \frac{1}{2} C v^2 = \frac{1}{2}\times100\times10^{-6}\times25 = 1.25\ \mathrm{mJ}.
@@ -62,7 +62,7 @@ The inductor's two signatures are the duals of the capacitor's: it is a **short 
 ::: example Voltage from a changing current {#ex-ind}
 A $10\ \mathrm{mH}$ inductor's current rises from $0$ to $2\ \mathrm A)$ in $5\ \mathrm{ms}$. What is the voltage, and how much energy is stored?
 ::: solution
-With a uniform rise, $\mathrm di/\mathrm dt = 2/0.005 = 400\ \mathrm A/s}$, so $v = L\,\mathrm di/\mathrm dt = 10\times10^{-3}\times400 = 4\ \mathrm V}$. The stored energy is
+With a uniform rise, $\mathrm di/\mathrm dt = 2/0.005 = 400\ \mathrm{A/s}$, so $v = L\,\mathrm di/\mathrm dt = 10\times10^{-3}\times400 = 4\ \mathrm{V}$. The stored energy is
 
 $$
 w = \frac{1}{2} L i^2 = \frac{1}{2}\times10\times10^{-3}\times4 = 20\ \mathrm{mJ}.
@@ -115,10 +115,9 @@ In DC steady state, a capacitor is an open circuit (zero current) and an inducto
 This is the bridge to the next lesson. Once you have the DC operating point, the question becomes what happens as the circuit moves from that point to another, when a switch is thrown or a source changes, and the answer is the transient response, which the capacitor and inductor determine. The same two elements, whose laws you now know, are the memory that makes the response a function of time rather than an instant of algebra.
 
 ::: widget plot
-f: 0.5*100e-6*v*v*1e6
-x: 0 5
-y: 0 1.5
-sliders:
+f: 0.5*100e-6*x*x*1e6
+x: 0, 5
+y: 0, 1.5
 caption: The energy stored in a $100\ \mu\mathrm F)$ capacitor, $w=\tfrac12 C v^2$, in millijoules as the voltage rises from $0$ to $5\ \mathrm V)$. The parabola is the signature of the quadratic energy dependence: double the voltage, quadruple the stored energy. The slope of this curve at any voltage is the capacitance times the voltage, the charge on the plate.
 :::
 
@@ -131,7 +130,7 @@ Beyond the equivalent capacitance and inductance, there is a physical reading of
 ::: example Parallel inductors and their energy {#ex-ind-comb}
 Two $20\ \mathrm{mH}$ inductors, each carrying the same current of $1\ \mathrm A)$, are placed in parallel and the parallel combination is driven from a source. What is the equivalent inductance, and compare the energy stored when the same current, $1\ \mathrm A)$, flows in the combination versus when it flows in one of them alone.
 ::: solution
-Parallel inductors combine by reciprocal, so the equivalent is $\dfrac{20\times20}{20+20}=10\ \mathrm{mH}$. The energy in a single $20\ \mathrm{mH}$ inductor with $1\ \mathrm A}$ is $\tfrac12\times20\times10^{-3}\times1 = 10\ \mathrm{mJ}$. The energy in the $10\ \mathrm{mH}$ combination with the same $1\ \mathrm A}$ is $\tfrac12\times10\times10^{-3}\times1 = 5\ \mathrm{mJ}$. Halving the inductance halves the stored energy for the same current, exactly as the quadratic law says. This is the inductive counterpart of the earlier capacitor comparison, and it is the duality, read on energy rather than on impedance.
+Parallel inductors combine by reciprocal, so the equivalent is $\dfrac{20\times20}{20+20}=10\ \mathrm{mH}$. The energy in a single $20\ \mathrm{mH}$ inductor with $1\ \mathrm{A}$ is $\tfrac12\times20\times10^{-3}\times1 = 10\ \mathrm{mJ}$. The energy in the $10\ \mathrm{mH}$ combination with the same $1\ \mathrm{A}$ is $\tfrac12\times10\times10^{-3}\times1 = 5\ \mathrm{mJ}$. Halving the inductance halves the stored energy for the same current, exactly as the quadratic law says. This is the inductive counterpart of the earlier capacitor comparison, and it is the duality, read on energy rather than on impedance.
 :::
 :::
 

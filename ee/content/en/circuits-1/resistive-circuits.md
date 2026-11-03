@@ -30,9 +30,9 @@ Do not treat Ohm's law as a physical law valid everywhere. It is the defining eq
 The resistance of a physical wire is fixed by its material and shape, so let us connect the ideal $R$ to the real part you will buy or run in.
 
 ::: example Resistance of a copper wire {#ex-wire}
-A $10\ \mathrm m}$ long copper wire has a cross-sectional area of $1\ \mathrm{mm^2}$. Taking the resistivity of copper as $\rho=1.68\times10^{-8}\ \Omega\cdot\mathrm m}$, find its resistance.
+A $10\ \mathrm{m}$ long copper wire has a cross-sectional area of $1\ \mathrm{mm^2}$. Taking the resistivity of copper as $\rho=1.68\times10^{-8}\ \Omega\cdot\mathrm{m}$, find its resistance.
 ::: solution
-The resistance of a uniform conductor is $R = \rho L/A$. Here $L=10\ \mathrm m}$ and $A=10^{-6}\ \mathrm{m^2}$, so $R = (1.68\times10^{-8}\times10)/10^{-6} = 0.168\ \Omega}$. That is small, which is why copper is used for wiring: for realistic currents its voltage drop is negligible. Note how the answer scales: doubling the length doubles $R$, doubling the area halves it.
+The resistance of a uniform conductor is $R = \rho L/A$. Here $L=10\ \mathrm{m}$ and $A=10^{-6}\ \mathrm{m^2}$, so $R = (1.68\times10^{-8}\times10)/10^{-6} = 0.168\ \Omega$. That is small, which is why copper is used for wiring: for realistic currents its voltage drop is negligible. Note how the answer scales: doubling the length doubles $R$, doubling the area halves it.
 :::
 :::
 
@@ -59,9 +59,9 @@ so that for two in parallel, $R = \dfrac{R_1 R_2}{R_1+R_2}$. A series combinatio
 The two rules are duals of one another. In series the same current flows through each, so the total voltage is the sum of the drops and the resistances add. In parallel the same voltage is across each, so the total current is the sum of the branch currents and the reciprocal resistances add. Knowing which is which, by asking "is it the current or the voltage that is shared", is the decisive skill.
 
 ::: example Reducing a series-parallel network {#ex-reduce}
-Two resistors, $4\ \mathrm{k\Omega}$ and $6\ \mathrm{k\Omega}$, are in series forming a branch. That branch is in parallel with a $10\ \mathrm{k\Omega}$ resistor. A $20\ \mathrm V}$ source drives the combination. Find the total resistance, the total current, and the current and voltage of each resistor.
+Two resistors, $4\ \mathrm{k\Omega}$ and $6\ \mathrm{k\Omega}$, are in series forming a branch. That branch is in parallel with a $10\ \mathrm{k\Omega}$ resistor. A $20\ \mathrm{V}$ source drives the combination. Find the total resistance, the total current, and the current and voltage of each resistor.
 ::: solution
-The series branch is $R_A = 4\ \mathrm{k\Omega}+6\ \mathrm{k\Omega}=10\ \mathrm{k\Omega}$. In parallel with the $10\ \mathrm{k\Omega}$ this gives $R_{eq} = \dfrac{10\cdot10}{10+10}=5\ \mathrm{k\Omega}$. Total current from the source is $I = 20/5\ \mathrm{k\Omega}=4\ \mathrm{mA}$. The voltage across the whole parallel section is the source voltage, $20\ \mathrm V}$. The current through the $4\text{-}6$ branch is $20/10\ \mathrm{k\Omega}=2\ \mathrm{mA}$, and through the bare $10\ \mathrm{k\Omega}$ also $20/10\ \mathrm{k\Omega}=2\ \mathrm{mA}$, which sum to the $4\ \mathrm{mA}$ total. With $2\ \mathrm{mA}$ in the series branch, the $6\ \mathrm{k\Omega}$ carries $2\ \mathrm{mA}\times6\ \mathrm{k\Omega}=12\ \mathrm V}$ and the $4\ \mathrm{k\Omega}$ carries $2\ \mathrm{mA}\times4\ \mathrm{k\Omega}=8\ \mathrm V}$, which sum to $20\ \mathrm V}$ as they must. Every number here is cross-checked by a conservation law.
+The series branch is $R_A = 4\ \mathrm{k\Omega}+6\ \mathrm{k\Omega}=10\ \mathrm{k\Omega}$. In parallel with the $10\ \mathrm{k\Omega}$ this gives $R_{eq} = \dfrac{10\cdot10}{10+10}=5\ \mathrm{k\Omega}$. Total current from the source is $I = 20/5\ \mathrm{k\Omega}=4\ \mathrm{mA}$. The voltage across the whole parallel section is the source voltage, $20\ \mathrm{V}$. The current through the $4\text{-}6$ branch is $20/10\ \mathrm{k\Omega}=2\ \mathrm{mA}$, and through the bare $10\ \mathrm{k\Omega}$ also $20/10\ \mathrm{k\Omega}=2\ \mathrm{mA}$, which sum to the $4\ \mathrm{mA}$ total. With $2\ \mathrm{mA}$ in the series branch, the $6\ \mathrm{k\Omega}$ carries $2\ \mathrm{mA}\times6\ \mathrm{k\Omega}=12\ \mathrm{V}$ and the $4\ \mathrm{k\Omega}$ carries $2\ \mathrm{mA}\times4\ \mathrm{k\Omega}=8\ \mathrm{V}$, which sum to $20\ \mathrm{V}$ as they must. Every number here is cross-checked by a conservation law.
 :::
 :::
 
@@ -72,7 +72,7 @@ What is the equivalent resistance of $4\ \Omega$ in parallel with $4\ \Omega$?
 - [ ] $16\ \Omega$
 - [ ] $4\ \Omega$
 ::: solution
-Two equal resistors in parallel halve: $R = \dfrac{4\cdot4}{4+4}=2\ \Omega}. Two in series would have doubled to $8\ \Omega$; do not confuse the two.
+Two equal resistors in parallel halve: $R = \dfrac{4\cdot4}{4+4}=2\ \Omega. Two in series would have doubled to $8\ \Omega$; do not confuse the two.
 :::
 :::
 
@@ -91,9 +91,9 @@ The divider ratio depends only on the two resistances, not on the source or on t
 :::
 
 ::: example Choosing a divider for a fixed output {#ex-vdiv}
-Design a voltage divider that gives $3.33\ \mathrm V}$ from a $10\ \mathrm V}$ supply, using a $1\ \mathrm{k\Omega}$ resistor at the bottom. What must the top resistor be?
+Design a voltage divider that gives $3.33\ \mathrm{V}$ from a $10\ \mathrm{V}$ supply, using a $1\ \mathrm{k\Omega}$ resistor at the bottom. What must the top resistor be?
 ::: solution
-We need $V_{out} = 10\,\dfrac{R_2}{R_1+R_2} = 3.33$, so $\dfrac{R_2}{R_1+R_2}=\tfrac13$ with $R_2=1\ \mathrm{k\Omega}$. This requires $R_1+R_2 = 3R_2 = 3\ \mathrm{k\Omega}$, hence $R_1 = 2\ \mathrm{k\Omega}$. Check: $10\times 1/(2+1)=3.33\ \mathrm V}$. The ratio $R_1:R_2 = 2:1$ sets the output one third of the way from the bottom reference.
+We need $V_{out} = 10\,\dfrac{R_2}{R_1+R_2} = 3.33$, so $\dfrac{R_2}{R_1+R_2}=\tfrac13$ with $R_2=1\ \mathrm{k\Omega}$. This requires $R_1+R_2 = 3R_2 = 3\ \mathrm{k\Omega}$, hence $R_1 = 2\ \mathrm{k\Omega}$. Check: $10\times 1/(2+1)=3.33\ \mathrm{V}$. The ratio $R_1:R_2 = 2:1$ sets the output one third of the way from the bottom reference.
 :::
 :::
 
@@ -114,9 +114,9 @@ and the current through $R_2$ is $I\,R_1/(R_1+R_2)$. The current divides inverse
 :::
 
 ::: example Splitting a current between two branches {#ex-cdiv}
-A $20\ \mathrm V}$ source drives $4\ \mathrm{k\Omega}$ in parallel with $6\ \mathrm{k\Omega}$. Find the current in each branch and the total drawn.
+A $20\ \mathrm{V}$ source drives $4\ \mathrm{k\Omega}$ in parallel with $6\ \mathrm{k\Omega}$. Find the current in each branch and the total drawn.
 ::: solution
-Equivalently, the voltage across both is $20\ \mathrm V}$. The $4\ \mathrm{k\Omega}$ carries $20/4\ \mathrm{k\Omega}=5\ \mathrm{mA}$ and the $6\ \mathrm{k\Omega}$ carries $20/6\ \mathrm{k\Omega}=3.33\ \mathrm{mA}$. The total is $5+3.33=8.33\ \mathrm{mA}$. As a check via the divider: combined resistance $R = \dfrac{4\cdot6}{4+6}=2.4\ \mathrm{k\Omega}$, so $I = 20/2.4\ \mathrm{k\Omega}=8.33\ \mathrm{mA}$, and $I_{4k} = 8.33\times \dfrac{6}{10}=5\ \mathrm{mA}$, agreeing. The smaller resistor indeed carries the larger current, as the rule says.
+Equivalently, the voltage across both is $20\ \mathrm{V}$. The $4\ \mathrm{k\Omega}$ carries $20/4\ \mathrm{k\Omega}=5\ \mathrm{mA}$ and the $6\ \mathrm{k\Omega}$ carries $20/6\ \mathrm{k\Omega}=3.33\ \mathrm{mA}$. The total is $5+3.33=8.33\ \mathrm{mA}$. As a check via the divider: combined resistance $R = \dfrac{4\cdot6}{4+6}=2.4\ \mathrm{k\Omega}$, so $I = 20/2.4\ \mathrm{k\Omega}=8.33\ \mathrm{mA}$, and $I_{4k} = 8.33\times \dfrac{6}{10}=5\ \mathrm{mA}$, agreeing. The smaller resistor indeed carries the larger current, as the rule says.
 :::
 :::
 
@@ -141,10 +141,9 @@ That idealisation has limits you will meet later. Between two nodes, a short cir
 The open-circuit and short-circuit extremes bracket everything in between. An **open circuit** is the limit of infinite resistance: no current can flow, the voltage is whatever the rest of the network imposes, and it is the natural state of an unconnected terminal. A **short circuit** is the limit of zero resistance: the voltage across it is zero and the current is whatever the rest of the network supplies. Understanding these two limits, and recognising which one a subnetwork has been reduced to, is half the skill of reading a schematic. Keep both in mind whenever a resistance in your formula looks like it is tending to zero or to infinity.
 
 ::: widget plot
-f: V/1e3
-x: 0 6
-y: 0 6
-sliders:
+f: x/1e3
+x: 0, 6
+y: 0, 6
 caption: The current-voltage relation of an ideal $1\,\mathrm{k\Omega}$ resistor, $i(v)=v/R$. The straight line through the origin is the signature of the ohmic element: its slope is the conductance $1/R$, and the power $p=vi$ grows quadratically with $v$ off this line. A steeper line is a smaller resistance.
 :::
 
@@ -191,9 +190,9 @@ $R = \dfrac{4\cdot6}{4+6} = 24/10 = 2.4\ \Omega$.
 :::
 
 ::: exercise Voltage divider {level=1 check="3.33"}
-A $10\ \mathrm V}$ source is divided by $2\ \mathrm{k\Omega}$ at the top and $1\ \mathrm{k\Omega}$ at the bottom. What is the open-circuit output voltage?
+A $10\ \mathrm{V}$ source is divided by $2\ \mathrm{k\Omega}$ at the top and $1\ \mathrm{k\Omega}$ at the bottom. What is the open-circuit output voltage?
 ::: solution
-$V_{out} = 10\times\dfrac{1}{2+1} = 3.33\ \mathrm V}$.
+$V_{out} = 10\times\dfrac{1}{2+1} = 3.33\ \mathrm{V}$.
 :::
 :::
 
@@ -208,12 +207,12 @@ The two $6\ \Omega$ give $6\cdot6/(6+6)=3\ \Omega$. This in parallel with the $3
 :::
 
 ::: exercise Current through a branch {level=2 check="4"}
-A $20\ \mathrm V}$ source feeds $5\ \mathrm{k\Omega}$ in series with $15\ \mathrm{k\Omega}$. What current flows, and what is the voltage across the $15\ \mathrm{k\Omega}$?
+A $20\ \mathrm{V}$ source feeds $5\ \mathrm{k\Omega}$ in series with $15\ \mathrm{k\Omega}$. What current flows, and what is the voltage across the $15\ \mathrm{k\Omega}$?
 ::: hint
 Series: the same current flows in both.
 :::
 ::: solution
-Total $R = 5\ \mathrm{k\Omega}+15\ \mathrm{k\Omega}=20\ \mathrm{k\Omega}$, so $I = 20/20\ \mathrm{k\Omega}=1\ \mathrm{mA}$. Voltage across the $15\ \mathrm{k\Omega}$ is $1\ \mathrm{mA}\times15\ \mathrm{k\Omega}=15\ \mathrm V}$. The two drops, $5\ \mathrm V}$ and $15\ \mathrm V}$, sum to the source, as KVL requires.
+Total $R = 5\ \mathrm{k\Omega}+15\ \mathrm{k\Omega}=20\ \mathrm{k\Omega}$, so $I = 20/20\ \mathrm{k\Omega}=1\ \mathrm{mA}$. Voltage across the $15\ \mathrm{k\Omega}$ is $1\ \mathrm{mA}\times15\ \mathrm{k\Omega}=15\ \mathrm{V}$. The two drops, $5\ \mathrm{V}$ and $15\ \mathrm{V}$, sum to the source, as KVL requires.
 :::
 :::
 
@@ -228,12 +227,12 @@ $p = i^2R = (2\times10^{-3})^2\times6\times10^{3} = 4\times10^{-6}\times6\times1
 :::
 
 ::: exercise Sizing for a voltage target {level=2 check="9.99"}
-A $9\ \mathrm V}$ supply is to be divided to give $3\ \mathrm V}$ at an unloaded output, using a $1\ \mathrm{k\Omega}$ bottom resistor. What is the required top resistor, to the nearest ohm?
+A $9\ \mathrm{V}$ supply is to be divided to give $3\ \mathrm{V}$ at an unloaded output, using a $1\ \mathrm{k\Omega}$ bottom resistor. What is the required top resistor, to the nearest ohm?
 ::: hint
 Set $3 = 9\,R_2/(R_1+R_2)$ and solve for $R_1$ with $R_2=1\ \mathrm{k\Omega}$.
 :::
 ::: solution
-$\dfrac{R_2}{R_1+R_2}=\tfrac13$ gives $R_1+R_2=3R_2=3000\ \Omega$, so $R_1=2000\ \Omega$. For this $9\ \mathrm V}$, $3\ \mathrm V}$ source the ratio is the same, so again $R_1:R_2 = 2:1$ and $R_1=2\ \mathrm{k\Omega}$. (Check: $9\times1/3=3\ \mathrm V}.$)
+$\dfrac{R_2}{R_1+R_2}=\tfrac13$ gives $R_1+R_2=3R_2=3000\ \Omega$, so $R_1=2000\ \Omega$. For this $9\ \mathrm{V}$, $3\ \mathrm{V}$ source the ratio is the same, so again $R_1:R_2 = 2:1$ and $R_1=2\ \mathrm{k\Omega}$. (Check: $9\times1/3=3\ \mathrm{V}.$)
 :::
 :::
 
@@ -248,11 +247,11 @@ $I_{2k} = 9\times\dfrac{4}{2+4}=9\times\tfrac23=6\ \mathrm{mA}$. The $4\ \mathrm
 :::
 
 ::: exercise Mixed network, find the power {level=3}
-A $30\ \mathrm V}$ source feeds a $5\ \mathrm{k\Omega}$ resistor in series with a parallel pair of $10\ \mathrm{k\Omega}$ and $10\ \mathrm{k\Omega}$. Find the current in the $5\ \mathrm{k\Omega}$ and the power in each of the $10\ \mathrm{k\Omega}$ resistors.
+A $30\ \mathrm{V}$ source feeds a $5\ \mathrm{k\Omega}$ resistor in series with a parallel pair of $10\ \mathrm{k\Omega}$ and $10\ \mathrm{k\Omega}$. Find the current in the $5\ \mathrm{k\Omega}$ and the power in each of the $10\ \mathrm{k\Omega}$ resistors.
 ::: hint
 Reduce the parallel pair first, then treat the whole thing as a series circuit.
 :::
 ::: solution
-The parallel pair is $10\cdot10/(10+10)=5\ \mathrm{k\Omega}$. Total is $5\ \mathrm{k\Omega}+5\ \mathrm{k\Omega}=10\ \mathrm{k\Omega}$, so $I = 30/10\ \mathrm{k\Omega}=3\ \mathrm{mA}$ through the $5\ \mathrm{k\Omega}$. The voltage across the parallel pair is $3\ \mathrm{mA}\times5\ \mathrm{k\Omega}=15\ \mathrm V}$. Each $10\ \mathrm{k\Omega}$ therefore carries $15/10\ \mathrm{k\Omega}=1.5\ \mathrm{mA}$ and absorbs $p=i^2R=(1.5\times10^{-3})^2\times10\times10^{3}=0.0225\ \mathrm W=22.5\ \mathrm{mW}$. The two sum with the series resistor to the source, as KVL and KCL require.
+The parallel pair is $10\cdot10/(10+10)=5\ \mathrm{k\Omega}$. Total is $5\ \mathrm{k\Omega}+5\ \mathrm{k\Omega}=10\ \mathrm{k\Omega}$, so $I = 30/10\ \mathrm{k\Omega}=3\ \mathrm{mA}$ through the $5\ \mathrm{k\Omega}$. The voltage across the parallel pair is $3\ \mathrm{mA}\times5\ \mathrm{k\Omega}=15\ \mathrm{V}$. Each $10\ \mathrm{k\Omega}$ therefore carries $15/10\ \mathrm{k\Omega}=1.5\ \mathrm{mA}$ and absorbs $p=i^2R=(1.5\times10^{-3})^2\times10\times10^{3}=0.0225\ \mathrm W=22.5\ \mathrm{mW}$. The two sum with the series resistor to the source, as KVL and KCL require.
 :::
 :::

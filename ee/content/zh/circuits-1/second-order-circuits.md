@@ -101,9 +101,8 @@ $$
 
 ::: widget plot
 f: 10*(1 - exp(-x)*cos(3*x) - (1/3)*exp(-x)*sin(3*x))
-x: 0 5
-y: 0 15
-sliders:
+x: 0, 5
+y: 0, 15
 caption: 例题中串联$RLC$的欠阻尼阶跃响应$v_C(t)=10\left[1-e^{-t}\cos(3t)-\tfrac13 e^{-t}\sin(3t)\right]$，$t$以毫秒计。响应越过$10\ \mathrm V$终值，在$1.05\ \mathrm{ms}$冲到约$13.5\ \mathrm V$，随后按时间常数$1\ \mathrm{ms}$的衰减包络振铃，稳定到$10\ \mathrm V$。振荡与包络就是欠阻尼响应的两个时间尺度。
 :::
 

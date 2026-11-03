@@ -15,17 +15,17 @@ In a linear circuit, the total current or voltage at any point is the sum of the
 The reason the theorem is so useful is not that it saves algebra but that it lets you separate the effect of each source, and that separation is usually what the design question is asking for. If you want to know how much of a node voltage is due to a sensor and how much is due to a bias, superposition is the way to see it.
 
 ::: example Superposition at a loaded node {#ex-supp}
-A node is connected to ground through $R=1\ \mathrm{k\Omega}$, to a $5\ \mathrm V}$ source through $R_1=2\ \mathrm{k\Omega}$ and to a $3\ \mathrm V}$ source through $R_2=3\ \mathrm{k\Omega}$. Find the node voltage by superposition and by direct KCL.
+A node is connected to ground through $R=1\ \mathrm{k\Omega}$, to a $5\ \mathrm{V}$ source through $R_1=2\ \mathrm{k\Omega}$ and to a $3\ \mathrm{V}$ source through $R_2=3\ \mathrm{k\Omega}$. Find the node voltage by superposition and by direct KCL.
 ::: solution
-Turn off the $3\ \mathrm V}$ source (replace it by a short), leaving the node fed by the $5\ \mathrm V}$ source through $2\ \mathrm{k\Omega}$ and grounded through the parallel combination of $1\ \mathrm{k\Omega}$ and $3\ \mathrm{k\Omega}$, which is $0.75\ \mathrm{k\Omega}$. This is a divider, so the contribution is $v_1 = 5\times\dfrac{0.75}{2+0.75} = 1.36\ \mathrm V}$. Now turn off the $5\ \mathrm V}$ source, leaving the node fed by the $3\ \mathrm V}$ source through $3\ \mathrm{k\Omega}$ and grounded through $1\ \mathrm{k\Omega}$ in parallel with $2\ \mathrm{k\Omega}$, which is $0.667\ \mathrm{k\Omega}$. The contribution is $v_2 = 3\times\dfrac{0.667}{3+0.667} = 0.55\ \mathrm V}$. The sum is $v = 1.36+0.55 = 1.91\ \mathrm V}$.
+Turn off the $3\ \mathrm{V}$ source (replace it by a short), leaving the node fed by the $5\ \mathrm{V}$ source through $2\ \mathrm{k\Omega}$ and grounded through the parallel combination of $1\ \mathrm{k\Omega}$ and $3\ \mathrm{k\Omega}$, which is $0.75\ \mathrm{k\Omega}$. This is a divider, so the contribution is $v_1 = 5\times\dfrac{0.75}{2+0.75} = 1.36\ \mathrm{V}$. Now turn off the $5\ \mathrm{V}$ source, leaving the node fed by the $3\ \mathrm{V}$ source through $3\ \mathrm{k\Omega}$ and grounded through $1\ \mathrm{k\Omega}$ in parallel with $2\ \mathrm{k\Omega}$, which is $0.667\ \mathrm{k\Omega}$. The contribution is $v_2 = 3\times\dfrac{0.667}{3+0.667} = 0.55\ \mathrm{V}$. The sum is $v = 1.36+0.55 = 1.91\ \mathrm{V}$.
 
 Directly, KCL at the node gives
 
 $$
-\frac{5-v}{2} + \frac{3-v}{3} = v,\qquad \text{(in mA, k\Omega)}
+\frac{5-v}{2} + \frac{3-v}{3} = v,\qquad \text{(in mA, k}\Omega\text{)}
 $$
 
-so $3(5-v)+2(3-v)=6v$, $21 = 11v$, and $v = 1.91\ \mathrm V}$, agreeing with the sum of the two contributions. The two routes give the same number because the network is linear, which is exactly the premise of the theorem.
+so $3(5-v)+2(3-v)=6v$, $21 = 11v$, and $v = 1.91\ \mathrm{V}$, agreeing with the sum of the two contributions. The two routes give the same number because the network is linear, which is exactly the premise of the theorem.
 :::
 :::
 
@@ -48,7 +48,7 @@ The Thevenin voltage $V_{\text{th}}$ is the open-circuit voltage at the terminal
 The power of the theorem is that the internal structure of the subnetwork is entirely irrelevant to what crosses the two terminals, and so you are free to throw it away once you have the two numbers. A board with a sensor, a regulator, and a dozen resistors, when seen from two pins, is a voltage and a resistance. This is why the theorem is the workhorse of interface design, where you are always matching one block to another across a pair of pins.
 
 ::: example Thevenin equivalent of a divider {#ex-thevenin}
-A $12\ \mathrm V}$ source drives a divider of $R_1=4\ \mathrm{k\Omega}$ on top and $R_2=2\ \mathrm{k\Omega}$ to ground. Find the Thevenin equivalent seen at the midpoint, and the open-circuit voltage.
+A $12\ \mathrm{V}$ source drives a divider of $R_1=4\ \mathrm{k\Omega}$ on top and $R_2=2\ \mathrm{k\Omega}$ to ground. Find the Thevenin equivalent seen at the midpoint, and the open-circuit voltage.
 ::: solution
 The open-circuit voltage at the midpoint is the divider output,
 
@@ -62,7 +62,7 @@ $$
 R_{\text{th}} = \dfrac{4\times2}{4+2} = 1.333\ \mathrm{k\Omega}.
 $$
 
-The equivalent is a $4\ \mathrm V}$ source in series with $1.333\ \mathrm{k\Omega}$. Check by loading it with, say, $R_L=1\ \mathrm{k\Omega}$: the load voltage is $4\times\dfrac{1}{1.333+1} = 1.71\ \mathrm V}$. In the original circuit the same load, in parallel with $2\ \mathrm{k\Omega}$, gives an equivalent bottom resistance of $0.667\ \mathrm{k\Omega}$ and a voltage of $12\times\dfrac{0.667}{4+0.667} = 1.71\ \mathrm V}$, the same. The equivalence is exact, as it should be.
+The equivalent is a $4\ \mathrm{V}$ source in series with $1.333\ \mathrm{k\Omega}$. Check by loading it with, say, $R_L=1\ \mathrm{k\Omega}$: the load voltage is $4\times\dfrac{1}{1.333+1} = 1.71\ \mathrm{V}$. In the original circuit the same load, in parallel with $2\ \mathrm{k\Omega}$, gives an equivalent bottom resistance of $0.667\ \mathrm{k\Omega}$ and a voltage of $12\times\dfrac{0.667}{4+0.667} = 1.71\ \mathrm{V}$, the same. The equivalence is exact, as it should be.
 :::
 :::
 
@@ -94,7 +94,7 @@ Any linear two-terminal subnetwork may equally be represented by a current sourc
 The reason to keep Norton in mind, even when Thevenin is more convenient, is that some networks are more naturally in parallel than in series. A current source feeding a conductance is a Norton picture, and forcing it into a series Thevenin picture can hide the structure. The two descriptions are the same physics written in two coordinate systems, and you should be able to move between them fluently.
 
 ::: example Norton from Thevenin {#ex-norton}
-Convert the Thevenin equivalent of the previous example, $V_{\text{th}}=4\ \mathrm V} $, $R_{\text{th}}=1.333\ \mathrm{k\Omega}$, into its Norton form, and find the short-circuit current.
+Convert the Thevenin equivalent of the previous example, $V_{\text{th}}=4\ \mathrm{V} $, $R_{\text{th}}=1.333\ \mathrm{k\Omega}$, into its Norton form, and find the short-circuit current.
 ::: solution
 The Norton resistance is the same, $R_{\text{N}}=1.333\ \mathrm{k\Omega}$. The Norton current is the current that would flow with the terminals shorted, which is the Thevenin source divided by its series resistance,
 
@@ -102,7 +102,7 @@ $$
 I_{\text{N}} = \dfrac{V_{\text{th}}}{R_{\text{th}}} = \dfrac{4}{1.333\ \mathrm{k\Omega}} = 3\ \mathrm{mA}.
 $$
 
-So the Norton equivalent is a $3\ \mathrm{mA}$ source in parallel with $1.333\ \mathrm{k\Omega}$. Check by loading with $R_L=1\ \mathrm{k\Omega}$: the load current is $3\ \mathrm{mA}\times\dfrac{1.333}{1.333+1} = 1.73\ \mathrm{mA}$ and the load voltage is $1.73\ \mathrm{mA}\times1\ \mathrm{k\Omega}=1.73\ \mathrm V}$. The Thevenin form gave $1.71\ \mathrm V}$ with the same load, and the small difference is rounding in the $1.333\ \mathrm{k\Omega}$; the two are exact to each other.
+So the Norton equivalent is a $3\ \mathrm{mA}$ source in parallel with $1.333\ \mathrm{k\Omega}$. Check by loading with $R_L=1\ \mathrm{k\Omega}$: the load current is $3\ \mathrm{mA}\times\dfrac{1.333}{1.333+1} = 1.73\ \mathrm{mA}$ and the load voltage is $1.73\ \mathrm{mA}\times1\ \mathrm{k\Omega}=1.73\ \mathrm{V}$. The Thevenin form gave $1.71\ \mathrm{V}$ with the same load, and the small difference is rounding in the $1.333\ \mathrm{k\Omega}$; the two are exact to each other.
 :::
 :::
 
@@ -123,7 +123,7 @@ and at that point the source and the load absorb equal power, so the efficiency 
 The result is a design target, and it is the reason that many interfaces quote a source or a load impedance of a particular value rather than a particular resistance. It is also the reason that a matched load, in audio and in radio, is not an accident but a deliberate condition.
 
 ::: example Maximum power from a divider-driven stage {#ex-mpt}
-Using the Thevenin equivalent of the divider, $V_{\text{th}}=4\ \mathrm V}$ and $R_{\text{th}}=1.333\ \mathrm{k\Omega}$, find the load that extracts the most power and that maximum power, and the efficiency at the match.
+Using the Thevenin equivalent of the divider, $V_{\text{th}}=4\ \mathrm{V}$ and $R_{\text{th}}=1.333\ \mathrm{k\Omega}$, find the load that extracts the most power and that maximum power, and the efficiency at the match.
 ::: solution
 Maximum power is at $R_L = R_{\text{th}} = 1.333\ \mathrm{k\Omega}$. The current is $I = V_{\text{th}}/(2R_{\text{th}}) = 4/2.667\ \mathrm{k\Omega} = 1.5\ \mathrm{mA}$, and the power to the load is
 
@@ -137,10 +137,9 @@ The source delivers $V_{\text{th}} I = 4\times1.5\ \mathrm{mA} = 6\ \mathrm{mW}$
 
 ::: widget plot
 f: (4/(1.3333+x))^2*x
-x: 0 5
-y: 0 3.4
-sliders:
-caption: The power delivered to a load $R_L$ by the $4\ \mathrm V}$, $1.333\ \mathrm{k\Omega}$ Thevenin source, $P(R_L)=(V_{\text{th}}/(R_{\text{th}}+R_L))^2 R_L$ in milliwatts with $R_L$ in kilohms. The curve peaks at $R_L=R_{\text{th}}=1.333\ \mathrm{k\Omega}$, where the maximum power is $3\ \mathrm{mW}$ and the efficiency is exactly one half, the signature of the match.
+x: 0, 5
+y: 0, 3.4
+caption: The power delivered to a load $R_L$ by the $4\ \mathrm{V}$, $1.333\ \mathrm{k\Omega}$ Thevenin source, $P(R_L)=(V_{\text{th}}/(R_{\text{th}}+R_L))^2 R_L$ in milliwatts with $R_L$ in kilohms. The curve peaks at $R_L=R_{\text{th}}=1.333\ \mathrm{k\Omega}$, where the maximum power is $3\ \mathrm{mW}$ and the efficiency is exactly one half, the signature of the match.
 :::
 
 A word on the limits of these theorems, because they are often applied beyond their domain. Every one of them requires the subnetwork to be linear and the sources to be independent. A network that includes a dependent source is still linear, so Thevenin and superposition still apply, but you must keep the dependent source in place and treat its controlling variable as part of the network, because turning it off with its source would change the network. A network that includes a non-linear element, a diode, a transistor, or a resistor whose value changes with temperature, is not linear in the relevant region, and the theorems are then only approximations, good to first order about an operating point. That is the seed of the small-signal analysis of the amplifier lessons, where a non-linear device is replaced by its linearised model at a bias point and Thevenin and Norton are applied to that model. The theorems are thus not the end of the matter but the beginning of it, the linear part of a discipline that spends much of its time studying when linearity is a good enough model.
@@ -165,33 +164,33 @@ Superposition and the source transformation were standard by the 1890s, as immed
 ## Exercises
 
 ::: exercise Source transformation {level=1 check="6"}
-Convert a $12\ \mathrm V}$ source in series with a $2\ \mathrm{k\Omega}$ resistor into its Norton form. What is the current source?
+Convert a $12\ \mathrm{V}$ source in series with a $2\ \mathrm{k\Omega}$ resistor into its Norton form. What is the current source?
 ::: solution
 $I_{\text{N}} = V/R = 12/2\ \mathrm{k\Omega} = 6\ \mathrm{mA}$, in parallel with $2\ \mathrm{k\Omega}$.
 :::
 :::
 
 ::: exercise Thevenin of a divider {level=1 check="0.6"}
-A $9\ \mathrm V}$ source drives $3\ \mathrm{k\Omega}$ on top and $1\ \mathrm{k\Omega}$ to ground. Find the Thevenin resistance seen at the midpoint.
+A $9\ \mathrm{V}$ source drives $3\ \mathrm{k\Omega}$ on top and $1\ \mathrm{k\Omega}$ to ground. Find the Thevenin resistance seen at the midpoint.
 ::: solution
-With the source off, the resistors are in parallel: $R_{\text{th}} = 3\times1/(3+1) = 0.75\ \mathrm{k\Omega}$. (The check value $0.6$ is the Thevenin voltage $9\times 1/4 = 2.25\ \mathrm V}$ — here the answer is the resistance, $0.75\ \mathrm{k\Omega}$.)
+With the source off, the resistors are in parallel: $R_{\text{th}} = 3\times1/(3+1) = 0.75\ \mathrm{k\Omega}$. (The check value $0.6$ is the Thevenin voltage $9\times 1/4 = 2.25\ \mathrm{V}$ — here the answer is the resistance, $0.75\ \mathrm{k\Omega}$.)
 :::
 :::
 
 ::: exercise Maximum power load {level=1 check="1.5"}
-A source has $V_{\text{th}}=6\ \mathrm V}$ and $R_{\text{th}}=1.5\ \mathrm{k\Omega}$. What load extracts the most power?
+A source has $V_{\text{th}}=6\ \mathrm{V}$ and $R_{\text{th}}=1.5\ \mathrm{k\Omega}$. What load extracts the most power?
 ::: solution
 $R_L = R_{\text{th}} = 1.5\ \mathrm{k\Omega}$.
 :::
 :::
 
 ::: exercise Thevenin voltage and resistance {level=2}
-A $15\ \mathrm V}$ source drives $5\ \mathrm{k\Omega}$ on top and $5\ \mathrm{k\Omega}$ to ground. Find the Thevenin voltage and resistance at the midpoint.
+A $15\ \mathrm{V}$ source drives $5\ \mathrm{k\Omega}$ on top and $5\ \mathrm{k\Omega}$ to ground. Find the Thevenin voltage and resistance at the midpoint.
 ::: hint
 $V_{\text{th}}$ is the open-circuit divider voltage; $R_{\text{th}}$ is the parallel combination with the source off.
 :::
 ::: solution
-$V_{\text{th}} = 15\times 5/(5+5) = 7.5\ \mathrm V}$. With the source off, the two $5\ \mathrm{k\Omega}$ are in parallel, so $R_{\text{th}} = 5\times5/(5+5) = 2.5\ \mathrm{k\Omega}$.
+$V_{\text{th}} = 15\times 5/(5+5) = 7.5\ \mathrm{V}$. With the source off, the two $5\ \mathrm{k\Omega}$ are in parallel, so $R_{\text{th}} = 5\times5/(5+5) = 2.5\ \mathrm{k\Omega}$.
 :::
 :::
 
@@ -211,12 +210,12 @@ A node is connected to ground through $4\ \mathrm{k\Omega}$ and is driven by a $
 Add the two contributions.
 :::
 ::: solution
-From the voltage source (current source opened, so only the $2\ \mathrm{k\Omega}$ and $4\ \mathrm{k\Omega}$ to ground): $v_1 = 9\times 4/(2+4) = 6\ \mathrm V}$. From the current source: it drives $1\ \mathrm{mA}$ into the parallel combination of $4\ \mathrm{k\Omega}$ and the short that the $2\ \mathrm{k\Omega}$ becomes, so the node is loaded only by $4\ \mathrm{k\Omega}$ and $v_2 = 1\ \mathrm{mA}\times4\ \mathrm{k\Omega} = 4\ \mathrm V}$. But the two act on the same node; the sum by superposition is $6-4 = 2\ \mathrm V}$ if the current source opposes, or $6+4=10\ \mathrm V}$ if it aids. With the usual aiding orientation for this topology the answer is $10\ \mathrm V)$; the check field records the difference $4.5\ \mathrm V)$ in the opposing case.
+From the voltage source (current source opened, so only the $2\ \mathrm{k\Omega}$ and $4\ \mathrm{k\Omega}$ to ground): $v_1 = 9\times 4/(2+4) = 6\ \mathrm{V}$. From the current source: it drives $1\ \mathrm{mA}$ into the parallel combination of $4\ \mathrm{k\Omega}$ and the short that the $2\ \mathrm{k\Omega}$ becomes, so the node is loaded only by $4\ \mathrm{k\Omega}$ and $v_2 = 1\ \mathrm{mA}\times4\ \mathrm{k\Omega} = 4\ \mathrm{V}$. But the two act on the same node; the sum by superposition is $6-4 = 2\ \mathrm{V}$ if the current source opposes, or $6+4=10\ \mathrm{V}$ if it aids. With the usual aiding orientation for this topology the answer is $10\ \mathrm V)$; the check field records the difference $4.5\ \mathrm V)$ in the opposing case.
 :::
 :::
 
 ::: exercise Power match efficiency {level=3 check="2"}
-A Thevenin source of $V_{\text{th}}=6\ \mathrm V}$, $R_{\text{th}}=2\ \mathrm{k\Omega}$, is loaded at the match. What is the maximum power and the efficiency?
+A Thevenin source of $V_{\text{th}}=6\ \mathrm{V}$, $R_{\text{th}}=2\ \mathrm{k\Omega}$, is loaded at the match. What is the maximum power and the efficiency?
 ::: hint
 Use $P_{\max}=V_{\text{th}}^2/4R_{\text{th}}$; the efficiency is always one half at the match.
 :::
