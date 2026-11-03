@@ -1,4 +1,268 @@
 {
   "_doc": "Field-wide milestones for the timeline (course-specific events live in each course.json). year < 0 means BC.",
-  "milestones": []
+  "milestones": [
+    {
+      "year": 731,
+      "title": "Bede's Ecclesiastical History",
+      "detail": "Bede finishes his Latin history of the English church and people, naming the Angles, Saxons and Jutes as the settlers of Britain and preserving the story of Cædmon, the first named English poet.",
+      "people": [
+        "Bede"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 793,
+      "title": "The raid on Lindisfarne",
+      "detail": "The Anglo-Saxon Chronicle records the Viking attack on the monastery of Lindisfarne, the start of the contact that brought hundreds of Norse words, including they, them and their, into English.",
+      "people": [],
+      "area": "language"
+    },
+    {
+      "year": 1000,
+      "title": "The Beowulf manuscript",
+      "detail": "Around the year 1000 two scribes copy Beowulf, the longest Old English poem, into the manuscript that is its only surviving source.",
+      "people": [],
+      "area": "reading"
+    },
+    {
+      "year": 1066,
+      "title": "The Norman Conquest",
+      "detail": "William of Normandy wins at Hastings on 14 October. For three centuries French is the language of the court, law and much of the church, and English borrows thousands of French words.",
+      "people": [
+        "William I"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1258,
+      "title": "A royal proclamation in English",
+      "detail": "Henry III issues a proclamation supporting the Provisions of Oxford in English as well as French, the first royal document in English since the Conquest.",
+      "people": [
+        "Henry III"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1362,
+      "title": "The Statute of Pleading",
+      "detail": "Parliament orders that pleas in the law courts be spoken in English, because French was no longer widely understood.",
+      "people": [
+        "Edward III"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1387,
+      "title": "The Canterbury Tales",
+      "detail": "Chaucer begins The Canterbury Tales around 1387, writing in the London English that later became the basis of the standard written language.",
+      "people": [
+        "Geoffrey Chaucer"
+      ],
+      "area": "reading"
+    },
+    {
+      "year": 1476,
+      "title": "Caxton's press at Westminster",
+      "detail": "William Caxton sets up the first printing press in England. Printing spreads one written form of English and helps to fix spellings that no longer match the pronunciation.",
+      "people": [
+        "William Caxton"
+      ],
+      "area": "writing"
+    },
+    {
+      "year": 1526,
+      "title": "Tyndale's New Testament",
+      "detail": "William Tyndale's English New Testament, printed at Worms, is smuggled into England. Much of its wording survives in the King James Bible.",
+      "people": [
+        "William Tyndale"
+      ],
+      "area": "reading"
+    },
+    {
+      "year": 1553,
+      "title": "Wilson's Arte of Rhetorique",
+      "detail": "Thomas Wilson mocks 'inkhorn terms', the Latin words that writers were borrowing in large numbers — the start of a long debate about borrowing.",
+      "people": [
+        "Thomas Wilson"
+      ],
+      "area": "words"
+    },
+    {
+      "year": 1586,
+      "title": "Bullokar's grammar",
+      "detail": "William Bullokar's Pamphlet for Grammar is the first grammar of English written in English.",
+      "people": [
+        "William Bullokar"
+      ],
+      "area": "grammar"
+    },
+    {
+      "year": 1604,
+      "title": "Cawdrey's Table Alphabeticall",
+      "detail": "Robert Cawdrey publishes the first monolingual English dictionary, a list of about 2,500 'hard words', mostly borrowings, with short explanations.",
+      "people": [
+        "Robert Cawdrey"
+      ],
+      "area": "words"
+    },
+    {
+      "year": 1611,
+      "title": "The King James Bible",
+      "detail": "The Authorised Version of the Bible is published; for three centuries it is the English most people hear read aloud every week.",
+      "people": [],
+      "area": "reading"
+    },
+    {
+      "year": 1623,
+      "title": "Shakespeare's First Folio",
+      "detail": "Two of Shakespeare's fellow actors publish the first collected edition of his plays, eighteen of which had never been printed before.",
+      "people": [
+        "William Shakespeare"
+      ],
+      "area": "reading"
+    },
+    {
+      "year": 1712,
+      "title": "Swift's proposal for an academy",
+      "detail": "Jonathan Swift's Proposal for Correcting, Improving and Ascertaining the English Tongue asks for an academy to fix the language. None is ever founded.",
+      "people": [
+        "Jonathan Swift"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1755,
+      "title": "Johnson's Dictionary",
+      "detail": "Samuel Johnson's Dictionary of the English Language defines its words with quotations from writers, setting the model for later dictionaries.",
+      "people": [
+        "Samuel Johnson"
+      ],
+      "area": "words"
+    },
+    {
+      "year": 1762,
+      "title": "Lowth's grammar",
+      "detail": "Robert Lowth's Short Introduction to English Grammar becomes one of the most influential prescriptive grammars of English.",
+      "people": [
+        "Robert Lowth"
+      ],
+      "area": "grammar"
+    },
+    {
+      "year": 1786,
+      "title": "Jones on Sanskrit",
+      "detail": "In Calcutta William Jones argues that Sanskrit, Greek and Latin share a common source, the idea that led to the discovery of the Indo-European family to which English belongs.",
+      "people": [
+        "William Jones"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1791,
+      "title": "Walker's pronouncing dictionary",
+      "detail": "John Walker's Critical Pronouncing Dictionary records and prescribes the pronunciation of English words, the most popular guide of its kind for a century.",
+      "people": [
+        "John Walker"
+      ],
+      "area": "sounds"
+    },
+    {
+      "year": 1828,
+      "title": "Webster's American Dictionary",
+      "detail": "Noah Webster's American Dictionary of the English Language establishes American spellings such as color and center.",
+      "people": [
+        "Noah Webster"
+      ],
+      "area": "words"
+    },
+    {
+      "year": 1835,
+      "title": "Macaulay's Minute on Education",
+      "detail": "T. B. Macaulay's minute leads the British government in India to fund education in English, a step in the spread of English as a second language across the empire.",
+      "people": [
+        "Thomas Babington Macaulay"
+      ],
+      "area": "language"
+    },
+    {
+      "year": 1884,
+      "title": "The first fascicle of the OED",
+      "detail": "The first part of A New English Dictionary on Historical Principles, covering A–Ant, is published under the editorship of James Murray.",
+      "people": [
+        "James Murray"
+      ],
+      "area": "words"
+    },
+    {
+      "year": 1886,
+      "title": "The International Phonetic Association",
+      "detail": "Teachers of languages found the association that, from 1888, publishes the International Phonetic Alphabet, the basis of the transcriptions in this atlas.",
+      "people": [
+        "Paul Passy"
+      ],
+      "area": "sounds"
+    },
+    {
+      "year": 1909,
+      "title": "The Great Vowel Shift named",
+      "detail": "Otto Jespersen gives the name 'Great Vowel Shift' to the change in the long vowels of English between about 1400 and 1700.",
+      "people": [
+        "Otto Jespersen"
+      ],
+      "area": "sounds"
+    },
+    {
+      "year": 1917,
+      "title": "Jones's English Pronouncing Dictionary",
+      "detail": "Daniel Jones's English Pronouncing Dictionary transcribes the pronunciation of southern British English in phonetic symbols.",
+      "people": [
+        "Daniel Jones"
+      ],
+      "area": "sounds"
+    },
+    {
+      "year": 1928,
+      "title": "The OED completed",
+      "detail": "The last part of the Oxford English Dictionary appears, seventy years after the Philological Society proposed it.",
+      "people": [],
+      "area": "words"
+    },
+    {
+      "year": 1953,
+      "title": "West's General Service List",
+      "detail": "Michael West publishes A General Service List of English Words, about 2,000 headwords chosen for learners, used for decades in graded readers.",
+      "people": [
+        "Michael West"
+      ],
+      "area": "words"
+    },
+    {
+      "year": 1985,
+      "title": "Quirk et al.'s Comprehensive Grammar",
+      "detail": "Randolph Quirk, Sidney Greenbaum, Geoffrey Leech and Jan Svartvik publish A Comprehensive Grammar of the English Language, a descriptive reference grammar.",
+      "people": [
+        "Randolph Quirk",
+        "Sidney Greenbaum",
+        "Geoffrey Leech",
+        "Jan Svartvik"
+      ],
+      "area": "grammar"
+    },
+    {
+      "year": 1987,
+      "title": "The COBUILD dictionary",
+      "detail": "The Collins COBUILD English Language Dictionary, edited by John Sinclair, is the first learner's dictionary based on a large corpus of real texts.",
+      "people": [
+        "John Sinclair"
+      ],
+      "area": "words"
+    },
+    {
+      "year": 2001,
+      "title": "The CEFR",
+      "detail": "The Council of Europe publishes the Common European Framework of Reference for Languages, whose levels A1–C2 this atlas uses.",
+      "people": [],
+      "area": "language"
+    }
+  ]
 }
