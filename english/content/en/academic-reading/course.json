@@ -7,12 +7,27 @@
   "order": 160,
   "tagline": "How academic texts are organised, reading strategically, dense academic sentences, claims and evidence, evaluating sources, stance and hedging, reading data, notes and summaries, and paraphrasing and quoting",
   "summary": "Academic reading means reading long, dense texts efficiently and critically. This course explains how textbooks and research articles are organised and how to read them strategically, how to unpack nominalised academic sentences, how to identify and evaluate arguments, evidence and sources, how writers signal stance and caution, how to read data, and how to take notes, summarise and paraphrase for your own writing.",
-  "overview": [],
+  "overview": [
+    "This course is about reading the texts of study and research: textbooks, research articles, review articles, reports and the abstracts that stand in front of them. It begins with how these texts are organised — the IMRaD pattern of the research article, the moves of an introduction, the signposts that tell a reader where information is — and with ways of reading them strategically, so that a long reading list becomes a set of questions to answer rather than a pile of pages to get through. It then turns to the sentences themselves: the nominalisations and long noun phrases that make academic English dense, and how to unpack them. The middle of the course is about reading critically: finding the claim, the reasons and the evidence in an argument, judging how strong the evidence and the source are, reading the cautious language of hedges and boosters accurately, and reading tables, graphs and statistics without being misled. The last two chapters connect reading to writing: notes, summaries, paraphrase and quotation.",
+    "Academic reading differs from the reading of *Reading Skills* in three ways. The texts are longer and denser, so a reader must decide what to read closely and what to skip. They are written for experts, so they assume background knowledge and use the vocabulary and grammar of a register — academic prose — that is unlike conversation or journalism. And they are arguments, not just information: every research article claims something, and a good reader asks how well the claim is supported. The English of this course is itself reading practice at B2 level; the model abstracts, paragraphs and article excerpts are written for the atlas and describe fictional studies, which are labelled as such.",
+    "Each chapter has the usual parts — definitions and rules, worked examples, quick checks and graded exercises with answers — and most work on short model texts. The first two chapters are the base for the rest. *Dense academic sentences* can be read at any point after them; *Claims, reasons and evidence* leads to the chapters on sources, stance and data; and the last two chapters, on notes, summaries, paraphrase and quotation, draw on all of the others. The writing side — how to write a research paper, an essay or a literature review — is taught in *Academic Writing* and *Essay Writing*, which this course prepares for.",
+    "Chinese readers usually find three things hard. The first is density: academic English packs actions into nouns (*the rapid expansion of higher education*), and a reader who translates word by word loses the thread inside a long noun phrase. The second is stance: English academic writers hedge their claims more often and more finely than many readers expect, and the difference between *suggests*, *shows* and *proves*, or between *may* and *will*, matters to the meaning. The third is the move from reading to writing: notes and paraphrases that keep the source's sentence structure lead to patchwriting, which English-medium universities treat as a form of plagiarism. The course meets these points directly, with notes comparing English and Chinese academic conventions, and the best approach is the one the chapters model: read for the argument first, then for the sentence, and write notes in your own words from the start."
+  ],
   "prerequisites": [
     "reading-skills",
     "complex-sentences"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Identify the parts of a research article (IMRaD) and of an abstract, and the moves of an article introduction, and use them to find a given kind of information quickly.",
+    "Plan the reading of a long text or a reading list by surveying, setting questions and deciding what to read closely, skim or skip, and explain the plan.",
+    "Unpack a dense academic sentence by finding the head nouns of its noun phrases and restating its nominalisations as clauses with actors and verbs.",
+    "Identify the claim, reasons, evidence, qualifications and counter-arguments in an academic argument, and the language that signals each.",
+    "Evaluate the evidence for a claim, taking into account the kind of study, sample size and selection, correlation and causation, peer review and the reliability of the source.",
+    "Recognise hedges, boosters, attitude markers and reporting verbs, and state accurately how strongly a writer commits to a claim and whose view a sentence gives.",
+    "Read tables, graphs and common statistics (means, percentages, percentage points, correlation, significance, relative and absolute risk) in academic texts, and check whether the words of a text match its data.",
+    "Take structured notes from a text and write summaries of it at different lengths that keep its main claim and support in your own words.",
+    "Paraphrase a passage without copying its wording or sentence structure, decide when quotation is the better choice, and record sources accurately while reading."
+  ],
   "chapters": [
     {
       "slug": "academic-texts",
@@ -90,8 +105,133 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1665,
+      "title": "The first scientific journals",
+      "detail": "The *Journal des sçavans* began in Paris in January 1665, and the Royal Society's *Philosophical Transactions*, edited by Henry Oldenburg, in London in March. The research article as a genre grew from the letters and reports these journals printed.",
+      "people": [
+        "Henry Oldenburg"
+      ]
+    },
+    {
+      "year": 1940,
+      "title": "How to Read a Book",
+      "detail": "Mortimer Adler's *How to Read a Book* described levels of reading, from inspecting a book quickly to analysing its argument closely, and urged readers to come to terms with an author before agreeing or disagreeing. A revised edition with Charles Van Doren appeared in 1972.",
+      "people": [
+        "Mortimer Adler"
+      ]
+    },
+    {
+      "year": 1946,
+      "title": "SQ3R",
+      "detail": "Francis P. Robinson's *Effective Study* set out the SQ3R method for studying a textbook — survey, question, read, recite, review — the ancestor of most later methods of strategic reading.",
+      "people": [
+        "Francis P. Robinson"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "How to Lie with Statistics",
+      "detail": "Darrell Huff's short book showed general readers how graphs with cut axes, unrepresentative samples and misleading averages can make numbers say more than they should. It is still used to teach the critical reading of data.",
+      "people": [
+        "Darrell Huff"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Toulmin's model of argument",
+      "detail": "Stephen Toulmin's *The Uses of Argument* analysed practical arguments into a claim, the data that support it, the warrant that links them, and qualifiers and rebuttals. The model became a standard tool for reading and teaching argument.",
+      "people": [
+        "Stephen Toulmin"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "The Cornell note-taking system",
+      "detail": "Walter Pauk's *How to Study in College* described a page divided into a notes column, a cue column and a summary area, the method now known as Cornell notes.",
+      "people": [
+        "Walter Pauk"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "Genre analysis and the CARS model",
+      "detail": "John Swales's *Genre Analysis* described the research article as a genre with recognisable moves, including the 'Create a Research Space' model of article introductions. It became the foundation of the teaching of academic reading and writing in English for Academic Purposes.",
+      "people": [
+        "John Swales"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "The Academic Word List",
+      "detail": "Averil Coxhead published the Academic Word List, 570 word families that are frequent across a wide range of academic subjects but are not among the most frequent words of general English.",
+      "people": [
+        "Averil Coxhead"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "Metadiscourse",
+      "detail": "Ken Hyland's *Metadiscourse* brought together his corpus studies of how academic writers guide readers through a text and show their stance with hedges, boosters, attitude markers and self-mention.",
+      "people": [
+        "Ken Hyland"
+      ]
+    },
+    {
+      "year": 2010,
+      "title": "Complexity in noun phrases",
+      "detail": "Douglas Biber and Bethany Gray showed from corpus evidence that academic writing is not complex in the way often assumed: it uses fewer dependent clauses than conversation, and its complexity lies in long, compressed noun phrases.",
+      "people": [
+        "Douglas Biber",
+        "Bethany Gray"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Genre Analysis: English in Academic and Research Settings",
+      "authors": "John M. Swales",
+      "year": 1990,
+      "note": "Cambridge University Press. The classic study of the research article as a genre, with the CARS model of introductions; background to the chapter on how academic texts are organised."
+    },
+    {
+      "title": "Academic Writing for Graduate Students: Essential Tasks and Skills",
+      "authors": "John M. Swales and Christine B. Feak",
+      "year": 2012,
+      "note": "Third edition (University of Michigan Press). A practical course on the genres of research writing, with much on summary, critique and the language of data commentary, useful to readers as well as writers."
+    },
+    {
+      "title": "Metadiscourse: Exploring Interaction in Writing",
+      "authors": "Ken Hyland",
+      "year": 2005,
+      "note": "Continuum. A clear account, based on large corpora, of hedges, boosters, attitude markers, self-mention and the signposts that guide readers through academic texts."
+    },
+    {
+      "title": "Grammatical Complexity in Academic English: Linguistic Change in Writing",
+      "authors": "Douglas Biber and Bethany Gray",
+      "year": 2016,
+      "note": "Cambridge University Press. Corpus evidence on the compressed noun phrases of academic writing and how they developed; background to the chapter on dense sentences."
+    },
+    {
+      "title": "Critical Reading and Writing for Postgraduates",
+      "authors": "Mike Wallace and Alison Wray",
+      "year": 2016,
+      "note": "Third edition (SAGE). A practical guide to reading research critically, with questions to ask of claims, evidence and sources, and to turning critical reading into writing."
+    },
+    {
+      "title": "Critical Thinking Skills: Effective Analysis, Argument and Reflection",
+      "authors": "Stella Cottrell",
+      "year": 2017,
+      "note": "Third edition (Palgrave). An accessible workbook on identifying arguments, evaluating evidence and reading critically, with many short practice texts."
+    },
+    {
+      "title": "English for Academic Purposes",
+      "authors": "Edward de Chazal",
+      "year": 2014,
+      "note": "Oxford University Press. A handbook for teachers of English for academic purposes, with clear chapters on academic texts, reading, vocabulary and critical thinking."
+    }
+  ],
   "next": [
     "academic-writing",
     "reading-literature"
