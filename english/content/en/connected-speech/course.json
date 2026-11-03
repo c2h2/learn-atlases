@@ -7,11 +7,27 @@
   "order": 80,
   "tagline": "Word stress patterns, sentence stress and focus, weak forms, rhythm, linking, elision and assimilation, falling and rising tones, intonation and attitude, Mandarin tones and English intonation, and hearing fast speech",
   "summary": "In connected speech English words change: unstressed syllables shrink, and sounds link, disappear or blend, while the melody of the voice carries meaning. Mandarin uses pitch mainly to tell words apart; English uses it to show focus, attitude and the structure of what is said, so learners often find natural English hard to follow and their own English hard to hear. This course covers word and sentence stress, weak forms, rhythm, linking, elision, assimilation and intonation, and applies them to listening.",
-  "overview": [],
+  "overview": [
+    "This course follows English from the word to the stream of speech. In a dictionary every word has its full form; in speech the words of a sentence are not equal. A few syllables are stressed and carry the beat, while the rest are shortened and weakened; words run into each other, sounds disappear or change, and the pitch of the voice rises and falls to show what is new, what is finished and how the speaker feels. The course describes these changes for the two reference accents of the atlas, General British (GB) and General American (GA), using the transcription set out in the course *Sounds of English*.",
+    "Connected speech matters for both sides of a conversation. A learner who knows every word of a sentence may still not recognise it when it is spoken at normal speed, because *What do you want to do?* sounds nothing like five separate dictionary words. And a learner who gives every syllable the same length and the same tone can be hard to follow, because English listeners rely on stress and intonation to find the words and the important information. The aim is not to imitate one native speaker but to be easy to understand and to understand others.",
+    "The chapters go from small units to large ones: stress in longer words and compounds, stress in the sentence and the focus it shows, the weak forms of function words, rhythm, and the three main processes of connected speech — linking, elision and assimilation. Three chapters then deal with intonation: the basic falls and rises, what intonation adds about attitude, and how the pitch habits of Mandarin and other tone languages carry over into English. The last chapter puts everything together for listening to fast, natural speech.",
+    "For most Chinese learners the hardest part is not any single sound but the difference in how pitch and timing are organised. In Mandarin, pitch belongs to each syllable as its tone and tells words apart, and most syllables keep a full vowel; in English, pitch belongs to the phrase and shows focus and attitude, and unstressed syllables are reduced. Work with your ears and your voice: mark stresses and nuclei on a text before you read it aloud, listen for the stressed words first, record yourself, and practise with short, natural sentences rather than with words in isolation."
+  ],
   "prerequisites": [
     "sounds-of-english"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Predict the stress of longer words from their suffixes, and pronounce compound nouns, phrases and phrasal verbs with the usual stress (*a BLACKbird*, *a black BIRD*, *to set UP*, *a SETup*).",
+    "Identify the content words and the nucleus in a spoken or written sentence, and move the nucleus to show contrast or new information.",
+    "Use the weak forms of common function words such as *to*, *for*, *of*, *and*, *can* and *them*, and choose the strong form when the word is stressed, cited or at the end of a phrase.",
+    "Explain how English rhythm differs from that of Mandarin, and why the strict \"stress-timing\" model is not supported by measurement.",
+    "Link words in speech, consonant to vowel and vowel to vowel with /j/, /w/ or (in GB) /r/, without adding glottal stops or extra vowels.",
+    "Recognise elision and assimilation in phrases such as *next day*, *ten pounds* and *would you*, and use the informal forms *gonna* and *wanna* only where they are possible and appropriate.",
+    "Choose a fall or a rise for statements, questions, lists and question tags, and mark the nucleus and tone of an utterance with ↘ and ↗.",
+    "Describe how tone and pitch range signal politeness, surprise, interest or reservation, and avoid an unintended flat or abrupt delivery.",
+    "Explain the difference between Mandarin lexical tone and English intonation, and practise English pitch patterns with humming, marking and shadowing.",
+    "Decode natural fast speech by listening for stressed words, reduced forms and word boundaries, using dictation and shadowing."
+  ],
   "chapters": [
     {
       "slug": "word-stress-patterns",
@@ -95,8 +111,127 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1775,
+      "title": "Steele's *Melody and Measure of Speech*",
+      "detail": "Joshua Steele's *An Essay Towards Establishing the Melody and Measure of Speech* used a musical notation to record the pitch and rhythm of spoken English, one of the first attempts to write intonation down.",
+      "people": [
+        "Joshua Steele"
+      ]
+    },
+    {
+      "year": 1922,
+      "title": "Palmer's *English Intonation*",
+      "detail": "Harold Palmer's *English Intonation, with Systematic Exercises* was one of the first systematic accounts of English intonation for learners, dividing the tone unit into parts around a nucleus.",
+      "people": [
+        "Harold E. Palmer"
+      ]
+    },
+    {
+      "year": 1926,
+      "title": "Armstrong and Ward's *Handbook of English Intonation*",
+      "detail": "Lilias Armstrong and Ida Ward described the intonation of southern British English with simple pitch diagrams, and their book was used in teaching for decades.",
+      "people": [
+        "Lilias E. Armstrong",
+        "Ida C. Ward"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "Chao's tone letters",
+      "detail": "Chao Yuen Ren (赵元任) proposed a five-level scale for describing pitch, with tone letters, which is still the usual way of writing the tones of Mandarin and other Chinese varieties (55, 35, 214, 51).",
+      "people": [
+        "Chao Yuen Ren"
+      ]
+    },
+    {
+      "year": 1945,
+      "title": "Pike's *Intonation of American English*",
+      "detail": "Kenneth Pike described American intonation with four pitch levels and introduced the terms \"stress-timed\" and \"syllable-timed\" rhythm.",
+      "people": [
+        "Kenneth L. Pike"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "O'Connor and Arnold's *Intonation of Colloquial English*",
+      "detail": "J. D. O'Connor and G. F. Arnold presented British intonation as a set of tone groups, each linked to attitudes in everyday dialogues; the book shaped intonation teaching for a generation.",
+      "people": [
+        "J. D. O'Connor",
+        "G. F. Arnold"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Halliday's tonality, tonicity and tone",
+      "detail": "M. A. K. Halliday's *Intonation and Grammar in British English* separated three choices — how speech is divided into tone units, where the nucleus falls, and which tone it carries — a framework later used by John Wells.",
+      "people": [
+        "M. A. K. Halliday"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "Measuring stress-timing",
+      "detail": "Peter Roach measured the intervals between stresses and between syllables in several languages and found no support for the claim that English stresses come at equal intervals; Rebecca Dauer (1983) argued that rhythm differences come from syllable structure and vowel reduction.",
+      "people": [
+        "Peter Roach",
+        "Rebecca M. Dauer"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "Wells's *English Intonation*",
+      "detail": "John Wells's *English Intonation: An Introduction* gave a modern account of GB intonation, with comparisons with American English and exercises for learners.",
+      "people": [
+        "John C. Wells"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "English Phonetics and Phonology: A Practical Course",
+      "authors": "Peter Roach",
+      "year": 2009,
+      "note": "4th edition. Clear chapters on complex word stress, weak forms, connected speech (assimilation, elision, linking), rhythm and intonation, with exercises; the best first reference for this course."
+    },
+    {
+      "title": "Gimson's Pronunciation of English",
+      "authors": "Alan Cruttenden",
+      "year": 2014,
+      "note": "8th edition. The standard full description of General British, with detailed sections on word and compound stress, connected speech and intonation, and advice for learners."
+    },
+    {
+      "title": "English Intonation: An Introduction",
+      "authors": "John C. Wells",
+      "year": 2006,
+      "note": "An accessible guide to intonation organised around tonality, tonicity and tone, with many examples, notes on American English and practice material."
+    },
+    {
+      "title": "Longman Pronunciation Dictionary",
+      "authors": "John C. Wells",
+      "year": 2008,
+      "note": "3rd edition. The source of the atlas's transcription; gives the stress of words, compounds and phrases, weak forms and GB–GA differences."
+    },
+    {
+      "title": "Intonation",
+      "authors": "Alan Cruttenden",
+      "year": 1997,
+      "note": "2nd edition. A more advanced introduction to intonation in English and other languages, including the meanings of tones and comparisons with tone languages."
+    },
+    {
+      "title": "Listening to Spoken English",
+      "authors": "Gillian Brown",
+      "year": 1990,
+      "note": "2nd edition. Shows how natural spoken English differs from careful speech and what this means for teaching listening."
+    },
+    {
+      "title": "Practical Phonetics and Phonology",
+      "authors": "Beverley Collins and Inger M. Mees",
+      "year": 2013,
+      "note": "3rd edition. A course book with good chapters on connected speech and intonation, and examples from several accents."
+    }
+  ],
   "next": [
     "listening-and-conversation",
     "presentations-and-discussion"
