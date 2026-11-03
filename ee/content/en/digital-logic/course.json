@@ -7,9 +7,24 @@
   "order": 20,
   "tagline": "Number systems, Boolean algebra, combinational and sequential logic, state machines and hardware description",
   "summary": "Every digital system is built from logic gates and flip-flops. This course covers number representations, Boolean algebra and logic minimisation, combinational building blocks, sequential circuits and finite-state machines, memories and programmable logic, and the design of digital hardware with a hardware description language.",
-  "overview": [],
+  "overview": [
+    "Every digital system, from a pocket calculator to a data-centre processor, is built from two kinds of element: **logic gates**, whose outputs are Boolean functions of their present inputs, and **storage elements** such as flip-flops, which remember a bit from one clock cycle to the next. Digital logic is the discipline of combining these elements into circuits that do exactly what a specification demands, reliably, at a given speed and at a reasonable cost. It is the layer of electrical engineering where physics hands over to abstraction: a voltage near $V_{DD}$ becomes a 1, a voltage near ground becomes a 0, and from then on the designer reasons with algebra, tables and state diagrams.",
+    "The course climbs that ladder of abstraction one rung at a time. We start with the way numbers and symbols are represented as bit patterns (binary, hexadecimal, two's complement, fixed point, BCD and Gray code), then develop Boolean algebra and the gates that implement it, and learn to minimise logic with Karnaugh maps and the Quine–McCluskey method. From there we build the standard combinational blocks — multiplexers, decoders, adders, comparators and ALUs — and then add memory: latches and flip-flops with their setup, hold and propagation times, finite-state machines, registers and counters, and the large memories and programmable devices (SRAM, DRAM, FPGAs) on which real designs are built. The last chapter describes hardware in Verilog and closes the loop with static timing analysis and synchronous design practice.",
+    "Two things make the subject harder than its algebra suggests. First, real gates take time to switch, so a circuit that is logically correct can still fail if a signal arrives too late, or too early, at a flip-flop; timing is part of correctness, not an afterthought. Second, designs grow quickly beyond what can be checked by hand, so discipline matters: one clock, registers between blocks of combinational logic, state machines drawn before they are coded, and every design simulated before it is trusted. The worked examples follow that discipline throughout, and the exercises take you from truth tables to complete small designs."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Convert numbers between binary, octal, decimal and hexadecimal, and perform two's complement and fixed-point arithmetic including overflow detection.",
+    "Manipulate Boolean expressions with the axioms and theorems of Boolean algebra and express any function in canonical sum-of-products and product-of-sums forms.",
+    "Minimise two-level logic with Karnaugh maps and the Quine–McCluskey method, exploiting don't-care conditions, and recognise when multilevel logic is cheaper.",
+    "Design and analyse combinational building blocks such as multiplexers, decoders, adders, comparators and simple arithmetic logic units, and estimate their delay.",
+    "Explain how latches and edge-triggered flip-flops store state, and apply setup, hold and clock-to-output times to the timing of a synchronous circuit.",
+    "Specify sequential behaviour as Moore and Mealy finite-state machines, and carry a design from state diagram through state assignment and minimisation to logic equations.",
+    "Design shift registers, synchronous counters and simple register-transfer datapaths with their controllers.",
+    "Describe the organisation of ROM, SRAM and DRAM, and map logic onto programmable devices such as PLAs and FPGAs.",
+    "Write synthesisable Verilog for combinational and sequential logic, verify it in simulation, and determine the maximum clock frequency of a design by static timing analysis.",
+    "Synchronise asynchronous inputs safely and estimate the mean time between metastability failures."
+  ],
   "chapters": [
     {
       "slug": "number-systems",
@@ -83,8 +98,129 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1703,
+      "title": "Binary arithmetic published",
+      "detail": "Gottfried Wilhelm Leibniz published his account of arithmetic in base two, with the digits 0 and 1, in the memoirs of the Paris Académie Royale des Sciences.",
+      "people": [
+        "Gottfried Wilhelm Leibniz"
+      ]
+    },
+    {
+      "year": 1854,
+      "title": "The Laws of Thought",
+      "detail": "George Boole's An Investigation of the Laws of Thought set out an algebra of logic in which variables take the values 0 and 1, the foundation of what is now called Boolean algebra.",
+      "people": [
+        "George Boole"
+      ]
+    },
+    {
+      "year": 1918,
+      "title": "The Eccles–Jordan trigger circuit",
+      "detail": "William Eccles and F. W. Jordan filed a British patent for a circuit of two cross-coupled vacuum-tube amplifiers with two stable states, and described it in The Radio Review in 1919 — the first electronic flip-flop.",
+      "people": [
+        "William Eccles",
+        "F. W. Jordan"
+      ]
+    },
+    {
+      "year": 1938,
+      "title": "Switching circuits meet Boolean algebra",
+      "detail": "Claude Shannon's paper A Symbolic Analysis of Relay and Switching Circuits, based on his 1937 MIT master's thesis, showed that Boolean algebra describes and simplifies networks of relay contacts.",
+      "people": [
+        "Claude Shannon"
+      ]
+    },
+    {
+      "year": 1953,
+      "title": "The Karnaugh map",
+      "detail": "Maurice Karnaugh of Bell Labs published the map method for simplifying combinational logic, refining the diagram Edward Veitch had proposed in 1952.",
+      "people": [
+        "Maurice Karnaugh",
+        "Edward Veitch"
+      ]
+    },
+    {
+      "year": 1955,
+      "title": "Mealy machines",
+      "detail": "George Mealy's paper A Method for Synthesizing Sequential Circuits described state machines whose outputs depend on the present state and input; Edward Moore's Gedanken-experiments on Sequential Machines (1956) studied machines whose outputs depend on the state alone.",
+      "people": [
+        "George H. Mealy",
+        "Edward F. Moore"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "The Quine–McCluskey method",
+      "detail": "Edward McCluskey published a tabular procedure for finding all prime implicants of a Boolean function, extending Willard Van Orman Quine's 1952 work on simplifying truth functions; it became the basis of computer logic minimisation.",
+      "people": [
+        "Edward J. McCluskey",
+        "Willard Van Orman Quine"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "Verilog",
+      "detail": "Phil Moorby and Prabhu Goel at Gateway Design Automation developed the Verilog hardware description language and simulator around 1984; it was standardised as IEEE 1364 in 1995.",
+      "people": [
+        "Phil Moorby",
+        "Prabhu Goel"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "The first commercial FPGA",
+      "detail": "Xilinx, co-founded by Ross Freeman, introduced the XC2064, a field-programmable gate array of 64 configurable logic blocks whose function was set by on-chip static memory.",
+      "people": [
+        "Ross Freeman"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Digital Design and Computer Architecture",
+      "authors": "David Money Harris, Sarah L. Harris",
+      "year": 2021,
+      "note": "The most readable modern introduction, from gates to a working processor, with side-by-side Verilog and VHDL; the RISC-V edition is used here. Its timing and FSM chapters match this course closely."
+    },
+    {
+      "title": "Digital Design: With an Introduction to the Verilog HDL, VHDL, and SystemVerilog",
+      "authors": "M. Morris Mano, Michael D. Ciletti",
+      "year": 2018,
+      "note": "The classic textbook (6th edition): thorough on Boolean algebra, minimisation, and sequential-circuit analysis and design, with many exercises."
+    },
+    {
+      "title": "Digital Design: Principles and Practices",
+      "authors": "John F. Wakerly",
+      "year": 2018,
+      "note": "A practitioner's book (5th edition) strong on real devices, timing, and the reasons behind design rules; the best reference for synchronous design practice."
+    },
+    {
+      "title": "Contemporary Logic Design",
+      "authors": "Randy H. Katz, Gaetano Borriello",
+      "year": 2005,
+      "note": "A clear treatment of combinational and sequential design, state assignment and programmable logic, written for a first university course."
+    },
+    {
+      "title": "Fundamentals of Digital Logic with Verilog Design",
+      "authors": "Stephen Brown, Zvonko Vranesic",
+      "year": 2014,
+      "note": "Introduces Verilog alongside each topic and maps designs onto FPGAs; good worked examples of synthesis (3rd edition)."
+    },
+    {
+      "title": "Digital Design: A Systems Approach",
+      "authors": "William J. Dally, R. Curtis Harting",
+      "year": 2012,
+      "note": "A systems-oriented text emphasising datapaths, controllers, timing and good design style in Verilog."
+    },
+    {
+      "title": "CMOS VLSI Design: A Circuits and Systems Perspective",
+      "authors": "Neil H. E. Weste, David Money Harris",
+      "year": 2010,
+      "note": "For what lies beneath the gates: transistor-level logic, delay models, flip-flop circuits and memory arrays (4th edition); the next step after this course."
+    }
+  ],
   "next": [
     "computer-architecture",
     "digital-ic"
