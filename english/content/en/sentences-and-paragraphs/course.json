@@ -7,11 +7,27 @@
   "order": 110,
   "tagline": "Complete sentences, joining ideas with coordination and subordination, punctuation, capitals and spelling, topic sentences, coherent paragraphs, emails and messages, description and narration, and editing",
   "summary": "Clear writing starts with sentences that are complete and correctly joined, grouped into paragraphs that each make one point. This course covers the sentence-boundary errors learners make most, joining ideas with coordination and subordination, punctuation and spelling conventions, topic sentences and coherent paragraphs, everyday emails and messages, descriptive and narrative paragraphs, and how to edit your own writing.",
-  "overview": [],
+  "overview": [
+    "This course is about writing clear English at the level of the sentence and the paragraph. It begins with the sentence itself: what makes a written sentence complete, and how to repair the three boundary errors that learners make most often — fragments, run-on sentences and comma splices. It then shows the two ways of joining ideas inside a sentence, coordination (*and*, *but*, *or*, *so*) and subordination (*because*, *although*, *when*, *if*), followed by punctuation, capital letters and spelling. The second half moves up to the paragraph: the topic sentence, unity, coherence and linking words, and then three kinds of everyday writing — emails and messages, description and narration — before a final lesson on editing your own work.",
+    "Readers judge writing quickly. A text full of comma splices, missing capitals and paragraphs that wander from point to point is tiring to read even when every word is well chosen, and in exams, applications and work emails it gives a poor impression. These are also the skills on which longer writing depends: an essay or a report is a series of paragraphs, and a paragraph is a series of well-made sentences. The lessons describe what careful writers actually do, not school myths: starting a sentence with *And* or *But* is normal, a fragment can be used on purpose, and some conventions — the serial comma, single or double quotation marks — differ between British and American English without either being wrong.",
+    "Each lesson starts from a real problem, states the rules in numbered blocks, gives many short examples and model paragraphs written for the atlas, and ends with key takeaways and graded exercises with full answers. The first four lessons should be read in order; capitals and spelling can be read at any time after the first; the paragraph lessons build on one another and lead to the lessons on emails, description and narration, and editing. Later courses go further: *Complex Sentences* for the grammar of clauses, *Essay Writing* for whole essays, and *Academic Writing* for research writing.",
+    "Chinese speakers face some particular difficulties here. Chinese writing often joins several clauses with commas into one long sentence (一逗到底), while English ends a sentence when an independent clause is complete, so the commonest error in learners' English is the comma splice. Chinese uses pairs of connectives such as 虽然……但是 and 因为……所以, but English uses only one word of the pair. Chinese punctuation is full-width and includes marks English does not have (the enumeration comma 、, the title marks 《》), and Chinese has no capital letters at all. The notes on English and Chinese in each lesson explain these differences. The best habit is to check your own writing for one thing at a time — first sentence boundaries, then punctuation, then spelling — and to read it aloud before you send it."
+  ],
   "prerequisites": [
     "core-grammar"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Recognise fragments, run-on sentences and comma splices, and correct each of them in at least two ways.",
+    "Join two clauses with a coordinating conjunction and the right punctuation, and keep the items of a list or pair grammatically parallel.",
+    "Use subordinate clauses of reason, contrast, time and condition, punctuating them correctly and never pairing *although* with *but* or *because* with *so*.",
+    "Use commas, full stops, apostrophes, colons, semicolons, dashes and quotation marks in English text, with half-width punctuation and normal spacing, and follow either British or American conventions consistently.",
+    "Use capital letters for names, nationalities, languages, days, months and titles, apply the common spelling rules for endings, and keep to one spelling system (British or American).",
+    "Write a topic sentence with a clear controlling idea and remove sentences that do not support it.",
+    "Make a paragraph coherent by ordering its ideas, choosing suitable linking words and punctuating them correctly, and repeating or referring back to key words.",
+    "Write formal and informal emails and short messages with a suitable greeting, a clear purpose, polite requests and an appropriate ending.",
+    "Write a descriptive paragraph about a place or a person and a narrative paragraph about an event, using suitable tenses and time expressions.",
+    "Edit and proofread your own writing in separate passes with a checklist, and use feedback and an error log to avoid repeating mistakes."
+  ],
   "chapters": [
     {
       "slug": "complete-sentences",
@@ -97,8 +113,116 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1755,
+      "title": "Johnson's Dictionary",
+      "detail": "Samuel Johnson's *A Dictionary of the English Language* became the standard reference for British spelling. Many of its spellings, such as *colour* and *centre*, are still the British forms today.",
+      "people": [
+        "Samuel Johnson"
+      ]
+    },
+    {
+      "year": 1828,
+      "title": "Webster's American Dictionary",
+      "detail": "Noah Webster's *An American Dictionary of the English Language* used and spread simpler spellings such as *color*, *center* and *traveled*, which became the American standard.",
+      "people": [
+        "Noah Webster"
+      ]
+    },
+    {
+      "year": 1866,
+      "title": "Bain's rules for the paragraph",
+      "detail": "Alexander Bain's *English Composition and Rhetoric* set out rules for the paragraph, among them that a paragraph should keep to one subject and that its opening sentence should usually make that subject clear. School teaching of the topic sentence goes back to this tradition.",
+      "people": [
+        "Alexander Bain"
+      ]
+    },
+    {
+      "year": 1906,
+      "title": "The King's English",
+      "detail": "The brothers H. W. and F. G. Fowler published *The King's English*, a guide to good usage with a long chapter on punctuation. H. W. Fowler's *A Dictionary of Modern English Usage* followed in 1926.",
+      "people": [
+        "H. W. Fowler",
+        "F. G. Fowler"
+      ]
+    },
+    {
+      "year": 1906,
+      "title": "The first Chicago Manual of Style",
+      "detail": "The University of Chicago Press published its *Manual of Style*, a guide for authors and editors. Its later editions became the most widely used reference for American punctuation and style, including the serial comma.",
+      "people": []
+    },
+    {
+      "year": 1920,
+      "title": "New punctuation for Chinese",
+      "detail": "China's Ministry of Education approved a set of new-style punctuation marks for Chinese, based on a 1919 proposal by Hu Shi, Qian Xuantong, Liu Fu and others. Before this, Chinese texts were usually printed without modern punctuation.",
+      "people": [
+        "Hu Shi",
+        "Qian Xuantong",
+        "Liu Fu"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Cohesion in English",
+      "detail": "M. A. K. Halliday and Ruqaiya Hasan described the ways in which sentences in a text are tied together — reference, substitution, ellipsis, conjunction and lexical cohesion. Their categories are behind much modern teaching of linking words and paragraph coherence.",
+      "people": [
+        "M. A. K. Halliday",
+        "Ruqaiya Hasan"
+      ]
+    },
+    {
+      "year": 2011,
+      "title": "The current Chinese punctuation standard",
+      "detail": "The national standard GB/T 15834-2011 《标点符号用法》 replaced the 1995 version. It defines the use of Chinese punctuation marks, including the comma between the clauses of one sentence.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Practical English Usage",
+      "authors": "Michael Swan",
+      "year": 2016,
+      "note": "Fourth edition. Short, reliable entries on punctuation, conjunctions, linking words, spelling and British and American differences; the book to check a doubtful rule."
+    },
+    {
+      "title": "The Penguin Guide to Punctuation",
+      "authors": "R. L. Trask",
+      "year": 1997,
+      "note": "A short, clear guide to every English punctuation mark, with plain explanations of comma splices and the uses of the colon and semicolon."
+    },
+    {
+      "title": "Fowler's Dictionary of Modern English Usage",
+      "authors": "Jeremy Butterfield (ed.)",
+      "year": 2015,
+      "note": "Fourth edition of Fowler's classic. Entries on usage and punctuation that describe current practice and say plainly which old rules are myths."
+    },
+    {
+      "title": "The Chicago Manual of Style",
+      "authors": "The University of Chicago Press",
+      "year": 2017,
+      "note": "Seventeenth edition. The standard American guide for writers and editors; its chapter on punctuation is the usual reference for American conventions."
+    },
+    {
+      "title": "A Comprehensive Grammar of the English Language",
+      "authors": "Randolph Quirk, Sidney Greenbaum, Geoffrey Leech and Jan Svartvik",
+      "year": 1985,
+      "note": "The large reference grammar; its chapters on coordination and subordination and its appendix on punctuation describe the grammar behind the rules of this course."
+    },
+    {
+      "title": "Cohesion in English",
+      "authors": "M. A. K. Halliday and Ruqaiya Hasan",
+      "year": 1976,
+      "note": "The classic account of how texts hold together through reference, conjunction and repeated words; for teachers and readers who want the theory behind coherent paragraphs."
+    },
+    {
+      "title": "英汉对比研究",
+      "authors": "连淑能",
+      "year": 2010,
+      "note": "Enlarged edition (增订本). A detailed comparison of English and Chinese, including hypotaxis and parataxis (形合 and 意合), long Chinese sentences and their English equivalents; used here to check the notes on English and Chinese."
+    }
+  ],
   "next": [
     "essay-writing"
   ]
