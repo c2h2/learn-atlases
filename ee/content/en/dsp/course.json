@@ -7,12 +7,25 @@
   "order": 160,
   "tagline": "The DFT and FFT, FIR and IIR filter design, filter structures, multirate processing and spectral analysis",
   "summary": "Digital signal processing computes with sampled signals. This course develops the discrete Fourier transform and the fast algorithms that compute it, the design of FIR and IIR digital filters, their realisation with finite precision, multirate systems, and the estimation of spectra from data.",
-  "overview": [],
+  "overview": [
+    "**Digital signal processing** (DSP) is computation on sampled signals: the samples from an analog-to-digital converter go into a processor, a program does arithmetic on them, and the results come out as new samples, a decision or a picture. Every phone call, every compressed song and photograph, every radar return, ultrasound image and software-defined radio passes through such programs. Because the processing is arithmetic, it is exactly repeatable, does not drift with temperature or age, and can be changed by reprogramming; and because processors are cheap, filters that would need dozens of precision components in analog form cost a few hundred multiplications per sample.",
+    "The course builds on the discrete-time theory of [[signals-systems]] — sequences, convolution, the DTFT and the $z$-transform — and on the description of random signals in [[random-signals]]. It begins by restating that theory in the form a DSP engineer uses it, then develops the **discrete Fourier transform**, the one Fourier transform a computer can actually evaluate, and the **fast Fourier transform** algorithms that evaluate it in $N\\log_2N$ rather than $N^2$ operations. The middle of the course is filter design: **FIR filters** by windowing, frequency sampling and equiripple optimisation, and **IIR filters** by transforming analog prototypes with impulse invariance or the bilinear transform. We then ask how a designed filter should be computed — direct, cascade, parallel and lattice structures — and what finite word length does to coefficients and signals. The last two chapters treat **multirate** systems, which change the sampling rate and underlie filter banks and efficient converters, and **spectral analysis**, the estimation of spectra from finite, noisy records.",
+    "What makes DSP demanding is that three descriptions must be kept in mind at once: the mathematics (transforms, poles and zeros, spectra), the algorithm (which numbers are computed, in what order and how many), and the arithmetic (finite word length, overflow and rounding). A filter that is perfect on paper can fail because its poles move when its coefficients are rounded; a spectrum that looks clean can be an artefact of the window. Check every design numerically, compare the answer with the theory, and keep track of whether a frequency is in hertz, radians per second, radians per sample or DFT bins."
+  ],
   "prerequisites": [
     "signals-systems",
     "random-signals"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Analyse discrete-time LTI systems with difference equations, convolution, the DTFT and the $z$-transform, including magnitude, phase and group delay.",
+    "Compute the discrete Fourier transform, relate it to the DTFT, and use circular convolution, zero padding, overlap-add and overlap-save to filter long signals.",
+    "Derive radix-2 decimation-in-time and decimation-in-frequency FFT algorithms and count their arithmetic, and apply the Goertzel algorithm.",
+    "Design linear-phase FIR filters by the window, Kaiser, frequency-sampling and equiripple methods to meet a magnitude specification.",
+    "Design IIR filters from Butterworth, Chebyshev and elliptic prototypes with impulse invariance and the bilinear transform, including frequency pre-warping.",
+    "Realise filters in direct, cascade, parallel and lattice structures and predict the effects of coefficient quantisation, round-off noise, overflow and limit cycles.",
+    "Design decimators, interpolators and sample-rate converters with polyphase filters, and analyse two-channel filter banks for aliasing cancellation and perfect reconstruction.",
+    "Estimate power spectra with windowed periodograms, Bartlett and Welch averaging and the short-time Fourier transform, and choose the record length and window for a required resolution and variance."
+  ],
   "chapters": [
     {
       "slug": "discrete-time-systems",
@@ -82,8 +95,121 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1805,
+      "title": "Gauss's fast trigonometric interpolation",
+      "detail": "In an unpublished manuscript on the orbits of the asteroids Pallas and Juno, written around 1805 and printed only in 1866, Carl Friedrich Gauss computed trigonometric interpolation coefficients by a divide-and-conquer method equivalent to the FFT.",
+      "people": [
+        "Carl Friedrich Gauss"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "The measurement of power spectra",
+      "detail": "Ralph Blackman and John Tukey published in the Bell System Technical Journal a systematic method for estimating spectra from finite records by windowing the estimated autocorrelation, with a careful account of bias and variance.",
+      "people": [
+        "Ralph B. Blackman",
+        "John W. Tukey"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "The Cooley–Tukey FFT",
+      "detail": "James Cooley and John Tukey's paper An Algorithm for the Machine Calculation of Complex Fourier Series reduced the cost of an $N$-point DFT from about $N^2$ to about $N\\log_2N$ operations and launched digital spectral analysis.",
+      "people": [
+        "James W. Cooley",
+        "John W. Tukey"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Welch's averaged periodogram",
+      "detail": "Peter Welch proposed estimating a power spectrum by averaging FFT periodograms of overlapping, windowed segments, the method still used by most spectrum-analysis software.",
+      "people": [
+        "Peter D. Welch"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "Optimal equiripple FIR filters",
+      "detail": "Thomas Parks and James McClellan applied the Remez exchange algorithm and the Chebyshev alternation theorem to design linear-phase FIR filters with the smallest possible maximum error.",
+      "people": [
+        "Thomas W. Parks",
+        "James H. McClellan"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "The Kaiser window",
+      "detail": "James Kaiser presented the window based on the modified Bessel function $I_0$, with simple formulas for its shape parameter and length in terms of the required stopband attenuation and transition width.",
+      "people": [
+        "James F. Kaiser"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Quadrature mirror filters",
+      "detail": "Daniel Esteban and Claude Galand, with Alain Croisier, showed how a two-band filter bank can cancel the aliasing introduced by decimating each band, the starting point of subband coding and wavelets.",
+      "people": [
+        "Alain Croisier",
+        "Daniel Esteban",
+        "Claude Galand"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "Windows for harmonic analysis",
+      "detail": "Fredric J. Harris's survey On the Use of Windows for Harmonic Analysis with the Discrete Fourier Transform tabulated the sidelobe levels, bandwidths and scalloping losses of dozens of windows and became the standard reference.",
+      "people": [
+        "Fredric J. Harris"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Single-chip DSPs",
+      "detail": "Texas Instruments' TMS32010, a processor with a hardware multiplier able to perform a multiply–accumulate in one 200 ns cycle, made real-time digital filtering cheap and spread DSP into modems, telephony and audio.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Discrete-Time Signal Processing (3rd ed.)",
+      "authors": "Alan V. Oppenheim, Ronald W. Schafer",
+      "year": 2010,
+      "note": "The standard graduate and advanced undergraduate text; this course follows its notation for the DFT, filter design and structures."
+    },
+    {
+      "title": "Digital Signal Processing: Principles, Algorithms and Applications (4th ed.)",
+      "authors": "John G. Proakis, Dimitris G. Manolakis",
+      "year": 2007,
+      "note": "Broad and example-rich, with thorough chapters on FFT algorithms, multirate processing and spectral estimation."
+    },
+    {
+      "title": "Digital Signal Processing: A Computer-Based Approach (4th ed.)",
+      "authors": "Sanjit K. Mitra",
+      "year": 2011,
+      "note": "Strong on filter design and realisation, with many computed examples."
+    },
+    {
+      "title": "Understanding Digital Signal Processing (3rd ed.)",
+      "authors": "Richard G. Lyons",
+      "year": 2011,
+      "note": "An intuitive, practitioner's book: windows, the FFT, CIC filters and many implementation tricks explained without heavy mathematics."
+    },
+    {
+      "title": "Multirate Systems and Filter Banks",
+      "authors": "P. P. Vaidyanathan",
+      "year": 1993,
+      "note": "The definitive treatment of decimation, polyphase structures, QMF banks and perfect reconstruction."
+    },
+    {
+      "title": "Spectral Analysis of Signals",
+      "authors": "Petre Stoica, Randolph L. Moses",
+      "year": 2005,
+      "note": "A clear account of nonparametric and parametric spectral estimation with their statistical properties."
+    }
+  ],
   "next": [
     "communication-systems"
   ]
