@@ -112,6 +112,16 @@
       ]
     },
     {
+      "year": 1885,
+      "title": "The closed-core transformer",
+      "detail": "Zipernowsky, Bláthy and Déri of the Ganz works in Budapest built efficient closed-core transformers and proposed connecting them in parallel across the supply, the arrangement used in every distribution system since.",
+      "people": [
+        "Károly Zipernowsky",
+        "Ottó Bláthy",
+        "Miksa Déri"
+      ]
+    },
+    {
       "year": 1888,
       "title": "The polyphase system",
       "detail": "Tesla's patents on the polyphase system and the induction motor laid the basis of three-phase power, the standard of transmission and the subject of the three-phase chapter.",
@@ -120,11 +130,46 @@
       ]
     },
     {
+      "year": 1891,
+      "title": "Lauffen–Frankfurt transmission",
+      "detail": "A 175 km three-phase line built for the International Electrotechnical Exhibition in Frankfurt, with equipment from AEG (designed by Dolivo-Dobrovolsky) and Oerlikon (designed by Charles Brown), showed that three-phase AC could transmit power efficiently over long distances.",
+      "people": [
+        "Mikhail Dolivo-Dobrovolsky",
+        "Charles E. L. Brown",
+        "Oskar von Miller"
+      ]
+    },
+    {
       "year": 1893,
       "title": "The impedance concept",
       "detail": "Steinmetz presented complex numbers as the way to calculate alternating currents: the phasor and the complex impedance, which became the standard engineering method.",
       "people": [
         "Charles Steinmetz"
+      ]
+    },
+    {
+      "year": 1915,
+      "title": "The electric wave filter",
+      "detail": "George Campbell in the United States and Karl Willy Wagner in Germany independently invented the LC ladder filter, used to separate the channels of multiplexed telephone lines.",
+      "people": [
+        "George Campbell",
+        "Karl Willy Wagner"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "The Butterworth filter",
+      "detail": "Stephen Butterworth published the maximally flat low-pass response, still the default choice for a filter with no passband ripple.",
+      "people": [
+        "Stephen Butterworth"
+      ]
+    },
+    {
+      "year": 1940,
+      "title": "Bode's gain–phase relations",
+      "detail": "Hendrik Bode at Bell Laboratories published the relations between gain and phase of a network and the asymptotic logarithmic plots now called Bode plots.",
+      "people": [
+        "Hendrik Bode"
       ]
     },
     {

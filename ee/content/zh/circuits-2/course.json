@@ -65,6 +65,15 @@
       ]
     },
     {
+      "title": "闭合铁心变压器",
+      "detail": "布达佩斯冈茨（Ganz）工厂的齐珀诺夫斯基、布拉西与代里制成了高效的闭合铁心变压器，并提出将变压器并联接在电源上，此后所有配电系统都采用这种接法。",
+      "people": [
+        "Károly Zipernowsky",
+        "Ottó Bláthy",
+        "Miksa Déri"
+      ]
+    },
+    {
       "title": "多相系统",
       "detail": "尼古拉·特斯拉（Nikola Tesla）关于多相系统与感应电动机的专利为三相电力奠定了基础；三相输电由此成为输电的标准，也就是三相一章的主题。",
       "people": [
@@ -72,10 +81,41 @@
       ]
     },
     {
+      "title": "劳芬–法兰克福输电",
+      "detail": "为法兰克福国际电工展览会修建的 175 km 三相线路，采用 AEG（多利沃-多布罗沃尔斯基设计）与奥利康（查尔斯·布朗设计）的设备，证明了三相交流电能够高效地远距离输电。",
+      "people": [
+        "Mikhail Dolivo-Dobrovolsky",
+        "Charles E. L. Brown",
+        "Oskar von Miller"
+      ]
+    },
+    {
       "title": "阻抗的概念",
       "detail": "查尔斯·斯坦梅茨（Charles Steinmetz）提出用复数计算交流电：相量与复数阻抗由此成为工程上的标准方法。",
       "people": [
         "Charles Steinmetz"
+      ]
+    },
+    {
+      "title": "电波滤波器",
+      "detail": "美国的乔治·坎贝尔与德国的卡尔·维利·瓦格纳各自独立发明了 LC 梯形滤波器，用于分离多路复用电话线路中的各个信道。",
+      "people": [
+        "George Campbell",
+        "Karl Willy Wagner"
+      ]
+    },
+    {
+      "title": "巴特沃斯滤波器",
+      "detail": "斯蒂芬·巴特沃斯发表了最大平坦的低通响应，它至今仍是通带无波纹滤波器的默认选择。",
+      "people": [
+        "Stephen Butterworth"
+      ]
+    },
+    {
+      "title": "伯德的增益–相位关系",
+      "detail": "贝尔实验室的亨德里克·伯德发表了网络增益与相位之间的关系，以及如今称为伯德图的渐近对数图。",
+      "people": [
+        "Hendrik Bode"
       ]
     },
     {
