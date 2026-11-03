@@ -7,12 +7,27 @@
   "order": 100,
   "tagline": "Homeostasis, energetics and body size, temperature, feeding, gas exchange, circulation, osmoregulation, muscle and hormones across the animal kingdom",
   "summary": "Animals live in deserts, deep oceans and polar ice, and their bodies solve the same problems in different ways. This comparative course covers homeostasis and control, energy metabolism and body size, temperature regulation, feeding and digestion, gas exchange, circulation, water and salt balance, muscle and locomotion, and hormones, always asking how physiology is adapted to the environment.",
-  "overview": [],
+  "overview": [
+    "Animal physiology asks how the bodies of animals work: how they keep their internal fluids within the narrow limits their cells can tolerate, how they obtain and spend energy, keep warm or cope with being cold, take in food and oxygen, move them around the body, get rid of waste and excess water or salt, generate force and coordinate all of this with hormones. The comparative approach treats the whole animal kingdom as a natural experiment. A tuna, a desert kangaroo rat, a hummingbird in torpor, a diving seal and an insect breathing through tubes have all solved the same physical problems, and comparing their solutions shows both the constraints set by physics and chemistry and the ways evolution has worked within them.",
+    "The course begins with the logic of control: the internal environment, negative and positive feedback, regulators and conformers, and the comparative method. It then follows energy, through metabolic rate and its scaling with body size, to temperature regulation in ectotherms and endotherms, and on to the supply side: feeding and digestion, gas exchange in water and air, and circulation. The later chapters cover osmoregulation and excretion in the sea, in fresh water and on land; muscle and the mechanics of locomotion; and the hormones that coordinate growth, moulting, reproduction and metabolism. The cellular and molecular background (membrane transport, signalling, the cytoskeleton, oxidative phosphorylation) comes from Cell Biology and Biochemistry, to which these lessons link instead of repeating it. Nervous systems are the subject of Neuroscience, and human and clinical physiology belong to Medicine Atlas.",
+    "The difficulty of the subject is its breadth: dozens of organ systems in thousands of species. The way through is to look for the few physical principles that recur everywhere, such as diffusion and Fick's law, the surface-to-volume ratio, the scaling of rates with body mass, countercurrent exchange, the Hagen–Poiseuille and Laplace relations, osmotic and electrochemical gradients, and the energy cost of everything, and to put numbers on every adaptation. Each lesson therefore works through quantitative examples with real orders of magnitude and asks which assumption a model makes and where it breaks down."
+  ],
   "prerequisites": [
     "cell-biology",
     "biochemistry"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain homeostasis in terms of regulated variables, sensors, effectors and feedback, and calculate the steady-state error and response time of a proportional control loop.",
+    "Distinguish regulators from conformers, and acclimation from evolutionary adaptation, and explain why comparisons between species must take phylogeny into account.",
+    "Estimate metabolic rates from gas exchange and fit allometric relations on log–log axes, interpreting scaling exponents such as Kleiber's 3/4 as empirical regularities.",
+    "Analyse heat exchange by conduction, convection, radiation and evaporation, and explain the thermoneutral zone, countercurrent heat exchange, torpor and hibernation.",
+    "Compare feeding strategies and digestive systems, and relate gut length, retention time and fermentation to diet and body size.",
+    "Apply Fick's law to gills, lungs and tracheae, and interpret oxygen-equilibrium curves, the Bohr effect and the adaptations of respiratory pigments.",
+    "Compare open and closed circulations, single and double circuits, and calculate cardiac output, resistance and wall tension with the Fick principle, the Hagen–Poiseuille law and the law of Laplace.",
+    "Explain how animals osmoregulate in sea water, fresh water and on land, how the countercurrent multiplier concentrates urine, and why nitrogen is excreted as ammonia, urea or uric acid.",
+    "Describe excitation–contraction coupling in skeletal, cardiac and smooth muscle, interpret force–velocity and length–tension relations, and calculate the cost of transport.",
+    "Describe the classes of hormones and receptors and explain the endocrine control of growth, moulting and metamorphosis, reproduction and metabolism in vertebrates and insects."
+  ],
   "chapters": [
     {
       "slug": "homeostasis",
@@ -89,8 +104,141 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1628,
+      "title": "The circulation of the blood",
+      "detail": "In De Motu Cordis William Harvey argued from vivisection of many species and from the quantity of blood pumped by the heart that blood circulates in a closed loop rather than being made and consumed.",
+      "people": [
+        "William Harvey"
+      ]
+    },
+    {
+      "year": 1783,
+      "title": "Respiration is a slow combustion",
+      "detail": "Antoine Lavoisier and Pierre-Simon Laplace measured the heat given off by a guinea pig with an ice calorimeter and compared it with the carbon dioxide it produced, showing that animal heat comes from the oxidation of food.",
+      "people": [
+        "Antoine Lavoisier",
+        "Pierre-Simon Laplace"
+      ]
+    },
+    {
+      "year": 1865,
+      "title": "The internal environment",
+      "detail": "In his Introduction à l'étude de la médecine expérimentale Claude Bernard argued that animals live in a milieu intérieur, the fluid bathing their cells, whose constancy is the condition for a free life.",
+      "people": [
+        "Claude Bernard"
+      ]
+    },
+    {
+      "year": 1902,
+      "title": "The first hormone",
+      "detail": "William Bayliss and Ernest Starling found that acid in the denervated small intestine of a dog still stimulated pancreatic secretion through a blood-borne substance, secretin; Starling introduced the word hormone in 1905.",
+      "people": [
+        "William Bayliss",
+        "Ernest Starling"
+      ]
+    },
+    {
+      "year": 1910,
+      "title": "Gas exchange by diffusion",
+      "detail": "August and Marie Krogh showed that the oxygen partial pressure in the alveolar air of the lung is always higher than in arterial blood, so oxygen enters the blood by diffusion and no active secretion is needed.",
+      "people": [
+        "August Krogh",
+        "Marie Krogh"
+      ]
+    },
+    {
+      "year": 1929,
+      "title": "Homeostasis",
+      "detail": "Walter Cannon's review 'Organization for physiological homeostasis' named and analysed the coordinated processes that keep the internal environment steady; his book The Wisdom of the Body followed in 1932.",
+      "people": [
+        "Walter B. Cannon"
+      ]
+    },
+    {
+      "year": 1932,
+      "title": "Body size and metabolism",
+      "detail": "Max Kleiber's compilation of basal metabolic rates of mammals and birds showed that metabolic rate scales with roughly the three-quarter power of body mass, not with surface area.",
+      "people": [
+        "Max Kleiber"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "Insulation of arctic and tropical animals",
+      "detail": "Per Scholander, Laurence Irving and colleagues measured the insulation and metabolic responses to cold of arctic and tropical mammals and birds, establishing the concepts of thermal neutrality and lower critical temperature in a comparative framework.",
+      "people": [
+        "Per F. Scholander",
+        "Laurence Irving"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "The countercurrent multiplier",
+      "detail": "Bartholomäus Hargitay and Werner Kuhn proposed that the loop of Henle concentrates urine by countercurrent multiplication, and with Heinrich Wirz showed the predicted gradient of osmolality in slices of rat kidney.",
+      "people": [
+        "Bartholomäus Hargitay",
+        "Werner Kuhn",
+        "Heinrich Wirz"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "Sliding filaments",
+      "detail": "Hugh Huxley and Jean Hanson, and Andrew Huxley and Rolf Niedergerke, showed independently that muscle shortens by the sliding of thin and thick filaments past each other, not by the shortening of the filaments themselves.",
+      "people": [
+        "Hugh Huxley",
+        "Jean Hanson",
+        "Andrew Huxley",
+        "Rolf Niedergerke"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Animal Physiology, 4th ed.",
+      "authors": "Richard W. Hill, Gordon A. Wyse and Margaret Anderson",
+      "year": 2016,
+      "note": "The standard comparative textbook for this course: clear on energetics, thermoregulation, osmoregulation and respiration across invertebrates and vertebrates, with many case studies."
+    },
+    {
+      "title": "Animal Physiology: Adaptation and Environment, 5th ed.",
+      "authors": "Knut Schmidt-Nielsen",
+      "year": 1997,
+      "note": "A classic organised by environment and physical principle; the best book for learning to think quantitatively about how animals cope with heat, water, oxygen and size."
+    },
+    {
+      "title": "Scaling: Why Is Animal Size So Important?",
+      "authors": "Knut Schmidt-Nielsen",
+      "year": 1984,
+      "note": "A short, readable introduction to allometry, metabolic scaling and the consequences of body size for every organ system."
+    },
+    {
+      "title": "Eckert Animal Physiology: Mechanisms and Adaptations, 5th ed.",
+      "authors": "David Randall, Warren Burggren and Kathleen French",
+      "year": 2002,
+      "note": "Stronger than most on cellular and neural mechanisms, muscle and endocrinology, with a comparative emphasis."
+    },
+    {
+      "title": "Environmental Physiology of Animals, 2nd ed.",
+      "authors": "Pat Willmer, Graham Stone and Ian Johnston",
+      "year": 2005,
+      "note": "Organised by habitat (marine, freshwater, terrestrial, extreme); very good on invertebrates and on how physiology fits ecology."
+    },
+    {
+      "title": "Comparative Animal Physiology",
+      "authors": "Philip C. Withers",
+      "year": 1992,
+      "note": "A detailed, quantitative reference with extensive tables of data across taxa; useful for problem-solving and for checking orders of magnitude."
+    },
+    {
+      "title": "The Physiological Ecology of Vertebrates: A View from Energetics",
+      "authors": "Brian K. McNab",
+      "year": 2002,
+      "note": "An in-depth treatment of metabolic rate, body size, temperature regulation, torpor and their ecological correlates in vertebrates."
+    }
+  ],
   "next": [
     "neuroscience"
   ]
