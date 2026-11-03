@@ -7,11 +7,27 @@
   "order": 140,
   "tagline": "What modal verbs do, ability and possibility, obligation and advice, certainty and deduction, modals and the past, *will*, *would* and *shall*, modality without modal verbs, hedging and boosting, and politeness",
   "summary": "Modality is how speakers show how certain they are, and what they consider necessary, possible or desirable. This course covers the meanings of the modal verbs and their past forms, other ways of expressing modality with adverbs, adjectives, nouns and verbs, the hedging that makes academic claims precise, and the part modality plays in politeness.",
-  "overview": [],
+  "overview": [
+    "This course is about how English speakers and writers show what they think is possible, probable, certain, necessary, allowed or advisable. Its centre is the small group of modal verbs — *can*, *could*, *may*, *might*, *must*, *shall*, *should*, *will* and *would* — together with the semi-modals that share their work, such as *have to*, *need to*, *be able to* and *had better*. But modality is wider than a list of verbs: *probably*, *it is likely that*, *there is a chance that* and *the results suggest* are modal too, and the course follows modality from grammar into vocabulary, academic writing and politeness.",
+    "Modality matters because it carries the speaker's commitment. *The drug cures the disease*, *The drug may cure the disease* and *The drug must cure the disease* report the same idea with three different degrees of confidence, and a reader judges the writer by whether that confidence is justified. In conversation, the difference between *Give me the report*, *Can you give me the report?* and *Could you possibly give me the report?* is mainly a difference of modality, and it decides whether a request sounds friendly, neutral or rude.",
+    "The course builds on the first modal verbs of *Core Grammar* and on the tense system of *Tense and Aspect*. The first chapter sets out the forms and the key distinction between the two kinds of modal meaning: how likely something is (epistemic modality) and what is necessary or allowed (deontic modality). The next chapters take the meanings in turn — ability and possibility, obligation and advice, certainty and deduction — and then add the past (*must have been*, *should have told*) and the many uses of *will*, *would* and *shall*. The last three chapters move beyond the modal verbs: adverbs, adjectives, nouns and verbs with modal meaning; hedging and boosting in academic writing; and the role of modality in politeness. Conditionals and reported speech, where modals also appear, are treated in *Complex Sentences*.",
+    "For Chinese speakers the forms are easy — Chinese modal verbs such as 能, 会, 可以, 应该 and 必须 also stand before the main verb and do not change for person — but the meanings are divided differently. 会 covers both learned ability and prediction; 一定 covers both strong obligation and confident conclusion, which English splits between *must* and *have to*; and the negative of a conclusion is *can't*, not *mustn't*. Academic writers trained to state claims firmly often need to learn to hedge, and, equally, not to hedge everything. The best approach is to learn each form with its meaning and its usual context, and to notice in your reading how confident each claim is."
+  ],
   "prerequisites": [
     "tense-and-aspect"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Recognise the central modals, the marginal modals and the common semi-modals, and use their forms correctly in statements, questions, negatives and with perfect and progressive infinitives.",
+    "Explain the difference between epistemic and deontic (and dynamic) modality, and say which meaning a modal has in a given sentence.",
+    "Choose between *can*, *could*, *be able to*, *may* and *might* for ability, permission and possibility, including past ability and single past achievements.",
+    "Choose between *must*, *have to*, *have got to*, *need to*, *should*, *ought to* and *had better*, and keep *mustn't* (prohibition) apart from *don't have to* and *needn't* (no necessity).",
+    "Draw conclusions about the present and the past with *must*, *can't*, *should*, *may*, *might* and *could*, and with modal perfects such as *must have left* and *can't have seen*.",
+    "Use *should have*, *could have*, *needn't have* and *didn't need to* to talk about regrets, criticism, missed chances and unnecessary actions.",
+    "Use *will*, *would* and *shall* for prediction, willingness, refusal, habits, offers and suggestions, and mark the British and American differences in *shall*, *have got to* and *needn't*.",
+    "Express modality with adverbs, adjectives, nouns and lexical verbs (*probably*, *likely*, *possibility*, *seem*, *tend*), avoiding errors such as ✗ *He is possible to win*.",
+    "Hedge and boost claims in academic writing so that their strength matches the evidence.",
+    "Make requests, suggestions and refusals at the right level of directness, using modal verbs and other softeners."
+  ],
   "chapters": [
     {
       "slug": "what-modals-do",
@@ -89,8 +105,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1951,
+      "title": "Von Wright's modes of modality",
+      "detail": "In *An Essay in Modal Logic* the philosopher Georg Henrik von Wright distinguished several kinds of modality, among them the epistemic (what is known or believed) and the deontic (what is obligatory or permitted). Linguists later took over both terms to describe the meanings of modal verbs.",
+      "people": ["Georg Henrik von Wright"]
+    },
+    {
+      "year": 1972,
+      "title": "Lakoff names hedges",
+      "detail": "In a paper read to the Chicago Linguistic Society, George Lakoff used the word *hedges* for expressions such as *sort of* and *technically* whose job is to make meanings fuzzier or less fuzzy. The term was later extended to all the ways speakers and writers soften their commitment to a claim.",
+      "people": ["George Lakoff"]
+    },
+    {
+      "year": 1979,
+      "title": "Palmer's Modality and the English Modals",
+      "detail": "Frank Palmer described the English modal verbs with three kinds of meaning — epistemic, deontic and dynamic — a framework that he extended across languages in *Mood and Modality* (1986; second edition 2001).",
+      "people": ["F. R. Palmer"]
+    },
+    {
+      "year": 1983,
+      "title": "Coates's corpus study of the modals",
+      "detail": "Jennifer Coates's *The Semantics of the Modal Auxiliaries* analysed samples of each modal drawn from British corpora of speech and writing, and showed that the meanings of each modal shade into one another rather than falling into neat boxes.",
+      "people": ["Jennifer Coates"]
+    },
+    {
+      "year": 1987,
+      "title": "Brown and Levinson's Politeness",
+      "detail": "Penelope Brown and Stephen Levinson's *Politeness: Some Universals in Language Usage*, a reissue with a new introduction of their 1978 essay, explained indirect requests such as *Could you…?* as strategies for protecting the hearer's face.",
+      "people": ["Penelope Brown", "Stephen C. Levinson"]
+    },
+    {
+      "year": 1990,
+      "title": "Sweetser on root and epistemic meanings",
+      "detail": "In *From Etymology to Pragmatics* Eve Sweetser argued that the epistemic meanings of modals (*He must be home by now*) are extended from their meanings of force and obligation (*You must go home*), applied to reasoning instead of to the world.",
+      "people": ["Eve Sweetser"]
+    },
+    {
+      "year": 1998,
+      "title": "Hyland's study of hedging in science",
+      "detail": "Ken Hyland's *Hedging in Scientific Research Articles* showed how biologists use modal verbs, adverbs and verbs such as *suggest* and *indicate* to present claims with exactly the confidence the evidence allows.",
+      "people": ["Ken Hyland"]
+    },
+    {
+      "year": 2009,
+      "title": "The decline of the modals measured",
+      "detail": "Geoffrey Leech, Marianne Hundt, Christian Mair and Nicholas Smith's *Change in Contemporary English* compared matched corpora of British and American writing from 1961 and the early 1990s. Most core modals, especially *must*, *shall*, *may* and *ought to*, became less frequent, while semi-modals such as *have to* and *need to* became more frequent.",
+      "people": ["Geoffrey Leech", "Marianne Hundt", "Christian Mair", "Nicholas Smith"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Practical English Usage",
+      "authors": "Michael Swan",
+      "year": 2016,
+      "note": "Fourth edition. Short, reliable entries on every modal verb and semi-modal, with British and American differences; the first book to check a doubtful rule."
+    },
+    {
+      "title": "A Comprehensive Grammar of the English Language",
+      "authors": "Randolph Quirk, Sidney Greenbaum, Geoffrey Leech and Jan Svartvik",
+      "year": 1985,
+      "note": "The classic reference grammar; its treatment of the modals separates intrinsic modality (permission, obligation, volition) from extrinsic modality (possibility, necessity, prediction), and lists the marginal modals and semi-auxiliaries."
+    },
+    {
+      "title": "Longman Grammar of Spoken and Written English",
+      "authors": "Douglas Biber, Stig Johansson, Geoffrey Leech, Susan Conrad and Edward Finegan",
+      "year": 1999,
+      "note": "A corpus grammar: how often each modal and semi-modal is used, and with which meanings, in conversation, fiction, news and academic prose."
+    },
+    {
+      "title": "The Cambridge Grammar of the English Language",
+      "authors": "Rodney Huddleston and Geoffrey K. Pullum",
+      "year": 2002,
+      "note": "The most detailed modern reference grammar; its account of mood and modality treats strength of modality, the scope of negation (*mustn't* against *needn't*) and the past forms with great care."
+    },
+    {
+      "title": "Mood and Modality",
+      "authors": "F. R. Palmer",
+      "year": 2001,
+      "note": "Second edition. The standard survey of modality across languages, with the epistemic, deontic and dynamic categories used in this course."
+    },
+    {
+      "title": "The Semantics of the Modal Auxiliaries",
+      "authors": "Jennifer Coates",
+      "year": 1983,
+      "note": "A corpus-based study of what each modal means in real British speech and writing; the best account of how root and epistemic meanings shade into each other."
+    },
+    {
+      "title": "Hedging in Scientific Research Articles",
+      "authors": "Ken Hyland",
+      "year": 1998,
+      "note": "How academic writers use modal verbs, adverbs and reporting verbs to qualify claims; the background to the chapter on hedging and boosting."
+    },
+    {
+      "title": "Mandarin Chinese: A Functional Reference Grammar",
+      "authors": "Charles N. Li and Sandra A. Thompson",
+      "year": 1981,
+      "note": "Its description of the Mandarin auxiliary verbs (能, 会, 可以, 应该, 必须 and others) is the English-language reference for the contrastive notes in this course."
+    }
+  ],
   "next": [
     "pragmatics",
     "academic-writing"
