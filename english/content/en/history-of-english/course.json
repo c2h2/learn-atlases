@@ -7,12 +7,27 @@
   "order": 240,
   "tagline": "English and its relatives, Old English, the Vikings and Old Norse, the Norman Conquest, Middle English and Chaucer, the Great Vowel Shift and spelling, Early Modern English, dictionaries and grammars, the spread of English, and English today",
   "summary": "English began as the dialects of a few Germanic peoples and became a world language, taking words from Norse, French, Latin, Greek and many other languages on the way. This course traces that history — Old, Middle and Early Modern English, the sound changes that explain modern spelling, the making of dictionaries and grammars, and the spread of English around the world — and shows how it explains features of the language that learners meet today.",
-  "overview": [],
+  "overview": [
+    "This course tells the story of English from the dialects of a few Germanic peoples who crossed the North Sea in the fifth century to the language used today by more people, in more countries, than any other. It follows the language through its three conventional periods — Old English (about 450–1100), Middle English (about 1100–1500) and Early Modern English (about 1500–1700) — and then through the standardisation of the eighteenth and nineteenth centuries, its spread across the world, and the changes that are going on now. Along the way it shows how linguists know what they know: how languages are grouped into families, how the pronunciation of a dead language is reconstructed, how a dictionary dates a word, and how a change is caught in progress.",
+    "For a learner, the history of English is not a museum but an explanation. It explains why English spelling fits the pronunciation so badly (*knight*, *meat* and *meet*, *debt*), why so many everyday words come in pairs and triples of different register (*ask*, *question*, *interrogate*; *begin*, *commence*), why the commonest verbs are irregular (*sing*, *sang*, *sung*), why academic English is full of Latin and Greek, and why there are several standard Englishes rather than one. Many lessons elsewhere in the atlas point here for the reason behind a rule; this course delivers those reasons.",
+    "The chapters are in chronological order, and each one does the same things: it places a period in its historical setting (with links to the [European History Atlas](/learn/europe/) for the political story), reads short original texts — *Beowulf*, Ælfric, Chaucer, Caxton, Tyndale, the King James Bible, Shakespeare, Johnson — with translations made for the atlas, and shows step by step how a word, a sound or a construction changed. Where scholars disagree, as they do about the causes of the Great Vowel Shift or the part the Vikings played in the loss of inflections, the chapter sets out the positions and the evidence. Figures draw family trees, chains of sound change and chains of influence.",
+    "Chinese readers meet two kinds of difficulty here. The first is the older texts themselves, with unfamiliar letters (þ, ð, æ, ȝ) and spellings: read them aloud slowly with the translation beside them, and look for the modern words hidden in them, which are more than you expect. The second is that the history of English is told in English sources with English assumptions. The notes on English and Chinese compare it with a history Chinese readers already know — a written standard far older than the spoken varieties around it, characters that do not show pronunciation, and dictionaries made by imperial command — and the contrast makes both histories clearer."
+  ],
   "prerequisites": [
     "word-formation",
     "connected-speech"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain what makes English a West Germanic language and an Indo-European one, and use Grimm's law to recognise cognates such as *father*, Latin *pater* and Sanskrit *pitár-*.",
+    "Read a short Old English passage with a glossary, identify its case endings, grammatical genders and strong and weak verbs, and point out the modern words descended from its vocabulary.",
+    "Distinguish Old Norse, French, Latin and Greek loanwords by their form, date and register, and explain why *sky*, *they* and *egg* are Norse while *beef*, *court* and *justice* are French.",
+    "Describe how English returned as the language of law, government and literature between about 1250 and 1450, and read a passage of Chaucer aloud with a reconstructed Middle English pronunciation.",
+    "Set out the changes of the Great Vowel Shift, the competing explanations of their order and dating, and use them to explain modern spellings and alternations such as *divine* – *divinity* and *meat* – *meet*.",
+    "Identify the features of Early Modern English in Tyndale, the King James Bible and Shakespeare — *thou* and *you*, *-eth* and *-s*, questions without *do* — and explain how printing and the Renaissance changed spelling and vocabulary.",
+    "Compare the aims and methods of Johnson's *Dictionary*, Lowth's grammar, Webster's *American Dictionary* and the *Oxford English Dictionary*, and distinguish descriptive from prescriptive statements in them.",
+    "Explain how English spread to North America, Australasia, Africa and Asia, and how its global position depends on historical events rather than on any property of the language.",
+    "Recognise changes in progress in present-day English vocabulary, grammar and pronunciation, and judge a claim about language decline or internet English by the evidence offered for it."
+  ],
   "chapters": [
     {
       "slug": "english-and-its-relatives",
@@ -96,8 +111,129 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 731,
+      "title": "Bede finishes his Ecclesiastical History",
+      "detail": "Bede's Latin history of the English church and people describes the arrival of Angles, Saxons and Jutes and preserves the story of Cædmon, the first English poet known by name.",
+      "people": [
+        "Bede"
+      ]
+    },
+    {
+      "year": 1066,
+      "title": "The Norman Conquest",
+      "detail": "William of Normandy defeats Harold at Hastings on 14 October and is crowned on Christmas Day; French becomes the language of the court and the ruling class for some three centuries.",
+      "people": [
+        "William I",
+        "Harold Godwinson"
+      ]
+    },
+    {
+      "year": 1362,
+      "title": "The Statute of Pleading",
+      "detail": "Parliament orders that pleadings in the law courts be conducted in English, on the ground that French was too little understood in the realm; the statute itself is written in French.",
+      "people": [
+        "Edward III"
+      ]
+    },
+    {
+      "year": 1476,
+      "title": "Caxton's press at Westminster",
+      "detail": "William Caxton sets up the first printing press in England, after printing the first book in English at Bruges; printing slowly fixes the spelling of the London written standard.",
+      "people": [
+        "William Caxton"
+      ]
+    },
+    {
+      "year": 1611,
+      "title": "The King James Bible",
+      "detail": "The Authorised Version, prepared by about fifty scholars and drawing heavily on Tyndale's translation, becomes the most widely read book in English for three centuries.",
+      "people": [
+        "William Tyndale",
+        "James I"
+      ]
+    },
+    {
+      "year": 1755,
+      "title": "Johnson's Dictionary",
+      "detail": "Samuel Johnson's *Dictionary of the English Language* defines its words with illustrative quotations from English writers and becomes the standard authority for over a century.",
+      "people": [
+        "Samuel Johnson"
+      ]
+    },
+    {
+      "year": 1786,
+      "title": "William Jones on Sanskrit",
+      "detail": "In Calcutta, William Jones argues that Sanskrit, Greek and Latin must have 'sprung from some common source', an idea that leads to the comparative study of the Indo-European languages.",
+      "people": [
+        "William Jones"
+      ]
+    },
+    {
+      "year": 1828,
+      "title": "Webster's American Dictionary",
+      "detail": "Noah Webster's *American Dictionary of the English Language* fixes American spellings such as *color* and *center* and claims a standard of its own for American English.",
+      "people": [
+        "Noah Webster"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "The Oxford English Dictionary completed",
+      "detail": "The last part of *A New English Dictionary on Historical Principles*, begun in fascicles in 1884, is published; it records the history of each word with dated quotations.",
+      "people": [
+        "James Murray",
+        "Henry Bradley",
+        "William Craigie",
+        "C. T. Onions"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "A History of the English Language",
+      "authors": "Albert C. Baugh and Thomas Cable",
+      "year": 2013,
+      "note": "6th edition. The standard one-volume history, clear and detailed on every period, with especially full chapters on the French and Latin influences and on the eighteenth-century grammarians."
+    },
+    {
+      "title": "The Cambridge History of the English Language",
+      "authors": "Richard M. Hogg (general editor)",
+      "year": 1992,
+      "note": "Six volumes (1992–2001), each by specialists, from the beginnings to English in North America and around the world. The place to check a detail; Roger Lass's chapter on phonology in vol. III is the classic account of the Great Vowel Shift."
+    },
+    {
+      "title": "The Oxford History of English",
+      "authors": "Lynda Mugglestone (editor)",
+      "year": 2012,
+      "note": "Updated edition (first 2006). Chapters by specialists on each period and on standardisation and dictionaries; strong on the social history of the language."
+    },
+    {
+      "title": "Borrowed Words: A History of Loanwords in English",
+      "authors": "Philip Durkin",
+      "year": 2014,
+      "note": "The most careful account of borrowing, by a chief etymologist of the *Oxford English Dictionary*: what was borrowed from each language, when, and how the counts depend on method."
+    },
+    {
+      "title": "The Cambridge Encyclopedia of the English Language",
+      "authors": "David Crystal",
+      "year": 2019,
+      "note": "3rd edition. A richly illustrated reference whose first part is a history of English; good for browsing, facsimiles of texts and short accounts of every period."
+    },
+    {
+      "title": "The Stories of English",
+      "authors": "David Crystal",
+      "year": 2004,
+      "note": "A readable history that gives as much attention to dialects and non-standard varieties as to the standard language."
+    },
+    {
+      "title": "A Biography of the English Language",
+      "authors": "C. M. Millward and Mary Hayes",
+      "year": 2012,
+      "note": "3rd edition. A university textbook with many short original texts and exercises for each period; useful for practice in reading Old and Middle English."
+    }
+  ],
   "next": [
     "world-englishes",
     "reading-literature"
