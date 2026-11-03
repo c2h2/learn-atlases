@@ -7,12 +7,28 @@
   "order": 210,
   "tagline": "Clarity, concision, cohesion and emphasis, sentence variety and rhythm, word choice, the rhetorical appeals, figures of speech, persuasive writing and speeches, writing for different readers, and editing for style",
   "summary": "Correct English can still be hard to read. This course teaches the principles of clear style — characters as subjects and actions as verbs, concision, familiar information before new, emphasis at the end of the sentence — and the classical tools of rhetoric, applied to persuasive writing, speeches and writing for different readers and media.",
-  "overview": [],
+  "overview": [
+    "This course is about the difference between English that is correct and English that is easy and rewarding to read. Its first half teaches the principles of clear prose as careful writers and editors describe them: tell a story about characters and their actions, with the characters as subjects and the actions as verbs; cut what does no work; begin sentences with what the reader already knows and end them with what matters most; vary the length and shape of sentences so that the prose has a rhythm; and choose plain, concrete words over abstract and inflated ones. Its second half turns to rhetoric, the older art of persuasion: Aristotle's three appeals of character, feeling and reason, the classical figures of speech, the structure of a persuasive text or speech, and the adjustment of style to different readers and media. The last lesson brings both halves together in a step-by-step method for editing a draft.",
+    "Style matters to a learner at this level because most of the problems that remain in an advanced writer's English are not errors. A sentence such as *The implementation of the reduction of costs was the responsibility of the committee* is grammatical and still hard to read; a paragraph in which every sentence starts with a new subject is correct and still hard to follow. The lessons give principles that explain why such prose is hard, and methods for diagnosing and revising it. They present style advice as advice: where a handbook rule (*Never use the passive*, *Omit needless words*) is too simple, the lesson says what careful writers actually do, and why the rule exists.",
+    "Each lesson starts from a real piece of prose, states its principles as numbered rules with their explanations, works through revisions step by step, and ends with key takeaways and graded exercises with model answers. Longer passages quoted for analysis come from public-domain authors — the King James Bible, Shakespeare, Austen, Dickens, Lincoln, Twain — and all other model texts are written for the atlas. The lessons build on *Essay Writing* (structure, argument and signposting) and *Collocation and Register* (register and connotation), and they link to the grammar of emphasis in *Complex Sentences*; *Clarity* and *Cohesion and emphasis* are the foundation for the rest and should be read first.",
+    "Chinese-speaking writers often come to English style with a strong training in Chinese rhetoric — 对偶, 排比, the four-character expression (四字格), quotation and allusion — and with the school habit of making English \\\"sound advanced\\\" through long words and nominalisations. Both are useful starting points and both need adjusting. English prose values parallelism and antithesis too, but uses them more sparingly in expository writing, and it usually prefers a plain verb to an abstract noun. The notes on English and Chinese in each lesson compare the two traditions, as described in 陈望道's 《修辞学发凡》 and in contrastive studies, and show where a Chinese habit transfers well and where it does not."
+  ],
   "prerequisites": [
     "essay-writing",
     "collocation-and-register"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Diagnose sentences whose main characters are not subjects and whose actions are buried in nominalisations, and revise them so that characters are subjects and actions are verbs.",
+    "Cut redundant pairs, empty phrases, unnecessary metadiscourse and excessive hedges from a draft without losing meaning or necessary qualification.",
+    "Arrange sentences so that familiar information comes first and new or important information falls in the stress position at the end, and keep consistent topic strings through a paragraph.",
+    "Vary sentence length and structure for rhythm and emphasis, and write correct and effective parallel, balanced, periodic and cumulative sentences.",
+    "Choose plain, concrete and precise words, and recognise and replace inflated diction, unnecessary jargon, misleading euphemism and cliché.",
+    "Explain Aristotle's appeals of ethos, pathos and logos and identify how a text uses each, and evaluate whether an appeal is fair.",
+    "Recognise and use common figures of speech — metaphor, simile, antithesis, chiasmus, anaphora, the tricolon, the rhetorical question — and compare them with Chinese 修辞格 such as 对偶 and 排比.",
+    "Plan and write a persuasive text or speech with a clear structure, analysing historical public-domain speeches as models.",
+    "Adapt style to readers and media, writing reports, web pages, news and instructions that their readers can find, understand and use.",
+    "Edit a draft for style in ordered passes — clarity, cohesion and emphasis, concision, word choice, rhythm — and explain each change."
+  ],
   "chapters": [
     {
       "slug": "clarity",
@@ -98,8 +114,135 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1553,
+      "title": "Wilson's Arte of Rhetorique",
+      "detail": "Thomas Wilson published *The Arte of Rhetorique*, one of the first full treatments of classical rhetoric in English. It attacked \"inkhorn terms\" — showy borrowings from Latin — and urged plain English words.",
+      "people": [
+        "Thomas Wilson"
+      ]
+    },
+    {
+      "year": 1589,
+      "title": "Puttenham's Arte of English Poesie",
+      "detail": "*The Arte of English Poesie*, usually attributed to George Puttenham, catalogued the figures of speech and gave many of them English names alongside the Greek and Latin ones.",
+      "people": [
+        "George Puttenham"
+      ]
+    },
+    {
+      "year": 1783,
+      "title": "Blair's Lectures on Rhetoric and Belles Lettres",
+      "detail": "Hugh Blair published the lectures he had given at the University of Edinburgh. They treated style, perspicuity and the structure of sentences, and were used as a textbook in Britain and America for decades.",
+      "people": [
+        "Hugh Blair"
+      ]
+    },
+    {
+      "year": 1918,
+      "title": "Strunk's Elements of Style",
+      "detail": "William Strunk Jr. privately printed *The Elements of Style* for his students at Cornell, with rules such as \"Omit needless words\". E. B. White revised and expanded it in 1959, and the book became the best-known style manual in the United States.",
+      "people": [
+        "William Strunk Jr.",
+        "E. B. White"
+      ]
+    },
+    {
+      "year": 1946,
+      "title": "Orwell's Politics and the English Language",
+      "detail": "George Orwell's essay in *Horizon* attacked stale metaphors, inflated diction and euphemism in public writing and ended with six rules for writers.",
+      "people": [
+        "George Orwell"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "Gowers's Plain Words",
+      "detail": "Sir Ernest Gowers wrote *Plain Words* for British civil servants at the request of the Treasury. It was expanded as *The Complete Plain Words* in 1954 and is still in print in revised editions.",
+      "people": [
+        "Ernest Gowers"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "The Plain English Campaign",
+      "detail": "Chrissie Maher founded the Plain English Campaign in the United Kingdom, which campaigned against confusing official forms and documents.",
+      "people": [
+        "Chrissie Maher"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "Williams's Style",
+      "detail": "Joseph M. Williams published *Style: Ten Lessons in Clarity and Grace*, which explained clear prose through characters and actions, old and new information, and emphasis. Later editions, with Gregory Colomb and then Joseph Bizup, are widely used today.",
+      "people": [
+        "Joseph M. Williams"
+      ]
+    },
+    {
+      "year": 2010,
+      "title": "The US Plain Writing Act",
+      "detail": "The Plain Writing Act of 2010 required US federal agencies to write documents for the public in clear language that the public can understand and use.",
+      "people": []
+    },
+    {
+      "year": 2023,
+      "title": "An international standard for plain language",
+      "detail": "The International Organization for Standardization published ISO 24495-1, *Plain language — Part 1: Governing principles*, which defines plain language by whether readers can find, understand and use what they need.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Style: Lessons in Clarity and Grace",
+      "authors": "Joseph M. Williams and Joseph Bizup",
+      "year": 2017,
+      "note": "Twelfth edition. The basis of the first half of this course: characters and actions, cohesion and emphasis, concision, the shape of sentences and the ethics of style, with diagnostic methods for revising one's own prose."
+    },
+    {
+      "title": "The Sense of Style: The Thinking Person's Guide to Writing in the 21st Century",
+      "authors": "Steven Pinker",
+      "year": 2014,
+      "note": "A linguist's style guide: \"classic style\", the curse of knowledge, the tree structure behind sentences, coherence, and a reasoned treatment of disputed usage rules."
+    },
+    {
+      "title": "The Elements of Style",
+      "authors": "William Strunk Jr. and E. B. White",
+      "year": 2000,
+      "note": "Fourth edition. The short American classic, worth knowing because so many writers quote it; read it together with its critics (Pullum 2009), since several of its grammatical rules are mistaken."
+    },
+    {
+      "title": "Plain Words",
+      "authors": "Sir Ernest Gowers, revised by Rebecca Gowers",
+      "year": 2014,
+      "note": "A revision of Gowers's guide for officials (1948, 1954): plain, precise words for public writing, with many examples of inflated and roundabout prose."
+    },
+    {
+      "title": "Classical Rhetoric for the Modern Student",
+      "authors": "Edward P. J. Corbett and Robert J. Connors",
+      "year": 1999,
+      "note": "Fourth edition. Aristotle's appeals, arrangement and the figures of speech, explained for modern writers, with analysed texts."
+    },
+    {
+      "title": "Farnsworth's Classical English Rhetoric",
+      "authors": "Ward Farnsworth",
+      "year": 2011,
+      "note": "The figures of speech — repetition, structure, inversion and others — illustrated with many examples from English prose and speeches."
+    },
+    {
+      "title": "Rhetoric (Rhetorica), translated by W. Rhys Roberts",
+      "authors": "Aristotle",
+      "year": 1924,
+      "note": "Oxford translation, in the public domain. Book I sets out the three modes of persuasion; Book III treats style and arrangement."
+    },
+    {
+      "title": "修辞学发凡 (An Introduction to Rhetoric)",
+      "authors": "陈望道 (Chen Wangdao)",
+      "year": 1932,
+      "note": "The founding modern account of Chinese rhetoric, which classified the 修辞格 (figures of speech) still taught in Chinese schools; useful for the comparisons with English in this course."
+    }
+  ],
   "next": [
     "reading-literature",
     "translation"
