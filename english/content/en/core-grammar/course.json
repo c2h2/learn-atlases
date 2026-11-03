@@ -7,9 +7,25 @@
   "order": 20,
   "tagline": "Word classes, sentence patterns, *be* and *have*, the present simple, questions and negatives, the present continuous, the past simple, nouns and pronouns, adjectives and adverbs, prepositions of time and place, the future, and the first modal verbs",
   "summary": "Every English sentence needs a subject and a verb, and English marks time, person and number on its verbs in ways that Chinese does not. This course builds the grammar a beginner needs: the word classes and basic sentence patterns, *be* and *have*, the present simple and continuous, the past simple, questions and negatives, nouns, pronouns, adjectives and adverbs, the prepositions of time and place, the simplest ways to talk about the future and the first modal verbs.",
-  "overview": [],
+  "overview": [
+    "This course is the grammar a beginner needs to make and understand simple English sentences. It starts with the building blocks — the word classes and the order of subject, verb and object — and then adds the verb forms used most in everyday English: *be* and *have*, the present simple and present continuous, the past simple, questions and negatives, and the commonest ways to talk about the future. Lessons on nouns and pronouns, adjectives and adverbs, prepositions of time and place, and the modal verbs *can*, *must* and *should* complete the picture.",
+    "Grammar is what turns a list of words into a message. *Yesterday Wang Fang buy two book* is understandable, but it makes the listener work, and in an exam or a job application it looks careless. The small endings and little words of English — *-s*, *-ed*, *do*, *the*, *at* — carry information that Chinese gives through word order, time words, particles or context, so they are easy to leave out. Each lesson shows what these forms mean, so that they stop being arbitrary rules to remember.",
+    "Every lesson follows the same plan: a real question, the forms in tables, the meanings with many short examples, a note comparing English with Chinese, the common mistakes, quick checks and graded exercises with full answers. The lessons are meant to be read in order, because each builds on the one before; the questions and negatives lesson, for example, prepares the ground for the past simple and the modal verbs. Several courses then take the topics further: *Tense and Aspect*, *Nouns and Articles*, *Verb Patterns*, *Modality* and *Complex Sentences*.",
+    "Chinese speakers usually understand these rules quickly and still find them hard to use in speech, because the meaning is often clear without them. The cure is not more rules but practice in noticing: read the examples aloud, check your own writing for one thing at a time (the *-s* on verbs, then past tense endings, then articles), and expect accuracy to grow over months, not days."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Recognise the main word classes in a simple English sentence and say what job each word does.",
+    "Build statements in the order subject + verb (+ object or complement), always including a subject and a verb.",
+    "Use *be*, *have* and *there is/are* correctly where Chinese uses 是, 在, 有 or no verb at all.",
+    "Use the present simple for habits, facts and states, adding *-s* or *-es* after *he*, *she* and *it*.",
+    "Form yes–no and *wh-* questions, negatives and short answers with *be*, *do*, *does* and *did*.",
+    "Choose between the present simple and the present continuous, and spell *-ing* forms correctly.",
+    "Use the past simple of regular and common irregular verbs, and pronounce *-ed* as /t/, /d/ or /ɪd/.",
+    "Form regular and common irregular plurals and choose the right subject, object and possessive pronouns, including *he* and *she*.",
+    "Place adjectives, adverbs and adverbs of frequency correctly, and form comparatives and superlatives.",
+    "Choose *in*, *on* or *at* for common times and places, and use *will*, *be going to*, *can*, *must*, *have to* and *should* for their basic meanings."
+  ],
   "chapters": [
     {
       "slug": "word-classes",
@@ -106,8 +122,100 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1586,
+      "title": "Bullokar's Pamphlet for Grammar",
+      "detail": "William Bullokar's *Pamphlet for Grammar* is usually counted as the first grammar of English written in English. Like most early grammars, it describes English with the categories of Latin grammar.",
+      "people": ["William Bullokar"]
+    },
+    {
+      "year": 1762,
+      "title": "Lowth's Short Introduction to English Grammar",
+      "detail": "Robert Lowth's grammar became one of the most influential English grammars of the eighteenth century. Its many notes on what it considered errors helped to shape the prescriptive tradition of school grammar.",
+      "people": ["Robert Lowth"]
+    },
+    {
+      "year": 1795,
+      "title": "Murray's English Grammar",
+      "detail": "Lindley Murray's *English Grammar*, which drew heavily on Lowth, became one of the most widely used school grammars in Britain and America in the nineteenth century.",
+      "people": ["Lindley Murray"]
+    },
+    {
+      "year": 1898,
+      "title": "The first systematic grammar of Chinese",
+      "detail": "Ma Jianzhong's 《马氏文通》 described Classical Chinese with categories modelled on Latin grammar. Many Chinese grammatical terms for word classes go back to this tradition, which is one reason why English and Chinese grammar terms look alike but do not always match.",
+      "people": ["Ma Jianzhong"]
+    },
+    {
+      "year": 1954,
+      "title": "Hornby's Guide to Patterns and Usage in English",
+      "detail": "A. S. Hornby, a pioneer of teaching English as a foreign language, set out English verb and sentence patterns for learners, an approach that also shaped his learner's dictionary.",
+      "people": ["A. S. Hornby"]
+    },
+    {
+      "year": 1972,
+      "title": "A Grammar of Contemporary English",
+      "detail": "Randolph Quirk, Sidney Greenbaum, Geoffrey Leech and Jan Svartvik published a large descriptive grammar of modern English, followed in 1985 by their *Comprehensive Grammar of the English Language*, the source of the seven clause patterns used in this course.",
+      "people": ["Randolph Quirk", "Sidney Greenbaum", "Geoffrey Leech", "Jan Svartvik"]
+    },
+    {
+      "year": 1985,
+      "title": "English Grammar in Use",
+      "detail": "Raymond Murphy's self-study grammar, with an explanation on each left-hand page and exercises on the right, became one of the most widely used grammar books for learners.",
+      "people": ["Raymond Murphy"]
+    },
+    {
+      "year": 1999,
+      "title": "A corpus grammar of spoken and written English",
+      "detail": "The *Longman Grammar of Spoken and Written English* by Douglas Biber and colleagues described English grammar with frequencies from a large corpus, showing how grammar differs between conversation, fiction, news and academic writing.",
+      "people": ["Douglas Biber", "Stig Johansson", "Geoffrey Leech", "Susan Conrad", "Edward Finegan"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Essential Grammar in Use",
+      "authors": "Raymond Murphy",
+      "year": 2015,
+      "note": "Fourth edition. Self-study grammar for elementary learners (A1–B1), with a short explanation and exercises for each point; the natural companion to this course."
+    },
+    {
+      "title": "English Grammar in Use",
+      "authors": "Raymond Murphy",
+      "year": 2019,
+      "note": "Fifth edition. The intermediate book in the same series, for the next step after this course."
+    },
+    {
+      "title": "Practical English Usage",
+      "authors": "Michael Swan",
+      "year": 2016,
+      "note": "Fourth edition. Short, reliable entries on problem points of grammar and usage, with British and American differences; the book to check a doubtful rule."
+    },
+    {
+      "title": "Oxford English Grammar Course: Basic",
+      "authors": "Michael Swan and Catherine Walter",
+      "year": 2011,
+      "note": "A beginner's grammar with clear explanations and many exercises, also covering pronunciation of grammatical endings."
+    },
+    {
+      "title": "Cambridge Grammar of English",
+      "authors": "Ronald Carter and Michael McCarthy",
+      "year": 2006,
+      "note": "A reference grammar for teachers and advanced learners, especially good on spoken English."
+    },
+    {
+      "title": "A Student's Introduction to English Grammar",
+      "authors": "Rodney Huddleston and Geoffrey K. Pullum",
+      "year": 2005,
+      "note": "A modern, carefully argued introduction to the analysis of English grammar, for readers who want to know why the categories are what they are."
+    },
+    {
+      "title": "Mandarin Chinese: A Functional Reference Grammar",
+      "authors": "Charles N. Li and Sandra A. Thompson",
+      "year": 1981,
+      "note": "A standard English-language grammar of Mandarin, used here to check the comparisons between English and Chinese."
+    }
+  ],
   "next": [
     "tense-and-aspect",
     "nouns-and-articles",
