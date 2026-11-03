@@ -7,11 +7,26 @@
   "order": 140,
   "tagline": "Neurons and glia, membrane potentials, action potentials, synapses, sensory and motor systems, development, plasticity and neural coding",
   "summary": "The nervous system turns sensations into perceptions and decisions into movements, using electrical and chemical signals. This course explains how neurons generate and transmit signals, from the resting potential and the action potential to synapses, then how circuits build sensory and motor systems, how nervous systems develop and change with experience, and how neural activity encodes information.",
-  "overview": [],
+  "overview": [
+    "Neuroscience asks how nervous systems work: how a cell can generate and transmit an electrical signal, how signals pass from one cell to the next, how networks of such cells detect light, sound, touch and chemicals, produce coordinated movement, assemble themselves during development, change with experience, and represent information about the world. The subject spans more than ten orders of magnitude in space, from the ångström-wide pore of an ion channel to nerve fibres a metre long, and as many in time, from the microsecond movements of a voltage sensor to memories that last a lifetime. It is also one of the most comparative fields of biology. Much of what we know about the action potential came from the giant axon of the squid, about synapses from the frog neuromuscular junction, about learning from a sea slug, and about circuits from the nematode worm, the fruit fly and the zebrafish as much as from rodents and primates.",
+    "The course is built from the bottom up. The first four chapters treat the single neuron and its connections: the cells of the nervous system and the neuron doctrine; the resting membrane potential as an electrochemical steady state and the neuron as an electrical circuit; the action potential, the Hodgkin–Huxley model and the propagation of impulses; and chemical and electrical synaptic transmission, quantal release and synaptic integration. The next two chapters use these tools to explain sensory systems (transduction, receptive fields and coding in vision, hearing, touch and the chemical senses) and motor systems (motor units, reflexes, central pattern generators and descending control). The last three chapters ask how nervous systems evolved and develop, how synapses change during learning and memory, and how neural activity encodes information and is recorded and imaged. The cellular background (membranes, transport, organelles, signalling) comes from Cell Biology, and the muscle physiology from Animal Physiology; human clinical neurology and psychiatry belong to Medicine Atlas, to which these lessons link.",
+    "The difficulty of neuroscience is that it is both quantitative and sprawling. The electrical side needs a little physics (charge, capacitance, Ohm's law, diffusion) and a little mathematics (exponential relaxation and simple differential equations), and the best way to learn it is to work the numbers: a Nernst potential, a membrane time constant, a length constant, a quantal content, the number of ions that cross the membrane in one impulse. The systems side brings a flood of names of cells, pathways and molecules. Learn those by attaching each one to a function and an experiment, and keep asking the same three questions of every result: what was measured, in which animal, and what model explains it."
+  ],
   "prerequisites": [
     "animal-physiology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the structure of neurons and the main classes of glia, and explain the evidence for the neuron doctrine.",
+    "Calculate equilibrium potentials with the Nernst equation and resting potentials with the Goldman–Hodgkin–Katz and chord-conductance equations, and explain the resting potential as a steady state maintained by pumps.",
+    "Model a patch of membrane as a resistor–capacitor circuit and calculate its time constant, input resistance and length constant.",
+    "Explain the ionic basis of the action potential using voltage-clamp data and the Hodgkin–Huxley model, and relate conduction velocity to axon diameter and myelination.",
+    "Explain chemical and electrical synaptic transmission, apply the quantal hypothesis with the Poisson and binomial models, and predict postsynaptic responses from reversal potentials.",
+    "Describe sensory transduction in photoreceptors, hair cells, mechanoreceptors and chemoreceptors, and interpret receptive fields, adaptation and psychophysical laws.",
+    "Explain the organisation of spinal reflexes, the size principle, central pattern generators and the roles of cortex, cerebellum and basal ganglia in movement.",
+    "Outline how nervous systems evolved and how neurons are induced, patterned, born, guided to their targets and refined by activity.",
+    "Explain long-term potentiation, spike-timing-dependent plasticity and the cellular basis of learning in Aplysia and the mammalian hippocampus, and apply simple learning rules such as Rescorla–Wagner.",
+    "Interpret spike trains with rate, timing and population codes, and compare the methods used to record, image and manipulate neural activity."
+  ],
   "chapters": [
     {
       "slug": "neurons-glia",
@@ -89,8 +104,140 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1791,
+      "title": "Animal electricity",
+      "detail": "Luigi Galvani published his experiments showing that frog leg muscles contract when the nerve is touched with dissimilar metals or connected to an electrical source, the starting point of electrophysiology.",
+      "people": [
+        "Luigi Galvani"
+      ]
+    },
+    {
+      "year": 1888,
+      "title": "Neurons are separate cells",
+      "detail": "Santiago Ramón y Cajal applied Camillo Golgi's silver-chromate stain to the cerebellum of birds and argued that nerve cells are independent units contacting one another rather than a continuous network, the basis of the neuron doctrine.",
+      "people": [
+        "Santiago Ramón y Cajal",
+        "Camillo Golgi"
+      ]
+    },
+    {
+      "year": 1921,
+      "title": "Chemical transmission",
+      "detail": "Otto Loewi showed that fluid from a stimulated, perfused frog heart slowed a second heart, demonstrating that the vagus nerve acts by releasing a chemical, later identified as acetylcholine.",
+      "people": [
+        "Otto Loewi"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "The Hodgkin–Huxley model",
+      "detail": "Alan Hodgkin and Andrew Huxley used the voltage clamp on the giant axon of the squid Loligo to separate sodium and potassium currents and published a quantitative model that reproduced the action potential and its conduction velocity.",
+      "people": [
+        "Alan Hodgkin",
+        "Andrew Huxley"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "Quantal release of transmitter",
+      "detail": "José del Castillo and Bernard Katz showed at the frog neuromuscular junction that the end-plate potential is built from packets of transmitter released with Poisson statistics.",
+      "people": [
+        "José del Castillo",
+        "Bernard Katz"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "Receptive fields in visual cortex",
+      "detail": "David Hubel and Torsten Wiesel recorded from single neurons in the striate cortex of anaesthetised cats and found cells that respond best to edges and bars of a particular orientation.",
+      "people": [
+        "David Hubel",
+        "Torsten Wiesel"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "Long-term potentiation",
+      "detail": "Timothy Bliss and Terje Lømo reported that brief high-frequency stimulation of the perforant path in the rabbit hippocampus produced a lasting increase in synaptic responses in the dentate gyrus.",
+      "people": [
+        "Timothy Bliss",
+        "Terje Lømo"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Single-channel recording",
+      "detail": "Erwin Neher and Bert Sakmann recorded the picoampere currents through single acetylcholine-receptor channels in denervated frog muscle fibres, showing that ion channels open and close in discrete steps.",
+      "people": [
+        "Erwin Neher",
+        "Bert Sakmann"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "Odorant receptors",
+      "detail": "Linda Buck and Richard Axel identified a large family of G-protein-coupled receptor genes expressed in the rat olfactory epithelium, the odorant receptors.",
+      "people": [
+        "Linda Buck",
+        "Richard Axel"
+      ]
+    },
+    {
+      "year": 2005,
+      "title": "Optogenetics",
+      "detail": "Edward Boyden, Karl Deisseroth and colleagues showed that neurons expressing the light-gated algal channel channelrhodopsin-2 can be made to fire action potentials with millisecond pulses of blue light.",
+      "people": [
+        "Edward Boyden",
+        "Karl Deisseroth"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Principles of Neural Science, 6th ed.",
+      "authors": "Eric R. Kandel, John D. Koester, Sarah H. Mack and Steven A. Siegelbaum (eds)",
+      "year": 2021,
+      "note": "The comprehensive reference, from ion channels to cognition and disease; use it to go deeper on any chapter of this course."
+    },
+    {
+      "title": "Neuroscience, 6th ed.",
+      "authors": "Dale Purves, George J. Augustine, David Fitzpatrick, William C. Hall, Anthony-Samuel LaMantia, Richard D. Mooney, Michael L. Platt and Leonard E. White (eds)",
+      "year": 2018,
+      "note": "A clear, well-illustrated undergraduate text, especially good on sensory and motor systems and on development."
+    },
+    {
+      "title": "From Neuron to Brain, 5th ed.",
+      "authors": "John G. Nicholls, A. Robert Martin, Paul A. Fuchs, David A. Brown, Mathew E. Diamond and David A. Weisblat",
+      "year": 2012,
+      "note": "Built around the classic experiments, with strong comparative coverage of invertebrate preparations; the best book for learning how the cellular facts were discovered."
+    },
+    {
+      "title": "Neuroscience: Exploring the Brain, 4th ed.",
+      "authors": "Mark F. Bear, Barry W. Connors and Michael A. Paradiso",
+      "year": 2016,
+      "note": "The most approachable introductory text, useful as a first read before the larger books."
+    },
+    {
+      "title": "Ion Channels of Excitable Membranes, 3rd ed.",
+      "authors": "Bertil Hille",
+      "year": 2001,
+      "note": "The standard monograph on channel biophysics, selectivity, gating and the Hodgkin–Huxley analysis."
+    },
+    {
+      "title": "Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems",
+      "authors": "Peter Dayan and L. F. Abbott",
+      "year": 2001,
+      "note": "The standard introduction to neural coding, single-neuron models, plasticity rules and network models, for readers comfortable with calculus and probability."
+    },
+    {
+      "title": "Development of the Nervous System, 4th ed.",
+      "authors": "Dan H. Sanes, Thomas A. Reh, William A. Harris and Matthias Landgraf",
+      "year": 2019,
+      "note": "A concise account of neural induction, neurogenesis, axon guidance, synapse formation and activity-dependent refinement."
+    }
+  ],
   "next": [
     "behaviour"
   ]

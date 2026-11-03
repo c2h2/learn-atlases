@@ -191,9 +191,9 @@ caption: The change in allele frequency per generation, [[#eq-dominance]], again
 :::
 
 ::: example Dominant, additive and recessive alleles compared {#ex-dominance}
-A new allele confers a 5 % advantage in homozygotes ($s = 0.05$). Iterating [[#eq-diploid]] numerically from $p = 0.01$ to $p = 0.99$ gives: additive ($h = 0.5$) 193 generations; dominant ($h = 1$) 2265 generations; recessive ($h = 0$) 2171 generations. Explain the pattern.
+A new allele confers a 5 % advantage in homozygotes ($s = 0.05$). Iterating [[#eq-diploid]] numerically from $p = 0.01$ to $p = 0.99$ gives: additive ($h = 0.5$) 377 generations; dominant ($h = 1$) 2265 generations; recessive ($h = 0$) 2171 generations. Explain the pattern.
 ::: solution
-An additive allele always has a heterozygote advantage of $s/2$ and moves steadily, like the haploid case with $s = 0.025$: from [[#eq-haploid-ratio]], $\ln(99^2)/\ln 1.025 \approx 372$ generations — but the diploid allele gains in both heterozygotes and homozygotes and goes about twice as fast.
+An additive allele always has a heterozygote advantage of $s/2$ and moves steadily, like the haploid case with $s = 0.025$: from [[#eq-haploid-ratio]], $\ln(99^2)/\ln 1.025 \approx 372$ generations, close to the 377 of the exact diploid iteration (the small difference comes from the mean-fitness denominator).
 
 The dominant allele rises fast while rare (heterozygotes already have the full advantage), but near fixation the remaining $A_2$ alleles are almost all in heterozygotes, which have the same fitness as $A_1A_1$; selection sees only the rare $A_2A_2$ homozygotes, with frequency $q^2$, and the last stage takes most of the time.
 

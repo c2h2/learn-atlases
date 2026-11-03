@@ -7,12 +7,27 @@
   "order": 120,
   "tagline": "Hardy–Weinberg equilibrium, selection, drift, mutation and migration, inbreeding, linkage disequilibrium, molecular evolution and quantitative traits",
   "summary": "Population genetics turns Mendel’s laws into a quantitative theory of evolution. This course builds the classical models — Hardy–Weinberg equilibrium, selection, genetic drift, mutation, migration and inbreeding — then connects them to DNA sequence data through linkage disequilibrium and the neutral theory, and to continuous traits through heritability and the response to selection.",
-  "overview": [],
+  "overview": [
+    "Population genetics is the study of how the genetic composition of populations changes from generation to generation. It takes Mendel's rules for single crosses and asks what they imply for thousands or millions of interbreeding individuals, and for the four processes that change allele frequencies — natural selection, genetic drift, mutation and migration — together with non-random mating. Because these processes are the mechanisms of evolution, population genetics is the quantitative core of evolutionary biology; and because every DNA sequence, crop yield, breeding programme, conservation plan and genome-wide association study is a sample from a population, the same theory is used daily in genomics, agriculture, medicine and conservation.",
+    "The course has three parts. The first builds the classical one- and two-locus models: Hardy–Weinberg equilibrium as the null model, selection with dominance and heterozygote advantage, the Wright–Fisher model of drift and its effective population size, mutation and migration with F-statistics, and inbreeding. The second connects these models to sequence data: linkage disequilibrium and what it says about recombination, selective sweeps and admixture; the coalescent; and the neutral theory, the molecular clock and the tests (dN/dS, McDonald–Kreitman, Tajima's D) used to detect selection in DNA. The third turns to continuous traits: the partition of phenotypic variance into additive, dominance and environmental components, heritability and the resemblance between relatives, and the breeder's equation and its multivariate form.",
+    "The subject is mathematical, but the mathematics is modest — algebra, a little calculus and elementary probability — and each model is built from an explicit list of assumptions. The difficulty lies in thinking statistically about populations and genealogies rather than about individual organisms, and in keeping deterministic forces (selection, migration, mutation) and random ones (drift, sampling) apart while seeing how they combine. Work every example, run the short simulations, and for each formula ask which assumption would fail in a real population and what would change. The introductory treatment in Evolution (natural selection; mutation, drift and gene flow) is assumed and extended, not repeated."
+  ],
   "prerequisites": [
     "genetics",
     "evolution"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Estimate allele, genotype and haplotype frequencies and measures of variation (heterozygosity, nucleotide diversity, segregating sites) from samples, with their sampling error.",
+    "Derive Hardy–Weinberg proportions for multiple and X-linked alleles, test samples against them, and interpret departures in terms of the assumptions that fail.",
+    "Calculate allele-frequency trajectories, equilibria and their stability under selection with dominance, heterozygote advantage, underdominance, frequency dependence and fluctuating environments.",
+    "Use the Wright–Fisher model, the diffusion results and the coalescent to predict loss of heterozygosity, fixation probabilities and times, and genealogies, and calculate effective population size.",
+    "Analyse mutation–drift, mutation–selection and migration–drift equilibria and quantify population structure with F-statistics and the Wahlund effect.",
+    "Calculate inbreeding coefficients from pedigrees and mating systems and predict the genotypic and phenotypic consequences of inbreeding, including inbreeding depression.",
+    "Measure linkage disequilibrium with D, D′ and r², predict its decay under recombination, and interpret LD patterns as evidence of drift, selection and admixture.",
+    "Explain the neutral and nearly neutral theories and apply the molecular clock, corrected distances, dN/dS, the McDonald–Kreitman test and Tajima's D to sequence data.",
+    "Partition phenotypic variance into genetic and environmental components, estimate heritability from relatives, and explain what heritability does and does not mean.",
+    "Predict short- and long-term responses to selection and correlated responses with the breeder's and Lande equations, and estimate selection gradients from data."
+  ],
   "chapters": [
     {
       "slug": "hardy-weinberg",
@@ -90,8 +105,145 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1908,
+      "title": "Hardy–Weinberg proportions",
+      "detail": "G. H. Hardy (in Science) and Wilhelm Weinberg (in a lecture in Stuttgart) showed independently that random mating gives genotype frequencies p², 2pq and q² that remain constant without other forces, explaining why dominant alleles do not spread on their own.",
+      "people": [
+        "G. H. Hardy",
+        "Wilhelm Weinberg"
+      ]
+    },
+    {
+      "year": 1918,
+      "title": "Mendelian inheritance of continuous traits",
+      "detail": "R. A. Fisher's paper 'The correlation between relatives on the supposition of Mendelian inheritance' showed that many Mendelian loci produce continuous variation and the observed resemblance between relatives, introducing the analysis of variance.",
+      "people": [
+        "R. A. Fisher"
+      ]
+    },
+    {
+      "year": 1922,
+      "title": "The inbreeding coefficient",
+      "detail": "Sewall Wright defined coefficients of inbreeding and relationship and computed them from pedigrees by path analysis, building on his studies of inbred guinea pigs.",
+      "people": [
+        "Sewall Wright"
+      ]
+    },
+    {
+      "year": 1924,
+      "title": "A mathematical theory of selection",
+      "detail": "J. B. S. Haldane began his series of papers on natural and artificial selection, calculating rates of change for dominant and recessive alleles and estimating the strength of selection on the melanic peppered moth.",
+      "people": [
+        "J. B. S. Haldane"
+      ]
+    },
+    {
+      "year": 1931,
+      "title": "Evolution in Mendelian populations",
+      "detail": "Wright's long paper in Genetics analysed drift in finite populations, effective population size, and the balance of drift, migration, mutation and selection.",
+      "people": [
+        "Sewall Wright"
+      ]
+    },
+    {
+      "year": 1951,
+      "title": "F-statistics",
+      "detail": "In 'The genetical structure of populations' Wright partitioned inbreeding into within- and between-population components, F_IS, F_ST and F_IT, still the standard measures of population structure.",
+      "people": [
+        "Sewall Wright"
+      ]
+    },
+    {
+      "year": 1968,
+      "title": "The neutral theory",
+      "detail": "Motoo Kimura argued in Nature that most molecular substitutions are selectively neutral and fixed by drift; Jack King and Thomas Jukes made the same case in 1969.",
+      "people": [
+        "Motoo Kimura",
+        "Jack King",
+        "Thomas Jukes"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "Genetic hitch-hiking",
+      "detail": "John Maynard Smith and John Haigh showed that the spread of a favourable mutation drags linked neutral alleles with it and reduces variation nearby, the basis of selective-sweep scans.",
+      "people": [
+        "John Maynard Smith",
+        "John Haigh"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "The coalescent",
+      "detail": "J. F. C. Kingman described the genealogy of a sample of genes as a process of lineages merging backwards in time, the basis of modern sequence-based population genetics; Richard Hudson and Fumio Tajima developed it for sequence data in the following years.",
+      "people": [
+        "J. F. C. Kingman",
+        "Richard Hudson",
+        "Fumio Tajima"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "The McDonald–Kreitman test",
+      "detail": "John McDonald and Martin Kreitman compared synonymous and replacement differences within and between Drosophila species at the Adh gene and found an excess of fixed replacements, evidence for adaptive protein evolution.",
+      "people": [
+        "John McDonald",
+        "Martin Kreitman"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Principles of Population Genetics, 4th edition",
+      "authors": "Daniel L. Hartl and Andrew G. Clark",
+      "year": 2007,
+      "note": "The comprehensive standard text: careful derivations of every classical model, with molecular population genetics, quantitative genetics and many worked problems."
+    },
+    {
+      "title": "Population Genetics: A Concise Guide, 2nd edition",
+      "authors": "John H. Gillespie",
+      "year": 2004,
+      "note": "A short, lucid introduction to drift, selection and the coalescent, ideal for building intuition before the larger texts."
+    },
+    {
+      "title": "An Introduction to Population Genetics: Theory and Applications",
+      "authors": "Rasmus Nielsen and Montgomery Slatkin",
+      "year": 2013,
+      "note": "A modern undergraduate text built around the coalescent and sequence data, with clear treatments of linkage disequilibrium, structure and tests of selection."
+    },
+    {
+      "title": "Elements of Evolutionary Genetics",
+      "authors": "Brian Charlesworth and Deborah Charlesworth",
+      "year": 2010,
+      "note": "An authoritative graduate-level synthesis linking theory to data on molecular variation, mutation, selection, recombination and sex."
+    },
+    {
+      "title": "Introduction to Quantitative Genetics, 4th edition",
+      "authors": "D. S. Falconer and Trudy F. C. Mackay",
+      "year": 1996,
+      "note": "The classic introduction to genotypic values, variance components, heritability, the resemblance between relatives and the response to selection."
+    },
+    {
+      "title": "Evolution and Selection of Quantitative Traits",
+      "authors": "Bruce Walsh and Michael Lynch",
+      "year": 2018,
+      "note": "The comprehensive modern reference on selection response, selection gradients, long-term selection and the detection of selection, with its companion Genetics and Analysis of Quantitative Traits (Lynch and Walsh, 1998)."
+    },
+    {
+      "title": "Gene Genealogies, Variation and Evolution: A Primer in Coalescent Theory",
+      "authors": "Jotun Hein, Mikkel H. Schierup and Carsten Wiuf",
+      "year": 2005,
+      "note": "A gentle, well-illustrated introduction to the coalescent, recombination and inference from sequence variation."
+    },
+    {
+      "title": "The Neutral Theory of Molecular Evolution",
+      "authors": "Motoo Kimura",
+      "year": 1983,
+      "note": "Kimura's own statement of the neutral theory and the diffusion methods behind it; the primary source for the neutralist side of the debate."
+    }
+  ],
   "next": [
     "genomics"
   ]

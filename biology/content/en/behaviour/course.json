@@ -7,12 +7,27 @@
   "order": 150,
   "tagline": "Tinbergen’s questions, mechanisms and learning, foraging, conflict and game theory, communication, mating systems, cooperation and migration",
   "summary": "Why does a bird sing at dawn, a honeybee dance or a female spider eat her mate? This course asks Tinbergen’s four questions — mechanism, development, function and evolution — and covers the genetic, hormonal and neural basis of behaviour, learning and cognition, foraging decisions, conflict and evolutionary game theory, communication, mating systems and parental care, cooperation and social insects, and migration.",
-  "overview": [],
+  "overview": [
+    "Animal behaviour is the study of what animals do — how they find food, avoid predators, choose mates, fight, signal, cooperate, raise young and find their way across the planet — and of why they do it. Behaviour is where genes, nervous systems and hormones meet the ecological and social world, and where natural selection acts most visibly: a heritable change in when a bird sings or how a wasp provisions its nest is selected on as surely as a change in beak shape. The subject matters well beyond curiosity. It informs conservation (where animals move, what disturbs them, how captive animals can be released), pest control and fisheries, animal welfare, and our understanding of the evolutionary roots of our own social behaviour.",
+    "The course is organised around Niko Tinbergen's four questions. It opens with the questions themselves and the methods of behavioural research: ethograms, sampling rules, experiments in the field and the laboratory, and the comparative method. Two chapters then treat proximate causes — the genes, hormones and neural circuits that produce behaviour, and the learning and cognition that adjust it to experience. The remaining six take the functional and evolutionary view of behavioural ecology: optimal foraging, contests and evolutionary game theory, communication and the honesty of signals, mating systems and parental care, cooperation and kin selection, and migration and navigation.",
+    "Behavioural ecology is quantitative. Its central arguments are models — the marginal value theorem, the Hawk–Dove game, Hamilton's rule, the polygyny threshold — that make precise predictions from stated assumptions, and much of the difficulty of the subject lies in using them well: being clear about what currency an animal is assumed to maximise, what constraints it faces, and what the model leaves out. The other difficulty is the language. Biologists say that a bird 'decides' to leave a patch or that a gene is 'selfish' as shorthand for statements about selection and outcomes, not about intentions; each lesson flags where this shorthand misleads, works through numerical examples, and asks you to interpret real experimental designs. The evolutionary background is in Evolution and Ecology; the neural detail is in Neuroscience."
+  ],
   "prerequisites": [
     "evolution",
     "ecology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish Tinbergen's four questions — mechanism, development, function and evolution — and classify explanations of a behaviour by the question they answer.",
+    "Design a behavioural study: construct an ethogram, choose sampling and recording rules, measure inter-observer reliability and avoid pseudoreplication.",
+    "Explain how genes, hormones and neural circuits contribute to behaviour, using single-gene, selection and knockout studies, and describe how behaviour develops through the interaction of genes and experience.",
+    "Describe imprinting, habituation, classical and operant conditioning and social learning, model associative learning with the Rescorla–Wagner rule, and evaluate claims about animal cognition.",
+    "Apply the prey model and the marginal value theorem to predict diet choice and patch residence times, and explain risk-sensitive foraging and the trade-off between food and predation.",
+    "Find the evolutionarily stable strategies of the Hawk–Dove game and related games, and explain how asymmetries, assessment and the war of attrition settle real contests.",
+    "Explain why signals can be honest — costs, indices and shared interest — and analyse deception, mimicry and the evolution of signals from cues.",
+    "Explain the ecological causes of monogamy, polygyny, polyandry and promiscuity, and analyse sperm competition and the evolution of parental care and its conflicts.",
+    "Apply Hamilton's rule and calculate coefficients of relatedness, explain reciprocity and the iterated prisoner's dilemma, and evaluate explanations of eusociality.",
+    "Explain how animals orient with sun, star and magnetic compasses, what is known about map senses, and how migration evolves and is optimised."
+  ],
   "chapters": [
     {
       "slug": "studying-behaviour",
@@ -90,7 +105,128 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1872,
+      "title": "The Expression of the Emotions",
+      "detail": "Darwin's The Expression of the Emotions in Man and Animals treated behaviour as a product of evolution, comparing postures, facial expressions and displays across species.",
+      "people": [
+        "Charles Darwin"
+      ]
+    },
+    {
+      "year": 1935,
+      "title": "Imprinting described",
+      "detail": "Konrad Lorenz's 'Der Kumpan in der Umwelt des Vogels' described how goslings and ducklings form an attachment to the first moving object they encounter during a sensitive period after hatching.",
+      "people": [
+        "Konrad Lorenz"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "On aims and methods of ethology",
+      "detail": "Niko Tinbergen's paper set out the four questions — causation, survival value, ontogeny and evolution — that still organise the study of behaviour.",
+      "people": [
+        "Niko Tinbergen"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Kin selection",
+      "detail": "W. D. Hamilton's 'The genetical evolution of social behaviour' showed that genes for altruism can spread when rb > c, introducing inclusive fitness.",
+      "people": [
+        "W. D. Hamilton"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Biological constraints on learning",
+      "detail": "John Garcia and Robert Koelling showed that rats readily associate taste with later illness, and light and sound with shock, but not the other way round.",
+      "people": [
+        "John Garcia",
+        "Robert Koelling"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "The logic of animal conflict",
+      "detail": "John Maynard Smith and George Price introduced the evolutionarily stable strategy in Nature, explaining why many contests between animals are settled without serious injury.",
+      "people": [
+        "John Maynard Smith",
+        "George Price"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "Nobel Prize for ethology",
+      "detail": "Karl von Frisch, Konrad Lorenz and Niko Tinbergen shared the Nobel Prize in Physiology or Medicine for their discoveries on the organisation and elicitation of individual and social behaviour patterns.",
+      "people": [
+        "Karl von Frisch",
+        "Konrad Lorenz",
+        "Niko Tinbergen"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "The marginal value theorem",
+      "detail": "Eric Charnov's theorem predicted how long a forager should stay in a depleting patch, a founding result of optimal foraging theory.",
+      "people": [
+        "Eric Charnov"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "The evolution of cooperation",
+      "detail": "Robert Axelrod and W. D. Hamilton showed in Science that reciprocal strategies such as Tit for Tat can be stable in the repeated prisoner's dilemma.",
+      "people": [
+        "Robert Axelrod",
+        "W. D. Hamilton"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "An Introduction to Behavioural Ecology, 4th edition",
+      "authors": "Nicholas B. Davies, John R. Krebs and Stuart A. West",
+      "year": 2012,
+      "note": "The standard concise text on the adaptive value of behaviour: foraging, game theory, sexual selection, mating systems, cooperation and signalling, with classic experiments explained clearly."
+    },
+    {
+      "title": "Animal Behavior, 11th edition",
+      "authors": "Dustin R. Rubenstein and John Alcock",
+      "year": 2019,
+      "note": "A broad undergraduate textbook organised around Tinbergen's questions, strong on proximate mechanisms and on integrating them with evolutionary explanations."
+    },
+    {
+      "title": "Measuring Behaviour: An Introductory Guide, 4th edition",
+      "authors": "Melissa Bateson and Paul Martin",
+      "year": 2021,
+      "note": "The practical guide to ethograms, sampling and recording rules, reliability and the design of behavioural studies."
+    },
+    {
+      "title": "Foraging Theory",
+      "authors": "David W. Stephens and John R. Krebs",
+      "year": 1986,
+      "note": "The classic monograph on optimal foraging models — the prey and patch models, risk sensitivity and their tests — with the mathematics set out in full."
+    },
+    {
+      "title": "Evolution and the Theory of Games",
+      "authors": "John Maynard Smith",
+      "year": 1982,
+      "note": "The founding book on evolutionarily stable strategies, from the Hawk–Dove game and the war of attrition to asymmetric contests."
+    },
+    {
+      "title": "Principles of Animal Communication, 2nd edition",
+      "authors": "Jack W. Bradbury and Sandra L. Vehrencamp",
+      "year": 2011,
+      "note": "Comprehensive on signal production, transmission and reception across modalities, and on the economics and honesty of signals."
+    },
+    {
+      "title": "Cognition, Evolution, and Behavior, 2nd edition",
+      "authors": "Sara J. Shettleworth",
+      "year": 2010,
+      "note": "A critical comparative treatment of learning, memory, spatial cognition, timing, social learning and claims about animal minds."
+    }
+  ],
   "next": []
 }

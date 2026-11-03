@@ -7,11 +7,26 @@
   "order": 130,
   "tagline": "Fertilisation, axes and morphogens, gastrulation, segmentation and Hox genes, organogenesis, plant development, regeneration and evo-devo",
   "summary": "A single fertilised egg becomes an organism with hundreds of cell types arranged in a precise body plan. This course follows that process: fertilisation and early embryos, axis formation and morphogen gradients, gastrulation, segmentation and Hox genes, the building of organs, plant development, stem cells and regeneration, and how changes in development drive evolution.",
-  "overview": [],
+  "overview": [
+    "Developmental biology asks how a single cell, the fertilised egg, becomes an organism with hundreds of cell types arranged in a precise and reproducible body plan. Every cell of the embryo carries the same genome, yet cells in different places come to express different genes, take on different shapes, move, divide and die at different times. The subject explains how these differences arise: how eggs are polarised, how cells signal to their neighbours, how gradients of signalling molecules supply positional information, how networks of transcription factors lock cells into stable states, and how mechanical forces fold sheets of cells into tubes, layers and organs. It is also the bridge between genes and evolution, because new forms evolve through changes in development.",
+    "The course begins with the concepts the rest depends on — specification, determination and differentiation, genomic equivalence, induction and competence — and the model organisms in which they were worked out. It then follows the embryo in time: fertilisation and cleavage, the establishment of the body axes by maternal determinants and morphogen gradients, gastrulation and the formation of the germ layers, segmentation and the Hox genes that give segments their identities, and the building of organs such as the neural tube and the limb. Two chapters widen the view: plant development, which builds a body throughout life from meristems, and stem cells, regeneration and ageing, which show that developmental mechanisms continue in the adult. The final chapter, evolution and development, asks how a shared genetic toolkit can build such different animals.",
+    "Development is hard to learn because it happens in four dimensions and because most of what we know was inferred from experiments rather than seen directly: a graft that induces a second body axis, a mutant larva with half its segments missing, a gene expressed in seven stripes. Each chapter therefore works through the key experiments, their logic and their limits, and puts numbers on the processes — gradient length scales, cell-cycle times, clock periods, cell counts and growth rates — with short models where they clarify a mechanism. As you read, keep asking three questions of every structure: which cells make it, what tells them to, and what experiment showed it."
+  ],
   "prerequisites": [
     "molecular-biology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define specification, determination, differentiation, potency and competence, and distinguish autonomous from conditional specification using the results of isolation and transplantation experiments.",
+    "Explain the evidence for genomic equivalence from nuclear transfer, and describe how gene regulatory networks and positive feedback make cell fates stable.",
+    "Describe fertilisation, the blocks to polyspermy, egg activation and the patterns of cleavage in sea urchins, frogs, flies and mammals, and calculate cell numbers and nuclear-to-cytoplasmic ratios during cleavage.",
+    "Explain how maternal determinants and morphogen gradients establish the body axes of Drosophila and vertebrates, and calculate gradient decay lengths, threshold positions and the effects of changes in morphogen dose.",
+    "Describe the cell movements of gastrulation in representative animals, and explain the organiser, neural induction and the BMP–antagonist mechanism of dorsoventral patterning.",
+    "Trace the segmentation hierarchy of Drosophila from maternal to segment-polarity genes, explain the clock-and-wavefront model of somitogenesis quantitatively, and predict the phenotypes of Hox mutations.",
+    "Explain how the neural tube and the vertebrate limb are patterned by Sonic hedgehog, BMP, Wnt and FGF signalling, and interpret graft and mutant experiments on them.",
+    "Describe plant embryogenesis, meristem maintenance by the WUSCHEL–CLAVATA feedback loop and phyllotaxis, and use the ABC model to predict floral homeotic mutant phenotypes.",
+    "Compare stem cells and their niches, explain regeneration in planarians and salamanders, and interpret survival data with the Gompertz model of ageing.",
+    "Explain how changes in cis-regulatory elements, heterochrony and the redeployment of toolkit genes produce evolutionary change in form, and evaluate evidence for deep homology."
+  ],
   "chapters": [
     {
       "slug": "principles-of-development",
@@ -88,7 +103,144 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1891,
+      "title": "Regulation in the sea-urchin embryo",
+      "detail": "Hans Driesch separates the first two blastomeres of a sea-urchin embryo and finds that each forms a complete, smaller larva, contradicting Wilhelm Roux's 1888 frog experiment in which killing one blastomere left a half-embryo.",
+      "people": [
+        "Hans Driesch",
+        "Wilhelm Roux"
+      ]
+    },
+    {
+      "year": 1924,
+      "title": "The organiser",
+      "detail": "Hans Spemann and Hilde Mangold graft the dorsal lip of the blastopore between newt embryos of differently pigmented species and show that it induces a secondary body axis largely from host tissue.",
+      "people": [
+        "Hans Spemann",
+        "Hilde Mangold"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "Nuclei of differentiated cells keep the whole genome",
+      "detail": "John Gurdon transplants nuclei from tadpole intestinal cells into enucleated eggs of Xenopus laevis and obtains swimming tadpoles (and, in later work with Uehlinger, fertile adult frogs), showing that differentiation does not require the loss of genes.",
+      "people": [
+        "John Gurdon"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "The bithorax complex",
+      "detail": "Edward Lewis summarises decades of genetic analysis of the Drosophila bithorax complex, showing that a cluster of genes specifies segment identity and that the order of the genes on the chromosome matches the order of the segments they control.",
+      "people": [
+        "Edward B. Lewis"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "Mutations affecting segment number and polarity",
+      "detail": "Christiane Nüsslein-Volhard and Eric Wieschaus screen for mutations that alter the larval cuticle pattern of Drosophila and classify them into gap, pair-rule and segment-polarity genes.",
+      "people": [
+        "Christiane Nüsslein-Volhard",
+        "Eric Wieschaus"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "The complete cell lineage of C. elegans",
+      "detail": "John Sulston, Einhard Schierenberg, John White and Nichol Thomson complete the embryonic cell lineage of the nematode Caenorhabditis elegans, following every division from zygote to hatching, including the cells that undergo programmed death.",
+      "people": [
+        "John Sulston",
+        "Einhard Schierenberg",
+        "John White",
+        "Nichol Thomson"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "The homeobox",
+      "detail": "The groups of Walter Gehring and of Matthew Scott discover a conserved 180-base-pair sequence, the homeobox, shared by Drosophila homeotic genes; it is soon found in the genomes of frogs, mice and humans.",
+      "people": [
+        "William McGinnis",
+        "Michael Levine",
+        "Walter Gehring",
+        "Matthew Scott",
+        "Amy Weiner"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Bicoid, the first identified morphogen gradient",
+      "detail": "Wolfgang Driever and Christiane Nüsslein-Volhard show that Bicoid protein forms an anterior-to-posterior concentration gradient in the Drosophila embryo and that changing the dose of the bicoid gene shifts the fate map.",
+      "people": [
+        "Wolfgang Driever",
+        "Christiane Nüsslein-Volhard"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "The ABC model of flower development",
+      "detail": "Enrico Coen and Elliot Meyerowitz propose that three classes of homeotic gene, acting alone or in combination, specify the four kinds of floral organ, from mutants of Arabidopsis thaliana and Antirrhinum majus.",
+      "people": [
+        "Enrico Coen",
+        "Elliot Meyerowitz"
+      ]
+    },
+    {
+      "year": 2006,
+      "title": "Induced pluripotent stem cells",
+      "detail": "Kazutoshi Takahashi and Shinya Yamanaka reprogram mouse fibroblasts into pluripotent stem cells by expressing four transcription factors, Oct3/4, Sox2, Klf4 and c-Myc.",
+      "people": [
+        "Kazutoshi Takahashi",
+        "Shinya Yamanaka"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Developmental Biology, 12th edition",
+      "authors": "Scott F. Gilbert, Michael J. F. Barresi",
+      "year": 2020,
+      "note": "The standard undergraduate text: comprehensive, experiment-centred and well illustrated, covering every topic of this course, including plants, regeneration and evo-devo."
+    },
+    {
+      "title": "Principles of Development, 6th edition",
+      "authors": "Lewis Wolpert, Cheryll Tickle, Alfonso Martinez Arias",
+      "year": 2019,
+      "note": "Organised around concepts — positional information, induction, morphogenesis — rather than organisms; clear on the logic of experiments and on vertebrate limbs and somites."
+    },
+    {
+      "title": "Essential Developmental Biology, 3rd edition",
+      "authors": "Jonathan M. W. Slack",
+      "year": 2013,
+      "note": "A concise text with a strong emphasis on model organisms, fate maps and the distinction between specification and commitment; good for revision."
+    },
+    {
+      "title": "The Making of a Fly: The Genetics of Animal Design",
+      "authors": "Peter A. Lawrence",
+      "year": 1992,
+      "note": "A short, lively monograph on how genetics revealed the segmentation hierarchy and compartments of Drosophila; still the best introduction to its logic."
+    },
+    {
+      "title": "From DNA to Diversity: Molecular Genetics and the Evolution of Animal Design, 2nd edition",
+      "authors": "Sean B. Carroll, Jennifer K. Grenier, Scott D. Weatherbee",
+      "year": 2005,
+      "note": "The genetic toolkit, cis-regulatory evolution and the origin of animal body plans; the core reading for the evo-devo chapter."
+    },
+    {
+      "title": "The Regulatory Genome: Gene Regulatory Networks in Development and Evolution",
+      "authors": "Eric H. Davidson",
+      "year": 2006,
+      "note": "An advanced monograph on gene regulatory networks, built around the sea-urchin endomesoderm network; for readers who want the systems view of specification."
+    },
+    {
+      "title": "Mechanisms in Plant Development",
+      "authors": "Ottoline Leyser, Stephen Day",
+      "year": 2003,
+      "note": "A compact account of embryogenesis, meristems, phyllotaxis, flowering and plasticity in plants, contrasting them with animal development."
+    }
+  ],
   "next": []
 }
