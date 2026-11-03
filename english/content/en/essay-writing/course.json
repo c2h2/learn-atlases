@@ -7,12 +7,28 @@
   "order": 170,
   "tagline": "The writing process, understanding the question, thesis and introduction, arguing a point, counter-arguments, essay types, describing data, conclusions, signposting, revising and editing, and writing under time pressure",
   "summary": "An essay answers a question with a clear position supported by reasons and evidence. This course follows the writing process from analysing the question and planning to drafting, revising and editing, and teaches thesis statements, argumentative paragraphs, counter-arguments, the common types of essay, describing data, introductions and conclusions, signposting, and writing under time pressure.",
-  "overview": [],
+  "overview": [
+    "This course is about the essay: a text of a few hundred to a few thousand words that answers a question with a clear position, supported by reasons and evidence and organised so that a reader can follow it. It starts with the writing process itself — planning, drafting, revising and editing as separate kinds of work — and with the first and most often neglected step, reading the question: what *discuss*, *evaluate* and *to what extent* ask for, and how to narrow a topic until it can be argued. It then builds an essay from the inside out: the thesis statement and the introduction that leads to it, body paragraphs that make a claim and support it, counter-arguments and how to answer them, the common types of essay, describing data and processes, and conclusions. The last lessons deal with signposting and cohesion across a whole text, revising and editing with the help of feedback, and writing a complete essay in a fixed time.",
+    "Essays matter far beyond the classroom. The same moves — stating a position, giving reasons, anticipating objections, weighing evidence, reaching a conclusion that follows from what has been said — are those of reports, proposals, reviews, applications and the academic papers of later study, and examinations at every level ask for them. The lessons describe what experienced writers and examiners actually value, not formulas: the five-paragraph essay is a training shape, not a law; *Firstly*, *Moreover* and *In conclusion* do not make an essay organised; and a good conclusion answers the question rather than repeating the introduction.",
+    "Each lesson opens with a real problem, states its principles in numbered definitions and rules with their explanations, works through model thesis statements, paragraphs and outlines written for the atlas, and ends with key takeaways and graded exercises with full model answers. The first four lessons should be read in order; after *Arguing a point*, the lessons on counter-arguments and essay types can be read in either order, and the later lessons build on them as their prerequisites show. The course assumes the paragraph skills of *Sentences and Paragraphs* and the clause grammar of *Complex Sentences*; *Academic Reading* teaches the reading side of argument, and *Academic Writing* and *Style and Rhetoric* continue where this course stops.",
+    "Chinese-speaking writers bring strengths to the essay — a school training in structure, memorised models and a large stock of examples — and meet some particular difficulties. English academic essays usually state the position early and keep every paragraph tied to it, while Chinese school essays may build towards their point, open with a general or literary lead-in, or end with a call to action; neither habit is wrong in its own setting, but English readers and examiners expect the first. Learners often overuse sequence words and connectors learnt as lists (首先、其次、此外、总之), rely on set phrases and quotations, and hedge too much or too little. The notes on English and Chinese in each lesson discuss these points, including the long debate over contrastive rhetoric — the claim, made by Kaplan (1966) and much criticised since, that writing in each culture follows its own pattern of thought. The most useful habit is to plan before writing and to reread each paragraph asking one question: what is this paragraph's point, and how does it answer the question?"
+  ],
   "prerequisites": [
     "sentences-and-paragraphs",
     "complex-sentences"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain the stages of the writing process and plan, draft, revise and edit an essay as separate passes.",
+    "Analyse an essay question by its task words, topic and limiting words, and narrow a broad topic to a question that can be argued in the space available.",
+    "Write a thesis statement that takes an arguable, specific position and an introduction that leads to it without empty openings.",
+    "Write body paragraphs that state a claim, explain it and support it with relevant examples and evidence, and link back to the thesis.",
+    "Present an opposing view fairly and answer it with concession and rebuttal, using *although*, *admittedly*, *while it is true that* and similar language accurately.",
+    "Organise discursive, compare-and-contrast, cause-and-effect and problem–solution essays in a suitable pattern.",
+    "Describe trends, comparisons and processes from charts, tables and diagrams accurately, selecting the main features and using precise language of change and approximation.",
+    "Write a conclusion that answers the question and draws the argument together without repeating the introduction or adding new arguments.",
+    "Signpost the structure of an essay and link its paragraphs, using connectors sparingly and correctly.",
+    "Revise an essay for argument and structure, edit it for language, use feedback from others, and plan and check an essay written in a fixed time."
+  ],
   "chapters": [
     {
       "slug": "writing-process",
@@ -105,8 +121,124 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1580,
+      "title": "Montaigne's Essais",
+      "detail": "Michel de Montaigne published the first two books of his *Essais* in Bordeaux. His title, from French *essayer* ‘to try’, gave the essay its name: a short, personal attempt to think a question through.",
+      "people": [
+        "Michel de Montaigne"
+      ]
+    },
+    {
+      "year": 1597,
+      "title": "Bacon's Essayes",
+      "detail": "Francis Bacon published his first ten *Essayes* in English, short and compressed pieces of advice and argument. Enlarged editions followed in 1612 and 1625.",
+      "people": [
+        "Francis Bacon"
+      ]
+    },
+    {
+      "year": 1866,
+      "title": "Bain's English Composition and Rhetoric",
+      "detail": "Alexander Bain's textbook set out rules for the paragraph and helped to establish the division of writing into description, narration, exposition and argument, which shaped school composition teaching for a century.",
+      "people": [
+        "Alexander Bain"
+      ]
+    },
+    {
+      "year": 1905,
+      "title": "The end of the imperial examinations",
+      "detail": "The Qing government abolished the civil service examinations. The eight-legged essay (八股文), the fixed examination form of the Ming and Qing dynasties, had already been dropped from them a few years earlier.",
+      "people": []
+    },
+    {
+      "year": 1958,
+      "title": "Toulmin's The Uses of Argument",
+      "detail": "Stephen Toulmin analysed everyday arguments into claim, data, warrant, backing, qualifier and rebuttal. His model later became widely used in the teaching of argumentative writing.",
+      "people": [
+        "Stephen Toulmin"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Kaplan's contrastive rhetoric",
+      "detail": "Robert B. Kaplan's article \"Cultural thought patterns in inter-cultural education\" claimed that essays by students from different language backgrounds followed different patterns of organisation. The claim started the field of contrastive rhetoric and has been heavily criticised.",
+      "people": [
+        "Robert B. Kaplan"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "Emig's study of the composing process",
+      "detail": "Janet Emig's *The Composing Processes of Twelfth Graders* observed students as they wrote, and helped to turn the teaching of writing from the finished product towards the process of producing it.",
+      "people": [
+        "Janet Emig"
+      ]
+    },
+    {
+      "year": 1981,
+      "title": "A cognitive process theory of writing",
+      "detail": "Linda Flower and John R. Hayes described writing as planning, translating ideas into text, and reviewing, processes that writers move between repeatedly rather than in a fixed order.",
+      "people": [
+        "Linda Flower",
+        "John R. Hayes"
+      ]
+    },
+    {
+      "year": 1987,
+      "title": "Knowledge telling and knowledge transforming",
+      "detail": "Carl Bereiter and Marlene Scardamalia's *The Psychology of Written Composition* contrasted writers who write down what they know in the order it comes to mind with writers who reshape their knowledge to meet the goals of the text.",
+      "people": [
+        "Carl Bereiter",
+        "Marlene Scardamalia"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Writing Academic English",
+      "authors": "Alice Oshima and Ann Hogue",
+      "year": 2006,
+      "note": "Fourth edition. A widely used textbook for learners that builds from the paragraph to the essay, with clear models of thesis statements, essay types and outlines."
+    },
+    {
+      "title": "Academic Writing: A Handbook for International Students",
+      "authors": "Stephen Bailey",
+      "year": 2018,
+      "note": "Fifth edition. Short units on the writing process, understanding questions, argument, describing data and the language of essays, written for students whose first language is not English."
+    },
+    {
+      "title": "\"They Say / I Say\": The Moves That Matter in Academic Writing",
+      "authors": "Gerald Graff and Cathy Birkenstein",
+      "year": 2006,
+      "note": "First edition; later editions add chapters. Teaches the moves of argument — summarising others, answering objections, saying why it matters — with templates to adapt, not copy."
+    },
+    {
+      "title": "Academic Writing for Graduate Students",
+      "authors": "John M. Swales and Christine B. Feak",
+      "year": 2012,
+      "note": "Third edition. For readers going on to university writing: problem–solution texts, data commentary and the language of comparison, with tasks based on real academic genres."
+    },
+    {
+      "title": "Second Language Writing",
+      "authors": "Ken Hyland",
+      "year": 2003,
+      "note": "A guide for teachers to the research on second-language writing: process and genre approaches, feedback and assessment. Behind many of the notes on feedback in this course."
+    },
+    {
+      "title": "Contrastive Rhetoric: Cross-Cultural Aspects of Second-Language Writing",
+      "authors": "Ulla Connor",
+      "year": 1996,
+      "note": "A survey of contrastive rhetoric from Kaplan (1966) onwards, including its criticisms; for readers who want to know what is and is not known about writing across cultures."
+    },
+    {
+      "title": "Chinese Rhetoric and Writing: An Introduction for Language Teachers",
+      "authors": "Andy Kirkpatrick and Xu Zhichang",
+      "year": 2012,
+      "note": "An account of Chinese rhetorical traditions, including 起承转合 and the eight-legged essay, and of how far they do or do not explain Chinese students' writing in English."
+    }
+  ],
   "next": [
     "academic-writing",
     "style-and-rhetoric"
