@@ -7,9 +7,25 @@
   "order": 10,
   "tagline": "How speech is made, the phonemic alphabet, vowels and consonants, syllables and clusters, spelling and sound, word stress, and the sounds Chinese speakers find hardest",
   "summary": "English has around 40 to 44 distinctive sounds, depending on the accent, and its spelling shows them only roughly. This course explains how speech sounds are made, how to read the phonemic symbols used in dictionaries, the vowels and consonants of General British and General American English, how sounds combine into syllables, how spelling maps onto sound and the basics of word stress, with special attention to the contrasts that Mandarin does not make.",
-  "overview": [],
+  "overview": [
+    "This course is about the sounds of English: how they are made, how to write them down, and how to say them clearly. It starts with the organs of speech and the three questions that describe any consonant (voice, place, manner) or vowel (height, front or back, lip rounding). It then sets out the phonemic alphabet used in the whole atlas — the symbols of the *Longman Pronunciation Dictionary*, with John Wells's keywords such as KIT, FLEECE and GOAT — for the two reference accents, General British (GB) and General American (GA), and compares it with the DJ and KK notations many Chinese learners met at school.",
+    "Pronunciation matters because listeners recognise words by their sounds and their stress. A learner with a rich vocabulary and good grammar can still be hard to understand if *ship* sounds like *sheep*, *think* like *sink*, or *desert* like *dessert*. The aim is not to sound like one particular speaker — no accent is \"correct\" — but to be understood easily, and to hear the differences that other speakers make.",
+    "The chapters go from sounds to words: the vowels (short vowels, then long vowels and diphthongs), the consonants (stops, fricatives and affricates, then nasals and approximants), the way sounds combine into syllables and consonant clusters, the links between spelling and sound, and the basics of word stress. The last chapter brings together the difficulties of Chinese speakers and shows how to practise them with minimal pairs.",
+    "Mandarin and English organise sound very differently. Mandarin syllables are short and simple, end only in a vowel, *-n*, *-ng* (or *-r*), and carry a lexical tone; English syllables can end in long consonant clusters and depend on stress. Mandarin keeps *b* and *p* apart by a puff of air, not by voice, and has no /θ/, /ð/, /v/ or /ʒ/ as separate sounds. Approach the course with your own ears and body: feel the buzz of voice, watch your lips in a mirror, record yourself, and practise the contrasts that matter for your own first language or dialect, not every contrast at once."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Describe any English consonant by voice, place and manner, and any vowel by height, frontness and lip rounding.",
+    "Read and write phonemic transcriptions of common words in the Longman Pronunciation Dictionary system, for both General British and General American.",
+    "Name the English vowels with Wells's lexical sets (KIT, DRESS, TRAP …) and say where GB and GA differ.",
+    "Convert symbols between the DJ and KK notations and the system of this atlas.",
+    "Pronounce the short and long vowels and the diphthongs of English so that minimal pairs such as *ship*–*sheep*, *bed*–*bad* and *full*–*fool* are kept apart.",
+    "Pronounce /θ/, /ð/, /v/, /w/, /l/, /r/ and final /n/ and /ŋ/ clearly, and keep voiceless–voiced pairs such as *back*–*bag* apart by aspiration and vowel length.",
+    "Divide words into syllables and say consonant clusters such as *str-*, *-sts* and *-ksθs* without adding or dropping sounds.",
+    "Predict the pronunciation of a written word from the main spelling patterns, and recognise common exceptions and silent letters.",
+    "Mark the stressed syllable of a word as dictionaries do, and use the usual stress of two-syllable nouns and verbs such as *a record* and *to record*.",
+    "Identify the contrasts that are hardest for your own first language or dialect and practise them with minimal pairs."
+  ],
   "chapters": [
     {
       "slug": "how-speech-is-made",
@@ -92,8 +108,26 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {"year": 1569, "title": "Hart's *Orthographie*", "detail": "John Hart described the speech organs and the sounds of English and proposed a new phonetic spelling, one of the earliest serious studies of English pronunciation.", "people": ["John Hart"]},
+    {"year": 1791, "title": "Walker's *Critical Pronouncing Dictionary*", "detail": "John Walker's dictionary showed the pronunciation of every word and became the standard pronouncing dictionary of the nineteenth century, in Britain and America.", "people": ["John Walker"]},
+    {"year": 1877, "title": "Sweet's *Handbook of Phonetics*", "detail": "Henry Sweet set out a careful system for describing speech sounds and their transcription; he is often seen as a founder of modern English phonetics.", "people": ["Henry Sweet"]},
+    {"year": 1886, "title": "The International Phonetic Association", "detail": "Language teachers led by Paul Passy founded the association that became the International Phonetic Association; its alphabet, the IPA, was first published in 1888.", "people": ["Paul Passy"]},
+    {"year": 1917, "title": "Jones's *English Pronouncing Dictionary*", "detail": "Daniel Jones described the pronunciation of educated speakers in the south of England, which he later called Received Pronunciation (RP); the editions before 1977 of his dictionary gave the \"DJ\" symbols used in many older Chinese textbooks.", "people": ["Daniel Jones"]},
+    {"year": 1944, "title": "Kenyon and Knott's *Pronouncing Dictionary of American English*", "detail": "John Kenyon and Thomas Knott transcribed General American in IPA symbols; their notation is the \"KK\" system of many Chinese and Taiwanese classrooms.", "people": ["John S. Kenyon", "Thomas A. Knott"]},
+    {"year": 1962, "title": "Gimson's *Introduction to the Pronunciation of English*", "detail": "A. C. Gimson's book became the standard description of British pronunciation; as editor of Jones's dictionary he introduced, in its 14th edition (1977), the symbols /ɪ/, /ʊ/, /ɒ/, /ɜː/ that most learner's dictionaries now use.", "people": ["A. C. Gimson"]},
+    {"year": 1982, "title": "Wells's *Accents of English*", "detail": "John Wells described the accents of English around the world and introduced the lexical sets — KIT, DRESS, TRAP and the rest — that name vowels across accents.", "people": ["John C. Wells"]},
+    {"year": 1990, "title": "The *Longman Pronunciation Dictionary*", "detail": "Wells's dictionary gave British and American pronunciations side by side, with variants and preference polls; its transcription system is the one used in this atlas.", "people": ["John C. Wells"]}
+  ],
+  "references": [
+    {"title": "Longman Pronunciation Dictionary", "authors": "John C. Wells", "year": 2008, "note": "3rd edition. The source of this atlas's transcription system: GB and GA pronunciations of a very large vocabulary, with variants, notes on spelling and sound, and the results of preference polls."},
+    {"title": "English Phonetics and Phonology: A Practical Course", "authors": "Peter Roach", "year": 2009, "note": "4th edition. A clear, short course on British English pronunciation for learners and teachers, with exercises."},
+    {"title": "Gimson's Pronunciation of English", "authors": "Alan Cruttenden", "year": 2014, "note": "8th edition. The standard full description of General British, including its history and advice for learners; it uses slightly different symbols for some vowels (/ɛ/, /a/, /ɛː/)."},
+    {"title": "Accents of English", "authors": "John C. Wells", "year": 1982, "note": "Three volumes. Where the lexical sets come from; describes British, American and many other accents of English."},
+    {"title": "A Course in Phonetics", "authors": "Peter Ladefoged and Keith Johnson", "year": 2015, "note": "7th edition. An introduction to phonetics, mainly with American English examples, for readers who want to go further."},
+    {"title": "Learner English: A Teacher's Guide to Interference and Other Problems", "authors": "Michael Swan and Bernard Smith (eds.)", "year": 2001, "note": "2nd edition. Short chapters on the typical difficulties of speakers of different first languages, including Chinese."},
+    {"title": "English Pronunciation in Use (Intermediate)", "authors": "Mark Hancock", "year": 2003, "note": "A self-study book with short units and recorded exercises, useful for practice alongside this course."}
+  ],
   "next": [
     "connected-speech",
     "everyday-english"
