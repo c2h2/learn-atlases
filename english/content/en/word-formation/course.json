@@ -7,11 +7,27 @@
   "order": 90,
   "tagline": "Morphemes, prefixes, suffixes and word class, compounds, conversion, clipping, blends and acronyms, Greek and Latin roots, spelling changes, and learning words through their parts",
   "summary": "Most English words are built from smaller parts, and recognising those parts lets a learner guess the meaning of new words and turn one word into many. This course explains roots and affixes, the prefixes and suffixes that do most of the work, compounds, conversion between word classes, shortened words, the Greek and Latin roots of academic vocabulary, and the spelling changes that happen when words are built.",
-  "overview": [],
+  "overview": [
+    "This course is about how English words are made. Most long English words are built from smaller parts: *unhelpful* is *un-* + *help* + *-ful*, *greenhouse* is *green* + *house*, and *lab* is a shortened *laboratory*. The course first names these parts — roots, prefixes and suffixes, the units linguists call morphemes — and then looks at each way of making words in turn: adding prefixes and suffixes, joining two words into a compound, using a word in a new word class without changing it (*to email*, *a must*), shortening words into clips, blends and acronyms, and building academic words from Greek and Latin roots.",
+    "Word formation matters to a learner for two reasons. It helps with reading, because a reader who knows the parts can often make a good guess at a new word such as *unaffordable* or *biodegradable*. And it helps with writing and speaking, because English usually shows word class with an ending: the same idea is *decide*, *decision*, *decisive* and *decisively*, and a sentence needs the right one. The course also shows where word parts mislead — *inflammable* means the same as *flammable*, and *carpet* has nothing to do with cars or pets.",
+    "The chapters start with morphemes and then follow the main processes one by one: prefixes, suffixes, compounds, conversion, and shortened words. The chapter on Greek and Latin roots uses all of these for academic and scientific vocabulary, the chapter on spelling explains why *hope* becomes *hoping* but *hop* becomes *hopping*, and the last chapter turns everything into a method for learning words. Each chapter has definitions and rules, worked examples, quick checks, a note on English and Chinese, and graded exercises with full answers.",
+    "For Chinese speakers, one part of this is familiar and one part is new. Chinese builds most of its words by compounding — 电 + 脑, 火 + 车 — so English compounds such as *bookshop* and *bus stop* feel natural. But Chinese has few affixes and no inflection for tense or number, so English derivation — whole families of words that differ only in a suffix and in word class — is where most mistakes happen (✗ *very success*, ✗ *a lot of develop*). The best approach is to notice the parts of every new word, learn the common affixes with the word class they make, and check each guess against the context or a dictionary."
+  ],
   "prerequisites": [
     "core-vocabulary"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Split a word into its morphemes and say which are roots, prefixes and suffixes, and which endings are inflections.",
+    "Explain the meaning of the common prefixes of negation, reversal, number, time, place and degree, and choose between *un-*, *in-*, *dis-* and *non-*.",
+    "Use noun, adjective, verb and adverb suffixes to choose the member of a word family that a sentence needs.",
+    "Predict where suffixes such as *-ity*, *-ic* and *-ion* put the stress, and which suffixes leave it unchanged.",
+    "Recognise compounds, tell a compound from a phrase by its stress and meaning, and find out how a compound is written.",
+    "Identify conversion in a sentence and say which word class a word belongs to there.",
+    "Recognise clippings, blends, acronyms and initialisms, pronounce them correctly and use the right article before them.",
+    "Use common Greek and Latin roots to work out the meaning of academic and scientific words.",
+    "Apply the spelling rules for dropping *e*, doubling consonants and changing *y* to *i* when adding suffixes.",
+    "Guess the meaning of new words from their parts and the context, check the guess, and avoid false analyses."
+  ],
   "chapters": [
     {
       "slug": "morphemes",
@@ -88,8 +104,144 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1884,
+      "title": "The first part of the Oxford English Dictionary",
+      "detail": "The first fascicle of the *New English Dictionary on Historical Principles*, later the *Oxford English Dictionary*, appeared under James Murray. Its dated quotations made it possible to say when a word, a prefix or a suffix is first recorded in English.",
+      "people": [
+        "James Murray"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Bloomfield defines the morpheme",
+      "detail": "Leonard Bloomfield's *Language* defined the morpheme as a form that has no partial resemblance in sound and meaning to any other form, the definition from which modern accounts of word structure start.",
+      "people": [
+        "Leonard Bloomfield"
+      ]
+    },
+    {
+      "year": 1942,
+      "title": "Jespersen's volume on morphology",
+      "detail": "Part VI of Otto Jespersen's *A Modern English Grammar on Historical Principles* was devoted to morphology, with long, example-rich sections on English prefixes, suffixes, compounds and other ways of making words.",
+      "people": [
+        "Otto Jespersen"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "Marchand's survey of English word-formation",
+      "detail": "Hans Marchand's *The Categories and Types of Present-Day English Word-Formation* described every English affix, compound type and minor process such as clipping and blending, with its history. A second edition followed in 1969.",
+      "people": [
+        "Hans Marchand"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Aronoff and productivity",
+      "detail": "Mark Aronoff's *Word Formation in Generative Grammar* treated word formation as a set of rules for making new words from existing ones, and made productivity — which affixes can still make new words — a central question.",
+      "people": [
+        "Mark Aronoff"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Bauer's English Word-Formation",
+      "detail": "Laurie Bauer's *English Word-Formation* gave a systematic account of English derivation, compounding and conversion and of how productivity can be measured.",
+      "people": [
+        "Laurie Bauer"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "Word-formation in a reference grammar",
+      "detail": "Randolph Quirk, Sidney Greenbaum, Geoffrey Leech and Jan Svartvik's *A Comprehensive Grammar of the English Language* included an appendix on word-formation that classified the common prefixes and suffixes by meaning and by the word class they make.",
+      "people": [
+        "Randolph Quirk",
+        "Sidney Greenbaum",
+        "Geoffrey Leech",
+        "Jan Svartvik"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "Word families and affix levels",
+      "detail": "Laurie Bauer and Paul Nation's article \\\"Word families\\\" ordered English affixes in levels by frequency, regularity and productivity, giving vocabulary research and teaching a clear definition of which forms belong together.",
+      "people": [
+        "Laurie Bauer",
+        "Paul Nation"
+      ]
+    },
+    {
+      "year": 2003,
+      "title": "Plag's textbook",
+      "detail": "Ingo Plag's *Word-Formation in English* introduced students to affixes, compounds, conversion and productivity using dictionary and corpus evidence. A second edition appeared in 2018.",
+      "people": [
+        "Ingo Plag"
+      ]
+    },
+    {
+      "year": 2013,
+      "title": "The Oxford Reference Guide to English Morphology",
+      "detail": "Laurie Bauer, Rochelle Lieber and Ingo Plag published a large reference description of English inflection, derivation and compounding, based on dictionary and corpus data.",
+      "people": [
+        "Laurie Bauer",
+        "Rochelle Lieber",
+        "Ingo Plag"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Word-Formation in English",
+      "authors": "Ingo Plag",
+      "year": 2018,
+      "note": "Second edition (Cambridge University Press). A clear introduction for students: morphemes, affixes, compounds, conversion and how to tell which affixes are productive."
+    },
+    {
+      "title": "English Word-Formation",
+      "authors": "Laurie Bauer",
+      "year": 1983,
+      "note": "Cambridge University Press. A classic description of English derivation, compounding and conversion; good on productivity and on the minor processes."
+    },
+    {
+      "title": "The Oxford Reference Guide to English Morphology",
+      "authors": "Laurie Bauer, Rochelle Lieber and Ingo Plag",
+      "year": 2013,
+      "note": "Oxford University Press. The most detailed modern reference on English word structure, for checking what a given affix does and how widely it is used."
+    },
+    {
+      "title": "Learning Vocabulary in Another Language",
+      "authors": "I. S. P. Nation",
+      "year": 2013,
+      "note": "Second edition (Cambridge University Press). Its chapter on word parts explains which affixes are worth teaching and how learners can use word parts to learn and guess words."
+    },
+    {
+      "title": "Practical English Usage",
+      "authors": "Michael Swan",
+      "year": 2016,
+      "note": "Fourth edition (Oxford University Press). Short, reliable entries on spelling rules for suffixes, *-ise* and *-ize*, and problem pairs such as *-ic* and *-ical*."
+    },
+    {
+      "title": "The Cambridge Encyclopedia of the English Language",
+      "authors": "David Crystal",
+      "year": 2019,
+      "note": "Third edition (Cambridge University Press). Its part on English vocabulary gives a readable, well-illustrated survey of word formation and of the sources of English words."
+    },
+    {
+      "title": "The Morphology of Chinese: A Linguistic and Cognitive Approach",
+      "authors": "Jerome L. Packard",
+      "year": 2000,
+      "note": "Cambridge University Press. An account of how Chinese words are built, mainly by compounding; background to the notes comparing English and Chinese."
+    },
+    {
+      "title": "英汉对比研究（增订本）",
+      "authors": "连淑能",
+      "year": 2010,
+      "note": "高等教育出版社. A standard contrastive study for Chinese students; its chapters on word classes and word formation explain why English needs a suffix where Chinese often does not."
+    }
+  ],
   "next": [
     "collocation-and-register",
     "history-of-english"
