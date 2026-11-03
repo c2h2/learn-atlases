@@ -7,12 +7,26 @@
   "order": 200,
   "tagline": "Kinetic models, gene-expression dynamics, network motifs, switches and oscillators, noise, robustness, metabolic networks, pattern formation and fitting models to data",
   "summary": "Systems biology asks how the behaviour of cells emerges from networks of interacting molecules, and answers with mathematical models. This course builds dynamical models of gene expression, the network motifs that recur in nature, switches, oscillators and noise, signalling and robust adaptation, metabolic networks and pattern formation, and the statistics of fitting models to data.",
-  "overview": [],
+  "overview": [
+    "Systems biology asks how the behaviour of a cell — its decisions, rhythms, responses and growth — emerges from the interactions of its molecules. Molecular biology has catalogued the parts: genes, transcription factors, receptors, kinases, enzymes and metabolites, and the wiring diagrams that connect them. But a wiring diagram does not say what a circuit does. Whether a negative feedback loop stabilises a protein level or makes it oscillate, whether a signalling cascade responds gradually or like a switch, whether a metabolic pathway is limited by one enzyme or shares control among many, depends on rates and concentrations, and the only reliable way to reason about them is with mathematical models that can be compared with quantitative measurements.",
+    "The course builds those models from the bottom up. It starts with the kinetic description of molecular reactions — mass action, steady states and time scales — and applies it to the production and degradation of gene products, Hill functions and autoregulation. It then studies the small circuits that recur throughout transcription networks (feed-forward loops and feedback loops), the switches and oscillators that positive and negative feedback can build, and the randomness that small numbers of molecules impose on gene expression. Later chapters treat signal transduction and the robustness of bacterial chemotaxis, the stoichiometric analysis of whole metabolic networks by flux balance and metabolic control analysis, the reaction–diffusion mechanisms that lay down spatial patterns in embryos, and the statistics of estimating parameters and choosing between competing models.",
+    "Systems biology is hard because it needs two kinds of thinking at once: the biologist's knowledge of what molecules actually do, and the mathematician's habits of nondimensionalising, finding steady states, analysing stability and asking which parameters matter. The mathematics used here — first-order and nonlinear ordinary differential equations, phase planes, linear algebra and elementary probability — is developed in the Maths Atlas, and the lessons link to it rather than re-teaching it. Each chapter states its models with their assumptions, derives the key results, works them with numbers taken from well-studied systems in Escherichia coli, yeast and Drosophila, and uses interactive phase planes and plots to show what the equations predict. Treat every model as a hypothesis: the aim is not to fit curves but to understand which features of a mechanism produce which behaviour, and how an experiment could tell two mechanisms apart."
+  ],
   "prerequisites": [
     "molecular-biology",
     "biostatistics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Write kinetic equations for a reaction network from the law of mass action, find its steady states, and use time-scale separation to simplify it.",
+    "Calculate the steady-state level and response time of a gene product from its production, degradation and dilution rates, and explain how autoregulation changes them.",
+    "Describe the common network motifs of transcription networks and predict the dynamical function of feed-forward loops and of negative and positive feedback.",
+    "Analyse bistable switches and oscillators with nullclines and linear stability, and explain hysteresis, the genetic toggle switch, the repressilator and the core design of circadian clocks.",
+    "Model gene expression as a stochastic process, simulate it with the Gillespie algorithm, and interpret Fano factors and the intrinsic and extrinsic components of noise.",
+    "Explain how bacterial chemotaxis achieves exact adaptation, and distinguish robust from fine-tuned mechanisms and graded from ultrasensitive responses.",
+    "Set up the stoichiometric matrix of a metabolic network, solve small flux balance problems, and calculate and interpret flux control coefficients.",
+    "Explain how morphogen gradients and reaction–diffusion systems create spatial patterns, and derive the conditions for a Turing instability.",
+    "Estimate model parameters from data by least squares and maximum likelihood, diagnose identifiability problems, and compare models with likelihood ratios and information criteria."
+  ],
   "chapters": [
     {
       "slug": "modelling-principles",
@@ -89,7 +103,145 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1864,
+      "title": "The law of mass action",
+      "detail": "Cato Guldberg and Peter Waage proposed that the rate of a chemical reaction is proportional to the product of the concentrations of the reacting substances, the basis of every kinetic model of a cell.",
+      "people": [
+        "Cato Maximilian Guldberg",
+        "Peter Waage"
+      ]
+    },
+    {
+      "year": 1913,
+      "title": "Michaelis–Menten kinetics",
+      "detail": "Leonor Michaelis and Maud Menten measured the rate of sucrose hydrolysis by invertase and described it with the saturating rate law that bears their names; George Briggs and J. B. S. Haldane gave the quasi-steady-state derivation in 1925.",
+      "people": [
+        "Leonor Michaelis",
+        "Maud Menten"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "Turing's reaction–diffusion theory",
+      "detail": "In 'The chemical basis of morphogenesis' Alan Turing showed that two reacting and diffusing chemicals can spontaneously form stationary spatial patterns from a nearly uniform state.",
+      "people": [
+        "Alan Turing"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "The operon and genetic regulatory circuits",
+      "detail": "François Jacob and Jacques Monod's model of the lac operon of Escherichia coli established that genes are switched on and off by regulatory proteins, and they pointed out that such circuits could make switches and oscillators.",
+      "people": [
+        "François Jacob",
+        "Jacques Monod"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "Metabolic control analysis",
+      "detail": "Henrik Kacser and James Burns, and independently Reinhart Heinrich and Tom Rapoport (1974), showed that control of a pathway's flux is shared among its enzymes and that the flux control coefficients sum to one.",
+      "people": [
+        "Henrik Kacser",
+        "James Burns",
+        "Reinhart Heinrich",
+        "Tom Rapoport"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "Exact stochastic simulation",
+      "detail": "Daniel Gillespie published the stochastic simulation algorithm, which generates statistically exact trajectories of a well-mixed chemical system with small numbers of molecules.",
+      "people": [
+        "Daniel T. Gillespie"
+      ]
+    },
+    {
+      "year": 1997,
+      "title": "Robustness of chemotaxis",
+      "detail": "Naama Barkai and Stanislas Leibler showed that a model of E. coli chemotaxis adapts exactly for any parameter values; Uri Alon and colleagues confirmed experimentally in 1999 that adaptation precision is robust while other properties are not.",
+      "people": [
+        "Naama Barkai",
+        "Stanislas Leibler",
+        "Uri Alon"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "Synthetic switches and oscillators",
+      "detail": "Timothy Gardner, Charles Cantor and James Collins built a bistable genetic toggle switch, and Michael Elowitz and Stanislas Leibler the repressilator, a three-repressor oscillator, both in E. coli and published in the same issue of Nature.",
+      "people": [
+        "Timothy Gardner",
+        "Charles Cantor",
+        "James Collins",
+        "Michael Elowitz",
+        "Stanislas Leibler"
+      ]
+    },
+    {
+      "year": 2002,
+      "title": "Network motifs and gene-expression noise",
+      "detail": "Shai Shen-Orr, Ron Milo, Shmoolik Mangan and Uri Alon identified network motifs such as the feed-forward loop in the transcription network of E. coli, and Michael Elowitz, Arnold Levine, Eric Siggia and Peter Swain separated intrinsic from extrinsic noise with two fluorescent reporters in one cell.",
+      "people": [
+        "Shai Shen-Orr",
+        "Ron Milo",
+        "Uri Alon",
+        "Michael Elowitz",
+        "Peter Swain"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "An Introduction to Systems Biology: Design Principles of Biological Circuits (2nd edition)",
+      "authors": "Uri Alon",
+      "year": 2019,
+      "note": "The standard first text: gene-expression dynamics, network motifs, robustness, chemotaxis and optimality, with clear derivations and exercises. Most of the first six chapters of this course follow its spirit."
+    },
+    {
+      "title": "Nonlinear Dynamics and Chaos (2nd edition)",
+      "authors": "Steven H. Strogatz",
+      "year": 2015,
+      "note": "The most readable introduction to phase planes, bifurcations, limit cycles and stability, with many biological examples; the mathematical companion to the switches and oscillators chapter."
+    },
+    {
+      "title": "Systems Biology: A Textbook (2nd edition)",
+      "authors": "Edda Klipp, Wolfram Liebermeister, Christoph Wierling and Axel Kowald",
+      "year": 2016,
+      "note": "Broad coverage of kinetic modelling, metabolic control analysis, stoichiometric networks, parameter estimation and model selection."
+    },
+    {
+      "title": "Systems Biology: Constraint-based Reconstruction and Analysis",
+      "authors": "Bernhard Ø. Palsson",
+      "year": 2015,
+      "note": "The reference for genome-scale metabolic reconstructions, the stoichiometric matrix and flux balance analysis."
+    },
+    {
+      "title": "Mathematical Biology I: An Introduction and II: Spatial Models and Biomedical Applications (3rd edition)",
+      "authors": "James D. Murray",
+      "year": 2002,
+      "note": "Classic treatment of oscillators, reaction–diffusion, Turing patterns and morphogen gradients; volume II covers pattern formation in depth."
+    },
+    {
+      "title": "Physical Biology of the Cell (2nd edition)",
+      "authors": "Rob Phillips, Jane Kondev, Julie Theriot and Hernan G. Garcia",
+      "year": 2013,
+      "note": "Order-of-magnitude reasoning about cells, statistical-mechanical models of gene regulation and the physics behind binding curves and noise."
+    },
+    {
+      "title": "Understanding the Control of Metabolism",
+      "authors": "David Fell",
+      "year": 1997,
+      "note": "A clear account of metabolic control analysis — control and elasticity coefficients, the summation and connectivity theorems — and what they mean for pathway engineering."
+    },
+    {
+      "title": "Stochastic simulation of chemical kinetics",
+      "authors": "Daniel T. Gillespie",
+      "year": 2007,
+      "note": "Review in Annual Review of Physical Chemistry by the author of the stochastic simulation algorithm: the chemical master equation, exact simulation and its approximations."
+    }
+  ],
   "next": []
 }
