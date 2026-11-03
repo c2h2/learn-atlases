@@ -7,12 +7,27 @@
   "order": 120,
   "tagline": "CMOS inverters and gates, timing, interconnect, power and memory design",
   "summary": "Billions of transistors on a chip behave as logic gates only because of careful circuit design. This course analyses the CMOS inverter and logic gates, delay and logical effort, dynamic and sequential circuits, interconnect, power dissipation and memory arrays, together with the fabrication process and layout.",
-  "overview": [],
+  "overview": [
+    "A modern processor or memory chip holds tens of billions of transistors, yet a designer can reason about it in Boolean algebra only because every one of those transistors is arranged in circuits that restore clean logic levels, switch in picoseconds and draw little power when idle. Digital integrated-circuit design is the discipline that makes this true. It sits between device physics and logic design: it takes the MOSFET of [[semiconductor-devices/mosfets]] and the gates and flip-flops of [[digital-logic]] and asks how fast, how large and how power-hungry a real implementation is, and how to make it better.",
+    "The course follows the path of a signal through a chip. It starts with the fabrication process and the layout that turns a schematic into masks, then analyses the CMOS inverter in depth — its transfer characteristic, noise margins and delay — because every other gate is judged against it. Static CMOS gates and the method of **logical effort** come next, followed by the faster but more fragile dynamic gates, and then the latches, flip-flops and clock networks that impose a timing discipline. The last three chapters deal with what dominates real designs: the wires between gates, the power the chip dissipates, and the memory arrays that occupy most of its area.",
+    "What makes the subject demanding is that almost nothing is exact. Transistor currents are approximated by square laws, effective resistances or the alpha-power law; wires are distributed RC lines summarised by the Elmore delay; power is an average over unknown data. The skill is to choose the simplest model that answers the question, to know where it stops being valid, and to check the result against orders of magnitude: a gate delay of a few picoseconds, a wire capacitance of about $0.2\\,\\mathrm{fF/\\mu m}$, a supply of under a volt. Work every example with numbers, and keep in mind that the purpose of a hand calculation is to guide a design that will later be verified by simulation."
+  ],
   "prerequisites": [
     "digital-logic",
     "semiconductor-devices"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the main steps of a CMOS process — lithography, oxidation, implantation, deposition, etching and metallisation — and estimate lithographic resolution, die cost and yield.",
+    "Draw stick diagrams and layouts of simple gates that obey design rules, using Euler paths to share diffusion.",
+    "Derive the voltage transfer characteristic, switching threshold and noise margins of the CMOS inverter, and calculate its propagation delay from effective-resistance and charge-based models.",
+    "Design static CMOS, pass-transistor and transmission-gate circuits for a given Boolean function, and size the transistors for equal drive.",
+    "Apply the method of logical effort to find the minimum delay of a logic path, the best number of stages and the transistor sizes that achieve it.",
+    "Analyse dynamic and domino gates, including precharge–evaluate operation, charge sharing, keepers and leakage.",
+    "Analyse CMOS latches and flip-flops, derive setup and hold constraints including skew and jitter, and compare clock-distribution networks.",
+    "Model interconnect resistance, capacitance and inductance, compute Elmore delays of RC trees and design repeater chains for long wires.",
+    "Calculate dynamic, short-circuit and leakage power and evaluate low-power techniques such as voltage scaling, clock gating and power gating.",
+    "Explain the operation of SRAM, DRAM and flash cells, size an SRAM cell for read stability and writability, and organise decoders and sense amplifiers into a memory array."
+  ],
   "chapters": [
     {
       "slug": "cmos-fabrication",
@@ -82,7 +97,130 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1948,
+      "title": "The Elmore delay",
+      "detail": "W. C. Elmore defined the delay of a low-pass network by the first moment of its impulse response, while analysing wideband valve amplifiers; the same measure became the standard delay estimate for on-chip RC wires.",
+      "people": [
+        "William C. Elmore"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "The planar process and the monolithic integrated circuit",
+      "detail": "Jean Hoerni at Fairchild devised the planar process, in which oxide protects the junctions, and Robert Noyce used it to make the first monolithic integrated circuit with interconnections deposited on top of the oxide.",
+      "people": [
+        "Jean Hoerni",
+        "Robert Noyce"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "Complementary MOS logic",
+      "detail": "Frank Wanlass and C. T. Sah of Fairchild presented complementary-symmetry MOS logic, which draws almost no power when it is not switching, at the International Solid-State Circuits Conference.",
+      "people": [
+        "Frank Wanlass",
+        "C. T. Sah"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "The one-transistor DRAM cell",
+      "detail": "Robert Dennard at IBM invented the dynamic memory cell made of one transistor and one capacitor (patented in 1968); Intel's 1103 of 1970 was the first commercially successful DRAM chip.",
+      "people": [
+        "Robert Dennard"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "Introduction to VLSI Systems",
+      "detail": "Carver Mead and Lynn Conway's textbook introduced scalable lambda-based design rules and a structured layout methodology that opened chip design to university students and system designers.",
+      "people": [
+        "Carver Mead",
+        "Lynn Conway"
+      ]
+    },
+    {
+      "year": 1984,
+      "title": "Flash memory",
+      "detail": "Fujio Masuoka and colleagues at Toshiba presented flash EEPROM, which erases a whole block at once; NAND flash followed in 1987.",
+      "people": [
+        "Fujio Masuoka"
+      ]
+    },
+    {
+      "year": 1991,
+      "title": "Logical effort",
+      "detail": "Ivan Sutherland and Robert Sproull published the method of logical effort for estimating and minimising the delay of CMOS logic paths; it was developed into a book with David Harris in 1999.",
+      "people": [
+        "Ivan Sutherland",
+        "Robert Sproull",
+        "David Harris"
+      ]
+    },
+    {
+      "year": 1997,
+      "title": "Copper interconnect",
+      "detail": "IBM announced a manufacturable copper damascene interconnect process, which entered production in 1998 and replaced aluminium wiring in high-performance chips.",
+      "people": []
+    },
+    {
+      "year": 2007,
+      "title": "High-k metal-gate transistors",
+      "detail": "Intel's 45 nm generation replaced the silicon dioxide gate insulator and polysilicon gate with a hafnium-based dielectric and metal gate electrodes, restoring gate control as oxides could no longer be thinned.",
+      "people": []
+    },
+    {
+      "year": 2019,
+      "title": "Extreme-ultraviolet lithography in volume production",
+      "detail": "After decades of development, EUV scanners working at 13.5 nm wavelength entered high-volume manufacturing of logic chips at Samsung and TSMC's 7 nm-class processes.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Digital Integrated Circuits: A Design Perspective (2nd ed.)",
+      "authors": "Jan M. Rabaey, Anantha Chandrakasan, Borivoje Nikolić",
+      "year": 2003,
+      "note": "The classic course text: inverter, gates, interconnect, timing and memories, with careful analysis of each model's assumptions."
+    },
+    {
+      "title": "CMOS VLSI Design: A Circuits and Systems Perspective (4th ed.)",
+      "authors": "Neil H. E. Weste, David Money Harris",
+      "year": 2010,
+      "note": "Broad and practical; the best source for logical effort applied to real circuits, layout, clocking, power and SRAM design."
+    },
+    {
+      "title": "Logical Effort: Designing Fast CMOS Circuits",
+      "authors": "Ivan Sutherland, Bob Sproull, David Harris",
+      "year": 1999,
+      "note": "The original, short and readable account of the method used in the static-logic chapter, with many worked examples."
+    },
+    {
+      "title": "CMOS Digital Integrated Circuits: Analysis and Design (4th ed.)",
+      "authors": "Sung-Mo Kang, Yusuf Leblebici, Chulwoo Kim",
+      "year": 2014,
+      "note": "Detailed derivations of inverter characteristics, dynamic logic and memory circuits; good for extra exercises."
+    },
+    {
+      "title": "Silicon VLSI Technology: Fundamentals, Practice and Modeling",
+      "authors": "James D. Plummer, Michael D. Deal, Peter B. Griffin",
+      "year": 2000,
+      "note": "Standard text on fabrication: lithography, oxidation, implantation, diffusion, deposition and etching, with the physical models behind each."
+    },
+    {
+      "title": "Introduction to VLSI Systems",
+      "authors": "Carver Mead, Lynn Conway",
+      "year": 1980,
+      "note": "Historic text that introduced lambda design rules and stick diagrams; still a clear introduction to layout thinking."
+    },
+    {
+      "title": "VLSI Memory Chip Design",
+      "authors": "Kiyoo Itoh",
+      "year": 2001,
+      "note": "Authoritative treatment of DRAM and SRAM arrays, sense amplifiers, decoders and redundancy by one of the pioneers of DRAM design."
+    }
+  ],
   "next": []
 }
