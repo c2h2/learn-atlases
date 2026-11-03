@@ -7,11 +7,27 @@
   "order": 40,
   "tagline": "Greetings and introductions, personal information, numbers in conversation, shopping and eating out, directions and travel, requests and offers, talking about yourself, phone calls and messages, and small talk",
   "summary": "Everyday English is about getting things done: meeting people, buying things, finding the way and asking for help. This course teaches the phrases and short exchanges for the commonest everyday situations, with the grammar behind them kept simple, and explains the conventions of politeness — *please*, *thank you*, *could you* — that matter more in English than many learners expect.",
-  "overview": [],
+  "overview": [
+    "This course teaches the English of ordinary situations: meeting people and saying who you are, giving personal details, understanding prices, times and dates, buying things and ordering food, finding the way and travelling, asking for help and offering it, talking about your life, using the phone and writing short messages, and making small talk. Each lesson starts from short dialogues and model texts written for the atlas and shows the phrases that do the job, the grammar behind them in its simplest form, and what changes between British and American English and between formal and informal situations.",
+    "These situations come first because they come first in real life. A learner who can greet a colleague, buy a ticket and check a phone number can use English from the first week, and every later course in listening and speaking builds on these exchanges. The grammar is taught in *Core Grammar*; here it is linked rather than taught again, so that the lessons can concentrate on what people actually say and how they answer.",
+    "The lessons follow the life of a conversation and a day. Greetings and personal information come first, then numbers, which are needed for shopping, travel and phone calls. Shopping, directions and travel are followed by a lesson on requests, offers and invitations, the politeness that runs through all the others. Talking about yourself, phone calls and messages, and small talk close the course and lead on to *Listening and Conversation*.",
+    "Chinese speakers usually know many of these phrases from school but find three things hard: politeness that is carried by grammar (*Could you…?* rather than *Please give me…*), conventions that differ from Chinese ones (*How are you?* as a greeting, the order of names, how often an offer is repeated), and fast spoken numbers. The best approach is to learn whole phrases rather than single words, to say them aloud with their stress and intonation, and to notice how people answer them. Each lesson has an *English and Chinese* note on these points."
+  ],
   "prerequisites": [
     "sounds-of-english"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Greet people, introduce yourself and others, and say goodbye in formal and informal situations, answering *How are you?* as a greeting.",
+    "Use names and titles correctly (*Ms Chen*, not *Ms Jie*) and explain the order of Chinese and English names.",
+    "Ask for and give personal information — origin, home, work, study, family and email address — and spell names aloud with the English names of the letters.",
+    "Say and understand prices, times, dates and phone numbers in British and American conventions, and check numbers that sound alike, such as *fifteen* and *fifty*.",
+    "Ask for things in shops, cafés and restaurants, order food and pay, using polite request forms.",
+    "Ask for and follow directions, buy tickets, use public transport, book a room and explain a simple problem when travelling.",
+    "Make requests, offers and invitations with *can*, *could*, *would you like* and *shall*, and accept or refuse them politely.",
+    "Talk about your daily routine, likes and dislikes, last weekend and future plans.",
+    "Make and answer a simple phone call, leave a clear message, and write short texts and chat messages in natural English.",
+    "Keep a short conversation going with follow-up questions, and end it politely."
+  ],
   "chapters": [
     {
       "slug": "greetings-introductions",
@@ -84,8 +100,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1923,
+      "title": "Malinowski names “phatic communion”",
+      "detail": "In a supplement to Ogden and Richards's *The Meaning of Meaning*, the anthropologist Bronisław Malinowski described talk whose main job is to create a social bond rather than to pass on information — greetings, remarks about the weather — and called it phatic communion.",
+      "people": ["Bronisław Malinowski"]
+    },
+    {
+      "year": 1968,
+      "title": "How telephone calls begin",
+      "detail": "Emanuel Schegloff's article “Sequencing in conversational openings”, based on recordings of real telephone calls, showed that the opening of a call follows a regular order of turns.",
+      "people": ["Emanuel A. Schegloff"]
+    },
+    {
+      "year": 1973,
+      "title": "How conversations end",
+      "detail": "Schegloff and Harvey Sacks's “Opening up closings” described how speakers prepare the end of a conversation with pre-closing turns such as *OK* and *Right then* before they say goodbye.",
+      "people": ["Emanuel A. Schegloff", "Harvey Sacks"]
+    },
+    {
+      "year": 1974,
+      "title": "The rules of turn-taking",
+      "detail": "Sacks, Schegloff and Jefferson's article in the journal *Language* set out how speakers in conversation take turns with few gaps and little overlap, the starting point of conversation analysis.",
+      "people": ["Harvey Sacks", "Emanuel A. Schegloff", "Gail Jefferson"]
+    },
+    {
+      "year": 1975,
+      "title": "The Threshold Level",
+      "detail": "Jan van Ek's *The Threshold Level*, written for the Council of Europe, listed what a learner needs to do in a language — greet, ask for things, give personal information, find the way — rather than only the grammar to learn.",
+      "people": ["Jan van Ek"]
+    },
+    {
+      "year": 1976,
+      "title": "Notional syllabuses",
+      "detail": "David Wilkins's *Notional Syllabuses* argued that language courses could be organised by meanings and functions such as requesting and inviting, an idea behind the communicative textbooks of the following decades.",
+      "people": ["David Wilkins"]
+    },
+    {
+      "year": 1987,
+      "title": "A theory of politeness",
+      "detail": "Penelope Brown and Stephen Levinson's *Politeness: Some Universals in Language Usage* (first published as a long essay in 1978) explained why requests are softened with forms such as *Could you…?* and *I was wondering if…*.",
+      "people": ["Penelope Brown", "Stephen C. Levinson"]
+    },
+    {
+      "year": 2001,
+      "title": "The Common European Framework",
+      "detail": "The Council of Europe published the CEFR, whose levels A1 to C2 describe what learners can do in everyday situations; its Companion Volume followed in 2020.",
+      "people": []
+    },
+    {
+      "year": 2006,
+      "title": "A grammar of spoken English",
+      "detail": "Ronald Carter and Michael McCarthy's *Cambridge Grammar of English*, drawing on a corpus of recorded conversation, gave spoken forms such as short answers, response tokens and ellipsis a full place beside written grammar.",
+      "people": ["Ronald Carter", "Michael McCarthy"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Practical English Usage",
+      "authors": "Michael Swan",
+      "year": 2016,
+      "note": "4th edition. Short, clear entries on everyday problems, including greetings, names and titles, numbers, dates, telephoning and polite requests, with British and American differences."
+    },
+    {
+      "title": "English Grammar in Use",
+      "authors": "Raymond Murphy",
+      "year": 2019,
+      "note": "5th edition. Self-study units with exercises and answers for the grammar behind everyday phrases: the present and past tenses, *going to*, *can* and *could*, *would like*."
+    },
+    {
+      "title": "Cambridge Grammar of English",
+      "authors": "Ronald Carter and Michael McCarthy",
+      "year": 2006,
+      "note": "A reference grammar based on a corpus of spoken and written English; its chapters on spoken grammar describe how real conversations open, continue and close."
+    },
+    {
+      "title": "Longman Grammar of Spoken and Written English",
+      "authors": "Douglas Biber, Stig Johansson, Geoffrey Leech, Susan Conrad and Edward Finegan",
+      "year": 1999,
+      "note": "Compares conversation with other registers using corpus counts; useful for teachers who want evidence about what speakers really say."
+    },
+    {
+      "title": "Conversation: From Description to Pedagogy",
+      "authors": "Scott Thornbury and Diana Slade",
+      "year": 2006,
+      "note": "For teachers: what everyday conversation is like (small talk, openings and closings, stories) and how to teach it."
+    },
+    {
+      "title": "Politeness: Some Universals in Language Usage",
+      "authors": "Penelope Brown and Stephen C. Levinson",
+      "year": 1987,
+      "note": "The classic theory of politeness and face; demanding reading, but the source of most later work on requests, offers and refusals."
+    },
+    {
+      "title": "Longman Pronunciation Dictionary",
+      "authors": "John C. Wells",
+      "year": 2008,
+      "note": "3rd edition. British and American pronunciations of words and names; the source of the transcription system used in this atlas."
+    }
+  ],
   "next": [
     "listening-and-conversation"
   ]
