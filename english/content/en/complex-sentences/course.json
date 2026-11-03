@@ -7,12 +7,28 @@
   "order": 130,
   "tagline": "Clauses and sentences, relative clauses, noun clauses, adverbial clauses, conditionals, wishes and the unreal past, reported speech, participle and infinitive clauses, emphasis and inversion, and ellipsis",
   "summary": "Upper-intermediate English is built from clauses inside clauses. This course explains how complex sentences are structured: relative, noun and adverbial clauses, the full system of conditionals and unreal meanings, reported speech, participle and infinitive clauses, the structures English uses for emphasis, such as cleft sentences and inversion, and the ways it avoids repetition.",
-  "overview": [],
+  "overview": [
+    "This course is about sentences that contain more than one clause. At the upper-intermediate level the difficulty of English lies less in single words and verb forms than in the way clauses are built into one another: a relative clause inside a noun phrase, a noun clause as the object of a verb, a condition attached to a result, a participle clause in place of a whole subordinate clause. The course starts with the vocabulary for describing this structure — main and subordinate, finite and non-finite clauses — and then takes the three families of subordinate clauses in turn: relative, noun and adverbial clauses. It continues with the tense system of conditionals and the unreal past, reported speech, participle and infinitive clauses, the structures English uses for emphasis (clefts, fronting and inversion), and the ways it avoids repetition (ellipsis and substitution).",
+    "Complex sentences matter because they carry the logic of a text. *Because*, *although*, *unless* and *in case* say how two facts are related; a defining relative clause says which person is meant, and a pair of commas can change that; *If I had known* and *If I knew* describe different worlds. Readers of academic and professional English meet these structures in nearly every sentence, and writers who control them can say exactly what they mean, at the right level of formality. The lessons describe English as it is used, in British and American varieties and in speech and writing, and explain where common \"rules\" — about *which* and *that*, prepositions at the end of a clause, or the obligatory change of tense in reported speech — are really preferences of style.",
+    "Each lesson opens with a real problem, sets out the forms in tables and numbered rules with their explanations, works through examples step by step, and ends with key takeaways and graded exercises with full answers. The first lesson is the foundation for all the others; after it, relative, noun and adverbial clauses can be read in any order, and the later lessons build on them as their prerequisites show. The course assumes the tenses of *Tense and Aspect* and the verb patterns of *Verb Patterns*, and links back to *Sentences and Paragraphs* for punctuation and basic subordination.",
+    "Chinese speakers meet two systematic differences. First, Chinese places modifiers, including the equivalent of relative clauses, before the noun with 的, while English places phrases and clauses after it; long English noun phrases therefore have to be built and read in the opposite order. Second, Chinese often leaves the relation between clauses to the reader (意合), with no conjunction, no change in the verb and no grammatical mark of unreality, while English marks it in form (形合): with a subordinator, a relative pronoun, a non-finite verb or a step back in tense. Every lesson has a note on English and Chinese that shows where these differences cause errors — *although … but*, *the book which I bought it*, *If I would have known*, *Can you tell me where is the station?* — and how to translate in both directions. A good habit is to analyse your own long sentences: find the finite verbs, the clause openers and the main clause, and check that each relation is shown in the form."
+  ],
   "prerequisites": [
     "tense-and-aspect",
     "verb-patterns"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Analyse a long sentence into its main and subordinate clauses, identify finite, non-finite and verbless clauses, and name the job of each clause.",
+    "Use defining and non-defining relative clauses with the correct relative word, punctuation and preposition position, and explain the actual British and American usage of *which* and *that*.",
+    "Use *that*-clauses, indirect questions and *whether*/*if*-clauses with statement word order, and use anticipatory *it* where English needs a subject or object.",
+    "Choose precise subordinators for time, reason, concession, purpose and result (*by the time*, *given that*, *even if*, *in case*, *so … that*), with the right tenses in time clauses.",
+    "Form real, unreal and mixed conditionals, use *unless*, *provided* and *as long as* correctly, and write formal conditionals with *should*, *were to* and inversion.",
+    "Use the unreal past after *wish*, *if only*, *it's time*, *would rather* and *as if*, and the subjunctive after verbs such as *suggest* and *insist*, with its British and American alternatives.",
+    "Report statements, questions and commands, deciding when backshift is needed and choosing reporting verbs (*deny*, *admit*, *claim*, *suggest*) with their patterns.",
+    "Replace relative and adverbial clauses with participle and infinitive clauses, and recognise and correct dangling participles.",
+    "Use *it*-clefts, *wh*-clefts and negative inversion for emphasis in formal English, and translate 直到……才, 只有……才 and 是……的 appropriately.",
+    "Use ellipsis, short answers, *one*, *so*/*not* and *do so* to avoid repetition, and answer negative questions correctly in English."
+  ],
   "chapters": [
     {
       "slug": "clause-structure",
@@ -97,8 +113,145 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1672,
+      "title": "Dryden and the final preposition",
+      "detail": "In his *Defence of the Epilogue*, John Dryden criticised Ben Jonson for ending a clause with a preposition, judging English by the model of Latin. The objection became the most famous zombie rule about relative clauses.",
+      "people": [
+        "John Dryden"
+      ]
+    },
+    {
+      "year": 1762,
+      "title": "Lowth's Short Introduction to English Grammar",
+      "detail": "Robert Lowth's grammar discussed relative pronouns and the placing of prepositions, preferring the fronted preposition in formal style while accepting the final preposition as an idiom of familiar English.",
+      "people": [
+        "Robert Lowth"
+      ]
+    },
+    {
+      "year": 1877,
+      "title": "Reed–Kellogg sentence diagrams",
+      "detail": "Alonzo Reed and Brainerd Kellogg's *Higher Lessons in English* taught pupils to draw sentences as diagrams, with subordinate clauses hanging from the words they modify. The method was used in American schools for about a century.",
+      "people": [
+        "Alonzo Reed",
+        "Brainerd Kellogg"
+      ]
+    },
+    {
+      "year": 1926,
+      "title": "Fowler's Modern English Usage",
+      "detail": "H. W. Fowler's *A Dictionary of Modern English Usage* proposed keeping *that* for defining and *which* for non-defining relative clauses, while admitting that good writers did not observe the distinction, and named the \"unattached\" (dangling) participle.",
+      "people": [
+        "H. W. Fowler"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Syntactic Structures",
+      "detail": "Noam Chomsky's *Syntactic Structures* described grammars in which a sentence can contain another sentence, which explained how a finite grammar can produce sentences of unlimited length through embedding.",
+      "people": [
+        "Noam Chomsky"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Cohesion in English",
+      "detail": "M. A. K. Halliday and Ruqaiya Hasan described substitution and ellipsis, with reference and conjunction, as the ties that make sentences into a text.",
+      "people": [
+        "M. A. K. Halliday",
+        "Ruqaiya Hasan"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Subject-prominent and topic-prominent languages",
+      "detail": "Charles Li and Sandra Thompson contrasted subject-prominent languages such as English with topic-prominent languages such as Chinese, which helps to explain why English needs special structures for emphasis and fronting.",
+      "people": [
+        "Charles N. Li",
+        "Sandra A. Thompson"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "The accessibility hierarchy",
+      "detail": "Edward Keenan and Bernard Comrie compared relative clauses in many languages and proposed a hierarchy of the positions that can be relativised, from subject to object to the object of a preposition; later learner studies found subject relatives the easiest to acquire.",
+      "people": [
+        "Edward L. Keenan",
+        "Bernard Comrie"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "The Comprehensive Grammar",
+      "detail": "Randolph Quirk, Sidney Greenbaum, Geoffrey Leech and Jan Svartvik's *A Comprehensive Grammar of the English Language* gave a full description of English subordinate clauses, conditionals, reported speech, clefts and ellipsis.",
+      "people": [
+        "Randolph Quirk",
+        "Sidney Greenbaum",
+        "Geoffrey Leech",
+        "Jan Svartvik"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "连淑能's English–Chinese contrastive study",
+      "detail": "连淑能's 《英汉对比研究》 described English as relying on hypotaxis (形合) and Chinese on parataxis (意合), a contrast now standard in teaching translation between the two languages.",
+      "people": [
+        "连淑能"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Practical English Usage",
+      "authors": "Michael Swan",
+      "year": 2016,
+      "note": "Fourth edition. Reliable short entries on relative clauses, conditionals, *wish*, reported speech, participle clauses, inversion and ellipsis, with British and American differences; the first book to check a doubtful rule."
+    },
+    {
+      "title": "Advanced Grammar in Use",
+      "authors": "Martin Hewings",
+      "year": 2013,
+      "note": "Third edition. Self-study units with exercises at upper-intermediate and advanced level on the structures of this course."
+    },
+    {
+      "title": "A Comprehensive Grammar of the English Language",
+      "authors": "Randolph Quirk, Sidney Greenbaum, Geoffrey Leech and Jan Svartvik",
+      "year": 1985,
+      "note": "The standard large reference grammar; its chapters on the complex sentence, comparison, reported speech, information structure and ellipsis are the fullest descriptions available."
+    },
+    {
+      "title": "Longman Grammar of Spoken and Written English",
+      "authors": "Douglas Biber, Stig Johansson, Geoffrey Leech, Susan Conrad and Edward Finegan",
+      "year": 1999,
+      "note": "Corpus figures showing how often each kind of clause is used in conversation, fiction, news and academic writing — for example, the omission of *that* and the register of participle clauses."
+    },
+    {
+      "title": "The Cambridge Grammar of the English Language",
+      "authors": "Rodney Huddleston and Geoffrey K. Pullum",
+      "year": 2002,
+      "note": "A modern descriptive grammar with careful analyses of content clauses, relative clauses, the modal preterite, clefts and dangling modifiers, and frank discussion of usage myths."
+    },
+    {
+      "title": "Cambridge Grammar of English",
+      "authors": "Ronald Carter and Michael McCarthy",
+      "year": 2006,
+      "note": "A reference grammar for learners and teachers that gives special attention to spoken English, including ellipsis, reporting and the structures of conversation."
+    },
+    {
+      "title": "Mandarin Chinese: A Functional Reference Grammar",
+      "authors": "Charles N. Li and Sandra A. Thompson",
+      "year": 1981,
+      "note": "Used here for the comparisons with Chinese: relative clauses with 的, conditionals, serial verbs, topic and zero anaphora."
+    },
+    {
+      "title": "英汉对比研究",
+      "authors": "连淑能",
+      "year": 1993,
+      "note": "A contrastive study of English and Chinese, with the analysis of 形合 and 意合 that underlies the translation notes in this course."
+    }
+  ],
   "next": [
     "essay-writing",
     "academic-reading",
