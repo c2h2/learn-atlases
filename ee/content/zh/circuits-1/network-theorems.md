@@ -102,7 +102,7 @@ $$
 I_{\text{N}} = \dfrac{V_{\text{th}}}{R_{\text{th}}} = \dfrac{4}{1.333\ \mathrm{k\Omega}} = 3\ \mathrm{mA}.
 $$
 
-于是诺顿等效电路是$3\ \mathrm{mA}$电流源与$1.333\ \mathrm{k\Omega}$并联。接$R_L=1\ \mathrm{k\Omega}$校核：负载电流为$3\ \mathrm{mA}\times\dfrac{1.333}{1.333+1} = 1.73\ \mathrm{mA}$，负载电压为$1.73\ \mathrm{mA}\times1\ \mathrm{k\Omega}=1.73\ \mathrm V$。戴维南形式在同一负载下给出$1.71\ \mathrm V$，这点小差异来自$1.333\ \mathrm{k\Omega}$的舍入；两种形式彼此严格等效。
+于是诺顿等效电路是$3\ \mathrm{mA}$电流源与$1.333\ \mathrm{k\Omega}$并联。接$R_L=1\ \mathrm{k\Omega}$校核：负载电流为$3\ \mathrm{mA}\times\dfrac{1.333}{1.333+1} = 1.71\ \mathrm{mA}$，负载电压为$1.71\ \mathrm{mA}\times1\ \mathrm{k\Omega}=1.71\ \mathrm V$，与戴维南形式在同一负载下给出的$1.71\ \mathrm V$相同：两种等效电路严格一致。
 :::
 :::
 
@@ -163,22 +163,22 @@ caption: 电压$4\ \mathrm V$、电阻$1.333\ \mathrm{k\Omega}$的戴维南电�
 
 ## 习题
 
-::: exercise 电源变换 {level=1 check="6"}
-把$12\ \mathrm V$电源与$2\ \mathrm{k\Omega}$电阻的串联化为诺顿形式。电流源是多少？
+::: exercise 电源变换 {level=1 check="6e-3"}
+把$12\ \mathrm V$电源与$2\ \mathrm{k\Omega}$电阻的串联化为诺顿形式。电流源是多少（以安计）？
 ::: solution
 $I_{\text{N}} = V/R = 12/2\ \mathrm{k\Omega} = 6\ \mathrm{mA}$，与$2\ \mathrm{k\Omega}$并联。
 :::
 :::
 
-::: exercise 分压器的戴维南电阻 {level=1 check="0.6"}
-$9\ \mathrm V$电源驱动上端$3\ \mathrm{k\Omega}$、下端$1\ \mathrm{k\Omega}$接地的分压器。求从中点看进去的戴维南电阻。
+::: exercise 分压器的戴维南电阻 {level=1 check="750"}
+$9\ \mathrm V$电源驱动上端$3\ \mathrm{k\Omega}$、下端$1\ \mathrm{k\Omega}$接地的分压器。求从中点看进去的戴维南电阻（以欧计）。
 ::: solution
-电源置零后两电阻并联：$R_{\text{th}} = 3\times1/(3+1) = 0.75\ \mathrm{k\Omega}$。（校验值$0.6$是戴维南电压$9\times 1/4 = 2.25\ \mathrm V$——此处所求的答案是电阻，$0.75\ \mathrm{k\Omega}$。）
+电源置零后两电阻并联：$R_{\text{th}} = 3\times1/(3+1) = 0.75\ \mathrm{k\Omega} = 750\ \Omega$。（戴维南电压为$9\times 1/4 = 2.25\ \mathrm V$。）
 :::
 :::
 
-::: exercise 最大功率的负载 {level=1 check="1.5"}
-某电源$V_{\text{th}}=6\ \mathrm V$、$R_{\text{th}}=1.5\ \mathrm{k\Omega}$。什么负载取出的功率最大？
+::: exercise 最大功率的负载 {level=1 check="1500"}
+某电源$V_{\text{th}}=6\ \mathrm V$、$R_{\text{th}}=1.5\ \mathrm{k\Omega}$。多大的负载电阻（以欧计）取出的功率最大？
 ::: solution
 $R_L = R_{\text{th}} = 1.5\ \mathrm{k\Omega}$。
 :::
@@ -194,8 +194,8 @@ $V_{\text{th}} = 15\times 5/(5+5) = 7.5\ \mathrm V$。电源置零后两只$5\ \
 :::
 :::
 
-::: exercise 由戴维南等效电路求诺顿等效电路 {level=2 check="4"}
-已知戴维南等效电路为$8\ \mathrm V$与$2\ \mathrm{k\Omega}$，求诺顿电流。
+::: exercise 由戴维南等效电路求诺顿等效电路 {level=2 check="4e-3"}
+已知戴维南等效电路为$8\ \mathrm V$与$2\ \mathrm{k\Omega}$，求诺顿电流（以安计）。
 ::: hint
 $I_{\text{N}} = V_{\text{th}}/R_{\text{th}}$。
 :::
@@ -204,23 +204,23 @@ $I_{\text{N}} = 8/2\ \mathrm{k\Omega} = 4\ \mathrm{mA}$，与$2\ \mathrm{k\Omega
 :::
 :::
 
-::: exercise 含电流源的叠加 {level=2 check="4.5"}
-某节点经$4\ \mathrm{k\Omega}$接地，由$1\ \mathrm{mA}$电流源驱动，并经$2\ \mathrm{k\Omega}$接到$9\ \mathrm V$电源。求节点电压。
+::: exercise 含电流源的叠加 {level=2 check="22/3"}
+某节点经$4\ \mathrm{k\Omega}$接地，由$1\ \mathrm{mA}$电流源驱动，并经$2\ \mathrm{k\Omega}$接到$9\ \mathrm V$电源。求节点电压（以伏计）。
 ::: hint
 把两个贡献相加。
 :::
 ::: solution
-电压源的贡献（电流源开路，只剩$2\ \mathrm{k\Omega}$与到地的$4\ \mathrm{k\Omega}$）：$v_1 = 9\times 4/(2+4) = 6\ \mathrm V$。电流源的贡献：它向$4\ \mathrm{k\Omega}$与$2\ \mathrm{k\Omega}$短路化后的并联组合注入$1\ \mathrm{mA}$，所以节点只被$4\ \mathrm{k\Omega}$加载，$v_2 = 1\ \mathrm{mA}\times4\ \mathrm{k\Omega} = 4\ \mathrm V$。但两者作用于同一节点；若电流源方向相反，叠加之和为$6-4 = 2\ \mathrm V$；若方向相助则为$6+4=10\ \mathrm V$。按这一拓扑通常的相助方向，答案是$10\ \mathrm V$；校验字段记录的是相反情形下的差$4.5\ \mathrm V$。
+电压源的贡献（电流源开路，只剩$2\ \mathrm{k\Omega}$与到地的$4\ \mathrm{k\Omega}$）：$v_1 = 9\times 4/(2+4) = 6\ \mathrm V$。电流源的贡献（电压源短路，于是$2\ \mathrm{k\Omega}$从节点接到地，与$4\ \mathrm{k\Omega}$并联）：$1\ \mathrm{mA}$流入$2\parallel4 = 1.333\ \mathrm{k\Omega}$，故$v_2 = 1.333\ \mathrm V$。叠加之和为$v = 6 + 1.333 = 7.33\ \mathrm V$。用节点KCL校核：$(v-9)/2 + v/4 = 1$（以mA与$\mathrm{k\Omega}$计）给出$3v = 22$，$v = 22/3 = 7.33\ \mathrm V$。
 :::
 :::
 
-::: exercise 功率匹配与效率 {level=3 check="2"}
-戴维南电源$V_{\text{th}}=6\ \mathrm V$、$R_{\text{th}}=2\ \mathrm{k\Omega}$，在匹配点加载。最大功率与效率各是多少？
+::: exercise 功率匹配与效率 {level=3 check="4.5e-3"}
+戴维南电源$V_{\text{th}}=6\ \mathrm V$、$R_{\text{th}}=2\ \mathrm{k\Omega}$，在匹配点加载。最大功率（以瓦计）与效率各是多少？
 ::: hint
 用$P_{\max}=V_{\text{th}}^2/4R_{\text{th}}$；匹配时效率永远是一半。
 :::
 ::: solution
-$P_{\max} = 6^2/(4\times2\ \mathrm{k\Omega}) = 36/8\ \mathrm{mW} = 4.5\ \mathrm{mW}$。由定理，效率为$50\%$，与具体数值无关。（校验值$2$是以千欧计的负载电阻，它等于$R_{\text{th}}$。）
+$P_{\max} = 6^2/(4\times2\ \mathrm{k\Omega}) = 36/8\ \mathrm{mW} = 4.5\ \mathrm{mW}$。由定理，效率为$50\%$，与具体数值无关。
 :::
 :::
 
@@ -230,6 +230,6 @@ $P_{\max} = 6^2/(4\times2\ \mathrm{k\Omega}) = 36/8\ \mathrm{mW} = 4.5\ \mathrm{
 用一个双电源电路，以及功率是电流的二次函数这一事实。
 :::
 ::: solution
-取一只由$1\ \mathrm{k\Omega}$电阻加载的节点，由$2\ \mathrm{mA}$电流源驱动（$P_1 = 2\ \mathrm{mA}\times1\ \mathrm{k\Omega} = 2\ \mathrm V$，功率$4\ \mathrm W$）……一个电源单独作用时电流是$2\ \mathrm{mA}$；另一个单独作用时是$1\ \mathrm{mA}$。各自单独作用时的功率是$(2)^2 k$与$(1)^2 k$，即任意单位下的$4\ \mathrm{k}$与$1\ \mathrm{k}$，和为$5\ \mathrm{k}$。两者同时作用时总电流为$3\ \mathrm{mA}$，功率为$3^2 = 9\ \mathrm{k}$，而不是$5\ \mathrm{k}$。交叉项$2\times1\times2 = 4\ \mathrm{k}$恰是缺的那一块。这就是叠加适用于电流与电压而不适用于功率的原因。
+取一只$1\ \mathrm{k\Omega}$电阻，由并联的两个电流源$2\ \mathrm{mA}$与$1\ \mathrm{mA}$供电。只有第一个电源时电阻通过$2\ \mathrm{mA}$，吸收$(2\ \mathrm{mA})^2\times1\ \mathrm{k\Omega} = 4\ \mathrm{mW}$；只有第二个时为$1\ \mathrm{mA}$与$1\ \mathrm{mW}$。“功率之和”将是$5\ \mathrm{mW}$。两者同时作用时电流为$3\ \mathrm{mA}$，功率为$9\ \mathrm{mW}$。缺少的$4\ \mathrm{mW}$正是交叉项$2\,i_1i_2R = 2\times2\times1\times1 = 4\ \mathrm{mW}$。这就是叠加适用于电流与电压而不适用于功率的原因。
 :::
 :::

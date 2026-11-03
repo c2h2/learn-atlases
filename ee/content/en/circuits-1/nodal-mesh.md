@@ -32,7 +32,7 @@ $$
 Writing these in standard form with resistances in $\mathrm{k\Omega}$ and currents in $\mathrm{mA}$, the coefficient matrix is
 
 $$
-\begin{pmatrix} 0.85 & -0.25 \\ -0.25 & 0.45 \end{pmatrix}
+\begin{pmatrix} 0.95 & -0.25 \\ -0.25 & 0.45 \end{pmatrix}
 \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} =
 \begin{pmatrix} 5 \\ 2 \end{pmatrix}.
 $$
@@ -133,10 +133,10 @@ The current source fixing the branch gives the constraint $\mathcal I_1 - \mathc
 :::
 
 ::: widget plot
-f: 0.7534*x
+f: 0.6164*x + 1.370
 x: 0, 15
 y: 0, 12
-caption: The node voltage $v_1$ of the two-node example, plotted against the source voltage. Because the network is linear and resistive, the relation is a straight line through the origin; its slope is the ratio of the voltages in the solved circuit, $v_1/V_s = 0.753$. Doubling the source doubles the node voltage and every branch current and power scales by a factor of four.
+caption: The node voltage $v_1$ of the two-node example, plotted against the voltage $V_s$ of the left source with the $2\ \mathrm{mA}$ current source held fixed. The network is linear, so the relation is a straight line, $v_1 = 0.616\,V_s + 1.37\ \mathrm V$: by superposition, $0.616\,V_s$ comes from the voltage source and $1.37\ \mathrm V$ from the current source. At $V_s = 10\ \mathrm V$ it gives the $7.53\ \mathrm V$ of the example. The line does not pass through the origin, so doubling $V_s$ alone does not double $v_1$; only scaling both sources together would.
 :::
 
 ## Where this leads
@@ -166,8 +166,8 @@ Voltage divider: $v=12\times 2/(4+2)=8\ \mathrm{V}$.
 :::
 :::
 
-::: exercise Mesh currents for a two-mesh circuit {level=1 check="4.09"}
-A $9\ \mathrm{V}$ source and $1\ \mathrm{k\Omega}$ are in a mesh; a $2\ \mathrm{k\Omega}$ resistor is shared; the second mesh contains a $3\ \mathrm{k\Omega}$. What is the first mesh current?
+::: exercise Mesh currents for a two-mesh circuit {level=1 check="9/2200"}
+A $9\ \mathrm{V}$ source and $1\ \mathrm{k\Omega}$ are in a mesh; a $2\ \mathrm{k\Omega}$ resistor is shared; the second mesh contains a $3\ \mathrm{k\Omega}$. What is the first mesh current, in amperes?
 ::: hint
 Write the two mesh KVL equations and solve the $2\times2$ system.
 :::
@@ -176,13 +176,13 @@ $\mathcal I_1 = 4.09\ \mathrm{mA}$.
 :::
 :::
 
-::: exercise Nodal analysis of a node with a current source {level=1 check="5"}
+::: exercise Nodal analysis of a node with a current source {level=1 check="15"}
 A node above ground has a $5\ \mathrm{k\Omega}$ to a $10\ \mathrm{V}$ source and is driven into the node by a $1\ \mathrm{mA}$ current source. There is no other connection. Find the node voltage.
 ::: hint
 KCL: current in equals current out.
 :::
 ::: solution
-The current source pushes $1\ \mathrm{mA}$ into the node, so the node must pass $1\ \mathrm{mA}$ through the resistor to the source. The voltage drop across the resistor is $1\ \mathrm{mA}\times5\ \mathrm{k}\Omega = 5\ \mathrm{V}$. The node is therefore $10-5 = 5\ \mathrm{V}$.
+The current source pushes $1\ \mathrm{mA}$ into the node, so the node must pass $1\ \mathrm{mA}$ through the resistor into the source: KCL gives $(v-10)/5\ \mathrm{k\Omega} = 1\ \mathrm{mA}$. The voltage drop across the resistor is $1\ \mathrm{mA}\times5\ \mathrm{k}\Omega = 5\ \mathrm{V}$, from the node towards the source, so the node is $10+5 = 15\ \mathrm{V}$, above the source.
 :::
 :::
 
@@ -196,8 +196,8 @@ Assume the source has its positive terminal at B, so $v_B = v_A + 5$. The supern
 :::
 :::
 
-::: exercise Supermesh with a shared current source {level=2 check="2"}
-Two meshes share a branch that is a $2\ \mathrm{mA}$ current source. The left mesh has a $1\ \mathrm{k\Omega}$ to a $5\ \mathrm{V}$ source; the right has a $1\ \mathrm{k\Omega}$ to ground. Find the mesh current difference and the sum.
+::: exercise Supermesh with a shared current source {level=2 check="3.5e-3"}
+Two meshes share a branch that is a $2\ \mathrm{mA}$ current source. The left mesh has a $1\ \mathrm{k\Omega}$ to a $5\ \mathrm{V}$ source; the right has a $1\ \mathrm{k\Omega}$ to ground. Find the mesh currents, their difference and their sum. Enter $\mathcal I_1$ in amperes.
 ::: hint
 The current source fixes $\mathcal I_1 - \mathcal I_2 = 2\ \mathrm{mA}$. Write a KVL around the outer path for $\mathcal I_1+\mathcal I_2$.
 :::
@@ -206,13 +206,13 @@ The constraint is $\mathcal I_1 - \mathcal I_2 = 2\ \mathrm{mA}$. The outer KVL 
 :::
 :::
 
-::: exercise Power in a network branch {level=2 check="1.5"}
-A branch of $2\ \mathrm{k\Omega}$ carries $1\ \mathrm{mA}$. What power does it absorb?
+::: exercise Power in a network branch {level=2 check="2e-3"}
+A branch of $2\ \mathrm{k\Omega}$ carries $1\ \mathrm{mA}$. What power does it absorb, in watts?
 ::: hint
 Use $p=i^2R$.
 :::
 ::: solution
-$p=(1\times10^{-3})^2\times2\times10^{3} = 2\times10^{-6}\times2\times10^{3} = 4\times10^{-3}\ \mathrm W = 4\ \mathrm{mW}$. (The check field is the value in milliwatts, $2\ \mathrm{mW}$, on the earlier items.)
+$p=(1\times10^{-3})^2\times2\times10^{3} = 10^{-6}\times2\times10^{3} = 2\times10^{-3}\ \mathrm W = 2\ \mathrm{mW}$.
 :::
 :::
 
@@ -226,13 +226,13 @@ Nodal analysis, with one equation per non-reference node, needs $6-1=5$ equation
 :::
 :::
 
-::: exercise Nonsymmetric node equations {level=3 check="6"}
+::: exercise Nonsymmetric node equations {level=3 check="16"}
 A node has $2\ \mathrm{k\Omega}$ to a $12\ \mathrm{V}$ source and $4\ \mathrm{k\Omega}$ to a $2\ \mathrm{mA}$ current source into the node. What is the node voltage?
 ::: hint
 KCL with both contributions.
 :::
 ::: solution
-Current supplied by the source through the resistor to the node balances the current source. If the node is $v$, current out through the $2\ \mathrm{k\Omega}$ is $(v-12)/2\ \mathrm{k}$, and the current source pushes $2\ \mathrm{mA}$ in, so $(v-12)/2\ \mathrm{k} = -2\ \mathrm{mA}$, giving $v-12=-4$ and $v=8\ \mathrm{V}$. The $4\ \mathrm{k\Omega}$ is a red herring if it does not carry current, but if both resistors are to the same node the sum of the currents leaving the node must equal the current source in.
+Current supplied by the source through the resistor to the node balances the current source. If the node is $v$, current out through the $2\ \mathrm{k\Omega}$ is $(v-12)/2\ \mathrm{k}$, and the current source pushes $2\ \mathrm{mA}$ in, so KCL gives $(v-12)/2\ \mathrm{k} = 2\ \mathrm{mA}$, $v-12=4$ and $v=16\ \mathrm{V}$. The $4\ \mathrm{k\Omega}$ is in series with the ideal current source, so it carries exactly $2\ \mathrm{mA}$ whatever its value and does not enter the node equation: it changes only the voltage across the current source.
 :::
 :::
 
@@ -242,6 +242,6 @@ You have obtained $\mathcal I_1=4\ \mathrm{mA}$ and $\mathcal I_2=1.5\ \mathrm{m
 Compute the drops and sum them around each mesh.
 :::
 ::: solution
-Left mesh: drop across $1\ \mathrm{k\Omega}$ is $4\ \mathrm{mA}\times1\ \mathrm{k\Omega}=4\ \mathrm{V}$, drop across the shared $2\ \mathrm{k\Omega}$ is $(\mathcal I_1-\mathcal I_2)\times2\ \mathrm{k\Omega}=2.5\ \mathrm{mA}\times2\ \mathrm{k\Omega}=5\ \mathrm{V}$, total $9\ \mathrm{V}$ matching the source. Right mesh: drop across the shared $2\ \mathrm{k\Omega}$ is $-5\ \mathrm{V}$ and the drop across $3\ \mathrm{k\Omega}$ is $1.5\ \mathrm{mA}\times3\ \mathrm{k\Omega}=4.5\ \mathrm{V}$, sum $-0.5\ \mathrm{V}$, a small inconsistency with the exact solution because the stated currents are rounded; the method, of checking by KVL, is what matters.
+Left mesh: drop across $1\ \mathrm{k\Omega}$ is $4\ \mathrm{mA}\times1\ \mathrm{k\Omega}=4\ \mathrm{V}$, drop across the shared $2\ \mathrm{k\Omega}$ is $(\mathcal I_1-\mathcal I_2)\times2\ \mathrm{k\Omega}=2.5\ \mathrm{mA}\times2\ \mathrm{k\Omega}=5\ \mathrm{V}$, total $9\ \mathrm{V}$ matching the source. Right mesh: drop across the shared $2\ \mathrm{k\Omega}$ is $-5\ \mathrm{V}$ and the drop across $3\ \mathrm{k\Omega}$ is $1.5\ \mathrm{mA}\times3\ \mathrm{k\Omega}=4.5\ \mathrm{V}$, sum $-0.5\ \mathrm{V}$, an inconsistency because the stated currents are not the exact solution, $\mathcal I_1 = 4.09\ \mathrm{mA}$ and $\mathcal I_2 = 1.64\ \mathrm{mA}$; the method, of checking by KVL, is what matters.
 :::
 :::

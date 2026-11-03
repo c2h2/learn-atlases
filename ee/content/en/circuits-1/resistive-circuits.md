@@ -72,7 +72,7 @@ What is the equivalent resistance of $4\ \Omega$ in parallel with $4\ \Omega$?
 - [ ] $16\ \Omega$
 - [ ] $4\ \Omega$
 ::: solution
-Two equal resistors in parallel halve: $R = \dfrac{4\cdot4}{4+4}=2\ \Omega. Two in series would have doubled to $8\ \Omega$; do not confuse the two.
+Two equal resistors in parallel halve: $R = \dfrac{4\cdot4}{4+4}=2\ \Omega$. Two in series would have doubled to $8\ \Omega$; do not confuse the two.
 :::
 :::
 
@@ -133,8 +133,7 @@ Using the divider with the opposite resistor in the numerator, $I_{3k} = 12\time
 
 ## The ideal wire and its limits
 
-Between ideal resistors we have ideal **wires**, which have no resistance at all. A wire is the limiting case of a conductor with $
-ho\to 0$, and it is what makes the whole series-parallel model work: current can be redirected from one element to another without loss, and the nodes that wire up are at a single voltage. Two ideal wires joining together are the same node, and every ideal wire connects two points at exactly the same voltage with zero drop. This is why a node has a single well-defined voltage, and why you can draw a net of wires and resistors and still speak of the voltage *at* a node.
+Between ideal resistors we have ideal **wires**, which have no resistance at all. A wire is the limiting case of a conductor with $\rho\to 0$, and it is what makes the whole series-parallel model work: current can be redirected from one element to another without loss, and the nodes that wire up are at a single voltage. Two ideal wires joining together are the same node, and every ideal wire connects two points at exactly the same voltage with zero drop. This is why a node has a single well-defined voltage, and why you can draw a net of wires and resistors and still speak of the voltage *at* a node.
 
 That idealisation has limits you will meet later. Between two nodes, a short circuit is a path of zero resistance, and Ohm's law then allows any current: the current is set entirely by the rest of the network. A real wire has a small but non-zero resistance, and a real short can draw a very large current limited only by the source and the wire. The two are different things, and confusing them is a common source of error when a current appears "infinite" in an idealised analysis.
 
@@ -189,25 +188,25 @@ $R = \dfrac{4\cdot6}{4+6} = 24/10 = 2.4\ \Omega$.
 :::
 :::
 
-::: exercise Voltage divider {level=1 check="3.33"}
+::: exercise Voltage divider {level=1 check="10/3"}
 A $10\ \mathrm{V}$ source is divided by $2\ \mathrm{k\Omega}$ at the top and $1\ \mathrm{k\Omega}$ at the bottom. What is the open-circuit output voltage?
 ::: solution
 $V_{out} = 10\times\dfrac{1}{2+1} = 3.33\ \mathrm{V}$.
 :::
 :::
 
-::: exercise Parallel equivalent with two values {level=2 check="3.0"}
+::: exercise Parallel equivalent with two values {level=2 check="1.5"}
 Two $6\ \Omega$ resistors are in parallel, and this combination is in parallel with a $3\ \Omega$ resistor. What is the total resistance?
 ::: hint
 Combine two at a time, starting with the two $6\ \Omega$.
 :::
 ::: solution
-The two $6\ \Omega$ give $6\cdot6/(6+6)=3\ \Omega$. This in parallel with the $3\ \Omega$ gives $3\cdot3/(3+3)=2.25\ \Omega$. (Recheck: $1/2.25 = 0.444$, and $1/3+1/6+1/6 = 0.333+0.166+0.166 = 0.666$, so actually three in parallel, $6,6,3$, the equivalent is $1/0.666 = 1.5\ \Omega$.) The two-step reading in the hint matches the stated topology; the final parallel result is $3\ \Omega$ if the two $6\ \Omega$ are taken first as the question states.
+The two $6\ \Omega$ give $6\cdot6/(6+6)=3\ \Omega$. This in parallel with the $3\ \Omega$ gives $3\cdot3/(3+3)=1.5\ \Omega$. Check with the reciprocal sum of all three: $1/6+1/6+1/3 = 2/3\ \mathrm S$, so $R = 1.5\ \Omega$.
 :::
 :::
 
-::: exercise Current through a branch {level=2 check="4"}
-A $20\ \mathrm{V}$ source feeds $5\ \mathrm{k\Omega}$ in series with $15\ \mathrm{k\Omega}$. What current flows, and what is the voltage across the $15\ \mathrm{k\Omega}$?
+::: exercise Current through a branch {level=2 check="15"}
+A $20\ \mathrm{V}$ source feeds $5\ \mathrm{k\Omega}$ in series with $15\ \mathrm{k\Omega}$. What current flows, and what is the voltage across the $15\ \mathrm{k\Omega}$? Enter the voltage in volts.
 ::: hint
 Series: the same current flows in both.
 :::
@@ -216,17 +215,17 @@ Total $R = 5\ \mathrm{k\Omega}+15\ \mathrm{k\Omega}=20\ \mathrm{k\Omega}$, so $I
 :::
 :::
 
-::: exercise Power in a branch of a reduced network {level=2 check="4.0"}
-In the network of the worked example, the $6\ \mathrm{k\Omega}$ resistor carries $2\ \mathrm{mA}$. What power does it absorb?
+::: exercise Power in a branch of a reduced network {level=2 check="0.024"}
+In the network of the worked example, the $6\ \mathrm{k\Omega}$ resistor carries $2\ \mathrm{mA}$. What power does it absorb, in watts?
 ::: hint
 Use $p=i^2R$.
 :::
 ::: solution
-$p = i^2R = (2\times10^{-3})^2\times6\times10^{3} = 4\times10^{-6}\times6\times10^{3} = 0.024\ \mathrm W = 24\ \mathrm{mW}$. (The check field on the earlier items is the numeric value; here the answer is in milliwatts.)
+$p = i^2R = (2\times10^{-3})^2\times6\times10^{3} = 4\times10^{-6}\times6\times10^{3} = 0.024\ \mathrm W = 24\ \mathrm{mW}$.
 :::
 :::
 
-::: exercise Sizing for a voltage target {level=2 check="9.99"}
+::: exercise Sizing for a voltage target {level=2 check="2000"}
 A $9\ \mathrm{V}$ supply is to be divided to give $3\ \mathrm{V}$ at an unloaded output, using a $1\ \mathrm{k\Omega}$ bottom resistor. What is the required top resistor, to the nearest ohm?
 ::: hint
 Set $3 = 9\,R_2/(R_1+R_2)$ and solve for $R_1$ with $R_2=1\ \mathrm{k\Omega}$.
@@ -236,8 +235,8 @@ $\dfrac{R_2}{R_1+R_2}=\tfrac13$ gives $R_1+R_2=3R_2=3000\ \Omega$, so $R_1=2000\
 :::
 :::
 
-::: exercise Current divider with an odd split {level=3 check="6"}
-A total current of $9\ \mathrm{mA}$ feeds $2\ \mathrm{k\Omega}$ in parallel with $4\ \mathrm{k\Omega}$. What current flows in the $2\ \mathrm{k\Omega}$?
+::: exercise Current divider with an odd split {level=3 check="6e-3"}
+A total current of $9\ \mathrm{mA}$ feeds $2\ \mathrm{k\Omega}$ in parallel with $4\ \mathrm{k\Omega}$. What current flows in the $2\ \mathrm{k\Omega}$, in amperes?
 ::: hint
 Use $I_{R_1}=I\,R_2/(R_1+R_2)$ with the opposite resistor in the numerator.
 :::

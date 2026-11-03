@@ -5,7 +5,7 @@ Resistive networks let you add, multiply and divide voltages, but only in a fixe
 It is worth being precise about what the ideal model says, because every result relies on it.
 
 ::: definition Ideal operational amplifier {#def-opamp}
-An **ideal operational amplifier** has three properties. Its **open-loop gain** is infinite, so the output drives itself until the two input terminals have equal voltage. Its **differential input resistance** is infinite, so no current enters either input. Its **output resistance** is zero, so the output is a voltage source. The output voltage is the inverting input minus the non-inverting input, amplified by the infinite gain, and the current into and out of the device is whatever the load requires.
+An **ideal operational amplifier** has three properties. Its **open-loop gain** is infinite, so the output drives itself until the two input terminals have equal voltage. Its **differential input resistance** is infinite, so no current enters either input. Its **output resistance** is zero, so the output is a voltage source. The output voltage is the non-inverting input minus the inverting input, $v_+ - v_-$, amplified by the infinite gain, and the current into and out of the device is whatever the load requires.
 :::
 
 The consequence that matters for every calculation is the following.
@@ -38,7 +38,7 @@ The gain is $-R_f/R_1 = -4$. The output is $-4\times0.5 = -2\ \mathrm{V}$. The c
 :::
 
 ::: proposition Non-inverting amplifier {#prop-noninverting}
-For a non-inverting amplifier with the feedback resistors $R_1$ from output to inverting input and $R_2$ from inverting input to ground, the gain is
+For a non-inverting amplifier with the feedback resistor $R_f$ from output to inverting input and $R_1$ from inverting input to ground, the gain is
 
 $$
 \frac{v_{\text{out}}}{v_{\text{in}}} = 1 + \frac{R_f}{R_1},
@@ -89,7 +89,7 @@ A difference amplifier is a four-resistor network that outputs the scaled differ
 A **difference amplifier** with resistors $R_1$, $R_f$ on the inverting side and $R_2$, $R_g$ on the non-inverting side outputs
 
 $$
-v_{\text{out}} = \frac{R_f}{R_1}\left(1+\frac{R_1}{R_2}\right)v_+ - \frac{R_f}{R_1}v_-,
+v_{\text{out}} = \left(1+\frac{R_f}{R_1}\right)\frac{R_g}{R_2+R_g}\,v_+ - \frac{R_f}{R_1}v_-,
 $$
 
 and reduces to the clean difference $v_{\text{out}} = (R_f/R_1)(v_+ - v_-)$ when the resistor ratio satisfies $R_f/R_1 = R_g/R_2$.
@@ -180,9 +180,9 @@ $1 + R_f/R_1 = 1+1 = 2$.
 :::
 
 ::: exercise Output of an inverting amplifier {level=1 check="-0.6"}
-An inverting amplifier with gain $-2$ receives a $0.3\ \mathrm V)$ input. What is the output?
+An inverting amplifier with gain $-2$ receives a $0.3\ \mathrm{V}$ input. What is the output?
 ::: solution
-$-2\times0.3 = -0.6\ \mathrm V)$.
+$-2\times0.3 = -0.6\ \mathrm{V}$.
 :::
 :::
 
@@ -196,18 +196,18 @@ The non-inverting input is connected directly to the input, and the ideal op-amp
 :::
 :::
 
-::: exercise Summing amplifier with three inputs {level=2 check="-4"}
-A summing amplifier has $R_f=30\ \mathrm{k\Omega}$ and three inputs, each $1\ \mathrm V)$ through $10\ \mathrm{k\Omega}$. What is the output?
+::: exercise Summing amplifier with three inputs {level=2 check="-9"}
+A summing amplifier has $R_f=30\ \mathrm{k\Omega}$ and three inputs, each $1\ \mathrm{V}$ through $10\ \mathrm{k\Omega}$. What is the output?
 ::: hint
 The inverting node is a virtual ground; sum the input currents and multiply by $R_f$.
 :::
 ::: solution
-Each input contributes $1/10\ \mathrm{k\Omega} = 100\ \mu\mathrm{A}$, and the sum is $300\ \mu\mathrm A)$. The output is $-300\ \mu\mathrm A\times30\ \mathrm{k\Omega} = -9\ \mathrm V)$. The check field records the gain per input, which is $-R_f/R = -3$.
+Each input contributes $1/10\ \mathrm{k\Omega} = 100\ \mu\mathrm{A}$, and the sum is $300\ \mu\mathrm{A}$. The output is $-300\ \mu\mathrm A\times30\ \mathrm{k\Omega} = -9\ \mathrm V$. Each input has a gain of $-R_f/R = -3$.
 :::
 :::
 
-::: exercise Difference amplifier ratio {level=2 check="1"}
-A difference amplifier has $R_1=10\ \mathrm{k\Omega}$, $R_f=30\ \mathrm{k\Omega}$, $R_2=10\ \mathrm{k\Omega}$. What value of $R_g$ makes it an ideal differencing amplifier?
+::: exercise Difference amplifier ratio {level=2 check="30000"}
+A difference amplifier has $R_1=10\ \mathrm{k\Omega}$, $R_f=30\ \mathrm{k\Omega}$, $R_2=10\ \mathrm{k\Omega}$. What value of $R_g$, in ohms, makes it an ideal differencing amplifier?
 ::: hint
 Match the two resistor ratios.
 :::
@@ -217,7 +217,7 @@ The match requires $R_f/R_1 = R_g/R_2$, so $R_g = R_f R_2/R_1 = 30\times10/10 = 
 :::
 
 ::: exercise Integrator time constant {level=3 check="20"}
-An integrator has $R=5\ \mathrm{k\Omega}$ and $C=4\ \mu\mathrm F)$. What is the time constant $RC$ in milliseconds?
+An integrator has $R=5\ \mathrm{k\Omega}$ and $C=4\ \mu\mathrm{F}$. What is the time constant $RC$ in milliseconds?
 ::: hint
 Multiply the resistance and the capacitance.
 :::
@@ -227,12 +227,12 @@ $RC = 5\ \mathrm{k\Omega}\times4\ \mu\mathrm F = 5\times4\ \mathrm{ms} = 20\ \ma
 :::
 
 ::: exercise Saturation and the rails {level=3}
-An inverting amplifier with gain $-4$ and supply rails of $\pm 5\ \mathrm V)$ receives a $1.5\ \mathrm V)$ input. What is the theoretical output, and what is the actual output?
+An inverting amplifier with gain $-4$ and supply rails of $\pm 5\ \mathrm{V}$ receives a $1.5\ \mathrm{V}$ input. What is the theoretical output, and what is the actual output?
 ::: hint
 Compare the algebraic result with the rails.
 :::
 ::: solution
-The algebra gives $-4\times1.5 = -6\ \mathrm V)$, but the output can only reach $-5\ \mathrm V)$, so it saturates at the lower rail. In practice the output is $-5\ \mathrm V)$, not $-6\ \mathrm V)$, and the virtual-short assumption, which was used to get $-6\ \mathrm V)$, no longer holds at the inverting node. This is the signature of a saturated amplifier, and it is why checking the rails is a standard first step.
+The algebra gives $-4\times1.5 = -6\ \mathrm{V}$, but the output can only reach $-5\ \mathrm{V}$, so it saturates at the lower rail. In practice the output is $-5\ \mathrm{V}$, not $-6\ \mathrm{V}$, and the virtual-short assumption, which was used to get $-6\ \mathrm{V}$, no longer holds at the inverting node. This is the signature of a saturated amplifier, and it is why checking the rails is a standard first step.
 :::
 :::
 

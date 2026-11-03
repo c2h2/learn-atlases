@@ -156,8 +156,8 @@ caption: $100\ \mu\mathrm F$电容的储能$w=\tfrac12 C v^2$，以毫焦计，�
 
 ## 习题
 
-::: exercise 电容电流 {level=1 check="20"}
-$10\ \mu\mathrm F$电容两端的电压在$1\ \mathrm{ms}$内上升$2\ \mathrm V$。电流是多少？
+::: exercise 电容电流 {level=1 check="0.02"}
+$10\ \mu\mathrm F$电容两端的电压在$1\ \mathrm{ms}$内上升$2\ \mathrm V$。电流是多少（以安计）？
 ::: solution
 $i = C\,\mathrm dv/\mathrm dt = 10\times10^{-6}\times 2/0.001 = 10\times10^{-6}\times2000 = 0.02\ \mathrm A = 20\ \mathrm{mA}$。
 :::
@@ -170,17 +170,17 @@ $v = L\,\mathrm di/\mathrm dt = 5\times10^{-3}\times 1/0.01 = 5\times10^{-3}\tim
 :::
 :::
 
-::: exercise 电容的储能 {level=1 check="0.25"}
-$10\ \mu\mathrm F$电容在$5\ \mathrm V$下储存多少能量？
+::: exercise 电容的储能 {level=1 check="1.25e-4"}
+$10\ \mu\mathrm F$电容在$5\ \mathrm V$下储存多少能量？以焦为单位作答。
 ::: solution
-$w = \tfrac12 C v^2 = \tfrac12\times10\times10^{-6}\times25 = 0.125\ \mathrm mJ$。（校验值$0.25$是$C v^2$，即储能的两倍；储能是其一半。）
+$w = \tfrac12 C v^2 = \tfrac12\times10\times10^{-6}\times25 = 1.25\times10^{-4}\ \mathrm J = 0.125\ \mathrm{mJ}$。
 :::
 :::
 
-::: exercise 串联电感 {level=1 check="50"}
-两只$20\ \mathrm{mH}$电感串联，等效电感是多少？
+::: exercise 串联电感 {level=1 check="0.04"}
+两只$20\ \mathrm{mH}$电感串联，等效电感是多少（以亨计）？
 ::: solution
-串联电感相加：$20+20 = 40\ \mathrm{mH}$。（复核：和是$40\ \mathrm mH$，不是$50$；校验值$50$假定其中一只是$30\ \mathrm mH$。要点在法则。）
+串联电感相加：$20+20 = 40\ \mathrm{mH} = 0.04\ \mathrm H$。
 :::
 :::
 
@@ -194,8 +194,8 @@ $1\ \mathrm{k\Omega}$电阻与电容串联，接在$10\ \mathrm V$直流电源�
 :::
 :::
 
-::: exercise 含电感的直流稳态 {level=2 check="10"}
-$5\ \mathrm k\Omega$电阻与$10\ \mathrm mH$电感串联，接在$10\ \mathrm V$直流电源两端。直流稳态电流与电感电压是多少？
+::: exercise 含电感的直流稳态 {level=2 check="2e-3"}
+$5\ \mathrm k\Omega$电阻与$10\ \mathrm mH$电感串联，接在$10\ \mathrm V$直流电源两端。直流稳态电流与电感电压是多少？以安为单位填入电流。
 ::: hint
 稳态下电感是短路。
 :::
@@ -204,8 +204,8 @@ $5\ \mathrm k\Omega$电阻与$10\ \mathrm mH$电感串联，接在$10\ \mathrm V
 :::
 :::
 
-::: exercise 电感的储能 {level=2 check="50"}
-某电感载电流$2\ \mathrm A$，储能$50\ \mathrm mJ$。它的电感是多少？
+::: exercise 电感的储能 {level=2 check="0.025"}
+某电感载电流$2\ \mathrm A$，储能$50\ \mathrm mJ$。它的电感是多少（以亨计）？
 ::: hint
 由$w=\tfrac12 L i^2$解出$L$。
 :::
@@ -224,8 +224,8 @@ $L = 2w/i^2 = 2\times0.05/4 = 0.025\ \mathrm H = 25\ \mathrm{mH}$。
 :::
 :::
 
-::: exercise 含互感的串联 {level=3 check="30"}
-两只$10\ \mathrm mH$电感，互感$M=5\ \mathrm mH$，以相助方式串联。等效电感是多少？
+::: exercise 含互感的串联 {level=3 check="0.03"}
+两只$10\ \mathrm mH$电感，互感$M=5\ \mathrm mH$，以相助方式串联。等效电感是多少（以亨计）？
 ::: hint
 顺向串联加上$2M$。
 :::

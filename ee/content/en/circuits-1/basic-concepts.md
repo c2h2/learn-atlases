@@ -8,7 +8,7 @@ $$
 q_e = -1.60217\times10^{-19}\ \mathrm{C},
 $$
 
-and in semiconductors there is also the positively charged **hole**, which behaves as though it carried $+q_e$ and moved in the opposite direction. A single coulomb is an enormous number of elementary charges: one coulomb corresponds to $1/(1.602\times10^{-19})\approx 6.242\times10^{18}$ electrons. When you see a "one ampere" rating, that is roughly six trillion trillion electrons crossing a line, every second.
+and in semiconductors there is also the positively charged **hole**, which behaves as though it carried $+q_e$ and moved in the opposite direction. A single coulomb is an enormous number of elementary charges: one coulomb corresponds to $1/(1.602\times10^{-19})\approx 6.242\times10^{18}$ electrons. When you see a "one ampere" rating, that is roughly six billion billion ($6.24\times10^{18}$) electrons crossing a line, every second.
 
 ::: definition Electric charge {#def-charge}
 Charge $q$ is a conserved scalar quantity measured in coulombs. For a continuous distribution it is written as a density $\rho$ in coulombs per cubic metre, and the total charge in a region is $q=\int \rho\,\mathrm dv$. Charge can be transferred between bodies but never created or destroyed; the sum of all charge in an isolated system is constant.
@@ -87,7 +87,7 @@ A resistor is the everyday absorber, and a battery the everyday deliverer. Sizin
 ::: example Power in a resistor {#ex-resistor}
 A $4.7\ \mathrm{k\Omega}$ resistor has $5\ \mathrm{V}$ across it. Find the current, the power it dissipates as heat, and the energy released in five minutes.
 ::: solution
-By Ohm's law the current is $i = v/R = 5/4700 = 1.064\times10^{-3}\ \mathrm A = 1.064\ \mathrm{mA}$. The power is $p = v^2/R = 25/4700 = 5.32\ \mathrm{mW}$, equivalently $p=vi$. Energy over $t=300\ \mathrm s$ is $E = p\,t = 5.32\times10^{-3}\times300 = 1.595\ \mathrm J}. Notice that the power is positive, which is exactly what the passive convention predicts for an element that turns electrical energy into heat.
+By Ohm's law the current is $i = v/R = 5/4700 = 1.064\times10^{-3}\ \mathrm A = 1.064\ \mathrm{mA}$. The power is $p = v^2/R = 25/4700 = 5.32\ \mathrm{mW}$, equivalently $p=vi$. Energy over $t=300\ \mathrm s$ is $E = p\,t = 5.32\times10^{-3}\times300 = 1.60\ \mathrm J$. Notice that the power is positive, which is exactly what the passive convention predicts for an element that turns electrical energy into heat.
 :::
 :::
 

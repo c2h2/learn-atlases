@@ -95,7 +95,7 @@ $$
 ::: example 并联阻尼 {#ex-parallel}
 某并联$RLC$有$L=10\ \mathrm{mH}$、$C=10\ \mu\mathrm F$，并联电阻为$R=20\ \Omega$。求阻尼比与阻尼状态。
 ::: solution
-谐振频率如前，$\omega_0 = 1/\sqrt{LC} = 3162\ \mathrm{rad/s}$。阻尼为$\alpha = 1/(2RC) = 1/(2\times20\times10\times10^{-6}) = 2500\ \mathrm{rad/s}$，阻尼比为$\zeta = \alpha/\omega_0 = 2500/3162 = 0.79$，故响应欠阻尼，但比串联情形阻尼得更重，因为在并联拓扑里，更小的并联电阻意味着更小的等效阻尼。状态由比值$\zeta$决定，而$\alpha$的表达式在串联与并联情形之间的改动就是它造成的全部差别。
+谐振频率如前，$\omega_0 = 1/\sqrt{LC} = 3162\ \mathrm{rad/s}$。阻尼为$\alpha = 1/(2RC) = 1/(2\times20\times10\times10^{-6}) = 2500\ \mathrm{rad/s}$，阻尼比为$\zeta = \alpha/\omega_0 = 2500/3162 = 0.79$，故响应欠阻尼，但比串联情形阻尼得更重，因为在并联拓扑里，更小的电阻意味着更重的阻尼，$\alpha = 1/(2RC)$。状态由比值$\zeta$决定，而$\alpha$的表达式在串联与并联情形之间的改动就是它造成的全部差别。
 :::
 :::
 
@@ -148,29 +148,29 @@ $RLC$振荡器及其三种阻尼状态，在电容、电感与两条基尔霍夫
 
 ## 习题
 
-::: exercise RLC的阻尼比 {level=1 check="0.32"}
+::: exercise RLC的阻尼比 {level=1 check="1000/sqrt(1e7)"}
 某串联$RLC$有$R=20\ \Omega$、$L=10\ \mathrm{mH}$、$C=10\ \mu\mathrm F$。阻尼比是多少？
 ::: solution
 $\alpha = R/(2L) = 1000$，$\omega_0 = 1/\sqrt{LC} = 3162$，$\zeta = \alpha/\omega_0 = 0.316$。
 :::
 :::
 
-::: exercise 谐振频率 {level=1 check="3162"}
+::: exercise 谐振频率 {level=1 check="1/sqrt(1e-7)"}
 $10\ \mathrm{mH}$电感与$10\ \mu\mathrm F$电容。谐振频率以$rad/s$计是多少？
 ::: solution
 $\omega_0 = 1/\sqrt{LC} = 1/\sqrt{10\times10^{-3}\times10\times10^{-6}} = 1/\sqrt{10^{-7}} = 3162\ \mathrm{rad/s}$。
 :::
 :::
 
-::: exercise 临界电阻 {level=1 check="63.25"}
+::: exercise 临界电阻 {level=1 check="0.02/sqrt(1e-7)"}
 $L=10\ \mathrm{mH}$、$C=10\ \mu\mathrm F$时，多大的电阻恰为临界阻尼？
 ::: solution
 $R = 2\omega_0 L = 2\times3162\times0.01 = 63.25\ \Omega$。
 :::
 :::
 
-::: exercise 第一个峰值时刻 {level=2 check="1.05"}
-用例题的数值，欠阻尼响应的第一个峰值时刻是多少？
+::: exercise 第一个峰值时刻 {level=2 check="pi/3000"}
+用例题的数值，欠阻尼响应的第一个峰值时刻是多少（以秒计）？
 ::: hint
 $t_p = \pi/\omega_d$。
 :::
@@ -199,18 +199,18 @@ $s_1 = -6000+5099 = -901\ \mathrm{rad/s}$，$s_2 = -6000-5099 = -11099\ \mathrm{
 :::
 :::
 
-::: exercise 过冲与阻尼 {level=3 check="43.2"}
+::: exercise 过冲与阻尼 {level=3 check="ln(5)/sqrt(pi^2+ln(5)^2)"}
 多大的阻尼比给出$20\%$的第一峰过冲？
 ::: hint
 由$e^{-\zeta\pi/\sqrt{1-\zeta^2}} = 0.2$解$\zeta$。
 :::
 ::: solution
-$\zeta\pi/\sqrt{1-\zeta^2} = \ln 5 = 1.609$，故$\zeta^2 \pi^2 = 1.609^2(1-\zeta^2)$，$\zeta^2(\pi^2+2.59) = 2.59$，$\zeta^2 = 2.59/(9.87+2.59) = 0.207$，$\zeta = 0.455$。（校验值$43.2$是例题$\zeta=0.316$对应的过冲百分比；这里的答案是比值$0.455$。）
+$\zeta\pi/\sqrt{1-\zeta^2} = \ln 5 = 1.609$，故$\zeta^2 \pi^2 = 1.609^2(1-\zeta^2)$，$\zeta^2(\pi^2+2.59) = 2.59$，$\zeta^2 = 2.59/(9.87+2.59) = 0.208$，$\zeta = 0.456$。
 :::
 :::
 
-::: exercise 并联RLC的阻尼 {level=3 check="0.5"}
-某并联$RLC$有$R=40\ \Omega$、$L=10\ \mathrm{mH}$、$C=25\ \mu\mathrm F$。求谐振频率与阻尼比。
+::: exercise 并联RLC的阻尼 {level=3 check="0.25"}
+某并联$RLC$有$R=40\ \Omega$、$L=10\ \mathrm{mH}$、$C=25\ \mu\mathrm F$。求谐振频率与阻尼比；填入阻尼比。
 ::: hint
 $\omega_0 = 1/\sqrt{LC}$；并联情形$\alpha = 1/(2RC)$。
 :::
@@ -225,6 +225,6 @@ $\omega_0 = 1/\sqrt{10\times10^{-3}\times25\times10^{-6}} = 1/\sqrt{2.5\times10^
 由响应求$t_p$处的电感电流。
 :::
 ::: solution
-第一个峰值处电容电压最大，故其导数——从而电感电流——为零，$i_L(t_p) = C\,\mathrm dv_C/\mathrm dt = 0$。该时刻电感能量为$\tfrac12 L i_L^2 = 0$，电容能量为$\tfrac12 C v_C^2 = \tfrac12\times10\times10^{-6}\times13.51^2 = 0.913\ \mathrm{mJ}$。峰值处能量全部在电容、全部不在电感，恰与电流最大的时刻相反。这一电场与磁场之间的能量交换就是振荡本身，而阻尼——电阻——正在把它一点点抽走。
+第一个峰值处电容电压最大，故其导数——从而电感电流——为零，$i_L(t_p) = C\,\mathrm dv_C/\mathrm dt = 0$。该时刻电感能量为$\tfrac12 L i_L^2 = 0$，电容能量为$\tfrac12 C v_C^2 = \tfrac12\times10\times10^{-6}\times13.51^2 = 0.913\ \mathrm{mJ}$。最终储能（$v_C = 10\ \mathrm V$）为$\tfrac12\times10\times10^{-6}\times10^2 = 0.5\ \mathrm{mJ}$，所以第一个峰值处电容储能是其最终储能的$1.83$倍（即$1.351^2$）。峰值处能量全部在电容、全部不在电感，恰与电流最大的时刻相反。这一电场与磁场之间的能量交换就是振荡本身，而阻尼——电阻——正在把它一点点抽走。
 :::
 :::

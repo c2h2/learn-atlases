@@ -32,7 +32,7 @@ $$
 以$\mathrm{k\Omega}$为电阻单位、$\mathrm{mA}$为电流单位写成标准形，系数矩阵为
 
 $$
-\begin{pmatrix} 0.85 & -0.25 \\ -0.25 & 0.45 \end{pmatrix}
+\begin{pmatrix} 0.95 & -0.25 \\ -0.25 & 0.45 \end{pmatrix}
 \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} =
 \begin{pmatrix} 5 \\ 2 \end{pmatrix}.
 $$
@@ -133,10 +133,10 @@ $$
 :::
 
 ::: widget plot
-f: 0.7534*x
+f: 0.6164*x + 1.370
 x: 0, 15
 y: 0, 12
-caption: 两节点例题的节点电压$v_1$随电源电压变化的曲线。由于网络是线性电阻性的，关系是过原点的直线；其斜率是已解电路中两个电压之比，$v_1/V_s = 0.753$。电源电压加倍，节点电压加倍，每条支路的功率变为四倍。
+caption: 两节点例题的节点电压$v_1$随左侧电压源$V_s$变化的曲线，$2\ \mathrm{mA}$电流源保持不变。网络是线性的，所以关系是一条直线，$v_1 = 0.616\,V_s + 1.37\ \mathrm V$：由叠加原理，$0.616\,V_s$来自电压源，$1.37\ \mathrm V$来自电流源。在$V_s = 10\ \mathrm V$时它给出例题中的$7.53\ \mathrm V$。这条直线不过原点，所以只把$V_s$加倍并不会使$v_1$加倍；只有两个电源同时按比例放大才会。
 :::
 
 ## 后续内容
@@ -166,8 +166,8 @@ caption: 两节点例题的节点电压$v_1$随电源电压变化的曲线。由
 :::
 :::
 
-::: exercise 两网孔电路的网孔电流 {level=1 check="4.09"}
-一个$9\ \mathrm V$电源与$1\ \mathrm{k\Omega}$电阻在一个网孔中；一只$2\ \mathrm{k\Omega}$电阻为共享；第二个网孔含一只$3\ \mathrm{k\Omega}$电阻。第一个网孔电流是多少？
+::: exercise 两网孔电路的网孔电流 {level=1 check="9/2200"}
+一个$9\ \mathrm V$电源与$1\ \mathrm{k\Omega}$电阻在一个网孔中；一只$2\ \mathrm{k\Omega}$电阻为共享；第二个网孔含一只$3\ \mathrm{k\Omega}$电阻。第一个网孔电流是多少（以安计）？
 ::: hint
 写出两个网孔的KVL方程，解$2\times2$方程组。
 :::
@@ -176,13 +176,13 @@ $\mathcal I_1 = 4.09\ \mathrm{mA}$。
 :::
 :::
 
-::: exercise 含电流源节点的节点分析 {level=1 check="5"}
+::: exercise 含电流源节点的节点分析 {level=1 check="15"}
 地上方某节点经$5\ \mathrm{k\Omega}$接$10\ \mathrm V$电源，并由一个流入该节点的$1\ \mathrm{mA}$电流源驱动，再无其他连接。求节点电压。
 ::: hint
 KCL：流入等于流出。
 :::
 ::: solution
-电流源向节点推入$1\ \mathrm{mA}$，所以该节点必须把$1\ \mathrm{mA}$经电阻流向电源。电阻上的压降为$1\ \mathrm{mA}\times5\ \mathrm{k}\Omega = 5\ \mathrm V$。因此节点电位为$10-5 = 5\ \mathrm V$。
+电流源向节点推入$1\ \mathrm{mA}$，所以该节点必须把$1\ \mathrm{mA}$经电阻流入电源：KCL给出$(v-10)/5\ \mathrm{k\Omega} = 1\ \mathrm{mA}$。电阻上的压降为$1\ \mathrm{mA}\times5\ \mathrm{k}\Omega = 5\ \mathrm V$，方向由节点指向电源，因此节点电位为$10+5 = 15\ \mathrm V$，高于电源。
 :::
 :::
 
@@ -196,8 +196,8 @@ KCL：流入等于流出。
 :::
 :::
 
-::: exercise 含共享电流源的超网孔 {level=2 check="2"}
-两个网孔共享一条支路，它是一个$2\ \mathrm{mA}$电流源。左网孔经$1\ \mathrm{k\Omega}$接$5\ \mathrm V$电源；右网孔经$1\ \mathrm{k\Omega}$接地。求网孔电流之差与之和。
+::: exercise 含共享电流源的超网孔 {level=2 check="3.5e-3"}
+两个网孔共享一条支路，它是一个$2\ \mathrm{mA}$电流源。左网孔经$1\ \mathrm{k\Omega}$接$5\ \mathrm V$电源；右网孔经$1\ \mathrm{k\Omega}$接地。求两个网孔电流及其差与和。以安为单位填入$\mathcal I_1$。
 ::: hint
 电流源固定$\mathcal I_1 - \mathcal I_2 = 2\ \mathrm{mA}$。绕外圈写一条KVL求$\mathcal I_1+\mathcal I_2$。
 :::
@@ -206,13 +206,13 @@ KCL：流入等于流出。
 :::
 :::
 
-::: exercise 网络支路的功率 {level=2 check="1.5"}
-一条$2\ \mathrm{k\Omega}$的支路通过$1\ \mathrm{mA}$电流。它吸收多少功率？
+::: exercise 网络支路的功率 {level=2 check="2e-3"}
+一条$2\ \mathrm{k\Omega}$的支路通过$1\ \mathrm{mA}$电流。它吸收多少功率（以瓦计）？
 ::: hint
 用$p=i^2R$。
 :::
 ::: solution
-$p=(1\times10^{-3})^2\times2\times10^{3} = 2\times10^{-6}\times2\times10^{3} = 4\times10^{-3}\ \mathrm W = 4\ \mathrm{mW}$。（前面各题的校验字段是以毫瓦计的数值，$2\ \mathrm{mW}$。）
+$p=(1\times10^{-3})^2\times2\times10^{3} = 10^{-6}\times2\times10^{3} = 2\times10^{-3}\ \mathrm W = 2\ \mathrm{mW}$。
 :::
 :::
 
@@ -226,13 +226,13 @@ $p=(1\times10^{-3})^2\times2\times10^{3} = 2\times10^{-6}\times2\times10^{3} = 4
 :::
 :::
 
-::: exercise 非对称的节点方程 {level=3 check="6"}
+::: exercise 非对称的节点方程 {level=3 check="16"}
 某节点经$2\ \mathrm{k\Omega}$接$12\ \mathrm V$电源，并经$4\ \mathrm{k\Omega}$接一个流入该节点的$2\ \mathrm{mA}$电流源。节点电压是多少？
 ::: hint
 KCL中把两个贡献都计入。
 :::
 ::: solution
-电源经电阻送入节点的电流与电流源平衡。若节点电位为$v$，经$2\ \mathrm{k\Omega}$流出的电流为$(v-12)/2\ \mathrm{k}$，而电流源推入$2\ \mathrm{mA}$，故$(v-12)/2\ \mathrm{k} = -2\ \mathrm{mA}$，得$v-12=-4$，$v=8\ \mathrm V$。若那$4\ \mathrm{k\Omega}$并不承载电流，它就是干扰项；但若两只电阻都接在同一节点上，则流出节点的电流之和必须等于流入的电流源电流。
+电源经电阻送入节点的电流与电流源平衡。若节点电位为$v$，经$2\ \mathrm{k\Omega}$流出的电流为$(v-12)/2\ \mathrm{k}$，而电流源推入$2\ \mathrm{mA}$，故KCL给出$(v-12)/2\ \mathrm{k} = 2\ \mathrm{mA}$，$v-12=4$，$v=16\ \mathrm V$。那只$4\ \mathrm{k\Omega}$与理想电流源串联，无论阻值多少都恰好通过$2\ \mathrm{mA}$，不进入节点方程：它只改变电流源两端的电压。
 :::
 :::
 
@@ -242,6 +242,6 @@ KCL中把两个贡献都计入。
 算出各压降并沿每个网孔求和。
 :::
 ::: solution
-左网孔：$1\ \mathrm{k\Omega}$上压降为$4\ \mathrm{mA}\times1\ \mathrm{k\Omega}=4\ \mathrm V$，共享$2\ \mathrm{k\Omega}$上压降为$(\mathcal I_1-\mathcal I_2)\times2\ \mathrm{k\Omega}=2.5\ \mathrm{mA}\times2\ \mathrm{k\Omega}=5\ \mathrm V$，合计$9\ \mathrm V$，与电源相符。右网孔：共享$2\ \mathrm{k\Omega}$上压降为$-5\ \mathrm V$，$3\ \mathrm{k\Omega}$上压降为$1.5\ \mathrm{mA}\times3\ \mathrm{k\Omega}=4.5\ \mathrm V$，和为$-0.5\ \mathrm V$；由于题给电流是四舍五入过的，这与精确解有小的出入；要紧的是用KVL校核这一方法本身。
+左网孔：$1\ \mathrm{k\Omega}$上压降为$4\ \mathrm{mA}\times1\ \mathrm{k\Omega}=4\ \mathrm V$，共享$2\ \mathrm{k\Omega}$上压降为$(\mathcal I_1-\mathcal I_2)\times2\ \mathrm{k\Omega}=2.5\ \mathrm{mA}\times2\ \mathrm{k\Omega}=5\ \mathrm V$，合计$9\ \mathrm V$，与电源相符。右网孔：共享$2\ \mathrm{k\Omega}$上压降为$-5\ \mathrm V$，$3\ \mathrm{k\Omega}$上压降为$1.5\ \mathrm{mA}\times3\ \mathrm{k\Omega}=4.5\ \mathrm V$，和为$-0.5\ \mathrm V$；这一出入是因为题给电流并非精确解（精确解为$\mathcal I_1 = 4.09\ \mathrm{mA}$、$\mathcal I_2 = 1.64\ \mathrm{mA}$）；要紧的是用KVL校核这一方法本身。
 :::
 :::

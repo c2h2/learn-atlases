@@ -35,7 +35,7 @@ $$
 v_C(t) = 10\left(1 - e^{-t/\tau}\right).
 $$
 
-在$t = 0.5\ \mathrm{ms}$处，$t/\tau = 0.5$，$v_C = 10(1 - e^{-0.5}) = 10(1-0.6065) = 3.93\ \mathrm V$。同一时刻的电流为$i = C\,\mathrm dv_C/\mathrm dt = (10/RC)e^{-t/\tau} = (10/1\ \mathrm{ms})e^{-0.5} = 10\ \mathrm{kA}\times0.6065 = 10\ \mathrm k\Omega$，得$i = 10/10\ \mathrm{k\Omega}\times0.6065 = 0.607\ \mathrm{mA}$。$t=0$时电流为$10/10\ \mathrm{k\Omega}=1\ \mathrm{mA}$，即电源的全部电流；$t\to\infty$时电流为零，电容已充满。
+在$t = 0.5\ \mathrm{ms}$处，$t/\tau = 0.5$，$v_C = 10(1 - e^{-0.5}) = 10(1-0.6065) = 3.93\ \mathrm V$。同一时刻的电流为$i = C\,\mathrm dv_C/\mathrm dt = (10/R)e^{-t/\tau} = (10/10\ \mathrm{k\Omega})\times0.6065 = 0.607\ \mathrm{mA}$。$t=0$时电流为$10/10\ \mathrm{k\Omega}=1\ \mathrm{mA}$，即电源的全部电流；$t\to\infty$时电流为零，电容已充满。
 :::
 :::
 
@@ -78,7 +78,7 @@ $$
 ::: example 已充电电容的放电 {#ex-discharge}
 一只充到$12\ \mathrm V$的$10\ \mu\mathrm F$电容经$1\ \mathrm k\Omega$电阻放电。求时间常数、一个时间常数之后的电压，以及该时刻电阻耗散的功率。
 ::: solution
-时间常数为$\tau = RC = 1000\times10\times10^{-6} = 0.01\ \mathrm{s} = 10\ \mathrm{ms}$。衰减规律为$v_C = 12\,e^{-t/\tau}$，故$t=\tau$时电压为$12\,e^{-1} = 12\times0.3679 = 4.41\ \mathrm V$。该时刻电阻的功率为$v^2/R = 4.41^2/1000 = 0.0195\ \mathrm W = 19.5\ \mathrm{mW}$。$t=0$的初始功率为$12^2/1000 = 0.144\ \mathrm W$，是它的四倍；功率随衰减电压的平方下降，故大部分能量在最初一两个时间常数内就交了出去。
+时间常数为$\tau = RC = 1000\times10\times10^{-6} = 0.01\ \mathrm{s} = 10\ \mathrm{ms}$。衰减规律为$v_C = 12\,e^{-t/\tau}$，故$t=\tau$时电压为$12\,e^{-1} = 12\times0.3679 = 4.41\ \mathrm V$。该时刻电阻的功率为$v^2/R = 4.41^2/1000 = 0.0195\ \mathrm W = 19.5\ \mathrm{mW}$。$t=0$的初始功率为$12^2/1000 = 0.144\ \mathrm W$，是它的$e^2 \approx 7.4$倍；功率随衰减电压的平方下降，故大部分能量在最初一两个时间常数内就交了出去。
 :::
 :::
 
@@ -87,13 +87,13 @@ $$
 :::
 
 ::: quiz
-某$RC$电路$R=5\ \mathrm{k\Omega}$、$C=200\ \mu\mathrm F$。它的时间常数是多少？
+某$RC$电路$R=5\ \mathrm{k\Omega}$、$C=200\ \mathrm{nF}$。它的时间常数是多少？
 - [x] $1\ \mathrm{ms}$
 - [ ] $0.5\ \mathrm{ms}$
 - [ ] $2\ \mathrm{ms}$
 - [ ] $10\ \mathrm{ms}$
 ::: solution
-$\tau = RC = 5\times10^{3}\times200\times10^{-6} = 1\times10^{-3} = 1\ \mathrm{ms}$。
+$\tau = RC = 5\times10^{3}\times200\times10^{-9} = 1\times10^{-3} = 1\ \mathrm{ms}$。
 :::
 :::
 
@@ -153,29 +153,29 @@ $\tau = RC = 2\times10^{3}\times50\times10^{-6} = 0.1\ \mathrm{s} = 100\ \mathrm
 :::
 :::
 
-::: exercise 一个时间常数后的电压 {level=1 check="6.32"}
+::: exercise 一个时间常数后的电压 {level=1 check="10*(1-exp(-1))"}
 $10\ \mathrm V$电源以$\tau=1\ \mathrm{ms}$给未充电电容充电。$t=1\ \mathrm{ms}$时电压是多少？
 ::: solution
 $v_C = 10(1-e^{-1}) = 10\times0.6321 = 6.32\ \mathrm V$。
 :::
 :::
 
-::: exercise 电感的时间常数 {level=1 check="50"}
-$100\ \mathrm mH$电感与$2\ \mathrm{k\Omega}$电阻。时间常数以毫秒计是多少？
+::: exercise 电感的时间常数 {level=1 check="5e-5"}
+$100\ \mathrm mH$电感与$2\ \mathrm{k\Omega}$电阻。时间常数以秒计是多少？
 ::: solution
-$\tau = L/R = 0.1/2000 = 5\times10^{-5}\ \mathrm{s} = 0.05\ \mathrm{ms} = 50\ \mu\mathrm s$。（校验值$50$以微秒计。）
+$\tau = L/R = 0.1/2000 = 5\times10^{-5}\ \mathrm{s} = 0.05\ \mathrm{ms} = 50\ \mu\mathrm s$。
 :::
 :::
 
-::: exercise 从初始电压放电 {level=2 check="3.68"}
+::: exercise 从初始电压放电 {level=2 check="10*exp(-1)"}
 充到$10\ \mathrm V$的电容经$10\ \mathrm{k\Omega}$电阻放电，$C=1\ \mu\mathrm F$。一个时间常数后电压是多少？
 ::: solution
 $v_C = 10\,e^{-1} = 10\times0.3679 = 3.68\ \mathrm V$。时间常数为$RC = 10\ \mathrm{k\Omega}\times1\ \mu\mathrm F = 10\ \mathrm{ms}$，放电到$3.68\ \mathrm V$发生在$t=10\ \mathrm{ms}$。
 :::
 :::
 
-::: exercise 给定时刻的电感电流 {level=2 check="0.074"}
-$30\ \mathrm mH$电感经$300\ \Omega$接到$15\ \mathrm V$电源上，初始未储能。$t=150\ \mu\mathrm s$时电流是多少？
+::: exercise 给定时刻的电感电流 {level=2 check="0.05*(1-exp(-1.5))"}
+$30\ \mathrm mH$电感经$300\ \Omega$接到$15\ \mathrm V$电源上，初始未储能。$t=150\ \mu\mathrm s$时电流是多少（以安计）？
 ::: hint
 先求$\tau=L/R$，再用上升公式。
 :::
@@ -194,18 +194,18 @@ $\tau = 0.03/300 = 0.0001\ \mathrm{s} = 100\ \mu\mathrm s$。$t/\tau = 1.5$。�
 :::
 :::
 
-::: exercise 稳定时间 {level=3 check="5"}
+::: exercise 稳定时间 {level=3 check="ln(100)"}
 一阶响应到达终值的$1\%$以内需要多少个时间常数？
 ::: hint
 由$e^{-t/\tau} = 0.01$解$t/\tau$。
 :::
 ::: solution
-$t/\tau = \ln 100 \approx 4.6$，约五个时间常数。五个时间常数处，$e^{-5} \approx 0.0067 = 0.67\%$的摆幅尚余，已在$1\%$以内。这就是稳定时间的标准经验法则。
+$t/\tau = \ln 100 \approx 4.61$，约五个时间常数。五个时间常数处，$e^{-5} \approx 0.0067 = 0.67\%$的摆幅尚余，已在$1\%$以内。这就是稳定时间的标准经验法则。
 :::
 :::
 
-::: exercise 充电电阻中耗散的能量 {level=3 check="0.5"}
-$1\ \mu\mathrm F$电容经电阻从$0$充到$10\ \mathrm V$。电阻中耗散多少能量？电容中储存多少？
+::: exercise 充电电阻中耗散的能量 {level=3 check="5e-5"}
+$1\ \mu\mathrm F$电容经电阻从$0$充到$10\ \mathrm V$。电阻中耗散多少能量？电容中储存多少？以焦为单位填入耗散的能量。
 ::: hint
 比较电源供出的能量与储存的能量。
 :::

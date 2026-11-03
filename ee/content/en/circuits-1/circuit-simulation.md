@@ -29,7 +29,7 @@ A simulator reads the netlist, stamps each element into a matrix at its own node
 The reason this matters to you is that the shape of the matrix is what you will be looking at, or the symptoms of its ill-conditioning, whenever a simulation does not converge. A netlist with a short across a capacitor, an inductor in parallel with a current source, or a loop of pure inductors, produces a singular or nearly singular matrix, and the simulator either fails to converge or converges to a wrong result, and the matrix is where the failure lives. Knowing that the matrix is built one stamp at a time, and that a problematic element makes its own stamp the problem, is what lets you find the culprit by turning elements off, one at a time, until the matrix converges, which is the standard debugging procedure.
 
 ::: example A netlist and its DC solution {#ex-mna}
-Describe a network of a $10\ \mathrm V)$ voltage source in series with a $10\ \mathrm{k\Omega}$ resistor, feeding a node that also drives a $1\ \mathrm{mA}$ current source to ground, and give the node voltage by a hand MNA.
+Describe a network of a $10\ \mathrm{V}$ voltage source in series with a $10\ \mathrm{k\Omega}$ resistor, feeding a node that also drives a $1\ \mathrm{mA}$ current source to ground, and give the node voltage by a hand MNA.
 ::: solution
 Label the node as node 1, and ground as 0. The resistor from the source to node 1 carries $(10 - v_1)/10\ \mathrm{k}$, and the current source takes $1\ \mathrm{mA}$ out of node 1. Kirchhoff's current law at node 1 is
 
@@ -37,7 +37,7 @@ $$
 \frac{10 - v_1}{10\ \mathrm{k}\Omega} = 1\ \mathrm{mA},
 $$
 
-so $10 - v_1 = 10\ \mathrm{V}$ and $v_1 = 0\ \mathrm V)$. This is the DC operating point, and a simulator solving the same MNA for this netlist gives the same $0\ \mathrm V)$. The point of the example is not the arithmetic but the correspondence: the hand equation and the matrix equation are the same equation, one written by you at one node, one stamped by the simulator into a matrix, and agreeing is the sign that both the netlist and the method are right.
+so $10 - v_1 = 10\ \mathrm{V}$ and $v_1 = 0\ \mathrm{V}$. This is the DC operating point, and a simulator solving the same MNA for this netlist gives the same $0\ \mathrm{V}$. The point of the example is not the arithmetic but the correspondence: the hand equation and the matrix equation are the same equation, one written by you at one node, one stamped by the simulator into a matrix, and agreeing is the sign that both the netlist and the method are right.
 :::
 :::
 
@@ -50,9 +50,9 @@ The **explicit Euler** method, $x_{n+1} = x_n + h\,f(x_n)$, is first order, unco
 :::
 
 ::: example Euler versus trapezoidal on an RC step {#ex-int}
-An $RC$ network with $R=10\ \mathrm{k\Omega}$, $C=1\ \mu\mathrm F)$, $\tau=10\ \mathrm{ms}$, driven by a $10\ \mathrm V)$ step, is integrated from $0$ to $20\ \mathrm{ms}$ with $100$ steps of $0.2\ \mathrm{ms}$. Compare the explicit Euler result with the trapezoidal one, against the exact $10(1-e^{-t/\tau})$.
+An $RC$ network with $R=10\ \mathrm{k\Omega}$, $C=1\ \mu\mathrm{F}$, $\tau=10\ \mathrm{ms}$, driven by a $10\ \mathrm{V}$ step, is integrated from $0$ to $20\ \mathrm{ms}$ with $100$ steps of $0.2\ \mathrm{ms}$. Compare the explicit Euler result with the trapezoidal one, against the exact $10(1-e^{-t/\tau})$.
 ::: solution
-The exact value at $20\ \mathrm{ms}$ is $10(1-e^{-2}) = 8.647\ \mathrm V)$. The explicit Euler, advancing $v_{n+1}=v_n + (h/C)(10-v_n)/R$, gives $8.674\ \mathrm V)$, a $0.31\%$ error. The implicit trapezoidal, solving $v_{n+1} = \dfrac{v_n(1-h) + h\cdot10}{1+h}$ with $h=1/(RC)\cdot h\cdot\dfrac{1}{2}=0.01$, gives $8.647\ \mathrm V)$, a $0.001\%$ error. The trapezoidal, at the same number of steps, is three orders of magnitude more accurate, and this is the practical reason a simulator defaults to an implicit method and why the explicit Euler, though faster, is the one to suspect first when a transient looks a little too damped or too fast.
+The exact value at $20\ \mathrm{ms}$ is $10(1-e^{-2}) = 8.647\ \mathrm{V}$. The explicit Euler, advancing $v_{n+1}=v_n + (h/C)(10-v_n)/R$, gives $8.674\ \mathrm{V}$, a $0.31\%$ error. The implicit trapezoidal, solving $v_{n+1} = \dfrac{v_n(1-a) + 2a\cdot10}{1+a}$ with $a = h/(2RC) = 0.01$, gives $8.647\ \mathrm{V}$, a $0.001\%$ error. The trapezoidal, at the same number of steps, is three orders of magnitude more accurate, and this is the practical reason a simulator defaults to an implicit method and why the explicit Euler, though faster, is the one to suspect first when a transient looks a little too damped or too fast.
 :::
 :::
 
@@ -74,14 +74,14 @@ The explicit integrators are stable only for a step size below a bound set by th
 A further source of error is the convergence of the non-linear solve at each step, which a device with a diode or a transistor requires, because the element's operating point is itself unknown. The simulator solves a non-linear equation at each step, and if the initial guess is poor the iteration can wander, oscillate, or settle at a wrong root. The standard remedies, a better initial guess, a smaller step, a different non-linear method, and a check of the operating point against a hand computation, are all available to you, and the one you reach for first should be the operating point, because a wrong DC operating point is the most likely cause of a transient that looks wrong.
 
 ::: example Step size from a time constant {#ex-step}
-A network's fastest time constant is $10\ \mu\mathrm s)$. What step size, at one fiftieth, would a working rule suggest for an explicit method?
+A network's fastest time constant is $10\ \mu\mathrm{s}$. What step size, at one fiftieth, would a working rule suggest for an explicit method?
 ::: solution
-At one fiftieth of $10\ \mu\mathrm s)$ the step size is $10\ \mu\mathrm s)/50 = 0.2\ \mu\mathrm s)$. At one hundredth it is $0.1\ \mu\mathrm s)$. The rule is a bound on the step from below, and it is the single number to check before you trust a transient, because a step that is too large for the fastest mode will make even a perfect netlist give a result that is only approximately right.
+At one fiftieth of $10\ \mu\mathrm{s}$ the step size is $10\ \mu\mathrm{s}/50 = 0.2\ \mu\mathrm{s}$. At one hundredth it is $0.1\ \mu\mathrm{s}$. The rule is a bound on the step from below, and it is the single number to check before you trust a transient, because a step that is too large for the fastest mode will make even a perfect netlist give a result that is only approximately right.
 :::
 :::
 
 ::: warning Stiffness and the wrong integrator {#warn-stiff}
-A network with two very different time constants, say a fast $1\ \mathrm nH)$ inductor and a slow $10\ \mathrm s)$ capacitor, is **stiff**, and the explicit integrators are unstable unless the step is tiny, set by the fast constant, which makes the run take a number of steps proportional to the ratio of the two time constants, a number that can be a billion or more. The implicit integrators handle stiffness at the same cost as non-stiff, and this is the practical reason a general-purpose simulator uses an implicit method by default. If a stiff network runs slowly, or runs but gives a noisy result, the stiffness is the cause, and the fix is the implicit method, not a smaller step.
+A network with two very different time constants, say a fast $1\ \mathrm{nH}$ inductor and a slow $10\ \mathrm{s}$ capacitor, is **stiff**, and the explicit integrators are unstable unless the step is tiny, set by the fast constant, which makes the run take a number of steps proportional to the ratio of the two time constants, a number that can be a billion or more. The implicit integrators handle stiffness at the same cost as non-stiff, and this is the practical reason a general-purpose simulator uses an implicit method by default. If a stiff network runs slowly, or runs but gives a noisy result, the stiffness is the cause, and the fix is the implicit method, not a smaller step.
 :::
 
 ## Monte Carlo and sensitivity
@@ -93,9 +93,9 @@ A **Monte Carlo** analysis solves the network many times, each time with the par
 :::
 
 ::: example Tolerance on a divider {#ex-mc}
-A $10\ \mathrm V)$ divider, $R_1 = 1\ \mathrm{k\Omega}$ and $R_2 = 1\ \mathrm{k\Omega}$, is driven, and the output is $v = 10\,R_2/(R_1+R_2)$. If $R_2$ is a part with a $\pm 5\%$ tolerance, what is the range of the output?
+A $10\ \mathrm{V}$ divider, $R_1 = 1\ \mathrm{k\Omega}$ and $R_2 = 1\ \mathrm{k\Omega}$, is driven, and the output is $v = 10\,R_2/(R_1+R_2)$. If $R_2$ is a part with a $\pm 5\%$ tolerance, what is the range of the output?
 ::: solution
-The output is a function of $R_2$, increasing in it. At the extremes, $R_2 = 0.95\ \mathrm{k\Omega}$ gives $v = 10\times0.95/(1+0.95) = 4.87\ \mathrm V)$, and $R_2 = 1.05\ \mathrm{k\Omega}$ gives $v = 10\times1.05/(1+1.05) = 5.12\ \mathrm V)$. So a $\pm 5\%$ part tolerance produces an output in the range $4.87$ to $5.12\ \mathrm V)$, a variation of about $\pm 2.4\%$ on a $5\ \mathrm V)$ nominal. This is the design consequence you cannot see in a single ideal simulation, and it is why the tolerance analysis is part of the design, not a separate add-on. The Monte Carlo, with the parts drawn from their true distributions, gives the same range, and the probability that the output is within any band, which is the number a specification actually asks for.
+The output is a function of $R_2$, increasing in it. At the extremes, $R_2 = 0.95\ \mathrm{k\Omega}$ gives $v = 10\times0.95/(1+0.95) = 4.87\ \mathrm{V}$, and $R_2 = 1.05\ \mathrm{k\Omega}$ gives $v = 10\times1.05/(1+1.05) = 5.12\ \mathrm{V}$. So a $\pm 5\%$ part tolerance produces an output in the range $4.87$ to $5.12\ \mathrm{V}$, a variation of about $\pm 2.4\%$ on a $5\ \mathrm{V}$ nominal. This is the design consequence you cannot see in a single ideal simulation, and it is why the tolerance analysis is part of the design, not a separate add-on. The Monte Carlo, with the parts drawn from their true distributions, gives the same range, and the probability that the output is within any band, which is the number a specification actually asks for.
 :::
 :::
 
@@ -115,7 +115,7 @@ A result that is stable-looking but slightly off, with a correct netlist, is the
 With the matrix, the integrator, the step-size rule and the tolerance analysis in hand, you now know what a simulator is doing, and you are equipped to trust a result, to find a wrong one, and to fix the netlist, the step size, or the operating point, according to the symptom. These are the same tools, in a richer form, in the frequency-domain analysis and the converter design of the later courses, and the discipline of checking a hand result against the simulation, and of knowing which part of the answer is the network and which part is the method, is the single most transferable skill in the course. In [[circuits-1/second-order-circuits]] you already met the response that the simulation is here to compute, and in the later electronics courses you will meet the non-linear and the mixed-signal nets that push the same MNA to its limits.
 
 ::: history
-The practice of numerical circuit analysis, and the specific matrix form known as modified nodal analysis, emerged in the 1950s and 1960s as the circuit simulator, in its modern form, took shape. The name **SPICE**, the Simulation Program with Integration Circuits, was given to the first general-purpose simulator, developed in the 1960s and 1970s, and its descendants, the various commercial and open-source simulators, are the workhorses of electronic design today. The time integrators, the explicit and the implicit methods, and the treatment of stiffness, are the numerical-ordinary-differential-equations content of the solver, and the Monte Carlo and the sensitivity analysis are the statistical additions of the design flow. Continue in the later courses to meet the same tools, in the frequency domain and in the converter design, where the matrix you have just learned to read is the object of the design.
+The practice of numerical circuit analysis, and the specific matrix form known as modified nodal analysis, emerged in the 1950s and 1960s as the circuit simulator, in its modern form, took shape. The name **SPICE**, the Simulation Program with Integrated Circuit Emphasis, was given to the first general-purpose simulator, developed in the 1960s and 1970s, and its descendants, the various commercial and open-source simulators, are the workhorses of electronic design today. The time integrators, the explicit and the implicit methods, and the treatment of stiffness, are the numerical-ordinary-differential-equations content of the solver, and the Monte Carlo and the sensitivity analysis are the statistical additions of the design flow. Continue in the later courses to meet the same tools, in the frequency domain and in the converter design, where the matrix you have just learned to read is the object of the design.
 :::
 
 ::: summary
@@ -132,14 +132,14 @@ The practice of numerical circuit analysis, and the specific matrix form known a
 ::: exercise Netlist to a single node {level=1 check="5"}
 A $1\ \mathrm{mA}$ current source feeds a node that is connected to ground through $5\ \mathrm{k\Omega}$. What is the DC voltage of the node?
 ::: solution
-$v = iR = 1\ \mathrm{mA}\times5\ \mathrm{k\Omega} = 5\ \mathrm V)$, by KCL and Ohm's law. The same is the result of a single-node MNA.
+$v = iR = 1\ \mathrm{mA}\times5\ \mathrm{k\Omega} = 5\ \mathrm{V}$, by KCL and Ohm's law. The same is the result of a single-node MNA.
 :::
 :::
 
-::: exercise Two resistors, one node {level=1 check="6.67"}
-A $10\ \mathrm V)$ source drives a node through $10\ \mathrm{k\Omega}$, and the node is grounded through $20\ \mathrm{k\Omega}$. What is the node voltage?
+::: exercise Two resistors, one node {level=1 check="20/3"}
+A $10\ \mathrm{V}$ source drives a node through $10\ \mathrm{k\Omega}$, and the node is grounded through $20\ \mathrm{k\Omega}$. What is the node voltage?
 ::: solution
-This is a divider: $v = 10\times20/(10+20) = 6.67\ \mathrm V)$, and it is the DC operating point that an MNA would solve.
+This is a divider: $v = 10\times20/(10+20) = 6.67\ \mathrm{V}$, and it is the DC operating point that an MNA would solve.
 :::
 :::
 
@@ -153,33 +153,33 @@ Euler gives $x_1 = 0 + 0.1\times(10-0) = 1.0$. The exact is $10(1-e^{-0.1}) = 10
 :::
 :::
 
-::: exercise Trapezoidal on the same step {level=2 check="0.952"}
+::: exercise Trapezoidal on the same step {level=2 check="1/1.05"}
 Use the implicit trapezoidal on the same system, $\tau=1$, one step of $0.1$. What is the result, and how does it compare to the Euler?
 ::: hint
-Solve $x_1 = (x_0 + h\cdot 10/(2\tau)) / (1 + h/(2\tau))$ from the trapezoidal form.
+Solve $x_1 = \bigl(x_0(1 - h/(2\tau)) + 10h/\tau\bigr) / (1 + h/(2\tau))$ from the trapezoidal form.
 :::
 ::: solution
-With $h/(2\tau) = 0.05$, the trapezoidal gives $x_1 = (0 + 0.05\times10)/(1+0.05) = 0.5/1.05 = 0.476$. The exact is $0.952$. Hmm, this is the response of $x'=(10-x)$; re-deriving, the trapezoidal for $x' = (10-x)$ is $x_1 = x_0 + \frac{h}{2}\left[(10-x_0)+(10-x_1)\right]$, so $x_1(1+h/2) = x_0(1-h/2) + 10h$, and $x_1 = (0 + 0.1\times10)/(1+0.05) = 0.952$. This is essentially exact, the second-order accuracy of the trapezoidal, versus the Euler's $1.0$. The method, not the machine, is what separates them.
+For $x' = 10 - x$ ($\tau = 1$) the trapezoidal rule is $x_1 = x_0 + \frac{h}{2}\left[(10-x_0)+(10-x_1)\right]$, so $x_1(1+h/2) = x_0(1-h/2) + 10h$, and $x_1 = (0 + 0.1\times10)/(1+0.05) = 1/1.05 = 0.9524$, against the exact $0.9516$. This is essentially exact, the second-order accuracy of the trapezoidal, versus the Euler's $1.0$. The method, not the machine, is what separates them.
 :::
 :::
 
-::: exercise Step size from a time constant {level=3 check="0.1"}
-Your network's smallest time constant is $1\ \mathrm{ms}$. What step size, at one hundredth, would you use for an explicit, non-adaptive, method?
+::: exercise Step size from a time constant {level=3 check="1e-5"}
+Your network's smallest time constant is $1\ \mathrm{ms}$. What step size, at one hundredth, would you use for an explicit, non-adaptive, method? Give it in seconds.
 ::: hint
 One hundredth of the smallest time constant.
 :::
 ::: solution
-$1\ \mathrm{ms}/100 = 0.01\ \mathrm{ms} = 10\ \mu\mathrm s)$. The rule is a bound on the step from below, and it is the number to check before trusting the transient.
+$1\ \mathrm{ms}/100 = 0.01\ \mathrm{ms} = 10\ \mu\mathrm{s}$. The rule is a bound on the step from below, and it is the number to check before trusting the transient.
 :::
 :::
 
-::: exercise Monte Carlo on a gain stage {level=3 check="0.022"}
-A voltage divider, $R_1 = 1\ \mathrm k\Omega$, $R_2 = 1\ \mathrm k\Omega$, $10\ \mathrm V)$, and both resistors have a $\pm 5\%$ independent tolerance. What is the worst-case range of the output?
+::: exercise Monte Carlo on a gain stage {level=3 check="5.25"}
+A voltage divider, $R_1 = 1\ \mathrm k\Omega$, $R_2 = 1\ \mathrm k\Omega$, $10\ \mathrm{V}$, and both resistors have a $\pm 5\%$ independent tolerance. What is the worst-case range of the output? Enter the maximum output in volts.
 ::: hint
 The output is $10\,R_2/(R_1+R_2)$; find the extremes by the corner values.
 :::
 ::: solution
-The output is maximised when $R_2$ is large and $R_1$ small: $R_2 = 1.05$, $R_1 = 0.95$, giving $10\times1.05/(0.95+1.05) = 10\times1.05/2 = 5.25\ \mathrm V)$. It is minimised when $R_2$ is small and $R_1$ large: $R_2 = 0.95$, $R_1 = 1.05$, giving $10\times0.95/2.1 = 4.52\ \mathrm V)$. So the worst-case output range is $4.52$ to $5.25\ \mathrm V)$, a variation of about $\pm 15\%$ on the nominal $5\ \mathrm V)$, larger than the single-part case because both parts can move in the wrong direction at once. This is the reason a two-part divider is less robust than one where only the output sets the range, and it is the kind of number a tolerance analysis is for.
+The output is maximised when $R_2$ is large and $R_1$ small: $R_2 = 1.05$, $R_1 = 0.95$, giving $10\times1.05/(0.95+1.05) = 10\times1.05/2 = 5.25\ \mathrm{V}$. It is minimised when $R_2$ is small and $R_1$ large: $R_2 = 0.95$, $R_1 = 1.05$, giving $10\times0.95/(1.05+0.95) = 10\times0.95/2 = 4.75\ \mathrm{V}$. So the worst-case output range is $4.75$ to $5.25\ \mathrm{V}$, a variation of $\pm 5\%$ on the nominal $5\ \mathrm{V}$, twice the $\pm 2.4\%$ of the single-part case, because both parts can move in the wrong direction at once. This is the reason a two-part divider is less robust than one where only the output sets the range, and it is the kind of number a tolerance analysis is for.
 :::
 :::
 
@@ -189,16 +189,16 @@ A netlist with a diode does not converge at a particular step, and the operating
 The diode is at the threshold; the non-linear solve is sensitive to the initial guess.
 :::
 ::: solution
-A diode near its threshold has a very steep, non-linear, current-voltage relation, and the non-linear solve can wander if the initial guess is on the wrong side. The first try is to improve the initial guess, by setting the diode voltage closer to the expected, or to take a smaller step, so that the operating point moves less in a single step, or to use a non-linear method that is more robust near the threshold. The operating point check, that the diode is $5\ \mathrm mV)$ below threshold, is what tells you the solve is sensitive, and it is the sign that the problem is the non-linear solve, not the netlist.
+A diode near its threshold has a very steep, non-linear, current-voltage relation, and the non-linear solve can wander if the initial guess is on the wrong side. The first try is to improve the initial guess, by setting the diode voltage closer to the expected, or to take a smaller step, so that the operating point moves less in a single step, or to use a non-linear method that is more robust near the threshold. The operating point check, that the diode is $5\ \mathrm{mV}$ below threshold, is what tells you the solve is sensitive, and it is the sign that the problem is the non-linear solve, not the netlist.
 :::
 :::
 
 ::: exercise Stiff network and slow run {level=3}
-A converter has both a $1\ \mathrm nH)$ inductor and a $10\ \mathrm s)$ capacitor, and an explicit transient run takes a very long time. What is the name of the problem, and what is the practical remedy?
+A converter has both a $1\ \mathrm{nH}$ inductor and a $10\ \mathrm{s}$ capacitor, and an explicit transient run takes a very long time. What is the name of the problem, and what is the practical remedy?
 ::: hint
 The two time constants differ by a factor of about a billion.
 :::
 ::: solution
-This is **stiffness**: the fast constant, about $1\ \mathrm nH)$ scale, forces the explicit step to be tiny, so the run takes a number of steps proportional to the ratio of the two time constants, which is very large. The remedy is an implicit, or an adaptive, integrator, which is unconditionally stable for the linear part and can take a step set by the slow constant while still resolving the fast one, so the run time is independent of the stiffness. This is the reason a general-purpose simulator defaults to an implicit method, and it is what you should use the moment a stiff network runs slowly.
+This is **stiffness**: the fast constant, about $1\ \mathrm{nH}$ scale, forces the explicit step to be tiny, so the run takes a number of steps proportional to the ratio of the two time constants, which is very large. The remedy is an implicit, or an adaptive, integrator, which is unconditionally stable for the linear part and can take a step set by the slow constant while still resolving the fast one, so the run time is independent of the stiffness. This is the reason a general-purpose simulator defaults to an implicit method, and it is what you should use the moment a stiff network runs slowly.
 :::
 :::

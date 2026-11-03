@@ -27,22 +27,22 @@ The reason this single formula is so powerful is that it is the general solution
 The two most common first-order behaviours are the charge and discharge of a capacitor, and both are instances of the theorem.
 
 ::: example Charging a capacitor {#ex-charge}
-A $100\ \mu\mathrm F)$ capacitor, initially uncharged, is connected through a $10\ \mathrm{k\Omega}$ resistor to a $10\ \mathrm V)$ source. Find the voltage $0.5\ \mathrm{ms}$ after the switch is closed, and the current at that instant.
+A $100\ \mu\mathrm{F}$ capacitor, initially uncharged, is connected through a $10\ \mathrm{k\Omega}$ resistor to a $10\ \mathrm{V}$ source. Find the voltage $0.5\ \mathrm{ms}$ after the switch is closed, and the current at that instant.
 ::: solution
-The time constant is $\tau = RC = 10\times10^{3}\times100\times10^{-6} = 1\ \mathrm{ms}$. The initial voltage is $0$ and the final voltage is the source, $10\ \mathrm V)$, so
+The time constant is $\tau = RC = 10\times10^{3}\times100\times10^{-6} = 1\ \mathrm{ms}$. The initial voltage is $0$ and the final voltage is the source, $10\ \mathrm{V}$, so
 
 $$
 v_C(t) = 10\left(1 - e^{-t/\tau}\right).
 $$
 
-At $t = 0.5\ \mathrm{ms}$, $t/\tau = 0.5$, and $v_C = 10(1 - e^{-0.5}) = 10(1-0.6065) = 3.93\ \mathrm{V}$. The current at the same instant is $i = C\,\mathrm dv_C/\mathrm dt = (10/RC)e^{-t/\tau} = (10/1\ \mathrm{ms})e^{-0.5} = 10\ \mathrm{kA}\times0.6065 = 10\ \mathrm k\Omega$ gives $i = 10/10\ \mathrm{k\Omega}\times0.6065 = 0.607\ \mathrm{mA}$. At $t=0$ the current is $10/10\ \mathrm{k\Omega}=1\ \mathrm{mA}$, the full source current, and at $t\to\infty$ it is zero, with the capacitor fully charged.
+At $t = 0.5\ \mathrm{ms}$, $t/\tau = 0.5$, and $v_C = 10(1 - e^{-0.5}) = 10(1-0.6065) = 3.93\ \mathrm{V}$. The current at the same instant is $i = C\,\mathrm dv_C/\mathrm dt = (10/R)e^{-t/\tau} = (10/10\ \mathrm{k\Omega})\times0.6065 = 0.607\ \mathrm{mA}$. At $t=0$ the current is $10/10\ \mathrm{k\Omega}=1\ \mathrm{mA}$, the full source current, and at $t\to\infty$ it is zero, with the capacitor fully charged.
 :::
 :::
 
 ::: example Time to a fraction of the final value {#ex-frac}
 For the same circuit, how long does it take the voltage to reach $90\%$ of the source, and how long to reach $99\%$?
 ::: solution
-Setting $v_C = 0.9\times10 = 9\ \mathrm V)$, we need $1 - e^{-t/\tau} = 0.9$, so $e^{-t/\tau} = 0.1$ and $t/\tau = \ln 10 \approx 2.30$. With $\tau = 1\ \mathrm{ms}$, $t = 2.30\ \mathrm{ms}$. For $99\%$, $e^{-t/\tau}=0.01$ and $t/\tau = \ln 100 \approx 4.61$, so $t = 4.61\ \mathrm{ms}$. The rule of thumb, that a first-order response is within $1\%$ of its final value after about five time constants, is exactly this: five time constants gives $e^{-5} \approx 0.0067$, or $0.67\%$ of the swing remaining.
+Setting $v_C = 0.9\times10 = 9\ \mathrm{V}$, we need $1 - e^{-t/\tau} = 0.9$, so $e^{-t/\tau} = 0.1$ and $t/\tau = \ln 10 \approx 2.30$. With $\tau = 1\ \mathrm{ms}$, $t = 2.30\ \mathrm{ms}$. For $99\%$, $e^{-t/\tau}=0.01$ and $t/\tau = \ln 100 \approx 4.61$, so $t = 4.61\ \mathrm{ms}$. The rule of thumb, that a first-order response is within $1\%$ of its final value after about five time constants, is exactly this: five time constants gives $e^{-5} \approx 0.0067$, or $0.67\%$ of the swing remaining.
 :::
 :::
 
@@ -71,14 +71,14 @@ rising to the steady current $V/R$. Disconnecting the source, the current decays
 ::: example Inductor current rise {#ex-rl}
 A $20\ \mathrm{mH}$ inductor is connected through a $100\ \Omega$ resistor to a $12\ \mathrm{V}$ source, initially carrying no current. Find the current $100\ \mu\mathrm{s}$ later and the time constant.
 ::: solution
-The time constant is $\tau = L/R = 20\times10^{-3}/100 = 0.2\ \mathrm{ms} = 200\ \mu\mathrm s)$. The steady current is $V/R = 12/100 = 0.12\ \mathrm A)$. At $t = 100\ \mu\mathrm s)$, $t/\tau = 0.5$, so $i_L = 0.12(1 - e^{-0.5}) = 0.12\times0.3935 = 0.0472\ \mathrm A)$. At $t=0$ the current is zero and the full source voltage is across the inductor, and as the current rises the inductor voltage falls, the two sharing the $12\ \mathrm V)$ with the resistor. By $5\tau = 1\ \mathrm{ms}$ the current is within $1\%$ of $0.12\ \mathrm A)$.
+The time constant is $\tau = L/R = 20\times10^{-3}/100 = 0.2\ \mathrm{ms} = 200\ \mu\mathrm{s}$. The steady current is $V/R = 12/100 = 0.12\ \mathrm{A}$. At $t = 100\ \mu\mathrm{s}$, $t/\tau = 0.5$, so $i_L = 0.12(1 - e^{-0.5}) = 0.12\times0.3935 = 0.0472\ \mathrm{A}$. At $t=0$ the current is zero and the full source voltage is across the inductor, and as the current rises the inductor voltage falls, the two sharing the $12\ \mathrm{V}$ with the resistor. By $5\tau = 1\ \mathrm{ms}$ the current is within $1\%$ of $0.12\ \mathrm{A}$.
 :::
 :::
 
 ::: example Discharging a charged capacitor {#ex-discharge}
-A $10\ \mu\mathrm F)$ capacitor charged to $12\ \mathrm V)$ is discharged through a $1\ \mathrm k\Omega)$ resistor. Find the time constant, the voltage after one time constant, and the power dissipated in the resistor at that instant.
+A $10\ \mu\mathrm{F}$ capacitor charged to $12\ \mathrm{V}$ is discharged through a $1\ \mathrm{k\Omega}$ resistor. Find the time constant, the voltage after one time constant, and the power dissipated in the resistor at that instant.
 ::: solution
-The time constant is $\tau = RC = 1000\times10\times10^{-6} = 0.01\ \mathrm{s} = 10\ \mathrm{ms}$. The decay is $v_C = 12\,e^{-t/\tau}$, so at $t=\tau$ the voltage is $12\,e^{-1} = 12\times0.3679 = 4.41\ \mathrm V)$. The power in the resistor at that instant is $v^2/R = 4.41^2/1000 = 0.0195\ \mathrm W = 19.5\ \mathrm{mW}$. The initial power, at $t=0$, is $12^2/1000 = 0.144\ \mathrm W)$, four times larger, and the power falls with the square of the decaying voltage, so the bulk of the energy is given up in the first time constant or two.
+The time constant is $\tau = RC = 1000\times10\times10^{-6} = 0.01\ \mathrm{s} = 10\ \mathrm{ms}$. The decay is $v_C = 12\,e^{-t/\tau}$, so at $t=\tau$ the voltage is $12\,e^{-1} = 12\times0.3679 = 4.41\ \mathrm{V}$. The power in the resistor at that instant is $v^2/R = 4.41^2/1000 = 0.0195\ \mathrm W = 19.5\ \mathrm{mW}$. The initial power, at $t=0$, is $12^2/1000 = 0.144\ \mathrm{W}$, $e^2 \approx 7.4$ times larger, and the power falls with the square of the decaying voltage, so the bulk of the energy is given up in the first time constant or two.
 :::
 :::
 
@@ -87,17 +87,17 @@ A capacitor's voltage and an inductor's current are continuous in time. The volt
 :::
 
 ::: quiz
-An $RC$ circuit has $R=5\ \mathrm{k\Omega}$ and $C=200\ \mu\mathrm F)$. What is its time constant?
+An $RC$ circuit has $R=5\ \mathrm{k\Omega}$ and $C=200\ \mathrm{nF}$. What is its time constant?
 - [x] $1\ \mathrm{ms}$
 - [ ] $0.5\ \mathrm{ms}$
 - [ ] $2\ \mathrm{ms}$
 - [ ] $10\ \mathrm{ms}$
 ::: solution
-$\tau = RC = 5\times10^{3}\times200\times10^{-6} = 1\times10^{-3} = 1\ \mathrm{ms}$.
+$\tau = RC = 5\times10^{3}\times200\times10^{-9} = 1\times10^{-3} = 1\ \mathrm{ms}$.
 :::
 :::
 
-A note on where the energy goes, because it is a question the first-order case answers cleanly. When a capacitor charges, the source supplies a fixed amount of energy depending only on the final charge and voltage, and that energy splits into the amount stored in the capacitor and the amount dissipated in the charging resistor. The stored part is $\tfrac12 C V^2$, and the dissipated part is the rest, and remarkably the split is independent of the resistance: whether you charge through $1\ \mathrm k\Omega)$ or $10\ \mathrm k\Omega)$, half the energy is stored and half is lost, because a larger resistance slows the charge but reduces the current, and the two effects exactly cancel in the total. The inductor case is the same, with the roles of voltage and current exchanged. This independence of the energy split from the resistance is a useful check on any first-order calculation, and it is the same conservation that the charge and discharge examples above obey at every instant.
+A note on where the energy goes, because it is a question the first-order case answers cleanly. When a capacitor charges, the source supplies a fixed amount of energy depending only on the final charge and voltage, and that energy splits into the amount stored in the capacitor and the amount dissipated in the charging resistor. The stored part is $\tfrac12 C V^2$, and the dissipated part is the rest, and remarkably the split is independent of the resistance: whether you charge through $1\ \mathrm{k\Omega}$ or $10\ \mathrm{k\Omega}$, half the energy is stored and half is lost, because a larger resistance slows the charge but reduces the current, and the two effects exactly cancel in the total. The inductor case is the same, with the roles of voltage and current exchanged. This independence of the energy split from the resistance is a useful check on any first-order calculation, and it is the same conservation that the charge and discharge examples above obey at every instant.
 
 ## The universal formula and initial conditions
 
@@ -119,7 +119,7 @@ This is the most practical result in the course, and it is the one to reach for 
 f: 10*(1-exp(-x))
 x: 0, 5
 y: 0, 10
-caption: The charging of the $100\ \mu\mathrm F)$ capacitor toward $10\ \mathrm V)$, $v_C(t)=10(1-e^{-t/\tau})$ with $\tau=1\ \mathrm{ms}$ and $t$ in milliseconds. The curve rises from zero and approaches the source value asymptotically, with about $63\%$ of the way covered in one time constant and $99\%$ in the neighbourhood of five. The exponential is the signature of every first-order response.
+caption: The charging of the $100\ \mu\mathrm{F}$ capacitor toward $10\ \mathrm{V}$, $v_C(t)=10(1-e^{-t/\tau})$ with $\tau=1\ \mathrm{ms}$ and $t$ in milliseconds. The curve rises from zero and approaches the source value asymptotically, with about $63\%$ of the way covered in one time constant and $99\%$ in the neighbourhood of five. The exponential is the signature of every first-order response.
 :::
 
 ::: warning A large current in the inductor decay {#warn-fly}
@@ -147,40 +147,40 @@ The exponential response of the $RC$ and $RL$ circuits was understood as soon as
 ## Exercises
 
 ::: exercise Time constant of an RC circuit {level=1 check="0.1"}
-A $2\ \mathrm{k\Omega}$ resistor and a $50\ \mu\mathrm F)$ capacitor. What is the time constant?
+A $2\ \mathrm{k\Omega}$ resistor and a $50\ \mu\mathrm{F}$ capacitor. What is the time constant?
 ::: solution
 $\tau = RC = 2\times10^{3}\times50\times10^{-6} = 0.1\ \mathrm{s} = 100\ \mathrm{ms}$.
 :::
 :::
 
-::: exercise Voltage after one time constant {level=1 check="6.32"}
-A $10\ \mathrm V)$ source charges an uncharged capacitor with $\tau=1\ \mathrm{ms}$. What is the voltage at $t=1\ \mathrm{ms}$?
+::: exercise Voltage after one time constant {level=1 check="10*(1-exp(-1))"}
+A $10\ \mathrm{V}$ source charges an uncharged capacitor with $\tau=1\ \mathrm{ms}$. What is the voltage at $t=1\ \mathrm{ms}$?
 ::: solution
-$v_C = 10(1-e^{-1}) = 10\times0.6321 = 6.32\ \mathrm V)$.
+$v_C = 10(1-e^{-1}) = 10\times0.6321 = 6.32\ \mathrm{V}$.
 :::
 :::
 
-::: exercise Inductor time constant {level=1 check="50"}
-A $100\ \mathrm mH)$ inductor and a $2\ \mathrm{k\Omega}$ resistor. What is the time constant in milliseconds?
+::: exercise Inductor time constant {level=1 check="5e-5"}
+A $100\ \mathrm{mH}$ inductor and a $2\ \mathrm{k\Omega}$ resistor. What is the time constant, in seconds?
 ::: solution
-$\tau = L/R = 0.1/2000 = 5\times10^{-5}\ \mathrm{s} = 0.05\ \mathrm{ms} = 50\ \mu\mathrm s)$. (The check value $50$ is in microseconds.)
+$\tau = L/R = 0.1/2000 = 5\times10^{-5}\ \mathrm{s} = 0.05\ \mathrm{ms} = 50\ \mu\mathrm{s}$.
 :::
 :::
 
-::: exercise Discharge from an initial voltage {level=2 check="3.68"}
-A $10\ \mathrm V)$-charged capacitor discharges through a $10\ \mathrm{k\Omega}$ resistor with $C=1\ \mu\mathrm F)$. What is the voltage after one time constant?
+::: exercise Discharge from an initial voltage {level=2 check="10*exp(-1)"}
+A $10\ \mathrm{V}$-charged capacitor discharges through a $10\ \mathrm{k\Omega}$ resistor with $C=1\ \mu\mathrm{F}$. What is the voltage after one time constant?
 ::: solution
-$v_C = 10\,e^{-1} = 10\times0.3679 = 3.68\ \mathrm V)$. The time constant is $RC = 10\ \mathrm{k\Omega}\times1\ \mu\mathrm F = 10\ \mathrm{ms}$, and the discharge to $3.68\ \mathrm V)$ occurs at $t=10\ \mathrm{ms}$.
+$v_C = 10\,e^{-1} = 10\times0.3679 = 3.68\ \mathrm{V}$. The time constant is $RC = 10\ \mathrm{k\Omega}\times1\ \mu\mathrm F = 10\ \mathrm{ms}$, and the discharge to $3.68\ \mathrm{V}$ occurs at $t=10\ \mathrm{ms}$.
 :::
 :::
 
-::: exercise Inductor current at a given time {level=2 check="0.074"}
-A $30\ \mathrm mH)$ inductor is connected to a $15\ \mathrm V)$ source through $300\ \Omega$, initially unenergised. What is the current at $t=150\ \mu\mathrm s)$?
+::: exercise Inductor current at a given time {level=2 check="0.05*(1-exp(-1.5))"}
+A $30\ \mathrm{mH}$ inductor is connected to a $15\ \mathrm{V}$ source through $300\ \Omega$, initially unenergised. What is the current at $t=150\ \mu\mathrm{s}$, in amperes?
 ::: hint
 Find $\tau=L/R$, then apply the rise formula.
 :::
 ::: solution
-$\tau = 0.03/300 = 0.0001\ \mathrm{s} = 100\ \mu\mathrm s)$. $t/\tau = 1.5$. The steady current is $15/300 = 0.05\ \mathrm A)$. $i_L = 0.05(1-e^{-1.5}) = 0.05\times0.7769 = 0.0388\ \mathrm A)$. Recheck: $0.05\times0.7769 = 0.03885\ \mathrm A)$. The current is rising toward $0.05\ \mathrm A)$.
+$\tau = 0.03/300 = 0.0001\ \mathrm{s} = 100\ \mu\mathrm{s}$. $t/\tau = 1.5$. The steady current is $15/300 = 0.05\ \mathrm{A}$. $i_L = 0.05(1-e^{-1.5}) = 0.05\times0.7769 = 0.0388\ \mathrm{A}$. Recheck: $0.05\times0.7769 = 0.03885\ \mathrm{A}$. The current is rising toward $0.05\ \mathrm{A}$.
 :::
 :::
 
@@ -194,23 +194,23 @@ The energy in an inductor is $\tfrac12 L i^2$, a smooth function of $i$. If $i$ 
 :::
 :::
 
-::: exercise Settling time {level=3 check="5"}
+::: exercise Settling time {level=3 check="ln(100)"}
 How many time constants does it take for a first-order response to reach within $1\%$ of its final value?
 ::: hint
 Solve $e^{-t/\tau} = 0.01$ for $t/\tau$.
 :::
 ::: solution
-$t/\tau = \ln 100 \approx 4.6$, so about five time constants. At five time constants, $e^{-5} \approx 0.0067 = 0.67\%$ of the swing remains, which is within $1\%$. This is the standard rule of thumb for the settling time.
+$t/\tau = \ln 100 \approx 4.61$, so about five time constants. At five time constants, $e^{-5} \approx 0.0067 = 0.67\%$ of the swing remains, which is within $1\%$. This is the standard rule of thumb for the settling time.
 :::
 :::
 
-::: exercise Energy dissipated in the charging resistor {level=3 check="0.5"}
-A $1\ \mu\mathrm F)$ capacitor is charged from $0$ to $10\ \mathrm V)$ through a resistor. How much energy is dissipated in the resistor, and how much is stored in the capacitor?
+::: exercise Energy dissipated in the charging resistor {level=3 check="5e-5"}
+A $1\ \mu\mathrm{F}$ capacitor is charged from $0$ to $10\ \mathrm{V}$ through a resistor. How much energy is dissipated in the resistor, and how much is stored in the capacitor? Enter the dissipated energy in joules.
 ::: hint
 Compare the source energy to the stored energy.
 :::
 ::: solution
-The source supplies charge $Q = C V = 10\ \mu\mathrm C)$ at $10\ \mathrm V)$, so the source energy is $VQ = 100\ \mu\mathrm J)$. The capacitor stores $\tfrac12 C V^2 = \tfrac12\times10^{-6}\times100 = 50\ \mu\mathrm J)$. The difference, $50\ \mu\mathrm J)$, is dissipated in the resistor, regardless of the resistance value. This is a classic result: half the energy is stored, half is lost, and the result is independent of $R$.
+The source supplies charge $Q = C V = 10\ \mu\mathrm{C}$ at $10\ \mathrm{V}$, so the source energy is $VQ = 100\ \mu\mathrm{J}$. The capacitor stores $\tfrac12 C V^2 = \tfrac12\times10^{-6}\times100 = 50\ \mu\mathrm{J}$. The difference, $50\ \mu\mathrm{J}$, is dissipated in the resistor, regardless of the resistance value. This is a classic result: half the energy is stored, half is lost, and the result is independent of $R$.
 :::
 :::
 

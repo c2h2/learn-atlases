@@ -73,13 +73,13 @@ The Thevenin equivalent reproduces the current and voltage at the two terminals,
 A common use of Thevenin, in practice, is to compare two candidate sources before you choose one. Suppose you have a signal from a sensor with an internal resistance, and you want to know how much it will sag when you connect a meter with a known input resistance. The Thevenin form of the sensor, and the resistance of the meter, let you compute the loaded voltage in a single step, without redrawing the whole thing. This is the everyday version of the theorem: it turns an "intuition" about how a source behaves into a calculation with two numbers.
 
 ::: quiz
-A Thevenin source is $V_{\text{th}}=10\ \mathrm V)$ and $R_{\text{th}}=1\ \mathrm{k\Omega}$. A $1\ \mathrm{k\Omega}$ load is connected. What is the load voltage?
-- [x] $5\ \mathrm V)$
-- [ ] $10\ \mathrm V)$
-- [ ] $2.5\ \mathrm V)$
-- [ ] $20\ \mathrm V)$
+A Thevenin source is $V_{\text{th}}=10\ \mathrm{V}$ and $R_{\text{th}}=1\ \mathrm{k\Omega}$. A $1\ \mathrm{k\Omega}$ load is connected. What is the load voltage?
+- [x] $5\ \mathrm{V}$
+- [ ] $10\ \mathrm{V}$
+- [ ] $2.5\ \mathrm{V}$
+- [ ] $20\ \mathrm{V}$
 ::: solution
-With $R_L = R_{\text{th}}$, the load is in series with the source resistance, and the voltage divides equally: $v_L = 10\times\dfrac{1}{1+1} = 5\ \mathrm V)$. At the match the load gets half the open-circuit voltage, and the efficiency is one half.
+With $R_L = R_{\text{th}}$, the load is in series with the source resistance, and the voltage divides equally: $v_L = 10\times\dfrac{1}{1+1} = 5\ \mathrm{V}$. At the match the load gets half the open-circuit voltage, and the efficiency is one half.
 :::
 :::
 
@@ -102,7 +102,7 @@ $$
 I_{\text{N}} = \dfrac{V_{\text{th}}}{R_{\text{th}}} = \dfrac{4}{1.333\ \mathrm{k\Omega}} = 3\ \mathrm{mA}.
 $$
 
-So the Norton equivalent is a $3\ \mathrm{mA}$ source in parallel with $1.333\ \mathrm{k\Omega}$. Check by loading with $R_L=1\ \mathrm{k\Omega}$: the load current is $3\ \mathrm{mA}\times\dfrac{1.333}{1.333+1} = 1.73\ \mathrm{mA}$ and the load voltage is $1.73\ \mathrm{mA}\times1\ \mathrm{k\Omega}=1.73\ \mathrm{V}$. The Thevenin form gave $1.71\ \mathrm{V}$ with the same load, and the small difference is rounding in the $1.333\ \mathrm{k\Omega}$; the two are exact to each other.
+So the Norton equivalent is a $3\ \mathrm{mA}$ source in parallel with $1.333\ \mathrm{k\Omega}$. Check by loading with $R_L=1\ \mathrm{k\Omega}$: the load current is $3\ \mathrm{mA}\times\dfrac{1.333}{1.333+1} = 1.71\ \mathrm{mA}$ and the load voltage is $1.71\ \mathrm{mA}\times1\ \mathrm{k\Omega}=1.71\ \mathrm{V}$, the same $1.71\ \mathrm{V}$ as the Thevenin form gave with this load: the two equivalents agree exactly.
 :::
 :::
 
@@ -163,22 +163,22 @@ Superposition and the source transformation were standard by the 1890s, as immed
 
 ## Exercises
 
-::: exercise Source transformation {level=1 check="6"}
-Convert a $12\ \mathrm{V}$ source in series with a $2\ \mathrm{k\Omega}$ resistor into its Norton form. What is the current source?
+::: exercise Source transformation {level=1 check="6e-3"}
+Convert a $12\ \mathrm{V}$ source in series with a $2\ \mathrm{k\Omega}$ resistor into its Norton form. What is the current source, in amperes?
 ::: solution
 $I_{\text{N}} = V/R = 12/2\ \mathrm{k\Omega} = 6\ \mathrm{mA}$, in parallel with $2\ \mathrm{k\Omega}$.
 :::
 :::
 
-::: exercise Thevenin of a divider {level=1 check="0.6"}
-A $9\ \mathrm{V}$ source drives $3\ \mathrm{k\Omega}$ on top and $1\ \mathrm{k\Omega}$ to ground. Find the Thevenin resistance seen at the midpoint.
+::: exercise Thevenin of a divider {level=1 check="750"}
+A $9\ \mathrm{V}$ source drives $3\ \mathrm{k\Omega}$ on top and $1\ \mathrm{k\Omega}$ to ground. Find the Thevenin resistance seen at the midpoint, in ohms.
 ::: solution
-With the source off, the resistors are in parallel: $R_{\text{th}} = 3\times1/(3+1) = 0.75\ \mathrm{k\Omega}$. (The check value $0.6$ is the Thevenin voltage $9\times 1/4 = 2.25\ \mathrm{V}$ — here the answer is the resistance, $0.75\ \mathrm{k\Omega}$.)
+With the source off, the resistors are in parallel: $R_{\text{th}} = 3\times1/(3+1) = 0.75\ \mathrm{k\Omega} = 750\ \Omega$. (The Thevenin voltage is $9\times 1/4 = 2.25\ \mathrm{V}$.)
 :::
 :::
 
-::: exercise Maximum power load {level=1 check="1.5"}
-A source has $V_{\text{th}}=6\ \mathrm{V}$ and $R_{\text{th}}=1.5\ \mathrm{k\Omega}$. What load extracts the most power?
+::: exercise Maximum power load {level=1 check="1500"}
+A source has $V_{\text{th}}=6\ \mathrm{V}$ and $R_{\text{th}}=1.5\ \mathrm{k\Omega}$. What load resistance, in ohms, extracts the most power?
 ::: solution
 $R_L = R_{\text{th}} = 1.5\ \mathrm{k\Omega}$.
 :::
@@ -194,8 +194,8 @@ $V_{\text{th}} = 15\times 5/(5+5) = 7.5\ \mathrm{V}$. With the source off, the t
 :::
 :::
 
-::: exercise Norton equivalent from Thevenin {level=2 check="4"}
-Given a Thevenin equivalent of $8\ \mathrm V)$ and $2\ \mathrm{k\Omega}$, find the Norton current.
+::: exercise Norton equivalent from Thevenin {level=2 check="4e-3"}
+Given a Thevenin equivalent of $8\ \mathrm{V}$ and $2\ \mathrm{k\Omega}$, find the Norton current, in amperes.
 ::: hint
 $I_{\text{N}} = V_{\text{th}}/R_{\text{th}}$.
 :::
@@ -204,23 +204,23 @@ $I_{\text{N}} = 8/2\ \mathrm{k\Omega} = 4\ \mathrm{mA}$, in parallel with $2\ \m
 :::
 :::
 
-::: exercise Superposition with a current source {level=2 check="4.5"}
-A node is connected to ground through $4\ \mathrm{k\Omega}$ and is driven by a $1\ \mathrm{mA}$ current source and, through $2\ \mathrm{k\Omega}$, by a $9\ \mathrm V)$ source. Find its voltage.
+::: exercise Superposition with a current source {level=2 check="22/3"}
+A node is connected to ground through $4\ \mathrm{k\Omega}$ and is driven by a $1\ \mathrm{mA}$ current source and, through $2\ \mathrm{k\Omega}$, by a $9\ \mathrm{V}$ source. Find its voltage, in volts.
 ::: hint
 Add the two contributions.
 :::
 ::: solution
-From the voltage source (current source opened, so only the $2\ \mathrm{k\Omega}$ and $4\ \mathrm{k\Omega}$ to ground): $v_1 = 9\times 4/(2+4) = 6\ \mathrm{V}$. From the current source: it drives $1\ \mathrm{mA}$ into the parallel combination of $4\ \mathrm{k\Omega}$ and the short that the $2\ \mathrm{k\Omega}$ becomes, so the node is loaded only by $4\ \mathrm{k\Omega}$ and $v_2 = 1\ \mathrm{mA}\times4\ \mathrm{k\Omega} = 4\ \mathrm{V}$. But the two act on the same node; the sum by superposition is $6-4 = 2\ \mathrm{V}$ if the current source opposes, or $6+4=10\ \mathrm{V}$ if it aids. With the usual aiding orientation for this topology the answer is $10\ \mathrm V)$; the check field records the difference $4.5\ \mathrm V)$ in the opposing case.
+From the voltage source (current source opened, so only the $2\ \mathrm{k\Omega}$ and $4\ \mathrm{k\Omega}$ to ground): $v_1 = 9\times 4/(2+4) = 6\ \mathrm{V}$. From the current source (voltage source shorted, so the $2\ \mathrm{k\Omega}$ now runs from the node to ground, in parallel with the $4\ \mathrm{k\Omega}$): the $1\ \mathrm{mA}$ flows into $2\parallel4 = 1.333\ \mathrm{k\Omega}$, so $v_2 = 1.333\ \mathrm{V}$. The sum is $v = 6 + 1.333 = 7.33\ \mathrm{V}$. Check by KCL at the node: $(v-9)/2 + v/4 = 1$ (in mA and $\mathrm{k\Omega}$) gives $3v = 22$ and $v = 22/3 = 7.33\ \mathrm{V}$.
 :::
 :::
 
-::: exercise Power match efficiency {level=3 check="2"}
-A Thevenin source of $V_{\text{th}}=6\ \mathrm{V}$, $R_{\text{th}}=2\ \mathrm{k\Omega}$, is loaded at the match. What is the maximum power and the efficiency?
+::: exercise Power match efficiency {level=3 check="4.5e-3"}
+A Thevenin source of $V_{\text{th}}=6\ \mathrm{V}$, $R_{\text{th}}=2\ \mathrm{k\Omega}$, is loaded at the match. What is the maximum power, in watts, and the efficiency?
 ::: hint
 Use $P_{\max}=V_{\text{th}}^2/4R_{\text{th}}$; the efficiency is always one half at the match.
 :::
 ::: solution
-$P_{\max} = 6^2/(4\times2\ \mathrm{k\Omega}) = 36/8\ \mathrm{mW} = 4.5\ \mathrm{mW}$. The efficiency is $50\%$ by the theorem, independent of the values. (The check value $2$ is the load resistance in kilohms, which equals $R_{\text{th}}$.)
+$P_{\max} = 6^2/(4\times2\ \mathrm{k\Omega}) = 36/8\ \mathrm{mW} = 4.5\ \mathrm{mW}$. The efficiency is $50\%$ by the theorem, independent of the values.
 :::
 :::
 
@@ -230,6 +230,6 @@ Explain, with a short calculation, why the power at a node is not the sum of the
 Use a two-source circuit and the fact that power is quadratic in current.
 :::
 ::: solution
-Take a node loaded by a $1\ \mathrm{k\Omega}$ resistor, driven by a $2\ \mathrm{mA}$ source ($P_1 = 2\ \mathrm{mA}\times1\ \mathrm{k\Omega} = 2\ \mathrm V$, power $4\ \mathrm W)$… with one source the current is $2\ \mathrm{mA}$; with the other, $1\ \mathrm{mA}$. Power with each alone is $(2)^2 k$ and $(1)^2 k$, i.e. $4\ \mathrm{k}$ and $1\ \mathrm{k}$ in arbitrary units, summing to $5\ \mathrm{k}$. With both acting the total current is $3\ \mathrm{mA}$ and the power is $3^2 = 9\ \mathrm{k}$, not $5\ \mathrm{k}$. The cross term $2\times1\times2 = 4\ \mathrm{k}$ is exactly the missing piece. This is why superposition applies to currents and voltages and not to power.
+Take a $1\ \mathrm{k\Omega}$ resistor fed by two current sources in parallel, of $2\ \mathrm{mA}$ and $1\ \mathrm{mA}$. With the first alone the resistor carries $2\ \mathrm{mA}$ and absorbs $(2\ \mathrm{mA})^2\times1\ \mathrm{k\Omega} = 4\ \mathrm{mW}$; with the second alone, $1\ \mathrm{mA}$ and $1\ \mathrm{mW}$. The "sum of powers" would be $5\ \mathrm{mW}$. With both acting the current is $3\ \mathrm{mA}$ and the power is $9\ \mathrm{mW}$. The missing $4\ \mathrm{mW}$ is the cross term $2\,i_1i_2R = 2\times2\times1\times1 = 4\ \mathrm{mW}$. This is why superposition applies to currents and voltages and not to power.
 :::
 :::

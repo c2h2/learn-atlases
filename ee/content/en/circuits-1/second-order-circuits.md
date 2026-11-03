@@ -41,15 +41,15 @@ a damped oscillation about the final value $V$. The **first overshoot** occurs a
 :::
 
 ::: example An underdamped ringing response {#ex-udamp}
-A series $RLC$ has $R=20\ \Omega$, $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm F)$, driven by a $10\ \mathrm V)$ step, all voltages and currents zero initially. Find $\alpha$, $\omega_0$, $\omega_d$, the first peak time, the first peak value, and the overshoot.
+A series $RLC$ has $R=20\ \Omega$, $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm{F}$, driven by a $10\ \mathrm{V}$ step, all voltages and currents zero initially. Find $\alpha$, $\omega_0$, $\omega_d$, the first peak time, the first peak value, and the overshoot.
 ::: solution
 The neper frequency is $\alpha = R/(2L) = 20/0.02 = 1000\ \mathrm{rad/s}$, and the resonant frequency is $\omega_0 = 1/\sqrt{LC} = 1/\sqrt{10\times10^{-3}\times10\times10^{-6}} = 3162\ \mathrm{rad/s}$. The damping ratio is $\zeta = \alpha/\omega_0 = 1000/3162 = 0.316$, so the response is underdamped. The damped frequency is $\omega_d = \omega_0\sqrt{1-\zeta^2} = 3162\times0.9487 = 3000\ \mathrm{rad/s}$. The first peak is at $t_p = \pi/\omega_d = \pi/3000 = 1.047\ \mathrm{ms}$, and the overshoot fraction is $e^{-\zeta\pi/\sqrt{1-\zeta^2}} = e^{-0.316\pi/0.9487} = 0.351$, so the first peak value is
 
 $$
-v_C(t_p) = 10(1 + 0.351) = 13.51\ \mathrm V),
+v_C(t_p) = 10(1 + 0.351) = 13.51\ \mathrm{V},
 $$
 
-a $35.1\%$ overshoot on a $10\ \mathrm V)$ step. The response then rings, with successive extrema at $\omega_d t = (2n+1)\pi$, each smaller than the last by the same factor, and it settles to $10\ \mathrm V)$. The two time scales are the envelope, set by $\alpha = 1000\ \mathrm{rad/s}$ with time constant $1\ \mathrm{ms}$, and the oscillation, set by $\omega_d = 3000\ \mathrm{rad/s}$ with period $2.09\ \mathrm{ms}$, and the ratio of these two is what sets the number of visible rings before the response is indistinguishable from the final value.
+a $35.1\%$ overshoot on a $10\ \mathrm{V}$ step. The response then rings, with successive extrema at $\omega_d t = (2n+1)\pi$, each smaller than the last by the same factor, and it settles to $10\ \mathrm{V}$. The two time scales are the envelope, set by $\alpha = 1000\ \mathrm{rad/s}$ with time constant $1\ \mathrm{ms}$, and the oscillation, set by $\omega_d = 3000\ \mathrm{rad/s}$ with period $2.09\ \mathrm{ms}$, and the ratio of these two is what sets the number of visible rings before the response is indistinguishable from the final value.
 :::
 :::
 
@@ -66,7 +66,7 @@ For $\zeta = 1$ the response is the fastest non-oscillatory approach to the fina
 :::
 
 ::: example Comparing the three regimes {#ex-compare}
-Using the same $L=10\ \mathrm{mH}$ and $C=10\ \mu\mathrm F)$, find the resistance for the critically damped case, and the two roots for an overdamped case with $R=120\ \Omega$.
+Using the same $L=10\ \mathrm{mH}$ and $C=10\ \mu\mathrm{F}$, find the resistance for the critically damped case, and the two roots for an overdamped case with $R=120\ \Omega$.
 ::: solution
 The resonant frequency is fixed at $\omega_0 = 3162\ \mathrm{rad/s}$ by $L$ and $C$. Critical damping is at $\zeta=1$, so $\alpha = \omega_0$ and $R = 2\alpha L = 2\times3162\times0.01 = 63.25\ \Omega$. For $R = 120\ \Omega$, $\alpha = 120/0.02 = 6000\ \mathrm{rad/s}$, which is larger than $\omega_0$, so the case is overdamped, and the two roots are
 
@@ -74,7 +74,7 @@ $$
 s_{1,2} = -6000 \pm \sqrt{6000^2 - 3162^2} = -6000 \pm 5099,
 $$
 
-i.e. $s_1 = -901\ \mathrm{rad/s}$ and $s_2 = -11099\ \mathrm{rad/s}$, real and distinct. The response is the sum of a fast, small term decaying with time constant $90\ \mu\mathrm s)$ and a slow, large term decaying with time constant $1.11\ \mathrm{ms}$, and the slow term sets the settling time. This is the signature of the overdamped response: no ring, but a slower approach than the critical case, which is the practical reason the critical value is the one you aim for when you do not want ringing.
+i.e. $s_1 = -901\ \mathrm{rad/s}$ and $s_2 = -11099\ \mathrm{rad/s}$, real and distinct. The response is the sum of a fast, small term decaying with time constant $90\ \mu\mathrm{s}$ and a slow, large term decaying with time constant $1.11\ \mathrm{ms}$, and the slow term sets the settling time. This is the signature of the overdamped response: no ring, but a slower approach than the critical case, which is the practical reason the critical value is the one you aim for when you do not want ringing.
 :::
 :::
 
@@ -93,9 +93,9 @@ the resonant frequency identical to the series case but the damping set by the c
 :::
 
 ::: example The parallel damping {#ex-parallel}
-A parallel $RLC$ has $L=10\ \mathrm{mH}$ and $C=10\ \mu\mathrm F)$, and the parallel resistance is $R=20\ \Omega$. Find the damping ratio and the damping regime.
+A parallel $RLC$ has $L=10\ \mathrm{mH}$ and $C=10\ \mu\mathrm{F}$, and the parallel resistance is $R=20\ \Omega$. Find the damping ratio and the damping regime.
 ::: solution
-The resonant frequency is, as before, $\omega_0 = 1/\sqrt{LC} = 3162\ \mathrm{rad/s}$. The damping is $\alpha = 1/(2RC) = 1/(2\times20\times10\times10^{-6}) = 2500\ \mathrm{rad/s}$, and the damping ratio is $\zeta = \alpha/\omega_0 = 2500/3162 = 0.79$, so the response is underdamped, but more heavily so than the series case, because a lower parallel resistance means lower effective damping in the parallel topology. The regime is set by the ratio $\zeta$, and the change in the expression for $\alpha$ between the series and parallel cases is the whole difference it makes.
+The resonant frequency is, as before, $\omega_0 = 1/\sqrt{LC} = 3162\ \mathrm{rad/s}$. The damping is $\alpha = 1/(2RC) = 1/(2\times20\times10\times10^{-6}) = 2500\ \mathrm{rad/s}$, and the damping ratio is $\zeta = \alpha/\omega_0 = 2500/3162 = 0.79$, so the response is underdamped, but more heavily so than the series case, because in the parallel topology a lower resistance means heavier damping, $\alpha = 1/(2RC)$. The regime is set by the ratio $\zeta$, and the change in the expression for $\alpha$ between the series and parallel cases is the whole difference it makes.
 :::
 :::
 
@@ -103,7 +103,7 @@ The resonant frequency is, as before, $\omega_0 = 1/\sqrt{LC} = 3162\ \mathrm{ra
 f: 10*(1 - exp(-x)*cos(3*x) - (1/3)*exp(-x)*sin(3*x))
 x: 0, 5
 y: 0, 15
-caption: The underdamped step response of the series $RLC$ of the example, $v_C(t)=10\left[1-e^{-t}\cos(3t)-\tfrac13 e^{-t}\sin(3t)\right]$ with $t$ in milliseconds. The response overshoots the $10\ \mathrm V)$ final value to about $13.5\ \mathrm V)$ at $1.05\ \mathrm{ms}$, then rings with a decaying envelope of time constant $1\ \mathrm{ms}$, settling to $10\ \mathrm V)$. The oscillation and the envelope are the two time scales of the underdamped response.
+caption: The underdamped step response of the series $RLC$ of the example, $v_C(t)=10\left[1-e^{-t}\cos(3t)-\tfrac13 e^{-t}\sin(3t)\right]$ with $t$ in milliseconds. The response overshoots the $10\ \mathrm{V}$ final value to about $13.5\ \mathrm{V}$ at $1.05\ \mathrm{ms}$, then rings with a decaying envelope of time constant $1\ \mathrm{ms}$, settling to $10\ \mathrm{V}$. The oscillation and the envelope are the two time scales of the underdamped response.
 :::
 
 ::: quiz
@@ -120,9 +120,9 @@ The critically damped case, $\zeta=1$, is the fastest non-oscillatory approach. 
 A practical point that ties the three regimes to a design intuition. The resonant frequency, and therefore the natural frequency of any oscillation, is set entirely by $L$ and $C$, and is independent of the resistance. The resistance, or equivalently the conductance in the parallel case, does not set the frequency at which the circuit wants to oscillate, it sets how hard it damps that oscillation. This separation is the reason a $LC$ tank has a well-defined resonant frequency that you can predict from the two passive elements alone, and it is also the reason the quality factor, the ratio of these two, is the single number that sets the selectivity of a filter and the overshoot of a step response. When a tank is too selective and rings too long, the quality factor is too high, and the fix is to add loss, to reduce it. When it is too broad and loses selectivity, the quality factor is too low, and the fix is to reduce the loss. The three regimes of this lesson are the three values of the same ratio, and the design is the choice of that ratio for the behaviour you want.
 
 ::: example Choosing the resistance for a target overshoot {#ex-overshoot}
-You have an $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm F)$ tank and want no more than a $35\%$ first-peak overshoot on the step response. What damping ratio is required, and what series resistance gives it?
+You have an $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm{F}$ tank and want no more than a $35\%$ first-peak overshoot on the step response. What damping ratio is required, and what series resistance gives it?
 ::: solution
-The overshoot fraction is $e^{-\zeta\pi/\sqrt{1-\zeta^2}} = 0.35$, so $\zeta\pi/\sqrt{1-\zeta^2} = \ln(1/0.35) = 1.05$, and solving, $\zeta \approx 0.32$. The example in this lesson, with $\zeta = 0.316$, has exactly a $35\%$ overshoot, which is the match. The required resistance is $R = 2\zeta\omega_0 L = 2\times0.32\times3162\times0.01 = 20.2\ \Omega)$, essentially the $20\ \Omega)$ of the example. This is the design direction of the theorem: given the desired overshoot, the resistance follows from $\zeta$, and the two are in one-to-one correspondence, so the design is a single-line calculation.
+The overshoot fraction is $e^{-\zeta\pi/\sqrt{1-\zeta^2}} = 0.35$, so $\zeta\pi/\sqrt{1-\zeta^2} = \ln(1/0.35) = 1.05$, and solving, $\zeta \approx 0.32$. The example in this lesson, with $\zeta = 0.316$, has exactly a $35\%$ overshoot, which is the match. The required resistance is $R = 2\zeta\omega_0 L = 2\times0.32\times3162\times0.01 = 20.2\ \Omega$, essentially the $20\ \Omega$ of the example. This is the design direction of the theorem: given the desired overshoot, the resistance follows from $\zeta$, and the two are in one-to-one correspondence, so the design is a single-line calculation.
 :::
 :::
 
@@ -148,29 +148,29 @@ The $RLC$ oscillator and its three damping regimes were understood as soon as th
 
 ## Exercises
 
-::: exercise Damping ratio of an RLC {level=1 check="0.32"}
-A series $RLC$ has $R=20\ \Omega$, $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm F)$. What is the damping ratio?
+::: exercise Damping ratio of an RLC {level=1 check="1000/sqrt(1e7)"}
+A series $RLC$ has $R=20\ \Omega$, $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm{F}$. What is the damping ratio?
 ::: solution
 $\alpha = R/(2L) = 1000$, $\omega_0 = 1/\sqrt{LC} = 3162$, $\zeta = \alpha/\omega_0 = 0.316$.
 :::
 :::
 
-::: exercise Resonant frequency {level=1 check="3162"}
-A $10\ \mathrm{mH}$ inductor and a $10\ \mu\mathrm F)$ capacitor. What is the resonant frequency in $rad/s$?
+::: exercise Resonant frequency {level=1 check="1/sqrt(1e-7)"}
+A $10\ \mathrm{mH}$ inductor and a $10\ \mu\mathrm{F}$ capacitor. What is the resonant frequency in $rad/s$?
 ::: solution
 $\omega_0 = 1/\sqrt{LC} = 1/\sqrt{10\times10^{-3}\times10\times10^{-6}} = 1/\sqrt{10^{-7}} = 3162\ \mathrm{rad/s}$.
 :::
 :::
 
-::: exercise Critical resistance {level=1 check="63.25"}
-For $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm F)$, what resistance is critically damped?
+::: exercise Critical resistance {level=1 check="0.02/sqrt(1e-7)"}
+For $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm{F}$, what resistance is critically damped?
 ::: solution
-$R = 2\omega_0 L = 2\times3162\times0.01 = 63.25\ \Omega)$.
+$R = 2\omega_0 L = 2\times3162\times0.01 = 63.25\ \Omega$.
 :::
 :::
 
-::: exercise First peak time {level=2 check="1.05"}
-Using the example values, what is the time of the first peak in the underdamped response?
+::: exercise First peak time {level=2 check="pi/3000"}
+Using the example values, what is the time of the first peak in the underdamped response, in seconds?
 ::: hint
 $t_p = \pi/\omega_d$.
 :::
@@ -180,7 +180,7 @@ $\omega_d = 3000\ \mathrm{rad/s}$, so $t_p = \pi/3000 = 1.047\ \mathrm{ms}$, abo
 :::
 
 ::: exercise Overdamped roots {level=2}
-For $R=120\ \Omega$, $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm F)$, find the two roots.
+For $R=120\ \Omega$, $L=10\ \mathrm{mH}$, $C=10\ \mu\mathrm{F}$, find the two roots.
 ::: hint
 $\alpha=6000$, $\sqrt{\alpha^2-\omega_0^2}=5099$.
 :::
@@ -199,18 +199,18 @@ In the overdamped case the two roots are $-\alpha+\sqrt{\alpha^2-\omega_0^2}$ (s
 :::
 :::
 
-::: exercise Overshoot and damping {level=3 check="43.2"}
+::: exercise Overshoot and damping {level=3 check="ln(5)/sqrt(pi^2+ln(5)^2)"}
 What damping ratio gives a first-peak overshoot of $20\%$?
 ::: hint
 Solve $e^{-\zeta\pi/\sqrt{1-\zeta^2}} = 0.2$ for $\zeta$.
 :::
 ::: solution
-$\zeta\pi/\sqrt{1-\zeta^2} = \ln 5 = 1.609$, so $\zeta^2 \pi^2 = 1.609^2(1-\zeta^2)$, $\zeta^2(\pi^2+2.59) = 2.59$, $\zeta^2 = 2.59/(9.87+2.59) = 0.207$, $\zeta = 0.455$. (The check value $43.2$ is the percent overshoot for the example's $\zeta=0.316$; here the answer is the ratio $0.455$.)
+$\zeta\pi/\sqrt{1-\zeta^2} = \ln 5 = 1.609$, so $\zeta^2 \pi^2 = 1.609^2(1-\zeta^2)$, $\zeta^2(\pi^2+2.59) = 2.59$, $\zeta^2 = 2.59/(9.87+2.59) = 0.208$, $\zeta = 0.456$.
 :::
 :::
 
-::: exercise Parallel RLC damping {level=3 check="0.5"}
-A parallel $RLC$ has $R=40\ \Omega$, $L=10\ \mathrm{mH}$, $C=25\ \mu\mathrm F)$. Find the resonant frequency and the damping ratio.
+::: exercise Parallel RLC damping {level=3 check="0.25"}
+A parallel $RLC$ has $R=40\ \Omega$, $L=10\ \mathrm{mH}$, $C=25\ \mu\mathrm{F}$. Find the resonant frequency and the damping ratio; enter the damping ratio.
 ::: hint
 $\omega_0 = 1/\sqrt{LC}$, $\alpha = 1/(2RC)$ for the parallel case.
 :::
@@ -225,6 +225,6 @@ In the underdamped example, what is the energy in the inductor at the first peak
 Find the inductor current at $t_p$ from the response.
 :::
 ::: solution
-At the first peak the capacitor voltage is a maximum, so its derivative, and hence the inductor current, is zero, $i_L(t_p) = C\,\mathrm dv_C/\mathrm dt = 0$. The inductor energy at that instant is $\tfrac12 L i_L^2 = 0$, and the capacitor energy is $\tfrac12 C v_C^2 = \tfrac12\times10\times10^{-6}\times13.51^2 = 0.913\ \mathrm{mJ}$. At the peak, all the energy is in the capacitor and none in the inductor, the reverse of the instant when the current is a maximum. This energy exchange, between the electric and magnetic fields, is the oscillation, and it is what the damping, the resistance, slowly drains away.
+At the first peak the capacitor voltage is a maximum, so its derivative, and hence the inductor current, is zero, $i_L(t_p) = C\,\mathrm dv_C/\mathrm dt = 0$. The inductor energy at that instant is $\tfrac12 L i_L^2 = 0$, and the capacitor energy is $\tfrac12 C v_C^2 = \tfrac12\times10\times10^{-6}\times13.51^2 = 0.913\ \mathrm{mJ}$. The final stored energy, with $v_C = 10\ \mathrm V$, is $\tfrac12\times10\times10^{-6}\times10^2 = 0.5\ \mathrm{mJ}$, so at the first peak the capacitor holds $1.83$ times its final energy (the ratio $1.351^2$). At the peak, all the energy is in the capacitor and none in the inductor, the reverse of the instant when the current is a maximum. This energy exchange, between the electric and magnetic fields, is the oscillation, and it is what the damping, the resistance, slowly drains away.
 :::
 :::

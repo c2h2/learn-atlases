@@ -23,7 +23,7 @@ The capacitor's impedance-like behaviour follows from this: with a constant volt
 The law has two signatures you will see constantly. First, a capacitor is an **open circuit** to a steady DC: a constant voltage produces no current, so in a DC steady state a capacitor carries no current and the network can be solved by treating it as an open. Second, a rapidly changing voltage drives a large current, so a capacitor passes high-frequency signals and blocks low-frequency ones, the basis of coupling and bypass. Both signatures are the same equation, $i=C\,\mathrm dv/\mathrm dt$, read in the two limits.
 
 ::: example Current from a changing voltage {#ex-cap}
-A $100\ \mu\mathrm F)$ capacitor's voltage rises from $0$ to $5\ \mathrm{V}$ in $10\ \mathrm{ms}$. What is the average current, and how much energy is stored?
+A $100\ \mu\mathrm{F}$ capacitor's voltage rises from $0$ to $5\ \mathrm{V}$ in $10\ \mathrm{ms}$. What is the average current, and how much energy is stored?
 ::: solution
 With a uniform rise, $\mathrm dv/\mathrm dt = 5/0.01 = 500\ \mathrm{V/s}$, so the current is $i = C\,\mathrm dv/\mathrm dt = 100\times10^{-6}\times500 = 50\ \mathrm{mA}$. The stored energy is
 
@@ -60,7 +60,7 @@ The inductor's two signatures are the duals of the capacitor's: it is a **short 
 :::
 
 ::: example Voltage from a changing current {#ex-ind}
-A $10\ \mathrm{mH}$ inductor's current rises from $0$ to $2\ \mathrm A)$ in $5\ \mathrm{ms}$. What is the voltage, and how much energy is stored?
+A $10\ \mathrm{mH}$ inductor's current rises from $0$ to $2\ \mathrm{A}$ in $5\ \mathrm{ms}$. What is the voltage, and how much energy is stored?
 ::: solution
 With a uniform rise, $\mathrm di/\mathrm dt = 2/0.005 = 400\ \mathrm{A/s}$, so $v = L\,\mathrm di/\mathrm dt = 10\times10^{-3}\times400 = 4\ \mathrm{V}$. The stored energy is
 
@@ -87,20 +87,20 @@ Capacitors in **parallel** add, like resistors in series: $C_{eq} = C_1 + C_2 + 
 The reversal is a direct consequence of the duality. A capacitor's natural variable is charge, and parallel capacitors share a voltage but add their charges, so their capacitances add. Inductors' natural variable is flux, and series inductors share a current but add their flux, so their inductances add. The two are the same physics in the two fields, and remembering which variable is natural to which element is the shortest way to the combination rules.
 
 ::: example Parallel and series capacitance {#ex-cap-comb}
-A $100\ \mu\mathrm F)$ and a $200\ \mu\mathrm F)$ capacitor are first placed in parallel and then in series. What is the equivalent capacitance in each case?
+A $100\ \mu\mathrm{F}$ and a $200\ \mu\mathrm{F}$ capacitor are first placed in parallel and then in series. What is the equivalent capacitance in each case?
 ::: solution
-In parallel the capacitances add: $C_{eq} = 100+200 = 300\ \mu\mathrm F)$. In series they combine by reciprocal, $\frac{1}{C_{eq}} = \frac{1}{100} + \frac{1}{200} = \frac{3}{200}$ in units of $\mu\mathrm F)^{-1}$, so $C_{eq} = \dfrac{200}{3} \approx 66.7\ \mu\mathrm F)$. The same calculation, with the reciprocal rule, is the series inductance; the roles of series and parallel are exactly exchanged for inductors, which is the duality in action.
+In parallel the capacitances add: $C_{eq} = 100+200 = 300\ \mu\mathrm{F}$. In series they combine by reciprocal, $\frac{1}{C_{eq}} = \frac{1}{100} + \frac{1}{200} = \frac{3}{200}$ in units of $\mu\mathrm{F}^{-1}$, so $C_{eq} = \dfrac{200}{3} \approx 66.7\ \mu\mathrm{F}$. The same calculation, with the reciprocal rule, is the series inductance; the roles of series and parallel are exactly exchanged for inductors, which is the duality in action.
 :::
 :::
 
 ::: quiz
-Two $4\ \mu\mathrm F)$ capacitors in parallel give what equivalent capacitance?
-- [x] $8\ \mu\mathrm F)$
-- [ ] $2\ \mu\mathrm F)$
-- [ ] $16\ \mu\mathrm F)$
-- [ ] $4\ \mu\mathrm F)$
+Two $4\ \mu\mathrm{F}$ capacitors in parallel give what equivalent capacitance?
+- [x] $8\ \mu\mathrm{F}$
+- [ ] $2\ \mu\mathrm{F}$
+- [ ] $16\ \mu\mathrm{F}$
+- [ ] $4\ \mu\mathrm{F}$
 ::: solution
-Parallel capacitors add: $4+4 = 8\ \mu\mathrm F)$. Do not confuse with inductors in parallel, which would give $4\times4/(4+4) = 2\ \mu\mathrm H)$ if they were inductors. The element type decides which rule applies.
+Parallel capacitors add: $4+4 = 8\ \mu\mathrm{F}$. Do not confuse with inductors in parallel, which would give $4\times4/(4+4) = 2\ \mu\mathrm{H}$ if they were inductors. The element type decides which rule applies.
 :::
 :::
 
@@ -118,7 +118,7 @@ This is the bridge to the next lesson. Once you have the DC operating point, the
 f: 0.5*100e-6*x*x*1e6
 x: 0, 5
 y: 0, 1.5
-caption: The energy stored in a $100\ \mu\mathrm F)$ capacitor, $w=\tfrac12 C v^2$, in millijoules as the voltage rises from $0$ to $5\ \mathrm V)$. The parabola is the signature of the quadratic energy dependence: double the voltage, quadruple the stored energy. The slope of this curve at any voltage is the capacitance times the voltage, the charge on the plate.
+caption: The energy stored in a $100\ \mu\mathrm{F}$ capacitor, $w=\tfrac12 C v^2$, in millijoules as the voltage rises from $0$ to $5\ \mathrm{V}$. The parabola is the signature of the quadratic energy dependence: double the voltage, quadruple the stored energy. The slope of this curve at any voltage is the capacitance times the voltage, the charge on the plate.
 :::
 
 ::: warning Mutual inductance breaks the simple series rule {#warn-mutual}
@@ -128,7 +128,7 @@ The series inductance rule, that inductors add, assumes the inductors are uncoup
 Beyond the equivalent capacitance and inductance, there is a physical reading of the stored energy that is worth keeping. The energy in a capacitor lives in the electric field between the plates; in the simplest geometry, a parallel-plate capacitor of plate area $A$ and separation $d$, the field is uniform and the energy density is $\tfrac12 \varepsilon E^2$, so that integrating over the volume between the plates gives exactly $\tfrac12 C v^2$, with $C = \varepsilon A/d$. The inductor's energy is the same statement in the magnetic field, with the energy density $\tfrac12 B^2/\mu$ integrated over the space around the coil. This is not a philosophical aside: it is the reason the energy scales with the square of the voltage or the current, and it is the reason that the series-parallel rules take the form they do. The field, not the metal of the plates or the wire of the coil, is where the energy is, and the circuit element is a compact way of accounting for it. Keeping the field in mind also tells you when idealisation is likely to fail: when the field between the plates is no longer uniform, or when the space around the coil is close to other conductors, the ideal $C$ and $L$ shift, and the parasitics of the realistic model are precisely those field effects made visible.
 
 ::: example Parallel inductors and their energy {#ex-ind-comb}
-Two $20\ \mathrm{mH}$ inductors, each carrying the same current of $1\ \mathrm A)$, are placed in parallel and the parallel combination is driven from a source. What is the equivalent inductance, and compare the energy stored when the same current, $1\ \mathrm A)$, flows in the combination versus when it flows in one of them alone.
+Two $20\ \mathrm{mH}$ inductors, each carrying the same current of $1\ \mathrm{A}$, are placed in parallel and the parallel combination is driven from a source. What is the equivalent inductance, and compare the energy stored when the same current, $1\ \mathrm{A}$, flows in the combination versus when it flows in one of them alone.
 ::: solution
 Parallel inductors combine by reciprocal, so the equivalent is $\dfrac{20\times20}{20+20}=10\ \mathrm{mH}$. The energy in a single $20\ \mathrm{mH}$ inductor with $1\ \mathrm{A}$ is $\tfrac12\times20\times10^{-3}\times1 = 10\ \mathrm{mJ}$. The energy in the $10\ \mathrm{mH}$ combination with the same $1\ \mathrm{A}$ is $\tfrac12\times10\times10^{-3}\times1 = 5\ \mathrm{mJ}$. Halving the inductance halves the stored energy for the same current, exactly as the quadratic law says. This is the inductive counterpart of the earlier capacitor comparison, and it is the duality, read on energy rather than on impedance.
 :::
@@ -156,46 +156,46 @@ The capacitor, as a device, was identified by the Leyden jar in the 1740s, and i
 
 ## Exercises
 
-::: exercise Capacitor current {level=1 check="20"}
-A $10\ \mu\mathrm F)$ capacitor's voltage rises $2\ \mathrm V)$ in $1\ \mathrm{ms}$. What is the current?
+::: exercise Capacitor current {level=1 check="0.02"}
+A $10\ \mu\mathrm{F}$ capacitor's voltage rises $2\ \mathrm{V}$ in $1\ \mathrm{ms}$. What is the current, in amperes?
 ::: solution
 $i = C\,\mathrm dv/\mathrm dt = 10\times10^{-6}\times 2/0.001 = 10\times10^{-6}\times2000 = 0.02\ \mathrm A = 20\ \mathrm{mA}$.
 :::
 :::
 
 ::: exercise Inductor voltage {level=1 check="0.5"}
-A $5\ \mathrm{mH}$ inductor's current rises $1\ \mathrm A)$ in $10\ \mathrm{ms}$. What is the voltage?
+A $5\ \mathrm{mH}$ inductor's current rises $1\ \mathrm{A}$ in $10\ \mathrm{ms}$. What is the voltage?
 ::: solution
-$v = L\,\mathrm di/\mathrm dt = 5\times10^{-3}\times 1/0.01 = 5\times10^{-3}\times100 = 0.5\ \mathrm V)$.
+$v = L\,\mathrm di/\mathrm dt = 5\times10^{-3}\times 1/0.01 = 5\times10^{-3}\times100 = 0.5\ \mathrm{V}$.
 :::
 :::
 
-::: exercise Energy in a capacitor {level=1 check="0.25"}
-How much energy is stored in a $10\ \mu\mathrm F)$ capacitor at $5\ \mathrm V)$?
+::: exercise Energy in a capacitor {level=1 check="1.25e-4"}
+How much energy is stored in a $10\ \mu\mathrm{F}$ capacitor at $5\ \mathrm{V}$? Give the answer in joules.
 ::: solution
-$w = \tfrac12 C v^2 = \tfrac12\times10\times10^{-6}\times25 = 0.125\ \mathrm mJ$. (The check value $0.25$ is $C v^2$, twice the energy; the stored energy is half that.)
+$w = \tfrac12 C v^2 = \tfrac12\times10\times10^{-6}\times25 = 1.25\times10^{-4}\ \mathrm J = 0.125\ \mathrm{mJ}$.
 :::
 :::
 
-::: exercise Series inductance {level=1 check="50"}
-Two $20\ \mathrm{mH}$ inductors in series give what equivalent inductance?
+::: exercise Series inductance {level=1 check="0.04"}
+Two $20\ \mathrm{mH}$ inductors in series give what equivalent inductance, in henries?
 ::: solution
-Series inductors add: $20+20 = 40\ \mathrm{mH}$. (Recheck: the sum is $40\ \mathrm mH$, not $50$; the check value $50$ assumes one is $30\ \mathrm mH$. The rule is the point.)
+Series inductors add: $20+20 = 40\ \mathrm{mH} = 0.04\ \mathrm H$.
 :::
 :::
 
 ::: exercise DC steady state with a capacitor {level=2}
-A $1\ \mathrm{k\Omega}$ resistor and a capacitor are in series across a $10\ \mathrm V)$ DC source. What is the DC steady-state current and the capacitor voltage?
+A $1\ \mathrm{k\Omega}$ resistor and a capacitor are in series across a $10\ \mathrm{V}$ DC source. What is the DC steady-state current and the capacitor voltage?
 ::: hint
 In steady state the capacitor is an open circuit.
 :::
 ::: solution
-In steady state the capacitor is an open, so no current flows and the resistor drop is zero. The full source voltage appears across the capacitor, $10\ \mathrm V)$, and the current is $0$. This is the classic result that a series capacitor blocks DC in steady state, and the transient, the charging from $0$ to $10\ \mathrm V)$, is the subject of the next lesson.
+In steady state the capacitor is an open, so no current flows and the resistor drop is zero. The full source voltage appears across the capacitor, $10\ \mathrm{V}$, and the current is $0$. This is the classic result that a series capacitor blocks DC in steady state, and the transient, the charging from $0$ to $10\ \mathrm{V}$, is the subject of the next lesson.
 :::
 :::
 
-::: exercise DC steady state with an inductor {level=2 check="10"}
-A $5\ \mathrm k\Omega$ resistor and a $10\ \mathrm mH)$ inductor are in series across a $10\ \mathrm V)$ DC source. What is the DC steady-state current and the inductor voltage?
+::: exercise DC steady state with an inductor {level=2 check="2e-3"}
+A $5\ \mathrm k\Omega$ resistor and a $10\ \mathrm{mH}$ inductor are in series across a $10\ \mathrm{V}$ DC source. What is the DC steady-state current and the inductor voltage? Enter the current in amperes.
 ::: hint
 In steady state the inductor is a short circuit.
 :::
@@ -204,8 +204,8 @@ In steady state the inductor is a short, so the full source is across the resist
 :::
 :::
 
-::: exercise Energy in an inductor {level=2 check="50"}
-An inductor carries a current of $2\ \mathrm A)$ and stores $50\ \mathrm mJ)$. What is its inductance?
+::: exercise Energy in an inductor {level=2 check="0.025"}
+An inductor carries a current of $2\ \mathrm{A}$ and stores $50\ \mathrm{mJ}$. What is its inductance, in henries?
 ::: hint
 Solve $w=\tfrac12 L i^2$ for $L$.
 :::
@@ -224,8 +224,8 @@ The dually-inverted circuit is an inductor $L$ in series with the same resistor 
 :::
 :::
 
-::: exercise Mutual inductance in series {level=3 check="30"}
-Two $10\ \mathrm mH)$ inductors with mutual inductance $M=5\ \mathrm mH)$ are connected in series aiding. What is the equivalent inductance?
+::: exercise Mutual inductance in series {level=3 check="0.03"}
+Two $10\ \mathrm{mH}$ inductors with mutual inductance $M=5\ \mathrm{mH}$ are connected in series aiding. What is the equivalent inductance, in henries?
 ::: hint
 The aiding connection adds $2M$.
 :::
