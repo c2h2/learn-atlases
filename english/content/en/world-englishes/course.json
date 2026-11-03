@@ -7,12 +7,27 @@
   "order": 250,
   "tagline": "Models of world Englishes, British and American English, other first-language varieties, South Asian, Southeast Asian, African and Caribbean Englishes, pidgins and creoles, English as a lingua franca, English in China, and accent and identity",
   "summary": "English now has more second-language than first-language speakers, and many standard forms. This course describes the main varieties of English around the world and the models used to classify them, the differences between British and American English, pidgins and creoles, English as a lingua franca, the history and features of English in China, and the attitudes and choices that surround accent and identity.",
-  "overview": [],
+  "overview": [
+    "English is now used by far more people as a second or additional language than as a first language, and it has several standard forms rather than one. A Nigerian lawyer, a Singaporean civil servant, an Indian software engineer, a Scottish doctor and a Chinese researcher writing to a colleague in Brazil all use English every working day, and each does so in a way that is systematic, shaped by history and suited to its setting. This course describes that variety: the main Englishes of the world, the models linguists use to classify them, and the debates about standards, ownership and identity that surround them.",
+    "For an advanced learner the subject matters in two ways. Practically, most of the English you will hear and read in international settings is not British or American, so knowing how other varieties work makes them easier to understand and less likely to be misjudged. Intellectually, it changes the question every learner asks — *Is this correct?* — into a better one: *Correct for whom, in which variety, and in which setting?* Standard English remains what exams and formal writing expect, and the course explains what that standard is; but it also shows that the forms of Indian, Singaporean or Jamaican English that a textbook might mark as errors are regular features of established varieties.",
+    "The course has four parts. The first chapter sets out the models — Kachru's three circles, Schneider's Dynamic Model and their critics. Chapters 2–7 survey the varieties: British and American English; the other first-language varieties of Ireland, Scotland, Wales, Canada, Australia, New Zealand and South Africa; South Asian, Southeast Asian, African and Caribbean Englishes; and the pidgins and creoles that arose from contact with English. Chapters 8 and 9 turn to English as a lingua franca and to English in China, from the pidgin of the Canton trade to China English, Chinglish and Hong Kong English. The last chapter discusses accent, prejudice, the choice of a pronunciation model and the idea of the native speaker. The course assumes the history of the spread of English from *History of English* and the cross-cultural pragmatics of *Pragmatics*, and it goes further than the listening chapter on accents in *Listening and Conversation*.",
+    "Chinese learners often come to this subject with a single target in mind, usually a British or an American model, and with a sense that any other English is a deviation from it. The course does not ask you to give up your model; it asks you to see it as one variety among several. Two topics will be especially close to home: the long debate in China about *China English* (中国英语) and its difference from *Chinglish* (中式英语), which the course describes neutrally as the understandable result of language contact; and the question of which accent to aim at, on which the research gives evidence but no single answer. Where a topic is a matter of policy or politics — English in Chinese education, English and colonialism, the status of non-native varieties — the course sets out the main positions and the evidence and leaves the judgement to you."
+  ],
   "prerequisites": [
     "history-of-english",
     "pragmatics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain Kachru's three-circle model and Schneider's Dynamic Model, place a given country in each, and state the main criticisms of both models.",
+    "Recognise the main differences between British and American English in spelling, vocabulary, grammar and pronunciation, and keep a piece of writing consistent in one variety.",
+    "Identify characteristic features of Irish, Scottish, Welsh, Canadian, Australian, New Zealand and South African English, using Wells's lexical sets to describe vowel differences.",
+    "Describe the history and status of English in South Asia, Southeast Asia, Africa and the Caribbean, and recognise typical features of Indian, Singapore, Philippine, Nigerian and Kenyan English as systematic rather than as errors.",
+    "Define pidgin, creole and post-creole continuum, explain the main theories of how creoles arise, and analyse simple sentences of Tok Pisin, Nigerian Pidgin and Jamaican Creole.",
+    "Explain what English as a lingua franca is, describe the Lingua Franca Core and the main findings and criticisms of lingua franca research, and use accommodation strategies in international communication.",
+    "Outline the history of English in China from the Canton trade to the present, and distinguish China English, Chinese English and Chinglish with examples.",
+    "Discuss accent prejudice, the native-speaker ideal and the choice of a pronunciation model, citing evidence, and present more than one position on a policy question fairly.",
+    "Decide which variety and register a situation calls for, and explain to another learner why a form that is standard in one variety may be unexpected in another."
+  ],
   "chapters": [
     {
       "slug": "models",
@@ -97,8 +112,141 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1835,
+      "title": "Macaulay's Minute on Indian Education",
+      "detail": "Thomas Babington Macaulay's minute of 2 February 1835 argued that the British government in India should fund education in English rather than in Sanskrit, Arabic or Persian; the governor-general's resolution of March 1835 adopted the policy, and English became the language of higher education and administration in British India.",
+      "people": [
+        "Thomas Babington Macaulay"
+      ]
+    },
+    {
+      "year": 1980,
+      "title": "“China English” named",
+      "detail": "In an article on translation from Chinese into English in the journal 《翻译通讯》, Ge Chuangui (葛传槼) argued that English needs expressions for things specific to China, and called such usage China English (中国英语) as distinct from Chinglish; the term started a debate in Chinese linguistics that continues today.",
+      "people": [
+        "Ge Chuangui"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "Wells's *Accents of English*",
+      "detail": "John Wells's three volumes described the accents of English in Britain, Ireland and across the world, and introduced the lexical sets (KIT, DRESS, TRAP …) that are still used to compare them.",
+      "people": [
+        "John C. Wells"
+      ]
+    },
+    {
+      "year": 1985,
+      "title": "Kachru's three circles",
+      "detail": "Braj Kachru's chapter in Randolph Quirk and H. G. Widdowson's *English in the World* divided the English-using world into an Inner, an Outer and an Expanding Circle, and argued that Outer Circle varieties such as Indian English have their own norms.",
+      "people": [
+        "Braj B. Kachru"
+      ]
+    },
+    {
+      "year": 1986,
+      "title": "*Decolonising the Mind*",
+      "detail": "The Kenyan novelist Ngũgĩ wa Thiong'o explained his decision to stop writing fiction in English and to write in Gĩkũyũ, setting out one side of a long debate about English and colonialism; Chinua Achebe had argued for an African English that could carry African experience.",
+      "people": [
+        "Ngũgĩ wa Thiong'o"
+      ]
+    },
+    {
+      "year": 1990,
+      "title": "The Quirk–Kachru debate",
+      "detail": "In the magazine *English Today*, Randolph Quirk argued that learners should be taught a single international standard, and Braj Kachru replied (1991) that this ignored the reality of established non-native varieties; the exchange is still read as a statement of the two positions.",
+      "people": [
+        "Randolph Quirk",
+        "Braj B. Kachru"
+      ]
+    },
+    {
+      "year": 1997,
+      "title": "*English as a Global Language*",
+      "detail": "David Crystal's book explained how English came to have a special role in nearly every country, with dated estimates of first-, second- and foreign-language users; a second edition followed in 2003.",
+      "people": [
+        "David Crystal"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "The Lingua Franca Core",
+      "detail": "In *The Phonology of English as an International Language*, Jennifer Jenkins analysed misunderstandings between non-native speakers and proposed a Lingua Franca Core of pronunciation features most needed for international intelligibility.",
+      "people": [
+        "Jennifer Jenkins"
+      ]
+    },
+    {
+      "year": 2003,
+      "title": "Schneider's Dynamic Model",
+      "detail": "Edgar Schneider's article in *Language* proposed that postcolonial Englishes pass through five phases, from foundation to differentiation, driven by changing identities; his book *Postcolonial English* (2007) applied the model country by country, ending with the United States.",
+      "people": [
+        "Edgar W. Schneider"
+      ]
+    },
+    {
+      "year": 2011,
+      "title": "eWAVE and *Understanding English as a Lingua Franca*",
+      "detail": "Bernd Kortmann and Kerstin Lunkenheimer published the online *Electronic World Atlas of Varieties of English*, comparing grammatical features across dozens of varieties, pidgins and creoles; in the same year Barbara Seidlhofer's book set out the theory of English as a lingua franca.",
+      "people": [
+        "Bernd Kortmann",
+        "Kerstin Lunkenheimer",
+        "Barbara Seidlhofer"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Global Englishes: A Resource Book for Students",
+      "authors": "Jennifer Jenkins",
+      "year": 2015,
+      "note": "3rd edition (Routledge). The standard student introduction: models, varieties, pidgins and creoles, English as a lingua franca and the debates around them, with readings and tasks. The best first book for this course."
+    },
+    {
+      "title": "English as a Global Language",
+      "authors": "David Crystal",
+      "year": 2003,
+      "note": "2nd edition (Cambridge University Press). A short, readable account of why English became global, with the speaker estimates often quoted; read its figures as dated estimates."
+    },
+    {
+      "title": "World Englishes: Implications for International Communication and English Language Teaching",
+      "authors": "Andy Kirkpatrick",
+      "year": 2007,
+      "note": "Cambridge University Press. Clear chapters on British, American, Indian, African, Singapore, Hong Kong and China English, with a final chapter on teaching models; written for teachers."
+    },
+    {
+      "title": "Postcolonial English: Varieties around the World",
+      "authors": "Edgar W. Schneider",
+      "year": 2007,
+      "note": "Cambridge University Press. The full statement of the Dynamic Model with case studies of many countries; demanding but the main source for the first chapter."
+    },
+    {
+      "title": "World Englishes: The Study of New Linguistic Varieties",
+      "authors": "Rajend Mesthrie and Rakesh M. Bhatt",
+      "year": 2008,
+      "note": "Cambridge University Press. A linguistic survey of the grammar, phonology and lexis of new Englishes, organised by feature rather than by country; good for comparing varieties."
+    },
+    {
+      "title": "Understanding English as a Lingua Franca",
+      "authors": "Barbara Seidlhofer",
+      "year": 2011,
+      "note": "Oxford University Press. The theory of English as a lingua franca by the director of the VOICE corpus; read with its critics (see the lesson)."
+    },
+    {
+      "title": "Chinese Englishes: A Sociolinguistic History",
+      "authors": "Kingsley Bolton",
+      "year": 2003,
+      "note": "Cambridge University Press. The history of English in China and Hong Kong from the seventeenth century, with Chinese Pidgin English, missionaries, education and Hong Kong English."
+    },
+    {
+      "title": "International English: A Guide to the Varieties of English Around the World",
+      "authors": "Peter Trudgill and Jean Hannah",
+      "year": 2017,
+      "note": "6th edition (Routledge). A compact guide to the standard Englishes of the world — pronunciation, grammar and vocabulary — with many examples; useful for quick comparisons."
+    }
+  ],
   "next": [
     "translation"
   ]
