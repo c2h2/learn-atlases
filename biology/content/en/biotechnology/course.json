@@ -7,12 +7,28 @@
   "order": 210,
   "tagline": "Recombinant DNA, protein production, genome editing, synthetic circuits, metabolic engineering, bioprocessing, agricultural biotechnology and biosafety",
   "summary": "Biotechnology uses living systems to make products and solve problems, and synthetic biology tries to make that engineering predictable. This course covers recombinant DNA and protein production, genome editing with CRISPR and related tools, the design of genetic circuits, metabolic engineering, scaling up in bioprocesses, agricultural biotechnology, and the biosafety, biosecurity and ethical questions that these powers raise.",
-  "overview": [],
+  "overview": [
+    "Biotechnology is the use of living systems, or of molecules borrowed from them, to make things people want: proteins, chemicals, fuels, materials, crops, diagnostics and vaccines. It is an old practice — brewing, baking, cheese-making and the breeding of plants and animals are all biotechnology — but it became a deliberate engineering discipline in the 1970s, when restriction enzymes, plasmid vectors and bacterial transformation made it possible to move a chosen gene from one organism into another and have it expressed. Synthetic biology, which grew out of that work from about 2000, adds a further ambition: that biological engineering should be predictable, with characterised parts, standard measurements and designs that can be reasoned about before they are built.",
+    "The course follows the path from a single construct to an industrial process and a field of crops. We begin with the design of recombinant DNA — vectors, hosts, expression signals and the shift from restriction cloning to DNA synthesis — and then with producing proteins in bacteria, yeasts and mammalian cells, including the engineering of the proteins themselves. Genome editing comes next, from zinc-finger nucleases and TALENs to CRISPR–Cas systems, base and prime editing, together with an honest account of their accuracy. Synthetic biology then treats genetic circuits as engineered systems; metabolic engineering redirects a cell's chemistry towards a chosen product; bioprocess engineering asks what happens when a 10 mL culture becomes a 100 m³ one; agricultural biotechnology takes the same tools into plants and into the field; and the final chapter deals with containment, dual-use research, regulation and the ethics of modifying living things.",
+    "Two things make the subject hard. The first is that it is quantitative in a way that molecular biology often is not: yields, titres, productivities, specific growth rates, oxygen transfer, editing efficiencies and off-target rates are all numbers, and an engineering judgement usually turns on an order of magnitude rather than on a mechanism. Work every calculation in this course by hand and keep track of units. The second is that cells are not obedient components. A construct that works in one strain fails in another; a pathway that works in a flask collapses in a fermenter; a circuit that is elegant on paper is overwhelmed by the cell's own regulation, by mutation and by the burden the construct imposes. Much of the craft of the field consists in anticipating that unreliability, which is why directed evolution and iterative design–build–test cycles matter as much as rational design.",
+    "Prerequisites are molecular biology (gene structure, transcription, translation, the laboratory toolkit) and microbiology (growth, metabolism, genetics of bacteria). The treatment here is conceptual, quantitative, historical and institutional: what the methods do, what sets their limits, how they came about, and how they are governed. It is not a laboratory manual, and it contains no protocols. Clinical and pharmaceutical material — therapies, trials, approvals, dosing — belongs to Medicine Atlas (/learn/medicine/); the modelling of circuits is developed further in Systems Biology, and the sequence analysis behind construct and genome design in Bioinformatics."
+  ],
   "prerequisites": [
     "molecular-biology",
     "microbiology"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Design a recombinant DNA construct on paper: choose a vector, host, promoter, origin and marker, and explain what each element contributes and how the parts are joined.",
+    "Compare bacterial, yeast, insect and mammalian expression systems for a given protein, and predict which post-translational modifications and folding problems each will and will not handle.",
+    "Explain how zinc-finger nucleases, TALENs, CRISPR–Cas nucleases, base editors and prime editors recognise and alter a target, and calculate expected on- and off-target site frequencies.",
+    "Analyse a small genetic circuit — a repressor cascade, a toggle switch, a feed-forward loop, an oscillator — using Hill functions and steady-state reasoning, and predict its qualitative behaviour.",
+    "Calculate yields, titres and volumetric productivities for an engineered pathway, and identify the thermodynamic, redox and cofactor constraints that bound them.",
+    "Derive and apply the equations of batch, fed-batch and continuous culture, and estimate oxygen transfer and heat removal requirements at production scale.",
+    "Interpret a downstream processing train, estimating overall recovery from step yields and explaining why purification often dominates cost.",
+    "Explain how transgenic and genome-edited crops are made and which traits have been deployed, and evaluate evidence on their agronomic, environmental and economic effects.",
+    "Describe the containment levels, institutional review and national regulations that govern work with genetically modified organisms, and explain how products are assessed before release.",
+    "Analyse a dual-use research question using the published governance frameworks, and articulate the main ethical arguments about genome editing, gene drives and ownership of biological material."
+  ],
   "chapters": [
     {
       "slug": "recombinant-dna",
@@ -82,7 +98,162 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
-  "next": []
+  "history": [
+    {
+      "year": 1973,
+      "title": "The first recombinant plasmid replicated in bacteria",
+      "detail": "Stanley Cohen, Annie Chang, Herbert Boyer and Robert Helling cut and rejoined plasmids with EcoRI and showed that the recombinant molecules replicated in Escherichia coli and conferred the antibiotic resistances of both parents. Gene transfer between species became a technique.",
+      "people": [
+        "Stanley N. Cohen",
+        "Annie C. Y. Chang",
+        "Herbert W. Boyer",
+        "Robert B. Helling"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "The Asilomar conference on recombinant DNA",
+      "detail": "After a voluntary moratorium called by the researchers themselves, about 140 scientists, lawyers and journalists met at Asilomar, California, and agreed that the work should resume under physical and biological containment matched to assessed risk. The US National Institutes of Health guidelines of 1976 codified the scheme that oversight systems still follow.",
+      "people": [
+        "Paul Berg",
+        "Maxine Singer",
+        "Sydney Brenner"
+      ]
+    },
+    {
+      "year": 1975,
+      "title": "Monoclonal antibodies from hybridomas",
+      "detail": "Georges Köhler and César Milstein fused antibody-secreting mouse B cells with myeloma cells to give immortal clonal lines, each making a single antibody. The method turned antibodies into reproducible reagents and later into the largest class of protein products by value.",
+      "people": [
+        "Georges J. F. Köhler",
+        "César Milstein"
+      ]
+    },
+    {
+      "year": 1978,
+      "title": "A human protein expressed from synthetic DNA in bacteria",
+      "detail": "Teams at Genentech and the City of Hope National Medical Center assembled chemically synthesised genes for the two insulin chains, expressed them in E. coli and recovered the protein; the work was published by David Goeddel and colleagues in 1979 and the product approved in 1982, the first recombinant protein product.",
+      "people": [
+        "David V. Goeddel",
+        "Arthur D. Riggs",
+        "Keiichi Itakura"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "The first transgenic plants",
+      "detail": "Three groups — Luis Herrera-Estrella with Marc Van Montagu and Jeff Schell in Ghent, Robert Fraley and colleagues at Monsanto, and Michael Bevan with Richard Flavell and Mary-Dell Chilton — used disarmed Agrobacterium tumefaciens Ti plasmids to put selectable marker genes into tobacco cells and regenerate plants that transmitted them to their progeny.",
+      "people": [
+        "Luis Herrera-Estrella",
+        "Marc Van Montagu",
+        "Jeff Schell",
+        "Robert T. Fraley",
+        "Mary-Dell Chilton"
+      ]
+    },
+    {
+      "year": 1994,
+      "title": "The first genetically engineered whole food on sale",
+      "detail": "Calgene's Flavr Savr tomato, in which an antisense construct suppressed the polygalacturonase gene to slow softening, was cleared by the US Food and Drug Administration and sold from 1994. It was commercially unsuccessful, but it established the regulatory pathway that later crops followed.",
+      "people": [
+        "William Hiatt",
+        "Raymond Sheehy"
+      ]
+    },
+    {
+      "year": 2000,
+      "title": "Engineered genetic circuits: the toggle switch and the repressilator",
+      "detail": "Timothy Gardner, Charles Cantor and James Collins built a bistable switch from two mutually repressing promoters, and Michael Elowitz and Stanislas Leibler built an oscillator from a three-repressor loop, both in E. coli. The two papers, published in Nature within three weeks of each other, founded synthetic biology as an engineering programme.",
+      "people": [
+        "Timothy S. Gardner",
+        "James J. Collins",
+        "Michael B. Elowitz",
+        "Stanislas Leibler"
+      ]
+    },
+    {
+      "year": 2003,
+      "title": "A plant terpenoid pathway rebuilt in a microbe",
+      "detail": "Vincent Martin, Jay Keasling and colleagues expressed a mevalonate pathway and amorphadiene synthase in E. coli to make a precursor of the antimalarial artemisinin. Transferred to yeast and developed over a decade, the route reached industrial production in 2013 and became the standard demonstration of metabolic engineering.",
+      "people": [
+        "Vincent J. J. Martin",
+        "Jay D. Keasling"
+      ]
+    },
+    {
+      "year": 2010,
+      "title": "A bacterial cell with a chemically synthesised genome",
+      "detail": "Daniel Gibson, Hamilton Smith, Clyde Hutchison and J. Craig Venter assembled a 1.08 Mb genome based on that of Mycoplasma mycoides from synthesised fragments in yeast and transplanted it into a related recipient cell, which then expressed only the synthetic genome's genes.",
+      "people": [
+        "Daniel G. Gibson",
+        "Clyde A. Hutchison III",
+        "Hamilton O. Smith",
+        "J. Craig Venter"
+      ]
+    },
+    {
+      "year": 2012,
+      "title": "Programmable DNA cleavage by Cas9",
+      "detail": "Martin Jinek, Krzysztof Chylinski, Emmanuelle Charpentier, Jennifer Doudna and colleagues showed that the Streptococcus pyogenes Cas9 nuclease, directed by a guide RNA, cuts any matching DNA sequence. Genome editing became a standard operation within a year, and Charpentier and Doudna received the 2020 Nobel Prize in Chemistry.",
+      "people": [
+        "Martin Jinek",
+        "Emmanuelle Charpentier",
+        "Jennifer A. Doudna"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Molecular Biotechnology: Principles and Applications of Recombinant DNA, 5th edition",
+      "authors": "Bernard R. Glick and Cheryl L. Patten",
+      "year": 2017,
+      "note": "The standard undergraduate text for this course: vectors and expression systems, protein engineering, microbial, plant and animal biotechnology, and regulation, with worked detail and good figures."
+    },
+    {
+      "title": "Principles of Gene Manipulation and Genomics, 7th edition",
+      "authors": "Sandy B. Primrose and Richard M. Twyman",
+      "year": 2006,
+      "note": "Clear and precise on the molecular logic of vectors, cloning strategies and gene transfer into bacteria, plants and animals; dated on sequencing and editing, still excellent on construct design."
+    },
+    {
+      "title": "Bioprocess Engineering Principles, 2nd edition",
+      "authors": "Pauline M. Doran",
+      "year": 2013,
+      "note": "The best introduction to the engineering half of the subject for biologists: mass and energy balances, growth and product kinetics, oxygen transfer, mixing, scale-up and downstream unit operations, with many worked problems."
+    },
+    {
+      "title": "Metabolic Engineering: Principles and Methodologies",
+      "authors": "Gregory N. Stephanopoulos, Aristos A. Aristidou and Jens Nielsen",
+      "year": 1998,
+      "note": "The founding text of metabolic engineering: stoichiometric and flux analysis, yield and thermodynamic limits, and the analysis of control in pathways. The framework has not been superseded."
+    },
+    {
+      "title": "An Introduction to Systems Biology: Design Principles of Biological Circuits, 2nd edition",
+      "authors": "Uri Alon",
+      "year": 2019,
+      "note": "The source for the circuit mathematics used in the synthetic biology chapter — Hill functions, response times, network motifs, robustness — written so that the calculations can be done on paper."
+    },
+    {
+      "title": "Plant Biotechnology: The Genetic Manipulation of Plants, 2nd edition",
+      "authors": "Adrian Slater, Nigel W. Scott and Mark R. Fowler",
+      "year": 2008,
+      "note": "Transformation methods, tissue culture and regeneration, and the design of the main engineered crop traits, with a careful chapter on the arguments surrounding them."
+    },
+    {
+      "title": "Genetically Engineered Crops: Experiences and Prospects",
+      "authors": "National Academies of Sciences, Engineering, and Medicine",
+      "year": 2016,
+      "note": "A long consensus review of the evidence on yield, pesticide use, resistance evolution, human health and regulation of engineered crops; the best single entry point to the empirical literature, and openly available."
+    },
+    {
+      "title": "Heritable Human Genome Editing",
+      "authors": "National Academy of Medicine, National Academy of Sciences and the Royal Society",
+      "year": 2020,
+      "note": "The international commission's report on whether and how germ-line editing could ever be used responsibly; the reference point for the governance discussion in the final chapter."
+    }
+  ],
+  "next": [
+    "systems-biology",
+    "bioinformatics"
+  ]
 }
