@@ -1,0 +1,122 @@
+{
+  "title": "情态",
+  "full_title": "情态：可能性、义务与模糊限制",
+  "tagline": "情态动词的作用，能力与可能性，义务与建议，确定性与推断，情态动词与过去，*will*、*would* 和 *shall*，不用情态动词的情态，模糊限制与强化，以及礼貌",
+  "summary": "情态是说话人表明自己有多大把握、认为什么是必要的、可能的或可取的方式。本课程讲授情态动词及其过去形式的意义，用副词、形容词、名词和动词表达情态的其他方式，使学术断言准确的模糊限制语，以及情态在礼貌中所起的作用。",
+  "overview": [
+    "本课程讲的是说英语和写英语的人怎样表明自己认为什么是可能的、很可能的、肯定的、必要的、允许的或可取的。它的中心是一小组情态动词——*can*、*could*、*may*、*might*、*must*、*shall*、*should*、*will* 和 *would*——以及分担它们工作的半情态动词，如 *have to*、*need to*、*be able to* 和 *had better*。但情态比一张动词表要宽：*probably*、*it is likely that*、*there is a chance that* 和 *the results suggest* 也都表达情态，本课程追随情态从语法走进词汇、学术写作和礼貌。",
+    "情态之所以重要，是因为它承载着说话人的承诺程度。*The drug cures the disease*、*The drug may cure the disease* 和 *The drug must cure the disease* 以三种不同的把握程度报告同一个观点，而读者会根据这种把握是否有道理来评判作者。在会话中，*Give me the report*、*Can you give me the report?* 和 *Could you possibly give me the report?* 之间的区别主要是情态上的区别，它决定一个请求听起来是友好的、中性的还是粗鲁的。",
+    "本课程建立在《核心语法》（*Core Grammar*）中最初的几个情态动词和《时与体》（*Tense and Aspect*）的时体系统之上。第一章介绍形式，以及情态意义两大类之间的关键区别：某事有多大可能（认识情态）和什么是必要的或允许的（道义情态）。接下来几章依次讲各种意义——能力和可能性，义务和建议，确定性和推断——然后加上过去（*must have been*、*should have told*）以及 *will*、*would* 和 *shall* 的多种用法。最后三章越出情态动词的范围：具有情态意义的副词、形容词、名词和动词；学术写作中的模糊限制与强化；以及情态在礼貌中的作用。同样会出现情态动词的条件句和间接引语，在《复杂句》（*Complex Sentences*）中讨论。",
+    "对说汉语的人来说，形式很容易——“能”“会”“可以”“应该”“必须”这样的汉语情态动词也位于主要动词之前，也不随人称变化——但意义的划分不同。“会”既表示学会的能力，又表示预测；“一定”既表示强烈的义务，又表示有把握的结论，而英语把这些分给 *must* 和 *have to*；结论的否定是 *can't*，而不是 *mustn't*。习惯于把论断说得很肯定的学术写作者常常需要学会使用模糊限制语，同样也要学会不对每一句话都加以限制。最好的方法是把每个形式连同它的意义和常用语境一起学，并在阅读中留意每个论断有多大把握。"
+  ],
+  "outcomes": [
+    "辨认核心情态动词、边缘情态动词和常见的半情态动词，并在陈述句、疑问句、否定句以及与完成不定式和进行不定式连用时正确使用它们的形式。",
+    "解释认识情态与道义情态（以及动力情态）的区别，并说出某个句子中的情态动词具有哪种意义。",
+    "在 *can*、*could*、*be able to*、*may* 和 *might* 之间作出选择，表达能力、许可和可能性，包括过去的能力和过去某一次的成功。",
+    "在 *must*、*have to*、*have got to*、*need to*、*should*、*ought to* 和 *had better* 之间作出选择，并把 *mustn't*（禁止）与 *don't have to*、*needn't*（没有必要）区分开。",
+    "用 *must*、*can't*、*should*、*may*、*might* 和 *could*，以及 *must have left*、*can't have seen* 这样的情态完成式，对现在和过去作出推断。",
+    "用 *should have*、*could have*、*needn't have* 和 *didn't need to* 谈论遗憾、批评、错过的机会和不必要的行动。",
+    "用 *will*、*would* 和 *shall* 表达预测、意愿、拒绝、习惯、提议和建议，并指出 *shall*、*have got to* 和 *needn't* 在英式英语和美式英语中的差异。",
+    "用副词、形容词、名词和实义动词（*probably*、*likely*、*possibility*、*seem*、*tend*）表达情态，避免 ✗ *He is possible to win* 这样的错误。",
+    "在学术写作中对论断进行模糊限制和强化，使其强度与证据相符。",
+    "使用情态动词和其他缓和手段，以恰当的直接程度提出请求、建议和拒绝。"
+  ],
+  "chapters": [
+    {
+      "title": "情态动词的作用",
+      "summary": "情态动词的形式，以及它们的两大类意义：某事有多大可能，以及什么是必要的或允许的。"
+    },
+    {
+      "title": "能力与可能性",
+      "summary": "表示能力的 *can*、*could* 和 *be able to*；表示可能性的 *may*、*might*、*could* 和 *can*。"
+    },
+    {
+      "title": "义务、必要与建议",
+      "summary": "*Must*、*have to*、*need to*、*should* 和 *ought to*，以及 *mustn’t* 和 *don’t have to* 的区别。"
+    },
+    {
+      "title": "确定性与推断",
+      "summary": "用 *must*、*can’t*、*might* 和 *should* 对现在作出结论，从肯定到不可能构成一个等级。"
+    },
+    {
+      "title": "情态动词与过去",
+      "summary": "用 *must have*、*might have*、*should have*、*could have* 和 *needn’t have* 对过去作出推断和表示遗憾。"
+    },
+    {
+      "title": "*Will*、*would* 和 *shall*",
+      "summary": "预测、意愿、习惯和提议，以及 *would* 在条件句和礼貌请求中的用法。"
+    },
+    {
+      "title": "不用情态动词的情态",
+      "summary": "表达情态的副词（*probably*）、形容词（*likely*）、名词（*possibility*）和动词（*seem*、*tend*、*appear*）。"
+    },
+    {
+      "title": "模糊限制与强化",
+      "summary": "在口语和学术写作中弱化和加强论断，避免说得太强或太弱。"
+    },
+    {
+      "title": "情态与礼貌",
+      "summary": "*could*、*would* 和 *might* 怎样使请求和建议显得礼貌，以及直接程度的不同层次。"
+    }
+  ],
+  "history": [
+    {
+      "title": "冯·赖特的模态分类",
+      "detail": "哲学家冯·赖特（Georg Henrik von Wright）在《模态逻辑论》（*An Essay in Modal Logic*）中区分了几种模态，其中包括认识模态（已知或相信的东西）和道义模态（义务的或允许的东西）。后来语言学家采用这两个术语来描述情态动词的意义。"
+    },
+    {
+      "title": "莱考夫命名“模糊限制语”",
+      "detail": "莱考夫（George Lakoff）在芝加哥语言学会宣读的一篇论文中，用 *hedges* 一词指称 *sort of* 和 *technically* 这样的表达，它们的作用是使意义变得更模糊或不那么模糊。这个术语后来扩展到说话人和作者弱化自己对论断之承诺的所有方式。"
+    },
+    {
+      "title": "帕尔默的《情态与英语情态动词》",
+      "detail": "帕尔默（Frank Palmer）用三种意义——认识情态、道义情态和动力情态——描述英语情态动词，并在《语气与情态》（*Mood and Modality*，1986；第2版，2001）中把这个框架推广到各种语言。"
+    },
+    {
+      "title": "科茨对情态动词的语料库研究",
+      "detail": "科茨（Jennifer Coates）的《情态助动词的语义》（*The Semantics of the Modal Auxiliaries*）分析了从英国口语和书面语语料库中抽取的每个情态动词的样本，表明每个情态动词的各种意义是彼此渐变过渡的，而不是整齐地落入不同的格子。"
+    },
+    {
+      "title": "布朗和莱文森的《礼貌》",
+      "detail": "布朗（Penelope Brown）和莱文森（Stephen Levinson）的《礼貌：语言使用中的一些普遍现象》（*Politeness: Some Universals in Language Usage*）是他们1978年那篇长文加上新导言的再版，书中把 *Could you…?* 这样的间接请求解释为保护听话人面子的策略。"
+    },
+    {
+      "title": "斯威彻论根意义与认识意义",
+      "detail": "斯威彻（Eve Sweetser）在《从词源学到语用学》（*From Etymology to Pragmatics*）中论证，情态动词的认识意义（*He must be home by now*）是从其表示力量和义务的意义（*You must go home*）引申而来的，只是应用于推理而不是应用于外部世界。"
+    },
+    {
+      "title": "海兰德对科学论文中模糊限制语的研究",
+      "detail": "海兰德（Ken Hyland）的《科学研究论文中的模糊限制语》（*Hedging in Scientific Research Articles*）展示了生物学家怎样使用情态动词、副词以及 *suggest*、*indicate* 这样的动词，以恰好与证据相符的把握程度提出论断。"
+    },
+    {
+      "title": "情态动词衰落的量化",
+      "detail": "利奇（Geoffrey Leech）、洪特（Marianne Hundt）、迈尔（Christian Mair）和史密斯（Nicholas Smith）的《当代英语的变化》（*Change in Contemporary English*）比较了1961年和20世纪90年代初相互匹配的英国和美国书面语语料库。大多数核心情态动词，尤其是 *must*、*shall*、*may* 和 *ought to*，变得不那么常用了，而 *have to* 和 *need to* 这样的半情态动词变得更常用了。"
+    }
+  ],
+  "references": [
+    {
+      "note": "第4版。对每个情态动词和半情态动词都有简短可靠的条目，并指出英式英语和美式英语的差异；遇到有疑问的规则时首先要查的书。"
+    },
+    {
+      "note": "经典的参考语法；它对情态动词的处理把内在情态（许可、义务、意愿）与外在情态（可能性、必然性、预测）分开，并列出了边缘情态动词和半助动词。"
+    },
+    {
+      "note": "一部语料库语法：每个情态动词和半情态动词在会话、小说、新闻和学术文章中的使用频率，以及分别表达哪些意义。"
+    },
+    {
+      "note": "最详尽的现代参考语法；它对语气和情态的论述非常细致地讨论了情态的强度、否定的辖域（*mustn't* 与 *needn't*）以及过去形式。"
+    },
+    {
+      "note": "第2版。关于跨语言情态的标准概论，使用了本课程所用的认识情态、道义情态和动力情态三个范畴。"
+    },
+    {
+      "note": "一项基于语料库的研究，考察每个情态动词在真实的英国口语和书面语中的意义；对根意义和认识意义如何彼此过渡的最佳论述。"
+    },
+    {
+      "note": "学术作者如何使用情态动词、副词和转述动词来限定论断；“模糊限制与强化”一章的背景。"
+    },
+    {
+      "note": "其中对汉语普通话助动词（能、会、可以、应该、必须等）的描写，是本课程英汉对比注释所依据的英文参考书。"
+    }
+  ]
+}
