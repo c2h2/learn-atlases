@@ -26,7 +26,7 @@
 :::
 
 ::: proof
-每一点都对应学术语体的一个特征。第1点解释了为什么技术术语不加定义，而程序却要详细报告；第2点解释了为什么段落以主张开头，论文有可以预料的组成部分（[[academic-reading/academic-texts#def-imrad]]）；第3点解释了为什么每项主张都要加以模糊限制以符合其证据，或者归于某个来源。第4点是写作与对话的区别，拜伯（Biber，1988）称之为“信息型”与“介入型”产出的对立（[[collocation-and-register/register#rule-mode]]）：面对远方读者的作者必须用词语把意思明确表达出来。
+每一点都对应学术语体的一个特征。第1点解释了为什么技术术语不加定义，而程序却要详细报告；第2点解释了为什么段落以主张开头，论文有可以预料的组成部分（[[academic-reading/academic-texts#def-imrad]]）；第3点解释了为什么每项主张都要加以模糊限制以符合其证据，或者归于某个来源。第4点是写作与对话的区别，比伯（Biber，1988）称之为“信息型”与“介入型”产出的对立（[[collocation-and-register/register#rule-mode]]）：面对远方读者的作者必须用词语把意思明确表达出来。
 :::
 
 ## 精确性
@@ -84,7 +84,7 @@
 **名词化**（nominalisation）是把一个过程或一种性质用名词来表达：*analyse* → *analysis*，*increase* → *an increase*，*rapid* → *rapidity*，*the samples were analysed* → *the analysis of the samples*。韩礼德（Halliday）把这种转换称为**语法隐喻**（grammatical metaphor）：本来“一致式地”由动词和形容词表达的意义改由名词来表达（Halliday and Martin，《书写科学》（*Writing Science*），1993）。阅读名词化结构在 [[academic-reading/dense-sentences#def-nominalisation]] 中讲授；本节讲的是如何使用它们。
 :::
 
-拜伯和格雷（Biber and Gray，《学术英语的语法复杂性》（*Grammatical Complexity in Academic English*），2016）根据语料库表明，学术写作并不像人们通常以为的那样是一种长从句的语体：它的复杂性在于**短语**——由名词修饰的名词（*language policy reform*）和一连串介词短语（*an increase in the number of students from rural areas*）。压缩对专家读者来说是高效的，但也有代价：压缩的名词短语省去了分句会说明的关系。*Student language attitudes* 可能是学生对语言的态度，也可能是人们对学生所用语言的态度。
+比伯和格雷（Biber and Gray，《学术英语的语法复杂性》（*Grammatical Complexity in Academic English*），2016）根据语料库表明，学术写作并不像人们通常以为的那样是一种长从句的语体：它的复杂性在于**短语**——由名词修饰的名词（*language policy reform*）和一连串介词短语（*an increase in the number of students from rural areas*）。压缩对专家读者来说是高效的，但也有代价：压缩的名词短语省去了分句会说明的关系。*Student language attitudes* 可能是学生对语言的态度，也可能是人们对学生所用语言的态度。
 
 ::: theorem 有目的地使用名词化 {#rule-nominalise}
 在名词化有助于读者时**使用名词化**：
@@ -234,7 +234,7 @@ caption: 表达同一过程的四种方式，从最明确的（左）到最压�
 :::
 
 ::: history
-科学英语的朴素先是一个纲领，后来才成为习惯。斯普拉特（Thomas Sprat）在《皇家学会史》（*History of the Royal Society*，1667）中写道，学会成员决心摒弃“铺陈、离题和文风的浮夸”，而偏爱“一种紧凑、赤裸、自然的说话方式；明确的表达，清楚的意思；一种天然的从容”，“用几乎同样多的词语”表达“同样多的事物”。韩礼德（M. A. K. Halliday）和马丁（J. R. Martin）在《书写科学》（*Writing Science*，1993）中描述了科学英语如何学会把过程变成名词。拜伯（Douglas Biber）和格雷（Bethany Gray）（2016）利用跨越三个世纪的语料库表明，现代科学的压缩名词短语语体主要是在二十世纪传播开来的。与此同时，非人称的理想有所减弱：海兰（Ken Hyland）从20世纪90年代末开始的语料库研究表明，学术作者实际上在多大程度上呈现自己，许多格式指南现在也建议作者用第一人称描述自己的行动。
+科学英语的朴素先是一个纲领，后来才成为习惯。斯普拉特（Thomas Sprat）在《皇家学会史》（*History of the Royal Society*，1667）中写道，学会成员决心摒弃“铺陈、离题和文风的浮夸”，而偏爱“一种紧凑、赤裸、自然的说话方式；明确的表达，清楚的意思；一种天然的从容”，“用几乎同样多的词语”表达“同样多的事物”。韩礼德（M. A. K. Halliday）和马丁（J. R. Martin）在《书写科学》（*Writing Science*，1993）中描述了科学英语如何学会把过程变成名词。比伯（Douglas Biber）和格雷（Bethany Gray）（2016）利用跨越三个世纪的语料库表明，现代科学的压缩名词短语语体主要是在二十世纪传播开来的。与此同时，非人称的理想有所减弱：海兰（Ken Hyland）从20世纪90年代末开始的语料库研究表明，学术作者实际上在多大程度上呈现自己，许多格式指南现在也建议作者用第一人称描述自己的行动。
 :::
 
 ## 本章的延伸
