@@ -7,12 +7,25 @@
   "order": 190,
   "tagline": "Entropy, source coding, channel capacity and error-correcting codes",
   "summary": "Shannon showed in 1948 how much information a channel can carry and that codes can approach this limit. This course develops entropy and mutual information, lossless source coding, channel capacity, and the error-correcting codes — block, cyclic, convolutional and modern iterative codes — used in every digital system.",
-  "overview": [],
+  "overview": [
+    "**Information theory** asks two questions with precise answers. How few bits are needed, on average, to describe the output of a random source? And how many bits per second can be sent through a noisy channel with an error probability as small as we like? Claude Shannon answered both in 1948: the first number is the source's **entropy** $H$, the second the channel's **capacity** $C$, and reliable communication of the source over the channel is possible exactly when $H < C$. Every compressed file, every modem, every mobile phone and every deep-space probe is engineered against these two limits.",
+    "The course has two halves. The first develops the measures — entropy, conditional entropy, relative entropy and mutual information — and uses them to prove the source coding theorem (with Huffman and arithmetic codes that reach the entropy) and the channel coding theorem, ending with the capacity $C = B\\log_2(1 + S/N)$ of the band-limited Gaussian channel. The second half builds the codes that approach capacity in practice: linear block codes and syndrome decoding, cyclic codes with their shift-register encoders (CRC, BCH and Reed–Solomon codes over finite fields), convolutional codes with the Viterbi algorithm, and the modern iterative codes — turbo, LDPC and polar codes — that now operate within a fraction of a decibel of the Shannon limit in Wi-Fi, 5G, digital television and satellite links.",
+    "The subject is hard for two reasons. Its central theorems are statements about long blocks and averages over random codes, so the proofs rely on the law of large numbers and counting arguments rather than on algebra; it pays to work out small cases by hand and to simulate. And the coding half needs a new kind of arithmetic: vectors and polynomials over the binary field, where $1 + 1 = 0$, and later over larger finite fields. Keep the probability of [[random-signals]] and the Boolean algebra of [[digital-logic]] at hand, check every code by listing its codewords when they are few enough, and always ask how far a scheme is from the Shannon limit."
+  ],
   "prerequisites": [
     "random-signals",
     "digital-logic"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Compute the entropy, joint and conditional entropy, relative entropy and mutual information of discrete random variables, and use the chain rule and the data-processing inequality.",
+    "State and prove the Kraft inequality and the source coding theorem, and construct Huffman, Shannon–Fano–Elias and arithmetic codes for a given source.",
+    "Calculate the capacity of discrete memoryless channels such as the binary symmetric and erasure channels, and explain the channel coding theorem and its converse.",
+    "Derive the capacity of the band-limited additive white Gaussian noise channel and the Shannon limit on Eb/N0, and locate practical systems relative to it.",
+    "Construct generator and parity-check matrices of linear block codes, find their minimum distance, and decode them with syndromes; design Hamming codes.",
+    "Describe cyclic codes by generator polynomials, implement CRC encoders and checkers with shift registers, and explain the construction of BCH and Reed–Solomon codes over finite fields.",
+    "Draw the state diagram and trellis of a convolutional encoder, decode it with the Viterbi algorithm, and estimate its error performance from the free distance.",
+    "Explain how turbo, LDPC and polar codes are encoded and iteratively decoded, and compare their performance and use in modern standards."
+  ],
   "chapters": [
     {
       "slug": "entropy-information",
@@ -72,7 +85,139 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1924,
+      "title": "Nyquist on telegraph speed",
+      "detail": "Harry Nyquist showed that the speed at which a telegraph line can send characters is proportional to its bandwidth and to the logarithm of the number of signal levels, an early quantitative link between bandwidth and information rate.",
+      "people": [
+        "Harry Nyquist"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "Hartley's measure of information",
+      "detail": "Ralph Hartley proposed measuring the information in a message of n symbols from an alphabet of s symbols as n log s, independent of meaning — the logarithmic measure that Shannon later generalised to unequal probabilities.",
+      "people": [
+        "Ralph Hartley"
+      ]
+    },
+    {
+      "year": 1948,
+      "title": "A Mathematical Theory of Communication",
+      "detail": "Claude Shannon's two-part paper in the Bell System Technical Journal defined entropy and channel capacity, proved the source and channel coding theorems and gave the capacity of the Gaussian channel, founding the subject.",
+      "people": [
+        "Claude Shannon"
+      ]
+    },
+    {
+      "year": 1950,
+      "title": "Hamming codes",
+      "detail": "Richard Hamming published his single-error-correcting codes, developed at Bell Labs after the relay computers he used kept stopping on errors; Marcel Golay had published the perfect Golay codes in 1949.",
+      "people": [
+        "Richard Hamming",
+        "Marcel Golay"
+      ]
+    },
+    {
+      "year": 1952,
+      "title": "Huffman coding",
+      "detail": "David Huffman, then a graduate student at MIT, published the algorithm that builds an optimal prefix code by repeatedly merging the two least probable symbols.",
+      "people": [
+        "David Huffman"
+      ]
+    },
+    {
+      "year": 1955,
+      "title": "Convolutional codes",
+      "detail": "Peter Elias introduced convolutional codes and showed that random codes of this kind achieve capacity; sequential decoding and later the Viterbi algorithm made them practical.",
+      "people": [
+        "Peter Elias"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "BCH and Reed–Solomon codes",
+      "detail": "Bose and Ray-Chaudhuri (1960), independently of Hocquenghem (1959), constructed cyclic codes correcting multiple errors; Irving Reed and Gustave Solomon published their codes over finite fields in 1960. Robert Gallager's 1960 thesis introduced low-density parity-check codes.",
+      "people": [
+        "Raj Chandra Bose",
+        "D. K. Ray-Chaudhuri",
+        "Alexis Hocquenghem",
+        "Irving Reed",
+        "Gustave Solomon",
+        "Robert Gallager"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "The Viterbi algorithm",
+      "detail": "Andrew Viterbi published a decoding algorithm for convolutional codes, later recognised as maximum-likelihood dynamic programming on the trellis; it became the standard decoder in satellite and mobile systems.",
+      "people": [
+        "Andrew Viterbi"
+      ]
+    },
+    {
+      "year": 1993,
+      "title": "Turbo codes",
+      "detail": "Claude Berrou, Alain Glavieux and Punya Thitimajshima presented parallel concatenated codes with iterative decoding that came within about 0.5 dB of the Shannon limit, prompting the rediscovery of Gallager's LDPC codes by MacKay and Neal.",
+      "people": [
+        "Claude Berrou",
+        "Alain Glavieux",
+        "Punya Thitimajshima"
+      ]
+    },
+    {
+      "year": 2009,
+      "title": "Polar codes",
+      "detail": "Erdal Arıkan published polar codes, the first explicit low-complexity construction provably achieving the capacity of binary-input symmetric channels; they were adopted for the control channels of 5G New Radio.",
+      "people": [
+        "Erdal Arıkan"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Elements of Information Theory (2nd ed.)",
+      "authors": "Thomas M. Cover and Joy A. Thomas",
+      "year": 2006,
+      "note": "The standard graduate text on entropy, source coding, channel capacity and the Gaussian channel; clear proofs and many problems."
+    },
+    {
+      "title": "Information Theory, Inference, and Learning Algorithms",
+      "authors": "David J. C. MacKay",
+      "year": 2003,
+      "note": "Lively and intuitive, from compression to LDPC codes and message passing; freely available online and excellent for the modern-codes chapter."
+    },
+    {
+      "title": "Error Control Coding (2nd ed.)",
+      "authors": "Shu Lin and Daniel J. Costello, Jr.",
+      "year": 2004,
+      "note": "The comprehensive engineering reference on block, cyclic, BCH, Reed–Solomon, convolutional, turbo and LDPC codes, with encoder and decoder circuits."
+    },
+    {
+      "title": "Modern Coding Theory",
+      "authors": "Tom Richardson and Rüdiger Urbanke",
+      "year": 2008,
+      "note": "Advanced treatment of LDPC and turbo codes, density evolution and EXIT charts."
+    },
+    {
+      "title": "Digital Communications (5th ed.)",
+      "authors": "John G. Proakis and Masoud Salehi",
+      "year": 2008,
+      "note": "Places information theory and coding in the context of modulation and detection; good on coded performance over AWGN and fading channels."
+    },
+    {
+      "title": "Channel Codes: Classical and Modern",
+      "authors": "William E. Ryan and Shu Lin",
+      "year": 2009,
+      "note": "Readable modern text bridging classical algebraic codes and turbo, LDPC and related iterative codes."
+    },
+    {
+      "title": "Introduction to Coding Theory",
+      "authors": "Ron M. Roth",
+      "year": 2006,
+      "note": "Rigorous algebraic coding theory: finite fields, Reed–Solomon and BCH codes and their decoding algorithms."
+    }
+  ],
   "next": []
 }
