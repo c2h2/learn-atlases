@@ -7,13 +7,27 @@
   "order": 200,
   "tagline": "Per-unit analysis, transmission lines, power flow, faults, stability, dispatch and protection",
   "summary": "The electric power system is the largest machine ever built. This course models generators, transformers, lines and loads, solves the power-flow problem, calculates symmetrical and unsymmetrical faults, analyses stability, and studies economic dispatch, frequency control, protection and the modern smart grid.",
-  "overview": [],
+  "overview": [
+    "A power system generates electrical energy in large rotating machines and wind and solar plants, raises its voltage in transformers, carries it hundreds of kilometres over high-voltage lines, and distributes it to millions of loads, all at one common frequency and with a balance between generation and demand that must hold every second of every day. Its analysis is the engineering of that machine: predicting voltages and power flows in normal operation, calculating the currents that flow when something short-circuits, checking that the generators stay in synchronism after a disturbance, sharing the load among plants at least cost, and detecting and isolating faults in a few tens of milliseconds.",
+    "The course builds the models first and then uses them. The opening chapter describes the structure of a modern grid and introduces the **per-unit system**, which makes networks with many voltage levels tractable. Two chapters derive the series impedance and shunt admittance of overhead lines from field theory and turn them into short, medium and long line models. With models of lines, transformers and generators in hand, we assemble the bus admittance matrix and solve the nonlinear **power-flow** problem by Gauss–Seidel and Newton–Raphson iteration. Fault analysis follows: balanced three-phase faults with the bus impedance matrix, then **symmetrical components** and the sequence networks for unbalanced faults. The last three chapters treat transient and small-signal stability through the swing equation and the equal-area criterion, economic dispatch and load–frequency control, and protection together with the changes brought by renewables, storage and the smart grid.",
+    "The subject is hard less because of any single idea than because of the bookkeeping: three phases, many voltage levels, per-unit bases, phase shifts of transformers, sign conventions for power and the difference between phase and line quantities. The cure is discipline. Draw the one-line diagram, choose bases once, convert everything to per unit, solve, and convert back only at the end; check every answer for physical sense (bus voltages near $1\\,\\mathrm{pu}$, fault currents of a few to a few tens of per unit, load angles well below $90^\\circ$). The numerical methods are best learnt by coding them: every algorithm in this course fits in a few dozen lines of Python with numpy."
+  ],
   "prerequisites": [
     "electric-machines",
     "electromagnetics",
     "circuits-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Draw one-line and per-unit impedance diagrams of a multi-voltage network and convert quantities between per unit and physical units on any base.",
+    "Derive the resistance, inductance and capacitance per unit length of overhead lines, including bundled conductors and transposition, from Ampère's and Gauss's laws.",
+    "Model transmission lines by short, nominal-π and exact long-line equivalents, and compute their ABCD parameters, voltage regulation, surge impedance loading and reactive compensation.",
+    "Form the bus admittance matrix of a network and solve the power-flow problem by Gauss–Seidel, Newton–Raphson and decoupled methods.",
+    "Calculate symmetrical fault currents with transient and subtransient machine reactances and the bus impedance matrix, and select circuit-breaker ratings.",
+    "Analyse single line-to-ground, line-to-line and double line-to-ground faults with symmetrical components and interconnected sequence networks.",
+    "Apply the swing equation and the equal-area criterion to find critical clearing angles and times, and analyse small-signal oscillations of a machine on an infinite bus.",
+    "Solve economic dispatch with and without losses by equal incremental cost, and model load–frequency control and automatic generation control in interconnected areas.",
+    "Coordinate overcurrent, distance and differential protection, and explain how inverter-based renewables, storage and smart-grid technologies change the operation and protection of power systems."
+  ],
   "chapters": [
     {
       "slug": "power-system-structure",
@@ -91,7 +105,135 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1882,
+      "title": "Pearl Street Station",
+      "detail": "Thomas Edison's Pearl Street Station in Manhattan began supplying direct current at about 110 V to customers within roughly a kilometre, the first central generating station for incandescent lighting in the United States.",
+      "people": [
+        "Thomas Edison"
+      ]
+    },
+    {
+      "year": 1891,
+      "title": "Lauffen–Frankfurt three-phase transmission",
+      "detail": "For the International Electrotechnical Exhibition in Frankfurt, power from a hydro plant at Lauffen am Neckar was sent 175 km by three-phase AC at up to about 25 kV, demonstrating long-distance AC transmission.",
+      "people": [
+        "Mikhail Dolivo-Dobrovolsky",
+        "Oskar von Miller",
+        "Charles E. L. Brown"
+      ]
+    },
+    {
+      "year": 1896,
+      "title": "Niagara Falls to Buffalo",
+      "detail": "Westinghouse generators at Niagara Falls began supplying Buffalo, about 40 km away, at 11 kV, establishing AC as the standard for large-scale generation and transmission.",
+      "people": [
+        "George Westinghouse",
+        "Nikola Tesla"
+      ]
+    },
+    {
+      "year": 1918,
+      "title": "Symmetrical components",
+      "detail": "Charles L. Fortescue presented 'Method of symmetrical co-ordinates applied to the solution of polyphase networks' to the AIEE, the basis of all unbalanced-fault analysis.",
+      "people": [
+        "Charles L. Fortescue"
+      ]
+    },
+    {
+      "year": 1929,
+      "title": "Park's transformation",
+      "detail": "Robert H. Park published the two-reaction (dq) model of the synchronous machine, which made the dynamic analysis of generators in power systems systematic.",
+      "people": [
+        "Robert H. Park"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "HVDC Gotland link",
+      "detail": "The first commercial high-voltage DC link, about 100 kV and 20 MW using mercury-arc valves, connected the island of Gotland to the Swedish mainland.",
+      "people": [
+        "Uno Lamm"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "Digital power-flow solution",
+      "detail": "J. B. Ward and H. W. Hale published one of the first digital-computer solutions of the load-flow problem, replacing analogue network analysers.",
+      "people": [
+        "J. B. Ward",
+        "H. W. Hale"
+      ]
+    },
+    {
+      "year": 1967,
+      "title": "Newton's method with sparsity",
+      "detail": "William F. Tinney and Clifford E. Hart showed that Newton–Raphson power flow with sparse, optimally ordered factorisation is fast and robust, and it became the industry standard.",
+      "people": [
+        "William F. Tinney",
+        "Clifford E. Hart"
+      ]
+    },
+    {
+      "year": 1974,
+      "title": "Fast decoupled load flow",
+      "detail": "Brian Stott and Ongun Alsaç published the fast decoupled power flow, using constant real matrices that exploit the weak coupling between real power and voltage magnitude.",
+      "people": [
+        "Brian Stott",
+        "Ongun Alsaç"
+      ]
+    },
+    {
+      "year": 2003,
+      "title": "Northeast blackout",
+      "detail": "On 14 August 2003 a cascade of line trips in Ohio left about 50 million people in the north-eastern United States and Ontario without power, prompting mandatory reliability standards and wider use of synchrophasor monitoring.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Power System Analysis",
+      "authors": "John J. Grainger and William D. Stevenson Jr.",
+      "year": 1994,
+      "note": "The classic undergraduate text: line parameters, power flow, faults and stability with careful derivations and many worked examples."
+    },
+    {
+      "title": "Power System Analysis and Design",
+      "authors": "J. Duncan Glover, Thomas J. Overbye and Mulukutla S. Sarma",
+      "year": 2017,
+      "note": "Modern, well-illustrated text with design projects and PowerWorld simulation cases; good for per unit, power flow and protection."
+    },
+    {
+      "title": "Power System Stability and Control",
+      "authors": "Prabha Kundur",
+      "year": 1994,
+      "note": "The standard reference on machine dynamics, excitation and governor control, and transient and small-signal stability."
+    },
+    {
+      "title": "Power Generation, Operation, and Control",
+      "authors": "Allen J. Wood, Bruce F. Wollenberg and Gerald B. Sheblé",
+      "year": 2013,
+      "note": "Economic dispatch, unit commitment, automatic generation control and state estimation from the operator's point of view."
+    },
+    {
+      "title": "Power System Analysis",
+      "authors": "Hadi Saadat",
+      "year": 2010,
+      "note": "Compact text with MATLAB programs for every algorithm; convenient for checking numerical work."
+    },
+    {
+      "title": "Protective Relaying: Principles and Applications",
+      "authors": "J. Lewis Blackburn and Thomas J. Domin",
+      "year": 2014,
+      "note": "Practical treatment of relays, instrument transformers and protection schemes, with symmetrical components applied to real faults."
+    },
+    {
+      "title": "Electric Machinery",
+      "authors": "A. E. Fitzgerald, Charles Kingsley Jr. and Stephen D. Umans",
+      "year": 2014,
+      "note": "Background on transformers and synchronous machines used throughout the course."
+    }
+  ],
   "next": []
 }
