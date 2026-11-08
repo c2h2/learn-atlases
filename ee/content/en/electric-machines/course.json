@@ -7,12 +7,25 @@
   "order": 170,
   "tagline": "Magnetic circuits, transformers, DC, induction and synchronous machines",
   "summary": "Electric machines convert between electrical and mechanical energy and use most of the world’s electricity. This course analyses magnetic circuits and transformers, the principles of electromechanical energy conversion, and the construction, equivalent circuits and performance of DC, induction, synchronous and special machines.",
-  "overview": [],
+  "overview": [
+    "Electric machines turn electrical energy into mechanical work and back again. Motors drive pumps, fans, compressors, conveyors, lifts, trains and cars and consume roughly half of all the electricity generated in the world; generators, almost all of them synchronous machines, produce nearly all of that electricity in the first place; and transformers, which are machines without moving parts, change the voltage between generation, transmission and use. A course in machines is therefore a course in where electrical power comes from and where most of it goes.",
+    "The course is built on two physical ideas. The first is the **magnetic circuit**: iron guides flux the way copper guides current, so a few lines of Ampère's and Faraday's laws turn a complicated three-dimensional field into reluctances, flux linkages and inductances. The second is **energy conversion**: the force or torque of any electromechanical device follows from how its stored magnetic energy (or co-energy) changes with position. From these we derive the transformer and its equivalent circuit, then the DC machine, the rotating magnetic field produced by distributed three-phase windings, and the induction and synchronous machines that it makes possible. The final chapter treats permanent-magnet, brushless, stepper and reluctance machines, which together with power electronics dominate modern drives.",
+    "Machines are hard at first because every device mixes circuit theory, field theory and mechanics, and because each machine has its own vocabulary (slip, armature reaction, load angle, commutation). The way through is to keep returning to the same few tools: an equivalent circuit at the terminals, a power balance that follows every watt from input to shaft, and a phasor diagram. Check every result against a power balance and the physical sense of the answer, and use the realistic numbers of the worked examples ($50\\,\\mathrm{Hz}$ and $60\\,\\mathrm{Hz}$ machines of a few kilowatts to hundreds of megawatts) to build a feel for what is normal."
+  ],
   "prerequisites": [
     "circuits-2",
     "electromagnetics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Analyse magnetic circuits with air gaps, fringing and nonlinear iron, and estimate hysteresis, eddy-current and permanent-magnet behaviour.",
+    "Derive the equivalent circuit of a single-phase and three-phase transformer, determine its parameters from open- and short-circuit tests, and compute regulation and efficiency.",
+    "Calculate forces and torques in singly and doubly excited systems from stored energy and co-energy.",
+    "Model DC motors and generators by their equivalent circuits and use them to predict torque–speed characteristics and design speed control.",
+    "Explain how distributed polyphase windings produce a rotating magnetic field, and compute induced voltages, winding factors and torque in AC machines.",
+    "Use the induction-motor equivalent circuit to find torque, current, efficiency, starting performance and the effect of voltage and frequency control.",
+    "Analyse synchronous generators and motors with phasor diagrams and the power–angle characteristic, including excitation control on an infinite bus.",
+    "Compare permanent-magnet, brushless DC, stepper and switched-reluctance machines and choose a machine type for a given application."
+  ],
   "chapters": [
     {
       "slug": "magnetic-circuits",
@@ -81,8 +94,132 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1821,
+      "title": "Electromagnetic rotation",
+      "detail": "Michael Faraday made a current-carrying wire rotate continuously around a magnet dipped in mercury, the first conversion of electrical energy into continuous motion.",
+      "people": [
+        "Michael Faraday"
+      ]
+    },
+    {
+      "year": 1831,
+      "title": "Electromagnetic induction",
+      "detail": "Faraday discovered induction with two coils wound on an iron ring, in effect the first transformer, and built a rotating copper-disc generator later that year.",
+      "people": [
+        "Michael Faraday",
+        "Joseph Henry"
+      ]
+    },
+    {
+      "year": 1832,
+      "title": "Pixii's generator",
+      "detail": "Hippolyte Pixii built a hand-cranked magneto that produced alternating current; a commutator, added at André-Marie Ampère's suggestion, rectified it to direct current.",
+      "people": [
+        "Hippolyte Pixii"
+      ]
+    },
+    {
+      "year": 1866,
+      "title": "The self-excited dynamo",
+      "detail": "Werner von Siemens described the dynamo-electric principle, in which the machine's own output current supplies its field, removing the need for permanent magnets; Charles Wheatstone and others reached the same idea at about the same time.",
+      "people": [
+        "Werner von Siemens",
+        "Charles Wheatstone"
+      ]
+    },
+    {
+      "year": 1871,
+      "title": "Gramme's ring dynamo",
+      "detail": "Zénobe Gramme's ring-wound armature gave a smooth, practical direct current and was the first generator used commercially on a large scale; it was found in 1873 to work equally well as a motor.",
+      "people": [
+        "Zénobe Gramme"
+      ]
+    },
+    {
+      "year": 1885,
+      "title": "The closed-core transformer",
+      "detail": "Károly Zipernowsky, Ottó Bláthy and Miksa Déri of Ganz in Budapest built efficient closed-core transformers and proposed connecting them in parallel to the supply.",
+      "people": [
+        "Károly Zipernowsky",
+        "Ottó Bláthy",
+        "Miksa Déri"
+      ]
+    },
+    {
+      "year": 1888,
+      "title": "The rotating magnetic field and the induction motor",
+      "detail": "Galileo Ferraris published his analysis of a rotating field produced by two-phase currents, and Nikola Tesla was granted his polyphase induction-motor patents, later licensed to Westinghouse.",
+      "people": [
+        "Galileo Ferraris",
+        "Nikola Tesla"
+      ]
+    },
+    {
+      "year": 1889,
+      "title": "The three-phase squirrel-cage motor",
+      "detail": "Mikhail Dolivo-Dobrovolsky at AEG built the first three-phase squirrel-cage induction motor; in 1891 his machines were used on the 175 km Lauffen–Frankfurt three-phase transmission.",
+      "people": [
+        "Mikhail Dolivo-Dobrovolsky"
+      ]
+    },
+    {
+      "year": 1971,
+      "title": "Field-oriented control",
+      "detail": "Felix Blaschke of Siemens presented field-oriented (vector) control, which lets an inverter-fed induction motor be controlled like a separately excited DC machine.",
+      "people": [
+        "Felix Blaschke"
+      ]
+    },
+    {
+      "year": 1983,
+      "title": "Neodymium–iron–boron magnets",
+      "detail": "Masato Sagawa at Sumitomo and John Croat at General Motors independently developed NdFeB magnets, the strongest permanent magnets known, which made compact permanent-magnet motors practical.",
+      "people": [
+        "Masato Sagawa",
+        "John Croat"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Fitzgerald & Kingsley's Electric Machinery",
+      "authors": "Stephen D. Umans",
+      "year": 2014,
+      "note": "The classic text (7th edition): rigorous treatment of magnetic circuits, energy and co-energy, and the equivalent circuits of every machine type. Follows the same order as this course."
+    },
+    {
+      "title": "Electric Machinery Fundamentals",
+      "authors": "Stephen J. Chapman",
+      "year": 2012,
+      "note": "Very clear and example-rich (5th edition); excellent for the practical side: tests, characteristics, starting and speed control."
+    },
+    {
+      "title": "Principles of Electric Machines and Power Electronics",
+      "authors": "P. C. Sen",
+      "year": 2013,
+      "note": "Solid undergraduate text (3rd edition) that integrates machines with the converters that drive them."
+    },
+    {
+      "title": "Electric Motors and Drives: Fundamentals, Types and Applications",
+      "authors": "Austin Hughes, Bill Drury",
+      "year": 2019,
+      "note": "Physical, mathematics-light explanations (5th edition) of how motors and drives really behave; ideal for intuition and for special machines."
+    },
+    {
+      "title": "Analysis of Electric Machinery and Drive Systems",
+      "authors": "Paul Krause, Oleg Wasynczuk, Scott Sudhoff, Steven Pekarek",
+      "year": 2013,
+      "note": "The standard graduate reference (3rd edition) for reference-frame theory and dynamic models of AC machines."
+    },
+    {
+      "title": "Design of Brushless Permanent-Magnet Machines",
+      "authors": "J. R. Hendershot, T. J. E. Miller",
+      "year": 2010,
+      "note": "Detailed design-oriented treatment of permanent-magnet machines, magnets and windings."
+    }
+  ],
   "next": [
     "power-electronics",
     "power-systems"
