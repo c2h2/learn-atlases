@@ -7,13 +7,27 @@
   "order": 180,
   "tagline": "Power semiconductors, rectifiers, DC–DC converters, inverters and converter control",
   "summary": "Power electronics processes electrical energy efficiently with switches. This course covers power semiconductor devices, rectifiers, non-isolated and isolated DC–DC converters, inverters and pulse-width modulation, the dynamics and control of converters, magnetic and thermal design, and applications from phone chargers to motor drives and solar inverters.",
-  "overview": [],
+  "overview": [
+    "Power electronics is the technology of converting electrical energy from one form to another — AC to DC, DC to DC at a different voltage, DC to AC at a controlled frequency — using semiconductor switches rather than resistors or linear transistors. A switch that is either fully on (small voltage across it) or fully off (no current through it) dissipates almost nothing, so a converter built from switches, inductors and capacitors can approach $100\\,\\%$ efficiency. That single idea powers phone chargers and laptop adapters, the voltage regulators beside every processor, variable-speed motor drives, solar and wind inverters, electric-vehicle traction and charging, and high-voltage DC links between grids.",
+    "The course begins with the switches themselves — diodes, MOSFETs, IGBTs, thyristors and the newer silicon-carbide and gallium-nitride devices — and with what it costs to turn them on and off. It then builds the main converter families: line-frequency rectifiers and their harmonics, the buck, boost and buck–boost DC–DC converters, isolated converters with high-frequency transformers, and voltage-source inverters with pulse-width modulation. The second half treats converters as systems: averaged and small-signal models, feedback control with voltage-mode and current-mode loops, the design of inductors, transformers and heat sinks, and finally complete applications in drives, renewable energy, vehicles and the grid.",
+    "The analysis rests on a few principles used again and again: in periodic steady state an inductor's average voltage and a capacitor's average current are zero (volt-second and charge balance); small ripple can be neglected to first order; and a switching circuit can be replaced by its average over a switching period. What makes the subject demanding is that a real converter is never only a circuit problem — losses, parasitic inductance, magnetic saturation, temperature and electromagnetic interference decide whether a design on paper works on the bench. Work every waveform by hand, check each result against the energy balance, and keep asking where the losses go."
+  ],
   "prerequisites": [
     "electronics-1",
     "electric-machines",
     "control-systems"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Compare power diodes, MOSFETs, IGBTs, thyristors and wide-bandgap devices and select a switch for a given voltage, current and frequency.",
+    "Estimate conduction and switching losses of a hard-switched power stage and design a basic gate drive.",
+    "Analyse single- and three-phase diode and thyristor rectifiers, including output voltage, harmonics, commutation overlap and power factor.",
+    "Derive the conversion ratios and ripples of buck, boost and buck–boost converters in continuous and discontinuous conduction using volt-second and charge balance.",
+    "Design isolated flyback, forward and bridge converters, including the transformer turns ratio and core reset.",
+    "Explain single- and three-phase voltage-source inverters and compare sinusoidal, third-harmonic and space-vector PWM.",
+    "Derive averaged and small-signal models of DC–DC converters and design voltage-mode and current-mode feedback compensators.",
+    "Design an inductor and a transformer for a converter, and size a heat sink from a thermal-resistance model.",
+    "Describe the power-electronic architecture of motor drives, photovoltaic and wind converters, battery chargers, electric vehicles and grid-connected systems."
+  ],
   "chapters": [
     {
       "slug": "power-switches",
@@ -85,8 +99,138 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1902,
+      "title": "Mercury-arc rectifier",
+      "detail": "Peter Cooper Hewitt invented the mercury-arc rectifier, which for half a century supplied DC for electric railways, electrochemistry and, later, the first HVDC links.",
+      "people": [
+        "Peter Cooper Hewitt"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "The p-n-p-n transistor switch",
+      "detail": "John Moll, Morris Tanenbaum, James Goldey and Nick Holonyak at Bell Labs described the silicon p-n-p-n switch, the basis of the thyristor.",
+      "people": [
+        "John Moll",
+        "Morris Tanenbaum",
+        "James Goldey",
+        "Nick Holonyak"
+      ]
+    },
+    {
+      "year": 1957,
+      "title": "Commercial silicon-controlled rectifier",
+      "detail": "General Electric introduced the silicon-controlled rectifier (SCR), which began the replacement of mercury-arc valves and motor–generator sets by solid-state converters.",
+      "people": [
+        "Gordon Hall",
+        "Frank W. Gutzwiller"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "PWM inverter drive",
+      "detail": "Arnold Schönung and Herbert Stemmler of Brown Boveri published the sine–triangle (subharmonic) pulse-width modulation of a variable-frequency inverter for AC motor drives.",
+      "people": [
+        "Arnold Schönung",
+        "Herbert Stemmler"
+      ]
+    },
+    {
+      "year": 1972,
+      "title": "Field-oriented control",
+      "detail": "Felix Blaschke of Siemens published the principle of field orientation, which lets an inverter control an induction motor's torque as quickly as that of a DC machine.",
+      "people": [
+        "Felix Blaschke"
+      ]
+    },
+    {
+      "year": 1973,
+      "title": "Power electronics named as a discipline",
+      "detail": "William E. Newell's keynote at the Power Electronics Specialists Conference described power electronics as the field at the intersection of power, electronics and control.",
+      "people": [
+        "William E. Newell"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "State-space averaging",
+      "detail": "R. D. Middlebrook and Slobodan Ćuk presented state-space averaging, the standard method for modelling the dynamics of switching converters.",
+      "people": [
+        "R. D. Middlebrook",
+        "Slobodan Ćuk"
+      ]
+    },
+    {
+      "year": 1982,
+      "title": "Insulated-gate bipolar transistor",
+      "detail": "B. Jayant Baliga and colleagues at General Electric reported the insulated-gate transistor, which combines a MOS gate with bipolar conduction and became the workhorse switch of drives and inverters.",
+      "people": [
+        "B. Jayant Baliga"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Space-vector modulation",
+      "detail": "Heinz Willi van der Broeck, Hans-Christoph Skudelny and Georg Stanke published the analysis and realisation of space-vector PWM for three-phase inverters.",
+      "people": [
+        "Heinz Willi van der Broeck",
+        "Hans-Christoph Skudelny",
+        "Georg Stanke"
+      ]
+    },
+    {
+      "year": 2001,
+      "title": "Silicon-carbide power devices",
+      "detail": "Infineon released the first commercial silicon-carbide Schottky diodes; SiC MOSFETs followed from Cree in 2011, and GaN transistors entered the market around 2010, opening the wide-bandgap era.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Fundamentals of Power Electronics",
+      "authors": "Robert W. Erickson and Dragan Maksimović",
+      "year": 2020,
+      "note": "Third edition. The standard text for DC–DC converters, averaged modelling, control and magnetics design; the notation of this course follows it."
+    },
+    {
+      "title": "Power Electronics: Converters, Applications, and Design",
+      "authors": "Ned Mohan, Tore M. Undeland and William P. Robbins",
+      "year": 2003,
+      "note": "Third edition. Broad coverage of rectifiers, inverters, drives and devices, with practical design detail."
+    },
+    {
+      "title": "Principles of Power Electronics",
+      "authors": "John G. Kassakian, David J. Perreault, George C. Verghese and Martin F. Schlecht",
+      "year": 2023,
+      "note": "Second edition. Rigorous treatment of switching circuits, dynamics and components from MIT."
+    },
+    {
+      "title": "Elements of Power Electronics",
+      "authors": "Philip T. Krein",
+      "year": 2015,
+      "note": "Second edition. Builds every converter from switching-function principles; good on rectifiers and inverters."
+    },
+    {
+      "title": "Fundamentals of Power Semiconductor Devices",
+      "authors": "B. Jayant Baliga",
+      "year": 2019,
+      "note": "Second edition. Device physics of power diodes, MOSFETs, IGBTs, thyristors and SiC and GaN devices."
+    },
+    {
+      "title": "Pulse Width Modulation for Power Converters: Principles and Practice",
+      "authors": "D. Grahame Holmes and Thomas A. Lipo",
+      "year": 2003,
+      "note": "The reference on carrier-based and space-vector PWM and its harmonics."
+    },
+    {
+      "title": "Transformer and Inductor Design Handbook",
+      "authors": "Colonel Wm. T. McLyman",
+      "year": 2011,
+      "note": "Fourth edition. Step-by-step design of magnetic components with core and wire data."
+    }
+  ],
   "next": [
     "power-systems"
   ]
