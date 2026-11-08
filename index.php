@@ -1,7 +1,8 @@
 <?php
 declare(strict_types=1);
-/* Learn — landing page for the atlases under /learn (Maths, Physics, Electrical Engineering, LLM, Medicine, Peptide,
-   and the curriculum skeletons Chemistry, Computer Science, Biology, Mechanical & Aerospace, Economics & Finance, Earth & Climate, English, Quant Trading and European History). Self-contained. */
+/* Learn — landing page for the atlases under /learn (Maths, Physics, Electrical Engineering, Medicine, Chinese, Peptide,
+   Mechanical & Aerospace, Earth & Climate, English, Quant Trading and European History, and the curriculum skeletons
+   LLM, Chemistry, Computer Science, Biology and Economics & Finance). Self-contained. */
 
 mb_internal_encoding('UTF-8');
 $q = $_GET['lang'] ?? null;
@@ -43,17 +44,17 @@ $T = [
     'Biology Atlas' => '生物学图谱',
     'University biology: molecules and cells, genetics and genomics, microbes, plants and animals, neuroscience and behaviour, evolution, ecology and conservation, and quantitative biology. The curriculum is mapped out; the lessons are still to be written.' => '大学生物学：分子与细胞、遗传与基因组、微生物、植物与动物、神经科学与行为、进化、生态与保护以及定量生物学。课程体系已经规划好，课文尚待编写。',
     'Mechanical and Aerospace Engineering Atlas' => '机械与航空航天工程图谱',
-    'University mechanical and aerospace engineering: solid mechanics, dynamics and vibration, thermodynamics, fluids and heat transfer, materials and manufacturing, design, control and robotics, aerodynamics, propulsion and orbits. The curriculum is mapped out; the lessons are still to be written.' => '大学机械与航空航天工程：固体力学、动力学与振动、热力学、流体与传热、材料与制造、设计、控制与机器人、空气动力学、推进与轨道。课程体系已经规划好，课文尚待编写。',
+    'University mechanical and aerospace engineering: solid mechanics, dynamics and vibration, thermodynamics, fluids and heat transfer, materials and manufacturing, design, control and robotics, aerodynamics, propulsion and orbits. Every lesson is written, in English and Chinese.' => '大学机械与航空航天工程：固体力学、动力学与振动、热力学、流体与传热、材料与制造、设计、控制与机器人、空气动力学、推进与轨道。全部课文均已写成，有中文和英文两种版本。',
     'Economics and Finance Atlas' => '经济与金融图谱',
     'University economics and finance: microeconomics and macroeconomics, econometrics, game theory and market design, money, banking and corporate finance, asset pricing and derivatives, trade and development, and public and behavioural economics. For education, not investment advice. The curriculum is mapped out; the lessons are still to be written.' => '大学经济学与金融学：微观经济学与宏观经济学、计量经济学、博弈论与市场设计、货币银行与公司金融、资产定价与衍生品、国际贸易与经济发展，以及公共经济学与行为经济学。仅供教育学习，不构成投资建议。课程体系已经规划好，课文尚待编写。',
     'Earth and Climate Science Atlas' => '地球与气候科学图谱',
-    'University Earth and climate science: the Earth system, minerals, rocks and tectonics, geophysics, landscapes and water, the atmosphere and weather, oceans and ice, Earth history, biogeochemistry and climate change. The curriculum is mapped out; the lessons are still to be written.' => '大学地球与气候科学：地球系统、矿物岩石与构造、地球物理、地貌与水、大气与天气、海洋与冰冻圈、地球历史、生物地球化学与气候变化。课程体系已经规划好，课文尚待编写。',
+    'University Earth and climate science: the Earth system, minerals, rocks and tectonics, geophysics, landscapes and water, the atmosphere and weather, oceans and ice, Earth history, biogeochemistry and climate change. Every lesson is written, in English and Chinese.' => '大学地球与气候科学：地球系统、矿物岩石与构造、地球物理、地貌与水、大气与天气、海洋与冰冻圈、地球历史、生物地球化学与气候变化。全部课文均已写成，有中文和英文两种版本。',
     'English Language Atlas' => '英语图谱',
     'Quant Trading Atlas' => '量化交易图谱',
     'European History Atlas' => '欧洲史图谱',
-    'European history in depth: evidence and argument, Greece and Rome, medieval Europe, the reformations, states and empires, revolutions, industry and nations, the world wars, and Europe since 1945. For study, not a national myth. All 60 English lessons are written. The Chinese translation is not yet.' => '深入讲解欧洲史：证据与论证、希腊与罗马、中世纪欧洲、宗教改革、国家与帝国、革命、工业与民族、两次世界大战，以及1945年以来的欧洲。供学习，不是民族神话。六十章英文课文已经写完。中文译文尚未开始。',
-    'Systematic trading research: market data, performance and risk, trend, mean reversion and momentum, portfolio construction, orders and execution, backtesting and walk-forward validation. For education, not investment advice. All 60 English lessons are written. The Chinese translation is not yet.' => '系统化交易研究：市场数据、绩效与风险、趋势、均值回归与动量、组合构建、订单与执行、回测与前推验证。仅供教育学习，不构成投资建议。六十章英文课文已经写完。中文译文尚未开始。',
-    'English for learners, especially Chinese speakers, from level A1 to C2: pronunciation, vocabulary and grammar, reading and writing up to academic papers, listening and speaking, the history and varieties of English, and English–Chinese translation. The curriculum is mapped out; the lessons are still to be written.' => '面向英语学习者、尤其是以中文为母语者的英语课程，从 A1 到 C2 级：语音、词汇与语法，直至学术论文的阅读与写作，听说，英语的历史与变体，以及英汉互译。课程体系已经规划好，课文尚待编写。',
+    'European history in depth: evidence and argument, Greece and Rome, medieval Europe, the reformations, states and empires, revolutions, industry and nations, the world wars, and Europe since 1945. For study, not a national myth. Every lesson is written, in English and Chinese.' => '深入讲解欧洲史：证据与论证、希腊与罗马、中世纪欧洲、宗教改革、国家与帝国、革命、工业与民族、两次世界大战，以及1945年以来的欧洲。供学习，不是民族神话。全部课文均已写成，有中文和英文两种版本。',
+    'Systematic trading research: market data, performance and risk, trend, mean reversion and momentum, portfolio construction, orders and execution, backtesting and walk-forward validation. For education, not investment advice. Every lesson is written, in English and Chinese.' => '系统化交易研究：市场数据、绩效与风险、趋势、均值回归与动量、组合构建、订单与执行、回测与前推验证。仅供教育学习，不构成投资建议。全部课文均已写成，有中文和英文两种版本。',
+    'English for learners, especially Chinese speakers, from level A1 to C2: pronunciation, vocabulary and grammar, reading and writing up to academic papers, listening and speaking, the history and varieties of English, and English–Chinese translation. Every lesson is written, in English and Chinese.' => '面向英语学习者、尤其是以中文为母语者的英语课程，从 A1 到 C2 级：语音、词汇与语法，直至学术论文的阅读与写作，听说，英语的历史与变体，以及英汉互译。全部课文均已写成，有中文和英文两种版本。',
     'Chinese Language and Literature Atlas' => '中国语言文学图谱',
     'Chinese language and literature for native speakers, at the level of a university degree: characters and calligraphy, modern and classical Chinese, literature from the Book of Songs to the present day, literary theory and world literature, and writing and reasoning. All 270 chapters are written in Chinese, and every chapter has an English version that keeps the same figures, quizzes and exercises.' => '写给以中文为母语者的中国语言文学课程，相当于大学汉语言文学专业的水平：汉字与书法、现代汉语与古代汉语、从《诗经》到当代的中国文学、文学理论与外国文学，以及写作与思维。二百七十章课文均已用中文写成，每章另有保留同样图形、小测与练习的英文版本。',
 ];
@@ -206,6 +207,59 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
       <dl><div><dt><?= $chCourses ?></dt><dd><?= $h($t('courses')) ?></dd></div><div><dt><?= $chChapters ?></dt><dd><?= $h($t('chapters')) ?></dd></div><div><dt><?= $chFigures ?></dt><dd><?= $h($t('interactive figures')) ?></dd></div></dl>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>
+    <a class="card" href="mechanical/<?= $L ?>">
+      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
+        <path d="M30 52H270M60 16H240M30 52L60 16 90 52 120 16 150 52 180 16 210 52 240 16 270 52M30 52l-7 11h14zM270 52l-7 11h14z" class="curve" style="stroke-linejoin:round"/>
+        <?= $skDots([[30, 52], [60, 16], [90, 52], [120, 16], [150, 52], [180, 16], [210, 52], [240, 16], [270, 52]], 5.5) ?>
+      </svg>
+      <h2><?= $h($t('Mechanical and Aerospace Engineering Atlas')) ?></h2>
+      <p><?= $h($t('University mechanical and aerospace engineering: solid mechanics, dynamics and vibration, thermodynamics, fluids and heat transfer, materials and manufacturing, design, control and robotics, aerodynamics, propulsion and orbits. Every lesson is written, in English and Chinese.')) ?></p>
+      <?= $skStats('mechanical') ?>
+      <span class="open"><?= $h($t('Open')) ?> →</span>
+    </a>
+    <a class="card" href="earth/<?= $L ?>">
+      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
+        <path d="M6 50L58 22l34 18 46-30 48 34 40-18 68 26" class="curve" style="stroke-linejoin:round"/>
+        <path d="M6 60c12-5 24-5 36 0s24 5 36 0 24-5 36 0 24 5 36 0 24-5 36 0 24 5 36 0 24-5 36 0 24 5 36 0" class="curve"/>
+        <?= $skDots([[58, 22], [92, 40], [138, 10], [186, 44], [226, 26]], 6) ?>
+        <circle cx="266" cy="16" r="9" style="fill:#e0612d"/>
+      </svg>
+      <h2><?= $h($t('Earth and Climate Science Atlas')) ?></h2>
+      <p><?= $h($t('University Earth and climate science: the Earth system, minerals, rocks and tectonics, geophysics, landscapes and water, the atmosphere and weather, oceans and ice, Earth history, biogeochemistry and climate change. Every lesson is written, in English and Chinese.')) ?></p>
+      <?= $skStats('earth') ?>
+      <span class="open"><?= $h($t('Open')) ?> →</span>
+    </a>
+    <a class="card" href="english/<?= $L ?>">
+      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
+        <?php /* the IPA vowel chart: front on the left, close at the top, with English monophthongs */ ?>
+        <path d="M60 8H240V62H120zM80 26H240M100 44H240M150 8l30 54" class="curve" style="stroke-linejoin:round"/>
+        <?= $skDots([[66, 10], [92, 18], [98, 34], [124, 56], [165, 35], [192, 48], [236, 58], [234, 36], [212, 18], [234, 10]], 5.5) ?>
+      </svg>
+      <h2><?= $h($t('English Language Atlas')) ?></h2>
+      <p><?= $h($t('English for learners, especially Chinese speakers, from level A1 to C2: pronunciation, vocabulary and grammar, reading and writing up to academic papers, listening and speaking, the history and varieties of English, and English–Chinese translation. Every lesson is written, in English and Chinese.')) ?></p>
+      <?= $skStats('english') ?>
+      <span class="open"><?= $h($t('Open')) ?> →</span>
+    </a>
+    <a class="card" href="quant/<?= $L ?>">
+      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
+        <path d="M16 58 H284 M28 50 L70 46 110 40 150 42 190 28 230 22 270 14" class="curve"/>
+        <?= $skDots([[28, 50], [70, 46], [110, 40], [150, 42], [190, 28], [230, 22], [270, 14]], 6) ?>
+      </svg>
+      <h2><?= $h($t('Quant Trading Atlas')) ?></h2>
+      <p><?= $h($t('Systematic trading research: market data, performance and risk, trend, mean reversion and momentum, portfolio construction, orders and execution, backtesting and walk-forward validation. For education, not investment advice. Every lesson is written, in English and Chinese.')) ?></p>
+      <?= $skStats('quant') ?>
+      <span class="open"><?= $h($t('Open')) ?> →</span>
+    </a>
+    <a class="card" href="europe/<?= $L ?>">
+      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
+        <path d="M16 40 H284" class="curve"/>
+        <?= $skDots([[36, 40], [88, 40], [140, 40], [196, 40], [252, 40]], 6.5) ?>
+      </svg>
+      <h2><?= $h($t('European History Atlas')) ?></h2>
+      <p><?= $h($t('European history in depth: evidence and argument, Greece and Rome, medieval Europe, the reformations, states and empires, revolutions, industry and nations, the world wars, and Europe since 1945. For study, not a national myth. Every lesson is written, in English and Chinese.')) ?></p>
+      <?= $skStats('europe') ?>
+      <span class="open"><?= $h($t('Open')) ?> →</span>
+    </a>
     <a class="card" href="peptides/<?= $L ?>">
       <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
         <line x1="14" y1="40" x2="286" y2="40" class="curve"/>
@@ -279,16 +333,6 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
       <?= $skStats('biology') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>
-    <a class="card" href="mechanical/<?= $L ?>">
-      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
-        <path d="M30 52H270M60 16H240M30 52L60 16 90 52 120 16 150 52 180 16 210 52 240 16 270 52M30 52l-7 11h14zM270 52l-7 11h14z" class="curve" style="stroke-linejoin:round"/>
-        <?= $skDots([[30, 52], [60, 16], [90, 52], [120, 16], [150, 52], [180, 16], [210, 52], [240, 16], [270, 52]], 5.5) ?>
-      </svg>
-      <h2><?= $skName('Mechanical and Aerospace Engineering Atlas') ?></h2>
-      <p><?= $h($t('University mechanical and aerospace engineering: solid mechanics, dynamics and vibration, thermodynamics, fluids and heat transfer, materials and manufacturing, design, control and robotics, aerodynamics, propulsion and orbits. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
-      <?= $skStats('mechanical') ?>
-      <span class="open"><?= $h($t('Open')) ?> →</span>
-    </a>
     <a class="card" href="economics/<?= $L ?>">
       <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
         <path d="M14 4V62H292M30 52L70 44 110 48 150 32 190 36 230 20 270 12" class="curve"/>
@@ -297,49 +341,6 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
       <h2><?= $skName('Economics and Finance Atlas') ?></h2>
       <p><?= $h($t('University economics and finance: microeconomics and macroeconomics, econometrics, game theory and market design, money, banking and corporate finance, asset pricing and derivatives, trade and development, and public and behavioural economics. For education, not investment advice. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('economics') ?>
-      <span class="open"><?= $h($t('Open')) ?> →</span>
-    </a>
-    <a class="card" href="earth/<?= $L ?>">
-      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
-        <path d="M6 50L58 22l34 18 46-30 48 34 40-18 68 26" class="curve" style="stroke-linejoin:round"/>
-        <path d="M6 60c12-5 24-5 36 0s24 5 36 0 24-5 36 0 24 5 36 0 24-5 36 0 24 5 36 0 24-5 36 0 24 5 36 0" class="curve"/>
-        <?= $skDots([[58, 22], [92, 40], [138, 10], [186, 44], [226, 26]], 6) ?>
-        <circle cx="266" cy="16" r="9" style="fill:#e0612d"/>
-      </svg>
-      <h2><?= $skName('Earth and Climate Science Atlas') ?></h2>
-      <p><?= $h($t('University Earth and climate science: the Earth system, minerals, rocks and tectonics, geophysics, landscapes and water, the atmosphere and weather, oceans and ice, Earth history, biogeochemistry and climate change. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
-      <?= $skStats('earth') ?>
-      <span class="open"><?= $h($t('Open')) ?> →</span>
-    </a>
-    <a class="card" href="english/<?= $L ?>">
-      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
-        <?php /* the IPA vowel chart: front on the left, close at the top, with English monophthongs */ ?>
-        <path d="M60 8H240V62H120zM80 26H240M100 44H240M150 8l30 54" class="curve" style="stroke-linejoin:round"/>
-        <?= $skDots([[66, 10], [92, 18], [98, 34], [124, 56], [165, 35], [192, 48], [236, 58], [234, 36], [212, 18], [234, 10]], 5.5) ?>
-      </svg>
-      <h2><?= $skName('English Language Atlas') ?></h2>
-      <p><?= $h($t('English for learners, especially Chinese speakers, from level A1 to C2: pronunciation, vocabulary and grammar, reading and writing up to academic papers, listening and speaking, the history and varieties of English, and English–Chinese translation. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
-      <?= $skStats('english') ?>
-      <span class="open"><?= $h($t('Open')) ?> →</span>
-    </a>
-    <a class="card" href="quant/<?= $L ?>">
-      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
-        <path d="M16 58 H284 M28 50 L70 46 110 40 150 42 190 28 230 22 270 14" class="curve"/>
-        <?= $skDots([[28, 50], [70, 46], [110, 40], [150, 42], [190, 28], [230, 22], [270, 14]], 6) ?>
-      </svg>
-      <h2><?= $skName('Quant Trading Atlas') ?></h2>
-      <p><?= $h($t('Systematic trading research: market data, performance and risk, trend, mean reversion and momentum, portfolio construction, orders and execution, backtesting and walk-forward validation. For education, not investment advice. All 60 English lessons are written. The Chinese translation is not yet.')) ?></p>
-      <?= $skStats('quant') ?>
-      <span class="open"><?= $h($t('Open')) ?> →</span>
-    </a>
-    <a class="card" href="europe/<?= $L ?>">
-      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
-        <path d="M16 40 H284" class="curve"/>
-        <?= $skDots([[36, 40], [88, 40], [140, 40], [196, 40], [252, 40]], 6.5) ?>
-      </svg>
-      <h2><?= $skName('European History Atlas') ?></h2>
-      <p><?= $h($t('European history in depth: evidence and argument, Greece and Rome, medieval Europe, the reformations, states and empires, revolutions, industry and nations, the world wars, and Europe since 1945. For study, not a national myth. All 60 English lessons are written. The Chinese translation is not yet.')) ?></p>
-      <?= $skStats('europe') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>
   </div>
