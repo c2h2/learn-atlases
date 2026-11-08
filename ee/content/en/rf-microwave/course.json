@@ -7,12 +7,25 @@
   "order": 210,
   "tagline": "Transmission lines and the Smith chart, matching, waveguides, S-parameters, microwave circuits and antennas",
   "summary": "At high frequencies every wire is a transmission line. This course treats transmission lines and the Smith chart, impedance matching, waveguides, scattering parameters, passive microwave components, amplifier design and antennas, ending with the link budgets of radio and radar systems.",
-  "overview": [],
+  "overview": [
+    "Above a few hundred megahertz the wavelength becomes comparable with the size of the circuit: a $10\\,\\mathrm{cm}$ trace is a quarter-wavelength long at $750\\,\\mathrm{MHz}$ on a circuit board, a via has inductance that matters, and a resistor's leads radiate. **RF and microwave engineering** is the discipline of designing circuits in that regime, where voltages and currents are waves, components are described by how they reflect and transmit those waves, and the interconnections are as much a part of the design as the transistors. Mobile phones, Wi-Fi and Bluetooth radios, GPS receivers, satellite links, radar sensors in cars and the test equipment that characterises them are all built on it.",
+    "The course starts where [[electromagnetics/transmission-lines]] stops. We take the terminated line and the Smith chart as the working tools, use them to design matching networks of lumped elements, stubs and quarter-wave sections, and then leave TEM lines behind for hollow waveguides and their modes. The scattering matrix replaces the impedance matrix as the language of networks, and with it we analyse the passive building blocks — power dividers, couplers, hybrids, resonators and filters — and design transistor amplifiers for gain, stability and low noise. The last two chapters turn outward: antennas convert guided waves into radiation, and the Friis and radar equations combine antennas, propagation, amplifiers and noise into the link budget of a complete system.",
+    "What makes the subject hard is the number of equivalent descriptions that must be kept in mind at once — impedance and admittance, $Z$ and $S$ matrices, voltages and power waves, linear and decibel quantities — and the fact that every real component departs from its ideal model at high enough frequency. The cure is to move between the algebra and the Smith chart until each formula has a picture, to write the reference impedance and reference plane next to every reflection coefficient, and to check designs numerically over the whole band, not only at the centre frequency."
+  ],
   "prerequisites": [
     "electromagnetics",
     "circuits-2"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Calculate reflection coefficients, standing-wave ratios, input impedances and delivered power on lossless and lossy lines, and carry out these calculations graphically on the Smith chart.",
+    "Design lumped L-section, single-stub, double-stub and quarter-wave matching networks, and estimate their bandwidth with the Bode–Fano limit.",
+    "Derive the TE and TM modes of rectangular and circular waveguides, compute cutoff frequencies, guide wavelength, wave impedance and attenuation, and choose a guide for a given band.",
+    "Describe microwave networks by impedance, admittance, scattering and transmission matrices, test them for reciprocity and losslessness, shift reference planes, and solve them with signal-flow graphs.",
+    "Analyse and design Wilkinson dividers, branch-line and coupled-line couplers, cavity and transmission-line resonators, and stepped-impedance and coupled-resonator filters.",
+    "Assess the stability of a transistor from its S-parameters, design amplifiers for maximum or specified gain with constant-gain circles, and design low-noise amplifiers with noise circles.",
+    "Derive the fields of a Hertzian dipole and the half-wave dipole, and compute radiation resistance, directivity, gain, effective aperture and the patterns of uniform arrays.",
+    "Construct the link budget of a radio link with the Friis equation and system noise temperature, and use the radar equation to estimate the range of a radar."
+  ],
   "chapters": [
     {
       "slug": "lines-smith-chart",
@@ -82,7 +95,127 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1888,
+      "title": "Hertz demonstrates electromagnetic waves",
+      "detail": "Heinrich Hertz generated and detected waves of about one metre to a few metres wavelength with spark-gap oscillators and resonant loops, and showed that they reflect, refract and form standing waves, confirming Maxwell's theory.",
+      "people": [
+        "Heinrich Hertz"
+      ]
+    },
+    {
+      "year": 1897,
+      "title": "Waves in hollow tubes",
+      "detail": "Lord Rayleigh showed theoretically that electromagnetic waves can propagate inside a hollow conducting tube only in discrete modes, each above its own cutoff frequency.",
+      "people": [
+        "Lord Rayleigh"
+      ]
+    },
+    {
+      "year": 1926,
+      "title": "The Yagi–Uda antenna",
+      "detail": "Shintaro Uda, working with Hidetsugu Yagi at Tohoku Imperial University, published the directive array of a driven dipole with parasitic reflector and director elements; Yagi's 1928 paper in English made it known worldwide.",
+      "people": [
+        "Shintaro Uda",
+        "Hidetsugu Yagi"
+      ]
+    },
+    {
+      "year": 1935,
+      "title": "The Daventry experiment",
+      "detail": "Robert Watson-Watt and Arnold Wilkins detected an aircraft by the radio waves it reflected from the BBC transmitter at Daventry, leading directly to the Chain Home radar network.",
+      "people": [
+        "Robert Watson-Watt",
+        "Arnold Wilkins"
+      ]
+    },
+    {
+      "year": 1936,
+      "title": "Waveguides demonstrated",
+      "detail": "George Southworth at Bell Telephone Laboratories and Wilmer Barrow at MIT independently demonstrated transmission through hollow metal waveguides and reported their results in 1936.",
+      "people": [
+        "George C. Southworth",
+        "Wilmer L. Barrow"
+      ]
+    },
+    {
+      "year": 1939,
+      "title": "The Smith chart",
+      "detail": "Phillip H. Smith of Bell Telephone Laboratories published his transmission-line calculator in Electronics, mapping normalised impedance onto the reflection-coefficient plane.",
+      "people": [
+        "Phillip H. Smith"
+      ]
+    },
+    {
+      "year": 1940,
+      "title": "The cavity magnetron",
+      "detail": "John Randall and Harry Boot at the University of Birmingham built a resonant-cavity magnetron giving kilowatts at about 10 cm wavelength; brought to the United States by the Tizard Mission, it led to the founding of the MIT Radiation Laboratory.",
+      "people": [
+        "John Randall",
+        "Harry Boot"
+      ]
+    },
+    {
+      "year": 1946,
+      "title": "The Friis transmission formula",
+      "detail": "Harald T. Friis of Bell Laboratories published a simple formula for the power received over a free-space radio link in terms of the antennas' effective areas, the basis of every link budget.",
+      "people": [
+        "Harald T. Friis"
+      ]
+    },
+    {
+      "year": 1965,
+      "title": "Power waves and the scattering matrix",
+      "detail": "Kaneyuki Kurokawa defined power waves for arbitrary complex reference impedances, giving the scattering parameters used for amplifier design a general foundation.",
+      "people": [
+        "Kaneyuki Kurokawa"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Microwave Engineering",
+      "authors": "David M. Pozar",
+      "year": 2012,
+      "note": "The standard undergraduate and first-graduate text (4th edition); covers every chapter of this course with clear derivations and many design examples."
+    },
+    {
+      "title": "Foundations for Microwave Engineering",
+      "authors": "Robert E. Collin",
+      "year": 1992,
+      "note": "A more rigorous treatment of waveguide modes, network theory and resonators, useful when Pozar's derivations are too brief."
+    },
+    {
+      "title": "Microwave Transistor Amplifiers: Analysis and Design",
+      "authors": "Guillermo Gonzalez",
+      "year": 1997,
+      "note": "The classic on S-parameter amplifier design: stability, gain and noise circles, broadband and power amplifiers, with worked Smith-chart designs."
+    },
+    {
+      "title": "RF Circuit Design: Theory and Applications",
+      "authors": "Reinhold Ludwig, Gene Bogdanov",
+      "year": 2009,
+      "note": "A gentler, circuit-oriented introduction with emphasis on lumped matching networks, Smith-chart work and practical amplifier design."
+    },
+    {
+      "title": "Antenna Theory: Analysis and Design",
+      "authors": "Constantine A. Balanis",
+      "year": 2016,
+      "note": "The standard antenna text (4th edition): radiation integrals, wire antennas, arrays, apertures and microstrip antennas in great detail."
+    },
+    {
+      "title": "Microwave Filters, Impedance-Matching Networks, and Coupling Structures",
+      "authors": "George L. Matthaei, Leo Young, E. M. T. Jones",
+      "year": 1964,
+      "note": "The designer's reference for filter prototypes, coupled-resonator filters and broadband matching; still the source of many tables."
+    },
+    {
+      "title": "Introduction to Radar Systems",
+      "authors": "Merrill I. Skolnik",
+      "year": 2001,
+      "note": "The standard radar text (3rd edition): the radar equation, detection in noise, CW and pulse-Doppler radar and tracking."
+    }
+  ],
   "next": []
 }
