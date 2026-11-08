@@ -7,12 +7,26 @@
   "order": 220,
   "tagline": "Optical waves, waveguides and fibres, light sources, photodetectors and optical communication",
   "summary": "Light carries most of the world’s data and converts sunlight into electricity. This course treats light as an electromagnetic wave, guides it in waveguides and optical fibres, and covers light-emitting diodes and lasers, photodetectors and receivers, optical communication systems and photovoltaics.",
-  "overview": [],
+  "overview": [
+    "**Photonics** is the engineering of light: generating it, guiding it, modulating it and detecting it. At optical frequencies, around $200$–$750\\,\\mathrm{THz}$, the electromagnetic waves of [[electromagnetics]] have wavelengths of about a micrometre, so a thread of glass thinner than a hair can guide them, and each photon carries an energy of an electronvolt or two — the scale of the band gaps of [[semiconductor-devices]]. These two facts make light both a wave to be guided like a microwave and a stream of quanta to be emitted and absorbed by electrons in semiconductors, and the subject lives at their junction.",
+    "Practically, photonics carries almost all of the world's long-distance data: every intercontinental cable, every link between servers in a data centre and most connections to homes run over optical fibre, at rates of tens of terabits per second per fibre. The same physics converts sunlight into electricity in photovoltaic panels, now the fastest-growing source of electrical energy, and appears in lidar, barcode readers, displays, lighting and sensing.",
+    "The course follows a signal along an optical link. We start with light as an electromagnetic wave — refractive index, group velocity, interference, coherence, diffraction and polarisation — and then confine it, first in planar dielectric waveguides, the building blocks of integrated photonics, and then in optical fibres, where attenuation and dispersion limit how far and how fast data can travel. Next come the devices at the two ends: light-emitting diodes and semiconductor lasers, and photodiodes, avalanche photodiodes and the noise that sets receiver sensitivity. The penultimate chapter assembles these into communication systems with wavelength-division multiplexing and optical amplifiers. The last chapter turns the photodiode round into a power source: the solar cell, its efficiency limits and photovoltaic systems.",
+    "What makes the subject hard is the constant change of viewpoint — rays, waves, modes and photons — and the bookkeeping of units across many orders of magnitude: wavelengths in nanometres and micrometres, frequencies in terahertz, losses in decibels per kilometre, dispersion in picoseconds per nanometre per kilometre, powers in dBm. Keep track of which picture is valid (ray optics only when structures are many wavelengths across; photon statistics only when the counts are small), convert everything to SI before computing, and use $E[\\mathrm{eV}] = 1.240/\\lambda[\\mathrm{\\mu m}]$ to move between energy and wavelength."
+  ],
   "prerequisites": [
     "electromagnetics",
     "semiconductor-devices"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe optical waves by refractive index, phase and group velocity, intensity and photon flux, and analyse interference in two-beam and Fabry–Pérot interferometers.",
+    "Relate coherence time and length to spectral width, and calculate Fraunhofer diffraction patterns and the propagation of Gaussian beams.",
+    "Derive the guided modes of a symmetric slab waveguide, determine its number of modes and single-mode condition, and explain directional couplers, Mach–Zehnder interferometers and ring resonators.",
+    "Calculate the numerical aperture, V-number, mode-field diameter, attenuation and modal and chromatic dispersion of step- and graded-index fibres, and the resulting bit-rate–distance limits.",
+    "Explain spontaneous and stimulated emission with the Einstein coefficients, and analyse LEDs and semiconductor lasers with the threshold condition and the rate equations.",
+    "Analyse p-i-n and avalanche photodiodes, their bandwidth and noise, and compute the sensitivity and bit error rate of an optical receiver.",
+    "Design an optical link with power, rise-time and dispersion budgets, and evaluate WDM systems with erbium-doped amplifiers by their optical signal-to-noise ratio.",
+    "Derive the solar-cell characteristic with parasitic resistances and the Shockley–Queisser limit, and size photovoltaic modules and systems for a given energy yield."
+  ],
   "chapters": [
     {
       "slug": "optical-waves",
@@ -73,7 +87,147 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1803,
+      "title": "Interference of light",
+      "detail": "Thomas Young presented his experiments on the interference of light to the Royal Society, including fringes from two closely spaced sources, as evidence that light is a wave.",
+      "people": [
+        "Thomas Young"
+      ]
+    },
+    {
+      "year": 1842,
+      "title": "Light guided in a water jet",
+      "detail": "Daniel Colladon showed in Geneva that light is trapped by total internal reflection inside a curved jet of water, the first demonstration of a light guide.",
+      "people": [
+        "Daniel Colladon"
+      ]
+    },
+    {
+      "year": 1865,
+      "title": "Light is an electromagnetic wave",
+      "detail": "James Clerk Maxwell's 'A Dynamical Theory of the Electromagnetic Field' predicted waves travelling at a speed equal to the measured speed of light and identified light as such a wave.",
+      "people": [
+        "James Clerk Maxwell"
+      ]
+    },
+    {
+      "year": 1917,
+      "title": "Stimulated emission",
+      "detail": "Albert Einstein introduced the coefficients of absorption, spontaneous emission and stimulated emission to derive Planck's radiation law, the theoretical basis of the laser.",
+      "people": [
+        "Albert Einstein"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "The silicon solar cell",
+      "detail": "Daryl Chapin, Calvin Fuller and Gerald Pearson at Bell Laboratories announced a silicon pn-junction solar cell with an efficiency of about 6 %.",
+      "people": [
+        "Daryl Chapin",
+        "Calvin Fuller",
+        "Gerald Pearson"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "The first laser",
+      "detail": "Theodore Maiman at Hughes Research Laboratories obtained pulsed laser action from a flash-pumped ruby crystal.",
+      "people": [
+        "Theodore Maiman"
+      ]
+    },
+    {
+      "year": 1962,
+      "title": "Semiconductor lasers",
+      "detail": "Robert N. Hall's group at General Electric, followed within weeks by groups at IBM and MIT Lincoln Laboratory, demonstrated pulsed lasing from GaAs pn junctions at low temperature; Nick Holonyak made a visible-light GaAsP laser diode the same year.",
+      "people": [
+        "Robert N. Hall",
+        "Nick Holonyak"
+      ]
+    },
+    {
+      "year": 1966,
+      "title": "Glass fibres for communication",
+      "detail": "Charles Kao and George Hockham argued that the loss of glass fibres was due to impurities and could be reduced below 20 dB/km, making optical-fibre communication practical; Kao received the 2009 Nobel Prize in Physics.",
+      "people": [
+        "Charles Kao",
+        "George Hockham"
+      ]
+    },
+    {
+      "year": 1970,
+      "title": "Low-loss fibre and room-temperature lasers",
+      "detail": "Robert Maurer, Donald Keck and Peter Schultz at Corning made a fibre with a loss below 20 dB/km, and continuous room-temperature operation of double-heterostructure lasers was achieved by Zhores Alferov's group and by Izuo Hayashi and Morton Panish at Bell Laboratories.",
+      "people": [
+        "Robert Maurer",
+        "Donald Keck",
+        "Peter Schultz",
+        "Zhores Alferov",
+        "Izuo Hayashi",
+        "Morton Panish"
+      ]
+    },
+    {
+      "year": 1987,
+      "title": "The erbium-doped fibre amplifier",
+      "detail": "Groups led by David Payne at the University of Southampton and by Emmanuel Desurvire at Bell Laboratories reported erbium-doped fibre amplifiers at 1.55 µm, which made long-haul wavelength-division multiplexing possible.",
+      "people": [
+        "David Payne",
+        "Emmanuel Desurvire"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Fundamentals of Photonics",
+      "authors": "Bahaa E. A. Saleh and Malvin C. Teich",
+      "year": 2019,
+      "note": "The standard comprehensive text (3rd edition): wave and beam optics, waveguides and fibres, lasers, semiconductor sources and detectors, with clear figures; the main reference for this course."
+    },
+    {
+      "title": "Optoelectronics and Photonics: Principles and Practices",
+      "authors": "Safa O. Kasap",
+      "year": 2013,
+      "note": "An undergraduate-level text (2nd edition) with many worked examples on waveguides, LEDs, lasers, photodetectors and solar cells."
+    },
+    {
+      "title": "Fiber-Optic Communication Systems",
+      "authors": "Govind P. Agrawal",
+      "year": 2021,
+      "note": "The reference on fibre propagation, dispersion, optical amplifiers, receivers and system design (5th edition)."
+    },
+    {
+      "title": "Optical Fiber Communications",
+      "authors": "Gerd Keiser",
+      "year": 2021,
+      "note": "A practical, engineering-oriented treatment of fibres, components, link budgets and WDM networks."
+    },
+    {
+      "title": "Diode Lasers and Photonic Integrated Circuits",
+      "authors": "Larry A. Coldren, Scott W. Corzine and Milan L. Mašanović",
+      "year": 2012,
+      "note": "Rigorous graduate-level treatment of semiconductor lasers, gain, rate equations, modulation and photonic integrated circuits."
+    },
+    {
+      "title": "Fundamentals of Optical Waveguides",
+      "authors": "Katsunari Okamoto",
+      "year": 2006,
+      "note": "Detailed mode theory of slab, channel and fibre waveguides and of planar lightwave circuits."
+    },
+    {
+      "title": "Optics",
+      "authors": "Eugene Hecht",
+      "year": 2017,
+      "note": "The classic undergraduate optics text (5th edition) for interference, diffraction, coherence and polarisation."
+    },
+    {
+      "title": "Solar Cells: Operating Principles, Technology and System Applications",
+      "authors": "Martin A. Green",
+      "year": 1982,
+      "note": "A concise, still widely used introduction to solar-cell physics, losses and efficiency limits by a leading researcher in silicon photovoltaics."
+    }
+  ],
   "next": []
 }
