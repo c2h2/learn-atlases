@@ -7,11 +7,25 @@
   "order": 145,
   "tagline": "Probability for engineers, random processes, correlation and power spectra, noise and optimal filtering",
   "summary": "Noise limits every measurement and every communication link. This course reviews probability for engineers and develops random processes: stationarity, correlation functions and power spectral densities, random signals in linear systems, Gaussian and thermal noise, and the matched, Wiener and Kalman filters that extract signals from noise.",
-  "overview": [],
+  "overview": [
+    "Every measurement and every communication link is limited by **noise**: the thermal agitation of electrons in a resistor, the granularity of current crossing a junction, the rounding error of a converter, the interference of other users. Noise cannot be predicted sample by sample, yet its averages — its mean, its power, the way that power is spread over frequency — are as stable and measurable as a resistance. This course develops the theory that makes such statements precise and turns them into design numbers: how many bits a converter really resolves, how far a radar can see, how many errors a receiver makes, and how much a filter can clean up a signal.",
+    "The course begins with **probability for engineers** — random variables, the Gaussian and its $Q$-function, joint distributions and functions of random variables — and then moves from numbers to waveforms with **random processes**, stationarity and ergodicity. The central chapters describe a stationary process by its **autocorrelation** and its **power spectral density**, linked by the Wiener–Khinchin theorem, and show what an LTI system does to them: the output spectrum is $\\abs{H}^2$ times the input spectrum, the most used result in the theory of noise. With these tools we model **thermal and shot noise** and band-pass noise from physics, and finish with the optimal linear processors that extract signals from noise: the **matched filter**, the **Wiener filter**, least squares and the **Kalman filter**.",
+    "The subject is hard mainly because two kinds of average must be kept apart: the ensemble average over all possible waveforms, which the theory uses, and the time average over the one recording that an engineer actually has; ergodicity is the bridge between them. A second difficulty is bookkeeping — one-sided versus two-sided spectra, $N_0$ versus $N_0/2$, power versus amplitude, hertz versus radians per second. Work each result through a concrete example with numbers, check it with a short simulation, and keep track of the units of every spectral density."
+  ],
   "prerequisites": [
     "signals-systems"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Compute probabilities, means, variances and error probabilities for discrete, continuous and Gaussian random variables, using the $Q$-function where needed.",
+    "Describe pairs of random variables by joint distributions, covariance and the correlation coefficient, and find the distribution of a function of random variables.",
+    "Classify random processes as stationary, wide-sense stationary or ergodic, and compute the mean and autocorrelation of the standard processes.",
+    "Derive the Wiener–Khinchin theorem and compute power spectral densities and cross-spectra, including the spectrum of a random binary data signal.",
+    "Calculate the output mean, autocorrelation and spectrum of an LTI system driven by a random input, and use the noise-equivalent bandwidth.",
+    "Model thermal and shot noise from first principles, and analyse band-pass noise through its in-phase and quadrature components and its Rayleigh envelope.",
+    "Derive the matched filter and the Wiener filter, and evaluate the signal-to-noise ratio and mean-square error they achieve.",
+    "Formulate and solve least-squares and minimum mean-square-error estimation problems, and design a discrete Kalman filter for a linear state-space model.",
+    "Verify noise calculations by simulating random signals and estimating their statistics and spectra from data."
+  ],
   "chapters": [
     {
       "slug": "probability-for-engineers",
@@ -70,8 +84,137 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1809,
+      "title": "The law of errors and least squares",
+      "detail": "In Theoria motus Carl Friedrich Gauss derived the normal distribution as the law of observational errors and justified the method of least squares, which Adrien-Marie Legendre had published in 1805.",
+      "people": [
+        "Carl Friedrich Gauss",
+        "Adrien-Marie Legendre"
+      ]
+    },
+    {
+      "year": 1905,
+      "title": "Brownian motion",
+      "detail": "Albert Einstein's analysis of Brownian motion, followed by Marian Smoluchowski's in 1906, treated a physical random process quantitatively and predicted that mean-square displacement grows linearly with time.",
+      "people": [
+        "Albert Einstein",
+        "Marian Smoluchowski"
+      ]
+    },
+    {
+      "year": 1918,
+      "title": "Shot noise predicted",
+      "detail": "Walter Schottky showed that the discreteness of electronic charge makes the current of a vacuum tube fluctuate, with a mean-square value proportional to the current and the bandwidth.",
+      "people": [
+        "Walter Schottky"
+      ]
+    },
+    {
+      "year": 1928,
+      "title": "Thermal noise measured and explained",
+      "detail": "John B. Johnson reported measurements of the noise voltage of resistors at Bell Laboratories, and Harry Nyquist derived its spectral density $4kTR$ from thermodynamics in a companion paper in Physical Review.",
+      "people": [
+        "John B. Johnson",
+        "Harry Nyquist"
+      ]
+    },
+    {
+      "year": 1930,
+      "title": "Generalised harmonic analysis",
+      "detail": "Norbert Wiener's paper in Acta Mathematica related the autocorrelation of a function to its power spectrum; Aleksandr Khinchin proved the corresponding theorem for stationary random processes in 1934.",
+      "people": [
+        "Norbert Wiener",
+        "Aleksandr Khinchin"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Axioms of probability",
+      "detail": "Andrey Kolmogorov's Grundbegriffe der Wahrscheinlichkeitsrechnung founded probability on measure theory, the basis on which the theory of random processes was built.",
+      "people": [
+        "Andrey Kolmogorov"
+      ]
+    },
+    {
+      "year": 1943,
+      "title": "The matched filter",
+      "detail": "Dwight O. North at RCA Laboratories derived the filter that maximises the signal-to-noise ratio of a known pulse in noise, in a classified report on radar detection.",
+      "people": [
+        "Dwight O. North"
+      ]
+    },
+    {
+      "year": 1944,
+      "title": "Mathematical analysis of random noise",
+      "detail": "Stephen O. Rice's two-part paper in the Bell System Technical Journal (1944–45) set out the statistics of filtered Gaussian noise, band-pass noise and the envelope of a sinusoid plus noise.",
+      "people": [
+        "Stephen O. Rice"
+      ]
+    },
+    {
+      "year": 1949,
+      "title": "Wiener's filtering theory published",
+      "detail": "Norbert Wiener's wartime report on optimal prediction and filtering of stationary time series appeared as the book Extrapolation, Interpolation, and Smoothing of Stationary Time Series.",
+      "people": [
+        "Norbert Wiener"
+      ]
+    },
+    {
+      "year": 1960,
+      "title": "The Kalman filter",
+      "detail": "Rudolf E. Kálmán published a recursive solution of the linear filtering problem in state-space form; with Richard Bucy he gave the continuous-time version in 1961.",
+      "people": [
+        "Rudolf E. Kálmán",
+        "Richard S. Bucy"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Probability, Random Variables and Stochastic Processes (4th ed.)",
+      "authors": "Athanasios Papoulis, S. Unnikrishna Pillai",
+      "year": 2002,
+      "note": "The classic engineering text on probability and random processes; thorough on correlation, spectra and linear systems."
+    },
+    {
+      "title": "Probability and Random Processes for Electrical and Computer Engineers",
+      "authors": "John A. Gubner",
+      "year": 2006,
+      "note": "A careful, modern undergraduate text with many worked problems on random variables, processes and estimation."
+    },
+    {
+      "title": "Probability, Statistics, and Random Processes for Electrical Engineering (3rd ed.)",
+      "authors": "Alberto Leon-Garcia",
+      "year": 2008,
+      "note": "Accessible and example-rich, with good chapters on random signals in linear systems and on Markov chains."
+    },
+    {
+      "title": "Probabilistic Methods of Signal and System Analysis (3rd ed.)",
+      "authors": "George R. Cooper, Clare D. McGillem",
+      "year": 1999,
+      "note": "A gentle introduction aimed at signals courses, strong on noise in systems and on the noise-equivalent bandwidth."
+    },
+    {
+      "title": "Communication Systems (4th ed.)",
+      "authors": "Simon Haykin",
+      "year": 2001,
+      "note": "Its chapters on random processes, band-pass noise and the matched filter show the theory at work in receivers."
+    },
+    {
+      "title": "Fundamentals of Statistical Signal Processing, Volume I: Estimation Theory",
+      "authors": "Steven M. Kay",
+      "year": 1993,
+      "note": "The standard reference for least squares, MMSE estimation and the Kalman filter, with clear derivations."
+    },
+    {
+      "title": "Low-Noise Electronic System Design",
+      "authors": "C. D. Motchenbacher, J. A. Connelly",
+      "year": 1993,
+      "note": "Thermal, shot and flicker noise in real components and circuits, for readers who want to apply the noise models to hardware."
+    }
+  ],
   "next": [
     "communication-systems",
     "information-theory",
