@@ -31,9 +31,9 @@
     "brand": "Normix"
   },
   "discovery": {
-    "year": null,
+    "year": 1980,
     "by": "Alfa Wassermann, Bologna",
-    "note": "A pyrido-imidazole derivative of rifamycin SV designed to be essentially non-absorbed from the gut."
+    "note": "A pyrido-imidazole derivative of rifamycin SV designed to be essentially non-absorbed from the gut. Year is the priority date of the Alfa Farmaceutici patent on imidazo-rifamycin derivatives (US 4,341,785; Marchi and Montecchi)."
   },
   "generic": true,
   "who_essential": false,
@@ -117,6 +117,10 @@
     {
       "title": "DailyMed – rifaximin labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=rifaximin"
+    },
+    {
+      "title": "Google Patents: US4341785A (imidazo-rifamycin derivatives)",
+      "url": "https://patents.google.com/patent/US4341785A/en"
     }
   ],
   "stage": "written"
