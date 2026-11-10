@@ -1,36 +1,126 @@
 {
   "slug": "alectinib",
   "name": "Alectinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CH5424802",
+    "RO5424802",
+    "AF802"
+  ],
+  "brands": [
+    "Alecensa"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "ALK tyrosine kinase inhibitor (second generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules 600 mg twice daily with food",
+  "targets": [
+    "ALK",
+    "RET"
+  ],
+  "origin": "synthetic",
+  "originator": "Chugai Pharmaceutical (Roche group)",
+  "owner": "Roche / Chugai",
+  "first_approval": {
+    "year": 2014,
+    "agency": "MHLW",
+    "country": "Japan",
+    "brand": "Alecensa"
+  },
+  "discovery": {
+    "year": 2011,
+    "by": "Chugai Pharmaceutical, Kamakura",
+    "note": "A benzo[b]carbazolone ALK inhibitor active against crizotinib-resistant mutations and not a P-glycoprotein substrate, giving good brain penetration."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Brain-penetrant second-generation ALK inhibitor and first-line standard for ALK+ NSCLC",
+  "summary": "Alectinib is a highly selective, brain-penetrant ALK inhibitor. It outperformed crizotinib as first-line therapy for ALK-positive non-small-cell lung cancer, notably reducing brain progression, and in 2024 became the first ALK inhibitor approved as adjuvant therapy after surgery.",
+  "mechanism": [
+    "Alectinib binds the ATP site of ALK and inhibits fusion kinases including many crizotinib-resistant mutants (L1196M, C1156Y, F1174L), blocking STAT3 and PI3K–AKT signalling.",
+    "Because it is not transported by P-glycoprotein efflux pumps, it reaches effective concentrations in cerebrospinal fluid; its major metabolite M4 is similarly active."
+  ],
+  "uses": [
+    "First-line and post-crizotinib treatment of ALK-positive metastatic NSCLC",
+    "Adjuvant treatment after resection of ALK-positive NSCLC (stage IB–IIIA)",
+    "ALK-positive anaplastic large-cell lymphoma (Japan)"
+  ],
+  "history": [
+    {
+      "year": 2011,
+      "title": "Preclinical report",
+      "detail": "Chugai publishes CH5424802 as a selective ALK inhibitor (Cancer Cell)."
+    },
+    {
+      "year": 2014,
+      "title": "Japan approval",
+      "detail": "Approved in Japan for ALK-positive NSCLC."
+    },
+    {
+      "year": 2015,
+      "title": "FDA accelerated approval",
+      "detail": "Approved for ALK-positive NSCLC after crizotinib."
+    },
+    {
+      "year": 2017,
+      "title": "ALEX",
+      "detail": "ALEX shows superior progression-free survival over crizotinib; FDA approves first-line use."
+    },
+    {
+      "year": 2024,
+      "title": "ALINA",
+      "detail": "FDA approves adjuvant alectinib after the ALINA trial reduced the risk of recurrence or death by about 76%."
+    }
+  ],
+  "pk": {
+    "half_life": "about 33 hours",
+    "bioavailability": "about 37% with food",
+    "metabolism": "hepatic CYP3A4 to active metabolite M4",
+    "excretion": "faecal (about 98%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "constipation",
+      "fatigue",
+      "myalgia",
+      "oedema",
+      "anaemia",
+      "rash and photosensitivity"
+    ],
+    "serious": [
+      "hepatotoxicity",
+      "interstitial lung disease",
+      "bradycardia",
+      "severe myalgia and CK elevation",
+      "renal impairment"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "In ALEX, the 12-month cumulative incidence of CNS progression was about 9% with alectinib versus 41% with crizotinib."
+  ],
+  "related": [
+    "crizotinib",
+    "lorlatinib",
+    "osimertinib"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Alectinib",
+      "url": "https://en.wikipedia.org/wiki/Alectinib"
+    },
+    {
+      "title": "DailyMed: alectinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ALECTINIB"
+    },
+    {
+      "title": "EMA EPAR: Alecensa",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/alecensa"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,145 @@
 {
   "slug": "olaparib",
   "name": "Olaparib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AZD2281",
+    "KU-0059436"
+  ],
+  "brands": [
+    "Lynparza"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Poly(ADP-ribose) polymerase (PARP) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets twice daily (capsule formulation discontinued)",
+  "targets": [
+    "PARP1",
+    "PARP2",
+    "PARP3"
+  ],
+  "origin": "synthetic",
+  "originator": "KuDOS Pharmaceuticals (Cambridge, UK; Stephen Jackson); developed by AstraZeneca",
+  "owner": "AstraZeneca (co-commercialised with Merck & Co.)",
+  "first_approval": {
+    "year": 2014,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Lynparza"
+  },
+  "discovery": {
+    "year": 2005,
+    "by": "KuDOS Pharmaceuticals; synthetic lethality with BRCA shown by Alan Ashworth's and Thomas Helleday's groups",
+    "note": "A phthalazinone PARP inhibitor; AstraZeneca acquired KuDOS in 2005."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First PARP inhibitor, exploiting synthetic lethality in BRCA-mutated cancers",
+  "summary": "Olaparib is an oral PARP inhibitor that kills cancer cells unable to repair DNA by homologous recombination, notably those with BRCA1 or BRCA2 mutations — a concept known as synthetic lethality. It is approved for ovarian, breast, pancreatic and prostate cancers, including as maintenance and adjuvant therapy.",
+  "mechanism": [
+    "PARP1 and PARP2 detect single-strand DNA breaks and recruit repair factors. Olaparib inhibits PARP catalytic activity and traps PARP on DNA, so unrepaired lesions and trapped complexes are converted into double-strand breaks when replication forks collide with them.",
+    "Normal cells repair these breaks by homologous recombination, but cells lacking BRCA1, BRCA2 or other homologous-recombination genes cannot, and they die — synthetic lethality. Reversion mutations restoring BRCA function are a common cause of resistance."
+  ],
+  "uses": [
+    "Maintenance treatment of advanced ovarian, fallopian tube or primary peritoneal cancer (BRCA-mutated first-line, with bevacizumab in HRD-positive disease, or platinum-sensitive relapse)",
+    "Adjuvant treatment of germline BRCA-mutated HER2-negative high-risk early breast cancer",
+    "Germline BRCA-mutated HER2-negative metastatic breast cancer",
+    "Maintenance in germline BRCA-mutated metastatic pancreatic cancer",
+    "HRR gene-mutated metastatic castration-resistant prostate cancer (alone or with abiraterone)",
+    "Endometrial cancer maintenance with durvalumab (EU)"
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "title": "Synthetic lethality",
+      "detail": "Bryant et al. and Farmer et al. (Nature) show BRCA-deficient cells are exquisitely sensitive to PARP inhibition; AstraZeneca acquires KuDOS."
+    },
+    {
+      "year": 2009,
+      "title": "Phase I",
+      "detail": "Fong et al. (NEJM) report responses in BRCA mutation carriers."
+    },
+    {
+      "year": 2014,
+      "title": "First approvals",
+      "detail": "EMA (December 16) and FDA (December 19) approve olaparib capsules for BRCA-mutated ovarian cancer."
+    },
+    {
+      "year": 2017,
+      "title": "Tablets and Merck deal",
+      "detail": "Tablet formulation approved; AstraZeneca and Merck form a global collaboration."
+    },
+    {
+      "year": 2018,
+      "title": "Breast cancer and SOLO-1",
+      "detail": "Approvals for gBRCA metastatic breast cancer (OlympiAD) and first-line ovarian maintenance."
+    },
+    {
+      "year": 2019,
+      "title": "Pancreatic cancer",
+      "detail": "POLO leads to approval for gBRCA metastatic pancreatic cancer maintenance."
+    },
+    {
+      "year": 2020,
+      "title": "Prostate cancer",
+      "detail": "PROfound leads to approval in HRR-mutated mCRPC."
+    },
+    {
+      "year": 2022,
+      "title": "Adjuvant breast cancer",
+      "detail": "OlympiA leads to adjuvant approval in high-risk gBRCA early breast cancer."
+    }
+  ],
+  "pk": {
+    "half_life": "about 15 hours (tablet)",
+    "bioavailability": "oral, rapidly absorbed",
+    "metabolism": "hepatic CYP3A4/5",
+    "excretion": "renal (about 44%) and faecal (about 42%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea and vomiting",
+      "fatigue",
+      "anaemia",
+      "diarrhoea",
+      "decreased appetite",
+      "dysgeusia"
+    ],
+    "serious": [
+      "myelodysplastic syndrome and acute myeloid leukaemia",
+      "pneumonitis",
+      "venous thromboembolism",
+      "severe anaemia requiring transfusion"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Olaparib was the first approved drug based on the principle of synthetic lethality."
+  ],
+  "related": [
+    "abiraterone",
+    "bevacizumab",
+    "durvalumab",
+    "carboplatin",
+    "enzalutamide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Olaparib",
+      "url": "https://en.wikipedia.org/wiki/Olaparib"
+    },
+    {
+      "title": "DailyMed: olaparib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=OLAPARIB"
+    },
+    {
+      "title": "EMA EPAR: Lynparza",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/lynparza"
+    }
+  ],
+  "stage": "written"
 }

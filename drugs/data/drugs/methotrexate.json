@@ -1,36 +1,156 @@
 {
   "slug": "methotrexate",
   "name": "Methotrexate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "amethopterin",
+    "MTX"
+  ],
+  "brands": [
+    "Trexall",
+    "Otrexup",
+    "Rasuvo",
+    "Jylamvo",
+    "Metoject"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Antifolate antimetabolite (dihydrofolate reductase inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "sc",
+    "intrathecal"
+  ],
+  "route_note": "oral or SC once weekly for autoimmune disease; IV (including high-dose with leucovorin rescue) and intrathecal for cancer",
+  "targets": [
+    "DHFR",
+    "TYMS",
+    "ATIC"
+  ],
+  "origin": "synthetic",
+  "originator": "Lederle Laboratories (Yellapragada Subbarow's group)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1953,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Methotrexate (Lederle)"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1947,
+    "by": "Lederle Laboratories, with Sidney Farber's clinical work on aminopterin",
+    "note": "Folate analogues were synthesised at Lederle; aminopterin produced the first remissions in childhood leukaemia (1948), and the methyl derivative amethopterin replaced it."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Founding antifolate of cancer chemotherapy and anchor drug for rheumatoid arthritis",
+  "summary": "Methotrexate is a folic acid analogue that blocks dihydrofolate reductase, starving cells of the folate cofactors needed to make DNA. At high doses it treats leukaemias, lymphomas, osteosarcoma and choriocarcinoma; at low weekly doses it is the first-line disease-modifying drug for rheumatoid arthritis and is used in psoriasis and other immune diseases.",
+  "mechanism": [
+    "Methotrexate enters cells via the reduced folate carrier and is polyglutamated, which retains it intracellularly. It binds dihydrofolate reductase about 1,000-fold more tightly than folate, depleting tetrahydrofolate needed for thymidylate and purine synthesis and halting DNA synthesis in S phase.",
+    "Leucovorin (folinic acid) bypasses the block and is used to 'rescue' normal cells after high-dose therapy.",
+    "In low-dose autoimmune use, inhibition of AICAR transformylase leads to adenosine accumulation, which has anti-inflammatory effects; this is thought to contribute more than antiproliferative action."
+  ],
+  "uses": [
+    "Acute lymphoblastic leukaemia (including CNS prophylaxis, intrathecal)",
+    "Non-Hodgkin lymphoma and primary CNS lymphoma (high dose)",
+    "Osteosarcoma (high dose with leucovorin)",
+    "Gestational trophoblastic neoplasia",
+    "Breast, head and neck and bladder cancer regimens",
+    "Rheumatoid arthritis, polyarticular juvenile idiopathic arthritis",
+    "Severe psoriasis",
+    "Off-label: ectopic pregnancy, Crohn disease, vasculitis, GVHD prophylaxis"
+  ],
+  "history": [
+    {
+      "year": 1947,
+      "title": "Synthesis",
+      "detail": "Lederle chemists synthesise amethopterin (methotrexate) as part of a folate antagonist programme."
+    },
+    {
+      "year": 1948,
+      "title": "Leukaemia remissions",
+      "detail": "Sidney Farber reports temporary remissions in children with acute leukaemia treated with aminopterin."
+    },
+    {
+      "year": 1953,
+      "title": "FDA approval",
+      "detail": "Methotrexate approved for neoplastic disease."
+    },
+    {
+      "year": 1956,
+      "title": "Choriocarcinoma cure",
+      "detail": "Min Chiu Li and Roy Hertz report the first cures of a metastatic solid tumour (choriocarcinoma) with methotrexate."
+    },
+    {
+      "year": 1972,
+      "title": "Psoriasis",
+      "detail": "FDA approves methotrexate for severe psoriasis."
+    },
+    {
+      "year": 1988,
+      "title": "Rheumatoid arthritis",
+      "detail": "FDA approves methotrexate for rheumatoid arthritis."
+    },
+    {
+      "year": 2001,
+      "title": "Weekly-dosing safety",
+      "detail": "Repeated fatal daily-instead-of-weekly dosing errors lead to labelling and packaging changes in many countries."
+    },
+    {
+      "year": 2019,
+      "title": "EMA review",
+      "detail": "EMA recommends new measures (packaging, alert cards) to prevent daily-dosing errors."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3–10 hours at low dose; 8–15 hours at high dose",
+    "bioavailability": "oral about 60% at low doses, falling at higher doses",
+    "metabolism": "intracellular polyglutamation; partial hepatic hydroxylation to 7-OH-MTX",
+    "excretion": "renal (glomerular filtration and tubular secretion)"
+  },
+  "safety": {
+    "common": [
+      "nausea",
+      "mouth ulcers",
+      "fatigue",
+      "raised liver enzymes",
+      "mild cytopenias"
+    ],
+    "serious": [
+      "myelosuppression",
+      "hepatotoxicity and fibrosis",
+      "pneumonitis",
+      "acute kidney injury with high dose",
+      "severe mucositis and skin reactions",
+      "embryo-fetal toxicity",
+      "serious infections"
+    ],
+    "boxed_warning": "Boxed warning for serious toxic reactions including death, embryo-fetal toxicity and contraindication in pregnancy for non-cancer use; must be given once weekly for non-oncologic indications."
+  },
+  "facts": [
+    "Low-dose regimens for arthritis are taken once a week; daily intake by mistake has caused fatal toxicity.",
+    "Glucarpidase, an enzyme that cleaves methotrexate, is used for toxic plasma levels in patients with renal impairment."
+  ],
+  "related": [
+    "cyclophosphamide",
+    "vincristine",
+    "fluorouracil",
+    "folic-acid",
+    "adalimumab",
+    "leflunomide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Methotrexate",
+      "url": "https://en.wikipedia.org/wiki/Methotrexate"
+    },
+    {
+      "title": "DailyMed: methotrexate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=METHOTREXATE"
+    }
+  ],
+  "stage": "written"
 }

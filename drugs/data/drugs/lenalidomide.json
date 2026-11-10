@@ -1,36 +1,140 @@
 {
   "slug": "lenalidomide",
   "name": "Lenalidomide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CC-5013"
+  ],
+  "brands": [
+    "Revlimid"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Immunomodulatory imide drug (IMiD; cereblon modulator)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules once daily, typically days 1–21 of 28-day cycles; dispensed under a risk-management programme",
+  "targets": [
+    "CRBN",
+    "IKZF1",
+    "IKZF3",
+    "CSNK1A1"
+  ],
+  "origin": "synthetic",
+  "originator": "Celgene",
+  "owner": "Bristol Myers Squibb (Revlimid); generic (many)",
+  "first_approval": {
+    "year": 2005,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Revlimid"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1999,
+    "by": "Celgene (George Muller and colleagues)",
+    "note": "A 4-amino glutarimide analogue of thalidomide with greater immunomodulatory potency and less neurotoxicity and sedation."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Thalidomide analogue that degrades Ikaros proteins; backbone of myeloma therapy",
+  "summary": "Lenalidomide is an oral thalidomide analogue that redirects the cereblon E3 ubiquitin ligase to degrade transcription factors essential for myeloma cells. It is a backbone of multiple myeloma treatment, including long-term maintenance after transplant, and is used in del(5q) myelodysplastic syndrome and several lymphomas.",
+  "mechanism": [
+    "Lenalidomide binds cereblon (CRBN), the substrate receptor of the CRL4 E3 ubiquitin ligase, and acts as a 'molecular glue' that recruits neosubstrates — the lymphoid transcription factors Ikaros (IKZF1) and Aiolos (IKZF3) — for ubiquitination and proteasomal degradation.",
+    "Loss of these factors kills myeloma cells (via IRF4 and MYC downregulation) and de-represses IL-2 in T cells, enhancing T-cell and NK-cell immunity. In del(5q) MDS, degradation of casein kinase 1α is selectively lethal to cells with only one copy of CSNK1A1."
+  ],
+  "uses": [
+    "Multiple myeloma (with dexamethasone, in combinations, and as post-transplant maintenance)",
+    "Transfusion-dependent anaemia in low/intermediate-1-risk MDS with del(5q)",
+    "Mantle cell lymphoma after prior therapy",
+    "Previously treated follicular and marginal zone lymphoma (with rituximab)"
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "title": "FDA approval",
+      "detail": "Approved for del(5q) myelodysplastic syndrome with a restricted distribution programme."
+    },
+    {
+      "year": 2006,
+      "title": "Multiple myeloma",
+      "detail": "Approved with dexamethasone for previously treated myeloma (MM-009/010)."
+    },
+    {
+      "year": 2010,
+      "title": "Cereblon",
+      "detail": "Ito, Handa and colleagues (Science) identify cereblon as the primary target of thalidomide."
+    },
+    {
+      "year": 2014,
+      "title": "Ikaros degradation",
+      "detail": "Krönke et al. and Lu et al. (Science) show lenalidomide induces degradation of IKZF1 and IKZF3."
+    },
+    {
+      "year": 2017,
+      "title": "Maintenance",
+      "detail": "FDA approves lenalidomide maintenance after autologous transplant."
+    },
+    {
+      "year": 2019,
+      "title": "BMS acquisition",
+      "detail": "Bristol-Myers Squibb acquires Celgene for about $74 billion; Revlimid is a central asset."
+    },
+    {
+      "year": 2022,
+      "title": "Volume-limited generics",
+      "detail": "Limited-volume US generics launch under patent settlements; unrestricted entry is permitted from 31 January 2026."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3 hours",
+    "bioavailability": "oral over 90%",
+    "metabolism": "minimal metabolism",
+    "excretion": "renal (about 82% unchanged)"
+  },
+  "safety": {
+    "common": [
+      "neutropenia",
+      "thrombocytopenia",
+      "diarrhoea",
+      "fatigue",
+      "rash",
+      "muscle cramps"
+    ],
+    "serious": [
+      "venous and arterial thromboembolism",
+      "severe birth defects",
+      "second primary malignancies",
+      "tumour flare reaction",
+      "hepatotoxicity",
+      "severe skin reactions"
+    ],
+    "boxed_warning": "Boxed warning for embryo-fetal toxicity (REMS programme), haematological toxicity in del(5q) MDS, and venous and arterial thromboembolism."
+  },
+  "facts": [
+    "It became one of the world's best-selling drugs, with annual Revlimid sales exceeding $12 billion at its peak."
+  ],
+  "related": [
+    "thalidomide",
+    "bortezomib",
+    "dexamethasone",
+    "daratumumab",
+    "rituximab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lenalidomide",
+      "url": "https://en.wikipedia.org/wiki/Lenalidomide"
+    },
+    {
+      "title": "DailyMed: lenalidomide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=LENALIDOMIDE"
+    },
+    {
+      "title": "EMA EPAR: Revlimid",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/revlimid"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,144 @@
 {
   "slug": "lenvatinib",
   "name": "Lenvatinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "E7080",
+    "lenvatinib mesylate"
+  ],
+  "brands": [
+    "Lenvima",
+    "Kisplyx"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Multi-kinase inhibitor (VEGFR1–3, FGFR1–4, PDGFRα, RET, KIT)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules once daily",
+  "targets": [
+    "FLT1",
+    "KDR",
+    "FLT4",
+    "FGFR1",
+    "FGFR2",
+    "FGFR3",
+    "FGFR4",
+    "PDGFRA",
+    "RET",
+    "KIT"
+  ],
+  "origin": "synthetic",
+  "originator": "Eisai",
+  "owner": "Eisai (co-commercialised with Merck & Co.)",
+  "first_approval": {
+    "year": 2015,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Lenvima"
+  },
+  "discovery": {
+    "year": 2008,
+    "by": "Eisai Tsukuba Research Laboratories",
+    "note": "A quinoline carboxamide that binds VEGFR2 in a distinct type V mode and also inhibits FGF receptors."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "VEGFR/FGFR inhibitor for thyroid, liver, kidney and endometrial cancer",
+  "summary": "Lenvatinib is an oral multi-kinase inhibitor of VEGF and FGF receptors, PDGFRα, RET and KIT. It is approved for radioiodine-refractory thyroid cancer and hepatocellular carcinoma, and in combination with pembrolizumab for renal cell and endometrial carcinoma.",
+  "mechanism": [
+    "Lenvatinib binds the ATP site and an adjacent region of VEGFR2 (a 'type V' binding mode), giving potent, rapid inhibition of VEGFR1–3 and anti-angiogenic effects.",
+    "Inhibition of FGFR1–4 may counter FGF-driven escape from VEGF blockade. Anti-angiogenic remodelling of the tumour microenvironment is thought to enhance responses to PD-1 blockade."
+  ],
+  "uses": [
+    "Locally recurrent or metastatic, progressive, radioactive-iodine-refractory differentiated thyroid cancer",
+    "Unresectable hepatocellular carcinoma (first-line)",
+    "Advanced renal cell carcinoma (with pembrolizumab first-line, or with everolimus after anti-angiogenic therapy)",
+    "Advanced endometrial carcinoma that is not MSI-high/dMMR (with pembrolizumab)"
+  ],
+  "history": [
+    {
+      "year": 2008,
+      "title": "Preclinical report",
+      "detail": "Eisai describes E7080 as a VEGFR/FGFR inhibitor."
+    },
+    {
+      "year": 2015,
+      "title": "FDA approval",
+      "detail": "SELECT trial leads to approval for radioiodine-refractory thyroid cancer."
+    },
+    {
+      "year": 2016,
+      "title": "Renal cell carcinoma",
+      "detail": "Approved with everolimus after prior anti-angiogenic therapy."
+    },
+    {
+      "year": 2018,
+      "title": "Liver cancer and Merck deal",
+      "detail": "REFLECT shows non-inferiority to sorafenib in HCC; Eisai and Merck agree a co-development partnership."
+    },
+    {
+      "year": 2019,
+      "title": "Endometrial cancer",
+      "detail": "Accelerated approval with pembrolizumab (full approval in 2021 after Study 309/KEYNOTE-775)."
+    },
+    {
+      "year": 2021,
+      "title": "CLEAR",
+      "detail": "FDA approves lenvatinib plus pembrolizumab first-line for advanced renal cell carcinoma."
+    }
+  ],
+  "pk": {
+    "half_life": "about 28 hours",
+    "bioavailability": "oral, rapidly absorbed",
+    "metabolism": "hepatic CYP3A and aldehyde oxidase; non-enzymatic",
+    "excretion": "faecal (about 64%) and renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hypertension",
+      "fatigue",
+      "diarrhoea",
+      "decreased appetite and weight loss",
+      "proteinuria",
+      "hypothyroidism",
+      "palmar-plantar erythrodysaesthesia"
+    ],
+    "serious": [
+      "arterial thromboembolism",
+      "hepatotoxicity",
+      "renal failure",
+      "cardiac dysfunction",
+      "GI perforation and fistula",
+      "QT prolongation",
+      "haemorrhage",
+      "PRES"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Kisplyx is the EU brand used for the renal cell carcinoma indication."
+  ],
+  "related": [
+    "sorafenib",
+    "sunitinib",
+    "pembrolizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lenvatinib",
+      "url": "https://en.wikipedia.org/wiki/Lenvatinib"
+    },
+    {
+      "title": "DailyMed: lenvatinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=LENVATINIB"
+    },
+    {
+      "title": "EMA EPAR: Lenvima",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenvima"
+    }
+  ],
+  "stage": "written"
 }

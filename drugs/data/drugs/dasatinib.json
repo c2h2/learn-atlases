@@ -1,36 +1,136 @@
 {
   "slug": "dasatinib",
   "name": "Dasatinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BMS-354825"
+  ],
+  "brands": [
+    "Sprycel",
+    "Phyrago"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "BCR-ABL and SRC-family tyrosine kinase inhibitor (second generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily",
+  "targets": [
+    "BCR::ABL1",
+    "SRC",
+    "LCK",
+    "KIT",
+    "PDGFRB",
+    "EPHA2"
+  ],
+  "origin": "synthetic",
+  "originator": "Bristol-Myers Squibb",
+  "owner": "Bristol Myers Squibb (Sprycel); generic in many markets",
+  "first_approval": {
+    "year": 2006,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Sprycel"
+  },
+  "discovery": {
+    "year": 2004,
+    "by": "Bristol-Myers Squibb (Lombardo et al.)",
+    "note": "An aminothiazole carboxamide originally developed as an SRC inhibitor that also binds the active conformation of ABL."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Second-generation BCR-ABL inhibitor active against most imatinib-resistant mutants",
+  "summary": "Dasatinib is a multi-targeted kinase inhibitor that binds both the active and inactive conformations of ABL and is about 300 times more potent than imatinib in vitro. It is used for Philadelphia chromosome-positive chronic myeloid leukaemia and acute lymphoblastic leukaemia, including after imatinib resistance, although it is inactive against T315I.",
+  "mechanism": [
+    "Dasatinib competes with ATP at the ABL kinase domain, binding regardless of the activation-loop conformation, which allows it to inhibit many imatinib-resistant BCR-ABL mutants (but not T315I).",
+    "It also potently inhibits SRC-family kinases (including LCK, relevant to T-cell function), KIT, PDGFRβ and ephrin receptors; SRC inhibition contributes to effects on platelets and to pleural effusions."
+  ],
+  "uses": [
+    "Newly diagnosed chronic-phase Ph-positive CML",
+    "CML (all phases) resistant or intolerant to prior therapy including imatinib",
+    "Ph-positive acute lymphoblastic leukaemia",
+    "Paediatric Ph-positive CML and ALL (with chemotherapy)"
+  ],
+  "history": [
+    {
+      "year": 2004,
+      "title": "Discovery published",
+      "detail": "BMS-354825 described as a dual SRC/ABL inhibitor."
+    },
+    {
+      "year": 2006,
+      "title": "FDA approval",
+      "detail": "Approved as Sprycel for CML and Ph-positive ALL after imatinib."
+    },
+    {
+      "year": 2010,
+      "title": "First-line CML",
+      "detail": "DASISION leads to approval for newly diagnosed chronic-phase CML."
+    },
+    {
+      "year": 2017,
+      "title": "Paediatric approval",
+      "detail": "FDA approves use in children with chronic-phase CML."
+    },
+    {
+      "year": 2018,
+      "title": "Paediatric ALL",
+      "detail": "Approval with chemotherapy for paediatric Ph-positive ALL."
+    },
+    {
+      "year": 2023,
+      "title": "Phyrago",
+      "detail": "FDA approves a reformulated dasatinib (Phyrago) via the 505(b)(2) pathway."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3–5 hours",
+    "bioavailability": "oral (absolute value not established); reduced by acid suppression",
+    "metabolism": "hepatic CYP3A4",
+    "excretion": "faecal (about 85%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "myelosuppression",
+      "fluid retention and pleural effusion",
+      "diarrhoea",
+      "headache",
+      "rash",
+      "fatigue"
+    ],
+    "serious": [
+      "pulmonary arterial hypertension",
+      "bleeding",
+      "QT prolongation",
+      "cardiac dysfunction",
+      "embryo-fetal toxicity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Dasatinib-associated pulmonary arterial hypertension can be at least partly reversible on stopping the drug."
+  ],
+  "related": [
+    "imatinib",
+    "prednisone",
+    "dexamethasone",
+    "cytarabine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Dasatinib",
+      "url": "https://en.wikipedia.org/wiki/Dasatinib"
+    },
+    {
+      "title": "DailyMed: dasatinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=DASATINIB"
+    },
+    {
+      "title": "EMA EPAR: Sprycel",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/sprycel"
+    }
+  ],
+  "stage": "written"
 }

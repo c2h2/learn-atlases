@@ -1,36 +1,131 @@
 {
   "slug": "capecitabine",
   "name": "Capecitabine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Ro 09-1978"
+  ],
+  "brands": [
+    "Xeloda"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Fluoropyrimidine carbamate (oral 5-FU prodrug)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets twice daily, typically 14 days on and 7 days off",
+  "targets": [
+    "TYMS"
+  ],
+  "origin": "synthetic",
+  "originator": "Nippon Roche (Kamakura Research Laboratories) / Hoffmann-La Roche",
+  "owner": "generic (many); Xeloda brand held by Roche",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Xeloda"
+  },
+  "discovery": {
+    "year": 1990,
+    "by": "Nippon Roche Research Center, Kamakura",
+    "note": "Designed as a three-step prodrug to generate 5-FU preferentially in tumour tissue rich in thymidine phosphorylase."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Oral prodrug that converts to fluorouracil inside tumours",
+  "summary": "Capecitabine is an orally absorbed prodrug converted to fluorouracil through three enzymatic steps, the last catalysed by thymidine phosphorylase, which is often elevated in tumours. It is used in colorectal, breast, gastric and pancreatic cancer and can replace infusional 5-FU in many regimens.",
+  "mechanism": [
+    "After absorption, hepatic carboxylesterase converts capecitabine to 5′-deoxy-5-fluorocytidine; cytidine deaminase then forms 5′-deoxy-5-fluorouridine; thymidine phosphorylase finally releases 5-fluorouracil.",
+    "The released 5-FU acts as a thymidylate synthase inhibitor and is misincorporated into RNA and DNA. Clearance depends on dihydropyrimidine dehydrogenase, so DPD deficiency causes serious toxicity."
+  ],
+  "uses": [
+    "Adjuvant and metastatic colorectal cancer (alone or as CAPOX)",
+    "Rectal cancer with radiotherapy",
+    "Metastatic breast cancer (alone or with docetaxel); residual disease after neoadjuvant therapy",
+    "Gastric, oesophageal and pancreatic cancer"
+  ],
+  "history": [
+    {
+      "year": 1990,
+      "title": "Design",
+      "detail": "Prodrug programme at Nippon Roche identifies capecitabine."
+    },
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Approved as Xeloda for metastatic breast cancer resistant to paclitaxel and anthracyclines."
+    },
+    {
+      "year": 2001,
+      "title": "Colorectal cancer",
+      "detail": "FDA approves first-line use in metastatic colorectal cancer."
+    },
+    {
+      "year": 2005,
+      "title": "Adjuvant colon",
+      "detail": "X-ACT shows oral capecitabine is at least equivalent to bolus 5-FU/leucovorin in stage III colon cancer; FDA approves adjuvant use."
+    },
+    {
+      "year": 2013,
+      "title": "Generics",
+      "detail": "Generic capecitabine launches in the US."
+    },
+    {
+      "year": 2017,
+      "title": "CREATE-X",
+      "detail": "Adjuvant capecitabine improves survival in HER2-negative breast cancer with residual disease after neoadjuvant chemotherapy."
+    },
+    {
+      "year": 2022,
+      "title": "Label modernisation",
+      "detail": "FDA updates the Xeloda label through Project Renewal, removing the former boxed warning on warfarin interaction."
+    }
+  ],
+  "pk": {
+    "half_life": "about 0.75 hours (parent); 5-FU similarly short",
+    "bioavailability": "rapid and extensive oral absorption",
+    "metabolism": "carboxylesterase, cytidine deaminase, thymidine phosphorylase; DPD catabolism of 5-FU",
+    "excretion": "renal (about 95% as metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hand-foot syndrome",
+      "diarrhoea",
+      "nausea",
+      "fatigue",
+      "hyperbilirubinaemia"
+    ],
+    "serious": [
+      "severe diarrhoea and dehydration",
+      "toxicity in DPD deficiency",
+      "cardiotoxicity",
+      "increased INR with warfarin",
+      "renal impairment-related toxicity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its tumour selectivity relies on higher thymidine phosphorylase activity in many tumours than in normal tissue."
+  ],
+  "related": [
+    "fluorouracil",
+    "oxaliplatin",
+    "docetaxel",
+    "irinotecan",
+    "warfarin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Capecitabine",
+      "url": "https://en.wikipedia.org/wiki/Capecitabine"
+    },
+    {
+      "title": "DailyMed: capecitabine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=CAPECITABINE"
+    }
+  ],
+  "stage": "written"
 }

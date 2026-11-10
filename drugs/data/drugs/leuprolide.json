@@ -1,36 +1,147 @@
 {
   "slug": "leuprolide",
-  "name": "Leuprolide",
-  "aliases": [],
-  "brands": [],
+  "name": "Leuprorelin",
+  "aliases": [
+    "leuprolide (USAN)",
+    "leuprolide acetate",
+    "TAP-144"
+  ],
+  "brands": [
+    "Lupron",
+    "Lupron Depot",
+    "Eligard",
+    "Prostap",
+    "Enantone",
+    "Camcevi",
+    "Fensolvi"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Gonadotropin-releasing hormone (GnRH) agonist",
+  "modality": "peptide",
+  "routes": [
+    "im",
+    "sc"
+  ],
+  "route_note": "IM or SC depot injection every 1, 3, 4 or 6 months; daily SC solution historically",
+  "targets": [
+    "GNRHR"
+  ],
+  "origin": "synthetic",
+  "originator": "Takeda (Masahiko Fujino and colleagues)",
+  "owner": "AbbVie (Lupron Depot, US); Takeda (outside US); Tolmar (Eligard); generic daily injection",
+  "first_approval": {
+    "year": 1985,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Lupron"
+  },
+  "discovery": {
+    "year": 1973,
+    "by": "Masahiko Fujino and colleagues, Takeda",
+    "note": "A nonapeptide GnRH analogue with D-leucine at position 6 and an ethylamide at the C terminus, giving greater potency and resistance to degradation than native GnRH."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "GnRH agonist depot used for prostate cancer, endometriosis and early puberty",
+  "summary": "Leuprorelin (leuprolide) is a synthetic GnRH analogue that, after a brief surge, desensitises pituitary GnRH receptors and suppresses LH, FSH and sex hormones to castrate levels. It is a standard androgen-deprivation therapy for prostate cancer and is also used for endometriosis, uterine fibroids, central precocious puberty and breast cancer ovarian suppression.",
+  "mechanism": [
+    "Leuprorelin binds pituitary GnRH receptors more strongly and for longer than native GnRH. Initial stimulation produces a 'flare' of LH, FSH and testosterone or oestradiol for 1–2 weeks.",
+    "Continuous exposure then causes receptor downregulation and desensitisation, so gonadotrophin secretion falls and testosterone reaches castrate levels within about 2–4 weeks. Antiandrogens are sometimes given at the start to prevent flare symptoms in metastatic prostate cancer."
+  ],
+  "uses": [
+    "Advanced prostate cancer (androgen deprivation)",
+    "Endometriosis",
+    "Anaemia due to uterine fibroids (preoperative)",
+    "Central precocious puberty",
+    "Premenopausal breast cancer (ovarian function suppression, outside US label in some regions)"
+  ],
+  "history": [
+    {
+      "year": 1971,
+      "title": "GnRH structure",
+      "detail": "Andrew Schally's group determines the structure of GnRH; Schally and Roger Guillemin share the 1977 Nobel Prize."
+    },
+    {
+      "year": 1973,
+      "title": "Leuprorelin synthesised",
+      "detail": "Takeda scientists report highly potent GnRH analogues, including leuprorelin."
+    },
+    {
+      "year": 1985,
+      "title": "FDA approval",
+      "detail": "Daily injectable Lupron approved for advanced prostate cancer."
+    },
+    {
+      "year": 1989,
+      "title": "Depot formulation",
+      "detail": "Monthly Lupron Depot microsphere formulation approved (TAP Pharmaceuticals, a Takeda–Abbott venture)."
+    },
+    {
+      "year": 1993,
+      "title": "Precocious puberty",
+      "detail": "Lupron Depot-Ped approved for central precocious puberty."
+    },
+    {
+      "year": 2001,
+      "title": "TAP settlement",
+      "detail": "TAP Pharmaceuticals pays $875 million to settle US federal charges over Lupron marketing and Medicare pricing."
+    },
+    {
+      "year": 2002,
+      "title": "Eligard",
+      "detail": "SC polymer-based depot Eligard approved."
+    },
+    {
+      "year": 2021,
+      "title": "Camcevi",
+      "detail": "A ready-to-use 6-month SC leuprolide mesylate formulation is approved."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3 hours (IV/SC solution); depot gives sustained release over 1–6 months",
+    "bioavailability": "IM/SC well absorbed; not active orally",
+    "metabolism": "peptidase hydrolysis to inactive fragments",
+    "excretion": "renal (fragments)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hot flushes",
+      "injection-site reactions",
+      "fatigue",
+      "loss of libido and erectile dysfunction",
+      "mood changes"
+    ],
+    "serious": [
+      "tumour flare at initiation",
+      "bone loss and fractures",
+      "hyperglycaemia and diabetes",
+      "cardiovascular events",
+      "QT prolongation",
+      "pituitary apoplexy (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The INN is leuprorelin; 'leuprolide' is the US adopted name used on American labels."
+  ],
+  "related": [
+    "enzalutamide",
+    "abiraterone",
+    "tamoxifen",
+    "testosterone",
+    "estradiol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Leuprorelin",
+      "url": "https://en.wikipedia.org/wiki/Leuprorelin"
+    },
+    {
+      "title": "DailyMed: leuprolide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=LEUPROLIDE"
+    }
+  ],
+  "stage": "written"
 }

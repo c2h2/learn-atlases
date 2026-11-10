@@ -1,36 +1,142 @@
 {
   "slug": "ibrutinib",
   "name": "Ibrutinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PCI-32765"
+  ],
+  "brands": [
+    "Imbruvica"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Bruton tyrosine kinase (BTK) inhibitor (covalent, first generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules, tablets or suspension once daily",
+  "targets": [
+    "BTK"
+  ],
+  "origin": "synthetic",
+  "originator": "Celera Genomics; developed by Pharmacyclics",
+  "owner": "AbbVie (Pharmacyclics) and Johnson & Johnson (Janssen)",
+  "first_approval": {
+    "year": 2013,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Imbruvica"
+  },
+  "discovery": {
+    "year": 2007,
+    "by": "Celera Genomics (Zhengying Pan and colleagues); Pharmacyclics acquired the programme in 2006",
+    "note": "Designed as a covalent probe that binds cysteine 481 in the ATP site of BTK."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First-in-class BTK inhibitor that reshaped chronic lymphocytic leukaemia treatment",
+  "summary": "Ibrutinib is an oral, irreversible inhibitor of Bruton tyrosine kinase, a key enzyme in B-cell receptor signalling. It was the first BTK inhibitor approved and changed the treatment of chronic lymphocytic leukaemia, Waldenström macroglobulinaemia and chronic graft-versus-host disease, although atrial fibrillation and bleeding limit its use.",
+  "mechanism": [
+    "Ibrutinib forms a covalent bond with cysteine 481 in the active site of BTK, permanently inactivating the enzyme and blocking B-cell receptor signalling to PLCγ2, NF-κB and other survival pathways.",
+    "Malignant B cells lose adhesion and homing signals and are released from lymph nodes into blood (transient lymphocytosis), where they undergo apoptosis. Off-target inhibition of kinases such as TEC, EGFR and CSK contributes to bleeding, rash and atrial fibrillation; the C481S mutation causes resistance."
+  ],
+  "uses": [
+    "Chronic lymphocytic leukaemia/small lymphocytic lymphoma (including 17p deletion)",
+    "Waldenström macroglobulinaemia",
+    "Chronic graft-versus-host disease after failure of systemic therapy (adults and children)",
+    "Mantle cell lymphoma (outside the US; US accelerated indication withdrawn in 2023)"
+  ],
+  "history": [
+    {
+      "year": 2006,
+      "title": "Pharmacyclics",
+      "detail": "Pharmacyclics acquires Celera's BTK inhibitor programme."
+    },
+    {
+      "year": 2010,
+      "title": "B-cell signalling paper",
+      "detail": "Honigberg et al. (PNAS) report PCI-32765 activity in models of B-cell malignancy."
+    },
+    {
+      "year": 2011,
+      "title": "Janssen partnership",
+      "detail": "Janssen and Pharmacyclics agree to co-develop ibrutinib."
+    },
+    {
+      "year": 2013,
+      "title": "FDA approval",
+      "detail": "Accelerated approval for relapsed mantle cell lymphoma; among the first drugs with Breakthrough Therapy designation."
+    },
+    {
+      "year": 2014,
+      "title": "CLL",
+      "detail": "Approvals for CLL after RESONATE, including 17p deletion."
+    },
+    {
+      "year": 2015,
+      "title": "AbbVie acquisition",
+      "detail": "AbbVie acquires Pharmacyclics for about $21 billion; Waldenström approval."
+    },
+    {
+      "year": 2017,
+      "title": "Chronic GVHD",
+      "detail": "First FDA-approved therapy for chronic graft-versus-host disease."
+    },
+    {
+      "year": 2023,
+      "title": "MCL/MZL withdrawal",
+      "detail": "US accelerated approvals for mantle cell and marginal zone lymphoma are voluntarily withdrawn after confirmatory trial results."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4–6 hours (pharmacodynamic effect lasts longer because of covalent binding)",
+    "bioavailability": "oral about 3% fasting (doubles with food)",
+    "metabolism": "hepatic CYP3A4",
+    "excretion": "faecal (about 80%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "diarrhoea",
+      "bruising",
+      "musculoskeletal pain",
+      "rash",
+      "fatigue",
+      "neutropenia"
+    ],
+    "serious": [
+      "haemorrhage",
+      "atrial fibrillation and ventricular arrhythmias",
+      "hypertension",
+      "serious infections",
+      "cardiac failure",
+      "second primary malignancies",
+      "tumour lysis syndrome"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its once-daily continuous dosing made CLL a condition many patients manage with tablets rather than chemotherapy."
+  ],
+  "related": [
+    "acalabrutinib",
+    "venetoclax",
+    "rituximab",
+    "obinutuzumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ibrutinib",
+      "url": "https://en.wikipedia.org/wiki/Ibrutinib"
+    },
+    {
+      "title": "DailyMed: ibrutinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=IBRUTINIB"
+    },
+    {
+      "title": "EMA EPAR: Imbruvica",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/imbruvica"
+    }
+  ],
+  "stage": "written"
 }

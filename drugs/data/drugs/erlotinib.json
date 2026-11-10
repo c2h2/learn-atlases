@@ -1,36 +1,139 @@
 {
   "slug": "erlotinib",
   "name": "Erlotinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "OSI-774",
+    "CP-358,774",
+    "erlotinib hydrochloride"
+  ],
+  "brands": [
+    "Tarceva"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "EGFR tyrosine kinase inhibitor (first generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily on an empty stomach",
+  "targets": [
+    "EGFR"
+  ],
+  "origin": "synthetic",
+  "originator": "Pfizer (discovered), developed by OSI Pharmaceuticals with Genentech and Roche",
+  "owner": "Roche/Genentech (Tarceva); generic (many)",
+  "first_approval": {
+    "year": 2004,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tarceva"
+  },
+  "discovery": {
+    "year": 1997,
+    "by": "Pfizer, Groton (later OSI Pharmaceuticals)",
+    "note": "A quinazoline EGFR inhibitor; rights were divested to OSI when Pfizer merged with Warner-Lambert in 2000."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Reversible EGFR inhibitor for EGFR-mutant lung cancer and pancreatic cancer",
+  "summary": "Erlotinib is an oral reversible EGFR tyrosine kinase inhibitor. It was first approved after it modestly improved survival in unselected previously treated lung cancer, and is now used mainly as first-line therapy for EGFR-mutant non-small-cell lung cancer; it is also approved with gemcitabine for pancreatic cancer.",
+  "mechanism": [
+    "Erlotinib competes with ATP at the EGFR intracellular kinase domain, inhibiting receptor autophosphorylation and downstream MAPK and PI3K–AKT signalling.",
+    "Tumours with exon 19 deletions or L858R mutations are highly sensitive; the T790M mutation confers acquired resistance. EGFR inhibition in skin and gut causes the characteristic acneiform rash and diarrhoea, and rash severity has been associated with benefit."
+  ],
+  "uses": [
+    "First-line, maintenance or subsequent treatment of metastatic NSCLC with EGFR exon 19 deletion or L858R mutation",
+    "Locally advanced or metastatic pancreatic cancer with gemcitabine"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "Discovery",
+      "detail": "CP-358,774 described by Pfizer scientists."
+    },
+    {
+      "year": 2000,
+      "title": "OSI rights",
+      "detail": "Erlotinib rights pass to OSI Pharmaceuticals, which partners with Genentech and Roche."
+    },
+    {
+      "year": 2004,
+      "title": "FDA approval",
+      "detail": "BR.21 shows a survival benefit in previously treated NSCLC; approved as Tarceva."
+    },
+    {
+      "year": 2005,
+      "title": "Pancreatic cancer",
+      "detail": "Approved with gemcitabine for pancreatic cancer (PA.3)."
+    },
+    {
+      "year": 2010,
+      "title": "Astellas acquisition",
+      "detail": "Astellas acquires OSI Pharmaceuticals."
+    },
+    {
+      "year": 2012,
+      "title": "EURTAC",
+      "detail": "Erlotinib beats chemotherapy first-line in European EGFR-mutant NSCLC."
+    },
+    {
+      "year": 2013,
+      "title": "Companion diagnostic",
+      "detail": "FDA approves first-line use in EGFR-mutant NSCLC with the cobas EGFR mutation test."
+    },
+    {
+      "year": 2016,
+      "title": "Label narrowed",
+      "detail": "Maintenance and second-line use limited to EGFR-mutant tumours after IUNO trial."
+    }
+  ],
+  "pk": {
+    "half_life": "about 36 hours",
+    "bioavailability": "about 60% fasting, near 100% with food",
+    "metabolism": "hepatic CYP3A4, partly CYP1A2; smoking induces clearance",
+    "excretion": "faecal (about 83%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "acneiform rash",
+      "diarrhoea",
+      "fatigue",
+      "anorexia",
+      "dry skin"
+    ],
+    "serious": [
+      "interstitial lung disease",
+      "hepatotoxicity",
+      "GI perforation",
+      "corneal ulceration",
+      "microangiopathic haemolytic anaemia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Smokers clear erlotinib faster because tobacco smoke induces CYP1A2, lowering drug exposure."
+  ],
+  "related": [
+    "gefitinib",
+    "osimertinib",
+    "gemcitabine",
+    "bevacizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Erlotinib",
+      "url": "https://en.wikipedia.org/wiki/Erlotinib"
+    },
+    {
+      "title": "DailyMed: erlotinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ERLOTINIB"
+    },
+    {
+      "title": "EMA EPAR: Tarceva",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tarceva"
+    }
+  ],
+  "stage": "written"
 }

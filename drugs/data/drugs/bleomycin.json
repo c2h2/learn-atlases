@@ -1,36 +1,129 @@
 {
   "slug": "bleomycin",
   "name": "Bleomycin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "bleomycin sulfate",
+    "bleomycins A2 and B2"
+  ],
+  "brands": [
+    "Blenoxane",
+    "Bleo"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Glycopeptide antitumour antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im",
+    "sc",
+    "other"
+  ],
+  "route_note": "IV, IM or SC injection; intrapleural for malignant effusions; intralesional in some uses",
+  "targets": [
+    "DNA (oxidative strand cleavage)"
+  ],
+  "origin": "natural",
+  "originator": "Institute of Microbial Chemistry, Tokyo (Hamao Umezawa); developed by Nippon Kayaku",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1969,
+    "agency": "MHW",
+    "country": "Japan",
+    "brand": "Bleo"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1966,
+    "by": "Hamao Umezawa and colleagues, Institute of Microbial Chemistry, Tokyo",
+    "note": "Isolated from Streptomyces verticillus as a mixture of related glycopeptides."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Streptomyces glycopeptide that cuts DNA; key to curative testicular and Hodgkin regimens",
+  "summary": "Bleomycin is a glycopeptide antibiotic that chelates iron and generates free radicals that break DNA strands. It is a component of curative regimens for testicular cancer (BEP) and Hodgkin lymphoma (ABVD); it causes little marrow suppression but can cause serious pulmonary fibrosis.",
+  "mechanism": [
+    "Bleomycin binds DNA through its bithiazole tail and chelates Fe(II) with its metal-binding domain. In the presence of oxygen the complex forms activated bleomycin, which abstracts hydrogen from deoxyribose and produces single- and double-strand breaks, mainly in G2 and M phase.",
+    "Bleomycin hydrolase inactivates the drug; lung and skin have low levels of this enzyme, which explains why toxicity concentrates in those tissues."
+  ],
+  "uses": [
+    "Testicular germ-cell tumours (BEP)",
+    "Hodgkin lymphoma (ABVD)",
+    "Squamous cell carcinomas of head and neck, skin, cervix and vulva",
+    "Malignant pleural effusion (sclerosing agent)",
+    "Off-label: intralesional treatment of warts and vascular malformations"
+  ],
+  "history": [
+    {
+      "year": 1966,
+      "title": "Discovery",
+      "detail": "Umezawa reports bleomycin from Streptomyces verticillus."
+    },
+    {
+      "year": 1969,
+      "title": "Japanese approval",
+      "detail": "Marketed in Japan by Nippon Kayaku."
+    },
+    {
+      "year": 1973,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Blenoxane (Bristol)."
+    },
+    {
+      "year": 1975,
+      "title": "ABVD",
+      "detail": "Bonadonna's ABVD regimen for Hodgkin lymphoma includes bleomycin."
+    },
+    {
+      "year": 1977,
+      "title": "Testicular cancer",
+      "detail": "Bleomycin is part of Einhorn's curative PVB regimen, later BEP."
+    },
+    {
+      "year": 2016,
+      "title": "RATHL",
+      "detail": "The RATHL trial shows bleomycin can be omitted in Hodgkin lymphoma with a negative interim PET, reducing lung toxicity."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2 hours with normal renal function; prolonged in renal impairment",
+    "bioavailability": "IM/SC well absorbed",
+    "metabolism": "bleomycin hydrolase (cysteine protease) in tissues",
+    "excretion": "renal (about 60–70% unchanged)"
+  },
+  "safety": {
+    "common": [
+      "fever and chills",
+      "skin hyperpigmentation and flagellate erythema",
+      "mucositis",
+      "nail changes"
+    ],
+    "serious": [
+      "pulmonary fibrosis and pneumonitis",
+      "idiosyncratic reaction (hypotension, fever, wheeze) in lymphoma patients",
+      "Raynaud phenomenon",
+      "hypersensitivity"
+    ],
+    "boxed_warning": "Boxed warning for pulmonary fibrosis and severe idiosyncratic reactions, especially in lymphoma patients."
+  },
+  "facts": [
+    "Lung toxicity risk rises above a cumulative dose of about 400 units and with high inspired oxygen concentrations, which matters during later anaesthesia."
+  ],
+  "related": [
+    "cisplatin",
+    "etoposide",
+    "doxorubicin",
+    "vincristine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Bleomycin",
+      "url": "https://en.wikipedia.org/wiki/Bleomycin"
+    },
+    {
+      "title": "DailyMed: bleomycin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=BLEOMYCIN"
+    }
+  ],
+  "stage": "written"
 }

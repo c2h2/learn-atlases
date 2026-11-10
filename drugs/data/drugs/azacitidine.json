@@ -1,36 +1,145 @@
 {
   "slug": "azacitidine",
   "name": "Azacitidine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "5-azacytidine",
+    "5-AZA",
+    "CC-486 (oral)"
+  ],
+  "brands": [
+    "Vidaza",
+    "Onureg"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Hypomethylating agent (DNA methyltransferase inhibitor); pyrimidine nucleoside analogue",
+  "modality": "small-molecule",
+  "routes": [
+    "sc",
+    "iv",
+    "oral"
+  ],
+  "route_note": "SC or IV for 7 days every 28 days; oral tablets (Onureg) for AML maintenance — not interchangeable",
+  "targets": [
+    "DNMT1",
+    "RNA incorporation"
+  ],
+  "origin": "synthetic",
+  "originator": "Czechoslovak Academy of Sciences (František Šorm, Alois Pískala); developed by Pharmion",
+  "owner": "Bristol Myers Squibb (Vidaza, Onureg); generic injectable (many)",
+  "first_approval": {
+    "year": 2004,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Vidaza"
+  },
+  "discovery": {
+    "year": 1964,
+    "by": "Alois Pískala and František Šorm, Institute of Organic Chemistry and Biochemistry, Prague",
+    "note": "Synthesised as a cytotoxic nucleoside; its DNA-demethylating activity at low doses was recognised around 1980."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First drug approved for myelodysplastic syndromes; a DNA demethylating nucleoside",
+  "summary": "Azacitidine is a cytidine analogue that is incorporated into RNA and DNA; in DNA it traps and degrades DNA methyltransferases, reversing aberrant gene silencing. It was the first drug to extend survival in higher-risk myelodysplastic syndromes and, with venetoclax, is a standard for older or unfit patients with acute myeloid leukaemia.",
+  "mechanism": [
+    "Azacitidine is phosphorylated and mainly incorporated into RNA, disrupting protein synthesis; a fraction is reduced to the deoxy form and incorporated into DNA.",
+    "In DNA the 5-aza ring forms covalent adducts with DNA methyltransferase 1, depleting the enzyme so that newly synthesised DNA loses methylation. This can reactivate silenced tumour-suppressor genes, promote differentiation and trigger viral-mimicry interferon responses; higher concentrations are directly cytotoxic."
+  ],
+  "uses": [
+    "Myelodysplastic syndromes (all FAB subtypes in US label)",
+    "Chronic myelomonocytic leukaemia",
+    "Acute myeloid leukaemia in unfit patients (with venetoclax, or alone)",
+    "Juvenile myelomonocytic leukaemia (paediatric)",
+    "Oral azacitidine: maintenance in AML in first remission"
+  ],
+  "history": [
+    {
+      "year": 1964,
+      "title": "Synthesis",
+      "detail": "Pískala and Šorm synthesise 5-azacytidine in Prague."
+    },
+    {
+      "year": 1980,
+      "title": "Demethylation discovered",
+      "detail": "Jones and Taylor show 5-azacytidine inhibits DNA methylation and induces cell differentiation."
+    },
+    {
+      "year": 2002,
+      "title": "CALGB 9221",
+      "detail": "Silverman et al. report azacitidine improves response and quality of life in MDS."
+    },
+    {
+      "year": 2004,
+      "title": "FDA approval",
+      "detail": "Approved as Vidaza (Pharmion), the first drug for MDS."
+    },
+    {
+      "year": 2008,
+      "title": "Celgene acquisition",
+      "detail": "Celgene acquires Pharmion; EU approval follows in December."
+    },
+    {
+      "year": 2009,
+      "title": "AZA-001",
+      "detail": "Fenaux et al. show azacitidine prolongs overall survival in higher-risk MDS."
+    },
+    {
+      "year": 2020,
+      "title": "Oral azacitidine and VIALE-A",
+      "detail": "Onureg approved for AML maintenance (QUAZAR AML-001); VIALE-A establishes venetoclax plus azacitidine for unfit AML."
+    },
+    {
+      "year": 2022,
+      "title": "JMML",
+      "detail": "FDA approves azacitidine for juvenile myelomonocytic leukaemia."
+    }
+  ],
+  "pk": {
+    "half_life": "about 41 minutes (SC); about 0.5 hours (oral)",
+    "bioavailability": "SC about 89%; oral about 11%",
+    "metabolism": "cytidine deaminase deamination; spontaneous hydrolysis",
+    "excretion": "renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea and vomiting",
+      "injection-site reactions",
+      "constipation or diarrhoea",
+      "fatigue",
+      "cytopenias"
+    ],
+    "serious": [
+      "severe neutropenia, thrombocytopenia and infection",
+      "hepatotoxicity in severe hepatic impairment",
+      "renal toxicity",
+      "differentiation syndrome (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Decitabine is the closely related deoxy analogue that is incorporated only into DNA."
+  ],
+  "related": [
+    "venetoclax",
+    "cytarabine",
+    "lenalidomide",
+    "luspatercept"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Azacitidine",
+      "url": "https://en.wikipedia.org/wiki/Azacitidine"
+    },
+    {
+      "title": "DailyMed: azacitidine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=AZACITIDINE"
+    },
+    {
+      "title": "EMA EPAR: Vidaza",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/vidaza"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,139 @@
 {
   "slug": "gemcitabine",
   "name": "Gemcitabine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "2′,2′-difluorodeoxycytidine",
+    "dFdC",
+    "LY188011"
+  ],
+  "brands": [
+    "Gemzar",
+    "Infugem"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Pyrimidine nucleoside antimetabolite",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion over 30 minutes, weekly or on days 1 and 8 of cycles",
+  "targets": [
+    "RRM1",
+    "DNA polymerase (chain termination)"
+  ],
+  "origin": "synthetic",
+  "originator": "Eli Lilly (Larry Hertel)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Gemzar"
+  },
+  "discovery": {
+    "year": 1981,
+    "by": "Larry Hertel and colleagues, Eli Lilly",
+    "note": "Originally synthesised as a potential antiviral; antitumour activity was found during screening."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Difluorinated cytidine analogue used in pancreatic, lung, bladder and breast cancer",
+  "summary": "Gemcitabine is a deoxycytidine analogue that, once phosphorylated, inhibits ribonucleotide reductase and is incorporated into DNA, terminating synthesis. It has broad solid-tumour activity and is a standard drug for pancreatic, lung, bladder, biliary, ovarian and breast cancer.",
+  "mechanism": [
+    "Gemcitabine enters cells via nucleoside transporters and is phosphorylated by deoxycytidine kinase to its diphosphate and triphosphate.",
+    "The diphosphate inhibits ribonucleotide reductase, depleting deoxynucleotide pools; the triphosphate is incorporated into DNA, after which one more nucleotide is added before polymerisation stops ('masked chain termination'), shielding it from excision repair.",
+    "This self-potentiation and resistance to repair give it activity in solid tumours where cytarabine is inactive."
+  ],
+  "uses": [
+    "Pancreatic cancer (alone, with nab-paclitaxel or capecitabine)",
+    "Non-small-cell lung cancer (with platinum)",
+    "Bladder and urothelial cancer (with cisplatin)",
+    "Ovarian cancer (with carboplatin)",
+    "Metastatic breast cancer (with paclitaxel)",
+    "Biliary tract cancer (with cisplatin)"
+  ],
+  "history": [
+    {
+      "year": 1981,
+      "title": "Synthesis",
+      "detail": "Hertel's group at Lilly synthesises gemcitabine."
+    },
+    {
+      "year": 1996,
+      "title": "FDA approval",
+      "detail": "Approved as Gemzar for advanced pancreatic cancer."
+    },
+    {
+      "year": 1997,
+      "title": "Pancreatic trial",
+      "detail": "Burris et al. publish that gemcitabine improves clinical benefit and survival over fluorouracil in pancreatic cancer."
+    },
+    {
+      "year": 1998,
+      "title": "Lung cancer",
+      "detail": "FDA approves gemcitabine with cisplatin for NSCLC."
+    },
+    {
+      "year": 2010,
+      "title": "ABC-02",
+      "detail": "Gemcitabine plus cisplatin becomes standard for advanced biliary tract cancer."
+    },
+    {
+      "year": 2010,
+      "title": "Generics",
+      "detail": "Generic gemcitabine becomes available in the US after patent expiry."
+    },
+    {
+      "year": 2013,
+      "title": "MPACT",
+      "detail": "Nab-paclitaxel plus gemcitabine extends survival in metastatic pancreatic cancer."
+    }
+  ],
+  "pk": {
+    "half_life": "about 42–94 minutes (short infusion)",
+    "bioavailability": "IV only",
+    "metabolism": "cytidine deaminase deamination to dFdU (inactive)",
+    "excretion": "renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "myelosuppression",
+      "flu-like symptoms and fever",
+      "nausea",
+      "rash",
+      "raised liver enzymes",
+      "oedema"
+    ],
+    "serious": [
+      "thrombotic microangiopathy and haemolytic-uraemic syndrome",
+      "pulmonary toxicity",
+      "capillary leak syndrome",
+      "posterior reversible encephalopathy syndrome",
+      "radiosensitisation injury"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Longer infusion times increase toxicity without clear benefit, so the 30-minute infusion is standard."
+  ],
+  "related": [
+    "cytarabine",
+    "cisplatin",
+    "carboplatin",
+    "paclitaxel",
+    "capecitabine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Gemcitabine",
+      "url": "https://en.wikipedia.org/wiki/Gemcitabine"
+    },
+    {
+      "title": "DailyMed: gemcitabine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=GEMCITABINE"
+    }
+  ],
+  "stage": "written"
 }

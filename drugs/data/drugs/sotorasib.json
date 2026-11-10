@@ -1,36 +1,126 @@
 {
   "slug": "sotorasib",
   "name": "Sotorasib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AMG 510"
+  ],
+  "brands": [
+    "Lumakras",
+    "Lumykras"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "KRAS G12C covalent inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets once daily",
+  "targets": [
+    "KRAS G12C"
+  ],
+  "origin": "synthetic",
+  "originator": "Amgen (building on Kevan Shokat's switch-II pocket discovery at UCSF)",
+  "owner": "Amgen",
+  "first_approval": {
+    "year": 2021,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Lumakras"
+  },
+  "discovery": {
+    "year": 2019,
+    "by": "Amgen (Canon, Lanman and colleagues)",
+    "note": "Exploits a cryptic pocket next to the mutant cysteine 12 in GDP-bound KRAS G12C, first described by Shokat's laboratory in 2013."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First approved KRAS inhibitor, targeting a mutation once thought 'undruggable'",
+  "summary": "Sotorasib is a covalent inhibitor that locks the KRAS G12C mutant protein in its inactive GDP-bound state. It was the first drug approved to target KRAS, a long-elusive oncogene, and is used for KRAS G12C-mutated non-small-cell lung cancer and, with panitumumab, colorectal cancer.",
+  "mechanism": [
+    "The G12C mutation introduces a cysteine that sits next to the 'switch-II pocket' of KRAS. Sotorasib binds this pocket and forms an irreversible bond with cysteine 12, but only when KRAS is in the inactive GDP-bound state.",
+    "Trapping KRAS G12C in this state prevents nucleotide exchange to active GTP-KRAS and shuts down RAF–MEK–ERK signalling. In colorectal cancer, feedback reactivation of EGFR signalling limits single-agent activity, which is why it is combined with the anti-EGFR antibody panitumumab."
+  ],
+  "uses": [
+    "KRAS G12C-mutated locally advanced or metastatic NSCLC after at least one prior systemic therapy",
+    "KRAS G12C-mutated metastatic colorectal cancer, with panitumumab, after chemotherapy"
+  ],
+  "history": [
+    {
+      "year": 2013,
+      "title": "Switch-II pocket",
+      "detail": "Ostrem, Shokat and colleagues (Nature) describe covalent inhibitors of KRAS G12C binding an allosteric pocket."
+    },
+    {
+      "year": 2019,
+      "title": "First-in-human data",
+      "detail": "Amgen reports AMG 510 clinical activity and publishes its structure (Nature)."
+    },
+    {
+      "year": 2021,
+      "title": "Accelerated approval",
+      "detail": "FDA approves Lumakras for KRAS G12C NSCLC based on CodeBreaK 100."
+    },
+    {
+      "year": 2022,
+      "title": "EU approval",
+      "detail": "EMA conditionally authorises Lumykras."
+    },
+    {
+      "year": 2023,
+      "title": "CodeBreaK 200 and FDA letter",
+      "detail": "Phase 3 shows improved progression-free but not overall survival versus docetaxel; FDA declines conversion to full approval and requests another confirmatory study."
+    },
+    {
+      "year": 2025,
+      "title": "Colorectal cancer",
+      "detail": "FDA approves sotorasib with panitumumab for KRAS G12C-mutated metastatic colorectal cancer (CodeBreaK 300)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5 hours",
+    "bioavailability": "oral (absolute value not established)",
+    "metabolism": "non-enzymatic conjugation and CYP3A",
+    "excretion": "faecal (about 74%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "diarrhoea",
+      "nausea",
+      "fatigue",
+      "musculoskeletal pain",
+      "hepatotoxicity",
+      "cough"
+    ],
+    "serious": [
+      "hepatotoxicity, especially soon after checkpoint inhibitors",
+      "interstitial lung disease"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "KRAS G12C is found in roughly 13% of lung adenocarcinomas and 3–4% of colorectal cancers."
+  ],
+  "related": [
+    "docetaxel",
+    "osimertinib",
+    "trametinib",
+    "pembrolizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Sotorasib",
+      "url": "https://en.wikipedia.org/wiki/Sotorasib"
+    },
+    {
+      "title": "DailyMed: sotorasib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=SOTORASIB"
+    },
+    {
+      "title": "EMA EPAR: Lumykras",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/lumykras"
+    }
+  ],
+  "stage": "written"
 }

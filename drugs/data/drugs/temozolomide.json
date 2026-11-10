@@ -1,36 +1,131 @@
 {
   "slug": "temozolomide",
   "name": "Temozolomide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "TMZ",
+    "CCRG 81045",
+    "M&B 39831"
+  ],
+  "brands": [
+    "Temodar",
+    "Temodal"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Imidazotetrazine alkylating agent",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral capsules daily (with radiotherapy, then 5 days every 28-day cycle); IV formulation also available",
+  "targets": [
+    "DNA (O6- and N7-guanine methylation)"
+  ],
+  "origin": "synthetic",
+  "originator": "Aston University (Malcolm Stevens) with May & Baker and Cancer Research Campaign; developed by Schering-Plough",
+  "owner": "generic (many); Temodar brand held by Merck & Co.",
+  "first_approval": {
+    "year": 1999,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Temodal"
+  },
+  "discovery": {
+    "year": 1984,
+    "by": "Malcolm Stevens and colleagues, Aston University",
+    "note": "Discovered as an analogue of mitozolomide in an academic–industry imidazotetrazine programme; it is a prodrug that spontaneously forms the methylating agent MTIC."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Brain-penetrant oral alkylator that is standard therapy for glioblastoma",
+  "summary": "Temozolomide is an oral methylating agent that crosses the blood–brain barrier and spontaneously converts to the active compound MTIC at physiological pH. Combined with radiotherapy it is standard treatment for newly diagnosed glioblastoma; benefit is greatest in tumours with a methylated MGMT promoter.",
+  "mechanism": [
+    "At neutral pH temozolomide hydrolyses non-enzymatically to MTIC, which releases a methyldiazonium ion that methylates DNA at N7-guanine, N3-adenine and O6-guanine.",
+    "O6-methylguanine mispairs with thymine; futile cycles of mismatch repair cause DNA strand breaks and cell death. The repair enzyme O6-methylguanine-DNA methyltransferase (MGMT) removes the lesion, so tumours with epigenetically silenced MGMT are more sensitive."
+  ],
+  "uses": [
+    "Newly diagnosed glioblastoma (with radiotherapy, then adjuvant)",
+    "Anaplastic astrocytoma (refractory; adjuvant in some jurisdictions)",
+    "Off-label: metastatic melanoma, neuroendocrine tumours, other gliomas"
+  ],
+  "history": [
+    {
+      "year": 1984,
+      "title": "Discovery",
+      "detail": "Stevens' group reports temozolomide as a less toxic analogue of mitozolomide."
+    },
+    {
+      "year": 1999,
+      "title": "EU and US approval",
+      "detail": "Approved in the EU (January) and by FDA (August) for refractory anaplastic astrocytoma and recurrent glioblastoma."
+    },
+    {
+      "year": 2005,
+      "title": "Stupp trial",
+      "detail": "EORTC–NCIC trial shows radiotherapy plus temozolomide improves survival in glioblastoma; Hegi et al. link benefit to MGMT promoter methylation."
+    },
+    {
+      "year": 2005,
+      "title": "Glioblastoma approval",
+      "detail": "FDA approves temozolomide with radiotherapy for newly diagnosed glioblastoma."
+    },
+    {
+      "year": 2009,
+      "title": "IV formulation",
+      "detail": "FDA approves an IV formulation."
+    },
+    {
+      "year": 2013,
+      "title": "Generics",
+      "detail": "Generic temozolomide becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.8 hours",
+    "bioavailability": "oral about 100%",
+    "metabolism": "spontaneous hydrolysis to MTIC; minimal hepatic metabolism",
+    "excretion": "renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea and vomiting",
+      "fatigue",
+      "constipation",
+      "headache",
+      "thrombocytopenia"
+    ],
+    "serious": [
+      "prolonged myelosuppression",
+      "Pneumocystis pneumonia (with concurrent radiotherapy)",
+      "hepatotoxicity",
+      "MDS and secondary malignancy"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It was developed with funding from the charity Cancer Research Campaign (now Cancer Research UK), whose royalties helped fund further research."
+  ],
+  "related": [
+    "dexamethasone",
+    "bevacizumab",
+    "cyclophosphamide",
+    "levetiracetam"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Temozolomide",
+      "url": "https://en.wikipedia.org/wiki/Temozolomide"
+    },
+    {
+      "title": "DailyMed: temozolomide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TEMOZOLOMIDE"
+    },
+    {
+      "title": "EMA EPAR: Temodal",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/temodal"
+    }
+  ],
+  "stage": "written"
 }

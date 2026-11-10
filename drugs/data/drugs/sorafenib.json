@@ -1,36 +1,138 @@
 {
   "slug": "sorafenib",
   "name": "Sorafenib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BAY 43-9006",
+    "sorafenib tosylate"
+  ],
+  "brands": [
+    "Nexavar"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Multi-kinase inhibitor (RAF, VEGFR, PDGFR)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets twice daily without food",
+  "targets": [
+    "RAF1",
+    "BRAF",
+    "KDR",
+    "FLT4",
+    "PDGFRB",
+    "KIT",
+    "FLT3",
+    "RET"
+  ],
+  "origin": "synthetic",
+  "originator": "Bayer and Onyx Pharmaceuticals",
+  "owner": "Bayer (Nexavar); generic (many)",
+  "first_approval": {
+    "year": 2005,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Nexavar"
+  },
+  "discovery": {
+    "year": 1999,
+    "by": "Bayer and Onyx Pharmaceuticals",
+    "note": "A bi-aryl urea found by screening for RAF1 (CRAF) kinase inhibitors; anti-angiogenic VEGFR/PDGFR activity proved clinically more important."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First systemic therapy to extend survival in advanced liver cancer",
+  "summary": "Sorafenib is an oral multi-kinase inhibitor that blocks RAF kinases and the VEGF and PDGF receptors, inhibiting tumour cell signalling and angiogenesis. It is approved for advanced renal cell carcinoma, hepatocellular carcinoma and radioactive-iodine-refractory differentiated thyroid cancer; in 2007 it became the first drug to prolong survival in advanced liver cancer.",
+  "mechanism": [
+    "Sorafenib binds the inactive (DFG-out) conformation of several kinases. Inhibition of VEGFR2/3 and PDGFRβ reduces tumour angiogenesis, while inhibition of CRAF and BRAF reduces MAPK signalling in tumour cells.",
+    "It also inhibits KIT, FLT3 and RET. Its activity in hepatocellular carcinoma is thought to be mainly anti-angiogenic."
+  ],
+  "uses": [
+    "Advanced renal cell carcinoma",
+    "Unresectable hepatocellular carcinoma",
+    "Progressive, radioactive-iodine-refractory differentiated thyroid cancer"
+  ],
+  "history": [
+    {
+      "year": 1999,
+      "title": "Discovery",
+      "detail": "Bayer–Onyx RAF inhibitor programme identifies BAY 43-9006."
+    },
+    {
+      "year": 2005,
+      "title": "FDA approval",
+      "detail": "Approved as Nexavar for advanced renal cell carcinoma."
+    },
+    {
+      "year": 2007,
+      "title": "Liver cancer",
+      "detail": "SHARP shows a survival gain in advanced HCC; FDA approval follows (NEJM 2008)."
+    },
+    {
+      "year": 2012,
+      "title": "Indian compulsory licence",
+      "detail": "India grants Natco Pharma its first compulsory licence to make generic sorafenib at a fraction of the brand price."
+    },
+    {
+      "year": 2013,
+      "title": "Thyroid cancer",
+      "detail": "Approval for radioiodine-refractory differentiated thyroid cancer (DECISION); Amgen acquires Onyx."
+    },
+    {
+      "year": 2020,
+      "title": "Superseded in HCC",
+      "detail": "IMbrave150 shows atezolizumab plus bevacizumab outperforms sorafenib first-line in HCC."
+    }
+  ],
+  "pk": {
+    "half_life": "about 25–48 hours",
+    "bioavailability": "about 38–49% (reduced by high-fat meals)",
+    "metabolism": "hepatic CYP3A4 oxidation and UGT1A9 glucuronidation",
+    "excretion": "faecal (about 77%) and renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hand-foot skin reaction",
+      "diarrhoea",
+      "fatigue",
+      "hypertension",
+      "alopecia",
+      "rash"
+    ],
+    "serious": [
+      "cardiac ischaemia and infarction",
+      "haemorrhage",
+      "GI perforation",
+      "QT prolongation",
+      "drug-induced hepatitis",
+      "impaired wound healing"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The 2012 Indian compulsory licence cut the monthly cost from about 280,000 rupees to about 8,800 rupees."
+  ],
+  "related": [
+    "sunitinib",
+    "lenvatinib",
+    "atezolizumab",
+    "bevacizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Sorafenib",
+      "url": "https://en.wikipedia.org/wiki/Sorafenib"
+    },
+    {
+      "title": "DailyMed: sorafenib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=SORAFENIB"
+    },
+    {
+      "title": "EMA EPAR: Nexavar",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/nexavar"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,128 @@
 {
   "slug": "letrozole",
   "name": "Letrozole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CGS 20267"
+  ],
+  "brands": [
+    "Femara"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Non-steroidal aromatase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 2.5 mg once daily",
+  "targets": [
+    "CYP19A1"
+  ],
+  "origin": "synthetic",
+  "originator": "Ciba-Geigy (now Novartis)",
+  "owner": "generic (many); Femara brand held by Novartis",
+  "first_approval": {
+    "year": 1997,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Femara"
+  },
+  "discovery": {
+    "year": 1986,
+    "by": "Ciba-Geigy",
+    "note": "A triazole aromatase inhibitor optimised for potency and selectivity."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Potent aromatase inhibitor for breast cancer, also widely used to induce ovulation",
+  "summary": "Letrozole is a potent non-steroidal aromatase inhibitor that suppresses oestrogen synthesis in postmenopausal women. It is used for adjuvant, extended adjuvant and metastatic treatment of hormone-receptor-positive breast cancer, often with CDK4/6 inhibitors, and off-label to induce ovulation in polycystic ovary syndrome.",
+  "mechanism": [
+    "Letrozole binds the haem of aromatase (CYP19A1) through its triazole ring, inhibiting peripheral conversion of androgens to oestrogens by more than 95% and lowering plasma oestradiol.",
+    "In ovulation induction, a short course lowers oestrogen feedback on the hypothalamus and pituitary, raising FSH and promoting follicle development."
+  ],
+  "uses": [
+    "Adjuvant treatment of hormone-receptor-positive early breast cancer in postmenopausal women",
+    "Extended adjuvant therapy after 5 years of tamoxifen",
+    "Advanced breast cancer (alone or with CDK4/6 inhibitors)",
+    "Off-label: ovulation induction in polycystic ovary syndrome"
+  ],
+  "history": [
+    {
+      "year": 1986,
+      "title": "Discovery",
+      "detail": "Ciba-Geigy identifies CGS 20267."
+    },
+    {
+      "year": 1997,
+      "title": "FDA approval",
+      "detail": "Approved as Femara for advanced breast cancer after anti-oestrogen therapy."
+    },
+    {
+      "year": 2003,
+      "title": "MA.17",
+      "detail": "Extended adjuvant letrozole after tamoxifen reduces recurrence; the trial is stopped early."
+    },
+    {
+      "year": 2005,
+      "title": "BIG 1-98",
+      "detail": "Letrozole improves disease-free survival versus tamoxifen as initial adjuvant therapy."
+    },
+    {
+      "year": 2011,
+      "title": "Generics",
+      "detail": "Generic letrozole launches in the US."
+    },
+    {
+      "year": 2014,
+      "title": "PCOS fertility trial",
+      "detail": "Legro et al. (NEJM) find letrozole produces more live births than clomifene in polycystic ovary syndrome."
+    },
+    {
+      "year": 2015,
+      "title": "With palbociclib",
+      "detail": "Letrozole plus palbociclib receives accelerated approval for first-line advanced breast cancer."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2 days",
+    "bioavailability": "oral about 99.9%",
+    "metabolism": "hepatic CYP3A4 and CYP2A6 to an inactive carbinol",
+    "excretion": "renal (as glucuronide)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hot flushes",
+      "arthralgia",
+      "fatigue",
+      "hypercholesterolaemia",
+      "sweating"
+    ],
+    "serious": [
+      "osteoporosis and fractures",
+      "cardiovascular events",
+      "embryo-fetal toxicity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Letrozole is not licensed for fertility treatment in most countries, but it is widely recommended for ovulation induction in PCOS."
+  ],
+  "related": [
+    "anastrozole",
+    "tamoxifen",
+    "palbociclib",
+    "fulvestrant"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Letrozole",
+      "url": "https://en.wikipedia.org/wiki/Letrozole"
+    },
+    {
+      "title": "DailyMed: letrozole labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=LETROZOLE"
+    }
+  ],
+  "stage": "written"
 }

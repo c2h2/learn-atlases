@@ -1,36 +1,131 @@
 {
   "slug": "tretinoin",
   "name": "Tretinoin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "all-trans retinoic acid",
+    "ATRA"
+  ],
+  "brands": [
+    "Vesanoid",
+    "Retin-A",
+    "Renova",
+    "Altreno"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Retinoid (retinoic acid receptor agonist; differentiating agent)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "topical"
+  ],
+  "route_note": "oral capsules for acute promyelocytic leukaemia; topical cream or gel for acne and photoageing",
+  "targets": [
+    "RARA",
+    "RARB",
+    "RARG",
+    "PML::RARA"
+  ],
+  "origin": "endogenous",
+  "originator": "Hoffmann-La Roche (oral, APL); Johnson & Johnson/Ortho (topical Retin-A)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1971,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Retin-A"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1969,
+    "by": "Albert Kligman and James Fulton (University of Pennsylvania), topical acne use; Wang Zhenyi's group (Shanghai), APL",
+    "note": "Tretinoin is the active acid form of vitamin A; its use in acute promyelocytic leukaemia was established by Shanghai investigators in the 1980s."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Vitamin A acid that turned acute promyelocytic leukaemia into a curable disease",
+  "summary": "Tretinoin (all-trans retinoic acid) is the biologically active form of vitamin A. Orally it induces differentiation of leukaemic promyelocytes in acute promyelocytic leukaemia (APL), and combined with arsenic trioxide it cures most patients; topically it is a long-established treatment for acne and photodamage.",
+  "mechanism": [
+    "In APL, the t(15;17) translocation produces the PML::RARA fusion protein, which represses retinoic-acid target genes and blocks myeloid differentiation. Pharmacological concentrations of tretinoin bind the RARA moiety, release co-repressors and recruit co-activators, and trigger proteasomal degradation of the fusion protein, so the blasts mature into granulocytes.",
+    "In skin, activation of nuclear retinoic acid receptors normalises follicular keratinisation, reduces microcomedones and increases epidermal turnover and collagen synthesis."
+  ],
+  "uses": [
+    "Induction of remission in acute promyelocytic leukaemia (with arsenic trioxide and/or anthracycline chemotherapy)",
+    "Topical: acne vulgaris",
+    "Topical: fine wrinkling and photodamage (Renova)"
+  ],
+  "history": [
+    {
+      "year": 1969,
+      "title": "Topical acne treatment",
+      "detail": "Kligman and colleagues report topical tretinoin for acne."
+    },
+    {
+      "year": 1971,
+      "title": "Retin-A approved",
+      "detail": "FDA approves topical tretinoin for acne."
+    },
+    {
+      "year": 1988,
+      "title": "APL remissions",
+      "detail": "Huang Meng-er, Wang Zhenyi and colleagues in Shanghai report complete remissions in APL with oral ATRA (Blood 1988)."
+    },
+    {
+      "year": 1990,
+      "title": "PML::RARA",
+      "detail": "The t(15;17) fusion is shown to involve the retinoic acid receptor alpha gene."
+    },
+    {
+      "year": 1995,
+      "title": "Vesanoid approved",
+      "detail": "FDA approves oral tretinoin (Roche) for APL."
+    },
+    {
+      "year": 2013,
+      "title": "APL0406",
+      "detail": "Lo-Coco et al. show ATRA plus arsenic trioxide is superior to ATRA plus chemotherapy in low- to intermediate-risk APL."
+    }
+  ],
+  "pk": {
+    "half_life": "about 0.5–2 hours (oral); induces its own metabolism",
+    "bioavailability": "oral well absorbed, increased with food",
+    "metabolism": "hepatic CYP26 and CYP2C8 oxidation",
+    "excretion": "renal and faecal"
+  },
+  "safety": {
+    "common": [
+      "headache",
+      "dry skin and lips",
+      "bone pain",
+      "raised triglycerides",
+      "skin irritation and peeling (topical)"
+    ],
+    "serious": [
+      "differentiation syndrome (APL syndrome)",
+      "leukocytosis",
+      "pseudotumour cerebri",
+      "severe birth defects"
+    ],
+    "boxed_warning": "Oral tretinoin: boxed warning for differentiation syndrome, leukocytosis and embryo-fetal toxicity; use only by physicians experienced with APL."
+  },
+  "facts": [
+    "APL went from one of the most rapidly fatal leukaemias to having cure rates above 90% in low-risk disease with ATRA plus arsenic trioxide."
+  ],
+  "related": [
+    "arsenic-trioxide",
+    "isotretinoin",
+    "doxorubicin",
+    "cytarabine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tretinoin",
+      "url": "https://en.wikipedia.org/wiki/Tretinoin"
+    },
+    {
+      "title": "DailyMed: tretinoin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TRETINOIN"
+    }
+  ],
+  "stage": "written"
 }

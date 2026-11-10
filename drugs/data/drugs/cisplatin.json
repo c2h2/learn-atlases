@@ -1,36 +1,139 @@
 {
   "slug": "cisplatin",
   "name": "Cisplatin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "cis-diamminedichloroplatinum(II)",
+    "CDDP",
+    "Peyrone's salt"
+  ],
+  "brands": [
+    "Platinol",
+    "Platinol-AQ"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Platinum-based alkylating-like agent",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion with pre- and post-hydration",
+  "targets": [
+    "DNA (purine N7 cross-links)"
+  ],
+  "origin": "synthetic",
+  "originator": "Michigan State University (Barnett Rosenberg); developed by Bristol-Myers",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1978,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Platinol"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1965,
+    "by": "Barnett Rosenberg, Michigan State University",
+    "note": "Noticed that electrolysis products from platinum electrodes stopped E. coli dividing; the active species was cisplatin, first synthesised by Michele Peyrone in 1844."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first platinum anticancer drug, which turned testicular cancer into a curable disease",
+  "summary": "Cisplatin is a square-planar platinum complex that binds DNA and forms intrastrand cross-links, triggering cell death. It is used in testicular, ovarian, bladder, lung, head and neck and cervical cancers, often with radiotherapy, but its use is limited by kidney, nerve and ear toxicity and severe nausea.",
+  "mechanism": [
+    "In the low-chloride environment inside cells, cisplatin's chloride ligands are replaced by water (aquation), producing a reactive electrophile.",
+    "The aquated platinum binds the N7 position of guanine and adenine, forming mainly 1,2-intrastrand d(GpG) cross-links that kink the DNA helix. These adducts block replication and transcription and are recognised by damage-response pathways that trigger apoptosis.",
+    "Tumours deficient in nucleotide excision repair or homologous recombination (such as testicular germ-cell tumours) are especially sensitive."
+  ],
+  "uses": [
+    "Testicular germ-cell tumours (e.g. BEP)",
+    "Ovarian cancer",
+    "Advanced bladder cancer",
+    "Non-small-cell and small-cell lung cancer",
+    "Head and neck cancer (with radiotherapy)",
+    "Cervical cancer (with radiotherapy)",
+    "Other solid tumours, osteosarcoma and paediatric cancers"
+  ],
+  "history": [
+    {
+      "year": 1844,
+      "title": "First synthesis",
+      "detail": "Michele Peyrone prepares the compound, long known as Peyrone's salt."
+    },
+    {
+      "year": 1965,
+      "title": "Biological activity found",
+      "detail": "Rosenberg reports in Nature that platinum electrolysis products inhibit bacterial cell division."
+    },
+    {
+      "year": 1969,
+      "title": "Antitumour activity",
+      "detail": "Rosenberg and colleagues show cisplatin regresses sarcoma 180 and leukaemia L1210 tumours in mice."
+    },
+    {
+      "year": 1977,
+      "title": "Testicular cancer cure",
+      "detail": "Lawrence Einhorn's PVB regimen (cisplatin, vinblastine, bleomycin) produces durable cures in metastatic testicular cancer."
+    },
+    {
+      "year": 1978,
+      "title": "FDA approval",
+      "detail": "Approved as Platinol for testicular and ovarian cancer."
+    },
+    {
+      "year": 1999,
+      "title": "Chemoradiation",
+      "detail": "Multiple trials lead the NCI to recommend cisplatin-based chemoradiation for cervical cancer."
+    },
+    {
+      "year": 2022,
+      "title": "Otoprotection",
+      "detail": "FDA approves sodium thiosulfate (Pedmark) to reduce cisplatin ototoxicity in children."
+    }
+  ],
+  "pk": {
+    "half_life": "terminal half-life of platinum several days (protein bound); free drug under an hour",
+    "bioavailability": "IV only",
+    "metabolism": "non-enzymatic aquation and protein binding",
+    "excretion": "renal"
+  },
+  "safety": {
+    "common": [
+      "severe nausea and vomiting",
+      "fatigue",
+      "electrolyte loss (magnesium, potassium)",
+      "myelosuppression"
+    ],
+    "serious": [
+      "nephrotoxicity",
+      "ototoxicity and tinnitus",
+      "peripheral neuropathy",
+      "anaphylactic reactions",
+      "secondary leukaemia"
+    ],
+    "boxed_warning": "US labels carry a boxed warning covering cumulative nephrotoxicity, myelosuppression, severe nausea and vomiting, and ototoxicity/neuropathy (wording varies)."
+  },
+  "facts": [
+    "Testicular cancer cure rates rose from roughly 10% to over 80% for metastatic disease after cisplatin regimens.",
+    "It is a coordination complex, not an organic molecule, and only the cis isomer is active."
+  ],
+  "related": [
+    "carboplatin",
+    "oxaliplatin",
+    "etoposide",
+    "bleomycin",
+    "gemcitabine",
+    "fluorouracil"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Cisplatin",
+      "url": "https://en.wikipedia.org/wiki/Cisplatin"
+    },
+    {
+      "title": "DailyMed: cisplatin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=CISPLATIN"
+    }
+  ],
+  "stage": "written"
 }

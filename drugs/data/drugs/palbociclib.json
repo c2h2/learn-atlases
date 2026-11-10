@@ -1,36 +1,132 @@
 {
   "slug": "palbociclib",
   "name": "Palbociclib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PD-0332991"
+  ],
+  "brands": [
+    "Ibrance"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Cyclin-dependent kinase 4/6 (CDK4/6) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsule or tablet once daily for 21 days of 28-day cycles, with an aromatase inhibitor or fulvestrant",
+  "targets": [
+    "CDK4",
+    "CDK6"
+  ],
+  "origin": "synthetic",
+  "originator": "Parke-Davis/Pfizer (Ann Arbor)",
+  "owner": "Pfizer",
+  "first_approval": {
+    "year": 2015,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Ibrance"
+  },
+  "discovery": {
+    "year": 2001,
+    "by": "Parke-Davis/Pfizer (Peter Toogood and colleagues); preclinical breast cancer work by Dennis Slamon and Richard Finn at UCLA",
+    "note": "A pyridopyrimidine highly selective for CDK4 and CDK6, shelved for years until UCLA studies showed activity in oestrogen-receptor-positive breast cancer cells."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First CDK4/6 inhibitor, doubling progression-free time in HR+ advanced breast cancer",
+  "summary": "Palbociclib is an oral, selective inhibitor of cyclin-dependent kinases 4 and 6 that halts the cell cycle in G1. Combined with endocrine therapy, it roughly doubles progression-free survival in hormone-receptor-positive, HER2-negative advanced breast cancer and was the first CDK4/6 inhibitor approved.",
+  "mechanism": [
+    "In oestrogen-receptor-positive breast cancer, oestrogen signalling induces cyclin D1, which activates CDK4/6. These kinases phosphorylate the retinoblastoma protein (RB), releasing E2F transcription factors that drive entry into S phase.",
+    "Palbociclib blocks CDK4/6, keeping RB hypophosphorylated and arresting cells in G1; combined endocrine therapy produces deeper growth suppression. Tumours lacking functional RB are resistant. Inhibition of CDK6 in haematopoietic precursors causes reversible neutropenia."
+  ],
+  "uses": [
+    "HR-positive, HER2-negative advanced or metastatic breast cancer with an aromatase inhibitor (first endocrine therapy) or with fulvestrant (after endocrine therapy)",
+    "With inavolisib and fulvestrant for PIK3CA-mutated advanced breast cancer"
+  ],
+  "history": [
+    {
+      "year": 2001,
+      "title": "Synthesis",
+      "detail": "Compound discovered at Parke-Davis, which Pfizer acquires in 2000 through Warner-Lambert."
+    },
+    {
+      "year": 2009,
+      "title": "UCLA preclinical work",
+      "detail": "Finn, Slamon and colleagues show luminal ER-positive breast cancer cell lines are most sensitive."
+    },
+    {
+      "year": 2015,
+      "title": "Accelerated approval",
+      "detail": "FDA approves palbociclib with letrozole based on PALOMA-1."
+    },
+    {
+      "year": 2016,
+      "title": "With fulvestrant",
+      "detail": "Approval with fulvestrant after endocrine therapy (PALOMA-3)."
+    },
+    {
+      "year": 2017,
+      "title": "Full approval",
+      "detail": "PALOMA-2 confirms benefit with letrozole; EU approval in 2016."
+    },
+    {
+      "year": 2019,
+      "title": "Tablet formulation",
+      "detail": "Tablet formulation approved that can be taken with or without food."
+    },
+    {
+      "year": 2024,
+      "title": "Inavolisib combination",
+      "detail": "FDA approves inavolisib plus palbociclib and fulvestrant for PIK3CA-mutated disease."
+    }
+  ],
+  "pk": {
+    "half_life": "about 29 hours",
+    "bioavailability": "oral about 46%",
+    "metabolism": "hepatic CYP3A and SULT2A1",
+    "excretion": "faecal (about 74%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "neutropenia",
+      "fatigue",
+      "infections",
+      "stomatitis",
+      "alopecia",
+      "nausea"
+    ],
+    "serious": [
+      "severe neutropenia",
+      "interstitial lung disease and pneumonitis",
+      "embryo-fetal toxicity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Unlike chemotherapy-induced neutropenia, CDK4/6-inhibitor neutropenia rarely causes febrile infection because it reflects arrest rather than death of precursors."
+  ],
+  "related": [
+    "letrozole",
+    "anastrozole",
+    "fulvestrant",
+    "tamoxifen"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Palbociclib",
+      "url": "https://en.wikipedia.org/wiki/Palbociclib"
+    },
+    {
+      "title": "DailyMed: palbociclib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=PALBOCICLIB"
+    },
+    {
+      "title": "EMA EPAR: Ibrance",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ibrance"
+    }
+  ],
+  "stage": "written"
 }

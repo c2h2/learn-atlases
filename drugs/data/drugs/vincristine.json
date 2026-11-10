@@ -1,36 +1,130 @@
 {
   "slug": "vincristine",
   "name": "Vincristine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "leurocristine",
+    "vincristine sulfate",
+    "VCR"
+  ],
+  "brands": [
+    "Oncovin",
+    "Vincasar",
+    "Marqibo"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Vinca alkaloid (microtubule destabiliser)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV only, usually as a short infusion in a minibag; fatal if given intrathecally",
+  "targets": [
+    "TUBB (β-tubulin)"
+  ],
+  "origin": "natural",
+  "originator": "Eli Lilly",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1963,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Oncovin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1961,
+    "by": "Gordon Svoboda and colleagues, Eli Lilly",
+    "note": "Isolated from the Madagascar periwinkle (Catharanthus roseus) after Noble and Beer at the University of Western Ontario discovered vinblastine in 1958."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Periwinkle alkaloid central to childhood leukaemia and lymphoma treatment",
+  "summary": "Vincristine is a vinca alkaloid that binds tubulin and prevents microtubule assembly, arresting dividing cells in metaphase. It is a key component of treatment for acute lymphoblastic leukaemia, lymphomas and paediatric solid tumours; its dose-limiting toxicity is peripheral neuropathy rather than marrow suppression.",
+  "mechanism": [
+    "Vincristine binds the vinca domain at the β-tubulin plus end, inhibiting polymerisation and promoting microtubule disassembly at higher concentrations.",
+    "Without a functional mitotic spindle, chromosomes cannot segregate and cells arrest in metaphase and die. Disruption of axonal microtubule transport causes the characteristic sensory-motor and autonomic neuropathy."
+  ],
+  "uses": [
+    "Acute lymphoblastic leukaemia (induction)",
+    "Hodgkin and non-Hodgkin lymphoma (e.g. R-CHOP)",
+    "Wilms tumour, neuroblastoma, rhabdomyosarcoma, Ewing sarcoma",
+    "Small-cell lung cancer and brain tumours in some regimens"
+  ],
+  "history": [
+    {
+      "year": 1958,
+      "title": "Vinblastine",
+      "detail": "Robert Noble and Charles Beer isolate vinblastine while investigating periwinkle as a folk diabetes remedy."
+    },
+    {
+      "year": 1961,
+      "title": "Vincristine isolated",
+      "detail": "Lilly scientists isolate leurocristine (vincristine) from periwinkle."
+    },
+    {
+      "year": 1963,
+      "title": "FDA approval",
+      "detail": "Approved as Oncovin."
+    },
+    {
+      "year": 1965,
+      "title": "POMP and VAMP",
+      "detail": "Combination regimens containing vincristine help drive childhood ALL cure rates upward."
+    },
+    {
+      "year": 2012,
+      "title": "Liposomal vincristine",
+      "detail": "Marqibo approved for relapsed Philadelphia-negative ALL (later withdrawn in 2022)."
+    },
+    {
+      "year": 2019,
+      "title": "Supply shortage",
+      "detail": "A US shortage after a manufacturer exit raises concern for paediatric oncology."
+    }
+  ],
+  "pk": {
+    "half_life": "terminal about 85 hours",
+    "bioavailability": "IV only",
+    "metabolism": "hepatic CYP3A4/3A5",
+    "excretion": "biliary/faecal (about 80%)"
+  },
+  "safety": {
+    "common": [
+      "peripheral neuropathy",
+      "constipation",
+      "jaw pain",
+      "alopecia"
+    ],
+    "serious": [
+      "paralytic ileus",
+      "SIADH and hyponatraemia",
+      "severe neurotoxicity with CYP3A4 inhibitors (e.g. azoles)",
+      "extravasation injury",
+      "fatal ascending paralysis if given intrathecally"
+    ],
+    "boxed_warning": "Boxed warning: for IV use only — fatal if given by other routes; extravasation causes severe tissue injury."
+  },
+  "facts": [
+    "About 500 kg of periwinkle leaves yield roughly 1 g of vincristine.",
+    "Inadvertent intrathecal injection has caused dozens of deaths, prompting the dispensing of vincristine in minibags instead of syringes."
+  ],
+  "related": [
+    "cyclophosphamide",
+    "doxorubicin",
+    "prednisone",
+    "methotrexate",
+    "rituximab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Vincristine",
+      "url": "https://en.wikipedia.org/wiki/Vincristine"
+    },
+    {
+      "title": "DailyMed: vincristine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=VINCRISTINE"
+    }
+  ],
+  "stage": "written"
 }

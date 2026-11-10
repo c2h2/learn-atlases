@@ -1,36 +1,133 @@
 {
   "slug": "cytarabine",
   "name": "Cytarabine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "cytosine arabinoside",
+    "ara-C",
+    "arabinofuranosylcytosine"
+  ],
+  "brands": [
+    "Cytosar-U",
+    "DepoCyt",
+    "Vyxeos (with daunorubicin)"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Pyrimidine nucleoside antimetabolite",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "sc",
+    "intrathecal"
+  ],
+  "route_note": "continuous IV infusion (e.g. 7+3), high-dose IV, SC low dose, or intrathecal",
+  "targets": [
+    "DNA polymerase",
+    "DNA (chain termination)"
+  ],
+  "origin": "synthetic",
+  "originator": "University of California, Berkeley; developed by Upjohn",
+  "owner": "generic (many); Vyxeos held by Jazz Pharmaceuticals",
+  "first_approval": {
+    "year": 1969,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Cytosar"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1959,
+    "by": "Richard Walwick, Walden Roberts and Charles Dekker, UC Berkeley",
+    "note": "Synthesised after Werner Bergmann discovered arabinose nucleosides in the Caribbean sponge Tectitethya crypta."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Sponge-inspired nucleoside that anchors induction therapy for acute myeloid leukaemia",
+  "summary": "Cytarabine is a cytidine analogue with an arabinose sugar that is incorporated into DNA and blocks DNA polymerase, killing cells in S phase. It is the backbone of induction and consolidation therapy for acute myeloid leukaemia and is used in acute lymphoblastic leukaemia, lymphomas and CNS leukaemia.",
+  "mechanism": [
+    "Cytarabine is taken up by nucleoside transporters and phosphorylated by deoxycytidine kinase to ara-CTP.",
+    "Ara-CTP competes with dCTP and is incorporated into DNA, where the arabinose 2′-hydroxyl hinders chain elongation and inhibits DNA polymerases, leading to replication fork stalling and apoptosis. Its action is strongly S-phase specific, which is why prolonged infusion or high doses are used."
+  ],
+  "uses": [
+    "Acute myeloid leukaemia (induction with an anthracycline, high-dose consolidation)",
+    "Acute lymphoblastic leukaemia",
+    "Non-Hodgkin lymphoma salvage regimens",
+    "Meningeal leukaemia and lymphoma (intrathecal)",
+    "Liposomal daunorubicin–cytarabine (Vyxeos) for therapy-related or MDS-related AML"
+  ],
+  "history": [
+    {
+      "year": 1951,
+      "title": "Sponge nucleosides",
+      "detail": "Bergmann and Feeney report spongothymidine and spongouridine from Tectitethya crypta."
+    },
+    {
+      "year": 1959,
+      "title": "Synthesis",
+      "detail": "Cytarabine is synthesised at UC Berkeley."
+    },
+    {
+      "year": 1969,
+      "title": "FDA approval",
+      "detail": "Approved as Cytosar (Upjohn) for acute leukaemia."
+    },
+    {
+      "year": 1973,
+      "title": "7+3 regimen",
+      "detail": "Yates and colleagues describe seven days of cytarabine with three days of daunorubicin, still the standard AML induction."
+    },
+    {
+      "year": 1994,
+      "title": "High-dose consolidation",
+      "detail": "CALGB shows high-dose cytarabine consolidation improves outcomes in younger AML patients."
+    },
+    {
+      "year": 2017,
+      "title": "Vyxeos",
+      "detail": "FDA approves liposomal daunorubicin and cytarabine (CPX-351) for therapy-related AML and AML with myelodysplasia-related changes."
+    }
+  ],
+  "pk": {
+    "half_life": "terminal about 1–3 hours",
+    "bioavailability": "oral poor (about 20%); used parenterally",
+    "metabolism": "cytidine deaminase deamination to ara-U (inactive), mainly in liver",
+    "excretion": "renal"
+  },
+  "safety": {
+    "common": [
+      "myelosuppression",
+      "nausea and vomiting",
+      "mucositis",
+      "fever ('cytarabine syndrome')"
+    ],
+    "serious": [
+      "cerebellar toxicity with high doses",
+      "conjunctivitis (high dose; prevented with steroid eye drops)",
+      "severe infections",
+      "pulmonary oedema",
+      "chemical arachnoiditis (intrathecal)"
+    ],
+    "boxed_warning": "Boxed warning: should be given only by physicians experienced in cancer chemotherapy; potent bone-marrow suppressant."
+  },
+  "facts": [
+    "Marine sponge nucleosides inspired both cytarabine and the antiviral vidarabine."
+  ],
+  "related": [
+    "gemcitabine",
+    "azacitidine",
+    "venetoclax",
+    "methotrexate",
+    "doxorubicin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Cytarabine",
+      "url": "https://en.wikipedia.org/wiki/Cytarabine"
+    },
+    {
+      "title": "DailyMed: cytarabine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=CYTARABINE"
+    }
+  ],
+  "stage": "written"
 }

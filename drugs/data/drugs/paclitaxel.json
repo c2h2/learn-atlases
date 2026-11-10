@@ -1,36 +1,142 @@
 {
   "slug": "paclitaxel",
   "name": "Paclitaxel",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "taxol",
+    "nab-paclitaxel (albumin-bound form)"
+  ],
+  "brands": [
+    "Taxol",
+    "Abraxane",
+    "Onxol"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Taxane (microtubule stabiliser)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion with premedication (Cremophor-based); albumin-bound nab-paclitaxel needs no premedication",
+  "targets": [
+    "TUBB (β-tubulin)"
+  ],
+  "origin": "natural",
+  "originator": "US National Cancer Institute / Research Triangle Institute; developed by Bristol-Myers Squibb",
+  "owner": "generic (many); Abraxane held by Bristol Myers Squibb",
+  "first_approval": {
+    "year": 1992,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Taxol"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1971,
+    "by": "Monroe Wall and Mansukh Wani, Research Triangle Institute",
+    "note": "Isolated from the bark of the Pacific yew (Taxus brevifolia) collected in a 1962 NCI plant-screening programme; structure published in 1971."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Pacific-yew taxane that freezes microtubules; mainstay for breast, ovarian and lung cancer",
+  "summary": "Paclitaxel is a taxane diterpenoid that stabilises microtubules and arrests cells in mitosis. Originally extracted from Pacific yew bark and now produced by semisynthesis or plant-cell fermentation, it is a standard treatment for ovarian, breast, lung and many other cancers.",
+  "mechanism": [
+    "Paclitaxel binds the β-tubulin subunit on the inner surface of microtubules, promoting assembly and preventing depolymerisation.",
+    "The resulting hyperstable, non-functional microtubules cannot form a normal mitotic spindle, so cells arrest at the G2/M transition and undergo apoptosis or mitotic catastrophe. Interference with microtubule transport in neurons underlies its peripheral neuropathy."
+  ],
+  "uses": [
+    "Ovarian cancer (first-line with carboplatin)",
+    "Breast cancer (adjuvant and metastatic)",
+    "Non-small-cell lung cancer",
+    "AIDS-related Kaposi sarcoma",
+    "Nab-paclitaxel: metastatic breast, NSCLC and pancreatic cancer (with gemcitabine)",
+    "Paclitaxel-eluting coronary stents (device use)"
+  ],
+  "history": [
+    {
+      "year": 1962,
+      "title": "Bark collected",
+      "detail": "Botanist Arthur Barclay collects Pacific yew bark for the NCI screening programme."
+    },
+    {
+      "year": 1971,
+      "title": "Structure published",
+      "detail": "Wall and Wani report the structure of taxol."
+    },
+    {
+      "year": 1979,
+      "title": "Mechanism",
+      "detail": "Susan Horwitz shows that taxol stabilises microtubules, a novel mechanism."
+    },
+    {
+      "year": 1989,
+      "title": "Ovarian responses",
+      "detail": "Johns Hopkins investigators report responses in refractory ovarian cancer; supply from bark becomes a major concern."
+    },
+    {
+      "year": 1992,
+      "title": "FDA approval",
+      "detail": "Approved as Taxol (Bristol-Myers Squibb) for refractory ovarian cancer; the name 'taxol' becomes a BMS trademark, so the generic name paclitaxel is adopted."
+    },
+    {
+      "year": 1994,
+      "title": "Semisynthesis",
+      "detail": "Approval of semisynthetic paclitaxel from 10-deacetylbaccatin III (Holton route) from renewable yew needles."
+    },
+    {
+      "year": 2005,
+      "title": "Abraxane",
+      "detail": "Albumin-bound nanoparticle paclitaxel approved for metastatic breast cancer."
+    },
+    {
+      "year": 2013,
+      "title": "Pancreatic cancer",
+      "detail": "Nab-paclitaxel plus gemcitabine approved for metastatic pancreatic cancer (MPACT)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3–52 hours depending on dose and infusion",
+    "bioavailability": "IV only",
+    "metabolism": "hepatic CYP2C8 (major) and CYP3A4",
+    "excretion": "faecal via bile; <10% renal"
+  },
+  "safety": {
+    "common": [
+      "alopecia",
+      "neutropenia",
+      "peripheral sensory neuropathy",
+      "myalgia and arthralgia",
+      "nausea"
+    ],
+    "serious": [
+      "severe hypersensitivity (Cremophor EL vehicle)",
+      "severe neutropenia and infection",
+      "cardiac conduction disturbances",
+      "pneumonitis"
+    ],
+    "boxed_warning": "Boxed warning for anaphylaxis and severe hypersensitivity reactions (premedication required) and for bone-marrow suppression; do not give with baseline neutrophils below 1,500/mm³."
+  },
+  "facts": [
+    "Treating one patient originally required bark from several mature yew trees, driving the search for semisynthetic routes.",
+    "Total syntheses by Holton and by Nicolaou were both published in 1994."
+  ],
+  "related": [
+    "docetaxel",
+    "carboplatin",
+    "cisplatin",
+    "gemcitabine",
+    "trastuzumab",
+    "bevacizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Paclitaxel",
+      "url": "https://en.wikipedia.org/wiki/Paclitaxel"
+    },
+    {
+      "title": "DailyMed: paclitaxel labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=PACLITAXEL"
+    }
+  ],
+  "stage": "written"
 }

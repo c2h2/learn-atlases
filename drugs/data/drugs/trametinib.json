@@ -1,36 +1,133 @@
 {
   "slug": "trametinib",
   "name": "Trametinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GSK1120212",
+    "JTP-74057",
+    "trametinib dimethyl sulfoxide"
+  ],
+  "brands": [
+    "Mekinist",
+    "Spexotras"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "MEK1/MEK2 inhibitor (allosteric)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily, usually with dabrafenib; oral solution for children",
+  "targets": [
+    "MAP2K1",
+    "MAP2K2"
+  ],
+  "origin": "synthetic",
+  "originator": "Japan Tobacco (discovered as JTP-74057); developed by GlaxoSmithKline",
+  "owner": "Novartis",
+  "first_approval": {
+    "year": 2013,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Mekinist"
+  },
+  "discovery": {
+    "year": 2006,
+    "by": "Japan Tobacco Central Pharmaceutical Research Institute",
+    "note": "Identified through phenotypic screening for p15INK4b inducers; later shown to be an allosteric MEK inhibitor."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First approved MEK inhibitor, the partner drug of dabrafenib",
+  "summary": "Trametinib is a reversible, allosteric inhibitor of MEK1 and MEK2, the kinases downstream of RAF in the MAPK pathway. It was the first MEK inhibitor approved, and is used mainly with dabrafenib in BRAF V600-mutant melanoma, lung, thyroid and other cancers, and in paediatric low-grade glioma.",
+  "mechanism": [
+    "Trametinib binds a pocket adjacent to the ATP site of unphosphorylated MEK1/2, preventing RAF-dependent MEK activation and MEK kinase activity, so ERK is not phosphorylated.",
+    "Combining MEK inhibition with BRAF inhibition produces deeper and more durable pathway suppression and counteracts paradoxical MAPK activation caused by BRAF inhibitors."
+  ],
+  "uses": [
+    "BRAF V600E/K-mutant melanoma, metastatic or adjuvant (with dabrafenib, or alone)",
+    "BRAF V600E-mutant NSCLC and anaplastic thyroid cancer (with dabrafenib)",
+    "BRAF V600E-mutant solid tumours (tumour-agnostic, with dabrafenib)",
+    "BRAF V600E paediatric low-grade glioma"
+  ],
+  "history": [
+    {
+      "year": 2006,
+      "title": "Discovery",
+      "detail": "Japan Tobacco identifies JTP-74057; GSK licenses it as GSK1120212."
+    },
+    {
+      "year": 2012,
+      "title": "METRIC",
+      "detail": "Trametinib improves progression-free and overall survival versus chemotherapy in BRAF-mutant melanoma."
+    },
+    {
+      "year": 2013,
+      "title": "FDA approval",
+      "detail": "Approved as Mekinist on the same day as dabrafenib."
+    },
+    {
+      "year": 2014,
+      "title": "Combination",
+      "detail": "Accelerated approval with dabrafenib."
+    },
+    {
+      "year": 2015,
+      "title": "Novartis",
+      "detail": "Rights transferred to Novartis in the GSK–Novartis asset swap."
+    },
+    {
+      "year": 2023,
+      "title": "Paediatric glioma",
+      "detail": "Approved with dabrafenib for BRAF V600E paediatric low-grade glioma."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4 days (3.9–4.8 days)",
+    "bioavailability": "oral about 72%",
+    "metabolism": "deacetylation (non-CYP) with subsequent oxidation and glucuronidation",
+    "excretion": "faecal (over 80%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "rash and acneiform dermatitis",
+      "diarrhoea",
+      "peripheral oedema",
+      "fatigue",
+      "pyrexia (combination)"
+    ],
+    "serious": [
+      "reduced left ventricular ejection fraction",
+      "retinal vein occlusion and retinal pigment epithelial detachment",
+      "interstitial lung disease",
+      "haemorrhage",
+      "venous thromboembolism",
+      "colitis and GI perforation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its long half-life allows once-daily dosing, unlike its partner dabrafenib."
+  ],
+  "related": [
+    "dabrafenib",
+    "vemurafenib",
+    "sotorasib"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Trametinib",
+      "url": "https://en.wikipedia.org/wiki/Trametinib"
+    },
+    {
+      "title": "DailyMed: trametinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TRAMETINIB"
+    },
+    {
+      "title": "EMA EPAR: Mekinist",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/mekinist"
+    }
+  ],
+  "stage": "written"
 }

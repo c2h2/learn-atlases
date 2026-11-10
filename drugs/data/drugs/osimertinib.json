@@ -1,36 +1,132 @@
 {
   "slug": "osimertinib",
   "name": "Osimertinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AZD9291",
+    "osimertinib mesylate"
+  ],
+  "brands": [
+    "Tagrisso"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "EGFR tyrosine kinase inhibitor (third generation, irreversible)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 80 mg once daily",
+  "targets": [
+    "EGFR (including T790M)"
+  ],
+  "origin": "synthetic",
+  "originator": "AstraZeneca",
+  "owner": "AstraZeneca",
+  "first_approval": {
+    "year": 2015,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tagrisso"
+  },
+  "discovery": {
+    "year": 2012,
+    "by": "AstraZeneca (Cross, Finlay and colleagues)",
+    "note": "A mono-anilino-pyrimidine designed to covalently target mutant EGFR including the T790M resistance mutation while sparing wild-type EGFR."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Third-generation EGFR inhibitor that overcomes T790M and penetrates the brain",
+  "summary": "Osimertinib is an irreversible EGFR inhibitor that selectively targets sensitising EGFR mutations and the T790M resistance mutation, with good central nervous system penetration. It is the standard first-line treatment for EGFR-mutant non-small-cell lung cancer and is also approved as adjuvant therapy after surgery and after chemoradiation for stage III disease.",
+  "mechanism": [
+    "Osimertinib's acrylamide warhead forms a covalent bond with cysteine 797 in the EGFR ATP-binding site, irreversibly inhibiting mutant receptors (exon 19 deletion, L858R and T790M) with much lower activity against wild-type EGFR, reducing skin and gut toxicity.",
+    "The C797S mutation, MET amplification and histological transformation are common mechanisms of resistance."
+  ],
+  "uses": [
+    "First-line treatment of metastatic EGFR-mutant NSCLC (alone or with platinum–pemetrexed)",
+    "EGFR T790M-positive NSCLC after earlier EGFR inhibitors",
+    "Adjuvant therapy after resection of stage IB–IIIA EGFR-mutant NSCLC",
+    "Unresectable stage III EGFR-mutant NSCLC after chemoradiation"
+  ],
+  "history": [
+    {
+      "year": 2012,
+      "title": "Candidate selected",
+      "detail": "AZD9291 nominated after a structure-based programme begun in 2009."
+    },
+    {
+      "year": 2015,
+      "title": "Accelerated approval",
+      "detail": "FDA approves osimertinib for T790M-positive NSCLC, under three years after first-in-human dosing."
+    },
+    {
+      "year": 2017,
+      "title": "AURA3",
+      "detail": "Full approval after superiority over platinum–pemetrexed in T790M-positive disease."
+    },
+    {
+      "year": 2018,
+      "title": "FLAURA",
+      "detail": "First-line approval after improved progression-free survival versus gefitinib or erlotinib; overall survival benefit reported in 2019."
+    },
+    {
+      "year": 2020,
+      "title": "ADAURA",
+      "detail": "Approved as adjuvant therapy after resection of EGFR-mutant NSCLC."
+    },
+    {
+      "year": 2024,
+      "title": "FLAURA2 and LAURA",
+      "detail": "FDA approves osimertinib with chemotherapy first-line (February) and after chemoradiation for unresectable stage III disease (September)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 48 hours",
+    "bioavailability": "oral about 70%",
+    "metabolism": "hepatic CYP3A to active metabolites AZ5104 and AZ7550",
+    "excretion": "faecal (about 68%) and renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "diarrhoea",
+      "rash",
+      "dry skin",
+      "paronychia",
+      "stomatitis",
+      "fatigue"
+    ],
+    "serious": [
+      "interstitial lung disease",
+      "QT prolongation",
+      "cardiomyopathy",
+      "keratitis",
+      "erythema multiforme and Stevens–Johnson syndrome",
+      "aplastic anaemia (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "FDA accelerated approval came less than three years after the first patient was dosed."
+  ],
+  "related": [
+    "gefitinib",
+    "erlotinib",
+    "carboplatin",
+    "cisplatin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Osimertinib",
+      "url": "https://en.wikipedia.org/wiki/Osimertinib"
+    },
+    {
+      "title": "DailyMed: osimertinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=OSIMERTINIB"
+    },
+    {
+      "title": "EMA EPAR: Tagrisso",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tagrisso"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,136 @@
 {
   "slug": "enzalutamide",
   "name": "Enzalutamide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MDV3100"
+  ],
+  "brands": [
+    "Xtandi"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Androgen receptor inhibitor (second-generation antiandrogen)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules or tablets 160 mg once daily, usually with ongoing androgen deprivation",
+  "targets": [
+    "AR"
+  ],
+  "origin": "synthetic",
+  "originator": "University of California, Los Angeles (Charles Sawyers, Michael Jung); developed by Medivation and Astellas",
+  "owner": "Astellas and Pfizer",
+  "first_approval": {
+    "year": 2012,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Xtandi"
+  },
+  "discovery": {
+    "year": 2006,
+    "by": "Charles Sawyers and Michael Jung, UCLA",
+    "note": "Designed from the non-steroidal scaffold RU59063 to bind the androgen receptor with high affinity and no agonist activity when the receptor is overexpressed."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Androgen receptor blocker that extends survival across stages of advanced prostate cancer",
+  "summary": "Enzalutamide is an oral androgen receptor inhibitor that blocks androgen binding, nuclear translocation and DNA binding of the receptor. It extends survival in metastatic castration-resistant prostate cancer and is approved across non-metastatic, hormone-sensitive and biochemically recurrent disease.",
+  "mechanism": [
+    "Castration-resistant prostate cancer often remains dependent on androgen receptor signalling through receptor overexpression or intratumoral androgen synthesis.",
+    "Enzalutamide binds the ligand-binding domain with several-fold higher affinity than bicalutamide and inhibits three steps: androgen binding, nuclear translocation of the receptor, and binding of the receptor to DNA and co-activators. Unlike first-generation antiandrogens, it shows no agonist activity in receptor-overexpressing cells."
+  ],
+  "uses": [
+    "Metastatic castration-resistant prostate cancer",
+    "Non-metastatic castration-resistant prostate cancer",
+    "Metastatic castration-sensitive prostate cancer",
+    "Non-metastatic castration-sensitive prostate cancer with high-risk biochemical recurrence",
+    "Combination with talazoparib in HRR-mutated mCRPC"
+  ],
+  "history": [
+    {
+      "year": 2006,
+      "title": "Discovery",
+      "detail": "Sawyers and Jung identify MDV3100 at UCLA (published in Science, 2009)."
+    },
+    {
+      "year": 2012,
+      "title": "FDA approval",
+      "detail": "Approved after AFFIRM for mCRPC previously treated with docetaxel."
+    },
+    {
+      "year": 2014,
+      "title": "PREVAIL",
+      "detail": "FDA extends use to chemotherapy-naive mCRPC."
+    },
+    {
+      "year": 2016,
+      "title": "Pfizer acquires Medivation",
+      "detail": "Pfizer acquires Medivation and co-commercialises Xtandi with Astellas."
+    },
+    {
+      "year": 2018,
+      "title": "PROSPER",
+      "detail": "Approval for non-metastatic CRPC."
+    },
+    {
+      "year": 2019,
+      "title": "ARCHES",
+      "detail": "Approval for metastatic castration-sensitive prostate cancer."
+    },
+    {
+      "year": 2023,
+      "title": "EMBARK",
+      "detail": "Approval for non-metastatic castration-sensitive disease with high-risk biochemical recurrence; talazoparib combination also approved."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5.8 days",
+    "bioavailability": "oral, well absorbed",
+    "metabolism": "hepatic CYP2C8 (to active N-desmethyl enzalutamide) and CYP3A4; strong CYP3A4 inducer",
+    "excretion": "renal (about 71%) and faecal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "fatigue",
+      "hot flushes",
+      "hypertension",
+      "falls and fractures",
+      "decreased appetite"
+    ],
+    "serious": [
+      "seizures",
+      "posterior reversible encephalopathy syndrome",
+      "ischaemic heart disease",
+      "hypersensitivity",
+      "cognitive impairment"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "As a strong CYP3A4 inducer it lowers levels of many co-administered drugs."
+  ],
+  "related": [
+    "abiraterone",
+    "leuprolide",
+    "docetaxel",
+    "olaparib",
+    "prednisone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Enzalutamide",
+      "url": "https://en.wikipedia.org/wiki/Enzalutamide"
+    },
+    {
+      "title": "DailyMed: enzalutamide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ENZALUTAMIDE"
+    },
+    {
+      "title": "EMA EPAR: Xtandi",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/xtandi"
+    }
+  ],
+  "stage": "written"
 }

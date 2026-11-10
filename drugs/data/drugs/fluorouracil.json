@@ -1,36 +1,133 @@
 {
   "slug": "fluorouracil",
   "name": "Fluorouracil",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "5-fluorouracil",
+    "5-FU"
+  ],
+  "brands": [
+    "Adrucil",
+    "Efudex",
+    "Carac",
+    "Efudix"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Fluoropyrimidine antimetabolite (thymidylate synthase inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "topical"
+  ],
+  "route_note": "IV bolus or continuous infusion (often with leucovorin); topical cream for actinic keratoses and superficial basal cell carcinoma",
+  "targets": [
+    "TYMS",
+    "RNA and DNA incorporation"
+  ],
+  "origin": "synthetic",
+  "originator": "Charles Heidelberger (University of Wisconsin) with Hoffmann-La Roche",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1962,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Fluorouracil (Roche)"
+  },
+  "discovery": {
+    "year": 1957,
+    "by": "Charles Heidelberger, with Robert Duschinsky of Hoffmann-La Roche",
+    "note": "Rationally designed after observing that tumour cells take up uracil avidly; fluorine at the 5-position blocks thymidylate synthesis."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Rationally designed pyrimidine analogue, backbone of colorectal and GI cancer regimens",
+  "summary": "Fluorouracil (5-FU) is a pyrimidine analogue that is converted inside cells into nucleotides that inhibit thymidylate synthase and are misincorporated into RNA and DNA. It is the backbone of FOLFOX, FOLFIRI and FOLFIRINOX regimens for gastrointestinal cancers and is also used for breast and head and neck cancer and topically for skin lesions.",
+  "mechanism": [
+    "5-FU is converted to fluorodeoxyuridine monophosphate (FdUMP), which forms a stable ternary complex with thymidylate synthase and 5,10-methylenetetrahydrofolate, blocking thymidine synthesis and causing 'thymineless death'. Leucovorin increases the folate cofactor and stabilises this complex.",
+    "Its triphosphate metabolites FUTP and FdUTP are incorporated into RNA and DNA, disrupting RNA processing and DNA integrity.",
+    "More than 80% of a dose is catabolised by dihydropyrimidine dehydrogenase (DPD, gene DPYD); patients with DPD deficiency can develop severe or fatal toxicity."
+  ],
+  "uses": [
+    "Colorectal cancer (adjuvant and metastatic)",
+    "Pancreatic, gastric, oesophageal and anal cancer",
+    "Breast cancer",
+    "Head and neck cancer",
+    "Topical: actinic keratoses and superficial basal cell carcinoma"
+  ],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Design and synthesis",
+      "detail": "Heidelberger and Duschinsky report 5-fluorouracil and its antitumour activity in Nature."
+    },
+    {
+      "year": 1962,
+      "title": "FDA approval",
+      "detail": "Approved for palliative treatment of gastrointestinal cancers."
+    },
+    {
+      "year": 1970,
+      "title": "Topical approval",
+      "detail": "Topical fluorouracil (Efudex) approved for actinic keratoses."
+    },
+    {
+      "year": 1990,
+      "title": "Adjuvant colon cancer",
+      "detail": "NIH consensus recommends adjuvant 5-FU plus levamisole for stage III colon cancer after Moertel's trial."
+    },
+    {
+      "year": 2000,
+      "title": "FOLFOX/FOLFIRI era",
+      "detail": "Infusional 5-FU with leucovorin plus oxaliplatin or irinotecan becomes standard for metastatic colorectal cancer."
+    },
+    {
+      "year": 2020,
+      "title": "DPD testing",
+      "detail": "EMA recommends testing for DPD deficiency before starting fluorouracil, capecitabine and related drugs."
+    }
+  ],
+  "pk": {
+    "half_life": "about 8–20 minutes",
+    "bioavailability": "oral absorption erratic (not used orally); IV",
+    "metabolism": "hepatic and extrahepatic DPD catabolism; intracellular anabolism to active nucleotides",
+    "excretion": "respiratory CO2 and renal (metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "mucositis and stomatitis",
+      "diarrhoea",
+      "neutropenia",
+      "hand-foot syndrome (infusional)",
+      "nausea"
+    ],
+    "serious": [
+      "severe toxicity in DPD deficiency",
+      "coronary vasospasm and cardiotoxicity",
+      "hyperammonaemic encephalopathy",
+      "severe myelosuppression"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Uridine triacetate is an antidote for fluorouracil or capecitabine overdose or early-onset severe toxicity."
+  ],
+  "related": [
+    "capecitabine",
+    "oxaliplatin",
+    "irinotecan",
+    "cisplatin",
+    "methotrexate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Fluorouracil",
+      "url": "https://en.wikipedia.org/wiki/Fluorouracil"
+    },
+    {
+      "title": "DailyMed: fluorouracil labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=FLUOROURACIL"
+    }
+  ],
+  "stage": "written"
 }

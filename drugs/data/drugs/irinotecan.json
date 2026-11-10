@@ -1,36 +1,141 @@
 {
   "slug": "irinotecan",
   "name": "Irinotecan",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CPT-11",
+    "irinotecan hydrochloride",
+    "liposomal irinotecan (nal-IRI)"
+  ],
+  "brands": [
+    "Camptosar",
+    "Campto",
+    "Onivyde"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Camptothecin topoisomerase I inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every 1–3 weeks; liposomal irinotecan (Onivyde) every 2 weeks",
+  "targets": [
+    "TOP1"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Yakult Honsha and Daiichi Seiyaku (Japan)",
+  "owner": "generic (many); Onivyde held by Ipsen",
+  "first_approval": {
+    "year": 1994,
+    "agency": "MHW",
+    "country": "Japan",
+    "brand": "Campto/Topotecin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1983,
+    "by": "Yakult Honsha (Tokuji Kunimoto, Seigo Sawada and colleagues)",
+    "note": "A water-soluble semisynthetic derivative of camptothecin, the alkaloid isolated by Wall and Wani from the Chinese tree Camptotheca acuminata in 1966."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Camptothecin prodrug of SN-38 used in FOLFIRI and FOLFIRINOX",
+  "summary": "Irinotecan is a semisynthetic camptothecin prodrug converted to SN-38, which traps topoisomerase I on DNA and causes lethal DNA breaks during replication. It is a standard component of FOLFIRI and FOLFIRINOX for colorectal and pancreatic cancer; diarrhoea and neutropenia are its main toxicities.",
+  "mechanism": [
+    "Carboxylesterases convert irinotecan to SN-38, which is 100–1,000 times more potent.",
+    "SN-38 binds the topoisomerase I–DNA cleavage complex and prevents re-ligation of the single-strand break. When a replication fork collides with this complex, a double-strand break forms, killing cells in S phase.",
+    "SN-38 is inactivated by UGT1A1 glucuronidation; reduced-function alleles such as UGT1A1*28 (Gilbert syndrome) increase the risk of neutropenia."
+  ],
+  "uses": [
+    "Metastatic colorectal cancer (FOLFIRI, FOLFOXIRI, with biologics)",
+    "Metastatic pancreatic cancer (FOLFIRINOX; liposomal irinotecan with 5-FU, or NALIRIFOX)",
+    "Off-label: gastric, small-cell lung and other cancers"
+  ],
+  "history": [
+    {
+      "year": 1966,
+      "title": "Camptothecin",
+      "detail": "Wall and Wani isolate camptothecin from Camptotheca acuminata."
+    },
+    {
+      "year": 1985,
+      "title": "Topoisomerase I target",
+      "detail": "Hsiang and Liu identify topoisomerase I as camptothecin's target."
+    },
+    {
+      "year": 1994,
+      "title": "Japan approval",
+      "detail": "Irinotecan approved in Japan."
+    },
+    {
+      "year": 1996,
+      "title": "FDA approval",
+      "detail": "Approved as Camptosar for 5-FU-refractory metastatic colorectal cancer."
+    },
+    {
+      "year": 2000,
+      "title": "First-line combination",
+      "detail": "FDA approves irinotecan with 5-FU/leucovorin as first-line therapy."
+    },
+    {
+      "year": 2011,
+      "title": "FOLFIRINOX",
+      "detail": "Conroy et al. show FOLFIRINOX improves survival in metastatic pancreatic cancer."
+    },
+    {
+      "year": 2015,
+      "title": "Onivyde",
+      "detail": "Liposomal irinotecan approved with 5-FU/leucovorin after gemcitabine in pancreatic cancer."
+    },
+    {
+      "year": 2024,
+      "title": "NALIRIFOX",
+      "detail": "FDA approves liposomal irinotecan in NALIRIFOX for first-line metastatic pancreatic cancer."
+    }
+  ],
+  "pk": {
+    "half_life": "irinotecan about 6–12 hours; SN-38 about 10–20 hours",
+    "bioavailability": "IV only",
+    "metabolism": "carboxylesterase to SN-38; UGT1A1 glucuronidation; CYP3A4",
+    "excretion": "biliary/faecal and renal"
+  },
+  "safety": {
+    "common": [
+      "diarrhoea (early cholinergic and late)",
+      "neutropenia",
+      "nausea and vomiting",
+      "alopecia",
+      "fatigue"
+    ],
+    "serious": [
+      "severe late diarrhoea and dehydration",
+      "febrile neutropenia",
+      "interstitial lung disease",
+      "increased toxicity in UGT1A1*28 homozygotes"
+    ],
+    "boxed_warning": "Boxed warning for severe diarrhoea and myelosuppression."
+  },
+  "facts": [
+    "Early diarrhoea is cholinergic (acetylcholinesterase inhibition) and is treated with atropine; late diarrhoea is managed with loperamide.",
+    "SN-38 is also the payload of the antibody–drug conjugate sacituzumab govitecan."
+  ],
+  "related": [
+    "fluorouracil",
+    "oxaliplatin",
+    "capecitabine",
+    "sacituzumab-govitecan",
+    "loperamide",
+    "bevacizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Irinotecan",
+      "url": "https://en.wikipedia.org/wiki/Irinotecan"
+    },
+    {
+      "title": "DailyMed: irinotecan labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=IRINOTECAN"
+    }
+  ],
+  "stage": "written"
 }

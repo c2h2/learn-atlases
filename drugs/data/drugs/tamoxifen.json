@@ -1,36 +1,135 @@
 {
   "slug": "tamoxifen",
   "name": "Tamoxifen",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ICI 46,474",
+    "tamoxifen citrate"
+  ],
+  "brands": [
+    "Nolvadex",
+    "Soltamox"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Selective oestrogen receptor modulator (SERM)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets or solution once daily, typically for 5–10 years in adjuvant therapy",
+  "targets": [
+    "ESR1",
+    "ESR2"
+  ],
+  "origin": "synthetic",
+  "originator": "Imperial Chemical Industries (ICI), UK",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1973,
+    "agency": "CSM",
+    "country": "UK",
+    "brand": "Nolvadex"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1962,
+    "by": "Dora Richardson and Arthur Walpole's team, ICI Pharmaceuticals",
+    "note": "Synthesised in a contraceptive programme; it proved a poor contraceptive but an effective anti-oestrogen in breast cancer, championed clinically by V. Craig Jordan."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First targeted cancer therapy: an oestrogen-receptor modulator for breast cancer",
+  "summary": "Tamoxifen is a selective oestrogen receptor modulator that blocks oestrogen action in breast tissue while acting as a partial agonist in bone and the uterus. It reduces recurrence and death in oestrogen-receptor-positive breast cancer, is used for risk reduction in high-risk women, and is on the WHO essential medicines list.",
+  "mechanism": [
+    "Tamoxifen and its more potent metabolites 4-hydroxytamoxifen and endoxifen bind the oestrogen receptor and induce a conformation that recruits co-repressors instead of co-activators in breast tissue, blocking oestrogen-driven proliferation.",
+    "In endometrium, bone and liver the same complex acts as a partial agonist, explaining preserved bone density in postmenopausal women but increased risk of endometrial hyperplasia, cancer and thromboembolism.",
+    "Conversion to endoxifen depends on CYP2D6, so strong CYP2D6 inhibitors may reduce efficacy."
+  ],
+  "uses": [
+    "Adjuvant treatment of ER-positive early breast cancer (pre- and postmenopausal)",
+    "Metastatic ER-positive breast cancer",
+    "Ductal carcinoma in situ after surgery and radiotherapy",
+    "Reduction of breast cancer risk in high-risk women",
+    "Male breast cancer; off-label: gynaecomastia, ovulation induction"
+  ],
+  "history": [
+    {
+      "year": 1962,
+      "title": "Synthesis",
+      "detail": "ICI chemist Dora Richardson synthesises ICI 46,474."
+    },
+    {
+      "year": 1971,
+      "title": "First clinical study",
+      "detail": "Cole and colleagues at the Christie Hospital report responses in advanced breast cancer."
+    },
+    {
+      "year": 1973,
+      "title": "UK approval",
+      "detail": "Licensed in the UK as Nolvadex for advanced breast cancer."
+    },
+    {
+      "year": 1977,
+      "title": "FDA approval",
+      "detail": "Approved in the US for metastatic breast cancer."
+    },
+    {
+      "year": 1988,
+      "title": "EBCTCG overview",
+      "detail": "The first Early Breast Cancer Trialists' overview confirms that adjuvant tamoxifen reduces recurrence and death."
+    },
+    {
+      "year": 1998,
+      "title": "Risk reduction",
+      "detail": "NSABP P-1 shows a 49% reduction in invasive breast cancer in high-risk women; FDA approves risk-reduction use."
+    },
+    {
+      "year": 2013,
+      "title": "ATLAS",
+      "detail": "Ten years of tamoxifen reduces recurrence and mortality compared with five years."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5–7 days; N-desmethyltamoxifen about 14 days",
+    "bioavailability": "oral, well absorbed",
+    "metabolism": "hepatic CYP3A4/5 and CYP2D6 to endoxifen and 4-hydroxytamoxifen",
+    "excretion": "faecal"
+  },
+  "safety": {
+    "common": [
+      "hot flushes",
+      "vaginal discharge or dryness",
+      "menstrual irregularity",
+      "nausea"
+    ],
+    "serious": [
+      "endometrial cancer and uterine sarcoma",
+      "venous thromboembolism and pulmonary embolism",
+      "stroke",
+      "cataracts",
+      "hepatotoxicity"
+    ],
+    "boxed_warning": "Boxed warning (risk reduction and DCIS settings): uterine malignancies, stroke and pulmonary embolism."
+  },
+  "facts": [
+    "Tamoxifen is often called the first targeted cancer therapy because it acts on a defined molecular target, the oestrogen receptor."
+  ],
+  "related": [
+    "anastrozole",
+    "letrozole",
+    "fulvestrant",
+    "raloxifene",
+    "palbociclib"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tamoxifen",
+      "url": "https://en.wikipedia.org/wiki/Tamoxifen"
+    },
+    {
+      "title": "DailyMed: tamoxifen labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TAMOXIFEN"
+    }
+  ],
+  "stage": "written"
 }

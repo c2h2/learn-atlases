@@ -1,36 +1,139 @@
 {
   "slug": "arsenic-trioxide",
   "name": "Arsenic trioxide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ATO",
+    "As2O3"
+  ],
+  "brands": [
+    "Trisenox"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Antineoplastic (PML::RARA degrader; differentiating agent)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion daily during induction and on a schedule during consolidation; oral formulations are used in China and studied elsewhere",
+  "targets": [
+    "PML",
+    "PML::RARA"
+  ],
+  "origin": "synthetic",
+  "originator": "Harbin Medical University (Zhang Tingdong) and Shanghai Institute of Hematology (Chen Zhu, Wang Zhenyi); Western development by Cell Therapeutics",
+  "owner": "Teva (Trisenox); generic (many)",
+  "first_approval": {
+    "year": 2000,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Trisenox"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1971,
+    "by": "Zhang Tingdong and colleagues, Harbin Medical University",
+    "note": "Investigated arsenic-containing traditional remedies; reported activity of arsenic trioxide (Ailing-1) in APL in the 1970s–1990s."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Ancient poison repurposed as a curative, chemotherapy-free treatment for APL",
+  "summary": "Arsenic trioxide is an inorganic compound that binds the PML portion of the PML::RARA oncoprotein and triggers its degradation, inducing differentiation and apoptosis of leukaemic promyelocytes. With tretinoin, it allows chemotherapy-free cure of most patients with acute promyelocytic leukaemia.",
+  "mechanism": [
+    "Trivalent arsenic binds cysteine residues in the B-box/RING domain of PML, causing oligomerisation, SUMOylation by UBC9 and RNF4-mediated ubiquitination, and proteasomal degradation of both PML and the PML::RARA fusion.",
+    "Loss of the fusion relieves the block on myeloid differentiation and restores PML nuclear bodies; at higher concentrations arsenic also induces oxidative stress and apoptosis. Tretinoin acts on the RARA moiety, so the two agents are synergistic."
+  ],
+  "uses": [
+    "Acute promyelocytic leukaemia: first-line in low-risk disease with tretinoin",
+    "Relapsed or refractory APL after tretinoin and anthracycline therapy"
+  ],
+  "history": [
+    {
+      "year": 1971,
+      "title": "Harbin studies",
+      "detail": "Physicians at Harbin Medical University begin using arsenic-containing preparations for leukaemia."
+    },
+    {
+      "year": 1992,
+      "title": "APL results",
+      "detail": "Harbin investigators report high remission rates in APL with intravenous arsenic trioxide."
+    },
+    {
+      "year": 1997,
+      "title": "Mechanism",
+      "detail": "Shanghai investigators (Chen Guo-Qiang, Chen Zhu and colleagues) show arsenic induces apoptosis and degrades PML::RARA."
+    },
+    {
+      "year": 1998,
+      "title": "US trial",
+      "detail": "Soignet et al. at Memorial Sloan Kettering report remissions in relapsed APL (NEJM)."
+    },
+    {
+      "year": 2000,
+      "title": "FDA approval",
+      "detail": "Approved as Trisenox for relapsed or refractory APL."
+    },
+    {
+      "year": 2010,
+      "title": "Direct target",
+      "detail": "Zhang et al. (Science) show arsenic binds PML zinc fingers directly."
+    },
+    {
+      "year": 2013,
+      "title": "APL0406",
+      "detail": "ATRA plus arsenic trioxide proves superior to ATRA plus chemotherapy in low/intermediate-risk APL."
+    },
+    {
+      "year": 2018,
+      "title": "First-line approval",
+      "detail": "FDA approves Trisenox with tretinoin for newly diagnosed low-risk APL."
+    }
+  ],
+  "pk": {
+    "half_life": "arsenious acid about 10–14 hours; methylated metabolites longer",
+    "bioavailability": "IV only",
+    "metabolism": "methylation to MMA(V) and DMA(V)",
+    "excretion": "renal"
+  },
+  "safety": {
+    "common": [
+      "nausea and vomiting",
+      "fatigue",
+      "hyperglycaemia",
+      "hypokalaemia",
+      "peripheral oedema",
+      "leukocytosis"
+    ],
+    "serious": [
+      "differentiation syndrome",
+      "QT prolongation and torsades de pointes",
+      "encephalopathy including Wernicke",
+      "hepatotoxicity",
+      "carcinogenicity"
+    ],
+    "boxed_warning": "Boxed warning for differentiation syndrome and cardiac conduction abnormalities (QT prolongation, torsades de pointes); later labels add encephalopathy warnings."
+  },
+  "facts": [
+    "Arsenic compounds were used medicinally for centuries, including Fowler's solution, a 19th-century treatment for leukaemia."
+  ],
+  "related": [
+    "tretinoin",
+    "doxorubicin",
+    "cytarabine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Arsenic trioxide",
+      "url": "https://en.wikipedia.org/wiki/Arsenic_trioxide"
+    },
+    {
+      "title": "DailyMed: arsenic trioxide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ARSENIC+TRIOXIDE"
+    },
+    {
+      "title": "EMA EPAR: Trisenox",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/trisenox"
+    }
+  ],
+  "stage": "written"
 }

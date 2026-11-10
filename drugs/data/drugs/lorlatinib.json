@@ -1,36 +1,129 @@
 {
   "slug": "lorlatinib",
   "name": "Lorlatinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PF-06463922"
+  ],
+  "brands": [
+    "Lorbrena",
+    "Lorviqua"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "ALK and ROS1 tyrosine kinase inhibitor (third generation, macrocyclic)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 100 mg once daily",
+  "targets": [
+    "ALK",
+    "ROS1"
+  ],
+  "origin": "synthetic",
+  "originator": "Pfizer",
+  "owner": "Pfizer",
+  "first_approval": {
+    "year": 2018,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Lorbrena"
+  },
+  "discovery": {
+    "year": 2014,
+    "by": "Pfizer La Jolla (Ted Johnson and colleagues)",
+    "note": "A macrocyclic ALK/ROS1 inhibitor designed for blood–brain barrier penetration and activity against resistance mutations including G1202R."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Macrocyclic ALK inhibitor built to reach the brain and overcome resistance mutations",
+  "summary": "Lorlatinib is a third-generation macrocyclic ALK and ROS1 inhibitor with high brain penetration and activity against most ALK resistance mutations, including G1202R. It is used first-line and after other ALK inhibitors in ALK-positive non-small-cell lung cancer, where long-term follow-up of the CROWN trial showed unusually durable disease control.",
+  "mechanism": [
+    "The macrocyclic structure constrains the molecule in its bioactive conformation, improving potency and metabolic stability and lowering P-glycoprotein efflux, so it penetrates the central nervous system.",
+    "Lorlatinib binds the ATP pocket of wild-type and mutant ALK, including solvent-front G1202R that resists second-generation inhibitors. Compound ALK mutations can still confer resistance."
+  ],
+  "uses": [
+    "ALK-positive metastatic NSCLC, first-line or after earlier ALK inhibitors"
+  ],
+  "history": [
+    {
+      "year": 2014,
+      "title": "Discovery",
+      "detail": "Pfizer reports PF-06463922 as a brain-penetrant macrocyclic ALK/ROS1 inhibitor (J Med Chem, Cancer Cell)."
+    },
+    {
+      "year": 2018,
+      "title": "Accelerated approval",
+      "detail": "FDA approves lorlatinib for ALK-positive NSCLC after progression on other ALK inhibitors."
+    },
+    {
+      "year": 2019,
+      "title": "EU approval",
+      "detail": "EMA conditionally authorises Lorviqua."
+    },
+    {
+      "year": 2020,
+      "title": "CROWN",
+      "detail": "CROWN shows superior progression-free survival over crizotinib first-line."
+    },
+    {
+      "year": 2021,
+      "title": "First-line approval",
+      "detail": "FDA approves lorlatinib for previously untreated ALK-positive NSCLC."
+    },
+    {
+      "year": 2024,
+      "title": "Five-year CROWN",
+      "detail": "Five-year data show about 60% of patients on lorlatinib remain progression-free."
+    }
+  ],
+  "pk": {
+    "half_life": "about 24 hours (single dose); shorter on repeat dosing due to autoinduction",
+    "bioavailability": "oral about 81%",
+    "metabolism": "hepatic CYP3A4 and UGT1A4; CYP3A inducer",
+    "excretion": "renal (about 48%) and faecal (about 41%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hypercholesterolaemia and hypertriglyceridaemia",
+      "oedema",
+      "peripheral neuropathy",
+      "weight gain",
+      "cognitive effects",
+      "mood changes"
+    ],
+    "serious": [
+      "CNS effects including psychosis and seizures",
+      "AV block",
+      "interstitial lung disease",
+      "hypertension",
+      "hyperglycaemia",
+      "severe hepatotoxicity with strong CYP3A inducers"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Lipid elevations are so common that monitoring and statin therapy are part of routine management."
+  ],
+  "related": [
+    "crizotinib",
+    "alectinib",
+    "atorvastatin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lorlatinib",
+      "url": "https://en.wikipedia.org/wiki/Lorlatinib"
+    },
+    {
+      "title": "DailyMed: lorlatinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=LORLATINIB"
+    },
+    {
+      "title": "EMA EPAR: Lorviqua",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/lorviqua"
+    }
+  ],
+  "stage": "written"
 }

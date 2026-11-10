@@ -1,36 +1,141 @@
 {
   "slug": "docetaxel",
   "name": "Docetaxel",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "RP 56976",
+    "taxotere"
+  ],
+  "brands": [
+    "Taxotere",
+    "Docefrez"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Taxane (microtubule stabiliser)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every 1–3 weeks, with corticosteroid premedication to reduce fluid retention and hypersensitivity",
+  "targets": [
+    "TUBB (β-tubulin)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Rhône-Poulenc Rorer and CNRS (Pierre Potier)",
+  "owner": "generic (many); Taxotere brand held by Sanofi",
+  "first_approval": {
+    "year": 1995,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Taxotere"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1986,
+    "by": "Pierre Potier and colleagues, CNRS Gif-sur-Yvette, with Rhône-Poulenc",
+    "note": "Made semisynthetically from 10-deacetylbaccatin III extracted from the needles of the European yew (Taxus baccata)."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Semisynthetic taxane used in breast, prostate, lung, gastric and head and neck cancer",
+  "summary": "Docetaxel is a semisynthetic taxane that binds β-tubulin and stabilises microtubules more potently than paclitaxel. It was the first chemotherapy shown to extend survival in metastatic castration-resistant prostate cancer and is widely used in breast, lung, gastric and head and neck cancer.",
+  "mechanism": [
+    "Like paclitaxel, docetaxel binds β-tubulin and promotes microtubule assembly while inhibiting disassembly, blocking mitotic spindle dynamics and causing G2/M arrest and apoptosis.",
+    "It has higher tubulin affinity and longer intracellular retention than paclitaxel, and also induces Bcl-2 phosphorylation, which may contribute to apoptosis."
+  ],
+  "uses": [
+    "Breast cancer (adjuvant, neoadjuvant and metastatic)",
+    "Metastatic castration-resistant and hormone-sensitive prostate cancer (with prednisone or ADT)",
+    "Non-small-cell lung cancer",
+    "Gastric and gastro-oesophageal junction adenocarcinoma (e.g. FLOT, DCF)",
+    "Squamous cell carcinoma of the head and neck (induction)"
+  ],
+  "history": [
+    {
+      "year": 1986,
+      "title": "Synthesis",
+      "detail": "Potier's group at CNRS makes docetaxel from yew-needle precursors."
+    },
+    {
+      "year": 1995,
+      "title": "EU approval",
+      "detail": "Taxotere authorised in the EU for breast cancer."
+    },
+    {
+      "year": 1996,
+      "title": "FDA approval",
+      "detail": "FDA approves Taxotere for anthracycline-resistant metastatic breast cancer."
+    },
+    {
+      "year": 2004,
+      "title": "Prostate cancer",
+      "detail": "TAX 327 shows a survival benefit with docetaxel plus prednisone in metastatic castration-resistant prostate cancer; FDA approval follows."
+    },
+    {
+      "year": 2011,
+      "title": "Generics",
+      "detail": "Generic docetaxel becomes available in the US."
+    },
+    {
+      "year": 2015,
+      "title": "CHAARTED/STAMPEDE",
+      "detail": "Adding docetaxel to androgen deprivation prolongs survival in metastatic hormone-sensitive prostate cancer."
+    },
+    {
+      "year": 2019,
+      "title": "FLOT",
+      "detail": "FLOT4 establishes perioperative docetaxel-containing FLOT as standard for resectable gastric cancer."
+    }
+  ],
+  "pk": {
+    "half_life": "terminal about 11 hours",
+    "bioavailability": "IV only",
+    "metabolism": "hepatic CYP3A4",
+    "excretion": "faecal (about 75%)"
+  },
+  "safety": {
+    "common": [
+      "neutropenia",
+      "alopecia",
+      "fluid retention and oedema",
+      "nail changes",
+      "fatigue",
+      "peripheral neuropathy"
+    ],
+    "serious": [
+      "febrile neutropenia and treatment-related death",
+      "severe hypersensitivity",
+      "severe fluid retention",
+      "hepatotoxicity-related toxicity",
+      "cystoid macular oedema",
+      "persistent alopecia"
+    ],
+    "boxed_warning": "Boxed warning for treatment-related mortality (higher with hepatic impairment or high doses), hepatotoxicity, neutropenia, hypersensitivity and fluid retention."
+  },
+  "facts": [
+    "Docetaxel is about twice as potent as paclitaxel at inhibiting microtubule depolymerisation in vitro."
+  ],
+  "related": [
+    "paclitaxel",
+    "prednisone",
+    "cisplatin",
+    "fluorouracil",
+    "trastuzumab",
+    "enzalutamide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Docetaxel",
+      "url": "https://en.wikipedia.org/wiki/Docetaxel"
+    },
+    {
+      "title": "DailyMed: docetaxel labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=DOCETAXEL"
+    },
+    {
+      "title": "EMA EPAR: Taxotere",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/taxotere"
+    }
+  ],
+  "stage": "written"
 }

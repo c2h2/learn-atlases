@@ -1,36 +1,147 @@
 {
   "slug": "doxorubicin",
   "name": "Doxorubicin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "adriamycin",
+    "hydroxydaunorubicin",
+    "doxorubicin hydrochloride"
+  ],
+  "brands": [
+    "Adriamycin",
+    "Doxil",
+    "Caelyx",
+    "Myocet"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anthracycline antitumour antibiotic (topoisomerase II poison)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV injection/infusion; pegylated liposomal (Doxil/Caelyx) and liposomal (Myocet) forms also IV",
+  "targets": [
+    "TOP2A",
+    "DNA (intercalation)"
+  ],
+  "origin": "natural",
+  "originator": "Farmitalia (Italy)",
+  "owner": "generic (many); Caelyx held by Baxter",
+  "first_approval": {
+    "year": 1974,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Adriamycin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1969,
+    "by": "Federico Arcamone and colleagues, Farmitalia",
+    "note": "Isolated from a mutant strain of Streptomyces peucetius (var. caesius) obtained by mutagenesis of the daunorubicin producer."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Red anthracycline antibiotic with broad anticancer activity and cumulative cardiotoxicity",
+  "summary": "Doxorubicin is an anthracycline that intercalates into DNA and traps topoisomerase II, causing lethal double-strand breaks. It is one of the most broadly active cytotoxic drugs, used in breast cancer, lymphomas, leukaemias and sarcomas, with a lifetime dose limit because of dose-dependent cardiomyopathy.",
+  "mechanism": [
+    "The planar anthraquinone ring inserts between DNA base pairs while the daunosamine sugar sits in the minor groove.",
+    "Doxorubicin stabilises the topoisomerase II–DNA cleavage complex, preventing re-ligation and leaving double-strand breaks that trigger apoptosis. It also evicts histones from chromatin.",
+    "Redox cycling of the quinone generates reactive oxygen species; combined with inhibition of topoisomerase IIβ in cardiomyocytes, this is linked to cumulative cardiotoxicity."
+  ],
+  "uses": [
+    "Breast cancer (adjuvant and metastatic)",
+    "Hodgkin and non-Hodgkin lymphoma (ABVD, CHOP)",
+    "Acute lymphoblastic and myeloid leukaemia",
+    "Soft-tissue and bone sarcomas",
+    "Paediatric solid tumours (Wilms tumour, neuroblastoma)",
+    "Ovarian, bladder, thyroid and gastric cancer",
+    "Liposomal forms: ovarian cancer, Kaposi sarcoma, multiple myeloma"
+  ],
+  "history": [
+    {
+      "year": 1963,
+      "title": "Daunorubicin",
+      "detail": "Farmitalia and Rhône-Poulenc independently isolate daunorubicin, the parent anthracycline."
+    },
+    {
+      "year": 1969,
+      "title": "Doxorubicin reported",
+      "detail": "Arcamone et al. describe adriamycin from a mutant Streptomyces strain."
+    },
+    {
+      "year": 1974,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Adriamycin."
+    },
+    {
+      "year": 1975,
+      "title": "ABVD",
+      "detail": "Bonadonna introduces ABVD for Hodgkin lymphoma."
+    },
+    {
+      "year": 1979,
+      "title": "Cardiotoxicity defined",
+      "detail": "Von Hoff and colleagues describe the steep rise in heart-failure risk above about 550 mg/m² cumulative dose."
+    },
+    {
+      "year": 1995,
+      "title": "Doxil",
+      "detail": "Pegylated liposomal doxorubicin approved for AIDS-related Kaposi sarcoma, the first FDA-approved nanomedicine."
+    },
+    {
+      "year": 2011,
+      "title": "Doxil shortage",
+      "detail": "A manufacturing failure at a contract supplier causes a prolonged US shortage of liposomal doxorubicin, leading FDA to permit temporary importation of Lipodox."
+    }
+  ],
+  "pk": {
+    "half_life": "terminal 20–48 hours",
+    "bioavailability": "IV only",
+    "metabolism": "hepatic aldo-keto reductase to doxorubicinol (active); deglycosidation",
+    "excretion": "biliary/faecal, about 40%; small renal fraction"
+  },
+  "safety": {
+    "common": [
+      "alopecia",
+      "nausea and vomiting",
+      "mucositis",
+      "neutropenia",
+      "red discolouration of urine"
+    ],
+    "serious": [
+      "dose-dependent cardiomyopathy and heart failure",
+      "severe myelosuppression",
+      "extravasation tissue necrosis",
+      "secondary AML/MDS",
+      "hand-foot syndrome (liposomal forms)"
+    ],
+    "boxed_warning": "Boxed warning for cardiomyopathy, secondary malignancies, extravasation and tissue necrosis, and severe myelosuppression; reduce dose in hepatic impairment."
+  },
+  "facts": [
+    "Its red colour has earned it the nickname 'red devil' among patients.",
+    "Pegylated liposomal doxorubicin (Doxil) was the first FDA-approved nanoparticle drug in 1995."
+  ],
+  "related": [
+    "cyclophosphamide",
+    "vincristine",
+    "bleomycin",
+    "paclitaxel",
+    "trastuzumab",
+    "dexamethasone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Doxorubicin",
+      "url": "https://en.wikipedia.org/wiki/Doxorubicin"
+    },
+    {
+      "title": "DailyMed: doxorubicin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=DOXORUBICIN"
+    },
+    {
+      "title": "EMA EPAR: Caelyx pegylated liposomal",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/caelyx-pegylated-liposomal"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,142 @@
 {
   "slug": "sunitinib",
   "name": "Sunitinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SU11248",
+    "sunitinib malate"
+  ],
+  "brands": [
+    "Sutent"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Multi-targeted receptor tyrosine kinase inhibitor (VEGFR, PDGFR, KIT)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules once daily, 4 weeks on and 2 weeks off (or continuous for pNET)",
+  "targets": [
+    "KDR",
+    "FLT1",
+    "FLT4",
+    "PDGFRA",
+    "PDGFRB",
+    "KIT",
+    "FLT3",
+    "RET",
+    "CSF1R"
+  ],
+  "origin": "synthetic",
+  "originator": "Sugen (later Pharmacia, then Pfizer)",
+  "owner": "Pfizer (Sutent); generic (many)",
+  "first_approval": {
+    "year": 2006,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Sutent"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 2003,
+    "by": "Sugen (South San Francisco)",
+    "note": "An oxindole derived from earlier Sugen compounds SU5416 and SU6668, optimised for oral activity against VEGF and PDGF receptors."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Oral anti-angiogenic kinase inhibitor approved for kidney cancer and GIST on the same day",
+  "summary": "Sunitinib is an oral multi-kinase inhibitor that blocks VEGF and PDGF receptors, KIT and other kinases, inhibiting tumour angiogenesis and direct tumour growth. In 2006 it became the first cancer drug approved by the FDA for two indications at once: advanced renal cell carcinoma and imatinib-resistant GIST.",
+  "mechanism": [
+    "Sunitinib binds the ATP pocket of VEGFR1–3 and PDGFRα/β on endothelial cells and pericytes, blocking angiogenic signalling and pruning tumour vasculature.",
+    "It also inhibits KIT (including some imatinib-resistant GIST mutants), FLT3, RET and CSF1R, giving direct antitumour activity in some cancers."
+  ],
+  "uses": [
+    "Advanced renal cell carcinoma",
+    "Adjuvant treatment of high-risk renal cell carcinoma after nephrectomy (US)",
+    "Gastrointestinal stromal tumour after imatinib failure or intolerance",
+    "Progressive well-differentiated pancreatic neuroendocrine tumours"
+  ],
+  "history": [
+    {
+      "year": 2003,
+      "title": "Compound described",
+      "detail": "Sugen/Pharmacia researchers report SU11248."
+    },
+    {
+      "year": 2006,
+      "title": "Dual FDA approval",
+      "detail": "Approved in January for advanced RCC and imatinib-resistant GIST."
+    },
+    {
+      "year": 2007,
+      "title": "First-line RCC",
+      "detail": "Motzer et al. show superiority over interferon alfa; regular approval for RCC follows."
+    },
+    {
+      "year": 2011,
+      "title": "pNET",
+      "detail": "Approval for progressive pancreatic neuroendocrine tumours."
+    },
+    {
+      "year": 2017,
+      "title": "Adjuvant RCC",
+      "detail": "FDA approves adjuvant use based on S-TRAC."
+    },
+    {
+      "year": 2021,
+      "title": "Generics",
+      "detail": "Generic sunitinib becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "40–60 hours (active metabolite SU12662 80–110 hours)",
+    "bioavailability": "oral (not affected by food)",
+    "metabolism": "hepatic CYP3A4 to active N-desethyl metabolite",
+    "excretion": "faecal (about 61%)"
+  },
+  "safety": {
+    "common": [
+      "fatigue",
+      "diarrhoea",
+      "hand-foot skin reaction",
+      "hypertension",
+      "mucositis",
+      "yellow skin discolouration",
+      "hypothyroidism"
+    ],
+    "serious": [
+      "hepatotoxicity (can be fatal)",
+      "left ventricular dysfunction",
+      "QT prolongation",
+      "haemorrhage",
+      "thrombotic microangiopathy",
+      "osteonecrosis of the jaw",
+      "impaired wound healing"
+    ],
+    "boxed_warning": "Boxed warning for hepatotoxicity, which may be severe and fatal."
+  },
+  "facts": [
+    "Hair depigmentation and yellowing of the skin occur because of the drug's yellow colour and effects on melanocyte KIT signalling."
+  ],
+  "related": [
+    "sorafenib",
+    "imatinib",
+    "lenvatinib",
+    "bevacizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Sunitinib",
+      "url": "https://en.wikipedia.org/wiki/Sunitinib"
+    },
+    {
+      "title": "DailyMed: sunitinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=SUNITINIB"
+    },
+    {
+      "title": "EMA EPAR: Sutent",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/sutent"
+    }
+  ],
+  "stage": "written"
 }

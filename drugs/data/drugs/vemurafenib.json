@@ -1,36 +1,132 @@
 {
   "slug": "vemurafenib",
   "name": "Vemurafenib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PLX4032",
+    "RG7204",
+    "RO5185426"
+  ],
+  "brands": [
+    "Zelboraf"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "BRAF V600 kinase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets 960 mg twice daily, alone or with cobimetinib",
+  "targets": [
+    "BRAF V600E"
+  ],
+  "origin": "synthetic",
+  "originator": "Plexxikon (with Roche/Genentech)",
+  "owner": "Roche",
+  "first_approval": {
+    "year": 2011,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Zelboraf"
+  },
+  "discovery": {
+    "year": 2008,
+    "by": "Plexxikon (Gideon Bollag, Kam Zhang and colleagues)",
+    "note": "Discovered by fragment-based, structure-guided design starting from a 7-azaindole scaffold."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First BRAF V600E inhibitor, a fragment-based design for metastatic melanoma",
+  "summary": "Vemurafenib is a selective inhibitor of BRAF kinase carrying the V600E mutation, found in about half of melanomas. It produced rapid tumour shrinkage and improved survival in BRAF-mutant metastatic melanoma and is also approved for Erdheim–Chester disease; it is now mostly used with the MEK inhibitor cobimetinib.",
+  "mechanism": [
+    "BRAF V600E is a constitutively active kinase that signals as a monomer through MEK and ERK to drive proliferation. Vemurafenib binds the active conformation of mutant BRAF and blocks MAPK pathway signalling.",
+    "In cells with wild-type BRAF and active RAS, the drug paradoxically promotes RAF dimerisation and activates ERK, which explains new keratoacanthomas and squamous cell carcinomas; adding a MEK inhibitor reduces this effect and delays resistance."
+  ],
+  "uses": [
+    "Unresectable or metastatic melanoma with BRAF V600E mutation (alone or with cobimetinib)",
+    "Erdheim–Chester disease with BRAF V600 mutation"
+  ],
+  "history": [
+    {
+      "year": 2002,
+      "title": "BRAF mutations",
+      "detail": "Davies et al. (Nature, Sanger Institute) find activating BRAF mutations in about 66% of melanomas, mostly V600E."
+    },
+    {
+      "year": 2010,
+      "title": "Phase I results",
+      "detail": "Flaherty et al. (NEJM) report high response rates in BRAF V600E melanoma."
+    },
+    {
+      "year": 2011,
+      "title": "FDA approval",
+      "detail": "BRIM-3 shows a survival benefit over dacarbazine; approved with the cobas 4800 BRAF test."
+    },
+    {
+      "year": 2011,
+      "title": "Plexxikon acquired",
+      "detail": "Daiichi Sankyo acquires Plexxikon."
+    },
+    {
+      "year": 2015,
+      "title": "With cobimetinib",
+      "detail": "FDA approves vemurafenib plus cobimetinib (coBRIM)."
+    },
+    {
+      "year": 2017,
+      "title": "Erdheim–Chester disease",
+      "detail": "FDA approves vemurafenib for BRAF V600-mutant Erdheim–Chester disease."
+    }
+  ],
+  "pk": {
+    "half_life": "about 57 hours",
+    "bioavailability": "oral (not established; increased with food)",
+    "metabolism": "limited; CYP3A4",
+    "excretion": "faecal (about 94%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "arthralgia",
+      "rash",
+      "photosensitivity",
+      "alopecia",
+      "fatigue",
+      "skin papillomas"
+    ],
+    "serious": [
+      "cutaneous squamous cell carcinoma and keratoacanthoma",
+      "new primary melanoma",
+      "QT prolongation",
+      "severe hypersensitivity and DRESS",
+      "hepatotoxicity",
+      "radiation sensitisation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It was one of the first approved drugs discovered by fragment-based screening."
+  ],
+  "related": [
+    "dabrafenib",
+    "trametinib",
+    "sorafenib",
+    "pembrolizumab",
+    "nivolumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Vemurafenib",
+      "url": "https://en.wikipedia.org/wiki/Vemurafenib"
+    },
+    {
+      "title": "DailyMed: vemurafenib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=VEMURAFENIB"
+    },
+    {
+      "title": "EMA EPAR: Zelboraf",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/zelboraf"
+    }
+  ],
+  "stage": "written"
 }

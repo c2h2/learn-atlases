@@ -1,36 +1,132 @@
 {
   "slug": "venetoclax",
   "name": "Venetoclax",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ABT-199",
+    "GDC-0199",
+    "RG7601"
+  ],
+  "brands": [
+    "Venclexta",
+    "Venclyxto"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "BCL-2 inhibitor (BH3 mimetic)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets once daily with food, with a 5-week dose ramp-up in CLL to reduce tumour lysis",
+  "targets": [
+    "BCL2"
+  ],
+  "origin": "synthetic",
+  "originator": "AbbVie and Genentech (with the Walter and Eliza Hall Institute)",
+  "owner": "AbbVie and Genentech/Roche",
+  "first_approval": {
+    "year": 2016,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Venclexta"
+  },
+  "discovery": {
+    "year": 2013,
+    "by": "AbbVie (Andrew Souers and colleagues) with Genentech and WEHI",
+    "note": "Re-engineered from navitoclax (ABT-263) to spare BCL-XL and so avoid dose-limiting thrombocytopenia."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First BCL-2 inhibitor: a BH3 mimetic that triggers apoptosis in leukaemia cells",
+  "summary": "Venetoclax is a first-in-class oral BH3 mimetic that selectively inhibits the anti-apoptotic protein BCL-2, allowing cancer cells to undergo programmed cell death. It is used in chronic lymphocytic leukaemia, often as fixed-duration therapy with obinutuzumab or rituximab, and with hypomethylating agents or low-dose cytarabine for older or unfit patients with acute myeloid leukaemia.",
+  "mechanism": [
+    "BCL-2 sequesters pro-apoptotic proteins such as BIM and prevents BAX/BAK from permeabilising mitochondria. CLL cells and many AML cells depend heavily on BCL-2 for survival.",
+    "Venetoclax binds the BH3-binding groove of BCL-2 with sub-nanomolar affinity, displacing BIM and triggering BAX/BAK activation, cytochrome c release and caspase-mediated apoptosis. Killing can be so rapid that tumour lysis syndrome is a major risk."
+  ],
+  "uses": [
+    "Chronic lymphocytic leukaemia/small lymphocytic lymphoma (with obinutuzumab or rituximab, or alone)",
+    "Newly diagnosed acute myeloid leukaemia in adults ≥75 years or unfit for intensive chemotherapy (with azacitidine, decitabine or low-dose cytarabine)"
+  ],
+  "history": [
+    {
+      "year": 1984,
+      "title": "BCL2 discovered",
+      "detail": "BCL2 is identified at the t(14;18) breakpoint in follicular lymphoma; in 1988 it is shown to block cell death rather than drive proliferation."
+    },
+    {
+      "year": 2013,
+      "title": "ABT-199 reported",
+      "detail": "Souers et al. (Nature Medicine) describe the BCL-2-selective inhibitor."
+    },
+    {
+      "year": 2016,
+      "title": "FDA approval",
+      "detail": "Accelerated approval for CLL with 17p deletion after at least one prior therapy."
+    },
+    {
+      "year": 2018,
+      "title": "MURANO and AML",
+      "detail": "Approved with rituximab in relapsed CLL; accelerated approval in AML with azacitidine, decitabine or low-dose cytarabine."
+    },
+    {
+      "year": 2019,
+      "title": "CLL14",
+      "detail": "Fixed-duration venetoclax plus obinutuzumab approved for untreated CLL."
+    },
+    {
+      "year": 2020,
+      "title": "VIALE-A",
+      "detail": "Survival benefit with azacitidine leads to full approval in AML."
+    }
+  ],
+  "pk": {
+    "half_life": "about 26 hours",
+    "bioavailability": "oral; food increases exposure 3- to 5-fold",
+    "metabolism": "hepatic CYP3A4",
+    "excretion": "faecal (over 99%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "neutropenia",
+      "diarrhoea",
+      "nausea",
+      "fatigue",
+      "upper respiratory infection",
+      "thrombocytopenia"
+    ],
+    "serious": [
+      "tumour lysis syndrome",
+      "severe neutropenia and febrile neutropenia",
+      "serious infections",
+      "toxicity with strong CYP3A inhibitors"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The dose ramp-up (20, 50, 100, 200, 400 mg weekly) in CLL was introduced after fatal tumour lysis in early trials."
+  ],
+  "related": [
+    "azacitidine",
+    "cytarabine",
+    "obinutuzumab",
+    "rituximab",
+    "ibrutinib",
+    "acalabrutinib"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Venetoclax",
+      "url": "https://en.wikipedia.org/wiki/Venetoclax"
+    },
+    {
+      "title": "DailyMed: venetoclax labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=VENETOCLAX"
+    },
+    {
+      "title": "EMA EPAR: Venclyxto",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/venclyxto"
+    }
+  ],
+  "stage": "written"
 }

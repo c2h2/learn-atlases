@@ -1,36 +1,126 @@
 {
   "slug": "fulvestrant",
   "name": "Fulvestrant",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ICI 182,780",
+    "ZD9238"
+  ],
+  "brands": [
+    "Faslodex"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Selective oestrogen receptor degrader (SERD)",
+  "modality": "small-molecule",
+  "routes": [
+    "im"
+  ],
+  "route_note": "two 250 mg IM gluteal injections on days 1, 15 and 29, then monthly",
+  "targets": [
+    "ESR1"
+  ],
+  "origin": "synthetic",
+  "originator": "ICI Pharmaceuticals (Alan Wakeling and colleagues)",
+  "owner": "generic (many); Faslodex brand held by AstraZeneca",
+  "first_approval": {
+    "year": 2002,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Faslodex"
+  },
+  "discovery": {
+    "year": 1987,
+    "by": "Alan Wakeling, Barry Bowler and colleagues, ICI",
+    "note": "A steroidal 7α-alkylsulfinyl oestradiol analogue designed as a 'pure' anti-oestrogen without the partial agonism of tamoxifen."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Injectable pure anti-oestrogen that degrades the oestrogen receptor",
+  "summary": "Fulvestrant is a steroidal oestrogen receptor antagonist that also triggers degradation of the receptor, without the partial agonist activity of tamoxifen. Given by monthly intramuscular injection, it is used in hormone-receptor-positive advanced breast cancer in postmenopausal women, alone or with CDK4/6, PI3K or AKT inhibitors.",
+  "mechanism": [
+    "Fulvestrant binds the oestrogen receptor with high affinity; its long 7α side chain prevents receptor dimerisation and the conformational change needed for transcriptional activation.",
+    "The destabilised receptor is ubiquitinated and degraded by the proteasome, lowering ER levels in tumour cells. Because it has no agonist activity, it remains active after progression on tamoxifen or aromatase inhibitors."
+  ],
+  "uses": [
+    "HR-positive, HER2-negative advanced breast cancer in postmenopausal women (first-line or after endocrine therapy)",
+    "In combination with palbociclib, ribociclib, abemaciclib, alpelisib or capivasertib"
+  ],
+  "history": [
+    {
+      "year": 1987,
+      "title": "Discovery",
+      "detail": "ICI 182,780 identified as a pure anti-oestrogen."
+    },
+    {
+      "year": 2002,
+      "title": "FDA approval",
+      "detail": "Approved at 250 mg monthly for advanced breast cancer after anti-oestrogen therapy."
+    },
+    {
+      "year": 2010,
+      "title": "500 mg dose",
+      "detail": "CONFIRM trial leads to the higher 500 mg regimen with a loading dose."
+    },
+    {
+      "year": 2016,
+      "title": "FALCON",
+      "detail": "Fulvestrant improves progression-free survival versus anastrozole in endocrine-naive advanced disease."
+    },
+    {
+      "year": 2017,
+      "title": "First-line approval",
+      "detail": "FDA extends approval to endocrine-therapy-naive patients."
+    },
+    {
+      "year": 2019,
+      "title": "Generics",
+      "detail": "Generic fulvestrant becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 40 days after IM injection",
+    "bioavailability": "IM, slow absorption (oral bioavailability negligible)",
+    "metabolism": "hepatic, steroid-like pathways including CYP3A4",
+    "excretion": "faecal (about 90%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "injection-site pain",
+      "hot flushes",
+      "nausea",
+      "fatigue",
+      "joint pain"
+    ],
+    "serious": [
+      "bleeding or haematoma at injection site in patients with low platelets or on anticoagulants",
+      "hepatic enzyme elevation",
+      "sciatic nerve injury from injection"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its poor oral bioavailability spurred development of oral SERDs such as elacestrant."
+  ],
+  "related": [
+    "tamoxifen",
+    "anastrozole",
+    "letrozole",
+    "palbociclib"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Fulvestrant",
+      "url": "https://en.wikipedia.org/wiki/Fulvestrant"
+    },
+    {
+      "title": "DailyMed: fulvestrant labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=FULVESTRANT"
+    },
+    {
+      "title": "EMA EPAR: Faslodex",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/faslodex"
+    }
+  ],
+  "stage": "written"
 }

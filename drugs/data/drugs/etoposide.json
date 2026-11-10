@@ -1,36 +1,132 @@
 {
   "slug": "etoposide",
   "name": "Etoposide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "VP-16",
+    "VP-16-213",
+    "etoposide phosphate"
+  ],
+  "brands": [
+    "VePesid",
+    "Etopophos",
+    "Toposar"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Epipodophyllotoxin (topoisomerase II inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "oral"
+  ],
+  "route_note": "IV infusion; oral capsules (about half as bioavailable); etoposide phosphate is a water-soluble IV prodrug",
+  "targets": [
+    "TOP2A",
+    "TOP2B"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Sandoz (Switzerland)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1983,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "VePesid"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1966,
+    "by": "Sandoz chemists (including Hartmann Stähelin)",
+    "note": "A semisynthetic glycoside derivative of podophyllotoxin from the mayapple (Podophyllum)."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Mayapple-derived topoisomerase II poison used in testicular and lung cancer",
+  "summary": "Etoposide is a semisynthetic podophyllotoxin derivative that stabilises the topoisomerase II–DNA complex, causing double-strand breaks. It is used in testicular cancer, small-cell lung cancer, lymphomas and leukaemias, and in high-dose transplant conditioning.",
+  "mechanism": [
+    "Unlike its parent podophyllotoxin (a tubulin binder), etoposide acts on topoisomerase II. It forms a ternary complex with the enzyme and cleaved DNA, preventing re-ligation of the double-strand break.",
+    "Accumulated breaks trigger apoptosis, mainly in late S and G2 phase. Inhibition of topoisomerase II and the resulting chromosomal translocations (often involving KMT2A/MLL) underlie therapy-related leukaemias."
+  ],
+  "uses": [
+    "Testicular germ-cell tumours (BEP, EP)",
+    "Small-cell lung cancer (with platinum)",
+    "Lymphomas and acute leukaemias (salvage regimens)",
+    "Paediatric solid tumours",
+    "High-dose conditioning before stem-cell transplant",
+    "Haemophagocytic lymphohistiocytosis (HLH-94 protocol)"
+  ],
+  "history": [
+    {
+      "year": 1966,
+      "title": "Synthesis",
+      "detail": "Sandoz synthesises etoposide from podophyllotoxin."
+    },
+    {
+      "year": 1971,
+      "title": "Clinical trials",
+      "detail": "First clinical studies begin in Europe."
+    },
+    {
+      "year": 1983,
+      "title": "FDA approval",
+      "detail": "Approved as VePesid (Bristol-Myers) for refractory testicular cancer."
+    },
+    {
+      "year": 1984,
+      "title": "Mechanism",
+      "detail": "Topoisomerase II is identified as the target of epipodophyllotoxins."
+    },
+    {
+      "year": 1987,
+      "title": "BEP",
+      "detail": "Williams et al. show BEP (bleomycin, etoposide, cisplatin) is less toxic than PVB with equal efficacy in testicular cancer."
+    },
+    {
+      "year": 1996,
+      "title": "Etoposide phosphate",
+      "detail": "Water-soluble prodrug Etopophos approved."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4–11 hours",
+    "bioavailability": "oral about 50% (variable)",
+    "metabolism": "hepatic CYP3A4; glucuronidation",
+    "excretion": "renal (about 45%) and faecal"
+  },
+  "safety": {
+    "common": [
+      "myelosuppression",
+      "alopecia",
+      "nausea and vomiting",
+      "mucositis"
+    ],
+    "serious": [
+      "severe neutropenia and infection",
+      "hypotension with rapid infusion",
+      "hypersensitivity",
+      "therapy-related AML"
+    ],
+    "boxed_warning": "US labels carry a boxed warning about severe myelosuppression and use by experienced physicians."
+  },
+  "facts": [
+    "The 'VP' in VP-16 refers to its origin as a podophyllotoxin derivative."
+  ],
+  "related": [
+    "cisplatin",
+    "carboplatin",
+    "bleomycin",
+    "cyclophosphamide",
+    "doxorubicin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Etoposide",
+      "url": "https://en.wikipedia.org/wiki/Etoposide"
+    },
+    {
+      "title": "DailyMed: etoposide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ETOPOSIDE"
+    }
+  ],
+  "stage": "written"
 }

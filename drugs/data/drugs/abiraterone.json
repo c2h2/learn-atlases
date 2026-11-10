@@ -1,36 +1,144 @@
 {
   "slug": "abiraterone",
   "name": "Abiraterone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "abiraterone acetate",
+    "CB7630"
+  ],
+  "brands": [
+    "Zytiga",
+    "Yonsa",
+    "Akeega (with niraparib)"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "CYP17A1 inhibitor (androgen biosynthesis inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets of abiraterone acetate once daily on an empty stomach, with prednisone or prednisolone",
+  "targets": [
+    "CYP17A1"
+  ],
+  "origin": "synthetic",
+  "originator": "Institute of Cancer Research, London (Gerry Potter, Michael Jarman, Mike Rowlands); developed by BTG, Cougar Biotechnology and Janssen",
+  "owner": "Janssen (Johnson & Johnson); generic (many)",
+  "first_approval": {
+    "year": 2011,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Zytiga"
+  },
+  "discovery": {
+    "year": 1993,
+    "by": "Gerry Potter and colleagues, Institute of Cancer Research",
+    "note": "A steroidal pyridine designed as an irreversible inhibitor of 17α-hydroxylase/C17,20-lyase to block androgen synthesis in testes, adrenals and tumour."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Androgen synthesis inhibitor developed at London's Institute of Cancer Research",
+  "summary": "Abiraterone acetate is a prodrug of abiraterone, which inhibits CYP17A1 and shuts down androgen production in the testes, adrenal glands and prostate tumour tissue. Taken with prednisone, it prolongs survival in metastatic castration-resistant and high-risk castration-sensitive prostate cancer.",
+  "mechanism": [
+    "CYP17A1 catalyses both 17α-hydroxylase and 17,20-lyase reactions needed to make dehydroepiandrosterone and androstenedione, the precursors of testosterone.",
+    "Abiraterone irreversibly inhibits CYP17A1, reducing serum testosterone to undetectable levels even in castrated men. Blocking 17α-hydroxylation lowers cortisol and raises ACTH, which increases mineralocorticoids and causes hypertension, hypokalaemia and fluid retention; low-dose prednisone is given to suppress ACTH."
+  ],
+  "uses": [
+    "Metastatic castration-resistant prostate cancer",
+    "Metastatic high-risk castration-sensitive prostate cancer",
+    "Combination with niraparib or olaparib in BRCA-mutated mCRPC"
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "Discovery",
+      "detail": "Synthesised at the Institute of Cancer Research."
+    },
+    {
+      "year": 2004,
+      "title": "Licensing",
+      "detail": "BTG licenses the compound to Cougar Biotechnology."
+    },
+    {
+      "year": 2009,
+      "title": "J&J acquisition",
+      "detail": "Johnson & Johnson acquires Cougar Biotechnology."
+    },
+    {
+      "year": 2011,
+      "title": "FDA approval",
+      "detail": "COU-AA-301 shows a survival gain after docetaxel; approved as Zytiga."
+    },
+    {
+      "year": 2012,
+      "title": "Chemotherapy-naive",
+      "detail": "COU-AA-302 leads to approval before chemotherapy."
+    },
+    {
+      "year": 2017,
+      "title": "LATITUDE and STAMPEDE",
+      "detail": "Abiraterone added to androgen deprivation improves survival in hormone-sensitive disease; FDA approval in 2018."
+    },
+    {
+      "year": 2018,
+      "title": "Generics",
+      "detail": "First US generic abiraterone launches after patent litigation."
+    },
+    {
+      "year": 2023,
+      "title": "Akeega",
+      "detail": "FDA approves niraparib–abiraterone fixed-dose combination for BRCA-mutated mCRPC."
+    }
+  ],
+  "pk": {
+    "half_life": "about 12 hours",
+    "bioavailability": "low and highly food-dependent (exposure rises up to 10-fold with a high-fat meal)",
+    "metabolism": "esterase hydrolysis; SULT2A1 and CYP3A4",
+    "excretion": "faecal (about 88%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "fatigue",
+      "joint swelling",
+      "hypertension",
+      "hypokalaemia",
+      "oedema",
+      "hot flushes"
+    ],
+    "serious": [
+      "hepatotoxicity",
+      "mineralocorticoid excess",
+      "adrenocortical insufficiency on steroid withdrawal",
+      "cardiac events",
+      "increased fractures and mortality with radium-223"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It is a notable example of an academic UK cancer drug whose royalties returned to the Institute of Cancer Research."
+  ],
+  "related": [
+    "enzalutamide",
+    "prednisone",
+    "leuprolide",
+    "docetaxel",
+    "olaparib",
+    "prednisolone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Abiraterone acetate",
+      "url": "https://en.wikipedia.org/wiki/Abiraterone_acetate"
+    },
+    {
+      "title": "DailyMed: abiraterone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ABIRATERONE"
+    },
+    {
+      "title": "EMA EPAR: Zytiga",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/zytiga"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,129 @@
 {
   "slug": "oxaliplatin",
   "name": "Oxaliplatin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "L-OHP",
+    "diaminocyclohexane platinum"
+  ],
+  "brands": [
+    "Eloxatin",
+    "Eloxatine"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Platinum-based alkylating-like agent (third generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion over about 2 hours, usually every 2–3 weeks with fluoropyrimidines",
+  "targets": [
+    "DNA (platinum cross-links)"
+  ],
+  "origin": "synthetic",
+  "originator": "Nagoya City University (Yoshinori Kidani); developed by Debiopharm and Sanofi",
+  "owner": "generic (many); Eloxatin brand held by Sanofi",
+  "first_approval": {
+    "year": 1996,
+    "agency": "Agence du médicament",
+    "country": "France",
+    "brand": "Eloxatine"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1976,
+    "by": "Yoshinori Kidani, Nagoya City University",
+    "note": "A platinum complex carrying a 1,2-diaminocyclohexane (DACH) ligand and an oxalate leaving group, active in cisplatin-resistant models."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "DACH-platinum drug at the heart of FOLFOX for colorectal cancer",
+  "summary": "Oxaliplatin is a third-generation platinum compound whose bulky diaminocyclohexane ligand creates DNA adducts not recognised by mismatch repair, giving activity in colorectal cancer where cisplatin is inactive. Combined with fluorouracil and folinic acid (FOLFOX) or capecitabine (CAPOX), it is standard for colon cancer and other gastrointestinal tumours.",
+  "mechanism": [
+    "After loss of the oxalate ligand, oxaliplatin forms platinum–DNA intra- and interstrand cross-links similar to cisplatin's, inhibiting DNA synthesis.",
+    "The DACH carrier ligand makes bulkier adducts that are poorly recognised by the mismatch-repair machinery, so tumours with mismatch-repair-mediated cisplatin resistance remain sensitive. Oxaliplatin also induces ribosome biogenesis stress, which may contribute to its distinctive activity.",
+    "Oxalate released during metabolism is thought to affect neuronal voltage-gated sodium channels, causing the characteristic cold-triggered acute neuropathy."
+  ],
+  "uses": [
+    "Adjuvant treatment of stage III colon cancer (with fluorouracil/leucovorin)",
+    "Metastatic colorectal cancer (FOLFOX, CAPOX, FOLFOXIRI)",
+    "Gastric, oesophageal and pancreatic cancer regimens (e.g. FOLFIRINOX, FLOT) — many off-label"
+  ],
+  "history": [
+    {
+      "year": 1976,
+      "title": "Synthesis",
+      "detail": "Kidani synthesises oxaliplatin in Japan."
+    },
+    {
+      "year": 1996,
+      "title": "First approval",
+      "detail": "Approved in France as Eloxatine for metastatic colorectal cancer."
+    },
+    {
+      "year": 2002,
+      "title": "FDA approval",
+      "detail": "FDA approves Eloxatin (Sanofi-Synthélabo) for second-line metastatic colorectal cancer."
+    },
+    {
+      "year": 2004,
+      "title": "MOSAIC trial",
+      "detail": "Adding oxaliplatin to adjuvant fluorouracil/leucovorin improves disease-free survival in stage II–III colon cancer."
+    },
+    {
+      "year": 2009,
+      "title": "Generics",
+      "detail": "Generic versions enter markets following patent litigation."
+    },
+    {
+      "year": 2018,
+      "title": "IDEA collaboration",
+      "detail": "Pooled IDEA analysis shows 3 months of CAPOX can replace 6 months for many low-risk stage III colon cancers, reducing neuropathy."
+    }
+  ],
+  "pk": {
+    "half_life": "terminal platinum half-life about 391 hours; initial phases much shorter",
+    "bioavailability": "IV only",
+    "metabolism": "rapid non-enzymatic biotransformation",
+    "excretion": "renal"
+  },
+  "safety": {
+    "common": [
+      "acute cold-induced dysaesthesia",
+      "nausea, vomiting, diarrhoea",
+      "neutropenia",
+      "fatigue"
+    ],
+    "serious": [
+      "cumulative sensory peripheral neuropathy",
+      "anaphylaxis",
+      "posterior reversible encephalopathy syndrome",
+      "interstitial lung disease",
+      "rhabdomyolysis (rare)"
+    ],
+    "boxed_warning": "US labels have carried a boxed warning for anaphylactic reactions."
+  },
+  "facts": [
+    "Patients are advised to avoid cold drinks and cold exposure around infusions because of acute neurotoxicity.",
+    "FOLFOX stands for folinic acid, fluorouracil and oxaliplatin."
+  ],
+  "related": [
+    "fluorouracil",
+    "capecitabine",
+    "irinotecan",
+    "cisplatin",
+    "carboplatin",
+    "bevacizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Oxaliplatin",
+      "url": "https://en.wikipedia.org/wiki/Oxaliplatin"
+    },
+    {
+      "title": "DailyMed: oxaliplatin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=OXALIPLATIN"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,127 @@
 {
   "slug": "carboplatin",
   "name": "Carboplatin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "JM8",
+    "CBDCA"
+  ],
+  "brands": [
+    "Paraplatin"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Platinum-based alkylating-like agent",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion, dose usually calculated from renal function (Calvert formula, target AUC)",
+  "targets": [
+    "DNA (platinum cross-links)"
+  ],
+  "origin": "synthetic",
+  "originator": "Institute of Cancer Research and Johnson Matthey (UK); developed by Bristol-Myers",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1986,
+    "agency": "CSM",
+    "country": "UK",
+    "brand": "Paraplatin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1972,
+    "by": "Johnson Matthey and the Institute of Cancer Research (Kenneth Harrap)",
+    "note": "A second-generation platinum analogue designed with a cyclobutanedicarboxylate leaving group to reduce cisplatin's kidney toxicity."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Second-generation platinum drug with less kidney and nerve toxicity than cisplatin",
+  "summary": "Carboplatin is a platinum analogue that forms the same DNA adducts as cisplatin but reacts more slowly, giving less nephrotoxicity, neurotoxicity and nausea at the cost of more bone-marrow suppression. It is a standard drug in ovarian and lung cancer and many combination regimens.",
+  "mechanism": [
+    "The bidentate cyclobutanedicarboxylate ligand is displaced far more slowly than cisplatin's chlorides, so carboplatin is more stable in plasma and is largely excreted unchanged.",
+    "Once activated inside cells it forms the same platinum–DNA intrastrand cross-links as cisplatin, blocking replication and inducing apoptosis. Higher doses are needed to achieve equivalent DNA platination."
+  ],
+  "uses": [
+    "Ovarian cancer (typically with paclitaxel)",
+    "Non-small-cell and small-cell lung cancer",
+    "Head and neck, bladder, cervical, endometrial and breast cancer regimens",
+    "Germ-cell tumours and paediatric tumours (e.g. retinoblastoma, neuroblastoma)",
+    "High-dose conditioning before stem-cell transplant"
+  ],
+  "history": [
+    {
+      "year": 1972,
+      "title": "Analogue programme",
+      "detail": "Johnson Matthey and the Institute of Cancer Research synthesise second-generation platinum analogues."
+    },
+    {
+      "year": 1981,
+      "title": "Clinical trials",
+      "detail": "Phase I studies at the Royal Marsden show reduced renal toxicity compared with cisplatin."
+    },
+    {
+      "year": 1986,
+      "title": "UK approval",
+      "detail": "Launched in the UK as Paraplatin."
+    },
+    {
+      "year": 1989,
+      "title": "FDA approval",
+      "detail": "Approved in the US for advanced ovarian cancer."
+    },
+    {
+      "year": 1989,
+      "title": "Calvert formula",
+      "detail": "Calvert and colleagues publish AUC-based dosing using glomerular filtration rate."
+    },
+    {
+      "year": 2004,
+      "title": "Generics",
+      "detail": "Generic carboplatin enters the US market after patent expiry."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2.6–5.9 hours (free platinum) with normal renal function",
+    "bioavailability": "IV only",
+    "metabolism": "minimal; slow non-enzymatic activation",
+    "excretion": "renal, largely unchanged"
+  },
+  "safety": {
+    "common": [
+      "thrombocytopenia",
+      "neutropenia",
+      "anaemia",
+      "nausea",
+      "fatigue"
+    ],
+    "serious": [
+      "severe myelosuppression",
+      "hypersensitivity reactions, increasing with repeated cycles",
+      "electrolyte disturbance",
+      "peripheral neuropathy (less than cisplatin)"
+    ],
+    "boxed_warning": "Boxed warning for bone-marrow suppression, vomiting and anaphylactic-like reactions."
+  },
+  "facts": [
+    "Dose by target AUC (Calvert formula: dose = AUC × [GFR + 25]) is a standard pharmacokinetic calculation in oncology."
+  ],
+  "related": [
+    "cisplatin",
+    "oxaliplatin",
+    "paclitaxel",
+    "etoposide",
+    "gemcitabine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Carboplatin",
+      "url": "https://en.wikipedia.org/wiki/Carboplatin"
+    },
+    {
+      "title": "DailyMed: carboplatin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=CARBOPLATIN"
+    }
+  ],
+  "stage": "written"
 }

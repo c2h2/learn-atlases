@@ -1,36 +1,125 @@
 {
   "slug": "gefitinib",
   "name": "Gefitinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ZD1839"
+  ],
+  "brands": [
+    "Iressa"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "EGFR tyrosine kinase inhibitor (first generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 250 mg once daily",
+  "targets": [
+    "EGFR"
+  ],
+  "origin": "synthetic",
+  "originator": "AstraZeneca (Zeneca)",
+  "owner": "AstraZeneca; generic in many markets",
+  "first_approval": {
+    "year": 2002,
+    "agency": "MHLW",
+    "country": "Japan",
+    "brand": "Iressa"
+  },
+  "discovery": {
+    "year": 1996,
+    "by": "Zeneca Pharmaceuticals, Alderley Park",
+    "note": "An anilinoquinazoline that reversibly competes with ATP at the EGFR kinase domain."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First EGFR kinase inhibitor, whose story revealed the importance of EGFR mutations",
+  "summary": "Gefitinib is a reversible EGFR tyrosine kinase inhibitor. Early trials in unselected lung cancer were disappointing, but the 2004 discovery that tumours with activating EGFR mutations respond dramatically made it a model for biomarker-driven therapy; it is used first-line for EGFR-mutant non-small-cell lung cancer.",
+  "mechanism": [
+    "Gefitinib binds the ATP pocket of the EGFR kinase domain, blocking autophosphorylation and downstream RAS–MAPK and PI3K–AKT signalling.",
+    "Exon 19 deletions and the L858R mutation increase the kinase's affinity for gefitinib relative to ATP and create 'oncogene addiction', so mutant tumours respond strongly. The T790M gatekeeper mutation restores ATP affinity and is the main cause of acquired resistance."
+  ],
+  "uses": [
+    "First-line treatment of metastatic NSCLC with EGFR exon 19 deletions or exon 21 L858R mutations"
+  ],
+  "history": [
+    {
+      "year": 2002,
+      "title": "First approval in Japan",
+      "detail": "Japan approves Iressa; reports of fatal interstitial lung disease follow and lead to litigation."
+    },
+    {
+      "year": 2003,
+      "title": "FDA accelerated approval",
+      "detail": "FDA approves gefitinib for previously treated NSCLC."
+    },
+    {
+      "year": 2004,
+      "title": "EGFR mutations",
+      "detail": "Lynch et al. (NEJM) and Paez et al. (Science) link responses to activating EGFR mutations."
+    },
+    {
+      "year": 2005,
+      "title": "US restriction",
+      "detail": "After ISEL shows no survival benefit in unselected patients, US use is restricted to patients already benefiting."
+    },
+    {
+      "year": 2009,
+      "title": "IPASS and EU approval",
+      "detail": "IPASS shows superiority to chemotherapy in EGFR-mutant tumours; EMA approves for EGFR-mutation-positive NSCLC."
+    },
+    {
+      "year": 2015,
+      "title": "FDA re-approval",
+      "detail": "FDA approves gefitinib first-line for EGFR-mutant metastatic NSCLC with a companion diagnostic."
+    }
+  ],
+  "pk": {
+    "half_life": "about 48 hours",
+    "bioavailability": "oral about 60%",
+    "metabolism": "hepatic CYP3A4 and CYP2D6",
+    "excretion": "faecal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "acneiform rash",
+      "diarrhoea",
+      "dry skin",
+      "raised liver enzymes",
+      "stomatitis"
+    ],
+    "serious": [
+      "interstitial lung disease",
+      "hepatotoxicity",
+      "GI perforation",
+      "keratitis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Responses were notably more common in East Asian, female, never-smoking patients with adenocarcinoma — groups later found to have higher EGFR mutation rates."
+  ],
+  "related": [
+    "erlotinib",
+    "osimertinib",
+    "cisplatin",
+    "carboplatin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Gefitinib",
+      "url": "https://en.wikipedia.org/wiki/Gefitinib"
+    },
+    {
+      "title": "DailyMed: gefitinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=GEFITINIB"
+    },
+    {
+      "title": "EMA EPAR: Iressa",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/iressa"
+    }
+  ],
+  "stage": "written"
 }

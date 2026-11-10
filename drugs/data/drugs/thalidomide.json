@@ -1,36 +1,155 @@
 {
   "slug": "thalidomide",
   "name": "Thalidomide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "α-phthalimidoglutarimide",
+    "K-17"
+  ],
+  "brands": [
+    "Thalomid",
+    "Contergan (historical)",
+    "Distaval (historical)"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Immunomodulatory imide drug (IMiD; cereblon modulator)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules once daily, usually at bedtime; supplied only under strict pregnancy-prevention programmes",
+  "targets": [
+    "CRBN",
+    "SALL4",
+    "IKZF1",
+    "IKZF3"
+  ],
+  "origin": "synthetic",
+  "originator": "Chemie Grünenthal (West Germany)",
+  "owner": "Bristol Myers Squibb (Thalomid); generic in some markets",
+  "first_approval": {
+    "year": 1957,
+    "agency": "national (West Germany)",
+    "country": "West Germany",
+    "brand": "Contergan"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1954,
+    "by": "Wilhelm Kunz and Heinrich Mückter, Chemie Grünenthal",
+    "note": "Synthesised as a sedative; marketed as safe enough to give to pregnant women for morning sickness."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Notorious cause of birth defects reborn as a treatment for myeloma and leprosy reactions",
+  "summary": "Thalidomide was sold in the late 1950s as a sedative and treatment for morning sickness and caused severe limb and organ malformations in more than 10,000 children before its withdrawal in 1961. The tragedy transformed drug regulation worldwide. It later returned under tight controls to treat erythema nodosum leprosum and multiple myeloma.",
+  "mechanism": [
+    "Thalidomide binds cereblon, the substrate receptor of the CRL4 E3 ubiquitin ligase, altering its substrate specificity so that proteins such as Ikaros (IKZF1) and Aiolos (IKZF3) are degraded; this underlies anti-myeloma and immunomodulatory effects, along with inhibition of TNF-α production and angiogenesis.",
+    "Degradation of the developmental transcription factor SALL4 (and p63) by the thalidomide-bound ligase is thought to explain its teratogenicity, including phocomelia; the drug's enantiomers interconvert in the body, so a single-enantiomer formulation would not be safe."
+  ],
+  "uses": [
+    "Newly diagnosed multiple myeloma (with dexamethasone)",
+    "Cutaneous manifestations of moderate to severe erythema nodosum leprosum",
+    "Off-label: refractory aphthous ulcers, cutaneous lupus, some myelodysplastic and AIDS-related conditions"
+  ],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Marketed",
+      "detail": "Grünenthal launches Contergan in West Germany as an over-the-counter sedative."
+    },
+    {
+      "year": 1960,
+      "title": "FDA refusal",
+      "detail": "FDA reviewer Frances Kelsey refuses to approve the drug (Kevadon) in the US pending more safety data."
+    },
+    {
+      "year": 1961,
+      "title": "Withdrawal",
+      "detail": "Widukind Lenz and William McBride link thalidomide to birth defects; it is withdrawn in Germany and the UK."
+    },
+    {
+      "year": 1962,
+      "title": "Kefauver–Harris Amendments",
+      "detail": "The US strengthens drug law to require proof of efficacy and better safety testing; Kelsey receives a presidential award."
+    },
+    {
+      "year": 1965,
+      "title": "Leprosy reactions",
+      "detail": "Jacob Sheskin reports dramatic benefit in erythema nodosum leprosum (first report 1964–65)."
+    },
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Thalomid (Celgene) approved for erythema nodosum leprosum with the S.T.E.P.S. restricted programme."
+    },
+    {
+      "year": 1999,
+      "title": "Myeloma activity",
+      "detail": "Singhal et al. (NEJM) report responses in refractory multiple myeloma."
+    },
+    {
+      "year": 2006,
+      "title": "Myeloma approval",
+      "detail": "FDA approves thalidomide with dexamethasone for newly diagnosed myeloma."
+    },
+    {
+      "year": 2010,
+      "title": "Target identified",
+      "detail": "Cereblon identified as the thalidomide-binding protein (Science)."
+    },
+    {
+      "year": 2018,
+      "title": "SALL4",
+      "detail": "Studies show thalidomide-dependent degradation of SALL4, offering a molecular explanation for its birth defects."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5–7 hours",
+    "bioavailability": "oral, slowly absorbed",
+    "metabolism": "non-enzymatic hydrolysis; minor CYP2C19 hydroxylation",
+    "excretion": "renal (as hydrolysis products)"
+  },
+  "safety": {
+    "common": [
+      "drowsiness and sedation",
+      "constipation",
+      "peripheral neuropathy",
+      "dizziness",
+      "rash",
+      "oedema"
+    ],
+    "serious": [
+      "severe birth defects (phocomelia) after a single dose in pregnancy",
+      "venous thromboembolism",
+      "peripheral neuropathy that may be irreversible",
+      "bradycardia",
+      "severe skin reactions"
+    ],
+    "boxed_warning": "Boxed warning for embryo-fetal toxicity (available only through a REMS programme) and for venous thromboembolism, particularly with dexamethasone in myeloma."
+  },
+  "facts": [
+    "Frances Kelsey's refusal to approve thalidomide in the US earned her the President's Award for Distinguished Federal Civilian Service in 1962.",
+    "Thalidomide's ability to rewire an E3 ligase inspired the development of targeted protein degraders (PROTACs and molecular glues)."
+  ],
+  "related": [
+    "lenalidomide",
+    "bortezomib",
+    "dexamethasone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Thalidomide",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide"
+    },
+    {
+      "title": "DailyMed: thalidomide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=THALIDOMIDE"
+    },
+    {
+      "title": "Wikipedia: Thalidomide scandal",
+      "url": "https://en.wikipedia.org/wiki/Thalidomide_scandal"
+    }
+  ],
+  "stage": "written"
 }

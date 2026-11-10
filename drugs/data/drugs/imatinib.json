@@ -1,36 +1,152 @@
 {
   "slug": "imatinib",
   "name": "Imatinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "STI571",
+    "CGP 57148B",
+    "imatinib mesylate"
+  ],
+  "brands": [
+    "Gleevec",
+    "Glivec"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "BCR-ABL tyrosine kinase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets once or twice daily with food",
+  "targets": [
+    "ABL1",
+    "BCR::ABL1",
+    "KIT",
+    "PDGFRA",
+    "PDGFRB"
+  ],
+  "origin": "synthetic",
+  "originator": "Ciba-Geigy (Nicholas Lydon, Jürg Zimmermann and colleagues), with Brian Druker at Oregon Health & Science University",
+  "owner": "generic (many); Gleevec/Glivec brand held by Novartis",
+  "first_approval": {
+    "year": 2001,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Gleevec"
+  },
+  "discovery": {
+    "year": 1992,
+    "by": "Jürg Zimmermann, Nicholas Lydon, Elisabeth Buchdunger and colleagues, Ciba-Geigy; Brian Druker, OHSU",
+    "note": "A 2-phenylaminopyrimidine optimised to bind the inactive conformation of the ABL kinase; Druker's laboratory showed selective killing of BCR-ABL-positive CML cells."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Landmark kinase inhibitor that turned chronic myeloid leukaemia into a manageable disease",
+  "summary": "Imatinib was the first rationally designed tyrosine kinase inhibitor to transform a cancer's outlook: it blocks the BCR-ABL fusion kinase that drives chronic myeloid leukaemia (CML), giving most patients near-normal life expectancy. It also inhibits KIT and PDGFR and is standard therapy for gastrointestinal stromal tumours (GIST).",
+  "mechanism": [
+    "The Philadelphia chromosome t(9;22) fuses BCR to ABL1, producing a constitutively active tyrosine kinase that drives myeloid proliferation.",
+    "Imatinib occupies the ATP-binding pocket of ABL when the kinase is in its inactive (DFG-out) conformation, preventing substrate phosphorylation and downstream signalling, and inducing apoptosis of BCR-ABL-positive cells. Resistance commonly arises through kinase-domain mutations such as T315I.",
+    "The same mechanism inhibits KIT (mutated in most GISTs) and PDGFRA/B, explaining activity in GIST, hypereosinophilic syndromes and dermatofibrosarcoma protuberans."
+  ],
+  "uses": [
+    "Philadelphia chromosome-positive chronic myeloid leukaemia (all phases)",
+    "Ph-positive acute lymphoblastic leukaemia",
+    "KIT-positive gastrointestinal stromal tumours (metastatic and adjuvant)",
+    "Hypereosinophilic syndrome and chronic eosinophilic leukaemia",
+    "Systemic mastocytosis without D816V mutation",
+    "Myelodysplastic/myeloproliferative diseases with PDGFR rearrangements",
+    "Dermatofibrosarcoma protuberans"
+  ],
+  "history": [
+    {
+      "year": 1960,
+      "title": "Philadelphia chromosome",
+      "detail": "Peter Nowell and David Hungerford describe a small chromosome in CML cells."
+    },
+    {
+      "year": 1973,
+      "title": "Translocation",
+      "detail": "Janet Rowley shows the Philadelphia chromosome results from a t(9;22) translocation."
+    },
+    {
+      "year": 1996,
+      "title": "Selective killing",
+      "detail": "Druker et al. (Nature Medicine) report that CGP 57148 selectively inhibits BCR-ABL-positive cells."
+    },
+    {
+      "year": 2001,
+      "title": "Rapid FDA approval",
+      "detail": "Approved as Gleevec for CML in about 10 weeks after submission; Time magazine features it as a 'magic bullet'."
+    },
+    {
+      "year": 2002,
+      "title": "GIST",
+      "detail": "Approved for KIT-positive gastrointestinal stromal tumours."
+    },
+    {
+      "year": 2003,
+      "title": "IRIS",
+      "detail": "IRIS trial shows imatinib is superior to interferon plus cytarabine in newly diagnosed CML."
+    },
+    {
+      "year": 2013,
+      "title": "Indian patent ruling",
+      "detail": "India's Supreme Court rejects Novartis's patent on the beta-crystalline form, a landmark decision on evergreening."
+    },
+    {
+      "year": 2016,
+      "title": "US generics",
+      "detail": "Generic imatinib launches in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 18 hours (N-desmethyl metabolite about 40 hours)",
+    "bioavailability": "oral about 98%",
+    "metabolism": "hepatic CYP3A4 to active N-desmethyl imatinib",
+    "excretion": "faecal (about 68%) and renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "oedema and periorbital swelling",
+      "nausea",
+      "muscle cramps",
+      "diarrhoea",
+      "rash",
+      "fatigue"
+    ],
+    "serious": [
+      "myelosuppression",
+      "severe fluid retention and congestive heart failure",
+      "hepatotoxicity",
+      "GI haemorrhage in GIST",
+      "growth retardation in children"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ten-year overall survival in the IRIS trial was about 83%.",
+    "The Philadelphia chromosome was the first consistent chromosomal abnormality linked to a cancer."
+  ],
+  "related": [
+    "dasatinib",
+    "hydroxyurea",
+    "cytarabine",
+    "sunitinib"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Imatinib",
+      "url": "https://en.wikipedia.org/wiki/Imatinib"
+    },
+    {
+      "title": "DailyMed: imatinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=IMATINIB"
+    },
+    {
+      "title": "EMA EPAR: Glivec",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/glivec"
+    }
+  ],
+  "stage": "written"
 }

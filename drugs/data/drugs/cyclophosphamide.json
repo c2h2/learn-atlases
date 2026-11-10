@@ -1,36 +1,134 @@
 {
   "slug": "cyclophosphamide",
   "name": "Cyclophosphamide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "cyclophosphamide monohydrate",
+    "CPA"
+  ],
+  "brands": [
+    "Cytoxan",
+    "Endoxan",
+    "Procytox"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Nitrogen mustard alkylating agent (oxazaphosphorine)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "IV infusion in most chemotherapy regimens; oral tablets/capsules for some cancers and autoimmune disease",
+  "targets": [
+    "DNA (guanine N7 cross-linking)"
+  ],
+  "origin": "synthetic",
+  "originator": "Asta-Werke (Germany)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1959,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Cytoxan"
+  },
+  "discovery": {
+    "year": 1958,
+    "by": "Norbert Brock and Herbert Arnold, Asta-Werke",
+    "note": "Designed as an inactive 'transport form' of a nitrogen mustard that would be activated preferentially in tumour tissue; activation actually occurs mainly in the liver."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Prodrug nitrogen mustard used across cancer, transplant and autoimmune medicine",
+  "summary": "Cyclophosphamide is an alkylating prodrug that is activated by liver cytochrome P450 enzymes into a DNA cross-linking mustard. It is a backbone of many regimens for lymphoma, leukaemia, breast cancer and sarcoma, and is also used as an immunosuppressant in severe autoimmune disease and stem-cell transplant conditioning.",
+  "mechanism": [
+    "Cyclophosphamide itself is inactive. Hepatic CYP2B6 and other P450 enzymes hydroxylate it to 4-hydroxycyclophosphamide, which exists in equilibrium with aldophosphamide and diffuses into cells.",
+    "Aldophosphamide breaks down to phosphoramide mustard, the alkylating species that forms interstrand DNA cross-links at guanine N7 positions, blocking replication and triggering apoptosis, and acrolein, a by-product responsible for haemorrhagic cystitis.",
+    "Cells rich in aldehyde dehydrogenase (such as haematopoietic stem cells) detoxify aldophosphamide, which partly explains why lymphocytes are depleted while stem cells are relatively spared — the basis of its immunosuppressive and post-transplant uses."
+  ],
+  "uses": [
+    "Non-Hodgkin and Hodgkin lymphoma (e.g. R-CHOP)",
+    "Acute and chronic lymphocytic leukaemias",
+    "Breast cancer (adjuvant and metastatic)",
+    "Multiple myeloma, neuroblastoma, ovarian cancer, retinoblastoma and sarcomas",
+    "Minimal-change nephrotic syndrome in children",
+    "Off-label: lupus nephritis, vasculitis, transplant conditioning and post-transplant GVHD prophylaxis"
+  ],
+  "history": [
+    {
+      "year": 1958,
+      "title": "Synthesis",
+      "detail": "Brock and Arnold at Asta-Werke report cyclophosphamide after screening oxazaphosphorine mustards."
+    },
+    {
+      "year": 1959,
+      "title": "US approval",
+      "detail": "FDA approves cyclophosphamide (Cytoxan, Mead Johnson) for cancer."
+    },
+    {
+      "year": 1960,
+      "title": "Activation understood",
+      "detail": "Studies through the 1960s establish that hepatic metabolism is required to generate active metabolites."
+    },
+    {
+      "year": 1976,
+      "title": "CMF adjuvant trial",
+      "detail": "Bonadonna's CMF trial shows adjuvant chemotherapy benefit in node-positive breast cancer."
+    },
+    {
+      "year": 1977,
+      "title": "Mesna",
+      "detail": "Mesna is developed to neutralise acrolein and prevent haemorrhagic cystitis with high-dose oxazaphosphorines."
+    },
+    {
+      "year": 2008,
+      "title": "Post-transplant cyclophosphamide",
+      "detail": "Johns Hopkins investigators popularise high-dose post-transplant cyclophosphamide for haploidentical transplant GVHD prophylaxis."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3–12 hours (parent)",
+    "bioavailability": "oral >75%",
+    "metabolism": "hepatic CYP2B6, CYP2C19, CYP3A4 activation; aldehyde dehydrogenase detoxification",
+    "excretion": "renal, mainly as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea and vomiting",
+      "alopecia",
+      "neutropenia",
+      "amenorrhoea"
+    ],
+    "serious": [
+      "haemorrhagic cystitis",
+      "infertility",
+      "cardiotoxicity at high doses",
+      "interstitial pneumonitis",
+      "secondary malignancies (bladder cancer, AML)",
+      "severe infections"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Mesna (2-mercaptoethane sulfonate) is co-administered with high doses to protect the bladder from acrolein.",
+    "It is one of the most widely used drugs in the WHO list's cytotoxic section."
+  ],
+  "related": [
+    "doxorubicin",
+    "vincristine",
+    "rituximab",
+    "methotrexate",
+    "prednisone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Cyclophosphamide",
+      "url": "https://en.wikipedia.org/wiki/Cyclophosphamide"
+    },
+    {
+      "title": "DailyMed: cyclophosphamide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=CYCLOPHOSPHAMIDE"
+    }
+  ],
+  "stage": "written"
 }

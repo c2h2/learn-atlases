@@ -1,36 +1,141 @@
 {
   "slug": "dabrafenib",
   "name": "Dabrafenib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GSK2118436",
+    "dabrafenib mesylate"
+  ],
+  "brands": [
+    "Tafinlar",
+    "Finlee"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "BRAF V600 kinase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules twice daily, usually with trametinib; dispersible tablets for children",
+  "targets": [
+    "BRAF V600E/K/D",
+    "CRAF"
+  ],
+  "origin": "synthetic",
+  "originator": "GlaxoSmithKline",
+  "owner": "Novartis",
+  "first_approval": {
+    "year": 2013,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tafinlar"
+  },
+  "discovery": {
+    "year": 2009,
+    "by": "GlaxoSmithKline",
+    "note": "A thiazole-based ATP-competitive inhibitor selective for mutant BRAF."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "BRAF inhibitor paired with trametinib for melanoma and tumour-agnostic BRAF V600E use",
+  "summary": "Dabrafenib is an oral inhibitor of mutant BRAF kinase. Combined with the MEK inhibitor trametinib it is a standard treatment for BRAF V600-mutant melanoma (metastatic and adjuvant), lung and anaplastic thyroid cancer, paediatric low-grade glioma, and any solid tumour with a BRAF V600E mutation.",
+  "mechanism": [
+    "Dabrafenib competitively binds the ATP pocket of mutant BRAF V600E/K/D, inhibiting MEK and ERK phosphorylation and causing G1 arrest and apoptosis in BRAF-dependent tumours.",
+    "As with other first-generation BRAF inhibitors it can paradoxically activate MAPK signalling in BRAF wild-type cells; co-administration of trametinib suppresses this, reducing cutaneous squamous tumours and delaying resistance."
+  ],
+  "uses": [
+    "BRAF V600E/K-mutant unresectable or metastatic melanoma (with trametinib, or alone)",
+    "Adjuvant treatment of resected stage III BRAF-mutant melanoma (with trametinib)",
+    "BRAF V600E-mutant metastatic NSCLC",
+    "BRAF V600E-mutant anaplastic thyroid cancer",
+    "BRAF V600E-mutant solid tumours (tumour-agnostic)",
+    "BRAF V600E paediatric low-grade glioma"
+  ],
+  "history": [
+    {
+      "year": 2013,
+      "title": "FDA approval",
+      "detail": "Dabrafenib (Tafinlar) and trametinib (Mekinist) approved as single agents on the same day for BRAF-mutant melanoma."
+    },
+    {
+      "year": 2014,
+      "title": "Combination approval",
+      "detail": "Accelerated approval of dabrafenib plus trametinib, the first BRAF/MEK combination."
+    },
+    {
+      "year": 2015,
+      "title": "Novartis transaction",
+      "detail": "GSK's oncology portfolio, including dabrafenib, is transferred to Novartis."
+    },
+    {
+      "year": 2017,
+      "title": "NSCLC",
+      "detail": "Approval for BRAF V600E-mutant NSCLC."
+    },
+    {
+      "year": 2018,
+      "title": "Adjuvant melanoma and thyroid",
+      "detail": "COMBI-AD leads to adjuvant approval; anaplastic thyroid cancer also approved."
+    },
+    {
+      "year": 2022,
+      "title": "Tumour-agnostic",
+      "detail": "FDA grants accelerated approval for BRAF V600E-mutant solid tumours."
+    },
+    {
+      "year": 2023,
+      "title": "Paediatric glioma",
+      "detail": "Approval for BRAF V600E paediatric low-grade glioma with new paediatric formulations."
+    }
+  ],
+  "pk": {
+    "half_life": "about 8 hours",
+    "bioavailability": "oral about 95%",
+    "metabolism": "hepatic CYP2C8 and CYP3A4 to active hydroxy- and desmethyl-dabrafenib; induces CYP3A4",
+    "excretion": "faecal (about 71%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "pyrexia",
+      "rash",
+      "chills",
+      "headache",
+      "arthralgia",
+      "fatigue"
+    ],
+    "serious": [
+      "serious febrile reactions",
+      "new primary malignancies",
+      "haemorrhage",
+      "uveitis",
+      "haemolytic anaemia in G6PD deficiency",
+      "hyperglycaemia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Pyrexia is more frequent with the dabrafenib–trametinib combination than with either drug alone."
+  ],
+  "related": [
+    "trametinib",
+    "vemurafenib",
+    "pembrolizumab",
+    "nivolumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Dabrafenib",
+      "url": "https://en.wikipedia.org/wiki/Dabrafenib"
+    },
+    {
+      "title": "DailyMed: dabrafenib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=DABRAFENIB"
+    },
+    {
+      "title": "EMA EPAR: Tafinlar",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tafinlar"
+    }
+  ],
+  "stage": "written"
 }

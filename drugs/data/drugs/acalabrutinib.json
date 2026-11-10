@@ -1,36 +1,134 @@
 {
   "slug": "acalabrutinib",
   "name": "Acalabrutinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ACP-196",
+    "acalabrutinib maleate"
+  ],
+  "brands": [
+    "Calquence"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Bruton tyrosine kinase (BTK) inhibitor (covalent, second generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules or tablets twice daily",
+  "targets": [
+    "BTK"
+  ],
+  "origin": "synthetic",
+  "originator": "Acerta Pharma (Netherlands)",
+  "owner": "AstraZeneca",
+  "first_approval": {
+    "year": 2017,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Calquence"
+  },
+  "discovery": {
+    "year": 2014,
+    "by": "Acerta Pharma (Tjeerd Barf, Allard Kaptein and colleagues)",
+    "note": "A more selective covalent BTK inhibitor with a butynamide warhead, designed to reduce off-target kinase effects."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "More selective second-generation BTK inhibitor for CLL and mantle cell lymphoma",
+  "summary": "Acalabrutinib is a second-generation covalent BTK inhibitor with fewer off-target kinase effects than ibrutinib. It is approved for chronic lymphocytic leukaemia and mantle cell lymphoma, and in a head-to-head trial showed similar efficacy to ibrutinib with less atrial fibrillation.",
+  "mechanism": [
+    "Acalabrutinib and its active metabolite ACP-5862 bind covalently to cysteine 481 of BTK, irreversibly blocking B-cell receptor signalling and survival of malignant B cells.",
+    "Its reactive butynamide group and scaffold give minimal inhibition of EGFR, ITK and TEC, which is thought to lower rates of rash, diarrhoea, bleeding and atrial fibrillation compared with ibrutinib."
+  ],
+  "uses": [
+    "Chronic lymphocytic leukaemia/small lymphocytic lymphoma (alone or with obinutuzumab)",
+    "Mantle cell lymphoma (relapsed, and untreated with bendamustine–rituximab)"
+  ],
+  "history": [
+    {
+      "year": 2015,
+      "title": "AstraZeneca investment",
+      "detail": "AstraZeneca agrees to acquire a majority stake in Acerta Pharma."
+    },
+    {
+      "year": 2016,
+      "title": "CLL results",
+      "detail": "Byrd et al. (NEJM) report high responses in relapsed CLL."
+    },
+    {
+      "year": 2017,
+      "title": "FDA approval",
+      "detail": "Accelerated approval for previously treated mantle cell lymphoma."
+    },
+    {
+      "year": 2019,
+      "title": "CLL approval",
+      "detail": "ELEVATE-TN and ASCEND lead to approval in CLL."
+    },
+    {
+      "year": 2021,
+      "title": "ELEVATE-RR",
+      "detail": "Non-inferior to ibrutinib with less atrial fibrillation in previously treated CLL."
+    },
+    {
+      "year": 2022,
+      "title": "Tablet formulation",
+      "detail": "Tablet form approved that can be taken with acid-reducing agents."
+    },
+    {
+      "year": 2025,
+      "title": "Untreated MCL",
+      "detail": "FDA approves acalabrutinib with bendamustine and rituximab for untreated mantle cell lymphoma (ECHO trial)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 hour (active metabolite ACP-5862 about 7 hours)",
+    "bioavailability": "oral about 25%",
+    "metabolism": "hepatic CYP3A4",
+    "excretion": "faecal (about 84%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "headache",
+      "diarrhoea",
+      "fatigue",
+      "musculoskeletal pain",
+      "bruising",
+      "upper respiratory infection"
+    ],
+    "serious": [
+      "serious infections",
+      "haemorrhage",
+      "cytopenias",
+      "atrial fibrillation",
+      "second primary malignancies"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Headache is common in the first weeks and usually responds to caffeine or simple analgesics."
+  ],
+  "related": [
+    "ibrutinib",
+    "venetoclax",
+    "obinutuzumab",
+    "rituximab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Acalabrutinib",
+      "url": "https://en.wikipedia.org/wiki/Acalabrutinib"
+    },
+    {
+      "title": "DailyMed: acalabrutinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ACALABRUTINIB"
+    },
+    {
+      "title": "EMA EPAR: Calquence",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/calquence"
+    }
+  ],
+  "stage": "written"
 }

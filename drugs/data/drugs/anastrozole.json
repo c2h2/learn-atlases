@@ -1,36 +1,125 @@
 {
   "slug": "anastrozole",
   "name": "Anastrozole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ZD1033",
+    "ICI D1033"
+  ],
+  "brands": [
+    "Arimidex"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Non-steroidal aromatase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 1 mg once daily",
+  "targets": [
+    "CYP19A1"
+  ],
+  "origin": "synthetic",
+  "originator": "Zeneca (formerly ICI Pharmaceuticals)",
+  "owner": "generic (many); Arimidex brand held by AstraZeneca and others regionally",
+  "first_approval": {
+    "year": 1995,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Arimidex"
+  },
+  "discovery": {
+    "year": 1987,
+    "by": "ICI Pharmaceuticals, Alderley Park",
+    "note": "A triazole designed to reversibly bind the haem of aromatase with high selectivity."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Triazole aromatase inhibitor for hormone-receptor-positive breast cancer after menopause",
+  "summary": "Anastrozole is a non-steroidal aromatase inhibitor that blocks conversion of androgens to oestrogens and lowers circulating oestradiol in postmenopausal women by over 80%. It is used as adjuvant and metastatic therapy for hormone-receptor-positive breast cancer and for risk reduction.",
+  "mechanism": [
+    "After menopause, most oestrogen is made by aromatase (CYP19A1) in adipose and other peripheral tissues from adrenal androgens.",
+    "Anastrozole's triazole nitrogen coordinates the haem iron of aromatase, competitively and reversibly blocking conversion of androstenedione to oestrone and testosterone to oestradiol. Oestrogen deprivation slows growth of ER-positive tumours. In premenopausal women it is ineffective alone, because falling oestrogen raises gonadotrophins and ovarian output."
+  ],
+  "uses": [
+    "Adjuvant treatment of hormone-receptor-positive early breast cancer in postmenopausal women",
+    "First- and second-line therapy of advanced breast cancer",
+    "Risk reduction in high-risk postmenopausal women (e.g. UK)"
+  ],
+  "history": [
+    {
+      "year": 1987,
+      "title": "Discovery",
+      "detail": "Compound identified at ICI."
+    },
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "Approved as Arimidex for advanced breast cancer after tamoxifen."
+    },
+    {
+      "year": 2002,
+      "title": "ATAC",
+      "detail": "The ATAC trial shows anastrozole reduces recurrence versus tamoxifen as adjuvant therapy; FDA approves adjuvant use."
+    },
+    {
+      "year": 2010,
+      "title": "Generics",
+      "detail": "Generic anastrozole enters the US market."
+    },
+    {
+      "year": 2014,
+      "title": "IBIS-II",
+      "detail": "Anastrozole halves breast cancer incidence in high-risk postmenopausal women."
+    },
+    {
+      "year": 2017,
+      "title": "NICE prevention guidance",
+      "detail": "UK guidance supports anastrozole for chemoprevention in postmenopausal high-risk women."
+    }
+  ],
+  "pk": {
+    "half_life": "about 50 hours",
+    "bioavailability": "oral, well absorbed",
+    "metabolism": "hepatic N-dealkylation, hydroxylation and glucuronidation",
+    "excretion": "renal (metabolites) and faecal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hot flushes",
+      "arthralgia and joint stiffness",
+      "fatigue",
+      "mood changes",
+      "vaginal dryness"
+    ],
+    "serious": [
+      "bone loss and fractures",
+      "hypercholesterolaemia",
+      "carpal tunnel syndrome",
+      "hypersensitivity and skin reactions (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Aromatase inhibitor arthralgia is one of the commonest reasons for stopping adjuvant therapy early."
+  ],
+  "related": [
+    "letrozole",
+    "tamoxifen",
+    "fulvestrant",
+    "palbociclib",
+    "alendronate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Anastrozole",
+      "url": "https://en.wikipedia.org/wiki/Anastrozole"
+    },
+    {
+      "title": "DailyMed: anastrozole labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ANASTROZOLE"
+    }
+  ],
+  "stage": "written"
 }

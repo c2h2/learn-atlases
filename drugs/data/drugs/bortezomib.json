@@ -1,36 +1,146 @@
 {
   "slug": "bortezomib",
   "name": "Bortezomib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PS-341",
+    "MLN-341",
+    "LDP-341"
+  ],
+  "brands": [
+    "Velcade"
+  ],
   "area": "oncology",
   "batch": "05",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Proteasome inhibitor (boronic acid dipeptide)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "SC (preferred) or IV injection, usually twice weekly or weekly in cycles",
+  "targets": [
+    "PSMB5",
+    "PSMB1"
+  ],
+  "origin": "synthetic",
+  "originator": "ProScript/Myogenics (Julian Adams and colleagues); developed by Millennium Pharmaceuticals",
+  "owner": "Takeda (Velcade); Johnson & Johnson outside US/Japan; generic (many)",
+  "first_approval": {
+    "year": 2003,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Velcade"
+  },
+  "discovery": {
+    "year": 1995,
+    "by": "Julian Adams and colleagues, ProScript (formerly Myogenics)",
+    "note": "Dipeptidyl boronic acid designed as a reversible inhibitor of the proteasome's chymotrypsin-like site; NCI screening revealed broad antitumour activity."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First proteasome inhibitor, a cornerstone of multiple myeloma therapy",
+  "summary": "Bortezomib is a reversible inhibitor of the 26S proteasome, the cell's main machinery for degrading ubiquitinated proteins. Myeloma cells, which make large amounts of immunoglobulin, are especially vulnerable; bortezomib-based combinations are standard in multiple myeloma and mantle cell lymphoma.",
+  "mechanism": [
+    "The boron atom of bortezomib binds the catalytic threonine of the β5 subunit (chymotrypsin-like activity) of the 20S proteasome core, and to a lesser extent β1.",
+    "Proteasome inhibition causes accumulation of misfolded proteins and endoplasmic-reticulum stress (unfolded protein response), stabilises pro-apoptotic factors and IκB, and suppresses NF-κB signalling, leading to apoptosis. Plasma cells, with their high protein synthesis load, are particularly sensitive."
+  ],
+  "uses": [
+    "Multiple myeloma (newly diagnosed and relapsed, in combinations such as VRd, VMP, VTd, D-VRd)",
+    "Mantle cell lymphoma (including first-line with rituximab-based chemotherapy)",
+    "Off-label: AL amyloidosis, antibody-mediated transplant rejection"
+  ],
+  "history": [
+    {
+      "year": 1995,
+      "title": "Synthesis",
+      "detail": "PS-341 synthesised at Myogenics/ProScript."
+    },
+    {
+      "year": 1999,
+      "title": "Millennium",
+      "detail": "Millennium Pharmaceuticals acquires the compound through LeukoSite, which had bought ProScript."
+    },
+    {
+      "year": 2003,
+      "title": "FDA approval",
+      "detail": "Accelerated approval for relapsed and refractory multiple myeloma (SUMMIT), the first proteasome inhibitor."
+    },
+    {
+      "year": 2006,
+      "title": "Mantle cell lymphoma",
+      "detail": "Approval for relapsed mantle cell lymphoma."
+    },
+    {
+      "year": 2008,
+      "title": "First-line myeloma; Takeda",
+      "detail": "VISTA leads to first-line approval; Takeda acquires Millennium."
+    },
+    {
+      "year": 2012,
+      "title": "Subcutaneous route",
+      "detail": "SC administration approved after showing less neuropathy than IV."
+    },
+    {
+      "year": 2017,
+      "title": "SWOG S0777",
+      "detail": "VRd (bortezomib, lenalidomide, dexamethasone) improves survival over Rd in newly diagnosed myeloma."
+    },
+    {
+      "year": 2022,
+      "title": "Generics",
+      "detail": "Generic bortezomib becomes available in the US after patent expiry."
+    }
+  ],
+  "pk": {
+    "half_life": "about 40–193 hours after repeated doses",
+    "bioavailability": "SC exposure similar to IV",
+    "metabolism": "hepatic CYP3A4, CYP2C19 and CYP1A2 (deboronation)",
+    "excretion": "not well characterised; renal and biliary"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "peripheral neuropathy",
+      "thrombocytopenia",
+      "fatigue",
+      "diarrhoea or constipation",
+      "nausea",
+      "herpes zoster reactivation"
+    ],
+    "serious": [
+      "severe peripheral and autonomic neuropathy",
+      "hypotension",
+      "cardiac failure",
+      "pulmonary toxicity",
+      "posterior reversible encephalopathy syndrome",
+      "tumour lysis syndrome"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Antiviral prophylaxis (e.g. aciclovir) is routinely given because bortezomib increases herpes zoster reactivation."
+  ],
+  "related": [
+    "lenalidomide",
+    "thalidomide",
+    "dexamethasone",
+    "daratumumab",
+    "aciclovir",
+    "cyclophosphamide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Bortezomib",
+      "url": "https://en.wikipedia.org/wiki/Bortezomib"
+    },
+    {
+      "title": "DailyMed: bortezomib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=BORTEZOMIB"
+    },
+    {
+      "title": "EMA EPAR: Velcade",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/velcade"
+    }
+  ],
+  "stage": "written"
 }
