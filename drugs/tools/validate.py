@@ -28,6 +28,7 @@ for slug, p in sorted(files.items()):
         written += 1
         for k in ("drug_class","modality","routes","origin","originator","owner","tagline","summary","mechanism","uses","history","references"):
             if not d.get(k): e(f"written but {k} empty")
+        if len(d.get("history", [])) < 5: e(f"history has {len(d.get('history', []))} events (min 5)")
         ys = [h.get("year") for h in d.get("history", [])]
         if ys != sorted(ys): e("history not chronological")
 print("\n".join(err[:200]))

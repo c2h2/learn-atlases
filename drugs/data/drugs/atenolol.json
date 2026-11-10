@@ -51,9 +51,19 @@
   ],
   "history": [
     {
+      "year": 1976,
+      "title": "First marketed",
+      "detail": "ICI launches atenolol as Tenormin in the UK, as a β1-selective successor to propranolol."
+    },
+    {
       "year": 1981,
       "title": "FDA approval",
       "detail": "Approved in the US."
+    },
+    {
+      "year": 1998,
+      "title": "UKPDS 39",
+      "detail": "In type 2 diabetes with hypertension, atenolol- and captopril-based tight blood-pressure control give similar reductions in complications."
     },
     {
       "year": 2002,

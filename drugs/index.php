@@ -25,7 +25,7 @@ page_head('Drug Atlas');
 <section class="intro">
   <h1>Drug Atlas</h1>
   <p><?= count(drugs_all()) ?> medicines, from aspirin to gene therapies: how each one works, its history, who makes it, and how it is given (by mouth, injection, inhaler or skin). Group them by any of the criteria below.</p>
-  <p class="muted"><?= $written ?> of <?= count(drugs_all()) ?> records written so far; the rest are skeletons.</p>
+  <?php if ($written < count(drugs_all())): ?><p class="muted"><?= $written ?> of <?= count(drugs_all()) ?> records written so far; the rest are skeletons.</p><?php endif; ?>
 </section>
 <form class="controls" method="get">
   <label>Group by

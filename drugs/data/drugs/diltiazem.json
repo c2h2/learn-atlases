@@ -64,9 +64,19 @@
       "detail": "Diltiazem after MI shows no overall mortality benefit and harm in patients with pulmonary congestion."
     },
     {
+      "year": 1991,
+      "title": "Once-daily form",
+      "detail": "Extended-release diltiazem (Cardizem CD) is approved in the US, allowing once-daily dosing for hypertension and angina."
+    },
+    {
       "year": 2000,
       "title": "NORDIL",
       "detail": "Diltiazem-based therapy is as effective as diuretics and beta-blockers in hypertension."
+    },
+    {
+      "year": 2010,
+      "title": "AF rate control guidance",
+      "detail": "Guidelines of the 2010s list IV and oral non-dihydropyridine calcium-channel blockers such as diltiazem as first-line rate-control options in atrial fibrillation without reduced ejection fraction."
     }
   ],
   "pk": {

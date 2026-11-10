@@ -283,7 +283,7 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
         <?php endforeach; ?>
       </svg>
       <h2><?= $h($t('Drug Atlas')) ?></h2>
-      <p><?= $h($t('Five hundred medicines, from aspirin to gene therapies: how each works, its history, who owns it and whether it is swallowed, injected or inhaled, grouped by any criterion. English skeleton; records being written.')) ?></p>
+      <p><?= $h($t('Five hundred medicines, from aspirin to gene therapies: how each works, its history, who owns it and whether it is swallowed, injected or inhaled, grouped by any criterion. Every record written, in English.')) ?></p>
       <dl><div><dt><?= $dCount ?></dt><dd><?= $h($t('drugs')) ?></dd></div></dl>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>

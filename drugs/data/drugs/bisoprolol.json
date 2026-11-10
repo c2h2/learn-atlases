@@ -62,9 +62,19 @@
       "detail": "A low-dose combination with hydrochlorothiazide is approved in the US as first-line therapy."
     },
     {
+      "year": 1994,
+      "title": "CIBIS",
+      "detail": "The first Cardiac Insufficiency Bisoprolol Study shows a trend toward lower mortality in heart failure without reaching significance, prompting the larger CIBIS-II."
+    },
+    {
       "year": 1999,
       "title": "CIBIS-II",
       "detail": "Bisoprolol reduces all-cause mortality by 34% in chronic heart failure; the trial is stopped early."
+    },
+    {
+      "year": 2005,
+      "title": "CIBIS-III",
+      "detail": "Starting heart-failure treatment with bisoprolol is non-inferior to starting with enalapril, supporting either order of initiation."
     }
   ],
   "pk": {
