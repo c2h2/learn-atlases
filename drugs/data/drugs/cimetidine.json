@@ -26,7 +26,7 @@
   "owner": "generic (many)",
   "first_approval": {
     "year": 1976,
-    "agency": null,
+    "agency": "UK Licensing Authority (on CSM advice)",
     "country": "UK",
     "brand": "Tagamet"
   },
@@ -125,6 +125,10 @@
     {
       "title": "DailyMed – cimetidine labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=cimetidine"
+    },
+    {
+      "title": "Hansard, 29 November 1976: Tagamet",
+      "url": "https://api.parliament.uk/historic-hansard/written_answers/1976/nov/29/tagamet"
     }
   ],
   "stage": "written"

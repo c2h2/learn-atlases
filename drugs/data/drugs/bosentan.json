@@ -29,9 +29,9 @@
     "brand": "Tracleer"
   },
   "discovery": {
-    "year": null,
+    "year": 1991,
     "by": "Roche scientists including Martine Clozel",
-    "note": "Non-peptide endothelin receptor antagonist; its developers founded Actelion to bring it to market."
+    "note": "Non-peptide endothelin receptor antagonist; its developers founded Actelion to bring it to market. Year of first patent filing (priority June 1991, Roche, US 5,292,740)."
   },
   "generic": true,
   "who_essential": false,
@@ -122,6 +122,10 @@
     {
       "title": "DailyMed – bosentan labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bosentan"
+    },
+    {
+      "title": "Google Patents: US5292740A",
+      "url": "https://patents.google.com/patent/US5292740A/en"
     }
   ],
   "stage": "written"

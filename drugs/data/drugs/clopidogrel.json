@@ -30,9 +30,9 @@
     "brand": "Plavix"
   },
   "discovery": {
-    "year": null,
+    "year": 1982,
     "by": "Sanofi (Jean-Pierre Maffrand and colleagues)",
-    "note": "Developed as a successor to ticlopidine with a better safety profile."
+    "note": "Developed as a successor to ticlopidine with a better safety profile. Year of first patent (1982), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

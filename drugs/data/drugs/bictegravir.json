@@ -29,9 +29,9 @@
     "brand": "Biktarvy"
   },
   "discovery": {
-    "year": null,
+    "year": 2012,
     "by": "Gilead Sciences",
-    "note": "Unboosted second-generation INSTI structurally related to dolutegravir."
+    "note": "Unboosted second-generation INSTI structurally related to dolutegravir. Year of first patent filing (priority December 2012, Gilead, US 9,216,996)."
   },
   "generic": false,
   "who_essential": false,
@@ -115,6 +115,10 @@
     {
       "title": "EMA EPAR: Biktarvy",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/biktarvy"
+    },
+    {
+      "title": "Google Patents: US9216996B2",
+      "url": "https://patents.google.com/patent/US9216996B2/en"
     }
   ],
   "stage": "written"

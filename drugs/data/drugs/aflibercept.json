@@ -87,7 +87,7 @@
     {
       "year": 2024,
       "title": "Biosimilars",
-      "detail": "FDA approves the first aflibercept biosimilars, including interchangeable products; launches are delayed by patent litigation."
+      "detail": "The FDA approves the first aflibercept biosimilars (Yesafili and Opuviz, both interchangeable) in May 2024; most launches are blocked by patent litigation, but Amgen's Pavblu launches after an injunction is refused."
     }
   ],
   "pk": {
@@ -112,7 +112,10 @@
     ],
     "boxed_warning": null
   },
-  "facts": [],
+  "facts": [
+    "Aflibercept is sold as Eylea for eye disease (intravitreal injection) and as Zaltrap for metastatic colorectal cancer (intravenous, with FOLFIRI).",
+    "In February 2023 the FDA approved Eylea for retinopathy of prematurity."
+  ],
   "related": [
     "ranibizumab",
     "faricimab",

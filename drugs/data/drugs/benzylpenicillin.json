@@ -25,11 +25,16 @@
   "origin": "natural",
   "originator": "Alexander Fleming (St Mary's Hospital); developed by Howard Florey, Ernst Chain and colleagues (University of Oxford)",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1941,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": null
+  },
   "discovery": {
     "year": 1928,
     "by": "Alexander Fleming",
-    "note": "Observed that a Penicillium mould contaminating a staphylococcal culture plate killed the surrounding bacteria."
+    "note": "Observed that a Penicillium mould contaminating a staphylococcal culture plate killed the surrounding bacteria. Pre-regulation drug: first clinical use was at Oxford in 1941; US commercial production began in 1943-44 and penicillin reached US pharmacies in March 1945."
   },
   "generic": true,
   "who_essential": true,

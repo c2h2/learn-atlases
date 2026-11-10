@@ -32,14 +32,14 @@
     "brand": "Teflaro"
   },
   "discovery": {
-    "year": null,
+    "year": 1997,
     "by": "Takeda Pharmaceutical",
-    "note": "A cephalosporin designed to bind the low-affinity PBP2a of methicillin-resistant Staphylococcus aureus."
+    "note": "A cephalosporin designed to bind the low-affinity PBP2a of methicillin-resistant Staphylococcus aureus. Year of first patent filing (priority December 1997, Takeda, US 6,417,175)."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": false,
   "who_status": "not-listed",
-  "rx_status": "prescription (hospital)",
+  "rx_status": "prescription (hospital); US generic approved (Apotex, 2021)",
   "tagline": "Cephalosporin active against MRSA through high affinity for PBP2a",
   "summary": "Ceftaroline fosamil is a prodrug cephalosporin that is active against methicillin-resistant Staphylococcus aureus as well as streptococci and common community Gram-negative pathogens. It is approved for community-acquired pneumonia and acute bacterial skin and skin-structure infections.",
   "mechanism": [
@@ -116,6 +116,10 @@
     {
       "title": "DailyMed: ceftaroline labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ceftaroline"
+    },
+    {
+      "title": "Google Patents: US6417175B1",
+      "url": "https://patents.google.com/patent/US6417175B1/en"
     }
   ],
   "stage": "written"

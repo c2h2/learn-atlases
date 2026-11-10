@@ -34,10 +34,10 @@
     "by": "Koen Andries and colleagues (Janssen/Tibotec)",
     "note": "Identified by whole-cell screening against Mycobacterium smegmatis; reported in Science in 2005."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": true,
   "who_status": "listed",
-  "rx_status": "prescription",
+  "rx_status": "prescription; WHO-prequalified generics (Lupin, Macleods) available",
   "tagline": "First new-mechanism TB drug in decades, backbone of all-oral drug-resistant TB regimens",
   "summary": "Bedaquiline is a diarylquinoline that inhibits mycobacterial ATP synthase. Approved in 2012 as the first new tuberculosis drug with a novel mechanism in about 40 years, it is now the backbone of WHO-recommended all-oral regimens such as BPaLM for rifampicin-resistant tuberculosis.",
   "mechanism": [
@@ -122,6 +122,10 @@
     {
       "title": "EMA: Sirturo EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/sirturo"
+    },
+    {
+      "title": "WHO Prequalification: Macleods bedaquiline prequalified",
+      "url": "https://extranet.who.int/prequal/news/macleods-bedaquiline-tablet-prequalified"
     }
   ],
   "stage": "written"

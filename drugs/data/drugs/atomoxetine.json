@@ -30,9 +30,9 @@
     "brand": "Strattera"
   },
   "discovery": {
-    "year": null,
+    "year": 1974,
     "by": "Eli Lilly",
-    "note": "Originally developed as tomoxetine, an antidepressant candidate, in the late 1970s and 1980s; renamed atomoxetine to avoid confusion with tamoxifen."
+    "note": "Originally developed as tomoxetine, an antidepressant candidate, in the late 1970s and 1980s; renamed atomoxetine to avoid confusion with tamoxifen. Year of first patent filing on Lilly's aryloxyphenylpropylamine series that includes tomoxetine (priority January 1974, US 4,314,081)."
   },
   "generic": true,
   "who_essential": false,
@@ -115,6 +115,10 @@
     {
       "title": "DailyMed: atomoxetine labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=atomoxetine"
+    },
+    {
+      "title": "Google Patents: US4314081A",
+      "url": "https://patents.google.com/patent/US4314081A/en"
     }
   ],
   "stage": "written"

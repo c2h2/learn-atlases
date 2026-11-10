@@ -28,9 +28,9 @@
     "brand": "Cimzia"
   },
   "discovery": {
-    "year": null,
+    "year": 2000,
     "by": "Celltech",
-    "note": "Humanised Fab' fragment against TNF-α conjugated to a 40 kDa polyethylene glycol to prolong half-life."
+    "note": "Humanised Fab' fragment against TNF-α conjugated to a 40 kDa polyethylene glycol to prolong half-life. Year of first patent filing (priority June 2000, Celltech, WO 01/94585)."
   },
   "generic": false,
   "who_essential": true,
@@ -125,6 +125,10 @@
     {
       "title": "EMA – Cimzia EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/cimzia"
+    },
+    {
+      "title": "Google Patents: WO2001094585A1",
+      "url": "https://patents.google.com/patent/WO2001094585A1/en"
     }
   ],
   "stage": "written"

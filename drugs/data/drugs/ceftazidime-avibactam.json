@@ -31,14 +31,14 @@
     "brand": "Avycaz"
   },
   "discovery": {
-    "year": null,
+    "year": 2000,
     "by": "Hoechst Marion Roussel/Aventis; developed by Novexel",
-    "note": "Avibactam, a non-beta-lactam diazabicyclooctane inhibitor, originated in Aventis research and was developed by the spin-off Novexel, acquired by AstraZeneca in 2010."
+    "note": "Avibactam, a non-beta-lactam diazabicyclooctane inhibitor, originated in Aventis research and was developed by the spin-off Novexel, acquired by AstraZeneca in 2010. Year of first patent filing on avibactam (priority August 2000, Aventis, US 7,112,592)."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": true,
   "who_status": "listed",
-  "rx_status": "prescription (hospital)",
+  "rx_status": "prescription (hospital); generics marketed in India since 2023",
   "tagline": "Reserve antibiotic restoring ceftazidime against KPC and OXA-48 carbapenemase producers",
   "summary": "Ceftazidime/avibactam combines ceftazidime with avibactam, the first diazabicyclooctane beta-lactamase inhibitor. It is active against many carbapenem-resistant Enterobacterales producing KPC or OXA-48 enzymes and against some multidrug-resistant Pseudomonas, but not against metallo-beta-lactamase producers.",
   "mechanism": [
@@ -125,6 +125,10 @@
     {
       "title": "EMA: Zavicefta EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/zavicefta"
+    },
+    {
+      "title": "Google Patents: US7112592B2",
+      "url": "https://patents.google.com/patent/US7112592B2/en"
     }
   ],
   "stage": "written"

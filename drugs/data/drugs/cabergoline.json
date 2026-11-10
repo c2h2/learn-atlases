@@ -30,9 +30,9 @@
     "brand": "Dostinex"
   },
   "discovery": {
-    "year": null,
+    "year": 1980,
     "by": "Farmitalia Carlo Erba, Milan",
-    "note": "An ergoline derivative with a very long half-life."
+    "note": "An ergoline derivative with a very long half-life. Year of first patent application (1980), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

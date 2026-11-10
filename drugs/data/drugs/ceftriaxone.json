@@ -29,9 +29,9 @@
     "brand": "Rocephin"
   },
   "discovery": {
-    "year": null,
+    "year": 1978,
     "by": "Hoffmann-La Roche",
-    "note": "Developed in the late 1970s; an aminothiazolyl methoxyimino side chain and a triazine-thiol group give broad Gram-negative activity and a long half-life."
+    "note": "Developed in the late 1970s; an aminothiazolyl methoxyimino side chain and a triazine-thiol group give broad Gram-negative activity and a long half-life. Year of first patent (1978), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

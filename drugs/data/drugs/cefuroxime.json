@@ -28,9 +28,9 @@
   "owner": "generic (many)",
   "first_approval": null,
   "discovery": {
-    "year": null,
+    "year": 1971,
     "by": "Glaxo",
-    "note": "Developed in the 1970s; its methoxyimino side chain confers stability to many beta-lactamases."
+    "note": "Developed in the 1970s; its methoxyimino side chain confers stability to many beta-lactamases. Year of first patent (1971), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

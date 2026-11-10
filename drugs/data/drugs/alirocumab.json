@@ -29,9 +29,9 @@
     "brand": "Praluent"
   },
   "discovery": {
-    "year": null,
+    "year": 2008,
     "by": "Regeneron (VelocImmune platform)",
-    "note": "A fully human IgG1 antibody co-developed with Sanofi."
+    "note": "A fully human IgG1 antibody co-developed with Sanofi. Year of first patent filing (priority December 2008, Regeneron, US 8,062,640)."
   },
   "generic": false,
   "who_essential": false,
@@ -118,6 +118,10 @@
     {
       "title": "Schwartz GG et al. Alirocumab and cardiovascular outcomes after acute coronary syndrome (ODYSSEY OUTCOMES). N Engl J Med 2018",
       "url": "https://pubmed.ncbi.nlm.nih.gov/30403574/"
+    },
+    {
+      "title": "Google Patents: US8062640B2",
+      "url": "https://patents.google.com/patent/US8062640B2/en"
     }
   ],
   "stage": "written"

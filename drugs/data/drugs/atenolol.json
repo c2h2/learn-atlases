@@ -30,9 +30,9 @@
     "brand": "Tenormin"
   },
   "discovery": {
-    "year": null,
+    "year": 1969,
     "by": "ICI Pharmaceuticals",
-    "note": "A hydrophilic β1-selective blocker developed as a successor to propranolol."
+    "note": "A hydrophilic β1-selective blocker developed as a successor to propranolol. Year of first patent (1969), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

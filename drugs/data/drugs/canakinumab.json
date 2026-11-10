@@ -28,9 +28,9 @@
     "brand": "Ilaris"
   },
   "discovery": {
-    "year": null,
+    "year": 2000,
     "by": "Novartis",
-    "note": "Fully human IgG1κ antibody against IL-1β, generated in transgenic mice."
+    "note": "Fully human IgG1κ antibody against IL-1β, generated in transgenic mice. Year of first patent filing (priority August 2000, Novartis, US 7,446,175)."
   },
   "generic": false,
   "who_essential": false,
@@ -126,6 +126,10 @@
     {
       "title": "EMA – Ilaris EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ilaris"
+    },
+    {
+      "title": "Google Patents: US7446175B2",
+      "url": "https://patents.google.com/patent/US7446175B2/en"
     }
   ],
   "stage": "written"

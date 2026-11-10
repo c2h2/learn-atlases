@@ -31,9 +31,9 @@
     "brand": "Norvasc"
   },
   "discovery": {
-    "year": null,
+    "year": 1982,
     "by": "Pfizer (Sandwich, UK)",
-    "note": "Designed as a long-acting dihydropyridine with gradual onset."
+    "note": "Designed as a long-acting dihydropyridine with gradual onset. Year of first patent (1982), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

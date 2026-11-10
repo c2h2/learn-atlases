@@ -32,9 +32,9 @@
     "brand": "Reyataz"
   },
   "discovery": {
-    "year": null,
+    "year": 1996,
     "by": "Ciba-Geigy (Novartis), licensed to Bristol-Myers Squibb",
-    "note": "Azapeptide protease inhibitor with a favourable lipid profile and once-daily dosing."
+    "note": "Azapeptide protease inhibitor with a favourable lipid profile and once-daily dosing. Year of first patent filing (priority April 1996, Ciba-Geigy/Novartis, US 5,849,911)."
   },
   "generic": true,
   "who_essential": true,
@@ -117,6 +117,10 @@
     {
       "title": "EMA EPAR: Reyataz",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/reyataz"
+    },
+    {
+      "title": "Google Patents: US5849911A",
+      "url": "https://patents.google.com/patent/US5849911A/en"
     }
   ],
   "stage": "written"

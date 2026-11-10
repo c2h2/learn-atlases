@@ -26,9 +26,9 @@
   "owner": "generic (many)",
   "first_approval": null,
   "discovery": {
-    "year": null,
+    "year": 1978,
     "by": "Glaxo",
-    "note": "Developed around 1980; a carboxypropyl-oxyimino side chain and pyridinium group give strong activity against Pseudomonas aeruginosa."
+    "note": "Developed around 1980; a carboxypropyl-oxyimino side chain and pyridinium group give strong activity against Pseudomonas aeruginosa. Year of first patent (1978), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

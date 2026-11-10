@@ -28,9 +28,9 @@
     "brand": "Eliquis"
   },
   "discovery": {
-    "year": null,
+    "year": 2001,
     "by": "Bristol-Myers Squibb",
-    "note": "Developed from the earlier factor Xa inhibitor razaxaban; co-developed with Pfizer from 2007."
+    "note": "Developed from the earlier factor Xa inhibitor razaxaban; co-developed with Pfizer from 2007. Year of first patent filing (priority September 2001, BMS, US 6,967,208); the discovery paper appeared in J Med Chem in 2007."
   },
   "generic": true,
   "who_essential": true,
@@ -129,6 +129,10 @@
     {
       "title": "Granger CB et al. Apixaban versus warfarin in patients with atrial fibrillation (ARISTOTLE). N Engl J Med 2011",
       "url": "https://pubmed.ncbi.nlm.nih.gov/21870978/"
+    },
+    {
+      "title": "Google Patents: US6967208B2",
+      "url": "https://patents.google.com/patent/US6967208B2/en"
     }
   ],
   "stage": "written"

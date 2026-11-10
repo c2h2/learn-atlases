@@ -30,9 +30,9 @@
     "brand": "Cancidas"
   },
   "discovery": {
-    "year": null,
+    "year": 1993,
     "by": "Merck Research Laboratories",
-    "note": "Semi-synthetic derivative of pneumocandin B0, a lipopeptide produced by the fungus Glarea lozoyensis."
+    "note": "Semi-synthetic derivative of pneumocandin B0, a lipopeptide produced by the fungus Glarea lozoyensis. Year of first patent filing (priority March 1993, Merck, US 5,378,804)."
   },
   "generic": true,
   "who_essential": true,
@@ -120,6 +120,10 @@
     {
       "title": "EMA EPAR: Cancidas",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/cancidas"
+    },
+    {
+      "title": "Google Patents: US5378804A",
+      "url": "https://patents.google.com/patent/US5378804A/en"
     }
   ],
   "stage": "written"

@@ -31,9 +31,9 @@
     "brand": "Tecentriq"
   },
   "discovery": {
-    "year": null,
+    "year": 2008,
     "by": "Genentech",
-    "note": "Humanised IgG1 anti-PD-L1 antibody with an engineered Fc (N297A) that abolishes effector function."
+    "note": "Humanised IgG1 anti-PD-L1 antibody with an engineered Fc (N297A) that abolishes effector function. Year of first patent filing (priority December 2008, Genentech, US 8,217,149)."
   },
   "generic": false,
   "who_essential": true,
@@ -141,6 +141,10 @@
     {
       "title": "EMA – Tecentriq EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tecentriq"
+    },
+    {
+      "title": "Google Patents: US8217149B2",
+      "url": "https://patents.google.com/patent/US8217149B2/en"
     }
   ],
   "stage": "written"

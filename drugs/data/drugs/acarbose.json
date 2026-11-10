@@ -27,14 +27,14 @@
   "owner": "Bayer (Glucobay); generic (many)",
   "first_approval": {
     "year": 1990,
-    "agency": null,
+    "agency": "BGA (Bundesgesundheitsamt)",
     "country": "Germany",
     "brand": "Glucobay"
   },
   "discovery": {
-    "year": null,
+    "year": 1977,
     "by": "Bayer AG",
-    "note": "A pseudo-tetrasaccharide produced by fermentation of Actinoplanes bacteria, found in Bayer's screen for carbohydrate-digestion inhibitors."
+    "note": "A pseudo-tetrasaccharide produced by fermentation of Actinoplanes bacteria, found in Bayer's screen for carbohydrate-digestion inhibitors. Year of first published description of acarbose (Schmidt et al., Naturwissenschaften 1977); Bayer's first patent on the inhibitor class dates from 1970."
   },
   "generic": true,
   "who_essential": false,

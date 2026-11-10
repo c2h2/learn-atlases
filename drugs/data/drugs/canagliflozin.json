@@ -32,9 +32,9 @@
     "brand": "Invokana"
   },
   "discovery": {
-    "year": null,
+    "year": 2003,
     "by": "Mitsubishi Tanabe Pharma",
-    "note": "A C-glucoside thiophene SGLT2 inhibitor."
+    "note": "A C-glucoside thiophene SGLT2 inhibitor. Year of first patent filing (priority August 2003, Tanabe, US 7,943,788)."
   },
   "generic": false,
   "who_essential": true,
@@ -127,6 +127,10 @@
     {
       "title": "Perkovic V et al. CREDENCE (NEJM 2019)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1811744"
+    },
+    {
+      "title": "Google Patents: US7943788B2",
+      "url": "https://patents.google.com/patent/US7943788B2/en"
     }
   ],
   "stage": "written"

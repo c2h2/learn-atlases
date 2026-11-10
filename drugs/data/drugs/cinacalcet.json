@@ -30,9 +30,9 @@
     "brand": "Sensipar"
   },
   "discovery": {
-    "year": null,
+    "year": 1994,
     "by": "NPS Pharmaceuticals",
-    "note": "Developed after the cloning of the calcium-sensing receptor in 1993."
+    "note": "Developed after the cloning of the calcium-sensing receptor in 1993. Year of first patent filing (priority October 1994, NPS Pharmaceuticals, US 6,211,244)."
   },
   "generic": true,
   "who_essential": false,
@@ -124,6 +124,10 @@
     {
       "title": "EVOLVE Trial Investigators (NEJM 2012)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1205624"
+    },
+    {
+      "title": "Google Patents: US6211244B1",
+      "url": "https://patents.google.com/patent/US6211244B1/en"
     }
   ],
   "stage": "written"

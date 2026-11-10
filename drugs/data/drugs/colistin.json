@@ -29,11 +29,16 @@
   "origin": "natural",
   "originator": "Yasuo Koyama and colleagues (Japan)",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1959,
+    "agency": null,
+    "country": null,
+    "brand": null
+  },
   "discovery": {
     "year": 1947,
     "by": "Yasuo Koyama and colleagues",
-    "note": "Isolated in Japan from Paenibacillus (then Bacillus) polymyxa var. colistinus; reported in 1950."
+    "note": "Isolated in Japan from Paenibacillus (then Bacillus) polymyxa var. colistinus; reported in 1950. Colistin and colistimethate became available for clinical use in 1959."
   },
   "generic": true,
   "who_essential": true,

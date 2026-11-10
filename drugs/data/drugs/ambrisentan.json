@@ -30,9 +30,9 @@
     "brand": "Letairis"
   },
   "discovery": {
-    "year": null,
+    "year": 1994,
     "by": "BASF/Knoll",
-    "note": "A propanoic acid ETA-selective antagonist later licensed to Myogen, which Gilead acquired in 2006."
+    "note": "A propanoic acid ETA-selective antagonist later licensed to Myogen, which Gilead acquired in 2006. Year of first patent filing (priority October 1994, BASF, US 5,932,730)."
   },
   "generic": true,
   "who_essential": false,
@@ -121,6 +121,10 @@
     {
       "title": "DailyMed – ambrisentan labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ambrisentan"
+    },
+    {
+      "title": "Google Patents: US5932730A",
+      "url": "https://patents.google.com/patent/US5932730A/en"
     }
   ],
   "stage": "written"

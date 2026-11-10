@@ -22,11 +22,16 @@
   "origin": "semi-synthetic",
   "originator": "Bristol-Myers Squibb",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1993,
+    "agency": "Läkemedelsverket (MPA)",
+    "country": "Sweden",
+    "brand": "Maxipime"
+  },
   "discovery": {
-    "year": null,
+    "year": 1982,
     "by": "Bristol-Myers Squibb (with Bristol-Banyu)",
-    "note": "A zwitterionic cephalosporin whose N-methylpyrrolidinium group speeds penetration of Gram-negative outer membranes."
+    "note": "A zwitterionic cephalosporin whose N-methylpyrrolidinium group speeds penetration of Gram-negative outer membranes. Year of first patent (1982), per Wikipedia."
   },
   "generic": true,
   "who_essential": false,

@@ -39,7 +39,7 @@
   "owner": "generic (many); Indivior (Suboxone, Sublocade)",
   "first_approval": {
     "year": 1978,
-    "agency": null,
+    "agency": "UK Licensing Authority (DHSS)",
     "country": "United Kingdom",
     "brand": "Temgesic"
   },
@@ -152,6 +152,10 @@
     {
       "title": "SAMHSA: Buprenorphine",
       "url": "https://www.samhsa.gov/substance-use/treatment/options/buprenorphine"
+    },
+    {
+      "title": "Belfast Gazette 1978: product licences granted under the Medicines Act 1968",
+      "url": "https://www.thegazette.co.uk/Belfast/issue/3531/page/259/data.pdf"
     }
   ],
   "stage": "written"

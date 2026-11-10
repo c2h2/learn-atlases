@@ -32,9 +32,9 @@
     "brand": "Ziagen"
   },
   "discovery": {
-    "year": null,
+    "year": 1988,
     "by": "Glaxo Wellcome, from carbovir work by Robert Vince (University of Minnesota)",
-    "note": "Prodrug-like analogue of carbovir with better oral absorption and brain penetration."
+    "note": "Prodrug-like analogue of carbovir with better oral absorption and brain penetration. Year of first patent (1988), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

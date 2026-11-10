@@ -30,9 +30,9 @@
     "brand": "Olumiant"
   },
   "discovery": {
-    "year": null,
+    "year": 2008,
     "by": "Incyte",
-    "note": "A selective JAK1/JAK2 inhibitor developed from the same programme that produced ruxolitinib."
+    "note": "A selective JAK1/JAK2 inhibitor developed from the same programme that produced ruxolitinib. Year of first patent filing (priority March 2008, Incyte, US 8,158,616)."
   },
   "generic": false,
   "who_essential": false,
@@ -103,7 +103,10 @@
     ],
     "boxed_warning": "Serious infections, higher all-cause mortality, malignancies including lymphoma and lung cancer, major adverse cardiovascular events and thrombosis, based largely on the ORAL Surveillance trial of tofacitinib in older RA patients with cardiovascular risk factors (class warning for JAK inhibitors)."
   },
-  "facts": [],
+  "facts": [
+    "In May 2022 it became the first immunomodulatory treatment for COVID-19 to receive full FDA approval, for hospitalised adults needing oxygen or ventilation.",
+    "In June 2022 the FDA approved it for severe alopecia areata."
+  ],
   "related": [
     "tofacitinib",
     "upadacitinib",
@@ -124,6 +127,10 @@
     {
       "title": "EMA EPAR: Olumiant",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/olumiant"
+    },
+    {
+      "title": "Google Patents: US8158616B2",
+      "url": "https://patents.google.com/patent/US8158616B2/en"
     }
   ],
   "stage": "written"

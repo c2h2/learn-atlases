@@ -31,9 +31,9 @@
     "brand": "Otezla"
   },
   "discovery": {
-    "year": null,
+    "year": 2002,
     "by": "Celgene",
-    "note": "Emerged from Celgene's programme of thalidomide-derived small molecules that inhibit TNF-alpha production through PDE4."
+    "note": "Emerged from Celgene's programme of thalidomide-derived small molecules that inhibit TNF-alpha production through PDE4. Year of first patent filing on the single enantiomer (priority March 2002, Celgene, US 6,962,940)."
   },
   "generic": false,
   "who_essential": false,
@@ -104,7 +104,11 @@
     ],
     "boxed_warning": null
   },
-  "facts": [],
+  "facts": [
+    "Diarrhoea occurs in about a quarter of people taking apremilast, usually starting in the first weeks of treatment.",
+    "In 2019 the FDA approved it for oral ulcers of Behçet's disease.",
+    "Its April 2024 approval for children aged 6 and older made it the first oral treatment approved in the US for paediatric plaque psoriasis."
+  ],
   "related": [
     "deucravacitinib",
     "roflumilast",
@@ -125,6 +129,10 @@
     {
       "title": "EMA EPAR: Otezla",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/otezla"
+    },
+    {
+      "title": "Google Patents: US6962940B2",
+      "url": "https://patents.google.com/patent/US6962940B2/en"
     }
   ],
   "stage": "written"

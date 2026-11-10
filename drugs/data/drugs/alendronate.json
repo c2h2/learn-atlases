@@ -31,9 +31,9 @@
     "brand": "Fosamax"
   },
   "discovery": {
-    "year": null,
+    "year": 1978,
     "by": "Istituto Gentili, Pisa",
-    "note": "An aminobisphosphonate licensed to Merck, which ran the pivotal osteoporosis trials."
+    "note": "An aminobisphosphonate licensed to Merck, which ran the pivotal osteoporosis trials. Year first described (1978), per Wikipedia."
   },
   "generic": true,
   "who_essential": false,

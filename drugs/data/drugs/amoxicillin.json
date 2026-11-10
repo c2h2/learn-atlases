@@ -33,9 +33,9 @@
     "brand": "Amoxil"
   },
   "discovery": {
-    "year": null,
+    "year": 1958,
     "by": "Beecham Research Laboratories",
-    "note": "Developed as an orally better-absorbed analogue of ampicillin by adding a para-hydroxyl group to the side chain."
+    "note": "Developed as an orally better-absorbed analogue of ampicillin by adding a para-hydroxyl group to the side chain. Year of discovery (1958), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

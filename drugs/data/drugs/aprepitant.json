@@ -34,9 +34,9 @@
     "brand": "Emend"
   },
   "discovery": {
-    "year": null,
+    "year": 1992,
     "by": "Merck Research Laboratories (UK and US)",
-    "note": "A morpholine NK1 antagonist that crosses the blood–brain barrier, first explored as an antidepressant."
+    "note": "A morpholine NK1 antagonist that crosses the blood–brain barrier, first explored as an antidepressant. Year of first patent filing on the morpholine NK1 antagonist series (priority June 1992, Merck, US 5,719,147)."
   },
   "generic": true,
   "who_essential": true,
@@ -126,6 +126,10 @@
     {
       "title": "DailyMed – aprepitant labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=aprepitant"
+    },
+    {
+      "title": "Google Patents: US5719147A",
+      "url": "https://patents.google.com/patent/US5719147A/en"
     }
   ],
   "stage": "written"

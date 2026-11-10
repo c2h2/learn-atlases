@@ -104,7 +104,11 @@
     ],
     "boxed_warning": "Chronic immunosuppression with azathioprine increases the risk of malignancy, including post-transplant lymphoma and hepatosplenic T-cell lymphoma in inflammatory bowel disease."
   },
-  "facts": [],
+  "facts": [
+    "Gertrude Elion and George Hitchings synthesised it in 1957 (as BW 57-322) as a masked form of 6-mercaptopurine.",
+    "The International Agency for Research on Cancer lists it as a Group 1 human carcinogen.",
+    "People with low thiopurine S-methyltransferase (TPMT) activity are at much higher risk of bone-marrow suppression."
+  ],
   "related": [
     "ciclosporin",
     "mycophenolate-mofetil",

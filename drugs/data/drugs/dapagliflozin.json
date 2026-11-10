@@ -32,9 +32,9 @@
     "brand": "Forxiga"
   },
   "discovery": {
-    "year": null,
+    "year": 1999,
     "by": "Bristol-Myers Squibb",
-    "note": "A C-aryl glucoside designed for metabolic stability, following the natural product phlorizin."
+    "note": "A C-aryl glucoside designed for metabolic stability, following the natural product phlorizin. Year of first patent filing (priority October 1999, BMS, US 6,515,117)."
   },
   "generic": true,
   "who_essential": true,
@@ -136,6 +136,10 @@
     {
       "title": "McMurray JJV et al. DAPA-HF (NEJM 2019)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1911303"
+    },
+    {
+      "title": "Google Patents: US6515117B2",
+      "url": "https://patents.google.com/patent/US6515117B2/en"
     }
   ],
   "stage": "written"

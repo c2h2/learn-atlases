@@ -33,9 +33,9 @@
     "brand": "Vocabria (with Cabenuva co-pack)"
   },
   "discovery": {
-    "year": null,
+    "year": 2005,
     "by": "Shionogi–ViiV Healthcare",
-    "note": "Dolutegravir analogue whose low aqueous solubility and long half-life suit a nanosuspension depot injection."
+    "note": "Dolutegravir analogue whose low aqueous solubility and long half-life suit a nanosuspension depot injection. Year of first patent filing (priority April 2005, Shionogi, US 8,129,385)."
   },
   "generic": false,
   "who_essential": false,
@@ -125,6 +125,10 @@
     {
       "title": "Landovitz RJ et al. Cabotegravir for HIV prevention in cisgender men and transgender women (HPTN 083). NEJM 2021",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2101016"
+    },
+    {
+      "title": "Google Patents: US8129385B2",
+      "url": "https://patents.google.com/patent/US8129385B2/en"
     }
   ],
   "stage": "written"

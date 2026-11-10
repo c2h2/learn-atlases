@@ -22,11 +22,16 @@
   "origin": "synthetic",
   "originator": "Wellcome Foundation / Glaxo Wellcome (atovaquone); Imperial Chemical Industries (proguanil, 1945)",
   "owner": "GSK (Malarone); generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1997,
+    "agency": null,
+    "country": null,
+    "brand": "Malarone"
+  },
   "discovery": {
     "year": null,
     "by": "Wellcome Research Laboratories (atovaquone); Frank Curd, David Davey and Francis Rose at ICI (proguanil)",
-    "note": "Atovaquone alone led to rapid resistance; proguanil was found to act synergistically with it."
+    "note": "Atovaquone alone led to rapid resistance; proguanil was found to act synergistically with it. Malarone was launched in 1997 in the UK and Switzerland, and authorised in France on 28 August 1997; the US approval followed in July 2000."
   },
   "generic": true,
   "who_essential": false,
@@ -110,6 +115,10 @@
     {
       "title": "CDC Yellow Book: Malaria",
       "url": "https://www.cdc.gov/yellow-book/hcp/travel-associated-infections-diseases/malaria.html"
+    },
+    {
+      "title": "ANSM: Malarone authorisation",
+      "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61638010/extrait"
     }
   ],
   "stage": "written"

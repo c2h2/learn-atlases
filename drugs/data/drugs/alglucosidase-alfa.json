@@ -31,9 +31,9 @@
     "brand": "Myozyme"
   },
   "discovery": {
-    "year": null,
+    "year": 1996,
     "by": "Yuan-Tsong Chen and colleagues, Duke University",
-    "note": "Recombinant acid alpha-glucosidase produced in CHO cells showed glycogen clearance in animal models of Pompe disease."
+    "note": "Recombinant acid alpha-glucosidase produced in CHO cells showed glycogen clearance in animal models of Pompe disease. Year the CHO-cell-produced enzyme was first described (Van Hove et al., PNAS 1996)."
   },
   "generic": false,
   "who_essential": false,
@@ -98,7 +98,11 @@
     ],
     "boxed_warning": "Life-threatening anaphylaxis, hypersensitivity and immune-mediated reactions; risk of acute cardiorespiratory failure in patients with compromised cardiac or respiratory function."
   },
-  "facts": [],
+  "facts": [
+    "It was the first drug available to treat Pompe disease.",
+    "The FDA approved it as Myozyme in April 2006 and, from a larger-scale manufacturing process, as Lumizyme in May 2010.",
+    "The 2010 film Extraordinary Measures is based on the effort to develop an enzyme therapy for Pompe disease."
+  ],
   "related": [
     "imiglucerase",
     "nusinersen"
@@ -115,6 +119,10 @@
     {
       "title": "EMA EPAR: Myozyme",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/myozyme"
+    },
+    {
+      "title": "Van Hove et al. 1996, PNAS",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8552676/"
     }
   ],
   "stage": "written"

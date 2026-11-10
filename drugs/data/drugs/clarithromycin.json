@@ -33,9 +33,9 @@
     "brand": "Biaxin"
   },
   "discovery": {
-    "year": null,
+    "year": 1980,
     "by": "Taisho Pharmaceutical",
-    "note": "Methylation of the 6-hydroxyl group of erythromycin prevents acid-catalysed degradation, improving oral absorption and tolerability."
+    "note": "Methylation of the 6-hydroxyl group of erythromycin prevents acid-catalysed degradation, improving oral absorption and tolerability. Year developed and first patented by Taisho (1980), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

@@ -36,9 +36,9 @@
     "brand": "Mucomyst"
   },
   "discovery": {
-    "year": null,
+    "year": 1960,
     "by": "Mead Johnson researchers",
-    "note": "N-acetyl derivative of the amino acid cysteine introduced as an inhaled mucolytic in the early 1960s."
+    "note": "N-acetyl derivative of the amino acid cysteine introduced as an inhaled mucolytic in the early 1960s. Year of first patent as a mucolytic (1960), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

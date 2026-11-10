@@ -33,9 +33,9 @@
     "brand": "Coreg"
   },
   "discovery": {
-    "year": null,
+    "year": 1978,
     "by": "Boehringer Mannheim",
-    "note": "A carbazole beta-blocker with vasodilating alpha-1 blockade; licensed to SmithKline Beecham in the US."
+    "note": "A carbazole beta-blocker with vasodilating alpha-1 blockade; licensed to SmithKline Beecham in the US. Year of first patent (1978), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

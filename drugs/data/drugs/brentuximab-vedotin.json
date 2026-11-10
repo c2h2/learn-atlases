@@ -30,9 +30,9 @@
     "brand": "Adcetris"
   },
   "discovery": {
-    "year": null,
+    "year": 2003,
     "by": "Seattle Genetics",
-    "note": "Chimeric anti-CD30 antibody cAC10 linked via a protease-cleavable linker to monomethyl auristatin E."
+    "note": "Chimeric anti-CD30 antibody cAC10 linked via a protease-cleavable linker to monomethyl auristatin E. Year first described (cAC10-vcMMAE; Francisco et al., Blood 2003)."
   },
   "generic": false,
   "who_essential": false,
@@ -85,7 +85,7 @@
     {
       "year": 2025,
       "title": "Large B-cell lymphoma",
-      "detail": "FDA approves it with lenalidomide and rituximab for relapsed large B-cell lymphoma (ECHELON-3)."
+      "detail": "FDA approves it with lenalidomide and rituximab for relapsed or refractory large B-cell lymphoma after two or more prior therapies in patients ineligible for transplant or CAR-T (ECHELON-3)."
     }
   ],
   "pk": {
@@ -139,6 +139,10 @@
     {
       "title": "EMA – Adcetris EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/adcetris"
+    },
+    {
+      "title": "Francisco et al. 2003, Blood",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12714494/"
     }
   ],
   "stage": "written"

@@ -32,9 +32,9 @@
     "brand": "Penbritin"
   },
   "discovery": {
-    "year": null,
+    "year": 1958,
     "by": "Beecham Research Laboratories",
-    "note": "Made by acylating 6-aminopenicillanic acid with a D-phenylglycine side chain."
+    "note": "Made by acylating 6-aminopenicillanic acid with a D-phenylglycine side chain. Year of discovery (1958), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

@@ -29,9 +29,9 @@
     "brand": "Keflex"
   },
   "discovery": {
-    "year": null,
+    "year": 1967,
     "by": "Eli Lilly and Company",
-    "note": "Derived from 7-aminocephalosporanic acid, itself obtained from cephalosporin C produced by Acremonium (Cephalosporium) fungi."
+    "note": "Derived from 7-aminocephalosporanic acid, itself obtained from cephalosporin C produced by Acremonium (Cephalosporium) fungi. Year developed (1967), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

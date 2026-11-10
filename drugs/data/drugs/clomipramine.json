@@ -35,9 +35,9 @@
     "brand": "Anafranil"
   },
   "discovery": {
-    "year": null,
+    "year": 1961,
     "by": "J. R. Geigy AG",
-    "note": "A 3-chloro analogue of imipramine with much stronger serotonin reuptake inhibition."
+    "note": "A 3-chloro analogue of imipramine with much stronger serotonin reuptake inhibition. Year first referenced in the literature (1961); patented in 1963, per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

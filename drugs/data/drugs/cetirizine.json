@@ -32,9 +32,9 @@
     "brand": "Zyrtec"
   },
   "discovery": {
-    "year": null,
+    "year": 1983,
     "by": "UCB",
-    "note": "The carboxylic-acid metabolite of the first-generation antihistamine hydroxyzine, with less penetration into the brain."
+    "note": "The carboxylic-acid metabolite of the first-generation antihistamine hydroxyzine, with less penetration into the brain. Year of first patent (1983), per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

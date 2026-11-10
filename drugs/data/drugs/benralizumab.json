@@ -29,9 +29,9 @@
     "brand": "Fasenra"
   },
   "discovery": {
-    "year": null,
+    "year": 2010,
     "by": "Kyowa Hakko Kirin and MedImmune",
-    "note": "Humanised afucosylated IgG1κ antibody against IL-5Rα made with BioWa's Potelligent technology, enhancing ADCC."
+    "note": "Humanised afucosylated IgG1κ antibody against IL-5Rα made with BioWa's Potelligent technology, enhancing ADCC. Year of the first published characterisation (as MEDI-563; Kolbeck et al., J Allergy Clin Immunol 2010)."
   },
   "generic": false,
   "who_essential": false,
@@ -117,6 +117,10 @@
     {
       "title": "EMA – Fasenra EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/fasenra"
+    },
+    {
+      "title": "Kolbeck et al. 2010, J Allergy Clin Immunol (Lund University record)",
+      "url": "https://www.lunduniversity.lu.se/lup/publication/12d88eab-b902-4832-9137-d85e3afdc814"
     }
   ],
   "stage": "written"

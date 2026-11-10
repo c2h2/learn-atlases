@@ -27,7 +27,12 @@
   "origin": "semi-synthetic",
   "originator": "Guilin Pharmaceutical Factory, China (Liu Xu and colleagues)",
   "owner": "generic (many); Guilin Pharmaceutical (Fosun Pharma) leading supplier; Amivas in the US",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1987,
+    "agency": "Ministry of Health of China",
+    "country": "China",
+    "brand": null
+  },
   "discovery": {
     "year": 1977,
     "by": "Liu Xu and colleagues, Guilin Pharmaceutical Factory",
@@ -130,6 +135,10 @@
     {
       "title": "Dondorp AM et al. Artesunate versus quinine in the treatment of severe falciparum malaria in African children (AQUAMAT). Lancet 2010",
       "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)61924-1/fulltext"
+    },
+    {
+      "title": "Fosun Pharma: artesunate history",
+      "url": "https://www.fosunpharma.com/en/content/details37_12614.html"
     }
   ],
   "stage": "written"

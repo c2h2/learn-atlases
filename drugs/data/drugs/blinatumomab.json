@@ -30,9 +30,9 @@
     "brand": "Blincyto"
   },
   "discovery": {
-    "year": null,
+    "year": 2000,
     "by": "Micromet (with Ludwig-Maximilians-Universität Munich researchers)",
-    "note": "Two single-chain variable fragments joined by a linker, one binding CD19 and one CD3ε; about 55 kDa, without an Fc region."
+    "note": "Two single-chain variable fragments joined by a linker, one binding CD19 and one CD3ε; about 55 kDa, without an Fc region. Year first described (bscCD19xCD3; Löffler et al., Blood 2000)."
   },
   "generic": false,
   "who_essential": true,
@@ -134,6 +134,10 @@
     {
       "title": "EMA – Blincyto EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/blincyto"
+    },
+    {
+      "title": "Löffler et al. 2000, Blood",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10706880/"
     }
   ],
   "stage": "written"

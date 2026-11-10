@@ -30,9 +30,9 @@
     "brand": "Xofluza"
   },
   "discovery": {
-    "year": null,
+    "year": 2015,
     "by": "Shionogi",
-    "note": "Discovered from Shionogi's research on metal-chelating inhibitors of the influenza PA endonuclease, building on earlier HIV integrase work."
+    "note": "Discovered from Shionogi's research on metal-chelating inhibitors of the influenza PA endonuclease, building on earlier HIV integrase work. Year of first patent filing (priority April 2015, Shionogi, WO 2016/175224)."
   },
   "generic": false,
   "who_essential": false,
@@ -123,6 +123,10 @@
     {
       "title": "Hayden FG et al. Baloxavir marboxil for uncomplicated influenza in adults and adolescents. NEJM 2018",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1716197"
+    },
+    {
+      "title": "Google Patents: WO2016175224A1",
+      "url": "https://patents.google.com/patent/WO2016175224A1/en"
     }
   ],
   "stage": "written"

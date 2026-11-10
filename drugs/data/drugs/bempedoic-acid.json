@@ -31,9 +31,9 @@
     "brand": "Nexletol"
   },
   "discovery": {
-    "year": null,
+    "year": 2003,
     "by": "Esperion Therapeutics",
-    "note": "Developed by the company founded by Roger Newton, a co-discoverer of atorvastatin."
+    "note": "Developed by the company founded by Roger Newton, a co-discoverer of atorvastatin. Year of first patent filing (priority January 2003, Esperion, US 7,335,799)."
   },
   "generic": false,
   "who_essential": false,
@@ -79,7 +79,7 @@
     {
       "year": 2024,
       "title": "Outcomes label",
-      "detail": "The FDA expands the label to cardiovascular risk reduction, including primary prevention in high-risk patients."
+      "detail": "The FDA expands the label to cardiovascular risk reduction in adults unable to take recommended statin therapy, including primary prevention in high-risk patients (CLEAR Outcomes)."
     }
   ],
   "pk": {
@@ -124,6 +124,10 @@
     {
       "title": "EMA EPAR – Nilemdo",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/nilemdo"
+    },
+    {
+      "title": "Google Patents: US7335799B2",
+      "url": "https://patents.google.com/patent/US7335799B2/en"
     }
   ],
   "stage": "written"

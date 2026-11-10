@@ -31,9 +31,9 @@
     "brand": "Pradaxa"
   },
   "discovery": {
-    "year": null,
+    "year": 1997,
     "by": "Boehringer Ingelheim",
-    "note": "Dabigatran was designed as a direct thrombin inhibitor; the etexilate double prodrug was needed for oral absorption."
+    "note": "Dabigatran was designed as a direct thrombin inhibitor; the etexilate double prodrug was needed for oral absorption. Year of first patent filing (German priority February 1997, Boehringer Ingelheim, US 6,087,380)."
   },
   "generic": true,
   "who_essential": true,
@@ -131,6 +131,10 @@
     {
       "title": "Connolly SJ et al. Dabigatran versus warfarin in patients with atrial fibrillation (RE-LY). N Engl J Med 2009",
       "url": "https://pubmed.ncbi.nlm.nih.gov/19717844/"
+    },
+    {
+      "title": "Google Patents: US6087380A",
+      "url": "https://patents.google.com/patent/US6087380A/en"
     }
   ],
   "stage": "written"

@@ -27,14 +27,14 @@
   "owner": "generic (many)",
   "first_approval": {
     "year": 1981,
-    "agency": null,
+    "agency": "UK Licensing Authority",
     "country": "United Kingdom",
     "brand": "Augmentin"
   },
   "discovery": {
-    "year": null,
+    "year": 1975,
     "by": "Beecham Research Laboratories",
-    "note": "Clavulanic acid was isolated from Streptomyces clavuligerus in the 1970s and found to be a potent beta-lactamase inhibitor."
+    "note": "Clavulanic acid was isolated from Streptomyces clavuligerus in the 1970s and found to be a potent beta-lactamase inhibitor. Year of the first patent application on clavulanic acid (April 1975); the amoxicillin combination was patented in 1977."
   },
   "generic": true,
   "who_essential": true,

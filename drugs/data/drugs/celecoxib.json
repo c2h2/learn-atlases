@@ -30,9 +30,9 @@
     "brand": "Celebrex"
   },
   "discovery": {
-    "year": null,
+    "year": 1993,
     "by": "John Talley and colleagues, G. D. Searle (Monsanto)",
-    "note": "A diarylheterocycle sulfonamide designed after the discovery of the inducible COX-2 isoform in the early 1990s."
+    "note": "A diarylheterocycle sulfonamide designed after the discovery of the inducible COX-2 isoform in the early 1990s. Year of first patent filing (priority November 1993, Searle, US 5,466,823)."
   },
   "generic": true,
   "who_essential": false,
@@ -138,6 +138,10 @@
     {
       "title": "NEJM: PRECISION trial (2016)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1611593"
+    },
+    {
+      "title": "Google Patents: US5466823A",
+      "url": "https://patents.google.com/patent/US5466823A/en"
     }
   ],
   "stage": "written"

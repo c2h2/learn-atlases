@@ -29,9 +29,9 @@
     "brand": "Saphnelo"
   },
   "discovery": {
-    "year": null,
+    "year": 2004,
     "by": "Medarex and MedImmune",
-    "note": "Fully human IgG1κ antibody against subunit 1 of the type I interferon receptor."
+    "note": "Fully human IgG1κ antibody against subunit 1 of the type I interferon receptor. Year of first patent filing (priority June 2004, Medarex, US 7,662,381)."
   },
   "generic": false,
   "who_essential": false,
@@ -118,6 +118,10 @@
     {
       "title": "EMA – Saphnelo EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/saphnelo"
+    },
+    {
+      "title": "Google Patents: US7662381B2",
+      "url": "https://patents.google.com/patent/US7662381B2/en"
     }
   ],
   "stage": "written"

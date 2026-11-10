@@ -30,9 +30,9 @@
     "brand": "Benlysta"
   },
   "discovery": {
-    "year": null,
+    "year": 2003,
     "by": "Human Genome Sciences and Cambridge Antibody Technology",
-    "note": "Fully human IgG1λ antibody against soluble B-lymphocyte stimulator (BLyS/BAFF), isolated by phage display."
+    "note": "Fully human IgG1λ antibody against soluble B-lymphocyte stimulator (BLyS/BAFF), isolated by phage display. Year of the first published characterisation of the antibody (as LymphoStat-B; Baker et al., Arthritis Rheum 2003)."
   },
   "generic": false,
   "who_essential": false,
@@ -133,6 +133,10 @@
     {
       "title": "EMA – Benlysta EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/benlysta"
+    },
+    {
+      "title": "Baker et al. 2003, Arthritis Rheum",
+      "url": "https://doi.org/10.1002/art.11299"
     }
   ],
   "stage": "written"
