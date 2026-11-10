@@ -1,36 +1,115 @@
 {
   "slug": "eteplirsen",
   "name": "Eteplirsen",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AVI-4658"
+  ],
+  "brands": [
+    "Exondys 51"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Antisense oligonucleotide (phosphorodiamidate morpholino, exon 51 skipping)",
+  "modality": "oligonucleotide",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion once weekly",
+  "targets": [
+    "DMD (exon 51 pre-mRNA)"
+  ],
+  "origin": "synthetic",
+  "originator": "AVI BioPharma (now Sarepta) with University of Western Australia (Steve Wilton, Sue Fletcher)",
+  "owner": "Sarepta Therapeutics",
+  "first_approval": {
+    "year": 2016,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Exondys 51"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Steve Wilton and Sue Fletcher, University of Western Australia",
+    "note": "Designed antisense oligomers that make the splicing machinery skip exon 51, restoring the reading frame for some DMD deletions."
+  },
+  "generic": false,
+  "who_essential": false,
+  "rx_status": "prescription",
+  "tagline": "Controversial exon-skipping antisense drug for Duchenne muscular dystrophy",
+  "summary": "Eteplirsen is a phosphorodiamidate morpholino antisense oligonucleotide that causes skipping of exon 51 in dystrophin pre-mRNA. In about 13% of Duchenne muscular dystrophy patients with amenable deletions, this restores a shortened but partly functional dystrophin. Its 2016 accelerated approval, based on small dystrophin increases, was among the most contested FDA decisions; the EMA declined to approve it.",
+  "mechanism": [
+    "Duchenne muscular dystrophy is caused by mutations in the DMD gene that disrupt the reading frame, so no functional dystrophin is made and muscle fibres degenerate.",
+    "Eteplirsen binds exon 51 in the pre-mRNA and hides it from the spliceosome. For deletions such as exons 48–50 or 52, skipping exon 51 restores the reading frame, producing an internally truncated dystrophin similar to that in milder Becker muscular dystrophy."
+  ],
+  "uses": [
+    "Duchenne muscular dystrophy with a confirmed DMD mutation amenable to exon 51 skipping (US accelerated approval)"
+  ],
+  "history": [
+    {
+      "year": 2011,
+      "title": "Phase 2 start",
+      "detail": "A small US trial in 12 boys begins, later extended open-label."
+    },
+    {
+      "year": 2016,
+      "title": "Advisory committee",
+      "detail": "An FDA advisory panel votes against approval amid emotional patient testimony."
+    },
+    {
+      "year": 2016,
+      "title": "Accelerated approval",
+      "detail": "FDA's Janet Woodcock overrules review staff to grant accelerated approval based on dystrophin production."
+    },
+    {
+      "year": 2018,
+      "title": "EMA refusal",
+      "detail": "The EMA's CHMP gives a negative opinion, confirmed on re-examination; Sarepta withdraws the application."
+    },
+    {
+      "year": 2019,
+      "title": "Follow-on drugs",
+      "detail": "Sarepta's golodirsen (exon 53) receives accelerated approval, followed by casimersen (exon 45) in 2021."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3–4 hours",
+    "bioavailability": "100% (IV)",
+    "metabolism": "not metabolised by liver enzymes",
+    "excretion": "renal (about two-thirds unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "balance disorder",
+      "vomiting",
+      "contact dermatitis",
+      "infusion reactions"
+    ],
+    "serious": [
+      "hypersensitivity reactions including bronchospasm"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Dystrophin levels in the trials rose to under 1% of normal on average, which critics argued was too small to be clinically meaningful."
+  ],
+  "related": [
+    "nusinersen",
+    "patisiran",
+    "tofersen"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Eteplirsen",
+      "url": "https://en.wikipedia.org/wiki/Eteplirsen"
+    },
+    {
+      "title": "DailyMed: exondys labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=EXONDYS"
+    },
+    {
+      "title": "FDA: Exondys 51 approval information",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206488"
+    }
+  ],
+  "stage": "written"
 }

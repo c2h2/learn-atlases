@@ -1,36 +1,130 @@
 {
   "slug": "folic-acid",
   "name": "Folic acid",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "pteroylglutamic acid",
+    "vitamin B9",
+    "folacin"
+  ],
+  "brands": [
+    "Folvite"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Vitamin B9 (folate)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im"
+  ],
+  "route_note": "oral tablets daily; injectable forms where oral intake is impossible",
+  "targets": [
+    "DHFR (substrate)"
+  ],
+  "origin": "synthetic",
+  "originator": "Lederle Laboratories (Robert Angier, Yellapragada SubbaRow and colleagues)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1945,
+    "by": "Lederle Laboratories team led by Yellapragada SubbaRow",
+    "note": "Synthesis of pteroylglutamic acid followed Lucy Wills's 1931 discovery of a dietary factor that cured macrocytic anaemia of pregnancy."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "OTC; prescription for high doses in some countries",
+  "tagline": "Synthetic folate that prevents neural tube defects and megaloblastic anaemia",
+  "summary": "Folic acid is the synthetic, oxidised form of vitamin B9. Once reduced to tetrahydrofolate it supplies one-carbon units for DNA synthesis and the methylation cycle. Periconceptional supplementation and food fortification greatly reduce neural tube defects, and it treats folate-deficiency anaemia.",
+  "mechanism": [
+    "Folic acid is reduced by dihydrofolate reductase to tetrahydrofolate, which carries one-carbon groups needed to make thymidylate and purines, and, as 5-methyltetrahydrofolate, to remethylate homocysteine to methionine via B12-dependent methionine synthase.",
+    "Folate deficiency impairs DNA synthesis in rapidly dividing cells, causing megaloblastic anaemia and, in early pregnancy, failure of neural tube closure. Folic acid can correct the anaemia of B12 deficiency while neurological damage progresses, so B12 status should be checked."
+  ],
+  "uses": [
+    "Prevention of neural tube defects before conception and in early pregnancy",
+    "Megaloblastic anaemia due to folate deficiency",
+    "Haemolytic anaemias and other states of increased requirement",
+    "Reduction of methotrexate toxicity (low-dose regimens)"
+  ],
+  "history": [
+    {
+      "year": 1931,
+      "title": "Wills factor",
+      "detail": "Lucy Wills shows that yeast extract cures macrocytic anaemia in pregnant textile workers in Bombay."
+    },
+    {
+      "year": 1941,
+      "title": "Named",
+      "detail": "Herschel Mitchell and colleagues isolate a factor from spinach and name it folic acid."
+    },
+    {
+      "year": 1945,
+      "title": "Synthesis",
+      "detail": "Lederle chemists synthesise folic acid."
+    },
+    {
+      "year": 1948,
+      "title": "Antifolates",
+      "detail": "Sidney Farber reports remissions in childhood leukaemia with aminopterin, a folate antagonist."
+    },
+    {
+      "year": 1991,
+      "title": "MRC Vitamin Study",
+      "detail": "A UK-led randomised trial shows folic acid prevents about 72% of recurrent neural tube defects."
+    },
+    {
+      "year": 1998,
+      "title": "US fortification",
+      "detail": "Mandatory fortification of enriched cereal grain products begins in the United States."
+    },
+    {
+      "year": 2021,
+      "title": "UK fortification",
+      "detail": "The UK government announces mandatory folic acid fortification of non-wholemeal wheat flour."
+    }
+  ],
+  "pk": {
+    "half_life": null,
+    "bioavailability": "high (about 85% or more) when taken fasting",
+    "metabolism": "reduced and methylated in liver and intestine",
+    "excretion": "urine; enterohepatic circulation"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "generally well tolerated",
+      "nausea",
+      "bloating"
+    ],
+    "serious": [
+      "masking of vitamin B12 deficiency",
+      "allergic reactions (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Over 80 countries require folic acid fortification of wheat or maize flour."
+  ],
+  "related": [
+    "cyanocobalamin",
+    "ferrous-sulfate",
+    "methotrexate",
+    "co-trimoxazole",
+    "valproate",
+    "hydroxyurea"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Folate",
+      "url": "https://en.wikipedia.org/wiki/Folate"
+    },
+    {
+      "title": "DailyMed: folic acid labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=FOLIC+ACID"
+    },
+    {
+      "title": "PubMed: MRC Vitamin Study (Lancet 1991)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1677062/"
+    }
+  ],
+  "stage": "written"
 }

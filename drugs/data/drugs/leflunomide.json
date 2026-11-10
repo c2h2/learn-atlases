@@ -1,36 +1,127 @@
 {
   "slug": "leflunomide",
   "name": "Leflunomide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "HWA 486",
+    "SU101"
+  ],
+  "brands": [
+    "Arava"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Pyrimidine synthesis inhibitor (disease-modifying antirheumatic drug)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets once daily, sometimes after a loading dose",
+  "targets": [
+    "DHODH"
+  ],
+  "origin": "synthetic",
+  "originator": "Hoechst (now Sanofi)",
+  "owner": "Sanofi; generic (many)",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Arava"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Hoechst",
+    "note": "An isoxazole prodrug whose active metabolite, teriflunomide (A77 1726), inhibits dihydroorotate dehydrogenase."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "DHODH-inhibiting DMARD for rheumatoid and psoriatic arthritis",
+  "summary": "Leflunomide is an oral disease-modifying antirheumatic drug converted to teriflunomide, which inhibits dihydroorotate dehydrogenase and limits pyrimidine synthesis in activated lymphocytes. It is used in rheumatoid arthritis, often as an alternative to methotrexate. Its very long half-life means an accelerated washout is needed before pregnancy.",
+  "mechanism": [
+    "Leflunomide is rapidly converted in the gut wall and liver to teriflunomide, which inhibits mitochondrial dihydroorotate dehydrogenase, a key enzyme in de novo pyrimidine synthesis.",
+    "Activated T and B lymphocytes need a large expansion of their pyrimidine pool, so their proliferation is arrested in G1 while resting cells use salvage pathways. This reduces joint inflammation and slows radiographic progression."
+  ],
+  "uses": [
+    "Active rheumatoid arthritis in adults",
+    "Active psoriatic arthritis (EU)"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Arava approved for rheumatoid arthritis."
+    },
+    {
+      "year": 1999,
+      "title": "EU approval",
+      "detail": "Authorised in the EU for rheumatoid arthritis."
+    },
+    {
+      "year": 2010,
+      "title": "Hepatotoxicity warning",
+      "detail": "FDA strengthens the boxed warning on severe liver injury."
+    },
+    {
+      "year": 2012,
+      "title": "Teriflunomide",
+      "detail": "Its active metabolite teriflunomide is approved by the FDA as Aubagio for multiple sclerosis."
+    },
+    {
+      "year": 2013,
+      "title": "Teriflunomide in the EU",
+      "detail": "Aubagio is authorised in the EU for relapsing multiple sclerosis."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2 weeks (teriflunomide)",
+    "bioavailability": "about 80%",
+    "metabolism": "conversion to teriflunomide; extensive enterohepatic recycling",
+    "excretion": "faeces and urine"
+  },
+  "safety": {
+    "common": [
+      "diarrhoea",
+      "raised liver enzymes",
+      "alopecia",
+      "rash",
+      "hypertension",
+      "nausea"
+    ],
+    "serious": [
+      "severe hepatotoxicity",
+      "embryo-fetal toxicity",
+      "bone marrow suppression",
+      "serious infections",
+      "interstitial lung disease",
+      "peripheral neuropathy",
+      "Stevens-Johnson syndrome"
+    ],
+    "boxed_warning": "Contraindicated in pregnancy because of embryo-fetal toxicity; exclude pregnancy before starting and use contraception. Severe liver injury, including fatal liver failure, has been reported."
+  },
+  "facts": [
+    "Cholestyramine or activated charcoal can be used to wash out teriflunomide, which otherwise remains detectable for up to two years."
+  ],
+  "related": [
+    "methotrexate",
+    "sulfasalazine",
+    "hydroxychloroquine",
+    "tofacitinib",
+    "adalimumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Leflunomide",
+      "url": "https://en.wikipedia.org/wiki/Leflunomide"
+    },
+    {
+      "title": "DailyMed: leflunomide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=LEFLUNOMIDE"
+    },
+    {
+      "title": "EMA EPAR: Arava",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/arava"
+    }
+  ],
+  "stage": "written"
 }

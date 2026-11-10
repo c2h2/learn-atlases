@@ -1,36 +1,120 @@
 {
   "slug": "nitisinone",
   "name": "Nitisinone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "NTBC",
+    "2-(2-nitro-4-trifluoromethylbenzoyl)-1,3-cyclohexanedione"
+  ],
+  "brands": [
+    "Orfadin",
+    "Nityr"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "4-Hydroxyphenylpyruvate dioxygenase (HPPD) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules, tablets or suspension, with a protein-restricted diet",
+  "targets": [
+    "HPD"
+  ],
+  "origin": "synthetic",
+  "originator": "Zeneca (herbicide research); clinical use pioneered by Sven Lindstedt, Gothenburg",
+  "owner": "Sobi (Swedish Orphan Biovitrum); other formulations by Cycle Pharmaceuticals",
+  "first_approval": {
+    "year": 2002,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Orfadin"
+  },
+  "discovery": {
+    "year": 1992,
+    "by": "Sven Lindstedt and colleagues, Sahlgrenska University Hospital",
+    "note": "A triketone developed as an herbicide was found to inhibit HPPD in mammals and was repurposed to block toxic metabolite formation in tyrosinaemia type 1."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Herbicide-derived enzyme inhibitor that transformed hereditary tyrosinaemia type 1",
+  "summary": "Nitisinone inhibits 4-hydroxyphenylpyruvate dioxygenase, an early step in tyrosine breakdown. In hereditary tyrosinaemia type 1 it prevents formation of toxic downstream metabolites such as succinylacetone, dramatically reducing liver failure and liver cancer in children. It is also approved in Europe for alkaptonuria.",
+  "mechanism": [
+    "Tyrosinaemia type 1 is caused by deficiency of fumarylacetoacetate hydrolase, the last enzyme of tyrosine catabolism. Fumarylacetoacetate and succinylacetone accumulate, damaging liver and kidneys and causing porphyria-like neurological crises.",
+    "Nitisinone blocks HPPD, upstream of the defect, so these toxic intermediates are not formed. Tyrosine levels rise, so a diet low in tyrosine and phenylalanine is needed to avoid eye and skin lesions. In alkaptonuria, the same block reduces homogentisic acid."
+  ],
+  "uses": [
+    "Hereditary tyrosinaemia type 1, with dietary restriction",
+    "Alkaptonuria in adults (EU)"
+  ],
+  "history": [
+    {
+      "year": 1992,
+      "title": "First patients",
+      "detail": "Lindstedt's team in Gothenburg reports successful treatment of tyrosinaemia type 1 in the Lancet."
+    },
+    {
+      "year": 2002,
+      "title": "FDA approval",
+      "detail": "Orfadin approved for hereditary tyrosinaemia type 1."
+    },
+    {
+      "year": 2005,
+      "title": "EU approval",
+      "detail": "Authorised in the EU for tyrosinaemia type 1."
+    },
+    {
+      "year": 2017,
+      "title": "New formulation",
+      "detail": "FDA approves Nityr tablets as an alternative nitisinone product."
+    },
+    {
+      "year": 2020,
+      "title": "Alkaptonuria",
+      "detail": "EU extends approval to alkaptonuria after the SONIA 2 trial."
+    }
+  ],
+  "pk": {
+    "half_life": "about 54 hours",
+    "bioavailability": "well absorbed",
+    "metabolism": "minimal (possibly CYP3A4)",
+    "excretion": "mostly unchanged in urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "raised plasma tyrosine",
+      "conjunctivitis and corneal opacity",
+      "thrombocytopenia",
+      "leukopenia",
+      "itching",
+      "rash"
+    ],
+    "serious": [
+      "keratitis and corneal ulcers from high tyrosine",
+      "severe thrombocytopenia and leukopenia",
+      "developmental delay with high tyrosine levels"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The triketone herbicide class was inspired by leptospermone, an allelopathic compound from the bottlebrush plant Callistemon citrinus."
+  ],
+  "related": [
+    "imiglucerase"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Nitisinone",
+      "url": "https://en.wikipedia.org/wiki/Nitisinone"
+    },
+    {
+      "title": "DailyMed: nitisinone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=NITISINONE"
+    },
+    {
+      "title": "EMA EPAR: Orfadin",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/orfadin"
+    }
+  ],
+  "stage": "written"
 }

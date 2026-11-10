@@ -1,36 +1,129 @@
 {
   "slug": "baricitinib",
   "name": "Baricitinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "INCB028050",
+    "LY3009104"
+  ],
+  "brands": [
+    "Olumiant"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Janus kinase (JAK1/JAK2) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets once daily",
+  "targets": [
+    "JAK1",
+    "JAK2"
+  ],
+  "origin": "synthetic",
+  "originator": "Incyte (licensed to Eli Lilly in 2009)",
+  "owner": "Eli Lilly",
+  "first_approval": {
+    "year": 2017,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Olumiant"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Incyte",
+    "note": "A selective JAK1/JAK2 inhibitor developed from the same programme that produced ruxolitinib."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "JAK1/2 inhibitor for rheumatoid arthritis, alopecia areata and severe COVID-19",
+  "summary": "Baricitinib is an oral, once-daily inhibitor of JAK1 and JAK2. It is approved for rheumatoid arthritis, severe alopecia areata and, in some regions, atopic dermatitis, and it reduced mortality in hospitalised patients with COVID-19. It carries the JAK inhibitor class boxed warnings.",
+  "mechanism": [
+    "Baricitinib inhibits JAK1 and JAK2, which mediate signalling of cytokines such as interleukin-6, interferons and GM-CSF, reducing STAT phosphorylation and expression of inflammatory genes.",
+    "In alopecia areata it interrupts interferon-gamma and IL-15 signalling that drives T-cell attack on hair follicles. In COVID-19 it dampens the hyperinflammatory cytokine response and may also limit viral entry by inhibiting AP2-associated protein kinase 1."
+  ],
+  "uses": [
+    "Moderate to severe rheumatoid arthritis",
+    "Severe alopecia areata",
+    "Moderate to severe atopic dermatitis (EU and other regions)",
+    "Juvenile idiopathic arthritis (EU)",
+    "Hospitalised adults with COVID-19 requiring oxygen"
+  ],
+  "history": [
+    {
+      "year": 2009,
+      "title": "Lilly licence",
+      "detail": "Incyte licenses baricitinib to Eli Lilly."
+    },
+    {
+      "year": 2017,
+      "title": "EU approval",
+      "detail": "Olumiant authorised in the EU for rheumatoid arthritis; FDA initially declines approval."
+    },
+    {
+      "year": 2018,
+      "title": "FDA approval",
+      "detail": "FDA approves the 2 mg dose for rheumatoid arthritis."
+    },
+    {
+      "year": 2020,
+      "title": "COVID-19 candidate",
+      "detail": "BenevolentAI identifies baricitinib as a COVID-19 candidate using a knowledge graph; FDA grants emergency use authorisation with remdesivir."
+    },
+    {
+      "year": 2022,
+      "title": "COVID-19 and alopecia",
+      "detail": "FDA approves baricitinib for hospitalised COVID-19 and as the first systemic treatment for severe alopecia areata; the RECOVERY trial reports a mortality benefit."
+    }
+  ],
+  "pk": {
+    "half_life": "about 12 hours",
+    "bioavailability": "about 79%",
+    "metabolism": "minor CYP3A4 (about 6%)",
+    "excretion": "renal (about 75%, mostly unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+    "common": [
+      "upper respiratory infections",
+      "nausea",
+      "raised cholesterol",
+      "herpes simplex",
+      "acne",
+      "headache"
+    ],
+    "serious": [
+      "serious infections including tuberculosis and herpes zoster",
+      "thrombosis",
+      "major adverse cardiovascular events",
+      "malignancy",
+      "gastrointestinal perforation",
+      "increased mortality"
+    ],
+    "boxed_warning": "Serious infections, higher all-cause mortality, malignancies including lymphoma and lung cancer, major adverse cardiovascular events and thrombosis, based largely on the ORAL Surveillance trial of tofacitinib in older RA patients with cardiovascular risk factors (class warning for JAK inhibitors)."
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "tofacitinib",
+    "upadacitinib",
+    "ruxolitinib",
+    "remdesivir",
+    "dexamethasone",
+    "tocilizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Baricitinib",
+      "url": "https://en.wikipedia.org/wiki/Baricitinib"
+    },
+    {
+      "title": "DailyMed: olumiant labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=OLUMIANT"
+    },
+    {
+      "title": "EMA EPAR: Olumiant",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/olumiant"
+    }
+  ],
+  "stage": "written"
 }

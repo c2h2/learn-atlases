@@ -1,36 +1,126 @@
 {
   "slug": "sugammadex",
   "name": "Sugammadex",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Org 25969"
+  ],
+  "brands": [
+    "Bridion"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Selective relaxant binding agent (modified gamma-cyclodextrin)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "single IV bolus at the end of surgery or for immediate reversal",
+  "targets": [
+    "rocuronium",
+    "vecuronium"
+  ],
+  "origin": "synthetic",
+  "originator": "Organon (Anton Bom, Mingqiang Zhang and colleagues, Newhouse, Scotland)",
+  "owner": "Merck & Co. (MSD)",
+  "first_approval": {
+    "year": 2008,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Bridion"
+  },
+  "discovery": {
+    "year": 2001,
+    "by": "Anton Bom and colleagues, Organon Laboratories, Newhouse",
+    "note": "A gamma-cyclodextrin with eight carboxyl thioether side chains was designed to encapsulate the steroid nucleus of rocuronium in a 1:1 complex."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; hospital use",
+  "tagline": "Cyclodextrin that rapidly reverses rocuronium and vecuronium by encapsulation",
+  "summary": "Sugammadex is a modified gamma-cyclodextrin that binds rocuronium and vecuronium tightly in plasma, rapidly reversing neuromuscular blockade without acting on acetylcholinesterase. It can reverse even deep block within minutes and has largely replaced neostigmine in many settings where cost allows.",
+  "mechanism": [
+    "Sugammadex's ring-shaped molecule has a lipophilic cavity that encloses the steroid skeleton of rocuronium or vecuronium, forming a very stable 1:1 complex.",
+    "Capture of free drug in plasma creates a concentration gradient that pulls neuromuscular blocker away from the neuromuscular junction, restoring transmission. Because it does not increase acetylcholine, it avoids muscarinic effects and does not need co-administration of an anticholinergic."
+  ],
+  "uses": [
+    "Reversal of neuromuscular blockade induced by rocuronium or vecuronium in adults and children"
+  ],
+  "history": [
+    {
+      "year": 2001,
+      "title": "Design",
+      "detail": "Organon scientists in Scotland design Org 25969 to encapsulate rocuronium."
+    },
+    {
+      "year": 2002,
+      "title": "Publication",
+      "detail": "The concept is published, describing the first 'selective relaxant binding agent'."
+    },
+    {
+      "year": 2008,
+      "title": "EU approval",
+      "detail": "Bridion authorised in the EU; the FDA declines approval over hypersensitivity and bleeding concerns."
+    },
+    {
+      "year": 2009,
+      "title": "Merck",
+      "detail": "Merck & Co. gains the product through its merger with Schering-Plough, which had acquired Organon."
+    },
+    {
+      "year": 2015,
+      "title": "FDA approval",
+      "detail": "FDA approves Bridion in December after further studies."
+    },
+    {
+      "year": 2021,
+      "title": "Paediatric approval",
+      "detail": "FDA extends use to children aged two and older."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2 hours",
+    "bioavailability": "100% (IV)",
+    "metabolism": "not metabolised",
+    "excretion": "renal, more than 90% unchanged within 24 hours"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea",
+      "vomiting",
+      "pain",
+      "hypotension",
+      "headache"
+    ],
+    "serious": [
+      "anaphylaxis",
+      "marked bradycardia and cardiac arrest",
+      "bronchospasm",
+      "recurrence of block with inadequate dosing",
+      "coagulation test prolongation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It also binds progestogens, so hormonal contraceptive users should regard a dose as equivalent to a missed pill and use backup contraception for seven days."
+  ],
+  "related": [
+    "rocuronium",
+    "propofol",
+    "sevoflurane"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Sugammadex",
+      "url": "https://en.wikipedia.org/wiki/Sugammadex"
+    },
+    {
+      "title": "DailyMed: bridion labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=BRIDION"
+    },
+    {
+      "title": "EMA EPAR: Bridion",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/bridion"
+    }
+  ],
+  "stage": "written"
 }

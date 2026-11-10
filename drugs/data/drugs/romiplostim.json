@@ -1,36 +1,119 @@
 {
   "slug": "romiplostim",
   "name": "Romiplostim",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AMG 531"
+  ],
+  "brands": [
+    "Nplate",
+    "Romiplate"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Thrombopoietin receptor agonist (peptibody)",
+  "modality": "protein",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "SC injection once weekly, dose adjusted to platelet count",
+  "targets": [
+    "MPL"
+  ],
+  "origin": "biotech",
+  "originator": "Amgen",
+  "owner": "Amgen",
+  "first_approval": {
+    "year": 2008,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Nplate"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Amgen",
+    "note": "A 'peptibody': an IgG1 Fc fragment carrying two copies of a TPO-mimetic peptide with no sequence homology to TPO, avoiding the antibody problems of earlier recombinant TPO."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Weekly Fc-peptide fusion that stimulates the thrombopoietin receptor",
+  "summary": "Romiplostim is an Fc–peptide fusion protein that binds and activates the thrombopoietin receptor, increasing platelet production. It is given by weekly injection for chronic immune thrombocytopenia and was later approved for haematopoietic acute radiation syndrome.",
+  "mechanism": [
+    "Romiplostim binds the thrombopoietin receptor (MPL) at the same site as endogenous TPO and activates JAK2–STAT signalling in megakaryocyte progenitors, increasing megakaryocyte number and platelet output.",
+    "Its TPO-mimetic peptides share no sequence with TPO, which avoids induction of neutralising antibodies that cross-react with native TPO, a problem that halted earlier pegylated recombinant megakaryocyte growth factor."
+  ],
+  "uses": [
+    "Immune thrombocytopenia in adults and children with insufficient response to other therapy",
+    "Haematopoietic syndrome of acute radiation syndrome"
+  ],
+  "history": [
+    {
+      "year": 2001,
+      "title": "TPO antibodies",
+      "detail": "Development of pegylated recombinant MGDF stops after neutralising antibodies cause thrombocytopenia, prompting non-homologous agonists."
+    },
+    {
+      "year": 2008,
+      "title": "FDA approval",
+      "detail": "Nplate approved for chronic immune thrombocytopenia in adults."
+    },
+    {
+      "year": 2009,
+      "title": "EU approval",
+      "detail": "Authorised in the EU for chronic ITP."
+    },
+    {
+      "year": 2018,
+      "title": "Paediatric ITP",
+      "detail": "FDA extends use to children aged one year and older."
+    },
+    {
+      "year": 2021,
+      "title": "Radiation syndrome",
+      "detail": "FDA approves romiplostim for haematopoietic acute radiation syndrome."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1–34 days (median 3.5 days), concentration-dependent",
+    "bioavailability": null,
+    "metabolism": "TPO receptor-mediated clearance on platelets",
+    "excretion": "not established"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "arthralgia",
+      "dizziness",
+      "insomnia",
+      "myalgia",
+      "headache",
+      "abdominal pain"
+    ],
+    "serious": [
+      "progression to acute myeloid leukaemia in myelodysplastic syndromes",
+      "thrombosis",
+      "bone marrow reticulin deposition",
+      "loss of response and rebound thrombocytopenia"
+    ],
     "boxed_warning": null
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "eltrombopag",
+    "filgrastim"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Romiplostim",
+      "url": "https://en.wikipedia.org/wiki/Romiplostim"
+    },
+    {
+      "title": "DailyMed: romiplostim labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ROMIPLOSTIM"
+    },
+    {
+      "title": "EMA EPAR: Nplate",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/nplate"
+    }
+  ],
+  "stage": "written"
 }

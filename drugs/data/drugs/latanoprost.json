@@ -1,36 +1,120 @@
 {
   "slug": "latanoprost",
   "name": "Latanoprost",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PhXA41"
+  ],
+  "brands": [
+    "Xalatan",
+    "Monoprost",
+    "Xelpros",
+    "Iyuzeh"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Prostaglandin F2-alpha analogue (ocular hypotensive)",
+  "modality": "small-molecule",
+  "routes": [
+    "ophthalmic"
+  ],
+  "route_note": "one eye drop in the evening once daily",
+  "targets": [
+    "PTGFR"
+  ],
+  "origin": "synthetic",
+  "originator": "Pharmacia (Johan Stjernschantz, Bahram Resul) based on Columbia University work by Laszlo Bito",
+  "owner": "generic (many); Viatris (Xalatan)",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Xalatan"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Laszlo Bito (Columbia University) and Pharmacia researchers",
+    "note": "Bito showed that topical prostaglandins lower intraocular pressure; Pharmacia designed a selective, better-tolerated isopropyl ester prodrug of a PGF2-alpha analogue."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Once-daily prostaglandin eye drop that became first-line for glaucoma",
+  "summary": "Latanoprost is an isopropyl ester prodrug of a prostaglandin F2-alpha analogue that lowers intraocular pressure by increasing aqueous outflow. Once-daily drops became first-line therapy for open-angle glaucoma and ocular hypertension. It can permanently darken the iris and lengthen eyelashes.",
+  "mechanism": [
+    "After instillation, corneal esterases hydrolyse latanoprost to latanoprost acid, a selective agonist of the prostaglandin FP receptor.",
+    "FP receptor activation in the ciliary muscle remodels the extracellular matrix through matrix metalloproteinases, increasing uveoscleral outflow of aqueous humour and lowering intraocular pressure by roughly a quarter to a third, with effect lasting over 24 hours."
+  ],
+  "uses": [
+    "Open-angle glaucoma",
+    "Ocular hypertension"
+  ],
+  "history": [
+    {
+      "year": 1996,
+      "title": "FDA approval",
+      "detail": "Xalatan approved as the first prostaglandin analogue for glaucoma."
+    },
+    {
+      "year": 2011,
+      "title": "Generics",
+      "detail": "Generic latanoprost launches in the US after patent expiry."
+    },
+    {
+      "year": 2017,
+      "title": "Nitric oxide-donating analogue",
+      "detail": "FDA approves latanoprostene bunod (Vyzulta), which adds a nitric oxide-donating moiety."
+    },
+    {
+      "year": 2018,
+      "title": "Benzalkonium-free emulsion",
+      "detail": "FDA approves Xelpros, a latanoprost emulsion without benzalkonium chloride preservative."
+    },
+    {
+      "year": 2019,
+      "title": "Fixed combination",
+      "detail": "FDA approves netarsudil–latanoprost (Rocklatan)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 17 minutes (latanoprost acid in plasma)",
+    "bioavailability": "about 45% absorbed through the cornea",
+    "metabolism": "hydrolysis by corneal esterases; hepatic beta-oxidation",
+    "excretion": "mainly urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "conjunctival hyperaemia",
+      "eye irritation",
+      "increased iris pigmentation",
+      "eyelash growth and darkening",
+      "periorbital skin darkening"
+    ],
+    "serious": [
+      "macular oedema (in at-risk eyes)",
+      "uveitis",
+      "herpes keratitis reactivation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its eyelash-growing effect led to the related prostaglandin bimatoprost being marketed as a cosmetic product (Latisse)."
+  ],
+  "related": [
+    "timolol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Latanoprost",
+      "url": "https://en.wikipedia.org/wiki/Latanoprost"
+    },
+    {
+      "title": "DailyMed: latanoprost labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=LATANOPROST"
+    },
+    {
+      "title": "Wikipedia: Glaucoma",
+      "url": "https://en.wikipedia.org/wiki/Glaucoma"
+    }
+  ],
+  "stage": "written"
 }

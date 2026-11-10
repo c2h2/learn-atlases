@@ -1,36 +1,138 @@
 {
   "slug": "eltrombopag",
   "name": "Eltrombopag",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SB-497115",
+    "eltrombopag olamine"
+  ],
+  "brands": [
+    "Promacta",
+    "Revolade",
+    "Alvaiz"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Thrombopoietin receptor agonist (small molecule)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets or suspension once daily, separated from calcium-rich foods and antacids",
+  "targets": [
+    "MPL"
+  ],
+  "origin": "synthetic",
+  "originator": "GlaxoSmithKline with Ligand Pharmaceuticals",
+  "owner": "Novartis",
+  "first_approval": {
+    "year": 2008,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Promacta"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Ligand Pharmaceuticals and SmithKline Beecham",
+    "note": "A non-peptide hydrazone compound found to activate the thrombopoietin receptor through its transmembrane domain."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "rx_status": "prescription",
+  "tagline": "Oral thrombopoietin-mimetic for immune thrombocytopenia and aplastic anaemia",
+  "summary": "Eltrombopag is an orally active small-molecule agonist of the thrombopoietin receptor that increases platelet production. It is used in chronic immune thrombocytopenia, thrombocytopenia of chronic hepatitis C and severe aplastic anaemia. Its labelling warns of hepatotoxicity.",
+  "mechanism": [
+    "Thrombopoietin (TPO) is the main regulator of megakaryocyte development. Eltrombopag binds the transmembrane domain of the TPO receptor (MPL, c-Mpl), at a site distinct from TPO, and activates JAK2–STAT signalling, causing proliferation and differentiation of megakaryocytes and higher platelet counts.",
+    "Because it does not compete with endogenous TPO, its effect adds to the natural hormone. Eltrombopag also chelates iron and other polyvalent cations, which limits absorption when taken with dairy or mineral supplements and may contribute to its effects in aplastic anaemia."
+  ],
+  "uses": [
+    "Persistent or chronic immune thrombocytopenia (adults and children)",
+    "Thrombocytopenia in chronic hepatitis C to allow interferon therapy",
+    "Severe aplastic anaemia (first-line with immunosuppression and refractory disease)"
+  ],
+  "history": [
+    {
+      "year": 2008,
+      "title": "FDA approval",
+      "detail": "Promacta approved for chronic immune thrombocytopenia, the first oral TPO receptor agonist."
+    },
+    {
+      "year": 2010,
+      "title": "EU approval",
+      "detail": "Authorised in the EU as Revolade."
+    },
+    {
+      "year": 2012,
+      "title": "Hepatitis C",
+      "detail": "FDA approves use to enable interferon-based hepatitis C therapy."
+    },
+    {
+      "year": 2014,
+      "title": "Aplastic anaemia",
+      "detail": "FDA approves use in severe aplastic anaemia refractory to immunosuppression."
+    },
+    {
+      "year": 2015,
+      "title": "Novartis",
+      "detail": "Novartis takes over the product in its asset swap with GSK's oncology business."
+    },
+    {
+      "year": 2018,
+      "title": "First-line aplastic anaemia",
+      "detail": "Approval with standard immunosuppressive therapy for first-line severe aplastic anaemia."
+    },
+    {
+      "year": 2023,
+      "title": "Alvaiz",
+      "detail": "FDA approves Alvaiz, an eltrombopag choline formulation from Teva, with less food restriction."
+    }
+  ],
+  "pk": {
+    "half_life": "about 21–32 hours (26–35 hours in ITP)",
+    "bioavailability": "at least 52%",
+    "metabolism": "CYP1A2, CYP2C8, UGT1A1 and UGT1A3",
+    "excretion": "faecal (59%) and urine (31%) as metabolites"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "safety": {
+    "common": [
+      "nausea",
+      "diarrhoea",
+      "upper respiratory infection",
+      "headache",
+      "raised liver enzymes",
+      "fatigue"
+    ],
+    "serious": [
+      "hepatotoxicity",
+      "hepatic decompensation in hepatitis C",
+      "thrombosis",
+      "cataract",
+      "bone marrow reticulin fibrosis",
+      "clonal evolution in aplastic anaemia"
+    ],
+    "boxed_warning": "In chronic hepatitis C, eltrombopag with interferon and ribavirin may increase the risk of hepatic decompensation; it may also cause hepatotoxicity, so liver tests must be monitored."
+  },
+  "facts": [
+    "Exposure is about 70% higher in patients of East and Southeast Asian ancestry, so labelled starting doses are lower."
+  ],
+  "related": [
+    "romiplostim",
+    "peginterferon-alfa-2a",
+    "ribavirin",
+    "ciclosporin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Eltrombopag",
+      "url": "https://en.wikipedia.org/wiki/Eltrombopag"
+    },
+    {
+      "title": "DailyMed: eltrombopag labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ELTROMBOPAG"
+    },
+    {
+      "title": "EMA EPAR: Revolade",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/revolade"
+    }
+  ],
+  "stage": "written"
 }

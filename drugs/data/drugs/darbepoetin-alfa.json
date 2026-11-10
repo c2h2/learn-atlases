@@ -1,36 +1,131 @@
 {
   "slug": "darbepoetin-alfa",
   "name": "Darbepoetin alfa",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "novel erythropoiesis-stimulating protein",
+    "NESP"
+  ],
+  "brands": [
+    "Aranesp",
+    "Nesp"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Erythropoiesis-stimulating agent (long-acting EPO analogue)",
+  "modality": "protein",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV or SC injection once weekly to once every 2–4 weeks",
+  "targets": [
+    "EPOR"
+  ],
+  "origin": "biotech",
+  "originator": "Amgen",
+  "owner": "Amgen (Kyowa Kirin in Japan)",
+  "first_approval": {
+    "year": 2001,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Aranesp"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1990,
+    "by": "Amgen scientists (Steve Elliott, Joan Egrie and colleagues)",
+    "note": "Engineered EPO with two extra N-linked glycosylation sites; higher sialic acid content slows clearance about threefold."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Hyperglycosylated EPO analogue allowing less frequent dosing than epoetin",
+  "summary": "Darbepoetin alfa is an erythropoietin analogue with five N-linked carbohydrate chains instead of three, giving it a roughly threefold longer half-life than epoetin alfa. It treats anaemia of chronic kidney disease and chemotherapy-induced anaemia with weekly or less frequent injections. It carries the class boxed warning for erythropoiesis-stimulating agents.",
+  "mechanism": [
+    "Darbepoetin alfa binds and activates the erythropoietin receptor on erythroid progenitors in the same way as endogenous EPO, stimulating red cell production through JAK2–STAT5 signalling.",
+    "Five amino-acid substitutions create two additional N-glycosylation sites. The extra sialic-acid-rich carbohydrate lowers receptor affinity but greatly reduces clearance, so the net in vivo potency per dose and duration are higher."
+  ],
+  "uses": [
+    "Anaemia due to chronic kidney disease",
+    "Anaemia due to myelosuppressive chemotherapy in non-myeloid malignancies"
+  ],
+  "history": [
+    {
+      "year": 1990,
+      "title": "Design",
+      "detail": "Amgen researchers begin adding glycosylation sites to EPO to extend its half-life."
+    },
+    {
+      "year": 2001,
+      "title": "Approvals",
+      "detail": "FDA and EU approve Aranesp for anaemia of chronic renal failure."
+    },
+    {
+      "year": 2002,
+      "title": "Chemotherapy anaemia",
+      "detail": "FDA extends approval to chemotherapy-induced anaemia."
+    },
+    {
+      "year": 2007,
+      "title": "Boxed warning",
+      "detail": "Class boxed warning on mortality, cardiovascular events and tumour progression added for all ESAs."
+    },
+    {
+      "year": 2009,
+      "title": "TREAT",
+      "detail": "In diabetic CKD patients not on dialysis, targeting haemoglobin 13 g/dL doubled stroke risk without reducing cardiovascular or renal events."
+    },
+    {
+      "year": 2011,
+      "title": "Dosing revised",
+      "detail": "FDA labels drop target ranges and advise individualised dosing to the lowest dose avoiding transfusion."
+    }
+  ],
+  "pk": {
+    "half_life": "about 21 hours IV and about 49 hours SC in CKD",
+    "bioavailability": "about 37% SC",
+    "metabolism": "proteolytic and receptor-mediated clearance",
+    "excretion": "not significantly renal"
+  },
+  "safety": {
+    "common": [
+      "hypertension",
+      "oedema",
+      "dyspnoea",
+      "cough",
+      "abdominal pain",
+      "injection-site pain"
+    ],
+    "serious": [
+      "stroke and myocardial infarction",
+      "thromboembolism",
+      "seizures",
+      "pure red cell aplasia",
+      "tumour progression",
+      "severe cutaneous reactions"
+    ],
+    "boxed_warning": "ESAs increase the risk of death, myocardial infarction, stroke, venous thromboembolism, vascular access thrombosis and tumour progression or recurrence; use the lowest dose sufficient to avoid transfusion."
+  },
+  "facts": [
+    "Its name derives from 'darbe' plus 'poetin', and in Japan it is marketed by Kyowa Kirin as Nesp."
+  ],
+  "related": [
+    "epoetin-alfa",
+    "luspatercept",
+    "ferrous-sulfate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Darbepoetin alfa",
+      "url": "https://en.wikipedia.org/wiki/Darbepoetin_alfa"
+    },
+    {
+      "title": "DailyMed: darbepoetin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=DARBEPOETIN"
+    },
+    {
+      "title": "EMA EPAR: Aranesp",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/aranesp"
+    }
+  ],
+  "stage": "written"
 }

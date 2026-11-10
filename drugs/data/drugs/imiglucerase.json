@@ -1,36 +1,119 @@
 {
   "slug": "imiglucerase",
   "name": "Imiglucerase",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "recombinant glucocerebrosidase",
+    "rh-GCase"
+  ],
+  "brands": [
+    "Cerezyme"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Enzyme replacement therapy (recombinant acid beta-glucosidase)",
+  "modality": "protein",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion usually every two weeks",
+  "targets": [
+    "GBA1 (replacement)",
+    "MRC1 (uptake)"
+  ],
+  "origin": "biotech",
+  "originator": "Genzyme, building on NIH work by Roscoe Brady",
+  "owner": "Sanofi",
+  "first_approval": {
+    "year": 1994,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Cerezyme"
+  },
+  "discovery": {
+    "year": 1991,
+    "by": "Roscoe Brady (NIH) and Genzyme",
+    "note": "Brady's group showed that glucocerebrosidase modified to expose mannose residues was taken up by macrophages; the placental enzyme alglucerase was replaced by recombinant imiglucerase made in CHO cells."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Recombinant enzyme that established replacement therapy for Gaucher disease",
+  "summary": "Imiglucerase is a recombinant form of human acid beta-glucosidase with mannose-terminated glycans that target it to macrophages. It replaces the deficient enzyme in type 1 Gaucher disease, reducing spleen and liver enlargement, anaemia, thrombocytopenia and bone disease. It made Genzyme a leading rare-disease company.",
+  "mechanism": [
+    "In Gaucher disease, deficiency of glucocerebrosidase causes glucosylceramide to accumulate in lysosomes of macrophages, forming engorged 'Gaucher cells' in spleen, liver and bone marrow.",
+    "Imiglucerase's oligosaccharide chains are trimmed to expose terminal mannose, so the enzyme is taken up by mannose receptors on macrophages and delivered to lysosomes, where it hydrolyses glucosylceramide to glucose and ceramide. It does not cross the blood–brain barrier and does not treat neurological forms."
+  ],
+  "uses": [
+    "Type 1 Gaucher disease",
+    "Non-neurological manifestations of type 3 Gaucher disease (EU)"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "Alglucerase",
+      "detail": "FDA approves Ceredase, glucocerebrosidase purified from human placentas, the first enzyme replacement therapy."
+    },
+    {
+      "year": 1994,
+      "title": "Recombinant enzyme",
+      "detail": "FDA approves Cerezyme, made in Chinese hamster ovary cells."
+    },
+    {
+      "year": 1997,
+      "title": "EU approval",
+      "detail": "Cerezyme authorised in the EU."
+    },
+    {
+      "year": 2009,
+      "title": "Supply crisis",
+      "detail": "Viral contamination at Genzyme's Allston plant causes global shortages, speeding approval of rival enzymes velaglucerase (2010) and taliglucerase (2012)."
+    },
+    {
+      "year": 2011,
+      "title": "Sanofi",
+      "detail": "Sanofi acquires Genzyme."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4–10 minutes in plasma",
+    "bioavailability": "100% (IV)",
+    "metabolism": "lysosomal and proteolytic degradation",
+    "excretion": "not renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "infusion reactions",
+      "headache",
+      "itching",
+      "rash",
+      "fever"
+    ],
+    "serious": [
+      "hypersensitivity and anaphylaxis",
+      "anti-drug antibodies"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Producing alglucerase required about 50,000 placentas per patient per year, a constraint removed by the recombinant enzyme."
+  ],
+  "related": [
+    "alglucosidase-alfa",
+    "nitisinone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Imiglucerase",
+      "url": "https://en.wikipedia.org/wiki/Imiglucerase"
+    },
+    {
+      "title": "DailyMed: cerezyme labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=CEREZYME"
+    },
+    {
+      "title": "EMA EPAR: Cerezyme",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/cerezyme"
+    }
+  ],
+  "stage": "written"
 }

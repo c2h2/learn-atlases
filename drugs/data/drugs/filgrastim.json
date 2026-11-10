@@ -1,36 +1,141 @@
 {
   "slug": "filgrastim",
   "name": "Filgrastim",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "recombinant methionyl human G-CSF",
+    "r-metHuG-CSF",
+    "filgrastim-sndz",
+    "tbo-filgrastim"
+  ],
+  "brands": [
+    "Neupogen",
+    "Zarxio",
+    "Nivestim",
+    "Zarzio",
+    "Granix"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Granulocyte colony-stimulating factor (G-CSF)",
+  "modality": "protein",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "daily SC injection or IV infusion until neutrophil recovery",
+  "targets": [
+    "CSF3R"
+  ],
+  "origin": "biotech",
+  "originator": "Amgen with Memorial Sloan Kettering Cancer Center",
+  "owner": "Amgen (Neupogen); biosimilars (Sandoz, Pfizer, Teva and others)",
+  "first_approval": {
+    "year": 1991,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Neupogen"
+  },
+  "discovery": {
+    "year": 1986,
+    "by": "Lawrence Souza (Amgen) with Karl Welte and Malcolm Moore (Memorial Sloan Kettering)",
+    "note": "Human G-CSF was purified from a bladder carcinoma cell line and its gene cloned; the recombinant protein is made in E. coli."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Recombinant G-CSF that shortens neutropenia after chemotherapy",
+  "summary": "Filgrastim is a non-glycosylated recombinant human granulocyte colony-stimulating factor produced in E. coli. It stimulates neutrophil production and release, reducing febrile neutropenia after myelosuppressive chemotherapy and mobilising stem cells for collection. It was the subject of the first US biosimilar approval.",
+  "mechanism": [
+    "G-CSF binds the G-CSF receptor (CSF3R) on myeloid progenitors and neutrophils, activating JAK–STAT signalling that drives proliferation, differentiation and survival of the neutrophil lineage and enhances neutrophil function.",
+    "Filgrastim also loosens retention of haematopoietic stem cells in the marrow (partly by protease-mediated cleavage of CXCL12–CXCR4 interactions), mobilising CD34+ cells into blood for apheresis."
+  ],
+  "uses": [
+    "Reduction of febrile neutropenia with myelosuppressive chemotherapy",
+    "Acute myeloid leukaemia after induction or consolidation",
+    "Bone marrow transplantation",
+    "Peripheral blood progenitor cell mobilisation",
+    "Severe chronic neutropenia",
+    "Haematopoietic syndrome of acute radiation syndrome"
+  ],
+  "history": [
+    {
+      "year": 1986,
+      "title": "Gene cloned",
+      "detail": "Amgen and Memorial Sloan Kettering researchers clone human G-CSF."
+    },
+    {
+      "year": 1991,
+      "title": "FDA approval",
+      "detail": "Neupogen approved for chemotherapy-induced neutropenia."
+    },
+    {
+      "year": 1994,
+      "title": "Severe chronic neutropenia",
+      "detail": "Approval extended to congenital, cyclic and idiopathic neutropenia."
+    },
+    {
+      "year": 2008,
+      "title": "EU biosimilars",
+      "detail": "First filgrastim biosimilars authorised in the EU."
+    },
+    {
+      "year": 2015,
+      "title": "First US biosimilar",
+      "detail": "Zarxio (filgrastim-sndz, Sandoz) becomes the first biosimilar approved under the US BPCI Act."
+    },
+    {
+      "year": 2015,
+      "title": "Radiation syndrome",
+      "detail": "FDA approves filgrastim for haematopoietic acute radiation syndrome under the Animal Rule."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3.5 hours",
+    "bioavailability": "SC absorption reaches peak in 2–8 hours",
+    "metabolism": "neutrophil (receptor-mediated) and renal clearance",
+    "excretion": "renal for unbound drug"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "bone pain",
+      "fever",
+      "rash",
+      "headache",
+      "thrombocytopenia"
+    ],
+    "serious": [
+      "splenic rupture",
+      "acute respiratory distress syndrome",
+      "sickle cell crisis",
+      "glomerulonephritis",
+      "capillary leak syndrome",
+      "aortitis",
+      "allergic reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Zarxio was the first biosimilar approved in the United States, in March 2015."
+  ],
+  "related": [
+    "pegfilgrastim",
+    "epoetin-alfa",
+    "cyclophosphamide",
+    "romiplostim"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Filgrastim",
+      "url": "https://en.wikipedia.org/wiki/Filgrastim"
+    },
+    {
+      "title": "DailyMed: filgrastim labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=FILGRASTIM"
+    },
+    {
+      "title": "EMA EPAR: Zarzio",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/zarzio"
+    }
+  ],
+  "stage": "written"
 }

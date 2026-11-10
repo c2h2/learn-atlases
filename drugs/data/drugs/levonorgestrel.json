@@ -1,36 +1,138 @@
 {
   "slug": "levonorgestrel",
   "name": "Levonorgestrel",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "D-norgestrel",
+    "LNG"
+  ],
+  "brands": [
+    "Plan B One-Step",
+    "Levonelle",
+    "Postinor",
+    "Mirena",
+    "Kyleena",
+    "Jadelle",
+    "Norplant"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Progestin (second-generation 19-nortestosterone derivative)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "other"
+  ],
+  "route_note": "single oral tablet for emergency contraception; intrauterine system lasting up to 8 years; subdermal implant",
+  "targets": [
+    "PGR"
+  ],
+  "origin": "synthetic",
+  "originator": "Wyeth (norgestrel synthesised by Herchel Smith); Schering AG developed many levonorgestrel products",
+  "owner": "generic (many); Bayer (Mirena, Kyleena)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1963,
+    "by": "Herchel Smith and colleagues",
+    "note": "Total synthesis of racemic norgestrel; the active levorotatory enantiomer, levonorgestrel, was later developed on its own."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "OTC for emergency contraception in many countries; prescription for IUD and implant",
+  "tagline": "Widely used progestin for emergency contraception, IUDs and implants",
+  "summary": "Levonorgestrel is a synthetic progestin used alone for emergency contraception, in hormonal intrauterine systems and implants, and with an oestrogen in combined pills. A single oral dose taken soon after unprotected sex mainly works by delaying ovulation. The levonorgestrel IUD is also used for heavy menstrual bleeding.",
+  "mechanism": [
+    "Levonorgestrel binds and activates progesterone receptors. Continuous exposure thickens cervical mucus, which blocks sperm penetration, and suppresses the mid-cycle surge of luteinising hormone.",
+    "As emergency contraception, a high single dose before the LH surge postpones or prevents ovulation; it is not effective once ovulation has occurred and does not disrupt an implanted pregnancy. Locally released levonorgestrel in the intrauterine system thins the endometrium, reducing menstrual bleeding."
+  ],
+  "uses": [
+    "Emergency contraception",
+    "Long-acting contraception (intrauterine system and subdermal implant)",
+    "Heavy menstrual bleeding (intrauterine system)",
+    "Endometrial protection during oestrogen therapy (some intrauterine systems)",
+    "Combined oral contraception with ethinylestradiol"
+  ],
+  "history": [
+    {
+      "year": 1963,
+      "title": "Norgestrel synthesised",
+      "detail": "Herchel Smith's group achieves total synthesis of norgestrel."
+    },
+    {
+      "year": 1990,
+      "title": "Norplant",
+      "detail": "The FDA approves the levonorgestrel Norplant implant; the levonorgestrel IUD is introduced in Finland."
+    },
+    {
+      "year": 1998,
+      "title": "WHO trial",
+      "detail": "Levonorgestrel alone proves more effective and better tolerated than the oestrogen–progestin Yuzpe regimen for emergency contraception."
+    },
+    {
+      "year": 1999,
+      "title": "Plan B",
+      "detail": "FDA approves Plan B two-tablet emergency contraception."
+    },
+    {
+      "year": 2000,
+      "title": "Mirena in US",
+      "detail": "FDA approves the Mirena levonorgestrel intrauterine system."
+    },
+    {
+      "year": 2006,
+      "title": "OTC access",
+      "detail": "Plan B becomes available without prescription in the US for adults."
+    },
+    {
+      "year": 2013,
+      "title": "No age limit",
+      "detail": "After court rulings, Plan B One-Step becomes available OTC without age restriction in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 24–32 hours",
+    "bioavailability": "nearly 100% oral",
+    "metabolism": "hepatic CYP3A4 reduction and conjugation",
+    "excretion": "urine and faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea",
+      "irregular bleeding",
+      "headache",
+      "breast tenderness",
+      "abdominal pain",
+      "fatigue"
+    ],
+    "serious": [
+      "ectopic pregnancy if contraception fails",
+      "uterine perforation or expulsion (IUD)",
+      "ovarian cysts"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Enzyme-inducing drugs such as rifampicin and carbamazepine reduce levonorgestrel levels, and a double dose or copper IUD is advised for emergency contraception.",
+    "Efficacy of oral emergency contraception declines the longer it is delayed after intercourse, within the labelled 72 hours."
+  ],
+  "related": [
+    "ethinylestradiol-levonorgestrel",
+    "mifepristone",
+    "estradiol",
+    "rifampicin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Levonorgestrel",
+      "url": "https://en.wikipedia.org/wiki/Levonorgestrel"
+    },
+    {
+      "title": "DailyMed: levonorgestrel labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=LEVONORGESTREL"
+    },
+    {
+      "title": "Wikipedia: Hormonal intrauterine device",
+      "url": "https://en.wikipedia.org/wiki/Hormonal_intrauterine_device"
+    }
+  ],
+  "stage": "written"
 }

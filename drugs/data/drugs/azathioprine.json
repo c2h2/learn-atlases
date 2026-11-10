@@ -1,36 +1,126 @@
 {
   "slug": "azathioprine",
   "name": "Azathioprine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BW 57-322"
+  ],
+  "brands": [
+    "Imuran",
+    "Azasan"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Purine antimetabolite (immunosuppressant)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral tablets once daily; IV where oral is not possible",
+  "targets": [
+    "HPRT1 (activation)",
+    "RAC1"
+  ],
+  "origin": "synthetic",
+  "originator": "Burroughs Wellcome (Gertrude Elion and George Hitchings)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1968,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Imuran"
+  },
+  "discovery": {
+    "year": 1957,
+    "by": "Gertrude Elion and George Hitchings, Burroughs Wellcome",
+    "note": "Designed as an imidazole derivative of 6-mercaptopurine that releases it slowly, with a better therapeutic index."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Elion and Hitchings' purine analogue that made early kidney transplantation possible",
+  "summary": "Azathioprine is a prodrug of 6-mercaptopurine whose thioguanine nucleotide metabolites interfere with DNA synthesis and lymphocyte function. It enabled the first successful kidney transplants between unrelated people and remains widely used for autoimmune disease. Toxicity depends strongly on TPMT and NUDT15 genotype.",
+  "mechanism": [
+    "Azathioprine is converted non-enzymatically by glutathione to 6-mercaptopurine, which is metabolised via hypoxanthine-guanine phosphoribosyltransferase into thioinosine and then thioguanine nucleotides.",
+    "These nucleotides are incorporated into DNA and inhibit de novo purine synthesis, suppressing proliferation of T and B lymphocytes. 6-thio-GTP also blocks Rac1 activation in T cells, promoting their apoptosis. Thiopurine methyltransferase (TPMT) and xanthine oxidase inactivate 6-MP, so low TPMT activity or allopurinol co-treatment can cause severe toxicity."
+  ],
+  "uses": [
+    "Prevention of kidney transplant rejection",
+    "Rheumatoid arthritis",
+    "Inflammatory bowel disease, autoimmune hepatitis, lupus and vasculitis (common off-label or locally labelled uses)"
+  ],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Synthesis",
+      "detail": "Elion and Hitchings synthesise azathioprine at Burroughs Wellcome."
+    },
+    {
+      "year": 1960,
+      "title": "Animal transplants",
+      "detail": "Roy Calne shows prolonged kidney graft survival in dogs."
+    },
+    {
+      "year": 1962,
+      "title": "First unrelated kidney transplant",
+      "detail": "Joseph Murray's team in Boston achieves long-term success with an unrelated donor kidney using azathioprine."
+    },
+    {
+      "year": 1968,
+      "title": "FDA approval",
+      "detail": "Imuran approved for prevention of renal transplant rejection."
+    },
+    {
+      "year": 1980,
+      "title": "TPMT genetics",
+      "detail": "Inherited variation in thiopurine methyltransferase activity is described, later linked to severe myelotoxicity."
+    },
+    {
+      "year": 1988,
+      "title": "Nobel Prize",
+      "detail": "Elion and Hitchings share the Nobel Prize in Physiology or Medicine with James Black."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2 hours (azathioprine); active metabolites persist much longer",
+    "bioavailability": "about 47–60%",
+    "metabolism": "glutathione conversion to 6-mercaptopurine; TPMT, xanthine oxidase and HPRT pathways",
+    "excretion": "urine as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+    "common": [
+      "nausea and vomiting",
+      "leukopenia",
+      "infections",
+      "raised liver enzymes"
+    ],
+    "serious": [
+      "severe myelosuppression (TPMT or NUDT15 deficiency)",
+      "malignancy including hepatosplenic T-cell lymphoma and skin cancer",
+      "pancreatitis",
+      "hepatotoxicity and veno-occlusive disease",
+      "progressive multifocal leukoencephalopathy"
+    ],
+    "boxed_warning": "Chronic immunosuppression with azathioprine increases the risk of malignancy, including post-transplant lymphoma and hepatosplenic T-cell lymphoma in inflammatory bowel disease."
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "ciclosporin",
+    "mycophenolate-mofetil",
+    "allopurinol",
+    "prednisolone",
+    "methotrexate",
+    "infliximab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Azathioprine",
+      "url": "https://en.wikipedia.org/wiki/Azathioprine"
+    },
+    {
+      "title": "DailyMed: azathioprine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=AZATHIOPRINE"
+    }
+  ],
+  "stage": "written"
 }

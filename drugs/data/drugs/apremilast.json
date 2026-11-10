@@ -1,36 +1,130 @@
 {
   "slug": "apremilast",
   "name": "Apremilast",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CC-10004"
+  ],
+  "brands": [
+    "Otezla"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Phosphodiesterase 4 (PDE4) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets twice daily after a 5-day titration",
+  "targets": [
+    "PDE4A",
+    "PDE4B",
+    "PDE4C",
+    "PDE4D"
+  ],
+  "origin": "synthetic",
+  "originator": "Celgene",
+  "owner": "Amgen",
+  "first_approval": {
+    "year": 2014,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Otezla"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Celgene",
+    "note": "Emerged from Celgene's programme of thalidomide-derived small molecules that inhibit TNF-alpha production through PDE4."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Oral PDE4 inhibitor for psoriasis, psoriatic arthritis and Behçet's ulcers",
+  "summary": "Apremilast is an oral inhibitor of phosphodiesterase 4 that raises intracellular cyclic AMP in immune cells and dampens inflammatory cytokine production. It is used for plaque psoriasis, psoriatic arthritis and oral ulcers of Behçet's disease. It does not require laboratory monitoring and has no boxed warning.",
+  "mechanism": [
+    "PDE4 is the main enzyme that degrades cyclic AMP in leukocytes. Apremilast inhibits PDE4, increasing cAMP and activating protein kinase A.",
+    "Higher cAMP reduces production of TNF-alpha, interleukin-17, interleukin-23 and interferon-gamma and increases anti-inflammatory interleukin-10, modulating the immune pathways that drive psoriatic skin and joint disease."
+  ],
+  "uses": [
+    "Moderate to severe plaque psoriasis (adults and children)",
+    "Active psoriatic arthritis",
+    "Oral ulcers associated with Behçet's disease",
+    "Genital psoriasis"
+  ],
+  "history": [
+    {
+      "year": 2014,
+      "title": "FDA approval",
+      "detail": "Otezla approved for psoriatic arthritis in March and plaque psoriasis in September."
+    },
+    {
+      "year": 2015,
+      "title": "EU approval",
+      "detail": "Authorised in the EU for psoriasis and psoriatic arthritis."
+    },
+    {
+      "year": 2019,
+      "title": "Behçet's disease",
+      "detail": "FDA approves apremilast for oral ulcers of Behçet's disease."
+    },
+    {
+      "year": 2019,
+      "title": "Sale to Amgen",
+      "detail": "Amgen buys Otezla for about $13.4 billion as a divestiture for the Bristol Myers Squibb–Celgene merger."
+    },
+    {
+      "year": 2021,
+      "title": "Mild psoriasis",
+      "detail": "FDA extends approval to mild-to-moderate plaque psoriasis."
+    },
+    {
+      "year": 2024,
+      "title": "Paediatric psoriasis",
+      "detail": "FDA approves use in children aged six and older with moderate to severe plaque psoriasis."
+    }
+  ],
+  "pk": {
+    "half_life": "about 6–9 hours",
+    "bioavailability": "about 73%",
+    "metabolism": "CYP3A4 oxidation and non-CYP hydrolysis",
+    "excretion": "urine (58%) and faeces (39%) as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "diarrhoea",
+      "nausea",
+      "headache",
+      "upper respiratory infections",
+      "weight loss"
+    ],
+    "serious": [
+      "severe diarrhoea, nausea and vomiting",
+      "depression and suicidal thoughts",
+      "significant weight loss"
+    ],
     "boxed_warning": null
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "deucravacitinib",
+    "roflumilast",
+    "thalidomide",
+    "methotrexate",
+    "secukinumab",
+    "ustekinumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Apremilast",
+      "url": "https://en.wikipedia.org/wiki/Apremilast"
+    },
+    {
+      "title": "DailyMed: otezla labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=OTEZLA"
+    },
+    {
+      "title": "EMA EPAR: Otezla",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/otezla"
+    }
+  ],
+  "stage": "written"
 }

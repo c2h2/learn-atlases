@@ -1,36 +1,131 @@
 {
   "slug": "nitrous-oxide",
   "name": "Nitrous oxide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "dinitrogen monoxide",
+    "N2O",
+    "laughing gas"
+  ],
+  "brands": [
+    "Entonox (with oxygen)",
+    "Nitronox"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Inhaled anaesthetic and analgesic gas",
+  "modality": "gas",
+  "routes": [
+    "inhaled"
+  ],
+  "route_note": "inhaled via mask or breathing circuit, typically 50% with oxygen for analgesia or up to 70% as an anaesthetic adjunct",
+  "targets": [
+    "GRIN1",
+    "GRIN2A"
+  ],
+  "origin": "synthetic",
+  "originator": "Joseph Priestley (first prepared); Humphry Davy (analgesic properties)",
+  "owner": "generic (medical gas suppliers)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1772,
+    "by": "Joseph Priestley",
+    "note": "First prepared by heating iron filings moistened with nitric acid; in 1800 Humphry Davy described its analgesic effects and suggested surgical use."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "medical gas; non-medical possession controlled in some countries (UK Class C since 2023)",
+  "tagline": "Oldest anaesthetic gas still in use, now also a public health concern",
+  "summary": "Nitrous oxide is an inhaled gas with analgesic and weak anaesthetic properties. Mixed with oxygen it is used for labour pain, emergency and dental analgesia, and as an adjunct to general anaesthesia. Recreational misuse can inactivate vitamin B12 and cause serious neurological damage, and the gas is a potent greenhouse gas.",
+  "mechanism": [
+    "Nitrous oxide is a non-competitive antagonist of NMDA-type glutamate receptors, which contributes to its analgesic and anaesthetic effects. It also releases endogenous opioid peptides and stimulates descending noradrenergic pain-inhibitory pathways in the spinal cord.",
+    "Its low blood–gas partition coefficient (about 0.47) means rapid onset and offset. Its minimum alveolar concentration is above 100%, so it cannot produce full anaesthesia alone at normal pressure. It irreversibly oxidises the cobalt of vitamin B12, inactivating methionine synthase with prolonged or repeated exposure."
+  ],
+  "uses": [
+    "Analgesia in labour, emergency care and procedures (50% with oxygen)",
+    "Adjunct to general anaesthesia",
+    "Dental sedation and analgesia"
+  ],
+  "history": [
+    {
+      "year": 1772,
+      "title": "Discovery",
+      "detail": "Joseph Priestley prepares the gas."
+    },
+    {
+      "year": 1800,
+      "title": "Davy's research",
+      "detail": "Humphry Davy publishes his researches on nitrous oxide, noting its analgesic effect."
+    },
+    {
+      "year": 1844,
+      "title": "Dental anaesthesia",
+      "detail": "Dentist Horace Wells has a tooth extracted painlessly under nitrous oxide in Hartford, Connecticut."
+    },
+    {
+      "year": 1845,
+      "title": "Failed demonstration",
+      "detail": "Wells's public demonstration at Massachusetts General Hospital is judged a failure."
+    },
+    {
+      "year": 1961,
+      "title": "Entonox",
+      "detail": "Michael Tunstall describes premixed 50% nitrous oxide and oxygen for labour analgesia."
+    },
+    {
+      "year": 2014,
+      "title": "ENIGMA-II",
+      "detail": "A large trial finds nitrous oxide does not increase cardiovascular complications after major surgery."
+    },
+    {
+      "year": 2023,
+      "title": "UK controls",
+      "detail": "Nitrous oxide becomes a Class C controlled drug in the UK for non-legitimate possession."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5 minutes (elimination by exhalation)",
+    "bioavailability": "rapid alveolar uptake",
+    "metabolism": "negligible (less than 0.01%)",
+    "excretion": "exhaled unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea and vomiting",
+      "dizziness",
+      "euphoria",
+      "sedation"
+    ],
+    "serious": [
+      "vitamin B12 inactivation causing myeloneuropathy and megaloblastic anaemia",
+      "expansion of gas-filled spaces (pneumothorax, bowel obstruction, middle ear)",
+      "hypoxia if given without adequate oxygen",
+      "occupational exposure risks"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Nitrous oxide is a greenhouse gas about 270–300 times more potent than carbon dioxide over 100 years, and many hospitals are decommissioning piped supplies to cut emissions."
+  ],
+  "related": [
+    "sevoflurane",
+    "propofol",
+    "cyanocobalamin",
+    "ketamine",
+    "midazolam"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Nitrous oxide",
+      "url": "https://en.wikipedia.org/wiki/Nitrous_oxide"
+    },
+    {
+      "title": "Wikipedia: Nitrous oxide (medication)",
+      "url": "https://en.wikipedia.org/wiki/Nitrous_oxide_(medication)"
+    },
+    {
+      "title": "DailyMed: nitrous oxide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=NITROUS+OXIDE"
+    }
+  ],
+  "stage": "written"
 }

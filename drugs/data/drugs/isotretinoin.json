@@ -1,36 +1,143 @@
 {
   "slug": "isotretinoin",
   "name": "Isotretinoin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "13-cis-retinoic acid",
+    "Ro 4-3780"
+  ],
+  "brands": [
+    "Accutane",
+    "Roaccutane",
+    "Absorica",
+    "Claravis",
+    "Isotrex (topical)"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Retinoid (vitamin A derivative)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "topical"
+  ],
+  "route_note": "oral capsules once or twice daily with food for 15–20 weeks; topical gel in some countries",
+  "targets": [
+    "RARA",
+    "RARB",
+    "RARG"
+  ],
+  "origin": "synthetic",
+  "originator": "Hoffmann-La Roche",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1982,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Accutane"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1979,
+    "by": "Gary Peck and colleagues, US National Cancer Institute",
+    "note": "A small trial showed prolonged remission of severe nodulocystic acne with oral 13-cis-retinoic acid, which Roche had made earlier while studying retinoids."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription; restricted (iPLEDGE REMS in the US)",
+  "tagline": "Highly effective acne retinoid and potent teratogen under strict controls",
+  "summary": "Isotretinoin is an oral retinoid that shrinks sebaceous glands and can produce long-term remission of severe acne. It is one of the most potent known human teratogens, so it is supplied under strict pregnancy prevention programmes such as iPLEDGE. It is also used in maintenance therapy for high-risk neuroblastoma.",
+  "mechanism": [
+    "Isotretinoin acts largely after isomerisation to all-trans-retinoic acid, which binds nuclear retinoic acid receptors and alters gene transcription.",
+    "It induces apoptosis and reduces the size and output of sebaceous glands, lowering sebum production by up to 90%. This normalises follicular keratinisation, reduces Cutibacterium acnes colonisation and decreases inflammation. In neuroblastoma it promotes differentiation of tumour cells."
+  ],
+  "uses": [
+    "Severe recalcitrant nodular or nodulocystic acne",
+    "Severe acne unresponsive to antibiotics and topical therapy (EU)",
+    "Maintenance therapy for high-risk neuroblastoma (off-label in many countries)"
+  ],
+  "history": [
+    {
+      "year": 1979,
+      "title": "NEJM report",
+      "detail": "Peck and colleagues report dramatic responses in severe cystic acne."
+    },
+    {
+      "year": 1982,
+      "title": "FDA approval",
+      "detail": "Accutane approved for severe recalcitrant nodular acne."
+    },
+    {
+      "year": 1983,
+      "title": "Birth defects",
+      "detail": "Reports of retinoid embryopathy appear within a year of launch."
+    },
+    {
+      "year": 2002,
+      "title": "SMART programme",
+      "detail": "FDA strengthens risk management with qualification stickers and pregnancy testing."
+    },
+    {
+      "year": 2006,
+      "title": "iPLEDGE",
+      "detail": "A mandatory registry for prescribers, pharmacies and patients begins in the US."
+    },
+    {
+      "year": 2009,
+      "title": "Accutane withdrawn",
+      "detail": "Roche stops selling Accutane in the US, citing generic competition and litigation; generics remain available."
+    },
+    {
+      "year": 2023,
+      "title": "iPLEDGE changes",
+      "detail": "FDA modifies iPLEDGE requirements, including removing the 19-day lockout for a missed prescription window."
+    }
+  ],
+  "pk": {
+    "half_life": "about 21 hours (isotretinoin)",
+    "bioavailability": "about 25%, roughly doubled with food",
+    "metabolism": "CYP2C8, CYP2C9, CYP3A4; isomerisation to tretinoin and oxidation to 4-oxo-isotretinoin",
+    "excretion": "urine and faeces"
+  },
+  "safety": {
+    "common": [
+      "dry lips and cheilitis",
+      "dry skin and eyes",
+      "nosebleeds",
+      "raised triglycerides",
+      "muscle and joint pain",
+      "photosensitivity"
+    ],
+    "serious": [
+      "severe birth defects and miscarriage",
+      "depression, psychosis and suicidal thoughts",
+      "idiopathic intracranial hypertension",
+      "pancreatitis",
+      "hepatotoxicity",
+      "severe skin reactions",
+      "inflammatory bowel disease (association debated)"
+    ],
+    "boxed_warning": "Isotretinoin must not be used by pregnant patients because of the high risk of severe birth defects; in the US it is available only through the iPLEDGE REMS programme."
+  },
+  "facts": [
+    "Tetracycline antibiotics should not be combined with isotretinoin because both raise the risk of intracranial hypertension."
+  ],
+  "related": [
+    "tretinoin",
+    "doxycycline",
+    "minocycline"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Isotretinoin",
+      "url": "https://en.wikipedia.org/wiki/Isotretinoin"
+    },
+    {
+      "title": "DailyMed: isotretinoin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ISOTRETINOIN"
+    },
+    {
+      "title": "Wikipedia: iPLEDGE",
+      "url": "https://en.wikipedia.org/wiki/iPLEDGE"
+    }
+  ],
+  "stage": "written"
 }

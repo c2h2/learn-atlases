@@ -1,36 +1,145 @@
 {
   "slug": "ciclosporin",
   "name": "Ciclosporin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "cyclosporine",
+    "cyclosporin A",
+    "CsA"
+  ],
+  "brands": [
+    "Sandimmune",
+    "Neoral",
+    "Restasis",
+    "Ikervis",
+    "Gengraf"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Calcineurin inhibitor (immunosuppressant)",
+  "modality": "peptide",
+  "routes": [
+    "oral",
+    "iv",
+    "ophthalmic"
+  ],
+  "route_note": "oral capsules or solution twice daily; IV infusion; eye drops or emulsion for dry eye",
+  "targets": [
+    "PPIA",
+    "PPP3CA"
+  ],
+  "origin": "natural",
+  "originator": "Sandoz (now Novartis)",
+  "owner": "Novartis (Sandimmune, Neoral); AbbVie (Restasis); generic (many)",
+  "first_approval": {
+    "year": 1983,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Sandimmune"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1972,
+    "by": "Jean-François Borel and colleagues, Sandoz",
+    "note": "A cyclic undecapeptide from the soil fungus Tolypocladium inflatum, collected in Norway in 1969, was found to suppress lymphocytes selectively without broad cytotoxicity."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Fungal peptide that transformed organ transplantation in the 1980s",
+  "summary": "Ciclosporin is a cyclic peptide from a soil fungus that inhibits calcineurin and blocks T-cell activation. Its introduction in the early 1980s greatly improved survival of transplanted kidneys, hearts and livers. It is also used for autoimmune diseases and, as eye drops, for dry eye disease.",
+  "mechanism": [
+    "Ciclosporin binds the intracellular protein cyclophilin. The ciclosporin–cyclophilin complex inhibits calcineurin, a calcium-dependent phosphatase that dephosphorylates the transcription factor NFAT.",
+    "Without NFAT entering the nucleus, T cells fail to transcribe interleukin-2 and other cytokines needed for proliferation, so the immune response to a graft or autoantigen is suppressed. It does not depress the bone marrow like antiproliferative agents."
+  ],
+  "uses": [
+    "Prevention of rejection in kidney, liver, heart and other organ transplants",
+    "Severe rheumatoid arthritis",
+    "Severe plaque psoriasis",
+    "Atopic dermatitis and nephrotic syndrome (some countries)",
+    "Chronic dry eye disease (ophthalmic)"
+  ],
+  "history": [
+    {
+      "year": 1969,
+      "title": "Soil sample",
+      "detail": "A Sandoz employee collects soil containing Tolypocladium inflatum on the Hardangervidda plateau in Norway."
+    },
+    {
+      "year": 1972,
+      "title": "Immunosuppression found",
+      "detail": "Jean-François Borel shows selective suppression of lymphocytes."
+    },
+    {
+      "year": 1978,
+      "title": "First transplants",
+      "detail": "Roy Calne in Cambridge reports use in kidney transplant recipients."
+    },
+    {
+      "year": 1983,
+      "title": "FDA approval",
+      "detail": "Sandimmune approved for organ transplantation."
+    },
+    {
+      "year": 1995,
+      "title": "Neoral",
+      "detail": "A microemulsion formulation with more reliable absorption is approved."
+    },
+    {
+      "year": 2002,
+      "title": "Restasis",
+      "detail": "FDA approves ciclosporin ophthalmic emulsion for dry eye."
+    }
+  ],
+  "pk": {
+    "half_life": "about 8 hours (range 5–18)",
+    "bioavailability": "about 30% (Sandimmune), higher and less variable with Neoral",
+    "metabolism": "extensive CYP3A4; P-glycoprotein substrate",
+    "excretion": "bile and faeces; about 6% urine"
+  },
+  "safety": {
+    "common": [
+      "hypertension",
+      "nephrotoxicity",
+      "tremor",
+      "hirsutism",
+      "gingival hyperplasia",
+      "hyperlipidaemia",
+      "hyperkalaemia"
+    ],
+    "serious": [
+      "acute and chronic nephrotoxicity",
+      "serious infections",
+      "lymphoma and skin cancer",
+      "posterior reversible encephalopathy syndrome",
+      "hepatotoxicity",
+      "thrombotic microangiopathy"
+    ],
+    "boxed_warning": "Only physicians experienced in immunosuppression should prescribe; increased susceptibility to infection and lymphoma; Sandimmune and Neoral are not bioequivalent; in psoriasis and rheumatoid arthritis it can cause hypertension and nephrotoxicity."
+  },
+  "facts": [
+    "Grapefruit juice raises ciclosporin levels by inhibiting intestinal CYP3A4.",
+    "Its discovery is often cited as the start of the modern era of solid-organ transplantation."
+  ],
+  "related": [
+    "tacrolimus",
+    "sirolimus",
+    "mycophenolate-mofetil",
+    "azathioprine",
+    "prednisolone",
+    "methotrexate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ciclosporin",
+      "url": "https://en.wikipedia.org/wiki/Ciclosporin"
+    },
+    {
+      "title": "DailyMed: cyclosporine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=CYCLOSPORINE"
+    },
+    {
+      "title": "EMA EPAR: Ikervis",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ikervis"
+    }
+  ],
+  "stage": "written"
 }

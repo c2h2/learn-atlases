@@ -1,36 +1,141 @@
 {
   "slug": "ruxolitinib",
   "name": "Ruxolitinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "INCB018424",
+    "INC424",
+    "ruxolitinib phosphate"
+  ],
+  "brands": [
+    "Jakafi",
+    "Jakavi",
+    "Opzelura"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Janus kinase (JAK1/JAK2) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "topical"
+  ],
+  "route_note": "oral tablets twice daily; 1.5% cream for atopic dermatitis and vitiligo",
+  "targets": [
+    "JAK1",
+    "JAK2"
+  ],
+  "origin": "synthetic",
+  "originator": "Incyte",
+  "owner": "Incyte (US); Novartis (outside US)",
+  "first_approval": {
+    "year": 2011,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Jakafi"
+  },
+  "discovery": {
+    "year": 2005,
+    "by": "Incyte",
+    "note": "Selected as a potent ATP-competitive inhibitor of JAK1 and JAK2 after the 2005 discovery of the JAK2 V617F mutation in myeloproliferative neoplasms."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First JAK inhibitor, for myelofibrosis, polycythaemia vera and graft-versus-host disease",
+  "summary": "Ruxolitinib is an oral inhibitor of Janus kinases JAK1 and JAK2. It reduces spleen size and symptoms in myelofibrosis, controls polycythaemia vera, and treats steroid-refractory graft-versus-host disease. A cream formulation treats atopic dermatitis and vitiligo.",
+  "mechanism": [
+    "JAK1 and JAK2 transmit signals from cytokine and growth-factor receptors, including those for erythropoietin, thrombopoietin and interleukin-6, by phosphorylating STAT proteins. Myeloproliferative neoplasms are driven by constitutive JAK–STAT activation, often from the JAK2 V617F mutation.",
+    "Ruxolitinib blocks the ATP-binding site of JAK1 and JAK2 whether or not they are mutated, reducing myeloproliferation and inflammatory cytokine signalling. It does not eradicate the mutant clone, but improves splenomegaly and constitutional symptoms. Inhibition of cytokine signalling also dampens T-cell-mediated inflammation in graft-versus-host disease and skin disease."
+  ],
+  "uses": [
+    "Intermediate- or high-risk myelofibrosis",
+    "Polycythaemia vera with inadequate response to or intolerance of hydroxyurea",
+    "Steroid-refractory acute graft-versus-host disease",
+    "Chronic graft-versus-host disease",
+    "Atopic dermatitis and non-segmental vitiligo (topical)"
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "title": "JAK2 V617F",
+      "detail": "Several groups discover the JAK2 V617F mutation in polycythaemia vera and other MPNs."
+    },
+    {
+      "year": 2011,
+      "title": "FDA approval",
+      "detail": "Jakafi approved for myelofibrosis after the COMFORT-I and COMFORT-II trials, the first JAK inhibitor approved."
+    },
+    {
+      "year": 2012,
+      "title": "EU approval",
+      "detail": "Authorised in the EU as Jakavi, marketed by Novartis."
+    },
+    {
+      "year": 2014,
+      "title": "Polycythaemia vera",
+      "detail": "FDA approves use in hydroxyurea-resistant polycythaemia vera (RESPONSE trial)."
+    },
+    {
+      "year": 2019,
+      "title": "Acute GVHD",
+      "detail": "FDA approves ruxolitinib for steroid-refractory acute graft-versus-host disease."
+    },
+    {
+      "year": 2021,
+      "title": "Chronic GVHD and cream",
+      "detail": "FDA approves use in chronic GVHD and Opzelura cream for atopic dermatitis."
+    },
+    {
+      "year": 2022,
+      "title": "Vitiligo",
+      "detail": "Opzelura becomes the first FDA-approved repigmentation treatment for vitiligo."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3 hours (5.8 hours including metabolites)",
+    "bioavailability": "at least 95%",
+    "metabolism": "CYP3A4 (and CYP2C9)",
+    "excretion": "urine (74%) and faeces (22%) as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+    "common": [
+      "thrombocytopenia",
+      "anaemia",
+      "bruising",
+      "dizziness",
+      "headache",
+      "raised cholesterol"
+    ],
+    "serious": [
+      "serious infections including tuberculosis, PML and herpes zoster",
+      "symptom flare on abrupt discontinuation",
+      "non-melanoma skin cancer",
+      "major cardiovascular events and thrombosis (JAK inhibitor class)",
+      "lymphoma and other malignancies"
+    ],
+    "boxed_warning": "Opzelura cream carries the JAK inhibitor class boxed warning for serious infections, mortality, malignancy, major adverse cardiovascular events and thrombosis; oral Jakafi does not carry a boxed warning."
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "hydroxyurea",
+    "tofacitinib",
+    "baricitinib",
+    "upadacitinib",
+    "deucravacitinib"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ruxolitinib",
+      "url": "https://en.wikipedia.org/wiki/Ruxolitinib"
+    },
+    {
+      "title": "DailyMed: ruxolitinib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=RUXOLITINIB"
+    },
+    {
+      "title": "EMA EPAR: Jakavi",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/jakavi"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,133 @@
 {
   "slug": "cyanocobalamin",
   "name": "Cyanocobalamin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "vitamin B12",
+    "cobalamin"
+  ],
+  "brands": [
+    "Nascobal",
+    "Cyanokit (hydroxocobalamin, related)",
+    "CaloMist"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Vitamin B12 (cobalamin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im",
+    "sc",
+    "intranasal"
+  ],
+  "route_note": "IM or deep SC injection for pernicious anaemia; high-dose oral or nasal spray for maintenance",
+  "targets": [
+    "MTR",
+    "MMUT"
+  ],
+  "origin": "natural",
+  "originator": "isolated by Merck (Karl Folkers' group) and Glaxo (Lester Smith)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "discovery": {
+    "year": 1948,
+    "by": "Edward Rickes, Karl Folkers and colleagues (Merck); E. Lester Smith (Glaxo)",
+    "note": "Red crystalline vitamin B12 was isolated from liver as the anti-pernicious anaemia factor; cyanocobalamin is the stable form produced during purification."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "OTC (oral); prescription for injection in many countries",
+  "tagline": "Synthetic vitamin B12 that cures pernicious anaemia",
+  "summary": "Cyanocobalamin is a stable synthetic form of vitamin B12 that the body converts into the active coenzymes methylcobalamin and adenosylcobalamin. It treats and prevents B12 deficiency, including pernicious anaemia, where loss of intrinsic factor prevents absorption from food.",
+  "mechanism": [
+    "Vitamin B12 is a cobalt-containing corrinoid. Methylcobalamin is the cofactor for methionine synthase, which regenerates methionine from homocysteine and releases tetrahydrofolate for DNA synthesis. Adenosylcobalamin is the cofactor for methylmalonyl-CoA mutase in odd-chain fatty-acid and amino-acid metabolism.",
+    "Deficiency causes megaloblastic anaemia through folate trapping and impaired DNA synthesis, and neurological damage including subacute combined degeneration of the spinal cord. Dietary B12 needs gastric intrinsic factor for ileal uptake; injected or very high oral doses bypass this requirement, as about 1% is absorbed by passive diffusion."
+  ],
+  "uses": [
+    "Pernicious anaemia",
+    "Vitamin B12 deficiency from malabsorption, gastrectomy, diet or medicines such as metformin",
+    "Prevention of deficiency in vegans and older adults"
+  ],
+  "history": [
+    {
+      "year": 1926,
+      "title": "Liver therapy",
+      "detail": "George Minot and William Murphy show that eating raw liver cures pernicious anaemia."
+    },
+    {
+      "year": 1934,
+      "title": "Nobel Prize",
+      "detail": "Whipple, Minot and Murphy receive the Nobel Prize in Physiology or Medicine for liver therapy."
+    },
+    {
+      "year": 1948,
+      "title": "Isolation",
+      "detail": "Vitamin B12 is crystallised independently at Merck and Glaxo."
+    },
+    {
+      "year": 1956,
+      "title": "Structure solved",
+      "detail": "Dorothy Hodgkin determines the structure of vitamin B12 by X-ray crystallography."
+    },
+    {
+      "year": 1964,
+      "title": "Hodgkin's Nobel",
+      "detail": "Hodgkin receives the Nobel Prize in Chemistry, partly for the B12 structure."
+    },
+    {
+      "year": 1972,
+      "title": "Total synthesis",
+      "detail": "Robert Woodward and Albert Eschenmoser complete the total synthesis of vitamin B12."
+    },
+    {
+      "year": 1996,
+      "title": "Nasal gel",
+      "detail": "FDA approves intranasal cyanocobalamin (Nascobal gel), later replaced by a spray."
+    }
+  ],
+  "pk": {
+    "half_life": "about 6 days in plasma; body stores last years",
+    "bioavailability": "intrinsic-factor-dependent for dietary doses; about 1% passive absorption at high oral doses",
+    "metabolism": "converted to methylcobalamin and adenosylcobalamin; stored in liver",
+    "excretion": "bile with enterohepatic recycling; urine after injection"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "injection-site pain",
+      "diarrhoea",
+      "itching",
+      "headache"
+    ],
+    "serious": [
+      "anaphylaxis (rare)",
+      "hypokalaemia early in treatment of severe megaloblastic anaemia",
+      "pulmonary oedema and heart failure early in treatment"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Vitamin B12 is made only by bacteria and archaea; animals obtain it from food or symbiotic microbes, which is why vegans need supplements.",
+    "Commercial vitamin B12 is produced by bacterial fermentation, for example with Pseudomonas denitrificans."
+  ],
+  "related": [
+    "folic-acid",
+    "ferrous-sulfate",
+    "metformin",
+    "omeprazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Cyanocobalamin",
+      "url": "https://en.wikipedia.org/wiki/Cyanocobalamin"
+    },
+    {
+      "title": "Wikipedia: Vitamin B12",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_B12"
+    },
+    {
+      "title": "DailyMed: cyanocobalamin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=CYANOCOBALAMIN"
+    }
+  ],
+  "stage": "written"
 }

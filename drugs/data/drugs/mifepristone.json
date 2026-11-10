@@ -1,36 +1,141 @@
 {
   "slug": "mifepristone",
   "name": "Mifepristone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "RU-486",
+    "RU 38486"
+  ],
+  "brands": [
+    "Mifeprex",
+    "Mifegyne",
+    "Korlym",
+    "Mifegymiso (with misoprostol)"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Progesterone and glucocorticoid receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "single oral 200 mg tablet followed by misoprostol for medical abortion; daily tablets for Cushing's syndrome",
+  "targets": [
+    "PGR",
+    "NR3C1"
+  ],
+  "origin": "synthetic",
+  "originator": "Roussel Uclaf (Georges Teutsch; Étienne-Émile Baulieu)",
+  "owner": "Danco Laboratories and GenBioPro (US); Nordic Group/Exelgyn (Europe); Corcept Therapeutics (Korlym)",
+  "first_approval": {
+    "year": 1988,
+    "agency": "other",
+    "country": "France",
+    "brand": "Mifégyne"
+  },
+  "discovery": {
+    "year": 1980,
+    "by": "Georges Teutsch and colleagues at Roussel Uclaf, with Étienne-Émile Baulieu",
+    "note": "Synthesised during a glucocorticoid antagonist programme; Baulieu recognised its antiprogestogen activity and potential for medical abortion."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; restricted distribution (REMS in the US)",
+  "tagline": "Progesterone receptor blocker used with misoprostol for medical abortion",
+  "summary": "Mifepristone blocks progesterone receptors and, at higher doses, glucocorticoid receptors. Combined with misoprostol it is the standard regimen for medical termination of early pregnancy and management of miscarriage; at daily doses it controls hyperglycaemia in Cushing's syndrome. It has been one of the most politically contested medicines in many countries.",
+  "mechanism": [
+    "Pregnancy depends on progesterone to maintain the decidua and keep the myometrium quiescent. Mifepristone competitively binds the progesterone receptor, causing decidual breakdown, detachment of the pregnancy, cervical softening and increased uterine sensitivity to prostaglandins.",
+    "Misoprostol, given 24–48 hours later, then induces uterine contractions to expel the pregnancy. At higher doses mifepristone also blocks the glucocorticoid receptor, which reduces the effects of excess cortisol in Cushing's syndrome."
+  ],
+  "uses": [
+    "Medical termination of intrauterine pregnancy (with misoprostol)",
+    "Hyperglycaemia secondary to endogenous Cushing's syndrome (Korlym)",
+    "Management of early pregnancy loss and cervical priming (in some countries)"
+  ],
+  "history": [
+    {
+      "year": 1980,
+      "title": "Synthesis",
+      "detail": "RU-486 is synthesised at Roussel Uclaf."
+    },
+    {
+      "year": 1988,
+      "title": "French approval",
+      "detail": "France approves mifepristone; after Roussel Uclaf suspends distribution amid protests, the French government orders it back on the market."
+    },
+    {
+      "year": 1991,
+      "title": "UK approval",
+      "detail": "The UK licenses mifepristone, followed by Sweden in 1992."
+    },
+    {
+      "year": 2000,
+      "title": "FDA approval",
+      "detail": "FDA approves Mifeprex for termination of pregnancy up to 49 days, under restricted distribution."
+    },
+    {
+      "year": 2012,
+      "title": "Korlym",
+      "detail": "FDA approves mifepristone for hyperglycaemia in Cushing's syndrome."
+    },
+    {
+      "year": 2016,
+      "title": "Label update",
+      "detail": "FDA extends use to 70 days of gestation and lowers the labelled dose."
+    },
+    {
+      "year": 2023,
+      "title": "REMS modified",
+      "detail": "FDA permanently removes the in-person dispensing requirement and allows certified pharmacies to dispense."
+    },
+    {
+      "year": 2024,
+      "title": "Supreme Court",
+      "detail": "The US Supreme Court unanimously rejects a challenge to FDA's mifepristone approvals for lack of standing."
+    }
+  ],
+  "pk": {
+    "half_life": "about 18 hours initially; terminal phase up to about 85 hours",
+    "bioavailability": "about 69%",
+    "metabolism": "CYP3A4 demethylation and hydroxylation",
+    "excretion": "faecal (about 83%), urine (about 9%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+    "common": [
+      "abdominal cramping",
+      "vaginal bleeding",
+      "nausea",
+      "vomiting",
+      "diarrhoea",
+      "headache"
+    ],
+    "serious": [
+      "prolonged heavy bleeding",
+      "serious bacterial infection and sepsis",
+      "ectopic pregnancy not treated by the regimen",
+      "adrenal insufficiency and hypokalaemia (Cushing's dosing)"
+    ],
+    "boxed_warning": "Mifeprex: serious and sometimes fatal infections or bleeding can occur after abortion, and it is available only through a restricted REMS programme. Korlym: termination of pregnancy; pregnancy must be excluded before use."
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "misoprostol",
+    "levonorgestrel",
+    "oxytocin",
+    "dexamethasone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Mifepristone",
+      "url": "https://en.wikipedia.org/wiki/Mifepristone"
+    },
+    {
+      "title": "DailyMed: mifepristone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=MIFEPRISTONE"
+    },
+    {
+      "title": "FDA: Information about mifepristone",
+      "url": "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/information-about-mifepristone-medical-termination-pregnancy-through-ten-weeks-gestation"
+    }
+  ],
+  "stage": "written"
 }

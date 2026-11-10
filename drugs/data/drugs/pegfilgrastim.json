@@ -1,36 +1,125 @@
 {
   "slug": "pegfilgrastim",
   "name": "Pegfilgrastim",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "pegylated filgrastim",
+    "pegfilgrastim-jmdb",
+    "pegfilgrastim-cbqv"
+  ],
+  "brands": [
+    "Neulasta",
+    "Neulasta Onpro",
+    "Fulphila",
+    "Udenyca",
+    "Ziextenzo"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Long-acting granulocyte colony-stimulating factor",
+  "modality": "protein",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "single SC injection once per chemotherapy cycle, at least 24 hours after chemotherapy; on-body injector available",
+  "targets": [
+    "CSF3R"
+  ],
+  "origin": "biotech",
+  "originator": "Amgen",
+  "owner": "Amgen (Neulasta); biosimilars (Viatris/Biocon, Coherus, Sandoz and others)",
+  "first_approval": {
+    "year": 2002,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Neulasta"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Amgen",
+    "note": "A 20 kDa polyethylene glycol chain is attached to the N-terminal methionine of filgrastim, reducing renal clearance."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Pegylated G-CSF given once per chemotherapy cycle",
+  "summary": "Pegfilgrastim is filgrastim covalently linked to a 20 kDa polyethylene glycol, which reduces renal clearance so a single dose per chemotherapy cycle replaces daily injections. It lowers the incidence of febrile neutropenia in patients receiving myelosuppressive chemotherapy. Several biosimilars are available.",
+  "mechanism": [
+    "Like filgrastim, pegfilgrastim activates the G-CSF receptor on neutrophil precursors, increasing neutrophil production and release from the marrow.",
+    "PEGylation makes the molecule too large for glomerular filtration, so clearance depends mainly on binding to neutrophils. Levels therefore stay high during the neutropenic nadir and fall as neutrophil counts recover, a self-regulating clearance."
+  ],
+  "uses": [
+    "Reduction of febrile neutropenia with myelosuppressive chemotherapy for non-myeloid malignancies",
+    "Haematopoietic syndrome of acute radiation syndrome"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "Parent drug",
+      "detail": "Filgrastim (Neupogen) approved; daily dosing motivates a long-acting form."
+    },
+    {
+      "year": 2002,
+      "title": "FDA approval",
+      "detail": "Neulasta approved for once-per-cycle dosing; EU approval follows in 2002."
+    },
+    {
+      "year": 2015,
+      "title": "On-body injector",
+      "detail": "Neulasta Onpro kit allows automatic delivery about 27 hours after application."
+    },
+    {
+      "year": 2015,
+      "title": "Radiation syndrome",
+      "detail": "Approved for haematopoietic subsyndrome of acute radiation syndrome."
+    },
+    {
+      "year": 2018,
+      "title": "US biosimilars",
+      "detail": "Fulphila (Mylan/Biocon) and Udenyca (Coherus) become the first US pegfilgrastim biosimilars."
+    }
+  ],
+  "pk": {
+    "half_life": "about 15–80 hours, depending on neutrophil count",
+    "bioavailability": null,
+    "metabolism": "neutrophil-mediated clearance",
+    "excretion": "minimal renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "bone pain",
+      "pain in extremities"
+    ],
+    "serious": [
+      "splenic rupture",
+      "acute respiratory distress syndrome",
+      "serious allergic reactions",
+      "sickle cell crisis",
+      "glomerulonephritis",
+      "capillary leak syndrome",
+      "aortitis"
+    ],
     "boxed_warning": null
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "filgrastim",
+    "cyclophosphamide",
+    "doxorubicin",
+    "docetaxel"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Pegfilgrastim",
+      "url": "https://en.wikipedia.org/wiki/Pegfilgrastim"
+    },
+    {
+      "title": "DailyMed: pegfilgrastim labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=PEGFILGRASTIM"
+    },
+    {
+      "title": "EMA EPAR: Neulasta",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/neulasta"
+    }
+  ],
+  "stage": "written"
 }

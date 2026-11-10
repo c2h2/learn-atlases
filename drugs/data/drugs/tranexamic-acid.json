@@ -1,36 +1,142 @@
 {
   "slug": "tranexamic-acid",
   "name": "Tranexamic acid",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "TXA",
+    "AMCA",
+    "trans-4-(aminomethyl)cyclohexanecarboxylic acid"
+  ],
+  "brands": [
+    "Cyklokapron",
+    "Lysteda",
+    "Transamin"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Antifibrinolytic (lysine analogue)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "topical"
+  ],
+  "route_note": "oral tablets for heavy menstrual bleeding; IV for surgery, trauma and postpartum haemorrhage",
+  "targets": [
+    "PLG"
+  ],
+  "origin": "synthetic",
+  "originator": "Shosuke and Utako Okamoto (Japan); developed by Daiichi",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1986,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Cyklokapron"
+  },
+  "discovery": {
+    "year": 1962,
+    "by": "Shosuke Okamoto and Utako Okamoto",
+    "note": "Searching for antifibrinolytics more potent than aminocaproic acid, the Okamotos identified the trans isomer of AMCA as about ten times stronger."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; pharmacy (non-prescription) for heavy periods in some countries",
+  "tagline": "Cheap antifibrinolytic that saves lives in trauma and postpartum haemorrhage",
+  "summary": "Tranexamic acid is a synthetic lysine analogue that blocks the breakdown of fibrin clots. It reduces bleeding in surgery, heavy menstrual bleeding and haemophilia dental procedures, and large trials showed it lowers death from bleeding after trauma and childbirth when given early.",
+  "mechanism": [
+    "Fibrinolysis begins when plasminogen binds fibrin through lysine-binding sites in its kringle domains and is converted to plasmin by tissue plasminogen activator. Tranexamic acid occupies these lysine-binding sites, preventing plasminogen and plasmin from binding fibrin, so clots are not dissolved.",
+    "At high concentrations it also weakly inhibits plasmin directly. It does not promote clot formation itself but stabilises existing clots."
+  ],
+  "uses": [
+    "Cyclic heavy menstrual bleeding (oral)",
+    "Short-term use in haemophilia to reduce bleeding during tooth extraction",
+    "Prevention and treatment of surgical bleeding (off-label in many settings)",
+    "Trauma haemorrhage and postpartum haemorrhage (WHO recommended)"
+  ],
+  "history": [
+    {
+      "year": 1962,
+      "title": "Discovery",
+      "detail": "Utako and Shosuke Okamoto report AMCA as a potent antifibrinolytic in Japan."
+    },
+    {
+      "year": 1986,
+      "title": "FDA approval",
+      "detail": "Cyklokapron injection approved for haemophilia patients undergoing tooth extraction."
+    },
+    {
+      "year": 2009,
+      "title": "Oral approval",
+      "detail": "FDA approves Lysteda tablets for heavy menstrual bleeding."
+    },
+    {
+      "year": 2010,
+      "title": "CRASH-2",
+      "detail": "In over 20,000 trauma patients, early tranexamic acid reduces all-cause and bleeding deaths."
+    },
+    {
+      "year": 2017,
+      "title": "WOMAN trial",
+      "detail": "In 20,000 women with postpartum haemorrhage, tranexamic acid reduces death from bleeding; WHO then recommends it."
+    },
+    {
+      "year": 2019,
+      "title": "CRASH-3",
+      "detail": "Early tranexamic acid reduces head-injury deaths in mild-to-moderate traumatic brain injury."
+    },
+    {
+      "year": 2020,
+      "title": "HALT-IT",
+      "detail": "No benefit and more venous thrombosis in gastrointestinal bleeding."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2 hours (IV)",
+    "bioavailability": "about 30–50% oral",
+    "metabolism": "minimal",
+    "excretion": "renal, largely unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "headache",
+      "nasal and sinus symptoms",
+      "back pain",
+      "abdominal pain",
+      "musculoskeletal pain"
+    ],
+    "serious": [
+      "venous and arterial thrombosis",
+      "seizures (especially high doses in cardiac surgery)",
+      "visual disturbances",
+      "fatal reactions after accidental intrathecal injection"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Utako Okamoto, co-discoverer, could not convince obstetricians in the 1960s to test it for postpartum haemorrhage; the WOMAN trial confirmed the benefit five decades later.",
+    "Several medication errors have occurred where IV tranexamic acid was injected intrathecally instead of a spinal anaesthetic such as bupivacaine."
+  ],
+  "related": [
+    "heparin",
+    "emicizumab",
+    "octocog-alfa",
+    "oxytocin",
+    "misoprostol",
+    "bupivacaine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tranexamic acid",
+      "url": "https://en.wikipedia.org/wiki/Tranexamic_acid"
+    },
+    {
+      "title": "DailyMed: tranexamic acid labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TRANEXAMIC+ACID"
+    },
+    {
+      "title": "PubMed: CRASH-2 trial (Lancet 2010)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20554319/"
+    }
+  ],
+  "stage": "written"
 }

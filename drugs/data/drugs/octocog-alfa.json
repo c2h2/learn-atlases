@@ -1,36 +1,136 @@
 {
   "slug": "octocog-alfa",
   "name": "Octocog alfa",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "recombinant factor VIII",
+    "rFVIII",
+    "antihemophilic factor (recombinant)"
+  ],
+  "brands": [
+    "Advate",
+    "Kogenate FS",
+    "Kovaltry",
+    "Recombinate",
+    "Helixate"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Recombinant coagulation factor VIII",
+  "modality": "protein",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV injection on demand or as prophylaxis, typically every other day to three times weekly",
+  "targets": [
+    "F9",
+    "F10"
+  ],
+  "origin": "biotech",
+  "originator": "Genetics Institute/Baxter (Recombinate) and Genentech/Bayer (Kogenate)",
+  "owner": "Takeda (Advate, Recombinate); Bayer (Kogenate FS, Kovaltry)",
+  "first_approval": {
+    "year": 1992,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Recombinate"
+  },
+  "discovery": {
+    "year": 1984,
+    "by": "Genentech (Jane Gitschier, William Wood and colleagues) and Genetics Institute (John Toole and colleagues)",
+    "note": "The human factor VIII gene, one of the largest then known, was cloned and expressed in mammalian cells."
+  },
+  "generic": false,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Full-length recombinant factor VIII replacing the clotting factor missing in haemophilia A",
+  "summary": "Octocog alfa is full-length recombinant human coagulation factor VIII, produced in Chinese hamster ovary or baby hamster kidney cells. It replaces the deficient factor in haemophilia A for treatment and prevention of bleeding, removing the viral risks of plasma-derived concentrates.",
+  "mechanism": [
+    "Factor VIII circulates bound to von Willebrand factor. When activated by thrombin, factor VIIIa acts as a cofactor for factor IXa in the intrinsic tenase complex on phospholipid surfaces, accelerating activation of factor X and hence thrombin generation.",
+    "Infused octocog alfa temporarily restores factor VIII activity in people with haemophilia A, allowing normal haemostasis. Its effect wanes over hours, requiring repeated dosing for prophylaxis."
+  ],
+  "uses": [
+    "Treatment and control of bleeding in haemophilia A",
+    "Perioperative management in haemophilia A",
+    "Routine prophylaxis to reduce bleeding frequency"
+  ],
+  "history": [
+    {
+      "year": 1984,
+      "title": "Gene cloned",
+      "detail": "Two groups clone and express the human factor VIII gene."
+    },
+    {
+      "year": 1985,
+      "title": "Viral crisis",
+      "detail": "Plasma-derived concentrates had transmitted HIV and hepatitis C to many people with haemophilia, creating demand for recombinant products."
+    },
+    {
+      "year": 1992,
+      "title": "First recombinant FVIII",
+      "detail": "FDA approves Recombinate (Baxter/Genetics Institute)."
+    },
+    {
+      "year": 1993,
+      "title": "Kogenate",
+      "detail": "Bayer's Kogenate approved."
+    },
+    {
+      "year": 2003,
+      "title": "Albumin-free",
+      "detail": "Advate approved, made without added human or animal plasma proteins."
+    },
+    {
+      "year": 2016,
+      "title": "SIPPET",
+      "detail": "A randomised trial finds higher inhibitor incidence with recombinant than plasma-derived factor VIII in previously untreated patients."
+    },
+    {
+      "year": 2016,
+      "title": "Kovaltry",
+      "detail": "Bayer's next-generation full-length rFVIII approved."
+    }
+  ],
+  "pk": {
+    "half_life": "about 8–12 hours (shorter in children)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "proteolytic degradation",
+    "excretion": "not renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "headache",
+      "fever",
+      "nasopharyngitis",
+      "arthralgia"
+    ],
+    "serious": [
+      "factor VIII inhibitor development",
+      "hypersensitivity and anaphylaxis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Up to about 30% of previously untreated people with severe haemophilia A develop neutralising inhibitors against infused factor VIII."
+  ],
+  "related": [
+    "emicizumab",
+    "tranexamic-acid",
+    "desmopressin",
+    "etranacogene-dezaparvovec"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Factor VIII",
+      "url": "https://en.wikipedia.org/wiki/Factor_VIII"
+    },
+    {
+      "title": "DailyMed: advate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ADVATE"
+    },
+    {
+      "title": "EMA EPAR: Advate",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/advate"
+    }
+  ],
+  "stage": "written"
 }

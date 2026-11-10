@@ -1,36 +1,141 @@
 {
   "slug": "hydroxyurea",
-  "name": "Hydroxyurea",
-  "aliases": [],
-  "brands": [],
+  "name": "Hydroxycarbamide",
+  "aliases": [
+    "hydroxyurea"
+  ],
+  "brands": [
+    "Hydrea",
+    "Droxia",
+    "Siklos",
+    "Xromi"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Ribonucleotide reductase inhibitor (antimetabolite); fetal haemoglobin inducer",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules, tablets or solution once daily",
+  "targets": [
+    "RRM1",
+    "RRM2"
+  ],
+  "origin": "synthetic",
+  "originator": "Squibb (antineoplastic development); first synthesised by Dresler and Stein",
+  "owner": "generic (many); Bristol Myers Squibb (Hydrea, Droxia); Theravia (Siklos)",
+  "first_approval": {
+    "year": 1967,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Hydrea"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1869,
+    "by": "W. F. C. Dresler and R. Stein",
+    "note": "First synthesised in Germany; its antileukaemic activity was recognised in the 1960s."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Old antimetabolite that became the backbone of sickle cell disease treatment",
+  "summary": "Hydroxycarbamide (hydroxyurea) inhibits ribonucleotide reductase, slowing DNA synthesis. It is used for myeloproliferative neoplasms and some cancers, and since the 1990s it has been the main disease-modifying therapy for sickle cell anaemia, where it raises fetal haemoglobin and reduces painful crises.",
+  "mechanism": [
+    "Hydroxycarbamide quenches the tyrosyl free radical in the R2 subunit of ribonucleotide reductase, blocking conversion of ribonucleotides to deoxyribonucleotides. This arrests cells in S phase and is cytotoxic to rapidly dividing cells.",
+    "In sickle cell disease it increases fetal haemoglobin (HbF), which inhibits polymerisation of HbS, possibly through stress erythropoiesis and nitric oxide release. It also lowers neutrophil and reticulocyte counts and reduces red cell adhesion to endothelium."
+  ],
+  "uses": [
+    "Sickle cell anaemia with recurrent painful crises (adults and children)",
+    "Resistant chronic myeloid leukaemia",
+    "Locally advanced head and neck squamous cell carcinoma with radiation",
+    "Polycythaemia vera and essential thrombocythaemia (common use; labelled in some countries)"
+  ],
+  "history": [
+    {
+      "year": 1869,
+      "title": "Synthesis",
+      "detail": "Hydroxyurea first synthesised in Germany."
+    },
+    {
+      "year": 1967,
+      "title": "FDA approval",
+      "detail": "Approved as Hydrea for cancer treatment."
+    },
+    {
+      "year": 1984,
+      "title": "HbF induction",
+      "detail": "Small studies show hydroxyurea raises fetal haemoglobin in sickle cell patients."
+    },
+    {
+      "year": 1995,
+      "title": "MSH trial",
+      "detail": "The Multicenter Study of Hydroxyurea is stopped early after showing about 50% fewer painful crises."
+    },
+    {
+      "year": 1998,
+      "title": "Droxia",
+      "detail": "FDA approves hydroxyurea (Droxia) for adults with sickle cell anaemia."
+    },
+    {
+      "year": 2011,
+      "title": "BABY HUG",
+      "detail": "Trial in infants shows fewer painful crises and dactylitis."
+    },
+    {
+      "year": 2017,
+      "title": "Paediatric approval",
+      "detail": "FDA approves Siklos for children aged two years and older with sickle cell anaemia."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–4 hours",
+    "bioavailability": "essentially complete",
+    "metabolism": "partly hepatic and by urease of gut bacteria",
+    "excretion": "renal (about 40% unchanged)"
+  },
+  "safety": {
+    "common": [
+      "neutropenia",
+      "anaemia",
+      "skin hyperpigmentation",
+      "nail changes",
+      "nausea",
+      "alopecia"
+    ],
+    "serious": [
+      "severe myelosuppression",
+      "secondary leukaemia and skin cancer",
+      "leg ulcers",
+      "vasculitic toxicities",
+      "embryo-fetal toxicity",
+      "pancreatitis and hepatotoxicity with antiretrovirals"
+    ],
+    "boxed_warning": "Droxia and Siklos labels: myelosuppression may be severe and life-threatening; hydroxyurea is carcinogenic, and secondary leukaemia and skin cancer have been reported."
+  },
+  "facts": [
+    "WHO lists hydroxycarbamide both as a cytotoxic medicine and as a medicine for sickle cell disease."
+  ],
+  "related": [
+    "voxelotor",
+    "exagamglogene-autotemcel",
+    "ruxolitinib",
+    "imatinib",
+    "folic-acid"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Hydroxycarbamide",
+      "url": "https://en.wikipedia.org/wiki/Hydroxycarbamide"
+    },
+    {
+      "title": "DailyMed: hydroxyurea labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=HYDROXYUREA"
+    },
+    {
+      "title": "EMA EPAR: Siklos",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/siklos"
+    }
+  ],
+  "stage": "written"
 }

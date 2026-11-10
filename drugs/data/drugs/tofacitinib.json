@@ -1,36 +1,138 @@
 {
   "slug": "tofacitinib",
   "name": "Tofacitinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CP-690,550",
+    "tasocitinib",
+    "tofacitinib citrate"
+  ],
+  "brands": [
+    "Xeljanz",
+    "Xeljanz XR"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Janus kinase (JAK) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets twice daily, extended-release once daily, or oral solution",
+  "targets": [
+    "JAK1",
+    "JAK3",
+    "JAK2"
+  ],
+  "origin": "synthetic",
+  "originator": "Pfizer (in collaboration with NIH researchers led by John O'Shea)",
+  "owner": "Pfizer",
+  "first_approval": {
+    "year": 2012,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Xeljanz"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Pfizer, building on NIH work on JAK3",
+    "note": "Designed as a JAK3 inhibitor for transplant immunosuppression after JAK3 was shown to be essential for cytokine signalling through the common gamma chain."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "rx_status": "prescription",
+  "tagline": "First oral JAK inhibitor for rheumatoid arthritis and ulcerative colitis",
+  "summary": "Tofacitinib is an oral inhibitor of JAK1 and JAK3 that blocks signalling by many inflammatory cytokines. It was the first JAK inhibitor approved for rheumatoid arthritis and is also used in psoriatic arthritis, ankylosing spondylitis, ulcerative colitis and juvenile idiopathic arthritis. The ORAL Surveillance safety trial led to class-wide boxed warnings.",
+  "mechanism": [
+    "Many cytokines, including interleukins 2, 4, 6, 7, 15 and 21 and interferons, signal through receptors that associate with JAK kinases. Tofacitinib preferentially inhibits JAK1 and JAK3, with less effect on JAK2 and TYK2.",
+    "Blocking JAK phosphorylation of STAT proteins reduces transcription of inflammatory genes and lymphocyte activation, decreasing synovial inflammation and joint damage and mucosal inflammation in colitis."
+  ],
+  "uses": [
+    "Moderate to severe rheumatoid arthritis",
+    "Psoriatic arthritis",
+    "Ankylosing spondylitis",
+    "Moderate to severe ulcerative colitis",
+    "Polyarticular juvenile idiopathic arthritis"
+  ],
+  "history": [
+    {
+      "year": 2003,
+      "title": "JAK3 publication",
+      "detail": "Pfizer reports CP-690,550 as a JAK3 inhibitor preventing transplant rejection in primates."
+    },
+    {
+      "year": 2012,
+      "title": "FDA approval",
+      "detail": "Xeljanz approved for rheumatoid arthritis, the first oral JAK inhibitor."
+    },
+    {
+      "year": 2017,
+      "title": "EU approval and PsA",
+      "detail": "EU authorises tofacitinib for RA (after an initial 2013 refusal) and FDA approves psoriatic arthritis."
+    },
+    {
+      "year": 2018,
+      "title": "Ulcerative colitis",
+      "detail": "FDA approves use in ulcerative colitis."
+    },
+    {
+      "year": 2019,
+      "title": "Thrombosis signal",
+      "detail": "Interim ORAL Surveillance data show higher pulmonary embolism and death with 10 mg twice daily."
+    },
+    {
+      "year": 2021,
+      "title": "Boxed warning expansion",
+      "detail": "After ORAL Surveillance, FDA adds MACE, malignancy, death and thrombosis warnings to all JAK inhibitors for inflammatory disease; ankylosing spondylitis approved."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3 hours",
+    "bioavailability": "about 74%",
+    "metabolism": "about 70% hepatic, mainly CYP3A4 with minor CYP2C19",
+    "excretion": "about 30% renal unchanged"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "safety": {
+    "common": [
+      "upper respiratory infections",
+      "headache",
+      "diarrhoea",
+      "nasopharyngitis",
+      "raised cholesterol"
+    ],
+    "serious": [
+      "serious infections including tuberculosis and herpes zoster",
+      "major adverse cardiovascular events",
+      "thrombosis including pulmonary embolism",
+      "lymphoma and lung cancer",
+      "gastrointestinal perforation",
+      "increased mortality"
+    ],
+    "boxed_warning": "Serious infections, higher all-cause mortality, malignancies including lymphoma and lung cancer, major adverse cardiovascular events and thrombosis, based largely on the ORAL Surveillance trial of tofacitinib in older RA patients with cardiovascular risk factors (class warning for JAK inhibitors)."
+  },
+  "facts": [
+    "ORAL Surveillance, a post-marketing trial required by the FDA, compared tofacitinib with TNF inhibitors in about 4,300 patients aged 50 or older."
+  ],
+  "related": [
+    "baricitinib",
+    "upadacitinib",
+    "ruxolitinib",
+    "deucravacitinib",
+    "methotrexate",
+    "adalimumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tofacitinib",
+      "url": "https://en.wikipedia.org/wiki/Tofacitinib"
+    },
+    {
+      "title": "DailyMed: xeljanz labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=XELJANZ"
+    },
+    {
+      "title": "EMA EPAR: Xeljanz",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/xeljanz"
+    }
+  ],
+  "stage": "written"
 }

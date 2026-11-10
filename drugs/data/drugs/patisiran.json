@@ -1,36 +1,123 @@
 {
   "slug": "patisiran",
   "name": "Patisiran",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ALN-TTR02"
+  ],
+  "brands": [
+    "Onpattro"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Small interfering RNA (siRNA) targeting transthyretin",
+  "modality": "oligonucleotide",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every three weeks after premedication",
+  "targets": [
+    "TTR"
+  ],
+  "origin": "synthetic",
+  "originator": "Alnylam Pharmaceuticals",
+  "owner": "Alnylam Pharmaceuticals",
+  "first_approval": {
+    "year": 2018,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Onpattro"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Alnylam Pharmaceuticals",
+    "note": "A double-stranded siRNA against a conserved sequence in the transthyretin mRNA 3' untranslated region, encapsulated in lipid nanoparticles that deliver it to the liver."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First approved RNA interference drug, silencing transthyretin in hereditary amyloidosis",
+  "summary": "Patisiran is a lipid nanoparticle-formulated small interfering RNA that silences transthyretin production in the liver. In 2018 it became the first RNA interference therapeutic to be approved, for polyneuropathy of hereditary transthyretin-mediated amyloidosis.",
+  "mechanism": [
+    "Transthyretin (TTR) is a liver-made transport protein. Mutations destabilise its tetramer, and misfolded monomers deposit as amyloid in nerves and heart.",
+    "Patisiran's lipid nanoparticles acquire apolipoprotein E in blood and are taken up by hepatocytes via LDL receptors. Inside, the siRNA loads into the RNA-induced silencing complex, which cleaves TTR mRNA, reducing serum TTR by about 80% and slowing or reversing neuropathy progression."
+  ],
+  "uses": [
+    "Polyneuropathy of hereditary transthyretin-mediated (hATTR) amyloidosis in adults"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "RNA interference",
+      "detail": "Andrew Fire and Craig Mello describe RNA interference in worms, recognised with the 2006 Nobel Prize."
+    },
+    {
+      "year": 2002,
+      "title": "Alnylam founded",
+      "detail": "Alnylam is founded to develop RNAi therapeutics."
+    },
+    {
+      "year": 2018,
+      "title": "APOLLO trial",
+      "detail": "Patisiran improves neuropathy and quality of life versus placebo in hATTR amyloidosis."
+    },
+    {
+      "year": 2018,
+      "title": "First RNAi approval",
+      "detail": "FDA approves Onpattro in August; the EU approves it the same month."
+    },
+    {
+      "year": 2022,
+      "title": "Vutrisiran",
+      "detail": "Alnylam's subcutaneous successor vutrisiran is approved for hATTR polyneuropathy."
+    },
+    {
+      "year": 2023,
+      "title": "Cardiomyopathy declined",
+      "detail": "FDA issues a complete response letter for patisiran in ATTR cardiomyopathy despite APOLLO-B results."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3 days (siRNA)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "nuclease degradation",
+    "excretion": "less than 1% unchanged in urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "infusion-related reactions",
+      "peripheral oedema",
+      "upper respiratory infections",
+      "arthralgia",
+      "dyspnoea"
+    ],
+    "serious": [
+      "infusion reactions",
+      "reduced serum vitamin A (supplementation recommended)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Premedication with a corticosteroid, paracetamol and antihistamines is required to reduce infusion reactions."
+  ],
+  "related": [
+    "tafamidis",
+    "eteplirsen",
+    "nusinersen",
+    "inclisiran"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Patisiran",
+      "url": "https://en.wikipedia.org/wiki/Patisiran"
+    },
+    {
+      "title": "DailyMed: onpattro labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ONPATTRO"
+    },
+    {
+      "title": "EMA EPAR: Onpattro",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/onpattro"
+    }
+  ],
+  "stage": "written"
 }

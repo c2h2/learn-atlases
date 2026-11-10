@@ -1,36 +1,120 @@
 {
   "slug": "alglucosidase-alfa",
   "name": "Alglucosidase alfa",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "recombinant human acid alpha-glucosidase",
+    "rhGAA"
+  ],
+  "brands": [
+    "Myozyme",
+    "Lumizyme"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Enzyme replacement therapy (recombinant acid alpha-glucosidase)",
+  "modality": "protein",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every two weeks",
+  "targets": [
+    "GAA (replacement)",
+    "IGF2R (uptake)"
+  ],
+  "origin": "biotech",
+  "originator": "Duke University (Yuan-Tsong Chen) and Genzyme",
+  "owner": "Sanofi",
+  "first_approval": {
+    "year": 2006,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Myozyme"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Yuan-Tsong Chen and colleagues, Duke University",
+    "note": "Recombinant acid alpha-glucosidase produced in CHO cells showed glycogen clearance in animal models of Pompe disease."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First treatment for Pompe disease, a fatal glycogen storage disorder of muscle",
+  "summary": "Alglucosidase alfa is recombinant human acid alpha-glucosidase that is taken up into muscle lysosomes and breaks down glycogen. Approved in 2006, it was the first therapy for Pompe disease and markedly improves survival in infantile-onset disease. It carries boxed warnings for anaphylaxis and immune-mediated reactions.",
+  "mechanism": [
+    "Pompe disease (glycogen storage disease type II) results from deficiency of lysosomal acid alpha-glucosidase, which degrades glycogen. Glycogen accumulates in cardiac, skeletal and respiratory muscle, causing cardiomyopathy and progressive weakness.",
+    "Alglucosidase alfa carries mannose-6-phosphate residues that bind the cation-independent mannose-6-phosphate receptor on muscle cells, which internalise it to lysosomes where it hydrolyses glycogen. Uptake into skeletal muscle is relatively inefficient, which motivated later enzymes with more mannose-6-phosphate."
+  ],
+  "uses": [
+    "Pompe disease (acid alpha-glucosidase deficiency), infantile and late onset"
+  ],
+  "history": [
+    {
+      "year": 2001,
+      "title": "Novazyme",
+      "detail": "Genzyme acquires Novazyme, co-founded by John Crowley, whose children had Pompe disease, adding to its Duke-derived enzyme programme."
+    },
+    {
+      "year": 2006,
+      "title": "First approvals",
+      "detail": "Myozyme is authorised in the EU in March and by the FDA in April for Pompe disease."
+    },
+    {
+      "year": 2010,
+      "title": "Lumizyme",
+      "detail": "FDA approves the larger-scale Lumizyme product for late-onset disease, later for all patients."
+    },
+    {
+      "year": 2010,
+      "title": "Film",
+      "detail": "The film Extraordinary Measures dramatises the Crowley family's efforts."
+    },
+    {
+      "year": 2021,
+      "title": "Successor enzyme",
+      "detail": "Sanofi's avalglucosidase alfa (Nexviazyme), with increased mannose-6-phosphate, is approved."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–3 hours",
+    "bioavailability": "100% (IV)",
+    "metabolism": "lysosomal and proteolytic degradation",
+    "excretion": "not renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+    "common": [
+      "infusion reactions",
+      "fever",
+      "rash",
+      "flushing",
+      "vomiting",
+      "cough"
+    ],
+    "serious": [
+      "anaphylaxis",
+      "immune-mediated reactions including nephrotic syndrome",
+      "acute cardiorespiratory failure from fluid overload",
+      "high-titre anti-drug antibodies reducing efficacy"
+    ],
+    "boxed_warning": "Life-threatening anaphylaxis, hypersensitivity and immune-mediated reactions; risk of acute cardiorespiratory failure in patients with compromised cardiac or respiratory function."
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "imiglucerase",
+    "nusinersen"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Alglucosidase alfa",
+      "url": "https://en.wikipedia.org/wiki/Alglucosidase_alfa"
+    },
+    {
+      "title": "DailyMed: lumizyme labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=LUMIZYME"
+    },
+    {
+      "title": "EMA EPAR: Myozyme",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/myozyme"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,124 @@
 {
   "slug": "voxelotor",
   "name": "Voxelotor",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GBT440",
+    "GBT-440"
+  ],
+  "brands": [
+    "Oxbryta"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Haemoglobin S polymerisation inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets or tablets for suspension once daily (withdrawn 2024)",
+  "targets": [
+    "HBA1"
+  ],
+  "origin": "synthetic",
+  "originator": "Global Blood Therapeutics",
+  "owner": "Pfizer (withdrawn from all markets in 2024)",
+  "first_approval": {
+    "year": 2019,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Oxbryta"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Global Blood Therapeutics",
+    "note": "An aldehyde that forms a reversible Schiff base with the N-terminal valine of the haemoglobin alpha chain, stabilising the oxygenated state."
+  },
+  "generic": false,
+  "who_essential": false,
+  "rx_status": "withdrawn worldwide (September 2024)",
+  "tagline": "Sickle haemoglobin polymerisation inhibitor withdrawn in 2024 over safety concerns",
+  "summary": "Voxelotor binds haemoglobin and increases its oxygen affinity, preventing deoxygenated sickle haemoglobin from polymerising. It received accelerated approval in 2019 for sickle cell disease based on haemoglobin increases, but Pfizer withdrew it worldwide in 2024 after data showed more vaso-occlusive crises and deaths.",
+  "mechanism": [
+    "Sickle haemoglobin (HbS) polymerises when deoxygenated, distorting red cells into rigid sickle shapes that haemolyse and block small vessels.",
+    "Voxelotor covalently and reversibly binds the N-terminal valine of the alpha-globin chain, shifting the oxygen dissociation curve to the left and keeping haemoglobin in the oxygenated, non-polymerising state. This reduced haemolysis and raised haemoglobin, although tighter oxygen binding could also reduce oxygen delivery to tissues."
+  ],
+  "uses": [
+    "Sickle cell disease in patients aged four and older (approval withdrawn 2024)"
+  ],
+  "history": [
+    {
+      "year": 2016,
+      "title": "Early trials",
+      "detail": "Phase 1/2 studies of GBT440 show reduced haemolysis and higher haemoglobin."
+    },
+    {
+      "year": 2019,
+      "title": "HOPE trial",
+      "detail": "51% of patients on 1500 mg reach a haemoglobin rise of more than 1 g/dL versus 7% on placebo."
+    },
+    {
+      "year": 2019,
+      "title": "Accelerated approval",
+      "detail": "FDA grants accelerated approval as Oxbryta for patients aged 12 and older."
+    },
+    {
+      "year": 2021,
+      "title": "Paediatric use",
+      "detail": "FDA extends accelerated approval to children aged 4 to 11."
+    },
+    {
+      "year": 2022,
+      "title": "EU approval and Pfizer",
+      "detail": "The EU grants conditional authorisation; Pfizer acquires Global Blood Therapeutics."
+    },
+    {
+      "year": 2024,
+      "title": "Worldwide withdrawal",
+      "detail": "Pfizer withdraws voxelotor from all markets after an imbalance in vaso-occlusive crises and fatal events in post-marketing trials; EMA suspends the authorisation."
+    }
+  ],
+  "pk": {
+    "half_life": "about 35.5 hours in sickle cell disease",
+    "bioavailability": "well absorbed; extensive partitioning into red cells",
+    "metabolism": "CYP3A4 oxidation, glucuronidation",
+    "excretion": "faecal (62%) and urine (35%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "headache",
+      "diarrhoea",
+      "abdominal pain",
+      "nausea",
+      "rash",
+      "fever"
+    ],
+    "serious": [
+      "hypersensitivity",
+      "increased vaso-occlusive crises and deaths in post-marketing studies"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Voxelotor interferes with HPLC measurement of haemoglobin subtypes because it binds haemoglobin."
+  ],
+  "related": [
+    "hydroxyurea",
+    "exagamglogene-autotemcel",
+    "folic-acid"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Voxelotor",
+      "url": "https://en.wikipedia.org/wiki/Voxelotor"
+    },
+    {
+      "title": "DailyMed: oxbryta labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=OXBRYTA"
+    },
+    {
+      "title": "EMA EPAR: Oxbryta",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/oxbryta"
+    }
+  ],
+  "stage": "written"
 }

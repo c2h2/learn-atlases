@@ -1,36 +1,147 @@
 {
   "slug": "tacrolimus",
   "name": "Tacrolimus",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "FK506",
+    "fujimycin"
+  ],
+  "brands": [
+    "Prograf",
+    "Advagraf",
+    "Envarsus XR",
+    "Astagraf XL",
+    "Protopic"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Calcineurin inhibitor (macrolide immunosuppressant)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "topical"
+  ],
+  "route_note": "oral capsules twice daily or extended-release once daily; IV infusion; 0.03–0.1% ointment for atopic dermatitis",
+  "targets": [
+    "FKBP1A",
+    "PPP3CA"
+  ],
+  "origin": "natural",
+  "originator": "Fujisawa Pharmaceutical (now Astellas)",
+  "owner": "Astellas Pharma; generic (many)",
+  "first_approval": {
+    "year": 1993,
+    "agency": "MHLW",
+    "country": "Japan",
+    "brand": "Prograf"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1984,
+    "by": "Fujisawa researchers (Toshio Goto, Toru Kino and colleagues)",
+    "note": "Isolated from Streptomyces tsukubaensis in a soil sample from Tsukuba, Japan; about 10–100 times more potent than ciclosporin in vitro."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Potent macrolide calcineurin inhibitor at the core of transplant immunosuppression",
+  "summary": "Tacrolimus is a macrolide from Streptomyces tsukubaensis that inhibits calcineurin after binding FKBP12, blocking T-cell activation. It is the most widely used calcineurin inhibitor for preventing rejection after kidney, liver and heart transplantation, and a topical form treats atopic dermatitis. It has a narrow therapeutic window and needs blood-level monitoring.",
+  "mechanism": [
+    "Tacrolimus enters T cells and binds the immunophilin FKBP12. The tacrolimus–FKBP12 complex inhibits the phosphatase calcineurin, preventing dephosphorylation and nuclear translocation of NFAT transcription factors.",
+    "As a result, transcription of interleukin-2, interferon-gamma and other cytokines is suppressed and T-cell proliferation in response to alloantigens is blocked. The mechanism resembles ciclosporin's but uses a different immunophilin and is more potent per milligram."
+  ],
+  "uses": [
+    "Prophylaxis of organ rejection in kidney, liver, heart and lung transplantation",
+    "Moderate to severe atopic dermatitis (topical)",
+    "Treatment of rejection resistant to other immunosuppressants"
+  ],
+  "history": [
+    {
+      "year": 1984,
+      "title": "Discovery",
+      "detail": "Fujisawa isolates FK506 from a Japanese soil actinomycete."
+    },
+    {
+      "year": 1989,
+      "title": "Pittsburgh trials",
+      "detail": "Thomas Starzl's team reports rescue of liver transplant recipients with FK506."
+    },
+    {
+      "year": 1993,
+      "title": "Japanese approval",
+      "detail": "Prograf approved in Japan for liver transplantation."
+    },
+    {
+      "year": 1994,
+      "title": "FDA approval",
+      "detail": "FDA approves Prograf for liver transplantation; kidney approval follows in 1997."
+    },
+    {
+      "year": 2000,
+      "title": "Protopic",
+      "detail": "Tacrolimus ointment approved for atopic dermatitis."
+    },
+    {
+      "year": 2006,
+      "title": "Topical boxed warning",
+      "detail": "FDA adds a boxed warning on theoretical malignancy risk to topical calcineurin inhibitors."
+    },
+    {
+      "year": 2007,
+      "title": "Extended release",
+      "detail": "Once-daily Advagraf authorised in the EU; similar products follow in the US (Astagraf XL 2013, Envarsus XR 2015)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 12 hours in transplant patients (longer in healthy volunteers)",
+    "bioavailability": "about 20–25% (highly variable)",
+    "metabolism": "CYP3A4 and CYP3A5; P-glycoprotein substrate",
+    "excretion": "mainly faecal via bile"
+  },
+  "safety": {
+    "common": [
+      "tremor",
+      "headache",
+      "hypertension",
+      "nephrotoxicity",
+      "hyperglycaemia and new-onset diabetes",
+      "hyperkalaemia",
+      "diarrhoea"
+    ],
+    "serious": [
+      "serious infections",
+      "lymphoma and other malignancies",
+      "nephrotoxicity",
+      "neurotoxicity including PRES",
+      "QT prolongation",
+      "pure red cell aplasia",
+      "medication errors between formulations"
+    ],
+    "boxed_warning": "Increased risk of serious infections and malignancies such as lymphoma; prescribe only where experienced in immunosuppression. Extended-release forms carry warnings on mortality in female liver transplant recipients (Astagraf XL)."
+  },
+  "facts": [
+    "Carriers of a functional CYP3A5 allele, more common in people of African ancestry, often need higher doses to reach target blood levels.",
+    "Its name combines Tsukuba, macrolide and immunosuppressant."
+  ],
+  "related": [
+    "ciclosporin",
+    "sirolimus",
+    "mycophenolate-mofetil",
+    "prednisolone",
+    "azathioprine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tacrolimus",
+      "url": "https://en.wikipedia.org/wiki/Tacrolimus"
+    },
+    {
+      "title": "DailyMed: tacrolimus labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TACROLIMUS"
+    },
+    {
+      "title": "EMA EPAR: Advagraf",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/advagraf"
+    }
+  ],
+  "stage": "written"
 }

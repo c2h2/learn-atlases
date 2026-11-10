@@ -1,36 +1,127 @@
 {
   "slug": "deferasirox",
   "name": "Deferasirox",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ICL670"
+  ],
+  "brands": [
+    "Exjade",
+    "Jadenu"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Oral iron chelator",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral dispersible tablets or film-coated tablets/granules once daily",
+  "targets": [
+    "iron (Fe3+)"
+  ],
+  "origin": "synthetic",
+  "originator": "Novartis",
+  "owner": "Novartis; generic (many)",
+  "first_approval": {
+    "year": 2005,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Exjade"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Novartis (René Lattmann, Hans Peter Schnebli and colleagues)",
+    "note": "A tridentate bis-hydroxyphenyl-triazole selected from screening for an orally active iron chelator with a long half-life."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Once-daily oral chelator for transfusional iron overload",
+  "summary": "Deferasirox is an orally active tridentate iron chelator. Two molecules bind one ferric ion, and the complex is excreted mainly in the faeces. It treats chronic iron overload from blood transfusions and non-transfusion-dependent thalassaemia, but carries boxed warnings for renal, hepatic and gastrointestinal toxicity.",
+  "mechanism": [
+    "Repeated transfusions add iron the body cannot excrete; excess iron deposits in liver, heart and endocrine organs and generates toxic free radicals.",
+    "Deferasirox binds ferric iron with high affinity in a 2:1 ratio, mobilising iron from the labile plasma and intracellular pools. The iron complex is cleared via the bile, gradually lowering serum ferritin and liver iron concentration."
+  ],
+  "uses": [
+    "Chronic iron overload due to blood transfusions (age two and older)",
+    "Chronic iron overload in non-transfusion-dependent thalassaemia syndromes"
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "title": "FDA approval",
+      "detail": "Exjade dispersible tablets approved for transfusional iron overload."
+    },
+    {
+      "year": 2006,
+      "title": "EU approval",
+      "detail": "Authorised in the EU for thalassaemia major and other transfusion-dependent anaemias."
+    },
+    {
+      "year": 2010,
+      "title": "Boxed warning",
+      "detail": "FDA adds a boxed warning on renal failure, hepatic failure and gastrointestinal haemorrhage."
+    },
+    {
+      "year": 2013,
+      "title": "Non-transfusion thalassaemia",
+      "detail": "FDA approves use in non-transfusion-dependent thalassaemia (THALASSA trial)."
+    },
+    {
+      "year": 2015,
+      "title": "Jadenu",
+      "detail": "A film-coated tablet that can be swallowed with a light meal is approved."
+    },
+    {
+      "year": 2019,
+      "title": "Generics",
+      "detail": "Generic deferasirox becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 8–16 hours",
+    "bioavailability": "about 70%",
+    "metabolism": "glucuronidation (UGT1A1, UGT1A3); minor CYP450",
+    "excretion": "faecal (about 84%), urine (8%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+    "common": [
+      "diarrhoea",
+      "nausea",
+      "vomiting",
+      "abdominal pain",
+      "rash",
+      "increased serum creatinine"
+    ],
+    "serious": [
+      "acute kidney injury and renal failure",
+      "hepatic failure",
+      "gastrointestinal haemorrhage and ulceration",
+      "cytopenias",
+      "hearing and visual disturbances",
+      "severe skin reactions"
+    ],
+    "boxed_warning": "Deferasirox may cause renal toxicity including failure, hepatic toxicity including failure, and gastrointestinal haemorrhage, which can be fatal, especially in elderly patients with advanced haematological malignancies or low platelets."
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "hydroxyurea",
+    "luspatercept",
+    "ferrous-sulfate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Deferasirox",
+      "url": "https://en.wikipedia.org/wiki/Deferasirox"
+    },
+    {
+      "title": "DailyMed: deferasirox labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=DEFERASIROX"
+    },
+    {
+      "title": "EMA EPAR: Exjade",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/exjade"
+    }
+  ],
+  "stage": "written"
 }

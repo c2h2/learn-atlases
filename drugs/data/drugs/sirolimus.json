@@ -1,36 +1,148 @@
 {
   "slug": "sirolimus",
   "name": "Sirolimus",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "rapamycin",
+    "AY-22989",
+    "nab-sirolimus"
+  ],
+  "brands": [
+    "Rapamune",
+    "Fyarro",
+    "Hyftor"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "mTOR inhibitor (macrolide immunosuppressant)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "topical"
+  ],
+  "route_note": "oral tablets or solution once daily; albumin-bound IV infusion for PEComa; topical gel for facial angiofibroma",
+  "targets": [
+    "FKBP1A",
+    "MTOR"
+  ],
+  "origin": "natural",
+  "originator": "Ayerst Laboratories (Suren Sehgal); developed by Wyeth",
+  "owner": "Pfizer (Rapamune); generic (many)",
+  "first_approval": {
+    "year": 1999,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Rapamune"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1972,
+    "by": "Suren Sehgal and colleagues, Ayerst Research Laboratories",
+    "note": "Isolated from Streptomyces hygroscopicus in soil collected on Easter Island (Rapa Nui) in 1964; first studied as an antifungal."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Easter Island macrolide that founded mTOR biology",
+  "summary": "Sirolimus, also called rapamycin, is a macrolide from an Easter Island soil bacterium that inhibits the kinase mTOR. It prevents kidney transplant rejection, treats lymphangioleiomyomatosis, and is used on drug-eluting stents. Studies of its mechanism led to the discovery of the mTOR growth-signalling pathway.",
+  "mechanism": [
+    "Sirolimus binds FKBP12, and the complex binds the FRB domain of mTOR, inhibiting mTOR complex 1 (mTORC1). mTORC1 integrates growth-factor and nutrient signals to drive protein synthesis and cell-cycle progression.",
+    "In T cells, blocking mTORC1 stops interleukin-2-driven progression from G1 to S phase, so unlike calcineurin inhibitors it acts downstream of cytokine production. Antiproliferative effects on smooth muscle and tumour cells underlie its use in stents, lymphangioleiomyomatosis and PEComa."
+  ],
+  "uses": [
+    "Prophylaxis of kidney transplant rejection",
+    "Lymphangioleiomyomatosis",
+    "Malignant perivascular epithelioid cell tumour (PEComa, nab-sirolimus)",
+    "Facial angiofibroma in tuberous sclerosis complex (topical)"
+  ],
+  "history": [
+    {
+      "year": 1972,
+      "title": "Isolation",
+      "detail": "Rapamycin is isolated at Ayerst from an Easter Island soil sample."
+    },
+    {
+      "year": 1988,
+      "title": "Revival",
+      "detail": "After the project was shelved, Sehgal's preserved cultures allow renewed study as an immunosuppressant."
+    },
+    {
+      "year": 1994,
+      "title": "mTOR identified",
+      "detail": "Several groups identify the mammalian target of rapamycin (mTOR) as its molecular target."
+    },
+    {
+      "year": 1999,
+      "title": "FDA approval",
+      "detail": "Rapamune approved for prophylaxis of kidney transplant rejection."
+    },
+    {
+      "year": 2003,
+      "title": "Drug-eluting stent",
+      "detail": "The sirolimus-eluting Cypher coronary stent is approved in the US."
+    },
+    {
+      "year": 2015,
+      "title": "LAM approval",
+      "detail": "FDA approves sirolimus for lymphangioleiomyomatosis after the MILES trial."
+    },
+    {
+      "year": 2021,
+      "title": "Fyarro",
+      "detail": "Albumin-bound sirolimus approved for advanced malignant PEComa."
+    },
+    {
+      "year": 2022,
+      "title": "Topical gel",
+      "detail": "Hyftor approved for facial angiofibroma in tuberous sclerosis complex."
+    }
+  ],
+  "pk": {
+    "half_life": "about 62 hours",
+    "bioavailability": "about 14% (solution); higher with tablets",
+    "metabolism": "CYP3A4; P-glycoprotein substrate",
+    "excretion": "faecal (about 91%)"
+  },
+  "safety": {
+    "common": [
+      "peripheral oedema",
+      "hyperlipidaemia",
+      "hypertension",
+      "mouth ulcers",
+      "anaemia",
+      "thrombocytopenia",
+      "delayed wound healing"
+    ],
+    "serious": [
+      "serious infections",
+      "lymphoma and skin cancer",
+      "interstitial pneumonitis",
+      "hepatic artery thrombosis after liver transplantation",
+      "bronchial anastomotic dehiscence after lung transplantation",
+      "proteinuria"
+    ],
+    "boxed_warning": "Increased susceptibility to infection and possible lymphoma; not recommended in liver transplantation (hepatic artery thrombosis, graft loss and death) or lung transplantation (bronchial anastomotic dehiscence)."
+  },
+  "facts": [
+    "Rapamycin extends lifespan in mice and other model organisms, making it a central compound in ageing research."
+  ],
+  "related": [
+    "tacrolimus",
+    "ciclosporin",
+    "mycophenolate-mofetil"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Sirolimus",
+      "url": "https://en.wikipedia.org/wiki/Sirolimus"
+    },
+    {
+      "title": "DailyMed: sirolimus labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=SIROLIMUS"
+    },
+    {
+      "title": "EMA EPAR: Rapamune",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/rapamune"
+    }
+  ],
+  "stage": "written"
 }

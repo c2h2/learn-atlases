@@ -1,36 +1,126 @@
 {
   "slug": "oxytocin",
   "name": "Oxytocin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "oxytocine",
+    "alpha-hypophamine"
+  ],
+  "brands": [
+    "Pitocin",
+    "Syntocinon"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Oxytocic (posterior pituitary hormone)",
+  "modality": "peptide",
+  "routes": [
+    "iv",
+    "im"
+  ],
+  "route_note": "IV infusion for induction or augmentation of labour; IM or IV injection after delivery",
+  "targets": [
+    "OXTR"
+  ],
+  "origin": "synthetic",
+  "originator": "Vincent du Vigneaud (synthesis); Parke-Davis and Sandoz (pharmaceutical products)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "discovery": {
+    "year": 1953,
+    "by": "Vincent du Vigneaud and colleagues, Cornell Medical College",
+    "note": "Determined the nine-amino-acid sequence of oxytocin and synthesised it, the first polypeptide hormone made in the laboratory."
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; hospital use",
+  "tagline": "First synthesised peptide hormone; induces labour and prevents postpartum haemorrhage",
+  "summary": "Oxytocin is a nine-amino-acid peptide hormone released from the posterior pituitary that stimulates uterine contractions and milk ejection. Synthetic oxytocin is used to induce and augment labour and is the WHO-recommended first-line drug for preventing and treating postpartum haemorrhage.",
+  "mechanism": [
+    "Oxytocin binds Gq-coupled oxytocin receptors on myometrial cells, activating phospholipase C and raising intracellular calcium, which increases the frequency and force of uterine contractions. Receptor density rises sharply in late pregnancy, so the uterus becomes much more sensitive at term.",
+    "After delivery, sustained contraction of the uterus compresses spiral arteries at the placental site, reducing bleeding. Oxytocin also contracts myoepithelial cells in the breast and has weak antidiuretic activity due to similarity with vasopressin."
+  ],
+  "uses": [
+    "Induction and augmentation of labour",
+    "Prevention and treatment of postpartum haemorrhage",
+    "Adjunct management of incomplete or inevitable miscarriage"
+  ],
+  "history": [
+    {
+      "year": 1906,
+      "title": "Uterotonic extract",
+      "detail": "Henry Dale shows that posterior pituitary extracts contract the pregnant uterus."
+    },
+    {
+      "year": 1928,
+      "title": "Separation",
+      "detail": "Oliver Kamm and colleagues at Parke-Davis separate the oxytocic and pressor principles of pituitary extract."
+    },
+    {
+      "year": 1953,
+      "title": "Synthesis",
+      "detail": "Vincent du Vigneaud sequences and synthesises oxytocin."
+    },
+    {
+      "year": 1955,
+      "title": "Nobel Prize",
+      "detail": "Du Vigneaud receives the Nobel Prize in Chemistry for the first synthesis of a polypeptide hormone."
+    },
+    {
+      "year": 2012,
+      "title": "WHO guidance",
+      "detail": "WHO recommends oxytocin as the uterotonic of choice for preventing postpartum haemorrhage."
+    },
+    {
+      "year": 2018,
+      "title": "CHAMPION trial",
+      "detail": "Heat-stable carbetocin is shown non-inferior to oxytocin, relevant where cold-chain storage is unreliable."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1–6 minutes",
+    "bioavailability": "100% IV; inactive orally",
+    "metabolism": "oxytocinase (placental aminopeptidase), liver and kidney",
+    "excretion": "renal (small amount unchanged)"
+  },
+  "safety": {
+    "common": [
+      "nausea",
+      "vomiting",
+      "uterine hyperstimulation",
+      "abnormal fetal heart rate"
+    ],
+    "serious": [
+      "uterine rupture",
+      "fetal distress",
+      "water intoxication and hyponatraemia with prolonged high-dose infusion",
+      "hypotension after rapid IV bolus",
+      "arrhythmia"
+    ],
+    "boxed_warning": "Pitocin (US): not indicated for elective induction of labour (initiation of labour without medical indication)."
+  },
+  "facts": [
+    "Oxytocin is on the ISMP list of high-alert medications because dosing errors can cause serious harm to mother and baby.",
+    "It loses potency at high temperatures, so it requires refrigeration in many supply chains."
+  ],
+  "related": [
+    "misoprostol",
+    "tranexamic-acid",
+    "mifepristone",
+    "desmopressin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Oxytocin (medication)",
+      "url": "https://en.wikipedia.org/wiki/Oxytocin_(medication)"
+    },
+    {
+      "title": "DailyMed: oxytocin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=OXYTOCIN"
+    },
+    {
+      "title": "Nobel Prize in Chemistry 1955",
+      "url": "https://www.nobelprize.org/prizes/chemistry/1955/summary/"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,118 @@
 {
   "slug": "rocuronium",
   "name": "Rocuronium",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "rocuronium bromide",
+    "Org 9426"
+  ],
+  "brands": [
+    "Zemuron",
+    "Esmeron"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Aminosteroid non-depolarising neuromuscular blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV bolus for intubation, then bolus or infusion for maintenance; administered only by trained clinicians",
+  "targets": [
+    "CHRNA1"
+  ],
+  "origin": "synthetic",
+  "originator": "Organon (now part of Merck & Co.)",
+  "owner": "generic (many); Merck & Co. (Zemuron/Esmeron)",
+  "first_approval": {
+    "year": 1994,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Zemuron"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Organon",
+    "note": "A monoquaternary aminosteroid analogue of vecuronium with lower potency but faster onset, allowing rapid intubation."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; hospital use",
+  "tagline": "Fast-onset steroidal muscle relaxant used for intubation and surgery",
+  "summary": "Rocuronium is a non-depolarising neuromuscular blocking agent that competitively blocks nicotinic acetylcholine receptors at the neuromuscular junction. Its rapid onset at high doses makes it an alternative to suxamethonium for rapid-sequence intubation, and its effect can be reversed quickly by sugammadex.",
+  "mechanism": [
+    "Rocuronium competes with acetylcholine for the alpha subunits of postjunctional nicotinic receptors on skeletal muscle, preventing depolarisation of the motor end-plate and causing flaccid paralysis. It has no analgesic or sedative effect.",
+    "Its lower potency means more molecules are given per dose, which speeds receptor occupancy and onset. Block can be reversed by acetylcholinesterase inhibitors such as neostigmine, or by sugammadex, which encapsulates rocuronium molecules in plasma."
+  ],
+  "uses": [
+    "Facilitation of tracheal intubation, including rapid-sequence intubation",
+    "Skeletal muscle relaxation during surgery or mechanical ventilation"
+  ],
+  "history": [
+    {
+      "year": 1942,
+      "title": "Curare in anaesthesia",
+      "detail": "Harold Griffith and Enid Johnson in Montreal introduce curare as a muscle relaxant for surgery."
+    },
+    {
+      "year": 1964,
+      "title": "Pancuronium",
+      "detail": "Organon chemists synthesise pancuronium, the first aminosteroid neuromuscular blocker."
+    },
+    {
+      "year": 1990,
+      "title": "Early clinical studies",
+      "detail": "First clinical reports of Org 9426 show faster onset than vecuronium."
+    },
+    {
+      "year": 1994,
+      "title": "FDA approval",
+      "detail": "Approved as Zemuron in the US and launched as Esmeron in Europe."
+    },
+    {
+      "year": 2008,
+      "title": "Selective reversal",
+      "detail": "Sugammadex, designed to encapsulate rocuronium, is approved in the EU."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.4–2.4 hours",
+    "bioavailability": "100% (IV)",
+    "metabolism": "minimal; mostly unchanged",
+    "excretion": "biliary (main) and renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "injection pain",
+      "transient hypotension or hypertension",
+      "tachycardia"
+    ],
+    "serious": [
+      "anaphylaxis",
+      "residual paralysis and awareness if sedation is inadequate",
+      "prolonged weakness in critical illness",
+      "malignant hyperthermia (not a trigger itself, but used with triggering agents)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Rocuronium is one of the commonest causes of perioperative anaphylaxis in several countries."
+  ],
+  "related": [
+    "sugammadex",
+    "propofol",
+    "sevoflurane",
+    "midazolam",
+    "fentanyl"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Rocuronium bromide",
+      "url": "https://en.wikipedia.org/wiki/Rocuronium_bromide"
+    },
+    {
+      "title": "DailyMed: rocuronium labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ROCURONIUM"
+    }
+  ],
+  "stage": "written"
 }

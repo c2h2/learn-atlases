@@ -1,36 +1,149 @@
 {
   "slug": "epoetin-alfa",
   "name": "Epoetin alfa",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "recombinant human erythropoietin",
+    "rHuEPO",
+    "epoetin alfa-epbx"
+  ],
+  "brands": [
+    "Epogen",
+    "Procrit",
+    "Eprex",
+    "Retacrit",
+    "Binocrit"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Erythropoiesis-stimulating agent (ESA)",
+  "modality": "protein",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV or SC injection one to three times weekly; IV preferred in haemodialysis patients",
+  "targets": [
+    "EPOR"
+  ],
+  "origin": "biotech",
+  "originator": "Amgen (gene cloned by Fu-Kuen Lin); licensed to Ortho Biotech (Johnson & Johnson)",
+  "owner": "Amgen (Epogen); Johnson & Johnson (Procrit/Eprex); biosimilars (Pfizer, Sandoz and others)",
+  "first_approval": {
+    "year": 1989,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Epogen"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1985,
+    "by": "Fu-Kuen Lin and colleagues, Amgen",
+    "note": "Cloning of the human erythropoietin gene, building on Eugene Goldwasser's 1977 purification of EPO from the urine of anaemic patients, allowed production in Chinese hamster ovary cells."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Recombinant erythropoietin that ended routine transfusion for anaemia of kidney failure",
+  "summary": "Epoetin alfa is recombinant human erythropoietin produced in mammalian cells. It stimulates red blood cell production and is used to treat anaemia from chronic kidney disease, chemotherapy and zidovudine, and to reduce transfusion around surgery. Cardiovascular and tumour-progression risks at higher haemoglobin targets led to boxed warnings.",
+  "mechanism": [
+    "Erythropoietin is a glycoprotein hormone made mainly by peritubular cells of the kidney in response to hypoxia. It binds the erythropoietin receptor (EPOR) on erythroid progenitors in the bone marrow, activating JAK2–STAT5 signalling that prevents apoptosis and drives proliferation and differentiation into reticulocytes.",
+    "Epoetin alfa has the same 165-amino-acid sequence as native EPO and a similar glycosylation pattern. It replaces the hormone that failing kidneys can no longer make, raising haemoglobin over weeks; adequate iron stores are needed for a response."
+  ],
+  "uses": [
+    "Anaemia due to chronic kidney disease (on and off dialysis)",
+    "Anaemia from myelosuppressive chemotherapy in non-curative settings",
+    "Anaemia from zidovudine in HIV infection",
+    "Reduction of allogeneic transfusion in elective non-cardiac, non-vascular surgery"
+  ],
+  "history": [
+    {
+      "year": 1977,
+      "title": "EPO purified",
+      "detail": "Takaji Miyake, Charles Kung and Eugene Goldwasser purify human erythropoietin from urine of patients with aplastic anaemia."
+    },
+    {
+      "year": 1985,
+      "title": "Gene cloned",
+      "detail": "Amgen's Fu-Kuen Lin clones the human EPO gene; recombinant production in CHO cells follows."
+    },
+    {
+      "year": 1987,
+      "title": "First dialysis trials",
+      "detail": "Trials in haemodialysis patients show correction of anaemia and elimination of transfusion need."
+    },
+    {
+      "year": 1989,
+      "title": "FDA approval",
+      "detail": "Approved as Epogen for anaemia of chronic renal failure, one of the first biotech blockbusters."
+    },
+    {
+      "year": 2006,
+      "title": "CHOIR and CREATE",
+      "detail": "Trials targeting normal haemoglobin in CKD show no benefit and more cardiovascular events."
+    },
+    {
+      "year": 2007,
+      "title": "Boxed warning",
+      "detail": "FDA adds a boxed warning on death, cardiovascular events and tumour progression for all ESAs."
+    },
+    {
+      "year": 2007,
+      "title": "EU biosimilars",
+      "detail": "The first epoetin alfa biosimilars (Binocrit, Abseamed, Epoetin alfa Hexal) are authorised in the EU."
+    },
+    {
+      "year": 2018,
+      "title": "US biosimilar",
+      "detail": "FDA approves Retacrit (epoetin alfa-epbx), the first US epoetin biosimilar."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4–13 hours IV in CKD; longer after SC dosing",
+    "bioavailability": "about 20–30% after SC injection",
+    "metabolism": "receptor-mediated uptake and degradation; desialylation and hepatic clearance",
+    "excretion": "minimal renal excretion"
+  },
+  "safety": {
+    "common": [
+      "hypertension",
+      "headache",
+      "arthralgia",
+      "injection-site reactions",
+      "nausea",
+      "fever"
+    ],
+    "serious": [
+      "myocardial infarction and stroke",
+      "venous and vascular access thrombosis",
+      "seizures",
+      "pure red cell aplasia (anti-EPO antibodies)",
+      "tumour progression"
+    ],
+    "boxed_warning": "ESAs increase the risk of death, myocardial infarction, stroke, venous thromboembolism, vascular access thrombosis and tumour progression or recurrence; use the lowest dose sufficient to avoid transfusion."
+  },
+  "facts": [
+    "Recombinant EPO became a notorious performance-enhancing drug in endurance sport in the 1990s; a urine test for it was introduced at the 2000 Sydney Olympics.",
+    "A cluster of antibody-mediated pure red cell aplasia cases with Eprex around 2002 was linked to a formulation change and SC use."
+  ],
+  "related": [
+    "darbepoetin-alfa",
+    "luspatercept",
+    "ferrous-sulfate",
+    "zidovudine",
+    "filgrastim"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Erythropoietin",
+      "url": "https://en.wikipedia.org/wiki/Erythropoietin"
+    },
+    {
+      "title": "DailyMed: epoetin alfa labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=EPOETIN+ALFA"
+    },
+    {
+      "title": "EMA EPAR: Binocrit",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/binocrit"
+    }
+  ],
+  "stage": "written"
 }

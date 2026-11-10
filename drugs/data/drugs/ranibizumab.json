@@ -1,36 +1,131 @@
 {
   "slug": "ranibizumab",
   "name": "Ranibizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "rhuFab V2",
+    "ranibizumab-nuna",
+    "ranibizumab-eqrn"
+  ],
+  "brands": [
+    "Lucentis",
+    "Susvimo",
+    "Byooviz",
+    "Cimerli",
+    "Ximluci"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-VEGF-A monoclonal antibody fragment (Fab)",
+  "modality": "antibody",
+  "routes": [
+    "intravitreal"
+  ],
+  "route_note": "intravitreal injection monthly or less often; refillable ocular implant (Susvimo) every six months",
+  "targets": [
+    "VEGFA"
+  ],
+  "origin": "biotech",
+  "originator": "Genentech",
+  "owner": "Genentech/Roche (US); Novartis (outside US); biosimilars (Samsung Bioepis/Biogen, Sandoz and others)",
+  "first_approval": {
+    "year": 2006,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Lucentis"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Genentech (Napoleone Ferrara's VEGF programme)",
+    "note": "An affinity-matured humanised Fab fragment derived from the same mouse anti-VEGF antibody as bevacizumab, designed for intraocular use."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Anti-VEGF antibody fragment that turned wet macular degeneration into a treatable disease",
+  "summary": "Ranibizumab is a humanised antibody fragment that binds all isoforms of VEGF-A. Injected into the eye, it suppresses abnormal blood vessel growth and leakage in neovascular age-related macular degeneration and other retinal diseases, and was the first treatment to improve vision on average in wet AMD.",
+  "mechanism": [
+    "Vascular endothelial growth factor A drives choroidal and retinal neovascularisation and increases vascular permeability, causing leakage, oedema and haemorrhage in the macula.",
+    "Ranibizumab binds the receptor-binding site of active VEGF-A isoforms, preventing VEGFR1 and VEGFR2 activation. Lacking an Fc region, it is small enough to penetrate the retina and is cleared quickly from the circulation."
+  ],
+  "uses": [
+    "Neovascular (wet) age-related macular degeneration",
+    "Diabetic macular oedema and diabetic retinopathy",
+    "Macular oedema after retinal vein occlusion",
+    "Myopic choroidal neovascularisation",
+    "Retinopathy of prematurity (EU)"
+  ],
+  "history": [
+    {
+      "year": 1989,
+      "title": "VEGF cloned",
+      "detail": "Napoleone Ferrara's group at Genentech isolates and clones VEGF."
+    },
+    {
+      "year": 2006,
+      "title": "MARINA and ANCHOR",
+      "detail": "Monthly ranibizumab improves vision in wet AMD; FDA approves Lucentis."
+    },
+    {
+      "year": 2007,
+      "title": "EU approval",
+      "detail": "Authorised in the EU, marketed by Novartis."
+    },
+    {
+      "year": 2011,
+      "title": "CATT trial",
+      "detail": "Bevacizumab is shown to be similarly effective at much lower cost, fuelling debate about off-label use."
+    },
+    {
+      "year": 2021,
+      "title": "First ophthalmic biosimilar",
+      "detail": "FDA approves Byooviz and the Susvimo port delivery system."
+    },
+    {
+      "year": 2022,
+      "title": "Susvimo recall",
+      "detail": "Genentech recalls the Susvimo implant over septum dislodgement; it returns to market in 2024."
+    }
+  ],
+  "pk": {
+    "half_life": "about 9 days in the vitreous; about 2 hours systemic",
+    "bioavailability": "low systemic exposure",
+    "metabolism": "proteolytic catabolism",
+    "excretion": "not renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+    "common": [
+      "conjunctival haemorrhage",
+      "eye pain",
+      "vitreous floaters",
+      "raised intraocular pressure"
+    ],
+    "serious": [
+      "endophthalmitis",
+      "retinal detachment",
+      "arterial thromboembolic events",
+      "endophthalmitis with the ocular implant"
+    ],
+    "boxed_warning": "Susvimo implant: endophthalmitis has occurred at three times the rate of monthly intravitreal ranibizumab."
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "aflibercept",
+    "faricimab",
+    "bevacizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ranibizumab",
+      "url": "https://en.wikipedia.org/wiki/Ranibizumab"
+    },
+    {
+      "title": "DailyMed: ranibizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=RANIBIZUMAB"
+    },
+    {
+      "title": "EMA EPAR: Lucentis",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/lucentis"
+    }
+  ],
+  "stage": "written"
 }

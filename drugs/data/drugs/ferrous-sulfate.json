@@ -1,36 +1,121 @@
 {
   "slug": "ferrous-sulfate",
   "name": "Ferrous sulfate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "iron(II) sulfate",
+    "ferrous sulphate",
+    "green vitriol"
+  ],
+  "brands": [
+    "Feosol",
+    "Slow Fe",
+    "Fer-In-Sol",
+    "Ferrograd"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Oral iron supplement (ferrous salt)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets or drops, once daily or on alternate days",
+  "targets": [
+    "SLC11A2 (DMT1 transport)"
+  ],
+  "origin": "synthetic",
+  "originator": "no single originator (traditional remedy)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1832,
+    "by": "Pierre Blaud",
+    "note": "Blaud's pills, combining ferrous sulfate with potassium carbonate, became a standard treatment for chlorosis (iron-deficiency anaemia in young women)."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "OTC in many countries",
+  "tagline": "The standard oral iron salt for iron-deficiency anaemia",
+  "summary": "Ferrous sulfate is an inexpensive iron(II) salt and the reference oral treatment for preventing and treating iron-deficiency anaemia. Absorbed iron is used to make haemoglobin and replenish stores. Gastrointestinal side effects are common, and accidental overdose is dangerous in young children.",
+  "mechanism": [
+    "Ferrous (Fe2+) iron is absorbed mainly in the duodenum by the divalent metal transporter DMT1 on enterocytes. It is exported into blood through ferroportin, oxidised and carried by transferrin to the marrow for haemoglobin synthesis or to the liver for storage as ferritin.",
+    "Absorption is regulated by the liver hormone hepcidin, which degrades ferroportin. A dose of oral iron raises hepcidin for about a day, so lower or alternate-day dosing can improve fractional absorption and tolerability."
+  ],
+  "uses": [
+    "Treatment of iron-deficiency anaemia",
+    "Prevention of iron deficiency in pregnancy, infancy and other at-risk groups"
+  ],
+  "history": [
+    {
+      "year": 1832,
+      "title": "Blaud's pills",
+      "detail": "French physician Pierre Blaud introduces ferrous sulfate pills for chlorosis."
+    },
+    {
+      "year": 1997,
+      "title": "Child safety warning",
+      "detail": "FDA requires a warning on iron-containing supplements because accidental iron overdose was a leading cause of poisoning deaths in children under six."
+    },
+    {
+      "year": 2000,
+      "title": "Hepcidin discovered",
+      "detail": "Hepcidin is identified, later recognised as the master regulator of iron absorption."
+    },
+    {
+      "year": 2015,
+      "title": "Hepcidin and dosing",
+      "detail": "Studies show a single oral iron dose raises hepcidin for about 24 hours and lowers absorption of the next day's dose."
+    },
+    {
+      "year": 2017,
+      "title": "Alternate-day dosing",
+      "detail": "Trials in iron-depleted women find alternate-day dosing increases fractional iron absorption, influencing guidelines."
+    }
+  ],
+  "pk": {
+    "half_life": null,
+    "bioavailability": "about 10–35% of iron absorbed, higher in deficiency",
+    "metabolism": "incorporated into haemoglobin, myoglobin and ferritin; not metabolised",
+    "excretion": "no active excretion pathway; lost via shed cells and bleeding"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea",
+      "constipation",
+      "abdominal pain",
+      "dark stools",
+      "diarrhoea"
+    ],
+    "serious": [
+      "acute iron poisoning in overdose (especially children)",
+      "oesophageal or gastric injury from lodged tablets"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Each 200 mg tablet of the dried salt commonly used in the UK provides about 65 mg of elemental iron.",
+    "Tea, calcium, antacids and proton pump inhibitors reduce absorption, while vitamin C enhances it."
+  ],
+  "related": [
+    "folic-acid",
+    "cyanocobalamin",
+    "epoetin-alfa",
+    "deferasirox",
+    "levothyroxine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Iron(II) sulfate",
+      "url": "https://en.wikipedia.org/wiki/Iron(II)_sulfate"
+    },
+    {
+      "title": "Wikipedia: Iron supplement",
+      "url": "https://en.wikipedia.org/wiki/Iron_supplement"
+    },
+    {
+      "title": "DailyMed: ferrous sulfate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=FERROUS+SULFATE"
+    }
+  ],
+  "stage": "written"
 }

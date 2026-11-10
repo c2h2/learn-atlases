@@ -1,36 +1,127 @@
 {
   "slug": "timolol",
   "name": "Timolol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "timolol maleate",
+    "MK-950"
+  ],
+  "brands": [
+    "Timoptic",
+    "Timoptol",
+    "Blocadren",
+    "Cosopt (with dorzolamide)",
+    "Combigan (with brimonidine)"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Non-selective beta-adrenergic blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "ophthalmic",
+    "oral"
+  ],
+  "route_note": "eye drops or gel once or twice daily; oral tablets for hypertension and migraine prophylaxis",
+  "targets": [
+    "ADRB1",
+    "ADRB2"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck Sharp & Dohme (Frosst)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1978,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Timoptic"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Merck Sharp & Dohme",
+    "note": "A thiadiazole-substituted propanolamine beta blocker without intrinsic sympathomimetic or membrane-stabilising activity."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First beta-blocker eye drop for glaucoma, also used after heart attack",
+  "summary": "Timolol is a non-selective beta-adrenergic antagonist. As eye drops it lowers intraocular pressure by reducing aqueous humour production and was a mainstay of glaucoma therapy from 1978. Orally it was one of the first beta blockers shown to reduce death after myocardial infarction. Systemic absorption from drops can cause bronchospasm and bradycardia.",
+  "mechanism": [
+    "Timolol competitively blocks beta-1 and beta-2 adrenergic receptors. In the ciliary body epithelium, beta-2 blockade reduces cyclic AMP-dependent aqueous humour secretion, lowering intraocular pressure by about 20–30%.",
+    "Systemically, beta-1 blockade slows heart rate and reduces contractility and renin release, lowering blood pressure and myocardial oxygen demand. Drops drain through the nasolacrimal duct and are absorbed without first-pass metabolism, so systemic beta blockade can occur."
+  ],
+  "uses": [
+    "Open-angle glaucoma and ocular hypertension (topical)",
+    "Hypertension (oral)",
+    "Secondary prevention after myocardial infarction (oral)",
+    "Migraine prophylaxis (oral)"
+  ],
+  "history": [
+    {
+      "year": 1978,
+      "title": "Timoptic",
+      "detail": "FDA approves timolol eye drops, the first beta blocker for glaucoma."
+    },
+    {
+      "year": 1981,
+      "title": "Norwegian Multicenter Study",
+      "detail": "Oral timolol after myocardial infarction reduces mortality and reinfarction (NEJM)."
+    },
+    {
+      "year": 1998,
+      "title": "Cosopt",
+      "detail": "A fixed combination of dorzolamide and timolol is approved in the US."
+    },
+    {
+      "year": 2007,
+      "title": "Combigan",
+      "detail": "FDA approves brimonidine–timolol fixed combination."
+    },
+    {
+      "year": 2010,
+      "title": "Infantile haemangioma",
+      "detail": "Reports of topical timolol shrinking superficial infantile haemangiomas lead to widespread off-label use."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4 hours (oral)",
+    "bioavailability": "about 60% oral; systemic absorption after ocular use",
+    "metabolism": "hepatic, mainly CYP2D6",
+    "excretion": "renal (metabolites and some unchanged drug)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "eye burning and stinging",
+      "blurred vision",
+      "bradycardia",
+      "fatigue",
+      "cold extremities"
+    ],
+    "serious": [
+      "bronchospasm in asthma or COPD",
+      "heart block and heart failure",
+      "masking of hypoglycaemia",
+      "depression",
+      "exacerbation of myasthenia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Pressing on the inner corner of the eye after instillation (punctal occlusion) reduces systemic absorption."
+  ],
+  "related": [
+    "latanoprost",
+    "propranolol",
+    "atenolol",
+    "metoprolol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Timolol",
+      "url": "https://en.wikipedia.org/wiki/Timolol"
+    },
+    {
+      "title": "DailyMed: timolol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TIMOLOL"
+    }
+  ],
+  "stage": "written"
 }

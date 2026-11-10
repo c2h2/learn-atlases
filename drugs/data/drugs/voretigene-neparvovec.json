@@ -1,36 +1,127 @@
 {
   "slug": "voretigene-neparvovec",
   "name": "Voretigene neparvovec",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "voretigene neparvovec-rzyl",
+    "AAV2-hRPE65v2",
+    "SPK-RPE65"
+  ],
+  "brands": [
+    "Luxturna"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "AAV2 vector-based gene therapy (RPE65)",
+  "modality": "gene-therapy",
+  "routes": [
+    "other"
+  ],
+  "route_note": "single subretinal injection in each eye after vitrectomy, on separate days",
+  "targets": [
+    "RPE65"
+  ],
+  "origin": "biotech",
+  "originator": "Children's Hospital of Philadelphia and University of Pennsylvania (Jean Bennett, Albert Maguire); Spark Therapeutics",
+  "owner": "Spark Therapeutics (Roche); Novartis outside the US",
+  "first_approval": {
+    "year": 2017,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Luxturna"
+  },
+  "discovery": {
+    "year": 2001,
+    "by": "Jean Bennett, Albert Maguire and colleagues",
+    "note": "AAV-delivered RPE65 restored vision in Briard dogs with naturally occurring RPE65 deficiency."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; administered at specialist retinal centres",
+  "tagline": "First in vivo gene therapy for an inherited disease approved in the US",
+  "summary": "Voretigene neparvovec is an adeno-associated virus serotype 2 vector carrying a normal RPE65 gene, injected under the retina. It restores the visual cycle in retinal pigment epithelial cells and improves functional vision in patients with biallelic RPE65-mutation retinal dystrophy, including Leber congenital amaurosis. Its 2017 US approval was a landmark for gene therapy.",
+  "mechanism": [
+    "RPE65 is an isomerase in retinal pigment epithelium that regenerates 11-cis-retinal, the chromophore photoreceptors need to detect light. Biallelic RPE65 mutations cause severe visual loss from childhood, while photoreceptors may survive for years.",
+    "After subretinal injection, the vector transduces retinal pigment epithelial cells, which then express functional RPE65 and restore the visual cycle in the treated area, improving light sensitivity and navigation in dim light. Enough viable retinal cells must remain for benefit."
+  ],
+  "uses": [
+    "Biallelic RPE65 mutation-associated retinal dystrophy with sufficient viable retinal cells"
+  ],
+  "history": [
+    {
+      "year": 2001,
+      "title": "Dog studies",
+      "detail": "Gene therapy restores vision in RPE65-deficient Briard dogs."
+    },
+    {
+      "year": 2008,
+      "title": "First human trials",
+      "detail": "Teams in Philadelphia and London report safety and early benefit in Leber congenital amaurosis."
+    },
+    {
+      "year": 2017,
+      "title": "Phase 3 results",
+      "detail": "A randomised trial shows improved multi-luminance mobility test performance."
+    },
+    {
+      "year": 2017,
+      "title": "FDA approval",
+      "detail": "Luxturna approved in December, priced at $850,000 for both eyes."
+    },
+    {
+      "year": 2018,
+      "title": "EU approval",
+      "detail": "Authorised in the EU; Novartis markets it outside the US."
+    },
+    {
+      "year": 2019,
+      "title": "Roche acquires Spark",
+      "detail": "Roche completes its acquisition of Spark Therapeutics."
+    }
+  ],
+  "pk": {
+    "half_life": "not applicable (durable local expression)",
+    "bioavailability": "not applicable",
+    "metabolism": "not applicable",
+    "excretion": "transient vector shedding in tears"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "conjunctival hyperaemia",
+      "cataract",
+      "raised intraocular pressure",
+      "retinal tear",
+      "eye inflammation"
+    ],
+    "serious": [
+      "endophthalmitis",
+      "retinal detachment",
+      "macular hole",
+      "chorioretinal atrophy at the injection site",
+      "permanent decline in visual acuity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Treated patients have reported being able to see stars or navigate at night for the first time."
+  ],
+  "related": [
+    "etranacogene-dezaparvovec",
+    "onasemnogene-abeparvovec",
+    "exagamglogene-autotemcel"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Voretigene neparvovec",
+      "url": "https://en.wikipedia.org/wiki/Voretigene_neparvovec"
+    },
+    {
+      "title": "EMA EPAR: Luxturna",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/luxturna"
+    },
+    {
+      "title": "FDA: Luxturna",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/luxturna"
+    }
+  ],
+  "stage": "written"
 }

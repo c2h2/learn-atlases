@@ -1,36 +1,129 @@
 {
   "slug": "ethinylestradiol-levonorgestrel",
-  "name": "Ethinylestradiol levonorgestrel",
-  "aliases": [],
-  "brands": [],
+  "name": "Ethinylestradiol/levonorgestrel",
+  "aliases": [
+    "EE/LNG",
+    "ethinyl estradiol and levonorgestrel"
+  ],
+  "brands": [
+    "Microgynon",
+    "Nordette",
+    "Levlen",
+    "Seasonale",
+    "Seasonique",
+    "Twirla (patch)"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Combined hormonal contraceptive (oestrogen plus second-generation progestin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "transdermal"
+  ],
+  "route_note": "oral tablets daily in monophasic, triphasic or extended cycles; weekly transdermal patch",
+  "targets": [
+    "ESR1",
+    "PGR"
+  ],
+  "origin": "synthetic",
+  "originator": "Schering AG and Wyeth",
+  "owner": "generic (many); Bayer and others",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": null,
+    "by": "Schering AG and Wyeth",
+    "note": "Combination of ethinylestradiol, the first orally active synthetic oestrogen (1938), with levonorgestrel."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (OTC or pharmacist-supplied in some countries)",
+  "tagline": "Classic second-generation combined pill with a low venous thrombosis risk",
+  "summary": "Ethinylestradiol/levonorgestrel is a combined hormonal contraceptive pairing a synthetic oestrogen with a second-generation progestin. It is among the most widely used and studied oral contraceptives and is often recommended first-line because of its relatively low risk of venous thromboembolism among combined pills.",
+  "mechanism": [
+    "The oestrogen and progestin suppress hypothalamic GnRH pulses and pituitary FSH and LH secretion, preventing follicle development and ovulation.",
+    "Levonorgestrel also thickens cervical mucus and makes the endometrium less receptive, while ethinylestradiol stabilises the endometrium for predictable bleeding. Extended-cycle regimens reduce the number of withdrawal bleeds per year."
+  ],
+  "uses": [
+    "Prevention of pregnancy",
+    "Menstrual cycle regulation and reduction of dysmenorrhoea (common use)"
+  ],
+  "history": [
+    {
+      "year": 1960,
+      "title": "First pill",
+      "detail": "FDA approves Enovid, the first oral contraceptive."
+    },
+    {
+      "year": 1963,
+      "title": "Norgestrel",
+      "detail": "Norgestrel is synthesised; its active isomer levonorgestrel is later paired with ethinylestradiol."
+    },
+    {
+      "year": 1995,
+      "title": "UK pill scare",
+      "detail": "UK regulators warn that pills containing third-generation progestins carry higher VTE risk than levonorgestrel pills, prompting a shift back to them."
+    },
+    {
+      "year": 2003,
+      "title": "Extended cycle",
+      "detail": "FDA approves Seasonale, a 91-day regimen with four withdrawal bleeds a year."
+    },
+    {
+      "year": 2007,
+      "title": "Continuous use",
+      "detail": "FDA approves Lybrel for continuous use without a hormone-free interval."
+    },
+    {
+      "year": 2020,
+      "title": "Patch",
+      "detail": "FDA approves Twirla, a levonorgestrel–ethinylestradiol transdermal patch."
+    }
+  ],
+  "pk": {
+    "half_life": "about 13–27 hours (ethinylestradiol); 24–32 hours (levonorgestrel)",
+    "bioavailability": "ethinylestradiol about 40–60%; levonorgestrel nearly 100%",
+    "metabolism": "CYP3A4; sulfation and glucuronidation with enterohepatic recycling",
+    "excretion": "urine and faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+    "common": [
+      "breakthrough bleeding",
+      "nausea",
+      "breast tenderness",
+      "headache",
+      "mood changes"
+    ],
+    "serious": [
+      "venous thromboembolism",
+      "stroke and myocardial infarction (especially smokers over 35)",
+      "hypertension",
+      "hepatic adenoma",
+      "gallbladder disease"
+    ],
+    "boxed_warning": "Cigarette smoking increases the risk of serious cardiovascular events from combined hormonal contraceptives; this risk rises with age and number of cigarettes, and use is contraindicated in women over 35 who smoke."
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "levonorgestrel",
+    "estradiol",
+    "mifepristone",
+    "rifampicin",
+    "lamotrigine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ethinylestradiol/levonorgestrel",
+      "url": "https://en.wikipedia.org/wiki/Ethinylestradiol/levonorgestrel"
+    },
+    {
+      "title": "DailyMed: levonorgestrel and ethinyl estradiol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=LEVONORGESTREL+AND+ETHINYL+ESTRADIOL"
+    },
+    {
+      "title": "Wikipedia: Combined oral contraceptive pill",
+      "url": "https://en.wikipedia.org/wiki/Combined_oral_contraceptive_pill"
+    }
+  ],
+  "stage": "written"
 }

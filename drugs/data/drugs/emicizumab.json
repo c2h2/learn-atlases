@@ -1,36 +1,118 @@
 {
   "slug": "emicizumab",
   "name": "Emicizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ACE910",
+    "RO5534262",
+    "emicizumab-kxwh"
+  ],
+  "brands": [
+    "Hemlibra"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Bispecific factor IXa- and factor X-directed antibody (factor VIII mimetic)",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "SC injection weekly, every two weeks or every four weeks after loading doses",
+  "targets": [
+    "F9",
+    "F10"
+  ],
+  "origin": "biotech",
+  "originator": "Chugai Pharmaceutical",
+  "owner": "Roche (Genentech; Chugai in Japan)",
+  "first_approval": {
+    "year": 2017,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Hemlibra"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 2012,
+    "by": "Takehisa Kitazawa and colleagues, Chugai",
+    "note": "A humanised bispecific IgG4 that bridges activated factor IX and factor X, restoring the cofactor function of missing factor VIII."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Bispecific antibody that mimics factor VIII for haemophilia A prophylaxis",
+  "summary": "Emicizumab is a humanised bispecific monoclonal antibody that binds factor IXa and factor X, bringing them together to substitute for the function of factor VIII. Given subcutaneously as infrequently as monthly, it prevents bleeding in haemophilia A with or without factor VIII inhibitors.",
+  "mechanism": [
+    "In normal coagulation, activated factor VIII acts as a cofactor that positions factor IXa and factor X on the platelet surface so that factor X is efficiently activated. In haemophilia A this cofactor is missing or neutralised by inhibitory antibodies.",
+    "Emicizumab has one arm binding factor IXa and another binding factor X, so it bridges the two and restores tenase activity. Because it has no structural similarity to factor VIII, it is not affected by factor VIII inhibitors and does not induce them, and its long antibody half-life allows weekly to monthly dosing."
+  ],
+  "uses": [
+    "Routine prophylaxis of bleeding in haemophilia A with or without factor VIII inhibitors, all ages"
+  ],
+  "history": [
+    {
+      "year": 2012,
+      "title": "Proof of concept",
+      "detail": "Chugai publishes a bispecific antibody that mimics factor VIII in Nature Medicine."
+    },
+    {
+      "year": 2017,
+      "title": "HAVEN 1",
+      "detail": "Weekly prophylaxis reduces bleeding by about 87% in adults with inhibitors versus on-demand bypassing agents."
+    },
+    {
+      "year": 2017,
+      "title": "FDA approval",
+      "detail": "Hemlibra approved for haemophilia A with inhibitors."
+    },
+    {
+      "year": 2018,
+      "title": "Without inhibitors",
+      "detail": "FDA extends approval to patients without inhibitors and to dosing every 2 or 4 weeks."
+    },
+    {
+      "year": 2018,
+      "title": "EU approval",
+      "detail": "Authorised in the EU for prophylaxis in haemophilia A with inhibitors, extended in 2019."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4–5 weeks (about 27 days)",
+    "bioavailability": "about 80–93% SC",
+    "metabolism": "catabolism to peptides",
+    "excretion": "not renal"
+  },
+  "safety": {
+    "common": [
+      "injection-site reactions",
+      "headache",
+      "arthralgia"
+    ],
+    "serious": [
+      "thrombotic microangiopathy and thrombosis with activated prothrombin complex concentrate",
+      "laboratory coagulation test interference"
+    ],
+    "boxed_warning": "Thrombotic microangiopathy and thromboembolism were reported when activated prothrombin complex concentrate averaged over 100 U/kg/24 h was given for 24 hours or more to patients on emicizumab."
+  },
+  "facts": [
+    "Emicizumab makes aPTT-based assays unreliable, so specialised chromogenic assays with bovine reagents are needed to measure factor VIII activity."
+  ],
+  "related": [
+    "octocog-alfa",
+    "tranexamic-acid",
+    "etranacogene-dezaparvovec"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Emicizumab",
+      "url": "https://en.wikipedia.org/wiki/Emicizumab"
+    },
+    {
+      "title": "DailyMed: hemlibra labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=HEMLIBRA"
+    },
+    {
+      "title": "EMA EPAR: Hemlibra",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/hemlibra"
+    }
+  ],
+  "stage": "written"
 }

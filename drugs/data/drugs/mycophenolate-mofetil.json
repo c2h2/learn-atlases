@@ -1,36 +1,134 @@
 {
   "slug": "mycophenolate-mofetil",
   "name": "Mycophenolate mofetil",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MMF",
+    "RS-61443",
+    "mycophenolic acid (active form)"
+  ],
+  "brands": [
+    "CellCept",
+    "Myfortic (mycophenolate sodium)"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Inosine monophosphate dehydrogenase (IMPDH) inhibitor (antiproliferative immunosuppressant)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral tablets, capsules or suspension twice daily; IV infusion",
+  "targets": [
+    "IMPDH2",
+    "IMPDH1"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Syntex (Anthony Allison and Elsie Eugui); now Roche",
+  "owner": "Roche (CellCept); generic (many)",
+  "first_approval": {
+    "year": 1995,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "CellCept"
+  },
+  "discovery": {
+    "year": 1893,
+    "by": "Bartolomeo Gosio",
+    "note": "Mycophenolic acid was isolated from Penicillium as one of the first antibiotics; Syntex later made the morpholinoethyl ester prodrug to improve bioavailability."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Prodrug of mycophenolic acid that selectively starves lymphocytes of guanine",
+  "summary": "Mycophenolate mofetil is a prodrug of mycophenolic acid, which inhibits inosine monophosphate dehydrogenase and depletes guanosine nucleotides in lymphocytes. It is a standard part of immunosuppression after kidney, heart and liver transplantation and is widely used for lupus nephritis and other autoimmune diseases. It is strongly teratogenic.",
+  "mechanism": [
+    "Mycophenolic acid is a reversible, non-competitive inhibitor of IMPDH, the rate-limiting enzyme in de novo synthesis of guanosine nucleotides, with greater potency against the type II isoform expressed in activated lymphocytes.",
+    "T and B lymphocytes depend heavily on the de novo pathway, whereas other cells can use the salvage pathway, so lymphocyte proliferation and antibody formation are selectively suppressed."
+  ],
+  "uses": [
+    "Prophylaxis of rejection in kidney, heart and liver transplantation",
+    "Lupus nephritis (widely used; labelled in some countries)",
+    "Other autoimmune diseases such as vasculitis and myasthenia gravis (off-label)"
+  ],
+  "history": [
+    {
+      "year": 1893,
+      "title": "Mycophenolic acid",
+      "detail": "Bartolomeo Gosio isolates mycophenolic acid from Penicillium mould."
+    },
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "CellCept approved for prevention of kidney transplant rejection, replacing azathioprine in many regimens."
+    },
+    {
+      "year": 1998,
+      "title": "Heart transplant",
+      "detail": "Approval extended to heart transplantation."
+    },
+    {
+      "year": 2004,
+      "title": "Mycophenolate sodium",
+      "detail": "Enteric-coated mycophenolate sodium (Myfortic) approved."
+    },
+    {
+      "year": 2009,
+      "title": "ALMS trial",
+      "detail": "Mycophenolate is shown to be comparable to IV cyclophosphamide for lupus nephritis induction."
+    },
+    {
+      "year": 2012,
+      "title": "REMS",
+      "detail": "FDA approves a mycophenolate REMS focused on pregnancy prevention."
+    }
+  ],
+  "pk": {
+    "half_life": "about 18 hours (mycophenolic acid)",
+    "bioavailability": "about 94% as mycophenolic acid",
+    "metabolism": "hydrolysis to MPA; glucuronidation to inactive MPAG with enterohepatic recycling",
+    "excretion": "urine (about 93%, mainly MPAG)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+    "common": [
+      "diarrhoea",
+      "nausea",
+      "vomiting",
+      "leukopenia",
+      "anaemia",
+      "infections"
+    ],
+    "serious": [
+      "embryofetal toxicity (miscarriage and congenital malformations)",
+      "lymphoma and skin cancer",
+      "serious infections including PML and CMV",
+      "pure red cell aplasia",
+      "gastrointestinal bleeding"
+    ],
+    "boxed_warning": "Embryofetal toxicity (first-trimester pregnancy loss and congenital malformations), malignancies such as lymphoma, and serious infections."
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "tacrolimus",
+    "ciclosporin",
+    "azathioprine",
+    "prednisolone",
+    "cyclophosphamide",
+    "sirolimus"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Mycophenolic acid",
+      "url": "https://en.wikipedia.org/wiki/Mycophenolic_acid"
+    },
+    {
+      "title": "DailyMed: mycophenolate mofetil labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=MYCOPHENOLATE+MOFETIL"
+    },
+    {
+      "title": "EMA EPAR: Cellcept",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/cellcept"
+    }
+  ],
+  "stage": "written"
 }

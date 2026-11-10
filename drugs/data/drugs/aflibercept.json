@@ -1,36 +1,137 @@
 {
   "slug": "aflibercept",
   "name": "Aflibercept",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "VEGF Trap-Eye",
+    "ziv-aflibercept",
+    "aflibercept-jbvf"
+  ],
+  "brands": [
+    "Eylea",
+    "Eylea HD",
+    "Zaltrap",
+    "Yesafili",
+    "Opuviz"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "VEGF receptor fusion protein (VEGF trap)",
+  "modality": "protein",
+  "routes": [
+    "intravitreal",
+    "iv"
+  ],
+  "route_note": "intravitreal injection every 4–16 weeks for eye disease; IV infusion every two weeks (ziv-aflibercept) for colorectal cancer",
+  "targets": [
+    "VEGFA",
+    "VEGFB",
+    "PGF"
+  ],
+  "origin": "biotech",
+  "originator": "Regeneron Pharmaceuticals",
+  "owner": "Regeneron (US, Eylea); Bayer (outside US); Sanofi (Zaltrap); biosimilars",
+  "first_approval": {
+    "year": 2011,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Eylea"
+  },
+  "discovery": {
+    "year": 2002,
+    "by": "Jocelyn Holash, George Yancopoulos and colleagues, Regeneron",
+    "note": "A decoy receptor fusing VEGFR1 domain 2 and VEGFR2 domain 3 to human IgG1 Fc, binding VEGF with very high affinity."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "VEGF trap fusion protein used for retinal disease and metastatic colorectal cancer",
+  "summary": "Aflibercept is a recombinant fusion protein that acts as a soluble decoy receptor for VEGF-A, VEGF-B and placental growth factor. As Eylea it treats wet macular degeneration, diabetic macular oedema and retinal vein occlusion with less frequent injections than earlier agents; as ziv-aflibercept (Zaltrap) it is used with chemotherapy in metastatic colorectal cancer.",
+  "mechanism": [
+    "Aflibercept combines the binding domains of VEGFR1 and VEGFR2, so it traps VEGF-A, VEGF-B and placental growth factor before they reach their receptors, with higher affinity than the native receptors.",
+    "In the eye this suppresses choroidal neovascularisation and vascular leakage; in tumours it limits angiogenesis needed for growth. The long intraocular activity permits dosing every eight weeks or longer after loading doses."
+  ],
+  "uses": [
+    "Neovascular age-related macular degeneration",
+    "Diabetic macular oedema and diabetic retinopathy",
+    "Macular oedema after retinal vein occlusion",
+    "Retinopathy of prematurity",
+    "Metastatic colorectal cancer with FOLFIRI (ziv-aflibercept)"
+  ],
+  "history": [
+    {
+      "year": 2002,
+      "title": "VEGF Trap",
+      "detail": "Regeneron describes the VEGF-Trap decoy receptor in PNAS."
+    },
+    {
+      "year": 2011,
+      "title": "Eye approval",
+      "detail": "FDA approves Eylea for wet AMD based on the VIEW 1 and VIEW 2 trials."
+    },
+    {
+      "year": 2012,
+      "title": "Cancer approval",
+      "detail": "Ziv-aflibercept (Zaltrap), with Sanofi, approved for metastatic colorectal cancer; EU approves Eylea."
+    },
+    {
+      "year": 2014,
+      "title": "Diabetic macular oedema",
+      "detail": "FDA approves Eylea for diabetic macular oedema."
+    },
+    {
+      "year": 2023,
+      "title": "Eylea HD",
+      "detail": "An 8 mg high-dose formulation allowing intervals up to 16 weeks is approved."
+    },
+    {
+      "year": 2024,
+      "title": "Biosimilars",
+      "detail": "FDA approves the first aflibercept biosimilars, including interchangeable products; launches are delayed by patent litigation."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5–6 days systemic after IV; free drug undetectable soon after intravitreal dosing",
+    "bioavailability": "low systemic exposure after intravitreal use",
+    "metabolism": "proteolytic catabolism",
+    "excretion": "not renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "conjunctival haemorrhage",
+      "eye pain",
+      "cataract",
+      "vitreous floaters",
+      "hypertension and proteinuria (IV)",
+      "diarrhoea and stomatitis (IV)"
+    ],
+    "serious": [
+      "endophthalmitis and retinal detachment",
+      "arterial thromboembolic events",
+      "haemorrhage, gastrointestinal perforation and impaired wound healing (IV)"
+    ],
     "boxed_warning": null
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "ranibizumab",
+    "faricimab",
+    "bevacizumab",
+    "irinotecan",
+    "fluorouracil"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Aflibercept",
+      "url": "https://en.wikipedia.org/wiki/Aflibercept"
+    },
+    {
+      "title": "DailyMed: eylea labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=EYLEA"
+    },
+    {
+      "title": "EMA EPAR: Eylea",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/eylea"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,126 @@
 {
   "slug": "luspatercept",
   "name": "Luspatercept",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ACE-536",
+    "luspatercept-aamt"
+  ],
+  "brands": [
+    "Reblozyl"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Erythroid maturation agent (activin receptor type IIB ligand trap)",
+  "modality": "protein",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "SC injection every three weeks",
+  "targets": [
+    "GDF11",
+    "MSTN",
+    "INHBB"
+  ],
+  "origin": "biotech",
+  "originator": "Acceleron Pharma (co-developed with Celgene)",
+  "owner": "Bristol Myers Squibb",
+  "first_approval": {
+    "year": 2019,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Reblozyl"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Acceleron Pharma",
+    "note": "A fusion of the modified extracellular domain of activin receptor type IIB with human IgG1 Fc, which traps TGF-beta superfamily ligands that inhibit late-stage erythropoiesis."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Ligand trap that corrects ineffective red cell maturation in thalassaemia and MDS",
+  "summary": "Luspatercept is a recombinant fusion protein that binds selected TGF-beta superfamily ligands such as GDF11, reducing SMAD2/3 signalling that blocks late red cell maturation. It reduces transfusion needs in beta-thalassaemia and lower-risk myelodysplastic syndromes.",
+  "mechanism": [
+    "In ineffective erythropoiesis, excess signalling by TGF-beta superfamily ligands through activin receptors and SMAD2/3 holds erythroid precursors at late stages, so many die in the marrow.",
+    "Luspatercept acts as a decoy receptor, sequestering ligands such as GDF11, GDF8 and activin B. This releases the block and promotes maturation of late-stage erythroblasts, increasing haemoglobin independently of erythropoietin."
+  ],
+  "uses": [
+    "Anaemia in transfusion-dependent beta-thalassaemia",
+    "Anaemia in non-transfusion-dependent beta-thalassaemia (EU)",
+    "Anaemia in lower-risk myelodysplastic syndromes, including first-line in ESA-naive patients"
+  ],
+  "history": [
+    {
+      "year": 2008,
+      "title": "Celgene partnership",
+      "detail": "Acceleron and Celgene begin collaborating on activin receptor ligand traps."
+    },
+    {
+      "year": 2019,
+      "title": "FDA approval",
+      "detail": "Approved for transfusion-dependent beta-thalassaemia after the BELIEVE trial."
+    },
+    {
+      "year": 2020,
+      "title": "MDS approval",
+      "detail": "FDA approves use in lower-risk MDS with ring sideroblasts after MEDALIST; EU approval follows."
+    },
+    {
+      "year": 2021,
+      "title": "Merck buys Acceleron",
+      "detail": "Merck acquires Acceleron; Bristol Myers Squibb (which had acquired Celgene) retains luspatercept."
+    },
+    {
+      "year": 2023,
+      "title": "First-line MDS",
+      "detail": "COMMANDS trial leads to FDA approval before ESAs in lower-risk MDS."
+    }
+  ],
+  "pk": {
+    "half_life": "about 11–13 days",
+    "bioavailability": null,
+    "metabolism": "catabolism to amino acids",
+    "excretion": "not renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "fatigue",
+      "headache",
+      "musculoskeletal pain",
+      "arthralgia",
+      "dizziness",
+      "nausea",
+      "diarrhoea",
+      "hypertension"
+    ],
+    "serious": [
+      "thromboembolic events in beta-thalassaemia",
+      "hypertension",
+      "extramedullary haematopoietic masses",
+      "embryo-fetal toxicity"
+    ],
     "boxed_warning": null
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "epoetin-alfa",
+    "darbepoetin-alfa",
+    "deferasirox",
+    "sotatercept"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Luspatercept",
+      "url": "https://en.wikipedia.org/wiki/Luspatercept"
+    },
+    {
+      "title": "DailyMed: reblozyl labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=REBLOZYL"
+    },
+    {
+      "title": "EMA EPAR: Reblozyl",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/reblozyl"
+    }
+  ],
+  "stage": "written"
 }

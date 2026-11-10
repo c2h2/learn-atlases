@@ -1,36 +1,123 @@
 {
   "slug": "deucravacitinib",
   "name": "Deucravacitinib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BMS-986165"
+  ],
+  "brands": [
+    "Sotyktu"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Allosteric tyrosine kinase 2 (TYK2) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets once daily",
+  "targets": [
+    "TYK2"
+  ],
+  "origin": "synthetic",
+  "originator": "Bristol Myers Squibb",
+  "owner": "Bristol Myers Squibb",
+  "first_approval": {
+    "year": 2022,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Sotyktu"
+  },
+  "discovery": {
+    "year": 2019,
+    "by": "Bristol Myers Squibb (David Wrobleski and colleagues)",
+    "note": "A deuterated molecule that binds the regulatory pseudokinase (JH2) domain of TYK2 rather than the conserved ATP site, giving high selectivity over JAK1–3."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First allosteric TYK2 inhibitor, binding the pseudokinase domain",
+  "summary": "Deucravacitinib is an oral, highly selective inhibitor of TYK2 that binds the kinase's regulatory pseudokinase domain. It blocks signalling of interleukin-23, interleukin-12 and type I interferons and is approved for moderate to severe plaque psoriasis. Unlike JAK1–3 inhibitors, it carries no boxed warning.",
+  "mechanism": [
+    "TYK2 is a JAK family kinase that transmits signals from receptors for IL-23, IL-12 and type I interferons, key drivers of the IL-23/Th17 axis in psoriasis.",
+    "Deucravacitinib binds the JH2 pseudokinase domain and locks TYK2 in an inactive conformation, so it does not compete with ATP and has little activity against JAK1, JAK2 or JAK3 at clinical doses. A deuterated methyl amide reduces formation of a less selective metabolite."
+  ],
+  "uses": [
+    "Moderate to severe plaque psoriasis in adults eligible for systemic therapy or phototherapy"
+  ],
+  "history": [
+    {
+      "year": 2019,
+      "title": "Discovery published",
+      "detail": "BMS describes BMS-986165 in the Journal of Medicinal Chemistry."
+    },
+    {
+      "year": 2021,
+      "title": "POETYK PSO trials",
+      "detail": "Phase 3 trials show superiority to placebo and apremilast in plaque psoriasis."
+    },
+    {
+      "year": 2022,
+      "title": "FDA approval",
+      "detail": "Sotyktu approved for plaque psoriasis without the JAK inhibitor boxed warning."
+    },
+    {
+      "year": 2022,
+      "title": "Japan approval",
+      "detail": "Approved in Japan for psoriasis, including pustular and erythrodermic forms."
+    },
+    {
+      "year": 2023,
+      "title": "EU approval",
+      "detail": "Authorised in the EU for plaque psoriasis."
+    }
+  ],
+  "pk": {
+    "half_life": "about 10 hours",
+    "bioavailability": "about 99%",
+    "metabolism": "CYP1A2 (major), CYP2B6, CYP2D6, CES2 and UGT1A9",
+    "excretion": "urine and faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "upper respiratory infections",
+      "raised creatine kinase",
+      "herpes simplex",
+      "mouth ulcers",
+      "folliculitis",
+      "acne"
+    ],
+    "serious": [
+      "serious infections",
+      "malignancy (theoretical)",
+      "rhabdomyolysis",
+      "raised triglycerides and liver enzymes"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It is considered the first de novo deuterated drug approved by the FDA, as opposed to a deuterated version of an existing drug."
+  ],
+  "related": [
+    "apremilast",
+    "tofacitinib",
+    "upadacitinib",
+    "baricitinib",
+    "ustekinumab",
+    "guselkumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Deucravacitinib",
+      "url": "https://en.wikipedia.org/wiki/Deucravacitinib"
+    },
+    {
+      "title": "DailyMed: sotyktu labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=SOTYKTU"
+    },
+    {
+      "title": "EMA EPAR: Sotyktu",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/sotyktu"
+    }
+  ],
+  "stage": "written"
 }

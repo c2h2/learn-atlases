@@ -1,36 +1,129 @@
 {
   "slug": "exagamglogene-autotemcel",
   "name": "Exagamglogene autotemcel",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "exa-cel",
+    "CTX001"
+  ],
+  "brands": [
+    "Casgevy"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "CRISPR-Cas9 gene-edited autologous haematopoietic stem cell therapy",
+  "modality": "gene-therapy",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "single IV infusion of edited autologous CD34+ cells after busulfan myeloablative conditioning",
+  "targets": [
+    "BCL11A"
+  ],
+  "origin": "biotech",
+  "originator": "CRISPR Therapeutics and Vertex Pharmaceuticals",
+  "owner": "Vertex Pharmaceuticals (with CRISPR Therapeutics)",
+  "first_approval": {
+    "year": 2023,
+    "agency": "MHRA",
+    "country": "UK",
+    "brand": "Casgevy"
+  },
+  "discovery": {
+    "year": 2013,
+    "by": "Daniel Bauer, Stuart Orkin and colleagues (Boston Children's Hospital)",
+    "note": "Identification of an erythroid-specific enhancer of BCL11A showed that disrupting it could reactivate fetal haemoglobin without affecting other blood lineages."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; administered at authorised treatment centres",
+  "tagline": "First approved CRISPR medicine; restores fetal haemoglobin in sickle cell and thalassaemia",
+  "summary": "Exagamglogene autotemcel is a one-time therapy in which a patient's own blood stem cells are edited with CRISPR-Cas9 to disrupt the erythroid enhancer of BCL11A, restoring fetal haemoglobin production. It was the first CRISPR-based medicine to be approved, for severe sickle cell disease and transfusion-dependent beta-thalassaemia.",
+  "mechanism": [
+    "BCL11A is a transcriptional repressor that switches off gamma-globin (fetal haemoglobin) after birth. Exa-cel uses Cas9 and a guide RNA to cut the BCL11A erythroid enhancer in CD34+ cells collected by apheresis, reducing BCL11A only in red cell precursors.",
+    "After busulfan conditioning clears the marrow, the edited cells engraft and produce red cells with high fetal haemoglobin. HbF prevents HbS polymerisation in sickle cell disease and compensates for missing beta-globin in beta-thalassaemia."
+  ],
+  "uses": [
+    "Sickle cell disease with recurrent vaso-occlusive crises (age 12 and older)",
+    "Transfusion-dependent beta-thalassaemia (age 12 and older)"
+  ],
+  "history": [
+    {
+      "year": 2012,
+      "title": "CRISPR-Cas9 editing",
+      "detail": "Jennifer Doudna and Emmanuelle Charpentier describe programmable CRISPR-Cas9 DNA cleavage."
+    },
+    {
+      "year": 2013,
+      "title": "BCL11A enhancer",
+      "detail": "An erythroid enhancer of BCL11A is identified as a target for fetal haemoglobin reactivation."
+    },
+    {
+      "year": 2019,
+      "title": "First patient",
+      "detail": "Victoria Gray, a Mississippi woman with sickle cell disease, is the first patient treated in the CLIMB trials."
+    },
+    {
+      "year": 2021,
+      "title": "First results",
+      "detail": "NEJM reports durable fetal haemoglobin and freedom from crises and transfusions in the first patients."
+    },
+    {
+      "year": 2023,
+      "title": "World-first approval",
+      "detail": "The UK MHRA approves Casgevy in November; FDA approves it for sickle cell disease in December."
+    },
+    {
+      "year": 2024,
+      "title": "Further approvals",
+      "detail": "FDA approves use in beta-thalassaemia and the EU grants conditional authorisation."
+    }
+  ],
+  "pk": {
+    "half_life": "not applicable (engrafting cell therapy)",
+    "bioavailability": "not applicable",
+    "metabolism": "not applicable",
+    "excretion": "not applicable"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "mucositis",
+      "febrile neutropenia",
+      "nausea",
+      "decreased appetite",
+      "musculoskeletal pain",
+      "abdominal pain"
+    ],
+    "serious": [
+      "prolonged cytopenias and delayed platelet engraftment",
+      "neutrophil engraftment failure",
+      "infertility and other busulfan-related toxicities",
+      "hypersensitivity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its list price in the US was set at about $2.2 million per patient.",
+    "Most toxicity comes from the busulfan conditioning rather than the edited cells themselves."
+  ],
+  "related": [
+    "hydroxyurea",
+    "voxelotor",
+    "etranacogene-dezaparvovec",
+    "voretigene-neparvovec"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Exagamglogene autotemcel",
+      "url": "https://en.wikipedia.org/wiki/Exagamglogene_autotemcel"
+    },
+    {
+      "title": "EMA EPAR: Casgevy",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/casgevy"
+    },
+    {
+      "title": "FDA: Casgevy",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/casgevy"
+    }
+  ],
+  "stage": "written"
 }

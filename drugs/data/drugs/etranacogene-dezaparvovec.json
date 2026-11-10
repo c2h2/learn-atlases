@@ -1,36 +1,122 @@
 {
   "slug": "etranacogene-dezaparvovec",
   "name": "Etranacogene dezaparvovec",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AMT-061",
+    "etranacogene dezaparvovec-drlb",
+    "EtranaDez"
+  ],
+  "brands": [
+    "Hemgenix"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "AAV5 vector-based gene therapy (factor IX)",
+  "modality": "gene-therapy",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "single IV infusion",
+  "targets": [
+    "F9"
+  ],
+  "origin": "biotech",
+  "originator": "uniQure",
+  "owner": "CSL Behring",
+  "first_approval": {
+    "year": 2022,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Hemgenix"
+  },
+  "discovery": {
+    "year": 2009,
+    "by": "Paolo Simioni and colleagues (University of Padua)",
+    "note": "Discovery of the hyperactive factor IX Padua variant (R338L) in a family with thrombophilia, later used to make gene therapy more potent."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; administered at specialist centres",
+  "tagline": "One-time AAV gene therapy delivering hyperactive factor IX for haemophilia B",
+  "summary": "Etranacogene dezaparvovec is an adeno-associated virus serotype 5 vector carrying the gene for the highly active factor IX Padua variant under a liver-specific promoter. A single infusion lets the liver produce factor IX, reducing bleeding and removing the need for routine prophylaxis in most adults with haemophilia B.",
+  "mechanism": [
+    "Haemophilia B results from deficiency of coagulation factor IX. The AAV5 vector delivers a codon-optimised F9 Padua transgene to hepatocytes, where it persists mainly as non-integrated episomes and is expressed under a liver-specific promoter.",
+    "The Padua variant (R338L) has roughly five to eight times the specific activity of wild-type factor IX, so modest transgene expression yields clinically useful factor IX activity, typically around 30–40% of normal in trials."
+  ],
+  "uses": [
+    "Adults with haemophilia B who use factor IX prophylaxis, have current or past life-threatening haemorrhage, or have repeated serious spontaneous bleeding"
+  ],
+  "history": [
+    {
+      "year": 2009,
+      "title": "Factor IX Padua",
+      "detail": "A hyperactive factor IX variant is described in an Italian family with thrombosis."
+    },
+    {
+      "year": 2018,
+      "title": "HOPE-B trial",
+      "detail": "uniQure begins the pivotal phase 3 trial of AMT-061."
+    },
+    {
+      "year": 2020,
+      "title": "CSL licence",
+      "detail": "CSL Behring acquires global rights from uniQure."
+    },
+    {
+      "year": 2022,
+      "title": "FDA approval",
+      "detail": "Hemgenix becomes the first gene therapy for haemophilia B; its US list price of $3.5 million made it the world's most expensive medicine at the time."
+    },
+    {
+      "year": 2023,
+      "title": "EU approval",
+      "detail": "Conditional marketing authorisation granted in the EU."
+    }
+  ],
+  "pk": {
+    "half_life": "not applicable (durable transgene expression)",
+    "bioavailability": "not applicable",
+    "metabolism": "vector shedding in semen and blood declines over months",
+    "excretion": "not applicable"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "raised liver enzymes",
+      "headache",
+      "influenza-like illness",
+      "infusion reactions",
+      "fatigue"
+    ],
+    "serious": [
+      "hepatotoxicity",
+      "infusion reactions",
+      "theoretical risk of hepatocellular carcinoma from vector integration"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Patients with pre-existing anti-AAV5 neutralising antibodies were not excluded from HOPE-B, unlike many other AAV trials."
+  ],
+  "related": [
+    "octocog-alfa",
+    "emicizumab",
+    "voretigene-neparvovec",
+    "onasemnogene-abeparvovec",
+    "exagamglogene-autotemcel"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Etranacogene dezaparvovec",
+      "url": "https://en.wikipedia.org/wiki/Etranacogene_dezaparvovec"
+    },
+    {
+      "title": "EMA EPAR: Hemgenix",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/hemgenix"
+    },
+    {
+      "title": "FDA: Hemgenix",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/vaccines/hemgenix"
+    }
+  ],
+  "stage": "written"
 }

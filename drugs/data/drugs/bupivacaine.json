@@ -1,36 +1,128 @@
 {
   "slug": "bupivacaine",
   "name": "Bupivacaine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "bupivacaine hydrochloride",
+    "LAC-43"
+  ],
+  "brands": [
+    "Marcaine",
+    "Sensorcaine",
+    "Exparel (liposomal)",
+    "Xaracoll",
+    "Zynrelef (with meloxicam)"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Amide local anaesthetic",
+  "modality": "small-molecule",
+  "routes": [
+    "intrathecal",
+    "other"
+  ],
+  "route_note": "local infiltration, peripheral nerve block, epidural and spinal injection; liposomal form for infiltration",
+  "targets": [
+    "SCN5A",
+    "SCN9A",
+    "SCN10A"
+  ],
+  "origin": "synthetic",
+  "originator": "Bo af Ekenstam (AB Bofors, Sweden)",
+  "owner": "generic (many); Pacira (Exparel)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "discovery": {
+    "year": 1957,
+    "by": "Bo af Ekenstam and colleagues",
+    "note": "Synthesised as a long-acting butyl-substituted analogue of mepivacaine; clinical use began in the early 1960s."
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; hospital and clinic use",
+  "tagline": "Long-acting local anaesthetic for spinal, epidural and nerve-block anaesthesia",
+  "summary": "Bupivacaine is a long-acting amide local anaesthetic that blocks voltage-gated sodium channels in nerves. It is widely used for spinal and epidural anaesthesia, labour analgesia and nerve blocks. It is more cardiotoxic than lidocaine, and accidental intravascular injection can cause cardiac arrest, which lipid emulsion therapy can treat.",
+  "mechanism": [
+    "Bupivacaine crosses the nerve membrane in its uncharged form and, once protonated inside the axon, binds the inner pore of voltage-gated sodium channels, preferentially in open and inactivated states. This prevents depolarisation and conduction of action potentials.",
+    "Small pain and autonomic fibres are blocked before large motor fibres, especially at low concentrations, allowing epidural analgesia with limited motor block. High lipid solubility and protein binding give a long duration, but slow dissociation from cardiac sodium channels underlies its arrhythmogenic potential."
+  ],
+  "uses": [
+    "Spinal (intrathecal) anaesthesia",
+    "Epidural anaesthesia and labour analgesia",
+    "Peripheral nerve blocks",
+    "Local infiltration and postsurgical analgesia (including liposomal formulation)"
+  ],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Synthesis",
+      "detail": "Bupivacaine is synthesised in Sweden."
+    },
+    {
+      "year": 1963,
+      "title": "Clinical introduction",
+      "detail": "First clinical reports describe it as a long-acting local anaesthetic."
+    },
+    {
+      "year": 1979,
+      "title": "Cardiotoxicity warning",
+      "detail": "George Albright's editorial links bupivacaine and etidocaine to cardiac arrest after regional anaesthesia."
+    },
+    {
+      "year": 1983,
+      "title": "Obstetric restriction",
+      "detail": "FDA advises against 0.75% bupivacaine for obstetric epidural anaesthesia after maternal deaths."
+    },
+    {
+      "year": 1998,
+      "title": "Lipid rescue",
+      "detail": "Guy Weinberg shows lipid emulsion reverses bupivacaine cardiotoxicity in rats; the first human case is reported in 2006."
+    },
+    {
+      "year": 2011,
+      "title": "Liposomal bupivacaine",
+      "detail": "FDA approves Exparel for postsurgical infiltration analgesia."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2.7 hours (adults)",
+    "bioavailability": "not applicable (local administration)",
+    "metabolism": "hepatic CYP3A4 (N-dealkylation to pipecolylxylidine)",
+    "excretion": "renal as metabolites (about 6% unchanged)"
+  },
+  "safety": {
+    "common": [
+      "hypotension (neuraxial)",
+      "nausea",
+      "bradycardia",
+      "numbness and motor block"
+    ],
+    "serious": [
+      "local anaesthetic systemic toxicity (seizures, ventricular arrhythmias, cardiac arrest)",
+      "high or total spinal block",
+      "chondrolysis with intra-articular infusion",
+      "methaemoglobinaemia",
+      "allergic reactions (rare)"
+    ],
+    "boxed_warning": "The 0.75% concentration is not recommended for obstetrical anaesthesia; cardiac arrest with difficult resuscitation or death has followed its use for epidural anaesthesia in obstetric patients."
+  },
+  "facts": [
+    "Levobupivacaine and ropivacaine, single S-enantiomers, were developed to reduce bupivacaine's cardiotoxicity."
+  ],
+  "related": [
+    "lidocaine",
+    "fentanyl",
+    "morphine",
+    "tranexamic-acid",
+    "propofol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Bupivacaine",
+      "url": "https://en.wikipedia.org/wiki/Bupivacaine"
+    },
+    {
+      "title": "DailyMed: bupivacaine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=BUPIVACAINE"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,121 @@
 {
   "slug": "faricimab",
   "name": "Faricimab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "RG7716",
+    "faricimab-svoa"
+  ],
+  "brands": [
+    "Vabysmo"
+  ],
   "area": "haematology-rare-other",
   "batch": "10",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Bispecific anti-VEGF-A and anti-angiopoietin-2 antibody",
+  "modality": "antibody",
+  "routes": [
+    "intravitreal"
+  ],
+  "route_note": "intravitreal injection monthly for loading, then every 8–16 weeks",
+  "targets": [
+    "VEGFA",
+    "ANGPT2"
+  ],
+  "origin": "biotech",
+  "originator": "Roche (Genentech)",
+  "owner": "Roche (Genentech)",
+  "first_approval": {
+    "year": 2022,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Vabysmo"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Roche",
+    "note": "A CrossMAb bispecific IgG1 with one arm against VEGF-A and one against angiopoietin-2, and an engineered Fc that does not bind FcRn or Fc-gamma receptors."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First bispecific antibody for the eye, blocking VEGF-A and angiopoietin-2",
+  "summary": "Faricimab is a bispecific antibody that neutralises both VEGF-A and angiopoietin-2. By targeting two pathways that destabilise retinal vessels, it allows injection intervals of up to 16 weeks in wet age-related macular degeneration, diabetic macular oedema and retinal vein occlusion.",
+  "mechanism": [
+    "VEGF-A promotes neovascularisation and leakage, while angiopoietin-2 antagonises the stabilising Tie2 receptor signalling of angiopoietin-1, making vessels leaky and more responsive to VEGF.",
+    "Faricimab binds and neutralises both factors, reducing leakage and promoting vascular stability. Its Fc region is engineered to abolish FcRn binding, shortening systemic half-life and limiting systemic exposure."
+  ],
+  "uses": [
+    "Neovascular (wet) age-related macular degeneration",
+    "Diabetic macular oedema",
+    "Macular oedema after retinal vein occlusion"
+  ],
+  "history": [
+    {
+      "year": 2021,
+      "title": "Phase 3 results",
+      "detail": "TENAYA/LUCERNE (wet AMD) and YOSEMITE/RHINE (DME) show non-inferior vision with extended intervals."
+    },
+    {
+      "year": 2022,
+      "title": "FDA approval",
+      "detail": "Vabysmo approved in January for wet AMD and diabetic macular oedema."
+    },
+    {
+      "year": 2022,
+      "title": "EU approval",
+      "detail": "Authorised in the EU in September."
+    },
+    {
+      "year": 2023,
+      "title": "Retinal vein occlusion",
+      "detail": "FDA approves use in macular oedema after retinal vein occlusion."
+    },
+    {
+      "year": 2024,
+      "title": "Prefilled syringe",
+      "detail": "A prefilled syringe presentation is approved."
+    }
+  ],
+  "pk": {
+    "half_life": "about 7.5 days (systemic, apparent)",
+    "bioavailability": "low systemic exposure",
+    "metabolism": "proteolytic catabolism",
+    "excretion": "not renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "cataract",
+      "conjunctival haemorrhage",
+      "vitreous floaters",
+      "eye pain",
+      "raised intraocular pressure"
+    ],
+    "serious": [
+      "endophthalmitis",
+      "retinal detachment",
+      "intraocular inflammation and retinal vasculitis",
+      "arterial thromboembolic events"
+    ],
     "boxed_warning": null
   },
   "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "related": [
+    "aflibercept",
+    "ranibizumab",
+    "bevacizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Faricimab",
+      "url": "https://en.wikipedia.org/wiki/Faricimab"
+    },
+    {
+      "title": "DailyMed: vabysmo labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=VABYSMO"
+    },
+    {
+      "title": "EMA EPAR: Vabysmo",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/vabysmo"
+    }
+  ],
+  "stage": "written"
 }
