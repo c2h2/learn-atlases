@@ -1,36 +1,128 @@
 {
   "slug": "pretomanid",
   "name": "Pretomanid",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PA-824"
+  ],
+  "brands": [
+    "Dovprela",
+    "Pretomanid Tablets"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Nitroimidazooxazine antimycobacterial",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablet once daily, only in combination with bedaquiline and linezolid (with or without moxifloxacin).",
+  "targets": [
+    "Deazaflavin-dependent nitroreductase Ddn (activation)",
+    "Mycolic acid synthesis and respiration (via reactive nitrogen species)"
+  ],
+  "origin": "synthetic",
+  "originator": "PathoGenesis Corporation; developed by the TB Alliance",
+  "owner": "TB Alliance (licensed to Viatris and others)",
+  "first_approval": {
+    "year": 2019,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Pretomanid Tablets"
+  },
+  "discovery": {
+    "year": 2000,
+    "by": "PathoGenesis Corporation (C. Kendall Stover and colleagues)",
+    "note": "A bicyclic nitroimidazole described in Nature in 2000; rights passed to the non-profit TB Alliance in 2002."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Nitroimidazole from a non-profit, part of six-month BPaL/BPaLM drug-resistant TB regimens",
+  "summary": "Pretomanid is a nitroimidazooxazine developed by the non-profit Global Alliance for TB Drug Development (TB Alliance). Approved in 2019 with bedaquiline and linezolid (BPaL) for highly drug-resistant tuberculosis, it enabled all-oral six-month treatment that WHO now recommends for most rifampicin-resistant TB.",
+  "mechanism": [
+    "Pretomanid is a prodrug activated by the mycobacterial deazaflavin (F420)-dependent nitroreductase Ddn. Under aerobic conditions it inhibits mycolic acid biosynthesis, impairing the cell wall of replicating bacilli.",
+    "Under hypoxic conditions activation releases reactive nitrogen species, including nitric oxide, that act as respiratory poisons against non-replicating bacteria. Resistance arises from mutations in ddn or in genes of the F420 biosynthesis pathway (fbiA, fbiB, fbiC, fgd1)."
+  ],
+  "uses": [
+    "Pulmonary extensively drug-resistant, or treatment-intolerant/non-responsive multidrug-resistant tuberculosis, with bedaquiline and linezolid (BPaL)",
+    "Rifampicin-resistant TB in the WHO BPaLM regimen (with moxifloxacin)"
+  ],
+  "history": [
+    {
+      "year": 2000,
+      "title": "Discovery",
+      "detail": "PA-824 is described in Nature by PathoGenesis scientists."
+    },
+    {
+      "year": 2002,
+      "title": "TB Alliance",
+      "detail": "Chiron (which had acquired PathoGenesis) transfers rights to the TB Alliance."
+    },
+    {
+      "year": 2017,
+      "title": "Nix-TB results",
+      "detail": "The Nix-TB trial reports about 90% favourable outcomes with BPaL in highly drug-resistant TB."
+    },
+    {
+      "year": 2019,
+      "title": "US approval",
+      "detail": "The FDA approves pretomanid under the Limited Population Pathway, the third TB drug approved in over 40 years."
+    },
+    {
+      "year": 2020,
+      "title": "EU approval",
+      "detail": "The European Commission grants a conditional authorisation (Dovprela)."
+    },
+    {
+      "year": 2022,
+      "title": "WHO BPaLM",
+      "detail": "WHO recommends six-month BPaLM (bedaquiline, pretomanid, linezolid, moxifloxacin) for rifampicin-resistant TB."
+    }
+  ],
+  "pk": {
+    "half_life": "about 16–20 hours",
+    "bioavailability": "increased with food",
+    "metabolism": "multiple reductive and oxidative pathways (CYP3A4 accounts for about 20%)",
+    "excretion": "renal and faecal (metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Peripheral neuropathy and myelosuppression (largely due to linezolid in the regimen)",
+      "Nausea and vomiting",
+      "Raised liver enzymes",
+      "Acne"
+    ],
+    "serious": [
+      "Hepatotoxicity",
+      "QT prolongation (with bedaquiline)",
+      "Optic neuropathy (with linezolid)",
+      "Lactic acidosis (with linezolid)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Pretomanid was the first TB drug developed and registered by a not-for-profit organisation.",
+    "The ZeNix trial showed that lower linezolid doses within BPaL reduce toxicity while maintaining efficacy."
+  ],
+  "related": [
+    "bedaquiline",
+    "linezolid",
+    "moxifloxacin",
+    "metronidazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Pretomanid",
+      "url": "https://en.wikipedia.org/wiki/Pretomanid"
+    },
+    {
+      "title": "DailyMed: pretomanid labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pretomanid"
+    },
+    {
+      "title": "EMA: Dovprela EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/dovprela"
+    }
+  ],
+  "stage": "written"
 }

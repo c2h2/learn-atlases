@@ -1,36 +1,120 @@
 {
   "slug": "pyrazinamide",
   "name": "Pyrazinamide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PZA",
+    "Pyrazinecarboxamide"
+  ],
+  "brands": [
+    "Zinamide",
+    "Tebrazid",
+    "Rifater"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Antimycobacterial (pyrazine carboxamide)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets once daily during the first two months (intensive phase) of TB treatment.",
+  "targets": [
+    "Multiple targets of pyrazinoic acid, including aspartate decarboxylase PanD (CoA synthesis)"
+  ],
+  "origin": "synthetic",
+  "originator": "Lederle Laboratories and Merck & Co.",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1952,
+    "by": "Lederle (Kushner and colleagues) and Merck",
+    "note": "Synthesised in 1936; its antituberculosis activity was found in 1952 through work on nicotinamide analogues."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Sterilising TB prodrug that made six-month short-course treatment possible",
+  "summary": "Pyrazinamide is a nicotinamide analogue whose antituberculosis activity was discovered in 1952. Adding it to rifampicin and isoniazid during the first two months shortened standard tuberculosis therapy from nine to six months, because it kills semi-dormant bacilli in acidic environments.",
+  "mechanism": [
+    "Pyrazinamide is a prodrug converted by the mycobacterial enzyme pyrazinamidase/nicotinamidase (PncA) to pyrazinoic acid. Pyrazinoic acid accumulates in acidic conditions such as inflammatory lesions and macrophage phagosomes, where conventional drugs work poorly.",
+    "Its exact mechanism has been debated; proposed actions include disruption of membrane energetics and, with the strongest current evidence, binding to the aspartate decarboxylase PanD to trigger its degradation and block coenzyme A synthesis. Most resistance arises from pncA mutations; Mycobacterium bovis is naturally resistant."
+  ],
+  "uses": [
+    "Active drug-susceptible tuberculosis (first two months with isoniazid, rifampicin and ethambutol)",
+    "Selected drug-resistant TB regimens",
+    "Tuberculous meningitis"
+  ],
+  "history": [
+    {
+      "year": 1936,
+      "title": "First synthesis",
+      "detail": "Pyrazinamide is first synthesised."
+    },
+    {
+      "year": 1952,
+      "title": "Antituberculosis activity",
+      "detail": "Lederle and Merck groups report pyrazinamide's activity, building on the observation that nicotinamide is active in TB models."
+    },
+    {
+      "year": 1954,
+      "title": "Acid pH activity",
+      "detail": "McDermott and Tompsett show pyrazinamide is active in acidic conditions and in macrophages."
+    },
+    {
+      "year": 1970,
+      "title": "Short-course chemotherapy trials",
+      "detail": "British Medical Research Council trials in East Africa, Hong Kong and elsewhere through the 1970s establish rifampicin- and pyrazinamide-containing six-month regimens."
+    },
+    {
+      "year": 1996,
+      "title": "pncA identified",
+      "detail": "Mutations in pncA, encoding pyrazinamidase, are identified as the main cause of pyrazinamide resistance."
+    },
+    {
+      "year": 2020,
+      "title": "PanD target",
+      "detail": "Studies provide evidence that pyrazinoic acid triggers degradation of the coenzyme A pathway enzyme PanD."
+    }
+  ],
+  "pk": {
+    "half_life": "about 9–10 hours",
+    "bioavailability": ">90%",
+    "metabolism": "hepatic, to pyrazinoic acid and 5-hydroxypyrazinoic acid",
+    "excretion": "renal (metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Arthralgia",
+      "Nausea and anorexia",
+      "Hyperuricaemia"
+    ],
+    "serious": [
+      "Hepatotoxicity (dose-related)",
+      "Acute gout",
+      "Photosensitivity and rash",
+      "Sideroblastic anaemia (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Pyrazinamide inhibits renal uric acid excretion, so raised urate levels are expected during treatment."
+  ],
+  "related": [
+    "isoniazid",
+    "rifampicin",
+    "ethambutol",
+    "bedaquiline",
+    "allopurinol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Pyrazinamide",
+      "url": "https://en.wikipedia.org/wiki/Pyrazinamide"
+    },
+    {
+      "title": "DailyMed: pyrazinamide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pyrazinamide"
+    }
+  ],
+  "stage": "written"
 }

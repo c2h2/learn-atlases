@@ -1,36 +1,120 @@
 {
   "slug": "aztreonam",
   "name": "Aztreonam",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SQ 26,776"
+  ],
+  "brands": [
+    "Azactam",
+    "Cayston"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Monobactam",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im",
+    "inhaled"
+  ],
+  "route_note": "IV or IM injection; nebulised aztreonam lysine (Cayston) for cystic fibrosis. Also combined with avibactam (Emblaveo).",
+  "targets": [
+    "PBP3 (FtsI) of Gram-negative bacteria"
+  ],
+  "origin": "synthetic",
+  "originator": "E. R. Squibb & Sons",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1986,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Azactam"
+  },
+  "discovery": {
+    "year": 1981,
+    "by": "Squibb Institute for Medical Research",
+    "note": "Monobactams were found in bacteria such as Chromobacterium violaceum; aztreonam is a fully synthetic monocyclic beta-lactam."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Monobactam for Gram-negatives, usable in most penicillin-allergic patients",
+  "summary": "Aztreonam is a monocyclic beta-lactam (monobactam) active only against aerobic Gram-negative bacteria, including Pseudomonas aeruginosa. It shows little cross-reactivity with penicillin allergy (except with ceftazidime) and is stable to metallo-beta-lactamases, which has revived interest in combining it with avibactam.",
+  "mechanism": [
+    "Aztreonam binds with high affinity to PBP3 of Gram-negative bacilli, inhibiting septum formation and producing long filamentous cells that eventually lyse. It has essentially no affinity for Gram-positive or anaerobic PBPs.",
+    "Metallo-beta-lactamases (NDM, VIM, IMP) do not hydrolyse aztreonam, but the serine ESBLs and AmpC enzymes that commonly accompany them do; avibactam blocks those serine enzymes, so aztreonam-avibactam is active against many MBL producers."
+  ],
+  "uses": [
+    "Gram-negative infections (urinary, lower respiratory, intra-abdominal, septicaemia) in patients with severe beta-lactam allergy",
+    "Chronic Pseudomonas aeruginosa lung infection in cystic fibrosis (inhaled)",
+    "Metallo-beta-lactamase-producing Enterobacterales (combined with avibactam)"
+  ],
+  "history": [
+    {
+      "year": 1981,
+      "title": "Monobactams described",
+      "detail": "Squibb scientists report naturally occurring monobactams and synthesise aztreonam."
+    },
+    {
+      "year": 1986,
+      "title": "US approval",
+      "detail": "The FDA approves Azactam."
+    },
+    {
+      "year": 2010,
+      "title": "Inhaled aztreonam",
+      "detail": "The FDA approves Cayston (Gilead) for cystic fibrosis patients with Pseudomonas aeruginosa."
+    },
+    {
+      "year": 2024,
+      "title": "EU approval of aztreonam-avibactam",
+      "detail": "The European Commission authorises Emblaveo (Pfizer) for serious Gram-negative infections with limited options."
+    },
+    {
+      "year": 2025,
+      "title": "US approval of aztreonam-avibactam",
+      "detail": "The FDA approves Emblaveo for complicated intra-abdominal infections."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.7 hours",
+    "bioavailability": "IM about 100%; inhaled mainly local",
+    "metabolism": "minor hydrolysis",
+    "excretion": "renal, mostly unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Injection-site reactions",
+      "Rash",
+      "Diarrhoea",
+      "Cough and wheeze (inhaled)"
+    ],
+    "serious": [
+      "Anaphylaxis (cross-reactivity possible with ceftazidime, which shares an identical side chain)",
+      "Bronchospasm with inhalation",
+      "Clostridioides difficile infection",
+      "Elevated liver enzymes"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Aztreonam and ceftazidime share the same R1 side chain, so allergy to one may predict allergy to the other."
+  ],
+  "related": [
+    "ceftazidime",
+    "ceftazidime-avibactam",
+    "meropenem",
+    "tobramycin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Aztreonam",
+      "url": "https://en.wikipedia.org/wiki/Aztreonam"
+    },
+    {
+      "title": "DailyMed: aztreonam labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=aztreonam"
+    }
+  ],
+  "stage": "written"
 }

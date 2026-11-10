@@ -1,36 +1,129 @@
 {
   "slug": "amikacin",
   "name": "Amikacin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BB-K8",
+    "Amikacin sulfate",
+    "Amikacin liposome inhalation suspension"
+  ],
+  "brands": [
+    "Amikin",
+    "Arikayce"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Aminoglycoside antibiotic (semi-synthetic kanamycin derivative)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im",
+    "inhaled"
+  ],
+  "route_note": "IV or IM with therapeutic drug monitoring; once-daily liposomal inhalation (Arikayce) for MAC lung disease.",
+  "targets": [
+    "16S rRNA of the 30S ribosomal subunit (A site)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Bristol-Banyu Research Institute (Bristol-Myers)",
+  "owner": "generic (many); Insmed (Arikayce)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "discovery": {
+    "year": 1972,
+    "by": "Hiroshi Kawaguchi and colleagues (Bristol-Banyu)",
+    "note": "Made by acylating kanamycin A with an L-hydroxyaminobutyric acid side chain, which blocks many aminoglycoside-modifying enzymes."
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Enzyme-resistant aminoglycoside for resistant Gram-negatives and mycobacteria",
+  "summary": "Amikacin is a semi-synthetic aminoglycoside derived from kanamycin A. Its side chain protects it from most aminoglycoside-modifying enzymes, so it often remains active against gentamicin- and tobramycin-resistant Gram-negative bacteria and is used against nontuberculous mycobacteria.",
+  "mechanism": [
+    "Aminoglycosides are polycationic molecules that cross the Gram-negative outer membrane by self-promoted uptake and enter the cytoplasm by an oxygen-dependent transport process, which is why they are inactive against anaerobes. Inside, they bind the decoding A site of 16S rRNA in the 30S subunit, causing misreading of mRNA and production of aberrant proteins that damage the membrane, accelerating uptake; killing is rapid and concentration-dependent.",
+    "The L-HABA side chain at the 1-amino position sterically hinders most acetylating, phosphorylating and adenylating enzymes, preserving activity; it remains vulnerable to AAC(6')-I enzymes and to 16S rRNA methyltransferases such as ArmA and RmtB."
+  ],
+  "uses": [
+    "Serious infections caused by aminoglycoside-resistant Gram-negative bacilli",
+    "Nontuberculous mycobacterial infections (Mycobacterium avium complex, M. abscessus)",
+    "Refractory MAC lung disease (liposomal inhalation)",
+    "Second-line therapy for drug-resistant tuberculosis (historically)",
+    "Febrile neutropenia (with a beta-lactam)"
+  ],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Kanamycin",
+      "detail": "Hamao Umezawa isolates kanamycin from Streptomyces kanamyceticus in Japan."
+    },
+    {
+      "year": 1972,
+      "title": "Amikacin synthesised",
+      "detail": "Kawaguchi and colleagues report amikacin (BB-K8)."
+    },
+    {
+      "year": 1976,
+      "title": "Clinical use",
+      "detail": "Amikacin (Amikin) enters clinical use in the mid-1970s."
+    },
+    {
+      "year": 2018,
+      "title": "Liposomal inhalation",
+      "detail": "The FDA grants accelerated approval to Arikayce for refractory MAC lung disease, with a boxed warning for respiratory adverse reactions."
+    },
+    {
+      "year": 2020,
+      "title": "EU approval",
+      "detail": "The European Commission authorises Arikayce liposomal."
+    },
+    {
+      "year": 2022,
+      "title": "WHO TB guidance",
+      "detail": "WHO's six-month BPaLM regimen for drug-resistant TB reduces reliance on injectable agents such as amikacin."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–3 hours",
+    "bioavailability": "negligible orally; inhaled liposomes give high lung concentrations with low systemic exposure",
+    "metabolism": "not metabolised",
+    "excretion": "renal, unchanged"
+  },
+  "safety": {
+    "common": [
+      "Raised serum creatinine",
+      "Nausea",
+      "Rash"
+    ],
+    "serious": [
+      "Nephrotoxicity (acute tubular necrosis), usually reversible",
+      "Ototoxicity (cochlear and vestibular), often irreversible",
+      "Neuromuscular blockade and respiratory paralysis",
+      "Hypomagnesaemia"
+    ],
+    "boxed_warning": "Parenteral labels warn of ototoxicity, nephrotoxicity and neuromuscular blockade; Arikayce carries a boxed warning for increased respiratory adverse reactions (hypersensitivity pneumonitis, haemoptysis, bronchospasm, exacerbation)."
+  },
+  "facts": [
+    "Hearing loss is the dominant dose-limiting toxicity of amikacin in long TB and NTM courses."
+  ],
+  "related": [
+    "gentamicin",
+    "tobramycin",
+    "streptomycin",
+    "clarithromycin",
+    "azithromycin",
+    "ethambutol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Amikacin",
+      "url": "https://en.wikipedia.org/wiki/Amikacin"
+    },
+    {
+      "title": "DailyMed: amikacin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amikacin"
+    },
+    {
+      "title": "FDA label: Arikayce (DailyMed)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=arikayce"
+    }
+  ],
+  "stage": "written"
 }

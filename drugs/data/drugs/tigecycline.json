@@ -1,36 +1,130 @@
 {
   "slug": "tigecycline",
   "name": "Tigecycline",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GAR-936",
+    "9-t-butylglycylamido-minocycline"
+  ],
+  "brands": [
+    "Tygacil"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Glycylcycline (tetracycline-class) antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every 12 hours after a loading dose.",
+  "targets": [
+    "16S rRNA of the 30S ribosomal subunit (aminoacyl-tRNA A site)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Wyeth",
+  "owner": "Pfizer (and generics)",
+  "first_approval": {
+    "year": 2005,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Tygacil"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Wyeth-Ayerst Research",
+    "note": "A minocycline derivative with a glycylamido group at position 9 that overcomes common tetracycline efflux and ribosomal-protection resistance."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription (hospital)",
+  "tagline": "Glycylcycline for multidrug-resistant infections, limited by a mortality signal",
+  "summary": "Tigecycline is the first glycylcycline, a minocycline derivative developed by Wyeth and approved in 2005. It is active against MRSA, VRE, many ESBL- and carbapenemase-producing Enterobacterales and Acinetobacter, but higher all-cause mortality in trials restricts it to situations where alternatives are unsuitable.",
+  "mechanism": [
+    "Tigecycline binds the 30S ribosomal subunit and blocks entry of aminoacyl-tRNA into the A site, inhibiting protein synthesis; it binds the ribosome about five times more tightly than older tetracyclines.",
+    "Its bulky 9-glycylamido side chain makes it a poor substrate for Tet efflux pumps and helps it escape TetM-type ribosomal protection. It is inactive against Pseudomonas aeruginosa and Proteus, which have intrinsic efflux (e.g. MexXY, AcrAB), and plasmid tet(X) monooxygenases that inactivate it have been reported since 2019."
+  ],
+  "uses": [
+    "Complicated skin and skin-structure infections",
+    "Complicated intra-abdominal infections",
+    "Community-acquired bacterial pneumonia",
+    "Off-label salvage therapy for carbapenem-resistant Acinetobacter and Enterobacterales infections"
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "title": "US approval",
+      "detail": "The FDA approves Tygacil for complicated skin and intra-abdominal infections."
+    },
+    {
+      "year": 2006,
+      "title": "EU approval",
+      "detail": "Tygacil is authorised in the European Union."
+    },
+    {
+      "year": 2009,
+      "title": "Pfizer acquires Wyeth",
+      "detail": "Tigecycline passes to Pfizer."
+    },
+    {
+      "year": 2010,
+      "title": "Mortality warning",
+      "detail": "The FDA warns of increased all-cause mortality in a pooled analysis of trials."
+    },
+    {
+      "year": 2013,
+      "title": "Boxed warning",
+      "detail": "A boxed warning on all-cause mortality is added to the US label."
+    },
+    {
+      "year": 2019,
+      "title": "tet(X) resistance genes",
+      "detail": "Plasmid-mediated high-level tigecycline resistance genes tet(X3) and tet(X4) are reported in China."
+    }
+  ],
+  "pk": {
+    "half_life": "about 27–42 hours",
+    "bioavailability": "IV only",
+    "metabolism": "limited (glucuronidation)",
+    "excretion": "mainly biliary/faecal"
+  },
+  "safety": {
+    "common": [
+      "Nausea and vomiting (very common)",
+      "Diarrhoea",
+      "Abdominal pain"
+    ],
+    "serious": [
+      "Increased all-cause mortality versus comparators",
+      "Acute pancreatitis",
+      "Hepatotoxicity",
+      "Hypofibrinogenaemia and coagulopathy",
+      "Tooth discolouration in children",
+      "Clostridioides difficile infection"
+    ],
+    "boxed_warning": "All-cause mortality was higher in patients treated with tigecycline than with comparators in a meta-analysis of clinical trials; reserve for situations when alternative treatments are not suitable."
+  },
+  "facts": [
+    "Tigecycline's large volume of distribution gives low serum concentrations, a concern for bloodstream infections."
+  ],
+  "related": [
+    "minocycline",
+    "doxycycline",
+    "tetracycline",
+    "colistin",
+    "meropenem"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tigecycline",
+      "url": "https://en.wikipedia.org/wiki/Tigecycline"
+    },
+    {
+      "title": "DailyMed: tigecycline labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tigecycline"
+    },
+    {
+      "title": "EMA: Tygacil EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tygacil"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,131 @@
 {
   "slug": "colistin",
   "name": "Colistin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Polymyxin E",
+    "Colistimethate sodium",
+    "Colistin sulfate"
+  ],
+  "brands": [
+    "Coly-Mycin M",
+    "Colomycin",
+    "Promixin"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Polymyxin antibiotic",
+  "modality": "peptide",
+  "routes": [
+    "iv",
+    "im",
+    "inhaled",
+    "oral",
+    "topical"
+  ],
+  "route_note": "IV (or IM) as the prodrug colistimethate sodium with loading dose; nebulised colistimethate in cystic fibrosis; oral colistin sulfate for selective gut decontamination; topical/otic preparations.",
+  "targets": [
+    "Lipid A of lipopolysaccharide in the Gram-negative outer membrane"
+  ],
+  "origin": "natural",
+  "originator": "Yasuo Koyama and colleagues (Japan)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1947,
+    "by": "Yasuo Koyama and colleagues",
+    "note": "Isolated in Japan from Paenibacillus (then Bacillus) polymyxa var. colistinus; reported in 1950."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (hospital)",
+  "tagline": "Old polymyxin revived as a last-resort drug against carbapenem-resistant Gram-negatives",
+  "summary": "Colistin (polymyxin E) is a cationic lipopeptide antibiotic discovered in Japan in the late 1940s. Abandoned in the 1970s for nephro- and neurotoxicity, it returned as a last-line treatment for carbapenem-resistant Acinetobacter, Pseudomonas and Enterobacterales, and plasmid mcr resistance genes discovered in 2015 have made it a symbol of the antimicrobial resistance crisis.",
+  "mechanism": [
+    "Colistin's positively charged diaminobutyric acid residues displace calcium and magnesium bridging lipopolysaccharide molecules in the outer membrane; its fatty-acyl tail then inserts and disrupts both outer and inner membranes, causing leakage and death. It also binds and neutralises endotoxin.",
+    "Resistance arises when bacteria add phosphoethanolamine or 4-amino-4-deoxy-L-arabinose to lipid A, reducing its negative charge (via PmrAB/PhoPQ mutations, mgrB inactivation in Klebsiella, or plasmid mcr genes). Proteus, Serratia, Providencia and Burkholderia are intrinsically resistant, and it has no Gram-positive activity."
+  ],
+  "uses": [
+    "Carbapenem-resistant Acinetobacter baumannii, Pseudomonas aeruginosa and Enterobacterales infections, usually in combination",
+    "Chronic Pseudomonas lung infection in cystic fibrosis (inhaled)",
+    "Selective digestive decontamination in intensive care (some countries)",
+    "Topical eye and ear infections"
+  ],
+  "history": [
+    {
+      "year": 1947,
+      "title": "Discovery",
+      "detail": "Koyama and colleagues isolate colistin from a Japanese soil bacterium."
+    },
+    {
+      "year": 1959,
+      "title": "Clinical use",
+      "detail": "Colistin and colistimethate enter clinical use in the late 1950s, including in the US as Coly-Mycin."
+    },
+    {
+      "year": 1970,
+      "title": "Decline",
+      "detail": "Reports of nephrotoxicity and neurotoxicity, and the arrival of aminoglycosides, lead to colistin falling out of systemic use during the 1970s."
+    },
+    {
+      "year": 2000,
+      "title": "Revival",
+      "detail": "Spread of multidrug-resistant Acinetobacter and Pseudomonas prompts renewed IV use in the 2000s."
+    },
+    {
+      "year": 2015,
+      "title": "mcr-1 discovered",
+      "detail": "Plasmid-mediated colistin resistance gene mcr-1 is reported in E. coli from pigs, meat and patients in China (Lancet Infectious Diseases, published 2016)."
+    },
+    {
+      "year": 2017,
+      "title": "Animal growth-promoter ban",
+      "detail": "China bans colistin as a growth promoter in animal feed."
+    },
+    {
+      "year": 2019,
+      "title": "International consensus",
+      "detail": "International guidelines on optimal polymyxin dosing recommend loading doses and therapeutic monitoring where possible."
+    }
+  ],
+  "pk": {
+    "half_life": "colistin about 9–14 hours after IV colistimethate (prolonged in renal impairment)",
+    "bioavailability": "negligible orally",
+    "metabolism": "colistimethate is hydrolysed to active colistin; colistin undergoes non-renal clearance",
+    "excretion": "colistimethate renal; colistin mainly non-renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Raised serum creatinine",
+      "Paraesthesia and dizziness",
+      "Cough and bronchospasm (inhaled)"
+    ],
+    "serious": [
+      "Acute kidney injury",
+      "Neurotoxicity, including neuromuscular blockade and respiratory arrest",
+      "Bronchospasm with nebulisation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Doses of colistimethate are expressed variously as international units or as colistin base activity, a long-standing source of dosing confusion.",
+    "Colistin is classified in the WHO 'Reserve' antibiotic group."
+  ],
+  "related": [
+    "meropenem",
+    "tigecycline",
+    "ceftazidime-avibactam",
+    "tobramycin",
+    "fosfomycin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Colistin",
+      "url": "https://en.wikipedia.org/wiki/Colistin"
+    },
+    {
+      "title": "Liu et al. mcr-1 (Lancet Infect Dis 2016) — PubMed search",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Liu+mcr-1+plasmid-mediated+colistin+resistance+Lancet+Infect+Dis+2016"
+    }
+  ],
+  "stage": "written"
 }

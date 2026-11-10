@@ -1,36 +1,121 @@
 {
   "slug": "chloramphenicol",
   "name": "Chloramphenicol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Chloromycetin"
+  ],
+  "brands": [
+    "Chloromycetin",
+    "Chlorsig",
+    "Optrex Infected Eyes"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Amphenicol antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "oral",
+    "ophthalmic",
+    "topical"
+  ],
+  "route_note": "IV sodium succinate for serious infections (oral forms largely withdrawn in many countries); eye drops and ointment; ear drops.",
+  "targets": [
+    "23S rRNA of the 50S ribosomal subunit (peptidyl transferase centre)"
+  ],
+  "origin": "natural",
+  "originator": "Parke-Davis",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1949,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Chloromycetin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1947,
+    "by": "John Ehrlich, Quentin Bartz and colleagues (Parke-Davis); David Gottlieb (University of Illinois)",
+    "note": "Isolated from Streptomyces venezuelae from Venezuelan soil; soon after it became the first antibiotic manufactured by total chemical synthesis."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (eye drops OTC in some countries)",
+  "tagline": "Broad-spectrum antibiotic limited by aplastic anaemia, still used in low-resource settings",
+  "summary": "Chloramphenicol, isolated by Parke-Davis in 1947, was the first broad-spectrum antibiotic and the first made by total synthesis. Its use has been curtailed by rare, fatal aplastic anaemia and grey baby syndrome, but it remains important in eye preparations and as a cheap option for meningitis, typhoid and rickettsial disease in low-resource settings.",
+  "mechanism": [
+    "Chloramphenicol binds the peptidyl transferase centre of 23S rRNA in the 50S ribosomal subunit and blocks aminoacyl-tRNA positioning, preventing peptide-bond formation; it is generally bacteriostatic but bactericidal against H. influenzae, pneumococci and meningococci.",
+    "It also inhibits mitochondrial ribosomes, causing dose-related reversible bone-marrow suppression. Resistance is mainly through chloramphenicol acetyltransferase (cat) genes and efflux pumps such as FloR and CmlA."
+  ],
+  "uses": [
+    "Bacterial meningitis and brain abscess where alternatives are unavailable or contraindicated",
+    "Typhoid fever (where susceptible)",
+    "Rickettsial infections and plague",
+    "Bacterial conjunctivitis and other superficial eye infections (topical)"
+  ],
+  "history": [
+    {
+      "year": 1947,
+      "title": "Discovery",
+      "detail": "Parke-Davis scientists isolate chloromycetin from Streptomyces venezuelae."
+    },
+    {
+      "year": 1949,
+      "title": "US approval and synthesis",
+      "detail": "The FDA approves Chloromycetin; it becomes the first antibiotic produced commercially by chemical synthesis."
+    },
+    {
+      "year": 1952,
+      "title": "Aplastic anaemia",
+      "detail": "Reports link chloramphenicol to fatal aplastic anaemia, prompting warnings by the US National Research Council and FDA."
+    },
+    {
+      "year": 1959,
+      "title": "Grey baby syndrome",
+      "detail": "Neonatal deaths with circulatory collapse are linked to chloramphenicol accumulation in newborns."
+    },
+    {
+      "year": 2005,
+      "title": "UK OTC eye drops",
+      "detail": "Chloramphenicol eye drops become available in UK pharmacies without prescription."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.5–4 hours in adults (much longer in neonates)",
+    "bioavailability": "about 80% orally",
+    "metabolism": "hepatic glucuronidation",
+    "excretion": "renal (mostly as glucuronide)"
+  },
+  "safety": {
+    "common": [
+      "Nausea and diarrhoea",
+      "Dose-related reversible bone-marrow suppression"
+    ],
+    "serious": [
+      "Idiosyncratic aplastic anaemia (rare, often fatal, can occur after topical use)",
+      "Grey baby syndrome in neonates",
+      "Optic and peripheral neuritis with prolonged use",
+      "Haemolysis in G6PD deficiency"
+    ],
+    "boxed_warning": "Serious and fatal blood dyscrasias (aplastic anaemia, hypoplastic anaemia, thrombocytopenia, granulocytopenia) have occurred; do not use for trivial infections or when less toxic drugs would be effective (US label)."
+  },
+  "facts": [
+    "Chloramphenicol was the first antibiotic to be manufactured entirely by chemical synthesis on a commercial scale."
+  ],
+  "related": [
+    "ceftriaxone",
+    "doxycycline",
+    "azithromycin",
+    "ciprofloxacin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Chloramphenicol",
+      "url": "https://en.wikipedia.org/wiki/Chloramphenicol"
+    },
+    {
+      "title": "DailyMed: chloramphenicol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chloramphenicol"
+    }
+  ],
+  "stage": "written"
 }

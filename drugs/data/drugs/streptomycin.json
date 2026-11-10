@@ -1,36 +1,121 @@
 {
   "slug": "streptomycin",
   "name": "Streptomycin",
-  "aliases": [],
+  "aliases": [
+    "Streptomycin sulfate"
+  ],
   "brands": [],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Aminoglycoside antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "im",
+    "iv"
+  ],
+  "route_note": "Deep IM injection (IV in some settings); oral absorption is negligible.",
+  "targets": [
+    "16S rRNA of the 30S ribosomal subunit (A site)",
+    "Ribosomal protein S12 (rpsL)"
+  ],
+  "origin": "natural",
+  "originator": "Rutgers University (Selman Waksman's laboratory)",
+  "owner": "generic (few manufacturers)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "discovery": {
+    "year": 1943,
+    "by": "Albert Schatz, Elizabeth Bugie and Selman Waksman (Rutgers University)",
+    "note": "Isolated from Streptomyces griseus; the first antibiotic active against Mycobacterium tuberculosis."
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first antibiotic effective against tuberculosis and the first aminoglycoside",
+  "summary": "Streptomycin, isolated from Streptomyces griseus in 1943, was the first effective drug against tuberculosis and the first aminoglycoside. The 1948 Medical Research Council trial of streptomycin is widely regarded as the first modern randomised controlled trial. It remains in use for plague, tularaemia and some drug-resistant TB regimens.",
+  "mechanism": [
+    "Streptomycin binds the 16S rRNA and ribosomal protein S12 of the 30S subunit, distorting the decoding site so that mRNA is misread and protein synthesis is disrupted; it is bactericidal.",
+    "Resistance in M. tuberculosis arises readily through single mutations in rpsL (S12) or rrs, which is why monotherapy failed quickly and combination therapy became the rule. Mutations in gidB cause low-level resistance."
+  ],
+  "uses": [
+    "Tuberculosis (in selected drug-resistant regimens)",
+    "Plague (Yersinia pestis)",
+    "Tularaemia (Francisella tularensis)",
+    "Brucellosis (with doxycycline)",
+    "Enterococcal endocarditis when gentamicin resistance is present"
+  ],
+  "history": [
+    {
+      "year": 1943,
+      "title": "Discovery",
+      "detail": "Albert Schatz, a graduate student in Waksman's lab, isolates streptomycin from Streptomyces griseus."
+    },
+    {
+      "year": 1944,
+      "title": "Activity against TB",
+      "detail": "Streptomycin is shown to inhibit M. tuberculosis; Mayo Clinic studies in guinea pigs and patients follow."
+    },
+    {
+      "year": 1948,
+      "title": "MRC randomised trial",
+      "detail": "The British Medical Research Council's trial of streptomycin in pulmonary tuberculosis is published in the BMJ, a landmark of randomised methodology."
+    },
+    {
+      "year": 1950,
+      "title": "Combination therapy",
+      "detail": "Trials show that adding para-aminosalicylic acid prevents emergence of streptomycin resistance."
+    },
+    {
+      "year": 1952,
+      "title": "Nobel Prize",
+      "detail": "Selman Waksman receives the Nobel Prize for the discovery of streptomycin; Schatz's role is later recognised after a lawsuit settled in 1950."
+    },
+    {
+      "year": 2018,
+      "title": "WHO TB guidance",
+      "detail": "WHO downgrades injectable agents in drug-resistant TB regimens in favour of oral drugs such as bedaquiline."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–3 hours",
+    "bioavailability": "negligible orally",
+    "metabolism": "not metabolised",
+    "excretion": "renal, unchanged"
+  },
+  "safety": {
+    "common": [
+      "Injection-site pain",
+      "Paraesthesia around the mouth",
+      "Rash"
+    ],
+    "serious": [
+      "Vestibular toxicity (vertigo, ataxia), often irreversible",
+      "Hearing loss",
+      "Nephrotoxicity",
+      "Neuromuscular blockade",
+      "Fetal ototoxicity in pregnancy"
+    ],
+    "boxed_warning": "US label warns of neurotoxicity (ototoxicity, vestibular and cochlear), nephrotoxicity and neuromuscular blockade; monitor closely, especially in renal impairment."
+  },
+  "facts": [
+    "The term 'antibiotic' in its modern sense was popularised by Selman Waksman.",
+    "Streptomycin's discovery led to a priority dispute between Waksman and Albert Schatz."
+  ],
+  "related": [
+    "gentamicin",
+    "amikacin",
+    "isoniazid",
+    "rifampicin",
+    "doxycycline"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Streptomycin",
+      "url": "https://en.wikipedia.org/wiki/Streptomycin"
+    },
+    {
+      "title": "MRC streptomycin trial (BMJ 1948) — PubMed search",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=streptomycin+treatment+of+pulmonary+tuberculosis+1948+BMJ"
+    }
+  ],
+  "stage": "written"
 }

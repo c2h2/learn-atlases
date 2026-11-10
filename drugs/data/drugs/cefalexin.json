@@ -1,36 +1,119 @@
 {
   "slug": "cefalexin",
   "name": "Cefalexin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Cephalexin"
+  ],
+  "brands": [
+    "Keflex",
+    "Ceporex"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "First-generation cephalosporin",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules, tablets or suspension, usually 2–4 times daily.",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Eli Lilly and Company",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1969,
+    "agency": null,
+    "country": null,
+    "brand": "Keflex"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly and Company",
+    "note": "Derived from 7-aminocephalosporanic acid, itself obtained from cephalosporin C produced by Acremonium (Cephalosporium) fungi."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Oral first-generation cephalosporin for skin, bone and urinary infections",
+  "summary": "Cefalexin is an orally absorbed first-generation cephalosporin introduced by Eli Lilly in the late 1960s. It is active mainly against streptococci, methicillin-susceptible staphylococci and some Enterobacterales, and is widely used for skin and soft-tissue and urinary infections.",
+  "mechanism": [
+    "Cefalexin inhibits the transpeptidase activity of penicillin-binding proteins, preventing peptidoglycan cross-linking and causing bacterial lysis.",
+    "Its cephem nucleus is more stable than penicillins to staphylococcal penicillinase, but it is hydrolysed by many Gram-negative beta-lactamases, and it has no activity against MRSA or enterococci."
+  ],
+  "uses": [
+    "Skin and soft-tissue infections (cellulitis, impetigo)",
+    "Uncomplicated urinary tract infections, including in pregnancy",
+    "Streptococcal pharyngitis",
+    "Bone and joint infections (step-down therapy)",
+    "Otitis media"
+  ],
+  "history": [
+    {
+      "year": 1945,
+      "title": "Cephalosporium discovery",
+      "detail": "Giuseppe Brotzu isolates an antibiotic-producing Cephalosporium (now Acremonium) fungus from seawater near a sewage outfall in Sardinia."
+    },
+    {
+      "year": 1961,
+      "title": "Cephalosporin C structure",
+      "detail": "Oxford chemists Edward Abraham and Guy Newton determine the structure of cephalosporin C."
+    },
+    {
+      "year": 1964,
+      "title": "First cephalosporin",
+      "detail": "Eli Lilly launches cefalotin, the first marketed cephalosporin (injectable)."
+    },
+    {
+      "year": 1969,
+      "title": "Introduction",
+      "detail": "Cefalexin is introduced by Eli Lilly (Keflex), one of the first oral cephalosporins."
+    },
+    {
+      "year": 2017,
+      "title": "WHO AWaRe classification",
+      "detail": "The WHO Essential Medicines List begins grouping antibiotics into Access, Watch and Reserve categories; cefalexin is placed in the Access group."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 hour",
+    "bioavailability": "about 90% orally",
+    "metabolism": "not metabolised",
+    "excretion": "renal, unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Nausea",
+      "Rash"
+    ],
+    "serious": [
+      "Anaphylaxis",
+      "Clostridioides difficile-associated diarrhoea",
+      "Severe cutaneous reactions (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Cefalexin is classified in the WHO 'Access' antibiotic group.",
+    "Cross-reactivity with penicillin allergy is low overall but higher for cephalosporins with similar side chains, such as cefalexin and ampicillin."
+  ],
+  "related": [
+    "cefuroxime",
+    "ceftriaxone",
+    "flucloxacillin",
+    "amoxicillin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Cefalexin",
+      "url": "https://en.wikipedia.org/wiki/Cefalexin"
+    },
+    {
+      "title": "DailyMed: cephalexin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=cephalexin"
+    }
+  ],
+  "stage": "written"
 }

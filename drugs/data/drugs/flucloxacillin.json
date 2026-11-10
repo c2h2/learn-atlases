@@ -1,36 +1,118 @@
 {
   "slug": "flucloxacillin",
   "name": "Flucloxacillin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Floxacillin"
+  ],
+  "brands": [
+    "Floxapen",
+    "Flucil",
+    "Staphylex"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Penicillinase-resistant isoxazolyl penicillin",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im"
+  ],
+  "route_note": "Oral capsules/solution (taken on an empty stomach) or IV/IM injection. Not marketed in the United States.",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Beecham Research Laboratories",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": null,
+    "by": "Beecham Research Laboratories",
+    "note": "One of the isoxazolyl penicillins (with oxacillin, cloxacillin and dicloxacillin) designed to resist staphylococcal penicillinase."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Anti-staphylococcal penicillin used widely in the UK, Europe and Australia",
+  "summary": "Flucloxacillin is a narrow-spectrum, penicillinase-stable penicillin used mainly for infections caused by methicillin-susceptible Staphylococcus aureus and streptococci. It is a standard agent for cellulitis and staphylococcal bacteraemia outside North America.",
+  "mechanism": [
+    "Flucloxacillin inhibits penicillin-binding proteins and thereby bacterial cell-wall cross-linking.",
+    "A bulky isoxazolyl side chain sterically hinders hydrolysis by staphylococcal beta-lactamase (penicillinase). It is inactive against MRSA, whose PBP2a (encoded by mecA) has low affinity for most beta-lactams, and has little Gram-negative activity."
+  ],
+  "uses": [
+    "Skin and soft-tissue infections such as cellulitis, impetigo and wound infections",
+    "Methicillin-susceptible S. aureus bacteraemia, endocarditis and osteomyelitis",
+    "Septic arthritis",
+    "Surgical prophylaxis in some settings"
+  ],
+  "history": [
+    {
+      "year": 1959,
+      "title": "Penicillinase problem",
+      "detail": "Spread of penicillinase-producing S. aureus in hospitals drives the search for stable penicillins; methicillin is launched in 1959–60."
+    },
+    {
+      "year": 1961,
+      "title": "Isoxazolyl penicillins",
+      "detail": "Beecham develops oxacillin and cloxacillin; flucloxacillin follows later in the decade."
+    },
+    {
+      "year": 1970,
+      "title": "Clinical introduction",
+      "detail": "Flucloxacillin enters clinical use in Europe around 1970 and becomes the UK standard anti-staphylococcal penicillin."
+    },
+    {
+      "year": 2009,
+      "title": "Pharmacogenetic link",
+      "detail": "A genome-wide association study identifies HLA-B*57:01 as a major risk factor for flucloxacillin-induced liver injury."
+    },
+    {
+      "year": 2017,
+      "title": "WHO AWaRe classification",
+      "detail": "The WHO Essential Medicines List begins grouping antibiotics into Access, Watch and Reserve categories; cloxacillin (with flucloxacillin as an alternative) is placed in the Access group."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 hour",
+    "bioavailability": "about 50–70% orally (reduced by food)",
+    "metabolism": "partly hepatic",
+    "excretion": "renal and biliary"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Gastrointestinal upset",
+      "Rash",
+      "Phlebitis with IV use"
+    ],
+    "serious": [
+      "Cholestatic hepatitis, which may appear weeks after stopping and is linked to HLA-B*57:01",
+      "Anaphylaxis",
+      "High-anion-gap metabolic acidosis (pyroglutamic acidosis) with concomitant paracetamol in at-risk patients",
+      "Clostridioides difficile-associated diarrhoea"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Genome-wide association studies linked flucloxacillin liver injury to the HLA-B*57:01 allele, the same allele that predicts abacavir hypersensitivity.",
+    "WHO's Essential Medicines List names cloxacillin, with flucloxacillin and other isoxazolyl penicillins as therapeutic alternatives."
+  ],
+  "related": [
+    "benzylpenicillin",
+    "cefalexin",
+    "vancomycin",
+    "abacavir",
+    "paracetamol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Flucloxacillin",
+      "url": "https://en.wikipedia.org/wiki/Flucloxacillin"
+    },
+    {
+      "title": "UK MHRA/EMC product information search",
+      "url": "https://www.medicines.org.uk/emc/search?q=flucloxacillin"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,129 @@
 {
   "slug": "co-trimoxazole",
-  "name": "Co trimoxazole",
-  "aliases": [],
-  "brands": [],
+  "name": "Co-trimoxazole",
+  "aliases": [
+    "Trimethoprim/sulfamethoxazole",
+    "TMP-SMX",
+    "SXT"
+  ],
+  "brands": [
+    "Bactrim",
+    "Septra",
+    "Septrin"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Sulfonamide and diaminopyrimidine combination (folate synthesis inhibitors)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral tablets (single or double strength) or suspension; IV infusion for severe infections; fixed 1:5 trimethoprim:sulfamethoxazole ratio.",
+  "targets": [
+    "Dihydropteroate synthase (folP; sulfamethoxazole)",
+    "Dihydrofolate reductase (folA; trimethoprim)"
+  ],
+  "origin": "synthetic",
+  "originator": "Burroughs Wellcome (trimethoprim); Hoffmann-La Roche (sulfamethoxazole)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1968,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": "Septrin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "George Hitchings and colleagues (Burroughs Wellcome)",
+    "note": "Trimethoprim emerged from Hitchings' programme of antimetabolites targeting dihydrofolate reductase; it was combined with sulfamethoxazole for sequential blockade."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Sequential folate blocker for UTIs, Pneumocystis pneumonia and HIV-related prophylaxis",
+  "summary": "Co-trimoxazole combines sulfamethoxazole and trimethoprim, which block two successive steps in bacterial folate synthesis. Introduced in 1968, it is used for urinary infections, Pneumocystis jirovecii pneumonia treatment and prophylaxis, toxoplasmosis prophylaxis, MRSA skin infections and many tropical infections.",
+  "mechanism": [
+    "Sulfamethoxazole is a structural analogue of para-aminobenzoic acid and inhibits dihydropteroate synthase, preventing formation of dihydrofolate. Trimethoprim inhibits bacterial dihydrofolate reductase about 50,000 times more strongly than the human enzyme, blocking regeneration of tetrahydrofolate needed for thymidine and purine synthesis.",
+    "Sequential blockade is synergistic and often bactericidal. Resistance is mediated by plasmid-borne sul1/sul2/sul3 and dfr genes encoding drug-insensitive enzymes. Trimethoprim also blocks epithelial sodium channels in the distal nephron, causing hyperkalaemia."
+  ],
+  "uses": [
+    "Urinary tract infections",
+    "Pneumocystis jirovecii pneumonia treatment and prophylaxis",
+    "Toxoplasmosis prophylaxis in advanced HIV",
+    "Prophylaxis in HIV-exposed infants and people with HIV in resource-limited settings",
+    "Skin and soft-tissue infections including community MRSA",
+    "Nocardiosis, Stenotrophomonas maltophilia, melioidosis eradication, Whipple's disease and Cyclospora/Cystoisospora infections"
+  ],
+  "history": [
+    {
+      "year": 1935,
+      "title": "Sulfonamides",
+      "detail": "Gerhard Domagk reports Prontosil, the first sulfonamide antibacterial (Nobel Prize 1939)."
+    },
+    {
+      "year": 1962,
+      "title": "Trimethoprim in clinical use",
+      "detail": "Trimethoprim, developed at Burroughs Wellcome in Hitchings and Elion's antifolate programme, enters clinical use."
+    },
+    {
+      "year": 1968,
+      "title": "Combination launched",
+      "detail": "Co-trimoxazole is launched in the UK (Septrin, Burroughs Wellcome) and Switzerland/elsewhere (Bactrim, Roche)."
+    },
+    {
+      "year": 1988,
+      "title": "Nobel Prize",
+      "detail": "George Hitchings and Gertrude Elion share the Nobel Prize in Physiology or Medicine for principles of drug treatment, including trimethoprim."
+    },
+    {
+      "year": 2006,
+      "title": "WHO HIV prophylaxis",
+      "detail": "WHO recommends co-trimoxazole prophylaxis for HIV-related infections in resource-limited settings."
+    }
+  ],
+  "pk": {
+    "half_life": "trimethoprim about 8–10 hours; sulfamethoxazole about 10 hours",
+    "bioavailability": "about 90–100% for both components",
+    "metabolism": "hepatic (sulfamethoxazole acetylated and glucuronidated)",
+    "excretion": "renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea and vomiting",
+      "Rash",
+      "Pruritus"
+    ],
+    "serious": [
+      "Stevens-Johnson syndrome and toxic epidermal necrolysis",
+      "Hyperkalaemia",
+      "Bone marrow suppression and megaloblastic changes",
+      "Haemolysis in G6PD deficiency",
+      "Hepatotoxicity",
+      "Kernicterus risk in neonates",
+      "Raised creatinine (inhibited secretion) and acute kidney injury"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Hypersensitivity reactions to co-trimoxazole are much more frequent in people with HIV.",
+    "Trimethoprim raises serum creatinine by blocking its tubular secretion without necessarily reducing glomerular filtration."
+  ],
+  "related": [
+    "nitrofurantoin",
+    "ciprofloxacin",
+    "fosfomycin",
+    "dolutegravir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Trimethoprim/sulfamethoxazole",
+      "url": "https://en.wikipedia.org/wiki/Trimethoprim/sulfamethoxazole"
+    },
+    {
+      "title": "DailyMed: sulfamethoxazole trimethoprim labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sulfamethoxazole+trimethoprim"
+    }
+  ],
+  "stage": "written"
 }

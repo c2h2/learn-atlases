@@ -1,36 +1,131 @@
 {
   "slug": "clarithromycin",
   "name": "Clarithromycin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "6-O-methylerythromycin",
+    "TE-031",
+    "A-56268"
+  ],
+  "brands": [
+    "Biaxin",
+    "Klacid",
+    "Klaricid"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Macrolide antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral tablets (immediate- or extended-release) or suspension twice or once daily; IV in some countries.",
+  "targets": [
+    "23S rRNA of the 50S ribosomal subunit (nascent peptide exit tunnel)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Taisho Pharmaceutical",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1991,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Biaxin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Taisho Pharmaceutical",
+    "note": "Methylation of the 6-hydroxyl group of erythromycin prevents acid-catalysed degradation, improving oral absorption and tolerability."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Acid-stable macrolide central to H. pylori eradication and MAC treatment",
+  "summary": "Clarithromycin is a semi-synthetic macrolide developed by Taisho in Japan and marketed by Abbott. It is more acid-stable and better tolerated than erythromycin, and is widely used for respiratory infections, Helicobacter pylori eradication and Mycobacterium avium complex disease.",
+  "mechanism": [
+    "Clarithromycin binds 23S rRNA in the 50S ribosomal exit tunnel and blocks protein elongation; its 14-hydroxy metabolite is also active, particularly against H. influenzae.",
+    "It is a strong mechanism-based inhibitor of CYP3A4 and an inhibitor of P-glycoprotein, producing many clinically significant drug interactions. Point mutations in 23S rRNA (A2143G, A2142G) underlie H. pylori clarithromycin resistance."
+  ],
+  "uses": [
+    "Helicobacter pylori eradication (with amoxicillin or metronidazole and a proton pump inhibitor)",
+    "Community-acquired pneumonia, sinusitis and pharyngitis",
+    "Mycobacterium avium complex treatment and prophylaxis",
+    "Skin and soft-tissue infections",
+    "Leprosy (alternative regimens)"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "US approval",
+      "detail": "The FDA approves Biaxin (Abbott Laboratories)."
+    },
+    {
+      "year": 1996,
+      "title": "H. pylori indication",
+      "detail": "Clarithromycin-based triple therapy becomes a standard for H. pylori eradication."
+    },
+    {
+      "year": 2005,
+      "title": "Generics",
+      "detail": "Generic clarithromycin enters the US market."
+    },
+    {
+      "year": 2017,
+      "title": "Rising H. pylori resistance",
+      "detail": "WHO lists clarithromycin-resistant H. pylori as a high-priority pathogen."
+    },
+    {
+      "year": 2018,
+      "title": "Cardiac mortality warning",
+      "detail": "The FDA advises caution in patients with heart disease after the CLARICOR trial showed increased long-term mortality."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3–7 hours (dose-dependent)",
+    "bioavailability": "about 50%",
+    "metabolism": "hepatic CYP3A4 to active 14-hydroxyclarithromycin",
+    "excretion": "renal and faecal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Taste disturbance (metallic taste)",
+      "Nausea and diarrhoea",
+      "Abdominal pain",
+      "Headache"
+    ],
+    "serious": [
+      "QT prolongation and torsades de pointes",
+      "Hepatotoxicity",
+      "Serious interactions (e.g. colchicine toxicity, statin myopathy, hypotension with calcium-channel blockers)",
+      "Clostridioides difficile infection",
+      "Possible increased long-term cardiac mortality in coronary heart disease"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Co-administration of clarithromycin with colchicine has been linked to fatal colchicine toxicity."
+  ],
+  "related": [
+    "erythromycin",
+    "azithromycin",
+    "amoxicillin",
+    "omeprazole",
+    "metronidazole",
+    "colchicine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Clarithromycin",
+      "url": "https://en.wikipedia.org/wiki/Clarithromycin"
+    },
+    {
+      "title": "DailyMed: clarithromycin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=clarithromycin"
+    },
+    {
+      "title": "FDA Drug Safety Communication on clarithromycin in heart disease (2018)",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-review-finds-additional-data-supports-potential-increased-long-term-risks-antibiotic-clarithromycin"
+    }
+  ],
+  "stage": "written"
 }

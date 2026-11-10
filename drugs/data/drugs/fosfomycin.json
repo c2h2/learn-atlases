@@ -1,36 +1,123 @@
 {
   "slug": "fosfomycin",
   "name": "Fosfomycin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Phosphomycin",
+    "Phosphonomycin",
+    "Fosfomycin trometamol",
+    "Fosfomycin disodium"
+  ],
+  "brands": [
+    "Monurol",
+    "Monuril",
+    "Infectofos",
+    "Fosfocina"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Phosphonic acid antibiotic (epoxide)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Single oral sachet of fosfomycin trometamol for cystitis; IV fosfomycin disodium (outside the US) for systemic infections in combination.",
+  "targets": [
+    "UDP-N-acetylglucosamine enolpyruvyl transferase (MurA)"
+  ],
+  "origin": "natural",
+  "originator": "Merck & Co. and Compañía Española de Penicilina y Antibióticos (CEPA)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1969,
+    "by": "Merck & Co. with CEPA (Spain)",
+    "note": "Discovered in Streptomyces fradiae isolated from a Spanish soil sample; now produced synthetically."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Single-dose oral treatment for cystitis and an IV option for resistant bacteria",
+  "summary": "Fosfomycin is a small phosphonic acid antibiotic discovered in 1969 that blocks the first committed step of peptidoglycan synthesis. Oral fosfomycin trometamol is given as a single dose for uncomplicated cystitis, and intravenous fosfomycin is used, usually in combination, for multidrug-resistant infections in Europe and elsewhere.",
+  "mechanism": [
+    "Fosfomycin enters bacteria via the glycerol-3-phosphate (GlpT) and hexose-phosphate (UhpT) transporters and covalently alkylates the active-site cysteine of MurA, preventing formation of UDP-N-acetylmuramic acid and thus the earliest cytoplasmic step of cell-wall synthesis.",
+    "Because its target is unique, there is no cross-resistance with other classes. Resistance arises readily in vitro through transporter mutations, and plasmid-borne fos enzymes (FosA, FosB, FosX) inactivate it, which is why IV use is combined with other agents."
+  ],
+  "uses": [
+    "Acute uncomplicated cystitis (single oral dose)",
+    "Lower UTI caused by ESBL-producing E. coli",
+    "Combination therapy of multidrug-resistant Gram-negative and staphylococcal infections (IV)",
+    "Prophylaxis for transrectal prostate biopsy (some countries)"
+  ],
+  "history": [
+    {
+      "year": 1969,
+      "title": "Discovery",
+      "detail": "Fosfomycin is reported by Merck and CEPA scientists in Science."
+    },
+    {
+      "year": 1996,
+      "title": "US oral approval",
+      "detail": "The FDA approves Monurol (fosfomycin trometamol) for uncomplicated UTI in women."
+    },
+    {
+      "year": 2017,
+      "title": "WHO AWaRe classification",
+      "detail": "WHO begins grouping antibiotics on its Essential Medicines List into Access, Watch and Reserve; intravenous fosfomycin is a Reserve antibiotic."
+    },
+    {
+      "year": 2019,
+      "title": "ZEUS trial and US IV application",
+      "detail": "The ZEUS trial supports IV fosfomycin (Contepo) for complicated UTI, but the FDA issues a complete response letter citing manufacturing issues."
+    },
+    {
+      "year": 2020,
+      "title": "EMA review",
+      "detail": "The EMA recommends that oral fosfomycin trometamol be restricted to uncomplicated cystitis and some prophylaxis and that IV use be reserved for serious infections when other antibiotics are unsuitable."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–4 hours (oral trometamol up to about 5–6 hours)",
+    "bioavailability": "about 35–40% for oral trometamol",
+    "metabolism": "not metabolised",
+    "excretion": "renal, unchanged, giving high and prolonged urinary concentrations"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Nausea",
+      "Headache",
+      "Vaginitis"
+    ],
+    "serious": [
+      "Hypokalaemia and sodium overload with IV fosfomycin disodium",
+      "Clostridioides difficile infection",
+      "Hypersensitivity reactions (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Fosfomycin is one of the smallest antibiotics in clinical use, with a molecular mass of about 138 Da for the free acid."
+  ],
+  "related": [
+    "nitrofurantoin",
+    "co-trimoxazole",
+    "colistin",
+    "meropenem"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Fosfomycin",
+      "url": "https://en.wikipedia.org/wiki/Fosfomycin"
+    },
+    {
+      "title": "DailyMed: fosfomycin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fosfomycin"
+    },
+    {
+      "title": "EMA: Fosfomycin-containing medicinal products referral",
+      "url": "https://www.ema.europa.eu/en/medicines/human/referrals/fosfomycin-containing-medicinal-products"
+    }
+  ],
+  "stage": "written"
 }

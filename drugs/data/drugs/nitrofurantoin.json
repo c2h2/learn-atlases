@@ -1,36 +1,126 @@
 {
   "slug": "nitrofurantoin",
   "name": "Nitrofurantoin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Nitrofurantoin macrocrystals",
+    "Nitrofurantoin monohydrate"
+  ],
+  "brands": [
+    "Macrobid",
+    "Macrodantin",
+    "Furadantin"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Nitrofuran antibacterial",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules (macrocrystals or modified-release) or suspension, taken with food.",
+  "targets": [
+    "Bacterial nitroreductases (nfsA, nfsB) generating reactive intermediates that damage ribosomes, DNA and metabolic enzymes"
+  ],
+  "origin": "synthetic",
+  "originator": "Eaton Laboratories (Norwich Pharmacal Company)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1953,
+    "agency": null,
+    "country": "United States",
+    "brand": "Furadantin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Eaton Laboratories (Norwich Pharmacal)",
+    "note": "One of several antibacterial nitrofurans developed in the 1940s–50s."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Urine-concentrated nitrofuran, a first-line treatment for cystitis",
+  "summary": "Nitrofurantoin is a synthetic nitrofuran used since 1953 to treat and prevent uncomplicated lower urinary tract infections. It reaches therapeutic concentrations only in urine, so it is unsuitable for pyelonephritis or systemic infections, and resistance has remained low despite decades of use.",
+  "mechanism": [
+    "Nitrofurantoin is a prodrug reduced by bacterial flavoprotein nitroreductases (NfsA and NfsB in E. coli) to highly reactive electrophilic intermediates. These attack ribosomal proteins, DNA, and enzymes of the citric acid cycle and cell-wall synthesis, so many targets are hit at once.",
+    "This multi-target action is thought to explain the low rate of acquired resistance, which usually requires stepwise loss of both nitroreductases. Rapid renal excretion produces high urinary but negligible plasma concentrations."
+  ],
+  "uses": [
+    "Acute uncomplicated cystitis in women",
+    "Prophylaxis of recurrent urinary tract infections",
+    "Lower urinary tract infections in pregnancy (avoided near term)"
+  ],
+  "history": [
+    {
+      "year": 1944,
+      "title": "Nitrofurans",
+      "detail": "Antibacterial activity of nitrofuran compounds is reported by Dodd and Stillman."
+    },
+    {
+      "year": 1953,
+      "title": "Introduction",
+      "detail": "Nitrofurantoin is introduced in the US as Furadantin."
+    },
+    {
+      "year": 1991,
+      "title": "Modified-release",
+      "detail": "Macrobid twice-daily capsules are approved in the US."
+    },
+    {
+      "year": 2011,
+      "title": "IDSA guideline",
+      "detail": "IDSA/ESCMID guidelines name nitrofurantoin a first-line agent for acute uncomplicated cystitis."
+    },
+    {
+      "year": 2015,
+      "title": "Beers criteria revised",
+      "detail": "The American Geriatrics Society relaxes its renal cut-off, advising avoidance mainly when creatinine clearance is below 30 mL/min."
+    },
+    {
+      "year": 2018,
+      "title": "NICE guidance",
+      "detail": "NICE guideline NG109 recommends nitrofurantoin first-line for lower UTI when kidney function allows."
+    }
+  ],
+  "pk": {
+    "half_life": "about 20–60 minutes",
+    "bioavailability": "about 40–90% depending on formulation; increased by food",
+    "metabolism": "partly in tissues",
+    "excretion": "renal (about 25–40% unchanged in urine)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Headache",
+      "Brown discolouration of urine",
+      "Flatulence"
+    ],
+    "serious": [
+      "Acute pulmonary hypersensitivity reactions",
+      "Chronic pulmonary fibrosis with long-term use",
+      "Hepatotoxicity including autoimmune-like hepatitis",
+      "Peripheral neuropathy (especially in renal impairment)",
+      "Haemolytic anaemia in G6PD deficiency and in neonates"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Nitrofurantoin efficacy depends on adequate kidney function to concentrate the drug in urine."
+  ],
+  "related": [
+    "fosfomycin",
+    "co-trimoxazole",
+    "cefalexin",
+    "amoxicillin-clavulanate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Nitrofurantoin",
+      "url": "https://en.wikipedia.org/wiki/Nitrofurantoin"
+    },
+    {
+      "title": "DailyMed: nitrofurantoin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=nitrofurantoin"
+    }
+  ],
+  "stage": "written"
 }

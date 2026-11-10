@@ -1,36 +1,129 @@
 {
   "slug": "minocycline",
   "name": "Minocycline",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Minocycline hydrochloride"
+  ],
+  "brands": [
+    "Minocin",
+    "Solodyn",
+    "Amzeeq",
+    "Arestin"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Tetracycline antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "topical"
+  ],
+  "route_note": "Oral capsules or extended-release tablets; IV formulation; topical foam for acne; periodontal microspheres.",
+  "targets": [
+    "16S rRNA of the 30S ribosomal subunit (aminoacyl-tRNA A site)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Lederle Laboratories",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1971,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Minocin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Lederle Laboratories",
+    "note": "A lipophilic semi-synthetic tetracycline with a dimethylamino substituent, giving good tissue and CNS penetration."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Lipophilic tetracycline used for acne, MRSA and Acinetobacter infections",
+  "summary": "Minocycline is a highly lipophilic semi-synthetic tetracycline developed by Lederle. It is widely used for acne and also retains activity against some MRSA and Acinetobacter baumannii strains, but it has a distinctive profile of vestibular, pigmentary and autoimmune adverse effects.",
+  "mechanism": [
+    "Minocycline binds the 30S ribosomal subunit and prevents aminoacyl-tRNA from binding the A site, inhibiting bacterial protein synthesis (bacteriostatic).",
+    "Its high lipophilicity gives excellent tissue and CNS penetration and it is less affected by some tetracycline efflux pumps (e.g. TetK), preserving activity against some resistant staphylococci and Acinetobacter. It also has anti-inflammatory effects relevant to acne."
+  ],
+  "uses": [
+    "Inflammatory acne vulgaris (oral and topical foam)",
+    "Skin and soft-tissue infections including some MRSA",
+    "Acinetobacter baumannii infections (IV)",
+    "Meningococcal carriage (historical), nocardiosis and leprosy (alternative regimens)",
+    "Periodontitis (local microspheres)"
+  ],
+  "history": [
+    {
+      "year": 1948,
+      "title": "Aureomycin",
+      "detail": "Lederle reports chlortetracycline (Aureomycin), the first tetracycline."
+    },
+    {
+      "year": 1967,
+      "title": "Doxycycline",
+      "detail": "Pfizer's doxycycline is introduced, a contemporary semi-synthetic tetracycline."
+    },
+    {
+      "year": 1971,
+      "title": "US approval",
+      "detail": "Minocin is approved in the US."
+    },
+    {
+      "year": 2001,
+      "title": "Arestin",
+      "detail": "Minocycline microspheres (Arestin) are approved for periodontitis."
+    },
+    {
+      "year": 2006,
+      "title": "Extended-release acne product",
+      "detail": "Solodyn, an extended-release formulation for acne, is approved in the US."
+    },
+    {
+      "year": 2019,
+      "title": "Topical foam",
+      "detail": "The FDA approves Amzeeq, the first topical minocycline, for acne."
+    }
+  ],
+  "pk": {
+    "half_life": "about 11–22 hours",
+    "bioavailability": "about 90–100%",
+    "metabolism": "hepatic",
+    "excretion": "faecal and renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dizziness and vertigo",
+      "Nausea",
+      "Photosensitivity (less than doxycycline)"
+    ],
+    "serious": [
+      "Blue-grey hyperpigmentation of skin, teeth and other tissues",
+      "Drug-induced lupus and autoimmune hepatitis",
+      "DRESS",
+      "Intracranial hypertension",
+      "Tooth discolouration in children"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Long-term minocycline can cause blue-black pigmentation of skin, nails, teeth, bone and even the thyroid gland ('black thyroid')."
+  ],
+  "related": [
+    "doxycycline",
+    "tetracycline",
+    "tigecycline",
+    "isotretinoin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Minocycline",
+      "url": "https://en.wikipedia.org/wiki/Minocycline"
+    },
+    {
+      "title": "DailyMed: minocycline labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=minocycline"
+    }
+  ],
+  "stage": "written"
 }

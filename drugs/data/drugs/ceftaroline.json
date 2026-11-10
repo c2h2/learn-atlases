@@ -1,36 +1,121 @@
 {
   "slug": "ceftaroline",
-  "name": "Ceftaroline",
-  "aliases": [],
-  "brands": [],
+  "name": "Ceftaroline fosamil",
+  "aliases": [
+    "Ceftaroline",
+    "TAK-599",
+    "PPI-0903"
+  ],
+  "brands": [
+    "Teflaro",
+    "Zinforo"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Fifth-generation (anti-MRSA) cephalosporin",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion of the water-soluble prodrug ceftaroline fosamil every 8–12 hours.",
+  "targets": [
+    "PBP2a (mecA)",
+    "Penicillin-binding proteins (PBPs)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Takeda Pharmaceutical; developed by Cerexa (Forest Laboratories)",
+  "owner": "AbbVie (US); Pfizer (outside US)",
+  "first_approval": {
+    "year": 2010,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Teflaro"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Takeda Pharmaceutical",
+    "note": "A cephalosporin designed to bind the low-affinity PBP2a of methicillin-resistant Staphylococcus aureus."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (hospital)",
+  "tagline": "Cephalosporin active against MRSA through high affinity for PBP2a",
+  "summary": "Ceftaroline fosamil is a prodrug cephalosporin that is active against methicillin-resistant Staphylococcus aureus as well as streptococci and common community Gram-negative pathogens. It is approved for community-acquired pneumonia and acute bacterial skin and skin-structure infections.",
+  "mechanism": [
+    "After IV infusion, plasma phosphatases convert ceftaroline fosamil to active ceftaroline, which acylates penicillin-binding proteins and blocks cell-wall cross-linking.",
+    "Unlike earlier beta-lactams, ceftaroline binds PBP2a (encoded by mecA) with high affinity, partly by triggering an allosteric opening of its active site, giving activity against MRSA. It also binds pneumococcal PBP2x, but it is hydrolysed by ESBLs and carbapenemases and has no useful Pseudomonas activity."
+  ],
+  "uses": [
+    "Acute bacterial skin and skin-structure infections, including MRSA",
+    "Community-acquired bacterial pneumonia",
+    "Off-label salvage therapy for MRSA bacteraemia (often with daptomycin)"
+  ],
+  "history": [
+    {
+      "year": 2007,
+      "title": "Development deal",
+      "detail": "Cerexa, later part of Forest Laboratories, advances ceftaroline through phase III trials."
+    },
+    {
+      "year": 2010,
+      "title": "US approval",
+      "detail": "The FDA approves Teflaro for skin infections and community-acquired pneumonia."
+    },
+    {
+      "year": 2012,
+      "title": "EU approval",
+      "detail": "The European Commission authorises Zinforo (AstraZeneca)."
+    },
+    {
+      "year": 2016,
+      "title": "Paediatric use",
+      "detail": "The FDA extends approval to children."
+    },
+    {
+      "year": 2020,
+      "title": "Owner change",
+      "detail": "AbbVie acquires Allergan, which held Forest's US rights to Teflaro; Pfizer markets Zinforo outside the US after acquiring AstraZeneca's antibiotics business (2016)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2.5 hours",
+    "bioavailability": "IV only",
+    "metabolism": "prodrug dephosphorylated to ceftaroline; minor hydrolysis to inactive metabolite",
+    "excretion": "renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Nausea",
+      "Rash",
+      "Positive direct Coombs test"
+    ],
+    "serious": [
+      "Neutropenia and agranulocytosis with prolonged courses",
+      "Anaphylaxis",
+      "Clostridioides difficile infection",
+      "Haemolytic anaemia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ceftaroline was the first beta-lactam approved in the US with activity against MRSA."
+  ],
+  "related": [
+    "vancomycin",
+    "daptomycin",
+    "linezolid",
+    "ceftriaxone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ceftaroline fosamil",
+      "url": "https://en.wikipedia.org/wiki/Ceftaroline_fosamil"
+    },
+    {
+      "title": "DailyMed: ceftaroline labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ceftaroline"
+    }
+  ],
+  "stage": "written"
 }

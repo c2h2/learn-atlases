@@ -1,36 +1,118 @@
 {
   "slug": "cefuroxime",
   "name": "Cefuroxime",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Cefuroxime axetil",
+    "Cefuroxime sodium"
+  ],
+  "brands": [
+    "Zinacef",
+    "Zinnat",
+    "Ceftin"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Second-generation cephalosporin",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im"
+  ],
+  "route_note": "IV/IM as cefuroxime sodium; oral as the prodrug ester cefuroxime axetil (taken with food). Intracameral injection used in cataract surgery.",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Glaxo",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": null,
+    "by": "Glaxo",
+    "note": "Developed in the 1970s; its methoxyimino side chain confers stability to many beta-lactamases."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Second-generation cephalosporin, oral and injectable, used widely for surgical prophylaxis",
+  "summary": "Cefuroxime is a second-generation cephalosporin developed by Glaxo in the 1970s. It has improved activity against Haemophilus influenzae and Moraxella compared with first-generation agents and is used for respiratory infections, Lyme disease and surgical prophylaxis.",
+  "mechanism": [
+    "Cefuroxime acylates penicillin-binding proteins, blocking peptidoglycan cross-linking.",
+    "An alpha-methoxyimino group in its side chain shields the beta-lactam ring from many common beta-lactamases, including those of H. influenzae and Moraxella catarrhalis, broadening its Gram-negative spectrum relative to cefalexin."
+  ],
+  "uses": [
+    "Surgical prophylaxis",
+    "Community-acquired pneumonia and other lower respiratory tract infections",
+    "Sinusitis and otitis media",
+    "Early Lyme disease",
+    "Urinary tract and skin infections",
+    "Intracameral prophylaxis of endophthalmitis after cataract surgery"
+  ],
+  "history": [
+    {
+      "year": 1964,
+      "title": "First cephalosporins",
+      "detail": "Cefalotin, the first marketed cephalosporin, is launched; later generations extend Gram-negative coverage."
+    },
+    {
+      "year": 1978,
+      "title": "Launch",
+      "detail": "Glaxo introduces injectable cefuroxime (Zinacef) in the late 1970s."
+    },
+    {
+      "year": 1987,
+      "title": "Oral prodrug",
+      "detail": "Cefuroxime axetil (Zinnat/Ceftin), an oral ester prodrug, is introduced."
+    },
+    {
+      "year": 2012,
+      "title": "Intracameral product",
+      "detail": "An intracameral cefuroxime product (Aprokam) is authorised in the EU for cataract surgery prophylaxis."
+    },
+    {
+      "year": 2017,
+      "title": "WHO AWaRe classification",
+      "detail": "The WHO Essential Medicines List begins grouping antibiotics into Access, Watch and Reserve categories; cefuroxime is placed in the Watch group."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1–2 hours",
+    "bioavailability": "cefuroxime axetil about 37% fasting, about 52% with food",
+    "metabolism": "axetil ester hydrolysed in gut wall and blood; cefuroxime itself not metabolised",
+    "excretion": "renal, unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Nausea",
+      "Headache"
+    ],
+    "serious": [
+      "Anaphylaxis",
+      "Clostridioides difficile-associated diarrhoea",
+      "Jarisch-Herxheimer reaction in Lyme disease"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Cefuroxime is classified in the WHO 'Watch' antibiotic group."
+  ],
+  "related": [
+    "cefalexin",
+    "ceftriaxone",
+    "amoxicillin-clavulanate",
+    "doxycycline"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Cefuroxime",
+      "url": "https://en.wikipedia.org/wiki/Cefuroxime"
+    },
+    {
+      "title": "DailyMed: cefuroxime labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=cefuroxime"
+    }
+  ],
+  "stage": "written"
 }

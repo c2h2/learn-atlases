@@ -1,36 +1,119 @@
 {
   "slug": "ethambutol",
   "name": "Ethambutol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Ethambutol hydrochloride",
+    "EMB"
+  ],
+  "brands": [
+    "Myambutol"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Antimycobacterial (ethylenediamine)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets once daily, dose by weight; often in fixed-dose combinations.",
+  "targets": [
+    "Arabinosyltransferases EmbA, EmbB and EmbC"
+  ],
+  "origin": "synthetic",
+  "originator": "Lederle Laboratories",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1967,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Myambutol"
+  },
+  "discovery": {
+    "year": 1961,
+    "by": "J. P. Thomas, R. G. Wilkinson and colleagues (Lederle)",
+    "note": "Found through screening of synthetic diamines for antituberculosis activity."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Bacteriostatic TB drug that blocks arabinan synthesis; monitored for optic neuritis",
+  "summary": "Ethambutol is a synthetic antimycobacterial discovered at Lederle in 1961. It is used in the initial phase of tuberculosis treatment to protect against resistance to the other drugs and in Mycobacterium avium complex disease; its main toxicity is dose-related optic neuritis.",
+  "mechanism": [
+    "Ethambutol inhibits the arabinosyltransferases EmbA, EmbB and EmbC, which polymerise arabinose into arabinogalactan and lipoarabinomannan in the mycobacterial cell wall. This disrupts attachment of mycolic acids and increases cell-wall permeability, making it bacteriostatic and potentially synergistic with other drugs.",
+    "Resistance is mainly due to mutations in embB, particularly at codon 306."
+  ],
+  "uses": [
+    "Tuberculosis (initial phase of first-line therapy, until susceptibility is known)",
+    "Mycobacterium avium complex lung and disseminated disease (with a macrolide and rifamycin)",
+    "Other nontuberculous mycobacterial infections, e.g. M. kansasii"
+  ],
+  "history": [
+    {
+      "year": 1961,
+      "title": "Discovery",
+      "detail": "Lederle scientists report the antituberculosis activity of ethambutol."
+    },
+    {
+      "year": 1967,
+      "title": "US approval",
+      "detail": "The FDA approves Myambutol."
+    },
+    {
+      "year": 1970,
+      "title": "Replaces PAS",
+      "detail": "Ethambutol increasingly replaces para-aminosalicylic acid as a companion drug in TB regimens."
+    },
+    {
+      "year": 1989,
+      "title": "Target clues",
+      "detail": "Studies show ethambutol inhibits arabinogalactan synthesis in mycobacteria."
+    },
+    {
+      "year": 1997,
+      "title": "emb operon",
+      "detail": "The embCAB genes encoding arabinosyltransferases are identified as the target, with embB mutations conferring resistance."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3–4 hours (longer in renal impairment)",
+    "bioavailability": "about 75–80%",
+    "metabolism": "partly hepatic",
+    "excretion": "mainly renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Hyperuricaemia",
+      "Rash"
+    ],
+    "serious": [
+      "Optic neuritis with reduced visual acuity and red-green colour blindness (dose-related, usually reversible if stopped early)",
+      "Peripheral neuropathy",
+      "Hepatotoxicity (rare)",
+      "Severe hypersensitivity reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Baseline and periodic visual acuity and colour-vision testing are recommended during ethambutol therapy."
+  ],
+  "related": [
+    "isoniazid",
+    "rifampicin",
+    "pyrazinamide",
+    "clarithromycin",
+    "azithromycin",
+    "amikacin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ethambutol",
+      "url": "https://en.wikipedia.org/wiki/Ethambutol"
+    },
+    {
+      "title": "DailyMed: ethambutol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ethambutol"
+    }
+  ],
+  "stage": "written"
 }

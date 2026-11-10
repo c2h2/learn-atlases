@@ -1,36 +1,129 @@
 {
   "slug": "piperacillin-tazobactam",
-  "name": "Piperacillin tazobactam",
-  "aliases": [],
-  "brands": [],
+  "name": "Piperacillin/tazobactam",
+  "aliases": [
+    "Pip-tazo",
+    "TZP"
+  ],
+  "brands": [
+    "Zosyn",
+    "Tazocin"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Ureidopenicillin with beta-lactamase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every 6–8 hours; extended or continuous infusion is used in many hospitals.",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)",
+    "Class A beta-lactamases (inhibited by tazobactam)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Toyama Chemical (piperacillin); Taiho Pharmaceutical (tazobactam)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1993,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Zosyn"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Toyama Chemical; Taiho Pharmaceutical",
+    "note": "Piperacillin, an anti-pseudomonal ureidopenicillin, was developed in the 1970s; tazobactam is a penicillanic acid sulfone beta-lactamase inhibitor."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (hospital)",
+  "tagline": "Broad-spectrum anti-pseudomonal penicillin combination, a hospital mainstay",
+  "summary": "Piperacillin/tazobactam pairs an extended-spectrum penicillin with the beta-lactamase inhibitor tazobactam. It covers Pseudomonas aeruginosa, many Enterobacterales, streptococci, methicillin-susceptible staphylococci and anaerobes, and is among the most used empirical antibiotics in hospitals.",
+  "mechanism": [
+    "Piperacillin binds penicillin-binding proteins, particularly PBP3 of Gram-negative bacilli, inhibiting cell-wall synthesis; its polar ureido side chain improves penetration and anti-pseudomonal activity.",
+    "Tazobactam irreversibly inhibits many class A beta-lactamases (including TEM, SHV and some CTX-M enzymes), protecting piperacillin. It is weak against AmpC, OXA and carbapenemase enzymes."
+  ],
+  "uses": [
+    "Hospital-acquired and ventilator-associated pneumonia",
+    "Complicated intra-abdominal infections",
+    "Complicated skin and soft-tissue infections",
+    "Febrile neutropenia (empirical therapy)",
+    "Complicated urinary tract infections and sepsis of unknown source"
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "US approval",
+      "detail": "The FDA approves piperacillin/tazobactam (Zosyn, Lederle)."
+    },
+    {
+      "year": 2017,
+      "title": "WHO AWaRe classification",
+      "detail": "The WHO Essential Medicines List begins grouping antibiotics into Access, Watch and Reserve categories; piperacillin/tazobactam is placed in the Watch group."
+    },
+    {
+      "year": 2017,
+      "title": "Global shortage",
+      "detail": "An explosion at a Chinese active-ingredient plant in late 2016 causes worldwide shortages."
+    },
+    {
+      "year": 2018,
+      "title": "MERINO trial",
+      "detail": "In ceftriaxone-resistant E. coli or Klebsiella bloodstream infection, piperacillin/tazobactam did not show non-inferiority to meropenem for 30-day mortality (JAMA 2018)."
+    },
+    {
+      "year": 2023,
+      "title": "Acute kidney injury debate",
+      "detail": "Studies such as ACORN compare cefepime with piperacillin/tazobactam; combination with vancomycin remains associated with higher reported AKI rates in observational data."
+    }
+  ],
+  "pk": {
+    "half_life": "about 0.7–1.2 hours",
+    "bioavailability": "IV only",
+    "metabolism": "piperacillin minimally metabolised",
+    "excretion": "renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Rash",
+      "Headache",
+      "Insomnia"
+    ],
+    "serious": [
+      "Anaphylaxis and severe cutaneous reactions",
+      "Haematological toxicity (neutropenia, thrombocytopenia) with prolonged use",
+      "Clostridioides difficile infection",
+      "Acute kidney injury, particularly reported with vancomycin",
+      "Hypokalaemia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Piperacillin/tazobactam is classified in the WHO 'Watch' antibiotic group.",
+    "It is one of the few beta-lactam combinations with reliable activity against anaerobes as well as Pseudomonas."
+  ],
+  "related": [
+    "meropenem",
+    "cefepime",
+    "vancomycin",
+    "amoxicillin-clavulanate",
+    "ceftazidime"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Piperacillin/tazobactam",
+      "url": "https://en.wikipedia.org/wiki/Piperacillin/tazobactam"
+    },
+    {
+      "title": "DailyMed: piperacillin tazobactam labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=piperacillin+tazobactam"
+    },
+    {
+      "title": "MERINO trial (JAMA 2018) — PubMed search",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=MERINO+piperacillin+meropenem+JAMA+2018"
+    }
+  ],
+  "stage": "written"
 }

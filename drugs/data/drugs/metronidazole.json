@@ -1,36 +1,136 @@
 {
   "slug": "metronidazole",
   "name": "Metronidazole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "RP 8823"
+  ],
+  "brands": [
+    "Flagyl",
+    "MetroGel",
+    "Rozex",
+    "Zidoval"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nitroimidazole antibacterial and antiprotozoal",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "topical",
+    "vaginal",
+    "rectal"
+  ],
+  "route_note": "Oral tablets or suspension, IV infusion, rectal suppositories, vaginal gel and topical gel/cream for rosacea.",
+  "targets": [
+    "DNA (via reductively activated nitro radicals formed by pyruvate:ferredoxin oxidoreductase pathways)"
+  ],
+  "origin": "synthetic",
+  "originator": "Rhône-Poulenc",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1960,
+    "agency": null,
+    "country": "France",
+    "brand": "Flagyl"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1959,
+    "by": "Rhône-Poulenc",
+    "note": "Synthesised as part of work on azomycin (2-nitroimidazole) derivatives for trichomoniasis."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Nitroimidazole for anaerobic bacteria, trichomoniasis, giardiasis and amoebiasis",
+  "summary": "Metronidazole is a nitroimidazole introduced by Rhône-Poulenc in 1960 for trichomoniasis and later found to be highly active against anaerobic bacteria. It is a standard drug for anaerobic infections, bacterial vaginosis, protozoal infections and Helicobacter pylori regimens.",
+  "mechanism": [
+    "Metronidazole is a prodrug that diffuses into cells and is activated only in organisms with low-redox-potential electron-transport proteins, such as ferredoxin reduced by pyruvate:ferredoxin oxidoreductase in anaerobic bacteria and protozoa.",
+    "Reduction of its nitro group produces short-lived nitro radical anions and other intermediates that cause DNA strand breaks and destabilise the helix, killing the cell. Aerobic human cells and aerobic bacteria do not activate it efficiently, giving selective toxicity. Resistance is uncommon in anaerobes but may involve nim genes or reduced activation."
+  ],
+  "uses": [
+    "Anaerobic infections (intra-abdominal, pelvic, brain abscess, aspiration pneumonia), often with other agents",
+    "Bacterial vaginosis and trichomoniasis",
+    "Giardiasis and amoebiasis",
+    "Helicobacter pylori eradication",
+    "Clostridioides difficile infection (when first-line agents are unavailable)",
+    "Rosacea (topical) and surgical prophylaxis in colorectal surgery"
+  ],
+  "history": [
+    {
+      "year": 1953,
+      "title": "Azomycin",
+      "detail": "The 2-nitroimidazole azomycin is isolated from Streptomyces, inspiring Rhône-Poulenc's nitroimidazole programme."
+    },
+    {
+      "year": 1959,
+      "title": "Synthesis",
+      "detail": "Rhône-Poulenc chemists synthesise metronidazole."
+    },
+    {
+      "year": 1960,
+      "title": "Launch for trichomoniasis",
+      "detail": "Flagyl is introduced in France."
+    },
+    {
+      "year": 1962,
+      "title": "Anaerobic activity noticed",
+      "detail": "A patient's acute ulcerative gingivitis resolving during trichomoniasis treatment reveals metronidazole's activity against anaerobes."
+    },
+    {
+      "year": 1963,
+      "title": "US approval",
+      "detail": "The FDA approves Flagyl."
+    },
+    {
+      "year": 2018,
+      "title": "C. difficile guidance change",
+      "detail": "IDSA/SHEA guidelines no longer recommend metronidazole as first-line for adult C. difficile infection."
+    }
+  ],
+  "pk": {
+    "half_life": "about 8 hours",
+    "bioavailability": "nearly 100% orally",
+    "metabolism": "hepatic (oxidation, glucuronidation; active hydroxy metabolite)",
+    "excretion": "mainly renal"
+  },
+  "safety": {
+    "common": [
+      "Metallic taste",
+      "Nausea",
+      "Dark urine",
+      "Headache"
+    ],
+    "serious": [
+      "Peripheral and optic neuropathy with prolonged use",
+      "Encephalopathy and cerebellar toxicity",
+      "Seizures",
+      "Potentiation of warfarin",
+      "Severe hepatotoxicity in Cockayne syndrome",
+      "Severe skin reactions"
+    ],
+    "boxed_warning": "Metronidazole has been shown to be carcinogenic in mice and rats; avoid unnecessary use and reserve for approved indications (US label)."
+  },
+  "facts": [
+    "Labels have long advised avoiding alcohol because of a possible disulfiram-like reaction, although controlled studies have questioned this effect."
+  ],
+  "related": [
+    "clindamycin",
+    "vancomycin",
+    "fidaxomicin",
+    "clarithromycin",
+    "pretomanid",
+    "warfarin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Metronidazole",
+      "url": "https://en.wikipedia.org/wiki/Metronidazole"
+    },
+    {
+      "title": "DailyMed: metronidazole labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=metronidazole"
+    }
+  ],
+  "stage": "written"
 }

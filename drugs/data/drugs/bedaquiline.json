@@ -1,36 +1,127 @@
 {
   "slug": "bedaquiline",
   "name": "Bedaquiline",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "TMC207",
+    "R207910",
+    "Bedaquiline fumarate"
+  ],
+  "brands": [
+    "Sirturo"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Diarylquinoline antimycobacterial",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets with food, typically a loading phase followed by thrice-weekly or daily dosing within combination regimens.",
+  "targets": [
+    "Mycobacterial ATP synthase subunit c (atpE)"
+  ],
+  "origin": "synthetic",
+  "originator": "Janssen Pharmaceutica (Johnson & Johnson)",
+  "owner": "Janssen (Johnson & Johnson)",
+  "first_approval": {
+    "year": 2012,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Sirturo"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 2005,
+    "by": "Koen Andries and colleagues (Janssen/Tibotec)",
+    "note": "Identified by whole-cell screening against Mycobacterium smegmatis; reported in Science in 2005."
+  },
+  "generic": null,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First new-mechanism TB drug in decades, backbone of all-oral drug-resistant TB regimens",
+  "summary": "Bedaquiline is a diarylquinoline that inhibits mycobacterial ATP synthase. Approved in 2012 as the first new tuberculosis drug with a novel mechanism in about 40 years, it is now the backbone of WHO-recommended all-oral regimens such as BPaLM for rifampicin-resistant tuberculosis.",
+  "mechanism": [
+    "Bedaquiline binds the c-subunit ring (and the a-subunit interface) of mycobacterial F1Fo-ATP synthase, stalling rotation and blocking ATP production. It kills both replicating and dormant M. tuberculosis, with a delayed bactericidal effect, and is highly selective over the human mitochondrial enzyme.",
+    "Resistance occurs through atpE target mutations or, more commonly, through mutations in Rv0678 that upregulate the MmpS5-MmpL5 efflux pump, which also reduces susceptibility to clofazimine. Its very long terminal half-life reflects slow release from tissues."
+  ],
+  "uses": [
+    "Pulmonary multidrug-resistant and rifampicin-resistant tuberculosis, as part of combination therapy (adults and children)"
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "title": "Discovery published",
+      "detail": "Andries and colleagues describe TMC207 in Science."
+    },
+    {
+      "year": 2012,
+      "title": "US accelerated approval",
+      "detail": "The FDA approves Sirturo for MDR-TB with a boxed warning about increased mortality and QT prolongation in a phase II trial."
+    },
+    {
+      "year": 2014,
+      "title": "EU approval",
+      "detail": "Sirturo receives a conditional marketing authorisation in the EU."
+    },
+    {
+      "year": 2019,
+      "title": "BPaL regimen",
+      "detail": "Bedaquiline is approved for use with pretomanid and linezolid for highly drug-resistant TB (Nix-TB)."
+    },
+    {
+      "year": 2022,
+      "title": "WHO BPaLM",
+      "detail": "WHO recommends six-month BPaLM (bedaquiline, pretomanid, linezolid, moxifloxacin) for rifampicin-resistant TB."
+    },
+    {
+      "year": 2023,
+      "title": "Patent challenge",
+      "detail": "India's patent office rejects a secondary patent on bedaquiline; Johnson & Johnson later says it will not enforce secondary patents in many low- and middle-income countries."
+    }
+  ],
+  "pk": {
+    "half_life": "terminal elimination half-life about 5.5 months",
+    "bioavailability": "about doubled with food",
+    "metabolism": "hepatic CYP3A4 to N-monodesmethyl metabolite (M2)",
+    "excretion": "mainly faecal"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Arthralgia",
+      "Headache",
+      "Raised transaminases"
+    ],
+    "serious": [
+      "QT prolongation",
+      "Hepatotoxicity",
+      "Increased mortality observed in the original phase II trial"
+    ],
+    "boxed_warning": "The original US label carried a boxed warning for increased mortality and QT prolongation, based on the C208 phase II trial."
+  },
+  "facts": [
+    "Bedaquiline was the first FDA-approved drug specifically for multidrug-resistant tuberculosis.",
+    "Strong CYP3A4 inducers such as rifampicin markedly lower bedaquiline exposure and are avoided with it."
+  ],
+  "related": [
+    "pretomanid",
+    "linezolid",
+    "moxifloxacin",
+    "rifampicin",
+    "isoniazid"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Bedaquiline",
+      "url": "https://en.wikipedia.org/wiki/Bedaquiline"
+    },
+    {
+      "title": "DailyMed: sirturo labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sirturo"
+    },
+    {
+      "title": "EMA: Sirturo EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/sirturo"
+    }
+  ],
+  "stage": "written"
 }

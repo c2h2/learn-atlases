@@ -1,36 +1,141 @@
 {
   "slug": "doxycycline",
   "name": "Doxycycline",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Doxycycline hyclate",
+    "Doxycycline monohydrate",
+    "GS-3065"
+  ],
+  "brands": [
+    "Vibramycin",
+    "Doryx",
+    "Oracea",
+    "Periostat"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Tetracycline antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral tablets or capsules, usually once or twice daily with water and upright posture; IV formulation available.",
+  "targets": [
+    "16S rRNA of the 30S ribosomal subunit (aminoacyl-tRNA A site)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Pfizer",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1967,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Vibramycin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Pfizer (Charles Stephens and colleagues)",
+    "note": "A semi-synthetic tetracycline derived from oxytetracycline, with better absorption and a longer half-life."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Versatile tetracycline for atypical, tick-borne and sexually transmitted infections",
+  "summary": "Doxycycline is a long-acting semi-synthetic tetracycline introduced by Pfizer in 1967. It is used for a wide range of infections including rickettsial disease, Lyme disease, chlamydia, atypical pneumonia and anthrax, for malaria prophylaxis and acne, and since 2024 as post-exposure prophylaxis against bacterial STIs in some guidelines.",
+  "mechanism": [
+    "Doxycycline binds the 30S ribosomal subunit and blocks attachment of aminoacyl-tRNA to the A site, inhibiting protein synthesis; it is bacteriostatic and also active against intracellular organisms such as Chlamydia, Rickettsia and Coxiella.",
+    "At sub-antimicrobial doses it inhibits matrix metalloproteinases, the basis of its use in periodontitis and rosacea. Resistance is mainly via Tet efflux pumps (TetA, TetB) or ribosomal protection proteins (TetM, TetO). Its antimalarial effect targets the parasite's apicoplast."
+  ],
+  "uses": [
+    "Rickettsial infections (Rocky Mountain spotted fever, typhus, scrub typhus)",
+    "Lyme disease and other tick-borne infections",
+    "Chlamydia, non-gonococcal urethritis and syphilis (alternative)",
+    "Community-acquired pneumonia and COPD exacerbations",
+    "Malaria prophylaxis and, with quinine or artesunate, treatment",
+    "Acne and rosacea",
+    "Anthrax, plague, cholera, brucellosis and leptospirosis",
+    "Doxycycline post-exposure prophylaxis (doxy-PEP) for bacterial STIs"
+  ],
+  "history": [
+    {
+      "year": 1945,
+      "title": "Tetracycline class",
+      "detail": "Benjamin Duggar at Lederle discovers chlortetracycline, the first tetracycline (reported 1948)."
+    },
+    {
+      "year": 1967,
+      "title": "US approval",
+      "detail": "Pfizer introduces doxycycline as Vibramycin."
+    },
+    {
+      "year": 2001,
+      "title": "Anthrax letters",
+      "detail": "Doxycycline and ciprofloxacin are used for post-exposure prophylaxis after the US anthrax attacks."
+    },
+    {
+      "year": 2013,
+      "title": "Price spike",
+      "detail": "US generic doxycycline prices rise sharply amid shortages, prompting congressional scrutiny."
+    },
+    {
+      "year": 2023,
+      "title": "DoxyPEP trial",
+      "detail": "An NEJM trial shows doxycycline taken within 72 hours after sex reduces syphilis, chlamydia and gonorrhoea in men who have sex with men and transgender women."
+    },
+    {
+      "year": 2024,
+      "title": "CDC doxy-PEP guidelines",
+      "detail": "The US CDC publishes guidelines recommending doxy-PEP for certain populations."
+    }
+  ],
+  "pk": {
+    "half_life": "about 18–22 hours",
+    "bioavailability": "about 90–100%",
+    "metabolism": "minimal; enhanced clearance with enzyme inducers",
+    "excretion": "faecal and renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Photosensitivity",
+      "Oesophageal irritation",
+      "Vaginal candidiasis"
+    ],
+    "serious": [
+      "Pill oesophagitis and oesophageal ulceration",
+      "Tooth discolouration and enamel hypoplasia when given repeatedly in young children (lower risk than older tetracyclines)",
+      "Intracranial hypertension",
+      "Hepatotoxicity",
+      "Severe skin reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Unlike older tetracyclines, doxycycline can be used in renal impairment because it is largely eliminated by non-renal routes.",
+    "US guidance now supports short courses of doxycycline in children of any age for suspected rickettsial disease."
+  ],
+  "related": [
+    "minocycline",
+    "tetracycline",
+    "tigecycline",
+    "azithromycin",
+    "quinine",
+    "artesunate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Doxycycline",
+      "url": "https://en.wikipedia.org/wiki/Doxycycline"
+    },
+    {
+      "title": "DailyMed: doxycycline labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=doxycycline"
+    },
+    {
+      "title": "CDC Clinical Guidelines on the Use of Doxycycline Postexposure Prophylaxis (MMWR 2024)",
+      "url": "https://www.cdc.gov/mmwr/volumes/73/rr/rr7302a1.htm"
+    }
+  ],
+  "stage": "written"
 }

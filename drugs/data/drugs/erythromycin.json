@@ -1,36 +1,125 @@
 {
   "slug": "erythromycin",
   "name": "Erythromycin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Erythromycin A",
+    "Erythromycin ethylsuccinate",
+    "Erythromycin stearate",
+    "Erythromycin lactobionate"
+  ],
+  "brands": [
+    "Ilosone",
+    "Erythrocin",
+    "Ery-Tab",
+    "E.E.S."
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Macrolide antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "topical",
+    "ophthalmic"
+  ],
+  "route_note": "Oral salts/esters (some enteric-coated), IV lactobionate, topical gel for acne, and eye ointment for neonatal prophylaxis.",
+  "targets": [
+    "23S rRNA of the 50S ribosomal subunit (nascent peptide exit tunnel)",
+    "Motilin receptor (MLNR; prokinetic effect)"
+  ],
+  "origin": "natural",
+  "originator": "Eli Lilly and Company",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "discovery": {
+    "year": 1949,
+    "by": "Abelardo Aguilar; developed by Eli Lilly",
+    "note": "A soil sample from Iloilo, Philippines, yielded Saccharopolyspora erythraea (then Streptomyces erythreus); Lilly isolated erythromycin and launched it in 1952."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The first macrolide, also used for its motilin-agonist prokinetic effect",
+  "summary": "Erythromycin, isolated from a Philippine soil bacterium and launched by Eli Lilly in 1952, was the first macrolide antibiotic. Its use has declined in favour of azithromycin and clarithromycin, but it remains a penicillin alternative, a neonatal eye prophylactic and an off-label prokinetic.",
+  "mechanism": [
+    "Erythromycin binds the 23S rRNA in the nascent peptide exit tunnel of the 50S ribosomal subunit, blocking elongation of certain peptide chains and causing peptidyl-tRNA drop-off; it is mainly bacteriostatic.",
+    "Resistance occurs through erm-mediated methylation of 23S rRNA (also conferring lincosamide and streptogramin B resistance) or mef/msr efflux pumps. Separately, erythromycin acts as an agonist at motilin receptors in the gut, stimulating gastric emptying."
+  ],
+  "uses": [
+    "Respiratory, skin and soft-tissue infections in penicillin-allergic patients",
+    "Pertussis and diphtheria",
+    "Chlamydia and other atypical infections, including in pregnancy",
+    "Neonatal conjunctivitis prophylaxis (eye ointment)",
+    "Acne (topical)",
+    "Off-label gastroparesis and before endoscopy for upper GI bleeding (prokinetic)"
+  ],
+  "history": [
+    {
+      "year": 1949,
+      "title": "Soil sample",
+      "detail": "Filipino scientist Abelardo Aguilar sends soil samples to Eli Lilly."
+    },
+    {
+      "year": 1952,
+      "title": "Launch",
+      "detail": "Eli Lilly introduces erythromycin as Ilosone, named after the Iloilo region."
+    },
+    {
+      "year": 1984,
+      "title": "Motilin agonism",
+      "detail": "Erythromycin is shown to act as a motilin receptor agonist, explaining its gastrointestinal effects."
+    },
+    {
+      "year": 1999,
+      "title": "Pyloric stenosis signal",
+      "detail": "A US outbreak investigation links erythromycin given to young infants during pertussis prophylaxis with infantile hypertrophic pyloric stenosis."
+    },
+    {
+      "year": 2004,
+      "title": "Cardiac risk study",
+      "detail": "An NEJM cohort study links oral erythromycin, especially with CYP3A inhibitors, to increased sudden cardiac death."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.5–2 hours",
+    "bioavailability": "variable, about 15–45% depending on salt and formulation (acid-labile)",
+    "metabolism": "hepatic CYP3A4 (N-demethylation); potent CYP3A4 inhibitor",
+    "excretion": "mainly biliary"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Abdominal cramps, nausea, vomiting and diarrhoea (motilin effect)",
+      "Rash"
+    ],
+    "serious": [
+      "QT prolongation and torsades de pointes",
+      "Cholestatic hepatitis (especially estolate salt)",
+      "Infantile hypertrophic pyloric stenosis in young infants",
+      "Dangerous interactions via CYP3A4 inhibition (e.g. statins, some antiarrhythmics)",
+      "Transient hearing loss at high doses"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ilosone, Lilly's original brand, was named after Iloilo province in the Philippines, where the producing organism was found."
+  ],
+  "related": [
+    "azithromycin",
+    "clarithromycin",
+    "clindamycin",
+    "metoclopramide",
+    "domperidone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Erythromycin",
+      "url": "https://en.wikipedia.org/wiki/Erythromycin"
+    },
+    {
+      "title": "DailyMed: erythromycin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=erythromycin"
+    }
+  ],
+  "stage": "written"
 }

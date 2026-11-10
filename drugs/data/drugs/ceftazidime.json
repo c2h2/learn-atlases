@@ -1,36 +1,118 @@
 {
   "slug": "ceftazidime",
   "name": "Ceftazidime",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GR 20263"
+  ],
+  "brands": [
+    "Fortum",
+    "Fortaz",
+    "Tazicef"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Third-generation cephalosporin (anti-pseudomonal)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im"
+  ],
+  "route_note": "IV or IM injection every 8 hours; also combined with avibactam.",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Glaxo",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": null,
+    "by": "Glaxo",
+    "note": "Developed around 1980; a carboxypropyl-oxyimino side chain and pyridinium group give strong activity against Pseudomonas aeruginosa."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (hospital)",
+  "tagline": "Anti-pseudomonal cephalosporin used for melioidosis, neutropenic fever and HAP",
+  "summary": "Ceftazidime is a third-generation cephalosporin with strong activity against Pseudomonas aeruginosa but weak Gram-positive activity. It is used for serious hospital infections, febrile neutropenia and melioidosis, and is the partner drug in ceftazidime-avibactam.",
+  "mechanism": [
+    "Ceftazidime binds primarily PBP3 of Gram-negative bacilli, blocking septum formation and cell-wall synthesis, which leads to filamentation and lysis.",
+    "It is stable to many plasmid beta-lactamases but is hydrolysed by ESBLs, derepressed AmpC and carbapenemases; adding avibactam restores activity against many class A, C and some class D enzymes."
+  ],
+  "uses": [
+    "Hospital-acquired pneumonia and Pseudomonas infections",
+    "Febrile neutropenia",
+    "Melioidosis (Burkholderia pseudomallei) intensive-phase therapy",
+    "Complicated urinary tract infections",
+    "Bacterial meningitis due to Pseudomonas"
+  ],
+  "history": [
+    {
+      "year": 1983,
+      "title": "Introduction",
+      "detail": "Ceftazidime enters clinical use in the early 1980s (Fortum/Fortaz)."
+    },
+    {
+      "year": 1989,
+      "title": "Melioidosis trial",
+      "detail": "A Thai randomised trial shows ceftazidime halves mortality of severe melioidosis compared with conventional therapy."
+    },
+    {
+      "year": 2015,
+      "title": "Avibactam partner",
+      "detail": "The FDA approves ceftazidime-avibactam (Avycaz)."
+    },
+    {
+      "year": 2016,
+      "title": "EU approval of combination",
+      "detail": "Ceftazidime-avibactam (Zavicefta) is authorised in the European Union."
+    },
+    {
+      "year": 2017,
+      "title": "WHO AWaRe classification",
+      "detail": "The WHO Essential Medicines List begins grouping antibiotics into Access, Watch and Reserve categories; ceftazidime is placed in the Watch group."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.6–2 hours",
+    "bioavailability": "IM about 90%",
+    "metabolism": "not metabolised",
+    "excretion": "renal, by glomerular filtration"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Phlebitis and injection-site reactions",
+      "Diarrhoea",
+      "Rash",
+      "Eosinophilia"
+    ],
+    "serious": [
+      "Anaphylaxis",
+      "Neurotoxicity (encephalopathy, seizures) with accumulation in renal impairment",
+      "Clostridioides difficile infection"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ceftazidime is one of the few cephalosporins recommended for intensive-phase treatment of melioidosis.",
+    "It is classified in the WHO 'Watch' antibiotic group."
+  ],
+  "related": [
+    "ceftazidime-avibactam",
+    "cefepime",
+    "ceftriaxone",
+    "meropenem",
+    "piperacillin-tazobactam"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ceftazidime",
+      "url": "https://en.wikipedia.org/wiki/Ceftazidime"
+    },
+    {
+      "title": "DailyMed: ceftazidime labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ceftazidime"
+    }
+  ],
+  "stage": "written"
 }

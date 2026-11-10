@@ -1,36 +1,142 @@
 {
   "slug": "rifampicin",
   "name": "Rifampicin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Rifampin",
+    "Rifaldazine",
+    "Rifamycin AMP"
+  ],
+  "brands": [
+    "Rifadin",
+    "Rimactane",
+    "Rifinah",
+    "Rifater"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Rifamycin antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral capsules on an empty stomach, alone or in fixed-dose TB combinations; IV formulation available.",
+  "targets": [
+    "Bacterial DNA-dependent RNA polymerase beta subunit (rpoB)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Gruppo Lepetit (with Ciba)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1968,
+    "agency": null,
+    "country": "Italy",
+    "brand": "Rifadin"
+  },
+  "discovery": {
+    "year": 1965,
+    "by": "Piero Sensi, Maria Teresa Timbal and colleagues (Lepetit)",
+    "note": "A semi-synthetic derivative of rifamycin SV; the rifamycins were found in 1957 in Amycolatopsis rifamycinica (then Streptomyces mediterranei) from a soil sample near Saint-Raphaël, France."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Cornerstone of tuberculosis and leprosy treatment and a potent enzyme inducer",
+  "summary": "Rifampicin is a semi-synthetic rifamycin developed by Lepetit in the 1960s. Its sterilising activity made six-month short-course tuberculosis treatment possible, and it is also central to leprosy treatment, staphylococcal biofilm infections and meningococcal prophylaxis. It is one of the most powerful inducers of drug-metabolising enzymes.",
+  "mechanism": [
+    "Rifampicin binds the beta subunit of bacterial DNA-dependent RNA polymerase in a pocket next to the active site, physically blocking the elongating RNA after two or three nucleotides and so inhibiting transcription; it does not affect the mammalian enzyme.",
+    "Resistance in M. tuberculosis arises mostly from mutations in an 81-bp 'rifampicin resistance-determining region' of rpoB, detected by rapid molecular tests such as Xpert MTB/RIF. Rifampicin activates the nuclear receptor PXR, strongly inducing CYP3A4, other CYPs, UGTs and P-glycoprotein, which reduces levels of many drugs."
+  ],
+  "uses": [
+    "Tuberculosis (first-line, with isoniazid, pyrazinamide and ethambutol)",
+    "Latent TB infection (alone for 4 months or with isoniazid)",
+    "Leprosy (multidrug therapy)",
+    "Prosthetic joint and other staphylococcal biofilm infections (in combination)",
+    "Prophylaxis for close contacts of meningococcal and Haemophilus influenzae type b disease",
+    "Brucellosis and some nontuberculous mycobacterial infections"
+  ],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Rifamycins discovered",
+      "detail": "Lepetit researchers isolate rifamycins from a soil actinomycete."
+    },
+    {
+      "year": 1965,
+      "title": "Rifampicin synthesised",
+      "detail": "Lepetit chemists produce orally active rifampicin."
+    },
+    {
+      "year": 1968,
+      "title": "Launch",
+      "detail": "Rifampicin is introduced in Italy."
+    },
+    {
+      "year": 1971,
+      "title": "US approval",
+      "detail": "The FDA approves rifampin (Rifadin, Rimactane)."
+    },
+    {
+      "year": 1981,
+      "title": "Leprosy MDT",
+      "detail": "WHO recommends multidrug therapy for leprosy, including rifampicin, dapsone and clofazimine."
+    },
+    {
+      "year": 2010,
+      "title": "Xpert MTB/RIF",
+      "detail": "WHO endorses the Xpert MTB/RIF test that detects TB and rpoB-mediated rifampicin resistance within hours."
+    },
+    {
+      "year": 2020,
+      "title": "Nitrosamine impurity",
+      "detail": "The FDA reports 1-methyl-4-nitrosopiperazine (MNP) impurities in rifampin and allows temporary distribution above the usual limit to avoid shortages."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–5 hours (shortens with auto-induction)",
+    "bioavailability": "about 90–95% fasting; reduced by food",
+    "metabolism": "hepatic deacetylation to active 25-desacetylrifampicin; induces its own metabolism",
+    "excretion": "mainly biliary, with enterohepatic recirculation; partly renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Orange-red discolouration of urine, sweat, tears and contact lenses",
+      "Nausea and abdominal discomfort",
+      "Flu-like syndrome with intermittent dosing"
+    ],
+    "serious": [
+      "Hepatotoxicity, especially with isoniazid and pyrazinamide",
+      "Thrombocytopenia and haemolytic anaemia",
+      "Acute kidney injury (immune-mediated)",
+      "Clinically important interactions reducing levels of antiretrovirals, anticoagulants, hormonal contraceptives, azoles and immunosuppressants"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The name rifamycin was inspired by the 1955 French crime film 'Rififi'.",
+    "Rifampicin resistance is used as a marker for multidrug-resistant tuberculosis because it usually coexists with isoniazid resistance."
+  ],
+  "related": [
+    "isoniazid",
+    "pyrazinamide",
+    "ethambutol",
+    "bedaquiline",
+    "rifaximin",
+    "warfarin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Rifampicin",
+      "url": "https://en.wikipedia.org/wiki/Rifampicin"
+    },
+    {
+      "title": "DailyMed: rifampin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=rifampin"
+    },
+    {
+      "title": "Wikipedia: Rifamycin",
+      "url": "https://en.wikipedia.org/wiki/Rifamycin"
+    }
+  ],
+  "stage": "written"
 }

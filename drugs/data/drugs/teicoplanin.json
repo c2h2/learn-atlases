@@ -1,36 +1,119 @@
 {
   "slug": "teicoplanin",
   "name": "Teicoplanin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Teichomycin A2"
+  ],
+  "brands": [
+    "Targocid"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Glycopeptide antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im"
+  ],
+  "route_note": "IV or IM once daily after loading doses; not approved in the United States.",
+  "targets": [
+    "D-alanyl-D-alanine terminus of peptidoglycan precursors (lipid II)"
+  ],
+  "origin": "natural",
+  "originator": "Gruppo Lepetit",
+  "owner": "Sanofi (and generics)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "discovery": {
+    "year": 1978,
+    "by": "Gruppo Lepetit",
+    "note": "Isolated from the actinomycete Actinoplanes teichomyceticus; a lipoglycopeptide mixture of several components."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (hospital)",
+  "tagline": "Long-acting lipoglycopeptide alternative to vancomycin, used outside the US",
+  "summary": "Teicoplanin is a glycopeptide related to vancomycin, discovered by Lepetit in the 1970s. Its long half-life permits once-daily IV or IM dosing, and it is widely used in Europe for MRSA and other Gram-positive infections and for surgical prophylaxis.",
+  "mechanism": [
+    "Like vancomycin, teicoplanin binds the D-Ala-D-Ala terminus of cell-wall precursors and blocks peptidoglycan polymerisation and cross-linking.",
+    "A fatty-acyl side chain anchors it to the bacterial membrane and increases plasma protein binding, prolonging its half-life. VanB-type enterococci often remain teicoplanin-susceptible because teicoplanin does not induce vanB expression, whereas VanA strains are resistant."
+  ],
+  "uses": [
+    "Serious Gram-positive infections including MRSA (bacteraemia, bone and joint, skin infections)",
+    "Endocarditis",
+    "Surgical prophylaxis in beta-lactam-allergic patients or high MRSA risk",
+    "Oral use for Clostridioides difficile infection in some countries"
+  ],
+  "history": [
+    {
+      "year": 1958,
+      "title": "Glycopeptide precedent",
+      "detail": "Vancomycin, the first glycopeptide, is approved in the US."
+    },
+    {
+      "year": 1978,
+      "title": "Discovery",
+      "detail": "Lepetit researchers in Italy describe teichomycin from Actinoplanes teichomyceticus."
+    },
+    {
+      "year": 1986,
+      "title": "VRE emerges",
+      "detail": "Vancomycin-resistant enterococci appear in Europe; VanA strains are also teicoplanin-resistant."
+    },
+    {
+      "year": 1988,
+      "title": "Clinical launch",
+      "detail": "Teicoplanin (Targocid) enters clinical use in Europe in the late 1980s."
+    },
+    {
+      "year": 1995,
+      "title": "Ownership",
+      "detail": "Hoechst acquires Marion Merrell Dow, owner of Lepetit, bringing Targocid into Hoechst Marion Roussel (later Aventis)."
+    },
+    {
+      "year": 2004,
+      "title": "Sanofi-Aventis",
+      "detail": "Aventis merges with Sanofi, which continues to market Targocid."
+    }
+  ],
+  "pk": {
+    "half_life": "very long, about 70–100 hours or more",
+    "bioavailability": "IM about 90%; negligible orally",
+    "metabolism": "minimal",
+    "excretion": "renal, unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Rash and pruritus",
+      "Fever",
+      "Injection-site reactions",
+      "Raised liver enzymes"
+    ],
+    "serious": [
+      "Thrombocytopenia (especially at high levels)",
+      "Nephrotoxicity (less than vancomycin)",
+      "Ototoxicity",
+      "DRESS and other severe skin reactions",
+      "Anaphylaxis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Teicoplanin is not approved by the US FDA despite decades of use elsewhere."
+  ],
+  "related": [
+    "vancomycin",
+    "daptomycin",
+    "linezolid"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Teicoplanin",
+      "url": "https://en.wikipedia.org/wiki/Teicoplanin"
+    },
+    {
+      "title": "UK electronic Medicines Compendium: teicoplanin",
+      "url": "https://www.medicines.org.uk/emc/search?q=teicoplanin"
+    }
+  ],
+  "stage": "written"
 }

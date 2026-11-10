@@ -1,36 +1,127 @@
 {
   "slug": "gentamicin",
   "name": "Gentamicin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Gentamicin sulfate",
+    "Gentamycin"
+  ],
+  "brands": [
+    "Garamycin",
+    "Cidomycin",
+    "Genticin"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Aminoglycoside antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im",
+    "topical",
+    "ophthalmic"
+  ],
+  "route_note": "IV or IM, typically as once-daily extended-interval dosing with level monitoring; also eye/ear drops and topical cream.",
+  "targets": [
+    "16S rRNA of the 30S ribosomal subunit (A site)"
+  ],
+  "origin": "natural",
+  "originator": "Schering Corporation",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "discovery": {
+    "year": 1963,
+    "by": "Marvin Weinstein, Gerald Wagman and George Luedemann (Schering Corporation)",
+    "note": "Isolated from the actinomycete Micromonospora purpurea; the '-micin' spelling reflects its Micromonospora origin."
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Inexpensive aminoglycoside for Gram-negative sepsis and synergy in endocarditis",
+  "summary": "Gentamicin is an aminoglycoside antibiotic produced by Micromonospora purpurea and discovered at Schering in 1963. It is rapidly bactericidal against aerobic Gram-negative bacteria and widely used for sepsis, neonatal infections and, in combination, for some Gram-positive endocarditis, with toxicity limiting its use.",
+  "mechanism": [
+    "Aminoglycosides are polycationic molecules that cross the Gram-negative outer membrane by self-promoted uptake and enter the cytoplasm by an oxygen-dependent transport process, which is why they are inactive against anaerobes. Inside, they bind the decoding A site of 16S rRNA in the 30S subunit, causing misreading of mRNA and production of aberrant proteins that damage the membrane, accelerating uptake; killing is rapid and concentration-dependent.",
+    "Against streptococci and enterococci it acts synergistically with cell-wall-active agents such as ampicillin, which increase its uptake. Resistance is mostly due to aminoglycoside-modifying enzymes (acetyltransferases, phosphotransferases, nucleotidyltransferases) and 16S rRNA methyltransferases."
+  ],
+  "uses": [
+    "Gram-negative sepsis, pyelonephritis and complicated urinary infections",
+    "Neonatal sepsis (with benzylpenicillin or ampicillin)",
+    "Synergistic therapy of streptococcal and enterococcal endocarditis",
+    "Plague and tularaemia",
+    "Pelvic inflammatory disease (with clindamycin)",
+    "Topical eye and skin infections"
+  ],
+  "history": [
+    {
+      "year": 1963,
+      "title": "Discovery",
+      "detail": "Schering scientists report gentamicin from Micromonospora purpurea."
+    },
+    {
+      "year": 1964,
+      "title": "Clinical introduction",
+      "detail": "Gentamicin enters clinical use in the mid-1960s and becomes a mainstay against Pseudomonas and Enterobacterales."
+    },
+    {
+      "year": 1993,
+      "title": "Mitochondrial deafness gene",
+      "detail": "The mitochondrial MT-RNR1 m.1555A>G variant is identified as a cause of aminoglycoside-induced deafness."
+    },
+    {
+      "year": 1995,
+      "title": "Once-daily dosing",
+      "detail": "Extended-interval (once-daily) aminoglycoside dosing is widely adopted after studies show equal efficacy with less toxicity."
+    },
+    {
+      "year": 2023,
+      "title": "Point-of-care genetic test",
+      "detail": "NICE recommends rapid MT-RNR1 genotyping for babies who may need gentamicin in neonatal intensive care."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–3 hours with normal renal function (much longer in neonates and renal impairment)",
+    "bioavailability": "negligible orally",
+    "metabolism": "not metabolised",
+    "excretion": "renal, by glomerular filtration"
+  },
+  "safety": {
+    "common": [
+      "Raised serum creatinine",
+      "Nausea",
+      "Rash"
+    ],
+    "serious": [
+      "Nephrotoxicity (acute tubular necrosis), usually reversible",
+      "Ototoxicity (cochlear and vestibular), often irreversible",
+      "Neuromuscular blockade and respiratory paralysis",
+      "Hypomagnesaemia"
+    ],
+    "boxed_warning": "US labels warn of potential nephrotoxicity, ototoxicity and neurotoxicity; monitor serum concentrations and renal function and avoid other nephrotoxic or ototoxic drugs."
+  },
+  "facts": [
+    "People carrying the MT-RNR1 m.1555A>G variant can become permanently deaf after a single aminoglycoside dose.",
+    "Gentamicin is a mixture of related components (C1, C1a, C2, C2a)."
+  ],
+  "related": [
+    "amikacin",
+    "tobramycin",
+    "streptomycin",
+    "ampicillin",
+    "benzylpenicillin",
+    "vancomycin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Gentamicin",
+      "url": "https://en.wikipedia.org/wiki/Gentamicin"
+    },
+    {
+      "title": "DailyMed: gentamicin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=gentamicin"
+    },
+    {
+      "title": "NICE DG51: Genedrive MT-RNR1 ID kit",
+      "url": "https://www.nice.org.uk/guidance/dg51"
+    }
+  ],
+  "stage": "written"
 }

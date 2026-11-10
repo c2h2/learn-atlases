@@ -1,36 +1,121 @@
 {
   "slug": "ampicillin",
   "name": "Ampicillin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Aminobenzylpenicillin"
+  ],
+  "brands": [
+    "Penbritin",
+    "Principen",
+    "Omnipen"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Aminopenicillin (beta-lactam antibiotic)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im",
+    "oral"
+  ],
+  "route_note": "Mainly IV/IM in hospital; oral use largely replaced by amoxicillin. Also combined with sulbactam (Unasyn).",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Beecham Research Laboratories",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1961,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": "Penbritin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Beecham Research Laboratories",
+    "note": "Made by acylating 6-aminopenicillanic acid with a D-phenylglycine side chain."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first broad-spectrum penicillin, still key for neonatal sepsis and listeria",
+  "summary": "Ampicillin, launched by Beecham in 1961, was the first penicillin active against a range of Gram-negative bacteria. It remains an important injectable agent, notably with gentamicin for neonatal sepsis and for Listeria and enterococcal infections.",
+  "mechanism": [
+    "Ampicillin binds penicillin-binding proteins and inhibits the final transpeptidation step of peptidoglycan synthesis, leading to cell lysis.",
+    "The amino group in its side chain improves passage through Gram-negative outer-membrane porins, but the drug is hydrolysed by common plasmid beta-lactamases such as TEM-1, which spread rapidly among Enterobacterales and Haemophilus from the 1960s–70s."
+  ],
+  "uses": [
+    "Neonatal sepsis and meningitis (with an aminoglycoside or cefotaxime)",
+    "Listeria monocytogenes infections",
+    "Enterococcal infections including endocarditis (with gentamicin or ceftriaxone)",
+    "Susceptible respiratory, urinary and gastrointestinal infections"
+  ],
+  "history": [
+    {
+      "year": 1959,
+      "title": "6-APA",
+      "detail": "Beecham isolates 6-aminopenicillanic acid, enabling semi-synthetic penicillins."
+    },
+    {
+      "year": 1961,
+      "title": "Launch",
+      "detail": "Ampicillin is introduced as Penbritin, the first broad-spectrum penicillin."
+    },
+    {
+      "year": 1965,
+      "title": "TEM-1 beta-lactamase",
+      "detail": "The plasmid-mediated TEM-1 beta-lactamase is described in an E. coli isolate from Greece, foreshadowing widespread ampicillin resistance."
+    },
+    {
+      "year": 1972,
+      "title": "Amoxicillin",
+      "detail": "Beecham launches amoxicillin, which largely replaces oral ampicillin."
+    },
+    {
+      "year": 1986,
+      "title": "Ampicillin-sulbactam",
+      "detail": "The FDA approves ampicillin-sulbactam (Unasyn)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 hour",
+    "bioavailability": "about 40% orally (reduced by food)",
+    "metabolism": "limited",
+    "excretion": "renal, unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Rash (very common in infectious mononucleosis)",
+      "Nausea"
+    ],
+    "serious": [
+      "Anaphylaxis",
+      "Severe cutaneous adverse reactions",
+      "Clostridioides difficile-associated diarrhoea",
+      "Interstitial nephritis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The TEM beta-lactamase is named after Temoniera, the Greek patient from whom the first resistant isolate was obtained."
+  ],
+  "related": [
+    "amoxicillin",
+    "benzylpenicillin",
+    "gentamicin",
+    "amoxicillin-clavulanate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ampicillin",
+      "url": "https://en.wikipedia.org/wiki/Ampicillin"
+    },
+    {
+      "title": "DailyMed: ampicillin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ampicillin"
+    }
+  ],
+  "stage": "written"
 }

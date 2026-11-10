@@ -1,36 +1,127 @@
 {
   "slug": "amoxicillin-clavulanate",
-  "name": "Amoxicillin clavulanate",
-  "aliases": [],
-  "brands": [],
+  "name": "Amoxicillin/clavulanic acid",
+  "aliases": [
+    "Co-amoxiclav",
+    "Amoxicillin-clavulanate potassium"
+  ],
+  "brands": [
+    "Augmentin",
+    "Clavulin"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Aminopenicillin with beta-lactamase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral tablets and suspension in several amoxicillin:clavulanate ratios; IV formulation in many countries outside the US.",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)",
+    "Class A serine beta-lactamases (inhibited by clavulanate)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Beecham Pharmaceuticals",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1981,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": "Augmentin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Beecham Research Laboratories",
+    "note": "Clavulanic acid was isolated from Streptomyces clavuligerus in the 1970s and found to be a potent beta-lactamase inhibitor."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Amoxicillin protected by clavulanic acid, the first clinical beta-lactamase inhibitor",
+  "summary": "Co-amoxiclav combines amoxicillin with clavulanic acid, a beta-lactamase inhibitor from Streptomyces clavuligerus. The combination restores activity against many beta-lactamase-producing strains of Staphylococcus aureus, Haemophilus, Moraxella, Enterobacterales and anaerobes.",
+  "mechanism": [
+    "Amoxicillin inhibits bacterial cell-wall synthesis by acylating penicillin-binding proteins.",
+    "Clavulanic acid has little intrinsic antibacterial activity but acts as a 'suicide' inhibitor: it is recognised by many class A beta-lactamases (such as TEM-1 and staphylococcal penicillinase), forms a covalent acyl-enzyme and irreversibly inactivates them, sparing amoxicillin. It does not inhibit AmpC, carbapenemases or metallo-beta-lactamases."
+  ],
+  "uses": [
+    "Bite wounds, skin and soft-tissue infections",
+    "Sinusitis, otitis media and lower respiratory tract infections",
+    "Urinary tract infections",
+    "Intra-abdominal and dental infections (in some regions)"
+  ],
+  "history": [
+    {
+      "year": 1976,
+      "title": "Clavulanic acid reported",
+      "detail": "Beecham scientists describe clavulanic acid as a beta-lactamase inhibitor produced by Streptomyces clavuligerus."
+    },
+    {
+      "year": 1981,
+      "title": "UK launch",
+      "detail": "Augmentin is launched in the United Kingdom by Beecham."
+    },
+    {
+      "year": 1984,
+      "title": "US approval",
+      "detail": "The FDA approves Augmentin."
+    },
+    {
+      "year": 1989,
+      "title": "SmithKline Beecham",
+      "detail": "Beecham merges with SmithKline Beckman; Augmentin later passes to GlaxoSmithKline (2000)."
+    },
+    {
+      "year": 2002,
+      "title": "Generics",
+      "detail": "Generic co-amoxiclav becomes widely available in the US after patent litigation."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 hour for each component",
+    "bioavailability": "amoxicillin about 70–90%, clavulanate variable (~60%); taken with food",
+    "metabolism": "clavulanate extensively metabolised",
+    "excretion": "renal (amoxicillin mainly unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea (more than with amoxicillin alone)",
+      "Nausea and vomiting",
+      "Vulvovaginal candidiasis",
+      "Rash"
+    ],
+    "serious": [
+      "Cholestatic hepatitis, sometimes delayed until after the course",
+      "Anaphylaxis",
+      "Severe cutaneous reactions",
+      "Clostridioides difficile-associated diarrhoea"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Co-amoxiclav is one of the most common causes of drug-induced liver injury in Western case series; the risk rises with age and repeated courses.",
+    "Clavulanic acid was the first beta-lactamase inhibitor brought into clinical use."
+  ],
+  "related": [
+    "amoxicillin",
+    "piperacillin-tazobactam",
+    "ceftazidime-avibactam",
+    "flucloxacillin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Amoxicillin/clavulanic acid",
+      "url": "https://en.wikipedia.org/wiki/Amoxicillin/clavulanic_acid"
+    },
+    {
+      "title": "Wikipedia: Clavulanic acid",
+      "url": "https://en.wikipedia.org/wiki/Clavulanic_acid"
+    },
+    {
+      "title": "DailyMed: amoxicillin clavulanate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amoxicillin+clavulanate"
+    }
+  ],
+  "stage": "written"
 }

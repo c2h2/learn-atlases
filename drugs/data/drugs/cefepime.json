@@ -1,36 +1,115 @@
 {
   "slug": "cefepime",
   "name": "Cefepime",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BMY-28142"
+  ],
+  "brands": [
+    "Maxipime"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Fourth-generation cephalosporin",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im"
+  ],
+  "route_note": "IV infusion (or IM) every 8–12 hours; dose reduced in renal impairment. Also combined with enmetazobactam (Exblifep).",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Bristol-Myers Squibb",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "discovery": {
+    "year": null,
+    "by": "Bristol-Myers Squibb (with Bristol-Banyu)",
+    "note": "A zwitterionic cephalosporin whose N-methylpyrrolidinium group speeds penetration of Gram-negative outer membranes."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (hospital)",
+  "tagline": "Fourth-generation cephalosporin with anti-pseudomonal and AmpC-stable activity",
+  "summary": "Cefepime is a broad-spectrum injectable cephalosporin active against Pseudomonas aeruginosa, Enterobacterales (including many AmpC producers) and methicillin-susceptible staphylococci and streptococci. It is used for febrile neutropenia and serious hospital infections.",
+  "mechanism": [
+    "Cefepime inhibits penicillin-binding proteins, blocking peptidoglycan cross-linking and causing lysis.",
+    "As a zwitterion it crosses Gram-negative porins rapidly and has low affinity for chromosomal AmpC beta-lactamases, so it retains activity against many AmpC-derepressed Enterobacter and Citrobacter strains. It is hydrolysed by ESBLs and carbapenemases unless paired with an inhibitor such as enmetazobactam."
+  ],
+  "uses": [
+    "Febrile neutropenia (empirical therapy)",
+    "Hospital-acquired and ventilator-associated pneumonia",
+    "Complicated urinary tract and intra-abdominal infections (with metronidazole)",
+    "Skin and soft-tissue infections",
+    "Infections caused by AmpC-producing Enterobacterales"
+  ],
+  "history": [
+    {
+      "year": 1996,
+      "title": "US approval",
+      "detail": "The FDA approves cefepime (Maxipime)."
+    },
+    {
+      "year": 2007,
+      "title": "Mortality meta-analysis",
+      "detail": "A meta-analysis in Lancet Infectious Diseases suggests higher all-cause mortality with cefepime; a subsequent FDA review (2009) does not confirm an increased risk."
+    },
+    {
+      "year": 2012,
+      "title": "Neurotoxicity warning",
+      "detail": "The FDA warns of non-convulsive status epilepticus with cefepime, especially when doses are not adjusted in renal impairment."
+    },
+    {
+      "year": 2023,
+      "title": "ACORN trial",
+      "detail": "In a pragmatic US trial, cefepime did not cause more acute kidney injury than piperacillin/tazobactam but was associated with more neurological dysfunction."
+    },
+    {
+      "year": 2024,
+      "title": "Cefepime-enmetazobactam",
+      "detail": "The FDA approves cefepime-enmetazobactam (Exblifep) for complicated urinary tract infections."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2 hours",
+    "bioavailability": "IM about 100%",
+    "metabolism": "minimal",
+    "excretion": "renal, mostly unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Rash",
+      "Diarrhoea",
+      "Injection-site reactions",
+      "Positive Coombs test"
+    ],
+    "serious": [
+      "Encephalopathy, myoclonus, seizures and non-convulsive status epilepticus (especially in renal impairment)",
+      "Anaphylaxis",
+      "Clostridioides difficile infection"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Cefepime neurotoxicity is strongly associated with failure to adjust the dose to kidney function."
+  ],
+  "related": [
+    "ceftazidime",
+    "ceftriaxone",
+    "piperacillin-tazobactam",
+    "meropenem",
+    "vancomycin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Cefepime",
+      "url": "https://en.wikipedia.org/wiki/Cefepime"
+    },
+    {
+      "title": "DailyMed: cefepime labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=cefepime"
+    }
+  ],
+  "stage": "written"
 }

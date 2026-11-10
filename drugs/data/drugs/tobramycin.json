@@ -1,36 +1,127 @@
 {
   "slug": "tobramycin",
   "name": "Tobramycin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Nebramycin factor 6",
+    "Tobramycin sulfate"
+  ],
+  "brands": [
+    "Nebcin",
+    "TOBI",
+    "TOBI Podhaler",
+    "Bethkis",
+    "Tobrex"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Aminoglycoside antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im",
+    "inhaled",
+    "ophthalmic"
+  ],
+  "route_note": "IV/IM with level monitoring; nebulised solution or dry-powder inhaler for cystic fibrosis; eye drops and ointment.",
+  "targets": [
+    "16S rRNA of the 30S ribosomal subunit (A site)"
+  ],
+  "origin": "natural",
+  "originator": "Eli Lilly and Company",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly and Company",
+    "note": "A component of the nebramycin complex produced by Streptomyces tenebrarius."
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Aminoglycoside favoured for Pseudomonas, notably inhaled in cystic fibrosis",
+  "summary": "Tobramycin is an aminoglycoside from Streptomyces tenebrarius with slightly greater intrinsic activity against Pseudomonas aeruginosa than gentamicin. Inhaled tobramycin is a standard suppressive therapy for chronic Pseudomonas infection in cystic fibrosis, and eye drops are widely used for bacterial conjunctivitis.",
+  "mechanism": [
+    "Aminoglycosides are polycationic molecules that cross the Gram-negative outer membrane by self-promoted uptake and enter the cytoplasm by an oxygen-dependent transport process, which is why they are inactive against anaerobes. Inside, they bind the decoding A site of 16S rRNA in the 30S subunit, causing misreading of mRNA and production of aberrant proteins that damage the membrane, accelerating uptake; killing is rapid and concentration-dependent.",
+    "Inhaled formulations deliver very high airway concentrations that exceed MICs of most P. aeruginosa isolates while keeping systemic exposure low."
+  ],
+  "uses": [
+    "Chronic Pseudomonas aeruginosa lung infection in cystic fibrosis (inhaled)",
+    "Serious Gram-negative infections including Pseudomonas (IV, usually with a beta-lactam)",
+    "Bacterial conjunctivitis and other external eye infections (ophthalmic)",
+    "Combined with dexamethasone in eye drops for inflammatory eye conditions with infection risk"
+  ],
+  "history": [
+    {
+      "year": 1963,
+      "title": "Gentamicin precedent",
+      "detail": "Gentamicin is discovered at Schering, establishing aminoglycosides as anti-pseudomonal agents."
+    },
+    {
+      "year": 1967,
+      "title": "Nebramycin complex",
+      "detail": "Lilly scientists describe the nebramycin complex from Streptomyces tenebrarius, from which tobramycin was isolated."
+    },
+    {
+      "year": 1975,
+      "title": "Clinical introduction",
+      "detail": "Injectable tobramycin (Nebcin) enters US clinical use in the mid-1970s."
+    },
+    {
+      "year": 1997,
+      "title": "TOBI",
+      "detail": "The FDA approves preservative-free tobramycin inhalation solution (TOBI) for cystic fibrosis, based on trials showing improved lung function."
+    },
+    {
+      "year": 2012,
+      "title": "Bethkis",
+      "detail": "A further tobramycin inhalation solution (Bethkis) is approved in the US for cystic fibrosis."
+    },
+    {
+      "year": 2013,
+      "title": "Dry-powder inhaler",
+      "detail": "The FDA approves TOBI Podhaler (Novartis)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2 hours (IV)",
+    "bioavailability": "negligible orally; low systemic absorption after inhalation",
+    "metabolism": "not metabolised",
+    "excretion": "renal, unchanged"
+  },
+  "safety": {
+    "common": [
+      "Raised serum creatinine",
+      "Nausea",
+      "Rash"
+    ],
+    "serious": [
+      "Nephrotoxicity (acute tubular necrosis), usually reversible",
+      "Ototoxicity (cochlear and vestibular), often irreversible",
+      "Neuromuscular blockade and respiratory paralysis",
+      "Hypomagnesaemia"
+    ],
+    "boxed_warning": "Parenteral labels warn of nephrotoxicity, ototoxicity and neurotoxicity with potential for neuromuscular blockade; inhaled and ophthalmic products do not carry this boxed warning."
+  },
+  "facts": [
+    "Tobramycin eye drops (Tobrex) and tobramycin-dexamethasone (Tobradex) are among the most prescribed ophthalmic antibiotics."
+  ],
+  "related": [
+    "gentamicin",
+    "amikacin",
+    "aztreonam",
+    "colistin",
+    "ivacaftor",
+    "elexacaftor-tezacaftor-ivacaftor"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tobramycin",
+      "url": "https://en.wikipedia.org/wiki/Tobramycin"
+    },
+    {
+      "title": "DailyMed: tobramycin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tobramycin"
+    }
+  ],
+  "stage": "written"
 }

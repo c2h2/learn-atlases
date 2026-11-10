@@ -1,36 +1,129 @@
 {
   "slug": "ceftriaxone",
   "name": "Ceftriaxone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Ro 13-9904"
+  ],
+  "brands": [
+    "Rocephin"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Third-generation cephalosporin",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im"
+  ],
+  "route_note": "Once-daily IV or IM injection; long half-life allows outpatient parenteral therapy.",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Hoffmann-La Roche",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1984,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Rocephin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Hoffmann-La Roche",
+    "note": "Developed in the late 1970s; an aminothiazolyl methoxyimino side chain and a triazine-thiol group give broad Gram-negative activity and a long half-life."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Once-daily third-generation cephalosporin for meningitis, pneumonia and gonorrhoea",
+  "summary": "Ceftriaxone is a broad-spectrum, once-daily injectable cephalosporin introduced by Roche in the early 1980s. It is a cornerstone treatment for bacterial meningitis, severe community-acquired pneumonia, gonorrhoea and many serious infections, and is one of the most used hospital antibiotics worldwide.",
+  "mechanism": [
+    "Ceftriaxone binds penicillin-binding proteins (notably PBP3 in Gram-negative rods and PBP1/2 in streptococci), inhibiting cell-wall synthesis and causing bactericidal lysis.",
+    "Its oxyimino side chain makes it stable to many common beta-lactamases, but it is hydrolysed by extended-spectrum beta-lactamases (ESBLs), AmpC enzymes and carbapenemases. It is highly protein-bound with partly biliary elimination, which explains its long half-life and biliary side effects."
+  ],
+  "uses": [
+    "Bacterial meningitis",
+    "Community-acquired pneumonia and sepsis",
+    "Gonorrhoea (single IM dose)",
+    "Lyme neuroborreliosis and carditis",
+    "Complicated urinary tract, intra-abdominal (with metronidazole), bone and joint infections",
+    "Typhoid fever and surgical prophylaxis"
+  ],
+  "history": [
+    {
+      "year": 1978,
+      "title": "Discovery",
+      "detail": "Roche scientists synthesise ceftriaxone."
+    },
+    {
+      "year": 1984,
+      "title": "US approval",
+      "detail": "The FDA approves Rocephin."
+    },
+    {
+      "year": 2005,
+      "title": "Generics",
+      "detail": "Patent expiry leads to many generic versions."
+    },
+    {
+      "year": 2007,
+      "title": "Calcium interaction warning",
+      "detail": "FDA warns about fatal ceftriaxone–calcium precipitates in neonates' lungs and kidneys."
+    },
+    {
+      "year": 2018,
+      "title": "Gonorrhoea resistance",
+      "detail": "The first reported cases of gonorrhoea with high-level azithromycin and ceftriaxone resistance (UK, Australia) raise alarm."
+    },
+    {
+      "year": 2020,
+      "title": "Single-agent gonorrhoea therapy",
+      "detail": "CDC guidance moves to a single 500 mg IM dose of ceftriaxone for uncomplicated gonorrhoea."
+    }
+  ],
+  "pk": {
+    "half_life": "about 6–9 hours",
+    "bioavailability": "IM about 100%",
+    "metabolism": "not significantly metabolised",
+    "excretion": "about 33–67% renal, remainder biliary"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Injection-site pain",
+      "Rash",
+      "Eosinophilia"
+    ],
+    "serious": [
+      "Anaphylaxis",
+      "Biliary pseudolithiasis (sludge)",
+      "Ceftriaxone–calcium precipitation in neonates",
+      "Immune haemolytic anaemia",
+      "Clostridioides difficile infection"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ceftriaxone is contraindicated in hyperbilirubinaemic neonates because it displaces bilirubin from albumin.",
+    "It is classified in the WHO 'Watch' antibiotic group."
+  ],
+  "related": [
+    "cefuroxime",
+    "ceftazidime",
+    "cefepime",
+    "azithromycin",
+    "metronidazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ceftriaxone",
+      "url": "https://en.wikipedia.org/wiki/Ceftriaxone"
+    },
+    {
+      "title": "DailyMed: ceftriaxone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ceftriaxone"
+    }
+  ],
+  "stage": "written"
 }

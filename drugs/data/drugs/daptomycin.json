@@ -1,36 +1,120 @@
 {
   "slug": "daptomycin",
   "name": "Daptomycin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "LY146032"
+  ],
+  "brands": [
+    "Cubicin",
+    "Cubicin RF"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Cyclic lipopeptide antibiotic",
+  "modality": "peptide",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "Once-daily IV injection or infusion; doses are weight-based.",
+  "targets": [
+    "Bacterial cytoplasmic membrane (calcium-dependent, phosphatidylglycerol-rich domains)"
+  ],
+  "origin": "natural",
+  "originator": "Eli Lilly and Company; developed by Cubist Pharmaceuticals",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 2003,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Cubicin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly and Company",
+    "note": "Isolated from Streptomyces roseosporus from a soil sample from Mount Ararat, Turkey; Lilly halted development because of muscle toxicity."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (hospital)",
+  "tagline": "Membrane-active lipopeptide for MRSA bacteraemia and right-sided endocarditis",
+  "summary": "Daptomycin is a cyclic lipopeptide that rapidly kills Gram-positive bacteria, including MRSA and vancomycin-resistant enterococci, by disrupting the cell membrane. It is used for complicated skin infections and S. aureus bacteraemia, but not for pneumonia because lung surfactant inactivates it.",
+  "mechanism": [
+    "In the presence of calcium, daptomycin inserts its lipid tail into the cytoplasmic membrane of Gram-positive bacteria, oligomerises and clusters in fluid, phosphatidylglycerol-rich regions. This displaces membrane-bound cell-wall synthesis enzymes, causes depolarisation and potassium efflux, and leads to rapid cell death without lysis.",
+    "It cannot cross the Gram-negative outer membrane. Pulmonary surfactant sequesters daptomycin, explaining its failure in community-acquired pneumonia trials. Reduced susceptibility arises through mprF and other membrane-charge mutations."
+  ],
+  "uses": [
+    "Complicated skin and skin-structure infections",
+    "Staphylococcus aureus bacteraemia, including right-sided endocarditis",
+    "Off-label: vancomycin-resistant enterococcal infections, osteomyelitis and prosthetic infections"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "Licensing",
+      "detail": "Cubist Pharmaceuticals licenses daptomycin from Eli Lilly and redesigns once-daily dosing to reduce muscle toxicity."
+    },
+    {
+      "year": 2003,
+      "title": "US approval",
+      "detail": "The FDA approves Cubicin for complicated skin and skin-structure infections."
+    },
+    {
+      "year": 2006,
+      "title": "Bacteraemia indication",
+      "detail": "Approval is extended to S. aureus bloodstream infections, including right-sided endocarditis."
+    },
+    {
+      "year": 2010,
+      "title": "Eosinophilic pneumonia warning",
+      "detail": "The FDA warns of eosinophilic pneumonia associated with daptomycin."
+    },
+    {
+      "year": 2015,
+      "title": "Merck acquisition",
+      "detail": "Merck & Co. acquires Cubist."
+    }
+  ],
+  "pk": {
+    "half_life": "about 8–9 hours",
+    "bioavailability": "IV only",
+    "metabolism": "minimal",
+    "excretion": "renal, mostly unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Headache",
+      "Injection-site reactions",
+      "Raised creatine phosphokinase"
+    ],
+    "serious": [
+      "Myopathy and rhabdomyolysis (risk higher with statins)",
+      "Eosinophilic pneumonia",
+      "DRESS",
+      "Peripheral neuropathy",
+      "Clostridioides difficile infection"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Weekly creatine phosphokinase monitoring is recommended during daptomycin therapy.",
+    "Daptomycin was originally found in a soil sample from Mount Ararat."
+  ],
+  "related": [
+    "vancomycin",
+    "linezolid",
+    "ceftaroline",
+    "teicoplanin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Daptomycin",
+      "url": "https://en.wikipedia.org/wiki/Daptomycin"
+    },
+    {
+      "title": "DailyMed: daptomycin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=daptomycin"
+    }
+  ],
+  "stage": "written"
 }

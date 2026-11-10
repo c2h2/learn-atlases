@@ -1,36 +1,129 @@
 {
   "slug": "vancomycin",
   "name": "Vancomycin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Vancomycin hydrochloride"
+  ],
+  "brands": [
+    "Vancocin",
+    "Firvanq"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Glycopeptide antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "oral"
+  ],
+  "route_note": "IV infusion (slowly, to avoid infusion reactions) with therapeutic drug monitoring; oral capsules or solution act only in the gut for C. difficile.",
+  "targets": [
+    "D-alanyl-D-alanine terminus of peptidoglycan precursors (lipid II)"
+  ],
+  "origin": "natural",
+  "originator": "Eli Lilly and Company",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1958,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Vancocin"
+  },
+  "discovery": {
+    "year": 1953,
+    "by": "Edmund Kornfeld (Eli Lilly)",
+    "note": "Isolated from Amycolatopsis orientalis (then Streptomyces orientalis) in a soil sample collected in Borneo by a missionary."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Glycopeptide workhorse against MRSA and, orally, against C. difficile",
+  "summary": "Vancomycin is a glycopeptide antibiotic discovered by Eli Lilly in the 1950s. Once sidelined by toxicity concerns, it became the standard treatment for methicillin-resistant Staphylococcus aureus and other resistant Gram-positive infections, and oral vancomycin treats Clostridioides difficile colitis.",
+  "mechanism": [
+    "Vancomycin binds through five hydrogen bonds to the D-alanyl-D-alanine terminus of lipid II and nascent peptidoglycan, sterically blocking transglycosylation and transpeptidation and thus cell-wall synthesis in Gram-positive bacteria. It is too large to cross the outer membrane of Gram-negative bacteria.",
+    "Enterococci carrying vanA or vanB gene clusters replace the terminal D-Ala with D-lactate, reducing binding about 1000-fold; vanA transfer to S. aureus produces rare vancomycin-resistant S. aureus (VRSA)."
+  ],
+  "uses": [
+    "MRSA infections: bacteraemia, endocarditis, pneumonia, osteomyelitis, skin infections",
+    "Empirical therapy of serious Gram-positive infections and meningitis (with a cephalosporin)",
+    "Infections in patients allergic to beta-lactams",
+    "Clostridioides difficile infection (oral)",
+    "Surgical prophylaxis where MRSA risk is high"
+  ],
+  "history": [
+    {
+      "year": 1953,
+      "title": "Discovery",
+      "detail": "Eli Lilly's E. C. Kornfeld isolates compound 05865 from Bornean soil; it is named after 'vanquish'."
+    },
+    {
+      "year": 1958,
+      "title": "US approval",
+      "detail": "The FDA approves Vancocin; early impure preparations ('Mississippi mud') are associated with toxicity."
+    },
+    {
+      "year": 1986,
+      "title": "VRE",
+      "detail": "Vancomycin-resistant enterococci are reported in Europe (published 1988)."
+    },
+    {
+      "year": 2002,
+      "title": "VRSA",
+      "detail": "The first clinical vancomycin-resistant S. aureus isolate is identified in Michigan, USA."
+    },
+    {
+      "year": 2017,
+      "title": "WHO Watch group",
+      "detail": "Vancomycin is classified as a Watch antibiotic on the WHO Essential Medicines List."
+    },
+    {
+      "year": 2020,
+      "title": "AUC-guided dosing",
+      "detail": "Revised US consensus guidelines (ASHP, IDSA, PIDS, SIDP) recommend AUC-guided rather than trough-only dosing for serious MRSA infection."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4–6 hours with normal renal function",
+    "bioavailability": "negligible orally (acts locally in gut)",
+    "metabolism": "not metabolised",
+    "excretion": "renal, by glomerular filtration"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Vancomycin infusion reaction (flushing, pruritus, formerly 'red man syndrome')",
+      "Phlebitis",
+      "Nausea"
+    ],
+    "serious": [
+      "Acute kidney injury (higher with high troughs and with piperacillin/tazobactam)",
+      "Ototoxicity",
+      "Neutropenia and thrombocytopenia",
+      "DRESS and other severe cutaneous reactions",
+      "Anaphylaxis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Vancomycin infusion reaction is a histamine-release phenomenon linked to infusion rate, not true allergy.",
+    "The 2020 US guideline recommends targeting an AUC/MIC of 400–600 for serious MRSA infections."
+  ],
+  "related": [
+    "teicoplanin",
+    "daptomycin",
+    "linezolid",
+    "fidaxomicin",
+    "metronidazole",
+    "piperacillin-tazobactam"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Vancomycin",
+      "url": "https://en.wikipedia.org/wiki/Vancomycin"
+    },
+    {
+      "title": "DailyMed: vancomycin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=vancomycin"
+    }
+  ],
+  "stage": "written"
 }

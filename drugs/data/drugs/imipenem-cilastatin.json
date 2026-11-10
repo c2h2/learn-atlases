@@ -1,36 +1,126 @@
 {
   "slug": "imipenem-cilastatin",
-  "name": "Imipenem cilastatin",
-  "aliases": [],
-  "brands": [],
+  "name": "Imipenem/cilastatin",
+  "aliases": [
+    "Imipenem",
+    "MK-0787/MK-0791"
+  ],
+  "brands": [
+    "Primaxin",
+    "Tienam"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Carbapenem with dehydropeptidase-I inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every 6–8 hours; also available combined with relebactam (Recarbrio).",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)",
+    "Renal dehydropeptidase-I (DPEP1; cilastatin)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Merck & Co.",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1985,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Primaxin"
+  },
+  "discovery": {
+    "year": 1976,
+    "by": "Merck Research Laboratories",
+    "note": "Thienamycin, the parent carbapenem, was isolated from Streptomyces cattleya; imipenem is its stable N-formimidoyl derivative."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (hospital)",
+  "tagline": "The first carbapenem, paired with cilastatin to stop renal breakdown",
+  "summary": "Imipenem was the first carbapenem antibiotic, derived from thienamycin discovered at Merck. It is co-administered with cilastatin, which blocks its degradation by renal dehydropeptidase-I, and has very broad activity against Gram-positive, Gram-negative and anaerobic bacteria.",
+  "mechanism": [
+    "Imipenem binds penicillin-binding proteins, particularly PBP2, causing rapid loss of cell-wall integrity and lysis. It is stable to most serine beta-lactamases apart from carbapenemases.",
+    "Cilastatin has no antibacterial activity. It inhibits dehydropeptidase-I in the brush border of the proximal tubule, preventing imipenem hydrolysis, raising urinary concentrations and reducing nephrotoxicity of the metabolites."
+  ],
+  "uses": [
+    "Severe mixed aerobic-anaerobic infections (intra-abdominal, gynaecological)",
+    "Hospital-acquired pneumonia",
+    "Complicated urinary tract, bone, joint and skin infections",
+    "Infections due to resistant Enterobacterales and Pseudomonas",
+    "Some nontuberculous mycobacterial infections (e.g. Mycobacterium abscessus)"
+  ],
+  "history": [
+    {
+      "year": 1976,
+      "title": "Thienamycin",
+      "detail": "Merck scientists isolate thienamycin from Streptomyces cattleya; it proves too unstable for use."
+    },
+    {
+      "year": 1985,
+      "title": "US approval",
+      "detail": "The FDA approves imipenem/cilastatin (Primaxin), the first carbapenem."
+    },
+    {
+      "year": 1996,
+      "title": "Meropenem",
+      "detail": "Meropenem, a carbapenem stable to DHP-I and not requiring cilastatin, is approved in the US."
+    },
+    {
+      "year": 2017,
+      "title": "WHO Essential Medicines",
+      "detail": "Imipenem/cilastatin is listed on the WHO EML as a therapeutic alternative to meropenem."
+    },
+    {
+      "year": 2019,
+      "title": "Imipenem-relebactam",
+      "detail": "The FDA approves imipenem/cilastatin/relebactam (Recarbrio) for complicated urinary and intra-abdominal infections."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 hour",
+    "bioavailability": "IV only",
+    "metabolism": "imipenem hydrolysed by DPEP1 without cilastatin",
+    "excretion": "renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea and vomiting (infusion-rate related)",
+      "Diarrhoea",
+      "Phlebitis",
+      "Rash"
+    ],
+    "serious": [
+      "Seizures, particularly with high doses, CNS disease or renal impairment",
+      "Anaphylaxis",
+      "Clostridioides difficile infection",
+      "Reduced valproate levels"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Thienamycin was named after the thioether in its structure and its producer, Streptomyces cattleya."
+  ],
+  "related": [
+    "meropenem",
+    "ertapenem",
+    "piperacillin-tazobactam",
+    "valproate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Imipenem/cilastatin",
+      "url": "https://en.wikipedia.org/wiki/Imipenem/cilastatin"
+    },
+    {
+      "title": "Wikipedia: Thienamycin",
+      "url": "https://en.wikipedia.org/wiki/Thienamycin"
+    },
+    {
+      "title": "DailyMed: imipenem cilastatin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=imipenem+cilastatin"
+    }
+  ],
+  "stage": "written"
 }

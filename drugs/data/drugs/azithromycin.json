@@ -1,36 +1,147 @@
 {
   "slug": "azithromycin",
   "name": "Azithromycin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CP-62,993",
+    "XZ-450"
+  ],
+  "brands": [
+    "Zithromax",
+    "Sumamed",
+    "Azasite",
+    "Zmax"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Azalide (macrolide) antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "ophthalmic"
+  ],
+  "route_note": "Oral tablets or suspension (often 3- or 5-day courses or single dose), IV infusion, and eye drops.",
+  "targets": [
+    "23S rRNA of the 50S ribosomal subunit (nascent peptide exit tunnel)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Pliva (Zagreb)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1988,
+    "agency": null,
+    "country": "Yugoslavia",
+    "brand": "Sumamed"
+  },
+  "discovery": {
+    "year": 1980,
+    "by": "Gabrijela Kobrehel, Gorjana Radobolja-Lazarevski and Zrinka Tamburašev, led by Slobodan Đokić (Pliva)",
+    "note": "Made by inserting a methylated nitrogen into the erythromycin lactone ring, producing a 15-membered azalide with better acid stability and tissue penetration."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Long-acting azalide used for respiratory infections, STIs and mass drug administration",
+  "summary": "Azithromycin is a semi-synthetic azalide discovered at Pliva in Zagreb and licensed to Pfizer as Zithromax. Its long tissue half-life allows short courses, making it one of the world's most widely used antibiotics for respiratory infections, chlamydia, trachoma and enteric infections.",
+  "mechanism": [
+    "Azithromycin binds the 23S rRNA in the peptide exit tunnel of the 50S ribosomal subunit and inhibits translation; it is mainly bacteriostatic, but bactericidal against some organisms at high concentrations.",
+    "The ring nitrogen improves activity against Haemophilus influenzae and some Gram-negative enteric pathogens. Azithromycin accumulates extensively in tissues and phagocytes, which carry it to sites of infection. It also has immunomodulatory effects exploited in cystic fibrosis and bronchiectasis."
+  ],
+  "uses": [
+    "Community-acquired pneumonia and atypical pathogens (Mycoplasma, Chlamydophila, Legionella)",
+    "Acute exacerbations of COPD and sinusitis",
+    "Chlamydia trachomatis and trachoma (mass drug administration)",
+    "Traveller's diarrhoea, Campylobacter and Shigella infections, typhoid",
+    "Mycobacterium avium complex prophylaxis and treatment",
+    "Long-term prophylaxis in cystic fibrosis and bronchiectasis (off-label in some regions)"
+  ],
+  "history": [
+    {
+      "year": 1980,
+      "title": "Discovery",
+      "detail": "Pliva researchers synthesise azithromycin; a patent is filed in 1981."
+    },
+    {
+      "year": 1986,
+      "title": "Pfizer licence",
+      "detail": "Pliva licenses the compound to Pfizer for Western markets."
+    },
+    {
+      "year": 1988,
+      "title": "First launch",
+      "detail": "Pliva launches Sumamed in Central and Eastern Europe."
+    },
+    {
+      "year": 1991,
+      "title": "US approval",
+      "detail": "The FDA approves Zithromax."
+    },
+    {
+      "year": 1998,
+      "title": "Trachoma donation",
+      "detail": "Pfizer and the Edna McConnell Clark Foundation found the International Trachoma Initiative to donate azithromycin for trachoma elimination."
+    },
+    {
+      "year": 2005,
+      "title": "Generics",
+      "detail": "US patent expiry leads to generic azithromycin."
+    },
+    {
+      "year": 2013,
+      "title": "Cardiac warning",
+      "detail": "The FDA warns that azithromycin can cause fatal heart rhythms, following a 2012 NEJM cohort study."
+    },
+    {
+      "year": 2018,
+      "title": "MORDOR trial",
+      "detail": "Biannual mass azithromycin distribution reduces childhood mortality in Niger, Malawi and Tanzania (NEJM)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 68 hours (terminal)",
+    "bioavailability": "about 37% orally",
+    "metabolism": "limited hepatic metabolism; weak CYP3A4 inhibitor",
+    "excretion": "mainly biliary, unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Nausea",
+      "Abdominal pain"
+    ],
+    "serious": [
+      "QT prolongation and torsades de pointes",
+      "Hepatotoxicity",
+      "Infantile hypertrophic pyloric stenosis in neonates",
+      "Exacerbation of myasthenia gravis",
+      "Clostridioides difficile infection",
+      "Severe cutaneous reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Azithromycin was one of the first major drugs discovered in a socialist-era Eastern European laboratory and licensed to a Western company.",
+    "Mass distribution of azithromycin is a cornerstone of WHO's SAFE strategy against trachoma."
+  ],
+  "related": [
+    "erythromycin",
+    "clarithromycin",
+    "doxycycline",
+    "ceftriaxone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Azithromycin",
+      "url": "https://en.wikipedia.org/wiki/Azithromycin"
+    },
+    {
+      "title": "DailyMed: azithromycin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=azithromycin"
+    },
+    {
+      "title": "MORDOR trial (NEJM 2018) — PubMed search",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=azithromycin+childhood+mortality+MORDOR"
+    }
+  ],
+  "stage": "written"
 }

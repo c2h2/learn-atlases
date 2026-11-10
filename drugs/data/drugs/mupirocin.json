@@ -1,36 +1,117 @@
 {
   "slug": "mupirocin",
   "name": "Mupirocin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Pseudomonic acid A",
+    "BRL 4910A"
+  ],
+  "brands": [
+    "Bactroban",
+    "Centany"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Topical antibacterial (pseudomonic acid)",
+  "modality": "small-molecule",
+  "routes": [
+    "topical",
+    "intranasal"
+  ],
+  "route_note": "2% ointment or cream applied to skin; 2% nasal ointment for staphylococcal decolonisation.",
+  "targets": [
+    "Bacterial isoleucyl-tRNA synthetase (ileS)"
+  ],
+  "origin": "natural",
+  "originator": "Beecham Pharmaceuticals",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1985,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": "Bactroban"
+  },
+  "discovery": {
+    "year": 1971,
+    "by": "Beecham Research Laboratories (Fuller and colleagues)",
+    "note": "Pseudomonic acid A was isolated from Pseudomonas fluorescens; reported in Nature in 1971."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (OTC in some countries)",
+  "tagline": "Topical antibiotic for impetigo and nasal MRSA decolonisation",
+  "summary": "Mupirocin is a topical antibiotic derived from Pseudomonas fluorescens that inhibits bacterial isoleucyl-tRNA synthetase. It is used for impetigo and other superficial skin infections and as nasal ointment to clear Staphylococcus aureus, including MRSA, before surgery or in outbreaks.",
+  "mechanism": [
+    "Mupirocin mimics isoleucyl-adenylate and binds bacterial isoleucyl-tRNA synthetase, preventing charging of tRNA with isoleucine; protein and RNA synthesis stop. It is bacteriostatic at low concentrations and bactericidal at those achieved topically.",
+    "It is rapidly hydrolysed to inactive monic acid in the body, so it is used only topically. Low-level resistance arises from ileS point mutations; high-level resistance is mediated by plasmid-borne mupA (ileS2) or mupB genes encoding an alternative synthetase."
+  ],
+  "uses": [
+    "Impetigo caused by S. aureus or Streptococcus pyogenes",
+    "Secondarily infected traumatic skin lesions",
+    "Nasal decolonisation of S. aureus/MRSA (e.g. before surgery, in outbreaks or dialysis patients)"
+  ],
+  "history": [
+    {
+      "year": 1971,
+      "title": "Discovery",
+      "detail": "Beecham scientists report pseudomonic acid from Pseudomonas fluorescens."
+    },
+    {
+      "year": 1985,
+      "title": "UK launch",
+      "detail": "Mupirocin ointment (Bactroban) is launched in the UK."
+    },
+    {
+      "year": 1987,
+      "title": "US approval",
+      "detail": "The FDA approves Bactroban ointment."
+    },
+    {
+      "year": 1995,
+      "title": "High-level resistance",
+      "detail": "Plasmid-mediated high-level mupirocin resistance (mupA) is increasingly reported among staphylococci with widespread use."
+    },
+    {
+      "year": 2010,
+      "title": "Decolonisation trial",
+      "detail": "An NEJM trial shows nasal mupirocin plus chlorhexidine bathing halves surgical-site S. aureus infections in carriers."
+    }
+  ],
+  "pk": {
+    "half_life": "about 20–40 minutes (systemic monic acid conversion)",
+    "bioavailability": "negligible absorption through intact skin",
+    "metabolism": "rapidly hydrolysed to inactive monic acid",
+    "excretion": "renal (as monic acid)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Burning or stinging at application site",
+      "Itching",
+      "Rhinitis and headache with nasal use"
+    ],
+    "serious": [
+      "Hypersensitivity reactions",
+      "Polyethylene glycol absorption from ointment in extensive burns or renal impairment"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Mupirocin's isoleucyl-tRNA synthetase target is unique among clinically used antibiotics, so there is no cross-resistance with other classes."
+  ],
+  "related": [
+    "vancomycin",
+    "flucloxacillin",
+    "cefalexin",
+    "clindamycin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Mupirocin",
+      "url": "https://en.wikipedia.org/wiki/Mupirocin"
+    },
+    {
+      "title": "DailyMed: mupirocin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=mupirocin"
+    }
+  ],
+  "stage": "written"
 }

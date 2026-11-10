@@ -1,36 +1,137 @@
 {
   "slug": "moxifloxacin",
   "name": "Moxifloxacin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BAY 12-8039"
+  ],
+  "brands": [
+    "Avelox",
+    "Avalox",
+    "Vigamox",
+    "Moxeza"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Fluoroquinolone antibiotic (respiratory)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "ophthalmic"
+  ],
+  "route_note": "Once-daily oral tablet or IV infusion; eye drops for bacterial conjunctivitis.",
+  "targets": [
+    "DNA gyrase (gyrA, gyrB)",
+    "Topoisomerase IV (parC, parE)"
+  ],
+  "origin": "synthetic",
+  "originator": "Bayer",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1999,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Avelox"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Bayer",
+    "note": "An 8-methoxy fluoroquinolone with a bicyclic C-7 substituent, improving Gram-positive and anaerobic activity and reducing resistance selection."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "8-methoxy fluoroquinolone for respiratory infections and drug-resistant TB",
+  "summary": "Moxifloxacin is a fourth-generation fluoroquinolone developed by Bayer with enhanced activity against pneumococci, atypical pathogens, anaerobes and Mycobacterium tuberculosis. It is used for respiratory infections and is a component of WHO-recommended regimens for rifampicin-resistant tuberculosis; it notably prolongs the QT interval.",
+  "mechanism": [
+    "Fluoroquinolones trap DNA gyrase and topoisomerase IV on DNA in cleaved complexes, converting these essential enzymes into toxic agents that create double-strand DNA breaks, block replication and transcription, and trigger rapid bactericidal death. In most Gram-negative bacteria gyrase is the primary target; in many Gram-positive bacteria it is topoisomerase IV.",
+    "Its 8-methoxy group makes it more potent against Gram-positive topoisomerases and requires two target mutations for high-level resistance. It is not reliable against Pseudomonas and achieves low urinary concentrations, so it is not used for urinary infections."
+  ],
+  "uses": [
+    "Community-acquired pneumonia and acute bacterial sinusitis",
+    "Acute exacerbations of chronic bronchitis (when alternatives are unsuitable)",
+    "Complicated skin and intra-abdominal infections",
+    "Rifampicin-resistant tuberculosis (BPaLM and other regimens)",
+    "Plague",
+    "Bacterial conjunctivitis (ophthalmic)"
+  ],
+  "history": [
+    {
+      "year": 1999,
+      "title": "US approval",
+      "detail": "The FDA approves Avelox."
+    },
+    {
+      "year": 2003,
+      "title": "Ophthalmic formulation",
+      "detail": "Moxifloxacin eye drops (Vigamox, Alcon) are approved in the US."
+    },
+    {
+      "year": 2008,
+      "title": "Tendon boxed warning",
+      "detail": "The FDA adds a boxed warning on tendinitis and tendon rupture to all systemic fluoroquinolones."
+    },
+    {
+      "year": 2016,
+      "title": "Use restricted",
+      "detail": "The FDA advises that fluoroquinolones should not be used for uncomplicated sinusitis, bronchitis or UTI when alternatives exist, and expands the boxed warning."
+    },
+    {
+      "year": 2018,
+      "title": "EU review and aortic warnings",
+      "detail": "The EMA recommends restricting fluoroquinolones because of disabling, long-lasting side effects; the FDA warns about hypoglycaemia, mental-health effects and aortic aneurysm or dissection."
+    },
+    {
+      "year": 2022,
+      "title": "WHO BPaLM",
+      "detail": "WHO recommends the six-month BPaLM regimen including moxifloxacin for rifampicin-resistant TB."
+    }
+  ],
+  "pk": {
+    "half_life": "about 12 hours",
+    "bioavailability": "about 90%",
+    "metabolism": "hepatic glucuronide and sulphate conjugation (not CYP450)",
+    "excretion": "faecal and renal"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Diarrhoea",
+      "Dizziness",
+      "Headache"
+    ],
+    "serious": [
+      "Tendinitis and tendon rupture (especially with corticosteroids and in older people)",
+      "Peripheral neuropathy",
+      "CNS effects (seizures, psychiatric reactions)",
+      "QT prolongation",
+      "Aortic aneurysm and dissection",
+      "Dysglycaemia",
+      "Exacerbation of myasthenia gravis",
+      "Clostridioides difficile infection",
+      "Hepatotoxicity (EU restrictions)"
+    ],
+    "boxed_warning": "Fluoroquinolones are associated with disabling and potentially irreversible serious adverse reactions, including tendinitis and tendon rupture, peripheral neuropathy and central nervous system effects, and may exacerbate muscle weakness in myasthenia gravis; for acute sinusitis, acute exacerbation of chronic bronchitis and uncomplicated urinary tract infection, reserve for patients with no alternative treatment options."
+  },
+  "facts": [
+    "Moxifloxacin is the standard positive control in 'thorough QT' studies used to assess the cardiac safety of new drugs."
+  ],
+  "related": [
+    "levofloxacin",
+    "ciprofloxacin",
+    "bedaquiline",
+    "pretomanid",
+    "linezolid"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Moxifloxacin",
+      "url": "https://en.wikipedia.org/wiki/Moxifloxacin"
+    },
+    {
+      "title": "DailyMed: moxifloxacin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=moxifloxacin"
+    }
+  ],
+  "stage": "written"
 }

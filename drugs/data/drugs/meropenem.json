@@ -1,36 +1,122 @@
 {
   "slug": "meropenem",
   "name": "Meropenem",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SM-7338",
+    "ICI 194,660"
+  ],
+  "brands": [
+    "Merrem",
+    "Meronem",
+    "Meropen"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Carbapenem",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV bolus or infusion every 8 hours; extended infusion used in critical care. Also combined with vaborbactam (Vabomere).",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)"
+  ],
+  "origin": "synthetic",
+  "originator": "Sumitomo Pharmaceuticals",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": null,
+    "by": "Sumitomo Pharmaceuticals",
+    "note": "A 1-beta-methyl carbapenem that is stable to renal dehydropeptidase-I, so it does not need cilastatin."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (hospital)",
+  "tagline": "Ultra-broad carbapenem reserved for serious and resistant Gram-negative infections",
+  "summary": "Meropenem is a broad-spectrum carbapenem active against most Gram-positive, Gram-negative and anaerobic bacteria, including ESBL- and AmpC-producing Enterobacterales and Pseudomonas aeruginosa. It is a key hospital antibiotic whose effectiveness is threatened by carbapenemase-producing organisms.",
+  "mechanism": [
+    "Meropenem binds multiple penicillin-binding proteins (especially PBP2 and PBP3 in Gram-negative bacteria), inhibiting cell-wall synthesis and causing rapid bactericidal lysis.",
+    "Its carbapenem nucleus and trans-hydroxyethyl side chain resist hydrolysis by nearly all serine beta-lactamases except carbapenemases (KPC, OXA-48-like) and the metallo-beta-lactamases (NDM, VIM, IMP). Its 1-beta-methyl group protects it from renal dehydropeptidase-I."
+  ],
+  "uses": [
+    "Severe hospital-acquired and ventilator-associated pneumonia",
+    "Complicated intra-abdominal infections",
+    "Bacterial meningitis (including in children)",
+    "Febrile neutropenia",
+    "Infections caused by ESBL-producing Enterobacterales",
+    "Melioidosis"
+  ],
+  "history": [
+    {
+      "year": 1996,
+      "title": "US approval",
+      "detail": "The FDA approves meropenem (Merrem IV, AstraZeneca)."
+    },
+    {
+      "year": 2008,
+      "title": "NDM-1",
+      "detail": "New Delhi metallo-beta-lactamase 1 is identified in a Klebsiella isolate from a patient treated in India (described 2009), later spreading worldwide."
+    },
+    {
+      "year": 2017,
+      "title": "WHO AWaRe classification",
+      "detail": "WHO begins grouping antibiotics on its Essential Medicines List into Access, Watch and Reserve; meropenem is a Watch antibiotic."
+    },
+    {
+      "year": 2017,
+      "title": "Meropenem-vaborbactam",
+      "detail": "The FDA approves meropenem-vaborbactam (Vabomere) for complicated urinary tract infections."
+    },
+    {
+      "year": 2018,
+      "title": "MERINO trial",
+      "detail": "Meropenem outperforms piperacillin/tazobactam for ceftriaxone-resistant E. coli and Klebsiella bloodstream infections."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 hour",
+    "bioavailability": "IV only",
+    "metabolism": "minor hydrolysis to an inactive open-ring metabolite",
+    "excretion": "renal, about 70% unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Nausea",
+      "Headache",
+      "Rash",
+      "Injection-site inflammation"
+    ],
+    "serious": [
+      "Seizures (lower risk than imipenem)",
+      "Anaphylaxis",
+      "Clostridioides difficile infection",
+      "Severe reduction of valproate levels, risking breakthrough seizures"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Carbapenems lower serum valproate concentrations so markedly that co-administration is generally avoided.",
+    "Carbapenem-resistant Enterobacterales are on WHO's list of critical-priority pathogens."
+  ],
+  "related": [
+    "imipenem-cilastatin",
+    "ertapenem",
+    "piperacillin-tazobactam",
+    "ceftazidime-avibactam",
+    "valproate",
+    "colistin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Meropenem",
+      "url": "https://en.wikipedia.org/wiki/Meropenem"
+    },
+    {
+      "title": "DailyMed: meropenem labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=meropenem"
+    }
+  ],
+  "stage": "written"
 }

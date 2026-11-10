@@ -1,36 +1,127 @@
 {
   "slug": "isoniazid",
   "name": "Isoniazid",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Isonicotinic acid hydrazide",
+    "INH",
+    "Isonicotinylhydrazide"
+  ],
+  "brands": [
+    "Nydrazid",
+    "Rifinah",
+    "Rifamate",
+    "Rimifon"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Antimycobacterial (isonicotinic acid hydrazide)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im",
+    "iv"
+  ],
+  "route_note": "Oral tablets or syrup, often in fixed-dose combinations with rifampicin; injectable form available.",
+  "targets": [
+    "Enoyl-ACP reductase InhA (after activation by catalase-peroxidase KatG)"
+  ],
+  "origin": "synthetic",
+  "originator": "Hoffmann-La Roche, E. R. Squibb & Sons and Bayer (independently)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "discovery": {
+    "year": 1951,
+    "by": "Hoffmann-La Roche, Squibb and Bayer research groups",
+    "note": "First synthesised in 1912 by Hans Meyer and Josef Mally in Prague; its anti-tuberculosis activity was discovered independently by three companies in 1951 and announced in 1952."
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Inexpensive first-line TB drug that blocks mycolic acid synthesis",
+  "summary": "Isoniazid is a cheap synthetic prodrug that has been a cornerstone of tuberculosis treatment and prevention since 1952. It is highly bactericidal against rapidly dividing Mycobacterium tuberculosis, and its toxicity profile is shaped by genetic differences in acetylation.",
+  "mechanism": [
+    "Isoniazid is activated by the mycobacterial catalase-peroxidase KatG to an isonicotinoyl radical that combines with NAD+. The resulting adduct tightly inhibits InhA, the enoyl-acyl carrier protein reductase of the fatty acid synthase II system, blocking synthesis of mycolic acids essential for the mycobacterial cell wall.",
+    "Most clinical resistance comes from katG mutations (notably S315T), which prevent activation, or inhA promoter mutations, which cause overexpression and low-level resistance shared with ethionamide."
+  ],
+  "uses": [
+    "Active tuberculosis (first-line combination therapy)",
+    "Latent TB infection (alone, or with rifapentine or rifampicin)",
+    "TB preventive therapy in people with HIV and child contacts"
+  ],
+  "history": [
+    {
+      "year": 1912,
+      "title": "First synthesis",
+      "detail": "Hans Meyer and Josef Mally synthesise isonicotinic acid hydrazide in Prague as part of doctoral work."
+    },
+    {
+      "year": 1952,
+      "title": "Antituberculosis activity announced",
+      "detail": "Roche, Squibb and Bayer report isoniazid's dramatic activity; press images of recovering patients at Sea View Hospital, New York follow."
+    },
+    {
+      "year": 1952,
+      "title": "Antidepressant serendipity",
+      "detail": "The related iproniazid is observed to elevate mood, leading to the first monoamine oxidase inhibitor antidepressants."
+    },
+    {
+      "year": 1960,
+      "title": "Acetylator polymorphism",
+      "detail": "Studies of isoniazid metabolism define slow and fast acetylator phenotypes, later linked to NAT2."
+    },
+    {
+      "year": 1970,
+      "title": "Hepatitis recognised",
+      "detail": "An outbreak of isoniazid hepatitis among Capitol Hill workers given preventive therapy highlights hepatotoxicity."
+    },
+    {
+      "year": 2011,
+      "title": "3HP regimen",
+      "detail": "The PREVENT TB trial shows 12 weekly doses of isoniazid plus rifapentine are as effective as 9 months of isoniazid for latent TB."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 hour in fast acetylators, 2–5 hours in slow acetylators",
+    "bioavailability": "about 90% (reduced by food)",
+    "metabolism": "hepatic N-acetylation by NAT2 and hydrolysis",
+    "excretion": "renal (mostly metabolites)"
+  },
+  "safety": {
+    "common": [
+      "Asymptomatic rise in liver enzymes",
+      "Nausea",
+      "Peripheral neuropathy (preventable with pyridoxine)"
+    ],
+    "serious": [
+      "Hepatitis, occasionally fatal, increasing with age and alcohol use",
+      "Peripheral neuropathy and optic neuritis",
+      "Seizures and coma in overdose (treated with pyridoxine)",
+      "Drug-induced lupus",
+      "Interactions (inhibits phenytoin and carbamazepine metabolism)"
+    ],
+    "boxed_warning": "Severe and sometimes fatal hepatitis may develop, even after many months of treatment; risk is age-related and increased by daily alcohol consumption. Patients should be monitored and instructed to report symptoms (US label)."
+  },
+  "facts": [
+    "Isoniazid's antituberculosis activity was discovered almost simultaneously by three companies, so none could obtain a strong product patent, keeping it cheap.",
+    "Pyridoxine (vitamin B6) is routinely co-prescribed to prevent isoniazid-induced neuropathy in at-risk people."
+  ],
+  "related": [
+    "rifampicin",
+    "pyrazinamide",
+    "ethambutol",
+    "streptomycin",
+    "phenelzine",
+    "phenytoin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Isoniazid",
+      "url": "https://en.wikipedia.org/wiki/Isoniazid"
+    },
+    {
+      "title": "DailyMed: isoniazid labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isoniazid"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,147 @@
 {
   "slug": "ciprofloxacin",
   "name": "Ciprofloxacin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Bay o 9867"
+  ],
+  "brands": [
+    "Cipro",
+    "Ciproxin",
+    "Ciloxan",
+    "Cetraxal"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Fluoroquinolone antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "ophthalmic",
+    "other"
+  ],
+  "route_note": "Oral tablets or suspension twice daily, IV infusion, eye drops and ear drops (otic).",
+  "targets": [
+    "DNA gyrase (gyrA, gyrB)",
+    "Topoisomerase IV (parC, parE)"
+  ],
+  "origin": "synthetic",
+  "originator": "Bayer",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1987,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Cipro"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1981,
+    "by": "Klaus Grohe and colleagues (Bayer)",
+    "note": "A second-generation fluoroquinolone, adding a cyclopropyl group to the norfloxacin scaffold for much greater Gram-negative potency."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Most widely used fluoroquinolone, potent against Gram-negatives including Pseudomonas",
+  "summary": "Ciprofloxacin is a fluoroquinolone discovered by Bayer in 1981 with strong activity against Gram-negative bacteria, including Pseudomonas aeruginosa, and good oral bioavailability. Its use is now restricted by regulators because of disabling musculoskeletal, neurological and cardiovascular adverse effects and rising resistance.",
+  "mechanism": [
+    "Fluoroquinolones trap DNA gyrase and topoisomerase IV on DNA in cleaved complexes, converting these essential enzymes into toxic agents that create double-strand DNA breaks, block replication and transcription, and trigger rapid bactericidal death. In most Gram-negative bacteria gyrase is the primary target; in many Gram-positive bacteria it is topoisomerase IV.",
+    "Resistance arises stepwise through mutations in the quinolone resistance-determining regions of gyrA and parC, increased efflux and reduced porins, and plasmid-mediated qnr, aac(6')-Ib-cr and qepA genes."
+  ],
+  "uses": [
+    "Complicated urinary tract infections and pyelonephritis",
+    "Gastrointestinal infections (Salmonella, Shigella, Campylobacter, traveller's diarrhoea)",
+    "Pseudomonas aeruginosa infections, including in cystic fibrosis",
+    "Bone and joint infections",
+    "Anthrax and plague (treatment and post-exposure prophylaxis)",
+    "Eye and ear infections (topical)"
+  ],
+  "history": [
+    {
+      "year": 1981,
+      "title": "Discovery",
+      "detail": "Bayer chemists synthesise ciprofloxacin."
+    },
+    {
+      "year": 1987,
+      "title": "US approval",
+      "detail": "The FDA approves oral Cipro."
+    },
+    {
+      "year": 2001,
+      "title": "Anthrax letters",
+      "detail": "Ciprofloxacin is widely distributed for post-exposure prophylaxis after the US anthrax attacks."
+    },
+    {
+      "year": 2004,
+      "title": "Generics",
+      "detail": "US patent expiry opens the market to generic ciprofloxacin."
+    },
+    {
+      "year": 2008,
+      "title": "Tendon boxed warning",
+      "detail": "The FDA adds a boxed warning on tendinitis and tendon rupture to all systemic fluoroquinolones."
+    },
+    {
+      "year": 2016,
+      "title": "Use restricted",
+      "detail": "The FDA advises that fluoroquinolones should not be used for uncomplicated sinusitis, bronchitis or UTI when alternatives exist, and expands the boxed warning."
+    },
+    {
+      "year": 2018,
+      "title": "EU review and aortic warnings",
+      "detail": "The EMA recommends restricting fluoroquinolones because of disabling, long-lasting side effects; the FDA warns about hypoglycaemia, mental-health effects and aortic aneurysm or dissection."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4 hours",
+    "bioavailability": "about 70%",
+    "metabolism": "partly hepatic; inhibits CYP1A2 (e.g. raises theophylline and tizanidine levels)",
+    "excretion": "renal (filtration and secretion) and faecal"
+  },
+  "safety": {
+    "common": [
+      "Nausea and diarrhoea",
+      "Headache",
+      "Dizziness",
+      "Rash"
+    ],
+    "serious": [
+      "Tendinitis and tendon rupture (especially with corticosteroids and in older people)",
+      "Peripheral neuropathy",
+      "CNS effects (seizures, psychiatric reactions)",
+      "QT prolongation",
+      "Aortic aneurysm and dissection",
+      "Dysglycaemia",
+      "Exacerbation of myasthenia gravis",
+      "Clostridioides difficile infection"
+    ],
+    "boxed_warning": "Fluoroquinolones are associated with disabling and potentially irreversible serious adverse reactions, including tendinitis and tendon rupture, peripheral neuropathy and central nervous system effects, and may exacerbate muscle weakness in myasthenia gravis; for acute sinusitis, acute exacerbation of chronic bronchitis and uncomplicated urinary tract infection, reserve for patients with no alternative treatment options."
+  },
+  "facts": [
+    "Ciprofloxacin absorption is markedly reduced when taken with calcium, magnesium, aluminium, iron or zinc products.",
+    "Ciprofloxacin is classified in the WHO 'Watch' antibiotic group."
+  ],
+  "related": [
+    "levofloxacin",
+    "moxifloxacin",
+    "doxycycline",
+    "theophylline",
+    "co-trimoxazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ciprofloxacin",
+      "url": "https://en.wikipedia.org/wiki/Ciprofloxacin"
+    },
+    {
+      "title": "DailyMed: ciprofloxacin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ciprofloxacin"
+    },
+    {
+      "title": "EMA: Quinolone- and fluoroquinolone-containing medicinal products referral",
+      "url": "https://www.ema.europa.eu/en/medicines/human/referrals/quinolone-fluoroquinolone-containing-medicinal-products"
+    }
+  ],
+  "stage": "written"
 }

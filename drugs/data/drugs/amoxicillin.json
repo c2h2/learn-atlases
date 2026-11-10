@@ -1,36 +1,129 @@
 {
   "slug": "amoxicillin",
   "name": "Amoxicillin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Amoxycillin",
+    "BRL 2333"
+  ],
+  "brands": [
+    "Amoxil",
+    "Moxatag",
+    "Trimox"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Aminopenicillin (beta-lactam antibiotic)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im"
+  ],
+  "route_note": "Usually oral capsules, tablets or suspension; IV formulations are available in some countries (not the US).",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Beecham Research Laboratories",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1972,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": "Amoxil"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Beecham Research Laboratories",
+    "note": "Developed as an orally better-absorbed analogue of ampicillin by adding a para-hydroxyl group to the side chain."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (OTC in some countries)",
+  "tagline": "The world's workhorse oral penicillin for respiratory, ear and urinary infections",
+  "summary": "Amoxicillin is a semi-synthetic aminopenicillin introduced by Beecham in 1972. Better absorbed orally than ampicillin, it is one of the most widely prescribed antibiotics worldwide and a first-line WHO Access antibiotic for common community infections.",
+  "mechanism": [
+    "Like other penicillins, amoxicillin binds and inactivates penicillin-binding proteins, blocking the transpeptidation step of peptidoglycan cross-linking and causing lysis of dividing bacteria.",
+    "Its amino group improves penetration through Gram-negative porins, extending activity to many Haemophilus influenzae, Escherichia coli and Enterococcus faecalis strains, but it is destroyed by beta-lactamases; it is therefore often combined with clavulanic acid."
+  ],
+  "uses": [
+    "Acute otitis media, sinusitis and streptococcal pharyngitis",
+    "Community-acquired pneumonia",
+    "Urinary tract infections caused by susceptible organisms",
+    "Helicobacter pylori eradication (with a proton pump inhibitor and another antibiotic)",
+    "Early Lyme disease and endocarditis prophylaxis in some guidelines"
+  ],
+  "history": [
+    {
+      "year": 1961,
+      "title": "Ampicillin precursor",
+      "detail": "Beecham launches ampicillin, the first broad-spectrum penicillin, from which amoxicillin was derived."
+    },
+    {
+      "year": 1972,
+      "title": "Launch",
+      "detail": "Amoxicillin is introduced in the United Kingdom as Amoxil."
+    },
+    {
+      "year": 1981,
+      "title": "Combination with clavulanate",
+      "detail": "Amoxicillin-clavulanic acid (Augmentin) is launched to overcome beta-lactamase resistance."
+    },
+    {
+      "year": 2017,
+      "title": "WHO AWaRe",
+      "detail": "WHO's Essential Medicines List groups antibiotics into Access, Watch and Reserve; amoxicillin is a key Access antibiotic."
+    },
+    {
+      "year": 2022,
+      "title": "Paediatric shortages",
+      "detail": "Surges in streptococcal and respiratory infections cause shortages of amoxicillin suspension in the US, UK and Europe in 2022–2023."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1–1.5 hours",
+    "bioavailability": "about 70–90% orally, largely unaffected by food",
+    "metabolism": "limited",
+    "excretion": "mainly renal, unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Nausea",
+      "Rash"
+    ],
+    "serious": [
+      "Anaphylaxis",
+      "Stevens-Johnson syndrome and other severe skin reactions",
+      "Clostridioides difficile-associated diarrhoea",
+      "Crystalluria at high doses"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "A maculopapular rash is very common when amoxicillin or ampicillin is given to patients with infectious mononucleosis (Epstein-Barr virus) and does not necessarily indicate true penicillin allergy.",
+    "Amoxicillin is among the most frequently prescribed antibiotics for children worldwide."
+  ],
+  "related": [
+    "ampicillin",
+    "amoxicillin-clavulanate",
+    "benzylpenicillin",
+    "clarithromycin",
+    "omeprazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Amoxicillin",
+      "url": "https://en.wikipedia.org/wiki/Amoxicillin"
+    },
+    {
+      "title": "DailyMed: amoxicillin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amoxicillin"
+    },
+    {
+      "title": "WHO AWaRe antibiotic book",
+      "url": "https://www.who.int/publications/i/item/9789240062382"
+    }
+  ],
+  "stage": "written"
 }

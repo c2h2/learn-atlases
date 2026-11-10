@@ -1,36 +1,128 @@
 {
   "slug": "clindamycin",
   "name": "Clindamycin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "7-chloro-7-deoxylincomycin",
+    "U-21251"
+  ],
+  "brands": [
+    "Cleocin",
+    "Dalacin"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Lincosamide antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "topical",
+    "vaginal"
+  ],
+  "route_note": "Oral capsules, IV/IM injection, topical gel/lotion (often with benzoyl peroxide for acne) and vaginal cream or ovules.",
+  "targets": [
+    "23S rRNA of the 50S ribosomal subunit (peptidyl transferase centre)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Upjohn Company",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1970,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Cleocin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1966,
+    "by": "Barney Birkenmeyer and Fred Kagan (Upjohn)",
+    "note": "Produced by chlorinating lincomycin, a natural lincosamide from Streptomyces lincolnensis."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Lincosamide for anaerobic and Gram-positive infections, and for toxin suppression",
+  "summary": "Clindamycin is a semi-synthetic lincosamide derived from lincomycin by Upjohn in 1966. It is active against many Gram-positive cocci and anaerobes, suppresses bacterial toxin production in necrotising infections, and is widely used topically for acne and vaginally for bacterial vaginosis.",
+  "mechanism": [
+    "Clindamycin binds the peptidyl transferase region of 23S rRNA on the 50S subunit, overlapping macrolide and streptogramin binding sites, and inhibits peptide-bond formation; it is mainly bacteriostatic.",
+    "By halting protein synthesis it reduces production of exotoxins such as streptococcal pyrogenic exotoxins and staphylococcal toxic shock toxin, the rationale for adding it in necrotising fasciitis and toxic shock. erm genes may confer inducible resistance, detected by the D-test."
+  ],
+  "uses": [
+    "Skin and soft-tissue infections, including community MRSA",
+    "Anaerobic infections (aspiration pneumonia, lung abscess, dental and pelvic infections)",
+    "Adjunct for toxin suppression in necrotising fasciitis and toxic shock syndrome",
+    "Bone and joint infections",
+    "Acne vulgaris (topical) and bacterial vaginosis (vaginal)",
+    "Malaria (with quinine) and toxoplasmosis or Pneumocystis (with primaquine)"
+  ],
+  "history": [
+    {
+      "year": 1962,
+      "title": "Lincomycin",
+      "detail": "Upjohn describes lincomycin from Streptomyces lincolnensis, found in a soil sample from Lincoln, Nebraska."
+    },
+    {
+      "year": 1966,
+      "title": "Synthesis",
+      "detail": "Upjohn chemists produce clindamycin by chlorine substitution of lincomycin."
+    },
+    {
+      "year": 1970,
+      "title": "US approval",
+      "detail": "The FDA approves Cleocin."
+    },
+    {
+      "year": 1974,
+      "title": "Clindamycin colitis",
+      "detail": "Reports of severe pseudomembranous colitis after clindamycin lead to a boxed warning."
+    },
+    {
+      "year": 1978,
+      "title": "C. difficile identified",
+      "detail": "Clostridioides (then Clostridium) difficile toxin is identified as the cause of antibiotic-associated pseudomembranous colitis."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–3 hours",
+    "bioavailability": "about 90% orally",
+    "metabolism": "hepatic CYP3A4",
+    "excretion": "biliary and renal (metabolites)"
+  },
+  "safety": {
+    "common": [
+      "Diarrhoea",
+      "Nausea",
+      "Metallic taste",
+      "Rash"
+    ],
+    "serious": [
+      "Clostridioides difficile-associated diarrhoea and colitis",
+      "Severe cutaneous reactions (SJS/TEN, DRESS)",
+      "Hepatotoxicity",
+      "Anaphylaxis"
+    ],
+    "boxed_warning": "Clostridioides difficile-associated diarrhoea, which may range from mild to fatal colitis; reserve for serious infections where less toxic agents are inappropriate."
+  },
+  "facts": [
+    "Clindamycin is among the antibiotics most strongly associated with C. difficile infection."
+  ],
+  "related": [
+    "erythromycin",
+    "metronidazole",
+    "vancomycin",
+    "fidaxomicin",
+    "quinine",
+    "primaquine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Clindamycin",
+      "url": "https://en.wikipedia.org/wiki/Clindamycin"
+    },
+    {
+      "title": "DailyMed: clindamycin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=clindamycin"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,128 @@
 {
   "slug": "linezolid",
   "name": "Linezolid",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PNU-100766",
+    "U-100766"
+  ],
+  "brands": [
+    "Zyvox",
+    "Zyvoxid"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Oxazolidinone antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral tablets or suspension, or IV infusion, twice daily; near-complete oral bioavailability allows early switch.",
+  "targets": [
+    "23S rRNA of the 50S ribosomal subunit (peptidyl transferase centre)"
+  ],
+  "origin": "synthetic",
+  "originator": "Pharmacia & Upjohn",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 2000,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Zyvox"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Pharmacia & Upjohn",
+    "note": "Developed in the 1990s from earlier DuPont oxazolidinones; the first marketed member of a new antibiotic class in decades."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First oxazolidinone: oral option for MRSA, VRE and drug-resistant tuberculosis",
+  "summary": "Linezolid is a fully synthetic oxazolidinone antibiotic approved in 2000, active against MRSA, vancomycin-resistant enterococci and penicillin-resistant pneumococci. It is also a core component of modern regimens for multidrug-resistant tuberculosis, limited by bone-marrow and nerve toxicity with prolonged use.",
+  "mechanism": [
+    "Linezolid binds the A-site pocket of the peptidyl transferase centre on 23S rRNA in the 50S ribosomal subunit, preventing correct positioning of aminoacyl-tRNA and blocking formation of the 70S initiation complex; protein synthesis is inhibited.",
+    "It is generally bacteriostatic against staphylococci and enterococci and bactericidal against most streptococci. Resistance arises through 23S rRNA mutations (e.g. G2576T) or the transferable cfr methyltransferase. It is also a weak reversible inhibitor of monoamine oxidase."
+  ],
+  "uses": [
+    "Nosocomial and community-acquired pneumonia caused by Gram-positive bacteria including MRSA",
+    "Complicated skin and soft-tissue infections",
+    "Vancomycin-resistant Enterococcus faecium infections",
+    "Multidrug- and rifampicin-resistant tuberculosis (BPaL/BPaLM regimens)"
+  ],
+  "history": [
+    {
+      "year": 2000,
+      "title": "US approval",
+      "detail": "The FDA approves Zyvox, the first oxazolidinone."
+    },
+    {
+      "year": 2001,
+      "title": "First resistance",
+      "detail": "Linezolid-resistant S. aureus is reported shortly after approval."
+    },
+    {
+      "year": 2015,
+      "title": "Generics",
+      "detail": "Generic linezolid becomes available in the US after patent expiry."
+    },
+    {
+      "year": 2017,
+      "title": "WHO AWaRe classification",
+      "detail": "WHO begins grouping antibiotics on its Essential Medicines List into Access, Watch and Reserve; linezolid is a Reserve antibiotic."
+    },
+    {
+      "year": 2019,
+      "title": "BPaL regimen",
+      "detail": "The FDA approves pretomanid for use with bedaquiline and linezolid for highly drug-resistant TB."
+    },
+    {
+      "year": 2022,
+      "title": "WHO BPaLM",
+      "detail": "WHO recommends six-month BPaLM (bedaquiline, pretomanid, linezolid, moxifloxacin) for rifampicin-resistant TB."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5–7 hours",
+    "bioavailability": "about 100% orally",
+    "metabolism": "non-enzymatic oxidation of the morpholine ring",
+    "excretion": "renal (parent and metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Headache",
+      "Nausea",
+      "Taste disturbance"
+    ],
+    "serious": [
+      "Myelosuppression (thrombocytopenia, anaemia), typically after 2 weeks",
+      "Peripheral and optic neuropathy with prolonged use",
+      "Serotonin syndrome with serotonergic drugs",
+      "Lactic acidosis",
+      "Hypoglycaemia in diabetes"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Linezolid was the first new structural class of antibacterial approved in the US in about 35 years."
+  ],
+  "related": [
+    "vancomycin",
+    "daptomycin",
+    "bedaquiline",
+    "pretomanid",
+    "moxifloxacin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Linezolid",
+      "url": "https://en.wikipedia.org/wiki/Linezolid"
+    },
+    {
+      "title": "DailyMed: linezolid labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=linezolid"
+    }
+  ],
+  "stage": "written"
 }

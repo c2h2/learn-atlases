@@ -1,36 +1,133 @@
 {
   "slug": "benzylpenicillin",
   "name": "Benzylpenicillin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Penicillin G",
+    "Benzylpenicillin sodium",
+    "Benzylpenicillin potassium"
+  ],
+  "brands": [
+    "Crystapen",
+    "Pfizerpen"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Natural penicillin (beta-lactam antibiotic)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im"
+  ],
+  "route_note": "IV or IM injection; acid-labile, so not given orally (phenoxymethylpenicillin is the oral form). Long-acting benzathine and procaine salts are separate IM products.",
+  "targets": [
+    "Penicillin-binding proteins (PBPs)"
+  ],
+  "origin": "natural",
+  "originator": "Alexander Fleming (St Mary's Hospital); developed by Howard Florey, Ernst Chain and colleagues (University of Oxford)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1928,
+    "by": "Alexander Fleming",
+    "note": "Observed that a Penicillium mould contaminating a staphylococcal culture plate killed the surrounding bacteria."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The original penicillin: an injectable beta-lactam that launched the antibiotic era",
+  "summary": "Benzylpenicillin (penicillin G) is the natural penicillin first purified at Oxford in 1940 and mass-produced during the Second World War. It remains a first-choice injectable agent for streptococcal infections, syphilis, meningococcal disease and other infections caused by susceptible organisms.",
+  "mechanism": [
+    "Benzylpenicillin acylates the active-site serine of penicillin-binding proteins, the transpeptidases that cross-link peptidoglycan strands in the bacterial cell wall. Inhibition of cross-linking weakens the wall and, together with dysregulated autolysins, leads to lysis of growing bacteria (bactericidal action).",
+    "It is hydrolysed by most beta-lactamases, including the staphylococcal penicillinase that became widespread from the 1950s, and penetrates the outer membrane of most Gram-negative bacilli poorly, which limits its spectrum to mainly Gram-positive bacteria, Neisseria, spirochaetes and some anaerobes."
+  ],
+  "uses": [
+    "Streptococcal infections (pharyngitis, cellulitis, endocarditis)",
+    "Syphilis, including neurosyphilis",
+    "Meningococcal and susceptible pneumococcal infections",
+    "Diphtheria, anthrax, leptospirosis, actinomycosis and clostridial infections",
+    "Rheumatic fever and group B streptococcal intrapartum prophylaxis"
+  ],
+  "history": [
+    {
+      "year": 1928,
+      "title": "Fleming's observation",
+      "detail": "Alexander Fleming notes antibacterial activity of a Penicillium mould at St Mary's Hospital, London; published in 1929."
+    },
+    {
+      "year": 1940,
+      "title": "Oxford purification",
+      "detail": "Florey, Chain, Heatley and colleagues purify penicillin and show it protects mice from streptococcal infection."
+    },
+    {
+      "year": 1941,
+      "title": "First patient",
+      "detail": "Police constable Albert Alexander is treated in Oxford; he improves but dies when supplies run out."
+    },
+    {
+      "year": 1943,
+      "title": "Mass production",
+      "detail": "US deep-tank fermentation, corn-steep liquor and higher-yielding Penicillium chrysogenum strains enable large-scale production for the Allied war effort."
+    },
+    {
+      "year": 1945,
+      "title": "Nobel Prize",
+      "detail": "Fleming, Florey and Chain share the Nobel Prize in Physiology or Medicine; Dorothy Hodgkin's X-ray crystallography confirms the beta-lactam structure around the same time."
+    },
+    {
+      "year": 1957,
+      "title": "Total synthesis",
+      "detail": "John Sheehan at MIT reports the total synthesis of penicillin V."
+    },
+    {
+      "year": 1959,
+      "title": "6-APA isolated",
+      "detail": "Beecham researchers isolate the penicillin nucleus 6-aminopenicillanic acid, opening the way to semi-synthetic penicillins."
+    }
+  ],
+  "pk": {
+    "half_life": "about 30 minutes (prolonged in renal impairment)",
+    "bioavailability": "poor orally (acid-labile); given parenterally",
+    "metabolism": "minor hepatic metabolism",
+    "excretion": "renal, mainly by tubular secretion (blocked by probenecid)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Rash",
+      "Diarrhoea",
+      "Injection-site reactions"
+    ],
+    "serious": [
+      "Anaphylaxis and other hypersensitivity reactions",
+      "Seizures at very high doses or in renal failure",
+      "Jarisch-Herxheimer reaction when treating syphilis",
+      "Clostridioides difficile-associated diarrhoea"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Fleming, Florey and Chain shared the 1945 Nobel Prize in Physiology or Medicine for the discovery of penicillin and its curative effect.",
+    "Doses of benzylpenicillin are often expressed in units as well as milligrams, a legacy of early biological standardisation.",
+    "Penicillin was so scarce in the early 1940s that it was recovered from patients' urine for reuse."
+  ],
+  "related": [
+    "amoxicillin",
+    "ampicillin",
+    "flucloxacillin",
+    "piperacillin-tazobactam"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Benzylpenicillin",
+      "url": "https://en.wikipedia.org/wiki/Benzylpenicillin"
+    },
+    {
+      "title": "Wikipedia: History of penicillin",
+      "url": "https://en.wikipedia.org/wiki/History_of_penicillin"
+    },
+    {
+      "title": "DailyMed: penicillin G labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=penicillin+G"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,138 @@
 {
   "slug": "levofloxacin",
   "name": "Levofloxacin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "L-ofloxacin",
+    "DR-3355"
+  ],
+  "brands": [
+    "Levaquin",
+    "Tavanic",
+    "Cravit",
+    "Quinsair"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Fluoroquinolone antibiotic (respiratory)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "inhaled",
+    "ophthalmic"
+  ],
+  "route_note": "Once-daily oral or IV; nebulised solution (Quinsair) for cystic fibrosis in the EU; eye drops.",
+  "targets": [
+    "DNA gyrase (gyrA, gyrB)",
+    "Topoisomerase IV (parC, parE)"
+  ],
+  "origin": "synthetic",
+  "originator": "Daiichi Pharmaceutical",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1993,
+    "agency": null,
+    "country": "Japan",
+    "brand": "Cravit"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Daiichi Pharmaceutical",
+    "note": "The pure levorotatory (S)-enantiomer of the racemate ofloxacin, accounting for most of its antibacterial activity."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Respiratory fluoroquinolone and key drug for drug-resistant tuberculosis",
+  "summary": "Levofloxacin is the active S-enantiomer of ofloxacin, developed by Daiichi and launched in Japan in 1993. It has improved activity against Streptococcus pneumoniae and atypical pathogens and is used for pneumonia, urinary infections and drug-resistant tuberculosis, with the class warnings of all fluoroquinolones.",
+  "mechanism": [
+    "Fluoroquinolones trap DNA gyrase and topoisomerase IV on DNA in cleaved complexes, converting these essential enzymes into toxic agents that create double-strand DNA breaks, block replication and transcription, and trigger rapid bactericidal death. In most Gram-negative bacteria gyrase is the primary target; in many Gram-positive bacteria it is topoisomerase IV.",
+    "Compared with ciprofloxacin, levofloxacin binds pneumococcal topoisomerase IV and gyrase more effectively, giving reliable activity against S. pneumoniae while retaining moderate anti-pseudomonal activity."
+  ],
+  "uses": [
+    "Community-acquired pneumonia and acute bacterial sinusitis",
+    "Complicated urinary tract infections and acute pyelonephritis",
+    "Chronic bacterial prostatitis",
+    "Rifampicin-resistant and multidrug-resistant tuberculosis",
+    "Inhalational anthrax and plague",
+    "Chronic Pseudomonas infection in cystic fibrosis (inhaled, EU)"
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "Japanese launch",
+      "detail": "Daiichi launches levofloxacin (Cravit) in Japan."
+    },
+    {
+      "year": 1996,
+      "title": "US approval",
+      "detail": "The FDA approves Levaquin (Ortho-McNeil/Johnson & Johnson)."
+    },
+    {
+      "year": 2008,
+      "title": "Tendon boxed warning",
+      "detail": "The FDA adds a boxed warning on tendinitis and tendon rupture to all systemic fluoroquinolones."
+    },
+    {
+      "year": 2011,
+      "title": "Generics",
+      "detail": "Generic levofloxacin becomes available in the US."
+    },
+    {
+      "year": 2016,
+      "title": "Use restricted",
+      "detail": "The FDA advises that fluoroquinolones should not be used for uncomplicated sinusitis, bronchitis or UTI when alternatives exist, and expands the boxed warning."
+    },
+    {
+      "year": 2018,
+      "title": "EU review and aortic warnings",
+      "detail": "The EMA recommends restricting fluoroquinolones because of disabling, long-lasting side effects; the FDA warns about hypoglycaemia, mental-health effects and aortic aneurysm or dissection."
+    }
+  ],
+  "pk": {
+    "half_life": "about 6–8 hours",
+    "bioavailability": "about 99%",
+    "metabolism": "minimal",
+    "excretion": "renal, mostly unchanged"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Diarrhoea",
+      "Headache",
+      "Insomnia"
+    ],
+    "serious": [
+      "Tendinitis and tendon rupture (especially with corticosteroids and in older people)",
+      "Peripheral neuropathy",
+      "CNS effects (seizures, psychiatric reactions)",
+      "QT prolongation",
+      "Aortic aneurysm and dissection",
+      "Dysglycaemia",
+      "Exacerbation of myasthenia gravis",
+      "Clostridioides difficile infection"
+    ],
+    "boxed_warning": "Fluoroquinolones are associated with disabling and potentially irreversible serious adverse reactions, including tendinitis and tendon rupture, peripheral neuropathy and central nervous system effects, and may exacerbate muscle weakness in myasthenia gravis; for acute sinusitis, acute exacerbation of chronic bronchitis and uncomplicated urinary tract infection, reserve for patients with no alternative treatment options."
+  },
+  "facts": [
+    "Levofloxacin's near-complete oral bioavailability means oral and IV doses are the same."
+  ],
+  "related": [
+    "ciprofloxacin",
+    "moxifloxacin",
+    "bedaquiline",
+    "linezolid",
+    "isoniazid"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Levofloxacin",
+      "url": "https://en.wikipedia.org/wiki/Levofloxacin"
+    },
+    {
+      "title": "DailyMed: levofloxacin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=levofloxacin"
+    }
+  ],
+  "stage": "written"
 }

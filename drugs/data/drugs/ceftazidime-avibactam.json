@@ -1,36 +1,130 @@
 {
   "slug": "ceftazidime-avibactam",
-  "name": "Ceftazidime avibactam",
-  "aliases": [],
-  "brands": [],
+  "name": "Ceftazidime/avibactam",
+  "aliases": [
+    "CAZ-AVI",
+    "NXL104 (avibactam)"
+  ],
+  "brands": [
+    "Avycaz",
+    "Zavicefta"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Cephalosporin with diazabicyclooctane beta-lactamase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion over 2 hours every 8 hours, adjusted for renal function.",
+  "targets": [
+    "Penicillin-binding proteins (PBP3)",
+    "Class A (including KPC), class C and some class D (OXA-48) beta-lactamases (avibactam)"
+  ],
+  "origin": "synthetic",
+  "originator": "Novexel (avibactam); developed by AstraZeneca and Forest Laboratories",
+  "owner": "AbbVie (US); Pfizer (outside US)",
+  "first_approval": {
+    "year": 2015,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Avycaz"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Hoechst Marion Roussel/Aventis; developed by Novexel",
+    "note": "Avibactam, a non-beta-lactam diazabicyclooctane inhibitor, originated in Aventis research and was developed by the spin-off Novexel, acquired by AstraZeneca in 2010."
+  },
   "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "who_essential": true,
+  "rx_status": "prescription (hospital)",
+  "tagline": "Reserve antibiotic restoring ceftazidime against KPC and OXA-48 carbapenemase producers",
+  "summary": "Ceftazidime/avibactam combines ceftazidime with avibactam, the first diazabicyclooctane beta-lactamase inhibitor. It is active against many carbapenem-resistant Enterobacterales producing KPC or OXA-48 enzymes and against some multidrug-resistant Pseudomonas, but not against metallo-beta-lactamase producers.",
+  "mechanism": [
+    "Ceftazidime inhibits PBP3 and blocks Gram-negative cell-wall synthesis.",
+    "Avibactam carbamylates the active-site serine of class A (ESBLs, KPC), class C (AmpC) and some class D (OXA-48) beta-lactamases. Unlike clavulanate or tazobactam, its acylation is reversible, the intact inhibitor being released to inhibit further enzymes. It does not inhibit metallo-beta-lactamases (NDM, VIM, IMP); resistance also emerges via KPC variants such as D179Y."
+  ],
+  "uses": [
+    "Complicated intra-abdominal infections (with metronidazole)",
+    "Complicated urinary tract infections including pyelonephritis",
+    "Hospital-acquired and ventilator-associated pneumonia",
+    "Infections due to aerobic Gram-negative organisms with limited treatment options (EU)"
+  ],
+  "history": [
+    {
+      "year": 2010,
+      "title": "AstraZeneca acquires Novexel",
+      "detail": "AstraZeneca buys Novexel and co-develops ceftazidime-avibactam with Forest Laboratories."
+    },
+    {
+      "year": 2015,
+      "title": "US approval",
+      "detail": "The FDA approves Avycaz under the GAIN Act's qualified infectious disease product programme."
+    },
+    {
+      "year": 2016,
+      "title": "EU approval",
+      "detail": "The European Commission authorises Zavicefta."
+    },
+    {
+      "year": 2016,
+      "title": "Pfizer acquires rights",
+      "detail": "Pfizer acquires AstraZeneca's late-stage small-molecule antibiotics business, including ex-US rights."
+    },
+    {
+      "year": 2019,
+      "title": "WHO Reserve list",
+      "detail": "Ceftazidime-avibactam is added to the WHO Essential Medicines List as a Reserve antibiotic."
+    },
+    {
+      "year": 2020,
+      "title": "AbbVie",
+      "detail": "AbbVie acquires Allergan, which held US rights to Avycaz."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–3 hours for both components",
+    "bioavailability": "IV only",
+    "metabolism": "not significantly metabolised",
+    "excretion": "renal, unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea, vomiting and diarrhoea",
+      "Positive Coombs test",
+      "Headache"
+    ],
+    "serious": [
+      "Reduced efficacy in moderate renal impairment (observed in trials)",
+      "Anaphylaxis",
+      "Clostridioides difficile infection",
+      "Neurotoxicity (seizures, encephalopathy) in renal impairment"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ceftazidime-avibactam is often combined with aztreonam to treat metallo-beta-lactamase producers when aztreonam-avibactam is unavailable."
+  ],
+  "related": [
+    "ceftazidime",
+    "aztreonam",
+    "meropenem",
+    "colistin",
+    "metronidazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ceftazidime/avibactam",
+      "url": "https://en.wikipedia.org/wiki/Ceftazidime/avibactam"
+    },
+    {
+      "title": "DailyMed: avycaz labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=avycaz"
+    },
+    {
+      "title": "EMA: Zavicefta EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/zavicefta"
+    }
+  ],
+  "stage": "written"
 }

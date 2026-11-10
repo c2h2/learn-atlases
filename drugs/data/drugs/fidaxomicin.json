@@ -1,36 +1,127 @@
 {
   "slug": "fidaxomicin",
   "name": "Fidaxomicin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Tiacumicin B",
+    "OPT-80",
+    "PAR-101",
+    "Lipiarmycin A3"
+  ],
+  "brands": [
+    "Dificid",
+    "Dificlir"
+  ],
   "area": "antibacterial",
   "batch": "03",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Macrocyclic (tiacumicin) antibiotic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets or granules for suspension twice daily for 10 days (extended-pulsed regimens also used).",
+  "targets": [
+    "Bacterial RNA polymerase (switch region; rpoB/rpoC, sigma-dependent initiation)"
+  ],
+  "origin": "natural",
+  "originator": "Optimer Pharmaceuticals",
+  "owner": "Merck & Co. (US); other licensees outside the US",
+  "first_approval": {
+    "year": 2011,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Dificid"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Abbott Laboratories (tiacumicins); developed by Optimer Pharmaceuticals",
+    "note": "A fermentation product of the actinomycete Dactylosporangium aurantiacum."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Narrow-spectrum gut-acting antibiotic for C. difficile with fewer recurrences",
+  "summary": "Fidaxomicin is a narrow-spectrum macrocyclic antibiotic that acts within the gut against Clostridioides difficile while largely sparing the normal microbiota. Approved in 2011, it lowers recurrence compared with vancomycin and is preferred in several guidelines for initial and recurrent C. difficile infection.",
+  "mechanism": [
+    "Fidaxomicin binds the 'switch region' of bacterial RNA polymerase at a site distinct from rifamycins, preventing the clamp from closing around promoter DNA and so blocking initiation of transcription. It is bactericidal against C. difficile and inhibits sporulation and toxin production.",
+    "Minimal systemic absorption and low activity against Bacteroides and other commensal anaerobes help preserve colonisation resistance, which is thought to underlie the lower recurrence rates."
+  ],
+  "uses": [
+    "Clostridioides difficile infection in adults and children (initial episodes and recurrences)"
+  ],
+  "history": [
+    {
+      "year": 1975,
+      "title": "Lipiarmycin",
+      "detail": "Lepetit researchers describe lipiarmycin, later shown to be identical to tiacumicin B."
+    },
+    {
+      "year": 2011,
+      "title": "US and EU approval",
+      "detail": "The FDA approves Dificid (May) and the EU authorises Dificlir (December) after two phase III trials showing fewer recurrences than vancomycin."
+    },
+    {
+      "year": 2013,
+      "title": "Cubist acquisition",
+      "detail": "Cubist Pharmaceuticals acquires Optimer."
+    },
+    {
+      "year": 2015,
+      "title": "Merck acquisition",
+      "detail": "Merck & Co. acquires Cubist, including Dificid."
+    },
+    {
+      "year": 2020,
+      "title": "Paediatric approval",
+      "detail": "The FDA approves fidaxomicin for children aged 6 months and older."
+    },
+    {
+      "year": 2021,
+      "title": "Guideline preference",
+      "detail": "IDSA/SHEA focused update recommends fidaxomicin over vancomycin for initial and recurrent C. difficile infection."
+    }
+  ],
+  "pk": {
+    "half_life": "about 8–10 hours",
+    "bioavailability": "minimal systemic absorption",
+    "metabolism": "hydrolysis to active metabolite OP-1118",
+    "excretion": "faecal (>90%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Vomiting",
+      "Abdominal pain",
+      "Constipation"
+    ],
+    "serious": [
+      "Hypersensitivity reactions (angioedema, dyspnoea)",
+      "Gastrointestinal haemorrhage (reported)",
+      "Anaemia and neutropenia (reported)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Fidaxomicin is much more expensive than oral vancomycin, which has influenced its uptake despite guideline preference."
+  ],
+  "related": [
+    "vancomycin",
+    "metronidazole",
+    "clindamycin",
+    "rifaximin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Fidaxomicin",
+      "url": "https://en.wikipedia.org/wiki/Fidaxomicin"
+    },
+    {
+      "title": "DailyMed: fidaxomicin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fidaxomicin"
+    },
+    {
+      "title": "EMA: Dificlir EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/dificlir"
+    }
+  ],
+  "stage": "written"
 }
