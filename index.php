@@ -31,6 +31,7 @@ $T = [
     'Medicine Atlas' => '医学图谱',
     'The medical curriculum in depth: cells, genes, anatomy and physiology, infection and immunity, pathology and pharmacology, every organ system in health and disease, clinical practice and population health. Worked examples, interactive figures and exercises with full solutions. For education, not medical advice.' => '深入讲解医学课程：细胞、基因、解剖与生理，感染与免疫，病理与药理，各器官系统的生理与疾病，临床实践与人群健康。包含详细例题、交互图形以及附完整解答的练习。仅供教育学习，不构成医疗建议。',
     'Peptide Atlas' => '多肽图谱',
+    'Drug Atlas' => '药物图谱', 'drugs' => '种药物',
     'Therapeutic and research peptides — semaglutide, insulin, tirzepatide, BPC-157 and many more — drawn residue by residue, with 3D structures, history, regulation and worldwide attention.' => '治疗用和研究用多肽——司美格鲁肽、胰岛素、替尔泊肽、BPC-157 等——逐个残基绘制，并配有三维结构、发展历史、监管状态和全球关注度。',
     'courses' => '门课程', 'chapters' => '章', 'interactive figures' => '个交互图形', 'peptides' => '种多肽', 'languages' => '种语言',
     'Open' => '打开', 'The atlases are available in English and Simplified Chinese, run entirely from this server and keep no data about you.' => '这些图谱均提供英文和简体中文版本，完全由本服务器提供，不收集任何个人数据。',
@@ -70,6 +71,7 @@ foreach (glob(__DIR__ . '/maths/content/en/*/*.md') ?: [] as $f) {
     $mFigures += preg_match_all('/^:::\s*widget\b/m', (string)file_get_contents($f));
 }
 $pCount = count(glob(__DIR__ . '/peptides/data/peptides/*.json') ?: []);
+$dCount = count(glob(__DIR__ . '/drugs/data/drugs/*.json') ?: []);
 $yCourses = count(glob(__DIR__ . '/physics/content/en/*/course.json') ?: []);
 $yChapters = count(glob(__DIR__ . '/physics/content/en/*/*.md') ?: []);
 $yFigures = 0;
@@ -272,6 +274,17 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
       <h2><?= $h($t('Peptide Atlas')) ?></h2>
       <p><?= $h($t('Therapeutic and research peptides — semaglutide, insulin, tirzepatide, BPC-157 and many more — drawn residue by residue, with 3D structures, history, regulation and worldwide attention.')) ?></p>
       <dl><div><dt><?= $pCount ?></dt><dd><?= $h($t('peptides')) ?></dd></div><div><dt>2</dt><dd><?= $h($t('languages')) ?></dd></div></dl>
+      <span class="open"><?= $h($t('Open')) ?> →</span>
+    </a>
+    <a class="card" href="drugs/">
+      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
+        <?php foreach (['#1baf7a', '#2a78d6', '#eda100', '#eb6834', '#1baf7a', '#2a78d6', '#4a3aa7'] as $i => $c): ?>
+        <rect x="<?= 18 + $i * 38 ?>" y="28" width="30" height="24" rx="12" style="fill:<?= $c ?>"/>
+        <?php endforeach; ?>
+      </svg>
+      <h2><?= $h($t('Drug Atlas')) ?></h2>
+      <p><?= $h($t('Five hundred medicines, from aspirin to gene therapies: how each works, its history, who owns it and whether it is swallowed, injected or inhaled, grouped by any criterion. English skeleton; records being written.')) ?></p>
+      <dl><div><dt><?= $dCount ?></dt><dd><?= $h($t('drugs')) ?></dd></div></dl>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>
   </div>

@@ -1,0 +1,61 @@
+# Drug Atlas roster: 10 batches of 50. One slug per line; the slug is the file name in data/drugs/.
+## 01 cardiovascular
+aspirin clopidogrel ticagrelor prasugrel warfarin heparin enoxaparin apixaban rivaroxaban dabigatran
+alteplase atorvastatin simvastatin rosuvastatin pravastatin lovastatin ezetimibe evolocumab alirocumab inclisiran
+bempedoic-acid fenofibrate propranolol metoprolol atenolol bisoprolol carvedilol captopril enalapril lisinopril
+ramipril losartan valsartan sacubitril-valsartan amlodipine nifedipine diltiazem verapamil hydrochlorothiazide furosemide
+spironolactone eplerenone digoxin amiodarone nitroglycerin isosorbide-mononitrate ivabradine ranolazine tafamidis mavacamten
+## 02 metabolic-endocrine
+insulin-human insulin-glargine insulin-lispro insulin-degludec metformin glibenclamide glimepiride gliclazide pioglitazone acarbose
+sitagliptin linagliptin exenatide liraglutide semaglutide dulaglutide tirzepatide empagliflozin dapagliflozin canagliflozin
+orlistat phentermine levothyroxine methimazole propylthiouracil hydrocortisone prednisone prednisolone dexamethasone fludrocortisone
+alendronate zoledronic-acid denosumab teriparatide romosozumab raloxifene calcitriol cinacalcet allopurinol febuxostat
+colchicine somatropin octreotide cabergoline desmopressin testosterone estradiol finerenone resmetirom teplizumab
+## 03 antibacterials
+benzylpenicillin amoxicillin amoxicillin-clavulanate ampicillin flucloxacillin piperacillin-tazobactam cefalexin cefuroxime ceftriaxone ceftazidime
+cefepime ceftaroline meropenem imipenem-cilastatin ertapenem aztreonam vancomycin teicoplanin daptomycin linezolid
+gentamicin amikacin tobramycin streptomycin erythromycin azithromycin clarithromycin clindamycin doxycycline minocycline
+tigecycline tetracycline ciprofloxacin levofloxacin moxifloxacin co-trimoxazole nitrofurantoin fosfomycin metronidazole chloramphenicol
+colistin rifampicin isoniazid pyrazinamide ethambutol bedaquiline pretomanid fidaxomicin mupirocin ceftazidime-avibactam
+## 04 antivirals-antifungals-antiparasitics
+aciclovir valaciclovir ganciclovir oseltamivir baloxavir-marboxil remdesivir nirmatrelvir-ritonavir molnupiravir zidovudine lamivudine
+tenofovir-disoproxil tenofovir-alafenamide emtricitabine abacavir efavirenz rilpivirine dolutegravir bictegravir raltegravir cabotegravir
+lenacapavir darunavir atazanavir lopinavir-ritonavir sofosbuvir glecaprevir-pibrentasvir entecavir ribavirin peginterferon-alfa-2a nirsevimab
+palivizumab fluconazole itraconazole voriconazole posaconazole amphotericin-b caspofungin terbinafine nystatin chloroquine
+hydroxychloroquine artemether-lumefantrine artesunate quinine primaquine atovaquone-proguanil ivermectin albendazole praziquantel miltefosine
+## 05 oncology-small-molecules
+cyclophosphamide cisplatin carboplatin oxaliplatin doxorubicin paclitaxel docetaxel vincristine etoposide methotrexate
+fluorouracil capecitabine gemcitabine cytarabine temozolomide irinotecan bleomycin azacitidine tretinoin arsenic-trioxide
+tamoxifen anastrozole letrozole fulvestrant enzalutamide abiraterone leuprolide imatinib dasatinib gefitinib
+erlotinib osimertinib crizotinib alectinib lorlatinib sotorasib vemurafenib dabrafenib trametinib sunitinib
+sorafenib lenvatinib ibrutinib acalabrutinib venetoclax palbociclib olaparib bortezomib lenalidomide thalidomide
+## 06 oncology-and-immunology-biologics
+rituximab trastuzumab bevacizumab cetuximab pertuzumab trastuzumab-emtansine trastuzumab-deruxtecan sacituzumab-govitecan enfortumab-vedotin brentuximab-vedotin
+ipilimumab nivolumab pembrolizumab atezolizumab durvalumab daratumumab blinatumomab teclistamab tisagenlecleucel axicabtagene-ciloleucel
+ciltacabtagene-autoleucel lutetium-177-vipivotide-tetraxetan obinutuzumab aldesleukin infliximab adalimumab etanercept certolizumab-pegol golimumab tocilizumab
+anakinra canakinumab secukinumab ixekizumab ustekinumab risankizumab guselkumab vedolizumab natalizumab abatacept
+belimumab anifrolumab omalizumab dupilumab mepolizumab benralizumab tezepelumab eculizumab ocrelizumab alemtuzumab
+## 07 neurology-pain
+levodopa-carbidopa pramipexole ropinirole selegiline rasagiline entacapone amantadine donepezil memantine rivastigmine
+lecanemab donanemab phenytoin carbamazepine valproate lamotrigine levetiracetam topiramate ethosuximide phenobarbital
+gabapentin pregabalin sumatriptan rizatriptan erenumab rimegepant interferon-beta-1a glatiramer-acetate fingolimod dimethyl-fumarate
+riluzole tofersen nusinersen risdiplam onasemnogene-abeparvovec botulinum-toxin-a baclofen morphine codeine oxycodone
+fentanyl tramadol buprenorphine methadone naloxone paracetamol ibuprofen naproxen diclofenac celecoxib
+## 08 psychiatry-sleep-anaesthesia
+fluoxetine sertraline paroxetine citalopram escitalopram venlafaxine duloxetine bupropion mirtazapine trazodone
+amitriptyline imipramine clomipramine phenelzine esketamine zuranolone lithium chlorpromazine haloperidol clozapine
+olanzapine risperidone quetiapine aripiprazole ziprasidone lurasidone paliperidone xanomeline-trospium diazepam lorazepam
+alprazolam midazolam zolpidem suvorexant melatonin buspirone methylphenidate amphetamine lisdexamfetamine atomoxetine
+modafinil naltrexone disulfiram acamprosate varenicline nicotine ketamine propofol sevoflurane lidocaine
+## 09 respiratory-allergy-gastro-urology
+salbutamol salmeterol formoterol tiotropium ipratropium budesonide fluticasone-propionate beclometasone montelukast theophylline
+roflumilast acetylcysteine pirfenidone nintedanib elexacaftor-tezacaftor-ivacaftor ivacaftor sildenafil tadalafil bosentan ambrisentan
+epoprostenol sotatercept cetirizine loratadine fexofenadine diphenhydramine epinephrine omeprazole esomeprazole pantoprazole
+ranitidine cimetidine misoprostol sucralfate ondansetron metoclopramide domperidone aprepitant loperamide lactulose
+macrogol-3350 mesalazine sulfasalazine ursodeoxycholic-acid obeticholic-acid rifaximin tamsulosin finasteride oxybutynin mirabegron
+## 10 haematology-immunology-rare-eye-skin-reproductive
+epoetin-alfa darbepoetin-alfa filgrastim pegfilgrastim eltrombopag romiplostim tranexamic-acid emicizumab octocog-alfa hydroxyurea
+deferasirox ferrous-sulfate cyanocobalamin folic-acid luspatercept exagamglogene-autotemcel voxelotor etranacogene-dezaparvovec ruxolitinib ciclosporin
+tacrolimus sirolimus mycophenolate-mofetil azathioprine leflunomide tofacitinib baricitinib upadacitinib apremilast deucravacitinib
+imiglucerase alglucosidase-alfa patisiran eteplirsen voretigene-neparvovec nitisinone ranibizumab aflibercept faricimab latanoprost
+timolol isotretinoin levonorgestrel ethinylestradiol-levonorgestrel mifepristone oxytocin bupivacaine rocuronium sugammadex nitrous-oxide

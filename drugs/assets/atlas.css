@@ -1,0 +1,40 @@
+/* Drug Atlas — tokens shared in spirit with the Peptide Atlas (specimen paper, indigo ink). */
+:root { color-scheme: light; --paper:#f2f4f3; --sheet:#fcfdfc; --ink:#15192b; --ink-2:#474d61; --ink-3:#676d80;
+  --rule:#d9dee2; --accent:#5a2d82; --wash:#ebe5f3; --oral:#1baf7a; --injected:#2a78d6; --inhaled:#eda100; --topical:#eb6834; --other:#a5abb6;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; --paper:#0f121a; --sheet:#161a24; --ink:#edeff5;
+  --ink-2:#b7bcca; --ink-3:#9197a7; --rule:#272c38; --accent:#b79be8; --wash:#261f38; } }
+:root[data-theme="dark"] { color-scheme: dark; --paper:#0f121a; --sheet:#161a24; --ink:#edeff5; --ink-2:#b7bcca; --ink-3:#9197a7; --rule:#272c38; --accent:#b79be8; --wash:#261f38; }
+*,*::before,*::after { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.55 var(--font); }
+a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+.wrap { max-width:1240px; margin:0 auto; padding:0 16px; }
+.top { background:var(--sheet); border-bottom:1px solid var(--rule); }
+.top .wrap { display:flex; gap:12px; align-items:center; min-height:52px; flex-wrap:wrap; }
+.crumb { color:var(--ink-3); } .brand { font-weight:700; color:var(--ink); } .top nav { margin-left:auto; display:flex; gap:16px; }
+.intro h1 { font-size:clamp(28px,5vw,40px); margin:28px 0 8px; } .muted { color:var(--ink-3); }
+.controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:16px 0 8px; }
+.controls select,.controls input,.controls button { font:inherit; padding:6px 10px; border:1px solid var(--rule); border-radius:6px; background:var(--sheet); color:var(--ink); }
+.controls input { flex:1 1 220px; }
+.chips { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
+.chips a,.chip { padding:3px 10px; border:1px solid var(--rule); border-radius:999px; font-size:14px; color:var(--ink-2); display:inline-block; }
+.chips a.on { background:var(--accent); border-color:var(--accent); color:var(--sheet); }
+.group h2 { font-size:20px; margin:28px 0 10px; border-bottom:1px solid var(--rule); padding-bottom:6px; }
+.group .n { color:var(--ink-3); font-weight:400; font-size:15px; }
+.grid { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:8px; }
+.grid a { display:flex; flex-direction:column; gap:2px; padding:10px 12px; background:var(--sheet); border:1px solid var(--rule); border-radius:8px; color:var(--ink); height:100%; }
+.grid a:hover { border-color:var(--accent); text-decoration:none; }
+.grid .sk a { border-style:dashed; } .grid .sk strong { color:var(--ink-2); }
+.cls { font-size:13px; color:var(--ink-3); } .meta { display:flex; flex-wrap:wrap; gap:4px; margin-top:4px; font-size:12px; }
+.own { color:var(--ink-3); }
+.rt { padding:0 7px; border-radius:4px; font-size:12px; color:#fff; background:var(--other); }
+.rt-oral { background:var(--oral); color:#15192b; } .rt-injected { background:var(--injected); } .rt-inhaled { background:var(--inhaled); color:#15192b; } .rt-topical { background:var(--topical); color:#15192b; }
+.drug { max-width:820px; padding-bottom:40px; } .drug h1 { margin:4px 0; font-size:clamp(28px,5vw,40px); }
+.eyebrow { margin:24px 0 0; font-size:14px; } .brands { color:var(--ink-2); margin:0; } .lede { font-size:19px; color:var(--ink-2); }
+.note { background:var(--wash); padding:10px 14px; border-radius:6px; }
+.facts { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:10px 20px; margin:18px 0; }
+.facts dt { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-3); } .facts dd { margin:0; }
+.tl { list-style:none; padding:0; } .tl li { display:flex; gap:14px; padding:6px 0; border-top:1px solid var(--rule); }
+.tl .yr { font-variant-numeric:tabular-nums; font-weight:700; min-width:3.5em; color:var(--accent); }
+.foot { color:var(--ink-3); font-size:13px; padding:24px 16px 40px; }
+code { font-size:.9em; }
