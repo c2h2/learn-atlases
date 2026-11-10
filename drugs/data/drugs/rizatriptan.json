@@ -31,9 +31,9 @@
     "brand": "Maxalt"
   },
   "discovery": {
-    "year": null,
+    "year": 1991,
     "by": "Merck Sharp & Dohme research laboratories (Terlings Park, UK)",
-    "note": "A triazolylmethyl indole triptan designed for better oral absorption than sumatriptan."
+    "note": "A triazolylmethyl indole triptan designed for better oral absorption than sumatriptan. Year of the first patent, per Wikipedia (patented 1991, medical use 1998)."
   },
   "generic": true,
   "who_essential": false,

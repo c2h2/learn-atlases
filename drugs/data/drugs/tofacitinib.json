@@ -33,11 +33,11 @@
     "brand": "Xeljanz"
   },
   "discovery": {
-    "year": null,
+    "year": 1999,
     "by": "Pfizer, building on NIH work on JAK3",
-    "note": "Designed as a JAK3 inhibitor for transplant immunosuppression after JAK3 was shown to be essential for cytokine signalling through the common gamma chain."
+    "note": "Designed as a JAK3 inhibitor for transplant immunosuppression after JAK3 was shown to be essential for cytokine signalling through the common gamma chain. Year is the priority date of Pfizer's patent application on pyrrolo[2,3-d]pyrimidines (WO 01/42246); the compound (CP-690,550) was published in Science in 2003."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": false,
   "who_status": "not-listed",
   "rx_status": "prescription",
@@ -133,6 +133,14 @@
     {
       "title": "EMA EPAR: Xeljanz",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/xeljanz"
+    },
+    {
+      "title": "Google Patents: WO2001042246A2",
+      "url": "https://patents.google.com/patent/WO2001042246A2/en"
+    },
+    {
+      "title": "Indian Pharma Post: Aurobindo receives USFDA nod for generic tofacitinib (2026)",
+      "url": "https://www.indianpharmapost.com/drug-approval/aurobindo-pharma-receives-usfda-nod-for-generic-tofacitinib-tablets-20480"
     }
   ],
   "stage": "written"

@@ -31,9 +31,9 @@
     "brand": "Enhertu"
   },
   "discovery": {
-    "year": null,
+    "year": 2016,
     "by": "Daiichi Sankyo",
-    "note": "Humanised anti-HER2 antibody joined by a cleavable tetrapeptide linker to deruxtecan (DXd), an exatecan derivative, with a drug-to-antibody ratio of about 8."
+    "note": "Humanised anti-HER2 antibody joined by a cleavable tetrapeptide linker to deruxtecan (DXd), an exatecan derivative, with a drug-to-antibody ratio of about 8. Year the conjugate (DS-8201a) was first described (Ogitani et al., Clin. Cancer Res. 2016)."
   },
   "generic": false,
   "who_essential": false,
@@ -130,6 +130,10 @@
     {
       "title": "EMA – Enhertu EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/enhertu"
+    },
+    {
+      "title": "Ogitani Y et al. DS-8201a (Clin Cancer Res 2016)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27026201/"
     }
   ],
   "stage": "written"

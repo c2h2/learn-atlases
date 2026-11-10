@@ -32,9 +32,9 @@
     "brand": "Exelon"
   },
   "discovery": {
-    "year": null,
+    "year": 1985,
     "by": "Marta Weinstock-Rosin, Hebrew University of Jerusalem",
-    "note": "A carbamate derived from the physostigmine pharmacophore, licensed to Sandoz (later Novartis)."
+    "note": "A carbamate derived from the physostigmine pharmacophore, licensed to Sandoz (later Novartis). Year of the first patent, per Wikipedia (patented 1985, medical use 1997)."
   },
   "generic": true,
   "who_essential": false,

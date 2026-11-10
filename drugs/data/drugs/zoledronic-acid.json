@@ -31,9 +31,9 @@
     "brand": "Zometa"
   },
   "discovery": {
-    "year": null,
+    "year": 1986,
     "by": "Ciba-Geigy (later Novartis)",
-    "note": "The most potent bisphosphonate in clinical use, with an imidazole ring side chain."
+    "note": "The most potent bisphosphonate in clinical use, with an imidazole ring side chain. Year of the first patent, per Wikipedia (patented 1986)."
   },
   "generic": true,
   "who_essential": true,

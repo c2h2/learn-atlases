@@ -32,11 +32,11 @@
     "brand": "Ozempic"
   },
   "discovery": {
-    "year": null,
+    "year": 2005,
     "by": "Novo Nordisk",
-    "note": "Successor to liraglutide with Aib8 substitution for DPP-4 resistance and a C18 fatty diacid linker for strong albumin binding, giving a weekly half-life."
+    "note": "Successor to liraglutide with Aib8 substitution for DPP-4 resistance and a C18 fatty diacid linker for strong albumin binding, giving a weekly half-life. Year is the priority date of Novo Nordisk's patent application on acylated GLP-1 compounds (WO 2006/097537); the discovery was published by Lau et al. in J. Med. Chem. 2015."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": true,
   "who_status": "listed",
   "rx_status": "prescription",
@@ -98,7 +98,7 @@
     {
       "year": 2026,
       "title": "Patent expiry in several countries",
-      "detail": "Key semaglutide patents expire in markets including China, India, Canada and Brazil, opening the way for generic versions."
+      "detail": "The core semaglutide patent expires in India and Brazil in March 2026 and has lapsed in Canada; several Indian companies launch generic versions on 21 March 2026."
     }
   ],
   "pk": {
@@ -159,6 +159,14 @@
     {
       "title": "Wilding JPH et al. STEP 1 (NEJM 2021)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2032183"
+    },
+    {
+      "title": "Google Patents: WO2006097537A2",
+      "url": "https://patents.google.com/patent/WO2006097537A2/en"
+    },
+    {
+      "title": "Business Today: India semaglutide market opens post patent expiry (March 2026)",
+      "url": "https://www.businesstoday.in/industry/pharma/story/sun-pharma-dr-reddys-zydus-mankind-among-first-movers-as-indias-semaglutide-market-opens-post-patent-expiry-521337-2026-03-19"
     }
   ],
   "stage": "written"

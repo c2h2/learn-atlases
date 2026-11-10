@@ -34,9 +34,9 @@
     "brand": "Eldepryl"
   },
   "discovery": {
-    "year": null,
+    "year": 1962,
     "by": "József Knoll and colleagues, Semmelweis University and Chinoin, Budapest",
-    "note": "Developed in the 1960s as the phenylisopropyl compound E-250; its selective MAO-B inhibition and lack of the 'cheese effect' were later characterised."
+    "note": "Developed in the 1960s as the phenylisopropyl compound E-250; its selective MAO-B inhibition and lack of the 'cheese effect' were later characterised. Year Chinoin received a patent on deprenyl (racemic selegiline), per Wikipedia; first published in English in 1965."
   },
   "generic": true,
   "who_essential": false,

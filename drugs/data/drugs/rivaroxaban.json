@@ -28,9 +28,9 @@
     "brand": "Xarelto"
   },
   "discovery": {
-    "year": null,
+    "year": 1999,
     "by": "Bayer",
-    "note": "An oxazolidinone-based direct factor Xa inhibitor discovered by Bayer in the late 1990s."
+    "note": "An oxazolidinone-based direct factor Xa inhibitor discovered by Bayer in the late 1990s. Year is the priority date of Bayer's patent application on substituted oxazolidinones (WO 01/47919)."
   },
   "generic": true,
   "who_essential": true,
@@ -120,6 +120,10 @@
     {
       "title": "Patel MR et al. Rivaroxaban versus warfarin in nonvalvular atrial fibrillation (ROCKET AF). N Engl J Med 2011",
       "url": "https://pubmed.ncbi.nlm.nih.gov/21830957/"
+    },
+    {
+      "title": "Google Patents: WO2001047919A1",
+      "url": "https://patents.google.com/patent/WO2001047919A1/en"
     }
   ],
   "stage": "written"

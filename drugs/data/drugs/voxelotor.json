@@ -29,9 +29,9 @@
     "brand": "Oxbryta"
   },
   "discovery": {
-    "year": null,
+    "year": 2016,
     "by": "Global Blood Therapeutics",
-    "note": "An aldehyde that forms a reversible Schiff base with the N-terminal valine of the haemoglobin alpha chain, stabilising the oxygenated state."
+    "note": "An aldehyde that forms a reversible Schiff base with the N-terminal valine of the haemoglobin alpha chain, stabilising the oxygenated state. Year the compound (GBT440) was first described (Br. J. Haematol. 2016); its discovery was published in ACS Med. Chem. Lett. 2017."
   },
   "generic": false,
   "who_essential": false,
@@ -119,6 +119,10 @@
     {
       "title": "EMA EPAR: Oxbryta",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/oxbryta"
+    },
+    {
+      "title": "Metcalf B et al. Discovery of GBT440 (ACS Med Chem Lett 2017)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28337324/"
     }
   ],
   "stage": "written"

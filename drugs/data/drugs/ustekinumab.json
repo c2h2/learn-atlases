@@ -38,9 +38,9 @@
     "brand": "Stelara"
   },
   "discovery": {
-    "year": null,
+    "year": 2004,
     "by": "Centocor",
-    "note": "Fully human IgG1κ antibody against the p40 subunit shared by IL-12 and IL-23."
+    "note": "Fully human IgG1κ antibody against the p40 subunit shared by IL-12 and IL-23. Year of the first published study of the antibody (phase 1 in psoriasis; Kauffman et al., J. Invest. Dermatol. 2004)."
   },
   "generic": true,
   "who_essential": true,
@@ -143,6 +143,10 @@
     {
       "title": "EMA – Stelara EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/stelara"
+    },
+    {
+      "title": "Kauffman CL et al. Phase I study of a human IL-12 p40 antibody (J Invest Dermatol 2004)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15610511/"
     }
   ],
   "stage": "written"

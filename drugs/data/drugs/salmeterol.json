@@ -27,14 +27,14 @@
   "owner": "GSK; generic combinations available",
   "first_approval": {
     "year": 1990,
-    "agency": null,
+    "agency": "MCA (UK)",
     "country": "UK",
     "brand": "Serevent"
   },
   "discovery": {
-    "year": null,
+    "year": 1983,
     "by": "Glaxo team led by David Jack",
-    "note": "A salbutamol derivative with a long lipophilic side chain intended to anchor the molecule near the beta2 receptor for prolonged action."
+    "note": "A salbutamol derivative with a long lipophilic side chain intended to anchor the molecule near the beta2 receptor for prolonged action. Year of the first patent, per Wikipedia (patented 1983, medical use 1990)."
   },
   "generic": true,
   "who_essential": false,

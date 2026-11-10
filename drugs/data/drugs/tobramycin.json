@@ -29,11 +29,16 @@
   "origin": "natural",
   "originator": "Eli Lilly and Company",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1974,
+    "agency": null,
+    "country": null,
+    "brand": null
+  },
   "discovery": {
-    "year": null,
+    "year": 1967,
     "by": "Eli Lilly and Company",
-    "note": "A component of the nebramycin complex produced by Streptomyces tenebrarius."
+    "note": "A component of the nebramycin complex produced by Streptomyces tenebrarius. Year Lilly described the nebramycin complex from which tobramycin was isolated; Wikipedia gives 1965 as the patent year."
   },
   "generic": true,
   "who_essential": true,

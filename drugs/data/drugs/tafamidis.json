@@ -30,9 +30,9 @@
     "brand": "Vyndaqel"
   },
   "discovery": {
-    "year": null,
+    "year": 2003,
     "by": "Jeffery Kelly and colleagues, Scripps Research Institute",
-    "note": "Structure-based design of small molecules that bind the thyroxine sites of the TTR tetramer; Pfizer acquired FoldRx in 2010."
+    "note": "Structure-based design of small molecules that bind the thyroxine sites of the TTR tetramer; Pfizer acquired FoldRx in 2010. Year the chemical structure was first published by Kelly's group (Razavi et al., Angew. Chem. 2003)."
   },
   "generic": null,
   "who_essential": false,
@@ -126,6 +126,10 @@
     {
       "title": "Maurer MS et al. Tafamidis treatment for patients with transthyretin amyloid cardiomyopathy (ATTR-ACT). N Engl J Med 2018",
       "url": "https://pubmed.ncbi.nlm.nih.gov/30145929/"
+    },
+    {
+      "title": "Razavi H et al. Benzoxazoles as transthyretin amyloid fibril inhibitors (Angew Chem 2003)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12820260/"
     }
   ],
   "stage": "written"

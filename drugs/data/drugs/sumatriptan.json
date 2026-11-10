@@ -31,14 +31,14 @@
   "owner": "generic (many)",
   "first_approval": {
     "year": 1991,
-    "agency": null,
+    "agency": "MEB (Netherlands)",
     "country": "Netherlands",
     "brand": "Imigran"
   },
   "discovery": {
-    "year": null,
+    "year": 1982,
     "by": "Patrick Humphrey and colleagues, Glaxo, UK",
-    "note": "Designed in the 1970s–80s as a selective agonist at the 5-HT1-like receptor mediating cranial vasoconstriction."
+    "note": "Designed in the 1970s–80s as a selective agonist at the 5-HT1-like receptor mediating cranial vasoconstriction. Year of the first patent, per Wikipedia (patented 1982)."
   },
   "generic": true,
   "who_essential": true,

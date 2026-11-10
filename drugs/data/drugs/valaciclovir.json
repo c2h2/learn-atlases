@@ -32,9 +32,9 @@
     "brand": "Valtrex"
   },
   "discovery": {
-    "year": null,
+    "year": 1987,
     "by": "Burroughs Wellcome",
-    "note": "Amino-acid ester designed to be absorbed by intestinal peptide transporters and converted to aciclovir by first-pass hydrolysis."
+    "note": "Amino-acid ester designed to be absorbed by intestinal peptide transporters and converted to aciclovir by first-pass hydrolysis. Year of the first patent, per Wikipedia (patented 1987)."
   },
   "generic": true,
   "who_essential": false,

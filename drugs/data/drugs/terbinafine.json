@@ -30,9 +30,9 @@
     "brand": "Lamisil"
   },
   "discovery": {
-    "year": null,
+    "year": 1984,
     "by": "Anton Stütz and colleagues, Sandoz Research Institute, Vienna",
-    "note": "Developed from naftifine, an allylamine discovered by chance in the 1970s, to give a more potent oral agent."
+    "note": "Developed from naftifine, an allylamine discovered by chance in the 1970s, to give a more potent oral agent. Year the compound (SF 86-327) was first described (Stütz and Petranyi, J. Med. Chem. 1984)."
   },
   "generic": true,
   "who_essential": true,
@@ -115,6 +115,10 @@
     {
       "title": "DailyMed label search: Lamisil",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=lamisil"
+    },
+    {
+      "title": "Stütz A, Petranyi G. Synthesis and antifungal activity of SF 86-327 (J Med Chem 1984)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6502589/"
     }
   ],
   "stage": "written"

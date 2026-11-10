@@ -36,9 +36,9 @@
     "brand": "Actemra"
   },
   "discovery": {
-    "year": null,
+    "year": 1993,
     "by": "Chugai and Osaka University",
-    "note": "Humanised IgG1 antibody against the IL-6 receptor, building on Kishimoto's discovery of IL-6 in 1986."
+    "note": "Humanised IgG1 antibody against the IL-6 receptor, building on Kishimoto's discovery of IL-6 in 1986. Year the humanised anti-IL-6 receptor antibody was first described (Sato et al., Cancer Res. 1993)."
   },
   "generic": true,
   "who_essential": false,
@@ -149,6 +149,10 @@
     {
       "title": "EMA – Roactemra EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/roactemra"
+    },
+    {
+      "title": "Sato K et al. Reshaping a human antibody to inhibit IL-6-dependent growth (Cancer Res 1993)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8428365/"
     }
   ],
   "stage": "written"

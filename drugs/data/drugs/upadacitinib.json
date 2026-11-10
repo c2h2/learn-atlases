@@ -29,9 +29,9 @@
     "brand": "Rinvoq"
   },
   "discovery": {
-    "year": null,
+    "year": 2010,
     "by": "AbbVie",
-    "note": "Designed for greater selectivity for JAK1 over JAK2, JAK3 and TYK2."
+    "note": "Designed for greater selectivity for JAK1 over JAK2, JAK3 and TYK2. Year of the Abbott priority application (July 2010) found to first disclose upadacitinib; the US compound patent is US 8,426,411."
   },
   "generic": false,
   "who_essential": false,
@@ -105,7 +105,10 @@
     ],
     "boxed_warning": "Serious infections, higher all-cause mortality, malignancies including lymphoma and lung cancer, major adverse cardiovascular events and thrombosis, based largely on the ORAL Surveillance trial of tofacitinib in older RA patients with cardiovascular risk factors (class warning for JAK inhibitors)."
   },
-  "facts": [],
+  "facts": [
+    "In May 2023 upadacitinib became the first oral therapy approved by the FDA for moderately to severely active Crohn's disease.",
+    "Like other JAK inhibitors for inflammatory diseases, it carries a boxed warning added in 2021 after the ORAL Surveillance trial of tofacitinib, covering serious infections, mortality, malignancy, major cardiovascular events and thrombosis."
+  ],
   "related": [
     "tofacitinib",
     "baricitinib",
@@ -126,6 +129,10 @@
     {
       "title": "EMA EPAR: Rinvoq",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/rinvoq"
+    },
+    {
+      "title": "Managing IP: CNIPA decision on upadacitinib compound patent",
+      "url": "https://www.managingip.com/article/2cellrrl8fx1vcz4hlurk/features/cnipa-deals-a-heavy-blow-to-abbvies-upadacitinib-patent-portfolio"
     }
   ],
   "stage": "written"

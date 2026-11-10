@@ -33,9 +33,9 @@
     "brand": "Rilutek"
   },
   "discovery": {
-    "year": null,
+    "year": 1963,
     "by": "Rhône-Poulenc",
-    "note": "A benzothiazole studied as an anticonvulsant and neuroprotectant before being tested in ALS on the glutamate excitotoxicity hypothesis."
+    "note": "A benzothiazole studied as an anticonvulsant and neuroprotectant before being tested in ALS on the glutamate excitotoxicity hypothesis. Year the compound (2-amino-6-trifluoromethoxybenzothiazole) was first prepared (Yagupol'skii and Gandel'sman, 1963, per the Merck Index); its pharmacology was characterised by Rhône-Poulenc in the 1980s."
   },
   "generic": true,
   "who_essential": false,
@@ -123,6 +123,10 @@
     {
       "title": "EMA EPAR: Rilutek",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/rilutek"
+    },
+    {
+      "title": "Drugfuture (Merck Index): Riluzole",
+      "url": "https://www.drugfuture.com/chemdata/riluzole.html"
     }
   ],
   "stage": "written"

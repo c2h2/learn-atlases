@@ -22,7 +22,12 @@
   "origin": "natural",
   "originator": "Gruppo Lepetit",
   "owner": "Sanofi (and generics)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1988,
+    "agency": null,
+    "country": "Italy",
+    "brand": "Targocid"
+  },
   "discovery": {
     "year": 1978,
     "by": "Gruppo Lepetit",
@@ -114,6 +119,10 @@
     {
       "title": "UK electronic Medicines Compendium: teicoplanin",
       "url": "https://www.medicines.org.uk/emc/search?q=teicoplanin"
+    },
+    {
+      "title": "TGA FOI document: Targocid evaluation (lists Italian approval, April 1988)",
+      "url": "https://www.tga.gov.au/sites/default/files/foi-131-1617-15.pdf"
     }
   ],
   "stage": "written"

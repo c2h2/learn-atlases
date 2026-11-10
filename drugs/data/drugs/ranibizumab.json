@@ -34,9 +34,9 @@
     "brand": "Lucentis"
   },
   "discovery": {
-    "year": null,
+    "year": 1999,
     "by": "Genentech (Napoleone Ferrara's VEGF programme)",
-    "note": "An affinity-matured humanised Fab fragment derived from the same mouse anti-VEGF antibody as bevacizumab, designed for intraocular use."
+    "note": "An affinity-matured humanised Fab fragment derived from the same mouse anti-VEGF antibody as bevacizumab, designed for intraocular use. Year the affinity-matured anti-VEGF Fab was first described (Chen et al., J. Mol. Biol. 1999)."
   },
   "generic": true,
   "who_essential": false,
@@ -108,7 +108,11 @@
     ],
     "boxed_warning": "Susvimo implant: endophthalmitis has occurred at three times the rate of monthly intravitreal ranibizumab."
   },
-  "facts": [],
+  "facts": [
+    "Ranibizumab is a Fab fragment of about 48 kDa with no Fc region, unlike the full-length antibody bevacizumab made from the same parent mouse antibody.",
+    "Byooviz (ranibizumab-nuna), approved by the FDA in September 2021, was the first biosimilar approved in the US to treat eye disease.",
+    "Susvimo, a refillable ocular implant that delivers ranibizumab continuously, was approved in the US in October 2021."
+  ],
   "related": [
     "aflibercept",
     "faricimab",
@@ -126,6 +130,14 @@
     {
       "title": "EMA EPAR: Lucentis",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/lucentis"
+    },
+    {
+      "title": "Chen Y et al. Selection and analysis of an optimized anti-VEGF antibody (J Mol Biol 1999)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10543973/"
+    },
+    {
+      "title": "FDA: FDA approves first biosimilar to treat macular degeneration disease and other eye conditions (2021)",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-biosimilar-treat-macular-degeneration-disease-and-other-eye-conditions"
     }
   ],
   "stage": "written"

@@ -28,9 +28,9 @@
     "brand": "Zocor"
   },
   "discovery": {
-    "year": null,
+    "year": 1980,
     "by": "Merck & Co.",
-    "note": "A semi-synthetic derivative of lovastatin, made by adding a methyl group to the side chain."
+    "note": "A semi-synthetic derivative of lovastatin, made by adding a methyl group to the side chain. Year Merck patented the compound, per Wikipedia."
   },
   "generic": true,
   "who_essential": true,

@@ -36,9 +36,9 @@
     "brand": "Geodon"
   },
   "discovery": {
-    "year": null,
+    "year": 1987,
     "by": "Pfizer",
-    "note": "Developed in the 1980s–90s as a serotonin–dopamine antagonist with additional 5-HT1A agonism."
+    "note": "Developed in the 1980s–90s as a serotonin–dopamine antagonist with additional 5-HT1A agonism. Year first synthesised at Pfizer, Groton, per Wikipedia."
   },
   "generic": true,
   "who_essential": false,

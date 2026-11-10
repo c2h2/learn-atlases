@@ -30,11 +30,16 @@
   "origin": "natural",
   "originator": "Natural product (tea); first synthesised by Wilhelm Traube",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1902,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Theocin"
+  },
   "discovery": {
     "year": 1888,
     "by": "Albrecht Kossel",
-    "note": "Isolated from tea leaves; chemically synthesised by Traube in 1900; bronchodilator effect recognised in the 1920s."
+    "note": "Isolated from tea leaves; chemically synthesised by Traube in 1900; bronchodilator effect recognised in the 1920s. First used clinically in 1902 as a diuretic (Theocin; Minkowski 1902); its use in asthma came about 20 years later."
   },
   "generic": true,
   "who_essential": false,

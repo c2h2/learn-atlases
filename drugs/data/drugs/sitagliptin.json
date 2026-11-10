@@ -32,9 +32,9 @@
     "brand": "Januvia"
   },
   "discovery": {
-    "year": null,
+    "year": 2001,
     "by": "Merck Research Laboratories (team including Ann Weber)",
-    "note": "Designed as a selective DPP-4 inhibitor after earlier non-selective compounds showed toxicity linked to DPP-8/9 inhibition."
+    "note": "Designed as a selective DPP-4 inhibitor after earlier non-selective compounds showed toxicity linked to DPP-8/9 inhibition. Year is the priority date of Merck's patent application WO 03/004498; the discovery was published by Kim et al. in J. Med. Chem. 2005."
   },
   "generic": true,
   "who_essential": false,
@@ -124,6 +124,10 @@
     {
       "title": "Green JB et al. TECOS (NEJM 2015)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1501352"
+    },
+    {
+      "title": "Google Patents: WO2003004498A1",
+      "url": "https://patents.google.com/patent/WO2003004498A1/en"
     }
   ],
   "stage": "written"

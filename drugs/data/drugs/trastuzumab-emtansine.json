@@ -31,9 +31,9 @@
     "brand": "Kadcyla"
   },
   "discovery": {
-    "year": null,
+    "year": 2008,
     "by": "Genentech and ImmunoGen",
-    "note": "Trastuzumab linked through the non-cleavable thioether linker SMCC to the maytansinoid DM1, about 3.5 drug molecules per antibody."
+    "note": "Trastuzumab linked through the non-cleavable thioether linker SMCC to the maytansinoid DM1, about 3.5 drug molecules per antibody. Year the conjugate was first described in detail (Lewis Phillips et al., Cancer Res. 2008)."
   },
   "generic": false,
   "who_essential": false,
@@ -128,6 +128,10 @@
     {
       "title": "EMA – Kadcyla EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/kadcyla"
+    },
+    {
+      "title": "Lewis Phillips GD et al. Targeting HER2-positive breast cancer with trastuzumab-DM1 (Cancer Res 2008)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19010901/"
     }
   ],
   "stage": "written"

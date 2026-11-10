@@ -29,9 +29,9 @@
     "brand": "Tygacil"
   },
   "discovery": {
-    "year": null,
+    "year": 1999,
     "by": "Wyeth-Ayerst Research",
-    "note": "A minocycline derivative with a glycylamido group at position 9 that overcomes common tetracycline efflux and ribosomal-protection resistance."
+    "note": "A minocycline derivative with a glycylamido group at position 9 that overcomes common tetracycline efflux and ribosomal-protection resistance. Year GAR-936 (later tigecycline) was first described in the literature, per Wikipedia; the glycylcycline class was reported from 1993."
   },
   "generic": true,
   "who_essential": false,

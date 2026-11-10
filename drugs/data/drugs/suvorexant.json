@@ -29,9 +29,9 @@
     "brand": "Belsomra"
   },
   "discovery": {
-    "year": null,
+    "year": 2006,
     "by": "Merck Research Laboratories (Cox, Coleman and colleagues)",
-    "note": "Developed after the 1998 discovery of the orexin (hypocretin) neuropeptides and their role in wakefulness, via high-throughput screening and optimisation of a diazepane series."
+    "note": "Developed after the 1998 discovery of the orexin (hypocretin) neuropeptides and their role in wakefulness, via high-throughput screening and optimisation of a diazepane series. Year is the priority date of Merck's patent application on diazepane orexin receptor antagonists (WO 2008/069997)."
   },
   "generic": false,
   "who_essential": false,
@@ -122,6 +122,10 @@
     {
       "title": "Wikipedia: Orexin",
       "url": "https://en.wikipedia.org/wiki/Orexin"
+    },
+    {
+      "title": "Google Patents: WO2008069997A1",
+      "url": "https://patents.google.com/patent/WO2008069997A1/en"
     }
   ],
   "stage": "written"

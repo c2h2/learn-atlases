@@ -38,11 +38,16 @@
   "origin": "semi-synthetic",
   "originator": "Organon, Schering and Ciba (1930s)",
   "owner": "generic (many); Besins/AbbVie (AndroGel), Bayer (Nebido)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1937,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Testoviron"
+  },
   "discovery": {
     "year": 1935,
     "by": "Ernst Laqueur (isolation, Organon); Adolf Butenandt and Leopold Ruzicka (synthesis)",
-    "note": "Isolated from bull testes in 1935 and synthesised the same year; Butenandt and Ruzicka shared the 1939 Nobel Prize in Chemistry."
+    "note": "Isolated from bull testes in 1935 and synthesised the same year; Butenandt and Ruzicka shared the 1939 Nobel Prize in Chemistry. The first marketed form was testosterone propionate (Schering AG, Testoviron), introduced in 1937."
   },
   "generic": true,
   "who_essential": true,
@@ -104,7 +109,7 @@
     {
       "year": 2025,
       "title": "Class labelling update",
-      "detail": "FDA requires class-wide labelling changes reflecting TRAVERSE, retaining blood-pressure warnings."
+      "detail": "In February 2025 the FDA requires class-wide labelling changes: TRAVERSE results are added, boxed-warning language on increased cardiovascular risk is removed, and a warning on increased blood pressure is added to all testosterone products."
     }
   ],
   "pk": {
@@ -153,6 +158,14 @@
     {
       "title": "Lincoff AM et al. TRAVERSE (NEJM 2023)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2215025"
+    },
+    {
+      "title": "Wikipedia: Testosterone propionate",
+      "url": "https://en.wikipedia.org/wiki/Testosterone_propionate"
+    },
+    {
+      "title": "FDA: FDA issues class-wide labeling changes for testosterone products (2025)",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-issues-class-wide-labeling-changes-testosterone-products"
     }
   ],
   "stage": "written"

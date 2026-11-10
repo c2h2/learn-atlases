@@ -25,14 +25,14 @@
   "owner": "generic (many); Crestor brand held by AstraZeneca",
   "first_approval": {
     "year": 2002,
-    "agency": null,
+    "agency": "MEB (Netherlands)",
     "country": "Netherlands",
     "brand": "Crestor"
   },
   "discovery": {
-    "year": null,
+    "year": 1991,
     "by": "Shionogi",
-    "note": "Licensed to AstraZeneca in 1998 for worldwide development."
+    "note": "Licensed to AstraZeneca in 1998 for worldwide development. Year of the first patent, per Wikipedia (patented 1991)."
   },
   "generic": true,
   "who_essential": false,
@@ -118,6 +118,10 @@
     {
       "title": "Ridker PM et al. Rosuvastatin to prevent vascular events in men and women with elevated C-reactive protein (JUPITER). N Engl J Med 2008",
       "url": "https://pubmed.ncbi.nlm.nih.gov/18997196/"
+    },
+    {
+      "title": "Manufacturing Chemist: First European approval for Crestor (Netherlands, 2002)",
+      "url": "https://manufacturingchemist.com/first-european-approval-for-crestor-31077"
     }
   ],
   "stage": "written"

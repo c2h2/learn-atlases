@@ -31,9 +31,9 @@
     "brand": "Isentress"
   },
   "discovery": {
-    "year": null,
+    "year": 2001,
     "by": "Merck & Co. / IRBM P. Angeletti",
-    "note": "Hydroxypyrimidinone carboxamide derived from earlier diketo-acid integrase inhibitors."
+    "note": "Hydroxypyrimidinone carboxamide derived from earlier diketo-acid integrase inhibitors. Year is the priority date of the Merck/IRBM compound patent application WO 03/035077 (N-substituted hydroxypyrimidinone carboxamides)."
   },
   "generic": false,
   "who_essential": true,
@@ -116,6 +116,10 @@
     {
       "title": "EMA EPAR: Isentress",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/isentress"
+    },
+    {
+      "title": "Google Patents: WO2003035077A1",
+      "url": "https://patents.google.com/patent/WO2003035077A1/en"
     }
   ],
   "stage": "written"

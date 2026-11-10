@@ -30,9 +30,9 @@
     "brand": "Vfend"
   },
   "discovery": {
-    "year": null,
+    "year": 1990,
     "by": "Pfizer (Sandwich, UK)",
-    "note": "Fluconazole derivative with a fluoropyrimidine ring that extends the spectrum to Aspergillus and other moulds."
+    "note": "Fluconazole derivative with a fluoropyrimidine ring that extends the spectrum to Aspergillus and other moulds. Year of the first patent, per Wikipedia (patented 1990)."
   },
   "generic": true,
   "who_essential": true,

@@ -29,9 +29,9 @@
     "brand": "Nplate"
   },
   "discovery": {
-    "year": null,
+    "year": 1998,
     "by": "Amgen",
-    "note": "A 'peptibody': an IgG1 Fc fragment carrying two copies of a TPO-mimetic peptide with no sequence homology to TPO, avoiding the antibody problems of earlier recombinant TPO."
+    "note": "A 'peptibody': an IgG1 Fc fragment carrying two copies of a TPO-mimetic peptide with no sequence homology to TPO, avoiding the antibody problems of earlier recombinant TPO. Year is the priority date of Amgen's patent application on dimeric thrombopoietin peptide mimetics (WO 00/24770)."
   },
   "generic": false,
   "who_essential": false,
@@ -97,7 +97,10 @@
     ],
     "boxed_warning": null
   },
-  "facts": [],
+  "facts": [
+    "Nplate (August 2008) was the first thrombopoietin receptor agonist approved by the FDA, ahead of oral eltrombopag later that year.",
+    "In January 2021 the FDA approved romiplostim to increase survival after acute exposure to myelosuppressive doses of radiation (haematopoietic syndrome of acute radiation syndrome)."
+  ],
   "related": [
     "eltrombopag",
     "filgrastim"
@@ -114,6 +117,10 @@
     {
       "title": "EMA EPAR: Nplate",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/nplate"
+    },
+    {
+      "title": "Google Patents: WO2000024770A2",
+      "url": "https://patents.google.com/patent/WO2000024770A2/en"
     }
   ],
   "stage": "written"

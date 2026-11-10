@@ -28,9 +28,9 @@
     "brand": "Ranexa"
   },
   "discovery": {
-    "year": null,
+    "year": 1983,
     "by": "Syntex",
-    "note": "A piperazine derivative discovered in the 1980s and licensed to CV Therapeutics, later acquired by Gilead in 2009."
+    "note": "A piperazine derivative discovered in the 1980s and licensed to CV Therapeutics, later acquired by Gilead in 2009. Year is the priority date of the Syntex patent on piperazinyl acetanilides (US 4,567,264; Kluge, Clark and colleagues)."
   },
   "generic": true,
   "who_essential": false,
@@ -118,6 +118,10 @@
     {
       "title": "EMA EPAR – Ranexa",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ranexa"
+    },
+    {
+      "title": "Google Patents: US4567264A",
+      "url": "https://patents.google.com/patent/US4567264A/en"
     }
   ],
   "stage": "written"

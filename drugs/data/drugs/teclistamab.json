@@ -30,9 +30,9 @@
     "brand": "Tecvayli"
   },
   "discovery": {
-    "year": null,
+    "year": 2020,
     "by": "Janssen",
-    "note": "Humanised IgG4 bispecific antibody binding B-cell maturation antigen (BCMA) and CD3."
+    "note": "Humanised IgG4 bispecific antibody binding B-cell maturation antigen (BCMA) and CD3. Year the antibody was first described (Pillarisetti et al., Blood Adv. 2020)."
   },
   "generic": false,
   "who_essential": false,
@@ -122,6 +122,10 @@
     {
       "title": "EMA – Tecvayli EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tecvayli"
+    },
+    {
+      "title": "Pillarisetti K et al. Teclistamab is an active T cell-redirecting bispecific antibody (Blood Adv 2020)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32956453/"
     }
   ],
   "stage": "written"

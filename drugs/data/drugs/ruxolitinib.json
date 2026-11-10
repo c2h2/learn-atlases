@@ -116,7 +116,11 @@
     ],
     "boxed_warning": "Opzelura cream carries the JAK inhibitor class boxed warning for serious infections, mortality, malignancy, major adverse cardiovascular events and thrombosis; oral Jakafi does not carry a boxed warning."
   },
-  "facts": [],
+  "facts": [
+    "Jakafi was the first drug approved by the FDA for myelofibrosis, in November 2011.",
+    "Incyte markets ruxolitinib in the US; Novartis sells it as Jakavi outside the US.",
+    "Ruxolitinib cream (Opzelura) became the first FDA-approved treatment for repigmentation in nonsegmental vitiligo in July 2022."
+  ],
   "related": [
     "hydroxyurea",
     "tofacitinib",

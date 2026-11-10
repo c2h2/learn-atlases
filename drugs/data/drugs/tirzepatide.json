@@ -30,9 +30,9 @@
     "brand": "Mounjaro"
   },
   "discovery": {
-    "year": null,
+    "year": 2016,
     "by": "Eli Lilly",
-    "note": "A 39-amino-acid peptide based on the GIP sequence, engineered to also activate the GLP-1 receptor, with a C20 fatty diacid for albumin binding."
+    "note": "A 39-amino-acid peptide based on the GIP sequence, engineered to also activate the GLP-1 receptor, with a C20 fatty diacid for albumin binding. Year Eli Lilly first filed patents disclosing the compound, per Wikipedia."
   },
   "generic": false,
   "who_essential": true,

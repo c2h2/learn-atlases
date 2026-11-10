@@ -29,9 +29,9 @@
     "brand": "Azilect"
   },
   "discovery": {
-    "year": null,
+    "year": 1990,
     "by": "Moussa Youdim and John Finberg, Technion, with Teva",
-    "note": "Developed as a propargylamine MAO-B inhibitor that, unlike selegiline, is not metabolised to amphetamines."
+    "note": "Developed as a propargylamine MAO-B inhibitor that, unlike selegiline, is not metabolised to amphetamines. Year is the priority date of the Technion/Teva patent on R(+)-N-propargyl-1-aminoindan (EP 436492; Youdim, Finberg, Levy, Sterling)."
   },
   "generic": true,
   "who_essential": false,
@@ -116,6 +116,10 @@
     {
       "title": "EMA EPAR: Azilect",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/azilect"
+    },
+    {
+      "title": "Google Patents: EP0436492A2",
+      "url": "https://patents.google.com/patent/EP0436492A2/en"
     }
   ],
   "stage": "written"

@@ -33,9 +33,9 @@
     "brand": "Genvoya (elvitegravir/cobicistat/emtricitabine/TAF)"
   },
   "discovery": {
-    "year": null,
+    "year": 2000,
     "by": "Gilead Sciences",
-    "note": "Phosphonamidate prodrug designed to stay stable in plasma and release tenofovir inside lymphocytes and hepatocytes, mainly via cathepsin A."
+    "note": "Phosphonamidate prodrug designed to stay stable in plasma and release tenofovir inside lymphocytes and hepatocytes, mainly via cathepsin A. Year is the priority date of Gilead's patent application on phosphonate prodrugs (WO 02/08241) covering GS-7340."
   },
   "generic": true,
   "who_essential": false,
@@ -128,6 +128,10 @@
     {
       "title": "DailyMed label search: Descovy",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=descovy"
+    },
+    {
+      "title": "Google Patents: WO2002008241A2",
+      "url": "https://patents.google.com/patent/WO2002008241A2/en"
     }
   ],
   "stage": "written"

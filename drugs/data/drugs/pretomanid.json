@@ -34,10 +34,10 @@
     "by": "PathoGenesis Corporation (C. Kendall Stover and colleagues)",
     "note": "A bicyclic nitroimidazole described in Nature in 2000; rights passed to the non-profit TB Alliance in 2002."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": true,
   "who_status": "listed",
-  "rx_status": "prescription",
+  "rx_status": "prescription; generic versions prequalified by WHO (Macleods, 2024)",
   "tagline": "Nitroimidazole from a non-profit, part of six-month BPaL/BPaLM drug-resistant TB regimens",
   "summary": "Pretomanid is a nitroimidazooxazine developed by the non-profit Global Alliance for TB Drug Development (TB Alliance). Approved in 2019 with bedaquiline and linezolid (BPaL) for highly drug-resistant tuberculosis, it enabled all-oral six-month treatment that WHO now recommends for most rifampicin-resistant TB.",
   "mechanism": [
@@ -123,6 +123,10 @@
     {
       "title": "EMA: Dovprela EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/dovprela"
+    },
+    {
+      "title": "WHO PQ: Macleods pretomanid tablets prequalified",
+      "url": "https://extranet.who.int/prequal/news/macleods-pretomanid-tabl-prequalified"
     }
   ],
   "stage": "written"

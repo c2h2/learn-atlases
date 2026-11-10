@@ -32,9 +32,9 @@
     "brand": "Winrevair"
   },
   "discovery": {
-    "year": null,
+    "year": 2009,
     "by": "Acceleron Pharma",
-    "note": "A ligand trap made of the extracellular domain of activin receptor type IIA fused to human IgG1 Fc, first studied for bone loss and anaemia."
+    "note": "A ligand trap made of the extracellular domain of activin receptor type IIA fused to human IgG1 Fc, first studied for bone loss and anaemia. Year of the first published clinical study of the molecule (as ACE-011; Ruckle et al., J. Bone Miner. Res. 2009)."
   },
   "generic": false,
   "who_essential": false,
@@ -121,6 +121,14 @@
     {
       "title": "DailyMed – sotatercept labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sotatercept"
+    },
+    {
+      "title": "Ruckle J et al. Single-dose study of ACE-011 (JBMR 2009)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19049340/"
+    },
+    {
+      "title": "Merck: European Commission approval for Winrevair (August 2024)",
+      "url": "https://www.merck.com/news/merck-receives-european-commission-approval-for-winrevair-sotatercept-in-combination-with-other-pulmonary-arterial-hypertension-pah-therapies-for-the-treatment-of-pah-in-adult-patients-w/"
     }
   ],
   "stage": "written"

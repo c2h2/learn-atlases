@@ -34,9 +34,9 @@
     "brand": "Edurant"
   },
   "discovery": {
-    "year": null,
+    "year": 2001,
     "by": "Janssen Research Foundation / Tibotec",
-    "note": "Flexible diarylpyrimidine designed to bind the NNRTI pocket in several conformations, retaining activity against some resistant strains."
+    "note": "Flexible diarylpyrimidine designed to bind the NNRTI pocket in several conformations, retaining activity against some resistant strains. Year is the priority date of the Janssen patent application on HIV-inhibiting pyrimidines (WO 03/016306) covering rilpivirine."
   },
   "generic": false,
   "who_essential": false,
@@ -129,6 +129,10 @@
     {
       "title": "EMA EPAR: Edurant",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/edurant"
+    },
+    {
+      "title": "Google Patents: WO2003016306A1",
+      "url": "https://patents.google.com/patent/WO2003016306A1/en"
     }
   ],
   "stage": "written"

@@ -29,9 +29,9 @@
     "brand": "Cosentyx"
   },
   "discovery": {
-    "year": null,
+    "year": 2010,
     "by": "Novartis",
-    "note": "Fully human IgG1κ antibody against IL-17A."
+    "note": "Fully human IgG1κ antibody against IL-17A. Year of the first publication on the antibody (AIN457; Hueber et al., Sci. Transl. Med. 2010)."
   },
   "generic": false,
   "who_essential": false,
@@ -126,6 +126,10 @@
     {
       "title": "EMA – Cosentyx EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/cosentyx"
+    },
+    {
+      "title": "Hueber W et al. Effects of AIN457 (Sci Transl Med 2010)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20926833/"
     }
   ],
   "stage": "written"

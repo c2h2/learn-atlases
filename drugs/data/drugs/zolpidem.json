@@ -34,9 +34,9 @@
     "brand": "Stilnox"
   },
   "discovery": {
-    "year": null,
+    "year": 1980,
     "by": "Synthélabo Recherche",
-    "note": "An imidazopyridine developed in France as a hypnotic with relative selectivity for alpha-1-containing GABA-A receptors."
+    "note": "An imidazopyridine developed in France as a hypnotic with relative selectivity for alpha-1-containing GABA-A receptors. Year is the priority date of Synthélabo's patent (EP 50563; Kaplan and George)."
   },
   "generic": true,
   "who_essential": false,
@@ -125,6 +125,10 @@
     {
       "title": "DailyMed: zolpidem labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=zolpidem"
+    },
+    {
+      "title": "Google Patents: EP0050563A1",
+      "url": "https://patents.google.com/patent/EP0050563A1/en"
     }
   ],
   "stage": "written"

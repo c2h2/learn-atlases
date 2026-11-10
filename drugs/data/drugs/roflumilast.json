@@ -35,9 +35,9 @@
     "brand": "Daxas"
   },
   "discovery": {
-    "year": null,
+    "year": 1993,
     "by": "Byk Gulden, Konstanz, Germany",
-    "note": "A benzamide PDE4 inhibitor optimised for oral once-daily dosing."
+    "note": "A benzamide PDE4 inhibitor optimised for oral once-daily dosing. Year is the priority date of Byk Gulden's patent application on fluoroalkoxy-substituted benzamides (WO 95/01338)."
   },
   "generic": true,
   "who_essential": false,
@@ -123,6 +123,10 @@
     {
       "title": "DailyMed – roflumilast labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=roflumilast"
+    },
+    {
+      "title": "Google Patents: WO1995001338A1",
+      "url": "https://patents.google.com/patent/WO1995001338A1/en"
     }
   ],
   "stage": "written"

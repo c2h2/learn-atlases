@@ -32,9 +32,9 @@
     "brand": "Cialis"
   },
   "discovery": {
-    "year": null,
+    "year": 1994,
     "by": "ICOS Corporation in collaboration with Glaxo Wellcome",
-    "note": "A tetracyclic β-carboline derivative with a long half-life, giving a long window of action."
+    "note": "A tetracyclic β-carboline derivative with a long half-life, giving a long window of action. Year is the priority date of the Glaxo patent application on tetracyclic derivatives (WO 95/19978; A. Daugan)."
   },
   "generic": true,
   "who_essential": false,
@@ -131,6 +131,10 @@
     {
       "title": "DailyMed – tadalafil labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tadalafil"
+    },
+    {
+      "title": "Google Patents: WO1995019978A1",
+      "url": "https://patents.google.com/patent/WO1995019978A1/en"
     }
   ],
   "stage": "written"

@@ -36,9 +36,9 @@
     "brand": "Seroquel"
   },
   "discovery": {
-    "year": null,
+    "year": 1986,
     "by": "ICI Pharmaceuticals (UK)",
-    "note": "Developed in the 1980s as a clozapine-like dibenzothiazepine with low D2 affinity."
+    "note": "Developed in the 1980s as a clozapine-like dibenzothiazepine with low D2 affinity. Year is the priority date of ICI's first compound patent (EP 240228, Warawa and Migler); Wikipedia dates its development to 1985."
   },
   "generic": true,
   "who_essential": true,
@@ -139,6 +139,10 @@
     {
       "title": "DailyMed: quetiapine labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=quetiapine"
+    },
+    {
+      "title": "Google Patents: EP0240228A1 (thiazepine compounds)",
+      "url": "https://patents.google.com/patent/EP0240228A1/en"
     }
   ],
   "stage": "written"

@@ -29,9 +29,9 @@
     "brand": "Evrysdi"
   },
   "discovery": {
-    "year": null,
+    "year": 2018,
     "by": "PTC Therapeutics, SMA Foundation and Roche",
-    "note": "Identified from a high-throughput screen for small molecules that promote SMN2 exon 7 inclusion, then optimised for selectivity."
+    "note": "Identified from a high-throughput screen for small molecules that promote SMN2 exon 7 inclusion, then optimised for selectivity. Year the compound was first described in the literature (Ratni et al., J. Med. Chem. 2018)."
   },
   "generic": false,
   "who_essential": false,
@@ -113,6 +113,10 @@
     {
       "title": "EMA EPAR: Evrysdi",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/evrysdi"
+    },
+    {
+      "title": "Ratni H et al. Discovery of risdiplam (J Med Chem 2018)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30044619/"
     }
   ],
   "stage": "written"

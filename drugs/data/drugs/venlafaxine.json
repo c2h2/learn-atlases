@@ -32,9 +32,9 @@
     "brand": "Effexor"
   },
   "discovery": {
-    "year": null,
+    "year": 1982,
     "by": "Wyeth",
-    "note": "A phenethylamine bicyclic derivative developed at Wyeth in the 1980s as a dual reuptake inhibitor without tricyclic receptor effects."
+    "note": "A phenethylamine bicyclic derivative developed at Wyeth in the 1980s as a dual reuptake inhibitor without tricyclic receptor effects. Year is the priority date of the Wyeth (American Home Products) patent US 4,535,186 (Husbands, Yardley, Muth)."
   },
   "generic": true,
   "who_essential": false,
@@ -126,6 +126,10 @@
     {
       "title": "DailyMed: venlafaxine labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=venlafaxine"
+    },
+    {
+      "title": "Google Patents: US4535186A",
+      "url": "https://patents.google.com/patent/US4535186A/en"
     }
   ],
   "stage": "written"

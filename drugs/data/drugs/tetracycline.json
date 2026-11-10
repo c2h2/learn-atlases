@@ -24,7 +24,12 @@
   "origin": "semi-synthetic",
   "originator": "Pfizer (Lloyd Conover); also Lederle and Bristol",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1954,
+    "agency": "FDA",
+    "country": "US",
+    "brand": null
+  },
   "discovery": {
     "year": 1953,
     "by": "Lloyd Conover (Pfizer)",

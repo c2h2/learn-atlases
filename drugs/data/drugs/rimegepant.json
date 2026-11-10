@@ -30,9 +30,9 @@
     "brand": "Nurtec ODT"
   },
   "discovery": {
-    "year": null,
+    "year": 2009,
     "by": "Bristol-Myers Squibb",
-    "note": "Discovered at BMS as BMS-927711 and licensed to Biohaven in 2016 for phase 3 development."
+    "note": "Discovered at BMS as BMS-927711 and licensed to Biohaven in 2016 for phase 3 development. Year is the priority date of the BMS patent application on CGRP receptor antagonists (WO 2011/046997)."
   },
   "generic": false,
   "who_essential": false,
@@ -114,6 +114,10 @@
     {
       "title": "EMA EPAR: Vydura",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/vydura"
+    },
+    {
+      "title": "Google Patents: WO2011046997A1",
+      "url": "https://patents.google.com/patent/WO2011046997A1/en"
     }
   ],
   "stage": "written"

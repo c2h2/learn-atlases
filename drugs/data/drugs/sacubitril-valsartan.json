@@ -30,9 +30,9 @@
     "brand": "Entresto"
   },
   "discovery": {
-    "year": null,
+    "year": 2010,
     "by": "Novartis",
-    "note": "A supramolecular sodium salt complex of sacubitril and valsartan in a 1:1 molar ratio."
+    "note": "A supramolecular sodium salt complex of sacubitril and valsartan in a 1:1 molar ratio. Year LCZ696 was first described (Gu et al., J. Clin. Pharmacol. 2010); sacubitril itself had been reported by Novartis in 1995."
   },
   "generic": true,
   "who_essential": false,
@@ -82,7 +82,7 @@
     {
       "year": 2025,
       "title": "US generics",
-      "detail": "Generic sacubitril/valsartan launches in the US after patent litigation."
+      "detail": "The first US generic sacubitril/valsartan (MSN, via Novadoz) launches in July 2025 after Novartis's patent challenges fail."
     }
   ],
   "pk": {
@@ -134,6 +134,14 @@
     {
       "title": "McMurray JJV et al. Angiotensin–neprilysin inhibition versus enalapril in heart failure (PARADIGM-HF). N Engl J Med 2014",
       "url": "https://pubmed.ncbi.nlm.nih.gov/25176015/"
+    },
+    {
+      "title": "Gu J et al. Pharmacokinetics and pharmacodynamics of LCZ696 (J Clin Pharmacol 2010)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19934029/"
+    },
+    {
+      "title": "Optum: new generic Entresto (July 2025)",
+      "url": "https://business.optum.com/en/support/professionalrx-resources/newgeneric-entresto-073025.html"
     }
   ],
   "stage": "written"

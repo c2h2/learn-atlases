@@ -29,11 +29,11 @@
     "brand": "Brilique"
   },
   "discovery": {
-    "year": null,
+    "year": 1998,
     "by": "AstraZeneca",
-    "note": "Designed from ATP analogues as a direct-acting, reversible P2Y12 antagonist."
+    "note": "Designed from ATP analogues as a direct-acting, reversible P2Y12 antagonist. Year is the priority date of AstraZeneca's patent application on triazolo[4,5-d]pyrimidines (WO 00/34283)."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": false,
   "who_status": "not-listed",
   "rx_status": "prescription",
@@ -121,6 +121,14 @@
     {
       "title": "Wallentin L et al. Ticagrelor versus clopidogrel in patients with acute coronary syndromes (PLATO). N Engl J Med 2009",
       "url": "https://pubmed.ncbi.nlm.nih.gov/19717846/"
+    },
+    {
+      "title": "Google Patents: WO2000034283A1",
+      "url": "https://patents.google.com/patent/WO2000034283A1/en"
+    },
+    {
+      "title": "Optum: new generic Brilinta (May 2025)",
+      "url": "https://prod-prorx.optum.com/content/dam/optum3/professional-optumrx/resources/pdfs/newgenerics-brilinta-050225.pdf"
     }
   ],
   "stage": "written"

@@ -31,9 +31,9 @@
     "brand": "Skyrizi"
   },
   "discovery": {
-    "year": null,
+    "year": 2015,
     "by": "Boehringer Ingelheim",
-    "note": "Humanised IgG1 antibody against the p19 subunit of IL-23, with Fc mutations reducing effector function; licensed to AbbVie in 2016."
+    "note": "Humanised IgG1 antibody against the p19 subunit of IL-23, with Fc mutations reducing effector function; licensed to AbbVie in 2016. Year the antibody (BI 655066) was first described (Singh et al., mAbs 2015)."
   },
   "generic": false,
   "who_essential": false,
@@ -130,6 +130,10 @@
     {
       "title": "EMA – Skyrizi EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/skyrizi"
+    },
+    {
+      "title": "Singh S et al. A novel high-affinity humanized anti-IL23A antibody (mAbs 2015)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25905918/"
     }
   ],
   "stage": "written"

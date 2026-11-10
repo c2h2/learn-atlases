@@ -32,9 +32,9 @@
     "brand": "Evista"
   },
   "discovery": {
-    "year": null,
+    "year": 1981,
     "by": "Eli Lilly",
-    "note": "Originally developed in the 1980s as keoxifene for breast cancer, then repurposed for osteoporosis."
+    "note": "Originally developed in the 1980s as keoxifene for breast cancer, then repurposed for osteoporosis. Year is the priority date of Lilly's compound patent (EP 62503, C. D. Jones); the structure–activity paper followed in J. Med. Chem. 1984."
   },
   "generic": true,
   "who_essential": false,
@@ -118,6 +118,10 @@
     {
       "title": "Wikipedia: Selective estrogen receptor modulator",
       "url": "https://en.wikipedia.org/wiki/Selective_estrogen_receptor_modulator"
+    },
+    {
+      "title": "Google Patents: EP0062503A1 (benzothiophene compounds)",
+      "url": "https://patents.google.com/patent/EP0062503A1/en"
     }
   ],
   "stage": "written"

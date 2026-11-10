@@ -30,9 +30,9 @@
     "brand": "Diovan"
   },
   "discovery": {
-    "year": null,
+    "year": 1990,
     "by": "Ciba-Geigy",
-    "note": "A non-heterocyclic sartan developed in Basel."
+    "note": "A non-heterocyclic sartan developed in Basel. Year of the first patent, per Wikipedia (patented 1990)."
   },
   "generic": true,
   "who_essential": true,

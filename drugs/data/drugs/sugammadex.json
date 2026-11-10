@@ -33,7 +33,7 @@
     "by": "Anton Bom and colleagues, Organon Laboratories, Newhouse",
     "note": "A gamma-cyclodextrin with eight carboxyl thioether side chains was designed to encapsulate the steroid nucleus of rocuronium in a 1:1 complex."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": false,
   "who_status": "not-listed",
   "rx_status": "prescription; hospital use",
@@ -121,6 +121,10 @@
     {
       "title": "EMA EPAR: Bridion",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/bridion"
+    },
+    {
+      "title": "B. Braun: first generic sugammadex injection in the US (2026)",
+      "url": "https://www.biospace.com/press-releases/b-braun-announces-approval-and-commercialization-of-first-generic-sugammadex-injection-in-the-u-s-market"
     }
   ],
   "stage": "written"

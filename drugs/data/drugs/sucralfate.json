@@ -26,14 +26,14 @@
   "owner": "generic (many)",
   "first_approval": {
     "year": 1968,
-    "agency": null,
+    "agency": "MHW (Japan)",
     "country": "Japan",
     "brand": "Ulcerlmin"
   },
   "discovery": {
-    "year": null,
+    "year": 1967,
     "by": "Chugai Pharmaceutical",
-    "note": "A basic aluminium salt of sucrose octasulfate developed as a non-systemic ulcer-healing agent."
+    "note": "A basic aluminium salt of sucrose octasulfate developed as a non-systemic ulcer-healing agent. Year of Chugai's first preparation reports and patents (Nametaka et al., Yakugaku Zasshi 1967; US 3,432,489), per the Merck Index."
   },
   "generic": true,
   "who_essential": false,
@@ -118,6 +118,10 @@
     {
       "title": "DailyMed – sucralfate labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sucralfate"
+    },
+    {
+      "title": "Drugfuture (Merck Index): Sucralfate",
+      "url": "https://www.drugfuture.com/chemdata/sucralfate.html"
     }
   ],
   "stage": "written"

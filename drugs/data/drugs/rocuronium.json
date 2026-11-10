@@ -30,9 +30,9 @@
     "brand": "Zemuron"
   },
   "discovery": {
-    "year": null,
+    "year": 1987,
     "by": "Organon",
-    "note": "A monoquaternary aminosteroid analogue of vecuronium with lower potency but faster onset, allowing rapid intubation."
+    "note": "A monoquaternary aminosteroid analogue of vecuronium with lower potency but faster onset, allowing rapid intubation. Year is the priority date of the Akzo (Organon) patent covering rocuronium (US 4,894,369; Sleigh, Savage, Carlyle)."
   },
   "generic": true,
   "who_essential": false,
@@ -113,6 +113,10 @@
     {
       "title": "DailyMed: rocuronium labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ROCURONIUM"
+    },
+    {
+      "title": "Google Patents: US4894369A",
+      "url": "https://patents.google.com/patent/US4894369A/en"
     }
   ],
   "stage": "written"

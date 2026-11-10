@@ -31,9 +31,9 @@
     "brand": "Altace"
   },
   "discovery": {
-    "year": null,
+    "year": 1981,
     "by": "Hoechst AG",
-    "note": "A long-acting prodrug ACE inhibitor with high tissue-ACE affinity."
+    "note": "A long-acting prodrug ACE inhibitor with high tissue-ACE affinity. Year of the first patent, per Wikipedia (patented 1981, approved for medical use 1989)."
   },
   "generic": true,
   "who_essential": true,

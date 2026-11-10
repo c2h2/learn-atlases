@@ -29,14 +29,14 @@
   "owner": "generic (many); Boehringer Ingelheim (Flomax, US) and Astellas",
   "first_approval": {
     "year": 1993,
-    "agency": null,
+    "agency": "MHW (Japan)",
     "country": "Japan",
     "brand": "Harnal"
   },
   "discovery": {
-    "year": null,
+    "year": 1980,
     "by": "Yamanouchi Pharmaceutical",
-    "note": "A sulfonamide alpha-blocker selective for the alpha1A subtype that predominates in prostate smooth muscle."
+    "note": "A sulfonamide alpha-blocker selective for the alpha1A subtype that predominates in prostate smooth muscle. Year is the priority date of Yamanouchi's patent (EP 34432), consistent with a company account that tamsulosin was found in 1980."
   },
   "generic": true,
   "who_essential": false,
@@ -120,6 +120,10 @@
     {
       "title": "DailyMed – tamsulosin labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tamsulosin"
+    },
+    {
+      "title": "Google Patents: EP0034432A2",
+      "url": "https://patents.google.com/patent/EP0034432A2/en"
     }
   ],
   "stage": "written"

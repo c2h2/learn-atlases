@@ -27,14 +27,14 @@
   "owner": "generic (many)",
   "first_approval": {
     "year": 1996,
-    "agency": null,
+    "agency": "MCA (UK)",
     "country": "United Kingdom",
     "brand": "Requip"
   },
   "discovery": {
-    "year": null,
+    "year": 1982,
     "by": "SmithKline Beecham",
-    "note": "A non-ergoline indolone dopamine agonist developed for Parkinson's disease."
+    "note": "A non-ergoline indolone dopamine agonist developed for Parkinson's disease. Year is the priority date of the SmithKline patent (US 4,452,808; G. Gallagher); the compound was published in J. Med. Chem. in 1985."
   },
   "generic": true,
   "who_essential": false,
@@ -122,6 +122,10 @@
     {
       "title": "DailyMed: ropinirole labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ropinirole"
+    },
+    {
+      "title": "Google Patents: US4452808A",
+      "url": "https://patents.google.com/patent/US4452808A/en"
     }
   ],
   "stage": "written"

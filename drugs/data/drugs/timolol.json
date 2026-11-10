@@ -35,9 +35,9 @@
     "brand": "Timoptic"
   },
   "discovery": {
-    "year": null,
+    "year": 1968,
     "by": "Merck Sharp & Dohme",
-    "note": "A thiadiazole-substituted propanolamine beta blocker without intrinsic sympathomimetic or membrane-stabilising activity."
+    "note": "A thiadiazole-substituted propanolamine beta blocker without intrinsic sympathomimetic or membrane-stabilising activity. Year of the first patent, per Wikipedia (patented 1968)."
   },
   "generic": true,
   "who_essential": true,

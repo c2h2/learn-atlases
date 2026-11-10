@@ -30,9 +30,9 @@
     "brand": "Evenity"
   },
   "discovery": {
-    "year": null,
+    "year": 2011,
     "by": "Amgen and UCB (Celltech)",
-    "note": "Developed after rare high-bone-mass disorders (sclerosteosis, van Buchem disease) were traced to loss of sclerostin (SOST gene, 2001)."
+    "note": "Developed after rare high-bone-mass disorders (sclerosteosis, van Buchem disease) were traced to loss of sclerostin (SOST gene, 2001). Year of the first published study of the antibody (as AMG 785; Padhi et al., J. Bone Miner. Res. 2011)."
   },
   "generic": false,
   "who_essential": false,
@@ -123,6 +123,10 @@
     {
       "title": "Saag KG et al. ARCH trial (NEJM 2017)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1708322"
+    },
+    {
+      "title": "Padhi D et al. Single-dose study of AMG 785 (JBMR 2011)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20593411/"
     }
   ],
   "stage": "written"

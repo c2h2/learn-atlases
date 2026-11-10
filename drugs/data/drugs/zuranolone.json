@@ -29,9 +29,9 @@
     "brand": "Zurzuvae"
   },
   "discovery": {
-    "year": null,
+    "year": 2017,
     "by": "Sage Therapeutics",
-    "note": "Designed as an orally bioavailable analogue of the endogenous neurosteroid allopregnanolone, following the IV allopregnanolone formulation brexanolone."
+    "note": "Designed as an orally bioavailable analogue of the endogenous neurosteroid allopregnanolone, following the IV allopregnanolone formulation brexanolone. Year the compound (SAGE-217) was first described (Martinez Botella et al., J. Med. Chem. 2017)."
   },
   "generic": false,
   "who_essential": false,
@@ -116,6 +116,14 @@
     {
       "title": "DailyMed: zurzuvae labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=zurzuvae"
+    },
+    {
+      "title": "Martinez Botella G et al. SAGE-217 (J Med Chem 2017)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28753313/"
+    },
+    {
+      "title": "Supernus: Supernus Pharmaceuticals completes acquisition of Sage Therapeutics (2025)",
+      "url": "https://ir.supernus.com/node/15311"
     }
   ],
   "stage": "written"

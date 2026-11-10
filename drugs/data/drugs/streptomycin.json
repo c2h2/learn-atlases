@@ -21,11 +21,16 @@
   "origin": "natural",
   "originator": "Rutgers University (Selman Waksman's laboratory)",
   "owner": "generic (few manufacturers)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1946,
+    "agency": null,
+    "country": "US",
+    "brand": null
+  },
   "discovery": {
     "year": 1943,
     "by": "Albert Schatz, Elizabeth Bugie and Selman Waksman (Rutgers University)",
-    "note": "Isolated from Streptomyces griseus; the first antibiotic active against Mycobacterium tuberculosis."
+    "note": "Isolated from Streptomyces griseus; the first antibiotic active against Mycobacterium tuberculosis. Commercial production began at Merck & Co. by spring 1946, before modern drug-approval requirements."
   },
   "generic": true,
   "who_essential": true,

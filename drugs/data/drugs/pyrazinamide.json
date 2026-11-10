@@ -24,11 +24,16 @@
   "origin": "synthetic",
   "originator": "Lederle Laboratories and Merck & Co.",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1952,
+    "agency": null,
+    "country": "US",
+    "brand": "Aldinamide"
+  },
   "discovery": {
     "year": 1952,
     "by": "Lederle (Kushner and colleagues) and Merck",
-    "note": "Synthesised in 1936; its antituberculosis activity was found in 1952 through work on nicotinamide analogues."
+    "note": "Synthesised in 1936; its antituberculosis activity was found in 1952 through work on nicotinamide analogues. First clinical use in tuberculosis in 1952 (marketed as Aldinamide), shortly after isoniazid."
   },
   "generic": true,
   "who_essential": true,
@@ -115,6 +120,10 @@
     {
       "title": "DailyMed: pyrazinamide labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pyrazinamide"
+    },
+    {
+      "title": "TIME (1952): pyrazinamide (Aldinamide)",
+      "url": "https://content.time.com/time/magazine/article/0,9171,819507,00.html"
     }
   ],
   "stage": "written"

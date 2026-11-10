@@ -30,9 +30,9 @@
     "brand": "Tezspire"
   },
   "discovery": {
-    "year": null,
+    "year": 2014,
     "by": "Amgen",
-    "note": "Fully human IgG2λ antibody against thymic stromal lymphopoietin, co-developed with AstraZeneca."
+    "note": "Fully human IgG2λ antibody against thymic stromal lymphopoietin, co-developed with AstraZeneca. Year of the first published clinical study of the antibody (as AMG 157; Gauvreau et al., NEJM 2014)."
   },
   "generic": false,
   "who_essential": false,
@@ -117,6 +117,10 @@
     {
       "title": "EMA – Tezspire EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tezspire"
+    },
+    {
+      "title": "Gauvreau GM et al. Effects of an anti-TSLP antibody (NEJM 2014)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24846652/"
     }
   ],
   "stage": "written"

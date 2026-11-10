@@ -31,9 +31,9 @@
     "brand": "Trodelvy"
   },
   "discovery": {
-    "year": null,
+    "year": 2011,
     "by": "Immunomedics",
-    "note": "Humanised anti-TROP2 antibody hRS7 linked by a hydrolysable CL2A linker to SN-38, the active metabolite of irinotecan."
+    "note": "Humanised anti-TROP2 antibody hRS7 linked by a hydrolysable CL2A linker to SN-38, the active metabolite of irinotecan. Year the hRS7–SN-38 conjugate was first described in preclinical studies (Cardillo et al., Clin. Cancer Res. 2011)."
   },
   "generic": false,
   "who_essential": false,
@@ -120,6 +120,10 @@
     {
       "title": "EMA – Trodelvy EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/trodelvy"
+    },
+    {
+      "title": "Cardillo TM et al. Humanized anti-Trop-2 IgG-SN-38 conjugate (Clin Cancer Res 2011)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21372224/"
     }
   ],
   "stage": "written"

@@ -31,9 +31,9 @@
     "brand": "Tzield"
   },
   "discovery": {
-    "year": null,
+    "year": 1994,
     "by": "Jeffrey Bluestone, Kevan Herold and colleagues",
-    "note": "A humanised, Fc-engineered (non-FcR-binding) version of the anti-CD3 antibody OKT3, designed to reduce cytokine release."
+    "note": "A humanised, Fc-engineered (non-FcR-binding) version of the anti-CD3 antibody OKT3, designed to reduce cytokine release. Year the non-activating humanised anti-CD3 antibody was first described (Alegre et al., Transplantation 1994)."
   },
   "generic": false,
   "who_essential": false,
@@ -118,6 +118,10 @@
     {
       "title": "Herold KC et al. TN-10 teplizumab trial (NEJM 2019)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1902226"
+    },
+    {
+      "title": "Alegre ML et al. A non-activating humanized anti-CD3 mAb (Transplantation 1994)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8009586/"
     }
   ],
   "stage": "written"
