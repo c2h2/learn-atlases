@@ -1,36 +1,138 @@
 {
   "slug": "belimumab",
   "name": "Belimumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "LymphoStat-B",
+    "HGS1006"
+  ],
+  "brands": [
+    "Benlysta"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-BLyS (BAFF) monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion every 4 weeks after loading, or weekly subcutaneous injection",
+  "targets": [
+    "TNFSF13B"
+  ],
+  "origin": "biotech",
+  "originator": "Human Genome Sciences with Cambridge Antibody Technology",
+  "owner": "GSK",
+  "first_approval": {
+    "year": 2011,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Benlysta"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Human Genome Sciences and Cambridge Antibody Technology",
+    "note": "Fully human IgG1λ antibody against soluble B-lymphocyte stimulator (BLyS/BAFF), isolated by phage display."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First targeted biologic for lupus, blocking the B-cell survival factor BLyS",
+  "summary": "Belimumab is a human monoclonal antibody that neutralises soluble B-lymphocyte stimulator (BLyS, also called BAFF). Approved in 2011, it was the first new drug for systemic lupus erythematosus in more than 50 years and is also used for lupus nephritis.",
+  "mechanism": [
+    "BLyS is a TNF-family cytokine that binds BAFF-R, TACI and BCMA on B cells and promotes their survival and maturation; levels are raised in many patients with lupus.",
+    "Belimumab binds soluble BLyS and prevents receptor binding, causing apoptosis of autoreactive transitional and naïve B cells and lowering autoantibody levels, without directly depleting memory B cells or plasma cells."
+  ],
+  "uses": [
+    "Active autoantibody-positive systemic lupus erythematosus (adults and children ≥5 years) on standard therapy",
+    "Active lupus nephritis (with standard therapy)"
+  ],
+  "history": [
+    {
+      "year": 1999,
+      "title": "BLyS discovered",
+      "detail": "Human Genome Sciences scientists identify BLyS from genomic sequencing."
+    },
+    {
+      "year": 2010,
+      "title": "BLISS trials",
+      "detail": "BLISS-52 and BLISS-76 meet their primary endpoints in SLE."
+    },
+    {
+      "year": 2011,
+      "title": "FDA and EU approval",
+      "detail": "Approved in March (US) and July (EU), the first new SLE drug since the 1950s."
+    },
+    {
+      "year": 2012,
+      "title": "GSK acquires HGS",
+      "detail": "GSK buys Human Genome Sciences."
+    },
+    {
+      "year": 2017,
+      "title": "Subcutaneous form",
+      "detail": "Weekly subcutaneous belimumab approved."
+    },
+    {
+      "year": 2019,
+      "title": "Children",
+      "detail": "IV belimumab approved for children with SLE aged 5 years and older."
+    },
+    {
+      "year": 2020,
+      "title": "Lupus nephritis",
+      "detail": "Approved for lupus nephritis (BLISS-LN), the first drug approved for this indication."
+    }
+  ],
+  "pk": {
+    "half_life": "~19 days (IV); ~18 days (SC)",
+    "bioavailability": "~74% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Diarrhoea",
+      "Pyrexia",
+      "Nasopharyngitis and bronchitis",
+      "Insomnia",
+      "Pain in extremity",
+      "Infusion reactions"
+    ],
+    "serious": [
+      "Serious infections",
+      "Hypersensitivity and anaphylaxis",
+      "Depression and suicidality",
+      "Progressive multifocal leukoencephalopathy (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Belimumab was the first drug approved for lupus since hydroxychloroquine and corticosteroids in the 1950s.",
+    "BLyS was among the first drug targets identified directly from genomic sequencing data."
+  ],
+  "related": [
+    "anifrolumab",
+    "rituximab",
+    "hydroxychloroquine",
+    "mycophenolate-mofetil",
+    "obinutuzumab",
+    "prednisone"
+  ],
+  "references": [
+    {
+      "title": "Belimumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Belimumab"
+    },
+    {
+      "title": "DailyMed – belimumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=belimumab"
+    },
+    {
+      "title": "EMA – Benlysta EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/benlysta"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,164 @@
 {
   "slug": "bevacizumab",
   "name": "Bevacizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "rhuMAb-VEGF",
+    "bevacizumab-awwb",
+    "bevacizumab-bvzr",
+    "bevacizumab gamma"
+  ],
+  "brands": [
+    "Avastin",
+    "Mvasi",
+    "Zirabev",
+    "Alymsys",
+    "Vegzelma",
+    "Lytenava"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Anti-VEGF-A monoclonal antibody (angiogenesis inhibitor)",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "intravitreal"
+  ],
+  "route_note": "IV infusion every 2–3 weeks in oncology; intravitreal injection for neovascular AMD (widely off-label; Lytenava licensed in the EU)",
+  "targets": [
+    "VEGFA"
+  ],
+  "origin": "biotech",
+  "originator": "Genentech",
+  "owner": "Roche (Genentech); biosimilars from several companies",
+  "first_approval": {
+    "year": 2004,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Avastin"
+  },
+  "discovery": {
+    "year": 1997,
+    "by": "Genentech",
+    "note": "Humanised form of the murine anti-VEGF antibody A.4.6.1; VEGF itself was cloned at Genentech by Napoleone Ferrara in 1989."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First angiogenesis inhibitor approved for cancer, blocking VEGF-A",
+  "summary": "Bevacizumab is a humanised monoclonal antibody that neutralises vascular endothelial growth factor A (VEGF-A). It was the first anti-angiogenic drug approved for cancer and is used with chemotherapy in colorectal, lung, ovarian, cervical and other cancers; it is also widely used off-label by intravitreal injection for retinal disease.",
+  "mechanism": [
+    "Bevacizumab binds all isoforms of VEGF-A and prevents it from activating VEGF receptors (VEGFR-1 and VEGFR-2) on endothelial cells.",
+    "Blocking VEGF signalling inhibits new blood-vessel formation, causes regression of immature tumour vessels and normalises the remaining vasculature, which may improve chemotherapy delivery. In the eye it reduces leakage and growth of abnormal choroidal vessels."
+  ],
+  "uses": [
+    "Metastatic colorectal cancer (with fluoropyrimidine chemotherapy)",
+    "Non-squamous non-small cell lung cancer",
+    "Recurrent glioblastoma",
+    "Ovarian, fallopian tube and primary peritoneal cancer",
+    "Cervical cancer",
+    "Renal cell carcinoma (with interferon alfa)",
+    "Hepatocellular carcinoma (with atezolizumab)"
+  ],
+  "history": [
+    {
+      "year": 1989,
+      "title": "VEGF cloned",
+      "detail": "Napoleone Ferrara and colleagues at Genentech isolate and clone VEGF."
+    },
+    {
+      "year": 2003,
+      "title": "AVF2107g trial",
+      "detail": "Adding bevacizumab to IFL chemotherapy prolongs survival in metastatic colorectal cancer."
+    },
+    {
+      "year": 2004,
+      "title": "FDA approval",
+      "detail": "Approved as Avastin for first-line metastatic colorectal cancer."
+    },
+    {
+      "year": 2005,
+      "title": "EU approval",
+      "detail": "Approved in the European Union."
+    },
+    {
+      "year": 2006,
+      "title": "Lung cancer",
+      "detail": "Approved for non-squamous NSCLC with carboplatin–paclitaxel."
+    },
+    {
+      "year": 2011,
+      "title": "Breast indication revoked",
+      "detail": "FDA revokes the accelerated approval for metastatic breast cancer after confirmatory trials fail to show sufficient benefit."
+    },
+    {
+      "year": 2017,
+      "title": "First biosimilar",
+      "detail": "FDA approves Mvasi (bevacizumab-awwb), the first US biosimilar for cancer treatment."
+    },
+    {
+      "year": 2020,
+      "title": "Liver cancer",
+      "detail": "Approved with atezolizumab for unresectable hepatocellular carcinoma (IMbrave150)."
+    },
+    {
+      "year": 2024,
+      "title": "Ophthalmic licence",
+      "detail": "The EU approves Lytenava (bevacizumab gamma) for neovascular age-related macular degeneration."
+    }
+  ],
+  "pk": {
+    "half_life": "~20 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Hypertension",
+      "Proteinuria",
+      "Epistaxis and minor bleeding",
+      "Headache",
+      "Fatigue",
+      "Rhinitis"
+    ],
+    "serious": [
+      "Gastrointestinal perforation",
+      "Impaired wound healing",
+      "Haemorrhage",
+      "Arterial thromboembolism",
+      "Posterior reversible encephalopathy syndrome",
+      "Fistula formation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Inexpensive repackaged intravitreal bevacizumab is used worldwide off-label for wet AMD; the CATT trial found it comparable to ranibizumab.",
+    "It is usually withheld for several weeks before and after elective surgery because it impairs wound healing."
+  ],
+  "related": [
+    "ranibizumab",
+    "aflibercept",
+    "atezolizumab",
+    "fluorouracil",
+    "capecitabine",
+    "oxaliplatin",
+    "irinotecan",
+    "carboplatin",
+    "paclitaxel"
+  ],
+  "references": [
+    {
+      "title": "Bevacizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bevacizumab"
+    },
+    {
+      "title": "DailyMed – bevacizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bevacizumab"
+    },
+    {
+      "title": "EMA – Avastin EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/avastin"
+    }
+  ],
+  "stage": "written"
 }

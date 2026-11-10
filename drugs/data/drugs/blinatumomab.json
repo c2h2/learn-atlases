@@ -1,36 +1,139 @@
 {
   "slug": "blinatumomab",
   "name": "Blinatumomab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MT103",
+    "AMG 103"
+  ],
+  "brands": [
+    "Blincyto"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "CD19 × CD3 bispecific T-cell engager (BiTE)",
+  "modality": "antibody",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "Continuous IV infusion via portable pump, 28-day cycles",
+  "targets": [
+    "CD19",
+    "CD3E"
+  ],
+  "origin": "biotech",
+  "originator": "Micromet",
+  "owner": "Amgen",
+  "first_approval": {
+    "year": 2014,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Blincyto"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Micromet (with Ludwig-Maximilians-Universität Munich researchers)",
+    "note": "Two single-chain variable fragments joined by a linker, one binding CD19 and one CD3ε; about 55 kDa, without an Fc region."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "First bispecific T-cell engager, linking T cells to CD19-positive leukaemia cells",
+  "summary": "Blinatumomab is a bispecific antibody construct that binds CD19 on B cells and CD3 on T cells, directing the patient's T cells to kill B-lineage leukaemia cells. It is used in B-cell precursor acute lymphoblastic leukaemia, including relapsed disease, measurable residual disease and consolidation.",
+  "mechanism": [
+    "Blinatumomab bridges a CD3-positive T cell to a CD19-positive target cell, forming a cytolytic synapse independent of MHC and T-cell receptor specificity.",
+    "The engaged T cells release perforin and granzymes, killing the target cell, and proliferate and secrete cytokines, which can cause cytokine release syndrome. Its small size and lack of Fc give a short half-life, requiring continuous infusion."
+  ],
+  "uses": [
+    "Relapsed or refractory CD19-positive B-cell precursor ALL (adults and children)",
+    "CD19-positive B-ALL in first or second remission with measurable residual disease",
+    "Consolidation of Philadelphia chromosome-negative CD19-positive B-ALL"
+  ],
+  "history": [
+    {
+      "year": 2008,
+      "title": "Early clinical activity",
+      "detail": "Bargou et al. report tumour regression in lymphoma at very low doses."
+    },
+    {
+      "year": 2012,
+      "title": "Amgen acquires Micromet",
+      "detail": "Amgen buys Micromet and its BiTE platform."
+    },
+    {
+      "year": 2014,
+      "title": "FDA accelerated approval",
+      "detail": "Approved in December for Philadelphia-negative relapsed or refractory B-ALL."
+    },
+    {
+      "year": 2015,
+      "title": "EU approval",
+      "detail": "Conditional approval in the European Union."
+    },
+    {
+      "year": 2017,
+      "title": "TOWER trial",
+      "detail": "Blinatumomab improves overall survival versus standard chemotherapy in relapsed B-ALL."
+    },
+    {
+      "year": 2018,
+      "title": "MRD indication",
+      "detail": "Accelerated approval for MRD-positive B-ALL — the first FDA approval for MRD."
+    },
+    {
+      "year": 2024,
+      "title": "Consolidation",
+      "detail": "Approved for consolidation regardless of MRD status after E1910 showed a survival benefit."
+    }
+  ],
+  "pk": {
+    "half_life": "~2 h",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Catabolic degradation to peptides and amino acids",
+    "excretion": "Negligible renal excretion of intact drug"
+  },
+  "safety": {
+    "common": [
+      "Pyrexia",
+      "Cytokine release syndrome",
+      "Headache",
+      "Infusion reactions",
+      "Neutropenia and anaemia",
+      "Infections"
+    ],
+    "serious": [
+      "Cytokine release syndrome",
+      "Neurological toxicities including encephalopathy and seizures",
+      "Serious infections",
+      "Tumour lysis syndrome",
+      "Pancreatitis"
+    ],
+    "boxed_warning": "Cytokine release syndrome and neurological toxicities, which may be severe, life-threatening or fatal."
+  },
+  "facts": [
+    "Blinatumomab was the first bispecific T-cell engager approved by the FDA.",
+    "Its 2018 MRD approval was the first time the FDA approved a treatment for measurable residual disease."
+  ],
+  "related": [
+    "tisagenlecleucel",
+    "axicabtagene-ciloleucel",
+    "teclistamab",
+    "rituximab",
+    "cytarabine",
+    "vincristine"
+  ],
+  "references": [
+    {
+      "title": "Blinatumomab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blinatumomab"
+    },
+    {
+      "title": "DailyMed – blinatumomab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=blinatumomab"
+    },
+    {
+      "title": "EMA – Blincyto EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/blincyto"
+    }
+  ],
+  "stage": "written"
 }

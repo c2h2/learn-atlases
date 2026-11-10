@@ -1,36 +1,140 @@
 {
   "slug": "cetuximab",
   "name": "Cetuximab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "C225",
+    "IMC-C225"
+  ],
+  "brands": [
+    "Erbitux"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-EGFR monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion weekly or every 2 weeks",
+  "targets": [
+    "EGFR"
+  ],
+  "origin": "biotech",
+  "originator": "ImClone Systems (from antibody 225 developed by John Mendelsohn and Gordon Sato)",
+  "owner": "Eli Lilly (US and Canada); Merck KGaA elsewhere",
+  "first_approval": {
+    "year": 2003,
+    "agency": "Swissmedic",
+    "country": "Switzerland",
+    "brand": "Erbitux"
+  },
+  "discovery": {
+    "year": 1983,
+    "by": "John Mendelsohn and Gordon Sato (University of California, San Diego)",
+    "note": "Murine antibody 225 against EGFR, later made chimeric as C225."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Chimeric EGFR-blocking antibody for RAS wild-type colorectal and head and neck cancer",
+  "summary": "Cetuximab is a chimeric IgG1 monoclonal antibody that blocks the epidermal growth factor receptor (EGFR). It is used in RAS wild-type metastatic colorectal cancer and in squamous cell carcinoma of the head and neck, including with radiotherapy.",
+  "mechanism": [
+    "Cetuximab binds the extracellular domain III of EGFR with higher affinity than its natural ligands EGF and TGF-α, blocking ligand-induced receptor activation and promoting receptor internalisation and degradation.",
+    "This inhibits downstream RAS–RAF–MAPK and PI3K–AKT signalling, reducing proliferation and increasing sensitivity to radiation and chemotherapy; the IgG1 Fc also mediates ADCC. Tumours with activating RAS mutations signal downstream of EGFR and do not respond."
+  ],
+  "uses": [
+    "RAS wild-type, EGFR-expressing metastatic colorectal cancer",
+    "BRAF V600E-mutant metastatic colorectal cancer (with encorafenib)",
+    "Locally advanced squamous cell carcinoma of the head and neck (with radiotherapy)",
+    "Recurrent or metastatic head and neck squamous cell carcinoma"
+  ],
+  "history": [
+    {
+      "year": 1983,
+      "title": "Antibody 225",
+      "detail": "Mendelsohn and Sato describe anti-EGFR antibodies that inhibit tumour growth."
+    },
+    {
+      "year": 2002,
+      "title": "ImClone controversy",
+      "detail": "An FDA refusal-to-file letter in late 2001 and related insider trading lead to the conviction of ImClone's CEO Samuel Waksal in 2002."
+    },
+    {
+      "year": 2004,
+      "title": "FDA approval",
+      "detail": "Approved as Erbitux for EGFR-expressing metastatic colorectal cancer."
+    },
+    {
+      "year": 2006,
+      "title": "Head and neck cancer",
+      "detail": "Approved with radiotherapy for locally advanced head and neck cancer (Bonner trial)."
+    },
+    {
+      "year": 2008,
+      "title": "Lilly acquires ImClone",
+      "detail": "Eli Lilly buys ImClone Systems."
+    },
+    {
+      "year": 2009,
+      "title": "KRAS selection",
+      "detail": "Labels restrict use to KRAS wild-type colorectal tumours, later extended to all RAS mutations."
+    },
+    {
+      "year": 2020,
+      "title": "BRAF-mutant colorectal cancer",
+      "detail": "Approved with encorafenib for BRAF V600E-mutant mCRC (BEACON CRC)."
+    }
+  ],
+  "pk": {
+    "half_life": "~112 h (about 4.75 days)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Acneiform rash",
+      "Hypomagnesaemia",
+      "Infusion reactions",
+      "Diarrhoea",
+      "Fatigue",
+      "Paronychia"
+    ],
+    "serious": [
+      "Severe infusion reactions and anaphylaxis",
+      "Cardiopulmonary arrest",
+      "Interstitial lung disease",
+      "Severe dermatological toxicity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Severe hypersensitivity reactions are more common in the southern US, linked to pre-existing IgE against galactose-α-1,3-galactose (alpha-gal), associated with tick bites.",
+    "Development of acneiform rash correlates with better response.",
+    "Benefit is restricted to RAS wild-type colorectal cancers."
+  ],
+  "related": [
+    "fluorouracil",
+    "irinotecan",
+    "oxaliplatin",
+    "cisplatin",
+    "bevacizumab",
+    "erlotinib",
+    "gefitinib"
+  ],
+  "references": [
+    {
+      "title": "Cetuximab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cetuximab"
+    },
+    {
+      "title": "DailyMed – cetuximab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=cetuximab"
+    },
+    {
+      "title": "EMA – Erbitux EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/erbitux"
+    }
+  ],
+  "stage": "written"
 }

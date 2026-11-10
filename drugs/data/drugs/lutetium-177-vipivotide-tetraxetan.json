@@ -1,36 +1,130 @@
 {
   "slug": "lutetium-177-vipivotide-tetraxetan",
-  "name": "Lutetium 177 vipivotide tetraxetan",
-  "aliases": [],
-  "brands": [],
+  "name": "Lutetium (177Lu) vipivotide tetraxetan",
+  "aliases": [
+    "177Lu-PSMA-617",
+    "Lu-PSMA-617",
+    "lutetium Lu 177 vipivotide tetraxetan"
+  ],
+  "brands": [
+    "Pluvicto"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "PSMA-targeted radioligand therapy",
+  "modality": "radioligand",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV injection every 6 weeks for up to 6 doses",
+  "targets": [
+    "FOLH1"
+  ],
+  "origin": "synthetic",
+  "originator": "German Cancer Research Center (DKFZ) and Heidelberg University; developed by Endocyte and Novartis",
+  "owner": "Novartis",
+  "first_approval": {
+    "year": 2022,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Pluvicto"
+  },
+  "discovery": {
+    "year": 2015,
+    "by": "Researchers at DKFZ and Heidelberg University Hospital",
+    "note": "PSMA-617 is a small-molecule urea-based PSMA ligand with a DOTA chelator that holds the beta-emitting isotope lutetium-177."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (nuclear medicine)",
+  "tagline": "Radioligand that delivers lutetium-177 beta radiation to PSMA-positive prostate cancer",
+  "summary": "Lutetium (177Lu) vipivotide tetraxetan is a radiopharmaceutical that binds prostate-specific membrane antigen (PSMA) and delivers beta radiation to prostate cancer cells. It is approved for PSMA-positive metastatic castration-resistant prostate cancer after androgen-receptor pathway inhibition.",
+  "mechanism": [
+    "The PSMA-617 ligand binds the enzymatic pocket of PSMA (FOLH1), which is highly overexpressed on most prostate cancer cells, and the complex is internalised.",
+    "Lutetium-177 emits beta particles with a tissue range of under 2 mm, causing DNA damage and death in targeted and nearby cells; it also emits gamma photons that allow imaging. Patients are selected by PSMA PET imaging."
+  ],
+  "uses": [
+    "PSMA-positive metastatic castration-resistant prostate cancer after an androgen-receptor pathway inhibitor, either after taxane chemotherapy or when chemotherapy deferral is appropriate"
+  ],
+  "history": [
+    {
+      "year": 2015,
+      "title": "PSMA-617 described",
+      "detail": "Heidelberg researchers report the theranostic ligand PSMA-617."
+    },
+    {
+      "year": 2017,
+      "title": "Endocyte licence",
+      "detail": "Endocyte acquires worldwide rights to PSMA-617 from ABX GmbH."
+    },
+    {
+      "year": 2018,
+      "title": "Novartis acquisition",
+      "detail": "Novartis buys Endocyte for about $2.1 billion."
+    },
+    {
+      "year": 2021,
+      "title": "VISION trial",
+      "detail": "Added to standard care, it prolongs overall survival in PSMA-positive mCRPC."
+    },
+    {
+      "year": 2022,
+      "title": "FDA approval",
+      "detail": "Approved in March for PSMA-positive mCRPC after AR-pathway inhibitor and taxane; EU approval in December."
+    },
+    {
+      "year": 2025,
+      "title": "Pre-chemotherapy use",
+      "detail": "FDA expands the label to patients who have not received taxane chemotherapy (PSMAfore)."
+    }
+  ],
+  "pk": {
+    "half_life": "Effective blood half-life ~41 h; physical half-life of 177Lu 6.65 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Not metabolised",
+    "excretion": "Mainly renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Fatigue",
+      "Dry mouth",
+      "Nausea",
+      "Anaemia",
+      "Decreased appetite",
+      "Constipation"
+    ],
+    "serious": [
+      "Myelosuppression (anaemia, thrombocytopenia, neutropenia)",
+      "Renal toxicity",
+      "Embryo-fetal toxicity and infertility",
+      "Radiation exposure risk to others"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Salivary glands express PSMA, explaining dry mouth as a characteristic side effect.",
+    "Patient selection uses the matched imaging agent gallium (68Ga) gozetotide or other PSMA PET tracers, an example of theranostics."
+  ],
+  "related": [
+    "enzalutamide",
+    "abiraterone",
+    "docetaxel",
+    "olaparib",
+    "leuprolide"
+  ],
+  "references": [
+    {
+      "title": "Lutetium (177Lu) vipivotide tetraxetan – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lutetium_(177Lu)_vipivotide_tetraxetan"
+    },
+    {
+      "title": "DailyMed – lutetium Lu 177 vipivotide tetraxetan labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=lutetium+Lu+177+vipivotide+tetraxetan"
+    },
+    {
+      "title": "EMA – Pluvicto EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/pluvicto"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,135 @@
 {
   "slug": "trastuzumab-deruxtecan",
   "name": "Trastuzumab deruxtecan",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "T-DXd",
+    "DS-8201",
+    "fam-trastuzumab deruxtecan-nxki"
+  ],
+  "brands": [
+    "Enhertu"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-HER2 antibody–drug conjugate (topoisomerase I inhibitor payload)",
+  "modality": "adc",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every 3 weeks",
+  "targets": [
+    "ERBB2",
+    "TOP1"
+  ],
+  "origin": "biotech",
+  "originator": "Daiichi Sankyo",
+  "owner": "Daiichi Sankyo and AstraZeneca (co-commercialised)",
+  "first_approval": {
+    "year": 2019,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Enhertu"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Daiichi Sankyo",
+    "note": "Humanised anti-HER2 antibody joined by a cleavable tetrapeptide linker to deruxtecan (DXd), an exatecan derivative, with a drug-to-antibody ratio of about 8."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "High-payload HER2 ADC that extended targeted therapy to HER2-low breast cancer",
+  "summary": "Trastuzumab deruxtecan is an antibody–drug conjugate delivering a potent topoisomerase I inhibitor to HER2-expressing cells. It has shown large benefits in HER2-positive and HER2-low breast cancer and is approved in gastric, lung and other HER2-expressing solid tumours.",
+  "mechanism": [
+    "The antibody binds HER2 and the conjugate is internalised; lysosomal enzymes cleave the linker, releasing DXd, which traps topoisomerase I–DNA complexes and causes lethal DNA damage.",
+    "DXd is membrane-permeable, so it can diffuse into neighbouring cells (bystander effect). Combined with the high drug-to-antibody ratio, this allows activity even in tumours with low or heterogeneous HER2 expression."
+  ],
+  "uses": [
+    "HER2-positive metastatic breast cancer",
+    "HER2-low and HER2-ultralow metastatic breast cancer",
+    "HER2-mutant non-small cell lung cancer",
+    "HER2-positive gastric or gastro-oesophageal junction adenocarcinoma",
+    "HER2-positive (IHC 3+) solid tumours after prior therapy (tumour-agnostic)"
+  ],
+  "history": [
+    {
+      "year": 2019,
+      "title": "AstraZeneca partnership",
+      "detail": "AstraZeneca and Daiichi Sankyo agree to co-develop and co-commercialise the drug."
+    },
+    {
+      "year": 2019,
+      "title": "FDA accelerated approval",
+      "detail": "Approved in December for HER2-positive metastatic breast cancer after two or more anti-HER2 regimens (DESTINY-Breast01)."
+    },
+    {
+      "year": 2021,
+      "title": "Gastric cancer",
+      "detail": "Approved for HER2-positive gastric cancer (DESTINY-Gastric01)."
+    },
+    {
+      "year": 2022,
+      "title": "HER2-low and lung cancer",
+      "detail": "DESTINY-Breast04 establishes a new HER2-low category; approvals follow for HER2-low breast cancer and HER2-mutant NSCLC."
+    },
+    {
+      "year": 2024,
+      "title": "Tumour-agnostic approval",
+      "detail": "FDA grants accelerated approval for HER2-positive (IHC 3+) solid tumours of any type."
+    },
+    {
+      "year": 2025,
+      "title": "HER2-ultralow",
+      "detail": "Approved for HR-positive HER2-low and HER2-ultralow breast cancer after endocrine therapy (DESTINY-Breast06)."
+    }
+  ],
+  "pk": {
+    "half_life": "~6 days (ADC); ~6 days (released DXd)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Antibody catabolised; DXd metabolised mainly by CYP3A4",
+    "excretion": "DXd excreted mainly in faeces"
+  },
+  "safety": {
+    "common": [
+      "Nausea and vomiting",
+      "Fatigue",
+      "Alopecia",
+      "Neutropenia and anaemia",
+      "Decreased appetite",
+      "Constipation and diarrhoea"
+    ],
+    "serious": [
+      "Interstitial lung disease and pneumonitis (sometimes fatal)",
+      "Neutropenia",
+      "Left ventricular dysfunction",
+      "Embryo-fetal toxicity"
+    ],
+    "boxed_warning": "Interstitial lung disease/pneumonitis and embryo-fetal toxicity."
+  },
+  "facts": [
+    "Its DESTINY-Breast04 results created the clinical category 'HER2-low' breast cancer.",
+    "It is not interchangeable with trastuzumab or trastuzumab emtansine."
+  ],
+  "related": [
+    "trastuzumab",
+    "trastuzumab-emtansine",
+    "pertuzumab",
+    "sacituzumab-govitecan",
+    "irinotecan"
+  ],
+  "references": [
+    {
+      "title": "Trastuzumab deruxtecan – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Trastuzumab_deruxtecan"
+    },
+    {
+      "title": "DailyMed – fam-trastuzumab deruxtecan labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fam-trastuzumab+deruxtecan"
+    },
+    {
+      "title": "EMA – Enhertu EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/enhertu"
+    }
+  ],
+  "stage": "written"
 }

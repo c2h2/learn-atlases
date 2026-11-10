@@ -1,36 +1,130 @@
 {
   "slug": "vedolizumab",
   "name": "Vedolizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MLN0002",
+    "MLN02",
+    "LDP-02"
+  ],
+  "brands": [
+    "Entyvio"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-α4β7 integrin monoclonal antibody (gut-selective)",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion at weeks 0, 2 and 6, then every 8 weeks; subcutaneous maintenance every 2 weeks",
+  "targets": [
+    "ITGA4",
+    "ITGB7"
+  ],
+  "origin": "biotech",
+  "originator": "LeukoSite (later Millennium Pharmaceuticals, Takeda)",
+  "owner": "Takeda",
+  "first_approval": {
+    "year": 2014,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Entyvio"
+  },
+  "discovery": {
+    "year": null,
+    "by": "LeukoSite/Millennium",
+    "note": "Humanised IgG1 version of the murine antibody Act-1, which recognises the α4β7 integrin heterodimer."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Gut-selective α4β7 integrin blocker for ulcerative colitis and Crohn's disease",
+  "summary": "Vedolizumab is a humanised monoclonal antibody that blocks the α4β7 integrin on gut-homing lymphocytes. By preventing these cells from entering intestinal tissue, it treats ulcerative colitis and Crohn's disease with little systemic immunosuppression.",
+  "mechanism": [
+    "The α4β7 integrin on memory T lymphocytes binds MAdCAM-1, an adhesion molecule expressed mainly on intestinal venules, directing those cells to the gut.",
+    "Vedolizumab binds the α4β7 heterodimer and blocks this interaction, reducing lymphocyte trafficking into the inflamed intestine. It does not block α4β1–VCAM-1 binding, so brain lymphocyte surveillance is preserved and PML risk is far lower than with natalizumab."
+  ],
+  "uses": [
+    "Moderate to severe ulcerative colitis",
+    "Moderate to severe Crohn's disease",
+    "Pouchitis (EU)"
+  ],
+  "history": [
+    {
+      "year": 2013,
+      "title": "GEMINI trials",
+      "detail": "Phase 3 GEMINI 1 and 2 results show efficacy in UC and Crohn's disease."
+    },
+    {
+      "year": 2014,
+      "title": "FDA and EU approval",
+      "detail": "Approved in May in both the US and EU."
+    },
+    {
+      "year": 2019,
+      "title": "VARSITY",
+      "detail": "Vedolizumab is superior to adalimumab for clinical remission in UC, the first head-to-head biologic trial in IBD."
+    },
+    {
+      "year": 2020,
+      "title": "EU subcutaneous form",
+      "detail": "EU approves subcutaneous vedolizumab for maintenance."
+    },
+    {
+      "year": 2023,
+      "title": "US subcutaneous form",
+      "detail": "FDA approves subcutaneous Entyvio for UC; Crohn's disease follows in 2024."
+    }
+  ],
+  "pk": {
+    "half_life": "~25 days",
+    "bioavailability": "~75% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nasopharyngitis",
+      "Headache",
+      "Arthralgia",
+      "Nausea",
+      "Fatigue",
+      "Upper respiratory infections"
+    ],
+    "serious": [
+      "Infusion and hypersensitivity reactions",
+      "Serious infections",
+      "Hepatotoxicity (rare)",
+      "Progressive multifocal leukoencephalopathy (theoretical risk; not clearly established)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "VARSITY (2019) was the first head-to-head trial of two biologics in inflammatory bowel disease.",
+    "Its gut selectivity comes from MAdCAM-1 being expressed mainly in the intestine."
+  ],
+  "related": [
+    "natalizumab",
+    "infliximab",
+    "adalimumab",
+    "ustekinumab",
+    "risankizumab",
+    "mesalazine"
+  ],
+  "references": [
+    {
+      "title": "Vedolizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vedolizumab"
+    },
+    {
+      "title": "DailyMed – vedolizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=vedolizumab"
+    },
+    {
+      "title": "EMA – Entyvio EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/entyvio"
+    }
+  ],
+  "stage": "written"
 }

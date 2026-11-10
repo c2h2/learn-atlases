@@ -1,36 +1,141 @@
 {
   "slug": "dupilumab",
   "name": "Dupilumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "REGN668",
+    "SAR231893"
+  ],
+  "brands": [
+    "Dupixent"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-IL-4 receptor α monoclonal antibody (IL-4/IL-13 inhibitor)",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection every 2 or 4 weeks (weekly in some indications) by pre-filled pen or syringe",
+  "targets": [
+    "IL4R"
+  ],
+  "origin": "biotech",
+  "originator": "Regeneron Pharmaceuticals",
+  "owner": "Sanofi and Regeneron",
+  "first_approval": {
+    "year": 2017,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Dupixent"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Regeneron",
+    "note": "Fully human IgG4 antibody against IL-4Rα, generated with Regeneron's VelocImmune mice; co-developed with Sanofi."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "IL-4/IL-13 blocker treating atopic dermatitis, asthma and other type 2 diseases",
+  "summary": "Dupilumab is a human monoclonal antibody that blocks the shared IL-4 receptor α subunit, inhibiting signalling by both IL-4 and IL-13. It treats a range of type 2 inflammatory diseases, including atopic dermatitis, asthma, nasal polyps, eosinophilic oesophagitis, prurigo nodularis, chronic urticaria, COPD with eosinophilia and bullous pemphigoid.",
+  "mechanism": [
+    "IL-4 and IL-13 are central type 2 cytokines. IL-4 acts through the type I receptor (IL-4Rα with γc) and both cytokines through the type II receptor (IL-4Rα with IL-13Rα1), activating JAK–STAT6.",
+    "Dupilumab binds IL-4Rα and blocks both receptor types, reducing IgE class switching, eosinophil recruitment, mucus production, airway hyperresponsiveness, skin barrier dysfunction and itch."
+  ],
+  "uses": [
+    "Moderate to severe atopic dermatitis (from 6 months of age)",
+    "Moderate to severe eosinophilic or oral-corticosteroid-dependent asthma",
+    "Chronic rhinosinusitis with nasal polyps",
+    "Eosinophilic oesophagitis",
+    "Prurigo nodularis",
+    "COPD with raised blood eosinophils",
+    "Chronic spontaneous urticaria",
+    "Bullous pemphigoid"
+  ],
+  "history": [
+    {
+      "year": 2007,
+      "title": "Collaboration",
+      "detail": "Sanofi and Regeneron's antibody collaboration includes the IL-4Rα programme."
+    },
+    {
+      "year": 2017,
+      "title": "FDA approval",
+      "detail": "Approved in March for moderate to severe atopic dermatitis; EU approval follows in September."
+    },
+    {
+      "year": 2018,
+      "title": "Asthma",
+      "detail": "Approved as add-on maintenance for moderate to severe asthma."
+    },
+    {
+      "year": 2019,
+      "title": "Nasal polyps",
+      "detail": "Approved for chronic rhinosinusitis with nasal polyps."
+    },
+    {
+      "year": 2022,
+      "title": "EoE and prurigo nodularis",
+      "detail": "First drug approved in the US for eosinophilic oesophagitis and for prurigo nodularis."
+    },
+    {
+      "year": 2024,
+      "title": "COPD",
+      "detail": "Approved for COPD with an eosinophilic phenotype in the EU (July) and US (September), the first biologic for COPD."
+    },
+    {
+      "year": 2025,
+      "title": "Urticaria and pemphigoid",
+      "detail": "FDA approves it for chronic spontaneous urticaria (April) and bullous pemphigoid (June)."
+    }
+  ],
+  "pk": {
+    "half_life": "Not well defined (target-mediated); concentrations fall below detection ~10–13 weeks after last dose",
+    "bioavailability": "~64% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Injection-site reactions",
+      "Conjunctivitis and keratitis",
+      "Oral herpes",
+      "Eosinophilia",
+      "Arthralgia"
+    ],
+    "serious": [
+      "Hypersensitivity reactions including anaphylaxis",
+      "Severe conjunctivitis and keratitis",
+      "Eosinophilic conditions (vasculitis, pneumonia)",
+      "Helminth infections"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Conjunctivitis is much more common in atopic dermatitis patients treated with dupilumab than in other indications.",
+    "It was the first biologic approved for COPD."
+  ],
+  "related": [
+    "omalizumab",
+    "mepolizumab",
+    "benralizumab",
+    "tezepelumab",
+    "upadacitinib",
+    "ciclosporin"
+  ],
+  "references": [
+    {
+      "title": "Dupilumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dupilumab"
+    },
+    {
+      "title": "DailyMed – dupilumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=dupilumab"
+    },
+    {
+      "title": "EMA – Dupixent EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/dupixent"
+    }
+  ],
+  "stage": "written"
 }

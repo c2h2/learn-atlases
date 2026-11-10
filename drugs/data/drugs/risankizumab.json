@@ -1,36 +1,135 @@
 {
   "slug": "risankizumab",
   "name": "Risankizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BI 655066",
+    "ABBV-066",
+    "risankizumab-rzaa"
+  ],
+  "brands": [
+    "Skyrizi"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-IL-23 (p19) monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "sc",
+    "iv"
+  ],
+  "route_note": "Subcutaneous injection every 12 weeks (psoriasis) or every 8 weeks via on-body injector (IBD) after IV induction for IBD",
+  "targets": [
+    "IL23A"
+  ],
+  "origin": "biotech",
+  "originator": "Boehringer Ingelheim",
+  "owner": "AbbVie",
+  "first_approval": {
+    "year": 2019,
+    "agency": "PMDA",
+    "country": "Japan",
+    "brand": "Skyrizi"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Boehringer Ingelheim",
+    "note": "Humanised IgG1 antibody against the p19 subunit of IL-23, with Fc mutations reducing effector function; licensed to AbbVie in 2016."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "IL-23 p19 antibody for psoriasis, psoriatic arthritis, Crohn's disease and UC",
+  "summary": "Risankizumab is a humanised monoclonal antibody that selectively blocks interleukin-23 by binding its p19 subunit. It is used for plaque psoriasis, psoriatic arthritis, Crohn's disease and ulcerative colitis, and has become one of AbbVie's leading immunology products.",
+  "mechanism": [
+    "Risankizumab binds IL-23 p19 and prevents IL-23 from engaging its receptor, without affecting IL-12, which shares only the p40 subunit.",
+    "Blocking IL-23 reduces the survival and expansion of pathogenic Th17 and other IL-17- and IL-22-producing cells in skin and gut, producing high and durable rates of skin clearance and mucosal healing."
+  ],
+  "uses": [
+    "Moderate to severe plaque psoriasis",
+    "Active psoriatic arthritis",
+    "Moderate to severe Crohn's disease",
+    "Moderate to severe ulcerative colitis"
+  ],
+  "history": [
+    {
+      "year": 2016,
+      "title": "AbbVie licence",
+      "detail": "AbbVie licenses risankizumab from Boehringer Ingelheim."
+    },
+    {
+      "year": 2019,
+      "title": "First approvals",
+      "detail": "Approved in Japan (March), the US and EU (April) for plaque psoriasis."
+    },
+    {
+      "year": 2020,
+      "title": "IMMerge",
+      "detail": "Risankizumab outperforms secukinumab in psoriasis at week 52."
+    },
+    {
+      "year": 2022,
+      "title": "PsA and Crohn's disease",
+      "detail": "Approved for psoriatic arthritis (January) and Crohn's disease (June)."
+    },
+    {
+      "year": 2024,
+      "title": "Ulcerative colitis",
+      "detail": "Approved for ulcerative colitis in June."
+    },
+    {
+      "year": 2024,
+      "title": "SEQUENCE",
+      "detail": "Risankizumab is superior to ustekinumab for endoscopic remission in Crohn's disease."
+    }
+  ],
+  "pk": {
+    "half_life": "~28 days",
+    "bioavailability": "~89% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Upper respiratory infections",
+      "Headache",
+      "Fatigue",
+      "Injection-site reactions",
+      "Tinea infections",
+      "Arthralgia"
+    ],
+    "serious": [
+      "Serious infections",
+      "Tuberculosis reactivation",
+      "Hypersensitivity reactions",
+      "Hepatotoxicity (during IBD induction)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Liver tests are monitored during IBD induction because of reports of drug-induced liver injury.",
+    "Psoriasis maintenance dosing is once every 12 weeks."
+  ],
+  "related": [
+    "guselkumab",
+    "ustekinumab",
+    "secukinumab",
+    "ixekizumab",
+    "adalimumab",
+    "upadacitinib"
+  ],
+  "references": [
+    {
+      "title": "Risankizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Risankizumab"
+    },
+    {
+      "title": "DailyMed – risankizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=risankizumab"
+    },
+    {
+      "title": "EMA – Skyrizi EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/skyrizi"
+    }
+  ],
+  "stage": "written"
 }

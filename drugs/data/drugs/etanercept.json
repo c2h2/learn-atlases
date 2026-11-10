@@ -1,36 +1,148 @@
 {
   "slug": "etanercept",
   "name": "Etanercept",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "TNFR:Fc",
+    "etanercept-szzs",
+    "etanercept-ykro",
+    "SB4"
+  ],
+  "brands": [
+    "Enbrel",
+    "Benepali",
+    "Erelzi",
+    "Eticovo",
+    "Nepexto"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "TNF receptor–Fc fusion protein (TNF inhibitor)",
+  "modality": "protein",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection once or twice weekly",
+  "targets": [
+    "TNF",
+    "LTA"
+  ],
+  "origin": "biotech",
+  "originator": "Immunex",
+  "owner": "Amgen (US and Canada); Pfizer elsewhere; biosimilars available outside the US",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Enbrel"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1990,
+    "by": "Immunex scientists",
+    "note": "Immunex cloned the p75 TNF receptor (TNFR2) and fused its extracellular domain to the Fc of human IgG1, forming a dimeric decoy receptor."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "First TNF inhibitor approved, a soluble TNF-receptor decoy for inflammatory arthritis",
+  "summary": "Etanercept is a dimeric fusion protein of the TNF receptor 2 ligand-binding domain and the Fc of human IgG1. It was the first TNF inhibitor approved, in 1998 for rheumatoid arthritis, and is used for juvenile idiopathic arthritis, psoriatic arthritis, ankylosing spondylitis and plaque psoriasis; it is not effective in inflammatory bowel disease.",
+  "mechanism": [
+    "Etanercept acts as a soluble decoy receptor, binding TNF-α and lymphotoxin-α (TNF-β) and preventing them from activating cell-surface TNF receptors.",
+    "Because it binds trimeric TNF in a 1:1 ratio and has limited ability to kill cells bearing membrane TNF, its effects differ from anti-TNF antibodies, which may explain its lack of efficacy in Crohn's disease and granulomatous disorders."
+  ],
+  "uses": [
+    "Rheumatoid arthritis",
+    "Polyarticular juvenile idiopathic arthritis",
+    "Psoriatic arthritis",
+    "Ankylosing spondylitis",
+    "Plaque psoriasis (adults and children)"
+  ],
+  "history": [
+    {
+      "year": 1990,
+      "title": "TNFR2 cloned",
+      "detail": "Immunex scientists clone the p75 TNF receptor."
+    },
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Approved in November as Enbrel for rheumatoid arthritis, the first TNF inhibitor."
+    },
+    {
+      "year": 1999,
+      "title": "Juvenile arthritis",
+      "detail": "Approved for polyarticular juvenile idiopathic arthritis."
+    },
+    {
+      "year": 2000,
+      "title": "EU approval",
+      "detail": "Approved in the European Union, marketed by Wyeth (later Pfizer) outside North America."
+    },
+    {
+      "year": 2002,
+      "title": "Amgen acquires Immunex",
+      "detail": "Amgen buys Immunex, largely for Enbrel."
+    },
+    {
+      "year": 2004,
+      "title": "Psoriasis",
+      "detail": "Approved for plaque psoriasis."
+    },
+    {
+      "year": 2016,
+      "title": "Biosimilars",
+      "detail": "Benepali is approved in the EU and Erelzi by the FDA, though US launch is blocked by patents until about 2029."
+    }
+  ],
+  "pk": {
+    "half_life": "~4 days (about 102 h)",
+    "bioavailability": "~60–76% (SC)",
+    "metabolism": "Proteolytic catabolism",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Injection-site reactions",
+      "Upper respiratory infections",
+      "Headache",
+      "Rhinitis"
+    ],
+    "serious": [
+      "Serious infections and sepsis",
+      "Reactivation of latent tuberculosis",
+      "Hepatitis B reactivation",
+      "Lymphoma and other malignancies",
+      "Demyelinating disease",
+      "New or worsening heart failure",
+      "Lupus-like syndrome",
+      "Cytopenias"
+    ],
+    "boxed_warning": "Serious infections (including tuberculosis, invasive fungal and opportunistic infections) and malignancy, including lymphoma."
+  },
+  "facts": [
+    "Etanercept failed in Crohn's disease trials, unlike the anti-TNF monoclonal antibodies.",
+    "US biosimilars have been approved but are not expected to launch until patents expire around 2029."
+  ],
+  "related": [
+    "adalimumab",
+    "infliximab",
+    "certolizumab-pegol",
+    "golimumab",
+    "methotrexate",
+    "abatacept"
+  ],
+  "references": [
+    {
+      "title": "Etanercept – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Etanercept"
+    },
+    {
+      "title": "DailyMed – etanercept labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=etanercept"
+    },
+    {
+      "title": "EMA – Enbrel EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/enbrel"
+    }
+  ],
+  "stage": "written"
 }

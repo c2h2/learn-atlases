@@ -1,36 +1,131 @@
 {
   "slug": "canakinumab",
   "name": "Canakinumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ACZ885"
+  ],
+  "brands": [
+    "Ilaris"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-IL-1β monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection every 4 or 8 weeks; single doses for gout flares",
+  "targets": [
+    "IL1B"
+  ],
+  "origin": "biotech",
+  "originator": "Novartis",
+  "owner": "Novartis",
+  "first_approval": {
+    "year": 2009,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Ilaris"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Novartis",
+    "note": "Fully human IgG1κ antibody against IL-1β, generated in transgenic mice."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Long-acting anti-IL-1β antibody for periodic fever syndromes and Still's disease",
+  "summary": "Canakinumab is a human monoclonal antibody that neutralises interleukin-1β. It is used for rare autoinflammatory periodic fever syndromes, Still's disease and gout flares, and was the subject of CANTOS, the first trial to show that targeting inflammation reduces cardiovascular events.",
+  "mechanism": [
+    "Canakinumab binds IL-1β with high affinity and prevents it from interacting with the IL-1 receptor, without affecting IL-1α or the natural antagonist IL-1Ra.",
+    "In cryopyrinopathies, gain-of-function NLRP3 mutations cause excess inflammasome activation and IL-1β release; neutralising IL-1β suppresses fever, rash, arthritis and the acute-phase response. Its long half-life allows dosing every 4–8 weeks."
+  ],
+  "uses": [
+    "Cryopyrin-associated periodic syndromes",
+    "TNF receptor-associated periodic syndrome",
+    "Hyper-IgD syndrome/mevalonate kinase deficiency",
+    "Colchicine-resistant familial Mediterranean fever",
+    "Still's disease (adult-onset and systemic juvenile idiopathic arthritis)",
+    "Gout flares when NSAIDs and colchicine are unsuitable"
+  ],
+  "history": [
+    {
+      "year": 2009,
+      "title": "FDA and EU approval",
+      "detail": "Approved in June (US) and October (EU) for cryopyrin-associated periodic syndromes."
+    },
+    {
+      "year": 2013,
+      "title": "Systemic JIA",
+      "detail": "Approved for systemic juvenile idiopathic arthritis."
+    },
+    {
+      "year": 2016,
+      "title": "Periodic fevers",
+      "detail": "FDA approves it for TRAPS, HIDS/MKD and FMF."
+    },
+    {
+      "year": 2017,
+      "title": "CANTOS",
+      "detail": "Canakinumab reduces recurrent cardiovascular events and lung cancer incidence; Novartis does not obtain a cardiovascular indication."
+    },
+    {
+      "year": 2020,
+      "title": "Adult-onset Still's disease",
+      "detail": "FDA approves canakinumab for active Still's disease including AOSD."
+    },
+    {
+      "year": 2023,
+      "title": "Gout flares",
+      "detail": "FDA approves it for gout flares in adults who cannot use NSAIDs or colchicine."
+    }
+  ],
+  "pk": {
+    "half_life": "~26 days",
+    "bioavailability": "~66% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nasopharyngitis and upper respiratory infections",
+      "Injection-site reactions",
+      "Headache",
+      "Abdominal pain",
+      "Diarrhoea"
+    ],
+    "serious": [
+      "Serious infections",
+      "Neutropenia",
+      "Macrophage activation syndrome (disease-related)",
+      "Hypersensitivity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "CANTOS (2017) enrolled over 10,000 patients and provided the first proof that anti-inflammatory therapy alone reduces cardiovascular events.",
+    "Fatal infections were more frequent with canakinumab in CANTOS."
+  ],
+  "related": [
+    "anakinra",
+    "colchicine",
+    "tocilizumab",
+    "allopurinol"
+  ],
+  "references": [
+    {
+      "title": "Canakinumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Canakinumab"
+    },
+    {
+      "title": "DailyMed – canakinumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=canakinumab"
+    },
+    {
+      "title": "EMA – Ilaris EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ilaris"
+    }
+  ],
+  "stage": "written"
 }

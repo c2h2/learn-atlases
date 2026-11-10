@@ -1,36 +1,133 @@
 {
   "slug": "trastuzumab-emtansine",
   "name": "Trastuzumab emtansine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "T-DM1",
+    "ado-trastuzumab emtansine",
+    "trastuzumab-MCC-DM1"
+  ],
+  "brands": [
+    "Kadcyla"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-HER2 antibody–drug conjugate (maytansinoid payload)",
+  "modality": "adc",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every 3 weeks",
+  "targets": [
+    "ERBB2",
+    "tubulin"
+  ],
+  "origin": "biotech",
+  "originator": "Genentech (with ImmunoGen linker–payload technology)",
+  "owner": "Roche (Genentech)",
+  "first_approval": {
+    "year": 2013,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Kadcyla"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Genentech and ImmunoGen",
+    "note": "Trastuzumab linked through the non-cleavable thioether linker SMCC to the maytansinoid DM1, about 3.5 drug molecules per antibody."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "First ADC for a solid tumour: trastuzumab carrying the microtubule poison DM1",
+  "summary": "Trastuzumab emtansine (T-DM1) is an antibody–drug conjugate that delivers the cytotoxic maytansinoid DM1 to HER2-overexpressing cancer cells. It is used in previously treated metastatic HER2-positive breast cancer and as adjuvant therapy for residual disease after neoadjuvant treatment.",
+  "mechanism": [
+    "The trastuzumab component binds HER2 and retains its signalling-inhibitory and ADCC activity. After binding, the conjugate is internalised and degraded in lysosomes, releasing lysine-SMCC-DM1.",
+    "DM1 binds tubulin and inhibits microtubule assembly, causing mitotic arrest and cell death. Because the linker is non-cleavable, the released payload is charged and poorly membrane-permeable, limiting bystander killing."
+  ],
+  "uses": [
+    "HER2-positive metastatic breast cancer after trastuzumab and a taxane",
+    "Adjuvant treatment of HER2-positive early breast cancer with residual invasive disease after neoadjuvant therapy"
+  ],
+  "history": [
+    {
+      "year": 2000,
+      "title": "Collaboration",
+      "detail": "Genentech licenses ImmunoGen's maytansinoid conjugate technology for use with trastuzumab."
+    },
+    {
+      "year": 2012,
+      "title": "EMILIA trial",
+      "detail": "T-DM1 improves progression-free and overall survival versus lapatinib–capecitabine."
+    },
+    {
+      "year": 2013,
+      "title": "FDA approval",
+      "detail": "Approved as Kadcyla in February, the first ADC approved for a solid tumour."
+    },
+    {
+      "year": 2013,
+      "title": "EU approval",
+      "detail": "Approved in the European Union in November."
+    },
+    {
+      "year": 2019,
+      "title": "KATHERINE and adjuvant approval",
+      "detail": "T-DM1 halves the risk of recurrence versus trastuzumab in residual disease; FDA approves the indication in May."
+    },
+    {
+      "year": 2022,
+      "title": "Displaced in second line",
+      "detail": "DESTINY-Breast03 shows trastuzumab deruxtecan superior to T-DM1 in metastatic disease."
+    }
+  ],
+  "pk": {
+    "half_life": "~4 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Catabolism of the antibody; released DM1 metabolised by CYP3A4/5",
+    "excretion": "Mainly faecal/biliary for DM1-containing catabolites"
+  },
+  "safety": {
+    "common": [
+      "Fatigue",
+      "Nausea",
+      "Musculoskeletal pain",
+      "Thrombocytopenia",
+      "Raised transaminases",
+      "Headache",
+      "Haemorrhage"
+    ],
+    "serious": [
+      "Hepatotoxicity including liver failure and nodular regenerative hyperplasia",
+      "Left ventricular dysfunction",
+      "Interstitial lung disease",
+      "Haemorrhage",
+      "Peripheral neuropathy"
+    ],
+    "boxed_warning": "Hepatotoxicity, cardiac toxicity and embryo-fetal toxicity; do not substitute for or with trastuzumab."
+  },
+  "facts": [
+    "The US name 'ado-trastuzumab emtansine' was chosen partly to reduce confusion with trastuzumab.",
+    "It was the first antibody–drug conjugate approved for a solid tumour."
+  ],
+  "related": [
+    "trastuzumab",
+    "trastuzumab-deruxtecan",
+    "pertuzumab",
+    "capecitabine"
+  ],
+  "references": [
+    {
+      "title": "Trastuzumab emtansine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Trastuzumab_emtansine"
+    },
+    {
+      "title": "DailyMed – ado-trastuzumab emtansine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ado-trastuzumab+emtansine"
+    },
+    {
+      "title": "EMA – Kadcyla EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/kadcyla"
+    }
+  ],
+  "stage": "written"
 }

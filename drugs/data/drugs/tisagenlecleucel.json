@@ -1,36 +1,144 @@
 {
   "slug": "tisagenlecleucel",
   "name": "Tisagenlecleucel",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CTL019",
+    "tisa-cel"
+  ],
+  "brands": [
+    "Kymriah"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "CD19-directed autologous CAR T-cell therapy (4-1BB costimulation)",
+  "modality": "cell-therapy",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "Single IV infusion of the patient's own genetically modified T cells after lymphodepleting chemotherapy",
+  "targets": [
+    "CD19"
+  ],
+  "origin": "biotech",
+  "originator": "University of Pennsylvania (Carl June, Bruce Levine, David Porter) with Novartis",
+  "owner": "Novartis",
+  "first_approval": {
+    "year": 2017,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Kymriah"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 2011,
+    "by": "Carl June and colleagues (University of Pennsylvania)",
+    "note": "Lentiviral CAR combining an anti-CD19 scFv, a 4-1BB costimulatory domain and CD3ζ signalling."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription (specialist centres)",
+  "tagline": "First CAR T-cell therapy approved, for childhood leukaemia and B-cell lymphomas",
+  "summary": "Tisagenlecleucel is a personalised gene-modified cell therapy in which a patient's T cells are engineered to express a chimeric antigen receptor against CD19. In 2017 it became the first CAR T-cell therapy and the first gene therapy approved in the US, for relapsed or refractory B-cell ALL in young patients.",
+  "mechanism": [
+    "The patient's T cells are collected by leukapheresis and transduced with a lentiviral vector encoding a CAR: an anti-CD19 single-chain antibody fragment linked to 4-1BB and CD3ζ signalling domains.",
+    "After infusion, the CAR T cells recognise CD19 on malignant and normal B cells independently of MHC, become activated, proliferate and kill target cells. The 4-1BB domain supports long persistence, sometimes for years, accompanied by prolonged B-cell aplasia."
+  ],
+  "uses": [
+    "Relapsed or refractory B-cell precursor ALL in patients up to 25 years",
+    "Relapsed or refractory large B-cell lymphoma after two or more lines",
+    "Relapsed or refractory follicular lymphoma after two or more lines"
+  ],
+  "history": [
+    {
+      "year": 2011,
+      "title": "First patients",
+      "detail": "Penn reports dramatic remissions in CLL with CTL019."
+    },
+    {
+      "year": 2012,
+      "title": "Emily Whitehead",
+      "detail": "Emily Whitehead becomes the first child treated with CTL019 for ALL and remains in long-term remission."
+    },
+    {
+      "year": 2012,
+      "title": "Novartis alliance",
+      "detail": "Novartis and Penn form an alliance to develop the therapy."
+    },
+    {
+      "year": 2017,
+      "title": "FDA approval",
+      "detail": "Approved in August for paediatric and young adult B-ALL (ELIANA), the first CAR T-cell therapy approved."
+    },
+    {
+      "year": 2018,
+      "title": "Lymphoma and EU approval",
+      "detail": "Approved for large B-cell lymphoma (JULIET); EU approval follows in August."
+    },
+    {
+      "year": 2022,
+      "title": "Follicular lymphoma",
+      "detail": "Accelerated approval for relapsed or refractory follicular lymphoma (ELARA)."
+    },
+    {
+      "year": 2024,
+      "title": "T-cell malignancy warning",
+      "detail": "FDA adds a boxed warning on secondary T-cell malignancies to all BCMA- and CD19-directed CAR T therapies."
+    },
+    {
+      "year": 2025,
+      "title": "REMS removed",
+      "detail": "FDA eliminates the REMS requirements for approved autologous CAR T-cell therapies."
+    }
+  ],
+  "pk": {
+    "half_life": "CAR transgene persists for months to years (cellular kinetics, not classical half-life)",
+    "bioavailability": "Not applicable (cell therapy)",
+    "metabolism": "Cells expand in vivo after infusion and then contract",
+    "excretion": "Not applicable"
+  },
+  "safety": {
+    "common": [
+      "Cytokine release syndrome",
+      "Fever",
+      "Infections",
+      "Hypogammaglobulinaemia",
+      "Cytopenias",
+      "Encephalopathy",
+      "Fatigue"
+    ],
+    "serious": [
+      "Severe cytokine release syndrome",
+      "Immune effector cell-associated neurotoxicity",
+      "Prolonged cytopenias",
+      "Serious infections",
+      "Secondary T-cell malignancies",
+      "Tumour lysis syndrome"
+    ],
+    "boxed_warning": "Cytokine release syndrome, neurological toxicities and T-cell malignancies; available only at certified treatment centres."
+  },
+  "facts": [
+    "Tisagenlecleucel was the first gene therapy of any kind approved by the FDA.",
+    "Tocilizumab was approved in 2017 specifically for CAR T-cell-induced cytokine release syndrome."
+  ],
+  "related": [
+    "axicabtagene-ciloleucel",
+    "ciltacabtagene-autoleucel",
+    "blinatumomab",
+    "tocilizumab",
+    "cyclophosphamide"
+  ],
+  "references": [
+    {
+      "title": "Tisagenlecleucel – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tisagenlecleucel"
+    },
+    {
+      "title": "DailyMed – tisagenlecleucel labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tisagenlecleucel"
+    },
+    {
+      "title": "EMA – Kymriah EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/kymriah"
+    }
+  ],
+  "stage": "written"
 }

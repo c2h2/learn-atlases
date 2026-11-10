@@ -1,36 +1,141 @@
 {
   "slug": "daratumumab",
   "name": "Daratumumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "HuMax-CD38",
+    "JNJ-54767414"
+  ],
+  "brands": [
+    "Darzalex",
+    "Darzalex Faspro",
+    "Darzalex SC"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-CD38 monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion or fixed-dose subcutaneous injection with hyaluronidase; weekly, then every 2 and 4 weeks",
+  "targets": [
+    "CD38"
+  ],
+  "origin": "biotech",
+  "originator": "Genmab",
+  "owner": "Johnson & Johnson (Janssen), under licence from Genmab",
+  "first_approval": {
+    "year": 2015,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Darzalex"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Genmab",
+    "note": "Fully human IgG1κ antibody raised in transgenic mice; licensed to Janssen in 2012."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First anti-CD38 antibody, now a backbone of multiple myeloma treatment",
+  "summary": "Daratumumab is a human monoclonal antibody that targets CD38, a glycoprotein highly expressed on myeloma plasma cells. It is combined with lenalidomide, bortezomib, pomalidomide or other agents across all lines of multiple myeloma therapy and is approved for light-chain (AL) amyloidosis.",
+  "mechanism": [
+    "Daratumumab binds CD38 and kills myeloma cells through complement-dependent cytotoxicity, antibody-dependent cellular cytotoxicity and phagocytosis, and by inducing apoptosis after Fc-receptor cross-linking.",
+    "It also depletes CD38-positive immunosuppressive cells such as some regulatory T and B cells and myeloid-derived suppressor cells, which may enhance T-cell responses."
+  ],
+  "uses": [
+    "Newly diagnosed multiple myeloma (transplant-eligible and ineligible, in combinations)",
+    "Relapsed or refractory multiple myeloma",
+    "Light-chain (AL) amyloidosis (with bortezomib, cyclophosphamide and dexamethasone)"
+  ],
+  "history": [
+    {
+      "year": 2012,
+      "title": "Janssen licence",
+      "detail": "Genmab licenses worldwide rights to Janssen Biotech."
+    },
+    {
+      "year": 2015,
+      "title": "FDA approval",
+      "detail": "Accelerated approval in November for myeloma after at least three prior lines (GEN501, SIRIUS)."
+    },
+    {
+      "year": 2016,
+      "title": "Combinations",
+      "detail": "Approved with lenalidomide–dexamethasone (POLLUX) or bortezomib–dexamethasone (CASTOR)."
+    },
+    {
+      "year": 2018,
+      "title": "First-line use",
+      "detail": "Approved with bortezomib, melphalan and prednisone for newly diagnosed transplant-ineligible myeloma."
+    },
+    {
+      "year": 2020,
+      "title": "Subcutaneous form",
+      "detail": "FDA approves Darzalex Faspro with hyaluronidase, shortening administration to minutes."
+    },
+    {
+      "year": 2021,
+      "title": "AL amyloidosis",
+      "detail": "Accelerated approval with VCd for newly diagnosed light-chain amyloidosis (ANDROMEDA)."
+    },
+    {
+      "year": 2024,
+      "title": "Quadruplet therapy",
+      "detail": "Approved with bortezomib, lenalidomide and dexamethasone for transplant-eligible newly diagnosed myeloma (PERSEUS)."
+    }
+  ],
+  "pk": {
+    "half_life": "~18 days (IV, at steady state)",
+    "bioavailability": "100% (IV); ~69% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Infusion-related reactions",
+      "Upper respiratory infections",
+      "Neutropenia and thrombocytopenia",
+      "Fatigue",
+      "Diarrhoea",
+      "Peripheral oedema"
+    ],
+    "serious": [
+      "Severe infusion reactions",
+      "Serious infections including pneumonia",
+      "Hepatitis B reactivation",
+      "Interference with blood-compatibility testing"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Daratumumab binds CD38 on red blood cells and causes positive indirect antiglobulin (Coombs) tests, so patients are typed and screened before starting.",
+    "It was the first CD38-targeted antibody approved for myeloma."
+  ],
+  "related": [
+    "lenalidomide",
+    "bortezomib",
+    "dexamethasone",
+    "cyclophosphamide",
+    "thalidomide",
+    "teclistamab",
+    "ciltacabtagene-autoleucel"
+  ],
+  "references": [
+    {
+      "title": "Daratumumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Daratumumab"
+    },
+    {
+      "title": "DailyMed – daratumumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=daratumumab"
+    },
+    {
+      "title": "EMA – Darzalex EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/darzalex"
+    }
+  ],
+  "stage": "written"
 }

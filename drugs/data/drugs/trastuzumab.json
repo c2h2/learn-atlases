@@ -1,36 +1,156 @@
 {
   "slug": "trastuzumab",
   "name": "Trastuzumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "rhuMAb HER2",
+    "trastuzumab-dkst",
+    "trastuzumab-anns",
+    "trastuzumab-pkrb"
+  ],
+  "brands": [
+    "Herceptin",
+    "Herceptin Hylecta",
+    "Ogivri",
+    "Kanjinti",
+    "Ontruzant",
+    "Herzuma",
+    "Trazimera"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-HER2 monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion weekly or every 3 weeks; fixed-dose subcutaneous form with hyaluronidase",
+  "targets": [
+    "ERBB2"
+  ],
+  "origin": "biotech",
+  "originator": "Genentech",
+  "owner": "Roche (Genentech); biosimilars from several companies",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Herceptin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1990,
+    "by": "Genentech (Axel Ullrich, H. Michael Shepard); clinical work by Dennis Slamon (UCLA)",
+    "note": "Humanised version of the murine antibody 4D5 against the HER2 receptor amplified in about 20% of breast cancers."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Targeted antibody that transformed the outlook of HER2-positive breast cancer",
+  "summary": "Trastuzumab is a humanised monoclonal antibody against HER2, a growth-factor receptor overexpressed in a subset of breast and gastric cancers. Combined with chemotherapy it substantially improves survival in HER2-positive disease and is a model for biomarker-selected targeted therapy.",
+  "mechanism": [
+    "Trastuzumab binds subdomain IV of the extracellular part of HER2 (ERBB2). This inhibits ligand-independent HER2 signalling through the PI3K–AKT and MAPK pathways, blocks shedding of the extracellular domain and promotes receptor internalisation.",
+    "Its IgG1 Fc portion recruits immune effector cells, producing antibody-dependent cellular cytotoxicity against HER2-overexpressing tumour cells. Benefit is confined to tumours with HER2 protein overexpression or gene amplification."
+  ],
+  "uses": [
+    "HER2-positive early breast cancer (adjuvant and neoadjuvant)",
+    "HER2-positive metastatic breast cancer",
+    "HER2-positive metastatic gastric or gastro-oesophageal junction adenocarcinoma"
+  ],
+  "history": [
+    {
+      "year": 1987,
+      "title": "HER2 amplification linked to prognosis",
+      "detail": "Slamon and colleagues report that HER2/neu amplification predicts poor outcome in breast cancer."
+    },
+    {
+      "year": 1992,
+      "title": "Humanisation",
+      "detail": "Genentech humanises the 4D5 antibody, producing trastuzumab."
+    },
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Approved as Herceptin for HER2-overexpressing metastatic breast cancer."
+    },
+    {
+      "year": 2000,
+      "title": "EU approval",
+      "detail": "Approved in the European Union."
+    },
+    {
+      "year": 2005,
+      "title": "Adjuvant trials",
+      "detail": "HERA, NSABP B-31 and NCCTG N9831 show large reductions in recurrence in early breast cancer."
+    },
+    {
+      "year": 2006,
+      "title": "Adjuvant approval",
+      "detail": "FDA approves trastuzumab for adjuvant treatment of HER2-positive early breast cancer."
+    },
+    {
+      "year": 2010,
+      "title": "Gastric cancer",
+      "detail": "Approved for HER2-positive metastatic gastric cancer after the ToGA trial."
+    },
+    {
+      "year": 2013,
+      "title": "Subcutaneous form",
+      "detail": "Subcutaneous Herceptin approved in the EU; Herceptin Hylecta follows in the US in 2019."
+    },
+    {
+      "year": 2017,
+      "title": "Biosimilars",
+      "detail": "First biosimilars approved: Ontruzant in the EU and Ogivri in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~28 days (population estimate)",
+    "bioavailability": "100% (IV); ~77% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Infusion reactions",
+      "Fever, chills and fatigue",
+      "Diarrhoea",
+      "Headache",
+      "Rash"
+    ],
+    "serious": [
+      "Cardiomyopathy and heart failure",
+      "Severe infusion reactions",
+      "Pulmonary toxicity",
+      "Oligohydramnios (embryo-fetal toxicity)"
+    ],
+    "boxed_warning": "Cardiomyopathy, infusion reactions, embryo-fetal toxicity and pulmonary toxicity."
+  },
+  "facts": [
+    "Benefit is limited to tumours with HER2 overexpression or amplification, so HER2 testing is required before use.",
+    "Cardiotoxicity is increased when trastuzumab is combined with anthracyclines, so cardiac function is monitored.",
+    "The story of its development was dramatised in the 2008 film 'Living Proof'."
+  ],
+  "related": [
+    "pertuzumab",
+    "trastuzumab-emtansine",
+    "trastuzumab-deruxtecan",
+    "docetaxel",
+    "paclitaxel",
+    "doxorubicin"
+  ],
+  "references": [
+    {
+      "title": "Trastuzumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Trastuzumab"
+    },
+    {
+      "title": "DailyMed – trastuzumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=trastuzumab"
+    },
+    {
+      "title": "EMA – Herceptin EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/herceptin"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,125 @@
 {
   "slug": "sacituzumab-govitecan",
   "name": "Sacituzumab govitecan",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "IMMU-132",
+    "hRS7-SN-38",
+    "sacituzumab govitecan-hziy"
+  ],
+  "brands": [
+    "Trodelvy"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-TROP2 antibody–drug conjugate (topoisomerase I inhibitor payload)",
+  "modality": "adc",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion on days 1 and 8 of 21-day cycles",
+  "targets": [
+    "TACSTD2",
+    "TOP1"
+  ],
+  "origin": "biotech",
+  "originator": "Immunomedics",
+  "owner": "Gilead Sciences",
+  "first_approval": {
+    "year": 2020,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Trodelvy"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Immunomedics",
+    "note": "Humanised anti-TROP2 antibody hRS7 linked by a hydrolysable CL2A linker to SN-38, the active metabolite of irinotecan."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "First TROP2-directed ADC, approved for metastatic triple-negative breast cancer",
+  "summary": "Sacituzumab govitecan is an antibody–drug conjugate that targets TROP2, a surface glycoprotein found on many epithelial cancers, and delivers SN-38. It is approved for metastatic triple-negative and HR-positive/HER2-negative breast cancer after prior therapy.",
+  "mechanism": [
+    "The antibody binds TROP2 (TACSTD2), and the conjugate releases SN-38 both after internalisation and in the tumour microenvironment through hydrolysis of the linker.",
+    "SN-38 inhibits topoisomerase I, causing DNA strand breaks and cell death. Its membrane permeability allows a bystander effect on neighbouring tumour cells. The drug-to-antibody ratio is about 7.6."
+  ],
+  "uses": [
+    "Unresectable or metastatic triple-negative breast cancer after two or more prior therapies",
+    "HR-positive, HER2-negative metastatic breast cancer after endocrine therapy and chemotherapy"
+  ],
+  "history": [
+    {
+      "year": 2020,
+      "title": "Accelerated approval",
+      "detail": "FDA grants accelerated approval in April for metastatic TNBC."
+    },
+    {
+      "year": 2020,
+      "title": "Gilead acquisition",
+      "detail": "Gilead acquires Immunomedics for about $21 billion."
+    },
+    {
+      "year": 2021,
+      "title": "ASCENT and full approval",
+      "detail": "ASCENT shows a survival benefit over chemotherapy; FDA converts to regular approval and the EU approves Trodelvy."
+    },
+    {
+      "year": 2021,
+      "title": "Urothelial cancer",
+      "detail": "Accelerated approval for metastatic urothelial carcinoma, later withdrawn in 2024 after the confirmatory trial failed."
+    },
+    {
+      "year": 2023,
+      "title": "HR-positive breast cancer",
+      "detail": "Approved for HR-positive/HER2-negative breast cancer after TROPiCS-02."
+    }
+  ],
+  "pk": {
+    "half_life": "~16 h (ADC); ~18 h (free SN-38)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "SN-38 glucuronidated by UGT1A1 to SN-38G",
+    "excretion": "Biliary; small renal fraction"
+  },
+  "safety": {
+    "common": [
+      "Nausea and vomiting",
+      "Diarrhoea",
+      "Neutropenia and anaemia",
+      "Fatigue",
+      "Alopecia",
+      "Constipation"
+    ],
+    "serious": [
+      "Severe or febrile neutropenia",
+      "Severe diarrhoea",
+      "Hypersensitivity and infusion reactions"
+    ],
+    "boxed_warning": "Severe or life-threatening neutropenia and severe diarrhoea."
+  },
+  "facts": [
+    "People homozygous for UGT1A1*28 have higher risk of neutropenia because they glucuronidate SN-38 more slowly.",
+    "TROP2 is expressed on most triple-negative breast cancers, so testing for the target is not required."
+  ],
+  "related": [
+    "irinotecan",
+    "trastuzumab-deruxtecan",
+    "enfortumab-vedotin",
+    "capecitabine"
+  ],
+  "references": [
+    {
+      "title": "Sacituzumab govitecan – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sacituzumab_govitecan"
+    },
+    {
+      "title": "DailyMed – sacituzumab govitecan labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sacituzumab+govitecan"
+    },
+    {
+      "title": "EMA – Trodelvy EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/trodelvy"
+    }
+  ],
+  "stage": "written"
 }

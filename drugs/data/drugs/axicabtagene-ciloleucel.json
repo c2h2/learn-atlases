@@ -1,36 +1,144 @@
 {
   "slug": "axicabtagene-ciloleucel",
   "name": "Axicabtagene ciloleucel",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "axi-cel",
+    "KTE-C19"
+  ],
+  "brands": [
+    "Yescarta"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "CD19-directed autologous CAR T-cell therapy (CD28 costimulation)",
+  "modality": "cell-therapy",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "Single IV infusion of modified autologous T cells after fludarabine–cyclophosphamide lymphodepletion",
+  "targets": [
+    "CD19"
+  ],
+  "origin": "biotech",
+  "originator": "Kite Pharma, licensed from the US National Cancer Institute (Steven Rosenberg, James Kochenderfer)",
+  "owner": "Gilead Sciences (Kite)",
+  "first_approval": {
+    "year": 2017,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Yescarta"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 2010,
+    "by": "Steven Rosenberg and James Kochenderfer (National Cancer Institute)",
+    "note": "Retroviral CAR with the FMC63 anti-CD19 scFv, a CD28 costimulatory domain and CD3ζ."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription (specialist centres)",
+  "tagline": "CD19 CAR T therapy that became second-line standard for large B-cell lymphoma",
+  "summary": "Axicabtagene ciloleucel is an autologous CAR T-cell therapy targeting CD19, built on a CD28 costimulatory design developed at the US National Cancer Institute. It is approved for large B-cell lymphoma, including as second-line treatment, and for follicular lymphoma.",
+  "mechanism": [
+    "Patient T cells are transduced with a gamma-retroviral vector encoding an anti-CD19 CAR with CD28 and CD3ζ signalling domains.",
+    "After infusion, the CAR T cells expand rapidly, recognise CD19 on lymphoma cells and kill them. The CD28 domain drives fast, intense expansion, associated with high response rates but frequent neurotoxicity and cytokine release syndrome."
+  ],
+  "uses": [
+    "Large B-cell lymphoma refractory to or relapsing within 12 months of first-line chemoimmunotherapy",
+    "Relapsed or refractory large B-cell lymphoma after two or more lines",
+    "Relapsed or refractory follicular lymphoma after two or more lines"
+  ],
+  "history": [
+    {
+      "year": 2010,
+      "title": "First CD19 CAR response",
+      "detail": "NCI reports regression of lymphoma in a patient treated with anti-CD19 CAR T cells."
+    },
+    {
+      "year": 2017,
+      "title": "ZUMA-1 and approval",
+      "detail": "FDA approves Yescarta in October for refractory large B-cell lymphoma."
+    },
+    {
+      "year": 2017,
+      "title": "Gilead acquires Kite",
+      "detail": "Gilead buys Kite Pharma for about $11.9 billion."
+    },
+    {
+      "year": 2018,
+      "title": "EU approval",
+      "detail": "Approved in the European Union."
+    },
+    {
+      "year": 2021,
+      "title": "Follicular lymphoma",
+      "detail": "Accelerated approval for relapsed or refractory follicular lymphoma (ZUMA-5)."
+    },
+    {
+      "year": 2022,
+      "title": "Second-line approval",
+      "detail": "ZUMA-7 shows superiority over standard salvage chemotherapy and transplant; FDA approves second-line use."
+    },
+    {
+      "year": 2023,
+      "title": "Survival benefit",
+      "detail": "ZUMA-7 reports improved overall survival, the first for a CAR T therapy in a randomised trial versus standard care."
+    },
+    {
+      "year": 2024,
+      "title": "T-cell malignancy warning",
+      "detail": "A class boxed warning on secondary T-cell malignancies is added."
+    }
+  ],
+  "pk": {
+    "half_life": "CAR transgene peaks within ~2 weeks and declines over months",
+    "bioavailability": "Not applicable (cell therapy)",
+    "metabolism": "In vivo expansion and contraction of cells",
+    "excretion": "Not applicable"
+  },
+  "safety": {
+    "common": [
+      "Cytokine release syndrome",
+      "Fever",
+      "Encephalopathy",
+      "Hypotension",
+      "Fatigue",
+      "Cytopenias",
+      "Infections"
+    ],
+    "serious": [
+      "Severe cytokine release syndrome",
+      "Neurological toxicities including cerebral oedema",
+      "Prolonged cytopenias",
+      "Serious infections",
+      "Hypogammaglobulinaemia",
+      "Secondary T-cell malignancies"
+    ],
+    "boxed_warning": "Cytokine release syndrome, neurological toxicities and T-cell malignancies; available only at certified treatment centres."
+  },
+  "facts": [
+    "The CD28-based CAR design originated in the laboratory of Steven Rosenberg at the US National Cancer Institute.",
+    "Its 2022 approval moved CAR T-cell therapy ahead of autologous stem-cell transplant for early-relapsing large B-cell lymphoma."
+  ],
+  "related": [
+    "tisagenlecleucel",
+    "ciltacabtagene-autoleucel",
+    "rituximab",
+    "tocilizumab",
+    "cyclophosphamide"
+  ],
+  "references": [
+    {
+      "title": "Axicabtagene ciloleucel – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Axicabtagene_ciloleucel"
+    },
+    {
+      "title": "DailyMed – axicabtagene ciloleucel labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=axicabtagene+ciloleucel"
+    },
+    {
+      "title": "EMA – Yescarta EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/yescarta"
+    }
+  ],
+  "stage": "written"
 }

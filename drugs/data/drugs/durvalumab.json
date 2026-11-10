@@ -1,36 +1,140 @@
 {
   "slug": "durvalumab",
   "name": "Durvalumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MEDI4736"
+  ],
+  "brands": [
+    "Imfinzi"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-PD-L1 monoclonal antibody (immune checkpoint inhibitor)",
+  "modality": "antibody",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every 2, 3 or 4 weeks",
+  "targets": [
+    "CD274"
+  ],
+  "origin": "biotech",
+  "originator": "MedImmune (AstraZeneca)",
+  "owner": "AstraZeneca",
+  "first_approval": {
+    "year": 2017,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Imfinzi"
+  },
+  "discovery": {
+    "year": null,
+    "by": "MedImmune",
+    "note": "Fully human IgG1κ anti-PD-L1 antibody with a triple Fc mutation that reduces effector function."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "PD-L1 inhibitor that set the standard after chemoradiation in stage III lung cancer",
+  "summary": "Durvalumab is a human monoclonal antibody against PD-L1. Its PACIFIC trial established consolidation immunotherapy after chemoradiotherapy for unresectable stage III non-small cell lung cancer, and it is also used in small cell lung cancer, biliary tract cancer, liver cancer and endometrial cancer.",
+  "mechanism": [
+    "Durvalumab binds PD-L1 and blocks its interaction with PD-1 and CD80, restoring the activity of T cells suppressed within the tumour microenvironment.",
+    "Its engineered Fc does not mediate antibody-dependent cytotoxicity or complement activation. It is sometimes combined with tremelimumab, an anti-CTLA-4 antibody."
+  ],
+  "uses": [
+    "Unresectable stage III NSCLC after chemoradiotherapy",
+    "Resectable NSCLC (perioperative, with chemotherapy)",
+    "Small cell lung cancer (extensive-stage with chemotherapy; limited-stage after chemoradiation)",
+    "Biliary tract cancer (with gemcitabine–cisplatin)",
+    "Unresectable hepatocellular carcinoma (with tremelimumab)",
+    "Mismatch-repair-deficient endometrial cancer",
+    "Muscle-invasive bladder cancer (perioperative)"
+  ],
+  "history": [
+    {
+      "year": 2017,
+      "title": "Accelerated approval",
+      "detail": "FDA approves Imfinzi in May for previously treated urothelial carcinoma (indication later withdrawn in 2021)."
+    },
+    {
+      "year": 2018,
+      "title": "PACIFIC approval",
+      "detail": "Approved for stage III NSCLC after chemoradiotherapy, having improved progression-free and overall survival."
+    },
+    {
+      "year": 2020,
+      "title": "Extensive-stage SCLC",
+      "detail": "Approved with etoposide and platinum (CASPIAN)."
+    },
+    {
+      "year": 2022,
+      "title": "Biliary and liver cancer",
+      "detail": "Approved for biliary tract cancer (TOPAZ-1) and, with tremelimumab, for HCC (HIMALAYA)."
+    },
+    {
+      "year": 2024,
+      "title": "Limited-stage SCLC",
+      "detail": "Approved after chemoradiotherapy for limited-stage SCLC (ADRIATIC)."
+    },
+    {
+      "year": 2025,
+      "title": "Bladder cancer",
+      "detail": "Approved perioperatively with chemotherapy for muscle-invasive bladder cancer (NIAGARA)."
+    }
+  ],
+  "pk": {
+    "half_life": "~18 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Cough",
+      "Fatigue",
+      "Pneumonitis",
+      "Upper respiratory infection",
+      "Rash",
+      "Dyspnoea"
+    ],
+    "serious": [
+      "Immune-mediated pneumonitis",
+      "Immune-mediated colitis",
+      "Immune-mediated hepatitis",
+      "Immune-mediated endocrinopathies (thyroiditis, hypophysitis, adrenal insufficiency, type 1 diabetes)",
+      "Immune-mediated nephritis",
+      "Severe skin reactions",
+      "Myocarditis (rare)",
+      "Severe infusion reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "PACIFIC was the first trial to show a survival benefit for immunotherapy after chemoradiotherapy in stage III NSCLC.",
+    "Durvalumab with tremelimumab (STRIDE regimen) uses a single priming dose of the anti-CTLA-4 antibody."
+  ],
+  "related": [
+    "atezolizumab",
+    "pembrolizumab",
+    "nivolumab",
+    "ipilimumab",
+    "gemcitabine",
+    "cisplatin",
+    "etoposide"
+  ],
+  "references": [
+    {
+      "title": "Durvalumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Durvalumab"
+    },
+    {
+      "title": "DailyMed – durvalumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=durvalumab"
+    },
+    {
+      "title": "EMA – Imfinzi EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/imfinzi"
+    }
+  ],
+  "stage": "written"
 }

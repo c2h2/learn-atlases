@@ -1,36 +1,130 @@
 {
   "slug": "certolizumab-pegol",
   "name": "Certolizumab pegol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CDP870"
+  ],
+  "brands": [
+    "Cimzia"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "PEGylated anti-TNF-α Fab' fragment (TNF inhibitor)",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection every 2 or 4 weeks after loading doses",
+  "targets": [
+    "TNF"
+  ],
+  "origin": "biotech",
+  "originator": "Celltech (acquired by UCB in 2004)",
+  "owner": "UCB",
+  "first_approval": {
+    "year": 2008,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Cimzia"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Celltech",
+    "note": "Humanised Fab' fragment against TNF-α conjugated to a 40 kDa polyethylene glycol to prolong half-life."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "PEGylated anti-TNF Fab' fragment without an Fc, with minimal placental transfer",
+  "summary": "Certolizumab pegol is a TNF inhibitor consisting of a humanised antibody Fab' fragment attached to polyethylene glycol. Lacking an Fc region, it does not cause complement- or antibody-mediated cytotoxicity and crosses the placenta very little; it is used in Crohn's disease, rheumatoid arthritis, psoriatic arthritis, axial spondyloarthritis and psoriasis.",
+  "mechanism": [
+    "Certolizumab binds soluble and membrane-bound TNF-α and neutralises its activity, reducing inflammatory signalling in joints, skin and gut.",
+    "The PEG moiety extends its half-life to about two weeks. Without an Fc it does not engage the neonatal Fc receptor (FcRn), which normally transports IgG across the placenta and into breast milk."
+  ],
+  "uses": [
+    "Crohn's disease",
+    "Rheumatoid arthritis",
+    "Psoriatic arthritis",
+    "Ankylosing spondylitis and non-radiographic axial spondyloarthritis",
+    "Plaque psoriasis"
+  ],
+  "history": [
+    {
+      "year": 2004,
+      "title": "UCB acquires Celltech",
+      "detail": "UCB buys Celltech and the CDP870 programme."
+    },
+    {
+      "year": 2008,
+      "title": "FDA approval",
+      "detail": "Approved in April for Crohn's disease."
+    },
+    {
+      "year": 2009,
+      "title": "Rheumatoid arthritis",
+      "detail": "Approved for RA in the US and in the EU."
+    },
+    {
+      "year": 2013,
+      "title": "Spondyloarthritis and PsA",
+      "detail": "Approved for psoriatic arthritis and ankylosing spondylitis."
+    },
+    {
+      "year": 2018,
+      "title": "Pregnancy data and psoriasis",
+      "detail": "Label updated with CRIB and CRADLE data showing minimal placental and breast-milk transfer; approved for plaque psoriasis."
+    }
+  ],
+  "pk": {
+    "half_life": "~14 days",
+    "bioavailability": "~80% (SC)",
+    "metabolism": "Proteolysis of Fab'; PEG removed largely renally",
+    "excretion": "PEG moiety renally excreted"
+  },
+  "safety": {
+    "common": [
+      "Upper respiratory infections",
+      "Rash",
+      "Urinary tract infections",
+      "Injection-site reactions",
+      "Headache"
+    ],
+    "serious": [
+      "Serious infections and sepsis",
+      "Reactivation of latent tuberculosis",
+      "Hepatitis B reactivation",
+      "Lymphoma and other malignancies",
+      "Demyelinating disease",
+      "New or worsening heart failure",
+      "Lupus-like syndrome",
+      "Cytopenias"
+    ],
+    "boxed_warning": "Serious infections (including tuberculosis, invasive fungal and opportunistic infections) and malignancy, including lymphoma."
+  },
+  "facts": [
+    "Studies (CRIB) found negligible certolizumab levels in infants of treated mothers, making it a preferred TNF inhibitor in pregnancy.",
+    "It is the only approved PEGylated TNF inhibitor."
+  ],
+  "related": [
+    "adalimumab",
+    "infliximab",
+    "etanercept",
+    "golimumab",
+    "methotrexate"
+  ],
+  "references": [
+    {
+      "title": "Certolizumab pegol – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Certolizumab_pegol"
+    },
+    {
+      "title": "DailyMed – certolizumab pegol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=certolizumab+pegol"
+    },
+    {
+      "title": "EMA – Cimzia EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/cimzia"
+    }
+  ],
+  "stage": "written"
 }

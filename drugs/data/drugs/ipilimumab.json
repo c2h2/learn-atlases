@@ -1,36 +1,143 @@
 {
   "slug": "ipilimumab",
   "name": "Ipilimumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MDX-010",
+    "MDX-101",
+    "BMS-734016"
+  ],
+  "brands": [
+    "Yervoy"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-CTLA-4 monoclonal antibody (immune checkpoint inhibitor)",
+  "modality": "antibody",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion, typically 4 doses every 3 weeks alone or with nivolumab, or every 6 weeks in some combinations",
+  "targets": [
+    "CTLA4"
+  ],
+  "origin": "biotech",
+  "originator": "Medarex (with Bristol-Myers Squibb)",
+  "owner": "Bristol Myers Squibb",
+  "first_approval": {
+    "year": 2011,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Yervoy"
+  },
+  "discovery": {
+    "year": 1996,
+    "by": "James P. Allison and colleagues (University of California, Berkeley)",
+    "note": "Showed that antibody blockade of CTLA-4 causes rejection of tumours in mice; ipilimumab is a fully human IgG1 made in Medarex transgenic mice."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First immune checkpoint inhibitor, releasing the CTLA-4 brake on T cells",
+  "summary": "Ipilimumab is a fully human monoclonal antibody that blocks CTLA-4, an inhibitory receptor on T cells. In 2011 it became the first drug shown to prolong survival in metastatic melanoma and the first immune checkpoint inhibitor approved; it is now used mostly in combination with nivolumab.",
+  "mechanism": [
+    "CTLA-4 is upregulated on activated T cells and outcompetes the costimulatory receptor CD28 for the ligands CD80 and CD86 on antigen-presenting cells, dampening T-cell priming. Regulatory T cells express CTLA-4 constitutively.",
+    "Ipilimumab blocks CTLA-4, enhancing T-cell activation and proliferation in lymphoid tissue and broadening the anti-tumour T-cell response; it may also deplete intratumoural regulatory T cells through Fc-mediated mechanisms. The same disinhibition causes immune-related adverse events."
+  ],
+  "uses": [
+    "Unresectable or metastatic melanoma (alone or with nivolumab)",
+    "Adjuvant treatment of high-risk melanoma",
+    "Advanced renal cell carcinoma (with nivolumab)",
+    "MSI-H/dMMR metastatic colorectal cancer (with nivolumab)",
+    "Hepatocellular carcinoma, non-small cell lung cancer and pleural mesothelioma (with nivolumab)"
+  ],
+  "history": [
+    {
+      "year": 1996,
+      "title": "CTLA-4 blockade concept",
+      "detail": "Allison's group reports tumour rejection in mice treated with anti-CTLA-4 antibody."
+    },
+    {
+      "year": 2010,
+      "title": "Survival benefit",
+      "detail": "A phase 3 trial (Hodi et al.) shows improved overall survival in previously treated metastatic melanoma."
+    },
+    {
+      "year": 2011,
+      "title": "FDA approval",
+      "detail": "Approved in March as Yervoy, the first immune checkpoint inhibitor."
+    },
+    {
+      "year": 2015,
+      "title": "Combination with nivolumab",
+      "detail": "FDA approves nivolumab plus ipilimumab for metastatic melanoma."
+    },
+    {
+      "year": 2015,
+      "title": "Adjuvant melanoma",
+      "detail": "Approved for adjuvant treatment of resected stage III melanoma."
+    },
+    {
+      "year": 2018,
+      "title": "Nobel Prize",
+      "detail": "James Allison shares the Nobel Prize in Physiology or Medicine with Tasuku Honjo for cancer therapy by inhibiting negative immune regulation."
+    },
+    {
+      "year": 2018,
+      "title": "Renal cell carcinoma",
+      "detail": "Nivolumab plus ipilimumab approved for intermediate/poor-risk advanced RCC (CheckMate 214)."
+    }
+  ],
+  "pk": {
+    "half_life": "~15 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Fatigue",
+      "Diarrhoea",
+      "Pruritus",
+      "Rash",
+      "Colitis"
+    ],
+    "serious": [
+      "Immune-mediated pneumonitis",
+      "Immune-mediated colitis",
+      "Immune-mediated hepatitis",
+      "Immune-mediated endocrinopathies (thyroiditis, hypophysitis, adrenal insufficiency, type 1 diabetes)",
+      "Immune-mediated nephritis",
+      "Severe skin reactions",
+      "Myocarditis (rare)",
+      "Severe infusion reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ipilimumab causes more frequent severe immune-related adverse events than PD-1 inhibitors, especially colitis and hypophysitis.",
+    "Its approval was a landmark in establishing cancer immunotherapy, rewarded by the 2018 Nobel Prize to James Allison."
+  ],
+  "related": [
+    "nivolumab",
+    "pembrolizumab",
+    "atezolizumab",
+    "durvalumab",
+    "dabrafenib",
+    "trametinib"
+  ],
+  "references": [
+    {
+      "title": "Ipilimumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ipilimumab"
+    },
+    {
+      "title": "DailyMed – ipilimumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ipilimumab"
+    },
+    {
+      "title": "EMA – Yervoy EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/yervoy"
+    }
+  ],
+  "stage": "written"
 }

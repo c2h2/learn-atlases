@@ -1,36 +1,165 @@
 {
   "slug": "pembrolizumab",
   "name": "Pembrolizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MK-3475",
+    "lambrolizumab",
+    "SCH 900475"
+  ],
+  "brands": [
+    "Keytruda",
+    "Keytruda Qlex"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Anti-PD-1 monoclonal antibody (immune checkpoint inhibitor)",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion every 3 or 6 weeks; subcutaneous form with berahyaluronidase alfa (Keytruda Qlex)",
+  "targets": [
+    "PDCD1"
+  ],
+  "origin": "biotech",
+  "originator": "Organon (later Schering-Plough, then Merck & Co.)",
+  "owner": "Merck & Co. (MSD outside the US and Canada)",
+  "first_approval": {
+    "year": 2014,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Keytruda"
+  },
+  "discovery": {
+    "year": 2006,
+    "by": "Organon scientists (Gregory Carven, Hans van Eenennaam, John Dulos)",
+    "note": "Humanised IgG4 anti-PD-1 antibody; the programme passed to Merck through the Schering-Plough merger in 2009."
+  },
+  "generic": false,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Anti-PD-1 antibody with the broadest label in oncology and top worldwide sales",
+  "summary": "Pembrolizumab is a humanised IgG4 monoclonal antibody that blocks the PD-1 immune checkpoint. Approved in 2014 for melanoma, it now has dozens of indications across solid tumours and lymphoma and received the first tissue-agnostic cancer approval, for MSI-high or mismatch-repair-deficient tumours.",
+  "mechanism": [
+    "Pembrolizumab binds PD-1 on T cells with high affinity and prevents its engagement by PD-L1 and PD-L2, releasing an inhibitory signal that tumours exploit to suppress anti-tumour immunity.",
+    "Restored T-cell activity is greatest in tumours with pre-existing immune infiltration, high PD-L1 expression or high mutational burden, such as mismatch-repair-deficient cancers, which produce many neoantigens."
+  ],
+  "uses": [
+    "Melanoma (metastatic and adjuvant)",
+    "Non-small cell lung cancer (first line, perioperative, adjuvant)",
+    "Head and neck squamous cell carcinoma",
+    "Classical Hodgkin lymphoma and primary mediastinal B-cell lymphoma",
+    "Urothelial carcinoma (with enfortumab vedotin)",
+    "MSI-H/dMMR and TMB-high solid tumours (tissue-agnostic)",
+    "Triple-negative breast cancer",
+    "Cervical, endometrial, gastric, oesophageal, renal cell and hepatocellular cancers",
+    "Cutaneous squamous cell and Merkel cell carcinoma"
+  ],
+  "history": [
+    {
+      "year": 2006,
+      "title": "Antibody generated",
+      "detail": "Organon scientists humanise the anti-PD-1 antibody later named pembrolizumab."
+    },
+    {
+      "year": 2014,
+      "title": "FDA accelerated approval",
+      "detail": "Approved in September for advanced melanoma, the first PD-1 inhibitor approved in the US."
+    },
+    {
+      "year": 2015,
+      "title": "Lung cancer",
+      "detail": "Approved for PD-L1-positive previously treated NSCLC."
+    },
+    {
+      "year": 2016,
+      "title": "First-line NSCLC",
+      "detail": "KEYNOTE-024 shows superiority over chemotherapy in PD-L1-high NSCLC, leading to first-line approval."
+    },
+    {
+      "year": 2017,
+      "title": "Tissue-agnostic approval",
+      "detail": "First FDA cancer approval based on a biomarker rather than tumour site: MSI-H/dMMR solid tumours."
+    },
+    {
+      "year": 2021,
+      "title": "Early-stage disease",
+      "detail": "Approvals extend to high-risk early TNBC (KEYNOTE-522) and adjuvant renal cell carcinoma."
+    },
+    {
+      "year": 2023,
+      "title": "Best-selling drug",
+      "detail": "Keytruda becomes the world's top-selling medicine by revenue."
+    },
+    {
+      "year": 2023,
+      "title": "Bladder cancer",
+      "detail": "Approved with enfortumab vedotin for first-line advanced urothelial cancer."
+    },
+    {
+      "year": 2025,
+      "title": "Subcutaneous form",
+      "detail": "FDA approves Keytruda Qlex, a subcutaneous formulation with berahyaluronidase alfa."
+    }
+  ],
+  "pk": {
+    "half_life": "~22 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Fatigue",
+      "Musculoskeletal pain",
+      "Rash and pruritus",
+      "Diarrhoea",
+      "Decreased appetite",
+      "Hypothyroidism",
+      "Cough"
+    ],
+    "serious": [
+      "Immune-mediated pneumonitis",
+      "Immune-mediated colitis",
+      "Immune-mediated hepatitis",
+      "Immune-mediated endocrinopathies (thyroiditis, hypophysitis, adrenal insufficiency, type 1 diabetes)",
+      "Immune-mediated nephritis",
+      "Severe skin reactions",
+      "Myocarditis (rare)",
+      "Severe infusion reactions",
+      "Complications of allogeneic stem-cell transplantation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "In 2017 it received the FDA's first tissue-agnostic approval, based on MSI-H/dMMR status regardless of tumour origin.",
+    "Former US President Jimmy Carter was treated with pembrolizumab for metastatic melanoma involving the brain in 2015.",
+    "Key US patents are expected to expire around 2028, prompting the development of the subcutaneous form."
+  ],
+  "related": [
+    "nivolumab",
+    "ipilimumab",
+    "atezolizumab",
+    "durvalumab",
+    "enfortumab-vedotin",
+    "lenvatinib",
+    "carboplatin",
+    "paclitaxel"
+  ],
+  "references": [
+    {
+      "title": "Pembrolizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pembrolizumab"
+    },
+    {
+      "title": "DailyMed – pembrolizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pembrolizumab"
+    },
+    {
+      "title": "EMA – Keytruda EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/keytruda"
+    }
+  ],
+  "stage": "written"
 }

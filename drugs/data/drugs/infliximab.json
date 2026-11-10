@@ -1,36 +1,162 @@
 {
   "slug": "infliximab",
   "name": "Infliximab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "cA2",
+    "CT-P13",
+    "infliximab-dyyb",
+    "infliximab-abda",
+    "infliximab-axxq"
+  ],
+  "brands": [
+    "Remicade",
+    "Remsima",
+    "Inflectra",
+    "Renflexis",
+    "Zymfentra",
+    "Avsola"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-TNF-α monoclonal antibody (TNF inhibitor)",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion at weeks 0, 2 and 6, then every 8 weeks; subcutaneous CT-P13 for maintenance",
+  "targets": [
+    "TNF"
+  ],
+  "origin": "biotech",
+  "originator": "Centocor, with New York University (Jan Vilček and Junming Le)",
+  "owner": "Johnson & Johnson (Remicade); biosimilars from Celltrion, Pfizer, Samsung Bioepis, Amgen and others",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Remicade"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1989,
+    "by": "Jan Vilček and Junming Le (NYU) with Centocor",
+    "note": "Mouse anti-TNF antibody A2 developed at NYU and converted by Centocor to the chimeric antibody cA2."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Chimeric anti-TNF antibody that pioneered biologic therapy in Crohn's disease",
+  "summary": "Infliximab is a chimeric monoclonal antibody that neutralises tumour necrosis factor alpha. Approved in 1998 for Crohn's disease, it is used in ulcerative colitis, rheumatoid arthritis, ankylosing spondylitis, psoriatic arthritis and plaque psoriasis, and became the first monoclonal antibody with a biosimilar approved in Europe.",
+  "mechanism": [
+    "Infliximab binds both soluble and transmembrane TNF-α with high affinity, preventing TNF from activating its receptors TNFR1 and TNFR2 and so reducing inflammatory cytokine production, leukocyte recruitment and endothelial activation.",
+    "Binding transmembrane TNF can also cause apoptosis and complement- or antibody-dependent killing of activated immune cells, which may explain its efficacy in inflammatory bowel disease where etanercept fails."
+  ],
+  "uses": [
+    "Crohn's disease (adults and children), including fistulising disease",
+    "Ulcerative colitis (adults and children)",
+    "Rheumatoid arthritis (with methotrexate)",
+    "Ankylosing spondylitis",
+    "Psoriatic arthritis",
+    "Severe chronic plaque psoriasis"
+  ],
+  "history": [
+    {
+      "year": 1989,
+      "title": "Antibody developed",
+      "detail": "NYU and Centocor develop the anti-TNF antibody that becomes infliximab."
+    },
+    {
+      "year": 1993,
+      "title": "First RA trials",
+      "detail": "Early trials in rheumatoid arthritis show rapid responses."
+    },
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Approved as Remicade for Crohn's disease."
+    },
+    {
+      "year": 1999,
+      "title": "Rheumatoid arthritis",
+      "detail": "Approved for RA with methotrexate after ATTRACT; Johnson & Johnson had acquired Centocor in 1999."
+    },
+    {
+      "year": 2001,
+      "title": "Tuberculosis warning",
+      "detail": "Reports of reactivated tuberculosis lead to screening recommendations and later a boxed warning."
+    },
+    {
+      "year": 2013,
+      "title": "First biosimilar mAb",
+      "detail": "The EU approves CT-P13 (Remsima, Inflectra), the first biosimilar monoclonal antibody."
+    },
+    {
+      "year": 2016,
+      "title": "US biosimilar",
+      "detail": "FDA approves Inflectra (infliximab-dyyb)."
+    },
+    {
+      "year": 2023,
+      "title": "Subcutaneous infliximab",
+      "detail": "FDA approves Zymfentra, subcutaneous CT-P13, for IBD maintenance."
+    }
+  ],
+  "pk": {
+    "half_life": "~7.7–9.5 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Infusion reactions",
+      "Upper respiratory infections",
+      "Headache",
+      "Abdominal pain",
+      "Sinusitis",
+      "Rash"
+    ],
+    "serious": [
+      "Serious infections and sepsis",
+      "Reactivation of latent tuberculosis",
+      "Hepatitis B reactivation",
+      "Lymphoma and other malignancies",
+      "Demyelinating disease",
+      "New or worsening heart failure",
+      "Lupus-like syndrome",
+      "Cytopenias",
+      "Hepatosplenic T-cell lymphoma (young males with IBD)",
+      "Severe hepatotoxicity"
+    ],
+    "boxed_warning": "Serious infections (including tuberculosis, invasive fungal and opportunistic infections) and malignancy, including lymphoma. Hepatosplenic T-cell lymphoma has been reported, mostly in adolescents and young adults with IBD."
+  },
+  "facts": [
+    "Anti-drug antibodies form in a substantial share of patients and reduce response; concomitant immunomodulators lower this risk.",
+    "Its biosimilar CT-P13 (2013) was the world's first biosimilar monoclonal antibody approved by a stringent regulator."
+  ],
+  "related": [
+    "adalimumab",
+    "etanercept",
+    "certolizumab-pegol",
+    "golimumab",
+    "methotrexate",
+    "azathioprine",
+    "vedolizumab",
+    "ustekinumab"
+  ],
+  "references": [
+    {
+      "title": "Infliximab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Infliximab"
+    },
+    {
+      "title": "DailyMed – infliximab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=infliximab"
+    },
+    {
+      "title": "EMA – Remicade EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/remicade"
+    }
+  ],
+  "stage": "written"
 }

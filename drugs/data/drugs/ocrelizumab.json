@@ -1,36 +1,131 @@
 {
   "slug": "ocrelizumab",
   "name": "Ocrelizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "rhuMAb 2H7",
+    "PRO70769"
+  ],
+  "brands": [
+    "Ocrevus",
+    "Ocrevus Zunovo"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-CD20 monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion every 6 months; twice-yearly subcutaneous injection with hyaluronidase",
+  "targets": [
+    "MS4A1"
+  ],
+  "origin": "biotech",
+  "originator": "Genentech",
+  "owner": "Roche (Genentech)",
+  "first_approval": {
+    "year": 2017,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Ocrevus"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Genentech",
+    "note": "Humanised IgG1 anti-CD20 antibody derived from murine antibody 2H7, binding an epitope overlapping that of rituximab."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Twice-yearly anti-CD20 antibody and first drug approved for primary progressive MS",
+  "summary": "Ocrelizumab is a humanised anti-CD20 monoclonal antibody that depletes B cells. Given every six months, it is a highly effective therapy for relapsing multiple sclerosis and was the first drug approved for primary progressive MS.",
+  "mechanism": [
+    "Ocrelizumab binds CD20 on B cells and depletes them mainly through antibody-dependent cellular cytotoxicity and phagocytosis, with less complement-dependent cytotoxicity than rituximab.",
+    "B cells contribute to MS through antigen presentation, pro-inflammatory cytokines and formation of meningeal follicle-like structures. Their depletion reduces new inflammatory lesions and relapses; plasma cells, which lack CD20, are spared."
+  ],
+  "uses": [
+    "Relapsing forms of multiple sclerosis (including clinically isolated syndrome)",
+    "Primary progressive multiple sclerosis"
+  ],
+  "history": [
+    {
+      "year": 2010,
+      "title": "Rheumatoid arthritis and lupus programmes stopped",
+      "detail": "Development in RA and lupus is halted because of serious infections."
+    },
+    {
+      "year": 2016,
+      "title": "OPERA and ORATORIO",
+      "detail": "Phase 3 results show superiority over interferon beta-1a in relapsing MS and slower disability progression in PPMS."
+    },
+    {
+      "year": 2017,
+      "title": "FDA approval",
+      "detail": "Approved in March for relapsing MS and PPMS, the first PPMS therapy."
+    },
+    {
+      "year": 2018,
+      "title": "EU approval",
+      "detail": "Approved in the European Union in January."
+    },
+    {
+      "year": 2024,
+      "title": "Subcutaneous form",
+      "detail": "FDA approves Ocrevus Zunovo, a 10-minute twice-yearly subcutaneous injection."
+    }
+  ],
+  "pk": {
+    "half_life": "~26 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Infusion reactions",
+      "Upper respiratory infections",
+      "Skin infections",
+      "Herpes infections",
+      "Depression"
+    ],
+    "serious": [
+      "Serious infections",
+      "Hepatitis B reactivation",
+      "Progressive multifocal leukoencephalopathy (rare)",
+      "Hypogammaglobulinaemia",
+      "Malignancies including breast cancer (possible increase)",
+      "Immune-mediated colitis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ocrelizumab was the first drug approved by the FDA for primary progressive multiple sclerosis.",
+    "Vaccines are best given before starting because B-cell depletion blunts vaccine responses."
+  ],
+  "related": [
+    "rituximab",
+    "obinutuzumab",
+    "natalizumab",
+    "alemtuzumab",
+    "fingolimod",
+    "interferon-beta-1a",
+    "glatiramer-acetate",
+    "dimethyl-fumarate"
+  ],
+  "references": [
+    {
+      "title": "Ocrelizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ocrelizumab"
+    },
+    {
+      "title": "DailyMed – ocrelizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ocrelizumab"
+    },
+    {
+      "title": "EMA – Ocrevus EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ocrevus"
+    }
+  ],
+  "stage": "written"
 }

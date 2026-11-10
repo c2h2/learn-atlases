@@ -1,36 +1,140 @@
 {
   "slug": "abatacept",
   "name": "Abatacept",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CTLA4-Ig",
+    "BMS-188667"
+  ],
+  "brands": [
+    "Orencia"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "T-cell costimulation modulator (CTLA-4–Fc fusion protein)",
+  "modality": "protein",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion every 4 weeks after loading or weekly subcutaneous injection",
+  "targets": [
+    "CD80",
+    "CD86"
+  ],
+  "origin": "biotech",
+  "originator": "Bristol-Myers Squibb",
+  "owner": "Bristol Myers Squibb",
+  "first_approval": {
+    "year": 2005,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Orencia"
+  },
+  "discovery": {
+    "year": 1991,
+    "by": "Peter Linsley, Jeffrey Ledbetter and colleagues (Bristol-Myers Squibb)",
+    "note": "Fusion of the extracellular domain of human CTLA-4 to a modified human IgG1 Fc."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "CTLA-4–Fc fusion that blocks T-cell costimulation in rheumatoid arthritis",
+  "summary": "Abatacept is a fusion protein of CTLA-4 and an immunoglobulin Fc that blocks the CD28 costimulatory signal needed for full T-cell activation. It is used in rheumatoid arthritis, juvenile idiopathic arthritis and psoriatic arthritis, and for prevention of acute graft-versus-host disease.",
+  "mechanism": [
+    "Naïve T cells need two signals: antigen recognition through the T-cell receptor and costimulation through CD28 binding CD80/CD86 on antigen-presenting cells.",
+    "Abatacept binds CD80 and CD86 with higher affinity than CD28, blocking costimulation and reducing T-cell activation, proliferation and downstream cytokine and autoantibody production. Its modified Fc does not fix complement or mediate ADCC."
+  ],
+  "uses": [
+    "Moderate to severe rheumatoid arthritis",
+    "Polyarticular juvenile idiopathic arthritis",
+    "Psoriatic arthritis",
+    "Prophylaxis of acute graft-versus-host disease (with a calcineurin inhibitor and methotrexate)"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "CTLA4Ig described",
+      "detail": "Linsley and colleagues report a soluble CTLA-4–immunoglobulin fusion that blocks CD28 costimulation."
+    },
+    {
+      "year": 2005,
+      "title": "FDA approval",
+      "detail": "Approved in December for rheumatoid arthritis."
+    },
+    {
+      "year": 2007,
+      "title": "EU approval",
+      "detail": "Approved in the European Union."
+    },
+    {
+      "year": 2008,
+      "title": "Juvenile arthritis",
+      "detail": "Approved for polyarticular juvenile idiopathic arthritis."
+    },
+    {
+      "year": 2011,
+      "title": "Subcutaneous form",
+      "detail": "Weekly subcutaneous abatacept approved for RA."
+    },
+    {
+      "year": 2017,
+      "title": "Psoriatic arthritis",
+      "detail": "Approved for active psoriatic arthritis."
+    },
+    {
+      "year": 2021,
+      "title": "Graft-versus-host disease",
+      "detail": "FDA approves abatacept for aGVHD prophylaxis, the first drug for this use."
+    }
+  ],
+  "pk": {
+    "half_life": "~13 days (IV); ~14 days (SC)",
+    "bioavailability": "~79% (SC)",
+    "metabolism": "Proteolytic catabolism",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Upper respiratory infections",
+      "Nasopharyngitis",
+      "Nausea",
+      "Infusion reactions"
+    ],
+    "serious": [
+      "Serious infections",
+      "Exacerbations in COPD",
+      "Hypersensitivity and anaphylaxis",
+      "Possible malignancy risk"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Belatacept, a related CTLA-4–Fc molecule with higher affinity, is used in kidney transplantation.",
+    "Combination with TNF inhibitors increased serious infections without added benefit and is not recommended."
+  ],
+  "related": [
+    "etanercept",
+    "methotrexate",
+    "tocilizumab",
+    "rituximab",
+    "adalimumab",
+    "ciclosporin",
+    "tacrolimus"
+  ],
+  "references": [
+    {
+      "title": "Abatacept – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Abatacept"
+    },
+    {
+      "title": "DailyMed – abatacept labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=abatacept"
+    },
+    {
+      "title": "EMA – Orencia EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/orencia"
+    }
+  ],
+  "stage": "written"
 }

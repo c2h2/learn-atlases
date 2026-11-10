@@ -1,36 +1,143 @@
 {
   "slug": "eculizumab",
   "name": "Eculizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "h5G1.1",
+    "eculizumab-aeeb",
+    "eculizumab-aagh"
+  ],
+  "brands": [
+    "Soliris",
+    "Bkemv",
+    "Epysqli"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Complement C5 inhibitor (monoclonal antibody)",
+  "modality": "antibody",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion weekly for induction, then every 2 weeks",
+  "targets": [
+    "C5"
+  ],
+  "origin": "biotech",
+  "originator": "Alexion Pharmaceuticals",
+  "owner": "AstraZeneca (Alexion); biosimilars from Amgen and Samsung Bioepis",
+  "first_approval": {
+    "year": 2007,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Soliris"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Alexion Pharmaceuticals",
+    "note": "Humanised antibody with a hybrid IgG2/IgG4 constant region that binds complement component C5."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription (restricted programme; meningococcal vaccination required)",
+  "tagline": "First complement inhibitor, transforming PNH and atypical HUS",
+  "summary": "Eculizumab is a humanised monoclonal antibody that blocks complement protein C5, preventing formation of the membrane attack complex. It was the first approved complement inhibitor and is used for paroxysmal nocturnal haemoglobinuria, atypical haemolytic uraemic syndrome, generalised myasthenia gravis and neuromyelitis optica spectrum disorder.",
+  "mechanism": [
+    "Eculizumab binds C5 and prevents its cleavage by C5 convertase into C5a, a potent anaphylatoxin, and C5b, which initiates assembly of the C5b-9 membrane attack complex.",
+    "In PNH, red cells lacking the complement regulators CD55 and CD59 are lysed by the membrane attack complex; blocking C5 stops intravascular haemolysis. Terminal complement blockade also impairs killing of Neisseria, causing a high risk of meningococcal infection."
+  ],
+  "uses": [
+    "Paroxysmal nocturnal haemoglobinuria",
+    "Atypical haemolytic uraemic syndrome",
+    "Generalised myasthenia gravis with anti-AChR antibodies",
+    "Anti-aquaporin-4 antibody-positive NMOSD"
+  ],
+  "history": [
+    {
+      "year": 2006,
+      "title": "TRIUMPH",
+      "detail": "Phase 3 TRIUMPH trial in PNH shows reduced haemolysis and transfusion needs."
+    },
+    {
+      "year": 2007,
+      "title": "FDA and EU approval",
+      "detail": "Approved in March (US) and June (EU) for PNH."
+    },
+    {
+      "year": 2011,
+      "title": "Atypical HUS",
+      "detail": "Approved for atypical haemolytic uraemic syndrome."
+    },
+    {
+      "year": 2017,
+      "title": "Myasthenia gravis",
+      "detail": "Approved for generalised myasthenia gravis."
+    },
+    {
+      "year": 2018,
+      "title": "Ravulizumab",
+      "detail": "Alexion's longer-acting successor, ravulizumab, is approved for PNH."
+    },
+    {
+      "year": 2019,
+      "title": "NMOSD",
+      "detail": "Approved for anti-AQP4-positive neuromyelitis optica spectrum disorder."
+    },
+    {
+      "year": 2021,
+      "title": "AstraZeneca acquisition",
+      "detail": "AstraZeneca completes its $39 billion acquisition of Alexion."
+    },
+    {
+      "year": 2024,
+      "title": "Biosimilars",
+      "detail": "FDA approves the first eculizumab biosimilars, Bkemv and Epysqli."
+    }
+  ],
+  "pk": {
+    "half_life": "~11 days (about 272 h)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Headache",
+      "Nasopharyngitis",
+      "Back pain",
+      "Nausea",
+      "Upper respiratory infections"
+    ],
+    "serious": [
+      "Life-threatening meningococcal infections",
+      "Other encapsulated bacterial infections (including disseminated gonococcal infection)",
+      "Infusion reactions",
+      "Haemolysis or thrombotic microangiopathy after discontinuation"
+    ],
+    "boxed_warning": "Life-threatening and fatal meningococcal infections; vaccinate at least 2 weeks before treatment; available only through a REMS programme."
+  },
+  "facts": [
+    "For years Soliris was among the most expensive drugs in the world, at several hundred thousand US dollars per year.",
+    "Meningococcal risk persists despite vaccination, so some patients also receive prophylactic antibiotics."
+  ],
+  "related": [
+    "rituximab",
+    "ciclosporin",
+    "natalizumab",
+    "ocrelizumab"
+  ],
+  "references": [
+    {
+      "title": "Eculizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eculizumab"
+    },
+    {
+      "title": "DailyMed – eculizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=eculizumab"
+    },
+    {
+      "title": "EMA – Soliris EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/soliris"
+    }
+  ],
+  "stage": "written"
 }

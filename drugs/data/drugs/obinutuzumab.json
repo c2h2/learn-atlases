@@ -1,36 +1,140 @@
 {
   "slug": "obinutuzumab",
   "name": "Obinutuzumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GA101",
+    "RO5072759",
+    "afutuzumab"
+  ],
+  "brands": [
+    "Gazyva",
+    "Gazyvaro"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Glycoengineered type II anti-CD20 monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion, with loading doses in the first cycle",
+  "targets": [
+    "MS4A1"
+  ],
+  "origin": "biotech",
+  "originator": "GlycArt Biotechnology (acquired by Roche in 2005)",
+  "owner": "Roche (Genentech)",
+  "first_approval": {
+    "year": 2013,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Gazyva"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "GlycArt Biotechnology",
+    "note": "Humanised type II anti-CD20 IgG1 with a glycoengineered, low-fucose Fc that increases binding to FcγRIIIa."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Glycoengineered type II anti-CD20 antibody with enhanced ADCC for CLL and lymphoma",
+  "summary": "Obinutuzumab is a humanised, glycoengineered anti-CD20 antibody designed to kill B cells more effectively than rituximab. It is used in chronic lymphocytic leukaemia and follicular lymphoma and, from 2025 in the US, in lupus nephritis.",
+  "mechanism": [
+    "Obinutuzumab binds CD20 in a type II manner: it induces strong direct cell death and does not cluster CD20 into lipid rafts, so complement activation is weaker than with rituximab.",
+    "Its Fc carries less core fucose, increasing affinity for FcγRIIIa on NK cells and macrophages and enhancing antibody-dependent cellular cytotoxicity and phagocytosis."
+  ],
+  "uses": [
+    "Previously untreated CLL (with chlorambucil or venetoclax)",
+    "Follicular lymphoma (first line with chemotherapy, then maintenance; and rituximab-refractory disease with bendamustine)",
+    "Active lupus nephritis (with standard therapy)"
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "title": "Roche acquires GlycArt",
+      "detail": "Roche buys GlycArt and its glycoengineering technology."
+    },
+    {
+      "year": 2013,
+      "title": "FDA approval",
+      "detail": "Approved in November with chlorambucil for untreated CLL (CLL11), the first approval of a drug with breakthrough therapy designation."
+    },
+    {
+      "year": 2014,
+      "title": "EU approval",
+      "detail": "Approved in the EU as Gazyvaro."
+    },
+    {
+      "year": 2016,
+      "title": "Follicular lymphoma",
+      "detail": "Approved with bendamustine for rituximab-refractory FL (GADOLIN)."
+    },
+    {
+      "year": 2017,
+      "title": "First-line FL",
+      "detail": "Approved for previously untreated advanced FL (GALLIUM)."
+    },
+    {
+      "year": 2019,
+      "title": "Venetoclax combination",
+      "detail": "Approved with venetoclax as fixed-duration first-line CLL therapy (CLL14)."
+    },
+    {
+      "year": 2025,
+      "title": "Lupus nephritis",
+      "detail": "FDA approves obinutuzumab for adults with active lupus nephritis (REGENCY)."
+    }
+  ],
+  "pk": {
+    "half_life": "~28–36 days (terminal)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Infusion-related reactions",
+      "Neutropenia",
+      "Thrombocytopenia",
+      "Infections",
+      "Pyrexia",
+      "Cough"
+    ],
+    "serious": [
+      "Hepatitis B reactivation",
+      "Progressive multifocal leukoencephalopathy",
+      "Severe infusion reactions",
+      "Tumour lysis syndrome",
+      "Serious infections"
+    ],
+    "boxed_warning": "Hepatitis B virus reactivation and progressive multifocal leukoencephalopathy."
+  },
+  "facts": [
+    "Gazyva was the first drug approved by the FDA under breakthrough therapy designation.",
+    "Infusion reactions are frequent with the first dose, which is often split over two days in CLL."
+  ],
+  "related": [
+    "rituximab",
+    "ocrelizumab",
+    "venetoclax",
+    "ibrutinib",
+    "acalabrutinib",
+    "mycophenolate-mofetil"
+  ],
+  "references": [
+    {
+      "title": "Obinutuzumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Obinutuzumab"
+    },
+    {
+      "title": "DailyMed – obinutuzumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=obinutuzumab"
+    },
+    {
+      "title": "EMA – Gazyvaro EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/gazyvaro"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,136 @@
 {
   "slug": "mepolizumab",
   "name": "Mepolizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SB-240563"
+  ],
+  "brands": [
+    "Nucala"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-IL-5 monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection every 4 weeks",
+  "targets": [
+    "IL5"
+  ],
+  "origin": "biotech",
+  "originator": "SmithKline Beecham (GSK)",
+  "owner": "GSK",
+  "first_approval": {
+    "year": 2015,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Nucala"
+  },
+  "discovery": {
+    "year": null,
+    "by": "SmithKline Beecham",
+    "note": "Humanised IgG1κ antibody against interleukin-5."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First anti-IL-5 antibody, lowering eosinophils in severe asthma and EGPA",
+  "summary": "Mepolizumab is a humanised monoclonal antibody that neutralises interleukin-5, the main cytokine for eosinophil growth and survival. It is used for severe eosinophilic asthma, eosinophilic granulomatosis with polyangiitis, hypereosinophilic syndrome, nasal polyps and, since 2025 in the US, eosinophilic COPD.",
+  "mechanism": [
+    "IL-5 drives eosinophil differentiation in bone marrow, their release into blood and their survival in tissues.",
+    "Mepolizumab binds IL-5 and prevents it from binding the IL-5 receptor α chain on eosinophils, lowering blood and sputum eosinophil counts and reducing eosinophil-driven exacerbations."
+  ],
+  "uses": [
+    "Severe eosinophilic asthma (adults and children ≥6 years)",
+    "Eosinophilic granulomatosis with polyangiitis",
+    "Hypereosinophilic syndrome",
+    "Chronic rhinosinusitis with nasal polyps",
+    "COPD with an eosinophilic phenotype"
+  ],
+  "history": [
+    {
+      "year": 2000,
+      "title": "Early asthma study",
+      "detail": "A study finds mepolizumab lowers eosinophils without changing the allergen response, dampening early enthusiasm."
+    },
+    {
+      "year": 2012,
+      "title": "DREAM",
+      "detail": "DREAM shows fewer exacerbations in patients selected for eosinophilic asthma."
+    },
+    {
+      "year": 2015,
+      "title": "FDA and EU approval",
+      "detail": "Approved in November (US) and December (EU) for severe eosinophilic asthma."
+    },
+    {
+      "year": 2017,
+      "title": "EGPA",
+      "detail": "First drug approved for eosinophilic granulomatosis with polyangiitis."
+    },
+    {
+      "year": 2020,
+      "title": "Hypereosinophilic syndrome",
+      "detail": "First new FDA approval for HES in 14 years."
+    },
+    {
+      "year": 2021,
+      "title": "Nasal polyps",
+      "detail": "Approved for chronic rhinosinusitis with nasal polyps."
+    },
+    {
+      "year": 2025,
+      "title": "COPD",
+      "detail": "FDA approves mepolizumab for COPD with an eosinophilic phenotype (MATINEE)."
+    }
+  ],
+  "pk": {
+    "half_life": "~16–22 days",
+    "bioavailability": "~80% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Injection-site reactions",
+      "Back pain",
+      "Fatigue"
+    ],
+    "serious": [
+      "Hypersensitivity reactions",
+      "Herpes zoster",
+      "Helminth infections",
+      "Systemic reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Mepolizumab's development illustrates the value of selecting patients by biomarker: early trials in unselected asthma were disappointing.",
+    "It was the first drug approved for EGPA."
+  ],
+  "related": [
+    "benralizumab",
+    "omalizumab",
+    "dupilumab",
+    "tezepelumab",
+    "fluticasone-propionate",
+    "prednisolone"
+  ],
+  "references": [
+    {
+      "title": "Mepolizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mepolizumab"
+    },
+    {
+      "title": "DailyMed – mepolizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=mepolizumab"
+    },
+    {
+      "title": "EMA – Nucala EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/nucala"
+    }
+  ],
+  "stage": "written"
 }

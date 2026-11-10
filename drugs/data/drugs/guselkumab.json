@@ -1,36 +1,127 @@
 {
   "slug": "guselkumab",
   "name": "Guselkumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CNTO 1959"
+  ],
+  "brands": [
+    "Tremfya"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-IL-23 (p19) monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "sc",
+    "iv"
+  ],
+  "route_note": "Subcutaneous injection every 8 weeks after loading; IV or SC induction for IBD",
+  "targets": [
+    "IL23A"
+  ],
+  "origin": "biotech",
+  "originator": "Janssen, from an antibody discovered with MorphoSys HuCAL technology",
+  "owner": "Johnson & Johnson (Janssen)",
+  "first_approval": {
+    "year": 2017,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tremfya"
+  },
+  "discovery": {
+    "year": null,
+    "by": "MorphoSys and Janssen",
+    "note": "Fully human IgG1λ antibody against IL-23 p19 selected from MorphoSys's HuCAL phage library."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First IL-23 p19-selective antibody approved, for psoriasis, PsA and IBD",
+  "summary": "Guselkumab is a fully human monoclonal antibody that selectively inhibits interleukin-23 by binding its p19 subunit. It was the first IL-23-selective drug approved, for plaque psoriasis in 2017, and is now also used for psoriatic arthritis, ulcerative colitis and Crohn's disease.",
+  "mechanism": [
+    "Guselkumab binds the p19 subunit of IL-23, preventing it from binding its receptor and blocking downstream JAK–STAT signalling that maintains Th17 responses.",
+    "Its Fc region binds CD64 (FcγRI), which is expressed on IL-23-producing myeloid cells; this may let guselkumab capture IL-23 at its cellular source."
+  ],
+  "uses": [
+    "Moderate to severe plaque psoriasis",
+    "Active psoriatic arthritis",
+    "Moderate to severe ulcerative colitis",
+    "Moderate to severe Crohn's disease"
+  ],
+  "history": [
+    {
+      "year": 2017,
+      "title": "FDA approval",
+      "detail": "Approved in July for plaque psoriasis, the first IL-23 p19 inhibitor; EU approval in November."
+    },
+    {
+      "year": 2019,
+      "title": "ECLIPSE",
+      "detail": "Guselkumab is superior to secukinumab at week 48 in psoriasis."
+    },
+    {
+      "year": 2020,
+      "title": "Psoriatic arthritis",
+      "detail": "Approved for psoriatic arthritis (DISCOVER-1 and -2)."
+    },
+    {
+      "year": 2024,
+      "title": "Ulcerative colitis",
+      "detail": "FDA approves guselkumab for UC in September (QUASAR)."
+    },
+    {
+      "year": 2025,
+      "title": "Crohn's disease",
+      "detail": "Approved for Crohn's disease, with both IV and subcutaneous induction options."
+    }
+  ],
+  "pk": {
+    "half_life": "~15–18 days",
+    "bioavailability": "~49% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Upper respiratory infections",
+      "Headache",
+      "Injection-site reactions",
+      "Arthralgia",
+      "Diarrhoea",
+      "Tinea infections"
+    ],
+    "serious": [
+      "Serious infections",
+      "Tuberculosis reactivation",
+      "Hypersensitivity reactions",
+      "Hepatotoxicity (during IBD induction)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Guselkumab was the first approved antibody selective for IL-23 rather than shared IL-12/IL-23 p40.",
+    "It can be self-injected with a patient-controlled injector."
+  ],
+  "related": [
+    "risankizumab",
+    "ustekinumab",
+    "secukinumab",
+    "ixekizumab",
+    "adalimumab"
+  ],
+  "references": [
+    {
+      "title": "Guselkumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Guselkumab"
+    },
+    {
+      "title": "DailyMed – guselkumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=guselkumab"
+    },
+    {
+      "title": "EMA – Tremfya EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tremfya"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,154 @@
 {
   "slug": "tocilizumab",
   "name": "Tocilizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "atlizumab",
+    "MRA",
+    "R1569",
+    "tocilizumab-bavi",
+    "tocilizumab-aazg"
+  ],
+  "brands": [
+    "Actemra",
+    "RoActemra",
+    "Tofidence",
+    "Tyenne"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-IL-6 receptor monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion every 4 weeks or subcutaneous injection weekly or every other week",
+  "targets": [
+    "IL6R"
+  ],
+  "origin": "biotech",
+  "originator": "Chugai Pharmaceutical and Osaka University (Tadamitsu Kishimoto)",
+  "owner": "Roche (Chugai in Japan); biosimilars from several companies",
+  "first_approval": {
+    "year": 2005,
+    "agency": "MHLW",
+    "country": "Japan",
+    "brand": "Actemra"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Chugai and Osaka University",
+    "note": "Humanised IgG1 antibody against the IL-6 receptor, building on Kishimoto's discovery of IL-6 in 1986."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "IL-6 receptor blocker for arthritis, giant cell arteritis, CAR T toxicity and COVID-19",
+  "summary": "Tocilizumab is a humanised monoclonal antibody that blocks both soluble and membrane-bound interleukin-6 receptors. It is used in rheumatoid arthritis, juvenile idiopathic arthritis, giant cell arteritis, cytokine release syndrome after CAR T-cell therapy and hospitalised COVID-19.",
+  "mechanism": [
+    "IL-6 signals through IL-6R and the gp130 co-receptor, either on cells expressing membrane IL-6R (classic signalling) or via soluble IL-6R (trans-signalling), driving JAK–STAT3 activation, acute-phase protein production, B- and T-cell responses and fever.",
+    "Tocilizumab binds both forms of IL-6R and prevents IL-6 binding. CRP falls rapidly, so it can mask the usual signs of infection."
+  ],
+  "uses": [
+    "Rheumatoid arthritis",
+    "Giant cell arteritis",
+    "Polyarticular and systemic juvenile idiopathic arthritis",
+    "CAR T cell-induced cytokine release syndrome",
+    "Hospitalised COVID-19 on corticosteroids and oxygen",
+    "Systemic sclerosis-associated interstitial lung disease",
+    "Castleman disease (Japan)"
+  ],
+  "history": [
+    {
+      "year": 1986,
+      "title": "IL-6 cloned",
+      "detail": "Kishimoto and Hirano at Osaka University clone the gene for IL-6."
+    },
+    {
+      "year": 2005,
+      "title": "First approval",
+      "detail": "Approved in Japan for multicentric Castleman disease."
+    },
+    {
+      "year": 2009,
+      "title": "EU approval",
+      "detail": "Approved in the EU as RoActemra for rheumatoid arthritis."
+    },
+    {
+      "year": 2010,
+      "title": "FDA approval",
+      "detail": "Approved in January for rheumatoid arthritis."
+    },
+    {
+      "year": 2017,
+      "title": "GCA and CRS",
+      "detail": "Approved for giant cell arteritis (GiACTA) and for CAR T-cell cytokine release syndrome."
+    },
+    {
+      "year": 2021,
+      "title": "COVID-19",
+      "detail": "RECOVERY shows reduced mortality in hospitalised patients; FDA grants emergency use authorisation in June."
+    },
+    {
+      "year": 2022,
+      "title": "Full COVID-19 approval",
+      "detail": "FDA approves tocilizumab for hospitalised COVID-19 in December."
+    },
+    {
+      "year": 2023,
+      "title": "First biosimilar",
+      "detail": "FDA approves Tofidence (tocilizumab-bavi); Tyenne follows in 2024."
+    }
+  ],
+  "pk": {
+    "half_life": "Concentration-dependent; up to ~11–13 days at steady state",
+    "bioavailability": "100% (IV); ~80% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Upper respiratory infections",
+      "Headache",
+      "Hypertension",
+      "Raised liver enzymes",
+      "Injection-site reactions",
+      "Hypercholesterolaemia"
+    ],
+    "serious": [
+      "Serious infections including tuberculosis",
+      "Gastrointestinal perforation (especially with diverticulitis)",
+      "Hepatotoxicity",
+      "Neutropenia and thrombocytopenia",
+      "Hypersensitivity and anaphylaxis"
+    ],
+    "boxed_warning": "Serious infections, including tuberculosis, bacterial, invasive fungal, viral and other opportunistic infections."
+  },
+  "facts": [
+    "It was the first IL-6 pathway inhibitor approved.",
+    "Because it suppresses CRP and fever, infections may present with few signs during treatment."
+  ],
+  "related": [
+    "tisagenlecleucel",
+    "axicabtagene-ciloleucel",
+    "methotrexate",
+    "adalimumab",
+    "baricitinib",
+    "dexamethasone"
+  ],
+  "references": [
+    {
+      "title": "Tocilizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tocilizumab"
+    },
+    {
+      "title": "DailyMed – tocilizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tocilizumab"
+    },
+    {
+      "title": "EMA – Roactemra EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/roactemra"
+    }
+  ],
+  "stage": "written"
 }

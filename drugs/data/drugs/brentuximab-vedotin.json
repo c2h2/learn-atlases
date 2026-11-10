@@ -1,36 +1,144 @@
 {
   "slug": "brentuximab-vedotin",
   "name": "Brentuximab vedotin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SGN-35",
+    "cAC10-vcMMAE"
+  ],
+  "brands": [
+    "Adcetris"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-CD30 antibody–drug conjugate (auristatin payload)",
+  "modality": "adc",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every 2 or 3 weeks",
+  "targets": [
+    "TNFRSF8",
+    "tubulin"
+  ],
+  "origin": "biotech",
+  "originator": "Seattle Genetics",
+  "owner": "Pfizer (US and Canada); Takeda elsewhere",
+  "first_approval": {
+    "year": 2011,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Adcetris"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Seattle Genetics",
+    "note": "Chimeric anti-CD30 antibody cAC10 linked via a protease-cleavable linker to monomethyl auristatin E."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "CD30-targeted ADC for Hodgkin lymphoma and CD30-positive T-cell lymphomas",
+  "summary": "Brentuximab vedotin is an antibody–drug conjugate that targets CD30 and delivers the microtubule inhibitor MMAE. It is used in classical Hodgkin lymphoma, systemic anaplastic large cell lymphoma and other CD30-positive lymphomas.",
+  "mechanism": [
+    "The antibody binds CD30 (TNFRSF8), which is highly expressed on Reed–Sternberg cells of Hodgkin lymphoma and on anaplastic large cell lymphoma cells.",
+    "After internalisation, the linker is cleaved by lysosomal proteases, releasing MMAE, which disrupts the microtubule network, arrests the cell cycle and triggers apoptosis; free MMAE can also kill adjacent cells."
+  ],
+  "uses": [
+    "Classical Hodgkin lymphoma (frontline with AVD, relapsed, post-transplant consolidation)",
+    "Systemic anaplastic large cell lymphoma",
+    "CD30-expressing peripheral T-cell lymphomas (with CHP)",
+    "Primary cutaneous ALCL and CD30-expressing mycosis fungoides",
+    "Relapsed large B-cell lymphoma (with lenalidomide and rituximab)"
+  ],
+  "history": [
+    {
+      "year": 2009,
+      "title": "Takeda partnership",
+      "detail": "Millennium (Takeda) gains ex-US rights to brentuximab vedotin."
+    },
+    {
+      "year": 2011,
+      "title": "FDA accelerated approval",
+      "detail": "Approved in August for relapsed Hodgkin lymphoma and systemic ALCL."
+    },
+    {
+      "year": 2012,
+      "title": "EU approval",
+      "detail": "Conditional approval in the European Union."
+    },
+    {
+      "year": 2012,
+      "title": "PML boxed warning",
+      "detail": "FDA adds a boxed warning for progressive multifocal leukoencephalopathy."
+    },
+    {
+      "year": 2018,
+      "title": "Frontline approvals",
+      "detail": "Approved with AVD for stage III–IV Hodgkin lymphoma (ECHELON-1) and with CHP for CD30-positive PTCL (ECHELON-2)."
+    },
+    {
+      "year": 2023,
+      "title": "Pfizer acquires Seagen",
+      "detail": "US rights pass to Pfizer with the Seagen acquisition."
+    },
+    {
+      "year": 2025,
+      "title": "Large B-cell lymphoma",
+      "detail": "FDA approves it with lenalidomide and rituximab for relapsed large B-cell lymphoma (ECHELON-3)."
+    }
+  ],
+  "pk": {
+    "half_life": "~4–6 days (ADC); ~3–4 days (MMAE)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Antibody catabolised; MMAE metabolised by CYP3A4",
+    "excretion": "MMAE mainly in faeces"
+  },
+  "safety": {
+    "common": [
+      "Peripheral sensory neuropathy",
+      "Neutropenia",
+      "Fatigue",
+      "Nausea",
+      "Diarrhoea",
+      "Upper respiratory infection",
+      "Pyrexia"
+    ],
+    "serious": [
+      "Progressive multifocal leukoencephalopathy",
+      "Severe neutropenia and infections",
+      "Pancreatitis",
+      "Hepatotoxicity",
+      "Pulmonary toxicity (contraindicated with bleomycin)",
+      "Stevens–Johnson syndrome"
+    ],
+    "boxed_warning": "Progressive multifocal leukoencephalopathy (JC virus infection)."
+  },
+  "facts": [
+    "Combination with bleomycin is contraindicated because of pulmonary toxicity.",
+    "CD30 was first identified as a marker of Reed–Sternberg cells in Hodgkin lymphoma."
+  ],
+  "related": [
+    "enfortumab-vedotin",
+    "doxorubicin",
+    "bleomycin",
+    "lenalidomide",
+    "rituximab",
+    "nivolumab",
+    "pembrolizumab"
+  ],
+  "references": [
+    {
+      "title": "Brentuximab vedotin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Brentuximab_vedotin"
+    },
+    {
+      "title": "DailyMed – brentuximab vedotin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=brentuximab+vedotin"
+    },
+    {
+      "title": "EMA – Adcetris EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/adcetris"
+    }
+  ],
+  "stage": "written"
 }

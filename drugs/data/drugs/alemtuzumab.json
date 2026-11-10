@@ -1,36 +1,140 @@
 {
   "slug": "alemtuzumab",
   "name": "Alemtuzumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Campath-1H",
+    "LDP-103"
+  ],
+  "brands": [
+    "Lemtrada",
+    "Campath",
+    "MabCampath"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-CD52 monoclonal antibody (lymphocyte-depleting)",
+  "modality": "antibody",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "MS: IV infusion on 5 consecutive days, then 3 days 12 months later; CLL regimens (Campath) by IV infusion three times weekly",
+  "targets": [
+    "CD52"
+  ],
+  "origin": "biotech",
+  "originator": "University of Cambridge (Herman Waldmann and colleagues)",
+  "owner": "Sanofi (Genzyme)",
+  "first_approval": {
+    "year": 2001,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Campath"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1983,
+    "by": "Herman Waldmann and colleagues (University of Cambridge)",
+    "note": "Rat antibody Campath-1 was humanised in 1988 by Lutz Riechmann, Greg Winter and colleagues, one of the first humanised antibodies."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription (restricted programme for MS)",
+  "tagline": "Anti-CD52 antibody that resets the immune system in highly active MS",
+  "summary": "Alemtuzumab is a humanised monoclonal antibody against CD52 that causes profound, long-lasting depletion of T and B lymphocytes. First approved for chronic lymphocytic leukaemia, it was relaunched at a lower dose as Lemtrada for highly active relapsing multiple sclerosis, given as two short annual courses.",
+  "mechanism": [
+    "Alemtuzumab binds CD52, a glycoprotein abundant on T and B lymphocytes, NK cells, monocytes and some dendritic cells, and destroys them by antibody-dependent cellular cytotoxicity and complement-mediated lysis.",
+    "Lymphocytes then repopulate over months to years with an altered repertoire — B cells recovering faster than T cells — which is thought to produce durable suppression of MS activity. The same immune reconstitution underlies frequent secondary autoimmunity."
+  ],
+  "uses": [
+    "Highly active relapsing-remitting multiple sclerosis (Lemtrada)",
+    "B-cell chronic lymphocytic leukaemia (Campath, where available)"
+  ],
+  "history": [
+    {
+      "year": 1983,
+      "title": "Campath-1 antibody",
+      "detail": "Waldmann's group in the Cambridge University Department of Pathology raises the rat Campath-1 antibody."
+    },
+    {
+      "year": 1988,
+      "title": "Humanisation",
+      "detail": "Riechmann, Winter and colleagues report humanised Campath-1H in Nature."
+    },
+    {
+      "year": 2001,
+      "title": "CLL approval",
+      "detail": "FDA approves Campath for B-cell CLL; EU approval as MabCampath follows."
+    },
+    {
+      "year": 2012,
+      "title": "Withdrawn from CLL market",
+      "detail": "Commercial Campath is withdrawn in the US and EU ahead of relaunch for MS; access continues via a distribution programme."
+    },
+    {
+      "year": 2013,
+      "title": "Lemtrada in the EU",
+      "detail": "Approved in the EU for relapsing-remitting MS."
+    },
+    {
+      "year": 2014,
+      "title": "Lemtrada in the US",
+      "detail": "FDA approves Lemtrada in November after initial rejection, with a REMS programme."
+    },
+    {
+      "year": 2019,
+      "title": "EMA safety review",
+      "detail": "EMA restricts use after reports of stroke, autoimmune hepatitis and haemophagocytic lymphohistiocytosis."
+    }
+  ],
+  "pk": {
+    "half_life": "~2 weeks (MS dosing)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Infusion reactions",
+      "Rash",
+      "Headache",
+      "Pyrexia",
+      "Upper respiratory and urinary tract infections",
+      "Thyroid disorders"
+    ],
+    "serious": [
+      "Autoimmune thyroid disease",
+      "Immune thrombocytopenia",
+      "Anti-GBM disease",
+      "Stroke and cervicocephalic arterial dissection",
+      "Serious infections including listeria",
+      "Malignancies (thyroid cancer, melanoma, lymphoma)",
+      "Autoimmune hepatitis and HLH"
+    ],
+    "boxed_warning": "Serious, sometimes fatal autoimmune conditions (immune thrombocytopenia, anti-GBM disease); serious infusion reactions; stroke; and malignancies. Available only through a restricted programme."
+  },
+  "facts": [
+    "Campath-1H was among the first humanised monoclonal antibodies, pioneering the approach used for many later drugs.",
+    "Monthly blood and urine monitoring continues for 48 months after the last MS course to detect autoimmunity."
+  ],
+  "related": [
+    "ocrelizumab",
+    "natalizumab",
+    "rituximab",
+    "fingolimod",
+    "interferon-beta-1a"
+  ],
+  "references": [
+    {
+      "title": "Alemtuzumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alemtuzumab"
+    },
+    {
+      "title": "DailyMed – alemtuzumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=alemtuzumab"
+    },
+    {
+      "title": "EMA – Lemtrada EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/lemtrada"
+    }
+  ],
+  "stage": "written"
 }

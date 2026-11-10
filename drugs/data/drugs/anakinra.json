@@ -1,36 +1,137 @@
 {
   "slug": "anakinra",
   "name": "Anakinra",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "recombinant human IL-1 receptor antagonist",
+    "rHuIL-1Ra"
+  ],
+  "brands": [
+    "Kineret"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Interleukin-1 receptor antagonist",
+  "modality": "protein",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Daily subcutaneous injection; IV use in some hospital settings is off-label",
+  "targets": [
+    "IL1R1"
+  ],
+  "origin": "biotech",
+  "originator": "Synergen (later Amgen)",
+  "owner": "Sobi (Swedish Orphan Biovitrum)",
+  "first_approval": {
+    "year": 2001,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Kineret"
+  },
+  "discovery": {
+    "year": 1990,
+    "by": "Synergen scientists",
+    "note": "Recombinant, non-glycosylated form of the natural IL-1 receptor antagonist (IL-1Ra) produced in E. coli, differing by one N-terminal methionine."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Short-acting recombinant IL-1 receptor antagonist for autoinflammatory disease",
+  "summary": "Anakinra is a recombinant version of the body's own interleukin-1 receptor antagonist. It blocks both IL-1α and IL-1β signalling and is used in rheumatoid arthritis, cryopyrin-associated periodic syndromes, deficiency of IL-1 receptor antagonist and Still's disease; in the EU it is also approved for COVID-19 pneumonia.",
+  "mechanism": [
+    "Anakinra competitively binds the type I IL-1 receptor (IL-1R1) without triggering signalling, preventing IL-1α and IL-1β from activating it and recruiting the IL-1 receptor accessory protein.",
+    "This blocks IL-1-driven fever, acute-phase response, neutrophil recruitment and cartilage degradation. Its short half-life allows rapid onset and offset, which is useful in acute hyperinflammatory states."
+  ],
+  "uses": [
+    "Rheumatoid arthritis",
+    "Cryopyrin-associated periodic syndromes, including neonatal-onset multisystem inflammatory disease",
+    "Deficiency of IL-1 receptor antagonist (DIRA)",
+    "Still's disease (EU)",
+    "Familial Mediterranean fever (EU)",
+    "COVID-19 pneumonia at risk of respiratory failure (EU)"
+  ],
+  "history": [
+    {
+      "year": 1990,
+      "title": "IL-1Ra cloned",
+      "detail": "Synergen and other groups clone the human IL-1 receptor antagonist."
+    },
+    {
+      "year": 2001,
+      "title": "FDA approval",
+      "detail": "Approved in November as Kineret for rheumatoid arthritis, by Amgen."
+    },
+    {
+      "year": 2002,
+      "title": "EU approval",
+      "detail": "Approved in the European Union."
+    },
+    {
+      "year": 2008,
+      "title": "Sobi licence",
+      "detail": "Biovitrum (now Sobi) acquires rights to Kineret from Amgen."
+    },
+    {
+      "year": 2012,
+      "title": "NOMID",
+      "detail": "FDA approves anakinra for neonatal-onset multisystem inflammatory disease."
+    },
+    {
+      "year": 2020,
+      "title": "DIRA",
+      "detail": "FDA approves it for deficiency of IL-1 receptor antagonist."
+    },
+    {
+      "year": 2021,
+      "title": "COVID-19",
+      "detail": "EU approves anakinra for COVID-19 pneumonia with high suPAR levels (SAVE-MORE); FDA grants emergency use authorisation in 2022."
+    }
+  ],
+  "pk": {
+    "half_life": "4–6 h",
+    "bioavailability": "~95% (SC)",
+    "metabolism": "Proteolysis",
+    "excretion": "Mainly renal; dose reduction in severe renal impairment"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Injection-site reactions",
+      "Headache",
+      "Upper respiratory infection",
+      "Neutropenia",
+      "Nausea"
+    ],
+    "serious": [
+      "Serious infections",
+      "Neutropenia",
+      "Hypersensitivity reactions",
+      "Macrophage activation syndrome (in Still's disease, disease-related)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Anakinra is identical to natural IL-1Ra except for an added N-terminal methionine.",
+    "Its short half-life requires daily injection but means effects wear off within a day or two."
+  ],
+  "related": [
+    "canakinumab",
+    "tocilizumab",
+    "methotrexate",
+    "colchicine"
+  ],
+  "references": [
+    {
+      "title": "Anakinra – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anakinra"
+    },
+    {
+      "title": "DailyMed – anakinra labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=anakinra"
+    },
+    {
+      "title": "EMA – Kineret EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/kineret"
+    }
+  ],
+  "stage": "written"
 }

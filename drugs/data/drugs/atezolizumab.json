@@ -1,36 +1,146 @@
 {
   "slug": "atezolizumab",
   "name": "Atezolizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MPDL3280A",
+    "RG7446"
+  ],
+  "brands": [
+    "Tecentriq",
+    "Tecentriq Hybreza"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-PD-L1 monoclonal antibody (immune checkpoint inhibitor)",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion every 2, 3 or 4 weeks; subcutaneous form with hyaluronidase",
+  "targets": [
+    "CD274"
+  ],
+  "origin": "biotech",
+  "originator": "Genentech",
+  "owner": "Roche (Genentech)",
+  "first_approval": {
+    "year": 2016,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tecentriq"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Genentech",
+    "note": "Humanised IgG1 anti-PD-L1 antibody with an engineered Fc (N297A) that abolishes effector function."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First PD-L1 inhibitor, used in lung, liver and other cancers",
+  "summary": "Atezolizumab is a humanised monoclonal antibody that blocks PD-L1, the main ligand of the PD-1 checkpoint. It was the first PD-L1 inhibitor approved and is used in non-small cell and small cell lung cancer, hepatocellular carcinoma, melanoma and alveolar soft part sarcoma.",
+  "mechanism": [
+    "Atezolizumab binds PD-L1 (CD274) on tumour and immune cells, blocking its interaction with PD-1 and with B7.1 (CD80), and so relieving suppression of anti-tumour T cells.",
+    "Unlike PD-1 antibodies it leaves the PD-L2–PD-1 interaction intact. Its Fc region is engineered to lack effector function so that PD-L1-expressing activated T cells are not depleted."
+  ],
+  "uses": [
+    "Non-small cell lung cancer (adjuvant and metastatic)",
+    "Extensive-stage small cell lung cancer (with carboplatin and etoposide)",
+    "Hepatocellular carcinoma (with bevacizumab)",
+    "BRAF V600-mutant melanoma (with cobimetinib and vemurafenib)",
+    "Alveolar soft part sarcoma"
+  ],
+  "history": [
+    {
+      "year": 2016,
+      "title": "First PD-L1 approval",
+      "detail": "FDA grants accelerated approval in May for urothelial carcinoma."
+    },
+    {
+      "year": 2016,
+      "title": "Lung cancer",
+      "detail": "Approved for previously treated metastatic NSCLC (OAK)."
+    },
+    {
+      "year": 2019,
+      "title": "Small cell lung cancer",
+      "detail": "Approved with chemotherapy for extensive-stage SCLC after IMpower133 — the first immunotherapy advance in that disease in decades."
+    },
+    {
+      "year": 2020,
+      "title": "Liver cancer",
+      "detail": "Approved with bevacizumab for unresectable HCC (IMbrave150)."
+    },
+    {
+      "year": 2021,
+      "title": "Adjuvant NSCLC",
+      "detail": "Approved as adjuvant therapy for PD-L1-positive resected NSCLC (IMpower010)."
+    },
+    {
+      "year": 2022,
+      "title": "Urothelial indication withdrawn",
+      "detail": "The remaining US bladder cancer indication is withdrawn after confirmatory trials."
+    },
+    {
+      "year": 2024,
+      "title": "Subcutaneous form",
+      "detail": "FDA approves Tecentriq Hybreza with hyaluronidase."
+    }
+  ],
+  "pk": {
+    "half_life": "~27 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Fatigue",
+      "Nausea",
+      "Decreased appetite",
+      "Cough",
+      "Musculoskeletal pain",
+      "Rash"
+    ],
+    "serious": [
+      "Immune-mediated pneumonitis",
+      "Immune-mediated colitis",
+      "Immune-mediated hepatitis",
+      "Immune-mediated endocrinopathies (thyroiditis, hypophysitis, adrenal insufficiency, type 1 diabetes)",
+      "Immune-mediated nephritis",
+      "Severe skin reactions",
+      "Myocarditis (rare)",
+      "Severe infusion reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its triple-negative breast cancer indication was withdrawn in the US in 2021 after IMpassion131 failed to confirm benefit.",
+    "It was the first PD-L1-directed antibody approved by any regulator."
+  ],
+  "related": [
+    "bevacizumab",
+    "pembrolizumab",
+    "nivolumab",
+    "durvalumab",
+    "carboplatin",
+    "etoposide",
+    "vemurafenib"
+  ],
+  "references": [
+    {
+      "title": "Atezolizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atezolizumab"
+    },
+    {
+      "title": "DailyMed – atezolizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=atezolizumab"
+    },
+    {
+      "title": "EMA – Tecentriq EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tecentriq"
+    }
+  ],
+  "stage": "written"
 }

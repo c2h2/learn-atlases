@@ -1,36 +1,123 @@
 {
   "slug": "anifrolumab",
   "name": "Anifrolumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MEDI-546",
+    "anifrolumab-fnia"
+  ],
+  "brands": [
+    "Saphnelo"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-type I interferon receptor monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion every 4 weeks",
+  "targets": [
+    "IFNAR1"
+  ],
+  "origin": "biotech",
+  "originator": "Medarex and MedImmune (AstraZeneca)",
+  "owner": "AstraZeneca",
+  "first_approval": {
+    "year": 2021,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Saphnelo"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Medarex and MedImmune",
+    "note": "Fully human IgG1κ antibody against subunit 1 of the type I interferon receptor."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Type I interferon receptor blocker for moderate to severe lupus",
+  "summary": "Anifrolumab is a human monoclonal antibody that blocks the type I interferon receptor. It targets the 'interferon signature' prominent in systemic lupus erythematosus and was approved in 2021 for moderate to severe SLE in patients on standard therapy.",
+  "mechanism": [
+    "Most patients with SLE show increased expression of type I interferon-inducible genes. Type I interferons (IFN-α, IFN-β, IFN-ω and others) signal through the IFNAR1/IFNAR2 receptor and JAK1/TYK2.",
+    "Anifrolumab binds IFNAR1, blocking signalling by all type I interferons and causing the receptor to be internalised. This reduces interferon-driven activation of dendritic cells, B cells and T cells."
+  ],
+  "uses": [
+    "Moderate to severe systemic lupus erythematosus in adults receiving standard therapy"
+  ],
+  "history": [
+    {
+      "year": 2017,
+      "title": "MUSE",
+      "detail": "Phase 2 MUSE trial shows benefit in SLE, especially with a high interferon signature."
+    },
+    {
+      "year": 2019,
+      "title": "TULIP-1",
+      "detail": "The first phase 3 trial misses its primary endpoint."
+    },
+    {
+      "year": 2020,
+      "title": "TULIP-2",
+      "detail": "The second phase 3 trial meets its primary endpoint (BICLA response)."
+    },
+    {
+      "year": 2021,
+      "title": "FDA approval",
+      "detail": "Approved in July for SLE."
+    },
+    {
+      "year": 2022,
+      "title": "EU approval",
+      "detail": "Approved in the European Union in February."
+    }
+  ],
+  "pk": {
+    "half_life": "Nonlinear (target-mediated clearance)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Upper respiratory infections",
+      "Bronchitis",
+      "Infusion reactions",
+      "Herpes zoster",
+      "Cough"
+    ],
+    "serious": [
+      "Serious infections",
+      "Herpes zoster",
+      "Hypersensitivity and anaphylaxis",
+      "Possible malignancy risk"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "TULIP-1 missed its SRI-4 primary endpoint, whereas TULIP-2 met its BICLA primary endpoint; approval rested on the combined evidence.",
+    "Herpes zoster is notably more frequent than with placebo."
+  ],
+  "related": [
+    "belimumab",
+    "hydroxychloroquine",
+    "mycophenolate-mofetil",
+    "rituximab",
+    "prednisone"
+  ],
+  "references": [
+    {
+      "title": "Anifrolumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anifrolumab"
+    },
+    {
+      "title": "DailyMed – anifrolumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=anifrolumab"
+    },
+    {
+      "title": "EMA – Saphnelo EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/saphnelo"
+    }
+  ],
+  "stage": "written"
 }

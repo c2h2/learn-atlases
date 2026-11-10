@@ -1,36 +1,145 @@
 {
   "slug": "omalizumab",
   "name": "Omalizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "rhuMAb-E25",
+    "E25"
+  ],
+  "brands": [
+    "Xolair",
+    "Omlyclo"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-IgE monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection every 2 or 4 weeks; dose by weight and baseline IgE for allergic indications",
+  "targets": [
+    "IGHE"
+  ],
+  "origin": "biotech",
+  "originator": "Tanox (Tse Wen Chang) and Genentech, with Novartis",
+  "owner": "Genentech (Roche) in the US; Novartis elsewhere",
+  "first_approval": {
+    "year": 2003,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Xolair"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1987,
+    "by": "Tse Wen Chang and colleagues (Tanox)",
+    "note": "Concept of an antibody binding free IgE at the site that engages FcεRI, without cross-linking IgE already on mast cells."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Anti-IgE antibody for allergic asthma, urticaria, nasal polyps and food allergy",
+  "summary": "Omalizumab is a humanised monoclonal antibody that binds free immunoglobulin E. It was the first biologic for asthma, and is used for moderate to severe allergic asthma, chronic spontaneous urticaria, nasal polyps and, since 2024 in the US, IgE-mediated food allergy.",
+  "mechanism": [
+    "Omalizumab binds the Cε3 domain of circulating IgE, the site that attaches to the high-affinity receptor FcεRI, so free IgE cannot bind mast cells and basophils.",
+    "Falling free IgE leads to downregulation of FcεRI on these cells, reducing their activation by allergen and the release of histamine, leukotrienes and other mediators. It does not bind IgE already bound to cells, so it does not trigger degranulation."
+  ],
+  "uses": [
+    "Moderate to severe persistent allergic asthma",
+    "Chronic spontaneous urticaria",
+    "Chronic rhinosinusitis with nasal polyps",
+    "IgE-mediated food allergy (to reduce reactions on accidental exposure)"
+  ],
+  "history": [
+    {
+      "year": 1987,
+      "title": "Concept",
+      "detail": "Tanox scientists propose a non-anaphylactogenic anti-IgE antibody."
+    },
+    {
+      "year": 2003,
+      "title": "FDA approval",
+      "detail": "Approved in June for moderate to severe persistent allergic asthma."
+    },
+    {
+      "year": 2005,
+      "title": "EU approval",
+      "detail": "Approved in the European Union."
+    },
+    {
+      "year": 2007,
+      "title": "Anaphylaxis boxed warning",
+      "detail": "FDA adds a boxed warning on anaphylaxis."
+    },
+    {
+      "year": 2014,
+      "title": "Chronic urticaria",
+      "detail": "Approved for chronic idiopathic (spontaneous) urticaria."
+    },
+    {
+      "year": 2020,
+      "title": "Nasal polyps",
+      "detail": "Approved for chronic rhinosinusitis with nasal polyps."
+    },
+    {
+      "year": 2024,
+      "title": "Food allergy",
+      "detail": "FDA approves Xolair to reduce allergic reactions to multiple foods (OUtMATCH)."
+    },
+    {
+      "year": 2025,
+      "title": "First biosimilar",
+      "detail": "FDA approves Omlyclo (omalizumab-igec), the first omalizumab biosimilar."
+    }
+  ],
+  "pk": {
+    "half_life": "~26 days",
+    "bioavailability": "~62% (SC)",
+    "metabolism": "Catabolism of IgE–omalizumab complexes, largely in the reticuloendothelial system",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Injection-site reactions",
+      "Headache",
+      "Upper respiratory infections",
+      "Arthralgia",
+      "Nasopharyngitis"
+    ],
+    "serious": [
+      "Anaphylaxis",
+      "Malignancy (possible, uncertain)",
+      "Serum sickness-like reactions",
+      "Eosinophilic conditions such as EGPA",
+      "Parasitic infections"
+    ],
+    "boxed_warning": "Anaphylaxis, which can occur after any dose, including the first, and may be delayed; initiate in a healthcare setting."
+  },
+  "facts": [
+    "Omalizumab was the first biologic approved for asthma.",
+    "Its 2024 approval made it the first drug to reduce allergic reactions to accidental exposure to multiple foods."
+  ],
+  "related": [
+    "mepolizumab",
+    "benralizumab",
+    "dupilumab",
+    "tezepelumab",
+    "montelukast",
+    "budesonide",
+    "cetirizine"
+  ],
+  "references": [
+    {
+      "title": "Omalizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Omalizumab"
+    },
+    {
+      "title": "DailyMed – omalizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=omalizumab"
+    },
+    {
+      "title": "EMA – Xolair EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/xolair"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,135 @@
 {
   "slug": "enfortumab-vedotin",
   "name": "Enfortumab vedotin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ASG-22CE",
+    "enfortumab vedotin-ejfv"
+  ],
+  "brands": [
+    "Padcev"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-Nectin-4 antibody–drug conjugate (auristatin payload)",
+  "modality": "adc",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion on days 1 and 8 (with pembrolizumab) or days 1, 8 and 15 (monotherapy)",
+  "targets": [
+    "NECTIN4",
+    "tubulin"
+  ],
+  "origin": "biotech",
+  "originator": "Agensys (Astellas) and Seattle Genetics",
+  "owner": "Astellas Pharma and Pfizer (via Seagen)",
+  "first_approval": {
+    "year": 2019,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Padcev"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Agensys/Astellas and Seattle Genetics",
+    "note": "Fully human anti-Nectin-4 IgG1 linked by a protease-cleavable linker to monomethyl auristatin E (MMAE)."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Nectin-4 ADC that, with pembrolizumab, displaced platinum chemotherapy in bladder cancer",
+  "summary": "Enfortumab vedotin is an antibody–drug conjugate targeting Nectin-4, an adhesion protein highly expressed in urothelial cancer. Combined with pembrolizumab it became a first-line standard for advanced urothelial carcinoma, nearly doubling survival compared with platinum chemotherapy in EV-302.",
+  "mechanism": [
+    "The antibody binds Nectin-4 on tumour cells; after internalisation, lysosomal proteases cleave the valine–citrulline linker and release MMAE.",
+    "MMAE disrupts microtubules, causing cell-cycle arrest and apoptosis, and can diffuse to neighbouring cells. Nectin-4 is also expressed in skin, which helps explain the frequent skin toxicity."
+  ],
+  "uses": [
+    "Locally advanced or metastatic urothelial cancer (first line with pembrolizumab)",
+    "Urothelial cancer after a PD-1/PD-L1 inhibitor and platinum chemotherapy (monotherapy)"
+  ],
+  "history": [
+    {
+      "year": 2019,
+      "title": "Accelerated approval",
+      "detail": "FDA grants accelerated approval in December for previously treated urothelial cancer (EV-201)."
+    },
+    {
+      "year": 2021,
+      "title": "EV-301 and full approval",
+      "detail": "EV-301 shows a survival benefit over chemotherapy; regular approval granted."
+    },
+    {
+      "year": 2021,
+      "title": "Boxed warning",
+      "detail": "A boxed warning for serious skin reactions, including SJS/TEN, is added."
+    },
+    {
+      "year": 2022,
+      "title": "EU approval",
+      "detail": "Approved in the European Union."
+    },
+    {
+      "year": 2023,
+      "title": "EV-302 and first-line approval",
+      "detail": "With pembrolizumab, it nearly doubles median overall survival versus platinum chemotherapy; FDA approves the combination in December."
+    },
+    {
+      "year": 2023,
+      "title": "Pfizer acquires Seagen",
+      "detail": "Pfizer completes its acquisition of Seagen in December."
+    }
+  ],
+  "pk": {
+    "half_life": "~3.4 days (ADC); ~2.4 days (MMAE)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Antibody catabolised; MMAE metabolised by CYP3A4",
+    "excretion": "MMAE mainly in faeces, some in urine"
+  },
+  "safety": {
+    "common": [
+      "Rash",
+      "Peripheral neuropathy",
+      "Fatigue",
+      "Alopecia",
+      "Decreased appetite",
+      "Dysgeusia",
+      "Diarrhoea",
+      "Raised glucose"
+    ],
+    "serious": [
+      "Stevens–Johnson syndrome and toxic epidermal necrolysis",
+      "Hyperglycaemia and diabetic ketoacidosis",
+      "Pneumonitis",
+      "Severe peripheral neuropathy",
+      "Ocular disorders",
+      "Infusion-site extravasation"
+    ],
+    "boxed_warning": "Serious and fatal skin reactions, including Stevens–Johnson syndrome and toxic epidermal necrolysis."
+  },
+  "facts": [
+    "Pembrolizumab plus enfortumab vedotin was the first regimen to replace platinum chemotherapy as first-line standard in advanced urothelial cancer.",
+    "MMAE is the same payload used in brentuximab vedotin."
+  ],
+  "related": [
+    "pembrolizumab",
+    "brentuximab-vedotin",
+    "sacituzumab-govitecan",
+    "cisplatin",
+    "carboplatin"
+  ],
+  "references": [
+    {
+      "title": "Enfortumab vedotin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Enfortumab_vedotin"
+    },
+    {
+      "title": "DailyMed – enfortumab vedotin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enfortumab+vedotin"
+    },
+    {
+      "title": "EMA – Padcev EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/padcev"
+    }
+  ],
+  "stage": "written"
 }

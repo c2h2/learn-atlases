@@ -1,36 +1,148 @@
 {
   "slug": "ustekinumab",
   "name": "Ustekinumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CNTO 1275",
+    "ustekinumab-auub",
+    "ustekinumab-ttwe"
+  ],
+  "brands": [
+    "Stelara",
+    "Wezlana",
+    "Selarsdi",
+    "Pyzchiva",
+    "Otulfi",
+    "Imuldosa",
+    "Yesintek",
+    "Steqeyma"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-IL-12/IL-23 (p40) monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "sc",
+    "iv"
+  ],
+  "route_note": "Subcutaneous injection every 12 weeks (psoriasis) or 8 weeks (IBD); single weight-based IV induction dose for IBD",
+  "targets": [
+    "IL12B"
+  ],
+  "origin": "biotech",
+  "originator": "Centocor (Johnson & Johnson)",
+  "owner": "Johnson & Johnson (Janssen); biosimilars from several companies",
+  "first_approval": {
+    "year": 2008,
+    "agency": "Health Canada",
+    "country": "Canada",
+    "brand": "Stelara"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Centocor",
+    "note": "Fully human IgG1κ antibody against the p40 subunit shared by IL-12 and IL-23."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "IL-12/IL-23 p40 antibody for psoriasis, psoriatic arthritis and IBD",
+  "summary": "Ustekinumab is a human monoclonal antibody against the p40 subunit shared by interleukins 12 and 23. Dosed every 8 to 12 weeks, it treats plaque psoriasis, psoriatic arthritis, Crohn's disease and ulcerative colitis; biosimilars launched in the US and Europe from 2024–2025.",
+  "mechanism": [
+    "IL-12 and IL-23 are heterodimeric cytokines sharing the p40 subunit. IL-12 drives Th1 differentiation and IFN-γ production; IL-23 sustains Th17 cells that produce IL-17 and IL-22.",
+    "Ustekinumab binds p40 and prevents both cytokines from engaging the IL-12Rβ1 receptor chain on T cells and NK cells, suppressing Th1 and Th17 inflammation in skin, joints and gut."
+  ],
+  "uses": [
+    "Moderate to severe plaque psoriasis (adults and children)",
+    "Psoriatic arthritis",
+    "Moderate to severe Crohn's disease",
+    "Moderate to severe ulcerative colitis"
+  ],
+  "history": [
+    {
+      "year": 2008,
+      "title": "First approval",
+      "detail": "Approved in Canada in December for plaque psoriasis."
+    },
+    {
+      "year": 2009,
+      "title": "EU and US approval",
+      "detail": "Approved in the EU in January and by the FDA in September."
+    },
+    {
+      "year": 2013,
+      "title": "Psoriatic arthritis",
+      "detail": "Approved for psoriatic arthritis."
+    },
+    {
+      "year": 2016,
+      "title": "Crohn's disease",
+      "detail": "Approved for Crohn's disease with IV induction (UNITI)."
+    },
+    {
+      "year": 2019,
+      "title": "Ulcerative colitis",
+      "detail": "Approved for ulcerative colitis (UNIFI)."
+    },
+    {
+      "year": 2023,
+      "title": "First biosimilar",
+      "detail": "FDA approves Wezlana (ustekinumab-auub), the first ustekinumab biosimilar, later designated interchangeable."
+    },
+    {
+      "year": 2025,
+      "title": "US biosimilar launches",
+      "detail": "Multiple ustekinumab biosimilars launch in the US after patent settlements."
+    }
+  ],
+  "pk": {
+    "half_life": "~3 weeks (15–32 days)",
+    "bioavailability": "~57% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nasopharyngitis",
+      "Upper respiratory infections",
+      "Headache",
+      "Fatigue",
+      "Injection-site reactions"
+    ],
+    "serious": [
+      "Serious infections",
+      "Tuberculosis reactivation",
+      "Hypersensitivity reactions",
+      "Posterior reversible encephalopathy syndrome (rare)",
+      "Non-infectious pneumonia (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ustekinumab was the first approved biologic targeting the IL-12/IL-23 pathway.",
+    "Maintenance dosing for psoriasis is only four times a year after loading."
+  ],
+  "related": [
+    "risankizumab",
+    "guselkumab",
+    "secukinumab",
+    "ixekizumab",
+    "adalimumab",
+    "infliximab",
+    "vedolizumab"
+  ],
+  "references": [
+    {
+      "title": "Ustekinumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ustekinumab"
+    },
+    {
+      "title": "DailyMed – ustekinumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ustekinumab"
+    },
+    {
+      "title": "EMA – Stelara EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/stelara"
+    }
+  ],
+  "stage": "written"
 }

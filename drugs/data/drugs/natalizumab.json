@@ -1,36 +1,146 @@
 {
   "slug": "natalizumab",
   "name": "Natalizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AN100226",
+    "natalizumab-sztn"
+  ],
+  "brands": [
+    "Tysabri",
+    "Tyruko"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-α4 integrin monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion every 4 weeks (extended-interval dosing used in practice); subcutaneous form in the EU",
+  "targets": [
+    "ITGA4"
+  ],
+  "origin": "biotech",
+  "originator": "Athena Neurosciences/Elan with Biogen",
+  "owner": "Biogen; biosimilar from Sandoz",
+  "first_approval": {
+    "year": 2004,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tysabri (originally Antegren)"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Athena Neurosciences (Elan)",
+    "note": "Humanised IgG4 antibody against the α4 subunit of α4β1 and α4β7 integrins."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription (restricted distribution)",
+  "tagline": "Highly effective α4 integrin blocker for MS, limited by the risk of PML",
+  "summary": "Natalizumab is a humanised monoclonal antibody against α4 integrin that prevents immune cells from crossing the blood–brain barrier. It is among the most effective treatments for relapsing multiple sclerosis and is also used in Crohn's disease, but carries a risk of progressive multifocal leukoencephalopathy (PML).",
+  "mechanism": [
+    "Natalizumab binds the α4 subunit of α4β1 (VLA-4) and α4β7 integrins on leukocytes, blocking their binding to VCAM-1 on brain endothelium and MAdCAM-1 in the gut.",
+    "This prevents activated lymphocytes from entering the central nervous system, sharply reducing new inflammatory lesions and relapses in MS. Reduced immune surveillance of the brain allows JC virus to cause PML in a minority of patients."
+  ],
+  "uses": [
+    "Highly active relapsing forms of multiple sclerosis",
+    "Moderate to severe Crohn's disease with inadequate response to other therapies (US)"
+  ],
+  "history": [
+    {
+      "year": 2004,
+      "title": "Accelerated approval",
+      "detail": "Approved in November for relapsing MS, initially named Antegren."
+    },
+    {
+      "year": 2005,
+      "title": "Market withdrawal",
+      "detail": "Voluntarily suspended in February after PML cases, two of them fatal, in clinical trials."
+    },
+    {
+      "year": 2006,
+      "title": "Reintroduction",
+      "detail": "Returns to the US market in June under the TOUCH risk-management programme; EU approval in June."
+    },
+    {
+      "year": 2008,
+      "title": "Crohn's disease",
+      "detail": "FDA approves natalizumab for Crohn's disease."
+    },
+    {
+      "year": 2012,
+      "title": "JCV antibody test",
+      "detail": "Anti-JC virus antibody testing is introduced to stratify PML risk."
+    },
+    {
+      "year": 2013,
+      "title": "Biogen takes full ownership",
+      "detail": "Biogen acquires Elan's share of Tysabri."
+    },
+    {
+      "year": 2021,
+      "title": "Subcutaneous form",
+      "detail": "The EU approves subcutaneous natalizumab."
+    },
+    {
+      "year": 2023,
+      "title": "First MS biosimilar",
+      "detail": "FDA approves Tyruko (natalizumab-sztn), the first biosimilar for multiple sclerosis."
+    }
+  ],
+  "pk": {
+    "half_life": "~11 days (about 7–15 days)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Headache",
+      "Fatigue",
+      "Arthralgia",
+      "Urinary tract infections",
+      "Infusion reactions",
+      "Depression"
+    ],
+    "serious": [
+      "Progressive multifocal leukoencephalopathy",
+      "Herpes encephalitis and meningitis",
+      "Hepatotoxicity",
+      "Hypersensitivity and anaphylaxis",
+      "Thrombocytopenia",
+      "Rebound disease activity after stopping"
+    ],
+    "boxed_warning": "Progressive multifocal leukoencephalopathy; available only through a restricted distribution programme (TOUCH)."
+  },
+  "facts": [
+    "PML risk rises with JC virus antibody positivity, treatment beyond two years and prior immunosuppressant use.",
+    "Natalizumab was the first monoclonal antibody approved for multiple sclerosis."
+  ],
+  "related": [
+    "vedolizumab",
+    "ocrelizumab",
+    "alemtuzumab",
+    "fingolimod",
+    "dimethyl-fumarate",
+    "interferon-beta-1a",
+    "glatiramer-acetate"
+  ],
+  "references": [
+    {
+      "title": "Natalizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Natalizumab"
+    },
+    {
+      "title": "DailyMed – natalizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=natalizumab"
+    },
+    {
+      "title": "EMA – Tysabri EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tysabri"
+    }
+  ],
+  "stage": "written"
 }

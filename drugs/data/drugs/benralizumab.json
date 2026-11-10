@@ -1,36 +1,122 @@
 {
   "slug": "benralizumab",
   "name": "Benralizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MEDI-563",
+    "KHK4563"
+  ],
+  "brands": [
+    "Fasenra"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-IL-5 receptor α monoclonal antibody (eosinophil-depleting)",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection every 4 weeks for the first three doses, then every 8 weeks",
+  "targets": [
+    "IL5RA"
+  ],
+  "origin": "biotech",
+  "originator": "Kyowa Hakko Kirin (BioWa) and MedImmune (AstraZeneca)",
+  "owner": "AstraZeneca (Kyowa Kirin in Japan)",
+  "first_approval": {
+    "year": 2017,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Fasenra"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Kyowa Hakko Kirin and MedImmune",
+    "note": "Humanised afucosylated IgG1κ antibody against IL-5Rα made with BioWa's Potelligent technology, enhancing ADCC."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Afucosylated IL-5 receptor antibody that depletes eosinophils, dosed every 8 weeks",
+  "summary": "Benralizumab is a humanised monoclonal antibody against the IL-5 receptor α chain that rapidly and almost completely depletes eosinophils. It is used for severe eosinophilic asthma and, since 2024, eosinophilic granulomatosis with polyangiitis.",
+  "mechanism": [
+    "Benralizumab binds IL-5Rα, expressed on eosinophils and basophils, blocking IL-5 signalling.",
+    "Its afucosylated Fc binds FcγRIIIa on natural killer cells with high affinity, triggering antibody-dependent cellular cytotoxicity that eliminates eosinophils in blood and tissue within 24 hours."
+  ],
+  "uses": [
+    "Severe eosinophilic asthma (adults and children ≥6 years)",
+    "Eosinophilic granulomatosis with polyangiitis"
+  ],
+  "history": [
+    {
+      "year": 2016,
+      "title": "SIROCCO and CALIMA",
+      "detail": "Phase 3 trials show reduced exacerbations in eosinophilic asthma."
+    },
+    {
+      "year": 2017,
+      "title": "FDA approval",
+      "detail": "Approved in November for severe eosinophilic asthma."
+    },
+    {
+      "year": 2018,
+      "title": "EU and Japan approval",
+      "detail": "Approved in the EU and Japan in January."
+    },
+    {
+      "year": 2019,
+      "title": "COPD trials fail",
+      "detail": "GALATHEA and TERRANOVA do not meet primary endpoints in COPD."
+    },
+    {
+      "year": 2024,
+      "title": "EGPA",
+      "detail": "FDA approves benralizumab for EGPA (MANDARA, non-inferior to mepolizumab)."
+    }
+  ],
+  "pk": {
+    "half_life": "~15 days",
+    "bioavailability": "~59% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Pharyngitis",
+      "Injection-site reactions",
+      "Pyrexia"
+    ],
+    "serious": [
+      "Hypersensitivity reactions",
+      "Helminth infections"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "After loading, maintenance dosing is only once every 8 weeks.",
+    "Eosinophils in blood become nearly undetectable within a day of the first dose."
+  ],
+  "related": [
+    "mepolizumab",
+    "omalizumab",
+    "dupilumab",
+    "tezepelumab",
+    "budesonide",
+    "formoterol"
+  ],
+  "references": [
+    {
+      "title": "Benralizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Benralizumab"
+    },
+    {
+      "title": "DailyMed – benralizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=benralizumab"
+    },
+    {
+      "title": "EMA – Fasenra EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/fasenra"
+    }
+  ],
+  "stage": "written"
 }

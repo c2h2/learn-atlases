@@ -1,36 +1,125 @@
 {
   "slug": "ixekizumab",
   "name": "Ixekizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "LY2439821"
+  ],
+  "brands": [
+    "Taltz"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-IL-17A monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection every 2 weeks initially, then every 4 weeks",
+  "targets": [
+    "IL17A"
+  ],
+  "origin": "biotech",
+  "originator": "Eli Lilly",
+  "owner": "Eli Lilly",
+  "first_approval": {
+    "year": 2016,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Taltz"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly",
+    "note": "Humanised IgG4 antibody against IL-17A."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Humanised IL-17A antibody for psoriasis and spondyloarthritis",
+  "summary": "Ixekizumab is a humanised IgG4 monoclonal antibody that neutralises interleukin-17A. It is approved for plaque psoriasis, psoriatic arthritis, ankylosing spondylitis and non-radiographic axial spondyloarthritis.",
+  "mechanism": [
+    "Ixekizumab binds IL-17A (including the IL-17A/F heterodimer) with high affinity and blocks binding to the IL-17 receptor, reducing keratinocyte hyperproliferation and inflammatory signalling.",
+    "Its IgG4 backbone has minimal effector function; its effect results from cytokine neutralisation."
+  ],
+  "uses": [
+    "Moderate to severe plaque psoriasis (adults and children ≥6 years)",
+    "Psoriatic arthritis",
+    "Ankylosing spondylitis",
+    "Non-radiographic axial spondyloarthritis"
+  ],
+  "history": [
+    {
+      "year": 2012,
+      "title": "Phase 2 results",
+      "detail": "Phase 2 data in psoriasis are published in the New England Journal of Medicine."
+    },
+    {
+      "year": 2016,
+      "title": "FDA and EU approval",
+      "detail": "Approved in March (US) and April (EU) for plaque psoriasis after the UNCOVER trials."
+    },
+    {
+      "year": 2017,
+      "title": "Psoriatic arthritis",
+      "detail": "Approved for active psoriatic arthritis."
+    },
+    {
+      "year": 2019,
+      "title": "Ankylosing spondylitis",
+      "detail": "Approved for AS (COAST-V and COAST-W)."
+    },
+    {
+      "year": 2020,
+      "title": "nr-axSpA and children",
+      "detail": "Approved for non-radiographic axial spondyloarthritis and paediatric psoriasis."
+    }
+  ],
+  "pk": {
+    "half_life": "~13 days",
+    "bioavailability": "~60–81% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Injection-site reactions",
+      "Upper respiratory infections",
+      "Nausea",
+      "Tinea and other fungal infections"
+    ],
+    "serious": [
+      "Serious infections",
+      "New or worsening inflammatory bowel disease",
+      "Hypersensitivity reactions",
+      "Eczematous eruptions",
+      "Tuberculosis reactivation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The SPIRIT-H2H trial compared ixekizumab head-to-head with adalimumab in psoriatic arthritis.",
+    "Injection-site reactions are among the most common adverse effects."
+  ],
+  "related": [
+    "secukinumab",
+    "ustekinumab",
+    "guselkumab",
+    "risankizumab",
+    "adalimumab"
+  ],
+  "references": [
+    {
+      "title": "Ixekizumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ixekizumab"
+    },
+    {
+      "title": "DailyMed – ixekizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ixekizumab"
+    },
+    {
+      "title": "EMA – Taltz EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/taltz"
+    }
+  ],
+  "stage": "written"
 }

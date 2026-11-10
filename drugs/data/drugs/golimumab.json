@@ -1,36 +1,132 @@
 {
   "slug": "golimumab",
   "name": "Golimumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CNTO 148"
+  ],
+  "brands": [
+    "Simponi",
+    "Simponi Aria"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Anti-TNF-α monoclonal antibody (TNF inhibitor)",
+  "modality": "antibody",
+  "routes": [
+    "sc",
+    "iv"
+  ],
+  "route_note": "Subcutaneous injection once monthly; IV infusion every 8 weeks (Simponi Aria)",
+  "targets": [
+    "TNF"
+  ],
+  "origin": "biotech",
+  "originator": "Centocor (Johnson & Johnson)",
+  "owner": "Johnson & Johnson (US and some markets); Merck & Co. (MSD) in Europe",
+  "first_approval": {
+    "year": 2009,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Simponi"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Centocor",
+    "note": "Fully human IgG1κ antibody against TNF-α generated in transgenic mice (Medarex technology)."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "rx_status": "prescription",
+  "tagline": "Once-monthly human anti-TNF antibody for arthritis and ulcerative colitis",
+  "summary": "Golimumab is a fully human anti-TNF-α monoclonal antibody given subcutaneously once a month or intravenously every eight weeks. It is used in rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, non-radiographic axial spondyloarthritis and ulcerative colitis.",
+  "mechanism": [
+    "Golimumab binds soluble and transmembrane forms of TNF-α with high affinity, preventing receptor binding and reducing markers of inflammation such as CRP, IL-6 and adhesion molecules.",
+    "Its long half-life allows monthly subcutaneous dosing."
+  ],
+  "uses": [
+    "Rheumatoid arthritis (with methotrexate)",
+    "Psoriatic arthritis",
+    "Ankylosing spondylitis",
+    "Non-radiographic axial spondyloarthritis (EU)",
+    "Moderate to severe ulcerative colitis",
+    "Polyarticular juvenile idiopathic arthritis"
+  ],
+  "history": [
+    {
+      "year": 2009,
+      "title": "FDA approval",
+      "detail": "Approved in April as Simponi for RA, PsA and AS — the first once-monthly TNF inhibitor."
+    },
+    {
+      "year": 2009,
+      "title": "EU approval",
+      "detail": "Approved in the EU in October, marketed by Merck/MSD in Europe."
+    },
+    {
+      "year": 2013,
+      "title": "Ulcerative colitis and IV form",
+      "detail": "Approved for UC; Simponi Aria IV infusion approved for RA."
+    },
+    {
+      "year": 2017,
+      "title": "IV in PsA and AS",
+      "detail": "Simponi Aria approved for psoriatic arthritis and ankylosing spondylitis."
+    },
+    {
+      "year": 2020,
+      "title": "Paediatric arthritis",
+      "detail": "Simponi Aria approved for polyarticular juvenile idiopathic arthritis."
+    }
+  ],
+  "pk": {
+    "half_life": "~2 weeks",
+    "bioavailability": "~53% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "safety": {
+    "common": [
+      "Upper respiratory infections",
+      "Injection-site reactions",
+      "Raised liver enzymes",
+      "Hypertension"
+    ],
+    "serious": [
+      "Serious infections and sepsis",
+      "Reactivation of latent tuberculosis",
+      "Hepatitis B reactivation",
+      "Lymphoma and other malignancies",
+      "Demyelinating disease",
+      "New or worsening heart failure",
+      "Lupus-like syndrome",
+      "Cytopenias"
+    ],
+    "boxed_warning": "Serious infections (including tuberculosis, invasive fungal and opportunistic infections) and malignancy, including lymphoma."
+  },
+  "facts": [
+    "Commercial rights are split geographically between Johnson & Johnson and MSD.",
+    "It was the first TNF inhibitor approved for once-monthly subcutaneous dosing."
+  ],
+  "related": [
+    "infliximab",
+    "adalimumab",
+    "etanercept",
+    "certolizumab-pegol",
+    "methotrexate"
+  ],
+  "references": [
+    {
+      "title": "Golimumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Golimumab"
+    },
+    {
+      "title": "DailyMed – golimumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=golimumab"
+    },
+    {
+      "title": "EMA – Simponi EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/simponi"
+    }
+  ],
+  "stage": "written"
 }

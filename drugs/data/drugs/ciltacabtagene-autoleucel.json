@@ -1,36 +1,134 @@
 {
   "slug": "ciltacabtagene-autoleucel",
   "name": "Ciltacabtagene autoleucel",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "cilta-cel",
+    "JNJ-68284528",
+    "LCAR-B38M"
+  ],
+  "brands": [
+    "Carvykti"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "BCMA-directed autologous CAR T-cell therapy",
+  "modality": "cell-therapy",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "Single IV infusion after lymphodepleting chemotherapy",
+  "targets": [
+    "TNFRSF17"
+  ],
+  "origin": "biotech",
+  "originator": "Legend Biotech (Nanjing), co-developed with Janssen",
+  "owner": "Johnson & Johnson (Janssen) and Legend Biotech",
+  "first_approval": {
+    "year": 2022,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Carvykti"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Legend Biotech",
+    "note": "Lentiviral CAR with two BCMA-binding single-domain (VHH) antibodies, a 4-1BB costimulatory domain and CD3ζ."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription (specialist centres)",
+  "tagline": "BCMA CAR T therapy with deep, durable responses in relapsed multiple myeloma",
+  "summary": "Ciltacabtagene autoleucel is a CAR T-cell therapy directed at B-cell maturation antigen (BCMA) on myeloma cells. Its unusual receptor carries two camelid-derived single-domain binders, and it produces very high response rates in relapsed or refractory multiple myeloma, including after one prior line in lenalidomide-refractory disease.",
+  "mechanism": [
+    "Patient T cells are transduced with a lentiviral vector encoding a CAR whose antigen-binding part consists of two VHH domains targeting different BCMA epitopes, linked to 4-1BB and CD3ζ signalling domains.",
+    "After infusion, CAR T cells expand, recognise BCMA (TNFRSF17) on malignant plasma cells and kill them; normal plasma cells are also eliminated, leading to hypogammaglobulinaemia."
+  ],
+  "uses": [
+    "Relapsed or refractory multiple myeloma after at least one prior line including a proteasome inhibitor and an immunomodulatory agent, in lenalidomide-refractory disease"
+  ],
+  "history": [
+    {
+      "year": 2017,
+      "title": "Chinese data and Janssen deal",
+      "detail": "Legend presents early results of LCAR-B38M in China and partners with Janssen."
+    },
+    {
+      "year": 2021,
+      "title": "CARTITUDE-1",
+      "detail": "Phase 1b/2 results show an overall response rate of about 97% in heavily pretreated myeloma."
+    },
+    {
+      "year": 2022,
+      "title": "FDA approval",
+      "detail": "Approved in February for myeloma after four or more prior lines; EU conditional approval follows in May."
+    },
+    {
+      "year": 2023,
+      "title": "CARTITUDE-4",
+      "detail": "Superior progression-free survival versus standard regimens after one to three prior lines."
+    },
+    {
+      "year": 2024,
+      "title": "Earlier-line approval",
+      "detail": "FDA approves use after one prior line in lenalidomide-refractory myeloma."
+    },
+    {
+      "year": 2024,
+      "title": "Secondary malignancy warning",
+      "detail": "Class boxed warning on T-cell malignancies added; overall survival benefit reported in CARTITUDE-4."
+    }
+  ],
+  "pk": {
+    "half_life": "CAR transgene peaks ~2 weeks after infusion and persists for months",
+    "bioavailability": "Not applicable (cell therapy)",
+    "metabolism": "In vivo expansion and contraction of cells",
+    "excretion": "Not applicable"
+  },
+  "safety": {
+    "common": [
+      "Cytokine release syndrome",
+      "Pyrexia",
+      "Hypogammaglobulinaemia",
+      "Neutropenia and other cytopenias",
+      "Musculoskeletal pain",
+      "Fatigue",
+      "Infections"
+    ],
+    "serious": [
+      "Cytokine release syndrome",
+      "ICANS",
+      "Parkinsonism and Guillain–Barré syndrome",
+      "Haemophagocytic lymphohistiocytosis",
+      "Prolonged and recurrent cytopenias",
+      "Secondary haematological malignancies"
+    ],
+    "boxed_warning": "Cytokine release syndrome, neurological toxicities (including ICANS, parkinsonism and Guillain–Barré syndrome), HLH/MAS, prolonged cytopenia and secondary haematological malignancies."
+  },
+  "facts": [
+    "Its CAR uses two llama-derived VHH binding domains rather than a conventional scFv.",
+    "Delayed movement and neurocognitive toxicity resembling parkinsonism is a distinctive adverse effect of BCMA CAR T therapy."
+  ],
+  "related": [
+    "teclistamab",
+    "daratumumab",
+    "tisagenlecleucel",
+    "axicabtagene-ciloleucel",
+    "bortezomib",
+    "lenalidomide"
+  ],
+  "references": [
+    {
+      "title": "Ciltacabtagene autoleucel – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ciltacabtagene_autoleucel"
+    },
+    {
+      "title": "DailyMed – ciltacabtagene autoleucel labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ciltacabtagene+autoleucel"
+    },
+    {
+      "title": "EMA – Carvykti EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/carvykti"
+    }
+  ],
+  "stage": "written"
 }

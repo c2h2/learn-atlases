@@ -1,36 +1,137 @@
 {
   "slug": "aldesleukin",
   "name": "Aldesleukin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "recombinant interleukin-2",
+    "rIL-2",
+    "des-alanyl-1, serine-125 human interleukin-2"
+  ],
+  "brands": [
+    "Proleukin"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Recombinant interleukin-2 (cytokine immunotherapy)",
+  "modality": "protein",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "High-dose IV bolus every 8 hours in hospital (licensed); low-dose SC regimens in some regions",
+  "targets": [
+    "IL2RA",
+    "IL2RB",
+    "IL2RG"
+  ],
+  "origin": "biotech",
+  "originator": "Cetus Corporation",
+  "owner": "Iovance Biotherapeutics (Proleukin); Clinigen in some markets",
+  "first_approval": {
+    "year": 1992,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Proleukin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1976,
+    "by": "Doris Morgan, Francis Ruscetti and Robert Gallo (US National Cancer Institute)",
+    "note": "Described T-cell growth factor, later named interleukin-2; aldesleukin is a non-glycosylated E. coli-produced analogue."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription (inpatient)",
+  "tagline": "Recombinant interleukin-2: early cancer immunotherapy for kidney cancer and melanoma",
+  "summary": "Aldesleukin is a recombinant form of interleukin-2, a cytokine that drives T-cell and NK-cell proliferation. High-dose IL-2 produces durable complete remissions in a small fraction of patients with metastatic renal cell carcinoma or melanoma, at the cost of severe capillary leak toxicity.",
+  "mechanism": [
+    "Aldesleukin binds the IL-2 receptor complex (α, β and common γ chains) on T cells and NK cells, activating JAK1/JAK3–STAT5 signalling and stimulating proliferation, cytotoxicity and cytokine production.",
+    "At high doses it expands tumour-reactive effector cells, but it also stimulates regulatory T cells and causes a systemic inflammatory response with vascular leak. It is used to support the expansion of infused tumour-infiltrating lymphocytes after lifileucel therapy."
+  ],
+  "uses": [
+    "Metastatic renal cell carcinoma",
+    "Metastatic melanoma"
+  ],
+  "history": [
+    {
+      "year": 1976,
+      "title": "T-cell growth factor",
+      "detail": "Morgan, Ruscetti and Gallo describe a factor that sustains T-cell growth in culture."
+    },
+    {
+      "year": 1983,
+      "title": "Gene cloned",
+      "detail": "Taniguchi and colleagues clone the human IL-2 gene."
+    },
+    {
+      "year": 1985,
+      "title": "Rosenberg's first responses",
+      "detail": "Rosenberg and colleagues at the NCI report regressions with high-dose IL-2 and LAK cells."
+    },
+    {
+      "year": 1992,
+      "title": "FDA approval",
+      "detail": "Approved for metastatic renal cell carcinoma."
+    },
+    {
+      "year": 1998,
+      "title": "Melanoma",
+      "detail": "Approved for metastatic melanoma."
+    },
+    {
+      "year": 2023,
+      "title": "Iovance acquisition",
+      "detail": "Iovance Biotherapeutics acquires Proleukin from Clinigen."
+    },
+    {
+      "year": 2024,
+      "title": "TIL therapy",
+      "detail": "FDA approves lifileucel (Amtagvi), a tumour-infiltrating lymphocyte therapy given with aldesleukin."
+    }
+  ],
+  "pk": {
+    "half_life": "~85 min (terminal); distribution half-life ~13 min",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolysis, mainly in renal tubular cells",
+    "excretion": "Renal filtration with tubular catabolism"
+  },
+  "safety": {
+    "common": [
+      "Hypotension",
+      "Fever and chills",
+      "Nausea, vomiting and diarrhoea",
+      "Oliguria",
+      "Rash and pruritus",
+      "Confusion",
+      "Fluid retention"
+    ],
+    "serious": [
+      "Capillary leak syndrome",
+      "Arrhythmias and myocardial ischaemia",
+      "Renal failure",
+      "Impaired neutrophil function and sepsis",
+      "Coma and severe lethargy",
+      "Respiratory insufficiency"
+    ],
+    "boxed_warning": "Restrict to patients with normal cardiac and pulmonary function; capillary leak syndrome; impaired neutrophil function with increased infection risk; withhold for moderate to severe lethargy or somnolence."
+  },
+  "facts": [
+    "High-dose IL-2 must be given in hospital, usually in an intensive care setting.",
+    "Complete responses are seen in roughly 5–10% of patients and are often very durable."
+  ],
+  "related": [
+    "nivolumab",
+    "ipilimumab",
+    "pembrolizumab",
+    "peginterferon-alfa-2a"
+  ],
+  "references": [
+    {
+      "title": "Aldesleukin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aldesleukin"
+    },
+    {
+      "title": "DailyMed – aldesleukin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=aldesleukin"
+    }
+  ],
+  "stage": "written"
 }

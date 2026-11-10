@@ -1,36 +1,162 @@
 {
   "slug": "adalimumab",
   "name": "Adalimumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "D2E7",
+    "adalimumab-atto",
+    "adalimumab-adaz",
+    "adalimumab-adbm"
+  ],
+  "brands": [
+    "Humira",
+    "Amjevita",
+    "Hyrimoz",
+    "Cyltezo",
+    "Hadlima",
+    "Imraldi",
+    "Yuflyma",
+    "Idacio"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-TNF-α monoclonal antibody (TNF inhibitor)",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection every 2 weeks (some indications weekly) by pre-filled pen or syringe",
+  "targets": [
+    "TNF"
+  ],
+  "origin": "biotech",
+  "originator": "BASF Knoll with Cambridge Antibody Technology",
+  "owner": "AbbVie (Humira); biosimilars from many companies",
+  "first_approval": {
+    "year": 2002,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Humira"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1993,
+    "by": "Cambridge Antibody Technology and BASF Knoll",
+    "note": "Isolated by phage display (guided selection from a murine antibody); the first fully human monoclonal antibody approved."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Fully human anti-TNF antibody, long the world's best-selling medicine",
+  "summary": "Adalimumab is a fully human monoclonal antibody against TNF-α, given by subcutaneous injection. It treats rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, Crohn's disease, ulcerative colitis, psoriasis, hidradenitis suppurativa and uveitis, and as Humira was the top-selling drug in the world for most of the 2010s.",
+  "mechanism": [
+    "Adalimumab binds soluble and membrane-bound TNF-α and blocks its interaction with the p55 and p75 TNF receptors, reducing downstream NF-κB activation and inflammatory mediators such as IL-6 and matrix metalloproteinases.",
+    "As an IgG1 it can also lyse cells expressing surface TNF in the presence of complement. Clinically this reduces synovial inflammation, joint damage, gut inflammation and psoriatic skin lesions."
+  ],
+  "uses": [
+    "Rheumatoid arthritis",
+    "Juvenile idiopathic arthritis",
+    "Psoriatic arthritis",
+    "Ankylosing spondylitis and non-radiographic axial spondyloarthritis",
+    "Crohn's disease and ulcerative colitis (adults and children)",
+    "Plaque psoriasis",
+    "Hidradenitis suppurativa",
+    "Non-infectious uveitis"
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "Phage display origin",
+      "detail": "Cambridge Antibody Technology and BASF Knoll begin developing D2E7."
+    },
+    {
+      "year": 2001,
+      "title": "Abbott acquires Knoll",
+      "detail": "Abbott Laboratories buys Knoll from BASF, gaining the antibody."
+    },
+    {
+      "year": 2002,
+      "title": "FDA approval",
+      "detail": "Approved in December as Humira for rheumatoid arthritis."
+    },
+    {
+      "year": 2007,
+      "title": "Crohn's disease",
+      "detail": "Approved for Crohn's disease; psoriasis follows in 2008."
+    },
+    {
+      "year": 2013,
+      "title": "AbbVie",
+      "detail": "Humira passes to AbbVie, spun off from Abbott."
+    },
+    {
+      "year": 2015,
+      "title": "Hidradenitis suppurativa",
+      "detail": "First drug approved for hidradenitis suppurativa."
+    },
+    {
+      "year": 2018,
+      "title": "EU biosimilars",
+      "detail": "Several biosimilars launch in Europe in October, sharply cutting prices."
+    },
+    {
+      "year": 2023,
+      "title": "US biosimilars",
+      "detail": "Amjevita launches in January as the first US biosimilar, followed by several others during the year."
+    }
+  ],
+  "pk": {
+    "half_life": "~2 weeks (10–20 days)",
+    "bioavailability": "~64% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Injection-site reactions",
+      "Upper respiratory infections",
+      "Headache",
+      "Rash",
+      "Sinusitis"
+    ],
+    "serious": [
+      "Serious infections and sepsis",
+      "Reactivation of latent tuberculosis",
+      "Hepatitis B reactivation",
+      "Lymphoma and other malignancies",
+      "Demyelinating disease",
+      "New or worsening heart failure",
+      "Lupus-like syndrome",
+      "Cytopenias",
+      "Hepatosplenic T-cell lymphoma (rare)"
+    ],
+    "boxed_warning": "Serious infections (including tuberculosis, invasive fungal and opportunistic infections) and malignancy, including lymphoma."
+  },
+  "facts": [
+    "It was the first fully human monoclonal antibody approved by the FDA.",
+    "AbbVie built a large patent estate around Humira, delaying US biosimilar entry until 2023, about five years after Europe."
+  ],
+  "related": [
+    "infliximab",
+    "etanercept",
+    "certolizumab-pegol",
+    "golimumab",
+    "methotrexate",
+    "upadacitinib",
+    "secukinumab",
+    "ustekinumab"
+  ],
+  "references": [
+    {
+      "title": "Adalimumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Adalimumab"
+    },
+    {
+      "title": "DailyMed – adalimumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=adalimumab"
+    },
+    {
+      "title": "EMA – Humira EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/humira"
+    }
+  ],
+  "stage": "written"
 }

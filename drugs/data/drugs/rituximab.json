@@ -1,36 +1,160 @@
 {
   "slug": "rituximab",
   "name": "Rituximab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "IDEC-C2B8",
+    "rituximab-abbs",
+    "rituximab-pvvr",
+    "rituximab-arrx"
+  ],
+  "brands": [
+    "Rituxan",
+    "MabThera",
+    "Rituxan Hycela",
+    "Truxima",
+    "Ruxience",
+    "Riabni"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-CD20 monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion; subcutaneous co-formulation with hyaluronidase for some lymphoma/CLL uses after a first IV dose",
+  "targets": [
+    "MS4A1"
+  ],
+  "origin": "biotech",
+  "originator": "IDEC Pharmaceuticals (with Genentech)",
+  "owner": "Roche (Genentech); biosimilars from several companies",
+  "first_approval": {
+    "year": 1997,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Rituxan"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1991,
+    "by": "IDEC Pharmaceuticals",
+    "note": "Chimeric mouse–human IgG1 derived from the murine anti-CD20 antibody 2B8."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first monoclonal antibody approved for cancer; depletes CD20-positive B cells",
+  "summary": "Rituximab is a chimeric monoclonal antibody against CD20, a surface protein on most B cells. Approved in 1997 for non-Hodgkin lymphoma, it became a backbone of lymphoma and CLL therapy and is also used in rheumatoid arthritis, ANCA-associated vasculitis and pemphigus vulgaris.",
+  "mechanism": [
+    "Rituximab binds CD20 (MS4A1), a membrane protein expressed from the pre-B to the mature B-cell stage but not on stem cells or plasma cells.",
+    "Bound antibody kills B cells through complement-dependent cytotoxicity, antibody-dependent cellular cytotoxicity and phagocytosis by macrophages, and to some extent direct apoptosis. Because plasma cells lack CD20, existing antibody levels are only partly reduced, and B cells repopulate from precursors over 6–12 months."
+  ],
+  "uses": [
+    "CD20-positive B-cell non-Hodgkin lymphoma (follicular, diffuse large B-cell)",
+    "Chronic lymphocytic leukaemia (with chemotherapy)",
+    "Rheumatoid arthritis (with methotrexate)",
+    "Granulomatosis with polyangiitis and microscopic polyangiitis",
+    "Pemphigus vulgaris"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "Antibody engineered",
+      "detail": "IDEC creates the chimeric antibody IDEC-C2B8 from a murine anti-CD20 antibody."
+    },
+    {
+      "year": 1997,
+      "title": "FDA approval",
+      "detail": "Approved as Rituxan for relapsed or refractory low-grade or follicular B-cell NHL — the first monoclonal antibody approved for cancer."
+    },
+    {
+      "year": 1998,
+      "title": "EU approval",
+      "detail": "Approved in the EU as MabThera, marketed by Roche."
+    },
+    {
+      "year": 2006,
+      "title": "Rheumatoid arthritis",
+      "detail": "Approved for rheumatoid arthritis in combination with methotrexate."
+    },
+    {
+      "year": 2010,
+      "title": "CLL",
+      "detail": "Approved for CLL with fludarabine and cyclophosphamide (FCR)."
+    },
+    {
+      "year": 2011,
+      "title": "Vasculitis",
+      "detail": "Approved for granulomatosis with polyangiitis and microscopic polyangiitis."
+    },
+    {
+      "year": 2014,
+      "title": "Subcutaneous form",
+      "detail": "Subcutaneous MabThera with hyaluronidase approved in the EU; Rituxan Hycela follows in the US in 2017."
+    },
+    {
+      "year": 2017,
+      "title": "First biosimilar",
+      "detail": "The EU approves Truxima, the first rituximab biosimilar; the FDA approves it in 2018."
+    },
+    {
+      "year": 2018,
+      "title": "Pemphigus vulgaris",
+      "detail": "FDA approves rituximab for moderate to severe pemphigus vulgaris."
+    }
+  ],
+  "pk": {
+    "half_life": "~3 weeks (median ~22 days in NHL)",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Infusion-related reactions",
+      "Fever and chills",
+      "Lymphopenia and neutropenia",
+      "Infections",
+      "Fatigue"
+    ],
+    "serious": [
+      "Fatal infusion reactions",
+      "Hepatitis B reactivation",
+      "Progressive multifocal leukoencephalopathy",
+      "Severe mucocutaneous reactions",
+      "Tumour lysis syndrome",
+      "Hypogammaglobulinaemia"
+    ],
+    "boxed_warning": "Fatal infusion-related reactions, severe mucocutaneous reactions, hepatitis B virus reactivation and progressive multifocal leukoencephalopathy."
+  },
+  "facts": [
+    "Rituximab was the first monoclonal antibody approved by the FDA to treat cancer.",
+    "B-cell depletion typically persists for 6–12 months after a course.",
+    "Patients should be screened for hepatitis B before treatment because of reactivation risk."
+  ],
+  "related": [
+    "obinutuzumab",
+    "ocrelizumab",
+    "cyclophosphamide",
+    "doxorubicin",
+    "vincristine",
+    "methotrexate",
+    "ibrutinib"
+  ],
+  "references": [
+    {
+      "title": "Rituximab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rituximab"
+    },
+    {
+      "title": "DailyMed – rituximab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=rituximab"
+    },
+    {
+      "title": "EMA – Mabthera EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/mabthera"
+    }
+  ],
+  "stage": "written"
 }

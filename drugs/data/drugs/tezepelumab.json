@@ -1,36 +1,122 @@
 {
   "slug": "tezepelumab",
   "name": "Tezepelumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AMG 157",
+    "MEDI9929",
+    "tezepelumab-ekko"
+  ],
+  "brands": [
+    "Tezspire"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-TSLP monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection every 4 weeks",
+  "targets": [
+    "TSLP"
+  ],
+  "origin": "biotech",
+  "originator": "Amgen and AstraZeneca (MedImmune)",
+  "owner": "AstraZeneca and Amgen",
+  "first_approval": {
+    "year": 2021,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tezspire"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Amgen",
+    "note": "Fully human IgG2λ antibody against thymic stromal lymphopoietin, co-developed with AstraZeneca."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First biologic blocking epithelial TSLP, for severe asthma without phenotype limits",
+  "summary": "Tezepelumab is a human monoclonal antibody that blocks thymic stromal lymphopoietin (TSLP), an epithelial alarmin at the top of the airway inflammatory cascade. It is approved as add-on maintenance for severe asthma regardless of eosinophil count or allergic status.",
+  "mechanism": [
+    "TSLP is released by airway epithelial cells in response to allergens, viruses, pollutants and injury, and activates dendritic cells, mast cells, ILC2s and T cells, driving both type 2 and non-type 2 inflammation.",
+    "Tezepelumab binds TSLP and prevents it from binding its receptor complex, lowering blood eosinophils, IgE, FeNO and IL-5/IL-13 levels and reducing airway hyperresponsiveness."
+  ],
+  "uses": [
+    "Add-on maintenance therapy for severe asthma in patients aged 12 years and older"
+  ],
+  "history": [
+    {
+      "year": 2012,
+      "title": "Amgen–AstraZeneca collaboration",
+      "detail": "The two companies agree to co-develop five inflammation antibodies, including tezepelumab."
+    },
+    {
+      "year": 2017,
+      "title": "PATHWAY",
+      "detail": "Phase 2 results show fewer asthma exacerbations, including in low-eosinophil patients."
+    },
+    {
+      "year": 2021,
+      "title": "NAVIGATOR",
+      "detail": "Phase 3 results show reduced exacerbations across phenotypes."
+    },
+    {
+      "year": 2021,
+      "title": "FDA approval",
+      "detail": "Approved in December for severe asthma, without a biomarker restriction."
+    },
+    {
+      "year": 2022,
+      "title": "EU approval",
+      "detail": "Approved in the European Union in September."
+    }
+  ],
+  "pk": {
+    "half_life": "~26 days",
+    "bioavailability": "~77% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Pharyngitis",
+      "Arthralgia",
+      "Back pain",
+      "Injection-site reactions"
+    ],
+    "serious": [
+      "Hypersensitivity reactions",
+      "Helminth infections",
+      "Serious infections (uncommon)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It was the first asthma biologic approved without a requirement for an eosinophilic or allergic phenotype.",
+    "TSLP was originally identified as a growth factor produced by thymic stromal cells."
+  ],
+  "related": [
+    "omalizumab",
+    "mepolizumab",
+    "benralizumab",
+    "dupilumab",
+    "budesonide"
+  ],
+  "references": [
+    {
+      "title": "Tezepelumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tezepelumab"
+    },
+    {
+      "title": "DailyMed – tezepelumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tezepelumab"
+    },
+    {
+      "title": "EMA – Tezspire EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tezspire"
+    }
+  ],
+  "stage": "written"
 }

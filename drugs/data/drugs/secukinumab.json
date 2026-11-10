@@ -1,36 +1,131 @@
 {
   "slug": "secukinumab",
   "name": "Secukinumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AIN457"
+  ],
+  "brands": [
+    "Cosentyx"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-IL-17A monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "sc",
+    "iv"
+  ],
+  "route_note": "Subcutaneous injection weekly for loading then every 4 weeks; IV infusion form for PsA and axial spondyloarthritis",
+  "targets": [
+    "IL17A"
+  ],
+  "origin": "biotech",
+  "originator": "Novartis",
+  "owner": "Novartis",
+  "first_approval": {
+    "year": 2015,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Cosentyx"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Novartis",
+    "note": "Fully human IgG1κ antibody against IL-17A."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First IL-17A inhibitor, for psoriasis, psoriatic arthritis and axial spondyloarthritis",
+  "summary": "Secukinumab is a fully human monoclonal antibody that neutralises interleukin-17A. It was the first IL-17 inhibitor approved and is used in plaque psoriasis, psoriatic arthritis, ankylosing spondylitis, non-radiographic axial spondyloarthritis, enthesitis-related arthritis and hidradenitis suppurativa.",
+  "mechanism": [
+    "IL-17A, produced by Th17 cells, γδ T cells and innate lymphoid cells under the influence of IL-23, acts on keratinocytes, synoviocytes and endothelium to induce chemokines, antimicrobial peptides and inflammatory mediators.",
+    "Secukinumab binds IL-17A and blocks its interaction with the IL-17 receptor, interrupting the IL-23/IL-17 axis that drives psoriatic plaques and enthesitis. IL-17 also protects mucosa against Candida, explaining the increase in mucocutaneous candidiasis."
+  ],
+  "uses": [
+    "Moderate to severe plaque psoriasis (adults and children)",
+    "Psoriatic arthritis",
+    "Ankylosing spondylitis",
+    "Non-radiographic axial spondyloarthritis",
+    "Enthesitis-related arthritis",
+    "Moderate to severe hidradenitis suppurativa"
+  ],
+  "history": [
+    {
+      "year": 2015,
+      "title": "EU and US approval",
+      "detail": "Approved in January in the EU and the US for plaque psoriasis, the first IL-17A inhibitor."
+    },
+    {
+      "year": 2016,
+      "title": "PsA and AS",
+      "detail": "Approved for psoriatic arthritis and ankylosing spondylitis."
+    },
+    {
+      "year": 2020,
+      "title": "nr-axSpA",
+      "detail": "Approved for non-radiographic axial spondyloarthritis."
+    },
+    {
+      "year": 2021,
+      "title": "Paediatric psoriasis",
+      "detail": "FDA approves use in children aged 6 years and older with plaque psoriasis."
+    },
+    {
+      "year": 2023,
+      "title": "HS and IV form",
+      "detail": "Approved for hidradenitis suppurativa and as an IV infusion for PsA and axSpA."
+    }
+  ],
+  "pk": {
+    "half_life": "~27 days",
+    "bioavailability": "~73% (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nasopharyngitis",
+      "Upper respiratory infections",
+      "Diarrhoea",
+      "Oral and mucocutaneous candidiasis",
+      "Injection-site reactions"
+    ],
+    "serious": [
+      "Serious infections",
+      "New or worsening inflammatory bowel disease",
+      "Hypersensitivity reactions",
+      "Eczematous eruptions",
+      "Tuberculosis reactivation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Secukinumab was the first IL-17A inhibitor approved for psoriasis.",
+    "IL-17 inhibitors are generally avoided in patients with inflammatory bowel disease, where trials showed worsening."
+  ],
+  "related": [
+    "ixekizumab",
+    "ustekinumab",
+    "risankizumab",
+    "guselkumab",
+    "adalimumab",
+    "apremilast",
+    "deucravacitinib"
+  ],
+  "references": [
+    {
+      "title": "Secukinumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Secukinumab"
+    },
+    {
+      "title": "DailyMed – secukinumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=secukinumab"
+    },
+    {
+      "title": "EMA – Cosentyx EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/cosentyx"
+    }
+  ],
+  "stage": "written"
 }

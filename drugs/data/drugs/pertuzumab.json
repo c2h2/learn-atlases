@@ -1,36 +1,133 @@
 {
   "slug": "pertuzumab",
   "name": "Pertuzumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "rhuMAb 2C4",
+    "RG1273"
+  ],
+  "brands": [
+    "Perjeta",
+    "Phesgo (with trastuzumab and hyaluronidase)"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Anti-HER2 monoclonal antibody (HER2 dimerisation inhibitor)",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV infusion every 3 weeks with trastuzumab; fixed-dose SC combination (Phesgo)",
+  "targets": [
+    "ERBB2"
+  ],
+  "origin": "biotech",
+  "originator": "Genentech",
+  "owner": "Roche (Genentech)",
+  "first_approval": {
+    "year": 2012,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Perjeta"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Genentech",
+    "note": "Humanised form of the murine antibody 2C4 binding the HER2 dimerisation domain."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "rx_status": "prescription",
+  "tagline": "HER2 dimerisation blocker used with trastuzumab for dual HER2 blockade",
+  "summary": "Pertuzumab is a humanised monoclonal antibody that binds a different epitope of HER2 from trastuzumab and blocks receptor dimerisation. Given with trastuzumab and chemotherapy, it improves outcomes in HER2-positive metastatic and early breast cancer.",
+  "mechanism": [
+    "Pertuzumab binds extracellular subdomain II of HER2, the dimerisation arm, preventing HER2 from forming ligand-dependent heterodimers, especially with HER3, the most potent signalling pair.",
+    "This blocks PI3K–AKT and MAPK signalling and complements trastuzumab, which binds subdomain IV; together they provide more complete HER2 pathway inhibition. Pertuzumab also mediates ADCC."
+  ],
+  "uses": [
+    "HER2-positive metastatic breast cancer (first-line, with trastuzumab and docetaxel)",
+    "Neoadjuvant treatment of HER2-positive early breast cancer",
+    "Adjuvant treatment of high-risk HER2-positive early breast cancer"
+  ],
+  "history": [
+    {
+      "year": 2004,
+      "title": "Structural basis",
+      "detail": "Crystal structures show pertuzumab binds the HER2 dimerisation domain, distinct from the trastuzumab epitope."
+    },
+    {
+      "year": 2012,
+      "title": "CLEOPATRA and approval",
+      "detail": "Adding pertuzumab to trastuzumab–docetaxel prolongs survival; FDA approves Perjeta in June."
+    },
+    {
+      "year": 2013,
+      "title": "Neoadjuvant approval",
+      "detail": "Accelerated approval for neoadjuvant treatment — the first FDA approval based on pathological complete response in breast cancer."
+    },
+    {
+      "year": 2015,
+      "title": "Survival benefit",
+      "detail": "Final CLEOPATRA analysis reports a median overall survival gain of about 16 months."
+    },
+    {
+      "year": 2017,
+      "title": "Adjuvant approval",
+      "detail": "Approved for adjuvant use after the APHINITY trial."
+    },
+    {
+      "year": 2020,
+      "title": "Phesgo",
+      "detail": "FDA approves Phesgo, a subcutaneous fixed-dose combination of pertuzumab, trastuzumab and hyaluronidase."
+    }
+  ],
+  "pk": {
+    "half_life": "~18 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "safety": {
+    "common": [
+      "Diarrhoea",
+      "Alopecia",
+      "Neutropenia",
+      "Nausea",
+      "Fatigue",
+      "Rash"
+    ],
+    "serious": [
+      "Left ventricular dysfunction",
+      "Embryo-fetal toxicity",
+      "Infusion and hypersensitivity reactions",
+      "Febrile neutropenia (with chemotherapy)"
+    ],
+    "boxed_warning": "Left ventricular dysfunction and embryo-fetal toxicity."
+  },
+  "facts": [
+    "Pertuzumab is always given together with trastuzumab rather than alone.",
+    "Its neoadjuvant approval in 2013 was the first FDA approval for breast cancer based on pathological complete response."
+  ],
+  "related": [
+    "trastuzumab",
+    "trastuzumab-emtansine",
+    "trastuzumab-deruxtecan",
+    "docetaxel",
+    "paclitaxel"
+  ],
+  "references": [
+    {
+      "title": "Pertuzumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pertuzumab"
+    },
+    {
+      "title": "DailyMed – pertuzumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pertuzumab"
+    },
+    {
+      "title": "EMA – Perjeta EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/perjeta"
+    }
+  ],
+  "stage": "written"
 }

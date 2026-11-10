@@ -1,36 +1,127 @@
 {
   "slug": "teclistamab",
   "name": "Teclistamab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "JNJ-64007957",
+    "teclistamab-cqyv"
+  ],
+  "brands": [
+    "Tecvayli"
+  ],
   "area": "immunology-biologics",
   "batch": "06",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "BCMA × CD3 bispecific antibody (T-cell engager)",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection with step-up dosing, then weekly or every 2 weeks",
+  "targets": [
+    "TNFRSF17",
+    "CD3E"
+  ],
+  "origin": "biotech",
+  "originator": "Janssen (Johnson & Johnson), using Genmab DuoBody technology",
+  "owner": "Johnson & Johnson (Janssen)",
+  "first_approval": {
+    "year": 2022,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Tecvayli"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Janssen",
+    "note": "Humanised IgG4 bispecific antibody binding B-cell maturation antigen (BCMA) and CD3."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "First BCMA-directed bispecific antibody for relapsed multiple myeloma",
+  "summary": "Teclistamab is a bispecific antibody that binds BCMA on myeloma cells and CD3 on T cells, redirecting T cells to kill myeloma cells. It is approved for relapsed or refractory multiple myeloma after several prior lines of therapy, including a proteasome inhibitor, an immunomodulatory drug and an anti-CD38 antibody.",
+  "mechanism": [
+    "Teclistamab engages CD3 on T cells and BCMA (TNFRSF17), a receptor expressed on malignant and normal plasma cells, forming a cytolytic synapse.",
+    "T-cell activation leads to release of perforin and granzymes, lysis of myeloma cells and cytokine release. Step-up dosing reduces the severity of cytokine release syndrome."
+  ],
+  "uses": [
+    "Relapsed or refractory multiple myeloma after at least three (US: four) prior lines including a proteasome inhibitor, an immunomodulatory agent and an anti-CD38 antibody"
+  ],
+  "history": [
+    {
+      "year": 2021,
+      "title": "MajesTEC-1",
+      "detail": "First results of the pivotal phase 1/2 study show durable responses in heavily pretreated myeloma."
+    },
+    {
+      "year": 2022,
+      "title": "EU conditional approval",
+      "detail": "The EU grants conditional approval in August, the first approval anywhere."
+    },
+    {
+      "year": 2022,
+      "title": "FDA accelerated approval",
+      "detail": "FDA approves Tecvayli in October with a REMS programme for CRS and neurotoxicity."
+    },
+    {
+      "year": 2023,
+      "title": "Longer-term data",
+      "detail": "Follow-up of MajesTEC-1 supports less frequent (every 2 weeks) dosing in responders."
+    },
+    {
+      "year": 2025,
+      "title": "MajesTEC-3",
+      "detail": "Teclistamab plus daratumumab improves progression-free survival over standard regimens in earlier relapsed myeloma."
+    }
+  ],
+  "pk": {
+    "half_life": "Several days; concentration- and target-dependent",
+    "bioavailability": "Not stated (SC)",
+    "metabolism": "Proteolytic catabolism to peptides and amino acids (no CYP metabolism)",
+    "excretion": "Not renally excreted as intact antibody; cleared by catabolism and target-mediated uptake"
+  },
+  "safety": {
+    "common": [
+      "Cytokine release syndrome",
+      "Pyrexia",
+      "Musculoskeletal pain",
+      "Injection-site reactions",
+      "Fatigue",
+      "Neutropenia",
+      "Hypogammaglobulinaemia"
+    ],
+    "serious": [
+      "Cytokine release syndrome",
+      "Neurological toxicity including ICANS",
+      "Serious and opportunistic infections",
+      "Neutropenia",
+      "Hepatotoxicity"
+    ],
+    "boxed_warning": "Cytokine release syndrome and neurological toxicity including immune effector cell-associated neurotoxicity syndrome (ICANS)."
+  },
+  "facts": [
+    "Teclistamab was the first BCMA × CD3 bispecific antibody approved.",
+    "Infection risk is high because normal plasma cells are also depleted, causing hypogammaglobulinaemia."
+  ],
+  "related": [
+    "daratumumab",
+    "ciltacabtagene-autoleucel",
+    "blinatumomab",
+    "bortezomib",
+    "lenalidomide"
+  ],
+  "references": [
+    {
+      "title": "Teclistamab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Teclistamab"
+    },
+    {
+      "title": "DailyMed – teclistamab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=teclistamab"
+    },
+    {
+      "title": "EMA – Tecvayli EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tecvayli"
+    }
+  ],
+  "stage": "written"
 }
