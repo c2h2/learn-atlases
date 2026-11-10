@@ -1,36 +1,120 @@
 {
   "slug": "erenumab",
   "name": "Erenumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AMG 334",
+    "erenumab-aooe"
+  ],
+  "brands": [
+    "Aimovig"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-CGRP receptor monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous autoinjector once monthly.",
+  "targets": [
+    "CALCRL/RAMP1 (CGRP receptor)"
+  ],
+  "origin": "biotech",
+  "originator": "Amgen",
+  "owner": "Amgen (US); Novartis (outside the US and Japan)",
+  "first_approval": {
+    "year": 2018,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Aimovig"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Amgen",
+    "note": "A fully human IgG2 antibody developed in transgenic mice against the canonical CGRP receptor; co-developed with Novartis."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First CGRP-pathway antibody for migraine prevention",
+  "summary": "Erenumab is a fully human monoclonal antibody that blocks the calcitonin gene-related peptide (CGRP) receptor. Approved in 2018, it was the first medicine designed specifically to prevent migraine.",
+  "mechanism": [
+    "CGRP released from trigeminal nerve endings drives meningeal vasodilation and pain signalling during migraine. Erenumab binds the CGRP receptor complex (calcitonin receptor-like receptor with RAMP1), preventing CGRP from activating it.",
+    "It is the only approved CGRP antibody that targets the receptor; fremanezumab, galcanezumab and eptinezumab bind the CGRP ligand. Blocking CGRP's vasodilator role may explain reports of constipation and hypertension."
+  ],
+  "uses": [
+    "Preventive treatment of migraine in adults"
+  ],
+  "history": [
+    {
+      "year": 2017,
+      "title": "STRIVE",
+      "detail": "Phase 3 results (Goadsby et al., NEJM) show reduced monthly migraine days versus placebo."
+    },
+    {
+      "year": 2018,
+      "title": "FDA approval",
+      "detail": "In May Aimovig becomes the first FDA-approved anti-CGRP therapy; EU approval follows in July."
+    },
+    {
+      "year": 2019,
+      "title": "Label update and partner dispute",
+      "detail": "Constipation with serious complications is added to the label; Amgen and Novartis begin litigation over their collaboration."
+    },
+    {
+      "year": 2021,
+      "title": "Hypertension warning",
+      "detail": "The FDA adds hypertension to the warnings section."
+    },
+    {
+      "year": 2022,
+      "title": "HER-MES",
+      "detail": "A head-to-head trial finds erenumab better tolerated and more effective than topiramate for migraine prevention."
+    }
+  ],
+  "pk": {
+    "half_life": "about 28 days",
+    "bioavailability": "about 82% (subcutaneous)",
+    "metabolism": "saturable target-mediated binding and proteolysis",
+    "excretion": "not renally excreted"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Injection-site reactions",
+      "Constipation",
+      "Muscle cramps",
+      "Pruritus"
+    ],
+    "serious": [
+      "Serious constipation",
+      "Hypertension or worsening hypertension",
+      "Hypersensitivity reactions including anaphylaxis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The CGRP pathway in migraine was proposed in the 1980s–90s by Lars Edvinsson and Peter Goadsby; they were among four migraine researchers awarded the 2021 Brain Prize."
+  ],
+  "related": [
+    "rimegepant",
+    "sumatriptan",
+    "rizatriptan",
+    "topiramate",
+    "botulinum-toxin-a"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Erenumab",
+      "url": "https://en.wikipedia.org/wiki/Erenumab"
+    },
+    {
+      "title": "DailyMed: aimovig labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=aimovig"
+    },
+    {
+      "title": "EMA EPAR: Aimovig",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/aimovig"
+    }
+  ],
+  "stage": "written"
 }

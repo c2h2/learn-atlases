@@ -1,36 +1,136 @@
 {
   "slug": "naloxone",
   "name": "Naloxone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "N-allylnoroxymorphone",
+    "EN-15304"
+  ],
+  "brands": [
+    "Narcan",
+    "Nyxoid",
+    "Zimhi",
+    "Kloxxado",
+    "Prenoxad"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Opioid receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im",
+    "sc",
+    "intranasal"
+  ],
+  "route_note": "IV, IM or SC injection; prefilled syringes and autoinjectors; nasal spray for community use by laypeople.",
+  "targets": [
+    "OPRM1",
+    "OPRK1",
+    "OPRD1"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Jack Fishman and Mozes Lewenstein (Endo Laboratories / Sankyo)",
+  "owner": "generic (many); Emergent BioSolutions (Narcan nasal spray)",
+  "first_approval": {
+    "year": 1971,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Narcan"
+  },
+  "discovery": {
+    "year": 1961,
+    "by": "Jack Fishman and Mozes Lewenstein",
+    "note": "Synthesised from oxymorphone (ultimately from thebaine) and patented in the early 1960s as a pure opioid antagonist."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "OTC in the US (nasal spray since 2023); prescription or pharmacy medicine elsewhere",
+  "tagline": "Opioid overdose antidote, now available over the counter in the US",
+  "summary": "Naloxone is a competitive opioid receptor antagonist that rapidly reverses opioid overdose. Community distribution of nasal and injectable naloxone has become a cornerstone of overdose prevention, and the US approved Narcan nasal spray for non-prescription sale in 2023.",
+  "mechanism": [
+    "Naloxone binds mu, kappa and delta opioid receptors with high affinity but no agonist activity, displacing opioids such as heroin, morphine and fentanyl and restoring breathing and consciousness within minutes.",
+    "It has a shorter duration of action (30–90 minutes) than many opioids, so overdose symptoms can recur and repeat doses or observation may be needed. In opioid-dependent people it can precipitate acute withdrawal."
+  ],
+  "uses": [
+    "Emergency treatment of known or suspected opioid overdose",
+    "Reversal of opioid-induced respiratory depression after anaesthesia",
+    "Combined with buprenorphine to deter injection"
+  ],
+  "history": [
+    {
+      "year": 1961,
+      "title": "Synthesis",
+      "detail": "Fishman and Lewenstein synthesise naloxone; a patent is filed."
+    },
+    {
+      "year": 1971,
+      "title": "FDA approval",
+      "detail": "Narcan injection (Endo Laboratories) is approved for opioid overdose."
+    },
+    {
+      "year": 1996,
+      "title": "Community distribution",
+      "detail": "Take-home naloxone programmes for people who use drugs begin in the US, starting in Chicago."
+    },
+    {
+      "year": 2014,
+      "title": "Autoinjector",
+      "detail": "The FDA approves the Evzio naloxone autoinjector; WHO issues guidelines on community overdose management."
+    },
+    {
+      "year": 2015,
+      "title": "Nasal spray",
+      "detail": "The FDA approves Narcan nasal spray 4 mg."
+    },
+    {
+      "year": 2023,
+      "title": "Over-the-counter",
+      "detail": "In March the FDA approves Narcan nasal spray for non-prescription sale, the first OTC naloxone."
+    }
+  ],
+  "pk": {
+    "half_life": "about 30–90 minutes",
+    "bioavailability": "about 2% orally; about 40–50% intranasal (relative to IM)",
+    "metabolism": "hepatic glucuronidation to naloxone-3-glucuronide",
+    "excretion": "renal, as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Opioid withdrawal symptoms (agitation, vomiting, sweating, tachycardia)",
+      "Nasal discomfort (spray)"
+    ],
+    "serious": [
+      "Pulmonary oedema",
+      "Arrhythmias and hypertension",
+      "Seizures",
+      "Recurrent respiratory depression after effect wears off"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Naloxone is ineffective orally because of almost complete first-pass metabolism, which is why it can be combined with oral or sublingual opioids as an abuse deterrent.",
+    "Naloxone does not reverse overdose of non-opioid sedatives such as xylazine or benzodiazepines."
+  ],
+  "related": [
+    "naltrexone",
+    "buprenorphine",
+    "fentanyl",
+    "morphine",
+    "methadone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Naloxone",
+      "url": "https://en.wikipedia.org/wiki/Naloxone"
+    },
+    {
+      "title": "DailyMed: naloxone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=naloxone"
+    },
+    {
+      "title": "FDA: Narcan approved for over-the-counter use (2023)",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-over-counter-naloxone-nasal-spray"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,127 @@
 {
   "slug": "ropinirole",
   "name": "Ropinirole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SK&F 101468"
+  ],
+  "brands": [
+    "Requip",
+    "Requip XL",
+    "Adartrel"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Non-ergot dopamine agonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "transdermal"
+  ],
+  "route_note": "Oral immediate-release and prolonged-release tablets; a transdermal patch is marketed in Japan.",
+  "targets": [
+    "DRD2",
+    "DRD3"
+  ],
+  "origin": "synthetic",
+  "originator": "SmithKline Beecham",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1996,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": "Requip"
+  },
+  "discovery": {
+    "year": null,
+    "by": "SmithKline Beecham",
+    "note": "A non-ergoline indolone dopamine agonist developed for Parkinson's disease."
+  },
+  "generic": true,
+  "who_essential": false,
+  "rx_status": "prescription",
+  "tagline": "Dopamine agonist that was the first FDA-approved drug for restless legs syndrome",
+  "summary": "Ropinirole is a non-ergoline D2/D3 dopamine agonist used to treat Parkinson's disease and restless legs syndrome. It was developed by SmithKline Beecham and is now widely available as a generic.",
+  "mechanism": [
+    "Ropinirole is a full agonist at D2 and D3 dopamine receptors with little activity at D1, serotonergic or adrenergic receptors. Stimulation of striatal D2 receptors substitutes for lost dopaminergic input in Parkinson's disease.",
+    "In restless legs syndrome, low evening doses are thought to act on spinal and diencephalic dopaminergic pathways that modulate sensory symptoms."
+  ],
+  "uses": [
+    "Parkinson's disease (monotherapy or adjunct to levodopa)",
+    "Moderate-to-severe primary restless legs syndrome"
+  ],
+  "history": [
+    {
+      "year": 1996,
+      "title": "First launch",
+      "detail": "Ropinirole (Requip) is launched in the UK for Parkinson's disease."
+    },
+    {
+      "year": 1997,
+      "title": "US approval",
+      "detail": "The FDA approves Requip for Parkinson's disease."
+    },
+    {
+      "year": 2000,
+      "title": "056 study",
+      "detail": "A five-year trial reports fewer dyskinesias with initial ropinirole than with levodopa (Rascol et al., NEJM)."
+    },
+    {
+      "year": 2005,
+      "title": "Restless legs syndrome",
+      "detail": "Ropinirole becomes the first drug approved by the FDA for restless legs syndrome."
+    },
+    {
+      "year": 2008,
+      "title": "Extended release",
+      "detail": "Once-daily Requip XL is approved in the US."
+    },
+    {
+      "year": 2008,
+      "title": "Generics",
+      "detail": "Generic ropinirole tablets become available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 6 hours",
+    "bioavailability": "about 50% (first-pass metabolism)",
+    "metabolism": "hepatic, mainly CYP1A2 (ciprofloxacin and smoking alter levels)",
+    "excretion": "renal, as inactive metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Somnolence",
+      "Dizziness",
+      "Syncope",
+      "Peripheral oedema",
+      "Hallucinations"
+    ],
+    "serious": [
+      "Sudden sleep onset",
+      "Impulse control disorders",
+      "Augmentation in restless legs syndrome",
+      "Severe orthostatic hypotension"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ropinirole was the first medicine approved by the US FDA specifically for restless legs syndrome (2005)."
+  ],
+  "related": [
+    "pramipexole",
+    "levodopa-carbidopa",
+    "rasagiline",
+    "selegiline"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ropinirole",
+      "url": "https://en.wikipedia.org/wiki/Ropinirole"
+    },
+    {
+      "title": "DailyMed: ropinirole labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ropinirole"
+    }
+  ],
+  "stage": "written"
 }

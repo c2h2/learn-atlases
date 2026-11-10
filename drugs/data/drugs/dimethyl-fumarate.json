@@ -1,36 +1,141 @@
 {
   "slug": "dimethyl-fumarate",
   "name": "Dimethyl fumarate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BG-12",
+    "DMF"
+  ],
+  "brands": [
+    "Tecfidera",
+    "Skilarence",
+    "Fumaderm (mixture)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Fumaric acid ester (Nrf2 pathway activator, immunomodulator)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral delayed-release capsule twice daily; tablets for psoriasis.",
+  "targets": [
+    "KEAP1/NFE2L2 (Nrf2) pathway",
+    "HCAR2 (via monomethyl fumarate)"
+  ],
+  "origin": "synthetic",
+  "originator": "Fumapharm (Switzerland); developed for MS by Biogen",
+  "owner": "generic (many); Biogen (Tecfidera)",
+  "first_approval": {
+    "year": 2013,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Tecfidera"
+  },
+  "discovery": {
+    "year": 1959,
+    "by": "Walter Schweckendiek",
+    "note": "A German chemist with psoriasis proposed fumaric acid esters as treatment; a mixture (Fumaderm) was approved in Germany in 1994 before Biogen developed DMF for MS."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Oral fumarate for relapsing multiple sclerosis that grew out of a psoriasis remedy",
+  "summary": "Dimethyl fumarate is an oral immunomodulator used for relapsing multiple sclerosis and psoriasis. Its active metabolite monomethyl fumarate activates the Nrf2 antioxidant pathway and shifts immune responses.",
+  "mechanism": [
+    "After absorption dimethyl fumarate is rapidly hydrolysed to monomethyl fumarate (MMF). MMF modifies cysteine residues on KEAP1, releasing the transcription factor Nrf2 to drive antioxidant and cytoprotective genes.",
+    "It also shifts T-cell responses away from pro-inflammatory Th1/Th17 profiles and reduces lymphocyte counts. Flushing is mediated by MMF activation of the niacin receptor HCAR2 on skin cells, releasing prostaglandins."
+  ],
+  "uses": [
+    "Relapsing forms of multiple sclerosis",
+    "Moderate-to-severe plaque psoriasis (Skilarence, EU)"
+  ],
+  "history": [
+    {
+      "year": 1959,
+      "title": "Fumarate therapy proposed",
+      "detail": "Walter Schweckendiek publishes on fumaric acid for psoriasis."
+    },
+    {
+      "year": 1994,
+      "title": "Fumaderm",
+      "detail": "A fumaric acid ester mixture is approved for psoriasis in Germany."
+    },
+    {
+      "year": 2006,
+      "title": "Biogen acquires Fumapharm",
+      "detail": "Biogen acquires the Swiss company to develop BG-12 for MS."
+    },
+    {
+      "year": 2012,
+      "title": "DEFINE and CONFIRM",
+      "detail": "Phase 3 trials (NEJM) show roughly halved relapse rates versus placebo."
+    },
+    {
+      "year": 2013,
+      "title": "FDA approval",
+      "detail": "The FDA approves Tecfidera in March; EU approval follows in 2014."
+    },
+    {
+      "year": 2014,
+      "title": "PML case",
+      "detail": "A fatal PML case in a patient with prolonged lymphopenia leads to lymphocyte monitoring requirements."
+    },
+    {
+      "year": 2019,
+      "title": "Diroximel fumarate",
+      "detail": "The related prodrug diroximel fumarate (Vumerity) is approved in the US."
+    },
+    {
+      "year": 2020,
+      "title": "Generics",
+      "detail": "Generic dimethyl fumarate launches in the US after Biogen loses patent litigation."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 hour (monomethyl fumarate)",
+    "bioavailability": "not quantifiable for DMF; MMF is the measured active species",
+    "metabolism": "esterases to MMF, then tricarboxylic acid cycle",
+    "excretion": "mainly exhaled as carbon dioxide (about 60%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Flushing",
+      "Abdominal pain, diarrhoea and nausea",
+      "Lymphopenia",
+      "Pruritus"
+    ],
+    "serious": [
+      "Progressive multifocal leukoencephalopathy (PML)",
+      "Severe lymphopenia",
+      "Anaphylaxis and angioedema",
+      "Liver injury",
+      "Herpes zoster and other serious infections"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Most of a dimethyl fumarate dose ends up exhaled as carbon dioxide after entering the citric acid cycle."
+  ],
+  "related": [
+    "fingolimod",
+    "interferon-beta-1a",
+    "glatiramer-acetate",
+    "ocrelizumab",
+    "natalizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Dimethyl fumarate",
+      "url": "https://en.wikipedia.org/wiki/Dimethyl_fumarate"
+    },
+    {
+      "title": "DailyMed: dimethyl fumarate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=dimethyl+fumarate"
+    },
+    {
+      "title": "EMA EPAR: Tecfidera",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tecfidera"
+    }
+  ],
+  "stage": "written"
 }

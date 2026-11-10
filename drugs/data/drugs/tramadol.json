@@ -1,36 +1,134 @@
 {
   "slug": "tramadol",
   "name": "Tramadol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CG-315",
+    "Tramadol hydrochloride"
+  ],
+  "brands": [
+    "Tramal",
+    "Ultram",
+    "Ultracet (with paracetamol)",
+    "Zydol",
+    "ConZip",
+    "Seglentis (with celecoxib)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Atypical centrally acting opioid analgesic with serotonin–noradrenaline reuptake inhibition",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "rectal"
+  ],
+  "route_note": "Mainly oral capsules and immediate- or extended-release tablets; injections and suppositories in some countries.",
+  "targets": [
+    "OPRM1 (via O-desmethyltramadol)",
+    "SLC6A4 (SERT)",
+    "SLC6A2 (NET)"
+  ],
+  "origin": "synthetic",
+  "originator": "Grünenthal (Germany)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1977,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Tramal"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1962,
+    "by": "Grünenthal GmbH, Aachen",
+    "note": "Synthesised in 1962 and launched in West Germany in 1977."
+  },
+  "generic": true,
+  "who_essential": false,
+  "rx_status": "controlled (US Schedule IV; UK Class C, Schedule 3)",
+  "tagline": "Dual-action opioid and monoamine reuptake inhibitor for moderate pain",
+  "summary": "Tramadol is a synthetic analgesic combining weak mu-opioid agonism, mainly through its metabolite O-desmethyltramadol, with serotonin and noradrenaline reuptake inhibition. Once marketed as low-risk, it is now controlled in many countries and associated with seizures, serotonin syndrome and widespread non-medical use in parts of Africa and the Middle East.",
+  "mechanism": [
+    "Tramadol is a racemic mixture. The (+)-enantiomer inhibits serotonin reuptake and is converted by CYP2D6 to (+)-O-desmethyltramadol (M1), a mu-opioid agonist far more potent than the parent; the (−)-enantiomer inhibits noradrenaline reuptake.",
+    "Monoaminergic actions enhance descending inhibitory pain pathways. The dependence on CYP2D6 means variable opioid effect, and serotonergic activity explains risks of serotonin syndrome and lowered seizure threshold."
+  ],
+  "uses": [
+    "Moderate-to-moderately severe pain in adults"
+  ],
+  "history": [
+    {
+      "year": 1962,
+      "title": "Synthesis",
+      "detail": "Grünenthal synthesises tramadol."
+    },
+    {
+      "year": 1977,
+      "title": "German launch",
+      "detail": "Tramadol is marketed in West Germany as Tramal."
+    },
+    {
+      "year": 1995,
+      "title": "US approval",
+      "detail": "The FDA approves Ultram (Ortho-McNeil) as an unscheduled analgesic."
+    },
+    {
+      "year": 2014,
+      "title": "US scheduling",
+      "detail": "The DEA places tramadol in Schedule IV; the UK makes it a Class C controlled drug the same year."
+    },
+    {
+      "year": 2017,
+      "title": "Paediatric contraindication",
+      "detail": "The FDA contraindicates tramadol in children under 12 and after tonsillectomy under 18."
+    },
+    {
+      "year": 2018,
+      "title": "Illicit trafficking concerns",
+      "detail": "The UN Office on Drugs and Crime reports large seizures of high-strength tramadol in West Africa and the Middle East."
+    }
+  ],
+  "pk": {
+    "half_life": "about 6 hours (M1 about 7.5 hours)",
+    "bioavailability": "about 75% orally",
+    "metabolism": "hepatic: CYP2D6 to active M1, CYP3A4 and CYP2B6 to N-desmethyltramadol",
+    "excretion": "renal, about 90% (30% unchanged)"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Dizziness",
+      "Constipation",
+      "Headache",
+      "Somnolence"
+    ],
+    "serious": [
+      "Seizures",
+      "Serotonin syndrome",
+      "Respiratory depression (especially in CYP2D6 ultrarapid metabolisers)",
+      "Hypoglycaemia and hyponatraemia",
+      "Addiction and withdrawal"
+    ],
+    "boxed_warning": "Addiction, abuse and misuse; life-threatening respiratory depression; accidental exposure; neonatal opioid withdrawal syndrome; CYP3A4 interactions; risks with benzodiazepines or other CNS depressants (US opioid class boxed warning). Ultrarapid metabolism of tramadol and life-threatening respiratory depression in children."
+  },
+  "facts": [
+    "Tramadol is not under international control by the UN conventions, which has allowed large unregulated markets in some regions."
+  ],
+  "related": [
+    "codeine",
+    "morphine",
+    "paracetamol",
+    "celecoxib",
+    "venlafaxine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tramadol",
+      "url": "https://en.wikipedia.org/wiki/Tramadol"
+    },
+    {
+      "title": "DailyMed: tramadol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tramadol"
+    }
+  ],
+  "stage": "written"
 }

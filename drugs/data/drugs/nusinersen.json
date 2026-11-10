@@ -1,36 +1,121 @@
 {
   "slug": "nusinersen",
   "name": "Nusinersen",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ISIS 396443",
+    "IONIS-SMNRx",
+    "BIIB058"
+  ],
+  "brands": [
+    "Spinraza"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Antisense oligonucleotide (SMN2 splice-switching)",
+  "modality": "oligonucleotide",
+  "routes": [
+    "intrathecal"
+  ],
+  "route_note": "Intrathecal injection by lumbar puncture: four loading doses, then maintenance every four months.",
+  "targets": [
+    "SMN2 pre-mRNA (intronic splicing silencer N1)"
+  ],
+  "origin": "synthetic",
+  "originator": "Ionis Pharmaceuticals (Isis) with Adrian Krainer (Cold Spring Harbor Laboratory); developed with Biogen",
+  "owner": "Biogen",
+  "first_approval": {
+    "year": 2016,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Spinraza"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Adrian Krainer (Cold Spring Harbor) and Frank Bennett (Isis Pharmaceuticals)",
+    "note": "A 2'-O-methoxyethyl phosphorothioate antisense oligonucleotide designed to block an intronic splicing silencer and promote inclusion of SMN2 exon 7."
+  },
+  "generic": false,
+  "who_essential": false,
+  "rx_status": "prescription (specialist)",
+  "tagline": "First approved treatment for spinal muscular atrophy, a splice-correcting antisense drug",
+  "summary": "Nusinersen was the first disease-modifying treatment for spinal muscular atrophy (SMA). By altering splicing of the backup SMN2 gene it increases production of full-length SMN protein, improving motor milestones and survival, particularly when started early.",
+  "mechanism": [
+    "SMA is caused by loss of the SMN1 gene. The nearly identical SMN2 gene mostly produces a truncated, unstable protein because exon 7 is skipped during splicing.",
+    "Nusinersen binds the intronic splicing silencer N1 (ISS-N1) in intron 7 of SMN2 pre-mRNA, displacing repressor proteins (hnRNP A1/A2) so that exon 7 is included. This increases full-length SMN protein in motor neurons. Because the oligonucleotide does not cross the blood–brain barrier, it is given intrathecally."
+  ],
+  "uses": [
+    "Spinal muscular atrophy (5q SMA) in children and adults"
+  ],
+  "history": [
+    {
+      "year": 1995,
+      "title": "SMN1 gene",
+      "detail": "Lefebvre et al. identify SMN1 as the SMA-determining gene."
+    },
+    {
+      "year": 2016,
+      "title": "ENDEAR halted early and FDA approval",
+      "detail": "Interim results in infant-onset SMA lead to early trial termination; the FDA approves Spinraza in December."
+    },
+    {
+      "year": 2017,
+      "title": "EU approval and publications",
+      "detail": "The EU authorises Spinraza; ENDEAR (Finkel et al.) and CHERISH (Mercuri et al., 2018) are published in NEJM."
+    },
+    {
+      "year": 2019,
+      "title": "Breakthrough Prize",
+      "detail": "Adrian Krainer and Frank Bennett receive the Breakthrough Prize in Life Sciences for developing nusinersen."
+    },
+    {
+      "year": 2019,
+      "title": "NURTURE",
+      "detail": "Presymptomatic treatment results show most infants achieving walking, supporting newborn screening for SMA."
+    }
+  ],
+  "pk": {
+    "half_life": "about 135–177 days in cerebrospinal fluid",
+    "bioavailability": "intrathecal delivery",
+    "metabolism": "exonuclease-mediated hydrolysis (not CYP)",
+    "excretion": "renal, as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Lower respiratory infection",
+      "Constipation",
+      "Post-lumbar puncture headache and back pain",
+      "Vomiting"
+    ],
+    "serious": [
+      "Thrombocytopenia and coagulation abnormalities",
+      "Renal toxicity (proteinuria)",
+      "Hydrocephalus"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its US launch price of $125,000 per injection made nusinersen one of the most expensive drugs at the time.",
+    "Nusinersen was one of the first splice-switching antisense drugs approved anywhere."
+  ],
+  "related": [
+    "risdiplam",
+    "onasemnogene-abeparvovec",
+    "tofersen",
+    "eteplirsen"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Nusinersen",
+      "url": "https://en.wikipedia.org/wiki/Nusinersen"
+    },
+    {
+      "title": "DailyMed: spinraza labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=spinraza"
+    },
+    {
+      "title": "EMA EPAR: Spinraza",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/spinraza"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,156 @@
 {
   "slug": "morphine",
   "name": "Morphine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Morphium",
+    "Morphine sulfate"
+  ],
+  "brands": [
+    "MS Contin",
+    "Oramorph",
+    "Sevredol",
+    "Kadian",
+    "Duramorph",
+    "Infumorph"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Opioid analgesic (mu-opioid receptor agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "sc",
+    "rectal",
+    "intrathecal",
+    "other"
+  ],
+  "route_note": "Oral immediate- and modified-release tablets and solution; IV, IM and SC injection; epidural and intrathecal; rectal suppositories.",
+  "targets": [
+    "OPRM1",
+    "OPRK1",
+    "OPRD1"
+  ],
+  "origin": "natural",
+  "originator": "Friedrich Sertürner (isolation from opium); E. Merck (first commercial production)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1827,
+    "agency": null,
+    "country": "Germany",
+    "brand": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1804,
+    "by": "Friedrich Sertürner, Paderborn",
+    "note": "First isolated from opium around 1804 and named after Morpheus; it was the first alkaloid isolated from a plant."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "controlled (US Schedule II; UK Class A, Schedule 2; UN Single Convention Schedule I)",
+  "tagline": "The prototype opioid and benchmark for treating severe and cancer pain",
+  "summary": "Morphine is the principal alkaloid of the opium poppy and the reference opioid analgesic against which others are measured. It is essential for severe acute pain, cancer pain and palliative care, while carrying risks of respiratory depression, dependence and addiction.",
+  "mechanism": [
+    "Morphine is an agonist mainly at mu-opioid receptors, G-protein-coupled receptors that inhibit adenylate cyclase, open potassium channels and close voltage-gated calcium channels. This reduces release of nociceptive transmitters in the spinal dorsal horn and alters pain perception in the brain, including descending modulatory pathways.",
+    "Mu-receptor activation in the brainstem blunts the ventilatory response to carbon dioxide (respiratory depression) and in the gut reduces motility (constipation). Reward pathway activation underlies euphoria and addiction, and tolerance and physical dependence develop with repeated use.",
+    "Its active metabolite morphine-6-glucuronide contributes to analgesia, and accumulation of glucuronides in renal impairment causes toxicity."
+  ],
+  "uses": [
+    "Severe acute pain (e.g. trauma, postoperative, myocardial infarction)",
+    "Chronic cancer pain and palliative care",
+    "Breathlessness in palliative care (off-label in many settings)"
+  ],
+  "history": [
+    {
+      "year": 1804,
+      "title": "Isolation",
+      "detail": "Friedrich Sertürner isolates morphine from opium, publishing his findings in 1805 and 1817."
+    },
+    {
+      "year": 1827,
+      "title": "Commercial production",
+      "detail": "E. Merck of Darmstadt begins commercial manufacture of morphine."
+    },
+    {
+      "year": 1853,
+      "title": "Hypodermic injection",
+      "detail": "Alexander Wood uses the newly developed hypodermic syringe to inject morphine."
+    },
+    {
+      "year": 1925,
+      "title": "Structure",
+      "detail": "Robert Robinson proposes the structure of morphine; Marshall Gates achieves total synthesis in 1952."
+    },
+    {
+      "year": 1961,
+      "title": "International control",
+      "detail": "Morphine is controlled under the UN Single Convention on Narcotic Drugs."
+    },
+    {
+      "year": 1973,
+      "title": "Opioid receptors",
+      "detail": "Candace Pert and Solomon Snyder, and independently others, demonstrate opioid receptors in the brain."
+    },
+    {
+      "year": 1984,
+      "title": "Modified release",
+      "detail": "MS Contin, a twice-daily controlled-release morphine tablet, is launched in the US."
+    },
+    {
+      "year": 1986,
+      "title": "WHO analgesic ladder",
+      "detail": "WHO publishes its cancer pain relief guidance placing morphine at the top of the analgesic ladder."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–3 hours",
+    "bioavailability": "about 20–40% orally (first-pass metabolism)",
+    "metabolism": "hepatic glucuronidation (UGT2B7) to morphine-3- and morphine-6-glucuronide",
+    "excretion": "renal, mainly as glucuronides"
+  },
+  "safety": {
+    "common": [
+      "Constipation",
+      "Nausea and vomiting",
+      "Sedation",
+      "Pruritus",
+      "Urinary retention"
+    ],
+    "serious": [
+      "Respiratory depression",
+      "Addiction, abuse and misuse",
+      "Severe hypotension",
+      "Neonatal opioid withdrawal syndrome",
+      "Fatal toxicity with benzodiazepines or other CNS depressants"
+    ],
+    "boxed_warning": "Addiction, abuse and misuse; life-threatening respiratory depression; accidental ingestion; neonatal opioid withdrawal syndrome; risks with concomitant benzodiazepines or other CNS depressants (US opioid class boxed warning)."
+  },
+  "facts": [
+    "Morphine was the first alkaloid ever isolated from a plant.",
+    "Global access to morphine for pain relief is very unequal; the Lancet Commission on Palliative Care (2017) estimated that most of the world's population lacks adequate access."
+  ],
+  "related": [
+    "codeine",
+    "oxycodone",
+    "fentanyl",
+    "methadone",
+    "naloxone",
+    "buprenorphine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Morphine",
+      "url": "https://en.wikipedia.org/wiki/Morphine"
+    },
+    {
+      "title": "DailyMed: morphine sulfate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=morphine+sulfate"
+    },
+    {
+      "title": "WHO: Cancer pain relief (1986)",
+      "url": "https://iris.who.int/handle/10665/43944"
+    }
+  ],
+  "stage": "written"
 }

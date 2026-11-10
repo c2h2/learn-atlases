@@ -1,36 +1,151 @@
 {
   "slug": "botulinum-toxin-a",
-  "name": "Botulinum toxin a",
-  "aliases": [],
-  "brands": [],
+  "name": "Botulinum toxin type A",
+  "aliases": [
+    "OnabotulinumtoxinA",
+    "AbobotulinumtoxinA",
+    "IncobotulinumtoxinA",
+    "BoNT/A"
+  ],
+  "brands": [
+    "Botox",
+    "Botox Cosmetic",
+    "Dysport",
+    "Xeomin",
+    "Jeuveau",
+    "Daxxify",
+    "Letybo"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Neurotoxin (presynaptic acetylcholine release inhibitor)",
+  "modality": "protein",
+  "routes": [
+    "im",
+    "other"
+  ],
+  "route_note": "Local intramuscular injection; also intradermal (hyperhidrosis) and intradetrusor (bladder) injection. Units are not interchangeable between products.",
+  "targets": [
+    "SNAP25",
+    "SV2 (neuronal receptor)"
+  ],
+  "origin": "natural",
+  "originator": "Alan B. Scott, Smith-Kettlewell Eye Research Institute (therapeutic use); Allergan (Botox)",
+  "owner": "AbbVie (Botox); Ipsen (Dysport); Merz (Xeomin); others",
+  "first_approval": {
+    "year": 1989,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Oculinum (Botox)"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1895,
+    "by": "Émile van Ermengem",
+    "note": "Identified Clostridium botulinum as the cause of botulism; Alan Scott pioneered therapeutic injection of the purified toxin for strabismus in the 1970s."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription (administered by trained clinicians)",
+  "tagline": "The most potent known toxin, used in tiny doses for spasticity, migraine and wrinkles",
+  "summary": "Botulinum toxin type A is a bacterial neurotoxin that blocks acetylcholine release at nerve terminals, causing local, temporary muscle weakness. Several products are used for dystonia, spasticity, chronic migraine, overactive bladder, hyperhidrosis and cosmetic facial lines.",
+  "mechanism": [
+    "The toxin's heavy chain binds gangliosides and the synaptic vesicle protein SV2 on cholinergic nerve terminals and is taken up by endocytosis. Its light chain, a zinc metalloprotease, is released into the cytosol and cleaves SNAP-25, a SNARE protein required for vesicle fusion.",
+    "Acetylcholine release is blocked for about three to four months until nerve terminals sprout and SNAP-25 is replenished. Effects on sensory neuropeptide release (such as CGRP) are proposed to explain benefit in chronic migraine."
+  ],
+  "uses": [
+    "Cervical dystonia, blepharospasm and strabismus",
+    "Upper and lower limb spasticity",
+    "Chronic migraine prophylaxis",
+    "Overactive bladder and neurogenic detrusor overactivity",
+    "Severe primary axillary hyperhidrosis",
+    "Temporary improvement of glabellar and other facial lines"
+  ],
+  "history": [
+    {
+      "year": 1820,
+      "title": "Sausage poisoning",
+      "detail": "Justinus Kerner describes botulism ('sausage poisoning') in detail and speculates on therapeutic use."
+    },
+    {
+      "year": 1895,
+      "title": "Bacterium identified",
+      "detail": "Émile van Ermengem isolates Clostridium botulinum after a botulism outbreak in Belgium."
+    },
+    {
+      "year": 1946,
+      "title": "Purification",
+      "detail": "Edward Schantz purifies crystalline type A toxin at Fort Detrick, later supplying it to researchers."
+    },
+    {
+      "year": 1989,
+      "title": "FDA approval",
+      "detail": "Alan Scott's Oculinum is approved for strabismus and blepharospasm; Allergan acquires it and renames it Botox."
+    },
+    {
+      "year": 2002,
+      "title": "Cosmetic use",
+      "detail": "Botox Cosmetic is approved for glabellar lines."
+    },
+    {
+      "year": 2009,
+      "title": "Boxed warning",
+      "detail": "The FDA requires a boxed warning on distant spread of toxin effect and assigns distinct non-proprietary names to products."
+    },
+    {
+      "year": 2010,
+      "title": "Chronic migraine",
+      "detail": "The FDA approves onabotulinumtoxinA for chronic migraine prophylaxis."
+    },
+    {
+      "year": 2020,
+      "title": "AbbVie acquires Allergan",
+      "detail": "AbbVie completes its roughly $63 billion acquisition of Allergan, owner of Botox."
+    },
+    {
+      "year": 2022,
+      "title": "Daxxify",
+      "detail": "A longer-acting daxibotulinumtoxinA product is approved in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "acts locally; clinical effect lasts about 3–4 months",
+    "bioavailability": "not systemically absorbed in meaningful amounts at therapeutic doses",
+    "metabolism": "proteolytic degradation",
+    "excretion": "not applicable"
+  },
+  "safety": {
+    "common": [
+      "Injection-site pain",
+      "Local muscle weakness (e.g. ptosis, neck weakness)",
+      "Headache",
+      "Urinary tract infection and retention (bladder use)"
+    ],
+    "serious": [
+      "Distant spread causing dysphagia, breathing difficulty and generalised weakness",
+      "Anaphylaxis",
+      "Aspiration pneumonia"
+    ],
+    "boxed_warning": "Distant spread of toxin effect: symptoms of botulism (swallowing and breathing difficulty, generalised weakness) can occur hours to weeks after injection, and can be life-threatening."
+  },
+  "facts": [
+    "Botulinum toxin is the most lethal substance known; therapeutic doses are measured in nanograms.",
+    "Different botulinum toxin products are measured in proprietary units that cannot be converted between brands."
+  ],
+  "related": [
+    "baclofen",
+    "erenumab",
+    "oxybutynin",
+    "mirabegron"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Botulinum toxin",
+      "url": "https://en.wikipedia.org/wiki/Botulinum_toxin"
+    },
+    {
+      "title": "DailyMed: onabotulinumtoxina labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=onabotulinumtoxina"
+    }
+  ],
+  "stage": "written"
 }

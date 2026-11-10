@@ -1,36 +1,127 @@
 {
   "slug": "amantadine",
   "name": "Amantadine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "1-adamantylamine"
+  ],
+  "brands": [
+    "Symmetrel",
+    "Gocovri",
+    "Osmolex ER"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Adamantane; NMDA receptor antagonist and former influenza A M2 ion channel inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules, tablets and syrup; extended-release forms taken at bedtime or in the morning.",
+  "targets": [
+    "GRIN (NMDA receptor)",
+    "Influenza A M2 proton channel"
+  ],
+  "origin": "synthetic",
+  "originator": "E. I. du Pont de Nemours and Company",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1966,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Symmetrel"
+  },
+  "discovery": {
+    "year": 1964,
+    "by": "DuPont researchers",
+    "note": "Antiviral activity against influenza A was reported in 1964; anti-parkinsonian effect was noticed by chance in 1969."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Old flu antiviral repurposed for Parkinson's disease and levodopa-induced dyskinesia",
+  "summary": "Amantadine was introduced in the 1960s as an influenza A antiviral and was serendipitously found to relieve Parkinson's disease symptoms. Viral resistance has ended its antiviral role, but it remains the main oral drug for levodopa-induced dyskinesia.",
+  "mechanism": [
+    "In Parkinson's disease amantadine acts mainly as a weak uncompetitive NMDA glutamate receptor antagonist, dampening overactive corticostriatal glutamate signalling that contributes to dyskinesia. It may also increase dopamine release and reduce reuptake.",
+    "Its antiviral effect came from blocking the M2 proton channel of influenza A, preventing viral uncoating; a single S31N mutation now present in almost all circulating strains confers resistance."
+  ],
+  "uses": [
+    "Parkinson's disease and drug-induced extrapyramidal reactions",
+    "Levodopa-induced dyskinesia and 'off' episodes (extended-release forms)",
+    "Influenza A prophylaxis and treatment (historical; no longer recommended because of resistance)"
+  ],
+  "history": [
+    {
+      "year": 1964,
+      "title": "Antiviral activity",
+      "detail": "DuPont scientists report activity of amantadine against influenza A viruses."
+    },
+    {
+      "year": 1966,
+      "title": "FDA approval",
+      "detail": "Symmetrel is approved for prophylaxis of Asian (A2) influenza."
+    },
+    {
+      "year": 1969,
+      "title": "Parkinson's discovery",
+      "detail": "Robert Schwab reports improvement of parkinsonism after a patient taking amantadine for influenza noticed her tremor eased."
+    },
+    {
+      "year": 2006,
+      "title": "Influenza recommendation withdrawn",
+      "detail": "The US CDC advises against adamantanes for influenza because of widespread resistance."
+    },
+    {
+      "year": 2017,
+      "title": "Gocovri",
+      "detail": "The FDA approves extended-release amantadine (Gocovri) for dyskinesia in Parkinson's disease."
+    },
+    {
+      "year": 2018,
+      "title": "Osmolex ER",
+      "detail": "A second extended-release amantadine tablet is approved for Parkinson's disease and drug-induced extrapyramidal reactions."
+    }
+  ],
+  "pk": {
+    "half_life": "about 10–17 hours, longer in older people and renal impairment",
+    "bioavailability": "high (about 86–90%)",
+    "metabolism": "minimal",
+    "excretion": "renal, mostly unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Livedo reticularis",
+      "Peripheral oedema",
+      "Dizziness",
+      "Insomnia",
+      "Dry mouth",
+      "Constipation"
+    ],
+    "serious": [
+      "Hallucinations and confusion",
+      "Suicidal ideation",
+      "Neuroleptic malignant-like syndrome on abrupt withdrawal",
+      "Corneal oedema"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The chance observation of amantadine's anti-parkinsonian effect came from a patient taking it for influenza prophylaxis."
+  ],
+  "related": [
+    "levodopa-carbidopa",
+    "memantine",
+    "oseltamivir",
+    "pramipexole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Amantadine",
+      "url": "https://en.wikipedia.org/wiki/Amantadine"
+    },
+    {
+      "title": "DailyMed: amantadine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amantadine"
+    }
+  ],
+  "stage": "written"
 }

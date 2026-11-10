@@ -1,36 +1,128 @@
 {
   "slug": "riluzole",
   "name": "Riluzole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "RP 54274",
+    "PK 26124"
+  ],
+  "brands": [
+    "Rilutek",
+    "Tiglutik",
+    "Exservan",
+    "Teglutik"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Benzothiazole glutamate-release inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablet twice daily; also oral suspension and oral film for people with swallowing difficulty.",
+  "targets": [
+    "Voltage-gated sodium channels",
+    "Glutamatergic transmission (presynaptic release)"
+  ],
+  "origin": "synthetic",
+  "originator": "Rhône-Poulenc Rorer",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1995,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Rilutek"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Rhône-Poulenc",
+    "note": "A benzothiazole studied as an anticonvulsant and neuroprotectant before being tested in ALS on the glutamate excitotoxicity hypothesis."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The first drug shown to prolong survival in amyotrophic lateral sclerosis",
+  "summary": "Riluzole was the first medicine approved for amyotrophic lateral sclerosis (ALS). It modestly prolongs survival or time to tracheostomy, by roughly two to three months in pivotal trials.",
+  "mechanism": [
+    "Riluzole inhibits presynaptic glutamate release, blocks voltage-gated sodium channels (particularly the persistent sodium current) and non-competitively affects some postsynaptic glutamate receptor responses.",
+    "These actions are thought to reduce glutamate-mediated excitotoxic injury to motor neurons, though the precise mechanism in ALS is not fully defined."
+  ],
+  "uses": [
+    "Amyotrophic lateral sclerosis"
+  ],
+  "history": [
+    {
+      "year": 1994,
+      "title": "First trial",
+      "detail": "Bensimon et al. (NEJM) report improved survival in ALS with riluzole."
+    },
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "Rilutek becomes the first FDA-approved ALS drug in December."
+    },
+    {
+      "year": 1996,
+      "title": "EU approval",
+      "detail": "Rilutek is authorised in the European Union."
+    },
+    {
+      "year": 2017,
+      "title": "Edaravone",
+      "detail": "The FDA approves edaravone (Radicava), the second drug for ALS, more than 20 years after riluzole."
+    },
+    {
+      "year": 2018,
+      "title": "Oral suspension",
+      "detail": "Tiglutik thickened oral suspension is approved in the US."
+    },
+    {
+      "year": 2019,
+      "title": "Oral film",
+      "detail": "Exservan, an oral soluble film, is approved in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 12 hours",
+    "bioavailability": "about 60% (reduced by high-fat meals)",
+    "metabolism": "hepatic, mainly CYP1A2",
+    "excretion": "renal, as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Asthenia",
+      "Nausea",
+      "Raised liver enzymes",
+      "Dizziness",
+      "Abdominal pain"
+    ],
+    "serious": [
+      "Hepatic injury",
+      "Neutropenia",
+      "Interstitial lung disease"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The survival benefit of riluzole in its pivotal trials was modest, but it remained the only approved ALS drug for more than two decades."
+  ],
+  "related": [
+    "tofersen",
+    "baclofen",
+    "memantine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Riluzole",
+      "url": "https://en.wikipedia.org/wiki/Riluzole"
+    },
+    {
+      "title": "DailyMed: riluzole labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=riluzole"
+    },
+    {
+      "title": "EMA EPAR: Rilutek",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/rilutek"
+    }
+  ],
+  "stage": "written"
 }

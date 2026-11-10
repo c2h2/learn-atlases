@@ -1,36 +1,141 @@
 {
   "slug": "methadone",
   "name": "Methadone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Hoechst 10820",
+    "Polamidon",
+    "Amidone"
+  ],
+  "brands": [
+    "Dolophine",
+    "Methadose",
+    "Physeptone",
+    "Metadol"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Synthetic long-acting opioid (mu-opioid agonist and NMDA receptor antagonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "sc"
+  ],
+  "route_note": "Mainly oral liquid or tablets once daily for opioid use disorder; tablets and injection for pain.",
+  "targets": [
+    "OPRM1",
+    "GRIN (NMDA receptor)",
+    "SLC6A4",
+    "SLC6A2"
+  ],
+  "origin": "synthetic",
+  "originator": "IG Farben / Hoechst (Max Bockmühl and Gustav Ehrhart)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1947,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Dolophine"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1937,
+    "by": "Max Bockmühl and Gustav Ehrhart, IG Farben, Hoechst",
+    "note": "Synthesised in Germany while searching for synthetic analgesics structurally simpler than morphine."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "controlled (US Schedule II; UK Class A, Schedule 2); addiction treatment through licensed programmes in many countries",
+  "tagline": "Long-acting synthetic opioid used in maintenance treatment of opioid addiction",
+  "summary": "Methadone is a long-acting synthetic opioid developed in Germany in 1937. Since the 1960s it has been the backbone of opioid agonist maintenance therapy, reducing illicit opioid use, overdose and HIV transmission, and it is also used for pain.",
+  "mechanism": [
+    "Methadone is a full mu-opioid agonist; the R-enantiomer is responsible for most opioid activity. Its long and variable half-life allows once-daily dosing that prevents withdrawal and craving without repeated highs and lows, and induces cross-tolerance that blunts the effects of other opioids.",
+    "It also antagonises NMDA receptors and inhibits serotonin and noradrenaline reuptake, which may help in neuropathic pain and reduce tolerance. It blocks hERG potassium channels, prolonging the QT interval."
+  ],
+  "uses": [
+    "Opioid use disorder (detoxification and maintenance)",
+    "Severe pain requiring opioid treatment"
+  ],
+  "history": [
+    {
+      "year": 1937,
+      "title": "Synthesis",
+      "detail": "Bockmühl and Ehrhart synthesise methadone at IG Farben."
+    },
+    {
+      "year": 1947,
+      "title": "US approval",
+      "detail": "Eli Lilly's Dolophine is approved in the US after the compound was taken over following the Second World War."
+    },
+    {
+      "year": 1965,
+      "title": "Maintenance treatment",
+      "detail": "Vincent Dole and Marie Nyswander at Rockefeller University publish results of methadone maintenance for heroin addiction (JAMA)."
+    },
+    {
+      "year": 1972,
+      "title": "US treatment regulations",
+      "detail": "Federal rules establish the framework for methadone treatment programmes."
+    },
+    {
+      "year": 2006,
+      "title": "QT and overdose warnings",
+      "detail": "The FDA warns about deaths and cardiac arrhythmias with methadone used for pain."
+    },
+    {
+      "year": 2020,
+      "title": "COVID-19 take-home flexibility",
+      "detail": "US regulators allow extended take-home doses during the pandemic."
+    },
+    {
+      "year": 2024,
+      "title": "Rule update",
+      "detail": "A SAMHSA final rule makes expanded take-home doses and telehealth initiation permanent for US opioid treatment programmes."
+    }
+  ],
+  "pk": {
+    "half_life": "about 8–59 hours (very variable)",
+    "bioavailability": "about 70–90% orally",
+    "metabolism": "hepatic, mainly CYP2B6 and CYP3A4 (many interactions)",
+    "excretion": "renal and faecal, as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Constipation",
+      "Sweating",
+      "Sedation",
+      "Nausea",
+      "Weight gain"
+    ],
+    "serious": [
+      "Respiratory depression (especially during dose initiation)",
+      "QT prolongation and torsades de pointes",
+      "Overdose, particularly with benzodiazepines or alcohol",
+      "Neonatal opioid withdrawal syndrome",
+      "Hypoglycaemia"
+    ],
+    "boxed_warning": "Addiction, abuse and misuse; life-threatening respiratory depression; accidental ingestion; life-threatening QT prolongation; neonatal opioid withdrawal syndrome; CYP interactions; risks with benzodiazepines; conditions for distribution for opioid addiction."
+  },
+  "facts": [
+    "The popular story that the brand name Dolophine honoured Adolf Hitler is a myth; the name was coined by Eli Lilly after the war, from Latin dolor (pain).",
+    "Methadone's analgesic effect (hours) is much shorter than its elimination half-life, which contributes to accumulation and overdose risk when doses are increased too quickly."
+  ],
+  "related": [
+    "buprenorphine",
+    "naloxone",
+    "morphine",
+    "naltrexone",
+    "fentanyl"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Methadone",
+      "url": "https://en.wikipedia.org/wiki/Methadone"
+    },
+    {
+      "title": "DailyMed: methadone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=methadone"
+    }
+  ],
+  "stage": "written"
 }

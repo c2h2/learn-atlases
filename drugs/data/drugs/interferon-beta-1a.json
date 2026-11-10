@@ -1,36 +1,137 @@
 {
   "slug": "interferon-beta-1a",
-  "name": "Interferon beta 1a",
-  "aliases": [],
-  "brands": [],
+  "name": "Interferon beta-1a",
+  "aliases": [
+    "IFN-β-1a",
+    "Peginterferon beta-1a (pegylated form)"
+  ],
+  "brands": [
+    "Avonex",
+    "Rebif",
+    "Plegridy (peginterferon beta-1a)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Recombinant type I interferon (immunomodulator)",
+  "modality": "protein",
+  "routes": [
+    "im",
+    "sc"
+  ],
+  "route_note": "Avonex intramuscular once weekly; Rebif subcutaneous three times weekly; Plegridy SC or IM every two weeks.",
+  "targets": [
+    "IFNAR1",
+    "IFNAR2"
+  ],
+  "origin": "biotech",
+  "originator": "Biogen (Avonex); Ares-Serono (Rebif)",
+  "owner": "Biogen (Avonex, Plegridy); Merck KGaA (Rebif)",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Avonex"
+  },
+  "discovery": {
+    "year": 1980,
+    "by": "Tadatsugu Taniguchi and colleagues",
+    "note": "The human interferon beta gene was cloned in 1980; beta-1a is the glycosylated form produced in Chinese hamster ovary cells, identical in sequence to natural interferon beta."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Long-established injectable disease-modifying therapy for relapsing multiple sclerosis",
+  "summary": "Interferon beta-1a is a recombinant glycosylated form of human interferon beta used to reduce relapses in multiple sclerosis. Introduced in the 1990s, it was one of the first disease-modifying MS therapies and has a long safety record.",
+  "mechanism": [
+    "Interferon beta binds the type I interferon receptor (IFNAR1/IFNAR2), activating JAK-STAT signalling and expression of hundreds of interferon-stimulated genes.",
+    "In multiple sclerosis it is thought to reduce T-cell activation and migration across the blood–brain barrier (partly by lowering matrix metalloproteinase activity and adhesion molecules), shift cytokine production toward anti-inflammatory profiles and decrease antigen presentation."
+  ],
+  "uses": [
+    "Relapsing forms of multiple sclerosis, including clinically isolated syndrome"
+  ],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Interferon discovered",
+      "detail": "Alick Isaacs and Jean Lindenmann describe interferon as a factor that interferes with viral replication."
+    },
+    {
+      "year": 1980,
+      "title": "Gene cloned",
+      "detail": "The human interferon beta gene is cloned."
+    },
+    {
+      "year": 1993,
+      "title": "First MS interferon",
+      "detail": "Interferon beta-1b (Betaseron) becomes the first FDA-approved disease-modifying therapy for MS."
+    },
+    {
+      "year": 1996,
+      "title": "Avonex",
+      "detail": "The FDA approves Biogen's once-weekly intramuscular interferon beta-1a."
+    },
+    {
+      "year": 1998,
+      "title": "Rebif in Europe",
+      "detail": "Serono's subcutaneous interferon beta-1a is approved in the EU."
+    },
+    {
+      "year": 2002,
+      "title": "Rebif in the US",
+      "detail": "The FDA approves Rebif after the EVIDENCE head-to-head trial overcame Avonex's orphan exclusivity."
+    },
+    {
+      "year": 2014,
+      "title": "Plegridy",
+      "detail": "Peginterferon beta-1a, dosed every two weeks, is approved in the EU and US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 10 hours (IM Avonex); longer for peginterferon",
+    "bioavailability": "absorbed after IM or SC injection; absolute bioavailability not well defined",
+    "metabolism": "proteolytic catabolism, mainly hepatic and renal",
+    "excretion": "renal (as degradation products)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Flu-like symptoms",
+      "Injection-site reactions",
+      "Headache",
+      "Myalgia",
+      "Raised liver enzymes"
+    ],
+    "serious": [
+      "Depression and suicidal ideation",
+      "Hepatic injury",
+      "Thrombotic microangiopathy",
+      "Seizures",
+      "Neutralising antibodies reducing efficacy"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Interferon beta-1a differs from beta-1b, which is made in E. coli, is not glycosylated and has a serine substituted at position 17."
+  ],
+  "related": [
+    "glatiramer-acetate",
+    "fingolimod",
+    "dimethyl-fumarate",
+    "natalizumab",
+    "ocrelizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Interferon beta-1a",
+      "url": "https://en.wikipedia.org/wiki/Interferon_beta-1a"
+    },
+    {
+      "title": "DailyMed: interferon beta-1a labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=interferon+beta-1a"
+    },
+    {
+      "title": "EMA EPAR: Avonex",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/avonex"
+    }
+  ],
+  "stage": "written"
 }

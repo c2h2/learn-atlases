@@ -1,36 +1,126 @@
 {
   "slug": "phenobarbital",
   "name": "Phenobarbital",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Phenobarbitone",
+    "Phenylethylbarbituric acid"
+  ],
+  "brands": [
+    "Luminal",
+    "Sezaby"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Barbiturate anticonvulsant and sedative",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im"
+  ],
+  "route_note": "Oral tablets and elixir; IV or IM injection for status epilepticus and neonatal seizures.",
+  "targets": [
+    "GABRA (GABA-A receptor, positive allosteric modulator)",
+    "AMPA/kainate receptors"
+  ],
+  "origin": "synthetic",
+  "originator": "Bayer (Heinrich Hörlein)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1912,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Luminal"
+  },
+  "discovery": {
+    "year": 1912,
+    "by": "Alfred Hauptmann",
+    "note": "Synthesised at Bayer in 1911 as a hypnotic; the young psychiatrist Hauptmann noticed that it suppressed seizures in his epilepsy patients."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; controlled (US Schedule IV)",
+  "tagline": "The oldest anticonvulsant still in wide use, and a WHO essential medicine",
+  "summary": "Phenobarbital, introduced by Bayer in 1912, is the oldest antiseizure medicine still widely used. It is inexpensive and effective, making it a first-line option in low-resource settings and for neonatal seizures, though sedation and enzyme induction limit its use elsewhere.",
+  "mechanism": [
+    "Phenobarbital binds GABA-A receptors at a site distinct from benzodiazepines and prolongs the opening of their chloride channels, enhancing inhibitory neurotransmission; at high concentrations it opens the channel directly.",
+    "It also reduces glutamate-mediated excitation through AMPA/kainate receptors and blocks some calcium channels. It is a potent inducer of hepatic cytochrome P450 enzymes."
+  ],
+  "uses": [
+    "Generalised tonic-clonic and focal seizures",
+    "Status epilepticus",
+    "Neonatal seizures",
+    "Alcohol withdrawal (in some protocols)"
+  ],
+  "history": [
+    {
+      "year": 1903,
+      "title": "Barbital",
+      "detail": "Emil Fischer and Joseph von Mering introduce barbital, the first barbiturate hypnotic."
+    },
+    {
+      "year": 1911,
+      "title": "Synthesis",
+      "detail": "Heinrich Hörlein at Bayer synthesises phenobarbital."
+    },
+    {
+      "year": 1912,
+      "title": "Luminal and epilepsy",
+      "detail": "Bayer launches Luminal as a sedative; Alfred Hauptmann reports its anticonvulsant effect."
+    },
+    {
+      "year": 1971,
+      "title": "International control",
+      "detail": "Phenobarbital is placed under Schedule IV of the UN Convention on Psychotropic Substances."
+    },
+    {
+      "year": 2022,
+      "title": "First FDA approval",
+      "detail": "Sezaby (phenobarbital sodium powder for injection) becomes the first FDA-approved phenobarbital, for neonatal seizures; earlier US products were marketed without approval."
+    }
+  ],
+  "pk": {
+    "half_life": "about 80 hours on average (53–118 h) in adults",
+    "bioavailability": "about 90% or more",
+    "metabolism": "hepatic (CYP2C9, CYP2C19, CYP2E1) and N-glucosidation; strong enzyme inducer",
+    "excretion": "renal, about 25% unchanged; enhanced by urine alkalinisation"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Sedation",
+      "Cognitive and behavioural effects (especially in children)",
+      "Ataxia",
+      "Depression"
+    ],
+    "serious": [
+      "Respiratory depression (especially with other CNS depressants)",
+      "Dependence and withdrawal seizures",
+      "Stevens-Johnson syndrome/TEN",
+      "Teratogenicity",
+      "Osteomalacia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Phenobarbital has been on the WHO Model List of Essential Medicines since the first list in 1977.",
+    "Its very long half-life allows once-daily dosing, which is useful where access to medicines is irregular."
+  ],
+  "related": [
+    "phenytoin",
+    "diazepam",
+    "lorazepam",
+    "valproate",
+    "carbamazepine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Phenobarbital",
+      "url": "https://en.wikipedia.org/wiki/Phenobarbital"
+    },
+    {
+      "title": "DailyMed: phenobarbital labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=phenobarbital"
+    }
+  ],
+  "stage": "written"
 }

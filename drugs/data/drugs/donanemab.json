@@ -1,36 +1,123 @@
 {
   "slug": "donanemab",
   "name": "Donanemab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "LY3002813",
+    "donanemab-azbt"
+  ],
+  "brands": [
+    "Kisunla"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-amyloid-beta (pyroglutamate N3pG) plaque monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "Intravenous infusion every four weeks; treatment can stop once amyloid plaque is cleared on PET.",
+  "targets": [
+    "Amyloid-beta (APP) N-terminal pyroglutamate (N3pG) form in plaques"
+  ],
+  "origin": "biotech",
+  "originator": "Eli Lilly and Company",
+  "owner": "Eli Lilly and Company",
+  "first_approval": {
+    "year": 2024,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Kisunla"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly",
+    "note": "A humanised IgG1 antibody designed to bind a truncated, pyroglutamate-modified amyloid-beta species found only in established plaques."
+  },
+  "generic": false,
+  "who_essential": false,
+  "rx_status": "prescription (specialist; amyloid confirmation and MRI monitoring required)",
+  "tagline": "Plaque-clearing Alzheimer's antibody with a limited-duration treatment course",
+  "summary": "Donanemab is a humanised antibody that targets a modified form of amyloid-beta present in plaques, rapidly clearing amyloid from the brain. In TRAILBLAZER-ALZ 2 it slowed clinical decline in early symptomatic Alzheimer's disease, and dosing can stop when plaques are cleared.",
+  "mechanism": [
+    "Donanemab binds amyloid-beta beginning at pyroglutamate-3 (N3pG), a truncated species that is deposited in plaques rather than circulating in soluble form. Antibody-bound plaques are removed by microglia, producing large, fast reductions in amyloid PET signal.",
+    "As with other anti-amyloid antibodies, plaque removal can cause amyloid-related imaging abnormalities (ARIA), particularly in APOE ε4 carriers; a more gradual titration schedule approved in 2025 lowered ARIA-E rates."
+  ],
+  "uses": [
+    "Mild cognitive impairment or mild dementia due to Alzheimer's disease with confirmed amyloid pathology"
+  ],
+  "history": [
+    {
+      "year": 2021,
+      "title": "TRAILBLAZER-ALZ",
+      "detail": "A phase 2 trial (Mintun et al., NEJM) reports amyloid clearance and slowing on a composite clinical score."
+    },
+    {
+      "year": 2023,
+      "title": "TRAILBLAZER-ALZ 2",
+      "detail": "Phase 3 results (Sims et al., JAMA) show about 35% slowing on iADRS in participants with low-to-medium tau."
+    },
+    {
+      "year": 2024,
+      "title": "FDA approval",
+      "detail": "After a unanimous advisory committee vote, the FDA approves Kisunla in July with a boxed warning for ARIA."
+    },
+    {
+      "year": 2024,
+      "title": "UK and Japan",
+      "detail": "The MHRA and Japanese regulators approve donanemab; NICE does not recommend NHS funding."
+    },
+    {
+      "year": 2025,
+      "title": "Modified titration",
+      "detail": "The FDA approves a slower dose-titration schedule based on TRAILBLAZER-ALZ 6, reducing ARIA-E."
+    },
+    {
+      "year": 2025,
+      "title": "EU opinion",
+      "detail": "After re-examination the CHMP recommends authorisation for APOE ε4 non-carriers and heterozygotes."
+    }
+  ],
+  "pk": {
+    "half_life": "about 12 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "proteolytic catabolism",
+    "excretion": "not renally excreted"
+  },
+  "safety": {
+    "common": [
+      "ARIA-E (oedema)",
+      "ARIA-H (microhaemorrhage, superficial siderosis)",
+      "Infusion-related reactions",
+      "Headache"
+    ],
+    "serious": [
+      "Serious or fatal ARIA",
+      "Intracerebral haemorrhage",
+      "Anaphylaxis"
+    ],
+    "boxed_warning": "Amyloid-related imaging abnormalities (ARIA), which can be serious and life-threatening; higher risk in APOE ε4 homozygotes. Caution with antithrombotic and thrombolytic drugs."
+  },
+  "facts": [
+    "In TRAILBLAZER-ALZ 2, participants could switch to placebo once amyloid fell below a set threshold, making donanemab the first anti-amyloid therapy with a finite course."
+  ],
+  "related": [
+    "lecanemab",
+    "donepezil",
+    "memantine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Donanemab",
+      "url": "https://en.wikipedia.org/wiki/Donanemab"
+    },
+    {
+      "title": "DailyMed: donanemab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=donanemab"
+    },
+    {
+      "title": "JAMA: Donanemab in Early Symptomatic Alzheimer Disease (2023)",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2807533"
+    }
+  ],
+  "stage": "written"
 }

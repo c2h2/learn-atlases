@@ -1,36 +1,143 @@
 {
   "slug": "celecoxib",
   "name": "Celecoxib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SC-58635"
+  ],
+  "brands": [
+    "Celebrex",
+    "Elyxyb",
+    "Seglentis (with tramadol)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Selective cyclooxygenase-2 (COX-2) inhibitor (coxib NSAID)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules once or twice daily; oral solution for acute migraine.",
+  "targets": [
+    "PTGS2"
+  ],
+  "origin": "synthetic",
+  "originator": "G. D. Searle & Company (John Talley and colleagues)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Celebrex"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "John Talley and colleagues, G. D. Searle (Monsanto)",
+    "note": "A diarylheterocycle sulfonamide designed after the discovery of the inducible COX-2 isoform in the early 1990s."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "The surviving COX-2 selective NSAID after the rofecoxib withdrawal",
+  "summary": "Celecoxib is a selective COX-2 inhibitor developed by Searle to relieve arthritis pain with less gastrointestinal injury than traditional NSAIDs. It remained on the market after rofecoxib's 2004 withdrawal and, in the PRECISION trial, showed cardiovascular safety similar to ibuprofen and naproxen at moderate doses.",
+  "mechanism": [
+    "Celecoxib selectively inhibits COX-2, the cyclooxygenase isoform induced at sites of inflammation, reducing prostaglandins that mediate pain and swelling while sparing COX-1-dependent protective prostaglandins in the stomach and thromboxane production in platelets.",
+    "Sparing platelet thromboxane while reducing endothelial prostacyclin may tip the balance toward thrombosis, the proposed mechanism for increased cardiovascular risk with COX-2 inhibitors. Celecoxib has no antiplatelet effect."
+  ],
+  "uses": [
+    "Osteoarthritis and rheumatoid arthritis",
+    "Juvenile idiopathic arthritis",
+    "Ankylosing spondylitis",
+    "Acute pain and primary dysmenorrhoea",
+    "Acute migraine (oral solution)"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "COX-2 discovered",
+      "detail": "Researchers including Daniel Simmons and Harvey Herschman describe the inducible COX-2 enzyme."
+    },
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Celebrex is approved on 31 December, co-marketed by Searle and Pfizer."
+    },
+    {
+      "year": 2004,
+      "title": "Rofecoxib withdrawn",
+      "detail": "Merck withdraws rofecoxib (Vioxx) for cardiovascular risk, putting the coxib class under scrutiny."
+    },
+    {
+      "year": 2005,
+      "title": "Boxed warning",
+      "detail": "The FDA keeps celecoxib on the market with a boxed warning; valdecoxib is withdrawn."
+    },
+    {
+      "year": 2014,
+      "title": "Generics",
+      "detail": "Generic celecoxib launches in the US."
+    },
+    {
+      "year": 2016,
+      "title": "PRECISION",
+      "detail": "Nissen et al. (NEJM) find celecoxib non-inferior to ibuprofen and naproxen for cardiovascular safety."
+    },
+    {
+      "year": 2020,
+      "title": "Migraine solution",
+      "detail": "The FDA approves Elyxyb oral solution for acute migraine."
+    },
+    {
+      "year": 2021,
+      "title": "Combination with tramadol",
+      "detail": "Seglentis (celecoxib/tramadol) is approved in the US for acute pain."
+    }
+  ],
+  "pk": {
+    "half_life": "about 11 hours",
+    "bioavailability": "not determined; peak in about 3 hours",
+    "metabolism": "hepatic, mainly CYP2C9 (reduced in poor metabolisers)",
+    "excretion": "faecal and renal, as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Dyspepsia",
+      "Abdominal pain",
+      "Diarrhoea",
+      "Peripheral oedema",
+      "Hypertension"
+    ],
+    "serious": [
+      "Myocardial infarction and stroke",
+      "Gastrointestinal bleeding (lower risk than non-selective NSAIDs)",
+      "Acute kidney injury",
+      "Serious skin reactions",
+      "Hypersensitivity in people with sulfonamide allergy"
+    ],
+    "boxed_warning": "Cardiovascular thrombotic events (myocardial infarction, stroke) and serious gastrointestinal bleeding, ulceration and perforation; contraindicated for pain after coronary artery bypass graft surgery (US NSAID class boxed warning)."
+  },
+  "facts": [
+    "Celecoxib was briefly approved to reduce polyps in familial adenomatous polyposis (from 1999); the indication was withdrawn in 2011."
+  ],
+  "related": [
+    "ibuprofen",
+    "naproxen",
+    "diclofenac",
+    "tramadol",
+    "paracetamol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Celecoxib",
+      "url": "https://en.wikipedia.org/wiki/Celecoxib"
+    },
+    {
+      "title": "DailyMed: celecoxib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=celecoxib"
+    },
+    {
+      "title": "NEJM: PRECISION trial (2016)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1611593"
+    }
+  ],
+  "stage": "written"
 }

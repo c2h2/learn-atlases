@@ -1,36 +1,155 @@
 {
   "slug": "fentanyl",
   "name": "Fentanyl",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Fentanil",
+    "R 4263",
+    "Fentanyl citrate"
+  ],
+  "brands": [
+    "Sublimaze",
+    "Duragesic",
+    "Durogesic",
+    "Actiq",
+    "Fentora",
+    "Abstral",
+    "Instanyl"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Synthetic phenylpiperidine opioid (potent mu-opioid receptor agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im",
+    "transdermal",
+    "intranasal",
+    "sublingual",
+    "other"
+  ],
+  "route_note": "IV/IM for anaesthesia and analgesia; transdermal patches for chronic pain; buccal, sublingual and nasal forms for breakthrough cancer pain in opioid-tolerant patients; also epidural/intrathecal.",
+  "targets": [
+    "OPRM1"
+  ],
+  "origin": "synthetic",
+  "originator": "Janssen Pharmaceutica (Paul Janssen)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1968,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Sublimaze"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1960,
+    "by": "Paul Janssen, Janssen Pharmaceutica, Beerse",
+    "note": "Synthesised as part of a programme of pethidine-derived phenylpiperidine opioids; roughly 50–100 times more potent than morphine."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "controlled (US Schedule II; UK Class A, Schedule 2)",
+  "tagline": "Ultra-potent synthetic opioid essential in anaesthesia and driving overdose deaths",
+  "summary": "Fentanyl is a synthetic opioid about 50–100 times as potent as morphine, widely used in anaesthesia, intensive care and cancer pain. Illicitly manufactured fentanyl and its analogues became the leading cause of overdose deaths in North America from the mid-2010s.",
+  "mechanism": [
+    "Fentanyl is a highly lipophilic, high-affinity full agonist at mu-opioid receptors. It crosses the blood–brain barrier rapidly, giving fast onset and, after single doses, short duration as it redistributes to fat and muscle.",
+    "Like other mu agonists it causes analgesia, sedation and dose-dependent respiratory depression; rapid IV injection can also cause chest wall rigidity. With prolonged infusion or patches, tissue stores lengthen its effective half-life."
+  ],
+  "uses": [
+    "Analgesia during general anaesthesia and in intensive care",
+    "Severe chronic pain in opioid-tolerant patients (transdermal)",
+    "Breakthrough cancer pain in opioid-tolerant patients (transmucosal and nasal)"
+  ],
+  "history": [
+    {
+      "year": 1960,
+      "title": "Synthesis",
+      "detail": "Paul Janssen synthesises fentanyl in Belgium."
+    },
+    {
+      "year": 1968,
+      "title": "US approval",
+      "detail": "The FDA approves fentanyl, initially in combination with droperidol (Innovar) and as Sublimaze."
+    },
+    {
+      "year": 1990,
+      "title": "Transdermal patch",
+      "detail": "The Duragesic fentanyl patch is approved in the US."
+    },
+    {
+      "year": 1998,
+      "title": "Transmucosal lozenge",
+      "detail": "Actiq is approved for breakthrough cancer pain; later off-label promotion leads to a 2008 settlement by Cephalon."
+    },
+    {
+      "year": 2012,
+      "title": "TIRF REMS",
+      "detail": "The FDA introduces a shared risk-management programme for transmucosal immediate-release fentanyl products."
+    },
+    {
+      "year": 2013,
+      "title": "Illicit fentanyl wave",
+      "detail": "Illicitly manufactured fentanyl begins driving a sharp rise in US overdose deaths."
+    },
+    {
+      "year": 2024,
+      "title": "Overdose deaths fall",
+      "detail": "US provisional data show a substantial decline in overdose deaths involving synthetic opioids from their 2022–2023 peak."
+    },
+    {
+      "year": 2025,
+      "title": "HALT Fentanyl Act",
+      "detail": "US legislation permanently places fentanyl-related substances in Schedule I."
+    }
+  ],
+  "pk": {
+    "half_life": "IV about 3–12 hours (context-sensitive); about 17 hours after patch removal",
+    "bioavailability": "transdermal about 92%; buccal about 65%; oral poor (first-pass)",
+    "metabolism": "hepatic, CYP3A4 to norfentanyl",
+    "excretion": "renal, mainly as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Constipation",
+      "Sedation",
+      "Dizziness",
+      "Application-site reactions"
+    ],
+    "serious": [
+      "Respiratory depression and apnoea",
+      "Chest wall rigidity",
+      "Addiction and overdose death",
+      "Serotonin syndrome",
+      "Accidental exposure to patches in children (fatal)",
+      "Increased absorption with heat exposure (patch)"
+    ],
+    "boxed_warning": "Addiction, abuse and misuse; life-threatening respiratory depression; accidental exposure; neonatal opioid withdrawal syndrome; CYP3A4 interactions; risks with benzodiazepines or other CNS depressants (US opioid class boxed warning). Transdermal and transmucosal forms are restricted to opioid-tolerant patients."
+  },
+  "facts": [
+    "Paul Janssen's laboratory went on to create the related opioids sufentanil, alfentanil and carfentanil.",
+    "US CDC data recorded more than 70,000 deaths involving synthetic opioids other than methadone in 2022."
+  ],
+  "related": [
+    "morphine",
+    "naloxone",
+    "oxycodone",
+    "methadone",
+    "buprenorphine",
+    "midazolam"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Fentanyl",
+      "url": "https://en.wikipedia.org/wiki/Fentanyl"
+    },
+    {
+      "title": "DailyMed: fentanyl labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fentanyl"
+    },
+    {
+      "title": "CDC: Fentanyl facts",
+      "url": "https://www.cdc.gov/overdose-prevention/about/fentanyl.html"
+    }
+  ],
+  "stage": "written"
 }

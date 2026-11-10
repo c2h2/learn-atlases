@@ -1,36 +1,122 @@
 {
   "slug": "glatiramer-acetate",
   "name": "Glatiramer acetate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Copolymer 1",
+    "Cop-1"
+  ],
+  "brands": [
+    "Copaxone",
+    "Glatopa"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Synthetic polypeptide immunomodulator",
+  "modality": "peptide",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection 20 mg daily or 40 mg three times weekly.",
+  "targets": [
+    "HLA-DR (MHC class II) binding; myelin basic protein mimicry"
+  ],
+  "origin": "synthetic",
+  "originator": "Weizmann Institute of Science (Michael Sela, Ruth Arnon, Dvora Teitelbaum); developed by Teva",
+  "owner": "Teva Pharmaceutical Industries; generic versions available",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Copaxone"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1971,
+    "by": "Michael Sela, Ruth Arnon and Dvora Teitelbaum, Weizmann Institute",
+    "note": "Random copolymers made to mimic myelin basic protein and induce experimental autoimmune encephalomyelitis unexpectedly suppressed it instead."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Israeli-discovered polymer injection for relapsing multiple sclerosis",
+  "summary": "Glatiramer acetate is a mixture of synthetic polypeptides made from four amino acids that reduces relapses in relapsing multiple sclerosis. Discovered at the Weizmann Institute and marketed by Teva as Copaxone, it became one of the best-selling MS drugs and later faced generic competition.",
+  "mechanism": [
+    "Glatiramer is a random polymer of L-glutamic acid, L-alanine, L-tyrosine and L-lysine resembling myelin basic protein. It binds MHC class II molecules and competes with myelin antigens for presentation to T cells.",
+    "It induces glatiramer-specific T helper 2 and regulatory T cells that cross into the brain and release anti-inflammatory cytokines (bystander suppression), and modulates antigen-presenting cells."
+  ],
+  "uses": [
+    "Relapsing forms of multiple sclerosis, including clinically isolated syndrome"
+  ],
+  "history": [
+    {
+      "year": 1971,
+      "title": "Discovery",
+      "detail": "Weizmann Institute researchers find that Copolymer 1 suppresses experimental autoimmune encephalomyelitis."
+    },
+    {
+      "year": 1987,
+      "title": "First controlled trial",
+      "detail": "Bornstein et al. (NEJM) report fewer relapses with Copolymer 1 in relapsing MS."
+    },
+    {
+      "year": 1996,
+      "title": "FDA approval",
+      "detail": "Copaxone is approved for relapsing-remitting MS."
+    },
+    {
+      "year": 2014,
+      "title": "40 mg dosing",
+      "detail": "A three-times-weekly 40 mg regimen is approved in the US."
+    },
+    {
+      "year": 2015,
+      "title": "First generic",
+      "detail": "The FDA approves Glatopa (Sandoz/Momenta), the first generic version of the 20 mg dose; Mylan's generics follow in 2017."
+    },
+    {
+      "year": 2025,
+      "title": "Anaphylaxis boxed warning",
+      "detail": "The FDA adds a boxed warning for anaphylaxis, which can occur years after starting treatment."
+    }
+  ],
+  "pk": {
+    "half_life": "not well characterised; largely hydrolysed at the injection site",
+    "bioavailability": "low systemic exposure as intact polymer",
+    "metabolism": "local hydrolysis to smaller peptides and amino acids",
+    "excretion": "not established"
+  },
+  "safety": {
+    "common": [
+      "Injection-site reactions",
+      "Lipoatrophy and skin necrosis",
+      "Immediate post-injection reaction (flushing, chest tightness, palpitations)",
+      "Infections"
+    ],
+    "serious": [
+      "Anaphylaxis",
+      "Hepatic injury",
+      "Chest pain"
+    ],
+    "boxed_warning": "Anaphylaxis, which can be life-threatening and can occur shortly after any dose, including after years of treatment."
+  },
+  "facts": [
+    "Copaxone was Teva's top-selling product for many years and was central to the company's growth as a branded drug maker."
+  ],
+  "related": [
+    "interferon-beta-1a",
+    "fingolimod",
+    "dimethyl-fumarate",
+    "ocrelizumab",
+    "natalizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Glatiramer acetate",
+      "url": "https://en.wikipedia.org/wiki/Glatiramer_acetate"
+    },
+    {
+      "title": "DailyMed: glatiramer labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=glatiramer"
+    }
+  ],
+  "stage": "written"
 }

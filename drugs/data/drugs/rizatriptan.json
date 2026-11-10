@@ -1,36 +1,118 @@
 {
   "slug": "rizatriptan",
   "name": "Rizatriptan",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MK-462"
+  ],
+  "brands": [
+    "Maxalt",
+    "Maxalt-MLT",
+    "Rizalt"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Triptan (serotonin 5-HT1B/1D receptor agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets and orally disintegrating wafers.",
+  "targets": [
+    "HTR1B",
+    "HTR1D"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck & Co.",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Maxalt"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Merck Sharp & Dohme research laboratories (Terlings Park, UK)",
+    "note": "A triazolylmethyl indole triptan designed for better oral absorption than sumatriptan."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Fast-acting oral triptan for acute migraine, including in adolescents",
+  "summary": "Rizatriptan is a second-generation triptan with higher oral bioavailability and faster onset than oral sumatriptan. It is used for acute migraine in adults and children aged 6 and older.",
+  "mechanism": [
+    "Like other triptans, rizatriptan stimulates 5-HT1B receptors on cranial blood vessels (vasoconstriction) and 5-HT1D receptors on trigeminal afferents (inhibiting CGRP and neuropeptide release), aborting the migraine attack."
+  ],
+  "uses": [
+    "Acute treatment of migraine with or without aura in adults and children aged 6–17"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "US approval",
+      "detail": "The FDA approves Maxalt and the orally disintegrating Maxalt-MLT."
+    },
+    {
+      "year": 2001,
+      "title": "Meta-analysis",
+      "detail": "A meta-analysis of 53 triptan trials (Ferrari et al., Lancet) ranks rizatriptan 10 mg among the most effective oral triptans."
+    },
+    {
+      "year": 2011,
+      "title": "Paediatric approval",
+      "detail": "The FDA approves rizatriptan for migraine in patients aged 6–17, the first triptan for children this young."
+    },
+    {
+      "year": 2013,
+      "title": "Generics",
+      "detail": "Generic rizatriptan becomes available in the US."
+    },
+    {
+      "year": 2021,
+      "title": "Organon",
+      "detail": "Merck spins off Organon, which takes over Maxalt and other established brands."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–3 hours",
+    "bioavailability": "about 45%",
+    "metabolism": "hepatic, MAO-A",
+    "excretion": "renal, mainly as indole acetic acid metabolite"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dizziness",
+      "Somnolence",
+      "Fatigue",
+      "Chest or throat tightness",
+      "Nausea"
+    ],
+    "serious": [
+      "Myocardial ischaemia and coronary vasospasm",
+      "Stroke",
+      "Serotonin syndrome",
+      "Medication-overuse headache"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Propranolol raises rizatriptan concentrations by about 70%, so a lower dose is labelled for people taking it."
+  ],
+  "related": [
+    "sumatriptan",
+    "rimegepant",
+    "erenumab",
+    "propranolol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Rizatriptan",
+      "url": "https://en.wikipedia.org/wiki/Rizatriptan"
+    },
+    {
+      "title": "DailyMed: rizatriptan labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=rizatriptan"
+    }
+  ],
+  "stage": "written"
 }

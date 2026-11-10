@@ -1,36 +1,147 @@
 {
   "slug": "paracetamol",
-  "name": "Paracetamol",
-  "aliases": [],
-  "brands": [],
+  "name": "Paracetamol (acetaminophen)",
+  "aliases": [
+    "Acetaminophen",
+    "APAP",
+    "N-acetyl-p-aminophenol"
+  ],
+  "brands": [
+    "Tylenol",
+    "Panadol",
+    "Calpol",
+    "Doliprane",
+    "Ofirmev"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Non-opioid analgesic and antipyretic (para-aminophenol derivative)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "rectal"
+  ],
+  "route_note": "Oral tablets, capsules, liquids and effervescent forms; suppositories; IV infusion in hospitals.",
+  "targets": [
+    "PTGS1/PTGS2 (central, peroxidase site)",
+    "TRPV1 and CNR1 (via metabolite AM404)"
+  ],
+  "origin": "synthetic",
+  "originator": "Harmon Northrop Morse (synthesis); Sterling-Winthrop and McNeil (early marketing)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1950,
+    "agency": null,
+    "country": "United States",
+    "brand": "Triagesic"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1878,
+    "by": "Harmon Northrop Morse, Johns Hopkins University",
+    "note": "First synthesised in 1878 and tried clinically in 1887 by Joseph von Mering; its value was recognised only after 1948, when it was identified as the active metabolite of acetanilide and phenacetin."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "OTC (pack-size limits in many countries); IV prescription",
+  "tagline": "The world's most widely used painkiller and fever reducer",
+  "summary": "Paracetamol (acetaminophen) is a non-opioid analgesic and antipyretic used by hundreds of millions of people for pain and fever. Safe at labelled doses, it is a leading cause of acute liver failure in overdose, for which acetylcysteine is an effective antidote.",
+  "mechanism": [
+    "Paracetamol's mechanism is still incompletely understood. It inhibits prostaglandin synthesis in the central nervous system, probably by acting on the peroxidase site of cyclooxygenase, which is effective where peroxide levels are low (as in the brain) but not at inflamed peripheral sites — hence its weak anti-inflammatory effect.",
+    "In the brain a metabolite, AM404, formed by fatty acid amide hydrolase, activates TRPV1 and the endocannabinoid system and inhibits sodium channels, and descending serotonergic pathways also contribute to analgesia.",
+    "A small fraction is oxidised by CYP2E1 and CYP3A4 to the reactive NAPQI, normally detoxified by glutathione; in overdose glutathione is depleted and NAPQI damages liver cells."
+  ],
+  "uses": [
+    "Mild-to-moderate pain (headache, musculoskeletal pain, dental pain, dysmenorrhoea)",
+    "Fever",
+    "Moderate-to-severe pain with opioids (combination or IV)"
+  ],
+  "history": [
+    {
+      "year": 1878,
+      "title": "Synthesis",
+      "detail": "Harmon Northrop Morse synthesises N-acetyl-p-aminophenol."
+    },
+    {
+      "year": 1887,
+      "title": "First clinical use",
+      "detail": "Joseph von Mering tests paracetamol but favours phenacetin."
+    },
+    {
+      "year": 1948,
+      "title": "Active metabolite identified",
+      "detail": "Bernard Brodie and Julius Axelrod show that paracetamol is the active metabolite of acetanilide and phenacetin."
+    },
+    {
+      "year": 1955,
+      "title": "Tylenol",
+      "detail": "McNeil Laboratories launches Tylenol Elixir for children in the US; Panadol follows in the UK in 1956."
+    },
+    {
+      "year": 1982,
+      "title": "Chicago Tylenol murders",
+      "detail": "Seven people die after Tylenol capsules are laced with cyanide, leading to tamper-evident packaging laws."
+    },
+    {
+      "year": 1998,
+      "title": "UK pack-size limits",
+      "detail": "The UK restricts pack sizes, followed by reductions in overdose deaths and liver transplants."
+    },
+    {
+      "year": 2010,
+      "title": "IV approval in the US",
+      "detail": "The FDA approves IV acetaminophen (Ofirmev)."
+    },
+    {
+      "year": 2011,
+      "title": "US dose limits",
+      "detail": "The FDA limits paracetamol in prescription combinations to 325 mg per unit and adds a boxed warning on hepatotoxicity."
+    },
+    {
+      "year": 2025,
+      "title": "Autism controversy",
+      "detail": "US federal health officials announce plans to change labelling over a possible link between prenatal use and autism; the EMA, WHO and major medical bodies state that evidence does not establish a causal link."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.5–3 hours",
+    "bioavailability": "about 63–89% orally",
+    "metabolism": "hepatic: glucuronidation and sulfation; minor CYP2E1/CYP3A4 oxidation to NAPQI",
+    "excretion": "renal, as conjugates"
+  },
+  "safety": {
+    "common": [
+      "Generally well tolerated at labelled doses",
+      "Rash (rare)"
+    ],
+    "serious": [
+      "Hepatotoxicity and acute liver failure in overdose or with chronic excess",
+      "Serious skin reactions (SJS/TEN, AGEP)",
+      "Hypotension with IV infusion"
+    ],
+    "boxed_warning": "Prescription combination products and IV forms (US): hepatotoxicity, including acute liver failure, associated with doses above maximum daily limits."
+  },
+  "facts": [
+    "Paracetamol overdose is the leading cause of acute liver failure in the US and UK.",
+    "The name 'paracetamol' comes from para-acetylaminophenol; 'acetaminophen' from N-acetyl-para-aminophenol."
+  ],
+  "related": [
+    "ibuprofen",
+    "aspirin",
+    "acetylcysteine",
+    "codeine",
+    "tramadol",
+    "naproxen"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Paracetamol",
+      "url": "https://en.wikipedia.org/wiki/Paracetamol"
+    },
+    {
+      "title": "DailyMed: acetaminophen labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=acetaminophen"
+    }
+  ],
+  "stage": "written"
 }

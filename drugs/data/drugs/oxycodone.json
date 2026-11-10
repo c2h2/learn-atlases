@@ -1,36 +1,153 @@
 {
   "slug": "oxycodone",
   "name": "Oxycodone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Dihydrohydroxycodeinone",
+    "Eukodal"
+  ],
+  "brands": [
+    "OxyContin",
+    "OxyNorm",
+    "Roxicodone",
+    "Percocet (with paracetamol)",
+    "Percodan (with aspirin)",
+    "Xtampza ER"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Semi-synthetic opioid analgesic (mu-opioid receptor agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "sc"
+  ],
+  "route_note": "Mainly oral immediate- and extended-release tablets, capsules and solution; injection in some countries; combination products with paracetamol, aspirin or ibuprofen.",
+  "targets": [
+    "OPRM1",
+    "OPRK1"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Martin Freund and Edmund Speyer, University of Frankfurt; introduced by E. Merck",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1917,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Eukodal"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1916,
+    "by": "Martin Freund and Edmund Speyer, University of Frankfurt",
+    "note": "Synthesised from thebaine, an opium alkaloid, in the search for an improved opioid."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "controlled (US Schedule II; UK Class A, Schedule 2)",
+  "tagline": "Semi-synthetic opioid whose aggressive marketing helped ignite the US opioid crisis",
+  "summary": "Oxycodone is a semi-synthetic opioid made from thebaine and used for moderate-to-severe pain. Purdue Pharma's extended-release OxyContin, launched in 1995 and promoted as having low addiction risk, became central to the first wave of the US opioid epidemic.",
+  "mechanism": [
+    "Oxycodone is a full agonist at mu-opioid receptors, with some kappa activity, producing analgesia, sedation, euphoria, respiratory depression and constipation like morphine.",
+    "It is more orally bioavailable than morphine. Oxycodone is metabolised by CYP3A4 to noroxycodone and by CYP2D6 to the potent oxymorphone, but its effect is mainly due to the parent drug, so CYP3A4 inhibitors raise levels and toxicity."
+  ],
+  "uses": [
+    "Moderate-to-severe acute pain",
+    "Severe chronic pain requiring long-term opioid treatment when alternatives are inadequate"
+  ],
+  "history": [
+    {
+      "year": 1916,
+      "title": "Synthesis",
+      "detail": "Freund and Speyer synthesise oxycodone from thebaine."
+    },
+    {
+      "year": 1917,
+      "title": "Launch in Germany",
+      "detail": "Merck introduces oxycodone as Eukodal."
+    },
+    {
+      "year": 1950,
+      "title": "Percodan",
+      "detail": "Oxycodone with aspirin is approved in the US; Percocet with paracetamol follows in 1976."
+    },
+    {
+      "year": 1995,
+      "title": "OxyContin",
+      "detail": "The FDA approves Purdue Pharma's extended-release OxyContin in December."
+    },
+    {
+      "year": 2007,
+      "title": "Guilty plea",
+      "detail": "Purdue and three executives plead guilty to misbranding OxyContin's addiction risk, paying about $600 million."
+    },
+    {
+      "year": 2010,
+      "title": "Abuse-deterrent reformulation",
+      "detail": "A crush-resistant OxyContin is introduced; misuse shifts in part to heroin and later illicit fentanyl."
+    },
+    {
+      "year": 2019,
+      "title": "Bankruptcy",
+      "detail": "Purdue Pharma files for bankruptcy amid thousands of opioid lawsuits; it pleads guilty to federal charges in 2020."
+    },
+    {
+      "year": 2024,
+      "title": "Supreme Court ruling",
+      "detail": "In Harrington v. Purdue Pharma the US Supreme Court rejects the bankruptcy plan's liability releases for the Sackler family."
+    },
+    {
+      "year": 2025,
+      "title": "New settlement",
+      "detail": "A revised settlement worth about $7.4 billion involving Purdue and the Sackler family is agreed."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3–4.5 hours (immediate release)",
+    "bioavailability": "about 60–87% orally",
+    "metabolism": "hepatic, CYP3A4 (noroxycodone) and CYP2D6 (oxymorphone)",
+    "excretion": "renal, as metabolites and some unchanged drug"
+  },
+  "safety": {
+    "common": [
+      "Constipation",
+      "Nausea",
+      "Somnolence",
+      "Dizziness",
+      "Pruritus"
+    ],
+    "serious": [
+      "Respiratory depression",
+      "Addiction, abuse and misuse",
+      "Overdose death, especially with benzodiazepines or alcohol",
+      "Neonatal opioid withdrawal syndrome",
+      "Adrenal insufficiency"
+    ],
+    "boxed_warning": "Addiction, abuse and misuse; life-threatening respiratory depression; accidental ingestion; neonatal opioid withdrawal syndrome; CYP3A4 interactions; risks with benzodiazepines or other CNS depressants."
+  },
+  "facts": [
+    "OxyContin's marketing and the Sackler family's role were the subject of books and dramatisations including 'Empire of Pain' and 'Dopesick'."
+  ],
+  "related": [
+    "morphine",
+    "fentanyl",
+    "naloxone",
+    "codeine",
+    "buprenorphine",
+    "methadone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Oxycodone",
+      "url": "https://en.wikipedia.org/wiki/Oxycodone"
+    },
+    {
+      "title": "Wikipedia: OxyContin",
+      "url": "https://en.wikipedia.org/wiki/OxyContin"
+    },
+    {
+      "title": "DailyMed: oxycodone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=oxycodone"
+    }
+  ],
+  "stage": "written"
 }

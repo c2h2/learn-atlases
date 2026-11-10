@@ -1,36 +1,132 @@
 {
   "slug": "carbamazepine",
   "name": "Carbamazepine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "G 32883"
+  ],
+  "brands": [
+    "Tegretol",
+    "Carbatrol",
+    "Equetro",
+    "Epitol"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Iminostilbene (dibenzazepine) anticonvulsant; sodium channel blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "rectal"
+  ],
+  "route_note": "Oral tablets, chewable and extended-release tablets/capsules and suspension; suppositories in some countries and an IV formulation (Carnexiv) in the US.",
+  "targets": [
+    "Voltage-gated sodium channels (SCN1A, SCN2A and others)"
+  ],
+  "origin": "synthetic",
+  "originator": "J. R. Geigy AG (Walter Schindler)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1963,
+    "agency": null,
+    "country": "Switzerland",
+    "brand": "Tegretol"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1953,
+    "by": "Walter Schindler, Geigy, Basel",
+    "note": "Synthesised during work on tricyclic compounds related to imipramine; anticonvulsant and anti-neuralgic effects were recognised around 1962."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First-line drug for trigeminal neuralgia and a long-standing focal epilepsy treatment",
+  "summary": "Carbamazepine is a tricyclic anticonvulsant used for focal and tonic-clonic seizures, trigeminal neuralgia and bipolar disorder. It is effective and inexpensive but induces its own metabolism and many drug interactions, and carries a genetic risk of severe skin reactions.",
+  "mechanism": [
+    "Carbamazepine stabilises inactivated voltage-gated sodium channels, reducing high-frequency repetitive firing of neurons and synaptic propagation of seizure discharges.",
+    "In trigeminal neuralgia it suppresses abnormal ectopic firing of damaged trigeminal afferents. Its active metabolite carbamazepine-10,11-epoxide contributes to both efficacy and toxicity."
+  ],
+  "uses": [
+    "Focal and generalised tonic-clonic seizures",
+    "Trigeminal neuralgia",
+    "Acute mania and bipolar disorder (extended-release, Equetro)"
+  ],
+  "history": [
+    {
+      "year": 1953,
+      "title": "Synthesis",
+      "detail": "Walter Schindler synthesises carbamazepine at Geigy in Basel."
+    },
+    {
+      "year": 1962,
+      "title": "Trigeminal neuralgia",
+      "detail": "Blom reports efficacy in trigeminal neuralgia."
+    },
+    {
+      "year": 1963,
+      "title": "Launch",
+      "detail": "Tegretol is marketed in Switzerland and soon the UK for epilepsy."
+    },
+    {
+      "year": 1968,
+      "title": "US approval",
+      "detail": "The FDA approves Tegretol, initially for trigeminal neuralgia; the epilepsy indication follows in 1974."
+    },
+    {
+      "year": 2004,
+      "title": "Bipolar disorder",
+      "detail": "Equetro is approved in the US for acute manic and mixed episodes."
+    },
+    {
+      "year": 2007,
+      "title": "HLA-B*1502 boxed warning",
+      "detail": "The FDA recommends genetic screening for HLA-B*15:02 in patients of Asian ancestry before starting therapy."
+    }
+  ],
+  "pk": {
+    "half_life": "about 25–65 hours after a single dose, falling to 12–17 hours with repeated dosing (autoinduction)",
+    "bioavailability": "about 75–85%",
+    "metabolism": "hepatic, mainly CYP3A4, to the active 10,11-epoxide; strong enzyme inducer",
+    "excretion": "renal (about 72%) and faecal, as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Dizziness",
+      "Drowsiness",
+      "Ataxia",
+      "Nausea",
+      "Diplopia",
+      "Hyponatraemia"
+    ],
+    "serious": [
+      "Stevens-Johnson syndrome/TEN (associated with HLA-B*15:02)",
+      "DRESS (associated with HLA-A*31:01)",
+      "Aplastic anaemia and agranulocytosis",
+      "Teratogenicity (neural tube defects)",
+      "Hepatotoxicity"
+    ],
+    "boxed_warning": "Serious dermatologic reactions including SJS/TEN, strongly associated with HLA-B*1502 (test at-risk patients before treatment); aplastic anaemia and agranulocytosis."
+  },
+  "facts": [
+    "Carbamazepine's dibenzazepine structure is closely related to the tricyclic antidepressant imipramine.",
+    "Oxcarbazepine and eslicarbazepine were developed as relatives that avoid the epoxide metabolite."
+  ],
+  "related": [
+    "phenytoin",
+    "lamotrigine",
+    "valproate",
+    "lithium",
+    "imipramine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Carbamazepine",
+      "url": "https://en.wikipedia.org/wiki/Carbamazepine"
+    },
+    {
+      "title": "DailyMed: carbamazepine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=carbamazepine"
+    }
+  ],
+  "stage": "written"
 }

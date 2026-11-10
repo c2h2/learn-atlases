@@ -1,36 +1,131 @@
 {
   "slug": "gabapentin",
   "name": "Gabapentin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CI-945",
+    "Gabapentin enacarbil (prodrug)"
+  ],
+  "brands": [
+    "Neurontin",
+    "Gralise",
+    "Horizant (gabapentin enacarbil)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Gabapentinoid (alpha-2-delta calcium channel subunit ligand)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules, tablets and solution, usually three times daily; once-daily and prodrug extended-release forms.",
+  "targets": [
+    "CACNA2D1",
+    "CACNA2D2"
+  ],
+  "origin": "synthetic",
+  "originator": "Parke-Davis (Gödecke, Germany)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1993,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Neurontin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Gödecke AG / Parke-Davis",
+    "note": "Designed in the 1970s as a lipophilic, brain-penetrant analogue of GABA; it was later found not to act on GABA receptors."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; controlled (UK Class C, Schedule V in some US states)",
+  "tagline": "Gabapentinoid used for neuropathic pain and focal seizures",
+  "summary": "Gabapentin is a GABA analogue that binds the alpha-2-delta subunit of voltage-gated calcium channels. Approved for focal seizures and postherpetic neuralgia, it is very widely prescribed for neuropathic pain, and misuse concerns have led to controls in several countries.",
+  "mechanism": [
+    "Despite its design as a GABA analogue, gabapentin does not bind GABA receptors. It binds the alpha-2-delta-1 subunit of presynaptic voltage-gated calcium channels, reducing their trafficking to the membrane and decreasing release of excitatory neurotransmitters such as glutamate and substance P.",
+    "This dampens hyperexcitability in sensitised pain pathways and in seizure-prone cortex. Absorption depends on a saturable L-amino acid transporter, so bioavailability falls at higher doses."
+  ],
+  "uses": [
+    "Focal seizures with or without secondary generalisation (adjunct and monotherapy)",
+    "Postherpetic neuralgia",
+    "Peripheral neuropathic pain (in many countries)",
+    "Restless legs syndrome (gabapentin enacarbil)"
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "US approval",
+      "detail": "The FDA approves Neurontin as adjunctive therapy for partial seizures."
+    },
+    {
+      "year": 2002,
+      "title": "Postherpetic neuralgia",
+      "detail": "The FDA approves gabapentin for postherpetic neuralgia."
+    },
+    {
+      "year": 2004,
+      "title": "Off-label marketing settlement",
+      "detail": "Pfizer's Warner-Lambert unit pleads guilty and pays $430 million over illegal promotion of Neurontin for unapproved uses."
+    },
+    {
+      "year": 2004,
+      "title": "Generics",
+      "detail": "Generic gabapentin launches in the US."
+    },
+    {
+      "year": 2011,
+      "title": "New formulations",
+      "detail": "Gralise and the prodrug gabapentin enacarbil (Horizant) are approved in the US."
+    },
+    {
+      "year": 2019,
+      "title": "Controls and warnings",
+      "detail": "The UK reclassifies gabapentin and pregabalin as Class C controlled drugs; the FDA warns of serious breathing problems when combined with opioids or in respiratory disease."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5–7 hours",
+    "bioavailability": "dose-dependent: about 60% at low doses, falling at higher doses (saturable transport)",
+    "metabolism": "not metabolised",
+    "excretion": "renal, unchanged; dose reduced in renal impairment"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dizziness",
+      "Somnolence",
+      "Ataxia",
+      "Peripheral oedema",
+      "Weight gain"
+    ],
+    "serious": [
+      "Respiratory depression with opioids or other CNS depressants",
+      "Misuse and dependence",
+      "Suicidal ideation",
+      "DRESS and anaphylaxis",
+      "Withdrawal seizures on abrupt discontinuation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Gabapentin is among the most prescribed drugs in the US, with much of its use off-label for pain.",
+    "Internal documents released in the Neurontin litigation became a landmark case study of off-label drug promotion."
+  ],
+  "related": [
+    "pregabalin",
+    "carbamazepine",
+    "duloxetine",
+    "amitriptyline",
+    "morphine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Gabapentin",
+      "url": "https://en.wikipedia.org/wiki/Gabapentin"
+    },
+    {
+      "title": "DailyMed: gabapentin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=gabapentin"
+    }
+  ],
+  "stage": "written"
 }

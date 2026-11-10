@@ -1,36 +1,121 @@
 {
   "slug": "rasagiline",
   "name": "Rasagiline",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "TVP-1012",
+    "N-propargyl-1(R)-aminoindan"
+  ],
+  "brands": [
+    "Azilect"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Irreversible monoamine oxidase B (MAO-B) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Once-daily oral tablet.",
+  "targets": [
+    "MAOB"
+  ],
+  "origin": "synthetic",
+  "originator": "Technion – Israel Institute of Technology (Moussa Youdim, John Finberg) and Teva Pharmaceutical Industries",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 2005,
+    "agency": "EMA",
+    "country": "European Union",
+    "brand": "Azilect"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Moussa Youdim and John Finberg, Technion, with Teva",
+    "note": "Developed as a propargylamine MAO-B inhibitor that, unlike selegiline, is not metabolised to amphetamines."
+  },
+  "generic": true,
+  "who_essential": false,
+  "rx_status": "prescription",
+  "tagline": "Once-daily MAO-B inhibitor for Parkinson's disease, developed in Israel",
+  "summary": "Rasagiline is a second-generation irreversible MAO-B inhibitor used once daily as monotherapy in early Parkinson's disease or as an adjunct to levodopa. It was developed at the Technion with Teva and is now generic.",
+  "mechanism": [
+    "Rasagiline binds covalently to the flavin cofactor of MAO-B, irreversibly blocking the oxidative deamination of dopamine in the striatum and so increasing synaptic dopamine.",
+    "Its main metabolite, 1(R)-aminoindan, is not an amphetamine, avoiding the amphetamine-like metabolites of selegiline. Laboratory studies suggested neuroprotective properties, but disease modification has not been proven in humans."
+  ],
+  "uses": [
+    "Parkinson's disease (monotherapy and adjunct to levodopa)"
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "title": "European approval",
+      "detail": "The European Commission authorises Azilect (Teva/Lundbeck)."
+    },
+    {
+      "year": 2006,
+      "title": "US approval",
+      "detail": "The FDA approves Azilect for Parkinson's disease."
+    },
+    {
+      "year": 2009,
+      "title": "ADAGIO",
+      "detail": "A delayed-start trial (Olanow et al., NEJM) gives ambiguous results: 1 mg met criteria for possible disease modification, 2 mg did not."
+    },
+    {
+      "year": 2011,
+      "title": "FDA declines disease-modifying claim",
+      "detail": "An FDA advisory committee votes against a label claim of slowing Parkinson's disease progression."
+    },
+    {
+      "year": 2017,
+      "title": "Generics",
+      "detail": "Generic rasagiline becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 0.6–2 hours; enzyme inhibition lasts much longer",
+    "bioavailability": "about 36%",
+    "metabolism": "hepatic, mainly CYP1A2, to 1(R)-aminoindan",
+    "excretion": "mainly renal, as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Arthralgia",
+      "Dyspepsia",
+      "Dyskinesia (as adjunct)",
+      "Orthostatic hypotension"
+    ],
+    "serious": [
+      "Serotonin syndrome with serotonergic drugs or pethidine",
+      "Hallucinations",
+      "Impulse control disorders",
+      "Falling asleep during activities"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Rasagiline is the R-enantiomer of N-propargyl-1-aminoindan; the S-enantiomer is far less potent at MAO-B."
+  ],
+  "related": [
+    "selegiline",
+    "levodopa-carbidopa",
+    "pramipexole",
+    "entacapone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Rasagiline",
+      "url": "https://en.wikipedia.org/wiki/Rasagiline"
+    },
+    {
+      "title": "DailyMed: rasagiline labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=rasagiline"
+    },
+    {
+      "title": "EMA EPAR: Azilect",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/azilect"
+    }
+  ],
+  "stage": "written"
 }

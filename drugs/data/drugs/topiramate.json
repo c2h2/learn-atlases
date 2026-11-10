@@ -1,36 +1,139 @@
 {
   "slug": "topiramate",
   "name": "Topiramate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "McN-4853",
+    "RWJ-17021"
+  ],
+  "brands": [
+    "Topamax",
+    "Trokendi XR",
+    "Qudexy XR",
+    "Eprontia",
+    "Qsymia (with phentermine)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Sulfamate-substituted monosaccharide anticonvulsant",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets, sprinkle capsules, extended-release capsules and oral solution.",
+  "targets": [
+    "Voltage-gated sodium channels",
+    "GABA-A receptors",
+    "AMPA/kainate glutamate receptors",
+    "Carbonic anhydrase (CA2, CA4)"
+  ],
+  "origin": "synthetic",
+  "originator": "McNeil Laboratories / Johnson & Johnson (Bruce Maryanoff, Joseph Gardocki)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Topamax"
+  },
+  "discovery": {
+    "year": 1979,
+    "by": "Bruce Maryanoff and Joseph Gardocki, McNeil",
+    "note": "A fructose derivative made in an antidiabetic programme, found active in anticonvulsant screening."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Anticonvulsant and migraine preventive that began as an antidiabetic lead",
+  "summary": "Topiramate is a broad-spectrum anticonvulsant also approved for migraine prevention and, with phentermine, for weight management. Cognitive slowing, paraesthesia and teratogenicity limit its use.",
+  "mechanism": [
+    "Topiramate has several actions: it blocks voltage-dependent sodium channels, enhances GABA-A receptor-mediated chloride currents, antagonises AMPA/kainate glutamate receptors and weakly inhibits carbonic anhydrase.",
+    "Carbonic anhydrase inhibition explains paraesthesia, metabolic acidosis and kidney stones; appetite suppression underlies its weight-loss effect."
+  ],
+  "uses": [
+    "Focal and primary generalised tonic-clonic seizures",
+    "Lennox–Gastaut syndrome (adjunct)",
+    "Migraine prophylaxis",
+    "Chronic weight management (with phentermine)"
+  ],
+  "history": [
+    {
+      "year": 1979,
+      "title": "Discovery",
+      "detail": "Maryanoff and Gardocki synthesise topiramate at McNeil."
+    },
+    {
+      "year": 1996,
+      "title": "US approval",
+      "detail": "The FDA approves Topamax for adjunctive treatment of partial seizures."
+    },
+    {
+      "year": 2004,
+      "title": "Migraine prophylaxis",
+      "detail": "Topiramate is approved for migraine prevention in adults."
+    },
+    {
+      "year": 2009,
+      "title": "Generics",
+      "detail": "Generic topiramate becomes available in the US."
+    },
+    {
+      "year": 2011,
+      "title": "Oral cleft warning",
+      "detail": "The FDA warns of an increased risk of cleft lip and palate after first-trimester exposure."
+    },
+    {
+      "year": 2012,
+      "title": "Qsymia",
+      "detail": "Phentermine/topiramate extended-release is approved for obesity."
+    },
+    {
+      "year": 2023,
+      "title": "EU pregnancy prevention",
+      "detail": "The EMA introduces a pregnancy prevention programme after data link prenatal exposure to neurodevelopmental disorders."
+    }
+  ],
+  "pk": {
+    "half_life": "about 21 hours",
+    "bioavailability": "about 80%",
+    "metabolism": "limited (about 20–30%)",
+    "excretion": "renal, about 70% unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Paraesthesia",
+      "Cognitive slowing and word-finding difficulty",
+      "Fatigue",
+      "Weight loss",
+      "Taste changes"
+    ],
+    "serious": [
+      "Acute myopia and secondary angle-closure glaucoma",
+      "Metabolic acidosis",
+      "Kidney stones",
+      "Oligohidrosis and hyperthermia (children)",
+      "Teratogenicity (oral clefts)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Topiramate's word-finding and concentration problems are common enough to have earned the nickname 'Dopamax'."
+  ],
+  "related": [
+    "valproate",
+    "levetiracetam",
+    "lamotrigine",
+    "phentermine",
+    "erenumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Topiramate",
+      "url": "https://en.wikipedia.org/wiki/Topiramate"
+    },
+    {
+      "title": "DailyMed: topiramate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=topiramate"
+    }
+  ],
+  "stage": "written"
 }

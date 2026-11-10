@@ -1,36 +1,131 @@
 {
   "slug": "fingolimod",
   "name": "Fingolimod",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "FTY720"
+  ],
+  "brands": [
+    "Gilenya",
+    "Tascenso ODT"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Sphingosine 1-phosphate (S1P) receptor modulator",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Once-daily oral capsule; first-dose cardiac monitoring required.",
+  "targets": [
+    "S1PR1",
+    "S1PR3",
+    "S1PR4",
+    "S1PR5"
+  ],
+  "origin": "synthetic",
+  "originator": "Kyoto University (Tetsuro Fujita), Yoshitomi Pharmaceutical and Taito; developed by Novartis",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 2010,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Gilenya"
+  },
+  "discovery": {
+    "year": 1992,
+    "by": "Tetsuro Fujita and colleagues, Kyoto University",
+    "note": "Synthesised by simplifying the structure of myriocin, an immunosuppressive metabolite of the fungus Isaria sinclairii used in traditional Chinese medicine."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First oral multiple sclerosis therapy, derived from a fungal metabolite",
+  "summary": "Fingolimod was the first oral disease-modifying therapy for relapsing multiple sclerosis. It traps lymphocytes in lymph nodes by modulating S1P receptors, preventing them from entering the central nervous system.",
+  "mechanism": [
+    "Fingolimod is phosphorylated by sphingosine kinase 2 to fingolimod-phosphate, which binds S1P receptors. On lymphocytes it initially activates and then causes internalisation and degradation of S1P1, making cells unresponsive to the S1P gradient that guides their exit from lymph nodes.",
+    "Naive and central memory T cells are therefore retained in lymphoid tissue, lowering circulating lymphocytes and autoreactive cell entry into the brain. Effects on S1P receptors in heart muscle cause transient bradycardia after the first dose."
+  ],
+  "uses": [
+    "Relapsing forms of multiple sclerosis in adults and children aged 10 and older"
+  ],
+  "history": [
+    {
+      "year": 1992,
+      "title": "Synthesis",
+      "detail": "FTY720 is synthesised in Japan as a myriocin derivative."
+    },
+    {
+      "year": 1997,
+      "title": "Novartis licence",
+      "detail": "Novartis licenses the compound, initially for transplant immunosuppression."
+    },
+    {
+      "year": 2010,
+      "title": "FREEDOMS, TRANSFORMS and approval",
+      "detail": "Phase 3 trials (NEJM) show relapse reduction versus placebo and interferon beta-1a; the FDA approves Gilenya in September."
+    },
+    {
+      "year": 2011,
+      "title": "EU approval",
+      "detail": "The European Commission authorises Gilenya."
+    },
+    {
+      "year": 2018,
+      "title": "Paediatric approval",
+      "detail": "Fingolimod becomes the first DMT approved for paediatric MS in the US."
+    },
+    {
+      "year": 2022,
+      "title": "Generics",
+      "detail": "Generic fingolimod launches in the US after patent litigation."
+    }
+  ],
+  "pk": {
+    "half_life": "about 6–9 days",
+    "bioavailability": "about 93%",
+    "metabolism": "phosphorylation by sphingosine kinase; oxidation mainly by CYP4F2",
+    "excretion": "mainly renal, as inactive metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Raised liver enzymes",
+      "Diarrhoea",
+      "Cough",
+      "Lymphopenia"
+    ],
+    "serious": [
+      "First-dose bradycardia and atrioventricular block",
+      "Macular oedema",
+      "Serious infections including cryptococcal meningitis, herpes and PML",
+      "Severe disease rebound after stopping",
+      "Fetal risk"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Myriocin, fingolimod's parent compound, comes from a fungus related to Cordyceps, which grows on insect larvae."
+  ],
+  "related": [
+    "dimethyl-fumarate",
+    "interferon-beta-1a",
+    "glatiramer-acetate",
+    "natalizumab",
+    "ocrelizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Fingolimod",
+      "url": "https://en.wikipedia.org/wiki/Fingolimod"
+    },
+    {
+      "title": "DailyMed: fingolimod labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fingolimod"
+    },
+    {
+      "title": "EMA EPAR: Gilenya",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/gilenya"
+    }
+  ],
+  "stage": "written"
 }

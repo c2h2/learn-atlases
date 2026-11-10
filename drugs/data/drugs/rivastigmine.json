@@ -1,36 +1,130 @@
 {
   "slug": "rivastigmine",
   "name": "Rivastigmine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ENA 713",
+    "SDZ ENA 713"
+  ],
+  "brands": [
+    "Exelon",
+    "Prometax"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Pseudo-irreversible (carbamate) acetylcholinesterase and butyrylcholinesterase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "transdermal"
+  ],
+  "route_note": "Oral capsules or solution twice daily with food; once-daily transdermal patch.",
+  "targets": [
+    "ACHE",
+    "BCHE"
+  ],
+  "origin": "synthetic",
+  "originator": "Marta Weinstock-Rosin (Hebrew University of Jerusalem), developed by Sandoz/Novartis",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1998,
+    "agency": "EMA",
+    "country": "European Union",
+    "brand": "Exelon"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Marta Weinstock-Rosin, Hebrew University of Jerusalem",
+    "note": "A carbamate derived from the physostigmine pharmacophore, licensed to Sandoz (later Novartis)."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Cholinesterase inhibitor for Alzheimer's and Parkinson's disease dementia, also as a patch",
+  "summary": "Rivastigmine is a carbamate cholinesterase inhibitor used for mild-to-moderate Alzheimer's disease and dementia associated with Parkinson's disease. Its transdermal patch reduces the gastrointestinal effects seen with capsules.",
+  "mechanism": [
+    "Rivastigmine carbamylates the active site of acetylcholinesterase and butyrylcholinesterase, inactivating them for hours; it is therefore termed 'pseudo-irreversible'. This increases acetylcholine availability in cortical and hippocampal synapses.",
+    "Because it is hydrolysed by its target enzymes rather than by hepatic cytochrome P450, it has few pharmacokinetic drug interactions."
+  ],
+  "uses": [
+    "Mild-to-moderate dementia of the Alzheimer's type",
+    "Mild-to-moderate dementia associated with Parkinson's disease",
+    "Severe Alzheimer's dementia (13.3 mg/24 h patch, US)"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "European approval",
+      "detail": "Exelon is authorised in the EU for Alzheimer's disease."
+    },
+    {
+      "year": 2000,
+      "title": "US approval",
+      "detail": "The FDA approves Exelon capsules."
+    },
+    {
+      "year": 2004,
+      "title": "EXPRESS trial",
+      "detail": "Emre et al. (NEJM) show benefit in dementia associated with Parkinson's disease."
+    },
+    {
+      "year": 2006,
+      "title": "Parkinson's disease dementia",
+      "detail": "Rivastigmine becomes the first drug approved for Parkinson's disease dementia in the US and EU."
+    },
+    {
+      "year": 2007,
+      "title": "Patch",
+      "detail": "The FDA approves the Exelon transdermal patch."
+    },
+    {
+      "year": 2013,
+      "title": "Severe Alzheimer's",
+      "detail": "The 13.3 mg/24 h patch is approved in the US for severe Alzheimer's disease."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.5 hours (enzyme inhibition lasts about 10 hours)",
+    "bioavailability": "about 36% for a 3 mg oral dose",
+    "metabolism": "hydrolysis by cholinesterases; minimal CYP involvement",
+    "excretion": "renal, as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Vomiting",
+      "Anorexia and weight loss",
+      "Dizziness",
+      "Application-site reactions (patch)"
+    ],
+    "serious": [
+      "Bradycardia",
+      "Severe vomiting with oesophageal rupture (after dose errors)",
+      "Worsening tremor in Parkinson's disease",
+      "Medication errors from applying multiple patches"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Rivastigmine is the only cholinesterase inhibitor approved for Parkinson's disease dementia in both the US and EU."
+  ],
+  "related": [
+    "donepezil",
+    "memantine",
+    "levodopa-carbidopa"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Rivastigmine",
+      "url": "https://en.wikipedia.org/wiki/Rivastigmine"
+    },
+    {
+      "title": "DailyMed: rivastigmine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=rivastigmine"
+    },
+    {
+      "title": "EMA EPAR: Exelon",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/exelon"
+    }
+  ],
+  "stage": "written"
 }

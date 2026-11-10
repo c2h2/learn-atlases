@@ -1,36 +1,134 @@
 {
   "slug": "lecanemab",
   "name": "Lecanemab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BAN2401",
+    "lecanemab-irmb",
+    "mAb158 (murine precursor)"
+  ],
+  "brands": [
+    "Leqembi",
+    "Leqembi Iqlik"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Anti-amyloid-beta protofibril monoclonal antibody",
+  "modality": "antibody",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "Intravenous infusion every two weeks, with every-four-week IV or weekly subcutaneous autoinjector maintenance in the US.",
+  "targets": [
+    "Amyloid-beta (APP) soluble protofibrils"
+  ],
+  "origin": "biotech",
+  "originator": "BioArctic (Uppsala University research of Lars Lannfelt) with Eisai",
+  "owner": "Eisai (co-commercialised with Biogen)",
+  "first_approval": {
+    "year": 2023,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Leqembi"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Lars Lannfelt and colleagues, Uppsala University / BioArctic",
+    "note": "Derived from the murine antibody mAb158, raised against amyloid-beta protofibrils after study of the 'Arctic' APP mutation; humanised and developed with Eisai."
+  },
+  "generic": false,
+  "who_essential": false,
+  "rx_status": "prescription (specialist; amyloid confirmation and MRI monitoring required)",
+  "tagline": "Anti-amyloid antibody that modestly slows early Alzheimer's disease",
+  "summary": "Lecanemab is a humanised IgG1 antibody that binds soluble amyloid-beta protofibrils and clears amyloid plaques. In the Clarity AD trial it slowed decline on a clinical dementia scale by about 27% over 18 months in early Alzheimer's disease, at the cost of amyloid-related imaging abnormalities.",
+  "mechanism": [
+    "Lecanemab preferentially binds large soluble amyloid-beta aggregates (protofibrils), considered among the most neurotoxic species, and also binds plaques. Antibody-coated amyloid is cleared by microglial Fc-receptor-mediated phagocytosis, lowering brain amyloid measured by PET.",
+    "Amyloid removal can disturb vessel walls containing amyloid (cerebral amyloid angiopathy), producing amyloid-related imaging abnormalities with oedema (ARIA-E) or haemorrhage (ARIA-H). Risk is highest in people homozygous for the APOE ε4 allele."
+  ],
+  "uses": [
+    "Mild cognitive impairment or mild dementia due to Alzheimer's disease with confirmed amyloid pathology"
+  ],
+  "history": [
+    {
+      "year": 2001,
+      "title": "Arctic mutation",
+      "detail": "Uppsala researchers describe the Arctic APP mutation, which increases protofibril formation, inspiring the protofibril-targeting antibody."
+    },
+    {
+      "year": 2022,
+      "title": "Clarity AD",
+      "detail": "Phase 3 results (van Dyck et al., NEJM) show 27% slower decline on CDR-SB versus placebo at 18 months."
+    },
+    {
+      "year": 2023,
+      "title": "FDA accelerated approval",
+      "detail": "In January the FDA grants accelerated approval based on amyloid reduction."
+    },
+    {
+      "year": 2023,
+      "title": "Traditional approval",
+      "detail": "In July the FDA converts to traditional approval with a boxed warning for ARIA; Japan approves later that year."
+    },
+    {
+      "year": 2024,
+      "title": "UK and China",
+      "detail": "The MHRA approves lecanemab for APOE ε4 non-carriers and heterozygotes; NICE does not recommend it for NHS funding."
+    },
+    {
+      "year": 2025,
+      "title": "EU approval",
+      "detail": "After an initial negative CHMP opinion and re-examination, the European Commission authorises Leqembi for APOE ε4 non-carriers and heterozygotes."
+    },
+    {
+      "year": 2025,
+      "title": "Subcutaneous maintenance",
+      "detail": "The FDA approves the Leqembi Iqlik subcutaneous autoinjector for weekly maintenance dosing."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5–7 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "proteolytic catabolism",
+    "excretion": "not renally excreted"
+  },
+  "safety": {
+    "common": [
+      "Infusion-related reactions",
+      "Headache",
+      "ARIA-H (microhaemorrhage, superficial siderosis)",
+      "ARIA-E (oedema)",
+      "Falls"
+    ],
+    "serious": [
+      "Symptomatic or serious ARIA including seizures",
+      "Intracerebral haemorrhage (higher risk with anticoagulants)",
+      "Death associated with brain oedema or haemorrhage"
+    ],
+    "boxed_warning": "Amyloid-related imaging abnormalities (ARIA), which can be serious and life-threatening; risk is higher in APOE ε4 homozygotes, who should be tested before treatment. Caution with thrombolytics and anticoagulants."
+  },
+  "facts": [
+    "Lecanemab was the first anti-amyloid antibody to receive traditional (full) FDA approval based on clinical benefit.",
+    "Its benefit on the 18-point CDR-SB scale in Clarity AD was a 0.45-point difference over 18 months."
+  ],
+  "related": [
+    "donanemab",
+    "donepezil",
+    "memantine",
+    "rivastigmine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lecanemab",
+      "url": "https://en.wikipedia.org/wiki/Lecanemab"
+    },
+    {
+      "title": "DailyMed: lecanemab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=lecanemab"
+    },
+    {
+      "title": "NEJM: Lecanemab in Early Alzheimer's Disease (2023)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2212948"
+    }
+  ],
+  "stage": "written"
 }

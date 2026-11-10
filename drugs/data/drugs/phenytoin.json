@@ -1,36 +1,132 @@
 {
   "slug": "phenytoin",
   "name": "Phenytoin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Diphenylhydantoin",
+    "DPH",
+    "5,5-diphenylhydantoin"
+  ],
+  "brands": [
+    "Dilantin",
+    "Epanutin",
+    "Phenytek"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Hydantoin anticonvulsant; voltage-gated sodium channel blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im"
+  ],
+  "route_note": "Oral capsules, chewable tablets and suspension; IV for status epilepticus (IM absorption is erratic). Fosphenytoin is a water-soluble IV/IM prodrug.",
+  "targets": [
+    "Voltage-gated sodium channels (SCN1A, SCN2A, SCN8A and others)"
+  ],
+  "origin": "synthetic",
+  "originator": "Parke-Davis (clinical introduction); first synthesised by Heinrich Biltz",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1938,
+    "agency": null,
+    "country": "United States",
+    "brand": "Dilantin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1938,
+    "by": "H. Houston Merritt and Tracy Putnam",
+    "note": "Identified by screening compounds in an electroshock seizure model in cats; Biltz had synthesised the molecule in 1908."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Pioneering non-sedating anticonvulsant with famously non-linear kinetics",
+  "summary": "Phenytoin, introduced in 1938, was the first anticonvulsant shown to control seizures without heavy sedation. It remains widely used for focal and tonic-clonic seizures and status epilepticus, although its saturable metabolism, interactions and long-term adverse effects demand monitoring.",
+  "mechanism": [
+    "Phenytoin binds voltage-gated sodium channels preferentially in their inactivated state, slowing recovery from inactivation. This use-dependent block limits sustained high-frequency repetitive firing of neurons, preventing the spread of seizure activity, while sparing normal low-frequency activity.",
+    "It also has class IB antiarrhythmic properties, which explain cardiovascular toxicity when given rapidly intravenously."
+  ],
+  "uses": [
+    "Focal (partial) and generalised tonic-clonic seizures",
+    "Status epilepticus and seizure prophylaxis in neurosurgery (IV)"
+  ],
+  "history": [
+    {
+      "year": 1908,
+      "title": "Synthesis",
+      "detail": "German chemist Heinrich Biltz synthesises 5,5-diphenylhydantoin."
+    },
+    {
+      "year": 1938,
+      "title": "Anticonvulsant discovery",
+      "detail": "Merritt and Putnam report its anticonvulsant activity; Parke-Davis markets it as Dilantin."
+    },
+    {
+      "year": 1950,
+      "title": "Antiarrhythmic use",
+      "detail": "Phenytoin's cardiac sodium-channel effects lead to use for digitalis-induced arrhythmias."
+    },
+    {
+      "year": 1996,
+      "title": "Fosphenytoin",
+      "detail": "The FDA approves fosphenytoin (Cerebyx), a prodrug with less infusion-site toxicity."
+    },
+    {
+      "year": 2008,
+      "title": "HLA-B*1502 warning",
+      "detail": "FDA labelling notes an association between HLA-B*15:02 and Stevens-Johnson syndrome/TEN in people of Asian ancestry."
+    },
+    {
+      "year": 2015,
+      "title": "Pharmacogenomic guideline",
+      "detail": "CPIC publishes a guideline on CYP2C9 and HLA-B genotypes and phenytoin dosing."
+    }
+  ],
+  "pk": {
+    "half_life": "about 22 hours on average (7–42 h), concentration-dependent",
+    "bioavailability": "slow, about 70–100% depending on formulation",
+    "metabolism": "hepatic, CYP2C9 and CYP2C19; saturable (Michaelis–Menten) kinetics",
+    "excretion": "renal, as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Nystagmus",
+      "Ataxia",
+      "Gingival hyperplasia",
+      "Hirsutism",
+      "Coarsening of facial features"
+    ],
+    "serious": [
+      "Stevens-Johnson syndrome/TEN and DRESS",
+      "Hepatotoxicity",
+      "Blood dyscrasias",
+      "Purple glove syndrome with IV use",
+      "Fetal hydantoin syndrome",
+      "Osteomalacia"
+    ],
+    "boxed_warning": "Cardiovascular risk with rapid intravenous infusion (hypotension and arrhythmias); IV rate must not exceed labelled limits."
+  },
+  "facts": [
+    "Because its metabolism saturates within the therapeutic range, small dose increases can cause disproportionately large rises in phenytoin levels.",
+    "Phenytoin is a strong inducer of CYP3A4 and other enzymes, reducing the effectiveness of many drugs including hormonal contraceptives."
+  ],
+  "related": [
+    "carbamazepine",
+    "phenobarbital",
+    "valproate",
+    "lamotrigine",
+    "levetiracetam"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Phenytoin",
+      "url": "https://en.wikipedia.org/wiki/Phenytoin"
+    },
+    {
+      "title": "DailyMed: phenytoin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=phenytoin"
+    }
+  ],
+  "stage": "written"
 }

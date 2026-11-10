@@ -1,36 +1,121 @@
 {
   "slug": "ethosuximide",
   "name": "Ethosuximide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PM 671"
+  ],
+  "brands": [
+    "Zarontin",
+    "Emeside"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Succinimide anticonvulsant; T-type calcium channel blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules or syrup.",
+  "targets": [
+    "CACNA1G",
+    "CACNA1H",
+    "CACNA1I (T-type calcium channels)"
+  ],
+  "origin": "synthetic",
+  "originator": "Parke-Davis",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1960,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Zarontin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Parke-Davis",
+    "note": "Developed in the 1950s among succinimide compounds screened for activity against pentylenetetrazol-induced seizures."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Narrow-spectrum first choice for childhood absence epilepsy",
+  "summary": "Ethosuximide is a succinimide anticonvulsant used specifically for absence seizures. A large 2010 trial confirmed it as the preferred first-line treatment for childhood absence epilepsy.",
+  "mechanism": [
+    "Absence seizures arise from rhythmic 3 Hz spike-and-wave oscillations in thalamocortical circuits driven by low-threshold T-type calcium currents in thalamic neurons. Ethosuximide reduces these T-type currents, interrupting the oscillation.",
+    "It has little effect on tonic-clonic or focal seizures, so it is not used where these coexist without another agent."
+  ],
+  "uses": [
+    "Absence (petit mal) seizures"
+  ],
+  "history": [
+    {
+      "year": 1958,
+      "title": "Clinical studies",
+      "detail": "Ethosuximide is evaluated as a less toxic alternative to trimethadione for absence seizures."
+    },
+    {
+      "year": 1960,
+      "title": "US approval",
+      "detail": "The FDA approves Zarontin."
+    },
+    {
+      "year": 1989,
+      "title": "Mechanism",
+      "detail": "Coulter and colleagues show that ethosuximide reduces low-threshold T-type calcium currents in thalamic neurons."
+    },
+    {
+      "year": 2010,
+      "title": "Childhood Absence Epilepsy trial",
+      "detail": "Glauser et al. (NEJM) find ethosuximide and valproate more effective than lamotrigine, with ethosuximide better tolerated cognitively than valproate."
+    },
+    {
+      "year": 2013,
+      "title": "ILAE evidence review",
+      "detail": "The International League Against Epilepsy rates ethosuximide and valproate as having the strongest evidence for initial monotherapy of childhood absence epilepsy."
+    }
+  ],
+  "pk": {
+    "half_life": "about 30 hours in children, 50–60 hours in adults",
+    "bioavailability": "about 90–100%",
+    "metabolism": "hepatic, CYP3A4",
+    "excretion": "renal, as metabolites and about 20% unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea and abdominal pain",
+      "Hiccups",
+      "Drowsiness",
+      "Headache"
+    ],
+    "serious": [
+      "Blood dyscrasias",
+      "Stevens-Johnson syndrome and DRESS",
+      "Drug-induced lupus",
+      "Psychiatric reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ethosuximide is ineffective against generalised tonic-clonic seizures, which is why valproate is preferred when absences and tonic-clonic seizures coexist."
+  ],
+  "related": [
+    "valproate",
+    "lamotrigine",
+    "phenobarbital"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ethosuximide",
+      "url": "https://en.wikipedia.org/wiki/Ethosuximide"
+    },
+    {
+      "title": "DailyMed: ethosuximide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ethosuximide"
+    },
+    {
+      "title": "NEJM: Ethosuximide, Valproic Acid, and Lamotrigine in Childhood Absence Epilepsy (2010)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa0902014"
+    }
+  ],
+  "stage": "written"
 }

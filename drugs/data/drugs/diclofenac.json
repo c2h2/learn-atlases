@@ -1,36 +1,152 @@
 {
   "slug": "diclofenac",
   "name": "Diclofenac",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GP 45840",
+    "Diclofenac sodium",
+    "Diclofenac potassium"
+  ],
+  "brands": [
+    "Voltaren",
+    "Voltarol",
+    "Cataflam",
+    "Flector",
+    "Pennsaid",
+    "Arthrotec (with misoprostol)",
+    "Zipsor"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nonsteroidal anti-inflammatory drug (phenylacetic acid derivative)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "topical",
+    "transdermal",
+    "iv",
+    "im",
+    "rectal",
+    "ophthalmic"
+  ],
+  "route_note": "Oral tablets and capsules; topical gel and solution; medicated patch; injection; suppositories; eye drops.",
+  "targets": [
+    "PTGS2",
+    "PTGS1"
+  ],
+  "origin": "synthetic",
+  "originator": "Ciba-Geigy (Alfred Sallmann, Rudolf Pfister)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1973,
+    "agency": null,
+    "country": null,
+    "brand": "Voltaren"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1973,
+    "by": "Alfred Sallmann and Rudolf Pfister, Ciba-Geigy",
+    "note": "Designed to combine structural features thought to give potent anti-inflammatory activity with good tolerability."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription; topical and low-dose oral OTC in many countries",
+  "tagline": "Widely used NSAID whose veterinary use devastated South Asian vultures",
+  "summary": "Diclofenac is a potent NSAID used orally, topically and by injection for arthritis, musculoskeletal pain and inflammation. It carries a higher cardiovascular risk than some other NSAIDs, and its veterinary use caused a catastrophic decline of vultures in South Asia.",
+  "mechanism": [
+    "Diclofenac inhibits COX-1 and COX-2, with relative selectivity for COX-2 similar to celecoxib in some assays, reducing prostaglandin synthesis.",
+    "Its COX-2 preference may contribute to its cardiovascular risk. Topical formulations deliver drug to superficial joints with much lower systemic exposure."
+  ],
+  "uses": [
+    "Osteoarthritis and rheumatoid arthritis",
+    "Ankylosing spondylitis",
+    "Acute musculoskeletal pain and sprains (topical)",
+    "Dysmenorrhoea and migraine (oral potassium salt)",
+    "Postoperative ocular inflammation (eye drops)",
+    "Actinic keratosis (3% gel)"
+  ],
+  "history": [
+    {
+      "year": 1973,
+      "title": "Introduction",
+      "detail": "Ciba-Geigy introduces diclofenac (Voltaren)."
+    },
+    {
+      "year": 1988,
+      "title": "US approval",
+      "detail": "The FDA approves Voltaren tablets."
+    },
+    {
+      "year": 2004,
+      "title": "Vulture link",
+      "detail": "Oaks et al. (Nature) show that diclofenac residues in livestock carcasses cause fatal kidney failure in Gyps vultures."
+    },
+    {
+      "year": 2006,
+      "title": "Veterinary ban",
+      "detail": "India, Pakistan and Nepal ban veterinary diclofenac."
+    },
+    {
+      "year": 2007,
+      "title": "Topical gel",
+      "detail": "Voltaren Gel 1% is approved in the US."
+    },
+    {
+      "year": 2013,
+      "title": "EU cardiovascular restrictions",
+      "detail": "The EMA contraindicates systemic diclofenac in established heart failure, ischaemic heart disease and cerebrovascular disease."
+    },
+    {
+      "year": 2020,
+      "title": "US OTC gel",
+      "detail": "Voltaren Arthritis Pain gel becomes available over the counter in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1–2 hours",
+    "bioavailability": "about 50–60% orally (first-pass)",
+    "metabolism": "hepatic, CYP2C9 and UGT2B7",
+    "excretion": "renal (about 65%) and biliary, as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Dyspepsia",
+      "Abdominal pain",
+      "Raised liver enzymes",
+      "Application-site reactions (topical)"
+    ],
+    "serious": [
+      "Myocardial infarction and stroke",
+      "Gastrointestinal bleeding",
+      "Hepatotoxicity",
+      "Acute kidney injury",
+      "Anaphylaxis",
+      "Serious skin reactions"
+    ],
+    "boxed_warning": "Cardiovascular thrombotic events (myocardial infarction, stroke) and serious gastrointestinal bleeding, ulceration and perforation; contraindicated for pain after coronary artery bypass graft surgery (US NSAID class boxed warning)."
+  },
+  "facts": [
+    "Populations of three Gyps vulture species in South Asia fell by more than 95% from the 1990s, largely because of diclofenac in livestock carcasses."
+  ],
+  "related": [
+    "ibuprofen",
+    "naproxen",
+    "celecoxib",
+    "misoprostol",
+    "paracetamol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Diclofenac",
+      "url": "https://en.wikipedia.org/wiki/Diclofenac"
+    },
+    {
+      "title": "DailyMed: diclofenac labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=diclofenac"
+    },
+    {
+      "title": "EMA: Diclofenac referral (2013)",
+      "url": "https://www.ema.europa.eu/en/medicines/human/referrals/diclofenac-containing-medicines"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,130 @@
 {
   "slug": "lamotrigine",
   "name": "Lamotrigine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BW430C"
+  ],
+  "brands": [
+    "Lamictal",
+    "Lamictal XR",
+    "Subvenite"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Phenyltriazine anticonvulsant; sodium channel blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets, chewable dispersible tablets, orally disintegrating and extended-release tablets; slow titration required.",
+  "targets": [
+    "Voltage-gated sodium channels",
+    "Voltage-gated calcium channels"
+  ],
+  "origin": "synthetic",
+  "originator": "Wellcome Foundation (Burroughs Wellcome)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1991,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": "Lamictal"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Wellcome Research Laboratories",
+    "note": "Developed from a hypothesis linking antifolate activity to anticonvulsant effects; lamotrigine turned out to be only a weak antifolate."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Broad-spectrum anticonvulsant and bipolar depression preventive with a rash warning",
+  "summary": "Lamotrigine is a broad-spectrum anticonvulsant also used to prevent mood episodes, particularly depression, in bipolar I disorder. It is well tolerated and has a comparatively favourable pregnancy profile, but must be titrated slowly to reduce the risk of serious rash.",
+  "mechanism": [
+    "Lamotrigine inhibits voltage-gated sodium channels in a use-dependent way, stabilising neuronal membranes and reducing presynaptic release of glutamate. It also has effects on high-voltage-activated calcium channels.",
+    "Its mood-stabilising mechanism is not fully understood but is thought to relate to reduced glutamatergic excitability."
+  ],
+  "uses": [
+    "Focal and generalised tonic-clonic seizures (monotherapy and adjunct)",
+    "Lennox–Gastaut syndrome (adjunct)",
+    "Maintenance treatment of bipolar I disorder"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "First launch",
+      "detail": "Lamictal is launched in the UK."
+    },
+    {
+      "year": 1994,
+      "title": "US approval",
+      "detail": "The FDA approves lamotrigine for adjunctive treatment of partial seizures."
+    },
+    {
+      "year": 2003,
+      "title": "Bipolar disorder",
+      "detail": "The FDA approves lamotrigine for maintenance of bipolar I disorder."
+    },
+    {
+      "year": 2007,
+      "title": "SANAD",
+      "detail": "The UK SANAD trial (Marson et al., Lancet 2007) finds lamotrigine the preferred first-line drug for focal epilepsy."
+    },
+    {
+      "year": 2008,
+      "title": "Generics",
+      "detail": "Generic lamotrigine becomes available in the US."
+    },
+    {
+      "year": 2021,
+      "title": "Cardiac warning",
+      "detail": "The FDA adds a warning about arrhythmia risk in patients with structural or ischaemic heart disease based on in vitro class IB antiarrhythmic activity."
+    }
+  ],
+  "pk": {
+    "half_life": "about 25–33 hours (about 13 h with enzyme inducers, about 70 h with valproate)",
+    "bioavailability": "about 98%",
+    "metabolism": "hepatic glucuronidation (UGT1A4)",
+    "excretion": "renal, as glucuronide"
+  },
+  "safety": {
+    "common": [
+      "Dizziness",
+      "Headache",
+      "Diplopia",
+      "Nausea",
+      "Benign rash",
+      "Insomnia"
+    ],
+    "serious": [
+      "Stevens-Johnson syndrome/TEN",
+      "DRESS",
+      "Haemophagocytic lymphohistiocytosis",
+      "Aseptic meningitis",
+      "Arrhythmia in structural heart disease"
+    ],
+    "boxed_warning": "Serious skin rashes, including Stevens-Johnson syndrome and toxic epidermal necrolysis; risk increases with high starting doses, rapid titration and co-administration with valproate."
+  },
+  "facts": [
+    "Oestrogen-containing contraceptives and pregnancy markedly increase lamotrigine clearance, often requiring dose adjustment.",
+    "Lamotrigine is used to prevent bipolar depression but has limited efficacy against acute mania."
+  ],
+  "related": [
+    "valproate",
+    "carbamazepine",
+    "levetiracetam",
+    "lithium",
+    "ethosuximide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lamotrigine",
+      "url": "https://en.wikipedia.org/wiki/Lamotrigine"
+    },
+    {
+      "title": "DailyMed: lamotrigine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=lamotrigine"
+    }
+  ],
+  "stage": "written"
 }

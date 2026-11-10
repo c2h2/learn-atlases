@@ -1,36 +1,133 @@
 {
   "slug": "pregabalin",
   "name": "Pregabalin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CI-1008",
+    "(S)-3-isobutyl-GABA"
+  ],
+  "brands": [
+    "Lyrica",
+    "Lyrica CR"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Gabapentinoid (alpha-2-delta calcium channel subunit ligand)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules or solution two to three times daily; once-daily controlled-release tablet in the US.",
+  "targets": [
+    "CACNA2D1",
+    "CACNA2D2"
+  ],
+  "origin": "synthetic",
+  "originator": "Richard Silverman and Ryszard Andruszkiewicz, Northwestern University; developed by Parke-Davis/Pfizer",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 2004,
+    "agency": "EMA",
+    "country": "European Union",
+    "brand": "Lyrica"
+  },
+  "discovery": {
+    "year": 1990,
+    "by": "Richard Silverman, Northwestern University",
+    "note": "Synthesised as an activator of glutamate decarboxylase; its anticonvulsant activity led to licensing to Parke-Davis."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; controlled (US Schedule V, UK Class C)",
+  "tagline": "Gabapentinoid for neuropathic pain, fibromyalgia, seizures and anxiety",
+  "summary": "Pregabalin is a more potent, more predictably absorbed successor to gabapentin. It is approved for neuropathic pain, fibromyalgia (US), focal seizures and, in Europe, generalised anxiety disorder, and is controlled because of misuse potential.",
+  "mechanism": [
+    "Pregabalin binds the alpha-2-delta-1 and -2 subunits of presynaptic voltage-gated calcium channels with higher affinity than gabapentin, reducing calcium-dependent release of glutamate, noradrenaline and substance P from hyperexcited neurons.",
+    "Unlike gabapentin, its absorption is not saturable, so plasma levels rise linearly with dose."
+  ],
+  "uses": [
+    "Neuropathic pain (diabetic neuropathy, postherpetic neuralgia, spinal cord injury)",
+    "Fibromyalgia (US)",
+    "Focal seizures (adjunct)",
+    "Generalised anxiety disorder (EU)"
+  ],
+  "history": [
+    {
+      "year": 1990,
+      "title": "Synthesis",
+      "detail": "Silverman and Andruszkiewicz synthesise pregabalin at Northwestern University."
+    },
+    {
+      "year": 2004,
+      "title": "Approval",
+      "detail": "The EU (July) and FDA (December) approve Lyrica."
+    },
+    {
+      "year": 2006,
+      "title": "Anxiety indication",
+      "detail": "The EU approves pregabalin for generalised anxiety disorder."
+    },
+    {
+      "year": 2007,
+      "title": "Fibromyalgia and royalties",
+      "detail": "Pregabalin becomes the first FDA-approved drug for fibromyalgia; Northwestern sells part of its royalty interest for $700 million."
+    },
+    {
+      "year": 2019,
+      "title": "Generics and controls",
+      "detail": "Generic pregabalin launches in the US; the UK classifies it as a Class C controlled drug."
+    },
+    {
+      "year": 2022,
+      "title": "Pregnancy data",
+      "detail": "EMA's safety committee advises avoiding pregabalin in pregnancy after a study suggests a slightly increased risk of major malformations."
+    }
+  ],
+  "pk": {
+    "half_life": "about 6 hours",
+    "bioavailability": "90% or more",
+    "metabolism": "negligible",
+    "excretion": "renal, about 98% unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dizziness",
+      "Somnolence",
+      "Weight gain",
+      "Peripheral oedema",
+      "Blurred vision",
+      "Dry mouth"
+    ],
+    "serious": [
+      "Respiratory depression with opioids",
+      "Angioedema",
+      "Misuse and dependence",
+      "Suicidal ideation",
+      "Withdrawal symptoms"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Royalties from Lyrica made pregabalin one of the most lucrative academic drug discoveries; Northwestern used funds toward a new research building named after Silverman."
+  ],
+  "related": [
+    "gabapentin",
+    "duloxetine",
+    "amitriptyline",
+    "levetiracetam"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Pregabalin",
+      "url": "https://en.wikipedia.org/wiki/Pregabalin"
+    },
+    {
+      "title": "DailyMed: pregabalin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pregabalin"
+    },
+    {
+      "title": "EMA EPAR: Lyrica",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/lyrica"
+    }
+  ],
+  "stage": "written"
 }

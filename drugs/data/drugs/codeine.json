@@ -1,36 +1,126 @@
 {
   "slug": "codeine",
   "name": "Codeine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Methylmorphine",
+    "Codeine phosphate"
+  ],
+  "brands": [
+    "Tylenol with Codeine",
+    "Co-codamol (with paracetamol)",
+    "Solpadeine"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Opioid analgesic and antitussive (morphine prodrug)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im"
+  ],
+  "route_note": "Mainly oral tablets and liquids, often combined with paracetamol or in cough preparations; injection in some countries.",
+  "targets": [
+    "OPRM1 (via morphine)"
+  ],
+  "origin": "natural",
+  "originator": "Pierre-Jean Robiquet (isolation)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "discovery": {
+    "year": 1832,
+    "by": "Pierre-Jean Robiquet, Paris",
+    "note": "Isolated from opium; most codeine used today is made by methylating morphine."
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "controlled (US Schedule II alone, III–V in combinations; OTC in low-dose combinations in some countries)",
+  "tagline": "Mild opioid prodrug whose effect depends on CYP2D6 genetics",
+  "summary": "Codeine is a naturally occurring opium alkaloid used for mild-to-moderate pain, cough and diarrhoea. It is a prodrug converted to morphine by CYP2D6, so its effect and toxicity vary widely between people, leading to restrictions in children.",
+  "mechanism": [
+    "Codeine itself has low affinity for opioid receptors. About 5–10% of a dose is O-demethylated by CYP2D6 to morphine, which produces most of its analgesia by activating mu-opioid receptors.",
+    "Poor CYP2D6 metabolisers get little analgesia, while ultrarapid metabolisers convert more codeine to morphine and are at risk of respiratory depression; this has caused deaths in children and breastfed infants. Its antitussive effect acts on the brainstem cough centre."
+  ],
+  "uses": [
+    "Mild-to-moderate pain (often with paracetamol)",
+    "Cough suppression",
+    "Diarrhoea (in some countries)"
+  ],
+  "history": [
+    {
+      "year": 1832,
+      "title": "Isolation",
+      "detail": "Pierre-Jean Robiquet isolates codeine from opium."
+    },
+    {
+      "year": 1961,
+      "title": "International control",
+      "detail": "Codeine is listed under the UN Single Convention on Narcotic Drugs, with low-dose preparations exempt."
+    },
+    {
+      "year": 2007,
+      "title": "Breastfeeding death",
+      "detail": "A newborn's death from morphine in breast milk of a mother who was a CYP2D6 ultrarapid metaboliser prompts FDA warnings."
+    },
+    {
+      "year": 2013,
+      "title": "Paediatric restrictions",
+      "detail": "The FDA adds a boxed warning about deaths after tonsillectomy in children; the EMA restricts use under 12 years."
+    },
+    {
+      "year": 2017,
+      "title": "US contraindication",
+      "detail": "The FDA contraindicates codeine for pain or cough in children under 12."
+    },
+    {
+      "year": 2018,
+      "title": "Australia upscheduling",
+      "detail": "Australia makes all codeine-containing medicines prescription-only."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3 hours",
+    "bioavailability": "about 50–90% orally",
+    "metabolism": "hepatic: CYP2D6 to morphine, CYP3A4 to norcodeine, UGT2B7 to codeine-6-glucuronide",
+    "excretion": "renal, mainly as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Constipation",
+      "Nausea",
+      "Drowsiness",
+      "Dizziness"
+    ],
+    "serious": [
+      "Respiratory depression (especially in CYP2D6 ultrarapid metabolisers)",
+      "Addiction and misuse",
+      "Fatal toxicity in children and breastfed infants",
+      "Medication-overuse headache"
+    ],
+    "boxed_warning": "Addiction, abuse and misuse; life-threatening respiratory depression; ultrarapid metabolism of codeine and death in children; interactions with CYP3A4 inhibitors and with benzodiazepines."
+  },
+  "facts": [
+    "About 1–10% of people (depending on ancestry) are CYP2D6 ultrarapid metabolisers; the proportion is particularly high in some North African and Middle Eastern populations."
+  ],
+  "related": [
+    "morphine",
+    "paracetamol",
+    "tramadol",
+    "oxycodone",
+    "loperamide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Codeine",
+      "url": "https://en.wikipedia.org/wiki/Codeine"
+    },
+    {
+      "title": "DailyMed: codeine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=codeine"
+    },
+    {
+      "title": "FDA Drug Safety Communication on codeine and tramadol in children (2017)",
+      "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-restricts-use-prescription-codeine-pain-and-cough-medicines-and"
+    }
+  ],
+  "stage": "written"
 }

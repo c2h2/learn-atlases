@@ -1,36 +1,134 @@
 {
   "slug": "memantine",
   "name": "Memantine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "D-145",
+    "1-amino-3,5-dimethyladamantane"
+  ],
+  "brands": [
+    "Namenda",
+    "Ebixa",
+    "Axura",
+    "Akatinol",
+    "Namzaric (with donepezil)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Uncompetitive NMDA receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets, oral solution or once-daily extended-release capsules.",
+  "targets": [
+    "GRIN1/GRIN2 (NMDA receptor)"
+  ],
+  "origin": "synthetic",
+  "originator": "Eli Lilly (synthesis); developed for dementia by Merz Pharma",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1989,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Akatinol"
+  },
+  "discovery": {
+    "year": 1963,
+    "by": "Eli Lilly and Company",
+    "note": "First synthesised at Lilly in the 1960s; Merz later developed it for neurological use, and its NMDA antagonism was characterised in 1989."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "NMDA receptor blocker for moderate-to-severe Alzheimer's disease",
+  "summary": "Memantine is a low-affinity, uncompetitive NMDA glutamate receptor antagonist used for moderate-to-severe Alzheimer's disease. It is often combined with a cholinesterase inhibitor and offers modest symptomatic benefit.",
+  "mechanism": [
+    "Memantine blocks the open NMDA receptor channel at the magnesium site with fast on–off kinetics. This is thought to reduce tonic, pathological glutamate activation that may contribute to neuronal dysfunction while preserving the brief, high-concentration glutamate signals needed for normal learning.",
+    "Like the related adamantane amantadine, it has some dopaminergic and 5-HT3 activity, but its clinical effect is attributed to NMDA receptor modulation."
+  ],
+  "uses": [
+    "Moderate-to-severe dementia of the Alzheimer's type"
+  ],
+  "history": [
+    {
+      "year": 1963,
+      "title": "Synthesis",
+      "detail": "Memantine is first synthesised at Eli Lilly."
+    },
+    {
+      "year": 1989,
+      "title": "German launch",
+      "detail": "Merz markets memantine in Germany (Akatinol) for dementia and other neurological conditions."
+    },
+    {
+      "year": 2002,
+      "title": "European approval",
+      "detail": "The EU authorises Ebixa (Lundbeck) and Axura (Merz) for moderately severe to severe Alzheimer's disease."
+    },
+    {
+      "year": 2003,
+      "title": "US approval",
+      "detail": "The FDA approves Namenda (Forest Laboratories)."
+    },
+    {
+      "year": 2010,
+      "title": "Extended release",
+      "detail": "Once-daily Namenda XR is approved in the US."
+    },
+    {
+      "year": 2014,
+      "title": "Namzaric",
+      "detail": "A memantine/donepezil fixed-dose capsule is approved in the US."
+    },
+    {
+      "year": 2015,
+      "title": "Generics",
+      "detail": "Generic memantine tablets launch in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 60–80 hours",
+    "bioavailability": "about 100%",
+    "metabolism": "minimal (partly hepatic, not CYP-dependent)",
+    "excretion": "renal, mostly unchanged; elimination slowed by alkaline urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dizziness",
+      "Headache",
+      "Confusion",
+      "Constipation",
+      "Somnolence"
+    ],
+    "serious": [
+      "Hallucinations",
+      "Seizures (rare)",
+      "Agitation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Memantine and the antiviral amantadine are both aminoadamantanes; memantine carries two extra methyl groups."
+  ],
+  "related": [
+    "donepezil",
+    "rivastigmine",
+    "amantadine",
+    "lecanemab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Memantine",
+      "url": "https://en.wikipedia.org/wiki/Memantine"
+    },
+    {
+      "title": "DailyMed: memantine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=memantine"
+    },
+    {
+      "title": "EMA EPAR: Ebixa",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ebixa"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,144 @@
 {
   "slug": "ibuprofen",
   "name": "Ibuprofen",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Isobutylphenylpropionic acid"
+  ],
+  "brands": [
+    "Brufen",
+    "Advil",
+    "Motrin",
+    "Nurofen",
+    "Caldolor",
+    "NeoProfen"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nonsteroidal anti-inflammatory drug (propionic acid derivative, non-selective COX inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "topical"
+  ],
+  "route_note": "Oral tablets, capsules and suspensions; topical gels; IV for pain/fever and for patent ductus arteriosus in premature infants.",
+  "targets": [
+    "PTGS1",
+    "PTGS2"
+  ],
+  "origin": "synthetic",
+  "originator": "Boots Pure Drug Company (Stewart Adams, John Nicholson)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1969,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": "Brufen"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1961,
+    "by": "Stewart Adams and John Nicholson, Boots, Nottingham",
+    "note": "Found during a search for a safer alternative to aspirin for rheumatoid arthritis; patented in 1961."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "OTC at low doses; prescription at higher doses and IV",
+  "tagline": "Common over-the-counter NSAID for pain, fever and inflammation, discovered at Boots",
+  "summary": "Ibuprofen is a non-selective NSAID discovered at Boots in the UK in the 1960s. It is one of the most widely used painkillers worldwide and is available over the counter for pain, fever and inflammation.",
+  "mechanism": [
+    "Ibuprofen reversibly inhibits cyclooxygenase-1 and -2, reducing synthesis of prostaglandins that mediate pain, fever and inflammation.",
+    "Inhibition of COX-1 in the stomach and platelets explains gastrointestinal toxicity and a transient antiplatelet effect; it can interfere with the cardioprotective effect of low-dose aspirin if taken shortly before it. It is marketed as a racemate; the R-enantiomer is partly converted to the active S-enantiomer in the body."
+  ],
+  "uses": [
+    "Mild-to-moderate pain, including dental pain, headache and dysmenorrhoea",
+    "Fever",
+    "Rheumatoid arthritis and osteoarthritis",
+    "Closure of patent ductus arteriosus in premature infants (IV ibuprofen lysine)"
+  ],
+  "history": [
+    {
+      "year": 1961,
+      "title": "Discovery",
+      "detail": "Stewart Adams and John Nicholson at Boots patent ibuprofen."
+    },
+    {
+      "year": 1969,
+      "title": "UK launch",
+      "detail": "Brufen is launched in the UK as a prescription drug for rheumatoid arthritis."
+    },
+    {
+      "year": 1974,
+      "title": "US approval",
+      "detail": "The FDA approves ibuprofen (Motrin, Upjohn)."
+    },
+    {
+      "year": 1983,
+      "title": "Over the counter",
+      "detail": "Ibuprofen becomes available without prescription in the UK, followed by the US (Advil, Nuprin) in 1984."
+    },
+    {
+      "year": 2005,
+      "title": "NSAID boxed warning",
+      "detail": "The FDA requires boxed warnings on cardiovascular and gastrointestinal risk for prescription NSAIDs."
+    },
+    {
+      "year": 2006,
+      "title": "Patent ductus arteriosus",
+      "detail": "IV ibuprofen lysine (NeoProfen) is approved for premature infants."
+    },
+    {
+      "year": 2009,
+      "title": "IV ibuprofen",
+      "detail": "Caldolor is approved in the US for pain and fever."
+    },
+    {
+      "year": 2015,
+      "title": "Stronger heart warning",
+      "detail": "The FDA strengthens warnings that NSAIDs increase the risk of heart attack and stroke."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2 hours",
+    "bioavailability": "about 80–100%",
+    "metabolism": "hepatic, CYP2C9 (and CYP2C8)",
+    "excretion": "renal, as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Dyspepsia and nausea",
+      "Abdominal pain",
+      "Headache",
+      "Dizziness"
+    ],
+    "serious": [
+      "Gastrointestinal bleeding, ulceration and perforation",
+      "Myocardial infarction and stroke",
+      "Acute kidney injury",
+      "Asthma exacerbation in aspirin-sensitive people",
+      "Serious skin reactions"
+    ],
+    "boxed_warning": "Cardiovascular thrombotic events (myocardial infarction, stroke) and serious gastrointestinal bleeding, ulceration and perforation; contraindicated for pain after coronary artery bypass graft surgery (US NSAID class boxed warning)."
+  },
+  "facts": [
+    "Stewart Adams reportedly tested one of the first doses of ibuprofen on his own hangover before an important speech.",
+    "Boots' original Nottingham laboratory has a blue plaque commemorating the discovery."
+  ],
+  "related": [
+    "naproxen",
+    "diclofenac",
+    "celecoxib",
+    "paracetamol",
+    "aspirin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ibuprofen",
+      "url": "https://en.wikipedia.org/wiki/Ibuprofen"
+    },
+    {
+      "title": "DailyMed: ibuprofen labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ibuprofen"
+    }
+  ],
+  "stage": "written"
 }

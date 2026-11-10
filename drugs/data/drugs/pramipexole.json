@@ -1,36 +1,133 @@
 {
   "slug": "pramipexole",
   "name": "Pramipexole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SND 919"
+  ],
+  "brands": [
+    "Mirapex",
+    "Mirapexin",
+    "Sifrol",
+    "Mirapex ER"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Non-ergot dopamine agonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral immediate-release tablets taken three times daily or once-daily extended-release tablets.",
+  "targets": [
+    "DRD2",
+    "DRD3",
+    "DRD4"
+  ],
+  "origin": "synthetic",
+  "originator": "Boehringer Ingelheim",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1997,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Mirapex"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Boehringer Ingelheim",
+    "note": "An aminobenzothiazole developed as a non-ergot D2-like receptor agonist with preference for the D3 receptor."
+  },
+  "generic": true,
+  "who_essential": false,
+  "rx_status": "prescription",
+  "tagline": "Non-ergot dopamine agonist for Parkinson's disease and restless legs syndrome",
+  "summary": "Pramipexole is a non-ergoline dopamine agonist that directly stimulates D2-family dopamine receptors. It is used as monotherapy in early Parkinson's disease, as an adjunct to levodopa, and at low doses for restless legs syndrome.",
+  "mechanism": [
+    "Pramipexole acts as a full agonist at D2, D3 and D4 dopamine receptors, with highest affinity for D3. By directly stimulating postsynaptic striatal receptors it bypasses the need for dopamine synthesis by degenerating nigral neurons.",
+    "Its longer half-life than levodopa provides more continuous receptor stimulation, which delays the onset of dyskinesias when used early, at the cost of more somnolence, oedema and impulse control problems."
+  ],
+  "uses": [
+    "Parkinson's disease (early monotherapy and adjunct to levodopa)",
+    "Moderate-to-severe primary restless legs syndrome (immediate-release)"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "US approval",
+      "detail": "The FDA approves pramipexole (Mirapex) for Parkinson's disease."
+    },
+    {
+      "year": 2000,
+      "title": "CALM-PD",
+      "detail": "The Parkinson Study Group reports fewer motor complications with initial pramipexole than with levodopa, but less symptomatic benefit."
+    },
+    {
+      "year": 2006,
+      "title": "Restless legs syndrome",
+      "detail": "The FDA and EMA approve pramipexole for restless legs syndrome."
+    },
+    {
+      "year": 2006,
+      "title": "Pathological gambling warnings",
+      "detail": "Labels are updated after reports of compulsive gambling, shopping and hypersexuality with dopamine agonists."
+    },
+    {
+      "year": 2010,
+      "title": "Extended release",
+      "detail": "A once-daily extended-release formulation (Mirapex ER) is approved in the US."
+    },
+    {
+      "year": 2010,
+      "title": "Generics",
+      "detail": "Generic pramipexole becomes widely available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 8 hours (about 12 hours in older people)",
+    "bioavailability": "over 90%",
+    "metabolism": "minimal (under 10%)",
+    "excretion": "renal, about 90% unchanged; dose reduced in renal impairment"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Somnolence",
+      "Dizziness",
+      "Peripheral oedema",
+      "Hallucinations",
+      "Constipation"
+    ],
+    "serious": [
+      "Falling asleep during daily activities",
+      "Impulse control disorders (gambling, hypersexuality, binge eating)",
+      "Augmentation in restless legs syndrome",
+      "Dopamine agonist withdrawal syndrome"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Impulse control disorders are reported in a substantial minority of people with Parkinson's disease taking dopamine agonists, more often than with levodopa alone.",
+    "Augmentation — earlier and more severe symptoms over time — limits long-term dopamine agonist use in restless legs syndrome."
+  ],
+  "related": [
+    "ropinirole",
+    "levodopa-carbidopa",
+    "rasagiline",
+    "entacapone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Pramipexole",
+      "url": "https://en.wikipedia.org/wiki/Pramipexole"
+    },
+    {
+      "title": "DailyMed: pramipexole labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pramipexole"
+    },
+    {
+      "title": "EMA EPAR: Mirapexin",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/mirapexin"
+    }
+  ],
+  "stage": "written"
 }

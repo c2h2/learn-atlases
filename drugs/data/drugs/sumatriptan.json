@@ -1,36 +1,131 @@
 {
   "slug": "sumatriptan",
   "name": "Sumatriptan",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GR43175"
+  ],
+  "brands": [
+    "Imitrex",
+    "Imigran",
+    "Zembrace",
+    "Onzetra Xsail",
+    "Tosymra",
+    "Treximet (with naproxen)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Triptan (serotonin 5-HT1B/1D receptor agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "sc",
+    "intranasal"
+  ],
+  "route_note": "Oral tablets, subcutaneous autoinjector, nasal spray and nasal powder; taken at the onset of an attack.",
+  "targets": [
+    "HTR1B",
+    "HTR1D"
+  ],
+  "origin": "synthetic",
+  "originator": "Glaxo (Patrick Humphrey and colleagues)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1991,
+    "agency": null,
+    "country": "Netherlands",
+    "brand": "Imigran"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Patrick Humphrey and colleagues, Glaxo, UK",
+    "note": "Designed in the 1970s–80s as a selective agonist at the 5-HT1-like receptor mediating cranial vasoconstriction."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (oral OTC in some countries, e.g. UK pharmacy medicine)",
+  "tagline": "The first triptan, which transformed acute migraine treatment",
+  "summary": "Sumatriptan, the first triptan, is a selective serotonin 5-HT1B/1D agonist that relieves acute migraine and cluster headache attacks. Its subcutaneous form is one of the fastest-acting migraine treatments.",
+  "mechanism": [
+    "Sumatriptan activates 5-HT1B receptors on dilated meningeal blood vessels, causing vasoconstriction, and 5-HT1D receptors on trigeminal nerve terminals, inhibiting release of CGRP and other inflammatory neuropeptides.",
+    "It may also inhibit transmission in the trigeminal nucleus caudalis. Vasoconstriction of coronary arteries underlies its contraindication in ischaemic heart disease."
+  ],
+  "uses": [
+    "Acute treatment of migraine with or without aura",
+    "Acute treatment of cluster headache (subcutaneous and nasal)"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "First launch",
+      "detail": "Glaxo launches sumatriptan (Imigran) in Europe, starting with the Netherlands."
+    },
+    {
+      "year": 1992,
+      "title": "US approval",
+      "detail": "The FDA approves Imitrex injection; tablets follow in 1995 and nasal spray in 1997."
+    },
+    {
+      "year": 2006,
+      "title": "UK pharmacy availability",
+      "detail": "Low-dose sumatriptan tablets become available without prescription from UK pharmacies."
+    },
+    {
+      "year": 2008,
+      "title": "Treximet and generics",
+      "detail": "A sumatriptan/naproxen combination is approved; generic sumatriptan launches in the US in 2008–2009."
+    },
+    {
+      "year": 2016,
+      "title": "New delivery devices",
+      "detail": "The FDA approves a breath-powered nasal powder (Onzetra Xsail) and a needle-based autoinjector (Zembrace)."
+    },
+    {
+      "year": 2019,
+      "title": "Tosymra",
+      "detail": "A nasal spray with a permeation enhancer is approved in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2 hours",
+    "bioavailability": "about 14% oral; about 97% subcutaneous",
+    "metabolism": "hepatic, MAO-A",
+    "excretion": "renal and faecal, mainly as indole acetic acid metabolite"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Tingling and warm sensations",
+      "Chest, throat or jaw tightness",
+      "Dizziness",
+      "Fatigue",
+      "Injection-site reactions"
+    ],
+    "serious": [
+      "Myocardial ischaemia, infarction and coronary vasospasm",
+      "Stroke",
+      "Serotonin syndrome",
+      "Medication-overuse headache"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Sumatriptan's development was based on the observation that serotonin infusions could abort migraine attacks but caused intolerable side effects."
+  ],
+  "related": [
+    "rizatriptan",
+    "rimegepant",
+    "erenumab",
+    "naproxen",
+    "topiramate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Sumatriptan",
+      "url": "https://en.wikipedia.org/wiki/Sumatriptan"
+    },
+    {
+      "title": "DailyMed: sumatriptan labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sumatriptan"
+    }
+  ],
+  "stage": "written"
 }

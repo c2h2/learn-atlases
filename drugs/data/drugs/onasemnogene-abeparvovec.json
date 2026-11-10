@@ -1,36 +1,128 @@
 {
   "slug": "onasemnogene-abeparvovec",
   "name": "Onasemnogene abeparvovec",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AVXS-101",
+    "OAV101",
+    "onasemnogene abeparvovec-xioi"
+  ],
+  "brands": [
+    "Zolgensma",
+    "Itvisma (intrathecal)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "AAV9-based gene replacement therapy",
+  "modality": "gene-therapy",
+  "routes": [
+    "iv",
+    "intrathecal"
+  ],
+  "route_note": "Single one-time intravenous infusion dosed by weight in young children; intrathecal formulation for older patients.",
+  "targets": [
+    "SMN1 (gene replacement)"
+  ],
+  "origin": "biotech",
+  "originator": "Nationwide Children's Hospital (Jerry Mendell, Brian Kaspar) and AveXis",
+  "owner": "Novartis",
+  "first_approval": {
+    "year": 2019,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Zolgensma"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Brian Kaspar and Jerry Mendell, Nationwide Children's Hospital, Columbus, Ohio",
+    "note": "Uses a self-complementary AAV9 vector able to cross the blood–brain barrier to deliver a functional SMN1 gene to motor neurons."
+  },
+  "generic": false,
+  "who_essential": false,
+  "rx_status": "prescription (specialist centres)",
+  "tagline": "One-time gene therapy for spinal muscular atrophy, once the world's costliest drug",
+  "summary": "Onasemnogene abeparvovec is a one-time gene therapy that delivers a working copy of the SMN1 gene using an adeno-associated virus serotype 9 vector. Approved in 2019 for young children with spinal muscular atrophy, its $2.1 million price made it the most expensive drug at the time.",
+  "mechanism": [
+    "The vector carries a human SMN1 transgene under a constitutive promoter. After intravenous infusion, AAV9 crosses the blood–brain barrier and transduces motor neurons and other cells, where the transgene persists as episomal DNA and produces full-length SMN protein.",
+    "Because motor neurons do not divide, expression is expected to be long-lasting. Immune responses to the vector capsid and high vector doses underlie hepatotoxicity, so corticosteroids are given around treatment."
+  ],
+  "uses": [
+    "Spinal muscular atrophy with bi-allelic SMN1 mutations in children under 2 years (IV)",
+    "Spinal muscular atrophy in patients aged 2 years and older (intrathecal, US)"
+  ],
+  "history": [
+    {
+      "year": 2017,
+      "title": "START trial",
+      "detail": "Mendell et al. (NEJM) report survival without permanent ventilation in all 15 treated infants with SMA type 1."
+    },
+    {
+      "year": 2018,
+      "title": "Novartis acquires AveXis",
+      "detail": "Novartis buys AveXis for about $8.7 billion."
+    },
+    {
+      "year": 2019,
+      "title": "FDA approval and data controversy",
+      "detail": "The FDA approves Zolgensma in May at a list price of $2.125 million; in August it discloses that AveXis manipulated some animal-testing data, though product safety was not judged to be affected."
+    },
+    {
+      "year": 2020,
+      "title": "EU conditional approval",
+      "detail": "The European Commission grants conditional marketing authorisation."
+    },
+    {
+      "year": 2022,
+      "title": "Liver failure deaths",
+      "detail": "Novartis reports two deaths from acute liver failure, prompting strengthened monitoring."
+    },
+    {
+      "year": 2025,
+      "title": "Intrathecal formulation",
+      "detail": "The FDA approves intrathecal onasemnogene abeparvovec (Itvisma) for SMA patients aged 2 years and older."
+    }
+  ],
+  "pk": {
+    "half_life": "vector DNA persists in transduced non-dividing cells; shed in stool and urine for weeks",
+    "bioavailability": "IV infusion",
+    "metabolism": "not applicable (gene therapy)",
+    "excretion": "vector shedding mainly in faeces"
+  },
+  "safety": {
+    "common": [
+      "Raised liver enzymes",
+      "Vomiting",
+      "Fever"
+    ],
+    "serious": [
+      "Acute serious liver injury and acute liver failure",
+      "Thrombotic microangiopathy",
+      "Thrombocytopenia",
+      "Myocardial injury (troponin rise)"
+    ],
+    "boxed_warning": "Serious liver injury and acute liver failure, including fatal cases; assess liver function before and after infusion."
+  },
+  "facts": [
+    "Children must test negative or low for anti-AAV9 antibodies before treatment, because pre-existing antibodies can neutralise the vector."
+  ],
+  "related": [
+    "nusinersen",
+    "risdiplam",
+    "voretigene-neparvovec",
+    "etranacogene-dezaparvovec"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Onasemnogene abeparvovec",
+      "url": "https://en.wikipedia.org/wiki/Onasemnogene_abeparvovec"
+    },
+    {
+      "title": "FDA: Zolgensma",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/zolgensma"
+    },
+    {
+      "title": "EMA EPAR: Zolgensma",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/zolgensma"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,124 @@
 {
   "slug": "selegiline",
   "name": "Selegiline",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "L-deprenyl",
+    "E-250"
+  ],
+  "brands": [
+    "Eldepryl",
+    "Zelapar",
+    "Emsam",
+    "Jumex"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Irreversible monoamine oxidase B (MAO-B) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "transdermal"
+  ],
+  "route_note": "Oral tablets/capsules and orally disintegrating tablets for Parkinson's disease; transdermal patch (Emsam) for major depressive disorder.",
+  "targets": [
+    "MAOB",
+    "MAOA (at higher doses)"
+  ],
+  "origin": "synthetic",
+  "originator": "Chinoin (Hungary), József Knoll and Zoltán Ecseri",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1989,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Eldepryl"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "József Knoll and colleagues, Semmelweis University and Chinoin, Budapest",
+    "note": "Developed in the 1960s as the phenylisopropyl compound E-250; its selective MAO-B inhibition and lack of the 'cheese effect' were later characterised."
+  },
+  "generic": true,
+  "who_essential": false,
+  "rx_status": "prescription",
+  "tagline": "First selective MAO-B inhibitor, used in Parkinson's disease and as a depression patch",
+  "summary": "Selegiline (L-deprenyl) is an irreversible inhibitor of monoamine oxidase B that slows the breakdown of dopamine in the brain. It is used in Parkinson's disease and, as a transdermal patch, for major depressive disorder.",
+  "mechanism": [
+    "At standard oral doses selegiline selectively and irreversibly inhibits MAO-B, the main enzyme degrading dopamine in the human striatum, thereby prolonging the action of endogenous and levodopa-derived dopamine.",
+    "Because it spares intestinal MAO-A at these doses, dietary tyramine reactions ('cheese effect') are much less likely than with older non-selective MAO inhibitors. Higher systemic exposure from the transdermal patch also inhibits brain MAO-A, producing an antidepressant effect.",
+    "Selegiline is metabolised to L-desmethylselegiline, L-methamphetamine and L-amphetamine, which may contribute to insomnia."
+  ],
+  "uses": [
+    "Parkinson's disease, as adjunct to levodopa (and early monotherapy in some countries)",
+    "Major depressive disorder (transdermal patch)"
+  ],
+  "history": [
+    {
+      "year": 1965,
+      "title": "E-250 described",
+      "detail": "Knoll and Ecseri report the deprenyl compound from Chinoin in Budapest."
+    },
+    {
+      "year": 1975,
+      "title": "Parkinson's disease use",
+      "detail": "Birkmayer and colleagues in Vienna report benefit of deprenyl combined with levodopa."
+    },
+    {
+      "year": 1989,
+      "title": "US approval and DATATOP",
+      "detail": "The FDA approves Eldepryl; the DATATOP trial reports that deprenyl delays need for levodopa, later attributed largely to symptomatic effect."
+    },
+    {
+      "year": 2006,
+      "title": "Emsam patch",
+      "detail": "The FDA approves transdermal selegiline (Emsam) for major depressive disorder."
+    },
+    {
+      "year": 2006,
+      "title": "Zelapar",
+      "detail": "An orally disintegrating tablet absorbed pre-gastrically is approved for Parkinson's disease."
+    }
+  ],
+  "pk": {
+    "half_life": "short plasma half-life; MAO-B inhibition persists until new enzyme is synthesised",
+    "bioavailability": "low orally (about 10%) because of extensive first-pass metabolism; higher with transdermal and orally disintegrating forms",
+    "metabolism": "hepatic (CYP2B6, CYP2C19) to desmethylselegiline, L-methamphetamine and L-amphetamine",
+    "excretion": "renal, as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Insomnia",
+      "Nausea",
+      "Dizziness",
+      "Application-site reactions (patch)",
+      "Dyskinesia when added to levodopa"
+    ],
+    "serious": [
+      "Serotonin syndrome with SSRIs, SNRIs, pethidine and other serotonergic drugs",
+      "Hypertensive crisis with tyramine at higher doses",
+      "Orthostatic hypotension"
+    ],
+    "boxed_warning": "Transdermal selegiline (Emsam): increased risk of suicidal thoughts and behaviour in children, adolescents and young adults taking antidepressants."
+  },
+  "facts": [
+    "József Knoll championed selegiline as a 'catecholaminergic activity enhancer' and argued it could prolong lifespan in rats; this has not been established in humans.",
+    "Because selegiline is metabolised to L-methamphetamine, people taking it can test positive for amphetamines on some urine drug screens."
+  ],
+  "related": [
+    "rasagiline",
+    "levodopa-carbidopa",
+    "entacapone",
+    "phenelzine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Selegiline",
+      "url": "https://en.wikipedia.org/wiki/Selegiline"
+    },
+    {
+      "title": "DailyMed: selegiline labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=selegiline"
+    }
+  ],
+  "stage": "written"
 }

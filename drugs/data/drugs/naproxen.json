@@ -1,36 +1,140 @@
 {
   "slug": "naproxen",
   "name": "Naproxen",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Naproxen sodium",
+    "(S)-6-methoxy-α-methyl-2-naphthaleneacetic acid"
+  ],
+  "brands": [
+    "Naprosyn",
+    "Aleve",
+    "Anaprox",
+    "Naprelan",
+    "Vimovo (with esomeprazole)",
+    "Treximet (with sumatriptan)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nonsteroidal anti-inflammatory drug (propionic acid derivative, non-selective COX inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "rectal"
+  ],
+  "route_note": "Oral tablets, controlled-release tablets and suspension, usually twice daily; suppositories in some countries.",
+  "targets": [
+    "PTGS1",
+    "PTGS2"
+  ],
+  "origin": "synthetic",
+  "originator": "Syntex",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1976,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Naprosyn"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Syntex, Palo Alto",
+    "note": "Developed by Syntex in the late 1960s; marketed as the single S-enantiomer."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "OTC at low doses (naproxen sodium); prescription at higher doses",
+  "tagline": "Long-acting NSAID used twice daily for arthritis and pain",
+  "summary": "Naproxen is a long-acting non-selective NSAID developed by Syntex and used for arthritis, musculoskeletal pain, dysmenorrhoea and gout. Its longer half-life allows twice-daily dosing, and some studies suggest a comparatively lower cardiovascular risk than other NSAIDs.",
+  "mechanism": [
+    "Naproxen reversibly inhibits COX-1 and COX-2, reducing prostaglandin synthesis and thereby inflammation, pain and fever.",
+    "At regular full doses its sustained COX-1 inhibition in platelets produces a more aspirin-like antiplatelet effect than shorter-acting NSAIDs, which has been suggested to explain its relatively neutral cardiovascular profile in some analyses."
+  ],
+  "uses": [
+    "Rheumatoid arthritis, osteoarthritis and ankylosing spondylitis",
+    "Acute gout",
+    "Mild-to-moderate pain and primary dysmenorrhoea",
+    "Fever (OTC)"
+  ],
+  "history": [
+    {
+      "year": 1976,
+      "title": "US approval",
+      "detail": "The FDA approves Naprosyn (Syntex)."
+    },
+    {
+      "year": 1980,
+      "title": "Naproxen sodium",
+      "detail": "Faster-absorbed naproxen sodium (Anaprox) is approved."
+    },
+    {
+      "year": 1994,
+      "title": "Over the counter",
+      "detail": "Naproxen sodium is approved for non-prescription sale in the US as Aleve."
+    },
+    {
+      "year": 2000,
+      "title": "VIGOR",
+      "detail": "In the VIGOR trial, rofecoxib causes more myocardial infarctions than naproxen, feeding debate over COX-2 inhibitors."
+    },
+    {
+      "year": 2005,
+      "title": "NSAID boxed warning",
+      "detail": "Prescription NSAIDs, including naproxen, receive FDA cardiovascular and gastrointestinal boxed warnings."
+    },
+    {
+      "year": 2010,
+      "title": "Vimovo",
+      "detail": "A fixed combination of naproxen with esomeprazole is approved to reduce gastric ulcer risk."
+    },
+    {
+      "year": 2016,
+      "title": "PRECISION",
+      "detail": "In the PRECISION trial, cardiovascular safety of naproxen is similar to that of celecoxib and ibuprofen at moderate doses."
+    }
+  ],
+  "pk": {
+    "half_life": "about 12–17 hours",
+    "bioavailability": "about 95%",
+    "metabolism": "hepatic, CYP2C9 and CYP1A2 to 6-desmethylnaproxen, and glucuronidation",
+    "excretion": "renal, as conjugates"
+  },
+  "safety": {
+    "common": [
+      "Dyspepsia and heartburn",
+      "Abdominal pain",
+      "Headache",
+      "Drowsiness",
+      "Oedema"
+    ],
+    "serious": [
+      "Gastrointestinal bleeding and ulceration",
+      "Myocardial infarction and stroke",
+      "Acute kidney injury",
+      "Pseudoporphyria (photosensitive skin blistering)",
+      "Serious skin reactions"
+    ],
+    "boxed_warning": "Cardiovascular thrombotic events (myocardial infarction, stroke) and serious gastrointestinal bleeding, ulceration and perforation; contraindicated for pain after coronary artery bypass graft surgery (US NSAID class boxed warning)."
+  },
+  "facts": [
+    "Naproxen is marketed as a single (S)-enantiomer, unlike ibuprofen, which is sold as a racemic mixture."
+  ],
+  "related": [
+    "ibuprofen",
+    "diclofenac",
+    "celecoxib",
+    "sumatriptan",
+    "esomeprazole",
+    "colchicine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Naproxen",
+      "url": "https://en.wikipedia.org/wiki/Naproxen"
+    },
+    {
+      "title": "DailyMed: naproxen labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=naproxen"
+    }
+  ],
+  "stage": "written"
 }

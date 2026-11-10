@@ -1,36 +1,157 @@
 {
   "slug": "buprenorphine",
   "name": "Buprenorphine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "RX6029M",
+    "CL-112302"
+  ],
+  "brands": [
+    "Subutex",
+    "Suboxone (with naloxone)",
+    "Sublocade",
+    "Brixadi",
+    "Butrans",
+    "Belbuca",
+    "Temgesic",
+    "Buvidal"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Opioid partial agonist (mu partial agonist, kappa antagonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "sublingual",
+    "transdermal",
+    "sc",
+    "iv",
+    "im",
+    "other"
+  ],
+  "route_note": "Sublingual tablets and films (alone or with naloxone) for opioid use disorder; weekly/monthly subcutaneous depots; transdermal patches and buccal film for pain; injection; formerly an implant.",
+  "targets": [
+    "OPRM1 (partial agonist)",
+    "OPRK1 (antagonist)",
+    "OPRD1",
+    "OPRL1"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Reckitt & Colman (Kenneth Bentley, John Lewis)",
+  "owner": "generic (many); Indivior (Suboxone, Sublocade)",
+  "first_approval": {
+    "year": 1978,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": "Temgesic"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1966,
+    "by": "John Lewis and colleagues, Reckitt & Colman, Hull",
+    "note": "A thebaine-derived oripavine developed in a search for a potent analgesic with low abuse potential."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "controlled (US Schedule III; UK Class C, Schedule 3)",
+  "tagline": "Partial opioid agonist central to treatment of opioid use disorder",
+  "summary": "Buprenorphine is a semi-synthetic partial mu-opioid agonist used for opioid use disorder and for pain. Its ceiling effect on respiratory depression and long receptor binding make it safer than full agonists, and it is a WHO essential medicine for opioid dependence.",
+  "mechanism": [
+    "Buprenorphine binds mu-opioid receptors with very high affinity and slow dissociation but only partial intrinsic activity. It suppresses withdrawal and craving while producing a ceiling on euphoria and respiratory depression when used alone.",
+    "Because it displaces full agonists, it can precipitate withdrawal in people physically dependent on other opioids if started too early. It is also a kappa-opioid antagonist. Naloxone is added to sublingual products to deter injection, as naloxone is poorly absorbed sublingually but active if injected."
+  ],
+  "uses": [
+    "Opioid use disorder (maintenance and withdrawal management)",
+    "Moderate-to-severe chronic pain (transdermal and buccal)",
+    "Acute pain (injection, in some countries)"
+  ],
+  "history": [
+    {
+      "year": 1966,
+      "title": "Synthesis",
+      "detail": "Reckitt & Colman chemists synthesise buprenorphine from thebaine."
+    },
+    {
+      "year": 1978,
+      "title": "Analgesic launch",
+      "detail": "Temgesic injection is launched in the UK."
+    },
+    {
+      "year": 1996,
+      "title": "France",
+      "detail": "France allows general practitioners to prescribe high-dose buprenorphine (Subutex) for opioid dependence, contributing to falling overdose deaths."
+    },
+    {
+      "year": 2002,
+      "title": "US approval for addiction",
+      "detail": "The FDA approves Subutex and Suboxone; the 2000 DATA Act allows certified physicians to prescribe them in office settings."
+    },
+    {
+      "year": 2010,
+      "title": "Transdermal patch",
+      "detail": "Butrans is approved in the US for chronic pain."
+    },
+    {
+      "year": 2017,
+      "title": "Monthly depot",
+      "detail": "The FDA approves Sublocade, an extended-release subcutaneous injection."
+    },
+    {
+      "year": 2019,
+      "title": "Indivior settlement",
+      "detail": "Indivior and its former parent Reckitt Benckiser pay large settlements over Suboxone marketing; Indivior pleads guilty in 2020."
+    },
+    {
+      "year": 2023,
+      "title": "X-waiver eliminated",
+      "detail": "US law removes the special DEA waiver required to prescribe buprenorphine for opioid use disorder; Brixadi weekly and monthly depots are approved."
+    }
+  ],
+  "pk": {
+    "half_life": "about 24–42 hours (sublingual)",
+    "bioavailability": "about 30% sublingual; low orally (first-pass)",
+    "metabolism": "hepatic, CYP3A4 to norbuprenorphine and glucuronidation",
+    "excretion": "mainly faecal, some renal"
+  },
+  "safety": {
+    "common": [
+      "Constipation",
+      "Headache",
+      "Nausea",
+      "Sweating",
+      "Insomnia",
+      "Oral hypoesthesia (sublingual)"
+    ],
+    "serious": [
+      "Respiratory depression, especially with benzodiazepines or alcohol",
+      "Precipitated opioid withdrawal",
+      "Hepatitis",
+      "Dental problems with transmucosal forms",
+      "Neonatal opioid withdrawal syndrome"
+    ],
+    "boxed_warning": "Sublocade/Brixadi: serious harm or death if injected intravenously (risk of occlusion and thromboembolic events), so they are only available through restricted programmes. Pain products carry the opioid class boxed warning."
+  },
+  "facts": [
+    "Buprenorphine for opioid use disorder is on the WHO Model List of Essential Medicines alongside methadone.",
+    "Buprenorphine can be prescribed in office-based settings in the US, unlike methadone for addiction, which must be dispensed through certified opioid treatment programmes."
+  ],
+  "related": [
+    "methadone",
+    "naloxone",
+    "naltrexone",
+    "morphine",
+    "fentanyl"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Buprenorphine",
+      "url": "https://en.wikipedia.org/wiki/Buprenorphine"
+    },
+    {
+      "title": "DailyMed: buprenorphine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=buprenorphine"
+    },
+    {
+      "title": "SAMHSA: Buprenorphine",
+      "url": "https://www.samhsa.gov/substance-use/treatment/options/buprenorphine"
+    }
+  ],
+  "stage": "written"
 }

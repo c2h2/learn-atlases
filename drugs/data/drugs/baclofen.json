@@ -1,36 +1,136 @@
 {
   "slug": "baclofen",
   "name": "Baclofen",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Ba-34647",
+    "beta-(4-chlorophenyl)-GABA"
+  ],
+  "brands": [
+    "Lioresal",
+    "Lioresal Intrathecal",
+    "Gablofen",
+    "Ozobax",
+    "Lyvispah",
+    "Fleqsuvy"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "GABA-B receptor agonist (centrally acting muscle relaxant)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "intrathecal"
+  ],
+  "route_note": "Oral tablets, solution and granules several times daily; continuous intrathecal infusion via implanted pump for severe spasticity.",
+  "targets": [
+    "GABBR1",
+    "GABBR2"
+  ],
+  "origin": "synthetic",
+  "originator": "Ciba (Heinrich Keberle)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1977,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Lioresal"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1962,
+    "by": "Heinrich Keberle, Ciba, Basel",
+    "note": "Synthesised as a lipophilic GABA analogue intended for epilepsy; it proved ineffective for seizures but reduced spasticity."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "GABA-B agonist muscle relaxant for spasticity, also given by intrathecal pump",
+  "summary": "Baclofen is a GABA-B receptor agonist that reduces spasticity from multiple sclerosis, spinal cord injury and cerebral palsy. Intrathecal delivery allows much lower doses for severe cases, and it is used in some countries for alcohol use disorder.",
+  "mechanism": [
+    "Baclofen activates GABA-B receptors, G-protein-coupled receptors that open potassium channels and inhibit calcium channels. In the spinal cord this hyperpolarises neurons and reduces release of excitatory neurotransmitters from primary afferents, inhibiting mono- and polysynaptic reflexes.",
+    "The result is reduced muscle tone and spasms without direct action on muscle. Central GABA-B effects also cause sedation and may reduce alcohol craving."
+  ],
+  "uses": [
+    "Spasticity from multiple sclerosis and spinal cord injury or disease",
+    "Severe spasticity of cerebral or spinal origin (intrathecal)",
+    "Alcohol use disorder (France and some other countries)"
+  ],
+  "history": [
+    {
+      "year": 1962,
+      "title": "Synthesis",
+      "detail": "Heinrich Keberle synthesises baclofen at Ciba."
+    },
+    {
+      "year": 1977,
+      "title": "US approval",
+      "detail": "The FDA approves oral Lioresal for spasticity."
+    },
+    {
+      "year": 1984,
+      "title": "Intrathecal baclofen",
+      "detail": "Richard Penn and colleagues report intrathecal baclofen for severe spinal spasticity."
+    },
+    {
+      "year": 1992,
+      "title": "Intrathecal approval",
+      "detail": "The FDA approves Lioresal Intrathecal for use with implantable pumps."
+    },
+    {
+      "year": 2008,
+      "title": "Alcohol dependence memoir",
+      "detail": "French cardiologist Olivier Ameisen's book on treating his own alcoholism with high-dose baclofen spurs interest."
+    },
+    {
+      "year": 2018,
+      "title": "Approval in France",
+      "detail": "France authorises Baclocur for alcohol dependence after a temporary use recommendation from 2014."
+    },
+    {
+      "year": 2019,
+      "title": "New oral forms",
+      "detail": "Ozobax oral solution is approved in the US, followed by granules and suspension in 2021–2022."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–6 hours",
+    "bioavailability": "well absorbed orally",
+    "metabolism": "minimal (about 15% hepatic)",
+    "excretion": "renal, about 70–80% unchanged; accumulates in renal impairment"
+  },
+  "safety": {
+    "common": [
+      "Drowsiness",
+      "Dizziness",
+      "Weakness",
+      "Nausea",
+      "Confusion"
+    ],
+    "serious": [
+      "Withdrawal syndrome (hallucinations, seizures, hyperthermia) on abrupt cessation",
+      "Encephalopathy in renal impairment",
+      "Respiratory depression in overdose",
+      "Pump or catheter failure (intrathecal)"
+    ],
+    "boxed_warning": "Intrathecal baclofen: abrupt discontinuation can cause high fever, altered mental status, exaggerated rebound spasticity and muscle rigidity, progressing to rhabdomyolysis, multi-organ failure and death."
+  },
+  "facts": [
+    "Baclofen differs from GABA only by a 4-chlorophenyl group, which lets it cross the blood–brain barrier."
+  ],
+  "related": [
+    "botulinum-toxin-a",
+    "gabapentin",
+    "diazepam",
+    "riluzole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Baclofen",
+      "url": "https://en.wikipedia.org/wiki/Baclofen"
+    },
+    {
+      "title": "DailyMed: baclofen labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=baclofen"
+    }
+  ],
+  "stage": "written"
 }

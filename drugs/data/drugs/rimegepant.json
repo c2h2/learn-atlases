@@ -1,36 +1,119 @@
 {
   "slug": "rimegepant",
   "name": "Rimegepant",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BHV-3000",
+    "BMS-927711"
+  ],
+  "brands": [
+    "Nurtec ODT",
+    "Vydura"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Gepant (small-molecule CGRP receptor antagonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Orally disintegrating tablet placed on or under the tongue, as needed for attacks or every other day for prevention.",
+  "targets": [
+    "CALCRL/RAMP1 (CGRP receptor)"
+  ],
+  "origin": "synthetic",
+  "originator": "Bristol-Myers Squibb; developed by Biohaven Pharmaceuticals",
+  "owner": "Pfizer",
+  "first_approval": {
+    "year": 2020,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Nurtec ODT"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Bristol-Myers Squibb",
+    "note": "Discovered at BMS as BMS-927711 and licensed to Biohaven in 2016 for phase 3 development."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Oral CGRP receptor antagonist that both treats and prevents migraine",
+  "summary": "Rimegepant is an oral gepant that blocks the CGRP receptor. It was the first medicine approved in the US for both the acute treatment and the prevention of migraine, and does not constrict blood vessels like triptans.",
+  "mechanism": [
+    "Rimegepant competitively blocks the CGRP receptor, preventing CGRP released from trigeminal afferents from causing vasodilation, neurogenic inflammation and pain sensitisation.",
+    "Because it lacks the vasoconstrictor 5-HT1B activity of triptans, it is an option for people in whom triptans are ineffective or contraindicated; earlier gepants such as telcagepant were abandoned because of liver toxicity."
+  ],
+  "uses": [
+    "Acute treatment of migraine with or without aura",
+    "Preventive treatment of episodic migraine"
+  ],
+  "history": [
+    {
+      "year": 2011,
+      "title": "Telcagepant halted",
+      "detail": "Merck discontinues the first oral gepant, telcagepant, after liver enzyme elevations."
+    },
+    {
+      "year": 2016,
+      "title": "Licensing",
+      "detail": "Biohaven licenses rimegepant from Bristol-Myers Squibb."
+    },
+    {
+      "year": 2020,
+      "title": "Acute treatment approval",
+      "detail": "The FDA approves Nurtec ODT for acute migraine in February."
+    },
+    {
+      "year": 2021,
+      "title": "Prevention approval",
+      "detail": "In May the FDA approves rimegepant for episodic migraine prevention, the first drug approved for both uses."
+    },
+    {
+      "year": 2022,
+      "title": "EU approval and Pfizer",
+      "detail": "The EU authorises Vydura; Pfizer completes its acquisition of Biohaven's CGRP business for about $11.6 billion."
+    }
+  ],
+  "pk": {
+    "half_life": "about 11 hours",
+    "bioavailability": "about 64%",
+    "metabolism": "hepatic, mainly CYP3A4 (avoid strong CYP3A4 inhibitors/inducers)",
+    "excretion": "faecal (about 78%) and renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Abdominal pain and dyspepsia"
+    ],
+    "serious": [
+      "Hypersensitivity reactions including dyspnoea and rash (may be delayed)",
+      "Hypertension",
+      "Raynaud's phenomenon"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Rimegepant does not appear to cause medication-overuse headache in clinical studies, unlike frequent triptan or analgesic use."
+  ],
+  "related": [
+    "erenumab",
+    "sumatriptan",
+    "rizatriptan",
+    "naproxen"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Rimegepant",
+      "url": "https://en.wikipedia.org/wiki/Rimegepant"
+    },
+    {
+      "title": "DailyMed: rimegepant labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=rimegepant"
+    },
+    {
+      "title": "EMA EPAR: Vydura",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/vydura"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,129 @@
 {
   "slug": "donepezil",
   "name": "Donepezil",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "E2020"
+  ],
+  "brands": [
+    "Aricept",
+    "Adlarity",
+    "Namzaric (with memantine)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Reversible acetylcholinesterase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "transdermal"
+  ],
+  "route_note": "Once-daily oral tablet or orally disintegrating tablet; weekly transdermal patch in the US.",
+  "targets": [
+    "ACHE"
+  ],
+  "origin": "synthetic",
+  "originator": "Eisai (Hachiro Sugimoto and colleagues)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Aricept"
+  },
+  "discovery": {
+    "year": 1983,
+    "by": "Hachiro Sugimoto, Eisai, Tsukuba",
+    "note": "A piperidine-based acetylcholinesterase inhibitor discovered by Eisai after a screening programme begun in 1983."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The most widely used cholinesterase inhibitor for Alzheimer's disease",
+  "summary": "Donepezil is a once-daily acetylcholinesterase inhibitor that modestly improves cognition and function in Alzheimer's disease. Discovered by Eisai and co-marketed with Pfizer as Aricept, it became the best-selling dementia drug before generics arrived.",
+  "mechanism": [
+    "Alzheimer's disease involves early loss of basal forebrain cholinergic neurons. Donepezil reversibly and selectively inhibits acetylcholinesterase, the enzyme that hydrolyses acetylcholine at synapses, increasing cholinergic transmission in remaining circuits.",
+    "Its effect is symptomatic: it does not alter amyloid or tau pathology, and benefits on cognitive scales are modest and vary between individuals."
+  ],
+  "uses": [
+    "Mild, moderate and severe dementia of the Alzheimer's type"
+  ],
+  "history": [
+    {
+      "year": 1983,
+      "title": "Research begins",
+      "detail": "Eisai starts the programme that leads to E2020 (donepezil)."
+    },
+    {
+      "year": 1996,
+      "title": "US approval",
+      "detail": "The FDA approves Aricept for mild-to-moderate Alzheimer's disease, marketed by Eisai and Pfizer."
+    },
+    {
+      "year": 1999,
+      "title": "Japan approval",
+      "detail": "Donepezil becomes the first Alzheimer's drug approved in Japan."
+    },
+    {
+      "year": 2006,
+      "title": "Severe disease",
+      "detail": "The FDA extends approval to severe Alzheimer's disease."
+    },
+    {
+      "year": 2010,
+      "title": "23 mg tablet and generics",
+      "detail": "A higher-dose 23 mg tablet is approved and US generics of the standard strengths launch."
+    },
+    {
+      "year": 2014,
+      "title": "Namzaric",
+      "detail": "A fixed-dose combination of memantine extended-release and donepezil is approved in the US."
+    },
+    {
+      "year": 2022,
+      "title": "Transdermal patch",
+      "detail": "The FDA approves a weekly donepezil patch (Adlarity)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 70 hours",
+    "bioavailability": "about 100%",
+    "metabolism": "hepatic, CYP2D6 and CYP3A4",
+    "excretion": "renal (unchanged and metabolites) and faecal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Diarrhoea",
+      "Insomnia and vivid dreams",
+      "Muscle cramps",
+      "Anorexia and weight loss"
+    ],
+    "serious": [
+      "Bradycardia and heart block",
+      "Syncope",
+      "Gastrointestinal bleeding",
+      "Seizures"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Donepezil's discoverer Hachiro Sugimoto has said the research was motivated in part by his mother's dementia."
+  ],
+  "related": [
+    "rivastigmine",
+    "memantine",
+    "lecanemab",
+    "donanemab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Donepezil",
+      "url": "https://en.wikipedia.org/wiki/Donepezil"
+    },
+    {
+      "title": "DailyMed: donepezil labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=donepezil"
+    }
+  ],
+  "stage": "written"
 }

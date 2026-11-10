@@ -1,36 +1,150 @@
 {
   "slug": "valproate",
-  "name": "Valproate",
-  "aliases": [],
-  "brands": [],
+  "name": "Valproate (valproic acid)",
+  "aliases": [
+    "Valproic acid",
+    "Sodium valproate",
+    "Divalproex sodium",
+    "Semisodium valproate"
+  ],
+  "brands": [
+    "Depakote",
+    "Depakene",
+    "Epilim",
+    "Depakine",
+    "Depacon"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Branched short-chain fatty acid anticonvulsant and mood stabiliser",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral tablets (including delayed and extended release), capsules, sprinkles and syrup; IV formulation when oral therapy is not possible.",
+  "targets": [
+    "Voltage-gated sodium channels",
+    "T-type calcium channels",
+    "ABAT (GABA transaminase)",
+    "Histone deacetylases"
+  ],
+  "origin": "synthetic",
+  "originator": "Laboratoires Berthier/Labaz (France); compound first synthesised by Beverly Burton",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1967,
+    "agency": null,
+    "country": "France",
+    "brand": "Dépakine"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1962,
+    "by": "Pierre Eymard and colleagues, Lyon",
+    "note": "Anticonvulsant activity found by chance when valproic acid, used as a solvent for test compounds, proved active itself; it had been synthesised in 1882."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (pregnancy prevention programme in many countries)",
+  "tagline": "Broad-spectrum anticonvulsant whose fetal risks reshaped prescribing rules",
+  "summary": "Valproate is a broad-spectrum anticonvulsant effective across generalised and focal epilepsies, and is also used for bipolar mania and migraine prophylaxis. It is one of the most teratogenic common medicines, leading to strict pregnancy prevention requirements.",
+  "mechanism": [
+    "Valproate's mechanism is multimodal: it blocks voltage-gated sodium channels and T-type calcium currents, and increases brain GABA by inhibiting GABA transaminase and succinic semialdehyde dehydrogenase.",
+    "It also inhibits histone deacetylases, which may relate to its mood-stabilising and teratogenic effects."
+  ],
+  "uses": [
+    "Generalised (absence, myoclonic, tonic-clonic) and focal seizures",
+    "Acute mania and bipolar disorder",
+    "Migraine prophylaxis"
+  ],
+  "history": [
+    {
+      "year": 1882,
+      "title": "Synthesis",
+      "detail": "Beverly Burton synthesises valproic acid as an analogue of valeric acid."
+    },
+    {
+      "year": 1962,
+      "title": "Chance discovery",
+      "detail": "Pierre Eymard's group in Lyon finds anticonvulsant activity in the solvent itself."
+    },
+    {
+      "year": 1967,
+      "title": "French launch",
+      "detail": "Sodium valproate is marketed in France."
+    },
+    {
+      "year": 1978,
+      "title": "US approval",
+      "detail": "The FDA approves valproic acid (Depakene, Abbott)."
+    },
+    {
+      "year": 1995,
+      "title": "Bipolar mania",
+      "detail": "Divalproex (Depakote) is approved for acute mania; migraine prophylaxis follows in 1996."
+    },
+    {
+      "year": 2014,
+      "title": "EU restrictions",
+      "detail": "The EMA restricts use in girls and women because of malformations and developmental disorders."
+    },
+    {
+      "year": 2018,
+      "title": "Pregnancy prevention programme",
+      "detail": "The EMA bans use in pregnancy for some indications and requires a pregnancy prevention programme."
+    },
+    {
+      "year": 2024,
+      "title": "Male patients",
+      "detail": "The EMA and UK MHRA introduce precautions for men after a study suggested a possible risk to children of fathers taking valproate; the UK requires two specialists to approve new patients under 55."
+    }
+  ],
+  "pk": {
+    "half_life": "about 9–16 hours",
+    "bioavailability": "close to 100%",
+    "metabolism": "hepatic, glucuronidation and mitochondrial beta-oxidation; inhibits several enzymes",
+    "excretion": "renal, as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Tremor",
+      "Weight gain",
+      "Hair loss",
+      "Thrombocytopenia"
+    ],
+    "serious": [
+      "Hepatotoxicity (higher risk under age 2 and with POLG mutations)",
+      "Pancreatitis",
+      "Major congenital malformations and neurodevelopmental disorders after fetal exposure",
+      "Hyperammonaemic encephalopathy"
+    ],
+    "boxed_warning": "Hepatotoxicity, including fatalities; fetal risk (neural tube defects, other malformations and decreased IQ); pancreatitis."
+  },
+  "facts": [
+    "Children exposed to valproate in the womb have around a 10% risk of major malformations and up to 30–40% risk of developmental disorders, according to EMA reviews.",
+    "Valproate inhibits lamotrigine glucuronidation, roughly doubling lamotrigine levels."
+  ],
+  "related": [
+    "lamotrigine",
+    "carbamazepine",
+    "ethosuximide",
+    "lithium",
+    "topiramate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Valproate",
+      "url": "https://en.wikipedia.org/wiki/Valproate"
+    },
+    {
+      "title": "DailyMed: divalproex labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=divalproex"
+    },
+    {
+      "title": "EMA: Valproate referral (2018)",
+      "url": "https://www.ema.europa.eu/en/medicines/human/referrals/valproate-related-substances-0"
+    }
+  ],
+  "stage": "written"
 }

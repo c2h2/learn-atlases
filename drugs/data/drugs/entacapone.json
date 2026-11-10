@@ -1,36 +1,121 @@
 {
   "slug": "entacapone",
   "name": "Entacapone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "OR-611"
+  ],
+  "brands": [
+    "Comtan",
+    "Comtess",
+    "Stalevo (with levodopa/carbidopa)"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Peripheral catechol-O-methyltransferase (COMT) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablet taken with each levodopa dose, or as a fixed triple combination with levodopa/carbidopa.",
+  "targets": [
+    "COMT"
+  ],
+  "origin": "synthetic",
+  "originator": "Orion Pharma (Finland)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1998,
+    "agency": "EMA",
+    "country": "European Union",
+    "brand": "Comtess/Comtan"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Orion Corporation, Espoo",
+    "note": "A nitrocatechol designed to inhibit peripheral COMT and so extend the effect of levodopa."
+  },
+  "generic": true,
+  "who_essential": false,
+  "rx_status": "prescription",
+  "tagline": "COMT inhibitor that extends each levodopa dose in Parkinson's disease",
+  "summary": "Entacapone is a reversible, mainly peripheral COMT inhibitor taken with levodopa to reduce end-of-dose 'wearing off' in Parkinson's disease. It was developed by Orion Pharma and is also part of the triple combination Stalevo.",
+  "mechanism": [
+    "When decarboxylation is blocked by carbidopa, COMT becomes the main peripheral route of levodopa breakdown, forming 3-O-methyldopa. Entacapone inhibits this enzyme in the gut and blood, prolonging the plasma half-life of levodopa and increasing the amount reaching the brain.",
+    "The result is more sustained dopamine levels and longer 'on' time between doses; because more levodopa is available, dyskinesia can increase and levodopa doses are often reduced."
+  ],
+  "uses": [
+    "Adjunct to levodopa/DDC inhibitor in Parkinson's disease with end-of-dose motor fluctuations"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "Tolcapone",
+      "detail": "The first COMT inhibitor, tolcapone, is launched; it is later restricted because of fatal hepatotoxicity."
+    },
+    {
+      "year": 1998,
+      "title": "European approval",
+      "detail": "Entacapone (Comtess/Comtan) is authorised in the EU."
+    },
+    {
+      "year": 1999,
+      "title": "US approval",
+      "detail": "The FDA approves Comtan, marketed by Novartis under licence from Orion."
+    },
+    {
+      "year": 2003,
+      "title": "Stalevo",
+      "detail": "The levodopa/carbidopa/entacapone combination Stalevo is approved in the EU and US."
+    },
+    {
+      "year": 2016,
+      "title": "Opicapone",
+      "detail": "The longer-acting COMT inhibitor opicapone is approved in the EU, offering once-daily dosing."
+    }
+  ],
+  "pk": {
+    "half_life": "about 0.4–0.7 hours (initial phase)",
+    "bioavailability": "about 35%",
+    "metabolism": "hepatic glucuronidation after isomerisation",
+    "excretion": "mainly faecal (about 90%), remainder renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dyskinesia",
+      "Nausea",
+      "Diarrhoea",
+      "Harmless orange-brown urine discolouration"
+    ],
+    "serious": [
+      "Hallucinations",
+      "Orthostatic hypotension",
+      "Rhabdomyolysis (rare)",
+      "Neuroleptic malignant-like syndrome on abrupt withdrawal"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Unlike tolcapone, entacapone has not been associated with significant liver toxicity and does not require liver monitoring."
+  ],
+  "related": [
+    "levodopa-carbidopa",
+    "rasagiline",
+    "pramipexole",
+    "ropinirole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Entacapone",
+      "url": "https://en.wikipedia.org/wiki/Entacapone"
+    },
+    {
+      "title": "DailyMed: entacapone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=entacapone"
+    },
+    {
+      "title": "EMA EPAR: Comtan",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/comtan"
+    }
+  ],
+  "stage": "written"
 }

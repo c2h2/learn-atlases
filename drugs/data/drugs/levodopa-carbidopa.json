@@ -1,36 +1,157 @@
 {
   "slug": "levodopa-carbidopa",
-  "name": "Levodopa carbidopa",
-  "aliases": [],
-  "brands": [],
+  "name": "Levodopa/carbidopa",
+  "aliases": [
+    "L-DOPA/carbidopa",
+    "Co-careldopa (BAN)",
+    "Carbidopa-levodopa"
+  ],
+  "brands": [
+    "Sinemet",
+    "Rytary",
+    "Duodopa",
+    "Duopa",
+    "Dhivy"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Dopamine precursor with peripheral aromatic L-amino acid decarboxylase (DDC) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "other",
+    "sc"
+  ],
+  "route_note": "Oral immediate-release, controlled-release and extended-release tablets/capsules; levodopa/carbidopa intestinal gel by PEG-J tube; foslevodopa/foscarbidopa prodrugs by continuous subcutaneous infusion.",
+  "targets": [
+    "DDC (carbidopa inhibits)",
+    "Dopamine receptors DRD1–DRD5 (via dopamine formed from levodopa)"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck & Co. (Merck Sharp & Dohme) for the combination; levodopa developed by Roche and others",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1975,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Sinemet"
+  },
+  "discovery": {
+    "year": 1967,
+    "by": "George Cotzias and colleagues",
+    "note": "Showed that gradually escalated high-dose oral levodopa produced dramatic benefit in Parkinson's disease; carbidopa was added to block peripheral conversion to dopamine."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The gold-standard dopamine replacement therapy for Parkinson's disease",
+  "summary": "Levodopa/carbidopa combines the dopamine precursor levodopa with carbidopa, which blocks its breakdown outside the brain. More than half a century after its introduction it remains the most effective symptomatic treatment for Parkinson's disease.",
+  "mechanism": [
+    "Dopamine itself does not cross the blood–brain barrier, but its amino-acid precursor levodopa is carried into the brain by the large neutral amino acid transporter. There, surviving nigrostriatal neurons and other cells decarboxylate it to dopamine, replenishing striatal dopamine lost in Parkinson's disease.",
+    "Carbidopa inhibits aromatic L-amino acid decarboxylase but does not enter the brain. It therefore prevents conversion of levodopa to dopamine in the periphery, reducing nausea and hypotension and allowing roughly a four-fold lower levodopa dose.",
+    "As the disease progresses and buffering capacity of dopaminergic terminals is lost, the short plasma half-life of levodopa leads to motor fluctuations ('wearing off') and dyskinesias, which drove development of extended-release and continuous-infusion formulations."
+  ],
+  "uses": [
+    "Parkinson's disease",
+    "Parkinsonism (post-encephalitic, and some other parkinsonian syndromes)",
+    "Dopa-responsive dystonia (off-label in some jurisdictions)"
+  ],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Dopamine in the brain",
+      "detail": "Arvid Carlsson shows that levodopa reverses reserpine-induced akinesia in animals, establishing dopamine as a neurotransmitter; he shared the 2000 Nobel Prize."
+    },
+    {
+      "year": 1960,
+      "title": "Striatal dopamine loss",
+      "detail": "Ehringer and Hornykiewicz report severe dopamine depletion in the striatum of people with Parkinson's disease."
+    },
+    {
+      "year": 1961,
+      "title": "First human trials",
+      "detail": "Birkmayer and Hornykiewicz in Vienna report short-lived benefit from intravenous levodopa."
+    },
+    {
+      "year": 1967,
+      "title": "High-dose oral levodopa",
+      "detail": "George Cotzias publishes results of escalating oral levodopa in the New England Journal of Medicine."
+    },
+    {
+      "year": 1970,
+      "title": "Levodopa approved",
+      "detail": "The FDA approves levodopa alone for Parkinson's disease."
+    },
+    {
+      "year": 1975,
+      "title": "Sinemet",
+      "detail": "Merck's levodopa/carbidopa combination Sinemet is approved in the US."
+    },
+    {
+      "year": 2004,
+      "title": "Intestinal gel",
+      "detail": "Levodopa/carbidopa intestinal gel (Duodopa) is approved in Sweden for advanced Parkinson's disease, later across Europe."
+    },
+    {
+      "year": 2015,
+      "title": "Duopa and Rytary",
+      "detail": "The FDA approves the enteral suspension Duopa and the extended-release capsule Rytary."
+    },
+    {
+      "year": 2024,
+      "title": "Subcutaneous infusion",
+      "detail": "The FDA approves foscarbidopa/foslevodopa (Vyalev, AbbVie) for continuous 24-hour subcutaneous infusion in advanced Parkinson's disease."
+    }
+  ],
+  "pk": {
+    "half_life": "levodopa about 1.5 hours with carbidopa",
+    "bioavailability": "levodopa absorbed in the proximal small intestine; competes with dietary protein for transport",
+    "metabolism": "levodopa decarboxylated (to dopamine) and O-methylated by COMT; carbidopa largely unmetabolised",
+    "excretion": "renal, mainly as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Orthostatic hypotension",
+      "Dyskinesias",
+      "Somnolence",
+      "Hallucinations"
+    ],
+    "serious": [
+      "Sudden sleep onset",
+      "Impulse control disorders",
+      "Psychosis",
+      "Neuroleptic malignant-like syndrome on abrupt withdrawal",
+      "Melanoma risk warning (association with Parkinson's disease)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Oliver Sacks's book 'Awakenings' (1973) describes the effect of levodopa in survivors of encephalitis lethargica.",
+    "The British approved name for the combination is co-careldopa.",
+    "High-protein meals can reduce levodopa response because amino acids compete for intestinal and blood–brain barrier transport."
+  ],
+  "related": [
+    "entacapone",
+    "pramipexole",
+    "ropinirole",
+    "rasagiline",
+    "selegiline",
+    "amantadine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: L-DOPA",
+      "url": "https://en.wikipedia.org/wiki/L-DOPA"
+    },
+    {
+      "title": "Wikipedia: Carbidopa/levodopa",
+      "url": "https://en.wikipedia.org/wiki/Carbidopa/levodopa"
+    },
+    {
+      "title": "DailyMed: carbidopa levodopa labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=carbidopa+levodopa"
+    }
+  ],
+  "stage": "written"
 }

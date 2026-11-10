@@ -1,36 +1,119 @@
 {
   "slug": "tofersen",
   "name": "Tofersen",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BIIB067",
+    "IONIS-SOD1Rx"
+  ],
+  "brands": [
+    "Qalsody"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Antisense oligonucleotide (RNase H-mediated SOD1 mRNA knockdown)",
+  "modality": "oligonucleotide",
+  "routes": [
+    "intrathecal"
+  ],
+  "route_note": "Intrathecal bolus by lumbar puncture: three loading doses two weeks apart, then every 28 days.",
+  "targets": [
+    "SOD1 mRNA"
+  ],
+  "origin": "synthetic",
+  "originator": "Ionis Pharmaceuticals and Biogen",
+  "owner": "Biogen",
+  "first_approval": {
+    "year": 2023,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Qalsody"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Ionis Pharmaceuticals with Biogen",
+    "note": "A 2'-MOE gapmer antisense oligonucleotide designed to degrade SOD1 mRNA in people with SOD1-mutation ALS."
+  },
+  "generic": false,
+  "who_essential": false,
+  "rx_status": "prescription (specialist)",
+  "tagline": "First genetically targeted therapy for SOD1 familial ALS",
+  "summary": "Tofersen is an intrathecal antisense oligonucleotide that lowers production of superoxide dismutase 1 (SOD1) protein in people with ALS caused by SOD1 mutations. It was approved on the basis of reduced neurofilament light chain, a biomarker of neurodegeneration.",
+  "mechanism": [
+    "Mutations in SOD1 cause roughly 2% of ALS through a toxic gain of function of the misfolded protein. Tofersen binds SOD1 messenger RNA and recruits RNase H1 to cleave it, reducing synthesis of both mutant and normal SOD1 protein in the central nervous system.",
+    "Lower SOD1 levels are accompanied by falling cerebrospinal fluid SOD1 and plasma neurofilament light chain concentrations, indicating reduced axonal injury."
+  ],
+  "uses": [
+    "Amyotrophic lateral sclerosis in adults with a SOD1 gene mutation"
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "SOD1 gene",
+      "detail": "Rosen et al. (Nature) identify SOD1 mutations as a cause of familial ALS."
+    },
+    {
+      "year": 2020,
+      "title": "Phase 1/2 results",
+      "detail": "Miller et al. (NEJM) report dose-dependent lowering of CSF SOD1."
+    },
+    {
+      "year": 2022,
+      "title": "VALOR",
+      "detail": "Phase 3 (NEJM) misses its primary clinical endpoint at 28 weeks but shows reductions in SOD1 and neurofilament light chain, with trends to benefit in open-label extension."
+    },
+    {
+      "year": 2023,
+      "title": "FDA accelerated approval",
+      "detail": "In April the FDA grants accelerated approval based on neurofilament reduction."
+    },
+    {
+      "year": 2024,
+      "title": "EU approval",
+      "detail": "The European Commission authorises Qalsody under exceptional circumstances."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4 weeks in cerebrospinal fluid",
+    "bioavailability": "intrathecal delivery",
+    "metabolism": "exonuclease and endonuclease degradation",
+    "excretion": "renal, as shortened oligonucleotides"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Pain and back pain",
+      "Fatigue",
+      "Arthralgia",
+      "Raised CSF white cells and protein"
+    ],
+    "serious": [
+      "Myelitis and radiculitis",
+      "Papilloedema and raised intracranial pressure",
+      "Aseptic meningitis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Tofersen was the first ALS drug approved by the FDA on the basis of a biomarker (plasma neurofilament light chain) reasonably likely to predict clinical benefit."
+  ],
+  "related": [
+    "riluzole",
+    "nusinersen",
+    "eteplirsen",
+    "patisiran"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tofersen",
+      "url": "https://en.wikipedia.org/wiki/Tofersen"
+    },
+    {
+      "title": "DailyMed: qalsody labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=qalsody"
+    },
+    {
+      "title": "EMA EPAR: Qalsody",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/qalsody"
+    }
+  ],
+  "stage": "written"
 }

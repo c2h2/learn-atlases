@@ -1,36 +1,118 @@
 {
   "slug": "risdiplam",
   "name": "Risdiplam",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "RG7916",
+    "RO7034067"
+  ],
+  "brands": [
+    "Evrysdi"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Small-molecule SMN2 pre-mRNA splicing modifier",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Once-daily oral solution (or via feeding tube); a film-coated tablet was approved in 2025.",
+  "targets": [
+    "SMN2 pre-mRNA (exon 7 5' splice site and exonic splicing enhancer 2)"
+  ],
+  "origin": "synthetic",
+  "originator": "PTC Therapeutics and the SMA Foundation, developed with Roche",
+  "owner": "Roche (Genentech in the US)",
+  "first_approval": {
+    "year": 2020,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Evrysdi"
+  },
+  "discovery": {
+    "year": null,
+    "by": "PTC Therapeutics, SMA Foundation and Roche",
+    "note": "Identified from a high-throughput screen for small molecules that promote SMN2 exon 7 inclusion, then optimised for selectivity."
+  },
+  "generic": false,
+  "who_essential": false,
+  "rx_status": "prescription (specialist)",
+  "tagline": "First oral treatment for spinal muscular atrophy",
+  "summary": "Risdiplam is an orally available small molecule that corrects SMN2 splicing to raise SMN protein throughout the body. Approved in 2020, it was the first at-home oral treatment for spinal muscular atrophy.",
+  "mechanism": [
+    "Risdiplam binds two sites on SMN2 pre-mRNA — the 5' splice site of intron 7 and exonic splicing enhancer 2 in exon 7 — stabilising the interaction with the U1 small nuclear ribonucleoprotein and promoting inclusion of exon 7.",
+    "Because it distributes systemically, it increases functional SMN protein in both the central nervous system and peripheral tissues."
+  ],
+  "uses": [
+    "Spinal muscular atrophy in patients of all ages"
+  ],
+  "history": [
+    {
+      "year": 2014,
+      "title": "Splicing modifiers described",
+      "detail": "Naryshkin et al. (Science) report orally available SMN2 splicing modifiers from the PTC/Roche/SMA Foundation programme."
+    },
+    {
+      "year": 2020,
+      "title": "FDA approval",
+      "detail": "In August the FDA approves Evrysdi for SMA in patients aged 2 months and older, based on FIREFISH and SUNFISH."
+    },
+    {
+      "year": 2021,
+      "title": "EU approval",
+      "detail": "The European Commission authorises Evrysdi."
+    },
+    {
+      "year": 2022,
+      "title": "Newborns",
+      "detail": "The FDA extends approval to infants under 2 months based on the RAINBOWFISH study."
+    },
+    {
+      "year": 2025,
+      "title": "Tablet formulation",
+      "detail": "The FDA approves a 5 mg tablet that can be swallowed whole or dispersed in water."
+    }
+  ],
+  "pk": {
+    "half_life": "about 50 hours",
+    "bioavailability": "not determined in humans; well absorbed orally",
+    "metabolism": "mainly FMO1 and FMO3, also CYP3A",
+    "excretion": "faecal (about 53%) and renal (about 28%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Fever",
+      "Diarrhoea",
+      "Rash",
+      "Upper respiratory infection",
+      "Mouth ulcers"
+    ],
+    "serious": [
+      "Embryofetal toxicity (animal data)",
+      "Possible impairment of male fertility (animal data)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Risdiplam is one of the first approved small molecules that work by targeting RNA splicing."
+  ],
+  "related": [
+    "nusinersen",
+    "onasemnogene-abeparvovec",
+    "tofersen"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Risdiplam",
+      "url": "https://en.wikipedia.org/wiki/Risdiplam"
+    },
+    {
+      "title": "DailyMed: evrysdi labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=evrysdi"
+    },
+    {
+      "title": "EMA EPAR: Evrysdi",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/evrysdi"
+    }
+  ],
+  "stage": "written"
 }

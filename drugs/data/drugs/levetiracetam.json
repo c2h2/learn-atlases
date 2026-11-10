@@ -1,36 +1,144 @@
 {
   "slug": "levetiracetam",
   "name": "Levetiracetam",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ucb L059"
+  ],
+  "brands": [
+    "Keppra",
+    "Keppra XR",
+    "Spritam",
+    "Elepsia XR"
+  ],
   "area": "neurology-pain",
   "batch": "07",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Pyrrolidone anticonvulsant; synaptic vesicle protein 2A (SV2A) ligand",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral tablets, extended-release tablets and solution; IV infusion with the same dose as oral.",
+  "targets": [
+    "SV2A"
+  ],
+  "origin": "synthetic",
+  "originator": "UCB Pharma (Belgium)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1999,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Keppra"
+  },
+  "discovery": {
+    "year": null,
+    "by": "UCB Pharma",
+    "note": "The S-enantiomer of the ethyl analogue of piracetam, found to protect against seizures in animal kindling models despite inactivity in classical screening tests."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Widely used broad-spectrum anticonvulsant acting on synaptic vesicle protein SV2A",
+  "summary": "Levetiracetam is a broad-spectrum anticonvulsant with a unique mechanism, binding the synaptic vesicle protein SV2A. Its linear kinetics, few interactions and IV formulation have made it one of the most prescribed antiseizure medicines.",
+  "mechanism": [
+    "Levetiracetam binds SV2A, a protein in the membrane of synaptic vesicles involved in vesicle exocytosis. Binding is thought to modulate neurotransmitter release, reducing hypersynchronous firing; binding affinity of related compounds correlates with their anticonvulsant potency.",
+    "It also inhibits N-type calcium channels and reverses the inhibition of GABA- and glycine-gated currents by zinc and beta-carbolines, though the relevance of these effects is uncertain."
+  ],
+  "uses": [
+    "Focal seizures (monotherapy and adjunct)",
+    "Myoclonic seizures in juvenile myoclonic epilepsy (adjunct)",
+    "Primary generalised tonic-clonic seizures (adjunct)",
+    "Status epilepticus (off-label, second line)"
+  ],
+  "history": [
+    {
+      "year": 1999,
+      "title": "US approval",
+      "detail": "The FDA approves Keppra as adjunctive therapy for partial-onset seizures."
+    },
+    {
+      "year": 2000,
+      "title": "European approval",
+      "detail": "The European Commission authorises Keppra."
+    },
+    {
+      "year": 2004,
+      "title": "SV2A identified",
+      "detail": "Lynch et al. (PNAS) identify synaptic vesicle protein 2A as the binding site."
+    },
+    {
+      "year": 2006,
+      "title": "IV formulation",
+      "detail": "Keppra injection is approved in the US."
+    },
+    {
+      "year": 2008,
+      "title": "Generics",
+      "detail": "Generic levetiracetam becomes available in the US."
+    },
+    {
+      "year": 2015,
+      "title": "3D-printed tablet",
+      "detail": "Spritam becomes the first FDA-approved drug made by 3D printing."
+    },
+    {
+      "year": 2016,
+      "title": "Brivaracetam",
+      "detail": "UCB's higher-affinity SV2A ligand brivaracetam (Briviact) is approved."
+    },
+    {
+      "year": 2019,
+      "title": "ESETT",
+      "detail": "A trial (Kapur et al., NEJM) finds levetiracetam, fosphenytoin and valproate similarly effective for benzodiazepine-refractory status epilepticus."
+    }
+  ],
+  "pk": {
+    "half_life": "about 6–8 hours",
+    "bioavailability": "nearly 100%",
+    "metabolism": "enzymatic hydrolysis in blood (not CYP-dependent)",
+    "excretion": "renal, about 66% unchanged; dose reduced in renal impairment"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Somnolence",
+      "Fatigue",
+      "Dizziness",
+      "Irritability and mood changes",
+      "Infection (nasopharyngitis)"
+    ],
+    "serious": [
+      "Psychiatric reactions including aggression, psychosis and suicidal ideation",
+      "Serious skin reactions (SJS/TEN)",
+      "DRESS",
+      "Anaphylaxis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Spritam (levetiracetam) was the first drug manufactured by 3D printing to be approved by the FDA, in 2015.",
+    "Levetiracetam was unusual in having been missed by the standard maximal electroshock and pentylenetetrazol screens."
+  ],
+  "related": [
+    "lamotrigine",
+    "valproate",
+    "phenytoin",
+    "carbamazepine",
+    "topiramate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Levetiracetam",
+      "url": "https://en.wikipedia.org/wiki/Levetiracetam"
+    },
+    {
+      "title": "DailyMed: levetiracetam labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=levetiracetam"
+    },
+    {
+      "title": "EMA EPAR: Keppra",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/keppra"
+    }
+  ],
+  "stage": "written"
 }
